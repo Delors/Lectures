@@ -74,8 +74,8 @@ Teilbarkeit
 .. admonition:: Beispiel
     :class: incremental
 
-    Die positiven Teiler von: :math:`24`:  :math:`1`, :math:`2`, :math:`3`, :math:`4`, :math:`6`, :math:`8`, :math:`12` and :math:`24`
-    
+    Die positiven Teiler von :math:`24` sind: :math:`1`, :math:`2`, :math:`3`, :math:`4`, :math:`6`, :math:`8`, :math:`12` und :math:`24`.
+
     Weitere Beispiele: :math:`13 | 182`; :math:`-5 | 30`; :math:`17 | 289`; :math:`-3 | 33`; :math:`17 | 0`.
 
 
