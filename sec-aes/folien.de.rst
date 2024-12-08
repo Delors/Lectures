@@ -405,7 +405,7 @@ AddRoundKey Transformation
 .. admonition:: Designbegründung
     :class: incremental margin-top-2em
 
-    - Sie ist so einfach wie möglich und betrifft jedes Bit des Staates.
+    - Sie ist so einfach wie möglich und betrifft jedes Bit des Zustands.
     - Die Komplexität der runden Schlüsselexpansion plus die Komplexität der anderen Stufen von AES sorgen für Sicherheit!
 
 
