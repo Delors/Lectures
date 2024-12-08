@@ -970,7 +970,7 @@ Schnittstellen (Java :java:`interface`\ s)
 
     Erweitern Sie die Lösung der vorhergehenden Übung wie folgt.
 
-    Definieren Sie eine Schnittstelle :java:`Comparable`, die eine Methode :java:`boolean equal(Term t)` deklariert. Implementierungen der Methode sollen den aktuellen Term vergleichen mit dem übergebenen und :java:`true` zurückgeben, wenn der aktuelle Term (:java:`this`) identisch zum übergebenen Term (:java:`t`) ist. Beachten Sie die das Kommutativgesetz beim Vergleich; d. h. :java:`a + b` ist gleich :java:`b + a`.
+    Definieren Sie eine Schnittstelle :java:`Comparable`, die eine Methode :java:`boolean equal(Term t)` deklariert. Implementierungen der Methode sollen den aktuellen Term vergleichen mit dem Übergebenen und :java:`true` zurückgeben, wenn der aktuelle Term (:java:`this`) identisch zum übergebenen Term (:java:`t`) ist. Beachten Sie die das Kommutativgesetz beim Vergleich; d. h. :java:`a + b` ist gleich :java:`b + a`.
 
     Die abstrakten Klasse :java:`Term` soll die Schnittstelle implementieren. Die Implementierungen der Methoden müssen natürlich in den Subklassen erfolgen.
 
