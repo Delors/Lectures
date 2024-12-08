@@ -11,6 +11,7 @@ TODO
 # Generated/downloaded files and folders
 node_modules
 .mypy_cache
+__pycache__
 *.rst.html
 *.rst.html.pdf
 *.rst.html.passwords.txt
