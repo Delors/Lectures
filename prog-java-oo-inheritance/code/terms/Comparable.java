@@ -72,7 +72,7 @@ class Division extends Term {
     public boolean equal(Term o) {
         if (o instanceof Division) {
             Division d = (Division) o;
-            return term1.equal(d.term1) && term2.equal(d.term2);
+            return this.term1.equal(d.term1) && term2.equal(d.term2);
         }
         return false;
     }
@@ -104,11 +104,12 @@ class Number extends Term {
     }
 
     public boolean equal(Term o) {
-        if (o instanceof Number) {
-            Number n = (Number) o;
-            return value == n.value;
-        }
-        return false;
+        return o instanceof Number && value == ((Number) o).value;
+        //if (o instanceof Number) {
+        //    Number n = (Number) o;
+        //    return value == n.value;
+        //}
+        //return false;
     }
 
     public String toString() {
