@@ -33,7 +33,9 @@ Vorlesung "Theoretische Informatik" bzw. "Algorithmen und Datenstrukturen"
 
    2. Suchen auf Arrays (`<theo-algo-suchen_auf_arrays/folien.de.rst.html>`__)
 
-   3. Hashing und Hashmaps (`<theo-algo-hashing/folien.de.rst.html>`__)
+   3. Genetische Algorithmen (`<theo-algo-genetic_programming/folien.de.rst.html>`__)
+
+   4. Hashing und Hashmaps (`<theo-algo-hashing/folien.de.rst.html>`__)
    
    
 
