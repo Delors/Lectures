@@ -177,9 +177,9 @@ class GroupAssignment(Chromosome):
 
 if __name__ == "__main__":
     initial_population: list[GroupAssignment] = [
-        GroupAssignment.random_instance() for _ in range(250)
+        GroupAssignment.random_instance() for _ in range(500)
     ]
-    # Maximale Glücklichkeit bei linearer Bewertung:
+    # Maximale Glücklichkeit bei unskalierter Bewertung:
     # 3! * 10 * 2 = 120
     # (pro Gruppe, wenn in einer Gruppe alle sich gegenseitig mit "10" bewerten)
     threshold = 314
@@ -187,10 +187,10 @@ if __name__ == "__main__":
     ga: GeneticAlgorithm[GroupAssignment] = GeneticAlgorithm(
         initial_population=initial_population,
         threshold=threshold,
-        max_generations=2500,
-        mutation_chance=0.15,
-        crossover_chance=0.85,
-        selection_type=GeneticAlgorithm.SelectionType.TOURNAMENT,  # ROULETTE was much worse!,
+        max_generations=1000,
+        mutation_chance=0.1,
+        crossover_chance=0.7,
+        selection_type=GeneticAlgorithm.SelectionType.TOURNAMENT,  # ROULETTE was worse!
     )
     result: GroupAssignment = ga.run()
     print(result)

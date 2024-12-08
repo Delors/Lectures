@@ -47,14 +47,23 @@ class GeneticAlgorithm(Generic[C]):
 
     # Use the probability distribution wheel to pick 2 parents
     # Note: will not work with negative fitness results
-    def _pick_roulette(self, wheel: list[float]) -> tuple[C, C]:
-        c: tuple[C, C] = tuple(choices(self._population, weights=wheel, k=2))  # type: ignore
+    def _pick_roulette(
+            self, wheel: list[float]) -> tuple[C, C]:
+        c: tuple[C, C] = \
+            tuple(choices(
+                    self._population, 
+                    weights=wheel, k=2))
         return c
 
     # Choose num_participants at random and take the best 2
-    def _pick_tournament(self, num_participants: int) -> tuple[C, C]:
-        participants: list[C] = choices(self._population, k=num_participants)
-        return tuple(nlargest(2, participants, key=self._fitness_key))  # type: ignore
+    def _pick_tournament(
+            self, num_participants: int) -> tuple[C, C]:
+        participants: list[C] = \
+            choices(self._population, k=num_participants)
+        return tuple(
+            nlargest(
+                2, 
+                participants, key=self._fitness_key)) # type: ignore
 
     # Replace the population with a new generation of individuals
     def _reproduce_and_replace(self) -> None:

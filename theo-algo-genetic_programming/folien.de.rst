@@ -96,7 +96,7 @@ Genetische Algorithmen
 
   Z. B. im Bereich des Wirkstoffdesigns oder der Optimierung von Produktionsprozessen.
 - benötigen im Prinzip nur eine Definition des Aufgabenziels
-- sind in der Regel hochgradig spezialisiert; hier diskutieren wir eine allgemeine/generische Implementierung
+- :minor:`(Implementierungen)` sind in der Regel hochgradig spezialisiert; hier diskutieren wir eine allgemeine/generische Implementierung
 
 
 (Biologische) Grundlagen
@@ -119,7 +119,7 @@ Genetische Algorithmen
   :Population: Menge von Individuen, die auch Chromosomen genannt werden und Lösungskandidaten repräsentieren
   :Chromosomen: Lösungskandidaten oder auch Individuen, die aus Genen bestehen
   :Gene: Eigenschaften eines Lösungskandidaten
-  :Fitness(-Funktion): Bewertung eines Lösungskandidaten
+  :Fitness(-Funktion): Bewertung eines Chromosoms ( Lösungskandidaten)
 
 
 
@@ -136,7 +136,7 @@ Grundidee
 .. class:: incremental 
 
 - ein genetischer Algorithmus durchläuft Generationen
-- In jeder Generation werden die Individuen/Chromosomen bewertet und die besser angepassten Individuen (*Fitter*) mit einer höheren Wahrscheinlichkeit zur Fortpflanzung ausgewählt
+- In jeder Generation werden die Individuen/Chromosomen bewertet und die besser angepassten Individuen (welche *fitter* sind) mit einer höheren Wahrscheinlichkeit zum Überleben und zur Fortpflanzung ausgewählt
 - in jeder Generation werden die Individuen mit einer gewissen Wahrscheinlichkeit: 
 
   1. rekombiniert (:java:`crossover` von zwei Chromosomen) und 
@@ -188,7 +188,7 @@ Ablauf von genetischen Algorithmen
 .. class:: incremental
 
 2. Miss die Fitness der Individuen, wenn einer den Zielwert erreicht, beende den Algorithmus und gib das Individuum zurück
-3. Wähle einige Individuen aus, die sich fortpflanzen - bevorzuge die fitteren mit einer höheren Wahrscheinlichkeit
+3. Wähle einige Individuen aus, die sich fortpflanzen - bevorzuge die Fitteren mit einer höheren Wahrscheinlichkeit
 4. Kombiniere die ausgewählten Individuen, um neue Individuen zu erzeugen
 5. Mutiere einige Individuen, um die neue Generation zu vervollständigen
 6. Wiederhole die Schritte 2-5 für eine bestimmte Anzahl von Generationen
@@ -200,9 +200,10 @@ Parameter von genetischen Algorithmen
 .. class:: incremental
 
 - Größe der Population
+- Design der ersten Population (rein zufällig oder basierend auf einer Heuristik)
 - Wahl des Schwellenwertes, der angibt, wann der Algorithmus beendet wird
 - Auswahl der Chromosomen, die sich fortpflanzen
-- Wie die Rekombination erfolgt (:java:`crossover`)
+- Wie und mit welcher Wahrscheinlichkeit die Rekombination erfolgt (:java:`crossover`)
 - Wie und mit welcher Wahrscheinlichkeit eine Mutation erfolgt (:java:`mutate`)
 - Wie viele Generationen max. durchlaufen werden
 
@@ -214,18 +215,45 @@ Parameter von genetischen Algorithmen
 Selektionsstrategien von Chromosomen
 --------------------------------------------------------
 
-.. class:: incremental
+.. rubric:: Bestimmung der Chromosomen, die überleben und sich ggf. fortpflanzen.
 
-:*Roulette Wheel Selection*:
+.. container:: scrollable
 
-    - jedes Chromosom wird mit einer Wahrscheinlichkeit ausgewählt, die proportional zu seiner Fitness ist
-    - die Fitness wird in eine Wahrscheinlichkeit umgerechnet
+    .. rubric:: Auswahlstrategien
 
-.. class:: incremental
+    .. class:: incremental
 
-:*Tournament Selection*:
+    :*Tournament Selection*: 
+        
+        Wähle zufällig einige Chromosomen aus und wähle das beste(/die besten) Chromosom(en) aus dieser Gruppe:
 
+        .. include:: code/lib/genetic_algorithm.py
+            :code: python
+            :number-lines:
+            :class: smaller
+            :start-after: # Choose num_participants at random and take the best 2
+            :end-before: # type: ignore
 
+    .. class:: incremental
+
+    :*Roulette Wheel Selection*:
+
+        Jedes Chromosom wird mit einer Wahrscheinlichkeit ausgewählt, die proportional zu seiner Fitness ist (die Fitness wird in eine Wahrscheinlichkeit umgerechnet).
+
+        .. include:: code/lib/genetic_algorithm.py
+            :code: python
+            :number-lines:
+            :class: smaller
+            :start-after: # Note: will not work with negative fitness results
+            :end-before: # Choose num_participants at random and take the best 2
+
+    .. container:: incremental
+
+        .. rubric:: Vorgehen
+
+        Für jedes gewählte Chromosomenpaar bestimme, ob diese rekombiniert werden sollen. Wenn ja, führe die Rekombination durch. Wenn nicht, kopiere die Chromosomen einfach in die neue Generation.
+
+        Wiederhole die Selektion und ggf. Rekombination, bis die gewünschte Anzahl von Chromosomen ausgewählt wurde.
 
 
 
