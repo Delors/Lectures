@@ -44,8 +44,7 @@ class SendMoreMoney(Chromosome):
         send: int = s * 1000 + e * 100 + n * 10 + d
         more: int = m * 1000 + o * 100 + r * 10 + e
         money: int = m * 10000 + o * 1000 + n * 100 + e * 10 + y
-        difference: int = abs(money - (send + more))
-        return 1 / (difference + 1)
+        return 1 / (abs(money - (send + more)) + 1)
 
     @classmethod
     # random_instance()
@@ -94,7 +93,16 @@ class SendMoreMoney(Chromosome):
 
 
 if __name__ == "__main__":
-    initial_population: list[SendMoreMoney] = [SendMoreMoney.random_instance() for _ in range(1000)]
-    ga: GeneticAlgorithm[SendMoreMoney] = GeneticAlgorithm(initial_population=initial_population, threshold=1.0, max_generations = 1000, mutation_chance = 0.2, crossover_chance = 0.7, selection_type=GeneticAlgorithm.SelectionType.ROULETTE)
+    initial_population: list[SendMoreMoney] = \
+        [SendMoreMoney.random_instance() for _ in range(1000)]
+    ga: GeneticAlgorithm[SendMoreMoney] = \
+        GeneticAlgorithm(
+            initial_population=initial_population, 
+            threshold=1.0,
+            max_generations = 1000, 
+            mutation_chance = 0.2, 
+            crossover_chance = 0.7, 
+            selection_type= \
+                GeneticAlgorithm.SelectionType.ROULETTE)
     result: SendMoreMoney = ga.run()
     print(result)

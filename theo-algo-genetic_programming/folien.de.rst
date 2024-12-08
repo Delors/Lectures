@@ -203,7 +203,7 @@ Parameter von genetischen Algorithmen
 - Wahl des Schwellenwertes, der angibt, wann der Algorithmus beendet wird
 - Auswahl der Chromosomen, die sich fortpflanzen
 - Wie die Rekombination erfolgt (:java:`crossover`)
-- Wie und mit welcher Wahrscheinlichkeit eine Mutation erfolget (:java:`mutate`)
+- Wie und mit welcher Wahrscheinlichkeit eine Mutation erfolgt (:java:`mutate`)
 - Wie viele Generationen max. durchlaufen werden
 
 .. supplemental:: 
@@ -240,6 +240,7 @@ Initialisierung des genetischen Algorithmus
     :end-before:  -> None:
 
 
+
 .. class::  no-title center-child-elements
 
 Herausforderungen bei der Entwicklung genetischer Algorithmen
@@ -255,10 +256,12 @@ Herausforderungen bei der Entwicklung genetischer Algorithmen
     2. danach die Parameter so zu wählen, dass der Algorithmus in einer akzeptablen Zeit eine gute Lösung findet.
 
 
+
 .. class:: new-section transition-move-to-top
 
 Beispiel: SEND + MORE = MONEY
 --------------------------------------------------------
+
 
 
 SEND+MORE=MONEY\ [#]_
@@ -277,7 +280,6 @@ SEND+MORE=MONEY\ [#]_
 
 - Welcher Buchstabe steht für welchen Wert?
 
-
 .. [#] Wir verwenden hier das Beispiel lediglich zur Demonstration der Technik. Das Problem kann auch anders gelöst werden!
 
 
@@ -291,19 +293,19 @@ SEND+MORE=MONEY - Umsetzung
 
         .. rubric:: Chromosomen ermöglichen Zuordnung von Buchstaben zu Ziffern
 
-        - Idee: Verwendung von Listenindizes zur Repräsentation der Ziffern: [0,...,9]. Die Werte in der Liste entsprechen den Buchstaben; Beispiel:
+        **Idee**: Verwendung von Listenindizes zur Repräsentation der Ziffern: [0,...,9]. Die Werte in der Liste entsprechen den Buchstaben; Beispiel:
 
-          *Zuordnung von Ziffern zu Buchstaben:*
+        *Zuordnung von Ziffern zu Buchstaben:*
 
-          .. csv-table::
-                :header: "Index: ", "0", "1", "2", "3", "4", "5" , "6", "7" ,"8", "9" , " "
-                :widths: 25, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10
-                :width: 100%
-                :class: no-table-borders no-inner-borders
+        .. csv-table::
+            :header: "Index: ", "0", "1", "2", "3", "4", "5" , "6", "7" ,"8", "9" , " "
+            :widths: 25, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10
+            :width: 100%
+            :class: no-table-borders no-inner-borders
 
-                "letters = \[", "O,", "M,", "Y,", "␣,", "␣,", "E,", "N,", "D,", "R,", "S", "]"
+            "letters = \[", "O,", "M,", "Y,", "␣,", "␣,", "E,", "N,", "D,", "R,", "S", "]"
 
-          .. container:: minor
+        .. container:: minor
 
             *Für die Lösung würde sich ergeben:*
             
@@ -314,9 +316,9 @@ SEND+MORE=MONEY - Umsetzung
         
                     9, 5, 6, 7, 1, 0, 8, 2, 3 ,4
 
-        .. class:: incremental
+        .. container:: incremental
 
-        - Somit kann durch die Verschiebung der Buchstaben in der Liste der assoziierte Wert geändert werden
+            Somit kann durch die Verschiebung der Buchstaben in der Liste der assoziierte Wert geändert werden.
 
     .. layer:: incremental
 
@@ -334,7 +336,7 @@ SEND+MORE=MONEY - Umsetzung
 
         .. rubric:: Erzeugen von Individuen bzw. Chromosomen
 
-        Idee: beliebige Verwürfelung der Buchstaben in der Liste.
+        **Idee**: beliebige Verwürfelung der Buchstaben in der Liste.
         
         .. include:: code/send_more_money.py
             :code: python
@@ -348,7 +350,7 @@ SEND+MORE=MONEY - Umsetzung
 
         .. rubric:: Mutation eines Chromosoms
 
-        Idee: zufälliger paarweiser Austausch von zwei Buchstaben in der Liste.
+        **Idee**: zufälliger paarweiser Austausch von zwei Buchstaben in der Liste.
 
         .. include:: code/send_more_money.py
             :code: python
@@ -361,7 +363,7 @@ SEND+MORE=MONEY - Umsetzung
 
         .. rubric:: Vererbung
 
-        Idee: pro Nachkommen sicherstellen, dass einige Buchstaben Indizes (d. h. Wertzuordnungen) von einem Elternteil und einige vom anderen Elternteil stammen.
+        **Idee**: pro Nachkommen sicherstellen, dass einige Buchstaben Indizes (d. h. Wertzuordnungen) von einem Elternteil und einige vom anderen Elternteil stammen.
 
         Beispiel (verkürzt):
 
@@ -400,20 +402,47 @@ SEND+MORE=MONEY - Umsetzung
 
         .. rubric:: Fitness-Funktion
 
-        Idee: Eine Lösung ist besser, je näher die Summe der Ziffern von SEND und MORE an MONEY ist. D. h.: 
+        **Idee**: Eine Lösung ist besser, je näher die Summe der Ziffern von SEND und MORE an MONEY ist. D. h.: 
 
         .. container:: incremental
 
             .. math:: 
 
-                |money - (send + more)|
+                \text{minimiere}(|money - (send + more)|)
 
 
         .. container:: incremental
         
-            Feststellung: Das Ziel des generischen genetischen Algorithmus ist es, die Fitness-Funktion zu maximieren. Wir müssen somit unser Minimierungsproblem in ein Maximierungsproblem umwandeln.
+            **Feststellung**: Das Ziel des generischen genetischen Algorithmus ist es, die Fitness-Funktion zu maximieren. Wir müssen somit unser Minimierungsproblem in ein Maximierungsproblem umwandeln.
 
+            .. math:: 
 
+                \frac{1} { |money - (send + more)| + 1 }\\
+
+        .. container:: incremental far-smaller
+
+            Beispiel: Sei die Differenz :math:`1`, dann ist die Fitness :math:`1/2`; bei einer Differenz von :math:`0` ist die Fitness :math:`1` und somit maximal.
+
+    .. layer:: incremental
+
+        .. rubric:: Fitness-Funktion - Implementierung
+
+        .. include:: code/send_more_money.py
+            :code: python
+            :number-lines:
+            :class: smaller
+            :start-after: # fitness()
+            :end-before: @classmethod
+
+    .. layer:: incremental
+
+        .. rubric:: Initialisierung
+
+        .. include:: code/send_more_money.py
+            :code: python
+            :number-lines:
+            :class: smaller
+            :start-after: if __name__ == "__main__":
 
     .. layer:: incremental
 
@@ -480,7 +509,6 @@ SEND+MORE=MONEY - Umsetzung
             :code: python
             :number-lines:
             :class: smaller
-
 
 .. supplemental::
 
