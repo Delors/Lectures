@@ -64,9 +64,11 @@ class SendMoreMoney(Chromosome):
         child1.letters[child1.letters.index(l2)], \
         child1.letters[idx2] = \
             child1.letters[idx2], l2
+        
         child2.letters[child2.letters.index(l1)], \
         child2.letters[idx1] = \
             child2.letters[idx1], l1
+        
         return child1, child2
 
     # mutate()

@@ -48,8 +48,10 @@ GROUP_SIZE = 4
 class GroupAssignment(Chromosome):
     def __init__(self, groups: list[list[int]]) -> None:
         self.groups: list[list[int]] = groups
+        self.fitnessValue: float = -1
+        self.compute_fitness()
 
-    def fitness_of_group(self, group: list[int]) -> float:
+    def fitness_of_group( group: list[int]) -> float:
         total: float = 0
         for i in range(len(group)):
             for j in range(i + 1, len(group)):
@@ -58,12 +60,16 @@ class GroupAssignment(Chromosome):
                 total += ASSESSMENT[group[j]][group[i]]
         return total
 
-    def fitness(self) -> float:
-        fitnessOfGroups = list(map(self.fitness_of_group, self.groups))
+    def compute_fitness(self) -> float:
+        fitnessOfGroups = list(map(GroupAssignment.fitness_of_group, self.groups))
         average = sum(fitnessOfGroups) / len(fitnessOfGroups)
         total = sum(fitnessOfGroups)
+        # we want to avoid very unbalanced groups:
         total -= sum(map(lambda g: abs(g - average), fitnessOfGroups)) ** 1.25
-        return total
+        self.fitnessValue = total
+    
+    def fitness(self) -> float:
+        return self.fitnessValue
 
     @classmethod
     def random_instance(cls) -> Self:
@@ -110,6 +116,8 @@ class GroupAssignment(Chromosome):
         child1.groups[c1p2g][c1p2m] = child1.groups[c2g][c2m]
         child1.groups[c2g][c2m] = c2p
 
+        child1.compute_fitness()
+        child2.compute_fitness()
         return child1, child2
     """
 
@@ -154,7 +162,10 @@ class GroupAssignment(Chromosome):
         fix(child1.groups, [2, 3])
         fix(child2.groups, [0, 1])
 
+        child1.compute_fitness()
+        child2.compute_fitness()
         return child1, child2
+    
 
     def mutate(self) -> None:  # swap two assignments
         g1, g2 = sample(range(len(self.groups)), k=2)
@@ -164,12 +175,14 @@ class GroupAssignment(Chromosome):
             self.groups[g2][m2],
             self.groups[g1][m1],
         )
+        self.compute_fitness()
 
     def __str__(self) -> str:
-        return "Zuteilung:\n\t" + (
+        return f"Zuteilung - fitness: {self.fitness()}:\n\t" + (
             "\n\t".join(
                 map(
-                    lambda g: str(g) + " - fitness: " + str(self.fitness_of_group(g)),
+                    lambda g: str(g) + " - fitness: " + 
+                              str(GroupAssignment.fitness_of_group(g)),
                     self.groups,
                 )
             )
@@ -177,7 +190,7 @@ class GroupAssignment(Chromosome):
 
 if __name__ == "__main__":
     initial_population: list[GroupAssignment] = [
-        GroupAssignment.random_instance() for _ in range(500)
+        GroupAssignment.random_instance() for _ in range(5000)
     ]
     # Maximale Glücklichkeit bei unskalierter Bewertung:
     # 3! * 10 * 2 = 120
@@ -187,10 +200,10 @@ if __name__ == "__main__":
     ga: GeneticAlgorithm[GroupAssignment] = GeneticAlgorithm(
         initial_population=initial_population,
         threshold=threshold,
-        max_generations=1000,
+        max_generations=500,
         mutation_chance=0.1,
         crossover_chance=0.7,
-        selection_type=GeneticAlgorithm.SelectionType.TOURNAMENT,  # ROULETTE was worse!
+        selection_type=GeneticAlgorithm.SelectionType.ROULETTE 
     )
     result: GroupAssignment = ga.run()
     print(result)
