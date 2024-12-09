@@ -563,3 +563,43 @@ SEND+MORE=MONEY - Umsetzung
     Sie können für die Darstellung der Mitglieder einer Gruppe auch eine andere Darstellung als eine Liste von Listen verwenden. Sie müssen dann nur ggf. auch die :java:`__str__` Methode anpassen. Es steht Ihnen natürlich auch frei Konzepte wie Memoization zu verwenden, um die Fitness-Funktion zu beschleunigen.
 
     Sieger ist, wer in einem akzeptablen Zeitrahmen (3 Minuten) die beste Lösung findet. 
+
+
+
+.. class:: integrated-exercise transition-move-to-top
+
+Übung
+--------------------------------------------------------
+
+.. exercise:: Ausgeglichene Gruppenzuteilung
+
+    Passen Sie Ihren genetischen Algorithmus aus der vorherigen Übung so an, dass die Gruppen alle in etwa die gleiche Glücklichkeit aufweisen. 
+    
+    Sie können das Problem zum Beispiel über die Abweichung vom Durchschnitt berechnen.
+
+    .. hint:: 
+
+        Bedenken sie, dass sie ggf. den Threshold anpassen müssen.
+
+
+    .. solution::
+        :pwd: ist_das_glücklicher?
+
+        *Ein Lösungsvorschlag*
+
+        .. rubric:: Angepasste Fitness-Funktion
+
+        .. include:: code/group_assignment_balanced.py
+            :code: python
+            :number-lines:
+            :class: smaller
+            :start-after: # compute_fitness()
+            :end-before: def fitness(self)
+
+        .. rubric:: Angepasste Main Methode (insbesondere der Threshold)
+
+        .. include:: code/group_assignment_balanced.py
+            :code: python
+            :number-lines:
+            :class: smaller
+            :start-after: if __name__ == "__main__":
