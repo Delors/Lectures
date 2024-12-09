@@ -62,10 +62,7 @@ class GroupAssignment(Chromosome):
 
     def compute_fitness(self) -> float:
         fitnessOfGroups = list(map(GroupAssignment.fitness_of_group, self.groups))
-        average = sum(fitnessOfGroups) / len(fitnessOfGroups)
         total = sum(fitnessOfGroups)
-        # we want to avoid very unbalanced groups:
-        total -= sum(map(lambda g: abs(g - average), fitnessOfGroups)) ** 1.25
         self.fitnessValue = total
     
     def fitness(self) -> float:
@@ -192,10 +189,10 @@ if __name__ == "__main__":
     initial_population: list[GroupAssignment] = [
         GroupAssignment.random_instance() for _ in range(5000)
     ]
-    # Maximale Glücklichkeit bei unskalierter Bewertung:
-    # 3! * 10 * 2 = 120
-    # (pro Gruppe, wenn in einer Gruppe alle sich gegenseitig mit "10" bewerten)
-    threshold = 314
+    # Maximale Glücklichkeit bei unskalierter Bewertung, wenn 
+    # in allen Gruppe alle sich gegenseitig mit "10" bewerten: 
+    # (3! * 10 * 2) * 4 = 120 * 4
+    threshold = 345 # Das ist das Maximum, das für das gegebene Setting erreicht werden kann
     print("Configured threshold:", threshold)
     ga: GeneticAlgorithm[GroupAssignment] = GeneticAlgorithm(
         initial_population=initial_population,
