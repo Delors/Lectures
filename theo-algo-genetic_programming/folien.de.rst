@@ -118,7 +118,7 @@ Genetische Algorithmen
 
   :Population: Menge von Individuen, die auch Chromosomen genannt werden und Lösungskandidaten repräsentieren
   :Chromosomen: Lösungskandidaten oder auch Individuen, die aus Genen bestehen
-  :Gene: Eigenschaften eines Lösungskandidaten
+  :`Gene`:minor:: :minor:`Eigenschaften eines Lösungskandidaten`
   :Fitness(-Funktion): Bewertung eines Chromosoms ( Lösungskandidaten)
 
 
@@ -136,15 +136,15 @@ Grundidee
 .. class:: incremental 
 
 - ein genetischer Algorithmus durchläuft Generationen
-- In jeder Generation werden die Individuen/Chromosomen bewertet und die besser angepassten Individuen (welche *fitter* sind) mit einer höheren Wahrscheinlichkeit zum Überleben und zur Fortpflanzung ausgewählt
-- in jeder Generation werden die Individuen mit einer gewissen Wahrscheinlichkeit: 
+- In jeder Generation werden die Individuen/Chromosomen bewertet und die besser angepassten Individuen (solche die *fitter* sind) mit einer höheren Wahrscheinlichkeit zum Überleben und zur Fortpflanzung ausgewählt
+- in jeder Generation werden die Individuen mit gewissen Wahrscheinlichkeiten: 
 
   1. rekombiniert (:java:`crossover` von zwei Chromosomen) und 
   2. mutiert (:java:`mutate`)
 
 
 .. warning:: 
-    :class: incremental
+    :class: incremental margin-top-1em
 
     Genetische Algorithmen sind somit stochastische Algorithmen, d. h. sie liefern nicht immer das gleiche Ergebnis in der gleichen Zeitspanne und es gibt keine Garantie, dass sie das beste Ergebnis finden.
 
@@ -171,12 +171,12 @@ Basisklasse für Chromosomen
 
 .. supplemental::
 
-    Die Basisklasse für Chromosomen (|chromosone.py|) definiert die Methoden, die jedes Chromosom implementieren muss: Erzeugen einer zufälligen Instanz (:java:`random_instance`), eine Methode zum Mutieren einer Instanz (:java:`mutate`) und eine Methode zum Kreuzen einer Instanz mit einer anderen (:java:`crossover`) und schließlich eine Methode zur Bewertung eines Chromosoms (:java:`fitness`).
+    Die Basisklasse für Chromosomen (|chromosone.py|) definiert die Methoden, die jedes Chromosom implementieren muss: Eine Klassenmethode zum Erzeugen einer zufälligen Instanz (:python:`random_instance`), und Instanzmethoden zum Mutieren einer Instanz (:python:`mutate`), zum Kreuzen einer Instanz mit einer anderen (:python:`crossover`) und schließlich zur Bewertung eines Chromosoms (:python:`fitness`).
 
-    :`mutate`:python:: führt eine kleine zufällige Änderung durch
+    :`mutate`:python:: führt eine kleine zufällige Änderung (an den Genen) durch
     :`crossover`:python:: kombiniert zwei Chromosomen zu einem neuen Chromosom; d. h. mischt zwei Lösungen
     :`fitness`:python:: bewertet die eigene Fitness
-    :`random_instance`:python:: erzeugt eine zufällige Instanz; wir nur am Anfang benötigt, um die Population zu initialisieren
+    :`random_instance`:python:: erzeugt eine zufällige Instanz; wird nur einmal am Anfang benötigt, um die Population zu initialisieren
 
 
 
@@ -185,12 +185,15 @@ Ablauf von genetischen Algorithmen
 
 1. Erzeugen einer zufälligen Population
 
-.. class:: incremental
+.. class:: incremental margin-top-1em
 
-2. Miss die Fitness der Individuen, wenn einer den Zielwert erreicht, beende den Algorithmus und gib das Individuum zurück
+2. Miss die *Fitness* der Individuen, wenn einer den Zielwert erreicht, beende den Algorithmus und gib das Individuum zurück
 3. Wähle einige Individuen aus, die sich fortpflanzen - bevorzuge die Fitteren mit einer höheren Wahrscheinlichkeit
 4. Kombiniere die ausgewählten Individuen, um neue Individuen zu erzeugen
 5. Mutiere einige Individuen, um die neue Generation zu vervollständigen
+   
+.. class:: incremental margin-top-1em
+
 6. Wiederhole die Schritte 2-5 für eine bestimmte Anzahl von Generationen
 
 
@@ -230,7 +233,7 @@ Selektionsstrategien von Chromosomen
         .. include:: code/lib/genetic_algorithm.py
             :code: python
             :number-lines:
-            :class: smaller
+            :class: slightly-more-smaller
             :start-after: # Choose num_participants at random and take the best 2
             :end-before: # type: ignore
 
@@ -243,7 +246,7 @@ Selektionsstrategien von Chromosomen
         .. include:: code/lib/genetic_algorithm.py
             :code: python
             :number-lines:
-            :class: smaller
+            :class: slightly-more-smaller
             :start-after: # Note: will not work with negative fitness results
             :end-before: # Choose num_participants at random and take the best 2
 
@@ -251,21 +254,34 @@ Selektionsstrategien von Chromosomen
 
         .. rubric:: Vorgehen
 
-        Für jedes gewählte Chromosomenpaar bestimme, ob diese rekombiniert werden sollen. Wenn ja, führe die Rekombination durch. Wenn nicht, kopiere die Chromosomen einfach in die neue Generation.
+        .. class:: incremental
 
-        Wiederhole die Selektion und ggf. Rekombination, bis die gewünschte Anzahl von Chromosomen ausgewählt wurde.
+        1. Für jedes gewählte Chromosomenpaar bestimme, ob diese rekombiniert werden sollen. Wenn ja, führe die Rekombination durch. Wenn nicht, kopiere die Chromosomen einfach in die neue Generation.
+
+        2. Wiederhole die Selektion und ggf. Rekombination, bis die gewünschte Anzahl von Chromosomen ausgewählt wurde.
 
 
 
-Initialisierung des genetischen Algorithmus
+Basisklasse des genetischen Algorithmus
 --------------------------------------------------------
 
 .. include:: code/lib/genetic_algorithm.py
     :code: python
     :number-lines:
-    :class: far-smaller
+    :class: slightly-more-smaller
     :start-after: from lib.chromosome import Chromosome
     :end-before:  -> None:
+
+
+
+Hauptmethode des genetischen Algorithmus
+--------------------------------------------------------
+
+.. include:: code/lib/genetic_algorithm.py
+    :code: python
+    :number-lines:
+    :class: slightly-more-smaller
+    :start-after: # and return the best individual found
 
 
 
@@ -276,7 +292,7 @@ Herausforderungen bei der Entwicklung genetischer Algorithmen
 
 .. container:: box-shadow rounded-corners padding-1em
 
-    Die Herausforderung bei der Entwicklung von genetischen Algorithmen ist zweigeteilt:
+    Die **Herausforderung bei der Entwicklung von genetischen Algorithmen** ist somit zweigeteilt:
 
     .. class:: incremental
 
@@ -393,27 +409,29 @@ SEND+MORE=MONEY - Umsetzung
 
         **Idee**: pro Nachkommen sicherstellen, dass einige Buchstaben Indizes (d. h. Wertzuordnungen) von einem Elternteil und einige vom anderen Elternteil stammen.
 
-        Beispiel (verkürzt):
+        .. container:: smaller
+                
+            **Beispiel** (verkürzt):
 
-        .. container:: slightly-more-smaller
+            .. container:: smaller
 
-            ::
+                ::
 
-                Elternteil 1 = [a,b,c,d,e]  # d.h. ein Chromosom
-                Elternteil 2 = [c,a,b,e,d]  # d.h. ein Chromosom
+                    Elternteil 1 = [a,b,c,d,e]  # d.h. ein Chromosom
+                    Elternteil 2 = [c,a,b,e,d]  # d.h. ein Chromosom
 
-        gewählte Indizes seien: 0 und 2 
+            gewählte Indizes seien: 0 und 2 
 
-        .. container:: slightly-more-smaller
+            .. container:: smaller
 
-            ::    
-                    
-                Nachkomme 1 = [a,c,b,d,e] # im Wesentlichen Elternteil 1, 
-                                            aber Position von "b" vom 2ten übernommen
-                                            (dadurch Anpassung der Pos. von "c" notw.)
-                Nachkomme 2 = [a,c,b,e,d] # im Wesentlichen Elternteil 2, 
-                                            aber Position von "a" vom 1ten übernommen
-                                            (dadurch Anpassung der Pos. von "c" notw.)
+                ::    
+                        
+                    Nachkomme 1 = [a,c,b,d,e]  # im Wesentlichen Elternteil 1, 
+                                                aber Position von "b" vom 2ten übernommen
+                                                (dadurch Anpassung der Pos. von "c" notw.)
+                    Nachkomme 2 = [a,c,b,e,d]  # im Wesentlichen Elternteil 2, 
+                                                aber Position von "a" vom 1ten übernommen
+                                                (dadurch Anpassung der Pos. von "c" notw.)
 
     .. layer:: incremental
 
@@ -422,7 +440,7 @@ SEND+MORE=MONEY - Umsetzung
         .. include:: code/send_more_money.py
             :code: python
             :number-lines:
-            :class: smaller
+            :class: slightly-more-smaller
             :start-after: # crossover()
             :end-before: # mutate()
 
@@ -441,11 +459,11 @@ SEND+MORE=MONEY - Umsetzung
 
         .. container:: incremental
         
-            **Feststellung**: Das Ziel des generischen genetischen Algorithmus ist es, die Fitness-Funktion zu maximieren. Wir müssen somit unser Minimierungsproblem in ein Maximierungsproblem umwandeln.
+            **Feststellung**: Das Ziel des generischen genetischen Algorithmus ist es, die Fitness-Funktion zu maximieren. Wir müssen somit unser Minimierungsproblem in ein Maximierungsproblem umwandeln:
 
             .. math:: 
 
-                \frac{1} { |money - (send + more)| + 1 }\\
+                \text{maximiere}\left(\frac{1} { |money - (send + more)| + 1 }\right)\\
 
         .. container:: incremental far-smaller
 
@@ -458,7 +476,7 @@ SEND+MORE=MONEY - Umsetzung
         .. include:: code/send_more_money.py
             :code: python
             :number-lines:
-            :class: smaller
+            :class: slightly-more-smaller
             :start-after: # fitness()
             :end-before: @classmethod
 
@@ -469,7 +487,7 @@ SEND+MORE=MONEY - Umsetzung
         .. include:: code/send_more_money.py
             :code: python
             :number-lines:
-            :class: smaller
+            :class: slightly-more-smaller
             :start-after: if __name__ == "__main__":
 
     .. layer:: incremental
@@ -513,7 +531,7 @@ SEND+MORE=MONEY - Umsetzung
 
 .. exercise:: Gruppenzuteilung
 
-    Entwickeln Sie einen Algorithmus, der eine sehr gute Aufteilung von Personen auf eine feste Anzahl an Gruppen findet. Nutzen Sie das Framework für genetische Algorithmen, als Grundlage.
+    Entwickeln Sie einen genetischen Algorithmus, der eine sehr gute Aufteilung von Personen (Studierenden) auf eine feste Anzahl an Gruppen findet, basierend auf den Präferenzen der Personen. 
 
     Im Template ist eine initiale Aufgabenstellung hinterlegt, die es zu lösen gilt: Verteilung von 16 Studierenden auf 4 Gruppen inkl. Bewertungsmatrix :minor:`(jeder Studierende hat jeden anderen mit Werten von 1 bis 10 bewertet)`.
 
@@ -542,6 +560,6 @@ SEND+MORE=MONEY - Umsetzung
 
     Denken Sie daran, dass Sie die Parameter bzgl. :java:`mutation_chance`, :java:`crossover_chance`, :java:`selection_type`, :java:`initial_population` und :java:`max_generations` anpassen können. 
     
-    Sie können für die Darstellung der Mitglieder einer Gruppe auch eine andere Darstellung als eine Liste von Listen verwenden. Sie müssen dann nur ggf. auch die :java:`__str__` Methode anpassen.
+    Sie können für die Darstellung der Mitglieder einer Gruppe auch eine andere Darstellung als eine Liste von Listen verwenden. Sie müssen dann nur ggf. auch die :java:`__str__` Methode anpassen. Es steht Ihnen natürlich auch frei Konzepte wie Memoization zu verwenden, um die Fitness-Funktion zu beschleunigen.
 
     Sieger ist, wer in einem akzeptablen Zeitrahmen (3 Minuten) die beste Lösung findet. 
