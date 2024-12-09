@@ -64,7 +64,6 @@ if __name__ == "__main__":
         initial_population=initial_population,
         threshold=threshold,
         max_generations=250,
-        # THE FOLLOWING THREE SETTINGS CAN BE CHANGED/PLAYED WITH:
         mutation_chance=0.05, 
         crossover_chance=0.7, 
         selection_type=GeneticAlgorithm.SelectionType.TOURNAMENT, 
