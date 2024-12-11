@@ -431,7 +431,8 @@ Bei allen bisher betrachteten Scans kann der Scanner prinzipiell identifiziert w
 
     .. image:: images-external/IPv4_Packet-en.svg
             :alt: IPv4 Packet            
-            :width: 1200px
+            :width: 1000px
+            :align: left
 
     .. container:: minor far-smaller
 
