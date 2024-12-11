@@ -15,7 +15,6 @@ def linear_interpolating_search(A : list[int], needle: int) -> tuple[int|None, i
             lower * (needle - vU) / (vL - vU) + upper * (needle - vL) / (vU - vL)
         )
         pos = max(lower + 1, min(upper - 1, pos))
-        print(f"lower: {lower}, upper: {upper} => pos: {pos}")
         value = A[pos]
         if value == needle:
             return (pos, steps)
@@ -28,10 +27,10 @@ def linear_interpolating_search(A : list[int], needle: int) -> tuple[int|None, i
 
     return (None, steps)
 
-
 def eval(name : str, A : list[int]):
-    min = A[0] - 1
-    max = A[len(A) - 1] + 1
+    eval_range(name, A, min = A[0] - 1, max = A[len(A) - 1] + 1)
+
+def eval_range(name : str, A : list[int], min , max):
     steps = 0
     value = 0
     for i in range(min, max):
@@ -43,10 +42,16 @@ def eval(name : str, A : list[int]):
     print(f"Maximale Schritte: {steps} für Wert: {value}\n")
 
 
-eval("A", [1, 3, 5, 7, 9, 11, 13, 15])
-print("\n\n\n-----------------------------------------------------------")
-eval("B", [0, 7, 13, 22, 27, 32, 44, 49])
-print("\n\n\n-----------------------------------------------------------")
-eval("C", [0, 4, 16, 36, 64, 100, 144, 196])
+#eval("A", [1, 3, 5, 7, 9, 11, 13, 15])
+#print("\n\n\n-----------------------------------------------------------")
+#eval("B", [0, 7, 13, 22, 27, 32, 44, 49])
+#print("\n\n\n-----------------------------------------------------------")
+# eval("C", [0, 4, 16, 36, 64, 100, 144, 196]) # 4x^2
+C = [0, 2, 16, 54, 128, 250, 432, 686]
+#print(C)
+#eval("C", C) # 2x^3
+C.reverse()
+print(C)
+eval_range("C", C,-1,689) # 2x^3
 
 # typing checked using mypy: /Users/Michael/Library/Python/3.13/bin/mypy

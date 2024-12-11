@@ -46,7 +46,7 @@ Suchen auf Arrays
 
 :Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
 :Kontakt: michael.eichberg@dhbw.de, Raum 149B
-:Version: 1.0
+:Version: 1.1
 
 .. container:: minor
 
@@ -508,7 +508,7 @@ Interpolierende Suche - lineare Approximation
 .. incremental:: 
 
     .. note::
-        :class: far-smaller margin-left-1em
+        :class: far-smaller margin-left-1em incremental
 
         Wir möchten die Position des Wertes 50 im Array abschätzen! Deswegen sind im linearen Modell die Paare :math:`(x_1,y1) = (30,20)` und :math:`(x_2,y_2) = (120,40)` zu wählen. D. h. die Indizes sind unsere y-Werte. 
 
@@ -600,26 +600,42 @@ Lineare interpolierende Suche
 
 .. code:: pascal
     :number-lines:
-    :class: far-smaller
+    :class: far-smaller copy-to-clipboard
 
     Algorithm linearInterpolatingSearch(A,needle) 
-        lower = 1               // index auf das kleinste Element
-        upper = length(A)       // index auf das größte Element
-        vL = A[lower]
+        lower := 1               // index auf das kleinste Element
+        upper := length(A)       // index auf das größte Element
+        vL := A[lower]
         if vL == needle then return lower
-        vU = A[upper]
+        vU := A[upper]
         if vU == needle then return upper
         while upper > lower do
-            pos = round(lower·(needle−vU)/(vL−vU) + 
-                        upper·(needle−vL)/(vU−vL))
-            value = A[pos]
-            if value == needle then 
-                return pos
+            pos := round(lower·(needle−vU)/(vL−vU) + 
+                         upper·(needle−vL)/(vU−vL))
+            pos := max(lower + 1, min(upper - 1, pos))
+            value := A[pos]
+            if value == needle then return pos
             else if value < needle then 
-                lower = max(pos, lower+1), vL = A[lower]
+                lower := max(pos, lower+1), vL = A[lower]
             else                       
-                upper = min(pos, upper-1), vU = A[upper]
+                upper := min(pos, upper-1), vU = A[upper]
         return nil
+
+
+.. supplemental:: 
+
+    Die Korrektur von :java:`pos` in Zeile 11 (:java:`pos := max(lower + 1, min(upper - 1, pos))`) stellt sicher, dass :java:`pos` immer strikt zwischen :java:`lower` und :java:`upper` liegt. Dies ist insbesondere deswegen notwendig, weil die Interpolation nicht immer exakt ist. Stellen Sie sich zum Beispiel vor, dass die Daten polynomiell skaliert sind und sie (in Unkenntnis der echten Verteilung) die lineare Interpolationssuche verwenden. In diesem Fall kann es zu folgender Situation kommen:
+
+    Die Werte im Array seien: [0, 4, 16, 36, 64, 100, 144, 196] (zu Grunde liegt die Funktion :math:`4x^2`) und Sie suchen nach dem Wert 194. 
+    
+    Im ersten Schritt würde die lineare Interpolationssuche den Wert 194 auf Position 7 schätzen, was nutzlos wäre, aber erst einmal kein Problem verursachen würde. Da der Wert 194 aber nicht im Array enthalten ist, würde die Suche den Wert für die obere Grenze um eins korrigieren. Jetzt würde die lineare Interpolation aber mit den Werten des Arrays an Stelle 0 und 6 erfolgen (A[0]  = 0 und A[6] = 144). Das Ergebnis wäre die 2. Funktion (blau) und der Wert 194 würde auf Position 8 geschätzt, was außerhalb des Arrays liegt.
+
+    .. image:: images/lagrange/expo-index_error_case.svg
+        :width: 1200px
+        
+    Folgen die Werte im Array einer logarithmisch Verteilung, dann würde die umgekehrte Situation eintreten, d. h. es könnte am unteren Ende des Arrays zu einem ähnlichen Problem kommen, da dann die Werte oberhalb der geraden liegen würden.
+
+    Wenn der berechnete Index außerhalb des Bereichs ist, dann kann der Algorithmus auch einfach ``nil`` zurückgeben, da der Wert dann nicht im Array enthalten ist.
 
 
 
@@ -630,7 +646,7 @@ Exponentielle Suche im sortierten (unbeschränkten) *Array*
     :number-lines:
     :class: far-smaller
 
-    Algorithmus ExponentialSearch(A,needle)
+    Algorithm ExponentialSearch(A,needle)
         i = 1
         while A[i] < needle do
             i = i * 2
@@ -667,7 +683,7 @@ Exponentielle Suche im sortierten (unbeschränkten) *Array*
 
             Für die linear interpolierende Suche wird :math:`p_{lin}(5)` berechnet unter den Bedingungen, dass :math:`p_{lin}(-27) = 1` und :math:`p_{lin}(13) = 15` ist. Es ergibt sich:
 
-            :math:`p_{lin}(15) = 1·{5-13 \over -27-13} + 15·{5+27 \over 13+7} = \frac{1}{5} + 12 ≈12`
+            :math:`p_{lin}(15) = 1·{5-13 \over -27-13} + 15·{5+27 \over 13+27} = \frac{1}{5} + 12 ≈12`
 
         :quadratisch interpolierende Suche:
 
@@ -716,13 +732,13 @@ Exponentielle Suche im sortierten (unbeschränkten) *Array*
     Testen Sie den Algorithmus mit folgenden Arrays:
 
     .. code:: python
-        :class: far-smaller
+        :class: far-smaller copy-to-clipboard
 
         A = [1, 3, 5, 7, 9, 11, 13, 15] # linear verteilt (2x-1)
 
         B = [0, 7, 13, 22, 27, 32, 44, 49] # approx. linear verteilt (approx. 7x)
 
-        C = [0, 4, 16, 36, 64, 100, 144, 196] # quadratisch verteilt (4x^2)
+        C = [0, 2, 16, 54, 128, 250, 432, 686] # quadratisch verteilt (4x^2)
 
     Wie viele Schritte (im Sinne von Schleifendurchläufen) sind maximal notwendig, um festzustellen ob ein Wert im Array enthalten ist oder nicht?
 
@@ -739,17 +755,28 @@ Exponentielle Suche im sortierten (unbeschränkten) *Array*
 
 .. class:: integrated-exercise
 
-Übung [Optional]
+Übung
 -------------------
 
 .. exercise:: Exponentiell Interpolierende Suche
 
-    Implementieren Sie den Algorithmus für die exponentiell interpolierende Suche in einer Programmiersprache Ihrer Wahl.
+    Implementieren Sie den Algorithmus für die exponentiell interpolierende Suche in einer Programmiersprache Ihrer Wahl. (Ggf. müssen Sie noch die passende binäre Suche implementieren).
+
+    Gegeben sei die folgende Funktion, die als Generator fungiert. (:math:`x` sei eine natürliche Zahl).
+
+    .. math:: 
+
+        f(x) = \text{round}\left(\frac{1}{1+e^{-x}} \cdot 100\,000\,000 \right)
+
+    Testen Sie ob :math:`99999996` ein Wert der Funktion ist und geben Sie den Index (:math:`x`) zurück.
+    
 
     Wann macht es Sinn die exponentiell interpolierende Suche zu verwenden?
 
     .. solution:: 
         :pwd: sonst_ist_er_nicht_wirklich besser
+
+        Der Index (:math:`x`) ist :math:`17`.
 
         1. Wenn es keine (echte) obere Grenze gibt, da dann kein oberster Wert für die binäre Suche bestimmt werden kann.
 
@@ -761,7 +788,21 @@ Exponentielle Suche im sortierten (unbeschränkten) *Array*
             :code: python
             :class: smaller
             :number-lines:
+            :start-after: # binary_search(F, l, u, needle) -> int
+            :end-before: # exponential_search(F, needle) -> int
 
+        .. include:: code/exponential_search.py
+            :code: python
+            :class: smaller
+            :number-lines:
+            :start-after: # exponential_search(F, needle) -> int
+            :end-before: # eval
+
+        .. include:: code/exponential_search.py
+            :code: python
+            :class: smaller
+            :number-lines:
+            :start-after: # run_exponential_search
 
 
 .. class:: new-section transition-move-to-top
@@ -845,6 +886,7 @@ Strategien zur Anordnung - Diskussion
         :header: x, MF-Regel, T-Regel, FC-Regel, "Häufigkeiten pro Wert"
         :align: center
         :class: smaller
+        :width: 90%
 
         1
         2
@@ -861,6 +903,7 @@ Strategien zur Anordnung - Diskussion
         .. csv-table::
             :header: x, MF-Regel, T-Regel, FC-Regel, Häufigkeiten pro Wert
             :align: center
+            :width: 90%
 
             1, "[1,2,3,4,5]", "[1,2,3,4,5]", "[1,2,3,4,5]", "[1,0,0,0,0]"
             2, "[2,1,3,4,5]", "[2,1,3,4,5]", "[1,2,3,4,5]", "[1,1,0,0,0]"
@@ -878,15 +921,16 @@ Strategien zur Anordnung - Diskussion
 Übung
 --------
 
-.. exercise::  A = [1,2,3,4,5] selbstanordnend sortieren
+.. exercise::  A = [1,2,3,4,5,6] selbstanordnend sortieren
 
-    Das Array :python:`A = [1,2,3,4,5]` soll selbstanordnend sortiert werden. Danach werden die folgenden Werte in der angegebenen Reihenfolge gesucht: :python:`5,1,6,2,3,6,5`. Bestimmen Sie die Anordnung des Arrays nach jedem Zugriff für die Sortierungen nach MF-Regel, T-Regel und
+    Das Array :python:`A = [1,2,3,4,5,6]` soll selbstanordnend sortiert werden. Danach werden die folgenden Werte in der angegebenen Reihenfolge gesucht: :python:`5,1,6,2,3,6,5`. Bestimmen Sie die Anordnung des Arrays nach jedem Zugriff für die Sortierungen nach MF-Regel, T-Regel und
     FC-Regel. Füllen Sie die nachfolgende Tabelle aus:
 
     .. csv-table::
         :header: x, MF-Regel, T-Regel, FC-Regel, "Häufigkeiten"
         :align: center
         :class: smaller
+        :width: 90%
 
         5
         1
@@ -904,6 +948,7 @@ Strategien zur Anordnung - Diskussion
         .. csv-table::
             :header: x, MF-Regel, T-Regel, FC-Regel, Häufigkeiten
             :align: center
+            :width: 90%
 
             5, "[5,2,3,4,1,6]", "[1,2,3,5,4,6]", "[5,1,2,3,4,6]", "[0,0,0,0,1,0]"
             1, "[1,2,3,4,5,6]", "[1,2,3,5,4,6]", "[5,1,2,3,4,6]", "[1,0,0,0,1,0]"
@@ -911,7 +956,7 @@ Strategien zur Anordnung - Diskussion
             2, "[2,6,3,4,5,1]", "[2,1,3,5,6,4]", "[5,1,6,2,3,4]", "[1,1,0,0,1,1]"
             3, "[3,6,2,4,5,1]", "[2,3,1,5,6,4]", "[5,1,6,2,3,4]", "[1,1,1,0,1,1]"
             6, "[6,3,2,4,5,1]", "[2,3,1,6,5,4]", "[6,5,1,2,3,4]", "[1,1,1,0,1,2]"
-            5, "[5,3,2,4,5,1]", "[2,3,1,5,6,4]", "[6,5,1,2,3,4]", "[1,1,1,0,2,2]"
+            5, "[5,3,2,4,6,1]", "[2,3,1,5,6,4]", "[6,5,1,2,3,4]", "[1,1,1,0,2,2]"
 
 
 
@@ -949,7 +994,7 @@ Einfache Textsuche
 
         .. code:: pascal
             :number-lines:
-            :class: far-smaller
+            :class: far-smaller copy-to-clipboard
 
             Algorithmus NaiveTextSearch(text,needle)
                 n = length(text)
@@ -959,7 +1004,7 @@ Einfache Textsuche
                     while text[i + j] == needle[j + 1] do
                         j = j + 1
                         if j == m then
-                            return i // print("Found at",i) 
+                            return i // Found at i
                 return nil
 
     .. layer:: incremental
@@ -1078,7 +1123,7 @@ Knuth-Morris-Pratt Verfahren - Grundlagen
 
     .. layer:: incremental
 
-        Das KMP-Verfahren fängt nicht immer von vorne an, sondern prüft, ob ein Rand eines :math:`Präfixes - ε`   ausgenutzt werden kann. Dazu werden die entsprechenden größten Ränder bestimmt.
+        Das KMP-Verfahren fängt nicht immer von vorne an, sondern prüft, ob ein Rand eines Präfixes :math:`- ε` ausgenutzt werden kann. Dazu werden die entsprechenden größten Ränder bestimmt.
 
         .. container:: two-columns incremental
 
@@ -1087,7 +1132,7 @@ Knuth-Morris-Pratt Verfahren - Grundlagen
                 .. rubric:: Beispiel: ananas
 
                 .. csv-table::
-                    :header: ":math:`Präfixe \\setminus \\{ε\\}`", "Größter Rand", "Länge des Randes"
+                    :header: "Präfixe :math:`\\setminus \\{ε\\}`", "Größter Rand", "Länge des Randes"
                     :class: smaller
 
                     a, ε, 0
@@ -1211,7 +1256,7 @@ Knuth-Morris-Pratt Verfahren
             :number-lines:
             :class: far-smaller copy-to-clipboard
 
-            Algorithmus ComputePrefixFunction(needle)
+            Algorithm ComputePrefixFunction(needle)
                 m = length(needle)
                 sei B[1...m] ein Array // Array für die Längen der Ränder der Teilworte
                 B[1] = 0
@@ -1234,7 +1279,7 @@ Knuth-Morris-Pratt Verfahren
             :number-lines:
             :class: far-smaller
 
-            Algorithmus KMP(text,needle)
+            Algorithm KMP(text,needle)
                 n = length(text), m = length(needle)
                 B = ComputePrefixFunction(needle)
                 q = 0               // Anzahl der übereinstimmenden Zeichen
@@ -1326,7 +1371,7 @@ Gesucht wird ``ananas`` in ``saansanananas``
 
           a a a a a a a a b
           ___________________
-          a a a b̶             Beim Mismatch bei i == 4 ist q == 3 und wird auf q = p[3] == 2 
+          a a a b̶             Beim Mismatch bei i == 4 ist q == 3 und wird auf q=p[3] == 2 
                               (längster Rand) gesetzt und direkt wieder um 1 
                               erhöht, da das nächste Zeichen (a == a) übereinstimmt.
             a a a b̶
@@ -1364,7 +1409,7 @@ Gesucht wird ``ananas`` in ``saansanananas``
 
 
 
-Boyer-Moore-Algorithmus
+Boyer-Moore-Algorithmus (vereinfacht)
 ------------------------------------------------
 
 
@@ -1418,7 +1463,7 @@ Boyer-Moore-Algorithmus
 
         .. rubric:: Komplexität
 
-        Im guten und häufigen Fall erreicht das Verfahren :math:`O(\frac{n}{m})`, aber in speziellen Fällen ist auch O(n·m) möglich.
+        Im guten und häufigen Fall erreicht das Verfahren :math:`O(\frac{n}{m})`, aber in speziellen Fällen ist auch :math:`O(n·m)` möglich.
 
 .. supplemental::
 
@@ -1531,7 +1576,7 @@ Suche nach dem n-ten Element mittels Quickselect
             :number-lines:
             :class: far-smaller
 
-            Algorithmus Quickselect(A,k)  // k ist der Index des gesuchten Elements
+            Algorithm Quickselect(A,k)    // gesucht ist das k größte Element
                 if length(A) == 1 then return A[0]
                 pivot := arr[length(A)-1] // ein bel. Element als Pivot (hier das letzte)
                 lows := []                // Elemente kleiner als Pivot
@@ -1562,14 +1607,14 @@ Suche nach dem n-ten Element mittels Quickselect
 
 
 
-Beispiel: Bestimmung des Medians mittels Quickselect
+Beispielanwendung: Bestimmung des Medians
 ----------------------------------------------------
 
 .. code:: pascal
     :number-lines:
-    :class: far-smaller
+    :class: far-smaller copy-to-clipboard
 
-    Algorithmus FindeMedian(A) // A ist _nicht sortiert_
+    Algorithm FindMedian(A) // A ist _nicht sortiert_
         n = length(A)
         if n % 2 == 1 then // d. h. wir haben eine ungerade Anzahl von Elementen in A
             return Quickselect(A, floor(n / 2))
@@ -1579,6 +1624,7 @@ Beispiel: Bestimmung des Medians mittels Quickselect
             return (left + right) / 2
 
 
+
 .. class:: integrated-exercise
 
 Übung
@@ -1586,31 +1632,33 @@ Beispiel: Bestimmung des Medians mittels Quickselect
 
 .. exercise:: n-te Element bestimmen
 
-    Bestimmen Sie (I) den Median für das Array ``A = [23,335,2,24,566,3,233,54,42,6,667,7,5,7,7]``. Wenden Sie dazu den Algorithmus ``FindeMedian`` (inkl. ``Quickselect-Algorithmus``) an. 
+    1. Bestimmen Sie den Median für das Array ``A = [23,335,2,24,566,3,233,54,42,6,667,7,5,7,7]``. Wenden Sie dazu den Algorithmus ``FindMedian`` (inkl. ``Quickselect-Algorithmus``) an. 
     
-    Geben Sie weiterhin (II) nach jeder Partitionierung im Quickselect Algorithmus den aktuellen Zustand an (d. h. nach Zeile 11 in Quickselect). 
+    2. Geben Sie weiterhin nach jeder Partitionierung im Quickselect Algorithmus den aktuellen Zustand an (d. h. nach Zeile 11 in Quickselect). 
 
-    .. csv-table::
-        :header: "Array A", "k", "Pivot", "Lows", "Highs", "Pivots Count"
-        :align: center
-        :class: smaller
+       .. csv-table::
+            :header: "Array A", "k", "Lows", "Pivot", "Pivots Count", "Highs"
+            :align: center
+            :class: smaller
 
-        "[...]", <K>, <P>, "[...]", "[...]", "<#P>"
+            "[...]", <K>,  "[...]", <P>, "<#P>", "[...]"
 
     .. solution::
         :pwd: mal_schnell_mal_langsam
 
-            .. csv-table::
-                :header: "Array A", "length(A)", "k", "Pivot", "lows", "highs", "pivotsCount"
-                :align: center
-                :class: smaller
+        .. csv-table::
+            :header: "Array A", "length(A)", "k", "Pivot", "lows", "highs", "pivotsCount"
+            :align: center
+            :class: smaller
 
-                "[23, 335, 2, 24, 566, 3, 233, 54, 42, 6, 667, 7, 5, 7, 7]", 15 , 7 , 7 , "[2, 3, 6, 5]", "[23, 335, 24, 566, 233, 54, 42, 667]", 3
-                "[23, 335, 24, 566, 233, 54, 42, 667]", 8 , 0 , 667 , "[23, 335, 24, 566, 233, 54, 42]", "[]", 1
-                "[23, 335, 24, 566, 233, 54, 42]", 7 , 0 , 42 , "[23, 24]", "[335, 566, 233, 54]", 1
-                "[23, 24]", 2 , 0 , 24 , "[23]", "[]", 1
+            "[23, 335, 2, 24, 566, 3, 233, 54, 42, 6, 667, 7, 5, 7, 7]", 15 , 7 , 7 , "[2, 3, 6, 5]", "[23, 335, 24, 566, 233, 54, 42, 667]", 3
+            "[23, 335, 24, 566, 233, 54, 42, 667]", 8 , 0 , 667 , "[23, 335, 24, 566, 233, 54, 42]", "[]", 1
+            "[23, 335, 24, 566, 233, 54, 42]", 7 , 0 , 42 , "[23, 24]", "[335, 566, 233, 54]", 1
+            "[23, 24]", 2 , 0 , 24 , "[23]", "[]", 1
 
-            Median: 23
+        Median: 23
+
+
 
 Übung
 --------
@@ -1646,7 +1694,6 @@ Beispiel: Bestimmung des Medians mittels Quickselect
         **Bester Fall:**
 
         Der Aufwand ist :math:`O(n)` und tritt ein, wenn das Pivot-Element das Median-Element ist. In diesem Fall wird das Array nur einmal durchsucht und partitioniert.
-
 
 .. supplemental::
 
