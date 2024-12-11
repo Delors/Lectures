@@ -109,7 +109,7 @@ Aufgabe
 
 .. rubric:: Naive Textsuche (Niveau: mittel)
 
-Gegeben Sei ein Array von Zeichen (:java:`text`) und ein Array von Zeichen (:java:`zuSuchen`),
+Gegeben sei ein Array von Zeichen (:java:`text`) und ein Array von Zeichen (:java:`zuSuchen`),
 die im Text(-Array) gesucht werden sollen. Zurückgegeben werden soll die
 Startposition des zu suchenden Textes im Text (Arrays) oder -1, wenn
 der Text nicht vorkommt.
