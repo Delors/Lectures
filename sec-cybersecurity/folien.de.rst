@@ -76,7 +76,7 @@ Was ist Cybersecurity?
 
             *Artikel 2 Nummer 1* 
 
-            „Cybersicherheit“ bezeichnet alle Tätigkeiten, die notwendig sind, um Netz- und Informationssysteme, die Nutzer solcher Systeme und andere von Cyberbedrohungen betroffene Personen zu schützen []
+            „Cybersicherheit“ bezeichnet alle Tätigkeiten, die notwendig sind, um Netz- und Informationssysteme, die Nutzer solcher Systeme und andere von Cyberbedrohungen betroffene Personen zu schützen [...]
 
             -- `Verordnung (EU) 2019/881 <https://eur-lex.europa.eu/legal-content/DE/TXT/PDF/?uri=CELEX:32019R0881>`__
 
@@ -242,9 +242,9 @@ Receiver mit DDoS Funktion
 
     Der Hersteller soll insgesamt 240.000 Geräte mit der DDoS-Funktion ausgestattet haben – teils ab Werk, teils erst nachträglich per Firmwareupdate.
 
-    [...] In Südkorea sind fünf Mitarbeiter sowie der CEO eines Unternehmens verhaftet worden. Dieses soll Satellitenreceiver hergestellt und Hunderttausende davon auf Wunsch eines Kunden mit einer DDoS-Funktion ausgestattet haben. Wie [...] unter Verweis auf Angaben der südkoreanischen Polizei berichtet, lieferte der Hersteller 98.000 Geräte ab Werk mit dieser Funktion aus.
+    [...] In Südkorea sind fünf Mitarbeiter sowie der CEO eines Unternehmens verhaftet worden. Dieses soll Satellitenreceiver hergestellt und Hunderttausende davon auf Wunsch eines Kunden mit einer DDoS-Funktion ausgestattet haben. Wie [...] unter Verweis auf Angaben der südkoreanischen Polizei berichtet, lieferte der Hersteller 98.000 Geräte ab Werk mit dieser Funktion aus. [...] 
 
-    [...] Dass Geräte ab Werk mit Schadsoftware ausgeliefert werden, ist gerade im unteren Preissegment keine Seltenheit. Sicherheitsforscher deckten erst im vergangenen Jahr eine Malware-Kampagne auf, bei der vor allem billige Android-Geräte wie Smartphones, Tablets und TV-Boxen aus China vor ihrer Auslieferung an Endkunden mit einer Schadsoftware ausgestattet worden waren. 
+    Dass Geräte ab Werk mit Schadsoftware ausgeliefert werden, ist gerade im unteren Preissegment keine Seltenheit. Sicherheitsforscher deckten erst im vergangenen Jahr eine Malware-Kampagne auf, bei der vor allem billige Android-Geräte wie Smartphones, Tablets und TV-Boxen aus China vor ihrer Auslieferung an Endkunden mit einer Schadsoftware ausgestattet worden waren. 
 
     -- 3.12.2024 - `Golem.de <https://www.golem.de/news/ceo-verhaftet-satellitenreceiver-jahrelang-mit-ddos-funktion-ausgeliefert-2412-191354.html>`__
 
@@ -264,11 +264,11 @@ Ausgewählte Angriffe, Angriffsmethoden und Bedrohungsszenarien
 
 - Backdoors (:ger:`Hintertüren`)
 - (Distributed-)Denial-of-service Angriffe
-- Direct-access Angriffe
+- Direct-access Angriffe (d. h. physischer Angriff auf das System)
 - Eavesdropping (:ger:`Abhören`)
 - Malware
 - Man-in-the-middle (MITM) Angriffe
-- Privilege escalation
+- Privilege escalation (unterschieden werden: horizontale und vertikale)
 - Side-Channel attacks/\ :ger:`Seitenkanalangriffe`
 - Spoofing (z. B. IP-Spoofing)
 - Social engineering (z. B. Phishing)
@@ -276,12 +276,14 @@ Ausgewählte Angriffe, Angriffsmethoden und Bedrohungsszenarien
 .. class:: incremental
     
 - Advanced Persistent Threats (APT)
-- *store-now, decrypt-later* (:ger:`Speichere jetzt, Entschlüssele später`)
+- *Store-now, Decrypt-later* (:ger:`Speichere jetzt, Entschlüssele später`)
 
 
 .. supplemental::
 
-    Der Begriff *Advanced Persistent Threat* (≘ „fortgeschrittene, andauernde Bedrohung“) bezeichnet Cyberangriffe durch professionelle Gruppen (häufig *state sponsored*). Es werden in der Regel langfristige Ziele verfolgt. Diese dienen zum Beispiel der Spionage oder der Vorbereitung auf einen Cyberkrieg. Häufige Ziele sind Regierungen und Unternehmen sowie Organisationen, die über kritische Daten verfügen. Insbesondere in der Anfangsphase gehen die Angreifer sehr vorsichtig vor, um nicht entdeckt zu werden. Danach unterscheidet sich das Vorgehen je nach Zielsetzung.
+    :Vertikale Privilege Escalation: Der Angreifer erhält Zugriff auf höhere Rechte, die er vorher nicht hatte.
+    :Horizontale Privilege Escalation: Der Angreifer erhält Zugriff auf die Rechte einer anderen Person, die er vorher nicht hatte.
+    :APT: Der Begriff *Advanced Persistent Threat* (≘ „fortgeschrittene, andauernde Bedrohung“) bezeichnet gezielte Cyberangriffe durch professionelle Gruppen (häufig *state sponsored*). Es werden in der Regel langfristige Ziele verfolgt. Diese dienen zum Beispiel der Spionage oder der Vorbereitung auf einen Cyberkrieg. Häufige Ziele sind Regierungen und Unternehmen sowie Organisationen, die über kritische Daten verfügen. Insbesondere in der Anfangsphase gehen die Angreifer sehr vorsichtig vor, um nicht entdeckt zu werden. Danach unterscheidet sich das Vorgehen je nach Zielsetzung. Häufig wird versucht den Zugriff auf das Zielsystem langfristig zu erhalten, um so an weitere Informationen zu gelangen.
 
 
 
@@ -602,9 +604,9 @@ Ausgewählte Social-Engineering Angriffe
 
 - Autorität: Der Angreifer gibt sich z. B. als Mitarbeiter des IT-Supports aus.
 - Einschüchterung (:eng:`Intimidation`)
-- Dringlichkeit
+- Dringlichkeit (*"In 10 Minuten verschlüssele ich den Rechner."*)
 - Konsens (*"Alle machen das so."*)
-- Knappheit (*"Nur noch Heute im Angebot."*)
+- Knappheit (*"Es sind nur noch drei Rechner nicht infiziert."*)
 - Vertrautheit 
 - Vertrauen
 
@@ -693,7 +695,7 @@ NIS 2 Richtlinie (:eng:`NIS 2 Directive`)
     .. class:: incremental list-with-explanations
 
     - Die NIS2-Richtlinie ist die zweite EU-Richtlinie zur Netz- und Informationssicherheit (NIS) in der EU.
-    - bis 17. Oktober 2024 müssen alle nationalstaaten entsprechende Regelungen in nationales Recht umgesetzt haben und ab 18. Oktober 2024 anwenden
+    - seit 17. Oktober 2024 müssen alle nationalstaaten entsprechende Regelungen in nationales Recht umgesetzt haben und ab 18. Oktober 2024 anwenden
     - Das Hauptziel ist die Verbesserung der Widerstandsfähigkeit gegen Cyberkriminalität und die Verbesserung des europäischen und nationalen Cybersecurity-Managements.
 
       Die neue NIS-2-Richtlinie zielt darauf ab, die Widerstandsfähigkeit und Reaktionsfähigkeit des öffentlichen und privaten Sektors zu verbessern. Der Schwerpunkt der Richtlinie liegt auf der Bekämpfung der Cyberkriminalität.
@@ -721,7 +723,7 @@ NIS 2 Richtlinie (:eng:`NIS 2 Directive`)
 NIS 2 - Berichtspflichten
 ----------------------------
 
-- wesentliche und wichtige Einrichtungen müssen unverzüglich (*in jeden Fall aber innerhalb von 24 Stunden*) über jeden Sicherheitsvorfall unterrichten, der erhebliche Auswirkungen auf die Erbringung ihrer Dienste hat
+- Wesentliche und wichtige Einrichtungen müssen unverzüglich (*in jeden Fall aber innerhalb von 24 Stunden*) über jeden Sicherheitsvorfall unterrichten, der erhebliche Auswirkungen auf die Erbringung ihrer Dienste hat
 -   Ein Sicherheitsvorfall gilt als erheblich, wenn
 
     .. class:: incremental
@@ -766,9 +768,9 @@ Von NIS2 betroffene Öffentliche und private Einrichtungen\ [#]_
         - Online-Suchmaschinen
         - Cloud Computing-Dienste
 
-.. container:: incremental far-far-smaller
+.. container:: incremental far-smaller
     
-    Bis zum 17. April 2025 erstellen die Mitgliedstaaten eine Liste von wesentlichen und wichtigen Einrichtungen und von Einrichtungen, die Domänennamen-Registrierungsdienste erbringen und aktualisieren sie gegebenenfalls regelmäßig -- spätestens alle 2 Jahre.
+    Bis zum 17. April 2025 erstellen die Mitgliedstaaten eine Liste von wesentlichen und wichtigen Einrichtungen und von Einrichtungen, die Domänennamen-Registrierungsdienste erbringen und aktualisieren sie gegebenenfalls regelmäßig — spätestens alle 2 Jahre.
   
 .. [#] `Details siehe Anhang I und II der NIS 2 Richtlinie <https://eur-lex.europa.eu/legal-content/DE/TXT/HTML/?uri=CELEX:32022L2555#d1e32-143-1>`__
 
