@@ -31,7 +31,7 @@ Klassische Sicherheitsprinzipien
 
 :Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
 :Kontakt: michael.eichberg@dhbw.de
-:Version: 1.1.1
+:Version: 1.2
 
 .. supplemental::
 
@@ -84,11 +84,19 @@ Klassische Sicherheitsprinzipien
     (Eng verwandt mit dem POLA.)
 
 
+.. supplemental:: 
+
+    Das *Principle of Separation of Privilege* wird dann eingehalten, wenn ein Angreifer, der eine Komponente kompromittiert hat, nicht die Rechte erhält, die notwendig sind, um das gesamte System zu kompromittieren. Zum Beispiel ist es für Überweisungen notwendig diese auf zwei verschiedene Arten zu autorisieren.
+
+    .. attention:: 
+    
+        *Privilege Separation* (für Programme) sollte nicht mit dem hier beschriebenen Prinzip verwechselt werden. *Privilege Separation* liegt zum Beispiel dann vor, wenn ein Programm in zwei Teile aufgeteilt ist und  ein Teil - zum Beispiel zum Zugriff auf Betriebssystemressourcen wie Sockets oder bestimmte Dateien - erhöhte Rechte benötigt als der Rest vom Programm. In diesem Fall erfolgt dann der Austausch zwischen den beiden Teilen über eine wohldefinierte, minimale Schnittstelle, die die Rechte des ersten Teils auf das notwendige Minimum beschränkt.
+
 
 Klassische Sicherheitsprinzipien
 -----------------------------------------------
 
-:Principle of Least Common Mechanism: Die Sicherheitsmechanismen sollten über Nutzer hinweg möglichst wenig Gemeinsamkeiten haben.
+:Principle of Least Common Mechanism: Die Sicherheitsmechanismen sollten über Nutzer (hier insbesondere Programme, die andere Programme nutzen) hinweg möglichst wenig Gemeinsamkeiten haben.
 
 .. class:: incremental
 
@@ -111,7 +119,7 @@ Klassische Sicherheitsprinzipien
 
 
 
-Wiederholung: Klassische Sicherheitsprinzipien
+Klassische Sicherheitsprinzipien
 -----------------------------------------------
 
 
@@ -125,9 +133,11 @@ Wiederholung: Klassische Sicherheitsprinzipien
 
     **Beispiel - Principle of Isolation:**
 
-    Typischerweise kommuniziert zum Beispiel ein Basebandchip (WIFI, LTE, 5G, ...) mit dem Betriebssystem über eine minimale Schnittstelle über die nur Nachrichten übermittelt werden können, die leicht auf ihre Korrektheit überprüft werden können. Insbesondere erfolgt kein direkter Zugriff auf den Speicher des Betriebssystems.
+    1. Virtuelle Maschinen können genutzt werden, um Anwendungen in einer isolierten Umgebung auszuführen. Ein Angreifer, der eine Anwendung kompromittiert hat, kann somit nicht auf andere Anwendungen oder das Betriebssystem zugreifen.
 
-    Einen Angreifer ist es somit ggf. möglich den Basebandchip anzugreifen und ggf. zu kompromittieren, aber er kann nicht direkt auf das Betriebssystem zugreifen und Nachrichten, die bereits auf Betriebssystem oder Anwendungsebene verschlüsselt werden, sind weiterhin sicher.
+    2. Typischerweise kommuniziert zum Beispiel ein Basebandchip (WIFI, LTE, 5G, ...) mit dem Betriebssystem über eine minimale Schnittstelle über die nur Nachrichten übermittelt werden können, die leicht auf ihre Korrektheit überprüft werden können. Insbesondere erfolgt kein direkter Zugriff auf den Speicher des Betriebssystems.
+
+       Einen Angreifer ist es somit ggf. möglich den Basebandchip anzugreifen und ggf. zu kompromittieren, aber er kann nicht direkt auf das Betriebssystem zugreifen und Nachrichten, die bereits auf Betriebssystem oder Anwendungsebene verschlüsselt werden, sind weiterhin sicher.
 
 
 
@@ -207,9 +217,9 @@ Ergänzende Sicherheitsprinzipien
     .. solution:: 
         :pwd: ChromeWasFirst
 
-        Das *Principle of Isolation* wird hier umgesetzt. Ist die Sicherheit einer Webseite kompromittiert, so betrifft dies nicht sie Sicherheit der anderen Webseiten.
+        Das *Principle of Isolation* wird hier umgesetzt. Ist die Sicherheit einer Webseite kompromittiert, so betrifft dies (hoffentlich) nicht sie Sicherheit der anderen Webseiten.
 
-        Weiterhin wird auch das *Principle of Least Common Mechanism* umgesetzt, da die Webseiten in unterschiedlichen Prozessen laufen und somit viele Angriffsvektoren unterbunden werden, da es nur minimalen geteilten Speicher gibt.
+        Weiterhin wird auch das *Principle of Least Common Mechanism* umgesetzt, da die Webseiten in unterschiedlichen Prozessen laufen und somit viele Angriffsvektoren unterbunden werden, da es nur minimalen bzw. keinen geteilten Speicher gibt.
 
         
 
@@ -231,7 +241,11 @@ Ergänzende Sicherheitsprinzipien
 
 .. exercise:: Rechte von im Hintergrund laufenden Prozessen auf Servern
 
-    Es ist üblich, dass für Prozesse, die auf Servern im Hintergrund laufen, extra Nutzerkonten eingerichtet werden. Warum ist dies so? Welche Rechte sollten diese „Nutzer“ bekommen? Was sollte weiterhin beachtet werden?
+    Es ist üblich, dass für Prozesse, die auf Servern im Hintergrund laufen, extra Nutzerkonten eingerichtet werden. 
+    
+    - Warum ist dies so? 
+    - Welche Rechte sollten diese „Nutzer“ bekommen? 
+    - Was sollte weiterhin beachtet werden?
 
     .. solution:: 
         :pwd: LeastPrivilege
