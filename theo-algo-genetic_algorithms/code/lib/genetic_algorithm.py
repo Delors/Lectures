@@ -68,21 +68,25 @@ class GeneticAlgorithm(Generic[C]):
     # Replace the population with a new generation of individuals
     def _reproduce_and_replace(self) -> None:
         new_population: list[C] = []
-        # keep going until we've filled the new generation
+        # Selektiere und Kreuze Individuen, bis die neue Population steht
         while len(new_population) < len(self._population):
-            # pick the 2 parents
-            if self._selection_type == GeneticAlgorithm.SelectionType.ROULETTE:
+            # Wahl der zwei Eltern gemäß Selektionsmethode
+            # (Roulette oder Turnier)
+            if self._selection_type == \
+                GeneticAlgorithm.SelectionType.ROULETTE:
                 parents: tuple[C, C] = self._pick_roulette(
                     [x.fitness() for x in self._population]
                 )
             else:
-                parents = self._pick_tournament(len(self._population) // 2)
-            # potentially crossover the 2 parents
+                parents = \
+                    self._pick_tournament(len(self._population) // 2)
+            # Kreuze ggf. die Eltern
             if random() < self._crossover_chance:
                 new_population.extend(parents[0].crossover(parents[1]))
             else:
                 new_population.extend(parents)
-        # if we had an odd number, we'll have 1 extra, so we remove it
+        # Falls die Populationsgröße ungerade ist, 
+        # entferne das letzte Individuum
         if len(new_population) > len(self._population):
             new_population.pop()
         self._population = new_population  # replace reference

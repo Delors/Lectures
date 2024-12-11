@@ -1,9 +1,9 @@
 .. meta:: 
     :lang: de
     :author: Michael Eichberg
-    :keywords: "genetic programming", "python"
-    :description lang=de: Genetische Programmierung
-    :id: lecture-theo-genetic_programming
+    :keywords: "genetische Algorithmen", "python"
+    :description lang=de: Genetische Algorithmen
+    :id: lecture-theo-genetische_algorithmen
     :first-slide: last-viewed
     :exercises-master-password: WirklichSchwierig!
     
@@ -53,7 +53,7 @@
 
 .. class:: animated-symbol 
 
-Genetische Programmierung
+Genetische Algorithmen
 ======================================================
 
 ----
@@ -285,6 +285,54 @@ Hauptmethode des genetischen Algorithmus
 
 
 
+.. supplemental:: 
+
+    :java:`fitness_key` ist eine Referenz auf die Methode, die die Fitness eines Chromosoms berechnet.
+
+Durchführung der Mutationen
+--------------------------------------------------------
+
+.. include:: code/lib/genetic_algorithm.py
+    :code: python
+    :number-lines: 94
+    :class: slightly-more-smaller
+    :start-after: # With _mutation_chance probability mutate each individual
+    :end-before: # Run the genetic algorithm for max_generations iterations
+
+
+
+Durchführung der Selektion und Vererbung
+--------------------------------------------------------
+
+.. stack:: invisible
+
+    .. layer:: 
+
+        .. include:: code/lib/genetic_algorithm.py
+            :code: python
+            :number-lines: 69
+            :class: slightly-more-smaller
+            :start-after: # Replace the population with a new generation of individuals
+            :end-before: if self._selection_type == \
+
+        .. include:: code/lib/genetic_algorithm.py
+            :code: python
+            :number-lines: 82
+            :class: slightly-more-smaller
+            :start-after: self._pick_tournament(len(self._population) // 2)
+            :end-before: # With _mutation_chance probability mutate each individual
+
+    .. layer:: incremental
+
+        .. include:: code/lib/genetic_algorithm.py
+            :code: python
+            :number-lines: 73
+            :class: slightly-more-smaller
+            :start-after: while len(new_population) < len(self._population):
+            :end-before: # Kreuze ggf. die Eltern
+
+
+
 .. class::  no-title center-child-elements
 
 Herausforderungen bei der Entwicklung genetischer Algorithmen
@@ -349,7 +397,7 @@ SEND+MORE=MONEY - Umsetzung
 
             "letters = \[", "O,", "M,", "Y,", "␣,", "␣,", "E,", "N,", "D,", "R,", "S", "]"
 
-        .. container:: minor
+        .. container:: minor smaller line-above
 
             *Für die Lösung würde sich ergeben:*
             
@@ -453,6 +501,7 @@ SEND+MORE=MONEY - Umsetzung
         .. container:: incremental
 
             .. math:: 
+                :class: smaller
 
                 \text{minimiere}(|money - (send + more)|)
 
@@ -462,6 +511,7 @@ SEND+MORE=MONEY - Umsetzung
             **Feststellung**: Das Ziel des generischen genetischen Algorithmus ist es, die Fitness-Funktion zu maximieren. Wir müssen somit unser Minimierungsproblem in ein Maximierungsproblem umwandeln:
 
             .. math:: 
+                :class: smaller
 
                 \text{maximiere}\left(\frac{1} { |money - (send + more)| + 1 }\right)\\
 
@@ -573,11 +623,12 @@ SEND+MORE=MONEY - Umsetzung
 
 .. exercise:: Ausgeglichene Gruppenzuteilung
 
-    Passen Sie Ihren genetischen Algorithmus aus der vorherigen Übung so an, dass die Gruppen alle in etwa die gleiche Glücklichkeit aufweisen. 
+    Passen Sie Ihren genetischen Algorithmus aus der vorherigen Übung so an, dass die Gruppen alle in etwa die gleiche Glücklichkeit aufweisen. D. h. eine Zuteilung, bei der die  Gruppenglücklichkeiten z. B. 92 + 91 + 73 + 89 = 345 sind, die aber größere Unterschiede zwischen den Gruppen hat, sollte vermieden werden. Eine Verteilung z. B. mit den Gruppenglücklichkeiten: 80, 84, 80, 80 = 324 sollte bevorzugt werden.
     
-    Sie können das Problem zum Beispiel über die Abweichung vom Durchschnitt berechnen.
-
     .. hint:: 
+        :class: smaller
+
+        Sie können den bisher errechneten Wert zum Beispiel dadurch anpassen, dass Sie von dem Wert die Summe der absoluten Abweichungen vom Durchschnitt abziehen. Ggf. ist es erforderlich den Wert auch noch zu skalieren, damit steigende Abweichungen stärker ins Gewicht fallen.
 
         Bedenken sie, dass sie ggf. den Threshold anpassen müssen.
 
