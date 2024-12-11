@@ -36,6 +36,11 @@
    :language: java
 
 
+.. |group_assignment_template.py| source:: code/group_assignment_template.py
+            :path: relative
+            :prefix: https://delors.github.io/
+
+
 
 .. class:: animated-symbol 
 
@@ -46,7 +51,7 @@ Komplexität und Algorithmen
 
     :Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
     :Kontakt: michael.eichberg@dhbw.de, Raum 149B
-    :Version: 1.1.3
+    :Version: 1.2
 
     .. container:: minor
 
@@ -2393,3 +2398,32 @@ Backtracking - Allgemein
         :number-lines:
         :class: far-smaller copy-to-clipboard
         :end-before:     for v
+
+
+
+.. class:: integrated-exercise transition-move-to-top
+
+Übung
+--------------------------------------------------------
+
+.. exercise:: Gruppenzuteilung
+
+    Finden Sie eine sehr gute Aufteilung von Personen (Studierenden) auf eine feste Anzahl an Gruppen, basierend auf den Präferenzen der Personen zueinander. Nutzen Sie dazu Backtracking.
+
+    Im Template ist eine initiale Aufgabenstellung hinterlegt, die es zu lösen gilt: Verteilung von 16 Studierenden auf 4 Gruppen inkl. Bewertungsmatrix :minor:`(jeder Studierende hat jeden anderen mit Werten von 1 bis 10 bewertet)`.
+
+    .. container:: slightly-more-smaller rounded-corners box-shadow padding-1em
+
+        **Template**
+
+        |group_assignment_template.py|
+
+    .. solution::
+        :pwd: ALLE Kombinationen bewerten
+
+        *Ein Lösungsvorschlag*
+
+        .. include:: code/group_assignment.py
+            :code: python
+            :number-lines:
+            :class: smaller
