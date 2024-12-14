@@ -34,7 +34,7 @@ GROUPS = range(4)
 MAX_GROUP_SIZE = 4
 
 
-prob = LpProblem("Group Assignment",LpMaximize)  # We need to find an assignment
+prob = LpProblem("Group Assignment",LpMaximize) 
 
 # we generate all possible solutions to make it possible to model our happiness function
 

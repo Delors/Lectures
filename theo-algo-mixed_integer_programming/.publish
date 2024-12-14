@@ -2,3 +2,10 @@ folien.de.rst.html
 folien.de.rst.html.pdf
 
 code/group_assignment_template.py
+code/send_more_money.py
+
+images/sudoku.svg
+images/lp-solution.svg
+images/lp-integer-programming.svg
+images/lp-constraints.svg
+images/lp-exercise-solution-unbounded.svg
