@@ -582,6 +582,41 @@ Schlupfform (:eng:`Slack Form`)
     Diese Schlupfvariable (:math:`x_{n+1}`) misst die Differenz zwischen der linken und der rechten Seite der Ungleichung (1). 
 
 
+Schlupfform - Beispiel
+------------------------
+
+.. container:: smaller
+
+    .. container:: 
+
+        .. rubric::  Gegebenes lineares Programm
+    
+        .. math::
+
+            \begin{array}{rrcrcl}
+            \text{maximiere}         & 3x_1 & + &  x_2 & + & 2x_3 \\
+            \text{unter den Nebenbedingungen}        &  x_1 & + &  x_2 & + & 3x_3 & \leq & 30 \\
+                                & 2x_1 & + & 2x_2 & + & 5x_3 & \leq & 24 \\
+                                & 4x_1 & + &  x_2 & + & 2x_3 & \leq & 36 \\
+                                &  x_1 & , &  x_2 & , &  x_3 & \geq & 0
+            \end{array}
+
+    .. container:: incremental
+
+        .. rubric::  Gegebenes lineares Programm in Schlupfform 
+
+        Wir führen die Schlupfvariablen :math:`x_3`, :math:`x_4` und :math:`x_5` ein mit der Nebenbedingung: :math:`x_4, x_5, x_6 \geq 0`.
+
+        .. math::
+            
+                \begin{array}{rrcrcl}
+                \text{maximiere}     &  z & = &    & & 3x_1 & + &  x_2 & + & 2x_3 \\
+                \text{unter den Nebenbedingungen}    &x_4 & = & 30 & - &  x_1 & - &  x_2 & - & 3x_3 \\
+                                &x_5 & = & 24 & - & 2x_1 & - & 2x_2 & - & 5x_4 \\
+                                &x_6 & = & 36 & - & 4x_1 & - &  x_2 & - & 2x_5 \\
+                \end{array}
+    
+
 
 .. class:: integrated-exercise transition-move-to-top
 
@@ -650,21 +685,147 @@ Schlupfform (:eng:`Slack Form`)
 
     .. class:: incremental list-with-explanations
 
-    - Wir wählen immer eine Variable, die in der Zielfunktion vorkommt und einen positiven Koeffizienten hat. 
+    1. Wir wählen immer eine Variable, die in der Zielfunktion vorkommt und einen positiven Koeffizienten hat. 
 
-    (D. h. wir wählen eine Variable deren Erhöhung die Zielfunktion maximiert.)
-    - Dann bestimmen wir die Ungleichung, die die Maximierung der gewählten Variable am stärksten einschränkt. 
-    - Wir „tauschen“ die Variable mit der Schlupfvariablen, die in dieser Ungleichung vorkommt und lösen die Gleichung nach der gewählten Variable auf.
-    - Wir setzen dann die umgestellte Gleichung in alle anderen Gleichungen (inkl. Zielfunktion) ein, um die Werte der anderen Variablen zu bestimmen.
+       (D. h. wir wählen eine Variable deren Erhöhung die Zielfunktion maximiert.)
+    2. Dann bestimmen wir die Ungleichung, die die Maximierung der gewählten Variable am stärksten einschränkt. 
+    3. Wir „tauschen“ die Variable mit der Schlupfvariablen, die in dieser Ungleichung vorkommt und lösen die Gleichung nach der gewählten Variable auf.
+    4. Wir setzen dann die umgestellte Gleichung in alle anderen Gleichungen (inkl. Zielfunktion) ein, um die Werte der anderen Variablen zu bestimmen.
 
-      Wir nennen diesen Prozess „Pivot Operation“.
+    .. incremental::
+    
+        Wir nennen diesen Prozess (1-4) „Pivot Operation“.
 
-    - Wir wiederholen diesen Prozess, bis wir keine Variable mehr finden, die die Zielfunktion maximiert. An dieser Stelle können wir dann das Optimum und die Werte für die Variablen (:math:`x_i,...,x_{n+m}`) ablesen.
+    .. incremental::
+
+        Wir wiederholen diesen Prozess, bis wir keine Variable mehr finden, die die Zielfunktion maximiert. An dieser Stelle können wir dann das Optimum und die Werte für die Variablen (:math:`x_i,...,x_{n+m}`) ablesen.
 
 .. supplemental::
 
     Es ist in Hinblick auf die Korrektheit gleichgültig welche Variable wir im ersten Schritt wählen. Es kommt jedoch ggf. zu einer unterschiedlichen Anzahl an Schritten, bis wir die optimale Lösung finden.
 
+
+
+Simplex anwenden
+------------------------
+
+.. container:: scrollable
+
+    .. rubric::  Gegebenes lineares Programm in Schlupfform 
+
+    Wir führen die Schlupfvariablen :math:`x_3`, :math:`x_4` und :math:`x_5` ein mit der Nebenbedingung: :math:`x_4, x_5, x_6 \geq 0`.
+
+    .. math::
+        
+            \begin{array}{rrcrcr}
+            \text{maximiere}     &  z & = &    & & 3x_1 & + &  x_2 & + & 2x_3 \\
+            \text{unter den Nebenbedingungen}    &x_4 & = & 30 & - &  x_1 & - &  x_2 & - & 3x_3 \\
+                            &x_5 & = & 24 & - & 2x_1 & - & 2x_2 & - & 5x_3 \\
+                            &x_6 & = & 36 & - & 4x_1 & - &  x_2 & - & 2x_3 \\
+            \end{array}
+    
+    .. class:: incremental
+    
+    - Wir können die Zielfunktion maximieren, indem wir die Variable der Zielfunktion mit dem größten positiven Koeffizienten wählen: :math:`x_1`.
+    - Wir prüfen welche Nebenbed. die Maximierung von :math:`x_1` am stärksten einschränkt: 
+    
+      1. Nebenbed.: :math:`x_1\leq 30`, 2. Nebenbed.: :math:`x_1\leq 12` und 3. Nebenbed.: :math:`x_1\leq 9` 
+    - Die (nicht-Basis)Variable :math:`x_1` wird somit durch die Schlupfvariable/Basisvariable :math:`x_6` ersetzt:
+      
+      .. math:: 
+
+        4x_1 = 36 - x_6 - x_2 - 2x_3  \Rightarrow x_1 = 9 - \frac{1}{4}x_6 - \frac{1}{4}x_2 - \frac{1}{2}x_3
+
+    - Wir setzen :math:`x_1` in die Zielfunktion und die anderen Nebenbedingungen ein und erhalten:
+    
+      :math:`x_4 = 30 - (9 - \frac{1}{4}x_6 - \frac{1}{4}x_2 - \frac{1}{2}x_3) - x_2 - 3x_3`
+
+      :math:`x_4 = 21 + \frac{1}{4}x_6 - \frac{3}{4}x_2 - \frac{5}{2}x_3`
+
+    - Ergebnis
+
+      .. math::
+      
+            \begin{array}{rrrrrr}
+            z & = & 27 - & \frac{3}{4}x_6 + & \frac{1}{4}x_2 + & \frac{1}{2}x_3 \\
+            x_1 & = & 9 - & \frac{1}{4}x_6 - & \frac{1}{4}x_2 - & \frac{1}{2}x_3 \\
+            x_4 & = & 21 + & \frac{1}{4}x_6 - & \frac{3}{4}x_2 - & \frac{5}{2}x_3 \\
+            x_5 & = & 6 - & \frac{1}{2}x_6 - & \frac{3}{2}x_2 - & 4x_3 \\
+            \end{array}
+      
+      :incremental:`Diese Operation wird als Pivot Operation bezeichnet.`
+    - Im nächsten Schritt könnten wir :math:`x_3` wählen, da es den größten positiven Koeffizienten hat. Da die dritte Nebenbedingung die Maximierung von :math:`x_3` am stärksten einschränkt, würden wir :math:`x_3` durch die Schlupfvariable :math:`x_5` ersetzen.
+
+    - Ergebnis
+
+      .. math::
+      
+            \begin{array}{rrrrrr}
+            z   & = & \frac{111}{4} + & \frac{1}{16}x_2 - & \frac{1}{8}x_5 - & \frac{11}{16}x_6 \\
+            x_1 & = & \frac{33}{4}  - & \frac{1}{16}x_2 + & \frac{1}{8}x_5 - & \frac{5}{16}x_6 \\
+            x_3 & = & \frac{3}{2}   - &  \frac{3}{8}x_2 - & \frac{1}{4}x_5 + & \frac{1}{8}x_6 \\
+            x_4 & = & \frac{69}{4}  + & \frac{3}{16}x_2 + & \frac{5}{8}x_5 - & \frac{1}{16}x_6 \\
+            \end{array}
+
+    - Die Basislösung ist: :math:`(33/4,0,3/2,69/4,0,0)` und der Wert der Zielfunktion ist :math:`111/4`.
+    - Im letzten Schritte würden wir :math:`x_2` wählen. Da die zweite Nebenbedingung die Maximierung von :math:`x_2` am stärksten einschränkt, würden wir :math:`x_2` durch die Schlupfvariable :math:`x_3` ersetzen.
+    - Ergebnis
+
+      .. math::
+      
+            \begin{array}{rrrrrr}
+            z   & = & 28 - & \frac{1}{6}x_2 - & \frac{1}{6}x_5 - & \frac{2}{3}x_6 \\
+            x_1 & = &  8 + & \frac{1}{6}x_2 + & \frac{1}{6}x_5 - & \frac{1}{3}x_6 \\
+            x_2 & = &  4 - & \frac{8}{3}x_2 - & \frac{2}{3}x_5 + & \frac{1}{3}x_6 \\
+            x_4 & = & 18 + & \frac{1}{2}x_2 + & \frac{1}{2}x_5 \\
+            \end{array}
+
+    - Die Basislösung ist: :math:`(8,4,0,18,0,0)` und der Wert der Zielfunktion ist :math:`28`.
+
+    - Eine weitere Verbesserung der Zielfunktion ist nicht möglich. Die Basislösung ist somit unsere optimale Lösung. 
+
+.. supplemental::
+
+    Beobachtungen:
+
+    - Beim Start: jede Belegung der Variablen :math:`x_1,...,x_3` definierte Werte für die Variablen :math:`x_4,...,x_6` und ist somit eine Lösung.
+    - eine Lösung ist (jedoch nur) dann zulässig wenn alle Variablen nicht-negativ sind.
+    - Die Basislösung ist die Lösung, bei der die nicht-Basisvariablen (im ersten Schritt also :math:`x_1, x_2` und :math:`x_3`) den Wert :math:`0` haben. Im ersten Schritt ergibt sich somit die Basislösung (:math:`\bar{x_1},...,\bar{x_6}`) :math:`(0,0,0,30,24,36)`; der Wert der Zielfunktion ist :math:`0`.
+
+
+
+
+Simplex Algorithmus 
+------------------------
+
+.. code:: pascal
+    :number-lines:
+    :class: slightly-more-smaller
+
+    Algorithm Simplex(A,b,c): 
+        (N,B,A,b,c,v) := InitialisiereSimplex(A,b,c)
+        sei Δ ein Vektor der Länge m
+        while ∃ j ∈ N mit c_j > 0 do
+            wähle Index e ∈ N mit c_e > 0   { e für "entering variable" }
+            for Index i ∈ B
+                Δ_i := b_i / A_ie falls A_ie > 0, sonst ∞
+            wähle l ∈ B mit Δ_l := min(Δ_1,...,Δ_m)
+            if Δ_l = ∞ then return "unbeschränkt"
+            (N,B,A,b,c,v) := Pivot(N,B,A,b,c,v,l,e)
+        for i := 1 to n                     { Gib die Lösung zurück }
+            if i ∈ B then
+                x_i := b_i
+            else
+                x_i := 0
+        return (x_1,...,x_n)
+
+.. supplemental:: 
+
+    .. rubric:: InitialisiereSimplex(A,b,c)
+     
+    Falls das LP lösbar ist, dann gib das LP in Schlupfform zurück, in der die initiale Basislösung zulässig ist.
+
+    Wir werden uns im Rahmen dieses Kurses nicht weiter mit der Implementierung des Simplex-Algorithmus beschäftigen. Es ist jedoch wichtig, dass Sie die Funktionsweise des Algorithmus verstehen.
 
 
 
