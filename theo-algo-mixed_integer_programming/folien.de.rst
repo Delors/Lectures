@@ -208,11 +208,11 @@ Lösen von linearen Optimierungsproblemen
                     0 & \leq & x_1, & x_2, & x_3, & x_4 , & x_5 \\
                     \end{array}
 
-        .. container:: incremental 
+        .. container:: incremental smaller
 
-            Die Variablen :math:`x_3`, :math:`x_4` und :math:`x_5` sind die Schlupfvariablen. Sie messen die Differenz zwischen der linken und der rechten Seite der Ungleichungen und nicht Teil der Zielfunktion.
+            Die Variablen :math:`x_3`, :math:`x_4` und :math:`x_5` sind die Schlupfvariablen. Sie messen die Differenz zwischen der linken und der rechten Seite der Ungleichungen und sind nicht Teil der Zielfunktion.
             
-            Bei der Beschreibung des Simplex-Algorithmus wird diese Form relevant sein.
+           
 
 .. supplemental::
 
@@ -230,6 +230,8 @@ Lösen von linearen Optimierungsproblemen
         :Affine Unabhängigkeit: 
 
             Zwei Punkte sind affin unabhängig, wenn die Differenz der beiden Punkte nicht durch einen Skalarfaktor auf den anderen Punkt abgebildet werden kann. (Im 2-D Raum: Die beiden Punkte liegen nicht auf einer Geraden, wenn die beiden Punkte als entsprechende Vektoren aufgefasst werden.)
+
+    Die Schlupfform ist für den Simplex-Algorithmus relevant.
 
 
 .. class:: integrated-exercise transition-scale
@@ -487,7 +489,7 @@ Standardform
 
     .. math::
 
-        \begin{array}{rrcrcl}
+        \begin{array}{rrcrcr}
         \text{maximiere}                    & 3x_1  & - & 2x_2 & \\
         \text{unter den Nebenbedingungen}   & x_1   & + & x_2  & \leq & 2 \\
                                             & -2x_1 & - & 2x_2 & \leq & -10 \\
@@ -507,7 +509,8 @@ Standardform
             & x_1 & + & x_2 & \geq & 5 \\   
             \end{array}
         
-        Und somit unmittelbar einen Widerspruch.
+        Und somit unmittelbar einen Widerspruch (Alternativ: Ungleichungen in einander einsetzen führt zum Widerspruch).
+
 
 
 Schlupfform (:eng:`Slack Form`)
@@ -551,10 +554,10 @@ Schlupfform (:eng:`Slack Form`)
     .. class:: incremental
 
     - Somit stehen die Variablen :math:`x_1,...,x_n` für die ursprünglichen Variablen und die Variablen :math:`x_{n+1},...,x_{n+m}` für die Schlupfvariablen. 
-    - Auf der rechten Seite der Gleichung (2) stehen die ursprünglichen Variablen. Nur diese Variablen sind Teil der Zielfunktion.
+    - Auf der rechten Seite der Gleichung :math:`(2)` stehen die ursprünglichen Variablen. Nur diese Variablen sind (initial) Teil der Zielfunktion.
       
-      :Basisvariablen: die Variablen auf der linken Seite der Gleichung (2) 
-      :Nichtbasisvariablen: die Variablen auf der rechten Seite der Gleichung (2)
+      :Basisvariablen: Die Variablen auf der linken Seite der Gleichung :math:`(2)`.
+      :Nichtbasisvariablen: Die Variablen auf der rechten Seite der Gleichung :math:`(2)`.
     - Für den Wert der Zielfunktion verwenden wir die Variable :math:`z`.
     - Im Folgenden gilt:
       
@@ -612,7 +615,7 @@ Schlupfform (:eng:`Slack Form`)
                 & x_6  & \geq & 0 \\
                 \end{array}
 
-.. exercise:: Zeigen Sie, das das folgende lineare Programm unbeschränkt ist.
+.. exercise:: Zeigen Sie (grafisch), das das folgende lineare Programm unbeschränkt ist.
 
     .. math::
 
@@ -639,19 +642,24 @@ Schlupfform (:eng:`Slack Form`)
 (Primaler) Simplex
 ------------------------
 
-.. admonition:: Grundlegende Idee
+.. container:: scrollable
 
-    Wir lösen unser Optimierungsproblem durch gezielte algebraische Operationen, die die Zielfunktion maximieren:
+    .. admonition:: Grundlegende Idee
+
+        Wir lösen unser Optimierungsproblem durch gezielte algebraische Operationen, die die Zielfunktion maximieren.
 
     .. class:: incremental list-with-explanations
 
     - Wir wählen immer eine Variable, die in der Zielfunktion vorkommt und einen positiven Koeffizienten hat. 
-    
-      (D. h. wir wählen eine Variable deren Erhöhung die Zielfunktion maximiert.)
+
+    (D. h. wir wählen eine Variable deren Erhöhung die Zielfunktion maximiert.)
     - Dann bestimmen wir die Ungleichung, die die Maximierung der gewählten Variable am stärksten einschränkt. 
     - Wir „tauschen“ die Variable mit der Schlupfvariablen, die in dieser Ungleichung vorkommt und lösen die Gleichung nach der gewählten Variable auf.
     - Wir setzen dann die umgestellte Gleichung in alle anderen Gleichungen (inkl. Zielfunktion) ein, um die Werte der anderen Variablen zu bestimmen.
-    - Wir wiederholen diesen Prozess, bis wir keine Variable mehr finden, die die Zielfunktion maximiert.
+
+      Wir nennen diesen Prozess „Pivot Operation“.
+
+    - Wir wiederholen diesen Prozess, bis wir keine Variable mehr finden, die die Zielfunktion maximiert. An dieser Stelle können wir dann das Optimum und die Werte für die Variablen (:math:`x_i,...,x_{n+m}`) ablesen.
 
 .. supplemental::
 
@@ -791,9 +799,40 @@ MIP: einige (oder alle) Variablen sind ganzzahlig
 
         .. container:: column incremental
 
-            .. image:: images/lp-integer-programming.svg
+            .. image:: images/lp_optimum_is_integer_solution.svg
                 :align: center
                 :height: 900px
+
+    .. container:: two-columns incremental
+
+        .. container:: column no-separator
+
+            **Zielfunktion (Maximiere)**
+
+            .. math::
+
+                    x_1 + x_2 
+
+            **Nebenbedingungen**
+
+            .. math::
+            
+                    \begin{array}{rcrcrl}
+                    4 x_1 & - &   x_2 & \leq & 8 \\
+                    2 x_1 & + &   x_2 & \leq & 10,5 \\
+                    5 x_1 & - & 2 x_2 & \geq & -2 \\
+                          &   &   x_1 & \geq & 0 & \text{und ganzzahlig} \\
+                          &   &   x_2 & \geq & 0 & \text{und ganzzahlig} \\
+                    \end{array}
+
+
+        .. container:: column incremental
+
+            .. image:: images/lp_optimum_is_no_integer_solution.svg
+                :align: center
+                :height: 900px
+
+
 
     .. hint:: 
         :class: incremental
@@ -852,7 +891,7 @@ Binärvariablen oder ganzzahlige Variablen?
     .. rubric:: Faustregel
 
     • Verwenden Sie allgemeine Ganzzahlen (Integers), wenn sie tatsächliche Mengen darstellen und die Reihenfolge wichtig ist!
-    • Verwenden Sie Binärzahlen (:math:`{0,1}` für jeden möglichen Wert einer Ganzzahl), wenn die Ganzzahlen konzeptuell nur „einige verschiedene Werte“ darstellen!
+    • Verwenden Sie Binärzahlen (:math:`\{0,1\}` für jeden möglichen Wert einer Ganzzahl), wenn die Ganzzahlen konzeptuell nur „einige verschiedene Werte“ darstellen!
 
 
 

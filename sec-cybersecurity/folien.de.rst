@@ -604,9 +604,9 @@ Ausgewählte Social-Engineering Angriffe
 
 - Autorität: Der Angreifer gibt sich z. B. als Mitarbeiter des IT-Supports aus.
 - Einschüchterung (:eng:`Intimidation`)
-- Dringlichkeit (*"In 10 Minuten verschlüssele ich den Rechner."*)
-- Konsens (*"Alle machen das so."*)
-- Knappheit (*"Es sind nur noch drei Rechner nicht infiziert."*)
+- Dringlichkeit (*„In 10 Minuten verschlüssele ich den Rechner.“*)
+- Konsens (*„Alle machen das so.“*)
+- Knappheit (*„Es sind nur noch drei Rechner nicht infiziert.“*)
 - Vertrautheit 
 - Vertrauen
 
