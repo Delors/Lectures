@@ -36,8 +36,7 @@ prob += (
     +  lpSum([i*choices["O"][i] for i in range(10)]) * 1000
     +  lpSum([i*choices["N"][i] for i in range(10)]) * 100
     +  lpSum([i*choices["E"][i] for i in range(10)]) * 10
-    +  lpSum([i*choices["Y"][i] for i in range(10)])
-)
+    +  lpSum([i*choices["Y"][i] for i in range(10)]))
 
 # Lösung berechnen
 prob.solve()

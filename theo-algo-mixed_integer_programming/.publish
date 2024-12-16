@@ -9,3 +9,5 @@ images/lp-solution.svg
 images/lp-integer-programming.svg
 images/lp-constraints.svg
 images/lp-exercise-solution-unbounded.svg
+images/max-flow/flows.svg
+images/max-flow/capacities.svg
