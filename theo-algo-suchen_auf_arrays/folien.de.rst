@@ -46,7 +46,7 @@ Suchen auf Arrays
 
 :Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
 :Kontakt: michael.eichberg@dhbw.de, Raum 149B
-:Version: 1.1
+:Version: 1.1.1
 
 .. container:: minor
 
@@ -1450,10 +1450,10 @@ Boyer-Moore-Algorithmus (vereinfacht)
                         B a n a n e̶̲
                             B a n a n e̶̲            
                                 B a n a n e̶̲
-                                             B a n a n e̶̲
-                                                 B a n a n e̶̲
-                                                     B̲ a̲ n̲ a̲ n̲ e̲
-                                                       B a n a n e̶̲
+                                            B a n a n e̶̲
+                                                B a n a n e̶̲
+                                                    B̲ a̲ n̲ a̲ n̲ e̲
+                                                      B a n a n e̶̲
 
         .. container:: margin-top-1em slightly-more-smaller
 
@@ -1506,7 +1506,7 @@ Boyer-Moore-Algorithmus (vereinfacht)
                                             b e l l i̲
                                                       b e l l i̲
                                                                 b e l l i̲
-                                                                        b e l l i̲   
+                                                                        b̲ e̲ l̲ l̲ i̲   
                                                                           b e l l i̲   
 
 
