@@ -1,3 +1,5 @@
+import copy
+
 # Assessment of user X by user X; -1 is used for the self assessment
 ASSESSMENT = [
     [-1, 10,  6,  6,  9,  6,  4,  1,  1,  9,  1,  7,  9,  3,  5, 10],
@@ -22,7 +24,8 @@ GROUPS = range(4)
 MAX_GROUP_SIZE = 4
 
 best = float("-inf")
-
+#best = 345: # optimal solution found...
+bestSolution = None
 
 def assess_group(group: list[int]) -> int:
     total: int = 0
@@ -40,28 +43,27 @@ def assess_solution(solution: list[list[int]]) -> int:
 
 def solve(solution: list[list[int]], users: list[int]) -> list[list[int]]:
     global best
-    if best == 345: # optimal solution found...
-        return;
-
+    global bestSolution
+    
     if len(users) == 0:
         value = assess_solution(solution)
         if value > best:
             best = value
-            best_solution = solution
-            print("Happiness" ,value, " - " ,solution)
+            bestSolution = copy.deepcopy(solution)            
         return
 
     user = users[0]
-    # IMPROVEMENT:  Fix some group assignments to avoid testing 
-    #               some useless permutations, E.g., ensure that
-    #               first user is always in group 0, 
-    #               second user is always in group 0 or 1
-    #               third user is always in group 0, 1 or 2
-    #               all other users can be assigned to any group
     for group in solution:
         if len(group) < MAX_GROUP_SIZE:
             group.append(user)
             solve(solution, users[1:])
             group.pop()
+        if len(group) == 0: # If the group is empty, 
+                            # then it makes no sense to try to test 
+                            # adding the user to the next group, this
+                            # would only create a permutation of the 
+                            # same solution
+            break
 
 solve([list() for i in range(4)], list(STUDENTS))
+print("Happiness" ,best, " - " ,bestSolution)

@@ -21,6 +21,8 @@ STUDENTS = range(16)
 GROUPS = range(4)
 MAX_GROUP_SIZE = 4
 
+#best = 314: # optimal solution found...
+
 best = float("-inf")
 calls = 0
 
@@ -48,9 +50,7 @@ def solve(solution: list[list[int]], users: list[int]) -> list[list[int]]:
     calls += 1
     if calls % 100000 == 0:
         print(calls,end="\r")
-    if best > 314: # optimal solution found...
-        return;
-
+    
     if len(users) == 0:
         value = assess_solution(solution)
         if value > best:
@@ -65,6 +65,8 @@ def solve(solution: list[list[int]], users: list[int]) -> list[list[int]]:
             group.append(user)
             solve(solution, users[1:])
             group.pop()
+        if len(group) == 0:
+            break
 
 solve([list() for i in range(4)], list(STUDENTS))
 print("Calls: ", calls)
