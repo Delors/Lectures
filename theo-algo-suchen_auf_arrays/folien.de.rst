@@ -46,7 +46,7 @@ Suchen auf Arrays
 
 :Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
 :Kontakt: michael.eichberg@dhbw.de, Raum 149B
-:Version: 1.1.1
+:Version: 1.1.2
 
 .. container:: minor
 
@@ -1571,18 +1571,17 @@ Suche nach dem n-ten Element - Einführung
 Suche nach dem n-ten Element mittels Quickselect
 ---------------------------------------------------------------------
 
-
         .. code:: pascal
             :number-lines:
             :class: far-smaller
 
             Algorithm Quickselect(A,k)    // gesucht ist das k größte Element
                 if length(A) == 1 then return A[0]
-                pivot := arr[length(A)-1] // ein bel. Element als Pivot (hier das letzte)
+                pivot := A[length(A)-1]   // ein bel. Element als Pivot (hier das letzte)
                 lows := []                // Elemente kleiner als Pivot
                 highs := []               // Elemente größer als Pivot 
                 pivotsCount := 0          // Anzahl der Pivot-Elemente
-                for x in arr do           // Partitionierung ...
+                for x in A do             // Partitionierung ...
                     if x < pivot then lows.append(x)
                     else if x > pivot then highs.append(x)
                     else pivotsCount := pivotsCount + 1
@@ -1593,7 +1592,6 @@ Suche nach dem n-ten Element mittels Quickselect
                     return pivot          // das k-te Element ist ein Pivot-Element
                 else
                     return Quickselect(highs, k - len(lows) -  pivotsCount)
-
 
 .. supplemental::
 
@@ -1687,7 +1685,7 @@ Beispielanwendung: Bestimmung des Medians
 
         Sei :math:`n =` ``length(A)`` die Länge des Arrays, dann haben wir im durchschnittlichen Fall :math:`n + \frac{n}{2} + \frac{n}{4} + \frac{n}{8} + \ldots = 2n` Schritte durchzuführen. 
 
-        (Anwendung der Summenformel für eine geometrische Reihe: :math:`a = n, r = \frac{1}{2}` für :math:`n \rightarrow \infty` gilt hier: :math:`S_n = a \cdot \frac{1}{1-r} = n \cdot \frac{1}{1-\frac{1}{2}} = 2n`).  
+        (Anwendung der Summenformel für eine geometrische Reihe: :math:`a = n, r = \frac{1}{2}` für :math:`n \rightarrow \infty` gilt hier: :math:`S = a \cdot \frac{1}{1-r} = n \cdot \frac{1}{1-\frac{1}{2}} = 2n`).  
 
         Die Komplexität beträgt also :math:`O(n)`.
 
@@ -1697,9 +1695,13 @@ Beispielanwendung: Bestimmung des Medians
 
 .. supplemental::
 
+    .. rubric:: Komplexitätsanalyse
+
+    Zur Bestimmung der Komplexität kann man entweder das Master Theorem anwenden oder die Anzahl der Schritte für die Partitionierung bestimmen und die Summe der Schritte aufstellen.
+
     .. rubric:: Geometrische Reihen
 
-    Die Summenformel für eine geometrische Reihe lautet:
+    Die Summenformel für eine geometrische Reihe (:math:`S_n = a + ar + ar^2 + \dots + ar^{n-1}`) lautet:
 
     .. math::
 
