@@ -40,7 +40,7 @@ Passwortsicherheit
 
     :Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
     :Kontakt: michael.eichberg@dhbw.de
-    :Version: 2.1
+    :Version: 2.1.1
 
 
 .. supplemental::
@@ -669,7 +669,7 @@ Effizienz eines Brute-Force Angriffs auf Luks2
   
     Ihnen liegt eine externer Festplatte/SSD mit USB Anschluss vor, die die folgenden Eigenschaften hat:
 
-    - Die Daten auf der SSD/FP sind hardwareverschlüsselte Festplatte.
+    - Die Daten auf der SSD/FP sind hardwareverschlüsselt.
     - Die Verschlüsselung erfolgt mit XTS-AES 256.
     - Es gibt eine spezielle Software, die der Kunde installieren muss, um das Passwort zu setzen. Erst danach wird die Festplatte „freigeschaltet“ und kann in das Betriebssystem eingebunden werden. Davor erscheint die SSD/FP wie ein CD Laufwerk auf dem die Software liegt.
     - Die SSD/FP ist FIPS zertifiziert und gegen Hardwaremanipulation geschützt; zum Beispiel eingegossen mit Epox. 
