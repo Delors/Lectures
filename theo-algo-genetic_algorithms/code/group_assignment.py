@@ -192,7 +192,7 @@ if __name__ == "__main__":
     # Maximale Glücklichkeit bei unskalierter Bewertung, wenn 
     # in allen Gruppe alle sich gegenseitig mit "10" bewerten: 
     # (3! * 10 * 2) * 4 = 120 * 4
-    threshold = 345 # Das ist das Maximum, das für das gegebene Setting erreicht werden kann
+    threshold = 345 # max. für das gegenwärtige Problem
     print("Configured threshold:", threshold)
     ga: GeneticAlgorithm[GroupAssignment] = GeneticAlgorithm(
         initial_population=initial_population,
