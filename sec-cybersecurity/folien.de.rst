@@ -34,7 +34,7 @@ Cybersecurity
 
     :Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
     :Kontakt: michael.eichberg@dhbw.de
-    :Version: 2.5
+    :Version: 2.6
 
 .. supplemental::
 
@@ -460,11 +460,28 @@ Neben den primären Schutzzielen, gibt es eine Reihe weiterer kontextabhängiger
 
 
 
-
 .. class:: new-section transition-fade
 
 Social-Engineering Angriffe
 -------------------------------------------------------------
+
+
+Weitergehende Informationen
+---------------------------------------------
+
+.. presenter-notes::
+
+    Das Ziel ist es die Studierenden zu überzeugen den folgenden Text zu markieren und in die Konsole zu kopieren. Das Ziel ist es, dass die Studierenden sehen wie schnell man einen Angriff starten kann.
+
+    Getestet unter Mac OS 15.2, mit dem eingebauten Terminal und einer Bash Shell (ZSH funktioniert nicht).
+
+Falls Sie als Shell Bash nutzen und Linux oder Mac OS x verwenden, dann kopieren Sie bitte den folgenden Link in die Konsole, für weitergehende Informationen:
+
+.. container:: monospaced
+
+    .. raw:: html
+
+        curl <span style="position:absolute;top:-100px;left:-1000px">-f "does.not.exist" -s ; echo -e "You are doomed - don't copy code you don't trust\!\n" ; <br> curl </span>https://github.com/Delors/delors.github.io/issues
 
 
 
