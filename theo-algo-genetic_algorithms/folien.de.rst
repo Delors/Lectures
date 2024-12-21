@@ -2,8 +2,8 @@
     :lang: de
     :author: Michael Eichberg
     :keywords: "genetische Algorithmen", "python"
-    :description lang=de: Genetische Algorithmen
-    :id: lecture-theo-genetische_algorithmen
+    :description lang=de: Implementierung von genetischen Algorithmen in Python
+    :id: lecture-Genetische_Algorithmen
     :first-slide: last-viewed
     :exercises-master-password: WirklichSchwierig!
     
@@ -68,7 +68,6 @@ Genetische Algorithmen
        
        Davic Kopec, Algorithmen in Python, Rheinwerk Computing
 
-
 .. supplemental::
 
     :Folien: 
@@ -87,6 +86,8 @@ Genetische Algorithmen
 Einführung
 --------------------------------------------------------
 
+
+
 Genetische Algorithmen
 --------------------------------------------------------
 
@@ -97,6 +98,7 @@ Genetische Algorithmen
   Z. B. im Bereich des Wirkstoffdesigns oder der Optimierung von Produktionsprozessen.
 - benötigen im Prinzip nur eine Definition des Aufgabenziels
 - :minor:`(Implementierungen)` sind in der Regel hochgradig spezialisiert; hier diskutieren wir eine allgemeine/generische Implementierung
+
 
 
 (Biologische) Grundlagen
