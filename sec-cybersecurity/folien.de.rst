@@ -34,7 +34,7 @@ Cybersecurity
 
     :Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
     :Kontakt: michael.eichberg@dhbw.de
-    :Version: 2.4
+    :Version: 2.5
 
 .. supplemental::
 
@@ -116,8 +116,29 @@ Indonesia - Ransomware Angriff
 
 .. class:: no-title center-child-elements
 
-Cyberangriff auf KritIs
---------------------------
+Crypto-Hackers Steal $2.2bn as North Koreans Dominate
+-------------------------------------------------------------
+
+.. epigraph:: 
+
+    **Crypto-Hackers Steal $2.2bn as North Koreans Dominate**
+
+    Threat actors stole $2.2bn from cryptocurrency platforms in 2024, with the majority (61%) of illicit funds attributed to North Korean hackers, according to Chainalysis. [...]
+
+    Notably, attacks between $50 and $100m, and those above $100m, occurred far more frequently in 2024 than they did in 2023, suggesting that the DPRK is getting better and faster at massive exploits[...].
+
+    This increase is unfortunately also being matched by “a growing density” of hacks which yielded lower amounts of around $10,000 in value.[...]
+
+    Some of these events appear to be linked to North Korean IT workers, who have been increasingly infiltrating crypto and Web3 companies, and compromising their networks, operations, and integrity.
+
+    -- 19.12.2024 - `Infosecurity Magazine <https://www.infosecurity-magazine.com/news/cryptohackers-steal-22bn-north/>`__
+
+
+
+.. class:: no-title center-child-elements
+
+Cyberangriff auf KritIs - Zentralheizung ausgefallen
+----------------------------------------------------
 
 .. epigraph::
 
@@ -127,7 +148,26 @@ Cyberangriff auf KritIs
     
     [...], the cybersecurity company Dragos published a report with details about a new malware dubbed FrostyGoop, which the company says is designed to target industrial control systems [...]
 
-    --Juli 2024 - `Techcrunch <https://techcrunch.com/2024/07/23/hackers-shut-down-heating-in-ukrainian-city-with-malware-researchers-say/?guccounter=1>`__
+    -- Juli 2024 - `Techcrunch <https://techcrunch.com/2024/07/23/hackers-shut-down-heating-in-ukrainian-city-with-malware-researchers-say/?guccounter=1>`__
+
+
+
+.. class:: no-title center-child-elements
+
+Cyberangriff auf KritIs - Telefonnetzwerke
+----------------------------------------------------
+
+.. epigraph::
+
+    **US government tells officials, politicians to ditch regular calls and texts**
+
+    The U.S. government [CISA] is urging senior government officials and politicians to ditch phone calls and text messages following intrusions at major American telecommunications companies blamed on Chinese hackers. [...]
+
+    The first recommendation: "Use only end-to-end encrypted communications." [...]
+
+
+    --18.12.2024 - `Reuters <https://www.reuters.com/world/us/us-cyber-watchdog-tells-senior-officials-immediately-adopt-end-to-end-encryption-2024-12-18/>`__    
+
 
 
 
