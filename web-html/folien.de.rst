@@ -158,7 +158,7 @@ HTML-Dokumente bestehen aus einem Baum von Elementen und Text.
         .. rubric:: HTML Dokument
 
         .. code:: HTML
-            :class: line-height-1-25    
+            :class: line-height-1-25em    
             
             <!DOCTYPE html>
             <html lang="de">
@@ -181,7 +181,7 @@ HTML-Dokumente bestehen aus einem Baum von Elementen und Text.
         .. rubric:: DOM
 
         .. code:: html 
-            :class: line-height-1-25    
+            :class: line-height-1-25em    
 
             ├─DOCTYPE: html
             └─html lang="de"
