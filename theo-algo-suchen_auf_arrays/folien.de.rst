@@ -46,7 +46,7 @@ Suchen auf Arrays
 
 :Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
 :Kontakt: michael.eichberg@dhbw.de, Raum 149B
-:Version: 1.1.2
+:Version: 1.1.3
 
 .. container:: minor
 
@@ -325,7 +325,7 @@ Modellierung durch Interpolation: hier Lagrange-Polynome
 
     .. layer:: incremental
 
-        Sind :math:`n` Tupel :math:`(x_n ,y_n ) ∈ \mathbb{R}_2` reeller Zahlen gegeben mit :math:`x_l \neq x_m` für :math:`l  \neq m`. 
+        Sind :math:`n` Tupel :math:`(x_n ,y_n ) ∈ \mathbb{R}^2` reeller Zahlen gegeben mit :math:`x_l \neq x_m` für :math:`l  \neq m`. 
         
         Das Lagrange-Interpolationspolynom hat dann höchstens den Grad :math:`n-1` und es gilt :math:`p(x_i ) = y_i` für alle :math:`i= 1,...,n`.
 
