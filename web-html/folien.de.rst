@@ -404,7 +404,7 @@ Im Head können weitere Informationen und Pragmas deklariert werden bzw. sollten
 
             ``http-equiv`` ≘ *HTML equivalent*; d. h. die Informationen könnte auch im HTTP Header stehen.
 
-        - ``<meta http-equiv="Content-Type" content="text/html; charset=utf-8">`` (alt)
+        - ``<meta charset="utf-8">`` (alt)
         - ``<meta http-equiv="Content-Security-Policy" content="default-src https:">``
 
           .. incremental:: far-smaller 
@@ -585,7 +585,7 @@ Attribute
 
 .. supplemental::
 
-    Boolsche Attribute sollten in JavaScript durch hinzufügen bzw. löschen gesetzt werden (und nicht die Manipulation des Attributwertes).
+    Boolsche Attribute sollten in JavaScript durch hinzufügen bzw. löschen gesetzt werden (und nicht durch die Manipulation des Wertes eines Attributs).
 
     .. code:: JavaScript
     
@@ -1464,7 +1464,7 @@ Referenzen
                 <body style="font-size:36px"> 
                     <header>
                     <nav>
-                    <a href="#ausbildung">Ausbildung</a> <a href="#ehrenamt">Ehrenamt</a>
+                    <a href="#Ausbildung">Ausbildung</a> <a href="#ehrenamt">Ehrenamt</a>
                     </nav>
                     <hr>
                     </header>                    
@@ -1481,7 +1481,7 @@ Referenzen
                             <p>
                         </section>
                         <section>
-                        <h1 id="ausbildung">Ausbildung</h1>
+                        <h1 id="Ausbildung">Ausbildung</h1>
                             <table>
                                 <thead>
                                     <tr><th>Datum</th><th>Ort</th></tr>
@@ -1490,7 +1490,7 @@ Referenzen
                                     <tr>
                                         <td>1990</td><td><details>
                                         <summary>Theodor Gymnasium</summary>
-                                        Gegründet von Theodor von und zu Gutenhügel im Jahr 1818</details>
+                                        Gegründet von Theodor von und zu Frankenburg im Jahr 1818</details>
                                         </summary></td>
                                     </tr>
                                     <tr>
@@ -1502,7 +1502,7 @@ Referenzen
                         <section>
                         <h1 id="Ehrenamt">Ehrenamtliche Tätigkeiten</h1>
                             <ul>
-                                <li>DLRG</li>
+                                <li>DRK</li>
                                 <li>Messdiener</li>
                             </ul>
                         </section>
@@ -1534,7 +1534,7 @@ Referenzen
         <body style="font-size:36px"> 
             <header>
             <nav>
-               <a href="#ausbildung">Ausbildung</a> <a href="#ehrenamt">Ehrenamt</a>
+               <a href="#Ausbildung">Ausbildung</a> <a href="#ehrenamt">Ehrenamt</a>
             </nav>
             </header>
             <hr>
@@ -1551,7 +1551,7 @@ Referenzen
                     <p>
                 </section>
                 <section>
-                <h1 id="ausbildung">Ausbildung</h1>
+                <h1 id="Ausbildung">Ausbildung</h1>
                     <table>
                         <thead>
                             <tr><th>Datum</th><th>Ort</th></tr>
@@ -1560,7 +1560,7 @@ Referenzen
                             <tr>
                                 <td>1990</td><td><details>
                                 <summary>Theodor Gymnasium</summary>
-                                Gegründet von Theodor von und zu Gutenhügel 
+                                Gegründet von Theodor von und zu Frankenburg 
                                 im Jahr 1818</details>
                                 </summary></td>
                             </tr>
@@ -1579,7 +1579,7 @@ Referenzen
                 <section>
                 <h1 id="Ehrenamt">Ehrenamtliche Tätigkeiten</h1>
                     <ul>
-                        <li>DLRG</li>
+                        <li>DRK</li>
                         <li>Messdiener</li>
                     </ul>
                 </section>
