@@ -340,7 +340,7 @@ Hashfunktionen (Wiederholung)
 .. class:: incremental
 
 - Eine Hashfunktion :math:`H` akzeptiert eine beliebig lange Nachricht :math:`M` als Eingabe und gibt einen Wert fixer Größe zurück: :math:`h = H(M)`.
-- Eine Änderung eines beliebigen Bits in :math:`M` sollte mit hoher Wahrscheinlichkeit zu einer Änderung des Hashwerts :math:`h` führen.
+- Eine Änderung eines beliebigen Bits in :math:`M` sollte mit hoher Wahrscheinlichkeit zu einer Änderung des Hashes :math:`h` führen.
 - Kryptographische Hashfunktionen werden für die Speicherung von Passwörtern verwendet.
 
 
@@ -644,11 +644,11 @@ Angriff auf LUKS2 mit Argon2
 
     […] The choice of Argon2 as a KDF makes GPU acceleration impossible. As a result, you’ll be restricted to CPU-only attacks, which may be very slow or extremely slow depending on your CPU. To give an idea, you can try 2 (that’s right, two) passwords per second on a single Intel(R) Core(TM) i7-9700K CPU @ 3.60GHz. Modern CPUs will deliver a slightly better performance, but don’t expect a miracle: LUKS2 default KDF is deliberately made to resist attacks. […]
 
-    -- Elcomsoft `Luks2 with Argon2 <https://blog.elcomsoft.com/2022/08/probing-linux-disk-encryption-luks2-argon-2-and-gpu-acceleration>`__
+    -- Elcomsoft `LUKS2 with Argon2 <https://blog.elcomsoft.com/2022/08/probing-linux-disk-encryption-luks2-argon-2-and-gpu-acceleration>`__
 
 
 
-Effizienz eines Brute-Force Angriffs auf Luks2
+Effizienz eines Brute-Force Angriffs auf LUKS2
 -------------------------------------------------------------------
 
 .. image:: dgraphs/brute_force-luks2.svg
@@ -672,7 +672,7 @@ Effizienz eines Brute-Force Angriffs auf Luks2
     - Die Daten auf der SSD/FP sind hardwareverschlüsselt.
     - Die Verschlüsselung erfolgt mit XTS-AES 256.
     - Es gibt eine spezielle Software, die der Kunde installieren muss, um das Passwort zu setzen. Erst danach wird die Festplatte „freigeschaltet“ und kann in das Betriebssystem eingebunden werden. Davor erscheint die SSD/FP wie ein CD Laufwerk auf dem die Software liegt.
-    - Die SSD/FP ist FIPS zertifiziert und gegen Hardwaremanipulation geschützt; zum Beispiel eingegossen mit Epox. 
+    - Die SSD/FP ist FIPS zertifiziert und gegen Hardwaremanipulation geschützt; zum Beispiel eingegossen mit Epoxidharz. 
     - Das Passwort wird von der Software gehasht und dann als Hash an den Controller der externen FP/SSD übertragen. 
     - Im Controller wird der übermittelte Hash direkt zur Autorisierung des Nutzers verwendet. Dazu wird der Hash mit dem im EPROM hinterlegten verglichen.
 
@@ -713,8 +713,8 @@ Von Menschen vergebene Passwörter basieren häufig auf Kombinationen von Wörte
 - Reguläre Wörter aus Wörterbüchern: Duden, Webster, …
 - Kontextinformationen:
   
-  - Szenespezifisch: ``acab``, ``1888``, ``1488``\ [#]_ szenetypischen Marken (z. B. Gucci, Ferrari), …
-  - Privates Umfeld: Namen von Kindern, Eltern, Hunden, Geburtsort, Adresse, …
+  - szenetypisch:  ``acab``, ``1888``, ``1488``\ [#]_, oder bestimmte Marken (z. B. Gucci, Ferrari), …
+  - privates Umfeld: Namen von Kindern, Eltern, Hunden, Geburtsort, Adresse, …
 
 .. [#] ``14`` oder ``1488`` ist ein numerischer Code für die vierzehn Worte des David Eden Lane. 
         (Er war ein Mitbegründer der Terrororganisation *The Order*, die für die Vorherrschaft der weißen Rasse in den USA kämpfte.)
@@ -878,9 +878,6 @@ Die Zusammensetzung von Passwörtern verstehen
     Die Sprachen, die bei der Identifizierung der Wörter berücksichtigt wurden, waren: "de, en, fr, es, pt, nl".
     
     *Populäre Wörter* sind Wörter, die auf Twitter oder Facebook verwendet wurden, z. B. "iloveu", "iluvu", ....
-
-
-
 
 
 
