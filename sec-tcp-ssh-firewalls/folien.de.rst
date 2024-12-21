@@ -1272,7 +1272,7 @@ Schwachstellen in SSH
   .. solution::
     :pwd: DDoSVerstehen
 
-    1. Ressourceverschwendung wenn gerade kein Angriff stattfindet. Wenn der Angriff stattfindet, dann ist es immer noch möglich bzw. sogar wahrscheinlich, dass die Ressourcen nicht ausreichen.
+    1. Ressourcenverschwendung wenn gerade kein Angriff stattfindet. Wenn der Angriff stattfindet, dann ist es immer noch möglich bzw. sogar wahrscheinlich, dass die Ressourcen nicht ausreichen.
     2. (vgl. https://www.cloudflare.com/de-de/learning/ddos/ddos-low-and-slow-attack/)
     
        Ein Low-and-Slow-Angriff ist eine Art von DoS- oder DDoS-Angriff, der sich auf einen kleinen Strom sehr langsamen Traffics stützt, der auf Anwendungs- oder Serverressourcen abzielt. Im Gegensatz zu herkömmlichen Brute-Force-Angriffen benötigen Low-and-Slow-Angriffe nur sehr wenig Bandbreite und können schwer bekämpft werden, da sie Traffic erzeugen, der nur sehr schwer von normalem Traffic zu unterscheiden ist. Während groß angelegte DDoS-Angriffe wahrscheinlich schnell bemerkt werden, können Low-and-Slow-Attacken über lange Zeiträume unentdeckt bleiben, während der Dienst für echte Nutzer verweigert oder verlangsamt wird.
@@ -1662,8 +1662,8 @@ IDS-Erkennungstechniken
     :class: incremental
 
     - Fälschlicherweise gemeldete Angriffe (false positives) 
-    - nicht gemeldete Angriffe (false negatives) (insb. bei neuartigen Angriffen)
-    - Echtzeitanforderung, insb. bei Hochgeschwindigkeitsnetzen 
+    - nicht gemeldete Angriffe (false negatives) (insbesondere bei neuartigen Angriffen)
+    - Echtzeitanforderung, insbesondere bei Hochgeschwindigkeitsnetzen 
     - Aufzeichnung bei Netzwerken mit Switches ( ⇒ spez. SPAN Port)
     - Sensoren sollen unbeobachtbar sein (*stealth*)
 
@@ -1671,6 +1671,7 @@ IDS-Erkennungstechniken
 .. supplemental::
 
     SPAN (:eng:`Switched Port Analyzer`) Ports sind spezielle Ports auf Switches, die bestimmten Verkehr (z. B. bestimmte Pakete) die über ein Switch gehen, an einen definierten Port weiterleiten können. An diesem Port kann dann eine Analyse des Verkehrs durchgeführt werden / ein Sensor angeschlossen werden.
+
 
 
 .. class:: integrated-exercise transition-move-left
@@ -1709,3 +1710,24 @@ IDS-Erkennungstechniken
         3. Die Hauptaufgabe von Firewalls ist es Angriffen entgegenzuwirken (3.). Eine Reaktion auf Angriffe ist für klassische Firewalls nicht möglich. Eine Reaktion auf Angriffe ist Aufgabe von Intrusion Detection Systemen. Moderne Firewalls integrieren jedoch häufig auch Funktionen von *Intrusion Detection Systemen*. (Angriffe können nicht vermieden werden, da dies nicht in der Macht der Firewall liegt. Klassische/Einfache Firewalls können keine Angriffe erkennen.)
         4. ... die Mails sollen ja den Mailserver erreichen; eine inhaltsbasierte Beurteilung des Inhalts einer Mail ist nicht Aufgabe einer Firewall. 
 
+
+
+.. TODO EMail Sicherheit DMARC Rules:
+    Phishing E-Mails im Umlauf
+
+    Hallo Michael Eichberg,
+    
+    wir möchten Sie darüber informieren, dass derzeit betrügerische Phishing E-Mails im Umlauf sind.
+
+    Diese E-Mails behaupten, dass mit der Kamera Ihres Geräts kompromittierende Aufnahmen von Ihnen gemacht wurden und Ihr Gerät durch einen Virus oder Trojaner infiziert ist. Die Absender fordern daraufhin eine Zahlung in Bitcoin und bauen durch Folgemails zusätzlichen Druck auf.
+
+    Oftmals erwecken diese Nachrichten mit einer Absenderadresse unter Ihrer Domain den Eindruck, von STRATO oder sogar von Ihrer eigenen E-Mail-Adresse versendet worden zu sein – das ist jedoch nicht der Fall. Bitte ignorieren Sie diese betrügerischen E-Mails.
+
+    Um Sie vor solchen Angriffen zu schützen, haben wir die DMARC-Einstellungen für Ihre Domains aktiviert. Dies sorgt dafür, dass unautorisierte E-Mails von Ihren Domains abgelehnt werden und somit gar nicht erst zugestellt werden können. Falls Sie das nicht wünschen, können Sie dies unter den DNS Einstellungen Ihrer Domain jederzeit durch einen Klick auf "Eigene DMARC-Regel" wieder rückgängig machen. Eine Anleitung dazu finden Sie in unserem FAQ-Artikel.
+            
+    Tipp: Wenn Sie eine E-Mail von STRATO erhalten haben und unsicher sind, ob diese echt ist, nutzen Sie unseren STRATO Validierungsservice, um sofort herauszufinden, ob es sich um einen Phishing-Versuch handelt.
+            
+    Bei Fragen stehen wir Ihnen gerne zur Verfügung. Sie erreichen uns wie gewohnt über unseren Hilfe & Kontakt-Bereich.
+
+    Mit freundlichen Grüßen
+    Ihr STRATO Team
