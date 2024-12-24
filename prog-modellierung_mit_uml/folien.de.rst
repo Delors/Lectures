@@ -46,7 +46,7 @@ Einführung und erste Grundlagen der Modellierung mit UML
 
     :Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
     :Kontakt: michael.eichberg@dhbw.de, Raum 149B
-    :Version: 1.0
+    :Version: 1.1
 
 .. supplemental::
 
@@ -58,6 +58,7 @@ Einführung und erste Grundlagen der Modellierung mit UML
 
     :Fehler melden:
         https://github.com/Delors/delors.github.io/issues
+
 
 
 UML (Unified Modeling Language)
@@ -74,6 +75,7 @@ UML (Unified Modeling Language)
     :class: incremental far-smaller
 
     Wenn Sie UML verwenden, dann verwenden Sie die Notationen spezifikationskonform, da sonst der Sinn der Notation (vollständig) verloren geht oder es sogar zu Missverständnissen kommt.
+
 
 
 .. class:: new-section transition-move-to-top
@@ -94,6 +96,7 @@ Aktivitätsdiagramme - Einführung
 
   (Von dem Ablauf einer einfachen Operation bis hin zu einem kompletten Geschäftsvorfall.)
 - können Nebenläufigkeiten und Entscheidungen modellieren
+
 
 
 Aktivitätsdiagramm für die Abwicklung einer Bestellung
@@ -167,6 +170,7 @@ Aktivitätsdiagramm für die Abwicklung einer Bestellung
     - Entscheidungen (Rauten) beschreiben, dass der Ablauf in Abhängigkeit von einer Bedingung unterschiedlich weitergeht. Dienen auch dazu mehrere alternative Pfade zusammenzuführen.
     - Parallelisierungs- und Synchronisierungspunkte (:eng:`Fork` und :eng:`Join`) (schwarze Balken) beschreiben, dass der Ablauf an dieser Stelle in mehrere Pfade aufgeteilt wird und später wieder zusammengeführt wird.
     
+
 
 .. class:: integrated-exercise
 
@@ -439,7 +443,6 @@ Modellierung einer Party - Operationen/Methoden
             :height: 1000px
             :align: center  
 
-
 .. supplemental::
 
     Methoden bzw. Operationen sind die Verhaltensbeschreibungen einer Klasse. Sie beschreiben, was ein Objekt einer Klasse tun kann.
@@ -547,6 +550,12 @@ Modellierung einer Party - Beziehungen
 
     .. layer:: overlay incremental
 
+        .. image:: images/uml-cd/assoziation_keine-aggregation.svg
+            :height: 1000px
+            :align: center
+
+    .. layer:: overlay incremental
+
         .. image:: images/uml-cd/assoziation_generalisierung.svg
             :height: 1000px
             :align: center  
@@ -569,8 +578,6 @@ Modellierung einer Party - Beziehungen
             :height: 1000px
             :align: center  
 
-
-
 .. supplemental::
 
     Um zu beschreiben, wie Instanzen der Klassen miteinander in Verbindung stehen, unterscheiden wir folgende grundlegende Beziehungen:   
@@ -588,6 +595,14 @@ Modellierung einer Party - Beziehungen
         Im Beispiel ist explizit modelliert, dass ein Cocktail immer genau von einem Bartender produziert wird. Ein Bartender kann aber mehrere Cocktails produzieren.
 
       - **Aggregation**: Eine Aggregation (:math:`\lozenge` „am Anfang“) ist eine spezielle Form der Assoziation, bei der eine Klasse eine andere Klasse besitzt.
+
+        Im Allgemeinen sind die Unterschiede zwischen Aggregation und Assoziation nicht eindeutig bzw. ausreichend definiert und es ist deswegen sinnvoll eine normale Assoziation zu wählen. 
+
+        Selbst einer der Autoren der UML Spezifikation hat bereits vor langer Zeit festgehalten:
+
+        .. epigraph::
+
+            In spite of the few semantics attached to aggregration, everbody thinks it is necessary (for differente reasons). Think of it as a modelling placebo.
       
       - **Komposition**: Eine Komposition (:math:`\blacklozenge` „am Anfang“) ist eine spezielle Form der Aggregation, bei der die Lebensdauer des Besitzers die Lebensdauer des Besitzten bestimmt.
     
