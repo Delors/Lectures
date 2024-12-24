@@ -1,4 +1,5 @@
 .. meta:: 
+    :version: renaissance
     :author: Michael Eichberg
     :keywords: "Sicherheitsprinzipien"
     :description lang=de: Einführung in klassische Sicherheitsprinzipien
@@ -35,12 +36,21 @@ Klassische Sicherheitsprinzipien
 
 .. supplemental::
 
-  :Folien: 
-      [HTML] |html-source|
+    :Folien: 
+        [HTML] |html-source|
 
-      [PDF] |pdf-source|
-  :Fehler melden:
-      https://github.com/Delors/delors.github.io/issues
+        [PDF] |pdf-source|
+
+    :Kontrollfragen:
+
+        .. source:: kontrollfragen.de.rst 
+            :path: relative
+            :prefix: https://delors.github.io/
+            :suffix: .html
+
+    :Fehler melden:
+        https://github.com/Delors/delors.github.io/issues
+
 
 
 Klassische Sicherheitsprinzipien
