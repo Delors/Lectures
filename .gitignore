@@ -1,4 +1,5 @@
 .vscode
+.zed
 *.key
 *.ova
 start_node_js_http_server.sh
