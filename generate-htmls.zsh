@@ -35,7 +35,6 @@ function update_html_if_necessary() {
         reStructuredTextToLectureDoc2/rst2ld.py "$1" \
             --output "$html_file" \
             --ld-path $path_prefix"LectureDoc2" \
-            --ld-default-version genesis \
             --ld-exercises-passwords "$html_file.passwords.txt" \
             --link-stylesheet \
             $language_option
