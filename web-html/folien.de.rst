@@ -443,7 +443,7 @@ Semantisches HTML vs. „generisches“ HTML
 
             **Beispiel Elemente**
 
-            ``<header>``, ``<footer>``, ``<nav>``, ``<article>``, ``<section>``, ``<aside>``, ``<main>``, ``<figure>``,  ``<address>``, ``<b>``, ``<s>``, ...
+            ``<header>``, ``<footer>``, ``<nav>``, ``<article>``, ``<section>``, ``<aside>``, ``<main>``, ``<figure>``,  ``<address>``, ``<em>``, ``<s>``, ...
 
     .. incremental:: column
 
