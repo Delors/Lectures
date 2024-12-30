@@ -40,7 +40,7 @@ Projekt-, Bachelor- und Seminararbeiten: Hinweise und Bewertungskriterien
 
     :Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
     :Kontakt: michael.eichberg@dhbw.de, Raum 149B
-    :Version: 1.0
+    :Version: 1.1
 
 .. supplemental::
 
@@ -69,7 +69,7 @@ Bewertungskriterien
 
   Die folgende Liste an Kriterien ist nicht abschließend! Bei einer konkreten Arbeit können noch weitere Kriterien auftauchen, die hier noch nicht beschrieben sind. Weiterhin sind manche Kriterien nicht immer relevant. Zum Beispiel ist im Rahmen von Seminararbeiten häufig keine besondere Evaluation zu erwarten. 
   
-  Dieses Dokument wird beim Vorliegen neuer Erkenntnisse aktualisiert.
+  Dieses Dokument wird unregelmäßig aktualisiert.
 
 
 
@@ -109,6 +109,7 @@ Einhaltung formaler Kriterien (bei Seminararbeiten 20%)
 - Sind Abbildungen korrekt referenziert?
 - Ist die Arbeit unterschrieben?
 - Sind alle Verzeichnisse vorhanden und korrekt?
+- Bei PAs und BAs beginnt ein neuer Abschnitt auf oberster Ebene (z. B. *1. Einführung*) auf einer neuen Seite.
   
 
 
@@ -119,6 +120,7 @@ Qualität der Präsentation/der textuellen Ausarbeitung (bei Seminararbeiten 30%
 
 - Präzise Formulierungen
 - Alles Gesagte ist dem Ziel der Arbeit dienlich, es gibt keine inhaltlichen Ausschweifungen zu Randaspekten, die dem Ziel nur bedingt oder gar nicht dienlich sind, beziehungsweise wo es nicht ersichtlich ist. Es ist unmittelbar ersichtlich warum ein bestimmter Aspekt behandelt wird.
+- Komplexe(re) Sachverhalte werden visualisiert.
 - Grafiken sind aussagekräftig, vollständig erklärt und visuell ansprechend.
 
   .. warning::
@@ -129,5 +131,6 @@ Qualität der Präsentation/der textuellen Ausarbeitung (bei Seminararbeiten 30%
     
     Im Allgemeinen empfiehlt es sich deswegen dringend auf etablierte Darstellungsformen (z. B. UML) zurückzugreifen.
 - Codeabschnitte sind quasi vollständig im Fließtext erklärt. Die Codeabschnitte haben als Ganzes Relevanz für das Verständnis des entsprechenden Themas.
+- Ein Absatz sollte in der Regel nicht länger als 1/3 einer Seite sein. Absätze, die länger sind als eine halbe Seite sind in der Regel zu lang und führen zu einer Abwertung.
 
 
