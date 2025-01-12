@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xl="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="211 288 285 147" width="285" height="147">
+  <defs>
+    <font-face font-family="Noto Sans Display" font-size="12" panose-1="2 11 5 2 4 5 4 2 2 4" units-per-em="1000" underline-position="-100" underline-thickness="50" slope="0" x-height="536" cap-height="714" ascent="1069.0002" descent="-292.99927" font-weight="400">
+      <font-face-src>
+        <font-face-name name="NotoSansDisplay-Regular"/>
+      </font-face-src>
+    </font-face>
+    <font-face font-family="Victor Mono" font-size="11" panose-1="0 0 5 9 0 0 0 0 0 0" units-per-em="1000" underline-position="-68.18182" underline-thickness="45.454545" slope="0" x-height="561.8182" cap-height="727.2727" ascent="1e3" descent="-227.27966" font-weight="400">
+      <font-face-src>
+        <font-face-name name="VictorMono-Regular"/>
+      </font-face-src>
+    </font-face>
+    <marker orient="auto" overflow="visible" markerUnits="strokeWidth" id="FilledArrow_Marker" stroke-linejoin="miter" stroke-miterlimit="10" viewBox="-1 -4 10 8" markerWidth="10" markerHeight="8" color="black">
+      <g>
+        <path d="M 8 0 L 0 -3 L 0 3 Z" fill="currentColor" stroke="currentColor" stroke-width="1"/>
+      </g>
+    </marker>
+  </defs>
+  <metadata> Produced by OmniGraffle 8.0\n2025-01-02 16:19:44 +0000</metadata>
+  <g id="Canvas_1" fill-opacity="1" fill="none" stroke="none" stroke-dasharray="none" stroke-opacity="1">
+    <title>Canvas 1</title>
+    <g id="Canvas_1_Layer_1">
+      <title>Layer 1</title>
+      <g id="Graphic_2">
+        <rect x="350.4464" y="288.78753" width="21.553618" height="24.329784" fill="#a5a5a5"/>
+        <text transform="translate(355.4464 292.45243)" fill="white">
+          <tspan font-family="Noto Sans Display" font-size="12" font-weight="400" fill="white" x="2.5548092" y="13" xml:space="preserve">0</tspan>
+        </text>
+      </g>
+      <g id="Graphic_19">
+        <rect x="372.68387" y="288.78753" width="122.31613" height="24.329784" fill="white"/>
+        <rect x="372.68387" y="288.78753" width="122.31613" height="24.329784" stroke="#797979" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_9">
+        <rect x="350.356" y="313.1173" width="21.553618" height="24.329784" fill="#a5a5a5"/>
+        <text transform="translate(355.356 316.7822)" fill="white">
+          <tspan font-family="Noto Sans Display" font-size="12" font-weight="400" fill="white" x="2.5548092" y="13" xml:space="preserve">1</tspan>
+        </text>
+      </g>
+      <g id="Graphic_18">
+        <rect x="372.68387" y="313.1173" width="122.31613" height="24.329784" fill="white"/>
+        <rect x="372.68387" y="313.1173" width="122.31613" height="24.329784" stroke="#797979" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_10">
+        <rect x="350.41626" y="337.21247" width="21.553618" height="24.329784" fill="#a5a5a5"/>
+        <text transform="translate(355.41626 340.87736)" fill="white">
+          <tspan font-family="Noto Sans Display" font-size="12" font-weight="400" fill="white" x="2.5548092" y="13" xml:space="preserve">2</tspan>
+        </text>
+      </g>
+      <g id="Graphic_17">
+        <rect x="372.5129" y="337.21247" width="122.31613" height="24.329784" fill="white"/>
+        <rect x="372.5129" y="337.21247" width="122.31613" height="24.329784" stroke="#797979" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_11">
+        <rect x="350.38613" y="361.42493" width="21.553618" height="24.329784" fill="#a5a5a5"/>
+        <text transform="translate(355.38613 365.08982)" fill="white">
+          <tspan font-family="Noto Sans Display" font-size="12" font-weight="400" fill="white" x="2.5548092" y="13" xml:space="preserve">3</tspan>
+        </text>
+      </g>
+      <g id="Graphic_16">
+        <rect x="372.34193" y="361.42493" width="122.31613" height="24.329784" fill="white"/>
+        <rect x="372.34193" y="361.42493" width="122.31613" height="24.329784" stroke="#797979" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(377.34193 365.5898)" fill="#424242">
+          <tspan font-family="Victor Mono" font-size="11" font-weight="400" fill="#424242" x="44.158066" y="11" xml:space="preserve">&quot;it</tspan>
+          <tspan font-family="Victor Mono" font-size="11" font-weight="400" fill="#424242" y="11" xml:space="preserve">&quot;</tspan>
+        </text>
+      </g>
+      <g id="Graphic_12">
+        <rect x="350.356" y="385.6374" width="21.553618" height="24.329784" fill="#a5a5a5"/>
+        <text transform="translate(355.356 389.3023)" fill="white">
+          <tspan font-family="Noto Sans Display" font-size="12" font-weight="400" fill="white" x="2.5548092" y="13" xml:space="preserve">4</tspan>
+        </text>
+      </g>
+      <g id="Graphic_15">
+        <rect x="372.17097" y="385.6374" width="122.31613" height="24.329784" fill="white"/>
+        <rect x="372.17097" y="385.6374" width="122.31613" height="24.329784" stroke="#797979" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_13">
+        <rect x="350.32588" y="409.84986" width="21.553618" height="24.329784" fill="#a5a5a5"/>
+        <text transform="translate(355.32588 413.51475)" fill="white">
+          <tspan font-family="Noto Sans Display" font-size="12" font-weight="400" fill="white" x="2.5548092" y="13" xml:space="preserve">5</tspan>
+        </text>
+      </g>
+      <g id="Graphic_14">
+        <rect x="372" y="409.84986" width="122.31613" height="24.329784" fill="white"/>
+        <rect x="372" y="409.84986" width="122.31613" height="24.329784" stroke="#797979" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_20">
+        <text transform="translate(234.27706 317.28218)" fill="#424242">
+          <tspan font-family="Victor Mono" font-size="11" font-weight="400" fill="#424242" x="0" y="11" xml:space="preserve">hash(&quot;it&quot;) = 3</tspan>
+        </text>
+      </g>
+      <g id="Graphic_21">
+        <text transform="translate(216.27706 407.329)" fill="#424242">
+          <tspan font-family="Victor Mono" font-size="11" font-weight="400" fill="#424242" x="0" y="11" xml:space="preserve">hash(&quot;times&quot;) = 3</tspan>
+        </text>
+      </g>
+      <g id="Line_22">
+        <line x1="296.2205" y1="338.28224" x2="342.09254" y2="368.1837" marker-end="url(#FilledArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Line_23">
+        <line x1="293.1621" y1="402.329" x2="341.53918" y2="378.03296" marker-end="url(#FilledArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+    </g>
+  </g>
+</svg>

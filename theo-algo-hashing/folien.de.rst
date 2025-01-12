@@ -1,4 +1,5 @@
 .. meta:: 
+    :version: renaissance
     :lang: de
     :author: Michael Eichberg
     :keywords: "Hashing", "Hashmaps", "Algorithmen", "Datenstrukturen"
@@ -9,7 +10,7 @@
     
 .. |html-source| source::
     :prefix: https://delors.github.io/
-    :suffix: .html
+    :suffix: .html 
 .. |pdf-source| source::
     :prefix: https://delors.github.io/
     :suffix: .html.pdf
@@ -36,9 +37,9 @@
 
 
 
-.. class:: animated-symbol 
+.. class .. :: animated-symbol 
 
-Algorithmen und Datenstrukturen: Hashing und Hashmaps
+Hashing und Hashmaps
 ======================================================
 
 ----
@@ -69,5 +70,110 @@ Algorithmen und Datenstrukturen: Hashing und Hashmaps
 
 Einführung
 --------------------------------------------------------
+
+
+
+Suchen in einer Liste
+--------------------------------------------------------
+
+.. container:: sl-font-size-70
+
+    +-----------------------------------------+----------+----------+---------+-------------------------+-----------+---------+---------------------------------+
+    | Implementation                          | Garantie                      | Durchschnittlicher Fall                       | Operationen auf den Schlüsseln  |
+    +                                         +----------+----------+---------+-------------------------+-----------+---------+                                 +
+    |                                         | Suchen   | Einfügen | Löschen | Suchen                  | Einfügen  | Löschen |                                 |
+    +=========================================+==========+==========+=========+=========================+===========+=========+=================================+
+    | sequentielle Suche (unsortierte Liste)  | N        | N        | N       | ½ N                     | N         | ½ N     | equals()                        |
+    +-----------------------------------------+----------+----------+---------+-------------------------+-----------+---------+---------------------------------+
+    | binäre Suche (geordnetes Array)         | lg N     | N        | N       | lg N                    | ½ N       | ½ N     | compareTo()                     |
+    +-----------------------------------------+----------+----------+---------+-------------------------+-----------+---------+---------------------------------+
+    | BST [#]_                                | N        | N        | N       | 1.39 lg N               | 1.39 lg N | √ N     | compareTo()                     |
+    +-----------------------------------------+----------+----------+---------+-------------------------+-----------+---------+---------------------------------+
+
+
+.. container:: question incremental
+
+    Können wir effizienter suchen?
+
+.. [#] Binary Search Tree
+
+.. container.. block-footer text-align-center dhbw-light-gray-background dhbw-dark-gray
+    Wiederholung
+
+
+Hashing - Grundidee
+--------------------------------------------------------
+
+.. stack:: invisible
+
+    .. layer::
+
+        .. image:: images/Hashkollision.svg
+            :alt: Hashmap
+            :align: right
+            
+        .. class:: incremental list-with-explanations
+
+        - Die Elemente werden über den Schlüssel indexiert in einer Tabelle gespeichert.
+        
+          Der Index ist eine Funktion des Schlüssels.
+        - Hash-Funktion:  Methode zur Berechnung des Array-Index aus dem Schlüssel.
+
+    .. layer:: incremental
+
+        .. container:: challenges
+            
+            .. rubric:: Herausforderungen
+            
+            1. Berechnung der Hash-Funktion.
+            2. Gleichheitstest: Methode zur Überprüfung, ob zwei Schlüssel gleich sind.
+            3. Kollisionsauflösung: Algorithmus und Datenstruktur zur Behandlung von zwei Schlüsseln, die auf denselben Array-Index hindeuten.
+
+    .. layer:: incremental
+
+        .. hint:: 
+
+            .. rubric:: Klassischer Kompromiss zwischen Raum und Zeit!
+
+            - Keine Platzbeschränkung: triviale Hash-Funktion mit Schlüssel als Index.
+            - Keine Zeitbeschränkung: triviale Kollisionsauflösung mit sequentieller Suche.
+            - Raum- und Zeitbeschränkung: Hashing (die reale Welt).
+
+
+Berechnung der Hash-Funktion
+--------------------------------------------------------
+
+:Idealistisches Ziel: 
+    
+    Die Schlüssel gleichmäßig verwürfeln, um einen Tabellenindex zu erzeugen. 
+
+    - Effizient berechenbar.
+    - Jeder Tabellenindex ist für jeden Schlüssel gleich wahrscheinlich.
+     
+    .. supplemental::
+
+        Die Frage, wie man gute Schlüssel berechnet, ist ein gründlich erforschtes Problem, dass in der Praxis immer noch problematisch ist.
+  
+.. container:: example incremental
+
+    .. rubric:: Beispiel 1.  Telefonnummern.
+
+    :Schlecht: die ersten drei bis fünf Ziffern.
+    :Besser: die letzten drei Ziffern.
+
+.. container:: example incremental
+
+    .. rubric:: Beispiel 2.  Sozialversicherungsnummer
+
+    :Schlecht: die ersten beiden Ziffern.
+    :Besser: die letzten Ziffern.
+
+    .. supplemental::
+
+        Die ersten beiden Stellen bei der Sozialversicherungsnummer identifizieren den Rentenversicherungsträger. 
+
+.. container:: challenge incremental
+
+    Praktische Herausforderung: für jeden Schlüsseltyp ist ein anderer Ansatz erforderlich.
 
 
