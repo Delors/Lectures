@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <title>Grid Layout with Scaled Content</title>
+    <style>
+        html { box-sizing: border-box; }
+        body { 
+            margin: 0; 
+            padding: 0; 
+            background-color: black;
+        }
+        h1 { margin: 0; padding: 0.2em; }
+        p { margin: 0; padding: 0; }
+        main {
+            width: 100vw;
+            height: 100dvh ;
+            display: grid;
+            grid-template-columns: [left] 1.5fr [right] 1fr;
+            grid-template-rows: [title] 48px [slides] 2fr [notes] 1fr;
+            grid-template-areas:
+                "title-current title-next"
+                "current-slide next-slide"
+                "presenter-notes controls";
+        }
+
+        #title-current { 
+            grid-area: title-current;
+        }
+        #title-next { 
+            grid-area: title-next;
+        }
+
+        #title-current,
+        #title-next {
+            text-align: center;
+            background-color: lightgray;
+        }
+
+        #current-slide,
+        #next-slide {
+            margin: 5px;
+
+
+            > p {
+                /* The unscaled/conceptual width and height. */
+                width: 400px;
+                height: 200px;
+                /* We need to remove the element from the normal flow to avoid
+                   that it conflicts with the size calculations of the parent
+                   grid cell.
+
+                   Hence, absolute positioning is necessary. Otherwise, the cell
+                   area could not be smaller than the "conceptual" width and 
+                   height of this paragraph.
+                */
+                position: absolute; 
+                /* Conceptually, the following line scales the content such that it
+                   makes optimal use of the available space. However, this kind of
+                   unitless calculation is not supported by CSS (as of 2024) and 
+                   needs to be done by JavaScript. 
+
+                   scale: calc(100vw * 0.5 / 400px);
+
+                   translate: ... (basically the same as above)
+                */
+                transform-origin: top left;
+
+                background-color: aliceblue;
+            }
+        }
+
+        #current-slide {
+            grid-area: current-slide;
+            
+            background-color: lightcyan;
+            font-size: 200%;
+        }
+        #next-slide {
+            grid-area: next-slide;
+            
+            background-color: lightgoldenrodyellow;
+            font-size: 150%;
+        }
+        #presenter-notes {
+            grid-area: presenter-notes;
+            margin: 5px;
+            
+            background-color: lightblue;
+            overflow-y: scroll;
+        }
+        #controls {
+            grid-area: controls;
+
+            margin: 5px;
+        }
+    </style>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            function scaleAndTranslateSlide(allObserved) {
+                for (const observed of allObserved) {
+                    
+                const area = observed.target
+                const areaStyle = window.getComputedStyle(area);
+                const aWidth = parseInt(areaStyle.width)
+                const aHeight = parseInt(areaStyle.height);
+
+                const slide = area.children[0];
+                const slideStyle = window.getComputedStyle(slide);
+                const cWidth = parseInt(slideStyle.width);
+                const cHeight = parseInt(slideStyle.height);
+
+                const scale =
+                    aWidth / cWidth < aHeight / cHeight
+                        ? aWidth / cWidth
+                        : aHeight / cHeight;
+                slide.style.scale = scale;
+                console.log("Scaled to: ", slide.style.scale);
+
+                // To position the scaled content in the center of the area:
+                const translateToCenterX = (aWidth - cWidth * scale) / 2;
+                const translateToCenterY = (aHeight - cHeight * scale) / 2;
+                slide.style.translate =
+                    (translateToCenterX) + "px " +
+                    (translateToCenterY )+ "px";
+                }
+            }
+
+            const ro = new ResizeObserver(scaleAndTranslateSlide)
+            ro.observe(document.getElementById("current-slide"));
+            ro.observe(document.getElementById("next-slide"));
+
+            /*
+            This demonstrates how to swap the content of two grid cells by
+            simply changing the associated grid area names of the respective
+            "main" elements.
+            */
+            document.getElementById("swap").addEventListener("click", () => {
+                console.log("Swapping slides");
+                const current = document.getElementById("current-slide");
+                const next = document.getElementById("next-slide");
+                const currentGridArea = window.getComputedStyle(current).gridArea;
+                const nextGridArea = window.getComputedStyle(next).gridArea;
+                console.log("Current grid area: ", currentGridArea);
+                console.log("Next grid area: ", nextGridArea);
+                current.style.gridArea = nextGridArea;
+                next.style.gridArea = currentGridArea;
+            });
+
+            /*
+            This demonstrates how to change the aspect ratio of the grid cells.
+            Please note, that the naming of the cells is still effective.
+            */
+            document.getElementById("ratio").addEventListener("click", () => {
+                const main = document.getElementsByTagName("main")[0];
+                console.log("Old grid template rows: ", window.getComputedStyle(main).gridTemplateRows);
+                main.style.gridTemplateRows = "48px 1fr 1fr";
+                console.log("New grid template rows: ", window.getComputedStyle(main).gridTemplateRows);
+            });
+        });
+    </script>
+
+</head>
+
+<body>
+    <main>
+        <div id="title-current" style="grid-area: title-current;">
+            <h1>Current Slide</h1>
+        </div>
+        <div id="title-next" style="grid-area: title-next;">
+            <h1>Next Slide</h1>
+        </div>
+        <section id="current-slide">
+            <p>
+                D-Day bezeichnet im Englischen
+                den Stichtag militärischer 
+                Operationen. Ein vergleichbarer
+                deutscher Ausdruck ist Tag X.
+            </p>
+        </section>
+        <section id="next-slide">
+            <p>
+                Die Europawahl 2024 ist die 
+                zehnte Direktwahl zum 
+                Europäischen Parlament und 
+                folgt auf die Europawahl 2019.
+            </p>
+        </section>
+        <!--
+        <section id="last-slide">
+            <p>        
+                Maria Einsmann (* 4. Januar 1885 in Bruchsal; † 4. März 1959 in Mainz) war eine deut­sche Arbei­terin, die sich in der Wei­marer Repu­blik als Mann ausgab, weil sie als Frau keine Anstel­lung fand. Als „Joseph Eins­mann“ lebte sie mit Helene Müller und deren zwei Kin­dern zusam­men, wobei sie als Ehe­mann der Lebens­gefähr­tin und Vater der beiden Kinder auftrat. Zwölf Jahre lang blieb sie uner­kannt. Die Auf­deckung ihrer Iden­tität 1931 und der anschlie­ßende Gerichts­prozess wurde von großer media­ler Aufmerk­samkeit der natio­nalen und inter­natio­nalen Presse beglei­tet. Die began­gene Urkunden­fälschung wurde mit einem Monat Haft bestraft; das milde Urteil wurde mit der „Tapfer­keit, mit der die beiden Frauen den Lebens­kampf auf­genom­men hatten“ begrün­det; diese Hal­tung ent­sprach weit­gehend dem Bild, das die Öffent­lich­keit von Maria Eins­mann und ihrer Lebens­gefähr­tin hatte.
+            </p>
+        </section>
+    -->
+        <div id="controls">
+            <button id="swap"><-></button><br>
+            <button id="ratio">change ratio</button>
+        </div>
+        <section id="presenter-notes" >
+            <p>
+                Demokratie ist ein Begriff für
+                Formen der Herrschaftsorganisation 
+                auf der Grundlage der Partizipation bzw. Teilhabe 
+                aller an der politischen Willensbildung.
+            </p>
+            <p>
+                Demokratie ist ein Begriff für
+                Formen der Herrschaftsorganisation 
+                auf der Grundlage der Partizipation bzw. Teilhabe 
+                aller an der politischen Willensbildung.
+            </p>
+            <p>
+                Demokratie ist ein Begriff für
+                Formen der Herrschaftsorganisation 
+                auf der Grundlage der Partizipation bzw. Teilhabe 
+                aller an der politischen Willensbildung.
+            </p>
+        </section>
+    </main>
+</body>
+
+</html>
