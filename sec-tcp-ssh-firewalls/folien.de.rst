@@ -33,7 +33,7 @@ Eine erste Einführung in die Sicherheit von (verteilten) Systemen
 
 :Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
 :Kontakt: michael.eichberg@dhbw.de
-:Version: 1.2.2
+:Version: 1.3
 
 .. container:: footer-left tiny
     
@@ -947,11 +947,10 @@ HMAC-based one-time password (HOTP)\ [#]_
 
 .. supplemental::
 
-    :math:`truncate` verwendet die 4 niederwertigsten Bits des MAC als Byte-Offset i in den MAC.
+    :math:`truncate` verwendet die 4 niederwertigsten Bits des MAC als Byte-Offset :math:`i` in den MAC.
     Der Wert :math:`19` kommt daher, dass ein SHA-1 :math:`160` Bit hat und :math:`160/8 = 20` Byte. 
 
-    :math:`extract31` extrahiert 31 Bit aus dem MAC.
-
+    :math:`extract31` extrahiert 31 Bit aus dem MAC. Das höchstwertig Bit wird (wenn es nicht 0 ist) entsprechend maskiert.
     Eine Schwäche des Algorithmus ist, dass beide Seiten den Zähler erhöhen müssen und, falls die Zähler aus dem Tritt geraten, ggf. eine Resynchronisation notwendig ist.
 
 
@@ -1030,7 +1029,7 @@ Secure Shell (SSH) - Protokoll
 
 .. container:: incremental small
 
-    Beide Seiten haben einen Public-private Key Schlüsselpaar zur Gegenseitigen Authentifizierung
+    Beide Seiten haben einen Public-private Key Schlüsselpaar zur gegenseitigen Authentifizierung
 
     :User Keys: 
      - ``Authorized keys`` - Serverseitige Datei mit den öffentlichen Schlüsseln der Nutzer
@@ -1142,7 +1141,7 @@ SSH und „Back-tunneling“
 
 - Der Angreifer richtet einen Server außerhalb des Zielnetzwerks ein
 - Nach Infiltration des Zielsystems verbindet der Angreifer sich von innen mit dem externen SSH-Server.  
-- Diese SSH-Verbindung wird so eingerichtet, das eine TCP-Port-Weiterleitung von einem Port auf dem externen Server zu einem SSH-Port auf einem Server im internen Netzwerk möglich ist. 
+- Diese SSH-Verbindung wird so eingerichtet, dass eine TCP-Port-Weiterleitung von einem Port auf dem externen Server zu einem SSH-Port auf einem Server im internen Netzwerk möglich ist. 
 - Die meisten Firewalls bieten wenig bis gar keinen Schutz dagegen.
 
 
@@ -1177,7 +1176,7 @@ Schwachstellen in SSH
 
 .. exercise:: Port Scans - IDLE Scan
 
-  - Warum kann bei einem IDLE Scan nicht festgestellt werden warum ein Port geschlossen oder gefiltert ist?
+  - Warum kann bei einem IDLE Scan nicht festgestellt werden weshalb ein Port geschlossen oder gefiltert ist?
   - Welchen Wert hat die IP ID des Zombies, der einem IDLE Scan durchführt, wenn der Zielport offen bzw. geschlossen ist, wenn der Scanner diesen wieder abfragt?
 
   .. solution::
@@ -1232,6 +1231,32 @@ Schwachstellen in SSH
 
         7. Keine
 
+
+
+.. class:: integrated-exercise transition-move-left
+
+Übung
+--------------
+
+.. exercise:: HOTP
+
+    Gegeben sei der folgende MAC: 
+
+    .. csv-table::
+        :class: far-smaller
+
+        Offset, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19
+        Mac, bc, 9f, aa, ae, 1e, 35, d5, 2f, 3d, ea, 96, 51, da, 12, cd, 36, 62, 7b, 84, 03
+
+    Berechnen Sie den HOTP Wert für :math:`d = 6`.
+
+    .. solution::
+        :pwd: HelloWorldAlsHOTP
+
+        Der Offset ergibt sich aus den letzten 4 Bits und ist demzufolge :math:`3`. 
+        
+        Die Bytefolge ist somit: ``ae 1e 35 d5``. Wir müssen jetzt das erste Bit maskieren, bevor wir die Dezimalzahl berechnen. D.h. vor der Anwendung der Modulfunktion wird das erste Bit auf 0 gesetzt und somit ist die relevante Bytefolge: ``2e 1e 35 d5``. Als Dezimalzahl ergibt sich: :math:`773 731 797` und das Token somit zu: :math:`773 731 797\; mod\; 10^6 = 731 797`.
+        
 
 
 .. class:: integrated-exercise transition-move-left
