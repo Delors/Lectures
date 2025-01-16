@@ -1,4 +1,5 @@
-.. meta:: 
+.. meta::
+    :version: renaissance 
     :author: Michael Eichberg
     :keywords: "Fortgeschrittene Systementwicklung", "verteilte Systeme"
     :description lang=de: Einführung in die Entwicklung verteilter Systeme
@@ -41,15 +42,6 @@ W3WI_AM302 - Fortgeschrittene Systementwicklung
     :Version: 23AMA
 
 
-.. supplemental : :
-  :Folien: 
-      [HTML] |html-source|
-
-      [PDF] |pdf-source|
-  :Fehler melden:
-      https://github.com/Delors/delors.github.io/issues
-
-
 
 Inhalte
 ---------------------------------
@@ -82,15 +74,19 @@ Ablauf
 
 Dieses Semester 12 VL:
 
-- 14. Oct 2024: 13:45 bis 17:00 
-- 23. Oct 2024: 13:45 bis 17:00 
-- 28. Oct 2024: 13:45 bis 17:00 
+- \14. Oct 2024: 13:45 bis 17:00 
+- \23. Oct 2024: 13:45 bis 17:00 
+- \28. Oct 2024: 13:45 bis 17:00 
   
   Davon 20Minuten Kurztest! 
   
   :minor:`(Test von 16:40 bis 17:00 Uhr; davor 10 Minuten Pause.)`
 
 Nächstes Semester: 43 VL
+
+
+Inhalte im 2. Semester
+---------------------------------
 
 **Mögliche** Inhalte:
 
@@ -102,8 +98,8 @@ Nächstes Semester: 43 VL
    Schwerpunkt: automatisiertes Finden von Schwachstellen in der Softwareentwicklung.
 5. Virtualisierung und Containerisierung
 
-
 (Zeitplan wird noch bekannt gegeben)
+
 
 
 Prüfungsleistung 

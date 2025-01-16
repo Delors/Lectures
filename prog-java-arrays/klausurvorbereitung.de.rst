@@ -1,4 +1,5 @@
 .. meta::
+    :version: genesis
     :lang: de
     :author: Michael Eichberg
     :keywords: "Programmierung", "Java", "Arrays"
@@ -38,11 +39,11 @@
 Java Arrays - Klausurvorbereitung
 ===================================================================
 
-.. container:: line-above
+----
 
-    :Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
-    :Kontakt: michael.eichberg@dhbw.de, Raum 149B
-    :Version: 1.0
+:Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
+:Kontakt: michael.eichberg@dhbw.de, Raum 149B
+:Version: 1.0
 
 
 

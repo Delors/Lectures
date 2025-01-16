@@ -1,4 +1,5 @@
 .. meta:: 
+    :version: renaissance
     :author: Michael Eichberg
     :keywords: "Lebenslauf"
     :description lang=de: Lebenslauf von Prof. Dr. Michael Eichberg

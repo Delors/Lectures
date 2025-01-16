@@ -1,4 +1,5 @@
-.. meta:: 
+.. meta::
+    :version: renaissance
     :author: Michael Eichberg
     :keywords: "Verteilte Systeme"
     :description lang=de: Verteilte Systeme
@@ -27,11 +28,11 @@
 W3WI_110.2 - Verteilte Systeme
 ================================================
 
-.. container:: line-above tiny
+----
 
-    :Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
-    :Kontakt: michael.eichberg@dhbw.de, Raum 149B
-    :Version: 1.0
+:Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
+:Kontakt: michael.eichberg@dhbw.de, Raum 149B
+:Version: 1.0
 
 
 
@@ -49,9 +50,7 @@ Kerninhalte gem. MHB
 Prüfungsleistung - Portfolio
 ------------------------------------------
 
-.. container:: minor box-shadow rounded-corners padding-1em
-    
-    .. rubric:: Hintergrund
+.. admonition:: Hintergrund
 
     - das Modul hat 55 VL
     - Verteilte Systeme hat 22VL
@@ -82,31 +81,30 @@ Vorträge - Themen
 
 .. rubric:: Middleware Lösungen
 
-.. container:: two-columns
+.. list-table::
+  :width: 100%
+  :widths: 50 50
+  :class: borderless 
+  :header-rows: 0
 
-  .. container::
-
-    1. Apache Kafka
-    2. Apache Zookeeper
-    3. (Scala) Akka
-    4. Rabbit MQ
-    5. (Twitter/X) Finagle
-    6. Apache Hive
-    7. Apache Cassandra
-    8. Apache Spark
-    9. `Apache Pulsar <https://pulsar.apache.org>`__
-   
-  .. container::
-
-    10. Hadoop HDFS
-    11. Hadoop Yarn/MapReduce
-    12. Apache Mahout
-    13. `Apache Camel <https://camel.apache.org>`__
-    14. `NATS <https://docs.nats.io>`__
-    15. Spring Framework 
-    16. `Eclipse Glassfish und Jakarta EE <https://glassfish.org>`__
-    17. `Tokio <https://tokio.rs>`__
-    18. `Google Spanner <https://dl.acm.org/doi/10.1145/3035918.3056103>`__
+  * - Apache Kafka
+    - Apache Zookeeper
+  * - (Scala) Akka
+    - Rabbit MQ
+  * - (Twitter/X) Finagle
+    - Apache Hive
+  * - Apache Cassandra
+    - Apache Spark
+  * - `Apache Pulsar <https://pulsar.apache.org>`__ 
+    - Hadoop HDFS
+  * - Hadoop Yarn/MapReduce
+    - Apache Mahout
+  * - `Apache Camel <https://camel.apache.org>`__
+    - `NATS <https://docs.nats.io>`__
+  * - Spring Framework 
+    - `Eclipse Glassfish und Jakarta EE <https://glassfish.org>`__
+  * - `Tokio <https://tokio.rs>`__
+    - `Google Spanner <https://dl.acm.org/doi/10.1145/3035918.3056103>`__
 
 .. Nicht mehr vergeben:
    `Zeebe <https://github.com/camunda/zeebe>`__

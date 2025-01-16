@@ -1,4 +1,5 @@
-.. meta:: 
+.. meta::
+    :version: renaissance
     :author: Michael Eichberg
     :keywords: "Verteilte Systeme"
     :description lang=de: Verteilte Systeme
@@ -25,11 +26,11 @@
 W3WI_110.2 - Verteilte Systeme
 ================================================
 
-.. container:: line-above tiny
+----
 
-    :Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
-    :Kontakt: michael.eichberg@dhbw.de, Raum 149B
-    :Version: 1.0
+:Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
+:Kontakt: michael.eichberg@dhbw.de, Raum 149B
+:Version: 1.0
 
 
 
@@ -47,9 +48,7 @@ Kerninhalte gem. MHB
 Prüfungsleistung - Portfolio
 ------------------------------------------
 
-.. container:: minor box-shadow rounded-corners padding-1em
-    
-    .. rubric:: Hintergrund
+.. admonition::  Hintergrund
 
     - das Modul hat 55 VL
     - Verteilte Systeme hat 22VL
@@ -59,6 +58,7 @@ Prüfungsleistung - Portfolio
 
   1. Vorträge - max. 15 Punkte
   2. Programmieraufgabe - max. 35 Punkte
+
 
 
 Vorträge - Rahmenbedingungen

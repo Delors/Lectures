@@ -1,4 +1,5 @@
-.. meta:: 
+.. meta::
+    :version: genesis
     :author: Michael Eichberg
     :keywords: "Dokumentenmanagement"
     :description lang=de: "Ausgewählte rechtliche Aspekte des Dokumentenmanagements"

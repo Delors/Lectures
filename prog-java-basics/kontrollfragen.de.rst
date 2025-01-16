@@ -1,11 +1,12 @@
-.. meta:: 
-    :lang: de
-    :author: Michael Eichberg
-    :keywords: "Programmierung", "Java", "Variablen", "Methoden"
-    :description lang=de: Kontrollfragen zu Einführung in die Programmierung mit Java
-    :id: lecture-prog-java-basics-kontrollfragen
-    :first-slide: last-viewed
-    :exercises-master-password: WirklichSchwierig!
+.. meta::
+   :version: genesis
+   :lang: de
+   :author: Michael Eichberg
+   :keywords: "Programmierung", "Java", "Variablen", "Methoden"
+   :description lang=de: Kontrollfragen zu Einführung in die Programmierung mit Java
+   :id: lecture-prog-java-basics-kontrollfragen
+   :first-slide: last-viewed
+   :exercises-master-password: WirklichSchwierig!
     
 .. |html-source| source::
     :prefix: https://delors.github.io/
@@ -41,11 +42,11 @@
 Einführung in die Programmierung mit Java - Wiederholung
 ===========================================================
 
-.. container:: line-above
+----
 
-    :Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
-    :Kontakt: michael.eichberg@dhbw.de, Raum 149B
-    :Version: 1.1
+:Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
+:Kontakt: michael.eichberg@dhbw.de, Raum 149B
+:Version: 1.1
 
 
 

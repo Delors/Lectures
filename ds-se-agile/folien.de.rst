@@ -1,4 +1,5 @@
-.. meta:: 
+.. meta::
+    :version: genesis
     :author: Michael Eichberg
     :keywords: "Agile Entwicklung", "Verteilte Systeme", "DevOps"
     :description lang=de: Diskussion der Bedeutung der agilen Softwareentwicklung für verteilte Anwendungsarchitekturen
@@ -31,7 +32,7 @@
 
 
 Agile Softwareentwicklung und Ihre Bedeutung für verteilte Anwendungsarchitekturen
-=================================================================================================
+====================================================================================
 
 :Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
 :Kontakt: michael.eichberg@dhbw.de

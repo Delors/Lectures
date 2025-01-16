@@ -1,4 +1,5 @@
-.. meta:: 
+.. meta::
+    :version: genesis
     :author: Michael Eichberg
     :keywords: "HTTP", "Sockets"
     :description lang=de: HTTP und Socketprogrammierung

@@ -1,4 +1,5 @@
 .. meta:: 
+    :version: genesis
     :author: Michael Eichberg
     :keywords: "Seminararbeiten", "Bewertungskriterien"
     :description lang=de: Seminararbeiten: Hinweise und Bewertungskriterien
@@ -28,6 +29,7 @@
 
 .. role:: raw-html(raw)
    :format: html
+
 
 
 .. class:: animated-symbol
@@ -105,10 +107,6 @@ Bewertungskriterien
      
         Bei Abweichungen von mehr als 10% wird die Note um eine Stufe reduziert (-0,3); bei 20% wird abgebrochen (-1,0). Dieser Faktor wird auf die Gesamtnote angewendet und kann demzufolge kumulativ wirken, da vermutlich auch bestimmte Inhalte fehlen und dies sich weiter negativ auswirken kann.
    - Wird die Zeit sinnvoll auf die einzelnen Abschnitte verteilt?
-  
-
-
-
 
 .. supplemental:: 
 
@@ -117,6 +115,7 @@ Bewertungskriterien
       Sollten Sie Code demonstrieren, der UIs baut, dann ist es häufig sinnvoll, wenn Sie erst kurz die Ziel UI zeigen und dann den Code, der diese UI erzeugt. Das Publikum kann sich dann besser vorstellen, was der Code macht. 
       
       Das Gleiche gilt aber häufig auch für Algorithmen. Auch dort kann es hilfreich sein, das Ergebnis des Algorithmus zu zeigen und dann den Algorithmus zu erklären.
+
 
 
 Häufige Fehler

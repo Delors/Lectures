@@ -1,4 +1,5 @@
-.. meta:: 
+.. meta::
+    :version: renaissance
     :author: Michael Eichberg
     :keywords: "JavaScript", "CSS", "HTML"
     :description lang=de: Web Programmierung
@@ -34,12 +35,11 @@
 W3WI_110.2 - Web-Entwicklung
 ================================================
 
-.. container:: line-above
+----
 
-    :Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
-    :Kontakt: michael.eichberg@dhbw.de, Raum 149B
-    :Version: 23EG/EH 
-
+:Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
+:Kontakt: michael.eichberg@dhbw.de, Raum 149B
+:Version: 23EG/EH 
 
 .. supplemental : :
   :Folien: 
@@ -48,6 +48,7 @@ W3WI_110.2 - Web-Entwicklung
       [PDF] |pdf-source|
   :Fehler melden:
       https://github.com/Delors/delors.github.io/issues
+
 
 
 Ausgewählte Inhalte gem. MHB
@@ -112,197 +113,187 @@ Vorträge - Rahmenbedingungen
 Themen
 ---------
 
-.. container:: scrollable
+.. deck:: dd-margin-left-4em
 
-  .. class:: incremental
+  .. card::
 
-  :Barrierefreiheit und HTML:
+    :Barrierefreiheit und HTML:
 
-    (max. 2 Personen)
+      (max. 2 Personen)
 
-    - Allgemeine Einführung in das Thema Barrierefreiheit (:eng:`Accessibilty`) 
-    - Barrierefreie HTML Webseiten mit HTML5 Gestalten
-    - Erste Quellen:
+      - Allgemeine Einführung in das Thema Barrierefreiheit (:eng:`Accessibilty`) 
+      - Barrierefreie HTML Webseiten mit HTML5 Gestalten
+      - Erste Quellen:
 
-      .. class:: far-smaller
+        .. class:: far-smaller
 
-      - https://developer.mozilla.org/en-US/docs/Learn/Accessibility
-      - https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA
-      - https://web.dev/learn/accessibility
-      - https://www.w3.org/TR/wai-aria/
+        - https://developer.mozilla.org/en-US/docs/Learn/Accessibility
+        - https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA
+        - https://web.dev/learn/accessibility
+        - https://www.w3.org/TR/wai-aria/
 
-  .. class:: incremental
+  .. card::
 
-  :HTML Forms: 
+    :HTML Forms: 
 
-    (max. 2 Personen)
+      (max. 2 Personen)
 
-    - Formulare mit HTML; insbesondere Input Typen und Validierung von Daten
-    - Erste Quellen:
+      - Formulare mit HTML; insbesondere Input Typen und Validierung von Daten
+      - Erste Quellen:
+      
+        .. class:: far-smaller
+
+        - https://developer.mozilla.org/en-US/docs/Learn/Forms
+        - https://developer.mozilla.org/en-US/docs/Web/HTML/Element/form
+        - https://web.dev/learn/forms
+
+      *CSS und JavaScript soll nicht behandelt werden*.
+
+
+  .. card::
+
+    :SVG - Vektorgrafik auf Webseiten:
+      
+      (max. 1 Person)
+
+
+      - Einführung in SVG und Vektorgrafiken
+      - HTML5 und eingebettete SVGs
+      - Erste Quellen:
+  
+        .. class:: far-smaller
+
+        - https://developer.mozilla.org/en-US/docs/Web/SVG
+        - https://svg-tutorial.com
+        - https://www.w3schools.com/graphics/svg_intro.asp
+
+  .. card::
+
+    :Saas:
     
-      .. class:: far-smaller
+      (max. 1 Person)
 
-      - https://developer.mozilla.org/en-US/docs/Learn/Forms
-      - https://developer.mozilla.org/en-US/docs/Web/HTML/Element/form
-      - https://web.dev/learn/forms
+      - CSS Erweiterung (CSS Preprocessor)
+      - Erste Quellen:
+  
+        .. class:: far-smaller
 
-    *CSS und JavaScript soll nicht behandelt werden*.
+        - https://sass-lang.com/
 
 
-  .. class:: incremental
+  .. card::
 
-  :SVG - Vektorgrafik auf Webseiten:
+    :Less:
     
-    (max. 1 Person)
+      (max. 1 Person)
 
-
-    - Einführung in SVG und Vektorgrafiken
-    - HTML5 und eingebettete SVGs
-    - Erste Quellen:
- 
-      .. class:: far-smaller
-
-      - https://developer.mozilla.org/en-US/docs/Web/SVG
-      - https://svg-tutorial.com
-      - https://www.w3schools.com/graphics/svg_intro.asp
-
-  .. class:: incremental
-
-  :Saas:
+      - CSS Preprocessor
+      - Erste Quellen:
   
-    (max. 1 Person)
+        .. class:: far-smaller
 
-    - CSS Erweiterung (CSS Preprocessor)
-    - Erste Quellen:
- 
-      .. class:: far-smaller
+        - https://lesscss.org/
 
-      - https://sass-lang.com/
+  .. card::
 
+    :Bootstrap: 
+    
+      (max. 2 Personen)
 
-  .. class:: incremental
-
-  :Less:
+      - Entwicklung von *responsive* Webseiten
+      - Erste Quellen:
   
-    (max. 1 Person)
+        .. class:: far-smaller
 
-    - CSS Preprocessor
-    - Erste Quellen:
- 
-      .. class:: far-smaller
+        - https://getbootstrap.com/
 
-      - https://lesscss.org/
+      Achtung: Sass (und Less) werden getrennt behandelt werden.
 
-  .. class:: incremental
+  .. card::
 
-  :Bootstrap: 
+    :Express:
+    
+      (4 Personen) 
+
+      - Einführung in Express
+      - *Programmierung von Endpunkten*
+
+      **Hinweise**
+
+      - Grundlagen des RESTful Designs brauchen nicht behandelt werden; konzentrieren Sie sich darauf wie man Express verwendet (\ *Hands-on*\ )
+      - Die Programmierung mit WebSockets nur in soweit behandeln, wie es nicht bereits in einem anderen Vortrag/der Vorlesung behandelt wird.
+      - Erste Quellen:
   
-    (max. 2 Personen)
+        .. class:: far-smaller
 
-    - Entwicklung von *responsive* Webseiten
-    - Erste Quellen:
- 
-      .. class:: far-smaller
+        - https://expressjs.com/
+        - https://developer.mozilla.org/en-US/docs/Web/API/WebSockets_API
+        - https://www.npmjs.com/package/express-ws?activeTab=readme
 
-      - https://getbootstrap.com/
+  .. card::
 
-    Achtung: Sass (und Less) werden getrennt behandelt werden.
-
-  .. class:: incremental
-
-  :Express:
-   
-    (4 Personen) 
-
-    - Einführung in Express
-    - *Programmierung von Endpunkten*
-
-    .. rubric:: Hinweise
-
-    - Grundlagen des RESTful Designs brauchen nicht behandelt werden; konzentrieren Sie sich darauf wie man Express verwendet (\ *Hands-on*\ )
-    - Die Programmierung mit WebSockets muss behandelt werden:
-
-      - Allg. Einführung in WebSockets
-      - Programmierung von WebSockets in Browsern und Express
-
-    - Erste Quellen:
- 
-      .. class:: far-smaller
-
-      - https://expressjs.com/
-      - https://developer.mozilla.org/en-US/docs/Web/API/WebSockets_API
-      - https://www.npmjs.com/package/express-ws?activeTab=readme
+    :Vue.js:
+    
+      (max. 3 Personen)
 
 
-  .. class:: incremental
-
-  :Vue.js:
+      - JavaScript Framework für Web User Interfaces
+      - Erste Quellen:
   
-    (max. 3 Personen)
+        .. class:: far-smaller
 
+        - https://vuejs.org/
 
-    - JavaScript Framework für Web User Interfaces
-    - Erste Quellen:
- 
-      .. class:: far-smaller
+  .. card::
 
-      - https://vuejs.org/
+    :Typescript:
 
+      (max. 2 Personen)
 
-
-  .. class:: incremental
-
-  :Typescript:
-
-    (max. 2 Personen)
-
-    - JavaScript with types
+      - JavaScript with types
+    
+        (Der Vortrag sollte sich auf die Vorteile von statischer Typisierung konzentrieren; insbesondere für das :eng:`Programming in the large`.)
+      - Erste Quellen:
   
-      (Der Vortrag sollte sich auf die Vorteile von statischer Typisierung konzentrieren; insbesondere für das :eng:`Programming in the large`.)
-    - Erste Quellen:
- 
-      .. class:: far-smaller
+        .. class:: far-smaller
 
-      - https://www.typescriptlang.org/
+        - https://www.typescriptlang.org/
 
+  .. card::
 
+    :Angular: 
+    
+      (max. 3 Personen) 
 
-  .. class:: incremental
-
-  :Angular: 
+      - Web-Application Framework
+      - Erste Quellen:
   
-    (max. 3 Personen) 
+        .. class:: far-smaller
 
-    - Web-Application Framework
-    - Erste Quellen:
- 
-      .. class:: far-smaller
-
-      - https://angular.io/
+        - https://angular.io/
 
 
-  .. class:: incremental
+  .. card::
 
-  :Svelte: (max. 3 Personen)
+    :Svelte: (max. 3 Personen)
 
 
-    - Javascript Web Framework
-    - Erste Quellen:
- 
-      .. class:: far-smaller
-
-      - https://svelte.dev/
+      - Javascript Web Framework
+      - Erste Quellen:
   
+        .. class:: far-smaller
 
-  .. class:: incremental
+        - https://svelte.dev/
+    
+  .. card::
 
-  :React: 
+    :React: 
+    
+      (max. 4 Personen)
+
+      - Frontend orientierte Bibliothek für die Entwicklung von Benutzeroberflächen
+      - Erste Quellen:
   
-    (max. 4 Personen)
+        .. class:: far-smaller
 
-    - Frontend orientierte Bibliothek für die Entwicklung von Benutzeroberflächen
-    - Erste Quellen:
- 
-      .. class:: far-smaller
-
-      - https://react.dev/
+        - https://react.dev/

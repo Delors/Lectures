@@ -1,4 +1,5 @@
-.. meta:: 
+.. meta::
+    :version: genesis
     :author: Michael Eichberg
     :keywords: "IT Sicherheit", Passwortwiederherstellung
     :description lang=de: Fortgeschrittene Angewandte IT Sicherheit
@@ -36,11 +37,11 @@ Die Linux Shell
 
 Eine kurze Wiederholung / Einführung.
 
-.. container:: line-above padding-bottom-1em
+----
 
-  :Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
-  :Kontakt: michael.eichberg@dhbw.de
-  :Version: 1.0.1
+:Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
+:Kontakt: michael.eichberg@dhbw.de
+:Version: 1.0.1
 
 .. supplemental::
 

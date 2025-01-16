@@ -1,4 +1,5 @@
-.. meta:: 
+.. meta::
+    :version: renaissance 
     :author: Michael Eichberg
     :keywords: "Organisation"
     :description lang=de: Theoretische Informatik
@@ -34,20 +35,11 @@
 W4DSKI 205 - Theoretische Informatik
 ================================================
 
-.. container:: line-above
+----
 
-    :Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
-    :Kontakt: michael.eichberg@dhbw.de, Raum 149B
-    :Version: DSKI23A
-
-
-.. supplemental : :
-  :Folien: 
-      [HTML] |html-source|
-
-      [PDF] |pdf-source|
-  :Fehler melden:
-      https://github.com/Delors/delors.github.io/issues
+:Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
+:Kontakt: michael.eichberg@dhbw.de, Raum 149B
+:Version: DSKI23A
 
 
 

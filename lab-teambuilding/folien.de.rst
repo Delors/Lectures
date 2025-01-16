@@ -1,4 +1,5 @@
-.. meta:: 
+.. meta::
+    :version: genesis
     :author: Michael Eichberg
     :keywords: Projekt, Teambuilding
     :description lang=de: Teambuilding
@@ -23,11 +24,11 @@
 Teambuilding im Projekt
 ==========================================
 
-.. container:: line-above padding-bottom-1em
+----
 
-  :Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
-  :Kontakt: michael.eichberg@dhbw.de
-  :Version: 1.0
+:Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
+:Kontakt: michael.eichberg@dhbw.de
+:Version: 1.0
 
 .. supplemental::
 

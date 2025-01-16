@@ -1,4 +1,5 @@
-.. meta:: 
+.. meta::
+    :version: genesis
     :author: Michael Eichberg
     :keywords: "Java", "Concurrency"
     :description lang=de: Nebenläufigkeit in Java

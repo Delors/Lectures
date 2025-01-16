@@ -1,4 +1,5 @@
-.. meta:: 
+.. meta::
+    :version: renaissance
     :author: Michael Eichberg
     :keywords: "Fortgeschrittene Programmierung"
     :description lang=de: Verteilte Systeme und Web-Entwicklung
@@ -59,16 +60,16 @@ Labor Web Projekt:
 Prüfungsleistung - Portfolio
 ------------------------------------------
 
-.. stack::
+.. deck::
 
-  .. layer:: 
+  .. card:: 
       
       .. rubric:: Hintergrund
 
       - Das Modul hat 5 ECTS
       - Insgesamt gibt es max. 120 Punkte
     
-  .. layer:: incremental
+  .. card::
 
     - 3 Bestandteile:
 
@@ -89,7 +90,7 @@ Vorträge - organisatorische Rahmenbedingungen
 - Jeder hält nur einen Vortrag.
 - Die Vortragsthemen werden sukzessive vergeben. 
 
-.. container:: box-shadow rounded-corners padding-1em center-child-elements
+  .. incremental:: 
 
     `Vortragsthemen <../web-vortragsthemen/folien.rst.html>`__
 
@@ -99,6 +100,7 @@ Vorträge - organisatorische Rahmenbedingungen
 
 Vorträge am 4. Juni
 ----------------------
+
 
 
 Barrierefreiheit und HTML (2 Personen)\ [#]_

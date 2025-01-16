@@ -1,4 +1,5 @@
-.. meta:: 
+.. meta::
+    :version: genesis
     :lang: de
     :author: Michael Eichberg
     :keywords: "Programmierung", "Java", "Modularisierung", "Software Development"
@@ -37,11 +38,11 @@
 Grundlegende Modularisierung von einfachen Java Programmen
 ===========================================================
 
-.. container:: line-above tiny
+----
 
-    :Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
-    :Kontakt: michael.eichberg@dhbw.de, Raum 149B
-    :Version: 1.0
+:Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
+:Kontakt: michael.eichberg@dhbw.de, Raum 149B
+:Version: 1.0
 
 .. supplemental::
 

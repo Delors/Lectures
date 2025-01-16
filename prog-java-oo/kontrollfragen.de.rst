@@ -1,11 +1,12 @@
-.. meta:: 
-    :lang: de
-    :author: Michael Eichberg
-    :keywords: "Programmierung", "Java", "Objektorientierung"
-    :description lang=de: Kontrollfragen zu einfacher objektorientierter Programmierung
-    :id: lecture-prog-java-simple-oo-kontrollfragen
-    :first-slide: last-viewed
-    :exercises-master-password: WirklichSchwierig!
+.. meta::
+   :version: genesis
+   :lang: de
+   :author: Michael Eichberg
+   :keywords: "Programmierung", "Java", "Objektorientierung"
+   :description lang=de: Kontrollfragen zu einfacher objektorientierter Programmierung
+   :id: lecture-prog-java-simple-oo-kontrollfragen
+   :first-slide: last-viewed
+   :exercises-master-password: WirklichSchwierig!
     
 .. |html-source| source::
     :prefix: https://delors.github.io/
@@ -41,11 +42,11 @@
 Kontrollfragen zu einfacher objektorientierter Programmierung
 ==============================================================
 
-.. container:: line-above
+----
 
-    :Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
-    :Kontakt: michael.eichberg@dhbw.de, Raum 149B
-    :Version: 1.0
+:Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
+:Kontakt: michael.eichberg@dhbw.de, Raum 149B
+:Version: 1.0
 
 
 

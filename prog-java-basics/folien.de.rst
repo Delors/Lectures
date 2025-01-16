@@ -1,4 +1,5 @@
-.. meta:: 
+.. meta::
+    :version: genesis
     :lang: de
     :author: Michael Eichberg
     :keywords: "Programmierung", "Java", "Variablen", "Methoden"
@@ -41,16 +42,16 @@
 Einführung in die Programmierung mit Java
 ====================================================
 
-.. container:: line-above
+----
 
-    :Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
-    :Kontakt: michael.eichberg@dhbw.de, Raum 149B
-    :Version: 1.2
+:Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
+:Kontakt: michael.eichberg@dhbw.de, Raum 149B
+:Version: 1.2
 
-    .. container:: minor
+.. container:: minor
 
-        :Quelle: 
-            Die Folien sind teilweise inspiriert von oder basierend auf Lehrmaterial von Prof. Dr. M. Matt bzw. Prof. C. Binning.
+    :Quelle: 
+        Die Folien sind teilweise inspiriert von oder basierend auf Lehrmaterial von Prof. Dr. M. Matt bzw. Prof. C. Binning.
 
 .. Im Wesentlichen Foliensätze von Michael Matt: 03_Grundlagen_Teil1 und Teil2 und Formatierung.key
 

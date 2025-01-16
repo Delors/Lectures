@@ -1,4 +1,5 @@
-.. meta:: 
+.. meta::
+    :version: genesis
     :author: Michael Eichberg
     :keywords: "Middleware", "RPC", "RMI", "MoM"
     :description lang=de: Middleware

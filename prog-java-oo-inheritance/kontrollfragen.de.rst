@@ -1,12 +1,13 @@
-.. meta:: 
-    :lang: de
-    :author: Michael Eichberg
-    :keywords: "Programmierung", "Java", "Objektorientierung"
-    :description lang=de: Kontrollfragen zu Objektorientierter Programmierung in Java
-    :id: lecture-prog-java-oo-kontrollfragen
-    :first-slide: last-viewed
-    :exercises-master-password: WirklichSchwierig!
-    
+.. meta::
+   :version: genesis
+   :lang: de
+   :author: Michael Eichberg
+   :keywords: "Programmierung", "Java", "Objektorientierung"
+   :description lang=de: Kontrollfragen zu Objektorientierter Programmierung in Java
+   :id: lecture-prog-java-oo-kontrollfragen
+   :first-slide: last-viewed
+   :exercises-master-password: WirklichSchwierig!
+   
 .. |html-source| source::
     :prefix: https://delors.github.io/
     :suffix: .html
@@ -41,11 +42,11 @@
 Kontrollfragen: Objekt-orientierte Programmierung - Vererbung und Polymorphie
 ================================================================================
 
-.. container:: line-above
+----
 
-    :Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
-    :Kontakt: michael.eichberg@dhbw.de, Raum 149B
-    :Version: 1.0
+:Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
+:Kontakt: michael.eichberg@dhbw.de, Raum 149B
+:Version: 1.0
 
 
 

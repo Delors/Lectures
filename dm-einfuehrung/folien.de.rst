@@ -1,4 +1,5 @@
-.. meta:: 
+.. meta::
+    :version: genesis
     :author: Michael Eichberg
     :keywords: "Dokumenten Management"
     :description lang=de: "Einführung in das Dokumenten Management"

@@ -1,4 +1,5 @@
-.. meta:: 
+.. meta::
+    :version: genesis
     :lang: de
     :author: Michael Eichberg
     :keywords: "Modellierung", "UML", "Objektorientierung", "Software Development"
@@ -40,13 +41,13 @@
 .. class:: animated-symbol
 
 Einführung und erste Grundlagen der Modellierung mit UML
-================================================================================================
+==========================================================================
 
-.. container:: line-above tiny
+----
 
-    :Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
-    :Kontakt: michael.eichberg@dhbw.de, Raum 149B
-    :Version: 1.1
+:Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
+:Kontakt: michael.eichberg@dhbw.de, Raum 149B
+:Version: 1.1
 
 .. supplemental::
 

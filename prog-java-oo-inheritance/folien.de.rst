@@ -1,4 +1,5 @@
-.. meta:: 
+.. meta::
+    :version: genesis
     :lang: de
     :author: Michael Eichberg
     :keywords: "Programmierung", "Java", "Objektorientierung", "Vererbung", "Polymorphie"
@@ -39,11 +40,11 @@
 Objekt-orientierte Programmierung - Vererbung und Polymorphie
 ==============================================================
 
-.. container:: line-above tiny
+----
 
-    :Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
-    :Kontakt: michael.eichberg@dhbw.de, Raum 149B
-    :Version: 1.0.1
+:Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
+:Kontakt: michael.eichberg@dhbw.de, Raum 149B
+:Version: 1.0.1
 
 .. supplemental::
 

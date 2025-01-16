@@ -1,4 +1,5 @@
-.. meta:: 
+.. meta::
+    :version: renaissance
     :author: Michael Eichberg
     :keywords: "IT Sicherheit", "Neue Konzepte"
     :description lang=de: Einführung in ausgewählte Konzepte der IT Sicherheit
@@ -34,20 +35,11 @@
 W3WI_111.X - Neue Konzepte (IT Sicherheit)
 ================================================
 
-.. container:: line-above
+----
 
-    :Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
-    :Kontakt: michael.eichberg@dhbw.de, Raum 149B
-    :Version: 22EG/EH 
-
-
-.. supplemental : :
-  :Folien: 
-      [HTML] |html-source|
-
-      [PDF] |pdf-source|
-  :Fehler melden:
-      https://github.com/Delors/delors.github.io/issues
+:Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
+:Kontakt: michael.eichberg@dhbw.de, Raum 149B
+:Version: 22EG/EH 
 
 
 
@@ -68,6 +60,7 @@ Ausgewählte Inhalte gem. MHB
   Die Studierenden können ein aktuelles Thema in seiner jetzigen oder zukünftigen Relevanz für ihre Tätigkeit im Unternehmen beurteilen. Sie können die vermittelten neuen Konzepte im Rahmen von Fallstudien einsetzen und anwenden.
 
 
+
 Prüfungsleistung - Klausur
 ------------------------------------------
 
@@ -76,7 +69,8 @@ Prüfungsleistung - Klausur
     - 25VL (Modul: 50 VL)
     - Modul 5 ECTS
     - Klausuranteil: 60 Minuten (Modul: Klausur 120 Minuten)
-    
+
+
 
 Themen
 ------------------------------------------

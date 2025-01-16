@@ -1,10 +1,11 @@
-.. meta:: 
-    :author: Michael Eichberg
-    :keywords: "IT Sicherheit", Passwortwiederherstellung
-    :description lang=de: Fortgeschrittene Angewandte IT Sicherheit
-    :id: 2023_11-w3wi_se403_passwort_wiederherstellung-regexp
-    :first-slide: last-viewed
-    :exercises-master-password: WirklichSchwierig!
+.. meta::
+   :version: genesis
+   :author: Michael Eichberg
+   :keywords: "IT Sicherheit", Passwortwiederherstellung
+   :description lang=de: Fortgeschrittene Angewandte IT Sicherheit
+   :id: 2023_11-w3wi_se403_passwort_wiederherstellung-regexp
+   :first-slide: last-viewed
+   :exercises-master-password: WirklichSchwierig!
 
 .. |html-source| source::
     :prefix: https://delors.github.io/
@@ -28,16 +29,17 @@
    :format: html
 
 
+
 .. class:: animated-symbol
 
 Reguläre Ausdrücke 
 =====================================================
 
-.. container:: line-above padding-bottom-1em
+----
 
-  :Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
-  :Kontakt: michael.eichberg@dhbw.de
-  :Version: 1.2
+:Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
+:Kontakt: michael.eichberg@dhbw.de
+:Version: 1.2
 
 .. supplemental::
 

@@ -1,4 +1,5 @@
-.. meta:: 
+.. meta::
+    :version: genesis
     :author: Michael Eichberg
     :keywords: "Verteilte Anwendungen", "Design Principles", "Architekturstile"
     :description lang=de: Diskussion von Entwurfsprinzipien für moderne verteilte Anwendungen
@@ -35,7 +36,7 @@
 
 
 Entwurfsprinzipien für :raw-html:`<br>` Moderne Verteilte Anwendungen
-=================================================================================================
+===============================================================================
 
 (:eng:`Design Principles and Design Patterns for Distributed Applications`)
 

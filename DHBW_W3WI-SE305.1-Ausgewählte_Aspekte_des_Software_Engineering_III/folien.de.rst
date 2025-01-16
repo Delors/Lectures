@@ -1,4 +1,5 @@
-.. meta:: 
+.. meta::
+    :version: renaissance
     :author: Michael Eichberg
     :keywords: "IT Sicherheit", "Ausgewählte Aspekte des Software Engineering III"
     :description lang=de: Einführung in ausgewählte Konzepte der IT Sicherheit
@@ -32,24 +33,15 @@
 
 
 W3WI_SE305.1 - Ausgewählte Aspekte des Software Engineering III 
-========================================================================================
+===============================================================================
 
 **IT Sicherheit - Teil 2**
 
-.. container:: line-above
+----
 
-    :Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
-    :Kontakt: michael.eichberg@dhbw.de, Raum 149B
-    :Version: 22SEA
-
-
-.. supplemental : :
-  :Folien: 
-      [HTML] |html-source|
-
-      [PDF] |pdf-source|
-  :Fehler melden:
-      https://github.com/Delors/delors.github.io/issues
+:Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
+:Kontakt: michael.eichberg@dhbw.de, Raum 149B
+:Version: 22SEA
 
 
 
@@ -63,7 +55,8 @@ Prüfungsleistung
     - 20VL (Anteil!)
     - Klausuranteil: ca. 37-38 Minuten (Modul: 75 Minuten)
     - Punkte: 37 oder 38 Punkten
-    
+
+
 
 Themen
 ------------------------------------------
