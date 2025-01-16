@@ -51,7 +51,8 @@ possible_groups = [g for g in allcombinations(STUDENTS,MAX_GROUP_SIZE) if len(g)
 # we create a binary variable for each possible group
 choices = LpVariable.dicts("Choice", possible_groups, cat=LpBinary)
 
-prob += lpSum([happiness_of_group(g) * choices[g] for g in possible_groups])  # maximize the total assessment
+# maximize the total happiness 
+prob += lpSum([happiness_of_group(g) * choices[g] for g in possible_groups])  
 
 
 # each student must be assigned to exactly one group
