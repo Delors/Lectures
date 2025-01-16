@@ -1,5 +1,5 @@
 .. meta:: 
-    :version: renaissance
+    :version: genesis
     :author: Michael Eichberg
     :keywords: "Sicherheitsprinzipien"
     :description lang=de: Einführung in klassische Sicherheitsprinzipien
@@ -25,6 +25,7 @@
 
 .. role:: raw-html(raw)
    :format: html
+
 
 
 Klassische Sicherheitsprinzipien
