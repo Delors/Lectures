@@ -58,7 +58,7 @@ Lineare und Mixed-Integer Programmierung
 
 :Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
 :Kontakt: michael.eichberg@dhbw.de, Raum 149B
-:Version: 1.0
+:Version: 1.0.4
 
 .. container:: minor
 
@@ -308,7 +308,7 @@ Lösen von linearen Optimierungsproblemen
         .. math::
 
             \begin{array}{rrcl}
-            \text{maximimiere} & \sum_{v \in V} f_{sv} \\
+            \text{maximiere} & \sum_{v \in V} f_{sv} \\
             \text{unter den Nebenbedingungen} & f_{uv} & \leq & c(u,v) & \text{für } u,v \in V \\
             & \sum_{v \in V} f_{uv} & = & \sum_{v \in V} f_{vu} & \text{für } u \in V \setminus \{s,t\} \\
             & f_{uv} & \geq & 0 & \text{für } u,v \in V
@@ -342,7 +342,7 @@ Lösen von linearen Optimierungsproblemen
     1. Bestimmen Sie die Zielfunktion in Hinblick auf den Fluss bzw. der Variablen, die den Fluss repräsentieren.
     2. Formulieren Sie die Nebenbedingungen:
     
-       1. in Hinblick auf die darauf, dass der Fluss über eine Kante nie negativ sein darf
+       1. in Hinblick darauf, dass der Fluss über eine Kante nie negativ sein darf
        2. in Bezug auf die Kanten und die Kapazitäten
        3. in Bezug auf die Kapazitätserhaltung
 
@@ -377,7 +377,7 @@ Standardform
 
 .. container:: scrollable
 
-    Geben sein :math:`n` reelle Zahlen :math:`(c_1,...,c_n`); :math:`m` reelle Zahlen (:math:`b_1,...,b_m`); und eine :math:`m \times n` Matrix :math:`A = (a_{ij})` für :math:`i = 1,2,...m` und :math:`j = 1,2,...n`. 
+    Gegeben sein :math:`n` reelle Zahlen :math:`(c_1,...,c_n`); :math:`m` reelle Zahlen (:math:`b_1,...,b_m`); und eine :math:`m \times n` Matrix :math:`A = (a_{ij})` für :math:`i = 1,2,...m` und :math:`j = 1,2,...n`. 
 
     Wir möchten nun :math:`n` reelle Zahlen :math:`(x_1,...,x_n)` finden, die die folgenden Bedingungen erfüllen:
 
@@ -385,7 +385,7 @@ Standardform
 
     .. math::
 
-        \text{maximimiere} \sum_{j=1}^{n} c_j \cdot x_j
+        \text{maximiere} \sum_{j=1}^{n} c_j \cdot x_j
 
 
     **(unter den) Nebenbedingungen** (:eng:`subject to/constraints`)
@@ -406,7 +406,7 @@ Standardform
         .. math::
 
             \begin{array}{rcl}
-            \text{maximimiere} & c^T x & \\
+            \text{maximiere} & c^T x & \\
             \text{unter den Nebenbedingungen} & A \cdot x & \leq & b \\
             & x & \geq & 0
             \end{array}
@@ -470,7 +470,7 @@ Standardform
     .. solution::
         :pwd: QuickFix
         
-        :math:`x2` wurde durch :math:`x_2` und :math:`x_3` nach Regel 2 ersetzt.
+        :math:`x_2` wurde durch :math:`x_2` und :math:`x_3` nach Regel 2 ersetzt.
 
         .. math::
 
@@ -486,7 +486,7 @@ Standardform
                 \end{array}
 
 
-.. exercise:: Zeigen Sie, das das folgende lineare Programm unzulässig ist.
+.. exercise:: Zeigen Sie, dass das folgende lineare Programm unzulässig ist.
 
     .. math::
 
@@ -606,15 +606,15 @@ Schlupfform - Beispiel
 
         .. rubric::  Gegebenes lineares Programm in Schlupfform 
 
-        Wir führen die Schlupfvariablen :math:`x_3`, :math:`x_4` und :math:`x_5` ein mit der Nebenbedingung: :math:`x_4, x_5, x_6 \geq 0`.
+        Wir führen die Schlupfvariablen :math:`x_4`, :math:`x_5` und :math:`x_6` ein mit der Nebenbedingung: :math:`x_4, x_5, x_6 \geq 0`.
 
         .. math::
             
                 \begin{array}{rrcrcl}
                 \text{maximiere}     &  z & = &    & & 3x_1 & + &  x_2 & + & 2x_3 \\
                 \text{unter den Nebenbedingungen}    &x_4 & = & 30 & - &  x_1 & - &  x_2 & - & 3x_3 \\
-                                &x_5 & = & 24 & - & 2x_1 & - & 2x_2 & - & 5x_4 \\
-                                &x_6 & = & 36 & - & 4x_1 & - &  x_2 & - & 2x_5 \\
+                                &x_5 & = & 24 & - & 2x_1 & - & 2x_2 & - & 5x_3 \\
+                                &x_6 & = & 36 & - & 4x_1 & - &  x_2 & - & 2x_3 \\
                 \end{array}
     
 
@@ -714,7 +714,7 @@ Simplex anwenden
 
     .. rubric::  Gegebenes lineares Programm in Schlupfform 
 
-    Wir führen die Schlupfvariablen :math:`x_3`, :math:`x_4` und :math:`x_5` ein mit der Nebenbedingung: :math:`x_4, x_5, x_6 \geq 0`.
+    Wir führen die Schlupfvariablen :math:`x_4`, :math:`x_5` und :math:`x_6` ein mit der Nebenbedingung: :math:`x_4, x_5, x_6 \geq 0`.
 
     .. math::
         
@@ -747,11 +747,11 @@ Simplex anwenden
 
       .. math::
       
-            \begin{array}{rrrrrr}
-            z & = & 27 - & \frac{3}{4}x_6 + & \frac{1}{4}x_2 + & \frac{1}{2}x_3 \\
-            x_1 & = & 9 - & \frac{1}{4}x_6 - & \frac{1}{4}x_2 - & \frac{1}{2}x_3 \\
-            x_4 & = & 21 + & \frac{1}{4}x_6 - & \frac{3}{4}x_2 - & \frac{5}{2}x_3 \\
-            x_5 & = & 6 - & \frac{1}{2}x_6 - & \frac{3}{2}x_2 - & 4x_3 \\
+            \begin{array}{rrrcrcrcr}
+            z & = & 27 & - & \frac{3}{4}x_6 & + & \frac{1}{4}x_2 & + & \frac{1}{2}x_3 \\
+            x_1 & = & 9 & - & \frac{1}{4}x_6 & - & \frac{1}{4}x_2 & - & \frac{1}{2}x_3 \\
+            x_4 & = & 21 & + & \frac{1}{4}x_6 & - & \frac{3}{4}x_2 & - & \frac{5}{2}x_3 \\
+            x_5 & = & 6 & - & \frac{1}{2}x_6 & - & \frac{3}{2}x_2 & - & 4x_3 \\
             \end{array}
       
       :incremental:`Diese Operation wird als Pivot Operation bezeichnet.`
@@ -761,11 +761,11 @@ Simplex anwenden
 
       .. math::
       
-            \begin{array}{rrrrrr}
-            z   & = & \frac{111}{4} + & \frac{1}{16}x_2 - & \frac{1}{8}x_5 - & \frac{11}{16}x_6 \\
-            x_1 & = & \frac{33}{4}  - & \frac{1}{16}x_2 + & \frac{1}{8}x_5 - & \frac{5}{16}x_6 \\
-            x_3 & = & \frac{3}{2}   - &  \frac{3}{8}x_2 - & \frac{1}{4}x_5 + & \frac{1}{8}x_6 \\
-            x_4 & = & \frac{69}{4}  + & \frac{3}{16}x_2 + & \frac{5}{8}x_5 - & \frac{1}{16}x_6 \\
+            \begin{array}{rrrcrcrcr}
+            z   & = & \frac{111}{4} & + & \frac{1}{16}x_2 & - & \frac{1}{8}x_5 & - & \frac{11}{16}x_6 \\
+            x_1 & = & \frac{33}{4} & - & \frac{1}{16}x_2 & + & \frac{1}{8}x_5 & - & \frac{5}{16}x_6 \\
+            x_3 & = & \frac{3}{2} & - &  \frac{3}{8}x_2 & - & \frac{1}{4}x_5 & + & \frac{1}{8}x_6 \\
+            x_4 & = & \frac{69}{4} & + & \frac{3}{16}x_2 & + & \frac{5}{8}x_5 & - & \frac{1}{16}x_6 \\
             \end{array}
 
     - Die Basislösung ist: :math:`(33/4,0,3/2,69/4,0,0)` und der Wert der Zielfunktion ist :math:`111/4`.
@@ -774,11 +774,11 @@ Simplex anwenden
 
       .. math::
       
-            \begin{array}{rrrrrr}
-            z   & = & 28 - & \frac{1}{6}x_2 - & \frac{1}{6}x_5 - & \frac{2}{3}x_6 \\
-            x_1 & = &  8 + & \frac{1}{6}x_2 + & \frac{1}{6}x_5 - & \frac{1}{3}x_6 \\
-            x_2 & = &  4 - & \frac{8}{3}x_2 - & \frac{2}{3}x_5 + & \frac{1}{3}x_6 \\
-            x_4 & = & 18 + & \frac{1}{2}x_2 + & \frac{1}{2}x_5 \\
+            \begin{array}{rrrcrcrcr}
+            z   & = & 28 & - & \frac{1}{6}x_3 & - & \frac{1}{6}x_5 & - & \frac{2}{3}x_6 \\
+            x_1 & = &  8 & + & \frac{1}{6}x_3 & + & \frac{1}{6}x_5 & - & \frac{1}{3}x_6 \\
+            x_2 & = &  4 & - & \frac{8}{3}x_3 & - & \frac{2}{3}x_5 & + & \frac{1}{3}x_6 \\
+            x_4 & = & 18 & + & \frac{1}{2}x_3 & + & \frac{1}{2}x_5 \\
             \end{array}
 
     - Die Basislösung ist: :math:`(8,4,0,18,0,0)` und der Wert der Zielfunktion ist :math:`28`.
@@ -789,7 +789,7 @@ Simplex anwenden
 
     Beobachtungen:
 
-    - Beim Start: jede Belegung der Variablen :math:`x_1,...,x_3` definierte Werte für die Variablen :math:`x_4,...,x_6` und ist somit eine Lösung.
+    - Beim Start: jede Belegung der Variablen :math:`x_1,...,x_3` definiert Werte für die Variablen :math:`x_4,...,x_6` und ist somit eine Lösung.
     - eine Lösung ist (jedoch nur) dann zulässig wenn alle Variablen nicht-negativ sind.
     - Die Basislösung ist die Lösung, bei der die nicht-Basisvariablen (im ersten Schritt also :math:`x_1, x_2` und :math:`x_3`) den Wert :math:`0` haben. Im ersten Schritt ergibt sich somit die Basislösung (:math:`\bar{x_1},...,\bar{x_6}`) :math:`(0,0,0,30,24,36)`; der Wert der Zielfunktion ist :math:`0`.
 
@@ -863,7 +863,7 @@ Simplex Algorithmus
             x_5 & = & 18    & - & 2x_1  & - & 3x_2  \\
             \end{array} 
 
-        Wir können jetzt :math:`x_1` oder :math:`x_2` wählen, da beide in der Zielfunktion vorkommen und positive Koeffizienten haben. Wir wählen :math:`x_2` und versuchen :math:`x_2` zu maximieren. Da der maximale Wert, den :math:`x_2` annehmen kann für die dritte Ungleichung (:math:`6`) am geringsten ist  (in den anderen Fällen wäre es der Wert :math:`8` bzw. :math:`12`), tauschen wir :math:`x_2` und :math:`x_5`.
+        Wir können jetzt :math:`x_1` oder :math:`x_2` wählen, da beide in der Zielfunktion vorkommen und positive Koeffizienten haben. Wir wählen :math:`x_2` und versuchen :math:`x_2` zu maximieren. Da der maximale Wert, den :math:`x_2` annehmen kann, für die dritte Ungleichung (:math:`6`) am geringsten ist (in den anderen Fällen wäre es der Wert :math:`8` bzw. :math:`12`), tauschen wir :math:`x_2` und :math:`x_5`.
 
 
         .. math::
@@ -1225,7 +1225,7 @@ Lösung des Rätsels: SEND+MORE=MONEY
 
 .. supplemental::
  
-    Eine Formulierung wie :math:`28 \leq S + E + N + D + M + O + R + Y \leq 45`, um sicherzustellen, dass (zumindest einige) Variablen nicht :math:`0` sind stellt leider nicht die gewünschte Nebenbedingung sicher, dass jeder Wert nur einmal vergeben wird (:math:`0 + 1+ 2 + 3 + 4 + 5 + 6 + 7 = 28` und :math:`0 + 1+ 2 + 3 + 4 + 5 + 6 + 7 + 8 + 9 = 45`).
+    Eine Formulierung wie :math:`28 \leq S + E + N + D + M + O + R + Y \leq 44`, um sicherzustellen, dass (zumindest einige) Variablen nicht :math:`0` sind stellt leider nicht die gewünschte Nebenbedingung sicher, dass jeder Wert nur einmal vergeben wird (:math:`0 + 1+ 2 + 3 + 4 + 5 + 6 + 7 = 28` und :math:`0 + 1+ 2 + 3 + 4 + 5 + 6 + 7 + 8 + 9 = 45`).
 
     Eine Lösung mit obiger Nebenbedingung wäre zum Beispiel:
 
