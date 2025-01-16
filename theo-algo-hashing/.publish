@@ -1,2 +1,9 @@
 folien.de.rst.html
 folien.de.rst.html.pdf
+
+images/hashkollision.svg
+images/open_addressing/linear_probing.svg
+images/open_addressing/double_hashing.svg
+images/open_addressing/quadratic_probing.svg
+images/hashtables/separate_verkettung.svg
+images/hashtables/direkte_verkettung.svg
