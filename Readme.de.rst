@@ -1,9 +1,10 @@
 Lehrveranstaltungen und Foliensätze
 ===================================
 
-Die Foliensätze sind modularisiert, um sich an die jeweiligen Anforderungen der Vorlesungen anpassen zu lassen. 
+- Im Folgenden sind die Foliensätze verlinkt, die für verschiedene Lehrveranstaltungen genommen werden können.
+- Die Foliensätze sind modularisiert, um sich an die jeweiligen Anforderungen der Vorlesungen anpassen zu lassen. 
+- Im Folgenden sind Vorschläge für einige sinnvolle Kombinationen zu finden.
 
-Im Folgenden sind einige sinnvolle Kombinationen aufgeführt.
 
 
 Vorlesung "Einführung in der Programmierung"
@@ -24,6 +25,7 @@ Die grundlegende Idee hinter der folgenden Reihenfolge ist, dass die Studierende
    7. Objekt-orientierte Programmierung in Java - Vererbung und Polymorphie (`<prog-java-oo-inheritance/folien.de.rst.html>`__)
 
 
+
 Vorlesung "Theoretische Informatik" bzw. "Algorithmen und Datenstrukturen"
 -----------------------------------------------------------------------------
 
@@ -38,6 +40,8 @@ Vorlesung "Theoretische Informatik" bzw. "Algorithmen und Datenstrukturen"
    4. Lineare und Mixed-Integer Programmierung (`<theo-algo-mixed_integer_programming/folien.de.rst.html>`__)
 
    5. Hashing und Hashmaps (`<theo-algo-hashing/folien.de.rst.html>`__)
+
+   6. Formale Sprachen (`<theo-algo-formale_sprachen/folien.de.rst.html>`__)
    
    
 
