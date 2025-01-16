@@ -836,4 +836,7 @@ Angriffe auf algorithmische Komplexität
     Reporters were able to find colliding strings efficiently using equivalent substrings and meet in the middle techniques.
     This problem can be used to start a denial of service attack against  applications that use untrusted inputs as HashMap or Hashtable keys. An example is a web application server that may fill hash tables with data from HTTP request. A remote attack could use that to make JVM use excessive amount of CPU time by sending a POST request with large amount of parameters which hash to the same value.
     
-    -- [Abbreviated Version] Jan Lieskovsky 2011-11-01 10:13:47 EDT
+    -- [Abbreviated Version] Jan Lieskovsky 2011-11-01 
+
+
+.. TODO: Discuss https://en.wikipedia.org/wiki/MurmurHash 
