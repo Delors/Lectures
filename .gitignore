@@ -4,6 +4,9 @@
 *.ova
 start_node_js_http_server.sh
 start_python_http_server.sh
+/package-lock.json
+/package.json
+/pnpm-lock.yaml
 
 # Content we never share publicly
 exercise
