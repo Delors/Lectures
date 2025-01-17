@@ -438,7 +438,7 @@ Verwendung von Hashes in Python
 
     .. card::
 
-        .. rubric:: Verwendung einer Klasse mit einer schlechten/konstanten Hashfunktion
+        .. rubric:: Verwendung einer Klasse mit einer konstanten Hashfunktion
 
         .. code:: python
 
@@ -460,6 +460,11 @@ Verwendung von Hashes in Python
             1
             Alice Bob
 
+        .. supplemental::
+
+            .. warning::
+
+                Die Verwendung einer konstanten Hashfunktion ist in der Regel keine gute Idee, da sie die Effizienz von Hashmaps ganz erheblich beeinträchtigen kann.
 
 
 .. class:: exercises transition-fade
