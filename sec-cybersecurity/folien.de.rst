@@ -1,4 +1,5 @@
-.. meta:: 
+.. meta::
+     :version: genesis
     :author: Michael Eichberg
     :keywords: "IT Sicherheit", "Reverse Engineering"
     :description lang=de: Fortgeschrittene Angewandte IT Sicherheit
@@ -30,11 +31,9 @@
 Cybersecurity 
 =====================================================
 
-.. container::
-
-    :Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
-    :Kontakt: michael.eichberg@dhbw.de
-    :Version: 2.7
+:Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
+:Kontakt: michael.eichberg@dhbw.de
+:Version: 2.7
 
 .. supplemental::
 

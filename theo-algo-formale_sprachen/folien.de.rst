@@ -69,3 +69,6 @@ Formale Sprachen
 Einführung
 --------------------------------------------------------
 
+.. example:: Juhu
+
+    Dies ist ein TEst...

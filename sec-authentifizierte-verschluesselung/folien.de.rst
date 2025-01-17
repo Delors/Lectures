@@ -1,4 +1,5 @@
-.. meta:: 
+.. meta::
+    :version: genesis
     :author: Michael Eichberg
     :keywords: "Authentifizierte Verschlüsselung", AES-GCM
     :description lang=en: Authenticated Encryption
@@ -30,6 +31,7 @@ Authentifizierte Verschlüsselung
 ===============================================
 
 :Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
+:Kontakt: michael.eichberg@dhbw.de
 :Version: 0.1.2
 :Teilweise basierend auf: *Cryptography and Network Security - Principles and Practice, 8th Edition, William Stallings*
 

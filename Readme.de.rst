@@ -1,7 +1,15 @@
+.. meta::
+    :version: genesis
+    :author: Michael Eichberg
+    :keywords: Lehrveranstaltungen, Foliensätze
+    :description lang=de: HTML
+
+
+
 Lehrveranstaltungen und Foliensätze
 ===================================
 
-- Im Folgenden sind die Foliensätze verlinkt, die für verschiedene Lehrveranstaltungen genommen werden können.
+- Im Folgenden sind Foliensätze verlinkt, die für verschiedene Lehrveranstaltungen genommen werden können.
 - Die Foliensätze sind modularisiert, um sich an die jeweiligen Anforderungen der Vorlesungen anpassen zu lassen. 
 - Im Folgenden sind Vorschläge für einige sinnvolle Kombinationen zu finden.
 

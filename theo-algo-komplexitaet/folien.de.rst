@@ -1,4 +1,5 @@
-.. meta:: 
+.. meta::
+    :version: genesis
     :lang: de
     :author: Michael Eichberg
     :keywords: "Komplexität", "Algorithmen"
@@ -47,16 +48,16 @@
 Komplexität und Algorithmen
 ====================================================
 
-.. container:: line-above
+----
 
-    :Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
-    :Kontakt: michael.eichberg@dhbw.de, Raum 149B
-    :Version: 1.3
+:Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
+:Kontakt: michael.eichberg@dhbw.de, Raum 149B
+:Version: 1.3
 
-    .. container:: minor
+.. container:: minor
 
-        :Quelle: 
-            Die Folien sind teilweise inspiriert von oder basierend auf Lehrmaterial von Prof. Dr. Ritterbusch, Prof. Dr. Baumgart oder Prof. Dr. Albers.
+    :Quelle: 
+        Die Folien sind teilweise inspiriert von oder basierend auf Lehrmaterial von Prof. Dr. Ritterbusch, Prof. Dr. Baumgart oder Prof. Dr. Albers.
 
 .. supplemental::
 

@@ -1,4 +1,5 @@
-.. meta:: 
+.. meta::
+    :version: genesis
     :author: Michael Eichberg
     :keywords: "IT Sicherheit", Passwortsicherheit
     :description lang=de: Sicherheit von Passwörtern
@@ -36,11 +37,11 @@
 Passwortsicherheit 
 =====================================================
 
-.. container:: margin-top-1em padding-top-1em line-above
+----
 
-    :Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
-    :Kontakt: michael.eichberg@dhbw.de
-    :Version: 2.1.1
+:Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
+:Kontakt: michael.eichberg@dhbw.de
+:Version: 2.1.1
 
 
 .. supplemental::

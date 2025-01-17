@@ -1,4 +1,5 @@
-.. meta:: 
+.. meta::
+    :version: genesis
     :author: Michael Eichberg
     :keywords: Zufälligkeit, Stromchiffre
     :description lang=en: Random Bit Generation and Stream Ciphers

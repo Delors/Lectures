@@ -1,5 +1,6 @@
 
-.. meta:: 
+.. meta::
+    :version: genesis
     :author: Michael Eichberg
     :keywords: Zahlentheorie, Primzahlen, Teilbarkeit, Totientenfunktion, Euklidischer Algorithmus
     :description lang=en: Introduction to Number Theory
@@ -34,6 +35,7 @@ Einführung in die Zahlentheorie
 ================================
 
 :Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
+:Kontakt: michael.eichberg@dhbw.de
 :Version: 1.0.5
 :Quelle: Im Wesentlichen *Cryptography and Network Security - Principles and Practice, 8th Edition, William Stallings*
 

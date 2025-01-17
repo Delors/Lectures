@@ -1,4 +1,5 @@
 .. meta:: 
+    :version: genesis
     :author: Michael Eichberg
     :keywords: Blockchiffren, Operationsmodi, ECB, CBC, CFB, OFB, CTR, XTS-AES
     :description lang=en: Block Cipher Operations
@@ -30,6 +31,7 @@ Betriebsmodi bei Blockchiffren
 ===============================================
 
 :Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
+:Kontakt: michael.eichberg@dhbw.de
 :Version: 1.1
 :Basierend auf: *Cryptography and Network Security - Principles and Practice, 8th Edition, William Stallings*
 

@@ -1,4 +1,5 @@
-.. meta:: 
+.. meta::
+    :version: genesis
     :author: Michael Eichberg
     :keywords: AES
     :description lang=en: Advanced Encryption Standard (AES)
@@ -33,6 +34,7 @@ Advanced Encryption Standard (AES)
 ----
 
 :Dozent:        `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
+:Kontakt: michael.eichberg@dhbw.de
 :Version:       1.0.3
 
 .. class:: faded-to-white

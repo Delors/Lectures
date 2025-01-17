@@ -37,11 +37,11 @@
 Projekt-, Bachelor- und Seminararbeiten: Hinweise und Bewertungskriterien
 ===========================================================================
 
-.. container:: line-above tiny
+----
 
-    :Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
-    :Kontakt: michael.eichberg@dhbw.de, Raum 149B
-    :Version: 1.2
+:Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
+:Kontakt: michael.eichberg@dhbw.de, Raum 149B
+:Version: 1.2
 
 .. supplemental::
 
@@ -104,7 +104,7 @@ Inhaltliche Qualität (bei Seminararbeiten 50 %)
 Einhaltung formaler Kriterien (bei Seminararbeiten 20%)
 -------------------------------------------------------
 
-.. class:: incremental
+.. class:: incremental scrollable dhbw
 
 - Ist die Orthographie ausreichend? Eine *sehr geringe Anzahl* an Tippfehlern beziehungsweise Rechtschreibfehler führt zu keiner Abwertung. Sollten sich jedoch auf jeder Seite mehr als ein Fehler oder mehrere Fehler auf einer Seite befinden, dann führt dies zu einer Abwertung.
 - Sind alle Referenzen konsistent. 
@@ -134,7 +134,7 @@ Einhaltung formaler Kriterien (bei Seminararbeiten 20%)
 Qualität der Präsentation/der textuellen Ausarbeitung (bei Seminararbeiten 30%)
 -------------------------------------------------------------------------------
   
-.. class:: incremental scrollable
+.. class:: incremental scrollable dhbw
 
 - Präzise Formulierungen
 - Alles Gesagte ist dem Ziel der Arbeit dienlich, es gibt keine inhaltlichen Ausschweifungen zu Randaspekten, die dem Ziel nur bedingt oder gar nicht dienlich sind, beziehungsweise wo es nicht ersichtlich ist. Es ist unmittelbar ersichtlich warum ein bestimmter Aspekt behandelt wird.

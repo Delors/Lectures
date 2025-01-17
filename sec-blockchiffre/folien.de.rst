@@ -1,4 +1,5 @@
-.. meta:: 
+.. meta::
+    :version: genesis
     :author: Michael Eichberg
     :keywords: Blockverschlüsselung, DES, Feistel
     :description lang=en: Block Ciphers
@@ -24,10 +25,12 @@
    :format: html 
 
 
+
 Block Chiffre und der *Data Encryption Standard (DES)*
 ========================================================
 
 :Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
+:Kontakt: michael.eichberg@dhbw.de
 :Version: 1.1
 :Basierend auf: *Cryptography and Network Security - Principles and Practice, 8th Edition, William Stallings*
 

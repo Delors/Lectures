@@ -1,4 +1,5 @@
-.. meta:: 
+.. meta::
+    :version: genesis
     :author: Michael Eichberg
     :keywords: "TCP", "DDoS", SSH
     :description lang=de: Network Security - Eine Einführung in die Sicherheit von (verteilten) Systemen
