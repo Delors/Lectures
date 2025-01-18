@@ -455,3 +455,43 @@ Abzählbar und überabzählbar unendlich
         .. proof::
 
             Sei :math:`f(k) = n_k` die Abzählung der Menge N. Sei :math:`R = \{k ∈ \mathbb{N} | n_k ∈ M \}`; d. h. die Menge der Indizes der Elemente aus :math:`N`, die in :math:`M` sind. Dann ist die Einschränkung :math:`f_{|R} : R → M` von :math:`f` genau die Abzählung, die die Abzählbarkeit von :math:`M` beweist.
+
+    .. card::
+
+        .. example:: 
+
+            Eine abzählbar unendliche Menge sind — zum Beispiel: 
+            
+            .. class:: incremental
+
+            - die geraden Zahlen :math:`\{2n |n ∈\mathbb{N}\}` 
+            - die Quadratzahlen :math:`\{n^2 |n ∈\mathbb{N}\}`
+            - die Menge der Fakultäten :math:`\{n! |n ∈\mathbb{N}\}`
+            - die ganzen Zahlen :math:`\mathbb{Z}` mit der Funktion:
+              
+              .. math::
+    
+                    f(n) = \left\{ \begin{array}{ll}
+                        n/2 & \text{für}\; n\; \text{gerade} \\
+                        -(n+1)/2 & \text{für}\; n\; \text{ungerade}
+                    \end{array} \right.
+              
+              .. container:: peripheral s-font-size-90
+
+                    :math:`f(1) = 0,\; f(2) = 1,\; f(3) = -1,\; f(4) = 2,\; f(5) = -2,\; ...`
+
+    .. card::
+
+        .. example:: 
+
+
+            Die rationalen Zahlen :math:`\mathbb{Q}` sind abzählbar unendlich.
+
+            .. image:: images/cantor.svg
+                :alt: Diagonalisierungsverfahren von Cantor
+                :align: center
+
+            .. supplemental::
+
+                Rationale Zahlen können als Brüche dargestellt werden und mit Hilfe des Diagonalisierungsverfahren von Cantor in eine Bijektion zu den natürlichen Zahlen gebracht werden. 
+
