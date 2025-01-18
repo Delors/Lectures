@@ -410,3 +410,48 @@ Abzählbarkeit und Gödelnummern
 --------------------------------------------------------
 
 
+
+Abzählbar und überabzählbar unendlich
+--------------------------------------------------------
+
+.. deck::
+
+    .. card::
+
+        .. observation::
+
+            Selbst mit endlichen Alphabeten können formale Sprachen unendlich groß sein.
+
+        .. definition::
+
+            Eine Menge M ist *abzählbar*, wenn die einzelnen Elemente abzählbar sind, es also eine bijektive Funktion :math:`f : N →M` von den natürlichen Zahlen :math:`N = \mathbb{N}` oder einer Teilmenge der natürlichen Zahlen :math:`N ⊂ \mathbb{N}` auf :math:`M` gibt. 
+
+            Wenn es keine solche Funktion geben kann, so ist die Menge *überabzählbar unendlich*.
+
+    .. card::
+
+        .. theorem::
+
+            Jede endliche Menge ist abzählbar.
+
+        .. proof::
+
+            Eine endliche Menge :math:`M` hat eine endliche Anzahl :math:`n = |M|` von Elementen. 
+            
+            Wird nun beginnend von :math:`M_0 = M` und :math:`k= 1` in :math:`n` Schritten jeweils ein Element :math:`m_k` der Menge :math:`M_{k-1}` entnommen mit :math:`M_k = M_{k-1}\{m_k\}`, so ist induktiv :math:`|M_k| = |M_{k-1}| - 1 = n-k` und es ist :math:`M_n = ∅`. 
+
+            .. presenter-note::
+
+                :math:`M_{k-1}` ist die Menge, die noch *ein Element mehr enthält* als :math:`M_k`. D. h. die Kardinalität der Menge :math:`M_l` mit :math:`l > k` ist kleiner als die Kardinalität von :math:`M_k`.
+
+            Die Bijektion lautet dann :math:`f : N → M` mit :math:`f(k) = m_k` mit :math:`N = \{1,...,n\}`.
+
+    .. card::
+
+        .. theorem::
+
+            Jede Teilmenge :math:`M ⊆ N` einer abzählbaren Menge :math:`N= \{n_1,n_2,...\}` ist abzählbar.
+
+        .. proof::
+
+            Sei :math:`f(k) = n_k` die Abzählung der Menge N. Sei :math:`R = \{k ∈ \mathbb{N} | n_k ∈ M \}`; d. h. die Menge der Indizes der Elemente aus :math:`N`, die in :math:`M` sind. Dann ist die Einschränkung :math:`f_{|R} : R → M` von :math:`f` genau die Abzählung, die die Abzählbarkeit von :math:`M` beweist.
