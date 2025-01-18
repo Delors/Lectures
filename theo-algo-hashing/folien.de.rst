@@ -810,23 +810,60 @@ Beispiel Offene Adressierung (Hashing mit Modulo 7)
 
     Belegen Sie eine Hashtabelle mit :math:`n = 5` Feldern mit den Werten 37, 18, 32 und 24 auf Basis von :math:`h^{mod}_5(x)` mit linearer Sondierung, quadratischer Sondierung und doppeltem Hashing mit :math:`h^{'}_5(x) = (x\; mod\; 3) + 1`.
 
-    .. solution::
+    .. solution:: Lösung
         :pwd: O(1)?
 
-        .. rubric:: Lösung
+        Bei linearer Sondierung ergibt sich:
 
-        TODO
+        .. csv-table::
+            :header: 0, 1, 2, 3, 4
+            
+            24, , 37, 18, 32
+
+        Bei quadratischer Sondierung ergibt sich:
+
+        .. csv-table::
+            :header: 0, 1, 2, 3, 4
+            
+            , 32, 37, 18, 24
+
+
+        Dei doppeltem Hashing ergibt sich:
+
+        .. csv-table::
+            :header: 0, 1, 2, 3, 4
+            
+            32, , 37, 18, 24
+
 
 .. exercise:: Werte in größere Hashtabelle einfügen
 
     Belegen Sie eine Hashtabelle mit :math:`n = 11` Feldern mit den Werten 37, 49, 26 und 39 auf Basis von :math:`h^{mod}_{11}(x)` mit linearer Sondierung, quadratischer Sondierung und doppeltem Hashing mit :math:`h^{'}_{11}(x) = (x\; mod\; 9) + 1`.
 
-    .. solution::
+    .. solution:: Lösung
         :pwd: O(1)???
 
-        .. rubric:: Lösung
+        Bei linearer Sondierung ergibt sich:
 
-        TODO
+        .. csv-table::
+            :header: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10
+            
+            , , , , 37, 49, 26, 39, , , 
+
+        Bei quadratischer Sondierung ergibt sich:
+
+        .. csv-table::
+            :header: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10
+            
+            ,,,,37,49,39,,26,,
+
+
+        Dei doppeltem Hashing ergibt sich:
+
+        .. csv-table::
+            :header: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10
+            
+            ,,26,,37,49,39,,,,
 
 
 
