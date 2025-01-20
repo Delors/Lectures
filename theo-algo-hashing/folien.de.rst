@@ -744,11 +744,12 @@ Offene Adressierung
 
             Das Array wird mit Hilfe einer zweiten Hashfunktion: 
             
-                :math:`h^{'}_n(k) = (k\; mod\; (n-2)) +1` 
+            :math:`h^{'}_n(k) = (k\; mod\; (n-2)) +1` 
             
             durchsucht.
 
             :math:`g^{doppel}_n(k,i) = (h_n(k) + i \cdot h^{'}_n(k))\; mod\; n`
+
 
 
 Beispiel Offene Adressierung (Hashing mit Modulo 7)
@@ -834,7 +835,6 @@ Beispiel Offene Adressierung (Hashing mit Modulo 7)
             :header: 0, 1, 2, 3, 4
             
             32, , 37, 18, 24
-
 
 .. exercise:: Werte in größere Hashtabelle einfügen
 
