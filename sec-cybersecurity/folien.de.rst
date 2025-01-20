@@ -1,5 +1,5 @@
 .. meta::
-     :version: genesis
+    :version: genesis
     :author: Michael Eichberg
     :keywords: "IT Sicherheit", "Reverse Engineering"
     :description lang=de: Fortgeschrittene Angewandte IT Sicherheit
@@ -515,7 +515,7 @@ Social-Engineering Angriffe
 Weitergehende Informationen
 ---------------------------------------------
 
-.. presenter-notes::
+.. presenter-note::
 
     Das Ziel ist es die Studierenden zu überzeugen den folgenden Text zu markieren und in die Konsole zu kopieren. Das Ziel ist es, dass die Studierenden sehen wie schnell man einen Angriff starten kann.
 
