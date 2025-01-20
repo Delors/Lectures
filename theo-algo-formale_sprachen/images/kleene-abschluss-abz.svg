@@ -38,123 +38,123 @@
       </g>
       <g id="Graphic_2">
         <text transform="translate(220.14123 241.2331)" fill="maroon">
-          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="maroon" x="0" y="15" xml:space="preserve">Σ</tspan>
-          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" y="15" xml:space="preserve"> = {e, i, rn, st}</tspan>
+          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="maroon" x="0" y="15" >Σ</tspan>
+          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" y="15" > = {e, i, rn, st}</tspan>
         </text>
       </g>
       <g id="Graphic_8">
         <text transform="translate(-153.9573 290.87513)" fill="#929292">
-          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="#929292" x="0" y="15" xml:space="preserve">m</tspan>
-          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="#929292" y="22" xml:space="preserve">1</tspan>
-          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="#929292" y="15" xml:space="preserve">=</tspan>
-          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="maroon" y="15" xml:space="preserve">e</tspan>
+          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="#929292" x="0" y="15" >m</tspan>
+          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="#929292" y="22" >1</tspan>
+          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="#929292" y="15" >=</tspan>
+          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="maroon" y="15" >e</tspan>
         </text>
       </g>
       <g id="Graphic_14">
         <text transform="translate(-253.14054 231.7331)" fill="#929292">
-          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="#929292" x="0" y="15" xml:space="preserve">Wort=</tspan>
-          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="maroon" y="15" xml:space="preserve">e rn st </tspan>
-          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="#0432ff" x="0" y="34" xml:space="preserve">Länge: l = 3</tspan>
+          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="#929292" x="0" y="15" >Wort=</tspan>
+          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="maroon" y="15" >e rn st </tspan>
+          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="#0432ff" x="0" y="34" >Länge: l = 3</tspan>
         </text>
       </g>
       <g id="Graphic_16">
         <text transform="translate(-153.9573 235.31955)" fill="#008f00">
-          <tspan font-family="Noto Sans Display" font-size="12" font-weight="400" fill="#008f00" x="0" y="13" xml:space="preserve">höchstwertigste</tspan>
-          <tspan font-family="Noto Sans Display" font-size="12" font-weight="400" fill="#008f00" x="0" y="30" xml:space="preserve">Stelle</tspan>
-          <tspan font-family="Noto Sans Display" font-size="12" font-weight="400" fill="#008f00" x="0" y="47" xml:space="preserve">2</tspan>
+          <tspan font-family="Noto Sans Display" font-size="12" font-weight="400" fill="#008f00" x="0" y="13" >höchstwertigste</tspan>
+          <tspan font-family="Noto Sans Display" font-size="12" font-weight="400" fill="#008f00" x="0" y="30" >Stelle</tspan>
+          <tspan font-family="Noto Sans Display" font-size="12" font-weight="400" fill="#008f00" x="0" y="47" >2</tspan>
         </text>
       </g>
       <g id="Graphic_17">
         <text transform="translate(69.04117 235.31955)" fill="#008f00">
-          <tspan font-family="Noto Sans Display" font-size="12" font-weight="400" fill="#008f00" x="0" y="13" xml:space="preserve">niederwertigste</tspan>
-          <tspan font-family="Noto Sans Display" font-size="12" font-weight="400" fill="#008f00" x="0" y="30" xml:space="preserve">Stelle</tspan>
-          <tspan font-family="Noto Sans Display" font-size="12" font-weight="400" fill="#008f00" x="0" y="47" xml:space="preserve">0</tspan>
+          <tspan font-family="Noto Sans Display" font-size="12" font-weight="400" fill="#008f00" x="0" y="13" >niederwertigste</tspan>
+          <tspan font-family="Noto Sans Display" font-size="12" font-weight="400" fill="#008f00" x="0" y="30" >Stelle</tspan>
+          <tspan font-family="Noto Sans Display" font-size="12" font-weight="400" fill="#008f00" x="0" y="47" >0</tspan>
         </text>
       </g>
       <g id="Graphic_15">
         <text transform="translate(-253.14054 308.87513)" fill="#0432ff">
-          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="#0432ff" x="0" y="15" xml:space="preserve">Basis: </tspan>
-          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="#0432ff" x="0" y="34" xml:space="preserve">|</tspan>
-          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="maroon" y="34" xml:space="preserve">Σ</tspan>
-          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="#0432ff" y="34" xml:space="preserve">| + 1 = 5</tspan>
+          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="#0432ff" x="0" y="15" >Basis: </tspan>
+          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="#0432ff" x="0" y="34" >|</tspan>
+          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="maroon" y="34" >Σ</tspan>
+          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="#0432ff" y="34" >| + 1 = 5</tspan>
         </text>
       </g>
       <g id="Graphic_10">
         <text transform="translate(69.04117 290.87513)" fill="#929292">
-          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="#929292" x="0" y="15" xml:space="preserve">m</tspan>
-          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="#929292" y="22" xml:space="preserve">4</tspan>
-          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="#929292" y="15" xml:space="preserve">=</tspan>
-          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="maroon" y="15" xml:space="preserve">st</tspan>
+          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="#929292" x="0" y="15" >m</tspan>
+          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="#929292" y="22" >4</tspan>
+          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="#929292" y="15" >=</tspan>
+          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="maroon" y="15" >st</tspan>
         </text>
       </g>
       <g id="Graphic_19">
         <text transform="translate(-140.8716 326.87513)" fill="#212121">
-          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="#212121" x="0" y="16" xml:space="preserve">1 · 5</tspan>
-          <tspan font-family="Noto Sans Display" font-size="9" font-weight="400" fill="#212121" y="10" xml:space="preserve">2</tspan>
+          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="#212121" x="0" y="16" >1 · 5</tspan>
+          <tspan font-family="Noto Sans Display" font-size="9" font-weight="400" fill="#212121" y="10" >2</tspan>
         </text>
       </g>
       <g id="Graphic_30">
         <text transform="translate(-74.6716 326.87513)" fill="#212121">
-          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="#212121" x="0" y="15" xml:space="preserve">+</tspan>
+          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="#212121" x="0" y="15" >+</tspan>
         </text>
       </g>
       <g id="Graphic_31">
         <text transform="translate(40.473527 327.37513)" fill="#212121">
-          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="#212121" x="0" y="15" xml:space="preserve">+</tspan>
+          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="#212121" x="0" y="15" >+</tspan>
         </text>
       </g>
       <g id="Graphic_21">
         <text transform="translate(-32.568552 326.87513)" fill="#212121">
-          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="#212121" x="0" y="16" xml:space="preserve">3  ·  5</tspan>
-          <tspan font-family="Noto Sans Display" font-size="9" font-weight="400" fill="#212121" y="10" xml:space="preserve">1</tspan>
+          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="#212121" x="0" y="16" >3  ·  5</tspan>
+          <tspan font-family="Noto Sans Display" font-size="9" font-weight="400" fill="#212121" y="10" >1</tspan>
         </text>
       </g>
       <g id="Graphic_23">
         <text transform="translate(82.04761 326.87513)" fill="#212121">
-          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="#212121" x="0" y="16" xml:space="preserve">4  ·  5</tspan>
-          <tspan font-family="Noto Sans Display" font-size="9" font-weight="400" fill="#212121" y="10" xml:space="preserve">0</tspan>
+          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="#212121" x="0" y="16" >4  ·  5</tspan>
+          <tspan font-family="Noto Sans Display" font-size="9" font-weight="400" fill="#212121" y="10" >0</tspan>
         </text>
       </g>
       <g id="Graphic_3">
         <text transform="translate(220.14123 260.27582)" fill="maroon">
-          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="maroon" x="0" y="15" xml:space="preserve">m</tspan>
-          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="maroon" y="22" xml:space="preserve">1</tspan>
-          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="maroon" y="15" xml:space="preserve"> = e</tspan>
+          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="maroon" x="0" y="15" >m</tspan>
+          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="maroon" y="22" >1</tspan>
+          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="maroon" y="15" > = e</tspan>
         </text>
       </g>
       <g id="Graphic_4">
         <text transform="translate(220.14123 280.14226)" fill="maroon">
-          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="maroon" x="0" y="15" xml:space="preserve">m</tspan>
-          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="maroon" y="22" xml:space="preserve">2</tspan>
-          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="maroon" y="15" xml:space="preserve"> = i</tspan>
+          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="maroon" x="0" y="15" >m</tspan>
+          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="maroon" y="22" >2</tspan>
+          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="maroon" y="15" > = i</tspan>
         </text>
       </g>
       <g id="Graphic_6">
         <text transform="translate(220.14123 300.0087)" fill="maroon">
-          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="maroon" x="0" y="15" xml:space="preserve">m</tspan>
-          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="maroon" y="22" xml:space="preserve">3</tspan>
-          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="maroon" y="15" xml:space="preserve"> = rn</tspan>
+          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="maroon" x="0" y="15" >m</tspan>
+          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="maroon" y="22" >3</tspan>
+          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="maroon" y="15" > = rn</tspan>
         </text>
       </g>
       <g id="Graphic_7">
         <text transform="translate(220.14123 319.87513)" fill="maroon">
-          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="maroon" x="0" y="15" xml:space="preserve">m</tspan>
-          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="maroon" y="22" xml:space="preserve">4</tspan>
-          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="maroon" y="15" xml:space="preserve"> = st</tspan>
+          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="maroon" x="0" y="15" >m</tspan>
+          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="maroon" y="22" >4</tspan>
+          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="maroon" y="15" > = st</tspan>
         </text>
       </g>
       <g id="Graphic_11">
         <text transform="translate(-45.72707 290.87513)" fill="#929292">
-          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="#929292" x="0" y="15" xml:space="preserve">m</tspan>
-          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="#929292" y="22" xml:space="preserve">3</tspan>
-          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="#929292" y="15" xml:space="preserve">=</tspan>
-          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="maroon" y="15" xml:space="preserve">rn</tspan>
+          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="#929292" x="0" y="15" >m</tspan>
+          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="#929292" y="22" >3</tspan>
+          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="#929292" y="15" >=</tspan>
+          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="maroon" y="15" >rn</tspan>
         </text>
       </g>
       <g id="Graphic_12">
         <rect x="212.10323" y="215.9543" width="66.896" height="29" fill="white"/>
         <text transform="translate(217.10323 220.9543)" fill="black">
-          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="31974423e-20" y="15" xml:space="preserve">Legende</tspan>
+          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="31974423e-20" y="15" >Legende</tspan>
         </text>
       </g>
       <g id="Line_18">
@@ -162,8 +162,8 @@
       </g>
       <g id="Graphic_20">
         <text transform="translate(-45.72707 255.186)" fill="#008f00">
-          <tspan font-family="Noto Sans Display" font-size="12" font-weight="400" fill="#008f00" x="0" y="13" xml:space="preserve">Stelle</tspan>
-          <tspan font-family="Noto Sans Display" font-size="12" font-weight="400" fill="#008f00" x="0" y="30" xml:space="preserve">1</tspan>
+          <tspan font-family="Noto Sans Display" font-size="12" font-weight="400" fill="#008f00" x="0" y="13" >Stelle</tspan>
+          <tspan font-family="Noto Sans Display" font-size="12" font-weight="400" fill="#008f00" x="0" y="30" >1</tspan>
         </text>
       </g>
       <g id="Line_24">
@@ -176,16 +176,16 @@
         <path d="M -37.659603 279.48296 L -.26017296 279.48296 C 1.9354633 279.48296 3.7206816 281.2528 3.7396773 283.44835 L 4.0556396 319.96762" marker-end="url(#StickArrow_Marker_2)" stroke="#008f00" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
       </g>
       <g id="Line_32">
-        <path d="M -187.29282 345.8537 L -187.29282 351.792 C -187.29282 354.0011 -185.50196 355.792 -183.29282 355.792 C -183.29125 355.792 -183.28968 355.792 -183.2881 355.792 L 112.28773 355.44413" stroke="#0432ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <path d="M -183 345.8537 L -183 351.792 C -183 354.0011 -180 355.792 -180 355.792 C -180 355.792 -178 355.792 -178 355.792 L 105 355.44413" stroke="#0432ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
       </g>
       <g id="Line_33">
-        <line x1="-117.24138" y1="355.7967" x2="-117.24138" y2="351.13044" marker-end="url(#StickArrow_Marker_3)" stroke="#0432ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <line x1="-118" y1="355.7967" x2="-118" y2="351.13044" marker-end="url(#StickArrow_Marker_3)" stroke="#0432ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
       </g>
       <g id="Line_34">
-        <line x1="-2.4727495" y1="355.39183" x2="-2.4727495" y2="350.72558" marker-end="url(#StickArrow_Marker_3)" stroke="#0432ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <line x1="-10" y1="355.39183" x2="-10" y2="350.72558" marker-end="url(#StickArrow_Marker_3)" stroke="#0432ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
       </g>
       <g id="Line_35">
-        <line x1="112.28773" y1="354.628" x2="112.28773" y2="350.928" marker-end="url(#StickArrow_Marker_3)" stroke="#0432ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <line x1="105" y1="354.628" x2="105" y2="350.928" marker-end="url(#StickArrow_Marker_3)" stroke="#0432ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
       </g>
       <g id="Line_29">
         <path d="M 79.349755 278.6307 L 114.83943 278.6307 C 117.03506 278.6307 118.82028 280.40054 118.83928 282.5961 L 119.15524 319.11537" marker-end="url(#StickArrow_Marker_2)" stroke="#008f00" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
