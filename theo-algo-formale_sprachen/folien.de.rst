@@ -411,7 +411,7 @@ Abzählbarkeit und Gödelnummern
 
 
 
-Abzählbar und überabzählbar unendlich
+Abzählbar (unendlich)
 --------------------------------------------------------
 
 .. deck::
@@ -490,8 +490,613 @@ Abzählbar und überabzählbar unendlich
             .. image:: images/cantor.svg
                 :alt: Diagonalisierungsverfahren von Cantor
                 :align: center
-
+              
             .. supplemental::
 
                 Rationale Zahlen können als Brüche dargestellt werden und mit Hilfe des Diagonalisierungsverfahren von Cantor in eine Bijektion zu den natürlichen Zahlen gebracht werden. 
 
+                Die 0 und alle negativen Brüche können wie zuvor eingeschoben werden. Auch alle rationalen Vektoren :math:`\mathbb{Q}^n` in beliebiger Dimension :math:`n ∈ \mathbb{N}` sind so abzählbar.
+
+    .. card::
+
+        .. theorem::
+
+            Für jede endliche Menge oder Alphabet :math:`Σ` ist deren Kleene-Abschluss :math:`Σ^*` abzählbar.
+
+        .. proof::
+
+            Ist das Alphabet :math:`Σ` leer, so ist auch :math:`Σ^*` leer, und damit für :math:`N = ∅` trivial abzählbar.
+
+            Ist :math:`Σ` nicht leer, dann besitzt :math:`Σ` mit Größe :math:`n = |Σ|` eine Aufzählung :math:`m_k` mit :math:`k= 1,...,n`.
+
+            .. deck:: 
+
+                .. card::
+
+                    Jedes Wort :math:`w = m_{k_1} m_{k_2}...m_{k_l}` kann dann im Stellenwertsystem zur Basis :math:`n + 1` dargestellt werden:
+
+                    .. math::
+
+                        1 + k_1·(n + 1)^{l-1} + k_2(n + 1)^{l-2} +...+ k_l(n + 1)^0
+
+                    und somit der Zahl :math:`1 + (k_1k_2...k_l)_{(n+1)}`\ [#]_ zugeordnet werden.
+
+                    .. [#] Die Darstellung :math:`(k_1k_2...k_l)_{(n+1)}` ist die Stellenwertdarstellung zur Basis :math:`n + 1` des Wortes :math:`w`.
+
+                .. card::
+
+                    .. example::
+
+                        .. image:: images/kleene-abschluss-abz.svg
+                            :alt: Kleene-Abschluss abzählbar
+                            :align: center
+
+                .. card::
+
+                    Die Abbildung :math:`f : N →Σ^*` mit :math:`N ⊆\mathbb{N}` ergibt sich für :math:`f(x)` aus der Stellenwertdarstellung von :math:`x- 1 >0` zur Basis :math:`n + 1` beginnend mit der höchstwertigen Ziffer :math:`k_1` bis zur letzten Stelle :math:`k_l`. 
+                    
+                    Das Bild :math:`f(x)` ist dann das Wort :math:`m_{k_1} m_{k_2}...m_{k_l}`. 
+                    
+                    Das leere Wort :math:`ε` wird von :math:`1` abgebildet und entsprechend ist :math:`f(1) = ε`.
+
+    .. card::
+
+        .. example::
+
+            Sei :math:`Σ = \{e,i,rn,st\}` mit Aufzählung :math:`m_1 = e`, :math:`m_2 = i`, :math:`m_3 = rn`, und :math:`m_4 = st`, dann haben die folgenden Wörter diese Abzählung nach Stellenwert:
+
+            .. deck::
+
+                .. card:: 
+
+                    .. list-table::
+                        :class: s-font-size-70 align-content-in-data-cells-top
+                        :stub-columns: 1
+                        :header-rows: 1
+                        :width: 100%
+                        :widths: 10 24 24 24 24 24 
+
+                        * - :math:`x`
+                          - :math:`1`
+                          - :math:`2`
+                          - :math:`3`
+                          - :math:`4`
+                          - :math:`5`
+                        * -
+                          - .. math::
+
+                                1
+                          - .. math::
+
+                                \begin{array}{lcl}
+                                    1 & + & 1\\
+                                    1_5 & + & 1_5
+                                \end{array}
+
+                            [#]_
+                          - .. math::
+
+                                \begin{array}{lcl}
+                                    1 & + & 2\\
+                                    1_5 & + & 2_5
+                                \end{array}
+                          - .. math::
+
+                                \begin{array}{lcl}
+                                    1 & + & 3\\
+                                    1_5 & + & 3_5
+                                \end{array}
+                          - .. math::
+
+                                \begin{array}{lcl}
+                                    1 & + & 4\\
+                                    1_5 & + & 4_5
+                                \end{array}
+                        * - Wort
+                          - :math:`\epsilon`
+                          - e
+                          - i
+                          - rn
+                          - st
+                        * - :math:`f(x)`
+                          - :math:`f(1) = \epsilon`
+                          - :math:`f(2) = e`
+                          - :math:`f(3) = i`
+                          - :math:`f(4) = rn`
+                          - :math:`f(5) = st` 
+                          
+                            *(Anm.: k ist 4 für st)*
+
+                    .. [#] Wir haben immer :math:`1 + ...`, da wir noch das leere Wort :math:`ε` haben.
+
+                .. card::
+
+                    .. list-table::
+                        :class: s-font-size-70
+                        :stub-columns: 1
+                        :header-rows: 1
+                        :width: 100%
+                        :widths: 10 10 30 30 10 30 10
+
+                        * - :math:`x`
+                          - ...
+                          - :math:`7 = 1 + 6`
+                           
+                            :math:`12_5 = 1_5 + 11_5`
+                          - :math:`8 = 1 + 7`
+                          
+                            :math:`13_5 = 1_5 + 12_5`
+                          - ...
+                          - :math:`45 = 1 + 44`
+                            
+                            :math:`140_5 = 1_5 + 134_5`
+                          - ...
+                        * -
+                          - ...
+                          - .. math::
+
+                                \begin{array}{lcl}
+                                    1 & + & 1 \cdot 5 + 1\\
+                                    1 & + & 11_5
+                                \end{array}
+                          - .. math::
+
+
+                                \begin{array}{lcl}
+                                    1 & + & 1\cdot 5 + 2\\
+                                    1 & + & 12_5
+                                \end{array}
+                          - ...
+                          - .. math::
+
+                                \begin{array}{lcl}
+                                    1 & + & 1 \cdot 25 + 3 \cdot 5 + 4\\
+                                    1 & + & 134_5
+                                \end{array}
+                          - ...
+                        * - Wort
+                          - ...
+                          - :math:`ee`
+                          - :math:`ei`
+                          - ...
+                          - :math:`e\, rn\, st`
+                          - ...
+
+            .. incremental:: 
+
+                Unbesetzt bleibt, wo eine 0 in der Stellenwertdarstellung vorliegt. Zum Beispiel ist :math:`f(6) = 1 + 1 \cdot 5^1 + 0 \cdot 5^0 = 1_5 + 10_5`.
+
+    .. card::
+
+        .. theorem::
+
+            Jede formale Sprache is abzählbar.
+
+        .. proof::
+
+            Da jede formale Sprache :math:`L` über einem endlichen Alphabet :math:`Σ` definiert ist, ist das eine direkte Folge aus vorherigem Satz, dass :math:`Σ^*` abzählbar ist, und wie zuvor gezeigt damit auch die Teilmenge :math:`L ⊆ Σ^*` abzählbar ist.        
+
+    .. card::
+
+        .. rubric:: Abzählen mit Hilfe von Gödelnummern
+
+        .. supplemental::
+
+            Gödelnummern unterstützen abzählbarer un-/endliche Mengen. Letzeres (abzähbar unendlich) ist mit einem einfachen Stellenwertsystem zur Basis der Anzahl der Elemente und des somit (zwangsweise) endlichen Alphabets nicht möglich.
+
+        .. deck:: 
+
+            .. card::
+        
+                .. definition:: 
+
+                    Sei (:math:`p_n`) die Folge der Primzahlen:
+
+                    :math:`p_1 = 2, p_2 = 3, p_3 = 5, p_4 = 7, p_5 = 11, p_6 = 13, ...`
+
+                    Für eine abzählbare Menge :math:`M= {m_1,m_2,...}` ist die Gödelnummer :math:`c_M : M^* → \mathbb{N}` des Tupels :math:`w = (m_{k_1} ,m_{k_2} ,...,m_{k_l} )` gegeben durch 
+                    
+                    .. math:: 
+
+                        c_M (w) = p^{k_1}_1 · p^{k_2}_2 · ... · p^{k_l}_l = \prod_{i=1}^{l} p^{k_i}_i
+
+                    .. presenter-note::
+
+                        *Fundamentalsatz der Arithmetik*: Jede natürliche Zahl :math:`n > 1` kann eindeutig als ein Produkt von Primzahlen geschrieben werden, wobei die Reihenfolge der Primfaktoren ignoriert wird. :math:`\Leftrightarrow` Die Gödelnummer :math:`c_M(w)` ist eindeutig für jedes Wort :math:`w ∈ M^*`.
+            
+            .. card::
+                
+                .. example::
+
+                    Sei :math:`Σ = \{e,i,rn,st\}` mit Aufzählung :math:`m_1 = e`, :math:`m_2 = i`, :math:`m_3 = rn` und :math:`m_4 = st`, dann haben die folgenden Wörter diese Gödelnummern:
+
+                    .. list-table::
+                        :class: s-font-size-70 align-content-in-data-cells-top
+                        :stub-columns: 1
+                        :header-rows: 1
+                        :width: 100%
+                        :widths: 10 24 24 24 24 24 24 
+
+                        * - Wort
+                          - :math:`\epsilon`
+                          - :math:`e`
+                          - :math:`i`
+                          - :math:`rn`
+                          - :math:`st`
+                          - :math:`e\, rn\, st`
+                        * - :math:`c_M(w)`
+                          - :math:`2^0 = 1`
+                          - :math:`2^1`
+
+                            :math:`p_1^{k_1=1}`
+                          - :math:`2^2`
+                          
+                            :math:`p_1^{k_2=2}`
+                          - :math:`2^3`
+                          - :math:`2^4`
+                          - :math:`2^1 \cdot 3^3 \cdot 5^4 = 33750`
+
+                            .. presenter-note::
+
+                                :math:`2`, :math:`3` und :math:`5` sind die ersten drei Primzahlen. Die Potenzen ergeben sich aus der Aufzählung der Wörter.
+
+                .. observation::
+
+                        Unbesetzt bleibt, wo bis zum höchsten Primzahlfaktor davor eine Primzahlpotenz 0 ist. 
+                        
+                .. supplemental::
+
+                        \Z. B. ist die Primzahlzerlegung von :math:`10 = 2^1 \cdot 3^0 \cdot 5^1`. Somite gäbe es an der zweiten Stelle *kein Zeichen* was unsinnig ist.
+
+    .. card::
+
+        .. theorem::
+
+            Die Menge von endlichen Folgen :math:`P= \{p = (w_1,w_2,...,w_n) |w_k ∈ L, n ∈ \mathbb{N}\}` aus Wörtern einer formalen Sprache :math:`L ⊆ Σ^*` (also Programmen) über einem Alphabet :math:`Σ` ist abzählbar.                
+                        
+        .. proof::
+            :class: incremental
+
+            Jede formale Sprache :math:`L ⊆Σ^*` ist abzählbar. Damit kann nach Definition für jede Folge :math:`p ∈ P` injektiv eine Gödelnummer :math:`c_L(p)` über :math:`L` bestimmt werden. 
+
+            .. presenter-note::
+
+                Die Abbildung ist injektiv, da die Gödelnummer für ein Programm eindeutig ist, aber nicht jede Gödelnummer eine Gödelnummer eines Programms sein muss.
+            
+            Auf der Menge :math:`N= \{x = c_L(p) |p ∈ P\}` kann die Umkehrung :math:`f : N →P` von :math:`c_L` auf :math:`P` eingeschränkten bijektiven Funktion :math:`c_{L|P} : P →N` bestimmt werden, und damit ist :math:`P` abzählbar.
+
+
+
+Überabzählbar unendlich
+--------------------------------------------------------
+
+.. theorem::
+
+    Die Menge der reellen Zahlen :math:`r ∈(0,1) ⊂ \mathbb{R}` ist überabzählbar unendlich.
+
+.. proof::
+
+    .. rubric:: Cantor's Diagonalargument
+
+    Angenommen die reellen Zahlen sind als Binärbrüche wie folgt abzählbar:
+
+    .. math:: 
+        :class: s-font-size-80
+
+        \begin{array}{rcl} 
+            r_1 & = & 0,x_{11}x_{13}x_{13}x_{14}x_{15}... \\
+            r_2 & = & 0,x_{21}x_{23}x_{23}x_{24}x_{25}... \\
+            r_3 & = & 0,x_{31}x_{33}x_{33}x_{34}x_{35}... \\
+            r_4 & = & 0,x_{41}x_{43}x_{43}x_{44}x_{45}... \\
+            \vdots & & \vdots
+        \end{array}
+
+    Sei jetzt :math:`r = 0,\overline{x_{11}}\,\overline{x_{22}}\,\overline{x_{33}}\,\overline{x_{44}}\,\overline{x_{55}}... \in (0,1)`, dann ist :math:`r` nicht in der Abzählung und es liegt ein Widerspruch zur Annahme vor. :math:`\mathbb{R}` ist also überabzählbar unendlich.
+    
+    .. supplemental::
+
+        :math:`\bar{x}` ist das einfache Komplement von x. Das bedeutet, dass 0 durch 1 und 1 durch 0 ersetzt wird.
+
+        Beachte, dass :math:`r` über die gesamte (unendliche) Diagonale definiert ist und dadurch zu jeder bestehenden Zahl unterschiedlich sein muss; d. h. :math:`r` ist nicht gleich zu :math:`r_1` in der ersten Stelle, nicht gleich zu :math:`r_2` in der zweiten Stelle, nicht gleich zu :math:`r_3` in der dritten Stelle, ... und nicht gleich :math:`r_n` in der n-ten Stelle.
+
+        Die Kardinalität (bereits) der Menge der reellen Zahlen im Bereich :math:`(0,1)` ist also größer als die der natürlichen Zahlen.
+
+
+Schlussfolgerungen aus der Überabzählbarkeit
+--------------------------------------------------------
+
+.. deck:: numbered 
+
+    .. card:: 
+                
+        Angenommen:
+
+        - jedes in einer formalen Sprache geschriebenes Programm löst ein Problem
+        - wir interpretieren dies als Berechnung einer Lösung
+
+        .. incremental::
+
+            So sind dies verschwindend wenige lösbare Probleme verglichen schon mit der Reichhaltigkeit der reellen Zahlen im Intervall :math:`(0,1)`.
+
+        .. conclusion::
+            :class: incremental
+
+            Soweit davon auszugehen ist, dass die Teilmenge der in der Realität tatsächlich relevanten reellen Zahlen tatsächlich auch überabzählbar ist, wird es nie möglich sein, für alle Fragestellungen über solche Zahlen Lösungen in der Form von Programmen über einer gegebenen formalen Sprache zu formulieren.
+
+
+    .. card:: 
+
+        .. conclusion::
+        
+            Gleichzeitig ist aber auch die Anzahl der formalen Sprachen sehr groß.
+
+        .. proof:: 
+
+            Für jede reelle Zahl :math:`x ∈R` mit Nachkommastellen :math:`r1r2...` gibt es eine formale Sprache :math:`L_x` über :math:`\Sigma_{\text{Zahl}}`: 
+
+            :math:`L_x = \{r_1r_2...r_n ∈ Σ^*_{\text{Zahl}} |x \text{ hat die ersten } n \text{ Nachkommastellen } r_1...r_n\}`
+
+            Beispielsweise ist :math:`L_π = {1,14,141,1415,14159,141592,1415926,...}`. Damit ist die Anzahl der formalen Sprachen mindestens so groß, wie die Anzahl reeller Zahlen im Intervall :math:`(0,1)`, also aller möglichen Nachkommastellen in :math:`\mathbb{R}`, zuzüglich der 0, und damit nach vorherigem Satz überabzählbar unendlich.
+
+
+
+.. class:: exercises
+
+Übung
+--------------------------------------------------------
+
+.. exercise:: Stellenwerte I
+
+    Gegeben sei das Alphabet :math:`Σ = {a,gen,i,re}` mit Aufzählung in dieser Reihenfolge. Bestimmen Sie die Zahlen :math:`n` nach Stellenwert mit Bild :math:`f (n)` der Wörter :math:`regen`, :math:`aare` und die Worte mit Stellenwert :math:`15`, :math:`118`.
+
+
+    .. solution::
+        :pwd: Im Regen 
+
+        .. rubric:: Lösung
+
+        :math:`regen= f (1+ 4·5^1 + 2) = f (23)`, :math:`f (15) = f (1+ 2·5^1 + 4) = genre`, :math:`aare = f (1+ 1·5^2 + 1·5^1 + 4) = f (35)`, :math:`f (118) = f (1+ 4·5^2 + 3·5^1 + 2) = reigen`
+
+
+
+.. exercise:: Stellenwerte II
+
+    Gegeben sei das Alphabet :math:`Σ = {e,h,r,ste}` mit Aufzählung in dieser Reihenfolge. Bestimmen Sie die Zahlen n nach Stellenwert mit Bild :math:`f (n)` der Wörter :math:`steh`, :math:`rehe` und die Worte mit Stellenwert :math:`45`, :math:`1417`.
+
+
+    .. solution:: 
+        :pwd: steh steher
+
+        .. rubric:: Lösung
+
+        :math:`steh= f (1+ 4·5^1 + 2) = f (23)`, :math:`rehe= f (1+ 3·5^3 + 1·5^2 + 2·5^1 + 1) = f (412)`, :math:`f (45) = f (1+1·5^2+3·5^1+4) = erste`, :math:`f (1417) = f (1+2·5^4+1·5^3+1·5^2+3·5^1+1) = heere`
+
+
+.. class:: exercises
+
+Übung
+--------------------------------------------------------
+
+.. exercise:: Gödelnummern I
+
+    Gegeben sei das Alphabet :math:`Σ = {e,l,ste,te}` mit Aufzählung in dieser Reihenfolge. Bestimmen Sie die Gödelnummer :math:`c(w)` der Wörter :math:`este`, :math:`elle` und die Worte mit Gödelnummer :math:`720`, :math:`12600`.
+
+    .. solution:: 
+        :pwd: tele&stelle
+
+        .. rubric:: Lösung
+
+        :math:`c(este) = 2^1 \cdot 3^3 = 54`
+
+        :math:`c(elle) = 2^1 \cdot 3^2 \cdot 5^2 \cdot 7^1 = 3150`
+
+        :math:`720 = 2^4 \cdot 3^2 \cdot 5^1 = 720 = c(tele)`
+        
+        :math:`12600 = 2^3 \cdot 3^2 \cdot 5^2 \cdot 7^1 = c(stelle)`
+
+.. exercise:: Gödelnummern II
+
+    Gegeben sei das Alphabet :math:`Σ = {h,he,re,ste}` mit Aufzählung in dieser Reihenfolge. Bestimmen Sie die Gödelnummer :math:`c(w )` der Wörter :math:`steh`, :math:`reste` und die Worte mit Gödelnummer :math:`144`, :math:`1500`.
+
+    .. solution::
+        :pwd: hehre_stehe
+
+        .. rubric:: Lösung
+
+        :math:`c(steh) = 2^4 · 3^1 = 48`
+        
+        :math:`c(reste) = 2^3 · 3^4 = 648`
+
+        :math:`144 = 2^4 · 3^2 = c(stehe)`
+
+        :math:`1500 = 2^2 · 3^1 · 5^3  = c(hehre)`
+
+
+.. class:: exercises
+
+Übung
+--------------------------------------------------------
+
+.. exercise:: Gödelnummern und ChatGPT
+
+    Eine Befragung von ChatGPT zum Thema Gödelnummern ergab, dass ChatGPT vorgeschlagen hat allen Zeichen :math:`a \in \Sigma` eine Primzahl zuzuordnen und dann für das Vorkommen eines Zeichens :math:`a` an Stelle :math:`i` den aktuellen Wert mit der Primzahl des Zeichens hoch :math:`i` zu multiplizieren. 
+
+    .. example::
+
+        Sei :math:`\Sigma = \{a,b,c,d\}`
+
+        Zuweisung von Primzahlen an Symbole: :math:`a \rightarrow 2`, :math:`b \rightarrow 3`, :math:`c \rightarrow 5`, :math:`d \rightarrow 7`
+
+        Für das Wort: :math:`abac` wäre nach dem von ChatGPT vorgeschlagenen Verfahren die Gödelnummer :math:`c(abac) = 2^1 \cdot 3^2 \cdot 2^3 \cdot 5^4 = 90\,000`.
+    
+    Bewerten Sie diesen Vorschlag.
+
+    .. solution::
+        :pwd: Bloedsinn
+     
+        .. rubric:: Lösung
+
+        Die Primzahlzerlegung von :math:`90\,000` ist :math:`2^{4} \cdot 3^2 \cdot 5^4`. Dies lässt keinen Rückschluss auf das Wort :math:`abac` zu - wir wüssten zwar, dass die vorkommenden Buchstaben nur :math:`a`, :math:`b` und :math:`c` sind, aber die Positionsinformation ist nicht mehr eindeutig und das Wort :math:`cbca` hätte die gleich Nummer. 
+        
+        Der Vorschlag ist also nicht sinnvoll, da diese Nummer nicht eindeutig ist und nicht auf das Wort schließen lässt!
+
+        Das hier in der Vorlesung vorgeschlagene Verfahren würde (bei gleichbleibender Zuordnung!) die Berechnung wie folgt durchführen: :math:`c(abac) = 2^2 \cdot 3^3 \cdot 5^2 \cdot 7^5 = 45\,378\,900`. 
+
+
+
+.. class:: new-section transition-scale
+
+Verknüpfungen und Entscheidbarkeit
+--------------------------------------------------------
+
+
+Verknüpfungen von formalen Sprachen
+--------------------------------------------------------
+
+.. deck::
+
+    .. card::
+
+        .. theorem::
+
+            Sind :math:`L_1` und :math:`L_2` zwei formale Sprachen über den Alphabeten :math:`Σ_1` und :math:`Σ_2`, so gilt:
+
+            1. Die Vereinigung :math:`L_∪= L_1 ∪ L_2` ist eine formale Sprache über dem Alphabet :math:`Σ_1 ∪ Σ_2`.
+            2. Der Schnitt :math:`L_∩= L_1 ∩ L_2` ist eine formale Sprache über dem Alphabet :math:`Σ_1 ∪ Σ_2`.
+
+        .. proof::
+            :class: incremental
+
+            Die Vereinigung der Alphabete :math:`Σ = Σ_1 ∪ Σ_2`, also zweier endlicher Mengen, ist wieder eine endliche Menge und damit ein Alphabet. Da sowohl :math:`Σ_k ⊆Σ` für :math:`k= 1,2`, sind :math:`L_1` und :math:`L_2` auch Sprachen über :math:`Σ` und es gilt :math:`L_k ⊆Σ^*_k ⊆Σ^*`, da die Teilmengenbeziehung in jeder Mengenpotenz und damit auch in deren Vereinigung gilt.
+            Damit sind auch :math:`L_1 ∪L_2 ⊆Σ^*` und :math:`L_1 ∩L_2 ⊆Σ^*` und damit Sprachen über :math:`Σ = Σ_1 ∪Σ_2`.
+
+    .. card::
+
+        .. theorem::
+
+            Sind :math:`L_1` und :math:`L_2` zwei formale Sprachen über den Alphabeten :math:`Σ_1` und :math:`Σ_2`, so gilt:
+
+
+            3. Das Komplement :math:`\overline{L_k} = Σ^∗_k \setminus L_k , k= 1,2` ist formale Sprache über Alphabet :math:`Σ_k`.
+
+               .. presenter-note::
+
+                    .. repetition:: 
+
+                        Eine formale Sprache besteht in der Regel nicht aus alle möglichen Wörtern, sondern nur aus einer Teilmenge davon. 
+
+        .. proof::
+
+            Nach Definition der Mengendifferenz gilt :math:`Σ^*_k \setminus L_k ⊆ Σ^*_k`. Somit ist :math:`\overline{L_k} ⊆ Σ^*_k` und somit eine Sprache über :math:`Σ_k`.
+
+
+    .. card::
+
+        .. theorem::
+
+            Sind :math:`L_1` und :math:`L_2` zwei formale Sprachen über den Alphabeten :math:`Σ_1` und :math:`Σ_2`, so gilt:            
+
+            4. Das Produkt :math:`L_1L_2 = \{w_1w_2 |w_1 ∈L_1,w_2 ∈L_2\}` ist eine formale Sprache über :math:`Σ_1 ∪ Σ_2`.
+
+        .. proof::
+
+            Für :math:`L= L_1 ∪ L_2` ist :math:`L_1 ⊆L` und :math:`L_2 ⊆L`.
+            
+            :math:`L` ist somit eine Sprache über :math:`Σ = Σ_1 ∪ Σ_2` nach
+            Satz 1. Damit ist ist jedes Wort :math:`w ∈L ⊆Σ^*` in einem :math:`w ∈ Σ^k` für ein bestimmtes :math:`k` enthalten. Ebenso ist damit :math:`w_1w_2 ∈Σ^{k_1} Σ^{k_2} = Σ^{k_1+k_2} ⊆ Σ^*`. Damit ist :math:`LL ⊆Σ^*` und  damit :math:`L_1L_2 ⊆ LL ⊆ Σ^*` Sprache über :math:`Σ`.
+
+            .. presenter-note:: 
+
+                In diesem Fall bezeichnet :math:`\Sigma^k` die Menge aller Wörter der Länge :math:`k` über dem Alphabet :math:`\Sigma`; Mengentheoretisch betrachtet ist es das :math:`k`-malige kartesische Produkt von :math:`\Sigma`  mit sich selbst.
+
+    .. card::
+
+        .. theorem::
+
+            Sind :math:`L_1` und :math:`L_2` zwei formale Sprachen über den Alphabeten :math:`Σ_1` und :math:`Σ_2`, so gilt:
+
+            5. Kleensche Abschlüsse :math:`L^*_k` und :math:`L^+_k` , :math:`k= 1,2` sind formale Sprachen über :math:`Σ_k`.
+
+               .. presenter-note::
+
+                    Wir führen jetzt die Kleene Abschlüsse über Sprachen durch und nicht über Alphabete.
+
+        .. proof::
+
+            .. observation:: 
+
+                Zunächst ist :math:`ε ∈ Σ^*_k`, somit reicht es für :math:`L^+_k` zu argumentieren.
+
+            - Jedes Wort :math:`w ∈ L^+_k` ist in :math:`w ∈ L^n_k` für ein bestimmtes :math:`n`.
+            - Damit gibt es Teilworte :math:`m_1m_2...m_n = w` mit :math:`m_i ∈L_k`
+            - Da :math:`L_k ⊆Σ^*_k` gibt es :math:`p_i` , so dass :math:`m_i ∈Σ^{p_i}_k`
+            - Damit ergibt sich, dass :math:`m_1...m_n ∈ Σ^{\Sigma p_i}_k` liegt und damit in :math:`Σ^{\Sigma p_i}_k ⊆ Σ^*_k`
+            - Damit dies für alle Worte in :math:`L^+_k` gilt, ist :math:`L^+_k ⊆ Σ^*_k` und damit eine Sprache über :math:`Σ_k`
+
+.. supplemental::
+
+    .. example:: 
+
+        .. rubric:: Komplement einer Sprache
+
+        **Gegeben**
+
+        :Alphabet: :math:`\Sigma_k = \{a, b\}`
+        :Sprache: 
+        
+            math:`L_k`: Alle Wörter, die mit dem Symbol :math:`a` beginnen.
+
+            .. math::
+
+               L_k = \{a, aa, ab, aaa, aab, \dots\}
+
+        :Komplement der Sprache:
+
+            Das Komplement :math:`\overline{L_k}` enthält alle Wörter aus :math:`\Sigma_k^*`, die *nicht* mit :math:`a` beginnen. Das bedeutet:
+
+            .. math::
+
+                \overline{L_k} = \{\epsilon, b, bb, ba, bba, bbb, \dots\}
+
+
+Existenz der Abzählbarkeit
+--------------------------------------------------------
+
+.. deck::
+
+    .. card::
+
+        .. repetition::
+
+            Sind :math:`L_1` und :math:`L_2` abzählbar, so sind mit entsprechenden Anpassungen auch
+
+            - Vereinigung,
+            - Schnitt und
+            - Produkt
+            
+            abzählbar.
+
+        .. observation:: 
+
+            Die Abzählbarkeit des Komplements kann nicht so einfach beantwortet werden! 
+            
+            Dies ist jedoch kein Problem, da jede formale Sprache abzählbar ist und damit auch ihr Komplement.
+
+    .. card::
+
+        .. question::
+
+            Kann mit dem Wissen der Existenz auch die tatsächliche Abzählung angegeben werden?
+
+            .. answer::
+                :class: incremental
+
+                Nein, die Existenz der Abzählbarkeit bedeutet nur, dass es eine Abzählung gibt, aber nicht, dass diese bekannt ist.
+
+                Eine reine Existenzaussage ist leider nicht konstruktiv!
+
+    .. card::
+
+        .. summary::
+
+            Wir unterscheiden deswegen die einfache und nicht konstruktivistische Erkenntnis einer Abzählbarkeit von einer konstruktiven und praktischen Aufzählbarkeit.
