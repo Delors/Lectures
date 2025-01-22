@@ -1,5 +1,5 @@
 .. meta::
-   :version: genesis
+   :version: renaissance
    :lang: de
    :author: Michael Eichberg
    :keywords: "Programmierung", "Java", "Variablen", "Methoden"
@@ -18,17 +18,12 @@
 .. |qm| unicode:: 0x22 
 
 .. role:: incremental
-.. role:: appear
 .. role:: eng
 .. role:: ger
 .. role:: dhbw-red
 .. role:: green
 .. role:: the-blue
-.. role:: minor
 .. role:: obsolete
-.. role:: line-above
-.. role:: smaller
-.. role:: far-smaller
 .. role:: monospaced
 .. role:: copy-to-clipboard
 .. role:: kbd
@@ -36,8 +31,6 @@
    :language: java
 
 
-
-.. class:: animated-symbol 
 
 Einführung in die Programmierung mit Java - Wiederholung
 ===========================================================
@@ -53,43 +46,47 @@ Einführung in die Programmierung mit Java - Wiederholung
 Kontrollfragen
 ----------------
 
-.. container:: scrollable
+.. deck:: numbered
 
-   .. class:: incremental long-list
-
-   1. \
+   .. card:: 
    
       .. exercise:: Welche primitiven Datentypen kennen wir?
 
          .. solution::
             :pwd: int_und_so
 
+            .. rubric:: Lösung
+
             Wir kennen die primitiven Datentypen :java:`byte`, :java:`short`, :java:`int`, :java:`long`, :java:`float`, :java:`double`, :java:`boolean`, :java:`char`.
 
-   2. 
+   .. card::
 
       .. exercise:: Was sind Literale?
 
          .. solution::
             :pwd: lits
 
+            .. rubric:: Lösung
+
             Konstante Werte, die direkt in den Code geschrieben werden.
 
-   3. 
+   .. card::
 
       .. exercise:: Welche der folgenden Bezeichner sind für Variablen gültig?
 
-         1. fooBar   
-         2. BarFoo
-         3. _fooBar
-         4. 1fooBar
-         5. fooBar1
-         6. fooBar!
-         7. $fooBar
-         8. $_BarFoo
+         1. :java:`fooBar`   
+         2. :java:`BarFoo`
+         3. :java:`_fooBar`
+         4. :java:`1fooBar`
+         5. :java:`fooBar1`
+         6. :java:`fooBar!`
+         7. :java:`$fooBar`
+         8. :java:`$_BarFoo`
 
          .. solution::
             :pwd: BezeichNer
+
+            .. rubric:: Lösung
 
             1. ja   
             2. ja
@@ -100,19 +97,21 @@ Kontrollfragen
             7. ja
             8. ja
 
-   4. 
+   .. card::
 
-      .. exercise:: Welche der folgenden Bezeichner sollte man für eine Variable verwenden?
+      .. exercise:: Welche der folgenden Bezeichner sollte man verwenden?
 
-         1. gewinn   
-         2. Gewinn
-         3. _private_i
-         4. i
-         5. $i
-         6. _i
+         9. :java:`gewinn`   
+         10. :java:`Gewinn`
+         11. :java:`_private_i`
+         12. :java:`i`
+         13. :java:`$i`
+         14. :java:`_i`
 
          .. solution::
             :pwd: BezeichNer_Teil2
+
+            .. rubric:: Lösung
 
             1. ja
             2. nein
@@ -121,103 +120,117 @@ Kontrollfragen
             5. nein
             6. (nein)
 
-   5. 
+   .. card::
 
-      .. exercise:: Sie definieren eine Konstante, welchen Namen würden Sie verwenden?
+      .. exercise:: Welchen Namen würden Sie für eine Konstante verwenden?
 
-         1. ISOLAENDERCODE
-         2. ISO_LÄNDERCODE
-         3. ISO_LAENDERCODE
-         4. ISO_Ländercode
-         5. ISO_Laendercode
-         6. iso_Laendercode
+         15. :java:`ISOLAENDERCODE`
+         16. :java:`ISO_LÄNDERCODE`
+         17. :java:`ISO_LAENDERCODE`
+         18. :java:`ISO_Ländercode`
+         19. :java:`ISO_Laendercode`
+         20. :java:`iso_Laendercode`
 
          .. solution::
             :pwd: BezeichNer_Teil2
 
+            .. rubric:: Lösung
+
             Wenn die Konstante einen deutschen bekommen  soll, dann sollte man dennoch auf Umlaute verzichten. Daher ist 3. die beste Wahl.
 
-   6. 
+   .. card::
 
       .. exercise:: Welchen Typ hat die Variable x in folgendem Code?
 
-         1. :java:`var x = 1;`
-         2. :java:`var x = 1.0;`
-         3. :java:`var x = '1';`
-         4. :java:`var x = 1f;`
-         5. :java:`var x = 2F;`
-         6. :java:`var x = "x";`
+         21. :java:`var x = 1;`
+         22. :java:`var x = 1.0;`
+         23. :java:`var x = '1';`
+         24. :java:`var x = 1f;`
+         25. :java:`var x = 2F;`
+         26. :java:`var x = "x";`
 
          .. solution::
             :pwd: MeinTypDeinTyp
 
-            1. int
-            2. double
-            3. char
-            4. float
-            5. float
-            6. String
+            .. rubric:: Lösung
 
-   7. 
+            1. :java:`int`
+            2. :java:`double`
+            3. :java:`char`
+            4. :java:`float`
+            5. :java:`float`
+            6. :java:`String`
 
-      .. exercise:: Wieviele Bits hat ein int?
+   .. card::
 
-         1. 8
-         2. 16
-         3. 24
-         4. 32
-         5. 40
-         6. 48
+      .. exercise:: Wie viele Bits hat ein int?
+
+         27. 8
+         28. 16
+         29. 24
+         30. 32
+         31. 40
+         32. 48
 
          .. solution::
             :pwd: 3_2_Bits
 
+            .. rubric:: Lösung
+
             32
 
-   8. 
+   .. card::
 
       .. exercise:: Wie ist der Wertebereich von byte?
 
-         1. 0 bis 255
-         2. -128 bis 128
-         3. -128 bis 127
-         4. -127 bis 127
-         5. -127 bis 128 
+         33. 0 bis 255
+         34. -128 bis 128
+         35. -128 bis 127
+         36. -127 bis 127
+         37. -127 bis 128 
                   
          .. solution::
             :pwd: Es gibt nur eine Antwort
 
+            .. rubric:: Lösung
+
             -128 bis 127
 
-   9. 
+   .. card::
 
       .. exercise:: Was passiert bei den folgenden Typumwandlungen?
 
-         1. int i = 42; byte b = (byte) i;
-         2. int i = 255; byte b = (byte) i;
-         3. int i = 256; byte b = (byte) i;
+         38. :java:`int i = 42; byte b = (byte) i;`
+         39. :java:`int i = 255; byte b = (byte) i;`
+         40. :java:`int i = 256; byte b = (byte) i;`
 
          .. solution::
             :pwd: 3_2_Bits
+
+            .. rubric:: Lösung
 
             1. b = 42
             2. b = -1
             3. b = 0
 
-   10. 
+   .. card::
 
-       .. exercise:: Warum ist der folgende  Ausdruck wahr obwohl dieser mathematisch falsch ist?
-
-         .. container:: far-smaller
-
-            :java:`(long) ((float) (Long.MAX_VALUE - Integer.MAX_VALUE)) == Long.MAX_VALUE;`
+       .. exercise:: Warum ist der folgende  Ausdruck wahr? 
          
+         :java:`(long) ((float) (Long.MAX_VALUE - Integer.MAX_VALUE)) == Long.MAX_VALUE;`
+
+         .. remark::         
+
+               Rein mathematisch betrachtet - d. h. ohne Betrachtung von Typen und Typumwandlungen - wäre dieser natürlich falsch.
+
          .. solution::
             :pwd: VerlusteSindDA!
 
+            .. rubric:: Lösung
+
             Durch die Typkonvertierung wird der Wert von :java:`Long.MAX_VALUE - Integer.MAX_VALUE` in einen :java:`float` umgewandelt. Da ein float nur 24 Bit für die Mantisse hat kommt es zu einem Präzisionsverlust. Der Wert wird also verändert. In (2) wird der Wert als :java:`long` berechnet und ist daher korrekt.
    
-   11. 
+   .. card::
 
        .. exercise:: Ist die Länge eines Strings gleich der Anzahl *sichtbarer* Zeichen? 
 
@@ -225,56 +238,76 @@ Kontrollfragen
          .. solution::
             :pwd: x_plus_plus
 
+            .. rubric:: Lösung
+
             Nein - es gibt Zeichen (zum Beispiel Emojis), die mehrere Zeichen (:java:`char`\ s) benötigen.
    
-   12. 
+   .. card::
 
-       .. exercise:: Sie möchten in einem String ein Anführungszeichen verwenden. Wie machen Sie das?
+       .. exercise:: Wie fügen Sie in einen String ein Anführungszeichen ein?
 
          .. solution::
             :pwd: backslash
 
+            .. rubric:: Lösung
+
             Sie verwenden ein Backslash: :java:`"\""`.
 
-   13. 
+   .. card::
 
        .. exercise:: Muss ich bei der Variablendeklaration den Typ explizit angeben?
 
          .. solution::
             :pwd: nein...
 
+            .. rubric:: Lösung
+
             Nein, in Java kann der Typ auch implizit durch den Compiler ermittelt werden, wenn die Variable auch direkt initialisiert wird.
 
-   14. 
+   .. card::
 
-       .. exercise:: Wie deklariert man eine Konstante? Sollte man Werte, die man nicht ändern möchte immer als Konstanten deklarieren?
+       .. exercise:: Wie deklariert man eine Konstante? 
+         
+         Sollte man Werte, die man nicht ändern möchte immer als Konstanten deklarieren?
 
          .. solution::
             :pwd: final var
 
-            Durch die Verwendung des Schlüsselwortes :java:`final`. Ja - es ist eine gute Praxis, Werte, die sich nicht ändern sollen, als Konstanten zu deklarieren.
+            .. rubric:: Lösung
 
-   15. 
+            Durch die Verwendung des Schlüsselwortes :java:`final`. 
+            
+            Ja - es ist eine gute Praxis, Werte, die sich nicht ändern sollen, als Konstanten zu deklarieren.
 
-       .. exercise:: Wie ist der Operator für die Modulorechnung (d. h. Restwertberechnung) in Java?
+   .. card::
+
+       .. exercise:: Wie ist der Operator für die Modulorechnung in Java?
+
+         (D. h. wenn Sie eine Restwertberechnung in Java durchführen wollen.) 
 
          .. solution::
             :pwd: _-%-_
 
+            .. rubric:: Lösung
+
             Das Prozentzeichen :java:`%`. 
 
-   16. 
+   .. card::
 
        .. exercise:: Wie sieht der ternäre Operator in Java aus?
 
          .. solution::
             :pwd: if?then:else
 
+            .. rubric:: Lösung
+
             Es ist das Fragezeichen :java:`?` und der Doppelpunkt :java:`:`. Beispiel :java:`x > 18 ? "alt" : "jung"`.
 
-   17. 
+   .. card::
 
-       .. exercise:: Welchen Wert haben die folgenden Ausdrücke, wenn x vor der jeweiligen Auswertung den Wert 5 hat?
+       .. exercise:: Welchen Wert haben die folgenden Ausdrücke? 
+         
+         :java:`x` hat vor der jeweiligen Auswertung den Wert 5.
 
          (1) :java:`x++`
          (2) :java:`++x`
@@ -284,47 +317,58 @@ Kontrollfragen
          (6) :java:`(x = (x = x - 2 ) + 3) * 4`
          (7) :java:`x >= 5 || 2 / (x - 5) == 0`
          (8) :java:`x >= 5 | 2 / (x - 5) == 0`
-         (9) :java:`x << 1`
-         (10) :java:`x << 1 >> 2`
+         (9) :java:`x << 1 >> 2`
 
          .. solution::
             :pwd: mal_so_mal_so
 
-            (1) 5, (2) 6, (3) 6, (4) 15, (5) 15, (6) 24, (7) true, (8) Division durch 0, (9) 10, (10) 2
+            .. rubric:: Lösung
 
-   18. 
+            (1) 5, (2) 6, (3) 6, (4) 15, (5) 15, (6) 24, (7) true, (8) Division durch 0, (9) 2
+
+   .. card::
 
        .. exercise:: Was stellt ein Block in Hinblick auf eine Variable dar?
 
          .. solution::
             :pwd: gibts_mich_oder_nicht
 
+            .. rubric:: Lösung
+
             Den Gültigkeitsbereich einer Variable.
 
-   19. 
+   .. card::
 
-       .. exercise:: Eine while-Schleife und eine for-Schleife können immer ineinander umgewandelt werden?
+       .. exercise:: Können while- und for-Schleifen ineinander umgewandelt werden?
+         :formatted-title: Können :java:`while`- und :java:`for`-Schleifen ineinander umgewandelt werden?
 
          .. solution::
             :pwd: einfach_ja
 
+            .. rubric:: Lösung
+
             Ja.
 
-   20. 
+   .. card::
 
-       .. exercise:: In welcher Weise unterscheidet sich eine do-while-Schleife von einer while-Schleife?
+       .. exercise:: Wie unterscheidet sich eine do-while- von einer while-Schleife?
+         :formatted-title: Wie unterscheidet sich eine :java:`do`-:java:`while`- von einer :java:`while`-Schleife?
 
          .. solution::
             :pwd: einmal wird die do-while ausgefuehrt
 
+            .. rubric:: Lösung
+
             Eine do-while-Schleife wird mindestens einmal ausgeführt, während eine while-Schleife nur dann ausgeführt wird, wenn die Bedingung wahr ist.
 
-   21. 
+   .. card::
 
-       .. exercise:: Schleifen und Variablen - wie ist die Ausgabe auf der *JShell*?
+       .. exercise:: Schleifen und Variablen - wie ist die Ausgabe auf der JShell?
+         :formatted-title: Schleifen und Variablen - wie ist die Ausgabe auf der *JShell*?
 
          .. code:: java
-            :class: far-smaller copy-to-clipboard
+            :class: copy-to-clipboard
+            :number-lines:
 
             int i = 0;
             for (int i = 0; i < 10; i++) {
@@ -337,14 +381,17 @@ Kontrollfragen
          .. solution::
             :pwd: i ist 0
 
-            Die Ausgabe ist 0. (Die Variable i in der Schleife ist eine andere Variable als die Variable i, die vor der Schleife deklariert wurde. Achtung in einem Java Skript würde dies zu einem Fehler führen.)
+            .. rubric:: Lösung
 
-   22. 
+            Die Ausgabe ist ``0``. (Die Variable ``i`` in der Schleife ist eine andere Variable als die Variable ``i``, die vor der Schleife deklariert wurde. Achtung: in einem Java Skript würde dies zu einem Fehler führen.)
+
+   .. card::
 
        .. exercise:: Schleife mit break - wie ist die Ausgabe?
 
          .. code:: java
-            :class: far-smaller copy-to-clipboard
+            :class: copy-to-clipboard
+            :number-lines:
 
             int i = 0;
             for (; i < 10; i++) {
@@ -357,14 +404,19 @@ Kontrollfragen
          .. solution::
             :pwd: i==5
 
-            Die Ausgabe ist 5. (Die Update Anweisung wird nicht ausgeführt, wenn die Schleife durch ein break beendet wird.)
+            .. rubric:: Lösung
 
-   23. 
+            Die Ausgabe ist ``5``. 
+            
+            (Die Update Anweisung wird nicht ausgeführt, wenn die Schleife durch ein :java:`break` beendet wird.)
+
+   .. card::
 
        .. exercise:: Ganz einfache Schleife - wie ist die Ausgabe?
 
          .. code:: java
-            :class: far-smaller copy-to-clipboard
+            :class: copy-to-clipboard
+            :number-lines:
 
             int i = 10;
             for (; i < 10; i++) {
@@ -374,14 +426,17 @@ Kontrollfragen
          .. solution::
             :pwd: nix_da
 
+            .. rubric:: Lösung
+
             Die Schleife wird nicht betreten.
 
-   24. 
+   .. card::
    
        .. exercise:: Schleife mit continue - wie ist die Ausgabe?
 
          .. code:: java
-            :class: far-smaller copy-to-clipboard
+            :class: copy-to-clipboard
+            :number-lines:
 
             int i = 0;
             for (; i < 10; i++) {
@@ -394,25 +449,26 @@ Kontrollfragen
          .. solution::
             :pwd: ungerade
 
+            .. rubric:: Lösung
+
             Es werden die ungeraden Zahlen von 1 bis einschließlich 9 ausgegeben.
 
-   25. 
+   .. card::
    
        .. exercise:: Verschachteltet Schleifen - wie ist die Ausgabe?
 
          .. code:: java
-            :class: far-smaller copy-to-clipboard
+            :class: copy-to-clipboard
+            :number-lines:
 
             int i = 0;
             outer : for (; i < 10; i++) {
-                if (i % 2 == 0) {
+                if (i % 2 == 0)
                     continue;
-                }
                 System.out.println(i);
                 for (int j = 1; j < 10; j++) {
-                    if (j % 3 == 0) {
+                    if (j % 3 == 0)
                         continue outer;
-                    }
                     System.out.println(i + " " + j);
                 }
             }
@@ -420,6 +476,8 @@ Kontrollfragen
             
          .. solution::
             :pwd: 1__1_1-und_so_weiter
+
+            .. rubric:: Lösung
 
             Ausgabe:
 
@@ -441,37 +499,46 @@ Kontrollfragen
                9 1
                9 2
 
-   26. 
+   .. card::
    
        .. exercise:: Verschachteltet Schleifen - wie ist die Ausgabe?
 
          .. code:: java
-            :class: far-smaller copy-to-clipboard
+            :class: copy-to-clipboard
+            :number-lines:
 
             outer : for (int i = 0; i < 10; i++) {
-                if (i % 2 == 0) {
-                  i = 10;
-                  continue outer;
-                }
-                System.out.println(i);
-                for (int j = 1; j < 10; j++) {
-                    if (j % 3 != i % 5) {
-                        break;
-                    }
-                    System.out.println(i + " " + j);
-                }
-            }
+               if (i % 2 == 0) {
+                 i = 10;
+                 continue outer;
+               }
+               System.out.println(i);
+               for (int j = 1; j < 10; j++) {
+                  if (j % 3 != i % 5)
+                     break;
+                  System.out.println(i + " " + j);
+            }  }
             
          .. solution::
             :pwd: 1_3_5_oder_so...
 
+            .. rubric:: Lösung
+
             Ausgabe:
 
-            <keine>
+            *<keine>*
 
-   27. 
+   .. card::
    
        .. exercise:: Rekursive Funktion
+
+         .. code:: java
+            :class: copy-to-clipboard
+            :number-lines:
+
+            int f(int n) {
+               if (n == 0) return 0; return n + f(n-1);
+            }
 
          .. class:: incremental
 
@@ -479,46 +546,45 @@ Kontrollfragen
          - Ist diese Funktion effizient?
          - Ist eine Lösung mit for-Schleife besser?
 
-         .. code:: java
-            :class: far-smaller copy-to-clipboard
-
-            int f(int n) {
-               if (n == 0) return 0; return n + f(n-1);
-            }
-            
          .. solution::
             :pwd: Summe-rekursiv
+
+            .. rubric:: Lösung
 
             - Die Summe der Zahlen von 1 bis n.
             - Nein, da die Funktion rekursiv ist und daher für große Werte von n - bei einigen Programmiersprachen (insbesondere Java, Python, etc.) - zu einem Stackoverflow führen wird.
             - Jein - sie ist nur um einen Konstanten Faktor schneller, aber sie braucht keinen Stack.
 
-   28. 
+   .. card::
    
-       .. exercise:: Funktion mit "Tail-Call"
-
-         .. class:: incremental
-
-         - Was berechnet diese Funktion?
-         - Ist diese Funktion effizient(er)?
+       .. exercise:: Funktion mit „Tail-Call“
 
          .. code:: java
-            :class: far-smaller copy-to-clipboard
+            :class: copy-to-clipboard
+            :number-lines:
 
             /* private */ int f(int n, int sum) {
                if (n == 0) return sum; return f(n-1,n+sum);
             }
             int f(int n) { return f(n,0); }
 
+         .. class:: incremental
+
+         - Was berechnet diese Funktion?
+         - Ist diese Funktion effizient(er)?
+
          .. solution::
             :pwd: Summe-optimierbar
 
+            .. rubric:: Lösung
+
             - Die Summe der Zahlen von 1 bis n.
 
-            - Dieser Code kann in Scala verwendet werden, um die Summe der Zahlen von 1 bis n zu berechnen. In Scala wird der rekursive Aufruf optimiert, so dass es keinen Stackoverflow gibt.
+            - Dieser Code könnte in der Programmiersprache Scala verwendet werden, um die Summe der Zahlen von 1 bis n zu berechnen. In Scala wird der rekursive Aufruf so optimiert, dass es keinen Stackoverflow gibt; in Java ist dies nicht möglich.
           
                .. code:: scala   
-                  :class: far-smaller copy-to-clipboard
+                  :class: copy-to-clipboard
+                  :number-lines:
 
                   import scala.annotation.tailrec
 
@@ -531,21 +597,24 @@ Kontrollfragen
                         }
                   }
 
-   29. 
+   .. card::
    
        .. exercise:: Wie werden Parameter übergeben?
 
          .. solution::
             :pwd: Call-by-value
 
+            .. rubric:: Lösung
+
             Call-by-Value (Java) 
 
-   30. 
+   .. card::
    
        .. exercise:: Wie bewerten Sie folgende Kommentierung?
 
          .. code:: java
-            :class: far-smaller copy-to-clipboard
+            :class: copy-to-clipboard
+            :number-lines:
 
             /**
              * Testet ob eine Zahl eine Primzahl ist.
@@ -562,19 +631,23 @@ Kontrollfragen
          .. solution::
             :pwd: "Ausreichend"
 
+            .. rubric:: Lösung
+
             Ausreichend - obwohl die Frage ist, was bei negativen Zahlen passiert!
 
-   31. 
+   .. card::
    
        .. exercise:: Ist der Kommentar ausreichend?
 
          .. code:: java
-            :class: copy-to-clipboard far-smaller
+            :class: copy-to-clipboard
+            :number-lines:
          
             /**
              * Computes the absolute value of the argument.
              * 
-             * @param a - the argument whose absolute value is to be determined
+             * @param a - the argument whose absolute value is to be 
+             *            determined
              * @return the absolute value of the argument.
              */
             double abs(double a) { ... }
@@ -582,21 +655,26 @@ Kontrollfragen
          .. solution::
             :pwd: Nicht schlecht, aber ...
 
-            Es fehlt eine Diskussion der besonderen Werte von a (NaN, +0.0, -0.0, Infinity).
+            .. rubric:: Lösung
 
-   32. 
+            Es fehlt eine Diskussion der besonderen Werte von :java:`a` (NaN, +0.0, -0.0, Infinity).
+
+   .. card::
 
        .. exercise:: Ist die Kommentierung hier ausreichend?
 
          .. code:: java
-            :class: copy-to-clipboard far-smaller
+            :class: copy-to-clipboard
+            :number-lines:
          
             /**
              * Returns the absolute value of an int value. 
              * If the argument is not negative, the argument is returned. 
-             * If the argument is negative, the negation of the argument is returned.
+             * If the argument is negative, the negation of the argument 
+             * is returned.
              * 
-             * @param a - the argument whose absolute value is to be determined
+             * @param a - the argument whose absolute value is to be 
+             *            determined
              * @return the absolute value of the argument.
              */
             long abs(long a) { ... }
@@ -604,18 +682,23 @@ Kontrollfragen
          .. solution::
             :pwd: Nicht schlecht, aber ...
 
+            .. rubric:: Lösung
+
             Der Wertebereich von Long ist nicht symmetrisch! Es stellt sich also unmittelbar die Frage was bei Long.MIN_VALUE passiert. (Die Antwort ist Long.MIN_VALUE.)
 
-   33. 
+   .. card::
 
-      .. exercise:: Sind Java Assertions (:java:`assert`) in Java immer aktiv?
+      .. exercise:: Sind Java Assertions (assert) in Java immer aktiv?
+         :formatted-title: Sind Java Assertions (:java:`assert`) in Java immer aktiv?
 
          .. solution::
             :pwd: Nope
 
+            .. rubric:: Lösung
+
             Sie müssen extra aktiviert werden.
 
-   34. 
+   .. card::
 
       .. exercise:: Wofür sollten Assertions verwendet werden?
 
@@ -626,16 +709,19 @@ Kontrollfragen
          .. solution::
             :pwd: so oder so
 
+            .. rubric:: Lösung
+
             1. Nur dann, wenn die Funktion eine private Funktion ist, die kein Teil der öffentlichen API ist! Sollte die Eingabe auf Nutzereingaben zurückzuführen sein, dann sind Java Assertions der falsche Mechanismus.
             2. Ja
             3. Ja
 
-   35.  
+   .. card::
 
        .. exercise:: Beschreiben Sie die Ausgabe:
 
          .. code:: java
-            :class: far-smaller copy-to-clipboard
+            :class:  copy-to-clipboard
+            :number-lines:
    		
             int width = 20;
             int height = 10; 
@@ -654,4 +740,6 @@ Kontrollfragen
          .. solution::
             :pwd: ein Rechteck
 
-            In Abhängigkeit von width und height wird ein Rechteck gezeichnet.   
+            .. rubric:: Lösung
+
+            In Abhängigkeit von :java:`width` und :java:`height` wird ein Rechteck gezeichnet.   

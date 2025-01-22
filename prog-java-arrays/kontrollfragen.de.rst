@@ -1,5 +1,5 @@
 .. meta::
-   :version: genesis
+   :version: renaissance
    :lang: de
    :author: Michael Eichberg
    :keywords: "Programmierung", "Java", "Arrays"
@@ -37,8 +37,6 @@
 
 
 
-.. class:: animated-symbol 
-
 Java Arrays
 ===================================
 
@@ -50,19 +48,20 @@ Java Arrays
 
 
 
+.. class:: exercises
+
 Kontrollfragen
 ----------------
 
-.. container:: scrollable
+.. deck:: numbered
 
-   .. class:: incremental long-list
-
-   1. \
+   .. card:: 
    
       .. exercise:: Welche der folgenden Deklarationen sind gültig?
 
          .. code:: java
-            :class: far-smaller copy-to-clipboard
+            :class: copy-to-clipboard
+            :number-lines:
 
             int[] a;
             int b[];
@@ -73,33 +72,39 @@ Kontrollfragen
          .. solution::
             :pwd: int_und_so
 
+            .. rubric:: Lösung
+
             Wir kennen die primitiven Datentypen :java:`byte`, :java:`short`, :java:`int`, :java:`long`, :java:`float`, :java:`double`, :java:`boolean`, :java:`char`.
 
-   2. 
+   .. card:: 
 
       .. exercise:: Wie kann man über die Elemente in einem Array iterieren?
 
          .. solution::
             :pwd: es gibt zwei Wege
 
+            .. rubric:: Lösung
+
             For und For-each Schleifen.   
 
-   3. 
+   .. card:: 
+
 
       .. exercise:: Was ist die Ausgabe?
 
          .. code:: java
-            :class: far-smaller copy-to-clipboard
+            :class: copy-to-clipboard
+            :number-lines:
 
             int[] a = new int[3];
             for (int i = 0; i < a.length; i++) {
                 System.out.println(a[i]);
             }
 
-
-
          .. solution::
             :pwd: BezeichNer
+
+            .. rubric:: Lösung
 
             ::
 
@@ -107,36 +112,37 @@ Kontrollfragen
                0
                0
 
-
-   4. 
+   .. card:: 
 
       .. exercise:: Was ist die Ausgabe?
 
          .. code:: java
-            :class: far-smaller copy-to-clipboard
+            :class: copy-to-clipboard
+            :number-lines:
 
             final int[] a = {2,6,12};
             for (int i = 0; i < a.length-1; i++) {
                 System.out.println(a[i]);
             }
 
-
-
          .. solution::
-            :pwd: BezeichNer
+            :pwd: BezeichneR
 
+            .. rubric:: Lösung
+            
             ::
 
                2
                6
                
 
-   5. 
+   .. card:: 
 
       .. exercise:: Welche Werte enthalten die Arrayelemente und was ist die Ausgabe?
 
          .. code:: java
-            :class: far-smaller copy-to-clipboard
+            :class: copy-to-clipboard
+            :number-lines:
 
             final int[] a = new int[10];
             a[0] = 0;
@@ -149,14 +155,18 @@ Kontrollfragen
          .. solution::
             :pwd: 45_-was-sonst
 
-            45
-            
-   6. 
+            .. rubric:: Lösung
 
-      .. exercise:: Welcher Code ist korrekt?
+            ::
+            
+               45
+            
+   .. card:: 
+
+      .. exercise:: Welche Zeile ist korrekt?
 
          .. code:: java
-            :class: far-smaller copy-to-clipboard
+            :class: copy-to-clipboard
             :number-lines:
 
             int a[][] = new int[2][2];
@@ -166,16 +176,18 @@ Kontrollfragen
          .. solution::
             :pwd: multidim_array
 
+            .. rubric:: Lösung
+
             1. ja
             2. nein (Syntaxfehler!)
             3. ja
    
-   7. 
+   .. card:: 
 
       .. exercise:: Finden Sie den Fehler:
 
          .. code:: java
-            :class: far-smaller copy-to-clipboard
+            :class: copy-to-clipboard
             :number-lines:
 
             for (int i = 1; i <= a.length; i++) {
@@ -184,6 +196,8 @@ Kontrollfragen
 
          .. solution::
             :pwd: array_index
+
+            .. rubric:: Lösung
 
             Der Index des Arrays beginnt bei 0 und endet bei a.length-1. Der Code führt zu einer :java:`ArrayIndexOutOfBoundsException`.
             
