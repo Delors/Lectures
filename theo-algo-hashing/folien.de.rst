@@ -107,13 +107,13 @@ Suchen in einer Liste
 Hashing - Grundidee
 --------------------------------------------------------
 
+.. image:: images/Hashkollision.svg
+    :alt: Hashmap
+    :align: right
+
 .. deck::
 
-    .. card::
-
-        .. image:: images/Hashkollision.svg
-            :alt: Hashmap
-            :align: right
+    .. card:: d-no-clear
 
         .. class:: incremental list-with-explanations
 
@@ -122,15 +122,13 @@ Hashing - Grundidee
           Der Index ist eine Funktion des Schlüssels.
         - Hash-Funktion:  Methode zur Berechnung des Array-Index aus dem Schlüssel.
 
-    .. card::
-
-        .. container:: challenges
+    .. card:: d-no-clear
             
-            .. rubric:: Herausforderungen
-            
-            1. Berechnung der Hash-Funktion.
-            2. Gleichheitstest: Methode zur Überprüfung, ob zwei Schlüssel gleich sind.
-            3. Kollisionsauflösung: Algorithmus und Datenstruktur zur Behandlung von zwei Schlüsseln, die auf denselben Array-Index hindeuten.
+        .. rubric:: Herausforderungen
+        
+        1. Berechnung der Hash-Funktion.
+        2. Gleichheitstest: Methode zur Überprüfung, ob zwei Schlüssel gleich sind.
+        3. Kollisionsauflösung: Algorithmus und Datenstruktur zur Behandlung von zwei Schlüsseln, die auf denselben Array-Index hindeuten.
 
     .. card::
 
