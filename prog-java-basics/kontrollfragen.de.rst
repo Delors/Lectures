@@ -43,6 +43,8 @@ Einführung in die Programmierung mit Java - Wiederholung
 
 
 
+.. class:: exercises
+
 Kontrollfragen
 ----------------
 
@@ -232,7 +234,8 @@ Kontrollfragen
    
    .. card::
 
-       .. exercise:: Ist die Länge eines Strings gleich der Anzahl *sichtbarer* Zeichen? 
+       .. exercise:: Ist die Länge eines Strings gleich der Anzahl sichtbarer Zeichen? 
+         :formatted-title: Ist die Länge eines Strings gleich der Anzahl *sichtbarer* Zeichen? 
 
 
          .. solution::
