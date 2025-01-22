@@ -89,7 +89,6 @@ Kontrollfragen
 
    .. card:: 
 
-
       .. exercise:: Was ist die Ausgabe?
 
          .. code:: java
