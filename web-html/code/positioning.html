@@ -1,7 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        p {
+            margin: 0;;
+            border: 1px solid black;
+            padding: 10px;
+        }        
+    </style>
     <body>
-        <div style="position: relative; margin: 100px;">
+        <div style="position: relative; margin: 40px;">
             <div style="position: absolute; top: 10px; left: 10px; width: 50px; height: 50px; background-color: blue;"></div>
             <p style="float:right; width:50%">
                 Irgendein Text... Irgendein Text... Irgendein Text... Irgendein Text... Irgendein Text... Irgendein Text... Irgendein Text... Irgendein Text... Irgendein Text... Irgendein Text... Irgendein Text... Irgendein Text... Irgendein Text... Irgendein Text... Irgendein Text... 
@@ -10,6 +20,45 @@
                 Dies ist ein langer Text... Dies ist ein langer Text...Dies ist ein langer Text...Dies ist ein langer Text...Dies ist ein langer Text...Dies ist ein langer Text...Dies ist ein langer Text...Dies ist ein langer Text...Dies ist ein langer Text...Dies ist ein langer Text...Dies ist ein langer Text...Dies ist ein langer Text...Dies ist ein langer Text...Dies ist ein langer Text...Dies ist ein langer Text...Dies ist ein langer Text...
             </p>
             <div style="position: absolute; top: 0; left: 0; width: 50px; height: 50px; background-color: red;"></div>
+        </div>
+
+        <div>
+            <p style="float:right;background-color: aliceblue;">
+                A really right note!
+            </p>
+            <div style="border: 3px solid blue; padding:15px;">
+                <p style="float:left;background-color: aliceblue;">
+                    A note!
+                </p>
+                <p style="float:right;background-color: coral; clear: right;">
+                    Another note!
+                </p>
+                <p style="float:right;background-color: cadetblue; width:20%">
+                    Another note which is left to the previous note!
+                </p>
+                <div style="background-color: lightgreen; padding: 10px; margin: 10px;width:500px">
+                    Something in between! Something in between! 
+                    <div style="background-color: tan; padding: 10px; margin: 10px;width:500px;height: 80px"></div>
+                        Something in between! Something in between!
+                    Something in between! Something in between! Something in between! Something in between! Something in between! Something in between! v Something in between! Something in between! Something in between! Something in between! Something in between! Something in between! v Something in between! v Something in between! v Something in between! Something in between! Something in between! v
+                </div>
+                <p style="float:right;background-color: thistle; width:20%">
+                    a last note...
+                </p>
+            </div>
+        </div>
+
+
+        <div style="display:flex">
+            <p style="background-color: aliceblue;">
+                A note!
+            </p>
+            <div style="background-color: lightgreen; padding: 10px; margin: 10px;width:500px">
+                Something in between! Something in between! Something in between! Something in between! Something in between! Something in between! Something in between! Something in between! v Something in between! Something in between! Something in between! Something in between! Something in between! Something in between! v Something in between! v Something in between! v Something in between! Something in between! Something in between! v
+            </div>
+            <p style="background-color: coral;">
+                Another note!
+            </p>
         </div>
     </body>
 </html>
