@@ -76,14 +76,16 @@ Einführung
 Suchen in einer Liste
 --------------------------------------------------------
 
-.. container:: sl-font-size-70
+.. container:: s-font-size-70 highlight-cell-on-hover
 
     +-----------------------------------------+----------+----------+---------+-------------------------+-----------+---------+---------------------------------+
     | Implementation                          | Garantie                      | Durchschnittlicher Fall                       | Operationen auf den Schlüsseln  |
     +                                         +----------+----------+---------+-------------------------+-----------+---------+                                 +
     |                                         | Suchen   | Einfügen | Löschen | Suchen                  | Einfügen  | Löschen |                                 |
     +=========================================+==========+==========+=========+=========================+===========+=========+=================================+
-    | sequentielle Suche (unsortierte Liste)  | N        | N        | N       | ½ N                     | N         | ½ N     | equals()                        |
+    | sequentielle Suche                      | N        | N        | N       | ½ N                     | N         | ½ N     | equals()                        |
+    |                                         |          |          |         |                         |           |         |                                 |
+    | (unsortierte Liste)                     |          |          |         |                         |           |         |                                 |
     +-----------------------------------------+----------+----------+---------+-------------------------+-----------+---------+---------------------------------+
     | binäre Suche (geordnetes Array)         | lg N     | N        | N       | lg N                    | ½ N       | ½ N     | compareTo()                     |
     +-----------------------------------------+----------+----------+---------+-------------------------+-----------+---------+---------------------------------+
@@ -112,7 +114,7 @@ Hashing - Grundidee
         .. image:: images/Hashkollision.svg
             :alt: Hashmap
             :align: right
-            
+
         .. class:: incremental list-with-explanations
 
         - Die Elemente werden über den Schlüssel indexiert in einer Tabelle gespeichert.
@@ -140,6 +142,9 @@ Hashing - Grundidee
             - Keine Zeitbeschränkung: triviale Kollisionsauflösung mit sequentieller Suche.
             - Raum- und Zeitbeschränkung: Hashing (die reale Welt).
 
+.. supplemental::
+
+    In dem Beispiel ist der Schlüssel das Wort ``it``.
 
 
 Berechnung der Hash-Funktion
@@ -161,7 +166,7 @@ Berechnung der Hash-Funktion
     .. rubric:: Beispiel 1.  Telefonnummern.
 
     :Schlecht: die ersten drei bis fünf Ziffern.
-    :Besser: die letzten drei Ziffern.
+    :Besser: die letzten vier Ziffern.
 
 .. container:: example incremental
 
@@ -192,6 +197,12 @@ Hashfunktionen
             Eine Hashfunktion :math:`h : M →\mathbb{Z}_n` bildet eine Menge :math:`M` mit :math:`|M|≥|\mathbb{Z}_n|` auf die Zahlen :math:`0,...,n−1` ab. 
             
             Eine Hashfunktion ist *surjektiv* \ [#]_: für jedes :math:`y ∈Z_n` gibt es ein :math:`x ∈M` mit :math:`h(x) = y`. 
+
+            .. presenter-note:: 
+
+                Surjektiv bedeutet, dass jeder Wert aus dem Wertebereich mindestens einmal von der Funktion berechnet wird.
+
+                Sollte die Funktion nicht-surjektiv sein, dann führt das ggf. zu unnötigen Kollisionen und verschlechtert die Effizienz der Hashtabelle.
             
             Eine Hashfunktion ist *gleichverteilt*, wenn zwei Bilder :math:`y1,y2 ∈ \mathbb{Z}_n` immer ungefähr gleich viele Urbilder haben :math:`|h^{−1}({y1})|≈|h^{−1}({y2})|`.
         
@@ -207,7 +218,7 @@ Hashfunktionen
         - Für **Hashes, welche verwendet werden im Rahmen von Verschlüsselung und Signaturen,** 
           muss es schwer sein:
           
-          - ein Urbild zu finden
+          - ein Urbild zu finden (d. h. von Y auf X zu schließen)
           - zwei kollidierende Werte zu finden.
 
           .. supplemental::
@@ -224,7 +235,7 @@ Hashfunktionen
 
     .. card::
 
-        Wenn das Ziel ist, hash Werte mit einer bestimmten Länge (zum Beispiel 32Bit) zu berechnen, dann wären folgende Hashfunktionen denkbar:
+        Wenn das Ziel ist, Hash-Werte mit einer bestimmten Länge (zum Beispiel 32Bit) zu berechnen, dann wären folgende Hashfunktionen denkbar:
 
         .. rubric:: Exemplarische Hashfunktionen
 
@@ -248,6 +259,10 @@ Hashfunktionen
                         bits : u64 = f64ToBits(x); // u64 = 64-Bit (signed) integer
                         return (u32) (bits ^ (bits >>> 32));
                     }
+
+                .. supplemental::
+
+                    ``>>>`` ist der *unsigned right shift* Operator.
 
             .. card::
 
@@ -416,6 +431,7 @@ Verwendung von Hashes in Python
         .. rubric:: Beispielklasse :java:`Person` mit konstantem Hashwert
 
         .. code:: python
+            :class: copy-to-clipboard
             :number-lines:
 
             class PersonWithBadHash: 
@@ -476,15 +492,20 @@ Verwendung von Hashes in Python
     
     Die Klasse :java:`Student` soll:
     
-    - die Attribute ``name`` und ``matriculation_number`` haben.
+    - die Attribute/Properties ``name`` und ``matriculation_number`` haben.
 
-    - die Methoden ``__eq__`` und ``__hash__`` definieren
+    - die Methoden ``__eq__`` und ``__hash__`` sinnvoll/korrekt definieren
 
-    Erzeugen Sie drei :java:`Student`-Objekte und speichern Sie diese in einem Set.
+    Aufgaben:
 
-    *Fragen Sie sich wie sie effizient den Hashwert berechnen können.*
+    1) Erzeugen Sie drei :java:`Student`-Objekte und speichern Sie diese in einem Set.
 
-    Geben Sie die Namen der Studierenden aus.
+    2) *Fragen Sie sich wie sie effizient den Hashwert berechnen können.*
+
+    3) Geben Sie die Namen der Studierenden aus.
+    4) Was passiert, wenn Sie — *nachdem Sie ein Student Objekt dem Dictionary hinzugefügt haben* — den Namen des Studenten ändern? 
+     
+       Schreiben Sie entsprechenden Code, um Ihre Annahme zu überprüfen!
 
     .. supplemental::
 
@@ -509,29 +530,10 @@ Verwendung von Hashes in Python
 
         .. rubric:: Lösung
 
-        .. code:: python
-            :class: copy-to-clipboard
+        .. include:: code/student.py
             :number-lines:
-
-            class Student: 
-                def __init__(self, name, matriculation_number): 
-                    self.name = name 
-                    self.matriculation_number = matriculation_number 
-
-                def __eq__(self, other): 
-                    if isinstance(other, Student): 
-                        return  self.name == other.name and \
-                                self.matriculation_number == other.matriculation_number 
-                    return False 
-
-                def __hash__(self): 
-                    return self.matriculation_number
-
-            student1 = Student("Alice", 123456) 
-            student2 = Student("Bob", 234567) 
-            student3 = Student("Alice", 123456) # gleiche Werte wie "student1"
-            students = {student1, student2, student3}
-            for s in students: print(s.name)
+            :code: python
+            :class: copy-to-clipboard
 
 
 
@@ -562,15 +564,21 @@ Gängige Ansätze für Hashfunktionen
         - gleichverteilt
         - wenn :math:`n` keine Primzahl ist, dann kann es (leicht) passieren, dass bestimmte (Teil-)daten weniger oder keinen Einfluss auf den Hashwert haben:
         
+          .. class:: incremental
+
           - :math:`x \cdot 10^3 \mod 40 = 0` 
-          - :math:`x \cdot 10^3 \mod 42 \in \{0,2,4,...,40\}` Anm.: :java:`GGT(42,1000) = 2` 
-          - :math:`x \cdot 10^3 \mod 41 \in \{0,1,2,3,...,40\}` Anm.: :java:`GGT(41,1000) = 1` 
+          - :math:`x \cdot 10^3 \mod 42 \in \{0,2,4,...,40\}` Anm.: :math:`ggt(42,1000) = 2` 
+          - :math:`x \cdot 10^3 \mod 41 \in \{0,1,2,3,...,40\}` Anm.: :math:`ggt(41,1000) = 1` 
          
     .. card::
 
         :Multiplikations-Hashfunktion: 
             
-            Sei :math:`c` fest, oft :math:`c = {\sqrt{5}−1 \over 2} \approx 0,6180339887498949`: 
+            Sei :math:`c` fest, oft :math:`c = {\sqrt{5}−1 \over 2} \approx 0,6180339887498949`:
+
+            .. presenter-note::
+
+                c ist eine irrationale Zahl.
 
             :math:`h^{mul}_n (x) = ⌊n·(c·x −⌊c·x⌋)⌋`
 
@@ -660,7 +668,7 @@ Das Grundprinzip von Hashtabellen ist einfach:
   Die Größe des Arrays übersteigt die erwartete Belegung deutlich.
 - Daten mit einem Schlüssel :java:`k` werden dann an der Position :java:`A[h(k)]` gespeichert - oder an einer Ersatzposition.
 - Sollte die Belegung zu groß werden, wird das Array vergrößert und die Elemente werden (ggf.) neu bzw. wieder gehasht.
-- Sollten zwei Schlüssel den gleichen Hash haben (d. h. :math:`h(x1) = h(x2)`), dann wird eine Kollisionsauflösung benötigt.
+- Sollten zwei Schlüssel den gleichen Hash haben (d. h. :math:`h(x_1) = h(x_2)`), dann wird eine Kollisionsauflösung benötigt.
 
 
 
@@ -691,8 +699,7 @@ Verkettete Hashtabellen
 
         .. supplemental::
 
-
-            Die *direkte Verkettung* von Überläufern verwendet eine :math:`Hashtabelle(A,h_n)`, mit einem Array :math:`A`, das aus Zeigern auf einfach verkettete Listen besteht, dessen Schlüssel der Einträge alle den gleichen Hashwert besitzen, oder die nil sind, wenn kein Eintrag bisher mit dem jeweiligen Hashwert vorhanden ist.
+            Die *direkte Verkettung* von Überläufern verwendet eine :math:`Hashtabelle(A,h_n)`, mit einem Array :math:`A`, das aus Zeigern auf einfach verkettete Listen besteht, dessen Schlüssel der Einträge alle den gleichen Hashwert besitzen, oder die ``nil`` sind, wenn kein Eintrag bisher mit dem jeweiligen Hashwert vorhanden ist.
 
     .. card::
 
@@ -752,8 +759,8 @@ Offene Adressierung
 
 
 
-Beispiel Offene Adressierung (Hashing mit Modulo 7)
---------------------------------------------------------
+Beispiel Offene Adressierung (Hashing: :math:`x\; mod\; 7`)
+------------------------------------------------------------
 
 .. deck::
 
