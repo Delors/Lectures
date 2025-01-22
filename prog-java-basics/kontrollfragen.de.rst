@@ -720,7 +720,7 @@ Kontrollfragen
 
    .. card::
 
-       .. exercise:: Beschreiben Sie die Ausgabe:
+       .. exercise:: Beschreiben Sie die Ausgabe des Programms
 
          .. code:: java
             :class:  copy-to-clipboard
