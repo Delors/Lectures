@@ -1088,8 +1088,7 @@ Existenz der Abzählbarkeit
 
             Kann mit dem Wissen der Existenz auch die tatsächliche Abzählung angegeben werden?
 
-            .. answer::
-                :class: incremental
+            .. presenter-note:: 
 
                 Nein, die Existenz der Abzählbarkeit bedeutet nur, dass es eine Abzählung gibt, aber nicht, dass diese bekannt ist.
 
@@ -1100,3 +1099,8 @@ Existenz der Abzählbarkeit
         .. summary::
 
             Wir unterscheiden deswegen die einfache und nicht konstruktivistische Erkenntnis einer Abzählbarkeit von einer konstruktiven und praktischen Aufzählbarkeit.
+
+
+
+
+
