@@ -1,12 +1,13 @@
 .. meta:: 
-    :lang: de
-    :author: Michael Eichberg
-    :keywords: "Komplexität", "Algorithmen", "Kontrollfragen"
-    :description lang=de: Theoretische Informatik - Komplexität und Algorithmen - Kontrollfragen
-    :id: lecture-theo-algo-komplexitaet-kontrollfragen
-    :first-slide: last-viewed
-    :exercises-master-password: WirklichSchwierig!
-    
+   :version: renaissance
+   :lang: de
+   :author: Michael Eichberg
+   :keywords: "Komplexität", "Algorithmen", "Kontrollfragen"
+   :description lang=de: Theoretische Informatik - Komplexität und Algorithmen - Kontrollfragen
+   :id: lecture-theo-algo-komplexitaet-kontrollfragen
+   :first-slide: last-viewed
+   :exercises-master-password: WirklichSchwierig!
+   
 .. |html-source| source::
     :prefix: https://delors.github.io/
     :suffix: .html
@@ -24,11 +25,7 @@
 .. role:: green
 .. role:: the-blue
 .. role:: the-green
-.. role:: minor
 .. role:: obsolete
-.. role:: line-above
-.. role:: smaller
-.. role:: far-smaller
 .. role:: monospaced
 .. role:: copy-to-clipboard
 .. role:: kbd
@@ -37,19 +34,17 @@
 
 
 
-.. class:: animated-symbol 
-
 Komplexität und Algorithmen - Kontrollfragen
 ====================================================
 
-.. container:: line-above
+----
 
-    :Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
-    :Kontakt: michael.eichberg@dhbw.de, Raum 149B
-    :Version: 1.0.1
+:Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
+:Kontakt: michael.eichberg@dhbw.de, Raum 149B
+:Version: 1.0.1
 
 
-.. class:: integrated-exercise
+.. class:: exercises
 
 Dynamische Programmierung
 --------------------------
@@ -69,7 +64,7 @@ Dynamische Programmierung
 .. exercise:: Minimale Anzahl an Münzen
    :class: incremental
 
-   Gegeben sei ein Betrag `n` und eine Liste von Münzen `coins`. Implementieren Sie eine naive rekursive Funktion `minCoins(n: int, coins: list[int]) -> int`, die die minimale Anzahl an Münzen zurückgibt, die benötigt wird, um den Betrag `n` zu erreichen. 
+   Gegeben sei ein Betrag ``n`` und eine Liste von Münzen ``coins``. Implementieren Sie eine naive rekursive Funktion ``minCoins(n: int, coins: list[int]) -> int``, die die minimale Anzahl an Münzen zurückgibt, die benötigt wird, um den Betrag `n` zu erreichen. 
 
    .. solution::
       :pwd: NichtsIstEinfacher
@@ -82,7 +77,7 @@ Dynamische Programmierung
 .. exercise:: Minimale Anzahl an Münzen mit dynamischer Programmierung
    :class: incremental
 
-   Stellen Sie die Funktion `minCoins(n: int, coins: list[int]) -> int` so um, dass sie dynamische Programmierung einsetzt.
+   Stellen Sie die Funktion ``minCoins(n: int, coins: list[int]) -> int`` so um, dass sie dynamische Programmierung einsetzt.
     
    .. solution::
       :pwd: AuchNicht+Schwer
@@ -94,32 +89,27 @@ Dynamische Programmierung
 
 
 
-.. class:: integrated-exercise
+.. class:: exercises
 
 Folgen
 ------
 
-.. exercise:: wichtige Grenzwerte
+.. exercise:: Wichtige Grenzwerte
 
-   Wie Sie die Grenzwerte der folgenden Folgen:
+   Wie sind die Grenzwerte der folgenden Folgen:
 
    .. math::
 
-      \lim_{{n \to \infty}} {q^n \over n!}\quad \text{für} \; \ q \in \mathbb{C} 
-   
-      \lim_{{n \to \infty}} \sqrt[n]{n}  
+      \lim_{{n \to \infty}} {q^n \over n!}\; \text{für} \; \ q \in \mathbb{C} \qquad \text{und} \qquad \lim_{{n \to \infty}} \sqrt[n]{n}  
 
    .. solution::
       :pwd: 42_ist_nicht_immer_die_Lösung
 
-      Die erste Folge konvergiert gegen 0, wenn `q` ein beliebiger Wert ist. Die zweite Folge konvergiert gegen 1.
+      Die erste Folge konvergiert gegen 0, wenn ``q`` ein beliebiger Wert ist. Die zweite Folge konvergiert gegen 1.
 
 .. exercise:: Konvergenz einer Folge
 
-   Gegen welchen Wert konvergiert die Folge:
-   
-   .. math:: 
-         a_n = n^3+n^2+1\over n^4
+   Gegen welchen Wert konvergiert die Folge: :math:`a_n = {n^3+n^2+1\over n^4}`
 
    Wie gehen Sie vor, um den Grenzwert einer Folge zu bestimmen?
 
@@ -134,7 +124,7 @@ Folgen
 
 
 
-.. class:: integrated-exercise
+.. class:: exercises
 
 Analyse des asymptotischen Verhaltens
 --------------------------------------
@@ -156,7 +146,7 @@ Analyse des asymptotischen Verhaltens
 
 
 
-.. class:: integrated-exercise
+.. class:: exercises
 
 Landau-Notation
 ----------------
@@ -178,7 +168,7 @@ Landau-Notation
   
   
 
-.. class:: integrated-exercise
+.. class:: exercises
 
 Rekurrenz-Gleichungen und das Master Theorem
 ----------------------------------------------
@@ -209,7 +199,6 @@ Rekurrenz-Gleichungen und das Master Theorem
               :math:`f(n) \in \Theta(n^{2}\cdot(\log n)^k)` für :math:`k=1`.
 
       :Ergebnis: Daher ist die Laufzeit :math:`T(n) \in \Theta(n^2\cdot (\log_2 n)^2)`. (Beachte, dass der zweite Faktor :math:`(\log n)^{k+1}` ist.)
-
 
       .. rubric:: 2. Lösung
 
