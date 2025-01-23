@@ -23,7 +23,6 @@
 .. role:: the-blue
 .. role:: obsolete
 
-
 .. role:: raw-html(raw)
    :format: html
 
@@ -32,11 +31,11 @@
 W3WI_108 - Programmierung 1
 ================================================
 
-.. container:: line-above
+----
 
-    :Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
-    :Kontakt: michael.eichberg@dhbw.de, Raum 149B
-    :Version: 24EG/EH 
+:Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
+:Kontakt: michael.eichberg@dhbw.de, Raum 149B
+:Version: 24EG/EH 
 
 
 

@@ -21,11 +21,7 @@
 .. role:: red
 .. role:: green
 .. role:: the-blue
-.. role:: minor
 .. role:: obsolete
-.. role:: line-above
-.. role:: huge
-.. role:: xxl
 
 .. role:: raw-html(raw)
    :format: html
@@ -35,11 +31,11 @@
 W3WI_AM302 - Fortgeschrittene Systementwicklung
 ================================================
 
-.. container:: line-above
+----
 
-    :Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
-    :Kontakt: michael.eichberg@dhbw.de, Raum 149B
-    :Version: 23AMA
+:Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
+:Kontakt: michael.eichberg@dhbw.de, Raum 149B
+:Version: 23AMA
 
 
 
@@ -57,7 +53,7 @@ Inhalte
   IT-Sicherheitsthemen mit einem starken Softwareentwicklungsschwerpunkt:
   Insbesondere Tools und Methoden für die Entwicklung sicherer, skalierbarer Anwendungen und die automatische Identifikation von Schwachstellen (d. h. Ausgewählte Aspekte des *Secure Software Development*)
 
-.. container:: minor
+.. container:: peripheral
 
   - voraussichtlich im 6. Semester: 
     
@@ -78,9 +74,7 @@ Dieses Semester 12 VL:
 - \23. Oct 2024: 13:45 bis 17:00 
 - \28. Oct 2024: 13:45 bis 17:00 
   
-  Davon 20Minuten Kurztest! 
-  
-  :minor:`(Test von 16:40 bis 17:00 Uhr; davor 10 Minuten Pause.)`
+  Davon 20Minuten Kurztest von 16:40 bis 17:00 Uhr; davor 10 Minuten Pause.
 
 Nächstes Semester: 43 VL
 

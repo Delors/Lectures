@@ -57,6 +57,7 @@ Labor Web Projekt:
 - Die theoretischen Inhalte sollen jeweils auch mit aktuellen Technologien beispielhaft umgesetzt werden. Es soll eine übergreifende Anwendung entwickelt werden anhand derer das Zusammenspiel deutlich wird.
 
 
+
 Prüfungsleistung - Portfolio
 ------------------------------------------
 
