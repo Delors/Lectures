@@ -1,10 +1,11 @@
 from abc import abstractmethod
 
-
 class Expr:
 
     @abstractmethod
-    def is_solution(self, binding: dict["Var", bool]) -> bool | None:
+    def is_solution(
+            self, 
+            binding: dict["Var", bool]) -> bool | None:
         """True or False if this expression definitively
         evaluates to the respective truth value with the
         given binding or None otherwise.
@@ -45,7 +46,8 @@ class And(Expr):
         return " ⋀ ".join(str(expr) for expr in self.exprs)
 
     def __repr__(self):
-        return "And(" + ", ".join(str(expr) for expr in self.exprs) + ")"
+        exprs = ", ".join(str(expr) for expr in self.exprs)
+        return "And(" + exprs + ")"
 
 
 class Or(Expr):
@@ -66,7 +68,8 @@ class Or(Expr):
         return " ⋁ ".join(str(expr) for expr in self.exprs)
 
     def __repr__(self):
-        return "Or(" + ", ".join(repr(expr) for expr in self.exprs) + ")"
+        exprs = ", ".join(repr(expr) for expr in self.exprs)
+        return "Or(" + exprs + ")"
 
 
 class Not(Expr):
@@ -131,16 +134,17 @@ solution: dict[Var, bool] = {}
 
 def solve(expr, vars):
     var = vars[0]
-    for v in [True, False]:  # try both values for the variable
-        solution[var] = v  # bind the variable to the value
-        e = expr.is_solution(solution)  # check if the expression is a solution
+    for v in [True, False]: # try both values for the variable
+        solution[var] = v # bind the variable to the value
+        e = expr.is_solution(solution) # check if the expression
+                                       # is a solution
         # print("State: " + str(solution) + " => " + str(e))
-        if e is None:  # not inconsistent -> continue
-            solve(expr, vars[1:])  # try the next variable
+        if e is None: # not inconsistent -> continue
+            solve(expr, vars[1:]) # try the next variable
         elif e:
             print("Solution found: " + str(solution))
 
-    del solution[var]  # enable backtracking
+    del solution[var] # enable backtracking
 
 
 solve(expr, vars)
