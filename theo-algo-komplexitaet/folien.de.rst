@@ -1,5 +1,5 @@
 .. meta::
-    :version: genesis
+    :version: renaissance
     :lang: de
     :author: Michael Eichberg
     :keywords: "Komplexität", "Algorithmen"
@@ -11,11 +11,28 @@
 .. |html-source| source::
     :prefix: https://delors.github.io/
     :suffix: .html
+
 .. |pdf-source| source::
     :prefix: https://delors.github.io/
     :suffix: .html.pdf
+
+.. |group_assignment_template.py| source:: code/group_assignment_template.py
+            :path: relative
+            :prefix: https://delors.github.io/
+
+.. |GroupAssignmentTemplate.java| source:: code/GroupAssignmentTemplate.java
+            :path: relative
+            :prefix: https://delors.github.io/
 .. |at| unicode:: 0x40
 .. |qm| unicode:: 0x22 
+
+.. |python-icon| image:: /LectureDoc2/ext/icons/python-logo-only.svg
+                    :height: 1em
+                    :class: icon
+
+.. |java-icon| image:: /LectureDoc2/ext/icons/duke.svg
+                    :height: 1em
+                    :class: icon
 
 .. role:: incremental
 .. role:: appear
@@ -25,25 +42,15 @@
 .. role:: green
 .. role:: the-blue
 .. role:: the-green
-.. role:: minor
 .. role:: obsolete
-.. role:: line-above
-.. role:: smaller
-.. role:: far-smaller
 .. role:: monospaced
+.. role:: peripheral
 .. role:: copy-to-clipboard
 .. role:: kbd
 .. role:: java(code)
    :language: java
 
 
-.. |group_assignment_template.py| source:: code/group_assignment_template.py
-            :path: relative
-            :prefix: https://delors.github.io/
-
-
-
-.. class:: animated-symbol 
 
 Komplexität und Algorithmen
 ====================================================
@@ -52,9 +59,9 @@ Komplexität und Algorithmen
 
 :Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
 :Kontakt: michael.eichberg@dhbw.de, Raum 149B
-:Version: 1.3
+:Version: 2.0
 
-.. container:: minor
+.. container:: peripheral
 
     :Quelle: 
         Die Folien sind teilweise inspiriert von oder basierend auf Lehrmaterial von Prof. Dr. Ritterbusch, Prof. Dr. Baumgart oder Prof. Dr. Albers.
@@ -89,28 +96,30 @@ Einführung - Landau’sche O-Notation
 Berechnungskomplexität
 ----------------------
 
-.. container:: scrollable
+.. deck::
 
-    Analyse des Aufwands zur Berechnung von Ergebnissen ist wichtig ...
+    .. card:: 
 
-    .. class:: incremental
+        Analyse des Aufwands zur Berechnung von Ergebnissen ist wichtig ...
 
-    - im Design,
-    - in der Auswahl
-    - und der Verwendung von Algorithmen.
+        .. class:: incremental
 
-    .. container:: incremental
+        - im Design,
+        - in der Auswahl
+        - und der Verwendung von Algorithmen.
+
+    .. card::
 
         Für relevante Algorithmen und Eingangsdaten können Vorhersagen getroffen werden:
 
         .. class:: incremental list-with-explanations
 
-            - Um Zusammenhänge sind zwischen Eingangsdaten und Aufwand zu finden.
-            - Aufwand kann Rechenzeit, Speicherbedarf oder auch Komponentennutzung sein.
+        - Um Zusammenhänge sind zwischen Eingangsdaten und Aufwand zu finden.
+        - Aufwand kann Rechenzeit, Speicherbedarf oder auch Komponentennutzung sein.
 
-            **Der Rechenaufwand ist häufig zentral** und wird hier betrachtet, die Verfahren sind aber auch für weitere Ressourcen anwendbar.
+          **Der Rechenaufwand ist häufig zentral** und wird hier betrachtet, die Verfahren sind aber auch für weitere Ressourcen anwendbar.
 
-    .. container:: incremental
+    .. card:: 
 
         .. rubric:: Die Vorhersagen erfolgen über asymptotische Schätzungen
 
@@ -118,7 +127,7 @@ Berechnungskomplexität
         - durch Kategorisierung im Sinne des Wachstumsverhaltens,
         - damit ist oft keine exakte Vorhersage möglich.
 
-    .. container:: incremental
+    .. card:: 
 
         .. rubric:: Unterschiedliche Systeme sind unterschiedlich schnell, relativ dazu wird es interessant.
 
@@ -144,7 +153,7 @@ Entwurf von Algorithmen: Dynamische Programmierung
 
 
 
-.. class:: integrated-exercise
+.. class:: exercises
 
 Übung
 ------------------------------------------
@@ -155,7 +164,13 @@ Entwurf von Algorithmen: Dynamische Programmierung
 
     .. hint::
 
-        Die Fibonacci-Zahlen sind definiert durch die Rekursionsformel :math:`F(n) = F(n-1) + F(n-2)` mit den Anfangswerten :math:`F(0) = 0` und :math:`F(1) = 1`.
+        Die Fibonacci-Zahlen sind definiert durch die Rekursionsformel:
+        
+        :math:`F(n) = F(n-1) + F(n-2)` 
+        
+        mit den Anfangswerten: 
+         
+        :math:`F(0) = 0` und :math:`F(1) = 1`.
 
     Bis zu welchem :math:`n` können Sie die Fibonacci-Zahlen in vernünftiger Zeit berechnen (d. h. < 10 Sekunden) ?
 
@@ -164,7 +179,7 @@ Entwurf von Algorithmen: Dynamische Programmierung
 
         Je nach Rechner und Laufzeitumgebung dürfte zwischen fib(35) und fib(45) die Grenze liegen, wenn man innerhalb von 10 Sekunden bleiben möchte.
 
-        Lösung in Python:
+        .. rubric:: |python-icon| Lösung in Python:
 
         .. code:: Python
             :class: smaller copy-to-clipboard
@@ -177,7 +192,9 @@ Entwurf von Algorithmen: Dynamische Programmierung
                  else :
                      return fib(n-1) + fib(n-2)
 
-        Lösung in Java 23 (ggf. mit --enable-preview zu starten!):
+        .. rubric:: |java-icon| Lösung in Java >23 
+        
+        (Ggf. mit --enable-preview zu starten!)
 
         .. code:: Java
             :class: smaller copy-to-clipboard
@@ -195,10 +212,10 @@ Entwurf von Algorithmen: Dynamische Programmierung
 Technik der dynamischen Programmierung
 ---------------------------------------
 
-
 :Rekursiver Ansatz: Lösen eines Problems durch Lösen mehrerer kleinerer Teilprobleme, aus denen sich die Lösung für das Ausgangsproblem zusammensetzt.
 :Phänomen: Mehrfachberechnungen von Lösungen
 :Methode: Speichern einmal berechneter Lösungen (in einer Tabelle) für spätere Zugriffe.
+
 
 
 Beispiel: Berechnung der Fibonacci-Zahlen (rekursiv)
@@ -206,44 +223,48 @@ Beispiel: Berechnung der Fibonacci-Zahlen (rekursiv)
 
 .. container:: scrollable
         
-    .. rubric:: Definition
+    .. definition:: 
 
-    :math:`F(0) = 0` 
+        :math:`F(0) = 0` 
 
-    :math:`F(1) = 1`.
+        :math:`F(1) = 1`.
 
-    :math:`F(n) = F(n-1) + F(n-2)` 
+        :math:`F(n) = F(n-1) + F(n-2)` 
 
-    .. container:: incremental
+    .. deck:: incremental
 
-        :math:`F(n)` als stehende Formel:
+        .. card::     
 
-        .. math::
+            .. warning::
+            
+                Die Berechnung der Fibonacci-Zahlen mit Hilfe einer naiven rekursiven Funktion ist sehr ineffizient.
 
-            F(n) = \left[{ 1 \over \sqrt{5} } (1.618 \ldots)^n  \right]
+        .. card::
+
+            :math:`F(n)` als stehende Formel:
+
+            .. math::
+
+                F(n) = \left[{ 1 \over \sqrt{5} } (1.618 \ldots)^n  \right]
 
 
-        .. warning::
-            :class: incremental
+        .. card::
 
-            Die Berechnung der Fibonacci-Zahlen mit Hilfe einer naiven rekursiven Funktion ist sehr ineffizient.
+            .. rubric:: Aufrufbaum
 
-    .. container:: incremental
-
-        .. rubric:: Aufrufbaum
-
-        .. image:: images/fib.svg
-            :height: 600px
-            :align: center
+            .. image:: images/fib.svg
+                :align: center
+        
 
 
 
 Vorgehen beim dynamischen Programmieren
 ----------------------------------------
 
+1. Rekursive Beschreibung des Problems P
+
 .. class:: incremental
 
-1. Rekursive Beschreibung des Problems P
 2. Bestimmung einer Menge :math:`T`, die alle Teilprobleme von :math:`P` enthält, auf die bei der Lösung von :math:`P` – auch in tieferen Rekursionsstufen – zurückgegriffen wird.
 3. Bestimmung einer Reihenfolge :math:`T_0 , \ldots, T_k` der Probleme in :math:`T`, so dass bei der Lösung von :math:`T_i` nur auf Probleme :math:`T_j`  mit :math:`j < i` zurückgegriffen wird.
 4. Sukzessive Berechnung und Speicherung von Lösungen für :math:`T_0 ,...,T_k`.
@@ -253,24 +274,25 @@ Vorgehen beim dynamischen Programmieren
 Beispiel: Berechnung der Fibonacci-Zahlen mit dynamischer Programmierung
 --------------------------------------------------------------------------------
 
-.. stack:: 
+.. deck:: 
 
-    .. layer::
+    .. card::
 
+        Rekursive Definition der Fibonacci-Zahlen nach gegebener Gleichung:
+        
         .. class:: incremental
 
-        1. Rekursive Definition der Fibonacci-Zahlen nach gegebener Gleichung.
-        2. :math:`T = { f(0),..., f(n-1)}`
-        3. :math:`T_i = f(i), i = 0,...,n – 1`
-        4. Berechnung von :math:`fib(i)` benötigt von den früheren Problemen nur die zwei letzten Teillösungen :math:`fib(i – 1)` und :math:`fib(i – 2)` für :math:`i ≥ 2`.
+        1. :math:`T = { f(0),..., f(n-1)}`
+        2. :math:`T_i = f(i), i = 0,...,n – 1`
+        3. Berechnung von :math:`fib(i)` benötigt von den früheren Problemen nur die zwei letzten Teillösungen :math:`fib(i – 1)` und :math:`fib(i – 2)` für :math:`i ≥ 2`.
 
-    .. layer:: incremental
+    .. card:: 
 
         .. rubric:: Lösung mit linearer Laufzeit und konstantem Speicherbedarf
 
         .. code:: pseudocode
             :number-lines:
-            :class: far-smaller copy-to-clipboard
+            :class: copy-to-clipboard
 
             procedure fib (n : integer) : integer
                 f_n_m2 := 0; f_n_m1 :=1
@@ -281,7 +303,7 @@ Beispiel: Berechnung der Fibonacci-Zahlen mit dynamischer Programmierung
                 if n ≤ 1 then return n 
                 else          return f_n
 
-    .. layer:: incremental
+    .. card:: 
 
         .. rubric:: Lösung mit Memoisierung (:eng:`Memoization`)
 
@@ -304,7 +326,7 @@ Beispiel: Berechnung der Fibonacci-Zahlen mit dynamischer Programmierung
 
 
 
-.. class:: integrated-exercise
+.. class:: exercises
 
 Übung
 ------------------------------------------
@@ -318,10 +340,35 @@ Beispiel: Berechnung der Fibonacci-Zahlen mit dynamischer Programmierung
     .. solution:: 
         :pwd: das ist schnell
 
-        In Python kann die Berechnung (Python 3.13 - Standardinstallation) bis fib(20577) durchgeführt werden, wenn das Ergebnis direkt angezeigt werden soll und keine weiteren Einstellungen verändert werden sollen.
+        .. rubric:: |java-icon| Lösung
+
+        Mit den Standarddatentypen ist in Java keine vernünftige Berechnung der Fibonacci-Zahlen möglich. Wir verwenden deswegen :java:`BigInteger`\ s.
+
+        .. code:: java
+            :class: copy-to-clipboard
+            :number-lines:
+
+            import java.math.BigInteger;
+
+            BigInteger fib(int n) {  
+                BigInteger f_n = null;
+                var f_n_m2 = BigInteger.ZERO;
+                var f_n_m1 = BigInteger.ONE;
+                for(int i = 2; i < n+1; i++) {
+                    f_n = f_n_m2.add(f_n_m1);
+                    f_n_m2 = f_n_m1;
+                    f_n_m1 = f_n;
+                }
+                return n <= 1 ? BigInteger.valueOf(n) : f_n;
+            }
+
+        .. rubric:: |python-icon| Lösung
+
+        In Python kann die Berechnung (Python 3.13 - Standardinstallation) bis :java:`fib(20577)` durchgeführt werden, wenn das Ergebnis direkt angezeigt werden soll und keine weiteren Einstellungen verändert werden sollen.
 
         .. code:: python
-            :class: far-smaller copy-to-clipboard
+            :class: copy-to-clipboard
+            :number-lines:
 
             def fib (n) :
                  f_n_m2 = 0
@@ -348,23 +395,32 @@ Folgen
 
 Im Allgemeinen werden Laufzeiten oder Aufwände in Abhängigkeit von einer Eingangsgröße als Folge beschrieben:
 
-.. admonition:: Definition
+.. definition::
 
     Eine Folge (:math:`a_n`) ist eine Abbildung, die jedem :math:`n \in \mathbb{N}` ein :math:`a_n` zuweist.
 
 .. class:: incremental
 
-- Folgenglieder
-  
-  Beispiel: (:math:`a_n`) : :math:`a_1 = 2, a_2 = 3, a_3 = 7, a_4 = 11, ...`
+- .. class:: column-list
+    
+    * Definition über Folgenglieder
+    * .. example:: 
+    
+            (:math:`a_n`) : :math:`a_1 = 2, a_2 = 3, a_3 = 7, a_4 = 11, ...`
 
-- Rekursive Definition 
-  
-  Beispiel: (:math:`c_n`) : :math:`c_1 = 1, c_2 = 1, c_{n+2} = c_n + c_{n+1}` für :math:`n \in \mathbb(N)`
+- .. class:: column-list 
 
-- Explizite Definition 
-  
-  Beispiel: (:math:`b_n`) : :math:`b_n = n^2` für :math:`n \in \mathbb{N}`
+    - Rekursive Definition 
+    - .. example:: 
+    
+        (:math:`c_n`) : :math:`c_1 = 1, c_2 = 1, c_{n+2} = c_n + c_{n+1}` für :math:`n \in \mathbb(N)`
+
+- .. class:: column-list
+    
+    - Explizite Definition 
+    - .. example:: 
+    
+        (:math:`b_n`) : :math:`b_n = n^2` für :math:`n \in \mathbb{N}`
 
 .. supplemental::
 
@@ -383,7 +439,6 @@ Folgen und Laufzeiten
     .. rubric:: Berechnung der Anzahl der Schritte zum Lösen der Türme von Hanoi.
 
     .. image:: images/hanoi.svg
-        :height: 500px
         :align: center
 
     .. container:: text-align-center minor far-smaller
@@ -407,50 +462,55 @@ Folgen und Laufzeiten
 Laufzeit der Lösung der Türme von Hanoi
 ----------------------------------------
 
-.. container:: scrollable
+.. deck::
 
-    Für die Lösung sind für jeden Ring :math:`n` die folgenden :math:`a_n` Schritte erforderlich:
+    .. card::
 
-    .. class:: incremental
+        Für die Lösung sind für jeden Ring :math:`n` die folgenden :math:`a_n` Schritte erforderlich:
 
-    1. Alle :math:`n−1` kleineren Ringe über Ring :math:`n` müssen mit :math:`a_{n−1}` Schritten auf den Hilfsstab.
-    2. Der Ring :math:`n` kommt auf den Zielstab mit einem Schritt.
-    3. Alle :math:`n−1` Ringe vom Hilfsstab müssen mit :math:`a_{n−1}` Schritten auf den Zielstab.
+        .. class:: incremental
 
-    .. container:: incremental
-
-        Bei nur einem Ring ist :math:`a_1 = 1` und sonst :math:`a_n = a_{n−1} + 1+ a_{n−1} = 2a_{n−1} + 1`. 
-
-    .. container:: incremental
-
-        Also:
-        :math:`a_1 = 1`, :math:`a_2 = 2·1+ 1= 3`, :math:`a_3 = 2·3+ 1= 7`, :math:`a_4 = 2·7+ 1= 15`, ...
-
-    .. container:: incremental
-
-        Damit liegt nahe, dass der Aufwand (:math:`1,3,7,15,...`) dem Zusammenhang :math:`a_n = 2^n−1` entspricht.
-
-    .. container:: incremental proof smaller rounded-corners padding-1em dhbw-light-gray-background 
-        
-        .. rubric:: Beweis durch vollständige Induktion
-
-        - Induktionsanfang :math:`n = 1`: :math:`a_1 = 2^n -1 =  2^1−1 = 1`
-        - Induktionsvoraussetzung: :math:`a_{n-1} = 2^{n-1}−1` und :math:`a_{n} = 2a_{n-1} + 1`
-        - Induktionsschritt (:math:`n-1 \rightarrow n`): 
-      
-          :math:`a_{n} = 2·(2^{n-1}−1)+1`
-
-          .. container:: incremental  
-
-            :math:`\quad\, = 2^{n}−2+1`
-
-          .. container:: incremental  
-
-            :math:`\quad\, = 2^{n}−1`
+        1. Alle :math:`n−1` kleineren Ringe über Ring :math:`n` müssen mit :math:`a_{n−1}` Schritten auf den Hilfsstab.
+        2. Der Ring :math:`n` kommt auf den Zielstab mit einem Schritt.
+        3. Alle :math:`n−1` Ringe vom Hilfsstab müssen mit :math:`a_{n−1}` Schritten auf den Zielstab.
 
         .. container:: incremental
 
-            Damit ist die Vermutung bestätigt.
+            Bei nur einem Ring ist :math:`a_1 = 1` und sonst :math:`a_n = a_{n−1} + 1+ a_{n−1} = 2a_{n−1} + 1`. 
+
+        .. container:: incremental
+
+            Also:
+            :math:`a_1 = 1`, :math:`a_2 = 2·1+ 1= 3`, :math:`a_3 = 2·3+ 1= 7`, :math:`a_4 = 2·7+ 1= 15`, ...
+
+        .. container:: incremental
+
+            Damit liegt nahe, dass der Aufwand (:math:`1,3,7,15,...`) dem Zusammenhang :math:`a_n = 2^n−1` entspricht.
+
+    .. card::
+
+        .. proof:: 
+            
+            .. rubric:: Beweis durch vollständige Induktion
+
+            - Induktionsanfang :math:`n = 1`: :math:`a_1 = 2^n -1 =  2^1−1 = 1`
+            - Induktionsvoraussetzung: :math:`a_{n-1} = 2^{n-1}−1` und :math:`a_{n} = 2a_{n-1} + 1`
+            - Induktionsschritt (:math:`n-1 \rightarrow n`): 
+        
+              :math:`a_{n} = 2·(2^{n-1}−1)+1`
+
+              .. container:: incremental  
+
+                :math:`\quad\, = 2^{n}−2+1`
+
+              .. container:: incremental  
+
+                :math:`\quad\, = 2^{n}−1`
+
+              .. container:: incremental
+
+                Damit ist die Vermutung bestätigt.
+
 
 
 Eigenschaften von Folgen - Konvergenz
@@ -475,27 +535,38 @@ Eigenschaften von Folgen - Konvergenz
 Eigenschaften von Folgen - Beispiel für Konvergenz
 --------------------------------------------------
 
-Betrachten wir die Folge (:math:`a_n`) mit :math:`a_n = {(−1)^n \over n} + 2`, :math:`n \in \mathbb{N}`:
+.. example:: 
 
-.. container:: incremental slightly-more-smaller box-shadow padding-1em dhbw-light-gray-background box-shadow rounded-corners
+    Betrachten wir die Folge (:math:`a_n`) mit :math:`a_n = {(−1)^n \over n} + 2`, :math:`n \in \mathbb{N}`:
 
-    Entwicklung der Folge:
+    .. deck:: 
 
-    .. math::
+        .. card:: 
 
-        a_1 = -1 + 2 = 1, a_2 = 0.5 + 2 = 2.5, a_3 = -0.33.. + 2 \approx 1.67, a_4 = 0.25 + 2 = 2.25, ...
+            .. rubric:: Entwicklung der Folge
 
-.. container:: incremental
+            :math:`a_1 = -1 + 2 = 1`
+            
+            :math:`a_2 = 0.5 + 2 = 2.5` 
+            
+            :math:`a_3 = -0.33.. + 2 \approx 1.67` 
+            
+            :math:`a_4 = 0.25 + 2 = 2.25` 
+            
+            ...
 
-    Die Folge konvergiert zu 2, da für ein gegebenes :math:`ε > 0` ein :math:`N` existiert so dass :math:`|a_n−a|<ε`:
 
-    .. math::
-    
-        |a_n−a|= |{ (−1)^n \over n} + 2 − 2| = |{(−1)^n \over n}| = {1 \over n} < ε
+        .. card::
 
-    wenn :math:`n > {1 \over ε}` ist.
-    
-    D. h. :math:`a_n \rightarrow 2` oder :math:`lim_{n→∞} a_n = 2`
+            Die Folge konvergiert zu 2, da für ein gegebenes :math:`ε > 0` ein :math:`N` existiert so dass :math:`|a_n−a|<ε`:
+
+            .. math::
+            
+                |a_n−a|= |{ (−1)^n \over n} + 2 − 2| = |{(−1)^n \over n}| = {1 \over n} < ε
+
+            wenn :math:`n > {1 \over ε}` ist.
+            
+            D. h. :math:`a_n \rightarrow 2` oder :math:`lim_{n→∞} a_n = 2`
 
 
 
@@ -508,12 +579,12 @@ Konvergenz von Folgen - Rechenregeln
 
     .. math::
 
-        \begin{array}{rl}
-            lim_{n→∞} λa_n & = λa \\
-            lim_{n→∞}(a_n ± b_n) & = a ± b \\
-            lim_{n→∞}(a_n·b_n) & = a·b \\
-            lim_{n→∞} {a_n \over b_n} & = {a \over b},\; \text{für}\; b ≠ 0, b_n ≠ 0 \\
-            lim_{n→∞} a^{p/q}_n & = a^{p/q} , \text{wenn}\; a^{p/q}\; \text{existiert} \\
+        \begin{array}{rcl}
+            lim_{n→∞} λa_n & = & λa \\
+            lim_{n→∞}(a_n ± b_n) & = & a ± b \\
+            lim_{n→∞}(a_n·b_n) & = & a·b \\
+            lim_{n→∞} {a_n \over b_n} & = & {a \over b},\; \text{für}\; b ≠ 0, b_n ≠ 0 \\
+            lim_{n→∞} a^{p/q}_n & = & a^{p/q} , \text{wenn}\; a^{p/q}\; \text{existiert} \\
         \end{array}
         
 
@@ -522,13 +593,13 @@ Konvergenz von Folgen - wichtige Grenzwerte
 
 .. math::
 
-    \begin{array}{rll}
-        \lim_{{n \to \infty}} q^n & = 0 & \text{wenn} \ |q| < 1 \\
-        \lim_{{n \to \infty}} q^n & = \infty & \text{wenn} \ q > 1 \\
-        \lim_{{n \to \infty}} {q^n \over n!} & = 0 & \text{für} \ q \in \mathbb{C} \\
-        \lim_{{n \to \infty}} \sqrt[n]{a} & = 1 & \text{wenn} \ a > 0 \\
-        \lim_{{n \to \infty}} \sqrt[n]{n} & = 1 \\
-        \lim_{{n \to \infty}} \sqrt[n]{n!} & = \infty \\
+    \begin{array}{rcll}
+        \lim_{{n \to \infty}} q^n & = & 0 & \text{wenn} \ |q| < 1 \\
+        \lim_{{n \to \infty}} q^n & = & \infty & \text{wenn} \ q > 1 \\
+        \lim_{{n \to \infty}} {q^n \over n!} & = & 0 & \text{für} \ q \in \mathbb{C} \\
+        \lim_{{n \to \infty}} \sqrt[n]{a} & = &1 & \text{wenn} \ a > 0 \\
+        \lim_{{n \to \infty}} \sqrt[n]{n} & = & 1 \\
+        \lim_{{n \to \infty}} \sqrt[n]{n!} & = & \infty \\
     \end{array}
 
 
@@ -561,29 +632,36 @@ Analyse des asymptotischen Verhaltens
 
 Wir möchten :math:`f(x) = \frac{\ln(x)}{x^{2/3}}` für :math:`x \to \infty` untersuchen.
 
-.. admonition:: Beobachtung
-    :class: far-smaller incremental
+.. deck::
 
-    1. Der Zähler, :math:`\ln(x)`, wächst gegen unendlich, aber sehr langsam im Vergleich zur Potenzfunktionen.
-    2. Der Nenner, :math:`x^{2/3}`, wächst viel schneller als :math:`\ln(x)` für große :math:`x`.
+    .. card:: 
 
-    .. container:: incremental
+        .. observation::
+            :class: incremental
 
-        Es liegt somit ein unbestimmter Ausdruck vom Typ :math:`\frac{\infty}{\infty}` vor. Wir verwenden nun die Regel von L'Hôpital.
+            1. Der Zähler, :math:`\ln(x)`, wächst gegen unendlich, aber sehr langsam im Vergleich zur Potenzfunktionen.
+            2. Der Nenner, :math:`x^{2/3}`, wächst viel schneller als :math:`\ln(x)` für große :math:`x`.
 
+            .. container:: incremental
 
-.. math:: 
-    :class: incremental
+                Es liegt somit ein unbestimmter Ausdruck vom Typ :math:`\frac{\infty}{\infty}` vor. Wir verwenden nun die Regel von L'Hôpital.
 
-    \lim_{x \to \infty} \frac{\ln(x)}{x^{2/3}} = \lim_{x \to \infty} \frac{\frac{d}{dx}(\ln(x))}{\frac{d}{dx}(x^{2/3})} = \lim_{x \to \infty} \frac{\frac{1}{x}}{\frac{2}{3}x^{-1/3}}
+    .. card::
 
-.. container:: incremental
+        .. rubric:: Anwendung von L'Hôpital
 
-    Das vereinfacht sich zu:
+        .. math:: 
+            :class: incremental
 
-    .. math:: 
+            \lim_{x \to \infty} \frac{\ln(x)}{x^{2/3}} = \lim_{x \to \infty} \frac{\frac{d}{dx}(\ln(x))}{\frac{d}{dx}(x^{2/3})} = \lim_{x \to \infty} \frac{\frac{1}{x}}{\frac{2}{3}x^{-1/3}}
 
-        = \lim_{x \to \infty} \frac{1}{x} \cdot \frac{3}{2}x^{1/3} = \lim_{x \to \infty} \frac{3}{2} \cdot \frac{1}{x^{2/3}} = 0
+        .. container:: incremental
+
+            Das vereinfacht sich zu:
+
+            .. math:: 
+
+                = \lim_{x \to \infty} \frac{1}{x} \cdot \frac{3}{2}x^{1/3} = \lim_{x \to \infty} \frac{3}{2} \cdot \frac{1}{x^{2/3}} = 0
 
 .. supplemental::
 
@@ -602,7 +680,7 @@ Wir möchten :math:`f(x) = \frac{\ln(x)}{x^{2/3}}` für :math:`x \to \infty` unt
 
 
 
-.. class:: integrated-exercise
+.. class:: exercises
 
 Übung - Konvergenz von einfachen Folgen
 ------------------------------------------
@@ -641,7 +719,7 @@ Wir möchten :math:`f(x) = \frac{\ln(x)}{x^{2/3}}` für :math:`x \to \infty` unt
 
 
 
-.. class:: integrated-exercise
+.. class:: exercises
 
 Übung - Konvergenz von Folgen
 ------------------------------------------
@@ -686,7 +764,6 @@ Wir möchten :math:`f(x) = \frac{\ln(x)}{x^{2/3}}` für :math:`x \to \infty` unt
             \lim_{n→∞} {1 \over \sqrt{1 + 1/n} +1  } = {1 \over 2} 
         
         (Da gilt: :math:`\lim_{n→∞} \sqrt{1 + 1/n} = 1`)
-
 
 .. supplemental::
 
@@ -805,16 +882,12 @@ Alternative Schreibweisen
 Verstehen von Aufwandsklassen
 ----------------------------------------
 
-
 .. image:: images/aufwandsklassen.svg
-    :height: 950px
     :align: center
 
-.. container:: incremental minor far-smaller
+.. container:: text-align-center incremental peripheral
 
     Häufige Vergleichsfunktionen sind zum Beispiel Monome wie :math:`n^k` für :math:`k ∈ \mathbb{N}_0`.
-
-
 
 
 
@@ -831,7 +904,7 @@ Asymptotische Laufzeitabschätzungen können zu Missverständnissen führen:
 
 
 
-.. class:: integrated-exercise  transition-move-to-top
+.. class:: exercises  transition-move-to-top
 
 Übung
 ------------------------------------------
@@ -890,7 +963,7 @@ Asymptotische Laufzeitabschätzungen können zu Missverständnissen führen:
     
 
 
-.. class:: integrated-exercise
+.. class:: exercises
 
 Übung - Asymptotische Abschätzungen
 ------------------------------------------
@@ -947,6 +1020,7 @@ Asymptotische Laufzeitabschätzungen können zu Missverständnissen führen:
         Somit sind die Funktionen :math:`f_1` und :math:`f_2` asymptotisch äquivalent.
 
 
+
 .. class:: new-section
 
 Algorithmische Komplexität 
@@ -987,38 +1061,46 @@ Algorithmen sind Verfahren, die gegebene Ausprägungen von Problemen in endlich 
     - Anzahl der Eingabewerte: :math:`f(x_1, x_2, . . . , x_n)`
 
 
+
 Aufwand - Übersicht
 ----------------------------------------
 
 .. image:: images/aufwand.svg
-    :height: 900px
     :align: center
+
+
+
+
+Komplexität
+----------------------------------------
+
+Wir unterscheiden:
+
+:Komplexität eines Algorithmus:
+
+    Asymptotischer Aufwand (n → ∞) der Implementierung des Algorithmus.
+
+:Komplexität eines Problems:
+
+    Minimale Komplexität (irgend) eines Algorithmus zur Lösung des Problems.
 
 
 
 Algorithmen - Zeitaufwand
 ----------------------------------------
 
-.. note::
-    :class: far-smaller incremental
-
-    Wir unterscheiden:
-
-    - Komplexität eines Algorithmus
-    
-      Asymptotischer Aufwand (n → ∞) der Implementierung des Algorithmus.
-    - Komplexität eines Problems
-    
-      Minimale Komplexität eines Algorithmus zur Lösung des Problems Algorithmus.
-
 
 Tatsächlicher Zeitaufwand hängt vom ausführenden Rechnersystem ab.
 
 .. class:: incremental
 
-- Beeindruckende Entwicklung der Rechentechnik.
-- Größere Probleme können gelöst werden.
-- **Langsamere Algorithmen bleiben langsamer auch auf schnellen Systemen.**
+- Beeindruckende Entwicklung der Rechentechnik in den letzten Jahrzehnten
+- Größere Probleme können gelöst werden
+
+.. warning::
+    :class: incremental
+
+    Langsamere Algorithmen bleiben langsamer auch auf schnellen Systemen.
   
 .. container:: incremental
         
@@ -1028,9 +1110,7 @@ Tatsächlicher Zeitaufwand hängt vom ausführenden Rechnersystem ab.
 
     - Von-Neumann System
     - *mit einer Recheneinheit*
-    - genaue Geschwindigkeit nicht relevant.
-
-
+    - genaue Geschwindigkeit nicht relevant
 
 .. supplemental::
 
@@ -1068,114 +1148,105 @@ Wichtige Komplexitätsklassen
 Komplexität und bekannte Algorithmen/Probleme
 ----------------------------------------------
 
-.. container:: scrollable
+.. deck::
 
-    .. container:: 
+    .. card:: 
 
         :math:`O(1)`
 
         - Liegt typischerweise dann vor, wenn das Programm nur einmal linear durchlaufen wird.
         - Es liegt keine Abhängigkeit von der Problemgröße vor, d. h. beispielsweise keine Schleifen in Abhängigkeit von :math:`n`.
       
-        - Beispiel:
-
-            .. class:: incremental
+        .. example::
+            :class: incremental
 
             Die Position eines Datensatzes auf einem Datenträger kann mit konstanten Aufwand berechnet werden.
 
-
-    .. container:: incremental
+    .. card:: 
 
         :math:`O(\log n)`
 
-        - Beispiel: 
-
-            .. class:: incremental
+        .. example::
+            :class: incremental
 
             Binäre Suche; d. h. in einem sortierten Array mit :math:`n` Zahlen eine Zahl suchen.
 
-    .. container:: incremental
+    .. card::
 
         :math:`O(n)`
 
-        - Beispiel: 
-
-            .. class:: incremental
+        .. example::
+            :class: incremental
 
             Invertieren eines Bildes oder sequentielle Suche in einem unsortierten Array.
 
-    .. container:: incremental
+    .. card::
 
         :math:`O(n \cdot \log n)`
 
-        - Beispiel: 
-        
-            .. class:: incremental
+        .. example::
+            :class: incremental
 
             Bessere Sortierverfahren wie z. B. Quicksort.
 
 
-    .. container:: incremental
+    .. card::
 
         :math:`O(n^2)`
 
         - Häufig bei zwei ineinander geschachtelten Schleifen.
 
-        - Beispiel: 
-        
-            .. class:: incremental
+        .. example::
+            :class: incremental
           
             Einfache Sortierverfahren wie z. B. Bubble-Sort oder die Matrixaddition.
 
 
-    .. container:: incremental
+    .. card::
 
         :math:`O(n^3)`
 
         - Häufig bei drei ineinander geschachtelten Schleifen.
 
-        - Beispiel: 
+        .. example::
+            :class: incremental
 
-            .. container:: incremental          
+            .. rubric:: Die (naive) Matrixmultiplikation
 
-                Die (naive) Matrixmultiplikation:
+            :math:`M(m, t)` ist eine Matrix mit :math:`m` Zeilen und :math:`t` Spalten.
+                
+            :math:`C(m, t) = A(m, n)· B(n, t)` mit
 
-                :math:`M(m, t)` ist eine Matrix mit m Zeilen und t Spalten.
-                    
-                :math:`C(m, t) = A(m, n)· B(n, t)` mit
-
-                :math:`c_{i,j} = \sum_{k = 1}^n a_{i,k}· b_{k,j}\qquad i = 1, . . . , m \qquad j = 1, . . . , t`
+            :math:`c_{i,j} = \sum_{k = 1}^n a_{i,k}· b_{k,j}\qquad i = 1, . . . , m \qquad j = 1, . . . , t`
 
 
-    .. container:: incremental
+    .. card::
 
         :math:`O(2^n)`
             
         - Typischerweise der Fall, wenn für eine Menge mit :math:`n` Elementen alle Teilmengen berechnet und verarbeitet werden müssen.
 
-        - Beispiel: 
+        .. example::
+            :class: incremental
 
-            .. container:: incremental
+            .. rubric:: Das Rucksackproblem (:eng:`Knapsack Problem`)
 
-                Rucksackproblem (:eng:`Knapsack Problem`)
+            Ein Rucksack besitzt eine maximale Tragfähigkeit und :math:`n` Gegenstände unterschiedlichen Gewichts und Wertes liegen vor, deren Gesamtgewicht über der Tragfähigkeit des Rucksacks liegt. Ziel ist es jetzt eine Teilmenge von Gegenständen zu finden, so dass der Rucksack optimal in Hinblick auf den Gesamtwert gefüllt wird.
 
-                Ein Rucksack besitzt eine maximale Tragfähigkeit und :math:`n` Gegenstände unterschiedlichen Gewichts und Wertes liegen vor, deren Gesamtgewicht über der Tragfähigkeit des Rucksacks liegt. Ziel ist es jetzt eine Teilmenge von Gegenständen zu finden, so dass der Rucksack optimal in Hinblick auf den Gesamtwert gefüllt wird.
-
-    .. container:: incremental
+    .. card::
 
         :math:`O(n!)`
 
         - Typischerweise der Fall, wenn für eine Menge von :math:`n` Elementen alle Permutationen dieser Elemente zu berechnen und zu verarbeiten sind.
 
-        - Beispiel: 
+        .. example::
+            :class: incremental
 
-            .. container:: incremental  
+            .. rubric:: Das Problem des Handlungsreisenden (:eng:`Traveling Salesman Problem (TSP)`)
 
-                Problem des Handlungsreisenden (:eng:`Traveling Salesman Problem (TSP)`)
+            Gegeben sind :math:`n` Städte, die alle durch Straßen direkt miteinander verbunden sind und für jede Direktverbindung ist deren Länge bekannt.
 
-                Gegeben sind :math:`n` Städte, die alle durch Straßen direkt miteinander verbunden sind und für jede Direktverbindung ist deren Länge bekannt.
-
-                Gesucht ist die kürzeste Rundreise, bei der jede Stadt genau einmal besucht wird.
+            Gesucht ist die kürzeste Rundreise, bei der jede Stadt genau einmal besucht wird.
 
 
 
@@ -1183,7 +1254,7 @@ Approximation von Laufzeiten
 ----------------------------------------
 
 .. note::
-    :class: slightly-more-smaller
+    :class: width-50
 
     Für die Approximation sei ein Rechner mit 4 GHz Taktrate angenommen und ein Rechenschritt soll einen Takt benötigen.
 
@@ -1229,29 +1300,33 @@ Iterative Algorithmen
 Elementare Kosten als Approximation
 ----------------------------------------
 
-.. csv-table::
-    :header: "Operation", "Anzahl der Rechenschritte"
-    :widths: 35, 65
-    :class: smaller highlight-line-on-hover
+.. deck::
 
-    "elementare Arithmetik: +    ,-    ,    *    , /, <, <=, etc.", 1
-    "elementare logische Operationen: &&, ||, !, etc.", 1
-    "Ein- und Ausgabe", 1
-    "Wertzuweisung", 1
-    ":java:`return`, :java:`break`, :java:`continue`", 1
+    .. card::
 
-.. incremental::
+        .. csv-table::
+            :header: "Operation", "Anzahl der Rechenschritte"
+            :widths: 35, 65
+            :class: smaller highlight-line-on-hover
 
-    .. csv-table::
-        :header: "Kontrollstrukturen", "Anzahl der Rechenschritte"
-        :widths: 35, 65
-        :class: smaller highlight-line-on-hover 
+            "elementare Arithmetik: +    ,-    ,    *    , /, <, <=, etc.", 1
+            "elementare logische Operationen: &&, ||, !, etc.", 1
+            "Ein- und Ausgabe", 1
+            "Wertzuweisung", 1
+            ":java:`return`, :java:`break`, :java:`continue`", 1
 
-        Methodenaufruf, 1 + Komplexität der Methode
-        "Fallunterscheidung", "Komplexität des logischen Ausdrucks + Maximum der Komplexität der Rechenschritte der Zweige"
-        Schleife, "Annahme: :math:`m` Durchläufe:
-        Komplexität der Initialisierung + :math:`m` mal die Komplexität des
-        Schleifenkörpers + Komplexität aller Schleifenfortschaltungen"
+    .. card::
+
+        .. csv-table::
+            :header: "Kontrollstrukturen", "Anzahl der Rechenschritte"
+            :widths: 35, 65
+            :class: smaller highlight-line-on-hover 
+
+            Methodenaufruf, 1 + Komplexität der Methode
+            "Fallunterscheidung", "Komplexität des logischen Ausdrucks + Maximum der Komplexität der Rechenschritte der Zweige"
+            Schleife, "Annahme: :math:`m` Durchläufe:
+            Komplexität der Initialisierung + :math:`m` mal die Komplexität des
+            Schleifenkörpers + Komplexität aller Schleifenfortschaltungen"
 
 
 
@@ -1259,7 +1334,6 @@ Beispiel Primzahltest: Analyse mit elementaren Kosten
 ------------------------------------------------------------
 
 .. code:: python
-    :class: far-smaller
 
     def ist_primzahl(n):
         prim = True                 # Wertzuweisung:            1
@@ -1298,39 +1372,35 @@ Beispiel Insertion-Sort: Analyse mit abstrahierten Kosten
 
     Vergleichbar zum Ziehen von Karten: die neue Karte wird an der richtigen Stelle eingeschoben.
 
-.. container:: two-columns margin-top-2em
+.. class:: column-list incremental
 
-    .. container:: column no-separator
+    - .. image:: images/insertion_sort.svg
+            :alt: Visualisierung des Insertion-Sort-Algorithmus
 
-        .. image:: images/insertion_sort.svg
-            :width: 900px
-            :align: center
-
-    .. container:: column incremental
-
-        .. code:: python
-            :class: far-smaller
+    - .. code:: python
+            :number-lines:
+            :class: copy-to-clipboard
 
             def insertion_sort(A):
-                for i in range(1, len(A)):         
-                    key = A[i]                     
-                    j = i - 1                      
-                    while j >= 0 and A[j] > key:   
-                        A[j + 1] = A[j]            
-                        j = j - 1                  
-                    A[j + 1] = key                 
+              for i in range(1, len(A)):         
+                key = A[i]                     
+                j = i - 1                      
+                while j >= 0 and A[j] > key:   
+                  A[j + 1] = A[j]            
+                  j = j - 1                  
+                A[j + 1] = key                 
 
 
 
 Beispiel Insertion-Sort: Detailanalyse 
 --------------------------------------------------------
 
-.. container:: scrollable smaller
+.. container:: scrollable
 
     .. csv-table::
         :class: no-table-borders no-inner-borders incremental highlight-line-on-hover 
         :header: "", "Algorithmus: Insertion-Sort(A, n) [Pseudocode]", "Zeit", "Anzahl"
-        :widths: 3, 70, 10, 35
+        :widths: 3, 80, 10, 25
 
         1:, ``for i = 2...n do``, "c1", :math:`n`
         2:,   ``key = A[i]``, c2, :math:`n-1`
@@ -1340,10 +1410,8 @@ Beispiel Insertion-Sort: Detailanalyse
         6:,     ``j = j - 1``,                      c6   ,  :math:`\sum_{i=2}^n (t_i−1)`
         7:,   ``A[j + 1] = key``,                   c7 ,     :math:`n−1`
 
-    .. container:: smaller
-
-       - :math:`c_x` sind die konstanten Kosten für die jeweilige Operation. Wir abstrahieren diese als :math:`c = max(c_1,...c_7)`.
-       - :math:`t_i` ist die Anzahl der Schritte, die für das Einsortieren der :math:`i`-ten Karte benötigt wird. Dies hängt davon ab, wie die Liste vorliegt.
+    - :math:`c_x` sind die konstanten Kosten für die jeweilige Operation. Wir abstrahieren diese als :math:`c = max(c_1,...c_7)`.
+    - :math:`t_i` ist die Anzahl der Schritte, die für das Einsortieren der :math:`i`-ten Karte benötigt wird. Dies hängt davon ab, wie die Liste vorliegt.
 
     .. container:: incremental 
 
@@ -1411,9 +1479,9 @@ Beispiel Insertion-Sort: Detailanalyse
 
 .. supplemental::
 
-    .. rubric:: Hinweise
+    .. hint::
 
-    - in Zeile 1 ist die Anzahl :math:`n`, da :math:`n-1` mal hochgezählt wird und dann noch ein Test erfolgt, der fehlschlägt und die Schleife beendet.
+        In Zeile 1 ist die Anzahl :math:`n`, da :math:`n-1` mal hochgezählt wird und dann noch ein Test erfolgt, der fehlschlägt und die Schleife beendet.
 
 
 
@@ -1436,7 +1504,7 @@ In Hinblick auf den Zeitaufwand gilt:
 
     
 
-.. class:: integrated-exercise transition-scale
+.. class:: exercises transition-scale
 
 Übung 
 ------------------------------------------
@@ -1448,7 +1516,6 @@ In Hinblick auf den Zeitaufwand gilt:
 
     .. code:: pseudocode
         :number-lines:
-        :class: far-smaller
 
         Algorithmus COMPUTE(n)
         p(n);
@@ -1473,14 +1540,13 @@ In Hinblick auf den Zeitaufwand gilt:
 
             :math:`1\cdot q(n)+2\cdot q(n)+3\cdot q(n)+…+n\cdot q(n) = q(n) \cdot \sum_{i = 1}^n i = q(n) \cdot {n(n+1)\over 2} = { n^2+n \over 2 } \cdot q(n)`
         
-        aufgerufen wird. 
-        Daraus folgt: 
+        aufgerufen wird. Daraus folgt: 
         
             :math:`(n(n+1))/2 \cdot q(n)` bzw. :math:`n^2 \cdot \log(n)`
 
 
 
-.. class:: integrated-exercise transition-scale
+.. class:: exercises transition-scale
 
 Übung 
 ------------------------------------------
@@ -1532,37 +1598,34 @@ In Hinblick auf den Zeitaufwand gilt:
 
 
 
-.. class:: integrated-exercise transition-scale
+.. class:: exercises transition-scale
 
 Übung 
 ------------------------------------------
 
 .. exercise:: Effizientere Power Funktion
-
-    .. container:: smaller
         
+    Bestimmen Sie die algo. asymptotische Komplexität durch Analyse jeder einzelnen Zeile. Jede Zeile kann mit konstantem Zeitaufwand abgeschätzt werden. 
+    Bestimmen Sie die Laufzeitkomplexität mit Indikator :math:`t_i` für gesetzte Bits in :math:`n` für den schlimmstmöglichen Fall - in Abhängigkeit von :math:`k` für eine nicht-negative Ganzzahl :math:`n` mit :math:`k` Bits. 
+    
+    .. supplemental:: 
+    
+        (D. h. :math:`t_i = 1`, wenn der i-te Bit von :math:`n` gesetzt ist, sonst ist :math:`t_i = 0`; sei :math:`n = 5_d = 101_b` dann ist :math:`t_1 = 1, t_2 = 0, t_3 = 1`).
 
-        Bestimmen Sie die algo. asymptotische Komplexität des folgenden Algorithmus durch Analyse jeder einzelnen Zeile. Jede Zeile kann für sich mit konstantem Zeitaufwand abgeschätzt werden. 
-        Bestimmen Sie die Laufzeitkomplexität mit Indikator :math:`t_i` für gesetzte Bits in :math:`n` für den schlimmstmöglichen Fall - in Abhängigkeit von :math:`k` für eine nicht-negative Ganzzahl :math:`n` mit :math:`k` Bits. 
-        
-        .. container:: smaller
-        
-            (D. h. :math:`t_i = 1`, wenn der i-te Bit von :math:`n` gesetzt ist, sonst ist :math:`t_i = 0`; sei :math:`n = 5_d = 101_b` dann ist :math:`t_1 = 1, t_2 = 0, t_3 = 1`).
+    .. code:: pseudocode
+        :number-lines:
+        :class: far-smaller
 
-        .. code:: pseudocode
-            :number-lines:
-            :class: far-smaller
-
-            Algorithmus BinPower(x,n)
-                r = 1
-                while n > 0 do
-                    if n mod 2 == 1 then
-                        r = r * x
-                        n = (n-1)/2
-                    else
-                        n = n/2
-                    x = x * x
-                return r
+        Algorithmus BinPower(x,n)
+            r = 1
+            while n > 0 do
+                if n mod 2 == 1 then
+                    r = r * x
+                    n = (n-1)/2
+                else
+                    n = n/2
+                x = x * x
+            return r
 
     .. solution::
         :pwd: Zaehlen_der_Schritte
@@ -1608,13 +1671,15 @@ In Hinblick auf den Zeitaufwand gilt:
 Rucksackproblem (:eng:`Knapsack Problem`)
 --------------------------------------------------------
 
-.. stack::
+.. deck::
 
-    .. layer::
+    .. card::
 
-        .. admonition:: Definition
+        .. definition::
 
-            Das Rucksackproblem: Gegeben seien Wertepaare :math:`\{(g_1,w_1),...,(g_m,w_m)\}` mit
+            .. rubric:: Das Rucksackproblem
+            
+            Gegeben seien Wertepaare :math:`\{(g_1,w_1),...,(g_m,w_m)\}` mit
             :math:`g_i ,w_i ∈ \mathbb{N}`, die das Gewicht :math:`g_i` und den Wert :math:`w_i` eines Teils :math:`i` darstellen. Gesucht sind
             die Anzahlen :math:`a_i ∈ \mathbb{N}_0` der jeweiligen Teile, so dass
 
@@ -1624,9 +1689,9 @@ Rucksackproblem (:eng:`Knapsack Problem`)
 
             also für gegebene maximale Last n des Rucksacks der aufsummierte Wert maximal wird.
 
-    .. layer:: incremental
+    .. card::
 
-        .. admonition:: Beispiel
+        .. example::
 
             Verfügbare Objekte (:math:`(Gewicht,Wert)`): :math:`A = \{(1,1),(3,4),(5,8),(2,3)\}`. 
             
@@ -1655,7 +1720,7 @@ Rucksackproblem - rekursive Lösung
         
     .. code:: python
         :number-lines:
-        :class: slightly-more-smaller copy-to-clipboard
+        :class: copy-to-clipboard
 
         gW = [ (1, 1), (3, 4), (5, 8), (2, 3) ] # [(Gewicht, Wert)...]
 
@@ -1673,7 +1738,7 @@ Rucksackproblem - rekursive Lösung
 
     .. incremental:: margin-top-1em
 
-        Für Komplexität nehmen wir jetzt die häufigste Aktion her; hier die Additionen.
+        Für die Bestimmung der Komplexität nehmen wir jetzt die häufigste Aktion her; hier die Additionen.
 
         Bei der Rekursion ergibt sich (:math:`m` = Anzahl der verschiedenen Objekte):
 
@@ -1713,10 +1778,8 @@ Rucksackproblem - iterative Lösung
     
     Gehe über alle Objekte. Berechne in jedem Schleifendurchlauf :java:`i` bei Hinzunahme von Teil :java:`i` das jeweils das beste Ergebnis für alle Kapazitäten :java:`j` bis inklusive :java:`n`. 
 
-
-    .. container:: incremental
-
-        .. rubric:: Beispiel    
+    .. example:: 
+        :class: incremental        
 
         Verfügbare Objekte (:math:`(Gewicht,Wert)`): :math:`A = \{(1,1),(3,4),(5,8),(2,3)\}`. Sei die maximale Traglast :math:`n = 7`:
 
@@ -1736,7 +1799,7 @@ Rucksackproblem - iterative Lösung
                     
         .. code:: python
             :number-lines:
-            :class: slightly-more-smaller copy-to-clipboard
+            :class: copy-to-clipboard
 
             gW = [ (1, 1), (3, 4), (5, 8), (2, 3) ] # (Gewicht, Wert)
 
@@ -1772,7 +1835,7 @@ Rucksackproblem - iterative Lösung
 
     .. rubric:: Erklärungen
 
-    Grobe Idee: Wir gehen in der Methode :java:`bestWertIterativ` über alle Objekte (Zeile 5). In der inneren Schleife (Zeile 7) iterieren wir über die Traglasten, die das Objekt – ggf. auch mehrfach – aufnehmen könnten (:java:`range(gewt, n + 1)`). Für jede dieser Traglasten prüfen wir ob es vorteilhaft ist das Objekt in den Rucksack zu packen. Falls ja, dann wird der aktuell beste Wert für die Traglast aktualisiert.
+    Grobe Idee: Wir gehen in der Methode :java:`bestWertIterativ` über alle Objekte (Zeile 5). In der inneren Schleife (Zeile 7) iterieren wir über die Traglasten, die das Objekt — ggf. auch mehrfach — aufnehmen könnten (:java:`range(gewt, n + 1)`). Für jede dieser Traglasten prüfen wir ob es vorteilhaft ist das Objekt in den Rucksack zu packen. Falls ja, dann wird der aktuell beste Wert für die Traglast aktualisiert.
     
     D. h. wir legen zum Beispiel ein Objekt mit dem Gewicht 2 bei einer verbleibenden Traglast von 5 ggf. (implizit) dadurch mehrfach in den Rucksack, dass wir bereits den besten Wert für die kleineren Traglasten kennen.
 
@@ -1782,31 +1845,29 @@ Rucksackproblem - Vergleich
 
 .. container:: scrollable
 
-    .. container:: two-columns
-
-        .. container:: column
-
-            .. math::
+    .. class:: column-list evenly-spaced-columns
+        
+    - .. math::
 
                 \begin{array}{rl}
                 c^{Rek}_{Add}(n) = & \dfrac{m}{m-1} (m^n-1) \\
                 = & \dfrac{4}{3}(4^n-1) 
                 \end{array}
 
-        .. container:: column
-
-            .. math::
+    - .. math::
                     
                 \begin{array}{rl}
                     c^{Ite}_{Add}(n)    & = m·n \\
                                         & = 4n 
                 \end{array}
 
-    .. container:: incremental margin-top-1em summary
+    .. summary:: 
+        :class: incremental
 
         Die iterative Variante ist wegen der vermiedenen Berechnung gleicher Werte – aufgrund der Verwendung von dynamischer Programmierung – praktisch immer schneller. Dies könnte bei Rekursion ggf. mit Caching erreicht werden.
 
-    .. container:: margin-top-1em incremental
+    .. question::
+        :class: incremental
 
         Wieso ist das Rucksackproblem dann aber als NP-vollständig klassifiziert?
 
@@ -1816,18 +1877,13 @@ Rucksackproblem - Vergleich
         
         .. container:: incremental
 
-            .. container:: two-columns
+            .. class:: list-column 
 
-                .. container:: column
-
-                    .. math::
+            - .. math::
 
                         c^{Rek}_{Add}(2^k-1) =  \dfrac{4}{3}(4^{2^k-1}-1) \in O(4^{2\cdot k})
                         
-
-                .. container:: column
-
-                    .. math::
+            - .. math::
                             
                         c^{Ite}_{Add}(2^k-1) = 4(2^k-1) \in \Theta(2^k)
                         
@@ -2067,12 +2123,13 @@ Anwendung des Master-Theorems: 3. Beispiel
 Master-Theorem: Zusammenfassung
 ----------------------------------------
 
-.. container:: box-shadow rounded-corners padding-1em 
+.. summary:: 
 
     Das Master-Theorem hilft also, die asymptotische Komplexität von Algorithmen schnell zu bestimmen, ohne dass eine detaillierte Analyse der Rekurrenz erforderlich ist.
 
 
-.. class:: integrated-exercise transition-scale
+
+.. class:: exercises transition-scale
 
 Übung
 --------------------------------------------------------
@@ -2141,7 +2198,7 @@ Master-Theorem: Zusammenfassung
         :Ergebnis: Daher ist die Laufzeit :math:`T(n) \in \Theta(\log n)`.
 
 
-.. class:: integrated-exercise transition-scale
+.. class:: exercises transition-scale
 
 Übung
 --------------------------------------------------------
@@ -2167,9 +2224,6 @@ Master-Theorem: Zusammenfassung
         .. math::
 
            T(n) = \Theta(n \cdot \log n)
-
-
-
 
 
 
@@ -2208,20 +2262,6 @@ Backtracking
 Beispiel: Das 4-Damen Problem (konzeptuell)
 --------------------------------------------------------------------------
 
-.. note::
-    :class: slightly-more-smaller
-
-    Ziel: Vier Damen auf einem Schachbrett so zu platzieren, dass keine Dame eine andere Dame schlagen kann.\ [#]_ Eine Lösung:
-
-    .. csv-table::
-        :header: " ", "1", "2", "3", "4"
-        :class: align-center background-white
-
-        1, " ", " ", "D", " "
-        2, "D", " ", " ", " "
-        3, " ", " ", " ", "D"
-        4, " ", "D", " ", " "
-
 .. code:: pascal
     :number-lines:
     :class: far-smaller 
@@ -2246,22 +2286,33 @@ Beispiel: Das 4-Damen Problem (konzeptuell)
 
 .. supplemental::
 
-   Wesentliche Elemente:
+    Ziel ist es vier Damen auf einem Schachbrett so zu platzieren, dass keine Dame eine andere Dame schlagen kann.\ [#]_ Eine Lösung:
 
-   - Die Lösung ist endlich.
-   - Die Lösung wird iterativ aufgebaut. Es ist jederzeit möglich zu testen, ob die bisherige Lösung noch gültig ist (Zeile 6, 7).
-   - Ist eine Lösung nicht mehr möglich, wird die Teillösung auch nicht weiter verfolgt. 
-   - Wurde eine Lösung gefunden, wird sie ausgegeben (Zeile 10, 11).
-   - Die Methode wird rekursiv aufgerufen, um die Lösung zu vervollständigen (Zeile 13).
+    .. csv-table::
+        :header: " ", "1", "2", "3", "4"
+        :class: align-center background-white
+
+        1, " ", " ", "D", " "
+        2, "D", " ", " ", " "
+        3, " ", " ", " ", "D"
+        4, " ", "D", " ", " "
+
+    Wesentliche Elemente:
+
+    - Die Lösung ist endlich.
+    - Die Lösung wird iterativ aufgebaut. Es ist jederzeit möglich zu testen, ob die bisherige Lösung noch gültig ist (Zeile 6, 7).
+    - Ist eine Lösung nicht mehr möglich, wird die Teillösung auch nicht weiter verfolgt. 
+    - Wurde eine Lösung gefunden, wird sie ausgegeben (Zeile 10, 11).
+    - Die Methode wird rekursiv aufgerufen, um die Lösung zu vervollständigen (Zeile 13).
 
 
 
 Backtracking - Allgemein
 --------------------------------------------------------
 
-.. stack::
+.. deck::
 
-    .. layer::
+    .. card::
 
         .. rubric:: Voraussetzungen für Backtracking
 
@@ -2273,7 +2324,7 @@ Backtracking - Allgemein
            D. h. die Menge der möglichen Werte pro :java:`a[i]` kann unterschiedlich sein. 
         3. Es gibt einen effizienten Test, ob eine Teillösung :java:`a[1], a[2], ..., a[k]` zu einer gültigen Lösung führen kann.
 
-    .. layer:: incremental
+    .. card:: 
 
         .. rubric:: Verfahren
 
@@ -2289,7 +2340,7 @@ Backtracking - Allgemein
 
 
 
-.. class:: integrated-exercise transition-scale
+.. class:: exercises transition-scale
 
 Übung
 ------------------------------------------
@@ -2339,48 +2390,47 @@ Backtracking - Allgemein
 
 
 
-
-.. class:: integrated-exercise 
+.. class:: exercises
 
 Übung
 ------------------------------------------
 
 .. exercise:: Das Erfüllbarkeitsproblem
 
-    .. note:: 
-        :class: smaller
-
-        **Konjunktive Normalform (KNF)**
+    .. supplemental:: 
+    
+        .. rubric:: Konjunktive Normalform (KNF)
 
         Ein logischer Ausdruck ist in KNF, wenn der Ausdruck nur als Konjunktion (UND-Verknüpfung) von Disjunktionen (ODER-Verknüpfungen) dargestellt wird. Die Negation darf nur auf Variablen angewendet werden.
 
         Beispiel: (A ∨ B ∨ C) ∧ (¬C ∨ D)
 
-    Entwickeln Sie ein Programm – in einer Programmiersprache Ihrer Wahl – dass in der Lage ist eine Formel in konjunktiver Normalform (KNF) auf Erfüllbarkeit zu prüfen. Prüfen Sie Ihr Programm anhand der vorhergehenden Aufgabe.
+    Entwickeln Sie ein Programm — in einer Programmiersprache Ihrer Wahl — das in der Lage ist eine Formel in konjunktiver Normalform (KNF) auf Erfüllbarkeit zu prüfen. 
+    
+    Prüfen Sie Ihr Programm anhand der vorhergehenden Aufgabe.
 
     .. hint::
-        :class: far-smaller 
 
-        Sollten Sie das Programm in Python implementieren wollen, dann können sie den Code im Anhang als Grundlage verwenden. Sie müssen dann nur noch die Methode ``solve`` implementieren. Der Code implementiert eine kleine Klassenhierarchie zur Darstellung von logischen Ausdrücken und ermöglicht die Evaluation (:java:`is_solution`) unter einer gegebenen Belegung. 
+        Sollten Sie das Programm in Python oder Java implementieren wollen, dann können sie den entsprechenden Code im Anhang als Grundlage verwenden. Sie müssen dann nur noch die Methode ``solve`` implementieren. Der Code implementiert eine kleine Klassenhierarchie zur Repräsentation von logischen Ausdrücken und ermöglicht die Evaluation (``is_solution`` bzw. ``isSolution``) unter einer gegebenen Belegung. 
     
     .. solution::
         :pwd: Anzahl_der_Belegungen
 
-        .. rubric:: Prolog
+        .. rubric:: Prolog basierte Lösung
 
-        Eine Lösung in (SWI)-Prolog könnte wie folgt aussehen (Zeile 1 bis 11 ist das vollständige Programm; Zeile 13 bis 30 implementiert die selber Lösung nur schöner):
+        Eine Lösung in (SWI)-Prolog könnte wie folgt aussehen (Zeile 1 bis 11 ist das vollständige Programm; Zeile 13 bis 30 implementiert die selbe Lösung nur schöner):
 
         .. include:: code/sat_model.pl
             :code: prolog
             :number-lines:
-            :class: smaller copy-to-clipboard
+            :class: copy-to-clipboard
 
-        .. rubric:: Python
+        .. rubric:: Python basierte Lösung
 
         .. include:: code/sat.py
             :code: python
             :number-lines:
-            :class: smaller
+            :class: copy-to-clipboard
             :start-after: variable to its current truth value (True or False)."""
 
         Die drei Lösungen sind:
@@ -2394,15 +2444,25 @@ Backtracking - Allgemein
 
 .. supplemental::
 
+    .. rubric:: |python-icon| Python Template
+
     .. include:: code/sat.py
         :code: python
         :number-lines:
-        :class: far-smaller copy-to-clipboard
-        :end-before:     for v
+        :class: copy-to-clipboard
+        :end-before:     var = vars[0]
+
+    .. rubric:: |java-icon| Java Template
+
+    .. include:: code/sat.java
+        :code: java
+        :number-lines:
+        :class: copy-to-clipboard
+        :end-before:     final var var = vars.pop();
 
 
 
-.. class:: integrated-exercise transition-move-to-top
+.. class:: exercises transition-move-to-top
 
 Übung
 --------------------------------------------------------
@@ -2411,13 +2471,11 @@ Backtracking - Allgemein
 
     Finden Sie eine sehr gute Aufteilung von Personen (Studierenden) auf eine feste Anzahl an Gruppen, basierend auf den Präferenzen der Personen zueinander. Nutzen Sie dazu Backtracking.
 
-    Im Template ist eine initiale Aufgabenstellung hinterlegt, die es zu lösen gilt: Verteilung von 16 Studierenden auf 4 Gruppen inkl. Bewertungsmatrix :minor:`(jeder Studierende hat jeden anderen mit Werten von 1 bis 10 bewertet)`.
+    Im Template ist eine initiale Aufgabenstellung hinterlegt, die es zu lösen gilt: Verteilung von 16 Studierenden auf 4 Gruppen inkl. Bewertungsmatrix :peripheral:`(jeder Studierende hat jeden anderen mit Werten von 1 bis 10 bewertet)`:
 
-    .. container:: slightly-more-smaller rounded-corners box-shadow padding-1em
+    |python-icon| |group_assignment_template.py|
 
-        **Template**
-
-        |group_assignment_template.py|
+    |java-icon| |GroupAssignmentTemplate.java|
 
     .. solution::
         :pwd: ALLE Kombinationen bewerten
