@@ -23,9 +23,6 @@
 .. role:: the-blue
 .. role:: minor
 .. role:: obsolete
-.. role:: line-above
-.. role:: huge
-.. role:: xxl
 
 .. role:: raw-html(raw)
    :format: html
@@ -35,7 +32,7 @@
 W3WI_SE305.1 - Ausgewählte Aspekte des Software Engineering III 
 ===============================================================================
 
-**IT Sicherheit - Teil 2**
+**IT Sicherheit - „Teil 2“**
 
 ----
 

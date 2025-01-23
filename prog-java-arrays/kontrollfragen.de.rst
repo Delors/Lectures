@@ -24,11 +24,7 @@
 .. role:: dhbw-red
 .. role:: green
 .. role:: the-blue
-.. role:: minor
 .. role:: obsolete
-.. role:: line-above
-.. role:: smaller
-.. role:: far-smaller
 .. role:: monospaced
 .. role:: copy-to-clipboard
 .. role:: kbd

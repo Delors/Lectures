@@ -24,11 +24,7 @@
 .. role:: dhbw-red
 .. role:: green
 .. role:: the-blue
-.. role:: minor
 .. role:: obsolete
-.. role:: line-above
-.. role:: smaller
-.. role:: far-smaller
 .. role:: monospaced
 .. role:: copy-to-clipboard
 .. role:: kbd
@@ -348,9 +344,9 @@ Formale Sprachen
 
         .. card::
 
-            Die Menge :math:`M ⊂ Σ^∗` von einer gleichen Anzahl von 0 und 1 in dieser Reihenfolge:
+            Die Menge :math:`M ⊂ Σ^*` von einer gleichen Anzahl von 0 und 1 in dieser Reihenfolge:
 
-            :math:`M = \{0^n1^n |n ∈ \mathbb{N}\}= \{01,0011,000111,00001111,0000011111,...\}`
+            :math:`M = \{0^n1^n | n ∈ \mathbb{N}\} = \{01,0011,000111,00001111,0000011111,...\}`
 
         .. card::
 
@@ -360,9 +356,9 @@ Formale Sprachen
 
         .. card::
 
-            Die Menge :math:`M ⊂ Σ^∗` mit Wörtern der Länge von Zweierpotenzen:
+            Die Menge :math:`M ⊂ Σ^*` mit Wörtern der Länge von Zweierpotenzen:
 
-            :math:`M = \{w ∈Σ^∗| |w| = 2^n, n ∈ \mathbb{N}\}= \{0,1,2,00,01,\ldots,21,22,0000,...\}`
+            :math:`M = \{w ∈Σ^*| |w| = 2^n, n ∈ \mathbb{N}\}= \{0,1,2,00,01,\ldots,21,22,0000,...\}`
 
 
 
@@ -438,7 +434,11 @@ Abzählbar (unendlich)
 
             Eine endliche Menge :math:`M` hat eine endliche Anzahl :math:`n = |M|` von Elementen. 
             
-            Wird nun beginnend von :math:`M_0 = M` und :math:`k= 1` in :math:`n` Schritten jeweils ein Element :math:`m_k` der Menge :math:`M_{k-1}` entnommen mit :math:`M_k = M_{k-1}\{m_k\}`, so ist induktiv :math:`|M_k| = |M_{k-1}| - 1 = n-k` und es ist :math:`M_n = ∅`. 
+            .. presenter-note::
+
+                :math:`|M|` ist die Kardinalität der Menge :math:`M` oder auch die Anzahl der Elemente in :math:`M`.
+
+            Wird nun beginnend von :math:`M_0 = M` und :math:`k= 1` in :math:`n` Schritten jeweils ein Element :math:`m_k` der Menge :math:`M_{k-1}` entnommen mit :math:`M_k = M_{k-1}\setminus\{m_k\}`, so ist induktiv :math:`|M_k| = |M_{k-1}| - 1 = n-k` und es ist :math:`M_n = ∅`. 
 
             .. presenter-note::
 
@@ -455,6 +455,10 @@ Abzählbar (unendlich)
         .. proof::
 
             Sei :math:`f(k) = n_k` die Abzählung der Menge N. Sei :math:`R = \{k ∈ \mathbb{N} | n_k ∈ M \}`; d. h. die Menge der Indizes der Elemente aus :math:`N`, die in :math:`M` sind. Dann ist die Einschränkung :math:`f_{|R} : R → M` von :math:`f` genau die Abzählung, die die Abzählbarkeit von :math:`M` beweist.
+
+            .. presenter-note::
+                
+                :math:`f_{|R}` ist die Einschränkung von :math:`f`, die nur auf der Teilmenge :math:`R` des Definitionsbereichs von f betrachtet wird.
 
     .. card::
 
@@ -1100,7 +1104,20 @@ Existenz der Abzählbarkeit
 
             Wir unterscheiden deswegen die einfache und nicht konstruktivistische Erkenntnis einer Abzählbarkeit von einer konstruktiven und praktischen Aufzählbarkeit.
 
+    .. card::
 
+        .. definition:: 
 
+            Eine Menge oder Sprache :math:`M` ist **aufzählbar** oder **rekursiv aufzählbar**, wenn eine surjektive Abbildung :math:`f : N →M` bekannt ist, die nach endlichen Schritten für jedes :math:`n ∈N` die Berechnung von :math:`f(n)` ermöglicht, falls :math:`M ≠ ∅`. Daraus ergibt sich eine Aufzählung von :math:`M` durch die Folge :math:`(f (1),f (2),...)`.
+
+        .. remark:: 
+            :class: incremental
+
+            Die Bedeutung der „Berechenbarkeit“ wird später im Sinne eines „Programms“ erklärt.
+
+        .. supplemental::
+
+            :„aufzählbar“: bezieht sich auf die Existenz der Aufzählung als „berechenbare Funktion“,
+            :„rekursiv aufzählbar“: bezieht sich auf die Existenz eines „Programms“, was aber hier äquivalent ist.   
 
 

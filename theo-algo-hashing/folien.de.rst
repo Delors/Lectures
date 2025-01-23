@@ -24,11 +24,7 @@
 .. role:: dhbw-red
 .. role:: green
 .. role:: the-blue
-.. role:: minor
 .. role:: obsolete
-.. role:: line-above
-.. role:: smaller
-.. role:: far-smaller
 .. role:: monospaced
 .. role:: copy-to-clipboard
 .. role:: kbd
@@ -93,14 +89,12 @@ Suchen in einer Liste
     +-----------------------------------------+----------+----------+---------+-------------------------+-----------+---------+---------------------------------+
 
 
-.. container:: question incremental
+.. question:: incremental
 
     Können wir effizienter suchen?
 
 .. [#] Binary Search Tree
 
-.. container.. block-footer text-align-center dhbw-light-gray-background dhbw-dark-gray
-    Wiederholung
 
 
 

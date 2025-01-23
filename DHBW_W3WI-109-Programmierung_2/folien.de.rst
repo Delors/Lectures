@@ -21,11 +21,8 @@
 .. role:: red
 .. role:: green
 .. role:: the-blue
-.. role:: minor
 .. role:: obsolete
-.. role:: line-above
-.. role:: huge
-.. role:: xxl
+
 
 .. role:: raw-html(raw)
    :format: html
@@ -74,6 +71,7 @@ Inhalte gem. MHB
         .. rubric:: Inhalte, die wir erst später (in einem anderen Semester/Kurs) behandeln werden
 
         :Nebenläufigkeit: Grundlagen der nebenläufigen Programmierung, Synchronisation von Threads, Deadlocks
+
 
 
 Modul

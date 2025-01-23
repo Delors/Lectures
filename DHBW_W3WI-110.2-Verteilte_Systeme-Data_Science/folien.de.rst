@@ -14,9 +14,7 @@
 .. role:: red
 .. role:: green
 .. role:: the-blue
-.. role:: minor
 .. role:: obsolete
-.. role:: line-above
 
 .. role:: raw-html(raw)
    :format: html
@@ -43,6 +41,7 @@ Kerninhalte gem. MHB
 - Synchrone und asynchrone Kommunikation, entfernter Methodenaufruf 
 - Asynchrone Kommunikation und Messaging-Systeme
 - Sicherheitsaspekte in verteilten Systemen
+
 
 
 Prüfungsleistung - Portfolio

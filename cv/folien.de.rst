@@ -11,7 +11,6 @@
 .. role:: incremental
 .. role:: eng
 .. role:: ger
-.. role:: minor
 .. role:: obsolete
 .. role:: dhbw-red
 .. role:: dhbw-gray
@@ -23,10 +22,11 @@
 .. role:: shiny-red
 .. role:: black
 .. role:: dark-red
-.. role:: huge
+
 
 .. role:: raw-html(raw)
    :format: html
+
 
 
 Lebenslauf - Prof. Dr. Michael Eichberg

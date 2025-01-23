@@ -14,11 +14,7 @@
 .. role:: red
 .. role:: green
 .. role:: the-blue
-.. role:: minor
 .. role:: obsolete
-.. role:: line-above
-.. role:: huge
-.. role:: xxl
 
 .. role:: raw-html(raw)
    :format: html
