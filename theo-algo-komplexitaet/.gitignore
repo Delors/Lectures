@@ -1,7 +1,8 @@
 images/hanoi.svg
-images/fib.svg
-images/aufwandsklassen.svg
-images/aufwand.svg
+
+# images/aufwand.svg (done by hand: fonts)
 images/insertion_sort.svg
+# images/fib.svg (done by hand: fonts)
+# images/aufwandsklassen.svg (done by hand: viewBox added)
 
 code/Erfuellbarkeitsproblem_Hoffmann_WDSKI23A.py
