@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xl="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" viewBox="165 224 555 271" width="555" height="271">
+  <style>
+    @import url('/LectureDoc2/ext/fonts/ld-fonts.css'); 
+  </style>
+  <defs>
+    <marker orient="auto" overflow="visible" markerUnits="strokeWidth" id="FilledArrow_Marker" stroke-linejoin="miter" stroke-miterlimit="10" viewBox="-1 -4 10 8" markerWidth="10" markerHeight="8" color="black">
+      <g>
+        <path d="M 8 0 L 0 -3 L 0 3 Z" fill="currentColor" stroke="currentColor" stroke-width="1"/>
+      </g>
+    </marker>
+  </defs>
+  <metadata> Produced by OmniGraffle 8.0\n2025-01-23 14:45:53 +0000</metadata>
+  <g id="Canvas_1" stroke="none" fill-opacity="1" stroke-dasharray="none" fill="none" stroke-opacity="1">
+    <title>Canvas 1</title>
+    <rect fill="white" x="165" y="224" width="555" height="271"/>
+    <g id="Canvas_1_Layer_1">
+      <title>Layer 1</title>
+      <g id="Graphic_2">
+        <text transform="translate(422.90586 224.52734)" fill="black">
+          <tspan font-family="Noto Sans Display" font-size="14.346" font-weight="400" fill="black" x="0" y="15" xml:space="preserve">Aufwand des Programms</tspan>
+        </text>
+      </g>
+      <g id="Graphic_3">
+        <text transform="translate(288.3985 266.21094)" fill="black">
+          <tspan font-family="Noto Sans Display" font-size="14.346" font-weight="400" fill="black" x="0" y="15" xml:space="preserve">Speicheraufwand</tspan>
+        </text>
+      </g>
+      <g id="Graphic_4">
+        <text transform="translate(577.92326 265.71094)" fill="black">
+          <tspan font-family="Noto Sans Display" font-size="14.346" font-weight="400" fill="black" x="0" y="15" xml:space="preserve">Zeitaufwand</tspan>
+        </text>
+      </g>
+      <g id="Graphic_5">
+        <text transform="translate(170.06909 336.71094)" fill="black">
+          <tspan font-family="Noto Sans Display" font-size="14.346" font-weight="400" fill="black" x="0" y="15" xml:space="preserve">Speicherplatzbedarf für</tspan>
+          <tspan font-family="Noto Sans Display" font-size="14.346" font-weight="400" fill="black" x="0" y="34" xml:space="preserve">das Maschinenprogramm</tspan>
+        </text>
+      </g>
+      <g id="Graphic_6">
+        <text transform="translate(360.27074 328.21094)" fill="black">
+          <tspan font-family="Noto Sans Display" font-size="14.346" font-weight="400" fill="black" x="0" y="15" xml:space="preserve">Speicherplatzbedarf für die</tspan>
+          <tspan font-family="Noto Sans Display" font-size="14.346" font-weight="400" fill="black" x="0" y="34" xml:space="preserve">Daten und die Programm-</tspan>
+          <tspan font-family="Noto Sans Display" font-size="14.346" font-weight="400" fill="black" x="0" y="53" xml:space="preserve">ausführung (Heap/Stack)</tspan>
+        </text>
+      </g>
+      <g id="Graphic_7">
+        <text transform="translate(223.8841 422.39453)" fill="black">
+          <tspan font-family="Noto Sans Display" font-size="14.346" font-weight="400" fill="black" x="0" y="15" xml:space="preserve">konstant</tspan>
+        </text>
+      </g>
+      <g id="Graphic_8">
+        <text transform="translate(369.1149 413.89453)" fill="black">
+          <tspan font-family="Noto Sans Display" font-size="14.346" font-weight="400" fill="black" x="0" y="15" xml:space="preserve">variabel in Abhängigkeit</tspan>
+          <tspan font-family="Noto Sans Display" font-size="14.346" font-weight="400" fill="black" x="0" y="34" xml:space="preserve">der Eingabewerte</tspan>
+        </text>
+      </g>
+      <g id="Graphic_9">
+        <text transform="translate(559.574 328.21094)" fill="black">
+          <tspan font-family="Noto Sans Display" font-size="14.346" font-weight="400" fill="black" x="0" y="15" xml:space="preserve">variabel in Abhängigkeit</tspan>
+          <tspan font-family="Noto Sans Display" font-size="14.346" font-weight="400" fill="black" x="0" y="34" xml:space="preserve">der Eingabewerte</tspan>
+        </text>
+      </g>
+      <g id="Graphic_10">
+        <text transform="translate(379.5733 475.625)" fill="black">
+          <tspan font-family="Noto Sans Display" font-size="14.346" font-style="italic" font-weight="700" fill="black" x="0" y="15" xml:space="preserve">Speicherkomplexität</tspan>
+        </text>
+      </g>
+      <g id="Graphic_11">
+        <text transform="translate(584.9951 475.625)" fill="black">
+          <tspan font-family="Noto Sans Display" font-size="14.346" font-style="italic" font-weight="700" fill="black" x="0" y="15" xml:space="preserve">Zeitkomplexität</tspan>
+        </text>
+      </g>
+      <g id="Line_12">
+        <line x1="466.9215" y1="243.52734" x2="389.56766" y2="263.7114" marker-end="url(#FilledArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Line_13">
+        <line x1="332.68295" y1="285.21094" x2="281.0699" y2="330.20542" marker-end="url(#FilledArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Line_14">
+        <line x1="355.68454" y1="285.21094" x2="402.684" y2="322.09865" marker-end="url(#FilledArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Line_15">
+        <line x1="529.7014" y1="243.52734" x2="581.9686" y2="262.3557" marker-end="url(#FilledArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Line_16">
+        <line x1="620.1861" y1="284.71094" x2="629.229" y2="318.6448" marker-end="url(#FilledArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Line_17">
+        <line x1="636.8415" y1="366.21094" x2="636.8415" y2="465.725" marker-end="url(#FilledArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Line_18">
+        <line x1="251.8581" y1="374.71094" x2="251.9486" y2="412.49456" marker-end="url(#FilledArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Line_19">
+        <line x1="446.63397" y1="385.21094" x2="446.5349" y2="403.99467" marker-end="url(#FilledArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Line_20">
+        <line x1="446.52863" y1="451.89453" x2="446.63504" y2="465.7253" marker-end="url(#FilledArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+    </g>
+  </g>
+</svg>
