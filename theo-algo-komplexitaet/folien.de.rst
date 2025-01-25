@@ -59,7 +59,7 @@ Komplexität und Algorithmen
 
 :Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
 :Kontakt: michael.eichberg@dhbw.de, Raum 149B
-:Version: 2.0
+:Version: 2.0.1
 
 .. container:: peripheral
 
@@ -951,7 +951,7 @@ Asymptotische Laufzeitabschätzungen können zu Missverständnissen führen:
 
             = \lim_{x→∞} {{d \over dx} (ln(x) + 1)  \over {d \over dx}  (x^{2/3}) } = \lim_{x→∞} {{1 \over x} \over 2/3 \cdot x^{-1/3}} = \lim_{x→∞} x^{-1} \cdot x^{1/3} \cdot {3 \over 2} = \lim_{x→∞} {3 \over \sqrt[3]{x^2} \cdot 2} = 0
 
-        Also ist :math:`f_1 \notin Θ(f_2)`, :math:`f_1 ∈ O(f_2)` und :math:`f_1 ∈ Ω(f_2)`.
+        Also ist :math:`f_1 \notin Θ(f_2)`, :math:`f_1 ∈ O(f_2)` und :math:`f_2 ∈ Ω(f_1)`.
 
         Also ist :math:`f_2 \notin Θ(f_3)`, :math:`f_2 ∈ Ω(f_3)` und :math:`f_3 ∈ O(f_2)`.
 
