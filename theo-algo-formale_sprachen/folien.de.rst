@@ -497,7 +497,7 @@ Abzählbar (unendlich)
               
             .. supplemental::
 
-                Rationale Zahlen können als Brüche dargestellt werden und mit Hilfe des Diagonalisierungsverfahren von Cantor in eine Bijektion zu den natürlichen Zahlen gebracht werden. 
+                Rationale Zahlen können als Brüche dargestellt werden und mit Hilfe des Diagonalisierungsverfahren von Cantor (auch: Cantors erstes Diagonalargument) in eine Bijektion zu den natürlichen Zahlen gebracht werden. 
 
                 Die 0 und alle negativen Brüche können wie zuvor eingeschoben werden. Auch alle rationalen Vektoren :math:`\mathbb{Q}^n` in beliebiger Dimension :math:`n ∈ \mathbb{N}` sind so abzählbar.
 
@@ -780,7 +780,11 @@ Abzählbar (unendlich)
 
 .. proof::
 
-    .. rubric:: Cantor's Diagonalargument
+    .. rubric:: Cantor's (zweites) Diagonalargument
+
+    .. presenter-note:: 
+        
+        Die Benennung ist hier nicht eindeutig und der Begriff *Diagonalargument* wird auch für Cantors erstes Diagonalargument verwendet bzw. bei der Verwendung des Begriffs Diagonalisierungsverfahren wird auch Cantors zweites Diagonalargument gemeint.
 
     Angenommen die reellen Zahlen sind als Binärbrüche wie folgt abzählbar:
 
@@ -1119,5 +1123,285 @@ Existenz der Abzählbarkeit
 
             :„aufzählbar“: bezieht sich auf die Existenz der Aufzählung als „berechenbare Funktion“,
             :„rekursiv aufzählbar“: bezieht sich auf die Existenz eines „Programms“, was aber hier äquivalent ist.   
+
+
+Aufzählbarkeit
+--------------------------------------------------------
+
+.. theorem::
+
+    Sei :math:`Σ` ein Alphabet, dann ist :math:`Σ^*` aufzählbar.
+
+.. proof::
+
+    Die Konstruktion aus dem früheren Satz zur Abzählbarkeit von :math:`Σ^*` ist schon eine konstruktive Aufzählung von :math:`Σ^*`. 
+    
+    Die nicht zugeordneten natürlichen Zahlen werden beispielsweise auf das jeweils zuletzt zugeordneten Wort abgebildet.
+
+
+.. class:: no-title s-center-child-elements
+
+Auf- und Abzählbarkeit
+--------------------------------------------------------
+
+.. summary::
+    
+    Zwischen den Bezeichnungen „aufzählbar“ zu „abzählbar“ ist der relevante Unterschied in der konstruktiven Kenntnis der Aufzählbarkeit im Gegensatz von der nicht konstruktiven Gewissheit der Abzählbarkeit.
+
+    .. attention::
+        :class: incremental
+
+        Es ist aber kein Verfahren bekannt, wie aus einer allgemeinen Aufzählung einer Sprache konstruktiv eine Aufzählung des Komplements abgeleitet werden kann. Das Gleiche gilt bei zwei aufgezählten Sprachen für deren Schnitt.
+
+.. supplemental::
+
+    Die Übertragung der Eigenschaft der Aufzählbarkeit muss mit Angabe eines ausführbaren Algorithmus erfolgen. 
+    
+    So kann - wie bei der Aufzählung von :math:`\mathbb{Z}` - bei der Vereinigung abwechselnd die eine oder die andere Aufzählung verwendet werden. Die Aufzählung der rationalen Zahlen kann  nach dem vorgestellten Verfahren von Cantor erfolgen. Die gilt ggf. auch für das Produkt.
+
+
+
+Entscheidungsproblem
+--------------------------------------------------------
+
+.. definition::
+
+    Das *Entscheidungsproblem* bezeichnet die Frage, ob für ein Problem ein ausführbares Verfahren angegeben werden kann, mit dem in endlich vielen Schritten eine Entscheidung für das Problem bestimmt wird.
+
+    .. rubric:: Ein Problem ist ...
+
+    :entscheidbar: wenn ein solches Verfahren existiert
+    :nicht-entscheidbar: wenn es ein solches Verfahren nicht geben kann
+    :semi-entscheidbar: wenn ein Verfahren existiert, das nach endlich vielen Schritten die Entscheidung für eine Klasse von möglichen Antworten bestimmt
+
+
+Wortproblem
+--------------  
+
+.. deck:: 
+
+    .. card::
+
+        .. container:: peripheral
+
+            (Ein Beispiel für ein Entscheidbarkeitsproblem.)
+
+        .. definition::
+
+            Sei :math:`L` eine Sprache über :math:`Σ` und :math:`w ∈ Σ^*`. Das Wortproblem bezeichnet die Frage, ob :math:`w` Teil der Sprache ist, also entweder :math:`w ∈ L` oder :math:`w \notin L` gilt.
+
+    .. card::
+
+        .. theorem:: 
+
+            Sind :math:`L` und :math:`\bar{L}` aufzählbare Sprachen über dem Alphabet :math:`Σ`, so ist das Wortproblem :math:`w \stackrel{?}{∈} L` für ein :math:`w ∈Σ^*` entscheidbar. 
+            
+            Dann werden :math:`L` und :math:`\bar{L}` als *entscheidbare Sprachen* oder *rekursive Sprachen* bezeichnet.
+
+        .. proof::
+            :class: incremental
+
+            Es seien :math:`f_L : \mathbb{N} →L` und :math:`f_{\bar{L}} : \mathbb{N} → \bar{L}` die Aufzählungen von :math:`L` und :math:`\bar{L}`. 
+            
+            Abwechselnd wird aufsteigend — beginnend bei :math:`k = 1` — das Wort :math:`w` mit :math:`f_L(k)` und :math:`f_{\bar{L}}(k)` verglichen. Nach endlicher Anzahl von Schritten ist :math:`f_L(k) = w` , dann ist :math:`w ∈ L`, oder :math:`f_{\bar{L}}(k) = w`, dann ist :math:`w \notin L`.
+
+
+    .. card::
+
+        Ist :math:`L` aufzählbar, doch :math:`\bar{L}` nicht, so endet das Verfahren, genau dann wenn :math:`w ∈ L` ist. Daher ist Wortproblem aufzählbarer Sprachen semi-entscheidbar.
+
+        .. theorem::
+
+            Jede entscheidbare Sprache ist aufzählbar.
+
+        .. proof::
+
+            Jede formale Sprache :math:`L` basiert auf einem Alphabet :math:`Σ_L`. Damit ist der Abschluss :math:`Σ^* _L` mit :math:`f_{Σ^*}` aufzählbar und :math:`L ⊆Σ^*_L`. Entweder ist die Sprache :math:`L` leer, oder es gibt ein Wort :math:`w_0 ∈ L`. 
+            
+            Wenn :math:`L` entscheidbar ist, so kann für jedes :math:`n ∈ \mathbb{N}` in endlichen Schritten bestimmt werden, ob :math:`f_{Σ^∗_L}(n) ∈L` ist. Wenn ja, so ist :math:`f_L(n) = f_{Σ^*_L}(n)`, und sonst :math:`f_L(n) = w_0`.
+
+            .. presenter-note:: 
+
+                Unbesetzte :math:`n` werden durch :math:`f_L(n)` mit :math:`w_0` aufgefüllt.
+
+    .. card::
+
+        Damit gilt:
+
+        rekursive bzw. entscheidbare Sprache ⇒ rekursiv aufzählbare Sprache
+        
+        semi-entscheidbare Sprache ⇐ rekursiv aufzählbare Sprache
+
+        .. observation::
+            :class: incremental
+
+            Eine rekursive Aufzählung kann die Sprache völlig durcheinander aufzählen.
+
+            .. container:: incremental
+            
+                Es ist nie sicher, ob frühe Lücken zur Stellenwertaufzählung später aufgefüllt werden.
+
+
+
+Das Collatz-Problem
+--------------------------------------------------------
+
+.. deck::
+
+    .. card::
+
+        .. definition::
+
+            Die Collatz-Funktion :math:`f : \mathbb{N} → \mathbb{N}` ist definiert als:
+
+            .. math::
+
+                f(n) = \begin{cases} 
+                    n/2 & \text{für gerade } n \\
+                    3n+1 & \text{für ungerade } n
+                \end{cases}
+            
+            Das Collatz-Problem besteht darin, für ein gegebenes :math:`n` die Folge :math:`f(n), f(f(n)), f(f(f(n))), ...` zu betrachten und zu entscheiden, ob die Folge irgendwann den Wert 1 erreicht.
+
+        .. example::
+            :class: incremental
+
+            .. math::
+
+                f(6) = 3, f(3) = 10, f(10) = 5, f(5) = 16, 
+
+                f(16) = 8, f(8) = 4, f(4) = 2, f(2) = 1, ...
+
+            Die Folge erreicht für :math:`n = 6` also den Wert :math:`1` nach :math:`8` Schritten.
+
+    .. card::
+
+        .. theorem::
+
+            Das Collatz-Problem ist semi-entscheidbar.
+
+        .. proof::
+
+            Die Collatz-Folge kann für ein gegebenes :math:`n` in endlich vielen Schritten berechnet werden. 
+            
+            Wenn die Folge den Wert :math:`1` erreicht, so ist das Problem entschieden. 
+            
+            Wenn die Folge nicht den Wert :math:`1` erreicht, so ist das Problem nicht entschieden, aber es ist auch nicht sicher, ob die Folge den Wert :math:`1` nicht doch noch erreicht.
+
+            .. presenter-note:: 
+
+                Auch wenn es bedeutende Fortschritte bei der Beantwortung der Frage gab - sowohl theoretische als auch praktische - und Computer den Nachweis für sehr große Zahlen erbringen konnten, ist das Problem noch nicht entschieden.
+
+    .. card::
+
+
+        Das Collatz-Problem kann direkt in eine Collatz-Sprache über :math:`Σ_{\text{Zahl}}`  übertragen werden:
+
+        .. math:: 
+
+            L_{\text{Collatz}} = \{n ∈N |∃k ∈\mathbb{N}_0 : f^k(n) = 1\}
+
+        .. incremental::
+
+            Das Wortproblem auf dieser Sprache ist damit — hier nach Definition des Problems statt einer Aufzählung — ebenso mindestens semi-entscheidbar.
+
+        .. incremental::
+
+            Ob das Problem auch entscheidbar ist, konnte bisher niemand beantworten. Die naive Methode des Ausprobierens, ob es überhaupt ein :math:`w ∈ N` mit :math:`w \notin L_{\text{Collatz}}` gibt, hat trotz intensiver Suche bisher nicht geendet.
+
+
+Das Halteproblem
+--------------------------------------------------------
+
+.. definition::
+
+    Das Halteproblem ist die Fragestellung, ob die Ausführung eines Programms :math:`p` bei gegebenen Eingabedaten :math:`x` nach endlichen Schritten terminiert. 
+    
+    Das Halteproblem ist die verallgemeinerte Fragestellung zum Collatz-Problem. Entsprechend ist die äquivalente Sprache:
+
+    :math:`L_{\text{Halteproblem}} =`
+        
+    :math:`\quad \{(p,x) \in \Sigma^*_{\text{Unicode}} \times \Sigma^*_{\text{Unicode}} | p(x) \text{ terminiert nach endlichen Schritten }\}`
+
+    nur semi-entscheidbar, da durch Ausführung des Programms nur :math:`(p,x) \in L_{\text{Halteproblem}}` gezeigt werden kann.
+
+.. remark::
+    :class: incremental
+
+    Alan Turing konnte beweisen, dass es keinen Algorithmus gibt, der die Entscheidung :math:`(p,x)\notin L_{\text{Halteproblem}}` für beliebige :math:`p` und :math:`x` in endlicher Zeit beantwortenkann.
+
+
+.. class:: exercises
+
+Übung
+--------------------------------------------------------
+
+.. exercise:: Collatz-Funktion
+
+    Die parametrisierte Collatz-Funktion :math:`f_{α,β}(n) : \mathbb{N} \rightarrow \mathbb{N}` laute für :math:`α,β ∈\mathbb{N}`:
+
+    .. math::
+
+        f_{α,β}(n) = \begin{cases} 
+            n/2 & \text{für } n  \text{ gerade } \\
+            α \cdot n+ β & \text{sonst}
+        \end{cases}
+
+    1. Bestimmen Sie mit einem Programm das kleinste :math:`k ∈ \mathbb{N}` für das :math:`f^k_{3,1}(27) = 1`  ist.
+    2. Sei die Sprache :math:`L_{\text{Collatz}_{3,7}} = \{n ∈ \mathbb{N} | ∃k ∈ \mathbb{N}_0 : f^k_{3,7}(n) = 1\}`. 
+
+       Bestimmen Sie mit einem Programm die Menge :math:`M = \bar{L}_{3,7} \cap [1,20]`.
+
+    .. solution::
+        :pwd: Parametrisierte Collatz-Funktion 
+
+        .. include:: code/collatz.py
+            :code: python
+            :class: copy-to-clipboard
+            :number-lines:
+
+
+
+.. class:: exercises
+
+Übung
+--------------------------------------------------------
+
+.. exercise:: Rekursive Sprachen
+
+    Es seien :math:`L_1` und :math:`L_2` rekursive Sprachen über dem Alphabet :math:`Σ`. Sei :math:`L= L_1 \setminus L_2`.
+
+    Zeigen oder widerlegen Sie, dass :math:`L` eine rekursive Sprache über :math:`Σ` sei.
+
+    .. solution::
+        :pwd: RekursivE*Sprachen
+
+        - :math:`L_1` und :math:`L_2` rekursiv bedeutet, dass beide Sprachen entscheidbar sind und sowohl :math:`L_1` und :math:`\bar{L}_1` sowie :math:`L_2` und :math:`\bar{L}_2` auch aufzählbar sind. D.h. es gilt, dass
+
+          - :math:`w ∈L_1` oder :math:`w \notin L_1` bzw.
+          - :math:`w ∈L_2` oder :math:`w \notin L_2`
+
+        in endlichen Schritten entschieden werden kann.
+
+        - :math:`L` ist rekursiv, wenn :math:`w ∈L` oder :math:`w  \notin L` in endlichen Schritten entschieden wird.
+
+          Prüfe dazu in endlichen Schritten ob :math:`w \stackrel{?}{∈} L` oder :math:`w \stackrel{?}{\notin} L`
+
+          - Ist :math:`w \in L_1` und :math:`w \notin L_2`, so ist :math:`w ∈ L`.
+          - Sonst ist :math:`w \notin L`.
+
+          Diese Entscheidung wurde in endlichen Schritten gefällt, also ist :math:`L` rekursiv.
+
+
+
+.. class:: new-section transition-scale
+
+Grammatiken
+--------------------------------------------------------
+
+
+
+Englische Grammatik (etwas vereinfacht)
+--------------------------------------------------------
 
 
