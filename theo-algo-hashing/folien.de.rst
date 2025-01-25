@@ -89,7 +89,8 @@ Suchen in einer Liste
     +-----------------------------------------+----------+----------+---------+-------------------------+-----------+---------+---------------------------------+
 
 
-.. question:: incremental
+.. question:: 
+    :class: incremental 
 
     Können wir effizienter suchen?
 
@@ -102,6 +103,7 @@ Hashing - Grundidee
 --------------------------------------------------------
 
 .. image:: images/Hashkollision.svg
+    :class: opaque
     :alt: Hashmap
     :align: right
 
