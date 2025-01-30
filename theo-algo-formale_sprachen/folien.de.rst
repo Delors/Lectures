@@ -21,13 +21,15 @@
 .. role:: appear
 .. role:: eng
 .. role:: ger
-.. role:: dhbw-red
-.. role:: green
-.. role:: the-blue
+.. role:: emph
 .. role:: obsolete
 .. role:: monospaced
 .. role:: copy-to-clipboard
 .. role:: kbd
+
+.. role:: python(code)
+   :language: python
+
 .. role:: java(code)
    :language: java
 
@@ -40,7 +42,7 @@ Formale Sprachen
 
 :Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
 :Kontakt: michael.eichberg@dhbw.de, Raum 149B
-:Version: 1.0
+:Version: 1.1
 
 .. container:: minor
 
@@ -119,7 +121,7 @@ Kartesisches Produkt
 
         \begin{array}{rccll}
             A × B & := & & & \{(a,b) | a ∈ A, b ∈ B\} \\
-            A^n & := & \underbrace{A × ... × A}_{n\; \text{Faktoren}} & = & \{(a1,...,an) |a1,...,an ∈ A\}
+            A^n & := & \underbrace{A × ... × A}_{n\; \text{Faktoren}} & = & \{(a_1,...,a_n) |a_1,...,a_n ∈ A\}
         \end{array}
 
 .. example::
@@ -182,18 +184,18 @@ Kleene-Abschluss
                 :class: s-font-size-90
 
                 \begin{array}{lcl}
-                    M^0 & = & {ε} \\
-                    M^1 & = & {01,2} \\
-                    M^2 & = & {0101,012,201,22} \\
-                    M^3 & = & {010101,01012,01201,0122,20101,2012,2201,222} \\
+                    M^0 & = & \{ε\} \\
+                    M^1 & = & \{01,2\} \\
+                    M^2 & = & \{0101,012,201,22\} \\
+                    M^3 & = & \{010101,01012,01201,0122,20101,2012,2201,222\} \\
                     & \ldots & \\
-                    M^+ & = & M^1 ∪ M^2 ∪ \ldots = {01,2,0101,012,201,22,010101,01012,...} \\
-                    M^* & = & M^0 ∪ M^+ = {ε,01,2,0101,012,201,22,010101,01012,...}
+                    M^+ & = & M^1 ∪ M^2 ∪ \ldots = \{01,2,0101,012,201,22,010101,01012,...\} \\
+                    M^* & = & M^0 ∪ M^+ = \{ε,01,2,0101,012,201,22,010101,01012,...\}
                 \end{array}
         
             .. observation::
 
-                Die Wortlänge :math:`|ω|` für ein :math:`ω ∈ L^*` hängt von der Definition des Alphabets ab. So ist in diesem Beispiel :math:`|222| = 3` während :math:`|0101| = 2` ist.
+                Die Wortlänge :math:`|ω|` für ein :math:`ω ∈ M^*` hängt von der Definition des Alphabets ab. So ist in diesem Beispiel :math:`|222| = 3` während :math:`|0101| = 2` ist.
 
 
 
@@ -217,7 +219,7 @@ Produkt und Konkatenation
 .. example::
     :class: incremental
 
-    Sei :math:`Σ = {a,e,n,r}`, sowie :math:`ω = \text{na} ∈Σ^∗` und :math:`𝜐 = \text{er} ∈ Σ^∗`.  
+    Sei :math:`Σ = \{a,e,n,r\}`, sowie :math:`ω = \text{na} ∈Σ^∗` und :math:`𝜐 = \text{er} ∈ Σ^∗`.  
     
     :math:`ω^2 = \text{nana}`, :math:`𝜐ω = \text{erna}` und :math:`𝜐ω^2𝜐 = \text{ernanaer}`
 
@@ -284,7 +286,7 @@ Abschluss-Eigenschaften
 
 .. exercise:: Alphabet Σ = {e,en,in,r,t,u}
 
-    Gegeben sei das Alphabet :math:`Σ = {e,en,in,r,t,u}`. Welche der folgenden Worte liegen in :math:`Σ^5`?
+    Gegeben sei das Alphabet :math:`Σ = \{e,en,in,r,t,u\}`. Welche der folgenden Worte liegen in :math:`Σ^5`?
 
     :math:`ω_1` = reiner, :math:`ω_2` = teurer, :math:`ω_3` = treuer, :math:`ω_4` = teuren, :math:`ω_5` = retten, :math:`ω_6` = teuer
 
@@ -295,8 +297,8 @@ Abschluss-Eigenschaften
 
         .. math:: 
 
-            ω_2, ω_3 \notin Σ^4 \\ 
-            ω_1, ω_4, ω_5, ω_6 \in Σ^4
+            ω_2, ω_3 \notin Σ^5 \\ 
+            ω_1, ω_4, ω_5, ω_6 \in Σ^5
 
 
 
@@ -307,7 +309,7 @@ Abschluss-Eigenschaften
 
 .. exercise:: Alphabet Σ = {e,g,in,l,s,ter}
 
-    Gegeben sei das Alphabet :math:`Σ = {e,g,in,l,s,ter}`. Welche der folgenden Worte liegen in :math:`Σ^*`?
+    Gegeben sei das Alphabet :math:`Σ = \{e,g,in,l,s,ter\}`. Welche der folgenden Worte liegen in :math:`Σ^*`?
 
     :math:`ω_1` = tester, :math:`ω_2` = seile, :math:`ω_3` = lines, :math:`ω_4` = segel, :math:`ω_5` = seinen, :math:`ω_6` = erster
 
@@ -318,8 +320,8 @@ Abschluss-Eigenschaften
 
         .. math:: 
 
-            ω_1, ω_2, ω_5, ω_6 \notin Σ^4 \\ 
-            ω_3, ω_4 \in Σ^4
+            ω_1, ω_2, ω_5, ω_6 \notin Σ^* \\ 
+            ω_3, ω_4 \in Σ^*
 
 
 
@@ -340,25 +342,25 @@ Formale Sprachen
         
             Die Menge :math:`M ⊂ Σ^*` der binären Zahlen ohne führende Nullen:
          
-            :math:`M = \{0\}∪\{1\}×\{0,1\}^* = \{0,1,10,11,100,101,110,111,1000,...\}`
+            :math:`M_3 = \{0\}∪\{1\}×\{0,1\}^* = \{0,1,10,11,100,101,110,111,1000,...\}`
 
         .. card::
 
             Die Menge :math:`M ⊂ Σ^*` von einer gleichen Anzahl von 0 und 1 in dieser Reihenfolge:
 
-            :math:`M = \{0^n1^n | n ∈ \mathbb{N}\} = \{01,0011,000111,00001111,0000011111,...\}`
+            :math:`M_2 = \{0^n1^n | n ∈ \mathbb{N}\} = \{01,0011,000111,00001111,0000011111,...\}`
 
         .. card::
 
             Die Wörter :math:`M ⊂ Σ^*` mit gleicher Anzahl von 0, 1 und 2 in dieser Reihenfolge:
 
-            :math:`M = \{0^n1^n2^n |n ∈ \mathbb{N}\}= \{012,001122,000111222,000011112222,...\}`
+            :math:`M_1 = \{0^n1^n2^n |n ∈ \mathbb{N}\}= \{012,001122,000111222,000011112222,...\}`
 
         .. card::
 
             Die Menge :math:`M ⊂ Σ^*` mit Wörtern der Länge von Zweierpotenzen:
 
-            :math:`M = \{w ∈Σ^*| |w| = 2^n, n ∈ \mathbb{N}\}= \{0,1,2,00,01,\ldots,21,22,0000,...\}`
+            :math:`M_0 = \{w ∈Σ^*| |w| = 2^n, n ∈ \mathbb{N}_0\}= \{0,1,2,00,01,\ldots,21,22,0000,...\}`
 
 
 
@@ -442,6 +444,8 @@ Abzählbar (unendlich)
 
             .. presenter-note::
 
+                :Induktiv: wir schließen vom Spezifischem auf das Allgemeine.
+
                 :math:`M_{k-1}` ist die Menge, die noch *ein Element mehr enthält* als :math:`M_k`. D. h. die Kardinalität der Menge :math:`M_l` mit :math:`l > k` ist kleiner als die Kardinalität von :math:`M_k`.
 
             Die Bijektion lautet dann :math:`f : N → M` mit :math:`f(k) = m_k` mit :math:`N = \{1,...,n\}`.
@@ -454,7 +458,7 @@ Abzählbar (unendlich)
 
         .. proof::
 
-            Sei :math:`f(k) = n_k` die Abzählung der Menge N. Sei :math:`R = \{k ∈ \mathbb{N} | n_k ∈ M \}`; d. h. die Menge der Indizes der Elemente aus :math:`N`, die in :math:`M` sind. Dann ist die Einschränkung :math:`f_{|R} : R → M` von :math:`f` genau die Abzählung, die die Abzählbarkeit von :math:`M` beweist.
+            Sei :math:`f(k) = n_k` die Abzählung der Menge :math:`N`. Sei :math:`R = \{k ∈ \mathbb{N} | n_k ∈ M \}`; d. h. die Menge der Indizes der Elemente aus :math:`N`, die in :math:`M` sind. Dann ist die Einschränkung :math:`f_{|R} : R → M` von :math:`f` genau die Abzählung, die die Abzählbarkeit von :math:`M` beweist.
 
             .. presenter-note::
                 
@@ -464,7 +468,7 @@ Abzählbar (unendlich)
 
         .. example:: 
 
-            Eine abzählbar unendliche Menge sind — zum Beispiel: 
+            Abzählbar unendliche Mengen sind — zum Beispiel: 
             
             .. class:: incremental
 
@@ -477,7 +481,7 @@ Abzählbar (unendlich)
     
                     f(n) = \left\{ \begin{array}{ll}
                         n/2 & \text{für}\; n\; \text{gerade} \\
-                        -(n+1)/2 & \text{für}\; n\; \text{ungerade}
+                        -(n-1)/2 & \text{für}\; n\; \text{ungerade}
                     \end{array} \right.
               
               .. container:: peripheral s-font-size-90
@@ -539,6 +543,38 @@ Abzählbar (unendlich)
 
                     Die Abbildung :math:`f : N →Σ^*` mit :math:`N ⊆\mathbb{N}` ergibt sich für :math:`f(x)` aus der Stellenwertdarstellung von :math:`x- 1 >0` zur Basis :math:`n + 1` beginnend mit der höchstwertigen Ziffer :math:`k_1` bis zur letzten Stelle :math:`k_l`. 
                     
+                    .. supplemental::
+
+                        .. repetition::
+
+                            Umrechnung einer Dezimalzahl in eine Zahl zur Basis ``n``, erfolgt durch Division mit Rest durch ``n`` und die Reihenfolge der Reste ist dann die Stellenwertdarstellung, beginnend mit dem letzten Rest. D. h. der erste Rest ist die letzte Ziffer der Stellenwertdarstellung.
+
+                            .. example::
+
+                                Umrechnung von 5 = 5\ :sub:`10` zur Basis 5:
+
+                                1. 5 / 5 =  1 Rest 0 (letzte Ziffer/niederwertigste Stelle)
+                                2. 1 / 5 =  0 Rest 1 (erste Ziffer/höchstwertige Stelle)
+                                    
+                                Die Stellenwertdarstellung ist dann 10\ :sub:`5`.
+
+                                Gegenprobe: 1 · 5\ :sup:`1` + 0 · 5\ :sup:`0` = 5.
+
+                            .. example::
+
+                                Umrechnung von 7 = 7\ :sub:`10` zur Basis 3:
+                                
+                                1. 7 / 3 = 2 Rest 1 
+                                2. 2 / 3 = 0 Rest 2 
+
+                                Die Stellenwertdarstellung ist dann 21\ :sub:`3`.
+
+                                Gegenprobe: 2 · 3\ :sup:`1` + 1 · 3\ :sup:`0` = 7
+
+                        .. hint::
+
+                            Wenn an einer Zahl keine spezifische Basis angegeben ist, oder aus dem Kontext unmittelbar eine andere Basis anzunehmen ist (z. B. 2 oder 16), so ist die Basis 10 anzunehmen. D. h. die Dezimaldarstellung ist die Standarddarstellung und 34 wäre zum Beispiel Äquivalent zu 34\ :sub:`10`.
+
                     Das Bild :math:`f(x)` ist dann das Wort :math:`m_{k_1} m_{k_2}...m_{k_l}`. 
                     
                     Das leere Wort :math:`ε` wird von :math:`1` abgebildet und entsprechend ist :math:`f(1) = ε`.
@@ -686,7 +722,7 @@ Abzählbar (unendlich)
 
         .. supplemental::
 
-            Gödelnummern unterstützen abzählbarer un-/endliche Mengen. Letzeres (abzähbar unendlich) ist mit einem einfachen Stellenwertsystem zur Basis der Anzahl der Elemente und des somit (zwangsweise) endlichen Alphabets nicht möglich.
+            Gödelnummern unterstützen abzählbare un-/endliche Mengen. Letzteres (abzählbar unendlich) ist mit einem einfachen Stellenwertsystem zur Basis der Anzahl der Elemente und des somit (zwangsweise) unendlichen Alphabets nicht möglich.
 
         .. deck:: 
 
@@ -704,10 +740,69 @@ Abzählbar (unendlich)
 
                         c_M (w) = p^{k_1}_1 · p^{k_2}_2 · ... · p^{k_l}_l = \prod_{i=1}^{l} p^{k_i}_i
 
-                    .. presenter-note::
+                    .. supplemental::
 
-                        *Fundamentalsatz der Arithmetik*: Jede natürliche Zahl :math:`n > 1` kann eindeutig als ein Produkt von Primzahlen geschrieben werden, wobei die Reihenfolge der Primfaktoren ignoriert wird. :math:`\Leftrightarrow` Die Gödelnummer :math:`c_M(w)` ist eindeutig für jedes Wort :math:`w ∈ M^*`.
+                        .. repetition::
+
+                            *Fundamentalsatz der Arithmetik*: Jede natürliche Zahl :math:`n > 1` kann eindeutig als ein Produkt von Primzahlen geschrieben werden, wobei die Reihenfolge der Primfaktoren ignoriert wird. D. h. die Gödelnummer :math:`c_M(w)` ist eineindeutig für jedes Wort :math:`w ∈ M^*`.
             
+                        .. remark::
+
+                            Die Primfaktorzerlegung einer Zahl ``x`` kann wie folgt erfolgen, wenn wir die Liste der Primzahlen ``p = [2,3,5,7,11,13,17,...]`` haben:
+
+                            .. code:: python
+                                :number-lines:
+                                :class: copy-to-clipboard
+
+                                # Um die Primzahlen zu erzeugen, kann z. B. das Sieb des Eratosthenes 
+                                # verwendet werden. Die Bestimmung der Primzahlen ist hier 
+                                # jedoch nicht Gegenstand.
+                                p = [2, 3, 5, 7, 11, 13, 17, 19] 
+
+                                def primfaktorzerlegung(x,i = 0):
+                                    c = 0 # Häufigkeit des Primfaktors
+                                    while x % p[i] == 0:
+                                        c += 1
+                                        x = x // p[i]
+                                    factor = str(p[i]) + "^" + str(c)
+                                    if x == 1:
+                                        return factor
+                                    else:
+                                        return factor + " * " + primfaktorzerlegung(x,i+1)
+
+                            .. example::
+
+                                Primfaktorzerlegung von 10:
+
+                                - X = 10, p\ :sub:`1` = 2
+                                
+                                    - 10 / 2 = 5 Rest 0 ⇒ **2 ist ein Primfaktor**
+                                    - 5 / 2 = 2 Rest 1 ⇒ X' = 5
+                                - X = 5, p\ :sub:`2` = 3
+                                
+                                    - 5 / 3 = 1 Rest 2 ⇒ 3 ist *kein* Primfaktor und X' = 5
+                                - X = 5, p\ :sub:`3` = 5
+
+                                    - 5 / 5 = 1 Rest 0 ⇒ **5 ist ein Primfaktor**
+
+                                10 = 2\ :sup:`1` · 5\ :sup:`1`
+
+                            .. example::
+
+                                Primfaktorzerlegung von 12:
+
+                                - X = 12, p\ :sub:`1` = 2
+                                
+                                    - 12 / 2 = 6 Rest 0 ⇒ **2 ist ein Primfaktor**
+                                    - 6 / 2 = 3 Rest 0 ⇒ **2 ist noch einmal ein Primfaktor**
+                                    - 3 / 2 = 1 Rest 1 ⇒ X' = 3
+                                
+                                - X = 3, p\ :sub:`2` = 3
+                                
+                                    - 3 / 3 = 1 Rest 0 ⇒ **3 ist ein Primfaktor**
+
+                                12 = 2\ :sup:`2` · 3\ :sup:`1`
+
             .. card::
                 
                 .. example::
@@ -750,7 +845,7 @@ Abzählbar (unendlich)
                         
                 .. supplemental::
 
-                        \Z. B. ist die Primzahlzerlegung von :math:`10 = 2^1 \cdot 3^0 \cdot 5^1`. Somite gäbe es an der zweiten Stelle *kein Zeichen* was unsinnig ist.
+                        \Z. B. ist die Primzahlzerlegung von 10 = 2\ :sup:`1` · 3\ :sup:`0` · 5\ :sup:`1`. Somit gäbe es an der zweiten Stelle *kein Zeichen* was unsinnig ist.
 
     .. card::
 
@@ -792,10 +887,10 @@ Abzählbar (unendlich)
         :class: s-font-size-80
 
         \begin{array}{rcl} 
-            r_1 & = & 0,x_{11}x_{13}x_{13}x_{14}x_{15}... \\
-            r_2 & = & 0,x_{21}x_{23}x_{23}x_{24}x_{25}... \\
-            r_3 & = & 0,x_{31}x_{33}x_{33}x_{34}x_{35}... \\
-            r_4 & = & 0,x_{41}x_{43}x_{43}x_{44}x_{45}... \\
+            r_1 & = & 0,x_{11}x_{12}x_{13}x_{14}x_{15}... \\
+            r_2 & = & 0,x_{21}x_{22}x_{23}x_{24}x_{25}... \\
+            r_3 & = & 0,x_{31}x_{32}x_{33}x_{34}x_{35}... \\
+            r_4 & = & 0,x_{41}x_{42}x_{43}x_{44}x_{45}... \\
             \vdots & & \vdots
         \end{array}
 
@@ -840,11 +935,11 @@ Schlussfolgerungen aus der Überabzählbarkeit
 
         .. proof:: 
 
-            Für jede reelle Zahl :math:`x ∈R` mit Nachkommastellen :math:`r1r2...` gibt es eine formale Sprache :math:`L_x` über :math:`\Sigma_{\text{Zahl}}`: 
+            Für jede reelle Zahl :math:`x ∈ R` mit Nachkommastellen :math:`r_1r_2...` gibt es eine formale Sprache :math:`L_x` über :math:`\Sigma_{\text{Zahl}}`: 
 
             :math:`L_x = \{r_1r_2...r_n ∈ Σ^*_{\text{Zahl}} |x \text{ hat die ersten } n \text{ Nachkommastellen } r_1...r_n\}`
 
-            Beispielsweise ist :math:`L_π = {1,14,141,1415,14159,141592,1415926,...}`. Damit ist die Anzahl der formalen Sprachen mindestens so groß, wie die Anzahl reeller Zahlen im Intervall :math:`(0,1)`, also aller möglichen Nachkommastellen in :math:`\mathbb{R}`, zuzüglich der 0, und damit nach vorherigem Satz überabzählbar unendlich.
+            Beispielsweise ist :math:`L_π = \{1,14,141,1415,14159,141592,1415926,...\}`. Damit ist die Anzahl der formalen Sprachen mindestens so groß, wie die Anzahl reeller Zahlen im Intervall :math:`(0,1)`, also aller möglichen Nachkommastellen in :math:`\mathbb{R}`, zuzüglich der 0, und damit nach vorherigem Satz überabzählbar unendlich.
 
 
 
@@ -855,7 +950,7 @@ Schlussfolgerungen aus der Überabzählbarkeit
 
 .. exercise:: Stellenwerte I
 
-    Gegeben sei das Alphabet :math:`Σ = {a,gen,i,re}` mit Aufzählung in dieser Reihenfolge. Bestimmen Sie die Zahlen :math:`n` nach Stellenwert mit Bild :math:`f (n)` der Wörter :math:`regen`, :math:`aare` und die Worte mit Stellenwert :math:`15`, :math:`118`.
+    Gegeben sei das Alphabet :math:`Σ = \{a,gen,i,re\}` mit Aufzählung in dieser Reihenfolge. Bestimmen Sie die Zahlen :math:`n` nach Stellenwert mit Bild :math:`f (n)` der Wörter :math:`regen`, :math:`aare` und die Worte mit Stellenwert :math:`15`, :math:`118`.
 
 
     .. solution::
@@ -869,7 +964,7 @@ Schlussfolgerungen aus der Überabzählbarkeit
 
 .. exercise:: Stellenwerte II
 
-    Gegeben sei das Alphabet :math:`Σ = {e,h,r,ste}` mit Aufzählung in dieser Reihenfolge. Bestimmen Sie die Zahlen n nach Stellenwert mit Bild :math:`f (n)` der Wörter :math:`steh`, :math:`rehe` und die Worte mit Stellenwert :math:`45`, :math:`1417`.
+    Gegeben sei das Alphabet :math:`Σ = \{e,h,r,ste\}` mit Aufzählung in dieser Reihenfolge. Bestimmen Sie die Zahlen n nach Stellenwert mit Bild :math:`f (n)` der Wörter :math:`steh`, :math:`rehe` und die Worte mit Stellenwert :math:`45`, :math:`1417`.
 
 
     .. solution:: 
@@ -887,7 +982,7 @@ Schlussfolgerungen aus der Überabzählbarkeit
 
 .. exercise:: Gödelnummern I
 
-    Gegeben sei das Alphabet :math:`Σ = {e,l,ste,te}` mit Aufzählung in dieser Reihenfolge. Bestimmen Sie die Gödelnummer :math:`c(w)` der Wörter :math:`este`, :math:`elle` und die Worte mit Gödelnummer :math:`720`, :math:`12600`.
+    Gegeben sei das Alphabet :math:`Σ = \{e,l,ste,te\}` mit Aufzählung in dieser Reihenfolge. Bestimmen Sie die Gödelnummer :math:`c(w)` der Wörter :math:`este`, :math:`elle` und die Worte mit Gödelnummer :math:`720`, :math:`12600`.
 
     .. solution:: 
         :pwd: tele&stelle
@@ -904,7 +999,7 @@ Schlussfolgerungen aus der Überabzählbarkeit
 
 .. exercise:: Gödelnummern II
 
-    Gegeben sei das Alphabet :math:`Σ = {h,he,re,ste}` mit Aufzählung in dieser Reihenfolge. Bestimmen Sie die Gödelnummer :math:`c(w )` der Wörter :math:`steh`, :math:`reste` und die Worte mit Gödelnummer :math:`144`, :math:`1500`.
+    Gegeben sei das Alphabet :math:`Σ = \{h,he,re,ste\}` mit Aufzählung in dieser Reihenfolge. Bestimmen Sie die Gödelnummer :math:`c(w )` der Wörter :math:`steh`, :math:`reste` und die Worte mit Gödelnummer :math:`144`, :math:`1500`.
 
     .. solution::
         :pwd: hehre_stehe
@@ -971,6 +1066,10 @@ Verknüpfungen von formalen Sprachen
 
             1. Die Vereinigung :math:`L_∪= L_1 ∪ L_2` ist eine formale Sprache über dem Alphabet :math:`Σ_1 ∪ Σ_2`.
             2. Der Schnitt :math:`L_∩= L_1 ∩ L_2` ist eine formale Sprache über dem Alphabet :math:`Σ_1 ∪ Σ_2`.
+
+               .. container:: peripheral 
+               
+                    Die Wörter aus :math:`L_∩` sind aber natürlich in :math:`(\Sigma_1 \cap \Sigma_2)^*` enthalten.
 
         .. proof::
             :class: incremental
@@ -1052,7 +1151,7 @@ Verknüpfungen von formalen Sprachen
         :Alphabet: :math:`\Sigma_k = \{a, b\}`
         :Sprache: 
         
-            math:`L_k`: Alle Wörter, die mit dem Symbol :math:`a` beginnen.
+            :math:`L_k` Alle Wörter, die mit dem Symbol :math:`a` beginnen.
 
             .. math::
 
@@ -1205,6 +1304,10 @@ Wortproblem
             
             Abwechselnd wird aufsteigend — beginnend bei :math:`k = 1` — das Wort :math:`w` mit :math:`f_L(k)` und :math:`f_{\bar{L}}(k)` verglichen. Nach endlicher Anzahl von Schritten ist :math:`f_L(k) = w` , dann ist :math:`w ∈ L`, oder :math:`f_{\bar{L}}(k) = w`, dann ist :math:`w \notin L`.
 
+        .. supplemental::
+
+            Es ist wichtig, dass der Vergleich von :math:`w` abwechselnd mit :math:`L` und :math:`\bar{L}` (aufsteigend) erfolgt, da wir sonst nicht nach einer endlichen Anzahl von Schritten garantiert zu einem Ergebnis kommen.
+
 
     .. card::
 
@@ -1272,7 +1375,7 @@ Das Collatz-Problem
 
                 f(16) = 8, f(8) = 4, f(4) = 2, f(2) = 1, ...
 
-            Die Folge erreicht für :math:`n = 6` also den Wert :math:`1` nach :math:`8` Schritten.
+            Die Folge erreicht für :math:`n = 6` den Wert :math:`1` nach :math:`8` Schritten.
 
     .. card::
 
@@ -1299,7 +1402,7 @@ Das Collatz-Problem
 
         .. math:: 
 
-            L_{\text{Collatz}} = \{n ∈N |∃k ∈\mathbb{N}_0 : f^k(n) = 1\}
+            L_{\text{Collatz}} = \{n ∈ \mathbb{N} |∃k ∈\mathbb{N}_0 : f^k(n) = 1\}
 
         .. incremental::
 
@@ -1401,7 +1504,1097 @@ Grammatiken
 
 
 
-Englische Grammatik (etwas vereinfacht)
+Englische Grammatik (Beispielhaft)
 --------------------------------------------------------
 
+.. deck::
+
+    .. card:: 
+
+        .. math::   
+
+            \underbrace{ %
+            \underbrace{ %
+            \underbrace{The}_{\textstyle \text{ Bestimmungswort }} \underbrace{professor}_{\textstyle \text{ Substantiv }} %
+            }_{\textstyle \text{ Substantivphrase }} %
+            \underbrace{ %
+            \underbrace{should}_{\textstyle \text{ Modalverb }} \underbrace{teach}_{\textstyle \text{ Hauptwort }}
+            }_{\textstyle \text{ Verbphrase }} %
+            }_{\textstyle \text{Satz}} .
+            
+        .. math::   
+            :class: incremental
+
+            \underbrace{ %
+            \underbrace{ %
+            \underbrace{One}_{\textstyle \text{ Bestimmungswort }} \underbrace{student}_{\textstyle \text{ Substantiv }} %
+            }_{\textstyle \text{ Substantivphrase }} %
+            \underbrace{ %
+            \underbrace{might}_{\textstyle \text{ Modalverb }} \underbrace{listen}_{\textstyle \text{ Hauptwort }}
+            }_{\textstyle \text{ Verbphrase }} %
+            }_{\textstyle \text{Satz}} .
+
+    .. card:: 
+
+        Ein Satz ``S`` wird mit diesen Regeln ``R`` gebildet:
+
+        - Ein Satz besteht aus einer Substantivphrase und einer Verbphrase.
+        - Eine Substantivphrase hat ein optionales Bestimmungswort und ein Substantiv.
+        - Eine Verbphrase besteht aus optionalem Modalverb und einem Hauptverb.
+        - Ein Bestimmungswort ist :eng:`The` oder :eng:`One`.
+        - Ein Substantiv ist :eng:`student` oder :eng:`professor`.
+        - Ein Modalverb ist :eng:`should` oder :eng:`might`.
+        - Ein Hauptverb ist :eng:`listen` oder :eng:`teach`.
+
+        .. container:: incremental dd-margin-left-4em
+
+            Darin wurden diese Variablen ``V`` und Symbole ``T`` verwendet:
+    
+            :``V``: \{Satz, Substantivphrase, Verbphrase, Bestimmungswort, Substantiv, Modalverb, Hauptverb\}
+
+            :``T``: \{The, One, student, professor, should, might, listen, teach\}.
+
+
+
+Grammatiken
+--------------------------------------------------------
+
+.. definition:: 
+
+    
+    Eine Grammatik ist ein Tupel :math:`G = (V ,T ,R,S)`, wo
+
+    :`V`:math:: das Alphabet der Variablen,
+    :`T`:math:: das Alphabet der Terminalen Symbole mit :math:`V ∩T= ∅`,
+    :`R={r_1,...,r_n}`:math:: die endliche Menge der Regeln
+        
+         :math:`r_k`: :math:`(V ∪T )^*\setminus T ^* → (V ∪ T)^*`
+         
+         .. presenter-note::
+
+            Eine Regel muss auf der linken Seiten mindestens ein Nichtterminal enthalten.
+
+    :`S ∈V`:math:: das Startsymbol ist.
+
+.. container:: incremental
+
+    Die Regeln von Grammatiken werden auch Produktionen genannt
+
+
+Ableitungen 
+------------------------
+
+.. deck::
+
+    .. card:: 
+
+        .. definition::
+
+            Sei :math:`G = (V ,T ,R,S)` eine Grammatik. Eine :emph:`Ableitung` ist die Anwendung einer Regel :math:`r ∈R` mit :math:`a ↦ b` auf das Wort :math:`w_1 ∈(V ∪ T )^*` zum Wort :math:`w_2 ∈(V ∪ T )^*`, geschrieben  :math:`w_1 \overset{r}{⇒} w_2`, wenn es :math:`x,y ∈(V ∪ T )^*` gibt, so dass:
+
+            .. presenter-note::
+
+                Aussprachehinweise:
+
+                :`a ↦ b`:math:: Eine :emph:`Ableitung` ist die Anwendung einer Regel r aus R mit *a wird abgeleitet nach b*. 
+                :`w_1 \overset{r}{\Rightarrow} w_2`:math:: *w1 wird mit der Regel r abgeleitet nach w2*.
+
+            .. math::
+
+                \begin{array}{ccccc}
+                    w_1 & = & x & a   & y \\
+                    ⇓_r &   &   & ↧_r &   \\
+                    w_2 & = & x & b   & y \\
+                \end{array}
+
+    .. card:: 
+
+        .. definition::
+
+            Eine :emph:`transitive Ableitung` :math:`w_1\overset{*}{⇒}w_n` ist die Anwendung keiner oder beliebig vieler Regeln :math:`r ∈R`, um von :math:`w_1` auf :math:`w_n` zu schließen. Die Sprache einer Grammatik :math:`L(G )` ist die Menge aller möglichen Wörter, die durch die Regeln der Grammatik transitiv aus dem Startsymbol :math:`S` abgeleitet werden können:
+
+            .. math::
+
+                L(G ) := \{w ∈T^*|S\overset{*}{⇒}w \}
+
+
+.. summary:: 
+    :class: incremental
+
+    Ableitungen aus einer Grammatik definieren eine Sprache.
+
+
+
+Eine Grammatik für boolsche Ausdrücke
+--------------------------------------------------------
+
+Eine Grammatik für boolesche Terme ist :math:`G_{\text{Logik}} = (V ,T ,R,S)` mit
+
+.. deck::
+
+    .. card::
+
+        .. math:: 
+
+            \begin{array}{rcl}
+            V & = & \{\text{Term},\text{Literal},\text{Variable}\} \\
+            T & = & Σ_\text{Logik}= \{∨,∧,¬,(,),0,1,a,...,z\} \\
+            R & = & \{r_1,r_2,r_3,r_4\}, wo \\
+                &   & r_1 : \text{Term} ↦ \text{Literal} |\text{Variable} |¬ \text{Term} |( \text{Term} ) \\
+                &   & r_2 : \text{Term} ↦ \text{Term} ∨ \text{Term} |\text{Term} ∧ \text{Term}\\
+                &   & r_3 : \text{Literal} ↦ 0|1\\
+                &   & r_4 : \text{Variable} ↦ a|... |z\\
+            S & = & \text{Term}
+            \end{array}
+
+        .. supplemental::
+
+            .. remark::
+
+                :math:`r2 : \text{Term} ↦ \text{Term} ∨ \text{Term} |\text{Term} ∧ \text{Term}` ist zu interpretieren als:
+
+                :math:`\qquad\begin{cases}r2.1 : \text{Term} ↦ \text{Term} ∨ \text{Term}\quad  \\ r2.2 : \text{Term} ↦ \text{Term} ∧ \text{Term}\end{cases}`
+
+    .. card::
+
+        Eine Ableitung des Terms :math:`S \overset{*}{⇒} {\color{red}(a ∧ b) ∨ c} ∈ L(G_\text{Logik})` kann dann so ablaufen:
+
+        .. csv-table::
+            :class: incremental borderless text-align-center
+            :align: center
+            :header: "Regel", " ", " ", " ", " ", " "
+
+                        ,   ,  , , S = Term ,
+            r2.1        ,   ,   ,   ,  ↧    ,
+                        ,   , Term , , ∨ ,  Term
+            "r1.4,r1.2",   , ↧ ,    ,      , ↧
+                        ,   , (Term) , , ∨ ,  Variable
+            "r2.2,r4",   , ↧ ,     ,     , ↧
+                        , ( Term , ∧ , Term ), ∨, c
+            "r1.2,r1.2", ↧ ,          , ↧ ,
+                        , ( Variable , ∧ , Variable ), ∨, c
+            "r4,r4",  ↧ ,          , ↧
+                         , ( a , ∧ , b ), ∨, c
+
+
+
+.. class:: exercises
+
+Übung
+--------------------------------------------------------
+
+.. exercise:: Sprache bestimmen: ersw
+
+    Bestimmen Sie die Sprache :math:`L(G)` für :math:`G = (V ,T ,R,S)`:
+
+    .. math:: 
+
+        \begin{array}{rcl}
+        V & = & \{\text{A},\text{B},\text{C}\} \\
+        T & = & \{e,r,s,w\} \\
+        R & = & \{r_1,r_2,r_3\}, \\
+          &   & r_1 : \text{A} ↦ \text{B}w | ws\text{C} \\
+          &   & r_2 : \text{B} ↦ \text{C}r \\
+          &   & r_3 : \text{C} ↦ e|s \\
+        S & = & \text{A}
+        \end{array}
+
+    .. solution:: 
+        :pwd: UndEsSprach
+
+            :math:`L(G ) = \{wse,wss,srw,erw\}`
+
+
+
+.. class:: exercises
+
+Übung
+--------------------------------------------------------
+
+.. exercise:: Sprache bestimmen: kot
+
+    Bestimmen Sie die Sprache :math:`L(G)` für :math:`G = (V ,T ,R,S)`:
+
+    .. math:: 
+
+        \begin{array}{rcl}
+        V & = & \{\text{A},\text{B},\text{C}\} \\
+        T & = & \{k,o,t\} \\
+        R & = & \{r_1,r_2,r_3,r_4\}, \\
+          &   & r_1 : \text{A} ↦ \text{B}t | \text{C}o\\
+          &   & r_2 : \text{B} ↦ \text{C}t \\
+          &   & r_3 : \text{C} ↦ k|o \\
+          &   & r_4 : \text{C}tt ↦ o|ok \\
+        S & = & \text{A}
+        \end{array}
+
+    .. supplemental::
+
+        Wenn auf der linken Seite einer Regel ein komplexer Ausdruck steht, dann erfolgt die Ersetzung für den Ausdruck als Ganzes.
+
+        D. h. Sei das aktuelle Wort :math:`w = \text{C}tt`, dann wird :math:`w \overset{r_4}{⇒} \text{o|ok}`.
+
+    .. solution:: 
+        :pwd: DaIstWasZuTun
+
+        :math:`L(G ) = \{oo,ott,ko,ok,o,ktt\}`
+
+
+
+.. class:: exercises
+
+Übung
+--------------------------------------------------------
+
+.. exercise:: Ableitung finden: ewtiewet
+
+    Wie wird das Wort :math:`ewtiewet` aus der Grammatik :math:`G = (V ,T ,R,S)` abgeleitet?
+
+    .. math:: 
+
+        \begin{array}{rcl}
+        V & = & \{\text{P},\text{Q},\text{R},\text{S}\} \\
+        T & = & \{e,i,t,w\} \\
+        R & = & \{r_1,r_2,r_3,r_4,r_5\}, \\
+          &   & r_1 : \text{P} ↦ i | w\text{Q} \\
+          &   & r_2 : \text{Q} ↦ et | we | wit \\
+          &   & r_3 : \text{R} ↦ \text{Q} wt| tie \text{P} \\
+          &   & r_4 : \text{S} ↦ \text{P} e| ew \text{R} | i | w \text{Q} we \\
+          &   & r_5 : wtie\text{P} ↦ wtietie \\
+        S & = & \text{S}
+        \end{array}
+
+    .. solution::
+        :pwd: AbleitungGefunden
+
+        :math:`S \overset{r4.2}{⇒} ewR \overset{r3.2}{⇒} ewtieP \overset{r1.2}{⇒} ewtiewQ \overset{r2.1}{⇒} ewtiewet`
+
+
+
+.. class:: exercises
+
+Übung
+--------------------------------------------------------
+
+.. exercise:: Ableitung finden: etrrtse
+
+    Wie wird das Wort :math:`etrrtse` aus der Grammatik :math:`G = (V ,T ,R,S)` abgeleitet?
+
+    .. math:: 
+
+        \begin{array}{rcl}
+        V & = & \{\text{X},\text{Y},\text{Z}\} \\
+        T & = & \{e,r,s,t\} \\
+        R & = & \{r_1,r_2,r_3\}, \\
+          &   & r_1 : \text{X} ↦ rts \\
+          &   & r_2 : \text{Y} ↦ et \text{Z} | re \text{X} \\
+          &   & r_3 : \text{Z} ↦ r \text{X} e| srt | tse \\
+        S & = & \text{Y}
+        \end{array}
+
+    .. solution::
+        :pwd: AbleitungGefunden
+
+        :math:`Y \overset{r2.1}{⇒} etZ \overset{r3.1}{⇒} etrXe \overset{r1}{⇒} etrrtse`
+
+
+Grammatiken für die vorhergehenden Beispiele
+--------------------------------------------------------
+
+.. deck::
+
+    .. card::
+
+        :math:`M_3 = \{0\}∪\{1\}×\{0,1\}^* = \{0,1,10,11,100,101,110,111,...\}= L(G )`:
+
+        .. math:: 
+            :class: incremental
+
+            \begin{array}{rcl}
+            G & = & (V ,T ,R,S) \\
+            V & = & \{\text{Start},\text{A}\} \\
+            T & = & \{0,1\} \\
+            R & = & \{r_1,r_2\}, \\
+              &   & r_1 : \text{Start} ↦ 0 | 1 | 1\text{A}\\
+              &   & r_2 : \text{A} ↦ 0 | 1 | 0\text{A} | 1\text{A}\\
+            S & = & \text{Start}
+            \end{array}        
+
+    .. card::
+
+        :math:`M_2 = \{0^n1^n |n ∈ \mathbb{N}\}= \{01,0011,000111,...\}= L(G )`:
+
+        .. math:: 
+            :class: incremental
+
+            \begin{array}{rcl}
+            G & = & (V ,T ,R,S) \\
+            V & = & \{\text{S}\} \\
+            T & = & \{0,1\} \\
+            R & = & \{r_1\}, \\
+              &   & r_1 : \text{S} ↦ 0\,\text{S}\,1 | 01\\
+            S & = & \text{S}
+            \end{array}       
+
+    .. card::
+
+        :math:`M_1 = \{0^n1^n2^n |n ∈ \mathbb{N}\}= \{012,001122,000111222,...\}= L(G )`:
+
+        .. math:: 
+            :class: incremental
+
+            \begin{array}{rcl}
+            G & = & (V ,T ,R,S) \\
+            V & = & \{\text{S},\text{B},\text{C}\} \\
+            T & = & \{0,1,2\} \\
+            R = \{r_1,r_2,r_3,r_4,r_5,r_6\} & , & r_1 : \text{S} ↦ 0\text{SBC} | 0 \text{BC}\\
+              &   & r_2 : \text{CB} ↦ \text{BC} \\
+              &   & r_3 : 0\text{B} ↦ 01 \\
+              &   & r_3 : 1\text{B} ↦ 11 \\
+              &   & r_3 : 1\text{C} ↦ 12 \\
+              &   & r_3 : 2\text{C} ↦ 22 \\
+            S & = & \text{S}
+            \end{array}             
+
+
+
+.. class:: new-section transition-flip
+
+Chomsky-Hierarchie
+--------------------------------------------------------
+
+
+Aufbau der Chomsky-Hierarchie
+--------------------------------------------------------
+
+
+.. definition::
+
+    Unterteilung der formalen Grammatiken :math:`G = (V ,T ,R,S)` in vier Klassen:
+
+    .. deck:: numbered from-zero
+
+        .. card:: dd-margin-left-4em
+
+            :**Typ-0**: In einer allgemeinen Chomsky-Grammatik oder Typ-0 Grammatik sind alle Regeln zugelassen.
+
+                :math:`r_k : (V ∪T )^*\setminus T^* ↦ (V ∪T )^*` 
+
+        .. card:: dd-margin-left-4em
+
+            :**Typ-1**: In einer :emph:`kontextsensitiven Grammatik` oder Typ-1 Grammatik müssen die Regeln Prefix und Postfix vor und nach der Ersetzung erhalten, und die Länge des Wortes erhalten oder wachsen lassen, also 
+            
+                :math:`r_k : u A v ↦ u w v` mit :math:`u,v ∈(V ∪T )^*`, :math:`A ∈V` und :math:`w ∈(V ∪T )^+`. 
+
+                .. container:: peripheral
+                
+                    Einmalig ist die Regel :math:`S ↦ε` erlaubt, dann darf aber :math:`S` auf keiner rechten Seite einer anderen Regel auftreten.
+
+        .. card:: dd-margin-left-4em
+
+            :**Typ-2**: In einer :emph:`kontextfreien Grammatik` oder Typ-2 Grammatik dürfen Regeln links nur aus einer Variablen bestehen, also 
+            
+                :math:`rk : A ↦ w` mit :math:`A ∈V` und :math:`w ∈(V ∪T )^+`.
+
+                .. container:: peripheral
+                
+                    Einmalig ist die Regel :math:`S ↦ ε` erlaubt, dann darf aber :math:`S` auf keiner rechten Seite einer anderen Regel auftreten.
+
+        .. card:: dd-margin-left-4em
+
+            :**Typ-3**: In einer :emph:`regulären Grammatik` oder Typ-3 Grammatik dürfen Regeln links nur aus einer Variablen bestehen, und auf der rechten Seite aus einem terminalen Symbol und optional einer Variable, die bei allen Regeln nur links für *links-lineare Grammatiken* oder nur rechts für *rechts-lineare Grammatiken* stehen darf:
+
+                :math:`rk : A ↦aB` (rechts-linear) oder :math:`A ↦Ba` (links-linear) oder :math:`A ↦a` mit :math:`A,B ∈V` , :math:`a ∈T`.
+
+                .. container:: peripheral
+                
+                    Einmalig ist die Regel :math:`S ↦ ε` erlaubt, dann darf aber :math:`S` auf keiner rechten Seite einer anderen Regel auftreten.
+
+
+
+Chomsky-Typ einer Sprache
+--------------------------------------------------------
+
+.. observation::
+
+    Regeln von Grammatiken mit höherem Typ erfüllen immer auch „tiefere“ Bedingungen. 
+
+Eine relevante Frage ist: Welches ist der höchste Grammatik-Typ einer erzeugten Sprache?
+
+
+.. definition::
+    :class: incremental
+
+    Eine formale Sprache :math:`L` ist von einem bestimmten *Chomsky-Typ* und entsprechend kontextsensitiv, kontextfrei oder regulär, wenn es eine Grammatik G gibt, die die Sprache :math:`L= L(G )` erzeugt.
+
+.. summary::
+    :class: incremental
+
+    Da Sprachen höheren Typs auch die Kriterien tieferen Typs erfüllen, sind somit reguläre Sprachen auch kontextfrei, sowie kontextfreie Sprachen auch kontextsensitiv.
+
+
+
+Einordnung von Grammatiken in die Chomsky-Hierarchie
+--------------------------------------------------------
+
+.. deck::
+
+    .. card::
+
+        .. question::
+
+            Welchen Typ hat die folgende Grammatik :math:`G =(V ,T ,R,S)`?
+
+            .. math:: 
+
+                \begin{array}{rcl}
+                V & = & \{\text{Start},\text{A}\} \\
+                T & = & \{0,1\} \\
+                R & = & \{r_1,r_2\}, \\
+                &   & r_1 : \text{Start} ↦ 0 | 1 | 1\text{A}\\
+                &   & r_2 : \text{A} ↦ 0 | 1 | 0\text{A} | 1\text{A}\\
+                S & = & \text{Start}
+                \end{array}    
+
+            .. presenter-note::
+
+                Es ist eine reguläre Grammatik/Typ 3 Grammatik. 
+
+    .. card::
+
+        .. question::
+
+            Welchen Typ hat die folgende Grammatik :math:`G =(V ,T ,R,S)`?
+
+            .. math:: 
+
+                \begin{array}{rcl}
+                V & = & \{\text{S}\} \\
+                T & = & \{0,1\} \\
+                R & = & \{r_1\}, \\
+                &   & r_1 : \text{S} ↦ 0\,\text{S}\,1 | 01\\
+                S & = & \text{S}
+                \end{array}  
+
+            .. presenter-note::
+
+                Es ist eine kontextfreie Grammatik/Typ 2 Grammatik.
+
+    .. card::
+
+        .. question::
+
+            Welchen Typ hat die folgende Grammatik :math:`G =(V ,T ,R,S)`?
+
+            .. math:: 
+
+                \begin{array}{rcl}
+                V  =  \{\text{S},\text{B},\text{C}\}\quad,\quad S =  \text{S}&,& T  =  \{0,1,2\} \\
+                R = \{r_1,r_2,r_3,r_4,r_5,r_6\} & , & r_1 : \text{S} ↦ 0\text{SBC} | 0 \text{BC}\\
+                &   & r_2 : \text{CB} ↦ \text{BC} \\
+                &   & r_3 : 0\text{B} ↦ 01 \\
+                &   & r_3 : 1\text{B} ↦ 11 \\
+                &   & r_3 : 1\text{C} ↦ 12 \\
+                &   & r_3 : 2\text{C} ↦ 22 \\
+                \end{array}  
+
+            .. presenter-note::
+
+                Es ist eine allgemeine Grammatik/Typ 0 Grammatik aufgrund der Regel
+                :math:`r_2 : \text{CB} ↦ \text{BC}`, die nicht in einer kontextsensitiven Grammatik erlaubt ist.
+
+                :math:`CB \rightarrow BC`  ist keine kontextsensitive Regel, da sie mehrere Symbole gleichzeitig ersetzt, ohne einen expliziten Kontext zu definieren; d. h. es wird formal keine Umgebung ( :math:`u` oder :math:`v` ) spezifiziert, die für die Anwendung der Regel erforderlich wäre.
+
+            .. container:: incremental
+
+                Können wir die Grammatik umformulieren, damit dies eine Type 1 Grammatik wird?
+
+    .. card::   
+
+            Umformulierung einer allgemeinen Regel zur Vertauschung von zwei Variablen in  kontextsensitive Regeln (der Kontext ist hierbei nicht explizit definiert kann aber natürlich ergänzt werden):
+
+            Gegeben sei die Regel :math:`r_2 : \text{CB} ↦ \text{BC}`.
+
+            Umformulierung in kontextsensitive Regeln:
+
+            .. math:: 
+
+                \begin{array}{rcl}
+                    r_{2'.1} & : & CB ↦ CX \\
+                    r_{2'.2} & : & CX ↦ YX \\
+                    r_{2'.3} & : & YX ↦ YC \\
+                    r_{2'.4} & : & YC ↦ BC \\
+                \end{array}
+
+            .. container:: incremental
+
+                In jeder Regel wird nur eine Variable ersetzt!
+
+    .. card::
+
+        .. question::
+
+            Welchen Typ hat die folgende Grammatik :math:`G =(V ,T ,R,S)`?
+
+            .. math::
+
+                \begin{array}{rcl}
+                    V  =  \{Start, o, >, <, \#, *\}  & , & T = \{0, 1, 2\} \quad , \quad S  =  Start \\
+                    R = \{r_1, r_2, r_3, r_4, r_5, r_6, r_7\} & , & 
+                    \begin{array}{rrcl}
+                        r_1: &  Start & ↦ & \#<o\# \\
+                        r_2: & \#< & ↦ & \#> |* \\
+                        r_3: & >o & ↦ & oo> \\
+                        r_4: &  >\# & ↦ & <\# \\
+                        r_5: & o< & ↦ & <o \\
+                        r_6: & *o & ↦ & 0*\,|\,1*\,|\,2* \\
+                        r_7: & *\# & ↦ & ε \\
+                    \end{array} \\
+                \end{array}
+
+            .. supplemental::
+
+                Die Grammatik erzeugt die Sprache:
+
+                .. math::
+                
+                    \begin{array}{rcl}
+                        M_0  & = & \{w ∈ Σ^* | |w| = 2^n , n ∈ \mathbb{N}\}\\
+                        & = & \{0, 1, 2, 00, 01, ... , 21, 22, 0000, 0001, ...\} \\
+                        & = & L(G )
+                    \end{array}
+
+            .. presenter-note::
+
+                Es handelt sich um einen Typ 0 Grammatik.
+
+
+
+.. class:: exercises
+
+Übung
+--------------------------------------------------------
+
+.. exercise:: Chomsky-Typ: ikos
+
+    Bestimmen Sie den Chomsky-Typ der Grammatik :math:`G = (V ,T ,R,S)` und geben Sie eine Ableitung für das Wort :math:`okoik` an.
+
+    .. math::
+
+        \begin{array}{rcl}                    
+            V&= & \{X,Y,Z\} \\
+            T&= & \{i,k,o,s\} \\
+            R = \{r_1,r_2,r_3,r_4,r_5\} & , & r_1 : X ↦ io |isk |ok \\
+            & & r_2 : Xo ↦ ikso |ko |okio |oso \\
+            & & r_3 : Y ↦ Xoik |k |o |s \\
+            & & r_4 : Z ↦ oY \\
+            & & r_5 : oXo ↦ oko |osioo \\
+            S & = & Z
+        \end{array}
+
+    .. solution::
+        :pwd: r4r31r22
+
+        Die Grammatik ist vom Chomsky-Typ 1. Ableitung: :math:`Z \Rightarrow oY \Rightarrow oXoik \Rightarrow okoik`
+
+
+
+.. class:: exercises
+
+Übung
+--------------------------------------------------------
+
+.. exercise:: Chomsky-Typ: ru
+
+    Bestimmen Sie den Chomsky-Typ von :math:`G = (V ,T ,R,S)` und die Sprache :math:`L(G)`:
+
+    .. math::
+
+        \begin{array}{rcl}   
+            V & = & \{A,B,C\} \\
+            T & = & \{r,u\} \\
+            R & = & \{r_1,r_2,r_3,r_4,r_5\} \\
+            & & r_1 : A ↦ uB \\
+            & & r_2 : B ↦ r \\
+            & & r_3 : Bir ↦ ru |u |ur \\
+            & & r_4 : C ↦ AiB |r |rB |u \\
+            & & r_5 : riB ↦ u \\
+            S & = & C
+        \end{array}
+
+    .. solution::
+        :pwd: uur_rr-u...
+
+        Die Grammatik ist vom Chomsky-Typ 0. Die Sprache :math:`L(G)` ist :math:`\{uur,rr,urir,u,r,uu,uru\}`
+
+
+
+.. class:: exercises
+
+Übung
+--------------------------------------------------------
+
+.. exercise:: Chomsky-Typ: iosu
+
+    Bestimmen Sie den Chomsky-Typ von :math:`G = (V ,T ,R,S)` und die Sprache :math:`L(G)`:
+
+    .. math::
+
+        \begin{array}{rcl}   
+            V & = & \{A,B,C,D\} \\
+            T & = & \{i,o,s,u\} \\
+            R & = & \{r_1,r_2,r_3,r_4\} \\
+            & & r_1 : A ↦ Co| o \\
+            & & r_2 : B ↦ iCu | iDu | uA \\
+            & & r_3 : C ↦ is \\
+            & & r_4 : D ↦ usoA \\
+            S & = & B
+        \end{array}
+
+    .. solution::
+        :pwd: uur_rr-u...
+
+        Die Grammatik ist vom Chomsky-Typ 2. Die Sprache :math:`L(G)` ist :math:`\{uiso,uo,iisu,iusoisou,iusoou\}`
+
+
+
+.. class:: new-section transition-move-left
+
+Typ-0 und Typ-1 Grammatiken
+--------------------------------------------------------
+
+
+Allgemeine Chomsky Typ-0 Grammatiken
+--------------------------------------------------------
+
+
+Zur Erinnerung: Entscheidbare Sprachen sind aufzählbar.
+
+.. theorem::
+
+    Die Sprache einer allgemeinen, also Typ-0, Grammatik ist (rekursiv) aufzählbar.
+
+.. deck:: 
+
+    .. card::
+
+        .. proof::
+
+            Sei :math:`r`  die Anzahl Regeln, :math:`m` die maximale Verlängerung durch dir Anwendung einer Regel und :math:`k` die Anzahl Ableitungen.
+
+            Die k-te Anwendung einer Regel :math:`ϱ ≤ r` an Stelle :math:`µ ≤ 1+ (k-1)·m` wird kodiert als:
+
+            :math:`ν_k = ϱ + µ·(r + 1)`
+
+            .. supplemental::
+
+                Durch die Konstruktion von :math:`ν_k` wird sichergestellt, dass jede Ableitung eindeutig kodiert ist. Aus :math:`ν_k` lässt sich die angewandte Regel und die Stelle der Anwendung durch einfache  Division durch :math:`r+1` ablesen. Der ganzzahlige Anteil ist die Position und der Rest die angewandte Regel.
+
+                - ϱ ist der griechische Buchstabe Rho, 
+                - µ ist der griechische Buchstabe My, 
+                - ν ist der griechische Buchstabe Ny.
+
+            Die Gödelnummer eines Wortes nach :math:`s` Ableitungen ist mit (:math:`p_k`) Primzahlfolge:
+
+            :math:`n = \prod_{k=1}^{s} p_k^{ν_k}`
+
+    .. card::
+
+            .. example::
+
+                .. class:: column-list
+
+                - Gegeben sei :math:`G = (V ,T ,R,S)`:
+
+                  .. math::
+
+                    \begin{array}{rcl}   
+                        V & = & \{S,T\} \\
+                        T & = & \{0,1\} \\
+                        R & = & \{r_1,r_2,r_3\} \\
+                        & & r_1 : T ↦ T + T \\
+                        & & r_2 : T ↦ 0 \\
+                        & & r_3 : T ↦ 1 \\
+                        S & = & T
+                    \end{array}
+                - Ableitung von :math:`0 + 0`:
+                  
+                  1. :math:`T \overset{r_1, \mu = 1}{⇒} T + T \overset{r_2, \mu = 1}{⇒} 0 + T \overset{r_2, \mu = 3}{⇒} 0 + 0`
+
+                     :math:`n = 2^{ν_1} \cdot 3^{ν_2} \cdot 5^{ν_3}`
+
+                     :math:`ν_1 = 1 + 1 \cdot 4 = 5`
+
+                     :math:`ν_2 = 2 + 1 \cdot 4 = 6`
+
+                     :math:`ν_3 = 2 + 3 \cdot 4 = 14\quad (\frac{14}{4} = 3 \text{ Rest } 2)`
+
+                  .. class:: incremental margin-top-1em
+
+                  2. :math:`T \overset{r_1, \mu = 1}{↦} T + T \overset{r_2, \mu = 3}{↦} T + 0 \overset{r_2, \mu = 1}{↦} 0 + 0`
+
+
+
+Chomsky Typ-0 Grammatiken - Schlussfolgerungen und Beobachtungen
+-----------------------------------------------------------------
+
+- Ist eine formale Sprache rekursiv aufzählbar, so wird sich daraus auch eine Typ-0 Grammatik erzeugen lassen.
+
+.. class:: incremental
+
+- (Aber) nicht jede Typ-0 Grammatik ist entscheidbar (d.h. rekursiv)!
+
+    - Für eine Typ-0 Sprache des Halteproblems ist nur das positive entscheidbar.
+    - Eine Endlosschleife endet - per Definition - nie...
+
+- Es muss auch sehr viele formale Sprachen geben, die nicht Typ-0 sind:
+
+  - Typ-0 Sprachen sind durch Turingmaschinen erzeugbar, also aufzählbar. 
+  - Die Menge der formalen Sprachen ist überabzählbar...
+
+
+
+
+
+Chomsky Typ-1 - kontextsensitive Grammatiken
+--------------------------------------------------------
+
+.. theorem::
+
+    Die Sprache einer kontextsensitiven, also Typ-1, Grammatik ist entscheidbar.
+
+.. deck::
+
+    .. card::
+
+        .. proof::
+
+            Erzeugte Wörter aus Produktionen sind in der Länge monoton wachsend!
+
+            Sei :math:`G = (V ,T ,R,S)` und :math:`w ∈T^*` mit :math:`n = |w|` und :math:`M` Produkte, die auf Worte der Länge :math:`n` abgebildet werden können:
+
+            :math:`M= \{(V ∪T )^m |0 <m ≤n\}` ist durch :math:`|M| = \sum^n_{m=1}(|V |+ |T |)^m`  beschränkt! Nach spätestens :math:`|M|` Ableitungen sind alle möglichen Quellen, bzw. maximal :math:`n ·|M|` Stellen für Ableitungen, durchsucht.
+
+            Damit ist bei einer Suche unter allen Worten bis Länge :math:`n` nach endlicher Suche durch und kann :math:`w ∈L(G )` oder :math:`w \notin L(G )` entschieden werden.
+
+    .. card::
+
+        .. attention::
+
+            Die Umkehrung gilt nicht: Nicht jede entscheidbare Sprache ist kontextsensitiv! Es kann eine entscheidbare Typ-0 Sprache konstruiert werden.
+
+        .. container:: incremental
+
+            Sind entscheidbare Sprache damit eine gute Wahl für Programmiersprachen?
+
+            - Entscheidbarkeit sagt nichts über die Komplexität der Entscheidung aus.
+            - Der Aufwand zur Analyse von Typ-1 Sprachen ist bereits sehr hoch.
+            - Trotzdem haben viele Programmiersprachen Anteile, die kontextsensitiv sind:
+
+              - der wesentliche Teil (insbesondere die Syntaxanalyse) ist jedoch kontextfrei
+              - Sonderfälle (zum Beispiel Typprüfungen) werden gesondert verarbeitet
+
+
+Die Sprachhiarchie und die Chomsky-Typen
+--------------------------------------------------------
+
+.. theorem::
+
+    Seien
+
+    - :math:`L` die Menge der formalen Sprachen,
+    - :math:`L_k` die Menge der Sprachen vom Chomsky-Typ :math:`k`,
+    - :math:`L_\text{aufzählbar}` die Menge der aufzählbaren formalen Sprachen und
+    - :math:`L_\text{entscheidbar}` die Menge der entscheidbaren formalen Sprachen,
+
+    dann gilt:
+
+    :math:`\underbrace{L_3}_{\text{\small regulär}} ⊂ \underbrace{L_2}_{\text{\small kontextfrei}} ⊂ \underbrace{L_1}_{\text{\small kontextsensitiv}} ⊂ \underbrace{L_\text{\small entscheidbar}}_{\text{\small rekursiv}} ⊂ \underbrace{L_0 = L_\text{\small aufzählbar}}_{\text{\small allg. Chomsky-Grammatik}} ⊂ \underbrace{L}_{\text{\small formale Sprache}}`
+
+
+
+.. class:: exercises
+
+Übung
+--------------------------------------------------------
+
+.. exercise:: Aufzählung einer Sprache
+
+    .. class:: column-list
+
+    - Gegeben sei :math:`G = (V ,T ,R,S)`:
+
+      .. math::
+
+            \begin{array}{rcl}   
+                V & = & \{S,T\} \\
+                T & = & \{0,1\} \\
+                R & = & \{r_1,r_2,r_3\} \\
+                & & r_1 : T ↦ 1 \\
+                & & r_2 : T ↦ ( T ) \\
+                & & r_3 : T ↦ T \cdot T \\
+                S & = & T
+            \end{array}
+    - 1. Gegeben Sei folgende Ableitung:
+
+         :math:`T ↦ T \cdot T ↦ ( T ) \cdot T ↦ ( 1 ) \cdot T`
+    
+         Bestimmen Sie die Gödelnummer.
+
+      2. Bestimmen Sie die Ableitung/das Wort für die Gödelnummer :math:`n=37\,968\,750\,000\,000`.
+
+    .. solution::
+        :pwd: und1und2und3
+
+        .. rubric:: 1. Lösung
+
+        :math:`T \overset{r_3,\mu=1}{↦} T \cdot T \overset{r_2,\mu=1}{↦} ( T ) \cdot T \overset{r_1,\mu=2}{↦} ( 1 ) \cdot T`
+
+        Daraus ergibt sich:
+
+        :math:`n = 2^{ν_1} \cdot 3^{ν_2} \cdot 5^{ν_3}`
+
+        :math:`ν_1 = 3 + 1 \cdot 4 = 7`
+
+        :math:`ν_2 = 2 + 1 \cdot 4 = 6`
+
+        :math:`ν_3 = 1 + 2 \cdot 4 = 9`
+
+        :math:`\Rightarrow n =  182\,250\,000\,000`.
+
+        .. rubric:: 2. Lösung
+
+        :math:`n = 37\,968\,750\,000\,000 = 2^7 \cdot 3^5 \cdot 5^{13}`.
+
+        :math:`n = 2^{ν_1} \cdot 3^{ν_2}\cdot 5^{ν_3}`
+
+        :math:`ν_1 = 3 + 1 \cdot 4 = 7\qquad (7/4 = 1 \text{ Rest } 3)`
+
+        :math:`ν_2 = 1 + 1 \cdot 4 = 5\qquad (5/4 = 1 \text{ Rest } 1)`
+
+        :math:`ν_3 = 1 + 3 \cdot 4 = 5\qquad (13/4 = 3 \text{ Rest } 1)`
+
+        :math:`T \overset{r_3,\mu=1}{↦} T \cdot T \overset{r_1,\mu=1}{↦} 1 \cdot T \overset{r_1,\mu=3}{↦} 1 \cdot 1`
+        
+
+
+
+.. class:: new-section transition-move-to-top
+
+Grammatiken kontextfreier Sprachen
+--------------------------------------------------------
+
+
+Chomsky Typ-2: Kontextfreie Grammatiken
+--------------------------------------------------------
+
+Grammatiken für die wichtige Klasse der kontextfreien Sprachen sind nicht eindeutig:
+
+Zwei Grammatiken für Terme wie :math:`{\color{red}1+ 2 * 3} ∈ L(G1) = L(G2)`:
+
+.. container:: scrollable
+        
+    .. class:: column-list evenly-spaced-columns
+
+    - .. math::
+
+            \begin{array}{rcl}
+                G_1 & = & (V_1 ,T_1 ,R_1, S_1) \\
+                V_1 & = & \{Term\} \\
+                T_1 & = & \{0,1,...,9,+,*\} \\
+                R_1 & = & \{r_1,r_2,r_3\} \\
+                & & r_1 : Term ↦ Term + Term \\
+                & & r_2 : Term ↦ Term * Term \\
+                & & r_3 : Term ↦ 0|1|...|9 \\
+                S_1 & = & T
+            \end{array} 
+
+      .. math::
+        :class: incremental
+
+        \underbrace{%
+            \underbrace{\underbrace{1}_{Term}+\underbrace{2}_{Term}}_{Term} * \underbrace{3}_{Term}}_{Term} 
+    - .. math::
+
+            \begin{array}{rcl}
+                G_2 & = & (V_2 ,T_2, R_2, S_2) \\
+                V_2 & = & \{Sum, Prod\} \\
+                T_2 & = & \{0,1,...,9,+,*\} \\
+                R_2 & = & \{r_1,r_2,r_3,r_4\} \\
+                & & r_1 : Sum ↦ Sum + Prod \\
+                & & r_2 : Sum ↦ Prod \\
+                & & r_3 : Prod ↦ Prod * Prod \\
+                & & r_4 : Prod ↦ 0|1|...|9  \\
+                S_2 & = & Sum
+            \end{array}
+
+      .. math::
+        :class: incremental
+
+        \underbrace{%
+            \underbrace{\underbrace{1}_{Prod}}_{Sum}+\underbrace{\underbrace{2}_{Prod} * \underbrace{3}_{Prod}}_{Prod}}_{Sum} 
+
+    .. question:: 
+        :class: incremental
+
+        In welcher Weise unterscheiden sich die beiden Grammatiken? 
+        
+        Bedenken Sie insbesondere die Rechenregeln für die Auswertung von Termen.
+
+        .. presenter-note::
+
+            Rechenregel :math:`G_2` bildet die Rechenregel Punkt-vor-Strich ab, während :math:`G_1` die Rechenregel links nach rechts abbildet.
+
+
+
+Formate zur Beschreibung kontextfreier Grammatiken
+--------------------------------------------------------
+
+.. deck::
+
+    .. card:: 
+
+        .. rubric:: (E)BNF (Klassisch)
+
+        \(a) Backus-Naur-Form (BNF) bzw. (b) erweiterte Backus-Naur-Form (EBNF), die die BNF um praktische Elemente erweitert.
+
+        .. example::
+
+            :math:`G_2` in (E)BNF:
+
+            ::
+
+                <sum>  ::= <sum> "+" <prod> | <prod>
+                <prod> ::= <prod> "*" <prod> | "0" | "1" | ... | "8" | "9"    
+
+    .. card::
+
+        .. rubric:: PEG (Modern)
+
+        Parsing Expression Grammar (PEG)
+
+        .. example::
+
+            :math:`G_2` in PEG:
+
+            ::
+
+                start: sum
+                sum:   sum "+" prod | prod
+                prod:  prod "*" prod | "0" | "1" | "2" | "3" | "4" | "5" | "6" | "7"  | "8" | "9"
+
+        .. container:: incremental
+
+            Eine PEG definiert eine Reihenfolge zur Auflösung des Syntaxbaums. D. h. ein Umstellen der Regeln führt zu einer anderen Sprache. D. h. würde die Regel ``sum: sum "+" prod | prod`` in ``sum: prod | sum "+" prod`` geändert, würde sich die Sprache ändern bzw. manche Ausdrücke nicht mehr erkannt werden.
+
+
+
+Domänenspezifische Sprachen
+--------------------------------------------------------
+
+- Nur selten werden erfolgreich neue allgemeine Programmiersprachen entwickelt.
+- Häufig(er) werden Domänenspezifische Sprachen (DSLs) entwickelt:
+
+.. deck:: padding-left-1em
+
+    .. card::
+
+        .. class:: incremental
+
+        - DSLs sind oft kontextfrei oder regulär.
+        - DSLs befähigen Personen mit Domänenwissen, Programme in Ihrer Sprache zu entwickeln.
+        - DSLs sind oft einfacher zu verstehen und zu verwenden als allgemeine Programmiersprachen.
+        - DSLs haben oft große Einschränkungen sind dafür aber verständlicher
+        - DSLs können oft einfacher optimiert werden, da sie weniger allgemein sind
+
+    .. card:: dd-margin-left-2em
+
+        Wir unterscheiden externe und interne DSLs.
+
+        .. class:: incremental
+
+        :Externer DSLs:
+            Externe DSLs sind eigenständige Sprachen unabhängig von anderen Sprachen.
+
+            - Zahlreiche Beispiele: SQL, Reguläre Ausdrücke, CSS, ...
+            - Volle Kontrolle über Grammatik und Mächtigkeit
+            - (Sehr viel) mehr Entwicklungsaufwand
+
+        .. class:: incremental
+
+        :Interne DSLs: 
+            Interne DSLs sind in einer anderen Sprache eingebettet und nutzen deren Syntax.
+
+            - Prominents Beispiel: JSON
+            - Es gibt Programmiersprachen, die gut (z. B. Scala) und solche die schlecht (z. B. Java) für die Entwicklung von internen DSLs geeignet sind.
+
+
+
+Entwicklung von DSLs mit LARK
+--------------------------------------------------------
+
+.. deck::
+
+    .. card::
+
+
+        Lark ist ein Python-Parser-Generator für kontextfreie Grammatiken.
+
+        - LARK basiert auf EBNF 
+        - LARK unterstützt das Erstellen von Parse-Trees basierend auf der Grammatik.
+
+    .. card::
+
+        
+
+        
+        .. example::
+
+            .. class:: column-list left-aligned-columns
+            
+            - .. rubric:: "+" Ausdrücke
+
+              .. code:: python
+                :number-lines:
+                :class: copy-to-clipboard
+
+                from lark import Lark
+
+                GRAMMAR = """
+                    s: term
+                    term: term "+" term -> add
+                        | NUMBER -> no
+                    
+                    %import common.NUMBER
+                    """
+
+                l = Lark(GRAMMAR, start="s")
+                print(l.parse("1+2"))
+            - .. rubric:: Resultierender Parse Tree
+
+              :: 
+
+                Tree(
+                 Token("RULE","start"),
+                 [
+                  Tree(
+                   "add",
+                   [
+                    Tree("no",[Token("NUMBER","1")]),
+                    Tree("no",[Token("NUMBER","2")]),
+                   ],
+                  )
+                 ],
+                )
+
+
+
+.. class:: new-section transition-move-left
+
+Grammatiken regulärer Sprachen
+--------------------------------------------------------
+
+
+Chomsky Typ-3: Reguläre Grammatiken
+--------------------------------------------------------
 
