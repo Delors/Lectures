@@ -1,181 +1,776 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xl="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="-259 225 584 132" width="584" height="132">
-  <style>
+<svg
+   version="1.1"
+   viewBox="-259 225 584 132"
+   width="584"
+   height="132"
+   id="svg61"
+   sodipodi:docname="kleene-abschluss-abz.svg"
+   inkscape:version="1.3.2 (091e20e, 2023-11-25)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview61"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="1.7104545"
+     inkscape:cx="522.96041"
+     inkscape:cy="-61.679512"
+     inkscape:window-width="1656"
+     inkscape:window-height="992"
+     inkscape:window-x="51"
+     inkscape:window-y="38"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="Canvas_1" />
+  <style
+     id="style1">
     @import url('/LectureDoc2/ext/fonts/ld-fonts.css'); 
   </style>
-  <defs>
-    <marker orient="auto" overflow="visible" markerUnits="strokeWidth" id="FilledArrow_Marker" stroke-linejoin="miter" stroke-miterlimit="10" viewBox="-1 -4 9 8" markerWidth="9" markerHeight="8" color="#008f00">
-      <g>
-        <path d="M 6.4 0 L 0 -2.4 L 0 2.4 Z" fill="currentColor" stroke="currentColor" stroke-width="1"/>
+  <defs
+     id="defs4">
+    <marker
+       orient="auto"
+       overflow="visible"
+       markerUnits="strokeWidth"
+       id="FilledArrow_Marker"
+       stroke-linejoin="miter"
+       stroke-miterlimit="10"
+       viewBox="-1 -4 9 8"
+       markerWidth="9"
+       markerHeight="8"
+       color="#008f00">
+      <g
+         id="g1">
+        <path
+           d="M 6.4 0 L 0 -2.4 L 0 2.4 Z"
+           fill="currentColor"
+           stroke="currentColor"
+           stroke-width="1"
+           id="path1" />
       </g>
     </marker>
-    <marker orient="auto" overflow="visible" markerUnits="strokeWidth" id="StickArrow_Marker" stroke-linejoin="miter" stroke-miterlimit="10" viewBox="-1 -4 9 8" markerWidth="9" markerHeight="8" color="black">
-      <g>
-        <path d="M 6.4 0 L 0 0 M 0 -2.4 L 6.4 0 L 0 2.4" fill="none" stroke="currentColor" stroke-width="1"/>
+    <marker
+       orient="auto"
+       overflow="visible"
+       markerUnits="strokeWidth"
+       id="StickArrow_Marker"
+       stroke-linejoin="miter"
+       stroke-miterlimit="10"
+       viewBox="-1 -4 9 8"
+       markerWidth="9"
+       markerHeight="8"
+       color="black">
+      <g
+         id="g2">
+        <path
+           d="M 6.4 0 L 0 0 M 0 -2.4 L 6.4 0 L 0 2.4"
+           fill="none"
+           stroke="currentColor"
+           stroke-width="1"
+           id="path2" />
       </g>
     </marker>
-    <marker orient="auto" overflow="visible" markerUnits="strokeWidth" id="StickArrow_Marker_2" stroke-linejoin="miter" stroke-miterlimit="10" viewBox="-1 -4 9 8" markerWidth="9" markerHeight="8" color="#008f00">
-      <g>
-        <path d="M 6.4 0 L 0 0 M 0 -2.4 L 6.4 0 L 0 2.4" fill="none" stroke="currentColor" stroke-width="1"/>
+    <marker
+       orient="auto"
+       overflow="visible"
+       markerUnits="strokeWidth"
+       id="StickArrow_Marker_2"
+       stroke-linejoin="miter"
+       stroke-miterlimit="10"
+       viewBox="-1 -4 9 8"
+       markerWidth="9"
+       markerHeight="8"
+       color="#008f00">
+      <g
+         id="g3">
+        <path
+           d="M 6.4 0 L 0 0 M 0 -2.4 L 6.4 0 L 0 2.4"
+           fill="none"
+           stroke="currentColor"
+           stroke-width="1"
+           id="path3" />
       </g>
     </marker>
-    <marker orient="auto" overflow="visible" markerUnits="strokeWidth" id="StickArrow_Marker_3" stroke-linejoin="miter" stroke-miterlimit="10" viewBox="-1 -4 9 8" markerWidth="9" markerHeight="8" color="#0432ff">
-      <g>
-        <path d="M 6.4 0 L 0 0 M 0 -2.4 L 6.4 0 L 0 2.4" fill="none" stroke="currentColor" stroke-width="1"/>
+    <marker
+       orient="auto"
+       overflow="visible"
+       markerUnits="strokeWidth"
+       id="StickArrow_Marker_3"
+       stroke-linejoin="miter"
+       stroke-miterlimit="10"
+       viewBox="-1 -4 9 8"
+       markerWidth="9"
+       markerHeight="8"
+       color="#0432ff">
+      <g
+         id="g4">
+        <path
+           d="M 6.4 0 L 0 0 M 0 -2.4 L 6.4 0 L 0 2.4"
+           fill="none"
+           stroke="currentColor"
+           stroke-width="1"
+           id="path4" />
       </g>
     </marker>
   </defs>
-  <metadata> Produced by OmniGraffle 8.0\n2025-01-18 16:27:10 +0000</metadata>
-  <g id="Canvas_1" fill-opacity="1" fill="none" stroke="none" stroke-dasharray="none" stroke-opacity="1">
-    <title>Canvas 1</title>
-    <rect fill="white" x="-259" y="215" width="584" height="142"/>
-    <g id="Canvas_1_Layer_1">
-      <title>Layer 1</title>
-      <g id="Graphic_13">
-        <rect x="205.19643" y="231.95627" width="118.41523" height="118.91887" fill="white"/>
-        <rect x="205.19643" y="231.95627" width="118.41523" height="118.91887" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+  <metadata
+     id="metadata4"> Produced by OmniGraffle 8.0\n2025-01-18 16:27:10 +0000</metadata>
+  <g
+     id="Canvas_1"
+     fill-opacity="1"
+     fill="none"
+     stroke="none"
+     stroke-dasharray="none"
+     stroke-opacity="1">
+    <title
+       id="title4">Canvas 1</title>
+    <rect
+       fill="#ffffff"
+       x="-257.83072"
+       y="220.84639"
+       width="571.72253"
+       height="136.15361"
+       id="rect4" />
+    <g
+       id="Canvas_1_Layer_1">
+      <title
+         id="title5">Layer 1</title>
+      <g
+         id="Graphic_13">
+        <rect
+           x="205.19643"
+           y="232.54091"
+           width="105.55315"
+           height="117.74957"
+           fill="#ffffff"
+           id="rect5" />
+        <rect
+           x="205.19643"
+           y="231.95627"
+           width="104.96852"
+           height="118.91885"
+           stroke="#000000"
+           stroke-linecap="round"
+           stroke-linejoin="round"
+           stroke-width="1"
+           id="rect6" />
       </g>
-      <g id="Graphic_2">
-        <text transform="translate(220.14123 241.2331)" fill="maroon">
-          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="maroon" x="0" y="15" >Σ</tspan>
-          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" y="15" > = {e, i, rn, st}</tspan>
-        </text>
+      <g
+         id="Graphic_2">
+        <text
+           transform="translate(220.14123 241.2331)"
+           fill="maroon"
+           id="text7"><tspan
+             font-family="Noto Sans Display"
+             font-size="14"
+             font-weight="400"
+             fill="maroon"
+             x="0"
+             y="15"
+             id="tspan6">Σ</tspan><tspan
+             font-family="Noto Sans Display"
+             font-size="14"
+             font-weight="400"
+             fill="black"
+             y="15"
+             id="tspan7"> = {e, i, rn, st}</tspan></text>
       </g>
-      <g id="Graphic_8">
-        <text transform="translate(-153.9573 290.87513)" fill="#929292">
-          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="#929292" x="0" y="15" >m</tspan><tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="#929292" y="22" >1</tspan><tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="#929292" y="15" >=</tspan><tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="maroon" y="15" >e</tspan>
-        </text>
+      <g
+         id="Graphic_8">
+        <text
+           transform="translate(-153.9573 290.87513)"
+           fill="#929292"
+           id="text11"><tspan
+             font-family="Noto Sans Display"
+             font-size="14"
+             font-weight="400"
+             fill="#929292"
+             x="0"
+             y="15"
+             id="tspan8">m</tspan><tspan
+             font-family="Noto Sans Display"
+             font-size="14"
+             font-weight="400"
+             fill="#929292"
+             y="22"
+             id="tspan9">1</tspan><tspan
+             font-family="Noto Sans Display"
+             font-size="14"
+             font-weight="400"
+             fill="#929292"
+             y="15"
+             id="tspan10">=</tspan><tspan
+             font-family="Noto Sans Display"
+             font-size="14"
+             font-weight="400"
+             fill="maroon"
+             y="15"
+             id="tspan11">e</tspan></text>
       </g>
-      <g id="Graphic_14">
-        <text transform="translate(-253.14054 231.7331)" fill="#929292">
-          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="#929292" x="0" y="15" >Wort=</tspan>
-          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="maroon" y="15" >e rn st </tspan>
-          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="#0432ff" x="0" y="34" >Länge: l = 3</tspan>
-        </text>
+      <g
+         id="Graphic_14">
+        <text
+           transform="translate(-253.14054 231.7331)"
+           fill="#929292"
+           id="text14"><tspan
+             font-family="Noto Sans Display"
+             font-size="14"
+             font-weight="400"
+             fill="#929292"
+             x="0"
+             y="15"
+             id="tspan12">Wort=</tspan><tspan
+             font-family="Noto Sans Display"
+             font-size="14"
+             font-weight="400"
+             fill="maroon"
+             y="15"
+             id="tspan13">e rn st </tspan><tspan
+             font-family="Noto Sans Display"
+             font-size="14"
+             font-weight="400"
+             fill="#0432ff"
+             x="0"
+             y="34"
+             id="tspan14">Länge: l = 3</tspan></text>
       </g>
-      <g id="Graphic_16">
-        <text transform="translate(-153.9573 235.31955)" fill="#008f00">
-          <tspan font-family="Noto Sans Display" font-size="12" font-weight="400" fill="#008f00" x="0" y="13" >höchstwertigste</tspan>
-          <tspan font-family="Noto Sans Display" font-size="12" font-weight="400" fill="#008f00" x="0" y="30" >Stelle</tspan>
-          <tspan font-family="Noto Sans Display" font-size="12" font-weight="400" fill="#008f00" x="0" y="47" >2</tspan>
-        </text>
+      <g
+         id="Graphic_16">
+        <text
+           transform="translate(-153.9573 235.31955)"
+           fill="#008f00"
+           id="text17"><tspan
+             font-family="Noto Sans Display"
+             font-size="12"
+             font-weight="400"
+             fill="#008f00"
+             x="0"
+             y="13"
+             id="tspan15">höchstwertigste</tspan><tspan
+             font-family="Noto Sans Display"
+             font-size="12"
+             font-weight="400"
+             fill="#008f00"
+             x="0"
+             y="30"
+             id="tspan16">Stelle</tspan><tspan
+             font-family="Noto Sans Display"
+             font-size="12"
+             font-weight="400"
+             fill="#008f00"
+             x="0"
+             y="47"
+             id="tspan17">2</tspan></text>
       </g>
-      <g id="Graphic_17">
-        <text transform="translate(69.04117 235.31955)" fill="#008f00">
-          <tspan font-family="Noto Sans Display" font-size="12" font-weight="400" fill="#008f00" x="0" y="13" >niederwertigste</tspan>
-          <tspan font-family="Noto Sans Display" font-size="12" font-weight="400" fill="#008f00" x="0" y="30" >Stelle</tspan>
-          <tspan font-family="Noto Sans Display" font-size="12" font-weight="400" fill="#008f00" x="0" y="47" >0</tspan>
-        </text>
+      <g
+         id="Graphic_17">
+        <text
+           transform="translate(69.04117 235.31955)"
+           fill="#008f00"
+           id="text20"><tspan
+             font-family="Noto Sans Display"
+             font-size="12"
+             font-weight="400"
+             fill="#008f00"
+             x="0"
+             y="13"
+             id="tspan18">niederwertigste</tspan><tspan
+             font-family="Noto Sans Display"
+             font-size="12"
+             font-weight="400"
+             fill="#008f00"
+             x="0"
+             y="30"
+             id="tspan19">Stelle</tspan><tspan
+             font-family="Noto Sans Display"
+             font-size="12"
+             font-weight="400"
+             fill="#008f00"
+             x="0"
+             y="47"
+             id="tspan20">0</tspan></text>
       </g>
-      <g id="Graphic_15">
-        <text transform="translate(-253.14054 308.87513)" fill="#0432ff">
-          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="#0432ff" x="0" y="15" >Basis: </tspan>
-          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="#0432ff" x="0" y="34" >|</tspan>
-          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="maroon" y="34" >Σ</tspan>
-          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="#0432ff" y="34" >| + 1 = 5</tspan>
-        </text>
+      <g
+         id="Graphic_15">
+        <text
+           transform="translate(-253.14054 308.87513)"
+           fill="#0432ff"
+           id="text24"><tspan
+             font-family="Noto Sans Display"
+             font-size="14"
+             font-weight="400"
+             fill="#0432ff"
+             x="0"
+             y="15"
+             id="tspan21">Basis: </tspan><tspan
+             font-family="Noto Sans Display"
+             font-size="14"
+             font-weight="400"
+             fill="#0432ff"
+             x="0"
+             y="34"
+             id="tspan22">|</tspan><tspan
+             font-family="Noto Sans Display"
+             font-size="14"
+             font-weight="400"
+             fill="maroon"
+             y="34"
+             id="tspan23">Σ</tspan><tspan
+             font-family="Noto Sans Display"
+             font-size="14"
+             font-weight="400"
+             fill="#0432ff"
+             y="34"
+             id="tspan24">| + 1 = 5</tspan></text>
       </g>
-      <g id="Graphic_10">
-        <text transform="translate(69.04117 290.87513)" fill="#929292">
-          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="#929292" x="0" y="15" >m</tspan><tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="#929292" y="22" >4</tspan><tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="#929292" y="15" >=</tspan>
-          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="maroon" y="15" >st</tspan>
-        </text>
+      <g
+         id="Graphic_10">
+        <text
+           transform="translate(69.04117 290.87513)"
+           fill="#929292"
+           id="text28"><tspan
+             font-family="Noto Sans Display"
+             font-size="14"
+             font-weight="400"
+             fill="#929292"
+             x="0"
+             y="15"
+             id="tspan25">m</tspan><tspan
+             font-family="Noto Sans Display"
+             font-size="14"
+             font-weight="400"
+             fill="#929292"
+             y="22"
+             id="tspan26">4</tspan><tspan
+             font-family="Noto Sans Display"
+             font-size="14"
+             font-weight="400"
+             fill="#929292"
+             y="15"
+             id="tspan27">=</tspan><tspan
+             font-family="Noto Sans Display"
+             font-size="14"
+             font-weight="400"
+             fill="maroon"
+             y="15"
+             id="tspan28">st</tspan></text>
       </g>
-      <g id="Graphic_19">
-        <text transform="translate(-140.8716 326.87513)" fill="#212121">
-          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="#212121" x="0" y="16" >1 · 5</tspan><tspan font-family="Noto Sans Display" font-size="9" font-weight="400" fill="#212121" y="10" >2</tspan>
-        </text>
+      <g
+         id="Graphic_19">
+        <text
+           transform="translate(-140.8716 326.87513)"
+           fill="#212121"
+           id="text30"><tspan
+             font-family="Noto Sans Display"
+             font-size="14"
+             font-weight="400"
+             fill="#212121"
+             x="0"
+             y="16"
+             id="tspan29">1 · 5</tspan><tspan
+             font-family="Noto Sans Display"
+             font-size="9"
+             font-weight="400"
+             fill="#212121"
+             y="10"
+             id="tspan30">2</tspan></text>
       </g>
-      <g id="Graphic_30">
-        <text transform="translate(-74.6716 326.87513)" fill="#212121">
-          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="#212121" x="0" y="15" >+</tspan>
-        </text>
+      <g
+         id="Graphic_30">
+        <text
+           transform="translate(-74.6716 326.87513)"
+           fill="#212121"
+           id="text31"><tspan
+             font-family="Noto Sans Display"
+             font-size="14"
+             font-weight="400"
+             fill="#212121"
+             x="0"
+             y="15"
+             id="tspan31">+</tspan></text>
       </g>
-      <g id="Graphic_31">
-        <text transform="translate(40.473527 327.37513)" fill="#212121">
-          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="#212121" x="0" y="15" >+</tspan>
-        </text>
+      <g
+         id="Graphic_31">
+        <text
+           transform="translate(40.473527 327.37513)"
+           fill="#212121"
+           id="text32"><tspan
+             font-family="Noto Sans Display"
+             font-size="14"
+             font-weight="400"
+             fill="#212121"
+             x="0"
+             y="15"
+             id="tspan32">+</tspan></text>
       </g>
-      <g id="Graphic_21">
-        <text transform="translate(-32.568552 326.87513)" fill="#212121">
-          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="#212121" x="0" y="16" >3  ·  5</tspan><tspan font-family="Noto Sans Display" font-size="9" font-weight="400" fill="#212121" y="10" >1</tspan>
-        </text>
+      <g
+         id="Graphic_21">
+        <text
+           transform="translate(-32.568552 326.87513)"
+           fill="#212121"
+           id="text34"><tspan
+             font-family="Noto Sans Display"
+             font-size="14"
+             font-weight="400"
+             fill="#212121"
+             x="0"
+             y="16"
+             id="tspan33">3  ·  5</tspan><tspan
+             font-family="Noto Sans Display"
+             font-size="9"
+             font-weight="400"
+             fill="#212121"
+             y="10"
+             id="tspan34">1</tspan></text>
       </g>
-      <g id="Graphic_23">
-        <text transform="translate(82.04761 326.87513)" fill="#212121">
-          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="#212121" x="0" y="16" >4  ·  5</tspan><tspan font-family="Noto Sans Display" font-size="9" font-weight="400" fill="#212121" y="10" >0</tspan>
-        </text>
+      <g
+         id="Graphic_23">
+        <text
+           transform="translate(82.04761 326.87513)"
+           fill="#212121"
+           id="text36"><tspan
+             font-family="Noto Sans Display"
+             font-size="14"
+             font-weight="400"
+             fill="#212121"
+             x="0"
+             y="16"
+             id="tspan35">4  ·  5</tspan><tspan
+             font-family="Noto Sans Display"
+             font-size="9"
+             font-weight="400"
+             fill="#212121"
+             y="10"
+             id="tspan36">0</tspan></text>
       </g>
-      <g id="Graphic_3">
-        <text transform="translate(220.14123 260.27582)" fill="maroon">
-          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="maroon" x="0" y="15" >m</tspan><tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="maroon" y="22" >1</tspan><tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="maroon" y="15" >= e</tspan>
-        </text>
+      <g
+         id="Graphic_3">
+        <text
+           transform="translate(220.14123 260.27582)"
+           fill="maroon"
+           id="text39"><tspan
+             font-family="Noto Sans Display"
+             font-size="14"
+             font-weight="400"
+             fill="maroon"
+             x="0"
+             y="15"
+             id="tspan37">m</tspan><tspan
+             font-family="Noto Sans Display"
+             font-size="14"
+             font-weight="400"
+             fill="maroon"
+             y="22"
+             id="tspan38">1</tspan><tspan
+             font-family="Noto Sans Display"
+             font-size="14"
+             font-weight="400"
+             fill="maroon"
+             y="15"
+             id="tspan39">= e</tspan></text>
       </g>
-      <g id="Graphic_4">
-        <text transform="translate(220.14123 280.14226)" fill="maroon">
-          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="maroon" x="0" y="15" >m</tspan><tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="maroon" y="22" >2</tspan><tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="maroon" y="15" >= i</tspan>
-        </text>
+      <g
+         id="Graphic_4">
+        <text
+           transform="translate(220.14123 280.14226)"
+           fill="maroon"
+           id="text42"><tspan
+             font-family="Noto Sans Display"
+             font-size="14"
+             font-weight="400"
+             fill="maroon"
+             x="0"
+             y="15"
+             id="tspan40">m</tspan><tspan
+             font-family="Noto Sans Display"
+             font-size="14"
+             font-weight="400"
+             fill="maroon"
+             y="22"
+             id="tspan41">2</tspan><tspan
+             font-family="Noto Sans Display"
+             font-size="14"
+             font-weight="400"
+             fill="maroon"
+             y="15"
+             id="tspan42">= i</tspan></text>
       </g>
-      <g id="Graphic_6">
-        <text transform="translate(220.14123 300.0087)" fill="maroon">
-          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="maroon" x="0" y="15" >m</tspan><tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="maroon" y="22" >3</tspan><tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="maroon" y="15" >= rn</tspan>
-        </text>
+      <g
+         id="Graphic_6">
+        <text
+           transform="translate(220.14123 300.0087)"
+           fill="maroon"
+           id="text45"><tspan
+             font-family="Noto Sans Display"
+             font-size="14"
+             font-weight="400"
+             fill="maroon"
+             x="0"
+             y="15"
+             id="tspan43">m</tspan><tspan
+             font-family="Noto Sans Display"
+             font-size="14"
+             font-weight="400"
+             fill="maroon"
+             y="22"
+             id="tspan44">3</tspan><tspan
+             font-family="Noto Sans Display"
+             font-size="14"
+             font-weight="400"
+             fill="maroon"
+             y="15"
+             id="tspan45">= rn</tspan></text>
       </g>
-      <g id="Graphic_7">
-        <text transform="translate(220.14123 319.87513)" fill="maroon">
-          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="maroon" x="0" y="15" >m</tspan><tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="maroon" y="22" >4</tspan><tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="maroon" y="15" >= st</tspan>
-        </text>
+      <g
+         id="Graphic_7">
+        <text
+           transform="translate(220.14123 319.87513)"
+           fill="maroon"
+           id="text48"><tspan
+             font-family="Noto Sans Display"
+             font-size="14"
+             font-weight="400"
+             fill="maroon"
+             x="0"
+             y="15"
+             id="tspan46">m</tspan><tspan
+             font-family="Noto Sans Display"
+             font-size="14"
+             font-weight="400"
+             fill="maroon"
+             y="22"
+             id="tspan47">4</tspan><tspan
+             font-family="Noto Sans Display"
+             font-size="14"
+             font-weight="400"
+             fill="maroon"
+             y="15"
+             id="tspan48">= st</tspan></text>
       </g>
-      <g id="Graphic_11">
-        <text transform="translate(-45.72707 290.87513)" fill="#929292">
-          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="#929292" x="0" y="15" >m</tspan><tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="#929292" y="22" >3</tspan><tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="#929292" y="15" >=</tspan><tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="maroon" y="15" >rn</tspan>
-        </text>
+      <g
+         id="Graphic_11">
+        <text
+           transform="translate(-45.72707 290.87513)"
+           fill="#929292"
+           id="text52"><tspan
+             font-family="Noto Sans Display"
+             font-size="14"
+             font-weight="400"
+             fill="#929292"
+             x="0"
+             y="15"
+             id="tspan49">m</tspan><tspan
+             font-family="Noto Sans Display"
+             font-size="14"
+             font-weight="400"
+             fill="#929292"
+             y="22"
+             id="tspan50">3</tspan><tspan
+             font-family="Noto Sans Display"
+             font-size="14"
+             font-weight="400"
+             fill="#929292"
+             y="15"
+             id="tspan51">=</tspan><tspan
+             font-family="Noto Sans Display"
+             font-size="14"
+             font-weight="400"
+             fill="maroon"
+             y="15"
+             id="tspan52">rn</tspan></text>
       </g>
-      <g id="Graphic_12">
-        <rect x="212.10323" y="215.9543" width="66.896" height="29" fill="white"/>
-        <text transform="translate(217.10323 220.9543)" fill="black">
-          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="31974423e-20" y="15" >Legende</tspan>
-        </text>
+      <g
+         id="Graphic_12">
+        <rect
+           x="210.93394"
+           y="223.55463"
+           width="68.065292"
+           height="21.399696"
+           fill="#ffffff"
+           id="rect52" />
+        <text
+           transform="translate(217.10323 220.9543)"
+           fill="black"
+           id="text53"><tspan
+             font-family="Noto Sans Display"
+             font-size="14"
+             font-weight="400"
+             fill="black"
+             x="31974423e-20"
+             y="15"
+             id="tspan53">Legende</tspan></text>
       </g>
-      <g id="Line_18">
-        <line x1="-54.374064" y1="244.3894" x2="55.74117" y2="244.3894" marker-end="url(#FilledArrow_Marker)" stroke="#008f00" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4.0,4.0" stroke-width="1"/>
+      <g
+         id="Line_18">
+        <line
+           x1="-54.374064"
+           y1="244.3894"
+           x2="55.74117"
+           y2="244.3894"
+           marker-end="url(#FilledArrow_Marker)"
+           stroke="#008f00"
+           stroke-linecap="round"
+           stroke-linejoin="round"
+           stroke-dasharray="4.0,4.0"
+           stroke-width="1"
+           id="line53" />
       </g>
-      <g id="Graphic_20">
-        <text transform="translate(-45.72707 255.186)" fill="#008f00">
-          <tspan font-family="Noto Sans Display" font-size="12" font-weight="400" fill="#008f00" x="0" y="13" >Stelle</tspan>
-          <tspan font-family="Noto Sans Display" font-size="12" font-weight="400" fill="#008f00" x="0" y="30" >1</tspan>
-        </text>
+      <g
+         id="Graphic_20">
+        <text
+           transform="translate(-45.72707 255.186)"
+           fill="#008f00"
+           id="text55"><tspan
+             font-family="Noto Sans Display"
+             font-size="12"
+             font-weight="400"
+             fill="#008f00"
+             x="0"
+             y="13"
+             id="tspan54">Stelle</tspan><tspan
+             font-family="Noto Sans Display"
+             font-size="12"
+             font-weight="400"
+             fill="#008f00"
+             x="0"
+             y="30"
+             id="tspan55">1</tspan></text>
       </g>
-      <g id="Line_24">
-        <line x1="-137" y1="316.4" x2="-137" y2="323.91116" marker-end="url(#StickArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <g
+         id="Line_24">
+        <line
+           x1="-137"
+           y1="316.4"
+           x2="-137"
+           y2="323.91116"
+           marker-end="url(#StickArrow_Marker)"
+           stroke="black"
+           stroke-linecap="round"
+           stroke-linejoin="round"
+           stroke-width="1"
+           id="line55" />
       </g>
-      <g id="Line_27">
-        <path d="M -145.8716 278.6307 L -115.37633 278.6307 C -113.1807 278.6307 -111.39548 280.40054 -111.37648 282.5961 L -111.06052 319.11537" marker-end="url(#StickArrow_Marker_2)" stroke="#008f00" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <g
+         id="Line_27">
+        <path
+           d="M -145.8716 278.6307 L -115.37633 278.6307 C -113.1807 278.6307 -111.39548 280.40054 -111.37648 282.5961 L -111.06052 319.11537"
+           marker-end="url(#StickArrow_Marker_2)"
+           stroke="#008f00"
+           stroke-linecap="round"
+           stroke-linejoin="round"
+           stroke-width="1"
+           id="path55" />
       </g>
-      <g id="Line_28">
-        <path d="M -37.659603 279.48296 L -.26017296 279.48296 C 1.9354633 279.48296 3.7206816 281.2528 3.7396773 283.44835 L 4.0556396 319.96762" marker-end="url(#StickArrow_Marker_2)" stroke="#008f00" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <g
+         id="Line_28">
+        <path
+           d="m -37.659603,279.48296 h 29.2144711 c 2.1956363,0 5.1396144,4.33484 5.1691301,7.47323 l 0.3159623,33.59607"
+           marker-end="url(#StickArrow_Marker_2)"
+           stroke="#008f00"
+           stroke-linecap="round"
+           stroke-linejoin="round"
+           stroke-width="1"
+           id="path56"
+           sodipodi:nodetypes="cssc" />
       </g>
-      <g id="Line_32">
-        <path d="M -183 345.8537 L -183 351.792 C -183 354.0011 -180 355.792 -180 355.792 C -180 355.792 -178 355.792 -178 355.792 L 105 355.44413" stroke="#0432ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <g
+         id="Line_32">
+        <path
+           d="M -191 345.8537 L -191 351.792 C -191 354.0011 -191 355.792 -180 355.792 C -180 355.792 -178 355.792 -178 355.792 L 105 355.44413"
+           stroke="#0432ff"
+           stroke-linecap="round"
+           stroke-linejoin="round"
+           stroke-width="1"
+           id="path57" />
       </g>
-      <g id="Line_33">
-        <line x1="-118" y1="355.7967" x2="-118" y2="351.13044" marker-end="url(#StickArrow_Marker_3)" stroke="#0432ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <g
+         id="Line_33">
+        <line
+           x1="-118"
+           y1="355.7967"
+           x2="-118"
+           y2="351.13044"
+           marker-end="url(#StickArrow_Marker_3)"
+           stroke="#0432ff"
+           stroke-linecap="round"
+           stroke-linejoin="round"
+           stroke-width="1"
+           id="line57" />
       </g>
-      <g id="Line_34">
-        <line x1="-10" y1="355.39183" x2="-10" y2="350.72558" marker-end="url(#StickArrow_Marker_3)" stroke="#0432ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <g
+         id="Line_34">
+        <line
+           x1="-10"
+           y1="355.39183"
+           x2="-10"
+           y2="350.72558"
+           marker-end="url(#StickArrow_Marker_3)"
+           stroke="#0432ff"
+           stroke-linecap="round"
+           stroke-linejoin="round"
+           stroke-width="1"
+           id="line58" />
       </g>
-      <g id="Line_35">
-        <line x1="105" y1="354.628" x2="105" y2="350.928" marker-end="url(#StickArrow_Marker_3)" stroke="#0432ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <g
+         id="Line_35">
+        <line
+           x1="105"
+           y1="354.628"
+           x2="105"
+           y2="350.928"
+           marker-end="url(#StickArrow_Marker_3)"
+           stroke="#0432ff"
+           stroke-linecap="round"
+           stroke-linejoin="round"
+           stroke-width="1"
+           id="line59" />
       </g>
-      <g id="Line_29">
-        <path d="M 79.349755 278.6307 L 114.83943 278.6307 C 117.03506 278.6307 118.82028 280.40054 118.83928 282.5961 L 119.15524 319.11537" marker-end="url(#StickArrow_Marker_2)" stroke="#008f00" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <g
+         id="Line_29">
+        <path
+           d="m 79.349755,278.6307 c 11.829892,0 -16.032577,0 27.304715,0 2.19563,0 5.21868,2.77064 5.16913,8.64252 l -0.26868,31.84215"
+           marker-end="url(#StickArrow_Marker_2)"
+           stroke="#008f00"
+           stroke-linecap="round"
+           stroke-linejoin="round"
+           stroke-width="1"
+           id="path59"
+           sodipodi:nodetypes="cssc" />
       </g>
-      <g id="Line_25">
-        <line x1="-28.674292" y1="314.69826" x2="-28.674292" y2="322.2094" marker-end="url(#StickArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <g
+         id="Line_25">
+        <line
+           x1="-28.674292"
+           y1="314.69826"
+           x2="-28.674292"
+           y2="322.2094"
+           marker-end="url(#StickArrow_Marker)"
+           stroke="black"
+           stroke-linecap="round"
+           stroke-linejoin="round"
+           stroke-width="1"
+           id="line60" />
       </g>
-      <g id="Line_26">
-        <line x1="86.42611" y1="314.69826" x2="86.42611" y2="322.2094" marker-end="url(#StickArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <g
+         id="Line_26">
+        <line
+           x1="86.42611"
+           y1="314.69826"
+           x2="86.42611"
+           y2="322.2094"
+           marker-end="url(#StickArrow_Marker)"
+           stroke="black"
+           stroke-linecap="round"
+           stroke-linejoin="round"
+           stroke-width="1"
+           id="line61" />
       </g>
     </g>
   </g>
