@@ -14,8 +14,11 @@ def primfaktorzerlegung(x,i = 0):
         return factor + " * " + primfaktorzerlegung(x,i+1)
 
 
+print("3 = " + primfaktorzerlegung(3))
+print("8 = " + primfaktorzerlegung(8))
 print("10 = " + primfaktorzerlegung(10))
 print("12 = " + primfaktorzerlegung(12))
+print("13 = " + primfaktorzerlegung(13))
 print("88 = " + primfaktorzerlegung(88))
 print("93 = " + primfaktorzerlegung(93))
 print("100 = " +primfaktorzerlegung(100))
