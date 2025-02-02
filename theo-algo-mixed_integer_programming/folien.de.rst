@@ -58,7 +58,7 @@ Lineare und Mixed-Integer Programmierung
 
 :Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
 :Kontakt: michael.eichberg@dhbw.de, Raum 149B
-:Version: 1.0.4
+:Version: 1.0.5
 
 .. container:: minor
 
@@ -751,7 +751,7 @@ Simplex anwenden
             z & = & 27 & - & \frac{3}{4}x_6 & + & \frac{1}{4}x_2 & + & \frac{1}{2}x_3 \\
             x_1 & = & 9 & - & \frac{1}{4}x_6 & - & \frac{1}{4}x_2 & - & \frac{1}{2}x_3 \\
             x_4 & = & 21 & + & \frac{1}{4}x_6 & - & \frac{3}{4}x_2 & - & \frac{5}{2}x_3 \\
-            x_5 & = & 6 & - & \frac{1}{2}x_6 & - & \frac{3}{2}x_2 & - & 4x_3 \\
+            x_5 & = & 6 & + & \frac{1}{2}x_6 & - & \frac{3}{2}x_2 & - & 4x_3 \\
             \end{array}
       
       :incremental:`Diese Operation wird als Pivot Operation bezeichnet.`
