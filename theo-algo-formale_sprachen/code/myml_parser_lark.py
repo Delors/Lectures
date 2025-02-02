@@ -8,24 +8,34 @@ Ich bin *Prof.* an der DHBW Mannheim [link: www.dhbw-mannheim.de]. Meine private
 
 """
 
-GRAMMAR = r"""s: block+
-        block: "+" WORD+ BLOCK_END? NL -> heading
-            | "*" block "*" -> bold
-            | "[link:" URL "]" -> link
-            | WORD -> word
-            | BLOCK_END -> line_end
+GRAMMAR = r"""
+        s: block+
+        block: "+" WORD+ BLOCK_END? NL? -> heading
+            | "*" block "*"             -> bold
+            | "[link:" URL "]"          -> link
+            | WORD                      -> word
+            | BLOCK_END NL?             -> line_end
         
-        NL: /\r?\n/
-        WORD: /[a-zA-Z]+/
-        BLOCK_END: /[.:!?]/
-        URL: /[a-zA-Z.-]+/
+        NL:         /\r?\n/
+        WORD:       /[a-zA-Z]+/
+        BLOCK_END:  /[.:!?]/
+        URL:        /[a-zA-Z.-]+/
         %import common.WS_INLINE
         %ignore WS_INLINE
     """
 
 l = Lark(GRAMMAR, start="s")
 print(l.parse("""+ Wer bin ich?
-Ich bin *Professor* an der DHBW Mannheim [link: www.dhbw-mannheim.de]. Meine private Homepage finden sie hier: [link: www.michael-eichberg.de]."""))
+Ich bin *Professor* an der DHBW Mannheim [link: www.dhbw-mannheim.de].
+Meine private Homepage finden sie hier: [link: www.michael-eichberg.de].
++ Was mache ich?
+Ich unterrichte Informatik."""))
+
+print(l.parse("+ Wer bin ich?"))
+
+print(l.parse("""+ Wer bin ich?
+    Ich bin *XYZ*. Meine private Homepage finden sie hier: [link: www.example.com]."""))
+
 
 """
 Tree(
@@ -49,7 +59,7 @@ Tree(
         Tree("word", [Token("WORD", "DHBW")]),
         Tree("word", [Token("WORD", "Mannheim")]),
         Tree("link", [Token("URL", "www.dhbw-mannheim.de")]),
-        Tree("line_end", [Token("BLOCK_END", ".")]),
+        Tree("line_end", [Token("BLOCK_END", "."), Token("NL", "\n")]),
         Tree("word", [Token("WORD", "Meine")]),
         Tree("word", [Token("WORD", "private")]),
         Tree("word", [Token("WORD", "Homepage")]),
@@ -58,6 +68,15 @@ Tree(
         Tree("word", [Token("WORD", "hier")]),
         Tree("line_end", [Token("BLOCK_END", ":")]),
         Tree("link", [Token("URL", "www.michael-eichberg.de")]),
+        Tree("line_end", [Token("BLOCK_END", "."), Token("NL", "\n")]),
+        Tree(
+            "heading",
+            [Token("WORD", "Was"), Token("WORD", "mache"), Token("WORD", "ich")],
+        ),
+        Tree("line_end", [Token("BLOCK_END", "?"), Token("NL", "\n")]),
+        Tree("word", [Token("WORD", "Ich")]),
+        Tree("word", [Token("WORD", "unterrichte")]),
+        Tree("word", [Token("WORD", "Informatik")]),
         Tree("line_end", [Token("BLOCK_END", ".")]),
     ],
 )
