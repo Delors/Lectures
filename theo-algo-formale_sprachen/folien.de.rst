@@ -340,25 +340,25 @@ Formale Sprachen
 
         .. card:: 
         
-            Die Menge :math:`M ⊂ Σ^*` der binären Zahlen ohne führende Nullen:
+            Die Menge :math:`M_3 ⊂ Σ^*` der binären Zahlen ohne führende Nullen:
          
             :math:`M_3 = \{0\}∪\{1\}×\{0,1\}^* = \{0,1,10,11,100,101,110,111,1000,...\}`
 
         .. card::
 
-            Die Menge :math:`M ⊂ Σ^*` von einer gleichen Anzahl von 0 und 1 in dieser Reihenfolge:
+            Die Menge :math:`M_2 ⊂ Σ^*` von einer gleichen Anzahl von 0 und 1 in dieser Reihenfolge:
 
             :math:`M_2 = \{0^n1^n | n ∈ \mathbb{N}\} = \{01,0011,000111,00001111,0000011111,...\}`
 
         .. card::
 
-            Die Wörter :math:`M ⊂ Σ^*` mit gleicher Anzahl von 0, 1 und 2 in dieser Reihenfolge:
+            Die Wörter :math:`M_1 ⊂ Σ^*` mit gleicher Anzahl von 0, 1 und 2 in dieser Reihenfolge:
 
             :math:`M_1 = \{0^n1^n2^n |n ∈ \mathbb{N}\}= \{012,001122,000111222,000011112222,...\}`
 
         .. card::
 
-            Die Menge :math:`M ⊂ Σ^*` mit Wörtern der Länge von Zweierpotenzen:
+            Die Menge :math:`M_0 ⊂ Σ^*` mit Wörtern der Länge von Zweierpotenzen:
 
             :math:`M_0 = \{w ∈Σ^*| |w| = 2^n, n ∈ \mathbb{N}_0\}= \{0,1,2,00,01,\ldots,21,22,0000,...\}`
 
@@ -499,6 +499,10 @@ Abzählbar (unendlich)
                 :alt: Diagonalisierungsverfahren von Cantor
                 :align: center
               
+            .. presenter-note::
+
+                Auf der Diagonalen ist die Summe aus Zähler und Nenner immer konstant und  jede Diagonale zählt alle Zerlegungen dieser Konstanten auf.
+
             .. supplemental::
 
                 Rationale Zahlen können als Brüche dargestellt werden und mit Hilfe des Diagonalisierungsverfahren von Cantor (auch: Cantors erstes Diagonalargument) in eine Bijektion zu den natürlichen Zahlen gebracht werden. 
@@ -777,10 +781,10 @@ Abzählbar (unendlich)
                                 - X = 10, p\ :sub:`1` = 2
                                 
                                     - 10 / 2 = 5 Rest 0 ⇒ **2 ist ein Primfaktor**
-                                    - 5 / 2 = 2 Rest 1 ⇒ X' = 5
+                                    - 5 / 2 = 2 Rest 1 ⇒ 2 ist kein weiterer Primfaktor; um die nächsten Primfaktoren zu bestimmen setzen wir X = 5
                                 - X = 5, p\ :sub:`2` = 3
                                 
-                                    - 5 / 3 = 1 Rest 2 ⇒ 3 ist *kein* Primfaktor und X' = 5
+                                    - 5 / 3 = 1 Rest 2 ⇒ 3 ist *kein* Primfaktor, da wir einen Rest haben; X hat unverändert den Wert 5
                                 - X = 5, p\ :sub:`3` = 5
 
                                     - 5 / 5 = 1 Rest 0 ⇒ **5 ist ein Primfaktor**
@@ -2598,3 +2602,378 @@ Grammatiken regulärer Sprachen
 Chomsky Typ-3: Reguläre Grammatiken
 --------------------------------------------------------
 
+Ein regulärer Ausdruck ist eine effiziente Darstellung von Sprachen.
+
+.. deck::
+
+    .. card::
+
+        .. definition::
+
+            Die Menge :math:`\mathcal{R}(Σ)` umfasst alle regulären Ausdrücke über einem Alphabet :math:`Σ`. Es sind :math:`∅,ε ∈ \mathcal{R}(Σ)` und :math:`Σ ⊂ \mathcal{R}(Σ)`. Sind :math:`α,β ∈R(Σ)`, so sind auch :math:`αβ`, :math:`(α|β)`, :math:`(α)^* ∈ \mathcal{R}(Σ)`.
+            
+            Die Sprache :math:`L(α)` eines regulären Ausdrucks :math:`α ∈ \mathcal{R}(Σ)` sei definiert durch :math:`L(∅) = ∅`, :math:`L(ε) = {ε}` und :math:`L(a) = {a}` für ein :math:`a ∈ Σ`, sowie
+
+            - :math:`L(αβ) = L(α)L(β)`,
+            - :math:`L(α|β) = L(α) ∪L(β)`,
+            - :math:`L(α^*) = (L(α))^*`
+
+            für reguläre Ausdrücke :math:`α,β ∈R(Σ)`.
+
+        .. presenter-note::
+
+            L ist immer die Menge der Worte der Sprache L. Hier definieren wir die Menge der Worte, die durch einen regulären Ausdruck beschrieben werden basierend auf den Zeichen des Alphabets, dass für die Beschreibung des regulären Ausdrucks verwendet wird.
+
+
+    .. card::
+
+        .. example::
+
+            Auf dem Alphabet :math:`Σ = \{a,b\}` ist :math:`α= a(ab)^*(a|bb) ∈ R(Σ)` ein regulärer Ausdruck, der diese Sprache beschreibt:
+
+            :math:`L(α) = \{aa, abb, aaba, aabbb, aababa, aababbb, aabababa, aabababbb,...\}`
+
+
+    .. card::
+
+        .. theorem::
+
+            Die Menge der Sprachen regulärer Ausdrücke beschreibt genau die Menge der regulären Sprachen auf einem Alphabet.
+
+        ..
+            add proof
+
+    .. card::
+
+        .. example::
+
+            Gegeben sei: 
+
+            :math:`M_3 = \{0\}∪\{1\}×\{0,1\}^* = \{0,1,10,11,100,101,110,111,1000,...\}`
+
+            mit Grammatik:
+
+            .. math:: 
+            
+                \begin{array}{rcl}
+                G & = & (\{\text{Start},\text{A}\} , \{0,1\} ,R,Start) \\
+                R & = & \{r_1,r_2\}, \\
+                &   & r_1 : \text{Start} ↦ 0 | 1 | 1\text{A}\\
+                &   & r_2 : \text{A} ↦ 0 | 1 | 0\text{A} | 1\text{A}\\
+                \end{array} 
+            
+            .. container:: incremental
+
+                Der regulären Ausdruck :math:`α = 0|1(0|1)^*` beschreibt die Sprache.
+
+            .. container:: incremental
+
+                Die Darstellung ist aber nicht eindeutig: :math:`\beta = 0|1|1(0|1)^*` ist eine äquivalenter Ausdruck.
+            
+    .. card::
+
+        .. theorem::
+
+            Alle endlichen formalen Sprachen sind reguläre Sprachen.
+
+        .. proof::
+
+            Eine endliche formale Sprache :math:`L` besteht aus endlich vielen Worten :math:`L= \{w_1,...,w_n\}`. Diese Sprache wird auch durch den regulären Ausdruck :math:`w_1 |... |w_n` erzeugt und daher ist die Sprache regulär.
+
+        .. presenter-note:: 
+
+            Dies ist in der Praxis nicht sonderlich relevant.
+
+
+
+Grammatiken regulärer Sprachen
+--------------------------------------------------------
+
+.. deck::
+
+    .. card::
+
+        .. rubric:: Abfolgen und Alternativen
+
+        .. csv-table::
+            :class: borderless
+            :align: center
+            :widths: 30 70
+            :width: 50%
+
+            XY, X nach Y
+            X|Y, X oder Y
+            "\(X\)", Klammerung und Abfrage
+
+    .. card::
+
+        .. rubric:: Zeichen
+
+        .. csv-table::
+            :class: borderless
+            :align: center
+            :widths: 30 70
+            :width: 50%
+ 
+            x, Das Zeichen x
+            "\\.", Der Punkt .
+            "\\t", Tabulator
+            "\ \\\\\\\", Backslash \\
+
+
+    .. card::
+
+        .. rubric:: Positionen
+
+        .. csv-table::
+            :class: borderless
+            :align: center
+            :widths: 30 70
+            :width: 50%
+            
+            ˆ, Anfang der Zeile
+            $, Ende der Zeile
+            \\b, Wortgrenze
+            \\B, Nicht-Wortgrenze
+
+    .. card::
+
+        .. rubric:: Mengen
+
+        .. csv-table::
+            :class: borderless
+            :align: center
+            :widths: 30 70
+            :width: 50%
+            
+            ., Beliebiges Zeichen
+            [abc], Ein Zeichen aus Liste
+            [ˆabc], Ein Zeichen außer aus Liste
+            [a−r], Ein Zeichen aus Bereich
+            \\d, Eine Ziffer [0−9]
+            \\D, Keine Ziffer [ˆ0−9]
+            \\w, Wortzeichen [a−zA−Z0−9_]
+
+    .. card::
+
+        .. rubric:: Anzahl
+
+        .. csv-table::
+            :class: borderless
+            :align: center
+            :widths: 30 70
+            :width: 50%
+
+            X?, einmal oder kein mal
+            X*, kein mal oder beliebig oft
+            X+, einmal oder beliebig oft
+            X{n}, exakt n mal
+            "X{n,}", mindestens n mal
+            "X{n,m}", von n bis m mal
+            X*?, mit ? nicht gierig
+
+
+    .. card::
+
+        -  :eng:`Regular Expressions` werden in fast allen Programmiersprachen und IDEs zur Textanalyse und Transformation verwendet. 
+        - Es gibt leicht unterschiedliche Syntaxvarianten. 
+        - Fast alle Implementierungen Erweiterungen, die über die klassischen regulären Sprachen hinausgehen. (z. B. Lookahead, Lookbehind, ...)   
+
+
+
+.. class:: exercises
+
+Übung
+--------------------------------------------------------
+
+.. exercise:: Bestimmung eines regulären Ausdrucks
+
+    Bestimmen Sie einen möglichst kurzen regulären Ausdruck :math:`α ∈ \mathcal{R}(T)`, für den
+    :math:`L(α) = L(G)` für die Grammatik :math:`G = (V ,T ,R,S)` gilt:
+
+    .. math::
+        
+        \begin{array}{rcl}
+        V & = & \{A,B,C\} \\
+        T & = & \{o,r,s\} \\
+        R & = & \{r_1,r_2,r_3\} \\
+        & & r_1 : A → rC |sB \\
+        & & r_2 : B → rC |oB \\
+        & & r_3 : C → o |s \\
+        S & = & A
+        \end{array}
+
+    .. solution::
+        :pwd: RegExps
+    
+        Die Grammatik erzeugt die Sprache ``L(G) = {ro,rs,sro,srs,soro,sors,sooro,soors,...}``, wobei die ``oo`` in den letzten beiden Worten mit :math:`r_{2,2}` beliebig durch ``o`` verlängert werden.
+
+        Ein äquivalenter regulärer Ausdruck ist damit: :math:`α = ro|rs|s(ro|rs|oo^*r(o|s))`
+
+
+
+.. class:: exercises
+
+Übung
+--------------------------------------------------------
+
+.. exercise:: Rechts-lineare Grammatiken
+    
+    Bestimmen Sie eine rechts-lineare Typ-3 Grammatik :math:`G = (V ,T ,R,S)` für das Alphabet :math:`T = (e,r,s,t)`, für die :math:`L(G) = L(α)` mit :math:`α = r((s|t)^*|e)^*` gilt.
+
+    .. solution::
+        :pwd: RegExpsRechtsLinear
+
+        .. rubric:: Lösung: Rechts-lineare Grammatik
+
+        Die rechts-lineare Grammatik ist:
+
+        .. math::
+
+            \begin{array}{rcl}
+                V & = & \{A,B\} \\
+                T & = & \{e,r,s,t\} \\
+                R & = & \{r_1,r_2\} \\
+                & & r_1 : A → rB | r \\
+                & & r_2 : B → eB | sB | tB | e | s | t \\
+            \end{array}
+
+
+
+Übung
+--------------------------------------------------------
+
+.. exercise:: Links-lineare Grammatiken
+
+    Bestimmen Sie eine links-lineare Typ-3 Grammatik :math:`G = (V ,T ,R,S)` für das Alphabet :math:`T = (a,b,k,n)`, für die :math:`L(G) = L(α)` mit :math:`α = b^*an(k|a)^*` gilt.
+    
+
+    .. solution::
+        :pwd: LinksLinear+RegExps
+
+        Der reguläre Ausdruck endet optional mit beliebiger Anzahl von k oder a, davor sind die
+        Symbole an, die in links-linearer Grammatik umgekehrt erzeugt werden müssen. Davor
+        ist optional eine beliebige Anzahl von b:
+
+        .. math::
+
+            \begin{array}{rcl}
+            V = {A,B,C}
+            T = {a,b,k,n}
+            R = {r_1,r_2,r_3}
+                r_1 : A → Ak | Aa | Bn
+                r_2 : B → Ca | a
+                r_3 : C → Cb | b
+            S = A
+            \end{array}
+
+
+
+.. class:: exercises
+
+Übung
+--------------------------------------------------------
+
+.. exercise:: Regurlären Ausdruck Vereinfachen
+
+    Vereinfachen Sie den regulären Ausdruck :math:`α= (a^*b^*a^*|aba)^*(a|ac^*|aba)` zu einem äquivalenten kürzeren Ausdruck β mit :math:`L(α) = L(β)`.
+
+
+    .. solution:: 
+        :pwd: VereinfachenVonRegExps
+
+        .. rubric:: Ableitung des vereinfachten regulären Ausdrucks
+
+        - Der Ausdruck :math:`a^*b^*a^*` kann sowohl :math:`a` also auch :math:`b` erzeugen. Schon diese beiden Möglichkeiten lassen (a^*b^*a^*|aba)^* zu :math:`(a|b)^*` vereinfachen.
+        - Jeder Term der zweiten Klammer beginnt mit :math:`a`, damit kann dieses Symbol ausgeklammert werden.
+        - Die leere Option ist schon in :math:`c^*` enthalten. Damit ist :math:`(a|ac^*|aba)` äquivalent zu :math:`a(c^*|ba)`.
+
+        Ein vereinfachter Ausdruck wäre damit :math:`β = (a|b)^*a(c^*|ba)`.
+
+
+
+
+
+
+
+.. class:: exercises
+
+Übung
+--------------------------------------------------------
+
+.. exercise:: RegExps - VS code
+
+    Schreiben Sie reguläre Ausdrücke, um die folgenden Wörter im nachfolgenden Text zu finden:
+
+    TODO
+
+    .. solution::
+        :pwd: RegExps
+
+        TODO
+
+
+
+
+
+.. class:: exercises
+
+Übung
+--------------------------------------------------------
+
+.. exercise:: DSL entwerfen mit LARK
+
+    Sie wollen eine DSL für Ihre eigene Markupsprache entwickeln. Ihr Ziel ist es Texte folgender Art zu parsen, um diese danach weiterzuverarbeiten.
+
+      ::
+
+        + Wer bin ich?
+
+        Ich bin *Prof.* an der DHBW [link: www.dhbw-mannheim.de]. 
+        Meine Homepage finden sie hier: [link: www.michael-eichberg.de].
+
+    Ein „\ ``+``“ direkt am Anfang einer Zeile kennzeichnet eine Überschrift. Text, der in „\ ``*``“ eingeschlossen ist, soll fett dargestellt werden. URLs stehen in Blöcken, die mit „\ ``[link:``“ anfangen und mit „\ ``]``“ enden.
+
+    Definieren Sie eine entsprechende Grammatik in LARK. Wenn Sie reguläre Ausdrücke verwenden wollen – zum Beispiel zum Parsen von URLs – können Sie dies in der Grammatik direkt angeben. Der reguläre Ausdruck ist zwischen zwei „\ ``/``“ zu schreiben (siehe ``WORD`` Regel). Nutzen Sie den angehängten Code als Grundlage.
+
+    .. supplemental::
+
+        .. code:: python
+            :class: copy-to-clipboard
+            :number-lines:
+
+            from lark import Lark
+            GRAMMAR = r"""
+                s: ...
+
+                WORD: /[a-zA-Z]+/
+                %import common.WS_INLINE
+                %ignore WS_INLINE
+            """
+
+            l = Lark(GRAMMAR, start="s")
+            print(l.parse("""+ Wer bin ich?"""))
+
+
+    .. solution::
+        :pwd: MeineErsteDSL
+
+        .. rubric:: Lösung: LARK Grammatik
+
+        .. code:: peg
+            :class: copy-to-clipboard
+            :number-lines:
+
+            s: block+
+            block: "+" WORD+ BLOCK_END? NL? -> heading
+                | "*" block "*"             -> bold
+                | "[link:" URL "]"          -> link
+                | WORD                      -> word
+                | BLOCK_END                 -> line_end
+            
+            NL:         /\r?\n/
+            WORD:       /[a-zA-Z]+/
+            BLOCK_END:  /[.:!?]/
+            URL:        /[a-zA-Z.-]+/
+            %import common.WS_INLINE
+            %ignore WS_INLINE
