@@ -40,7 +40,7 @@ CWE/OWASP
 
 :Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
 :Kontakt: michael.eichberg@dhbw.de
-:Version: 1.1
+:Version: 1.1.1
 
 .. supplemental::
 
@@ -128,7 +128,15 @@ CWE-787: Out-of-bounds Write - Beispiel 2
     .. solution:: Solution
         :pwd: memcpy...
 
-        `memcpy` erwartet als dritten Parameter einen :code:`unsigned int`. Wenn :code:`returnChunkSize -1 zurückgibt, dann wird :code:`MAX_INT-1` verwendet.
+        `memcpy` erwartet als dritten Parameter effektiv einen :code:`unsigned int`. Wenn :code:`returnChunkSize` -1 zurückgibt, dann wird :code:`MAX_INT-1` verwendet.
+
+.. supplemental::
+
+    Signatur der Methode :code:`memcpy`:
+
+    .. code:: C
+    
+        void *memcpy(void *dest_str, const void * src_str, size_t n)
 
 
 
@@ -162,6 +170,18 @@ CWE-787: Out-of-bounds Write - Beispiel 3
 
         - Problem 1: ``hostname`` hat nur 64 Bytes, aber der Name des Hosts kann länger sein.
         - Problem 2: ``gethostbyaddr`` kann ``NULL`` zurückgeben, wenn der Host nicht gefunden werden kann. (:eng:`Null-pointer Dereference`)
+
+.. supplemental::
+
+    .. rubric:: Auszug aus der Dokumentation von gethostbyaddr
+
+    .. epigraph::  
+    
+        **Return Value**
+
+        The gethostbyaddr() function return the hostent structure or a NULL pointer if an error occurs. 
+
+        -- https://linux.die.net/man/3/gethostbyaddr
 
 
 
@@ -197,7 +217,7 @@ CWE-787: Out-of-bounds Write - Beispiel 4
     .. solution:: 
         :pwd: dst_buf
 
-        Das Problem ist, dass :code:`dst_buf` nur :code:`4*sizeof(char) * MAX_SIZE`` Bytes hat. Wenn der Nutzer einen sehr langen String mit (fast) nur `&` enkodierten Zeichen übermittelt, dann wird der Puffer überlaufen, da das Encoding 5 Zeichen benötigt.
+        Das Problem ist, dass :code:`dst_buf` nur :code:`4*sizeof(char) * MAX_SIZE` Bytes hat. Wenn der Nutzer einen sehr langen String mit (fast) nur `&` enkodierten Zeichen übermittelt, dann wird der Puffer überlaufen, da das Encoding 5 Zeichen benötigt.
 
 
 
@@ -238,7 +258,11 @@ CWE-787: Out-of-bounds Write - Beispiel 5
 
 .. supplemental::
 
-    :isspace: If an argument (character) passed to the isspace() function is a white-space character, it returns non-zero integer. If not, it returns 0.
+    .. rubric:: Auszug aus der Dokumentation von isspace
+
+    .. epigraph::
+        
+        If an argument (character) passed to the isspace() function is a white-space character, it returns non-zero integer. If not, it returns 0.
 
 
 .. class:: far-far-smaller
@@ -279,8 +303,8 @@ CWE-787: Out-of-bounds Write - Mögliche Abhilfemaßnahmen
 
 .. class:: incremental
 
-- Verwendung einer sicheren Programmiersprache (Java, ...)
-- Verwendung von Bibliotheken, die sicherer sind (z. B. :code:`strncpy` statt :code:`strcpy`)
+- Verwendung einer sicheren Programmiersprache (Java, Rust ...)
+- Verwendung von Bibliotheken, die sicher(er) sind (z. B. :code:`strncpy` statt :code:`strcpy`)
 - Kompilierung mit entsprechenden Flags, die entsprechende Prüfung aktivieren (z. B. :code:`-D_FORTIFY_SOURCE=2`)
 - Kompilierung als Position-Independent-Code 
 
@@ -321,9 +345,10 @@ Stored XSS (Typ 2)
 -------------------
 
 .. image:: images/xss/stored-xss.svg
-   :alt: Stored XSS
-   :width: 1700px
-   :align: center
+    :alt: Stored XSS
+    :width: 1650px
+    :class: icon
+    :align: center
 
 
 
@@ -333,6 +358,7 @@ Reflected XSS (Typ 1)
 .. image:: images/xss/reflected-xss.svg
    :alt: Reflected XSS
    :width: 1650px
+   :class: icon
    :align: center
 
 .. supplemental::
@@ -347,6 +373,7 @@ Dom-based XSS (Typ 0)
 .. image:: images/xss/dom-based-xss.svg
    :alt: Dom-based XSS
    :width: 1500px
+   :class: icon
    :align: center
 
 .. supplemental::
@@ -434,16 +461,18 @@ CWE-79: XSS - Beispiel 3 - XSS Typ 2 (PHP)
 CWE-79: Improper Neutralization of Input During Web Page Generation - Abhilfemaßnahmen und Erkennung
 -------------------------------------------------------------------------------------------------------------
 
-.. class:: incremental
+.. class:: incremental list-with-explanations
 
+- **Prüfe jeden Input**
+- Prüfung, dass alle auf dem Client durchgeführten Prüfungen auch auf dem Server vorgenommen werden
 - Verwendung von geprüften/sicheren APIs
-- Verringerung der Angriffsfläche mit dem Ziel möglichst wenig Daten in Cookies etc. zu speichern.
-- Prüfung dass alle auf dem Client durchgeführten Prüfungen auch auf dem Server vorgenommen werden.
-- **Prüfe jeden Input.**
+- Verringerung der Angriffsfläche mit dem Ziel möglichst wenig Daten in Cookies etc. zu speichern
 - Verwendung von HttpOnly Cookies (d. h. Cookies, die nicht über JavaScript ausgelesen werden können)
 - Statische Analyse Werkzeuge
 - Beherzigen von Best Practices (`XSS Prevention Cheat Sheet <https://cheatsheetseries.owasp.org/cheatsheets/Cross_Site_Scripting_Prevention_Cheat_Sheet.html>`__)
+- Setzen der CSP (Content Security Policy) 
 
+  (Dies löst nicht das Problem, minimiert aber ggf. die Auswirkungen!)
 
 
 .. No 3 in CWE Top 2023
@@ -517,14 +546,14 @@ CWE-89: SQL Injection - Beispiel 2 (PHP)
 CWE-89: Improper Neutralization of Special Elements used in an SQL Command - Abhilfemaßnahmen und Erkennung
 --------------------------------------------------------------------------------------------------------------
 
-.. class:: incremental
+.. class:: incremental list-with-explanations
 
-- Verwendung von geprüften/sicheren APIs.
-- Verwendung von *Prepared Statements*.
+- Verwendung von geprüften/sicheren APIs
+- Verwendung von *Prepared Statements*
 - Datenbank nur mit den notwendigen Rechten betreiben 
   
   (*Principle of Least Privilege*)
-- Sollte es notwendig sein einen dynamischen SQL Befehl zu erstellen, dann sollten geprüfte Escapefunktionen verwendet werden.
+- Sollte es notwendig sein einen dynamischen SQL Befehl zu erstellen, dann sollten geprüfte Escapefunktionen verwendet werden
 - Statische Analyse Werkzeuge
 - ggf. Application-level Firewall einsetzen
 
