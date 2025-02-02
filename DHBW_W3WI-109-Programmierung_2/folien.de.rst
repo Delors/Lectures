@@ -59,7 +59,7 @@ Inhalte gem. MHB
         .. container::  dd-margin-left-12em
 
             :Fortgeschrittene objektorientierte Konzepte: Generische Interfaces und Klassen. Ereignisbehandlung. Funktionale Programmierung
-            :Fortgeschrittene Programmiermethodik: Ein- und Ausgabe über Streams.
+            :Fortgeschrittene Programmiermethodik: Ein- und Ausgabe über Streams..
     
             :Algorithmen: Beschreibung und Analyse. Suchverfahren, Sortierverfahren, Teile-und-Herrsche-Paradigma, Backtracking-Algorithmen.
             :Datentypen: elementare, strukturierte, objektorientierte und generische Datentypen.
@@ -86,7 +86,8 @@ Modul
 Bonuspunkte
 ------------------------------------------
 
-- Es wird ein oder zwei unangekündigte Lernstandskontrollen geben, die Bonuspunkte für die Klausur bringen können. 
+- Es wird eine unangekündigte Lernstandskontrolle in der Mitte des Semesters geben, die *Bonuspunkte* für die Klausur bringen kann. 
+- Es wird Übungsaufgaben geben, deren Lösungen bzw. Präsentation Bonuspunkte für die Klausur bringen können.
 
   *Die Lernstandskontrollen können (insbesondere) auch Inhalte der Programmierung 1 abfragen bzw. beinhalten.*
 - Wer am Tage der Lernstandskontrollen krank ist, kann im Rahmen eines kurzen Gesprächs (zu einem zu vereinbarenden Termin) ggf. die Punkte erwerben.
@@ -99,7 +100,7 @@ Folien
 
 Links auf die Folien und Übungen finden Sie in Moodle.
 
-Die Passworte für die Lösungsvorschläge stelle ich in der Vorlesung zur Verfügung.
+Die Passworte für die Lösungsvorschläge stelle ich im Moodle nach der entsprechenden Veranstaltung zur Verfügung.
 
 - Maßgeblich ist die HTML Version der Folien. 
 - Bei Bedarf, können Sie die PDF Version der Folien nutzen, um Anmerkungen etc. zu machen.
