@@ -14,6 +14,15 @@
 .. |pdf-source| source::
     :prefix: https://delors.github.io/
     :suffix: .html.pdf
+
+.. |SomeText.txt| source:: code/SomeText.txt
+    :path: relative
+    :prefix: https://delors.github.io/
+
+.. |SomeText.html| source:: code/SomeText.html
+    :path: relative
+    :prefix: https://delors.github.io/
+
 .. |at| unicode:: 0x40
 .. |qm| unicode:: 0x22 
 
@@ -42,7 +51,7 @@ Formale Sprachen
 
 :Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
 :Kontakt: michael.eichberg@dhbw.de, Raum 149B
-:Version: 1.1
+:Version: 1.1.1
 
 .. container:: minor
 
@@ -2213,8 +2222,8 @@ Zur Erinnerung: Entscheidbare Sprachen sind aufzählbar.
                   .. math::
 
                     \begin{array}{rcl}   
-                        V & = & \{S,T\} \\
-                        T & = & \{0,1\} \\
+                        V & = & \{T\} \\
+                        T & = & \{0,1,+\} \\
                         R & = & \{r_1,r_2,r_3\} \\
                         & & r_1 : T ↦ T + T \\
                         & & r_2 : T ↦ 0 \\
@@ -2331,8 +2340,8 @@ Die Sprachhiarchie und die Chomsky-Typen
       .. math::
 
             \begin{array}{rcl}   
-                V & = & \{S,T\} \\
-                T & = & \{0,1\} \\
+                V & = & \{T\} \\
+                T & = & \{0,1,\cdot,(,)\} \\
                 R & = & \{r_1,r_2,r_3\} \\
                 & & r_1 : T ↦ 1 \\
                 & & r_2 : T ↦ ( T ) \\
@@ -2777,7 +2786,7 @@ Grammatiken regulärer Sprachen
 
         -  :eng:`Regular Expressions` werden in fast allen Programmiersprachen und IDEs zur Textanalyse und Transformation verwendet. 
         - Es gibt leicht unterschiedliche Syntaxvarianten. 
-        - Fast alle Implementierungen Erweiterungen, die über die klassischen regulären Sprachen hinausgehen. (z. B. Lookahead, Lookbehind, ...)   
+        - Fast alle Implementierungen bieten Erweiterungen, die über die klassischen regulären Sprachen hinausgehen. (z. B. Lookahead, Lookbehind, Charakterklassen...)   
 
 
 
@@ -2836,9 +2845,12 @@ Grammatiken regulärer Sprachen
                 R & = & \{r_1,r_2\} \\
                 & & r_1 : A → rB | r \\
                 & & r_2 : B → eB | sB | tB | e | s | t \\
+                S & = & A
             \end{array}
 
 
+
+.. class:: exercises
 
 Übung
 --------------------------------------------------------
@@ -2858,13 +2870,13 @@ Grammatiken regulärer Sprachen
         .. math::
 
             \begin{array}{rcl}
-            V = {A,B,C}
-            T = {a,b,k,n}
-            R = {r_1,r_2,r_3}
-                r_1 : A → Ak | Aa | Bn
-                r_2 : B → Ca | a
-                r_3 : C → Cb | b
-            S = A
+            V & = & \{A,B,C\} \\
+            T & = & \{a,b,k,n\} \\
+            R & = & \{r_1,r_2,r_3\} \\
+              &   & r_1 : A → Ak | Aa | Bn \\
+              &   & r_2 : B → Ca | a \\
+              &   & r_3 : C → Cb | b \\
+            S & = & A
             \end{array}
 
 
@@ -2874,7 +2886,7 @@ Grammatiken regulärer Sprachen
 Übung
 --------------------------------------------------------
 
-.. exercise:: Regurlären Ausdruck Vereinfachen
+.. exercise:: Regulären Ausdruck Vereinfachen
 
     Vereinfachen Sie den regulären Ausdruck :math:`α= (a^*b^*a^*|aba)^*(a|ac^*|aba)` zu einem äquivalenten kürzeren Ausdruck β mit :math:`L(α) = L(β)`.
 
@@ -2892,27 +2904,64 @@ Grammatiken regulärer Sprachen
 
 
 
-
-
-
-
 .. class:: exercises
 
 Übung
 --------------------------------------------------------
 
-.. exercise:: RegExps - VS code
+.. exercise:: Konvertierung einer einfachen Markup Sprache mittels RegExps
 
-    Schreiben Sie reguläre Ausdrücke, um die folgenden Wörter im nachfolgenden Text zu finden:
+    Konvertieren Sie den verlinkten Text (|SomeText.txt|) mittels mehrere regulärer Ausdrücke in HTML. Das HTML soll dann dem verlinkten Ergebnis entsprechen (|SomeText.html|). 
+    
+    Beachten Sie, dass ggf. die Reihenfolge in der Sie die regulären Ausdrücke auswerten relevant sein kann.
+    
+    Nutzen Sie ein Diff Tool Ihrer Wahl (zum Beispiel VS Code oder einfach ``diff``), um zu überprüfen ob Ihr Ergebnis den Erwartungen entspricht.
 
-    TODO
+    Nutzen Sie entweder ``sed`` zur Auswertung Ihrer regulären Ausdrücke oder VS Code.
+
+    .. supplemental::
+
+        .. rubric:: SED 101
+
+        - ``sed`` ist ein Stream-Editor, der einzelne Textzeilen bearbeiten kann.
+        - Um reguläre Ausdrücke zu verwenden, muss ``sed`` mit dem Flag ``-E`` gestartet werden. Z. B.: ``sed -E -f SomeTextToHTML.sed SomeText.txt > SomeText.html``.
+        - ``\s`` steht für alle "whitespace characters" (funktioniert aber ggf. nur unter bestimmten Versionen; z. B. nicht auf dem  Mac); ``[ ]`` oder ``[[:space:]]`` sind eine Alternative.
+        - Ein Ausdruck in sed hat die Form:
+          
+          :: 
+            
+             s/regexp/replacement/flags
+          
+          - Dabei wird der durch den regexp erkannte Text durch replacement ersetzt. Flags sind optional. Das g Flag (global) ermöglicht es alle Überstimmungen zu ersetzen und nicht nur die Erste.
+          - Ein & im ``replacement`` bezieht sich auf den gesamten gefundenen Text.
+          - Ein & im ``replacement`` kann durch ein Backslash escaped werden: \\&.
+          - \\1, \\2, \\3 bezieht sich auf die gefundenen Gruppen (in Klammern) im regexp.
+
+        - Ein ``sed`` Script ist eine Liste von ``sed`` Befehlen, die in einer Datei gespeichert werden und dann Zeile für Zeile auf den Input angewendet werden.
+        - ``sed`` ist immer greedy und versucht längst-mögliche Übereinstimmungen zu finden. Ggf. ist es notwendig eine Formulierung zu finden, die verhindert, dass zu viel Text erfasst wird.
+
+        .. hint::
+
+            Es kann notwendig sein Hilfstransformationen durchzuführen, um die eigentlich gewünschte Transformation zu erreichen.
+
+        **Beispiele**
+
+        .. code:: bash
+            :number-lines:
+
+            $ echo "START aa B aa C aa ENDE START aa D aa" | sed -E 's/aa[^E]*aa/MATCH/'
+            START MATCH ENDE START aa D aa
+
+            $ echo "START aa B aa C aa ENDE START aa D aa" | sed -E 's/aa[^E]*aa/MATCH/g'
+            START MATCH ENDE START MATCH
+
 
     .. solution::
-        :pwd: RegExps
+        :pwd: RegExpsForDSL
 
-        TODO
-
-
+        .. include:: code/SomeTextToHTML.sed
+            :code: sed
+            :number-lines:
 
 
 
@@ -2928,13 +2977,12 @@ Grammatiken regulärer Sprachen
       ::
 
         + Wer bin ich?
-
         Ich bin *Prof.* an der DHBW [link: www.dhbw-mannheim.de]. 
         Meine Homepage finden sie hier: [link: www.michael-eichberg.de].
 
-    Ein „\ ``+``“ direkt am Anfang einer Zeile kennzeichnet eine Überschrift. Text, der in „\ ``*``“ eingeschlossen ist, soll fett dargestellt werden. URLs stehen in Blöcken, die mit „\ ``[link:``“ anfangen und mit „\ ``]``“ enden.
+    Ein „\ ``+``“ am Anfang einer Zeile kennzeichnet eine Überschrift. Text in „\ ``*``“ soll fett dargestellt werden. URLs stehen in Blöcken, die mit „\ ``[link:``“ anfangen und mit „\ ``]``“ enden.
 
-    Definieren Sie eine entsprechende Grammatik in LARK. Wenn Sie reguläre Ausdrücke verwenden wollen – zum Beispiel zum Parsen von URLs – können Sie dies in der Grammatik direkt angeben. Der reguläre Ausdruck ist zwischen zwei „\ ``/``“ zu schreiben (siehe ``WORD`` Regel). Nutzen Sie den angehängten Code als Grundlage.
+    Definieren Sie eine Grammatik in LARK. Wenn Sie reguläre Ausdrücke verwenden wollen – zum Beispiel zum Parsen von URLs – können Sie dies in der Grammatik direkt angeben (siehe ``WORD`` Regel). Der angehängte Code dient als Grundlage.
 
     .. supplemental::
 
