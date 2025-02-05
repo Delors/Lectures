@@ -279,6 +279,7 @@ Hashfunktionen
                 :math:`h = s[0] · 31^{L–1} + …  + s[L – 2] · 31^1  +  s[L – 1] · 31^0`.
 
                 .. code:: rust
+                    :number-lines:
                     
                     fn hash(s: [char,4]) : u32 { 
                         hash: u32 = 0
@@ -353,7 +354,7 @@ Verwendung von Hashes in Python
 
             person1 = Person("Alice", 30) 
             person2 = Person("Bob", 25) 
-            person3 = Person("Alice", 30) # gleiche Werten wie "person1"
+            person3 = Person("Alice", 30) # gleiche Werte wie "person1"
 
         **Beispielausgabe**
 
