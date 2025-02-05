@@ -3,7 +3,6 @@ from lark import Lark
 """ Das Ziel ist es folgende Texte zu parsen:
 
 + Überblick
-
 Ich bin *Prof.* an der DHBW Mannheim [link: www.dhbw-mannheim.de]. Meine private Homepage finden sie hier: [link: www.michael-eichberg.de]
 
 """
