@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Palette Preview</title>
+    <style>
+        :root {
+            --color1: #E6194B;   /* Strong Red */
+            --color2: #3CB44B;   /* Strong Green */
+            --color3: #FFE119;   /* Bright Yellow */
+            --color4: #4363D8;   /* Strong Blue */
+            --color5: #F58231;   /* Orange */
+            --color6: #911EB4;   /* Purple */
+            --color7: #46F0F0;   /* Cyan */
+            --color8: #F032E6;   /* Magenta */
+            --color9: #BCF60C;   /* Lime Green */
+            --color10: #FABEBE;  /* Light Pink */
+            --color11: #008080;  /* Teal */
+            --color12: #E6BEFF;  /* Lavender */
+            --color13: #9A6324;  /* Brown */
+            --color14: #FFFAC8;  /* Pale Yellow */
+            --color15: #800000;  /* Dark Red */
+            --color16: #A9A9A9;  /* Dark Gray */
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+
+        .color-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 10px;
+            max-width: 600px;
+            margin: 20px auto;
+        }
+
+        .color-box {
+            width: 100%;
+            padding: 20px;
+            color: white;
+            font-weight: bold;
+            text-transform: uppercase;
+            text-align: center;
+            border-radius: 5px;
+        }
+
+        /* Apply colors */
+        .color-box:nth-child(1) { background: var(--color1); }
+        .color-box:nth-child(2) { background: var(--color2); }
+        .color-box:nth-child(3) { background: var(--color3); color: black; }
+        .color-box:nth-child(4) { background: var(--color4); }
+        .color-box:nth-child(5) { background: var(--color5); }
+        .color-box:nth-child(6) { background: var(--color6); }
+        .color-box:nth-child(7) { background: var(--color7); color: black; }
+        .color-box:nth-child(8) { background: var(--color8); }
+        .color-box:nth-child(9) { background: var(--color9); color: black; }
+        .color-box:nth-child(10) { background: var(--color10); color: black; }
+        .color-box:nth-child(11) { background: var(--color11); }
+        .color-box:nth-child(12) { background: var(--color12); color: black; }
+        .color-box:nth-child(13) { background: var(--color13); }
+        .color-box:nth-child(14) { background: var(--color14); color: black; }
+        .color-box:nth-child(15) { background: var(--color15); }
+        .color-box:nth-child(16) { background: var(--color16); }
+
+    </style>
+</head>
+<body>
+
+    <h2>16-Color Palette Preview</h2>
+    <div class="color-grid">
+        <div class="color-box">#E6194B</div>
+        <div class="color-box">#3CB44B</div>
+        <div class="color-box">#FFE119</div>
+        <div class="color-box">#4363D8</div>
+        <div class="color-box">#F58231</div>
+        <div class="color-box">#911EB4</div>
+        <div class="color-box">#46F0F0</div>
+        <div class="color-box">#F032E6</div>
+        <div class="color-box">#BCF60C</div>
+        <div class="color-box">#FABEBE</div>
+        <div class="color-box">#008080</div>
+        <div class="color-box">#E6BEFF</div>
+        <div class="color-box">#9A6324</div>
+        <div class="color-box">#FFFAC8</div>
+        <div class="color-box">#800000</div>
+        <div class="color-box">#A9A9A9</div>
+    </div>
+
+</body>
+</html>
