@@ -1,0 +1,32 @@
+<h1>Mein Persönliches Markup</h1>
+Mein persönliches Markup dient der schnellen Auszeichnung von Texten.
+<br>
+<h2>Überschriften</h2>
+Überschriften auf Ebene 1 (&lt;h1&gt;TEXT&lt;/h1&gt; in HTML) werden durch eine # am Anfang der Zeile ausgezeichnet. Überschriften auf Ebene zwei durch zwei # am Anfang der Zeile (&lt;h2&gt;TEXT&lt;/h2&gt; in HTML).
+<br>
+Beispiel:
+<pre># Überschrift auf Ebene &gt;1&lt;</pre>
+<pre></pre>
+<pre> </pre>
+<pre>## Überschrift auf Ebene &gt;2&lt;</pre>
+<br>
+<h2>Escape Character</h2>
+Mein Escape Zeichen ist das Backslash (\). Das Zeichen nach einem Backslash wird immer direkt ausgegeben. Um ein Backslash auszugeben, nutze zwei Backslashes: \\.
+<br>
+<h2>Fett</h2>
+Worte oder Satzteile (innerhalb einer Zeile), die <b>direkt</b> in zwei "*" eingeschlossen werden und nicht mittels "\" escaped sind, werden in Fett geschrieben (&lt;b&gt;TEXT&lt;/b&gt; in HTML). 
+<br>
+Beispielsweise: *fett* =&gt; <b>fett</b>, aber auch *F* =&gt; <b>F</b>.
+<br>
+Allerdings würde: 2 * 3 * 4 nichts fett auszeichnen, da die * nichts direkt einschließen. Zwei Sterne hintereinander: ** werden ungeändert ausgegeben.
+<br>
+<h2>Monspaced</h2>
+Eine Zeile Text wird Monospaced ausgegeben durch ein "::" am Anfang der Zeile (&lt;pre&gt;TEXT&lt;/pre&gt; in HTML). Ein einzelnes Whitespace nach dem "::" wird ggf. ignoriert. Ein "::" ohne weiteren Text erzeugt eine Leerzeile.
+<br>
+<h2>Kommentare</h2>
+Ein Kommentar <!-- Frage: ist die Wahl dieser Sonderzeichen für Kommentare gut? --> (&lt;!-- KOMMENTAR --&gt; in HTML) startet immer mit (* und endet mit *). Ein Kommentar kann überall vorkommen erstreckt sich aber nicht über mehrere Zeilen. Verschachtelung wird nicht unterstützt. D. h. das erste *), dass auf ein (* folgt, beendet einen Kommentar, auch wenn es mehrere (* gab.
+<br>
+<!-- TEST (<b>(</b> (* Kommentar - Ein &lt;-- einfacher --&gt; Kommentar. -->
+<br>
+<h1>Leere Zeilen</h1>
+Leere Zeilen erzeugen in der Ausgabe einen Zeilenumbruch (&lt;br&gt; in HTML).
