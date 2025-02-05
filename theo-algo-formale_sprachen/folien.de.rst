@@ -2,9 +2,9 @@
     :version: renaissance
     :lang: de
     :author: Michael Eichberg
-    :keywords: "Hashing", "Hashmaps", "Algorithmen", "Datenstrukturen"
-    :description lang=de: Hashing und Hashmaps
-    :id: lecture-theo-algo-hashing-and-applications
+    :keywords: "Formale Sprachen", "Gödelnummern",  "Chomsky"
+    :description lang=de: Formale Sprachen
+    :id: lecture-theo-algo-formal_languages
     :first-slide: last-viewed
     :exercises-master-password: WirklichSchwierig!
     
@@ -2817,7 +2817,7 @@ Grammatiken regulärer Sprachen
     
         Die Grammatik erzeugt die Sprache ``L(G) = {ro,rs,sro,srs,soro,sors,sooro,soors,...}``, wobei die ``oo`` in den letzten beiden Worten mit :math:`r_{2,2}` beliebig durch ``o`` verlängert werden.
 
-        Ein äquivalenter regulärer Ausdruck ist damit: :math:`α = ro|rs|s(ro|rs|oo^*r(o|s))`
+        Ein äquivalenter regulärer Ausdruck ist damit: :math:`α = ro|rs|s(ro|rs|oo^*r(o|s))` bzw. :math:`α = r(o|s)|so*r(o|s)`.
 
 
 
