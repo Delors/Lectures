@@ -30,6 +30,10 @@
 .. role:: black
 .. role:: dark-red
 
+.. role:: java(code)
+    :language: java
+.. role:: c(code)
+    :language: c
 .. role:: raw-html(raw)
    :format: html
 
@@ -179,7 +183,7 @@ CWE-787: Out-of-bounds Write - Beispiel 3
     
         **Return Value**
 
-        The gethostbyaddr() function return the hostent structure or a NULL pointer if an error occurs. 
+        The :c:`gethostbyaddr()` function return the :c:`hostent` structure or a NULL pointer if an error occurs. 
 
         -- https://linux.die.net/man/3/gethostbyaddr
 
