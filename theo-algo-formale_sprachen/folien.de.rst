@@ -1673,7 +1673,7 @@ Eine Grammatik für boolesche Terme ist :math:`G_{\text{Logik}} = (V ,T ,R,S)` m
         Eine Ableitung des Terms :math:`S \overset{*}{⇒} {\color{red}(a ∧ b) ∨ c} ∈ L(G_\text{Logik})` kann dann so ablaufen:
 
         .. csv-table::
-            :class: incremental borderless text-align-center
+            :class: incremental-table-rows borderless text-align-center
             :align: center
             :header: "Regel", " ", " ", " ", " ", " "
 

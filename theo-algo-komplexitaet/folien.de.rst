@@ -1133,7 +1133,7 @@ Wichtige Komplexitätsklassen
 
 .. csv-table::
     :header: Klasse, Eigenschaft
-    :class: incremental
+    :class: incremental-table-rows
 
     :math:`O(1)`, Die Rechenzeit ist unabhängig von der Problemgröße
     ":math:`O(\log n)`", Die Rechenzeit wächst logarithmisch mit der Problemgröße
