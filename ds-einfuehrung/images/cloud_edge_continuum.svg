@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns="http://www.w3.org/2000/svg" xmlns:xl="http://www.w3.org/1999/xlink" version="1.1" viewBox="1 -15 607 314" width="607" height="314">
+  <defs>
+    <font-face font-family="Helvetica" font-size="9" units-per-em="1000" underline-position="-75.68359" underline-thickness="49.316406" slope="0" x-height="522.9492" cap-height="717.28516" ascent="770.0195" descent="-229.98047" font-weight="400">
+      <font-face-src>
+        <font-face-name name="Helvetica"/>
+      </font-face-src>
+    </font-face>
+    <font-face font-family="Helvetica" font-size="12" units-per-em="1000" underline-position="-75.68359" underline-thickness="49.316406" slope="0" x-height="522.9492" cap-height="717.28516" ascent="770.0195" descent="-229.98047" font-weight="400">
+      <font-face-src>
+        <font-face-name name="Helvetica"/>
+      </font-face-src>
+    </font-face>
+    <marker orient="auto" overflow="visible" markerUnits="strokeWidth" id="FilledArrow_Marker" stroke-linejoin="miter" stroke-miterlimit="10" viewBox="-1 -4 10 8" markerWidth="10" markerHeight="8" color="black">
+      <g>
+        <path d="M 8 0 L 0 -3 L 0 3 Z" fill="currentColor" stroke="currentColor" stroke-width="1"/>
+      </g>
+    </marker>
+    <font-face font-family="Helvetica" font-size="16" units-per-em="1000" underline-position="-75.68359" underline-thickness="49.316406" slope="0" x-height="522.9492" cap-height="717.28516" ascent="770.0195" descent="-229.98047" font-weight="400">
+      <font-face-src>
+        <font-face-name name="Helvetica"/>
+      </font-face-src>
+    </font-face>
+  </defs>
+  <metadata> Produced by OmniGraffle 8.0\n2024-02-16 08:48:10 +0000</metadata>
+  <g id="continuum" stroke-opacity="1" stroke="none" fill="none" fill-opacity="1" stroke-dasharray="none">
+    <title>continuum</title>
+    <rect fill="white" x="1" y="-15" width="607" height="314"/>
+    <g id="continuum_Layer_1">
+      <title>Layer 1</title>
+      <g id="Graphic_889">
+        <text transform="translate(185.80225 -10)" fill="black">
+          <tspan font-family="Helvetica" font-size="9" font-weight="400" fill="black" x="0" y="9">mehr</tspan>
+        </text>
+      </g>
+      <g id="Graphic_891">
+        <path d="M 231.04102 6 L 359.75586 6 C 361.965 6 363.75586 7.790861 363.75586 10 L 363.75586 56 C 363.75586 58.20914 361.965 60 359.75586 60 L 231.04102 60 C 228.83188 60 227.04102 58.20914 227.04102 56 L 227.04102 10 C 227.04102 7.790861 228.83188 6 231.04102 6 Z" fill="#a5a5a5"/>
+        <text transform="translate(247.04102 26)" fill="white">
+          <tspan font-family="Helvetica" font-size="12" font-weight="400" fill="white" x="1.9980469" y="11">Cloud Computing</tspan>
+        </text>
+      </g>
+      <g id="Graphic_897">
+        <path d="M 231.04102 114.75 L 359.75586 114.75 C 361.965 114.75 363.75586 116.54086 363.75586 118.75 L 363.75586 164.75 C 363.75586 166.95914 361.965 168.75 359.75586 168.75 L 231.04102 168.75 C 228.83188 168.75 227.04102 166.95914 227.04102 164.75 L 227.04102 118.75 C 227.04102 116.54086 228.83188 114.75 231.04102 114.75 Z" fill="#a5a5a5"/>
+        <text transform="translate(247.04102 134.75)" fill="white">
+          <tspan font-family="Helvetica" font-size="12" font-weight="400" fill="white" x="3.6621094" y="11">Edge Computing</tspan>
+        </text>
+      </g>
+      <g id="Graphic_898">
+        <path d="M 231.04102 223.5 L 359.75586 223.5 C 361.965 223.5 363.75586 225.29086 363.75586 227.5 L 363.75586 273.5 C 363.75586 275.70914 361.965 277.5 359.75586 277.5 L 231.04102 277.5 C 228.83188 277.5 227.04102 275.70914 227.04102 273.5 L 227.04102 227.5 C 227.04102 225.29086 228.83188 223.5 231.04102 223.5 Z" fill="#a5a5a5"/>
+        <text transform="translate(247.04102 243.5)" fill="white">
+          <tspan font-family="Helvetica" font-size="12" font-weight="400" fill="white" x="1.0019531" y="11">Internet-of-Things</tspan>
+        </text>
+      </g>
+      <g id="Line_899">
+        <line x1="195.55469" y1="276.5" x2="195.55469" y2="15.9" marker-end="url(#FilledArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Line_900">
+        <line x1="394.2422" y1="7" x2="394.2422" y2="267.6" marker-end="url(#FilledArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_901">
+        <text transform="translate(384.48975 282.5)" fill="black">
+          <tspan font-family="Helvetica" font-size="9" font-weight="400" fill="black" x="0" y="9">mehr</tspan>
+        </text>
+      </g>
+      <g id="Graphic_902">
+        <text transform="translate(378.9834 -10)" fill="black">
+          <tspan font-family="Helvetica" font-size="9" font-weight="400" fill="black" x="0" y="9">weniger</tspan>
+        </text>
+      </g>
+      <g id="Graphic_903">
+        <text transform="translate(180.2959 282.5)" fill="black">
+          <tspan font-family="Helvetica" font-size="9" font-weight="400" fill="black" x="0" y="9">weniger</tspan>
+        </text>
+      </g>
+      <g id="Graphic_906">
+        <text transform="translate(6 85.25)" fill="black">
+          <tspan font-family="Helvetica" font-size="16" font-weight="400" fill="black" x="0" y="15">Zuverlässige Verbindung </tspan>
+          <tspan font-family="Helvetica" font-size="16" font-weight="400" fill="black" x="7.109375" y="34">Langlebigkeit der Daten</tspan>
+          <tspan font-family="Helvetica" font-size="16" font-weight="400" fill="black" x="48.92969" y="53">Speicherkapazität</tspan>
+          <tspan font-family="Helvetica" font-size="16" font-weight="400" fill="black" x="65.82031" y="72">Rechenleistung</tspan>
+          <tspan font-family="Helvetica" font-size="16" font-weight="400" fill="black" x="69.41406" y="91">Zuverlässigkeit</tspan>
+          <tspan font-family="Helvetica" font-size="16" font-weight="400" fill="black" x="128.07812" y="110">Latenz</tspan>
+        </text>
+      </g>
+      <g id="Graphic_909">
+        <text transform="translate(408.6797 75.75)" fill="black">
+          <tspan font-family="Helvetica" font-size="16" font-weight="400" fill="black" x="0" y="15">Unterstützung von Mobilität</tspan>
+          <tspan font-family="Helvetica" font-size="16" font-weight="400" fill="black" x="0" y="34">Geographische Verteilung</tspan>
+          <tspan font-family="Helvetica" font-size="16" font-weight="400" fill="black" x="0" y="53">Standortbewusstsein</tspan>
+          <tspan font-family="Helvetica" font-size="16" font-weight="400" fill="black" x="0" y="72">Antwortzeitverhalten</tspan>
+          <tspan font-family="Helvetica" font-size="16" font-weight="400" fill="black" x="0" y="91">Kontextbewusstsein</tspan>
+          <tspan font-family="Helvetica" font-size="16" font-weight="400" fill="black" x="0" y="110">Interaktivität</tspan>
+          <tspan font-family="Helvetica" font-size="16" font-weight="400" fill="black" x="0" y="129">Geräte</tspan>
+        </text>
+      </g>
+    </g>
+  </g>
+</svg>

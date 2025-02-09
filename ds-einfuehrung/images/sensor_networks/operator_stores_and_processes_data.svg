@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns="http://www.w3.org/2000/svg" xmlns:xl="http://www.w3.org/1999/xlink" version="1.1" viewBox="1 -15 798 294" width="798" height="294">
+  <defs>
+    <filter id="Shadow" filterUnits="userSpaceOnUse" x="-78.8" y="-44.4">
+      <feGaussianBlur in="SourceAlpha" result="blur" stdDeviation="2.616"/>
+      <feOffset in="blur" result="offset" dx="0" dy="4"/>
+      <feFlood flood-color="black" flood-opacity=".5" result="flood"/>
+      <feComposite in="flood" in2="offset" operator="in" result="color"/>
+      <feMerge>
+        <feMergeNode in="color"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <linearGradient x1="0" x2="1" id="Gradient" gradientUnits="userSpaceOnUse">
+      <stop offset=".16833588" stop-color="#029ed5"/>
+      <stop offset=".9336584" stop-color="#99d0eb" stop-opacity=".5"/>
+      <stop offset="1" stop-color="white" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="Obj_Gradient" xl:href="#Gradient" gradientTransform="translate(148.13432 180.23974) rotate(-133.44236) scale(78.85506)"/>
+    <linearGradient id="Obj_Gradient_2" xl:href="#Gradient" gradientTransform="translate(102.29481 115.04644) rotate(46.55764) scale(54.472144)"/>
+    <linearGradient id="Obj_Gradient_3" xl:href="#Gradient" gradientTransform="translate(149.08835 181.01428) rotate(-133.44236) scale(78.85506)"/>
+    <linearGradient x1="0" x2="1" id="Gradient_2" gradientUnits="userSpaceOnUse">
+      <stop offset=".16833588" stop-color="#029ed5"/>
+      <stop offset=".9336584" stop-color="#99d0eb" stop-opacity=".5"/>
+      <stop offset="1" stop-color="white" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="Obj_Gradient_4" xl:href="#Gradient_2" gradientTransform="translate(123.23792 146.96972) rotate(-95.92573) scale(24.426677)"/>
+    <font-face font-family="Helvetica" font-size="16" units-per-em="1000" underline-position="-75.68359" underline-thickness="49.316406" slope="0" x-height="522.9492" cap-height="717.28516" ascent="770.0195" descent="-229.98047" font-weight="400">
+      <font-face-src>
+        <font-face-name name="Helvetica"/>
+      </font-face-src>
+    </font-face>
+    <marker orient="auto" overflow="visible" markerUnits="strokeWidth" id="FilledArrow_Marker" stroke-linejoin="miter" stroke-miterlimit="10" viewBox="-1 -4 10 8" markerWidth="10" markerHeight="8" color="black">
+      <g>
+        <path d="M 8 0 L 0 -3 L 0 3 Z" fill="currentColor" stroke="currentColor" stroke-width="1"/>
+      </g>
+    </marker>
+    <font-face font-family="Helvetica" font-size="13" units-per-em="1000" underline-position="-75.68359" underline-thickness="49.316406" slope="0" x-height="522.9492" cap-height="717.28516" ascent="770.0195" descent="-229.98047" font-weight="400">
+      <font-face-src>
+        <font-face-name name="Helvetica"/>
+      </font-face-src>
+    </font-face>
+  </defs>
+  <metadata> Produced by OmniGraffle 8.0\n2024-02-02 09:52:01 +0000</metadata>
+  <g id="operator_stores_and_processes_data" stroke-opacity="1" stroke="none" fill="none" fill-opacity="1" stroke-dasharray="none">
+    <title>operator_stores_and_processes_data</title>
+    <rect fill="white" x="1" y="-15" width="798" height="294"/>
+    <g id="operator_stores_and_processes_data_Layer_1">
+      <title>Layer 1</title>
+      <g id="Graphic_631" filter="url(#Shadow)">
+        <path d="M 394.5791 161.78298 C 320.71875 149 350.1724 41.3883 467.99614 59.75 C 478.9276 23.95718 615.94075 29.76676 615.045 59.75 C 700.9565 21.40106 810.7461 97.86808 737.1052 136.21702 C 825.4707 154.80958 735.9901 254.98378 663.46875 238.25 C 657.66485 266.14122 528.0185 275.9016 516.6392 238.25 C 443.22674 278.4601 290.15002 216.63484 394.5791 161.78298 Z" fill="#dadada"/>
+        <path d="M 394.5791 161.78298 C 320.71875 149 350.1724 41.3883 467.99614 59.75 C 478.9276 23.95718 615.94075 29.76676 615.045 59.75 C 700.9565 21.40106 810.7461 97.86808 737.1052 136.21702 C 825.4707 154.80958 735.9901 254.98378 663.46875 238.25 C 657.66485 266.14122 528.0185 275.9016 516.6392 238.25 C 443.22674 278.4601 290.15002 216.63484 394.5791 161.78298 Z" stroke="#666" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Group_630">
+        <g id="Graphic_594">
+          <ellipse cx="415.226" cy="119.2353" rx="10.2260219993155" ry="9.50001518006802" fill="#a5a5a5"/>
+          <ellipse cx="415.226" cy="119.2353" rx="10.2260219993155" ry="9.50001518006802" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        </g>
+        <g id="Graphic_595">
+          <ellipse cx="455.8309" cy="109.80882" rx="10.2260219993156" ry="9.50001518006802" fill="#a5a5a5"/>
+          <ellipse cx="455.8309" cy="109.80882" rx="10.2260219993156" ry="9.50001518006802" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        </g>
+        <g id="Graphic_596">
+          <ellipse cx="468.8309" cy="147.75" rx="10.2260219993155" ry="9.500015180068" fill="#a5a5a5"/>
+          <ellipse cx="468.8309" cy="147.75" rx="10.2260219993155" ry="9.500015180068" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        </g>
+        <g id="Graphic_597">
+          <ellipse cx="533.36034" cy="138.27941" rx="10.2260219993155" ry="9.500015180068" fill="#a5a5a5"/>
+          <ellipse cx="533.36034" cy="138.27941" rx="10.2260219993155" ry="9.500015180068" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        </g>
+        <g id="Graphic_598">
+          <ellipse cx="597.88975" cy="128.80882" rx="10.2260219993156" ry="9.50001518006801" fill="#a5a5a5"/>
+          <ellipse cx="597.88975" cy="128.80882" rx="10.2260219993156" ry="9.50001518006801" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        </g>
+        <g id="Graphic_603">
+          <ellipse cx="494.36034" cy="118.83824" rx="10.2260219993156" ry="9.50001518006801" fill="#a5a5a5"/>
+          <ellipse cx="494.36034" cy="118.83824" rx="10.2260219993156" ry="9.50001518006801" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        </g>
+        <g id="Graphic_602">
+          <ellipse cx="559.36034" cy="109.83824" rx="10.2260219993155" ry="9.50001518006801" fill="#a5a5a5"/>
+          <ellipse cx="559.36034" cy="109.83824" rx="10.2260219993155" ry="9.50001518006801" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        </g>
+        <g id="Graphic_601">
+          <ellipse cx="572.36034" cy="147.77941" rx="10.2260219993155" ry="9.500015180068" fill="#a5a5a5"/>
+          <ellipse cx="572.36034" cy="147.77941" rx="10.2260219993155" ry="9.500015180068" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        </g>
+        <g id="Graphic_600">
+          <ellipse cx="661.2848" cy="138.7353" rx="10.2260219993155" ry="9.500015180068" fill="#a5a5a5"/>
+          <ellipse cx="661.2848" cy="138.7353" rx="10.2260219993155" ry="9.500015180068" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        </g>
+        <g id="Graphic_599">
+          <ellipse cx="559.36034" cy="185.72059" rx="10.2260219993155" ry="9.50001518006801" fill="#a5a5a5"/>
+          <ellipse cx="559.36034" cy="185.72059" rx="10.2260219993155" ry="9.50001518006801" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        </g>
+        <g id="Graphic_608">
+          <ellipse cx="622.2848" cy="83.23529" rx="10.2260219993155" ry="9.50001518006802" fill="#a5a5a5"/>
+          <ellipse cx="622.2848" cy="83.23529" rx="10.2260219993155" ry="9.50001518006802" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        </g>
+        <g id="Graphic_607">
+          <ellipse cx="686.81424" cy="109.82353" rx="10.2260219993155" ry="9.50001518006802" fill="#a5a5a5"/>
+          <ellipse cx="686.81424" cy="109.82353" rx="10.2260219993155" ry="9.50001518006802" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        </g>
+        <g id="Graphic_606">
+          <ellipse cx="699.8142" cy="147.7647" rx="10.2260219993155" ry="9.50001518006801" fill="#a5a5a5"/>
+          <ellipse cx="699.8142" cy="147.7647" rx="10.2260219993155" ry="9.50001518006801" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        </g>
+        <g id="Graphic_605">
+          <ellipse cx="503.8309" cy="182.80882" rx="10.2260219993155" ry="9.50001518006801" fill="#a5a5a5"/>
+          <ellipse cx="503.8309" cy="182.80882" rx="10.2260219993155" ry="9.50001518006801" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        </g>
+        <g id="Graphic_604">
+          <ellipse cx="541.226" cy="83.23529" rx="10.2260219993155" ry="9.50001518006802" fill="#a5a5a5"/>
+          <ellipse cx="541.226" cy="83.23529" rx="10.2260219993155" ry="9.50001518006802" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        </g>
+        <g id="Graphic_626">
+          <ellipse cx="494.36034" cy="220.7647" rx="10.2260219993156" ry="9.50001518006801" fill="#a5a5a5"/>
+          <ellipse cx="494.36034" cy="220.7647" rx="10.2260219993156" ry="9.50001518006801" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        </g>
+        <g id="Graphic_625">
+          <ellipse cx="532.226" cy="182.79412" rx="10.2260219993155" ry="9.50001518006801" fill="#a5a5a5"/>
+          <ellipse cx="532.226" cy="182.79412" rx="10.2260219993155" ry="9.50001518006801" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        </g>
+        <g id="Graphic_624">
+          <ellipse cx="596.7554" cy="173.32353" rx="10.2260219993155" ry="9.500015180068" fill="#a5a5a5"/>
+          <ellipse cx="596.7554" cy="173.32353" rx="10.2260219993155" ry="9.500015180068" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        </g>
+        <g id="Graphic_623">
+          <ellipse cx="661.2848" cy="163.85294" rx="10.2260219993155" ry="9.50001518006802" fill="#a5a5a5"/>
+          <ellipse cx="661.2848" cy="163.85294" rx="10.2260219993155" ry="9.50001518006802" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        </g>
+        <g id="Graphic_622">
+          <ellipse cx="437.226" cy="182.82353" rx="10.2260219993155" ry="9.50001518006801" fill="#a5a5a5"/>
+          <ellipse cx="437.226" cy="182.82353" rx="10.2260219993155" ry="9.50001518006801" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        </g>
+        <g id="Graphic_621">
+          <ellipse cx="622.7554" cy="144.88235" rx="10.2260219993155" ry="9.500015180068" fill="#a5a5a5"/>
+          <ellipse cx="622.7554" cy="144.88235" rx="10.2260219993155" ry="9.500015180068" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        </g>
+        <g id="Graphic_620">
+          <ellipse cx="635.7554" cy="182.82353" rx="10.2260219993155" ry="9.50001518006801" fill="#a5a5a5"/>
+          <ellipse cx="635.7554" cy="182.82353" rx="10.2260219993155" ry="9.50001518006801" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        </g>
+        <g id="Graphic_619">
+          <ellipse cx="622.7554" cy="220.7647" rx="10.2260219993155" ry="9.50001518006801" fill="#a5a5a5"/>
+          <ellipse cx="622.7554" cy="220.7647" rx="10.2260219993155" ry="9.50001518006801" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        </g>
+        <g id="Graphic_618">
+          <ellipse cx="567.226" cy="217.85294" rx="10.2260219993155" ry="9.500015180068" fill="#a5a5a5"/>
+          <ellipse cx="567.226" cy="217.85294" rx="10.2260219993155" ry="9.500015180068" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        </g>
+      </g>
+      <g id="Graphic_627">
+        <path d="M 42 89 L 201 89 C 203.76142 89 206 91.23858 206 94 L 206 210 C 206 212.76142 203.76142 215 201 215 L 42 215 C 39.238576 215 37 212.76142 37 210 L 37 94 C 37 91.23858 39.238576 89 42 89 Z" fill="#a5a5a5"/>
+      </g>
+      <g id="Group_431">
+        <g id="Graphic_435">
+          <path d="M 150.94595 134.83471 C 150.94599 134.826 150.94599 134.81729 150.94595 134.80858 L 150.94595 134.6726 L 150.94205 134.6726 C 150.82102 132.37492 147.9009 130.08852 142.1817 128.33527 C 130.49606 124.75292 111.54991 124.75292 99.86427 128.33527 C 94.14508 130.08852 91.22496 132.37492 91.10392 134.6726 L 91.10001 134.6726 L 91.10001 134.81244 C 91.09999 134.81858 91.09999 134.82471 91.10001 134.83084 L 91.10001 168.39461 C 91.09999 168.40075 91.09999 168.40688 91.10001 168.41302 L 91.10001 168.66227 L 91.11181 168.66227 C 91.31838 170.923 94.23587 173.16477 99.86427 174.8902 C 111.54991 178.47254 130.49606 178.47254 142.1817 174.8902 C 147.8101 173.16477 150.7276 170.923 150.93417 168.66227 L 150.94595 168.66227 L 150.94595 168.41688 C 150.94599 168.40817 150.94599 168.39946 150.94595 168.39075 Z" fill="url(#Obj_Gradient)"/>
+          <path d="M 150.94595 134.83471 C 150.94599 134.826 150.94599 134.81729 150.94595 134.80858 L 150.94595 134.6726 L 150.94205 134.6726 C 150.82102 132.37492 147.9009 130.08852 142.1817 128.33527 C 130.49606 124.75292 111.54991 124.75292 99.86427 128.33527 C 94.14508 130.08852 91.22496 132.37492 91.10392 134.6726 L 91.10001 134.6726 L 91.10001 134.81244 C 91.09999 134.81858 91.09999 134.82471 91.10001 134.83084 L 91.10001 168.39461 C 91.09999 168.40075 91.09999 168.40688 91.10001 168.41302 L 91.10001 168.66227 L 91.11181 168.66227 C 91.31838 170.923 94.23587 173.16477 99.86427 174.8902 C 111.54991 178.47254 130.49606 178.47254 142.1817 174.8902 C 147.8101 173.16477 150.7276 170.923 150.93417 168.66227 L 150.94595 168.66227 L 150.94595 168.41688 C 150.94599 168.40817 150.94599 168.39946 150.94595 168.39075 Z" stroke="white" stroke-opacity=".48790474" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+        </g>
+        <g id="Graphic_434">
+          <ellipse cx="121.023" cy="134.82164" rx="29.9230211370941" ry="9.17314471993876" fill="url(#Obj_Gradient_2)"/>
+          <ellipse cx="121.023" cy="134.82164" rx="29.9230211370941" ry="9.17314471993876" stroke="white" stroke-opacity=".48790474" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+        </g>
+        <g id="Graphic_433">
+          <path d="M 151.89997 135.60925 C 151.90001 135.60054 151.90001 135.59183 151.89997 135.58312 L 151.89997 135.44714 L 151.89608 135.44714 C 151.77504 133.14946 148.85492 130.86307 143.13573 129.10981 C 131.45009 125.52746 112.50394 125.52746 100.8183 129.10981 C 95.0991 130.86307 92.17898 133.14946 92.05795 135.44714 L 92.05404 135.44714 L 92.05404 135.58698 C 92.05402 135.59312 92.05402 135.59925 92.05404 135.60539 L 92.05404 169.16916 C 92.05402 169.17529 92.05402 169.18142 92.05404 169.18756 L 92.05404 169.43682 L 92.06583 169.43682 C 92.2724 171.69754 95.18989 173.9393 100.8183 175.66473 C 112.50394 179.24708 131.45009 179.24708 143.13573 175.66473 C 148.76413 173.9393 151.68162 171.69754 151.8882 169.43682 L 151.89997 169.43682 L 151.89997 169.19142 C 151.90001 169.18271 151.90001 169.174 151.89997 169.1653 Z" fill="url(#Obj_Gradient_3)"/>
+          <path d="M 151.89997 135.60925 C 151.90001 135.60054 151.90001 135.59183 151.89997 135.58312 L 151.89997 135.44714 L 151.89608 135.44714 C 151.77504 133.14946 148.85492 130.86307 143.13573 129.10981 C 131.45009 125.52746 112.50394 125.52746 100.8183 129.10981 C 95.0991 130.86307 92.17898 133.14946 92.05795 135.44714 L 92.05404 135.44714 L 92.05404 135.58698 C 92.05402 135.59312 92.05402 135.59925 92.05404 135.60539 L 92.05404 169.16916 C 92.05402 169.17529 92.05402 169.18142 92.05404 169.18756 L 92.05404 169.43682 L 92.06583 169.43682 C 92.2724 171.69754 95.18989 173.9393 100.8183 175.66473 C 112.50394 179.24708 131.45009 179.24708 143.13573 175.66473 C 148.76413 173.9393 151.68162 171.69754 151.8882 169.43682 L 151.89997 169.43682 L 151.89997 169.19142 C 151.90001 169.18271 151.90001 169.174 151.89997 169.1653 Z" stroke="white" stroke-opacity=".48790474" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+        </g>
+        <g id="Graphic_432">
+          <ellipse cx="121.97703" cy="134.82164" rx="29.9230211370941" ry="9.17314471993876" fill="url(#Obj_Gradient_4)"/>
+          <ellipse cx="121.97703" cy="134.82164" rx="29.9230211370941" ry="9.17314471993876" stroke="white" stroke-opacity=".48790474" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+        </g>
+      </g>
+      <g id="Graphic_632">
+        <text transform="translate(53.46094 65)" fill="black">
+          <tspan font-family="Helvetica" font-size="16" font-weight="400" fill="black" x="0" y="15">Seite des Betreiber</tspan>
+        </text>
+      </g>
+      <g id="Line_634">
+        <line x1="372" y1="154" x2="215.9" y2="154" marker-end="url(#FilledArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Line_636">
+        <path d="M 354.07407 123.88889 C 354.07407 123.88889 360.09827 137.77248 318.14815 146.48148 C 285.82525 153.19184 236.73207 154.39884 215.9014 154.59943" marker-end="url(#FilledArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Line_637">
+        <path d="M 360.74074 193.51852 C 360.74074 193.51852 365.3203 174.35616 321.4815 163.14815 C 287.58773 154.48274 237.07418 153.72246 215.8999 153.82346" marker-end="url(#FilledArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_638">
+        <text transform="translate(218.39573 173.5)" fill="black">
+          <tspan font-family="Helvetica" font-size="13" font-weight="400" fill="black" x="1.8059082" y="13">Sensordaten werden </tspan>
+          <tspan font-family="Helvetica" font-size="13" font-weight="400" fill="black" x="3.6308594" y="29">direkt zum Betreiber</tspan>
+          <tspan font-family="Helvetica" font-size="13" font-weight="400" fill="black" x="31.433594" y="45"> gesendet.</tspan>
+        </text>
+      </g>
+      <g id="Graphic_639">
+        <text transform="translate(500.16075 10.5)" fill="black">
+          <tspan font-family="Helvetica" font-size="16" font-weight="400" fill="black" x="0" y="15">Sensornetzwerk</tspan>
+        </text>
+      </g>
+    </g>
+  </g>
+</svg>
