@@ -39,11 +39,11 @@ Einführung in verteilte Systeme
 
 Ein weitgefasster Überblick über verteilte Systeme.
 
-.. container:: line-above tiny
+----
 
-    :Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
-    :Kontakt: michael.eichberg@dhbw.de, Raum 149B
-    :Version: 1.0
+:Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
+:Kontakt: michael.eichberg@dhbw.de, Raum 149B
+:Version: 1.0
 
 .. supplemental::
 
@@ -57,8 +57,6 @@ Ein weitgefasster Überblick über verteilte Systeme.
   :Fehler melden:
 
       https://github.com/Delors/delors.github.io/issues
-
-
 
 .. container:: footer-left tiny incremental minor
 
