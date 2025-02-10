@@ -29,6 +29,7 @@
    :format: html
 
 
+
 Introduction to Distributed Systems
 ================================================
 
@@ -560,36 +561,38 @@ Die Warteschlange hat eine unendliche Kapazität; d. h.die Ankunftsrate der An
 Formale Analyse der Skalierbarkeit zentralisierter Systeme
 ------------------------------------------------------------
 
-.. class:: column-list
+.. grid::
 
-- \  
+    .. cell::
 
-  - Ankunftsrate der Anfragen: 
-    
-    :math:`\lambda` *(Anfragen pro Sekunde)*
+        - Ankunftsrate der Anfragen: 
+            
+            :math:`\lambda` *(Anfragen pro Sekunde)*
 
-  - Verarbeitungskapazität des Services: 
-        
-    :math:`\mu` *(Anfragen pro Sekunde)*
+        - Verarbeitungskapazität des Services: 
+                
+            :math:`\mu` *(Anfragen pro Sekunde)*
 
-    Anteil der Zeit mit :math:`x` Anfragen im System:
+            Anteil der Zeit mit :math:`x` Anfragen im System:
 
-    .. math::
+            .. math::
 
-        p_x  = \bigl(1 - \frac{\lambda}{\mu}\bigr)\bigl(\frac{\lambda}{\mu}\bigr)^x
+                p_x  = \bigl(1 - \frac{\lambda}{\mu}\bigr)\bigl(\frac{\lambda}{\mu}\bigr)^x
 
-- \ 
+.. grid::
 
-  .. figure:: images/number_of_requests_in_system.svg
-        :align: center
+    .. cell::
 
-        # Anfragen in Bearbeitung und in Warteschlange 
-        
-        Z. B. ist der Anteil der Zeit, in der der Rechner *idle* ist (d. h. :math:`p_0`) : 90 %, 60 % und 30 %.
+        .. figure:: images/number_of_requests_in_system.svg
+            :align: center
 
-        .. presenter-note::
-        
-            :math:`p_0`; d. h.es gibt keine bzw. 0 Anfragen.
+            # Anfragen in Bearbeitung und in Warteschlange 
+            
+            Z. B. ist der Anteil der Zeit, in der der Rechner *idle* ist (d. h. :math:`p_0`) : 90 %, 60 % und 30 %.
+
+            .. presenter-note::
+            
+                :math:`p_0`; d. h.es gibt keine bzw. 0 Anfragen.
 
 .. presenter-note::
 
@@ -1225,42 +1228,45 @@ Integration von Anwendungen
     Eine vernetzte Anwendung ist eine Anwendung, die auf einem Server läuft und ihre Dienste für entfernte Clients verfügbar macht. 
 
 
+
 Transaktionen auf Geschäftsprozessebene
 -----------------------------------------
 
-.. class:: column-list
+.. grid:: 
 
-- .. image:: images/transactions/transaction.svg
-        :align: center
+    .. cell:: 
 
-  .. container:: bold margin-top-1em
+        .. image:: images/transactions/transaction.svg
+            :align: center
 
-        „Alles oder nichts.“
+        .. container:: text-align-center margin-top-1em
 
-- .. container:: width-60
+            **„Alles oder nichts.“**
 
-    .. deck::
+    .. cell::
+        :class: width-60
 
-        .. card::
+        .. deck::
 
-            .. csv-table::
-                :header: "Primitiv", "Beschreibung"
-                :width: 875px
+            .. card::
 
-                BEGINN DER TRANSAKTION, Zeigt den Beginn einer Transaktion an.
-                ENDE DER TRANSAKTION, Beendigung der Transaktion mit dem Versuch eines COMMIT.
-                ABBRUCH DER TRANSAKTION, Beenden der Transaktion und Wiederherstellung des alten Zustands.
-                LESEN, "Lesen von Daten aus (z. B.) einer Datei oder einer Tabelle."
-                SCHREIBEN, "Schreiben von Daten (z. B.) in eine Datei oder eine Tabelle."
+                .. csv-table::
+                    :header: "Primitiv", "Beschreibung"
 
-        .. card:: 
+                    BEGINN DER TRANSAKTION, Zeigt den Beginn einer Transaktion an.
+                    ENDE DER TRANSAKTION, Beendigung der Transaktion mit dem Versuch eines COMMIT.
+                    ABBRUCH DER TRANSAKTION, Beenden der Transaktion und Wiederherstellung des alten Zustands.
+                    LESEN, "Lesen von Daten aus (z. B.) einer Datei oder einer Tabelle."
+                    SCHREIBEN, "Schreiben von Daten (z. B.) in eine Datei oder eine Tabelle."
 
-            :Atomar `Atomic`:eng:: geschieht untrennbar (scheinbar)
-            :Konsistent `Consistent`:eng:: keine Verletzung von Systeminvarianten
-            :Isoliert `Isolated`:eng:: keine gegenseitige Beeinflussung
-            :Dauerhaft `Durable`:eng:: Nach einem Commit sind die Änderungen dauerhaft
+            .. card:: 
 
-            ≙ :eng:`ACID`\ -Eigenschaften
+                :Atomar `Atomic`:eng:: geschieht untrennbar (scheinbar)
+                :Konsistent `Consistent`:eng:: keine Verletzung von Systeminvarianten
+                :Isoliert `Isolated`:eng:: keine gegenseitige Beeinflussung
+                :Dauerhaft `Durable`:eng:: Nach einem Commit sind die Änderungen dauerhaft
+
+                ≙ :eng:`ACID`\ -Eigenschaften
 
 
 

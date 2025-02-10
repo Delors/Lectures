@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!-- Generator: DataGraph - https://www.visualdatatools.com/DataGraph/index.html  --><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="350" height="225" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 350 225">
+  <style>
+    @import url('/LectureDoc2/ext/fonts/ld-fonts.css'); 
+  </style>
+<g>
+  <!-- Commands -->
+  <g id="Commands">
+    <!-- x/(1-x) -->
+    <g id="x_1_x">
+      <path d="M 36.5 200.5 L 76.7063 199.831 L 108.398 199.11 L 133.863 198.338 L 154.636 197.514 L 171.834 196.637 
+               L 186.239 195.707 L 198.454 194.721 L 208.815 193.689 L 217.756 192.601 L 225.479 191.464 
+               L 232.294 190.26 L 238.238 189.01 L 243.528 187.693 L 248.199 186.326 L 252.381 184.896 
+               L 256.145 183.4 L 259.576 181.82 L 262.702 180.157 L 265.503 178.443 L 268.104 176.617 
+               L 270.521 174.674 L 272.816 172.559 L 274.954 170.297 L 276.874 167.972 L 278.711 165.429 
+               L 280.423 162.715 L 282.098 159.669 L 283.679 156.352 L 285.168 152.744 L 286.589 148.755 
+               L 287.937 144.354 L 289.187 139.602 L 290.385 134.284 L 291.53 128.311 L 292.684 121.163 
+               L 293.735 113.377 L 294.743 104.403 L 295.707 93.9899 L 296.637 81.6518 L 297.5 67.4488 
+               L 298.344 49.9742 L 299.136 28.9642 L 299.673 10.5 "
+        stroke="black" fill="none" stroke-width="2"/>
+    </g>
+  </g>
+  <!-- Foreground -->
+  <g id="Foreground">
+    <!-- Y Axis -->
+    <g id="Y_Axis">
+      <!-- Y Labels -->
+      <g id="Y_Labels">
+        <g font-family="NotoSansDisplayDisplay-Regular" font-size="14" fill="black">
+          <text x="18.182" y="205.498">0</text>
+        </g>
+        <g font-family="NotoSansDisplayDisplay-Regular" font-size="14" fill="black">
+          <text x="10.664" y="167.498">10</text>
+        </g>
+        <g font-family="NotoSansDisplayDisplay-Regular" font-size="14" fill="black">
+          <text x="10.664" y="129.498">20</text>
+        </g>
+        <g font-family="NotoSansDisplayDisplay-Regular" font-size="14" fill="black">
+          <text x="10.664" y="91.498">30</text>
+        </g>
+        <g font-family="NotoSansDisplayDisplay-Regular" font-size="14" fill="black">
+          <text x="10.664" y="53.498">40</text>
+        </g>
+        <g font-family="NotoSansDisplayDisplay-Regular" font-size="14" fill="black">
+          <text x="10.664" y="15.498">50</text>
+        </g>
+      </g>
+      <path d="M 28.5 200.5 L 36.5 200.5 M 32.5 181.5 L 36.5 181.5 M 28.5 162.5 L 36.5 162.5 M 32.5 143.5 L 36.5 143.5 
+               M 28.5 124.5 L 36.5 124.5 M 32.5 105.5 L 36.5 105.5 M 28.5 86.5 L 36.5 86.5 M 32.5 67.5 L 36.5 67.5 
+               M 28.5 48.5 L 36.5 48.5 M 32.5 29.5 L 36.5 29.5 M 28.5 10.5 L 36.5 10.5 "
+        stroke="black" fill="none" stroke-width="1"/>
+    </g>
+    <!-- X Axis -->
+    <g id="X_Axis">
+      <g>
+        <g font-family="NotoSansDisplayDisplay-Regular" font-size="14" fill="black">
+          <text x="32.741" y="221.495">0</text>
+        </g>
+        <g font-family="NotoSansDisplayDisplay-Regular" font-size="14" fill="black">
+          <text x="80.8949" y="221.495">0,2</text>
+        </g>
+        <g font-family="NotoSansDisplayDisplay-Regular" font-size="14" fill="black">
+          <text x="134.586" y="221.495">0,4</text>
+        </g>
+        <g font-family="NotoSansDisplayDisplay-Regular" font-size="14" fill="black">
+          <text x="188.277" y="221.495">0,6</text>
+        </g>
+        <g font-family="NotoSansDisplayDisplay-Regular" font-size="14" fill="black">
+          <text x="241.968" y="221.495">0,8</text>
+        </g>
+        <g font-family="NotoSansDisplayDisplay-Regular" font-size="14" fill="black">
+          <text x="295.659" y="221.495">1,0</text>
+        </g>
+      </g>
+      <path d="M 36.5 208.5 L 36.5 200.5 M 90.1909 208.5 L 90.1909 200.5 M 143.882 208.5 L 143.882 200.5 
+               M 197.573 208.5 L 197.573 200.5 M 251.264 208.5 L 251.264 200.5 M 304.955 208.5 L 304.955 200.5 
+               M 63.3455 204.5 L 63.3455 200.5 M 117.036 204.5 L 117.036 200.5 M 170.727 204.5 L 170.727 200.5 
+               M 224.418 204.5 L 224.418 200.5 M 278.109 204.5 L 278.109 200.5 M 331.8 204.5 L 331.8 200.5 "
+        stroke="black" fill="none" stroke-width="1"/>
+    </g>
+    <path d="M 331.8 200.5 L 331.8 10.5 L 36.5 10.5 L 36.5 200.5 L 331.8 200.5 z "
+      stroke="black" stroke-linecap="square" fill="none" stroke-width="1"/>
+  </g>
+  <!-- Zoom -->
+  <g id="Zoom">
+    <!-- Connection -->
+    <g id="Connection">
+      <path d="M 295.666 123.702 L 216.8 32.5 "
+        stroke="black" fill="none" stroke-width="1"/>
+      <path d="M 247.666 191.152 L 76.8 182.5 "
+        stroke="black" fill="none" stroke-width="1"/>
+    </g>
+    <!-- Source -->
+    <g id="Source">
+      <rect x="247.666" y="123.702" width="47.9997" height="67.45" stroke="black" fill="none" stroke-width="1"/>
+    </g>
+    <!-- Destination -->
+    <g id="Destination">
+      <!-- Content -->
+      <g id="Content" transform="translate(76,183)">>
+        <!-- Commands -->
+        <g id="Commands_2">
+          <path d="M 0.8 -10.8609 L 9.14057 -12.9414 L 16.8823 -15.0782 L 24.1013 -17.2781 L 30.8199 -19.5337 
+                   L 37.1455 -21.8692 L 43.0518 -24.2635 L 48.6154 -26.7358 L 53.8635 -29.289 L 58.7986 -31.9141 
+                   L 63.4851 -34.6366 L 67.8988 -37.4341 L 72.1109 -40.3441 L 76.1131 -43.3567 L 79.9186 -46.4754 
+                   L 83.5496 -49.7135 L 87.0248 -53.0849 L 90.356 -56.6004 L 93.5502 -60.2671 L 96.607 -64.0838 
+                   L 99.578 -68.1207 L 102.433 -72.3453 L 105.182 -76.7771 L 107.837 -81.4421 L 110.409 -86.3708 
+                   L 112.912 -91.6114 L 115.337 -97.1654 L 117.692 -103.072 L 119.959 -109.306 L 122.167 -115.973 
+                   L 124.324 -123.136 L 126.407 -130.763 L 128.423 -138.909 L 130.389 -147.698 L 130.954 -150.5 "
+            stroke="black" fill="none" stroke-width="2"/>
+        </g>
+        <g>
+          <!-- Y Labels -->
+          <g id="Y_Labels_2">
+            <g font-family="NotoSansDisplayDisplay-Regular" font-size="13" fill="black">
+              <text x="-16.781" y="-17.3238">5</text>
+            </g>
+            <g font-family="NotoSansDisplayDisplay-Regular" font-size="13" fill="black">
+              <text x="-23.762" y="-59.5773">10</text>
+            </g>
+            <g font-family="NotoSansDisplayDisplay-Regular" font-size="13" fill="black">
+              <text x="-23.762" y="-101.831">15</text>
+            </g>
+            <g font-family="NotoSansDisplayDisplay-Regular" font-size="13" fill="black">
+              <text x="-23.762" y="-144.084">20</text>
+            </g>
+          </g>
+          <path d="M -3.2 -5.06338 L 0.8 -5.06338 M -3.2 -13.5141 L 0.8 -13.5141 M -7.2 -21.9648 L 0.8 -21.9648 
+                   M -3.2 -30.4155 L 0.8 -30.4155 M -3.2 -38.8662 L 0.8 -38.8662 M -3.2 -47.3169 L 0.8 -47.3169 
+                   M -3.2 -55.7676 L 0.8 -55.7676 M -7.2 -64.2183 L 0.8 -64.2183 M -3.2 -72.669 L 0.8 -72.669 
+                   M -3.2 -81.1197 L 0.8 -81.1197 M -3.2 -89.5704 L 0.8 -89.5704 M -3.2 -98.0211 L 0.8 -98.0211 
+                   M -7.2 -106.472 L 0.8 -106.472 M -3.2 -114.923 L 0.8 -114.923 M -3.2 -123.373 L 0.8 -123.373 
+                   M -3.2 -131.824 L 0.8 -131.824 M -3.2 -140.275 L 0.8 -140.275 M -7.2 -148.725 L 0.8 -148.725 "
+            stroke="black" fill="none" stroke-width="1"/>
+          <g>
+            <g font-family="NotoSansDisplayDisplay-Regular" font-size="13" fill="black">
+              <text x="2.66017" y="-160.356">0,8</text>
+            </g>
+            <g font-family="NotoSansDisplayDisplay-Regular" font-size="13" fill="black">
+              <text x="80.9599" y="-160.356">0,9</text>
+            </g>
+          </g>
+          <path d="M 3.46219 -150.5 L 3.46219 -154.5 M 11.2922 -150.5 L 11.2922 -158.5 M 19.1221 -150.5 L 19.1221 -154.5 
+                   M 26.9521 -150.5 L 26.9521 -154.5 M 34.7821 -150.5 L 34.7821 -154.5 M 42.6121 -150.5 L 42.6121 -154.5 
+                   M 50.4421 -150.5 L 50.4421 -154.5 M 58.272 -150.5 L 58.272 -154.5 M 66.102 -150.5 L 66.102 -154.5 
+                   M 73.932 -150.5 L 73.932 -154.5 M 81.762 -150.5 L 81.762 -154.5 M 89.5919 -150.5 L 89.5919 -158.5 
+                   M 97.4219 -150.5 L 97.4219 -154.5 M 105.252 -150.5 L 105.252 -154.5 M 113.082 -150.5 L 113.082 -154.5 
+                   M 120.912 -150.5 L 120.912 -154.5 M 128.742 -150.5 L 128.742 -154.5 M 136.572 -150.5 L 136.572 -154.5 "
+            stroke="black" fill="none" stroke-width="1"/>
+        </g>
+      </g>
+      <rect x="76.8" y="32.5" width="140" height="150" stroke="black" fill="none" stroke-width="1"/>
+    </g>
+  </g>
+</g>
+</svg>

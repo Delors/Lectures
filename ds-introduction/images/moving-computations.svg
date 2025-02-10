@@ -1,0 +1,353 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:dc="http://purl.org/dc/elements/1.1/" version="1.1" xmlns:xl="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" viewBox="161 -228 554 340" width="554" height="340">
+  <defs>
+    <linearGradient x1="0" x2="1" id="Gradient" gradientUnits="userSpaceOnUse">
+      <stop offset=".1060121" stop-color="#029ed7"/>
+      <stop offset=".8529494" stop-color="#99d0eb" stop-opacity=".5"/>
+      <stop offset="1" stop-color="white" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="Obj_Gradient" xl:href="#Gradient" gradientTransform="translate(511.6669 -104.12258) rotate(-32.658855) scale(103.99055)"/>
+    <linearGradient id="Obj_Gradient_2" xl:href="#Gradient" gradientTransform="translate(565.8479 -104.12258) rotate(-32.658855) scale(103.99055)"/>
+    <linearGradient x1="0" x2="1" id="Gradient_2" gradientUnits="userSpaceOnUse">
+      <stop offset=".16833588" stop-color="#029ed5"/>
+      <stop offset=".9336584" stop-color="#99d0eb" stop-opacity=".5"/>
+      <stop offset="1" stop-color="white" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="Obj_Gradient_3" xl:href="#Gradient_2" gradientTransform="translate(618.727 -147.90815) rotate(-133.44236) scale(105.27504)"/>
+    <linearGradient id="Obj_Gradient_4" xl:href="#Gradient" gradientTransform="translate(512.3546 59.959945) rotate(-32.658855) scale(103.99055)"/>
+    <linearGradient id="Obj_Gradient_5" xl:href="#Gradient" gradientTransform="translate(566.5356 59.959945) rotate(-32.658855) scale(103.99055)"/>
+    <linearGradient id="Obj_Gradient_6" xl:href="#Gradient_2" gradientTransform="translate(619.4147 16.174372) rotate(-133.44236) scale(105.27504)"/>
+    <linearGradient x1="0" x2="1" id="Gradient_3" gradientUnits="userSpaceOnUse">
+      <stop offset=".16833588" stop-color="#cde95f"/>
+      <stop offset=".9336584" stop-color="#e7f4b5" stop-opacity=".5"/>
+      <stop offset="1" stop-color="white" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="Obj_Gradient_7" xl:href="#Gradient_3" gradientTransform="translate(343.5201 -76.96446) rotate(-133.44236) scale(178.80746)"/>
+    <linearGradient id="Obj_Gradient_8" xl:href="#Gradient_3" gradientTransform="translate(342.40218 -13.53596) rotate(-133.44236) scale(175.55589)"/>
+    <linearGradient x1="0" x2="1" id="Gradient_4" gradientUnits="userSpaceOnUse">
+      <stop offset=".16833588" stop-color="#e9e9e9"/>
+      <stop offset=".9336584" stop-color="#f5f5f5" stop-opacity=".5"/>
+      <stop offset="1" stop-color="white" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="Obj_Gradient_9" xl:href="#Gradient_4" gradientTransform="translate(339.68617 -80.72464) rotate(-133.44236) scale(167.6562)"/>
+    <linearGradient x1="0" x2="1" id="Gradient_5" gradientUnits="userSpaceOnUse">
+      <stop offset=".16833588" stop-color="#e7e9dd"/>
+      <stop offset=".9336584" stop-color="#f3f5ee" stop-opacity=".5"/>
+      <stop offset="1" stop-color="white" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="Obj_Gradient_10" xl:href="#Gradient_5" gradientTransform="translate(335.1333 -83.83634) rotate(-133.44236) scale(154.41394)"/>
+    <linearGradient x1="0" x2="1" id="Gradient_6" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="white"/>
+      <stop offset=".08420465" stop-color="#a4a4a4"/>
+      <stop offset="1" stop-color="#333"/>
+    </linearGradient>
+    <linearGradient id="Obj_Gradient_11" xl:href="#Gradient_6" gradientTransform="translate(222.32417 -190.85673) rotate(90) scale(3.640214)"/>
+    <linearGradient id="Obj_Gradient_12" xl:href="#Gradient_6" gradientTransform="translate(230.46838 -190.85673) rotate(90) scale(3.640214)"/>
+    <linearGradient id="Obj_Gradient_13" xl:href="#Gradient_6" gradientTransform="translate(238.6126 -190.85673) rotate(90) scale(3.640214)"/>
+    <font-face font-family="Noto Sans Display" font-size="10" panose-1="2 11 5 2 4 5 4 2 2 4" units-per-em="1000" underline-position="-100" underline-thickness="50" slope="0" x-height="536" cap-height="714" ascent="1069.0002" descent="-292.99927" font-weight="400">
+      <font-face-src>
+        <font-face-name name="NotoSansDisplay-Regular"/>
+      </font-face-src>
+    </font-face>
+    <linearGradient id="Obj_Gradient_14" xl:href="#Gradient_3" gradientTransform="translate(343.5201 72.627195) rotate(-133.44236) scale(178.80746)"/>
+    <linearGradient id="Obj_Gradient_15" xl:href="#Gradient_3" gradientTransform="translate(342.40218 136.05569) rotate(-133.44236) scale(175.55589)"/>
+    <linearGradient id="Obj_Gradient_16" xl:href="#Gradient_4" gradientTransform="translate(339.68617 68.86701) rotate(-133.44236) scale(167.6562)"/>
+    <linearGradient id="Obj_Gradient_17" xl:href="#Gradient_5" gradientTransform="translate(335.1333 65.75531) rotate(-133.44236) scale(154.41394)"/>
+    <linearGradient id="Obj_Gradient_18" xl:href="#Gradient_6" gradientTransform="translate(222.32417 -41.265077) rotate(90) scale(3.640214)"/>
+    <linearGradient id="Obj_Gradient_19" xl:href="#Gradient_6" gradientTransform="translate(230.46838 -41.265077) rotate(90) scale(3.640214)"/>
+    <linearGradient id="Obj_Gradient_20" xl:href="#Gradient_6" gradientTransform="translate(238.6126 -41.265077) rotate(90) scale(3.640214)"/>
+    <filter id="Shadow" filterUnits="userSpaceOnUse" x="105.6" y="-262">
+      <feGaussianBlur in="SourceAlpha" result="blur" stdDeviation="1.308"/>
+      <feOffset in="blur" result="offset" dx="0" dy="2"/>
+      <feFlood flood-color="black" flood-opacity=".5" result="flood"/>
+      <feComposite in="flood" in2="offset" operator="in" result="color"/>
+      <feMerge>
+        <feMergeNode in="color"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <font-face font-family="Noto Sans Display" font-size="14" panose-1="2 11 5 2 4 5 4 2 2 4" units-per-em="1000" underline-position="-100" underline-thickness="50" slope="0" x-height="536" cap-height="714" ascent="1069.0002" descent="-292.99927" font-weight="400">
+      <font-face-src>
+        <font-face-name name="NotoSansDisplay-Regular"/>
+      </font-face-src>
+    </font-face>
+    <font-face font-family="Noto Sans Display" font-size="11" panose-1="2 11 5 2 4 5 4 2 2 4" units-per-em="1000" underline-position="-100" underline-thickness="50" slope="0" x-height="536" cap-height="714" ascent="1069.0002" descent="-292.99927" font-weight="400">
+      <font-face-src>
+        <font-face-name name="NotoSansDisplay-Regular"/>
+      </font-face-src>
+    </font-face>
+    <marker orient="auto" overflow="visible" markerUnits="strokeWidth" id="FilledArrow_Marker" stroke-linejoin="miter" stroke-miterlimit="10" viewBox="-1 -3 6 6" markerWidth="6" markerHeight="6" color="#b1001c">
+      <g>
+        <path d="M 3.7333333 0 L 0 -1.4 L 0 1.4 Z" fill="currentColor" stroke="currentColor" stroke-width="1"/>
+      </g>
+    </marker>
+    <marker orient="auto" overflow="visible" markerUnits="strokeWidth" id="FilledArrow_Marker_2" stroke-linejoin="miter" stroke-miterlimit="10" viewBox="-1 -3 6 6" markerWidth="6" markerHeight="6" color="#235e00">
+      <g>
+        <path d="M 3.7333333 0 L 0 -1.4 L 0 1.4 Z" fill="currentColor" stroke="currentColor" stroke-width="1"/>
+      </g>
+    </marker>
+    <marker orient="auto" overflow="visible" markerUnits="strokeWidth" id="SharpArrow_Marker" stroke-linejoin="miter" stroke-miterlimit="10" viewBox="-3 -3 7 6" markerWidth="7" markerHeight="6" color="#003776">
+      <g>
+        <path d="M 3 0 L -1.8 -1.8 L 0 0 L 0 0 L -1.8 1.8 Z" fill="currentColor" stroke="currentColor" stroke-width="1"/>
+      </g>
+    </marker>
+    <font-face font-family="Noto Sans Display" font-size="14" panose-1="2 11 5 2 4 5 4 2 2 4" units-per-em="1000" underline-position="-99.99084" underline-thickness="49.98779" slope="0" x-height="546" cap-height="714" ascent="1069.0002" descent="-292.99927" font-weight="700">
+      <font-face-src>
+        <font-face-name name="NotoSansDisplay-Regular_Bold"/>
+      </font-face-src>
+    </font-face>
+    <marker orient="auto" overflow="visible" markerUnits="strokeWidth" id="FilledArrow_Marker_3" stroke-linejoin="miter" stroke-miterlimit="10" viewBox="-1 -3 6 6" markerWidth="6" markerHeight="6" color="#ff6100">
+      <g>
+        <path d="M 3.7333333 0 L 0 -1.4 L 0 1.4 Z" fill="currentColor" stroke="currentColor" stroke-width="1"/>
+      </g>
+    </marker>
+    <marker orient="auto" overflow="visible" markerUnits="strokeWidth" id="FilledArrow_Marker_4" stroke-linejoin="miter" stroke-miterlimit="10" viewBox="-1 -3 6 6" markerWidth="6" markerHeight="6" color="#b1001c">
+      <g>
+        <path d="M 3.7333333 0 L 0 -1.4 L 0 1.4 Z" fill="currentColor" stroke="currentColor" stroke-width="1"/>
+      </g>
+    </marker>
+  </defs>
+  <metadata> Produced by OmniGraffle 8.0\n2025-02-09 08:49:00 +0000</metadata>
+  <g id="moving-computations" stroke-opacity="1" stroke-dasharray="none" fill="none" fill-opacity="1" stroke="none">
+    <title>moving-computations</title>
+    <g id="moving-computations_Layer_1">
+      <title>Layer 1</title>
+      <g id="Group_367">
+        <g id="Graphic_370">
+          <path d="M 528.3511 -99.7283 L 528.3511 -186.26908 L 582.5321 -164.63389 L 582.5321 -78.09311 Z" fill="url(#Obj_Gradient)"/>
+          <path d="M 528.3511 -99.7283 L 528.3511 -186.26908 L 582.5321 -164.63389 L 582.5321 -78.09311 Z" stroke="white" stroke-opacity=".48790474" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+        </g>
+        <g id="Graphic_369">
+          <path d="M 636.7131 -99.7283 L 636.7131 -186.26908 L 582.5321 -164.63389 L 582.5321 -78.09311 Z" fill="url(#Obj_Gradient_2)"/>
+          <path d="M 636.7131 -99.7283 L 636.7131 -186.26908 L 582.5321 -164.63389 L 582.5321 -78.09311 Z" stroke="white" stroke-opacity=".48790474" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+        </g>
+        <g id="Graphic_368">
+          <path d="M 582.5321 -207.31096 L 636.7131 -186.1265 L 582.5321 -164.94203 L 528.3511 -186.1265 Z" fill="url(#Obj_Gradient_3)"/>
+          <path d="M 582.5321 -207.31096 L 636.7131 -186.1265 L 582.5321 -164.94203 L 528.3511 -186.1265 Z" stroke="white" stroke-opacity=".48790474" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+        </g>
+      </g>
+      <g id="Group_439">
+        <g id="Graphic_442">
+          <path d="M 529.0388 64.35422 L 529.0388 -22.186557 L 583.2198 -.5513626 L 583.2198 85.98942 Z" fill="url(#Obj_Gradient_4)"/>
+          <path d="M 529.0388 64.35422 L 529.0388 -22.186557 L 583.2198 -.5513626 L 583.2198 85.98942 Z" stroke="white" stroke-opacity=".48790474" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+        </g>
+        <g id="Graphic_441">
+          <path d="M 637.4008 64.35422 L 637.4008 -22.186557 L 583.2198 -.5513626 L 583.2198 85.98942 Z" fill="url(#Obj_Gradient_5)"/>
+          <path d="M 637.4008 64.35422 L 637.4008 -22.186557 L 583.2198 -.5513626 L 583.2198 85.98942 Z" stroke="white" stroke-opacity=".48790474" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+        </g>
+        <g id="Graphic_440">
+          <path d="M 583.2198 -43.22843 L 637.4008 -22.043967 L 583.2198 -.8595021 L 529.0388 -22.043967 Z" fill="url(#Obj_Gradient_6)"/>
+          <path d="M 583.2198 -43.22843 L 637.4008 -22.043967 L 583.2198 -.8595021 L 529.0388 -22.043967 Z" stroke="white" stroke-opacity=".48790474" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+        </g>
+      </g>
+      <g id="Group_321">
+        <g id="Group_329">
+          <g id="Graphic_331">
+            <rect x="212.0927" y="-198.76425" width="139.90244" height="113.77348" fill="url(#Obj_Gradient_7)"/>
+            <rect x="212.0927" y="-198.76425" width="139.90244" height="113.77348" stroke="white" stroke-opacity=".4807276" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+          </g>
+          <g id="Graphic_330">
+            <path d="M 162.54392 -69.5464 L 401.5439 -69.5464 L 353.7439 -84.99077 L 210.34392 -84.99077 Z" fill="url(#Obj_Gradient_8)"/>
+            <path d="M 162.54392 -69.5464 L 401.5439 -69.5464 L 353.7439 -84.99077 L 210.34392 -84.99077 Z" stroke="white" stroke-opacity=".4807276" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+          </g>
+        </g>
+        <g id="Group_322">
+          <g id="Graphic_328">
+            <rect x="215.2308" y="-193.7689" width="133.6262" height="104.35898" fill="url(#Obj_Gradient_9)"/>
+            <rect x="215.2308" y="-193.7689" width="133.6262" height="104.35898" stroke="white" stroke-opacity=".4807276" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+          </g>
+          <g id="Graphic_327">
+            <rect x="217.80972" y="-185.3964" width="128.46838" height="91.00534" fill="url(#Obj_Gradient_10)"/>
+            <rect x="217.80972" y="-185.3964" width="128.46838" height="91.00534" stroke="white" stroke-opacity=".4807276" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+          </g>
+          <g id="Graphic_326">
+            <ellipse cx="222.32417" cy="-189.03662" rx="2.62716932077781" ry="1.82010980596617" fill="url(#Obj_Gradient_11)"/>
+            <ellipse cx="222.32417" cy="-189.03662" rx="2.62716932077781" ry="1.82010980596617" stroke="#a5a5a5" stroke-linecap="round" stroke-linejoin="round" stroke-width=".25"/>
+          </g>
+          <g id="Graphic_325">
+            <ellipse cx="230.46838" cy="-189.03662" rx="2.6271693207778" ry="1.82010980596617" fill="url(#Obj_Gradient_12)"/>
+            <ellipse cx="230.46838" cy="-189.03662" rx="2.6271693207778" ry="1.82010980596617" stroke="#a5a5a5" stroke-linecap="round" stroke-linejoin="round" stroke-width=".25"/>
+          </g>
+          <g id="Graphic_324">
+            <ellipse cx="238.6126" cy="-189.03662" rx="2.6271693207778" ry="1.82010980596617" fill="url(#Obj_Gradient_13)"/>
+            <ellipse cx="238.6126" cy="-189.03662" rx="2.6271693207778" ry="1.82010980596617" stroke="#a5a5a5" stroke-linecap="round" stroke-linejoin="round" stroke-width=".25"/>
+          </g>
+          <g id="Graphic_323">
+            <text transform="translate(251.8789 -196.08758)" fill="#666">
+              <tspan font-family="Noto Sans Display" font-size="10" font-weight="400" fill="#666" x="8739676e-19" y="11" xml:space="preserve">www.xyz.com</tspan>
+            </text>
+          </g>
+        </g>
+      </g>
+      <g id="Group_420">
+        <g id="Group_428">
+          <g id="Graphic_430">
+            <rect x="212.0927" y="-49.1726" width="139.90244" height="113.77348" fill="url(#Obj_Gradient_14)"/>
+            <rect x="212.0927" y="-49.1726" width="139.90244" height="113.77348" stroke="white" stroke-opacity=".4807276" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+          </g>
+          <g id="Graphic_429">
+            <path d="M 162.54392 80.04525 L 401.5439 80.04525 L 353.7439 64.600885 L 210.34392 64.600885 Z" fill="url(#Obj_Gradient_15)"/>
+            <path d="M 162.54392 80.04525 L 401.5439 80.04525 L 353.7439 64.600885 L 210.34392 64.600885 Z" stroke="white" stroke-opacity=".4807276" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+          </g>
+        </g>
+        <g id="Group_421">
+          <g id="Graphic_427">
+            <rect x="215.2308" y="-44.17726" width="133.6262" height="104.35898" fill="url(#Obj_Gradient_16)"/>
+            <rect x="215.2308" y="-44.17726" width="133.6262" height="104.35898" stroke="white" stroke-opacity=".4807276" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+          </g>
+          <g id="Graphic_426">
+            <rect x="217.80972" y="-35.804757" width="128.46838" height="91.00534" fill="url(#Obj_Gradient_17)"/>
+            <rect x="217.80972" y="-35.804757" width="128.46838" height="91.00534" stroke="white" stroke-opacity=".4807276" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+          </g>
+          <g id="Graphic_425">
+            <ellipse cx="222.32417" cy="-39.44497" rx="2.62716932077781" ry="1.82010980596619" fill="url(#Obj_Gradient_18)"/>
+            <ellipse cx="222.32417" cy="-39.44497" rx="2.62716932077781" ry="1.82010980596619" stroke="#a5a5a5" stroke-linecap="round" stroke-linejoin="round" stroke-width=".25"/>
+          </g>
+          <g id="Graphic_424">
+            <ellipse cx="230.46838" cy="-39.44497" rx="2.62716932077781" ry="1.82010980596619" fill="url(#Obj_Gradient_19)"/>
+            <ellipse cx="230.46838" cy="-39.44497" rx="2.62716932077781" ry="1.82010980596619" stroke="#a5a5a5" stroke-linecap="round" stroke-linejoin="round" stroke-width=".25"/>
+          </g>
+          <g id="Graphic_423">
+            <ellipse cx="238.6126" cy="-39.44497" rx="2.6271693207778" ry="1.82010980596619" fill="url(#Obj_Gradient_20)"/>
+            <ellipse cx="238.6126" cy="-39.44497" rx="2.6271693207778" ry="1.82010980596619" stroke="#a5a5a5" stroke-linecap="round" stroke-linejoin="round" stroke-width=".25"/>
+          </g>
+          <g id="Graphic_422">
+            <text transform="translate(251.8789 -46.495933)" fill="#666">
+              <tspan font-family="Noto Sans Display" font-size="10" font-weight="400" fill="#666" x="8739676e-19" y="11" xml:space="preserve">www.xyz.com</tspan>
+            </text>
+          </g>
+        </g>
+      </g>
+      <g id="Graphic_283" filter="url(#Shadow)">
+        <path d="M 218.50485 -159.18631 L 345.58298 -159.18631 C 347.7921 -159.18631 349.58298 -157.39545 349.58298 -155.18631 L 349.58298 -123.18631 C 349.58298 -120.97717 347.7921 -119.18631 345.58298 -119.18631 L 218.50485 -119.18631 C 216.29571 -119.18631 214.50485 -120.97717 214.50485 -123.18631 L 214.50485 -155.18631 C 214.50485 -157.39545 216.29571 -159.18631 218.50485 -159.18631 Z" fill="red"/>
+      </g>
+      <g id="Graphic_364">
+        <text transform="translate(444.9824 -107.5464)" fill="black">
+          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="34.916" y="15" xml:space="preserve">prüfe</tspan>
+          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="0" y="34" xml:space="preserve">Formdaten</tspan>
+        </text>
+      </g>
+      <g id="Graphic_366">
+        <text transform="translate(217.79698 -154.18631)" fill="white">
+          <tspan font-family="Noto Sans Display" font-size="11" font-weight="400" fill="white" x="0" y="12" xml:space="preserve">Name: Michael Meier</tspan>
+          <tspan font-family="Noto Sans Display" font-size="11" font-weight="400" fill="white" x="0" y="27" xml:space="preserve">Email:  m.meier@dhbw.de</tspan>
+        </text>
+      </g>
+      <g id="Line_320">
+        <path d="M 349.58298 -134.07496 C 364.6276 -133.30973 382.01195 -132.61316 401.59326 -132.11977 C 446.8718 -130.9789 491.4314 -131.23849 520.5931 -131.64975" marker-end="url(#FilledArrow_Marker)" stroke="#b1001c" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+      </g>
+      <g id="Graphic_376">
+        <path d="M 537.497 -112.21327 L 537.497 -165.7995 L 570.83914 -152.40295 L 570.83914 -98.81672 Z" fill="#bdd0d7"/>
+        <path d="M 537.497 -112.21327 L 537.497 -165.7995 L 570.83914 -152.40295 L 570.83914 -98.81672 Z" stroke="white" stroke-opacity=".48790474" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+      <g id="Graphic_436">
+        <path d="M 538.1847 51.86925 L 538.1847 -1.71698 L 571.52685 11.679577 L 571.52685 65.26581 Z" fill="#bdd0d7" fill-opacity=".4870341"/>
+        <path d="M 538.1847 51.86925 L 538.1847 -1.71698 L 571.52685 11.679577 L 571.52685 65.26581 Z" stroke="white" stroke-opacity=".255577" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+      <g id="Graphic_377">
+        <path d="M 629.0532 -112.50012 L 629.0532 -167.2337 L 595.71105 -153.55031 L 595.71105 -98.81672 Z" fill="#bdd0d7"/>
+        <path d="M 629.0532 -112.50012 L 629.0532 -167.2337 L 595.71105 -153.55031 L 595.71105 -98.81672 Z" stroke="white" stroke-opacity=".48790474" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+      <g id="Graphic_435">
+        <path d="M 629.7409 51.58241 L 629.7409 -3.151185 L 596.39876 10.532213 L 596.39876 65.26581 Z" fill="#bdd0d7"/>
+        <path d="M 629.7409 51.58241 L 629.7409 -3.151185 L 596.39876 10.532213 L 596.39876 65.26581 Z" stroke="white" stroke-opacity=".48790474" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+      <g id="Line_378">
+        <line x1="571.83914" y1="-132.52579" x2="578.81226" y2="-132.61169" marker-end="url(#FilledArrow_Marker_2)" stroke="#235e00" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+      </g>
+      <g id="Line_434">
+        <line x1="572.52685" y1="31.556734" x2="579.49996" y2="31.470837" marker-end="url(#FilledArrow_Marker_2)" stroke="#235e00" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+      </g>
+      <g id="Graphic_379">
+        <text transform="translate(638.73176 -107.5464)" fill="black">
+          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="0" y="15" xml:space="preserve">verarbeite</tspan>
+          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="0" y="34" xml:space="preserve">Formdaten</tspan>
+        </text>
+      </g>
+      <g id="Graphic_433">
+        <text transform="translate(619.6811 73.29996)" fill="black">
+          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="0" y="15" xml:space="preserve">verarbeite</tspan>
+          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="0" y="34" xml:space="preserve">Formdaten</tspan>
+        </text>
+      </g>
+      <g id="Line_380">
+        <line x1="511.8153" y1="-107.5464" x2="528.46846" y2="-117.28274" marker-end="url(#SharpArrow_Marker)" stroke="#003776" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+      <g id="Line_381">
+        <line x1="647.1441" y1="-107.5464" x2="637.55415" y2="-114.57538" marker-end="url(#SharpArrow_Marker)" stroke="#003776" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+      <g id="Line_431">
+        <line x1="641.3129" y1="73.29996" x2="633.1636" y2="61.11122" marker-end="url(#SharpArrow_Marker)" stroke="#003776" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+      <g id="Graphic_382">
+        <text transform="translate(561.1505 -227.45115)" fill="black">
+          <tspan font-family="Noto Sans Display" font-size="14" font-weight="700" fill="black" x="0" y="15" xml:space="preserve">Server</tspan>
+        </text>
+      </g>
+      <g id="Graphic_383">
+        <text transform="translate(262.6223 -227.45115)" fill="black">
+          <tspan font-family="Noto Sans Display" font-size="14" font-weight="700" fill="black" x="856204e-18" y="15" xml:space="preserve">Client</tspan>
+        </text>
+      </g>
+      <g id="Graphic_384">
+        <text transform="translate(359.6464 -180.56782)" fill="black">
+          <tspan font-family="Noto Sans Display" font-size="11" font-weight="400" fill="black" x="0" y="12" xml:space="preserve">{</tspan>
+          <tspan font-family="Noto Sans Display" font-size="11" font-weight="400" fill="black" x="0" y="27" xml:space="preserve">  “name” : “Michael Meier”,</tspan>
+          <tspan font-family="Noto Sans Display" font-size="11" font-weight="400" fill="black" x="0" y="42" xml:space="preserve">  “email” :  “m.meier@dhbw.de”</tspan>
+          <tspan font-family="Noto Sans Display" font-size="11" font-weight="400" fill="black" x="0" y="57" xml:space="preserve">}</tspan>
+        </text>
+      </g>
+      <g id="Graphic_396">
+        <text transform="translate(414.0875 73.29996)" fill="black">
+          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="14.168" y="15" xml:space="preserve">vereinfachte/schnelle</tspan>
+          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="0" y="34" xml:space="preserve">Prüfung der Formdaten</tspan>
+        </text>
+      </g>
+      <g id="Group_415">
+        <g id="Graphic_397" filter="url(#Shadow)">
+          <path d="M 217.96142 -32.05269 L 345.03954 -32.05269 C 347.2487 -32.05269 349.03954 -30.26183 349.03954 -28.05269 L 349.03954 3.94731 C 349.03954 6.156449 347.2487 7.94731 345.03954 7.94731 L 217.96142 7.94731 C 215.75228 7.94731 213.96142 6.156449 213.96142 3.94731 L 213.96142 -28.05269 C 213.96142 -30.26183 215.75228 -32.05269 217.96142 -32.05269 Z" fill="red"/>
+        </g>
+        <g id="Graphic_395">
+          <text transform="translate(219.50488 -26.42769)" fill="white">
+            <tspan font-family="Noto Sans Display" font-size="11" font-weight="400" fill="white" x="0" y="12" xml:space="preserve">Name: Michael Meier</tspan>
+            <tspan font-family="Noto Sans Display" font-size="11" font-weight="400" fill="white" x="0" y="27" xml:space="preserve">Email:  m.meier@dhbw.de</tspan>
+          </text>
+        </g>
+      </g>
+      <g id="Line_394">
+        <path d="M 348.7017 51.405906 C 372.29367 52.07834 400.25245 52.098566 429.2737 50.436325 C 468.22164 48.20552 499.84094 43.473803 521.6098 39.33337" marker-end="url(#FilledArrow_Marker_3)" stroke="#ff6100" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+      </g>
+      <g id="Line_389">
+        <line x1="508.7618" y1="73.29996" x2="530.2751" y2="53.918856" marker-end="url(#SharpArrow_Marker)" stroke="#003776" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+      <g id="Graphic_385">
+        <text transform="translate(363.2876 -14.563675)" fill="black">
+          <tspan font-family="Noto Sans Display" font-size="11" font-weight="400" fill="black" x="0" y="12" xml:space="preserve">{</tspan>
+          <tspan font-family="Noto Sans Display" font-size="11" font-weight="400" fill="black" x="0" y="27" xml:space="preserve">  “name” : “Michael Meier”,</tspan>
+          <tspan font-family="Noto Sans Display" font-size="11" font-weight="400" fill="black" x="0" y="42" xml:space="preserve">  “email” :  “m.meier@dhbw.de”</tspan>
+          <tspan font-family="Noto Sans Display" font-size="11" font-weight="400" fill="black" x="0" y="57" xml:space="preserve">}</tspan>
+        </text>
+      </g>
+      <g id="Graphic_416">
+        <rect x="217.15403" y="32.37817" width="130.54766" height="30" fill="#bdd0d7"/>
+        <rect x="217.15403" y="32.37817" width="130.54766" height="30" stroke="white" stroke-opacity=".48790474" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+      <g id="Graphic_417">
+        <text transform="translate(329.52923 73.29996)" fill="black">
+          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="0" y="15" xml:space="preserve">prüfe</tspan>
+          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="0" y="34" xml:space="preserve">Formdaten</tspan>
+        </text>
+      </g>
+      <g id="Line_418">
+        <line x1="329.52923" y1="73.36015" x2="319.57666" y2="67.87013" marker-end="url(#SharpArrow_Marker)" stroke="#003776" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+      <g id="Line_419">
+        <path d="M 282.03073 7.94731 C 282.08693 10.37943 282.14225 12.915398 282.1936 15.483571" marker-end="url(#FilledArrow_Marker_4)" stroke="#b1001c" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+      </g>
+      <g id="Line_443">
+        <line x1="164.5" y1="-59.8595" x2="713.5" y2="-59.8595" stroke="#929292" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="8.0,8.0" stroke-width="2"/>
+      </g>
+    </g>
+  </g>
+</svg>

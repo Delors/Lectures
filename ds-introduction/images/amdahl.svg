@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!-- Generator: DataGraph - https://www.visualdatatools.com/DataGraph/index.html  --><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="600" height="340" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 10 600 340">
+  <style>
+    @import url('/LectureDoc2/ext/fonts/ld-fonts.css'); 
+  </style>
+<g>
+  <!-- Commands -->
+  <g id="Commands">
+    <!-- Legend -->
+    <g id="Legend">
+      <defs>
+        <clipPath id="clipPath">
+          <rect x="191.8" y="20.5" width="380" height="54.6"/>
+        </clipPath>
+      </defs>
+      <g clip-path="url(#clipPath)">
+        <rect x="191.8" y="20.5" width="380" height="54.6" fill="white" stroke="none"/>
+      </g>
+      <rect x="191.8" y="20.5" width="380" height="54.6" stroke="black" fill="none" stroke-width="0.5"/>
+      <defs>
+        <clipPath id="clipPath2">
+          <rect x="191.8" y="20.5" width="380" height="54.6"/>
+        </clipPath>
+      </defs>
+      <g clip-path="url(#clipPath2)">
+        <defs>
+          <clipPath id="clipPath3">
+            <rect x="197.8" y="23.86" width="17" height="14.28"/>
+          </clipPath>
+        </defs>
+        <g clip-path="url(#clipPath3)">
+          <path d="M 197.8 30.5 L 214.8 30.5 "
+            stroke="black" fill="none" stroke-width="2"/>
+        </g>
+        <g font-family="NotoSansDisplay-Regular" font-size="14" fill="black">
+          <text x="220.8" y="36.021">
+            1/((1-0.5)+(0.5/x)) (50% können parallelisiert werden)
+          </text>
+        </g>
+        <defs>
+          <clipPath id="clipPath4">
+            <rect x="197.8" y="40.66" width="17" height="14.28"/>
+          </clipPath>
+        </defs>
+        <g clip-path="url(#clipPath4)">
+          <path d="M 197.8 47.5 L 214.8 47.5 "
+            stroke="rgb(228,28,28)" stroke-dasharray="0.02,4" stroke-dashoffset="3.57" stroke-linecap="round" fill="none" stroke-width="2"/>
+        </g>
+        <g font-family="NotoSansDisplay-Regular" font-size="14" fill="black">
+          <text x="220.8" y="52.821">
+            1/((1-0.99)+(0.99/x)) (99% können parallelisiert werden)
+          </text>
+        </g>
+        <defs>
+          <clipPath id="clipPath5">
+            <rect x="197.8" y="57.46" width="17" height="14.28"/>
+          </clipPath>
+        </defs>
+        <g clip-path="url(#clipPath5)">
+          <path d="M 197.8 64.5 L 214.8 64.5 "
+            stroke="rgb(55,126,184)" stroke-dasharray="0.02,3" stroke-dashoffset="0.57" stroke-linecap="round" fill="none" stroke-width="2"/>
+        </g>
+        <g font-family="NotoSansDisplay-Regular" font-size="14" fill="black">
+          <text x="220.8" y="69.621">
+            1/((1-0.90)+(0.90/x)) (90% können parallelisiert werden)
+          </text>
+        </g>
+      </g>
+    </g>
+    <!-- x=1;y=1 -->
+    <g id="x_1_y_1">
+      <g font-family="NotoSansDisplay-Regular" font-size="14" fill="black">
+        <text x="336.707" y="215.625">x=1;y=1</text>
+      </g>
+      <g>
+        <path d="M 332.507, 210.604 C 305.84, 210.604, 319.173, 191.604, 292.507, 191.604 
+        "
+          stroke="rgb(152,169,234)" fill="none" stroke-width="2"/>
+        <path d="M 288.507, 191.604 L 298.907, 197.604 
+        L 294.507, 191.604 L 298.907, 185.604 z "
+          fill="rgb(152,169,234)" stroke="none"/>
+      </g>
+    </g>
+    <!-- 1/((1-0.5)+(0.5/x)) (50% können parallelisiert werden) -->
+    <g id="1_1_0_5_0_5_x_50_k_nnen_parallelisiert_werden">
+      <path d="M 57.5 304.5 L 58.1537 300.155 L 59.0499 295.556 L 59.9533 292.005 L 60.9546 288.93 L 62.0437 286.301 
+               L 63.2218 284.044 L 64.5121 282.071 L 65.9135 280.35 L 67.3092 278.954 L 68.9092 277.642 
+               L 70.6441 276.478 L 72.653 275.377 L 74.9551 274.355 L 77.651 273.393 L 80.7099 272.523 
+               L 84.3926 271.696 L 88.797 270.925 L 93.9919 270.225 L 100.541 269.557 L 108.667 268.943 
+               L 118.901 268.384 L 132.113 267.874 L 149.643 267.41 L 173.226 266.999 L 206.444 266.633 
+               L 254.895 266.314 L 329.404 266.042 L 451.5 265.815 L 581.8 265.688 "
+        stroke="black" fill="none" stroke-width="2"/>
+    </g>
+    <!-- 1/((1-0.99)+(0.99/x)) (99% können parallelisiert werden) -->
+    <g id="1_1_0_99_0_99_x_99_k_nnen_parallelisiert_werden">
+      <path d="M 57.5 304.5 L 64.7858 277.369 L 72.3052 250.145 L 79.9254 223.327 L 87.4171 197.687 L 95.091 172.139 
+               L 102.799 147.176 L 110.512 122.874 L 118.283 99.0382 L 126.193 75.4254 L 134.065 52.548 
+               L 141.901 30.3686 L 149.109 10.5 "
+        stroke="rgb(228,28,28)" stroke-dasharray="0.02,4" stroke-linecap="round" fill="none" stroke-width="2"/>
+    </g>
+    <!-- 1/((1-0.90)+(0.90/x)) (90% können parallelisiert werden) -->
+    <g id="1_1_0_90_0_90_x_90_k_nnen_parallelisiert_werden">
+      <path d="M 57.5 304.5 L 59.7346 295.638 L 62.0437 287.285 L 64.5121 279.142 L 66.9274 271.862 L 69.3388 265.188 
+               L 71.975 258.489 L 74.664 252.222 L 77.4105 246.339 L 80.2834 240.679 L 83.1397 235.495 
+               L 86.1817 230.403 L 89.2636 225.645 L 92.4236 221.136 L 95.6422 216.888 L 99.1013 212.665 
+               L 102.642 208.671 L 106.298 204.855 L 109.937 201.335 L 113.933 197.755 L 117.93 194.44 
+               L 122.146 191.2 L 126.601 188.032 L 131.252 184.974 L 136.024 182.071 L 141.194 179.165 
+               L 146.475 176.424 L 152.081 173.738 L 158.038 171.107 L 164.292 168.564 L 170.934 166.081 
+               L 178.012 163.65 L 185.467 161.303 L 193.466 158.997 L 201.945 156.763 L 210.943 154.598 
+               L 220.617 152.478 L 231.041 150.401 L 242.323 148.363 L 254.34 146.4 L 267.333 144.484 
+               L 281.282 142.632 L 296.437 140.824 L 312.898 139.065 L 330.751 137.363 L 350.107 135.718 
+               L 371.445 134.11 L 394.72 132.56 L 420.446 131.05 L 448.623 129.601 L 479.839 128.198 
+               L 514.616 126.839 L 553.345 125.532 L 581.8 124.683 "
+        stroke="rgb(55,126,184)" stroke-dasharray="0.02,3" stroke-linecap="round" fill="none" stroke-width="2"/>
+    </g>
+  </g>
+  <!-- Foreground -->
+  <g id="Foreground">
+    <!-- Y Axis -->
+    <g id="Y_Axis">
+      <g transform="translate(16.2719,157.5) rotate(-90) translate(-16.2719,-157.5)" font-family="NotoSansDisplay-Regular" font-size="14" fill="black">
+        <text x="-11.7555" y="157.5">Speedup</text>
+      </g>
+      <!-- Y Labels -->
+      <g id="Y_Labels">
+        <g font-family="NotoSansDisplay-Regular" font-size="14" fill="black">
+          <text x="38.9139" y="309.521">0</text>
+        </g>
+        <g font-family="NotoSansDisplay-Regular" font-size="14" fill="black">
+          <text x="38.9139" y="270.321">2</text>
+        </g>
+        <g font-family="NotoSansDisplay-Regular" font-size="14" fill="black">
+          <text x="38.9139" y="231.121">4</text>
+        </g>
+        <g font-family="NotoSansDisplay-Regular" font-size="14" fill="black">
+          <text x="38.9139" y="191.921">6</text>
+        </g>
+        <g font-family="NotoSansDisplay-Regular" font-size="14" fill="black">
+          <text x="38.9139" y="152.721">8</text>
+        </g>
+        <g font-family="NotoSansDisplay-Regular" font-size="14" fill="black">
+          <text x="31.1277" y="113.521">10</text>
+        </g>
+        <g font-family="NotoSansDisplay-Regular" font-size="14" fill="black">
+          <text x="31.1277" y="74.321">12</text>
+        </g>
+        <g font-family="NotoSansDisplay-Regular" font-size="14" fill="black">
+          <text x="31.1277" y="35.121">14</text>
+        </g>
+      </g>
+      <path d="M 49.5 304.5 L 57.5 304.5 M 53.5 284.9 L 57.5 284.9 M 49.5 265.3 L 57.5 265.3 M 53.5 245.7 L 57.5 245.7 
+               M 49.5 226.1 L 57.5 226.1 M 53.5 206.5 L 57.5 206.5 M 49.5 186.9 L 57.5 186.9 M 53.5 167.3 L 57.5 167.3 
+               M 49.5 147.7 L 57.5 147.7 M 53.5 128.1 L 57.5 128.1 M 49.5 108.5 L 57.5 108.5 M 53.5 88.9 L 57.5 88.9 
+               M 49.5 69.3 L 57.5 69.3 M 53.5 49.7 L 57.5 49.7 M 49.5 30.1 L 57.5 30.1 M 53.5 10.5 L 57.5 10.5 "
+        stroke="black" fill="none" stroke-width="0.5"/>
+    </g>
+    <!-- X Axis -->
+    <g id="X_Axis">
+      <g font-family="NotoSansDisplay-Regular" font-size="14" fill="black">
+        <text x="268.642" y="342">Anzahl an CPUs</text>
+      </g>
+      <g>
+        <g font-family="NotoSansDisplay-Regular" font-size="14" fill="black">
+          <text x="53.6069" y="325.555">0</text>
+        </g>
+        <g font-family="NotoSansDisplay-Regular" font-size="14" fill="black">
+          <text x="102.144" y="325.555">10</text>
+        </g>
+        <g font-family="NotoSansDisplay-Regular" font-size="14" fill="black">
+          <text x="154.574" y="325.555">20</text>
+        </g>
+        <g font-family="NotoSansDisplay-Regular" font-size="14" fill="black">
+          <text x="207.004" y="325.555">30</text>
+        </g>
+        <g font-family="NotoSansDisplay-Regular" font-size="14" fill="black">
+          <text x="259.434" y="325.555">40</text>
+        </g>
+        <g font-family="NotoSansDisplay-Regular" font-size="14" fill="black">
+          <text x="311.864" y="325.555">50</text>
+        </g>
+        <g font-family="NotoSansDisplay-Regular" font-size="14" fill="black">
+          <text x="364.294" y="325.555">60</text>
+        </g>
+        <g font-family="NotoSansDisplay-Regular" font-size="14" fill="black">
+          <text x="416.724" y="325.555">70</text>
+        </g>
+        <g font-family="NotoSansDisplay-Regular" font-size="14" fill="black">
+          <text x="469.154" y="325.555">80</text>
+        </g>
+        <g font-family="NotoSansDisplay-Regular" font-size="14" fill="black">
+          <text x="521.584" y="325.555">90</text>
+        </g>
+        <g font-family="NotoSansDisplay-Regular" font-size="14" fill="black">
+          <text x="570.121" y="325.555">100</text>
+        </g>
+      </g>
+      <path d="M 57.5 312.5 L 57.5 304.5 M 109.93 312.5 L 109.93 304.5 M 162.36 312.5 L 162.36 304.5 
+               M 214.79 312.5 L 214.79 304.5 M 267.22 312.5 L 267.22 304.5 M 319.65 312.5 L 319.65 304.5 
+               M 372.08 312.5 L 372.08 304.5 M 424.51 312.5 L 424.51 304.5 M 476.94 312.5 L 476.94 304.5 
+               M 529.37 312.5 L 529.37 304.5 M 581.8 312.5 L 581.8 304.5 M 83.715 308.5 L 83.715 304.5 
+               M 136.145 308.5 L 136.145 304.5 M 188.575 308.5 L 188.575 304.5 M 241.005 308.5 L 241.005 304.5 
+               M 293.435 308.5 L 293.435 304.5 M 345.865 308.5 L 345.865 304.5 M 398.295 308.5 L 398.295 304.5 
+               M 450.725 308.5 L 450.725 304.5 M 503.155 308.5 L 503.155 304.5 M 555.585 308.5 L 555.585 304.5 "
+        stroke="black" fill="none" stroke-width="0.5"/>
+    </g>
+    <path d="M 581.8 304.5 L 581.8 10.5 L 57.5 10.5 L 57.5 304.5 L 581.8 304.5 z "
+      stroke="black" stroke-linecap="square" fill="none" stroke-width="0.5"/>
+  </g>
+  <!-- Zoom -->
+  <g id="Zoom">
+    <!-- Connection -->
+    <g id="Connection">
+      <path d="M 108.514 304.735 L 569.5 233.5 "
+        stroke="black" fill="none" stroke-width="0.5"/>
+      <path d="M 57.5524 246.131 L 258.5 114.5 "
+        stroke="black" fill="none" stroke-width="0.5"/>
+    </g>
+    <!-- Source -->
+    <g id="Source">
+      <defs>
+        <clipPath id="clipPath6">
+          <rect x="258.5" y="114.5" width="311" height="119"/>
+        </clipPath>
+      </defs>
+      <g clip-path="url(#clipPath6)">
+        <rect x="258.5" y="114.5" width="311" height="119" fill="white" opacity="0.802695" stroke="none"/>
+      </g>
+      <rect x="57.5524" y="246.131" width="50.962" height="58.604" stroke="black" fill="none" stroke-width="0.5"/>
+    </g>
+    <!-- Destination -->
+    <g id="Destination">
+      <!-- Content -->
+      <g id="Content" transform="translate(258,234)">>
+        <!-- Commands -->
+        <g id="Commands_2">
+          <path d="M 0.5 -1.7657 L 2.40702 -6.1573 L 4.41139 -10.2747 L 6.48151 -14.0748 L 8.65336 -17.6437 
+                   L 10.8996 -20.9531 L 13.2693 -24.087 L 15.7218 -27.0012 L 18.3392 -29.7971 L 21.0919 -32.4391 
+                   L 23.9981 -34.9455 L 27.0514 -37.3123 L 30.2829 -39.5637 L 33.7746 -41.747 L 37.5272 -43.8483 
+                   L 41.4987 -45.8378 L 45.7772 -47.7533 L 50.3767 -49.5901 L 55.3594 -51.3612 L 60.7877 -53.0737 
+                   L 66.6951 -54.723 L 73.1511 -56.3131 L 80.262 -57.8525 L 88.0757 -59.3335 L 96.6877 -60.7571 
+                   L 106.244 -62.129 L 116.903 -63.4511 L 128.761 -64.7158 L 142.091 -65.9314 L 157.093 -67.0945 
+                   L 174.12 -68.2091 L 193.553 -69.2755 L 215.804 -70.291 L 241.516 -71.2585 L 271.36 -72.1757 
+                   L 306.333 -73.0446 L 311.5 -73.1579 "
+            stroke="black" fill="none" stroke-width="2"/>
+          <path d="M 0.5 -1.37956 L 20.7091 -26.6054 L 41.0159 -51.6329 L 61.4664 -76.5195 L 82 -101.192 
+                   L 97.4314 -119.5 "
+            stroke="rgb(228,28,28)" stroke-dasharray="0.02,4" stroke-linecap="round" fill="none" stroke-width="2"/>
+          <path d="M 0.5 -1.41932 L 6.55294 -9.59485 L 12.6724 -17.5254 L 18.9011 -25.2725 L 25.2734 -32.8792 
+                   L 31.781 -40.3342 L 38.3947 -47.6061 L 45.1542 -54.7398 L 52.063 -61.7377 L 59.1157 -68.5939 
+                   L 66.305 -75.3018 L 73.6745 -81.9008 L 81.1109 -88.2925 L 88.7702 -94.6119 L 96.6314 -100.836 
+                   L 104.626 -106.91 L 112.851 -112.906 L 121.233 -118.769 L 122.324 -119.5 "
+            stroke="rgb(55,126,184)" stroke-dasharray="0.02,3" stroke-linecap="round" fill="none" stroke-width="2"/>
+        </g>
+        <g>
+          <!-- Y Labels -->
+          <g id="Y_Labels_2">
+            <g font-family="NotoSansDisplay-Regular" font-size="13" fill="black">
+              <text x="322.1" y="3.68476">0</text>
+            </g>
+            <g font-family="NotoSansDisplay-Regular" font-size="13" fill="black">
+              <text x="322.1" y="-36.1146">1</text>
+            </g>
+            <g font-family="NotoSansDisplay-Regular" font-size="13" fill="black">
+              <text x="322.1" y="-75.9139">2</text>
+            </g>
+          </g>
+          <path d="M 311.5 -0.977592 L 319.5 -0.977592 M 311.5 -20.8773 L 315.5 -20.8773 M 311.5 -40.7769 L 319.5 -40.7769 
+                   M 311.5 -60.6766 L 315.5 -60.6766 M 311.5 -80.5763 L 319.5 -80.5763 M 311.5 -100.476 L 315.5 -100.476 "
+            stroke="black" fill="none" stroke-width="0.5"/>
+          <g>
+            <g font-family="NotoSansDisplay-Regular" font-size="13" fill="black">
+              <text x="0.5" y="-129.365">0</text>
+            </g>
+            <g font-family="NotoSansDisplay-Regular" font-size="13" fill="black">
+              <text x="60.5568" y="-129.365">2</text>
+            </g>
+            <g font-family="NotoSansDisplay-Regular" font-size="13" fill="black">
+              <text x="124.549" y="-129.365">4</text>
+            </g>
+            <g font-family="NotoSansDisplay-Regular" font-size="13" fill="black">
+              <text x="188.54" y="-129.365">6</text>
+            </g>
+            <g font-family="NotoSansDisplay-Regular" font-size="13" fill="black">
+              <text x="252.532" y="-129.365">8</text>
+            </g>
+          </g>
+          <path d="M 0.180041 -119.5 L 0.180041 -127.5 M 32.1759 -119.5 L 32.1759 -123.5 M 64.1718 -119.5 L 64.1718 -127.5 
+                   M 96.1677 -119.5 L 96.1677 -123.5 M 128.164 -119.5 L 128.164 -127.5 M 160.159 -119.5 L 160.159 -123.5 
+                   M 192.155 -119.5 L 192.155 -127.5 M 224.151 -119.5 L 224.151 -123.5 M 256.147 -119.5 L 256.147 -127.5 
+                   M 288.143 -119.5 L 288.143 -123.5 "
+            stroke="black" fill="none" stroke-width="0.5"/>
+        </g>
+      </g>
+      <rect x="258.5" y="114.5" width="311" height="119" stroke="black" fill="none" stroke-width="0.5"/>
+    </g>
+  </g>
+</g>
+</svg>
