@@ -1,5 +1,5 @@
 .. meta::
-    :version: genesis
+    :version: renaissance
     :author: Michael Eichberg
     :keywords: "Verteilte Systeme"
     :description lang=de: Verteilte Systeme
@@ -22,17 +22,13 @@
 .. role:: red
 .. role:: green
 .. role:: the-blue
-.. role:: minor
+.. role:: peripheral
 .. role:: obsolete
-.. role:: line-above
-.. role:: huge
-.. role:: xxl
 
 .. role:: raw-html(raw)
    :format: html
 
 
-.. class:: animated-symbol
 
 Einführung in verteilte Systeme
 ================================================
@@ -58,7 +54,9 @@ Ein weitgefasster Überblick über verteilte Systeme.
 
       https://github.com/Delors/delors.github.io/issues
 
-.. container:: footer-left tiny incremental minor
+
+
+.. container:: footer-left incremental peripheral
 
     Dieser Foliensatz basiert in Teilen auf Folien von:
     
@@ -80,13 +78,12 @@ Terminologie verteilter Systeme
     :align: center
 
 
-.. class:: smaller-slide-title
 
 Empfohlene Literatur
 ---------------------
 
 .. image:: screenshots/distributed-systems.net.png
-    :height: 1000px
+    :width: 75%
     :align: center
 
 .. supplemental::
@@ -94,31 +91,29 @@ Empfohlene Literatur
     Ergänzend bzw. für interessierte Studierende:
 
     .. image:: screenshots/microservices.jpg
-        :height: 1000px
+        :width: 70%
         :align: center
-        :class: box-shadow 
+        :class: trbl-shadow 
 
 
-.. class:: smaller-slide-title
+
 
 Empfohlener Podcast: `SE-Radio <https://se-radio.net>`__
 -----------------------------------------------------------
 
 .. image:: screenshots/se-radio.net.png
-    :height: 1000px
+    :width: 75%
     :align: center
 
 
-
-.. class:: smaller-slide-title
 
 Empfohlener Podcast: `Thoughtworks Technology Podcast <https://www.thoughtworks.com/en-de/insights/podcasts/technology-podcasts>`__
 -------------------------------------------------------------------------------------------------------------------------------------
 
 .. image:: screenshots/thoughtworks-technology-podcast.png  
-    :height: 1000px
+    :width: 70%
     :align: center
-    :class: picture
+    :class: trbl-shadow
     
 
 
@@ -132,13 +127,13 @@ Verteilt vs. Dezentralisiert
 -------------------------------------------------------------------
 
 .. image:: images/distributed-vs-decentralized.svg
-    :width: 100%
     :align: center
-    :class: margin-bottom-1em
+    :width: 100%
+    :class: icon
 
 .. supplemental:: 
 
-    :eng:`Distributed vs Decentralized`
+    :ger:`Verteilt vs. Dezentralisiert` ≘ :eng:`Distributed vs. Decentralized`
 
 
     .. admonition:: Zwei Ansichten zur Realisierung verteilter Systeme
@@ -156,35 +151,28 @@ Verteilt vs. Dezentralisiert
 Häufige Missverständnisse bzgl. zentralisierter Systeme
 --------------------------------------------------------
 
-.. class:: incremental 
+.. class:: incremental-list 
 
 1. **Zentralisierte Lösungen lassen sich nicht skalieren**
- 
-    .. container:: scriptsize
-   
-      
-        Es gilt zwischen logischer und physischer Zentralisierung zu unterscheiden. Zum Beispiel ist das *Domain Name System*:
+         
+   Es gilt zwischen logischer und physischer Zentralisierung zu unterscheiden. Zum Beispiel ist das *Domain Name System*:
 
-        - logisch zentralisiert
-        - physisch (massiv) verteilt
-        - dezentralisiert über mehrere Organisationen
+   - logisch zentralisiert
+   - physisch (massiv) verteilt
+   - dezentralisiert über mehrere Organisationen
   
 2. **Zentralisierte Lösungen haben einen Single Point of Failure**
-
-    .. container:: scriptsize
-   
       
-        Im Allgemeinen nicht zutreffend (z. B. DNS). 
-        
-        Ein einzelne mögliche Fehlerquelle ist weiterhin oft:
+   Im Allgemeinen nicht zutreffend (z. B. DNS). 
+    
+   Ein einzelne mögliche Fehlerquelle ist weiterhin oft:
 
-        - leichter zu verwalten
-        - einfacher robuster zu machen
+   - leichter zu verwalten
+   - einfacher robuster zu machen
 
 .. supplemental:: 
     
-    .. admonition:: Warnung 
-        :class: warning
+    .. warning:: 
 
         Es gibt viele, schlecht begründete Missverständnisse in Bezug auf, z. B. Skalierbarkeit, Fehlertoleranz oder Sicherheit. Wir müssen Fähigkeiten entwickeln, mit denen verteilte Systeme leicht verstanden werden können, um solche Missverständnisse zu vermeiden.
 
@@ -195,7 +183,7 @@ Sichtweisen auf verteilte Systeme
 
 **Verteilte Systeme sind komplex.**
 
-.. class:: incremental
+.. class:: incremental-list
 
 - Welche Architekturen und „Architekturellen Stile“ (:eng:`architectural styles`) gibt es?
 - Prozesse: Welche Art von Prozessen gibt es und wie sind deren Beziehungen?
@@ -211,9 +199,9 @@ Sichtweisen auf verteilte Systeme
 Entwurfsziele verteilter Systeme
 ----------------------------------
 
-.. class:: incremental
+.. class:: incremental-list dhbw-list
 
-- Unterstützung der `gemeinsamen Nutzung von Ressourcen`_ 
+- `gemeinsame Nutzung von Ressourcen`_ 
 - `Verteilungstransparenz`_ (:eng:`Distribution Transparency`)
 - `Offenheit`_
 - `Skalierbarkeit`_
@@ -225,15 +213,12 @@ Entwurfsziele verteilter Systeme
 Gemeinsame Nutzung von Ressourcen
 ------------------------------------
 
-.. _gemeinsamen Nutzung von Ressourcen:
-
-\ 
 
 
-Gemeinsame Nutzung von Ressourcen
-----------------------------------
+Gemeinsame Nutzung von Ressourcen - Examples
+---------------------------------------------
 
-Kanonische Beispiele:
+.. class:: incremental-list
 
 - Cloud-basierter gemeinsamer Speicher und Dateien
 - Peer-to-Peer-unterstütztes Multimedia-Streaming
@@ -250,10 +235,12 @@ Verteilungstransparenz
 (:eng:`Distribution Transparency`)
 
 
-Definition von Verteilungstransparenz 
+Definition 
 ----------------------------------------------------------
 
-.. admonition:: Definition 
+.. definition::
+
+    .. rubric:: Verteilungstransparenz
     
     Transparenz beschreibt die Eigenschaft, dass ein verteiltes System versucht, die Tatsache zu verbergen, dass seine Prozesse und Ressourcen physisch auf mehrere Computer verteilt sind, die möglicherweise durch große Entfernungen voneinander getrennt sind.
 
@@ -266,8 +253,9 @@ Definition von Verteilungstransparenz
 Aspekte der Verteilungstransparenz 
 ----------------------------------------------------------------------------
 
-.. csv-table::
-    :class: highlight-line-on-hover smaller no-inner-borders
+.. csv-table:: 
+    :class: incremental-table-rows booktabs
+    :stub-columns: 1
 
     Datenzugriff, Verbergen von Unterschieden in der Datendarstellung und der Art des Zugriffs auf ein lokales bzw. entferntes Objekt
     Ort der Datenhaltung, "Verbergen, wo sich ein Objekt befindet"
@@ -286,13 +274,15 @@ Aspekte der Verteilungstransparenz
 Grad der erreichbaren Verteilungstransparenz
 --------------------------------------------
 
-.. container:: assessment
+.. observation::
 
     Eine vollständige Verteilungstransparenz ist nicht erreichbar. 
 
-Jedoch kann auch eine sehr hohe Verteilungstransparenz bereits hohe Kosten nach sich ziehen.
+.. container:: incremental
 
-.. class:: incremental smaller
+    Jedoch kann auch eine sehr hohe Verteilungstransparenz bereits hohe Kosten nach sich ziehen.
+
+.. class:: incremental-list
 
 - Es gibt Kommunikationslatenzen, die nicht verborgen werden können.
 - Es ist (theoretisch und praktisch) unmöglich, Ausfälle von Netzen und Knoten vollständig zu verbergen.
@@ -308,11 +298,13 @@ Jedoch kann auch eine sehr hohe Verteilungstransparenz bereits hohe Kosten nach 
 Die Verteilung offen zu legen, kann Vorteile bringen
 -----------------------------------------------------
 
+.. class:: incremental-list
+
 - Nutzung von standortbezogenen Diensten (Auffinden von Freunden in der Nähe)
 - Beim Umgang mit Benutzern in verschiedenen Zeitzonen
 - Wenn es für einen Benutzer einfacher ist, zu verstehen, was vor sich geht (wenn z. B. ein Server lange Zeit nicht antwortet, kann er als ausgefallen gemeldet werden).
 
-.. container:: assessment margin-top-2em
+.. observation::
 
     Verteilungstransparenz ist ein hehres Ziel, aber oft schwer zu erreichen, und häufig auch nicht erstrebenswert. 
 
@@ -331,17 +323,17 @@ Offene verteilte Systeme
 Offene verteilte Systeme
 ----------------------------------
 
-.. admonition:: Definition
+.. definition:: 
 
     Ein offenes verteiltes System bietet Komponenten an, die leicht von anderen Systemen verwendet oder in andere Systeme integriert werden können. 
     
     Ein offenes verteiltes System besteht selbst oft aus Komponenten, die von woanders stammen.
 
-.. container:: incremental smaller margin-top-2em
+.. container:: incremental 
 
     Offene verteilte Systeme müssen in der Lage sein, mit Diensten anderer (offener) Systeme zu interagieren, unabhängig von der zugrunde liegenden Umgebung:
 
-    .. class:: incremental
+    .. class:: incremental-list
 
     - Sie sollten wohl-definierte Schnittstellen korrekt realisieren
     - Sie sollten leicht mit anderen Systemen interagieren können
@@ -354,16 +346,15 @@ Offene verteilte Systeme
 
 
 Vorgaben/Richtlinien vs. Umsetzungen 
-------------------------------------------------------------------------------
+--------------------------------------------------
 
-.. container:: minor
+.. supplemental:: 
 
-    (:eng:`Policies vs. Mechanisms`)
-
-
+    :eng:`Policies vs. Mechanisms` ≘ :ger:`Vorgaben/Richtlinien vs. Umsetzungen`
+    
 .. rubric:: Richtlinien für die Umsetzung von Offenheit
 
-.. class:: incremental
+.. class:: incremental-list
 
 - Welchen Grad an Konsistenz benötigen wir für Daten im Client-Cache?
 - Welche Operationen erlauben wir heruntergeladenem Code?
@@ -374,35 +365,37 @@ Vorgaben/Richtlinien vs. Umsetzungen
 
 .. rubric:: Mechanismen bzgl. der Umsetzung von Offenheit
 
-.. class:: incremental
+.. class:: incremental-list
 
 - Ermöglichung der (dynamischen) Einstellung von Caching-Richtlinien
 - Unterstützung verschiedener Vertrauensstufen für mobilen Code
 - Bereitstellung einstellbarer QoS-Parameter pro Datenstrom 
 - Angebot verschiedener Verschlüsselungsalgorithmen
 
-
 .. supplemental::
 
     Die harte Kodierung von Richtlinien vereinfacht oft die Verwaltung und reduziert die Komplexität des Systems. Hat jedoch den Preis geringerer Flexibilität.
 
 
+
 Sicherheit in verteilten Systemen - Schutzziele
 -------------------------------------------------
 
-.. container:: assessment
+.. observation::
 
     Ein verteiltes System, das nicht sicher ist, ist nicht verlässlich.
 
-Grundlegende Schutzziele:
+.. container:: incremental
 
-:Vertraulichkeit: Informationen werden nur an autorisierte Parteien weitergegeben.
-:Integrität: Änderungen an den Werten eines Systems dürfen nur auf autorisierte Weise vorgenommen werden können.
+    .. rubric:: Grundlegende Schutzziele
 
+    :Vertraulichkeit: Informationen werden nur an autorisierte Parteien weitergegeben.
+    :Integrität: Änderungen an den Werten eines Systems dürfen nur auf autorisierte Weise vorgenommen werden können.
 
 .. supplemental::
 
     Zusammen mit dem dritten Schutzziel: Verfügbarkeit, bilden diese drei Schutzziele die CIA-Triade der Informationssicherheit (:eng:`Confidentiality, Integrity, and Availability`).
+
 
 
 Sicherheit in verteilten Systemen - Autorisierung, Authentifizierung, Vertrauen
@@ -427,16 +420,15 @@ Sicherheit - Verschlüsselung und Signaturen
 
 Es geht im Wesentlichen um das Ver- und Entschlüsseln von Daten (:math:`X`) mit Hilfe von Schlüsseln.
 
-.. stack::
+.. deck::
 
-    .. layer::
+    .. card:: trbl-shadow padding-1em
 
         :math:`E(K,X)` bedeutet, dass wir die Nachricht X mit dem Schlüssel :math:`K`  verschlüsseln (:eng:`encryption`). 
         
         :math:`D(K,X)` bezeichnet die Umkehrfunktion, die die Daten wieder entschlüsselt (:eng:`decryption`).
 
-
-    .. layer:: incremental
+    .. card:: trbl-shadow padding-1em
 
         .. rubric:: Symmetrische Verschlüsselung
 
@@ -445,15 +437,15 @@ Es geht im Wesentlichen um das Ver- und Entschlüsseln von Daten (:math:`X`) mit
         .. math::
             X = D(K,E(K,X)) 
     
-    .. layer:: incremental
+    .. card:: trbl-shadow padding-1em
 
         .. rubric:: Asymmetrische Verschlüsselung
 
         Wir unterscheiden zwischen privaten (:math:`PR`) und öffentlichen Schlüsseln (:math:`PU`) (:math:`PU` :math:`\neq` :math:`PR`). Ein privater und ein öffentlicher Schlüssel bilden immer ein Paar. Der private Schlüssel ist immer geheim zu halten.
         
-        .. stack:: incremental
+        .. deck:: incremental
 
-            .. layer::
+            .. card::
 
                 **Verschlüsselung von Nachrichten**
                 
@@ -463,7 +455,7 @@ Es geht im Wesentlichen um das Ver- und Entschlüsseln von Daten (:math:`X`) mit
                     Y = E(PU_{Bob},X) \\
                     X = D(PR_{Bob},Y) 
 
-            .. layer:: incremental
+            .. card:: 
 
                 **Signierung von Nachrichten**
 
@@ -483,7 +475,7 @@ Eine sichere Hash-Funktion :math:`Digest(X)` gibt eine Zeichenkette fester Läng
 - Jede Änderung - noch so klein - der Eingabedaten führt zu einer völlig anderen Zeichenkette.
 - Bei einem Hash-Wert ist es rechnerisch unmöglich die ursprüngliche Nachricht X basierend auf :math:`Digest(X)` zu finden.
 
-.. container:: incremental smaller
+.. container:: incremental
 
     .. rubric:: Signieren von Nachrichten
 
@@ -500,10 +492,11 @@ Eine sichere Hash-Funktion :math:`Digest(X)` gibt eine Zeichenkette fester Läng
 
 .. supplemental::
 
-    Sicheres Hashing ≘ :eng:`Secure Hashing`
+    :ger:`Sicheres Hashing` ≘ :eng:`Secure Hashing`
 
 
-.. class:: integrated-exercise
+
+.. class:: exercises
 
 Zwischenfrage
 ----------------
@@ -520,6 +513,7 @@ Zwischenfrage
         Bob kann also nicht sicher sein, dass die Nachricht von Alice stammt. 
 
 
+
 .. class:: new-subsection transition-fade
 
 Skalierbarkeit
@@ -530,6 +524,8 @@ Skalierbarkeit in verteilten Systemen
 -----------------------------------------
 
 Wir können mind. drei Arten von Skalierbarkeit unterscheiden:
+
+.. class:: incremental-list
 
 - Anzahl der Benutzer oder Prozesse (Skalierbarkeit der Größe)
 - Maximale Entfernung zwischen den Knoten (geografische Skalierbarkeit) 
@@ -550,58 +546,57 @@ Ursachen für Skalierbarkeitsprobleme bei zentralisierten Lösungen:
     Die geografische und administrative Skalierbarkeit ist häufig eine größere Herausforderung.
 
 
-.. class:: smaller
-
 Formale Analyse der Skalierbarkeit zentralisierter Systeme
 ------------------------------------------------------------
 
 Ein zentralisierter Dienst kann als einfaches Warteschlangensystem modelliert werden:
 
 .. image:: images/queuing-system.svg
-    :width: 75%
     :align: center
 
-Annahmen:
+.. rubric:: Annahmen
 
 Die Warteschlange hat eine unendliche Kapazität; d. h.die Ankunftsrate der Anfragen wird nicht durch die aktuelle Länge der Warteschlange oder durch das, was gerade bearbeitet wird, beeinflusst.
 
 
 
-.. class:: smaller
-
 Formale Analyse der Skalierbarkeit zentralisierter Systeme
 ------------------------------------------------------------
 
-.. container:: two-columns no-default-width
+.. grid::
 
-    .. container:: column no-separator
+    .. cell::
 
         - Ankunftsrate der Anfragen: 
-       
-          :math:`\lambda` *(Anfragen pro Sekunde)*
+            
+            :math:`\lambda` *(Anfragen pro Sekunde)*
+
         - Verarbeitungskapazität des Services: 
-         
-          :math:`\mu` *(Anfragen pro Sekunde)*
+                
+            :math:`\mu` *(Anfragen pro Sekunde)*
 
-        Anteil der Zeit mit :math:`x` Anfragen im System:
+            Anteil der Zeit mit :math:`x` Anfragen im System:
 
-        .. math::
+            .. math::
 
-            p_x  = \bigl(1 - \frac{\lambda}{\mu}\bigr)\bigl(\frac{\lambda}{\mu}\bigr)^x
+                p_x  = \bigl(1 - \frac{\lambda}{\mu}\bigr)\bigl(\frac{\lambda}{\mu}\bigr)^x
 
-    .. container:: column
+.. grid::
 
-        .. image:: images/number_of_requests_in_system.svg
-            :width: 1200px
+    .. cell::
 
-        .. container:: text-align-center tiny
+        .. figure:: images/number_of_requests_in_system.svg
+            :align: center
 
-            # Anfragen in Bearbeitung und Warteschlange
+            # Anfragen in Bearbeitung und in Warteschlange 
+            
+            Z. B. ist der Anteil der Zeit, in der der Rechner *idle* ist (d. h. :math:`p_0`) : 90 %, 60 % und 30 %.
 
-            Z. B. ist der Anteil der Zeit in der der Rechner *idle* ist (:math:`p_0`; d. h.es gibt keine bzw. 0 Anfragen): 90 %, 60 % und 30 %.
+            .. presenter-note::
+            
+                :math:`p_0`; d. h.es gibt keine bzw. 0 Anfragen.
 
-
-.. container:: presenter-notes
+.. presenter-note::
 
     Anschaulich kann man die Formel:
     :math:`p_x  = \bigl(1 - \frac{\lambda}{\mu}\bigr)\bigl(\frac{\lambda}{\mu}\bigr)^x` so verstehen, dass die Wahrscheinlichkeit, dass sich :math:`x` Anfragen im System befinden, mit der Anzahl der Anfragen im System abnimmt. Deswegen gilt :math:`\bigl(\frac{\lambda}{\mu}\bigr)^x` weiterhin müssen wir modellieren, dass es „nur“ zwei Anfragen gibt (d. h. das System ist sonst `idle`). Deswegen müssen wir noch mit :math:`p_0 = 1 - \frac{\lambda}{\mu}` multiplizieren.
@@ -613,9 +608,7 @@ Formale Analyse der Skalierbarkeit zentralisierter Systeme
 Formale Analyse der Skalierbarkeit zentralisierter Systeme
 ------------------------------------------------------------
 
-.. container:: note width-30
-
-    **Hinweis**
+.. note::
     
     :math:`x` = # Anfragen im Sys.
 
@@ -660,30 +653,29 @@ Formale Analyse der Skalierbarkeit zentralisierter Systeme
     Darstellung der durchschnittlichen Anzahl an Anfragen im System in Abhängigkeit von der Auslastung :math:`U`:
 
     .. image:: images/average_number_of_requests_in_system.svg
-        :width: 1100px
         :align: center
 
 
 
-.. class:: smaller
-
 Formale Analyse der Skalierbarkeit zentralisierter Systeme
 ------------------------------------------------------------
 
-.. container:: two-columns 
+.. class:: column-list
 
-    .. container:: 
+- Die Antwortszeit (:eng:`response time`) ist die Gesamtzeit für die Bearbeitung einer Anfrage
 
-        Die Antwortszeit (:eng:`response time`) ist die Gesamtzeit für die Bearbeitung einer Anfrage
-
-
-        .. math::
-            R = \frac{\bar{N}}{X} = \frac{S}{1-U} \Rightarrow \frac{R}{S} = \frac{1}{1-U} 
-
-        mit :math:`S = \frac{1}{\mu}` für die durchschnittliche Servicezeit. 
+  .. math::
     
-    .. image:: images/response_time.svg
-        :width: 100%
+    R = \frac{\bar{N}}{X} = \frac{S}{1-U} \Rightarrow \frac{R}{S} = \frac{1}{1-U} 
+
+  mit :math:`S = \frac{1}{\mu}` für die durchschnittliche Servicezeit. 
+    
+- \ 
+
+  .. image:: images/response_time.svg
+        :alt: Antwortszeit in Abhängigkeit der Auslastung
+        
+.. class:: incremental-list
 
 - Wenn :math:`U` klein ist, liegt die Antwortzeit nahe bei 1; d. h.eine Anfrage wird sofort bearbeitet.
 - Wenn :math:`U` auf 1 ansteigt, kommt das System zum Stillstand. 
@@ -705,49 +697,55 @@ Probleme der geografischen Skalierbarkeit
 Probleme der administrativen Skalierbarkeit
 --------------------------------------------
 
-.. container:: assessment
+.. observation::
 
     Widersprüchliche Richtlinien in Bezug auf Nutzung (und damit Bezahlung), Verwaltung und Sicherheit
 
-.. container:: footnotesize incremental
+.. deck:: incremental
 
-    .. rubric:: Beispiele
+    .. card::
 
-    - Grid Computing: gemeinsame Nutzung teurer Ressourcen über verschiedene Domänen hinweg.
-    - Gemeinsam genutzte Geräte: Wie kontrolliert, verwaltet und nutzt man ein gemeinsam genutztes Radioteleskop, das als groß angelegtes gemeinsames Sensornetz konstruiert wurde?
+        .. rubric:: Beispiele
 
-.. container:: footnotesize incremental
+        - Grid Computing: gemeinsame Nutzung teurer Ressourcen über verschiedene Domänen hinweg.
+        - Gemeinsam genutzte Geräte: Wie kontrolliert, verwaltet und nutzt man ein gemeinsam genutztes Radioteleskop, das als groß angelegtes gemeinsames Sensornetz konstruiert wurde?
 
-    .. rubric:: Ausnahme 
+    .. card::
 
-    Verschiedene Peer-to-Peer-Netze [#]_ bei denen Endnutzer zusammenarbeiten und nicht Verwaltungseinheiten:
+        .. rubric:: Ausnahme 
 
-    - File-Sharing-Systeme (z. B. auf der Grundlage von BitTorrent) 
-    - Peer-to-Peer-Telefonie (frühe Versionen von Skype) 
+        Verschiedene Peer-to-Peer-Netze [#]_ bei denen Endnutzer zusammenarbeiten und nicht Verwaltungseinheiten:
 
-    .. [#] :eng:`Peer` ist im hier im Sinne von „Gleichgestellter“ zu verstehen. D. h. wir haben ein Netz von gleichgestellten Rechnern.
+        - File-Sharing-Systeme (z. B. auf der Grundlage von BitTorrent) 
+        - Peer-to-Peer-Telefonie (frühe Versionen von Skype) 
+
+        .. [#] :eng:`Peer` ist im hier im Sinne von „Gleichgestellter“ zu verstehen. D. h. wir haben ein Netz von gleichgestellten Rechnern.
+
+
 
 Ansätze, um Skalierung zu erreichen
 ------------------------------------
 
-.. container::
+.. deck::
 
-    **Verbergen von Kommunikationslatenzen** durch:
+    .. card::
 
-    - Nutzung asynchroner Kommunikation
-    - Verwendung separater *Handler* für eingehende Antworten 
+        **Verbergen von Kommunikationslatenzen** durch:
 
-    .. container:: assessment incremental
+        - Nutzung asynchroner Kommunikation
+        - Verwendung separater *Handler* für eingehende Antworten 
 
-        Dieses Modell ist jedoch nicht immer anwendbar.
+        .. observation:: incremental
 
-.. container:: line-above margin-top-2em padding-top-1em incremental
+            Dieses Modell ist jedoch nicht immer anwendbar.
 
-    **Partitionierung von Daten und Berechnungen über mehrere Rechner.**
+    .. card::
 
-    - Verlagerung von Berechnungen auf Clients 
-    - Dezentrale Namensgebungsdienste (DNS)
-    - Dezentralisierte Informationssysteme (WWW)
+        **Partitionierung von Daten und Berechnungen über mehrere Rechner.**
+
+        - Verlagerung von Berechnungen auf Clients 
+        - Dezentrale Namensgebungsdienste (DNS)
+        - Dezentralisierte Informationssysteme (WWW)
 
 
 
@@ -755,8 +753,8 @@ Verlagerung von Berechnungen auf Clients
 ------------------------------------------
 
 .. image:: images/moving-computations.svg
-    :height: 1025px
     :align: center
+
 
 
 Ansätze, um Skalierung zu erreichen
@@ -764,7 +762,7 @@ Ansätze, um Skalierung zu erreichen
 
 **Einsatz von Replikation und Caching, um Kopien von Daten auf verschiedenen Rechnern verfügbar zu machen.**
 
-.. class:: incremental
+.. class:: incremental-list
 
 - replizierte Dateiserver und Datenbanken 
 - gespiegelte Websites
@@ -789,22 +787,16 @@ Herausforderungen bei der Replikation
 Paralleles Rechnen (:eng:`Parallel Computing`)
 ------------------------------------------------
 
-.. container:: two-columns
+.. class:: column-list
+  
+- Multiprozessor
 
-    .. container:: column
-
-        Multiprozessor
-
-        .. image:: images/multiprocessor-vs-multicomputer/multiprocessor.svg
-            :width: 85%
+  .. image:: images/multiprocessor-vs-multicomputer/multiprocessor.svg
             :align: center
 
-    .. container:: column 
+- Multicomputer
 
-        Multicomputer
-
-        .. image:: images/multiprocessor-vs-multicomputer/multicomputer.svg
-            :width: 85%
+  .. image:: images/multiprocessor-vs-multicomputer/multicomputer.svg
             :align: center
 
 
@@ -819,37 +811,36 @@ Paralleles Rechnen (:eng:`Parallel Computing`)
 Amdahls Gesetz - Grenzen der Skalierbarkeit
 -----------------------------------------------------
 
+.. deck::
 
-.. class:: list-with-explanations
+    .. card::
 
-- Lösen von **fixen Problemen** in möglichst kurzer Zeit
+        .. class:: list-with-explanations
 
-    (Beispiel: Hochfahren (:eng:`Booten`) eines Rechners. Inwieweit lässt sich durch mehr CPUs/Kerne die Zeit verkürzen?)
-- Es modelliert die erwartete Beschleunigung (*Speedup*) eines zum Teil parallelisierten/parallelisierbaren Programms relativ zu der nicht-parallelisierten Variante
+        - Lösen von **fixen Problemen** in möglichst kurzer Zeit
 
-.. container:: note width-40 tiny
-
-    **Legende**
-
-    :math:`C` = Anzahl CPUs 
-
-    :math:`P` = Parallelisierungsgrad in Prozent
-    
-    :math:`S` = Speedup 
-
-.. admonition:: Definition 
-    
-    .. class:: huge
-
-        :math:`S(C) = \frac{1}{(1-P) + \frac{P}{C}}`
+            (Beispiel: Hochfahren (:eng:`Booten`) eines Rechners. Inwieweit lässt sich durch mehr CPUs/Kerne die Zeit verkürzen?)
+        - Es modelliert die erwartete Beschleunigung (*Speedup*) eines zum Teil parallelisierten/parallelisierbaren Programms relativ zu der nicht-parallelisierten Variante
 
 
-Amdahls Gesetz visualisiert - Grenzen der Skalierbarkeit
----------------------------------------------------------
+        .. definition:: 
+            :class: encapsulate-floats
 
-.. image:: images/amdahl.svg
-    :height: 900px
-    :align: center
+            .. note::
+
+                :math:`C` = Anzahl CPUs 
+
+                :math:`P` = Parallelisierungsgrad in Prozent
+                
+                :math:`S` = Speedup 
+
+            :math:`S(C) = \frac{1}{(1-P) + \frac{P}{C}}`
+
+    .. card::
+
+        .. image:: images/amdahl.svg
+            :alt: Amdahls Gesetz visualisiert
+            :align: center
 
 
 
@@ -862,28 +853,28 @@ Gustafsons Gesetz - Grenzen der Skalierbarkeit
 
   (Beispiel: Erstelle innerhalb der nächsten 24 Stunden die Wettervorhersage für übermorgen. Inwieweit lässt sich durch mehr CPUs/Rechner die Präzision der Vorhersage verbessern?)
 
-.. container:: note width-50 tiny
+.. container:: encapsulate-floats incremental
 
-    **Legende**
+    .. note:: 
+        :class: width-60 dd-margin-left-2em
 
-    :math:`C` = Anzahl CPUs 
+        :`C`:math::  Anzahl CPUs 
 
-    :math:`P` = Parallelisierungsgrad in Abhängigkeit von der Problemgröße n
-    
-    :math:`S` = Speedup 
+        :`P`:math::  Parallelisierungsgrad in Abhängigkeit von der Problemgröße n
+        
+        :`S`:math::  Speedup 
 
-Beschleunigung (Speedup) eines parallelisierten Programms relativ zu der nicht-parallelisierten Variante: :math:`S(C) = 1 + P(n) \cdot (C-1)`
+    Beschleunigung (Speedup) eines parallelisierten Programms relativ zu der nicht-parallelisierten Variante: :math:`S(C) = 1 + P(n) \cdot (C-1)`
 
 .. container:: incremental
 
-    .. admonition:: Beispiel
-       :class: tiny 
+    .. example::
 
-       Sei der Parallelisierungsgrad ab einer relevanten Problemgröße n 80 %. Dann ergibt sich für 4 CPUs ein Speedup von :math:`(1+0.8*3) = 3.4`, für 8 CPUs ein Speedup von 6.6 und für 16 CPUs ein Speedup von 13.
-
+       Sei der Parallelisierungsgrad ab einer relevanten Problemgröße :math:`n` 80 %. Dann ergibt sich für 4 CPUs ein Speedup von :math:`(1+0.8*3) = 3.4`, für 8 CPUs ein Speedup von 6.6 und für 16 CPUs ein Speedup von 13.
 
 
-.. class:: integrated-exercise
+
+.. class:: exercises
 
 Übung
 ----------------
@@ -922,16 +913,15 @@ Anforderungen an verteilter Systeme
 Verlässlichkeit verteilter Systeme 
 ------------------------------------------------------------
 
-.. container:: minor
+.. container:: peripheral
 
     (:eng:`Dependability`)
 
 .. admonition:: Abhängigkeiten
-    :class: foundations
     
     Eine **Komponente**\ [#]_ stellt ihren **Clients** **Dienste** zur Verfügung. Dafür kann die Komponente jedoch wiederum Dienste von anderen Komponenten benötigen und somit ist eine Komponente  von einer anderen Komponente abhängig (:eng:`depend`).
 
-.. admonition:: Definition
+.. definition::
 
     Eine Komponente :math:`C` hängt von :math:`C^*` ab, wenn die Korrektheit des Verhaltens von :math:`C` von der Korrektheit des Verhaltens von :math:`C^*` abhängt. 
 
@@ -943,7 +933,7 @@ Anforderungen an die Verlässlichkeit verteilter Systeme
 ------------------------------------------------------------
 
 .. csv-table::
-    :class: highlight-line-on-hover incremental
+    :class: incremental-table-rows booktabs
     :header: "Anforderung", "Beschreibung"
 
     "Verfügbarkeit", "Das System ist nutzbar."
@@ -958,7 +948,7 @@ Anforderungen an die Verlässlichkeit verteilter Systeme
 .. class:: smaller-slide-title smaller
 
 Zuverlässigkeit (:eng:`Reliability`) vs. Verfügbarkeit (:eng:`Availability`) in verteilten Systemen
---------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------
 
 .. rubric:: Verlässlichkeit :math:`R(t)` der Komponente :math:`C`
 
@@ -994,26 +984,23 @@ Bedingte Wahrscheinlichkeit, dass :math:`C` während :math:`[0,t)` korrekt funkt
     Wenn die MTTF einer Komponente 100 Stunden beträgt und die MTTR 10 Stunden beträgt, dann ist die MTBF :math:`= MTTF + MTTR = 100 + 10 = 110` Stunden.
 
 
-.. class:: smaller
 
 MapReduce - Programmiermodell und Middleware für paralleles Rechnen
 ---------------------------------------------------------------------
 
-.. class:: incremental 
+.. class:: incremental-list list-with-explanations
 
 - MapReduce ist ein Programmiermodel und eine entsprechende Implementierung (ein Framework ursprünglich entwickelt von Google) zur Verarbeitung sehr großer Datenmengen (ggf. TBytes).
 - Programme, die mit Hilfe von MapReduce implementiert werden, werden automatisch parallelisiert und auf einem großen Cluster von handelsüblichen Rechnern ausgeführt.
 
-  .. container:: smaller dhbw-gray
+  Die Laufzeitumgebung übernimmt:
 
-    Die Laufzeitumgebung übernimmt:
+  - Partitionierung der Eingabedaten und Verteilung selbiger auf die Rechner des Clusters
+  - Einplanung und Ausführung der “Map”- und “Reduce”- Funktionen auf den Rechnern des Clusters
+  - Behandlung von Fehlern und die Kommunikation zwischen den Rechnern
 
-    - Partitionierung der Eingabedaten und Verteilung selbiger auf die Rechner des Clusters
-    - Einplanung und Ausführung der “Map”- und “Reduce”- Funktionen auf den Rechnern des Clusters
-    - Behandlung von Fehlern und die Kommunikation zwischen den Rechnern
-
-.. admonition:: Hinweis
-    :class: warning incremental
+.. hint:: 
+    :class: incremental
 
     Nicht alle Arten von Berechnungen können mit Hilfe von MapReduce durchgeführt werden.
 
@@ -1026,11 +1013,10 @@ MapReduce - Visualisierung und Beispiel
 
 
 .. image:: images/mapreduce.svg
-    :width: 94%
+    :width: 100%
     :align: center
 
 .. supplemental::
-
 
     Hier ist es die Berechnung der Häufigkeit von Wörtern in einem sehr großen Datensatz.
 
@@ -1038,7 +1024,7 @@ MapReduce - Visualisierung und Beispiel
 
 
 
-.. class:: integrated-exercise smaller-slide-title
+.. class:: exercises
 
 Übung: Verfügbarkeit und Ausfallwahrscheinlichkeit
 ------------------------------------------------------
@@ -1075,14 +1061,12 @@ Klassifikation Verteilte Systeme
 
 
 
-
 Cluster Computing
 --------------------
 
 Eine Gruppe von „High-End-Systemen“, die über ein LAN verbunden sind.
 
 .. image:: images/cluster-computing.svg
-    :width: 85%
     :align: center
 
 .. supplemental::
@@ -1113,22 +1097,21 @@ Weiterführung des Cluster Computing.
 Grundlegende Architektur für Grid-Computing
 ---------------------------------------------
 
-.. container:: two-columns no-default-width
+.. class:: column-list dd-margin-left-2em
 
-    .. container:: column center-child-elements no-separator
+- .. image:: images/architecture-for-grid-computing.svg
+        :align: center
 
-        .. image:: images/architecture-for-grid-computing.svg
-            :width: 600px
-            :align: center
+- :Fabric Layer: Bietet Schnittstellen zu lokalen Ressourcen (zur Abfrage von Status und Fähigkeiten, Sperren usw.)
+  :Konnektivitätsschicht: Kommunikations- / Transaktions- /Authentifizierungsprotokolle, z. B. für die Übertragung von Daten zwischen Ressourcen.
+  :Ressourcenschicht: Verwaltet eine einzelne Ressource, z. B. das Erstellen von Prozessen oder das Lesen von Daten.
+  :Collective Layer: Verwaltet den Zugriff auf mehrere Ressourcen: Auffindung, Einplanung und Replikation.
+  :Anwendungen: Enthält tatsächliche Grid-Anwendungen in einer einzelnen Organisation.
 
-    .. container:: column footnotesize margin-left-1em
+.. supplemental::
 
-        
-      :Fabric Layer: Bietet Schnittstellen zu lokalen Ressourcen (zur Abfrage von Status und Fähigkeiten, Sperren usw.)
-      :Konnektivitätsschicht: Kommunikations- / Transaktions- /Authentifizierungsprotokolle, z. B. für die Übertragung von Daten zwischen Ressourcen.
-      :Ressourcenschicht: Verwaltet eine einzelne Ressource, z. B. das Erstellen von Prozessen oder das Lesen von Daten.
-      :Collective Layer: Verwaltet den Zugriff auf mehrere Ressourcen: Auffindung (:eng:`Discovery`), Einplanung (:eng:`Scheduling`) und Replikation.
-      :Anwendungen: Enthält tatsächliche Grid-Anwendungen in einer einzelnen Organisation.
+    Auffindung (:eng:`Discovery`), Einplanung (:eng:`Scheduling`)
+
 
 
 
@@ -1247,30 +1230,30 @@ Integration von Anwendungen
     Eine vernetzte Anwendung ist eine Anwendung, die auf einem Server läuft und ihre Dienste für entfernte Clients verfügbar macht. 
 
 
+
 Transaktionen auf Geschäftsprozessebene
 -----------------------------------------
 
-.. container:: two-columns 
+.. grid:: 
 
-    .. container:: column center-child-elements no-separator
+    .. cell:: 
 
         .. image:: images/transactions/transaction.svg
-            :width: 750px
             :align: center
 
-        .. container:: bold margin-top-2em line-above
+        .. container:: text-align-center margin-top-1em
 
-            „Alles oder nichts.“
+            **„Alles oder nichts.“**
 
-    .. container:: column footnotesize
+    .. cell::
+        :class: width-60
 
-        .. stack:: 
+        .. deck::
 
-            .. layer::
+            .. card::
 
                 .. csv-table::
                     :header: "Primitiv", "Beschreibung"
-                    :width: 875px
 
                     BEGINN DER TRANSAKTION, Zeigt den Beginn einer Transaktion an.
                     ENDE DER TRANSAKTION, Beendigung der Transaktion mit dem Versuch eines COMMIT.
@@ -1278,13 +1261,13 @@ Transaktionen auf Geschäftsprozessebene
                     LESEN, "Lesen von Daten aus (z. B.) einer Datei oder einer Tabelle."
                     SCHREIBEN, "Schreiben von Daten (z. B.) in eine Datei oder eine Tabelle."
 
-            .. layer:: incremental
-        
+            .. card:: 
+
                 :Atomar `Atomic`:eng:: geschieht untrennbar (scheinbar)
                 :Konsistent `Consistent`:eng:: keine Verletzung von Systeminvarianten
                 :Isoliert `Isolated`:eng:: keine gegenseitige Beeinflussung
                 :Dauerhaft `Durable`:eng:: Nach einem Commit sind die Änderungen dauerhaft
-        
+
                 ≙ :eng:`ACID`\ -Eigenschaften
 
 
@@ -1299,7 +1282,6 @@ Transaktionen auf Geschäftsprozessebene
     Die für eine Transaktion benötigten Daten, sind oft verteilt über mehrere Server. 
 
 .. image:: images/transactions/tpm.svg
-    :width: 80%
     :align: center
     :class: incremental
 
@@ -1322,9 +1304,7 @@ Transaktionen auf Geschäftsprozessebene
 Middleware ermöglicht Kommunikation zwischen den Anwendungen.
 
 .. image:: images/middleware.svg
-    :height: 800px
     :align: center
-    :class: incremental
 
 .. supplemental::
 
@@ -1333,12 +1313,13 @@ Middleware ermöglicht Kommunikation zwischen den Anwendungen.
     :Nachrichtenorientierte Middleware `Message Oriented Middleware (MOM)`:eng:: Nachrichten werden an einen logischen Kontaktpunkt gesendet (d. h.veröffentlicht) und Anwendungen weitergeleitet, die diese Nachrichten abonnieren.
 
 
+
 .. class:: smaller
 
 Wie kann die Anwendungsintegration erreicht werden?
 -----------------------------------------------------
 
-.. class:: incremental
+.. class:: incremental dd-margin-left-2em
 
 :Dateiübertragung: 
 
@@ -1348,17 +1329,18 @@ Wie kann die Anwendungsintegration erreicht werden?
   - Dateiverwaltung regeln
   - Weitergabe von Aktualisierungen und Aktualisierungsbenachrichtigungen
  
-.. class:: incremental
+.. class:: incremental dd-margin-left-2em
 
 :Gemeinsame Datenbank: Sehr viel flexibler, erfordert aber immer noch ein gemeinsames Datenschema neben dem Risiko eines Engpasses.
 
-.. class:: incremental
+.. class:: incremental dd-margin-left-2em
 
 :Entfernter Prozeduraufruf `Remote Procedure Call (RPC)`:eng:: Wirksam, wenn die Ausführung einer Reihe von Aktionen erforderlich ist.
 
-.. class:: incremental
+.. class:: incremental dd-margin-left-2em
 
 :Nachrichtenübermittlung `Messaging`:eng:: Ermöglicht eine zeitliche und räumliche Entkopplung im Vergleich zu RPCs.
+
 
 
 .. class:: new-section transition-fade
@@ -1419,14 +1401,14 @@ Moderne verteilte Systeme
 -------------------------------------------- 
 
 .. image:: images/mobile_computing/mobile_cloud_computing.svg
-    :width: 100%
+    :align: center
 
 
 *Mobile Edge Computing*
 --------------------------------------------
 
 .. image:: images/mobile_computing/mobile_edge_computing.svg
-    :width: 100%
+    :align: center
                 
             
 
@@ -1441,7 +1423,7 @@ Die Knoten, an denen Sensoren angebracht sind:
 - oft batteriebetrieben (oder sogar batterielos)
 
 .. image:: images/sensor_networks/operator_stores_and_processes_data.svg
-    :width: 95%
+    :align: center
 
 
 
@@ -1449,7 +1431,7 @@ Die Knoten, an denen Sensoren angebracht sind:
 --------------------------------------------
 
 .. image:: images/sensor_networks/nodes_store_and_process_data.svg
-    :width: 95%
+    :align: center
 
 
 
@@ -1457,7 +1439,6 @@ Das *Cloud-Edge Continuum*
 --------------------------------
 
 .. image:: images/cloud_edge_continuum.svg
-    :width: 1750px
     :align: center
 
 
