@@ -305,6 +305,7 @@ Die Verteilung offen zu legen, kann Vorteile bringen
 - Wenn es für einen Benutzer einfacher ist, zu verstehen, was vor sich geht (wenn z. B. ein Server lange Zeit nicht antwortet, kann er als ausgefallen gemeldet werden).
 
 .. observation::
+    :class: incremental
 
     Verteilungstransparenz ist ein hehres Ziel, aber oft schwer zu erreichen, und häufig auch nicht erstrebenswert. 
 
@@ -569,19 +570,17 @@ Formale Analyse der Skalierbarkeit zentralisierter Systeme
 
         - Ankunftsrate der Anfragen: 
             
-            :math:`\lambda` *(Anfragen pro Sekunde)*
+          :math:`\lambda` *(Anfragen pro Sekunde)*
 
         - Verarbeitungskapazität des Services: 
                 
-            :math:`\mu` *(Anfragen pro Sekunde)*
+          :math:`\mu` *(Anfragen pro Sekunde)*
 
-            Anteil der Zeit mit :math:`x` Anfragen im System:
+          Anteil der Zeit mit :math:`x` Anfragen im System:
 
-            .. math::
+          .. math::
 
                 p_x  = \bigl(1 - \frac{\lambda}{\mu}\bigr)\bigl(\frac{\lambda}{\mu}\bigr)^x
-
-.. grid::
 
     .. cell::
 
@@ -735,7 +734,8 @@ Ansätze, um Skalierung zu erreichen
         - Nutzung asynchroner Kommunikation
         - Verwendung separater *Handler* für eingehende Antworten 
 
-        .. observation:: incremental
+        .. observation:: 
+            :class: incremental
 
             Dieses Modell ist jedoch nicht immer anwendbar.
 
@@ -1094,19 +1094,25 @@ Weiterführung des Cluster Computing.
 
 
 
+.. class:: dd-margin-left-2em
+
 Grundlegende Architektur für Grid-Computing
 ---------------------------------------------
 
-.. class:: column-list dd-margin-left-2em
+.. class:: column-list 
 
 - .. image:: images/architecture-for-grid-computing.svg
-        :align: center
 
-- :Fabric Layer: Bietet Schnittstellen zu lokalen Ressourcen (zur Abfrage von Status und Fähigkeiten, Sperren usw.)
-  :Konnektivitätsschicht: Kommunikations- / Transaktions- /Authentifizierungsprotokolle, z. B. für die Übertragung von Daten zwischen Ressourcen.
-  :Ressourcenschicht: Verwaltet eine einzelne Ressource, z. B. das Erstellen von Prozessen oder das Lesen von Daten.
-  :Collective Layer: Verwaltet den Zugriff auf mehrere Ressourcen: Auffindung, Einplanung und Replikation.
+- .. class:: no-margin
+
   :Anwendungen: Enthält tatsächliche Grid-Anwendungen in einer einzelnen Organisation.
+  :Collective Layer: Verwaltet den Zugriff auf mehrere Ressourcen: Auffindung, Einplanung und Replikation.
+  :Konnektivitätsschicht: Kommunikations- / Transaktions- /Authentifizierungsprotokolle, z. B. für die Übertragung von Daten zwischen Ressourcen.
+
+.. class:: no-margin
+
+:Ressourcenschicht: Verwaltet eine Ressource, z. B. Erstellen von Prozessen oder Lesen von Daten.
+:Fabric Layer: Bietet Schnittstellen zu lokalen Ressourcen (zur Abfrage von Status und Fähigkeiten, Sperren usw.)
 
 .. supplemental::
 
