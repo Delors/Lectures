@@ -1,8 +1,9 @@
 .. meta::
-    :version: genesis
+    :version: renaissance
     :author: Michael Eichberg
     :keywords: Lehrveranstaltungen, Foliensätze
-    :description lang=de: HTML
+    :description lang=de: Informationen über Lehrveranstaltungen und Foliensätze
+    :id: www.michael-eichberg/lectures/readme
 
 
 
@@ -15,12 +16,14 @@ Lehrveranstaltungen und Foliensätze
 
 
 
-Vorlesung "Einführung in der Programmierung"
----------------------------------------------
+Vorlesung "Einführung in der Programmierung I und II"
+-----------------------------------------------------
 
 Die grundlegende Idee hinter der folgenden Reihenfolge ist, dass die Studierenden zuerst die Grundlagen der Programmierung in Java lernen und sich dann (kurz) mit der objekt-orientierten Modellierung realer Systeme beschäftigen, bevor dann mit der objekt-orientierten Programmierung in Java begonnen wird.
 
-.. container:: scrollable
+.. scrollable::
+
+   Grundlagen:
 
    1. Einführung in die Programmierung (`<prog-einfuehrung/folien.de.rst.html>`__)
    2. Grundlagen der Programmierung in Java (`<prog-java-basics/folien.de.rst.html>`__)
@@ -32,12 +35,21 @@ Die grundlegende Idee hinter der folgenden Reihenfolge ist, dass die Studierende
    6. Objekt-orientierte Programmierung in Java - Einführung (`<prog-java-oo/folien.de.rst.html>`__)
    7. Objekt-orientierte Programmierung in Java - Vererbung und Polymorphie (`<prog-java-oo-inheritance/folien.de.rst.html>`__)
 
+   Fortgeschrittenere Themen (Planung!):
+
+   8. Objekt-orientierte Programmierung in Java - Domain Modeling und Java Records
+   9. Objekt-orientierte Programmierung in Java - Generics
+   10. Objekt-orientierte Programmierung in Java - *Funktionale Programmierung*
+   11. Objekt-orientierte Programmierung in Java - Ein- und Ausgabe - Streams und zugrundeliegende Patterns
+   12. Java Projekte aufsetzen
+   13. Algorithmen und Datenstrukturen in Java 
+
 
 
 Vorlesung "Theoretische Informatik" bzw. "Algorithmen und Datenstrukturen"
 -----------------------------------------------------------------------------
 
-.. container:: scrollable
+.. scrollable::
 
    1. Einführung in die Komplexität von Algorithmen (`<theo-algo-komplexitaet/folien.de.rst.html>`__)
 
@@ -53,12 +65,14 @@ Vorlesung "Theoretische Informatik" bzw. "Algorithmen und Datenstrukturen"
    
    
 
-Vorlesung "Verteilte Systeme"
------------------------------
+Vorlesung "Verteilte Systeme" / "Distributed Systems"
+-------------------------------------------------------
 
-.. container:: scrollable
+.. scrollable::
 
    1. Einführung in verteilte Systeme (`<ds-einfuehrung/folien.de.rst.html>`__)
+
+      Introduction to Distributed Systems (`<ds-introduction/folien.en.rst.html>`__)
    2. HTTP und Sockets in Java (`<ds-http-and-sockets-java/folien.de.rst.html>`__)
       
       Alternativ:
@@ -74,14 +88,12 @@ Vorlesung "Verteilte Systeme"
    6. Architekturen von verteilten Systemen (`<ds-architekturen/folien.de.rst.html>`__)
 
 
-   .. container:: incremental
-
-      .. rubric:: Ergänzend
-      
-      - Zusammenspiel von agilen Methoden und Entwurf verteilter Systeme (`<ds-se-agile/folien.de.rst.html>`__)
-      - Entwurfsprinzipien für verteilte Systeme (`<ds-se-entwurfsprinzipien/folien.de.rst.html>`__)
-      - RESTful Web Services (`<ds-restful/folien.de.rst.html>`_)
-      - XML und XPath (`<ds-xml/folien.de.rst.html>`__)
+   .. rubric:: Ergänzend
+         
+   - Zusammenspiel von agilen Methoden und Entwurf verteilter Systeme (`<ds-se-agile/folien.de.rst.html>`__)
+   - Entwurfsprinzipien für verteilte Systeme (`<ds-se-entwurfsprinzipien/folien.de.rst.html>`__)
+   - RESTful Web Services (`<ds-restful/folien.de.rst.html>`_)
+   - XML und XPath (`<ds-xml/folien.de.rst.html>`__)
       
 
 
@@ -93,18 +105,16 @@ Vorlesung "Web Engineering"
 3. CSS (`<web-css/folien.de.rst.html>`__)
 4. JavaScript (`<web-javascript/folien.de.rst.html>`__)
 
-.. container:: incremental
-
-      .. rubric:: Ergänzend
+.. rubric:: Ergänzend
       
-      - Vortragsthemen, die sich gut in die Vorlesung einfügen (`<web-vortragsthemen/folien.de.rst.html>`__)
+- Vortragsthemen, die sich gut in die Vorlesung einfügen (`<web-vortragsthemen/folien.de.rst.html>`__)
 
 
 
 Vorlesung mit Bezug zu "IT Sicherheit" 
 -----------------------------------------------
 
-.. container:: scrollable
+.. scrollable::
 
    1. [Optional] Cybersecurity (`<sec-cybersecurity/folien.de.rst.html>`__)
    2. [Optional] Klassische Sicherheitsprinzipien (`<sec-klassische-sicherheitsprinzipien/folien.de.rst.html>`__)
