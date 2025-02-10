@@ -302,6 +302,7 @@ Die Verteilung offen zu legen, kann Vorteile bringen
 - Wenn es für einen Benutzer einfacher ist, zu verstehen, was vor sich geht (wenn z. B. ein Server lange Zeit nicht antwortet, kann er als ausgefallen gemeldet werden).
 
 .. observation::
+    :class: incremental
 
     Verteilungstransparenz ist ein hehres Ziel, aber oft schwer zu erreichen, und häufig auch nicht erstrebenswert. 
 
@@ -579,8 +580,6 @@ Formale Analyse der Skalierbarkeit zentralisierter Systeme
 
                 p_x  = \bigl(1 - \frac{\lambda}{\mu}\bigr)\bigl(\frac{\lambda}{\mu}\bigr)^x
 
-.. grid::
-
     .. cell::
 
         .. figure:: images/number_of_requests_in_system.svg
@@ -733,7 +732,8 @@ Ansätze, um Skalierung zu erreichen
         - Nutzung asynchroner Kommunikation
         - Verwendung separater *Handler* für eingehende Antworten 
 
-        .. observation:: incremental
+        .. observation:: 
+            :class: incremental
 
             Dieses Modell ist jedoch nicht immer anwendbar.
 
@@ -1098,9 +1098,10 @@ Grundlegende Architektur für Grid-Computing
 .. class:: column-list dd-margin-left-2em
 
 - .. image:: images/architecture-for-grid-computing.svg
-        :align: center
 
-- :Fabric Layer: Bietet Schnittstellen zu lokalen Ressourcen (zur Abfrage von Status und Fähigkeiten, Sperren usw.)
+- .. class:: no-margin
+
+  :Fabric Layer: Bietet Schnittstellen zu lokalen Ressourcen (zur Abfrage von Status und Fähigkeiten, Sperren usw.)
   :Konnektivitätsschicht: Kommunikations- / Transaktions- /Authentifizierungsprotokolle, z. B. für die Übertragung von Daten zwischen Ressourcen.
   :Ressourcenschicht: Verwaltet eine einzelne Ressource, z. B. das Erstellen von Prozessen oder das Lesen von Daten.
   :Collective Layer: Verwaltet den Zugriff auf mehrere Ressourcen: Auffindung, Einplanung und Replikation.
