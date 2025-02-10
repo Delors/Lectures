@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg xmlns:dc="http://purl.org/dc/elements/1.1/" version="1.1" xmlns:xl="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" viewBox="-71 -242 226 199" width="226" height="199">
-  <style>
+<svg xmlns:dc="http://purl.org/dc/elements/1.1/" version="1.1" xmlns:xl="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" viewBox="-71 -226 226 183" width="226" height="183">
+    <style>
     @import url('/LectureDoc2/ext/fonts/ld-fonts.css'); 
   </style>
-  <metadata> Produced by OmniGraffle 8.0\n2025-02-09 08:52:50 +0000</metadata>
+  <defs>
+  </defs>
+  <metadata> Produced by OmniGraffle 8.0\n2025-02-10 12:42:08 +0000</metadata>
   <g id="multicomputer" stroke-opacity="1" stroke-dasharray="none" fill="none" fill-opacity="1" stroke="none">
     <title>multicomputer</title>
-    <rect fill="white" x="-71" y="-242" width="226" height="199"/>
+    <rect fill="white" x="-71" y="-226" width="226" height="183"/>
     <g id="multicomputer_Layer_1">
       <title>Layer 1</title>
       <g id="Graphic_114">
@@ -53,11 +55,8 @@
         </text>
       </g>
       <g id="Graphic_121">
-        <text transform="translate(-11.131998 -236.6)" fill="black">
-          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="0" y="15" xml:space="preserve">privater Speicher</tspan>
-          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="#666" x="2.24" y="34" xml:space="preserve">(</tspan>
-          <tspan font-family="Noto Sans Display" font-size="14" font-style="italic" font-weight="400" fill="#666" y="34" xml:space="preserve">private Memory</tspan>
-          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="#666" y="34" xml:space="preserve">)</tspan>
+        <text transform="translate(-7.680998 -220.8)" fill="black">
+          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="1278977e-19" y="15" xml:space="preserve">Private memory</tspan>
         </text>
       </g>
       <g id="Graphic_124">

@@ -69,7 +69,7 @@
     <linearGradient id="Obj_Gradient_27" xl:href="#Gradient_3" gradientTransform="translate(282.5622 228.9375) rotate(-32.658855) scale(82.01924)"/>
     <linearGradient id="Obj_Gradient_28" xl:href="#Gradient" gradientTransform="translate(323.256 200.6943) rotate(-133.44236) scale(88.28308)"/>
   </defs>
-  <metadata> Produced by OmniGraffle 8.0\n2025-02-09 19:46:17 +0000</metadata>
+  <metadata> Produced by OmniGraffle 8.0\n2025-02-10 12:36:17 +0000</metadata>
   <g id="middleware" stroke-opacity="1" stroke-dasharray="none" fill="none" fill-opacity="1" stroke="none">
     <title>middleware</title>
     <rect fill="white" x="1" y="39" width="351" height="269"/>
@@ -149,9 +149,9 @@
             </g>
           </g>
           <g id="Graphic_509">
-            <text transform="translate(19.661722 189.69085)" fill="white">
-              <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="white" x="29842795e-20" y="15" xml:space="preserve">Serverseitige</tspan>
-              <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="white" x="2.835" y="34" xml:space="preserve">Anwendung</tspan>
+            <text transform="translate(23.79872 189.69085)" fill="white">
+              <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="white" x="0" y="15" xml:space="preserve">Serversidee</tspan>
+              <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="white" x="1.421" y="34" xml:space="preserve">Application</tspan>
             </text>
           </g>
         </g>
@@ -189,9 +189,9 @@
           </g>
         </g>
         <g id="Graphic_522">
-          <text transform="translate(81.50539 44.68777)" fill="#666">
-            <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="#666" x="19.782" y="15" xml:space="preserve">Client</tspan>
-            <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="#666" x="0" y="34" xml:space="preserve">Anwendung</tspan>
+          <text transform="translate(84.22839 44.68777)" fill="#666">
+            <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="#666" x="17.059" y="15" xml:space="preserve">Client</tspan>
+            <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="#666" x="0" y="34" xml:space="preserve">Application</tspan>
           </text>
         </g>
       </g>
@@ -210,9 +210,9 @@
           </g>
         </g>
         <g id="Graphic_566">
-          <text transform="translate(197.11696 44.070583)" fill="#666">
-            <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="#666" x="19.782" y="15" xml:space="preserve">Client</tspan>
-            <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="#666" x="0" y="34" xml:space="preserve">Anwendung</tspan>
+          <text transform="translate(199.83996 44.070583)" fill="#666">
+            <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="#666" x="17.059" y="15" xml:space="preserve">Client</tspan>
+            <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="#666" x="0" y="34" xml:space="preserve">Application</tspan>
           </text>
         </g>
       </g>
@@ -236,9 +236,9 @@
             </g>
           </g>
           <g id="Graphic_573">
-            <text transform="translate(136.47618 189.69085)" fill="white">
-              <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="white" x="29842795e-20" y="15" xml:space="preserve">Serverseitige</tspan>
-              <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="white" x="2.835" y="34" xml:space="preserve">Anwendung</tspan>
+            <text transform="translate(140.61317 189.69085)" fill="white">
+              <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="white" x="0" y="15" xml:space="preserve">Serversidee</tspan>
+              <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="white" x="1.421" y="34" xml:space="preserve">Application</tspan>
             </text>
           </g>
         </g>
@@ -263,9 +263,9 @@
             </g>
           </g>
           <g id="Graphic_581">
-            <text transform="translate(252.46418 189.8644)" fill="white">
-              <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="white" x="29842795e-20" y="15" xml:space="preserve">Serverseitige</tspan>
-              <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="white" x="2.835" y="34" xml:space="preserve">Anwendung</tspan>
+            <text transform="translate(256.60118 189.8644)" fill="white">
+              <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="white" x="0" y="15" xml:space="preserve">Serversidee</tspan>
+              <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="white" x="1.421" y="34" xml:space="preserve">Application</tspan>
             </text>
           </g>
         </g>

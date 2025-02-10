@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg xmlns:dc="http://purl.org/dc/elements/1.1/" version="1.1" xmlns:xl="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" viewBox="-30 -237 254 170" width="254" height="170">
+<svg xmlns:dc="http://purl.org/dc/elements/1.1/" version="1.1" xmlns:xl="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" viewBox="-27 -237 241 151" width="241" height="151">
   <style>
     @import url('/LectureDoc2/ext/fonts/ld-fonts.css'); 
   </style>
@@ -39,10 +39,10 @@
       </font-face-src>
     </font-face>
   </defs>
-  <metadata> Produced by OmniGraffle 8.0\n2025-02-10 08:10:16 +0000</metadata>
+  <metadata> Produced by OmniGraffle 8.0\n2025-02-10 12:50:21 +0000</metadata>
   <g id="transaction" stroke-opacity="1" stroke-dasharray="none" fill="none" fill-opacity="1" stroke="none">
     <title>transaction</title>
-    <rect fill="white" x="-30" y="-237" width="254" height="170"/>
+    <rect fill="white" x="-27" y="-237" width="241" height="151"/>
     <g id="transaction_Layer_1">
       <title>Layer 1</title>
       <g id="Group_431">
@@ -82,10 +82,10 @@
         </g>
       </g>
       <g id="Graphic_482">
-        <text transform="translate(56.026234 -161.29702)" fill="black" fill-opacity=".4228163">
-          <tspan font-family="Noto Sans Display" font-size="12" font-weight="400" fill="black" fill-opacity=".4228163" x="24.198" y="13" xml:space="preserve">zwei </tspan>
-          <tspan font-family="Noto Sans Display" font-size="12" font-style="italic" font-weight="400" fill="black" fill-opacity=".4228163" x="1.974" y="30" xml:space="preserve">unabhängige</tspan>
-          <tspan font-family="Noto Sans Display" font-size="12" font-weight="400" fill="black" fill-opacity=".4228163" x="0" y="47" xml:space="preserve">Datenbanken</tspan>
+        <text transform="translate(57.952236 -161.29702)" fill="black" fill-opacity=".4228163">
+          <tspan font-family="Noto Sans Display" font-size="12" font-weight="400" fill="black" fill-opacity=".4228163" x="24.108" y="13" xml:space="preserve">two </tspan>
+          <tspan font-family="Noto Sans Display" font-size="12" font-weight="400" fill="black" fill-opacity=".4228163" x="4973799e-19" y="30" xml:space="preserve">independent</tspan>
+          <tspan font-family="Noto Sans Display" font-size="12" font-weight="400" fill="black" fill-opacity=".4228163" x="6.864" y="47" xml:space="preserve">databases</tspan>
         </text>
       </g>
       <g id="Line_484">
@@ -98,30 +98,28 @@
         <line x1="136.19024" y1="-179" x2="190.59024" y2="-179" marker-end="url(#NegativeControls_Marker)" marker-start="url(#NegativeControls_Marker_2)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
       </g>
       <g id="Graphic_487">
-        <text transform="translate(55.60824 -237)" fill="black">
-          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="0" y="15" xml:space="preserve">Transaktion</tspan>
+        <text transform="translate(55.986235 -237)" fill="black">
+          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="8455459e-19" y="15" xml:space="preserve">Transaction</tspan>
         </text>
       </g>
       <g id="Graphic_488">
-        <text transform="translate(-29.598766 -105.29702)" fill="black">
-          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="3623768e-19" y="15" xml:space="preserve">Fluggesellschaft</tspan>
-          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="39.417" y="34" xml:space="preserve"> DB</tspan>
+        <text transform="translate(-10.117765 -105.29702)" fill="black">
+          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="5968559e-19" y="15" xml:space="preserve">Airline DB</tspan>
         </text>
       </g>
       <g id="Graphic_489">
-        <text transform="translate(103.35124 -105.29702)" fill="black">
-          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="6679102e-19" y="15" xml:space="preserve">Hotereservierungs-</tspan>
-          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="27.202" y="34" xml:space="preserve">system DB</tspan>
+        <text transform="translate(135.84524 -105.29702)" fill="black">
+          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="7105427e-20" y="15" xml:space="preserve">Hotel DB</tspan>
         </text>
       </g>
       <g id="Graphic_490">
-        <text transform="translate(-25.216766 -208)" fill="black">
-          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="7531753e-19" y="15" xml:space="preserve">Teiltransaktion</tspan>
+        <text transform="translate(-26.224763 -208)" fill="black">
+          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="5684342e-19" y="15" xml:space="preserve">Subtransaction</tspan>
         </text>
       </g>
       <g id="Graphic_491">
-        <text transform="translate(117.54723 -208)" fill="black">
-          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="7531753e-19" y="15" xml:space="preserve">Teiltransaktion</tspan>
+        <text transform="translate(113.37524 -208)" fill="black">
+          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="0" y="15" xml:space="preserve">Substransaction</tspan>
         </text>
       </g>
     </g>

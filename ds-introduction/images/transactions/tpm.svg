@@ -35,11 +35,6 @@
     <linearGradient id="Obj_Gradient_13" xl:href="#Gradient_3" gradientTransform="translate(28.410634 19.461362) rotate(-32.658855) scale(68.1675)"/>
     <linearGradient id="Obj_Gradient_14" xl:href="#Gradient_3" gradientTransform="translate(63.70805 19.461362) rotate(-32.658855) scale(68.1675)"/>
     <linearGradient id="Obj_Gradient_15" xl:href="#Gradient" gradientTransform="translate(98.41053 -9.485378) rotate(-133.44236) scale(68.80537)"/>
-    <font-face font-family="Noto Sans Display" font-size="14" panose-1="2 11 5 2 4 5 4 2 2 4" units-per-em="1000" underline-position="-100" underline-thickness="50" slope="0" x-height="536" cap-height="714" ascent="1069.0002" descent="-292.99927" font-weight="400">
-      <font-face-src>
-        <font-face-name name="NotoSansDisplay-Regular"/>
-      </font-face-src>
-    </font-face>
     <linearGradient id="Obj_Gradient_16" xl:href="#Gradient_3" gradientTransform="translate(28.410634 128.37909) rotate(-32.658855) scale(68.1675)"/>
     <linearGradient id="Obj_Gradient_17" xl:href="#Gradient_3" gradientTransform="translate(63.70805 128.37909) rotate(-32.658855) scale(68.1675)"/>
     <linearGradient id="Obj_Gradient_18" xl:href="#Gradient" gradientTransform="translate(98.41053 99.43235) rotate(-133.44236) scale(68.80537)"/>
@@ -71,8 +66,13 @@
         <path d="M 8 0 L 0 -3 L 0 3 Z" fill="currentColor" stroke="currentColor" stroke-width="1"/>
       </g>
     </marker>
+    <font-face font-family="Noto Sans Display" font-size="12" panose-1="2 11 5 2 4 5 4 2 2 4" units-per-em="1000" underline-position="-100" underline-thickness="50" slope="0" x-height="536" cap-height="714" ascent="1069.0002" descent="-292.99927" font-weight="400">
+      <font-face-src>
+        <font-face-name name="NotoSansDisplay-Regular"/>
+      </font-face-src>
+    </font-face>
   </defs>
-  <metadata> Produced by OmniGraffle 8.0\n2025-02-09 19:16:33 +0000</metadata>
+  <metadata> Produced by OmniGraffle 8.0\n2025-02-10 12:50:21 +0000</metadata>
   <g id="tpm" stroke-opacity="1" stroke-dasharray="none" fill="none" fill-opacity="1" stroke="none">
     <title>tpm</title>
     <rect fill="white" x="-360" y="-50" width="541" height="297"/>
@@ -256,9 +256,9 @@
           </g>
         </g>
         <g id="Graphic_522">
-          <text transform="translate(-322.1007 94.25149)" fill="#666">
-            <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="#666" x="19.782" y="15" xml:space="preserve">Client</tspan>
-            <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="#666" x="0" y="34" xml:space="preserve">Anwendung</tspan>
+          <text transform="translate(-319.3777 94.25149)" fill="#666">
+            <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="#666" x="17.059" y="15" xml:space="preserve">Client</tspan>
+            <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="#666" x="0" y="34" xml:space="preserve">Application</tspan>
           </text>
         </g>
       </g>
@@ -296,48 +296,48 @@
         <path d="M 38.456986 212.17808 C 19.2793 214.19836 -11.426919 215.0306 -37.80488 204.87805 C -66.54806 193.81516 -80.89664 173.27151 -87.08669 161.41873" marker-end="url(#FilledArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
       </g>
       <g id="Graphic_541">
-        <text transform="translate(-14.935015 21.041286)" fill="black">
-          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="0" y="15" xml:space="preserve">Anfrage</tspan>
+        <text transform="translate(-15.516013 21.041286)" fill="black">
+          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="42632564e-21" y="15" xml:space="preserve">Request</tspan>
         </text>
       </g>
       <g id="Graphic_542">
-        <text transform="translate(-88.83617 -8.063747)" fill="black">
-          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="5258016e-19" y="15" xml:space="preserve">Antwort</tspan>
+        <text transform="translate(-80.75817 -8.063747)" fill="black">
+          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="0" y="15" xml:space="preserve">Reply</tspan>
         </text>
       </g>
       <g id="Graphic_543">
-        <text transform="translate(-96.31839 195.36694)" fill="black">
-          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="5258016e-19" y="15" xml:space="preserve">Antwort</tspan>
+        <text transform="translate(-88.24038 195.36694)" fill="black">
+          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="0" y="15" xml:space="preserve">Reply</tspan>
         </text>
       </g>
       <g id="Graphic_544">
-        <text transform="translate(-14.935015 167.5)" fill="black">
-          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="0" y="15" xml:space="preserve">Anfrage</tspan>
+        <text transform="translate(-15.516013 167.5)" fill="black">
+          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="42632564e-21" y="15" xml:space="preserve">Request</tspan>
         </text>
       </g>
       <g id="Graphic_545">
-        <text transform="translate(-22.467072 79)" fill="black">
-          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="0" y="15" xml:space="preserve">Anfrage</tspan>
+        <text transform="translate(-23.04807 79)" fill="black">
+          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="42632564e-21" y="15" xml:space="preserve">Request</tspan>
         </text>
       </g>
       <g id="Graphic_546">
-        <text transform="translate(-191.85436 81)" fill="black">
-          <tspan font-family="Noto Sans Display" font-size="12" font-weight="400" fill="black" x="0" y="13" xml:space="preserve">Anfrage</tspan>
+        <text transform="translate(-192.35236 81)" fill="black">
+          <tspan font-family="Noto Sans Display" font-size="12" font-weight="400" fill="black" x="0" y="13" xml:space="preserve">Request</tspan>
         </text>
       </g>
       <g id="Graphic_547">
-        <text transform="translate(-191.85436 117.60299)" fill="black">
-          <tspan font-family="Noto Sans Display" font-size="12" font-weight="400" fill="black" x="18829382e-20" y="13" xml:space="preserve">Antwort</tspan>
+        <text transform="translate(-184.93036 117.60299)" fill="black">
+          <tspan font-family="Noto Sans Display" font-size="12" font-weight="400" fill="black" x="0" y="13" xml:space="preserve">Reply</tspan>
         </text>
       </g>
       <g id="Graphic_548">
-        <text transform="translate(-22.467072 112.66044)" fill="black">
-          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="5258016e-19" y="15" xml:space="preserve">Antwort</tspan>
+        <text transform="translate(-14.389071 112.66044)" fill="black">
+          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="0" y="15" xml:space="preserve">Reply</tspan>
         </text>
       </g>
       <g id="Graphic_564">
-        <text transform="translate(-253.6161 52.80996)" fill="black">
-          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="0" y="15" xml:space="preserve">Transaktion</tspan>
+        <text transform="translate(-253.2381 52.80996)" fill="black">
+          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="8455459e-19" y="15" xml:space="preserve">Transaction</tspan>
         </text>
       </g>
     </g>

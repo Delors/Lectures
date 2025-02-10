@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg xmlns:dc="http://purl.org/dc/elements/1.1/" version="1.1" xmlns:xl="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" viewBox="1 -15 604 291" width="604" height="291">
-  <style>
+<svg xmlns:dc="http://purl.org/dc/elements/1.1/" version="1.1" xmlns:xl="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" viewBox="1 -15 586 291" width="586" height="291">
+    <style>
     @import url('/LectureDoc2/ext/fonts/ld-fonts.css'); 
   </style>
   <defs>
@@ -10,16 +10,21 @@
         <path d="M 8 0 L 0 -3 L 0 3 Z" fill="currentColor" stroke="currentColor" stroke-width="1"/>
       </g>
     </marker>
+    <font-face font-family="Noto Sans Display" font-size="16" panose-1="2 11 5 2 4 5 4 2 2 4" units-per-em="1000" underline-position="-100" underline-thickness="50" slope="0" x-height="536" cap-height="714" ascent="1069.0002" descent="-292.99927" font-weight="400">
+      <font-face-src>
+        <font-face-name name="NotoSansDisplay-Regular"/>
+      </font-face-src>
+    </font-face>
   </defs>
-  <metadata> Produced by OmniGraffle 8.0\n2025-02-10 08:27:16 +0000</metadata>
+  <metadata> Produced by OmniGraffle 8.0\n2025-02-10 12:27:46 +0000</metadata>
   <g id="continuum" stroke-opacity="1" stroke-dasharray="none" fill="none" fill-opacity="1" stroke="none">
     <title>continuum</title>
-    <rect fill="white" x="1" y="-15" width="604" height="291"/>
+    <rect fill="white" x="1" y="-15" width="586" height="291"/>
     <g id="continuum_Layer_1">
       <title>Layer 1</title>
       <g id="Graphic_889">
-        <text transform="translate(182.91519 -15)" fill="black">
-          <tspan font-family="Noto Sans Display" font-size="11" font-weight="400" fill="black" x="0" y="12" xml:space="preserve">mehr</tspan>
+        <text transform="translate(183.09669 -15)" fill="black">
+          <tspan font-family="Noto Sans Display" font-size="11" font-weight="400" fill="black" x="5382361e-19" y="12" xml:space="preserve">more</tspan>
         </text>
       </g>
       <g id="Graphic_891">
@@ -48,39 +53,39 @@
         <line x1="394.2422" y1="7" x2="394.2422" y2="252.1" marker-end="url(#FilledArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
       </g>
       <g id="Graphic_901">
-        <text transform="translate(381.6027 261)" fill="black">
-          <tspan font-family="Noto Sans Display" font-size="11" font-weight="400" fill="black" x="0" y="12" xml:space="preserve">mehr</tspan>
+        <text transform="translate(381.7842 261)" fill="black">
+          <tspan font-family="Noto Sans Display" font-size="11" font-weight="400" fill="black" x="5382361e-19" y="12" xml:space="preserve">more</tspan>
         </text>
       </g>
       <g id="Graphic_902">
-        <text transform="translate(374.9037 -15)" fill="black">
-          <tspan font-family="Noto Sans Display" font-size="11" font-weight="400" fill="black" x="0" y="12" xml:space="preserve">weniger</tspan>
+        <text transform="translate(385.4967 -15)" fill="black">
+          <tspan font-family="Noto Sans Display" font-size="11" font-weight="400" fill="black" x="9023893e-19" y="12" xml:space="preserve">less</tspan>
         </text>
       </g>
       <g id="Graphic_903">
-        <text transform="translate(176.21619 261)" fill="black">
-          <tspan font-family="Noto Sans Display" font-size="11" font-weight="400" fill="black" x="0" y="12" xml:space="preserve">weniger</tspan>
+        <text transform="translate(186.80919 261)" fill="black">
+          <tspan font-family="Noto Sans Display" font-size="11" font-weight="400" fill="black" x="9023893e-19" y="12" xml:space="preserve">less</tspan>
         </text>
       </g>
       <g id="Graphic_906">
-        <text transform="translate(10.893187 79.9707)" fill="black">
-          <tspan font-family="Noto Sans Display" font-size="16" font-weight="400" fill="black" x="19895197e-19" y="17" xml:space="preserve">Zuverlässige Verbindung </tspan>
-          <tspan font-family="Noto Sans Display" font-size="16" font-weight="400" fill="black" x="5.488" y="39" xml:space="preserve">Langlebigkeit der Daten</tspan>
-          <tspan font-family="Noto Sans Display" font-size="16" font-weight="400" fill="black" x="49.92" y="61" xml:space="preserve">Speicherkapazität</tspan>
-          <tspan font-family="Noto Sans Display" font-size="16" font-weight="400" fill="black" x="66.784" y="83" xml:space="preserve">Rechenleistung</tspan>
-          <tspan font-family="Noto Sans Display" font-size="16" font-weight="400" fill="black" x="69.616" y="105" xml:space="preserve">Zuverlässigkeit</tspan>
-          <tspan font-family="Noto Sans Display" font-size="16" font-weight="400" fill="black" x="129.328" y="127" xml:space="preserve">Latenz</tspan>
+        <text transform="translate(42.029185 79.9707)" fill="black">
+          <tspan font-family="Noto Sans Display" font-size="16" font-weight="400" fill="black" x="33821834e-19" y="17" xml:space="preserve">Reliable connectivity</tspan>
+          <tspan font-family="Noto Sans Display" font-size="16" font-weight="400" fill="black" x="17.056" y="39" xml:space="preserve">Computing power</tspan>
+          <tspan font-family="Noto Sans Display" font-size="16" font-weight="400" fill="black" x="53.584" y="61" xml:space="preserve">Data storage</tspan>
+          <tspan font-family="Noto Sans Display" font-size="16" font-weight="400" fill="black" x="42.912" y="83" xml:space="preserve">Data longevity</tspan>
+          <tspan font-family="Noto Sans Display" font-size="16" font-weight="400" fill="black" x="76.496" y="105" xml:space="preserve">Reliability</tspan>
+          <tspan font-family="Noto Sans Display" font-size="16" font-weight="400" fill="black" x="90.272" y="127" xml:space="preserve">Latency</tspan>
         </text>
       </g>
       <g id="Graphic_909">
         <text transform="translate(403.6797 68.9707)" fill="black">
-          <tspan font-family="Noto Sans Display" font-size="16" font-weight="400" fill="black" x="0" y="17" xml:space="preserve">Unterstützung von Mobilität</tspan>
-          <tspan font-family="Noto Sans Display" font-size="16" font-weight="400" fill="black" x="0" y="39" xml:space="preserve">Geographische Verteilung</tspan>
-          <tspan font-family="Noto Sans Display" font-size="16" font-weight="400" fill="black" x="0" y="61" xml:space="preserve">Standortbewusstsein</tspan>
-          <tspan font-family="Noto Sans Display" font-size="16" font-weight="400" fill="black" x="0" y="83" xml:space="preserve">Antwortzeitverhalten</tspan>
-          <tspan font-family="Noto Sans Display" font-size="16" font-weight="400" fill="black" x="0" y="105" xml:space="preserve">Kontextbewusstsein</tspan>
-          <tspan font-family="Noto Sans Display" font-size="16" font-weight="400" fill="black" x="0" y="127" xml:space="preserve">Interaktivität</tspan>
-          <tspan font-family="Noto Sans Display" font-size="16" font-weight="400" fill="black" x="0" y="149" xml:space="preserve">Geräte</tspan>
+          <tspan font-family="Noto Sans Display" font-size="16" font-weight="400" fill="black" x="0" y="17" xml:space="preserve">Support for Mobility</tspan>
+          <tspan font-family="Noto Sans Display" font-size="16" font-weight="400" fill="black" x="0" y="39" xml:space="preserve">Geographical Distribution</tspan>
+          <tspan font-family="Noto Sans Display" font-size="16" font-weight="400" fill="black" x="0" y="61" xml:space="preserve">Location Awareness</tspan>
+          <tspan font-family="Noto Sans Display" font-size="16" font-weight="400" fill="black" x="0" y="83" xml:space="preserve">Responsiveness</tspan>
+          <tspan font-family="Noto Sans Display" font-size="16" font-weight="400" fill="black" x="0" y="105" xml:space="preserve">Context Awareness</tspan>
+          <tspan font-family="Noto Sans Display" font-size="16" font-weight="400" fill="black" x="0" y="127" xml:space="preserve">Interactiveness</tspan>
+          <tspan font-family="Noto Sans Display" font-size="16" font-weight="400" fill="black" x="0" y="149" xml:space="preserve">Devices</tspan>
         </text>
       </g>
     </g>

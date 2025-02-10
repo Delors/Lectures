@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg xmlns:dc="http://purl.org/dc/elements/1.1/" version="1.1" xmlns:xl="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" viewBox="-30 -237 254 170" width="254" height="170">
+<svg xmlns:dc="http://purl.org/dc/elements/1.1/" version="1.1" xmlns:xl="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" viewBox="-30 -237 256 170" width="256" height="170">
   <style>
     @import url('/LectureDoc2/ext/fonts/ld-fonts.css'); 
   </style>
@@ -39,10 +39,10 @@
       </font-face-src>
     </font-face>
   </defs>
-  <metadata> Produced by OmniGraffle 8.0\n2025-02-10 08:10:16 +0000</metadata>
+  <metadata> Produced by OmniGraffle 8.0\n2025-02-10 13:01:17 +0000</metadata>
   <g id="transaction" stroke-opacity="1" stroke-dasharray="none" fill="none" fill-opacity="1" stroke="none">
     <title>transaction</title>
-    <rect fill="white" x="-30" y="-237" width="254" height="170"/>
+    <rect fill="white" x="-30" y="-237" width="256" height="170"/>
     <g id="transaction_Layer_1">
       <title>Layer 1</title>
       <g id="Group_431">
@@ -109,9 +109,9 @@
         </text>
       </g>
       <g id="Graphic_489">
-        <text transform="translate(103.35124 -105.29702)" fill="black">
-          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="6679102e-19" y="15" xml:space="preserve">Hotereservierungs-</tspan>
-          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="27.202" y="34" xml:space="preserve">system DB</tspan>
+        <text transform="translate(101.63624 -105.29702)" fill="black">
+          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="8100187e-19" y="15" xml:space="preserve">Hotelreservierungs-</tspan>
+          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="28.917" y="34" xml:space="preserve">system DB</tspan>
         </text>
       </g>
       <g id="Graphic_490">

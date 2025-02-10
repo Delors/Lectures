@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <svg xmlns:dc="http://purl.org/dc/elements/1.1/" version="1.1" xmlns:xl="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" viewBox="161 -228 554 340" width="554" height="340">
+  <style>
+    @import url('/LectureDoc2/ext/fonts/ld-fonts.css'); 
+  </style>
   <defs>
     <linearGradient x1="0" x2="1" id="Gradient" gradientUnits="userSpaceOnUse">
       <stop offset=".1060121" stop-color="#029ed7"/>
@@ -67,16 +70,6 @@
         <feMergeNode in="SourceGraphic"/>
       </feMerge>
     </filter>
-    <font-face font-family="Noto Sans Display" font-size="14" panose-1="2 11 5 2 4 5 4 2 2 4" units-per-em="1000" underline-position="-100" underline-thickness="50" slope="0" x-height="536" cap-height="714" ascent="1069.0002" descent="-292.99927" font-weight="400">
-      <font-face-src>
-        <font-face-name name="NotoSansDisplay-Regular"/>
-      </font-face-src>
-    </font-face>
-    <font-face font-family="Noto Sans Display" font-size="11" panose-1="2 11 5 2 4 5 4 2 2 4" units-per-em="1000" underline-position="-100" underline-thickness="50" slope="0" x-height="536" cap-height="714" ascent="1069.0002" descent="-292.99927" font-weight="400">
-      <font-face-src>
-        <font-face-name name="NotoSansDisplay-Regular"/>
-      </font-face-src>
-    </font-face>
     <marker orient="auto" overflow="visible" markerUnits="strokeWidth" id="FilledArrow_Marker" stroke-linejoin="miter" stroke-miterlimit="10" viewBox="-1 -3 6 6" markerWidth="6" markerHeight="6" color="#b1001c">
       <g>
         <path d="M 3.7333333 0 L 0 -1.4 L 0 1.4 Z" fill="currentColor" stroke="currentColor" stroke-width="1"/>
@@ -108,7 +101,7 @@
       </g>
     </marker>
   </defs>
-  <metadata> Produced by OmniGraffle 8.0\n2025-02-09 08:49:00 +0000</metadata>
+  <metadata> Produced by OmniGraffle 8.0\n2025-02-10 12:40:12 +0000</metadata>
   <g id="moving-computations" stroke-opacity="1" stroke-dasharray="none" fill="none" fill-opacity="1" stroke="none">
     <title>moving-computations</title>
     <g id="moving-computations_Layer_1">
@@ -223,9 +216,9 @@
         <path d="M 218.50485 -159.18631 L 345.58298 -159.18631 C 347.7921 -159.18631 349.58298 -157.39545 349.58298 -155.18631 L 349.58298 -123.18631 C 349.58298 -120.97717 347.7921 -119.18631 345.58298 -119.18631 L 218.50485 -119.18631 C 216.29571 -119.18631 214.50485 -120.97717 214.50485 -123.18631 L 214.50485 -155.18631 C 214.50485 -157.39545 216.29571 -159.18631 218.50485 -159.18631 Z" fill="red"/>
       </g>
       <g id="Graphic_364">
-        <text transform="translate(444.9824 -107.5464)" fill="black">
-          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="34.916" y="15" xml:space="preserve">prüfe</tspan>
-          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="0" y="34" xml:space="preserve">Formdaten</tspan>
+        <text transform="translate(452.0664 -107.5464)" fill="black">
+          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="12.712" y="15" xml:space="preserve">validate</tspan>
+          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="29700686e-19" y="34" xml:space="preserve">form data</tspan>
         </text>
       </g>
       <g id="Graphic_366">
@@ -261,24 +254,24 @@
       </g>
       <g id="Graphic_379">
         <text transform="translate(638.73176 -107.5464)" fill="black">
-          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="0" y="15" xml:space="preserve">verarbeite</tspan>
-          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="0" y="34" xml:space="preserve">Formdaten</tspan>
+          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="0" y="15" xml:space="preserve">process</tspan>
+          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="0" y="34" xml:space="preserve">form data</tspan>
         </text>
       </g>
       <g id="Graphic_433">
         <text transform="translate(619.6811 73.29996)" fill="black">
-          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="0" y="15" xml:space="preserve">verarbeite</tspan>
-          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="0" y="34" xml:space="preserve">Formdaten</tspan>
+          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="0" y="15" xml:space="preserve">process</tspan>
+          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="0" y="34" xml:space="preserve">form data</tspan>
         </text>
       </g>
       <g id="Line_380">
-        <line x1="511.8153" y1="-107.5464" x2="528.46846" y2="-117.28274" marker-end="url(#SharpArrow_Marker)" stroke="#003776" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+        <line x1="513.6524" y1="-107.44389" x2="528.5706" y2="-116.59909" marker-end="url(#SharpArrow_Marker)" stroke="#003776" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
       </g>
       <g id="Line_381">
-        <line x1="647.1441" y1="-107.5464" x2="637.55415" y2="-114.57538" marker-end="url(#SharpArrow_Marker)" stroke="#003776" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+        <line x1="645.11516" y1="-107.5464" x2="637.392" y2="-113.55795" marker-end="url(#SharpArrow_Marker)" stroke="#003776" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
       </g>
       <g id="Line_431">
-        <line x1="641.3129" y1="73.29996" x2="633.1636" y2="61.11122" marker-end="url(#SharpArrow_Marker)" stroke="#003776" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+        <line x1="638.86975" y1="73.29996" x2="631.8097" y2="61.74045" marker-end="url(#SharpArrow_Marker)" stroke="#003776" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
       </g>
       <g id="Graphic_382">
         <text transform="translate(561.1505 -227.45115)" fill="black">
@@ -299,9 +292,9 @@
         </text>
       </g>
       <g id="Graphic_396">
-        <text transform="translate(414.0875 73.29996)" fill="black">
-          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="14.168" y="15" xml:space="preserve">vereinfachte/schnelle</tspan>
-          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="0" y="34" xml:space="preserve">Prüfung der Formdaten</tspan>
+        <text transform="translate(422.4175 73.29996)" fill="black">
+          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="33537617e-19" y="15" xml:space="preserve">simplified(?) validation</tspan>
+          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="61.292" y="34" xml:space="preserve">of form data</tspan>
         </text>
       </g>
       <g id="Group_415">
@@ -319,7 +312,7 @@
         <path d="M 348.7017 51.405906 C 372.29367 52.07834 400.25245 52.098566 429.2737 50.436325 C 468.22164 48.20552 499.84094 43.473803 521.6098 39.33337" marker-end="url(#FilledArrow_Marker_3)" stroke="#ff6100" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
       </g>
       <g id="Line_389">
-        <line x1="508.7618" y1="73.29996" x2="530.2751" y2="53.918856" marker-end="url(#SharpArrow_Marker)" stroke="#003776" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+        <line x1="511.6193" y1="73.29996" x2="530.4772" y2="55.18828" marker-end="url(#SharpArrow_Marker)" stroke="#003776" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
       </g>
       <g id="Graphic_385">
         <text transform="translate(363.2876 -14.563675)" fill="black">
@@ -334,13 +327,13 @@
         <rect x="217.15403" y="32.37817" width="130.54766" height="30" stroke="white" stroke-opacity=".48790474" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
       </g>
       <g id="Graphic_417">
-        <text transform="translate(329.52923 73.29996)" fill="black">
-          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="0" y="15" xml:space="preserve">prüfe</tspan>
-          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="0" y="34" xml:space="preserve">Formdaten</tspan>
+        <text transform="translate(330.0175 73.29996)" fill="black">
+          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="0" y="15" xml:space="preserve">validate</tspan>
+          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="0" y="34" xml:space="preserve">form data</tspan>
         </text>
       </g>
       <g id="Line_418">
-        <line x1="329.52923" y1="73.36015" x2="319.57666" y2="67.87013" marker-end="url(#SharpArrow_Marker)" stroke="#003776" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+        <line x1="330.0175" y1="74.65222" x2="318.41458" y2="68.00248" marker-end="url(#SharpArrow_Marker)" stroke="#003776" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
       </g>
       <g id="Line_419">
         <path d="M 282.03073 7.94731 C 282.08693 10.37943 282.14225 12.915398 282.1936 15.483571" marker-end="url(#FilledArrow_Marker_4)" stroke="#b1001c" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>

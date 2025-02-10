@@ -91,7 +91,7 @@
     <linearGradient id="Obj_Gradient_59" xl:href="#Gradient" gradientTransform="translate(239.43299 128.77423) rotate(-32.658855) scale(27.979774)"/>
     <linearGradient id="Obj_Gradient_60" xl:href="#Gradient_2" gradientTransform="translate(253.4638 118.21615) rotate(-133.44236) scale(29.346016)"/>
   </defs>
-  <metadata> Produced by OmniGraffle 8.0\n2025-02-09 19:52:38 +0000</metadata>
+  <metadata> Produced by OmniGraffle 8.0\n2025-02-10 12:38:12 +0000</metadata>
   <g id="mobile_edge_computing" stroke-opacity="1" stroke-dasharray="none" fill="none" fill-opacity="1" stroke="none">
     <title>mobile_edge_computing</title>
     <rect fill="white" x="63" y="-9" width="472" height="225"/>
@@ -541,13 +541,13 @@
         </g>
       </g>
       <g id="Graphic_887">
-        <text transform="translate(405.719 173.61729)" fill="black">
-          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="0" y="15" xml:space="preserve">Cloud</tspan>
+        <text transform="translate(294.1765 189.95083)" fill="black">
+          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="0" y="15" xml:space="preserve">Cloud of servers</tspan>
         </text>
       </g>
       <g id="Graphic_888">
-        <text transform="translate(97.60151 .5)" fill="black">
-          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="2060574e-19" y="15" xml:space="preserve">Mobile Geräte</tspan>
+        <text transform="translate(95.76751 .5)" fill="black">
+          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="0" y="15" xml:space="preserve">Mobile devices</tspan>
         </text>
       </g>
       <g id="Line_897">
@@ -563,9 +563,9 @@
         <line x1="283.02635" y1="99.24991" x2="315.77726" y2="99.24993" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
       </g>
       <g id="Graphic_902">
-        <text transform="translate(191.65126 159.11729)" fill="black">
-          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="3.192" y="15" xml:space="preserve">Nahegelegenes </tspan>
-          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="0" y="34" xml:space="preserve">Edge Datacenter</tspan>
+        <text transform="translate(201.88526 159.11729)" fill="black">
+          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="1.708" y="15" xml:space="preserve">Nearby edge </tspan>
+          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="6.013" y="34" xml:space="preserve">data center</tspan>
         </text>
       </g>
     </g>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?>
 <!-- Generator: DataGraph - https://www.visualdatatools.com/DataGraph/index.html  --><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg width="600" height="340" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 10 600 340">
+<svg width="600" height="350" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 600 350">
   <style>
     @import url('/LectureDoc2/ext/fonts/ld-fonts.css'); 
   </style>
@@ -33,9 +33,9 @@
           <path d="M 197.8 30.5 L 214.8 30.5 "
             stroke="black" fill="none" stroke-width="2"/>
         </g>
-        <g font-family="NotoSansDisplay-Regular" font-size="14" fill="black">
+        <g font-family="Noto Sans Display" font-size="14" fill="black">
           <text x="220.8" y="36.021">
-            1/((1-0.5)+(0.5/x)) (50% können parallelisiert werden)
+            1/((1-0.5)+(0.5/x)) (50% can be parallelized)
           </text>
         </g>
         <defs>
@@ -47,9 +47,9 @@
           <path d="M 197.8 47.5 L 214.8 47.5 "
             stroke="rgb(228,28,28)" stroke-dasharray="0.02,4" stroke-dashoffset="3.57" stroke-linecap="round" fill="none" stroke-width="2"/>
         </g>
-        <g font-family="NotoSansDisplay-Regular" font-size="14" fill="black">
+        <g font-family="Noto Sans Display" font-size="14" fill="black">
           <text x="220.8" y="52.821">
-            1/((1-0.99)+(0.99/x)) (99% können parallelisiert werden)
+            1/((1-0.99)+(0.99/x)) (99% can be parallelized)
           </text>
         </g>
         <defs>
@@ -61,16 +61,16 @@
           <path d="M 197.8 64.5 L 214.8 64.5 "
             stroke="rgb(55,126,184)" stroke-dasharray="0.02,3" stroke-dashoffset="0.57" stroke-linecap="round" fill="none" stroke-width="2"/>
         </g>
-        <g font-family="NotoSansDisplay-Regular" font-size="14" fill="black">
+        <g font-family="Noto Sans Display" font-size="14" fill="black">
           <text x="220.8" y="69.621">
-            1/((1-0.90)+(0.90/x)) (90% können parallelisiert werden)
+            1/((1-0.90)+(0.90/x)) (90% can be parallelized)
           </text>
         </g>
       </g>
     </g>
     <!-- x=1;y=1 -->
     <g id="x_1_y_1">
-      <g font-family="NotoSansDisplay-Regular" font-size="14" fill="black">
+      <g font-family="Noto Sans Display" font-size="14" fill="black">
         <text x="336.707" y="215.625">x=1;y=1</text>
       </g>
       <g>
@@ -82,8 +82,8 @@
           fill="rgb(152,169,234)" stroke="none"/>
       </g>
     </g>
-    <!-- 1/((1-0.5)+(0.5/x)) (50% können parallelisiert werden) -->
-    <g id="1_1_0_5_0_5_x_50_k_nnen_parallelisiert_werden">
+    <!-- 1/((1-0.5)+(0.5/x)) (50% can be parallelized) -->
+    <g id="1_1_0_5_0_5_x_50_can_be_parallelized">
       <path d="M 57.5 304.5 L 58.1537 300.155 L 59.0499 295.556 L 59.9533 292.005 L 60.9546 288.93 L 62.0437 286.301 
                L 63.2218 284.044 L 64.5121 282.071 L 65.9135 280.35 L 67.3092 278.954 L 68.9092 277.642 
                L 70.6441 276.478 L 72.653 275.377 L 74.9551 274.355 L 77.651 273.393 L 80.7099 272.523 
@@ -92,15 +92,15 @@
                L 254.895 266.314 L 329.404 266.042 L 451.5 265.815 L 581.8 265.688 "
         stroke="black" fill="none" stroke-width="2"/>
     </g>
-    <!-- 1/((1-0.99)+(0.99/x)) (99% können parallelisiert werden) -->
-    <g id="1_1_0_99_0_99_x_99_k_nnen_parallelisiert_werden">
+    <!-- 1/((1-0.99)+(0.99/x)) (99% can be parallelized) -->
+    <g id="1_1_0_99_0_99_x_99_can_be_parallelized">
       <path d="M 57.5 304.5 L 64.7858 277.369 L 72.3052 250.145 L 79.9254 223.327 L 87.4171 197.687 L 95.091 172.139 
                L 102.799 147.176 L 110.512 122.874 L 118.283 99.0382 L 126.193 75.4254 L 134.065 52.548 
                L 141.901 30.3686 L 149.109 10.5 "
         stroke="rgb(228,28,28)" stroke-dasharray="0.02,4" stroke-linecap="round" fill="none" stroke-width="2"/>
     </g>
-    <!-- 1/((1-0.90)+(0.90/x)) (90% können parallelisiert werden) -->
-    <g id="1_1_0_90_0_90_x_90_k_nnen_parallelisiert_werden">
+    <!-- 1/((1-0.90)+(0.90/x)) (90% can be parallelized) -->
+    <g id="1_1_0_90_0_90_x_90_can_be_parallelized">
       <path d="M 57.5 304.5 L 59.7346 295.638 L 62.0437 287.285 L 64.5121 279.142 L 66.9274 271.862 L 69.3388 265.188 
                L 71.975 258.489 L 74.664 252.222 L 77.4105 246.339 L 80.2834 240.679 L 83.1397 235.495 
                L 86.1817 230.403 L 89.2636 225.645 L 92.4236 221.136 L 95.6422 216.888 L 99.1013 212.665 
@@ -119,33 +119,33 @@
   <g id="Foreground">
     <!-- Y Axis -->
     <g id="Y_Axis">
-      <g transform="translate(16.2719,157.5) rotate(-90) translate(-16.2719,-157.5)" font-family="NotoSansDisplay-Regular" font-size="14" fill="black">
+      <g transform="translate(16.2719,157.5) rotate(-90) translate(-16.2719,-157.5)" font-family="Noto Sans Display" font-size="14" fill="black">
         <text x="-11.7555" y="157.5">Speedup</text>
       </g>
       <!-- Y Labels -->
       <g id="Y_Labels">
-        <g font-family="NotoSansDisplay-Regular" font-size="14" fill="black">
+        <g font-family="Noto Sans Display" font-size="14" fill="black">
           <text x="38.9139" y="309.521">0</text>
         </g>
-        <g font-family="NotoSansDisplay-Regular" font-size="14" fill="black">
+        <g font-family="Noto Sans Display" font-size="14" fill="black">
           <text x="38.9139" y="270.321">2</text>
         </g>
-        <g font-family="NotoSansDisplay-Regular" font-size="14" fill="black">
+        <g font-family="Noto Sans Display" font-size="14" fill="black">
           <text x="38.9139" y="231.121">4</text>
         </g>
-        <g font-family="NotoSansDisplay-Regular" font-size="14" fill="black">
+        <g font-family="Noto Sans Display" font-size="14" fill="black">
           <text x="38.9139" y="191.921">6</text>
         </g>
-        <g font-family="NotoSansDisplay-Regular" font-size="14" fill="black">
+        <g font-family="Noto Sans Display" font-size="14" fill="black">
           <text x="38.9139" y="152.721">8</text>
         </g>
-        <g font-family="NotoSansDisplay-Regular" font-size="14" fill="black">
+        <g font-family="Noto Sans Display" font-size="14" fill="black">
           <text x="31.1277" y="113.521">10</text>
         </g>
-        <g font-family="NotoSansDisplay-Regular" font-size="14" fill="black">
+        <g font-family="Noto Sans Display" font-size="14" fill="black">
           <text x="31.1277" y="74.321">12</text>
         </g>
-        <g font-family="NotoSansDisplay-Regular" font-size="14" fill="black">
+        <g font-family="Noto Sans Display" font-size="14" fill="black">
           <text x="31.1277" y="35.121">14</text>
         </g>
       </g>
@@ -157,41 +157,41 @@
     </g>
     <!-- X Axis -->
     <g id="X_Axis">
-      <g font-family="NotoSansDisplay-Regular" font-size="14" fill="black">
-        <text x="268.642" y="342">Anzahl an CPUs</text>
+      <g font-family="Noto Sans Display" font-size="14" fill="black">
+        <text x="267.097" y="342">Number of CPUs</text>
       </g>
       <g>
-        <g font-family="NotoSansDisplay-Regular" font-size="14" fill="black">
+        <g font-family="Noto Sans Display" font-size="14" fill="black">
           <text x="53.6069" y="325.555">0</text>
         </g>
-        <g font-family="NotoSansDisplay-Regular" font-size="14" fill="black">
+        <g font-family="Noto Sans Display" font-size="14" fill="black">
           <text x="102.144" y="325.555">10</text>
         </g>
-        <g font-family="NotoSansDisplay-Regular" font-size="14" fill="black">
+        <g font-family="Noto Sans Display" font-size="14" fill="black">
           <text x="154.574" y="325.555">20</text>
         </g>
-        <g font-family="NotoSansDisplay-Regular" font-size="14" fill="black">
+        <g font-family="Noto Sans Display" font-size="14" fill="black">
           <text x="207.004" y="325.555">30</text>
         </g>
-        <g font-family="NotoSansDisplay-Regular" font-size="14" fill="black">
+        <g font-family="Noto Sans Display" font-size="14" fill="black">
           <text x="259.434" y="325.555">40</text>
         </g>
-        <g font-family="NotoSansDisplay-Regular" font-size="14" fill="black">
+        <g font-family="Noto Sans Display" font-size="14" fill="black">
           <text x="311.864" y="325.555">50</text>
         </g>
-        <g font-family="NotoSansDisplay-Regular" font-size="14" fill="black">
+        <g font-family="Noto Sans Display" font-size="14" fill="black">
           <text x="364.294" y="325.555">60</text>
         </g>
-        <g font-family="NotoSansDisplay-Regular" font-size="14" fill="black">
+        <g font-family="Noto Sans Display" font-size="14" fill="black">
           <text x="416.724" y="325.555">70</text>
         </g>
-        <g font-family="NotoSansDisplay-Regular" font-size="14" fill="black">
+        <g font-family="Noto Sans Display" font-size="14" fill="black">
           <text x="469.154" y="325.555">80</text>
         </g>
-        <g font-family="NotoSansDisplay-Regular" font-size="14" fill="black">
+        <g font-family="Noto Sans Display" font-size="14" fill="black">
           <text x="521.584" y="325.555">90</text>
         </g>
-        <g font-family="NotoSansDisplay-Regular" font-size="14" fill="black">
+        <g font-family="Noto Sans Display" font-size="14" fill="black">
           <text x="570.121" y="325.555">100</text>
         </g>
       </g>
@@ -255,13 +255,13 @@
         <g>
           <!-- Y Labels -->
           <g id="Y_Labels_2">
-            <g font-family="NotoSansDisplay-Regular" font-size="13" fill="black">
+            <g font-family="Noto Sans Display" font-size="13" fill="black">
               <text x="322.1" y="3.68476">0</text>
             </g>
-            <g font-family="NotoSansDisplay-Regular" font-size="13" fill="black">
+            <g font-family="Noto Sans Display" font-size="13" fill="black">
               <text x="322.1" y="-36.1146">1</text>
             </g>
-            <g font-family="NotoSansDisplay-Regular" font-size="13" fill="black">
+            <g font-family="Noto Sans Display" font-size="13" fill="black">
               <text x="322.1" y="-75.9139">2</text>
             </g>
           </g>
@@ -269,19 +269,19 @@
                    M 311.5 -60.6766 L 315.5 -60.6766 M 311.5 -80.5763 L 319.5 -80.5763 M 311.5 -100.476 L 315.5 -100.476 "
             stroke="black" fill="none" stroke-width="0.5"/>
           <g>
-            <g font-family="NotoSansDisplay-Regular" font-size="13" fill="black">
+            <g font-family="Noto Sans Display" font-size="13" fill="black">
               <text x="0.5" y="-129.365">0</text>
             </g>
-            <g font-family="NotoSansDisplay-Regular" font-size="13" fill="black">
+            <g font-family="Noto Sans Display" font-size="13" fill="black">
               <text x="60.5568" y="-129.365">2</text>
             </g>
-            <g font-family="NotoSansDisplay-Regular" font-size="13" fill="black">
+            <g font-family="Noto Sans Display" font-size="13" fill="black">
               <text x="124.549" y="-129.365">4</text>
             </g>
-            <g font-family="NotoSansDisplay-Regular" font-size="13" fill="black">
+            <g font-family="Noto Sans Display" font-size="13" fill="black">
               <text x="188.54" y="-129.365">6</text>
             </g>
-            <g font-family="NotoSansDisplay-Regular" font-size="13" fill="black">
+            <g font-family="Noto Sans Display" font-size="13" fill="black">
               <text x="252.532" y="-129.365">8</text>
             </g>
           </g>
