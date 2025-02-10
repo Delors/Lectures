@@ -24,6 +24,9 @@
 .. role:: the-blue
 .. role:: peripheral
 .. role:: obsolete
+.. role:: math-i
+.. role:: math-r
+.. role:: math-b
 
 .. role:: raw-html(raw)
    :format: html
@@ -79,8 +82,8 @@ Basic Terminologioe of Distributed Systems
 
 
 
-Empfohlene Literatur
----------------------
+Recommended Literature
+-----------------------
 
 .. image:: screenshots/distributed-systems.net.png
     :width: 75%
@@ -88,7 +91,7 @@ Empfohlene Literatur
 
 .. supplemental::
 
-    Ergänzend bzw. für interessierte Studierende:
+    Supplemental material for interested students:
 
     .. image:: screenshots/microservices.jpg
         :width: 70%
@@ -98,7 +101,7 @@ Empfohlene Literatur
 
 
 
-Empfohlener Podcast: `SE-Radio <https://se-radio.net>`__
+Recommended Podcast: `SE-Radio <https://se-radio.net>`__
 -----------------------------------------------------------
 
 .. image:: screenshots/se-radio.net.png
@@ -107,7 +110,7 @@ Empfohlener Podcast: `SE-Radio <https://se-radio.net>`__
 
 
 
-Empfohlener Podcast: `Thoughtworks Technology Podcast <https://www.thoughtworks.com/en-de/insights/podcasts/technology-podcasts>`__
+Recommended Podcast: `Thoughtworks Technology Podcast <https://www.thoughtworks.com/en-de/insights/podcasts/technology-podcasts>`__
 -------------------------------------------------------------------------------------------------------------------------------------
 
 .. image:: screenshots/thoughtworks-technology-podcast.png  
@@ -119,12 +122,12 @@ Empfohlener Podcast: `Thoughtworks Technology Podcast <https://www.thoughtworks.
 
 .. class:: new-section transition-fade
 
-Verteilte Systeme - Beschreibung und Eigenschaften
+Distributed Systems - Definition and Properties
 ------------------------------------------------------------
 
 
 
-Distributed vs Decentralized 
+Distributed vs. Decentralized 
 -------------------------------------------------------------------
 
 .. image:: images/distributed-vs-decentralized.svg
@@ -136,92 +139,111 @@ Distributed vs Decentralized
 
     .. admonition:: Zwei Ansichten zur Realisierung verteilter Systeme
 
-        - **Integrative Sichtweise**: Verbindung bestehender (lokal) vernetzter Computersysteme zu einem größeren System.
-        - **Expansive Sichtweise**: ein bestehendes vernetztes Computersystem wird um zusätzliche Computer erweitert.
+        - **Integrative view**: Connection of existing (locally) networked computer systems to form a larger system.
+        - **Expansive view**: an existing networked computer system is expanded to include additional computers.
 
-    .. admonition:: Zwei Definitionen
+    .. definition::
 
-        - Ein **dezentrales System** ist ein vernetztes Computersystem, in dem Prozesse und Ressourcen *notwendigerweise* über mehrere Computer verteilt sind.
-        - Ein **verteiltes System** ist ein vernetztes Computersystem, bei dem Prozesse und Ressourcen *hinreichend* über mehrere Computer verteilt sind.
+        - A **decentralised system** is a networked computer system in which processes and resources are *necessarily* distributed across multiple computers.
+        - A **distributed system** is a networked computer system in which processes and resources are *sufficiently* distributed across several computers.
 
 
 
-Häufige Missverständnisse bzgl. zentralisierter Systeme
+Common misunderstandings regarding centralised systems
 --------------------------------------------------------
 
 .. class:: incremental-list 
 
-1. **Zentralisierte Lösungen lassen sich nicht skalieren**
+1. **Centralized solutions do not scale**
          
-   Es gilt zwischen logischer und physischer Zentralisierung zu unterscheiden. Zum Beispiel ist das *Domain Name System*:
+   A distinction must be made between logical and physical centralization. 
+   
+   .. example::
 
-   - logisch zentralisiert
-   - physisch (massiv) verteilt
-   - dezentralisiert über mehrere Organisationen
+      The *Domain Name System (DNS)*:
+
+      .. class:: column-list
+
+      - \ 
+
+        - logisch zentralisiert
+        - physisch (massiv) verteilt
+
+      - \ 
+
+        - dezentralisiert über mehrere Organisationen
   
-2. **Zentralisierte Lösungen haben einen Single Point of Failure**
-      
-   Im Allgemeinen nicht zutreffend (z. B. DNS). 
-    
-   Ein einzelne mögliche Fehlerquelle ist weiterhin oft:
+2. **Centralized solutions have a single point of failure**
 
-   - leichter zu verwalten
-   - einfacher robuster zu machen
+   Generally not true (e.g. DNS). 
+    
+   A single possible source of error is often...
+
+   .. class:: column-list
+
+   - \ 
+
+     - easier to manage
+
+   - \ 
+
+     - easier to make more robust
 
 .. supplemental:: 
     
     .. warning:: 
 
-        Es gibt viele, schlecht begründete Missverständnisse in Bezug auf, z. B. Skalierbarkeit, Fehlertoleranz oder Sicherheit. Wir müssen Fähigkeiten entwickeln, mit denen verteilte Systeme leicht verstanden werden können, um solche Missverständnisse zu vermeiden.
+        There are many, poorly founded misconceptions about, for example, scalability, fault tolerance or security. We need to develop skills that make it easy to understand distributed systems in order to avoid such misunderstandings.
 
 
 
-Sichtweisen auf verteilte Systeme
-----------------------------------
+Perspectives on Distributed Systems
+------------------------------------
 
-**Verteilte Systeme sind komplex.**
+**Distributes systems are complex.**
 
 .. class:: incremental-list
 
-- Welche Architekturen und „Architekturellen Stile“ (:eng:`architectural styles`) gibt es?
-- Prozesse: Welche Art von Prozessen gibt es und wie sind deren Beziehungen?
-- Kommunikation: Welche Möglichkeiten zum Austausch von Daten gibt es?
-- Koordinierung: Wie erfolgt die Koordinierung der beteiligten Systeme?
-- Benennung: Wie identifiziert man Ressourcen?
-- Konsistenz und Replikation: Welche Tradeoffs müssen in Hinblick auf die Konsistenz der Daten, der Replikation derselben und der Performance getroffen werden?
-- Fehlertoleranz: Wie kann eine Aufrechterhaltung des Betriebs auch bei Teilausfällen gewährleistet werden?
-- Sicherheit: Wie kann der autorisierte Zugriff auf Ressourcen gewährleistet werden?
+:Architectures: What architectures and "architectural styles" are there?
+:Processes: What kind of processes are there and what are their relationships?
+:Communication: What options are there for exchanging data?
+:Coordination: How are the involved systems coordinated?
+:Naming: How do you identify resources?
+:Consistency and replication: What trade-offs need to be made in terms of data consistency, replication and performance?
+:Fault tolerance: How can operations be maintained even in the event of partial failures?
+:Security: How can authorized access to resources be guaranteed?
 
 
 
-Entwurfsziele verteilter Systeme
-----------------------------------
+
+Design-goals of Distributed Systems
+------------------------------------
 
 .. class:: incremental-list dhbw-list
 
-- `gemeinsame Nutzung von Ressourcen`_ 
-- `Distribution Transparency`
-- `Offenheit`_
-- `Skalierbarkeit`_
+- `Shared Usage of Resources`_ 
+- `Distribution Transparency`_
+- `Openness`_
+- `Scalability`_
 
 
 
 .. class:: new-subsection transition-fade
 
-Gemeinsame Nutzung von Ressourcen
+Shared Usage of Resources
 ------------------------------------
 
 
 
-Gemeinsame Nutzung von Ressourcen - Examples
+Shared Usage of Resources - Examples
 ---------------------------------------------
 
 .. class:: incremental-list
 
-- Cloud-basierter gemeinsamer Speicher und Dateien
-- Peer-to-Peer-unterstütztes Multimedia-Streaming
-- Gemeinsame E-Mail-Dienste (z. B. ausgelagerte E-Mail-Systeme)
-- Gemeinsames Webhosting (z. B. *Content Distribution Networks*)
+- Cloud-based shared storage and files
+- Peer-to-peer supported multimedia streaming
+- Shared email services (e.g. outsourced email systems)
+- Shared web hosting (e.g. *content distribution networks*)
 
 
 
@@ -238,29 +260,30 @@ Definition
 .. definition::
 
     .. rubric:: Distribution Transparency
-    
-    Transparenz beschreibt die Eigenschaft, dass ein verteiltes System versucht, die Tatsache zu verbergen, dass seine Prozesse und Ressourcen physisch auf mehrere Computer verteilt sind, die möglicherweise durch große Entfernungen voneinander getrennt sind.
 
+    Transparency describes the property that a distributed system attempts to hide the fact that its processes and resources are physically distributed across multiple computers that may be separated by large(r) distances.
+    
 .. container:: incremental margin-top-2em
 
-  Die Verteilungstransparenz wird durch viele verschiedene Techniken von der so genannten *Middleware* realisiert - einer Schicht zwischen Anwendungen und Betriebssystemen.
+  The distribution transparency is realized by many different techniques of the so-called *middleware* - a layer between applications and operating systems.
 
 
 
-Aspekte der Verteilungstransparenz 
+Aspects of Distribution Transparency
 ----------------------------------------------------------------------------
 
 .. csv-table:: 
     :class: incremental-table-rows booktabs
     :stub-columns: 1
 
-    Datenzugriff, Verbergen von Unterschieden in der Datendarstellung und der Art des Zugriffs auf ein lokales bzw. entferntes Objekt
-    Ort der Datenhaltung, "Verbergen, wo sich ein Objekt befindet"
-    Verschieben, "Verbergen, dass ein Objekt während der Verwendung an einen anderen Ort verschoben werden kann"
-    Migration, "Verbergen, dass ein Objekt an einen anderen Ort verschoben werden kann" 
-    Replikation, "Verbergen, dass ein Objekt repliziert wird"
-    Nebenläufigkeit, "Verbergen, dass ein Objekt von mehreren unabhängigen Benutzern gemeinsam genutzt werden kann"
-    Fehlertransparenz, Verbergen des Ausfalls und der Wiederherstellung eines Objekts
+    Data access, hide differences in data representation and the type of access to a local or remote object
+    Location of data storage, hide where an object is located
+    Relocation, hide that an object may be moved to another location while in use
+    Migration, hide that an object may be moved to another location
+    Replication, hide that an object is replicated
+    Concurrency, hide that an object may be shared by several independent users
+    Fault transparency, hide the failure and recovery of an object
+
 
 
 .. supplemental::
@@ -268,79 +291,84 @@ Aspekte der Verteilungstransparenz
     Datendarstellung: Big-Endian vs. Little-Endian; ASCII vs. Iso-Latin 8859-1 vs. UTF-8
 
 
-Grad der erreichbaren Verteilungstransparenz
---------------------------------------------
+Degree of achievable Distribution Transparency
+-----------------------------------------------
 
 .. observation::
 
-    Eine vollständige Verteilungstransparenz ist nicht erreichbar. 
+    Complete distribution transparency cannot be achieved. 
 
 .. container:: incremental
 
-    Jedoch kann auch eine sehr hohe Verteilungstransparenz bereits hohe Kosten nach sich ziehen.
+    However, a high level of distribution transparency can result in high costs.
 
 .. class:: incremental-list
 
-- Es gibt Kommunikationslatenzen, die nicht verborgen werden können.
-- Es ist (theoretisch und praktisch) unmöglich, Ausfälle von Netzen und Knoten vollständig zu verbergen.
-- Man kann einen langsamen Computer nicht von einem ausgefallenen Computer unterscheiden.
-- Man kann nie sicher sein, dass ein Server tatsächlich eine Operation durchgeführt hat, bevor er abgestürzt ist.
-- Vollständige Transparenz kostet Performance und legt die Verteilung des Systems offen.
+- There are communication latencies that cannot be hidden.
+- It is (theoretically and practically) impossible to completely hide network and node failures.
+- You cannot distinguish a slow computer from a failed computer.
+- You can never be sure that a server was actually performing an operation before it crashed.
+- "Complete transparency" costs performance and exposes the distribution of the system.
   
-  - Die Replikate exakt auf dem Stand des Masters zu halten, kostet Zeit 
-  - Schreibvorgänge werden zur Fehlertoleranz sofort auf die Festplatte übertragen
+  - Keeping the replicas exactly on the same level as the master takes time 
+  - Write operations are immediately transferred to the hard drive for fault tolerance
 
 
 
-Die Verteilung offen zu legen, kann Vorteile bringen
+
+Disclosing Distribution can bring Advantages
 -----------------------------------------------------
 
-.. class:: incremental-list
+.. class:: incremental-list list-with-explanations
 
-- Nutzung von standortbezogenen Diensten (Auffinden von Freunden in der Nähe)
-- Beim Umgang mit Benutzern in verschiedenen Zeitzonen
-- Wenn es für einen Benutzer einfacher ist, zu verstehen, was vor sich geht (wenn z. B. ein Server lange Zeit nicht antwortet, kann er als ausgefallen gemeldet werden).
+- Use of location-based services 
+  (E. g. to enable finding friends nearby.)
+
+- When dealing with users in different time zones
+- When it is easier for a user to understand what is going on 
+
+  (E.g. if a server does not respond for a long time, it can be reported as down).
 
 .. observation::
     :class: incremental
 
-    Verteilungstransparenz ist ein hehres Ziel, aber oft schwer zu erreichen, und häufig auch nicht erstrebenswert. 
+    Distribution transparency is a noble goal, but often difficult to achieve and frequently not worth striving for. 
 
 
 
 .. class:: new-subsection transition-fade
 
-Offene verteilte Systeme   
+Open Distributed Systems
 -------------------------------------------------------------
 
-.. _offenheit:
+.. _openness:
 
 \ 
 
 
-Offene verteilte Systeme
+Open Distributed Systems
 ----------------------------------
 
 .. definition:: 
 
-    Ein offenes verteiltes System bietet Komponenten an, die leicht von anderen Systemen verwendet oder in andere Systeme integriert werden können. 
+    An open distributed system offers components that can easily be used by other systems or integrated into other systems. 
     
-    Ein offenes verteiltes System besteht selbst oft aus Komponenten, die von woanders stammen.
+    An open distributed system itself often consists of components that originate from elsewhere.
 
 .. container:: incremental 
 
-    Offene verteilte Systeme müssen in der Lage sein, mit Diensten anderer (offener) Systeme zu interagieren, unabhängig von der zugrunde liegenden Umgebung:
+    Open distributed systems must be able to interact with services of other (open) systems, regardless of the underlying environment:
 
     .. class:: incremental-list
 
-    - Sie sollten wohl-definierte Schnittstellen korrekt realisieren
-    - Sie sollten leicht mit anderen Systemen interagieren können
-    - Sie sollten die Portabilität von Anwendungen unterstützen 
-    - Sie sollten leicht erweiterbar sein
+    - they should implement well-defined interfaces correctly
+    - they should be able to interact easily with other systems
+    - they should support the portability of applications 
+    - they should be easily extensible
 
 .. supplemental::
     
-    Ein Beispiel sind Authentifizierungsdienste, die von vielen verschiedenen Anwendungen genutzt werden können.
+    Authentication services are one example. They can be used by many different applications.
 
 
 
@@ -351,142 +379,140 @@ Policies vs. Mechanisms
 
     :eng:`Policies vs. Mechanisms` ≘ :ger:`Vorgaben/Richtlinien vs. Umsetzungen`
     
-.. rubric:: Richtlinien für die Umsetzung von Offenheit
+.. rubric:: Policies when implementing openness
 
 .. class:: incremental-list
 
-- Welchen Grad an Konsistenz benötigen wir für Daten im Client-Cache?
-- Welche Operationen erlauben wir heruntergeladenem Code?
-- Welche QoS-Anforderungen passen wir angesichts schwankender Bandbreiten an? 
-- Welchen Grad an Geheimhaltung benötigen wir für die Kommunikation?
+- What level of consistency do we need for data in the client cache?
+- What operations do we allow downloaded code to perform?
+- Which QoS requirements do we adapt in the presence of fluctuating bandwidths?  
+- What level of secrecy do we need for communication?
 
 .. class:: incremental
 
-.. rubric:: Mechanismen bzgl. der Umsetzung von Offenheit
+.. rubric:: Mechanisms to support openness
 
 .. class:: incremental-list
 
-- Ermöglichung der (dynamischen) Einstellung von Caching-Richtlinien
-- Unterstützung verschiedener Vertrauensstufen für mobilen Code
-- Bereitstellung einstellbarer QoS-Parameter pro Datenstrom 
-- Angebot verschiedener Verschlüsselungsalgorithmen
+- Enabling the (dynamic) setting of caching policies
+- Support of different trust levels for mobile code
+- Provisioning of adjustable QoS parameters per data stream 
+- Provisioning of various encryption algorithms
 
 .. supplemental::
 
-    Die harte Kodierung von Richtlinien vereinfacht oft die Verwaltung und reduziert die Komplexität des Systems. Hat jedoch den Preis geringerer Flexibilität.
+    The hard coding of policies often simplifies administration and reduces the complexity of the system. However, it comes at the price of less flexibility.
 
 
 
-Sicherheit in verteilten Systemen - Schutzziele
--------------------------------------------------
+Security in Distributed Systems - Security Objectives
+------------------------------------------------------
 
 .. observation::
 
-    Ein verteiltes System, das nicht sicher ist, ist nicht verlässlich.
+    A distributed system that is not secure is not reliable.
 
 .. container:: incremental
 
-    .. rubric:: Grundlegende Schutzziele
+    .. rubric:: Foundational security objectives
 
-    :Vertraulichkeit: Informationen werden nur an autorisierte Parteien weitergegeben.
-    :Integrität: Änderungen an den Werten eines Systems dürfen nur auf autorisierte Weise vorgenommen werden können.
+    :**Confidentiality**: Information is only passed on to authorized parties.
+    :**Integrity**: Changes to the values of a system may only be made in an authorized manner.
 
 .. supplemental::
 
-    Zusammen mit dem dritten Schutzziel: Verfügbarkeit, bilden diese drei Schutzziele die CIA-Triade der Informationssicherheit (:eng:`Confidentiality, Integrity, and Availability`).
+    Together with the third security objective: **availability**, these three protection objectives form the CIA triad of information security: Confidentiality, Integrity, and Availability.
 
 
 
-Sicherheit in verteilten Systemen - Autorisierung, Authentifizierung, Vertrauen
+Security in Distributed Systems - Authorization, Authentication, Trust
 -------------------------------------------------------------------------------------
 
-.. class:: incremental
+.. class:: incremental-list
 
-:Authentifizierung `Authentication`:eng:: Prozess zur Überprüfung der Korrektheit einer behaupteten Identität.
-
-.. class:: incremental
-
-:Autorisierung `Authorization`:eng:: Verfügt eine identifizierte Einheit über die richtigen Zugriffsrechte?
-
-.. class:: incremental
-
-:Vertrauen `Trust`:eng:: Eine Komponente kann sich sicher sein, dass eine andere Komponente bestimmte Handlungen gemäß den Erwartungen ausführt.
+:Authentication: Process for verifying the correctness of a claimed identity.
+:Authorization: Does an identified unit have the correct access rights?
+:Trust: A component can be certain that another component will perform certain actions in accordance with expectations.
 
 
 
-Sicherheit - Verschlüsselung und Signaturen
+Security - Encryption and Signatures
 ---------------------------------------------
 
-Es geht im Wesentlichen um das Ver- und Entschlüsseln von Daten (:math:`X`) mit Hilfe von Schlüsseln.
+It is essentially about encrypting and decrypting data (:math-i:`X`) with the help of keys.
 
 .. deck::
 
-    .. card:: trbl-shadow padding-1em
+    .. card:: trbl-shadow padding-1em rounded-corners
 
-        :math:`E(K,X)` bedeutet, dass wir die Nachricht X mit dem Schlüssel :math:`K`  verschlüsseln (:eng:`encryption`). 
+        :math-i:`E(K,X)` means that we **e**\ ncrypt the message :math-i:`X` with the key :math-i:`K`. 
         
-        :math:`D(K,X)` bezeichnet die Umkehrfunktion, die die Daten wieder entschlüsselt (:eng:`decryption`).
+        :math-i:`D(K,X)` denotes the inverse function that **d**\ ecrypts the data.
 
     .. card:: trbl-shadow padding-1em
 
-        .. rubric:: Symmetrische Verschlüsselung
+        .. rubric:: Symmetric Encryption
 
-        Der Schlüssel zur Verschlüsselung ist identisch mit dem Schlüssel zur Entschlüsselung (:eng:`decryption` (:math:`D`)).
+        The encryption key is identical to the decryption key; the same key :math-i:`K` is used for both operations.
 
-        .. math::
-            X = D(K,E(K,X)) 
+        :math-i:`X = D(K,E(K,X))`
     
     .. card:: trbl-shadow padding-1em
 
-        .. rubric:: Asymmetrische Verschlüsselung
+        .. rubric:: Asymmetric Encryption
 
-        Wir unterscheiden zwischen privaten (:math:`PR`) und öffentlichen Schlüsseln (:math:`PU`) (:math:`PU` :math:`\neq` :math:`PR`). Ein privater und ein öffentlicher Schlüssel bilden immer ein Paar. Der private Schlüssel ist immer geheim zu halten.
+        We distinguish between private (:math-i:`PR`) and public keys (:math-i:`PU`) (:math-i:`PU` :math:`\neq` :math-i:`PR`). A private and a public key always form a pair. The private key must always be kept secret.
         
         .. deck:: incremental
 
             .. card::
 
-                **Verschlüsselung von Nachrichten**
-                
-                Alice sendet eine Nachricht an Bob mit Hilfe des öffentlichen Schlüssels von Bob.
+                **Encrypting Messages**
+
+                Alice sends a message to Bob using Bob's public key.
 
                 .. math::
+                    
                     Y = E(PU_{Bob},X) \\
-                    X = D(PR_{Bob},Y) 
+                    X = D(PR_{Bob},Y)
 
             .. card:: 
 
-                **Signierung von Nachrichten**
+                **Signing Messages**
 
-                Alice „signiert“ (:math:`S`) eine Nachricht mit ihrem privaten Schlüssel.
+                Alice signs (:math:`S`) a message with her private key.
 
                 .. math::
+
                     Y = E(PR_{Alice},X) \\
                     X = D(PU_{Alice},Y)
 
 
 
-Sicherheit - Sicheres Hashing 
+Security - Secure Hashing 
 ------------------------------------------------------- 
 
-Eine sichere Hash-Funktion :math:`Digest(X)` gibt eine Zeichenkette fester Länge (:math:`H`) zurück.
+A secure hash function :math-i:`Digest(X)` returns a character string of fixed length (:math-i:`H`).
 
-- Jede Änderung - noch so klein - der Eingabedaten führt zu einer völlig anderen Zeichenkette.
-- Bei einem Hash-Wert ist es rechnerisch unmöglich die ursprüngliche Nachricht X basierend auf :math:`Digest(X)` zu finden.
+- Any change - no matter how small - to the input data results in a completely different character string.
+- With a hash value, it is mathematically impossible to find the original message :math-i:`X` based on :math-i:`Digest(X)`.
 
 .. container:: incremental
 
-    .. rubric:: Signieren von Nachrichten
+    .. rubric:: Signing Messages
 
-    Alice signiert eine Nachricht :math:`X` mit ihrem privaten Schlüssel.
+    .. class:: column-list incremental-list
 
-    .. math::
-        Alice: [E(PR_{Alice},H=Digest(X)),X] \\
+    - Alice signs a message :math-i:`X` with her private key.
 
-    Bob prüft die Nachricht :math:`X` auf Authentizität:
+      .. math::
+        \text{Alice:} [E(PR_{\text{Alice}},H=Digest(X)),X] 
 
-    .. math::
-        Bob: D(PU_{Alice},H) \stackrel{?}{=} Digest(X)
+    - Bob checks the message :math-i:`X` for authenticity:
+
+      .. math::
+        
+        \text{Bob:} D(PU_{\text{Alice}},H) \stackrel{?}{=} Digest(X)
 
 
 .. supplemental::
@@ -497,185 +523,177 @@ Eine sichere Hash-Funktion :math:`Digest(X)` gibt eine Zeichenkette fester Läng
 
 .. class:: exercises
 
-Zwischenfrage
+Question
 ----------------
 
-.. exercise:: Verschlüsselung mit Public-Private-Key Verfahren
+.. exercise:: Encryption with Public-Private Keys/Asymmetric Encryption
 
-    Wenn Alice eine mit Bobs öffentlichen Schlüssel verschlüsselte Nachricht an Ihn schickt, welches Sicherheitsproblem kann dann aufkommen?
+    If Alice sends Bob a message encrypted with Bob's public key, what security problem could arise?
 
     .. solution:: 
-        :pwd: nicht sicher
+        :pwd: MITM_arise
 
-        Alice kann nicht sicher sein, dass Ihre Nachricht nicht ausgetauscht wird! Jeder, der die Nachricht abfängt kann die Nachricht verwerfen und eine eigene mit Bobs öffentlichen Schlüssel verschlüsseln. Je nach Hintergrundwissen der dritten Person kann diese Nachricht ggf. auch so aussehen, als ob sie von Alice stammt.
+        Alice cannot be sure that her message will not be exchanged! Anyone who intercepts the message can discard the message and encrypt their own with Bob's public key. Depending on the third party's background knowledge, this message may also look as if it comes from Alice.
         
-        Bob kann also nicht sicher sein, dass die Nachricht von Alice stammt. 
+        Bob can therefore not be sure that the message is from Alice.  
 
 
 
 .. class:: new-subsection transition-fade
 
-Skalierbarkeit
+Scalability
 ---------------------- 
 
 
-Skalierbarkeit in verteilten Systemen
+Scalability in Distributed Systems
 -----------------------------------------
 
-Wir können mind. drei Arten von Skalierbarkeit unterscheiden:
+We can distinguish at least three types of scalability:
 
 .. class:: incremental-list
 
-- Anzahl der Benutzer oder Prozesse (Skalierbarkeit der Größe)
-- Maximale Entfernung zwischen den Knoten (geografische Skalierbarkeit) 
-- Anzahl der administrativen Domänen (administrative Skalierbarkeit)
-
-
-Ursachen für Skalierbarkeitsprobleme bei zentralisierten Lösungen:
----------------------------------------------------------------------
-
-- Die Rechenkapazität, da diese begrenzt ist durch die Anzahl CPUs
-- Die Speicherkapazität, einschließlich der Übertragungsrate zwischen CPUs und Festplatten 
-- Das Netzwerk zwischen dem Benutzer und dem zentralisierten Dienst
+- Number of users or processes (size scalability)
+- Maximum distance between nodes (geographical scalability) 
+- Number of administrative domains (administrative scalability)
 
 .. supplemental::
 
-    Die Skalierbarkeit bzgl. der Größe kann oft durch den Einsatz von mehr und leistungsstärkeren Servern, die parallel betrieben werden, erreicht werden.
+    Scalability in terms of size can often be achieved by using more and more powerful servers that are operated in parallel.
 
-    Die geografische und administrative Skalierbarkeit ist häufig eine größere Herausforderung.
+    Geographical and administrative scalability is often a greater challenge.
 
 
-Formale Analyse der Skalierbarkeit zentralisierter Systeme
+
+Analysis of the Scalability of Centralized Systems
 ------------------------------------------------------------
 
-Ein zentralisierter Dienst kann als einfaches Warteschlangensystem modelliert werden:
+.. deck::
 
-.. image:: images/queuing-system.svg
-    :align: center
+    .. card::
 
-.. rubric:: Annahmen
+        A centralized service can be modelled as a simple queuing system:
 
-Die Warteschlange hat eine unendliche Kapazität; d. h.die Ankunftsrate der Anfragen wird nicht durch die aktuelle Länge der Warteschlange oder durch das, was gerade bearbeitet wird, beeinflusst.
+        .. image:: images/queuing-system.svg
+            :align: center
 
+        .. rubric:: Assumptions
 
+        The queue has an infinite capacity, i.e. the arrival rate of requests is not influenced by the current length of the queue or by what is currently being processed.
 
-Formale Analyse der Skalierbarkeit zentralisierter Systeme
-------------------------------------------------------------
+    .. card::
 
-.. grid::
+        .. grid:: 
 
-    .. cell::
+            .. cell::
 
-        - Ankunftsrate der Anfragen: 
+                - Arrival rate of requests: 
+                    
+                  :math:`\lambda` *(requests per second)*
+
+                - Processing capacity of the service: 
+                        
+                  :math:`\mu` *(requests per second)*
+
+                  Proportion of time with :math-i:`x` requests in the system:
+
+                  .. math::
+
+                        p_x  = \bigl(1 - \frac{\lambda}{\mu}\bigr)\bigl(\frac{\lambda}{\mu}\bigr)^x
+
+            .. cell::
+
+                .. figure:: images/number_of_requests_in_system.svg
+                    :align: center
+
+                    # Requests in process and in queue 
+                    
+                    For example, the proportion of time in which the computer is *idle* (i. e. :math:`p_0`) is : 90 %, 60 % and 30 %.
+
+                    .. presenter-note::
+                    
+                        :math:`p_0`; i. e. there are no/0 enquiries.
+
+        .. presenter-note::
+
+            The formula math:`p_x = \bigl(1 - \frac{\lambda}{\mu}\bigr)\bigl(\frac{\lambda}{\mu}\bigr)^x`  can be understood as follows: The probability that there are :math-i:`x` requests in the system decreases with the number of requests in the system. Therefore, :math:`\bigl(\frac{\lambda}{\mu}\bigr)^x` applies. Furthermore, we must model that there are "only" two requests (i. e. the system is otherwise "idle"). Therefore, we still have to multiply by :math:`p_0 = 1 - \frac{\lambda}{\mu}`.
+
+    .. card:: 
+
+        .. note::
             
-            :math:`\lambda` *(Anfragen pro Sekunde)*
+            :math-i:`x` = # Anfragen im Sys.
 
-        - Verarbeitungskapazität des Services: 
+            .. math::
+                p_x  = \bigl(1 - \frac{\lambda}{\mu}\bigr)\bigl(\frac{\lambda}{\mu}\bigr)^x
+            
+
+        :math-i:`U` is the proportion of time in which a service is utilized:
+
+        .. math::
+
+            U = \sum_{x > 0} p_x = 1 - p_0 = \frac{\lambda}{\mu} \Rightarrow p_x = (1-U) U^x
+
+        .. container:: incremental
                 
-            :math:`\mu` *(Anfragen pro Sekunde)*
-
-            Anteil der Zeit mit :math:`x` Anfragen im System:
+            Average number of requests:
 
             .. math::
 
-                p_x  = \bigl(1 - \frac{\lambda}{\mu}\bigr)\bigl(\frac{\lambda}{\mu}\bigr)^x
+                \begin{matrix}
+                    \bar{N} & = & \sum_{x\geq 0} x \cdot p_x 
+                    = \sum_{x \geq 0} x \cdot (1-U)U^x \\
+                    & = & (1-U)\sum_{x\geq 0} x\cdot U^x  
+                    = \frac{(1-U)U}{(1-U)^2} = \frac{U}{1-U}
+                \end{matrix}
 
-    .. cell::
+        .. container:: incremental
 
-        .. figure:: images/number_of_requests_in_system.svg
-            :align: center
-
-            # Anfragen in Bearbeitung und in Warteschlange 
+            .. class:: column-list left-aligned-columns
             
-            Z. B. ist der Anteil der Zeit, in der der Rechner *idle* ist (d. h. :math:`p_0`) : 90 %, 60 % und 30 %.
+            - Average throughput:
+            - .. math::
 
-            .. presenter-note::
+                X = \underbrace{U \cdot \mu}_{\mbox{utilized}} + \underbrace{(1-U) \cdot 0}_{\mbox{unused}} = \frac{\lambda}{\mu} \cdot \mu = \lambda 
+
+        .. supplemental::
+
+            For an `infinite geometric series <https://de.wikipedia.org/wiki/Geometrische_Reihe#Konvergenz_und_Wert_der_geometrischen_Reihe>`__ with the quotient :math-i:`U` applies:
+
+            .. math::
+                \sum_{k\geq 0} k\cdot U^k  = \frac{U}{(1-U)^2} 
+
+            Representation of the average number of requests in the system depending on the utilization :math-i:`U`:
+
+            .. image:: images/average_number_of_requests_in_system.svg
+                :align: center
+
+
+    .. card:: 
+
+        .. class:: column-list
+
+        - The response time is the total time taken to process a request
+
+          .. math::
             
-                :math:`p_0`; d. h.es gibt keine bzw. 0 Anfragen.
+            \begin{matrix}
+                R & = \frac{\bar{N}}{X} = \frac{S}{1-U} \\
+                & \Rightarrow \frac{R}{S} = \frac{1}{1-U} 
+            \end{matrix}
 
-.. presenter-note::
+          with :math:`S = \frac{1}{\mu}` for the average service time. 
+            
+        - \ 
 
-    Anschaulich kann man die Formel:
-    :math:`p_x  = \bigl(1 - \frac{\lambda}{\mu}\bigr)\bigl(\frac{\lambda}{\mu}\bigr)^x` so verstehen, dass die Wahrscheinlichkeit, dass sich :math:`x` Anfragen im System befinden, mit der Anzahl der Anfragen im System abnimmt. Deswegen gilt :math:`\bigl(\frac{\lambda}{\mu}\bigr)^x` weiterhin müssen wir modellieren, dass es „nur“ zwei Anfragen gibt (d. h. das System ist sonst `idle`). Deswegen müssen wir noch mit :math:`p_0 = 1 - \frac{\lambda}{\mu}` multiplizieren.
+          .. image:: images/response_time.svg
+                :alt: Response time w.r.t. utilization
+                
+          .. class:: incremental-list
 
-
-
-.. class:: smaller
-
-Formale Analyse der Skalierbarkeit zentralisierter Systeme
-------------------------------------------------------------
-
-.. note::
-    
-    :math:`x` = # Anfragen im Sys.
-
-    .. math::
-        p_x  = \bigl(1 - \frac{\lambda}{\mu}\bigr)\bigl(\frac{\lambda}{\mu}\bigr)^x
-    
-
-:math:`U` ist der Anteil der Zeit, in der ein Dienst ausgelastet ist:
-
-.. math::
-
-    U = \sum_{x > 0} p_x = 1 - p_0 = \frac{\lambda}{\mu} \Rightarrow p_x = (1-U) U^x
-
-
-.. container:: incremental
+        \ 
         
-    Durchschnittliche Anzahl der Anfragen:
-
-    .. math::
-
-        \bar{N} = \sum_{x\geq 0} x \cdot p_x 
-        = \sum_{x \geq 0} x \cdot (1-U)U^x 
-        = (1-U)\sum_{x\geq 0} x\cdot U^x  
-        = \frac{(1-U)U}{(1-U)^2} = \frac{U}{1-U}
-
-.. container:: incremental
-
-    Durchschnittlicher Durchsatz:
-
-    .. math::
-
-        X = \underbrace{U \cdot \mu}_{\mbox{ausgelastet}} + \underbrace{(1-U) \cdot 0}_{\mbox{ungenutzt}} = \frac{\lambda}{\mu} \cdot \mu = \lambda 
-
-
-.. supplemental::
-
-    Für eine `unendliche geometrische Reihe <https://de.wikipedia.org/wiki/Geometrische_Reihe#Konvergenz_und_Wert_der_geometrischen_Reihe>`__ mit dem Quotienten :math:`U` gilt:
-
-    .. math::
-        \sum_{k\geq 0} k\cdot U^k  = \frac{U}{(1-U)^2} 
-
-    Darstellung der durchschnittlichen Anzahl an Anfragen im System in Abhängigkeit von der Auslastung :math:`U`:
-
-    .. image:: images/average_number_of_requests_in_system.svg
-        :align: center
-
-
-
-Formale Analyse der Skalierbarkeit zentralisierter Systeme
-------------------------------------------------------------
-
-.. class:: column-list
-
-- Die Antwortszeit (:eng:`response time`) ist die Gesamtzeit für die Bearbeitung einer Anfrage
-
-  .. math::
-    
-    R = \frac{\bar{N}}{X} = \frac{S}{1-U} \Rightarrow \frac{R}{S} = \frac{1}{1-U} 
-
-  mit :math:`S = \frac{1}{\mu}` für die durchschnittliche Servicezeit. 
-    
-- \ 
-
-  .. image:: images/response_time.svg
-        :alt: Antwortszeit in Abhängigkeit der Auslastung
-        
-.. class:: incremental-list
-
-- Wenn :math:`U` klein ist, liegt die Antwortzeit nahe bei 1; d. h.eine Anfrage wird sofort bearbeitet.
-- Wenn :math:`U` auf 1 ansteigt, kommt das System zum Stillstand. 
+        - If :math-i:`U` is small, the response time is close to :math-r:`1`, i.e. a request is processed immediately.
+        - If :math-i:`U` increases to :math-r:`1`, the system comes to a standstill. 
 
 
 
