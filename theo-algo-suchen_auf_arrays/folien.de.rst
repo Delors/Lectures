@@ -38,7 +38,7 @@
    :language: python
 
 
-.. class:: animated-symbol 
+.. class :: animated-symbol 
 
 Suchen auf Arrays
 ======================================================
@@ -47,7 +47,7 @@ Suchen auf Arrays
 
 :Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
 :Kontakt: michael.eichberg@dhbw.de, Raum 149B
-:Version: 1.1.3
+:Version: 1.1.4
 
 .. container:: minor
 
@@ -684,7 +684,7 @@ Exponentielle Suche im sortierten (unbeschränkten) *Array*
 
             Für die linear interpolierende Suche wird :math:`p_{lin}(5)` berechnet unter den Bedingungen, dass :math:`p_{lin}(-27) = 1` und :math:`p_{lin}(13) = 15` ist. Es ergibt sich:
 
-            :math:`p_{lin}(15) = 1·{5-13 \over -27-13} + 15·{5+27 \over 13+27} = \frac{1}{5} + 12 ≈12`
+            :math:`p_{lin}(5) = 1·{5-13 \over -27-13} + 15·{5+27 \over 13+27} = \frac{1}{5} + 12 ≈12`
 
         :quadratisch interpolierende Suche:
 
