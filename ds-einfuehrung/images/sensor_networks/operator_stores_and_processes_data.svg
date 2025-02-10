@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns="http://www.w3.org/2000/svg" xmlns:xl="http://www.w3.org/1999/xlink" version="1.1" viewBox="1 -15 798 294" width="798" height="294">
+<svg xmlns:dc="http://purl.org/dc/elements/1.1/" version="1.1" xmlns:xl="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" viewBox="167 27 447 241" width="447" height="241">
+  <style>
+    @import url('/LectureDoc2/ext/fonts/ld-fonts.css'); 
+  </style>
   <defs>
-    <filter id="Shadow" filterUnits="userSpaceOnUse" x="-78.8" y="-44.4">
+    <filter id="Shadow" filterUnits="userSpaceOnUse" x="122.3" y="2.9">
       <feGaussianBlur in="SourceAlpha" result="blur" stdDeviation="2.616"/>
       <feOffset in="blur" result="offset" dx="0" dy="4"/>
       <feFlood flood-color="black" flood-opacity=".5" result="flood"/>
@@ -17,185 +20,314 @@
       <stop offset=".9336584" stop-color="#99d0eb" stop-opacity=".5"/>
       <stop offset="1" stop-color="white" stop-opacity="0"/>
     </linearGradient>
-    <linearGradient id="Obj_Gradient" xl:href="#Gradient" gradientTransform="translate(148.13432 180.23974) rotate(-133.44236) scale(78.85506)"/>
-    <linearGradient id="Obj_Gradient_2" xl:href="#Gradient" gradientTransform="translate(102.29481 115.04644) rotate(46.55764) scale(54.472144)"/>
-    <linearGradient id="Obj_Gradient_3" xl:href="#Gradient" gradientTransform="translate(149.08835 181.01428) rotate(-133.44236) scale(78.85506)"/>
+    <linearGradient id="Obj_Gradient" xl:href="#Gradient" gradientTransform="translate(234.06106 180.22773) rotate(-133.44236) scale(78.88976)"/>
+    <linearGradient id="Obj_Gradient_2" xl:href="#Gradient" gradientTransform="translate(188.2054 115.00192) rotate(46.55764) scale(54.484404)"/>
+    <linearGradient id="Obj_Gradient_3" xl:href="#Gradient" gradientTransform="translate(235.01508 181.00298) rotate(-133.44236) scale(78.88976)"/>
     <linearGradient x1="0" x2="1" id="Gradient_2" gradientUnits="userSpaceOnUse">
       <stop offset=".16833588" stop-color="#029ed5"/>
       <stop offset=".9336584" stop-color="#99d0eb" stop-opacity=".5"/>
       <stop offset="1" stop-color="white" stop-opacity="0"/>
     </linearGradient>
-    <linearGradient id="Obj_Gradient_4" xl:href="#Gradient_2" gradientTransform="translate(123.23792 146.96972) rotate(-95.92573) scale(24.426677)"/>
-    <font-face font-family="Helvetica" font-size="16" units-per-em="1000" underline-position="-75.68359" underline-thickness="49.316406" slope="0" x-height="522.9492" cap-height="717.28516" ascent="770.0195" descent="-229.98047" font-weight="400">
-      <font-face-src>
-        <font-face-name name="Helvetica"/>
-      </font-face-src>
-    </font-face>
+    <linearGradient id="Obj_Gradient_4" xl:href="#Gradient_2" gradientTransform="translate(209.1536 146.938) rotate(-95.92573) scale(24.443472)"/>
     <marker orient="auto" overflow="visible" markerUnits="strokeWidth" id="FilledArrow_Marker" stroke-linejoin="miter" stroke-miterlimit="10" viewBox="-1 -4 10 8" markerWidth="10" markerHeight="8" color="black">
       <g>
         <path d="M 8 0 L 0 -3 L 0 3 Z" fill="currentColor" stroke="currentColor" stroke-width="1"/>
       </g>
     </marker>
-    <font-face font-family="Helvetica" font-size="13" units-per-em="1000" underline-position="-75.68359" underline-thickness="49.316406" slope="0" x-height="522.9492" cap-height="717.28516" ascent="770.0195" descent="-229.98047" font-weight="400">
-      <font-face-src>
-        <font-face-name name="Helvetica"/>
-      </font-face-src>
-    </font-face>
+    <linearGradient id="Obj_Gradient_5" xl:href="#Gradient" gradientTransform="translate(416.1853 128.09879) rotate(-133.44236) scale(26.525404)"/>
+    <linearGradient id="Obj_Gradient_6" xl:href="#Gradient" gradientTransform="translate(400.76573 106.16895) rotate(46.55764) scale(18.323436)"/>
+    <linearGradient id="Obj_Gradient_7" xl:href="#Gradient" gradientTransform="translate(416.5062 128.35933) rotate(-133.44236) scale(26.525404)"/>
+    <linearGradient id="Obj_Gradient_8" xl:href="#Gradient_2" gradientTransform="translate(407.8106 116.90736) rotate(-95.92573) scale(8.216689)"/>
+    <linearGradient id="Obj_Gradient_9" xl:href="#Gradient" gradientTransform="translate(478.676 112.3635) rotate(-133.44236) scale(26.525404)"/>
+    <linearGradient id="Obj_Gradient_10" xl:href="#Gradient" gradientTransform="translate(463.25644 90.43366) rotate(46.55764) scale(18.323436)"/>
+    <linearGradient id="Obj_Gradient_11" xl:href="#Gradient" gradientTransform="translate(478.99693 112.62404) rotate(-133.44236) scale(26.525404)"/>
+    <linearGradient id="Obj_Gradient_12" xl:href="#Gradient_2" gradientTransform="translate(470.3013 101.17207) rotate(-95.92573) scale(8.216689)"/>
+    <linearGradient id="Obj_Gradient_13" xl:href="#Gradient" gradientTransform="translate(540.6373 92.09879) rotate(-133.44236) scale(26.525404)"/>
+    <linearGradient id="Obj_Gradient_14" xl:href="#Gradient" gradientTransform="translate(525.21774 70.16895) rotate(46.55764) scale(18.323436)"/>
+    <linearGradient id="Obj_Gradient_15" xl:href="#Gradient" gradientTransform="translate(540.95823 92.35933) rotate(-133.44236) scale(26.525404)"/>
+    <linearGradient id="Obj_Gradient_16" xl:href="#Gradient_2" gradientTransform="translate(532.2626 80.90736) rotate(-95.92573) scale(8.216689)"/>
+    <linearGradient id="Obj_Gradient_17" xl:href="#Gradient" gradientTransform="translate(536.4794 149.0624) rotate(-133.44236) scale(26.525404)"/>
+    <linearGradient id="Obj_Gradient_18" xl:href="#Gradient" gradientTransform="translate(521.05985 127.13257) rotate(46.55764) scale(18.323436)"/>
+    <linearGradient id="Obj_Gradient_19" xl:href="#Gradient" gradientTransform="translate(536.80034 149.32295) rotate(-133.44236) scale(26.525404)"/>
+    <linearGradient id="Obj_Gradient_20" xl:href="#Gradient_2" gradientTransform="translate(528.1047 137.87098) rotate(-95.92573) scale(8.216689)"/>
+    <linearGradient id="Obj_Gradient_21" xl:href="#Gradient" gradientTransform="translate(507.4373 194.58408) rotate(-133.44236) scale(26.525404)"/>
+    <linearGradient id="Obj_Gradient_22" xl:href="#Gradient" gradientTransform="translate(492.01775 172.65425) rotate(46.55764) scale(18.323436)"/>
+    <linearGradient id="Obj_Gradient_23" xl:href="#Gradient" gradientTransform="translate(507.75825 194.84462) rotate(-133.44236) scale(26.525404)"/>
+    <linearGradient id="Obj_Gradient_24" xl:href="#Gradient_2" gradientTransform="translate(499.06263 183.39265) rotate(-95.92573) scale(8.216689)"/>
+    <linearGradient id="Obj_Gradient_25" xl:href="#Gradient" gradientTransform="translate(437.5853 191.68702) rotate(-133.44236) scale(26.525404)"/>
+    <linearGradient id="Obj_Gradient_26" xl:href="#Gradient" gradientTransform="translate(422.16574 169.75719) rotate(46.55764) scale(18.323436)"/>
+    <linearGradient id="Obj_Gradient_27" xl:href="#Gradient" gradientTransform="translate(437.90623 191.94757) rotate(-133.44236) scale(26.525404)"/>
+    <linearGradient id="Obj_Gradient_28" xl:href="#Gradient_2" gradientTransform="translate(429.2106 180.4956) rotate(-95.92573) scale(8.216689)"/>
+    <linearGradient id="Obj_Gradient_29" xl:href="#Gradient" gradientTransform="translate(493.77165 230.89988) rotate(-133.44236) scale(26.525404)"/>
+    <linearGradient id="Obj_Gradient_30" xl:href="#Gradient" gradientTransform="translate(478.3521 208.97004) rotate(46.55764) scale(18.323436)"/>
+    <linearGradient id="Obj_Gradient_31" xl:href="#Gradient" gradientTransform="translate(494.09257 231.16042) rotate(-133.44236) scale(26.525404)"/>
+    <linearGradient id="Obj_Gradient_32" xl:href="#Gradient_2" gradientTransform="translate(485.39695 219.70845) rotate(-95.92573) scale(8.216689)"/>
+    <linearGradient id="Obj_Gradient_33" xl:href="#Gradient" gradientTransform="translate(564.0491 216.91715) rotate(-133.44236) scale(26.525404)"/>
+    <linearGradient id="Obj_Gradient_34" xl:href="#Gradient" gradientTransform="translate(548.6295 194.98731) rotate(46.55764) scale(18.323436)"/>
+    <linearGradient id="Obj_Gradient_35" xl:href="#Gradient" gradientTransform="translate(564.37 217.1777) rotate(-133.44236) scale(26.525404)"/>
+    <linearGradient id="Obj_Gradient_36" xl:href="#Gradient_2" gradientTransform="translate(555.6744 205.72572) rotate(-95.92573) scale(8.216689)"/>
+    <linearGradient id="Obj_Gradient_37" xl:href="#Gradient" gradientTransform="translate(476.4059 142.58924) rotate(-133.44236) scale(26.525404)"/>
+    <linearGradient id="Obj_Gradient_38" xl:href="#Gradient" gradientTransform="translate(460.9863 120.6594) rotate(46.55764) scale(18.323436)"/>
+    <linearGradient id="Obj_Gradient_39" xl:href="#Gradient" gradientTransform="translate(476.7268 142.84978) rotate(-133.44236) scale(26.525404)"/>
+    <linearGradient id="Obj_Gradient_40" xl:href="#Gradient_2" gradientTransform="translate(468.0312 131.3978) rotate(-95.92573) scale(8.216689)"/>
   </defs>
-  <metadata> Produced by OmniGraffle 8.0\n2024-02-02 09:52:01 +0000</metadata>
-  <g id="operator_stores_and_processes_data" stroke-opacity="1" stroke="none" fill="none" fill-opacity="1" stroke-dasharray="none">
+  <metadata> Produced by OmniGraffle 8.0\n2025-02-09 20:00:13 +0000</metadata>
+  <g id="operator_stores_and_processes_data" stroke-opacity="1" stroke-dasharray="none" fill="none" fill-opacity="1" stroke="none">
     <title>operator_stores_and_processes_data</title>
-    <rect fill="white" x="1" y="-15" width="798" height="294"/>
+    <rect fill="white" x="167" y="27" width="447" height="241"/>
     <g id="operator_stores_and_processes_data_Layer_1">
       <title>Layer 1</title>
       <g id="Graphic_631" filter="url(#Shadow)">
-        <path d="M 394.5791 161.78298 C 320.71875 149 350.1724 41.3883 467.99614 59.75 C 478.9276 23.95718 615.94075 29.76676 615.045 59.75 C 700.9565 21.40106 810.7461 97.86808 737.1052 136.21702 C 825.4707 154.80958 735.9901 254.98378 663.46875 238.25 C 657.66485 266.14122 528.0185 275.9016 516.6392 238.25 C 443.22674 278.4601 290.15002 216.63484 394.5791 161.78298 Z" fill="#dadada"/>
-        <path d="M 394.5791 161.78298 C 320.71875 149 350.1724 41.3883 467.99614 59.75 C 478.9276 23.95718 615.94075 29.76676 615.045 59.75 C 700.9565 21.40106 810.7461 97.86808 737.1052 136.21702 C 825.4707 154.80958 735.9901 254.98378 663.46875 238.25 C 657.66485 266.14122 528.0185 275.9016 516.6392 238.25 C 443.22674 278.4601 290.15002 216.63484 394.5791 161.78298 Z" stroke="#666" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <path d="M 370.46064 155.8972 C 326.5 143.68514 344.0304 40.87967 414.15744 58.421285 C 420.6637 24.227068 502.212 29.777177 501.6789 58.421285 C 552.8122 21.785112 618.15745 94.83691 574.3274 131.47308 C 626.9213 149.23525 573.6637 244.9354 530.5 228.949 C 527.0456 255.59452 449.8819 264.91898 443.1091 228.949 C 399.41504 267.3632 308.30592 208.29923 370.46064 155.8972 Z" fill="#dadada"/>
+        <path d="M 370.46064 155.8972 C 326.5 143.68514 344.0304 40.87967 414.15744 58.421285 C 420.6637 24.227068 502.212 29.777177 501.6789 58.421285 C 552.8122 21.785112 618.15745 94.83691 574.3274 131.47308 C 626.9213 149.23525 573.6637 244.9354 530.5 228.949 C 527.0456 255.59452 449.8819 264.91898 443.1091 228.949 C 399.41504 267.3632 308.30592 208.29923 370.46064 155.8972 Z" stroke="#666" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
       </g>
-      <g id="Group_630">
-        <g id="Graphic_594">
-          <ellipse cx="415.226" cy="119.2353" rx="10.2260219993155" ry="9.50001518006802" fill="#a5a5a5"/>
-          <ellipse cx="415.226" cy="119.2353" rx="10.2260219993155" ry="9.50001518006802" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
-        </g>
-        <g id="Graphic_595">
-          <ellipse cx="455.8309" cy="109.80882" rx="10.2260219993156" ry="9.50001518006802" fill="#a5a5a5"/>
-          <ellipse cx="455.8309" cy="109.80882" rx="10.2260219993156" ry="9.50001518006802" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
-        </g>
-        <g id="Graphic_596">
-          <ellipse cx="468.8309" cy="147.75" rx="10.2260219993155" ry="9.500015180068" fill="#a5a5a5"/>
-          <ellipse cx="468.8309" cy="147.75" rx="10.2260219993155" ry="9.500015180068" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
-        </g>
-        <g id="Graphic_597">
-          <ellipse cx="533.36034" cy="138.27941" rx="10.2260219993155" ry="9.500015180068" fill="#a5a5a5"/>
-          <ellipse cx="533.36034" cy="138.27941" rx="10.2260219993155" ry="9.500015180068" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
-        </g>
-        <g id="Graphic_598">
-          <ellipse cx="597.88975" cy="128.80882" rx="10.2260219993156" ry="9.50001518006801" fill="#a5a5a5"/>
-          <ellipse cx="597.88975" cy="128.80882" rx="10.2260219993156" ry="9.50001518006801" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
-        </g>
-        <g id="Graphic_603">
-          <ellipse cx="494.36034" cy="118.83824" rx="10.2260219993156" ry="9.50001518006801" fill="#a5a5a5"/>
-          <ellipse cx="494.36034" cy="118.83824" rx="10.2260219993156" ry="9.50001518006801" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
-        </g>
-        <g id="Graphic_602">
-          <ellipse cx="559.36034" cy="109.83824" rx="10.2260219993155" ry="9.50001518006801" fill="#a5a5a5"/>
-          <ellipse cx="559.36034" cy="109.83824" rx="10.2260219993155" ry="9.50001518006801" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
-        </g>
-        <g id="Graphic_601">
-          <ellipse cx="572.36034" cy="147.77941" rx="10.2260219993155" ry="9.500015180068" fill="#a5a5a5"/>
-          <ellipse cx="572.36034" cy="147.77941" rx="10.2260219993155" ry="9.500015180068" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
-        </g>
-        <g id="Graphic_600">
-          <ellipse cx="661.2848" cy="138.7353" rx="10.2260219993155" ry="9.500015180068" fill="#a5a5a5"/>
-          <ellipse cx="661.2848" cy="138.7353" rx="10.2260219993155" ry="9.500015180068" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
-        </g>
-        <g id="Graphic_599">
-          <ellipse cx="559.36034" cy="185.72059" rx="10.2260219993155" ry="9.50001518006801" fill="#a5a5a5"/>
-          <ellipse cx="559.36034" cy="185.72059" rx="10.2260219993155" ry="9.50001518006801" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
-        </g>
-        <g id="Graphic_608">
-          <ellipse cx="622.2848" cy="83.23529" rx="10.2260219993155" ry="9.50001518006802" fill="#a5a5a5"/>
-          <ellipse cx="622.2848" cy="83.23529" rx="10.2260219993155" ry="9.50001518006802" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
-        </g>
-        <g id="Graphic_607">
-          <ellipse cx="686.81424" cy="109.82353" rx="10.2260219993155" ry="9.50001518006802" fill="#a5a5a5"/>
-          <ellipse cx="686.81424" cy="109.82353" rx="10.2260219993155" ry="9.50001518006802" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
-        </g>
-        <g id="Graphic_606">
-          <ellipse cx="699.8142" cy="147.7647" rx="10.2260219993155" ry="9.50001518006801" fill="#a5a5a5"/>
-          <ellipse cx="699.8142" cy="147.7647" rx="10.2260219993155" ry="9.50001518006801" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
-        </g>
-        <g id="Graphic_605">
-          <ellipse cx="503.8309" cy="182.80882" rx="10.2260219993155" ry="9.50001518006801" fill="#a5a5a5"/>
-          <ellipse cx="503.8309" cy="182.80882" rx="10.2260219993155" ry="9.50001518006801" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
-        </g>
-        <g id="Graphic_604">
-          <ellipse cx="541.226" cy="83.23529" rx="10.2260219993155" ry="9.50001518006802" fill="#a5a5a5"/>
-          <ellipse cx="541.226" cy="83.23529" rx="10.2260219993155" ry="9.50001518006802" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
-        </g>
-        <g id="Graphic_626">
-          <ellipse cx="494.36034" cy="220.7647" rx="10.2260219993156" ry="9.50001518006801" fill="#a5a5a5"/>
-          <ellipse cx="494.36034" cy="220.7647" rx="10.2260219993156" ry="9.50001518006801" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
-        </g>
-        <g id="Graphic_625">
-          <ellipse cx="532.226" cy="182.79412" rx="10.2260219993155" ry="9.50001518006801" fill="#a5a5a5"/>
-          <ellipse cx="532.226" cy="182.79412" rx="10.2260219993155" ry="9.50001518006801" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
-        </g>
-        <g id="Graphic_624">
-          <ellipse cx="596.7554" cy="173.32353" rx="10.2260219993155" ry="9.500015180068" fill="#a5a5a5"/>
-          <ellipse cx="596.7554" cy="173.32353" rx="10.2260219993155" ry="9.500015180068" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
-        </g>
-        <g id="Graphic_623">
-          <ellipse cx="661.2848" cy="163.85294" rx="10.2260219993155" ry="9.50001518006802" fill="#a5a5a5"/>
-          <ellipse cx="661.2848" cy="163.85294" rx="10.2260219993155" ry="9.50001518006802" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
-        </g>
-        <g id="Graphic_622">
-          <ellipse cx="437.226" cy="182.82353" rx="10.2260219993155" ry="9.50001518006801" fill="#a5a5a5"/>
-          <ellipse cx="437.226" cy="182.82353" rx="10.2260219993155" ry="9.50001518006801" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
-        </g>
-        <g id="Graphic_621">
-          <ellipse cx="622.7554" cy="144.88235" rx="10.2260219993155" ry="9.500015180068" fill="#a5a5a5"/>
-          <ellipse cx="622.7554" cy="144.88235" rx="10.2260219993155" ry="9.500015180068" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
-        </g>
-        <g id="Graphic_620">
-          <ellipse cx="635.7554" cy="182.82353" rx="10.2260219993155" ry="9.50001518006801" fill="#a5a5a5"/>
-          <ellipse cx="635.7554" cy="182.82353" rx="10.2260219993155" ry="9.50001518006801" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
-        </g>
-        <g id="Graphic_619">
-          <ellipse cx="622.7554" cy="220.7647" rx="10.2260219993155" ry="9.50001518006801" fill="#a5a5a5"/>
-          <ellipse cx="622.7554" cy="220.7647" rx="10.2260219993155" ry="9.50001518006801" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
-        </g>
-        <g id="Graphic_618">
-          <ellipse cx="567.226" cy="217.85294" rx="10.2260219993155" ry="9.500015180068" fill="#a5a5a5"/>
-          <ellipse cx="567.226" cy="217.85294" rx="10.2260219993155" ry="9.500015180068" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
-        </g>
+      <g id="Graphic_594">
+        <ellipse cx="385.226" cy="119.2353" rx="10.2260219993155" ry="9.50001518006802" fill="#a5a5a5"/>
+        <ellipse cx="385.226" cy="119.2353" rx="10.2260219993155" ry="9.50001518006802" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_597">
+        <ellipse cx="504.726" cy="141.47059" rx="10.2260219993155" ry="9.50001518006801" fill="#a5a5a5"/>
+        <ellipse cx="504.726" cy="141.47059" rx="10.2260219993155" ry="9.50001518006801" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_598">
+        <ellipse cx="444.5054" cy="133.0899" rx="10.2260219993155" ry="9.50001518006802" fill="#a5a5a5"/>
+        <ellipse cx="444.5054" cy="133.0899" rx="10.2260219993155" ry="9.50001518006802" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_603">
+        <ellipse cx="449.2647" cy="103.5" rx="10.2260219993155" ry="9.50001518006802" fill="#a5a5a5"/>
+        <ellipse cx="449.2647" cy="103.5" rx="10.2260219993155" ry="9.50001518006802" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_606">
+        <ellipse cx="531.678" cy="208.05366" rx="10.2260219993155" ry="9.500015180068" fill="#a5a5a5"/>
+        <ellipse cx="531.678" cy="208.05366" rx="10.2260219993155" ry="9.500015180068" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_605">
+        <ellipse cx="478.026" cy="185.72059" rx="10.2260219993155" ry="9.500015180068" fill="#a5a5a5"/>
+        <ellipse cx="478.026" cy="185.72059" rx="10.2260219993155" ry="9.500015180068" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_604">
+        <ellipse cx="511.226" cy="83.23529" rx="10.2260219993155" ry="9.50001518006802" fill="#a5a5a5"/>
+        <ellipse cx="511.226" cy="83.23529" rx="10.2260219993155" ry="9.50001518006802" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_626">
+        <ellipse cx="464.36034" cy="220.7647" rx="10.2260219993155" ry="9.500015180068" fill="#a5a5a5"/>
+        <ellipse cx="464.36034" cy="220.7647" rx="10.2260219993155" ry="9.500015180068" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_622">
+        <ellipse cx="407.226" cy="182.82353" rx="10.2260219993156" ry="9.500015180068" fill="#a5a5a5"/>
+        <ellipse cx="407.226" cy="182.82353" rx="10.2260219993156" ry="9.500015180068" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
       </g>
       <g id="Graphic_627">
-        <path d="M 42 89 L 201 89 C 203.76142 89 206 91.23858 206 94 L 206 210 C 206 212.76142 203.76142 215 201 215 L 42 215 C 39.238576 215 37 212.76142 37 210 L 37 94 C 37 91.23858 39.238576 89 42 89 Z" fill="#a5a5a5"/>
+        <path d="M 172.49534 109.7353 L 248.29534 109.7353 C 251.05676 109.7353 253.29534 111.97387 253.29534 114.7353 L 253.29534 190.22059 C 253.29534 192.98201 251.05676 195.22059 248.29534 195.22059 L 172.49534 195.22059 C 169.73392 195.22059 167.49534 192.98201 167.49534 190.22059 L 167.49534 114.7353 C 167.49534 111.97387 169.73392 109.7353 172.49534 109.7353 Z" fill="#a5a5a5"/>
       </g>
       <g id="Group_431">
         <g id="Graphic_435">
-          <path d="M 150.94595 134.83471 C 150.94599 134.826 150.94599 134.81729 150.94595 134.80858 L 150.94595 134.6726 L 150.94205 134.6726 C 150.82102 132.37492 147.9009 130.08852 142.1817 128.33527 C 130.49606 124.75292 111.54991 124.75292 99.86427 128.33527 C 94.14508 130.08852 91.22496 132.37492 91.10392 134.6726 L 91.10001 134.6726 L 91.10001 134.81244 C 91.09999 134.81858 91.09999 134.82471 91.10001 134.83084 L 91.10001 168.39461 C 91.09999 168.40075 91.09999 168.40688 91.10001 168.41302 L 91.10001 168.66227 L 91.11181 168.66227 C 91.31838 170.923 94.23587 173.16477 99.86427 174.8902 C 111.54991 178.47254 130.49606 178.47254 142.1817 174.8902 C 147.8101 173.16477 150.7276 170.923 150.93417 168.66227 L 150.94595 168.66227 L 150.94595 168.41688 C 150.94599 168.40817 150.94599 168.39946 150.94595 168.39075 Z" fill="url(#Obj_Gradient)"/>
-          <path d="M 150.94595 134.83471 C 150.94599 134.826 150.94599 134.81729 150.94595 134.80858 L 150.94595 134.6726 L 150.94205 134.6726 C 150.82102 132.37492 147.9009 130.08852 142.1817 128.33527 C 130.49606 124.75292 111.54991 124.75292 99.86427 128.33527 C 94.14508 130.08852 91.22496 132.37492 91.10392 134.6726 L 91.10001 134.6726 L 91.10001 134.81244 C 91.09999 134.81858 91.09999 134.82471 91.10001 134.83084 L 91.10001 168.39461 C 91.09999 168.40075 91.09999 168.40688 91.10001 168.41302 L 91.10001 168.66227 L 91.11181 168.66227 C 91.31838 170.923 94.23587 173.16477 99.86427 174.8902 C 111.54991 178.47254 130.49606 178.47254 142.1817 174.8902 C 147.8101 173.16477 150.7276 170.923 150.93417 168.66227 L 150.94595 168.66227 L 150.94595 168.41688 C 150.94599 168.40817 150.94599 168.39946 150.94595 168.39075 Z" stroke="white" stroke-opacity=".48790474" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+          <path d="M 236.86075 134.79466 C 236.8608 134.78594 236.8608 134.77722 236.86075 134.7685 L 236.86075 134.6324 L 236.85686 134.6324 C 236.73582 132.3326 233.8157 130.0441 228.0965 128.28923 C 216.41087 124.70359 197.46472 124.70359 185.77908 128.28923 C 180.05988 130.0441 177.13977 132.3326 177.01873 134.6324 L 177.01482 134.6324 L 177.01482 134.77237 C 177.0148 134.77851 177.0148 134.78465 177.01482 134.79079 L 177.01482 168.38545 C 177.0148 168.3916 177.0148 168.39773 177.01482 168.40387 L 177.01482 168.65336 L 177.02661 168.65336 C 177.23319 170.91616 180.15067 173.16 185.77908 174.887 C 197.46472 178.47265 216.41087 178.47265 228.0965 174.887 C 233.7249 173.16 236.6424 170.91616 236.84898 168.65336 L 236.86075 168.65336 L 236.86075 168.40774 C 236.8608 168.39902 236.8608 168.3903 236.86075 168.38158 Z" fill="url(#Obj_Gradient)"/>
+          <path d="M 236.86075 134.79466 C 236.8608 134.78594 236.8608 134.77722 236.86075 134.7685 L 236.86075 134.6324 L 236.85686 134.6324 C 236.73582 132.3326 233.8157 130.0441 228.0965 128.28923 C 216.41087 124.70359 197.46472 124.70359 185.77908 128.28923 C 180.05988 130.0441 177.13977 132.3326 177.01873 134.6324 L 177.01482 134.6324 L 177.01482 134.77237 C 177.0148 134.77851 177.0148 134.78465 177.01482 134.79079 L 177.01482 168.38545 C 177.0148 168.3916 177.0148 168.39773 177.01482 168.40387 L 177.01482 168.65336 L 177.02661 168.65336 C 177.23319 170.91616 180.15067 173.16 185.77908 174.887 C 197.46472 178.47265 216.41087 178.47265 228.0965 174.887 C 233.7249 173.16 236.6424 170.91616 236.84898 168.65336 L 236.86075 168.65336 L 236.86075 168.40774 C 236.8608 168.39902 236.8608 168.3903 236.86075 168.38158 Z" stroke="white" stroke-opacity=".48790474" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
         </g>
         <g id="Graphic_434">
-          <ellipse cx="121.023" cy="134.82164" rx="29.9230211370941" ry="9.17314471993876" fill="url(#Obj_Gradient_2)"/>
-          <ellipse cx="121.023" cy="134.82164" rx="29.9230211370941" ry="9.17314471993876" stroke="white" stroke-opacity=".48790474" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+          <ellipse cx="206.9378" cy="134.78157" rx="29.9230211370941" ry="9.18158742970464" fill="url(#Obj_Gradient_2)"/>
+          <ellipse cx="206.9378" cy="134.78157" rx="29.9230211370941" ry="9.18158742970464" stroke="white" stroke-opacity=".48790474" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
         </g>
         <g id="Graphic_433">
-          <path d="M 151.89997 135.60925 C 151.90001 135.60054 151.90001 135.59183 151.89997 135.58312 L 151.89997 135.44714 L 151.89608 135.44714 C 151.77504 133.14946 148.85492 130.86307 143.13573 129.10981 C 131.45009 125.52746 112.50394 125.52746 100.8183 129.10981 C 95.0991 130.86307 92.17898 133.14946 92.05795 135.44714 L 92.05404 135.44714 L 92.05404 135.58698 C 92.05402 135.59312 92.05402 135.59925 92.05404 135.60539 L 92.05404 169.16916 C 92.05402 169.17529 92.05402 169.18142 92.05404 169.18756 L 92.05404 169.43682 L 92.06583 169.43682 C 92.2724 171.69754 95.18989 173.9393 100.8183 175.66473 C 112.50394 179.24708 131.45009 179.24708 143.13573 175.66473 C 148.76413 173.9393 151.68162 171.69754 151.8882 169.43682 L 151.89997 169.43682 L 151.89997 169.19142 C 151.90001 169.18271 151.90001 169.174 151.89997 169.1653 Z" fill="url(#Obj_Gradient_3)"/>
-          <path d="M 151.89997 135.60925 C 151.90001 135.60054 151.90001 135.59183 151.89997 135.58312 L 151.89997 135.44714 L 151.89608 135.44714 C 151.77504 133.14946 148.85492 130.86307 143.13573 129.10981 C 131.45009 125.52746 112.50394 125.52746 100.8183 129.10981 C 95.0991 130.86307 92.17898 133.14946 92.05795 135.44714 L 92.05404 135.44714 L 92.05404 135.58698 C 92.05402 135.59312 92.05402 135.59925 92.05404 135.60539 L 92.05404 169.16916 C 92.05402 169.17529 92.05402 169.18142 92.05404 169.18756 L 92.05404 169.43682 L 92.06583 169.43682 C 92.2724 171.69754 95.18989 173.9393 100.8183 175.66473 C 112.50394 179.24708 131.45009 179.24708 143.13573 175.66473 C 148.76413 173.9393 151.68162 171.69754 151.8882 169.43682 L 151.89997 169.43682 L 151.89997 169.19142 C 151.90001 169.18271 151.90001 169.174 151.89997 169.1653 Z" stroke="white" stroke-opacity=".48790474" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+          <path d="M 237.81478 135.56991 C 237.81482 135.5612 237.81482 135.55247 237.81478 135.54375 L 237.81478 135.40765 L 237.81088 135.40765 C 237.68985 133.10786 234.76973 130.81936 229.05053 129.06449 C 217.3649 125.47885 198.41874 125.47885 186.7331 129.06449 C 181.0139 130.81936 178.0938 133.10786 177.97275 135.40765 L 177.96884 135.40765 L 177.96884 135.54762 C 177.96882 135.55376 177.96882 135.5599 177.96884 135.56604 L 177.96884 169.1607 C 177.96882 169.16684 177.96882 169.17298 177.96884 169.17912 L 177.96884 169.42861 L 177.98064 169.42861 C 178.1872 171.69141 181.1047 173.93525 186.7331 175.66226 C 198.41874 179.2479 217.3649 179.2479 229.05053 175.66226 C 234.67894 173.93525 237.59643 171.69141 237.803 169.42861 L 237.81478 169.42861 L 237.81478 169.183 C 237.81482 169.17427 237.81482 169.16555 237.81478 169.15684 Z" fill="url(#Obj_Gradient_3)"/>
+          <path d="M 237.81478 135.56991 C 237.81482 135.5612 237.81482 135.55247 237.81478 135.54375 L 237.81478 135.40765 L 237.81088 135.40765 C 237.68985 133.10786 234.76973 130.81936 229.05053 129.06449 C 217.3649 125.47885 198.41874 125.47885 186.7331 129.06449 C 181.0139 130.81936 178.0938 133.10786 177.97275 135.40765 L 177.96884 135.40765 L 177.96884 135.54762 C 177.96882 135.55376 177.96882 135.5599 177.96884 135.56604 L 177.96884 169.1607 C 177.96882 169.16684 177.96882 169.17298 177.96884 169.17912 L 177.96884 169.42861 L 177.98064 169.42861 C 178.1872 171.69141 181.1047 173.93525 186.7331 175.66226 C 198.41874 179.2479 217.3649 179.2479 229.05053 175.66226 C 234.67894 173.93525 237.59643 171.69141 237.803 169.42861 L 237.81478 169.42861 L 237.81478 169.183 C 237.81482 169.17427 237.81482 169.16555 237.81478 169.15684 Z" stroke="white" stroke-opacity=".48790474" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
         </g>
         <g id="Graphic_432">
-          <ellipse cx="121.97703" cy="134.82164" rx="29.9230211370941" ry="9.17314471993876" fill="url(#Obj_Gradient_4)"/>
-          <ellipse cx="121.97703" cy="134.82164" rx="29.9230211370941" ry="9.17314471993876" stroke="white" stroke-opacity=".48790474" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+          <ellipse cx="207.89183" cy="134.78157" rx="29.9230211370941" ry="9.18158742970464" fill="url(#Obj_Gradient_4)"/>
+          <ellipse cx="207.89183" cy="134.78157" rx="29.9230211370941" ry="9.18158742970464" stroke="white" stroke-opacity=".48790474" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
         </g>
       </g>
       <g id="Graphic_632">
-        <text transform="translate(53.46094 65)" fill="black">
-          <tspan font-family="Helvetica" font-size="16" font-weight="400" fill="black" x="0" y="15">Seite des Betreiber</tspan>
+        <text transform="translate(182.0148 68.72832)" fill="black">
+          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="1.708" y="15" xml:space="preserve">Seite des </tspan>
+          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x=".567" y="34" xml:space="preserve">Betreiber</tspan>
         </text>
       </g>
       <g id="Line_634">
-        <line x1="372" y1="154" x2="215.9" y2="154" marker-end="url(#FilledArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <line x1="358.66667" y1="149.33333" x2="261.09478" y2="147.45524" marker-end="url(#FilledArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
       </g>
       <g id="Line_636">
-        <path d="M 354.07407 123.88889 C 354.07407 123.88889 360.09827 137.77248 318.14815 146.48148 C 285.82525 153.19184 236.73207 154.39884 215.9014 154.59943" marker-end="url(#FilledArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <path d="M 347.66204 101.33333 C 347.66204 101.33333 343.37856 127.35113 316.04942 140.49928 C 297.4101 149.46672 274.0286 149.57163 261.04396 148.7317" marker-end="url(#FilledArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
       </g>
       <g id="Line_637">
-        <path d="M 360.74074 193.51852 C 360.74074 193.51852 365.3203 174.35616 321.4815 163.14815 C 287.58773 154.48274 237.07418 153.72246 215.8999 153.82346" marker-end="url(#FilledArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <path d="M 362 164.66667 C 362 164.66667 341.7326 157.43696 310.34147 152.5069 C 290.3909 149.37362 271.9096 148.1056 261.08842 147.59753" marker-end="url(#FilledArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
       </g>
       <g id="Graphic_638">
-        <text transform="translate(218.39573 173.5)" fill="black">
-          <tspan font-family="Helvetica" font-size="13" font-weight="400" fill="black" x="1.8059082" y="13">Sensordaten werden </tspan>
-          <tspan font-family="Helvetica" font-size="13" font-weight="400" fill="black" x="3.6308594" y="29">direkt zum Betreiber</tspan>
-          <tspan font-family="Helvetica" font-size="13" font-weight="400" fill="black" x="31.433594" y="45"> gesendet.</tspan>
+        <text transform="translate(242.8148 157.37028)" fill="black">
+          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="15.428357" y="15" xml:space="preserve">Sensordaten </tspan>
+          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="31.220357" y="34" xml:space="preserve">werden </tspan>
+          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="21.476357" y="53" xml:space="preserve">direkt zum </tspan>
+          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="25.620357" y="72" xml:space="preserve">Betreiber</tspan>
+          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="22.183357" y="91" xml:space="preserve"> gesendet.</tspan>
         </text>
       </g>
       <g id="Graphic_639">
-        <text transform="translate(500.16075 10.5)" fill="black">
-          <tspan font-family="Helvetica" font-size="16" font-weight="400" fill="black" x="0" y="15">Sensornetzwerk</tspan>
+        <text transform="translate(485.6237 153.42723)" fill="black">
+          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="3907985e-19" y="15" xml:space="preserve">Sensornetzwerk</tspan>
         </text>
+      </g>
+      <g id="Group_642">
+        <g id="Graphic_646">
+          <path d="M 417.1311 112.82536 C 417.1311 112.82243 417.1311 112.8195 417.1311 112.81657 L 417.1311 112.77083 L 417.12977 112.77083 C 417.08906 111.99794 416.1068 111.22883 414.18295 110.63907 C 410.2521 109.43404 403.879 109.43404 399.94814 110.63907 C 398.0243 111.22883 397.04203 111.99794 397.0013 112.77083 L 397 112.77083 L 397 112.81787 C 397 112.81994 397 112.822 397 112.82406 L 397 124.1143 C 397 124.11637 397 124.11843 397 124.1205 L 397 124.20434 L 397.00397 124.20434 C 397.07346 124.9648 398.05485 125.7189 399.94814 126.2993 C 403.879 127.50433 410.2521 127.50433 414.18295 126.2993 C 416.07625 125.7189 417.05764 124.9648 417.1271 124.20434 L 417.1311 124.20434 L 417.1311 124.1218 C 417.1311 124.11886 417.1311 124.11593 417.1311 124.113 Z" fill="url(#Obj_Gradient_5)"/>
+          <path d="M 417.1311 112.82536 C 417.1311 112.82243 417.1311 112.8195 417.1311 112.81657 L 417.1311 112.77083 L 417.12977 112.77083 C 417.08906 111.99794 416.1068 111.22883 414.18295 110.63907 C 410.2521 109.43404 403.879 109.43404 399.94814 110.63907 C 398.0243 111.22883 397.04203 111.99794 397.0013 112.77083 L 397 112.77083 L 397 112.81787 C 397 112.81994 397 112.822 397 112.82406 L 397 124.1143 C 397 124.11637 397 124.11843 397 124.1205 L 397 124.20434 L 397.00397 124.20434 C 397.07346 124.9648 398.05485 125.7189 399.94814 126.2993 C 403.879 127.50433 410.2521 127.50433 414.18295 126.2993 C 416.07625 125.7189 417.05764 124.9648 417.1271 124.20434 L 417.1311 124.20434 L 417.1311 124.1218 C 417.1311 124.11886 417.1311 124.11593 417.1311 124.113 Z" stroke="white" stroke-opacity=".48790474" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+        </g>
+        <g id="Graphic_645">
+          <ellipse cx="407.06555" cy="112.82097" rx="10.0655585173516" ry="3.08567856646729" fill="url(#Obj_Gradient_6)"/>
+          <ellipse cx="407.06555" cy="112.82097" rx="10.0655585173516" ry="3.08567856646729" stroke="white" stroke-opacity=".48790474" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+        </g>
+        <g id="Graphic_644">
+          <path d="M 417.452 113.0859 C 417.452 113.08298 417.452 113.08005 417.452 113.07712 L 417.452 113.03138 L 417.4507 113.03138 C 417.41 112.25848 416.4277 111.48938 414.50387 110.89961 C 410.57303 109.69458 404.1999 109.69458 400.26906 110.89961 C 398.34522 111.48938 397.36295 112.25848 397.32224 113.03138 L 397.3209 113.03138 L 397.3209 113.07842 C 397.3209 113.08048 397.3209 113.08254 397.3209 113.0846 L 397.3209 124.37485 C 397.3209 124.37691 397.3209 124.37897 397.3209 124.38104 L 397.3209 124.46488 L 397.3249 124.46488 C 397.39438 125.22535 398.37577 125.97944 400.26906 126.55984 C 404.1999 127.76488 410.57303 127.76488 414.50387 126.55984 C 416.39716 125.97944 417.37855 125.22535 417.44804 124.46488 L 417.452 124.46488 L 417.452 124.38234 C 417.452 124.3794 417.452 124.37648 417.452 124.37355 Z" fill="url(#Obj_Gradient_7)"/>
+          <path d="M 417.452 113.0859 C 417.452 113.08298 417.452 113.08005 417.452 113.07712 L 417.452 113.03138 L 417.4507 113.03138 C 417.41 112.25848 416.4277 111.48938 414.50387 110.89961 C 410.57303 109.69458 404.1999 109.69458 400.26906 110.89961 C 398.34522 111.48938 397.36295 112.25848 397.32224 113.03138 L 397.3209 113.03138 L 397.3209 113.07842 C 397.3209 113.08048 397.3209 113.08254 397.3209 113.0846 L 397.3209 124.37485 C 397.3209 124.37691 397.3209 124.37897 397.3209 124.38104 L 397.3209 124.46488 L 397.3249 124.46488 C 397.39438 125.22535 398.37577 125.97944 400.26906 126.55984 C 404.1999 127.76488 410.57303 127.76488 414.50387 126.55984 C 416.39716 125.97944 417.37855 125.22535 417.44804 124.46488 L 417.452 124.46488 L 417.452 124.38234 C 417.452 124.3794 417.452 124.37648 417.452 124.37355 Z" stroke="white" stroke-opacity=".48790474" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+        </g>
+        <g id="Graphic_643">
+          <ellipse cx="407.38647" cy="112.82097" rx="10.0655585173517" ry="3.08567856646729" fill="url(#Obj_Gradient_8)"/>
+          <ellipse cx="407.38647" cy="112.82097" rx="10.0655585173517" ry="3.08567856646729" stroke="white" stroke-opacity=".48790474" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+        </g>
+      </g>
+      <g id="Group_647">
+        <g id="Graphic_651">
+          <path d="M 479.6218 97.09007 C 479.6218 97.08714 479.6218 97.08421 479.6218 97.08128 L 479.6218 97.03554 L 479.6205 97.03554 C 479.5798 96.26264 478.5975 95.49354 476.67366 94.90378 C 472.74283 93.69874 466.3697 93.69874 462.43885 94.90378 C 460.515 95.49354 459.53275 96.26264 459.49203 97.03554 L 459.4907 97.03554 L 459.4907 97.08258 C 459.4907 97.08464 459.4907 97.08671 459.4907 97.08877 L 459.4907 108.37901 C 459.4907 108.38107 459.4907 108.38314 459.4907 108.3852 L 459.4907 108.46905 L 459.4947 108.46905 C 459.56417 109.22951 460.54556 109.9836 462.43885 110.564 C 466.3697 111.76904 472.74283 111.76904 476.67366 110.564 C 478.56696 109.9836 479.54835 109.22951 479.61784 108.46905 L 479.6218 108.46905 L 479.6218 108.3865 C 479.6218 108.38357 479.6218 108.38064 479.6218 108.37771 Z" fill="url(#Obj_Gradient_9)"/>
+          <path d="M 479.6218 97.09007 C 479.6218 97.08714 479.6218 97.08421 479.6218 97.08128 L 479.6218 97.03554 L 479.6205 97.03554 C 479.5798 96.26264 478.5975 95.49354 476.67366 94.90378 C 472.74283 93.69874 466.3697 93.69874 462.43885 94.90378 C 460.515 95.49354 459.53275 96.26264 459.49203 97.03554 L 459.4907 97.03554 L 459.4907 97.08258 C 459.4907 97.08464 459.4907 97.08671 459.4907 97.08877 L 459.4907 108.37901 C 459.4907 108.38107 459.4907 108.38314 459.4907 108.3852 L 459.4907 108.46905 L 459.4947 108.46905 C 459.56417 109.22951 460.54556 109.9836 462.43885 110.564 C 466.3697 111.76904 472.74283 111.76904 476.67366 110.564 C 478.56696 109.9836 479.54835 109.22951 479.61784 108.46905 L 479.6218 108.46905 L 479.6218 108.3865 C 479.6218 108.38357 479.6218 108.38064 479.6218 108.37771 Z" stroke="white" stroke-opacity=".48790474" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+        </g>
+        <g id="Graphic_650">
+          <ellipse cx="469.55626" cy="97.08567" rx="10.0655585173516" ry="3.08567856646728" fill="url(#Obj_Gradient_10)"/>
+          <ellipse cx="469.55626" cy="97.08567" rx="10.0655585173516" ry="3.08567856646728" stroke="white" stroke-opacity=".48790474" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+        </g>
+        <g id="Graphic_649">
+          <path d="M 479.9427 97.35061 C 479.9427 97.34768 479.9427 97.34475 479.9427 97.34182 L 479.9427 97.29608 L 479.9414 97.29608 C 479.9007 96.52318 478.9184 95.75408 476.9946 95.16432 C 473.06374 93.95928 466.6906 93.95928 462.75977 95.16432 C 460.83594 95.75408 459.85366 96.52318 459.81295 97.29608 L 459.81163 97.29608 L 459.81163 97.34312 C 459.8116 97.34518 459.8116 97.34725 459.81163 97.34931 L 459.81163 108.63955 C 459.8116 108.64162 459.8116 108.64368 459.81163 108.64574 L 459.81163 108.72959 L 459.8156 108.72959 C 459.8851 109.49005 460.8665 110.24414 462.75977 110.82455 C 466.6906 112.02958 473.06374 112.02958 476.9946 110.82455 C 478.8879 110.24414 479.86926 109.49005 479.93875 108.72959 L 479.9427 108.72959 L 479.9427 108.64704 C 479.9427 108.64411 479.9427 108.64118 479.9427 108.63825 Z" fill="url(#Obj_Gradient_11)"/>
+          <path d="M 479.9427 97.35061 C 479.9427 97.34768 479.9427 97.34475 479.9427 97.34182 L 479.9427 97.29608 L 479.9414 97.29608 C 479.9007 96.52318 478.9184 95.75408 476.9946 95.16432 C 473.06374 93.95928 466.6906 93.95928 462.75977 95.16432 C 460.83594 95.75408 459.85366 96.52318 459.81295 97.29608 L 459.81163 97.29608 L 459.81163 97.34312 C 459.8116 97.34518 459.8116 97.34725 459.81163 97.34931 L 459.81163 108.63955 C 459.8116 108.64162 459.8116 108.64368 459.81163 108.64574 L 459.81163 108.72959 L 459.8156 108.72959 C 459.8851 109.49005 460.8665 110.24414 462.75977 110.82455 C 466.6906 112.02958 473.06374 112.02958 476.9946 110.82455 C 478.8879 110.24414 479.86926 109.49005 479.93875 108.72959 L 479.9427 108.72959 L 479.9427 108.64704 C 479.9427 108.64411 479.9427 108.64118 479.9427 108.63825 Z" stroke="white" stroke-opacity=".48790474" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+        </g>
+        <g id="Graphic_648">
+          <ellipse cx="469.8772" cy="97.08567" rx="10.0655585173516" ry="3.08567856646728" fill="url(#Obj_Gradient_12)"/>
+          <ellipse cx="469.8772" cy="97.08567" rx="10.0655585173516" ry="3.08567856646728" stroke="white" stroke-opacity=".48790474" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+        </g>
+      </g>
+      <g id="Group_652">
+        <g id="Graphic_656">
+          <path d="M 541.5831 76.825365 C 541.5831 76.82243 541.5831 76.8195 541.5831 76.81657 L 541.5831 76.77083 L 541.5818 76.77083 C 541.5411 75.99794 540.5588 75.228835 538.63496 74.63907 C 534.7041 73.434035 528.331 73.434035 524.40015 74.63907 C 522.4763 75.228835 521.49405 75.99794 521.45333 76.77083 L 521.452 76.77083 L 521.452 76.81787 C 521.452 76.81994 521.452 76.822 521.452 76.824065 L 521.452 88.1143 C 521.452 88.11637 521.452 88.11843 521.452 88.1205 L 521.452 88.20434 L 521.456 88.20434 C 521.5255 88.96481 522.50686 89.7189 524.40015 90.2993 C 528.331 91.50433 534.7041 91.50433 538.63496 90.2993 C 540.52826 89.7189 541.50965 88.96481 541.57913 88.20434 L 541.5831 88.20434 L 541.5831 88.1218 C 541.5831 88.11886 541.5831 88.11593 541.5831 88.113 Z" fill="url(#Obj_Gradient_13)"/>
+          <path d="M 541.5831 76.825365 C 541.5831 76.82243 541.5831 76.8195 541.5831 76.81657 L 541.5831 76.77083 L 541.5818 76.77083 C 541.5411 75.99794 540.5588 75.228835 538.63496 74.63907 C 534.7041 73.434035 528.331 73.434035 524.40015 74.63907 C 522.4763 75.228835 521.49405 75.99794 521.45333 76.77083 L 521.452 76.77083 L 521.452 76.81787 C 521.452 76.81994 521.452 76.822 521.452 76.824065 L 521.452 88.1143 C 521.452 88.11637 521.452 88.11843 521.452 88.1205 L 521.452 88.20434 L 521.456 88.20434 C 521.5255 88.96481 522.50686 89.7189 524.40015 90.2993 C 528.331 91.50433 534.7041 91.50433 538.63496 90.2993 C 540.52826 89.7189 541.50965 88.96481 541.57913 88.20434 L 541.5831 88.20434 L 541.5831 88.1218 C 541.5831 88.11886 541.5831 88.11593 541.5831 88.113 Z" stroke="white" stroke-opacity=".48790474" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+        </g>
+        <g id="Graphic_655">
+          <ellipse cx="531.51756" cy="76.82097" rx="10.0655585173515" ry="3.08567856646728" fill="url(#Obj_Gradient_14)"/>
+          <ellipse cx="531.51756" cy="76.82097" rx="10.0655585173515" ry="3.08567856646728" stroke="white" stroke-opacity=".48790474" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+        </g>
+        <g id="Graphic_654">
+          <path d="M 541.904 77.08591 C 541.904 77.08298 541.904 77.08005 541.904 77.077115 L 541.904 77.03138 L 541.9027 77.03138 C 541.862 76.25848 540.8797 75.48938 538.9559 74.89961 C 535.02504 73.69458 528.6519 73.69458 524.7211 74.89961 C 522.79724 75.48938 521.81496 76.25848 521.77425 77.03138 L 521.77293 77.03138 L 521.77293 77.07842 C 521.7729 77.08048 521.7729 77.08254 521.77293 77.08461 L 521.77293 88.37485 C 521.7729 88.37691 521.7729 88.37897 521.77293 88.38104 L 521.77293 88.46488 L 521.7769 88.46488 C 521.8464 89.22535 522.8278 89.97944 524.7211 90.55984 C 528.6519 91.76488 535.02504 91.76488 538.9559 90.55984 C 540.8492 89.97944 541.83056 89.22535 541.90005 88.46488 L 541.904 88.46488 L 541.904 88.38234 C 541.904 88.37941 541.904 88.37648 541.904 88.37355 Z" fill="url(#Obj_Gradient_15)"/>
+          <path d="M 541.904 77.08591 C 541.904 77.08298 541.904 77.08005 541.904 77.077115 L 541.904 77.03138 L 541.9027 77.03138 C 541.862 76.25848 540.8797 75.48938 538.9559 74.89961 C 535.02504 73.69458 528.6519 73.69458 524.7211 74.89961 C 522.79724 75.48938 521.81496 76.25848 521.77425 77.03138 L 521.77293 77.03138 L 521.77293 77.07842 C 521.7729 77.08048 521.7729 77.08254 521.77293 77.08461 L 521.77293 88.37485 C 521.7729 88.37691 521.7729 88.37897 521.77293 88.38104 L 521.77293 88.46488 L 521.7769 88.46488 C 521.8464 89.22535 522.8278 89.97944 524.7211 90.55984 C 528.6519 91.76488 535.02504 91.76488 538.9559 90.55984 C 540.8492 89.97944 541.83056 89.22535 541.90005 88.46488 L 541.904 88.46488 L 541.904 88.38234 C 541.904 88.37941 541.904 88.37648 541.904 88.37355 Z" stroke="white" stroke-opacity=".48790474" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+        </g>
+        <g id="Graphic_653">
+          <ellipse cx="531.8385" cy="76.82097" rx="10.0655585173515" ry="3.08567856646728" fill="url(#Obj_Gradient_16)"/>
+          <ellipse cx="531.8385" cy="76.82097" rx="10.0655585173515" ry="3.08567856646728" stroke="white" stroke-opacity=".48790474" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+        </g>
+      </g>
+      <g id="Group_662">
+        <g id="Graphic_666">
+          <path d="M 537.4252 133.78898 C 537.4252 133.78605 537.4252 133.78312 537.4252 133.78019 L 537.4252 133.73445 L 537.4239 133.73445 C 537.3832 132.96155 536.4009 132.19245 534.4771 131.60269 C 530.54623 130.39765 524.1731 130.39765 520.24226 131.60269 C 518.3184 132.19245 517.33615 132.96155 517.29544 133.73445 L 517.2941 133.73445 L 517.2941 133.78149 C 517.2941 133.78355 517.2941 133.78562 517.2941 133.78768 L 517.2941 145.07792 C 517.2941 145.07998 517.2941 145.08205 517.2941 145.08411 L 517.2941 145.16796 L 517.2981 145.16796 C 517.3676 145.92842 518.34897 146.68251 520.24226 147.26291 C 524.1731 148.46795 530.54623 148.46795 534.4771 147.26291 C 536.37036 146.68251 537.35175 145.92842 537.42124 145.16796 L 537.4252 145.16796 L 537.4252 145.08541 C 537.4252 145.08248 537.4252 145.07955 537.4252 145.07662 Z" fill="url(#Obj_Gradient_17)"/>
+          <path d="M 537.4252 133.78898 C 537.4252 133.78605 537.4252 133.78312 537.4252 133.78019 L 537.4252 133.73445 L 537.4239 133.73445 C 537.3832 132.96155 536.4009 132.19245 534.4771 131.60269 C 530.54623 130.39765 524.1731 130.39765 520.24226 131.60269 C 518.3184 132.19245 517.33615 132.96155 517.29544 133.73445 L 517.2941 133.73445 L 517.2941 133.78149 C 517.2941 133.78355 517.2941 133.78562 517.2941 133.78768 L 517.2941 145.07792 C 517.2941 145.07998 517.2941 145.08205 517.2941 145.08411 L 517.2941 145.16796 L 517.2981 145.16796 C 517.3676 145.92842 518.34897 146.68251 520.24226 147.26291 C 524.1731 148.46795 530.54623 148.46795 534.4771 147.26291 C 536.37036 146.68251 537.35175 145.92842 537.42124 145.16796 L 537.4252 145.16796 L 537.4252 145.08541 C 537.4252 145.08248 537.4252 145.07955 537.4252 145.07662 Z" stroke="white" stroke-opacity=".48790474" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+        </g>
+        <g id="Graphic_665">
+          <ellipse cx="527.3597" cy="133.78458" rx="10.0655585173515" ry="3.08567856646726" fill="url(#Obj_Gradient_18)"/>
+          <ellipse cx="527.3597" cy="133.78458" rx="10.0655585173515" ry="3.08567856646726" stroke="white" stroke-opacity=".48790474" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+        </g>
+        <g id="Graphic_664">
+          <path d="M 537.7461 134.04952 C 537.74613 134.0466 537.74613 134.04366 537.7461 134.04073 L 537.7461 133.995 L 537.7448 133.995 C 537.7041 133.2221 536.7218 132.453 534.798 131.86323 C 530.86715 130.6582 524.494 130.6582 520.5632 131.86323 C 518.63934 132.453 517.65707 133.2221 517.61635 133.995 L 517.61504 133.995 L 517.61504 134.04203 C 517.61503 134.0441 517.61503 134.04616 517.61504 134.04822 L 517.61504 145.33846 C 517.61503 145.34053 517.61503 145.34259 517.61504 145.34465 L 517.61504 145.4285 L 517.619 145.4285 C 517.6885 146.18896 518.6699 146.94305 520.5632 147.52346 C 524.494 148.7285 530.86715 148.7285 534.798 147.52346 C 536.6913 146.94305 537.6727 146.18896 537.74216 145.4285 L 537.7461 145.4285 L 537.7461 145.34595 C 537.74613 145.34302 537.74613 145.3401 537.7461 145.33716 Z" fill="url(#Obj_Gradient_19)"/>
+          <path d="M 537.7461 134.04952 C 537.74613 134.0466 537.74613 134.04366 537.7461 134.04073 L 537.7461 133.995 L 537.7448 133.995 C 537.7041 133.2221 536.7218 132.453 534.798 131.86323 C 530.86715 130.6582 524.494 130.6582 520.5632 131.86323 C 518.63934 132.453 517.65707 133.2221 517.61635 133.995 L 517.61504 133.995 L 517.61504 134.04203 C 517.61503 134.0441 517.61503 134.04616 517.61504 134.04822 L 517.61504 145.33846 C 517.61503 145.34053 517.61503 145.34259 517.61504 145.34465 L 517.61504 145.4285 L 517.619 145.4285 C 517.6885 146.18896 518.6699 146.94305 520.5632 147.52346 C 524.494 148.7285 530.86715 148.7285 534.798 147.52346 C 536.6913 146.94305 537.6727 146.18896 537.74216 145.4285 L 537.7461 145.4285 L 537.7461 145.34595 C 537.74613 145.34302 537.74613 145.3401 537.7461 145.33716 Z" stroke="white" stroke-opacity=".48790474" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+        </g>
+        <g id="Graphic_663">
+          <ellipse cx="527.6806" cy="133.78458" rx="10.0655585173515" ry="3.08567856646726" fill="url(#Obj_Gradient_20)"/>
+          <ellipse cx="527.6806" cy="133.78458" rx="10.0655585173515" ry="3.08567856646726" stroke="white" stroke-opacity=".48790474" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+        </g>
+      </g>
+      <g id="Group_667">
+        <g id="Graphic_671">
+          <path d="M 508.3831 179.31066 C 508.3831 179.30773 508.3831 179.3048 508.3831 179.30187 L 508.3831 179.25613 L 508.3818 179.25613 C 508.3411 178.48323 507.3588 177.71413 505.435 177.12437 C 501.50414 175.91933 495.131 175.91933 491.20016 177.12437 C 489.27633 177.71413 488.29406 178.48323 488.25334 179.25613 L 488.252 179.25613 L 488.252 179.30317 C 488.252 179.30523 488.252 179.3073 488.252 179.30936 L 488.252 190.5996 C 488.252 190.60166 488.252 190.60373 488.252 190.6058 L 488.252 190.68963 L 488.256 190.68963 C 488.3255 191.4501 489.3069 192.2042 491.20016 192.7846 C 495.131 193.98963 501.50414 193.98963 505.435 192.7846 C 507.32827 192.2042 508.30966 191.4501 508.37915 190.68963 L 508.3831 190.68963 L 508.3831 190.6071 C 508.3831 190.60416 508.3831 190.60123 508.3831 190.5983 Z" fill="url(#Obj_Gradient_21)"/>
+          <path d="M 508.3831 179.31066 C 508.3831 179.30773 508.3831 179.3048 508.3831 179.30187 L 508.3831 179.25613 L 508.3818 179.25613 C 508.3411 178.48323 507.3588 177.71413 505.435 177.12437 C 501.50414 175.91933 495.131 175.91933 491.20016 177.12437 C 489.27633 177.71413 488.29406 178.48323 488.25334 179.25613 L 488.252 179.25613 L 488.252 179.30317 C 488.252 179.30523 488.252 179.3073 488.252 179.30936 L 488.252 190.5996 C 488.252 190.60166 488.252 190.60373 488.252 190.6058 L 488.252 190.68963 L 488.256 190.68963 C 488.3255 191.4501 489.3069 192.2042 491.20016 192.7846 C 495.131 193.98963 501.50414 193.98963 505.435 192.7846 C 507.32827 192.2042 508.30966 191.4501 508.37915 190.68963 L 508.3831 190.68963 L 508.3831 190.6071 C 508.3831 190.60416 508.3831 190.60123 508.3831 190.5983 Z" stroke="white" stroke-opacity=".48790474" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+        </g>
+        <g id="Graphic_670">
+          <ellipse cx="498.3176" cy="179.30626" rx="10.0655585173517" ry="3.08567856646726" fill="url(#Obj_Gradient_22)"/>
+          <ellipse cx="498.3176" cy="179.30626" rx="10.0655585173517" ry="3.08567856646726" stroke="white" stroke-opacity=".48790474" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+        </g>
+        <g id="Graphic_669">
+          <path d="M 508.704 179.5712 C 508.70404 179.56827 508.70404 179.56534 508.704 179.5624 L 508.704 179.51667 L 508.7027 179.51667 C 508.662 178.74377 507.6797 177.97467 505.7559 177.3849 C 501.82506 176.17987 495.4519 176.17987 491.5211 177.3849 C 489.59725 177.97467 488.615 178.74377 488.57426 179.51667 L 488.57294 179.51667 L 488.57294 179.5637 C 488.57294 179.56577 488.57294 179.56784 488.57294 179.5699 L 488.57294 190.86014 C 488.57294 190.8622 488.57294 190.86427 488.57294 190.86633 L 488.57294 190.95018 L 488.5769 190.95018 C 488.6464 191.71064 489.6278 192.46473 491.5211 193.04513 C 495.4519 194.25017 501.82506 194.25017 505.7559 193.04513 C 507.6492 192.46473 508.6306 191.71064 508.70006 190.95018 L 508.704 190.95018 L 508.704 190.86763 C 508.70404 190.8647 508.70404 190.86177 508.704 190.85884 Z" fill="url(#Obj_Gradient_23)"/>
+          <path d="M 508.704 179.5712 C 508.70404 179.56827 508.70404 179.56534 508.704 179.5624 L 508.704 179.51667 L 508.7027 179.51667 C 508.662 178.74377 507.6797 177.97467 505.7559 177.3849 C 501.82506 176.17987 495.4519 176.17987 491.5211 177.3849 C 489.59725 177.97467 488.615 178.74377 488.57426 179.51667 L 488.57294 179.51667 L 488.57294 179.5637 C 488.57294 179.56577 488.57294 179.56784 488.57294 179.5699 L 488.57294 190.86014 C 488.57294 190.8622 488.57294 190.86427 488.57294 190.86633 L 488.57294 190.95018 L 488.5769 190.95018 C 488.6464 191.71064 489.6278 192.46473 491.5211 193.04513 C 495.4519 194.25017 501.82506 194.25017 505.7559 193.04513 C 507.6492 192.46473 508.6306 191.71064 508.70006 190.95018 L 508.704 190.95018 L 508.704 190.86763 C 508.70404 190.8647 508.70404 190.86177 508.704 190.85884 Z" stroke="white" stroke-opacity=".48790474" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+        </g>
+        <g id="Graphic_668">
+          <ellipse cx="498.6385" cy="179.30626" rx="10.0655585173516" ry="3.08567856646726" fill="url(#Obj_Gradient_24)"/>
+          <ellipse cx="498.6385" cy="179.30626" rx="10.0655585173516" ry="3.08567856646726" stroke="white" stroke-opacity=".48790474" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+        </g>
+      </g>
+      <g id="Group_672">
+        <g id="Graphic_676">
+          <path d="M 438.5311 176.4136 C 438.5311 176.41067 438.5311 176.40774 438.5311 176.4048 L 438.5311 176.35907 L 438.5298 176.35907 C 438.48907 175.58617 437.5068 174.81707 435.58296 174.2273 C 431.6521 173.02227 425.279 173.02227 421.34815 174.2273 C 419.4243 174.81707 418.44204 175.58617 418.40133 176.35907 L 418.4 176.35907 L 418.4 176.4061 C 418.4 176.40817 418.4 176.41024 418.4 176.4123 L 418.4 187.70254 C 418.4 187.7046 418.4 187.70667 418.4 187.70873 L 418.4 187.79258 L 418.404 187.79258 C 418.47347 188.55304 419.45486 189.30713 421.34815 189.88753 C 425.279 191.09257 431.6521 191.09257 435.58296 189.88753 C 437.47625 189.30713 438.45764 188.55304 438.52713 187.79258 L 438.5311 187.79258 L 438.5311 187.71003 C 438.5311 187.7071 438.5311 187.70417 438.5311 187.70124 Z" fill="url(#Obj_Gradient_25)"/>
+          <path d="M 438.5311 176.4136 C 438.5311 176.41067 438.5311 176.40774 438.5311 176.4048 L 438.5311 176.35907 L 438.5298 176.35907 C 438.48907 175.58617 437.5068 174.81707 435.58296 174.2273 C 431.6521 173.02227 425.279 173.02227 421.34815 174.2273 C 419.4243 174.81707 418.44204 175.58617 418.40133 176.35907 L 418.4 176.35907 L 418.4 176.4061 C 418.4 176.40817 418.4 176.41024 418.4 176.4123 L 418.4 187.70254 C 418.4 187.7046 418.4 187.70667 418.4 187.70873 L 418.4 187.79258 L 418.404 187.79258 C 418.47347 188.55304 419.45486 189.30713 421.34815 189.88753 C 425.279 191.09257 431.6521 191.09257 435.58296 189.88753 C 437.47625 189.30713 438.45764 188.55304 438.52713 187.79258 L 438.5311 187.79258 L 438.5311 187.71003 C 438.5311 187.7071 438.5311 187.70417 438.5311 187.70124 Z" stroke="white" stroke-opacity=".48790474" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+        </g>
+        <g id="Graphic_675">
+          <ellipse cx="428.46556" cy="176.4092" rx="10.0655585173516" ry="3.08567856646726" fill="url(#Obj_Gradient_26)"/>
+          <ellipse cx="428.46556" cy="176.4092" rx="10.0655585173516" ry="3.08567856646726" stroke="white" stroke-opacity=".48790474" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+        </g>
+        <g id="Graphic_674">
+          <path d="M 438.852 176.67414 C 438.852 176.67121 438.852 176.66828 438.852 176.66535 L 438.852 176.61961 L 438.8507 176.61961 C 438.81 175.84671 437.8277 175.07761 435.9039 174.48785 C 431.97304 173.28281 425.5999 173.28281 421.66907 174.48785 C 419.74523 175.07761 418.76296 175.84671 418.72224 176.61961 L 418.72093 176.61961 L 418.72093 176.66665 C 418.7209 176.66871 418.7209 176.67078 418.72093 176.67284 L 418.72093 187.96308 C 418.7209 187.96514 418.7209 187.9672 418.72093 187.96927 L 418.72093 188.05312 L 418.7249 188.05312 C 418.7944 188.81358 419.77577 189.56767 421.66907 190.14807 C 425.5999 191.3531 431.97304 191.3531 435.9039 190.14807 C 437.79717 189.56767 438.77856 188.81358 438.84805 188.05312 L 438.852 188.05312 L 438.852 187.97057 C 438.852 187.96764 438.852 187.96471 438.852 187.96178 Z" fill="url(#Obj_Gradient_27)"/>
+          <path d="M 438.852 176.67414 C 438.852 176.67121 438.852 176.66828 438.852 176.66535 L 438.852 176.61961 L 438.8507 176.61961 C 438.81 175.84671 437.8277 175.07761 435.9039 174.48785 C 431.97304 173.28281 425.5999 173.28281 421.66907 174.48785 C 419.74523 175.07761 418.76296 175.84671 418.72224 176.61961 L 418.72093 176.61961 L 418.72093 176.66665 C 418.7209 176.66871 418.7209 176.67078 418.72093 176.67284 L 418.72093 187.96308 C 418.7209 187.96514 418.7209 187.9672 418.72093 187.96927 L 418.72093 188.05312 L 418.7249 188.05312 C 418.7944 188.81358 419.77577 189.56767 421.66907 190.14807 C 425.5999 191.3531 431.97304 191.3531 435.9039 190.14807 C 437.79717 189.56767 438.77856 188.81358 438.84805 188.05312 L 438.852 188.05312 L 438.852 187.97057 C 438.852 187.96764 438.852 187.96471 438.852 187.96178 Z" stroke="white" stroke-opacity=".48790474" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+        </g>
+        <g id="Graphic_673">
+          <ellipse cx="428.7865" cy="176.4092" rx="10.0655585173517" ry="3.08567856646726" fill="url(#Obj_Gradient_28)"/>
+          <ellipse cx="428.7865" cy="176.4092" rx="10.0655585173517" ry="3.08567856646726" stroke="white" stroke-opacity=".48790474" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+        </g>
+      </g>
+      <g id="Group_677">
+        <g id="Graphic_681">
+          <path d="M 494.7174 215.62645 C 494.71744 215.62352 494.71744 215.6206 494.7174 215.61766 L 494.7174 215.57192 L 494.7161 215.57192 C 494.6754 214.79903 493.69313 214.02992 491.7693 213.44016 C 487.83846 212.23512 481.4653 212.23512 477.5345 213.44016 C 475.61065 214.02992 474.6284 214.79903 474.58766 215.57192 L 474.58635 215.57192 L 474.58635 215.61896 C 474.58634 215.62103 474.58634 215.6231 474.58635 215.62515 L 474.58635 226.9154 C 474.58634 226.91746 474.58634 226.91952 474.58635 226.92158 L 474.58635 227.00543 L 474.5903 227.00543 C 474.6598 227.7659 475.6412 228.51999 477.5345 229.1004 C 481.4653 230.30542 487.83846 230.30542 491.7693 229.1004 C 493.6626 228.51999 494.644 227.7659 494.71347 227.00543 L 494.7174 227.00543 L 494.7174 226.92288 C 494.71744 226.91995 494.71744 226.91702 494.7174 226.9141 Z" fill="url(#Obj_Gradient_29)"/>
+          <path d="M 494.7174 215.62645 C 494.71744 215.62352 494.71744 215.6206 494.7174 215.61766 L 494.7174 215.57192 L 494.7161 215.57192 C 494.6754 214.79903 493.69313 214.02992 491.7693 213.44016 C 487.83846 212.23512 481.4653 212.23512 477.5345 213.44016 C 475.61065 214.02992 474.6284 214.79903 474.58766 215.57192 L 474.58635 215.57192 L 474.58635 215.61896 C 474.58634 215.62103 474.58634 215.6231 474.58635 215.62515 L 474.58635 226.9154 C 474.58634 226.91746 474.58634 226.91952 474.58635 226.92158 L 474.58635 227.00543 L 474.5903 227.00543 C 474.6598 227.7659 475.6412 228.51999 477.5345 229.1004 C 481.4653 230.30542 487.83846 230.30542 491.7693 229.1004 C 493.6626 228.51999 494.644 227.7659 494.71347 227.00543 L 494.7174 227.00543 L 494.7174 226.92288 C 494.71744 226.91995 494.71744 226.91702 494.7174 226.9141 Z" stroke="white" stroke-opacity=".48790474" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+        </g>
+        <g id="Graphic_680">
+          <ellipse cx="484.6519" cy="215.62206" rx="10.0655585173516" ry="3.08567856646727" fill="url(#Obj_Gradient_30)"/>
+          <ellipse cx="484.6519" cy="215.62206" rx="10.0655585173516" ry="3.08567856646727" stroke="white" stroke-opacity=".48790474" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+        </g>
+        <g id="Graphic_679">
+          <path d="M 495.03834 215.887 C 495.03836 215.88407 495.03836 215.88114 495.03834 215.8782 L 495.03834 215.83247 L 495.03703 215.83247 C 494.9963 215.05957 494.01405 214.29047 492.0902 213.7007 C 488.1594 212.49567 481.78624 212.49567 477.8554 213.7007 C 475.93157 214.29047 474.9493 215.05957 474.9086 215.83247 L 474.90726 215.83247 L 474.90726 215.8795 C 474.90726 215.88157 474.90726 215.88363 474.90726 215.8857 L 474.90726 227.17594 C 474.90726 227.178 474.90726 227.18006 474.90726 227.18213 L 474.90726 227.26597 L 474.91123 227.26597 C 474.9807 228.02644 475.9621 228.78053 477.8554 229.36093 C 481.78624 230.56596 488.1594 230.56596 492.0902 229.36093 C 493.9835 228.78053 494.9649 228.02644 495.0344 227.26597 L 495.03834 227.26597 L 495.03834 227.18343 C 495.03836 227.1805 495.03836 227.17757 495.03834 227.17464 Z" fill="url(#Obj_Gradient_31)"/>
+          <path d="M 495.03834 215.887 C 495.03836 215.88407 495.03836 215.88114 495.03834 215.8782 L 495.03834 215.83247 L 495.03703 215.83247 C 494.9963 215.05957 494.01405 214.29047 492.0902 213.7007 C 488.1594 212.49567 481.78624 212.49567 477.8554 213.7007 C 475.93157 214.29047 474.9493 215.05957 474.9086 215.83247 L 474.90726 215.83247 L 474.90726 215.8795 C 474.90726 215.88157 474.90726 215.88363 474.90726 215.8857 L 474.90726 227.17594 C 474.90726 227.178 474.90726 227.18006 474.90726 227.18213 L 474.90726 227.26597 L 474.91123 227.26597 C 474.9807 228.02644 475.9621 228.78053 477.8554 229.36093 C 481.78624 230.56596 488.1594 230.56596 492.0902 229.36093 C 493.9835 228.78053 494.9649 228.02644 495.0344 227.26597 L 495.03834 227.26597 L 495.03834 227.18343 C 495.03836 227.1805 495.03836 227.17757 495.03834 227.17464 Z" stroke="white" stroke-opacity=".48790474" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+        </g>
+        <g id="Graphic_678">
+          <ellipse cx="484.9728" cy="215.62206" rx="10.0655585173517" ry="3.08567856646727" fill="url(#Obj_Gradient_32)"/>
+          <ellipse cx="484.9728" cy="215.62206" rx="10.0655585173517" ry="3.08567856646727" stroke="white" stroke-opacity=".48790474" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+        </g>
+      </g>
+      <g id="Group_697">
+        <g id="Graphic_701">
+          <path d="M 564.9949 201.64373 C 564.9949 201.6408 564.9949 201.63787 564.9949 201.63494 L 564.9949 201.5892 L 564.99356 201.5892 C 564.95285 200.8163 563.9706 200.0472 562.04674 199.45743 C 558.1159 198.2524 551.74276 198.2524 547.8119 199.45743 C 545.8881 200.0472 544.9058 200.8163 544.8651 201.5892 L 544.8638 201.5892 L 544.8638 201.63624 C 544.8638 201.6383 544.8638 201.64036 544.8638 201.64243 L 544.8638 212.93267 C 544.8638 212.93473 544.8638 212.9368 544.8638 212.93886 L 544.8638 213.0227 L 544.86776 213.0227 C 544.93725 213.78317 545.91864 214.53726 547.8119 215.11766 C 551.74276 216.3227 558.1159 216.3227 562.04674 215.11766 C 563.94 214.53726 564.9214 213.78317 564.9909 213.0227 L 564.9949 213.0227 L 564.9949 212.94016 C 564.9949 212.93723 564.9949 212.9343 564.9949 212.93137 Z" fill="url(#Obj_Gradient_33)"/>
+          <path d="M 564.9949 201.64373 C 564.9949 201.6408 564.9949 201.63787 564.9949 201.63494 L 564.9949 201.5892 L 564.99356 201.5892 C 564.95285 200.8163 563.9706 200.0472 562.04674 199.45743 C 558.1159 198.2524 551.74276 198.2524 547.8119 199.45743 C 545.8881 200.0472 544.9058 200.8163 544.8651 201.5892 L 544.8638 201.5892 L 544.8638 201.63624 C 544.8638 201.6383 544.8638 201.64036 544.8638 201.64243 L 544.8638 212.93267 C 544.8638 212.93473 544.8638 212.9368 544.8638 212.93886 L 544.8638 213.0227 L 544.86776 213.0227 C 544.93725 213.78317 545.91864 214.53726 547.8119 215.11766 C 551.74276 216.3227 558.1159 216.3227 562.04674 215.11766 C 563.94 214.53726 564.9214 213.78317 564.9909 213.0227 L 564.9949 213.0227 L 564.9949 212.94016 C 564.9949 212.93723 564.9949 212.9343 564.9949 212.93137 Z" stroke="white" stroke-opacity=".48790474" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+        </g>
+        <g id="Graphic_700">
+          <ellipse cx="554.92934" cy="201.63933" rx="10.0655585173515" ry="3.08567856646727" fill="url(#Obj_Gradient_34)"/>
+          <ellipse cx="554.92934" cy="201.63933" rx="10.0655585173515" ry="3.08567856646727" stroke="white" stroke-opacity=".48790474" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+        </g>
+        <g id="Graphic_699">
+          <path d="M 565.3158 201.90427 C 565.3158 201.90134 565.3158 201.8984 565.3158 201.89548 L 565.3158 201.84974 L 565.3145 201.84974 C 565.27376 201.07684 564.2915 200.30774 562.36766 199.71797 C 558.4368 198.51294 552.0637 198.51294 548.13285 199.71797 C 546.209 200.30774 545.22674 201.07684 545.186 201.84974 L 545.1847 201.84974 L 545.1847 201.89678 C 545.1847 201.89884 545.1847 201.9009 545.1847 201.90297 L 545.1847 213.1932 C 545.1847 213.19527 545.1847 213.19734 545.1847 213.1994 L 545.1847 213.28324 L 545.1887 213.28324 C 545.25816 214.0437 546.23955 214.7978 548.13285 215.3782 C 552.0637 216.58324 558.4368 216.58324 562.36766 215.3782 C 564.26095 214.7978 565.24234 214.0437 565.3118 213.28324 L 565.3158 213.28324 L 565.3158 213.2007 C 565.3158 213.19777 565.3158 213.19484 565.3158 213.1919 Z" fill="url(#Obj_Gradient_35)"/>
+          <path d="M 565.3158 201.90427 C 565.3158 201.90134 565.3158 201.8984 565.3158 201.89548 L 565.3158 201.84974 L 565.3145 201.84974 C 565.27376 201.07684 564.2915 200.30774 562.36766 199.71797 C 558.4368 198.51294 552.0637 198.51294 548.13285 199.71797 C 546.209 200.30774 545.22674 201.07684 545.186 201.84974 L 545.1847 201.84974 L 545.1847 201.89678 C 545.1847 201.89884 545.1847 201.9009 545.1847 201.90297 L 545.1847 213.1932 C 545.1847 213.19527 545.1847 213.19734 545.1847 213.1994 L 545.1847 213.28324 L 545.1887 213.28324 C 545.25816 214.0437 546.23955 214.7978 548.13285 215.3782 C 552.0637 216.58324 558.4368 216.58324 562.36766 215.3782 C 564.26095 214.7978 565.24234 214.0437 565.3118 213.28324 L 565.3158 213.28324 L 565.3158 213.2007 C 565.3158 213.19777 565.3158 213.19484 565.3158 213.1919 Z" stroke="white" stroke-opacity=".48790474" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+        </g>
+        <g id="Graphic_698">
+          <ellipse cx="555.25026" cy="201.63933" rx="10.0655585173515" ry="3.08567856646727" fill="url(#Obj_Gradient_36)"/>
+          <ellipse cx="555.25026" cy="201.63933" rx="10.0655585173515" ry="3.08567856646727" stroke="white" stroke-opacity=".48790474" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+        </g>
+      </g>
+      <g id="Group_707">
+        <g id="Graphic_711">
+          <path d="M 477.3517 127.31581 C 477.3517 127.31288 477.3517 127.30995 477.3517 127.30702 L 477.3517 127.26128 L 477.35037 127.26128 C 477.30965 126.48839 476.3274 125.71928 474.40355 125.12952 C 470.4727 123.92448 464.09957 123.92448 460.16873 125.12952 C 458.2449 125.71928 457.26263 126.48839 457.2219 127.26128 L 457.2206 127.26128 L 457.2206 127.30832 C 457.2206 127.31039 457.2206 127.31245 457.2206 127.31451 L 457.2206 138.60475 C 457.2206 138.60682 457.2206 138.60888 457.2206 138.61094 L 457.2206 138.69479 L 457.22456 138.69479 C 457.29405 139.45525 458.27544 140.20935 460.16873 140.78975 C 464.09957 141.99478 470.4727 141.99478 474.40355 140.78975 C 476.29684 140.20935 477.27823 139.45525 477.3477 138.69479 L 477.3517 138.69479 L 477.3517 138.61224 C 477.3517 138.60931 477.3517 138.60638 477.3517 138.60345 Z" fill="url(#Obj_Gradient_37)"/>
+          <path d="M 477.3517 127.31581 C 477.3517 127.31288 477.3517 127.30995 477.3517 127.30702 L 477.3517 127.26128 L 477.35037 127.26128 C 477.30965 126.48839 476.3274 125.71928 474.40355 125.12952 C 470.4727 123.92448 464.09957 123.92448 460.16873 125.12952 C 458.2449 125.71928 457.26263 126.48839 457.2219 127.26128 L 457.2206 127.26128 L 457.2206 127.30832 C 457.2206 127.31039 457.2206 127.31245 457.2206 127.31451 L 457.2206 138.60475 C 457.2206 138.60682 457.2206 138.60888 457.2206 138.61094 L 457.2206 138.69479 L 457.22456 138.69479 C 457.29405 139.45525 458.27544 140.20935 460.16873 140.78975 C 464.09957 141.99478 470.4727 141.99478 474.40355 140.78975 C 476.29684 140.20935 477.27823 139.45525 477.3477 138.69479 L 477.3517 138.69479 L 477.3517 138.61224 C 477.3517 138.60931 477.3517 138.60638 477.3517 138.60345 Z" stroke="white" stroke-opacity=".48790474" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+        </g>
+        <g id="Graphic_710">
+          <ellipse cx="467.28615" cy="127.31142" rx="10.0655585173516" ry="3.08567856646727" fill="url(#Obj_Gradient_38)"/>
+          <ellipse cx="467.28615" cy="127.31142" rx="10.0655585173516" ry="3.08567856646727" stroke="white" stroke-opacity=".48790474" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+        </g>
+        <g id="Graphic_709">
+          <path d="M 477.6726 127.57635 C 477.6726 127.57342 477.6726 127.5705 477.6726 127.56756 L 477.6726 127.52182 L 477.6713 127.52182 C 477.63057 126.74893 476.6483 125.97982 474.72446 125.39006 C 470.7936 124.18503 464.4205 124.18503 460.48965 125.39006 C 458.5658 125.97982 457.58354 126.74893 457.54283 127.52182 L 457.5415 127.52182 L 457.5415 127.56886 C 457.5415 127.57093 457.5415 127.57299 457.5415 127.57505 L 457.5415 138.8653 C 457.5415 138.86736 457.5415 138.86942 457.5415 138.87149 L 457.5415 138.95533 L 457.5455 138.95533 C 457.61497 139.7158 458.59636 140.46989 460.48965 141.05029 C 464.4205 142.25532 470.7936 142.25532 474.72446 141.05029 C 476.61775 140.46989 477.59915 139.7158 477.66863 138.95533 L 477.6726 138.95533 L 477.6726 138.87279 C 477.6726 138.86985 477.6726 138.86692 477.6726 138.864 Z" fill="url(#Obj_Gradient_39)"/>
+          <path d="M 477.6726 127.57635 C 477.6726 127.57342 477.6726 127.5705 477.6726 127.56756 L 477.6726 127.52182 L 477.6713 127.52182 C 477.63057 126.74893 476.6483 125.97982 474.72446 125.39006 C 470.7936 124.18503 464.4205 124.18503 460.48965 125.39006 C 458.5658 125.97982 457.58354 126.74893 457.54283 127.52182 L 457.5415 127.52182 L 457.5415 127.56886 C 457.5415 127.57093 457.5415 127.57299 457.5415 127.57505 L 457.5415 138.8653 C 457.5415 138.86736 457.5415 138.86942 457.5415 138.87149 L 457.5415 138.95533 L 457.5455 138.95533 C 457.61497 139.7158 458.59636 140.46989 460.48965 141.05029 C 464.4205 142.25532 470.7936 142.25532 474.72446 141.05029 C 476.61775 140.46989 477.59915 139.7158 477.66863 138.95533 L 477.6726 138.95533 L 477.6726 138.87279 C 477.6726 138.86985 477.6726 138.86692 477.6726 138.864 Z" stroke="white" stroke-opacity=".48790474" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+        </g>
+        <g id="Graphic_708">
+          <ellipse cx="467.60706" cy="127.31142" rx="10.0655585173516" ry="3.08567856646727" fill="url(#Obj_Gradient_40)"/>
+          <ellipse cx="467.60706" cy="127.31142" rx="10.0655585173516" ry="3.08567856646727" stroke="white" stroke-opacity=".48790474" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+        </g>
       </g>
     </g>
   </g>

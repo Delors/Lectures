@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns="http://www.w3.org/2000/svg" xmlns:xl="http://www.w3.org/1999/xlink" version="1.1" viewBox="1 -15 536 229" width="536" height="229">
+<svg xmlns:dc="http://purl.org/dc/elements/1.1/" version="1.1" xmlns:xl="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" viewBox="132 -12 405 226" width="405" height="226">
+    <style>
+    @import url('/LectureDoc2/ext/fonts/ld-fonts.css'); 
+  </style>
   <defs>
-    <filter id="Shadow" filterUnits="userSpaceOnUse" x="-52.6" y="-37.9">
+    <filter id="Shadow" filterUnits="userSpaceOnUse" x="91.5" y="-34.6">
       <feGaussianBlur in="SourceAlpha" result="blur" stdDeviation="3.488"/>
       <feOffset in="blur" result="offset" dx="0" dy="4"/>
       <feFlood flood-color="black" flood-opacity=".5" result="flood"/>
@@ -17,8 +20,8 @@
       <stop offset=".9336584" stop-color="#e7f4b5" stop-opacity=".5"/>
       <stop offset="1" stop-color="white" stop-opacity="0"/>
     </linearGradient>
-    <linearGradient id="Obj_Gradient" xl:href="#Gradient" gradientTransform="translate(48.101875 101.1862) rotate(-133.44236) scale(37.34145)"/>
-    <linearGradient id="Obj_Gradient_2" xl:href="#Gradient" gradientTransform="translate(47.310456 115.55686) rotate(-133.44236) scale(35.039555)"/>
+    <linearGradient id="Obj_Gradient" xl:href="#Gradient" gradientTransform="translate(169.45734 117.00064) rotate(-133.44236) scale(37.34145)"/>
+    <linearGradient id="Obj_Gradient_2" xl:href="#Gradient" gradientTransform="translate(168.66592 131.3713) rotate(-133.44236) scale(35.039555)"/>
     <linearGradient x1="0" x2="1" id="Gradient_2" gradientUnits="userSpaceOnUse">
       <stop offset=".1060121" stop-color="#029ed7"/>
       <stop offset=".8529494" stop-color="#99d0eb" stop-opacity=".5"/>
@@ -77,20 +80,15 @@
     <linearGradient id="Obj_Gradient_48" xl:href="#Gradient_2" gradientTransform="translate(452.4519 167.78284) rotate(-32.658855) scale(27.979774)"/>
     <linearGradient id="Obj_Gradient_49" xl:href="#Gradient_2" gradientTransform="translate(468.12547 167.78284) rotate(-32.658855) scale(27.979774)"/>
     <linearGradient id="Obj_Gradient_50" xl:href="#Gradient_3" gradientTransform="translate(482.15627 157.22476) rotate(-133.44236) scale(29.346016)"/>
-    <linearGradient id="Obj_Gradient_51" xl:href="#Gradient" gradientTransform="translate(97.80548 51.98156) rotate(-133.44236) scale(37.34145)"/>
-    <linearGradient id="Obj_Gradient_52" xl:href="#Gradient" gradientTransform="translate(97.01406 66.35222) rotate(-133.44236) scale(35.039555)"/>
-    <linearGradient id="Obj_Gradient_53" xl:href="#Gradient" gradientTransform="translate(83.101875 154.1862) rotate(-133.44236) scale(37.34145)"/>
-    <linearGradient id="Obj_Gradient_54" xl:href="#Gradient" gradientTransform="translate(82.31046 168.55686) rotate(-133.44236) scale(35.039555)"/>
-    <font-face font-family="Helvetica" font-size="9" units-per-em="1000" underline-position="-75.68359" underline-thickness="49.316406" slope="0" x-height="522.9492" cap-height="717.28516" ascent="770.0195" descent="-229.98047" font-weight="400">
-      <font-face-src>
-        <font-face-name name="Helvetica"/>
-      </font-face-src>
-    </font-face>
+    <linearGradient id="Obj_Gradient_51" xl:href="#Gradient" gradientTransform="translate(219.16095 67.796) rotate(-133.44236) scale(37.34145)"/>
+    <linearGradient id="Obj_Gradient_52" xl:href="#Gradient" gradientTransform="translate(218.36953 82.166655) rotate(-133.44236) scale(35.039555)"/>
+    <linearGradient id="Obj_Gradient_53" xl:href="#Gradient" gradientTransform="translate(204.45734 170.00064) rotate(-133.44236) scale(37.34145)"/>
+    <linearGradient id="Obj_Gradient_54" xl:href="#Gradient" gradientTransform="translate(203.66592 184.3713) rotate(-133.44236) scale(35.039555)"/>
   </defs>
-  <metadata> Produced by OmniGraffle 8.0\n2024-02-16 16:43:22 +0000</metadata>
-  <g id="mobile_cloud_computing" stroke-opacity="1" stroke="none" fill="none" fill-opacity="1" stroke-dasharray="none">
+  <metadata> Produced by OmniGraffle 8.0\n2025-02-09 19:52:38 +0000</metadata>
+  <g id="mobile_cloud_computing" stroke-opacity="1" stroke-dasharray="none" fill="none" fill-opacity="1" stroke="none">
     <title>mobile_cloud_computing</title>
-    <rect fill="white" x="1" y="-15" width="536" height="229"/>
+    <rect fill="white" x="132" y="-12" width="405" height="226"/>
     <g id="mobile_cloud_computing_Layer_1">
       <title>Layer 1</title>
       <g id="Graphic_724" filter="url(#Shadow)">
@@ -100,12 +98,12 @@
       <g id="Group_565">
         <g id="Group_567">
           <g id="Graphic_569">
-            <rect x="21.7589" y="74.70464" width="27.009053" height="25.850748" fill="url(#Obj_Gradient)"/>
-            <rect x="21.7589" y="74.70464" width="27.009053" height="25.850748" stroke="white" stroke-opacity=".4807276" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+            <rect x="143.11437" y="90.51908" width="27.009053" height="25.850748" fill="url(#Obj_Gradient)"/>
+            <rect x="143.11437" y="90.51908" width="27.009053" height="25.850748" stroke="white" stroke-opacity=".4807276" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
           </g>
           <g id="Graphic_568">
-            <path d="M 12.193195 105.11729 L 58.33366 105.11729 L 49.10557 100.55539 L 21.421288 100.55539 Z" fill="url(#Obj_Gradient_2)"/>
-            <path d="M 12.193195 105.11729 L 58.33366 105.11729 L 49.10557 100.55539 L 21.421288 100.55539 Z" stroke="white" stroke-opacity=".4807276" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+            <path d="M 133.54866 120.93172 L 179.68913 120.93172 L 170.46104 116.36983 L 142.77676 116.36983 Z" fill="url(#Obj_Gradient_2)"/>
+            <path d="M 133.54866 120.93172 L 179.68913 120.93172 L 170.46104 116.36983 L 142.77676 116.36983 Z" stroke="white" stroke-opacity=".4807276" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
           </g>
         </g>
         <g id="Graphic_566"/>
@@ -465,12 +463,12 @@
       <g id="Group_714">
         <g id="Group_716">
           <g id="Graphic_718">
-            <rect x="71.4625" y="25.5" width="27.009053" height="25.850748" fill="url(#Obj_Gradient_51)"/>
-            <rect x="71.4625" y="25.5" width="27.009053" height="25.850748" stroke="white" stroke-opacity=".4807276" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+            <rect x="192.81797" y="41.314436" width="27.009053" height="25.850748" fill="url(#Obj_Gradient_51)"/>
+            <rect x="192.81797" y="41.314436" width="27.009053" height="25.850748" stroke="white" stroke-opacity=".4807276" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
           </g>
           <g id="Graphic_717">
-            <path d="M 61.8968 55.912644 L 108.03726 55.912644 L 98.80917 51.35075 L 71.12489 51.35075 Z" fill="url(#Obj_Gradient_52)"/>
-            <path d="M 61.8968 55.912644 L 108.03726 55.912644 L 98.80917 51.35075 L 71.12489 51.35075 Z" stroke="white" stroke-opacity=".4807276" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+            <path d="M 183.25227 71.72708 L 229.39273 71.72708 L 220.16464 67.16518 L 192.48036 67.16518 Z" fill="url(#Obj_Gradient_52)"/>
+            <path d="M 183.25227 71.72708 L 229.39273 71.72708 L 220.16464 67.16518 L 192.48036 67.16518 Z" stroke="white" stroke-opacity=".4807276" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
           </g>
         </g>
         <g id="Graphic_715"/>
@@ -478,34 +476,34 @@
       <g id="Group_719">
         <g id="Group_721">
           <g id="Graphic_723">
-            <rect x="56.7589" y="127.70464" width="27.009053" height="25.850748" fill="url(#Obj_Gradient_53)"/>
-            <rect x="56.7589" y="127.70464" width="27.009053" height="25.850748" stroke="white" stroke-opacity=".4807276" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+            <rect x="178.11437" y="143.51908" width="27.009053" height="25.850748" fill="url(#Obj_Gradient_53)"/>
+            <rect x="178.11437" y="143.51908" width="27.009053" height="25.850748" stroke="white" stroke-opacity=".4807276" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
           </g>
           <g id="Graphic_722">
-            <path d="M 47.193195 158.11729 L 93.33366 158.11729 L 84.10557 153.55539 L 56.42129 153.55539 Z" fill="url(#Obj_Gradient_54)"/>
-            <path d="M 47.193195 158.11729 L 93.33366 158.11729 L 84.10557 153.55539 L 56.42129 153.55539 Z" stroke="white" stroke-opacity=".4807276" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+            <path d="M 168.54866 173.93172 L 214.68913 173.93172 L 205.46104 169.36983 L 177.77676 169.36983 Z" fill="url(#Obj_Gradient_54)"/>
+            <path d="M 168.54866 173.93172 L 214.68913 173.93172 L 205.46104 169.36983 L 177.77676 169.36983 Z" stroke="white" stroke-opacity=".4807276" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
           </g>
         </g>
         <g id="Graphic_720"/>
       </g>
       <g id="Graphic_886">
-        <text transform="translate(414.2403 182.88812)" fill="black">
-          <tspan font-family="Helvetica" font-size="9" font-weight="400" fill="black" x="0" y="9">Cloud</tspan>
+        <text transform="translate(407.86204 177.88812)" fill="black">
+          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="0" y="15" xml:space="preserve">Cloud</tspan>
         </text>
       </g>
       <g id="Graphic_889">
-        <text transform="translate(17 -1.5)" fill="black">
-          <tspan font-family="Helvetica" font-size="9" font-weight="400" fill="black" x="0" y="9">Mobile Geräte</tspan>
+        <text transform="translate(147.7429 5.7050607)" fill="black">
+          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="2060574e-19" y="15" xml:space="preserve">Mobile Geräte</tspan>
         </text>
       </g>
       <g id="Line_893">
-        <line x1="96.85603" y1="42.73507" x2="312.2119" y2="79.48358" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <line x1="218.2115" y1="58.828" x2="311.96427" y2="77.02215" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
       </g>
       <g id="Line_895">
-        <line x1="47.15242" y1="90.13479" x2="316.86844" y2="95.21248" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <line x1="168.5079" y1="105.32725" x2="320.15674" y2="100.24869" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
       </g>
       <g id="Line_896">
-        <line x1="82.15242" y1="141.33095" x2="331.60618" y2="108.1792" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <line x1="203.5079" y1="155.44715" x2="319.38214" y2="123.4962" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
       </g>
     </g>
   </g>

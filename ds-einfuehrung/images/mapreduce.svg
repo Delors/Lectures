@@ -1,237 +1,239 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg version="1.1" xmlns:xl="http://www.w3.org/1999/xlink" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns="http://www.w3.org/2000/svg" viewBox="3.907625 134.53589 962.3787 444.7181" width="962.3787" height="444.7181">
+<svg xmlns:dc="http://purl.org/dc/elements/1.1/" version="1.1" xmlns:xl="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" viewBox="93 145 756 386" width="756" height="386">
+  <style>
+    @import url('/LectureDoc2/ext/fonts/ld-fonts.css'); 
+  </style>
   <defs>
-    <filter id="Shadow" filterUnits="userSpaceOnUse" x="-92.33024" y="90.06408">
+    <filter id="Shadow" filterUnits="userSpaceOnUse" x="17.4" y="106.4">
       <feGaussianBlur in="SourceAlpha" result="blur" stdDeviation="1.308"/>
       <feOffset in="blur" result="offset" dx="0" dy="2"/>
       <feFlood flood-color="black" flood-opacity=".5" result="flood"/>
       <feComposite in="flood" in2="offset" operator="in"/>
     </filter>
-    <font-face font-family="Helvetica" font-size="16" units-per-em="1000" underline-position="-75.68359" underline-thickness="49.316406" slope="0" x-height="522.9492" cap-height="717.28516" ascent="770.0195" descent="-229.98047" font-weight="400">
-      <font-face-src>
-        <font-face-name name="Helvetica"/>
-      </font-face-src>
-    </font-face>
     <marker orient="auto" overflow="visible" markerUnits="strokeWidth" id="FilledArrow_Marker" stroke-linejoin="miter" stroke-miterlimit="10" viewBox="-1 -4 10 8" markerWidth="10" markerHeight="8" color="black">
       <g>
         <path d="M 8 0 L 0 -3 L 0 3 Z" fill="currentColor" stroke="currentColor" stroke-width="1"/>
       </g>
     </marker>
-    <font-face font-family="Helvetica" font-size="16" units-per-em="1000" underline-position="-75.68359" underline-thickness="49.316406" slope="0" x-height="532.22656" cap-height="719.7266" ascent="770.0195" descent="-229.98047" font-weight="700">
-      <font-face-src>
-        <font-face-name name="Helvetica-Bold"/>
-      </font-face-src>
-    </font-face>
   </defs>
-  <metadata> Produced by OmniGraffle 8.0\n2024-05-31 13:46:28 +0000</metadata>
-  <g id="Canvas_1" stroke-opacity="1" fill-opacity="1" fill="none" stroke="none" stroke-dasharray="none">
+  <metadata> Produced by OmniGraffle 8.0\n2025-02-09 09:41:22 +0000</metadata>
+  <g id="Canvas_1" stroke-opacity="1" stroke-dasharray="none" fill="none" fill-opacity="1" stroke="none">
     <title>Canvas 1</title>
     <g id="Canvas_1_Layer_1">
       <title>Layer 1</title>
       <g id="Line_56_shadow" filter="url(#Shadow)">
-        <line x1="13.5" y1="205.68994" x2="952.956" y2="205.68994" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
-      </g>
-      <g id="Graphic_2">
-        <text transform="translate(8.907625 294.625)" fill="black">
-          <tspan font-family="Helvetica" font-size="16" font-weight="400" fill="black" x="0" y="34" xml:space="preserve">Haus Maus geht raus</tspan>
-          <tspan font-family="Helvetica" font-size="16" font-weight="400" fill="black" x="0" y="110" xml:space="preserve">Haus Maus geht </tspan>
-          <tspan font-family="Helvetica" font-size="16" font-weight="400" fill="black" x="0" y="186" xml:space="preserve">Maus geht Raus</tspan>
-        </text>
+        <line x1="97.70759" y1="205.68994" x2="844.8202" y2="205.68994" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
       </g>
       <g id="Graphic_6">
-        <text transform="translate(236.988 217.5)" fill="black">
-          <tspan font-family="Helvetica" font-size="16" font-weight="400" fill="black" x="0" y="15" xml:space="preserve">Haus Maus geht raus</tspan>
+        <text transform="translate(236.988 246.78994)" fill="black">
+          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="0" y="15">Haus Maus geht raus</tspan>
         </text>
       </g>
       <g id="Graphic_7">
-        <text transform="translate(236.988 380.125)" fill="black">
-          <tspan font-family="Helvetica" font-size="16" font-weight="400" fill="black" x="0" y="15" xml:space="preserve">Haus Maus geht</tspan>
+        <text transform="translate(267.536 381.84294)" fill="black">
+          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="0" y="15">Haus Maus geht</tspan>
         </text>
       </g>
       <g id="Graphic_8">
-        <text transform="translate(240.1 542.75)" fill="black">
-          <tspan font-family="Helvetica" font-size="16" font-weight="400" fill="black" x="0" y="15" xml:space="preserve">Maus geht raus</tspan>
+        <text transform="translate(273.542 486.7233)" fill="black">
+          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="0" y="15">Maus geht raus</tspan>
         </text>
       </g>
       <g id="Graphic_11">
-        <text transform="translate(436 217.5)" fill="black">
-          <tspan font-family="Helvetica" font-size="16" font-weight="400" fill="black" x="0" y="18.8" xml:space="preserve">Haus, 1</tspan>
-          <tspan font-family="Helvetica" font-size="16" font-weight="400" fill="black" x="0" y="41.6" xml:space="preserve">Maus, 1</tspan>
-          <tspan font-family="Helvetica" font-size="16" font-weight="400" fill="black" x="0" y="64.4" xml:space="preserve">geht, 1</tspan>
-          <tspan font-family="Helvetica" font-size="16" font-weight="400" fill="black" x="0" y="87.2" xml:space="preserve">raus, 1</tspan>
+        <text transform="translate(411.8164 210.68994)" fill="black">
+          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="0" y="18.8">Haus, 1</tspan>
+          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="0" y="41.6">Maus, 1</tspan>
+          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="0" y="64.4">geht, 1</tspan>
+          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="0" y="87.2">raus, 1</tspan>
         </text>
       </g>
       <g id="Graphic_12">
-        <text transform="translate(436 363.953)" fill="black">
-          <tspan font-family="Helvetica" font-size="16" font-weight="400" fill="black" x="0" y="18.8" xml:space="preserve">Haus, 1</tspan>
-          <tspan font-family="Helvetica" font-size="16" font-weight="400" fill="black" x="0" y="41.6" xml:space="preserve">Maus, 1</tspan>
-          <tspan font-family="Helvetica" font-size="16" font-weight="400" fill="black" x="0" y="64.4" xml:space="preserve">geht, 1</tspan>
+        <text transform="translate(411.8164 357.14294)" fill="black">
+          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="0" y="18.8">Haus, 1</tspan>
+          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="0" y="41.6">Maus, 1</tspan>
+          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="0" y="64.4">geht, 1</tspan>
         </text>
       </g>
       <g id="Graphic_13">
-        <text transform="translate(436 505.854)" fill="black">
-          <tspan font-family="Helvetica" font-size="16" font-weight="400" fill="black" x="0" y="18.8" xml:space="preserve">Maus, 1 </tspan>
-          <tspan font-family="Helvetica" font-size="16" font-weight="400" fill="black" x="0" y="41.6" xml:space="preserve">geht, 1</tspan>
-          <tspan font-family="Helvetica" font-size="16" font-weight="400" fill="black" x="0" y="64.4" xml:space="preserve">raus, 1</tspan>
+        <text transform="translate(412.74047 462.0233)" fill="black">
+          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="0" y="18.8">Maus, 1 </tspan>
+          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="0" y="41.6">geht, 1</tspan>
+          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="0" y="64.4">raus, 1</tspan>
         </text>
       </g>
       <g id="Graphic_16">
-        <text transform="translate(612 217.5)" fill="black">
-          <tspan font-family="Helvetica" font-size="16" font-weight="400" fill="black" x="0" y="15" xml:space="preserve">Haus, (1,1)</tspan>
+        <text transform="translate(559.3617 245.14827)" fill="black">
+          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="0" y="15">Haus, (1,1)</tspan>
         </text>
       </g>
       <g id="Graphic_15">
-        <text transform="translate(612 325.91667)" fill="black">
-          <tspan font-family="Helvetica" font-size="16" font-weight="400" fill="black" x="0" y="15" xml:space="preserve">Maus, (1,1,1)</tspan>
+        <text transform="translate(562.5117 319.1066)" fill="black">
+          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="0" y="15">Maus, (1,1,1)</tspan>
         </text>
       </g>
       <g id="Graphic_14">
-        <text transform="translate(612 434.33333)" fill="black">
-          <tspan font-family="Helvetica" font-size="16" font-weight="400" fill="black" x="0" y="15" xml:space="preserve">geht, (1,1,1)</tspan>
+        <text transform="translate(562.5117 427.5233)" fill="black">
+          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="0" y="15">geht, (1,1,1)</tspan>
         </text>
       </g>
       <g id="Graphic_17">
-        <text transform="translate(612 542.75)" fill="black">
-          <tspan font-family="Helvetica" font-size="16" font-weight="400" fill="black" x="0" y="15" xml:space="preserve">raus, (1,1)</tspan>
+        <text transform="translate(564.8007 486.7233)" fill="black">
+          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="0" y="15">raus, (1,1)</tspan>
         </text>
       </g>
       <g id="Graphic_21">
-        <text transform="translate(768.858 217.5)" fill="black">
-          <tspan font-family="Helvetica" font-size="16" font-weight="400" fill="black" x="0" y="15" xml:space="preserve">Haus, 2</tspan>
+        <text transform="translate(684.297 245.14827)" fill="black">
+          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="0" y="15">Haus, 2</tspan>
         </text>
       </g>
       <g id="Graphic_20">
-        <text transform="translate(768.858 325.91667)" fill="black">
-          <tspan font-family="Helvetica" font-size="16" font-weight="400" fill="black" x="0" y="15" xml:space="preserve">Maus, 3</tspan>
+        <text transform="translate(687.447 319.1066)" fill="black">
+          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="0" y="15">Maus, 3</tspan>
         </text>
       </g>
       <g id="Graphic_19">
-        <text transform="translate(768.858 434.33333)" fill="black">
-          <tspan font-family="Helvetica" font-size="16" font-weight="400" fill="black" x="0" y="15" xml:space="preserve">geht, 3</tspan>
+        <text transform="translate(687.447 427.5233)" fill="black">
+          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="0" y="15">geht, 3</tspan>
         </text>
       </g>
       <g id="Graphic_18">
-        <text transform="translate(768.858 542.75)" fill="black">
-          <tspan font-family="Helvetica" font-size="16" font-weight="400" fill="black" x="0" y="15" xml:space="preserve">raus, 2</tspan>
+        <text transform="translate(689.736 486.7233)" fill="black">
+          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="0" y="15">raus, 2</tspan>
         </text>
       </g>
       <g id="Graphic_25">
-        <text transform="translate(888.3722 335.453)" fill="black">
-          <tspan font-family="Helvetica" font-size="16" font-weight="400" fill="black" x="0" y="24.5" xml:space="preserve">Haus, 2</tspan>
-          <tspan font-family="Helvetica" font-size="16" font-weight="400" fill="black" x="0" y="53" xml:space="preserve">Maus, 3</tspan>
-          <tspan font-family="Helvetica" font-size="16" font-weight="400" fill="black" x="0" y="81.5" xml:space="preserve">geht, 3</tspan>
-          <tspan font-family="Helvetica" font-size="16" font-weight="400" fill="black" x="0" y="110" xml:space="preserve">raus, 2</tspan>
+        <text transform="translate(791.4222 319.1066)" fill="black">
+          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="0" y="24.5">Haus, 2</tspan>
+          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="0" y="53">Maus, 3</tspan>
+          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="0" y="81.5">geht, 3</tspan>
+          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="0" y="110">raus, 2</tspan>
         </text>
       </g>
       <g id="Line_26">
-        <line x1="173.90763" y1="327.9475" x2="285.0313" y2="247.31422" marker-end="url(#FilledArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <line x1="186.84596" y1="347.84294" x2="276.63848" y2="276.92592" marker-end="url(#FilledArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
       </g>
       <g id="Line_27">
-        <line x1="173.90763" y1="389.625" x2="222.088" y2="389.625" marker-end="url(#FilledArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <line x1="208.7176" y1="391.34294" x2="252.636" y2="391.34294" marker-end="url(#FilledArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
       </g>
       <g id="Line_28">
-        <line x1="173.90763" y1="456.61925" x2="269.06825" y2="531.6218" marker-end="url(#FilledArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <line x1="200.1848" y1="434.1066" x2="294.34892" y2="482.21887" marker-end="url(#FilledArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
       </g>
       <g id="Line_29">
-        <line x1="375.6284" y1="241.5" x2="421.35534" y2="252.09148" marker-end="url(#FilledArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <line x1="373.546" y1="256.28994" x2="396.9164" y2="256.28994" marker-end="url(#FilledArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
       </g>
       <g id="Line_30">
-        <line x1="358.4958" y1="392.68403" x2="421.11156" y2="395.7122" marker-end="url(#FilledArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <line x1="373.546" y1="391.34294" x2="396.9164" y2="391.34294" marker-end="url(#FilledArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
       </g>
       <g id="Line_31">
-        <line x1="355.38125" y1="548.0797" x2="421.1237" y2="543.5209" marker-end="url(#FilledArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <line x1="374.974" y1="496.2233" x2="397.84047" y2="496.2233" marker-end="url(#FilledArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
       </g>
       <g id="Line_32">
-        <line x1="696.1406" y1="227" x2="753.958" y2="227" marker-end="url(#FilledArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <line x1="629.6157" y1="254.64827" x2="669.397" y2="254.64827" marker-end="url(#FilledArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
       </g>
       <g id="Line_33">
-        <line x1="711.2578" y1="335.41667" x2="753.958" y2="335.41667" marker-end="url(#FilledArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <line x1="646.0377" y1="328.6066" x2="672.547" y2="328.6066" marker-end="url(#FilledArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
       </g>
       <g id="Line_34">
-        <line x1="703.2734" y1="443.83333" x2="753.958" y2="443.83333" marker-end="url(#FilledArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <line x1="640.6897" y1="437.0233" x2="672.547" y2="437.0233" marker-end="url(#FilledArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
       </g>
       <g id="Line_35">
-        <line x1="689.9141" y1="552.25" x2="753.958" y2="552.25" marker-end="url(#FilledArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <line x1="630.4767" y1="496.2233" x2="674.836" y2="496.2233" marker-end="url(#FilledArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
       </g>
       <g id="Line_36">
-        <line x1="805.24865" y1="537.75" x2="877.0811" y2="450.4696" marker-end="url(#FilledArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <line x1="722.1837" y1="486.7233" x2="783.3311" y2="436.8037" marker-end="url(#FilledArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
       </g>
       <g id="Line_37">
-        <line x1="822.7877" y1="432.32125" x2="874.1511" y2="412.25327" marker-end="url(#FilledArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <line x1="735.497" y1="424.0662" x2="777.5268" y2="403.53523" marker-end="url(#FilledArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
       </g>
       <g id="Line_38">
-        <line x1="829.7322" y1="349.91667" x2="874.3351" y2="369.86727" marker-end="url(#FilledArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <line x1="740.845" y1="341.94587" x2="777.4174" y2="358.6536" marker-end="url(#FilledArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
       </g>
       <g id="Line_39">
-        <line x1="807.6811" y1="241.5" x2="877.3026" y2="331.2118" marker-end="url(#FilledArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <line x1="722.1744" y1="269.14827" x2="779.3558" y2="325.25623" marker-end="url(#FilledArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
       </g>
       <g id="Line_40">
-        <line x1="506.7656" y1="255.61416" x2="597.2878" y2="237.7265" marker-end="url(#FilledArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <line x1="482.58203" y1="255.8677" x2="544.46233" y2="255.178" marker-end="url(#FilledArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
       </g>
       <g id="Line_41">
-        <line x1="506.7656" y1="277.50008" x2="611.72924" y2="317.39903" marker-end="url(#FilledArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <line x1="482.58203" y1="273.73097" x2="561.2873" y2="309.9664" marker-end="url(#FilledArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
       </g>
       <g id="Line_42">
-        <line x1="506.7656" y1="299.85996" x2="633.08895" y2="422.43906" marker-end="url(#FilledArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <line x1="482.58203" y1="300.63334" x2="580.2828" y2="414.9961" marker-end="url(#FilledArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
       </g>
       <g id="Line_43">
-        <line x1="500.3075" y1="313.7" x2="634.2289" y2="529.3399" marker-end="url(#FilledArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <line x1="476.4257" y1="306.88994" x2="583.9231" y2="478.33566" marker-end="url(#FilledArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
       </g>
       <g id="Line_44">
-        <line x1="507.1347" y1="500.854" x2="639.10926" y2="357.20695" marker-end="url(#FilledArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <line x1="479.26467" y1="462.0233" x2="581.7641" y2="350.39867" marker-end="url(#FilledArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
       </g>
       <g id="Line_45">
-        <line x1="511.24" y1="519.0756" x2="618.6332" y2="462.9207" marker-end="url(#FilledArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <line x1="487.98047" y1="480.5191" x2="552.83817" y2="455.13183" marker-end="url(#FilledArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
       </g>
       <g id="Line_46">
-        <line x1="511.24" y1="542.8132" x2="597.1233" y2="548.7196" marker-end="url(#FilledArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <line x1="487.98047" y1="496.2233" x2="549.9007" y2="496.2233" marker-end="url(#FilledArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
       </g>
       <g id="Line_47">
-        <line x1="500.29257" y1="358.953" x2="581.8417" y2="247.60972" marker-end="url(#FilledArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <line x1="474.21963" y1="352.14294" x2="534.9441" y2="263.3923" marker-end="url(#FilledArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
       </g>
       <g id="Line_48">
-        <line x1="512.16406" y1="384.5779" x2="606.3933" y2="353.05726" marker-end="url(#FilledArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <line x1="487.98047" y1="374.851" x2="556.92276" y2="346.8338" marker-end="url(#FilledArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
       </g>
       <g id="Line_49">
-        <line x1="512.16406" y1="408.25245" x2="597.393" y2="429.46295" marker-end="url(#FilledArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <line x1="487.98047" y1="403.56294" x2="548.03216" y2="421.6456" marker-end="url(#FilledArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
       </g>
       <g id="Graphic_50">
-        <text transform="translate(16.592625 159)" fill="#666">
-          <tspan font-family="Helvetica" font-size="16" font-weight="400" fill="#666" x="0" y="15" xml:space="preserve">Eingabe</tspan>
+        <text transform="translate(102.70759 183)" fill="#666">
+          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="#666" x="2842171e-20" y="15">Eingabe</tspan>
         </text>
       </g>
       <g id="Graphic_51">
-        <text transform="translate(855.176 159)" fill="#666">
-          <tspan font-family="Helvetica" font-size="16" font-weight="400" fill="#666" x="0" y="15" xml:space="preserve">Ausgabe</tspan>
+        <text transform="translate(785.7802 183)" fill="#666">
+          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="#666" x="43343107e-20" y="15">Ausgabe</tspan>
         </text>
       </g>
       <g id="Graphic_52">
-        <text transform="translate(682.9946 159)" fill="#b1001c">
-          <tspan font-family="Helvetica" font-size="16" font-weight="700" fill="#b1001c" x="0" y="15" xml:space="preserve">Reduktion</tspan>
+        <text transform="translate(624.1306 183)" fill="#b1001c">
+          <tspan font-family="Noto Sans Display" font-size="14" font-weight="700" fill="#b1001c" x="0" y="15">Reduktion</tspan>
         </text>
       </g>
       <g id="Graphic_53">
-        <text transform="translate(504.99006 139.53589)" fill="#666">
-          <tspan font-family="Helvetica" font-size="16" font-weight="400" fill="#666" x="8.441406" y="15" xml:space="preserve">Aggregation</tspan>
-          <tspan font-family="Helvetica" font-size="16" font-weight="400" fill="#666" x="38.23828" y="34" xml:space="preserve">und </tspan>
-          <tspan font-family="Helvetica" font-size="16" font-weight="400" fill="#666" x="0" y="53" xml:space="preserve">Partitionierung</tspan>
+        <text transform="translate(463.95784 145)" fill="#666">
+          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="#666" x="8.561" y="15">Aggregation</tspan>
+          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="#666" x="34.986" y="34">und </tspan>
+          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="#666" x="5400125e-19" y="53">Partitionierung</tspan>
         </text>
       </g>
       <g id="Graphic_54">
-        <text transform="translate(157.71797 139.53589)" fill="#666">
-          <tspan font-family="Helvetica" font-size="16" font-weight="400" fill="#666" x="0" y="15" xml:space="preserve">Aufteilung</tspan>
-          <tspan font-family="Helvetica" font-size="16" font-weight="400" fill="#666" x="24.01953" y="34" xml:space="preserve">der </tspan>
-          <tspan font-family="Helvetica" font-size="16" font-weight="400" fill="#666" x="6.222656" y="53" xml:space="preserve">Eingabe</tspan>
+        <text transform="translate(201.6529 145)" fill="#b1001c">
+          <tspan font-family="Noto Sans Display" font-size="14" font-weight="700" fill="#b1001c" x="0" y="15">Aufteilung</tspan>
+          <tspan font-family="Noto Sans Display" font-size="14" font-weight="700" fill="#b1001c" x="24.437" y="34">der </tspan>
+          <tspan font-family="Noto Sans Display" font-size="14" font-weight="700" fill="#b1001c" x="9.149" y="53">Eingabe</tspan>
         </text>
       </g>
       <g id="Graphic_55">
-        <text transform="translate(375.4372 159)" fill="#b1001c">
-          <tspan font-family="Helvetica" font-size="16" font-weight="700" fill="#b1001c" x="0" y="15" xml:space="preserve">Mapping</tspan>
+        <text transform="translate(352.69147 183)" fill="#b1001c">
+          <tspan font-family="Noto Sans Display" font-size="14" font-weight="700" fill="#b1001c" x="0" y="15">Mapping</tspan>
         </text>
       </g>
       <g id="Line_56">
-        <line x1="13.5" y1="205.68994" x2="952.956" y2="205.68994" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+        <line x1="97.70759" y1="205.68994" x2="844.8202" y2="205.68994" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+      <g id="Graphic_58"/>
+      <g id="Graphic_59">
+        <text transform="translate(104.9966 391.1066)" fill="black">
+          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="0" y="34">Maus geht raus</tspan>
+        </text>
+      </g>
+      <g id="Graphic_60">
+        <text transform="translate(102.70759 352.84294)" fill="black">
+          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="4405365e-19" y="15">Haus Maus geht raus</tspan>
+        </text>
+      </g>
+      <g id="Graphic_63">
+        <text transform="translate(102.7076 381.84294)" fill="black">
+          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="0" y="15">Haus Maus geht</tspan>
+        </text>
       </g>
     </g>
   </g>

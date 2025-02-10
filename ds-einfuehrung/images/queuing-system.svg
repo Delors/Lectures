@@ -1,22 +1,21 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xl="http://www.w3.org/1999/xlink" viewBox="-130 -200 527 178" width="527" height="178">
+<svg xmlns:dc="http://purl.org/dc/elements/1.1/" version="1.1" xmlns:xl="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" viewBox="-130 -200 487 158" width="487" height="158">
+  <style>
+    @import url('/LectureDoc2/ext/fonts/ld-fonts.css'); 
+  </style>
   <defs>
-    <font-face font-family="Helvetica" font-size="16" units-per-em="1000" underline-position="-75.68359" underline-thickness="49.316406" slope="0" x-height="522.9492" cap-height="717.28516" ascent="770.0195" descent="-229.98047" font-weight="400">
-      <font-face-src>
-        <font-face-name name="Helvetica"/>
-      </font-face-src>
-    </font-face>
+
     <marker orient="auto" overflow="visible" markerUnits="strokeWidth" id="StickArrow_Marker" stroke-linejoin="miter" stroke-miterlimit="10" viewBox="-1 -4 10 8" markerWidth="10" markerHeight="8" color="black">
       <g>
         <path d="M 8 0 L 0 0 M 0 -3 L 8 0 L 0 3" fill="none" stroke="currentColor" stroke-width="1"/>
       </g>
     </marker>
   </defs>
-  <metadata> Produced by OmniGraffle 8.0\n2024-01-31 19:46:51 +0000</metadata>
-  <g id="Canvas_1" stroke="none" stroke-dasharray="none" fill="none" stroke-opacity="1" fill-opacity="1">
+  <metadata> Produced by OmniGraffle 8.0\n2025-02-09 07:16:54 +0000</metadata>
+  <g id="Canvas_1" stroke-opacity="1" stroke-dasharray="none" fill="none" fill-opacity="1" stroke="none">
     <title>Canvas 1</title>
-    <rect fill="white" x="-130" y="-200" width="527" height="178"/>
+    <rect fill="white" x="-130" y="-200" width="487" height="158"/>
     <g id="Canvas_1_Layer_1">
       <title>Layer 1</title>
       <g id="Graphic_100">
@@ -36,37 +35,37 @@
         <rect x="65.2963" y="-199" width="32.14815" height="128" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
       </g>
       <g id="Graphic_104">
-        <circle cx="222.6" cy="-135" r="64.0001022657214" fill="white"/>
-        <circle cx="222.6" cy="-135" r="64.0001022657214" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <circle cx="197.851" cy="-135" r="64.0001022657214" fill="white"/>
+        <circle cx="197.851" cy="-135" r="64.0001022657214" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
       </g>
       <g id="Graphic_105">
-        <text transform="translate(-124.33536 -144.5)" fill="black">
-          <tspan font-family="Helvetica" font-size="16" font-weight="400" fill="black" x="0" y="15">Anfrage</tspan>
+        <text transform="translate(-120.5723 -144.5)" fill="black">
+          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="831335e-18" y="15" xml:space="preserve">Anfrage</tspan>
         </text>
       </g>
       <g id="Graphic_106">
-        <text transform="translate(336.89844 -144.5)" fill="black">
-          <tspan font-family="Helvetica" font-size="16" font-weight="400" fill="black" x="0" y="15">Antwort</tspan>
+        <text transform="translate(298.0483 -144.5)" fill="black">
+          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="0" y="15" xml:space="preserve">Antwort</tspan>
         </text>
       </g>
       <g id="Graphic_107">
-        <text transform="translate(-45.836516 -46.2)" fill="black">
-          <tspan font-family="Helvetica" font-size="16" font-weight="400" fill="black" x="0" y="15">Warteschlange</tspan>
+        <text transform="translate(-20.743386 -66.046915)" fill="black">
+          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="0" y="15" xml:space="preserve">Warteschlange</tspan>
         </text>
       </g>
       <g id="Graphic_108">
-        <text transform="translate(196.81485 -46.2)" fill="black">
-          <tspan font-family="Helvetica" font-size="16" font-weight="400" fill="black" x="0" y="15">Prozeß</tspan>
+        <text transform="translate(178.20358 -66.046915)" fill="black">
+          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="4973799e-19" y="15" xml:space="preserve">Prozeß</tspan>
         </text>
       </g>
       <g id="Line_109">
         <line x1="-63.2963" y1="-135" x2="-41.04815" y2="-135" marker-end="url(#StickArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
       </g>
       <g id="Line_110">
-        <line x1="97.44444" y1="-135" x2="148.69997" y2="-135" marker-end="url(#StickArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <line x1="97.44444" y1="-135" x2="123.95096" y2="-135" marker-end="url(#StickArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
       </g>
       <g id="Line_111">
-        <line x1="287.2" y1="-134.6" x2="321.99858" y2="-134.7812" marker-end="url(#StickArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <line x1="262.451" y1="-134.6" x2="283.1485" y2="-134.73337" marker-end="url(#StickArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
       </g>
       <g id="Line_112">
         <line x1="-31.2" y1="-199" x2="-63.34815" y2="-198.92704" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
