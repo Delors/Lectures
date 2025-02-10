@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg xmlns:dc="http://purl.org/dc/elements/1.1/" version="1.1" xmlns:xl="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" viewBox="-102 -173 214 207" width="214" height="207">
+<svg xmlns:dc="http://purl.org/dc/elements/1.1/" version="1.1" xmlns:xl="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" viewBox="-97 -164 204 194" width="204" height="194">
   <style>
     @import url('/LectureDoc2/ext/fonts/ld-fonts.css'); 
   </style>
@@ -11,61 +11,61 @@
       </g>
     </marker>
   </defs>
-  <metadata> Produced by OmniGraffle 8.0\n2025-02-09 19:31:37 +0000</metadata>
+  <metadata> Produced by OmniGraffle 8.0\n2025-02-10 10:11:41 +0000</metadata>
   <g id="grid-computing-architecture" stroke-opacity="1" stroke-dasharray="none" fill="none" fill-opacity="1" stroke="none">
     <title>grid-computing-architecture</title>
-    <rect fill="white" x="-102" y="-173" width="214" height="207"/>
+    <rect fill="white" x="-97" y="-164" width="204" height="194"/>
     <g id="grid-computing-architecture_Layer_1">
       <title>Layer 1</title>
       <g id="Graphic_114">
-        <path d="M -51.203564 -172.09715 L 60.796436 -172.09715 C 63.005575 -172.09715 64.796436 -170.30629 64.796436 -168.09715 L 64.796436 -148.09715 C 64.796436 -145.888 63.005575 -144.09715 60.796436 -144.09715 L -51.203564 -144.09715 C -53.4127 -144.09715 -55.203564 -145.888 -55.203564 -148.09715 L -55.203564 -168.09715 C -55.203564 -170.30629 -53.4127 -172.09715 -51.203564 -172.09715 Z" fill="#727272"/>
-        <text transform="translate(-50.203564 -167.59715)" fill="white">
+        <path d="M -51.203564 -163.34213 L 60.796436 -163.34213 C 63.005575 -163.34213 64.796436 -161.55127 64.796436 -159.34213 L 64.796436 -139.34213 C 64.796436 -137.13299 63.005575 -135.34213 60.796436 -135.34213 L -51.203564 -135.34213 C -53.4127 -135.34213 -55.203564 -137.13299 -55.203564 -139.34213 L -55.203564 -159.34213 C -55.203564 -161.55127 -53.4127 -163.34213 -51.203564 -163.34213 Z" fill="#727272"/>
+        <text transform="translate(-50.203564 -158.84213)" fill="white">
           <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="white" x="9.584" y="15" xml:space="preserve">Anwendungen</tspan>
         </text>
       </g>
       <g id="Graphic_115">
-        <path d="M -51.203564 5.048572 L 60.796436 5.048572 C 63.005575 5.048572 64.796436 6.839433 64.796436 9.048572 L 64.796436 29.048572 C 64.796436 31.25771 63.005575 33.048572 60.796436 33.048572 L -51.203564 33.048572 C -53.4127 33.048572 -55.203564 31.25771 -55.203564 29.048572 L -55.203564 9.048572 C -55.203564 6.839433 -53.4127 5.048572 -51.203564 5.048572 Z" fill="#dadada"/>
-        <text transform="translate(-50.203564 9.548572)" fill="black">
+        <path d="M -51.203564 1.8793837 L 60.796436 1.8793837 C 63.005575 1.8793837 64.796436 3.6702447 64.796436 5.879384 L 64.796436 25.879384 C 64.796436 28.088523 63.005575 29.879384 60.796436 29.879384 L -51.203564 29.879384 C -53.4127 29.879384 -55.203564 28.088523 -55.203564 25.879384 L -55.203564 5.879384 C -55.203564 3.6702447 -53.4127 1.8793837 -51.203564 1.8793837 Z" fill="#dadada"/>
+        <text transform="translate(-50.203564 6.379384)" fill="black">
           <tspan font-family="Noto Sans Display" font-size="14" font-style="italic" font-weight="400" fill="black" x="18.894" y="15" xml:space="preserve">Fabric Layer</tspan>
         </text>
       </g>
       <g id="Graphic_116">
-        <path d="M -51.203564 -117.04857 L 60.796436 -117.04857 C 63.005575 -117.04857 64.796436 -115.25771 64.796436 -113.04857 L 64.796436 -93.04857 C 64.796436 -90.83943 63.005575 -89.04857 60.796436 -89.04857 L -51.203564 -89.04857 C -53.4127 -89.04857 -55.203564 -90.83943 -55.203564 -93.04857 L -55.203564 -113.04857 C -55.203564 -115.25771 -53.4127 -117.04857 -51.203564 -117.04857 Z" fill="#a5a5a5"/>
-        <text transform="translate(-50.203564 -112.54857)" fill="white">
+        <path d="M -51.203564 -111.55289 L 60.796436 -111.55289 C 63.005575 -111.55289 64.796436 -109.76203 64.796436 -107.55289 L 64.796436 -87.55289 C 64.796436 -85.34375 63.005575 -83.55289 60.796436 -83.55289 L -51.203564 -83.55289 C -53.4127 -83.55289 -55.203564 -85.34375 -55.203564 -87.55289 L -55.203564 -107.55289 C -55.203564 -109.76203 -53.4127 -111.55289 -51.203564 -111.55289 Z" fill="#a5a5a5"/>
+        <text transform="translate(-50.203564 -107.05289)" fill="white">
           <tspan font-family="Noto Sans Display" font-size="14" font-style="italic" font-weight="400" fill="white" x="9.192" y="15" xml:space="preserve">Collective Layer</tspan>
         </text>
       </g>
       <g id="Graphic_132">
-        <path d="M -97.43122 -62 L -5.4312164 -62 C -3.2220774 -62 -1.4312164 -60.20914 -1.4312164 -58 L -1.4312164 -26 C -1.4312164 -23.790862 -3.2220774 -22 -5.4312164 -22 L -97.43122 -22 C -99.64036 -22 -101.43122 -23.790862 -101.43122 -26 L -101.43122 -58 C -101.43122 -60.20914 -99.64036 -62 -97.43122 -62 Z" fill="#dadada"/>
-        <text transform="translate(-96.43122 -61)" fill="black">
-          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x=".515" y="15" xml:space="preserve">Konnektivitäts</tspan>
-          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="21.046" y="34" xml:space="preserve">-schicht</tspan>
+        <path d="M -92.69175 -62 L -5.429313 -62 C -3.220174 -62 -1.4293128 -60.20914 -1.4293128 -58 L -1.4293128 -26 C -1.4293128 -23.790862 -3.220174 -22 -5.429313 -22 L -92.69175 -22 C -94.90088 -22 -96.69175 -23.790862 -96.69175 -26 L -96.69175 -58 C -96.69175 -60.20914 -94.90088 -62 -92.69175 -62 Z" fill="#dadada"/>
+        <text transform="translate(-96.69175 -61)" fill="black">
+          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="1.025218" y="15" xml:space="preserve">Konnektivitäts-</tspan>
+          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="25.798218" y="34" xml:space="preserve">schicht</tspan>
         </text>
       </g>
       <g id="Graphic_133">
-        <path d="M 15.024088 -62 L 107.02409 -62 C 109.23323 -62 111.02409 -60.20914 111.02409 -58 L 111.02409 -26 C 111.02409 -23.790862 109.23323 -22 107.02409 -22 L 15.024088 -22 C 12.814949 -22 11.024088 -23.790862 11.024088 -26 L 11.024088 -58 C 11.024088 -60.20914 12.814949 -62 15.024088 -62 Z" fill="#dadada"/>
-        <text transform="translate(16.024088 -61)" fill="black">
-          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="7.046" y="15" xml:space="preserve">Ressourcen-</tspan>
-          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="23.167" y="34" xml:space="preserve">schicht</tspan>
+        <path d="M 14.95325 -62 L 102.21568 -62 C 104.42482 -62 106.21568 -60.20914 106.21568 -58 L 106.21568 -26 C 106.21568 -23.790862 104.42482 -22 102.21568 -22 L 14.95325 -22 C 12.744112 -22 10.953251 -23.790862 10.953251 -26 L 10.953251 -58 C 10.953251 -60.20914 12.744112 -62 14.95325 -62 Z" fill="#dadada"/>
+        <text transform="translate(10.953251 -61)" fill="black">
+          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="9.677218" y="15" xml:space="preserve">Ressourcen-</tspan>
+          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="25.798218" y="34" xml:space="preserve">schicht</tspan>
         </text>
       </g>
       <g id="Line_134">
-        <line x1="4.796436" y1="-144.09715" x2="4.796436" y2="-123.94857" marker-end="url(#SharpArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <line x1="4.796436" y1="-135.34213" x2="4.796436" y2="-118.46172" marker-end="url(#SharpArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
       </g>
       <g id="Line_135">
-        <line x1="-25.203564" y1="-89.04857" x2="-26.11837" y2="-68.892905" marker-end="url(#SharpArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <line x1="-25.203564" y1="-83.56172" x2="-25.231686" y2="-68.89999" marker-end="url(#SharpArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
       </g>
       <g id="Line_136">
-        <line x1="34.796436" y1="-89.04857" x2="35.71124" y2="-68.892905" marker-end="url(#SharpArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <line x1="34.796436" y1="-83.56172" x2="34.772876" y2="-68.89999" marker-end="url(#SharpArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
       </g>
       <g id="Line_137">
-        <line x1="-26.431216" y1="-22" x2="-25.516412" y2="-1.844332" marker-end="url(#SharpArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <line x1="-25.24492" y1="-22" x2="-25.215514" y2="-5.020606" marker-end="url(#SharpArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
       </g>
       <g id="Line_138">
-        <line x1="36.02409" y1="-22" x2="35.109284" y2="-1.844332" marker-end="url(#SharpArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <line x1="34.76179" y1="-22" x2="34.786425" y2="-5.020609" marker-end="url(#SharpArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
       </g>
       <g id="Line_139">
-        <line x1="-1.4312164" y1="-42" x2="11.024088" y2="-42" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <line x1="-1.4293128" y1="-42" x2="10.946181" y2="-42" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
       </g>
     </g>
   </g>
