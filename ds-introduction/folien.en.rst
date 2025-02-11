@@ -5,7 +5,7 @@
     :description lang=en: Introduction to Distributed Systems
     :id: lecture-ds-introduction
     :first-slide: last-viewed
-    :exercises-master-password: WirklichSchwierig!
+    :master-password: WirklichSchwierig!
     
 .. |html-source| source::
     :prefix: https://delors.github.io/
@@ -21,7 +21,6 @@
 .. role:: ger
 .. role:: red
 .. role:: green
-.. role:: the-blue
 .. role:: peripheral
 .. role:: obsolete
 .. role:: math-i

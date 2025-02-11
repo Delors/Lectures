@@ -6,7 +6,7 @@
     :description lang=de: Zufallszahlengenerierung und Stromchiffren
     :id: lecture-security-stromchiffren
     :first-slide: last-viewed
-    :exercises-master-password: WirklichSchwierig!
+    :master-password: WirklichSchwierig!
 
 .. |html-source| source::
     :prefix: https://delors.github.io/

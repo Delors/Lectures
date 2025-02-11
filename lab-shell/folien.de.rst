@@ -5,7 +5,7 @@
     :description lang=de: Fortgeschrittene Angewandte IT Sicherheit
     :id: 2023_11-w3wi_se403_passwort_wiederherstellung-shell
     :first-slide: last-viewed
-    :exercises-master-password: WirklichSchwierig!
+    :master-password: WirklichSchwierig!
 
 .. |html-source| source::
     :prefix: https://delors.github.io/

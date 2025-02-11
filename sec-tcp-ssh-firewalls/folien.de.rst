@@ -5,7 +5,7 @@
     :description lang=de: Network Security - Eine Einführung in die Sicherheit von (verteilten) Systemen
     :id: lecture-security-a-primer-in-network-security
     :first-slide: last-viewed
-    :exercises-master-password: WirklichSchwierig!
+    :master-password: WirklichSchwierig!
 
 .. |html-source| source::
     :prefix: https://delors.github.io/

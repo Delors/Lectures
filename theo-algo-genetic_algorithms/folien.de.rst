@@ -6,7 +6,7 @@
     :description lang=de: Implementierung von genetischen Algorithmen in Python
     :id: lecture-Genetische_Algorithmen
     :first-slide: last-viewed
-    :exercises-master-password: WirklichSchwierig!
+    :master-password: WirklichSchwierig!
     
 .. |html-source| source::
     :prefix: https://delors.github.io/

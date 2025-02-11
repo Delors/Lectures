@@ -6,7 +6,7 @@
     :description lang=de: Public-Key Kryptografie and RSA
     :id: lecture-security-public_key_cryptography
     :first-slide: last-viewed
-    :exercises-master-password: WirklichSchwierig!
+    :master-password: WirklichSchwierig!
 
 .. |html-source| source::
     :prefix: https://delors.github.io/

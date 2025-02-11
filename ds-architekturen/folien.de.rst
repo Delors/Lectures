@@ -5,7 +5,7 @@
     :description lang=de: Architekturen von verteilten Anwendungen
     :id: lecture-ds-architekturen
     :first-slide: last-viewed
-    :exercises-master-password: WirklichSchwierig!
+    :master-password: WirklichSchwierig!
 
 .. |html-source| source::
     :prefix: https://delors.github.io/

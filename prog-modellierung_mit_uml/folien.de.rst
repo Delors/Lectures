@@ -6,7 +6,7 @@
     :description lang=de: Einführung in der Modellierung mit UML
     :id: lecture-prog-uml
     :first-slide: last-viewed
-    :exercises-master-password: WirklichSchwierig!
+    :master-password: WirklichSchwierig!
     
 .. |html-source| source::
     :prefix: https://delors.github.io/

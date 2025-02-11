@@ -6,7 +6,7 @@
     :description lang=de: Suchen auf Arrays
     :id: lecture-theo-algo-suchen_auf_arrays
     :first-slide: last-viewed
-    :exercises-master-password: WirklichSchwierig!
+    :master-password: WirklichSchwierig!
     
 .. |html-source| source::
     :prefix: https://delors.github.io/

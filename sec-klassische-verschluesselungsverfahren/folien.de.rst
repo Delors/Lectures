@@ -6,7 +6,7 @@
     :description lang=de: Klassische Verschlüsselungsmethoden
     :id: lecture-security-klassische-verschluesselungsverfahren
     :first-slide: last-viewed
-    :exercises-master-password: WirklichSchwierig!
+    :master-password: WirklichSchwierig!
 
 .. |html-source| source::
     :prefix: https://delors.github.io/

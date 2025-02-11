@@ -5,7 +5,7 @@
     :description lang=de: Fortgeschrittene Angewandte IT Sicherheit
     :id: lecture-security-java_reverse_engineering
     :first-slide: last-viewed
-    :exercises-master-password: WirklichSchwierig!    
+    :master-password: WirklichSchwierig!    
 
 .. |html-source| source::
     :prefix: https://delors.github.io/

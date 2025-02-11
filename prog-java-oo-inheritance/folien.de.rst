@@ -6,7 +6,7 @@
     :description lang=de: Objekt-orientierte Programmierung mit Java - Vererbung und Polymorphie
     :id: lecture-prog-oo-inheritance
     :first-slide: last-viewed
-    :exercises-master-password: WirklichSchwierig!
+    :master-password: WirklichSchwierig!
     
 .. |html-source| source::
     :prefix: https://delors.github.io/

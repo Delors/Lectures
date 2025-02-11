@@ -6,7 +6,7 @@
     :description lang=en: Concurrency in Python
     :id: lecture-ds-nebenlaeufigkeit-python
     :first-slide: last-viewed
-    :exercises-master-password: WirklichSchwierig!
+    :master-password: WirklichSchwierig!
 
 .. |html-source| source::
     :prefix: https://delors.github.io/

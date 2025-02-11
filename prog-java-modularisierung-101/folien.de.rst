@@ -6,7 +6,7 @@
     :description lang=de: Aufteilen von Java Code auf mehrere Dateien und Klassen
     :id: lecture-prog-java-modularisierung-101
     :first-slide: last-viewed
-    :exercises-master-password: WirklichSchwierig!
+    :master-password: WirklichSchwierig!
     
 .. |html-source| source::
     :prefix: https://delors.github.io/

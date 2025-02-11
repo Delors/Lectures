@@ -5,7 +5,7 @@
     :description lang=de: Einführung in klassische Sicherheitsprinzipien
     :id: lecture-security-einfuehrung-in-sicherheitsprinzipien
     :first-slide: last-viewed
-    :exercises-master-password: WirklichSchwierig!
+    :master-password: WirklichSchwierig!
 
 .. |html-source| source::
     :prefix: https://delors.github.io/

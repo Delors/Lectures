@@ -5,7 +5,7 @@
     :description lang=de: TOR 
     :id: lecture-security-tor
     :first-slide: last-viewed
-    :exercises-master-password: WirklichSchwierig!    
+    :master-password: WirklichSchwierig!    
 
 .. |html-source| source::
     :prefix: https://delors.github.io/

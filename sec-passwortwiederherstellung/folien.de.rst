@@ -5,7 +5,7 @@
     :description lang=de: Wiederherstellung von Passwörtern
     :id: lecture-security-passwort_wiederherstellung
     :first-slide: last-viewed
-    :exercises-master-password: WirklichSchwierig!
+    :master-password: WirklichSchwierig!
 
 .. |html-source| source::
     :prefix: https://delors.github.io/

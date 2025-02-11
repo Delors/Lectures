@@ -6,7 +6,7 @@
     :description lang=de: Advanced Encryption Standard (AES)
     :id: lecture-security-aes
     :first-slide: last-viewed
-    :exercises-master-password: WirklichSchwierig!
+    :master-password: WirklichSchwierig!
 
 .. |html-source| source::
     :prefix: https://delors.github.io/

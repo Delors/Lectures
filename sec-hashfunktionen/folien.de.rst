@@ -6,7 +6,7 @@
     :description lang=de: Kryptografische Hashfunktionen
     :id: lecture-security-hash_functions
     :first-slide: last-viewed
-    :exercises-master-password: WirklichSchwierig!
+    :master-password: WirklichSchwierig!
 
 .. |html-source| source::
     :prefix: https://delors.github.io/

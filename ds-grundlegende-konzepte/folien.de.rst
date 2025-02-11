@@ -6,7 +6,7 @@
     :description lang=en: Basic concepts of distributed systems: Lamport Clocks and 2PC
     :id: lecture-ds-2pc-und-zeit
     :first-slide: last-viewed
-    :exercises-master-password: WirklichSchwierig!
+    :master-password: WirklichSchwierig!
 
 .. |html-source| source::
     :prefix: https://delors.github.io/

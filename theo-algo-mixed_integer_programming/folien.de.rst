@@ -6,7 +6,7 @@
     :description lang=de: Lineare und Mixed-Integer-Programmierung
     :id: lecture-theo-mixed_integer_programming
     :first-slide: last-viewed
-    :exercises-master-password: WirklichSchwierig!
+    :master-password: WirklichSchwierig!
     
 .. |html-source| source::
     :prefix: https://delors.github.io/

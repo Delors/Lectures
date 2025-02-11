@@ -5,7 +5,7 @@
     :description lang=de: Verteilte Systeme
     :id: lecture-security-cwe-owasp
     :first-slide: last-viewed
-    :exercises-master-password: WirklichSchwierig!
+    :master-password: WirklichSchwierig!
 
 .. |html-source| source::
     :prefix: https://delors.github.io/

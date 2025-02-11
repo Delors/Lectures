@@ -5,7 +5,7 @@
     :description lang=de: Einführung in RESTful Web Services
     :id: ds-restful-web-services
     :first-slide: last-viewed
-    :exercises-master-password: WirklichSchwierig!
+    :master-password: WirklichSchwierig!
 
 .. |WS| replace:: *Web Service*
 .. |html-source| source::

@@ -6,7 +6,7 @@
     :description lang=de: Formale Sprachen
     :id: lecture-theo-algo-formal_languages
     :first-slide: last-viewed
-    :exercises-master-password: WirklichSchwierig!
+    :master-password: WirklichSchwierig!
     
 .. |html-source| source::
     :prefix: https://delors.github.io/

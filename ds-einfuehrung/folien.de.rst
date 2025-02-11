@@ -5,7 +5,7 @@
     :description lang=de: Verteilte Systeme
     :id: lecture-ds-einfuehrung
     :first-slide: last-viewed
-    :exercises-master-password: WirklichSchwierig!
+    :master-password: WirklichSchwierig!
     
 .. |html-source| source::
     :prefix: https://delors.github.io/
@@ -21,7 +21,6 @@
 .. role:: ger
 .. role:: red
 .. role:: green
-.. role:: the-blue
 .. role:: peripheral
 .. role:: obsolete
 
@@ -39,7 +38,7 @@ Ein weitgefasster Überblick über verteilte Systeme.
 
 :Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
 :Kontakt: michael.eichberg@dhbw.de, Raum 149B
-:Version: 1.0
+:Version: 1.0.1
 
 .. supplemental::
 
@@ -402,16 +401,10 @@ Sicherheit in verteilten Systemen - Schutzziele
 Sicherheit in verteilten Systemen - Autorisierung, Authentifizierung, Vertrauen
 -------------------------------------------------------------------------------------
 
-.. class:: incremental
+.. class:: incremental-list
 
 :Authentifizierung `Authentication`:eng:: Prozess zur Überprüfung der Korrektheit einer behaupteten Identität.
-
-.. class:: incremental
-
 :Autorisierung `Authorization`:eng:: Verfügt eine identifizierte Einheit über die richtigen Zugriffsrechte?
-
-.. class:: incremental
-
 :Vertrauen `Trust`:eng:: Eine Komponente kann sich sicher sein, dass eine andere Komponente bestimmte Handlungen gemäß den Erwartungen ausführt.
 
 
@@ -423,7 +416,7 @@ Es geht im Wesentlichen um das Ver- und Entschlüsseln von Daten (:math:`X`) mit
 
 .. deck::
 
-    .. card:: trbl-shadow padding-1em
+    .. card:: padding-1em
 
         :math:`E(K,X)` bedeutet, dass wir die Nachricht X mit dem Schlüssel :math:`K`  verschlüsseln (:eng:`encryption`). 
         
@@ -557,7 +550,7 @@ Ein zentralisierter Dienst kann als einfaches Warteschlangensystem modelliert we
 
 .. rubric:: Annahmen
 
-Die Warteschlange hat eine unendliche Kapazität; d. h.die Ankunftsrate der Anfragen wird nicht durch die aktuelle Länge der Warteschlange oder durch das, was gerade bearbeitet wird, beeinflusst.
+Die Warteschlange hat eine unendliche Kapazität; d. h. die Ankunftsrate der Anfragen wird nicht durch die aktuelle Länge der Warteschlange oder durch das, was gerade bearbeitet wird, beeinflusst.
 
 
 
@@ -687,7 +680,7 @@ Probleme der geografischen Skalierbarkeit
 
 - Viele verteilte Systeme gehen von synchronen Client-Server-Interaktionen aus und dies verhindert einen Übergang vom LAN zum WAN. Die Latenzzeiten können prohibitiv sein, wenn der Client auf eine Anfrage lange warten muss.
   
-.. class:: incremental
+.. class:: incremental-list
 
 - WAN-Verbindungen sind oft von Natur aus unzuverlässig.
 
@@ -770,10 +763,11 @@ Ansätze, um Skalierung zu erreichen
 - Datei-Caching (auf Server und Client)
 
 
+
 Herausforderungen bei der Replikation 
 ---------------------------------------
 
-.. class:: incremental
+.. class:: incremental-list
 
 - Mehrere Kopien (zwischengespeichert (:eng:`cached`) oder repliziert) führen zwangsläufig zu Inkonsistenzen. Die Änderung einer Kopie führt dazu, dass sich diese Kopie von den anderen unterscheidet.
 - Zur Erreichung von Konsistenz ist bei jeder Änderung eine globale Synchronisierung erforderlich.
@@ -782,6 +776,7 @@ Herausforderungen bei der Replikation
 .. supplemental::
 
     Inwieweit Inkonsistenzen toleriert werden können, ist anwendungsspezifisch. Können diese jedoch toleriert werden, dann kann der Bedarf an globaler Synchronisation verringert werden.
+
 
 
 Paralleles Rechnen (:eng:`Parallel Computing`)
@@ -959,7 +954,7 @@ Bedingte Wahrscheinlichkeit, dass :math:`C` während :math:`[0,t)` korrekt funkt
 
     .. rubric:: Traditionelle Metriken
 
-    .. class:: incremental
+    .. class:: incremental-list
 
     - Mittlere Zeit bis zum Versagen (:eng:`Mean Time to Failure` (:math:`MTTF`)): 
   
@@ -1325,7 +1320,7 @@ Middleware ermöglicht Kommunikation zwischen den Anwendungen.
 Wie kann die Anwendungsintegration erreicht werden?
 -----------------------------------------------------
 
-.. class:: incremental dd-margin-left-2em
+.. class:: incremental-list dd-margin-left-2em
 
 :Dateiübertragung: 
 
@@ -1334,17 +1329,8 @@ Wie kann die Anwendungsintegration erreicht werden?
   - Dateiformat und Layout herausfinden
   - Dateiverwaltung regeln
   - Weitergabe von Aktualisierungen und Aktualisierungsbenachrichtigungen
- 
-.. class:: incremental dd-margin-left-2em
-
 :Gemeinsame Datenbank: Sehr viel flexibler, erfordert aber immer noch ein gemeinsames Datenschema neben dem Risiko eines Engpasses.
-
-.. class:: incremental dd-margin-left-2em
-
 :Entfernter Prozeduraufruf `Remote Procedure Call (RPC)`:eng:: Wirksam, wenn die Ausführung einer Reihe von Aktionen erforderlich ist.
-
-.. class:: incremental dd-margin-left-2em
-
 :Nachrichtenübermittlung `Messaging`:eng:: Ermöglicht eine zeitliche und räumliche Entkopplung im Vergleich zu RPCs.
 
 
@@ -1376,10 +1362,11 @@ Moderne verteilte Systeme
     :Sensor-/Actuator Networks: *allgegenwärtig*; Schwerpunkt liegt auf der tatsächlichen (kollaborativen) Erfassung (:eng:`sensing`) und Betätigung (:eng:`actuation`).
 
 
+
 *Ubiquitous Systems* - Kernbestandteile
 --------------------------------------------
 
-.. class:: incremental
+.. class:: incremental-list
 
 1. :eng:`Distribution`: Die Geräte sind vernetzt, verteilt und ohne Hürde zugänglich.
 2. :eng:`Interaction`: Die Interaktion zwischen Benutzern und Geräten ist in hohem Maße unaufdringlich. 
@@ -1388,16 +1375,18 @@ Moderne verteilte Systeme
 5. :eng:`Intelligence`: Das System als Ganzes kann ein breites Spektrum dynamischer Aktionen und Interaktionen bewältigen.
 
 
+
 *Mobile Computing* - Auszeichnende Merkmale
 --------------------------------------------
 
-.. class:: incremental smaller
+.. class:: incremental-list
 
 - Eine Vielzahl unterschiedlicher mobiler Geräte (Smartphones, Tablets, GPS-Geräte, Fernbedienungen, aktive Ausweise).
 - Mobil bedeutet, dass sich der Standort eines Geräts im Laufe der Zeit ändern kann. Dies kann z. B. Auswirkung haben auf die lokalen Dienste oder die Erreichbarkeit.
 - Die Aufrechterhaltung einer stabilen Kommunikation kann zu ernsthaften Problemen führen.
         
-.. container:: assessment margin-top-2em incremental
+.. observation:: 
+    :class: incremental margin-top-1em
 
     Aktueller Stand ist, dass mobile Geräte Verbindungen zu stationären Servern herstellen, wodurch diese im Prinzip *Clients* von Cloud-basierten Diensten sind.
 
@@ -1451,7 +1440,7 @@ Das *Cloud-Edge Continuum*
 Fallstricke bei der Entwicklung verteilter Systeme
 -----------------------------------------------------
 
-.. container:: assessment
+.. observation:: 
 
     Viele verteilte Systeme sind unnötig komplex aufgrund fehlerhafter Annahmen sowie von Architektur- und Designfehlern, die später nachgebessert werden müssen.
 
@@ -1459,7 +1448,7 @@ Fallstricke bei der Entwicklung verteilter Systeme
 
     .. rubric:: Falsche (und oft versteckte) Annahmen
 
-    .. class:: incremental
+    .. class:: incremental-list
 
     - Das Netzwerk ist zuverlässig
     - Das Netzwerk ist sicher

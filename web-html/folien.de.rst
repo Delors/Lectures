@@ -5,7 +5,7 @@
     :description lang=de: HTML
     :id: lecture-web-programming-html
     :first-slide: last-viewed
-    :exercises-master-password: WirklichSchwierig!
+    :master-password: WirklichSchwierig!
     
 .. |html-source| source::
     :prefix: https://delors.github.io/

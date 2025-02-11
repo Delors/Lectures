@@ -7,7 +7,7 @@
     :description lang=de: Einführung in die Zahlentheorie
     :id: sec-einfuehrung-in-die-zahlentheorie
     :first-slide: last-viewed
-    :exercises-master-password: WirklichSchwierig!
+    :master-password: WirklichSchwierig!
 
 .. |html-source| source::
     :prefix: https://delors.github.io/

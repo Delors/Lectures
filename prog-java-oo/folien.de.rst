@@ -6,7 +6,7 @@
     :description lang=de: Einführung in die Objekt-orientierte Programmierung mit Java
     :id: lecture-prog-oo
     :first-slide: last-viewed
-    :exercises-master-password: WirklichSchwierig!
+    :master-password: WirklichSchwierig!
     
 .. |html-source| source::
     :prefix: https://delors.github.io/

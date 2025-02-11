@@ -6,7 +6,7 @@
     :description lang=de: Betriebsmodi bei Blockchiffren
     :id: lecture-security-blockchiffre-operationsmodi
     :first-slide: last-viewed
-    :exercises-master-password: WirklichSchwierig!
+    :master-password: WirklichSchwierig!
 
 .. |html-source| source::
     :prefix: https://delors.github.io/

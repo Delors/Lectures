@@ -6,7 +6,7 @@
     :description lang=de: Fragen und Aufgaben zur Klausurvorbereitung bzgl. Java Arrays
     :id: lecture-prog-java-arrays-kontrollfragen
     :first-slide: last-viewed
-    :exercises-master-password: WirklichSchwierig!
+    :master-password: WirklichSchwierig!
 
 .. |html-source| source::
     :prefix: https://delors.github.io/

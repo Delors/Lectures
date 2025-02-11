@@ -5,7 +5,7 @@
     :description lang=de: Diskussion der Bedeutung der agilen Softwareentwicklung für verteilte Anwendungsarchitekturen
     :id: lecture-ds-agile-for-distributed-systems
     :first-slide: last-viewed
-    :exercises-master-password: WirklichSchwierig!
+    :master-password: WirklichSchwierig!
 
 .. |html-source| source::
     :prefix: https://delors.github.io/

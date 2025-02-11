@@ -6,7 +6,7 @@
     :description lang=en: HTTP amd Sockets
     :id: lecture-ds-http-and-sockets-python
     :first-slide: last-viewed
-    :exercises-master-password: WirklichSchwierig!
+    :master-password: WirklichSchwierig!
 
 .. |html-source| source::
     :prefix: https://delors.github.io/

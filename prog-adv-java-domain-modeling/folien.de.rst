@@ -6,7 +6,7 @@
     :description lang=de: Java Generics 
     :id: lecture-prog-java-domain-modeling-and-records
     :first-slide: last-viewed
-    :exercises-master-password: WirklichSchwierig!
+    :master-password: WirklichSchwierig!
     
 .. |html-source| source::
     :prefix: https://delors.github.io/

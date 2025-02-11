@@ -5,7 +5,7 @@
     :description lang=de: Sicherheit von Passwörtern
     :id: lecture-security-passwort_sicherheit
     :first-slide: last-viewed
-    :exercises-master-password: WirklichSchwierig!
+    :master-password: WirklichSchwierig!
 
 .. |html-source| source::
     :prefix: https://delors.github.io/

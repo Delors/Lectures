@@ -6,7 +6,7 @@
     :description lang=de: Verwendung von Arrays in Java
     :id: lecture-prog-java-arrays
     :first-slide: last-viewed
-    :exercises-master-password: WirklichSchwierig!
+    :master-password: WirklichSchwierig!
     
 .. |html-source| source::
     :prefix: https://delors.github.io/

@@ -5,7 +5,7 @@
     :description lang=de: CSS
     :id: lecture-web-programming-css
     :first-slide: last-viewed
-    :exercises-master-password: WirklichSchwierig!
+    :master-password: WirklichSchwierig!
     
 .. |html-source| source::
     :prefix: https://delors.github.io/
@@ -110,7 +110,7 @@ CSS (Cascading Style Sheets) ist eine Stylesheet-Sprache, die verwendet wird, um
                 </body></html>"
                     width="var(--ld-slide-width)" 
                     height="550"
-                    style="border-radius: calc(var(--slide-border-radius) * 0.5)" >
+                    style="border-radius: calc(var(--s-border-radius) * 0.5)" >
                 iframes are not supported
             </iframe>
 
@@ -479,7 +479,7 @@ Kombinatoren - Beispiele
                         </body>"
                     width="var(--ld-slide-width)" 
                     height="930"
-                    style="border-radius: calc(var(--slide-border-radius) * 0.5)" >
+                    style="border-radius: calc(var(--s-border-radius) * 0.5)" >
                 iframes are not supported
             </iframe>
 
@@ -584,7 +584,7 @@ Kombinatoren - Beispiele
                         </div>
                     </div>"                        
                     height="100"
-                    style="border-radius: calc(var(--slide-border-radius) * 0.5)" >
+                    style="border-radius: calc(var(--s-border-radius) * 0.5)" >
                 iframes are not supported
             </iframe>
 
@@ -641,7 +641,7 @@ Kombinatoren - Beispiele
                         </body>"
                     width="var(--ld-slide-width)" 
                     height="900"
-                    style="border-radius: calc(var(--slide-border-radius) * 0.5)" >
+                    style="border-radius: calc(var(--s-border-radius) * 0.5)" >
                 iframes are not supported
             </iframe>
 
@@ -732,7 +732,7 @@ Spezifität von Selektoren
                     <p>Der letzte Abschnitt.</p>
                                 </body>"
                             height="600px"
-                            style="border-radius: calc(var(--slide-border-radius) * 0.5); width: 100% !important;" >
+                            style="border-radius: calc(var(--s-border-radius) * 0.5); width: 100% !important;" >
                         iframes are not supported
                     </iframe>
 
@@ -930,7 +930,7 @@ CSS - Trick - nicht-unterstützte Eigenschaften
                         </body>"
                     width="var(--ld-slide-width)" 
                     height="550"
-                    style="border-radius: calc(var(--slide-border-radius) * 0.5)" >
+                    style="border-radius: calc(var(--s-border-radius) * 0.5)" >
                 iframes are not supported
             </iframe>
 
@@ -993,7 +993,7 @@ Erlauben das Gruppieren von Selektoren innerhalb eines (komplexen) Selektors.
                         </body>"
                     width="var(--ld-slide-width)" 
                     height="600"
-                    style="border-radius: calc(var(--slide-border-radius) * 0.5)" >
+                    style="border-radius: calc(var(--s-border-radius) * 0.5)" >
                 iframes are not supported
             </iframe>
 
@@ -1057,7 +1057,7 @@ Erlauben das Gruppieren von Selektoren innerhalb eines (komplexen) Selektors.
                         </body>"
                     width="var(--ld-slide-width)" 
                     height="500"
-                    style="border-radius: calc(var(--slide-border-radius) * 0.5)" >
+                    style="border-radius: calc(var(--s-border-radius) * 0.5)" >
                 iframes are not supported
             </iframe>
 
@@ -1133,7 +1133,7 @@ Nesting
                         </body>"
                     width="var(--ld-slide-width)" 
                     height="900"
-                    style="border-radius: calc(var(--slide-border-radius) * 0.5)" >
+                    style="border-radius: calc(var(--s-border-radius) * 0.5)" >
                 iframes are not supported
             </iframe>
 
@@ -1615,7 +1615,7 @@ Inhalt, der nicht in die umgebende Box passt
                         </body>"
                     width='var(--ld-slide-width)' 
                     height='750'
-                    style='border-radius: calc(var(--slide-border-radius) * 0.5)' >
+                    style='border-radius: calc(var(--s-border-radius) * 0.5)' >
                 iframes are not supported
             </iframe>
 
@@ -1671,7 +1671,7 @@ Inhalt, der nicht in die umgebende Box passt
                         </body>"
                     width='var(--ld-slide-width)' 
                     height='900'
-                    style='border-radius: calc(var(--slide-border-radius) * 0.5)' >
+                    style='border-radius: calc(var(--s-border-radius) * 0.5)' >
                 iframes are not supported
             </iframe>
 
@@ -1738,7 +1738,7 @@ Elemente können mit ``float`` aus dem normalen Fluss genommen werden:
                         </body>"
                     width='var(--ld-slide-width)' 
                     height='800'
-                    style='border-radius: calc(var(--slide-border-radius) * 0.5)' >
+                    style='border-radius: calc(var(--s-border-radius) * 0.5)' >
                 iframes are not supported
             </iframe>
 
@@ -1809,7 +1809,7 @@ Positioning - ``relative`` und ``absolute``
                         </body>"
                     width='var(--ld-slide-width)' 
                     height='900'
-                    style='border-radius: calc(var(--slide-border-radius) * 0.5)' >
+                    style='border-radius: calc(var(--s-border-radius) * 0.5)' >
                 iframes are not supported
             </iframe>
 
@@ -1897,7 +1897,7 @@ Flexbox
                         </body>"
                     width='var(--ld-slide-width)' 
                     height='750'
-                    style='border-radius: calc(var(--slide-border-radius) * 0.5)' >
+                    style='border-radius: calc(var(--s-border-radius) * 0.5)' >
                 iframes are not supported
             </iframe>
 

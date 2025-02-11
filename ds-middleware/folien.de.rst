@@ -6,7 +6,7 @@
     :description lang=en: Middleware
     :id: lecture-ds-middleware
     :first-slide: last-viewed
-    :exercises-master-password: WirklichSchwierig!
+    :master-password: WirklichSchwierig!
 
 .. |html-source| source::
     :prefix: https://delors.github.io/
