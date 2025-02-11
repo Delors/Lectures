@@ -154,6 +154,8 @@ Presentations - Available Topics
       - 4 Persons 
     * - **Neo4J** `🔗 <https://neo4j.com>`__
       - 2 Persons
+    * - **Docker Swarm vs. Kubernetes** `🔗 <https://www.docker.com/kubernetes>`__
+      - 3 Persons
 
 .. supplemental::
 
