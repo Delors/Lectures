@@ -691,81 +691,85 @@ Analysis of the Scalability of Centralized Systems
           .. class:: incremental-list
 
         \ 
-        
+
         - If :math-i:`U` is small, the response time is close to :math-r:`1`, i.e. a request is processed immediately.
         - If :math-i:`U` increases to :math-r:`1`, the system comes to a standstill. 
 
 
 
 
-Probleme der geografischen Skalierbarkeit
+Problems of Geographical Scalability
 --------------------------------------------
 
-- Viele verteilte Systeme gehen von synchronen Client-Server-Interaktionen aus und dies verhindert einen Übergang vom LAN zum WAN. Die Latenzzeiten können prohibitiv sein, wenn der Client auf eine Anfrage lange warten muss.
+- Many distributed systems assume synchronous client-server interactions and this prevents a transition from LAN to WAN. Latency times can be prohibitive if the client has to wait a long time for a request.
   
 .. class:: incremental
 
-- WAN-Verbindungen sind oft von Natur aus unzuverlässig.
+- WAN connections are often unreliable by nature.
 
 
 
-Probleme der administrativen Skalierbarkeit
+Problems of Administrative Scalability
 --------------------------------------------
 
 .. observation::
 
-    Widersprüchliche Richtlinien in Bezug auf Nutzung (und damit Bezahlung), Verwaltung und Sicherheit
+        Conflicting guidelines in terms of usage (and therefore payment), administration and security.
 
 .. deck:: incremental
 
     .. card::
 
-        .. rubric:: Beispiele
+        .. example::
 
-        - Grid Computing: gemeinsame Nutzung teurer Ressourcen über verschiedene Domänen hinweg.
-        - Gemeinsam genutzte Geräte: Wie kontrolliert, verwaltet und nutzt man ein gemeinsam genutztes Radioteleskop, das als groß angelegtes gemeinsames Sensornetz konstruiert wurde?
+            - Grid computing: shared use of expensive resources across different domains.
+            - Shared devices: How to control, manage and utilize a shared radio telescope designed as a large-scale shared sensor network?
 
     .. card::
 
-        .. rubric:: Ausnahme 
+        .. rubric:: Exception 
 
-        Verschiedene Peer-to-Peer-Netze [#]_ bei denen Endnutzer zusammenarbeiten und nicht Verwaltungseinheiten:
+        Various peer-to-peer networks [#]_ where end users collaborate rather than administrative units:
 
-        - File-Sharing-Systeme (z. B. auf der Grundlage von BitTorrent) 
-        - Peer-to-Peer-Telefonie (frühe Versionen von Skype) 
+        - File sharing systems (e.g. based on BitTorrent) 
+        - Peer-to-peer telephony (early versions of Skype) 
 
-        .. [#] :eng:`Peer` ist im hier im Sinne von „Gleichgestellter“ zu verstehen. D. h. wir haben ein Netz von gleichgestellten Rechnern.
+        .. [#] Here, "peer" is to be understood as a network of equal computers.
 
 
 
-Ansätze, um Skalierung zu erreichen
+Approaches to achieve Scaling
 ------------------------------------
 
 .. deck::
 
     .. card::
 
-        **Verbergen von Kommunikationslatenzen** durch:
+        **Hiding communication latencies** through:
 
-        - Nutzung asynchroner Kommunikation
-        - Verwendung separater *Handler* für eingehende Antworten 
+        - Use of asynchronous communication
+        - Use of separate *handlers* for incoming responses 
+
+        .. presenter-note::
+
+            Here, we do not wait on the response, but continue with other tasks. When the response arrives, the corresponding handler is called and eventually executed.
 
         .. observation:: 
             :class: incremental
 
-            Dieses Modell ist jedoch nicht immer anwendbar.
+            However, this model is not always applicable.
 
     .. card::
 
-        **Partitionierung von Daten und Berechnungen über mehrere Rechner.**
+        **Partitioning of data and calculations across multiple computers.**
 
-        - Verlagerung von Berechnungen auf Clients 
-        - Dezentrale Namensgebungsdienste (DNS)
-        - Dezentralisierte Informationssysteme (WWW)
+        - Relocation of calculations to clients 
+        - Decentralized naming services (e.g. DNS)
+        - Decentralized information systems (e.g. WWW)
 
 
 
-Verlagerung von Berechnungen auf Clients
+Shifting Calculations to Clients
 ------------------------------------------
 
 .. image:: images/moving-computations.svg
@@ -773,39 +777,46 @@ Verlagerung von Berechnungen auf Clients
 
 
 
-Ansätze, um Skalierung zu erreichen
+Scaling via Replication and Caching
 ------------------------------------
 
-**Einsatz von Replikation und Caching, um Kopien von Daten auf verschiedenen Rechnern verfügbar zu machen.**
+**Use of replication and caching to make copies of data available on different computers.**
 
 .. class:: incremental-list
 
-- replizierte Dateiserver und Datenbanken 
-- gespiegelte Websites
-- Web-Caches (in Browsern und Proxies) 
-- Datei-Caching (auf Server und Client)
+- replicated file servers and databases 
+- mirrored websites
+- Web caches (in browsers and proxies) 
+- File caching (on server and client)
 
 
-Herausforderungen bei der Replikation 
+
+Challenges of Replication 
 ---------------------------------------
 
-.. class:: incremental
+.. class:: incremental-list
 
-- Mehrere Kopien (zwischengespeichert (:eng:`cached`) oder repliziert) führen zwangsläufig zu Inkonsistenzen. Die Änderung einer Kopie führt dazu, dass sich diese Kopie von den anderen unterscheidet.
-- Zur Erreichung von Konsistenz ist bei jeder Änderung eine globale Synchronisierung erforderlich.
-- Die globale Synchronisierung schließt Lösungen im großen Maßstab aus.
+- Multiple copies (cached or replicated) inevitably lead to inconsistencies. Changing one copy means that this copy differs from the others.
+- To achieve consistency, global synchronization is required for every change.
+
+  .. attention:: 
+    :class: incremental
+
+    Global synchronization rules out solutions on a large scale.
 
 .. supplemental::
 
-    Inwieweit Inkonsistenzen toleriert werden können, ist anwendungsspezifisch. Können diese jedoch toleriert werden, dann kann der Bedarf an globaler Synchronisation verringert werden.
+    The extent to which inconsistencies can be tolerated is application-specific. However, if these can be tolerated, then the need for global synchronization can be reduced.
 
 
-Paralleles Rechnen (:eng:`Parallel Computing`)
+
+
+Parallel Computing
 ------------------------------------------------
 
 .. class:: column-list
   
-- Multiprozessor
+- Multiprocessor
 
   .. image:: images/multiprocessor-vs-multicomputer/multiprocessor.svg
             :align: center
@@ -815,16 +826,15 @@ Paralleles Rechnen (:eng:`Parallel Computing`)
   .. image:: images/multiprocessor-vs-multicomputer/multicomputer.svg
             :align: center
 
-
 .. supplemental::
 
-    Das verteilte Hochleistungsrechnen begann mit dem parallelen Rechnen.
+    Distributed high-performance computing began with parallel computing.
 
-    **Verteilte Systeme mit gemeinsamem Speicher** (:eng:`Multicomputer with shared memory`) als alternative Architektur haben die Erwartungen nicht erfüllt und sind daher nicht mehr relevant.
+    **Distributed systems with shared memory** (i. e. multi-computers with shared memory) as an alternative architecture did not fulfil the expectations and are therefore no longer relevant.
 
 
 
-Amdahls Gesetz - Grenzen der Skalierbarkeit
+Amdahl's law - Limits to Scalability
 -----------------------------------------------------
 
 .. deck::
@@ -833,10 +843,10 @@ Amdahls Gesetz - Grenzen der Skalierbarkeit
 
         .. class:: list-with-explanations
 
-        - Lösen von **fixen Problemen** in möglichst kurzer Zeit
+        - Solving **fixed problems** in the shortest possible time
 
-            (Beispiel: Hochfahren (:eng:`Booten`) eines Rechners. Inwieweit lässt sich durch mehr CPUs/Kerne die Zeit verkürzen?)
-        - Es modelliert die erwartete Beschleunigung (*Speedup*) eines zum Teil parallelisierten/parallelisierbaren Programms relativ zu der nicht-parallelisierten Variante
+          Example: Booting a computer. To what extent can more CPUs/cores shorten the time?
+        - It models the expected acceleration (*speedup*) of a partially parallelized/parallelizable program relative to the non-parallelized variant.
 
 
         .. definition:: 
@@ -844,9 +854,9 @@ Amdahls Gesetz - Grenzen der Skalierbarkeit
 
             .. note::
 
-                :math:`C` = Anzahl CPUs 
+                :math:`C` = Number of CPUs 
 
-                :math:`P` = Parallelisierungsgrad in Prozent
+                :math:`P` = Degree of parallelisation in percent
                 
                 :math:`S` = Speedup 
 
@@ -855,56 +865,68 @@ Amdahls Gesetz - Grenzen der Skalierbarkeit
     .. card::
 
         .. image:: images/amdahl.svg
-            :alt: Amdahls Gesetz visualisiert
+            :alt: Amdahls Law visualized
             :align: center
 
 
 
-Gustafsons Gesetz - Grenzen der Skalierbarkeit
+Gustafson's Law - Limits to Scalability
 -----------------------------------------------------
 
-.. class:: list-with-explanations
+.. deck:: 
 
-- Lösen von Problemen mit (sehr) großen, sich strukturell wiederholenden Datensätzen in **fixer Zeit**; der serielle Anteil des Programms wird als  konstant angenommen.
+    .. card:: 
+                
+        .. class:: list-with-explanations
 
-  (Beispiel: Erstelle innerhalb der nächsten 24 Stunden die Wettervorhersage für übermorgen. Inwieweit lässt sich durch mehr CPUs/Rechner die Präzision der Vorhersage verbessern?)
+        - Solving problems with (very) large, structurally repetitive data sets in **fixed time**; the serial part of the programme is assumed to be constant.
 
-.. container:: encapsulate-floats incremental
+          .. example:: 
+            :class: margin-top-1em
+            
+            Create the weather forecast for the day after tomorrow within the next 24 hours. To what extent can the precision of the forecast be improved by using more CPUs/computers?
 
-    .. note:: 
-        :class: width-60 dd-margin-left-2em
+    .. card:: 
+                
+        .. container:: encapsulate-floats 
 
-        :`C`:math::  Anzahl CPUs 
+            .. note:: 
+                :class: width-50 dd-margin-left-2em
 
-        :`P`:math::  Parallelisierungsgrad in Abhängigkeit von der Problemgröße n
-        
-        :`S`:math::  Speedup 
+                :`C`:math::  Number of CPUs 
 
-    Beschleunigung (Speedup) eines parallelisierten Programms relativ zu der nicht-parallelisierten Variante: :math:`S(C) = 1 + P(n) \cdot (C-1)`
+                :`P`:math::  Degree of parallelisation as a function of the problem size :math-i:`n`
+                
+                :`S`:math::  Speedup 
 
-.. container:: incremental
+            - Beschleunigung (Speedup) eines parallelisierten Programms relativ zu der nicht-parallelisierten Variante: 
+            
+              :math-i:`S(C)` :math-r:`= 1 +` :math-i:`P(n) · (C-1)`
 
-    .. example::
+        .. example::
+            :class: incremental
 
-       Sei der Parallelisierungsgrad ab einer relevanten Problemgröße :math:`n` 80 %. Dann ergibt sich für 4 CPUs ein Speedup von :math:`(1+0.8*3) = 3.4`, für 8 CPUs ein Speedup von 6.6 und für 16 CPUs ein Speedup von 13.
+            Let the degree of parallelization for a relevant problem size :math-i:`n` be :math-r:`80 %`. This results in a speedup of :math-r:`(1 + 0.8 · 3) = 3.4` for :math-r:`4` CPUs, a speedup of :math-r:`6.6` for :math-r:`8` CPUs and a speedup of :math-r:`13` for :math-r:`16` CPUs.
 
 
 
 .. class:: exercises
 
-Übung
+Exercise
 ----------------
 
-.. exercise:: Speedup berechnen
+.. exercise:: Compute Speedup
 
-    Sie sind Pentester und versuchen in ein System einzudringen indem Sie die Passwörter der Administratoren angreifen. Momentan setzen Sie dazu 2 Grafikkarten mit je 2048 Compute Units ein. Der serielle Anteil des Angriffs beträgt 10 %. Wie hoch ist der Speedup, den Sie erwarten können, wenn Sie zwei weitere vergleichbare Grafikkarten mit weiteren 2048 Compute Units je GPU hinzufügen?
+    You are a pentester and you try to penetrate a system by attacking the passwords of the administrators. At the moment, you are using 2 graphics cards with 2048 compute units each. The serial part of the attack is 10 %. How high is the speedup you can expect, if you add two more comparable graphics cards with another 2048 compute units per GPU?
 
-      Hintergrund: Die Angriffe sind hochgradig parallelisierbar und hängen effektiv von der Anzahl an CUs ab. Die Grafikkarten sind in der Lage, die Angriffe effektiv zu beschleunigen.
+    .. background:: 
+        
+        The attacks are highly parallelizable and effectively depend on the number of CUs. The graphics cards are able to accelerate the attacks effectively.
 
-    .. solution:: Berechnung des Speedup
+    .. solution:: Computation of the Speedup
         :pwd: so schnell wird's
 
-        Es handelt sich hierbei um ein Problem mit sich strukturell wiederholenden Datensätzen, d. h. Gustafsons Gesetz ist anwendbar. Der serielle Anteil beträgt 10 %, d. h.der Parallelisierungsgrad beträgt 90 %. Der Speedup beträgt dann:
+        This is a problem with structurally repeating data sets, i.e. Gustafson's law is applicable. The serial part is 10 %, i.e. the degree of parallelization is 90 %. The speedup is then:
 
         .. math::
 
@@ -916,115 +938,126 @@ Gustafsons Gesetz - Grenzen der Skalierbarkeit
 
                 S(8192) / S(4096) \approx 1,999972874
 
-        Das Rechnen mit GPUs als solches, d. h. mit 2-GPUs vs. 4-GPUs führt zu einem geringeren Speedup, da der serielle Anteil des Angriffs noch mehr in Gewicht fällt.
+        .. remark:: 
+
+            Computing with GPUs as such, i. e. with 2-GPUs vs. 4-GPUs, leads to a lower speedup, as the serial part of the attack is even more important.
 
 
 
 .. class:: new-section transition-fade
 
-Anforderungen an verteilter Systeme
+Requirements on Distributed Systems
 -------------------------------------
 
 
-Verlässlichkeit verteilter Systeme 
+Dependability of Distributed Systems
 ------------------------------------------------------------
 
-.. container:: peripheral
-
-    (:eng:`Dependability`)
-
-.. admonition:: Abhängigkeiten
+.. admonition:: Dependencies
     
-    Eine **Komponente**\ [#]_ stellt ihren **Clients** **Dienste** zur Verfügung. Dafür kann die Komponente jedoch wiederum Dienste von anderen Komponenten benötigen und somit ist eine Komponente  von einer anderen Komponente abhängig (:eng:`depend`).
+    A **component**\ [#]_ provides **services** to its **clients**. For that, the component may in turn require services from other components and therefore the component is dependent on another component (:eng:`depend`).
 
 .. definition::
 
-    Eine Komponente :math:`C` hängt von :math:`C^*` ab, wenn die Korrektheit des Verhaltens von :math:`C` von der Korrektheit des Verhaltens von :math:`C^*` abhängt. 
+    A component :math-i:`C` depends on :math:`C^*` if the correctness of the behavior of :math:`C` depends on the correctness of the behavior of :math:`C^*`.  
 
-.. [#] Komponenten seien Prozesse oder Kanäle.
+.. [#] Components are processes or channels.
+
+.. supplemental::
+
+    :eng:`Dependability` ≘ :ger:`Verlässlichkeit`
 
 
 
-Anforderungen an die Verlässlichkeit verteilter Systeme
+Requirements on the Reliability of Distributed Systems
 ------------------------------------------------------------
 
 .. csv-table::
     :class: incremental-table-rows booktabs
-    :header: "Anforderung", "Beschreibung"
+    :align: center
+    :header: "Requirement", "Description"
 
-    "Verfügbarkeit", "Das System ist nutzbar."
-    "Zuverlässigkeit", "Kontinuität der korrekten Leistungserbringung."
-    "Sicherheit 
-    (:eng:`Safety`\ [#]_)", "Niedrige Wahrscheinlichkeit für ein katastrophales Ereignis"
-    "Wartbarkeit", "Wie leicht kann ein fehlgeschlagenes System wiederhergestellt werden?"
+    Availability, The system is usable.
+    Reliability, Continuity of correct service provision.
+    Safety, Low probability of a catastrophic event.
+    Maintainability, How easily can a failed system be recovered?
 
-.. [#] :eng:`Safety` und :eng:`Security` werden beide im Deutschen gleich mit Sicherheit übersetzt und sind daher leicht zu verwechseln. :eng:`Safety` bezieht sich auf die Sicherheit von Personen und Sachen, während :eng:`Security` sich auf die Sicherheit von Daten und Informationen bezieht.
+.. supplemental:: 
+
+    .. attention::
+
+        :eng:`Security` ≘ :ger:`Sicherheit`
+    
+        :eng:`Safety` ≘ :ger:`Sicherheit`
+    
+        Safety refers to the safety of people and property, while Security refers to the security of data and information.
 
 
-.. class:: smaller-slide-title smaller
 
-Zuverlässigkeit (:eng:`Reliability`) vs. Verfügbarkeit (:eng:`Availability`) in verteilten Systemen
+Reliability vs. Availability in Distributed Systems
 ----------------------------------------------------------------------------------------------------
 
-.. rubric:: Verlässlichkeit :math:`R(t)` der Komponente :math:`C`
+.. rubric:: Reliability :math-i:`R(t)` of the component :math-i:`C`
 
-Bedingte Wahrscheinlichkeit, dass :math:`C` während :math:`[0,t)` korrekt funktioniert hat, wenn :math:`C` zum Zeitpunkt :math:`T = 0` korrekt funktionierte.
+Conditional probability that :math-i:`C` worked correctly during :math:`[0,t)` if :math-i:`C` worked correctly at time :math-i:`T`  :math-r:`= 0`.
+
 
 .. compound:: 
     :class: incremental
 
-    .. rubric:: Traditionelle Metriken
+    .. rubric:: Traditional Metrics
 
-    .. class:: incremental
+    .. class:: incremental-list
 
-    - Mittlere Zeit bis zum Versagen (:eng:`Mean Time to Failure` (:math:`MTTF`)): 
+    - Mean Time to Failure (:math-r:`MTTF`): 
   
-      Die durchschnittliche Zeit bis zum Ausfall einer Komponente. 
+      The average time to failure of a component. 
 
-    - Mittlere Zeit bis zur Reparatur (:eng:`Mean Time to Repair` (:math:`MTTR`)): 
+    - Mean Time to Repair (:math-r:`MTTR`): 
   
-      Die durchschnittliche Zeit, die für die Reparatur einer Komponente benötigt wird.
+      The average time it takes to repair a component.
 
-    - Mittlere Zeit zwischen Ausfällen (:eng:`Mean Time Between Failures` (:math:`MTBF`)): 
+    - Mean Time between Failures (:math-r:`MTBF`): 
      
-      :math:`MTTF + MTTR = MTBF`.
+      :math-r:`MTTF + MTTR = MTBF`.
 
 
 .. supplemental::
 
-    - Zuverlässigkeit: Wie wahrscheinlich ist es, dass ein System *korrekt* arbeitet?
-    - Verfügbarkeit: Wie wahrscheinlich ist es, dass ein System zu einem bestimmten Zeitpunkt verfügbar ist?
+    :Reliability: How likely is it that a system will work *correctly*?
+    :Availability: How likely is it that a system will be available at a given time?
 
-    .. rubric:: MTBF vs. MTTR
+    .. rubric:: :math-r:`MTBF` vs. :math-r:`MTTR`
 
-    Wenn die MTTF einer Komponente 100 Stunden beträgt und die MTTR 10 Stunden beträgt, dann ist die MTBF :math:`= MTTF + MTTR = 100 + 10 = 110` Stunden.
+    If the :math-r:`MTTF` of a component is :math-r:`100` hours and the :math-r:`MTTR` is :math-r:`10` hours, then the :math-r:`MTBF` is :math-r:`= MTTF + MTTR = 100 + 10 = 110` hours.
 
 
 
-MapReduce - Programmiermodell und Middleware für paralleles Rechnen
+MapReduce - Programming model and Middleware for Parallel Computing
 ---------------------------------------------------------------------
 
 .. class:: incremental-list list-with-explanations
 
-- MapReduce ist ein Programmiermodel und eine entsprechende Implementierung (ein Framework ursprünglich entwickelt von Google) zur Verarbeitung sehr großer Datenmengen (ggf. TBytes).
-- Programme, die mit Hilfe von MapReduce implementiert werden, werden automatisch parallelisiert und auf einem großen Cluster von handelsüblichen Rechnern ausgeführt.
+- MapReduce is a programming model and a corresponding implementation (a framework originally developed by Google) for processing very large amounts of data (possibly TBytes).
+- Programs implemented with the help of MapReduce are automatically parallelized and executed on a large cluster of commodity hardware.
 
-  Die Laufzeitumgebung übernimmt:
+  Responsibility of the runtime environment:
 
-  - Partitionierung der Eingabedaten und Verteilung selbiger auf die Rechner des Clusters
-  - Einplanung und Ausführung der “Map”- und “Reduce”- Funktionen auf den Rechnern des Clusters
-  - Behandlung von Fehlern und die Kommunikation zwischen den Rechnern
+  - Partitioning the input data and distributing it to the computers in the cluster.
+  - Scheduling and execution of the ``Map`` and ``Reduce`` functions on the computers of the cluster.
+  - Error handling and communication between the computers.
 
 .. hint:: 
     :class: incremental
 
-    Nicht alle Arten von Berechnungen können mit Hilfe von MapReduce durchgeführt werden.
+    Not all kinds of computations can be performed with the help of MapReduce.
+    
 
 
 
 .. class:: smaller-slide-title
 
-MapReduce - Visualisierung und Beispiel
+MapReduce - Visualization of an Example
 ----------------------------------------------------------
 
 
@@ -1034,45 +1067,47 @@ MapReduce - Visualisierung und Beispiel
 
 .. supplemental::
 
-    Hier ist es die Berechnung der Häufigkeit von Wörtern in einem sehr großen Datensatz.
+    Here it is the calculation of the frequency of words in a very large data set.
 
-    Ein weiteres kanonisches Beispiel ist die Berechnung eines invertierten Indexes.
+    Another canonical example is the calculation of an inverted index. I. e., the mapping of words to the documents/webpages in which they occur.
 
 
 
 .. class:: exercises
 
-Übung: Verfügbarkeit und Ausfallwahrscheinlichkeit
+Exercise
 ------------------------------------------------------
 
-.. exercise:: Ausfallwahrscheinlichkeit
+.. exercise:: Availability and Failure Probability
 
-    Gegeben sei ein größeres verteiltes System bestehend aus 500 unabhängigen Rechnern, die auch unabhängig voneinander ausfallen. Im Mittel ist jeder Rechner innerhalb von zwei Tagen zwölf Stunden lang nicht erreichbar.
+    Consider a large distributed system consisting of 500 independent computers which fail independently of each other. On average, each computer is unavailable for twelve hours within two days.
 
-    (a) Bestimmen Sie die Intaktwahrscheinlichkeit eines einzelnen Rechners.
-    (b) Ein Datensatz ist aus Gründen der Fehlertoleranz auf drei Rechnern identisch repliziert gespeichert. Wie hoch ist seine mittlere Zugriffsverfügbarkeit beim Lesen?
-    (c) Auf wie vielen Rechnern müssen Sie identische Kopien dieses Datensatzes speichern, damit die mittlere Zugriffsverfügbarkeit beim Lesen bei 99,999 % liegt 
-    (d) Für wie viele Minuten im Jahr (mit 365 Tagen) ist im Mittel bei einer Verfügbarkeit von 99,999 % *kein Lesen des Datensatzes* möglich?
+    (a) Determine the intact probability of a single computer.
+    (b) A data set is replicated on three computers for reasons of fault tolerance. What is its average availability when we try to access it?
+    (c) On how many computers do you have to store this data set so that the average availability is 99.999%? 
+    (d) For how many minutes per year (with 365 days) is it *not possible to read the data set*, when we have an average availability of 99.999%?
 
-    .. solution:: Lösung
+    .. solution:: Solution
         :pwd: Laufend?
 
-        (a) Die Verfügbarkeit eines einzelnen Rechners beträgt p = 36h/48h = 0,75 
-        (b) Die mittlere Zugriffsverfügbarkeit (für :math:`p = 0.75`) beim Lesen beträgt :math:`1 - (1 - p)^3 = 0,984375`; :math:`(1-p)` ist die Ausfallwahrscheinlichkeit.
-        (c) (Erinnerung: :math:`log_a(u^v) = v \cdot log_a(u)`).
+        (a) The availability of a single computer is :math-i:`p = 36h/48h = 0,75` 
+        (b) The average availability (with :math-i:`p = 0.75`) of the data is :math:`1 - (1 - p)^3 = 0,984375` when we have three computers; :math-i:`(1-p)` ist die Ausfallwahrscheinlichkeit.
+        (c) (Recall: :math:`log_a(u^v) = v \cdot log_a(u)`).
             
-            Die Wahrscheinlichkeit, dass alle gleichzeitig ausfallen, muss kleiner(gleich) der erlaubten Nichtverfügbarkeit sein:  :math:`(1-p)^x \leq (1-0,99999) \Leftrightarrow x \cdot log(1-p) \geq log(1-0,99999)`
+            The probability that they all fail at the same time must be less than or equal to the permitted unavailability:  :math:`(1-p)^x \leq (1-0,99999) \Leftrightarrow x \cdot log(1-p) \geq log(1-0,99999)`
 
             :math:`\Rightarrow x \geq log(1-0,99999)/log(1-p) \approx 8,3`
             
-            Die Anzahl der Rechner, auf denen der Datensatz repliziert werden muss, beträgt :math:`\lceil \frac{log(1-0,99999)}{log(1-p)} \rceil = 9`
-        (d) Bei 365 Tagen im Jahr: (1-0,99999) * 365 * 24 * 60 = 5,256 Minuten
+            The number of computers on which the data set must be replicated is 
+            
+            :math:`\lceil \frac{log(1-0,99999)}{log(1-p)} \rceil = 9`
+        (d) In a year with 365 days, it is not possible to read the data :math-r:`(1 - 0.99999) · 365 · 24 · 60 = 5.256` minutes
 
 
 
 .. class:: new-section transition-fade
 
-Klassifikation Verteilte Systeme
+Classification of Distributed Systems
 -------------------------------------
 
 
@@ -1080,29 +1115,29 @@ Klassifikation Verteilte Systeme
 Cluster Computing
 --------------------
 
-Eine Gruppe von „High-End-Systemen“, die über ein LAN verbunden sind.
+A group of high-end systems connected via a LAN.
 
 .. image:: images/cluster-computing.svg
     :align: center
 
 .. supplemental::
 
-    Die einzelnen Rechner/Compute Nodes sind oft identisch (Hardware und Software) und werden von einem Verwaltungsknotenpunkt (:eng:`management node`) verwaltet.
+    The individual computers/compute nodes are often identical (hardware and software) and are managed by a management node (:eng:`management node`).
 
 
 
 Grid Computing
 -------------------
 
-Weiterführung des Cluster Computing. 
+Continuation of cluster computing. 
 
-- Viele heterogene, weit und über mehrere Organisationen verstreute Knotenpunkte. 
-- Die Knotenpunkte sind über das WAN verbunden. 
-- Die Zusammenarbeit erfolgt im Rahmen einer virtuellen Organisation.
+- Many heterogeneous nodes scattered over a wide area and across several organizations. 
+- The nodes are connected via the WAN. 
+- Collaboration takes place within the framework of a virtual organization.
 
 .. supplemental::
 
-    (Volunteer) Grid Computing - Beispiel:
+    (Volunteer) Grid Computing - Examples:
 
     https://scienceunited.org
 
@@ -1110,7 +1145,7 @@ Weiterführung des Cluster Computing.
 
 
 
-Grundlegende Architektur für Grid-Computing
+Basic Architecture for Grid Computing
 ---------------------------------------------
 
 .. class:: column-list dd-margin-left-2em
@@ -1119,44 +1154,49 @@ Grundlegende Architektur für Grid-Computing
 
 - .. class:: no-margin
 
-  :Fabric Layer: Bietet Schnittstellen zu lokalen Ressourcen (zur Abfrage von Status und Fähigkeiten, Sperren usw.)
-  :Konnektivitätsschicht: Kommunikations- / Transaktions- /Authentifizierungsprotokolle, z. B. für die Übertragung von Daten zwischen Ressourcen.
-  :Ressourcenschicht: Verwaltet eine einzelne Ressource, z. B. das Erstellen von Prozessen oder das Lesen von Daten.
-  :Collective Layer: Verwaltet den Zugriff auf mehrere Ressourcen: Auffindung, Einplanung und Replikation.
-  :Anwendungen: Enthält tatsächliche Grid-Anwendungen in einer einzelnen Organisation.
+  :Fabric layer: Provides interfaces to local resources (for querying status and capabilities, locking, etc.)
+  :Connectivity layer: Communication / transaction / authentication protocols, e.g. for transferring data between resources.
+  :Resource layer: Manages a single resource, e.g. creating processes or reading data.
+
+.. class:: no-margin
+
+:Collective Layer: Manages access to multiple resources: discovery, scheduling and replication.
+:Applications: Contains actual grid applications in a single organisation.
 
 .. supplemental::
 
-    Auffindung (:eng:`Discovery`), Einplanung (:eng:`Scheduling`)
+    :ger:`Auffindung` ≘ :eng:`Discovery`
+
+    :ger:`Einplanung` ≘ :eng:`Scheduling`
 
 
 
 
-Peer-to-Peer-Systeme
+Peer-to-Peer-Systems
 ----------------------
 
-:Vision: „Das Netzwerk ist der Computer.“ Es gibt einen Datenbestand, der immer weltweit erreichbar ist.
-:Idee: 
-   Keine dedizierten Clients und Server, jeder Teilnehmer (Peer) ist gleichzeitig Anbieter und Kunde.
+:Vision: "The network is the computer." There is a database that is always accessible worldwide.
+:Idea: 
+   No dedicated clients and servers, each participant (peer) is both provider and customer.
 
-   Selbstorganisierend, ohne zentrale Infrastruktur (Koordinator, Datenbestand, Teilnehmerverzeichnis).
+   Self-organising, without a central infrastructure (coordinator, database, directory of participants).
 
-   Jeder Peer ist autonom und kann jederzeit offline sein, Netzwerkadressen können sich beliebig ändern.
+   Each peer is autonomous and can be offline at any time, network addresses can change at will.
 
-:Hauptanwendung: 
-   File-Sharing-Systeme (insbesondere BitTorrent)
+:Main Application: 
+   File-Sharing-Systems (in particular BitTorrent)
 
 .. supplemental::
 
-    Die große Zeit der klassischen Peer-to-Peer-Systeme war in den 2000er Jahren. 
+    The peak of classic peer-to-peer systems was in the 2000s. 
 
     .. class:: positive-list
 
-    - Vorteile von P2P Systemen sind: billig, fehlertolerant, dynamisch, selbstkonfigurierend, immens hohe Speicherkapazität, hohe Datenzugriffsgeschwindigkeit.
+    - Advantages of P2P systems are: cheap, fault-tolerant, dynamic, self-configuring, immensely high storage capacity, high data access speed.
 
     .. class:: negative-list
 
-    - Probleme von P2P Systemen sind: Start-Up, schlecht angebundene, leistungsschwache Peers; *Free-Riders*; Copyright-Probleme.
+    - Problems of P2P systems are: start-up, poorly connected, low performance peers; *free riders*; copyright problems.
 
 
 Cloud-Computing
@@ -1164,11 +1204,11 @@ Cloud-Computing
 
 .. admonition:: Definition
 
-   Cloud-Computing bezeichnet die Bereitstellung von Rechenleistung, Speicher und Anwendungen als Dienstleistung. Es ist die  Weiterentwicklung des Grid-Computing.
+   Cloud computing refers to the provision of computing power, storage and applications as a service. It is the continuation of grid computing.
 
 .. container:: incremental margin-top-1em
 
-    .. rubric:: Varianten
+    .. rubric:: Variants
 
     .. class:: list-with-explanations
 
@@ -1176,79 +1216,79 @@ Cloud-Computing
     - Private Cloud
     - Hybrid Cloud 
      
-      (Private Cloud wird bei Bedarf durch Public Cloud ergänzt.)
+      (The private cloud is supplemented by a public cloud if required).
     - Virtual Private Cloud
 
 .. supplemental:: 
 
     .. class:: positive-list
 
-    - Vorteile des Cloud-Computings: Kosten, Aktualität von Daten und Diensten, keine eigene Infrastruktur notwendig, Unterstützung von mobilen Teilnehmern
+    - Advantages of cloud computing: costs, up-to-dateness of data and services, no in-house infrastructure required, support for mobile participants
 
     .. class:: negative-list
 
-    - Probleme des Cloud-Computings: Sicherheit und Vertrauen, Verlust von eigenem Know-How, Umgang mit klassifizierten Daten.
+    - Problems of cloud computing: security and trust, loss of in-house expertise, handling of classified data.
   
-      Ein Ausweg könnte `Hommomorphe Verschlüsselung <https://de.wikipedia.org/wiki/Homomorphe_Verschlüsselung>`_ sein, die es ermöglicht, Berechnungen auf verschlüsselten Daten durchzuführen. 
+      One way out could be `homomorphic encryption <https://de.wikipedia.org/wiki/Homomorphe_Verschlüsselung>`_, which makes it possible to perform calculations on encrypted data. 
 
 
 *Serverless Computing*
 ----------------------
 
-*Serverless Computing* ermöglicht es Entwicklern Anwendungen schneller zu erstellen, da sie sich nicht mehr um die Verwaltung der Infrastruktur kümmern müssen. 
+*Serverless Computing* enables developers to create applications faster, as they no longer have to worry about managing the Infrastructure.  
 
 .. class:: positive-list incremental
 
-- Der Cloud-Service-Anbieter stellt die für die Ausführung des Codes erforderliche Infrastruktur automatisch bereit, skaliert und verwaltet sie.
+- The cloud service provider automatically provides, scales and manages the infrastructure required to run the code.
 
 .. class:: negative-list incremental list-with-explanations
 
   - Vendor-Lock-In
-  - Kaltstart-Latenz 
+  - Cold-boot latency
   
-    Zeit bis der erste Code ausgeführt wird kann höher sein, da die Instanziierung der Serverless-Funktionen erst bei Bedarf erfolgt.
-  - Debugging und Monitoring
+    Time until the first code is executed can be longer, as the serverless functions are only instantiated when required.
+  - Debugging and Monitoring
 
-    Klassische Tools und Methoden sind nicht mehr anwendbar.
-  - Kostentransparenz/-management
+    Traditional tools and methods can no longer be used.
+  - Cost-transparency/-management
 
-    Die Kosten für Serverless-Computing sind schwer vorherzusagen und zu kontrollieren. 
+    The costs of serverless computing are difficult to predict and control. 
 
 
 
 .. class:: new-section transition-fade
 
-Herausforderungen bei der Entwicklung verteilter Systeme
+Challenges in Developing Distributed Systems
 -------------------------------------------------------------
 
 
-Integration von Anwendungen
+
+Application Integration
 ---------------------------------
 
 .. container:: assessment
     
-    Die Standardanwendungen in Unternehmen sind vernetzte Anwendungen und die Herstellung der Interoperabilität zwischen diesen Anwendungen ist eine große Herausforderung.
+    Typical enterprise applications in companies are networked applications and establishing interoperability between these applications is a major challenge.
 
 .. container:: incremental margin-top-1em
 
-    .. rubric:: Grundlegender Ansatz
+    .. rubric:: Basic Approach
 
-    *Clients* kombinieren Anfragen für (verschiedene) Anwendungen, senden diese, sammeln die Antworten und präsentieren dem Benutzer ein kohärentes Ergebnis.
+    *Clients* combine requests for (different) applications, send them, collect the responses and present a coherent result to the user.
 
 .. container:: incremental margin-top-1em
 
-    .. rubric:: Weiterentwicklung
+    .. rubric:: Modern Approach
 
-    Die direkte Kommunikation zwischen den Anwendungen führt zur Integration von Unternehmensanwendungen (:eng:`Enterprise Application Integration (EAI)`).
-
+    Direct communication between applications leads to the integration of enterprise applications  (Enterprise Application Integration (EAI)).
 
 .. supplemental::
 
-    Eine vernetzte Anwendung ist eine Anwendung, die auf einem Server läuft und ihre Dienste für entfernte Clients verfügbar macht. 
+    A networked application is an application that runs on a server and makes its services available to remote clients. 
 
 
 
-Transaktionen auf Geschäftsprozessebene
+Transactions at Business Process Level
 -----------------------------------------
 
 .. grid:: 
@@ -1260,7 +1300,7 @@ Transaktionen auf Geschäftsprozessebene
 
         .. container:: text-align-center margin-top-1em
 
-            **„Alles oder nichts.“**
+            **„All or nothing.“**
 
     .. cell::
         :class: width-60
@@ -1270,22 +1310,24 @@ Transaktionen auf Geschäftsprozessebene
             .. card::
 
                 .. csv-table::
-                    :header: "Primitiv", "Beschreibung"
+                    :header: "Primitive", "Description"
 
-                    BEGINN DER TRANSAKTION, Zeigt den Beginn einer Transaktion an.
-                    ENDE DER TRANSAKTION, Beendigung der Transaktion mit dem Versuch eines COMMIT.
-                    ABBRUCH DER TRANSAKTION, Beenden der Transaktion und Wiederherstellung des alten Zustands.
-                    LESEN, "Lesen von Daten aus (z. B.) einer Datei oder einer Tabelle."
-                    SCHREIBEN, "Schreiben von Daten (z. B.) in eine Datei oder eine Tabelle."
+                    BEGIN OF TRANSACTION, Indicates the start of a transaction.
+                    END OF TRANSACTION, Completes the transaction with an attempt to COMMIT.
+                    ROLLBACK OF TRANSACTION, terminate the transaction and restore the old status.
+                    READ, "Reading data from (e.g.) a file or a table."
+                    WRITE, "Writing data (e.g.) to a file or a table."
 
             .. card:: 
 
-                :Atomar `Atomic`:eng:: geschieht untrennbar (scheinbar)
-                :Konsistent `Consistent`:eng:: keine Verletzung von Systeminvarianten
-                :Isoliert `Isolated`:eng:: keine gegenseitige Beeinflussung
-                :Dauerhaft `Durable`:eng:: Nach einem Commit sind die Änderungen dauerhaft
+                .. rubric:: ACID-Properties:
 
-                ≙ :eng:`ACID`\ -Eigenschaften
+                :Atomic: happens inseparably (seemingly)
+                :Consistent: no violation of system invariants
+                :Isolated: no mutual influence
+                :Durable: after a commit, the changes are permanent
+
+                
 
 
 
@@ -1294,123 +1336,113 @@ Transaktionen auf Geschäftsprozessebene
 *Transaction Processing Monitor (TPM)*
 ---------------------------------------
 
-.. container:: assessment
-
-    Die für eine Transaktion benötigten Daten, sind oft verteilt über mehrere Server. 
-
 .. image:: images/transactions/tpm.svg
     :align: center
-    :class: incremental
-
-.. container:: incremental smaller
-
-    Ein TPM ist für die Koordination der Ausführung einer Transaktion verantwortlich.
-
 
 .. supplemental::
 
-    Insbesondere im Zusammenhang mit Microservices ist der Einsatz von TPMs und 2PC zum Zwecke der Koordination von Geschäftsprozessen häufig nicht die 1. Wahl. 
+    .. observation::
 
-    Nichtsdestotrotz sind verteilte Transaktionen ein wichtiger Bestandteil von verteilten Systemen und Google hat z. B. mit Spanner eine Lösung entwickelt, die Transaktionen im globalen Maßstab ermöglicht  (*Global Consistency*). (https://cloud.google.com/spanner?hl=en und https://www.youtube.com/watch?v=iKQhPwbzzxU).
+        The data required for a transaction is often distributed across several servers. 
+
+        A TPM is responsible for coordinating the execution of a transaction.
+
+.. supplemental::
+
+    When you implement microservices, the use of TPMs and 2PC for the purpose of coordinating business processes is often not the first choice. 
+
+    Nevertheless, distributed transactions are an important part of distributed systems and Google, for example, has developed Spanner, a solution that enables transactions on a global scale (*Global Consistency*). (https://cloud.google.com/spanner?hl=en and https://www.youtube.com/watch?v=iKQhPwbzzxU).
        
 
 
-*Middleware* und *Enterprise Application Integration (EAI)*
+*Middleware* and *Enterprise Application Integration (EAI)*
 ------------------------------------------------------------
 
-Middleware ermöglicht Kommunikation zwischen den Anwendungen.
+Middleware enables communication between applications.
 
 .. image:: images/middleware.svg
     :align: center
 
 .. supplemental::
 
-    :Remote Procedure Call (RPC): Anfragen werden über einen lokalen Prozeduraufruf gesendet, als Nachricht verpackt, verarbeitet, von einer Nachricht beantwortet und das Ergebnis ist dann der Rückgabewert des Prozeduraufrufs.
+    :Remote Procedure Call (RPC): Requests are sent via a local procedure call, packaged as a message, processed, answered by a message and the result is then the return value of the procedure call.
 
-    :Nachrichtenorientierte Middleware `Message Oriented Middleware (MOM)`:eng:: Nachrichten werden an einen logischen Kontaktpunkt gesendet (d. h.veröffentlicht) und Anwendungen weitergeleitet, die diese Nachrichten abonnieren.
+    :Message Oriented Middleware (MOM): Messages are sent (i. e. published) to a logical contact point (i. e. message broker) and forwarded to applications that subscribe to these messages.
 
 
 
-.. class:: smaller
-
-Wie kann die Anwendungsintegration erreicht werden?
+How can application integration be achieved?
 -----------------------------------------------------
 
-.. class:: incremental dd-margin-left-2em
+.. class:: incremental-list dd-margin-left-2em
 
-:Dateiübertragung: 
+:File transfer: 
 
-  Technisch einfach, aber nicht flexibel:
+  Technically simple, but not flexible:
 
-  - Dateiformat und Layout herausfinden
-  - Dateiverwaltung regeln
-  - Weitergabe von Aktualisierungen und Aktualisierungsbenachrichtigungen
- 
-.. class:: incremental dd-margin-left-2em
-
-:Gemeinsame Datenbank: Sehr viel flexibler, erfordert aber immer noch ein gemeinsames Datenschema neben dem Risiko eines Engpasses.
-
-.. class:: incremental dd-margin-left-2em
-
-:Entfernter Prozeduraufruf `Remote Procedure Call (RPC)`:eng:: Wirksam, wenn die Ausführung einer Reihe von Aktionen erforderlich ist.
-
-.. class:: incremental dd-margin-left-2em
-
-:Nachrichtenübermittlung `Messaging`:eng:: Ermöglicht eine zeitliche und räumliche Entkopplung im Vergleich zu RPCs.
+  - Determine the file format and layout
+  - Regulate file management
+  - Passing on updates and update notifications
+:Shared database: Way more flexible, but still requires a common data schema in addition to the risk of a bottleneck.
+:Remote Procedure Call (RPC): Effective when execution of a series of actions is required.
+:Messaging: Enables temporal and spatial decoupling compared to RPCs.
 
 
 
 .. class:: new-section transition-fade
 
-Moderne verteilte Systeme
+Modern Distributed Systems
 --------------------------------------------
 
 
 *Distributed Pervasive/Ubiquitous Systems* 
 ------------------------------------------------------------------------
 
-.. container:: minor
+.. supplemental::
 
-    (:ger:`verteilte, allgegenwärtige/alles durchdringende Systeme`)
+    :eng:`Distributed Pervasive/Ubiquitous Systems` ≘ :ger:`verteilte, allgegenwärtige/alles durchdringende Systeme`
 
-.. container:: assessment
+.. container:: margin-bottom-1em
 
-    Moderne verteilte Systeme zeichnen sich dadurch aus, dass die Knoten klein, mobil und oft in ein größeres System eingebettet sind. Das System bettet sich auf natürliche Weise in die Umgebung des Benutzers ein. Die Vernetzung ist drahtlos.
+    Modern distributed systems are characterised by the fact that the nodes are small, mobile and often embedded in a larger system. The system embeds itself naturally in the user's environment. Networking is wireless.
+
+.. container:: incremental margin-top-1em
+
+    .. rubric:: Three (overlapping) subtypes
+
+    :Ubiquitous computing: *ubiquitous and always present*; i. e. there is constant interaction between the system and the user.
+    :Mobile computing: *ubiquitous*; the focus is on the fact that devices are inherently mobile.
+    :Sensor/Actuator Networks: *ubiquitous*; focus is on actual (collaborative) sensing and actuation.
 
 
-.. container:: incremental footnotesize
 
-    Drei (sich überschneidende) Untertypen
-
-    :Ubiquitous Computing: *allgegenwärtig und ständig präsent*; d. h., es besteht eine ständige Interaktion zwischen System und Benutzer.
-    :Mobile Computing: *allgegenwärtig*; der Schwerpunkt liegt auf der Tatsache, dass Geräte von Natur aus mobil sind.
-    :Sensor-/Actuator Networks: *allgegenwärtig*; Schwerpunkt liegt auf der tatsächlichen (kollaborativen) Erfassung (:eng:`sensing`) und Betätigung (:eng:`actuation`).
-
-
-*Ubiquitous Systems* - Kernbestandteile
+*Ubiquitous Systems* - Key Elements
 --------------------------------------------
 
-.. class:: incremental
+.. class:: incremental-list
 
-1. :eng:`Distribution`: Die Geräte sind vernetzt, verteilt und ohne Hürde zugänglich.
-2. :eng:`Interaction`: Die Interaktion zwischen Benutzern und Geräten ist in hohem Maße unaufdringlich. 
-3. :eng:`Context Awareness`: Das System kennt den Kontext eines Benutzers, um die Interaktion zu optimieren.
-4. :eng:`Autonomy`: Die Geräte arbeiten autonom, ohne menschliches Eingreifen, und verwalten sich in hohem Maße eigenständig.
-5. :eng:`Intelligence`: Das System als Ganzes kann ein breites Spektrum dynamischer Aktionen und Interaktionen bewältigen.
+:Distribution: The devices are networked, distributed and accessible without barriers.
+:Interaction: The interaction between users and devices is highly unobtrusive. 
+:Context awareness: the system knows the user's context in order to optimize the interaction.
+:Autonomy: The devices work autonomously, without human intervention, and manage themselves independently to a high degree.
+:Intelligence: The system as a whole can handle a wide range of dynamic actions and interactions.
 
 
-*Mobile Computing* - Auszeichnende Merkmale
+
+*Mobile Computing* - Characterizing features
 --------------------------------------------
 
-.. class:: incremental smaller
+.. class:: incremental-list 
 
-- Eine Vielzahl unterschiedlicher mobiler Geräte (Smartphones, Tablets, GPS-Geräte, Fernbedienungen, aktive Ausweise).
-- Mobil bedeutet, dass sich der Standort eines Geräts im Laufe der Zeit ändern kann. Dies kann z. B. Auswirkung haben auf die lokalen Dienste oder die Erreichbarkeit.
-- Die Aufrechterhaltung einer stabilen Kommunikation kann zu ernsthaften Problemen führen.
+- A variety of different mobile devices (smartphones, tablets, GPS devices, remote controls, active ID cards).
+- Mobile means that the location of a device can change over time. This can, e. g., have an impact on local services or accessibility.
+- Maintaining stable communication can lead to serious problems.
         
-.. container:: assessment margin-top-2em incremental
+.. observation:: 
+    :class: incremental margin-top-1em
 
-    Aktueller Stand ist, dass mobile Geräte Verbindungen zu stationären Servern herstellen, wodurch diese im Prinzip *Clients* von Cloud-basierten Diensten sind.
+    The current status is that mobile devices establish connections to stationary servers, making them in principle *clients* of cloud-based services.
+
 
 
 
@@ -1426,25 +1458,24 @@ Moderne verteilte Systeme
 
 .. image:: images/mobile_computing/mobile_edge_computing.svg
     :align: center
-                
-            
+
 
 
 *Sensor Networks* 
 --------------------------------------------
 
-Die Knoten, an denen Sensoren angebracht sind:
+The nodes to which sensors are attached:
 
-- „viele“
-- einfach (geringe Speicher- / Rechen- / Kommunikationskapazität) 
-- oft batteriebetrieben (oder sogar batterielos)
+- "many"
+- simple (low memory / computing / communication capacity) 
+- often battery-operated (or even battery-free)
 
 .. image:: images/sensor_networks/operator_stores_and_processes_data.svg
     :align: center
 
 
 
-*Sensor Networks* als verteilte Datenbanken
+*Sensor Networks* as Distributed Databases
 --------------------------------------------
 
 .. image:: images/sensor_networks/nodes_store_and_process_data.svg
@@ -1452,32 +1483,33 @@ Die Knoten, an denen Sensoren angebracht sind:
 
 
 
-Das *Cloud-Edge Continuum*
+The *Cloud-Edge Continuum*
 --------------------------------
 
 .. image:: images/cloud_edge_continuum.svg
     :align: center
 
 
-Fallstricke bei der Entwicklung verteilter Systeme
+
+Pitfalls in Developing Distributed Systems
 -----------------------------------------------------
 
-.. container:: assessment
+.. observation::
 
-    Viele verteilte Systeme sind unnötig komplex aufgrund fehlerhafter Annahmen sowie von Architektur- und Designfehlern, die später nachgebessert werden müssen.
+    Many distributed systems are unnecessarily complex due to incorrect assumptions and architectural and design errors that have to be rectified later.
 
 .. container:: incremental
 
-    .. rubric:: Falsche (und oft versteckte) Annahmen
+    .. rubric:: Incorrect (and often hidden) assumptions
 
-    .. class:: incremental
+    .. class:: incremental-list
 
-    - Das Netzwerk ist zuverlässig
-    - Das Netzwerk ist sicher
-    - Das Netz ist homogen 
-    - Die Topologie ändert sich nicht 
-    - Die Latenz ist gleich null
-    - Die Bandbreite ist unendlich
-    - Die Transportkosten sind gleich null
-    - Es gibt nur einen Administrator
+    - The network is reliable
+    - The network is secure
+    - The network is homogeneous 
+    - The topology does not change 
+    - The latency is zero
+    - The bandwidth is infinite
+    - The transport costs are zero
+    - There is only one administrator
 
