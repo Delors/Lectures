@@ -26,7 +26,7 @@ function update_html_if_necessary() {
     fi
     if [[ ! -f "$html_file" || "$html_file" -ot "$1" ]]
     then
-        path_prefix=$(echo "$1" | sed -E 's/[.0-9a-zA-Z_-]+/../g' | grep -Eo "^(\.+/)+")
+        path_prefix=$(echo "$1" | sed -E 's/[ .0-9a-zA-Z_-]+/../g' | grep -Eo "^(\.+/)+")
         if [ $? -ne 0 ]
         then
             path_prefix=""
@@ -35,7 +35,7 @@ function update_html_if_necessary() {
         reStructuredTextToLectureDoc2/rst2ld.py "$1" \
             --output "$html_file" \
             --ld-path $path_prefix"LectureDoc2" \
-            --ld-exercises-passwords "$html_file.passwords.txt" \
+            --ld-passwords "$html_file.passwords.txt" \
             --link-stylesheet \
             $language_option
             
