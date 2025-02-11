@@ -5,6 +5,7 @@
     :description lang=de: Verteilte Systeme
     :id: lecture-w3wi_110.2-verteilte_systeme_wirtschaftsinformatik
     :first-slide: last-viewed
+    :master-password: WirklichSchwierig!
 
 .. |at| unicode:: 0x40
 
@@ -13,8 +14,8 @@
 .. role:: ger
 .. role:: red
 .. role:: green
-.. role:: the-blue
 .. role:: obsolete
+.. role:: peripheral  
 
 .. role:: raw-html(raw)
    :format: html
@@ -28,7 +29,7 @@ W3WI_110.2 - Verteilte Systeme
 
 :Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
 :Kontakt: michael.eichberg@dhbw.de, Raum 149B
-:Version: 1.0
+:Version: 1.0 (23EG/EH)
 
 
 
@@ -54,6 +55,8 @@ Prüfungsleistung - Portfolio
 
 - 2 Bestandteile:
 
+  .. class:: dhbw 
+
   1. Vorträge - max. 15 Punkte
   2. Programmieraufgabe - max. 35 Punkte
 
@@ -69,51 +72,79 @@ Vorträge - Rahmenbedingungen
   
   Keine Werbevorträge!
 - Die Präsentationen sind am Abend vor dem ausgemachten Termin hochzuladen in Moodle.
+- Die Vortragenden sollten während des Vortrags nicht mehrfach rotieren. 
+
+  D. h. gefordert ist, dass erst der erste Vortragende seinen Teil vollständig vorträgt, dann der zweite, usw.. Dies ist für die Notenfindung erforderlich.
 
 
 Vorträge - Themen
 ------------------------------------------
 
+.. presenter-note:: 
 
-.. rubric:: Middleware Lösungen
+  *Backend subsetting* und *connection churn* befasst sich mit den Herausforderungen, die sich ergeben, wenn ein Backend-Dienst in mehrere Dienste aufgeteilt wird, und mit der Frage, wie der Verbindungsabbruch verwaltet werden kann.
 
-.. list-table::
-  :width: 100%
-  :widths: 50 50
-  :class: borderless 
-  :header-rows: 0
+.. story:: 
+    
+  .. rubric:: Themen, die zu besetzen sind
 
-  * - Apache Kafka
-    - Apache Zookeeper
-  * - (Scala) Akka
-    - Rabbit MQ
-  * - (Twitter/X) Finagle
-    - Apache Hive
-  * - Apache Cassandra
-    - Apache Spark
-  * - `Apache Pulsar <https://pulsar.apache.org>`__ 
-    - Hadoop HDFS
-  * - Hadoop Yarn/MapReduce
-    - Apache Mahout
-  * - `Apache Camel <https://camel.apache.org>`__
-    - `NATS <https://docs.nats.io>`__
-  * - Spring Framework 
-    - `Eclipse Glassfish und Jakarta EE <https://glassfish.org>`__
-  * - `Tokio <https://tokio.rs>`__
-    - `Google Spanner <https://dl.acm.org/doi/10.1145/3035918.3056103>`__
+  .. list-table:: 
+    :width: 100%
+    :widths: 70 30
+    :class: booktabs incremental-table-rows
+    :header-rows: 1
+    
+    * - Thema
+      - Anzahl Stud.
+    * - **Byzantine faults** `🔗 <https://en.wikipedia.org/wiki/Byzantine_fault>`__ 
+      - 1 Stud.
+    * - **LDAP** `🔗 <https://www.rfc-editor.org/rfc/rfc4511.txt>`__ 
+      - 2 - 3 Stud.
+    * - **Backend Subsetting and connection churn** `🔗 <https://queue.acm.org/detail.cfm?id=3570937>`__ 
+      - 1 Stud.
+    * - **Virtualization**: Ziel dieser Präsentation ist es, einen Überblick über die verschiedenen Virtualisierungstechnologien zu geben und die Gemeinsamkeiten und Unterschiede zwischen ihnen zu erläutern. Es ist auch möglich, einige der Unterschiede anhand konkreter Produkte zu demonstrieren. 
+
+        :peripheral:`ausgewählte Schlüsselworte: Containers (e. g., Docker, Linux), Firecracker, Hypervisors (KVM, Xen, Hyper-V)`
+      - 3 - 5 Stud.
+    * - **Real time system monitoring with eBPF** `🔗 <https://queue.acm.org/detail.cfm?id=3178371>`__
+      - 2 Stud. (mit Interesse an Linux)
+    * - **HTTP/3 and QUIC or HTTP over QUIC** `🔗 <https://en.wikipedia.org/wiki/HTTP/3>`_
+      - 2 Stud.
+
+  .. class:: incremental
+
+  .. rubric:: Themen, die vorgetragen werden können
+
+  .. list-table:: 
+    :width: 100%
+    :widths: 70 30
+    :class: booktabs incremental-table-rows
+    :header-rows: 0
+
+    * - **Paxos** `🔗 <https://en.wikipedia.org/wiki/Paxos_(computer_science)>`__
+      - 2 Stud.
+    * - **Raft Consensus Algorithm** `🔗 <https://raft.github.io>`__ 
+      - 2 Stud.
+    * - **Gossip Protokoll** `🔗 <https://highscalability.com/gossip-protocol-explained/>`__
+      - 2 Stud.
+    * - **gRPC** `🔗 <https://grpc.io>`__
+      - 2 Stud.
+    * - **Web and Distributed Application Testing**
+
+        Client und serverseitiges Testen sollen diskutiert werden.
+      - 4 Stud. 
+    * - **Neo4J** `🔗 <https://neo4j.com>`__
+      - 2 Stud.
+
+.. supplemental::
+
+  :eng:`connection churn` ≘ :ger:`Verbindungsabbruch`
+
 
 .. Nicht mehr vergeben:
    `Zeebe <https://github.com/camunda/zeebe>`__
-
-
-
-.. Vorträge - Themen (inkl. Einstiegslinks)
-  ------------------------------------------
-  - `Pxos <https://en.wikipedia.org/wiki/Paxos_(computer_science)>`_
-  - `Raft Consensus Algorithm <https://raft.github.io>`_ 
-  - `Gossip Protokoll <https://highscalability.com/gossip-protocol-explained/>`_
-  - `gRPC <https://grpc.io>`_
+  OFFEN:
+.. In Reserve:  
   - `AMQP <https://en.wikipedia.org/wiki/Advanced_Message_Queuing_Protocol>`_
   - `GraphQL <https://graphql.org>`_
   - `Django <https://www.djangoproject.com>`_
-  - `HTTP/3 und QUIC bzw. HTTP over QUIC <https://en.wikipedia.org/wiki/HTTP/3>`_
