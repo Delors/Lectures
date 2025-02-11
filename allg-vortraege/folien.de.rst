@@ -1,5 +1,5 @@
 .. meta:: 
-    :version: genesis
+    :version: renaissance
     :author: Michael Eichberg
     :keywords: "Seminararbeiten", "Bewertungskriterien"
     :description lang=de: Seminararbeiten: Hinweise und Bewertungskriterien
@@ -18,13 +18,7 @@
 .. role:: eng
 .. role:: ger
 .. role:: red
-.. role:: green
-.. role:: the-blue
-.. role:: minor
 .. role:: obsolete
-.. role:: line-above
-.. role:: smaller
-.. role:: far-smaller
 .. role:: monospaced
 
 .. role:: raw-html(raw)
@@ -37,11 +31,11 @@
 Vorträge: Hinweise und Bewertungskriterien
 ===================================================
 
-.. container:: line-above tiny
+----
 
-    :Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
-    :Kontakt: michael.eichberg@dhbw.de, Raum 149B
-    :Version: 1.0
+:Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
+:Kontakt: michael.eichberg@dhbw.de, Raum 149B
+:Version: 1.0
 
 .. supplemental::
 
@@ -59,58 +53,61 @@ Vorträge: Hinweise und Bewertungskriterien
 Bewertungskriterien
 -------------------
 
-.. class:: incremental scrollable dhbw list-with-explanations 
+.. story::
 
-1. Inhaltliche Qualität (≥ 50% der Gesamtnote)
+  .. class:: incremental-list dhbw list-with-explanations 
 
-   .. class:: incremental list-with-explanations
+  1. Inhaltliche Qualität (≥ 50% der Gesamtnote)
 
-   - Ist die Auswahl der Inhalte sinnvoll?
-   - Sind die Inhalte zielgruppenspezifisch aufbereitet?
-  
-     D. h. die Inhalte sollten von Ihren Kommilitonen verstanden werden können.
-   - Sind die Inhalte für das Publikum nachvollziehbar?
+     .. class:: incremental list-with-explanations
 
-     Häufig bietet es sich an vom Konkreten zum Abstrakten zu gehen. D. h. es ist häufig besser zuerst ein Beispiel zeigen und dann die allgemeine Regel.
-   - Ist die Evaluation/Zusammenfassung (falls für den Vortag relevant) nachvollziehbar und beantwortet die ursprüngliche Fragestellung?
-   - Einhaltung formaler Kriterien:
-  
-     - Orthographie
-     - konsistente Referenzen
-     - Abbildungen und Tabellen haben ggf. passende Referenzen
-
-2. Persönliches Auftreten (~ 20% der Gesamtnote)
-
-   - Wird Kontakt zum Publikum aufgebaut?
-  
-     (Das Publikum besteht nicht nur aus dem Dozenten.)
-   - Wiederholungen und Füllwörter vermeiden.
-3. Effektive Gestaltung der Präsentation (~ 30% der Gesamtnote)
+     - Ist die Auswahl der Inhalte sinnvoll?
+     - Sind die Inhalte zielgruppenspezifisch aufbereitet?
     
-   Es kommt hierbei insbesondere darauf an, ob die Inhalte verständlich und nachvollziehbar präsentiert werden. Insbesondere ob Tabellen und Grafiken effektiv eingesetzt werden und „Textgräber“ vermieden werden.
+       D. h. die Inhalte sollten von Ihren Kommilitonen verstanden werden können.
+     - Sind die Inhalte für das Publikum nachvollziehbar?
 
-   Auch Animationen sollten kein Selbstzweck sein, sondern die Inhalte unterstützen.
+       Häufig bietet es sich an vom Konkreten zum Abstrakten zu gehen. D. h. es ist häufig besser zuerst ein Beispiel zeigen und dann die allgemeine Regel.
+     - Ist die Evaluation/Zusammenfassung (falls für den Vortag relevant) nachvollziehbar und beantwortet die ursprüngliche Fragestellung?
+     - Einhaltung formaler Kriterien:
+    
+       - Orthographie
+       - konsistente Referenzen
+       - Abbildungen und Tabellen haben ggf. passende Referenzen
 
-   Details bzw. weitere Aspekte:
+  2. Persönliches Auftreten (~ 20% der Gesamtnote)
 
-   - präzise Formulierungen
-   - alles gesagte ist dem Ziel der Arbeit dienlich, keine inhaltlichen Ausschweifungen zu Themen, die dem Ziel nicht dienlich sind, beziehungsweise wo es nicht ersichtlich ist
-   - Grafiken sind aussagekräftig, vollständig erklärt und visuell ansprechend
-   - die gezeigten Codeabschnitte haben als ganzes Relevanz; unnötiges wurde entfernt
-4. Zeitmanagement
-   
-   - Wird das vorgegebene Zeitfenster eingehalten? 
-   
-     Abweichungen von +/- 5% sind in der Regel akzeptabel. Bei Abweichungen zwischen 5% und 10% kommt es auf den sonstigen Verlauf des Vortrags an. 
-     
-     .. warning::
-     
-        Bei Abweichungen von mehr als 10% wird die Note um eine Stufe reduziert (-0,3); bei 20% wird abgebrochen (-1,0). Dieser Faktor wird auf die Gesamtnote angewendet und kann demzufolge kumulativ wirken, da vermutlich auch bestimmte Inhalte fehlen und dies sich weiter negativ auswirken kann.
-   - Wird die Zeit sinnvoll auf die einzelnen Abschnitte verteilt?
+     - Wird Kontakt zum Publikum aufgebaut?
+    
+       (Das Publikum besteht nicht nur aus dem Dozenten.)
+     - Wiederholungen und Füllwörter vermeiden.
+  3. Effektive Gestaltung der Präsentation (~ 30% der Gesamtnote)
+      
+     Es kommt hierbei insbesondere darauf an, ob die Inhalte verständlich und nachvollziehbar präsentiert werden. Insbesondere ob Tabellen und Grafiken effektiv eingesetzt werden und „Textgräber“ vermieden werden.
+
+     Auch Animationen sollten kein Selbstzweck sein, sondern die Inhalte unterstützen.
+
+     Details bzw. weitere Aspekte:
+
+     - präzise Formulierungen
+     - alles gesagte ist dem Ziel der Arbeit dienlich, keine inhaltlichen Ausschweifungen zu Themen, die dem Ziel nicht dienlich sind, beziehungsweise wo es nicht ersichtlich ist
+     - Grafiken sind aussagekräftig, vollständig erklärt und visuell ansprechend
+     - die gezeigten Codeabschnitte haben als ganzes Relevanz; unnötiges wurde entfernt
+  4. Zeitmanagement
+    
+     - Wird das vorgegebene Zeitfenster eingehalten? 
+    
+       Abweichungen von +/- 5% sind in der Regel akzeptabel. Bei Abweichungen zwischen 5% und 10% kommt es auf den sonstigen Verlauf des Vortrags an. 
+      
+       .. warning::
+      
+          Bei Abweichungen von mehr als 10% wird die Note um eine Stufe reduziert (-0,3); bei 20% wird abgebrochen (-1,0). Dieser Faktor wird auf die Gesamtnote angewendet und kann demzufolge kumulativ wirken, da vermutlich auch bestimmte Inhalte fehlen und dies sich weiter negativ auswirken kann.
+     - Wird die Zeit sinnvoll auf die einzelnen Abschnitte verteilt?
 
 .. supplemental:: 
 
    .. tip:: Präsentation von Code
+      :class: dhbw
 
       Sollten Sie Code demonstrieren, der UIs baut, dann ist es häufig sinnvoll, wenn Sie erst kurz die Ziel UI zeigen und dann den Code, der diese UI erzeugt. Das Publikum kann sich dann besser vorstellen, was der Code macht. 
       
@@ -121,7 +118,7 @@ Bewertungskriterien
 Häufige Fehler
 --------------
 
-.. class:: incremental columns 
+.. class:: incremental-list column-list dhbw
 
 - Text zu klein
    
