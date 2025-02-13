@@ -1,5 +1,5 @@
 .. meta::
-    :version: genesis
+    :version: renaissance
     :author: Michael Eichberg
     :keywords: "Java", "Concurrency"
     :description lang=de: Nebenläufigkeit in Java
@@ -20,36 +20,31 @@
 .. role:: incremental
 .. role:: eng
 .. role:: ger
-.. role:: minor
+.. role:: peripheral
 .. role:: obsolete
 .. role:: dhbw-red
 .. role:: dhbw-gray
 .. role:: dhbw-light-gray
-.. role:: the-blue
-.. role:: the-green
-.. role:: the-orange
-.. role:: shiny-green
-.. role:: shiny-red
-.. role:: black
 .. role:: dark-red
-.. role:: smaller  
 
 .. role:: raw-html(raw)
    :format: html
+
+.. role:: java(code)
+  :language: java
 
 
 
 Nebenläufigkeit in Java
 ===============================================================================
 
-.. rubric:: :eng:`Concurrency` in Java
+:eng:`Concurrency` in Java
 
+----
 
-.. container:: line-above 
-
-  :Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
-  :Kontakt: michael.eichberg@dhbw.de
-  :Version: 1.0
+:Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
+:Kontakt: michael.eichberg@dhbw.de
+:Version: 1.0
 
 .. supplemental::
 
@@ -64,38 +59,36 @@ Nebenläufigkeit in Java
 
 
 
-.. class:: no-title center-child-elements
+.. class:: no-title center-content
 
 Nebenläufigkeit 
 --------------------------------------------------------------------------------
 
-Ein gutes Verständnis von nebenläufiger Programmierung ist für die Entwicklung von verteilten Anwendungen unerlässlich, da Server immer mehrere Anfragen gleichzeitig bearbeiten. 
+.. container:: exclamation-mark
+
+  Ein gutes Verständnis von nebenläufiger Programmierung ist für die Entwicklung von verteilten Anwendungen unerlässlich, da Server immer mehrere Anfragen gleichzeitig bearbeiten. 
+
 
 
 Prozesse vs. Threads
---------------------------------------------------------------------------------
+--------------------------------------------------------
 
-.. stack::
+.. deck::
 
-  .. layer:: 
+  .. card:: 
 
-    .. image:: images/threads/native_threads.svg
+    .. image:: images/threads/threads.svg
       :alt: Prozesse vs. Threads
-      :width: 100%
       :align: center
 
-  .. layer:: incremental overlay
+  .. card:: overlay
     
     .. image:: images/threads/fibres.svg
-      :alt: Prozesse vs. Threads
-      :width: 100%
       :align: center
 
-  .. layer:: incremental overlay
+  .. card:: overlay
     
     .. image:: images/threads/virtual_threads.svg
-      :alt: Prozesse vs. Threads
-      :width: 100%
       :align: center
 
 
@@ -111,23 +104,20 @@ Prozesse vs. Threads
 
 
 Kommunikation und Synchronisation mit Hilfe von *Monitoren* 
---------------------------------------------------------------------------------
+-------------------------------------------------------------------
 
 Ein *Monitor* ist ein Objekt, bei dem die Methoden im wechselseitigen Ausschluss (engl. *mutual exclusion*) ausgeführt werden.
 
-.. container:: two-columns
+.. image:: images/threads/monitor.svg
+  :alt: Monitor
+  :align: right
 
-  .. image:: images/threads/monitor.svg
-    :alt: Monitor
-    :height: 600px
+  
+Bedingungs-Synchronisation
 
-  .. container:: 
-
-    Bedingungs-Synchronisation
-    
-    - drückt eine Bedingung für die Reihenfolge der Ausführung von Operationen aus.
-    - z. B. können Daten erst dann aus einem Puffer entfernt werden, wenn Daten in den Puffer eingegeben wurden.
-    - Java unterstützt pro Monitor nur eine (anonyme) Bedingungs-Variable, mit den klassischen Methoden ``wait`` und ``notify`` bzw. ``notifyAll``.
+- drückt eine Bedingung für die Reihenfolge der Ausführung von Operationen aus.
+- z. B. können Daten erst dann aus einem Puffer entfernt werden, wenn Daten in den Puffer eingegeben wurden.
+- Java unterstützt pro Monitor nur eine (anonyme) Bedingungs-Variable, mit den klassischen Methoden :java:`wait` und :java:`notify` bzw. :java:`notifyAll`.
    
 
 .. supplemental::
@@ -135,19 +125,19 @@ Ein *Monitor* ist ein Objekt, bei dem die Methoden im wechselseitigen Ausschluss
   .. admonition:: Warnung
      :class: warning
       
-     In Java findet der wechselseitige Ausschluss nur zwischen solchen Methoden statt, die explizit als ``synchronized`` deklariert wurden. 
+     In Java findet der wechselseitige Ausschluss nur zwischen solchen Methoden statt, die explizit als :java:`synchronized` deklariert wurden. 
 
   *Monitore* sind nur ein Modell (Alternativen: *Semaphores*, *Message Passing*), das die Kommunikation und Synchronisation von Threads ermöglicht. Es ist das Standardmodell in Java und wird von der Java Virtual Machine (JVM) unterstützt.
 
 
 
 Kommunikation zwischen Threads mit Hilfe von Monitoren
---------------------------------------------------------------------------------
+--------------------------------------------------------------------
 
 - Durch Lesen und Schreiben von Daten, die in gemeinsamen Objekten gekapselt sind, die durch Monitore geschützt werden.
-- Jedes Objekt ist implizit von der Klasse ``Object`` abgeleitet, welche eine gegenseitige Ausschlusssperre definiert.
-- Methoden in einer Klasse können als ``synchronized`` gekennzeichnet werden. Die Methode wird erst dann ausgeführt, wenn die Sperre vorliegt. Bis dahin wird gewartet. Dieser Prozess geschieht automatisch.
-- Die Sperre kann auch über eine ``synchronized`` Anweisung erworben werden, die das Objekt benennt.
+- Jedes Objekt ist implizit von der Klasse :java:`Object` abgeleitet, welche eine gegenseitige Ausschlusssperre definiert.
+- Methoden in einer Klasse können als :java:`synchronized` gekennzeichnet werden. Die Methode wird erst dann ausgeführt, wenn die Sperre vorliegt. Bis dahin wird gewartet. Dieser Prozess geschieht automatisch.
+- Die Sperre kann auch über eine :java:`synchronized` Anweisung erworben werden, die das Objekt benennt.
 - Ein Thread kann auf eine einzelne (anonyme) Bedingungsvariable warten und diese benachrichtigen. 
 
 
@@ -157,21 +147,18 @@ Nebenläufigkeit in Java
 
 .. image:: images/threads/java-threads.svg
    :alt: java.lang.Thread
-   :height: 975px
    :align: center
-
-
 
 .. supplemental::
 
   - Threads werden in Java über die vordefinierte Klasse java.lang.Thread bereitgestellt.
   - Alternativ kann das Interface:
    
-    ``public interface Runnable { void run(); }`` 
+    :java:`public interface Runnable { void run(); }` 
     
     implementiert werden und an ein Thread-Objekt übergeben werden.
-  - Threads beginnen ihre Ausführung erst, wenn die ``start``-Methode in der Thread-Klasse aufgerufen wird. Die ``Thread.start``-Methode ruft die ``run``-Methode auf. Ein Aufruf der ``run``-Methode direkt führt nicht zu einer parallelen Ausführung.
-  - Der aktuelle Thread kann mittels der statischen Methode ``Thread.currentThread()`` ermittelt werden.
+  - Threads beginnen ihre Ausführung erst, wenn die :java:`start`-Methode in der Thread-Klasse aufgerufen wird. Die :java:`Thread.start`-Methode ruft die :java:`run`-Methode auf. Ein Aufruf der :java:`run`-Methode direkt führt nicht zu einer parallelen Ausführung.
+  - Der aktuelle Thread kann mittels der statischen Methode :java:`Thread.currentThread()` ermittelt werden.
   - Ein Thread wird beendet, wenn die Ausführung seiner Run-Methode entweder normal oder als Ergebnis einer unbehandelten Ausnahme endet.
 
   - Java unterscheidet *User*-Threads und *Daemon*-Threads.
@@ -180,15 +167,15 @@ Nebenläufigkeit in Java
 
     Wenn alle Benutzer-Threads beendet sind, werden die Daemon-Threads von der JVM beendet, und das Hauptprogramm wird beendet.
 
-    Die Methode ``setDaemon`` muss aufgerufen werden, bevor der Thread gestartet wird.
+    Die Methode :java:`setDaemon` muss aufgerufen werden, bevor der Thread gestartet wird.
 
 
 
 Inter-Thread-Kommunikation bzw. Koordination
 --------------------------------------------------------------------------------
 
-- Ein Thread kann (mit oder ohne Zeitüberschreitung) auf die Beendigung eines anderen Threads (des Ziels) warten, indem er die ``join``-Methode für das Thread-Objekt des Ziels aufruft.
-- Mit der Methode ``isAlive`` kann ein Thread feststellen, ob der Ziel-Thread beendet wurde.
+- Ein Thread kann (mit oder ohne Zeitüberschreitung) auf die Beendigung eines anderen Threads (des Ziels) warten, indem er die :java:`join`-Methode für das Thread-Objekt des Ziels aufruft.
+- Mit der Methode :java:`isAlive` kann ein Thread feststellen, ob der Ziel-Thread beendet wurde.
 
 
 
@@ -197,18 +184,17 @@ Java Thread States
 
 .. image:: images/threads/java-thread-states.svg
    :alt: Java Thread States
-   :height: 950px
    :align: center
 
 
 
-``synchronized``-Methoden und ``synchronized``-Blöcke
---------------------------------------------------------------------------------
+:java:`synchronized`-Methoden und :java:`synchronized`-Blöcke
+--------------------------------------------------------------------
 
 - Jedem Objekt ist eine gegenseitige Ausschlusssperre zugeordnet. Auf die Sperre kann von der Anwendung nicht explizit zugegriffen werden. Dies geschieht implizit, wenn:
 
-  - eine Methode den Methodenmodifikator ``synchronized`` verwendet
-  - Blocksynchronisierung mit dem Schlüsselwort ``synchronized`` verwendet wird
+  - eine Methode den Methodenmodifikator :java:`synchronized` verwendet
+  - Blocksynchronisierung mit dem Schlüsselwort :java:`synchronized` verwendet wird
 
 - Wenn eine Methode als synchronisiert gekennzeichnet ist, kann der Zugriff auf die Methode nur erfolgen, wenn das System die Sperre erhalten hat.
 - Daher haben synchronisierte Methoden einen sich gegenseitig ausschließenden Zugriff auf die vom Objekt gekapselten Daten, :dhbw-red:`wenn auf diese Daten nur von anderen synchronisierten Methoden zugegriffen wird`.
@@ -218,12 +204,13 @@ Java Thread States
 Beispiel: Synchronisierte Methode
 --------------------------------------------------------------------------------
 
-.. stack:: tiny
+.. deck:: 
 
-  .. layer::
+  .. card::
 
     .. code:: java
       :class: copy-to-clipboard
+      :number-lines:
 
       public class SynchronizedCounter {
 
@@ -238,10 +225,11 @@ Beispiel: Synchronisierte Methode
         }
       }
 
-  .. layer:: incremental
+  .. card::
 
     .. code:: java
       :class: copy-to-clipboard
+      :number-lines:
       
         public class SharedLong {
 
@@ -262,10 +250,11 @@ Beispiel: Synchronisierte Methode
 
         SharedLong myData = new SharedLong(42);
 
-  .. layer:: incremental
+  .. card::
 
     .. code:: java
       :class: copy-to-clipboard
+      :number-lines:
 
       public class SynchronizedCounter {
 
@@ -287,19 +276,19 @@ Beispiel: Synchronisierte Methode
 
 .. supplemental::
 
-  .. admonition:: Warnung
-    :class: warning
+  .. warning::
 
-    Wenn ``synchronized`` in seiner ganzen Allgemeinheit verwendet wird, kann er einen der Vorteile von klassischen Monitoren untergraben: Die Kapselung von Synchronisationseinschränkungen, die mit einem Objekt verbunden sind, an einer einzigen Stelle im Programm!
+    Wenn :java:`synchronized` in seiner ganzen Allgemeinheit verwendet wird, kann er einen der Vorteile von klassischen Monitoren untergraben: Die Kapselung von Synchronisationseinschränkungen, die mit einem Objekt verbunden sind, an einer einzigen Stelle im Programm!
 
-  Dies liegt daran, dass es nicht möglich ist, die mit einem bestimmten Objekt verbundene Synchronisation zu verstehen, indem man sich nur das Objekt selbst ansieht. Andere Objekte können bgzl. des Objekts eine ``synchronized``-Block verwenden.
+  Dies liegt daran, dass es nicht möglich ist, die mit einem bestimmten Objekt verbundene Synchronisation zu verstehen, indem man sich nur das Objekt selbst ansieht. Andere Objekte können bgzl. des Objekts eine :java:`synchronized`-Block verwenden.
 
 
 Komplexe Rückgabewerte
 ------------------------------
 
 .. code:: java
-  :class: tiny copy-to-clipboard
+  :class: copy-to-clipboard
+  :number-lines:
 
   public class SharedCoordinate {
     
@@ -313,24 +302,24 @@ Komplexe Rückgabewerte
       this.x = newX; this.y = newY;
     }
     
-    /* ⚠️ */ public /* synchronized irrelevant */ int readX() { return x; } /* ⚠️ */
-    /* ⚠️ */ public /* synchronized irrelevant */ int readY() { return y; } /* ⚠️ */
+    /*⚠️*/ public /* synchronized irrelevant */ int readX() { return x; } /*⚠️*/
+    /*⚠️*/ public /* synchronized irrelevant */ int readY() { return y; } /*⚠️*/
 
     public synchronized SharedCoordinate read() {
       return new SharedCoordinate(x, y);
-    }
-  }
+  } }
 
 .. supplemental::
 
-  Die beiden Methoden: ``readX`` und ``readY`` sind nicht synchronisiert, da das Lesen von ``int``-Werten atomar ist. Allerdings erlauben sie das Auslesen eines inkonsistenten Zustands! Es ist denkbar, dass direkt nach einem ``readX`` der entsprechende Thread unterbrochen wird und ein anderer Thread die Werte von ``x`` und ``y`` verändert. Wird dann der ursprüngliche Thread fortgesetzt, und ruft ``readY`` auf, so erhält er den neuen Wert von ``y`` und hat somit ein paar ``x``, ``y`` vorliegen, dass in dieser Form nie existiert hat.
+  Die beiden Methoden: :java:`readX` und :java:`readY` sind nicht synchronisiert, da das Lesen von :java:`int`-Werten atomar ist. Allerdings erlauben sie das Auslesen eines inkonsistenten Zustands! Es ist denkbar, dass direkt nach einem :java:`readX` der entsprechende Thread unterbrochen wird und ein anderer Thread die Werte von :java:`x` und :java:`y` verändert. Wird dann der ursprüngliche Thread fortgesetzt, und ruft :java:`readY` auf, so erhält er den neuen Wert von :java:`y` und hat somit ein paar :java:`x`, :java:`y` vorliegen, dass in dieser Form nie existiert hat.
 
-  Ein konsistenter Zustand kann nur durch die Methode ``read`` ermittelt werden, die die Werte von ``x`` und ``y`` in einem Schritt ausliest und als Paar zurückgibt.
+  Ein konsistenter Zustand kann nur durch die Methode :java:`read` ermittelt werden, die die Werte von :java:`x` und :java:`y` in einem Schritt ausliest und als Paar zurückgibt.
 
-  Kann sichergestellt werden, dass ein auslesender Thread die Instanz in einem ``synchronized`` Block benennt, dann kann die Auslesung eines konsistenten Zustands auch bei mehreren Methodenaufrufen hintereinander sichergestellt werden.
+  Kann sichergestellt werden, dass ein auslesender Thread die Instanz in einem :java:`synchronized` Block benennt, dann kann die Auslesung eines konsistenten Zustands auch bei mehreren Methodenaufrufen hintereinander sichergestellt werden.
 
   .. code:: java
     :class: copy-to-clipboard
+    :number-lines:
 
     SharedCoordinate point = new SharedCoordinate(0,0);
     synchronized (point1) {
@@ -346,78 +335,76 @@ Komplexe Rückgabewerte
 Bedingte Synchronisation
 --------------------------------------------------------------------------------
 
-  Zum Zwecke der bedingten Synchronisation können in Java die Methoden ``wait``, ``notify`` und ``notifyAll`` verwendet werden.  Diese Methoden erlauben es auf bestimmte Bedingungen zu warten und andere Threads zu benachrichtigen, wenn sich die Bedingung geändert hat.
+  Zum Zwecke der bedingten Synchronisation können in Java die Methoden :java:`wait`, :java:`notify` und :java:`notifyAll` verwendet werden.  Diese Methoden erlauben es auf bestimmte Bedingungen zu warten und andere Threads zu benachrichtigen, wenn sich die Bedingung geändert hat.
 
-.. stack:: incremental footnotesize margin-top-1em
+.. deck:: incremental margin-top-1em
 
-  .. layer::
+  .. card::
 
-    - Diese Methoden können nur innerhalb von Methoden verwendet werden, die die Objektsperre halten; andernfalls wird eine ``IllegalMonitorStateException`` ausgelöst.
+    - Diese Methoden können nur innerhalb von Methoden verwendet werden, die die Objektsperre halten; andernfalls wird eine :java:`IllegalMonitorStateException` ausgelöst.
   
-  .. layer:: incremental
+  .. card::
 
-    - Die ``wait``-Methode blockiert immer den aufrufenden Thread und gibt die mit dem Objekt verbundene Sperre frei.
+    - Die :java:`wait`-Methode blockiert immer den aufrufenden Thread und gibt die mit dem Objekt verbundene Sperre frei.
 
-  .. layer:: incremental
+  .. card::
 
-    - Die ``notify``-Methode weckt *einen* wartenden Thread auf. Welcher Thread aufgeweckt wird, ist nicht spezifiziert.
+    - Die :java:`notify`-Methode weckt *einen* wartenden Thread auf. Welcher Thread aufgeweckt wird, ist nicht spezifiziert.
      
-      ``notify`` gibt die Sperre nicht frei; daher muss der aufgeweckte Thread warten, bis er die Sperre erhalten kann, bevor er fortfahren kann.
-    - Um alle wartenden Threads aufzuwecken, muss die Methode ``notifyAll`` verwendet werden. 
+      :java:`notify` gibt die Sperre nicht frei; daher muss der aufgeweckte Thread warten, bis er die Sperre erhalten kann, bevor er fortfahren kann.
+    - Um alle wartenden Threads aufzuwecken, muss die Methode :java:`notifyAll` verwendet werden. 
     
-      Warten die Threads aufgrund unterschiedlicher Bedingungen, so ist immer ``notifyAll`` zu verwenden.
-    - Wenn kein Thread wartet, dann haben ``notify`` und ``notifyAll`` keine Wirkung.
+      Warten die Threads aufgrund unterschiedlicher Bedingungen, so ist immer :java:`notifyAll` zu verwenden.
+    - Wenn kein Thread wartet, dann haben :java:`notify` und :java:`notifyAll` keine Wirkung.
 
-  .. layer:: incremental
+  .. card::
 
-    .. admonition:: Wichtig
-      :class: warning
+    .. important:: 
     
       Wenn ein Thread aufgeweckt wird, kann er nicht davon ausgehen, dass seine Bedingung erfüllt ist! 
       
       Die Bedingung ist immer in einer Schleife zu prüfen und der Thread muss ich ggf. wieder in den Wartezustand versetzen.
 
 
-.. class:: smaller
 
-Beispiel: Bedingte Synchronisation mit *Condition Variables*
+Beispiel: Synchronisation mit *Condition Variables*
 -------------------------------------------------------------------------------
 
-Ein *BoundedBuffer* hat z. B. traditionell zwei Bedingungsvariablen: *BufferNotFull* und *BufferNotEmpty*. 
+.. deck:: 
 
-.. stack:: 
-
-  .. layer::
+  .. card::
 
     Wenn ein Thread auf eine Bedingung wartet, kann kein anderer Thread auf die andere Bedingung warten. 
 
-    :minor:`Mit den bisher vorgestellten Primitiven ist eine direkte Modellierung dieses Szenarios so nicht möglich. Stattdessen müssen immer alle Threads aufgeweckt werden, um sicherzustellen, dass auch der intendierte Thread aufgeweckt wird. Deswegen ist auch das Überprüfen der Bedingung in einer Schleife notwendig.`
+    :peripheral:`Mit den bisher vorgestellten Primitiven ist eine direkte Modellierung dieses Szenarios so nicht möglich. Stattdessen müssen immer alle Threads aufgeweckt werden, um sicherzustellen, dass auch der intendierte Thread aufgeweckt wird. Deswegen ist auch das Überprüfen der Bedingung in einer Schleife notwendig.`
 
-  .. layer:: incremental tiny
+  .. card:: 
 
-    .. code:: java
-      :class: smaller copy-to-clipboard
-
-        public class BoundedBuffer {
-          private final int buffer[];
-          private int first;
-          private int last;
-          private int numberInBuffer = 0;
-          private final int size;
-
-          public BoundedBuffer(int length) {
-            size = length;
-            buffer = new int[size];
-            last = 0;
-            first = 0;
-          };
-          ...
-        }
-
-  .. layer:: incremental tiny
+    Ein *BoundedBuffer* hat z. B. traditionell zwei Bedingungsvariablen: *BufferNotFull* und *BufferNotEmpty*. 
 
     .. code:: java
-      :class: smaller copy-to-clipboard
+      :class: copy-to-clipboard
+      :number-lines:
+
+      public class BoundedBuffer {
+        private final int buffer[];
+        private int first;
+        private int last;
+        private int numberInBuffer = 0;
+        private final int size;
+
+        public BoundedBuffer(int length) {
+          size = length;
+          buffer = new int[size];
+          last = 0;
+          first = 0;
+        };
+
+  .. card::
+
+    .. code:: java
+      :class: copy-to-clipboard
+      :number-lines: 14
 
         public synchronized void put(int item) throws InterruptedException {
           while (numberInBuffer == size)
@@ -428,10 +415,11 @@ Ein *BoundedBuffer* hat z. B. traditionell zwei Bedingungsvariablen: *BufferNo
           notifyAll();
         };
 
-  .. layer:: incremental tiny
+  .. card:: 
 
     .. code:: java
-      :class: smaller copy-to-clipboard
+      :class: copy-to-clipboard
+      :number-lines: 22
 
         public synchronized int get() throws InterruptedException {
           while (numberInBuffer == 0)
@@ -443,22 +431,23 @@ Ein *BoundedBuffer* hat z. B. traditionell zwei Bedingungsvariablen: *BufferNo
         }
       }
 
-  .. layer:: incremental tiny
+  .. card:: 
 
-    .. container:: text-align-center dhbw-red bolder
-    
-      Fehlersituation, die bei der Verwendung von ``notify`` (statt ``notifyAll``) auftreten könnte.
+    Fehlersituation, die bei der Verwendung von :java:`notify` statt :java:`notifyAll` auftreten könnte:
 
     .. code:: java
-      :class: smaller copy-to-clipboard
+      :class: copy-to-clipboard
+      :number-lines: 1
 
       BoundedBuffer bb = new BoundedBuffer(1); 
-      Thread g1,g2 = new Thread(() => { bb.get(); } );
-      Thread p1,p2 = new Thread(() => { bb.put(new Object()); } );
+      Thread g1,g2 = new Thread(() => { bb.get(); });
+      Thread p1,p2 = new Thread(() => { bb.put(new Object()); });
       g1.start(); g2.start(); p1.start(); p2.start();
 
     .. csv-table::
       :header: "","Aktionen" , "(Änderung des) Zustand(s) des Buffers", "Auf die Sperre (*Lock*) wartend", "An der Bedingung wartend"
+      :widths: 3, 25, 50, 33, 39
+      :class: s-smaller
 
       1, "**g1:bb.get()** :raw-html:`<br>`
       g2:bb.get(), p1:bb.put(), p2:bb.put()", empty, "{g2,p1,p2}", {g1}
@@ -471,7 +460,7 @@ Ein *BoundedBuffer* hat z. B. traditionell zwei Bedingungsvariablen: *BufferNo
 
 .. supplemental::
 
-  In Schritt 5 wurde von der VM - aufgrund des Aufrufs von ``notify`` durch ``g1`` - der Thread ``g2`` aufgeweckt - anstatt des Threads ``p2``. Der aufgeweckte Thread ``g2`` prüft die Bedingung (Schritt 6) und stellt fest, dass der Buffer leer ist. Er geht wieder in den Wartezustand. Jetzt warten sowohl ein Thread, der ein Wert schreiben möchte als auch ein Thread, der einen Wert lesen möchte. 
+  In Schritt 5 wurde von der VM - aufgrund des Aufrufs von :java:`notify` durch :java:`g1` - der Thread :java:`g2` aufgeweckt - anstatt des Threads :java:`p2`. Der aufgeweckte Thread :java:`g2` prüft die Bedingung (Schritt 6) und stellt fest, dass der Buffer leer ist. Er geht wieder in den Wartezustand. Jetzt warten sowohl ein Thread, der ein Wert schreiben möchte als auch ein Thread, der einen Wert lesen möchte. 
  
 
 .. class:: new-section
@@ -489,17 +478,18 @@ Java API für nebenläufige Programmierung
 
 .. class:: smaller
 
-Beispiel: Bedingte Synchronisation mit *ReentrantLock*\ s.
+Beispiel: Synchronisation mit *ReentrantLock*\ s.
 -------------------------------------------------------------------------------
 
 Ein *BoundedBuffer* hat z. B. traditionell zwei Bedingungsvariablen: *BufferNotFull* und *BufferNotEmpty*. 
 
-.. stack:: tiny
+.. deck:: 
 
-  .. layer::
+  .. card::
 
     .. code:: java
-      :class: smaller copy-to-clipboard
+      :class: copy-to-clipboard
+      :number-lines:
 
       public class BoundedBuffer<T> {
 
@@ -509,16 +499,16 @@ Ein *BoundedBuffer* hat z. B. traditionell zwei Bedingungsvariablen: *BufferNo
         private int numberInBuffer;
         private final int size;
 
-
         private final Lock lock = new ReentrantLock();
         private final Condition notFull = lock.newCondition();
         private final Condition notEmpty = lock.newCondition();
 
 
-  .. layer:: incremental
+  .. card::
 
     .. code:: java
-      :class: smaller copy-to-clipboard
+      :class: copy-to-clipboard
+      :number-lines: 12
 
         public BoundedBuffer(int length) { /* Normaler Constructor. */
           size = length;
@@ -529,10 +519,11 @@ Ein *BoundedBuffer* hat z. B. traditionell zwei Bedingungsvariablen: *BufferNo
         }
 
 
-  .. layer:: incremental
+  .. card::
 
     .. code:: java
-      :class: smaller copy-to-clipboard
+      :class:  copy-to-clipboard
+      :number-lines: 19
 
         public void put(T item) throws InterruptedException {
           lock.lock();
@@ -550,10 +541,11 @@ Ein *BoundedBuffer* hat z. B. traditionell zwei Bedingungsvariablen: *BufferNo
         }
 
 
-  .. layer:: incremental
+  .. card::
 
     .. code:: java
-      :class: smaller copy-to-clipboard
+      :class: copy-to-clipboard
+      :number-lines: 33
 
         public T get() ... {
           lock.lock();
@@ -572,14 +564,15 @@ Ein *BoundedBuffer* hat z. B. traditionell zwei Bedingungsvariablen: *BufferNo
       }
 
 
+
 Thread Prioritäten
 --------------------------------------------------------------------------------
 
-.. class:: incremental
+.. class:: incremental-list
 
-- Obwohl den Java-Threads Prioritäten zugewiesen werden können (``setPriority``), dienen sie dem zugrunde liegenden Scheduler nur als Richtschnur für die Ressourcenzuweisung.
-- Sobald ein Thread läuft, kann er die Prozessorressourcen explizit aufgeben, indem er die ``yield``-Methode aufruft.
-- ``yield`` setzt den Thread an das Ende der Warteschlange für seine Prioritätsstufe.
+- Obwohl den Java-Threads Prioritäten zugewiesen werden können (:java:`setPriority`), dienen sie dem zugrunde liegenden Scheduler nur als Richtschnur für die Ressourcenzuweisung.
+- Sobald ein Thread läuft, kann er die Prozessorressourcen explizit aufgeben, indem er die :java:`yield`-Methode aufruft.
+- :java:`yield` setzt den Thread an das Ende der Warteschlange für seine Prioritätsstufe.
 - Die Scheduling- und Prioritätsmodelle von Java sind jedoch schwach:
 
   - Es gibt keine Garantie dafür, dass immer der Thread mit der höchsten Priorität ausgeführt wird, der lauffähig ist.
@@ -592,28 +585,26 @@ Thread Prioritäten
 Best Practices
 -----------------------------------------------------------
 
-.. class:: impressive incremental
+.. class:: important incremental-list
 
-- ``synchronized`` Code sollte so kurz wie möglich gehalten werden.
+- :java:`synchronized` Code sollte so kurz wie möglich gehalten werden.
 - Verschachtelte Monitoraufrufe sollten vermieden werden, da die äußere Sperre nicht freigegeben wird, wenn der innere Monitor wartet. Dies kann leicht zum Auftreten eines Deadlocks führen.
 
 
-.. class:: no-title center-child-elements
+
+.. class:: no-title center-content
 
 Ressourcen immer in der gleichen Reihenfolge sperren
 ------------------------------------------------------------------
 
-.. class:: impressive
+.. warning:: 
 
-- Wenn zwei (oder mehr) Threads auf die gleichen Ressourcen in unterschiedlicher Reihenfolge zugreifen, kann es zu einem Deadlock kommen.
+  Wenn zwei (oder mehr) Threads auf die gleichen Ressourcen in unterschiedlicher Reihenfolge zugreifen, kann es zu einem Deadlock kommen.
 
-.. admonition:: Zu Beachten
-  :class: warning incremental
+.. important::
+  :class: incremental
 
-  **Ressourcen immer in der gleichen Reihenfolge sperren**, um Deadlocks zu vermeiden.
-  
-
-
+  **Ressourcen sind immer in der gleichen Reihenfolge zu sperren**, um Deadlocks zu vermeiden.
 
 
 
@@ -622,21 +613,19 @@ Ressourcen immer in der gleichen Reihenfolge sperren
 Thread Safety 
 --------------------------------------------------------------------------------
 
-.. container:: footer-left tiny minor
-  
-  :ger:`Threadsicherheit`
+:ger:`Threadsicherheit`
 
 
-.. class:: smaller
+
 
 Thread Safety - Voraussetzung
 --------------------------------------------------------------------------------
 
 Damit eine Klasse thread-sicher ist, muss sie sich in einer single-threaded Umgebung korrekt verhalten.
 
-.. stack:: smaller
+.. deck:: 
 
-  .. layer:: 
+  .. card:: 
   
     D. h. wenn eine Klasse korrekt implementiert ist, dann sollte keine Abfolge von Operationen (Lesen oder Schreiben von öffentlichen Feldern und Aufrufen von öffentlichen Methoden) auf Objekten dieser Klasse in der Lage sein:
 
@@ -644,7 +633,7 @@ Damit eine Klasse thread-sicher ist, muss sie sich in einer single-threaded Umge
       - das Objekt in einem ungültigen Zustand zu beobachten oder 
       - eine der Invarianten, Vorbedingungen oder Nachbedingungen der Klasse verletzen.
 
-  .. layer:: incremental
+  .. card::
 
     Die Klasse muss das korrekte Verhalten auch dann aufweisen, 
     wenn auf sie von mehreren Threads aus zugegriffen wird. 
@@ -658,10 +647,11 @@ Damit eine Klasse thread-sicher ist, muss sie sich in einer single-threaded Umge
     Dies hat zur Folge, dass Operationen auf einem thread-sicheren Objekt für alle Threads so erscheinen als ob die Operationen in einer festen, global konsistenten Reihenfolge erfolgen würden.
 
 
-.. class:: smaller
 
 Thread Safety Level
 --------------------------------------------------------------------------------
+
+.. class:: incremental-list
 
 :Immutable `Unveränderlich`:ger:: Die Objekt sind konstant und können nicht geändert werden.
 :Thread-sicher: Die Objekte sind veränderbar, unterstützen aber nebenläufigen Zugriff, da die Methoden entsprechend synchronisiert sind.
@@ -669,56 +659,57 @@ Thread Safety Level
 :Thread-kompatibel: Alle Objekte die keinerlei Synchronisierung aufweisen. Der Aufrufer kann die Synchronisierung jedoch ggf. extern übernehmen.
 :Thread-hostile „Thread-schädlich“: Objekte, die nicht thread-sicher sind und auch nicht thread-sicher gemacht werden können, da sie zum Beispiel globalen Zustand manipulieren.
 
-.. class:: integrated-exercise
+
+
+.. class:: exercises
 
 Übung
 ---------------------
 
-.. container:: far-far-smaller
+.. exercise:: Virtueller Puffer
+  
+  Implementieren Sie einen virtuellen Puffer, der Tasks (Instanzen von :java:`java.lang.Runable`) entgegennimmt und nach einer bestimmten Zeit ausführt. Der Puffer darf währenddessen nicht blockieren bzw. gesperrt sein.
 
-  .. exercise:: Virtueller Puffer
-    
+  Nutzen Sie ggf. virtuelle Threads, um auf ein explizites Puffern zu verzichten. Ein virtueller Thread kann zum Beispiel mit: :java:`Thread.ofVirtual()` erzeugt werden. Danach kann an die Methode :java:`start` ein :java:`Runnable` Objekt übergeben werden.
 
-    Implementieren Sie einen virtuellen Puffer, der Tasks (Instanzen von ``java.lang.Runable``) entgegennimmt und nach einer bestimmten Zeit ausführt. Der Puffer darf währenddessen nicht blockieren bzw. gesperrt sein.
+  Verzögern Sie die Ausführung (:java:`Thread.sleep()`) im Schnitt um 100ms mit einer Standardabweichung von 20ms. (Nutzen Sie :java:`Random.nextGaussian(mean,stddev)`)
 
-    Nutzen Sie ggf. virtuelle Threads, um auf ein explizites Puffern zu verzichten. Ein virtueller Thread kann zum Beispiel mit: ``Thread.ofVirtual()`` erzeugt werden. Danach kann an die Methode ``start`` ein ``Runnable`` Objekt übergeben werden.
+  Starten Sie 100 000 virtuelle Threads. Wie lange dauert die Ausführung? Wie lange dauert die Ausführung bei 100 000 platform (*native*) Threads.
 
-    Verzögern Sie die Ausführung (``Thread.sleep()``) im Schnitt um 100ms mit einer Standardabweichung von 20ms. (Nutzen Sie ``Random.nextGaussian(mean,stddev)``)
+  Nutzen Sie ggf. die Vorlage.
 
-    Starten Sie 100 000 virtuelle Threads. Wie lange dauert die Ausführung? Wie lange dauert die Ausführung bei 100 000 platform (*native*) Threads.
+  .. solution::
+    :pwd: MyVirtualBuffer
 
-    Nutzen Sie ggf. die Vorlage.
+    .. code:: java
+      :class: copy-to-clipboard
+      :number-lines:
 
-    .. solution::
-      :pwd: MyVirtualBuffer
-
-      .. code:: java
-        :class: smaller copy-to-clipboard
-
-        Thread thread = Thread.ofVirtual().start(
-            () -> {
-                try {
-                    var sleepTime =  (long) random.nextGaussian(100,20);
-                    if (sleepTime < 0 ) {
-                        // we found a gremlin...
-                        return;
-                    }
-                    System.out.println(
-                      "delaying " + id + 
-                      " by " + sleepTime + "ms");
-                    Thread.sleep(sleepTime);
-                } catch (InterruptedException e) {
-                    Thread.currentThread().interrupt();
-                }
-                task.run();
-            }
-          );
-        return thread;
+      Thread thread = Thread.ofVirtual().start(
+          () -> {
+              try {
+                  var sleepTime =  (long) random.nextGaussian(100,20);
+                  if (sleepTime < 0 ) {
+                      // we found a gremlin...
+                      return;
+                  }
+                  System.out.println(
+                    "delaying " + id + 
+                    " by " + sleepTime + "ms");
+                  Thread.sleep(sleepTime);
+              } catch (InterruptedException e) {
+                  Thread.currentThread().interrupt();
+              }
+              task.run();
+          }
+        );
+      return thread;
 
 .. supplemental:: 
 
   .. code:: java
-    :class: far-smaller copy-to-clipboard
+    :class: copy-to-clipboard
+    :number-lines:
 
     import java.util.ArrayList;
     import java.util.List;
@@ -756,26 +747,26 @@ Thread Safety Level
 
 
 
-.. class:: integrated-exercise 
+.. class:: exercises 
 
 Übung
 ----------------------------------------------
 
-.. container:: far-far-smaller
+.. scrollable:: 
 
   .. exercise:: Thread-sichere Programmierung
     
-    Implementieren Sie eine Klasse ``ThreadsafeArray`` zum Speichern von nicht-``null`` Objekten (``java.lang.Object``) an ausgewählten Indizes — vergleichbar mit einem normalen Array. Im Vergleich zu einem normalen Array sollen die Aufrufer jedoch ggf. blockiert werden, wenn die Zelle belegt ist. Die Klasse soll folgende Methoden bereitstellen:
+    Implementieren Sie eine Klasse :java:`ThreadsafeArray` zum Speichern von nicht-:java:`null` Objekten (:java:`java.lang.Object`) an ausgewählten Indizes — vergleichbar mit einem normalen Array. Im Vergleich zu einem normalen Array sollen die Aufrufer jedoch ggf. blockiert werden, wenn die Zelle belegt ist. Die Klasse soll folgende Methoden bereitstellen:
 
-    :``get(int index)``: Liefert den Wert an der Position ``index`` zurück. Der aufrufende Thread wird ggf. blockiert, bis ein Wert an der Position ``index`` gespeichert wurde. (Die ``get``-Methode entfernt den Wert nicht aus dem Array.) 
-    :``set(int index, Object value)``: Speichert den Wert ``value`` an der Position ``index``. Falls an der Position ``index`` bereits ein Wert gespeichert wurde, wird der aufrufende Thread blockiert, bis der Wert an der Position ``index`` gelöscht wurde.
-    :``delete(int index)``: Löscht ggf. den Wert an der Position ``index`` wenn ein Wert vorhanden ist. Andernfalls wird der Thread blockiert, bis es einen Wert gibt, der gelöscht werden kann.
+    :`get(int index)`:java:: Liefert den Wert an der Position :java:`index` zurück. Der aufrufende Thread wird ggf. blockiert, bis ein Wert an der Position :java:`index` gespeichert wurde. (Die :java:`get`-Methode entfernt den Wert nicht aus dem Array.) 
+    :`set(int index, Object value)`:java:: Speichert den Wert ``value`` an der Position :java:`index`. Falls an der Position :java:`index` bereits ein Wert gespeichert wurde, wird der aufrufende Thread blockiert, bis der Wert an der Position :java:`index` gelöscht wurde.
+    :`delete(int index)`:java:: Löscht ggf. den Wert an der Position :java:`index` wenn ein Wert vorhanden ist. Andernfalls wird der Thread blockiert, bis es einen Wert gibt, der gelöscht werden kann.
 
-    (a) Implementieren Sie die Klasse ``ThreadsafeArray`` nur unter Verwendung der Standardprimitive: ``synchronized``, ``wait``, ``notify`` und ``notifyAll``. Nutzen Sie die Vorlage. 
-    (b) Können Sie sowohl ``notify`` als auch ``notifyAll`` verwenden?
+    (a) Implementieren Sie die Klasse :java:`ThreadsafeArray` nur unter Verwendung der Standardprimitive: :java:`synchronized`, :java:`wait`, :java:`notify` und :java:`notifyAll`. Nutzen Sie die Vorlage. 
+    (b) Können Sie sowohl :java:`notify` als auch :java:`notifyAll` verwenden?
 
-    (c) Implementieren Sie die Klasse ``ThreadsafeArray`` unter Verwendung von ``ReentrantLock``\ s und ``Condition``\ s. Nutzen Sie die Vorlage. 
-    (d) Welche Vorteile hat die Verwendung von ``ReentrantLock``\ s?
+    (c) Implementieren Sie die Klasse :java:`ThreadsafeArray` unter Verwendung von :java:`ReentrantLock`\ s und :java:`Condition`\ s. Nutzen Sie die Vorlage. 
+    (d) Welche Vorteile hat die Verwendung von :java:`ReentrantLock`\ s?
 
     .. solution:: 
       :pwd: ThreadSafeArrays
@@ -783,7 +774,8 @@ Thread Safety Level
       (a) 
 
         .. code:: java
-          :class: smaller copy-to-clipboard
+          :class: copy-to-clipboard
+          :number-lines:
 
           public synchronized Object get(int index) throws InterruptedException {
             var v = array[index];
@@ -815,11 +807,12 @@ Thread Safety Level
             notifyAll();
           }
 
-      (b) ``notify`` kann nicht verwendet werden, da wir unterschiedliche Bedingungen haben und es bei der Verwendung von ``notify`` somit zum Aufwecken eines ungeeigneten Threads kommen könnte. Dies könnte dazu führen könnte, dass alle Threads im Wartezustand sind obwohl Fortschritt möglich wäre. 
+      (b) :java:`notify` kann nicht verwendet werden, da wir unterschiedliche Bedingungen haben und es bei der Verwendung von :java:`notify` somit zum Aufwecken eines ungeeigneten Threads kommen könnte. Dies könnte dazu führen könnte, dass alle Threads im Wartezustand sind obwohl Fortschritt möglich wäre. 
 
       (c) 
           .. code:: java
             :class: copy-to-clipboard
+            :number-lines:
 
             private final Object[] array;
             private final ReentrantLock[] locks;
@@ -887,14 +880,15 @@ Thread Safety Level
             }
 
 
-      (d) Wir können zumindest für die Bedingung *notFull* ``signal`` verwenden, da auf der Bedingungsvariable *notFull* ggf. nur die ``set``-Methode wartet. Für die Bedigung *notEmpty* können wir jedoch nur ``signalAll`` verwenden, da auf der Bedingungsvariable *notEmpty* sowohl die ``get``- als auch die ``delete``-Methode warten können und es sonst passieren können, dass nach einem ``set`` Aufruf kein ``delete`` aufgeweckt wird.
+      (d) Wir können zumindest für die Bedingung *notFull* :java:`signal` verwenden, da auf der Bedingungsvariable *notFull* ggf. nur die :java:`set`-Methode wartet. Für die Bedigung *notEmpty* können wir jedoch nur :java:`signalAll` verwenden, da auf der Bedingungsvariable *notEmpty* sowohl die :java:`get`- als auch die :java:`delete`-Methode warten können und es sonst passieren können, dass nach einem :java:`set` Aufruf kein :java:`delete` aufgeweckt wird.
 
 .. supplemental:: 
 
-  Sie können sich die Klasse ``ThreadsafeArray`` auch als ein Array von ``BoundedBuffers`` mit der Größe 1 vorstellen.
+  Sie können sich die Klasse :java:`ThreadsafeArray` auch als ein Array von *BoundedBuffers* mit der Größe 1 vorstellen.
 
   .. code:: java
-    :class: far-smaller copy-to-clipboard
+    :class: copy-to-clipboard
+    :number-lines:
 
     public class ThreadsafeArray {
 
