@@ -1,9 +1,9 @@
 .. meta::
     :version: renaissance
     :author: Michael Eichberg
-    :keywords: "Verteilte Systeme"
-    :description lang=de: Verteilte Systeme
-    :id: lecture-w3wi_110.2-verteilte_systeme_wirtschaftsinformatik
+    :keywords: "Programmierkonzepte"
+    :description lang=de: Einführung in moderne Programmierkonzepte
+    :id: lecture-w3wi_se303.2-moderne_programmierkonzepte_wirtschaftsinformatik
     :first-slide: last-viewed
     :master-password: WirklichSchwierig!
 
@@ -22,14 +22,14 @@
 
 
 
-W3WI_110.2 - Verteilte Systeme
+W3WI_SE303.2 - Moderne Programmierkonzepte
 ================================================
 
 ----
 
 :Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
 :Kontakt: michael.eichberg@dhbw.de, Raum 149B
-:Version: 1.0 (23EG/EH)
+:Version: 1.0 (24SEA)
 
 
 
@@ -49,8 +49,8 @@ Prüfungsleistung - Portfolio
 
 .. admonition:: Hintergrund
 
-    - das Modul hat 55 VL
-    - Verteilte Systeme hat 22VL
+    - das Modul *Software Engineering I* hat 60 VL
+    - die Lehreinheit *Moderne Programmierkonzepte* hat 30VL
     - Die verteilte Systeme geht mit **50** von 120 Modulpunkten ein
 
 - 2 Bestandteile:
@@ -80,6 +80,7 @@ Vorträge - Rahmenbedingungen
 - Die Vortragenden sollten während des Vortrags nicht mehrfach rotieren. 
 
   D. h. gefordert ist, dass erst der erste Vortragende seinen Teil vollständig vorträgt, dann der zweite, usw.. Dies ist für die Notenfindung erforderlich.
+
 
 
 Vorträge - Themen

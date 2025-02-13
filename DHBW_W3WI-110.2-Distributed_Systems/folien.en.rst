@@ -77,8 +77,13 @@ Examination - Portfolio
 
 .. class:: dhbw
 
-1. Presentations (in teams of 2 to 3 students) - max. 15 points
-2. Programming Exercise (in small teams) - max. 35 points
+1. Presentations (10min per student) - max. 15 points
+2. Programming Exercise (in teams of 5 students) - max. 35 points
+
+.. attention::
+  :class: incremental
+
+  Students who present together should not be in the same team for the programming exercise.
 
 
 
@@ -87,7 +92,7 @@ Presentations - General Conditions
 
 .. class:: list-with-explanations
 
-- The presentations should deal in particular with the core content of the lecture and be of a conceptual nature.  
+- The presentations should deal in particular with the core content of the lecture and *be of a conceptual nature*.  
 
   This means that, after briefly presenting the overall purpose of the framework/technology/protocol, the architecture/the details must be presented. That is, how errors are dealt with, which services are offered, which guarantees/security aspects are implemented, how scalability is achieved, etc. 
   
@@ -111,23 +116,29 @@ Presentations - Available Topics
 
   .. list-table:: 
     :width: 100%
-    :widths: 70 30
+    :widths: 2 70 28
     :class: booktabs incremental-table-rows
     :header-rows: 0
 
-    * - **Byzantine faults** `🔗 <https://en.wikipedia.org/wiki/Byzantine_fault>`__ 
+    * - 1.
+      - **Byzantine faults** `🔗 <https://en.wikipedia.org/wiki/Byzantine_fault>`__ 
       - 1 Person
-    * - **LDAP** `🔗 <https://www.rfc-editor.org/rfc/rfc4511.txt>`__ 
+    * - 2.
+      - **LDAP** `🔗 <https://www.rfc-editor.org/rfc/rfc4511.txt>`__ 
       - 2 - 3 Persons
-    * - **Backend Subsetting and connection churn** `🔗 <https://queue.acm.org/detail.cfm?id=3570937>`__ 
+    * - 3.
+      - **Backend Subsetting and connection churn** `🔗 <https://queue.acm.org/detail.cfm?id=3570937>`__ 
       - 1 Person
-    * - **Virtualization**: The goal of this presentation is to give an overview of the different virtualization technologies and to explain the commonalities and differences between them. It is also possible to demonstrate some of the differences using concrete products. 
+    * - 4.
+      - **Virtualization**: The goal of this presentation is to give an overview of the different virtualization technologies and to explain the commonalities and differences between them. It is also possible to demonstrate some of the differences using concrete products. 
 
         :peripheral:`Some keywords: Containers (e. g., Docker, Linux), Firecracker, Hypervisors (KVM, Xen, Hyper-V)`
       - 3 - 5 Persons
-    * - **Real time system monitoring with ebpf** `🔗 <https://queue.acm.org/detail.cfm?id=3178371>`__
+    * - 5.
+      - **Real time system monitoring with ebpf** `🔗 <https://queue.acm.org/detail.cfm?id=3178371>`__
       - 2 Persons (One with interest in Linux)
-    * - **HTTP/3 and QUIC or HTTP over QUIC** `🔗 <https://en.wikipedia.org/wiki/HTTP/3>`_
+    * - 6.
+      - **HTTP/3 and QUIC or HTTP over QUIC** `🔗 <https://en.wikipedia.org/wiki/HTTP/3>`_
       - 2 Persons
 
   .. class:: incremental
@@ -136,27 +147,57 @@ Presentations - Available Topics
 
   .. list-table:: 
     :width: 100%
-    :widths: 70 30
+    :widths: 5 70 30
     :class: booktabs incremental-table-rows
     :header-rows: 0
 
-    * - **Paxos** `🔗 <https://en.wikipedia.org/wiki/Paxos_(computer_science)>`__
+    * - 7.
+      - **Paxos** `🔗 <https://en.wikipedia.org/wiki/Paxos_(computer_science)>`__
       - 2 Persons
-    * - **Raft Consensus Algorithm** `🔗 <https://raft.github.io>`__ 
+    * - 8.
+      - **Raft Consensus Algorithm** `🔗 <https://raft.github.io>`__ 
       - 2 Persons
-    * - **Gossip Protokoll** `🔗 <https://highscalability.com/gossip-protocol-explained/>`__
+    * - 9.
+      - **Gossip Protokoll** `🔗 <https://highscalability.com/gossip-protocol-explained/>`__
       - 2 Persons
-    * - **gRPC** `🔗 <https://grpc.io>`__
+    * - 10.
+      - **gRPC** `🔗 <https://grpc.io>`__
       - 2 Persons
-    * - **Web and Distributed Application Testing**
+    * - 11.
+      - **Web and Distributed Application Testing**
 
         Client and Server Side testing should be discussed.
       - 4 Persons 
-    * - **Neo4J** `🔗 <https://neo4j.com>`__
+    * - 12.
+      - **Neo4J** `🔗 <https://neo4j.com>`__
       - 2 Persons
-    * - **Docker Swarm vs. Kubernetes** `🔗 <https://www.docker.com/kubernetes>`__
+    * - 13.
+      - **Docker Swarm vs. Kubernetes** `🔗 <https://www.docker.com/kubernetes>`__
       - 3 Persons
 
 .. supplemental::
 
   :eng:`connection churn` ≘ :ger:`Verbindungsabbruch`
+
+
+Presentations - Dates
+------------------------------------------
+
+
+  .. list-table:: 
+    :width: 100%
+    :widths: 20 80 
+    :header-rows: 1
+
+    * - Date
+      - Topic
+    * - \ 6. Mar 
+      - \ 1. (Byzantine faults), 4. (Virtualization)
+    * - \ 19. Mar 
+      - \ 2. (LDAP), 5. (Monitoring), 12. (Neo4j)
+    * - \ 26. Mar 
+      - \ 11. (Testing), 13. (Docker Swarm vs. Kubernetes) 
+    * - \ 2. Apr 
+      - \ 7. (Paxos) , 8. (Raft), 9. (Gossip)
+    * - \ 9. Apr 
+      - \ 3. (Connection Churn), 6. (HTTP/3), 10. (gRPC)
