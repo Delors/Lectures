@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xl="http://www.w3.org/1999/xlink" version="1.1" xmlns:dc="http://purl.org/dc/elements/1.1/" viewBox="23 119 517 255" width="517" height="255">
+  <style>
+    @import url('/LectureDoc2/ext/fonts/ld-fonts.css'); 
+  </style>
+  <defs>
+    <filter id="Shadow" filterUnits="userSpaceOnUse" x="-28.7" y="93.5">
+      <feGaussianBlur in="SourceAlpha" result="blur" stdDeviation="1.308"/>
+      <feOffset in="blur" result="offset" dx="2" dy="2"/>
+      <feFlood flood-color="black" flood-opacity=".5" result="flood"/>
+      <feComposite in="flood" in2="offset" operator="in" result="color"/>
+      <feMerge>
+        <feMergeNode in="color"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <marker orient="auto" overflow="visible" markerUnits="strokeWidth" id="FilledArrow_Marker" stroke-linejoin="miter" stroke-miterlimit="10" viewBox="-1 -4 10 8" markerWidth="10" markerHeight="8" color="black">
+      <g>
+        <path d="M 8 0 L 0 -3 L 0 3 Z" fill="currentColor" stroke="currentColor" stroke-width="1"/>
+      </g>
+    </marker>
+  </defs>
+  <metadata> Produced by OmniGraffle 8.0\n2025-02-13 07:48:27 +0000</metadata>
+  <g id="threads" stroke-opacity="1" stroke="none" stroke-dasharray="none" fill="none" fill-opacity="1">
+    <title>threads</title>
+    <g id="threads_native_threads">
+      <title>native_threads</title>
+      <g id="Graphic_2" filter="url(#Shadow)">
+        <path d="M 100.5 327 L 528.5 327 C 531.8137 327 534.5 329.6863 534.5 333 L 534.5 362.948 C 534.5 366.2617 531.8137 368.948 528.5 368.948 L 100.5 368.948 C 97.18629 368.948 94.5 366.2617 94.5 362.948 L 94.5 333 C 94.5 329.6863 97.18629 327 100.5 327 Z" fill="#6b7ca5"/>
+        <text transform="translate(99.5 338.474)" fill="white">
+          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="white" x="159.287" y="15" xml:space="preserve">Operating System</tspan>
+        </text>
+      </g>
+      <g id="Graphic_3" filter="url(#Shadow)">
+        <path d="M 100.5 120 L 211.5 120 C 214.8137 120 217.5 122.68629 217.5 126 L 217.5 278.5 C 217.5 281.8137 214.8137 284.5 211.5 284.5 L 100.5 284.5 C 97.18629 284.5 94.5 281.8137 94.5 278.5 L 94.5 126 C 94.5 122.68629 97.18629 120 100.5 120 Z" fill="#b1001c"/>
+        <text transform="translate(99.5 125)" fill="white">
+          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="white" x="31.482" y="15" xml:space="preserve">Threads</tspan>
+        </text>
+      </g>
+      <g id="Graphic_7">
+        <rect x="125.75" y="155.5" width="11.5" height="104.5" fill="#dadada"/>
+        <rect x="125.75" y="155.5" width="11.5" height="104.5" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_8">
+        <rect x="150.25" y="155.5" width="11.5" height="104.5" fill="#dadada"/>
+        <rect x="150.25" y="155.5" width="11.5" height="104.5" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_9">
+        <rect x="174.75" y="155.5" width="11.5" height="104.5" fill="#dadada"/>
+        <rect x="174.75" y="155.5" width="11.5" height="104.5" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_14">
+        <text transform="translate(25.136 198.25)" fill="#b1001c">
+          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="#b1001c" x="73896445e-20" y="15" xml:space="preserve">Processes</tspan>
+        </text>
+      </g>
+      <g id="Line_16">
+        <line x1="131" y1="260" x2="131" y2="317.1" marker-end="url(#FilledArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Line_17">
+        <line x1="155.5" y1="260" x2="155.5" y2="317.1" marker-end="url(#FilledArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Line_18">
+        <line x1="180" y1="260" x2="180" y2="317.1" marker-end="url(#FilledArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+    </g>
+  </g>
+</svg>

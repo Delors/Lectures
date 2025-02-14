@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xl="http://www.w3.org/1999/xlink" version="1.1" xmlns:dc="http://purl.org/dc/elements/1.1/" viewBox="23 119 517 255" width="517" height="255">
+  <style>
+    @import url('/LectureDoc2/ext/fonts/ld-fonts.css'); 
+  </style>
+  <defs>
+    <filter id="Shadow" filterUnits="userSpaceOnUse" x="-28.7" y="93.5">
+      <feGaussianBlur in="SourceAlpha" result="blur" stdDeviation="1.308"/>
+      <feOffset in="blur" result="offset" dx="2" dy="2"/>
+      <feFlood flood-color="black" flood-opacity=".5" result="flood"/>
+      <feComposite in="flood" in2="offset" operator="in" result="color"/>
+      <feMerge>
+        <feMergeNode in="color"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <marker orient="auto" overflow="visible" markerUnits="strokeWidth" id="FilledArrow_Marker" stroke-linejoin="miter" stroke-miterlimit="10" viewBox="-1 -4 10 8" markerWidth="10" markerHeight="8" color="black">
+      <g>
+        <path d="M 8 0 L 0 -3 L 0 3 Z" fill="currentColor" stroke="currentColor" stroke-width="1"/>
+      </g>
+    </marker>
+  </defs>
+  <metadata> Produced by OmniGraffle 8.0\n2025-02-12 15:44:31 +0000</metadata>
+  <g id="threads" stroke-opacity="1" stroke="none" stroke-dasharray="none" fill="none" fill-opacity="1">
+    <title>threads</title>
+    <g id="threads_virtual_threads">
+      <title>virtual_threads</title>
+      <g id="Graphic_65" filter="url(#Shadow)">
+        <path d="M 417.53 120.03 L 528.53 120.03 C 531.8437 120.03 534.53 122.71629 534.53 126.03 L 534.53 278.53 C 534.53 281.8437 531.8437 284.53 528.53 284.53 L 417.53 284.53 C 414.2163 284.53 411.53 281.8437 411.53 278.53 L 411.53 126.03 C 411.53 122.71629 414.2163 120.03 417.53 120.03 Z" fill="#b1001c"/>
+        <text transform="translate(416.53 125.03)" fill="white">
+          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="white" x="29.179" y="15" xml:space="preserve">&gt; Java 21 </tspan>
+          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="white" x="9.411" y="34" xml:space="preserve">Virtual Threads</tspan>
+        </text>
+      </g>
+      <g id="Line_64">
+        <line x1="473.53" y1="285.082" x2="473.53" y2="317.13" marker-end="url(#FilledArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_63">
+        <path d="M 417.53 256.082 L 528.53 256.082 C 531.8437 256.082 534.53 258.7683 534.53 262.082 L 534.53 278.53 C 534.53 281.8437 531.8437 284.53 528.53 284.53 L 417.53 284.53 C 414.2163 284.53 411.53 281.8437 411.53 278.53 L 411.53 262.082 C 411.53 258.7683 414.2163 256.082 417.53 256.082 Z" fill="#dadada"/>
+      </g>
+      <g id="Graphic_62">
+        <text transform="translate(428.775 261.082)" fill="black">
+          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="0" y="15" xml:space="preserve">Thread Library</tspan>
+        </text>
+      </g>
+      <g id="Line_61">
+        <line x1="493.03" y1="285.082" x2="493.03" y2="317.13" marker-end="url(#FilledArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Line_60">
+        <line x1="454.03" y1="285.082" x2="454.03" y2="317.13" marker-end="url(#FilledArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_59">
+        <rect x="447.8425" y="178.81052" width="11.5" height="36.643852" fill="#00bfc0"/>
+        <rect x="447.8425" y="178.81052" width="11.5" height="36.643852" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_58">
+        <rect x="493.4675" y="178.81052" width="11.5" height="36.643852" fill="#00bfc0"/>
+        <rect x="493.4675" y="178.81052" width="11.5" height="36.643852" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_57">
+        <rect x="470.655" y="178.81052" width="11.5" height="36.643852" fill="#00bfc0"/>
+        <rect x="470.655" y="178.81052" width="11.5" height="36.643852" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Line_56">
+        <line x1="452.99875" y1="215.1047" x2="452.99875" y2="246.182" marker-end="url(#FilledArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Line_55">
+        <line x1="475.8425" y1="215.88522" x2="475.8425" y2="246.182" marker-end="url(#FilledArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Line_54">
+        <line x1="498.68625" y1="215.88522" x2="498.68625" y2="246.182" marker-end="url(#FilledArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_53">
+        <rect x="425.03" y="178.81052" width="11.5" height="36.643852" fill="#00bfc0"/>
+        <rect x="425.03" y="178.81052" width="11.5" height="36.643852" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Line_52">
+        <line x1="430.155" y1="215.88522" x2="430.155" y2="246.96252" marker-end="url(#FilledArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_51">
+        <rect x="516.28" y="178.81052" width="11.5" height="36.643852" fill="#00bfc0"/>
+        <rect x="516.28" y="178.81052" width="11.5" height="36.643852" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Line_50">
+        <line x1="521.53" y1="216.66574" x2="521.53" y2="246.96252" marker-end="url(#FilledArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+    </g>
+  </g>
+</svg>

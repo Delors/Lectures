@@ -4,7 +4,7 @@
     :keywords: "Java", "Concurrency"
     :description lang=de: Nebenläufigkeit in Java
     :description lang=en: Concurrency in Java
-    :id: lecture-ds-nebenlaeufigkeit-in-java
+    :id: lecture-ds-concurrency-in-java
     :first-slide: last-viewed
     :master-password: WirklichSchwierig!
 
@@ -35,10 +35,8 @@
 
 
 
-Nebenläufigkeit in Java
+Concurrency in Java
 ===============================================================================
-
-:eng:`Concurrency` in Java
 
 ----
 
@@ -61,7 +59,7 @@ Nebenläufigkeit in Java
 
 .. class:: no-title center-content
 
-Nebenläufigkeit 
+Concurrency 
 --------------------------------------------------------------------------------
 
 .. container:: exclamation-mark

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xl="http://www.w3.org/1999/xlink" version="1.1" xmlns:dc="http://purl.org/dc/elements/1.1/" viewBox="171 135 202 194" width="202" height="194">
+  <style>
+    @import url('/LectureDoc2/ext/fonts/ld-fonts.css'); 
+  </style>
+  <defs>
+    <filter id="Shadow" filterUnits="userSpaceOnUse" x="150.8" y="115.6">
+      <feGaussianBlur in="SourceAlpha" result="blur" stdDeviation="1.308"/>
+      <feOffset in="blur" result="offset" dx="2" dy="2"/>
+      <feFlood flood-color="black" flood-opacity=".5" result="flood"/>
+      <feComposite in="flood" in2="offset" operator="in" result="color"/>
+      <feMerge>
+        <feMergeNode in="color"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <metadata> Produced by OmniGraffle 8.0\n2025-02-13 07:49:17 +0000</metadata>
+  <g id="monitor" stroke-opacity="1" stroke="none" stroke-dasharray="none" fill="none" fill-opacity="1">
+    <title>monitor</title>
+    <g id="monitor_Layer_1">
+      <title>Layer 1</title>
+      <g id="Graphic_2" filter="url(#Shadow)">
+        <path d="M 239.5 159.5 L 362 159.5 C 365.3137 159.5 368 162.1863 368 165.5 L 368 318 C 368 321.3137 365.3137 324 362 324 L 239.5 324 C 236.1863 324 233.5 321.3137 233.5 318 L 233.5 165.5 C 233.5 162.1863 236.1863 159.5 239.5 159.5 Z" fill="#b1001c"/>
+      </g>
+      <g id="Graphic_3">
+        <text transform="translate(281.566 140.5)" fill="black">
+          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="0" y="15" xml:space="preserve">Monitor</tspan>
+        </text>
+      </g>
+      <g id="Graphic_4">
+        <path d="M 260.5 171.5 L 352.5 171.5 C 355.8137 171.5 358.5 174.1863 358.5 177.5 L 358.5 193.948 C 358.5 197.2617 355.8137 199.948 352.5 199.948 L 260.5 199.948 C 257.1863 199.948 254.5 197.2617 254.5 193.948 L 254.5 177.5 C 254.5 174.1863 257.1863 171.5 260.5 171.5 Z" fill="#ffabb9"/>
+        <text transform="translate(259.5 176.5)" fill="black">
+          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="32.804" y="15" xml:space="preserve">Lock</tspan>
+        </text>
+      </g>
+      <g id="Graphic_5">
+        <path d="M 260.5 233.5 L 352.5 233.5 C 355.8137 233.5 358.5 236.1863 358.5 239.5 L 358.5 305 C 358.5 308.3137 355.8137 311 352.5 311 L 260.5 311 C 257.1863 311 254.5 308.3137 254.5 305 L 254.5 239.5 C 254.5 236.1863 257.1863 233.5 260.5 233.5 Z" fill="white"/>
+        <text transform="translate(259.5 238.5)" fill="black">
+          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="31.11" y="15" xml:space="preserve">State</tspan>
+        </text>
+      </g>
+      <g id="Graphic_6" filter="url(#Shadow)">
+        <rect x="193.5" y="198.5" width="52" height="15.5" fill="#b1001c"/>
+      </g>
+      <g id="Graphic_7" filter="url(#Shadow)">
+        <rect x="194.5" y="260.5" width="52" height="15.5" fill="#b1001c"/>
+      </g>
+      <g id="Graphic_8" filter="url(#Shadow)">
+        <rect x="194.5" y="229.5" width="52" height="15.5" fill="#b1001c"/>
+      </g>
+      <g id="Graphic_9">
+        <text transform="translate(176.224 265.645) rotate(-90)" fill="black">
+          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="5968559e-19" y="15" xml:space="preserve">Interface</tspan>
+        </text>
+      </g>
+    </g>
+  </g>
+</svg>

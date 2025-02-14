@@ -1,5 +1,5 @@
 .. meta::
-    :version: genesis
+    :version: renaissance
     :author: Michael Eichberg
     :keywords: "Web Services", REST, HTTP, JSON
     :description lang=de: Einführung in RESTful Web Services
@@ -8,6 +8,7 @@
     :master-password: WirklichSchwierig!
 
 .. |WS| replace:: *Web Service*
+
 .. |html-source| source::
     :prefix: https://delors.github.io/
     :suffix: .html
@@ -20,7 +21,7 @@
 .. role:: red
 .. role:: green
 .. role:: blue
-.. role:: not-important
+.. role:: peripheral
 .. role:: smaller
 
 
@@ -28,16 +29,14 @@
 RESTful Web Services
 ==========================================
 
-.. container:: tiny margin-bottom-1em
+Eine sehr kurze Einführung.
 
-    Eine sehr kurze Einführung.
+----
 
-.. container:: line-above 
-
-  :Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
-  :Kontakt: michael.eichberg@dhbw.de
-  :Version: 1.0 
-  :Quelle: (teilweise) RESTful Web Services; Leonard Richardson & Sam Ruby; O'Reilly
+:Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
+:Kontakt: michael.eichberg@dhbw.de
+:Version: 1.0 
+:Quelle: (teilweise) RESTful Web Services; Leonard Richardson & Sam Ruby; O'Reilly
 
 .. supplemental::
 
@@ -55,7 +54,7 @@ RESTful Web Services
 Was ist ein *Web Service* im Kontext von RESTful Web Services
 ---------------------------------------------------------------
 
-Ein |WS| ist lediglich eine Webseite, die von einem Computer angefordert und verarbeitet werden kann.
+Traditionelle Sicht: Ein |WS| ist lediglich eine Webseite, die von einem Computer angefordert und verarbeitet werden kann.
 
 .. container:: incremental 
 
@@ -66,7 +65,6 @@ Ein |WS| ist lediglich eine Webseite, die von einem Computer angefordert und ver
     .. image:: book-restful_web_services.png 
         :alt: RESTful Web Services
         :align: center
-        :width: 500
         :class: box-shadow
 
 
@@ -76,13 +74,13 @@ REST\ [#]_
 
 - REST = Representational State Transfer 
   
-  (im Wesentlichen eine Reihe von Entwurfsprinzipien zur Beurteilung von Architekturen; **ein Architekturstil**).
+  (Im Wesentlichen eine Reihe von Entwurfsprinzipien zur Beurteilung von Architekturen; **ein Architekturstil**.)
 
 - Ressourcen werden durch einheitliche Ressourcenbezeichner (URIs) identifiziert
 - Ressourcen werden durch ihre Repräsentationen manipuliert
 - Nachrichten sind selbstbeschreibend und zustandslos
 
-.. container:: minor incremental
+.. container:: peripheral incremental
   
   Von untergeordneter Bedeutung:
 
@@ -91,6 +89,7 @@ REST\ [#]_
  
 
 .. [#] REST wurde von Roy Fielding in seiner Dissertation beschrieben.
+
 
 
 Eine mögliche Architektur für RESTful Web Services
@@ -104,20 +103,20 @@ Eine mögliche Architektur für RESTful Web Services
     - Scoping-Informationen gehen in den URI ein. (d. h. welche Daten sind betroffen.)
 
 
-.. class:: incremental
-
-REST-Stil
-_________
+.. rubric:: REST-Stil
 
 - Client-server 
-- Zustandslos :eng:`stateless`
-- :not-important:`Cached`
+- Zustandslos (:eng:`stateless`)
+- :peripheral:`Cached`
 - Uniforme Schnittstelle (HTTP Methoden)
 - Mehrschichtiges System
 
 
+
 RESTful Web Services - Grundlagen
 ----------------------------------
+
+.. class:: incremental-list
 
 :HTTP: das zugrunde liegende zustandslose Transportprotokoll:
 
@@ -127,32 +126,24 @@ RESTful Web Services - Grundlagen
     :POST: Hinzufügen von neuen Informationen (ohne Angabe der Ziel URI)
     :PUT: idempotente Aktualisierung oder Neuerzeugung von Informationen an der gegebenen URI
     :DELETE: idempotentes Löschen von Informationen
-
-.. class:: incremental
-
 :URI: dient dem Auffinden von Ressourcen
-
-.. class:: incremental
-
 :„Repräsentation“: **JSON**, XML, SVG, WebP, XML, ...
 
 
 
-.. class:: smaller-slide-title
 
 Zwei Arten von Zustand: (1) Anwendungs-/Sitzungszustand 
------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------
 
-.. class:: minor small
+.. class:: peripheral
     
     (:eng:`Application State / Session State`)
-
 
 - „Zustand“ bedeutet Anwendungs-/Sitzungsstatus 
 
    Der Anwendungsstatus ist die Information, die notwendig ist, um den Kontext einer Interaktion zu verstehen 
 
-   :not-important:`Autorisierungs- und Authentifizierungsinformationen sind Beispiele für den Anwendungsstatus.`
+   :peripheral:`Autorisierungs- und Authentifizierungsinformationen sind Beispiele für den Anwendungsstatus.`
 
 - Wird als Teil des vom Client zum Server und zurück zum Client übertragenen Inhalts beibehalten. d. h. der Client verwaltet den Anwendungszustand.
 
@@ -160,18 +151,18 @@ Zwei Arten von Zustand: (1) Anwendungs-/Sitzungszustand
 
 
 
-.. class:: smaller-slide-title
 
 Zwei Arten von Zustand: (2) Ressourcenzustand 
-----------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------
 
-.. class:: minor small
+.. class:: peripheral 
 
     (:eng:`Resource State`)
 
 - Der Ressourcenzustand ist die Art von Zustand, auf die sich das *S* in *REST* bezieht.
 
 - Die Einschränkung „zustandslos“ bedeutet, dass alle Nachrichten den gesamten Anwendungsstatus enthalten müssen (d. h., dass wir effektiv keine Sitzungen haben).
+
 
 
 Mehrere Repräsentationen
@@ -182,7 +173,8 @@ Mehrere Repräsentationen
 
   (HTTP unterstützt die Aushandlung von Inhalten.)
 
-- :not-important:`Links können eingebettet werden und spiegeln die Struktur wieder, mit der sich ein Benutzer durch eine Anwendung bewegen kann.`
+- :peripheral:`Links können eingebettet werden und spiegeln die Struktur wieder, mit der sich ein Benutzer durch eine Anwendung bewegen kann.`
+
 
 
 Einfache/Erste Tests auf RESTfulness
@@ -195,11 +187,12 @@ Einfache/Erste Tests auf RESTfulness
   - neu initialisiert wird, wenn der Client die nächste Anfrage stellt.
 
 
+
 Ressourcenmodellierung
 ------------------------
 
 - Organisation der Anwendung in URI-adressierbare Ressourcen (diskrete Ressourcen sollten ihre eigenen stabilen URIs erhalten.)
-- nur die Standard-HTTP-Nachrichten - GET, PUT, POST, DELETE und :not-important:`PATCH`  - verwenden, um die vollen Fähigkeiten der Anwendung bereitzustellen
+- nur die Standard-HTTP-Nachrichten - GET, PUT, POST, DELETE und :peripheral:`PATCH`  - verwenden, um die vollen Fähigkeiten der Anwendung bereitzustellen
 
 .. supplemental::
 
@@ -218,13 +211,13 @@ Ressourcenmodellierung
     Eine **PATCH**-Anfrage wird als ein Satz von Anweisungen zur Änderung einer Ressource betrachtet. Im Gegensatz dazu ist eine PUT-Anfrage eine vollständige Darstellung einer Ressource.
     
 
+
 Beispielanwendung del.icio.us
 --------------------------------
 
-.. container:: small 
+.. supplemental::
 
-    :Quelle: https://www.peej.co.uk/articles/restfully-delicious.html
-    
+    :Quelle: https://www.peej.co.uk/articles/restfully-delicious.html    
 
 **del.icio.us ermöglicht es:**
 
@@ -238,12 +231,14 @@ Beispielanwendung del.icio.us
 - umbenennen eines Markers
 
 
+
 Beispielanwendung del.icio.us: Ressourcen
 -----------------------------------------
 
 :Lesezeichen: `http://del.icio.us/api/[username]/bookmarks`
 :Marker: `http://del.icio.us/api/[username]/tags`
 :[username]: ist der Benutzername des Nutzers, an dessen Lesezeichen wir interessiert sind
+
 
 
 Beispielanwendung del.icio.us: Repräsentation von Ressourcen
@@ -294,7 +289,7 @@ Beispielanwendung del.icio.us: Lesezeichen abfragen - Beispielantwort
 ``GET http://del.icio.us/api/peej/bookmarks/?start=1&end=2``
 
 .. code:: xml
-    :class: tiny
+    :number-lines:
 
     <?xml version="1.0"?>
     <bookmarks start="1" end="2"
@@ -331,7 +326,7 @@ Beispielanwendung del.icio.us: Informationen bzgl. eines Lesezeichens - Beispiel
 ``GET http://del.icio.us/api/peej/bookmarks/a211528fb5108cdd``
 
 .. code:: xml
-    :class: tiny
+    :number-lines:
 
     <?xml version="1.0"?>
     <bookmark url="http://www.example.org/one" time="2005-10-21T19:07:30Z">
@@ -345,8 +340,9 @@ Beispielanwendung del.icio.us: Informationen bzgl. eines Lesezeichens - Beispiel
     </bookmark>
 
 
+
 Beispielanwendung del.icio.us: Abfrage der Anzahl der Lesezeichen
-----------------------------------------------------------------------------------------
+----------------------------------------------------------------------------
 
 :URL:	`http://del.icio.us/api/[username]/bookmarks/count`
 :Methode:	GET	
@@ -370,7 +366,7 @@ Beispielanwendung del.icio.us: Abfrage wann die letzte Änderung vorgenommen wur
 
 
 Beispielanwendung del.icio.us: Hinzufügen eines Lesezeichens
-----------------------------------------------------------------------------------------
+----------------------------------------------------------------------------
 
 :URL:	`http://del.icio.us/api/[username]/bookmarks/``
 :Methode:	POST
@@ -389,7 +385,7 @@ Beispielanwendung del.icio.us: Hinzufügen eines Lesezeichens - Beispielübermit
 ``POST http://del.icio.us/api/peej/bookmarks/``
 
 .. code:: xml
-    :class: tiny 
+    :number-lines:
 
     <?xml version="1.0"?>
     <bookmark url="http://www.example.org/one"

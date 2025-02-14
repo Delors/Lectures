@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script>
+        const ws = new WebSocket("ws://localhost:8888/time");
+        ws.addEventListener("message", (event) => {
+            document.getElementById("time").innerText = event.data;
+        })
+    </script>
+</head>
+
+<body>
+    Current time: <span id="time"></span>
+</body>
+
+</html>
