@@ -117,7 +117,7 @@ Alphabete
   
 
 
-.. class:: wiederholung 
+.. class:: repetition 
 
 Kartesisches Produkt
 --------------------------------------------------------
