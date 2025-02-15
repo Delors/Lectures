@@ -1,9 +1,9 @@
 .. meta::
-    :version: genesis
+    :version: renaissance
     :author: Michael Eichberg
     :keywords: "HTTP", "Sockets"
     :description lang=de: HTTP und Socketprogrammierung
-    :description lang=en: HTTP amd Sockets
+    :description lang=en: HTTP and Sockets
     :id: lecture-ds-http-and-sockets-java
     :first-slide: last-viewed
     :master-password: WirklichSchwierig!
@@ -19,19 +19,8 @@
 .. role:: incremental
 .. role:: eng
 .. role:: ger
-.. role:: minor
+.. role:: peripheral
 .. role:: obsolete
-.. role:: dhbw-red
-.. role:: dhbw-gray
-.. role:: dhbw-light-gray
-.. role:: the-blue
-.. role:: the-green
-.. role:: the-orange
-.. role:: shiny-green
-.. role:: shiny-red
-.. role:: black
-.. role:: dark-red
-.. role:: huge
 
 .. role:: raw-html(raw)
    :format: html
@@ -41,11 +30,11 @@
 HTTP und Sockets (in Java)
 =============================
 
-.. container:: line-above padding-bottom-1em
+----
 
-  :Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
-  :Kontakt: michael.eichberg@dhbw.de
-  :Version: 1.0
+:Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
+:Kontakt: michael.eichberg@dhbw.de
+:Version: 1.0
 
 .. supplemental::
 
@@ -81,14 +70,12 @@ Die Vermittlungsschicht (Internet Layer)
 
 
 
-.. class:: smaller
-
 TCP und UDP - Wiederholung 
 --------------------------------------
 
-.. container:: two-columns
+.. grid::
 
-  .. container:: column
+  .. cell::
 
     .. rubric:: Transmission Control Protocol (TCP), RFC 793
 
@@ -102,7 +89,7 @@ TCP und UDP - Wiederholung
       - hoher Overhead ⇒ eher langsam
       - nur Unicasts
 
-  .. container:: column
+  .. cell::
 
     .. rubric:: User Datagram Protocol (UDP), RFC 768
     
@@ -113,8 +100,6 @@ TCP und UDP - Wiederholung
       - wenig Overhead (⇒ schnell)
     • Größe der Nutzdaten ist 65507 Byte, in der Praxis jedoch meist deutlich kleiner
     • Anwendungsfelder:
-
-      .. class:: smaller
 
       - Anwendungen mit vorwiegend kurzen Nachrichten (z. B. NTP, RPC, NIS)
       - Anwendungen mit hohem Durchsatz, die ab und zu Fehler tolerieren (z. B. Multimedia)
@@ -147,15 +132,13 @@ HTTP
 Konzeptioneller Ablauf
 --------------------------------------
 
+.. grid:: 
 
-.. container:: two-columns
-
-  .. container:: center-child-elements
+  .. cell:: 
 
     .. image:: images/http/http.svg
-      :width: 1100px
 
-  .. container:: small
+  .. cell::
 
     .. rubric:: HTTP-Kommandos 
     
@@ -174,54 +157,54 @@ Konzeptioneller Ablauf
 
 
 
-.. class:: small
-
 Protokolldefinition
 --------------------------------------
 
 Aufbau der Dokumentenbezeichner *Uniform Resource Locator (URL)*
 
-.. container:: text-align-center rounded-corners padding-1em dhbw-light-gray-background
+.. container:: text-align-center rounded-corners dhbw-light-gray-background
 
   ``scheme://host[:port][abs_path[?query][#anchor]]``
 
-:``scheme``: Protokoll (case-insensitive) (z. B. ``http``, ``https`` oder ``ftp``)
-:``host``: DNS-Name (oder IP-Adresse) des Servers (case-insensitive)
-:``port``: (optional) falls leer, 80 bei ``http`` und 443 bei ``https`` 
-:``abs_path``: (optional) Pfadausdruck relativ zum Server-Root (case-sensitive)
-:``?query``: (optional) direkte Parameterübergabe (case-sensitive) (``?from=…&to=…``)
-:``#anchor``: (optional) Sprungmarke innerhalb des Dokuments
+.. deck::
 
-.. container:: incremental small
+  .. card::
 
-  Uniform Resource Identifier (URI) sind eine Verallgemeinerung von URLs.
+    :``scheme``: Protokoll (case-insensitive) (z. B. ``http``, ``https`` oder ``ftp``)
+    :``host``: DNS-Name (oder IP-Adresse) des Servers (case-insensitive)
+    :``port``: (optional) falls leer, 80 bei ``http`` und 443 bei ``https`` 
+    :``abs_path``: (optional) Pfadausdruck relativ zum Server-Root (case-sensitive)
+    :``?query``: (optional) direkte Parameterübergabe (case-sensitive) (``?from=…&to=…``)
+    :``#anchor``: (optional) Sprungmarke innerhalb des Dokuments
 
-  - definiert in RFC 1630 (im Jahr 1994)
-  - entweder URL (Location) oder URN (Name) (z. B. ``urn:isbn:1234567890``)
-  - Beispiele von URIs, die keine URL sind, sind *XML Namespace Iidentifiers*
+  .. card::
 
-    .. code:: XML 
-      :class: tiny
+    Uniform Resource Identifier (URI) sind eine Verallgemeinerung von URLs.
 
-      <svg version="1.1" xmlns="http://www.w3.org/2000/svg">...</svg>
+    - definiert in RFC 1630 (im Jahr 1994)
+    - entweder URL (Location) oder URN (Name) (z. B. ``urn:isbn:1234567890``)
+    - Beispiele von URIs, die keine URL sind, sind *XML Namespace Iidentifiers*
+
+      .. code:: XML 
+
+        <svg version="1.1" xmlns="http://www.w3.org/2000/svg">...</svg>
 
 
-
-.. class:: scriptsize
 
 Das GET Kommando
 --------------------------------------
 
-.. stack::
+.. deck::
 
-  .. layer::
+  .. card::
 
     - Dient dem Anfordern von HTML-Daten vom Server (Request-Methode).
     - Minimale Anfrage:
     
       :Anfrage:
 
-        ::
+        .. code:: http
+          :number-lines:
 
           GET <Path> HTTP/1.1
           Host: <Hostname>
@@ -234,11 +217,12 @@ Das GET Kommando
 
     - Fehlermeldungen werden ggf. vom Server ebenfalls als HTML-Daten verpackt und als Antwort gesendet.
 
-  .. layer:: incremental
+  .. card::
 
     .. rubric:: Beispiel Anfrage des Clients
 
     .. code:: http
+      :number-lines:
 
       GET /web/web.php HTTP/1.1
       Host: archive.org
@@ -247,6 +231,7 @@ Das GET Kommando
     .. rubric:: Beispiel Antwort des Servers
 
     .. code:: http
+      :number-lines:
 
       HTTP/1.1 200 OK
       Server: nginx/1.25.1
@@ -286,7 +271,6 @@ TCP Sockets
 --------------------------------------
 
 .. image:: images/http/tcp_sockets.svg
-    :height: 950px
     :align: center
 
 
@@ -300,13 +284,12 @@ TCP Sockets
 
 
 
-.. class:: smaller-slide-title
-
 (Ein einfacher) Portscanner in Java
 --------------------------------------
 
 .. code:: java
-  :class: tiny copy-to-clipboard
+  :class: copy-to-clipboard
+  :number-lines:
 
   import java.net.*;
   import java.io.*;
@@ -329,12 +312,10 @@ TCP Sockets
 
 
 
-
-
 Austausch von Daten
 --------------------------------------
 
-.. class:: incremental
+.. class:: incremental-list
 
 - Nach erfolgtem Verbindungsaufbau können zwischen Client und Server mittels des Socket-InputStream und Socket-OutputStream Daten ausgetauscht werden.
 - Hierzu leitet man die rohen Daten am besten durch geeignete Filter-Streams, um eine möglichst hohe semantische Ebene zu erreichen.
@@ -343,27 +324,24 @@ Austausch von Daten
   - Die Netzwerkkommunikation kann dann ggf. bequem über wohlbekannte und komfortable Ein- und Ausgabe-Routinen (z. B. ``readLine`` oder ``println``) durchgeführt werden.
   - Filter-Streams werden auch für den Zugriff auf andere Geräte und Dateien verwendet.
 
-
 .. supplemental::
 
   Durch die Verwendung des *Decorater-Patterns* können die Filter-Streams beliebig geschachtelt werden und vielfältig verwendet werden. Dies macht die Anwendungsprogrammierung  einfacher und erlaubt zum Beispiel das einfache Umwandeln von Zeichenketten, Datenkomprimierung, Verschlüsselung, usw.
 
 
 
-.. class:: smaller-slide-title
-  
 (Schachtelung von Streams) Ein einfacher Echo-Dienst 
 ------------------------------------------------------
 
-.. stack:: tiny
+.. deck:: 
 
-  .. layer::
+  .. card::
         
     .. code:: java
       :class: copy-to-clipboard
+      :number-lines:
 
-      import java.net.*;
-      import java.io.*;
+      import java.net.*; import java.io.*;
 
       public class EchoClient {
         public static void main(String[] args) throws IOException {
@@ -378,28 +356,26 @@ Austausch von Daten
               networkOut.println(theLine);
               networkOut.flush();
               System.out.println(networkIn.readLine());
-            }
-      } } }
+      } } } }
 
-  .. layer:: incremental
+  .. card::
 
     .. code:: java
       :class: copy-to-clipboard
+      :number-lines:
 
-      import java.net.*;
-      import java.io.*;
+      import java.net.*; import java.io.*;
 
       public class EchoServer {
         public static void main(String[] args) {
-          BufferedReader in = null ;
+          BufferedReader in = null;
           try {
             ServerSocket server = new ServerSocket(7 /*DEFAULT PORT*/);
             while (true) {
               try (Socket con = server.accept()) {
                 in = new BufferedReader(new InputStreamReader(con.getInputStream()));
                 PrintWriter out = new PrintWriter(con.getOutputStream());
-                out.println(in.readLine()) ;
-                out.flush() ;
+                out.println(in.readLine()); out.flush() ;
               } catch (IOException e) { System.err.println(e); }
             } 
           } catch (IOException e) { System.err.println(e); }
@@ -410,9 +386,9 @@ Austausch von Daten
 UDP Sockets
 --------------------------------------
 
-.. container:: two-columns
+.. grid:: 
 
-  .. container:: column no-separator
+  .. cell:: 
 
     .. rubric:: Clientseitig
 
@@ -422,7 +398,7 @@ UDP Sockets
     4. ggf. Antwort empfangen und verarbeiten
 
 
-  .. container:: column 
+  .. cell::
 
     .. rubric:: Serverseitig
 
@@ -434,48 +410,43 @@ UDP Sockets
     6. ggf. Antwort erstellen und absenden
 
 
-
-.. class:: smaller-slide-title
   
 UDP basierter Echo Server
 ------------------------------------------------------
 
-.. container:: tiny
+.. code:: java
+  :class: copy-to-clipboard
+  :number-lines:
 
-  .. code:: java
-    :class: copy-to-clipboard
+  import java.net.*; import java.io.*;
 
-    import java.net.*;
-    import java.io.*;
-
-    public class UDPEchoServer {
-      public final static int DEFAULT_PORT = 7; // privileged port
-      public static void main(String[] args) {
-        try (DatagramSocket server = new DatagramSocket(DEFAULT_PORT)) {
-          while(true) {
-            try {
-              byte[] buffer = new byte[65507]; // room for incoming message
-              DatagramPacket dp = new DatagramPacket(buffer, buffer.length);
-              server.receive(dp) ;
-              String data = new String(dp.getData(),0,dp.getLength());
-              DatagramPacket dp2 = 
-                new DatagramPacket(data.getBytes(),
-                  data.getBytes().length, dp.getAddress(), dp.getPort());
-              server.send(dp2) ;
-            } catch (IOException e) {System.err.println(e);}
-        } }
-    } }
+  public class UDPEchoServer {
+    public final static int DEFAULT_PORT = 7; // privileged port
+    public static void main(String[] args) {
+      try (DatagramSocket server = new DatagramSocket(DEFAULT_PORT)) {
+        while(true) {
+          try {
+            byte[] buffer = new byte[65507]; // room for incoming message
+            DatagramPacket dp = new DatagramPacket(buffer, buffer.length);
+            server.receive(dp) ;
+            String data = new String(dp.getData(),0,dp.getLength());
+            DatagramPacket dp2 = 
+              new DatagramPacket(data.getBytes(),
+                data.getBytes().length, dp.getAddress(), dp.getPort());
+            server.send(dp2) ;
+          } catch (IOException e) {System.err.println(e);}
+  } } } }
 
 
 
-.. class:: integrated-exercise transition-fade
+.. class:: exercises transition-fade
 
 Übung 
 ------------------------------------------------------
 
 .. exercise:: Ein einfacher HTTP-Client
 
-  .. class:: list-with-explanations smaller
+  .. class:: list-with-explanations
 
   (a) Schreiben Sie einen HTTP-Client, der den Server ``www.michael-eichberg.de`` kontaktiert, die Datei ``/index.html`` anfordert und die Antwort des Servers auf dem Bildschirm ausgibt.
 
@@ -498,7 +469,8 @@ UDP basierter Echo Server
     Zu (a):
 
     .. code:: java
-      :class: copy-to-clipboard smaller
+      :class: copy-to-clipboard
+      :number-lines:
     
       import java.net.*;
       import java.io.*;
@@ -529,7 +501,8 @@ UDP basierter Echo Server
     Zu (b) und (c):
 
     .. code:: java
-      :class: copy-to-clipboard smaller
+      :class: copy-to-clipboard
+      :number-lines:
 
       import java.net.*;
       import java.io.*;
@@ -601,7 +574,7 @@ UDP basierter Echo Server
 
 
 
-.. class:: integrated-exercise
+.. class:: exercises
 
 Übung 
 ------------------------------------------------------
@@ -614,7 +587,8 @@ UDP basierter Echo Server
     :pwd: Nun mit UDP.
     
     .. code:: java
-      :class: copy-to-clipboard smaller
+      :class: copy-to-clipboard
+      :number-lines:
 
       import java.net.*;
 

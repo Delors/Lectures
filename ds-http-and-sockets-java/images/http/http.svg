@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xl="http://www.w3.org/1999/xlink" viewBox="425 268 428 174" width="428" height="174">
+  <style>
+    @import url('/LectureDoc2/ext/fonts/ld-fonts.css'); 
+  </style>
+  <defs>
+    <linearGradient x1="0" x2="1" id="Gradient" gradientUnits="userSpaceOnUse">
+      <stop offset=".1060121" stop-color="#029ed7"/>
+      <stop offset=".8529494" stop-color="#99d0eb" stop-opacity=".5"/>
+      <stop offset="1" stop-color="white" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="Obj_Gradient" xl:href="#Gradient" gradientTransform="translate(714.8154 355.58) rotate(-32.658855) scale(60.26726)"/>
+    <linearGradient id="Obj_Gradient_2" xl:href="#Gradient" gradientTransform="translate(747.4654 355.58) rotate(-32.658855) scale(60.26726)"/>
+    <linearGradient x1="0" x2="1" id="Gradient_2" gradientUnits="userSpaceOnUse">
+      <stop offset=".16833588" stop-color="#029ed5"/>
+      <stop offset=".9336584" stop-color="#99d0eb" stop-opacity=".5"/>
+      <stop offset="1" stop-color="white" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="Obj_Gradient_3" xl:href="#Gradient_2" gradientTransform="translate(777.8867 331.5991) rotate(-133.44236) scale(62.175836)"/>
+    <linearGradient x1="0" x2="1" id="Gradient_3" gradientUnits="userSpaceOnUse">
+      <stop offset=".16833588" stop-color="#cde95f"/>
+      <stop offset=".9336584" stop-color="#e7f4b5" stop-opacity=".5"/>
+      <stop offset="1" stop-color="white" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="Obj_Gradient_4" xl:href="#Gradient_3" gradientTransform="translate(551.3312 399.5562) rotate(-133.44236) scale(124.57723)"/>
+    <linearGradient id="Obj_Gradient_5" xl:href="#Gradient_3" gradientTransform="translate(552.09945 450.3674) rotate(-133.44236) scale(126.81179)"/>
+    <linearGradient x1="0" x2="1" id="Gradient_4" gradientUnits="userSpaceOnUse">
+      <stop offset=".16833588" stop-color="#e9e9e9"/>
+      <stop offset=".9336584" stop-color="#f5f5f5" stop-opacity=".5"/>
+      <stop offset="1" stop-color="white" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="Obj_Gradient_6" xl:href="#Gradient_4" gradientTransform="translate(547.3272 393.846) rotate(-133.44236) scale(110.31362)"/>
+    <linearGradient x1="0" x2="1" id="Gradient_5" gradientUnits="userSpaceOnUse">
+      <stop offset=".16833588" stop-color="#e7e9dd"/>
+      <stop offset=".9336584" stop-color="#f3f5ee" stop-opacity=".5"/>
+      <stop offset="1" stop-color="white" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="Obj_Gradient_7" xl:href="#Gradient_5" gradientTransform="translate(542.46666 391.8371) rotate(-133.44236) scale(96.17649)"/>
+    <linearGradient x1="0" x2="1" id="Gradient_6" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="white"/>
+      <stop offset=".08420465" stop-color="#a4a4a4"/>
+      <stop offset="1" stop-color="#333"/>
+    </linearGradient>
+    <linearGradient id="Obj_Gradient_8" xl:href="#Gradient_6" gradientTransform="translate(469.98197 324.30193) rotate(90) scale(3.3872932)"/>
+    <linearGradient id="Obj_Gradient_9" xl:href="#Gradient_6" gradientTransform="translate(475.35756 324.30193) rotate(90) scale(3.3872932)"/>
+    <linearGradient id="Obj_Gradient_10" xl:href="#Gradient_6" gradientTransform="translate(480.73315 324.30193) rotate(90) scale(3.3872932)"/>
+    <linearGradient id="Obj_Gradient_11" xl:href="#Gradient_2" gradientTransform="translate(852.9115 392.15474) rotate(-133.44236) scale(55.55022)"/>
+    <linearGradient id="Obj_Gradient_12" xl:href="#Gradient_2" gradientTransform="translate(821.8222 345.08955) rotate(46.55764) scale(34.874964)"/>
+    <linearGradient id="Obj_Gradient_13" xl:href="#Gradient_2" gradientTransform="translate(853.4582 392.8115) rotate(-133.44236) scale(55.55022)"/>
+    <linearGradient id="Obj_Gradient_14" xl:href="#Gradient_2" gradientTransform="translate(822.3689 345.08955) rotate(46.55764) scale(34.874964)"/>
+    <linearGradient id="Obj_Gradient_15" xl:href="#Gradient" gradientTransform="translate(714.8154 405.52117) rotate(-32.658855) scale(60.26726)"/>
+    <linearGradient id="Obj_Gradient_16" xl:href="#Gradient" gradientTransform="translate(747.4654 405.52117) rotate(-32.658855) scale(60.26726)"/>
+    <linearGradient id="Obj_Gradient_17" xl:href="#Gradient_2" gradientTransform="translate(777.8867 381.5403) rotate(-133.44236) scale(62.175836)"/>
+    <linearGradient id="Obj_Gradient_18" xl:href="#Gradient_2" gradientTransform="translate(852.9115 364.2849) rotate(-133.44236) scale(55.55022)"/>
+    <linearGradient id="Obj_Gradient_19" xl:href="#Gradient_2" gradientTransform="translate(821.8222 317.21973) rotate(46.55764) scale(34.874964)"/>
+    <linearGradient id="Obj_Gradient_20" xl:href="#Gradient_2" gradientTransform="translate(853.4582 364.9417) rotate(-133.44236) scale(55.55022)"/>
+    <linearGradient id="Obj_Gradient_21" xl:href="#Gradient_2" gradientTransform="translate(822.3689 317.21973) rotate(46.55764) scale(34.874964)"/>
+    <filter id="Shadow" filterUnits="userSpaceOnUse" x="382.2" y="250.6">
+      <feGaussianBlur in="SourceAlpha" result="blur" stdDeviation="1.308"/>
+      <feOffset in="blur" result="offset" dx="0" dy="2"/>
+      <feFlood flood-color="black" flood-opacity=".5" result="flood"/>
+      <feComposite in="flood" in2="offset" operator="in" result="color"/>
+      <feMerge>
+        <feMergeNode in="color"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <marker orient="auto" overflow="visible" markerUnits="strokeWidth" id="FilledArrow_Marker" stroke-linejoin="miter" stroke-miterlimit="10" viewBox="-1 -3 7 6" markerWidth="7" markerHeight="6" color="#666">
+      <g>
+        <path d="M 4.8 0 L 0 -1.8 L 0 1.8 Z" fill="currentColor" stroke="currentColor" stroke-width="1"/>
+      </g>
+    </marker>
+    <marker orient="auto" overflow="visible" markerUnits="strokeWidth" id="FilledArrow_Marker_2" stroke-linejoin="miter" stroke-miterlimit="10" viewBox="-6 -3 7 6" markerWidth="7" markerHeight="6" color="#666">
+      <g>
+        <path d="M -4.8 0 L 0 1.8 L 0 -1.8 Z" fill="currentColor" stroke="currentColor" stroke-width="1"/>
+      </g>
+    </marker>
+  </defs>
+  <metadata> Produced by OmniGraffle 8.0\n2025-02-14 15:12:36 +0000</metadata>
+  <g id="http" fill-opacity="1" stroke-dasharray="none" stroke="none" stroke-opacity="1" fill="none">
+    <title>http</title>
+    <g id="http_Layer_1">
+      <title>Layer 1</title>
+      <g id="Group_21">
+        <g id="Graphic_16">
+          <path d="M 723.8598 357.5418 L 723.8598 308.94714 L 756.50985 321.0958 L 756.50985 369.69045 Z" fill="url(#Obj_Gradient)"/>
+          <path d="M 723.8598 357.5418 L 723.8598 308.94714 L 756.50985 321.0958 L 756.50985 369.69045 Z" stroke="white" stroke-opacity=".48790474" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+        </g>
+        <g id="Graphic_15">
+          <path d="M 789.1599 357.5418 L 789.1599 308.94714 L 756.50985 321.0958 L 756.50985 369.69045 Z" fill="url(#Obj_Gradient_2)"/>
+          <path d="M 789.1599 357.5418 L 789.1599 308.94714 L 756.50985 321.0958 L 756.50985 369.69045 Z" stroke="white" stroke-opacity=".48790474" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+        </g>
+        <g id="Graphic_14">
+          <path d="M 756.50985 297.13164 L 789.1599 309.0272 L 756.50985 320.92277 L 723.8598 309.0272 Z" fill="url(#Obj_Gradient_3)"/>
+          <path d="M 756.50985 297.13164 L 789.1599 309.0272 L 756.50985 320.92277 L 723.8598 309.0272 Z" stroke="white" stroke-opacity=".48790474" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+        </g>
+      </g>
+      <g id="Group_24">
+        <g id="Graphic_19">
+          <rect x="460.5" y="314" width="96" height="80.66104" fill="url(#Obj_Gradient_4)"/>
+          <rect x="460.5" y="314" width="96" height="80.66104" stroke="white" stroke-opacity=".4807276" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+        </g>
+        <g id="Graphic_20">
+          <path d="M 426.5 414 L 590.5 414 L 557.7 394.66104 L 459.3 394.66104 Z" fill="url(#Obj_Gradient_5)"/>
+          <path d="M 426.5 414 L 590.5 414 L 557.7 394.66104 L 459.3 394.66104 Z" stroke="white" stroke-opacity=".4807276" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+        </g>
+      </g>
+      <g id="Group_103">
+        <g id="Graphic_34">
+          <rect x="465.3" y="319.597" width="88.2" height="68.403015" fill="url(#Obj_Gradient_6)"/>
+          <rect x="465.3" y="319.597" width="88.2" height="68.403015" stroke="white" stroke-opacity=".4807276" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+        </g>
+        <g id="Graphic_35">
+          <rect x="467.0022" y="330.84366" width="84.79558" height="52.15634" fill="url(#Obj_Gradient_7)"/>
+          <rect x="467.0022" y="330.84366" width="84.79558" height="52.15634" stroke="white" stroke-opacity=".4807276" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        </g>
+        <g id="Graphic_37">
+          <ellipse cx="469.98197" cy="325.9956" rx="1.73406361184691" ry="1.69364932271542" fill="url(#Obj_Gradient_8)"/>
+          <ellipse cx="469.98197" cy="325.9956" rx="1.73406361184691" ry="1.69364932271542" stroke="#a5a5a5" stroke-linecap="round" stroke-linejoin="round" stroke-width=".25"/>
+        </g>
+        <g id="Graphic_39">
+          <ellipse cx="475.35756" cy="325.9956" rx="1.73406361184694" ry="1.69364932271542" fill="url(#Obj_Gradient_9)"/>
+          <ellipse cx="475.35756" cy="325.9956" rx="1.73406361184694" ry="1.69364932271542" stroke="#a5a5a5" stroke-linecap="round" stroke-linejoin="round" stroke-width=".25"/>
+        </g>
+        <g id="Graphic_40">
+          <ellipse cx="480.73315" cy="325.9956" rx="1.73406361184691" ry="1.69364932271542" fill="url(#Obj_Gradient_10)"/>
+          <ellipse cx="480.73315" cy="325.9956" rx="1.73406361184691" ry="1.69364932271542" stroke="#a5a5a5" stroke-linecap="round" stroke-linejoin="round" stroke-width=".25"/>
+        </g>
+        <g id="Graphic_41">
+          <text transform="translate(490.7184 318.9956)" fill="#666">
+            <tspan font-family="Noto Sans Display" font-size="10" font-weight="400" fill="#666" x="8739676e-19" y="11" xml:space="preserve">www.xyz.com</tspan>
+          </text>
+        </g>
+      </g>
+      <g id="Group_112">
+        <g id="Graphic_116">
+          <path d="M 850.9586 357.7614 C 850.9586 357.754 850.9586 357.74663 850.9586 357.73924 L 850.9586 357.62394 L 850.9563 357.62394 C 850.887 355.67565 849.2138 353.7369 845.9366 352.25026 C 839.2408 349.21265 828.3846 349.21265 821.6887 352.25026 C 818.4116 353.7369 816.7384 355.67565 816.669 357.62394 L 816.6668 357.62394 L 816.6668 357.7425 C 816.6668 357.74772 816.6668 357.75292 816.6668 357.75813 L 816.6668 386.2182 C 816.6668 386.2234 816.6668 386.2286 816.6668 386.2338 L 816.6668 386.44516 L 816.6735 386.44516 C 816.7919 388.3621 818.4636 390.263 821.6887 391.72606 C 828.3846 394.7637 839.2408 394.7637 845.9366 391.72606 C 849.1617 390.263 850.8335 388.3621 850.9518 386.44516 L 850.9586 386.44516 L 850.9586 386.2371 C 850.9586 386.2297 850.9586 386.2223 850.9586 386.21492 Z" fill="url(#Obj_Gradient_11)"/>
+          <path d="M 850.9586 357.7614 C 850.9586 357.754 850.9586 357.74663 850.9586 357.73924 L 850.9586 357.62394 L 850.9563 357.62394 C 850.887 355.67565 849.2138 353.7369 845.9366 352.25026 C 839.2408 349.21265 828.3846 349.21265 821.6887 352.25026 C 818.4116 353.7369 816.7384 355.67565 816.669 357.62394 L 816.6668 357.62394 L 816.6668 357.7425 C 816.6668 357.74772 816.6668 357.75292 816.6668 357.75813 L 816.6668 386.2182 C 816.6668 386.2234 816.6668 386.2286 816.6668 386.2338 L 816.6668 386.44516 L 816.6735 386.44516 C 816.7919 388.3621 818.4636 390.263 821.6887 391.72606 C 828.3846 394.7637 839.2408 394.7637 845.9366 391.72606 C 849.1617 390.263 850.8335 388.3621 850.9518 386.44516 L 850.9586 386.44516 L 850.9586 386.2371 C 850.9586 386.2297 850.9586 386.2223 850.9586 386.21492 Z" stroke="white" stroke-opacity=".48790474" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+        </g>
+        <g id="Graphic_115">
+          <ellipse cx="833.8127" cy="357.7503" rx="17.1459294239722" ry="7.77828017097055" fill="url(#Obj_Gradient_12)"/>
+          <ellipse cx="833.8127" cy="357.7503" rx="17.1459294239722" ry="7.77828017097055" stroke="white" stroke-opacity=".48790474" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+        </g>
+        <g id="Graphic_114">
+          <path d="M 851.5052 358.41817 C 851.5053 358.4108 851.5053 358.4034 851.5052 358.396 L 851.5052 358.2807 L 851.503 358.2807 C 851.4336 356.3324 849.7604 354.3937 846.4833 352.90703 C 839.7874 349.8694 828.9313 349.8694 822.2354 352.90703 C 818.9583 354.3937 817.285 356.3324 817.2157 358.2807 L 817.2134 358.2807 L 817.2134 358.3993 C 817.2134 358.4045 817.2134 358.4097 817.2134 358.4149 L 817.2134 386.87497 C 817.2134 386.88017 817.2134 386.88537 817.2134 386.89057 L 817.2134 387.10193 L 817.2202 387.10193 C 817.3386 389.0189 819.0103 390.91977 822.2354 392.38283 C 828.9313 395.42044 839.7874 395.42044 846.4833 392.38283 C 849.7084 390.91977 851.3801 389.0189 851.4985 387.10193 L 851.5052 387.10193 L 851.5052 386.89385 C 851.5053 386.88646 851.5053 386.87908 851.5052 386.8717 Z" fill="url(#Obj_Gradient_13)"/>
+          <path d="M 851.5052 358.41817 C 851.5053 358.4108 851.5053 358.4034 851.5052 358.396 L 851.5052 358.2807 L 851.503 358.2807 C 851.4336 356.3324 849.7604 354.3937 846.4833 352.90703 C 839.7874 349.8694 828.9313 349.8694 822.2354 352.90703 C 818.9583 354.3937 817.285 356.3324 817.2157 358.2807 L 817.2134 358.2807 L 817.2134 358.3993 C 817.2134 358.4045 817.2134 358.4097 817.2134 358.4149 L 817.2134 386.87497 C 817.2134 386.88017 817.2134 386.88537 817.2134 386.89057 L 817.2134 387.10193 L 817.2202 387.10193 C 817.3386 389.0189 819.0103 390.91977 822.2354 392.38283 C 828.9313 395.42044 839.7874 395.42044 846.4833 392.38283 C 849.7084 390.91977 851.3801 389.0189 851.4985 387.10193 L 851.5052 387.10193 L 851.5052 386.89385 C 851.5053 386.88646 851.5053 386.87908 851.5052 386.8717 Z" stroke="white" stroke-opacity=".48790474" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+        </g>
+        <g id="Graphic_113">
+          <ellipse cx="834.3593" cy="357.7503" rx="17.1459294239722" ry="7.77828017097055" fill="url(#Obj_Gradient_14)"/>
+          <ellipse cx="834.3593" cy="357.7503" rx="17.1459294239722" ry="7.77828017097055" stroke="white" stroke-opacity=".48790474" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+        </g>
+      </g>
+      <g id="Group_132">
+        <g id="Graphic_135">
+          <path d="M 723.8598 407.48297 L 723.8598 358.88833 L 756.50985 371.037 L 756.50985 419.63164 Z" fill="url(#Obj_Gradient_15)"/>
+          <path d="M 723.8598 407.48297 L 723.8598 358.88833 L 756.50985 371.037 L 756.50985 419.63164 Z" stroke="white" stroke-opacity=".48790474" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+        </g>
+        <g id="Graphic_134">
+          <path d="M 789.1599 407.48297 L 789.1599 358.88833 L 756.50985 371.037 L 756.50985 419.63164 Z" fill="url(#Obj_Gradient_16)"/>
+          <path d="M 789.1599 407.48297 L 789.1599 358.88833 L 756.50985 371.037 L 756.50985 419.63164 Z" stroke="white" stroke-opacity=".48790474" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+        </g>
+        <g id="Graphic_133">
+          <path d="M 756.50985 347.07283 L 789.1599 358.9684 L 756.50985 370.86396 L 723.8598 358.9684 Z" fill="url(#Obj_Gradient_17)"/>
+          <path d="M 756.50985 347.07283 L 789.1599 358.9684 L 756.50985 370.86396 L 723.8598 358.9684 Z" stroke="white" stroke-opacity=".48790474" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+        </g>
+      </g>
+      <g id="Group_136">
+        <g id="Graphic_140">
+          <path d="M 850.9586 329.8916 C 850.9586 329.8842 850.9586 329.8768 850.9586 329.86942 L 850.9586 329.75412 L 850.9563 329.75412 C 850.887 327.80583 849.2138 325.8671 845.9366 324.38044 C 839.2408 321.34283 828.3846 321.34283 821.6887 324.38044 C 818.4116 325.8671 816.7384 327.80583 816.669 329.75412 L 816.6668 329.75412 L 816.6668 329.8727 C 816.6668 329.8779 816.6668 329.8831 816.6668 329.8883 L 816.6668 358.3484 C 816.6668 358.3536 816.6668 358.3588 816.6668 358.364 L 816.6668 358.57534 L 816.6735 358.57534 C 816.7919 360.4923 818.4636 362.3932 821.6887 363.85624 C 828.3846 366.89386 839.2408 366.89386 845.9366 363.85624 C 849.1617 362.3932 850.8335 360.4923 850.9518 358.57534 L 850.9586 358.57534 L 850.9586 358.36726 C 850.9586 358.35988 850.9586 358.3525 850.9586 358.3451 Z" fill="url(#Obj_Gradient_18)"/>
+          <path d="M 850.9586 329.8916 C 850.9586 329.8842 850.9586 329.8768 850.9586 329.86942 L 850.9586 329.75412 L 850.9563 329.75412 C 850.887 327.80583 849.2138 325.8671 845.9366 324.38044 C 839.2408 321.34283 828.3846 321.34283 821.6887 324.38044 C 818.4116 325.8671 816.7384 327.80583 816.669 329.75412 L 816.6668 329.75412 L 816.6668 329.8727 C 816.6668 329.8779 816.6668 329.8831 816.6668 329.8883 L 816.6668 358.3484 C 816.6668 358.3536 816.6668 358.3588 816.6668 358.364 L 816.6668 358.57534 L 816.6735 358.57534 C 816.7919 360.4923 818.4636 362.3932 821.6887 363.85624 C 828.3846 366.89386 839.2408 366.89386 845.9366 363.85624 C 849.1617 362.3932 850.8335 360.4923 850.9518 358.57534 L 850.9586 358.57534 L 850.9586 358.36726 C 850.9586 358.35988 850.9586 358.3525 850.9586 358.3451 Z" stroke="white" stroke-opacity=".48790474" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+        </g>
+        <g id="Graphic_139">
+          <ellipse cx="833.8127" cy="329.8805" rx="17.1459294239722" ry="7.77828017097055" fill="url(#Obj_Gradient_19)"/>
+          <ellipse cx="833.8127" cy="329.8805" rx="17.1459294239722" ry="7.77828017097055" stroke="white" stroke-opacity=".48790474" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+        </g>
+        <g id="Graphic_138">
+          <path d="M 851.5052 330.54835 C 851.5053 330.54096 851.5053 330.53357 851.5052 330.5262 L 851.5052 330.4109 L 851.503 330.4109 C 851.4336 328.4626 849.7604 326.52387 846.4833 325.0372 C 839.7874 321.9996 828.9313 321.9996 822.2354 325.0372 C 818.9583 326.52387 817.285 328.4626 817.2157 330.4109 L 817.2134 330.4109 L 817.2134 330.52947 C 817.2134 330.53467 817.2134 330.53987 817.2134 330.54507 L 817.2134 359.00515 C 817.2134 359.01035 817.2134 359.01555 817.2134 359.02075 L 817.2134 359.2321 L 817.2202 359.2321 C 817.3386 361.14906 819.0103 363.04995 822.2354 364.513 C 828.9313 367.55063 839.7874 367.55063 846.4833 364.513 C 849.7084 363.04995 851.3801 361.14906 851.4985 359.2321 L 851.5052 359.2321 L 851.5052 359.02403 C 851.5053 359.01664 851.5053 359.00926 851.5052 359.00187 Z" fill="url(#Obj_Gradient_20)"/>
+          <path d="M 851.5052 330.54835 C 851.5053 330.54096 851.5053 330.53357 851.5052 330.5262 L 851.5052 330.4109 L 851.503 330.4109 C 851.4336 328.4626 849.7604 326.52387 846.4833 325.0372 C 839.7874 321.9996 828.9313 321.9996 822.2354 325.0372 C 818.9583 326.52387 817.285 328.4626 817.2157 330.4109 L 817.2134 330.4109 L 817.2134 330.52947 C 817.2134 330.53467 817.2134 330.53987 817.2134 330.54507 L 817.2134 359.00515 C 817.2134 359.01035 817.2134 359.01555 817.2134 359.02075 L 817.2134 359.2321 L 817.2202 359.2321 C 817.3386 361.14906 819.0103 363.04995 822.2354 364.513 C 828.9313 367.55063 839.7874 367.55063 846.4833 364.513 C 849.7084 363.04995 851.3801 361.14906 851.4985 359.2321 L 851.5052 359.2321 L 851.5052 359.02403 C 851.5053 359.01664 851.5053 359.00926 851.5052 359.00187 Z" stroke="white" stroke-opacity=".48790474" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+        </g>
+        <g id="Graphic_137">
+          <ellipse cx="834.3593" cy="329.8805" rx="17.1459294239722" ry="7.77828017097055" fill="url(#Obj_Gradient_21)"/>
+          <ellipse cx="834.3593" cy="329.8805" rx="17.1459294239722" ry="7.77828017097055" stroke="white" stroke-opacity=".48790474" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+        </g>
+      </g>
+      <g id="Graphic_146">
+        <path d="M 613.4526 402.7234 C 610.2623 423.6268 637.0763 439.99336 651.3983 424.25056 C 654.16025 442.5904 685.6276 437.8362 687.0363 424.25056 C 704.6384 432.4015 726.3569 383.60725 704.9091 374.55092 C 722.783 355.8714 696.1352 318.62477 675.28304 337.3043 C 675.3453 333.12158 672.662 329.90466 668.7384 327.853 C 667.1266 310.73735 648.6712 294.25827 633.34625 307.9865 C 633.56366 293.38185 600.30826 290.55204 597.655 307.9865 C 569.0572 299.04263 561.9083 351.45963 579.83546 357.68614 C 554.4888 384.40415 591.6431 414.51885 609.4615 394.93276 C 609.96294 398.2624 611.41054 400.8308 613.45264 402.7234 Z" fill="white"/>
+        <path d="M 613.4526 402.7234 C 610.2623 423.6268 637.0763 439.99336 651.3983 424.25056 C 654.16025 442.5904 685.6276 437.8362 687.0363 424.25056 C 704.6384 432.4015 726.3569 383.60725 704.9091 374.55092 C 722.783 355.8714 696.1352 318.62477 675.28304 337.3043 C 675.3453 333.12158 672.662 329.90466 668.7384 327.853 C 667.1266 310.73735 648.6712 294.25827 633.34625 307.9865 C 633.56366 293.38185 600.30826 290.55204 597.655 307.9865 C 569.0572 299.04263 561.9083 351.45963 579.83546 357.68614 C 554.4888 384.40415 591.6431 414.51885 609.4615 394.93276 C 609.96294 398.2624 611.41054 400.8308 613.45264 402.7234 Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_149">
+        <text transform="translate(736.59485 273.13164)" fill="black">
+          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="8739676e-19" y="15" xml:space="preserve">Server</tspan>
+        </text>
+      </g>
+      <g id="Graphic_150">
+        <text transform="translate(490.678 412.2883)" fill="black">
+          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="11723955e-20" y="15" xml:space="preserve">Client</tspan>
+        </text>
+      </g>
+      <g id="Graphic_151">
+        <text transform="translate(579.2633 313)" fill="black">
+          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="0" y="15" xml:space="preserve">Request: GET</tspan>
+        </text>
+      </g>
+      <g id="Graphic_152">
+        <text transform="translate(620.62084 387)" fill="black">
+          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="0" y="15" xml:space="preserve">Response: File</tspan>
+        </text>
+      </g>
+      <g id="Line_153" filter="url(#Shadow)">
+        <line x1="555.85984" y1="336" x2="710.9599" y2="336.4971" marker-end="url(#FilledArrow_Marker)" stroke="#666" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+      <g id="Line_154" filter="url(#Shadow)">
+        <line x1="721.5" y1="382" x2="565.4" y2="382" marker-end="url(#FilledArrow_Marker)" stroke="#666" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+      <g id="Graphic_155">
+        <text transform="translate(560.85984 273.13164)" fill="black">
+          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="4067857e-19" y="15" xml:space="preserve">WAN</tspan>
+        </text>
+      </g>
+      <g id="Line_156" filter="url(#Shadow)">
+        <line x1="794.7283" y1="359.35418" x2="803.7668" y2="359.35418" marker-end="url(#FilledArrow_Marker)" marker-start="url(#FilledArrow_Marker_2)" stroke="#666" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+    </g>
+  </g>
+</svg>

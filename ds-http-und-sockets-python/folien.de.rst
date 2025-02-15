@@ -1,5 +1,5 @@
 .. meta::
-    :version: genesis
+    :version: renaissance
     :author: Michael Eichberg
     :keywords: "HTTP", "Sockets"
     :description lang=de: HTTP und Socketprogrammierung
@@ -21,30 +21,23 @@
 .. role:: ger
 .. role:: minor
 .. role:: obsolete
-.. role:: dhbw-red
-.. role:: dhbw-gray
-.. role:: dhbw-light-gray
-.. role:: the-blue
-.. role:: the-green
-.. role:: the-orange
-.. role:: shiny-green
-.. role:: shiny-red
-.. role:: black
-.. role:: dark-red
 
 .. role:: raw-html(raw)
    :format: html
+
+.. role:: python(code)
+  :language: python
 
 
 
 HTTP und Sockets in Python
 ==========================
 
-.. container:: line-above padding-bottom-1em
+----
 
-  :Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
-  :Kontakt: michael.eichberg@dhbw.de
-  :Version: 1.0
+:Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
+:Kontakt: michael.eichberg@dhbw.de
+:Version: 1.0
 
 .. supplemental::
 
@@ -81,14 +74,13 @@ Die Vermittlungsschicht (Internet Layer)
 
 
 
-.. class:: smaller
-
 TCP und UDP - Wiederholung 
 --------------------------------------
 
-.. container:: two-columns
+.. grid::
 
-  .. container:: column
+  .. cell:: 
+    :class: width-50
 
     .. rubric:: Transmission Control Protocol (TCP), RFC 793
 
@@ -102,23 +94,27 @@ TCP und UDP - Wiederholung
       - hoher Overhead ⇒ eher langsam
       - nur Unicasts
 
-  .. container:: column
+  .. cell:: 
+    :class: width-50
 
     .. rubric:: User Datagram Protocol (UDP), RFC 768
     
-    • verbindungslose Kommunikation via Datagramme
+    • verbindungslose Kommunikation
 
-      - unzuverlässig (⇒ keine Fehlerkontrolle)
-      - ungeordnet (⇒ beliebige Reihenfolge)
-      - wenig Overhead (⇒ schnell)
-    • Größe der Nutzdaten ist 65507 Byte, in der Praxis jedoch meist deutlich kleiner
+      - unzuverlässig ⇒ keine Fehlerkontrolle
+      - ungeordnet ⇒ beliebige Reihenfolge
+      - wenig Overhead ⇒ schnell
+    • Größe der Nutzdaten ist 65507 Byte
     • Anwendungsfelder:
 
-      .. class:: smaller
-
-      - Anwendungen mit vorwiegend kurzen Nachrichten (z. B. NTP, RPC, NIS)
-      - Anwendungen mit hohem Durchsatz, die ab und zu Fehler tolerieren (z. B. Multimedia)
+      - Anw. mit vorwiegend kurzen Nachrichten (z. B. NTP, RPC, NIS)
+      - Anw. mit hohem Durchsatz, die gel. Fehler tolerieren (z. B. Multimedia)
       - Multicasts sowie Broadcasts
+
+
+.. supplemental::
+
+  UDP nutzt für die Kommunikation "Datagramme" (Pakete). In der Praxis sin die Nutzdaten meist deutlich kleiner und orientieren sich an der Größe für IP-Pakete.
 
 
 
@@ -148,14 +144,14 @@ Konzeptioneller Ablauf
 --------------------------------------
 
 
-.. container:: two-columns
+.. grid::
 
-  .. container:: center-child-elements
+  .. cell::
 
     .. image:: images/http/http.svg
-      :width: 1100px
+      
 
-  .. container:: small
+  .. cell::
 
     .. rubric:: HTTP-Kommandos 
     
@@ -174,8 +170,6 @@ Konzeptioneller Ablauf
 
 
 
-.. class:: small
-
 Protokolldefinition
 --------------------------------------
 
@@ -185,43 +179,45 @@ Aufbau der Dokumentenbezeichner *Uniform Resource Locator (URL)*
 
   ``scheme://host[:port][abs_path[?query][#anchor]]``
 
-:``scheme``: Protokoll (case-insensitive) (z. B. ``http``, ``https`` oder ``ftp``)
-:``host``: DNS-Name (oder IP-Adresse) des Servers (case-insensitive)
-:``port``: (optional) falls leer, 80 bei ``http`` und 443 bei ``https`` 
-:``abs_path``: (optional) Pfadausdruck relativ zum Server-Root (case-sensitive)
-:``?query``: (optional) direkte Parameterübergabe (case-sensitive) (``?from=…&to=…``)
-:``#anchor``: (optional) Sprungmarke innerhalb des Dokuments
+.. deck::
 
-.. container:: incremental small
+  .. card::
 
-  Uniform Resource Identifier (URI) sind eine Verallgemeinerung von URLs.
+    :``scheme``: Protokoll (case-insensitive) (z. B. ``http``, ``https`` oder ``ftp``)
+    :``host``: DNS-Name (oder IP-Adresse) des Servers (case-insensitive)
+    :``port``: (optional) falls leer, 80 bei ``http`` und 443 bei ``https`` 
+    :``abs_path``: (optional) Pfadausdruck relativ zum Server-Root (case-sensitive)
+    :``?query``: (optional) direkte Parameterübergabe (case-sensitive) (``?from=…&to=…``)
+    :``#anchor``: (optional) Sprungmarke innerhalb des Dokuments
 
-  - definiert in RFC 1630 (im Jahr 1994)
-  - entweder URL (Location) oder URN (Name) (z. B. ``urn:isbn:1234567890``)
-  - Beispiele von URIs, die keine URL sind, sind *XML Namespace Iidentifiers*
+  .. card::
 
-    .. code:: XML 
-      :class: tiny
+    Uniform Resource Identifier (URI) sind eine Verallgemeinerung von URLs.
 
-      <svg version="1.1" xmlns="http://www.w3.org/2000/svg">...</svg>
+    - definiert in RFC 1630 (im Jahr 1994)
+    - entweder URL (Location) oder URN (Name) (z. B. ``urn:isbn:1234567890``)
+    - Beispiele von URIs, die keine URL sind, sind *XML Namespace Iidentifiers*
+
+      .. code:: XML 
+
+        <svg version="1.1" xmlns="http://www.w3.org/2000/svg">...</svg>
 
 
-
-.. class:: scriptsize
 
 Das GET Kommando
 --------------------------------------
 
-.. stack::
+.. deck::
 
-  .. layer::
+  .. card::
 
     - Dient dem Anfordern von HTML-Daten vom Server (Request-Methode).
     - Minimale Anfrage:
     
       :Anfrage:
 
-        ::
+        .. code:: http
+          :number-lines:
 
           GET <Path> HTTP/1.1
           Host: <Hostname>
@@ -234,11 +230,12 @@ Das GET Kommando
 
     - Fehlermeldungen werden ggf. vom Server ebenfalls als HTML-Daten verpackt und als Antwort gesendet.
 
-  .. layer:: incremental
+  .. card:: 
 
     .. rubric:: Beispiel Anfrage des Clients
 
     .. code:: http
+      :number-lines:
 
       GET /web/web.php HTTP/1.1
       Host: archive.org
@@ -247,6 +244,7 @@ Das GET Kommando
     .. rubric:: Beispiel Antwort des Servers
 
     .. code:: http
+      :number-lines:
 
       HTTP/1.1 200 OK
       Server: nginx/1.25.1
@@ -286,7 +284,6 @@ TCP Sockets
 --------------------------------------
 
 .. image:: images/http/tcp_sockets.svg
-    :height: 950px
     :align: center
 
 
@@ -300,13 +297,12 @@ TCP Sockets
 
 
 
-.. class:: smaller-slide-title
-
 (Ein einfacher) Portscanner 
 --------------------------------------
 
 .. code:: python
-  :class: far-far-smaller copy-to-clipboard
+  :class: copy-to-clipboard
+  :number-lines:
 
   import sys
   import socket
@@ -325,8 +321,7 @@ TCP Sockets
     if len(sys.argv) > 1: host = sys.argv[1]
     for port in range(1, 1024): scan_port(host, port)
 
-  if __name__ == "__main__":
-    main()
+  if __name__ == "__main__": main()
 
 
 
@@ -335,28 +330,27 @@ Austausch von Daten
 
 
 
-- Nach erfolgtem Verbindungsaufbau können zwischen Client und Server mittels ``sendall`` und ``recv`` Daten ausgetauscht werden.
+- Nach erfolgtem Verbindungsaufbau können zwischen Client und Server mittels :python:`sendall` und :python:`recv` Daten ausgetauscht werden.
 
 .. class:: incremental list-with-explanations
 
-- Wir können blockierend auf Daten warten bzw. blockierend schreiben, indem wir ``recv`` bzw. ``sendall`` aufrufen. (Siehe nächstes Beispiel.)
+- Wir können blockierend auf Daten warten bzw. blockierend schreiben, indem wir :python:`recv` bzw. :python:`sendall` aufrufen. (Siehe nächstes Beispiel.)
   
   Sollte die Verbindung abbrechen oder die Gegenseite nicht antworten, kann es „relativ lange dauern“, bis dieser Fehler erkannt bzw. gemeldet wird.
-- Wir können den Socket auch in den nicht-blockierenden Modus versetzen, indem wir ``setblocking(False)`` aufrufen (ggf. sinnvoll).
+- Wir können den Socket auch in den nicht-blockierenden Modus versetzen, indem wir :python:`setblocking(False)` aufrufen (ggf. sinnvoll).
 
 
-
-.. class:: smaller-slide-title
   
 Ein einfacher Echo-Dienst 
 ------------------------------------------------------
 
-.. stack:: tiny
+.. deck:: 
 
-  .. layer::
+  .. card::
         
     .. code:: python
       :class: copy-to-clipboard
+      :number-lines:
 
       # Client
       import socket
@@ -377,10 +371,11 @@ Ein einfacher Echo-Dienst
               data = receive_all(s)
           print(data.decode())
 
-  .. layer:: incremental
+  .. card::
 
     .. code:: python
       :class: copy-to-clipboard
+      :number-lines:
 
       # Server
       import socket
@@ -399,24 +394,27 @@ Ein einfacher Echo-Dienst
                     conn.sendall(data)
 
 
-  .. layer:: incremental
+  .. card::
 
     - Python erlaubt es Sockets zu Wrappen, um sie wie Dateien behandeln zu können.
   
-      ``<Socket>.makefile(mode="r?w?b?" [, encoding="utf-8"])`` erzeugt ein Dateiobjekt, das (insbesondere) ``readline()`` und ``write()`` unterstützt. Dies kann insbesondere bei zeilenorientierter Kommunikation hilfreich sein.
-    - Es können auch ganze Dateien über Sockets basierend  übertragen werden (``<Socket>.sendfile(<File>)``).
+      :python:`<Socket>.makefile(mode="r?w?b?" [, encoding="utf-8"])` erzeugt ein Dateiobjekt, das (insbesondere) ``readline()`` und ``write()`` unterstützt. Dies kann insbesondere bei zeilenorientierter Kommunikation hilfreich sein.
+    - Es können auch ganze Dateien über Sockets basierend  übertragen werden (:python:`<Socket>.sendfile(<File>)`).
 
-    .. class:: incremental attention-list
+    .. warning::
+      :class: incremental margin-top-2em
 
-    - Einige Methoden sind nur auf spezifischen Betriebssystemen (meist Unix) verfügbar.
+      Einige Methoden sind nur auf spezifischen Betriebssystemen (meist Unix) verfügbar.
+
 
 
 UDP Sockets
 --------------------------------------
 
-.. container:: two-columns
+.. grid::
 
-  .. container:: column no-separator
+  .. cell:: 
+    :class: width-50
 
     .. rubric:: Clientseitig
 
@@ -426,7 +424,8 @@ UDP Sockets
     4. ggf. Antwort empfangen und verarbeiten
 
 
-  .. container:: column 
+  .. cell:: 
+    :class: width-50
 
     .. rubric:: Serverseitig
 
@@ -442,33 +441,30 @@ UDP Sockets
 
 
 
-.. class:: smaller-slide-title
-  
 UDP basierter Echo Server
 ------------------------------------------------------
 
-.. container:: tiny
+.. code:: python
+  :class: copy-to-clipboard
+  :number-lines:
 
-  .. code:: python
-    :class: copy-to-clipboard
+  import socket
 
-    import socket
+  HOST = "localhost"
+  PORT = 5678  
 
-    HOST = "localhost"
-    PORT = 5678  
+  with socket.socket(socket.AF_INET, socket.SOCK_DGRAM) as server:
+      server.bind((HOST, PORT))
 
-    with socket.socket(socket.AF_INET, socket.SOCK_DGRAM) as server:
-        server.bind((HOST, PORT))
-
-        while True:
-            data, addr = server.recvfrom(65507)  # buffer size is 65507 bytes
-            print(f"received message: {data} from: {addr}")
-            server.sendto(data, addr)
-
+      while True:
+          data, addr = server.recvfrom(65507)  # buffer size is 65507 bytes
+          print(f"received message: {data} from: {addr}")
+          server.sendto(data, addr)
 
 
 
-.. class:: integrated-exercise transition-fade
+
+.. class:: exercises transition-fade
 
 Übung 
 ------------------------------------------------------
@@ -495,7 +491,8 @@ UDP basierter Echo Server
     Zu (a):
 
     .. code:: python
-      :class: copy-to-clipboard far-smaller
+      :class: copy-to-clipboard 
+      :number-lines:
     
       #!/usr/bin/env python3
       import socket
@@ -525,7 +522,8 @@ UDP basierter Echo Server
     Zu (b) und (c):
 
     .. code:: python
-      :class: copy-to-clipboard far-smaller
+      :class: copy-to-clipboard 
+      :number-lines:
 
       #!/usr/bin/env python3
 
@@ -582,7 +580,7 @@ UDP basierter Echo Server
 
 
 
-.. class:: integrated-exercise
+.. class:: exercises
 
 Übung 
 ------------------------------------------------------
@@ -599,7 +597,8 @@ UDP basierter Echo Server
     :pwd: Nun mit UDP.
     
     .. code:: python
-      :class: copy-to-clipboard smaller
+      :class: copy-to-clipboard
+      :number-lines:
 
       #!/usr/bin/env python3
       import socket
@@ -624,7 +623,8 @@ UDP basierter Echo Server
           client.close()
 
     .. code:: python
-      :class: copy-to-clipboard smaller
+      :class: copy-to-clipboard
+      :number-lines:
 
       #!/usr/bin/env python3
       import socket
