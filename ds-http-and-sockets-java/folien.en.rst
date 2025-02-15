@@ -22,12 +22,14 @@
 .. role:: peripheral
 .. role:: obsolete
 
+.. role:: java(code)
+  :language: java
 .. role:: raw-html(raw)
    :format: html
 
 
 
-HTTP und Sockets (in Java)
+HTTP and Sockets (in Java)
 =============================
 
 ----
@@ -38,73 +40,80 @@ HTTP und Sockets (in Java)
 
 .. supplemental::
 
-  :Folien: 
+  :Lecture Material: 
       [HTML] |html-source|
 
       [PDF] |pdf-source|
       
-  :Fehler melden:
+  :Reporting Errors:
       https://github.com/Delors/delors.github.io/issues
 
-.. container:: footer-left tiny 
+.. container:: footer-left
 
-    Dieser Foliensatz basiert auf Folien von Prof. Dr. Henning Pagnia.
+    This set of slides is based on slides by Prof Dr Henning Pagnia.
     
-    Alle Fehler sind meine eigenen.
+    All errors are my own.
 
 
 
-IP - Wiederholung
+.. class:: repetition
+
+IP
 --------------------------------------
 
-Die Vermittlungsschicht (Internet Layer)
+The network layer (Internet layer)
 
-- übernimmt das Routing
-- realisiert Ende-zu-Ende-Kommunikation
-- überträgt Pakete
-- ist im Internet durch IP realisiert
-- löst folgende Probleme:
+- handles the routing
+- realizes end-to-end communication
+- transmits packets
+- is realized in the Internet through IP
+- solves the following problems:
 
-  - Sender und Empfänger erhalten netzweit eindeutige Bezeichner (⇒ IP-Adressen)
-  - die Pakete werden durch spezielle Geräte (⇒ Router) weitergeleitet
+  - Sender and receiver receive network-wide unique identifiers (⇒ IP addresses)
+  - the packets are forwarded by special devices (⇒ routers)
 
 
 
-TCP und UDP - Wiederholung 
+.. class:: repetition
+
+TCP and UDP
 --------------------------------------
 
 .. grid::
 
-  .. cell::
+  .. cell:: width-50
 
     .. rubric:: Transmission Control Protocol (TCP), RFC 793
 
-    • verbindungsorientierte Kommunikation
-    • ebenfalls Konzept der Ports
-    • Verbindungsaufbau zwischen zwei Prozessen (Dreifacher Handshake, Full-Duplex-Kommunikation)
+    - connection-orientated communication
+    - also the concept of ports
+    - Establishing a connection between two processes (triple handshake, full-duplex communication)
 
-      - geordnete Kommunikation
-      - zuverlässige Kommunikation
-      - Flusskontrolle
-      - hoher Overhead ⇒ eher langsam
-      - nur Unicasts
+      - Ordered communication
+      - reliable communication
+      - Flow control
+      - high overhead ⇒ rather slow
+      - only unicasts
 
-  .. cell::
+  .. cell:: width-50
 
     .. rubric:: User Datagram Protocol (UDP), RFC 768
     
-    • verbindungslose Kommunikation via Datagramme
+    - connectionless communication
 
-      - unzuverlässig (⇒ keine Fehlerkontrolle)
-      - ungeordnet (⇒ beliebige Reihenfolge)
-      - wenig Overhead (⇒ schnell)
-    • Größe der Nutzdaten ist 65507 Byte, in der Praxis jedoch meist deutlich kleiner
-    • Anwendungsfelder:
+      - unreliable (⇒ no error control)
+      - unordered (⇒ arbitrary order)
+      - little overhead (⇒ fast)
+    - Size of the user data is 65507 bytes
 
-      - Anwendungen mit vorwiegend kurzen Nachrichten (z. B. NTP, RPC, NIS)
-      - Anwendungen mit hohem Durchsatz, die ab und zu Fehler tolerieren (z. B. Multimedia)
-      - Multicasts sowie Broadcasts
+      - Apps with predominantly short messages (e.g. NTP, RPC, NIS)
+      - Apps with high throughput that tolerate some errors (e.g. multimedia)
+      - Multicasts and broadcasts
 
+
+.. supplemental::
+
+   In practice datagrams (i. e. packages sent using UDP) are usually much smaller than 65507 bytes.
 
 
 .. class:: new-section transition-scale
@@ -117,19 +126,19 @@ Hypertext Transfer Protocol (HTTP)
 HTTP
 --------------------------------------
 
-• `RFC 7230 <http://www.ietf.org/rfc/rfc7230.txt>`__ – 7235: HTTP/1.1 (redigiert im Jahr 2014; urspr. 1999 RFC 2626) 
-• RFC 7540: HTTP/2 (seit Mai 2015 standardisiert)
-• Eigenschaften:
+• `RFC 7230 <http://www.ietf.org/rfc/rfc7230.txt>`__ – 7235: HTTP/1.1 (updated in 2014; orig. 1999 RFC 2626) 
+• RFC 7540: HTTP/2 (standardized since May 2015)
+• Properties:
   
-  - Client / Server (Browser / Web-Server)
-  - basierend auf TCP, i. d. R. Port 80
-  - Server (meist) zustandslos
-  - seit HTTP/1.1 auch persistente Verbindungen und Pipelining
-  - abgesicherte Übertragung (Verschlüsselung) möglich mittels Secure Socket Layer (SSL) bzw. Transport Layer Security (TLS)
+  - Client / server (browser / web server)
+  - based on TCP, usually port 80
+  - Server (mostly) stateless
+  - since HTTP/1.1 also persistent connections and pipelining
+  - Secure transmission (encryption) possible using Secure Socket Layer (SSL) or Transport Layer Security (TLS)
 
 
 
-Konzeptioneller Ablauf
+Conceptual process
 --------------------------------------
 
 .. grid:: 
@@ -142,7 +151,7 @@ Konzeptioneller Ablauf
 
     .. rubric:: HTTP-Kommandos 
     
-    („Verben“)
+    ("Verbs")
 
     - HEAD
     - GET
@@ -157,12 +166,12 @@ Konzeptioneller Ablauf
 
 
 
-Protokolldefinition
+Protocol definition
 --------------------------------------
 
-Aufbau der Dokumentenbezeichner *Uniform Resource Locator (URL)*
+Structure of document identifiers  *Uniform Resource Locator (URL)*
 
-.. container:: text-align-center rounded-corners dhbw-light-gray-background
+.. container:: accentuate text-align-center
 
   ``scheme://host[:port][abs_path[?query][#anchor]]``
 
@@ -170,38 +179,42 @@ Aufbau der Dokumentenbezeichner *Uniform Resource Locator (URL)*
 
   .. card::
 
-    :``scheme``: Protokoll (case-insensitive) (z. B. ``http``, ``https`` oder ``ftp``)
-    :``host``: DNS-Name (oder IP-Adresse) des Servers (case-insensitive)
-    :``port``: (optional) falls leer, 80 bei ``http`` und 443 bei ``https`` 
-    :``abs_path``: (optional) Pfadausdruck relativ zum Server-Root (case-sensitive)
-    :``?query``: (optional) direkte Parameterübergabe (case-sensitive) (``?from=…&to=…``)
-    :``#anchor``: (optional) Sprungmarke innerhalb des Dokuments
+    :``scheme``: Protocol (case-insensitive) (z. B. ``http``, ``https`` oder ``ftp``)
+    :``host``: DNS-Name (or IP-address) of the server (case-insensitive)
+    :``port``: (optional) if empty, 80 in case of ``http`` and 443 in case of ``https`` 
+    :``abs_path``: (optional) path-expression relative to the server-root (case-sensitive)
+    :``?query``: (optional) direct parameter transfer (case-sensitive) (``?from=…&to=…``)
+    :``#anchor``: (optional) jump label within the document
 
   .. card::
 
-    Uniform Resource Identifier (URI) sind eine Verallgemeinerung von URLs.
+    Uniform Resource Identifier (URI) are a generalization URLs.
 
-    - definiert in RFC 1630 (im Jahr 1994)
-    - entweder URL (Location) oder URN (Name) (z. B. ``urn:isbn:1234567890``)
-    - Beispiele von URIs, die keine URL sind, sind *XML Namespace Iidentifiers*
+    - defined in RFC 1630 in 1994
+    - either a URL (location) or a URN (name) (e. g. ``urn:isbn:1234567890``)
+    - examples of URIs that are not URLs are *XML Namespace Iidentifiers*
 
       .. code:: XML 
 
         <svg version="1.1" xmlns="http://www.w3.org/2000/svg">...</svg>
 
+.. supplemental::
+
+  Quite frequently URIs take the shape of URLs and hence are often referred to as URLs thought they do not primarily identify locations but rather names.
+  
 
 
-Das GET Kommando
+The GET command
 --------------------------------------
 
 .. deck::
 
   .. card::
 
-    - Dient dem Anfordern von HTML-Daten vom Server (Request-Methode).
-    - Minimale Anfrage:
+    - Used to request HTML data from the server (request method).
+    - Minimal request:
     
-      :Anfrage:
+      :Request:
 
         .. code:: http
           :number-lines:
@@ -211,15 +224,15 @@ Das GET Kommando
           Connection: close
           <Leerzeile (CRLF)>
 
-      :Optionen:     
-          - Client kann zusätzlich weitere Infos über die Anfrage sowie sich selbst senden.
-          - Server sendet Status der Anfrage sowie Infos über sich selbst und ggf. die angeforderte HTML-Datei.
+      :Options:     
+          - Clients can also send additional information about the request and itself.
+          - Servers send the status of the request as well as information about itself and, if applicable, the requested HTML file.
 
-    - Fehlermeldungen werden ggf. vom Server ebenfalls als HTML-Daten verpackt und als Antwort gesendet.
+    - Error messages may also be packaged by the server as HTML data and sent as a response.
 
   .. card::
 
-    .. rubric:: Beispiel Anfrage des Clients
+    .. rubric:: Example request
 
     .. code:: http
       :number-lines:
@@ -228,7 +241,7 @@ Das GET Kommando
       Host: archive.org
       **CRLF**
 
-    .. rubric:: Beispiel Antwort des Servers
+    .. rubric:: Example response
 
     .. code:: http
       :number-lines:
@@ -256,14 +269,14 @@ Sockets
 Sockets in Java
 --------------------------------------
 
-**Sockets sind Kommunikationsendpunkte.**
+**Sockets are communication endpoints.**
 
-- Sockets werden adressiert über die IP-Adresse (InetAddress-Objekt) und eine interne Port-Nummer (int-Wert).
-- Sockets gibt es bei TCP und auch bei UDP, allerdings mit unterschiedlichen Eigenschaften:
+- Sockets are addressed via the IP address (InetAddress object) and an internal port number (int value).
+- Sockets exist for TCP and also for UDP, but with different properties:
 
-  :TCP: verbindungsorientierte Kommunikation über *Streams*
-  :UDP: verbindungslose Kommunikation mittels *Datagrams*
-- Das Empfangen von Daten ist in jedem Fall blockierend, d. h. der empfangende Thread bzw. Prozess wartet, falls keine Daten vorliegen.
+  :TCP: connection-orientated communication via *streams*
+  :UDP: connectionless communication via *datagrams*
+- Receiving data is always blocking, i. e. the receiving thread or process waits if no data is available.
 
 
 
@@ -276,15 +289,15 @@ TCP Sockets
 
 .. supplemental::
 
-  (1) Der Server-Prozess wartet an dem bekannten Server-Port.
-  (2) Der Client-Prozess erzeugt einen privaten Socket.
-  (3) Der Socket baut zum Server-Prozess eine Verbindung auf – falls der Server die Verbindung akzeptiert.
-  (4) Die Kommunikation erfolgt Strom-orientiert: Für beide Parteien wird je ein Eingabestrom und ein Ausgabestrom eingerichtet, über den nun Daten ausgetauscht werden können.
-  (5) Wenn alle Daten ausgetauscht wurden, schließen im Allg. beide Parteien die Verbindung.
+  (1) The server process waits at the known server port.
+  (2) The client process creates a private socket.
+  (3) The socket establishes a connection to the server process - if the server accepts the connection.
+  (4) Communication is stream-orientated: An input stream and an output stream are set up for both parties, via which data can now be exchanged.
+  (5) When all data has been exchanged, both parties generally close the connection.
 
 
 
-(Ein einfacher) Portscanner in Java
+(A simple) Portscanner in Java
 --------------------------------------
 
 .. code:: java
@@ -312,25 +325,25 @@ TCP Sockets
 
 
 
-Austausch von Daten
+Exchange of Data
 --------------------------------------
 
 .. class:: incremental-list
 
-- Nach erfolgtem Verbindungsaufbau können zwischen Client und Server mittels des Socket-InputStream und Socket-OutputStream Daten ausgetauscht werden.
-- Hierzu leitet man die rohen Daten am besten durch geeignete Filter-Streams, um eine möglichst hohe semantische Ebene zu erreichen.
+- Once the connection has been established, data can be exchanged between the client and server using the Socket-InputStream and Socket-OutputStream.
+- The best way to do this is to pass the raw data through suitable filter streams in order to achieve the highest possible semantic level.
 
-  - Beispiele: ``PrintWriter``, ``BufferedReader``, ``BufferedInputStream``, ``BufferedOutputStream``
-  - Die Netzwerkkommunikation kann dann ggf. bequem über wohlbekannte und komfortable Ein- und Ausgabe-Routinen (z. B. ``readLine`` oder ``println``) durchgeführt werden.
-  - Filter-Streams werden auch für den Zugriff auf andere Geräte und Dateien verwendet.
+  - Examples: :java:`PrintWriter`, :java:`BufferedReader`, :java:`BufferedInputStream`, :java:`BufferedOutputStream`
+  - Network communication can then be conveniently carried out via well-known and convenient input and output routines (e.g. :java:`readLine` or :java:`println`).
+  - Filter streams are also used to access other devices and files.
 
 .. supplemental::
 
-  Durch die Verwendung des *Decorater-Patterns* können die Filter-Streams beliebig geschachtelt werden und vielfältig verwendet werden. Dies macht die Anwendungsprogrammierung  einfacher und erlaubt zum Beispiel das einfache Umwandeln von Zeichenketten, Datenkomprimierung, Verschlüsselung, usw.
+  By using the *decorater pattern*, the filter streams can be nested as required and used in a variety of ways. This makes application programming easier and allows, for example, the simple conversion of character strings, data compression, encryption, etc.
 
 
 
-(Schachtelung von Streams) Ein einfacher Echo-Dienst 
+(Nesting of streams) A simple Echo service 
 ------------------------------------------------------
 
 .. deck:: 
@@ -358,7 +371,7 @@ Austausch von Daten
               System.out.println(networkIn.readLine());
       } } } }
 
-  .. card::
+  .. card:: 
 
     .. code:: java
       :class: copy-to-clipboard
@@ -388,30 +401,30 @@ UDP Sockets
 
 .. grid:: 
 
-  .. cell:: 
+  .. cell:: width-50
 
-    .. rubric:: Clientseitig
+    .. rubric:: At the client side
 
-    1. ``DatagramSocket`` erzeugen
-    2. ``DatagramPacket`` erzeugen 
-    3. ``DatagramPacket`` absenden
-    4. ggf. Antwort empfangen und verarbeiten
+    1. create :java:`DatagramSocket` 
+    2. create :java:`DatagramPacket`  
+    3. send :java:`DatagramPacket` 
+    4. wait for response and process it, if needed
 
 
-  .. cell::
+  .. cell:: width-50
 
-    .. rubric:: Serverseitig
+    .. rubric:: At the server side
 
-    1. ``DatagramSocket`` auf festem Port erzeugen
-    2. Endlosschleife beginnen
-    3. ``DatagramPacket`` vorbereiten
-    4. ``DatagramPacket`` empfangen
-    5. ``DatagramPacket`` verarbeiten
-    6. ggf. Antwort erstellen und absenden
+    1. create :java:`DatagramSocket` with a fixed port
+    2. stard endless loop
+    3. prepare :java:`DatagramPacket` 
+    4. receive :java:`DatagramPacket` 
+    5. process :java:`DatagramPacket` 
+    6. create and send response if needed
 
 
   
-UDP basierter Echo Server
+UDP based Echo Server
 ------------------------------------------------------
 
 .. code:: java
@@ -441,32 +454,32 @@ UDP basierter Echo Server
 
 .. class:: exercises transition-fade
 
-Übung 
+Exercise 
 ------------------------------------------------------
 
-.. exercise:: Ein einfacher HTTP-Client
+.. exercise:: A simple HTTP-Client
 
   .. class:: list-with-explanations
 
-  (a) Schreiben Sie einen HTTP-Client, der den Server ``www.michael-eichberg.de`` kontaktiert, die Datei ``/index.html`` anfordert und die Antwort des Servers auf dem Bildschirm ausgibt.
+  (a) Write an HTTP client that contacts the server ``www.michael-eichberg.de``, requests the file ``/index.html`` and displays the server response on the screen.
 
-      Verwenden Sie HTTP/1.1 und eine Struktur ähnlich dem in der Vorlesung vorgestellten Echo-Client.
+      Use HTTP/1.1 and a structure similar to the echo client presented in the lecture.
 
-      Senden Sie das GET-Kommando, die Host-Zeile sowie eine Leerzeile als Strings an den Server.
-  (b) Modifizieren Sie Ihren Client, so dass eine URL als Kommandozeilenparameter akzeptiert wird.
+      Send the GET command, the host line and an empty line to the server as strings.
+  (b) Modify your client so that a URL is accepted as a command line parameter.
 
-      Verwenden Sie die (existierende) Klasse URL, um die angegebene URL zu zerlegen.
-  (c) Modifizieren Sie Ihr Programm, so dass die Antwort des Servers als lokale Datei abgespeichert wird. Laden Sie die Datei zum Anzeigen in einen Browser.
+      Use the (existing) class URL to decompose the specified URL.
+  (c) Modify your program so that the response from the server is saved in a local file. Load the file into a browser for display.
 
-      Nutzen Sie die Klasse ``FileOutputStream`` oder ``FileWriter`` zum Speichern der Datei.
+      Use the class :java:`FileOutputStream` or :java:`FileWriter` to save the file.
 
-      Kann Ihr Programm auch Bilddateien (z. B. "/exercises/star.jpg") korrekt speichern?
+      Can your programme also save image files (e.g. ‘/exercises/star.jpg’) correctly?
 
 
   .. solution::
     :pwd: a-b-c 
 
-    Zu (a):
+    (a):
 
     .. code:: java
       :class: copy-to-clipboard
@@ -498,7 +511,7 @@ UDP basierter Echo Server
         }
       }
 
-    Zu (b) und (c):
+    (b) and (c):
 
     .. code:: java
       :class: copy-to-clipboard
@@ -576,15 +589,15 @@ UDP basierter Echo Server
 
 .. class:: exercises
 
-Übung 
+Exercise 
 ------------------------------------------------------
 
 .. exercise:: Protokollaggregation
 
-  Schreiben Sie ein UDP-basiertes Java-Programm, mit dem sich Protokoll-Meldungen auf einem Server zentral anzeigen lassen. Das Programm soll aus mehreren Clients und einem Server bestehen. Jeder Client liest von der Tastatur eine Eingabezeile in Form eines Strings ein, der dann sofort zum Server gesendet wird. Der Server wartet auf Port 4999 und empfängt die Meldungen beliebiger Clients, die er dann unmittelbar ausgibt.
+  Write a UDP-based Java programme with which log messages can be displayed centrally on a server. The programme should consist of several clients and a server. Each client reads an input line from the keyboard in the form of a string, which is then immediately sent to the server. The server waits on port 4999 and receives the messages from any client, which it then outputs immediately.
 
   .. solution:: 
-    :pwd: Nun mit UDP.
+    :pwd: Now with UDP.
     
     .. code:: java
       :class: copy-to-clipboard

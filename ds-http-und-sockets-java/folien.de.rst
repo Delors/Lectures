@@ -54,7 +54,9 @@ HTTP und Sockets (in Java)
 
 
 
-IP - Wiederholung
+.. class:: repetition
+
+IP 
 --------------------------------------
 
 Die Vermittlungsschicht (Internet Layer)
@@ -70,12 +72,14 @@ Die Vermittlungsschicht (Internet Layer)
 
 
 
-TCP und UDP - Wiederholung 
+.. class:: repetition
+
+TCP und UDP 
 --------------------------------------
 
 .. grid::
 
-  .. cell::
+  .. cell:: width-50
 
     .. rubric:: Transmission Control Protocol (TCP), RFC 793
 
@@ -89,21 +93,26 @@ TCP und UDP - Wiederholung
       - hoher Overhead ⇒ eher langsam
       - nur Unicasts
 
-  .. cell::
+  .. cell:: width-50
 
     .. rubric:: User Datagram Protocol (UDP), RFC 768
     
-    • verbindungslose Kommunikation via Datagramme
+    • verbindungslose Kommunikation
 
-      - unzuverlässig (⇒ keine Fehlerkontrolle)
-      - ungeordnet (⇒ beliebige Reihenfolge)
-      - wenig Overhead (⇒ schnell)
-    • Größe der Nutzdaten ist 65507 Byte, in der Praxis jedoch meist deutlich kleiner
+      - unzuverlässig ⇒ keine Fehlerkontrolle
+      - ungeordnet ⇒ beliebige Reihenfolge
+      - wenig Overhead ⇒ schnell
+    • Größe der Nutzdaten ist 65507 Byte
     • Anwendungsfelder:
 
-      - Anwendungen mit vorwiegend kurzen Nachrichten (z. B. NTP, RPC, NIS)
-      - Anwendungen mit hohem Durchsatz, die ab und zu Fehler tolerieren (z. B. Multimedia)
+      - Anw. mit vorwiegend kurzen Nachrichten (z. B. NTP, RPC, NIS)
+      - Anw. mit hohem Durchsatz, die gel. Fehler tolerieren (z. B. Multimedia)
       - Multicasts sowie Broadcasts
+
+
+.. supplemental::
+
+  UDP nutzt für die Kommunikation "Datagramme" (Pakete). In der Praxis sin die Nutzdaten meist deutlich kleiner und orientieren sich an der Größe für IP-Pakete.
 
 
 

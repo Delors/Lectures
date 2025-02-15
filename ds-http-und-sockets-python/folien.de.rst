@@ -58,7 +58,9 @@ HTTP und Sockets in Python
 
 
 
-IP - Wiederholung
+.. class:: repetition
+
+IP 
 --------------------------------------
 
 Die Vermittlungsschicht (Internet Layer)
@@ -74,13 +76,14 @@ Die Vermittlungsschicht (Internet Layer)
 
 
 
-TCP und UDP - Wiederholung 
+.. class:: repetition 
+
+TCP und UDP
 --------------------------------------
 
 .. grid::
 
-  .. cell:: 
-    :class: width-50
+  .. cell:: width-50
 
     .. rubric:: Transmission Control Protocol (TCP), RFC 793
 
@@ -94,8 +97,7 @@ TCP und UDP - Wiederholung
       - hoher Overhead ⇒ eher langsam
       - nur Unicasts
 
-  .. cell:: 
-    :class: width-50
+  .. cell:: width-50
 
     .. rubric:: User Datagram Protocol (UDP), RFC 768
     
@@ -413,8 +415,7 @@ UDP Sockets
 
 .. grid::
 
-  .. cell:: 
-    :class: width-50
+  .. cell:: width-50
 
     .. rubric:: Clientseitig
 
@@ -424,8 +425,7 @@ UDP Sockets
     4. ggf. Antwort empfangen und verarbeiten
 
 
-  .. cell:: 
-    :class: width-50
+  .. cell:: width-50
 
     .. rubric:: Serverseitig
 
