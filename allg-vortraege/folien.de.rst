@@ -49,6 +49,20 @@ Vorträge: Hinweise und Bewertungskriterien
         https://github.com/Delors/delors.github.io/issues
         
 
+.. class:: center-content no-title
+
+Warnung
+--------------
+
+.. warning::
+
+  Die hier angegebenen Informationen sind unverbindlich und insbesondere die Benotung weicht ggf. in einer konkreten Lehrveranstaltung von der hier dargestellten Aufteilung ab.  
+  
+  **Maßgeblich sind die Informationen, die Ihnen in der Vorlesung gegeben werden.**
+
+
+
+
 
 Bewertungskriterien
 -------------------
@@ -132,3 +146,37 @@ Häufige Fehler
 - Kein Kontakt zum Publikum
 
   Es ist wichtig, dass Sie Kontakt zum Publikum aufbauen.
+
+
+Checkliste
+------------
+
+.. story::
+
+  .. rubric:: Allgemeine Kriterien
+
+  .. class:: incremental-list 
+
+  :Struktur des Vortrags: War die Struktur einleuchtend und unter den gegebenen Umständen (Publikum, etc.) angemessen? War „jederzeit” klar wie der Vortrag strukturiert ist und in welchem Abschnitt man sich gerade befindet?
+  :Logischer Aufbau: Haben die Folien logisch aufeinander aufgebaut oder gab es „Vorwärtsverweise”, bzw. wurden inhaltliche Fragen, die für ein Verständnis des Vortrags wichtig gewesen wären,  aufgeworfen und nicht beantwortet?"
+  :Aussagekraft: Hatte jede Folie eine wohldefinierte Botschaft?  War für jede Folie klar welchen Beitrag diese Folie leistet bzw. welchen Beitrag die Inhalte auf der Folie in Hinblick auf die Gesamtpräsentation leisten?
+  :Präsentation des Inhalts: Wurden die geplanten Inhalte verständlich und ohne zusätzliche Fragen aufzuwerfen dargestellt. Hat die Präsentation ein „rundes Bild” ergeben oder wurden (mit Hinblick auf das Kernthema) irrelevante Inhalte vermittelt?
+  :Verständlichkeit des Inhalts der Präsentation: War die Präsentation (jederzeit) für das Zielpublikum verständlich, d.h. wurden keine unnötigen Fachbegriffe verwendet, wurden Begriffe / relevante Konzepte hinreichend eingeführt?
+  :Visualisierungen / Grafiken": Wurden aussagekräftige, dem Verständnis hilfreiche Visualisierungen verwendet?
+  :Foliendesign: Wurden Animationen und ähnliche Effekte „sinnvoll” eingesetzt? Wurden Fonts und Farben vernünftig verwendet.
+  :Sorgfalt: War die Präsentation frei von Tippfehlern und waren Grafiken, Quelltext, etc. konsistent formatiert?
+  :Zusammenfassung: Gab es eine und hat diese kurz und prägnant die wichtigsten Aussagen dargestellt?
+  :Relevante Literatur/Quellen: Wurde auf die verwendete / relevante / weiterführende Literatur hingewiesen?
+
+  .. class:: incremental
+
+  .. rubric:: Kriterien bzgl. des persönlichen Auftretens
+
+  .. class:: incremental-list 
+
+  :(Aus-)Sprache:  Gab es keine „Ähms”, kein Räuspern? War die Sprechgeschwindigkeit angemessen?
+  :Redezeit: Wurde die vorgegebene Redezeit eingehalten bzw. musste die Präsentation abgebrochen werden? (+/- 10% ist OK - danach Abzug)
+  :Vortragsstil: Wurde der Vortrag flüssig vorgetragen oder kam der / die Vortragende ins Stocken (d.h. er / sie kannte die Folien nicht)? Wurden Grafiken vollumfänglich und auch verständlich erklärt oder wurden Teile einfach unerklärt gelassen?
+  :Auftreten:   Kontakt zum Publikation hergestellt (nicht auf das Notebook geschaut, nicht auf die Wand geschaut)?
+  :Interaktion: War die Interaktion mit dem Fragenden freundlich und zuvorkommend - wurde auf den Fragenden eingegangen.   Wurden Fragen inhaltlich korrekt und umfassend beantwortet, oder wurden „andere” - d.h. nicht gestellte - Fragen beantwortet.
+  :Vertrautheit mit der Präsentation: Wurden alle Folien in der Vortragszeit hinreichend dargestellt oder mussten Folien (z.B. aufgrund von Zeitmangel) übersprungen werden?
