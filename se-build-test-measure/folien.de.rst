@@ -133,3 +133,617 @@ Insbesondere bei größeren Projekten kommen häufig noch viele weitere Schritte
 - zahlreiche Skripte um zum Beispiel Datenbanken zu aktualisieren, Docker-Container zu bauen und zu starten...
 - ...
 
+
+
+.. class:: new-section transition-fade
+
+Testen von Software
+-------------------
+
+
+
+Validierung vs. Verifikation (V&V) 
+-----------------------------------
+
+.. deck::
+
+    .. card::
+
+        :Validierung: „Bauen wir das richtige Produkt?“
+
+        :Verifikation: „Bauen wir das Produkt korrekt?“
+
+    .. card::
+                
+        .. image:: images/software_inspektionen.svg
+                :align: right
+
+        .. rubric:: Zwei komplementäre Ansätze die (V&V) unterscheiden:
+
+        .. class:: list-with-explanations
+
+        1. Software-Inspektionen oder Peer-Reviews (statische Technik) 
+
+           Software-Inspektionen können in allen Phasen des Prozesses durchgeführt werden.
+        2. Software-Tests (dynamische Technik)
+
+
+Software-Inspektionen überprüfen die Übereinstimmung zwischen einem Programm und seiner Spezifikation.
+------------------------------------------------------------------------------------------------------------------------------
+
+Ausgewählte Ansätze:
+
+.. story::
+
+    .. compound::
+
+        .. rubric:: Programminspektionen 
+        
+        Ziel ist es, Programmfehler, Verstöße gegen Standards und mangelhaften Code zu finden, und nicht, allgemeinere Designfragen zu berücksichtigen; sie werden in der Regel von einem Team durchgeführt, dessen Mitglieder den Code systematisch analysieren. Eine Inspektion wird in der Regel anhand von Checklisten durchgeführt.
+        
+        .. supplemental:: 
+            
+            Studien haben gezeigt, dass eine Inspektion von etwa 100LoC etwa einen Personentag an Aufwand erfordert.
+
+    .. compound:: 
+        :class: incremental
+
+        .. rubric:: automatisierte Quellcodeanalyse 
+            
+        Diese umfasst u. a. Kontrollflussanalysen, Datenverwendungs-/flussanalyse, Informationsflussanalyse und Pfadanalyse.
+
+        Statische Analysen lenken die Aufmerksamkeit auf Anomalien.
+
+    .. compound::
+        :class: incremental
+        
+        .. rubric:: Formale Verifikation
+        
+        Die formale Verifizierung kann das Nichtvorhandensein bestimmter Fehler garantieren. So kann z. B. garantiert werden, dass ein Programm keine Deadlocks, Race Conditions oder Pufferüberläufe enthält.
+
+    .. summary::
+        :class: incremental
+
+        Software-Inspektionen zeigen nicht, dass die Software nützlich ist.
+
+
+ausgewählte Testziele
+----------------------
+
+- Test der Funktionalität
+- Test auf Robustheit
+- Test der Effizienz/Performance
+- :peripheral:`Test auf Wartbarkeit`
+- Test auf Nutzbarkeit
+
+.. class:: no-title
+
+Testarten
+----------
+
+.. grid:: height-100
+
+    .. cell:: width-50 height-100 black-background white padding-1em
+
+        **Black Box Testen**
+
+        Wir wollen die Korrektheit zeigen.
+
+        Testdaten werden durch die Untersuchung der Domäne gewonnen. Was sind gültige und was sind ungültige Eingabewerte in der Domäne?
+
+        Der Test kann (und sollte!) ohne Betrachtung der konkreten Implementierung entwickelt werden.
+
+    .. cell:: width-50 height-100 white-background black padding-1em
+
+        **White Box Testen**
+
+        Wie auch beim Black-Box Test wollen wir die Korrektheit zeigen.
+
+        Testdaten werden durch die Inspektion des Programms gewonnen. 
+
+        Das heißt im Umkehrschluss, dass wir den Quellcode des Programms benötigen.
+
+
+
+Der Umfang eines Tests ist die Sammlung der zu prüfenden Softwarekomponenten.
+--------------------------------------------------------------------------------
+
+.. class:: incremental-list
+
+:Unit Tests (Modultest): Umfasst eine relativ kleine ausführbare Datei; z.B. ein einzelnes Objekt.
+:Integrationstest: Komplettes (Teil-)System. Schnittstellen zwischen den Einheiten werden getestet, um zu zeigen, dass die Einheiten gemeinsam funktionsfähig sind.
+:Systemtest: Eine vollständige integrierte Anwendung. Kategorisiert nach der Art der Konformität, die festgestellt werden soll: funktional, Leistung, Stress oder Belastung
+:Abnahmetests: Tests (durch den Kunden), um zu zeigen, dass das System die Anforderungen erfüllt.
+
+.. TODO Diskussion über das Aufstellen von Testplänen hinzufügen
+
+
+
+(Test-)Überdeckung (eng.  (Test-)Coverage)
+-------------------------------------------
+
+.. question::
+
+    Wie wissen wir aber wie “gut” unsere Tests sind?
+
+.. definition::
+    :class: incremental
+
+    Testüberdeckung beschreibt, wie viel des Programms durch die Tests geprüft wird. 
+
+.. container:: incremental
+
+    Hierbei gibt es verschiedene Überdeckungskriterien, die verschiedene Metriken für die Beschreibung der Testgüte nutzen.
+
+
+
+Anweisungsüberdeckung (:eng:`Statement Coverage`)
+---------------------------------------------------
+
+Alternativ auch Zeilenüberdeckung oder :eng:`Line Coverage` genannt.
+
+.. grid::
+
+    .. cell::
+
+        Zu testende Software:
+
+        .. code:: java
+            :number-lines:
+
+            public double compute (boolean includeTax) {
+                double result = 1.3;
+                if (includeTax) {
+                    result *= 1.19;
+                }
+                return result;    
+            }
+
+    .. cell:: incremental
+
+        Testfälle:
+
+        .. code:: java
+            :number-lines:
+
+            compute(false);
+            compute(true);
+
+
+        .. question::
+            :class: incremental
+
+            Wie hoch ist die Anweisungsüberdeckung? Sind beide Testfälle notwendig?
+
+            .. presenter-note::
+
+                Die Anweisungsüberdeckung beträgt 100%; der erste Testfall ist nicht notwendig.                
+
+.. definition::
+    :class: margin-top-1em incremental
+
+    .. math::
+
+        \text{Anweisungsüberdeckung} = \frac{\text{\# ausgeführte Anweisungen}}{\text{\# aller Anweisungen}} \cdot 100\%
+
+
+
+Zweigüberdeckung (:eng:`Branch Coverage`)
+---------------------------------------------------
+
+.. grid::
+
+    .. cell::
+
+        Zu testende Software:
+
+        .. code:: java
+            :number-lines:
+
+            public double compute (boolean includeTax) {
+                double result = 1.3;
+                if (includeTax) {
+                    result *= 1.19;
+                }
+                return result;    
+            }
+
+    .. cell:: incremental
+
+        Kontrollflussgraph:
+
+        .. raw:: html
+
+            <svg width="30ch" height="9.25lh" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                <style>
+                    /* TODO: How to scale Arrowheads? */   
+                    rect {
+                        fill: white;
+                        stroke: blue;
+                        stroke-width: 0.2ch;
+                    } 
+                    text {
+                        fill: black;
+                        font-family: var(--theme-code-font-family);
+                        font-size: 0.75lh;
+                    }
+                </style>
+                <defs>
+                    <marker 
+                    id="arrow"
+                    viewBox="0 0 10 10"
+                    refX="10"
+                    refY="5"
+                    markerWidth="0.4ex"
+                    markerHeight="0.4ex"
+                    orient="auto-start-reverse">
+                    <path class="arrow-head" d="M 0 0 L 10 5 L 0 10 z" />
+                    </marker>
+                </defs>
+
+                <rect width="22ch" height="2lh" x="1ch" y="1lh" rx="1ch" ry="1ch" />
+                <text class="code" x="2.5ch" y="1.85lh">
+                    <tspan class="keyword type">double</tspan> 
+                    <tspan class="name">result</tspan> 
+                    <tspan class="operator">=</tspan> 
+                    <tspan class="literal number">1.3</tspan> 
+                </text>
+                <text class="code" x="2.5ch" y="2.85lh">
+                    <tspan class="keyword">if</tspan>
+                    <tspan class="whitespace"> </tspan>
+                    <tspan class="punctuation">(</tspan>
+                    <tspan class="name">includeTax</tspan>
+                    <tspan class="punctuation">)</tspan>
+                </text>
+
+                <g class="incremental">
+                <line x1="14ch" y1="3lh" x2="14ch" y2="5lh" style="stroke:blue;stroke-width:0.2ch" marker-end="url(#arrow)"/>     
+                <rect width="16.5ch" height="1lh" x="6ch" y="5lh" rx="1ch" ry="1ch" />
+                <text class="code" x="7.5ch" y="5.95lh">
+                    <tspan class="name">result</tspan>
+                    <tspan class="whitespace"> </tspan>
+                    <tspan class="operator">*=</tspan>
+                    <tspan class="whitespace"> 
+                    </tspan>
+                    <tspan class="literal number float">1.19</tspan>
+                </text>
+                </g>
+
+                <g class="incremental">
+                <line x1="4ch" y1="3lh" x2="4ch" y2="8lh" style="stroke:blue;stroke-width:0.2ch" marker-end="url(#arrow)"/>     
+                <line x1="14ch" y1="6lh" x2="14ch" y2="8lh" style="stroke:blue;stroke-width:0.2ch" marker-end="url(#arrow)"/>     
+                <rect width="16ch" height="1lh" x="1ch" y="8lh" rx="1ch" ry="1ch" />
+                <text class="code" x="2.5ch" y="8.95lh">
+                    <tspan class="keyword">return</tspan>
+                    <tspan class="whitespace"> </tspan>
+                    <tspan class="name">result</tspan>
+                </text>
+                </g>
+            </svg>
+
+.. deck::
+
+    .. card::
+
+        .. question::
+            :class: incremental 
+
+            Wie hoch ist die Anweisungsüberdeckung? Sind beide Testfälle notwendig?
+
+            .. presenter-note::
+
+                Die Anweisungsüberdeckung beträgt 100%; der erste Testfall ist nicht notwendig.
+
+    .. card::
+
+        .. definition::
+
+            .. math::
+
+                \text{Zweigüberdeckung} = \frac{\text{\# ausgeführte Zweige}}{\text{\# aller Zweige}} \cdot 100\%
+
+
+Pfadüberdeckung (:eng:`Path Coverage`)
+---------------------------------------------------
+
+.. deck::
+
+    .. card::
+
+        .. definition::
+
+            .. math::
+
+                \text{Pfadüberdeckung} = \frac{\text{\# ausgeführten Pfade}}{\text{\# aller (möglichen) Pfade}} \cdot 100\%    
+
+    .. card::
+
+        .. grid::
+
+            .. cell::
+
+                Zu testende Software:
+
+                .. code:: java
+                    :number-lines:
+
+                    public double compute (boolean includeTax, 
+                                           boolean reducedTax, 
+                                           double discount) {
+                      double result = 1.3;
+                      if (includeTax) { 
+                        if (reducedTax) {
+                          result *= 1.07;
+                        else {
+                          result *= 1.19;
+                      } }
+                      if (discount > 0.0) {
+                        result *= (1.0 - discount);
+                      }  
+                      return result;    
+                    }
+
+
+            .. cell:: incremental
+
+                Testfälle:
+
+                .. code:: java
+                    :number-lines:
+
+                    compute(false, false, 0.0);
+                    compute(true, false, 0.0);
+                    compute(true, true, 0.0);
+                    compute(false, false, 0.1);
+                    compute(true, false, 0.1);
+                    compute(true, true, 0.1);
+
+                .. question::
+                    :class: incremental 
+
+                    Wie hoch ist die Pfadüberdeckung? 
+
+                    .. presenter-note::
+
+                        Die Überdeckung beträgt 100%.        
+
+    .. card:: center-content
+
+        .. attention::
+
+            Die Pfadüberdeckung ist in der Praxis oft nicht realisierbar, da die Anzahl der möglichen Pfade exponentiell mit der Anzahl der Verzweigungen wächst.
+
+            In der Praxis wird daher oft die Zweigüberdeckung als Kompromiss genutzt.
+
+
+Weitere Überdeckungskriterien
+------------------------------
+
+.. class:: incremental-list list-with-explanations
+
+- (einfache) Bedingungsüberdeckung (:eng:`(Simple) Condition Coverage`)
+- Eingangs-/Ausgangsüberdeckung (:eng:`Entry/Exit Coverage`)
+- Schleifenüberdeckung (:eng:`Loop Coverage`)
+- Zustandsüberdeckung (:eng:`State Coverage`)
+
+  (Erfodert ggf. das ein endlicher Automat modelliert wird.)
+- Datenflussüberdeckung (:eng:`Data Flow Coverage`) 
+
+
+Überdeckungsziele
+------------------
+
+.. deck::
+
+    .. card::
+    
+        :IEEE 29119 “Software Testing”: 
+            100% Anweisungsabdeckung
+            
+            100% Zweigabdeckung für kritische Module
+        :DO-178B “Software Considerations in Airborne Systems and Equipment Certification”:
+
+            Abhängig von der Auswirkung von Systemfehlern. 
+            Beispiel: 100% Anweisungsabdeckung bei Verletzungsgefahr von Passagieren.
+        :IEC 61508 “Functional Safety of Electrical/Electronic/Programmable Electronic Safety-Related Systems”:
+            100% Anweisungs-/Zweig-/Bedingungsabdeckung je nach Sicherheitsanforderung
+        :ISO 26262 “Road vehicles - Functional safety”:
+            Abhängig von der Kritikalität der Komponente
+
+
+    .. card:: s-overlay center-content height-100 
+                
+        .. summary::
+            :class: incremental backdrop-blur
+
+            Das Erreichen eines Überdeckungsziels erfordert Aufwand, der durch die Kritikalität möglicher Fehler motiviert sein muss.
+
+            In vielen Anwendersystemen ist eine hundertprozentige Testabdeckung nicht notwendig. Testabdeckung ist dennoch zu messen.
+
+
+.. class:: transition-flip no-title center-content
+
+Grenzen des Testens
+-------------------
+
+.. epigraph::
+
+    Tests können nur das Vorhandensein von Fehlern zeigen, nicht deren Abwesenheit.
+
+    -- E. Dijkstra
+
+
+
+JUnit Test Case - Beispiel
+--------------------------
+
+.. code:: java
+    :number-lines:
+
+    import org.junit.Test;
+    import static org.junit.Assert.assertEquals;
+    import static org.junit.Assert.fail;
+
+    import java.util.Arrays;
+
+    public class SimpleCalculatorTest {
+
+      @Test                                                // <= JUnit Test Annotation
+      public void testProcess() {
+
+        String[] term = new String[] {
+          "4", "5", "+", "7", "*"
+        };
+        long result = SimpleCalculator.process(term);
+          assertEquals(Arrays.toString(term), 63, result); // <= JUnit Assertion
+      }
+    }
+
+
+
+TestNG - Beispiel
+-----------------
+
+.. code:: java
+    :number-lines:
+
+    // This method will provide data to any test method 
+    // that declares that its Data Provider is named "provider1". 
+    @DataProvider(name = "provider1")
+    public Object[][] createData1() {
+        return new Object[][] {
+            { "Cedric", new Integer(36) },
+            { "Anne", new Integer(37) }
+        };
+    }
+
+    // This test method declares that its data should be
+    // supplied by the Data Provider named "provider1".
+    @Test(dataProvider = "provider1")
+    public void verifyData1(String n1, Integer n2) {
+        System.out.println(n1 + " " + n2);
+    }
+
+
+Behavior-Driven Development
+-------------------------------
+
+Das Ziel ist, dass die Entwickler die Verhaltensabsichten des Systems, das sie entwickeln, definieren.\ [#]_ Hier mit Hilfe von ScalaTest.
+
+.. code:: scala
+    :number-lines:
+
+    import org.specs.runner._
+    import org.specs._
+
+    object SimpleCalculatorSpec extends Specification {
+
+        "The Simple Calculator" should {
+            "return the value 36 for the input {“6”,“6”,“*”}" in {
+                SimpleCalculator.process(Array("6","6","*")) must_== 36
+            }
+        } 
+    }
+
+
+.. [#] http://behaviour-driven.org/
+
+
+
+The Last Word
+--------------
+
+.. epigraph::
+
+    **A Tester’s Courage**
+
+    The Director of a software company proudly announced that a flight software developed by the company was installed in an airplane and the airline was offering free first flights to the members of the company. “Who are interested?” the Director asked. Nobody came forward. Finally, one person volunteered. The brave Software Tester stated, ‘I will do it. I know that the airplane will not be able to take off.’
+
+    -- Unknown Author @ http://www.softwaretestingfundamentals.com
+
+
+
+.. class:: transition-move-to-top new-section
+
+Metriken
+----------
+
+
+
+Qualitätsmetriken
+-------------------------
+
+.. deck::
+
+    .. card:: 
+
+        .. rubric:: Warum?
+
+        .. class:: incremental-list
+
+        - Neue Features oder Code-Qualität erhöhen?
+        - Kann ich Komponente C austauschen? Bzw. wie viel Aufwand ist das?
+        - Haben die letzten Änderungen das System negativ beeinflusst?
+        - Welche Systemteile sind besonders sicherheitskritisch?
+
+    .. card:: 
+
+        .. rubric:: Ziele
+
+        .. class:: incremental-list
+
+        - Mögliche Bugs frühzeitig erkennen
+        - Systeme quantitativ miteinander vergleichen
+        - Wartbarkeit einschätzen
+        - Refactoring planen
+        - Änderungen bewerten
+        - Evolution des Systems überwachen bzw. verstehen
+
+    .. card::
+
+        .. rubric:: Verwendung
+
+        .. class:: incremental-list
+
+        - Als *Quality Gates* in Buildsystemen
+
+          z. B. Zeilen pro Methode < 50
+        - Zur Bewertung von Software
+
+    .. card:: dd-margin-left-6em
+
+        .. rubric:: Einfache Metriken
+
+        .. class:: incremental-list 
+
+        :Lines of Code (LOC): Alle Zeilen zählen so, wie sie im Quellcode stehen
+        :Source Lines of Code (SLOC): Alle Zeilen ohne Leerzeile oder Kommentare
+        :Comment Lines of Code (CLOC): Es zählen nur Zeilen mit Kommentaren; dies können ganze Zeilen sein, oder einfach nur Inline Kommentare; auskommentierter Code zählt ggf. auch
+        :Non-Comment Lines of Code (NCLOC) / Effective Lines of Code (ELOC): Codezeilen ohne Kommentarzeile oder Zeilen, die nur Klammern enthalten, reine Import Statements oder Methodendeklarationen
+        :Logical Lines of Code (LLOC): Zählt nur Anweisungen
+
+    .. card:: dd-margin-left-6em
+
+        .. rubric:: Fortgeschrittene Metriken
+
+        .. class:: incremental-list 
+
+        :Zyklomatische Komplexität (McCabe): Anzahl der linear unabhängigen Pfade durch den Code
+        :Kopplung: Anzahl der Abhängigkeiten zwischen Komponenten
+        :...: ...
+
+
+
+.. class:: no-title center-content
+
+Es gibt keine fixen Werten
+----------------------------
+
+.. warning::
+
+    Umfangreiche Forschung hat gezeigt, dass es keine fixen Werte gibt, die für alle Projekte gelten. Es hat sich weiterhin gezeigt, dass es keine einzige Metrik gibt, die alleine zur Bewertung der Qualität eines Systems ausreicht. Welche Metriken die Qualität des Systems am besten beschreiben, lässt sich immer nur posthum beantworten.
+    
+    Metriken sind immer kontextabhängig zu bewerten. 
+
+    Metriken eignen sich insbesondere um Veränderungen zu bewerten und um die Entwicklung von Software zu überwachen.
+
