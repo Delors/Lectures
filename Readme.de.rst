@@ -16,7 +16,7 @@ Lehrveranstaltungen und Foliensätze
 
 
 
-Vorlesung "Einführung in der Programmierung I und II"
+Vorlesung "Einführung in die Programmierung I und II"
 -----------------------------------------------------
 
 Die grundlegende Idee hinter der folgenden Reihenfolge ist, dass die Studierenden zuerst die Grundlagen der Programmierung in Java lernen und sich dann (kurz) mit der objekt-orientierten Modellierung realer Systeme beschäftigen, bevor dann mit der objekt-orientierten Programmierung in Java begonnen wird.
@@ -94,7 +94,17 @@ Vorlesung "Verteilte Systeme" / "Distributed Systems"
    - Entwurfsprinzipien für verteilte Systeme (`<ds-se-entwurfsprinzipien/folien.de.rst.html>`__)
    - RESTful Web Services (`<ds-restful/folien.de.rst.html>`_)
    - XML und XPath (`<ds-xml/folien.de.rst.html>`__)
-      
+
+
+Vorlesungen mit Bezug zu "Software Engineering" 
+---------------------------------------------------
+
+- Zusammenspiel von agilen Methoden und Entwurf verteilter Systeme (`<ds-se-agile/folien.de.rst.html>`__)
+- Entwurfsprinzipien für verteilte Systeme (`<ds-se-entwurfsprinzipien/folien.de.rst.html>`__)
+- Projekt bauen, testen und vermessen (`<se-build-test-measure/folien.de.rst.html>`__)
+- Projektmanagement (`<se-projektmanagement/folien.de.rst.html>`__)
+- Versionskontrolle (`<se-versionskontrolle/folien.de.rst.html>`__)
+
 
 
 Vorlesung "Web Engineering"
