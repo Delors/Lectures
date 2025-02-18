@@ -538,7 +538,7 @@ Projektabschluss - 22. Apr 2025
 
 .. container:: accentuate margin-top-2em incremental
 
-  Die finale Einreichung alle Dokumente etc. erfolgt über Moodle am Ende des Semesters (d. h. am Sonntag nach der letzten Klausur.)
+  Die finale Einreichung aller Dokumente etc. erfolgt über Moodle am Ende des Semesters (d. h. am Sonntag nach der letzten Klausur.)
 
   :peripheral:`Videos sind per Downloadlink zur Verfügung zu stellen. Die Auflösung sollte dabei (1600-1920) x (1080-1200) auf keinen Fall überschreiten.`
 
