@@ -44,6 +44,8 @@
 
 
 
+.. class:: animated-logo
+
 Formale Sprachen
 ======================================================
 
@@ -916,6 +918,7 @@ Abzählbar (unendlich)
         Beachte, dass :math:`r` über die gesamte (unendliche) Diagonale definiert ist und dadurch zu jeder bestehenden Zahl unterschiedlich sein muss; d. h. :math:`r` ist nicht gleich zu :math:`r_1` in der ersten Stelle, nicht gleich zu :math:`r_2` in der zweiten Stelle, nicht gleich zu :math:`r_3` in der dritten Stelle, ... und nicht gleich :math:`r_n` in der n-ten Stelle.
 
         Die Kardinalität (bereits) der Menge der reellen Zahlen im Bereich :math:`(0,1)` ist also größer als die der natürlichen Zahlen.
+
 
 
 Schlussfolgerungen aus der Überabzählbarkeit
