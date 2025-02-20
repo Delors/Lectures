@@ -83,7 +83,12 @@ Wir werden drei verschiedene Programmiersprachen und Konzepte kennenlernen anhan
 
   (Algorithmen stehen hier nicht im Vordergrund, sondern die konkrete Implementierung der Datenstrukturen sowie die Bereitstellung einer fortgeschrittenen API.)
 - Implementierung einer einfachen eDSL (embedded Domain Specific Language)
+  
+  .. zum Beispiel eine DSL für Domainenspezifische Berechnungen
 - Entwicklung eines einfachen parallelisierten RESTful Web-Services
+
+  .. zum Beispiel einen Spellchecker oder einen Dienst zum Zeichnen von Objekten ("Dot -> SVG")
+
 - Durchführung von Übungen zu den Programmiersprachen
 
 

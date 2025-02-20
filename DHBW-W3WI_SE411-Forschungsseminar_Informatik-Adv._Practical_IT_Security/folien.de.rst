@@ -219,7 +219,7 @@ Vortragsthemen
 
 .. class:: list-with-explanations smaller
 
-- `Nnmap (und ncat) <https://nmap.org/>`__  (1 Person)
+- `Nmap (und ncat) <https://nmap.org/>`__  (1 Person)
 
   (Network discovery and security auditing.)
 
@@ -243,7 +243,7 @@ Vortragsthemen
                     (Code quality tool.)
                     - `Nikto <https://cirt.net/Nikto2>`__ (1 Person)
                    (Web server scanner.)
-                    - `Nnmap (und ncat) <https://nmap.org/>`__  (1 Person)
+                    - `Nmap (und ncat) <https://nmap.org/>`__  (1 Person)
                    (Network discovery and security auditing.)
                    - `Scapy <https://scapy.net/>`__ (1 Person)
                   (Interactive packet manipulation library)
