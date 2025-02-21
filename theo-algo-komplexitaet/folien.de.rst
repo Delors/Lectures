@@ -225,11 +225,7 @@ Beispiel: Berechnung der Fibonacci-Zahlen (rekursiv)
         
     .. definition:: 
 
-        :math:`F(0) = 0` 
-
-        :math:`F(1) = 1`.
-
-        :math:`F(n) = F(n-1) + F(n-2)` 
+        :math:`F(0) = 0\qquad\qquad F(1) = 1 \qquad\qquad F(n) = F(n-1) + F(n-2)` 
 
     .. deck:: incremental
 
@@ -401,21 +397,21 @@ Im Allgemeinen werden Laufzeiten oder Aufwände in Abhängigkeit von einer Einga
 
 .. class:: incremental
 
-- .. class:: column-list
+- .. class:: columns
     
     * Definition über Folgenglieder
     * .. example:: 
     
             (:math:`a_n`) : :math:`a_1 = 2, a_2 = 3, a_3 = 7, a_4 = 11, ...`
 
-- .. class:: column-list 
+- .. class:: columns 
 
     - Rekursive Definition 
     - .. example:: 
     
         (:math:`c_n`) : :math:`c_1 = 1, c_2 = 1, c_{n+2} = c_n + c_{n+1}` für :math:`n \in \mathbb(N)`
 
-- .. class:: column-list
+- .. class:: columns
     
     - Explizite Definition 
     - .. example:: 
@@ -1334,6 +1330,7 @@ Beispiel Primzahltest: Analyse mit elementaren Kosten
 ------------------------------------------------------------
 
 .. code:: python
+    :number-lines:
 
     def ist_primzahl(n):
         prim = True                 # Wertzuweisung:            1
@@ -1349,7 +1346,7 @@ Beispiel Primzahltest: Analyse mit elementaren Kosten
                                     # letzte Bedingungsprüfung  3
         return prim                 # Befehl:                   1
 
-.. container:: incremental margin-top-1em far-smaller
+.. container:: incremental
 
     Im schlechtesten Fall, d. h. :math:`i \geq 2` und es gilt :math:`i==n` nach der while-Schleife, werden :math:`7 + (n− 2)· 7 = 7· n− 7` Rechenschritte benötigt. Die Anzahl der Rechenschritte hängt somit linear vom Eingabewert :math:`n` ab.
 
@@ -1372,7 +1369,7 @@ Beispiel Insertion-Sort: Analyse mit abstrahierten Kosten
 
     Vergleichbar zum Ziehen von Karten: die neue Karte wird an der richtigen Stelle eingeschoben.
 
-.. class:: column-list incremental
+.. class:: columns incremental
 
     - .. image:: images/insertion_sort.svg
             :alt: Visualisierung des Insertion-Sort-Algorithmus
@@ -1395,10 +1392,10 @@ Beispiel Insertion-Sort: Analyse mit abstrahierten Kosten
 Beispiel Insertion-Sort: Detailanalyse 
 --------------------------------------------------------
 
-.. container:: scrollable
+.. story::
 
     .. csv-table::
-        :class: no-table-borders no-inner-borders incremental highlight-line-on-hover 
+        :class: borderless highlight-line-on-hover 
         :header: "", "Algorithmus: Insertion-Sort(A, n) [Pseudocode]", "Zeit", "Anzahl"
         :widths: 3, 80, 10, 25
 
@@ -1476,7 +1473,6 @@ Beispiel Insertion-Sort: Detailanalyse
 
             = c· \left( 5n - 4 \right)
 
-
 .. supplemental::
 
     .. hint::
@@ -1553,17 +1549,17 @@ In Hinblick auf den Zeitaufwand gilt:
 
 .. exercise:: „Naive“ Power Funktion
 
-    .. container:: smaller
+    .. container:: 
 
         Bestimmen Sie die algorithmische asymptotische Komplexität des folgenden Algorithmus durch Analyse jeder einzelnen Zeile. Jede Zeile kann für sich mit konstantem Zeitaufwand abgeschätzt werden. Die Eingabe ist eine nicht-negative Ganzzahl :math:`n` mit :math:`k` Bits. Bestimmen Sie die Laufzeitkomplexität für den schlimmstmöglichen Fall in Abhängigkeit von :math:`k`!
         
-        .. container:: smaller
+        .. container:: 
         
             (Beispiel: die Zahl :math:`n = 7_d` benötigt drei Bits :math:`n= 111_b`, die Zahl :math:`4_d` benötigt zwar auch drei Bits :math:`100_b` aber dennoch weniger Rechenschritte.). 
 
         .. code:: pseudocode
             :number-lines:
-            :class: far-smaller margin-top-1em
+            :class: margin-top-1em
 
             Algorithmus Power(x,n)
                 r = 1
@@ -1716,7 +1712,7 @@ Rucksackproblem (:eng:`Knapsack Problem`)
 Rucksackproblem - rekursive Lösung
 ----------------------------------------
 
-.. container:: scrollable
+.. story::
         
     .. code:: python
         :number-lines:
@@ -1757,7 +1753,6 @@ Rucksackproblem - rekursive Lösung
             = & \dfrac{4}{3}(4^n-1) \quad \text{hier mit } m = 4\quad \text{(Anzahl der Objekte)}
             \end{array}
 
-
 .. supplemental::
 
     .. rubric:: Erklärungen
@@ -1772,7 +1767,7 @@ Rucksackproblem - rekursive Lösung
 Rucksackproblem - iterative Lösung
 ----------------------------------------
 
-.. container:: scrollable
+.. story::
 
     .. rubric:: Grundsätzliche Idee der iterativen Lösung
     
@@ -1786,7 +1781,7 @@ Rucksackproblem - iterative Lösung
         .. csv-table::
             :header: ``i\\j``, 0, 1, 2, 3, 4, 5, 6, 7
             :align: center
-            :class: fake-header-column highlight-line-on-hover
+            :class: fake-header-column highlight-identical-cells-on-hover
 
             0, 0, 1, 2, 3, 4, 5, 6, 7
             1, 0, 1, 2, 4, 5, 6, 8, 9
@@ -1843,9 +1838,9 @@ Rucksackproblem - iterative Lösung
 Rucksackproblem - Vergleich
 ----------------------------------------
 
-.. container:: scrollable
+.. story::
 
-    .. class:: column-list evenly-spaced-columns
+    .. class:: columns evenly-spaced
         
     - .. math::
 
@@ -2118,7 +2113,7 @@ Anwendung des Master-Theorems: 3. Beispiel
 
 
 
-.. class:: no-title center-child-elements
+.. class:: no-title center-content
 
 Master-Theorem: Zusammenfassung
 ----------------------------------------
