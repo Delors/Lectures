@@ -132,7 +132,7 @@ Bewertungskriterien
 Häufige Fehler
 --------------
 
-.. class:: incremental-list column-list dhbw
+.. class:: incremental-list columns dhbw
 
 - Text zu klein
    

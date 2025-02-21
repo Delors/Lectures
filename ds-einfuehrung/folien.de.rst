@@ -652,7 +652,7 @@ Formale Analyse der Skalierbarkeit zentralisierter Systeme
 Formale Analyse der Skalierbarkeit zentralisierter Systeme
 ------------------------------------------------------------
 
-.. class:: column-list
+.. class:: columns
 
 - Die Antwortszeit (:eng:`response time`) ist die Gesamtzeit für die Bearbeitung einer Anfrage
 
@@ -782,7 +782,7 @@ Herausforderungen bei der Replikation
 Paralleles Rechnen (:eng:`Parallel Computing`)
 ------------------------------------------------
 
-.. class:: column-list
+.. class:: columns
   
 - Multiprozessor
 
@@ -1094,7 +1094,7 @@ Weiterführung des Cluster Computing.
 Grundlegende Architektur für Grid-Computing
 ---------------------------------------------
 
-.. class:: column-list 
+.. class:: columns 
 
 - .. image:: images/architecture-for-grid-computing.svg
 
@@ -1246,9 +1246,8 @@ Transaktionen auf Geschäftsprozessebene
 
             **„Alles oder nichts.“**
 
-    .. cell::
-        :class: width-60
-
+    .. cell:: width-60
+    
         .. deck::
 
             .. card::
@@ -1272,8 +1271,6 @@ Transaktionen auf Geschäftsprozessebene
                 ≙ :eng:`ACID`\ -Eigenschaften
 
 
-
-.. class:: smaller
 
 *Transaction Processing Monitor (TPM)*
 ---------------------------------------

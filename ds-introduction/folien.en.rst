@@ -45,14 +45,14 @@ A broad overview of distributed systems!
 
 .. supplemental::
 
-  :Folien: 
+  :Slides/Script: 
 
       |html-source|
 
       |pdf-source|
       
 
-  :Fehler melden:
+  :Reporting errors:
 
       https://github.com/Delors/delors.github.io/issues
 
@@ -161,7 +161,7 @@ Common misunderstandings regarding centralised systems
 
       The *Domain Name System (DNS)*:
 
-      .. class:: column-list
+      .. class:: columns
 
       - \ 
 
@@ -178,7 +178,7 @@ Common misunderstandings regarding centralised systems
     
    A single possible source of error is often...
 
-   .. class:: column-list
+   .. class:: columns
 
    - \ 
 
@@ -500,7 +500,7 @@ A secure hash function :math-i:`Digest(X)` returns a character string of fixed l
 
     .. rubric:: Signing Messages
 
-    .. class:: column-list incremental-list
+    .. class:: columns incremental-list
 
     - Alice signs a message :math-i:`X` with her private key.
 
@@ -647,7 +647,7 @@ Analysis of the Scalability of Centralized Systems
 
         .. container:: incremental
 
-            .. class:: column-list left-aligned-columns
+            .. class:: columns left-aligned
             
             - Average throughput:
             - .. math::
@@ -669,7 +669,7 @@ Analysis of the Scalability of Centralized Systems
 
     .. card:: 
 
-        .. class:: column-list
+        .. class:: columns
 
         - The response time is the total time taken to process a request
 
@@ -813,7 +813,7 @@ Challenges of Replication
 Parallel Computing
 ------------------------------------------------
 
-.. class:: column-list
+.. class:: columns
   
 - Multiprocessor
 
@@ -1147,7 +1147,7 @@ Continuation of cluster computing.
 Basic Architecture for Grid Computing
 ---------------------------------------------
 
-.. class:: column-list dd-margin-left-2em
+.. class:: columns dd-margin-left-2em
 
 - .. image:: images/architecture-for-grid-computing.svg
 
@@ -1301,8 +1301,7 @@ Transactions at Business Process Level
 
             **„All or nothing.“**
 
-    .. cell::
-        :class: width-60
+    .. cell:: width-60
 
         .. deck::
 
