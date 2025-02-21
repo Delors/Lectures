@@ -219,6 +219,13 @@ Versionskontrollsysteme (VCS) - Überblick
 
 
 
+.. class:: new-section  transition-fade
+
+Versionskontrolle mit Git
+----------------------------------
+
+
+
 VCS - Git - einfache Verwendung
 ----------------------------------
 
@@ -976,3 +983,7 @@ GIT Befehle
 • Commits vom entfernten zum lokalen Repository holen: :console:`git fetch`
 • Commits vom lokalen zum entfernten Repository schieben: :console:`git push`
 • Kombination von :console:`git fetch` und :console:`git merge`: :console:`git pull`
+
+
+.. TODOs: 1. Übung hinzufügen
+          2. Merges tiefergehend erklären und auch visualisieren
