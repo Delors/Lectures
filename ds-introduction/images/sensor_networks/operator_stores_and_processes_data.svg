@@ -104,8 +104,8 @@
       </g>
       <g id="Graphic_632">
         <text transform="translate(178.7878 66.735294)" fill="black">
-          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="4689582e-19" y="15" xml:space="preserve">Operator’s</tspan>
-          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="21.763" y="34" xml:space="preserve">site</tspan>
+          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="4689582e-19" y="15">Operator’s</tspan>
+          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="21.763" y="34">site</tspan>
         </text>
       </g>
       <g id="Line_634">
@@ -119,14 +119,14 @@
       </g>
       <g id="Graphic_638">
         <text transform="translate(244.81497 157.22059)" fill="black">
-          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="11.088357" y="15" xml:space="preserve">Sensor data is </tspan>
-          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="16.716357" y="34" xml:space="preserve">sent directly</tspan>
-          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="19.271357" y="53" xml:space="preserve">to operator</tspan>
+          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="11.088357" y="15">Sensor data is </tspan>
+          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="16.716357" y="34">sent directly</tspan>
+          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="19.271357" y="53">to operator</tspan>
         </text>
       </g>
       <g id="Graphic_639">
         <text transform="translate(485.0427 153.42723)" fill="black">
-          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="5258016e-19" y="15" xml:space="preserve">Sensor  network</tspan>
+          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="5258016e-19" y="15">Sensor  network</tspan>
         </text>
       </g>
     </g>

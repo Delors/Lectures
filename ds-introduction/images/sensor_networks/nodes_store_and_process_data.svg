@@ -118,8 +118,8 @@
       </g>
       <g id="Graphic_632">
         <text transform="translate(178.7878 68.72832)" fill="black">
-          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="4689582e-19" y="15" xml:space="preserve">Operator’s</tspan>
-          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="21.763" y="34" xml:space="preserve">site</tspan>
+          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="4689582e-19" y="15">Operator’s</tspan>
+          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="21.763" y="34">site</tspan>
         </text>
       </g>
       <g id="Line_634">
@@ -133,13 +133,13 @@
       </g>
       <g id="Graphic_638">
         <text transform="translate(260.277 195.37028)" fill="black">
-          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="0" y="15" xml:space="preserve">Sensors send</tspan>
-          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x=".539" y="34" xml:space="preserve">only answers</tspan>
+          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="0" y="15">Sensors send</tspan>
+          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x=".539" y="34">only answers</tspan>
         </text>
       </g>
       <g id="Graphic_639">
         <text transform="translate(486.7507 153.42723)" fill="black">
-          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="0" y="15" xml:space="preserve">Sensor network</tspan>
+          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="0" y="15">Sensor network</tspan>
         </text>
       </g>
       <g id="Line_640">
@@ -147,7 +147,7 @@
       </g>
       <g id="Graphic_641">
         <text transform="translate(271.425 93.36416)" fill="black">
-          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="7247536e-19" y="15" xml:space="preserve">Query</tspan>
+          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="7247536e-19" y="15">Query</tspan>
         </text>
       </g>
       <g id="Group_642">
@@ -315,9 +315,9 @@
       <g id="Graphic_712">
         <path d="M 325.16882 33.369767 L 429.2648 33.369767 C 433.6831 33.369767 437.2648 36.95149 437.2648 41.369767 L 437.2648 92.36977 C 437.2648 96.78804 433.6831 100.36977 429.2648 100.36977 L 325.16882 100.36977 C 320.75054 100.36977 317.16882 96.78804 317.16882 92.36977 L 317.16882 41.369767 C 317.16882 36.95149 320.75054 33.369767 325.16882 33.369767 Z" fill="#a5a5a5"/>
         <text transform="translate(322.16882 38.369767)" fill="white">
-          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="white" x="5.138" y="15" xml:space="preserve">Each sensor can</tspan>
-          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="white" x="68922645e-20" y="34" xml:space="preserve">store and process</tspan>
-          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="white" x="41.146" y="53" xml:space="preserve">data</tspan>
+          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="white" x="5.138" y="15">Each sensor can</tspan>
+          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="white" x="68922645e-20" y="34">store and process</tspan>
+          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="white" x="41.146" y="53">data</tspan>
         </text>
       </g>
     </g>

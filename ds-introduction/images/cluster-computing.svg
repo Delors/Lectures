@@ -1293,19 +1293,19 @@
       </g>
       <g id="Graphic_467">
         <text transform="translate(318.49297 -234.14465) rotate(-56)" fill="#b1001c">
-          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="#b1001c" x="7247536e-19" y="15" xml:space="preserve">Management Node</tspan>
+          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="#b1001c" x="7247536e-19" y="15">Management Node</tspan>
         </text>
       </g>
       <g id="Graphic_469">
         <text transform="translate(-130.5936 -93.6054)" fill="black">
-          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="23234747e-19" y="15" xml:space="preserve">Compute </tspan>
-          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="23.59" y="34" xml:space="preserve">Node</tspan>
+          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="23234747e-19" y="15">Compute </tspan>
+          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="23.59" y="34">Node</tspan>
         </text>
       </g>
       <g id="Graphic_470">
         <text transform="translate(-108 -309.391)" fill="black">
-          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="19.851634" y="15" xml:space="preserve">High-speed </tspan>
-          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="11.549634" y="34" xml:space="preserve">Interconnect</tspan>
+          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="19.851634" y="15">High-speed </tspan>
+          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="11.549634" y="34">Interconnect</tspan>
         </text>
       </g>
       <g id="Group_425">
@@ -1348,9 +1348,9 @@
       </g>
       <g id="Graphic_471">
         <text transform="translate(295.3171 -171.203)" fill="#003776">
-          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="#003776" x="35.226" y="15" xml:space="preserve">High-</tspan>
-          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="#003776" x="11.699" y="34" xml:space="preserve">performance</tspan>
-          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="#003776" x="19.476" y="53" xml:space="preserve">Filesystem</tspan>
+          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="#003776" x="35.226" y="15">High-</tspan>
+          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="#003776" x="11.699" y="34">performance</tspan>
+          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="#003776" x="19.476" y="53">Filesystem</tspan>
         </text>
       </g>
     </g>

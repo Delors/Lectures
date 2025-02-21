@@ -168,7 +168,7 @@
           </g>
           <g id="Graphic_323">
             <text transform="translate(251.8789 -196.08758)" fill="#666">
-              <tspan font-family="Noto Sans Display" font-size="10" font-weight="400" fill="#666" x="8739676e-19" y="11" xml:space="preserve">www.xyz.com</tspan>
+              <tspan font-family="Noto Sans Display" font-size="10" font-weight="400" fill="#666" x="8739676e-19" y="11">www.xyz.com</tspan>
             </text>
           </g>
         </g>
@@ -207,7 +207,7 @@
           </g>
           <g id="Graphic_422">
             <text transform="translate(251.8789 -46.495933)" fill="#666">
-              <tspan font-family="Noto Sans Display" font-size="10" font-weight="400" fill="#666" x="8739676e-19" y="11" xml:space="preserve">www.xyz.com</tspan>
+              <tspan font-family="Noto Sans Display" font-size="10" font-weight="400" fill="#666" x="8739676e-19" y="11">www.xyz.com</tspan>
             </text>
           </g>
         </g>
@@ -217,14 +217,14 @@
       </g>
       <g id="Graphic_364">
         <text transform="translate(452.0664 -107.5464)" fill="black">
-          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="12.712" y="15" xml:space="preserve">validate</tspan>
-          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="29700686e-19" y="34" xml:space="preserve">form data</tspan>
+          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="12.712" y="15">validate</tspan>
+          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="29700686e-19" y="34">form data</tspan>
         </text>
       </g>
       <g id="Graphic_366">
         <text transform="translate(217.79698 -154.18631)" fill="white">
-          <tspan font-family="Noto Sans Display" font-size="11" font-weight="400" fill="white" x="0" y="12" xml:space="preserve">Name: Michael Meier</tspan>
-          <tspan font-family="Noto Sans Display" font-size="11" font-weight="400" fill="white" x="0" y="27" xml:space="preserve">Email:  m.meier@dhbw.de</tspan>
+          <tspan font-family="Noto Sans Display" font-size="11" font-weight="400" fill="white" x="0" y="12">Name: Michael Meier</tspan>
+          <tspan font-family="Noto Sans Display" font-size="11" font-weight="400" fill="white" x="0" y="27">Email:  m.meier@dhbw.de</tspan>
         </text>
       </g>
       <g id="Line_320">
@@ -254,14 +254,14 @@
       </g>
       <g id="Graphic_379">
         <text transform="translate(638.73176 -107.5464)" fill="black">
-          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="0" y="15" xml:space="preserve">process</tspan>
-          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="0" y="34" xml:space="preserve">form data</tspan>
+          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="0" y="15">process</tspan>
+          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="0" y="34">form data</tspan>
         </text>
       </g>
       <g id="Graphic_433">
         <text transform="translate(619.6811 73.29996)" fill="black">
-          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="0" y="15" xml:space="preserve">process</tspan>
-          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="0" y="34" xml:space="preserve">form data</tspan>
+          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="0" y="15">process</tspan>
+          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="0" y="34">form data</tspan>
         </text>
       </g>
       <g id="Line_380">
@@ -275,26 +275,26 @@
       </g>
       <g id="Graphic_382">
         <text transform="translate(561.1505 -227.45115)" fill="black">
-          <tspan font-family="Noto Sans Display" font-size="14" font-weight="700" fill="black" x="0" y="15" xml:space="preserve">Server</tspan>
+          <tspan font-family="Noto Sans Display" font-size="14" font-weight="700" fill="black" x="0" y="15">Server</tspan>
         </text>
       </g>
       <g id="Graphic_383">
         <text transform="translate(262.6223 -227.45115)" fill="black">
-          <tspan font-family="Noto Sans Display" font-size="14" font-weight="700" fill="black" x="856204e-18" y="15" xml:space="preserve">Client</tspan>
+          <tspan font-family="Noto Sans Display" font-size="14" font-weight="700" fill="black" x="856204e-18" y="15">Client</tspan>
         </text>
       </g>
       <g id="Graphic_384">
         <text transform="translate(359.6464 -180.56782)" fill="black">
-          <tspan font-family="Noto Sans Display" font-size="11" font-weight="400" fill="black" x="0" y="12" xml:space="preserve">{</tspan>
-          <tspan font-family="Noto Sans Display" font-size="11" font-weight="400" fill="black" x="0" y="27" xml:space="preserve">  “name” : “Michael Meier”,</tspan>
-          <tspan font-family="Noto Sans Display" font-size="11" font-weight="400" fill="black" x="0" y="42" xml:space="preserve">  “email” :  “m.meier@dhbw.de”</tspan>
-          <tspan font-family="Noto Sans Display" font-size="11" font-weight="400" fill="black" x="0" y="57" xml:space="preserve">}</tspan>
+          <tspan font-family="Noto Sans Display" font-size="11" font-weight="400" fill="black" x="0" y="12">{</tspan>
+          <tspan font-family="Noto Sans Display" font-size="11" font-weight="400" fill="black" x="0" y="27">  “name” : “Michael Meier”,</tspan>
+          <tspan font-family="Noto Sans Display" font-size="11" font-weight="400" fill="black" x="0" y="42">  “email” :  “m.meier@dhbw.de”</tspan>
+          <tspan font-family="Noto Sans Display" font-size="11" font-weight="400" fill="black" x="0" y="57">}</tspan>
         </text>
       </g>
       <g id="Graphic_396">
         <text transform="translate(422.4175 73.29996)" fill="black">
-          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="33537617e-19" y="15" xml:space="preserve">simplified(?) validation</tspan>
-          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="61.292" y="34" xml:space="preserve">of form data</tspan>
+          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="33537617e-19" y="15">simplified(?) validation</tspan>
+          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="61.292" y="34">of form data</tspan>
         </text>
       </g>
       <g id="Group_415">
@@ -303,8 +303,8 @@
         </g>
         <g id="Graphic_395">
           <text transform="translate(219.50488 -26.42769)" fill="white">
-            <tspan font-family="Noto Sans Display" font-size="11" font-weight="400" fill="white" x="0" y="12" xml:space="preserve">Name: Michael Meier</tspan>
-            <tspan font-family="Noto Sans Display" font-size="11" font-weight="400" fill="white" x="0" y="27" xml:space="preserve">Email:  m.meier@dhbw.de</tspan>
+            <tspan font-family="Noto Sans Display" font-size="11" font-weight="400" fill="white" x="0" y="12">Name: Michael Meier</tspan>
+            <tspan font-family="Noto Sans Display" font-size="11" font-weight="400" fill="white" x="0" y="27">Email:  m.meier@dhbw.de</tspan>
           </text>
         </g>
       </g>
@@ -316,10 +316,10 @@
       </g>
       <g id="Graphic_385">
         <text transform="translate(363.2876 -14.563675)" fill="black">
-          <tspan font-family="Noto Sans Display" font-size="11" font-weight="400" fill="black" x="0" y="12" xml:space="preserve">{</tspan>
-          <tspan font-family="Noto Sans Display" font-size="11" font-weight="400" fill="black" x="0" y="27" xml:space="preserve">  “name” : “Michael Meier”,</tspan>
-          <tspan font-family="Noto Sans Display" font-size="11" font-weight="400" fill="black" x="0" y="42" xml:space="preserve">  “email” :  “m.meier@dhbw.de”</tspan>
-          <tspan font-family="Noto Sans Display" font-size="11" font-weight="400" fill="black" x="0" y="57" xml:space="preserve">}</tspan>
+          <tspan font-family="Noto Sans Display" font-size="11" font-weight="400" fill="black" x="0" y="12">{</tspan>
+          <tspan font-family="Noto Sans Display" font-size="11" font-weight="400" fill="black" x="0" y="27">  “name” : “Michael Meier”,</tspan>
+          <tspan font-family="Noto Sans Display" font-size="11" font-weight="400" fill="black" x="0" y="42">  “email” :  “m.meier@dhbw.de”</tspan>
+          <tspan font-family="Noto Sans Display" font-size="11" font-weight="400" fill="black" x="0" y="57">}</tspan>
         </text>
       </g>
       <g id="Graphic_416">
@@ -328,8 +328,8 @@
       </g>
       <g id="Graphic_417">
         <text transform="translate(330.0175 73.29996)" fill="black">
-          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="0" y="15" xml:space="preserve">validate</tspan>
-          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="0" y="34" xml:space="preserve">form data</tspan>
+          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="0" y="15">validate</tspan>
+          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="0" y="34">form data</tspan>
         </text>
       </g>
       <g id="Line_418">
