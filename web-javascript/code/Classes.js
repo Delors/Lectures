@@ -62,7 +62,7 @@ class Queue {
     }
   }
 
-  *[Symbol.iterator]() { // Implementation of the iterator protocol using a generator
+  *[Symbol.iterator]() { // implements the iterator protocol using a generator
     let c = this.#first;
     while (c !== null) {
       yield c.e;
@@ -77,11 +77,12 @@ class Queue {
 
 const q = new Queue();
 q.enqueue(1);
-console.log("new Queue().enqueue(1).foreach(console.log): "); q.foreach(console.log);
+console.log("new Queue().enqueue(1).foreach(console.log): "); 
+q.foreach(console.log);
 for (let v of q) { console.log(v); }
 
 try {
-  /* "first" is not the name of the private fiedl!
+  /* "first" is not the name of the private field!
      Hence, q.first is not our private field and:
      
       console.log("q.first", q.first); 

@@ -1,7 +1,7 @@
 const messages = [];
 // The last examples require that "use strict"; is not enabled!
 
-// Die Funktionsdeklaration der Funktion "hello" ist "hochgezogen" (eng. "hoisted")
+// Die Funktionsdeklaration der Funktion "hello" ist "hochgezogen" (🇺🇸 hoisted)
 // und kann hier verwendet werden.
 hello("Michael");
 
@@ -43,7 +43,7 @@ function sum(...args) {
   // rest parameter
   log("typeof args: " + typeof args + "; isArray: "+ Array.isArray(args)); 
   log("args: " + args);
-  log("args:", ...args); // es werden alle Elemente des Arrays als einzelne Argumente übergeben
+  log("args:", ...args); // die Arraywerte werden als einzelne Args. übergeben
   return args.reduce((a, b) => a + b, 0); // function nesting
 }
 log(sum(1, 2, 3, 4, 5)); // 15

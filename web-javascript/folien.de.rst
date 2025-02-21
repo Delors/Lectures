@@ -1,10 +1,11 @@
 .. meta:: 
-    :author: Michael Eichberg
-    :keywords: "Web Programmierung", "JavaScript"
-    :description lang=de: Webprogrammierung mit JavaScript
-    :id: lecture-web-programming-javascript
-    :first-slide: last-viewed
-    :master-password: WirklichSchwierig!
+   :version: renaissance
+   :author: Michael Eichberg
+   :keywords: "Web Programmierung", "JavaScript"
+   :description lang=de: Webprogrammierung mit JavaScript
+   :id: lecture-web-programming-javascript
+   :first-slide: last-viewed
+   :master-password: WirklichSchwierig!
 
 .. |html-source| source::
     :prefix: https://delors.github.io/
@@ -17,27 +18,24 @@
 .. role:: incremental   
 .. role:: eng
 .. role:: ger
-.. role:: red
-.. role:: green
-.. role:: the-blue
-.. role:: minor
+.. role:: peripheral
 .. role:: obsolete
-.. role:: line-above
+.. role:: js(code)
+   :language: javascript
 
 
-
-.. class:: animated-symbol
+.. class:: animated-logo
 
 Webprogrammierung mit JavaScript
 ================================================
 
 Eine kurze Einführung/eine kurze Übersicht über JavaScript für erfahrene Programmierer.
 
-.. container:: line-above tiny
+----
 
-    :Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
-    :Kontakt: michael.eichberg@dhbw.de, Raum 149B
-    :Version: 2.0
+:Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
+:Kontakt: michael.eichberg@dhbw.de, Raum 149B
+:Version: 2.0
 
 .. supplemental::
 
@@ -56,7 +54,7 @@ Historie
 ------------------------------------------------
 
 .. module:: timeline
-   :class: far-smaller align-center
+   :class: s-font-size-90 align-center
 
    {
     "class" : "JavaScript-Timeline",
@@ -78,36 +76,41 @@ Historie
 Seit 2016 gibt es jährliche Updates (ECMAScript 2016, 2017, 2018, 2019, 2020, 2021, 2022, ...)
 
 
+.. class:: new-section
+
+Grundlegende Sprachkonstrukte
+------------------------------------------------
+
 
 Grundlagen
 --------------
 
-.. container:: scrollable
+.. story::
    
-  .. class:: incremental
+  .. class:: incremental-list
 
   - Objektorientiert
   
-      .. class:: list-with-explanations 
+    .. class:: list-with-explanations 
 
-      - Protoypische Vererbung
-      - Objekte *erben* von anderen Objekten
-      - Objekte als allgemeine Container
+    - Protoypische Vererbung
+    - Objekte *erben* von anderen Objekten
+    - Objekte als allgemeine Container
       
-         (Im Grunde eine Vereinheitlichung von Objekten und Hashtabellen.)
-      - seit ES6 werden auch Klassen unterstützt; diese sind aber nur syntaktischer Zucker
+      (Im Grunde eine Vereinheitlichung von Objekten und Hashtabellen.)
+    - seit ES6 werden auch Klassen unterstützt; diese sind aber nur syntaktischer Zucker
   - Skriptsprache
 
-      - *Loose Typing*/*Dynamische Typisierung*
-      - *Load and go-delivery* (Lieferung als Text/Quellcode)
-      - Garbage Collected
-      - Single-Threaded
+    - *Loose Typing*/*Dynamische Typisierung*
+    - *Load and go-delivery* (Lieferung als Text/Quellcode)
+    - Garbage Collected
+    - Single-Threaded
 
   - Funktionen sind Objekte erster Klasse
-  - Ein (globaler) Namespace
+  - (im Wesentlichen) ein (globaler) Namespace
   - Syntaktisch eine Sprache der "C"-Familie (viele Ähnlichkeiten zu Java)
   - Standardisiert durch die ECMA (ECMAScript)
-  - Verwendet ganz insbesondere in Browsern, aber auch Serverseitig (`Node.js <http://nodejs.org/>`__) oder in Desktop-Anwendungen (Electron)
+  - Verwendet ganz insbesondere in Browsern, aber auch Serverseitig (z. B. `Node.js <http://nodejs.org/>`__) oder in Desktop-Anwendungen (z. B. Electron)
 
 
 
@@ -116,7 +119,7 @@ Reservierte Schlüsselworte
 
 Schlüsselworte:
 
-.. class:: incremental
+.. class:: incremental-list
 
   - ``function, async, await, return, yield``
   - ``break, continue, case, default, do, else, for, if, instanceof, of, typeof, switch, while``
@@ -125,7 +128,8 @@ Schlüsselworte:
   - ``const, let, var``
   - ``export, import``
 
-.. container:: incremental
+.. remark:: 
+   :class: incremental margin-top-1em
 
    Nicht genutzte Schlüsselworte:
 
@@ -136,11 +140,11 @@ Schlüsselworte:
 Bezeichner (*Identifier*)
 ---------------------------
  
-.. container:: minor
+.. container:: peripheral
 
    (Sehr vergleichbar mit Java.)
 
-.. class:: incremental
+.. class:: incremental-list
 
 - Buchstaben (Unicode), Ziffern, Unterstriche, Dollarzeichen
 - Ein Identifier darf nicht mit einer Ziffer beginnen
@@ -159,8 +163,6 @@ Global Verfügbare Objekte
 Standard
 _________
 
-.. class:: smaller
-
 - ``console``
 - ``Number``, ``Boolean``,  ``Date``, ``BigInt``, ``Math``, ...
 
@@ -169,47 +171,33 @@ _________
 `Von Browsern zur Verfügung gestellte Objekte <https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects>`__ (Ein Auszug) 
 ________________________________________________________________________________________________________________________________________________________
 
-.. class:: smaller
+.. class:: horizontal
 
-.. container:: two-columns
-
-   .. container:: column
-
-     - ``window`` 
-     - ``document`` (bzw. ``window.document``)
-
-   .. container:: column margin-left-1em
-
-     - ``alert`` 
-     - ``navigator``
-     - ``location``
+- ``window`` 
+- ``document`` (bzw. ``window.document``)
+- ``alert`` 
+- ``navigator``
+- ``location``
 
 
 
 `Von Node.js zur Verfügung gestellte Objekte <https://nodejs.org/api/globals.html>`__ (Ein Auszug)
-_____________________________________________________________________________________________________
+____________________________________________________________________________________________________
 
-.. class:: smaller
+.. class:: horizontal
 
-.. container:: two-columns
-
-   .. container:: column
-
-     - ``module``
-     - ``exports``
-     - ``require``
-  
-   .. container:: column  margin-left-1em
-
-     - ``process``
-     - ``crypto``
+- ``module``
+- ``exports``
+- ``require``
+- ``process``
+- ``crypto``
 
 
 
-`Deklaration von Variablen <./code/Variables_const_let.mjs>`__ (``const`` und ``let``)
----------------------------------------------------------------------------------------
+`Deklaration von Variablen <./code/Variables_const_let.mjs>`__ (:js:`const` und :js:`let`)
+--------------------------------------------------------------------------------------------
 
-.. container:: scrollable
+.. scrollable::
 
    .. include:: code/Variables_const_let.mjs
       :code: javascript
@@ -223,11 +211,11 @@ ________________________________________________________________________________
 
    Um diesen und den Code auf den folgenden Folien ggf. mit Hilfe von Node.js auszuführen, muss am Anfang der Datei:
 
-      ``import { ilog, log, done } from "./log.mjs";``
+      :js:`import { ilog, log, done } from "./log.mjs";`
 
    und am Ende der Datei:
 
-     ``done();``
+     :js:`done();`
    
    hinzugefügt werden.
 
@@ -240,7 +228,7 @@ ________________________________________________________________________________
 `Datentypen und Operatoren <./code/Datatypes.js>`__
 -----------------------------------------------------
 
-.. container:: scrollable
+.. scrollable::
       
    .. include:: code/Datatypes.js
       :code: javascript
@@ -253,7 +241,7 @@ ________________________________________________________________________________
 `Funktionsdefinitionen <./code/Functions_basics.js>`__
 -------------------------------------------------------
 
-.. container:: scrollable
+.. scrollable::
 
    .. include:: code/Functions_basics.js
       :code: javascript
@@ -265,12 +253,12 @@ ________________________________________________________________________________
 
 
 
-.. class:: exercise
+.. class:: exercises
 
-Übung - vertraut machen mit JavaScript und Node.js
+Übung - JavaScript und Node.js erste Schritte
 ----------------------------------------------------
 
-**Voraussetzung: Installieren Sie Node.js (http://nodejs.org/).**
+*Voraussetzung: Installieren Sie Node.js (http://nodejs.org/).*
 
 .. exercise:: Hello World in Node.js
 
@@ -295,7 +283,7 @@ ________________________________________________________________________________
          console.log("Hello World");
 
 
-.. class:: exercise
+.. class:: exercises
 
 Übung - die JavaScript Konsole
 ------------------------------------
@@ -308,10 +296,10 @@ ________________________________________________________________________________
    
       Hinweise: 
 
-      - das von :code:`document.body` referenziert HTML Element enthält den gesamten Inhalt des Dokuments
-      - die aktuellen Abmaße des Dokuments können Sie mit der Funktion :code:`window.getComputedStyle(<HTML Element>).height` ermitteln; geben Sie den Wert auf der Konsole aus bevor Sie das Dokument scrollen; was fällt Ihnen auf?
+      - das von :js:`document.body` referenziert HTML Element enthält den gesamten Inhalt des Dokuments
+      - die aktuellen Abmaße des Dokuments können Sie mit der Funktion :js:`window.getComputedStyle(<HTML Element>).height` ermitteln; geben Sie den Wert auf der Konsole aus bevor Sie das Dokument scrollen; was fällt Ihnen auf?
       - um zu scrollen, können Sie window.scrollTo(x,y) verwenden
-      - um den Integer Wert eines Wertes in Pixeln zu bestimmen, können Sie ``parseInt`` verwenden
+      - um den Integer Wert eines Wertes in Pixeln zu bestimmen, können Sie :js:`parseInt` verwenden
 
    .. solution:: 
       :pwd: scrollTo(x,y)
@@ -326,7 +314,7 @@ ________________________________________________________________________________
 `Vergleich von Werten und implizite Typumwandlung <./code/ComparingValues.mjs>`__
 ------------------------------------------------------------------------------------------
 
-.. container:: scrollable
+.. scrollable::
 
    .. include:: code/ComparingValues.mjs
       :code: javascript
@@ -338,13 +326,13 @@ ________________________________________________________________________________
 
 .. supplemental::
 
-   NaN (Not a Number) repräsentiert das Ergebnis einer Operation die keinen sinnvollen Wert hat. Ein Vergleich mit NaN ist *immer* :code:`false`. Um zu überprüfen, ob ein Wert NaN ist muss :code:`isNaN(<Value>)` verwendet werden.
+   NaN (Not a Number) repräsentiert das Ergebnis einer Operation die keinen sinnvollen Wert hat. Ein Vergleich mit NaN ist *immer* :js:`false`. Um zu überprüfen, ob ein Wert NaN ist muss :js:`isNaN(<Value>)` verwendet werden.
 
 
 `Bedingungen und Schleifen <./code/LoopsAndConditions.mjs>`__
 --------------------------------------------------------------
 
-.. container:: scrollable
+.. scrollable::
 
    .. include:: code/LoopsAndConditions.mjs
       :code: javascript
@@ -357,14 +345,14 @@ ________________________________________________________________________________
 
 .. supplemental::
 
-  Die Tatsache, dass insbesondere null als auch undefined falsy sind, wird of in Bedingungen ausgenutzt (z. B., :code:`if (!x)...`).
+  Die Tatsache, dass insbesondere :js:`null` als auch :js:`undefined` falsy sind, wird of in Bedingungen ausgenutzt (z. B., :js:`if (!x)...`).
 
 
 
 `Fehlerbehandlung <./code/Errors.js>`__
 --------------------------------------------------------------
 
-.. container:: scrollable
+.. scrollable::
 
    .. include:: code/Errors.js
       :code: javascript
@@ -380,6 +368,8 @@ ________________________________________________________________________________
 
 
 
+.. class:: exercises
+
 Übung - Bedingungen und Schleifen
 ------------------------------------
 
@@ -387,11 +377,11 @@ ________________________________________________________________________________
 
    Implementieren Sie eine Funktion, die ein Array übergeben bekommt und ein neues Array zurückgibt in dem jedes n-te Element nicht vorkommt.
 
-   Beispiel: ``removeNthElement([1,2,3,4,5,6,7], 2)`` :math:`\Rightarrow` ``[1,3,5,7]``
+   Beispiel: :js:`removeNthElement([1,2,3,4,5,6,7], 2)` :math:`\Rightarrow` :js:`[1,3,5,7]`
 
    - Schreiben Sie Ihren Code in eine JavaScript Datei und führen Sie diese mit Hilfe von Node.js aus. 
    
-   - Testen Sie Ihre Funktion mit verschiedenen Eingaben und lassen Sie sich das Ergebnis ausgeben (z. B. :code:`console.log(removeNthElement([1,2,3,4,5,6,7],2))`)!
+   - Testen Sie Ihre Funktion mit verschiedenen Eingaben und lassen Sie sich das Ergebnis ausgeben (z. B. :js:`console.log(removeNthElement([1,2,3,4,5,6,7],2))`)!
 
    .. solution::
       :pwd: _RemoveNthElement
@@ -414,14 +404,16 @@ ________________________________________________________________________________
 
 
 
+.. class:: exercises
+
 Übung - Fehlerbehandlung
 ------------------------------------
 
 .. exercise:: removeNthElement mit Fehlerbehandlung
 
-   - Erweitern Sie die Implementierung von ``removeNthElement`` so, dass die Funktion einen Fehler wirft, wenn das übergebene Array kein Array ist oder wenn der zweite Parameter kein positiver Integer ist.
+   - Erweitern Sie die Implementierung von :js:`removeNthElement` so, dass die Funktion einen Fehler wirft, wenn das übergebene Array kein Array ist oder wenn der zweite Parameter kein positiver Integer ist.
   
-   - Testen Sie alle Fehlerzustände und fangen Sie die entsprechenden Fehler ab (``catch``) und geben Sie die Nachrichten aus.
+   - Testen Sie alle Fehlerzustände und fangen Sie die entsprechenden Fehler ab (:js:`catch`) und geben Sie die Nachrichten aus.
 
    .. solution:: 
       :pwd: removeNthElementWithErrorHandling
@@ -464,18 +456,18 @@ ________________________________________________________________________________
          
 
 
-.. class:: exercise
+.. class:: exercises
 
 Übung - Funktionen 
 ---------------------
 
 .. exercise:: Einfacher RPN Calculator
 
-   Implementieren Sie einen einfachen RPN (Reverse Polish Notation) Calculator, der eine Liste von Zahlen und Operatoren (``+``, ``-``, ``*``, ``/``) als Array entgegennimmt und das Ergebnis berechnet.
+   Implementieren Sie einen einfachen RPN (Reverse Polish Notation) Calculator, der eine Liste von Zahlen und Operatoren (:js:`+`, :js:`-`, :js:`*`, :js:`/`) als Array entgegennimmt und das Ergebnis berechnet.
 
-   Nutzen Sie keine ``if`` oder ``switch`` Anweisung, um die Operatoren zu unterscheiden. Nutzen Sie stattdessen ein Objekt. Sollte der Operator unbekannt sein, dann geben Sie eine entsprechende Fehlermeldung aus.
+   Nutzen Sie keine :js:`if` oder :js:`switch` Anweisung, um die Operatoren zu unterscheiden. Nutzen Sie stattdessen ein Objekt. Sollte der Operator unbekannt sein, dann geben Sie eine entsprechende Fehlermeldung aus.
 
-   Beispiel: ``eval([2,3,"+",4,"*"])`` :math:`\Rightarrow` ``20``
+   Beispiel: :js:`eval([2,3,"+",4,"*"])` :math:`\Rightarrow` :js:`20`
 
    .. solution::
       :pwd: _RPNCalculator+
@@ -526,7 +518,7 @@ ________________________________________________________________________________
 
 **(Neuer Code sollte var nicht mehr verwenden!)**
 
-.. container:: scrollable
+.. scrollable::
 
    .. include:: code/Variables_var.mjs
       :code: javascript
@@ -541,7 +533,7 @@ ________________________________________________________________________________
 `Destrukturierung <./code/Destructuring.mjs>`__ (:eng:`Destructuring`)
 -------------------------------------------------------------------------
 
-.. container:: scrollable
+.. scrollable::
       
    .. include:: code/Destructuring.mjs
       :code: javascript
@@ -556,7 +548,7 @@ ________________________________________________________________________________
 `JSON <./code/JSON.js>`__ (JavaScript Object Notation)
 ----------------------------------------------------------
 
-.. container:: scrollable
+.. scrollable::
       
    .. include:: code/JSON.js
       :code: javascript
@@ -576,10 +568,10 @@ ________________________________________________________________________________
 
 - Eingebaute Unterstützung basierend auf entsprechenden Literalen (Strings in "/") und einer API
 - inspiriert von der Perl Syntax
-- Methoden auf regulären Objekten: :code:`test` (e.g., :code:`RegExp.test(String)`).
-- Methoden auf Strings, die reguläre Ausdrücke verarbeiten: :code:`search`, :code:`match`, :code:`replace`, :code:`split`, ...
+- Methoden auf regulären Objekten: :js:`test` (e.g., :js:`RegExp.test(String)`).
+- Methoden auf Strings, die reguläre Ausdrücke verarbeiten: :js:`search`, :js:`match`, :js:`replace`, :js:`split`, ...
 
-.. container:: scrollable
+.. scrollable::
       
    .. include:: code/RegularExpressions.js
       :code: javascript
@@ -604,7 +596,7 @@ ________________________________________________________________________________
 Grundlagen von ECMAScript Modulen
 ------------------------------------------------
 
-.. container:: scrollable
+.. scrollable::
 
    `Queue.mjs <./code/Queue.mjs>`__ exportiert die Klasse Queue
 
@@ -614,7 +606,7 @@ Grundlagen von ECMAScript Modulen
       :class: code far-far-smaller copy-to-clipboard
       :tab-width: 4
 
-   `log.mjs <./code/log.mjs>`__ verwendet (:code:`import`) die Klasse Queue und exportiert Funktionen zum Loggen
+   `log.mjs <./code/log.mjs>`__ verwendet (:js:`import`) die Klasse Queue und exportiert Funktionen zum Loggen
    
    .. include:: code/log.mjs
       :code: javascript
@@ -628,18 +620,18 @@ Grundlagen von ECMAScript Modulen
 
    ECMAScript Module verwenden immer den *strict mode*.
 
-   Import Statements erlauben das selektierte importieren als auch das Umbenennen von importierten Elementen (z. B., :code:`import { Queue as Q } from "./Queue.mjs";`).
+   Import Statements erlauben das selektierte importieren als auch das Umbenennen von importierten Elementen (z. B., :js:`import { Queue as Q } from "./Queue.mjs";`).
 
 
 
 Alles ist ein Objekt
 ------------------------------------------------
 
-- ``this`` ist ein "zusätzlicher" Parameter, dessen Wert von der aufrufenden Form abhängt
-- ``this`` ermöglicht den Methoden den Zugriff auf ihr Objekt
-- ``this`` wird zum Zeitpunkt des Aufrufs gebunden (außer bei Arrow-Funktionen)
+- :js:`this` ist ein "zusätzlicher" Parameter, dessen Wert von der aufrufenden Form abhängt
+- :js:`this` ermöglicht den Methoden den Zugriff auf ihr Objekt
+- :js:`this` wird zum Zeitpunkt des Aufrufs gebunden (außer bei Arrow-Funktionen)
 
-.. container:: scrollable
+.. scrollable::
 
    .. include:: code/EverythingIsAnObject.js
       :code: javascript
@@ -652,7 +644,7 @@ Alles ist ein Objekt
 `Partial Function Application <./code/Functions_partiell.js>`__
 ------------------------------------------------------------------------------------------
 
-.. container:: scrollable
+.. scrollable::
 
    .. include:: code/Functions_partiell.js
       :code: javascript
@@ -665,31 +657,31 @@ Alles ist ein Objekt
 `Prototype basierte Vererbung <./code/ObjectCreate.js>`__
 -------------------------------------------------------------
 
-.. stack::
+.. deck::
 
-   .. layer::
+   .. card::
 
-      Verwendung von :code:`Object.create` zur Initialisierung der *Prototype Chain*:
+      Verwendung von :js:`Object.create` zur Initialisierung der *Prototype Chain*:
 
       .. code:: javascript
          :number-lines:
-         :class: copy-to-clipboard far-smaller
+         :class: copy-to-clipboard 
 
          const p = { s : "p" };
          const c = Object.create(p);
          const gc = Object.create(c);
 
       .. image:: images/prototype_chain/object_literals_and_the_prototype_chain.svg
-         :width: 1400px
          :align: center
+         :class: margin-top-1em
 
-   .. layer:: incremental
+   .. card:: 
       
       Verwendung der Eigenschaften von Prototypen:
 
       .. code:: javascript
          :number-lines:
-         :class: copy-to-clipboard far-smaller
+         :class: copy-to-clipboard 
 
          const p = { s : "p" };
          const c = Object.create(p);
@@ -697,45 +689,44 @@ Alles ist ein Objekt
          gc.t = "q";
 
       .. image:: images/prototype_chain/object_literals_and_the_prototype_chain_with_update.svg
-         :width: 1400px
          :align: center
          :class: margin-top-1em margin-bottom-1em
 
       .. code:: javascript
          :number-lines: 5
-         :class: copy-to-clipboard far-smaller incremental
+         :class: copy-to-clipboard incremental
 
          gc.s = "gc"
          console.log(gc.s); // gc
          delete gc.s;
          console.log(gc.s); // p
 
-   .. layer:: incremental
+   .. card:: 
       
       .. rubric:: *Pseudoclassical Inheritance*
 
       .. code:: javascript
          :number-lines:
-         :class: copy-to-clipboard far-far-smaller
+         :class: copy-to-clipboard
 
-
-         function Person(name, title){ this.name = name; this.title = title; } // constructor
+         // constructor for Person objects:
+         function Person(name, title){ this.name = name; this.title = title; } 
          Person.prototype.formOfAddress = function (){
             const foa = "Dear ";
             if(this.title){ foa += this.title+" "; }
             return foa + this.name; 
          }
-         function Student(name, title, id, email) { // constructor
-            Person.call(this, name, title);
+         function Student(name, title, id, email) { 
+            Person.call(this, name, title); // super constructor call
             this.id = id;
             this.email = email;
          }
          Student.prototype = Object.create(Person.prototype);
          Student.prototype.constructor = Student;
          
-         const aStudent = new Student("Emilia Galotti", "Mrs.", 1224441, 'emilia@galotti.com'); 
+         const aStudent = new Student("Emily Xi", "Mrs.", 12441, 'emily@xi.de'); 
 
-   .. layer:: incremental
+   .. card:: 
       
       .. rubric:: Objektabhängigkeiten
 
@@ -750,15 +741,19 @@ Alles ist ein Objekt
          Student.prototype = Object.create(Person.prototype);
          Student.prototype.constructor = Student;
  
-         const p = new Person(…); const s = new Student(…);
+         const p = new Person(…); 
+         const s = new Student(…);
 
-      .. image:: images/prototype_chain/pseudoclassical_Inheritance.svg
-         :width: 1000px
-         :align: center
+      .. container:: scale-on-hover
+
+         .. container:: scaling-container
+
+            .. image:: images/prototype_chain/pseudoclassical_Inheritance.svg
+               :align: center
 
 .. supplemental::
 
-   Die Eigenschaft :code:`prototype` einer Funktion (``F``) verweist auf das Objekt, dass als Prototype (:code:`__proto__`) verwendet wird, wenn die Funktion als Konstruktor verwendet wird. D. h. im Falle einer Instantiierung von :code:`F` (d. h. :code:`const newF = new F()`) wird das Objekt, das durch :code:`F.prototype` referenziert wird, als Prototype (:code:`newF.__proto__`) des neu erstellten Objekts (:code:`newF`) verwendet.
+   Die Eigenschaft :js:`prototype` einer Funktion (:js:`F`) verweist auf das Objekt, dass als Prototype (:js:`__proto__`) verwendet wird, wenn die Funktion als Konstruktor verwendet wird. D. h. im Falle einer Instantiierung von :js:`F` (d. h. :js:`const newF = new F()`) wird das Objekt, das durch :js:`F.prototype` referenziert wird, als Prototype (:js:`newF.__proto__`) des neu erstellten Objekts (:js:`newF`) verwendet.
 
    .. include:: code/Prototypes.js
       :code: javascript
@@ -771,33 +766,39 @@ Alles ist ein Objekt
 Praktische Verwendung von Prototypen basierter Vererbung
 -------------------------------------------------------------
 
-.. include:: code/Array.prototype.js
-   :code: javascript
-   :number-lines:
-   :class: far-far-smaller scrollable copy-to-clipboard
-   :tab-width: 4
+.. scrollable::
+
+   .. include:: code/Array.prototype.js
+      :code: javascript
+      :number-lines:
+      :class:  copy-to-clipboard
+      :tab-width: 4
 
 
 
 `DOM Manipulation <./code/DOM.html>`__
 ------------------------------------------------
 
-.. include:: code/DOM.html
-   :code: html
-   :number-lines:
-   :class: far-far-smaller scrollable copy-to-clipboard
-   :tab-width: 4
+.. scrollable::
+
+   .. include:: code/DOM.html
+      :code: html
+      :number-lines:
+      :class: copy-to-clipboard
+      :tab-width: 4
 
 
 
 `Minimaler Server mit Express JS <./code/UsersServer.mjs>`__
 --------------------------------------------------------------
 
-.. include:: code/UsersServer.mjs
-   :code: javascript
-   :number-lines:
-   :class: far-far-smaller scrollable copy-to-clipboard
-   :tab-width: 4
+.. scrollable::
+
+   .. include:: code/UsersServer.mjs
+      :code: javascript
+      :number-lines:
+      :class: copy-to-clipboard
+      :tab-width: 4
 
 .. supplemental::
 
@@ -821,11 +822,13 @@ Praktische Verwendung von Prototypen basierter Vererbung
 `Interaktion mit Server mit Hilfe von Fetch <./code/Users.html>`__
 --------------------------------------------------------------------
 
-.. include:: code/Users.html
-   :code: html
-   :number-lines:
-   :class: far-far-smaller scrollable copy-to-clipboard
-   :tab-width: 4
+.. scrollable::
+
+   .. include:: code/Users.html
+      :code: html
+      :number-lines:
+      :class: copy-to-clipboard
+      :tab-width: 4
 
 .. TODO add (more :-)) explanations related to Promises, async-await, etc.
 
@@ -836,14 +839,14 @@ Beispiel - Rumpf einer einfachen Webanwendung ("Quizzy")
 
 Im Folgenden verwenden wir zur Client-/Server-Kommunikation insbesondere Websockets.
 
-.. container:: scrollable
+.. scrollable::
 
    **Server**
 
    .. include:: code/quizzy/game.js
       :code: javascript
       :number-lines:
-      :class: far-far-smaller copy-to-clipboard
+      :class: copy-to-clipboard
       :tab-width: 4
 
    **Client - Players**
@@ -851,7 +854,7 @@ Im Folgenden verwenden wir zur Client-/Server-Kommunikation insbesondere Websock
    .. include:: code/quizzy/player.html
       :code: html
       :number-lines:
-      :class: far-far-smaller copy-to-clipboard
+      :class: copy-to-clipboard
       :tab-width: 4
 
    **Client - Admin**
@@ -859,7 +862,7 @@ Im Folgenden verwenden wir zur Client-/Server-Kommunikation insbesondere Websock
    .. include:: code/quizzy/admin.html
       :code: html
       :number-lines:
-      :class: far-far-smaller copy-to-clipboard
+      :class: copy-to-clipboard
       :tab-width: 4
 
 
@@ -873,11 +876,11 @@ Im Folgenden verwenden wir zur Client-/Server-Kommunikation insbesondere Websock
 Authentifizierung mit JWT (und Express)
 ------------------------------------------------
 
-.. container:: scrollable
+.. scrollable::
 
    Im Folgenden wird primär die Verwendung eines JWTs zur Authentifizierung von Benutzern demonstriert.
 
-   .. class:: minor
+   .. class:: peripheral
    
       Die initiale Authentifizierung, die im folgenden Beispiel über ein per get-Request übermittelten Benutzernamen und Passwort erfolgt, ist **nicht sicher**. In einer realen Anwendung sollte für die initiale Authentifizierung ein sicherer Mechanismus verwendet werden. Eine Möglichkeit wäre z. B. die Verwendung von DIGEST Authentication (nicht empfohlen bzw. nur für einfachste Fälle). Sinnvoll wäre Basic Authentication *in Verbindung mit HTTPS* oder zum Beispiel der Einsatz von OAuth. 
       

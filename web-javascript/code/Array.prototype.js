@@ -3,8 +3,10 @@ try { console.log(a.fold()); } catch (error) {
   console.log("error: ", error.message);
 }
 
-// ADDING FUNCTIONS TO Array.prototpye IS NOT RECOMMENDED! IF ECMAScript EVENTUALLY 
-// ADDS THIS METHOD (I.E. fold) TO THE PROTOTYPE OF ARRAY OBJECTS, IT MAY CAUSE HAVOC.
+// - ATTENTION! ----------------------------------------------------------------
+// ADDING FUNCTIONS TO Array.prototpye IS NOT RECOMMENDED! IF ECMAScript 
+// EVENTUALLY ADDS THIS METHOD (I.E. fold) TO THE PROTOTYPE OF ARRAY OBJECTS, 
+// IT MAY CAUSE HAVOC.
 Array.prototype.fold = function (f) {
   if (this.length === 0) {
     throw new Error("array is empty");

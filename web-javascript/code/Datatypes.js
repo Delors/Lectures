@@ -1,8 +1,8 @@
-console.log("Undefined --------------------------------------------------------------");
+console.log("Undefined ------------------------------------------------------");
 let u = undefined;
 console.log("u", u);
 
-console.log("Number -----------------------------------------------------------------");
+console.log("Number ---------------------------------------------------------");
 let i = 1; // double-precision 64-bit binary IEEE 754 value
 let f = 1.0; // double-precision 64-bit binary IEEE 754 value
 let l = 10_000;
@@ -23,7 +23,8 @@ let y = Infinity;
 let z = -Infinity;
 
 // Standard Operatoren: +, - , *, /, %, ++, --, **
-// Bitwise Operatoren: &, |, ^, ~, <<, >>, >>> (operieren auf dem Ganzzahlwert der Bits)
+// Bitwise Operatoren: &, |, ^, ~, <<, >>, >>> 
+//                     (operieren immer auf dem Ganzzahlwert der Bits)
 console.log("i =", i, "; i++  ", i++); // 1 oder 2?
 console.log("i =", i, "; ++i ", ++i); // 2 oder 3?
 console.log("2 ** 4 === 0 ", 2 ** 4);
@@ -31,20 +32,20 @@ console.log("7 % 3 === ", 7 % 3);
 console.log("1 / 0 === ", 1 / 0);
 
 
-console.log("BigInt -----------------------------------------------------------------");
+console.log("BigInt ---------------------------------------------------------");
 let ib = 1n; 
 console.log(100n === BigInt(100));
 console.log(Number.MAX_SAFE_INTEGER + 2102); // 9007199254743092
 console.log(BigInt(Number.MAX_SAFE_INTEGER) + 2102n); // 9007199254743093n
 
 
-console.log("Boolean ----------------------------------------------------------------");
+console.log("Boolean --------------------------------------------------------");
 let b = true; // oder false 
 console.log("Boolean(undefined)", Boolean(undefined)); // true oder false?
 console.log(null == true ? "true" : "false"); // true oder false?
 
 
-console.log("(Quasi-)Logische Operatoren -------------------------------------------");
+console.log("(Quasi-)Logische Operatoren ------------------------------------");
 console.log('1 && "1": ', 1 && "1");
 console.log('null && "1": ', null && "1");
 console.log("null && true: ", null && true);
@@ -54,7 +55,8 @@ console.log("{} && true: ", {} && true);
 
 // Neben den Standardoperatoren: ``&&``, ``||``, ``!`` gibt es auch noch ``??``
 // Der ``??``-Operator gibt den rechten Operanden zurück, wenn der linke Operand
-// ``null`` oder ``undefined`` ist. Andernfalls gibt er den linken Operanden zurück.
+// ``null`` oder ``undefined`` ist. Andernfalls gibt er den linken Operanden 
+// zurück.
 // ``??`` ist der *nullish coalescing operator (??) (vergleichbar zu ||)*
 console.log('1 ?? "1": ', 1 ?? "1");
 console.log('null ?? "1": ', null ?? "1");
@@ -71,7 +73,7 @@ console.log("undefined ?? false: ", undefined ?? false);
 console.log("undefined ?? undefined: ", undefined ?? undefined);
 
 
-console.log("Strings ----------------------------------------------------------------");
+console.log("Strings --------------------------------------------------------");
 let _s = "42";
 console.log("Die Antwort ist " + _s + "."); // String concatenation
 console.log(`Die Antwort ist ${_s}.`); // Template literals (Template strings)
@@ -83,7 +85,7 @@ console.log(`
 console.log(String(42)); // "42"
 
 
-console.log("Objekte ----------------------------------------------------------------");
+console.log("Objekte --------------------------------------------------------");
 let emptyObject = null;
 let anonymousObj = {
   i: 1,
@@ -99,8 +101,8 @@ anonymousObj["j"] = 4; // mittels String ("j")
 anonymousObj["k"] = 3;
 console.log("anonymousObj:                     ", anonymousObj);
 console.log("anonymousObj.toString():          ", anonymousObj.toString());
-delete anonymousObj["?"]; // delete operator dient dem Löschen von Eigenschaften
-delete anonymousObj.toString; // delete operator dient dem Löschen von Eigenschaften
+delete anonymousObj["?"]; // delete dient dem Löschen von Eigenschaften
+delete anonymousObj.toString; // delete dient dem Löschen von Eigenschaften
 console.log("anonymousObj.toString() [original]", anonymousObj.toString());
 // Der Chain-Operator kann verwendet werden, um auf Eigenschaften (Properties) 
 // von Objekten zuzugreifen, ohne dass eine Fehlermeldung ausgegeben wird, 
@@ -117,19 +119,19 @@ anonymousObj.name ||= "Max Mustermann";
 
 
 
-console.log("Date -------------------------------------------------------------------");
+console.log("Date -----------------------------------------------------------");
 let date = new Date("8.6.2024"); // ACHTUNG: Locale-Settings
 console.log(date);
 
 
-console.log("Funktionen sind auch Objekte -------------------------------------------");
+console.log("Funktionen sind auch Objekte -----------------------------------");
 let func = function () {
   return "Hello World";
 };
 console.log(func, func());
 
 
-console.log("Arrays -----------------------------------------------------------------");
+console.log("Arrays ---------------------------------------------------------");
 let temp = undefined;
 let $a = [1];
 console.log("let $a = [1]; $a, $a.length", $a, $a.length);
@@ -145,7 +147,7 @@ console.log("Array.isArray({})", Array.isArray({}));
 console.log("Array.isArray(1)", Array.isArray(1));
 
 
-console.log("Symbols ---------------------------------------------------------------");
+console.log("Symbols --------------------------------------------------------");
 let sym1 = Symbol("1"); // a unique and immutable primitive value
 let sym2 = Symbol("1");
 let obj1Values = { sym1: "value1", sym2: "value2" };

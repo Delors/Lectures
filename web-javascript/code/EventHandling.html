@@ -21,14 +21,16 @@
                 color = (color + 1) % 512;
                 let rgb = color;
                 if (rgb > 255) rgb = 256 - (rgb - 255);
-                document.body.style.backgroundColor = `rgb(${rgb}, ${rgb}, ${rgb})`;
+                document.body.style.backgroundColor = 
+                    `rgb(${rgb}, ${rgb}, ${rgb})`;
             };
-            setInterval(setColor, 10); // the function setColor is called every 10ms
+            setInterval(setColor, 10); // setColor is called every 10ms
         </script>
     </head>
     <body>
        <div id="users" style="width: fit-content;">
-            Damit es nicht langweilig wird, ändert sich die Hintergrundfarbe dieser Seite ständig.
+            Damit es nicht langweilig wird, ändert sich die Hintergrundfarbe 
+            dieser Seite ständig.
        </div>
     </body>
 </html>
