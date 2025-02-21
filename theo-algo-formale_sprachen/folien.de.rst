@@ -2218,7 +2218,7 @@ Zur Erinnerung: Entscheidbare Sprachen sind aufzählbar.
 
             .. example::
 
-                .. class:: column-list
+                .. class:: columns
 
                 - Gegeben sei :math:`G = (V ,T ,R,S)`:
 
@@ -2336,7 +2336,7 @@ Die Sprachhiarchie und die Chomsky-Typen
 
 .. exercise:: Aufzählung einer Sprache
 
-    .. class:: column-list
+    .. class:: columns
 
     - Gegeben sei :math:`G = (V ,T ,R,S)`:
 
@@ -2410,7 +2410,7 @@ Zwei Grammatiken für Terme wie :math:`{\color{red}1+ 2 * 3} ∈ L(G1) = L(G2)`:
 
 .. container:: scrollable
         
-    .. class:: column-list evenly-spaced-columns
+    .. class:: columns evenly-spaced
 
     - .. math::
 
@@ -2566,7 +2566,7 @@ Entwicklung von DSLs mit LARK
         
         .. example::
 
-            .. class:: column-list left-aligned-columns
+            .. class:: columns left-aligned
             
             - .. rubric:: "+" Ausdrücke
 
