@@ -41,13 +41,13 @@ A brief introduction.
 
 .. supplemental::
 
-  :Folien: 
+  :Slides/Script: 
 
       |html-source|
 
       |pdf-source|
 
-  :Fehler melden:
+  :Reporting errors:
 
       https://github.com/Delors/delors.github.io/issues
 
