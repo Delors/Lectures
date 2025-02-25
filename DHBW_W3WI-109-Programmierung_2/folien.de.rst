@@ -20,7 +20,7 @@
 .. role:: ger
 .. role:: red
 .. role:: green
-.. role:: the-blue
+.. role:: peripheral
 .. role:: obsolete
 
 
@@ -50,7 +50,9 @@ Inhalte gem. MHB
         .. rubric:: Weiter zu vertiefen
         
         :Klassenbibliotheken: API-Dokumentationen und ihre Nutzung.
-        :Software Entwicklung: Aufsetzen eines Projekts, Versionsverwaltung und Testen
+        :Software Entwicklung: Aufsetzen eines Projekts, Versionsverwaltung und Testen 
+
+            :peripheral:`(Im Wesentlichen behandelt in der Veranstaltung: Methoden der Softwareentwicklung; hier nur soweit wie es für das Verständnis der Programmierung II notwendig ist.)`
 
     .. card::
 
@@ -59,18 +61,26 @@ Inhalte gem. MHB
         .. container::  dd-margin-left-12em
 
             :Fortgeschrittene objektorientierte Konzepte: Generische Interfaces und Klassen. Ereignisbehandlung. Funktionale Programmierung
-            :Fortgeschrittene Programmiermethodik: Ein- und Ausgabe über Streams..
+            :Fortgeschrittene Programmiermethodik: Ein- und Ausgabe über Streams. Funktionale Programmierkonzepte.
     
             :Algorithmen: Beschreibung und Analyse. Suchverfahren, Sortierverfahren, Teile-und-Herrsche-Paradigma, Backtracking-Algorithmen.
             :Datentypen: elementare, strukturierte, objektorientierte und generische Datentypen.
             :Datenstrukturen: lineare Listen mit Feldstruktur, einfach und doppelt verkettete Listen, Bäume, Stapel und Schlangen mit ihren Grundoperationen für Einfügen, Löschen etc. 
-            :Abstrakte Datentypen: Collections und Iteratoren.
+            :Abstrakte Datentypen: *Collection*\ s und *Iterator*\ s.
 
     .. card:: 
 
         .. rubric:: Inhalte, die wir erst später (in einem anderen Semester/Kurs) behandeln werden
 
         :Nebenläufigkeit: Grundlagen der nebenläufigen Programmierung, Synchronisation von Threads, Deadlocks
+
+        .. rubric:: Inhalte, die wir nicht behandeln werden
+
+        :GUI Programmierung: 
+        
+            Entwicklung grafischer Benutzeroberflächen mit Java. 
+        
+            :peripheral:`(Benutzeroberflächen werden bei modernen Anwendungen häufig mit Webtechnologien entwickelt; auch wenn diese dann am Ende auf Desktoprechnern oder mobilen Geräten laufen.)`
 
 
 
@@ -86,12 +96,12 @@ Modul
 Bonuspunkte
 ------------------------------------------
 
-- Es wird eine unangekündigte Lernstandskontrolle in der Mitte des Semesters geben, die *Bonuspunkte* für die Klausur bringen kann. 
-- Es wird Übungsaufgaben geben, deren Lösungen bzw. Präsentation Bonuspunkte für die Klausur bringen können.
+- Es wird eine Lernstandskontrolle (d. h. kurzer Test) in der Mitte des Semesters geben, die *Bonuspunkte* für die Klausur bringen kann. 
+- Es wird vielleicht ergänzend Übungsaufgaben geben, deren Lösungen bzw. Präsentation Bonuspunkte für die Klausur bringen können. Der Gesamtbonus wird jedoch die Anzahl der Punkte, die für einen kompletten Notenschritt (2.0 -> 1.0) notwendig sein werden nicht überschreiten.
 
-  *Die Lernstandskontrollen können (insbesondere) auch Inhalte der Programmierung 1 abfragen bzw. beinhalten.*
-- Wer am Tage der Lernstandskontrollen krank ist, kann im Rahmen eines kurzen Gesprächs (zu einem zu vereinbarenden Termin) ggf. die Punkte erwerben.
-- Die Klausur wird so entworfen sein/bewertet werden, dass ohne Bonus eine 1,0 erreichbar ist. 
+  *Die Lernstandskontrolle kann (insbesondere) auch Inhalte der Programmierung 1 abfragen bzw. beinhalten.*
+- Wer am Tage der Lernstandskontrolle krank ist, kann im Rahmen eines kurzen Gesprächs (zu einem zu vereinbarenden Termin) ggf. die Punkte erwerben.
+- Die Klausur wird so entworfen sein/bewertet werden, dass ohne Bonus eine 1,0 zeitlich erreichbar ist. 
 
 
 
