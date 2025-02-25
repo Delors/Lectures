@@ -34,13 +34,13 @@ Die grundlegende Idee hinter der folgenden Reihenfolge ist, dass die Studierende
    5. Einführung in die Modellierung mit UML (`<prog-modellierung_mit_uml/folien.de.rst.html>`__)
    6. Objekt-orientierte Programmierung in Java - Einführung (`<prog-java-oo/folien.de.rst.html>`__)
    7. Objekt-orientierte Programmierung in Java - Vererbung und Polymorphie (`<prog-java-oo-inheritance/folien.de.rst.html>`__)
+   8. Objekt-orientierte Programmierung in Java - Domain Modeling, Java Records und Java Enums (`<prog-adv-java-domain-modeling/folien.de.rst.html>`__)
+   9. Objekt-orientierte Programmierung in Java - Generics (`<prog-adv-java-generics/folien.de.rst.html>`__)
 
    Fortgeschrittenere Themen (Planung!):
-
-   8. Objekt-orientierte Programmierung in Java - Domain Modeling und Java Records
-   9. Objekt-orientierte Programmierung in Java - Generics
+   
    10. Objekt-orientierte Programmierung in Java - *Funktionale Programmierung*
-   11. Objekt-orientierte Programmierung in Java - Ein- und Ausgabe - Streams und zugrundeliegende Patterns
+   11. Objekt-orientierte Programmierung in Java - Ein- und Ausgabe - Streams
    12. Java Projekte aufsetzen
    13. Algorithmen und Datenstrukturen in Java 
 
