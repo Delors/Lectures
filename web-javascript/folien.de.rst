@@ -166,8 +166,6 @@ _________
 - ``console``
 - ``Number``, ``Boolean``,  ``Date``, ``BigInt``, ``Math``, ...
 
-
-
 `Von Browsern zur Verfügung gestellte Objekte <https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects>`__ (Ein Auszug) 
 ________________________________________________________________________________________________________________________________________________________
 
@@ -179,8 +177,6 @@ ________________________________________________________________________________
 - ``navigator``
 - ``location``
 
-
-
 `Von Node.js zur Verfügung gestellte Objekte <https://nodejs.org/api/globals.html>`__ (Ein Auszug)
 ____________________________________________________________________________________________________
 
@@ -191,8 +187,6 @@ ________________________________________________________________________________
 - ``require``
 - ``process``
 - ``crypto``
-
-
 
 `Deklaration von Variablen <./code/Variables_const_let.mjs>`__ (:js:`const` und :js:`let`)
 --------------------------------------------------------------------------------------------
