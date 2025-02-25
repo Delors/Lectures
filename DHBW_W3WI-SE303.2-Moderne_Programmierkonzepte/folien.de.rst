@@ -22,7 +22,8 @@
   :language: latex
 .. role:: raw-html(raw)
    :format: html
-
+.. role:: java(code)
+   :language: java
 
 
 W3WI_SE303.2 - Moderne Programmierkonzepte
@@ -351,3 +352,88 @@ Entwickeln Sie einen einfachen interaktiven Taschenrechner, der beliebig große 
     .. rubric:: Sonstiges
 
     - entwickeln Sie hinreichende Tests
+
+
+
+2. Aufgabe: Einfache Datenstrukturen
+---------------------------------------
+
+.. story:: dd-margin-left-6em
+
+  .. compound:: 
+    
+    Entwickeln Sie folgende drei einfachen Datenstrukturen, um komplexe Werte wie zum Beispiel Zeichenketten (ugs. :java:`String`\ s) oder allgemeine :java:`Record`\ s zu speichern.
+
+    - Liste
+    - Stack (*LIFO* ≘ Last in, First out) (:ger:`Stapel`)
+    - Queue (*FIFO* ≘ First in, First out) (:ger:`Warteschlange`)
+
+  .. remark::
+    :class: incremental
+
+    Die konkrete Implementierungsstrategie ist nicht vorgegeben. Sie sind an dieser Stelle frei in der Wahl der Implementierung.
+
+  .. container::incremental
+
+    .. rubric:: Anforderungen an die Datenstrukturen
+
+  .. class:: incremental-list
+
+    - **Liste**
+
+      :get(pos): Gibt das Element an der gegebenen Position zurück.
+      :add(elems): Fügt alle Elemente der Liste hinzu. 
+      :insert(elem, pos): Einfügen eines Elements an der gegeben  Position.
+      :remove(elem): Entfernt das erste Vorkommen des Elements aus einer nicht leeren Liste.
+      :removeAt(pos): Entfernt das Element an der gegebenen Position.
+      :replace(elem, pos): Ersetzt ein Element an der gegeben Position durch das neue Element.
+      :size(): Gibt die Anzahl der Elemente in der Liste zurück.
+      :isEmpty(): :java:`true` wenn die Liste leer ist sonst :java:`false`
+      :isFull(): :java:`false` wenn die Liste leer ist sonst :java:`true`
+
+    - **Stack**
+
+      :push(elem): Fügt ein neues Element dem Stapel hinzu.
+      :pushAll(elems): Fügt alle Elemente dem Stapel hinzu. 
+
+        :peripheral:`Wenn möglich, dann nutzen Sie eine variadische Methode (*Varargs* in Java).`
+      :pop(): Entfernt das zuletzt hinzugefügte Element.
+      :peek(): Gibt das zuletzt hinzugefügte Element zurück, ohne es zu entfernen.
+      :size(): Gibt die Anzahl der Elemente des Stacks zurück.
+      :isEmpty(): :java:`true` wenn der Stack leer ist sonst :java:`false`
+      :isFull(): :java:`false` wenn der Stack leer ist sonst :java:`true`
+
+    - **Queue** 
+
+      :enqueue(elem): Fügt ein Element am Ende der Warteschlange ein.
+      :dequeue(): Entfernt das erste/älteste Element der Warteschlange und gibt es zurück.
+      :peek(): Gibt das erste/älteste Element der Warteschlange zurück, ohne es zu entfernen.
+      :size(): Gibt die Anzahl der Elemente der Warteschlange zurück.
+      :isEmpty(): :java:`true` wenn die Warteschlange leer ist sonst :java:`false`
+      :isFull(): :java:`false` wenn die Warteschlange leer ist sonst :java:`true`
+
+    - **Alle**
+
+      :peripheral:`Im Folgenden gilt, dass die Namen der Methoden  ggf. durch idiomatische Namen ersetzt werden können.`
+
+      :equals(other): Gibt :java:`true` zurück, wenn zwei Datenstrukturen des gleichen Typs die gleichen Werte (in gleicher Reihenfolge) enthalten; sonst :java:`false`.
+      :toString(): eine Repräsentation als String haben (toString), die den Inhalt der Datenstruktur darstellt und die die programmatische Rekonstruktion der Datenstruktur ermöglicht bzw. erleichtert.
+
+  .. compound::  
+    :class: incremental
+
+    .. rubric:: allgemeine Anforderungen
+
+    .. class:: list-with-explanations
+
+    - Die Datenstrukturen sollen (insbesondere) das Speichern von komplexen Objekten erlauben.
+    - Versuchen Sie Code-Duplikation zu vermeiden; wägen Sie dabei - in Abhängigkeit von der Möglichkeiten der Sprache - das Entwurfsprinzip: *Composition over Inheritance* mit möglichen Codeeinsparungen ab.
+    - Entwickeln Sie hinreichende Tests für die geforderten Operationen.
+    - Die Datenstrukturen sollen so entwickelt werden, dass eine Nutzung in anderen Projekten möglich ist.
+    - Versuchen Sie eine möglichst typsichere Implementierung zu realisieren. 
+    - Ist es möglich - und wenn ja zu welchen Kosten - primitive Datentypen in Ihren Datenstrukturen zu speichern?
+
+      (Stichwort: Zero-Cost Abstractions.) 
+
+    - *Fehlerbehandlung*: Fehler sollten (sprach-)angemessen behandelt werden.
+        
