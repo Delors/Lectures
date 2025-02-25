@@ -266,6 +266,8 @@ Bewertungskriterien
     - Persönliches Auftreten
     - Einhaltung der Dauer der Präsentation
 
+    Notenanteil: 20% (max. 20 Punkte von 100 Punkten)
+
   .. card::
 
     .. rubric:: für das Pentesting
@@ -274,9 +276,13 @@ Bewertungskriterien
     - Qualität der Präsentation der Schwachstellen
     - Beantwortung von Fragen
 
+    Notenanteil: 25% (max. 25 Punkte von 100 Punkten)
+
   .. card::
 
     .. rubric:: für die Dokumentation
 
     - Qualität der Dokumentation (leserlich, strukturiert, frei von Tippfehlern, ...)
     - Ist die Einschätzung der Lücken nachvollziehbar
+
+    Notenanteil: 5% (max 5. Punkte von 100 Punkten)
