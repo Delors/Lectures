@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xl="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" version="1.1" viewBox="384 538 133 123" width="133" height="123">
+  <style>
+    @import url('/LectureDoc2/ext/fonts/ld-fonts.css'); 
+  </style>
+  <defs>
+    <filter id="Shadow" filterUnits="userSpaceOnUse" x="370.7" y="525.7">
+      <feOffset in="SourceAlpha" result="offset" dx="0" dy="2"/>
+      <feFlood flood-color="#919191" flood-opacity=".25" result="flood"/>
+      <feComposite in="flood" in2="offset" operator="in" result="color"/>
+      <feMerge>
+        <feMergeNode in="color"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <marker orient="auto" overflow="visible" markerUnits="strokeWidth" id="UMLInheritance_Marker" stroke-linejoin="miter" stroke-miterlimit="10" viewBox="-9 -6 10 12" markerWidth="10" markerHeight="12" color="#666a6b">
+      <g>
+        <path d="M -7.2 0 L 0 4.2 L 0 -4.2 Z" fill="none" stroke="currentColor" stroke-width="1"/>
+      </g>
+    </marker>
+  </defs>
+  <metadata> Produced by OmniGraffle 8.0\n2025-02-23 12:21:18 +0000</metadata>
+  <g id="maps" stroke-opacity="1" stroke-dasharray="none" fill="none" stroke="none" fill-opacity="1">
+    <title>maps</title>
+    <rect fill="white" x="384" y="538" width="133" height="123"/>
+    <g id="maps_Layer_1">
+      <title>Layer 1</title>
+      <g id="Group_5">
+        <title>Superclass and Subclass Relationship</title>
+        <g id="Graphic_9" filter="url(#Shadow)">
+          <title>Subclass</title>
+          <rect x="385.5664" y="539" width="130" height="39.54553" fill="white"/>
+          <rect x="385.5664" y="539" width="130" height="39.54553" stroke="#b9c0c1" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+          <text transform="translate(391.5664 549)" fill="#515556">
+            <tspan font-family="Victor Mono" font-size="14" font-style="italic" font-weight="700" fill="#515556" x="47.545455" y="14" xml:space="preserve">Map</tspan>
+          </text>
+        </g>
+        <g id="Graphic_10" filter="url(#Shadow)">
+          <title>Subclass</title>
+          <rect x="385.5664" y="618.1953" width="130" height="39.54553" fill="white"/>
+          <rect x="385.5664" y="618.1953" width="130" height="39.54553" stroke="#b9c0c1" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+          <text transform="translate(391.5664 628.1953)" fill="#515556">
+            <tspan font-family="Victor Mono" font-size="14" font-style="italic" font-weight="700" fill="#515556" x="24.636364" y="14" xml:space="preserve">SortedMap</tspan>
+          </text>
+        </g>
+        <g id="Line_11">
+          <line x1="450.5664" y1="596.4455" x2="450.5664" y2="617.1953" marker-start="url(#UMLInheritance_Marker)" stroke="#666a6b" stroke-linecap="square" stroke-linejoin="bevel" stroke-width="2"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
