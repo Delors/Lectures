@@ -97,11 +97,14 @@ Bonuspunkte
 ------------------------------------------
 
 - Es wird eine Lernstandskontrolle (d. h. kurzer Test) in der Mitte des Semesters geben, die *Bonuspunkte* für die Klausur bringen kann. 
-- Es wird vielleicht ergänzend Übungsaufgaben geben, deren Lösungen bzw. Präsentation Bonuspunkte für die Klausur bringen können. Der Gesamtbonus wird jedoch die Anzahl der Punkte, die für einen kompletten Notenschritt (2.0 -> 1.0) notwendig sein werden nicht überschreiten.
-
+- Es wird *vielleicht* ergänzend Übungsaufgaben geben, deren Lösungen bzw. Präsentation Bonuspunkte für die Klausur bringen können. 
   *Die Lernstandskontrolle kann (insbesondere) auch Inhalte der Programmierung 1 abfragen bzw. beinhalten.*
 - Wer am Tage der Lernstandskontrolle krank ist, kann im Rahmen eines kurzen Gesprächs (zu einem zu vereinbarenden Termin) ggf. die Punkte erwerben.
 - Die Klausur wird so entworfen sein/bewertet werden, dass ohne Bonus eine 1,0 zeitlich erreichbar ist. 
+
+.. remark::
+
+    Der Gesamtbonus wird jedoch die Anzahl der Punkte, die für einen kompletten Notenschritt (2.0 -> 1.0) notwendig sein werden, nicht überschreiten.
 
 
 
