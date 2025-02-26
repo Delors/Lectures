@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xl="http://www.w3.org/1999/xlink" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" viewBox="80 581 378 206" width="378" height="206">
+  <defs>
+    <font-face font-family="Helvetica" font-size="12" units-per-em="1000" underline-position="-75.68359" underline-thickness="49.316406" slope="0" x-height="522.9492" cap-height="717.28516" ascent="770.0195" descent="-229.98047" font-weight="400">
+      <font-face-src>
+        <font-face-name name="Helvetica"/>
+      </font-face-src>
+    </font-face>
+    <marker orient="auto" overflow="visible" markerUnits="strokeWidth" id="FilledArrow_Marker" stroke-linejoin="miter" stroke-miterlimit="10" viewBox="-1 -4 10 8" markerWidth="10" markerHeight="8" color="black">
+      <g>
+        <path d="M 8 0 L 0 -3 L 0 3 Z" fill="currentColor" stroke="currentColor" stroke-width="1"/>
+      </g>
+    </marker>
+  </defs>
+  <metadata> Produced by OmniGraffle 8.0\n2024-02-21 15:16:54 +0000</metadata>
+  <g id="asynchronous_rpc" stroke-opacity="1" fill-opacity="1" stroke="none" fill="none" stroke-dasharray="none">
+    <title>asynchronous_rpc</title>
+    <g id="asynchronous_rpc_Layer_1">
+      <title>Layer 1</title>
+      <g id="Line_51">
+        <line x1="130.05824" y1="609.44936" x2="456.04224" y2="609.44936" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="8.0,8.0" stroke-width="2"/>
+      </g>
+      <g id="Line_52">
+        <line x1="130.05824" y1="751.1814" x2="456.04224" y2="751.1814" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="8.0,8.0" stroke-width="2"/>
+      </g>
+      <g id="Graphic_53">
+        <text transform="translate(87.3714 602.44936)" fill="black">
+          <tspan font-family="Helvetica" font-size="12" font-weight="400" fill="black" x="0" y="11">Client</tspan>
+        </text>
+      </g>
+      <g id="Graphic_54">
+        <text transform="translate(85.03937 744.1824)" fill="black">
+          <tspan font-family="Helvetica" font-size="12" font-weight="400" fill="black" x="0" y="11">Server</tspan>
+        </text>
+      </g>
+      <g id="Line_55">
+        <path d="M 143.95784 609.44936 L 173.87624 609.44936 L 164.49354 609.44936" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="5"/>
+      </g>
+      <g id="Line_56">
+        <line x1="215.09724" y1="751.1814" x2="286.36524" y2="751.1814" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="5"/>
+      </g>
+      <g id="Line_57">
+        <path d="M 257.61724 609.44936 L 285.96424 609.44936 L 371.00324 609.44936" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="5"/>
+      </g>
+      <g id="Line_58">
+        <line x1="173.87624" y1="609.44936" x2="212.3325" y2="741.6752" marker-end="url(#FilledArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Line_59">
+        <line x1="215.09724" y1="751.1814" x2="254.77248" y2="618.9318" marker-end="url(#FilledArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_60">
+        <rect x="156.82598" y="624.8269" width="50.02539" height="24" fill="white"/>
+        <text transform="translate(161.82598 629.8269)" fill="black">
+          <tspan font-family="Helvetica" font-size="12" font-weight="400" fill="black" x="0" y="11">request</tspan>
+        </text>
+      </g>
+      <g id="Graphic_61">
+        <rect x="202.65783" y="659.14805" width="68.69922" height="38" fill="white"/>
+        <text transform="translate(207.65783 664.14805)" fill="black">
+          <tspan font-family="Helvetica" font-size="12" font-weight="400" fill="black" x="1.6669922" y="11">akzeptiere </tspan>
+          <tspan font-family="Helvetica" font-size="12" font-weight="400" fill="black" x="9.336914" y="25">request</tspan>
+        </text>
+      </g>
+      <g id="Graphic_62">
+        <text transform="translate(404.5203 758.3554)" fill="black">
+          <tspan font-family="Helvetica" font-size="12" font-weight="400" fill="black" x="0" y="11">Zeit</tspan>
+        </text>
+      </g>
+      <g id="Line_63">
+        <line x1="427.69524" y1="765.3554" x2="446.14224" y2="765.3554" marker-end="url(#FilledArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_65">
+        <text transform="translate(186.25124 581.10236)" fill="black"/>
+      </g>
+      <g id="Graphic_66">
+        <text transform="translate(214.58697 758.3544)" fill="black">
+          <tspan font-family="Helvetica" font-size="12" font-weight="400" fill="black" x="17.683594" y="11">Aufruf der </tspan>
+          <tspan font-family="Helvetica" font-size="12" font-weight="400" fill="black" x="0" y="25">lokalen Methode</tspan>
+        </text>
+      </g>
+      <g id="Line_67">
+        <line x1="387.9793" y1="609.44936" x2="419.9793" y2="609.44936" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="5"/>
+      </g>
+      <g id="Line_68">
+        <line x1="328.48324" y1="751.1814" x2="368.15848" y2="618.9318" marker-end="url(#FilledArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_69">
+        <rect x="304.1779" y="673.1346" width="84.03906" height="38" fill="white"/>
+        <text transform="translate(309.1779 678.1346)" fill="black">
+          <tspan font-family="Helvetica" font-size="12" font-weight="400" fill="black" x="10.001953" y="11">Rückgabe</tspan>
+          <tspan font-family="Helvetica" font-size="12" font-weight="400" fill="black" x="0" y="25">der Ergenisse</tspan>
+        </text>
+      </g>
+      <g id="Line_70">
+        <line x1="385.17624" y1="609.44936" x2="424.8515" y2="741.6989" marker-end="url(#FilledArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_71">
+        <rect x="382.2682" y="710.0562" width="73.38086" height="24" fill="white"/>
+        <text transform="translate(387.2682 715.0562)" fill="black">
+          <tspan font-family="Helvetica" font-size="12" font-weight="400" fill="black" x="0" y="11">Bestätigung</tspan>
+        </text>
+      </g>
+      <g id="Graphic_72">
+        <text transform="translate(336.3057 581.27636)" fill="black">
+          <tspan font-family="Helvetica" font-size="12" font-weight="400" fill="black" x="0" y="11">Interrupt Client</tspan>
+        </text>
+      </g>
+    </g>
+  </g>
+</svg>

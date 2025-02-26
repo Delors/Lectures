@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xl="http://www.w3.org/1999/xlink" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" viewBox="-455 -438 703 600" width="703" height="600">
+  <defs>
+    <filter id="Shadow" filterUnits="userSpaceOnUse" x="-525.3" y="-498">
+      <feGaussianBlur in="SourceAlpha" result="blur" stdDeviation="1.308"/>
+      <feOffset in="blur" result="offset" dx="2" dy="2"/>
+      <feFlood flood-color="black" flood-opacity=".5" result="flood"/>
+      <feComposite in="flood" in2="offset" operator="in"/>
+    </filter>
+    <font-face font-family="Helvetica" font-size="16" units-per-em="1000" underline-position="-75.68359" underline-thickness="49.316406" slope="0" x-height="522.9492" cap-height="717.28516" ascent="770.0195" descent="-229.98047" font-weight="400">
+      <font-face-src>
+        <font-face-name name="Helvetica"/>
+      </font-face-src>
+    </font-face>
+    <marker orient="auto" overflow="visible" markerUnits="strokeWidth" id="FilledArrow_Marker" stroke-linejoin="miter" stroke-miterlimit="10" viewBox="-1 -3 7 6" markerWidth="7" markerHeight="6" color="black">
+      <g>
+        <path d="M 4.8 0 L 0 -1.8 L 0 1.8 Z" fill="currentColor" stroke="currentColor" stroke-width="1"/>
+      </g>
+    </marker>
+  </defs>
+  <metadata> Produced by OmniGraffle 8.0\n2024-02-24 16:22:49 +0000</metadata>
+  <g id="genealogy-of-middleware" stroke-opacity="1" fill-opacity="1" stroke="none" fill="none" stroke-dasharray="none">
+    <title>genealogy-of-middleware</title>
+    <rect fill="white" x="-455" y="-438" width="703" height="600"/>
+    <g id="genealogy-of-middleware_Layer_1">
+      <title>Layer 1</title>
+      <g id="Graphic_6_shadow" filter="url(#Shadow)">
+        <path d="M -449 -135 L -16 -135 C -13.790861 -135 -12 -133.20914 -12 -131 L -12 -83 C -12 -80.79086 -13.790861 -79 -16 -79 L -449 -79 C -451.20914 -79 -453 -80.79086 -453 -83 L -453 -131 C -453 -133.20914 -451.20914 -135 -449 -135 Z" fill="#dcde26"/>
+      </g>
+      <g id="Graphic_7_shadow" filter="url(#Shadow)">
+        <path d="M -449 -215.33333 L -327 -215.33333 C -324.79086 -215.33333 -323 -213.54247 -323 -211.33333 L -323 -163.33333 C -323 -161.1242 -324.79086 -159.33333 -327 -159.33333 L -449 -159.33333 C -451.20914 -159.33333 -453 -161.1242 -453 -163.33333 L -453 -211.33333 C -453 -213.54247 -451.20914 -215.33333 -449 -215.33333 Z" fill="#dcde26"/>
+      </g>
+      <g id="Graphic_8_shadow" filter="url(#Shadow)">
+        <path d="M -293.5 -215.33333 L -171.5 -215.33333 C -169.29086 -215.33333 -167.5 -213.54247 -167.5 -211.33333 L -167.5 -163.33333 C -167.5 -161.1242 -169.29086 -159.33333 -171.5 -159.33333 L -293.5 -159.33333 C -295.70914 -159.33333 -297.5 -161.1242 -297.5 -163.33333 L -297.5 -211.33333 C -297.5 -213.54247 -295.70914 -215.33333 -293.5 -215.33333 Z" fill="#dcde26"/>
+      </g>
+      <g id="Graphic_9_shadow" filter="url(#Shadow)">
+        <path d="M -138 -215.33333 L -16 -215.33333 C -13.790861 -215.33333 -12 -213.54247 -12 -211.33333 L -12 -163.33333 C -12 -161.1242 -13.790861 -159.33333 -16 -159.33333 L -138 -159.33333 C -140.20914 -159.33333 -142 -161.1242 -142 -163.33333 L -142 -211.33333 C -142 -213.54247 -140.20914 -215.33333 -138 -215.33333 Z" fill="#dcde26"/>
+      </g>
+      <g id="Graphic_10_shadow" filter="url(#Shadow)">
+        <ellipse cx="-388" cy="-285" rx="65.0001038636233" ry="25.0000399475475" fill="#6c9360"/>
+      </g>
+      <g id="Graphic_11_shadow" filter="url(#Shadow)">
+        <ellipse cx="-232.5" cy="-285" rx="65.0001038636233" ry="25.0000399475475" fill="#6c9360"/>
+      </g>
+      <g id="Graphic_12_shadow" filter="url(#Shadow)">
+        <ellipse cx="-77" cy="-285" rx="65.0001038636233" ry="25.0000399475475" fill="#6c9360"/>
+      </g>
+      <g id="Graphic_13_shadow" filter="url(#Shadow)">
+        <path d="M -256.5 -436.66667 L -208.5 -436.66667 L -172.5 -412.06667 L -172.5 -379.26667 L -208.5 -354.66667 L -256.5 -354.66667 L -292.5 -379.26667 L -292.5 -412.06667 Z" fill="#6c9360"/>
+      </g>
+      <g id="Graphic_28_shadow" filter="url(#Shadow)">
+        <path d="M 21 -215.33333 L 239 -215.33333 C 241.20914 -215.33333 243 -213.54247 243 -211.33333 L 243 -163.33333 C 243 -161.1242 241.20914 -159.33333 239 -159.33333 L 21 -159.33333 C 18.79086 -159.33333 17 -161.1242 17 -163.33333 L 17 -211.33333 C 17 -213.54247 18.79086 -215.33333 21 -215.33333 Z" fill="#dcde26"/>
+      </g>
+      <g id="Graphic_32_shadow" filter="url(#Shadow)">
+        <ellipse cx="130" cy="-285" rx="65.0001038636233" ry="25.0000399475475" fill="#6c9360"/>
+      </g>
+      <g id="Graphic_3">
+        <path d="M -449 106 L 239 106 C 241.20914 106 243 107.79086 243 110 L 243 158 C 243 160.20914 241.20914 162 239 162 L -449 162 C -451.20914 162 -453 160.20914 -453 158 L -453 110 C -453 107.79086 -451.20914 106 -449 106 Z" fill="#a5a5a5"/>
+        <text transform="translate(-448 124.5)" fill="white">
+          <tspan font-family="Helvetica" font-size="16" font-weight="400" fill="white" x="335.4414" y="15">IP</tspan>
+        </text>
+      </g>
+      <g id="Graphic_4">
+        <path d="M -449 25.666667 L 239 25.666667 C 241.20914 25.666667 243 27.457528 243 29.666667 L 243 77.66667 C 243 79.87581 241.20914 81.66667 239 81.66667 L -449 81.66667 C -451.20914 81.66667 -453 79.87581 -453 77.66667 L -453 29.666667 C -453 27.457528 -451.20914 25.666667 -449 25.666667 Z" fill="#a5a5a5"/>
+        <text transform="translate(-448 44.166667)" fill="white">
+          <tspan font-family="Helvetica" font-size="16" font-weight="400" fill="white" x="306.6953" y="15">TCP, UDP</tspan>
+        </text>
+      </g>
+      <g id="Graphic_5">
+        <path d="M -449 -54.666667 L 239 -54.666667 C 241.20914 -54.666667 243 -52.875806 243 -50.666667 L 243 -2.6666667 C 243 -.45752767 241.20914 1.3333333 239 1.3333333 L -449 1.3333333 C -451.20914 1.3333333 -453 -.45752767 -453 -2.6666667 L -453 -50.666667 C -453 -52.875806 -451.20914 -54.666667 -449 -54.666667 Z" fill="#a5a5a5"/>
+        <text transform="translate(-448 -36.166667)" fill="white">
+          <tspan font-family="Helvetica" font-size="16" font-weight="400" fill="white" x="314.54297" y="15">Sockets</tspan>
+        </text>
+      </g>
+      <g id="Graphic_6">
+        <path d="M -449 -135 L -16 -135 C -13.790861 -135 -12 -133.20914 -12 -131 L -12 -83 C -12 -80.79086 -13.790861 -79 -16 -79 L -449 -79 C -451.20914 -79 -453 -80.79086 -453 -83 L -453 -131 C -453 -133.20914 -451.20914 -135 -449 -135 Z" fill="#dcde26"/>
+        <text transform="translate(-448 -116.5)" fill="black">
+          <tspan font-family="Helvetica" font-size="16" font-weight="400" fill="black" x="132.35156" y="15">Remote Procedure Call</tspan>
+        </text>
+      </g>
+      <g id="Graphic_7">
+        <path d="M -449 -215.33333 L -327 -215.33333 C -324.79086 -215.33333 -323 -213.54247 -323 -211.33333 L -323 -163.33333 C -323 -161.1242 -324.79086 -159.33333 -327 -159.33333 L -449 -159.33333 C -451.20914 -159.33333 -453 -161.1242 -453 -163.33333 L -453 -211.33333 C -453 -213.54247 -451.20914 -215.33333 -449 -215.33333 Z" fill="#dcde26"/>
+        <text transform="translate(-448 -206.33333)" fill="black">
+          <tspan font-family="Helvetica" font-size="16" font-weight="400" fill="black" x="6.042969" y="15">Transaktionelle </tspan>
+          <tspan font-family="Helvetica" font-size="16" font-weight="400" fill="black" x="43.109375" y="34">RPC</tspan>
+        </text>
+      </g>
+      <g id="Graphic_8">
+        <path d="M -293.5 -215.33333 L -171.5 -215.33333 C -169.29086 -215.33333 -167.5 -213.54247 -167.5 -211.33333 L -167.5 -163.33333 C -167.5 -161.1242 -169.29086 -159.33333 -171.5 -159.33333 L -293.5 -159.33333 C -295.70914 -159.33333 -297.5 -161.1242 -297.5 -163.33333 L -297.5 -211.33333 C -297.5 -213.54247 -295.70914 -215.33333 -293.5 -215.33333 Z" fill="#dcde26"/>
+        <text transform="translate(-292.5 -206.33333)" fill="black">
+          <tspan font-family="Helvetica" font-size="16" font-weight="400" fill="black" x="1.3046875" y="15">Objektorientierte </tspan>
+          <tspan font-family="Helvetica" font-size="16" font-weight="400" fill="black" x="20.894531" y="34">RPC (RMI)</tspan>
+        </text>
+      </g>
+      <g id="Graphic_9">
+        <path d="M -138 -215.33333 L -16 -215.33333 C -13.790861 -215.33333 -12 -213.54247 -12 -211.33333 L -12 -163.33333 C -12 -161.1242 -13.790861 -159.33333 -16 -159.33333 L -138 -159.33333 C -140.20914 -159.33333 -142 -161.1242 -142 -163.33333 L -142 -211.33333 C -142 -213.54247 -140.20914 -215.33333 -138 -215.33333 Z" fill="#dcde26"/>
+        <text transform="translate(-137 -206.33333)" fill="black">
+          <tspan font-family="Helvetica" font-size="16" font-weight="400" fill="black" x="17.753906" y="15">Asynchrone </tspan>
+          <tspan font-family="Helvetica" font-size="16" font-weight="400" fill="black" x="43.109375" y="34">RPC</tspan>
+        </text>
+      </g>
+      <g id="Graphic_10">
+        <ellipse cx="-388" cy="-285" rx="65.0001038636233" ry="25.0000399475475" fill="#6c9360"/>
+        <text transform="translate(-435 -294.5)" fill="white">
+          <tspan font-family="Helvetica" font-size="16" font-weight="400" fill="white" x="3.4375" y="15">TP-Monitors</tspan>
+        </text>
+      </g>
+      <g id="Graphic_11">
+        <ellipse cx="-232.5" cy="-285" rx="65.0001038636233" ry="25.0000399475475" fill="#6c9360"/>
+        <text transform="translate(-279.5 -304)" fill="white">
+          <tspan font-family="Helvetica" font-size="16" font-weight="400" fill="white" x="21.214844" y="15">Object-</tspan>
+          <tspan font-family="Helvetica" font-size="16" font-weight="400" fill="white" x="19.4375" y="34">Brokers</tspan>
+        </text>
+      </g>
+      <g id="Graphic_12">
+        <ellipse cx="-77" cy="-285" rx="65.0001038636233" ry="25.0000399475475" fill="#6c9360"/>
+        <text transform="translate(-124 -304)" fill="white">
+          <tspan font-family="Helvetica" font-size="16" font-weight="400" fill="white" x="11.875" y="15">Message-</tspan>
+          <tspan font-family="Helvetica" font-size="16" font-weight="400" fill="white" x="19.4375" y="34">Brokers</tspan>
+        </text>
+      </g>
+      <g id="Graphic_13">
+        <path d="M -256.5 -436.66667 L -208.5 -436.66667 L -172.5 -412.06667 L -172.5 -379.26667 L -208.5 -354.66667 L -256.5 -354.66667 L -292.5 -379.26667 L -292.5 -412.06667 Z" fill="#6c9360"/>
+        <text transform="translate(-287.5 -414.66667)" fill="white">
+          <tspan font-family="Helvetica" font-size="16" font-weight="400" fill="white" x="15.863281" y="15">Application </tspan>
+          <tspan font-family="Helvetica" font-size="16" font-weight="400" fill="white" x="27.4375" y="34">Servers</tspan>
+        </text>
+      </g>
+      <g id="Line_14">
+        <line x1="-360" y1="-308" x2="-293.3232" y2="-364.75517" marker-end="url(#FilledArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="2.0,6.0" stroke-width="2"/>
+      </g>
+      <g id="Line_15">
+        <line x1="-99.98676" y1="-308.3911" x2="-171.39754" y2="-365.0948" marker-end="url(#FilledArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="2.0,6.0" stroke-width="2"/>
+      </g>
+      <g id="Line_16">
+        <line x1="-232.5" y1="-310" x2="-232.5" y2="-341.76667" marker-end="url(#FilledArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="2.0,6.0" stroke-width="2"/>
+      </g>
+      <g id="Line_17">
+        <line x1="-388" y1="-215.33333" x2="-388" y2="-247.1" marker-end="url(#FilledArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="2.0,6.0" stroke-width="2"/>
+      </g>
+      <g id="Line_18">
+        <line x1="-232.5" y1="-215.33333" x2="-232.5" y2="-247.1" marker-end="url(#FilledArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="2.0,6.0" stroke-width="2"/>
+      </g>
+      <g id="Line_19">
+        <line x1="-77" y1="-215.33333" x2="-77" y2="-247.1" marker-end="url(#FilledArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="2.0,6.0" stroke-width="2"/>
+      </g>
+      <g id="Graphic_21">
+        <path d="M -388 -171 L -377.5 -160 L -382.75 -160 L -382.75 -135 L -377.5 -135 L -388 -124 L -398.5 -135 L -393.25 -135 L -393.25 -160 L -398.5 -160 Z" fill="#a5a5a5"/>
+        <path d="M -388 -171 L -377.5 -160 L -382.75 -160 L -382.75 -135 L -377.5 -135 L -388 -124 L -398.5 -135 L -393.25 -135 L -393.25 -160 L -398.5 -160 Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_22">
+        <path d="M -232.5 -171 L -222 -160 L -227.25 -160 L -227.25 -135 L -222 -135 L -232.5 -124 L -243 -135 L -237.75 -135 L -237.75 -160 L -243 -160 Z" fill="#a5a5a5"/>
+        <path d="M -232.5 -171 L -222 -160 L -227.25 -160 L -227.25 -135 L -222 -135 L -232.5 -124 L -243 -135 L -237.75 -135 L -237.75 -160 L -243 -160 Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_23">
+        <path d="M -77 -171 L -66.5 -160 L -71.75 -160 L -71.75 -135 L -66.5 -135 L -77 -124 L -87.5 -135 L -82.25 -135 L -82.25 -160 L -87.5 -160 Z" fill="#a5a5a5"/>
+        <path d="M -77 -171 L -66.5 -160 L -71.75 -160 L -71.75 -135 L -66.5 -135 L -77 -124 L -87.5 -135 L -82.25 -135 L -82.25 -160 L -87.5 -160 Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_24">
+        <path d="M -232.5 -90.33333 L -222 -79.33333 L -227.25 -79.33333 L -227.25 -54.333333 L -222 -54.333333 L -232.5 -43.333333 L -243 -54.333333 L -237.75 -54.333333 L -237.75 -79.33333 L -243 -79.33333 Z" fill="#a5a5a5"/>
+        <path d="M -232.5 -90.33333 L -222 -79.33333 L -227.25 -79.33333 L -227.25 -54.333333 L -222 -54.333333 L -232.5 -43.333333 L -243 -54.333333 L -237.75 -54.333333 L -237.75 -79.33333 L -243 -79.33333 Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_25">
+        <path d="M -105 -10.166667 L -94.5 .8333333 L -99.75 .8333333 L -99.75 25.833333 L -94.5 25.833333 L -105 36.833333 L -115.5 25.833333 L -110.25 25.833333 L -110.25 .8333333 L -115.5 .8333333 Z" fill="#a5a5a5"/>
+        <path d="M -105 -10.166667 L -94.5 .8333333 L -99.75 .8333333 L -99.75 25.833333 L -94.5 25.833333 L -105 36.833333 L -115.5 25.833333 L -110.25 25.833333 L -110.25 .8333333 L -115.5 .8333333 Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_26">
+        <path d="M -105 70.5 L -94.5 81.5 L -99.75 81.5 L -99.75 106.5 L -94.5 106.5 L -105 117.5 L -115.5 106.5 L -110.25 106.5 L -110.25 81.5 L -115.5 81.5 Z" fill="#a5a5a5"/>
+        <path d="M -105 70.5 L -94.5 81.5 L -99.75 81.5 L -99.75 106.5 L -94.5 106.5 L -105 117.5 L -115.5 106.5 L -110.25 106.5 L -110.25 81.5 L -115.5 81.5 Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_27">
+        <path d="M 21 -135 L 239 -135 C 241.20914 -135 243 -133.20914 243 -131 L 243 -83 C 243 -80.79086 241.20914 -79 239 -79 L 21 -79 C 18.79086 -79 17 -80.79086 17 -83 L 17 -131 C 17 -133.20914 18.79086 -135 21 -135 Z" fill="#a5a5a5"/>
+        <text transform="translate(22 -116.5)" fill="white">
+          <tspan font-family="Helvetica" font-size="16" font-weight="400" fill="white" x="87.11328" y="15">HTTP</tspan>
+        </text>
+      </g>
+      <g id="Graphic_28">
+        <path d="M 21 -215.33333 L 239 -215.33333 C 241.20914 -215.33333 243 -213.54247 243 -211.33333 L 243 -163.33333 C 243 -161.1242 241.20914 -159.33333 239 -159.33333 L 21 -159.33333 C 18.79086 -159.33333 17 -161.1242 17 -163.33333 L 17 -211.33333 C 17 -213.54247 18.79086 -215.33333 21 -215.33333 Z" fill="#dcde26"/>
+        <text transform="translate(22 -196.83333)" fill="black">
+          <tspan font-family="Helvetica" font-size="16" font-weight="400" fill="black" x="85.76953" y="15">SOAP</tspan>
+        </text>
+      </g>
+      <g id="Graphic_29">
+        <path d="M 130 -90.33333 L 140.5 -79.33333 L 135.25 -79.33333 L 135.25 -54.333333 L 140.5 -54.333333 L 130 -43.333333 L 119.5 -54.333333 L 124.75 -54.333333 L 124.75 -79.33333 L 119.5 -79.33333 Z" fill="#a5a5a5"/>
+        <path d="M 130 -90.33333 L 140.5 -79.33333 L 135.25 -79.33333 L 135.25 -54.333333 L 140.5 -54.333333 L 130 -43.333333 L 119.5 -54.333333 L 124.75 -54.333333 L 124.75 -79.33333 L 119.5 -79.33333 Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_30">
+        <path d="M 130 -170 L 140.5 -159 L 135.25 -159 L 135.25 -134 L 140.5 -134 L 130 -123 L 119.5 -134 L 124.75 -134 L 124.75 -159 L 119.5 -159 Z" fill="#a5a5a5"/>
+        <path d="M 130 -170 L 140.5 -159 L 135.25 -159 L 135.25 -134 L 140.5 -134 L 130 -123 L 119.5 -134 L 124.75 -134 L 124.75 -159 L 119.5 -159 Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_32">
+        <ellipse cx="130" cy="-285" rx="65.0001038636233" ry="25.0000399475475" fill="#6c9360"/>
+        <text transform="translate(83 -294.5)" fill="white">
+          <tspan font-family="Helvetica" font-size="16" font-weight="400" fill="white" x="39" y="15">…</tspan>
+        </text>
+      </g>
+      <g id="Line_35">
+        <line x1="129.6912" y1="-215.33333" x2="129.91082" y2="-247.1003" marker-end="url(#FilledArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="2.0,6.0" stroke-width="2"/>
+      </g>
+    </g>
+  </g>
+</svg>

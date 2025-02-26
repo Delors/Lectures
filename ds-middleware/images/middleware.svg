@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xl="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:dc="http://purl.org/dc/elements/1.1/" viewBox="0 0 851 567" width="851" height="567">
+  <defs>
+    <filter id="Shadow" filterUnits="userSpaceOnUse" x="-85.1" y="-56.7">
+      <feGaussianBlur in="SourceAlpha" result="blur" stdDeviation="1.308"/>
+      <feOffset in="blur" result="offset" dx="0" dy="2"/>
+      <feFlood flood-color="black" flood-opacity=".5" result="flood"/>
+      <feComposite in="flood" in2="offset" operator="in"/>
+    </filter>
+    <font-face font-family="Helvetica Neue" font-size="12" panose-1="2 0 5 3 0 0 0 2 0 4" units-per-em="1000" underline-position="-100" underline-thickness="50" slope="0" x-height="517" cap-height="714" ascent="951.9958" descent="-212.99744" font-weight="400">
+      <font-face-src>
+        <font-face-name name="HelveticaNeue"/>
+      </font-face-src>
+    </font-face>
+  </defs>
+  <metadata> Produced by OmniGraffle 8.0\n2024-02-19 10:38:59 +0000</metadata>
+  <g id="Canvas_1" stroke-dasharray="none" stroke-opacity="1" fill-opacity="1" stroke="none" fill="none">
+    <title>Canvas 1</title>
+    <g id="Canvas_1_Layer_1">
+      <title>Layer 1</title>
+      <g id="Graphic_1167_shadow" filter="url(#Shadow)">
+        <rect x="42.5197" y="28.3465" width="170.079" height="45" fill="white"/>
+        <rect x="42.5197" y="28.3465" width="170.079" height="45" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_1169_shadow" filter="url(#Shadow)">
+        <rect x="41.3858" y="96.7323" width="171.213" height="30.8268" fill="white"/>
+        <rect x="41.3858" y="96.7323" width="171.213" height="30.8268" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_1170_shadow" filter="url(#Shadow)">
+        <rect x="41.3858" y="127.559" width="171.213" height="45" fill="white"/>
+        <rect x="41.3858" y="127.559" width="171.213" height="45" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_1171_shadow" filter="url(#Shadow)">
+        <rect x="41.3858" y="198.425" width="171.213" height="28.3465" fill="white"/>
+        <rect x="41.3858" y="198.425" width="171.213" height="28.3465" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_1172_shadow" filter="url(#Shadow)">
+        <rect x="41.3858" y="226.772" width="171.213" height="45" fill="white"/>
+        <rect x="41.3858" y="226.772" width="171.213" height="45" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_1173_shadow" filter="url(#Shadow)">
+        <ellipse cx="70.8661" cy="148.8186" rx="14.1732226473832" ry="7.08661132369157" fill="white"/>
+        <ellipse cx="70.8661" cy="148.8186" rx="14.1732226473832" ry="7.08661132369157" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_1174_shadow" filter="url(#Shadow)">
+        <ellipse cx="184.2522" cy="148.8186" rx="14.1732226473831" ry="7.08661132369157" fill="white"/>
+        <ellipse cx="184.2522" cy="148.8186" rx="14.1732226473831" ry="7.08661132369157" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_1182_shadow" filter="url(#Shadow)">
+        <rect x="255.118" y="28.3465" width="170.079" height="45" fill="white"/>
+        <rect x="255.118" y="28.3465" width="170.079" height="45" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_1183_shadow" filter="url(#Shadow)">
+        <rect x="253.984" y="96.7323" width="171.213" height="30.8268" fill="white"/>
+        <rect x="253.984" y="96.7323" width="171.213" height="30.8268" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_1184_shadow" filter="url(#Shadow)">
+        <rect x="253.984" y="127.559" width="171.213" height="45" fill="white"/>
+        <rect x="253.984" y="127.559" width="171.213" height="45" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_1185_shadow" filter="url(#Shadow)">
+        <rect x="253.984" y="198.425" width="171.213" height="28.3465" fill="white"/>
+        <rect x="253.984" y="198.425" width="171.213" height="28.3465" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_1186_shadow" filter="url(#Shadow)">
+        <rect x="253.984" y="226.772" width="171.213" height="45" fill="white"/>
+        <rect x="253.984" y="226.772" width="171.213" height="45" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_1187_shadow" filter="url(#Shadow)">
+        <ellipse cx="283.4642" cy="148.8186" rx="14.1732226473831" ry="7.08661132369157" fill="white"/>
+        <ellipse cx="283.4642" cy="148.8186" rx="14.1732226473831" ry="7.08661132369157" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_1188_shadow" filter="url(#Shadow)">
+        <ellipse cx="396.8502" cy="148.8186" rx="14.1732226473832" ry="7.08661132369157" fill="white"/>
+        <ellipse cx="396.8502" cy="148.8186" rx="14.1732226473832" ry="7.08661132369157" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_1167">
+        <rect x="42.5197" y="28.3465" width="170.079" height="45" fill="white"/>
+        <rect x="42.5197" y="28.3465" width="170.079" height="45" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(47.5197 43.6785)" fill="black">
+          <tspan font-family="Helvetica Neue" font-size="12" font-weight="400" fill="black" x="18.917497" y="11">Distributed Application</tspan>
+        </text>
+      </g>
+      <g id="Graphic_1169">
+        <rect x="41.3858" y="96.7323" width="171.213" height="30.8268" fill="white"/>
+        <rect x="41.3858" y="96.7323" width="171.213" height="30.8268" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(46.3858 104.9777)" fill="black">
+          <tspan font-family="Helvetica Neue" font-size="12" font-weight="400" fill="black" x="38.3905" y="11">Middleware API</tspan>
+        </text>
+      </g>
+      <g id="Graphic_1170">
+        <rect x="41.3858" y="127.559" width="171.213" height="45" fill="white"/>
+        <rect x="41.3858" y="127.559" width="171.213" height="45" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(46.3858 142.891)" fill="black">
+          <tspan font-family="Helvetica Neue" font-size="12" font-weight="400" fill="black" x="49.3885" y="11">Middleware</tspan>
+        </text>
+      </g>
+      <g id="Graphic_1171">
+        <rect x="41.3858" y="198.425" width="171.213" height="28.3465" fill="white"/>
+        <rect x="41.3858" y="198.425" width="171.213" height="28.3465" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(46.3858 205.43025)" fill="black">
+          <tspan font-family="Helvetica Neue" font-size="12" font-weight="400" fill="black" x="28.0465" y="11">Betriebssystem API</tspan>
+        </text>
+      </g>
+      <g id="Graphic_1172">
+        <rect x="41.3858" y="226.772" width="171.213" height="45" fill="white"/>
+        <rect x="41.3858" y="226.772" width="171.213" height="45" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(46.3858 227.768)" fill="black">
+          <tspan font-family="Helvetica Neue" font-size="12" font-weight="400" fill="black" x="9.500499" y="11">Betriebssystem (Prozesse, </tspan>
+          <tspan font-family="Helvetica Neue" font-size="12" font-weight="400" fill="black" x="9.134499" y="25.336">Kommunikation, Speicher-</tspan>
+          <tspan font-family="Helvetica Neue" font-size="12" font-weight="400" fill="black" x="49.7245" y="39.671997">verwaltung)</tspan>
+        </text>
+      </g>
+      <g id="Graphic_1173">
+        <ellipse cx="70.8661" cy="148.8186" rx="14.1732226473832" ry="7.08661132369157" fill="white"/>
+        <ellipse cx="70.8661" cy="148.8186" rx="14.1732226473832" ry="7.08661132369157" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_1174">
+        <ellipse cx="184.2522" cy="148.8186" rx="14.1732226473831" ry="7.08661132369157" fill="white"/>
+        <ellipse cx="184.2522" cy="148.8186" rx="14.1732226473831" ry="7.08661132369157" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Line_1175">
+        <path d="M 100.80508 73.67101 L 70.8661 99.2126 L 70.8661 141.232" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Line_1176">
+        <path d="M 154.31318 73.67101 L 184.252 99.2126 L 184.25217 141.232" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Line_1177">
+        <line x1="76.90605" y1="155.68217" x2="114.1895" y2="198.04964" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Line_1178">
+        <line x1="178.11238" y1="155.65751" x2="140.05074" y2="198.05294" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Line_1180">
+        <line x1="69.70302" y1="156.37864" x2="56.6929" y2="240.945" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Line_1181">
+        <line x1="185.41524" y1="156.37864" x2="198.425" y2="240.945" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_1182">
+        <rect x="255.118" y="28.3465" width="170.079" height="45" fill="white"/>
+        <rect x="255.118" y="28.3465" width="170.079" height="45" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(260.118 43.6785)" fill="black">
+          <tspan font-family="Helvetica Neue" font-size="12" font-weight="400" fill="black" x="24.593497" y="11">Verteilte Anwendung</tspan>
+        </text>
+      </g>
+      <g id="Graphic_1183">
+        <rect x="253.984" y="96.7323" width="171.213" height="30.8268" fill="white"/>
+        <rect x="253.984" y="96.7323" width="171.213" height="30.8268" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(258.984 104.9777)" fill="black">
+          <tspan font-family="Helvetica Neue" font-size="12" font-weight="400" fill="black" x="38.3905" y="11">Middleware API</tspan>
+        </text>
+      </g>
+      <g id="Graphic_1184">
+        <rect x="253.984" y="127.559" width="171.213" height="45" fill="white"/>
+        <rect x="253.984" y="127.559" width="171.213" height="45" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(258.984 142.891)" fill="black">
+          <tspan font-family="Helvetica Neue" font-size="12" font-weight="400" fill="black" x="49.3885" y="11">Middleware</tspan>
+        </text>
+      </g>
+      <g id="Graphic_1185">
+        <rect x="253.984" y="198.425" width="171.213" height="28.3465" fill="white"/>
+        <rect x="253.984" y="198.425" width="171.213" height="28.3465" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(258.984 205.43025)" fill="black">
+          <tspan font-family="Helvetica Neue" font-size="12" font-weight="400" fill="black" x="28.0465" y="11">Betriebssystem API</tspan>
+        </text>
+      </g>
+      <g id="Graphic_1186">
+        <rect x="253.984" y="226.772" width="171.213" height="45" fill="white"/>
+        <rect x="253.984" y="226.772" width="171.213" height="45" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(258.984 227.768)" fill="black">
+          <tspan font-family="Helvetica Neue" font-size="12" font-weight="400" fill="black" x="9.500499" y="11">Betriebssystem (Prozesse, </tspan>
+          <tspan font-family="Helvetica Neue" font-size="12" font-weight="400" fill="black" x="9.134499" y="25.336">Kommunikation, Speicher-</tspan>
+          <tspan font-family="Helvetica Neue" font-size="12" font-weight="400" fill="black" x="49.7245" y="39.671997">verwaltung)</tspan>
+        </text>
+      </g>
+      <g id="Graphic_1187">
+        <ellipse cx="283.4642" cy="148.8186" rx="14.1732226473831" ry="7.08661132369157" fill="white"/>
+        <ellipse cx="283.4642" cy="148.8186" rx="14.1732226473831" ry="7.08661132369157" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_1188">
+        <ellipse cx="396.8502" cy="148.8186" rx="14.1732226473832" ry="7.08661132369157" fill="white"/>
+        <ellipse cx="396.8502" cy="148.8186" rx="14.1732226473832" ry="7.08661132369157" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Line_1189">
+        <path d="M 313.40366 73.671015 L 283.465 99.2126 L 283.46432 141.232" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Line_1190">
+        <path d="M 366.91134 73.671015 L 396.85 99.2126 L 396.85017 141.232" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Line_1191">
+        <line x1="289.50416" y1="155.68217" x2="326.78768" y2="198.04964" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Line_1192">
+        <line x1="390.7104" y1="155.65752" x2="352.6489" y2="198.05294" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Line_1193">
+        <line x1="282.30112" y1="156.37864" x2="269.291" y2="240.945" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Line_1194">
+        <line x1="398.01324" y1="156.37864" x2="411.023" y2="240.945" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Line_1195">
+        <path d="M 127.26179 272.27197 L 127.559 297.638 L 340.157 297.638 L 339.8599 272.27197" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_1196">
+        <rect x="209.24358" y="285.47" width="60.412" height="24.335999" fill="white"/>
+        <text transform="translate(214.24358 290.47)" fill="black">
+          <tspan font-family="Helvetica Neue" font-size="12" font-weight="400" fill="black" x="13500312e-20" y="11">Netzwerk</tspan>
+        </text>
+      </g>
+    </g>
+  </g>
+</svg>

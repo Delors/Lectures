@@ -1,5 +1,5 @@
 .. meta::
-    :version: genesis
+    :version: renaissance
     :author: Michael Eichberg
     :keywords: "Middleware", "RPC", "RMI", "MoM"
     :description lang=de: Middleware
@@ -22,18 +22,8 @@
 .. role:: tiny
 .. role:: small
 .. role:: smaller
-.. role:: minor
+.. role:: peripheral
 .. role:: obsolete
-.. role:: dhbw-red
-.. role:: dhbw-gray
-.. role:: dhbw-light-gray
-.. role:: the-blue
-.. role:: the-green
-.. role:: the-orange
-.. role:: shiny-green
-.. role:: shiny-red
-.. role:: black
-.. role:: dark-red
 
 .. role:: raw-html(raw)
    :format: html
@@ -43,7 +33,9 @@
 Middleware
 ===============================================================================
 
-.. container:: line-above margin-top-1em padding-top-1em
+----
+
+.. container:: 
 
   :Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
   :Kontakt: michael.eichberg@dhbw.de, Raum 149B
@@ -66,13 +58,10 @@ Einführung in Middleware
 ------------------------
 
 
-
-.. class:: center-child-elements
-
 Was ist Middleware?
 -----------------------
 
-.. admonition:: Definition
+.. definition::
 
    Middleware ist eine Klasse von Software-Technologien, die dazu dienen, 
    
@@ -81,84 +70,72 @@ Was ist Middleware?
    (II) die Heterogenität verteilter Systeme zu verwalten.
 
 
-.. class:: tiny
+
+.. class:: motivation
 
 Ein einfacher Server mit Sockets (in C)
 ----------------------------------------
 
-.. container:: stack smaller
+.. scrollable:: 
 
-  .. container:: layer
+  .. code:: C
+    :class: copy-to-clipboard
+    :number-lines:
 
-    .. code:: C
-      :class: copy-to-clipboard
+    /* A simple TCP based server. The port number is passed as an argument */
+    #include <stdio.h>
+    #include <sys/types.h> 
+    #include <sys/socket.h>
+    #include <netinet/in.h>
 
-      /* A simple TCP based server. The port number is passed as an argument */
-      #include <stdio.h>
-      #include <sys/types.h> 
-      #include <sys/socket.h>
-      #include <netinet/in.h>
+    void error(char *msg){perror(msg); exit(1);}
 
-      void error(char *msg){perror(msg); exit(1);}
+    int main(int argc, char *argv[]){
+      int sockfd, newsockfd, portno, clilen;
+      char buffer[256]; int n;
+      struct sockaddr_in serv_addr, cli_addr;
 
-      int main(int argc, char *argv[]){
-        int sockfd, newsockfd, portno, clilen;
-        char buffer[256]; int n;
-        struct sockaddr_in serv_addr, cli_addr;
+      sockfd = socket(AF_INET, SOCK_STREAM, 0); // socket() returns a socket descriptor
+      if (sockfd < 0) 
+      error("ERROR opening socket");
 
-        sockfd = socket(AF_INET, SOCK_STREAM, 0); // socket() returns a socket descriptor
-        if (sockfd < 0) 
-        error("ERROR opening socket");
+      bzero((char *) &serv_addr, sizeof(serv_addr)); // bzero() sets all values to zero. 
+      portno = atoi(argv[1]); // atoi() converts str into an integer
 
-        bzero((char *) &serv_addr, sizeof(serv_addr)); // bzero() sets all values to zero. 
-        portno = atoi(argv[1]); // atoi() converts str into an integer
+      serv_addr.sin_family = AF_INET;
+      serv_addr.sin_addr.s_addr = INADDR_ANY;
+      serv_addr.sin_port = htons(portno);
 
-        ...
+      if (bind(sockfd, (struct sockaddr *) &serv_addr, sizeof(serv_addr)) < 0) 
+      error("ERROR on binding");
+      listen(sockfd,5); // tells the socket to listen for connections
+      clilen = sizeof(cli_addr);
+      newsockfd = accept(sockfd, (struct sockaddr *) &cli_addr, &clilen);
+      if (newsockfd < 0) error("ERROR on accept");
 
-  .. container:: layer incremental
+      bzero(buffer,256);
+      n = read(newsockfd,buffer,255);
+      if (n < 0) error("ERROR reading from socket");
+      printf("Here is the message: %s\n",buffer);
+      n = write(newsockfd,"I got your message",18);
 
-    .. code:: C
-      :class: copy-to-clipboard
+      if (n < 0) error("ERROR writing to socket");
 
-        serv_addr.sin_family = AF_INET;
-        serv_addr.sin_addr.s_addr = INADDR_ANY;
-        serv_addr.sin_port = htons(portno);
-
-        if (bind(sockfd, (struct sockaddr *) &serv_addr, sizeof(serv_addr)) < 0) 
-        error("ERROR on binding");
-        listen(sockfd,5); // tells the socket to listen for connections
-        clilen = sizeof(cli_addr);
-        newsockfd = accept(sockfd, (struct sockaddr *) &cli_addr, &clilen);
-        if (newsockfd < 0) error("ERROR on accept");
-
-        bzero(buffer,256);
-        n = read(newsockfd,buffer,255);
-        if (n < 0) error("ERROR reading from socket");
-        printf("Here is the message: %s\n",buffer);
-        n = write(newsockfd,"I got your message",18);
-
-        if (n < 0) error("ERROR writing to socket");
-
-        return 0; 
-      }
-
-.. container:: block-footer text-align-center dhbw-gray-background white
-
-   Motivation
+      return 0; 
+    }
 
 
 
-.. class:: tiny
+.. class:: motivation
 
 Ein einfacher Client mit Sockets (in C)
 ----------------------------------------
 
-.. stack:: smaller
+.. scrollable::
 
-    .. layer::
-    
       .. code:: c
         :class: copy-to-clipboard
+        :number-lines:
 
         #include <stdio.h>
         #include <sys/types.h>
@@ -179,14 +156,6 @@ Ein einfacher Client mit Sockets (in C)
           sockfd = socket(AF_INET, SOCK_STREAM, 0);
           if (sockfd < 0) 
             error("ERROR opening socket");
-
-          ...
-
-    .. layer:: incremental
-
-      .. code:: c
-
-          ...
 
           server = gethostbyname(argv[1]);
           bzero((char *) &serv_addr, sizeof(serv_addr));
@@ -209,50 +178,42 @@ Ein einfacher Client mit Sockets (in C)
         }
 
 
-.. container:: block-footer text-align-center dhbw-gray-background white
 
-   Motivation
-
-
+.. class:: motivation
 
 Probleme bei der Verwendung von Sockets
 ------------------------------------------
 
 Wir müssen uns kümmern um …
 
-.. class:: incremental negative-list list-with-explanations
+.. class:: incremental-list negative-list list-with-explanations
 
-  - … die Einrichtung eines Kanals und alle Fehler, die während dieses Prozesses auftreten können.
+- … die Einrichtung eines Kanals und alle Fehler, die während dieses Prozesses auftreten können.
 
-  - … die Festlegung eines Protokolls.
-   
-    Wer sendet was, wann, in welcher Reihenfolge und welche Antwort wird erwartet?
+- … die Festlegung eines Protokolls.
+  
+  Wer sendet was, wann, in welcher Reihenfolge und welche Antwort wird erwartet?
 
-  - … Nachrichtenformate 
-   
-    Umwandlung von Daten der Anwendungsebene in Bytes, die über das Netz übertragen werden können.
-
-.. container:: block-footer text-align-center dhbw-gray-background white
-
-   Motivation
+- … Nachrichtenformate 
+  
+  Umwandlung von Daten der Anwendungsebene in Bytes, die über das Netz übertragen werden können.
 
 
 
 Middleware als Programmierabstraktion
 ------------------------------------------
 
-.. container:: two-columns 
+.. grid:: 
 
-  .. container:: column no-separator
+  .. cell::
 
     - Eine Softwareschicht oberhalb des Betriebssystems und unterhalb des Anwendungsprogramms, die eine gemeinsame Programmierabstraktion in einem verteilten System bietet.
 
     - Ein Baustein auf höherer Ebene als die vom Betriebssystem bereitgestellten APIs (z. B. Sockets)
 
-  .. container:: column
+  .. cell::
 
     .. image:: images/middleware.svg
-       :height: 1100px
        :align: center
 
 
@@ -262,11 +223,11 @@ Middleware als Programmierabstraktion
 
 Die von Middleware angebotenen Programmierabstraktionen verbergen einen Teil der Heterogenität und bewältigen einen Teil der Komplexität, mit der Programmierer einer verteilten Anwendung umgehen müssen:
 
-.. class:: incremental positive-list
+.. class:: incremental-list positive-list
 
 - Middleware maskiert immer die Heterogenität der zugrundeliegenden Netzwerke und Hardware.
 - Middleware maskiert meistens die Heterogenität von Betriebssystemen und/oder Programmiersprachen.
-- :minor:`Manche Middleware maskiert sogar die Heterogenität zwischen den Implementierungen des gleichen Middleware-Standards durch verschiedene Hersteller`.
+- :peripheral:`Manche Middleware maskiert sogar die Heterogenität zwischen den Implementierungen des gleichen Middleware-Standards durch verschiedene Hersteller`.
 
 
 .. supplemental::
@@ -335,7 +296,7 @@ Middleware unterstützt zusätzliche Funktionen die die Entwicklung, Wartung und
 - Wiederherstellung (:eng:`Recovery`)
 - Sprachprimitive für transaktionale Abgrenzung 
  
-  (:minor:`Bzw. fortgeschrittene Transaktionsmodelle (z. B. transaktionale RPC) oder transaktionale Dateisysteme`)
+  (:peripheral:`Bzw. fortgeschrittene Transaktionsmodelle (z. B. transaktionale RPC) oder transaktionale Dateisysteme`)
 
 
 
@@ -615,9 +576,10 @@ RPC - Bewertung
 
   Das Network File System (NFS) und SMB sind bekannte RPC-basierte Anwendungen.
 
-.. presenter-notes::
+.. presenter-notes
 
   Durch RPC nicht gelöst werden Fragen bzgl. **langer Transaktionen**, die über mehrere RPC-Aufrufe hinweggehen. Auch die Frage nach der **Skalierbarkeit** wird nicht gelöst.
+
 
 
 .. class:: new-subsection transition-fade

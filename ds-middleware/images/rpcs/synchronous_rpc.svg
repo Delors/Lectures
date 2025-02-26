@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xl="http://www.w3.org/1999/xlink" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" viewBox="79 87 348 186" width="348" height="186">
+  <defs>
+    <font-face font-family="Helvetica" font-size="12" units-per-em="1000" underline-position="-75.68359" underline-thickness="49.316406" slope="0" x-height="522.9492" cap-height="717.28516" ascent="770.0195" descent="-229.98047" font-weight="400">
+      <font-face-src>
+        <font-face-name name="Helvetica"/>
+      </font-face-src>
+    </font-face>
+    <marker orient="auto" overflow="visible" markerUnits="strokeWidth" id="FilledArrow_Marker" stroke-linejoin="miter" stroke-miterlimit="10" viewBox="-1 -4 10 8" markerWidth="10" markerHeight="8" color="black">
+      <g>
+        <path d="M 8 0 L 0 -3 L 0 3 Z" fill="currentColor" stroke="currentColor" stroke-width="1"/>
+      </g>
+    </marker>
+  </defs>
+  <metadata> Produced by OmniGraffle 8.0\n2024-02-21 15:16:54 +0000</metadata>
+  <g id="synchronous_rpc" stroke-opacity="1" fill-opacity="1" stroke="none" fill="none" stroke-dasharray="none">
+    <title>synchronous_rpc</title>
+    <g id="synchronous_rpc_Layer_1">
+      <title>Layer 1</title>
+      <g id="Line_3">
+        <line x1="141.732" y1="99.2126" x2="425.197" y2="99.2126" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="8.0,8.0" stroke-width="2"/>
+      </g>
+      <g id="Line_4">
+        <line x1="141.732" y1="240.945" x2="425.197" y2="240.945" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="8.0,8.0" stroke-width="2"/>
+      </g>
+      <g id="Graphic_5">
+        <text transform="translate(84.87276 92.2126)" fill="black">
+          <tspan font-family="Helvetica" font-size="12" font-weight="400" fill="black" x="0" y="11">Client</tspan>
+        </text>
+      </g>
+      <g id="Graphic_6">
+        <text transform="translate(82.540725 233.945)" fill="black">
+          <tspan font-family="Helvetica" font-size="12" font-weight="400" fill="black" x="0" y="11">Server</tspan>
+        </text>
+      </g>
+      <g id="Line_7">
+        <path d="M 141.732 99.2126 L 212.598 99.2126 L 177.36591 99.2126" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="5"/>
+      </g>
+      <g id="Line_8">
+        <path d="M 240.945 240.945 L 311.811 240.945 L 312.213 240.945" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="5"/>
+      </g>
+      <g id="Line_9">
+        <path d="M 340.157 99.2125 L 368.504 99.2126 L 396.85 99.2126" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="5"/>
+      </g>
+      <g id="Line_10">
+        <line x1="212.598" y1="99.2126" x2="239.00342" y2="231.23726" marker-end="url(#FilledArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Line_11">
+        <line x1="311.811" y1="240.945" x2="338.2155" y2="108.92026" marker-end="url(#FilledArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_12">
+        <rect x="220.42077" y="87.2126" width="115.60938" height="24" fill="white"/>
+        <text transform="translate(225.42077 92.2126)" fill="black">
+          <tspan font-family="Helvetica" font-size="12" font-weight="400" fill="black" x="0" y="11">Warten auf Resultat</tspan>
+        </text>
+      </g>
+      <g id="Graphic_13">
+        <rect x="193.72928" y="117.9319" width="50.02539" height="24" fill="white"/>
+        <text transform="translate(198.72928 122.9319)" fill="black">
+          <tspan font-family="Helvetica" font-size="12" font-weight="400" fill="black" x="0" y="11">request</tspan>
+        </text>
+      </g>
+      <g id="Graphic_14">
+        <rect x="300.4411" y="195.76959" width="36.009766" height="24" fill="white"/>
+        <text transform="translate(305.4411 200.76959)" fill="black">
+          <tspan font-family="Helvetica" font-size="12" font-weight="400" fill="black" x="0" y="11">reply</tspan>
+        </text>
+      </g>
+      <g id="Graphic_15">
+        <text transform="translate(373.67505 248.118)" fill="black">
+          <tspan font-family="Helvetica" font-size="12" font-weight="400" fill="black" x="0" y="11">Zeit</tspan>
+        </text>
+      </g>
+      <g id="Line_16">
+        <line x1="396.85" y1="255.118" x2="415.297" y2="255.118" marker-end="url(#FilledArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_50">
+        <text transform="translate(191.4252 244.94488)" fill="black">
+          <tspan font-family="Helvetica" font-size="12" font-weight="400" fill="black" x="9.339844" y="11">Aufruf der lokalen Methoden</tspan>
+          <tspan font-family="Helvetica" font-size="12" font-weight="400" fill="black" x="0" y="25">und Rückgabe des Ergebnisses</tspan>
+        </text>
+      </g>
+    </g>
+  </g>
+</svg>

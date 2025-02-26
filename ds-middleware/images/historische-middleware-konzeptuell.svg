@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns:xl="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" viewBox="154 214 692 454" width="692" height="454">
+  <defs>
+    <filter id="Shadow" filterUnits="userSpaceOnUse" x="84.8" y="168.6">
+      <feGaussianBlur in="SourceAlpha" result="blur" stdDeviation=".872"/>
+      <feOffset in="blur" result="offset" dx="2" dy="2"/>
+      <feFlood flood-color="black" flood-opacity=".5" result="flood"/>
+      <feComposite in="flood" in2="offset" operator="in"/>
+    </filter>
+    <font-face font-family="Helvetica" font-size="14" units-per-em="1000" underline-position="-75.68359" underline-thickness="49.316406" slope="0" x-height="522.9492" cap-height="717.28516" ascent="770.0195" descent="-229.98047" font-weight="400">
+      <font-face-src>
+        <font-face-name name="Helvetica"/>
+      </font-face-src>
+    </font-face>
+    <font-face font-family="Helvetica" font-size="15" units-per-em="1000" underline-position="-75.68359" underline-thickness="49.316406" slope="0" x-height="522.9492" cap-height="717.28516" ascent="770.0195" descent="-229.98047" font-weight="400">
+      <font-face-src>
+        <font-face-name name="Helvetica"/>
+      </font-face-src>
+    </font-face>
+  </defs>
+  <metadata> Produced by OmniGraffle 8.0\n2024-03-10 16:43:42 +0000</metadata>
+  <g id="Canvas_1" stroke-dasharray="none" stroke-opacity="1" stroke="none" fill-opacity="1" fill="none">
+    <title>Canvas 1</title>
+    <rect fill="white" x="154" y="214" width="692" height="454"/>
+    <g id="Canvas_1_Layer_1">
+      <title>Layer 1</title>
+      <g id="Graphic_6_shadow" filter="url(#Shadow)">
+        <path d="M 612 215 L 834 215 C 837.3137 215 840 217.6863 840 221 L 840 533 C 840 536.3137 837.3137 539 834 539 L 612 539 C 608.6863 539 606 536.3137 606 533 L 606 221 C 606 217.6863 608.6863 215 612 215 Z" fill="white"/>
+        <path d="M 612 215 L 834 215 C 837.3137 215 840 217.6863 840 221 L 840 533 C 840 536.3137 837.3137 539 834 539 L 612 539 C 608.6863 539 606 536.3137 606 533 L 606 221 C 606 217.6863 608.6863 215 612 215 Z" stroke="#a5a5a5" stroke-linecap="square" stroke-linejoin="miter" stroke-width="2"/>
+      </g>
+      <g id="Graphic_8_shadow" filter="url(#Shadow)">
+        <path d="M 162 215 L 384 215 C 387.3137 215 390 217.6863 390 221 L 390 533 C 390 536.3137 387.3137 539 384 539 L 162 539 C 158.6863 539 156 536.3137 156 533 L 156 221 C 156 217.6863 158.6863 215 162 215 Z" fill="white"/>
+        <path d="M 162 215 L 384 215 C 387.3137 215 390 217.6863 390 221 L 390 533 C 390 536.3137 387.3137 539 384 539 L 162 539 C 158.6863 539 156 536.3137 156 533 L 156 221 C 156 217.6863 158.6863 215 162 215 Z" stroke="#a5a5a5" stroke-linecap="square" stroke-linejoin="miter" stroke-width="2"/>
+      </g>
+      <g id="Graphic_104">
+        <path d="M 161 575 L 836 575 C 839.3137 575 842 577.6863 842 581 L 842 661.3531 C 842 664.6668 839.3137 667.3531 836 667.3531 L 161 667.3531 C 157.6863 667.3531 155 664.6668 155 661.3531 L 155 581 C 155 577.6863 157.6863 575 161 575 Z" fill="#dadada"/>
+        <path d="M 161 575 L 836 575 C 839.3137 575 842 577.6863 842 581 L 842 661.3531 C 842 664.6668 839.3137 667.3531 836 667.3531 L 161 667.3531 C 157.6863 667.3531 155 664.6668 155 661.3531 L 155 581 C 155 577.6863 157.6863 575 161 575 Z" stroke="#a5a5a5" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_101">
+        <path d="M 498.5 298.75 C 475.235 298.75 456.375 302.7794 456.375 307.75 L 456.375 361.75 C 456.375 366.7206 475.235 370.75 498.5 370.75 C 521.765 370.75 540.625 366.7206 540.625 361.75 L 540.625 307.75 C 540.625 302.7794 521.765 298.75 498.5 298.75 Z M 456.375 307.75 C 456.375 312.7206 475.235 316.75 498.5 316.75 C 521.765 316.75 540.625 312.7206 540.625 307.75" stroke="black" stroke-linecap="square" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_6">
+        <path d="M 612 215 L 834 215 C 837.3137 215 840 217.6863 840 221 L 840 533 C 840 536.3137 837.3137 539 834 539 L 612 539 C 608.6863 539 606 536.3137 606 533 L 606 221 C 606 217.6863 608.6863 215 612 215 Z" fill="white"/>
+        <path d="M 612 215 L 834 215 C 837.3137 215 840 217.6863 840 221 L 840 533 C 840 536.3137 837.3137 539 834 539 L 612 539 C 608.6863 539 606 536.3137 606 533 L 606 221 C 606 217.6863 608.6863 215 612 215 Z" stroke="#a5a5a5" stroke-linecap="square" stroke-linejoin="miter" stroke-width="2"/>
+      </g>
+      <g id="Graphic_7">
+        <text transform="translate(675.15186 219)" fill="black">
+          <tspan font-family="Helvetica" font-size="14" font-weight="400" fill="black" x="0" y="14">Server Prozess</tspan>
+        </text>
+      </g>
+      <g id="Graphic_8">
+        <path d="M 162 215 L 384 215 C 387.3137 215 390 217.6863 390 221 L 390 533 C 390 536.3137 387.3137 539 384 539 L 162 539 C 158.6863 539 156 536.3137 156 533 L 156 221 C 156 217.6863 158.6863 215 162 215 Z" fill="white"/>
+        <path d="M 162 215 L 384 215 C 387.3137 215 390 217.6863 390 221 L 390 533 C 390 536.3137 387.3137 539 384 539 L 162 539 C 158.6863 539 156 536.3137 156 533 L 156 221 C 156 217.6863 158.6863 215 162 215 Z" stroke="#a5a5a5" stroke-linecap="square" stroke-linejoin="miter" stroke-width="2"/>
+      </g>
+      <g id="Graphic_9">
+        <text transform="translate(230.59668 222.016)" fill="black">
+          <tspan font-family="Helvetica" font-size="14" font-weight="400" fill="black" x="0" y="14">Client Prozess</tspan>
+        </text>
+      </g>
+      <g id="Group_111">
+        <g id="Graphic_103">
+          <rect x="180" y="589.5" width="110.12" height="54" fill="white"/>
+          <rect x="180" y="589.5" width="110.12" height="54" stroke="#a5a5a5" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        </g>
+        <g id="Graphic_15">
+          <text transform="translate(206.96268 603.25)" fill="#7e8080">
+            <tspan font-family="Helvetica" font-size="14" font-weight="400" fill="#7e8080" x="0" y="14">RPC</tspan>
+            <tspan font-family="Helvetica" font-size="14" font-weight="400" fill="#7e8080" x="0" y="31">Protokolle</tspan>
+          </text>
+        </g>
+      </g>
+      <g id="Group_110">
+        <g id="Graphic_105">
+          <rect x="356.74546" y="589.5" width="110.12" height="54" fill="white"/>
+          <rect x="356.74546" y="589.5" width="110.12" height="54" stroke="#a5a5a5" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        </g>
+        <g id="Graphic_18">
+          <text transform="translate(387.73933 603.25)" fill="#7e8080">
+            <tspan font-family="Helvetica" font-size="14" font-weight="400" fill="#7e8080" x="0" y="14">Security</tspan>
+            <tspan font-family="Helvetica" font-size="14" font-weight="400" fill="#7e8080" x="0" y="31">Service</tspan>
+          </text>
+        </g>
+      </g>
+      <g id="Group_108">
+        <g id="Graphic_106">
+          <rect x="533.4909" y="589.5" width="110.12" height="54" fill="white"/>
+          <rect x="533.4909" y="589.5" width="110.12" height="54" stroke="#a5a5a5" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        </g>
+        <g id="Graphic_21">
+          <text transform="translate(582.85345 611.25)" fill="#7e8080">
+            <tspan font-family="Helvetica" font-size="14" font-weight="400" fill="#7e8080" x="0" y="14">...</tspan>
+          </text>
+        </g>
+      </g>
+      <g id="Group_109">
+        <g id="Graphic_107">
+          <rect x="710.2364" y="589.5" width="110.12" height="54" fill="white"/>
+          <rect x="710.2364" y="589.5" width="110.12" height="54" stroke="#a5a5a5" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        </g>
+        <g id="Graphic_26">
+          <text transform="translate(743.878 603.25)" fill="#7e8080">
+            <tspan font-family="Helvetica" font-size="14" font-weight="400" fill="#7e8080" x="0" y="14">Threads</tspan>
+            <tspan font-family="Helvetica" font-size="14" font-weight="400" fill="#7e8080" x="0" y="31">Dienst</tspan>
+          </text>
+        </g>
+      </g>
+      <g id="Graphic_30">
+        <text transform="translate(475.3208 324.88705)" fill="black">
+          <tspan font-family="Helvetica" font-size="14" font-weight="400" fill="black" x="0" y="14">IDL</tspan>
+          <tspan font-family="Helvetica" font-size="14" font-weight="400" fill="black" x="0" y="31">Sources</tspan>
+        </text>
+      </g>
+      <g id="Graphic_31"/>
+      <g id="Graphic_32">
+        <path d="M 498.125 455 C 474.86 455 456 459.0294 456 464 L 456 518 C 456 522.9706 474.86 527 498.125 527 C 521.39 527 540.25 522.9706 540.25 518 L 540.25 464 C 540.25 459.0294 521.39 455 498.125 455 Z M 456 464 C 456 468.9706 474.86 473 498.125 473 C 521.39 473 540.25 468.9706 540.25 464" stroke="black" stroke-linecap="square" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_33">
+        <text transform="translate(470.7622 480.5)" fill="black">
+          <tspan font-family="Helvetica" font-size="14" font-weight="400" fill="black" x="0" y="14">Interface</tspan>
+          <tspan font-family="Helvetica" font-size="14" font-weight="400" fill="black" x="0" y="31">Headers</tspan>
+        </text>
+      </g>
+      <g id="Graphic_35">
+        <rect x="432" y="395" width="132" height="24" stroke="black" stroke-linecap="square" stroke-linejoin="miter" stroke-width="1"/>
+      </g>
+      <g id="Graphic_36">
+        <text transform="translate(459.4668 398.44352)" fill="black">
+          <tspan font-family="Helvetica" font-size="14" font-weight="400" fill="black" x="0" y="14">IDL compiler</tspan>
+        </text>
+      </g>
+      <g id="Graphic_37">
+        <text transform="translate(487.74393 264.3978)" fill="black">
+          <tspan font-family="Helvetica" font-size="14" font-weight="400" fill="black" x="0" y="14">IDL</tspan>
+        </text>
+      </g>
+      <g id="Line_38">
+        <path d="M 498 281 L 498.0772 292.1202 L 498.0842 293.1201" stroke="black" stroke-linecap="square" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_39">
+        <path d="M 501.5171 292.0963 L 498.125 299 L 494.6373 292.1441 Z" fill="black"/>
+      </g>
+      <g id="Line_40">
+        <path d="M 498 371 L 498.0892 388.1201 L 498.0944 389.1201" stroke="black" stroke-linecap="square" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_41">
+        <path d="M 501.5291 388.1022 L 498.125 395 L 494.6492 388.138 Z" fill="black"/>
+      </g>
+      <g id="Line_42">
+        <path d="M 498 419 L 498.1011 448.1201 L 498.1046 449.1201" stroke="black" stroke-linecap="square" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_43">
+        <path d="M 501.5411 448.1081 L 498.125 455 L 494.6612 448.132 Z" fill="black"/>
+      </g>
+      <g id="Graphic_44">
+        <path d="M 162 290 L 162 254 C 162 249.0294 166.0294 245 171 245 L 285 245 C 289.9706 245 294 249.0294 294 254 L 294 290 C 294 294.9706 289.9706 299 285 299 L 171 299 C 166.0294 299 162 294.9706 162 290 Z" stroke="black" stroke-linecap="square" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_45">
+        <text transform="translate(191.84863 263.5)" fill="black">
+          <tspan font-family="Helvetica" font-size="14" font-weight="400" fill="black" x="0" y="14">Client Code</tspan>
+        </text>
+      </g>
+      <g id="Graphic_47">
+        <path d="M 258 414 L 258 394 C 258 391.2386 260.2386 389 263 389 L 367 389 C 369.7614 389 372 391.2386 372 394 L 372 414 C 372 416.7614 369.7614 419 367 419 L 263 419 C 260.2386 419 258 416.7614 258 414 Z" fill="#efefef"/>
+      </g>
+      <g id="Graphic_48">
+        <path d="M 258 414 L 258 394 C 258 391.2386 260.2386 389 263 389 L 367 389 C 369.7614 389 372 391.2386 372 394 L 372 414 C 372 416.7614 369.7614 419 367 419 L 263 419 C 260.2386 419 258 416.7614 258 414 Z" stroke="black" stroke-linecap="square" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_49">
+        <text transform="translate(282.3713 393.5507)" fill="black">
+          <tspan font-family="Helvetica" font-size="14" font-weight="400" fill="black" x="0" y="14">Client Stub</tspan>
+        </text>
+      </g>
+      <g id="Graphic_50">
+        <path d="M 168 517 L 168 477 C 168 471.4771 172.4772 467 178 467 L 296 467 C 301.5228 467 306 471.4771 306 477 L 306 517 C 306 522.5228 301.5228 527 296 527 L 178 527 C 172.4772 527 168 522.5228 168 517 Z" fill="#efefef"/>
+      </g>
+      <g id="Graphic_51">
+        <path d="M 168 517 L 168 477 C 168 471.4771 172.4772 467 178 467 L 296 467 C 301.5228 467 306 471.4771 306 477 L 306 517 C 306 522.5228 301.5228 527 296 527 L 178 527 C 172.4772 527 168 522.5228 168 517 Z" stroke="#a5a5a5" stroke-linecap="square" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Line_56">
+        <line x1="258" y1="348" x2="378" y2="348.125" stroke="black" stroke-linecap="square" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Line_57">
+        <line x1="294" y1="275" x2="318" y2="275.125" stroke="black" stroke-linecap="square" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Line_58">
+        <line x1="318" y1="275" x2="318.125" y2="347" stroke="black" stroke-linecap="square" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Line_59">
+        <path d="M 432 407 L 378.88 407.1107 L 377.88 407.1127" stroke="black" stroke-linecap="square" stroke-linejoin="round" stroke-dasharray="1.0,4.0" stroke-width="1"/>
+      </g>
+      <g id="Graphic_60">
+        <path d="M 378.8872 410.5506 L 372 407.125 L 378.8728 403.6706 Z" fill="black"/>
+      </g>
+      <g id="Graphic_61">
+        <text transform="translate(189.50655 447)" fill="black">
+          <tspan font-family="Helvetica" font-size="14" font-weight="400" fill="black" x="0" y="14">RPC API</tspan>
+        </text>
+      </g>
+      <g id="Line_62">
+        <line x1="180" y1="443" x2="258" y2="443.125" stroke="black" stroke-linecap="square" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Line_63">
+        <line x1="222" y1="299" x2="222.125" y2="443" stroke="black" stroke-linecap="square" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Line_64">
+        <path d="M 240.0207 534.96 L 240.0246 536.46 L 240.1004 565.54 L 240.1043 567.04" stroke="black" stroke-linecap="butt" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_65">
+        <path d="M 235.2946 536.4723 L 240 527 L 244.7546 536.4476 Z" fill="black"/>
+      </g>
+      <g id="Graphic_66">
+        <path d="M 244.8304 565.5277 L 240.125 575 L 235.3704 565.5524 Z" fill="black"/>
+      </g>
+      <g id="Line_67">
+        <line x1="456" y1="497" x2="402" y2="497.125" stroke="black" stroke-linecap="square" stroke-linejoin="round" stroke-dasharray="1.0,4.0" stroke-width="1"/>
+      </g>
+      <g id="Line_68">
+        <line x1="402" y1="497" x2="402.125" y2="257" stroke="black" stroke-linecap="square" stroke-linejoin="round" stroke-dasharray="1.0,4.0" stroke-width="1"/>
+      </g>
+      <g id="Line_69">
+        <path d="M 402 257.125 L 300.88 257.0079 L 299.88 257.0068" stroke="black" stroke-linecap="square" stroke-linejoin="round" stroke-dasharray="1.0,4.0" stroke-width="1"/>
+      </g>
+      <g id="Graphic_70">
+        <path d="M 300.876 260.448 L 294 257 L 300.884 253.568 Z" fill="black"/>
+      </g>
+      <g id="Graphic_71">
+        <path d="M 702 290 L 702 254 C 702 249.0294 706.0294 245 711 245 L 825 245 C 829.9706 245 834 249.0294 834 254 L 834 290 C 834 294.9706 829.9706 299 825 299 L 711 299 C 706.0294 299 702 294.9706 702 290 Z" stroke="black" stroke-linecap="square" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_72">
+        <text transform="translate(726 259)" fill="black">
+          <tspan font-family="Helvetica" font-size="14" font-weight="400" fill="black" x="0" y="14">Server Code</tspan>
+        </text>
+      </g>
+      <g id="Graphic_73"/>
+      <g id="Graphic_74">
+        <path d="M 624 414 L 624 394 C 624 391.2386 626.2386 389 629 389 L 733 389 C 735.7614 389 738 391.2386 738 394 L 738 414 C 738 416.7614 735.7614 419 733 419 L 629 419 C 626.2386 419 624 416.7614 624 414 Z" fill="#efefef"/>
+      </g>
+      <g id="Graphic_75">
+        <path d="M 624 414 L 624 394 C 624 391.2386 626.2386 389 629 389 L 733 389 C 735.7614 389 738 391.2386 738 394 L 738 414 C 738 416.7614 735.7614 419 733 419 L 629 419 C 626.2386 419 624 416.7614 624 414 Z" stroke="black" stroke-linecap="square" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_76">
+        <text transform="translate(646.67944 394.5)" fill="black">
+          <tspan font-family="Helvetica" font-size="14" font-weight="400" fill="black" x="0" y="14">Server Stub</tspan>
+        </text>
+      </g>
+      <g id="Graphic_77">
+        <path d="M 690 517 L 690 477 C 690 471.4771 694.4772 467 700 467 L 818 467 C 823.5228 467 828 471.4771 828 477 L 828 517 C 828 522.5228 823.5228 527 818 527 L 700 527 C 694.4772 527 690 522.5228 690 517 Z" fill="#efefef"/>
+      </g>
+      <g id="Graphic_78">
+        <path d="M 690 517 L 690 477 C 690 471.4771 694.4772 467 700 467 L 818 467 C 823.5228 467 828 471.4771 828 477 L 828 517 C 828 522.5228 823.5228 527 818 527 L 700 527 C 694.4772 527 690 522.5228 690 517 Z" stroke="#a5a5a5" stroke-linecap="square" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_79">
+        <text transform="translate(715.838 478.25)" fill="black">
+          <tspan font-family="Helvetica" font-size="14" font-weight="400" fill="black" x="0" y="14">RPC Runtime</tspan>
+          <tspan font-family="Helvetica" font-size="14" font-weight="400" fill="black" x="0" y="31">Service Library</tspan>
+        </text>
+      </g>
+      <g id="Graphic_80"/>
+      <g id="Graphic_81">
+        <text transform="translate(623.63574 352.75)" fill="#ff4c00">
+          <tspan font-family="Helvetica" font-size="15" font-weight="400" fill="#ff4c00" x="0" y="15">Sprachspezifische</tspan>
+          <tspan font-family="Helvetica" font-size="15" font-weight="400" fill="#ff4c00" x="20.427246" y="33">Schnittstelle</tspan>
+        </text>
+      </g>
+      <g id="Line_83">
+        <line x1="624" y1="348" x2="744" y2="348.125" stroke="black" stroke-linecap="square" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Line_84">
+        <line x1="684" y1="275" x2="684.125" y2="347" stroke="black" stroke-linecap="square" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_85">
+        <text transform="translate(737.376 446.5)" fill="black">
+          <tspan font-family="Helvetica" font-size="14" font-weight="400" fill="black" x="0" y="14">RPC API</tspan>
+        </text>
+      </g>
+      <g id="Line_86">
+        <line x1="726" y1="443" x2="804" y2="443.125" stroke="black" stroke-linecap="square" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Line_87">
+        <line x1="768" y1="299" x2="768.125" y2="443" stroke="black" stroke-linecap="square" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Line_88">
+        <line x1="684" y1="275" x2="702" y2="275.125" stroke="black" stroke-linecap="square" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Line_89">
+        <path d="M 564 407 L 617.12 407.1107 L 618.12 407.1127" stroke="black" stroke-linecap="square" stroke-linejoin="round" stroke-dasharray="1.0,4.0" stroke-width="1"/>
+      </g>
+      <g id="Graphic_90">
+        <path d="M 617.1272 403.6707 L 624 407.125 L 617.1128 410.5507 Z" fill="black"/>
+      </g>
+      <g id="Line_91">
+        <line x1="540" y1="497" x2="588" y2="497.125" stroke="black" stroke-linecap="square" stroke-linejoin="round" stroke-dasharray="1.0,4.0" stroke-width="1"/>
+      </g>
+      <g id="Line_92">
+        <line x1="588" y1="497" x2="588.125" y2="257" stroke="black" stroke-linecap="square" stroke-linejoin="round" stroke-dasharray="1.0,4.0" stroke-width="1"/>
+      </g>
+      <g id="Line_93">
+        <path d="M 588 257 L 697.12 257.1176 L 698.12 257.1187" stroke="black" stroke-linecap="square" stroke-linejoin="round" stroke-dasharray="1.0,4.0" stroke-width="1"/>
+      </g>
+      <g id="Graphic_94">
+        <path d="M 697.1237 253.6776 L 704 257.125 L 697.1163 260.5576 Z" fill="black"/>
+      </g>
+      <g id="Line_95">
+        <path d="M 762.0206 534.96 L 762.0245 536.46 L 762.1003 565.5399 L 762.1042 567.04" stroke="black" stroke-linecap="butt" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_96">
+        <path d="M 757.2946 536.4722 L 762 527 L 766.7545 536.4477 Z" fill="black"/>
+      </g>
+      <g id="Graphic_97">
+        <path d="M 766.8303 565.5277 L 762.125 575 L 757.3703 565.5524 Z" fill="black"/>
+      </g>
+      <g id="Graphic_98">
+        <text transform="translate(443.0244 647.8531)" fill="black">
+          <tspan font-family="Helvetica" font-size="14" font-weight="400" fill="black" x="0" y="14">Runtime Environment</tspan>
+        </text>
+      </g>
+      <g id="Graphic_102">
+        <text transform="translate(193.83808 478.5)" fill="black">
+          <tspan font-family="Helvetica" font-size="14" font-weight="400" fill="black" x="3.8930664" y="14">RPC Runtime</tspan>
+          <tspan font-family="Helvetica" font-size="14" font-weight="400" fill="black" x="0" y="31">Service Library</tspan>
+        </text>
+      </g>
+      <g id="Graphic_113">
+        <text transform="translate(257.63574 351)" fill="#ff4c00">
+          <tspan font-family="Helvetica" font-size="15" font-weight="400" fill="#ff4c00" x="0" y="15">Sprachspezifische</tspan>
+          <tspan font-family="Helvetica" font-size="15" font-weight="400" fill="#ff4c00" x="20.427246" y="33">Schnittstelle</tspan>
+        </text>
+      </g>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xl="http://www.w3.org/1999/xlink" viewBox="-1 -1 675 721" width="675" height="721">
+  <defs>
+    <font-face font-family="Helvetica Neue" font-size="16" panose-1="2 0 5 3 0 0 0 2 0 4" units-per-em="1000" underline-position="-100" underline-thickness="50" slope="0" x-height="517" cap-height="714" ascent="951.9958" descent="-212.99744" font-weight="400">
+      <font-face-src>
+        <font-face-name name="HelveticaNeue"/>
+      </font-face-src>
+    </font-face>
+    <marker orient="auto" overflow="visible" markerUnits="strokeWidth" id="FilledArrow_Marker" stroke-linejoin="miter" stroke-miterlimit="10" viewBox="-1 -3 7 6" markerWidth="7" markerHeight="6" color="#666">
+      <g>
+        <path d="M 4.8 0 L 0 -1.8 L 0 1.8 Z" fill="currentColor" stroke="currentColor" stroke-width="1"/>
+      </g>
+    </marker>
+    <marker orient="auto" overflow="visible" markerUnits="strokeWidth" id="StickArrow_Marker" stroke-linejoin="miter" stroke-miterlimit="10" viewBox="-1 -3 7 6" markerWidth="7" markerHeight="6" color="#666">
+      <g>
+        <path d="M 4.8 0 L 0 0 M 0 -1.8 L 4.8 0 L 0 1.8" fill="none" stroke="currentColor" stroke-width="1"/>
+      </g>
+    </marker>
+  </defs>
+  <metadata> Produced by OmniGraffle 8.0\n2024-03-12 20:18:15 +0000</metadata>
+  <g id="pipeline" stroke-opacity="1" fill-opacity="1" fill="none" stroke="none" stroke-dasharray="none">
+    <title>pipeline</title>
+    <rect fill="white" x="-1" y="-1" width="675" height="721"/>
+    <g id="pipeline_Layer_1">
+      <title>Layer 1</title>
+      <g id="Graphic_54">
+        <path d="M 8 429.5 L 196 429.5 C 200.41828 429.5 204 433.0817 204 437.5 L 204 471 C 204 475.4183 200.41828 479 196 479 L 8 479 C 3.581722 479 541083e-21 475.4183 0 471 L 17763568e-22 437.5 C 23174398e-22 433.0817 3.581722 429.5 8 429.5 Z" fill="white"/>
+        <path d="M 8 429.5 L 196 429.5 C 200.41828 429.5 204 433.0817 204 437.5 L 204 471 C 204 475.4183 200.41828 479 196 479 L 8 479 C 3.581722 479 541083e-21 475.4183 0 471 L 17763568e-22 437.5 C 23174398e-22 433.0817 3.581722 429.5 8 429.5 Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(5 445.026)" fill="black">
+          <tspan font-family="Helvetica Neue" font-size="16" font-weight="400" fill="black" x="45.592" y="15">Socket: PUSH</tspan>
+        </text>
+      </g>
+      <g id="Graphic_55">
+        <path d="M 477 429.5 L 665 429.5 C 669.4183 429.5 673 433.0817 673 437.5 L 673 471 C 673 475.4183 669.4183 479 665 479 L 477 479 C 472.5817 479 469 475.4183 469 471 L 469 437.5 C 469 433.0817 472.5817 429.5 477 429.5 Z" fill="white"/>
+        <path d="M 477 429.5 L 665 429.5 C 669.4183 429.5 673 433.0817 673 437.5 L 673 471 C 673 475.4183 669.4183 479 665 479 L 477 479 C 472.5817 479 469 475.4183 469 471 L 469 437.5 C 469 433.0817 472.5817 429.5 477 429.5 Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(474 445.026)" fill="black">
+          <tspan font-family="Helvetica Neue" font-size="16" font-weight="400" fill="black" x="45.592" y="15">Socket: PUSH</tspan>
+        </text>
+      </g>
+      <g id="Graphic_53">
+        <path d="M 242.5 65 L 430.5 65 C 434.9183 65 438.5 68.58172 438.5 73 L 438.5 106.5 C 438.5 110.91828 434.9183 114.5 430.5 114.5 L 242.5 114.5 C 238.08172 114.5 234.5 110.91828 234.5 106.5 L 234.5 73 C 234.5 68.58172 238.08172 65 242.5 65 Z" fill="white"/>
+        <path d="M 242.5 65 L 430.5 65 C 434.9183 65 438.5 68.58172 438.5 73 L 438.5 106.5 C 438.5 110.91828 434.9183 114.5 430.5 114.5 L 242.5 114.5 C 238.08172 114.5 234.5 110.91828 234.5 106.5 L 234.5 73 C 234.5 68.58172 238.08172 65 242.5 65 Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(239.5 80.526)" fill="black">
+          <tspan font-family="Helvetica Neue" font-size="16" font-weight="400" fill="black" x="45.592" y="15">Socket: PUSH</tspan>
+        </text>
+      </g>
+      <g id="Graphic_52">
+        <path d="M 8 325 L 196 325 C 200.41828 325 204 328.58172 204 333 L 204 366.5 C 204 370.9183 200.41828 374.5 196 374.5 L 8 374.5 C 3.581722 374.5 541083e-21 370.9183 0 366.5 L 17763568e-22 333 C 23174398e-22 328.58172 3.581722 325 8 325 Z" fill="white"/>
+        <path d="M 8 325 L 196 325 C 200.41828 325 204 328.58172 204 333 L 204 366.5 C 204 370.9183 200.41828 374.5 196 374.5 L 8 374.5 C 3.581722 374.5 541083e-21 370.9183 0 366.5 L 17763568e-22 333 C 23174398e-22 328.58172 3.581722 325 8 325 Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(5 340.526)" fill="black">
+          <tspan font-family="Helvetica Neue" font-size="16" font-weight="400" fill="black" x="47.656" y="15">Socket: PULL</tspan>
+        </text>
+      </g>
+      <g id="Graphic_51">
+        <path d="M 477 325 L 665 325 C 669.4183 325 673 328.58172 673 333 L 673 366.5 C 673 370.9183 669.4183 374.5 665 374.5 L 477 374.5 C 472.5817 374.5 469 370.9183 469 366.5 L 469 333 C 469 328.58172 472.5817 325 477 325 Z" fill="white"/>
+        <path d="M 477 325 L 665 325 C 669.4183 325 673 328.58172 673 333 L 673 366.5 C 673 370.9183 669.4183 374.5 665 374.5 L 477 374.5 C 472.5817 374.5 469 370.9183 469 366.5 L 469 333 C 469 328.58172 472.5817 325 477 325 Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(474 340.526)" fill="black">
+          <tspan font-family="Helvetica Neue" font-size="16" font-weight="400" fill="black" x="47.656" y="15">Socket: PULL</tspan>
+        </text>
+      </g>
+      <g id="Line_50">
+        <path d="M 153 325 L 153 219.75 L 336.5 219.75 L 336.5 127.4" marker-end="url(#FilledArrow_Marker)" stroke="#666" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="2.0,8.0" stroke-width="2"/>
+      </g>
+      <g id="Line_49">
+        <path d="M 520 325 L 520 219.75 L 336.5 219.75 L 336.5 127.4" marker-end="url(#FilledArrow_Marker)" stroke="#666" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="2.0,8.0" stroke-width="2"/>
+      </g>
+      <g id="Graphic_48">
+        <text transform="translate(282.428 226)" fill="black">
+          <tspan font-family="Helvetica Neue" font-size="16" font-weight="400" fill="black" x="0" y="15">1. connect()</tspan>
+        </text>
+      </g>
+      <g id="Line_47">
+        <path d="M 285.5 114.5 L 285.5 163.99219 L 51 163.99219 L 51 312.1" marker-end="url(#StickArrow_Marker)" stroke="#666" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+      <g id="Line_46">
+        <path d="M 387.5 114.5 L 387.5 163.5 L 622 163.5 L 622 312.1" marker-end="url(#StickArrow_Marker)" stroke="#666" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+      <g id="Graphic_45">
+        <rect x="234.5" y="0" width="204" height="71" fill="white"/>
+        <rect x="234.5" y="0" width="204" height="71" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(239.5 26.276)" fill="black">
+          <tspan font-family="Helvetica Neue" font-size="16" font-weight="400" fill="black" x="31.808" y="15">Producer / Source</tspan>
+        </text>
+      </g>
+      <g id="Graphic_44">
+        <rect x="0" y="366.5" width="204" height="71" fill="white"/>
+        <rect x="0" y="366.5" width="204" height="71" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(5 392.776)" fill="black">
+          <tspan font-family="Helvetica Neue" font-size="16" font-weight="400" fill="black" x="71.68" y="15">Worker</tspan>
+        </text>
+      </g>
+      <g id="Graphic_43">
+        <rect x="469" y="366.5" width="204" height="71" fill="white"/>
+        <rect x="469" y="366.5" width="204" height="71" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(474 392.776)" fill="black">
+          <tspan font-family="Helvetica Neue" font-size="16" font-weight="400" fill="black" x="71.68" y="15">Worker</tspan>
+        </text>
+      </g>
+      <g id="Graphic_42">
+        <text transform="translate(106.716 146)" fill="black">
+          <tspan font-family="Helvetica Neue" font-size="16" font-weight="400" fill="black" x="0" y="15">n. send(task)</tspan>
+        </text>
+      </g>
+      <g id="Graphic_41">
+        <text transform="translate(474.783 146)" fill="black">
+          <tspan font-family="Helvetica Neue" font-size="16" font-weight="400" fill="black" x="0" y="15">m. send(task)</tspan>
+        </text>
+      </g>
+      <g id="Graphic_58">
+        <path d="M 242.5 607 L 430.5 607 C 434.9183 607 438.5 610.5817 438.5 615 L 438.5 648.5 C 438.5 652.9183 434.9183 656.5 430.5 656.5 L 242.5 656.5 C 238.08172 656.5 234.5 652.9183 234.5 648.5 L 234.5 615 C 234.5 610.5817 238.08172 607 242.5 607 Z" fill="white"/>
+        <path d="M 242.5 607 L 430.5 607 C 434.9183 607 438.5 610.5817 438.5 615 L 438.5 648.5 C 438.5 652.9183 434.9183 656.5 430.5 656.5 L 242.5 656.5 C 238.08172 656.5 234.5 652.9183 234.5 648.5 L 234.5 615 C 234.5 610.5817 238.08172 607 242.5 607 Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(239.5 622.526)" fill="black">
+          <tspan font-family="Helvetica Neue" font-size="16" font-weight="400" fill="black" x="47.656" y="15">Socket: PULL</tspan>
+        </text>
+      </g>
+      <g id="Graphic_56">
+        <rect x="234.5" y="648.5" width="204" height="71" fill="white"/>
+        <rect x="234.5" y="648.5" width="204" height="71" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(239.5 674.776)" fill="black">
+          <tspan font-family="Helvetica Neue" font-size="16" font-weight="400" fill="black" x="37.28" y="15">Consumer / Sink</tspan>
+        </text>
+      </g>
+      <g id="Line_59">
+        <path d="M 102 479 L 102 543 L 336.5 543 L 336.5 594.1" marker-end="url(#StickArrow_Marker)" stroke="#666" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+      <g id="Line_60">
+        <path d="M 571 479 L 571 543 L 336.5 543 L 336.5 594.1" marker-end="url(#StickArrow_Marker)" stroke="#666" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+      <g id="Graphic_62">
+        <text transform="translate(302.868 520.5)" fill="black">
+          <tspan font-family="Helvetica Neue" font-size="16" font-weight="400" fill="black" x="0" y="15">Resultate</tspan>
+        </text>
+      </g>
+    </g>
+  </g>
+</svg>
