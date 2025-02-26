@@ -233,7 +233,7 @@ Modellierungsaspekte
 
 .. exercise:: Domänenmodell für ein Kassensystem
 
-    Erstellen Sie ein Domänenmodell für ein einfaches Kassensystem basierend auf der folgenden Beschreibung und Ihrem Domänenwissen:
+    Erstellen Sie ein Domänenmodell (d. h. ein UML Klassendiagramm) für ein einfaches Kassensystem basierend auf der folgenden Beschreibung und Ihrem Domänenwissen:
 
         Verkauf abwickeln: Ein Kunde kommt an der Kasse an und möchte einen Artikel kaufen. Der Kassierer verwendet das Kassensystem, um jeden Artikel zu erfassen. Das System zeigt eine laufende Summe und Details zu den einzelnen Positionen an. Der Kunde gibt die Zahlungsinformationen ein, die das System prüft und aufzeichnet. Das System aktualisiert den Warenbestand. Der Kunde erhält eine Quittung vom System und verlässt dann das Geschäft mit den Artikeln.
 
@@ -282,6 +282,7 @@ Beispiel: Implementierung einer Klasse 2DPoint
 
                 .. code:: java
                     :number-lines:
+                    :class: copy-to-clipboard
 
                     class Point {
                         private final int x;
@@ -304,6 +305,7 @@ Beispiel: Implementierung einer Klasse 2DPoint
 
                 .. code:: java
                     :number-lines: 17
+                    :class: copy-to-clipboard
 
                         public int hashCode() { 
                             return Objects.hash(x, y);
@@ -322,6 +324,7 @@ Beispiel: Implementierung einer Klasse 2DPoint
 
         .. code:: java
             :number-lines:
+            :class: copy-to-clipboard
 
             record Point(int x, int y) {}
 
@@ -425,6 +428,7 @@ Konstruktoren von Record Klassen
 
         .. code:: java
             :number-lines:
+            :class: copy-to-clipboard
 
 
             record Point(int x, int y) { 
@@ -439,6 +443,7 @@ Konstruktoren von Record Klassen
 
         .. code:: java
             :number-lines:
+            :class: copy-to-clipboard
 
             record Point(int x, int y) {
                 Point {
@@ -450,7 +455,7 @@ Konstruktoren von Record Klassen
 
     - \ 
 
-    .. container:: accentuate
+      .. container:: accentuate
 
         Der primäre Zweck von zusätzlichen Konstruktoren ist es, die Validierung oder Normalisierung der Attribute zu ermöglichen.
 
@@ -462,7 +467,7 @@ Konstruktoren von Record Klassen
 ------------------------------------------------
 
 
-.. exercise:: Ein einfacher TelefonbuchEintrag
+.. exercise:: Ein einfacher TelefonbuchEintrag mit Java Records
     
     Entwickeln Sie eine Klasse TelefonbuchEintrag mit den Attributen:
 
@@ -477,6 +482,7 @@ Konstruktoren von Record Klassen
 
         .. code:: java
             :number-lines:
+            :class: copy-to-clipboard
 
             public record TelefonbuchEintrag(int telefonnummer, String vorname, String nachname) {
                 public TelefonbuchEintrag {
@@ -516,10 +522,11 @@ Modellierung von Aufzählungen mit Java Enums
 
         .. code:: java
             :number-lines:
+            :class: copy-to-clipboard
 
             public enum Arbeitstag { MONTAG, DIENSTAG, MITTWOCH, DONNERSTAG, FREITAG }
 
-        .. rubric:: Beispielverwendung (:java:`Wochentag w = Wochentag.FREITAG`)
+        .. rubric:: Beispielverwendung (:java:`Arbeitstag w = Arbeitstag.FREITAG`)
             
         .. code:: java
             :number-lines:
@@ -531,9 +538,9 @@ Modellierung von Aufzählungen mit Java Enums
             gleich ist Wochenende
 
             jshell> w.values();
-            ==> Wochentag[5] { MONTAG, DIENSTAG, MITTWOCH, DONNERSTAG, FREITAG }
+            ==> Arbeitstag[5] { MONTAG, DIENSTAG, MITTWOCH, DONNERSTAG, FREITAG }
 
-            jshell> Wochentag.valueOf("FREITAG").ordinal()
+            jshell> Arbeitstag.valueOf("FREITAG").ordinal()
             ==> 4
 
 
@@ -545,6 +552,7 @@ Java Enum Konstanten können eigene Eigenschaften haben
 
     .. code:: java
         :number-lines:
+        :class: copy-to-clipboard
 
         public enum Arbeitstag {
             MONTAG(1), DIENSTAG(2), MITTWOCH(3), DONNERSTAG(4), FREITAG(5);
@@ -571,6 +579,7 @@ Enum Konstanten können eigene Klassenbodies deklarieren
 
         .. code:: java
             :number-lines:
+            :class: copy-to-clipboard
 
             enum Operation {
                 PLUS {
@@ -619,7 +628,7 @@ Java :java:`enum`\ s - Technische Besonderheiten
 Übung - Java Enums
 ------------------------------------------------
 
-.. exercise::
+.. exercise:: Enum für Währungen
 
     Deklarieren Sie eine Enum (:java:`Currency`) für Währungen (Euro, Pfund etc.). 
     
@@ -639,6 +648,7 @@ Java :java:`enum`\ s - Technische Besonderheiten
 
         .. code:: java
             :number-lines:
+            :class: copy-to-clipboard
 
             public enum Currency {
 
