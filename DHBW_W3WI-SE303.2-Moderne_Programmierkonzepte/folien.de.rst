@@ -216,7 +216,7 @@ Pro Programmiersprache/Team:
 
 Pro Programmiersprache/Team:
 
-- [1 Stud. - 25min] Präsentation der Unterstützung für generische Programmierung und der Wiederverwendbarkeit von Funktionalität anhand der Implementierung einfacher Datenstrukturen.
+- [1 Stud. - 25min] Präsentation der Unterstützung für generische Programmierung und der Wiederverwendbarkeit von Funktionalität anhand der Implementierung einfacher Datenstrukturen. D. h. erklären des Typsystems. Darstellen der Tests und der Testabdeckung und des konkreten Build-Prozesses.
 
 
 
@@ -225,7 +225,7 @@ Pro Programmiersprache/Team:
 
 Pro Programmiersprache/Team:
 
-- [1 Stud. - 25min] Präsentation der grundlegenden Konzepte der funktionalen Programmierung anhand der Implementierung einer einfachen Datenstruktur sowie der Verarbeitung von Datenströmen.
+- [1 Stud. - 25min] Präsentation der grundlegenden Konzepte der funktionalen Programmierung anhand der Implementierung einer einfachen Datenstruktur sowie der Verarbeitung von Datenströmen. Themen die explizit diskutiert und präsentiert werden sollten sind Scoping, Closures, Tail Recursion sowie Eager und Lazy Evaluation.
 
 
 
@@ -437,3 +437,12 @@ Entwickeln Sie einen einfachen interaktiven Taschenrechner, der beliebig große 
 
     - *Fehlerbehandlung*: Fehler sollten (sprach-)angemessen behandelt werden.
         
+
+
+
+3. Aufgabe: Funktionale Programmierung und verwandte Konzepte
+---------------------------------------------------------------
+
+
+4. Aufgabe: Nebenläufige Programmierung
+-----------------------------------------
