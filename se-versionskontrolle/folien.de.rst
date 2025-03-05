@@ -13,6 +13,12 @@
 .. |pdf-source| source::
     :prefix: https://delors.github.io/
     :suffix: .html.pdf
+
+.. |RPN.zip| source:: exercise/RPN.zip
+    :prefix: https://delors.github.io/
+    :path: relative
+
+
 .. |at| unicode:: 0x40
 
 .. role:: incremental   
@@ -282,6 +288,7 @@ VCS - Git - Prozess
             viewBox="0 0 10 10"
             refX="10"
             refY="5"
+            markerUnits="strokeWidth"
             markerWidth="8"
             markerHeight="8"
             orient="auto-start-reverse">
@@ -551,16 +558,6 @@ Git verwaltet Versionen von Dokumenten mittels Commits in Branches.
                     }
                 </style>
                 <defs>
-                    <marker 
-                    id="arrow"
-                    viewBox="0 0 10 10"
-                    refX="10"
-                    refY="5"
-                    markerWidth="8"
-                    markerHeight="8"
-                    orient="auto-start-reverse">
-                    <path d="M 0 0 L 10 5 L 0 10 z" />
-                    </marker>
                     <g id="star">
                         <polygon class="star" points="12,2 15,9 22,9 16,14 18,21 12,17 6,21 8,14 2,9 9,9" fill="gold" stroke="black" stroke-width="1"/>
                     </g>
@@ -593,8 +590,7 @@ Git verwaltet Versionen von Dokumenten mittels Commits in Branches.
                 <style>
                     polygon.star {
                         transform: scale(calc(var(--unitless-current-base-font-size) / 20));
-                    }
-                    /* TODO: How to scale Arrowheads? */    
+                    } 
                 </style>
                 <defs>
                     <marker 
@@ -602,8 +598,9 @@ Git verwaltet Versionen von Dokumenten mittels Commits in Branches.
                     viewBox="0 0 10 10"
                     refX="10"
                     refY="5"
-                    markerWidth="0.4ex"
-                    markerHeight="0.4ex"
+                    markerUnits="strokeWidth"
+                    markerWidth="6"
+                    markerHeight="6"
                     orient="auto-start-reverse">
                     <path class="arrow-head" d="M 0 0 L 10 5 L 0 10 z" />
                     </marker>
@@ -650,7 +647,6 @@ Git verwaltet Versionen von Dokumenten mittels Commits in Branches.
                     polygon.star {
                         transform: scale(calc(var(--unitless-current-base-font-size) / 20));
                     }
-                    /* TODO: How to scale Arrowheads? */    
                 </style>
                 <defs>
                     <marker 
@@ -658,8 +654,9 @@ Git verwaltet Versionen von Dokumenten mittels Commits in Branches.
                     viewBox="0 0 10 10"
                     refX="10"
                     refY="5"
-                    markerWidth="0.4ex"
-                    markerHeight="0.4ex"
+                    markerUnits="strokeWidth"
+                    markerWidth="6"
+                    markerHeight="6"
                     orient="auto-start-reverse">
                     <path class="arrow-head" d="M 0 0 L 10 5 L 0 10 z" />
                     </marker>
@@ -700,7 +697,6 @@ Git verwaltet Versionen von Dokumenten mittels Commits in Branches.
                     polygon.star {
                         transform: scale(calc(var(--unitless-current-base-font-size) / 20));
                     }
-                    /* TODO: How to scale Arrowheads? */    
                 </style>
                 <defs>
                     <marker 
@@ -708,8 +704,9 @@ Git verwaltet Versionen von Dokumenten mittels Commits in Branches.
                     viewBox="0 0 10 10"
                     refX="10"
                     refY="5"
-                    markerWidth="0.4ex"
-                    markerHeight="0.4ex"
+                    markerUnits="strokeWidth"
+                    markerWidth="6"
+                    markerHeight="6"
                     orient="auto-start-reverse">
                     <path class="arrow-head" d="M 0 0 L 10 5 L 0 10 z" />
                     </marker>
@@ -754,7 +751,6 @@ Git verwaltet Versionen von Dokumenten mittels Commits in Branches.
                     polygon.star {
                         transform: scale(calc(var(--unitless-current-base-font-size) / 20));
                     }
-                    /* TODO: How to scale Arrowheads? */    
                 </style>
                 <defs>
                     <marker 
@@ -762,8 +758,9 @@ Git verwaltet Versionen von Dokumenten mittels Commits in Branches.
                     viewBox="0 0 10 10"
                     refX="10"
                     refY="5"
-                    markerWidth="0.4ex"
-                    markerHeight="0.4ex"
+                    markerUnits="strokeWidth"
+                    markerWidth="6"
+                    markerHeight="6"
                     orient="auto-start-reverse">
                     <path class="arrow-head" d="M 0 0 L 10 5 L 0 10 z" />
                     </marker>
@@ -808,8 +805,7 @@ Git verwaltet Versionen von Dokumenten mittels Commits in Branches.
                 <style>
                     polygon.star {
                         transform: scale(calc(var(--unitless-current-base-font-size) / 20));
-                    }
-                    /* TODO: How to scale Arrowheads? */    
+                    }  
                 </style>
                 <defs>
                     <marker 
@@ -817,8 +813,9 @@ Git verwaltet Versionen von Dokumenten mittels Commits in Branches.
                     viewBox="0 0 10 10"
                     refX="10"
                     refY="5"
-                    markerWidth="0.4ex"
-                    markerHeight="0.4ex"
+                    markerUnits="strokeWidth"
+                    markerWidth="6"
+                    markerHeight="6"
                     orient="auto-start-reverse">
                     <path class="arrow-head" d="M 0 0 L 10 5 L 0 10 z" />
                     </marker>
@@ -896,6 +893,8 @@ Dezentralisierte VCS - Verteiltes Arbeiten
             viewBox="0 0 10 10"
             refX="10"
             refY="5"
+            marker
+            markerUnits="strokeWidth"
             markerWidth="8"
             markerHeight="8"
             orient="auto-start-reverse">
@@ -985,5 +984,121 @@ GIT Befehle
 • Kombination von :console:`git fetch` und :console:`git merge`: :console:`git pull`
 
 
-.. TODOs: 1. Übung hinzufügen
-          2. Merges tiefergehend erklären und auch visualisieren
+`.gitignore <https://git-scm.com/docs/gitignore>`__
+------------------------------------------------------------
+
+Die Datei .gitignore listet alle Arten von Dateien und Verzeichnissen auf, die von Git ignoriert werden sollen. Dies sind typischerweise alle Artefakte, die automatische generiert werden als Teil des Entwicklungsprozesses.
+
+
+.. grid::
+
+    .. cell::
+
+        .. class:: incremental-list
+
+        - Kommentare beginnen mit #
+        - Leerzeilen sind erlaubt
+        - jede nicht-leere Zeile, die kein Kommentar ist, beschreibt ein Muster
+        - Wildcards (*) sind erlaubt
+        - ! am Anfang negiert ein Muster
+        - "/" separiert Verzeichnisse
+
+    .. cell:: incremental
+
+        .. example::
+
+            .. code:: unixconfig
+                :number-lines:
+
+                *.bak
+                *.class
+                *.jar
+                target/
+
+                # "Editors"
+                .vscode/
+                .zed/
+                .idea/    
+
+
+
+
+
+
+.. class:: exercises
+
+Übung
+------
+
+.. story::
+
+    .. exercise:: Eine erste Übung mit GIT
+
+        Installieren Sie Git auf Ihrem System, falls es nicht verfügbar sein sollte. 
+
+        .. class:: incremental-list list-with-explanations
+
+        1. Erstellen Sie ein neues Verzeichnis und legen Sie darin ein neues lokales Repository mit Hilfe von :console:`git init` an.
+        2. Entpacken Sie die Datei |RPN.zip| in dem Verzeichnis.
+        3. Führen Sie einen initialen Commit durch mit Hilfe von :console:`git add` und :console:`git commit`.
+        4. Compilieren Sie die Sourcen mit :console:`javac`.
+        5. Legen Sie eine ``.gitignore`` Datei an, um sicherzustellen, dass die Binärdateien nicht in das Repository gelangen.
+        6. Nutzen Sie :console:`git status`, um sich zu vergewissern, dass die Binärdateien ignoriert werden.
+        7. fügen Sie die ``.gitignore`` Datei Ihrem Repository hinzu.
+
+        8. Erstellen Sie einen neuen Branch mit dem Namen ``feature/bugfix`` und wechseln Sie auf den neuen Branch. 
+        
+           (Nutzen Sie git status, um zu verifizieren, dass Sie auf dem neuen Branch sind)
+        9. Ändern Sie die Datei ``RPN.java``, um den Bug im Switch statement (:java:`case "* "` => :java:`case "*"`) zu beheben.
+        10. Committen Sie die Änderungen.
+        11. Wechseln Sie zurück auf den ``main`` Branch.
+        12. Mergen Sie den Branch ``feature/bugfix`` in den ``main`` Branch mit Hilfe von :console:`git merge`.
+        13. Löschen Sie den Branch ``feature/bugfix`` mit Hilfe von :console:`git branch -d`.
+        14. Erstellen Sie einen neuen Branch develop und wechseln Sie auf diesen Branch.
+        15. Ändern Sie die Reihenfolge der Methoden :java:`pop` und :java:`peek` in der Klasse :java:`Stack`.
+        16. Committen Sie die Änderungen.
+        17. Wechseln Sie zurück auf den ``main`` Branch.
+            
+            *(Führen Sie noch keinen Merge durch!)*
+        18. Entfernen Sie die ``{}`` Klammern um die :java:`throw new NoSuchElementException()` Anweisungen.
+        19. Committen Sie die Änderungen.  
+        20. Führen Sie einen Merge von ``develop`` in ``main`` durch.
+        21. Öffnen Sie die Datei ``ds/Stack.java`` und beheben Sie den Merge-Konflikt.
+        22. Committen Sie die Änderungen.
+        23. Nutzen Sie :console:`git log --oneline --graph --all` um sich die Commit-Historie anzusehen.
+        24. Wechseln Sie zurück zum ``develop`` Branch.
+        25. Führen Sie einen Merge von ``main`` in ``develop`` durch.
+
+        .. solution::
+            :pwd: GITgitGit
+
+            ::
+
+                1.  git init
+                3.  git add ds/*.java
+                    git add rpn/*.java
+                    git commit -m "Initial commit"
+                4. javac ds/*.java rpn/*.java
+                5. echo "*.class" > .gitignore
+                6. git status
+                7. git add .gitignore
+                   git commit -m "Add .gitignore"
+                8. git checkout -b feature/bugfix
+                10. git add rpn/RPN.java
+                    git commit -m "Fix bug in RPN.java"
+                11. git checkout main
+                12. git merge feature/bugfix#
+                13. git branch -d feature/bugfix
+                14. git checkout -b develop
+                16. git add ds/Stack.java
+                    git commit -m "Change order of pop and peek"
+                17. git checkout main
+                19. git add ds/Stack.java
+                    git commit -m "Remove {}"
+                20. git merge develop
+                22. git add ds/Stack.java
+                    git commit -m "Resolve merge conflict in Stack.java"
+                23. git log --oneline --graph --all
+                24. git checkout develop
+                25. git merge main
+
