@@ -417,6 +417,7 @@ Projekt bauen und ausführen
         - Binden Sie das Maven-Plugin JaCoCo ein, dass automatisch die Testabdeckung berechnet und in einem Report darstellt. Führen Sie danach :console:`mvn test` aus (und ggf. mvn site) und schauen Sie sich den Report an.
 
           Wie hoch ist bereits die Testabdeckung für die Klasse :java:`List` obwohl diese gar nicht explizit getestet wurde?
+        - Schreiben Sie sinnvolle Tests für die Klasse :java:`List` und erhöhen Sie die Anweisungsüberdeckung auf 100% - abgesehen von den Zeilen, die nur Exceptions werfen. D. h. Sie brauchen sich in den Tests nicht um den Code kümmern, der Exceptions wirft; ignorieren Sie diesen Aspekt für den Moment.
         - Binden Sie ein Maven-Plugin ein, dass automatisch die JavaDoc erstellt und in einem Report darstellt.
 
         .. solution::
