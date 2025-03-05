@@ -1,53 +1,46 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg xmlns:xl="http://www.w3.org/1999/xlink" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" viewBox="7 -2 306 462" width="306" height="462">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xl="http://www.w3.org/1999/xlink" xmlns:dc="http://purl.org/dc/elements/1.1/" version="1.1" viewBox="-32 69 461 249" width="461" height="249">
+  <style>
+    @import url('/LectureDoc2/ext/fonts/ld-fonts.css'); 
+  </style>
   <defs>
-    <filter id="Shadow" filterUnits="userSpaceOnUse" x="-23.6" y="-48.2">
+    <filter id="Shadow" filterUnits="userSpaceOnUse" x="-78.1" y="44.1">
       <feGaussianBlur in="SourceAlpha" result="blur" stdDeviation="1.308"/>
       <feOffset in="blur" result="offset" dx="0" dy="2"/>
       <feFlood flood-color="black" flood-opacity=".5" result="flood"/>
       <feComposite in="flood" in2="offset" operator="in"/>
     </filter>
-    <font-face font-family="Helvetica" font-size="12" units-per-em="1000" underline-position="-75.68359" underline-thickness="49.316406" slope="0" x-height="522.9492" cap-height="717.28516" ascent="770.0195" descent="-229.98047" font-weight="400">
-      <font-face-src>
-        <font-face-name name="Helvetica"/>
-      </font-face-src>
-    </font-face>
-    <font-face font-family="Helvetica" font-size="12" units-per-em="1000" underline-position="-75.68359" underline-thickness="49.316406" slope="0" x-height="532.22656" cap-height="719.7266" ascent="770.0195" descent="-229.98047" font-weight="700">
-      <font-face-src>
-        <font-face-name name="Helvetica-Bold"/>
-      </font-face-src>
-    </font-face>
     <marker orient="auto" overflow="visible" markerUnits="strokeWidth" id="FilledArrow_Marker" stroke-linejoin="miter" stroke-miterlimit="10" viewBox="-1 -4 10 8" markerWidth="10" markerHeight="8" color="black">
       <g>
         <path d="M 8 0 L 0 -3 L 0 3 Z" fill="currentColor" stroke="currentColor" stroke-width="1"/>
       </g>
     </marker>
   </defs>
-  <metadata> Produced by OmniGraffle 8.0\n2024-02-21 15:53:09 +0000</metadata>
-  <g id="Canvas_1" stroke-opacity="1" fill-opacity="1" stroke="none" fill="none" stroke-dasharray="none">
+  <metadata> Produced by OmniGraffle 8.0\n2025-03-05 13:30:12 +0000</metadata>
+  <g id="Canvas_1" fill-opacity="1" stroke-opacity="1" stroke="none" stroke-dasharray="none" fill="none">
     <title>Canvas 1</title>
     <g id="Canvas_1_Layer_1">
       <title>Layer 1</title>
       <g id="Graphic_53_shadow" filter="url(#Shadow)">
-        <ellipse cx="226.77123" cy="403.9373" rx="56.6930905898522" ry="49.6063792660009" fill="white"/>
-        <ellipse cx="226.77123" cy="403.9373" rx="56.6930905898522" ry="49.6063792660009" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <ellipse cx="382.67716" cy="276.37795" rx="42.5197527338499" ry="35.4331272782083" fill="white"/>
+        <ellipse cx="382.67716" cy="276.37795" rx="42.5197527338499" ry="35.4331272782083" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
       </g>
       <g id="Graphic_52_shadow" filter="url(#Shadow)">
-        <ellipse cx="70.86623" cy="49.6063" rx="56.6930905898522" ry="49.6063792660008" fill="white"/>
-        <ellipse cx="70.86623" cy="49.6063" rx="56.6930905898522" ry="49.6063792660008" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <ellipse cx="14.173228" cy="106.29921" rx="42.5197527338499" ry="35.4331272782082" fill="white"/>
+        <ellipse cx="14.173228" cy="106.29921" rx="42.5197527338499" ry="35.4331272782082" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
       </g>
       <g id="Graphic_51_shadow" filter="url(#Shadow)">
         <ellipse cx="184.25223" cy="212.5985" rx="113.386181179704" ry="99.2126585318419" fill="white"/>
         <ellipse cx="184.25223" cy="212.5985" rx="113.386181179704" ry="99.2126585318419" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
       </g>
       <g id="Graphic_34_shadow" filter="url(#Shadow)">
-        <rect x="42.51923" y="28.3464" width="42.5197" height="14" fill="white"/>
-        <rect x="42.51923" y="28.3464" width="42.5197" height="14" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <rect x="-6.0004565" y="91.03931" width="42.5197" height="14" fill="white"/>
+        <rect x="-6.0004565" y="91.03931" width="42.5197" height="14" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
       </g>
       <g id="Graphic_35_shadow" filter="url(#Shadow)">
-        <rect x="42.51923" y="42.3464" width="42.5197" height="14" fill="white"/>
-        <rect x="42.51923" y="42.3464" width="42.5197" height="14" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <rect x="-6.0004565" y="105.03931" width="42.5197" height="14" fill="white"/>
+        <rect x="-6.0004565" y="105.03931" width="42.5197" height="14" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
       </g>
       <g id="Graphic_37_shadow" filter="url(#Shadow)">
         <rect x="155.90523" y="127.559" width="42.5197" height="14" fill="white"/>
@@ -82,20 +75,20 @@
         <rect x="226.77123" y="212.425" width="42.5197" height="14" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
       </g>
       <g id="Graphic_49_shadow" filter="url(#Shadow)">
-        <rect x="212.59823" y="382.677" width="42.5197" height="14" fill="white"/>
-        <rect x="212.59823" y="382.677" width="42.5197" height="14" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <rect x="362.67748" y="259.29088" width="42.5197" height="14" fill="white"/>
+        <rect x="362.67748" y="259.29088" width="42.5197" height="14" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
       </g>
       <g id="Graphic_50_shadow" filter="url(#Shadow)">
-        <rect x="212.59823" y="396.677" width="42.5197" height="14" fill="white"/>
-        <rect x="212.59823" y="396.677" width="42.5197" height="14" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <rect x="362.67748" y="273.29088" width="42.5197" height="14" fill="white"/>
+        <rect x="362.67748" y="273.29088" width="42.5197" height="14" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
       </g>
       <g id="Graphic_53">
-        <ellipse cx="226.77123" cy="403.9373" rx="56.6930905898522" ry="49.6063792660009" fill="white"/>
-        <ellipse cx="226.77123" cy="403.9373" rx="56.6930905898522" ry="49.6063792660009" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <ellipse cx="382.67716" cy="276.37795" rx="42.5197527338499" ry="35.4331272782083" fill="white"/>
+        <ellipse cx="382.67716" cy="276.37795" rx="42.5197527338499" ry="35.4331272782083" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
       </g>
       <g id="Graphic_52">
-        <ellipse cx="70.86623" cy="49.6063" rx="56.6930905898522" ry="49.6063792660008" fill="white"/>
-        <ellipse cx="70.86623" cy="49.6063" rx="56.6930905898522" ry="49.6063792660008" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <ellipse cx="14.173228" cy="106.29921" rx="42.5197527338499" ry="35.4331272782082" fill="white"/>
+        <ellipse cx="14.173228" cy="106.29921" rx="42.5197527338499" ry="35.4331272782082" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
       </g>
       <g id="Graphic_51">
         <ellipse cx="184.25223" cy="212.5985" rx="113.386181179704" ry="99.2126585318419" fill="white"/>
@@ -103,17 +96,17 @@
       </g>
       <g id="Group_33">
         <g id="Graphic_35">
-          <rect x="42.51923" y="42.3464" width="42.5197" height="14" fill="white"/>
-          <rect x="42.51923" y="42.3464" width="42.5197" height="14" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
-          <text transform="translate(47.51923 42.3464)" fill="black">
-            <tspan font-family="Helvetica" font-size="12" font-weight="400" fill="black" x="0" y="11"> </tspan>
+          <rect x="-6.0004565" y="105.03931" width="42.5197" height="14" fill="white"/>
+          <rect x="-6.0004565" y="105.03931" width="42.5197" height="14" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+          <text transform="translate(-1.0004565 105.03931)" fill="black">
+            <tspan font-family="Helvetica" font-size="12" font-weight="400" fill="black" x="0" y="11" xml:space="preserve"> </tspan>
           </text>
         </g>
         <g id="Graphic_34">
-          <rect x="42.51923" y="28.3464" width="42.5197" height="14" fill="white"/>
-          <rect x="42.51923" y="28.3464" width="42.5197" height="14" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
-          <text transform="translate(47.51923 28.3464)" fill="black">
-            <tspan font-family="Helvetica" font-size="12" font-weight="700" fill="black" x="9.928795" y="11">:A</tspan>
+          <rect x="-6.0004565" y="91.03931" width="42.5197" height="14" fill="white"/>
+          <rect x="-6.0004565" y="91.03931" width="42.5197" height="14" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+          <text transform="translate(-1.0004565 91.03931)" fill="black">
+            <tspan font-family="Helvetica" font-size="12" font-weight="700" fill="black" x="9.928795" y="11" xml:space="preserve">:A</tspan>
           </text>
         </g>
       </g>
@@ -122,14 +115,14 @@
           <rect x="155.90523" y="141.559" width="42.5197" height="14" fill="white"/>
           <rect x="155.90523" y="141.559" width="42.5197" height="14" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
           <text transform="translate(160.90523 141.559)" fill="black">
-            <tspan font-family="Helvetica" font-size="12" font-weight="400" fill="black" x="0" y="11"> </tspan>
+            <tspan font-family="Helvetica" font-size="12" font-weight="400" fill="black" x="0" y="11" xml:space="preserve"> </tspan>
           </text>
         </g>
         <g id="Graphic_37">
           <rect x="155.90523" y="127.559" width="42.5197" height="14" fill="white"/>
           <rect x="155.90523" y="127.559" width="42.5197" height="14" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
           <text transform="translate(160.90523 127.559)" fill="black">
-            <tspan font-family="Helvetica" font-size="12" font-weight="700" fill="black" x="9.928795" y="11">:C</tspan>
+            <tspan font-family="Helvetica" font-size="12" font-weight="700" fill="black" x="9.928795" y="11" xml:space="preserve">:C</tspan>
           </text>
         </g>
       </g>
@@ -138,14 +131,14 @@
           <rect x="155.90523" y="283.291" width="42.5197" height="14" fill="white"/>
           <rect x="155.90523" y="283.291" width="42.5197" height="14" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
           <text transform="translate(160.90523 283.291)" fill="black">
-            <tspan font-family="Helvetica" font-size="12" font-weight="400" fill="black" x="0" y="11"> </tspan>
+            <tspan font-family="Helvetica" font-size="12" font-weight="400" fill="black" x="0" y="11" xml:space="preserve"> </tspan>
           </text>
         </g>
         <g id="Graphic_40">
           <rect x="155.90523" y="269.291" width="42.5197" height="14" fill="white"/>
           <rect x="155.90523" y="269.291" width="42.5197" height="14" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
           <text transform="translate(160.90523 269.291)" fill="black">
-            <tspan font-family="Helvetica" font-size="12" font-weight="700" fill="black" x="9.928795" y="11">:D</tspan>
+            <tspan font-family="Helvetica" font-size="12" font-weight="700" fill="black" x="9.928795" y="11" xml:space="preserve">:D</tspan>
           </text>
         </g>
       </g>
@@ -154,14 +147,14 @@
           <rect x="99.21223" y="212.425" width="42.5197" height="14" fill="white"/>
           <rect x="99.21223" y="212.425" width="42.5197" height="14" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
           <text transform="translate(104.21223 212.425)" fill="black">
-            <tspan font-family="Helvetica" font-size="12" font-weight="400" fill="black" x="0" y="11"> </tspan>
+            <tspan font-family="Helvetica" font-size="12" font-weight="400" fill="black" x="0" y="11" xml:space="preserve"> </tspan>
           </text>
         </g>
         <g id="Graphic_43">
           <rect x="99.21223" y="198.425" width="42.5197" height="14" fill="white"/>
           <rect x="99.21223" y="198.425" width="42.5197" height="14" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
           <text transform="translate(104.21223 198.425)" fill="black">
-            <tspan font-family="Helvetica" font-size="12" font-weight="700" fill="black" x="9.928795" y="11">:B</tspan>
+            <tspan font-family="Helvetica" font-size="12" font-weight="700" fill="black" x="9.928795" y="11" xml:space="preserve">:B</tspan>
           </text>
         </g>
       </g>
@@ -170,35 +163,35 @@
           <rect x="226.77123" y="212.425" width="42.5197" height="14" fill="white"/>
           <rect x="226.77123" y="212.425" width="42.5197" height="14" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
           <text transform="translate(231.77123 212.425)" fill="black">
-            <tspan font-family="Helvetica" font-size="12" font-weight="400" fill="black" x="0" y="11"> </tspan>
+            <tspan font-family="Helvetica" font-size="12" font-weight="400" fill="black" x="0" y="11" xml:space="preserve"> </tspan>
           </text>
         </g>
         <g id="Graphic_46">
           <rect x="226.77123" y="198.425" width="42.5197" height="14" fill="white"/>
           <rect x="226.77123" y="198.425" width="42.5197" height="14" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
           <text transform="translate(231.77123 198.425)" fill="black">
-            <tspan font-family="Helvetica" font-size="12" font-weight="700" fill="black" x="10.25985" y="11">:E</tspan>
+            <tspan font-family="Helvetica" font-size="12" font-weight="700" fill="black" x="10.25985" y="11" xml:space="preserve">:E</tspan>
           </text>
         </g>
       </g>
       <g id="Group_48">
         <g id="Graphic_50">
-          <rect x="212.59823" y="396.677" width="42.5197" height="14" fill="white"/>
-          <rect x="212.59823" y="396.677" width="42.5197" height="14" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
-          <text transform="translate(217.59823 396.677)" fill="black">
-            <tspan font-family="Helvetica" font-size="12" font-weight="400" fill="black" x="0" y="11"> </tspan>
+          <rect x="362.67748" y="273.29088" width="42.5197" height="14" fill="white"/>
+          <rect x="362.67748" y="273.29088" width="42.5197" height="14" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+          <text transform="translate(367.6775 273.29088)" fill="black">
+            <tspan font-family="Helvetica" font-size="12" font-weight="400" fill="black" x="0" y="11" xml:space="preserve"> </tspan>
           </text>
         </g>
         <g id="Graphic_49">
-          <rect x="212.59823" y="382.677" width="42.5197" height="14" fill="white"/>
-          <rect x="212.59823" y="382.677" width="42.5197" height="14" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
-          <text transform="translate(217.59823 382.677)" fill="black">
-            <tspan font-family="Helvetica" font-size="12" font-weight="700" fill="black" x="10.596764" y="11">:F</tspan>
+          <rect x="362.67748" y="259.29088" width="42.5197" height="14" fill="white"/>
+          <rect x="362.67748" y="259.29088" width="42.5197" height="14" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+          <text transform="translate(367.6775 259.29088)" fill="black">
+            <tspan font-family="Helvetica" font-size="12" font-weight="700" fill="black" x="10.596764" y="11" xml:space="preserve">:F</tspan>
           </text>
         </g>
       </g>
       <g id="Line_54">
-        <path d="M 57.95764 56.3464 C 48.088157 80.08156 20.460882 103.8816 28.346228 127.559 C 35.507724 149.06289 71.9651 170.47733 97.80556 191.92153" marker-end="url(#FilledArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <path d="M 17.221348 119.03931 C 20.929347 145.49863 14.682677 183.40087 28.346457 198.4252 C 40.19685 211.45557 67.029725 207.28432 89.35164 208.28917" marker-end="url(#FilledArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
       </g>
       <g id="Line_55">
         <line x1="131.67212" y1="198.425" x2="159.78054" y2="163.2896" marker-end="url(#FilledArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
@@ -210,32 +203,32 @@
         <line x1="131.67212" y1="226.425" x2="159.78054" y2="261.5604" marker-end="url(#FilledArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
       </g>
       <g id="Line_58">
-        <path d="M 256.18108 226.425 C 269.9984 250.1603 299.8549 271.5986 297.63723 297.638 C 295.63072 321.19806 267.3661 348.53752 248.4823 374.5239" marker-end="url(#FilledArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <path d="M 256.18108 226.425 C 269.9984 250.1603 279.8896 288.82826 297.63723 297.638 C 312.89603 305.2123 333.97015 290.71943 353.3578 282.61886" marker-end="url(#FilledArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
       </g>
       <g id="Graphic_59">
-        <rect x="7.43305" y="124.14304" width="61.36328" height="38" fill="white"/>
-        <text transform="translate(12.43305 129.14304)" fill="black">
-          <tspan font-family="Helvetica" font-size="12" font-weight="400" fill="black" x="0" y="11">entfernter</tspan>
-          <tspan font-family="Helvetica" font-size="12" font-weight="400" fill="black" x="9.673828" y="25">Aufruf</tspan>
+        <rect x="2.0122644" y="183.0786" width="61.36328" height="38" fill="white"/>
+        <text transform="translate(7.0122644 188.0786)" fill="black">
+          <tspan font-family="Helvetica" font-size="12" font-weight="400" fill="black" x="0" y="11" xml:space="preserve">entfernter</tspan>
+          <tspan font-family="Helvetica" font-size="12" font-weight="400" fill="black" x="9.673828" y="25" xml:space="preserve">Aufruf</tspan>
         </text>
       </g>
       <g id="Graphic_60">
-        <rect x="250.68316" y="313.47267" width="61.36328" height="38" fill="white"/>
-        <text transform="translate(255.68316 318.47267)" fill="black">
-          <tspan font-family="Helvetica" font-size="12" font-weight="400" fill="black" x="0" y="11">entfernter</tspan>
-          <tspan font-family="Helvetica" font-size="12" font-weight="400" fill="black" x="9.673828" y="25">Aufruf</tspan>
+        <rect x="284.59885" y="279.74733" width="61.36328" height="38" fill="white"/>
+        <text transform="translate(289.59885 284.74733)" fill="black">
+          <tspan font-family="Helvetica" font-size="12" font-weight="400" fill="black" x="0" y="11" xml:space="preserve">entfernter</tspan>
+          <tspan font-family="Helvetica" font-size="12" font-weight="400" fill="black" x="9.673828" y="25" xml:space="preserve">Aufruf</tspan>
         </text>
       </g>
       <g id="Graphic_62">
         <rect x="105.99395" y="232.35408" width="80.04297" height="24" fill="white"/>
         <text transform="translate(110.99395 237.35408)" fill="black">
-          <tspan font-family="Helvetica" font-size="12" font-weight="400" fill="black" x="0" y="11">lokaler Aufruf</tspan>
+          <tspan font-family="Helvetica" font-size="12" font-weight="400" fill="black" x="0" y="11" xml:space="preserve">lokaler Aufruf</tspan>
         </text>
       </g>
       <g id="Graphic_63">
         <rect x="138.46274" y="167.651" width="80.04297" height="24" fill="white"/>
         <text transform="translate(143.46274 172.651)" fill="black">
-          <tspan font-family="Helvetica" font-size="12" font-weight="400" fill="black" x="0" y="11">lokaler Aufruf</tspan>
+          <tspan font-family="Helvetica" font-size="12" font-weight="400" fill="black" x="0" y="11" xml:space="preserve">lokaler Aufruf</tspan>
         </text>
       </g>
     </g>

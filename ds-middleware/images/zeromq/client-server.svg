@@ -1,17 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xl="http://www.w3.org/1999/xlink" viewBox="-1 -1 206 437" width="206" height="437">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xl="http://www.w3.org/1999/xlink" xmlns:dc="http://purl.org/dc/elements/1.1/" version="1.1" viewBox="-1 90 206 298" width="206" height="298">
+    <style>
+    @import url('/LectureDoc2/ext/fonts/ld-fonts.css'); 
+  </style>
   <defs>
-    <font-face font-family="Helvetica Neue" font-size="16" panose-1="2 0 5 3 0 0 0 2 0 4" units-per-em="1000" underline-position="-100" underline-thickness="50" slope="0" x-height="517" cap-height="714" ascent="951.9958" descent="-212.99744" font-weight="400">
-      <font-face-src>
-        <font-face-name name="HelveticaNeue"/>
-      </font-face-src>
-    </font-face>
-    <font-face font-family="Helvetica Neue" font-size="16" panose-1="2 0 5 3 0 0 0 9 0 4" units-per-em="1000" underline-position="-100" underline-thickness="50" slope="-750" x-height="517" cap-height="714" ascent="957.0007" descent="-212.99744" font-style="italic" font-weight="400">
-      <font-face-src>
-        <font-face-name name="HelveticaNeue-Italic"/>
-      </font-face-src>
-    </font-face>
     <marker orient="auto" overflow="visible" markerUnits="strokeWidth" id="FilledArrow_Marker" stroke-linejoin="miter" stroke-miterlimit="10" viewBox="-1 -3 7 6" markerWidth="7" markerHeight="6" color="#666">
       <g>
         <path d="M 4.8 0 L 0 -1.8 L 0 1.8 Z" fill="currentColor" stroke="currentColor" stroke-width="1"/>
@@ -23,63 +16,63 @@
       </g>
     </marker>
   </defs>
-  <metadata> Produced by OmniGraffle 8.0\n2024-03-12 20:18:15 +0000</metadata>
-  <g id="client-server" stroke-opacity="1" fill-opacity="1" fill="none" stroke="none" stroke-dasharray="none">
+  <metadata> Produced by OmniGraffle 8.0\n2025-03-05 15:48:20 +0000</metadata>
+  <g id="client-server" fill-opacity="1" stroke-opacity="1" stroke="none" stroke-dasharray="none" fill="none">
     <title>client-server</title>
-    <rect fill="white" x="-1" y="-1" width="206" height="437"/>
+    <rect fill="white" x="-1" y="90" width="206" height="298"/>
     <g id="client-server_Layer_1">
       <title>Layer 1</title>
       <g id="Graphic_37">
-        <path d="M 8 65 L 196 65 C 200.41828 65 204 68.58172 204 73 L 204 106.5 C 204 110.91828 200.41828 114.5 196 114.5 L 8 114.5 C 3.581722 114.5 541083e-21 110.91828 0 106.5 L 17763568e-22 73 C 23174398e-22 68.58172 3.581722 65 8 65 Z" fill="white"/>
-        <path d="M 8 65 L 196 65 C 200.41828 65 204 68.58172 204 73 L 204 106.5 C 204 110.91828 200.41828 114.5 196 114.5 L 8 114.5 C 3.581722 114.5 541083e-21 110.91828 0 106.5 L 17763568e-22 73 C 23174398e-22 68.58172 3.581722 65 8 65 Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
-        <text transform="translate(5 80.526)" fill="black">
-          <tspan font-family="Helvetica Neue" font-size="16" font-weight="400" fill="black" x="28.408" y="15">Socket: REP </tspan>
-          <tspan font-family="Helvetica Neue" font-size="16" font-style="italic" font-weight="400" fill="#666" y="15">(reply)</tspan>
+        <path d="M 8 125 L 196 125 C 200.41828 125 204 128.58172 204 133 L 204 148 C 204 152.41828 200.41828 156 196 156 L 8 156 C 3.581722 156 541083e-21 152.41828 0 148 L 17763568e-22 133 C 23174398e-22 128.58172 3.581722 125 8 125 Z" fill="white"/>
+        <path d="M 8 125 L 196 125 C 200.41828 125 204 128.58172 204 133 L 204 148 C 204 152.41828 200.41828 156 196 156 L 8 156 C 3.581722 156 541083e-21 152.41828 0 148 L 17763568e-22 133 C 23174398e-22 128.58172 3.581722 125 8 125 Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(5 131)" fill="black">
+          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="41.056" y="15" xml:space="preserve">Socket: REP </tspan>
+          <tspan font-family="Noto Sans Display" font-size="14" font-style="italic" font-weight="400" fill="#666" y="15" xml:space="preserve">(reply)</tspan>
         </text>
       </g>
       <g id="Graphic_35">
-        <path d="M 8 322.5 L 196 322.5 C 200.41828 322.5 204 326.08172 204 330.5 L 204 364 C 204 368.41828 200.41828 372 196 372 L 8 372 C 3.581722 372 541083e-21 368.41828 0 364 L 17763568e-22 330.5 C 23174398e-22 326.08172 3.581722 322.5 8 322.5 Z" fill="white"/>
-        <path d="M 8 322.5 L 196 322.5 C 200.41828 322.5 204 326.08172 204 330.5 L 204 364 C 204 368.41828 200.41828 372 196 372 L 8 372 C 3.581722 372 541083e-21 368.41828 0 364 L 17763568e-22 330.5 C 23174398e-22 326.08172 3.581722 322.5 8 322.5 Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
-        <text transform="translate(5 338.026)" fill="black">
-          <tspan font-family="Helvetica Neue" font-size="16" font-weight="400" fill="black" x="51.064" y="15">Socket: REQ</tspan>
+        <path d="M 8 322.5 L 196 322.5 C 200.41828 322.5 204 326.08172 204 330.5 L 204 345.5 C 204 349.91828 200.41828 353.5 196 353.5 L 8 353.5 C 3.581722 353.5 541083e-21 349.91828 0 345.5 L 17763568e-22 330.5 C 23174398e-22 326.08172 3.581722 322.5 8 322.5 Z" fill="white"/>
+        <path d="M 8 322.5 L 196 322.5 C 200.41828 322.5 204 326.08172 204 330.5 L 204 345.5 C 204 349.91828 200.41828 353.5 196 353.5 L 8 353.5 C 3.581722 353.5 541083e-21 349.91828 0 345.5 L 17763568e-22 330.5 C 23174398e-22 326.08172 3.581722 322.5 8 322.5 Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(5 328.5)" fill="black">
+          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="60.11" y="15" xml:space="preserve">Socket: REQ</tspan>
         </text>
       </g>
       <g id="Line_33">
-        <line x1="51" y1="322.5" x2="51" y2="127.4" marker-end="url(#FilledArrow_Marker)" stroke="#666" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="2.0,8.0" stroke-width="2"/>
+        <line x1="51" y1="322.5" x2="51" y2="168.9" marker-end="url(#FilledArrow_Marker)" stroke="#666" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="2.0,8.0" stroke-width="2"/>
       </g>
       <g id="Line_30">
-        <line x1="102" y1="322.5" x2="102" y2="127.4" marker-end="url(#StickArrow_Marker)" stroke="#666" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+        <line x1="102" y1="322.5" x2="102" y2="168.9" marker-end="url(#StickArrow_Marker)" stroke="#666" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
       </g>
       <g id="Graphic_29">
-        <rect x="0" y="0" width="204" height="71" fill="white"/>
-        <rect x="0" y="0" width="204" height="71" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
-        <text transform="translate(5 26.276)" fill="black">
-          <tspan font-family="Helvetica Neue" font-size="16" font-weight="400" fill="black" x="73.896" y="15">Server</tspan>
+        <rect x="0" y="90.5" width="204" height="39" fill="white"/>
+        <rect x="0" y="90.5" width="204" height="39" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(5 100.5)" fill="black">
+          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="77.085" y="15" xml:space="preserve">Server</tspan>
         </text>
       </g>
       <g id="Graphic_27">
-        <rect x="0" y="364" width="204" height="71" fill="white"/>
-        <rect x="0" y="364" width="204" height="71" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
-        <text transform="translate(5 390.276)" fill="black">
-          <tspan font-family="Helvetica Neue" font-size="16" font-weight="400" fill="black" x="76.408" y="15">Client</tspan>
+        <rect x="0" y="348" width="204" height="39" fill="white"/>
+        <rect x="0" y="348" width="204" height="39" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(5 358)" fill="black">
+          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="79.178" y="15" xml:space="preserve">Client</tspan>
         </text>
       </g>
       <g id="Graphic_25">
-        <text transform="translate(109.24 285.452) rotate(-90)" fill="black">
-          <tspan font-family="Helvetica Neue" font-size="16" font-weight="400" fill="black" x="0" y="15">2. send(&lt;request&gt;)</tspan>
+        <text transform="translate(109.49 297.073) rotate(-90)" fill="black">
+          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="4902745e-19" y="15" xml:space="preserve">2. send(&lt;request&gt;)</tspan>
         </text>
       </g>
       <g id="Graphic_38">
-        <text transform="translate(24.5 259.436) rotate(-90)" fill="black">
-          <tspan font-family="Helvetica Neue" font-size="16" font-weight="400" fill="black" x="0" y="15">1. connect()</tspan>
+        <text transform="translate(18.71 274.422) rotate(-90)" fill="black">
+          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="0" y="15" xml:space="preserve">1. connect()</tspan>
         </text>
       </g>
       <g id="Line_39">
-        <line x1="153" y1="114.5" x2="153" y2="309.6" marker-end="url(#StickArrow_Marker)" stroke="#666" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+        <line x1="153" y1="156" x2="153" y2="309.6" marker-end="url(#StickArrow_Marker)" stroke="#666" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
       </g>
       <g id="Graphic_40">
-        <text transform="translate(160 274.964) rotate(-90)" fill="black">
-          <tspan font-family="Helvetica Neue" font-size="16" font-weight="400" fill="black" x="0" y="15">3. send(&lt;reply&gt;)</tspan>
+        <text transform="translate(160.25 287.792) rotate(-90)" fill="black">
+          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="0" y="15" xml:space="preserve">3. send(&lt;reply&gt;)</tspan>
         </text>
       </g>
     </g>

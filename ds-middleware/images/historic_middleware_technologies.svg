@@ -1,34 +1,22 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <svg xmlns:xl="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" version="1.1" viewBox="27 209 598 342" width="598" height="342">
+  <style>
+    @import url('/LectureDoc2/ext/fonts/ld-fonts.css'); 
+  </style>
   <defs>
     <marker orient="auto" overflow="visible" markerUnits="strokeWidth" id="StickArrow_Marker" stroke-linejoin="miter" stroke-miterlimit="10" viewBox="-1 -4 10 8" markerWidth="10" markerHeight="8" color="black">
       <g>
         <path d="M 8 0 L 0 0 M 0 -3 L 8 0 L 0 3" fill="none" stroke="currentColor" stroke-width="1"/>
       </g>
     </marker>
-    <font-face font-family="Noto Sans Display" font-size="14" panose-1="2 11 5 2 4 5 4 2 2 4" units-per-em="1000" underline-position="-100" underline-thickness="50" slope="0" x-height="536" cap-height="714" ascent="1069.0002" descent="-292.99927" font-weight="400">
-      <font-face-src>
-        <font-face-name name="NotoSansDisplay-Regular"/>
-      </font-face-src>
-    </font-face>
     <linearGradient x1="0" x2="1" id="Gradient" gradientUnits="userSpaceOnUse">
       <stop offset="0" stop-color="white"/>
       <stop offset=".19841272" stop-color="#91aac1"/>
       <stop offset="1" stop-color="#00447a"/>
     </linearGradient>
     <linearGradient id="Obj_Gradient" xl:href="#Gradient" gradientTransform="translate(481.89 234.784) rotate(180) scale(155.906)"/>
-    <font-face font-family="Noto Sans Display" font-size="13" panose-1="2 11 5 2 4 5 4 2 2 4" units-per-em="1000" underline-position="-100" underline-thickness="50" slope="0" x-height="536" cap-height="714" ascent="1069.0002" descent="-292.99927" font-weight="400">
-      <font-face-src>
-        <font-face-name name="NotoSansDisplay-Regular"/>
-      </font-face-src>
-    </font-face>
     <linearGradient id="Obj_Gradient_2" xl:href="#Gradient" gradientTransform="translate(482.44006 280.8485) rotate(180) scale(155.906)"/>
-    <font-face font-family="Noto Sans Display" font-size="14" panose-1="2 11 5 2 4 5 4 2 2 4" units-per-em="1000" underline-position="-99.99084" underline-thickness="49.98779" slope="0" x-height="546" cap-height="714" ascent="1069.0002" descent="-292.99927" font-weight="700">
-      <font-face-src>
-        <font-face-name name="NotoSansDisplay-Regular_Bold"/>
-      </font-face-src>
-    </font-face>
     <linearGradient id="Obj_Gradient_3" xl:href="#Gradient" gradientTransform="translate(325.9843 305.5802) rotate(180) scale(85.0393)"/>
     <linearGradient id="Obj_Gradient_4" xl:href="#Gradient" gradientTransform="translate(340.1579 325.13316) rotate(180) scale(56.6929)"/>
     <linearGradient id="Obj_Gradient_5" xl:href="#Gradient" gradientTransform="translate(340.157 343.48235) rotate(180) scale(56.693)"/>
@@ -54,11 +42,6 @@
         <path d="M 4.8 0 L 0 -1.8 L 0 1.8 Z" fill="currentColor" stroke="currentColor" stroke-width="1"/>
       </g>
     </marker>
-    <font-face font-family="Noto Sans Display" font-size="60" panose-1="2 11 5 2 4 5 4 2 2 4" units-per-em="1000" underline-position="-100" underline-thickness="50" slope="0" x-height="536" cap-height="714" ascent="1069.0002" descent="-292.99927" font-weight="400">
-      <font-face-src>
-        <font-face-name name="NotoSansDisplay-Regular"/>
-      </font-face-src>
-    </font-face>
   </defs>
   <metadata> Produced by OmniGraffle 8.0\n2025-02-26 13:44:40 +0000</metadata>
   <g id="historisch" stroke-opacity="1" stroke-dasharray="none" fill="none" stroke="none" fill-opacity="1">

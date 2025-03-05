@@ -1,19 +1,17 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg xmlns:xl="http://www.w3.org/1999/xlink" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" viewBox="42 35 614 397" width="614" height="397">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xl="http://www.w3.org/1999/xlink" xmlns:dc="http://purl.org/dc/elements/1.1/" version="1.1" viewBox="137 88 519 301" width="519" height="301">
+  <style>
+    @import url('/LectureDoc2/ext/fonts/ld-fonts.css'); 
+  </style>
   <defs>
-    <filter id="Shadow" filterUnits="userSpaceOnUse" x="-19.4" y="-4.7">
+    <filter id="Shadow" filterUnits="userSpaceOnUse" x="85.1" y="57.9">
       <feGaussianBlur in="SourceAlpha" result="blur" stdDeviation="1.308"/>
       <feOffset in="blur" result="offset" dx="0" dy="2"/>
       <feFlood flood-color="black" flood-opacity=".5" result="flood"/>
       <feComposite in="flood" in2="offset" operator="in"/>
     </filter>
-    <font-face font-family="Helvetica Neue" font-size="14" panose-1="2 0 5 3 0 0 0 2 0 4" units-per-em="1000" underline-position="-100" underline-thickness="50" slope="0" x-height="517" cap-height="714" ascent="951.9958" descent="-212.99744" font-weight="400">
-      <font-face-src>
-        <font-face-name name="HelveticaNeue"/>
-      </font-face-src>
-    </font-face>
-    <filter id="Shadow_2" filterUnits="userSpaceOnUse" x="-19.4" y="-4.7">
+    <filter id="Shadow_2" filterUnits="userSpaceOnUse" x="85.1" y="57.9">
       <feGaussianBlur in="SourceAlpha" result="blur" stdDeviation="1.308"/>
       <feOffset in="blur" result="offset" dx="0" dy="2"/>
       <feFlood flood-color="black" flood-opacity=".5" result="flood"/>
@@ -29,143 +27,142 @@
       </g>
     </marker>
   </defs>
-  <metadata> Produced by OmniGraffle 8.0\n2024-02-24 16:21:25 +0000</metadata>
-  <g id="Canvas_1" stroke-opacity="1" fill-opacity="1" stroke="none" fill="none" stroke-dasharray="none">
+  <metadata> Produced by OmniGraffle 8.0\n2025-03-05 14:16:34 +0000</metadata>
+  <g id="Canvas_1" fill-opacity="1" stroke-opacity="1" stroke="none" stroke-dasharray="none" fill="none">
     <title>Canvas 1</title>
     <g id="Canvas_1_Layer_1">
       <title>Layer 1</title>
       <g id="Graphic_1177_shadow" filter="url(#Shadow)">
-        <rect x="141.732" y="255.118" width="340.158" height="170.079" fill="white"/>
-        <path d="M 141.732 255.118 L 481.89 255.118 L 481.89 425.197 L 141.732 425.197 Z" stroke="#005494" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="8.0,8.0" stroke-width="2"/>
+        <rect x="141.732" y="255.118" width="340.158" height="127.55916" fill="white"/>
+        <path d="M 141.732 255.118 L 481.89 255.118 L 481.89 382.67716 L 141.732 382.67716 Z" stroke="#005494" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="8.0,8.0" stroke-width="2"/>
       </g>
       <g id="Graphic_1176_shadow" filter="url(#Shadow)">
-        <rect x="141.732" y="99.2126" width="340.158" height="141.732" fill="white"/>
-        <path d="M 141.732 99.2126 L 481.89 99.2126 L 481.89 240.9446 L 141.732 240.9446 Z" stroke="#005494" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="8.0,8.0" stroke-width="2"/>
+        <rect x="141.732" y="113.38583" width="340.158" height="127.55877" fill="white"/>
+        <path d="M 141.732 113.38583 L 481.89 113.38583 L 481.89 240.9446 L 141.732 240.9446 Z" stroke="#005494" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="8.0,8.0" stroke-width="2"/>
       </g>
       <g id="Graphic_1177">
-        <rect x="141.732" y="255.118" width="340.158" height="170.079" fill="white"/>
-        <path d="M 141.732 255.118 L 481.89 255.118 L 481.89 425.197 L 141.732 425.197 Z" stroke="#005494" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="8.0,8.0" stroke-width="2"/>
-        <text transform="translate(146.732 403.805)" fill="black">
-          <tspan font-family="Helvetica Neue" font-size="14" font-weight="400" fill="black" x="99.615" y="13">Basic Protocol Stack</tspan>
+        <rect x="141.732" y="255.118" width="340.158" height="127.55916" fill="white"/>
+        <path d="M 141.732 255.118 L 481.89 255.118 L 481.89 382.67716 L 141.732 382.67716 Z" stroke="#005494" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="8.0,8.0" stroke-width="2"/>
+        <text transform="translate(146.732 358.67716)" fill="black">
+          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="103.227" y="15" xml:space="preserve">Basic Protocol Stack</tspan>
         </text>
       </g>
       <g id="Graphic_1176">
-        <rect x="141.732" y="99.2126" width="340.158" height="141.732" fill="white"/>
-        <path d="M 141.732 99.2126 L 481.89 99.2126 L 481.89 240.9446 L 141.732 240.9446 Z" stroke="#005494" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="8.0,8.0" stroke-width="2"/>
-        <text transform="translate(146.732 104.2126)" fill="black">
-          <tspan font-family="Helvetica Neue" font-size="14" font-weight="400" fill="black" x="87.16199" y="13">Extended Protocol Stack</tspan>
+        <rect x="141.732" y="113.38583" width="340.158" height="127.55877" fill="white"/>
+        <path d="M 141.732 113.38583 L 481.89 113.38583 L 481.89 240.9446 L 141.732 240.9446 Z" stroke="#005494" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="8.0,8.0" stroke-width="2"/>
+        <text transform="translate(146.732 118.38583)" fill="black">
+          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="90.074" y="15" xml:space="preserve">Extended Protocol Stack</tspan>
         </text>
       </g>
       <g id="Graphic_1167" filter="url(#Shadow_2)">
         <rect x="155.906" y="184.252" width="99.2126" height="45" fill="white"/>
         <rect x="155.906" y="184.252" width="99.2126" height="45" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
-        <text transform="translate(160.906 198.556)" fill="black">
-          <tspan font-family="Helvetica Neue" font-size="14" font-weight="400" fill="black" x="19.0703" y="13">Security</tspan>
+        <text transform="translate(160.906 197.252)" fill="black">
+          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="19.7423" y="15" xml:space="preserve">Security</tspan>
         </text>
       </g>
       <g id="Graphic_1169" filter="url(#Shadow_2)">
         <rect x="368.504" y="184.252" width="99.2126" height="45" fill="white"/>
         <rect x="368.504" y="184.252" width="99.2126" height="45" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
-        <text transform="translate(373.504 198.556)" fill="black">
-          <tspan font-family="Helvetica Neue" font-size="14" font-weight="400" fill="black" x="6.7503" y="13">Tansactions</tspan>
+        <text transform="translate(373.504 197.252)" fill="black">
+          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="7.6953" y="15" xml:space="preserve">Tansactions</tspan>
         </text>
       </g>
       <g id="Graphic_1170" filter="url(#Shadow_2)">
         <rect x="262.205" y="184.252" width="99.2126" height="45" fill="white"/>
         <rect x="262.205" y="184.252" width="99.2126" height="45" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
-        <text transform="translate(267.205 190.36)" fill="black">
-          <tspan font-family="Helvetica Neue" font-size="14" font-weight="400" fill="black" x="19.7213" y="13">Reliable </tspan>
-          <tspan font-family="Helvetica Neue" font-size="14" font-weight="400" fill="black" x="10.5093" y="29.392">Messaging</tspan>
+        <text transform="translate(267.205 187.752)" fill="black">
+          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="20.1203" y="15" xml:space="preserve">Reliable </tspan>
+          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="10.9293" y="34" xml:space="preserve">Messaging</tspan>
         </text>
       </g>
       <g id="Graphic_1172" filter="url(#Shadow_2)">
-        <rect x="155.906" y="269.291" width="311.811" height="28.3465" fill="white"/>
-        <rect x="155.906" y="269.291" width="311.811" height="28.3465" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
-        <text transform="translate(160.906 275.26825)" fill="black">
-          <tspan font-family="Helvetica Neue" font-size="14" font-weight="400" fill="black" x="5.438502" y="13">XSD, WSDL, UDDI, Policy, MetadataExchange</tspan>
+        <rect x="155.906" y="262.291" width="311.811" height="28.3465" fill="white"/>
+        <rect x="155.906" y="262.291" width="311.811" height="28.3465" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(160.906 266.96425)" fill="black">
+          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="12.158502" y="15" xml:space="preserve">XSD, WSDL, UDDI, Policy, MetadataExchange</tspan>
         </text>
       </g>
       <g id="Graphic_1173" filter="url(#Shadow_2)">
-        <rect x="155.905" y="311.811" width="311.811" height="28.3464" fill="white"/>
-        <rect x="155.905" y="311.811" width="311.811" height="28.3464" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
-        <text transform="translate(160.905 317.7882)" fill="black">
-          <tspan font-family="Helvetica Neue" font-size="14" font-weight="400" fill="black" x="74.5355" y="13">XML, SOAP, Addressing</tspan>
+        <rect x="155.90553" y="294.13768" width="311.811" height="28.3464" fill="white"/>
+        <rect x="155.90553" y="294.13768" width="311.811" height="28.3464" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(160.90553 298.81088)" fill="black">
+          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="78.6025" y="15" xml:space="preserve">XML, SOAP, Addressing</tspan>
         </text>
       </g>
       <g id="Graphic_1174" filter="url(#Shadow_2)">
-        <rect x="155.906" y="354.331" width="311.811" height="28.3465" fill="white"/>
-        <rect x="155.906" y="354.331" width="311.811" height="28.3465" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
-        <text transform="translate(160.906 360.30825)" fill="black">
-          <tspan font-family="Helvetica Neue" font-size="14" font-weight="400" fill="black" x="84.1465" y="13">HTTP, HTTPS, SMTP</tspan>
+        <rect x="155.90553" y="325.98425" width="311.811" height="28.3465" fill="white"/>
+        <rect x="155.90553" y="325.98425" width="311.811" height="28.3465" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(160.90553 330.6575)" fill="black">
+          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="90.5865" y="15" xml:space="preserve">HTTP, HTTPS, SMTP</tspan>
         </text>
       </g>
       <g id="Graphic_1175" filter="url(#Shadow_2)">
         <rect x="155.906" y="141.732" width="311.811" height="28.3465" fill="white"/>
         <rect x="155.906" y="141.732" width="311.811" height="28.3465" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
-        <text transform="translate(160.906 147.70925)" fill="black">
-          <tspan font-family="Helvetica Neue" font-size="14" font-weight="400" fill="black" x="118.4955" y="13">BPEL4WS</tspan>
+        <text transform="translate(160.906 146.40525)" fill="black">
+          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="121.9745" y="15" xml:space="preserve">BPEL4WS</tspan>
         </text>
       </g>
       <g id="Graphic_1178">
-        <text transform="translate(42.5197 35.5197)" fill="black">
-          <tspan font-family="Helvetica Neue" font-size="14" font-weight="400" fill="black" x="26.8327" y="13">WS - </tspan>
-          <tspan font-family="Helvetica Neue" font-size="14" font-weight="400" fill="black" x="16.9837" y="29.392">Security</tspan>
+        <text transform="translate(141.73228 88.03937)" fill="black">
+          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="2.367699" y="15" xml:space="preserve">WS - Security</tspan>
         </text>
       </g>
       <g id="Graphic_1179">
-        <text transform="translate(275.631 35.5197)" fill="black">
-          <tspan font-family="Helvetica Neue" font-size="14" font-weight="400" fill="black" x="29132252e-20" y="13">WS-Reliability</tspan>
+        <text transform="translate(396.8504 88.03937)" fill="black">
+          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="0" y="15" xml:space="preserve">WS-Reliability</tspan>
         </text>
       </g>
       <g id="Graphic_1180">
-        <text transform="translate(464.082 35.5197)" fill="black">
-          <tspan font-family="Helvetica Neue" font-size="14" font-weight="400" fill="black" x="0" y="13">WS-AtomicTransaction</tspan>
-          <tspan font-family="Helvetica Neue" font-size="14" font-weight="400" fill="black" x="6.881" y="29.392">WS-BusinessActivity</tspan>
+        <text transform="translate(504.063 92.03937)" fill="black">
+          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="55422333e-20" y="15" xml:space="preserve">WS-AtomicTransaction</tspan>
+          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="7.889" y="34" xml:space="preserve">WS-BusinessActivity</tspan>
         </text>
       </g>
       <g id="Line_1181">
-        <line x1="523.7673" y1="67.5197" x2="441.47137" y2="175.96734" marker-end="url(#FilledArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <line x1="504.063" y1="111.03937" x2="445.26475" y2="176.51416" marker-end="url(#FilledArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
       </g>
       <g id="Line_1182">
-        <line x1="318.91927" y1="52.5197" x2="313.32703" y2="173.86303" marker-end="url(#FilledArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <line x1="427.6911" y1="107.03937" x2="345.84264" y2="177.4686" marker-end="url(#FilledArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
       </g>
       <g id="Line_1183">
-        <line x1="97.4567" y1="67.5197" x2="181.67417" y2="176.03599" marker-end="url(#FilledArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <line x1="186.10134" y1="107.03937" x2="199.145" y2="174.04363" marker-end="url(#FilledArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
       </g>
       <g id="Graphic_1184" filter="url(#Shadow_2)">
         <rect x="496.063" y="141.732" width="155.905" height="28.3465" fill="white"/>
         <rect x="496.063" y="141.732" width="155.905" height="28.3465" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
-        <text transform="translate(501.063 147.70925)" fill="black">
-          <tspan font-family="Helvetica Neue" font-size="14" font-weight="400" fill="black" x="7.873499" y="13">Service Composition</tspan>
+        <text transform="translate(501.063 146.40525)" fill="black">
+          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="9.700499" y="15" xml:space="preserve">Service Composition</tspan>
         </text>
       </g>
       <g id="Graphic_1185" filter="url(#Shadow_2)">
         <rect x="496.063" y="184.252" width="155.905" height="42.5197" fill="white"/>
         <rect x="496.063" y="184.252" width="155.905" height="42.5197" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
-        <text transform="translate(501.063 189.11985)" fill="black">
-          <tspan font-family="Helvetica Neue" font-size="14" font-weight="400" fill="black" x="7.873499" y="13">Composable Service </tspan>
-          <tspan font-family="Helvetica Neue" font-size="14" font-weight="400" fill="black" x="36.5245" y="29.392">Assurances</tspan>
+        <text transform="translate(501.063 186.51185)" fill="black">
+          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="10.4285" y="15" xml:space="preserve">Composable Service </tspan>
+          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="37.7075" y="34" xml:space="preserve">Assurances</tspan>
         </text>
       </g>
       <g id="Graphic_1186" filter="url(#Shadow_2)">
-        <rect x="496.063" y="269.291" width="155.905" height="28.3465" fill="white"/>
-        <rect x="496.063" y="269.291" width="155.905" height="28.3465" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
-        <text transform="translate(501.063 275.26825)" fill="black">
-          <tspan font-family="Helvetica Neue" font-size="14" font-weight="400" fill="black" x="37.3015" y="13">Description</tspan>
+        <rect x="496.063" y="262.291" width="155.905" height="28.3465" fill="white"/>
+        <rect x="496.063" y="262.291" width="155.905" height="28.3465" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(501.063 266.96425)" fill="black">
+          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="37.3505" y="15" xml:space="preserve">Description</tspan>
         </text>
       </g>
       <g id="Graphic_1187" filter="url(#Shadow_2)">
-        <rect x="496.063" y="311.811" width="155.905" height="28.3465" fill="white"/>
-        <rect x="496.063" y="311.811" width="155.905" height="28.3465" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
-        <text transform="translate(501.063 317.78825)" fill="black">
-          <tspan font-family="Helvetica Neue" font-size="14" font-weight="400" fill="black" x="38.8555" y="13">Messaging</tspan>
+        <rect x="496.0635" y="294.13763" width="155.905" height="28.3465" fill="white"/>
+        <rect x="496.0635" y="294.13763" width="155.905" height="28.3465" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(501.0635 298.81088)" fill="black">
+          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="39.2755" y="15" xml:space="preserve">Messaging</tspan>
         </text>
       </g>
       <g id="Graphic_1188" filter="url(#Shadow_2)">
-        <rect x="496.063" y="354.331" width="155.905" height="28.3465" fill="white"/>
-        <rect x="496.063" y="354.331" width="155.905" height="28.3465" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
-        <text transform="translate(501.063 360.30825)" fill="black">
-          <tspan font-family="Helvetica Neue" font-size="14" font-weight="400" fill="black" x="39.2475" y="13">Transports</tspan>
+        <rect x="496.063" y="325.98425" width="155.905" height="28.3465" fill="white"/>
+        <rect x="496.063" y="325.98425" width="155.905" height="28.3465" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(501.063 330.6575)" fill="black">
+          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="39.2195" y="15" xml:space="preserve">Transports</tspan>
         </text>
       </g>
     </g>

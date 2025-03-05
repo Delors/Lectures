@@ -203,18 +203,14 @@ Wir müssen uns kümmern um …
 Middleware als Programmierabstraktion
 ------------------------------------------
 
-.. grid:: 
-
-  .. cell::
+.. supplemental::
 
     - Eine Softwareschicht oberhalb des Betriebssystems und unterhalb des Anwendungsprogramms, die eine gemeinsame Programmierabstraktion in einem verteilten System bietet.
 
     - Ein Baustein auf höherer Ebene als die vom Betriebssystem bereitgestellten APIs (z. B. Sockets)
 
-  .. cell::
-
-    .. image:: images/middleware.svg
-       :align: center
+.. image:: images/middleware.svg
+    :align: center
 
 
 
@@ -300,17 +296,14 @@ Middleware unterstützt zusätzliche Funktionen die die Entwicklung, Wartung und
 
 
 
-.. class:: smaller-slide-title
-
-Konzeptionelle Darstellung (historischer) Middleware
+Middleware - konzeptionelle (historisch)
 -----------------------------------------------------
 
-.. container:: footer-left x-tiny minor
+.. container:: footer-left 
 
     Darstellung nach: Alonso; Web services: Concepts, Architectures and Applications; Springer, 2004
 
 .. image:: images/historische-middleware-konzeptuell.svg
-  :height: 900px
   :align: center
 
 .. supplemental::
@@ -325,7 +318,6 @@ Historische Entwicklung von Middleware
 ------------------------------------------
 
 .. image:: images/historic_middleware_technologies.svg
-   :height: 1150px
    :align: center
 
 
@@ -345,14 +337,15 @@ Entwicklung von Middleware
 
 
 
-.. class:: no-title center-child-elements
+.. class:: no-title center-content transition-fade
 
 Middleware - High-level View
 ------------------------------
 
-.. container:: huge dhbw-red padding-1em dhbw-light-gray-background rounded-corners
+.. container:: accentuate
 
   Eine Middleware stellt eine umfassende Plattform für die Entwicklung und den Betrieb komplexer verteilter Systeme zur Verfügung.
+
 
 
 .. class:: new-section transition-scale
@@ -385,9 +378,9 @@ Remote Procedure Call (RPC)
 RPCs konzeptionell (synchrone Kommunikation)
 ------------------------------------------------
 
-.. container:: two-columns
+.. grid::
 
-  .. container:: 
+  .. cell:: 
 
     - Ein Server ist ein Programm, das bestimmte Dienste implementiert.
     - Cients möchten diese Dienste in Anspruch nehmen:
@@ -397,42 +390,41 @@ RPCs konzeptionell (synchrone Kommunikation)
       - Die Kommunikation erfolgt durch das Senden von Nachrichten (kein gemeinsamer Speicher, keine gemeinsamen Festplatten usw.)
       - Einige minimale Garantien müssen gegeben werden (Behandlung von Fehlern, Aufrufsemantik, usw.)
 
-
-  .. image:: images/rpc_konzeptionell.svg
-    :height: 900px
-    :align: center
-
+  .. cell:: width-40
+  
+    .. image:: images/rpc_konzeptionell.svg
+  
 
 
 RPCs - zentrale Fragestellungen und Herausforderungen
 -------------------------------------------------------
 
-.. stack::
+.. deck::
 
-  .. layer::
+  .. card::
 
     Sollen entfernte Aufrufe transparent oder nicht transparent für den Entwickler sein? 
  
       Ein entfernter Aufruf ist etwas völlig anderes als ein lokaler Aufruf; sollte sich der Programmierer dessen bewusst sein?
 
-  .. layer:: incremental 
+  .. card::
   
     Wie können Daten zwischen Maschinen ausgetauscht werden, die möglicherweise unterschiedliche Darstellungen für verschiedene Datentypen verwenden? 
 
-  .. layer:: incremental 
+  .. card::
   
     Komplexe Datentypen müssen linearisiert werden:
 
     :**Marshalling**: der Prozess des Aufbereitens der Daten in eine für die Übermittlung in einer Nachricht geeignete Form.
     :**Unmarshalling**: der Prozess der Wiederherstellung der Daten bei ihrer Ankunft am Zielort, um eine originalgetreue Repräsentation zu erhalten.
 
-  .. layer:: incremental
+  .. card::
 
     Wie findet und bindet man den Dienst, den man tatsächlich will, in einer potenziell großen Sammlung von Diensten und Servern? 
     
     Das Ziel ist, dass der Kunde nicht unbedingt wissen muss, wo sich der Server befindet oder sogar welcher Server den Dienst anbietet (Standorttransparenz).
 
-  .. layer:: incremental
+  .. card::
 
     Wie geht man mehr oder weniger elegant mit Fehlern um:
 
@@ -481,9 +473,9 @@ RPC - Call Semantics
 Nehmen wir an, ein Client stellt eine RPC-Anfrage an einen Dienst eines bestimmten Servers.
 Nachdem die Zeitüberschreitung abgelaufen ist, beschließt der Client die Anfrage erneut zu senden. Das finale Verhalten hängt von der Semantik des Aufrufs (:eng:`Call Semantics`) ab:
 
-.. stack:: margin-top-2em
+.. deck:: margin-top-2em
   
-  .. layer:: 
+  .. card:: 
 
     .. rubric:: Maybe (vielleicht; keine Garantie)
 
@@ -493,7 +485,7 @@ Nachdem die Zeitüberschreitung abgelaufen ist, beschließt der Client die Anfra
 
       ``XMLHTTPRequests`` und ``fetch()`` in Webbrowsern verwenden diese Semantik.
 
-  .. layer:: incremental
+  .. card::
 
     .. rubric:: At least once (mindestens einmal)
 
@@ -501,13 +493,13 @@ Nachdem die Zeitüberschreitung abgelaufen ist, beschließt der Client die Anfra
     
     Es ist jedoch möglich, dass sie mehr als einmal ausgeführt wird wenn der Client die Anfrage nach einer Zeitüberschreitung erneut gesendet hatte.
 
-  .. layer:: incremental
+  .. card::
 
     .. rubric:: At most once (höchstens einmal)
 
     Die Prozedur wird entweder einmal oder gar nicht ausgeführt. Ein erneutes Senden der Anfrage führt nicht dazu, dass die Prozedur mehrmals ausgeführt wird.
 
-  .. layer:: incremental
+  .. card::
   
     .. rubric:: Exactly once (genau einmal)
 
@@ -520,31 +512,26 @@ Nachdem die Zeitüberschreitung abgelaufen ist, beschließt der Client die Anfra
 Asynchrones RPC
 ----------------
 
-.. container:: two-columns fade-to-white
+.. grid::  
 
-  .. container:: column
+  .. cell:: fade-to-white width-30
 
     Die Verbindung zwischen Client und Server in einem traditionellen RPC. Der Client wird blockiert und wartet.
 
-  .. container:: column
+  .. cell::
 
     .. image:: images/rpcs/synchronous_rpc.svg
-      :height: 425px
-      :align: center
 
 
-.. container:: two-columns fade-to-white line-above margin-top-1em padding-top-1em
+.. grid:: margin-top-1em
 
-  .. container:: column
+  .. cell:: fade-to-white width-30
 
     Die Verbindung zwischen Client und Server bei einem asynchronen RPC. Der Client wird nicht blockiert.
 
-  .. container:: column
+  .. cell::
 
     .. image:: images/rpcs/asynchronous_rpc.svg
-      :height: 450px
-      :align: center
-
 
 .. supplemental::
 
@@ -555,7 +542,7 @@ Asynchrones RPC
 RPC - Bewertung
 ---------------------
 
-.. class:: incremental positive-list
+.. class:: incremental-list positive-list
 
 - RPC bietet einen Mechanismus, um verteilte Anwendungen auf einfache und effiziente Weise zu implementieren.
 - RPC ermöglicht den modularen und hierarchischen Aufbau großer verteilter Systeme:
@@ -563,7 +550,7 @@ RPC - Bewertung
   - Client und Server sind getrennte Einheiten
   - Der Server kapselt und verbirgt die Details der Backend-Systeme (wie z. B. Datenbanken)
 
-.. class:: incremental negative-list
+.. class:: incremental-list negative-list
 
 - RPC ist kein Standard, sondern wurde auf viele verschiedene Arten umgesetzt.
 - RPC ermöglicht Entwicklern den Aufbau verteilter Systeme, löst aber nur ausgewählte Aspekte.
@@ -576,7 +563,7 @@ RPC - Bewertung
 
   Das Network File System (NFS) und SMB sind bekannte RPC-basierte Anwendungen.
 
-.. presenter-notes
+.. presenter-note::
 
   Durch RPC nicht gelöst werden Fragen bzgl. **langer Transaktionen**, die über mehrere RPC-Aufrufe hinweggehen. Auch die Frage nach der **Skalierbarkeit** wird nicht gelöst.
 
@@ -607,9 +594,7 @@ Java RMI vs. RPC
 ------------------
 
 .. image:: images/rpc_vs_rmi.svg
-   :height: 1000px
    :align: center
-
 
 .. supplemental::
 
@@ -621,9 +606,7 @@ Java RMI implementiert ein *Distributed Object Model*
 ------------------------------------------------------
 
 .. image:: images/java_rmi-distributed-object-model.svg
-   :height: 1000px
    :align: center
-
 
 .. supplemental::
 
@@ -638,9 +621,7 @@ Anatomie eine Java RMI Aufrufs
 ---------------------------------
 
 .. image:: images/rmi_anatomy/rmi_anatomy.svg
-    :height: 1000px
     :align: center
-
 
 .. supplemental::
 
@@ -656,9 +637,7 @@ RMI Protocol Stack
 ----------------------
 
 .. image:: images/rmi_anatomy/rmi_protocol_stack.svg
-   :height: 1000px
    :align: center
-
 
 .. supplemental::
 
@@ -667,16 +646,19 @@ RMI Protocol Stack
   - Internetprotokoll in IP-Paketen enthaltene Datenübertragung (unterste Ebene)
 
 
+
 Einfacher RMI Dienst und Aufruf
 --------------------------------
 
-.. stack:: scriptsize
+.. deck::
 
-  .. layer::
+  .. card::
 
     **Schnittstelle des Zeitservers**
 
     .. code:: java
+      :class: copy-to-clipboard
+      :number-lines:
 
       import java.rmi.Remote;
       import java.rmi.RemoteException;
@@ -686,11 +668,13 @@ Einfacher RMI Dienst und Aufruf
         public Date getTime() throws RemoteException;
       }
 
-  .. layer:: incremental
+  .. card::
 
     **Implementierung der Schnittelle durch den Zeitserver**
 
     .. code:: java
+      :class: copy-to-clipboard
+      :number-lines:
 
       import java.rmi.RemoteException;
       import java.rmi.server.UnicastRemoteObject;
@@ -706,11 +690,13 @@ Einfacher RMI Dienst und Aufruf
         }
       }
     
-  .. layer:: incremental
+  .. card::
 
     **Registrierung des Zeitservers**
 
     .. code:: java
+      :class: copy-to-clipboard
+      :number-lines:
 
       import java.rmi.Naming;
 
@@ -724,11 +710,13 @@ Einfacher RMI Dienst und Aufruf
         }
       }
 
-  .. layer:: incremental
+  .. card::
 
     **Client des Zeitservers**
 
     .. code:: java
+      :number-lines:
+      :class: copy-to-clipboard
 
       import java.rmi.Naming;
       import java.util.Date;
@@ -755,6 +743,7 @@ Java RMI - Tidbits
   Der Overhead kann leicht ~25%-50% der Zeit für einen entfernten Aufruf ausmachen.
 
 
+
 .. class:: new-subsection transition-fade
 
 Klassische Web Services und SOAP
@@ -767,17 +756,16 @@ Integration von Unternehmensanwendungen
 Die Probleme unternehmensübergreifende Punkt-zu-Punkt-Integration zu ermöglichen führten zur Entwicklung der nächsten Generation von Middleware-Technologien. 
 
 .. image:: images/web_services-vs-message_brokers/message-brokers_and_adapters.svg
-   :height: 700px
    :align: center
 
-.. container:: footer-left tiny
+.. container:: footer-left
   
   Darstellung nach *Web Services - Concepts, Architectures and Applications; Alonso et al.; Springer 2004*
-
 
 .. supplemental::
 
   Jedes Unternehmen verwendet(e) seinen eigenen „konkreten“` Message-Broker - wenn wir mit mehreren Unternehmen kommunizieren wollen, müssen wir mehrere Adapter/Lösungen implementieren und pflegen.
+
 
 
 .. class:: no-title center-child-elements
@@ -797,7 +785,6 @@ Web Services - konzeptionell
 -----------------------------
 
 .. image:: images/web_services-vs-message_brokers/webservices_vision.svg
-   :height: 1000px
    :align: center
 
 
@@ -807,7 +794,6 @@ Web Services - wesentliche Bestandteile
 
 
 .. image:: images/web_services-vs-message_brokers/komponenten.svg
-   :height: 950px
    :align: center
 
 .. supplemental::
@@ -825,7 +811,6 @@ Web Services - Protokoll Stack
 --------------------------------
 
 .. image:: images/ws-protocol_stack.svg
-  :height: 1000px
   :align: center
 
 
@@ -833,7 +818,7 @@ Web Services - Protokoll Stack
 SOAP
 -------------------------------------
 
-.. class:: incremental
+.. class:: incremental-list
 
 - SOAP ist das Protokoll klassischer Web Services und ermöglicht die Kommunikation zwischen Anwendungen.
 - SOAP umfasst die folgenden Teile:
@@ -858,13 +843,14 @@ SOAP
 Aufbau einer SOAP-Nachricht
 ---------------------------
 
-.. container:: two-columns
+.. grid::
 
-  .. image:: images/soap_message.svg
-     :height: 1000px
-     :align: center
+  .. cell::
 
-  .. container:: margin-left-1em
+    .. image:: images/soap_message.svg
+     
+
+  .. cell::
 
     Nachrichten sind Umschläge, in die die Nutzdaten der Anwendung eingeschlossen werden.
     
@@ -904,7 +890,7 @@ Beispiel eines SOAP-Aufrufs
 ---------------------------
 
 .. code:: http
-  :class: scriptsize
+  :number-lines:
 
   POST /StockQuote HTTP/1.1
   Host: www.stockquoteserver.com
@@ -921,15 +907,14 @@ Beispiel eines SOAP-Aufrufs
         <symbol>DIS</symbol>
       </m:GetLastTradePrice>
     </SOAP-ENV:Body>
-
   </SOAP-ENV:Envelope>
 
 
 Beispiel einer SOAP-Antwort
 ---------------------------
 
-.. code:: html
-  :class: scriptsize
+.. code:: http
+  :number-lines:  
 
     HTTP/1.1 200 OK
     Content-Type: text/xml; charset="utf-8"
@@ -944,26 +929,25 @@ Beispiel einer SOAP-Antwort
         <Price>34.5</Price>
       </m:GetLastTradePriceResponse>
     </SOAP-ENV:Body>
-
     </SOAP-ENV:Envelope>
 
 
 Web Services - Standardisierung
 --------------------------------
 
-.. stack::
+.. deck::
 
-  .. layer::
+  .. card::
 
     .. image:: screenshots/ws_standards.png
-       :height: 900px
-       :align: right
+      :width: 30%
+      :align: right
 
-  .. layer:: overlay
+  .. card:: overlay
 
     .. image:: screenshots/ws_standards_w3c.png
-       :height: 900px
-       :align: left
+      :width: 50%
+      :align: left
 
 
 
@@ -973,7 +957,6 @@ Web Services - Standardisierung
 ---------------------
 
 .. image:: images/genealogy-of-middleware.svg
-   :height: 1140px
    :align: center
 
 
@@ -1009,25 +992,21 @@ ZeroMQ
 ZeroMQ - Messaging Patterns 
 ----------------------------
 
-.. stack::
+.. scrollable::
 
-  .. layer:: 
-
+  
     .. image:: images/zeromq/client-server.svg
-      :height: 700px
       :align: center
 
-  .. layer:: incremental
-
+  
     .. image:: images/zeromq/pub-sub.svg
-      :height: 700px
       :align: center
+      :class: margin-top-2em
 
-  .. layer:: incremental
 
     .. image:: images/zeromq/pipeline.svg
-      :height: 900px
       :align: center
+      :class: margin-top-2em
 
 .. supplemental::
 
@@ -1042,82 +1021,92 @@ ZeroMQ - Messaging Patterns
 ZeroMQ - Beispiel *Publish-Subscribe* (Java)
 --------------------------------------------
 
-.. container:: two-columns tiny
+.. rubric:: Publisher
 
-  .. container:: column
+.. scrollable::
 
-    .. code:: java
-      :class: smaller
+  .. code:: java
+    :class: copy-to-clipboard
+    :number-lines:
 
-      import static java.lang.Thread.currentThread
-      import org.zeromq.SocketType;
-      import org.zeromq.ZMQ;
-      import org.zeromq.ZContext;
+    import static java.lang.Thread.currentThread
+    import org.zeromq.SocketType;
+    import org.zeromq.ZMQ;
+    import org.zeromq.ZContext;
 
-      public class Publisher {
-        public static void main(String[] args) 
-            throws Exception {
-          try (ZContext context = new ZContext()) {
-            ZMQ.Socket publisher = 
-                context.createSocket(SocketType.PUB);
-            publisher.bind("tcp://*:5556");
-            publisher.bind("ipc://" + <endpoint>);
+    public class Publisher {
+      public static void main(String[] args) 
+          throws Exception {
+        try (ZContext context = new ZContext()) {
+          ZMQ.Socket publisher = 
+              context.createSocket(SocketType.PUB);
+          publisher.bind("tcp://*:5556");
+          publisher.bind("ipc://" + <endpoint>);
 
-            while (!currentThread().isInterrupted()) {
-              int zipcode = <some zipcode>
-              //  Send to all subscribers
-              String update = String.format("%05d %s", 
-                  zipcode, <some msg>);
-              publisher.send(update, 0);
-            }
-      } } }
+          while (!currentThread().isInterrupted()) {
+            int zipcode = <some zipcode>
+            //  Send to all subscribers
+            String update = String.format("%05d %s", 
+                zipcode, <some msg>);
+            publisher.send(update, 0);
+          }
+    } } }
 
 
-  .. container:: column
 
-    .. code:: java
-      :class: smaller
+ZeroMQ - Beispiel *Publish-Subscribe* (Java)
+--------------------------------------------
 
-      import java.util.StringTokenizer;
+.. rubric:: Subscriber
 
-      import org.zeromq.SocketType;
-      import org.zeromq.ZMQ;
-      import org.zeromq.ZContext;
+.. scrollable::
 
-      public class Subscriber{
-        public static void main(String[] args) {
-          try (ZContext context = new ZContext()) {
-            ZMQ.Socket subscriber = 
-                context.createSocket(SocketType.SUB);
-            subscriber.connect("tcp://localhost:5556");
-            subscriber.subscribe(
-                <zipcode(Str)>.getBytes(ZMQ.CHARSET));
-            while(true) {
-              String string = subscriber.recvStr(0);
-              // e.g. take string apart:
-              //   part1: zipcode
-              //   part2: message
-              System.out.println(string);
-            }
-      } } }
+  .. code:: java
+    :class: copy-to-clipboard
+    :number-lines:
+
+    import java.util.StringTokenizer;
+
+    import org.zeromq.SocketType;
+    import org.zeromq.ZMQ;
+    import org.zeromq.ZContext;
+
+    public class Subscriber{
+      public static void main(String[] args) {
+        try (ZContext context = new ZContext()) {
+          ZMQ.Socket subscriber = 
+              context.createSocket(SocketType.SUB);
+          subscriber.connect("tcp://localhost:5556");
+          subscriber.subscribe(
+              <zipcode(Str)>.getBytes(ZMQ.CHARSET));
+          while(true) {
+            String string = subscriber.recvStr(0);
+            // e.g. take string apart:
+            //   part1: zipcode
+            //   part2: message
+            System.out.println(string);
+          }
+    } } }
 
 
 
 ZeroMQ - Beispiel *Publish-Subscribe* (Python)
 -----------------------------------------------
 
-.. container:: two-columns tiny
+.. grid::
 
-  .. container:: column
+  .. cell:: 
 
     .. code:: python
-      :class: smaller
+      :class: copy-to-clipboard
+      :number-lines:
 
       import signal
       import time
       import zmq
 
-      signal.signal(signal.SIGINT, signal.SIG_DFL)
+      signal.signal(signal.SIGINT, 
+                    signal.SIG_DFL)
 
       context = zmq.Context()
       socket = context.socket(zmq.PUB)
@@ -1128,18 +1117,18 @@ ZeroMQ - Beispiel *Publish-Subscribe* (Python)
           socket.send(b'All is well')
           time.sleep(1)
       
-
-
-  .. container:: column
+  .. cell::
 
     .. code:: python
-      :class: smaller
+      :class: copy-to-clipboard
+      :number-lines:
 
       import signal
       import zmq
 
 
-      signal.signal(signal.SIGINT, signal.SIG_DFL)
+      signal.signal(signal.SIGINT, 
+                    signal.SIG_DFL)
 
       context = zmq.Context()
       socket = context.socket(zmq.SUB)
@@ -1150,10 +1139,10 @@ ZeroMQ - Beispiel *Publish-Subscribe* (Python)
           message = socket.recv_multipart()
           print(f'Received: {message}')
 
-
 .. supplemental::
 
   Bzgl. des Handlings von Signalen in Python siehe auch: https://docs.python.org/3/library/signal.html#signal.signal
+
 
 
 MOM - Message Oriented Middleware
@@ -1184,16 +1173,17 @@ MOM - Grundlegendes Interface
    NOTIFY, "Registriert einen Handler (*Callback*) der aufgerufen wird, wenn eine Nachricht einer bestimmten Warteschlange hinzugefügt wird."
 
 
+
 MOM - Queue Managers
 ----------------------
 
 .. image:: images/message-queueing.svg
-    :height: 1000px
     :align: center
 
 .. supplemental::
   
   *Queue Managers* sind der zentrale Baustein von Message-queueing Systemen. Im Allgemeinen gibt es (mindestens konzeptionell) einen lokalen *Queue Manager* pro Prozess. Ein *Queue Manager* ist ein Prozess, der Nachrichten in Warteschlangen speichert und verwaltet. Bei Bedarf kann er mehrere Warteschlangen verwalten und an andere *Queue Manager* weiterleiten.
+
 
 
 .. class:: integrated-exercise
@@ -1366,194 +1356,195 @@ MOM - Queue Managers
 Übung - Python
 -------------------------------------------------------
 
-.. exercise:: Asynchrone, verbindungsorientierte Kommunikation
-  :class: scrollable
+.. scrollable::
 
-  Entwickeln Sie sowohl einen Client (bzw. eine Clientkomponente) als auch einen Server für das zentralisierte Loggen von Nachrichten. 
-  
-  Im Fehlerfall, z. B. wenn der Server nicht verfügbar ist oder es zu einer Netzwerkpartitionierung kam, sollen die Nachrichten, die der Client an den Server senden will/wollte, zwischengepuffert werden und bei Serververfügbarkeit wieder zugestellt werden. Mit anderen Worten: die Methode des Clients zum senden von Nachrichten sollte nicht blockieren, sondern immer weiter funktionieren - auch im Fehlerfall. 
+  .. exercise:: Asynchrone, verbindungsorientierte Kommunikation
 
-  **Anforderungen**
+    Entwickeln Sie sowohl einen Client (bzw. eine Clientkomponente) als auch einen Server für das zentralisierte Loggen von Nachrichten. 
+    
+    Im Fehlerfall, z. B. wenn der Server nicht verfügbar ist oder es zu einer Netzwerkpartitionierung kam, sollen die Nachrichten, die der Client an den Server senden will/wollte, zwischengepuffert werden und bei Serververfügbarkeit wieder zugestellt werden. Mit anderen Worten: die Methode des Clients zum senden von Nachrichten sollte nicht blockieren, sondern immer weiter funktionieren - auch im Fehlerfall. 
 
-  - Stellen Sie sicher, dass Nachrichten immer in der richtigen Reihenfolge am Server ankommen. D. h. stellen Sie zum Beispiel sicher, dass eine gepufferte Nachricht nie nach einer neueren Nachricht ankommt.
-  - Der Client nimmt (hier) die Nachrichten über die Konsole entgegen und sendet sie direkt an den Server. Der Server sollte diese dann sofort ausgeben!
-  - Stellen Sie sicher, dass keine Nachrichten verloren gehen, wenn der Server unkontrolliert beendet wird.
-  - Bevor Sie versuchen eine Nachricht wieder zu versenden, warten Sie X Sekunden (z. B. 5 Sekunden).
-  
-  **Hinweise**
+    **Anforderungen**
 
-  - Orientieren Sie sich an dem Code auf den Folien.
-  - Nutzen Sie ggf. die Möglichkeit Sockets in ``File``-Objekte zu verwandeln, um die Nachrichten zu senden. Vergessen Sie ggf. nicht ``flush()`` aufzurufen, damit die Nachricht auch wirklich versendet wird.
-  - Prüfen Sie explizit, dass - wenn Sie Ihren Server abrupt beenden (CTRL+C) - und dann ganz schnell mehrere kleine Nachrichten senden, dass diese auch später *alle* ankommen. Falls dies nicht der Fall ist, überlegen Sie sich, wie Sie das Problem lösen können und implementieren Sie die Lösung.
+    - Stellen Sie sicher, dass Nachrichten immer in der richtigen Reihenfolge am Server ankommen. D. h. stellen Sie zum Beispiel sicher, dass eine gepufferte Nachricht nie nach einer neueren Nachricht ankommt.
+    - Der Client nimmt (hier) die Nachrichten über die Konsole entgegen und sendet sie direkt an den Server. Der Server sollte diese dann sofort ausgeben!
+    - Stellen Sie sicher, dass keine Nachrichten verloren gehen, wenn der Server unkontrolliert beendet wird.
+    - Bevor Sie versuchen eine Nachricht wieder zu versenden, warten Sie X Sekunden (z. B. 5 Sekunden).
+    
+    **Hinweise**
 
-  **Keine Anforderungen**
+    - Orientieren Sie sich an dem Code auf den Folien.
+    - Nutzen Sie ggf. die Möglichkeit Sockets in ``File``-Objekte zu verwandeln, um die Nachrichten zu senden. Vergessen Sie ggf. nicht ``flush()`` aufzurufen, damit die Nachricht auch wirklich versendet wird.
+    - Prüfen Sie explizit, dass - wenn Sie Ihren Server abrupt beenden (CTRL+C) - und dann ganz schnell mehrere kleine Nachrichten senden, dass diese auch später *alle* ankommen. Falls dies nicht der Fall ist, überlegen Sie sich, wie Sie das Problem lösen können und implementieren Sie die Lösung.
 
-  - Duplikate von Nachrichten müssen nicht erkannt werden.
+    **Keine Anforderungen**
 
-  .. solution::
-    :pwd: ThreadPoolsAreASolution
+    - Duplikate von Nachrichten müssen nicht erkannt werden.
 
-    .. rubric:: Server in Python 
+    .. solution::
+      :pwd: ThreadPoolsAreASolution
 
-    .. code:: python
-      :class: far-smaller copy-to-clipboard
+      .. rubric:: Server in Python 
 
-      #!/usr/bin/env python3
-      import socket
-      import queue
-      import threading
-      import concurrent.futures
+      .. code:: python
+        :class: copy-to-clipboard
+        :number-lines:
 
-      HOST = "localhost"
-      PORT = 5678
+        #!/usr/bin/env python3
+        import socket
+        import queue
+        import threading
+        import concurrent.futures
 
-      PRINT_QUEUE = queue.Queue()
+        HOST = "localhost"
+        PORT = 5678
 
-
-      def print_queue_handler():
-          while True:
-              try:
-                  msg = PRINT_QUEUE.get()
-                  print(msg, end="")
-              finally:
-                  PRINT_QUEUE.task_done()
+        PRINT_QUEUE = queue.Queue()
 
 
-      def ts_print(msg):
-          PRINT_QUEUE.put(msg)
+        def print_queue_handler():
+            while True:
+                try:
+                    msg = PRINT_QUEUE.get()
+                    print(msg, end="")
+                finally:
+                    PRINT_QUEUE.task_done()
 
 
-      def handle_connection(conn, host, port):
-          addr = f"{host}:{port}"
-          with conn:
-              ts_print(f"Connection from {addr}.\n")
-              with conn.makefile(mode="rw", encoding="utf-8") as f:
-                  while True:
-                      data = f.readline()
-                      if not data:
-                          ts_print(f"Connection closed {addr}.\n")
-                          return
-                      f.write("ACK\n")
-                      f.flush()
-                      ts_print(f"Log[{addr}]: {data}")
+        def ts_print(msg):
+            PRINT_QUEUE.put(msg)
 
 
-      def run_server():
-          with (
-              socket.socket(socket.AF_INET, socket.SOCK_STREAM) as server,
-              concurrent.futures.ThreadPoolExecutor() as tp,
-          ):
-              server.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
-              server.bind((HOST, PORT))
-              server.listen(1)
-
-              while True:
-                  conn, (host, port) = server.accept()
-                  # Single-Threaded Solution: handle_connection(conn, addr)
-                  tp.submit(handle_connection, conn, host, port)
-
-
-      if __name__ == "__main__":
-          threading.Thread(target=print_queue_handler, daemon=True).start()
-          run_server()
-          PRINT_QUEUE.join()
+        def handle_connection(conn, host, port):
+            addr = f"{host}:{port}"
+            with conn:
+                ts_print(f"Connection from {addr}.\n")
+                with conn.makefile(mode="rw", encoding="utf-8") as f:
+                    while True:
+                        data = f.readline()
+                        if not data:
+                            ts_print(f"Connection closed {addr}.\n")
+                            return
+                        f.write("ACK\n")
+                        f.flush()
+                        ts_print(f"Log[{addr}]: {data}")
 
 
-    .. rubric:: Client in Python
+        def run_server():
+            with (
+                socket.socket(socket.AF_INET, socket.SOCK_STREAM) as server,
+                concurrent.futures.ThreadPoolExecutor() as tp,
+            ):
+                server.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
+                server.bind((HOST, PORT))
+                server.listen(1)
 
-    .. code:: python
-      :class: far-smaller copy-to-clipboard
-
-      #!/usr/bin/env python3
-      import socket
-      import queue
-      import threading
-      import time
-
-      HOST = "localhost"
-      PORT = 5678
-
-      log_queue = queue.Queue()
+                while True:
+                    conn, (host, port) = server.accept()
+                    # Single-Threaded Solution: handle_connection(conn, addr)
+                    tp.submit(handle_connection, conn, host, port)
 
 
-      def log_queue_handler():
-          s = None
-          f = None
-
-          def establish_connection():
-              nonlocal s, f
-              s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-              s.connect((HOST, PORT))
-              f = s.makefile(mode="rw", encoding="utf-8")
-              return s
-
-          establish_connection()
-
-          def send(data):
-              f.write(data)
-              f.flush()
-              if f.readline() != "ACK\n":
-                  raise Exception("no ACK received")
-
-          while True:
-              data = log_queue.get()
-              try:
-                  print(f"Trying to send: {data}", end="")
-                  send(data)
-                  print(f"Succeeded sending: {data}", end="")
-                  log_queue.task_done()
-              except Exception as e:
-                  print(f"Failed ({e}) sending {data}", end="")
-                  try:
-                      s.close()
-                      s = None
-                      f = None
-                  except Exception as e:
-                      print(f"Failed to close connection ({e}) {data}", end="")
-                      pass
-                  while True:
-                      try:
-                          time.sleep(5)
-                          establish_connection()
-                          send(data)
-                          log_queue.task_done()
-                          break
-                      except Exception as e:
-                          print(f"Failed ({e}) resending {data}", end="")
-                          pass
+        if __name__ == "__main__":
+            threading.Thread(target=print_queue_handler, daemon=True).start()
+            run_server()
+            PRINT_QUEUE.join()
 
 
-      def main():
+      .. rubric:: Client in Python
 
-          threading.Thread(target=log_queue_handler, daemon=True).start()
+      .. code:: python
+        :class: copy-to-clipboard
+        :number-lines:
 
-          while True:
-              try:
-                  the_line = input() + "\n"
-                  log_queue.put(the_line)
-              except (EOFError, KeyboardInterrupt):
-                  # We want to exit the program after
-                  # the user presses CTRL-D, but we
-                  # first want to wait for the queue
-                  # to be empty!
-                  log_queue.join()
-                  break
-              except Exception as e:
-                  print(f"Error: {e}")
-                  break
+        #!/usr/bin/env python3
+        import socket
+        import queue
+        import threading
+        import time
+
+        HOST = "localhost"
+        PORT = 5678
+
+        log_queue = queue.Queue()
 
 
-      if __name__ == "__main__":
-          main()
+        def log_queue_handler():
+            s = None
+            f = None
+
+            def establish_connection():
+                nonlocal s, f
+                s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+                s.connect((HOST, PORT))
+                f = s.makefile(mode="rw", encoding="utf-8")
+                return s
+
+            establish_connection()
+
+            def send(data):
+                f.write(data)
+                f.flush()
+                if f.readline() != "ACK\n":
+                    raise Exception("no ACK received")
+
+            while True:
+                data = log_queue.get()
+                try:
+                    print(f"Trying to send: {data}", end="")
+                    send(data)
+                    print(f"Succeeded sending: {data}", end="")
+                    log_queue.task_done()
+                except Exception as e:
+                    print(f"Failed ({e}) sending {data}", end="")
+                    try:
+                        s.close()
+                        s = None
+                        f = None
+                    except Exception as e:
+                        print(f"Failed to close connection ({e}) {data}", end="")
+                        pass
+                    while True:
+                        try:
+                            time.sleep(5)
+                            establish_connection()
+                            send(data)
+                            log_queue.task_done()
+                            break
+                        except Exception as e:
+                            print(f"Failed ({e}) resending {data}", end="")
+                            pass
 
 
+        def main():
+
+            threading.Thread(target=log_queue_handler, daemon=True).start()
+
+            while True:
+                try:
+                    the_line = input() + "\n"
+                    log_queue.put(the_line)
+                except (EOFError, KeyboardInterrupt):
+                    # We want to exit the program after
+                    # the user presses CTRL-D, but we
+                    # first want to wait for the queue
+                    # to be empty!
+                    log_queue.join()
+                    break
+                except Exception as e:
+                    print(f"Error: {e}")
+                    break
+
+
+        if __name__ == "__main__":
+            main()
 
 .. supplemental::
 
   .. rubric:: Schablone für die Serverseite 
 
   .. code:: python
-    :class: copy-to-clipboard far-smaller
+    :class: copy-to-clipboard
 
     import queue
     import socket
