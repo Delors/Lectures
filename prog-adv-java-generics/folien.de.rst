@@ -7,6 +7,7 @@
     :id: lecture-prog-java-generics
     :first-slide: last-viewed
     :master-password: WirklichSchwierig!
+    :theme: colored
     
 .. |html-source| source::
     :prefix: https://delors.github.io/
@@ -86,9 +87,9 @@ Einfache nicht-generische Datenstrukturen
 
     .. exercise:: Speichern von Wertepaaren
 
-        1. Implementieren Sie die Datenstruktur :java:`Pair` die zwei Werte speichern kann. Die Klasse soll folgende Methoden bereitstellen:
+        1. Implementieren Sie die Datenstruktur :java:`Pair` die zwei Werte (vom Typ :java:`Object`) speichern kann. Die Klasse soll folgende Methoden bereitstellen:
 
-        - :java:`Pair(..., ...)`: Konstruktor zum erzeugen eines :java:`Pair`\ s.
+        - :java:`Pair(..., ...)`: Konstruktor zum Erzeugen eines :java:`Pair`\ s.
         - :java:`getFirst()` und :java:`getSecond()`: Liefert den ersten/zweiten Wert zurück
         - :java:`void setFirst(...)` und :java:`void setSecond(...)`: Setzt den ersten/zweiten Wert
         - :java:`toString()`: Liefert eine String-Repräsentation des Paares
@@ -667,25 +668,28 @@ Iterieren über Collections bzw. Laufen über die Elemente eine Collection
 
     - Java nutzt einen :java:`Iterator`, um über Elemente in einer Collection zu laufen („zu iterieren“).
 
-    Normalerweise erhält man den Iterator durch den Aufruf von :java:`iterator()` auf der Collection.
-    - Das gilt für alle Subklassen des Collection Interface
-    - Für eine :java:`HashMap` nutzt man :java:`keys()` und darauf :java:`iterator()`
-    - :java:`iterator()` liefert eine Instanz von :java:`java.util.Iterator`
+      Normalerweise erhält man den Iterator durch den Aufruf von :java:`iterator()` auf der Collection.
+
+      - Das gilt für alle Subklassen des Collection Interface
+      - Für eine :java:`HashMap` nutzt man :java:`keys()` und darauf :java:`iterator()`
+      - :java:`iterator()` liefert eine Instanz von :java:`java.util.Iterator`
 
     \ 
 
+    .. class:: incremental-list
+
     - Ein Iterator bietet die Operationen:
 
-    .. class:: list-with-explanations
+      .. class:: list-with-explanations
 
-    - :java:`boolean hasNext()` – gibt es noch weitere Elemente?
+      - :java:`boolean hasNext()` – gibt es noch weitere Elemente?
 
-    - :java:`Object next()` – liefert das nächste Element, falls eines existiert;
-        sonst wird eine NoSuchElementException geworfen.
+      - :java:`Object next()` – liefert das nächste Element, falls eines existiert;
+            sonst wird eine NoSuchElementException geworfen.
 
         Prüfen Sie vorher die Existenz mit :java:`hasNext()`!
 
-    - :java:`void remove()` – entfernt das zuletzt gelieferte Element; häufig nicht unterstützt. In diesem Fall wird eine :java:`UnsupportedOperationException` geworfen.
+      - :java:`void remove()` – entfernt das zuletzt gelieferte Element; häufig nicht unterstützt. In diesem Fall wird eine :java:`UnsupportedOperationException` geworfen.
 
     .. compound:: 
         :class: incremental margin-top-1em
@@ -1011,7 +1015,7 @@ Statische Typisierung
 
 .. exercise:: Wildcards
 
-    .. class:: list-with-explanations
+    .. class:: list-with-details
 
     1.  Fügen Sie Ihrer generischen Klasse :java:`Pair` eine Methode :java:`addToMap(...)` hinzu, die die Elemente des Pairs in einer :java:`java.util.Map` speichert. D. h. der erste Wert eines Pairs wird als Schlüssel und der Zweite als Value verwendet. 
 
@@ -1025,7 +1029,7 @@ Statische Typisierung
             java.util.Map<Object,Integer> map = new java.util.HashMap<>();
             p1.addToMap(map); // D.h. dem Key "1" ist nur der Wert "2" zugewiesen.
 
-    2.  Schreiben Sie eine Methode die die Werte eine Pairs aktualisiert basierend auf den Werten eines anderen Paares. Achten Sie darauf, dass die Methode auch mit Subtypen von :java:`U` und :java:`V` arbeitet.
+    2.  Schreiben Sie eine Methode die die Werte eine :java:`Pair`\ s aktualisiert basierend auf den Werten eines anderen Paares. Achten Sie darauf, dass die Methode auch mit Subtypen von :java:`U` und :java:`V` arbeitet.
 
         .. code:: java
             :number-lines:

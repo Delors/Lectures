@@ -6,10 +6,10 @@
   <modelVersion>4.0.0</modelVersion>
   
   <groupId>de.dhbw</groupId>
-  <artifactId>newton</artifactId>
-  <version>1.0-SNAPSHOT</version>
-  <name>newton</name>
-  <url>http://www.example.com</url>
+  <artifactId>hello</artifactId>
+  <version>1.0</version>
+  <name>HelloYou</name>
+  <url>http://www.dhbw.de</url>
   
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -27,31 +27,27 @@
   </dependencies>
   
   <build>
-    
     <plugins>
+      <!--Code Coverage-->
       <plugin>
         <groupId>org.jacoco</groupId>
         <artifactId>jacoco-maven-plugin</artifactId>
         <version>0.8.12</version>
         <executions>
-          <execution>
-            <goals>
-              <goal>prepare-agent</goal>
-            </goals>
-          </execution>
+          <execution><goals><goal>prepare-agent</goal></goals></execution>
           <execution>
             <id>report</id>
             <phase>test</phase>
-            <goals>
-              <goal>report</goal>
-            </goals>
+            <goals><goal>report</goal></goals>
           </execution>
         </executions>
       </plugin>
+      <!--Testing-->
       <plugin>
         <artifactId>maven-surefire-plugin</artifactId>
         <version>3.5.2</version>
       </plugin>
+      <!--Packaging-->
       <plugin>
         <artifactId>maven-jar-plugin</artifactId>
         <version>3.0.2</version>
@@ -59,7 +55,7 @@
           <archive>
             <manifest>
               <addClasspath>true</addClasspath>
-              <mainClass>rpn.RPN</mainClass>
+              <mainClass>de.dhbw.HelloYou</mainClass>
             </manifest>
           </archive>
         </configuration>
@@ -67,6 +63,7 @@
     </plugins>
   </build>
   
+  <!-- Additional configuration for the site lifecycle-->
   <reporting>
     <plugins>
       <plugin>
