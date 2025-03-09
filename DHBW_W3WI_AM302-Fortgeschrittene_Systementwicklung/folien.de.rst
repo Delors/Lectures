@@ -35,7 +35,7 @@ W3WI_AM302 - Fortgeschrittene Systementwicklung
 
 :Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
 :Kontakt: michael.eichberg@dhbw.de, Raum 149B
-:Version: 23AMA
+:Version: 23AMA (Rev. 1)
 
 
 
@@ -290,6 +290,12 @@ Benotungsgrundlage
 .. scrollable::
     
   - [**max. 20 Punkte**] Qualität des Vortrags (50% Individualnote und 50% gehen anteilig auf das Teamkonto.)
+
+    D. h. Alle Punkte, die auf dem Teamkonto für Voträge landen, werden dann addiert und durch die Anzahl der Teammitglieder geteilt. Dabei wird zwischem dem Frontend- und Backend-Team unterschieden. 
+
+    .. example::
+      
+      Es gab zwei Vorträge mit :math:`18` und :math:`14` Punkten. Dann hat das Team :math:`9+7` Punkte für die Vorträge erhalten. Der erste Vortragende hat dann auf den Vortragsteil :math:`9+ \frac{(9+7)}{2 (\text{\# Vorträge})} = 17` Punkte erhalten. Der zweite Vortragende hat :math:`7+ \frac{(9+7)}{ 2 (\text{\# Vorträge})} = 15` Punkte erhalten.  
 
   - [**max. 10 Punkte**] Ist das Spiel lauffähig?
 
