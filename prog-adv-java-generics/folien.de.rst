@@ -37,7 +37,7 @@ Java Generics
 
 :Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
 :Kontakt: michael.eichberg@dhbw.de, Raum 149B
-:Version: 1.0
+:Version: 1.0.1
 
 .. supplemental::
 
@@ -501,7 +501,7 @@ Im Folgenden betrachten wir Collections die Element vom Typ „E“ verwalten; d
 
 
 
-:java:`java.uti.List`
+:java:`java.util.List`
 ------------------------------------------------
 
 .. story::
@@ -994,6 +994,48 @@ Beschränkte Wildcards
             - :java:`X` ist die „untere Schranke“ der Wildcard
 
 
+Generische Methoden
+------------------------------------------------
+
+.. deck::
+
+    .. card:: 
+
+        Zusätzlich zu generischen Klassen können auch generische Methoden definiert werden. Bei diesen Methoden wird der generische Typ vor dem Rückgabetyp spezifiziert.
+
+    .. card::
+                
+        .. example::
+
+            .. code:: java
+                :number-lines:
+                :class: copy-to-clipboard
+
+                public class Tuple2<T> {
+                    public final T first;
+                    public final T second;
+                    public Tuple2(T first, T second) {
+                        this.first = first; this.second = second;
+                    }
+                    public String toString() { return "(" + first + ", " + second + ")"; }
+
+                    public <X> Tuple2<X> map(Function<T,X> mapper) {
+                        return new Tuple2<>(mapper.apply(first), mapper.apply(second));
+                    }
+                }
+
+            .. rubric:: Verwendung
+
+            .. code:: java
+                :number-lines:
+                :class: copy-to-clipboard
+                
+                /*Tuple2<String> ts =*/ new Tuple2<Integer>(1,2).map(e -> "value: " + e)
+
+
+        
+
+
 .. class:: summary
 
 Statische Typisierung
@@ -1027,7 +1069,7 @@ Statische Typisierung
 
             Pair<Integer,Integer> p = new Pair<>(1, 2);
             java.util.Map<Object,Integer> map = new java.util.HashMap<>();
-            p1.addToMap(map); // D.h. dem Key "1" ist nur der Wert "2" zugewiesen.
+            p.addToMap(map); // D.h. dem Key "1" ist nur der Wert "2" zugewiesen.
 
     2.  Schreiben Sie eine Methode die die Werte eine :java:`Pair`\ s aktualisiert basierend auf den Werten eines anderen Paares. Achten Sie darauf, dass die Methode auch mit Subtypen von :java:`U` und :java:`V` arbeitet.
 
@@ -1035,9 +1077,9 @@ Statische Typisierung
             :number-lines:
             :class: copy-to-clipboard
 
-            Pair<Integer,Integer> p = new Pair<>(1, 2);
-            Pair<Object,Object> pObject = new Pair<>("a",new Object());
-            pObject.update(p1);
+            Pair<Integer,Integer> pIntegers = new Pair<>(1, 2);
+            Pair<Object,Object> pObjects = new Pair<>("a",new Object());
+            pObjects.update(pIntegers);
 
     .. solution::
         :pwd: DasWarenGenerics

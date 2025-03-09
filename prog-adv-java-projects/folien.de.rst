@@ -17,7 +17,6 @@
 
 .. |newton-code.zip| source:: code/newton-code.zip
     :path: relative
-    :suffix: .html.pdf
 
 .. |at| unicode:: 0x40
 
@@ -44,7 +43,7 @@ Eine kurze Einführung
 
 :Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
 :Kontakt: michael.eichberg@dhbw.de, Raum 149B
-:Version: 1.0
+:Version: 1.0.1
 
 .. supplemental::
 
@@ -233,8 +232,7 @@ Beispiel Build-Konfiguration für ein Java Projekt
 
 .. story::
 
-
-    .. rubric:: Code der Anwendung
+    .. rubric:: Code der Anwendung (in ``src/main/java/<package>/<class>.java``)
 
     .. include:: code/hello/src/main/java/de/dhbw/HelloYou.java
         :code: java
@@ -243,9 +241,11 @@ Beispiel Build-Konfiguration für ein Java Projekt
 
     .. class:: incremental
 
-    .. rubric:: TestCode (Testing System.out)
+    .. rubric:: TestCode (in ``src/test/java/<package>/<class>.java``) 
 
     .. container:: incremental
+
+        *(Herausforderung: Testing System.out)*
 
         **Header**
 
@@ -289,7 +289,7 @@ Beispiel Build-Konfiguration für ein Java Projekt
 
     .. class:: incremental
 
-    .. rubric:: Maven - Build-Konfiguration
+    .. rubric:: Maven - Build-Konfiguration (``pom.xml`` im Root Verzeichnis des Projekts)
 
     .. container:: incremental
 
@@ -367,6 +367,7 @@ Beispiel Build-Konfiguration für ein Java Projekt
         :end-before: <!-- Additional configuration
 
 
+
 Projekt bauen und ausführen
 ------------------------------------------------
 
@@ -397,6 +398,8 @@ Projekt bauen und ausführen
 
     .. exercise:: Build-Konfiguration eines Java Projekts
         
+        (Falls Maven (``mvn``) noch nicht installiert ist, installieren Sie es.)
+
         - entpacken Sie das Projekt |newton-code.zip|.
         - legen Sie eine ``pom.xml`` Datei an, um das Projekt zu bauen.
         - Konfigurieren Sie eine Abhängigkeit zu JUnit 5.12 und konfigurieren Sie das ``surefire`` Plugin, um die Tests auszuführen.
