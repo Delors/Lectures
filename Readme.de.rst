@@ -23,8 +23,6 @@ Die grundlegende Idee hinter der folgenden Reihenfolge ist, dass die Studierende
 
 .. scrollable::
 
-   Grundlagen:
-
    1. Einführung in die Programmierung (`<prog-einfuehrung/folien.de.rst.html>`__)
    2. Grundlagen der Programmierung in Java (`<prog-java-basics/folien.de.rst.html>`__)
    3. Verwendung von Arrays in Java (`<prog-java-arrays/folien.de.rst.html>`__)
@@ -36,13 +34,16 @@ Die grundlegende Idee hinter der folgenden Reihenfolge ist, dass die Studierende
    7. Objekt-orientierte Programmierung in Java - Vererbung und Polymorphie (`<prog-java-oo-inheritance/folien.de.rst.html>`__)
    8. Objekt-orientierte Programmierung in Java - Domain Modeling, Java Records und Java Enums (`<prog-adv-java-domain-modeling/folien.de.rst.html>`__)
    9. Objekt-orientierte Programmierung in Java - Generics (`<prog-adv-java-generics/folien.de.rst.html>`__)
+   10. Compiler und Interpreter (`<prog-interpreter-vms-und-compiler/folien.de.rst.html>`__)
+   11. Softwareprojekte bauen, testen und vermessen (`<se-build-test-measure/folien.de.rst.html>`__)
+   12. Java Projekte mit Maven aufsetzen (`<prog-adv-java-projects/folien.de.rst.html>`__)
+   13. Versionsverwaltung mit GIT (`<se-versionskontrolle/folien.de.rst.html>`__)
+   14. Objekt-orientierte Programmierung in Java - Funktionale Programmierung (`<prog-adv-java-funktionale-programmierung/folien.de.rst.html>`__)
 
    Fortgeschrittenere Themen (Planung!):
    
-   10. Objekt-orientierte Programmierung in Java - *Funktionale Programmierung*
-   11. Objekt-orientierte Programmierung in Java - Ein- und Ausgabe - Streams
-   12. Java Projekte aufsetzen
-   13. Algorithmen und Datenstrukturen in Java 
+   - Objekt-orientierte Programmierung in Java - Ein- und Ausgabe - Streams 
+   - Algorithmen und Datenstrukturen in Java 
 
 
 
