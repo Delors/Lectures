@@ -592,10 +592,10 @@ Exercise
 Exercise 
 ------------------------------------------------------
 
-.. exercise:: Protokollaggregation
+.. exercise:: Log Aggregation
 
-  Write a UDP-based Java programme with which log messages can be displayed centrally on a server. The programme should consist of several clients and a server. Each client reads an input line from the keyboard in the form of a string, which is then immediately sent to the server. The server waits on port 4999 and receives the messages from any client, which it then outputs immediately.
-
+  Write a UDP-based Java program with which log messages can be displayed centrally on a server. The program should consist of several clients and a server. Each client reads an input line from the keyboard in the form of a string, which is then immediately sent to the server. The server waits on port 4999 and receives the messages from any client, which it then outputs immediately.
+ 
   .. solution:: 
     :pwd: Now with UDP.
     
@@ -632,7 +632,8 @@ Exercise
       }
 
     .. code:: java
-      :class: copy-to-clipboard smaller
+      :class: copy-to-clipboard
+      :number-lines:
 
       import java.net.*;
       import java.io.*;
