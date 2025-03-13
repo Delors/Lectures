@@ -1,5 +1,5 @@
 .. meta::
-    :version: genesis
+    :version: renaissance
     :author: Michael Eichberg
     :keywords: "Lamport Clock", "2PC"
     :description lang=de: Grundlegende Konzepte verteilter Systeme: Lamport-Uhren und 2PC
@@ -19,20 +19,10 @@
 .. role:: incremental
 .. role:: eng
 .. role:: ger
-.. role:: minor
+.. role:: peripheral
 .. role:: obsolete
-.. role:: dhbw-red
-.. role:: dhbw-gray
-.. role:: dhbw-light-gray
-.. role:: the-blue
-.. role:: the-green
-.. role:: the-orange
-.. role:: shiny-green
-.. role:: shiny-red
-.. role:: black
-.. role:: dark-red
-.. role:: huge
-.. role:: smaller  
+.. role:: math-i
+.. role:: math-r
 
 .. role:: raw-html(raw)
    :format: html
@@ -42,12 +32,12 @@
 Grundlegende Konzepte verteilter Systeme
 ===============================================================================
 
-.. container:: line-above 
+----
 
-  :Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
-  :Kontakt: michael.eichberg@dhbw.de
-  :Version: 1.0.1
- 
+:Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
+:Kontakt: michael.eichberg@dhbw.de
+:Version: 1.0.1
+
 .. supplemental::  
 
   :Folien: 
@@ -60,7 +50,7 @@ Grundlegende Konzepte verteilter Systeme
       https://github.com/Delors/delors.github.io/issues
 
 
-.. class:: center-child-elements
+.. class:: center-content
 
 \ 
 ----
@@ -99,43 +89,43 @@ Probleme, wenn die Zeit nicht korrekt ist
 
 
 
-.. class:: center-child-elements transition-scale no-title
+.. class:: transition-scale 
 
-Reale vs. logische Zeit
+Verteilte Systeme: Reale vs. logische Zeit
 --------------------------------------------------------------------------------
 
-.. container:: dhbw-light-gray-background rounded-corners padding-1em margin-top-2em
+.. deck::
 
-  In verteilten System unterscheiden wir **reale** und **logische Zeit**.
+  .. card::
 
-  .. container:: dhbw-gray
+    .. rubric:: Logische Zeit
 
     Die logische Zeit ermöglicht es uns, eine wohldefinierte Reihenfolge zwischen Ereignissen (vgl. :eng:`happened before` Relation) zu bestimmen. *Häufig* ist dies für verteilte Systeme ausreichend.
 
+  .. card::
 
+    .. rubric:: Reale Zeit
 
-Reale Zeit
---------------------------------------------------------------------------------
+    :Sonnensekunde: bezieht sich auf die Zeitspanne zwischen aufeinanderfolgenden Sonnenhöchstständen.
 
-:Sonnensekunde: bezieht sich auf die Zeitspanne zwischen aufeinanderfolgenden Sonnenhöchstständen.
+    .. class:: incremental
 
-.. class:: incremental
+    :Atomzeitsekunde: 
+      Bezugspunkt ist die Schwingungsdauer eines Cäsium-133-Atoms.
 
-:Atomzeitsekunde: 
-   Bezugspunkt ist die Schwingungsdauer eines Cäsium-133-Atoms.
+      TAI (Temps Atomique International): Durchschnittszeit der Atomuhren von über 60 Instituten weltweit (z. B. Braunschweig), ermittelt vom BIH (Bureau International de l’Heure) in Paris
 
-   TAI (Temps Atomique International): Durchschnittszeit der Atomuhren von über 60 Instituten weltweit (z. B. Braunschweig), ermittelt vom BIH (Bureau International de l’Heure) in Paris
+    .. class:: incremental
 
-.. class:: incremental
+    :UTC (Universal Coordinated Time):
+      Basiert auf TAI; aktuell ist noch das Einfügen gelegentlicher Schaltsekunden zur Anpassung an den Sonnentag erforderlich. Ab 2035 wird die Schaltsekunde voraussichtlich abgeschafft.
 
-:UTC (Universal Coordinated Time):
-  Basiert auf TAI; aktuell ist noch das Einfügen gelegentlicher Schaltsekunden zur Anpassung an den Sonnentag erforderlich. Ab 2035 wird die Schaltsekunde voraussichtlich abgeschafft.
 
 
 Computeruhrzeit
 --------------------------------------------------------------------------------
 
-.. class:: incremental list-with-explanations
+.. class:: incremental-list list-with-explanations
 
 - Real-time Clock (RTC): interne batteriegepufferte Uhr.
   
@@ -148,7 +138,7 @@ Computeruhrzeit
 Uhrensynchronisation nach Christian
 --------------------------------------------------------------------------------
 
-:minor:`(Probabilistic Clock Synchronisation, 1989)`
+:peripheral:`(Probabilistic Clock Synchronisation, 1989)`
 
 - Voraussetzung: zentraler Zeitserver mit UTC.
 - Clients fragen periodisch nach und korrigieren um halbe Antwortzeit
@@ -275,75 +265,67 @@ Logische Zeit
 Lamport-Uhren (*logical clocks*)
 --------------------------------------------------------------------------------
 
-.. admonition:: Ereignis
-  :class: definition
+.. definition::
   
   Ein Ereignis (*write*, *send*, *receive*) ist eine Zustandsänderung in einem Prozess.
 
-.. container:: smaller
-    
-  .. rubric:: Vorgehensweise
+.. rubric:: Vorgehensweise
 
-  - vor *write* und *send*: erhöhen der lokalen Zeit :math:`T_{local} = T_{local} + 1`
-  - *send* immer inklusive Zeitstempel: :math:`T_{msg} = T_{local}`
-  - vor *receive*: :math:`T_{local} = max(T_{msg}, T_{local}) + 1`
+- vor *write* und *send*: erhöhen der lokalen Zeit :math:`T_{local} = T_{local} + 1`
+- *send* immer inklusive Zeitstempel: :math:`T_{msg} = T_{local}`
+- vor *receive*: :math:`T_{local} = max(T_{msg}, T_{local}) + 1`
       
-.. container:: assessment smaller incremental
+.. container:: incremental
   
    Ereignis *receive* ist zeitlich immer nach *send*.
 
-   Ereignisse werden eingeordnet nach der „happened-before“ Relation: 
-   
-   a → b
+   Ereignisse werden eingeordnet nach der „happened-before“ Relation: **a → b**
 
    (a happened-before b) 
    
-.. container:: smaller incremental
+.. container:: incremental
   
   Resultat: es ergibt sich eine partielle Ordnung (partial ordering) der Ereignisse.
 
   Ein konsistenter Schnappschuss enthält zu jedem Empfangs- das entsprechende Sendeereignis. 
 
-
 .. supplemental::
 
-  Lamport Uhren sind eine Möglichkeit, um Totally-ordered Multicast zu unterstützen, was insbesondere im Zusammenhang mit Replication von Nöten ist.
+  Lamport Uhren sind eine Möglichkeit, um *Totally-ordered Multicasts* zu unterstützen, was insbesondere im Zusammenhang mit Replication von Nöten ist.
 
 
-.. class:: integrated-exercise transition-scale
+.. class:: exercises transition-scale
 
 Übung
 ------------------------
 
-.. exercise:: Lamport-Uhren
-  :class: smaller
+.. scrollable::
 
-  Gegeben sei die nachfolgend dargestellte Situation mit drei Prozessen in einem verteilten System. Die Zeitstempel der Ereignisse werden mittels der Lamport'schen Uhren vergeben.
+  .. exercise:: Lamport-Uhren
 
-  (Die Werte c ganz links geben den Stand der jeweiligen Uhren zu Beginn an.)
+    Gegeben sei die nachfolgend dargestellte Situation mit drei Prozessen in einem verteilten System. Die Zeitstempel der Ereignisse werden mittels der Lamport'schen Uhren vergeben. 
+    (Die Werte :math-r:`c` ganz links, geben den Stand der jeweiligen Uhren zu Beginn an.)
 
-  (a) Versehen Sie alle Ereignisse mit den korrekten Zeitstempeln.
-  (b) Geben Sie einen konsistenten Sicherungspunkt an, der Ereignis r enthält.
+    (a) Versehen Sie alle Ereignisse mit den korrekten Zeitstempeln.
+    (b) Geben Sie einen konsistenten Sicherungspunkt an, der Ereignis r enthält.
 
-  .. image:: images/lamport-exercise/task.svg
-     :width: 60%
-     :align: center
-     :class: box-shadow rounded-corners
+    .. image:: images/lamport-exercise/task.svg
+      :align: center
 
-  .. solution::
-    :pwd: ReplikationVoraus.
+    .. solution::
+      :pwd: ReplikationVoraus.
 
-    (a)
+      (a)
 
-    .. image:: images/lamport-exercise/solution.svg
-        :width: 60%
-        :align: center
-        :class: box-shadow rounded-corners
+      .. image:: images/lamport-exercise/solution.svg
+          :align: center
+          :class: box-shadow rounded-corners
 
-    (b)
+      (b)
 
-    Der konsistente Sicherungspunkt muss ebenfalls die Ereignisse i und q enthalten.
-    (i *happend before* r, aber l und n stehen in keinem kausalen Zusammenhang zu r.)
+      Der konsistente Sicherungspunkt muss ebenfalls die Ereignisse i und q enthalten.
+      (i *happend before* r, aber l und n stehen in keinem kausalen Zusammenhang zu r.)
+
 
 
 .. class:: new-section
@@ -355,15 +337,15 @@ Verteilte Transaktionen
 „Atomic Commit Protocol“
 --------------------------------------------------------------------------------
 
-.. class:: incremental smaller
+.. class:: incremental-list
 
 - Verteilte Transaktion erstrecken sich über mehrere Prozesse und meist auch über mehrere Knoten in einem verteilten System.
 - Mehr Fehlerfälle müssen berücksichtigt werden.
 
   Ein Beispiel wäre die Überweisung eines Geldbetrags (konzeptionelles Beispiel):
 
-  .. code:: Pseudocode
-    :class: tiny
+  .. code:: java
+    :number-lines:
       
     send_money(A, B, amount) { 
       Begin_Transaction();
@@ -375,7 +357,7 @@ Verteilte Transaktionen
         Abort_Transaction();
     } }
 
-.. container:: assessment incremental
+.. container:: framed incremental
 
   Wir brauchen ein *Atomic Commit Protocol*.
 
@@ -438,15 +420,14 @@ CAP Theorem\ [#]_
 
 In **verteilten** (*Datenbank-*)\ *Systemen* können nur zwei der drei folgenden Eigenschaften gleichzeitig garantiert werden:
 
-.. container:: two-columns
+.. grid:: 
 
-  .. container:: column
+  .. grid:: 
 
     .. image:: images/cap.svg
-      :height: 750
       :align: center
 
-  .. container:: column incremental smaller
+  .. grid::  incremental 
 
     .. class:: list-with-explanations
 
@@ -479,7 +460,7 @@ In **verteilten** (*Datenbank-*)\ *Systemen* können nur zwei der drei folgenden
 
 
 
-.. class:: integrated-exercise
+.. class:: exercises transition-move-to-top
 
 Übung
 ----------
