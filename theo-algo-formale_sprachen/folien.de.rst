@@ -2408,7 +2408,7 @@ Grammatiken für die wichtige Klasse der kontextfreien Sprachen sind nicht einde
 
 Zwei Grammatiken für Terme wie :math:`{\color{red}1+ 2 * 3} ∈ L(G1) = L(G2)`:
 
-.. container:: scrollable
+.. story::
         
     .. class:: columns evenly-spaced
 
