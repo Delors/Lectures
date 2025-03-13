@@ -122,8 +122,7 @@ Bedingungs-Synchronisation
 
 .. supplemental::
 
-  .. admonition:: Warnung
-     :class: warning
+  .. warning:: 
       
      In Java findet der wechselseitige Ausschluss nur zwischen solchen Methoden statt, die explizit als :java:`synchronized` deklariert wurden. 
 
@@ -231,22 +230,22 @@ Beispiel: Synchronisierte Methode
       :class: copy-to-clipboard
       :number-lines:
       
-        public class SharedLong {
+      public class SharedLong {
 
-          private long theData; // reading and writing longs is not atomic
+        private long theData; // reading and writing longs is not atomic
 
-          public SharedLong(long initialValue) {
-            theData = initialValue;
-          }
-
-          public synchronized long read() { return theData; }
-
-          public synchronized void write(long newValue) { theData = newValue; }
-
-          public synchronized void incrementBy(long by) {
-            theData = theData + by;
-          }
+        public SharedLong(long initialValue) {
+          theData = initialValue;
         }
+
+        public synchronized long read() { return theData; }
+
+        public synchronized void write(long newValue) { theData = newValue; }
+
+        public synchronized void incrementBy(long by) {
+          theData = theData + by;
+        }
+      }
 
         SharedLong myData = new SharedLong(42);
 
@@ -337,7 +336,7 @@ Bedingte Synchronisation
 
   Zum Zwecke der bedingten Synchronisation können in Java die Methoden :java:`wait`, :java:`notify` und :java:`notifyAll` verwendet werden.  Diese Methoden erlauben es auf bestimmte Bedingungen zu warten und andere Threads zu benachrichtigen, wenn sich die Bedingung geändert hat.
 
-.. deck:: incremental margin-top-1em
+.. deck:: incremental
 
   .. card::
 
@@ -447,7 +446,7 @@ Beispiel: Synchronisation mit *Condition Variables*
     .. csv-table::
       :header: "","Aktionen" , "(Änderung des) Zustand(s) des Buffers", "Auf die Sperre (*Lock*) wartend", "An der Bedingung wartend"
       :widths: 3, 25, 50, 33, 39
-      :class: s-smaller
+      :class: s-smaller incremental-table-rows
 
       1, "**g1:bb.get()** :raw-html:`<br>`
       g2:bb.get(), p1:bb.put(), p2:bb.put()", empty, "{g2,p1,p2}", {g1}
@@ -642,9 +641,9 @@ Damit eine Klasse thread-sicher ist, muss sie sich in einer single-threaded Umge
     - Ohne zusätzliche Synchronisierung auf Seiten des aufrufenden Codes.
 
 
-.. container:: incremental rounded-corners dhbw-light-gray-background padding-1em margin-top-1em smaller 
+    .. container:: incremental framed
 
-    Dies hat zur Folge, dass Operationen auf einem thread-sicheren Objekt für alle Threads so erscheinen als ob die Operationen in einer festen, global konsistenten Reihenfolge erfolgen würden.
+        Dies hat zur Folge, dass Operationen auf einem thread-sicheren Objekt für alle Threads so erscheinen als ob die Operationen in einer festen, global konsistenten Reihenfolge erfolgen würden.
 
 
 
