@@ -722,6 +722,11 @@ Alles ist ein Objekt
 
    .. card:: 
       
+      .. container:: scale-on-hover 
+
+            .. image:: images/prototype_chain/pseudoclassical_Inheritance.svg
+               :align: center
+
       .. rubric:: Objektabhängigkeiten
 
       .. code:: javascript
@@ -738,12 +743,7 @@ Alles ist ein Objekt
          const p = new Person(…); 
          const s = new Student(…);
 
-      .. container:: scale-on-hover
-
-         .. container:: scaling-container
-
-            .. image:: images/prototype_chain/pseudoclassical_Inheritance.svg
-               :align: center
+      
 
 .. supplemental::
 
