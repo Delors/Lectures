@@ -404,7 +404,7 @@ Ein einfacher Echo-Dienst
     - Es können auch ganze Dateien über Sockets basierend  übertragen werden (:python:`<Socket>.sendfile(<File>)`).
 
     .. warning::
-      :class: incremental margin-top-2em
+      :class: incremental 
 
       Einige Methoden sind nur auf spezifischen Betriebssystemen (meist Unix) verfügbar.
 
