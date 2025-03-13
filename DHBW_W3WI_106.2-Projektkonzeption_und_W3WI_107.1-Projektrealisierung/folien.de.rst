@@ -536,14 +536,14 @@ Projektabschluss - 22. Apr 2025
   - ca. 15 Minuten *Live Demo* des Produkts
 - Diskussion des Standes dieser Iteration und ggf. Anpassung des Scopes.
 
-.. container:: accentuate margin-top-2em incremental
+.. container:: accentuate incremental margin-bottom-1em
 
   Die finale Einreichung aller Dokumente etc. erfolgt über Moodle am Ende des Semesters (d. h. am Sonntag nach der letzten Klausur.)
 
   :peripheral:`Videos sind per Downloadlink zur Verfügung zu stellen. Die Auflösung sollte dabei (1600-1920) x (1080-1200) auf keinen Fall überschreiten.`
 
 .. attention::
-  :class: incremental margin-top-2em
+  :class: incremental 
 
   Dies markiert das Endes der vierten Iteration!
 

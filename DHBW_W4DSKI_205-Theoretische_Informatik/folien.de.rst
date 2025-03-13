@@ -18,9 +18,6 @@
 .. role:: incremental   
 .. role:: eng
 .. role:: ger
-.. role:: red
-.. role:: green
-.. role:: the-blue
 .. role:: obsolete
 
 .. role:: raw-html(raw)
@@ -42,7 +39,7 @@ W4DSKI 205 - Theoretische Informatik
 Ausgewählte Inhalte gem. MHB
 ---------------------------------
 
-.. container:: scrollable
+.. container:: dd-margin-left-2em
 
     :Algorithmen und Komplexität: 
 
