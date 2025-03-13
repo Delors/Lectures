@@ -277,16 +277,16 @@ Lambdas
         .. example::
             :class: incremental
 
-                .. code:: java
-                    :number-lines:
-                    :class: copy-to-clipboard
+            .. code:: java
+                :number-lines:
+                :class: copy-to-clipboard
 
-                    @FunctionalInterface
-                    interface MyActionListener extends java.awt.event.ActionListener {
-                        /*final static*/ int MAGIC_NUMBER = 42;
-                    }
+                @FunctionalInterface
+                interface MyActionListener extends java.awt.event.ActionListener {
+                    /*final static*/ int MAGIC_NUMBER = 42;
+                }
 
-                    MyActionListener actionListener = (e) -> System.out.println(text + MyActionListener.MAGIC_NUMBER);
+                MyActionListener actionListener = (e) -> System.out.println(text + MyActionListener.MAGIC_NUMBER);
 
 
     .. card::
@@ -523,7 +523,7 @@ Erweiterungen der Collection API
 Übung
 --------
 
-.. exercise::
+.. exercise:: Implementierung einer Warteschlange mittels verketteter Liste
 
     Implementieren Sie eine Warteschlange (:java:`Queue<T>`) basierend auf einer verketteten Liste.  Die Klasse :java:`Queue<T>` soll folgendes Interface implementieren.
 
@@ -579,3 +579,4 @@ Erweiterungen der Collection API
 .. class: : new-section
     Streams
     ------------------------------------------------
+    https://homepages.thm.de/~hg51/Veranstaltungen/A_D/Folien/java-8-kurzeinfuehrung.pdf
