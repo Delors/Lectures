@@ -448,11 +448,11 @@ RPCs - zentrale Fragestellungen und Herausforderungen
 High-level View auf RPC
 ---------------------------
 
-.. container:: assessment
+.. container:: framed
 
   Für Programmierer sieht ein „entfernter“ Prozeduraufruf fast identisch aus wie ein „lokaler“ Prozeduraufruf und funktioniert auch so - auf diese Weise wird Transparenz erreicht.
 
-.. container:: incremental margin-top-2em
+.. container:: incremental
 
   Um Transparenz zu erreichen, führte RPC viele Konzepte von Middleware-Systemen ein:
 
@@ -473,7 +473,7 @@ RPC - Call Semantics
 Nehmen wir an, ein Client stellt eine RPC-Anfrage an einen Dienst eines bestimmten Servers.
 Nachdem die Zeitüberschreitung abgelaufen ist, beschließt der Client die Anfrage erneut zu senden. Das finale Verhalten hängt von der Semantik des Aufrufs (:eng:`Call Semantics`) ab:
 
-.. deck:: margin-top-2em
+.. deck:: 
   
   .. card:: 
 
@@ -481,7 +481,7 @@ Nachdem die Zeitüberschreitung abgelaufen ist, beschließt der Client die Anfra
 
     Die Zielmethode kann ausgeführt worden sein und die Antwortnachricht(en) ging(en) verloren oder die Methode wurde gar nicht erst ausgeführt da die Anfrage verloren ging.
 
-    .. container:: minor
+    .. container:: peripheral
 
       ``XMLHTTPRequests`` und ``fetch()`` in Webbrowsern verwenden diese Semantik.
 
@@ -514,7 +514,7 @@ Asynchrones RPC
 
 .. grid::  
 
-  .. cell:: fade-to-white width-30
+  .. cell:: fade-out width-30
 
     Die Verbindung zwischen Client und Server in einem traditionellen RPC. Der Client wird blockiert und wartet.
 
@@ -522,10 +522,11 @@ Asynchrones RPC
 
     .. image:: images/rpcs/synchronous_rpc.svg
 
+----
 
-.. grid:: margin-top-1em
+.. grid:: 
 
-  .. cell:: fade-to-white width-30
+  .. cell:: fade-out width-30
 
     Die Verbindung zwischen Client und Server bei einem asynchronen RPC. Der Client wird nicht blockiert.
 
@@ -579,15 +580,16 @@ Java Remote Method Invocation (RMI)
 Java RMI (Remote Method Invocation)
 -------------------------------------
 
-.. container:: large rounded-corners dhbw-light-gray-background padding-1em
+.. container:: framed
 
   Ermöglicht es einem Objekt, das in einer Java Virtual Machine (VM) läuft, Methoden eines Objekts aufzurufen, das in einer anderen Java VM läuft.
 
-.. container:: incremental
+.. class:: incremental-list
 
-  - Entfernte Objekte können ähnlich wie lokale Objekte behandelt werden.
-  - Übernimmt das Marshalling, den Transport und die Garbage Collection der entfernten Objekte.
-  - Teil von Java seit JDK 1.1
+- Entfernte Objekte können ähnlich wie lokale Objekte behandelt werden.
+- Übernimmt das Marshalling, den Transport und die Garbage Collection der entfernten Objekte.
+- Teil von Java seit JDK 1.1
+
 
 
 Java RMI vs. RPC
@@ -768,7 +770,7 @@ Die Probleme unternehmensübergreifende Punkt-zu-Punkt-Integration zu ermöglich
 
 
 
-.. class:: no-title center-child-elements
+.. class:: no-title center-content
 
 Web Services
 --------------
@@ -807,6 +809,7 @@ Web Services - wesentliche Bestandteile
    Konzeptionell hat sich somit im Vergleich zur RPC-Welt nicht viel geändert. 
 
 
+
 Web Services - Protokoll Stack  
 --------------------------------
 
@@ -829,7 +832,6 @@ SOAP
   - Ein Satz von Kodierungsregeln für Daten
   - Eine Beschreibung wie eine SOAP-Nachricht mit dem zugrundeliegenden Transportprotokoll (HTTP oder SMTP) transportiert werden sollte. Wie eine SOAP-Nachricht in eine HTTP-Anfrage oder in eine E-Mail (SMTP) eingebettet werden kann.
   - Eine Reihe von Regeln, die bei der Verarbeitung einer SOAP-Nachricht zu befolgen sind, und die an dieser Verarbeitung beteiligten Stellen; welche Teile der Nachrichten von wem gelesen werden sollten und welche Maßnahmen diese Stellen ergreifen sollten, wenn sie den Inhalt nicht verstehen.
-
 
 .. supplemental::
 
@@ -910,26 +912,28 @@ Beispiel eines SOAP-Aufrufs
   </SOAP-ENV:Envelope>
 
 
+
 Beispiel einer SOAP-Antwort
 ---------------------------
 
 .. code:: http
   :number-lines:  
 
-    HTTP/1.1 200 OK
-    Content-Type: text/xml; charset="utf-8"
-    Content-Length: nnnn
+  HTTP/1.1 200 OK
+  Content-Type: text/xml; charset="utf-8"
+  Content-Length: nnnn
 
-    <SOAP-ENV:Envelope
-      xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"
-      SOAP-ENV:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+  <SOAP-ENV:Envelope
+    xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"
+    SOAP-ENV:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
 
-    <SOAP-ENV:Body>
-      <m:GetLastTradePriceResponse xmlns:m="Some-URI">
-        <Price>34.5</Price>
-      </m:GetLastTradePriceResponse>
-    </SOAP-ENV:Body>
-    </SOAP-ENV:Envelope>
+  <SOAP-ENV:Body>
+    <m:GetLastTradePriceResponse xmlns:m="Some-URI">
+      <Price>34.5</Price>
+    </m:GetLastTradePriceResponse>
+  </SOAP-ENV:Body>
+  </SOAP-ENV:Envelope>
+
 
 
 Web Services - Standardisierung
