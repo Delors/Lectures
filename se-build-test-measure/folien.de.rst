@@ -296,7 +296,7 @@ Entwicklung eines Testplans - Beispiel
            - gleichseitig ist.
 
         .. hint::
-            :class: incremental margin-top-1em
+            :class: incremental 
 
             Ein gültiges Dreieck muss zwei Bedingungen erfüllen:
 
