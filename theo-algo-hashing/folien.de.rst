@@ -30,6 +30,8 @@
 .. role:: kbd
 .. role:: java(code)
    :language: java
+.. role:: python(code)
+    :language: python
 
 
 
@@ -72,7 +74,9 @@ Einführung
 Suchen in einer Liste
 --------------------------------------------------------
 
-.. container:: s-font-size-70 highlight-cell-on-hover
+.. container:: s-font-size-70 highlight-cell-on-hover 
+    
+    .. class:: incremental-table-rows
 
     +-----------------------------------------+----------+----------+---------+-------------------------+-----------+---------+---------------------------------+
     | Implementation                          | Garantie                      | Durchschnittlicher Fall                       | Operationen auf den Schlüsseln  |
@@ -240,6 +244,7 @@ Hashfunktionen
                 **Ganze Zahlen** 
 
                 .. code:: rust
+                    :number-lines:
 
                     hash(x: u32) : u32 { return x; } // u32 == 32-Bit unsigned integer
 
@@ -248,6 +253,7 @@ Hashfunktionen
                 **Gleitkommazahlen**
 
                 .. code:: rust
+                    :number-lines:
 
                     hash(x: f64) : u32 { // f64 == 64-Bit (IEEE) floating point number
                         bits : u64 = f64ToBits(x); // u64 = 64-Bit (signed) integer
@@ -315,7 +321,7 @@ Verwendung von Hashes in Python
 
           .. class:: incremental
 
-          - Um benutzerdefinierte Objekte in einer Hashmap zu speichern, müssen wir die Methoden ``__hash__`` und ``__eq__`` implementieren.
+          - Um benutzerdefinierte Objekte in einer Hashmap zu speichern, müssen wir die Methoden :python:`__hash__` und :python:`__eq__` implementieren.
 
           - Zu beachten:
         

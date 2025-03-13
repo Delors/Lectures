@@ -225,7 +225,7 @@ Pro Programmiersprache/Team:
 
 Pro Programmiersprache/Team:
 
-- [1 Stud. - 25min] Präsentation der grundlegenden Konzepte der funktionalen Programmierung anhand der Implementierung einer einfachen Datenstruktur sowie der Verarbeitung von Datenströmen. Themen die explizit diskutiert und präsentiert werden sollten sind Scoping, Closures, Tail Recursion sowie Eager und Lazy Evaluation.
+- [1 Stud. - 25min] Präsentation der grundlegenden Konzepte der funktionalen Programmierung anhand der Implementierung einer einfachen Datenstruktur sowie der Verarbeitung von Datenströmen. Themen, die explizit diskutiert und präsentiert werden sollten, sind Scoping, Closures, Tail Recursion sowie Eager und Lazy Evaluation.
 
 
 
@@ -234,7 +234,7 @@ Pro Programmiersprache/Team:
 
 Pro Programmiersprache/Team:
 
-- [1 Stud. - 25min] Präsentation der grundlegenden Konzepte der nebenläufigen Programmierung anhand der Parallelisierung von gängigen Higher-Order-Funktionen.
+- [1 Stud. - 25min] Präsentation der grundlegenden Konzepte der nebenläufigen Programmierung anhand der Parallelisierung von gängigen Funktionen höherer Ordnung.
 
 
 
@@ -436,13 +436,114 @@ Entwickeln Sie einen einfachen interaktiven Taschenrechner, der beliebig große 
       (Stichwort: Zero-Cost Abstractions.) 
 
     - *Fehlerbehandlung*: Fehler sollten (sprach-)angemessen behandelt werden.
-        
 
 
 
 3. Aufgabe: Funktionale Programmierung und verwandte Konzepte
 ---------------------------------------------------------------
 
+.. story:: dd-margin-left-6em
+
+  .. compound:: 
+
+    Setzten Sie die Entwicklung der drei einfachen Datenstrukturen (Liste, Stack und Queue) fort mit dem Ziel, die grundlegenden Konzepte der funktionalen Programmierung zu demonstrieren. Diesbezüglich gilt, dass die Originaldatenstruktur unverändert bleibt und die Methoden ggf. neue Datenstrukturen anlegen.
+
+    Setzen Sie dabei für alle drei Datenstrukturen folgende Methoden um.
+
+  .. class:: incremental-list
+
+    - :java:`forEach(f)`: :java:`f` wird auf alle Elemente angewendet.
+    - :java:`filter(f)`: eine neue Datenstruktur wird angelegt, die alle Elemente enthält für die :java:`f` den Wert :java:`true` zurückgibt.
+    
+      Der Nutzer soll optional eine Zieldatenstruktur angeben können. 
+
+    - :java:`map(f)`: wendet die Funktion :java:`f` auf alle Elemente der Datenstruktur an und gibt eine neue Datenstruktur zurück. Dabei ist zu beachten, dass die ursprüngliche Datenstruktur unverändert bleibt und :java:`f` auch den Typ der Elemente ändern kann.
+
+      Der Nutzer soll optional eine Zieldatenstruktur angeben können. 
+
+    - :java:`reduce(f)`: nutzt die binäre Funktion :java:`f`, um die Elemente der Datenstruktur auf einen einzigen Wert zu reduzieren. 
+
+      Ein Beispiel für die Verwendung von :java:`reduce` wäre eine Liste von Zahlen und die Funktion :java:`f` ist die Addition, um die Summe zu berechnen.
+      
+      - Die Reihenfolge der Anwendung von :java:`f` ist nicht spezifiziert. 
+      - Der Zieldatentyp kann unterschiedlich vom Elementtyp sein. 
+      - Ist die Datenstruktur leer, dann soll eine aussagekräftige Ausnahme geworfen werden.
+    - :java:`reduceLeft(f)`: nutzt die binäre Funktion :java:`f`, um die Elemente der Datenstruktur auf einen einzigen Wert zu reduzieren. 
+    
+      Ein Beispiel für die Verwendung von :java:`reduceLeft` wäre eine Liste von Zahlen und eine Funktion :java:`f` die einen String erzeugt, der die natürliche Reihenfolge der Element wiederspiegeln soll.
+
+      - Die Reihenfolge der Anwendung von :java:`f` erfolgt gemäß der natürlichen Reihenfolge der Datenstruktur. 
+      - Der Zieldatentyp kann unterschiedlich vom Elementtyp sein. 
+      - Ist die Datenstruktur leer, dann soll eine aussagekräftige Ausnahme geworfen werden.
+
+  
+  .. class:: incremental
+
+    .. rubric:: Anforderungen an die Datenstrukturen
+
+  .. class:: incremental-list
+
+    - Alle Operationen sollen typsicher sein.
+    - Das Ziel ist es die Methoden mit möglichst wenig Code zu implementieren; d. h. versuchen Sie — soweit es Ihnen und in der Programmiersprache möglich ist — die Methoden nur einmal zu implementieren und dann für alle Datenstrukturen zu verwenden. Sollte dies signifikante Kosten (zur Laufzeit/beim Codeverständnis) verursachen, dann implementieren Sie die Methoden für jede Datenstruktur einzeln und dokumentieren/präsentieren Sie die Gründe für diese Entscheidung.
+    - Soweit erforderlich erklären Sie wie folgenden Konzepte umgesetzt sind:
+
+      a. Closures (Funktionen, die auf Variablen aus ihrer Umgebung zugreifen und deren Werte speichert)
+      b. Tail Recursion
+
+    - Für die Funktionen :java:`map` und :java:`filter` soll es sowohl *lazy* als auch *eager* Versionen der Operationen geben und auch Verkettung (:java:`.map(...).filter(...).map(...)`) ermöglicht werden. Insbesondere für die *lazy* Varianten gilt, dass diese erst dann zur Evaluation der Operationen führen sollen, wenn das Ergebnis benötigt wird. (Zum Beispiel aufgrund eines Aufrufs von :java:`reduce`. Sie können ggf. auch gerne eine Methode (:java:`to`) hinzufügen, die die Datenstruktur explizit reifiziert.)
+
+
+  .. compound:: 
+    :class: incremental
+
+    .. rubric:: Hinweise zur Präsentation
+
+    - Starten Sie mit einer Demonstration der Funktionalität der Methoden anhand von Beispielen.
+    - Präsentieren Sie die Implementierung der Methoden und die Tests danach.
+    - Diskutieren Sie die Vor- und Nachteile der Implementierung.
+
+
 
 4. Aufgabe: Nebenläufige Programmierung
 -----------------------------------------
+
+.. story:: dd-margin-left-6em
+
+  .. compound:: 
+    
+    Setzen Sie die Entwicklung der drei einfachen Datenstrukturen (Liste, Stack und Queue) fort mit dem Ziel, die grundlegenden Konzepte der nebenläufigen Programmierung zu demonstrieren. 
+
+    Setzen Sie dabei für alle drei Datenstrukturen folgende Methoden um:
+
+    - :java:`parallelMap(f)`: wendet die seiteneffektfreie Funktion :java:`f` auf alle Elemente der Datenstruktur an und gibt eine neue Datenstruktur zurück. Dabei ist zu beachten, dass die ursprüngliche Datenstruktur unverändert bleibt und :java:`f` auch den Typ der Elemente ändern kann.
+
+      - Die Reihenfolge der Anwendung von :java:`f` ist nicht spezifiziert. 
+      - Der Zieldatentyp kann unterschiedlich vom Elementtyp sein. 
+
+    - :java:`parallelReduce(f)`: nutzt die binäre, seiteneffektfreie Funktion :java:`f`, um die Elemente der Datenstruktur auf einen einzigen Wert zu reduzieren. 
+
+      Ein Beispiel für die Verwendung von :java:`parallelReduce` wäre eine Liste von Zahlen und die Funktion :java:`f` ist die Addition, um die Summe zu berechnen.
+      
+      - Die Reihenfolge der Anwendung von :java:`f` ist nicht spezifiziert. 
+      - Der Zieldatentyp kann unterschiedlich vom Elementtyp sein. 
+      - Ist die Datenstruktur leer, dann soll eine aussagekräftige Ausnahme geworfen werden.
+
+  .. compound:: 
+    :class: incremental
+
+    .. rubric:: Anforderungen an die Datenstrukturen
+
+    - Alle Operationen sollen typsicher sein.
+    - Das Ziel ist es die Methoden mit möglichst wenig Code zu implementieren; d. h. versuchen Sie — soweit es Ihnen und in der Programmiersprache möglich ist — die Methoden nur einmal zu implementieren und dann für alle Datenstrukturen zu verwenden. Sollte dies signifikante Kosten (zur Laufzeit/beim Codeverständnis) verursachen, dann implementieren Sie die Methoden für jede Datenstruktur einzeln und dokumentieren/präsentieren Sie die Gründe für diese Entscheidung.
+
+
+  .. compound:: 
+    :class: incremental
+
+    .. rubric:: Hinweise zur Präsentation
+
+    - Führen Sie erst kurz in die Konzepte der nebenläufigen Programmierung in der entsprechenden Sprache ein. D. h. stellen Sie die Konzepte der nebenläufigen Programmierung in der Sprache vor. Auf eine Einführung in die theoretischen Konzepte kann verzichtet werden; es geht um die konkrete Umsetzung in der Sprache.
+    - Starten Sie mit einer Demonstration der Funktionalität der Methoden anhand von Beispielen.
+    - Präsentieren Sie die Implementierung der Methoden und die Tests danach. Stellen Sie sicher, dass erkenntlich wird, wie Sie auf die Korrektheit der Implementierung - insbesondere in Hinblick auf die Parallelisierung - getestet haben.
+    - Diskutieren Sie die Vor- und Nachteile der Implementierung.
+

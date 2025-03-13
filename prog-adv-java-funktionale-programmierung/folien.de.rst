@@ -286,7 +286,8 @@ Lambdas
                     /*final static*/ int MAGIC_NUMBER = 42;
                 }
 
-                MyActionListener actionListener = (e) -> System.out.println(text + MyActionListener.MAGIC_NUMBER);
+                MyActionListener actionListener = 
+                        (e) -> System.out.println(text + MyActionListener.MAGIC_NUMBER);
 
 
     .. card::
@@ -347,14 +348,17 @@ Lambdas
                         for (T x : l) action.accept(x);
                 }   }
 
-                WorkerOnList<Integer> worker = new WorkerOnList<>( (i) -> System.out.println(i*10) );
+                WorkerOnList<Integer> worker = 
+                        new WorkerOnList<>( (i) -> System.out.println(i*10) );
                 worker.accept(Arrays.asList(1,2,3,4));
 
-            *Ausgabe:* :console:`10 20 30 40`
+            .. container:: incremental-list 
+            
+                *Ausgabe:* :console:`10 20 30 40`
 
 
 
-Lambdas -Method References
+Lambdas - Method References
 ------------------------------------------------
 
 .. deck::
@@ -389,8 +393,9 @@ Lambdas -Method References
                         List<Integer> l = Arrays.asList(1, 2, 3, 4, 5, 6, 7, 8, 9);
                         System.out.println(filterList(l, ListMethods::isEven));
 
+                    .. container:: incremental
 
-                    *Ausgabe:* :console:`[2, 4, 6, 8]`
+                        *Ausgabe:* :console:`[2, 4, 6, 8]`
 
             .. card::
 
@@ -437,7 +442,10 @@ Lambdas -Method References
                         Function<Integer,Tester> create = Tester::new;
                         create.apply(5).isMagic(5);
 
-                    *Ausgabe:* :console:`true`
+
+                    .. container:: incremental
+
+                        *Ausgabe:* :console:`true`
 
 
 
@@ -467,7 +475,9 @@ Erweiterungen der Collection API
                 l.replaceAll(x -> x * 10);
                 l.forEach(System.out::println);
 
-            *Ausgabe:* :console:`10 20 30 40 50 60 70 80 90`
+            .. container:: incremental
+            
+                *Ausgabe:* :console:`10 20 30 40 50 60 70 80 90`
 
 
 
@@ -476,7 +486,7 @@ Erweiterungen der Collection API
 Übung
 --------
 
-.. exercise::
+.. exercise:: Erste Implementierung von Funktionen höherer Ordnung
 
     Schreiben Sie eine Klasse :java:`Tuple2<T>`; d. h. eine Variante von :java:`Pair` bei der beide Werte vom gleichen Typ :java:`T` sein müssen. Die Klasse soll Methoden haben, um die beiden Werte zu setzen und zu lesen und weiterhin um folgende Methoden ergänzt werden:
 
@@ -487,10 +497,8 @@ Erweiterungen der Collection API
     
     .. hint:: 
 
-        Sorgen Sie ggf. vorher dafür, dass Sie eine angemessene Projektstruktur haben.
-
-        Passen Sie ggf. die ``pom.xml`` von ihren anderen Projekten an.
-
+        - Sorgen Sie ggf. vorher dafür, dass Sie eine angemessene Projektstruktur haben.
+        - Passen Sie ggf. die ``pom.xml`` von ihren anderen Projekten an.
 
     .. solution::
         :pwd: Pair%Funktional
@@ -525,7 +533,7 @@ Erweiterungen der Collection API
 
 .. exercise:: Implementierung einer Warteschlange mittels verketteter Liste
 
-    Implementieren Sie eine Warteschlange (:java:`Queue<T>`) basierend auf einer verketteten Liste.  Die Klasse :java:`Queue<T>` soll folgendes Interface implementieren.
+    Implementieren Sie eine Warteschlange (:java:`Queue<T>`) basierend auf einer verketteten Liste. Die Klasse :java:`Queue<T>` soll folgendes Interface implementieren.
 
     .. code:: java
         :number-lines:
@@ -539,13 +547,18 @@ Erweiterungen der Collection API
 
             void replaceAll(UnaryOperator<T> operator);
             void forEach(Consumer<T> operator);
-            /** Erzeugt eine neue Queue<X> bei der die Elemente der neuen Queue das Ergebnis der Anwendung der Funktion mapper sind. */
             <X> Queue<X> map(Function<T, X> mapper);
-
-            /** Erzeugt eine leere Queue. */
             static <T> Queue<T> empty() { TODO }
         }
         
+    .. supplemental::
+
+        **Erklärungen**
+
+        :`map`:java:: Erzeugt eine neue :java:`Queue<X>` bei der die Elemente der neuen Queue 
+                das Ergebnis der Anwendung der Funktion mapper sind. 
+        :`empty`:java:: Erzeugt eine leere Queue. 
+
     Schreiben Sie Testfälle, um die Implementierung zu überprüfen. Zielen Sie auf mind. 100% *Statementcoverage* ab.
 
     

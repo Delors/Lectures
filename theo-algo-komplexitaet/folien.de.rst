@@ -1936,6 +1936,8 @@ Beobachtung bzgl. rekursiv teilender Algorithmen
 
 Teilende Verfahren, *bzw. Divide-and-Conquer-Algorithmen*, sind typischerweise sehr effizient.
 
+.. example::
+
     Wird beispielsweise das Problem immer halbiert, ist also :math:`a_{2n} = a_n + 1` und ist :math:`a_1 = 1`, dann würde für die Folgenglieder gelten :math:`a_1 = 1, a_2 = 2, a_4 = 3, a_8 = 4, a_{16} = 5, ...`. 
     
     Verallgemeinert: :math:`a_n = \log_2(n) +1`. 
@@ -1950,9 +1952,9 @@ Teilende Verfahren, *bzw. Divide-and-Conquer-Algorithmen*, sind typischerweise s
 
         :math:`a_{2n} = a_n + 1 = \log_2(n) + 1 + 1 = \log_2(n) + \log_2(2) + 1 = \log_2(2n) + 1`
 
-.. container:: incremental margin-top-1em box-shadow rounded-corners padding-0-5em
+    .. container:: incremental margin-top-0.5em
 
-  Ein Beispiel ist die binäre Suche nach einem Namen im Telefonbuch oder nach einer zu erratenden Zahl.
+        Ein konkretes Beispiel ist die binäre Suche nach einem Namen im Telefonbuch oder nach einer zu erratenden Zahl.
 
 .. supplemental::
 
@@ -2007,7 +2009,7 @@ Rekurrenzgleichung für rekursiv teilende Algorithmen
 Lösen von Rekurrenzgleichungen mit dem Master-Theorem
 --------------------------------------------------------
 
-.. container:: scrollable
+.. story::
 
     Das Master-Theorem ist ein Werkzeug zur Analyse der Zeitkomplexität von rekursiven Algorithmen, die mit Hilfe von Rekurrenzgleichungen der Form :math:`T(n) = a \cdot T\left({n \over b}\right) + f(n)` beschrieben werden können. 
     

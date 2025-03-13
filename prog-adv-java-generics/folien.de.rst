@@ -430,7 +430,7 @@ Wrapper-Klassen und Auto(un)boxing
             Sie werden nicht von Object abgeleitet und besitzen keine Methoden.
 
     .. observation::
-        :class: incremental margin-top-1-5em
+        :class: incremental 
 
         Wie wir gesehen haben ist es möglich primitive Datentypen in Datenstrukturen wie Listen zu speichern obwohl diese eigentlich nur Objekte speichern können.
         
@@ -451,7 +451,7 @@ Wrapper-Klassen und Auto(un)boxing
                 long -> java.lang.Long
 
         .. warning::
-            :class: incremental margin-top-1em
+            :class: incremental margin-top-0-5em
 
             Dieses so genannten *Autoboxing* hat jedoch ggf. erhebliche Laufzeitkosten und sollte daher vermieden werden.
     
@@ -691,33 +691,30 @@ Iterieren über Collections bzw. Laufen über die Elemente eine Collection
 
       - :java:`void remove()` – entfernt das zuletzt gelieferte Element; häufig nicht unterstützt. In diesem Fall wird eine :java:`UnsupportedOperationException` geworfen.
 
-    .. compound:: 
-        :class: incremental margin-top-1em
+    .. example::
+        :class: incremental
 
-        .. example::
-            :class: dhbw
+        .. code:: java
+            :number-lines:
 
-            .. code:: java
-                :number-lines:
+            final List<Integer> l = Arrays.asList(1, 2, 3); // Liste anlegen
+            int r = 0;
+            final var it = l.iterator(); // Iterator holen
+            while(it.hasNext()) // weiter, solange Elemente da
+                r += it.next(); // Element zur Summe addieren
 
-                final List<Integer> l = Arrays.asList(1, 2, 3); // Liste anlegen
-                int r = 0;
-                final var it = l.iterator(); // Iterator holen
-                while(it.hasNext()) // weiter, solange Elemente da
-                    r += it.next(); // Element zur Summe addieren
+        Sollte aufgrund von Domänenwissen bekannt sein, dass die Liste niemals leer ist, kann die Schleife auch so geschrieben werden:
 
-            Sollte aufgrund von Domänenwissen bekannt sein, dass die Liste niemals leer ist, kann die Schleife auch so geschrieben werden:
+        .. code:: java
+            :number-lines:
 
-            .. code:: java
-                :number-lines:
-
-                do { 
-                    r += it.next(); // Element zur Summe addieren
-                } while(it.hasNext()); // weiter, solange Elemente da
+            do { 
+                r += it.next(); // Element zur Summe addieren
+            } while(it.hasNext()); // weiter, solange Elemente da
 
 
     .. compound:: 
-        :class: incremental margin-top-1em
+        :class: incremental 
 
         Weiterhin gibt es eine besondere :java:`for`\ -Schleife (:eng:`foreach-loop`), die die Iteration über eine :java:`Collection`, die das Interface :java:`Iterable` implementiert vereinfacht:
 
@@ -748,6 +745,7 @@ Die Implementation von *Iterator*\ s ist ein Beispiel für die Umsetzung des *De
     Es ist hier festzustellen, dass in Java die Methode :java:`hasNext()` an die Stelle der Methode :java:`isDone()` rückt. die Methode :java:`next()` das Fortschalten des Iterators und die Rückgabe des nächsten Elements kombiniert. In anderen Sprachen bzw. im Textbuch sind diese beiden Operationen getrennt. Eine Design Pattern stellt auch immer nur eine Blaupause dar, die in der konkreten Umsetzung angepasst werden kann bzw. soll.
 
 
+
 .. class:: exercises 
 
 Übung
@@ -760,7 +758,6 @@ Die Implementation von *Iterator*\ s ist ein Beispiel für die Umsetzung des *De
     Dazu ist es erforderlich, dass Sie eine Klasse :java:`PairIterator` implementieren, die das Interface :java:`java.util.Iterator` implementiert. Diese Klasse führt dann die eigentliche Iteration durch. Die Erzeugung der Instanz von :java:`PairIterator` erfolgt in der Methode :java:`iterator()`.
 
     .. hint::
-        :class: dhbw margin-top-1-5em
 
         Die Klasse :java:`PairIterator` benötigt einen Konstruktur, der eine Referenz auf das Pair bekommt, über das iteriert werden soll.
 
@@ -795,17 +792,17 @@ Typkompatibilität
     String s = ls.get(0); 
     
 .. question::
-    :class: dhbw margin-top-1em incremental
+    :class: incremental
 
     Wo können hier Probleme auftreten?
 
 .. answer::
-    :class: dhbw incremental margin-top-1em
+    :class: incremental
 
     Die Zuweisung in Zeile 2 ist nicht erlaubt, da :java:`List<String>` und :java:`List<Object>` nicht kompatibel sind. Obwohl String ein Subtype von Object ist, ist :java:`List<String>` kein Subtyp von :java:`List<Object>`. Wäre dies erlaubt, dann könnte man in Zeile 3 ein Objekt vom Typ :java:`Object` einer Liste von Strings hinzufügen! 
 
 .. summary::
-    :class: dhbw incremental margin-top-1em
+    :class: incremental
 
     Generics sind in Java *invariant*.
 
@@ -1043,8 +1040,8 @@ Statische Typisierung
 
 - Statische Typsysteme sind (noch immer) Gegenstand der Forschung
 - Java-ähnliche Typsysteme sind begrenzt, aber im Allgemeinen können Typsysteme sehr mächtig und ausdrucksstark sein - aber auch sehr kompliziert
-- Manche Programmierer sehen statische Typsysteme als eine Begrenzung ihrer Freiheit ("ich weiß, was ich tue")
-- Andere Programmierer denken, dass statische Typsysteme nicht nur viele Fehler erkennen, sondern auch eine gute Struktur im Code erzwingen ("erst denken, dann schreiben")
+- Manche Programmierer sehen statische Typsysteme als eine Begrenzung ihrer Freiheit (*„ich weiß, was ich tue“*)
+- Andere Programmierer denken, dass statische Typsysteme nicht nur viele Fehler erkennen, sondern auch eine gute Struktur im Code erzwingen (*„erst denken, dann schreiben“*)
 - In der Praxis zeigt sich, dass fast alle großen Projekte auf statische Typsysteme setzen.
 
 

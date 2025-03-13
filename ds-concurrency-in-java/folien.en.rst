@@ -98,7 +98,7 @@ Processes vs. threads
 
 
 
-Communication and synchronisation with the help of *monitors* 
+Communication and synchronization with the help of *monitors* 
 -------------------------------------------------------------------
 
 A *monitor* is an object in which the methods are executed in mutual exclusion (*mutual exclusion*).
@@ -108,7 +108,7 @@ A *monitor* is an object in which the methods are executed in mutual exclusion (
   :align: right
 
   
-.. rubric:: Condition synchronisation
+.. rubric:: Condition synchronization
 
 - expresses a condition on the order in which operations are executed.
 - For example, data can only be removed from a buffer once data has been entered into the buffer.
@@ -120,7 +120,7 @@ A *monitor* is an object in which the methods are executed in mutual exclusion (
       
      In Java, mutual exclusion only takes place between methods that have been explicitly declared as :java:`synchronised`.  
 
-  *Monitors* are just one model (alternatives: *Semaphores*, *Message Passing*) that enables the communication and synchronisation of threads. It is the standard model in Java and is directly supported by the Java Virtual Machine (JVM).
+  *Monitors* are just one model (alternatives: *Semaphores*, *Message Passing*) that enables the communication and synchronization of threads. It is the standard model in Java and is directly supported by the Java Virtual Machine (JVM).
 
 
 
@@ -336,7 +336,7 @@ Conditional synchronization
 
 For the purpose of conditional synchronisation, the methods :java:`wait`, :java:`notify` and :java:`notifyAll` can be used in Java.  These methods allow you to wait for certain conditions and notify other threads when the condition has changed.
 
-.. deck:: incremental margin-top-1em
+.. deck:: incremental 
 
   .. card::
 
@@ -448,7 +448,7 @@ Example: Synchronisation with *condition variables*
     .. csv-table::
       :header: "","Operation" , "Change of State of the Buffer", "Waiting for the lock", "Waiting for the condition" 
       :widths: 3, 25, 50, 33, 39
-      :class: s-font-size-90
+      :class: s-font-size-90 incremental-table-rows
 
       1, "**g1:bb.get()** :raw-html:`<br>`
       g2:bb.get(), p1:bb.put(), p2:bb.put()", empty, "{g2,p1,p2}", {g1}
@@ -607,7 +607,7 @@ Always lock resources in the same order
   If two (or more) threads access the same resources in a different order, a deadlock can occur.
 
 .. important::
-  :class: incremental width-100 margin-top-2em
+  :class: incremental width-100 
 
   **Resources must always be locked in the same order** to avoid deadlocks.
 
@@ -642,9 +642,9 @@ For a class to be thread-safe, it must behave correctly in a single-threaded env
     - Independent of *scheduling* or the interleaving of the execution of these threads by the runtime environment, 
     - Without additional synchronisation on the part of the calling code.
 
-.. container:: framed incremental
+    .. container:: framed incremental
 
-    As a result, operations on a thread-safe object appear to all threads as if the operations were performed in a fixed, globally consistent order.
+        As a result, operations on a thread-safe object appear to all threads as if the operations were performed in a fixed, globally consistent order.
 
 
 
