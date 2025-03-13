@@ -303,7 +303,7 @@ Beispiel Build-Konfiguration für ein Java Projekt
 
     .. container:: incremental
 
-        **Allg. Metainformationen**
+        **Allg. projektspezifische Metainformationen** *(Achtung: Anpassung erforderlich!)*
 
         .. include:: code/hello/pom.xml
             :code: xml
@@ -366,6 +366,11 @@ Beispiel Build-Konfiguration für ein Java Projekt
         :start-after: <!--Packaging-->
         :end-before: <!-- Additional configuration
 
+    .. include:: code/hello/pom.xml
+        :code: xml
+        :class: copy-to-clipboard incremental
+        :number-lines: 77
+        :start-after: </reporting>
 
 
 Projekt bauen und ausführen
