@@ -187,7 +187,7 @@ Erstellen eines Domänenmodells
 
 
 .. important::
-    :class: margin-top-1em incremental
+    :class: incremental
 
     Verwenden Sie das Vokabular der Domäne; z. B. sollte ein Modell für eine Bibliothek Namen wie „Ausleiher“ anstelle von „Kunde“ verwenden.
 
