@@ -11,6 +11,7 @@ start_python_http_server.sh
 # Content we never share publicly
 exercise
 TODO
+TODO.txt
 Temp*
 
 # Generated/downloaded files and folders
