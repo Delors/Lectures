@@ -121,7 +121,6 @@ Bewertungskriterien
 .. supplemental:: 
 
    .. tip:: Präsentation von Code
-      :class: dhbw
 
       Sollten Sie Code demonstrieren, der UIs baut, dann ist es häufig sinnvoll, wenn Sie erst kurz die Ziel UI zeigen und dann den Code, der diese UI erzeugt. Das Publikum kann sich dann besser vorstellen, was der Code macht. 
       
@@ -132,18 +131,18 @@ Bewertungskriterien
 Häufige Fehler
 --------------
 
-.. class:: incremental-list columns dhbw
+.. class:: incremental-list columns
 
-- Text zu klein
+- **Text zu klein**
    
   Bitte bedenken Sie, dass erst ab einer Textgröße von 20 Punkten der Text für die meisten Zuhörer gut lesbar wird.
 
   Insbesondere bei Codebeispielen sieht man häufig Code mit deutlich weniger als 20 Punkten.
-- Dunkle Vordergrundfarben auf dunklem Hintergrund
+- **Dunkle Vordergrundfarben auf dunklem Hintergrund**
 
   Auf Monitoren mag dies gut aussehen; auf Beamern ist dies für die meisten Zuhörer (sehr) schwer zu lesen.
 
-- Kein Kontakt zum Publikum
+- **Kein Kontakt zum Publikum**
 
   Es ist wichtig, dass Sie Kontakt zum Publikum aufbauen.
 
