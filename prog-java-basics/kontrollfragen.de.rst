@@ -103,12 +103,12 @@ Kontrollfragen
 
       .. exercise:: Welche der folgenden Bezeichner sollte man verwenden?
 
-         9. :java:`gewinn`   
-         10. :java:`Gewinn`
-         11. :java:`_private_i`
-         12. :java:`i`
-         13. :java:`$i`
-         14. :java:`_i`
+         1. :java:`gewinn`   
+         2. :java:`Gewinn`
+         3. :java:`_private_i`
+         4. :java:`i`
+         5. :java:`$i`
+         6. :java:`_i`
 
          .. solution::
             :pwd: BezeichNer_Teil2
@@ -126,12 +126,12 @@ Kontrollfragen
 
       .. exercise:: Welchen Namen würden Sie für eine Konstante verwenden?
 
-         15. :java:`ISOLAENDERCODE`
-         16. :java:`ISO_LÄNDERCODE`
-         17. :java:`ISO_LAENDERCODE`
-         18. :java:`ISO_Ländercode`
-         19. :java:`ISO_Laendercode`
-         20. :java:`iso_Laendercode`
+         1. :java:`ISOLAENDERCODE`
+         2. :java:`ISO_LÄNDERCODE`
+         3. :java:`ISO_LAENDERCODE`
+         4. :java:`ISO_Ländercode`
+         5. :java:`ISO_Laendercode`
+         6. :java:`iso_Laendercode`
 
          .. solution::
             :pwd: BezeichNer_Teil2
@@ -144,12 +144,12 @@ Kontrollfragen
 
       .. exercise:: Welchen Typ hat die Variable x in folgendem Code?
 
-         21. :java:`var x = 1;`
-         22. :java:`var x = 1.0;`
-         23. :java:`var x = '1';`
-         24. :java:`var x = 1f;`
-         25. :java:`var x = 2F;`
-         26. :java:`var x = "x";`
+         1. :java:`var x = 1;`
+         2. :java:`var x = 1.0;`
+         3. :java:`var x = '1';`
+         4. :java:`var x = 1f;`
+         5. :java:`var x = 2F;`
+         6. :java:`var x = "x";`
 
          .. solution::
             :pwd: MeinTypDeinTyp
@@ -167,12 +167,12 @@ Kontrollfragen
 
       .. exercise:: Wie viele Bits hat ein int?
 
-         27. 8
-         28. 16
-         29. 24
-         30. 32
-         31. 40
-         32. 48
+         1. 8
+         2. 16
+         3. 24
+         4. 32
+         5. 40
+         6. 48
 
          .. solution::
             :pwd: 3_2_Bits
@@ -185,11 +185,11 @@ Kontrollfragen
 
       .. exercise:: Wie ist der Wertebereich von byte?
 
-         33. 0 bis 255
-         34. -128 bis 128
-         35. -128 bis 127
-         36. -127 bis 127
-         37. -127 bis 128 
+         1. 0 bis 255
+         2. -128 bis 128
+         3. -128 bis 127
+         4. -127 bis 127
+         5. -127 bis 128 
                   
          .. solution::
             :pwd: Es gibt nur eine Antwort
@@ -202,9 +202,9 @@ Kontrollfragen
 
       .. exercise:: Was passiert bei den folgenden Typumwandlungen?
 
-         38. :java:`int i = 42; byte b = (byte) i;`
-         39. :java:`int i = 255; byte b = (byte) i;`
-         40. :java:`int i = 256; byte b = (byte) i;`
+         1. :java:`int i = 42; byte b = (byte) i;`
+         2. :java:`int i = 255; byte b = (byte) i;`
+         3. :java:`int i = 256; byte b = (byte) i;`
 
          .. solution::
             :pwd: 3_2_Bits
