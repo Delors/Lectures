@@ -149,7 +149,7 @@ Uhrensynchronisation nach Christian
 Network Time Protocol (NTP, RFC 5905)
 --------------------------------------------------------------------------------
 
-.. class:: incremental list-with-explanations
+.. class:: incremental-list list-with-explanations
 
 - Synchronisierung auf UTC
   
@@ -173,9 +173,8 @@ Network Time Protocol (NTP, RFC 5905)
   Aktualisierung der Zeit eines NTP Servers erfolgt aber nur wenn der anfragende Server einen höheren *Stratum*\ wert hat (d. h. potentiell unpräziser ist) als der angefragte Server. Der anfragende Server erhält danach den Stratumwert des abgefragten Servers :math:`+1`. 
 
 
-.. class:: smaller-slide-title
 
-Zeit: Berechung der Round-Trip-Time und der Zeitdifferenz/des Gangunterschieds
+Zeit: Berechnung der Round-Trip-Time und der Zeitdifferenz/des Gangunterschieds
 --------------------------------------------------------------------------------
 
 .. csv-table::
@@ -195,8 +194,8 @@ Zeit: Berechung der Round-Trip-Time und der Zeitdifferenz/des Gangunterschieds
   Gangunterschied: x = \frac{(T_2 - T_1) - (T_4 - T_3)}{2}
 
 
-.. admonition:: Achtung
-  :class: warning margin-top-1em incremental
+.. attention::
+  :class: incremental
 
   Eine exakte Uhrensynchronisation ist in einem asynchronem System nicht realisierbar! 
 
@@ -244,7 +243,8 @@ Beispiel zur Berechnung des Gangunterschieds
   :math:`x = \frac{(100-110) - (122-102)}{2} = \frac{(-10 - 20)}{2} = -15` ms.
 
 
-.. class:: center-child-elements 
+
+.. class:: center-content
 
 Logische Zeit
 --------------------------------------------------------------------------------
@@ -260,6 +260,7 @@ Logische Zeit
 .. supplemental::
 
   Es ist wichtig zu wissen, was vorher und was nachher passiert ist, aber es ist nicht wichtig, dass wir wissen wann genau (Uhrzeit) etwas passiert ist.
+
 
 
 Lamport-Uhren (*logical clocks*)
@@ -364,7 +365,7 @@ Verteilte Transaktionen
 
 .. supplemental::
 
-  .. rubric:: Wiederholung Transaktionen
+  .. rubric:: Wiederholung: Transaktionen
 
   Eine Transaktion stellt die zuverlässige Bearbeitung persistenter Daten sicher – auch in Fehlersituationen. Zentrales Merkmal ist die Garantie der ACID-Eigenschaften (Atomicity, Consistency, Isolation, Durability).
   
@@ -383,7 +384,6 @@ Verteilte Transaktionen
   3. Maskierung von Fehlern: Entwicklung von Mechanismen, die sicherstellen, dass ein System trotz eines Fehlers korrekt funktioniert (und möglicherweise einen Fehler korrigiert)
 
 
-.. class:: smaller
 
 Two-Phase Commit Protocol - 2PC
 --------------------------------------------------------------------------------
@@ -394,7 +394,7 @@ Teilnehmer sind (1) die Partizipanten (:math:`P_i`), welche die verteilten Daten
 
 1. **Abstimmungsphase**\ :
 
-   .. class:: incremental
+   .. class:: incremental-list
 
    - K sendet eine PREPARE-Nachricht an alle :math:`P_i`.
    - Jeder :math:`P_i` prüft für sich, ob die Transaktion lokal korrekt abgeschlossen werden kann.
@@ -402,7 +402,7 @@ Teilnehmer sind (1) die Partizipanten (:math:`P_i`), welche die verteilten Daten
   
 2. **Entscheidungsphase**\ :
 
-   .. class:: incremental
+   .. class:: incremental-list
 
    - Falls alle :math:`P_i` mit READY geantwortet haben, sendet :math:`K` COMMIT an alle :math:`P_i`; anderenfalls sendet :math:`K` eine ABORT-Nachricht an alle :math:`P_i`
    - Falls die Entscheidung COMMIT war, machen alle :math:`P_i` die Transaktion *stabil*
