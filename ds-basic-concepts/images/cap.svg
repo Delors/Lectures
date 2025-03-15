@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xl="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" version="1.1" viewBox="91 109 203 211" width="203" height="211">
+  <defs>
+    <font-face font-family="Noto Sans Display" font-size="14" panose-1="2 11 5 2 4 5 4 2 2 4" units-per-em="1000" underline-position="-100" underline-thickness="50" slope="0" x-height="536" cap-height="714" ascent="1069.0002" descent="-292.99927" font-weight="400">
+      <font-face-src>
+        <font-face-name name="NotoSansDisplay-Regular"/>
+      </font-face-src>
+    </font-face>
+  </defs>
+  <metadata> Produced by OmniGraffle 8.0\n2025-03-14 19:43:55 +0000</metadata>
+  <g id="cap" stroke-dasharray="none" fill-opacity="1" fill="none" stroke-opacity="1" stroke="none">
+    <title>cap</title>
+    <rect fill="white" x="91" y="109" width="203" height="211"/>
+    <g id="cap_Layer_1">
+      <title>Layer 1</title>
+      <g id="Graphic_10">
+        <ellipse cx="185.03654" cy="217.13436" rx="37.2223816851759" ry="38.4585493426173" fill="red"/>
+        <ellipse cx="185.03654" cy="217.13436" rx="37.2223816851759" ry="38.4585493426173" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_9">
+        <path d="M 212.50905 177.7611 C 216.79978 159.80336 211.93876 140.10453 197.92598 126.09183 C 176.47032 104.63606 141.68385 104.63606 120.22819 126.09183 C 98.77242 147.54749 98.77242 182.33396 120.22819 203.78962 C 123.10988 206.67133 126.23205 209.166 129.5301 211.27362 C 121.50741 213.8612 113.96206 218.34012 107.59183 224.71038 C 86.13606 246.16604 86.13606 280.9525 107.59183 302.40817 C 129.04749 323.86394 163.83396 323.86394 185.28962 302.40817 C 195.22925 292.4686 200.56423 279.66808 201.29457 266.65735 C 222.84914 286.49015 256.41003 285.95386 277.3153 265.0485 C 298.77106 243.59284 298.77106 208.80637 277.3153 187.3507 C 259.76815 169.80348 233.3047 166.60695 212.50905 177.7611 Z M 185.03442 213.37923 C 184.26995 216.57873 183.796 219.8335 183.61255 223.10153 C 181.20885 220.88983 178.65584 218.93145 175.98772 217.22638 C 179.088 216.22644 182.11698 214.94406 185.03443 213.37923 Z" fill="white"/>
+        <path d="M 212.50905 177.7611 C 216.79978 159.80336 211.93876 140.10453 197.92598 126.09183 C 176.47032 104.63606 141.68385 104.63606 120.22819 126.09183 C 98.77242 147.54749 98.77242 182.33396 120.22819 203.78962 C 123.10988 206.67133 126.23205 209.166 129.5301 211.27362 C 121.50741 213.8612 113.96206 218.34012 107.59183 224.71038 C 86.13606 246.16604 86.13606 280.9525 107.59183 302.40817 C 129.04749 323.86394 163.83396 323.86394 185.28962 302.40817 C 195.22925 292.4686 200.56423 279.66808 201.29457 266.65735 C 222.84914 286.49015 256.41003 285.95386 277.3153 265.0485 C 298.77106 243.59284 298.77106 208.80637 277.3153 187.3507 C 259.76815 169.80348 233.3047 166.60695 212.50905 177.7611 Z M 185.03442 213.37923 C 184.26995 216.57873 183.796 219.8335 183.61255 223.10153 C 181.20885 220.88983 178.65584 218.93145 175.98772 217.22638 C 179.088 216.22644 182.11698 214.94406 185.03443 213.37923 Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_2">
+        <circle cx="159.07706" cy="164.9407" r="54.9407847751675" fill="#01ff50" fill-opacity=".4964232"/>
+        <circle cx="159.07706" cy="164.9407" r="54.9407847751675" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(120.1245 155.4407)" fill="black">
+          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="1.8735566" y="15" xml:space="preserve">Consistency</tspan>
+        </text>
+      </g>
+      <g id="Graphic_4">
+        <circle cx="238.46636" cy="225.65017" r="54.9407847751675" fill="#ffff7d" fill-opacity=".5014354"/>
+        <circle cx="238.46636" cy="225.65017" r="54.9407847751675" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(199.5138 216.15017)" fill="black">
+          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="5.4645566" y="15" xml:space="preserve">Availability</tspan>
+        </text>
+      </g>
+      <g id="Graphic_5">
+        <circle cx="146.4407" cy="263.5593" r="54.9407847751675" fill="#4120ff" fill-opacity=".51113046"/>
+        <circle cx="146.4407" cy="263.5593" r="54.9407847751675" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(107.48814 244.5593)" fill="black">
+          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="12.149557" y="15" xml:space="preserve">Partition </tspan>
+          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="9.006557" y="34" xml:space="preserve">Tolerance</tspan>
+        </text>
+      </g>
+    </g>
+  </g>
+</svg>
