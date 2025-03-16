@@ -43,7 +43,7 @@ Java - Funktionale Programmierung
 
 .. class:: block-footer
 
-    Teile der Folien basieren auf: Th. Letschert - Funktionale Programmierung in Java.
+    Teile der Folien basieren auf: `Th. Letschert - Funktionale Programmierung in Java. <https://homepages.thm.de/~hg51/Veranstaltungen/A_D/Folien/java-8-kurzeinfuehrung.pdf>`__
 
 
 .. supplemental::
@@ -589,7 +589,652 @@ Erweiterungen der Collection API
 
 
 
-.. class: : new-section
-    Streams
-    ------------------------------------------------
-    https://homepages.thm.de/~hg51/Veranstaltungen/A_D/Folien/java-8-kurzeinfuehrung.pdf
+.. class:: new-section transition-fade
+
+Java Streams
+------------------------------------------------
+
+
+
+Streams - Einführung
+------------------------------------------------
+
+Streams sind :incremental:`umgeformte Sammlungen`\ :incremental:`, die durch die Umformung für funktional-orientiere Massen-Operationen geeignet sind.`
+
+.. example::
+    :class: incremental
+
+    .. code:: java
+        :number-lines:
+        :class: copy-to-clipboard
+
+        import java.util.Arrays;
+        import java.util.List;
+        import java.util.stream.Collectors;
+
+        List<Integer> l = Arrays.asList(1, 2, 3, 4, 5, 6, 7, 8, 9);
+        List<Integer> ll = l
+            .stream() // list -> stream
+            .filter(x -> x % 2 == 0) // filter list with predicate
+            .map(x -> 10 * x) // map each element to a new one
+            .collect(Collectors.toList()); // back to a list
+        ll.forEach(x -> System.out.println(x));
+
+    .. container:: incremental
+    
+        *Ausgabe:* :console:`10 20 30 40 50 60 70 80 90`
+
+
+Streams mit primitiven Daten und Objekten
+------------------------------------------------
+
+- :java:`Stream<T>` ist der Typ der Streams mit Objekten vom Typ :java:`T`
+- Streams mit primitiven Daten:
+
+  - :java:`IntStream`
+  - :java:`LongStream`
+  - :java:`DoubleStream`
+
+  Dies Streams mit primitiven Daten arbeiten in vielen Fällen effizienter jedoch sind manche Operationen nur auf :java:`Object`\ -Streams erlaubt. „Primitive“ Streams können mit der Methode :java:`boxed` in :java:`Object`\ -Streams umgewandelt werden.
+
+.. example::
+    :class: incremental
+
+    .. code:: java
+        :number-lines:
+        :class: copy-to-clipboard
+
+        IntStream isPrim = IntStream.range(1, 10);
+        Stream<Integer> isObj = isPrim.boxed();
+
+
+Erzeugung von Streams
+------------------------------------------------
+
+.. deck::
+
+    .. card::
+
+        .. rubric:: Statische Methoden in :java:`Arrays`
+
+        - Die Klasse :java:`java.util.Arrays` hat mehrere überladene statische stream-Methoden, mit denen Arrays in Ströme umgewandelt werden können.
+        - Die Streams können Objekte oder primitive Daten enthalten.
+
+        .. example::
+            :class: incremental
+
+            .. code:: java
+                :number-lines:
+                :class: copy-to-clipboard
+
+                // Stream of primitive data:
+                IntStream isP = Arrays.stream(new int[] { 1, 2, 3, 4, 5, 6, 7, 8, 9, 0 });
+                // Stream of objects:
+                Stream<Integer> isO = Arrays.stream(
+                    new Integer[] { 1, 2, 3, 4, 5, 6, 7, 8, 9, 0 }
+                ); 
+
+    .. card::
+
+        .. rubric:: Statische Methoden in :java:`Stream`
+
+        - Das Interface :java:`java.util.stream.Stream` enthält mehrere statische Methoden mit denen Streams erzeugt werden können.
+        - Für die Klassen der Streams mit primitiven Werten (z.B. :java:`java.util.stream.IntStream`) gibt es äquivalente Methoden.
+
+        .. deck::
+
+            .. card::
+
+
+                - Mit :java:`of` werden die übergebenen Wert in einen Stream gepackt.
+                - Mit :java:`iterate` und :java:`generate` hat man eine einfache Möglichkeit unendliche Ströme zu erzeugen.
+
+            .. card::
+
+                .. example::
+                    :class: incremental
+
+                    .. code:: java
+                        :number-lines:
+                        :class: copy-to-clipboard
+
+                        // Object-Stream 1, 2 ... 9, 0:
+                        Stream<Integer> is1a = Stream.of(1,2,3,4,5,6,7,8,9,0); 
+
+                    .. code:: java
+                        :number-lines: 2
+                        :class: copy-to-clipboard incremental
+
+                        // int-Stream 1, 2, ... 9, 0
+                        IntStream is1b = IntStream.of(1,2,3,4,5,6,7,8,9,0); 
+
+                    .. code:: java
+                        :number-lines: 3
+                        :class: copy-to-clipboard incremental
+
+                        // (infinite) Stream 1, 2, ...
+                        Stream<Integer> is2 = Stream.iterate(1, ((x) -> x+1)); 
+
+                    .. code:: java
+                        :number-lines: 4
+                        :class: copy-to-clipboard incremental
+
+                        int[] z = new int[]{1};
+                        Stream<Integer> is3 = Stream.generate((() -> z[0]++)); // (infinite) Stream 1, 2, ...
+
+    .. card::
+
+        .. rubric:: Statische range-Methoden in :java:`IntStream` und :java:`LongStream`
+
+        Die Interfaces :java:`java.util.stream.IntStream` und :java:`java.util.stream.LongStream` enthalten jeweils zwei statische :java:`range`-Methoden mit denen Streams erzeugt werden können.
+
+        .. example::
+            :class: incremental
+
+            .. code:: java
+                :number-lines:
+                :class: copy-to-clipboard
+
+                IntStream isPrimA = IntStream.range(1, 10); // 1,2, .. 9
+                IntStream isPrimA = IntStream.rangeClosed(1, 10); // 1,2, .. 9, 10
+
+    .. card::
+
+        .. rubric:: Nicht-statische Methoden der Collection-API
+
+        Das Interface :java:`java.util.Collection` enthält die Methode stream mit der die jeweilige Kollektion in einen Stream umgewandelt werden kann.
+
+        .. example::
+            :class: incremental
+
+            .. code:: java
+                :number-lines:
+                :class: copy-to-clipboard
+
+                Stream<Integer> is = Arrays.asList(1,2,3,4,5,6,7,8,9,0).stream();
+
+
+
+Verwendung von Streams
+------------------------------------------------
+
+.. deck:: 
+
+    .. card::
+
+        Streams werden typischerweise in einer Pipeline-artigen Struktur genutzt:
+
+        .. class:: incremental-list
+
+        1. Erzeugung
+        2. Folge von Verarbeitungs-/Transformationsschritten
+        3. Abschluss mit einer terminalen Operation
+
+    .. card::
+
+        .. rubric:: Verarbeitungsoperationen
+
+        Verarbeitungs-Operationen transformieren die Elemente eines Streams. Man unterscheidet:
+
+        .. class:: incremental-list list-with-explanations
+
+        - zustandslose Operationen
+        
+          Transformieren die Elemente jeweils völlig unabhängig von allen anderen.
+        - zustandsbehaftete Operationen
+
+          Transformieren die Elemente abhängig von anderen.
+
+    .. card::
+
+        .. rubric:: Zustandslose Verarbeitungsoperationen
+
+        .. deck::
+
+            .. card::
+                        
+
+                .. class:: incremental-list
+
+                - :java:`map(Function<? super T,? extends R> mapper)`: Transformiert jedes Element in ein anderes.
+                - :java:`filter(Predicate<? super T> predicate)`: Filtert Elemente heraus.
+                - :java:`flatMap(Function<? super T,? extends Stream<? extends R>> mapper)`: Transformiert jedes Element in einen Stream und fügt die Streams zusammen.
+
+            .. card::
+
+                .. example::
+
+                    .. code:: java
+                        :number-lines:
+                        :class: copy-to-clipboard      
+
+                        import java.util.List;
+                        import java.util.stream.Collectors;
+                        import java.util.stream.IntStream;
+
+                        List<Integer> is = IntStream.range(1, 10)
+                            .filter(i -> i % 2 != 0)
+                            .peek(i -> System.out.print(i+ " "))
+                            .map(i -> 10 * i)
+                            .boxed()
+                            .collect(Collectors.toList());
+                        System.out.println(is);
+            
+                    .. container:: incremental
+    
+                        *Ausgabe:* :console:`1 3 5 7 9 [10, 30, 50, 70, 90]`
+            
+            .. card::
+
+                .. example::
+
+                    .. code:: java
+                        :number-lines:
+                        :class: copy-to-clipboard      
+
+
+                        import java.util.List;
+                        import java.util.stream.Collectors;
+                        import java.util.stream.IntStream;
+                        import java.util.stream.Stream;
+
+                        static Stream<Integer> range(int from, int to) {
+                            return IntStream.range(from, to).boxed();
+                        }
+
+                        List<Integer> is = Stream.of(0, 1, 2)
+                            .flatMap(i -> range(10 * i, 10 * i + 10))
+                            .collect(Collectors.toList());
+
+
+                    .. container:: incremental
+    
+                        *Ausgabe:* :console:`is ==> [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29]`
+
+    .. card::
+
+        .. rubric:: Zustandsbehaftete Verarbeitungsoperationen
+
+        .. deck::
+
+            .. card::
+                        
+                .. class:: incremental-list
+
+                - :java:`distinct()`: Entfernt Duplikate.
+                - :java:`sorted()`: Sortiert die Elemente.
+                - :java:`sorted(Comparator<? super T> comparator)`: Sortiert die Elemente mit einem gegebenen Comparator.
+                - :java:`limit(long maxSize)`: Begrenzt die Anzahl der Elemente.
+                - :java:`skip(long n)`: Überspringt die ersten n Elemente.
+
+            .. card::
+
+                .. example::
+
+                    .. code:: java
+                        :number-lines:
+                        :class: copy-to-clipboard      
+
+                            import java.util.List;
+                            import java.util.stream.Collectors;
+                            import java.util.stream.Stream;
+
+                            List<Integer> lst = Stream.of(9, 0, 3, 1, 7, 3, 4, 7, 2, 8, 5, 0, 6, 2)
+                                .distinct()
+                                .sorted((i, j) -> i - j)
+                                .skip(1)
+                                .limit(3)
+                                .collect(Collectors.toList());
+                            
+                    .. container:: incremental
+    
+                        *Ausgabe:* :console:`is ==> [1, 2, 3]`
+
+    .. card::
+
+        .. rubric:: Verarbeitungsoperationen
+
+        Eine terminale Operation hat im Gegensatz zu den Verarbeitungsoperationen keinen Stream als
+        Ergebnis (:java:`void`).
+
+        .. deck:: incremental
+
+            .. card:: 
+
+                .. rubric:: Terminale Operationen ohne Ergebnis
+                
+                .. class:: incremental-list list-with-explanations
+
+                - :java:`forEach(Consumer<? super T> action)`
+                
+                  Wendet die übergebene Aktion auf alle Elemente des Streams an.
+
+            .. card:: 
+
+                .. rubric:: Terminale Operationen mit Ergebnis
+
+                .. class:: incremental-list list-with-explanations
+
+                - Operationen mit Array-Ergebnis: :java:`Stream => Array`
+                
+                  Operationen die den Stream in ein äquivalentes Array umwandeln.
+
+                - Operationen mit Kollektions-Ergebnis: :java:`Stream => Kollektion`
+                
+                  Operationen die den Stream in eine äquivalente Kollektion umwandeln.
+
+                - Operationen mit Einzel-Ergebnis: Aggregierende Operationen 
+                
+                  Operationen die den Stream zu einem einzigen Wert verarbeiten.
+
+            .. card::
+
+                .. example::
+
+                    .. rubric:: :java:`forEach`
+
+                    .. code:: java
+                        :number-lines:
+                        :class: copy-to-clipboard
+
+                        Stream.of(9, 0, 3, 1, 7, 3, 4, 7, 2, 8, 5, 0, 6, 2)
+                            .distinct()
+                            .sorted( (i,j) -> i-j )
+                            .limit(3)
+                            .forEach( System.out::println );
+            
+            .. card::
+
+                .. example::
+
+                    .. rubric:: :java:`toArray`
+
+                    .. code:: java
+                        :number-lines:
+                        :class: copy-to-clipboard
+
+                        int[] a = IntStream.range(1, 3).toArray();
+
+                        Object[] a = Stream.of("1", "2", "3").map( Integer::parseInt )
+                                .toArray();
+
+                        Integer[] a = (Integer[]) Stream.of(1, 2, 3)
+                                .toArray();
+
+                        String[] a = Stream.of(1, 2, 3).map( (i) -> i.toString() )
+                                .toArray( String[]::new ); // using generator
+
+            .. card::
+
+                .. supplemental::
+
+                    .. rubric:: Terminale Operationen mit Kollektions-Ergebnis
+
+                    - Die Methode :java:`collect` erzeugt eine Kollektion aus den Elementen des Streams.
+                    - :java:`IntStream` und andere Streams mit primitiven Daten haben keine entsprechende Operation.
+                    - Das Argument von :java:`collect` ist ein :java:`java.util.stream.Collector`. Die Erzeugung einer Kollektion ist damit Sonderfall einer aggregierenden Operation.
+                    - Für die Erzeugung einer Kollektion verwendet man typischerweise einen vordefinierten :java:`Collector` aus der Klasse :java:`java.util.stream.Collectors`.
+                    - Einfache Kollektionserzeuger in Collectors sind:
+
+                        - :java:`toList()`
+                        - :java:`toSet()`
+                        - :java:`toCollection(Supplier<C> collectionFactory)`
+
+                .. example::
+
+                    .. rubric:: :java:`collect`
+
+                    .. deck::
+
+                        .. card::
+
+                            .. code:: java
+                                :number-lines:
+                                :class: copy-to-clipboard
+
+                                List<Integer> l1 = Stream.of(1, 2, 3).collect( Collectors.toList() );
+
+                                List<Integer> l2 = IntStream.range(1, 4).boxed()
+                                        .collect( Collectors.toList() );
+            
+                                Set<String> s1 = (Set<String>) Stream.of("1", "2", "3")
+                                        .collect( Collectors.toSet());
+
+                                Set<String> s2 = (Set<String>) Stream.of("1", "2", "3")
+                                        .collect( Collectors.toCollection( HashSet::new) );
+
+                        .. card::
+
+                            .. code:: java
+                                :number-lines:
+                                :class: copy-to-clipboard     
+
+                                // Generating a map from a stream of strings
+
+                                Map<String, Integer> m = Stream.of("1", "2", "3")
+                                        .collect(
+                                            Collectors.toMap(
+                                                (s) -> s,
+                                                Integer::parseInt
+                                            )
+                                        );
+
+            .. card::
+
+                In :java:`Collectors` finden sich **Kollektoren mit denen Maps erzeugt werden können**, die eine Gruppierung bzw. eine Partitionierung der Stream-Elemente darstellen:
+
+                - :java:`static <T,K> Collector<T,?,Map<K,List<T>>> groupingBy(Function<? super T,? extends K> classifier)`
+
+                  Gruppiert die Elemente entsprechend einer Klassifizierungsfunktion.
+                
+                - :java:`static <T> Collector<T,?,Map<Boolean,List<T>>> partitioningBy(Predicate<? super T> predicate)`
+
+                  Partitioniert die Elemente entsprechend einem Prädikat.
+
+            .. card::
+
+                .. example::
+
+                    .. rubric:: :java:`collect(groupingBy)`
+
+                    .. supplemental::
+
+                        .. rubric:: Hilfreiche Methoden
+
+                        .. code:: java
+                            :number-lines:
+                            :class: copy-to-clipboard
+
+                            import static java.util.stream.Collectors.groupingBy;
+                            import static java.util.stream.Collectors.partitioningBy;
+                            import static java.util.stream.Collectors.counting;
+
+                    .. code:: java
+                        :number-lines:
+                        :class: copy-to-clipboard 
+
+                        Map<Integer, List<Integer>> groupedByMod3 = Stream.of(1, 2, 3, 4, 5, 6 ,7 ,8, 9)
+                                .collect( groupingBy( (x) -> x%3 ) );
+
+                    .. container:: incremental
+    
+                        *Ausgabe:* :console:`groupedByMod3 = {0=[3, 6, 9], 1=[1, 4, 7], 2=[2, 5,8]}`                        
+
+                    .. code:: java
+                        :number-lines:
+                        :class: copy-to-clipboard incremental
+
+                        Map<Integer, List<String>> groupedByLength = Stream.of(
+                                    "one", "two", "three", "four", "five", "six", "seven", "eight")
+                                .collect( groupingBy( (s) -> s.length() ) );
+
+                    .. container:: incremental
+    
+                        *Ausgabe:* :console:`groupedByLength ==> {3=[one, two, six], 4=[four, five], 5=[three, seven, eight]}`
+
+            .. card::
+
+                Das Interface :java:`Stream` bzw. die Interfaces für Ströme primitiver Daten (:java:`IntStream`, etc.) bieten einige **einfache aggregierende Funktionen für Standardoperationen** auf allen Elementen des Stroms.
+
+                .. example::
+                    :class: incremental        
+
+                    .. code:: java
+                        :number-lines:
+                        :class: copy-to-clipboard
+
+                        long count = Stream.of(1, 2, 3, 4, 5, 6, 7, 8, 9).count();
+
+                        long sum = IntStream.of(1, 2, 3, 4, 5, 6, 7, 8, 9).sum();
+
+                        OptionalDouble av = IntStream.of(1, 2, 3, 4, 5, 6, 7, 8, 9).average();
+
+            .. card::
+
+                Das Interface Stream bieten einige einfache **aggregierende Funktionen für den Test aller Elemente des Stroms** mit einem übergebenen Prädikat.
+
+                .. example::        
+                    :class: incremental
+
+                    .. code:: java
+                        :number-lines:
+                        :class: copy-to-clipboard
+
+                        boolean anyEven = Stream.of(1, 2, 3, 4, 5, 6, 7, 8, 9)
+                                .anyMatch( (x) -> x%2 == 0 );
+
+                        boolean allEven = Stream.of(1, 2, 3, 4, 5, 6, 7, 8, 9)
+                                .allMatch( (x) -> x%2 == 0 );
+
+                        boolean noneEven = Stream.of(1, 2, 3, 4, 5, 6, 7, 8, 9)
+                                .noneMatch( (x) -> x%2 == 0 );
+
+            .. card::
+
+                Das Interface :java:`Stream` bietet die Funktionen :java:`findFirst` und :java:`findAny` für die „Suche“ nach dem ersten bzw. irgendeinem Element in einem Stream.
+
+                .. attention::
+                    :class: incremental
+                    
+                    Diese Methoden haben kein Prädikat als Parameter. Es empfiehlt sich darum den :java:`Stream` vorher mit dem entsprechenden Prädikat zu filtern.
+
+                .. example::  
+                    :class: incremental      
+
+                    .. code:: java
+                        :number-lines:
+                        :class: copy-to-clipboard
+
+                        Optional<Integer> firstEven = Stream.of(1, 2, 3, 4, 5, 6, 7, 8, 9)
+                                .filter( (x) -> x%2 == 0 )
+                                .findFirst();       
+
+                    .. container:: incremental
+    
+                        *Ausgabe:* :console:`firstEven ==> Optional[2]`
+
+            .. card::
+
+                Das Interface Stream bietet die Funktion
+
+                    :java:`Optional<T> reduce(BinaryOperator<T> accumulator)`
+
+                mit der eine Funktion auf jedes Element und das bisherige Zwischenergebnis  angewendet werden kann.
+
+                Falls der erste Wert nicht der Startwert sein soll, verwendet man:
+
+                    :java:`Optional<T> reduce(T identity, BinaryOperator<T> accumulator)`
+
+            .. card::
+
+                .. example::    
+
+                    .. rubric:: :java:`reduce`
+
+                    .. code:: java
+                        :number-lines:
+                        :class: copy-to-clipboard                                        
+
+                        Optional<Integer> sumOfAll = Stream.of(1, 2, 3, 4, 5).reduce( (a, x) -> a+x );
+
+                    .. container:: incremental
+    
+                        *Ausgabe:* :console:`sumOfAll ==> Optional[15]`
+
+                    .. code:: java
+                        :number-lines:
+                        :class: copy-to-clipboard incremental
+
+                        Optional<Integer> subOfAll = Stream.of(1, 2, 3, 4, 5).reduce( (a, x) -> a-x );
+
+                    .. container:: incremental
+    
+                        *Ausgabe:* :console:`subOfAll ==> Optional[-13]`
+
+                    .. code:: java
+                        :number-lines:
+                        :class: copy-to-clipboard incremental
+
+                        int sumOfAllPlus100 = Stream.of(1, 2, 3, 4, 5)
+                                .reduce(100, (a, x) -> a+x );
+
+                    .. container:: incremental
+    
+                        *Ausgabe:* :console:`sumOfAllPlus100 ==> 115`
+
+            .. card::
+
+                Es gibt einen Kollektor mit dem String-Elemente zu einem String konkateniert werden können:
+
+                    :java:`static Collector<CharSequence,?,String> joining(CharSequence delimiter)`
+
+                .. example::    
+                    :class: incremental
+
+                    .. rubric:: :java:`reduce`
+
+                    .. code:: java
+                        :number-lines:
+                        :class: copy-to-clipboard               
+
+                        String concat = Stream.of("one", "two", "three")
+                                .collect( joining("+") );                         
+
+                    .. container:: incremental
+    
+                        *Ausgabe:* :console:`concat = one+two+three`
+
+
+
+Java :java:`Optional`\ s
+------------------------------------------------
+
+Instanzen der Klasse :java:`java.util.Optional<T>` (bzw. :java:`java.util.OptionalInt` etc.) **repräsentieren Werte die vorhanden sind oder
+auch nicht**. 
+
+Insbesondere :java:`java.util.Optional<T>` kann/sollte anstelle von :java:`null` verwendet werden, in Fällen in denen unter bestimmten Umständen kein sinnvoller Wert angegeben werden kann.
+
+.. deck::
+
+    .. card::
+
+        .. remark::
+            
+            Es gibt moderne Programmiersprachen, die auf :java:`null` komplett verzichten und stattdessen immer auf ``Optionals`` oder ähnliche Konstrukte setzen.
+
+    .. card::
+
+        .. example::
+            
+            .. code:: java
+                :number-lines:
+                :class: copy-to-clipboard
+
+                static Optional<Integer> min(int[] a ) {
+                    if(a == null || a.length == 0) 
+                        return Optional.empty();
+
+                    int min = a[0];
+                    for(int x: a) { if (x < min) { min = x; } }
+                    return Optional.of(min);
+                }
