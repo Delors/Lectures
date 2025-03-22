@@ -620,7 +620,7 @@ Analysis of the Scalability of Centralized Systems
 
         .. note::
             
-            :math-i:`x` = # Anfragen im Sys.
+            :math-i:`x` = # Requests in Sys.
 
             .. math::
                 p_x  = \bigl(1 - \frac{\lambda}{\mu}\bigr)\bigl(\frac{\lambda}{\mu}\bigr)^x
@@ -855,7 +855,7 @@ Amdahl's law - Limits to Scalability
 
                 :math:`C` = Number of CPUs 
 
-                :math:`P` = Degree of parallelisation in percent
+                :math:`P` = Degree of parallelization in percent
                 
                 :math:`S` = Speedup 
 
@@ -939,7 +939,7 @@ Exercise
 
         .. remark:: 
 
-            Computing with GPUs as such, i. e. with 2-GPUs vs. 4-GPUs, leads to a lower speedup, as the serial part of the attack is even more important.
+            Computing with GPUs as such, i. e. with 2-GPUs vs. 4-GPUs, leads to a lower speedup, as the serial part of the attack is more important.
 
 
 
@@ -989,7 +989,7 @@ Requirements on the Reliability of Distributed Systems
     
         :eng:`Safety` ≘ :ger:`Sicherheit`
     
-        Safety refers to the safety of people and property, while Security refers to the security of data and information.
+        Safety refers to the safety of people and property, while security refers to the security of data and information.
 
 
 
