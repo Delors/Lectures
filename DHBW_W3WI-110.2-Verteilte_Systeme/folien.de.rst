@@ -57,7 +57,7 @@ Prüfungsleistung - Portfolio
 
   .. class:: dhbw 
 
-  1. Vorträge - max. 15 Punkte
+  1. Vorträge - max. 15 Punkte - 20 Minuten pro Person
   2. Programmieraufgabe - max. 35 Punkte
 
 .. attention::
@@ -159,17 +159,21 @@ Vorträge - Themen
 Vorträge - Datum
 ------------------------------------------
 
-  .. list-table:: 
-    :width: 100%
-    :widths: 20 80 
-    :header-rows: 1
+Pro Termin werden Vorträge von insgesamt 100 Minuten Länge gehalten.
 
-    * - Date
-      - Topic
-    * - \ 9. April
-      - \ 1. (Byzantine faults), 4. (Virtualization), 2. (LDAP), 5. (Monitoring)
-    * - \ 16. April 
-      - \ 7. (Paxos), 11. (Testing), 12. (Neo4j), 13. (Docker Swarm vs. Kubernetes) 
-    * - \ 23. April 
-      - \ 8. (Raft), 9. (Gossip), 3. (Connection Churn), 6. (HTTP/3), 10. (gRPC)
+.. rubric:: VORLÄUFIGE PLANUNG
+
+.. list-table:: 
+  :width: 100%
+  :widths: 20 80 
+  :header-rows: 1
+
+  * - Date
+    - Topic
+  * - \ 9. April
+    - \ 1. (Byzantine faults), 4. (Virtualization), 2. (LDAP), 5. (Monitoring)
+  * - \ 16. April 
+    - \ 7. (Paxos), 11. (Testing), 12. (Neo4j), 13. (Docker Swarm vs. Kubernetes) 
+  * - \ 23. April 
+    - \ 8. (Raft), 9. (Gossip), 3. (Connection Churn), 6. (HTTP/3), 10. (gRPC)
 
