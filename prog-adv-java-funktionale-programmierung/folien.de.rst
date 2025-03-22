@@ -493,8 +493,18 @@ Erweiterungen der Collection API
     - :java:`void forEach(Consumer<...> action)`: Führt die Aktion für jedes Element in der :java:`Queue` aus.
     - :java:`void replaceAll(UnaryOperator<...> operator)`: Ersetzt alle Elemente in der :java:`Queue` durch das Ergebnis der Anwendung des Operators auf das Element.
 
-    Schreiben Sie Tests für die neuen Methoden. Stellen Sie 100% *Statementcoverage* sicher.
+    Schreiben Sie Tests für die neuen Methoden; verwenden Sie dafür Closures bzw. Lambda-Funktionen. Stellen Sie 100% *Statementcoverage* sicher.
     
+    .. supplemental::
+
+        Die Java Dokumentation finden Sie hier:
+
+        - Übersicht: https://docs.oracle.com/en/java/javase/24/docs/api/help-doc.html
+        - API Dokumentation: https://docs.oracle.com/en/java/javase/24/docs/api/allclasses-index.html
+
+          (Hier der Link auf die Dokumentation der Klasse :java:`UnaryOperator`: https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/function/UnaryOperator.html)
+
+
     .. hint:: 
 
         - Sorgen Sie ggf. vorher dafür, dass Sie eine angemessene Projektstruktur haben.
@@ -525,6 +535,33 @@ Erweiterungen der Collection API
             :number-lines:
 
 
+Warteschlangen
+------------------------------------------------
+
+Eine Warteschlange ist eine einfache Datenstruktur bei der die Elemente in der Reihenfolge entfernt werden in der diese hinzugefügt wurden (:eng:`First-in-First-out (FiFo)`).
+
+Zentrale Methoden einer Warteschlange :java:`Queue<T>` sind:
+
+- :java:`void enqueue(T item)` (auch :java:`boolean offer(T item)` bzw. :java:`void add(T item)`): Fügt ein Element hinzu.
+- :java:`void dequeue(T item)` oder :java:`T poll()`: Entfernt das älteste Element und gibt es zurück.
+- :java:`boolean isEmpty()`: Gibt an ob die Warteschlange leer ist.
+
+
+
+Verkettete Listen
+------------------------------------------------
+
+.. remark::
+
+    Bisher haben wir Arrays verwendet, um Listen zu speichern. Arrays haben jedoch den Nachteil, dass sie eine feste Größe haben und nicht effizient vergrößert werden können. 
+
+Eine verkettete Liste ist eine alternative Implementierungstechnik, die flexibler ist als ein Array und dynamisch wachsen kann. Jedes Element in einer verketteten Liste enthält eine Referenz auf das nächste Element in der Liste.
+
+
+.. image:: images/chainedlist.svg
+    :alt: Verkettete Liste    
+    :align: center
+
 
 .. class:: exercises
 
@@ -533,7 +570,7 @@ Erweiterungen der Collection API
 
 .. exercise:: Implementierung einer Warteschlange mittels verketteter Liste
 
-    Implementieren Sie eine Warteschlange (:java:`Queue<T>`) basierend auf einer verketteten Liste. Die Klasse :java:`Queue<T>` soll folgendes Interface implementieren.
+    Implementieren Sie eine Warteschlange (:java:`Queue<T>`) basierend auf einer verketteten Liste. Ihre Klasse :java:`LinkedQueue<T>` soll das folgende Interface :java:`Queue<T>` implementieren.
 
     .. code:: java
         :number-lines:
@@ -556,7 +593,7 @@ Erweiterungen der Collection API
         **Erklärungen**
 
         :`map`:java:: Erzeugt eine neue :java:`Queue<X>` bei der die Elemente der neuen Queue 
-                das Ergebnis der Anwendung der Funktion mapper sind. 
+                das Ergebnis der Anwendung der Funktion :java:`apply` des Objekts :java:`mappers` auf die Element der :java:`Queue` sind. 
         :`empty`:java:: Erzeugt eine leere Queue. 
 
     Schreiben Sie Testfälle, um die Implementierung zu überprüfen. Zielen Sie auf mind. 100% *Statementcoverage* ab.
@@ -585,6 +622,30 @@ Erweiterungen der Collection API
             :code: xml
             :class: copy-to-clipboard
             :number-lines:
+
+
+.. class:: summary
+
+Zusammenfassung
+------------------------------------------------
+
+.. rubric:: Funktionale Programmierung  
+
+.. class:: incremental-list
+
+- Lambdas sind Ausdrücke, die (anonyme) Funktionen repräsentieren.
+- Es sind sowohl Referenzen auf statische Methoden als auch Instanzmethoden und sogar Konstruktoren möglich.
+- Currying wird nicht direkt unterstützt, aber durch die Verwendung von Funktionskomposition und partieller Anwendung kann es simuliert werden.
+
+.. compound::
+    :class: incremental
+
+    .. rubric:: Warteschlangen
+
+    .. class:: incremental-list
+
+    - Queues realisieren das Konzept einer Warteschlange bei der die Elemente, die zuerst hinzugefügt wurden, auch zuerst wieder entfernt werden (FiFo).
+    - Eine Implementierungsstrategie für Queues ist die Verwendung einer verketteten Liste.
 
 
 
@@ -1206,6 +1267,66 @@ Verwendung von Streams
 
 
 
+Streams - fortgeschrittene Konzepte
+------------------------------------------------
+
+.. deck::
+
+    .. card::
+
+        .. rubric:: Ausgewählte Eigenschaften des *Basisinterface* aller Streams
+
+        Parallele und sequentielle Streams.
+
+        .. code:: java
+            :number-lines:
+
+            package java.util.stream;
+
+            public interface BaseStream<T, S extends BaseStream<T,S>> {
+                /** Closes the stream, releasing any resources associated with it. */
+                void close();
+
+                /** Returns an equivalent stream that is parallel. */
+                S parallel();
+                /** Returns an equivalent stream that is sequential. */
+                S sequential();
+            }
+
+        .. code:: java
+            :number-lines: 13
+            :class: incremental
+
+            public interface Stream<T> extends BaseStream<T, Stream<T>> {
+                // ...
+            }
+
+        .. supplemental::
+
+            Die Interfacedefintion (:java:`BaseStream<T, S extends BaseStream<T,S>>`) ist eine Anwendung des CRTP; d. h. des *Curiously Recurring Template Pattern*\s. Bei diesem Idiom haben wir eine Klasse :java:`X`, die von einer  generischen Klasse oder einem generischen Interface :java:`S` abgeleitet wird, wobei die ableitende Klasse :java:`X` sich selber als Typparameter verwendet. Dies erlaubt die Definition einer Fluent-API, bei der Methoden, die in der Basisklasse definiert sind, den abgeleiteten Typ zurückgeben.
+
+    .. card::
+
+        .. rubric:: Erzeugen von eigenen Streams mittels `StreamSupport <https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/stream/StreamSupport.html>`__
+
+        Die Implementierung des Interfaces :java:`Stream<T>` ist ggf. sehr aufwändig. Alternativ kann die Klasse :java:`StreamSupport` verwendet werden, um auf einem :java:`Spliterator` basierende Streams zu erzeugen.
+
+        .. code:: java
+            :number-lines:
+
+            package java.util.stream;
+
+            public final class StreamSupport {
+
+                /** Creates a new sequential or parallel Stream from a Spliterator. */
+                static <T> Stream<T> stream(Spliterator<T> spliterator, boolean parallel);
+
+                // ...
+            }
+
+            
+
+
 Java :java:`Optional`\ s
 ------------------------------------------------
 
@@ -1238,3 +1359,97 @@ Insbesondere :java:`java.util.Optional<T>` kann/sollte anstelle von :java:`null`
                     for(int x: a) { if (x < min) { min = x; } }
                     return Optional.of(min);
                 }
+
+
+.. class:: exercises
+
+Übung
+--------
+
+.. exercise:: Java Streams
+
+    .. remark::
+    
+        Verwenden Sie ausschließlich Streams und Lambda-Ausdrücke.
+
+    1. Schreiben Sie eine Methode :java:`int sumOfSquares(int[] a)` die die Elemente des Arrays quadriert und dann die Summe berechnet.
+
+    2. Schreiben Sie eine Methode :java:`int sumOfSquaresEven(int[] a)` die die Elemente des Arrays quadriert, und dann die Summe berechnet für alle Elemente die gerade sind.
+
+    3. Schreiben Sie eine Methode, die eine Liste von Strings (:java:`List<String>`) in eine flache Liste von Zeichen (:java:`List<Integer>`) umwandelt.
+
+    4. Schreiben Sie eine Methode, die die Zahlen von :java:`1` bis :java:`Integer.MAX_VALUE` addiert. Nutzen Sie :java:`IntStream.range()` um die Zahlen zu iterieren. Messen Sie die Ausführungsdauer für die *sequentielle* und *parallele* Ausführung (siehe Anhang für eine entsprechende Methode zur Zeitmessung.)
+
+
+    .. supplemental::
+
+        Um die Ausführungsdauer Ihrer Methode zu messen, können Sie folgenden Methode verwenden:
+
+        .. code:: java
+            :number-lines:
+            :class: copy-to-clipboard
+
+            void time(Runnable r) {
+                final var startTime = System.nanoTime();
+                r.run();
+                final var endTime = System.nanoTime();
+                System.out.println("elapsed time: "+(endTime - startTime));
+            }
+
+        Ein Aufruf der Methode :java:`time` könnte dann so aussehen:
+
+        .. code:: java
+            :number-lines:
+            :class: copy-to-clipboard
+
+            time(() -> System.out.println(sumOfSquares(new int[]{1,2,3,4,5,6,7,8,9,0})));
+
+    .. solution::
+        :pwd: QuadrierteStreams
+
+        .. rubric:: Lösung 1
+
+        .. code:: java
+            :number-lines:
+            :class: copy-to-clipboard
+
+            var s = Arrays.stream(new int[]{1,2,3})
+            s.map(x -> x * x).reduce(0, (x,y) -> x + y)
+
+        .. rubric:: Lösung 2
+
+        .. code:: java
+            :number-lines:
+            :class: copy-to-clipboard
+
+            var s = Arrays.stream(new int[]{1,2,3,4})
+            s
+                .map(x -> x * x)
+                .filter(x -> x % 2 == 0 )
+                .reduce(0, (x,y) -> x + y)        
+
+        .. rubric:: Lösung 3
+
+        .. code:: java
+
+            :number-lines:
+            :class: copy-to-clipboard
+
+            //var s = Stream.of("Hello", "World")
+            var s = List.of("Hello", "World").stream()
+            //Stream<Integer> sc =  s.flatMap((String x) -> x.chars().boxed())    
+            var l = s.flatMap((String x) -> x.chars().boxed()).collect(Collectors.toList())    
+
+        .. rubric:: Lösung 4
+
+        .. code:: java
+            :number-lines:
+            :class: copy-to-clipboard
+
+            // sequential
+            time (() -> IntStream.range(1,Integer.MAX_VALUE).map(x -> x -1).reduce(0, (x,y) -> x + y));
+            
+            // parallel
+            time (() -> IntStream.range(1,Integer.MAX_VALUE).parallel().map(x -> x -1).reduce(0, (x,y) -> x + y));
+
+        Depending on the number of cores in your machine, the parallel version should be faster than the sequential version.

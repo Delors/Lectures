@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xl="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" version="1.1" viewBox="87 232 454 145" width="454" height="145">
+  <style>
+    @import url('/LectureDoc2/ext/fonts/ld-fonts.css'); 
+  </style>
+  <defs>
+    <marker orient="auto" overflow="visible" markerUnits="strokeWidth" id="FilledArrow_Marker" stroke-linejoin="miter" stroke-miterlimit="10" viewBox="-1 -4 8 8" markerWidth="8" markerHeight="8" color="#666a6b">
+      <g>
+        <path d="M 5.76 0 L 0 -2.16 L 0 2.16 Z" fill="currentColor" stroke="currentColor" stroke-width="1"/>
+      </g>
+    </marker>
+  </defs>
+  <metadata> Produced by OmniGraffle 8.0\n2025-03-21 11:28:48 +0000</metadata>
+  <g id="Canvas_1" stroke-dasharray="none" fill-opacity="1" fill="none" stroke-opacity="1" stroke="none">
+    <title>Canvas 1</title>
+    <rect fill="white" x="87" y="232" width="454" height="145"/>
+    <g id="Canvas_1_Layer_1">
+      <title>Layer 1</title>
+      <g id="Group_2">
+        <title>Class with Attributes, Operations, and Template Parameter</title>
+        <g id="Group_4">
+          <g id="Graphic_7">
+            <title>Attributes</title>
+            <rect x="361.3513" y="305.61512" width="130" height="35.191935" stroke="#b9c0c1" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+            <text transform="translate(367.3513 311.61512)" fill="#515556">
+              <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="#515556" x="0" y="15">value: T</tspan>
+            </text>
+          </g>
+          <g id="Graphic_6">
+            <title>Class Name</title>
+            <rect x="361.3513" y="274.96408" width="130" height="30.65104" stroke="#b9c0c1" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+            <text transform="translate(367.3513 280.7896)" fill="#515556">
+              <tspan font-family="Noto Sans Display" font-size="14" font-weight="700" fill="#515556" x="41.269" y="15">Node</tspan>
+            </text>
+          </g>
+          <g id="Graphic_5">
+            <title>Operations</title>
+            <rect x="361.3513" y="340.80705" width="130" height="24" stroke="#b9c0c1" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+          </g>
+        </g>
+        <g id="Graphic_3">
+          <title>Template Parameter</title>
+          <rect x="476.3513" y="257.9453" width="40" height="34.037532" fill="white"/>
+          <path d="M 476.3513 257.9453 L 516.3513 257.9453 L 516.3513 291.98284 L 476.3513 291.98284 Z" stroke="#b9c0c1" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="8.0,8.0" stroke-width="2"/>
+          <text transform="translate(482.3513 265.46408)" fill="#515556">
+            <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="#515556" x="10.332" y="15">T</tspan>
+          </text>
+        </g>
+      </g>
+      <g id="Group_8">
+        <title>Class with Attributes, Operations, and Template Parameter</title>
+        <g id="Group_10">
+          <g id="Graphic_13">
+            <title>Attributes</title>
+            <rect x="88.60547" y="275" width="130" height="31" stroke="#b9c0c1" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+            <text transform="translate(94.60547 281)" fill="#515556">
+              <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="#515556" x="0" y="15"> </tspan>
+            </text>
+          </g>
+          <g id="Graphic_12">
+            <title>Class Name</title>
+            <rect x="88.60547" y="248" width="130" height="27" stroke="#b9c0c1" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+            <text transform="translate(94.60547 252)" fill="#515556">
+              <tspan font-family="Noto Sans Display" font-size="14" font-weight="700" fill="#515556" x="24.28" y="15">LinkedList</tspan>
+            </text>
+          </g>
+          <g id="Graphic_11">
+            <title>Operations</title>
+            <rect x="88.60547" y="306" width="130" height="69" stroke="#b9c0c1" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+            <text transform="translate(94.60547 312)" fill="#aeaeae">
+              <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="#aeaeae" x="0" y="15">enqueue(T) : void</tspan>
+              <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="#aeaeae" x="0" y="34">dequeue(): T</tspan>
+              <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="#aeaeae" x="0" y="53">isEmpty(): boolean</tspan>
+            </text>
+          </g>
+        </g>
+        <g id="Graphic_9">
+          <title>Template Parameter</title>
+          <rect x="203.60547" y="233" width="40" height="30" fill="white"/>
+          <path d="M 203.60547 233 L 243.60547 233 L 243.60547 263 L 203.60547 263 Z" stroke="#b9c0c1" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="8.0,8.0" stroke-width="2"/>
+          <text transform="translate(209.60547 238.5)" fill="#515556">
+            <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="#515556" x="10.332" y="15">T</tspan>
+          </text>
+        </g>
+      </g>
+      <g id="Line_15">
+        <title>Synchronous</title>
+        <line x1="218.60547" y1="280.16667" x2="346.5313" y2="280.08235" marker-end="url(#FilledArrow_Marker)" stroke="#666a6b" stroke-linecap="square" stroke-linejoin="bevel" stroke-width="2"/>
+      </g>
+      <g id="Line_16">
+        <title>Synchronous</title>
+        <line x1="218.60547" y1="295.66667" x2="346.53134" y2="295.426" marker-end="url(#FilledArrow_Marker)" stroke="#666a6b" stroke-linecap="square" stroke-linejoin="bevel" stroke-width="2"/>
+      </g>
+      <g id="Graphic_17">
+        <text transform="translate(312.4617 255.2087)" fill="#212121">
+          <tspan font-family="Noto Sans Display" font-size="13" font-weight="400" fill="#212121" x="0" y="14">head</tspan>
+        </text>
+      </g>
+      <g id="Graphic_18">
+        <text transform="translate(320.9507 300.67138)" fill="#212121">
+          <tspan font-family="Noto Sans Display" font-size="13" font-weight="400" fill="#212121" x="2629008e-19" y="14">last</tspan>
+        </text>
+      </g>
+      <g id="Graphic_20">
+        <text transform="translate(509.82254 303.97266)" fill="#212121">
+          <tspan font-family="Noto Sans Display" font-size="13" font-weight="400" fill="#212121" x="0" y="14">next</tspan>
+        </text>
+      </g>
+      <g id="Line_19">
+        <title>Synchronous</title>
+        <path d="M 426.3513 365.80705 L 426.3513 375 L 516.3513 375 L 516.3513 323.67138 L 506.5753 323.67138" marker-end="url(#FilledArrow_Marker)" stroke="#666a6b" stroke-linecap="square" stroke-linejoin="bevel" stroke-width="2"/>
+      </g>
+    </g>
+  </g>
+</svg>
