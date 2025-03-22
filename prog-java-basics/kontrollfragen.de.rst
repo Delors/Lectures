@@ -6,7 +6,7 @@
    :description lang=de: Kontrollfragen zu Einführung in die Programmierung mit Java
    :id: lecture-prog-java-basics-kontrollfragen
    :first-slide: last-viewed
-   :exercises-master-password: WirklichSchwierig!
+   :master-password: WirklichSchwierig!
     
 .. |html-source| source::
     :prefix: https://delors.github.io/
