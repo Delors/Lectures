@@ -9,6 +9,7 @@
 
 .. |at| unicode:: 0x40
 
+.. role:: copy-to-clipboard
 .. role:: incremental   
 .. role:: eng
 .. role:: ger
@@ -243,7 +244,7 @@ Pro Programmiersprache/Team:
 
 Pro Programmiersprache/Team:
 
-- [1 Stud. - 25min] Präsentation einer einfachen eDSL (embedded Domain Specific Language) 
+- [1 Stud. - 25min] Präsentation fortgeschrittener Programmierkonzepte anhand einer einfachen eDSL (embedded Domain Specific Language) 
 
 - [60 min] Übung zu Scala  
 
@@ -254,7 +255,7 @@ Pro Programmiersprache/Team:
 
 Pro Programmiersprache/Team:
 
-- [1 Stud. - 25min] Präsentation eines einfachen parallelisierten RESTful Web-Services 
+- [1 Stud. - 25min] Parallele Passwortwiederherstellung
 
 - [60 min] Übung zu Rust
 
@@ -508,25 +509,25 @@ Entwickeln Sie einen einfachen interaktiven Taschenrechner, der beliebig große 
 -----------------------------------------
 
 .. story:: dd-margin-left-6em
-
-  .. compound:: 
     
-    Setzen Sie die Entwicklung der drei einfachen Datenstrukturen (Liste, Stack und Queue) fort mit dem Ziel, die grundlegenden Konzepte der nebenläufigen Programmierung zu demonstrieren. 
+  Setzen Sie die Entwicklung der drei einfachen Datenstrukturen (Liste, Stack und Queue) fort mit dem Ziel, die grundlegenden Konzepte der nebenläufigen Programmierung zu demonstrieren. 
 
-    Setzen Sie dabei für alle drei Datenstrukturen folgende Methoden um:
+  Setzen Sie dabei für alle drei Datenstrukturen folgende Methoden um:
 
-    - :java:`parallelMap(f)`: wendet die seiteneffektfreie Funktion :java:`f` auf alle Elemente der Datenstruktur an und gibt eine neue Datenstruktur zurück. Dabei ist zu beachten, dass die ursprüngliche Datenstruktur unverändert bleibt und :java:`f` auch den Typ der Elemente ändern kann.
+  .. class:: incremental-list
 
-      - Die Reihenfolge der Anwendung von :java:`f` ist nicht spezifiziert. 
-      - Der Zieldatentyp kann unterschiedlich vom Elementtyp sein. 
+  - :java:`parallelMap(f)`: wendet die seiteneffektfreie Funktion :java:`f` auf alle Elemente der Datenstruktur an und gibt eine neue Datenstruktur zurück. Dabei ist zu beachten, dass die ursprüngliche Datenstruktur unverändert bleibt und :java:`f` auch den Typ der Elemente ändern kann.
 
-    - :java:`parallelReduce(f)`: nutzt die binäre, seiteneffektfreie Funktion :java:`f`, um die Elemente der Datenstruktur auf einen einzigen Wert zu reduzieren. 
+    - Die Reihenfolge der Anwendung von :java:`f` ist nicht spezifiziert. 
+    - Der Zieldatentyp kann unterschiedlich vom Elementtyp sein. 
 
-      Ein Beispiel für die Verwendung von :java:`parallelReduce` wäre eine Liste von Zahlen und die Funktion :java:`f` ist die Addition, um die Summe zu berechnen.
-      
-      - Die Reihenfolge der Anwendung von :java:`f` ist nicht spezifiziert. 
-      - Der Zieldatentyp kann unterschiedlich vom Elementtyp sein. 
-      - Ist die Datenstruktur leer, dann soll eine aussagekräftige Ausnahme geworfen werden.
+  - :java:`parallelReduce(f)`: nutzt die binäre, seiteneffektfreie Funktion :java:`f`, um die Elemente der Datenstruktur auf einen einzigen Wert zu reduzieren. 
+
+    Ein Beispiel für die Verwendung von :java:`parallelReduce` wäre eine Liste von Zahlen und die Funktion :java:`f` ist die Addition, um die Summe zu berechnen.
+    
+    - Die Reihenfolge der Anwendung von :java:`f` ist nicht spezifiziert. 
+    - Der Zieldatentyp kann unterschiedlich vom Elementtyp sein. 
+    - Ist die Datenstruktur leer, dann soll eine aussagekräftige Ausnahme geworfen werden.
 
   .. compound:: 
     :class: incremental
@@ -547,3 +548,93 @@ Entwickeln Sie einen einfachen interaktiven Taschenrechner, der beliebig große 
     - Präsentieren Sie die Implementierung der Methoden und die Tests danach. Stellen Sie sicher, dass erkenntlich wird, wie Sie auf die Korrektheit der Implementierung - insbesondere in Hinblick auf die Parallelisierung - getestet haben.
     - Diskutieren Sie die Vor- und Nachteile der Implementierung.
 
+
+
+
+5. Aufgabe: Embedded Domain Specific Languages (eDSL)
+--------------------------------------------------------
+
+.. story:: dd-margin-left-6em
+
+  .. rubric:: Hintergrund
+
+  Ziel dieser Aufgabe ist es zu untersuchen bzw. darzustellen, inwieweit es möglich ist, in der jeweiligen Sprache eine sogenannte eDSL zu entwickeln. Das Ziel einer eDSL ist es, eine API bereitzustellen, die es ermöglicht, mit vertrauten Konzepten aus einer bestimmten Domäne/einem bestimmten Bereich zu arbeiten. 
+  
+
+  .. remark::
+    :class: incremental s-font-size-80
+
+    Die Fähigkeiten von Programmiersprachen unterscheiden sich diesbezüglich stark und hängen ganz insbesondere von der Flexibilität der (Syntax der) Sprache ab. So gibt es zum Beispiel moderne Sprachen, die es ermöglichen mal Klammern zu verwenden und mal Klammern wegzulassen bzw. Semikolons zu inferieren. Weiterhin ist eine sehr gute Typinferenz häufig hilfreich. Weiterhin gibt es Sprachen, die zum Beispiel quasi beliebige Operatoren (ggf. mit wohldefinierten Prioritäten) definieren lassen bzw. bei denen Methodennamen sich sehr frei aus dem Unicode Zeichensatz bedienen können. Darüber hinaus sind Konzepte wie Macros, Templates oder vergleichbares vorhanden, dass bei der Entwicklung hilfreich sein kann. 
+
+  .. compound::
+    :class: incremental
+
+    .. rubric:: Aufgabenstellung - eDSL für Funktionen
+
+    Entwickeln Sie eine eDSL die es ermöglicht, mathematische Ausdrücke (z. B. :math:`f(x) = x + 1` , :math:`f(x) = x ^ 2 + 2 \cdot x - 3` oder :math:`f(x) = \sqrt{ \frac{1}{x}}`) direkt in der Programmiersprache so zu formulieren, dass diese dann für verschiedene Werte von :math:`x` ausgewertet werden können. Weiterhin wollen sie für einfache Ausdrücke die Ableitung (:math:`f'(x)`) berechnen können und diese dann als Latex-Formel ausgegeben. 
+
+    .. attention::
+      :class: incremental
+
+      Letzteres, d. h. die Fähigkeit die Formel als Latex-Formel auszugeben, verlangt, dass die Ausdrücke explizit als Syntaxbaum repräsentiert werden.
+
+  .. compound::
+    :class: incremental
+
+    .. rubric:: Aufgabenstellung - eDSL für die Beschreibung einer Vektorgrafik
+
+    Entwickeln Sie eine eDSL, die es ermöglicht, einfache Vektorgrafiken zu beschreiben. Die eDSL soll es ermöglichen eine Zeichenfläche zu spezifizieren, um dann einfache geometrische Formen (z. B. Kreise, Rechtecke, Linien(, Text)) darauf zeichnen zu können. Es soll am Ende eine Methode geben, um eine Ausgabe im SVG-Format zu erhalten. Beim Entwurf der eDSL können Sie sich an den Möglichkeiten von SVG und der Syntax von SVG orientieren.
+
+  .. compound:: 
+    :class: incremental
+
+    .. rubric:: Hinweise zur Präsentation
+
+    Themen, die im Rahmen der Präsentation zu beantworten sind:
+
+    .. class:: list-with-explanations
+
+    - Wie flexibel ist die Syntax der Sprache?
+    - Wie gut ist die Typinferenz?
+
+      Dies ist wichtig, damit Nutzer der eDSL, die ggf. keine Profis in der Programmiersprache sind, nicht unnötig viele Typen explizit angeben müssen.
+    - Können Operatoren überladen werden? Können neue Operatoren definiert werden? Wie bestimmen sich dann die Prioritäten?
+    - Macros / Templates etc.
+
+      Kann die Sprache über Macros oder Templates erweitert werden, um die Entwicklung der eDSL zu erleichtern?
+
+
+
+
+6. Aufgabe: Passwortwiederherstellung
+--------------------------------------------------------
+
+.. story:: dd-margin-left-6em
+
+  Ziel dieses Programms ist es zu zeigen wie IO umgesetzt wird. Darüber hinaus soll diese Aufgabe zeigen  wie performant die Sprache ist; insbesondere in Hinblick auf die Parallelisierung von IO-Operationen.
+
+  Ihre Aufgaben ist es die Passwörter zu finden, die hinter den folgenden drei MD5 Hashwerten (Hex-Encoding) stecken:
+
+  1. ``32c5c26e20908ebd80269d32f51cb5bb``
+  2. ``648d5d9cc7cafe536fdbc6331f00c6a0``
+  3. ``d31daf6579548a2a1bf5a9bd57b5bb89``
+
+  .. compound::
+    :class: incremental
+
+    D. h. Ihre Aufgabe ist es alle Passwörter der Datei `Rockyou.txt <https://github.com/zacheller/rockyou>`__ einzulesen, zu transformieren und dann den MD5 Wert zu berechnen (in allen Sprachen gibt es dafür eine vorgefertigte Implementierung/ein Module/ein Package/..., welches es zu nutzen gilt). Sobald ein Passwort gefunden wurde, sollen Sie dieses ausgeben werden. Sobald alle drei gefunden wurden, sollen Sie die Suche abzubrechen.
+
+    .. supplemental:: 
+      
+      Rockyou is in Kali Linux zu finden in: ``/usr/share/wordlists/rockyou.txt``.
+
+  .. compound::
+    :class: incremental
+
+    Da die Passwörter modern sind und Rockyou alt, müssen die Passwörter noch transformiert werden:
+
+    - eines der Sonderzeichen ``!``, ``+``, ``#`` kann entweder vorangestellt oder angehängt sein.
+    - eine Ziffer (0..9) kann vorangestellt oder angehängt sein.
+    - es ist jedoch nie mehr als ein Zeichen angehängt oder vorangestellt.
+
+    Beachten Sie, dass die Datei `rockyou.txt` sehr groß ist und dass Sie die Passwörter parallel wiederherstellen können. Messen Sie die Performance Ihrer Anwendung. Sobald das Passwort gefunden wurde, soll die Suche abgebrochen werden.
