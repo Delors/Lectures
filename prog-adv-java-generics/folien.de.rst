@@ -47,14 +47,14 @@ Java Generics
 
         |pdf-source|
 
+    :Kontrollfragen:
+
+        .. source:: kontrollfragen.de.rst 
+            :path: relative
+            :prefix: https://delors.github.io/
+            :suffix: .html
+
     .. 
-        :Kontrollfragen:
-
-            .. source:: kontrollfragen.de.rst 
-                :path: relative
-                :prefix: https://delors.github.io/
-                :suffix: .html
-
         :Klausurvorbereitung:
 
             .. source:: klausurvorbereitung.de.rst 
