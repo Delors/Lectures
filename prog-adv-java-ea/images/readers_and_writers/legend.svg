@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xl="http://www.w3.org/1999/xlink" viewBox="467 363 123 73" width="123" height="73">
+  <style>
+    @import url('/LectureDoc2/ext/fonts/ld-fonts.css'); 
+  </style>
+  <defs>
+  </defs>
+  <metadata> Produced by OmniGraffle 8.0\n2025-03-23 09:55:14 +0000</metadata>
+  <g id="legend" stroke-dasharray="none" stroke-opacity="1" fill-opacity="1" fill="none" stroke="none">
+    <title>legend</title>
+    <rect fill="white" x="467" y="363" width="123" height="73"/>
+    <g id="legend_Layer_1">
+      <title>Layer 1</title>
+      <g id="Graphic_18">
+        <rect x="467.83625" y="363.5" width="121.5" height="71.5" fill="white"/>
+        <rect x="467.83625" y="363.5" width="121.5" height="71.5" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(472.83625 368.5)" fill="black">
+          <tspan font-family="Noto Sans Display" font-size="14" font-weight="700" fill="black" x="0" y="15" xml:space="preserve">Legende</tspan>
+        </text>
+      </g>
+      <g id="Graphic_17">
+        <path d="M 478.81825 396.69788 L 578.35425 396.69788 C 580.5634 396.69788 582.35425 398.48874 582.35425 400.69788 L 582.35425 424.6979 C 582.35425 426.907 580.5634 428.6979 578.35425 428.6979 L 478.81825 428.6979 C 476.6091 428.6979 474.81825 426.907 474.81825 424.6979 L 474.81825 400.69788 C 474.81825 398.48874 476.6091 396.69788 478.81825 396.69788 Z" fill="#fee263" fill-opacity=".50642413"/>
+        <path d="M 478.81825 396.69788 L 578.35425 396.69788 C 580.5634 396.69788 582.35425 398.48874 582.35425 400.69788 L 582.35425 424.6979 C 582.35425 426.907 580.5634 428.6979 578.35425 428.6979 L 478.81825 428.6979 C 476.6091 428.6979 474.81825 426.907 474.81825 424.6979 L 474.81825 400.69788 C 474.81825 398.48874 476.6091 396.69788 478.81825 396.69788 Z" stroke="#797979" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(479.81825 401.69788)" fill="black">
+          <tspan font-family="Noto Sans Display" font-size="16" font-style="italic" font-weight="400" fill="black" x="2842171e-20" y="17" xml:space="preserve">Prozessströme</tspan>
+        </text>
+      </g>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xl="http://www.w3.org/1999/xlink" version="1.1" viewBox="65 156 561 264" width="561" height="264">
+  <defs>
+    <font-face font-family="Noto Sans Display" font-size="16" panose-1="2 11 5 2 4 5 4 2 2 4" units-per-em="1000" underline-position="-100" underline-thickness="50" slope="0" x-height="536" cap-height="714" ascent="1069.0002" descent="-292.99927" font-weight="400">
+      <font-face-src>
+        <font-face-name name="NotoSansDisplay-Regular"/>
+      </font-face-src>
+    </font-face>
+    <marker orient="auto" overflow="visible" markerUnits="strokeWidth" id="UMLInheritance_Marker" stroke-linejoin="miter" stroke-miterlimit="10" viewBox="-1 -8 14 16" markerWidth="14" markerHeight="16" color="black">
+      <g>
+        <path d="M 12 0 L 0 -7 L 0 7 Z" fill="none" stroke="currentColor" stroke-width="1"/>
+      </g>
+    </marker>
+  </defs>
+  <metadata> Produced by OmniGraffle 8.0\n2025-03-23 09:46:04 +0000</metadata>
+  <g id="Canvas_1" fill="none" stroke="none" stroke-dasharray="none" stroke-opacity="1" fill-opacity="1">
+    <title>Canvas 1</title>
+    <rect fill="white" x="65" y="156" width="561" height="264"/>
+    <g id="Canvas_1_Layer_1">
+      <title>Layer 1</title>
+      <g id="Graphic_3">
+        <path d="M 310.376 387.276 L 362.824 387.276 C 365.03314 387.276 366.824 389.06686 366.824 391.276 L 366.824 415.276 C 366.824 417.48514 365.03314 419.276 362.824 419.276 L 310.376 419.276 C 308.16686 419.276 306.376 417.48514 306.376 415.276 L 306.376 391.276 C 306.376 389.06686 308.16686 387.276 310.376 387.276 Z" stroke="#797979" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(311.376 392.276)" fill="black">
+          <tspan font-family="Noto Sans Display" font-size="16" font-weight="400" fill="black" x="15987212e-20" y="17" xml:space="preserve">Reader</tspan>
+        </text>
+      </g>
+      <g id="Graphic_4">
+        <path d="M 69.73625 269.99866 L 164.77625 269.99866 C 166.98539 269.99866 168.77625 271.78952 168.77625 273.99866 L 168.77625 297.99866 C 168.77625 300.2078 166.98539 301.99866 164.77625 301.99866 L 69.73625 301.99866 C 67.52711 301.99866 65.73625 300.2078 65.73625 297.99866 L 65.73625 273.99866 C 65.73625 271.78952 67.52711 269.99866 69.73625 269.99866 Z" stroke="#797979" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(70.73625 274.99866)" fill="black">
+          <tspan font-family="Noto Sans Display" font-size="16" font-weight="400" fill="black" x="4405365e-19" y="17" xml:space="preserve">StringReader</tspan>
+        </text>
+      </g>
+      <g id="Graphic_5">
+        <path d="M 191.29625 269.99866 L 333.21625 269.99866 C 335.4254 269.99866 337.21625 271.78952 337.21625 273.99866 L 337.21625 297.99866 C 337.21625 300.2078 335.4254 301.99866 333.21625 301.99866 L 191.29625 301.99866 C 189.0871 301.99866 187.29625 300.2078 187.29625 297.99866 L 187.29625 273.99866 C 187.29625 271.78952 189.0871 269.99866 191.29625 269.99866 Z" fill="#fee263" fill-opacity=".50642413"/>
+        <path d="M 191.29625 269.99866 L 333.21625 269.99866 C 335.4254 269.99866 337.21625 271.78952 337.21625 273.99866 L 337.21625 297.99866 C 337.21625 300.2078 335.4254 301.99866 333.21625 301.99866 L 191.29625 301.99866 C 189.0871 301.99866 187.29625 300.2078 187.29625 297.99866 L 187.29625 273.99866 C 187.29625 271.78952 189.0871 269.99866 191.29625 269.99866 Z" stroke="#797979" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(192.29625 274.99866)" fill="black">
+          <tspan font-family="Noto Sans Display" font-size="16" font-weight="400" fill="black" x="0" y="17" xml:space="preserve">InputStreamReader</tspan>
+        </text>
+      </g>
+      <g id="Graphic_6">
+        <path d="M 223.92025 205.99866 L 300.59225 205.99866 C 302.8014 205.99866 304.59225 207.78952 304.59225 209.99866 L 304.59225 233.99866 C 304.59225 236.2078 302.8014 237.99866 300.59225 237.99866 L 223.92025 237.99866 C 221.7111 237.99866 219.92025 236.2078 219.92025 233.99866 L 219.92025 209.99866 C 219.92025 207.78952 221.7111 205.99866 223.92025 205.99866 Z" stroke="#797979" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(224.92025 210.99866)" fill="black">
+          <tspan font-family="Noto Sans Display" font-size="16" font-weight="400" fill="black" x="0" y="17" xml:space="preserve">FileReader</tspan>
+        </text>
+      </g>
+      <g id="Graphic_7">
+        <path d="M 447.48025 269.99866 L 359.03225 269.99866 C 356.8231 269.99866 355.03225 271.78952 355.03225 273.99866 L 355.03225 297.99866 C 355.03225 300.2078 356.8231 301.99866 359.03225 301.99866 L 447.48025 301.99866 C 449.6894 301.99866 451.48025 300.2078 451.48025 297.99866 L 451.48025 273.99866 C 451.48025 271.78952 449.6894 269.99866 447.48025 269.99866 Z" fill="#fee263" fill-opacity=".50642413"/>
+        <path d="M 447.48025 269.99866 L 359.03225 269.99866 C 356.8231 269.99866 355.03225 271.78952 355.03225 273.99866 L 355.03225 297.99866 C 355.03225 300.2078 356.8231 301.99866 359.03225 301.99866 L 447.48025 301.99866 C 449.6894 301.99866 451.48025 300.2078 451.48025 297.99866 L 451.48025 273.99866 C 451.48025 271.78952 449.6894 269.99866 447.48025 269.99866 Z" stroke="#797979" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(360.03225 274.99866)" fill="black">
+          <tspan font-family="Noto Sans Display" font-size="16" font-weight="400" fill="black" x="1563194e-19" y="17" xml:space="preserve">FilterReader</tspan>
+        </text>
+      </g>
+      <g id="Graphic_8">
+        <path d="M 474.12825 269.99866 L 588.38425 269.99866 C 590.5934 269.99866 592.38425 271.78952 592.38425 273.99866 L 592.38425 297.99866 C 592.38425 300.2078 590.5934 301.99866 588.38425 301.99866 L 474.12825 301.99866 C 471.9191 301.99866 470.12825 300.2078 470.12825 297.99866 L 470.12825 273.99866 C 470.12825 271.78952 471.9191 269.99866 474.12825 269.99866 Z" fill="#fee263" fill-opacity=".50642413"/>
+        <path d="M 474.12825 269.99866 L 588.38425 269.99866 C 590.5934 269.99866 592.38425 271.78952 592.38425 273.99866 L 592.38425 297.99866 C 592.38425 300.2078 590.5934 301.99866 588.38425 301.99866 L 474.12825 301.99866 C 471.9191 301.99866 470.12825 300.2078 470.12825 297.99866 L 470.12825 273.99866 C 470.12825 271.78952 471.9191 269.99866 474.12825 269.99866 Z" stroke="#797979" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(475.12825 274.99866)" fill="black">
+          <tspan font-family="Noto Sans Display" font-size="16" font-weight="400" fill="black" x="61106675e-20" y="17" xml:space="preserve">BufferedReader</tspan>
+        </text>
+      </g>
+      <g id="Graphic_10">
+        <path d="M 451.4161 188.88538 L 330.7761 188.88538 C 328.56695 188.88538 326.7761 187.09451 326.7761 184.88538 L 326.7761 160.88538 C 326.7761 158.67624 328.56695 156.88538 330.7761 156.88538 L 451.4161 156.88538 C 453.62523 156.88538 455.4161 158.67624 455.4161 160.88538 L 455.4161 184.88538 C 455.4161 187.09451 453.62523 188.88538 451.4161 188.88538 Z" fill="#fee263" fill-opacity=".50642413"/>
+        <path d="M 451.4161 188.88538 L 330.7761 188.88538 C 328.56695 188.88538 326.7761 187.09451 326.7761 184.88538 L 326.7761 160.88538 C 326.7761 158.67624 328.56695 156.88538 330.7761 156.88538 L 451.4161 156.88538 C 453.62523 156.88538 455.4161 158.67624 455.4161 160.88538 L 455.4161 184.88538 C 455.4161 187.09451 453.62523 188.88538 451.4161 188.88538 Z" stroke="#797979" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(331.7761 161.88538)" fill="black">
+          <tspan font-family="Noto Sans Display" font-size="16" font-weight="400" fill="black" x="0" y="17" xml:space="preserve">PushbackReader</tspan>
+        </text>
+      </g>
+      <g id="Graphic_11">
+        <path d="M 620.6721 188.88538 L 479.5201 188.88538 C 477.31095 188.88538 475.5201 187.09451 475.5201 184.88538 L 475.5201 160.88538 C 475.5201 158.67624 477.31095 156.88538 479.5201 156.88538 L 620.6721 156.88538 C 622.8812 156.88538 624.6721 158.67624 624.6721 160.88538 L 624.6721 184.88538 C 624.6721 187.09451 622.8812 188.88538 620.6721 188.88538 Z" fill="#fee263" fill-opacity=".50642413"/>
+        <path d="M 620.6721 188.88538 L 479.5201 188.88538 C 477.31095 188.88538 475.5201 187.09451 475.5201 184.88538 L 475.5201 160.88538 C 475.5201 158.67624 477.31095 156.88538 479.5201 156.88538 L 620.6721 156.88538 C 622.8812 156.88538 624.6721 158.67624 624.6721 160.88538 L 624.6721 184.88538 C 624.6721 187.09451 622.8812 188.88538 620.6721 188.88538 Z" stroke="#797979" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(480.5201 161.88538)" fill="black">
+          <tspan font-family="Noto Sans Display" font-size="16" font-weight="400" fill="black" x="0" y="17" xml:space="preserve">LineNumberReader</tspan>
+        </text>
+      </g>
+      <g id="Line_12">
+        <path d="M 531.25625 301.99866 L 531.25625 344.63733 L 336.6 344.63733 L 336.6 373.776" marker-end="url(#UMLInheritance_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Line_13">
+        <path d="M 117.25625 301.99866 L 117.25625 344.63733 L 336.6 344.63733 L 336.6 373.776" marker-end="url(#UMLInheritance_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Line_14">
+        <path d="M 262.25625 301.99866 L 262.25625 344.63733 L 336.6 344.63733 L 336.6 373.776" marker-end="url(#UMLInheritance_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Line_15">
+        <line x1="262.25625" y1="237.99866" x2="262.25625" y2="256.49866" marker-end="url(#UMLInheritance_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Line_16">
+        <path d="M 403.25625 301.99866 L 403.25625 344.63733 L 336.6 344.63733 L 336.6 373.776" marker-end="url(#UMLInheritance_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Line_17">
+        <path d="M 550.0961 188.88538 L 550.0961 229.44202 L 403.25625 229.44202 L 403.25625 256.49866" marker-end="url(#UMLInheritance_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Line_18">
+        <path d="M 391.0961 188.88538 L 391.0961 229.44202 L 403.25625 229.44202 L 403.25625 256.49866" marker-end="url(#UMLInheritance_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+    </g>
+  </g>
+</svg>

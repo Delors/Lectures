@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xl="http://www.w3.org/1999/xlink" viewBox="68 205 522 215" width="522" height="215">
+    <style>
+    @import url('/LectureDoc2/ext/fonts/ld-fonts.css'); 
+  </style>
+  <defs>
+    <marker orient="auto" overflow="visible" markerUnits="strokeWidth" id="UMLInheritance_Marker" stroke-linejoin="miter" stroke-miterlimit="10" viewBox="-1 -8 14 16" markerWidth="14" markerHeight="16" color="black">
+      <g>
+        <path d="M 12 0 L 0 -7 L 0 7 Z" fill="none" stroke="currentColor" stroke-width="1"/>
+      </g>
+    </marker>
+  </defs>
+  <metadata> Produced by OmniGraffle 8.0\n2025-03-23 09:55:14 +0000</metadata>
+  <g id="writers" stroke-dasharray="none" stroke-opacity="1" fill-opacity="1" fill="none" stroke="none">
+    <title>writers</title>
+    <rect fill="white" x="68" y="205" width="522" height="215"/>
+    <g id="writers_Layer_1">
+      <title>Layer 1</title>
+      <g id="Graphic_3">
+        <path d="M 313.424 387.276 L 359.776 387.276 C 361.98514 387.276 363.776 389.06686 363.776 391.276 L 363.776 415.276 C 363.776 417.48514 361.98514 419.276 359.776 419.276 L 313.424 419.276 C 311.21486 419.276 309.424 417.48514 309.424 415.276 L 309.424 391.276 C 309.424 389.06686 311.21486 387.276 313.424 387.276 Z" stroke="#797979" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(314.424 392.276)" fill="black">
+          <tspan font-family="Noto Sans Display" font-size="16" font-weight="400" fill="black" x="0" y="17" xml:space="preserve">Writer</tspan>
+        </text>
+      </g>
+      <g id="Graphic_4">
+        <path d="M 73.48825 269.99866 L 162.43225 269.99866 C 164.64139 269.99866 166.43225 271.78952 166.43225 273.99866 L 166.43225 297.99866 C 166.43225 300.2078 164.64139 301.99866 162.43225 301.99866 L 73.48825 301.99866 C 71.27911 301.99866 69.48825 300.2078 69.48825 297.99866 L 69.48825 273.99866 C 69.48825 271.78952 71.27911 269.99866 73.48825 269.99866 Z" stroke="#797979" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(74.48825 274.99866)" fill="black">
+          <tspan font-family="Noto Sans Display" font-size="16" font-weight="400" fill="black" x="0" y="17" xml:space="preserve">StringWriter</tspan>
+        </text>
+      </g>
+      <g id="Graphic_5">
+        <path d="M 188.28825 269.99866 L 336.22425 269.99866 C 338.4334 269.99866 340.22425 271.78952 340.22425 273.99866 L 340.22425 297.99866 C 340.22425 300.2078 338.4334 301.99866 336.22425 301.99866 L 188.28825 301.99866 C 186.0791 301.99866 184.28825 300.2078 184.28825 297.99866 L 184.28825 273.99866 C 184.28825 271.78952 186.0791 269.99866 188.28825 269.99866 Z" fill="#fee263" fill-opacity=".50642413"/>
+        <path d="M 188.28825 269.99866 L 336.22425 269.99866 C 338.4334 269.99866 340.22425 271.78952 340.22425 273.99866 L 340.22425 297.99866 C 340.22425 300.2078 338.4334 301.99866 336.22425 301.99866 L 188.28825 301.99866 C 186.0791 301.99866 184.28825 300.2078 184.28825 297.99866 L 184.28825 273.99866 C 184.28825 271.78952 186.0791 269.99866 188.28825 269.99866 Z" stroke="#797979" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(189.28825 274.99866)" fill="black">
+          <tspan font-family="Noto Sans Display" font-size="16" font-weight="400" fill="black" x="7531753e-19" y="17" xml:space="preserve">OutputStreamWriter</tspan>
+        </text>
+      </g>
+      <g id="Graphic_6">
+        <path d="M 226.96825 205.99866 L 297.54425 205.99866 C 299.7534 205.99866 301.54425 207.78952 301.54425 209.99866 L 301.54425 233.99866 C 301.54425 236.2078 299.7534 237.99866 297.54425 237.99866 L 226.96825 237.99866 C 224.7591 237.99866 222.96825 236.2078 222.96825 233.99866 L 222.96825 209.99866 C 222.96825 207.78952 224.7591 205.99866 226.96825 205.99866 Z" stroke="#797979" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(227.96825 210.99866)" fill="black">
+          <tspan font-family="Noto Sans Display" font-size="16" font-weight="400" fill="black" x="4689582e-19" y="17" xml:space="preserve">FileWriter</tspan>
+        </text>
+      </g>
+      <g id="Graphic_7">
+        <path d="M 444.43225 269.99866 L 362.08025 269.99866 C 359.8711 269.99866 358.08025 271.78952 358.08025 273.99866 L 358.08025 297.99866 C 358.08025 300.2078 359.8711 301.99866 362.08025 301.99866 L 444.43225 301.99866 C 446.6414 301.99866 448.43225 300.2078 448.43225 297.99866 L 448.43225 273.99866 C 448.43225 271.78952 446.6414 269.99866 444.43225 269.99866 Z" fill="#fee263" fill-opacity=".50642413"/>
+        <path d="M 444.43225 269.99866 L 362.08025 269.99866 C 359.8711 269.99866 358.08025 271.78952 358.08025 273.99866 L 358.08025 297.99866 C 358.08025 300.2078 359.8711 301.99866 362.08025 301.99866 L 444.43225 301.99866 C 446.6414 301.99866 448.43225 300.2078 448.43225 297.99866 L 448.43225 273.99866 C 448.43225 271.78952 446.6414 269.99866 444.43225 269.99866 Z" stroke="#797979" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(363.08025 274.99866)" fill="black">
+          <tspan font-family="Noto Sans Display" font-size="16" font-weight="400" fill="black" x="0" y="17" xml:space="preserve">FilterWriter</tspan>
+        </text>
+      </g>
+      <g id="Graphic_8">
+        <path d="M 477.17625 269.99866 L 585.33625 269.99866 C 587.5454 269.99866 589.33625 271.78952 589.33625 273.99866 L 589.33625 297.99866 C 589.33625 300.2078 587.5454 301.99866 585.33625 301.99866 L 477.17625 301.99866 C 474.9671 301.99866 473.17625 300.2078 473.17625 297.99866 L 473.17625 273.99866 C 473.17625 271.78952 474.9671 269.99866 477.17625 269.99866 Z" fill="#fee263" fill-opacity=".50642413"/>
+        <path d="M 477.17625 269.99866 L 585.33625 269.99866 C 587.5454 269.99866 589.33625 271.78952 589.33625 273.99866 L 589.33625 297.99866 C 589.33625 300.2078 587.5454 301.99866 585.33625 301.99866 L 477.17625 301.99866 C 474.9671 301.99866 473.17625 300.2078 473.17625 297.99866 L 473.17625 273.99866 C 473.17625 271.78952 474.9671 269.99866 477.17625 269.99866 Z" stroke="#797979" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(478.17625 274.99866)" fill="black">
+          <tspan font-family="Noto Sans Display" font-size="16" font-weight="400" fill="black" x="0" y="17" xml:space="preserve">BufferedWriter</tspan>
+        </text>
+      </g>
+      <g id="Line_12">
+        <path d="M 531.25625 301.99866 L 531.25625 344.63733 L 336.6 344.63733 L 336.6 373.776" marker-end="url(#UMLInheritance_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Line_13">
+        <path d="M 117.96025 301.99866 L 117.96025 344.81296 L 336.6 344.81296 L 336.6 373.776" marker-end="url(#UMLInheritance_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Line_14">
+        <path d="M 262.25625 301.99866 L 262.25625 344.63733 L 336.6 344.63733 L 336.6 373.776" marker-end="url(#UMLInheritance_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Line_15">
+        <line x1="262.25625" y1="237.99866" x2="262.25625" y2="256.49866" marker-end="url(#UMLInheritance_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Line_16">
+        <path d="M 403.25625 301.99866 L 403.25625 344.63733 L 336.6 344.63733 L 336.6 373.776" marker-end="url(#UMLInheritance_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+    </g>
+  </g>
+</svg>
