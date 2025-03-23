@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xl="http://www.w3.org/1999/xlink" viewBox="0 0 436 239" width="436" height="239">
+  <defs>
+    <filter id="Shadow" filterUnits="userSpaceOnUse" x="-43.6" y="-23.9">
+      <feGaussianBlur in="SourceAlpha" result="blur" stdDeviation="1.308"/>
+      <feOffset in="blur" result="offset" dx="0" dy="3"/>
+      <feFlood flood-color="black" flood-opacity=".5" result="flood"/>
+      <feComposite in="flood" in2="offset" operator="in" result="color"/>
+      <feMerge>
+        <feMergeNode in="color"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <font-face font-family="Noto Sans Display" font-size="14" panose-1="2 11 5 2 4 5 4 2 2 4" units-per-em="1000" underline-position="-100" underline-thickness="50" slope="0" x-height="536" cap-height="714" ascent="1069.0002" descent="-292.99927" font-weight="400">
+      <font-face-src>
+        <font-face-name name="NotoSansDisplay-Regular"/>
+      </font-face-src>
+    </font-face>
+    <font-face font-family="Noto Sans Display" font-size="13" panose-1="2 11 5 2 4 5 4 2 2 4" units-per-em="1000" underline-position="-100" underline-thickness="50" slope="0" x-height="536" cap-height="714" ascent="1069.0002" descent="-292.99927" font-weight="400">
+      <font-face-src>
+        <font-face-name name="NotoSansDisplay-Regular"/>
+      </font-face-src>
+    </font-face>
+    <marker orient="auto" overflow="visible" markerUnits="strokeWidth" id="StickArrow_Marker" stroke-linejoin="miter" stroke-miterlimit="10" viewBox="-1 -4 10 8" markerWidth="10" markerHeight="8" color="black">
+      <g>
+        <path d="M 8 0 L 0 0 M 0 -3 L 8 0 L 0 3" fill="none" stroke="currentColor" stroke-width="1"/>
+      </g>
+    </marker>
+  </defs>
+  <metadata> Produced by OmniGraffle 8.0\n2025-03-23 12:53:50 +0000</metadata>
+  <g id="technologische-flexibilitaet" stroke-dasharray="none" stroke-opacity="1" fill-opacity="1" fill="none" stroke="none">
+    <title>technologische-flexibilitaet</title>
+    <g id="technologische-flexibilitaet_Layer_1">
+      <title>Layer 1</title>
+      <g id="Graphic_160" filter="url(#Shadow)">
+        <path d="M 8 51 L 39 11 L 101 11 L 132 51 L 101 91 L 39 91 Z" fill="white"/>
+        <path d="M 8 51 L 39 11 L 101 11 L 132 51 L 101 91 L 39 91 Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(41 32)" fill="black">
+          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="12.27" y="15" xml:space="preserve">Posts</tspan>
+          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="6.677" y="34" xml:space="preserve">«Ruby»</tspan>
+        </text>
+      </g>
+      <g id="Graphic_161">
+        <rect x="35.5" y="146" width="69" height="74" fill="white"/>
+        <rect x="35.5" y="146" width="69" height="74" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(37.5 165)" fill="black">
+          <tspan font-family="Noto Sans Display" font-size="13" font-weight="400" fill="black" x=".3315" y="14" xml:space="preserve">Relationale</tspan>
+          <tspan font-family="Noto Sans Display" font-size="13" font-weight="400" fill="black" x="24.05" y="32" xml:space="preserve">DB</tspan>
+        </text>
+      </g>
+      <g id="Graphic_162">
+        <ellipse cx="70" cy="144" rx="34.5000551276154" ry="14.0000223706266" fill="white"/>
+        <ellipse cx="70" cy="144" rx="34.5000551276154" ry="14.0000223706266" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_163">
+        <ellipse cx="70" cy="220" rx="34.5000551276154" ry="14.0000223706266" fill="white"/>
+        <ellipse cx="70" cy="220" rx="34.5000551276154" ry="14.0000223706266" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_164">
+        <rect x="36" y="201.09834" width="67.75" height="18.901656" fill="white" fill-opacity=".8317758"/>
+      </g>
+      <g id="Line_165">
+        <line x1="69.5" y1="91" x2="69.74511" y2="136.10015" marker-end="url(#StickArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_166" filter="url(#Shadow)">
+        <path d="M 156 51 L 187 11 L 249 11 L 280 51 L 249 91 L 187 91 Z" fill="white"/>
+        <path d="M 156 51 L 187 11 L 249 11 L 280 51 L 249 91 L 187 91 Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(189 32)" fill="black">
+          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="3.289" y="15" xml:space="preserve">Freunde</tspan>
+          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="9.554" y="34" xml:space="preserve">«Java»</tspan>
+        </text>
+      </g>
+      <g id="Graphic_167">
+        <rect x="183.5" y="146" width="69" height="74" fill="white"/>
+        <rect x="183.5" y="146" width="69" height="74" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(185.5 165)" fill="black">
+          <tspan font-family="Noto Sans Display" font-size="13" font-weight="400" fill="black" x="14.625" y="14" xml:space="preserve">Graph</tspan>
+          <tspan font-family="Noto Sans Display" font-size="13" font-weight="400" fill="black" x="24.05" y="32" xml:space="preserve">DB</tspan>
+        </text>
+      </g>
+      <g id="Graphic_168">
+        <ellipse cx="218" cy="144" rx="34.5000551276154" ry="14.0000223706266" fill="white"/>
+        <ellipse cx="218" cy="144" rx="34.5000551276154" ry="14.0000223706266" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_169">
+        <ellipse cx="218" cy="220" rx="34.5000551276154" ry="14.0000223706266" fill="white"/>
+        <ellipse cx="218" cy="220" rx="34.5000551276154" ry="14.0000223706266" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_170">
+        <rect x="184" y="201.09834" width="67.75" height="18.901656" fill="white" fill-opacity=".831776"/>
+      </g>
+      <g id="Line_171">
+        <line x1="217.5" y1="91" x2="217.7451" y2="136.10015" marker-end="url(#StickArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_172" filter="url(#Shadow)">
+        <path d="M 304 51 L 335 11 L 397 11 L 428 51 L 397 91 L 335 91 Z" fill="white"/>
+        <path d="M 304 51 L 335 11 L 397 11 L 428 51 L 397 91 L 335 91 Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(337 32)" fill="black">
+          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="10.758" y="15" xml:space="preserve">Bilder</tspan>
+          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="9.554" y="34" xml:space="preserve">«Java»</tspan>
+        </text>
+      </g>
+      <g id="Graphic_173">
+        <rect x="331.5" y="146" width="69" height="74" fill="white"/>
+        <rect x="331.5" y="146" width="69" height="74" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(333.5 165)" fill="black">
+          <tspan font-family="Noto Sans Display" font-size="13" font-weight="400" fill="black" x="19.4545" y="14" xml:space="preserve">Blob</tspan>
+          <tspan font-family="Noto Sans Display" font-size="13" font-weight="400" fill="black" x="17.316" y="32" xml:space="preserve">Store</tspan>
+        </text>
+      </g>
+      <g id="Graphic_174">
+        <ellipse cx="366" cy="144" rx="34.5000551276154" ry="14.0000223706266" fill="white"/>
+        <ellipse cx="366" cy="144" rx="34.5000551276154" ry="14.0000223706266" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_175">
+        <ellipse cx="366" cy="220" rx="34.5000551276154" ry="14.0000223706266" fill="white"/>
+        <ellipse cx="366" cy="220" rx="34.5000551276154" ry="14.0000223706266" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_176">
+        <rect x="332" y="201.09834" width="67.75" height="18.901656" fill="white" fill-opacity=".831776"/>
+      </g>
+      <g id="Line_177">
+        <line x1="366" y1="91" x2="366" y2="136.1" marker-end="url(#StickArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Line_178">
+        <line x1="280" y1="51" x2="294.1" y2="51" marker-end="url(#StickArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Line_179">
+        <line x1="156" y1="51" x2="141.9" y2="51" marker-end="url(#StickArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+    </g>
+  </g>
+</svg>

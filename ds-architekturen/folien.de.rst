@@ -1,5 +1,5 @@
 .. meta::
-    :version: genesis
+    :version: renaissance
     :author: Michael Eichberg
     :keywords: "Verteilte Anwendungen", "Modelle", "Architekturen", "Architekturelle Stile"
     :description lang=de: Architekturen von verteilten Anwendungen
@@ -39,14 +39,12 @@
 
 
 
-:smaller:`Architekturen verteilter Anwendungen`
+Architekturen verteilter Anwendungen
 ==========================================================================
 
-.. container:: small
-  
-  Ein erster Überblick.
+Ein erster Überblick.
 
-.. container:: line-above margin-top-1em padding-top-1em
+----
 
   :Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
   :Kontakt: michael.eichberg@dhbw.de, Raum 149B
@@ -68,6 +66,7 @@
     Ausgewählte Folien basieren auf Folien von Maarten van Steen ( *Distributed Systems*)
 
     Alle Fehler sind meine eigenen.
+
 
 
 .. class:: transition-fade new-section
@@ -101,23 +100,20 @@ Ein Architekturstil wird formuliert in Form von
 Schichtenarchitekturen
 ----------------------
 
-.. container:: three-columns no-default-width
+.. class:: columns incremental-list
 
-  .. container:: column no-separator
-
-    .. image:: images/common_application_architectures/n-layered_architectures.svg
-       :height: 800px
-
-  .. container:: column no-separator incremental
-
-
-    .. image:: images/common_application_architectures/n-layered_architectures-jump_over_layers.svg
-       :height: 700px
-
-  .. container:: column no-separator incremental
-
-    .. image:: images/common_application_architectures/n-layered_architectures-and-callbacks.svg
-       :height: 700px
+- \
+  
+  .. image:: images/common_application_architectures/n-layered_architectures.svg
+       
+- \ 
+  
+  .. image:: images/common_application_architectures/n-layered_architectures-jump_over_layers.svg
+       
+- \
+ 
+  .. image:: images/common_application_architectures/n-layered_architectures-and-callbacks.svg
+       
        
 
 
@@ -125,7 +121,6 @@ Beispiel einer 3-Schichtenarchitektur
 --------------------------------------
 
 .. image:: images/common_application_architectures/3-layered-example.svg
-   :height: 1000px
    :align: center
 
 
@@ -134,7 +129,6 @@ Klassische Architekturen
 -------------------------
 
 .. image:: images/common_application_architectures/common_architectures.svg
-   :height: 800px
    :align: center
 
 
@@ -157,9 +151,9 @@ Klassische Architekturen
 Abhängigkeiten zwischen den Komponenten werden durch das *Publish and Subscribe* Paradigma realisiert mit dem Ziel der loosen Kopplung.
 
 
-.. stack:: margin-top-1em incremental 
+.. deck:: incremental 
  
-  .. layer:: smaller
+  .. card::
 
     **Taxonomie der Koordinierungsansätze in Hinblick auf Kommunikation und Koordination:**
 
@@ -175,24 +169,22 @@ Abhängigkeiten zwischen den Komponenten werden durch das *Publish and Subscribe
       
       (:eng:`Shared Data Space`)"
 
-  .. layer:: incremental
+  .. card:: 
         
     .. rubric:: Ereignisbasierte Koordination
 
     .. image:: images/pubsub/event-based.svg
-       :height: 450px
        :align: center
 
 
-  .. layer:: incremental
+  .. card::
         
     .. rubric:: *Shared Data Space*
 
     .. image:: images/pubsub/shared-data-space.svg
-       :height: 450px
        :align: center
 
-.. container:: incremental margin-top-1em
+.. container:: incremental 
 
   Häufig wird die *ereignisbasierte Koordination* in Kombination mit *Shared Data Space* zur Realisierung von *Publish and Subscribe* Architekturen.
 
@@ -222,7 +214,6 @@ Aufbau von Cloud Computing Anwendungen
 ---------------------------------------------
 
 .. image:: images/cloud.svg
-   :width: 100%
    :align: center 
 
 
@@ -258,23 +249,22 @@ Microservices [Newman2021]_
 Microservice mit REST Schnittstelle
 -------------------------------------
 
-.. container:: two-columns no-default-width
+.. class:: columns
 
-  .. container:: column no-separator
+- \  
 
-    .. rubric:: Microservices
+  .. rubric:: Microservices
 
-    Ein einfacher Microservice, der eine REST Schnittstelle anbietet und Ereignisse auslöst.
+  Ein einfacher Microservice, der eine REST Schnittstelle anbietet und Ereignisse auslöst.
 
-    .. container:: incremental question smaller
+  .. container:: incremental question smaller
 
-      Wo liegen hier die Herausforderungen?
+    Wo liegen hier die Herausforderungen?
 
-  .. container:: column
+- \
 
-    .. image:: images/microservices/basisbeispiel.svg
-       :height: 1160px
-
+  .. image:: images/microservices/basisbeispiel.svg
+  
 .. supplemental::
 
   Eine große Herausforderung ist das Design der Schnittstellen. Um wirkliche Unabhängigkeit zu erreichen, müssen die Schnittstellen sehr gut definiert sein. Sind die Schnittstellen nicht klar definiert oder unzureichend, dann kann das zu viel Arbeit und Koordination zwischen den Teams führen, die eigentlich unerwünscht ist!
@@ -303,26 +293,19 @@ Schlüsselkonzepte von Microservices
 - erlauben das Ausrichten der Architektur an der Organisation (vgl. Conway's Law)
 
 
-.. class:: smaller
 
 Microservices und Conway's Law
 -------------------------------------
 
-.. container:: two-columns no-default-width
+.. class:: columns incremental-list
 
-  .. container:: column no-separator
-
-    .. rubric:: Traditionelle Schichtenarchitektur 
+- .. rubric:: Traditionelle Schichtenarchitektur 
        
-    .. image:: images/microservices/aenderungen-bei-klassischer-architektur.svg
-      :height: 835px
+  .. image:: images/microservices/aenderungen-bei-klassischer-architektur.svg
        
-  .. container:: column
+- .. rubric:: Microservices Architektur
 
-    .. rubric:: Microservices Architektur
-
-    .. image:: images/microservices/aenderungen-bei-microservices-architektur.svg
-      :height: 960px
+  .. image:: images/microservices/aenderungen-bei-microservices-architektur.svg
        
 
 
@@ -332,7 +315,6 @@ Microservices und Technologieeinsatz
 Microservices sind flexibel bzgl. des Technologieeinsatzes und ermöglichen den Einsatz „der geeignetsten“ Technologie.
 
 .. image:: images/microservices/technologische-flexibilitaet.svg
-   :height: 700px
    :align: center
 
 
@@ -342,20 +324,18 @@ Microservices sind flexibel bzgl. des Technologieeinsatzes und ermöglichen den 
 Aktuelle Standardtechnologien
 -------------------------------------
 
-.. stack::
+.. deck::
 
-  .. layer:: tiny
+  .. card::
   
     .. image:: screenshots/tiobe_2012-04.png
-       :height: 1050px
        :align: center
 
     Quelle: TIOBE Programming Community Index - April 2012
 
-  .. layer:: incremental tiny
+  .. card::
 
     .. image:: screenshots/tiobe_2024-02.png
-       :height: 1050px
        :align: center
 
     Quelle: `TIOBE Programming Community Index - Feb. 2024 <https://www.tiobe.com/tiobe-index/>`__
@@ -367,26 +347,14 @@ Microservices und Skalierbarkeit
 Sauber entworfene Microservices können sehr gut skaliert werden.
 
 .. image:: images/microservices/skalierbarkeit.svg
-   :height: 899px
    :align: center
 
 
 
-.. class:: no-title
+Implementierung einer langlebigen Transaktion?
+-------------------------------------------------
 
-Microservices und Transaktionen
--------------------------------------
-
-.. container:: two-columns no-default-width
-
-  .. container:: column no-separator
-
-    .. rubric:: Implementierung einer langlebigen Transaktion?
-       
-  .. container:: column
-
-    .. image:: images/sagas/transaktion.svg
-      :height: 1160px
+.. image:: images/sagas/transaktion.svg
 
 .. supplemental::
 
@@ -394,21 +362,11 @@ Microservices und Transaktionen
 
 
 
-.. class:: no-title
 
-Transaktionen mit Hilfe von Sagas
--------------------------------------
+Aufteilung einer langlebigen Transaktion mit Sagas
+---------------------------------------------------------------
 
-.. container:: two-columns no-default-width
-
-  .. container:: column no-separator
-
-    .. rubric:: Aufteilung einer langlebigen Transaktion mit Hilfe von Sagas
-       
-  .. container:: column
-
-    .. image:: images/sagas/transaktion-mit-saga.svg
-      :height: 1160px
+.. image:: images/sagas/transaktion-mit-saga.svg
 
 .. supplemental::
 
@@ -422,12 +380,10 @@ Transaktionen mit Hilfe von Sagas
 
 .. class:: smaller-slide-title vertical-title
 
-Optimierung der Abarbeitungsreihenfolge zwecks Minimierung von mgl. *Rollbacks*
+Minimierung von mgl. *Rollbacks*
 --------------------------------------------------------------------------------
 
 .. image:: images/sagas/transaktion-mit-saga-mit-weniger-rollbacks.svg
-   :height: 1160px
-   :align: center
 
 .. supplemental::
 
@@ -439,8 +395,6 @@ Langlebige Transaktionen mit orchestrierten Sagas
 --------------------------------------------------------
 
 .. image:: images/sagas/orchestrierte-saga.svg
-   :height: 1000px
-   :align: center
 
 .. supplemental::
 
@@ -464,7 +418,6 @@ Langlebige Transaktionen mit choreografierten Sagas
 ----------------------------------------------------------
 
 .. image:: images/sagas/choreographierte-saga.svg
-   :height: 1000px
    :align: center
 
 .. supplemental::
@@ -475,40 +428,37 @@ Langlebige Transaktionen mit choreografierten Sagas
 *Dual-write Problem*
 ---------------------
 
-.. stack::
+.. deck::
 
-  .. layer:: 
+  .. card:: 
 
-    .. container:: two-columns
+    .. grid::
 
-      .. container:: column no-separator
+      .. cell::
           
         .. image:: images/dual-write/no-crash-no-problem.svg
-          :height: 800px
-          :align: center
-        
-      .. container:: column
+       
+      .. cell::
 
         An welcher Stelle könnte es zu einem Problem kommen?
 
-        .. admonition:: Warnung
-          :class: warning incremental
+        .. warning::
+          :class: incremental
           
           Das „Schreiben“ auf zwei unterschiedliche Systeme (hier: Datenbank und Event-processing Middleware) erfordert immer einen transaktionalen Kontext. 
           
           Kann dieser nicht hergestellt werden, dann kann es zu Inkonsistenzen kommen (:eng:`Dual-write Problem`).
 
-  .. layer:: incremental
+  .. card:: 
 
-    .. container:: two-columns
+    .. grid:: 
 
-      .. container:: column no-separator
+      .. cell::
  
         .. image:: images/dual-write/crash.svg
-          :height: 800px
           :align: center
 
-      .. container:: column slightly-more-smaller
+      .. cell::
 
         .. rubric:: Lösungsideen
 
@@ -531,27 +481,24 @@ Langlebige Transaktionen mit choreografierten Sagas
 *Dual-write Problem* - Outbox Pattern
 -----------------------------------------
 
-.. container:: two-columns
+.. image:: images/dual-write/outbox-pattern.svg
 
-  .. image:: images/dual-write/outbox-pattern.svg
-      :height: 800px
-      :align: center
+.. supplemental:: 
+  
+  .. rubric:: *(eine) Lösung: Outbox Pattern*
 
-  .. container:: 
+  - Die Aktionen werden (zusätzlich) in einer Outbox-Tabelle gespeichert und dann **asynchron** verarbeitet.
 
-    .. rubric:: *(eine) Lösung: Outbox Pattern*
-
-    - Die Aktionen werden (zusätzlich) in einer Outbox-Tabelle gespeichert und dann **asynchron** verarbeitet.
-
-    - Damit kann *Eventual Consistency* erreicht werden.
+  - Damit kann *Eventual Consistency* erreicht werden.
 
 
-.. class:: no-title center-child-elements
+
+.. class:: no-title center-content transition-fade
 
 Die Wahl der richtigen Architektur ist ein Tradeoff!
 -----------------------------------------------------
 
-.. container:: assessment bold huge dhbw-red text-align-center
+.. container:: accentuate
 
   Die Wahl der Softwarearchitektur ist immer eine Abwägung von vielen Tradeoffs!
 

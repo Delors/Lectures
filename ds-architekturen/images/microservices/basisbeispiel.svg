@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xl="http://www.w3.org/1999/xlink" viewBox="25 20 403 365" width="403" height="365">
+  <defs>
+    <filter id="Shadow" filterUnits="userSpaceOnUse" x="-15.3" y="-16.5">
+      <feGaussianBlur in="SourceAlpha" result="blur" stdDeviation="1.308"/>
+      <feOffset in="blur" result="offset" dx="0" dy="3"/>
+      <feFlood flood-color="black" flood-opacity=".5" result="flood"/>
+      <feComposite in="flood" in2="offset" operator="in" result="color"/>
+      <feMerge>
+        <feMergeNode in="color"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <font-face font-family="Noto Sans Display" font-size="14" panose-1="2 11 5 2 4 5 4 2 2 4" units-per-em="1000" underline-position="-100" underline-thickness="50" slope="0" x-height="536" cap-height="714" ascent="1069.0002" descent="-292.99927" font-weight="400">
+      <font-face-src>
+        <font-face-name name="NotoSansDisplay-Regular"/>
+      </font-face-src>
+    </font-face>
+    <marker orient="auto" overflow="visible" markerUnits="strokeWidth" id="StickArrow_Marker" stroke-linejoin="miter" stroke-miterlimit="10" viewBox="-1 -4 10 8" markerWidth="10" markerHeight="8" color="black">
+      <g>
+        <path d="M 8 0 L 0 0 M 0 -3 L 8 0 L 0 3" fill="none" stroke="currentColor" stroke-width="1"/>
+      </g>
+    </marker>
+    <font-face font-family="Noto Sans Display" font-size="13" panose-1="2 11 5 2 4 5 4 2 2 4" units-per-em="1000" underline-position="-100" underline-thickness="50" slope="0" x-height="536" cap-height="714" ascent="1069.0002" descent="-292.99927" font-weight="400">
+      <font-face-src>
+        <font-face-name name="NotoSansDisplay-Regular"/>
+      </font-face-src>
+    </font-face>
+  </defs>
+  <metadata> Produced by OmniGraffle 8.0\n2025-03-23 12:53:50 +0000</metadata>
+  <g id="basisbeispiel" stroke-dasharray="none" stroke-opacity="1" fill-opacity="1" fill="none" stroke="none">
+    <title>basisbeispiel</title>
+    <g id="basisbeispiel_Layer_1">
+      <title>Layer 1</title>
+      <g id="Graphic_108">
+        <rect x="30" y="150" width="170" height="230" fill="white"/>
+        <path d="M 30 150 L 200 150 L 200 380 L 30 380 Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4.0,4.0" stroke-width="1"/>
+      </g>
+      <g id="Graphic_79" filter="url(#Shadow)">
+        <path d="M 49 201.92149 L 80 161.92149 L 142 161.92149 L 173 201.92149 L 142 241.92149 L 80 241.92149 Z" fill="white"/>
+        <path d="M 49 201.92149 L 80 161.92149 L 142 161.92149 L 173 201.92149 L 142 241.92149 L 80 241.92149 Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(82 192.42149)" fill="black">
+          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="3.674" y="15" xml:space="preserve">Versand</tspan>
+        </text>
+      </g>
+      <g id="Line_83">
+        <line x1="252.04032" y1="201.92149" x2="183.4" y2="201.92149" marker-end="url(#StickArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_103">
+        <rect x="30" y="25" width="170" height="80" fill="white"/>
+        <rect x="30" y="25" width="170" height="80" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(35 30)" fill="black">
+          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="21.431" y="15" xml:space="preserve">Thema (eng. Topic)</tspan>
+        </text>
+      </g>
+      <g id="Graphic_104">
+        <path d="M 79 70.80369 L 166 70.80369 C 173.73199 70.80369 180 77.071705 180 84.80369 L 180 84.80369 C 180 92.53568 173.73199 98.80369 166 98.80369 L 79 98.80369 C 71.26801 98.80369 65 92.53568 65 84.80369 L 65 84.80369 C 65 77.071705 71.26801 70.80369 79 70.80369 Z" fill="white"/>
+        <path d="M 79 70.80369 L 166 70.80369 C 173.73199 70.80369 180 77.071705 180 84.80369 L 180 84.80369 C 180 92.53568 173.73199 98.80369 166 98.80369 L 79 98.80369 C 71.26801 98.80369 65 92.53568 65 84.80369 L 65 84.80369 C 65 77.071705 71.26801 70.80369 79 70.80369 Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(70 75.30369)" fill="black">
+          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="2.373" y="15" xml:space="preserve">Versandereignis</tspan>
+        </text>
+      </g>
+      <g id="Graphic_105">
+        <path d="M 73 64.402035 L 160 64.402035 C 167.73199 64.402035 174 70.67005 174 78.402035 L 174 78.402035 C 174 86.13402 167.73199 92.40204 160 92.40204 L 73 92.40204 C 65.26801 92.40204 59 86.13402 59 78.402035 L 59 78.402035 C 59 70.67005 65.26801 64.402035 73 64.402035 Z" fill="white"/>
+        <path d="M 73 64.402035 L 160 64.402035 C 167.73199 64.402035 174 70.67005 174 78.402035 L 174 78.402035 C 174 86.13402 167.73199 92.40204 160 92.40204 L 73 92.40204 C 65.26801 92.40204 59 86.13402 59 78.402035 L 59 78.402035 C 59 70.67005 65.26801 64.402035 73 64.402035 Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(64 68.902035)" fill="black">
+          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="2.373" y="15" xml:space="preserve">Versandereignis</tspan>
+        </text>
+      </g>
+      <g id="Graphic_106">
+        <path d="M 67.5 57.30369 L 154.5 57.30369 C 162.23199 57.30369 168.5 63.571705 168.5 71.30369 L 168.5 71.30369 C 168.5 79.03568 162.23199 85.30369 154.5 85.30369 L 67.5 85.30369 C 59.76801 85.30369 53.5 79.03568 53.5 71.30369 L 53.5 71.30369 C 53.5 63.571705 59.76801 57.30369 67.5 57.30369 Z" fill="white"/>
+        <path d="M 67.5 57.30369 L 154.5 57.30369 C 162.23199 57.30369 168.5 63.571705 168.5 71.30369 L 168.5 71.30369 C 168.5 79.03568 162.23199 85.30369 154.5 85.30369 L 67.5 85.30369 C 59.76801 85.30369 53.5 79.03568 53.5 71.30369 L 53.5 71.30369 C 53.5 63.571705 59.76801 57.30369 67.5 57.30369 Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(58.5 61.80369)" fill="black">
+          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="2.373" y="15" xml:space="preserve">Versandereignis</tspan>
+        </text>
+      </g>
+      <g id="Line_107">
+        <line x1="262.43936" y1="162.61873" x2="183.66905" y2="110.46537" marker-end="url(#StickArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_109">
+        <path d="M 281.9206 229.9976 C 255.73815 223.92149 266.17905 172.77057 307.9459 181.4984 C 311.82093 164.48506 360.39015 167.24652 360.07263 181.4984 C 390.527 163.27006 429.4459 199.61702 403.3412 217.84537 C 434.66553 226.68294 402.94593 274.2986 377.23815 266.34456 C 375.18075 279.60206 329.22297 284.24144 325.18917 266.34456 C 299.1655 285.45757 244.90197 256.07026 281.9206 229.9976 Z" fill="white"/>
+        <path d="M 281.9206 229.9976 C 255.73815 223.92149 266.17905 172.77057 307.9459 181.4984 C 311.82093 164.48506 360.39015 167.24652 360.07263 181.4984 C 390.527 163.27006 429.4459 199.61702 403.3412 217.84537 C 434.66553 226.68294 402.94593 274.2986 377.23815 266.34456 C 375.18075 279.60206 329.22297 284.24144 325.18917 266.34456 C 299.1655 285.45757 244.90197 256.07026 281.9206 229.9976 Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(290.10065 214.42149)" fill="black">
+          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="8.069001" y="15" xml:space="preserve">Konsumenten</tspan>
+        </text>
+      </g>
+      <g id="Graphic_110">
+        <path d="M 271.9206 218.9976 C 245.73815 212.92149 256.17905 161.77057 297.9459 170.4984 C 301.82093 153.48506 350.39015 156.24652 350.07263 170.4984 C 380.527 152.27006 419.4459 188.61702 393.3412 206.84537 C 424.66553 215.68294 392.94593 263.2986 367.23815 255.34456 C 365.18075 268.60206 319.22297 273.24144 315.18917 255.34456 C 289.1655 274.45757 234.90197 245.07026 271.9206 218.9976 Z" fill="white"/>
+        <path d="M 271.9206 218.9976 C 245.73815 212.92149 256.17905 161.77057 297.9459 170.4984 C 301.82093 153.48506 350.39015 156.24652 350.07263 170.4984 C 380.527 152.27006 419.4459 188.61702 393.3412 206.84537 C 424.66553 215.68294 392.94593 263.2986 367.23815 255.34456 C 365.18075 268.60206 319.22297 273.24144 315.18917 255.34456 C 289.1655 274.45757 234.90197 245.07026 271.9206 218.9976 Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(280.10065 203.42149)" fill="black">
+          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="8.069001" y="15" xml:space="preserve">Konsumenten</tspan>
+        </text>
+      </g>
+      <g id="Graphic_111">
+        <path d="M 261.9206 207.9976 C 235.73815 201.92149 246.17905 150.77057 287.9459 159.4984 C 291.82093 142.48506 340.39015 145.24652 340.07263 159.4984 C 370.527 141.27006 409.4459 177.61702 383.3412 195.84537 C 414.66553 204.68294 382.94593 252.2986 357.23815 244.34456 C 355.18075 257.60206 309.22297 262.24144 305.18917 244.34456 C 279.1655 263.45757 224.90197 234.07026 261.9206 207.9976 Z" fill="white"/>
+        <path d="M 261.9206 207.9976 C 235.73815 201.92149 246.17905 150.77057 287.9459 159.4984 C 291.82093 142.48506 340.39015 145.24652 340.07263 159.4984 C 370.527 141.27006 409.4459 177.61702 383.3412 195.84537 C 414.66553 204.68294 382.94593 252.2986 357.23815 244.34456 C 355.18075 257.60206 309.22297 262.24144 305.18917 244.34456 C 279.1655 263.45757 224.90197 234.07026 261.9206 207.9976 Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(270.10065 192.42149)" fill="black">
+          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="8.069001" y="15" xml:space="preserve">Konsumenten</tspan>
+        </text>
+      </g>
+      <g id="Line_112">
+        <line x1="115" y1="150" x2="115" y2="114.9" marker-end="url(#StickArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_113">
+        <title>Rectangle</title>
+        <rect x="76.5" y="279.95638" width="69" height="74" fill="white"/>
+        <rect x="76.5" y="279.95638" width="69" height="74" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(81.5 297.95638)" fill="black">
+          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="4.174" y="15" xml:space="preserve">Versand</tspan>
+          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="20.4" y="34" xml:space="preserve">DB</tspan>
+        </text>
+      </g>
+      <g id="Graphic_114">
+        <ellipse cx="111" cy="279.5687" rx="34.5000551276154" ry="14.0000223706266" fill="white"/>
+        <ellipse cx="111" cy="279.5687" rx="34.5000551276154" ry="14.0000223706266" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_115">
+        <ellipse cx="111" cy="353.95638" rx="34.5000551276154" ry="14.0000223706265" fill="white"/>
+        <ellipse cx="111" cy="353.95638" rx="34.5000551276154" ry="14.0000223706265" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Line_116">
+        <line x1="111" y1="241.92149" x2="111" y2="255.66868" marker-end="url(#StickArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_117">
+        <text transform="translate(190.21926 186.77872)" fill="black">
+          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="2060574e-19" y="15" xml:space="preserve">REST API</tspan>
+        </text>
+      </g>
+      <g id="Graphic_118">
+        <text transform="translate(115.592 118)" fill="black">
+          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="0" y="15" xml:space="preserve">löst aus</tspan>
+        </text>
+      </g>
+      <g id="Graphic_119">
+        <text transform="translate(224.89377 118)" fill="black">
+          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="73896445e-20" y="15" xml:space="preserve">verarbeitet</tspan>
+        </text>
+      </g>
+      <g id="Graphic_120"/>
+      <g id="Graphic_121">
+        <text transform="translate(219 29)" fill="black">
+          <tspan font-family="Noto Sans Display" font-size="13" font-weight="400" fill="black" x="0" y="14" xml:space="preserve">Ereignisse werden ausgelöst bzw. </tspan>
+          <tspan font-family="Noto Sans Display" font-size="13" font-weight="400" fill="black" x="132.769" y="32" xml:space="preserve">produziert</tspan>
+          <tspan font-family="Noto Sans Display" font-size="13" font-weight="400" fill="black" x="21.034" y="68" xml:space="preserve">Ereignisse werden verarbeitet</tspan>
+        </text>
+      </g>
+    </g>
+  </g>
+</svg>

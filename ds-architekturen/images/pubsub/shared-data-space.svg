@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xl="http://www.w3.org/1999/xlink" xmlns:dc="http://purl.org/dc/elements/1.1/" viewBox="371 142 566 209" width="566" height="209">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xl="http://www.w3.org/1999/xlink" viewBox="371 142 566 209" width="566" height="209">
   <defs>
-    <font-face font-family="Helvetica" font-size="16" units-per-em="1000" underline-position="-75.68359" underline-thickness="49.316406" slope="0" x-height="532.22656" cap-height="719.7266" ascent="770.0195" descent="-229.98047" font-weight="700">
+    <font-face font-family="Noto Sans Display" font-size="14" panose-1="2 11 5 2 4 5 4 2 2 4" units-per-em="1000" underline-position="-99.99084" underline-thickness="49.98779" slope="0" x-height="546" cap-height="714" ascent="1069.0002" descent="-292.99927" font-weight="700">
       <font-face-src>
-        <font-face-name name="Helvetica-Bold"/>
+        <font-face-name name="NotoSansDisplay-Regular_Bold"/>
       </font-face-src>
     </font-face>
     <marker orient="auto" overflow="visible" markerUnits="strokeWidth" id="StickArrow_Marker" stroke-linejoin="miter" stroke-miterlimit="10" viewBox="-1 -3 7 6" markerWidth="7" markerHeight="6" color="black">
@@ -17,14 +17,14 @@
         <path d="M 3 0 L -1.8 -1.8 L 0 0 L 0 0 L -1.8 1.8 Z" fill="currentColor" stroke="currentColor" stroke-width="1"/>
       </g>
     </marker>
-    <font-face font-family="Helvetica Neue" font-size="16" panose-1="2 0 5 3 0 0 0 2 0 4" units-per-em="1000" underline-position="-100" underline-thickness="50" slope="0" x-height="517" cap-height="714" ascent="951.9958" descent="-212.99744" font-weight="400">
+    <font-face font-family="Noto Sans Display" font-size="14" panose-1="2 11 5 2 4 5 4 2 2 4" units-per-em="1000" underline-position="-100" underline-thickness="50" slope="0" x-height="536" cap-height="714" ascent="1069.0002" descent="-292.99927" font-weight="400">
       <font-face-src>
-        <font-face-name name="HelveticaNeue"/>
+        <font-face-name name="NotoSansDisplay-Regular"/>
       </font-face-src>
     </font-face>
   </defs>
-  <metadata> Produced by OmniGraffle 8.0\n2024-02-25 11:29:41 +0000</metadata>
-  <g id="shared-data-space" stroke="none" stroke-dasharray="none" fill-opacity="1" fill="none" stroke-opacity="1">
+  <metadata> Produced by OmniGraffle 8.0\n2025-03-23 12:16:37 +0000</metadata>
+  <g id="shared-data-space" stroke-dasharray="none" stroke-opacity="1" fill-opacity="1" fill="none" stroke="none">
     <title>shared-data-space</title>
     <rect fill="white" x="371" y="142" width="566" height="209"/>
     <g id="shared-data-space_Layer_1">
@@ -33,22 +33,22 @@
         <path d="M 431 143 L 588.232 143 C 590.44114 143 592.232 144.79086 592.232 147 L 592.232 192 C 592.232 194.20914 590.44114 196 588.232 196 L 431 196 C 428.79086 196 427 194.20914 427 192 L 427 147 C 427 144.79086 428.79086 143 431 143 Z" fill="#fbfbfb"/>
         <path d="M 431 143 L 588.232 143 C 590.44114 143 592.232 144.79086 592.232 147 L 592.232 192 C 592.232 194.20914 590.44114 196 588.232 196 L 431 196 C 428.79086 196 427 194.20914 427 192 L 427 147 C 427 144.79086 428.79086 143 431 143 Z" stroke="#a5a5a5" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
         <text transform="translate(432 160)" fill="black">
-          <tspan font-family="Helvetica" font-size="16" font-weight="700" fill="black" x="28.72928" y="15">Komponente</tspan>
+          <tspan font-family="Noto Sans Display" font-size="14" font-weight="700" fill="black" x="34.565997" y="15" xml:space="preserve">Komponente</tspan>
         </text>
       </g>
       <g id="Graphic_24">
         <path d="M 670 143 L 827.232 143 C 829.4411 143 831.232 144.79086 831.232 147 L 831.232 192 C 831.232 194.20914 829.4411 196 827.232 196 L 670 196 C 667.7909 196 666 194.20914 666 192 L 666 147 C 666 144.79086 667.7909 143 670 143 Z" fill="#fbfbfb"/>
         <path d="M 670 143 L 827.232 143 C 829.4411 143 831.232 144.79086 831.232 147 L 831.232 192 C 831.232 194.20914 829.4411 196 827.232 196 L 670 196 C 667.7909 196 666 194.20914 666 192 L 666 147 C 666 144.79086 667.7909 143 670 143 Z" stroke="#a5a5a5" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
         <text transform="translate(671 160)" fill="black">
-          <tspan font-family="Helvetica" font-size="16" font-weight="700" fill="black" x="28.72928" y="15">Komponente</tspan>
+          <tspan font-family="Noto Sans Display" font-size="14" font-weight="700" fill="black" x="34.565997" y="15" xml:space="preserve">Komponente</tspan>
         </text>
       </g>
       <g id="Graphic_23">
         <path d="M 536 344.7 L 536 302.3 C 536 299.3744 579.68 297 633.5 297 C 687.32 297 731 299.3744 731 302.3 L 731 344.7 C 731 347.6256 687.32 350 633.5 350 C 579.68 350 536 347.6256 536 344.7" fill="#fbfbfb"/>
         <path d="M 536 344.7 L 536 302.3 C 536 299.3744 579.68 297 633.5 297 C 687.32 297 731 299.3744 731 302.3 L 731 344.7 C 731 347.6256 687.32 350 633.5 350 C 579.68 350 536 347.6256 536 344.7 M 536 302.3 C 536 305.2256 579.68 307.6 633.5 307.6 C 687.32 307.6 731 305.2256 731 302.3" stroke="#a5a5a5" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
         <text transform="translate(541 307.15)" fill="black">
-          <tspan font-family="Helvetica" font-size="16" font-weight="700" fill="black" x="8.03125" y="15">geteilter (persistenter) </tspan>
-          <tspan font-family="Helvetica" font-size="16" font-weight="700" fill="black" x="37.367188" y="34">Datenspeicher</tspan>
+          <tspan font-family="Noto Sans Display" font-size="14" font-weight="700" fill="black" x="15.808" y="15" xml:space="preserve">geteilter (persistenter) </tspan>
+          <tspan font-family="Noto Sans Display" font-size="14" font-weight="700" fill="black" x="43.892" y="34" xml:space="preserve">Datenspeicher</tspan>
         </text>
       </g>
       <g id="Graphic_22">
@@ -62,18 +62,18 @@
         <path d="M 530 195 L 530 236 L 550.1068 256.10677 L 550.1068 288.7" marker-end="url(#SharpArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
       </g>
       <g id="Graphic_38">
-        <text transform="translate(535 204.776)" fill="black">
-          <tspan font-family="Helvetica Neue" font-size="16" font-weight="400" fill="black" x="0" y="15">publish</tspan>
+        <text transform="translate(538.06 204.776)" fill="black">
+          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="20250468e-20" y="15" xml:space="preserve">publish</tspan>
         </text>
       </g>
       <g id="Graphic_39">
-        <text transform="translate(692 204.776)" fill="black">
-          <tspan font-family="Helvetica Neue" font-size="16" font-weight="400" fill="black" x="7602807e-19" y="15">subscribe</tspan>
+        <text transform="translate(697.092 204.776)" fill="black">
+          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="20250468e-20" y="15" xml:space="preserve">subscribe</tspan>
         </text>
       </g>
       <g id="Graphic_41">
-        <text transform="translate(792.6283 208.552)" fill="black">
-          <tspan font-family="Helvetica Neue" font-size="16" font-weight="400" fill="black" x="73896445e-20" y="15">Datenbereitstellung</tspan>
+        <text transform="translate(799.8783 208.552)" fill="black">
+          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="7247536e-19" y="15" xml:space="preserve">Datenbereitstellung</tspan>
         </text>
       </g>
       <g id="Line_42">
