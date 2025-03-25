@@ -1,5 +1,5 @@
 .. meta::
-    :version: genesis
+    :version: renaissance
     :author: Michael Eichberg
     :keywords: "IT Sicherheit", "Reverse Engineering"
     :description lang=de: Fortgeschrittene Angewandte IT Sicherheit
@@ -26,7 +26,7 @@
 
 
 
-.. class:: animated-symbol organic-red
+.. class:: animated-logo 
 
 Cybersecurity 
 =====================================================
@@ -49,9 +49,9 @@ Cybersecurity
 Was ist Cybersecurity?
 -----------------------
 
-.. stack::
+.. deck::
 
-    .. layer:: incremental
+    .. card::
 
         .. epigraph::
 
@@ -59,7 +59,7 @@ Was ist Cybersecurity?
 
             -- July 4th, 2024 - `Cisco <https://www.cisco.com/c/en/us/products/security/what-is-cybersecurity.html>`__
 
-    .. layer:: incremental
+    .. card:: 
 
         .. epigraph::
 
@@ -67,7 +67,7 @@ Was ist Cybersecurity?
 
             -- July 4th, 2024 - `Britannica <https://www.britannica.com/technology/computer-security>`__
 
-    .. layer:: incremental
+    .. card:: 
 
         .. epigraph::
             
@@ -79,7 +79,7 @@ Was ist Cybersecurity?
 
             -- `Verordnung (EU) 2019/881 <https://eur-lex.europa.eu/legal-content/DE/TXT/PDF/?uri=CELEX:32019R0881>`__
 
-    .. layer:: incremental
+    .. card:: 
 
         Das Ziel der IT-Sicherheit ist es Systeme vor:
 
@@ -97,195 +97,168 @@ Von praktischen und theoretischen Angriffen
 -------------------------------------------------------------
 
 
-
-.. class:: no-title center-child-elements
-
-Indonesia - Ransomware Angriff
+Neuigkeiten aus der Welt der IT Sicherheit 
 -------------------------------------------------------------
 
-.. epigraph::
+.. deck::
 
-    **Indonesia won’t pay an $8 million ransom after a cyberattack compromised its national data center**
+    .. card::
+                
+        .. epigraph::
 
-    [...] The attackers have held data hostage and offered a key for access in return for the $8 million ransom, said PT Telkom Indonesia’s director of network & IT solutions, Herlan Wijanarko, without giving further details. Wijanarko said the company, in collaboration with authorities at home and abroad, is investigating and trying to break the encryption that made data inaccessible. [...]
+            **Indonesia won’t pay an $8 million ransom after a cyberattack compromised its national data center**
 
-    -- June 25th, 2024 - `AP News <https://apnews.com/article/indonesia-ransomware-attack-national-data-center-213c14c6cc69d7b66815e58478f64cee>`__
+            [...] The attackers have held data hostage and offered a key for access in return for the $8 million ransom, said PT Telkom Indonesia’s director of network & IT solutions, Herlan Wijanarko, without giving further details. Wijanarko said the company, in collaboration with authorities at home and abroad, is investigating and trying to break the encryption that made data inaccessible. [...]
 
+            -- June 25th, 2024 - `AP News <https://apnews.com/article/indonesia-ransomware-attack-national-data-center-213c14c6cc69d7b66815e58478f64cee>`__
 
+    .. card::
 
-.. class:: no-title center-child-elements
+        .. epigraph:: 
 
-Crypto-Hackers Steal $2.2bn as North Koreans Dominate
--------------------------------------------------------------
+            **Crypto-Hackers Steal $2.2bn as North Koreans Dominate**
 
-.. epigraph:: 
+            Threat actors stole $2.2bn from cryptocurrency platforms in 2024, with the majority (61%) of illicit funds attributed to North Korean hackers, according to Chainalysis. [...]
 
-    **Crypto-Hackers Steal $2.2bn as North Koreans Dominate**
+            Notably, attacks between $50 and $100m, and those above $100m, occurred far more frequently in 2024 than they did in 2023, suggesting that the DPRK is getting better and faster at massive exploits[...].
 
-    Threat actors stole $2.2bn from cryptocurrency platforms in 2024, with the majority (61%) of illicit funds attributed to North Korean hackers, according to Chainalysis. [...]
+            This increase is unfortunately also being matched by “a growing density” of hacks which yielded lower amounts of around $10,000 in value.[...]
 
-    Notably, attacks between $50 and $100m, and those above $100m, occurred far more frequently in 2024 than they did in 2023, suggesting that the DPRK is getting better and faster at massive exploits[...].
+            Some of these events appear to be linked to North Korean IT workers, who have been increasingly infiltrating crypto and Web3 companies, and compromising their networks, operations, and integrity.
 
-    This increase is unfortunately also being matched by “a growing density” of hacks which yielded lower amounts of around $10,000 in value.[...]
+            -- `19.12.2024 - Infosecurity Magazine <https://www.infosecurity-magazine.com/news/cryptohackers-steal-22bn-north/>`__
 
-    Some of these events appear to be linked to North Korean IT workers, who have been increasingly infiltrating crypto and Web3 companies, and compromising their networks, operations, and integrity.
+    .. card::
 
-    -- 19.12.2024 - `Infosecurity Magazine <https://www.infosecurity-magazine.com/news/cryptohackers-steal-22bn-north/>`__
+        .. epigraph::
 
+            **Hackers shut down heating in Ukrainian city with malware**
 
+            For two days in mid-January, some Ukrainians in the city of Lviv had to live without central heating and suffer freezing temperatures because of a cyberattack against a municipal energy company [...]
+            
+            [...], the cybersecurity company Dragos published a report with details about a new malware dubbed FrostyGoop, which the company says is designed to target industrial control systems [...]
 
-.. class:: no-title center-child-elements
-
-Cyberangriff auf KritIs - Zentralheizung ausgefallen
-----------------------------------------------------
-
-.. epigraph::
-
-    **Hackers shut down heating in Ukrainian city with malware**
-
-    For two days in mid-January, some Ukrainians in the city of Lviv had to live without central heating and suffer freezing temperatures because of a cyberattack against a municipal energy company [...]
-    
-    [...], the cybersecurity company Dragos published a report with details about a new malware dubbed FrostyGoop, which the company says is designed to target industrial control systems [...]
-
-    -- Juli 2024 - `Techcrunch <https://techcrunch.com/2024/07/23/hackers-shut-down-heating-in-ukrainian-city-with-malware-researchers-say/?guccounter=1>`__
+            -- Juli 2024 - `Techcrunch <https://techcrunch.com/2024/07/23/hackers-shut-down-heating-in-ukrainian-city-with-malware-researchers-say/?guccounter=1>`__
 
 
-
-.. class:: no-title center-child-elements
-
-Cyberangriff auf KritIs - Telefonnetzwerke
-----------------------------------------------------
-
-.. epigraph::
-
-    **US government tells officials, politicians to ditch regular calls and texts**
-
-    The U.S. government [CISA] is urging senior government officials and politicians to ditch phone calls and text messages following intrusions at major American telecommunications companies blamed on Chinese hackers. [...]
-
-    The first recommendation: "Use only end-to-end encrypted communications." [...]
-
-
-    --18.12.2024 - `Reuters <https://www.reuters.com/world/us/us-cyber-watchdog-tells-senior-officials-immediately-adopt-end-to-end-encryption-2024-12-18/>`__    
-
-
-
-
-.. class:: no-title center-child-elements
-
-Cyberangriff auf Fahrräder
-----------------------------
-
-.. epigraph::
-
-    **Want to Win a Bike Race? Hack Your Rival’s Wireless Shifters**
-
-    Relatively inexpensive hardware can be used to hack the Shimano Di2 wireless gear-shifting systems used by cyclists [...]. They tested the eavesdrop-and-replay attack with a $1,500 USRP software-defined radio, an antenna, and a laptop but said the setup could be miniaturized. Attackers could spoof signals from up to 30 feet away, causing the target bike to shift gears unexpectedly or lock into the wrong gear. 
-
-    --August 2024 - `summary provided by ACM <https://technews.acm.org/archives.cfm?fo=2024-08-aug/aug-16-2024.html>`__; `full article: Wired <https://www.wired.com/story/shimano-wireless-bicycle-shifter-jamming-replay-attacks/>`__
-
-
-
-.. class:: no-title center-child-elements
-
-Auslesen von Daten über die Luftschnittstelle
-----------------------------------------------------------------
-
-
-.. epigraph::
-
-    **New RAMBO attack steals data using RAM in air-gapped computers**
-
-    [...] A novel side-channel attack dubbed  "RAMBO" (Radiation of Air-gapped Memory Bus for Offense) generates electromagnetic radiation from a device's RAM to send data from air-gapped computers.
-
-    .. container:: incremental
-
-        [...] To conduct the Rambo attack, an attacker plants malware on the air-gapped computer to collect sensitive data and prepare it for transmission. It transmits the data by manipulating memory access patterns to generate controlled electromagnetic emissions from the device's RAM. 
-
-    .. container:: incremental
-
-        [...] The RAMBO attack achieves data transfer rates of up to 1,000 bits per second (bps) [at a distance of up to 7 meters], equating to 128 bytes per second, or 0.125 KB/s.
-
-    --September 2024 - `Bleepingcomputer  <https://www.bleepingcomputer.com/news/security/new-rambo-attack-steals-data-using-ram-in-air-gapped-computers/>`__
-
-
-.. supplemental::
-
-    .. rubric:: Weitere Details
-
-    .. epigraph::
-    
-        The emitted data is encoded into "1" and "0," represented in the radio signals as "on" and "off." The researchers opted for using Manchester code to enhance error detection and ensure signal synchronization, reducing the chances for incorrect interpretations at the receiver's end.
+    .. card::
         
-        The attacker may use a relatively inexpensive Software-Defined Radio (SDR) with an antenna to intercept the modulated electromagnetic emissions and convert them back into binary information.
+        .. epigraph::
+
+            **US government tells officials, politicians to ditch regular calls and texts**
+
+            The U.S. government [CISA] is urging senior government officials and politicians to ditch phone calls and text messages following intrusions at major American telecommunications companies blamed on Chinese hackers. [...]
+
+            The first recommendation: "Use only end-to-end encrypted communications." [...]
 
 
-.. class:: no-title center-child-elements
+            --18.12.2024 - `Reuters <https://www.reuters.com/world/us/us-cyber-watchdog-tells-senior-officials-immediately-adopt-end-to-end-encryption-2024-12-18/>`__    
 
-Snailload
--------------------------------------------------------------
 
-.. epigraph::
+    .. card::
+                
+        .. epigraph::
 
-    **SnailLoad: Exploiting Remote Network Latency Measurements without JavaScript**
+            **Want to Win a Bike Race? Hack Your Rival’s Wireless Shifters**
 
-    [Side-Channel Attack to circumvent privacy.]
+            Relatively inexpensive hardware can be used to hack the Shimano Di2 wireless gear-shifting systems used by cyclists [...]. They tested the eavesdrop-and-replay attack with a $1,500 USRP software-defined radio, an antenna, and a laptop but said the setup could be miniaturized. Attackers could spoof signals from up to 30 feet away, causing the target bike to shift gears unexpectedly or lock into the wrong gear. 
+
+            --August 2024 - `summary provided by ACM <https://technews.acm.org/archives.cfm?fo=2024-08-aug/aug-16-2024.html>`__; `full article: Wired <https://www.wired.com/story/shimano-wireless-bicycle-shifter-jamming-replay-attacks/>`__
+
+    .. card::
+
+        .. epigraph::
+
+            **New RAMBO attack steals data using RAM in air-gapped computers**
+
+            [...] A novel side-channel attack dubbed  "RAMBO" (Radiation of Air-gapped Memory Bus for Offense) generates electromagnetic radiation from a device's RAM to send data from air-gapped computers.
+
+            .. container:: incremental
+
+                [...] To conduct the Rambo attack, an attacker plants malware on the air-gapped computer to collect sensitive data and prepare it for transmission. It transmits the data by manipulating memory access patterns to generate controlled electromagnetic emissions from the device's RAM. 
+
+            .. container:: incremental
+
+                [...] The RAMBO attack achieves data transfer rates of up to 1,000 bits per second (bps) [at a distance of up to 7 meters], equating to 128 bytes per second, or 0.125 KB/s.
+
+            --September 2024 - `Bleepingcomputer  <https://www.bleepingcomputer.com/news/security/new-rambo-attack-steals-data-using-ram-in-air-gapped-computers/>`__
+
+
+        .. supplemental::
+
+            .. rubric:: Rambo Attack - weitere Details
+
+            .. epigraph::
+            
+                The emitted data is encoded into "1" and "0", represented in the radio signals as "on" and "off." The researchers opted for using Manchester code to enhance error detection and ensure signal synchronization, reducing the chances for incorrect interpretations at the receiver's end.
+                
+                The attacker may use a relatively inexpensive Software-Defined Radio (SDR) with an antenna to intercept the modulated electromagnetic emissions and convert them back into binary information.
+
+
+    .. card::
+                
+        .. epigraph::
+
+            **SnailLoad: Exploiting Remote Network Latency Measurements without JavaScript**
+
+            [Side-Channel Attack to circumvent privacy.]
+            
+            [...] The attack setup for SnailLoad. A victim downloads data from an attacker's HTTP server while it watches a video on a video-sharing platform, e.g., YouTube. Due to the network bottleneck on the victim's side, the attacker can infer the transmitted amount of data by measuring the packet round trip time. The round trip time traces are unique per video and can be used to classify the video watched by the victim. [...]
+
+            -- 28.6.2024 Snailload: `Paper <https://www.snailload.com/snailload.pdf>`__, `Web <https://www.snailload.com>`__
+
+    .. card::
+
+        .. epigraph::
+
+            **New PIXHELL Attack Exploits LCD Screen Noise to Exfiltrate Data from Air-Gapped Computers**
+
+            A new side-channel attack dubbed PIXHELL could be abused to target air-gapped computers by breaching the "audio gap" and exfiltrating sensitive information by taking advantage of the noise generated by pixels on an LCD screen.
+
+            Malware in the air-gap and audio-gap computers generates crafted pixel patterns that produce noise in the frequency range of 0 - 22 kHz," Dr. Mordechai Guri, the head of the Offensive Cyber Research Lab in the Department of Software and Information Systems Engineering at the Ben Gurion University of the Negev in Israel, said in a newly published paper. [...]
+
+            -- 10. Sept. 2024 - `The Hacker News <https://thehackernews.com/2024/09/new-pixhell-attack-exploits-screen.html>`__
+
+    .. card::
+                
+        .. epigraph::
+
+            **FAST 4.000 VERHAFTUNGEN: Interpol gelingt großer Schlag gegen Onlinebetrug**
+
+            Die Einsatzkräfte haben nicht nur weltweit Tausende von Verdächtigen verhaftet, sondern auch Vermögenswerte im Umfang von 257 Millionen US-Dollar beschlagnahmt.
+
+            [...] Mit einem Gesamtwert von 135 Millionen US-Dollar besteht laut Interpol mehr als die Hälfte davon aus beschlagnahmten Fiat-Währungen wie US-Dollar, Euro oder Yen. Weitere zwei Millionen Dollar liegen in Form von Kryptowährungen vor. Hinzu kommen andere Vermögenswerte wie etwa Immobilien, Luxusfahrzeuge, teurer Schmuck und andere hochwertige Gegenstände und Sammlungen im Gesamtwert von 120 Millionen US-Dollar. [...]
+
+            --29. Juni 2024 - `Golem.de <https://www.golem.de/news/fast-4-000-verhaftungen-interpol-gelingt-grosser-schlag-gegen-onlinebetrug-2406-186568.html>`__
+
+    .. card::
+                
+        .. epigraph::
+
+            *CEO VERHAFTET*
+
+            Der Hersteller soll insgesamt 240.000 Geräte mit der DDoS-Funktion ausgestattet haben – teils ab Werk, teils erst nachträglich per Firmwareupdate.
+
+            [...] In Südkorea sind fünf Mitarbeiter sowie der CEO eines Unternehmens verhaftet worden. Dieses soll Satellitenreceiver hergestellt und Hunderttausende davon auf Wunsch eines Kunden mit einer DDoS-Funktion ausgestattet haben. Wie [...] unter Verweis auf Angaben der südkoreanischen Polizei berichtet, lieferte der Hersteller 98.000 Geräte ab Werk mit dieser Funktion aus. [...] 
+
+            Dass Geräte ab Werk mit Schadsoftware ausgeliefert werden, ist gerade im unteren Preissegment keine Seltenheit. Sicherheitsforscher deckten erst im vergangenen Jahr eine Malware-Kampagne auf, bei der vor allem billige Android-Geräte wie Smartphones, Tablets und TV-Boxen aus China vor ihrer Auslieferung an Endkunden mit einer Schadsoftware ausgestattet worden waren. 
+
+            -- 3.12.2024 - `Golem.de <https://www.golem.de/news/ceo-verhaftet-satellitenreceiver-jahrelang-mit-ddos-funktion-ausgeliefert-2412-191354.html>`__
+
+
+    .. card::
+
+        .. epigraph::
     
-    [...] The attack setup for SnailLoad. A victim downloads data from an attacker's HTTP server while it watches a video on a video-sharing platform, e.g., YouTube. Due to the network bottleneck on the victim's side, the attacker can infer the transmitted amount of data by measuring the packet round trip time. The round trip time traces are unique per video and can be used to classify the video watched by the victim. [...]
+            **U.S. charges 14 North Koreans in $88 million identity theft and extortion case**
 
-    -- 28.6.2024 Snailload: `Paper <https://www.snailload.com/snailload.pdf>`__, `Web <https://www.snailload.com>`__
+            The Department of Justice accused 14 North Koreans of conspiring to use false identities to get IT jobs with U.S. companies and siphon money back to their home country.
 
+            The indictment in Missouri federal court alleged that the conspiracy generated at least $88 million.
 
+            The State Department said Thursday it is offering an up to $5 million reward for information about the conspirators and others associated with the two “North Korean front companies.”
 
-.. class:: no-title center-child-elements
-
-Side-Channel Attack
---------------------------
-
-.. epigraph::
-
-    **New PIXHELL Attack Exploits LCD Screen Noise to Exfiltrate Data from Air-Gapped Computers**
-
-    A new side-channel attack dubbed PIXHELL could be abused to target air-gapped computers by breaching the "audio gap" and exfiltrating sensitive information by taking advantage of the noise generated by pixels on an LCD screen.
-
-    Malware in the air-gap and audio-gap computers generates crafted pixel patterns that produce noise in the frequency range of 0 - 22 kHz," Dr. Mordechai Guri, the head of the Offensive Cyber Research Lab in the Department of Software and Information Systems Engineering at the Ben Gurion University of the Negev in Israel, said in a newly published paper. [...]
-
-    -- 10. Sept. 2024 - `The Hacker News <https://thehackernews.com/2024/09/new-pixhell-attack-exploits-screen.html>`__
-
-
-
-.. class:: no-title center-child-elements
-
-Online-Betrug
------------------
-
-.. epigraph::
-
-    **FAST 4.000 VERHAFTUNGEN: Interpol gelingt großer Schlag gegen Onlinebetrug**
-
-    Die Einsatzkräfte haben nicht nur weltweit Tausende von Verdächtigen verhaftet, sondern auch Vermögenswerte im Umfang von 257 Millionen US-Dollar beschlagnahmt.
-
-    [...] Mit einem Gesamtwert von 135 Millionen US-Dollar besteht laut Interpol mehr als die Hälfte davon aus beschlagnahmten Fiat-Währungen wie US-Dollar, Euro oder Yen. Weitere zwei Millionen Dollar liegen in Form von Kryptowährungen vor. Hinzu kommen andere Vermögenswerte wie etwa Immobilien, Luxusfahrzeuge, teurer Schmuck und andere hochwertige Gegenstände und Sammlungen im Gesamtwert von 120 Millionen US-Dollar. [...]
-
-    --29. Juni 2024 - `Golem.de <https://www.golem.de/news/fast-4-000-verhaftungen-interpol-gelingt-grosser-schlag-gegen-onlinebetrug-2406-186568.html>`__
-
-
-
-.. class:: no-title center-child-elements
-
-Receiver mit DDoS Funktion
--------------------------------------------------------------
-
-.. epigraph::
-
-    *CEO VERHAFTET*
-
-    Der Hersteller soll insgesamt 240.000 Geräte mit der DDoS-Funktion ausgestattet haben – teils ab Werk, teils erst nachträglich per Firmwareupdate.
-
-    [...] In Südkorea sind fünf Mitarbeiter sowie der CEO eines Unternehmens verhaftet worden. Dieses soll Satellitenreceiver hergestellt und Hunderttausende davon auf Wunsch eines Kunden mit einer DDoS-Funktion ausgestattet haben. Wie [...] unter Verweis auf Angaben der südkoreanischen Polizei berichtet, lieferte der Hersteller 98.000 Geräte ab Werk mit dieser Funktion aus. [...] 
-
-    Dass Geräte ab Werk mit Schadsoftware ausgeliefert werden, ist gerade im unteren Preissegment keine Seltenheit. Sicherheitsforscher deckten erst im vergangenen Jahr eine Malware-Kampagne auf, bei der vor allem billige Android-Geräte wie Smartphones, Tablets und TV-Boxen aus China vor ihrer Auslieferung an Endkunden mit einer Schadsoftware ausgestattet worden waren. 
-
-    -- 3.12.2024 - `Golem.de <https://www.golem.de/news/ceo-verhaftet-satellitenreceiver-jahrelang-mit-ddos-funktion-ausgeliefert-2412-191354.html>`__
+            -- 12.12.2024 - `CNBC <https://www.cnbc.com/2024/12/12/north-koreans-charged-identity-theft-extortion-conspiracy-doj.html>`__
 
 
 
@@ -309,32 +282,23 @@ Cybersicherheit ist das Geschäftsrisiko Nr. 1
 Wichtige Kennzahlen bzgl. Cybersecurity-Vorfällen\ [#]_
 -----------------------------------------------------------------
 
-.. container:: scrollable
+.. story:: 
 
-    .. class:: incremental
+    .. class:: incremental-list
 
     :Mean Time to Detection (MTTD): 
         Die mittlere Zeit, die benötigt wird, um einen Cyberangriff zu entdecken.
 
-    .. class:: incremental
-
     :Mean Time to Identify (MTTI): 
         Die mittlere Zeit, die benötigt wird, um einen Cyberangriff zu identifizieren in der Hinsicht, dass die Schwachstelle erkannt wird bzw. die Art des Vorfalls erkannt wird und eine erste Idee entwickelt wird, wie gegen den Angriff vorgegangen werden kann.
 
-    .. class:: incremental
-
     :Mean Time to Respond (MTTR): 
         Die mittlere Zeit, die benötigt wird, um auf einen Cyberangriff so zu reagieren, dass kein weiterer Schaden entsteht und der Weg zur Wiederherstellung der normalen Operationen eingeleitet werden kann.
-
-    .. class:: incremental
 
     :Mean Time to Contain (MTTC):
         Die mittlere Zeit, die benötigt wird, um einen Cyberangriff einzudämmen. D. h. die Zeit, die benötigt wird, um zu verhindern, dass sich der Angriff weiter ausbreitet.
 
         MTTC = MTTD + MTTI + MTTR
-
-
-    .. class:: incremental
 
     :Mean Time to Normal (MTTN) bzw. Mean Time to Recover/Restore/Resolve (MTTR):
         Die mittlere Zeit, die benötigt wird, um die normalen Operationen wiederherzustellen. 
@@ -364,7 +328,7 @@ Angriffe auf die Schutzziele der IT-Sicherheit
 Ausgewählte Angriffe, Angriffsmethoden und Bedrohungsszenarien
 ----------------------------------------------------------------
 
-.. class:: incremental
+.. class:: incremental-list
 
 - Backdoors (:ger:`Hintertüren`)
 - (Distributed-)Denial-of-service Angriffe
@@ -373,15 +337,14 @@ Ausgewählte Angriffe, Angriffsmethoden und Bedrohungsszenarien
 - Malware
 - Man-in-the-middle (MITM) Angriffe
 - Privilege escalation (unterschieden werden: horizontale und vertikale)
-- Side-Channel attacks/\ :ger:`Seitenkanalangriffe`
-- Spoofing (z. B. IP-Spoofing)
+- Side-Channel attacks (:ger:`Seitenkanalangriffe`)
+- Spoofing (z. B. IP-Spoofing) (:ger:`Vortäuschen`)
 - Social engineering (z. B. Phishing)
   
-.. class:: incremental
+.. class:: incremental-list
     
 - Advanced Persistent Threats (APT)
 - *Store-now, Decrypt-later* (:ger:`Speichere jetzt, Entschlüssele später`)
-
 
 .. supplemental::
 
@@ -395,16 +358,16 @@ Schutzziele der IT-Sicherheit: CIA-Triade
 --------------------------------------------
 
 .. raw:: html
-    :class: center-child-elements
+    :class: center-content
 
     <style>
     .cia-triangle {
         position: relative;
-        width: 400px;
-        height: 400px;
+        width: 20ch;
+        height: 20ch;
         overflow: visible;
-        scale: 1.5;
-        transform: translate(0, 50px);
+
+        transform: translate(0, 2.5ch);
 
         * {
             position: absolute;
@@ -420,8 +383,8 @@ Schutzziele der IT-Sicherheit: CIA-Triade
         }
         .bottom-left,
         .bottom-right {
-            width: 200px;
-            height: 135px;
+            width: 10ch;
+            height: 6.75ch;
             z-index: 1;
             bottom: 0;
             right: 0;            
@@ -429,8 +392,8 @@ Schutzziele der IT-Sicherheit: CIA-Triade
 
         .left,
         .right {
-            width: 200px;         
-            height: 400px;
+            width: 10ch;         
+            height: 20ch;
             z-index: 2;  
             mix-blend-mode: multiply;
         }
@@ -445,8 +408,7 @@ Schutzziele der IT-Sicherheit: CIA-Triade
         }
 
         p {
-            font-size: 0.75em;
-        
+            
             &.availability {
                 bottom: -20%;
                 left: 50%;
@@ -455,13 +417,13 @@ Schutzziele der IT-Sicherheit: CIA-Triade
 
             &.integrity {
                 top: 50%;
-                right: -20%;
+                right: -35%;
                 transform: translate(0, -50%);
             }
 
             &.confidentiality {
                 top: 50%;
-                left: -70%;
+                left: -85%;
                 transform: translate(0, -50%);
             }
         }
@@ -478,11 +440,11 @@ Schutzziele der IT-Sicherheit: CIA-Triade
 
 .. supplemental::
 
-    Confidentiality ≘dt. Vertraulichkeit
+    Confidentiality ≘ :ger:`Vertraulichkeit`
     
-    Integrity ≘dt. Integrität
+    Integrity ≘ :ger:`Integrität`
 
-    Availability ≘dt. Verfügbarkeit
+    Availability ≘ :ger:`Verfügbarkeit`
 
 
 
@@ -491,17 +453,11 @@ Erweiterte Schutzziele
 
 Neben den primären Schutzzielen, gibt es eine Reihe weiterer kontextabhängiger Schutzziele:
 
-.. class:: incremental
+.. class:: incremental-list
 
 :Verbindlichkeit/Nichtabstreitbarkeit (`Accountability/Non-repudiation`:eng:):
     Ein Akteur kann seine Handlungen nicht abstreiten.
-
-.. class:: incremental
-
 :Pseudo-/Anonymisierung: Eine Person kann nicht (mehr) identifiziert werden.
-
-.. class:: incremental
-
 :Authentizität (`Authenticity`:eng:): Ist eine Information echt bzw. vertrauenswürdig?
 
 
@@ -521,7 +477,7 @@ Weitergehende Informationen
 
     Getestet unter Mac OS 15.2, mit dem eingebauten Terminal und einer Bash Shell (ZSH funktioniert nicht).
 
-Falls Sie als Shell Bash nutzen und Linux oder Mac OS x verwenden, dann kopieren Sie bitte den folgenden Link in die Konsole, für weitergehende Informationen:
+Falls Sie als Shell Bash nutzen und Linux oder Mac OS x verwenden, dann kopieren Sie bitte den folgenden Befehl in die Konsole, für weitergehende Informationen:
 
 .. container:: monospaced
 
@@ -534,13 +490,15 @@ Falls Sie als Shell Bash nutzen und Linux oder Mac OS x verwenden, dann kopieren
 Eigenschaften von Social-Engineering Angriffe
 -------------------------------------------------------------
 
-.. class:: incremental with-explanations
+.. class:: incremental-list list-with-explanations
 
 - **sind häufig die Ursache für erfolgreiche Angriffe**
 
   (Der Hacker Kevin Mitnick war praktisch immer aufgrund von Social Engineering erfolgreich.)
 - stellen die größte Bedrohung für die Sicherheit von IT-Systemen dar
-- es wird angenommen, dass die betroffenen Personen es in vielen Fällen nicht merken :incremental:`(Beispiel: Fake Bewerbungsgespräch)`
+- es wird angenommen, dass die betroffenen Personen es in vielen Fällen nicht merken 
+
+  :incremental:`(Beispiel: Fake Bewerbungsgespräch)`
 - mittels OSINT kann die Vorbereitung von Social-Engineering Angriffen vereinfacht werden
 - neue technische Möglichkeiten (z. B. KI generierte Stimmen) erweitern die Angriffsmöglichkeiten
 
@@ -555,6 +513,7 @@ Eigenschaften von Social-Engineering Angriffe
     Durch KI generierte Stimmen kann es Angreifern gelingen, z. B. durch das Vortäuschen einer Notlage einer nahestehenden Person, an Informationen zu gelangen.
 
 
+
 **One Question Saved Ferrari from a Deepfake Scam**
 -------------------------------------------------------------
 
@@ -567,13 +526,12 @@ Eigenschaften von Social-Engineering Angriffe
 
 
 
-
 Ausgewählte Social-Engineering Angriffe 
 -------------------------------------------------------------
 
-.. container:: scrollable
+.. story::
 
-    .. class:: incremental
+    .. class:: incremental-list
 
     :Phishing and Spear Phishing: 
 
@@ -581,59 +539,41 @@ Ausgewählte Social-Engineering Angriffe
         
         *Spear phishing* ist Phishing, bei der der Angreifer auf eine bestimmte Zielgruppe oder sogar eine einzelne Person abzielt.
 
-    .. class:: incremental
 
     :Smishing: 
     
         Phishing mit Hilfe von SMS.
 
-    .. class:: incremental
-
     :Vishing:
 
         Phishing mit Hilfe von Telefonanrufen.
         
-        .. incremental::
+        (Z. B. `Anrufe von Europol <https://www.europol.europa.eu/publications-events/publications/vishing-calls>`__)
 
-            (Z. B. `Anrufe von Europol <https://www.europol.europa.eu/publications-events/publications/vishing-calls>`__)
-
-    .. class:: incremental
 
     :Quishing/QR phishing: 
 
         Phishing mit Hilfe von QR Codes. 
 
-    .. class:: incremental
-
     :Whaling:
 
         Phishing, dass sich gegen hochrangige und sehr ausgewählte Personen richtet (z. B. den CEO eines Unternehmens).
-
-    .. class:: incremental
 
     :Pharming:
 
         Manipulation des DNS-Servers, um den Nutzer auf eine gefälschte Webseite zu leiten, um dann sensitive Informationen zu erlangen.
 
-    .. class:: incremental
-
     :Spam / Spam over Internet messaging (SPIM):
 
         Unerwünschte und nicht angeforderte E-Mail-Nachrichten oder Nachrichten in sozialen Medien bzw. Instant Messaging-Diensten.
-
-    .. class:: incremental
 
     :Dumpster Diving:
 
         Durchsuchen von „Müllcontainern“ nach Informationen, die für einen Angriff nützlich sein könnten.
 
-    .. class:: incremental
-
     :Shoulder Surfing:
 
         Beobachten von Personen, die sich an einem Computer anmelden, um das Passwort zu erfahren oder die sensitive Informationen auf dem Schreibtisch liegen haben.   
-
-    .. class:: incremental
 
     :Tailgating:
 
@@ -641,55 +581,35 @@ Ausgewählte Social-Engineering Angriffe
         
         Dies kann z. B. durch Zugangsschleusen verhindert werden, die immer nur einer Person den Zugang gewähren. 
 
-    .. class:: incremental
-
     :Identity Fraud:
 
         Identitätsdiebstahl. Der Angreifer gibt sich als jemand anderes aus, um an Informationen zu gelangen oder um eine Straftat zu begehen.
-
-    .. class:: incremental
 
     :Invoice Scams:
 
         Versenden von Rechnungen, für Dienstleistungen und Produkte die man nicht gekauft hat (z. B. Rechnungen für Postzustellung.)
 
-    .. class:: incremental
-
     :Credential Harvesting:
     
         Sammlung von Zugangsdaten, die durch Sicherheitslücken in Systemen oder durch Phishing erlangt wurden. 
 
-    .. class:: incremental
-
     :Hoax:
         Eine bewusste Falschmeldung, die Menschen dazu veranlasst etwas falsches zu glauben. 
-
-    .. class:: incremental
 
     :Impersonation oder Pretexting: 
         Vorgabe einer falschen Identität (z. B. als Mitarbeiter des IT-Supports); d. h. der Angreifer gibt sich persönlich als jemand anderes aus, um an Informationen zu gelangen und nutzt dafür keine elektronischen Hilfsmittel.
 
-    .. class:: incremental
-
     :Eavesdropping:
         Abhören von Gesprächen, um an relevante Informationen zu gelangen.   
-
-    .. class:: incremental
 
     :Eliciting Information:
         Der Angreifer versucht durch geschicktes Fragen an Informationen zu gelangen, die für einen Angriff nützlich sein könnten.
 
-    .. class:: incremental
-
     :Baiting (`Ködern`:ger:):
         Der Angreifer bietet etwas an, um an Informationen zu gelangen (z. B. ein USB-Stick mit einem Virus, der sich beim Einstecken des USB-Sticks auf dem Rechner installiert.)
 
-    .. class:: incremental
-
     :Watering Hole Attack:
         Der Angreifer infiziert eine Webseite, die von der Zielgruppe häufig besucht wird, um dann die Besucher der Webseite anzugreifen.
-    
-    .. class:: incremental
 
     :Typo Squatting:
         Ausnutzen von Tippfehlern durch das Registrieren einer Domain, die der Domain eines Zielunternehmens ähnelt, um dann Besucher der Webseite auf eine gefälschte Webseite zu leiten. (z. B. `www.gooogle.com`)
@@ -709,21 +629,6 @@ Ausgewählte Social-Engineering Angriffe
 
     In der Anfangszeit von Github und Bitbucket wurden häufig Zugangsdaten und Zertifikate in öffentlichen Repositories gefunden, da die Nutzer diese im Quellcode hinterlegt hatten oder sogar als Ressourcen direkt eingebunden hatten.
 
-    .. rubric:: Impersonation
-
-    .. epigraph::
-    
-        **U.S. charges 14 North Koreans in $88 million identity theft and extortion case**
-
-        The Department of Justice accused 14 North Koreans of conspiring to use false identities to get IT jobs with U.S. companies and siphon money back to their home country.
-
-        The indictment in Missouri federal court alleged that the conspiracy generated at least $88 million.
-
-        The State Department said Thursday it is offering an up to $5 million reward for information about the conspirators and others associated with the two “North Korean front companies.”
-
-        -- 12.12.2024 - `CNBC <https://www.cnbc.com/2024/12/12/north-koreans-charged-identity-theft-extortion-conspiracy-doj.html>`__
-
-
     .. rubric:: Typische Phishing E-Mail
 
     .. image:: images/phishing-mail-fake-fedex.png 
@@ -735,7 +640,7 @@ Ausgewählte Social-Engineering Angriffe
 „Motivationstechniken“ von Angreifern
 -------------------------------------------------------------
 
-.. class:: incremental
+.. class:: incremental-list
 
 - Autorität: Der Angreifer gibt sich z. B. als Mitarbeiter des IT-Supports aus.
 - Einschüchterung (:eng:`Intimidation`)
@@ -754,11 +659,10 @@ Cybersicherheit stärken
 
 
 
-.. class:: no-title center-child-elements
+.. class:: center-content
 
 Bug-Bounty-Programme
 -------------------------------------------------------------
-
 
 .. epigraph::
 
@@ -778,9 +682,9 @@ Bug-Bounty-Programme
     Bug-Bounty-Programme sind Initiativen, die Einzelpersonen oder Forschergruppen für das Finden und Melden von Softwarefehlern belohnen. Diese Programme werden häufig von Softwareanbietern initiiert, um die Sicherheit ihrer Produkte zu verbessern.
 
 
-.. class:: no-title center-child-elements
+.. class:: center-content
 
-BSI: Post-Quantum Cryptography
+Post-Quantum Cryptography (PQC) Einführen
 -------------------------------------------------------------
 
 .. epigraph::
@@ -793,9 +697,11 @@ BSI: Post-Quantum Cryptography
 
     :incremental:`[...] The transition should also consider cryptoagility, allowing to ensure a more resilient transition to PQC[...]`
 
-    -- 27.11.2024 `Securing Tomorrow, Today: Transitioning to Post-Quantum Cryptography (PQC) <https://www.bsi.bund.de/SharedDocs/Downloads/EN/BSI/Crypto/PQC-joint-statement.pdf?__blob=publicationFile&v=3>`__
+    -- 27.11.2024 `Securing Tomorrow, Today: Transitioning to PQC <https://www.bsi.bund.de/SharedDocs/Downloads/EN/BSI/Crypto/PQC-joint-statement.pdf?__blob=publicationFile&v=3>`__
 
 
+
+.. class:: center-content
 
 Quantencomputer - Bedrohungsbewertung
 -------------------------------------------------------------
@@ -806,9 +712,9 @@ Quantencomputer - Bedrohungsbewertung
 
     [...] preparing for the quantum threat should be considered an integral aspect of cybersecurity risk management. In an attempt to quantify the risk, the 2023 issue of the Quantum Threat Timeline conducted a survey among 37 international leading experts from academia and industry. Out of these, 17 estimated the risk that a CRQC appears within a 10-year timeframe higher than 5%. Moreover, 10 of these respondents even indicated a likelihood of about 50% or more.
 
-    :incremental:`[...] To ensure an acceptable level of readiness, we recommend that these should be protected against 'store now, decrypt later' attacks as soon as possible, latest by the end of 2030.`
+    :incremental:`[...] To ensure an acceptable level of readiness, we recommend that these should be protected against "store now, decrypt later" attacks as soon as possible, latest by the end of 2030.`
 
-    -- 27.11.2024 `Securing Tomorrow, Today: Transitioning to Post-Quantum Cryptography (PQC) <https://www.bsi.bund.de/SharedDocs/Downloads/EN/BSI/Crypto/PQC-joint-statement.pdf?__blob=publicationFile&v=3>`__
+    -- 27.11.2024 `Securing Tomorrow, Today: Transitioning to PQC <https://www.bsi.bund.de/SharedDocs/Downloads/EN/BSI/Crypto/PQC-joint-statement.pdf?__blob=publicationFile&v=3>`__
 
 
 .. class:: new-subsection transition-scale
@@ -825,21 +731,17 @@ Die NIS 2 Richtlinie
 NIS 2 Richtlinie (:eng:`NIS 2 Directive`)
 -------------------------------------------------------------
 
-.. container:: scrollable
+.. class:: incremental-list list-with-explanations
 
-    .. class:: incremental list-with-explanations
+- Die NIS2-Richtlinie ist die zweite EU-Richtlinie zur Netz- und Informationssicherheit (NIS) in der EU.
+- *seit 17. Oktober 2024 müss(t)en alle nationalstaaten entsprechende Regelungen in nationales Recht umgesetzt haben und ab 18. Oktober 2024 anwenden*
+- Das Hauptziel ist die Verbesserung der Widerstandsfähigkeit gegen Cyberkriminalität und die Verbesserung des europäischen und nationalen Cybersecurity-Managements.
 
-    - Die NIS2-Richtlinie ist die zweite EU-Richtlinie zur Netz- und Informationssicherheit (NIS) in der EU.
-    - seit 17. Oktober 2024 müssen alle nationalstaaten entsprechende Regelungen in nationales Recht umgesetzt haben und ab 18. Oktober 2024 anwenden
-    - Das Hauptziel ist die Verbesserung der Widerstandsfähigkeit gegen Cyberkriminalität und die Verbesserung des europäischen und nationalen Cybersecurity-Managements.
+    Die neue NIS-2-Richtlinie zielt darauf ab, die Widerstandsfähigkeit und Reaktionsfähigkeit des öffentlichen und privaten Sektors zu verbessern. Der Schwerpunkt der Richtlinie liegt auf der Bekämpfung der Cyberkriminalität.
 
-      Die neue NIS-2-Richtlinie zielt darauf ab, die Widerstandsfähigkeit und Reaktionsfähigkeit des öffentlichen und privaten Sektors zu verbessern. Der Schwerpunkt der Richtlinie liegt auf der Bekämpfung der Cyberkriminalität.
+-  Die NIS-2-Richtlinie gilt für Organisationen, inkl. Unternehmen und Zulieferer, die durch Erbringung wesentlicher oder wichtiger Dienstleistungen eine entscheidende Rolle für die Aufrechterhaltung der europäischen Wirtschaft und Gesellschaft spielen. 
 
-    -  Die NIS-2-Richtlinie gilt für Organisationen, inkl. Unternehmen und Zulieferer, die durch Erbringung wesentlicher oder wichtiger Dienstleistungen eine entscheidende Rolle für die Aufrechterhaltung der europäischen Wirtschaft und Gesellschaft spielen. 
-
-    - Die Führungskräfte von betroffenen Einrichtungen sind für die Überwachung der Umsetzung der NIS-2-Richtlinie verantwortlich und können für Verstöße gegen die NIS-2-Richtlinie haftbar gemacht werden (Artikel 20).
-
-
+- Die Führungskräfte von betroffenen Einrichtungen sind für die Überwachung der Umsetzung der NIS-2-Richtlinie verantwortlich und können für Verstöße gegen die NIS-2-Richtlinie haftbar gemacht werden (Artikel 20).
 
 .. supplemental::
 
@@ -869,41 +771,37 @@ NIS 2 - Berichtspflichten
 
 
 
-Von NIS2 betroffene Öffentliche und private Einrichtungen\ [#]_
+Von NIS2 betroffene öff. und priv. Einrichtungen\ [#]_
 -----------------------------------------------------------------
-
-.. container:: far-smaller
 
     Folgende Organisation mit mehr als 50 Mitarbeitern und einem Umsatz von mehr als 10 Millionen Euro müssen die NIS-2-Richtlinie einhalten (obligatorisch).
 
 
-.. container:: two-columns far-smaller
+.. class:: columns incremental-list
     
-    .. container:: column no-separator
+- \ 
+    - Post- und Kurierdienste
+    - Abfallwirtschaft
+    - Chemie
+    - Lebensmittel
+    - Herstellung medizinischer Geräten
+    - Computer und Elektronik
+    - Maschinen
+    - Kraftfahrzeuge
+    - Energie
 
-        - Post- und Kurierdienste
-        - Abfallwirtschaft
-        - Chemie
-        - Lebensmittel
-        - Herstellung medizinischer Geräten
-        - Computer und Elektronik
-        - Maschinen
-        - Kraftfahrzeuge
-        - Energie
+- \ 
+    - Verkehrswesen
+    - Bankwesen
+    - Finanzmarkt-Infrastrukturen
+    - Gesundheitswesen
+    - Trinkwasserversorgung und -verteilung
+    - Digitale Infrastrukturen
+    - Online-Marktplätze
+    - Online-Suchmaschinen
+    - Cloud Computing-Dienste
 
-    .. container:: column
-
-        - Verkehrswesen
-        - Bankwesen
-        - Finanzmarkt-Infrastrukturen
-        - Gesundheitswesen
-        - Trinkwasserversorgung und -verteilung
-        - Digitale Infrastrukturen
-        - Online-Marktplätze
-        - Online-Suchmaschinen
-        - Cloud Computing-Dienste
-
-.. container:: incremental far-smaller
+.. supplemental::
     
     Bis zum 17. April 2025 erstellen die Mitgliedstaaten eine Liste von wesentlichen und wichtigen Einrichtungen und von Einrichtungen, die Domänennamen-Registrierungsdienste erbringen und aktualisieren sie gegebenenfalls regelmäßig — spätestens alle 2 Jahre.
   
@@ -911,7 +809,7 @@ Von NIS2 betroffene Öffentliche und private Einrichtungen\ [#]_
 
 
 
-.. class:: no-title center-child-elements
+.. class:: no-title center-content
 
 NIS 2 - Nationale Cybersicherheitsstrategie
 -------------------------------------------------------------
@@ -929,10 +827,11 @@ NIS 2 - zentrale Einrichtungen
     :align: center
     :width: 95%
 
-.. container:: legende far-far-smaller padding-1em
+.. legend::
+    :class: dd-margin-left-2em s-font-size-80
 
-   :CSIRT: Computer Security Incident Response Team
-   :Behörden für das Krisenmanagement: Sollte es mehr als eine geben, so wird eine explizit benannt, die für die Koordination und das  Management von *Cybersicherheitsvorfällen großen Ausmaßes und Krisen* zuständig ist
+    :CSIRT: Computer Security Incident Response Team
+    :Behörden für das Krisenmanagement: Sollte es mehr als eine geben, so wird eine explizit benannt, die für die Koordination und das  Management von *Cybersicherheitsvorfällen großen Ausmaßes und Krisen* zuständig ist
  
 
 .. supplemental::
