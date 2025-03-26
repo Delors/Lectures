@@ -262,7 +262,7 @@ Caesar Cipher
 
     :: 
 
-        Unverschlüsselt:    meet me after the toga party
+        unverschlüsselt:    meet me after the toga party
 
     .. class:: incremental
         
