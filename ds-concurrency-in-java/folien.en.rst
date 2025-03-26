@@ -39,7 +39,7 @@ Concurrency in Java
 
 :Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
 :Kontakt: michael.eichberg@dhbw.de
-:Version: 1.0
+:Version: 1.0.1
 
 .. supplemental::
 
@@ -118,7 +118,7 @@ A *monitor* is an object in which the methods are executed in mutual exclusion (
 
   .. warning:: 
       
-     In Java, mutual exclusion only takes place between methods that have been explicitly declared as :java:`synchronised`.  
+     In Java, mutual exclusion only takes place between methods that have been explicitly declared as :java:`synchronized`.  
 
   *Monitors* are just one model (alternatives: *Semaphores*, *Message Passing*) that enables the communication and synchronization of threads. It is the standard model in Java and is directly supported by the Java Virtual Machine (JVM).
 
@@ -308,12 +308,10 @@ Complex return values
 
 .. supplemental::
 
-  The two methods: :java:`readX` and :java:`readY` are not synchronised, as reading :java:`int` values is atomic. However, they do allow an inconsistent state to be read! It is conceivable that the corresponding thread is interrupted directly after a :java:`readX` and another thread changes the values of :java:`x` and :java:`y`. If the original thread is then continued and calls :java:`readY`, it receives the new value of :java:`y` and thus has a pair of :java:`x`, :java:`y` that never existed in this form.
-
+  The two methods: :java:`readX` and :java:`readY` are not synchronized, as reading :java:`int` values is atomic. However, they do allow an inconsistent state to be read! It is conceivable that the corresponding thread is interrupted directly after a :java:`readX` and another thread changes the values of :java:`x` and :java:`y`. If the original thread is then continued and calls :java:`readY`, it receives the new value of :java:`y` and thus has a pair of :java:`x`, :java:`y` that never existed in this form.
 
   A consistent state can only be determined by the method :java:`read`, which reads the values of :java:`x` and :java:`y` in one step and returns them as a pair.
 
-  
   If it can be ensured that a reading thread names the instance in a :java:`synchronized` block, then the reading of a consistent state can also be ensured for several consecutive method calls.
 
   .. code:: java
