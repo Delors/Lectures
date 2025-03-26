@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xl="http://www.w3.org/1999/xlink" viewBox="36 166 345 322" width="345" height="322">
+  <style>
+    @import url('/LectureDoc2/ext/fonts/ld-fonts.css'); 
+  </style>
   <defs>
     <linearGradient x1="0" x2="1" id="Gradient" gradientUnits="userSpaceOnUse">
       <stop offset=".16833588" stop-color="#029ed5"/>
@@ -12,11 +15,6 @@
     <linearGradient id="Obj_Gradient_3" xl:href="#Gradient" gradientTransform="translate(346.77932 318.5556) rotate(-133.44236) scale(119.97285)"/>
     <linearGradient id="Obj_Gradient_4" xl:href="#Gradient" gradientTransform="translate(278.42603 218.0532) rotate(46.55764) scale(78.83715)"/>
     <linearGradient id="Obj_Gradient_5" xl:href="#Gradient" gradientTransform="translate(348.08603 319.8623) rotate(-133.44236) scale(119.97285)"/>
-    <font-face font-family="Helvetica" font-size="16" units-per-em="1000" underline-position="-75.68359" underline-thickness="49.316406" slope="0" x-height="522.9492" cap-height="717.28516" ascent="770.0195" descent="-229.98047" font-weight="400">
-      <font-face-src>
-        <font-face-name name="Helvetica"/>
-      </font-face-src>
-    </font-face>
     <linearGradient id="Obj_Gradient_6" xl:href="#Gradient" gradientTransform="translate(279.73274 218.0532) rotate(46.55764) scale(78.83715)"/>
     <filter id="Shadow" filterUnits="userSpaceOnUse" x="1.5" y="133.8">
       <feGaussianBlur in="SourceAlpha" result="blur" stdDeviation="1.308"/>
@@ -33,11 +31,6 @@
       <stop offset="1" stop-color="#9b1329"/>
     </linearGradient>
     <linearGradient id="Obj_Gradient_7" xl:href="#Gradient_2" gradientTransform="translate(352.58284 325.2169) rotate(121.7881) scale(179.95509)"/>
-    <font-face font-family="Helvetica" font-size="16" units-per-em="1000" underline-position="-75.68359" underline-thickness="49.316406" slope="-750" x-height="522.9492" cap-height="717.28516" ascent="770.0195" descent="-229.98047" font-style="italic" font-weight="400">
-      <font-face-src>
-        <font-face-name name="Helvetica-Oblique"/>
-      </font-face-src>
-    </font-face>
     <marker orient="auto" overflow="visible" markerUnits="strokeWidth" id="FilledArrow_Marker" stroke-linejoin="miter" stroke-miterlimit="10" viewBox="-1 -3 7 6" markerWidth="7" markerHeight="6" color="black">
       <g>
         <path d="M 4.8 0 L 0 -1.8 L 0 1.8 Z" fill="currentColor" stroke="currentColor" stroke-width="1"/>
@@ -73,8 +66,8 @@
             <path d="M 347.8227 248.00248 C 347.82276 247.98778 347.82276 247.97308 347.8227 247.9584 L 347.8227 247.729 L 347.81737 247.729 C 347.6516 243.85264 343.65197 239.99533 335.8185 237.03746 C 319.81295 230.9938 293.86283 230.9938 277.85727 237.03746 C 270.02382 239.99533 266.0242 243.85264 265.85842 247.729 L 265.85306 247.729 L 265.85306 247.9649 C 265.85304 247.97526 265.85304 247.9856 265.85306 247.99595 L 265.85306 304.6204 C 265.85304 304.63076 265.85304 304.6411 265.85306 304.65145 L 265.85306 305.07197 L 265.8692 305.07197 C 266.15215 308.88597 270.14817 312.668 277.85727 315.5789 C 293.86283 321.62257 319.81295 321.62257 335.8185 315.5789 C 343.5276 312.668 347.52363 308.88597 347.80657 305.07197 L 347.8227 305.07197 L 347.8227 304.65798 C 347.82276 304.64328 347.82276 304.6286 347.8227 304.6139 Z" fill="url(#Obj_Gradient_5)"/>
             <path d="M 347.8227 248.00248 C 347.82276 247.98778 347.82276 247.97308 347.8227 247.9584 L 347.8227 247.729 L 347.81737 247.729 C 347.6516 243.85264 343.65197 239.99533 335.8185 237.03746 C 319.81295 230.9938 293.86283 230.9938 277.85727 237.03746 C 270.02382 239.99533 266.0242 243.85264 265.85842 247.729 L 265.85306 247.729 L 265.85306 247.9649 C 265.85304 247.97526 265.85304 247.9856 265.85306 247.99595 L 265.85306 304.6204 C 265.85304 304.63076 265.85304 304.6411 265.85306 304.65145 L 265.85306 305.07197 L 265.8692 305.07197 C 266.15215 308.88597 270.14817 312.668 277.85727 315.5789 C 293.86283 321.62257 319.81295 321.62257 335.8185 315.5789 C 343.5276 312.668 347.52363 308.88597 347.80657 305.07197 L 347.8227 305.07197 L 347.8227 304.65798 C 347.82276 304.64328 347.82276 304.6286 347.8227 304.6139 Z" stroke="white" stroke-opacity=".48790474" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
             <text transform="translate(270.85304 247.80818)" fill="black">
-              <tspan font-family="Helvetica" font-size="16" font-weight="400" fill="black" x="20.414536" y="34" xml:space="preserve">OpA </tspan>
-              <tspan font-family="Helvetica" font-size="16" font-weight="400" fill="black" x="16.859848" y="53" xml:space="preserve">Table</tspan>
+              <tspan font-family="Noto Sans Display" font-size="16" font-weight="400" fill="black" x="20.414536" y="34" xml:space="preserve">OpA </tspan>
+              <tspan font-family="Noto Sans Display" font-size="16" font-weight="400" fill="black" x="16.859848" y="53" xml:space="preserve">Table</tspan>
             </text>
           </g>
           <g id="Graphic_4">
@@ -90,9 +83,9 @@
       <g id="Graphic_14" filter="url(#Shadow)">
         <path d="M 305.18454 339.198 L 371.7185 382.3845 L 346.30486 452.2615 L 264.06422 452.2615 L 238.65059 382.3845 Z" fill="url(#Obj_Gradient_7)"/>
         <text transform="translate(254.21816 379.448)" fill="white">
-          <tspan font-family="Helvetica" font-size="16" font-style="italic" font-weight="400" fill="white" x="30.50935" y="15" xml:space="preserve">Event </tspan>
-          <tspan font-family="Helvetica" font-size="16" font-style="italic" font-weight="400" fill="white" x="11.392162" y="34" xml:space="preserve">Processing </tspan>
-          <tspan font-family="Helvetica" font-size="16" font-style="italic" font-weight="400" fill="white" x="10.060131" y="53" xml:space="preserve">Middleware</tspan>
+          <tspan font-family="Noto Sans Display" font-size="16" font-style="italic" font-weight="400" fill="white" x="30.50935" y="15" xml:space="preserve">Event </tspan>
+          <tspan font-family="Noto Sans Display" font-size="16" font-style="italic" font-weight="400" fill="white" x="11.392162" y="34" xml:space="preserve">Processing </tspan>
+          <tspan font-family="Noto Sans Display" font-size="16" font-style="italic" font-weight="400" fill="white" x="10.060131" y="53" xml:space="preserve">Middleware</tspan>
         </text>
       </g>
       <g id="Line_15">
@@ -109,24 +102,24 @@
       </g>
       <g id="Graphic_20">
         <text transform="translate(174.5 253.5)" fill="black">
-          <tspan font-family="Helvetica" font-size="16" font-weight="400" fill="black" x="0" y="15" xml:space="preserve">update</tspan>
+          <tspan font-family="Noto Sans Display" font-size="16" font-weight="400" fill="black" x="0" y="15" xml:space="preserve">update</tspan>
         </text>
       </g>
       <g id="Graphic_21">
         <text transform="translate(179.52344 379.75977)" fill="black">
-          <tspan font-family="Helvetica" font-size="16" font-weight="400" fill="black" x="0" y="15" xml:space="preserve">publish</tspan>
+          <tspan font-family="Noto Sans Display" font-size="16" font-weight="400" fill="black" x="0" y="15" xml:space="preserve">publish</tspan>
         </text>
       </g>
       <g id="Graphic_22">
         <text transform="translate(42.32437 208.198)" fill="black">
-          <tspan font-family="Helvetica" font-size="16" font-weight="400" fill="black" x="0" y="15" xml:space="preserve">doOpA</tspan>
+          <tspan font-family="Noto Sans Display" font-size="16" font-weight="400" fill="black" x="0" y="15" xml:space="preserve">doOpA</tspan>
         </text>
       </g>
       <g id="Graphic_27">
         <path d="M 66.25025 167.5 L 214.82003 167.5 C 217.02916 167.5 218.82003 169.29086 218.82003 171.5 L 218.82003 199 C 218.82003 201.20914 217.02916 203 214.82003 203 L 66.25025 203 C 64.04111 203 62.25025 201.20914 62.25025 199 L 62.25025 171.5 C 62.25025 169.29086 64.04111 167.5 66.25025 167.5 Z" fill="white"/>
         <path d="M 66.25025 167.5 L 214.82003 167.5 C 217.02916 167.5 218.82003 169.29086 218.82003 171.5 L 218.82003 199 C 218.82003 201.20914 217.02916 203 214.82003 203 L 66.25025 203 C 64.04111 203 62.25025 201.20914 62.25025 199 L 62.25025 171.5 C 62.25025 169.29086 64.04111 167.5 66.25025 167.5 Z" stroke="#666" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
         <text transform="translate(67.25025 175.75)" fill="black">
-          <tspan font-family="Helvetica" font-size="16" font-weight="400" fill="black" x="36.82786" y="15" xml:space="preserve">Process X</tspan>
+          <tspan font-family="Noto Sans Display" font-size="16" font-weight="400" fill="black" x="36.82786" y="15" xml:space="preserve">Process X</tspan>
         </text>
       </g>
     </g>

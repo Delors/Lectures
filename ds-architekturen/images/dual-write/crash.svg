@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xl="http://www.w3.org/1999/xlink" viewBox="38 166 330 324" width="330" height="324">
+  <style>
+    @import url('/LectureDoc2/ext/fonts/ld-fonts.css'); 
+  </style>
   <defs>
     <linearGradient x1="0" x2="1" id="Gradient" gradientUnits="userSpaceOnUse">
       <stop offset=".16833588" stop-color="#029ed5"/>
@@ -12,11 +15,6 @@
     <linearGradient id="Obj_Gradient_3" xl:href="#Gradient" gradientTransform="translate(333.16213 319.3576) rotate(-133.44236) scale(119.97285)"/>
     <linearGradient id="Obj_Gradient_4" xl:href="#Gradient" gradientTransform="translate(264.80884 218.85521) rotate(46.55764) scale(78.83715)"/>
     <linearGradient id="Obj_Gradient_5" xl:href="#Gradient" gradientTransform="translate(334.46884 320.6643) rotate(-133.44236) scale(119.97285)"/>
-    <font-face font-family="Helvetica" font-size="16" units-per-em="1000" underline-position="-75.68359" underline-thickness="49.316406" slope="0" x-height="522.9492" cap-height="717.28516" ascent="770.0195" descent="-229.98047" font-weight="400">
-      <font-face-src>
-        <font-face-name name="Helvetica"/>
-      </font-face-src>
-    </font-face>
     <linearGradient id="Obj_Gradient_6" xl:href="#Gradient" gradientTransform="translate(266.11555 218.85521) rotate(46.55764) scale(78.83715)"/>
     <filter id="Shadow" filterUnits="userSpaceOnUse" x="5" y="133.6">
       <feGaussianBlur in="SourceAlpha" result="blur" stdDeviation="1.308"/>
@@ -33,21 +31,11 @@
       <stop offset="1" stop-color="#9b1329"/>
     </linearGradient>
     <linearGradient id="Obj_Gradient_7" xl:href="#Gradient_2" gradientTransform="translate(339.96566 326.0189) rotate(121.7881) scale(179.95509)"/>
-    <font-face font-family="Helvetica" font-size="16" units-per-em="1000" underline-position="-75.68359" underline-thickness="49.316406" slope="-750" x-height="522.9492" cap-height="717.28516" ascent="770.0195" descent="-229.98047" font-style="italic" font-weight="400">
-      <font-face-src>
-        <font-face-name name="Helvetica-Oblique"/>
-      </font-face-src>
-    </font-face>
     <marker orient="auto" overflow="visible" markerUnits="strokeWidth" id="FilledArrow_Marker" stroke-linejoin="miter" stroke-miterlimit="10" viewBox="-1 -3 7 6" markerWidth="7" markerHeight="6" color="black">
       <g>
         <path d="M 4.8 0 L 0 -1.8 L 0 1.8 Z" fill="currentColor" stroke="currentColor" stroke-width="1"/>
       </g>
     </marker>
-    <font-face font-family="Helvetica" font-size="36" units-per-em="1000" underline-position="-75.68359" underline-thickness="49.316406" slope="0" x-height="532.22656" cap-height="719.7266" ascent="770.0195" descent="-229.98047" font-weight="700">
-      <font-face-src>
-        <font-face-name name="Helvetica-Bold"/>
-      </font-face-src>
-    </font-face>
   </defs>
   <metadata> Produced by OmniGraffle 8.0\n2025-03-23 13:24:45 +0000</metadata>
   <g id="crash" stroke-dasharray="none" stroke-opacity="1" fill-opacity="1" fill="none" stroke="none">
@@ -78,8 +66,8 @@
             <path d="M 334.2055 248.80448 C 334.20557 248.78978 334.20557 248.77508 334.2055 248.7604 L 334.2055 248.531 L 334.20018 248.531 C 334.0344 244.65464 330.0348 240.79733 322.20132 237.83946 C 306.19576 231.7958 280.24565 231.7958 264.2401 237.83946 C 256.40663 240.79733 252.407 244.65464 252.24123 248.531 L 252.23588 248.531 L 252.23588 248.7669 C 252.23585 248.77726 252.23585 248.7876 252.23588 248.79796 L 252.23588 305.4224 C 252.23585 305.43276 252.23585 305.4431 252.23588 305.45346 L 252.23588 305.87397 L 252.25203 305.87397 C 252.53497 309.68797 256.531 313.47 264.2401 316.3809 C 280.24565 322.42458 306.19576 322.42458 322.20132 316.3809 C 329.91042 313.47 333.90644 309.68797 334.1894 305.87397 L 334.2055 305.87397 L 334.2055 305.45998 C 334.20557 305.44528 334.20557 305.4306 334.2055 305.4159 Z" fill="url(#Obj_Gradient_5)"/>
             <path d="M 334.2055 248.80448 C 334.20557 248.78978 334.20557 248.77508 334.2055 248.7604 L 334.2055 248.531 L 334.20018 248.531 C 334.0344 244.65464 330.0348 240.79733 322.20132 237.83946 C 306.19576 231.7958 280.24565 231.7958 264.2401 237.83946 C 256.40663 240.79733 252.407 244.65464 252.24123 248.531 L 252.23588 248.531 L 252.23588 248.7669 C 252.23585 248.77726 252.23585 248.7876 252.23588 248.79796 L 252.23588 305.4224 C 252.23585 305.43276 252.23585 305.4431 252.23588 305.45346 L 252.23588 305.87397 L 252.25203 305.87397 C 252.53497 309.68797 256.531 313.47 264.2401 316.3809 C 280.24565 322.42458 306.19576 322.42458 322.20132 316.3809 C 329.91042 313.47 333.90644 309.68797 334.1894 305.87397 L 334.2055 305.87397 L 334.2055 305.45998 C 334.20557 305.44528 334.20557 305.4306 334.2055 305.4159 Z" stroke="white" stroke-opacity=".48790474" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
             <text transform="translate(257.23586 248.61018)" fill="black">
-              <tspan font-family="Helvetica" font-size="16" font-weight="400" fill="black" x="20.414536" y="34" xml:space="preserve">OpA </tspan>
-              <tspan font-family="Helvetica" font-size="16" font-weight="400" fill="black" x="16.859848" y="53" xml:space="preserve">Table</tspan>
+              <tspan font-family="Noto Sans Display" font-size="16" font-weight="400" fill="black" x="20.414536" y="34" >OpA </tspan>
+              <tspan font-family="Noto Sans Display" font-size="16" font-weight="400" fill="black" x="16.859848" y="53" >Table</tspan>
             </text>
           </g>
           <g id="Graphic_4">
@@ -95,9 +83,9 @@
       <g id="Graphic_14" filter="url(#Shadow)">
         <path d="M 292.56735 340 L 359.1013 383.1865 L 333.68767 453.0635 L 251.44703 453.0635 L 226.0334 383.1865 Z" fill="url(#Obj_Gradient_7)"/>
         <text transform="translate(241.60097 380.25)" fill="white">
-          <tspan font-family="Helvetica" font-size="16" font-style="italic" font-weight="400" fill="white" x="30.50935" y="15" xml:space="preserve">Event </tspan>
-          <tspan font-family="Helvetica" font-size="16" font-style="italic" font-weight="400" fill="white" x="11.392162" y="34" xml:space="preserve">Processing </tspan>
-          <tspan font-family="Helvetica" font-size="16" font-style="italic" font-weight="400" fill="white" x="10.060131" y="53" xml:space="preserve">Middleware</tspan>
+          <tspan font-family="Noto Sans Display" font-size="16" font-style="italic" font-weight="400" fill="white" x="30.50935" y="15" >Event </tspan>
+          <tspan font-family="Noto Sans Display" font-size="16" font-style="italic" font-weight="400" fill="white" x="11.392162" y="34" >Processing </tspan>
+          <tspan font-family="Noto Sans Display" font-size="16" font-style="italic" font-weight="400" fill="white" x="10.060131" y="53" >Middleware</tspan>
         </text>
       </g>
       <g id="Line_15">
@@ -114,24 +102,24 @@
       </g>
       <g id="Graphic_20">
         <text transform="translate(174.5 253.5)" fill="black">
-          <tspan font-family="Helvetica" font-size="16" font-weight="400" fill="black" x="0" y="15" xml:space="preserve">update</tspan>
+          <tspan font-family="Noto Sans Display" font-size="16" font-weight="400" fill="black" x="0" y="15" >update</tspan>
         </text>
       </g>
       <g id="Graphic_21">
         <text transform="translate(173.61719 382.948)" fill="black">
-          <tspan font-family="Helvetica" font-size="16" font-weight="400" fill="black" x="0" y="15" xml:space="preserve">publish</tspan>
+          <tspan font-family="Noto Sans Display" font-size="16" font-weight="400" fill="black" x="0" y="15" >publish</tspan>
         </text>
       </g>
       <g id="Graphic_22">
         <text transform="translate(44.683844 208)" fill="black">
-          <tspan font-family="Helvetica" font-size="16" font-weight="400" fill="black" x="0" y="15" xml:space="preserve">doOpA</tspan>
+          <tspan font-family="Noto Sans Display" font-size="16" font-weight="400" fill="black" x="0" y="15" >doOpA</tspan>
         </text>
       </g>
       <g id="Graphic_27">
         <path d="M 66.25025 167.5 L 214.82003 167.5 C 217.02916 167.5 218.82003 169.29086 218.82003 171.5 L 218.82003 199 C 218.82003 201.20914 217.02916 203 214.82003 203 L 66.25025 203 C 64.04111 203 62.25025 201.20914 62.25025 199 L 62.25025 171.5 C 62.25025 169.29086 64.04111 167.5 66.25025 167.5 Z" fill="white"/>
         <path d="M 66.25025 167.5 L 214.82003 167.5 C 217.02916 167.5 218.82003 169.29086 218.82003 171.5 L 218.82003 199 C 218.82003 201.20914 217.02916 203 214.82003 203 L 66.25025 203 C 64.04111 203 62.25025 201.20914 62.25025 199 L 62.25025 171.5 C 62.25025 169.29086 64.04111 167.5 66.25025 167.5 Z" stroke="#666" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
         <text transform="translate(67.25025 175.75)" fill="black">
-          <tspan font-family="Helvetica" font-size="16" font-weight="400" fill="black" x="36.82786" y="15" xml:space="preserve">Process X</tspan>
+          <tspan font-family="Noto Sans Display" font-size="16" font-weight="400" fill="black" x="36.82786" y="15" >Process X</tspan>
         </text>
       </g>
     </g>
@@ -139,7 +127,7 @@
       <title>crash</title>
       <g id="Graphic_28">
         <text transform="translate(128.52928 313.27344)" fill="#b1001c">
-          <tspan font-family="Helvetica" font-size="36" font-weight="700" fill="#b1001c" x="0" y="35" xml:space="preserve">X</tspan>
+          <tspan font-family="Noto Sans Display" font-size="36" font-weight="700" fill="#b1001c" x="0" y="35" >X</tspan>
         </text>
       </g>
     </g>

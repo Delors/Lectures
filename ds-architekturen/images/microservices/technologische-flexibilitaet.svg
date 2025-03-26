@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xl="http://www.w3.org/1999/xlink" viewBox="0 0 436 239" width="436" height="239">
+  <style>
+    @import url('/LectureDoc2/ext/fonts/ld-fonts.css'); 
+  </style>
   <defs>
     <filter id="Shadow" filterUnits="userSpaceOnUse" x="-43.6" y="-23.9">
       <feGaussianBlur in="SourceAlpha" result="blur" stdDeviation="1.308"/>
@@ -12,16 +15,6 @@
         <feMergeNode in="SourceGraphic"/>
       </feMerge>
     </filter>
-    <font-face font-family="Noto Sans Display" font-size="14" panose-1="2 11 5 2 4 5 4 2 2 4" units-per-em="1000" underline-position="-100" underline-thickness="50" slope="0" x-height="536" cap-height="714" ascent="1069.0002" descent="-292.99927" font-weight="400">
-      <font-face-src>
-        <font-face-name name="NotoSansDisplay-Regular"/>
-      </font-face-src>
-    </font-face>
-    <font-face font-family="Noto Sans Display" font-size="13" panose-1="2 11 5 2 4 5 4 2 2 4" units-per-em="1000" underline-position="-100" underline-thickness="50" slope="0" x-height="536" cap-height="714" ascent="1069.0002" descent="-292.99927" font-weight="400">
-      <font-face-src>
-        <font-face-name name="NotoSansDisplay-Regular"/>
-      </font-face-src>
-    </font-face>
     <marker orient="auto" overflow="visible" markerUnits="strokeWidth" id="StickArrow_Marker" stroke-linejoin="miter" stroke-miterlimit="10" viewBox="-1 -4 10 8" markerWidth="10" markerHeight="8" color="black">
       <g>
         <path d="M 8 0 L 0 0 M 0 -3 L 8 0 L 0 3" fill="none" stroke="currentColor" stroke-width="1"/>
@@ -37,16 +30,16 @@
         <path d="M 8 51 L 39 11 L 101 11 L 132 51 L 101 91 L 39 91 Z" fill="white"/>
         <path d="M 8 51 L 39 11 L 101 11 L 132 51 L 101 91 L 39 91 Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
         <text transform="translate(41 32)" fill="black">
-          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="12.27" y="15" xml:space="preserve">Posts</tspan>
-          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="6.677" y="34" xml:space="preserve">«Ruby»</tspan>
+          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="12.27" y="15" >Posts</tspan>
+          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="6.677" y="34" >«Ruby»</tspan>
         </text>
       </g>
       <g id="Graphic_161">
         <rect x="35.5" y="146" width="69" height="74" fill="white"/>
         <rect x="35.5" y="146" width="69" height="74" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
         <text transform="translate(37.5 165)" fill="black">
-          <tspan font-family="Noto Sans Display" font-size="13" font-weight="400" fill="black" x=".3315" y="14" xml:space="preserve">Relationale</tspan>
-          <tspan font-family="Noto Sans Display" font-size="13" font-weight="400" fill="black" x="24.05" y="32" xml:space="preserve">DB</tspan>
+          <tspan font-family="Noto Sans Display" font-size="13" font-weight="400" fill="black" x=".3315" y="14" >Relationale</tspan>
+          <tspan font-family="Noto Sans Display" font-size="13" font-weight="400" fill="black" x="24.05" y="32" >DB</tspan>
         </text>
       </g>
       <g id="Graphic_162">
@@ -67,16 +60,16 @@
         <path d="M 156 51 L 187 11 L 249 11 L 280 51 L 249 91 L 187 91 Z" fill="white"/>
         <path d="M 156 51 L 187 11 L 249 11 L 280 51 L 249 91 L 187 91 Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
         <text transform="translate(189 32)" fill="black">
-          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="3.289" y="15" xml:space="preserve">Freunde</tspan>
-          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="9.554" y="34" xml:space="preserve">«Java»</tspan>
+          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="3.289" y="15" >Freunde</tspan>
+          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="9.554" y="34" >«Java»</tspan>
         </text>
       </g>
       <g id="Graphic_167">
         <rect x="183.5" y="146" width="69" height="74" fill="white"/>
         <rect x="183.5" y="146" width="69" height="74" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
         <text transform="translate(185.5 165)" fill="black">
-          <tspan font-family="Noto Sans Display" font-size="13" font-weight="400" fill="black" x="14.625" y="14" xml:space="preserve">Graph</tspan>
-          <tspan font-family="Noto Sans Display" font-size="13" font-weight="400" fill="black" x="24.05" y="32" xml:space="preserve">DB</tspan>
+          <tspan font-family="Noto Sans Display" font-size="13" font-weight="400" fill="black" x="14.625" y="14" >Graph</tspan>
+          <tspan font-family="Noto Sans Display" font-size="13" font-weight="400" fill="black" x="24.05" y="32" >DB</tspan>
         </text>
       </g>
       <g id="Graphic_168">
@@ -97,16 +90,16 @@
         <path d="M 304 51 L 335 11 L 397 11 L 428 51 L 397 91 L 335 91 Z" fill="white"/>
         <path d="M 304 51 L 335 11 L 397 11 L 428 51 L 397 91 L 335 91 Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
         <text transform="translate(337 32)" fill="black">
-          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="10.758" y="15" xml:space="preserve">Bilder</tspan>
-          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="9.554" y="34" xml:space="preserve">«Java»</tspan>
+          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="10.758" y="15" >Bilder</tspan>
+          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="9.554" y="34" >«Java»</tspan>
         </text>
       </g>
       <g id="Graphic_173">
         <rect x="331.5" y="146" width="69" height="74" fill="white"/>
         <rect x="331.5" y="146" width="69" height="74" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
         <text transform="translate(333.5 165)" fill="black">
-          <tspan font-family="Noto Sans Display" font-size="13" font-weight="400" fill="black" x="19.4545" y="14" xml:space="preserve">Blob</tspan>
-          <tspan font-family="Noto Sans Display" font-size="13" font-weight="400" fill="black" x="17.316" y="32" xml:space="preserve">Store</tspan>
+          <tspan font-family="Noto Sans Display" font-size="13" font-weight="400" fill="black" x="19.4545" y="14" >Blob</tspan>
+          <tspan font-family="Noto Sans Display" font-size="13" font-weight="400" fill="black" x="17.316" y="32" >Store</tspan>
         </text>
       </g>
       <g id="Graphic_174">

@@ -1,17 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xl="http://www.w3.org/1999/xlink" viewBox="147 92 334 294" width="334" height="294">
+  <style>
+    @import url('/LectureDoc2/ext/fonts/ld-fonts.css'); 
+  </style>
   <defs>
-    <font-face font-family="Noto Sans Display" font-size="14" panose-1="2 11 5 2 4 5 4 2 2 4" units-per-em="1000" underline-position="-100" underline-thickness="50" slope="0" x-height="536" cap-height="714" ascent="1069.0002" descent="-292.99927" font-weight="400">
-      <font-face-src>
-        <font-face-name name="NotoSansDisplay-Regular"/>
-      </font-face-src>
-    </font-face>
-    <font-face font-family="Apple Color Emoji" font-size="32" units-per-em="1000" underline-position="-125.00039" underline-thickness="62.500195" slope="0" x-height="625.00195" cap-height="1000.0031" ascent="1000.0031" descent="-312.50098" font-weight="400">
-      <font-face-src>
-        <font-face-name name="AppleColorEmoji"/>
-      </font-face-src>
-    </font-face>
   </defs>
   <metadata> Produced by OmniGraffle 8.0\n2025-03-23 12:53:50 +0000</metadata>
   <g id="aenderungen-bei-microservices-architektur" stroke-dasharray="none" stroke-opacity="1" fill-opacity="1" fill="none" stroke="none">
@@ -20,62 +13,62 @@
       <title>Layer 1</title>
       <g id="Graphic_142">
         <text transform="translate(383.183 101.82332)" fill="black">
-          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="1.708" y="15" xml:space="preserve">Umfang der </tspan>
-          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="8.015" y="34" xml:space="preserve">Änderung</tspan>
+          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="1.708" y="15" >Umfang der </tspan>
+          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="8.015" y="34" >Änderung</tspan>
         </text>
       </g>
       <g id="Graphic_145">
         <text transform="translate(239 328.67668)" fill="black">
-          <tspan font-family="Apple Color Emoji" font-size="32" font-weight="400" fill="black" x="0" y="32" xml:space="preserve">🧕🏽</tspan>
+          <tspan font-family="Apple Color Emoji" font-size="32" font-weight="400" fill="black" x="0" y="32" >🧕🏽</tspan>
         </text>
       </g>
       <g id="Graphic_146">
         <text transform="translate(424.75 328.67668)" fill="black">
-          <tspan font-family="Apple Color Emoji" font-size="32" font-weight="400" fill="black" x="0" y="32" xml:space="preserve">👨🏽‍💼</tspan>
+          <tspan font-family="Apple Color Emoji" font-size="32" font-weight="400" fill="black" x="0" y="32" >👨🏽‍💼</tspan>
         </text>
       </g>
       <g id="Graphic_147">
         <text transform="translate(317.75 322)" fill="black">
-          <tspan font-family="Apple Color Emoji" font-size="32" font-weight="400" fill="black" x="0" y="32" xml:space="preserve">🙍🏼‍♂️</tspan>
+          <tspan font-family="Apple Color Emoji" font-size="32" font-weight="400" fill="black" x="0" y="32" >🙍🏼‍♂️</tspan>
         </text>
       </g>
       <g id="Graphic_148">
         <text transform="translate(347.2806 317.39426) rotate(2.5170066)" fill="black">
-          <tspan font-family="Apple Color Emoji" font-size="32" font-weight="400" fill="black" x="0" y="32" xml:space="preserve">👨🏻‍💼</tspan>
+          <tspan font-family="Apple Color Emoji" font-size="32" font-weight="400" fill="black" x="0" y="32" >👨🏻‍💼</tspan>
         </text>
       </g>
       <g id="Graphic_149">
         <text transform="translate(406.25 339.70658)" fill="black">
-          <tspan font-family="Apple Color Emoji" font-size="32" font-weight="400" fill="black" x="0" y="32" xml:space="preserve">🤵🏾‍♀️</tspan>
+          <tspan font-family="Apple Color Emoji" font-size="32" font-weight="400" fill="black" x="0" y="32" >🤵🏾‍♀️</tspan>
         </text>
       </g>
       <g id="Graphic_150">
         <text transform="translate(267.93585 322)" fill="black">
-          <tspan font-family="Apple Color Emoji" font-size="32" font-weight="400" fill="black" x="0" y="32" xml:space="preserve">👩🏻‍💼</tspan>
+          <tspan font-family="Apple Color Emoji" font-size="32" font-weight="400" fill="black" x="0" y="32" >👩🏻‍💼</tspan>
         </text>
       </g>
       <g id="Graphic_151">
         <rect x="391.5" y="151.5" width="65" height="170.5" fill="white"/>
         <rect x="391.5" y="151.5" width="65" height="170.5" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
         <text transform="translate(396.5 217.75)" fill="black">
-          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x=".123" y="15" xml:space="preserve">Funktion</tspan>
-          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="23.342" y="34" xml:space="preserve">C</tspan>
+          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x=".123" y="15" >Funktion</tspan>
+          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="23.342" y="34" >C</tspan>
         </text>
       </g>
       <g id="Graphic_152">
         <rect x="313.19592" y="151.5" width="65" height="170.5" fill="white"/>
         <rect x="313.19592" y="151.5" width="65" height="170.5" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
         <text transform="translate(318.19592 217.75)" fill="black">
-          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x=".123" y="15" xml:space="preserve">Funktion</tspan>
-          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="23.209" y="34" xml:space="preserve">B</tspan>
+          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x=".123" y="15" >Funktion</tspan>
+          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="23.209" y="34" >B</tspan>
         </text>
       </g>
       <g id="Graphic_153">
         <rect x="234.89184" y="151.5" width="65" height="170.5" fill="white"/>
         <rect x="234.89184" y="151.5" width="65" height="170.5" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
         <text transform="translate(239.89184 217.75)" fill="black">
-          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x=".123" y="15" xml:space="preserve">Funktion</tspan>
-          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="23.272" y="34" xml:space="preserve">A</tspan>
+          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x=".123" y="15" >Funktion</tspan>
+          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="23.272" y="34" >A</tspan>
         </text>
       </g>
       <g id="Line_155">
@@ -86,18 +79,18 @@
       </g>
       <g id="Graphic_157">
         <text transform="translate(165.85358 161.6594)" fill="black">
-          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="0" y="15" xml:space="preserve">Frontend</tspan>
+          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="0" y="15" >Frontend</tspan>
         </text>
       </g>
       <g id="Graphic_158">
         <text transform="translate(193.33558 292.8406)" fill="black">
-          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="0" y="15" xml:space="preserve">Data</tspan>
+          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="0" y="15" >Data</tspan>
         </text>
       </g>
       <g id="Graphic_159">
         <text transform="translate(157.36958 222.12448)" fill="black">
-          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="0" y="15" xml:space="preserve">Geschäfts-</tspan>
-          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="35.21" y="34" xml:space="preserve">logik</tspan>
+          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="0" y="15" >Geschäfts-</tspan>
+          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="35.21" y="34" >logik</tspan>
         </text>
       </g>
       <g id="Graphic_141">

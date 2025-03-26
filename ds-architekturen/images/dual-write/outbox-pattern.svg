@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xl="http://www.w3.org/1999/xlink" viewBox="-145 53 549 339" width="549" height="339">
+  <style>
+    @import url('/LectureDoc2/ext/fonts/ld-fonts.css'); 
+  </style>
   <defs>
     <linearGradient x1="0" x2="1" id="Gradient" gradientUnits="userSpaceOnUse">
       <stop offset=".16833588" stop-color="#029ed5"/>
@@ -24,11 +27,6 @@
       <stop offset="1" stop-color="#9b1329"/>
     </linearGradient>
     <linearGradient id="Obj_Gradient_3" xl:href="#Gradient_2" gradientTransform="translate(376.1155 40.93602) rotate(121.7881) scale(179.95509)"/>
-    <font-face font-family="Helvetica" font-size="16" units-per-em="1000" underline-position="-75.68359" underline-thickness="49.316406" slope="-750" x-height="522.9492" cap-height="717.28516" ascent="770.0195" descent="-229.98047" font-style="italic" font-weight="400">
-      <font-face-src>
-        <font-face-name name="Helvetica-Oblique"/>
-      </font-face-src>
-    </font-face>
     <marker orient="auto" overflow="visible" markerUnits="strokeWidth" id="FilledArrow_Marker" stroke-linejoin="miter" stroke-miterlimit="10" viewBox="-1 -3 7 6" markerWidth="7" markerHeight="6" color="black">
       <g>
         <path d="M 4.8 0 L 0 -1.8 L 0 1.8 Z" fill="currentColor" stroke="currentColor" stroke-width="1"/>
@@ -94,9 +92,9 @@
       <g id="Graphic_14" filter="url(#Shadow)">
         <path d="M 328.7172 54.91712 L 395.25116 98.10362 L 369.83752 167.98062 L 287.5969 167.98062 L 262.18325 98.10362 Z" fill="url(#Obj_Gradient_3)"/>
         <text transform="translate(277.75082 95.16712)" fill="white">
-          <tspan font-family="Helvetica" font-size="16" font-style="italic" font-weight="400" fill="white" x="30.50935" y="15" xml:space="preserve">Event </tspan>
-          <tspan font-family="Helvetica" font-size="16" font-style="italic" font-weight="400" fill="white" x="11.392162" y="34" xml:space="preserve">Processing </tspan>
-          <tspan font-family="Helvetica" font-size="16" font-style="italic" font-weight="400" fill="white" x="10.060131" y="53" xml:space="preserve">Middleware</tspan>
+          <tspan font-family="Helvetica" font-size="16" font-style="italic" font-weight="400" fill="white" x="30.50935" y="15" >Event </tspan>
+          <tspan font-family="Helvetica" font-size="16" font-style="italic" font-weight="400" fill="white" x="11.392162" y="34" >Processing </tspan>
+          <tspan font-family="Helvetica" font-size="16" font-style="italic" font-weight="400" fill="white" x="10.060131" y="53" >Middleware</tspan>
         </text>
       </g>
       <g id="Line_15">
@@ -113,19 +111,19 @@
       </g>
       <g id="Graphic_20">
         <text transform="translate(-9.090112 191.375)" fill="black">
-          <tspan font-family="Helvetica" font-size="16" font-weight="400" fill="black" x="0" y="15" xml:space="preserve">&lt;&lt;atomic&gt;&gt;</tspan>
-          <tspan font-family="Helvetica" font-size="16" font-weight="400" fill="black" x="17.78125" y="34" xml:space="preserve">update</tspan>
+          <tspan font-family="Helvetica" font-size="16" font-weight="400" fill="black" x="0" y="15" >&lt;&lt;atomic&gt;&gt;</tspan>
+          <tspan font-family="Helvetica" font-size="16" font-weight="400" fill="black" x="17.78125" y="34" >update</tspan>
         </text>
       </g>
       <g id="Graphic_21">
         <text transform="translate(211 307)" fill="black">
-          <tspan font-family="Helvetica" font-size="16" font-weight="400" fill="black" x="0" y="15" xml:space="preserve">triggered by</tspan>
-          <tspan font-family="Helvetica" font-size="16" font-weight="400" fill="black" x="16" y="34" xml:space="preserve">change</tspan>
+          <tspan font-family="Helvetica" font-size="16" font-weight="400" fill="black" x="0" y="15" >triggered by</tspan>
+          <tspan font-family="Helvetica" font-size="16" font-weight="400" fill="black" x="16" y="34" >change</tspan>
         </text>
       </g>
       <g id="Graphic_22">
         <text transform="translate(-139.17605 135)" fill="black">
-          <tspan font-family="Helvetica" font-size="16" font-weight="400" fill="black" x="0" y="15" xml:space="preserve">doOpA</tspan>
+          <tspan font-family="Helvetica" font-size="16" font-weight="400" fill="black" x="0" y="15" >doOpA</tspan>
         </text>
       </g>
       <g id="Graphic_25"/>
@@ -133,7 +131,7 @@
         <path d="M -116.64426 88.5 L 31.925513 88.5 C 34.13465 88.5 35.925513 90.29086 35.925513 92.5 L 35.925513 120 C 35.925513 122.20914 34.13465 124 31.925513 124 L -116.64426 124 C -118.8534 124 -120.64426 122.20914 -120.64426 120 L -120.64426 92.5 C -120.64426 90.29086 -118.8534 88.5 -116.64426 88.5 Z" fill="white"/>
         <path d="M -116.64426 88.5 L 31.925513 88.5 C 34.13465 88.5 35.925513 90.29086 35.925513 92.5 L 35.925513 120 C 35.925513 122.20914 34.13465 124 31.925513 124 L -116.64426 124 C -118.8534 124 -120.64426 122.20914 -120.64426 120 L -120.64426 92.5 C -120.64426 90.29086 -118.8534 88.5 -116.64426 88.5 Z" stroke="#666" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
         <text transform="translate(-115.64426 96.75)" fill="black">
-          <tspan font-family="Helvetica" font-size="16" font-weight="400" fill="black" x="36.82786" y="15" xml:space="preserve">Process X</tspan>
+          <tspan font-family="Helvetica" font-size="16" font-weight="400" fill="black" x="36.82786" y="15" >Process X</tspan>
         </text>
       </g>
       <g id="Graphic_38">
@@ -168,10 +166,10 @@
             <path d="M 180.59614 276.30448 C 180.5962 276.28978 180.5962 276.2751 180.59614 276.2604 L 180.59614 276.031 L 180.5908 276.031 C 180.42502 272.15464 176.4254 268.29733 168.59195 265.33946 C 152.58639 259.2958 126.63627 259.2958 110.63071 265.33946 C 102.79726 268.29733 98.79764 272.15464 98.63186 276.031 L 98.6265 276.031 L 98.6265 276.2669 C 98.62647 276.27726 98.62647 276.2876 98.6265 276.29796 L 98.6265 332.9224 C 98.62647 332.93276 98.62647 332.9431 98.6265 332.95346 L 98.6265 333.37397 L 98.64265 333.37397 C 98.92559 337.18797 102.92161 340.97 110.63071 343.8809 C 126.63627 349.92458 152.58639 349.92458 168.59195 343.8809 C 176.30105 340.97 180.29707 337.18797 180.58 333.37397 L 180.59614 333.37397 L 180.59614 332.95998 C 180.5962 332.9453 180.5962 332.9306 180.59614 332.9159 Z" fill="url(#Obj_Gradient_8)"/>
             <path d="M 180.59614 276.30448 C 180.5962 276.28978 180.5962 276.2751 180.59614 276.2604 L 180.59614 276.031 L 180.5908 276.031 C 180.42502 272.15464 176.4254 268.29733 168.59195 265.33946 C 152.58639 259.2958 126.63627 259.2958 110.63071 265.33946 C 102.79726 268.29733 98.79764 272.15464 98.63186 276.031 L 98.6265 276.031 L 98.6265 276.2669 C 98.62647 276.27726 98.62647 276.2876 98.6265 276.29796 L 98.6265 332.9224 C 98.62647 332.93276 98.62647 332.9431 98.6265 332.95346 L 98.6265 333.37397 L 98.64265 333.37397 C 98.92559 337.18797 102.92161 340.97 110.63071 343.8809 C 126.63627 349.92458 152.58639 349.92458 168.59195 343.8809 C 176.30105 340.97 180.29707 337.18797 180.58 333.37397 L 180.59614 333.37397 L 180.59614 332.95998 C 180.5962 332.9453 180.5962 332.9306 180.59614 332.9159 Z" stroke="white" stroke-opacity=".48790474" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
             <text transform="translate(103.62648 263.11018)" fill="black">
-              <tspan font-family="Helvetica" font-size="22" font-weight="400" fill="black" x="35.98485" y="21" xml:space="preserve"> </tspan>
-              <tspan font-family="Helvetica" font-size="16" font-weight="400" fill="black" x="17.312973" y="41" xml:space="preserve">OpA-</tspan>
-              <tspan font-family="Helvetica" font-size="16" font-weight="700" fill="black" x="7.988754" y="60" xml:space="preserve">Outbox</tspan>
-              <tspan font-family="Helvetica" font-size="16" font-weight="400" fill="black" x="16.859848" y="79" xml:space="preserve">Table</tspan>
+              <tspan font-family="Helvetica" font-size="22" font-weight="400" fill="black" x="35.98485" y="21" > </tspan>
+              <tspan font-family="Helvetica" font-size="16" font-weight="400" fill="black" x="17.312973" y="41" >OpA-</tspan>
+              <tspan font-family="Helvetica" font-size="16" font-weight="700" fill="black" x="7.988754" y="60" >Outbox</tspan>
+              <tspan font-family="Helvetica" font-size="16" font-weight="400" fill="black" x="16.859848" y="79" >Table</tspan>
             </text>
           </g>
           <g id="Graphic_31">
@@ -204,8 +202,8 @@
             <path d="M 180.59614 198.80448 C 180.5962 198.78978 180.5962 198.77508 180.59614 198.76039 L 180.59614 198.53099 L 180.5908 198.53099 C 180.42502 194.65464 176.4254 190.79733 168.59195 187.83946 C 152.58639 181.79579 126.63627 181.79579 110.63071 187.83946 C 102.79726 190.79733 98.79764 194.65464 98.63186 198.53099 L 98.6265 198.53099 L 98.6265 198.7669 C 98.62647 198.77726 98.62647 198.7876 98.6265 198.79796 L 98.6265 255.4224 C 98.62647 255.43276 98.62647 255.4431 98.6265 255.45346 L 98.6265 255.87397 L 98.64265 255.87397 C 98.92559 259.68797 102.92161 263.47 110.63071 266.3809 C 126.63627 272.42458 152.58639 272.42458 168.59195 266.3809 C 176.30105 263.47 180.29707 259.68797 180.58 255.87397 L 180.59614 255.87397 L 180.59614 255.45998 C 180.5962 255.44528 180.5962 255.43058 180.59614 255.4159 Z" fill="url(#Obj_Gradient_14)"/>
             <path d="M 180.59614 198.80448 C 180.5962 198.78978 180.5962 198.77508 180.59614 198.76039 L 180.59614 198.53099 L 180.5908 198.53099 C 180.42502 194.65464 176.4254 190.79733 168.59195 187.83946 C 152.58639 181.79579 126.63627 181.79579 110.63071 187.83946 C 102.79726 190.79733 98.79764 194.65464 98.63186 198.53099 L 98.6265 198.53099 L 98.6265 198.7669 C 98.62647 198.77726 98.62647 198.7876 98.6265 198.79796 L 98.6265 255.4224 C 98.62647 255.43276 98.62647 255.4431 98.6265 255.45346 L 98.6265 255.87397 L 98.64265 255.87397 C 98.92559 259.68797 102.92161 263.47 110.63071 266.3809 C 126.63627 272.42458 152.58639 272.42458 168.59195 266.3809 C 176.30105 263.47 180.29707 259.68797 180.58 255.87397 L 180.59614 255.87397 L 180.59614 255.45998 C 180.5962 255.44528 180.5962 255.43058 180.59614 255.4159 Z" stroke="white" stroke-opacity=".48790474" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
             <text transform="translate(103.62648 198.61018)" fill="black">
-              <tspan font-family="Helvetica" font-size="16" font-weight="400" fill="black" x="19.977036" y="34" xml:space="preserve">OpA</tspan>
-              <tspan font-family="Helvetica" font-size="16" font-weight="400" fill="black" x="16.859848" y="53" xml:space="preserve">Table</tspan>
+              <tspan font-family="Helvetica" font-size="16" font-weight="400" fill="black" x="19.977036" y="34" >OpA</tspan>
+              <tspan font-family="Helvetica" font-size="16" font-weight="400" fill="black" x="16.859848" y="53" >Table</tspan>
             </text>
           </g>
           <g id="Graphic_4">
@@ -225,8 +223,8 @@
       </g>
       <g id="Graphic_53">
         <text transform="translate(232.5719 193.54839)" fill="black">
-          <tspan font-family="Helvetica Neue" font-size="16" font-weight="400" fill="black" x=".008" y="15" xml:space="preserve">register</tspan>
-          <tspan font-family="Helvetica Neue" font-size="16" font-weight="400" fill="black" x="47961635e-20" y="33.448" xml:space="preserve">handler</tspan>
+          <tspan font-family="Helvetica Neue" font-size="16" font-weight="400" fill="black" x=".008" y="15" >register</tspan>
+          <tspan font-family="Helvetica Neue" font-size="16" font-weight="400" fill="black" x="47961635e-20" y="33.448" >handler</tspan>
         </text>
       </g>
     </g>
