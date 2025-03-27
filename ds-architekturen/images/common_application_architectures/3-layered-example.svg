@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xl="http://www.w3.org/1999/xlink" viewBox="383 286 386 240" width="386" height="240">
+  <style>
+    @import url('/LectureDoc2/ext/fonts/ld-fonts.css'); 
+  </style>
   <defs>
     <filter id="Shadow" filterUnits="userSpaceOnUse" x="344.4" y="262">
       <feGaussianBlur in="SourceAlpha" result="blur" stdDeviation="1.308"/>
@@ -51,22 +54,22 @@
         <path d="M 472 515.2 L 472 476.8 C 472 474.1504 502.464 472 540 472 C 577.536 472 608 474.1504 608 476.8 L 608 515.2 C 608 517.8496 577.536 520 540 520 C 502.464 520 472 517.8496 472 515.2" fill="white"/>
         <path d="M 472 515.2 L 472 476.8 C 472 474.1504 502.464 472 540 472 C 577.536 472 608 474.1504 608 476.8 L 608 515.2 C 608 517.8496 577.536 520 540 520 C 502.464 520 472 517.8496 472 515.2 M 472 476.8 C 472 479.4496 502.464 481.6 540 481.6 C 577.536 481.6 608 479.4496 608 476.8" stroke="#a5a5a5" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
         <text transform="translate(477 488.9)" fill="#666">
-          <tspan font-family="Noto Sans Display" font-size="14" font-weight="300" fill="#666" x="31.025203" y="15" xml:space="preserve">Datenbank</tspan>
+          <tspan font-family="Noto Sans Display" font-size="14" font-weight="300" fill="#666" x="31.025203" y="15">Datenbank</tspan>
         </text>
       </g>
       <g id="Graphic_31">
         <rect x="472" y="288" width="136" height="48" fill="white"/>
         <rect x="472" y="288" width="136" height="48" stroke="#a5a5a5" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
         <text transform="translate(477 293)" fill="#666">
-          <tspan font-family="Noto Sans Display" font-size="14" font-weight="300" fill="#666" x="8.214172" y="15" xml:space="preserve">Nutzerschnittstelle </tspan>
-          <tspan font-family="Noto Sans Display" font-size="14" font-weight="300" fill="#666" x="32.487547" y="34" xml:space="preserve">(Webseite)</tspan>
+          <tspan font-family="Noto Sans Display" font-size="14" font-weight="300" fill="#666" x="8.214172" y="15">Nutzerschnittstelle </tspan>
+          <tspan font-family="Noto Sans Display" font-size="14" font-weight="300" fill="#666" x="32.487547" y="34">(Webseite)</tspan>
         </text>
       </g>
       <g id="Graphic_32" filter="url(#Shadow_2)">
         <rect x="396.8" y="384" width="123.2" height="40" fill="white"/>
         <rect x="396.8" y="384" width="123.2" height="40" stroke="#a5a5a5" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
         <text transform="translate(401.8 394.5)" fill="#666">
-          <tspan font-family="Noto Sans Display" font-size="14" font-weight="300" fill="#666" x="11.173717" y="15" xml:space="preserve">Abfrage-service</tspan>
+          <tspan font-family="Noto Sans Display" font-size="14" font-weight="300" fill="#666" x="11.173717" y="15">Abfrage-service</tspan>
         </text>
       </g>
       <g id="Line_54">
@@ -76,7 +79,7 @@
         <rect x="560" y="384" width="123.2" height="40" fill="white"/>
         <rect x="560" y="384" width="123.2" height="40" stroke="#a5a5a5" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
         <text transform="translate(565 394.5)" fill="#666">
-          <tspan font-family="Noto Sans Display" font-size="14" font-weight="300" fill="#666" x="7.640358" y="15" xml:space="preserve">HTML Generator</tspan>
+          <tspan font-family="Noto Sans Display" font-size="14" font-weight="300" fill="#666" x="7.640358" y="15">HTML Generator</tspan>
         </text>
       </g>
       <g id="Line_67">
@@ -96,17 +99,17 @@
       </g>
       <g id="Graphic_72">
         <text transform="translate(581 341)" fill="black">
-          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="0" y="15" xml:space="preserve">Benutzerschnittstellenebene</tspan>
+          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="0" y="15">Benutzerschnittstellenebene</tspan>
         </text>
       </g>
       <g id="Graphic_74">
         <text transform="translate(629 429)" fill="black">
-          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="0" y="15" xml:space="preserve">Geschäftslogikebene</tspan>
+          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="0" y="15">Geschäftslogikebene</tspan>
         </text>
       </g>
       <g id="Graphic_75">
         <text transform="translate(660.702 493)" fill="black">
-          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="0" y="15" xml:space="preserve">Persistenzebene</tspan>
+          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="0" y="15">Persistenzebene</tspan>
         </text>
       </g>
     </g>
