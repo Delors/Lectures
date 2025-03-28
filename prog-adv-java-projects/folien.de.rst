@@ -43,7 +43,7 @@ Eine kurze Einführung
 
 :Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
 :Kontakt: michael.eichberg@dhbw.de, Raum 149B
-:Version: 1.0.1
+:Version: 1.0.2
 
 .. supplemental::
 
@@ -53,26 +53,15 @@ Eine kurze Einführung
 
         |pdf-source|
 
-    .. 
-        :Kontrollfragen:
-
-            .. source:: kontrollfragen.de.rst 
-                :path: relative
-                :prefix: https://delors.github.io/
-                :suffix: .html
-
-        :Klausurvorbereitung:
-
-            .. source:: klausurvorbereitung.de.rst 
-                :path: relative
-                :prefix: https://delors.github.io/
-                :suffix: .html
- 
-    \ 
-
     :Fehler melden:
         https://github.com/Delors/delors.github.io/issues
+     
+    :Kontrollfragen:
 
+        .. source:: kontrollfragen.de.rst 
+            :path: relative
+            :prefix: https://delors.github.io/
+            :suffix: .html
 
 
 .. class:: new-section 
