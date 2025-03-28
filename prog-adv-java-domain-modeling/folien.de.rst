@@ -37,7 +37,7 @@ Eine kurze Einführung, um das Entwickeln von kleinen Projekten zu erleichtern.
 
 :Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
 :Kontakt: michael.eichberg@dhbw.de, Raum 149B
-:Version: 1.0
+:Version: 1.0.1
 
 .. supplemental::
 
@@ -47,25 +47,15 @@ Eine kurze Einführung, um das Entwickeln von kleinen Projekten zu erleichtern.
 
         |pdf-source|
 
-    .. 
-        :Kontrollfragen:
-
-            .. source:: kontrollfragen.de.rst 
-                :path: relative
-                :prefix: https://delors.github.io/
-                :suffix: .html
-
-        :Klausurvorbereitung:
-
-            .. source:: klausurvorbereitung.de.rst 
-                :path: relative
-                :prefix: https://delors.github.io/
-                :suffix: .html
- 
-    \ 
-
     :Fehler melden:
         https://github.com/Delors/delors.github.io/issues
+
+    :Kontrollfragen:
+
+        .. source:: kontrollfragen.de.rst 
+            :path: relative
+            :prefix: https://delors.github.io/
+            :suffix: .html
 
 
 
@@ -446,7 +436,7 @@ Konstruktoren von Record Klassen
             :class: copy-to-clipboard
 
             record Point(int x, int y) {
-                Point {
+                public Point {
                     if (x < 0 || y < 0) 
                         throw new IllegalArgumentException(
                             "Negative Koordinaten sind nicht erlaubt.");

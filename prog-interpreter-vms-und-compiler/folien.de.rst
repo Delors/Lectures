@@ -43,7 +43,7 @@ Von Compilern, Interpretern und virtuellen Maschinen
 
 :Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
 :Kontakt: michael.eichberg@dhbw.de, Raum 149B
-:Version: 1.0
+:Version: 1.0.1
 
 .. supplemental::
 
@@ -55,6 +55,14 @@ Von Compilern, Interpretern und virtuellen Maschinen
 
     :Fehler melden:
         https://github.com/Delors/delors.github.io/issues
+
+    :Kontrollfragen:
+
+        .. source:: kontrollfragen.de.rst 
+            :path: relative
+            :prefix: https://delors.github.io/
+            :suffix: .html
+
 
 
 .. class:: new-section transition-move-to-top
