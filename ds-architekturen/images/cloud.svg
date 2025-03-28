@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xl="http://www.w3.org/1999/xlink" viewBox="-82 69 576 329" width="576" height="329">
+  <style>
+    @import url('/LectureDoc2/ext/fonts/ld-fonts.css'); 
+  </style>
   <defs>
     <filter id="Shadow" filterUnits="userSpaceOnUse" x="-139.6" y="36.1">
       <feGaussianBlur in="SourceAlpha" result="blur" stdDeviation=".872"/>
@@ -12,21 +15,6 @@
         <feMergeNode in="SourceGraphic"/>
       </feMerge>
     </filter>
-    <font-face font-family="Noto Sans Display" font-size="14" panose-1="2 11 5 2 4 5 4 2 2 4" units-per-em="1000" underline-position="-99.99084" underline-thickness="49.98779" slope="0" x-height="546" cap-height="714" ascent="1069.0002" descent="-292.99927" font-weight="700">
-      <font-face-src>
-        <font-face-name name="NotoSansDisplay-Regular_Bold"/>
-      </font-face-src>
-    </font-face>
-    <font-face font-family="Noto Sans Display" font-size="14" panose-1="2 11 5 2 4 5 4 2 2 4" units-per-em="1000" underline-position="-100" underline-thickness="50" slope="0" x-height="536" cap-height="714" ascent="1069.0002" descent="-292.99927" font-weight="400">
-      <font-face-src>
-        <font-face-name name="NotoSansDisplay-Regular"/>
-      </font-face-src>
-    </font-face>
-    <font-face font-family="Noto Sans Display" font-size="14" panose-1="2 11 5 2 4 5 4 9 2 4" units-per-em="1000" underline-position="-100" underline-thickness="50" slope="-857.1429" x-height="536" cap-height="714" ascent="1069.0002" descent="-292.99927" font-style="italic" font-weight="400">
-      <font-face-src>
-        <font-face-name name="NotoSansDisplay-Italic"/>
-      </font-face-src>
-    </font-face>
   </defs>
   <metadata> Produced by OmniGraffle 8.0\n2025-03-23 12:22:43 +0000</metadata>
   <g id="cloud" stroke-dasharray="none" stroke-opacity="1" fill-opacity="1" fill="none" stroke="none">
@@ -48,84 +36,84 @@
         <path d="M 23.5 343.95457 L 327.19882 343.95457 C 329.40796 343.95457 331.19882 345.74543 331.19882 347.95457 L 331.19882 392.95457 C 331.19882 395.1637 329.40796 396.95457 327.19882 396.95457 L 23.5 396.95457 C 21.29086 396.95457 19.5 395.1637 19.5 392.95457 L 19.5 347.95457 C 19.5 345.74543 21.29086 343.95457 23.5 343.95457 Z" fill="#fbfbfb"/>
         <path d="M 23.5 343.95457 L 327.19882 343.95457 C 329.40796 343.95457 331.19882 345.74543 331.19882 347.95457 L 331.19882 392.95457 C 331.19882 395.1637 329.40796 396.95457 327.19882 396.95457 L 23.5 396.95457 C 21.29086 396.95457 19.5 395.1637 19.5 392.95457 L 19.5 347.95457 C 19.5 345.74543 21.29086 343.95457 23.5 343.95457 Z" stroke="#a5a5a5" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
         <text transform="translate(24.5 351.45457)" fill="black">
-          <tspan font-family="Noto Sans Display" font-size="14" font-weight="700" fill="black" x="117.93541" y="15" xml:space="preserve">Hardware</tspan>
-          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" y="15" xml:space="preserve"> </tspan>
-          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="66.92641" y="34" xml:space="preserve">(CPU, Speicher, Bandbreite)</tspan>
+          <tspan font-family="Noto Sans Display" font-size="14" font-weight="700" fill="black" x="117.93541" y="15" >Hardware</tspan>
+          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" y="15" > </tspan>
+          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="66.92641" y="34" >(CPU, Speicher, Bandbreite)</tspan>
         </text>
       </g>
       <g id="Graphic_3">
         <path d="M 23.5 268.01222 L 327.19882 268.01222 C 329.40796 268.01222 331.19882 269.80308 331.19882 272.01222 L 331.19882 317.01222 C 331.19882 319.22136 329.40796 321.01222 327.19882 321.01222 L 23.5 321.01222 C 21.29086 321.01222 19.5 319.22136 19.5 317.01222 L 19.5 272.01222 C 19.5 269.80308 21.29086 268.01222 23.5 268.01222 Z" fill="#fbfbfb"/>
         <path d="M 23.5 268.01222 L 327.19882 268.01222 C 329.40796 268.01222 331.19882 269.80308 331.19882 272.01222 L 331.19882 317.01222 C 331.19882 319.22136 329.40796 321.01222 327.19882 321.01222 L 23.5 321.01222 C 21.29086 321.01222 19.5 319.22136 19.5 317.01222 L 19.5 272.01222 C 19.5 269.80308 21.29086 268.01222 23.5 268.01222 Z" stroke="#a5a5a5" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
         <text transform="translate(24.5 275.51222)" fill="black">
-          <tspan font-family="Noto Sans Display" font-size="14" font-weight="700" fill="black" x="105.94441" y="15" xml:space="preserve">Infrastruktur</tspan>
-          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" y="15" xml:space="preserve"> </tspan>
-          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="16.365411" y="34" xml:space="preserve">(</tspan>
-          <tspan font-family="Noto Sans Display" font-size="14" font-style="italic" font-weight="400" fill="black" y="34" xml:space="preserve">Rechnen</tspan>
-          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" y="34" xml:space="preserve">, Datenspeicher (Block oder Datei))</tspan>
+          <tspan font-family="Noto Sans Display" font-size="14" font-weight="700" fill="black" x="105.94441" y="15" >Infrastruktur</tspan>
+          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" y="15" > </tspan>
+          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="16.365411" y="34" >(</tspan>
+          <tspan font-family="Noto Sans Display" font-size="14" font-style="italic" font-weight="400" fill="black" y="34" >Rechnen</tspan>
+          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" y="34" >, Datenspeicher (Block oder Datei))</tspan>
         </text>
       </g>
       <g id="Graphic_4">
         <path d="M 23.5 185.79091 L 327.19882 185.79091 C 329.40796 185.79091 331.19882 187.58177 331.19882 189.79091 L 331.19882 234.7909 C 331.19882 237.00005 329.40796 238.7909 327.19882 238.7909 L 23.5 238.7909 C 21.29086 238.7909 19.5 237.00005 19.5 234.7909 L 19.5 189.79091 C 19.5 187.58177 21.29086 185.79091 23.5 185.79091 Z" fill="#fbfbfb"/>
         <path d="M 23.5 185.79091 L 327.19882 185.79091 C 329.40796 185.79091 331.19882 187.58177 331.19882 189.79091 L 331.19882 234.7909 C 331.19882 237.00005 329.40796 238.7909 327.19882 238.7909 L 23.5 238.7909 C 21.29086 238.7909 19.5 237.00005 19.5 234.7909 L 19.5 189.79091 C 19.5 187.58177 21.29086 185.79091 23.5 185.79091 Z" stroke="#a5a5a5" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
         <text transform="translate(24.5 193.29091)" fill="black">
-          <tspan font-family="Noto Sans Display" font-size="14" font-weight="700" fill="black" x="112.98641" y="15" xml:space="preserve">Platformen </tspan>
-          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="2.064411" y="34" xml:space="preserve">(Softwareframeworks (.Net, Java), Datenbanken)</tspan>
+          <tspan font-family="Noto Sans Display" font-size="14" font-weight="700" fill="black" x="112.98641" y="15" >Platformen </tspan>
+          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="2.064411" y="34" >(Softwareframeworks (.Net, Java), Datenbanken)</tspan>
         </text>
       </g>
       <g id="Graphic_5">
         <path d="M 23.833984 106.70909 L 327.5328 106.70909 C 329.74195 106.70909 331.5328 108.49995 331.5328 110.70909 L 331.5328 155.70909 C 331.5328 157.91823 329.74195 159.70909 327.5328 159.70909 L 23.833984 159.70909 C 21.624845 159.70909 19.833984 157.91823 19.833984 155.70909 L 19.833984 110.70909 C 19.833984 108.49995 21.624845 106.70909 23.833984 106.70909 Z" fill="#fbfbfb"/>
         <path d="M 23.833984 106.70909 L 327.5328 106.70909 C 329.74195 106.70909 331.5328 108.49995 331.5328 110.70909 L 331.5328 155.70909 C 331.5328 157.91823 329.74195 159.70909 327.5328 159.70909 L 23.833984 159.70909 C 21.624845 159.70909 19.833984 157.91823 19.833984 155.70909 L 19.833984 110.70909 C 19.833984 108.49995 21.624845 106.70909 23.833984 106.70909 Z" stroke="#a5a5a5" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
         <text transform="translate(24.833984 114.20909)" fill="black">
-          <tspan font-family="Noto Sans Display" font-size="14" font-weight="700" fill="black" x="102.19941" y="15" xml:space="preserve">Anwendungen</tspan>
-          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" y="15" xml:space="preserve"> </tspan>
-          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="32.63341" y="34" xml:space="preserve">(Multimedia, Geschäftsanwendungen)</tspan>
+          <tspan font-family="Noto Sans Display" font-size="14" font-weight="700" fill="black" x="102.19941" y="15" >Anwendungen</tspan>
+          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" y="15" > </tspan>
+          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="32.63341" y="34" >(Multimedia, Geschäftsanwendungen)</tspan>
         </text>
       </g>
       <g id="Graphic_6">
         <text transform="translate(-61.59553 114.20909)" fill="black">
-          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="17.08" y="15" xml:space="preserve">Software</tspan>
-          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="11084467e-19" y="34" xml:space="preserve">as a Service</tspan>
+          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="17.08" y="15" >Software</tspan>
+          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="11084467e-19" y="34" >as a Service</tspan>
         </text>
       </g>
       <g id="Graphic_7">
         <text transform="translate(-67.92353 193.29091)" fill="black">
-          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="24.458" y="15" xml:space="preserve">Platform </tspan>
-          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="2444267e-18" y="34" xml:space="preserve">as as Service</tspan>
+          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="24.458" y="15" >Platform </tspan>
+          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="2444267e-18" y="34" >as as Service</tspan>
         </text>
       </g>
       <g id="Graphic_8">
         <text transform="translate(-76.09952 309.64545)" fill="black">
-          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="19326762e-19" y="15" xml:space="preserve">Infrastructure </tspan>
-          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="14.504" y="34" xml:space="preserve">as a Service</tspan>
+          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="19326762e-19" y="15" >Infrastructure </tspan>
+          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="14.504" y="34" >as a Service</tspan>
         </text>
       </g>
       <g id="Graphic_9">
         <text transform="translate(362.30573 360.95457)" fill="black">
-          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="0" y="15" xml:space="preserve">Datenzentren</tspan>
+          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="0" y="15" >Datenzentren</tspan>
         </text>
       </g>
       <g id="Graphic_10">
         <text transform="translate(361.6346 275.51222)" fill="black">
-          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="0" y="15" xml:space="preserve">Amazon S3,</tspan>
-          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="0" y="34" xml:space="preserve">Amazon EC2</tspan>
+          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="0" y="15" >Amazon S3,</tspan>
+          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="0" y="34" >Amazon EC2</tspan>
         </text>
       </g>
       <g id="Graphic_12">
         <text transform="translate(361.6346 193.29091)" fill="black">
-          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="0" y="15" xml:space="preserve">Google App engine</tspan>
-          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="0" y="34" xml:space="preserve">MS Azure</tspan>
+          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="0" y="15" >Google App engine</tspan>
+          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="0" y="34" >MS Azure</tspan>
         </text>
       </g>
       <g id="Graphic_13">
         <text transform="translate(362.30573 104.38935)" fill="black">
-          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="0" y="15" xml:space="preserve">Google Docs</tspan>
-          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="0" y="34" xml:space="preserve">Apple iCloud</tspan>
-          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="0" y="53" xml:space="preserve">Gmail</tspan>
+          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="0" y="15" >Google Docs</tspan>
+          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="0" y="34" >Apple iCloud</tspan>
+          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="0" y="53" >Gmail</tspan>
         </text>
       </g>
       <g id="Graphic_14">
         <text transform="translate(391.5443 75.389345)" fill="black">
-          <tspan font-family="Noto Sans Display" font-size="14" font-weight="700" fill="black" x="0" y="15" xml:space="preserve">Beispiele</tspan>
+          <tspan font-family="Noto Sans Display" font-size="14" font-weight="700" fill="black" x="0" y="15" >Beispiele</tspan>
         </text>
       </g>
     </g>
