@@ -39,7 +39,7 @@ Java - Funktionale Programmierung
 
 :Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
 :Kontakt: michael.eichberg@dhbw.de, Raum 149B
-:Version: 1.0
+:Version: 1.0.1
 
 .. class:: block-footer
 
@@ -427,7 +427,7 @@ Lambdas - Method References
 
                 .. example::
 
-                    .. rubric:: Referenz auf Constructor
+                    .. rubric:: Referenz auf Konstruktor
 
                     .. code:: java
                         :number-lines:
@@ -683,7 +683,7 @@ Streams sind :incremental:`umgeformte Sammlungen`\ :incremental:`, die durch die
 
     .. container:: incremental
     
-        *Ausgabe:* :console:`10 20 30 40 50 60 70 80 90`
+        *Ausgabe:* :console:`20 40 60 80`
 
 
 Streams mit primitiven Daten und Objekten
@@ -955,8 +955,8 @@ Verwendung von Streams
 
         .. rubric:: Verarbeitungsoperationen
 
-        Eine terminale Operation hat im Gegensatz zu den Verarbeitungsoperationen keinen Stream als
-        Ergebnis (:java:`void`).
+        Eine terminale Operation hat im Gegensatz zu den Verarbeitungsoperationen *keinen Stream* als
+        Ergebnis.
 
         .. deck:: incremental
 
@@ -1415,6 +1415,7 @@ Insbesondere :java:`java.util.Optional<T>` kann/sollte anstelle von :java:`null`
 
             var s = Arrays.stream(new int[]{1,2,3})
             s.map(x -> x * x).reduce(0, (x,y) -> x + y)
+            // s.map(x -> x * x).sum()
 
         .. rubric:: Lösung 2
 
@@ -1431,7 +1432,6 @@ Insbesondere :java:`java.util.Optional<T>` kann/sollte anstelle von :java:`null`
         .. rubric:: Lösung 3
 
         .. code:: java
-
             :number-lines:
             :class: copy-to-clipboard
 
@@ -1452,4 +1452,4 @@ Insbesondere :java:`java.util.Optional<T>` kann/sollte anstelle von :java:`null`
             // parallel
             time (() -> IntStream.range(1,Integer.MAX_VALUE).parallel().map(x -> x -1).reduce(0, (x,y) -> x + y));
 
-        Depending on the number of cores in your machine, the parallel version should be faster than the sequential version.
+            Depending on the number of cores in your machine, the parallel version should be faster than the sequential version.

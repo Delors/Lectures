@@ -286,12 +286,13 @@ Beispiel: Berechnung der Fibonacci-Zahlen mit dynamischer Programmierung
 
         .. rubric:: Lösung mit linearer Laufzeit und konstantem Speicherbedarf
 
-        .. code:: pseudocode
+        .. code:: pascal
             :number-lines:
             :class: copy-to-clipboard
 
             procedure fib (n : integer) : integer
-                f_n_m2 := 0; f_n_m1 :=1
+                f_n_m2 := 0
+                f_n_m1 := 1
                 for k := 2 to n do
                     f_n := f_n_m1 + f_n_m2
                     f_n_m2 := f_n_m1
@@ -305,12 +306,13 @@ Beispiel: Berechnung der Fibonacci-Zahlen mit dynamischer Programmierung
 
         Berechne jeden Wert genau einmal, speichere ihn in einem Array F[0...n]:
 
-        .. code:: pseudocode
+        .. code:: pascal
             :number-lines:
             :class: far-smaller copy-to-clipboard
             
             procedure fib (n : integer) : integer
-                F[0] := 0; F[1] := 1;
+                F[0] := 0 
+                F[1] := 1
                 for i := 2 to n do
                     F[i] := ∞ // Initialisierung
                 return lookupfib(n)
@@ -329,7 +331,7 @@ Beispiel: Berechnung der Fibonacci-Zahlen mit dynamischer Programmierung
 
 .. exercise:: Fibonacci-Zahl effizient berechnen
 
-    Implementieren Sie den Pseudocode der ersten Lösung zur Berechnung der Fibonacci-Zahlen.
+    Implementieren Sie den Pseudocode der ersten Lösung zur Berechnung der Fibonacci-Zahlen. Verwenden Sie :java:`BigInteger`\ s.
 
     Bis zur welcher Fibonacci-Zahl können Sie die Berechnung nun durchführen?
 
@@ -420,7 +422,9 @@ Im Allgemeinen werden Laufzeiten oder Aufwände in Abhängigkeit von einer Einga
 
 .. supplemental::
 
-    Eine rekursive Definition ist eine Definition, die sich auf sich selbst bezieht. Häufiger schwieriger zu analysieren. Die explizite Definition ist eine direkte Zuweisung und meist die beste Wahl.
+    Eine rekursive Definition ist eine Definition, die sich auf sich selbst bezieht. Eine solche Definition ist häufiger schwieriger zu analysieren. 
+    
+    Die explizite Definition ist eine direkte Zuweisung und meist die beste Wahl.
 
 
 
@@ -506,6 +510,13 @@ Laufzeit der Lösung der Türme von Hanoi
               .. container:: incremental
 
                 Damit ist die Vermutung bestätigt.
+
+
+.. class:: new-subsection repetition
+
+Konvergenz von Folgen
+--------------------------------------------------------
+
 
 
 
@@ -1195,7 +1206,7 @@ Komplexität und bekannte Algorithmen/Probleme
         .. example::
             :class: incremental
           
-            Einfache Sortierverfahren wie z. B. Bubble-Sort oder die Matrixaddition.
+            Einfache Sortierverfahren oder die Matrixaddition.
 
 
     .. card::
@@ -1396,7 +1407,7 @@ Beispiel Insertion-Sort: Detailanalyse
 
     .. csv-table::
         :class: borderless highlight-line-on-hover 
-        :header: "", "Algorithmus: Insertion-Sort(A, n) [Pseudocode]", "Zeit", "Anzahl"
+        :header: "", "Algorithmus: Insertion-Sort(A, n) [Pseudocode - Index startet bei 1]", "Zeit", "Anzahl"
         :widths: 3, 80, 10, 25
 
         1:, ``for i = 2...n do``, "c1", :math:`n`
@@ -1505,12 +1516,11 @@ In Hinblick auf den Zeitaufwand gilt:
 Übung 
 ------------------------------------------
 
-
 .. exercise:: Bestimmung der asymptotischen Laufzeit eines Algorithmus 
     
     Die Funktion :math:`p(n)` hat die Laufzeit :math:`T_p(n) = c_p \cdot n^2` und :math:`q(n)` die Laufzeit :math:`T_q(n) = c_q \cdot \log(n)`.
 
-    .. code:: pseudocode
+    .. code:: pascal
         :number-lines:
 
         Algorithmus COMPUTE(n)
@@ -1557,7 +1567,7 @@ In Hinblick auf den Zeitaufwand gilt:
         
             (Beispiel: die Zahl :math:`n = 7_d` benötigt drei Bits :math:`n= 111_b`, die Zahl :math:`4_d` benötigt zwar auch drei Bits :math:`100_b` aber dennoch weniger Rechenschritte.). 
 
-        .. code:: pseudocode
+        .. code:: pascal
             :number-lines:
             :class: margin-top-1em
 
@@ -1608,7 +1618,7 @@ In Hinblick auf den Zeitaufwand gilt:
     
         (D. h. :math:`t_i = 1`, wenn der i-te Bit von :math:`n` gesetzt ist, sonst ist :math:`t_i = 0`; sei :math:`n = 5_d = 101_b` dann ist :math:`t_1 = 1, t_2 = 0, t_3 = 1`).
 
-    .. code:: pseudocode
+    .. code:: pascal
         :number-lines:
         :class: far-smaller
 
@@ -1659,6 +1669,67 @@ In Hinblick auf den Zeitaufwand gilt:
         Im schlimmsten Fall, d. h. :math:`n_{worst} = 2^k - 1` und :math:`l_{worst} = m_{worst} = k` : :math:`T_{worst}(k) ≤ c · (3+ 4k + k) = c· (5k + 3)`
 
         Somit gilt: :math:`T_{worst}(k) \in \Theta(k)`
+
+
+
+
+.. class:: exercises
+
+Übung - Bubble-Sort
+------------------------------------------
+
+Der Algorithmus "Bubble-Sort" sortiert eine Liste von Zahlen in aufsteigender Reihenfolge. Der Algorithmus vergleicht benachbarte Elemente und vertauscht sie, wenn sie in der falschen Reihenfolge sind. Dieser Vorgang wird wiederholt, bis die Liste vollständig sortiert ist.
+
+.. exercise::
+
+    1. Implementieren Sie den Bubble-Sort Algorithmus in einer Programmiersprache Ihrer Wahl und analysieren Sie die Laufzeitkomplexität des Algorithmus. Der Algorithmus soll ein Array/Liste von Ganzzahlen als Eingabe nehmen und sortiert zurückgeben. Dabei soll das Array/die Liste *in-place* sortiert werden, d. h. ohne zusätzliche Speicherplatznutzung.
+
+    2. Bestimmen Sie die Komplexität des Algorithmus in Abhängigkeit von der Anzahl der Elemente (n) im Array/der Liste.
+
+    .. solution:: 
+        :pwd: Bubble-bubble-bubble-sort
+
+        .. rubric:: Lösung in Java
+
+        .. code:: java
+            :number-lines:
+            :class: copy-to-clipboard
+
+            static void bubbleSort(int[] arr) {
+                int n = arr.length;
+                boolean swapped;
+                do {
+                    swapped = false;
+                    for (int i = 0; i < n - 1; i++) {
+                        if (arr[i] > arr[i + 1]) {
+                            // Swap arr[i] and arr[i + 1]
+                            int temp = arr[i];
+                            arr[i] = arr[i + 1];
+                            arr[i + 1] = temp;
+                            swapped = true;
+                        }
+                    }
+                    n--; // Reduce the range of the next iteration
+                } while (swapped);
+            }
+            
+        .. rubric:: Lösung in Python
+
+        .. code:: python
+            :number-lines:
+            :class: copy-to-clipboard
+
+            def bubble_sort(arr):
+                n = len(arr)
+                swapped = True
+                while swapped:
+                    swapped = False
+                    for i in range(n - 1):
+                        if arr[i] > arr[i + 1]:
+                            arr[i], arr[i + 1] = arr[i + 1], arr[i]
+                            swapped = True
+                    n -= 1  # Reduce the range of the next iteration
+                return arr
 
 
 
@@ -1720,7 +1791,7 @@ Rucksackproblem - rekursive Lösung
 
         gW = [ (1, 1), (3, 4), (5, 8), (2, 3) ] # [(Gewicht, Wert)...]
 
-        def bestWertRekursiv(n):
+        def bestWertRekursiv(n): # n = max. Traglast
             best = 0
             for i in range(len(gW)):
                 (gewt,wert) = gW[i]
@@ -1732,7 +1803,7 @@ Rucksackproblem - rekursive Lösung
 
         print(bestWertRekursiv(5)) # max. Traglast ist hier zu Beginn n = 5
 
-    .. incremental:: margin-top-1em
+    .. incremental::
 
         Für die Bestimmung der Komplexität nehmen wir jetzt die häufigste Aktion her; hier die Additionen.
 
@@ -1788,7 +1859,7 @@ Rucksackproblem - iterative Lösung
             2, 0, 1, 2, 4, 5, 8, 9, 10
             3, 0, 1, 3, 4, 6, 8, 9, 11
 
-    .. container:: incremental margin-top-1em
+    .. container:: incremental
 
         .. rubric:: Implementierung
                     
@@ -1798,20 +1869,20 @@ Rucksackproblem - iterative Lösung
 
             gW = [ (1, 1), (3, 4), (5, 8), (2, 3) ] # (Gewicht, Wert)
 
-            def bestWertIterativ(n):
-                best = [0] * (n + 1)  # best[i] = bester Wert für Traglast i
+            def bestWertIterativ(n):    # n = max. Traglast
+                best = [0] * (n + 1)    # best[i] = bester Wert für Traglast i (initial 0)
                 for i in range(len(gW)):
                     (gewt, wert) = gW[i]
-                    for j in range(gewt, n + 1):
+                    for j in range(gewt, n + 1): # range(gewt, n + 1): [gewt, ..., n)
                         test = best[j - gewt] + wert
                         if test > best[j]:
                             best[j] = test
                 
                 return best[n]
 
-            print(bestWertIterativ(5)) # max. Traglast ist hier zu Beginn n = 5
+            print(bestWertIterativ(5))  # max. Traglast ist hier zu Beginn n = 5
 
-    .. container:: incremental margin-top-1em
+    .. container:: incremental 
 
         .. rubric:: Komplexitätsanalyse
 
@@ -1833,6 +1904,7 @@ Rucksackproblem - iterative Lösung
     Grobe Idee: Wir gehen in der Methode :java:`bestWertIterativ` über alle Objekte (Zeile 5). In der inneren Schleife (Zeile 7) iterieren wir über die Traglasten, die das Objekt — ggf. auch mehrfach — aufnehmen könnten (:java:`range(gewt, n + 1)`). Für jede dieser Traglasten prüfen wir ob es vorteilhaft ist das Objekt in den Rucksack zu packen. Falls ja, dann wird der aktuell beste Wert für die Traglast aktualisiert.
     
     D. h. wir legen zum Beispiel ein Objekt mit dem Gewicht 2 bei einer verbleibenden Traglast von 5 ggf. (implizit) dadurch mehrfach in den Rucksack, dass wir bereits den besten Wert für die kleineren Traglasten kennen.
+
 
 
 Rucksackproblem - Vergleich
@@ -1870,17 +1942,13 @@ Rucksackproblem - Vergleich
 
             Die Analyse erfolgte nicht über die Wortlänge (als Eingabegröße); d. h. :math:`n` (Kapazität bzw. Tragkraft) entspricht nicht der Wortlänge. Ein Binärwort :math:`n` mit :math:`k` Zeichen (Bits) hat bis zu :math:`2^k-1` Werte.
         
-        .. container:: incremental
+            .. math::
 
-            .. class:: list-column 
-
-            - .. math::
-
-                        c^{Rek}_{Add}(2^k-1) =  \dfrac{4}{3}(4^{2^k-1}-1) \in O(4^{2\cdot k})
+                c^{Rek}_{Add}(2^k-1) =  \dfrac{4}{3}(4^{2^k-1}-1) \in O(4^{2\cdot k})
                         
-            - .. math::
+            .. math::
                             
-                        c^{Ite}_{Add}(2^k-1) = 4(2^k-1) \in \Theta(2^k)
+                c^{Ite}_{Add}(2^k-1) = 4(2^k-1) \in \Theta(2^k)
                         
 
     .. important::
@@ -2253,7 +2321,7 @@ Backtracking
 
     Backtracking ist in Prolog inherent vorhanden, da Prolog auf dem Prinzip des Backtrackings basiert, weswegen Prolog für die Lösung solcher Probleme gut geeignet ist.
 
-.. [#] Wir werden uns später mit NP-harten und NP-vollständigen Problemen beschäftigen. Für den Moment reicht es zu wissen, dass es Probleme gibt, die nicht in polynomieller („vernünftiger“) Zeit gelöst werden können.
+.. [#] NP-harte und NP-vollständige Probleme sind solche Probleme, die schwierig sind zu lösen. Hier reicht es zu wissen, dass es Probleme gibt, die nicht in polynomieller („vernünftiger“) Zeit gelöst werden können.
 
 
 Beispiel: Das 4-Damen Problem (konzeptuell)

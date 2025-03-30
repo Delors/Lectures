@@ -116,6 +116,12 @@ Kontrollfragen
 Maven
 -------------------------------------
 
+
+.. class:: exercises
+   
+Kontrollfragen
+-------------------------------------
+
 .. deck:: numbered
 
    .. card:: 
