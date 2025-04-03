@@ -1,3 +1,6 @@
 code/newton/target
 code/hello/target
+code/**/.settings
+code/**/.classpath
+code/**/.project
 images
