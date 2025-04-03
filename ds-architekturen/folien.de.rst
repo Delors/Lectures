@@ -19,19 +19,7 @@
 .. role:: incremental
 .. role:: eng
 .. role:: ger
-.. role:: minor
-.. role:: obsolete
-.. role:: smaller
-.. role:: dhbw-red
-.. role:: dhbw-gray
-.. role:: dhbw-light-gray
-.. role:: the-blue
-.. role:: the-green
-.. role:: the-orange
-.. role:: shiny-green
-.. role:: shiny-red
-.. role:: black
-.. role:: dark-red
+.. role:: light-gray
 
 
 .. role:: raw-html(raw)
@@ -46,9 +34,9 @@ Ein erster Überblick.
 
 ----
 
-  :Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
-  :Kontakt: michael.eichberg@dhbw.de, Raum 149B
-  :Version: 1.0
+:Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
+:Kontakt: michael.eichberg@dhbw.de, Raum 149B
+:Version: 1.0
 
 .. supplemental::
 
@@ -162,7 +150,7 @@ Abhängigkeiten zwischen den Komponenten werden durch das *Publish and Subscribe
       :widths: 12 40 40
       
       "", "Zeitlich gekoppelt", "Zeitlich entkoppelt"
-      :dhbw-light-gray:`Referentiell gekoppelt`, :dhbw-light-gray:`Direkt Koordination`, :dhbw-light-gray:`Mailboxkoordination`
+      :light-gray:`Referentiell gekoppelt`, :light-gray:`Direkt Koordination`, :light-gray:`Mailboxkoordination`
       "Referentiell entkoppelt", "ereignisbasierte Koordination 
       
       (:eng:`Event-based Coordination`)", "gemeinsam genutzter Datenspeicher 
