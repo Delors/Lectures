@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insertion Sort Visualization</title>
+</head>
+
+<body>
+    <style>
+        #insertion-sort {
+            /* Definition all css variables that are manipulated when a single step is performed. */
+            --legend: "...";
+            --sorted-bar: 0 /* initial 2ch */;
+            --v7-pos: 0 /* initial 2.5ch */;
+            --v5-pos: 1 /* initial 12.5ch */;
+            --v8-pos: 2 /* initial 22.5ch */;
+            --v2-pos: 3 /* initial 32.5ch */;
+        }
+
+        #insertion-sort-canvas {
+            position: relative;
+            width: 42.5ch;
+            height: 40ch;
+            border-radius: 0.5ch;
+            overflow: hidden;
+
+            background-color: antiquewhite;
+
+            .header {
+                position: absolute;
+                left: 0.25ch;
+                top: 0.25ch;
+
+                box-sizing: border-box;
+                width: calc(42.5ch - 2 * 0.25ch);
+                border-radius: 0.5ch;
+                padding: 0.5ch 1ch;
+
+                display: flex;
+                justify-content: space-between;
+
+                background-color: hsl(40, 53%, 79%);
+            }
+
+            .bar {
+                position: absolute;
+                bottom: 2.75ch;
+                /* left is individually controlled */
+                width: 7.5ch;
+                padding-top: 1ch;
+
+                background-color: #add8e6;
+                transition: all 1s linear 0s;
+                text-align: center;
+                border-radius: 0.8ch 0.8ch 0ch 0ch;
+
+                &.compared {
+                    box-shadow: -1px -1px 10px 1px gray;
+                    background-color: lightsteelblue;
+                }
+
+                &.key {
+                    box-shadow: -1px -1px 10px 1px gray;
+                    background-color: lightcoral;
+                }
+            }
+
+            .footer {
+                position: absolute;
+                bottom: 0.25ch;
+                left: 0.25ch;
+                width: calc(100% - 2 * 0.25ch);
+                height: 2.5ch;
+                background-color: hsl(40, 53%, 79%);
+                border-radius: 0.25ch;
+
+                .array {
+                    position: absolute;
+                    bottom: 0.25ch;
+                }
+
+                .array-index {
+                    position: absolute;
+                    bottom: 0.25ch;
+                    width: 7.5ch;
+                    height: 2ch;
+                    
+                    color: white;
+                    background-color: darkgray;
+                    text-align: center;
+                }
+            }
+
+            #sorted-bar {
+                position: absolute;
+                width: 0.25ch;
+                height: 33ch;
+                bottom: 2.75ch;
+                left: var(--sorted-bar);
+                background-color: black;
+                transition: all 0.3s ease-out 0s;
+            }
+
+            #sorted-text {
+                position: absolute;
+                top: 2.75ch;
+                left: calc(var(--sorted-bar) - 2ch);
+                transform-origin: bottom left;
+                transform: rotate(90deg);
+                transition: all 0.3s ease-out 0s;
+            }
+        }
+
+        #legend {
+            &::before {
+                content: "Schritt: ";
+                display: inline;
+                height: 2ch;
+                line-height: 2ch;
+            }
+            &::after {
+                content: var(--legend);
+                display: inline;
+                height: 2ch;
+                line-height: 2ch;
+            }
+        }
+    </style>
+    <div id="insertion-sort">
+    <div id="insertion-sort-canvas">
+        <div class="header">
+            <div>
+                <button id="reset">⥀</button>
+                <button id="next">&gt;</button>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="array" style=" left: 0.4ch">v[</div>
+            <div class="array" style=" right: 1.4ch">]</div>
+            <div class="array-index" style=" left: 2.25ch">0</div>
+            <div class="array-index" style=" left: 12.25ch">1</div>
+            <div class="array-index" style=" left: 22.25ch">2</div>
+            <div class="array-index" style=" left: 32.25ch">3</div>
+        </div>
+        <div id="sorted-bar"></div>
+        <div id="sorted-text">sortiert</div>
+        <div id="v7" class="bar" style="height: 28ch; left: 2.5ch">7</div>
+        <div id="v5" class="bar" style="height: 20ch; left: 12.5ch">5</div>
+        <div id="v8" class="bar" style="height: 32ch; left: 22.5ch">8</div>
+        <div id="v2" class="bar" style="height: 8ch; left: 32.5ch">2</div>
+    </div>
+    <span id="legend">...</span>
+    <script>
+        const v2 = document.getElementById("v2");
+        const v5 = document.getElementById("v5");
+        const v7 = document.getElementById("v7");
+        const v8 = document.getElementById("v8");
+        const legend = document.getElementById("legend");
+        const sortedBar = document.getElementById("sorted-bar");
+        const sortedText = document.getElementById("sorted-text");
+        let step = -1;
+        document.getElementById("reset").addEventListener("click", function () {
+            step = -1;
+            legend.innerHTML = "...";
+            document.getElementById("insertion-sort-canvas").style.backgroundColor = "antiquewhite";
+            sortedText.style.left = "0ch";
+            sortedBar.style.left = "2ch";
+            v7.style.left = "2.5ch";
+            v5.style.left = "12.5ch";
+            v8.style.left = "22.5ch";
+            v2.style.left = "32.5ch";
+            v7.classList.remove("compared");
+            v5.classList.remove("compared");
+            v8.classList.remove("compared");
+            v2.classList.remove("compared");
+        });
+        document.getElementById("next").addEventListener("click", function () {
+            step++;
+            switch (step) {
+                case 0:
+                    sortedBar.style.left = "12ch";
+                    sortedText.style.left = "10ch";
+                    break;
+                case 1:
+                    legend.innerHTML = "i = 1;key = v[i] = 5; j = 1 (Runde 1)";
+                    v5.classList.add("key");
+                    break;
+                case 1:
+                    legend.innerHTML = "j &geq; 0 ⋀ A[j] &gt; key?"
+                    v7.classList.add("key");
+                case 2:
+                    legend.innerHTML = "swap(v[0],v[1]) (Runde 1)";
+                    sortedBar.style.left = "22ch";
+                    sortedText.style.left = "20ch";
+                    v7.style.left = "12.5ch";
+                    v5.style.left = "2.5ch";
+                    v7.classList.remove("compared");
+                    v5.classList.remove("key");
+                    break;
+
+
+
+                case 2:
+                    legend.innerHTML = "v[2] &lt; v[3]? (Runde 1)";
+                    v7.classList.add("compared");
+                    v8.classList.add("compared");
+                    break;
+                case 3:
+                    v7.classList.remove("compared");
+
+                    legend.innerHTML = "v[3] &lt; v[4]? (Runde 1)";
+                    v8.classList.add("compared");
+                    v2.classList.add("compared");
+                    break;
+                case 4:
+                    v8.classList.remove("compared");
+                    v2.classList.remove("compared");
+                    legend.innerHTML = "swap(v[3],v[4]) (Runde 1)";
+                    v8.style.left = "32.5ch";
+                    v2.style.left = "22.5ch";
+                    break;
+
+
+                case 5:
+                    legend.innerHTML = "v[1] &lt; v[2]? (Runde 2)";
+                    v7.classList.add("compared");
+                    v5.classList.add("compared");
+                    break;
+                case 6:
+                    v5.classList.remove("compared");
+
+                    legend.innerHTML = "v[2] &lt; v[3]? (Runde 2)";
+                    v7.classList.add("compared");
+                    v2.classList.add("compared");
+                    break;
+                case 7:
+                    v7.classList.remove("compared");
+                    v2.classList.remove("compared");
+                    legend.innerHTML = "swap(v[2],v[3]) (Runde 2)";
+                    v2.style.left = "12.5ch";
+                    v7.style.left = "22.5ch";
+                    break;
+
+                case 8:
+                    legend.innerHTML = "v[1] &lt; v[2]? (Runde 3)";
+                    v5.classList.add("compared");
+                    v2.classList.add("compared");
+                    break;
+                case 9:
+                    v2.classList.remove("compared");
+                    v5.classList.remove("compared");
+                    legend.innerHTML = "swap(v[1],v[2]) (Runde 3)";
+                    v2.style.left = "2.5ch";
+                    v5.style.left = "12.5ch";
+                    break;
+
+                case 10:
+                    document.getElementById("insertion-sort-canvas").style.backgroundColor = "lightgreen";
+                    legend.innerHTML = "Fertig!";
+                    break;
+            }
+        });
+    </script>
+    </div>
+</body>

@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quick Sort Visualization</title>
+</head>
+
+<body>
+
+    <style>
+        #quickSortExample {
+            position: relative;
+            width: 42.5ch;
+            height: 40ch;
+            border-radius: 0.5ch;
+
+            background-color: antiquewhite;
+
+            .header {
+                position: absolute;
+                left: 0.25ch;
+                top: 0.25ch;
+
+                box-sizing: border-box;
+                width: calc(42.5ch - 2 * 0.25ch);
+                border-radius: 0.5ch;
+                padding: 0.5ch 1ch;
+
+                display: flex;
+                justify-content: space-between;
+
+                background-color: hsl(40, 53%, 79%);
+
+                #action {
+
+                    &::before {
+                        content: "Schritt: ";
+                        display: inline;
+                        height: 2ch;
+                        line-height: 2ch;
+                    }
+                }
+            }
+
+            .bar {
+                position: absolute;
+                width: 7.5ch;
+                background-color: #add8e6;
+                transition: all 1s linear 0s;
+                display: table-cell;
+                text-align: center;
+                padding-top: 1ch;
+                border-radius: 0.8ch 0.8ch 0ch 0ch;
+
+
+                &.compared {
+                    box-shadow: -1px -1px 10px 1px gray;
+                    background-color: lightsteelblue;
+                }
+            }
+
+            .footer {
+                position: absolute;
+                bottom: 0.25ch;
+                left: 0.25ch;
+                width: calc(100% - 2 * 0.25ch);
+                height: 2.5ch;
+                background-color: hsl(40, 53%, 79%);
+                border-radius: 0.25ch;
+
+                .array {
+                    position: absolute;
+                }
+
+                .array-index {
+                    position: absolute;
+                    background-color: darkgray;
+                    color: white;
+                    width: 7.5ch;
+                    height: 2ch;
+                    text-align: center;
+                }
+            }
+        }
+    </style>
+
+    <div id="quickSortExample">
+        <div class="header">
+            <span id="action">...</span>
+            <div>
+                <button id="next">&gt;</button>
+                <button id="reset">⥀</button>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="array" style=" left: 0.4ch; bottom: 0.25ch;">v[</div>
+            <div class="array" style=" right: 1.4ch; bottom: 0.25ch;">]</div>
+            <div class="array-index" style=" left: 2.25ch; bottom: 0.25ch;">1</div>
+            <div class="array-index" style=" left: 12.25ch; bottom: 0.25ch;">2</div>
+            <div class="array-index" style=" left: 22.25ch; bottom: 0.25ch;">3</div>
+            <div class="array-index" style=" left: 32.25ch; bottom: 0.25ch;">4</div>
+        </div>
+        <div id="v7" data-v="7" class="bar" style="height: 28ch; left: 2.5ch; bottom: 2.75ch;">7</div>
+
+        <div id="v5" data-v="5" class="bar" style="height: 20ch; left: 12.5ch; bottom: 2.75ch;">5</div>
+
+        <div id="v8" data-v="8" class="bar" style="height: 32ch; left: 22.5ch; bottom: 2.75ch;">8</div>
+
+        <div id="v2" data-v="2" class="bar" style="height: 8ch; left: 32.5ch; bottom: 2.75ch;">2</div>
+
+
+        <script>
+            const v2 = document.getElementById("v2");
+            const v5 = document.getElementById("v5");
+            const v7 = document.getElementById("v7");
+            const v8 = document.getElementById("v8");
+            const action = document.getElementById("action");
+            let step = -1;
+            document.getElementById("reset").addEventListener("click", function () {
+                step = -1;
+                action.innerHTML = "...";
+                document.getElementById("quickSortExample").style.backgroundColor = "antiquewhite";
+                v7.style.left = "2.5ch";
+                v5.style.left = "12.5ch";
+                v8.style.left = "22.5ch";
+                v2.style.left = "32.5ch";
+                v7.classList.remove("compared");
+                v5.classList.remove("compared");
+                v8.classList.remove("compared");
+                v2.classList.remove("compared");
+            });
+            document.getElementById("next").addEventListener("click", function () {
+                step++;
+                switch (step) {
+                    case 0:
+                        action.innerHTML = "v[1] &lt; v[2]? (Runde 1)";
+                        v7.classList.add("compared");
+                        v5.classList.add("compared");
+                        break;
+                    case 1:
+                        action.innerHTML = "swap(v[1],v[2]) (Runde 1)";
+                        v7.style.left = "12.5ch";
+                        v5.style.left = "2.5ch";
+                        v7.classList.remove("compared");
+                        v5.classList.remove("compared");
+                        break;
+                    case 2:
+                        action.innerHTML = "v[2] &lt; v[3]? (Runde 1)";
+                        v7.classList.add("compared");
+                        v8.classList.add("compared");
+                        break;
+                    case 3:
+                        v7.classList.remove("compared");
+
+                        action.innerHTML = "v[3] &lt; v[4]? (Runde 1)";
+                        v8.classList.add("compared");
+                        v2.classList.add("compared");
+                        break;
+                    case 4:
+                        v8.classList.remove("compared");
+                        v2.classList.remove("compared");
+                        action.innerHTML = "swap(v[3],v[4]) (Runde 1)";
+                        v8.style.left = "32.5ch";
+                        v2.style.left = "22.5ch";
+                        break;
+
+
+                    case 5:
+                        action.innerHTML = "v[1] &lt; v[2]? (Runde 2)";
+                        v7.classList.add("compared");
+                        v5.classList.add("compared");
+                        break;
+                    case 6:
+                        v5.classList.remove("compared");
+
+                        action.innerHTML = "v[2] &lt; v[3]? (Runde 2)";
+                        v7.classList.add("compared");
+                        v2.classList.add("compared");
+                        break;
+                    case 7:
+                        v7.classList.remove("compared");
+                        v2.classList.remove("compared");
+                        action.innerHTML = "swap(v[2],v[3]) (Runde 2)";
+                        v2.style.left = "12.5ch";
+                        v7.style.left = "22.5ch";
+                        break;
+
+                    case 8:
+                        action.innerHTML = "v[1] &lt; v[2]? (Runde 3)";
+                        v5.classList.add("compared");
+                        v2.classList.add("compared");
+                        break;
+                    case 9:
+                        v2.classList.remove("compared");
+                        v5.classList.remove("compared");
+                        action.innerHTML = "swap(v[1],v[2]) (Runde 3)";
+                        v2.style.left = "2.5ch";
+                        v5.style.left = "12.5ch";
+                        break;
+
+                    case 10:
+                        document.getElementById("quickSortExample").style.backgroundColor = "lightgreen";
+                        action.innerHTML = "Fertig!";
+                        break;
+                }
+            });
+        </script>
+    </div>
+</body>
