@@ -1,0 +1,573 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+    "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg
+    xmlns:xl="http://www.w3.org/1999/xlink"
+    version="1.1"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="9 10 343 342"
+    width="343"
+    height="342"
+>
+  <style>
+    @import url('/LectureDoc2/ext/fonts/ld-fonts.css');
+  </style>
+  <defs>
+    <filter id="Shadow" filterUnits="userSpaceOnUse" x="-25.3" y="-24.2">
+      <feGaussianBlur in="SourceAlpha" result="blur" stdDeviation="1.308" />
+      <feOffset in="blur" result="offset" dx="0" dy="2" />
+      <feFlood flood-color="black" flood-opacity=".5" result="flood" />
+      <feComposite in="flood" in2="offset" operator="in" />
+    </filter>
+    <marker
+            orient="auto"
+            overflow="visible"
+            markerUnits="strokeWidth"
+            id="StickArrow_Marker"
+            stroke-linejoin="miter"
+            stroke-miterlimit="10"
+            viewBox="-1 -4 10 8"
+            markerWidth="10"
+            markerHeight="8"
+            color="black"
+        >
+      <g>
+        <path
+                    d="M 8 0 L 0 0 M 0 -3 L 8 0 L 0 3"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1"
+                />
+      </g>
+    </marker>
+    <marker
+            orient="auto"
+            overflow="visible"
+            markerUnits="strokeWidth"
+            id="FilledArrow_Marker"
+            stroke-linejoin="miter"
+            stroke-miterlimit="10"
+            viewBox="-1 -4 10 8"
+            markerWidth="10"
+            markerHeight="8"
+            color="black"
+        >
+      <g>
+        <path
+                    d="M 8 0 L 0 -3 L 0 3 Z"
+                    fill="currentColor"
+                    stroke="currentColor"
+                    stroke-width="1"
+                />
+      </g>
+    </marker>
+  </defs>
+  <metadata> Produced by OmniGraffle 8.0\n2025-04-04 08:05:07 +0000</metadata>
+  <g
+        id="transaction"
+        fill-opacity="1"
+        stroke-opacity="1"
+        stroke-dasharray="none"
+        stroke="none"
+        fill="none"
+    >
+    <title>transaction</title>
+    <g id="transaction_Layer_1">
+      <title>Layer 1</title>
+      <g id="Graphic_1_shadow" filter="url(#Shadow)">
+        <path
+                    d="M 34.360943 12.235524 L 135.16094 12.235524 C 147.08414 12.235524 156.76094 22.539524 156.76094 35.235524 C 156.76094 47.931524 147.08414 58.235524 135.16094 58.235524 L 34.360943 58.235524 C 22.437743 58.235524 12.760943 47.931524 12.760943 35.235524 C 12.760943 22.539524 22.437743 12.235524 34.360943 12.235524 Z"
+                    fill="white"
+                />
+        <path
+                    d="M 34.360943 12.235524 L 135.16094 12.235524 C 147.08414 12.235524 156.76094 22.539524 156.76094 35.235524 C 156.76094 47.931524 147.08414 58.235524 135.16094 58.235524 L 34.360943 58.235524 C 22.437743 58.235524 12.760943 47.931524 12.760943 35.235524 C 12.760943 22.539524 22.437743 12.235524 34.360943 12.235524 Z"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
+      </g>
+      <g id="Graphic_19_shadow" filter="url(#Shadow)">
+        <rect x="12.760943" y="78.5" width="144" height="36" fill="white" />
+        <rect
+                    x="12.760943"
+                    y="78.5"
+                    width="144"
+                    height="36"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
+      </g>
+      <g id="Graphic_21_shadow" filter="url(#Shadow)">
+        <path
+                    d="M 34.360943 299.7621 L 135.16094 299.7621 C 147.08414 299.7621 156.76094 310.0661 156.76094 322.7621 C 156.76094 335.4581 147.08414 345.7621 135.16094 345.7621 L 34.360943 345.7621 C 22.437743 345.7621 12.760943 335.4581 12.760943 322.7621 C 12.760943 310.0661 22.437743 299.7621 34.360943 299.7621 Z"
+                    fill="white"
+                />
+        <path
+                    d="M 34.360943 299.7621 L 135.16094 299.7621 C 147.08414 299.7621 156.76094 310.0661 156.76094 322.7621 C 156.76094 335.4581 147.08414 345.7621 135.16094 345.7621 L 34.360943 345.7621 C 22.437743 345.7621 12.760943 335.4581 12.760943 322.7621 C 12.760943 310.0661 22.437743 299.7621 34.360943 299.7621 Z"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
+      </g>
+      <g id="Graphic_25_shadow" filter="url(#Shadow)">
+        <rect x="12.760943" y="134.76448" width="144" height="36" fill="white" />
+        <rect
+                    x="12.760943"
+                    y="134.76448"
+                    width="144"
+                    height="36"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
+      </g>
+      <g id="Graphic_26_shadow" filter="url(#Shadow)">
+        <rect x="12.760943" y="247.29343" width="144" height="36" fill="white" />
+        <rect
+                    x="12.760943"
+                    y="247.29343"
+                    width="144"
+                    height="36"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
+      </g>
+      <g id="Graphic_27_shadow" filter="url(#Shadow)">
+        <rect x="12.760943" y="191.02895" width="144" height="36" fill="white" />
+        <rect
+                    x="12.760943"
+                    y="191.02895"
+                    width="144"
+                    height="36"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
+      </g>
+      <g id="Graphic_1">
+        <path
+                    d="M 34.360943 12.235524 L 135.16094 12.235524 C 147.08414 12.235524 156.76094 22.539524 156.76094 35.235524 C 156.76094 47.931524 147.08414 58.235524 135.16094 58.235524 L 34.360943 58.235524 C 22.437743 58.235524 12.760943 47.931524 12.760943 35.235524 C 12.760943 22.539524 22.437743 12.235524 34.360943 12.235524 Z"
+                    fill="white"
+                />
+        <path
+                    d="M 34.360943 12.235524 L 135.16094 12.235524 C 147.08414 12.235524 156.76094 22.539524 156.76094 35.235524 C 156.76094 47.931524 147.08414 58.235524 135.16094 58.235524 L 34.360943 58.235524 C 22.437743 58.235524 12.760943 47.931524 12.760943 35.235524 C 12.760943 22.539524 22.437743 12.235524 34.360943 12.235524 Z"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
+        <text transform="translate(32.160943 25.735524)" fill="black">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="14"
+                        font-weight="400"
+                        fill="black"
+                        x=".7159985"
+                        y="15"
+                    >Order fulfillment</tspan>
+        </text>
+      </g>
+      <g id="Graphic_19">
+        <rect x="12.760943" y="78.5" width="144" height="36" fill="white" />
+        <rect
+                    x="12.760943"
+                    y="78.5"
+                    width="144"
+                    height="36"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
+        <text transform="translate(17.760943 77.5)" fill="black">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="14"
+                        font-weight="400"
+                        fill="black"
+                        x="7.024"
+                        y="15"
+                    >Check item in stock </tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="14"
+                        font-weight="400"
+                        fill="black"
+                        x=".85"
+                        y="34"
+                    >and reserve for order</tspan>
+        </text>
+      </g>
+      <g id="Graphic_21">
+        <path
+                    d="M 34.360943 299.7621 L 135.16094 299.7621 C 147.08414 299.7621 156.76094 310.0661 156.76094 322.7621 C 156.76094 335.4581 147.08414 345.7621 135.16094 345.7621 L 34.360943 345.7621 C 22.437743 345.7621 12.760943 335.4581 12.760943 322.7621 C 12.760943 310.0661 22.437743 299.7621 34.360943 299.7621 Z"
+                    fill="white"
+                />
+        <path
+                    d="M 34.360943 299.7621 L 135.16094 299.7621 C 147.08414 299.7621 156.76094 310.0661 156.76094 322.7621 C 156.76094 335.4581 147.08414 345.7621 135.16094 345.7621 L 34.360943 345.7621 C 22.437743 345.7621 12.760943 335.4581 12.760943 322.7621 C 12.760943 310.0661 22.437743 299.7621 34.360943 299.7621 Z"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
+        <text transform="translate(32.160943 303.7621)" fill="black">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="14"
+                        font-weight="400"
+                        fill="black"
+                        x="19.531998"
+                        y="15"
+                    >Fulfillment </tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="14"
+                        font-weight="400"
+                        fill="black"
+                        x="19.573998"
+                        y="34"
+                    >completed</tspan>
+        </text>
+      </g>
+      <g id="Graphic_25">
+        <rect x="12.760943" y="134.76448" width="144" height="36" fill="white" />
+        <rect
+                    x="12.760943"
+                    y="134.76448"
+                    width="144"
+                    height="36"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
+        <text transform="translate(17.760943 133.76448)" fill="black">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="14"
+                        font-weight="400"
+                        fill="black"
+                        x="13.163"
+                        y="15"
+                    >Take money from </tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="14"
+                        font-weight="400"
+                        fill="black"
+                        x="37.537"
+                        y="34"
+                    >customer</tspan>
+        </text>
+      </g>
+      <g id="Graphic_26">
+        <rect x="12.760943" y="247.29343" width="144" height="36" fill="white" />
+        <rect
+                    x="12.760943"
+                    y="247.29343"
+                    width="144"
+                    height="36"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
+        <text transform="translate(17.760943 246.29343)" fill="black">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="14"
+                        font-weight="400"
+                        fill="black"
+                        x="10.755"
+                        y="15"
+                    >Package and send </tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="14"
+                        font-weight="400"
+                        fill="black"
+                        x="49.892"
+                        y="34"
+                    >order</tspan>
+        </text>
+      </g>
+      <g id="Graphic_27">
+        <rect x="12.760943" y="191.02895" width="144" height="36" fill="white" />
+        <rect
+                    x="12.760943"
+                    y="191.02895"
+                    width="144"
+                    height="36"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
+        <text transform="translate(17.760943 190.02895)" fill="black">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="14"
+                        font-weight="400"
+                        fill="black"
+                        x="17.944"
+                        y="15"
+                    >Award points to </tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="14"
+                        font-weight="400"
+                        fill="black"
+                        x="37.537"
+                        y="34"
+                    >customer</tspan>
+        </text>
+      </g>
+      <g id="Graphic_28">
+        <path
+                    d="M 221 96.5 L 253.5 71.5 L 318.5 71.5 L 351 96.5 L 318.5 121.5 L 253.5 121.5 Z"
+                    fill="white"
+                />
+        <path
+                    d="M 221 96.5 L 253.5 71.5 L 318.5 71.5 L 351 96.5 L 318.5 121.5 L 253.5 121.5 Z"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
+      </g>
+      <g id="Graphic_29">
+        <path
+                    d="M 221 152.76448 L 253.5 127.76448 L 318.5 127.76448 L 351 152.76448 L 318.5 177.76448 L 253.5 177.76448 Z"
+                    fill="white"
+                />
+        <path
+                    d="M 221 152.76448 L 253.5 127.76448 L 318.5 127.76448 L 351 152.76448 L 318.5 177.76448 L 253.5 177.76448 Z"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
+        <text transform="translate(253.5 133.76448)" fill="black">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="14"
+                        font-weight="400"
+                        fill="black"
+                        x="4.997"
+                        y="15"
+                    >Payment </tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="14"
+                        font-weight="400"
+                        fill="black"
+                        x="5.683"
+                        y="34"
+                    >Gateway</tspan>
+        </text>
+      </g>
+      <g id="Graphic_30">
+        <path
+                    d="M 221 209.02895 L 253.5 184.02895 L 318.5 184.02895 L 351 209.02895 L 318.5 234.02895 L 253.5 234.02895 Z"
+                    fill="white"
+                />
+        <path
+                    d="M 221 209.02895 L 253.5 184.02895 L 318.5 184.02895 L 351 209.02895 L 318.5 234.02895 L 253.5 234.02895 Z"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
+        <text transform="translate(253.5 199.52895)" fill="black">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="14"
+                        font-weight="400"
+                        fill="black"
+                        x="10.548"
+                        y="15"
+                    >Loyalty</tspan>
+        </text>
+      </g>
+      <g id="Graphic_31">
+        <path
+                    d="M 221 265.29343 L 253.5 240.29343 L 318.5 240.29343 L 351 265.29343 L 318.5 290.29343 L 253.5 290.29343 Z"
+                    fill="white"
+                />
+        <path
+                    d="M 221 265.29343 L 253.5 240.29343 L 318.5 240.29343 L 351 265.29343 L 318.5 290.29343 L 253.5 290.29343 Z"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
+      </g>
+      <g id="Line_32">
+        <line
+                    x1="156.76094"
+                    y1="96.5"
+                    x2="211.1"
+                    y2="96.5"
+                    marker-end="url(#StickArrow_Marker)"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-dasharray="8.0,5.0"
+                    stroke-width="1"
+                />
+      </g>
+      <g id="Graphic_33">
+        <text transform="translate(156.93555 76.5)" fill="black">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="14"
+                        font-weight="400"
+                        fill="black"
+                        x="0"
+                        y="15"
+                    >handled by</tspan>
+        </text>
+      </g>
+      <g id="Line_34">
+        <line
+                    x1="156.76094"
+                    y1="152.76448"
+                    x2="211.1"
+                    y2="152.76448"
+                    marker-end="url(#StickArrow_Marker)"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-dasharray="8.0,5.0"
+                    stroke-width="1"
+                />
+      </g>
+      <g id="Line_35">
+        <line
+                    x1="156.76094"
+                    y1="209.02895"
+                    x2="211.1"
+                    y2="209.02895"
+                    marker-end="url(#StickArrow_Marker)"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-dasharray="8.0,5.0"
+                    stroke-width="1"
+                />
+      </g>
+      <g id="Line_36">
+        <line
+                    x1="156.76094"
+                    y1="265.29343"
+                    x2="211.1"
+                    y2="265.29343"
+                    marker-end="url(#StickArrow_Marker)"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-dasharray="8.0,5.0"
+                    stroke-width="1"
+                />
+      </g>
+      <g id="Line_37">
+        <line
+                    x1="84.76094"
+                    y1="58.235524"
+                    x2="84.76094"
+                    y2="68.6"
+                    marker-end="url(#FilledArrow_Marker)"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
+      </g>
+      <g id="Line_38">
+        <line
+                    x1="84.76094"
+                    y1="114.5"
+                    x2="84.76094"
+                    y2="124.86448"
+                    marker-end="url(#FilledArrow_Marker)"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
+      </g>
+      <g id="Line_39">
+        <line
+                    x1="84.76094"
+                    y1="170.76448"
+                    x2="84.76094"
+                    y2="181.12895"
+                    marker-end="url(#FilledArrow_Marker)"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
+      </g>
+      <g id="Line_40">
+        <line
+                    x1="84.76094"
+                    y1="227.02895"
+                    x2="84.76094"
+                    y2="237.39343"
+                    marker-end="url(#FilledArrow_Marker)"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
+      </g>
+      <g id="Line_41">
+        <line
+                    x1="84.76094"
+                    y1="283.29343"
+                    x2="84.76094"
+                    y2="289.8621"
+                    marker-end="url(#FilledArrow_Marker)"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
+      </g>
+      <g id="Graphic_42">
+        <text transform="translate(251.049 255.79343)" fill="black">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="14"
+                        font-weight="400"
+                        fill="black"
+                        x="0"
+                        y="15"
+                    >Warehouse</tspan>
+        </text>
+      </g>
+      <g id="Graphic_43">
+        <text transform="translate(251.049 87)" fill="black">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="14"
+                        font-weight="400"
+                        fill="black"
+                        x="0"
+                        y="15"
+                    >Warehouse</tspan>
+        </text>
+      </g>
+    </g>
+  </g>
+</svg>

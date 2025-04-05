@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+    "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg
+    xmlns:xl="http://www.w3.org/1999/xlink"
+    version="1.1"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="151 215 126 258"
+    width="126"
+    height="258"
+>
+  <style>
+    @import url('/LectureDoc2/ext/fonts/ld-fonts.css');
+  </style>
+  <defs>
+    <filter id="Shadow" filterUnits="userSpaceOnUse" x="138.4" y="189.2">
+      <feGaussianBlur in="SourceAlpha" result="blur" stdDeviation=".872" />
+      <feOffset in="blur" result="offset" dx="2" dy="2" />
+      <feFlood flood-color="black" flood-opacity=".5" result="flood" />
+      <feComposite in="flood" in2="offset" operator="in" />
+    </filter>
+    <marker
+            orient="auto"
+            overflow="visible"
+            markerUnits="strokeWidth"
+            id="FilledArrow_Marker"
+            stroke-linejoin="miter"
+            stroke-miterlimit="10"
+            viewBox="-1 -3 7 6"
+            markerWidth="7"
+            markerHeight="6"
+            color="black"
+        >
+      <g>
+        <path
+                    d="M 4.8 0 L 0 -1.8 L 0 1.8 Z"
+                    fill="currentColor"
+                    stroke="currentColor"
+                    stroke-width="1"
+                />
+      </g>
+    </marker>
+    <marker
+            orient="auto"
+            overflow="visible"
+            markerUnits="strokeWidth"
+            id="FilledBox_Marker"
+            stroke-linejoin="miter"
+            stroke-miterlimit="10"
+            viewBox="-5 -3 6 6"
+            markerWidth="6"
+            markerHeight="6"
+            color="black"
+        >
+      <g>
+        <rect
+                    x="-3.6"
+                    y="-1.8"
+                    width="3.6"
+                    height="3.6"
+                    fill="currentColor"
+                    stroke="currentColor"
+                    stroke-width="1"
+                />
+      </g>
+    </marker>
+  </defs>
+  <metadata> Produced by OmniGraffle 8.0\n2025-04-04 07:03:23 +0000</metadata>
+  <g
+        id="n-layered_architectures-and-callbacks"
+        fill-opacity="1"
+        stroke-opacity="1"
+        stroke-dasharray="none"
+        stroke="none"
+        fill="none"
+    >
+    <title>n-layered_architectures-and-callbacks</title>
+    <g id="n-layered_architectures-and-callbacks_Layer_1">
+      <title>Layer 1</title>
+      <g id="Graphic_2_shadow" filter="url(#Shadow)">
+        <path
+                    d="M 157 216 L 267 216 C 269.76142 216 272 218.23858 272 221 L 272 241 C 272 243.76142 269.76142 246 267 246 L 157 246 C 154.23858 246 152 243.76142 152 241 L 152 221 C 152 218.23858 154.23858 216 157 216 Z"
+                    fill="white"
+                />
+        <path
+                    d="M 157 216 L 267 216 C 269.76142 216 272 218.23858 272 221 L 272 241 C 272 243.76142 269.76142 246 267 246 L 157 246 C 154.23858 246 152 243.76142 152 241 L 152 221 C 152 218.23858 154.23858 216 157 216 Z"
+                    stroke="#a5a5a5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
+      </g>
+      <g id="Graphic_3_shadow" filter="url(#Shadow)">
+        <path
+                    d="M 157 279.618 L 267 279.618 C 269.76142 279.618 272 281.85658 272 284.618 L 272 304.618 C 272 307.37942 269.76142 309.618 267 309.618 L 157 309.618 C 154.23858 309.618 152 307.37942 152 304.618 L 152 284.618 C 152 281.85658 154.23858 279.618 157 279.618 Z"
+                    fill="white"
+                />
+        <path
+                    d="M 157 279.618 L 267 279.618 C 269.76142 279.618 272 281.85658 272 284.618 L 272 304.618 C 272 307.37942 269.76142 309.618 267 309.618 L 157 309.618 C 154.23858 309.618 152 307.37942 152 304.618 L 152 284.618 C 152 281.85658 154.23858 279.618 157 279.618 Z"
+                    stroke="#a5a5a5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
+      </g>
+      <g id="Graphic_4_shadow" filter="url(#Shadow)">
+        <path
+                    d="M 157 408 L 267 408 C 269.76142 408 272 410.2386 272 413 L 272 433 C 272 435.7614 269.76142 438 267 438 L 157 438 C 154.23858 438 152 435.7614 152 433 L 152 413 C 152 410.2386 154.23858 408 157 408 Z"
+                    fill="white"
+                />
+        <path
+                    d="M 157 408 L 267 408 C 269.76142 408 272 410.2386 272 413 L 272 433 C 272 435.7614 269.76142 438 267 438 L 157 438 C 154.23858 438 152 435.7614 152 433 L 152 413 C 152 410.2386 154.23858 408 157 408 Z"
+                    stroke="#a5a5a5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
+      </g>
+      <g id="Graphic_2">
+        <path
+                    d="M 157 216 L 267 216 C 269.76142 216 272 218.23858 272 221 L 272 241 C 272 243.76142 269.76142 246 267 246 L 157 246 C 154.23858 246 152 243.76142 152 241 L 152 221 C 152 218.23858 154.23858 216 157 216 Z"
+                    fill="white"
+                />
+        <path
+                    d="M 157 216 L 267 216 C 269.76142 216 272 218.23858 272 221 L 272 241 C 272 243.76142 269.76142 246 267 246 L 157 246 C 154.23858 246 152 243.76142 152 241 L 152 221 C 152 218.23858 154.23858 216 157 216 Z"
+                    stroke="#a5a5a5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
+        <text transform="translate(157 221.5)" fill="black">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="14"
+                        font-weight="400"
+                        fill="black"
+                        x="31.221"
+                        y="15"
+                    >Layer N</tspan>
+        </text>
+      </g>
+      <g id="Graphic_3">
+        <path
+                    d="M 157 279.618 L 267 279.618 C 269.76142 279.618 272 281.85658 272 284.618 L 272 304.618 C 272 307.37942 269.76142 309.618 267 309.618 L 157 309.618 C 154.23858 309.618 152 307.37942 152 304.618 L 152 284.618 C 152 281.85658 154.23858 279.618 157 279.618 Z"
+                    fill="white"
+                />
+        <path
+                    d="M 157 279.618 L 267 279.618 C 269.76142 279.618 272 281.85658 272 284.618 L 272 304.618 C 272 307.37942 269.76142 309.618 267 309.618 L 157 309.618 C 154.23858 309.618 152 307.37942 152 304.618 L 152 284.618 C 152 281.85658 154.23858 279.618 157 279.618 Z"
+                    stroke="#a5a5a5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
+        <text transform="translate(157 285.118)" fill="black">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="14"
+                        font-weight="400"
+                        fill="black"
+                        x="25.341"
+                        y="15"
+                    >Layer N-1</tspan>
+        </text>
+      </g>
+      <g id="Graphic_4">
+        <path
+                    d="M 157 408 L 267 408 C 269.76142 408 272 410.2386 272 413 L 272 433 C 272 435.7614 269.76142 438 267 438 L 157 438 C 154.23858 438 152 435.7614 152 433 L 152 413 C 152 410.2386 154.23858 408 157 408 Z"
+                    fill="white"
+                />
+        <path
+                    d="M 157 408 L 267 408 C 269.76142 408 272 410.2386 272 413 L 272 433 C 272 435.7614 269.76142 438 267 438 L 157 438 C 154.23858 438 152 435.7614 152 433 L 152 413 C 152 410.2386 154.23858 408 157 408 Z"
+                    stroke="#a5a5a5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
+        <text transform="translate(157 413.5)" fill="black">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="14"
+                        font-weight="400"
+                        fill="black"
+                        x="25.341"
+                        y="15"
+                    >Layer N-2</tspan>
+        </text>
+      </g>
+      <g id="Line_6">
+        <line
+                    x1="212"
+                    y1="254.2"
+                    x2="212"
+                    y2="266.718"
+                    marker-end="url(#FilledArrow_Marker)"
+                    marker-start="url(#FilledBox_Marker)"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                />
+      </g>
+      <g id="Line_7">
+        <line
+                    x1="172"
+                    y1="317.818"
+                    x2="172"
+                    y2="395.1"
+                    marker-end="url(#FilledArrow_Marker)"
+                    marker-start="url(#FilledBox_Marker)"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                />
+      </g>
+      <g id="Line_8">
+        <line
+                    x1="212"
+                    y1="446.2"
+                    x2="212"
+                    y2="459.1"
+                    marker-end="url(#FilledArrow_Marker)"
+                    marker-start="url(#FilledBox_Marker)"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                />
+      </g>
+      <g id="Line_20">
+        <line
+                    x1="232"
+                    y1="309.618"
+                    x2="232"
+                    y2="395.1"
+                    marker-end="url(#FilledArrow_Marker)"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                />
+      </g>
+      <g id="Line_21">
+        <line
+                    x1="252"
+                    y1="408"
+                    x2="252"
+                    y2="322.518"
+                    marker-end="url(#FilledArrow_Marker)"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                />
+      </g>
+      <g id="Graphic_22">
+        <text transform="translate(213 377.38) rotate(-90)" fill="black">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="14"
+                        font-weight="400"
+                        fill="black"
+                        x="0"
+                        y="15"
+                    >Handle</tspan>
+        </text>
+      </g>
+      <g id="Graphic_24">
+        <text transform="translate(272 333) rotate(90)" fill="black">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="14"
+                        font-weight="400"
+                        fill="black"
+                        x="0"
+                        y="15"
+                    >Callback</tspan>
+        </text>
+      </g>
+    </g>
+  </g>
+</svg>

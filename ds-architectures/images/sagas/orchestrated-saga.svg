@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+    "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg
+    xmlns:xl="http://www.w3.org/1999/xlink"
+    version="1.1"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="51 7 347 214"
+    width="347"
+    height="214"
+>
+  <style>
+    @import url('/LectureDoc2/ext/fonts/ld-fonts.css');
+  </style>
+  <defs>
+    <filter id="Shadow" filterUnits="userSpaceOnUse" x="16.3" y="-14.4">
+      <feGaussianBlur in="SourceAlpha" result="blur" stdDeviation="1.308" />
+      <feOffset in="blur" result="offset" dx="0" dy="3" />
+      <feFlood flood-color="black" flood-opacity=".5" result="flood" />
+      <feComposite in="flood" in2="offset" operator="in" result="color" />
+      <feMerge>
+        <feMergeNode in="color" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+    <marker
+            orient="auto"
+            overflow="visible"
+            markerUnits="strokeWidth"
+            id="StickArrow_Marker"
+            stroke-linejoin="miter"
+            stroke-miterlimit="10"
+            viewBox="-1 -4 10 8"
+            markerWidth="10"
+            markerHeight="8"
+            color="black"
+        >
+      <g>
+        <path
+                    d="M 8 0 L 0 0 M 0 -3 L 8 0 L 0 3"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1"
+                />
+      </g>
+    </marker>
+  </defs>
+  <metadata> Produced by OmniGraffle 8.0\n2025-04-04 08:05:07 +0000</metadata>
+  <g
+        id="orchestrated-saga"
+        fill-opacity="1"
+        stroke-opacity="1"
+        stroke-dasharray="none"
+        stroke="none"
+        fill="none"
+    >
+    <title>orchestrated-saga</title>
+    <g id="orchestrated-saga_Layer_1">
+      <title>Layer 1</title>
+      <g id="Graphic_78" filter="url(#Shadow)">
+        <path
+                    d="M 54.69043 40.5 L 89.69043 8 L 159.69043 8 L 194.69043 40.5 L 159.69043 73 L 89.69043 73 Z"
+                    fill="white"
+                />
+        <path
+                    d="M 54.69043 40.5 L 89.69043 8 L 159.69043 8 L 194.69043 40.5 L 159.69043 73 L 89.69043 73 Z"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
+      </g>
+      <g id="Graphic_79" filter="url(#Shadow)">
+        <path
+                    d="M 253.69043 40.5 L 288.69043 8 L 358.69043 8 L 393.69043 40.5 L 358.69043 73 L 288.69043 73 Z"
+                    fill="white"
+                />
+        <path
+                    d="M 253.69043 40.5 L 288.69043 8 L 358.69043 8 L 393.69043 40.5 L 358.69043 73 L 288.69043 73 Z"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
+        <text transform="translate(290.69043 21.5)" fill="black">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="14"
+                        font-weight="400"
+                        fill="black"
+                        x="5.497"
+                        y="15"
+                    >Payment </tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="14"
+                        font-weight="400"
+                        fill="black"
+                        x="6.183"
+                        y="34"
+                    >Gateway</tspan>
+        </text>
+      </g>
+      <g id="Graphic_80" filter="url(#Shadow)">
+        <path
+                    d="M 253.69043 181.5 L 288.69043 149 L 358.69043 149 L 393.69043 181.5 L 358.69043 214 L 288.69043 214 Z"
+                    fill="white"
+                />
+        <path
+                    d="M 253.69043 181.5 L 288.69043 149 L 358.69043 149 L 393.69043 181.5 L 358.69043 214 L 288.69043 214 Z"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
+        <text transform="translate(290.69043 172)" fill="black">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="14"
+                        font-weight="400"
+                        fill="black"
+                        x="11.048"
+                        y="15"
+                    >Loyalty</tspan>
+        </text>
+      </g>
+      <g id="Graphic_81" filter="url(#Shadow)">
+        <path
+                    d="M 54.69043 181.5 L 89.69043 149 L 159.69043 149 L 194.69043 181.5 L 159.69043 214 L 89.69043 214 Z"
+                    fill="#e2e2e2"
+                />
+        <path
+                    d="M 54.69043 181.5 L 89.69043 149 L 159.69043 149 L 194.69043 181.5 L 159.69043 214 L 89.69043 214 Z"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
+        <text transform="translate(91.69043 153)" fill="black">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="14"
+                        font-weight="400"
+                        fill="black"
+                        x="14.737"
+                        y="15"
+                    >Order </tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="14"
+                        font-weight="400"
+                        fill="black"
+                        x="2.452"
+                        y="34"
+                    >Processor</tspan>
+        </text>
+      </g>
+      <g id="Line_82">
+        <line
+                    x1="164.1776"
+                    y1="153.16667"
+                    x2="164.1776"
+                    y2="78.73333"
+                    marker-end="url(#StickArrow_Marker)"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
+      </g>
+      <g id="Line_83">
+        <line
+                    x1="85.20325"
+                    y1="153.16667"
+                    x2="85.20325"
+                    y2="78.73333"
+                    marker-end="url(#StickArrow_Marker)"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
+      </g>
+      <g id="Line_84">
+        <line
+                    x1="171.3571"
+                    y1="159.83333"
+                    x2="269.7536"
+                    y2="68.8864"
+                    marker-end="url(#StickArrow_Marker)"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
+      </g>
+      <g id="Line_85">
+        <line
+                    x1="194.69043"
+                    y1="181.5"
+                    x2="243.79043"
+                    y2="181.5"
+                    marker-end="url(#StickArrow_Marker)"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
+      </g>
+      <g id="Graphic_86">
+        <text transform="translate(72.79833 110.75)" fill="black">
+          <tspan
+                        font-family="Helvetica"
+                        font-size="12"
+                        font-weight="400"
+                        fill="black"
+                        x="1.6669922"
+                        y="11"
+                    >1. reserve </tspan>
+          <tspan
+                        font-family="Helvetica"
+                        font-size="12"
+                        font-weight="400"
+                        fill="black"
+                        x="14.34082"
+                        y="25"
+                    >stock</tspan>
+        </text>
+      </g>
+      <g id="Graphic_87">
+        <text transform="translate(133.13327 88)" fill="black">
+          <tspan
+                        font-family="Helvetica"
+                        font-size="12"
+                        font-weight="400"
+                        fill="black"
+                        x="19.672852"
+                        y="11"
+                    >4. send </tspan>
+          <tspan
+                        font-family="Helvetica"
+                        font-size="12"
+                        font-weight="400"
+                        fill="black"
+                        x="0"
+                        y="25"
+                    >          package</tspan>
+        </text>
+      </g>
+      <g id="Graphic_88">
+        <text transform="translate(199.7426 167.5)" fill="black">
+          <tspan
+                        font-family="Helvetica"
+                        font-size="12"
+                        font-weight="400"
+                        fill="black"
+                        x="0"
+                        y="11"
+                    >3. award</tspan>
+          <tspan
+                        font-family="Helvetica"
+                        font-size="12"
+                        font-weight="400"
+                        fill="black"
+                        x="7.001953"
+                        y="25"
+                    >points</tspan>
+        </text>
+      </g>
+      <g id="Graphic_89">
+        <text transform="translate(223.617 110.75)" fill="black">
+          <tspan
+                        font-family="Helvetica"
+                        font-size="12"
+                        font-weight="400"
+                        fill="black"
+                        x="0"
+                        y="11"
+                    >2. take payment</tspan>
+        </text>
+      </g>
+      <g id="Graphic_90">
+        <text transform="translate(89.73943 31)" fill="black">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="14"
+                        font-weight="400"
+                        fill="black"
+                        x="0"
+                        y="15"
+                    >Warehouse</tspan>
+        </text>
+      </g>
+      <g id="Graphic_91">
+        <text transform="translate(87.80843 192)" fill="black">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="12"
+                        font-style="italic"
+                        font-weight="400"
+                        fill="black"
+                        x="0"
+                        y="13"
+                    >«orchestrator»</tspan>
+        </text>
+      </g>
+    </g>
+  </g>
+</svg>

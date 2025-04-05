@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+    "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg
+    xmlns:xl="http://www.w3.org/1999/xlink"
+    version="1.1"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="158 92 323 294"
+    width="323"
+    height="294"
+>
+  <style>
+    @import url('/LectureDoc2/ext/fonts/ld-fonts.css');
+  </style>
+  <metadata> Produced by OmniGraffle 8.0\n2025-04-04 07:41:35 +0000</metadata>
+  <g
+        id="microservices-architecture-scope-of-change"
+        fill-opacity="1"
+        stroke-opacity="1"
+        stroke-dasharray="none"
+        stroke="none"
+        fill="none"
+    >
+    <title>microservices-architecture-scope-of-change</title>
+    <g id="microservices-architecture-scope-of-change_Layer_1">
+      <title>Layer 1</title>
+      <g id="Graphic_142">
+        <text transform="translate(395.706 101.82332)" fill="black">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="14"
+                        font-weight="400"
+                        fill="black"
+                        x="0"
+                        y="15"
+                    >Scope of</tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="14"
+                        font-weight="400"
+                        fill="black"
+                        x="2.716"
+                        y="34"
+                    >Change</tspan>
+        </text>
+      </g>
+      <g id="Graphic_145">
+        <text transform="translate(239 328.67668)" fill="black">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="32"
+                        font-weight="400"
+                        fill="black"
+                        x="0"
+                        y="32"
+                    >🧕🏽</tspan>
+        </text>
+      </g>
+      <g id="Graphic_146">
+        <text transform="translate(424.75 328.67668)" fill="black">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="32"
+                        font-weight="400"
+                        fill="black"
+                        x="0"
+                        y="32"
+                    >👨🏽‍💼</tspan>
+        </text>
+      </g>
+      <g id="Graphic_147">
+        <text transform="translate(317.75 322)" fill="black">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="32"
+                        font-weight="400"
+                        fill="black"
+                        x="0"
+                        y="32"
+                    >🙍🏼‍♂️</tspan>
+        </text>
+      </g>
+      <g id="Graphic_148">
+        <text transform="translate(347.2806 317.39426) rotate(2.5170066)" fill="black">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="32"
+                        font-weight="400"
+                        fill="black"
+                        x="0"
+                        y="32"
+                    >👨🏻‍💼</tspan>
+        </text>
+      </g>
+      <g id="Graphic_149">
+        <text transform="translate(406.25 339.70658)" fill="black">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="32"
+                        font-weight="400"
+                        fill="black"
+                        x="0"
+                        y="32"
+                    >🤵🏾‍♀️</tspan>
+        </text>
+      </g>
+      <g id="Graphic_150">
+        <text transform="translate(267.93585 322)" fill="black">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="32"
+                        font-weight="400"
+                        fill="black"
+                        x="0"
+                        y="32"
+                    >👩🏻‍💼</tspan>
+        </text>
+      </g>
+      <g id="Graphic_151">
+        <rect x="391.5" y="151.5" width="65" height="170.5" fill="white" />
+        <rect
+                    x="391.5"
+                    y="151.5"
+                    width="65"
+                    height="170.5"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
+        <text transform="translate(396.5 217.75)" fill="black">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="14"
+                        font-weight="400"
+                        fill="black"
+                        x=".501"
+                        y="15"
+                    >Function</tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="14"
+                        font-weight="400"
+                        fill="black"
+                        x="23.342"
+                        y="34"
+                    >C</tspan>
+        </text>
+      </g>
+      <g id="Graphic_152">
+        <rect x="313.19592" y="151.5" width="65" height="170.5" fill="white" />
+        <rect
+                    x="313.19592"
+                    y="151.5"
+                    width="65"
+                    height="170.5"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
+        <text transform="translate(318.19592 217.75)" fill="black">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="14"
+                        font-weight="400"
+                        fill="black"
+                        x=".501"
+                        y="15"
+                    >Function</tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="14"
+                        font-weight="400"
+                        fill="black"
+                        x="23.209"
+                        y="34"
+                    >B</tspan>
+        </text>
+      </g>
+      <g id="Graphic_153">
+        <rect x="234.89184" y="151.5" width="65" height="170.5" fill="white" />
+        <rect
+                    x="234.89184"
+                    y="151.5"
+                    width="65"
+                    height="170.5"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
+        <text transform="translate(239.89184 217.75)" fill="black">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="14"
+                        font-weight="400"
+                        fill="black"
+                        x=".501"
+                        y="15"
+                    >Function</tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="14"
+                        font-weight="400"
+                        fill="black"
+                        x="23.272"
+                        y="34"
+                    >A</tspan>
+        </text>
+      </g>
+      <g id="Line_155">
+        <line
+                    x1="164.93506"
+                    y1="195"
+                    x2="475.567"
+                    y2="195"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-dasharray="4.0,4.0"
+                    stroke-width="1"
+                />
+      </g>
+      <g id="Line_156">
+        <line
+                    x1="162.85558"
+                    y1="270.3383"
+                    x2="475.567"
+                    y2="270.3383"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-dasharray="4.0,4.0"
+                    stroke-width="1"
+                />
+      </g>
+      <g id="Graphic_157">
+        <text transform="translate(171.97107 163.37164)" fill="black">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="14"
+                        font-weight="400"
+                        fill="black"
+                        x="0"
+                        y="15"
+                    >Frontend</tspan>
+        </text>
+      </g>
+      <g id="Graphic_158">
+        <text transform="translate(199.45307 291.12836)" fill="black">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="14"
+                        font-weight="400"
+                        fill="black"
+                        x="0"
+                        y="15"
+                    >Data</tspan>
+        </text>
+      </g>
+      <g id="Graphic_159">
+        <text transform="translate(173.97308 215.79007)" fill="black">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="14"
+                        font-weight="400"
+                        fill="black"
+                        x="20889956e-19"
+                        y="15"
+                    >Business</tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="14"
+                        font-weight="400"
+                        fill="black"
+                        x="21.966"
+                        y="34"
+                    >Logic</tspan>
+        </text>
+      </g>
+      <g id="Graphic_141">
+        <rect
+                    x="399"
+                    y="142.16168"
+                    width="50"
+                    height="189.17663"
+                    fill="#e2e2e2"
+                    fill-opacity=".685203"
+                />
+        <path
+                    d="M 399 142.16168 L 449 142.16168 L 449 331.3383 L 399 331.3383 Z"
+                    stroke="#797979"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-dasharray="4.0,4.0"
+                    stroke-width="1"
+                />
+      </g>
+    </g>
+  </g>
+</svg>

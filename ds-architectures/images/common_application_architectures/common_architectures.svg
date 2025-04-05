@@ -1,0 +1,755 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+    "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg
+    xmlns:xl="http://www.w3.org/1999/xlink"
+    version="1.1"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="92 176 608 286"
+    width="608"
+    height="286"
+>
+  <style>
+    @import url('/LectureDoc2/ext/fonts/ld-fonts.css');
+  </style>
+  <defs>
+    <filter id="Shadow" filterUnits="userSpaceOnUse" x="31.2" y="147.4">
+      <feGaussianBlur in="SourceAlpha" result="blur" stdDeviation="1.308" />
+      <feOffset in="blur" result="offset" dx="0" dy="2" />
+      <feFlood flood-color="black" flood-opacity=".5" result="flood" />
+      <feComposite in="flood" in2="offset" operator="in" />
+    </filter>
+    <filter id="Shadow_2" filterUnits="userSpaceOnUse" x="31.2" y="147.4">
+      <feGaussianBlur in="SourceAlpha" result="blur" stdDeviation="1.308" />
+      <feOffset in="blur" result="offset" dx="0" dy="2" />
+      <feFlood flood-color="black" flood-opacity=".5" result="flood" />
+      <feComposite in="flood" in2="offset" operator="in" result="color" />
+      <feMerge>
+        <feMergeNode in="color" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+    <marker
+            orient="auto"
+            overflow="visible"
+            markerUnits="strokeWidth"
+            id="FilledArrow_Marker"
+            stroke-linejoin="miter"
+            stroke-miterlimit="10"
+            viewBox="-1 -4 10 8"
+            markerWidth="10"
+            markerHeight="8"
+            color="black"
+        >
+      <g>
+        <path
+                    d="M 8 0 L 0 -3 L 0 3 Z"
+                    fill="currentColor"
+                    stroke="currentColor"
+                    stroke-width="1"
+                />
+      </g>
+    </marker>
+  </defs>
+  <metadata> Produced by OmniGraffle 8.0\n2025-04-04 07:03:23 +0000</metadata>
+  <g
+        id="common_architectures"
+        fill-opacity="1"
+        stroke-opacity="1"
+        stroke-dasharray="none"
+        stroke="none"
+        fill="none"
+    >
+    <title>common_architectures</title>
+    <g id="common_architectures_Layer_1">
+      <title>Layer 1</title>
+      <g id="Graphic_37_shadow" filter="url(#Shadow)">
+        <rect x="416" y="400" width="200" height="56" fill="white" />
+        <rect
+                    x="416"
+                    y="400"
+                    width="200"
+                    height="56"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
+      </g>
+      <g id="Graphic_14_shadow" filter="url(#Shadow)">
+        <rect x="96" y="200" width="72" height="40" fill="white" />
+        <rect
+                    x="96"
+                    y="200"
+                    width="72"
+                    height="40"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
+      </g>
+      <g id="Graphic_20_shadow" filter="url(#Shadow)">
+        <path
+                    d="M 188.51552 222.1484 C 173 220 179.1872 201.914 203.93792 205 C 206.23424 198.9844 235.016 199.9608 234.82784 205 C 252.87488 198.5548 275.93792 211.4064 260.46848 217.8516 C 279.03104 220.9764 260.23424 237.8124 245 235 C 243.7808 239.6876 216.54656 241.328 214.15616 235 C 198.73472 241.758 166.57856 231.3672 188.51552 222.1484 Z"
+                    fill="white"
+                />
+        <path
+                    d="M 188.51552 222.1484 C 173 220 179.1872 201.914 203.93792 205 C 206.23424 198.9844 235.016 199.9608 234.82784 205 C 252.87488 198.5548 275.93792 211.4064 260.46848 217.8516 C 279.03104 220.9764 260.23424 237.8124 245 235 C 243.7808 239.6876 216.54656 241.328 214.15616 235 C 198.73472 241.758 166.57856 231.3672 188.51552 222.1484 Z"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
+      </g>
+      <g id="Graphic_21_shadow" filter="url(#Shadow)">
+        <path
+                    d="M 281.6 236 L 281.6 204 C 281.6 201.792 297.3696 200 316.8 200 C 336.2304 200 352 201.792 352 204 L 352 236 C 352 238.208 336.2304 240 316.8 240 C 297.3696 240 281.6 238.208 281.6 236"
+                    fill="white"
+                />
+        <path
+                    d="M 281.6 236 L 281.6 204 C 281.6 201.792 297.3696 200 316.8 200 C 336.2304 200 352 201.792 352 204 L 352 236 C 352 238.208 336.2304 240 316.8 240 C 297.3696 240 281.6 238.208 281.6 236 M 281.6 204 C 281.6 206.208 297.3696 208 316.8 208 C 336.2304 208 352 206.208 352 204"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
+      </g>
+      <g id="Graphic_25_shadow" filter="url(#Shadow)">
+        <rect x="96" y="408" width="72" height="40" fill="white" />
+        <rect
+                    x="96"
+                    y="408"
+                    width="72"
+                    height="40"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
+      </g>
+      <g id="Graphic_26_shadow" filter="url(#Shadow)">
+        <path
+                    d="M 188.51552 430.1484 C 173 428 179.1872 409.914 203.93792 413 C 206.23424 406.9844 235.016 407.9608 234.82784 413 C 252.87488 406.5548 275.93792 419.4064 260.46848 425.8516 C 279.03104 428.9764 260.23424 445.8124 245 443 C 243.7808 447.6876 216.54656 449.328 214.15616 443 C 198.73472 449.758 166.57856 439.3672 188.51552 430.1484 Z"
+                    fill="white"
+                />
+        <path
+                    d="M 188.51552 430.1484 C 173 428 179.1872 409.914 203.93792 413 C 206.23424 406.9844 235.016 407.9608 234.82784 413 C 252.87488 406.5548 275.93792 419.4064 260.46848 425.8516 C 279.03104 428.9764 260.23424 445.8124 245 443 C 243.7808 447.6876 216.54656 449.328 214.15616 443 C 198.73472 449.758 166.57856 439.3672 188.51552 430.1484 Z"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
+      </g>
+      <g id="Graphic_29_shadow" filter="url(#Shadow)">
+        <path
+                    d="M 625.6 444 L 625.6 412 C 625.6 409.792 641.3696 408 660.8 408 C 680.2304 408 696 409.792 696 412 L 696 444 C 696 446.208 680.2304 448 660.8 448 C 641.3696 448 625.6 446.208 625.6 444"
+                    fill="white"
+                />
+        <path
+                    d="M 625.6 444 L 625.6 412 C 625.6 409.792 641.3696 408 660.8 408 C 680.2304 408 696 409.792 696 412 L 696 444 C 696 446.208 680.2304 448 660.8 448 C 641.3696 448 625.6 446.208 625.6 444 M 625.6 412 C 625.6 414.208 641.3696 416 660.8 416 C 680.2304 416 696 414.208 696 412"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
+      </g>
+      <g id="Graphic_31_shadow" filter="url(#Shadow)">
+        <rect x="280" y="408" width="122" height="40" fill="white" />
+        <rect
+                    x="280"
+                    y="408"
+                    width="122"
+                    height="40"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
+      </g>
+      <g id="Graphic_37">
+        <rect x="416" y="400" width="200" height="56" fill="white" />
+        <rect
+                    x="416"
+                    y="400"
+                    width="200"
+                    height="56"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
+      </g>
+      <g id="Graphic_36" filter="url(#Shadow_2)">
+        <rect x="296" y="296" width="200" height="56" fill="white" />
+        <rect
+                    x="296"
+                    y="296"
+                    width="200"
+                    height="56"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
+      </g>
+      <g id="Graphic_14">
+        <rect x="96" y="200" width="72" height="40" fill="white" />
+        <rect
+                    x="96"
+                    y="200"
+                    width="72"
+                    height="40"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
+        <text transform="translate(101 210.5)" fill="black">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="14"
+                        font-weight="300"
+                        fill="black"
+                        x=".45221875"
+                        y="15"
+                    >Rich Client</tspan>
+        </text>
+      </g>
+      <g id="Graphic_20">
+        <path
+                    d="M 188.51552 222.1484 C 173 220 179.1872 201.914 203.93792 205 C 206.23424 198.9844 235.016 199.9608 234.82784 205 C 252.87488 198.5548 275.93792 211.4064 260.46848 217.8516 C 279.03104 220.9764 260.23424 237.8124 245 235 C 243.7808 239.6876 216.54656 241.328 214.15616 235 C 198.73472 241.758 166.57856 231.3672 188.51552 222.1484 Z"
+                    fill="white"
+                />
+        <path
+                    d="M 188.51552 222.1484 C 173 220 179.1872 201.914 203.93792 205 C 206.23424 198.9844 235.016 199.9608 234.82784 205 C 252.87488 198.5548 275.93792 211.4064 260.46848 217.8516 C 279.03104 220.9764 260.23424 237.8124 245 235 C 243.7808 239.6876 216.54656 241.328 214.15616 235 C 198.73472 241.758 166.57856 231.3672 188.51552 222.1484 Z"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
+        <text transform="translate(195.4 210.5)" fill="black">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="14"
+                        font-weight="300"
+                        fill="black"
+                        x="3.980016"
+                        y="15"
+                    >Network</tspan>
+        </text>
+      </g>
+      <g id="Graphic_21">
+        <path
+                    d="M 281.6 236 L 281.6 204 C 281.6 201.792 297.3696 200 316.8 200 C 336.2304 200 352 201.792 352 204 L 352 236 C 352 238.208 336.2304 240 316.8 240 C 297.3696 240 281.6 238.208 281.6 236"
+                    fill="white"
+                />
+        <path
+                    d="M 281.6 236 L 281.6 204 C 281.6 201.792 297.3696 200 316.8 200 C 336.2304 200 352 201.792 352 204 L 352 236 C 352 238.208 336.2304 240 316.8 240 C 297.3696 240 281.6 238.208 281.6 236 M 281.6 204 C 281.6 206.208 297.3696 208 316.8 208 C 336.2304 208 352 206.208 352 204"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
+        <text transform="translate(281.6 212.5)" fill="black">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="14"
+                        font-weight="300"
+                        fill="black"
+                        x="1.403782"
+                        y="15"
+                    >Persistence</tspan>
+        </text>
+      </g>
+      <g id="Graphic_22" filter="url(#Shadow_2)">
+        <rect x="413" y="304" width="75" height="40" fill="white" />
+        <rect
+                    x="413"
+                    y="304"
+                    width="75"
+                    height="40"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
+        <text transform="translate(418 305)" fill="black">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="14"
+                        font-weight="300"
+                        fill="black"
+                        x="7.457609"
+                        y="15"
+                    >Domain-</tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="14"
+                        font-weight="300"
+                        fill="black"
+                        x="14.015406"
+                        y="34"
+                    >model</tspan>
+        </text>
+      </g>
+      <g id="Graphic_23" filter="url(#Shadow_2)">
+        <rect x="96" y="304" width="72" height="40" fill="white" />
+        <rect
+                    x="96"
+                    y="304"
+                    width="72"
+                    height="40"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
+        <text transform="translate(101 314.5)" fill="black">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="14"
+                        font-weight="300"
+                        fill="black"
+                        x=".45221875"
+                        y="15"
+                    >Rich Client</tspan>
+        </text>
+      </g>
+      <g id="Graphic_24" filter="url(#Shadow_2)">
+        <path
+                    d="M 188.51552 326.1484 C 173 324 179.1872 305.914 203.93792 309 C 206.23424 302.9844 235.016 303.9608 234.82784 309 C 252.87488 302.5548 275.93792 315.4064 260.46848 321.8516 C 279.03104 324.9764 260.23424 341.8124 245 339 C 243.7808 343.6876 216.54656 345.328 214.15616 339 C 198.73472 345.758 166.57856 335.3672 188.51552 326.1484 Z"
+                    fill="white"
+                />
+        <path
+                    d="M 188.51552 326.1484 C 173 324 179.1872 305.914 203.93792 309 C 206.23424 302.9844 235.016 303.9608 234.82784 309 C 252.87488 302.5548 275.93792 315.4064 260.46848 321.8516 C 279.03104 324.9764 260.23424 341.8124 245 339 C 243.7808 343.6876 216.54656 345.328 214.15616 339 C 198.73472 345.758 166.57856 335.3672 188.51552 326.1484 Z"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
+        <text transform="translate(195.4 314.5)" fill="black">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="14"
+                        font-weight="300"
+                        fill="black"
+                        x="3.980016"
+                        y="15"
+                    >Network</tspan>
+        </text>
+      </g>
+      <g id="Graphic_25">
+        <rect x="96" y="408" width="72" height="40" fill="white" />
+        <rect
+                    x="96"
+                    y="408"
+                    width="72"
+                    height="40"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
+        <text transform="translate(101 418.5)" fill="black">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="14"
+                        font-weight="300"
+                        fill="black"
+                        x=".2021875"
+                        y="15"
+                    >Thin Client</tspan>
+        </text>
+      </g>
+      <g id="Graphic_26">
+        <path
+                    d="M 188.51552 430.1484 C 173 428 179.1872 409.914 203.93792 413 C 206.23424 406.9844 235.016 407.9608 234.82784 413 C 252.87488 406.5548 275.93792 419.4064 260.46848 425.8516 C 279.03104 428.9764 260.23424 445.8124 245 443 C 243.7808 447.6876 216.54656 449.328 214.15616 443 C 198.73472 449.758 166.57856 439.3672 188.51552 430.1484 Z"
+                    fill="white"
+                />
+        <path
+                    d="M 188.51552 430.1484 C 173 428 179.1872 409.914 203.93792 413 C 206.23424 406.9844 235.016 407.9608 234.82784 413 C 252.87488 406.5548 275.93792 419.4064 260.46848 425.8516 C 279.03104 428.9764 260.23424 445.8124 245 443 C 243.7808 447.6876 216.54656 449.328 214.15616 443 C 198.73472 449.758 166.57856 439.3672 188.51552 430.1484 Z"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
+        <text transform="translate(195.4 418.5)" fill="black">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="14"
+                        font-weight="300"
+                        fill="black"
+                        x="3.980016"
+                        y="15"
+                    >Network</tspan>
+        </text>
+      </g>
+      <g id="Graphic_27" filter="url(#Shadow_2)">
+        <path
+                    d="M 504 340 L 504 308 C 504 305.792 519.7696 304 539.2 304 C 558.6304 304 574.4 305.792 574.4 308 L 574.4 340 C 574.4 342.208 558.6304 344 539.2 344 C 519.7696 344 504 342.208 504 340"
+                    fill="white"
+                />
+        <path
+                    d="M 504 340 L 504 308 C 504 305.792 519.7696 304 539.2 304 C 558.6304 304 574.4 305.792 574.4 308 L 574.4 340 C 574.4 342.208 558.6304 344 539.2 344 C 519.7696 344 504 342.208 504 340 M 504 308 C 504 310.208 519.7696 312 539.2 312 C 558.6304 312 574.4 310.208 574.4 308"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
+        <text transform="translate(504 316.5)" fill="black">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="14"
+                        font-weight="300"
+                        fill="black"
+                        x="1.403782"
+                        y="15"
+                    >Persistence</tspan>
+        </text>
+      </g>
+      <g id="Graphic_28" filter="url(#Shadow_2)">
+        <rect x="533" y="408" width="75" height="40" fill="white" />
+        <rect
+                    x="533"
+                    y="408"
+                    width="75"
+                    height="40"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
+        <text transform="translate(538 409)" fill="black">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="14"
+                        font-weight="300"
+                        fill="black"
+                        x="7.457609"
+                        y="15"
+                    >Domain-</tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="14"
+                        font-weight="300"
+                        fill="black"
+                        x="14.015406"
+                        y="34"
+                    >model</tspan>
+        </text>
+      </g>
+      <g id="Graphic_29">
+        <path
+                    d="M 625.6 444 L 625.6 412 C 625.6 409.792 641.3696 408 660.8 408 C 680.2304 408 696 409.792 696 412 L 696 444 C 696 446.208 680.2304 448 660.8 448 C 641.3696 448 625.6 446.208 625.6 444"
+                    fill="white"
+                />
+        <path
+                    d="M 625.6 444 L 625.6 412 C 625.6 409.792 641.3696 408 660.8 408 C 680.2304 408 696 409.792 696 412 L 696 444 C 696 446.208 680.2304 448 660.8 448 C 641.3696 448 625.6 446.208 625.6 444 M 625.6 412 C 625.6 414.208 641.3696 416 660.8 416 C 680.2304 416 696 414.208 696 412"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
+        <text transform="translate(625.6 420.5)" fill="black">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="14"
+                        font-weight="300"
+                        fill="black"
+                        x="1.403782"
+                        y="15"
+                    >Persistence</tspan>
+        </text>
+      </g>
+      <g id="Graphic_30" filter="url(#Shadow_2)">
+        <rect x="305.6" y="304" width="98" height="40" fill="white" />
+        <rect
+                    x="305.6"
+                    y="304"
+                    width="98"
+                    height="40"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
+        <text transform="translate(310.6 305)" fill="black">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="14"
+                        font-weight="300"
+                        fill="black"
+                        x=".6935156"
+                        y="15"
+                    >Business Logic</tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="14"
+                        font-weight="300"
+                        fill="black"
+                        x="19.677953"
+                        y="34"
+                    >(Service)</tspan>
+        </text>
+      </g>
+      <g id="Graphic_31">
+        <rect x="280" y="408" width="122" height="40" fill="white" />
+        <rect
+                    x="280"
+                    y="408"
+                    width="122"
+                    height="40"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
+        <text transform="translate(285 409)" fill="black">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="14"
+                        font-weight="300"
+                        fill="black"
+                        x="1.4475781"
+                        y="15"
+                    >Presentation Logic</tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="14"
+                        font-weight="300"
+                        fill="black"
+                        x="18.84225"
+                        y="34"
+                    >(Web Server)</tspan>
+        </text>
+      </g>
+      <g id="Graphic_32" filter="url(#Shadow_2)">
+        <rect x="422" y="408" width="98" height="40" fill="white" />
+        <rect
+                    x="422"
+                    y="408"
+                    width="98"
+                    height="40"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
+        <text transform="translate(427 409)" fill="black">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="14"
+                        font-weight="300"
+                        fill="black"
+                        x=".6935156"
+                        y="15"
+                    >Business Logic</tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="14"
+                        font-weight="300"
+                        fill="black"
+                        x="19.677953"
+                        y="34"
+                    >(Service)</tspan>
+        </text>
+      </g>
+      <g id="Graphic_33">
+        <text transform="translate(96 176)" fill="black">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="14"
+                        font-weight="700"
+                        fill="black"
+                        x="7531753e-19"
+                        y="15"
+                    >2-Layers (2-Tier)</tspan>
+        </text>
+      </g>
+      <g id="Graphic_34">
+        <text transform="translate(96 280)" fill="black">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="14"
+                        font-weight="700"
+                        fill="black"
+                        x="7531753e-19"
+                        y="15"
+                    >3-Layers (3-Tier)</tspan>
+        </text>
+      </g>
+      <g id="Graphic_35">
+        <text transform="translate(96 384)" fill="black">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="14"
+                        font-weight="700"
+                        fill="black"
+                        x="0"
+                        y="15"
+                    >N-Tier</tspan>
+        </text>
+      </g>
+      <g id="Line_38">
+        <path
+                    d="M 168.5 220 L 175.33027 220 L 182.16054 220"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
+      </g>
+      <g id="Line_39">
+        <line
+                    x1="266.84614"
+                    y1="220"
+                    x2="281.1"
+                    y2="220"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
+      </g>
+      <g id="Line_40">
+        <path
+                    d="M 168.5 324 L 175.33027 324 L 182.16054 324"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
+      </g>
+      <g id="Line_41">
+        <path
+                    d="M 168.5 428 L 175.33027 428 L 182.16054 428"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
+      </g>
+      <g id="Line_42">
+        <path
+                    d="M 266.84614 428 L 273.17307 428 L 279.5 428"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
+      </g>
+      <g id="Line_43">
+        <line
+                    x1="266.84614"
+                    y1="324"
+                    x2="305.1"
+                    y2="324"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
+      </g>
+      <g id="Line_44">
+        <path
+                    d="M 404.1 324 L 408.3 324 L 412.5 324"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
+      </g>
+      <g id="Line_45">
+        <line
+                    x1="488.5"
+                    y1="324"
+                    x2="503.5"
+                    y2="324"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
+      </g>
+      <g id="Line_46">
+        <path
+                    d="M 520.5 428 L 526.5 428 L 532.5 428"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
+      </g>
+      <g id="Line_47">
+        <line
+                    x1="608.5"
+                    y1="428"
+                    x2="625.1"
+                    y2="428"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
+      </g>
+      <g id="Line_48">
+        <line
+                    x1="421.5"
+                    y1="428"
+                    x2="402.5"
+                    y2="428"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
+      </g>
+      <g id="Graphic_50">
+        <text transform="translate(253 261)" fill="black">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="14"
+                        font-weight="300"
+                        fill="black"
+                        x="0"
+                        y="15"
+                    >Service Interface</tspan>
+        </text>
+      </g>
+      <g id="Graphic_51">
+        <text transform="translate(301 381)" fill="black">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="14"
+                        font-weight="300"
+                        fill="black"
+                        x="0"
+                        y="15"
+                    >Service Interface</tspan>
+        </text>
+      </g>
+      <g id="Line_52">
+        <path
+                    d="M 259.06958 279.3211 C 266.0457 284.88017 275.9391 288.55426 280 296 C 282.68876 300.9299 282.82168 307.5152 282.93708 314.1114"
+                    marker-end="url(#FilledArrow_Marker)"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
+      </g>
+      <g id="Line_54">
+        <path
+                    d="M 403.37287 390.5 C 404.9151 393.66635 406.76847 393.75063 408 400 C 408.82695 404.19636 409.37386 411.1742 409.92274 418.1315"
+                    marker-end="url(#FilledArrow_Marker)"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
+      </g>
+    </g>
+  </g>
+</svg>
