@@ -49,7 +49,7 @@ Ein erster Überblick.
 
           https://github.com/Delors/delors.github.io/issues
 
-.. container:: footer-left tiny incremental
+.. container:: footer-left 
 
     Ausgewählte Folien basieren auf Folien von Maarten van Steen ( *Distributed Systems*)
 
@@ -70,7 +70,7 @@ Architekturstile (:eng:`Architectural Styles`)
 
 Ein Architekturstil wird formuliert in Form von
 
-.. class:: incremental list-with-explanations
+.. class:: incremental-list
 
 - (austauschbare) Komponenten mit klar definierten Schnittstellen
 - der Art und Weise, wie die Komponenten miteinander verbunden sind
@@ -262,7 +262,7 @@ Microservice mit REST Schnittstelle
 Schlüsselkonzepte von Microservices
 -------------------------------------
 
-.. class:: incremental list-with-explanations
+.. class:: incremental-list list-with-explanations
 
 - können unabhängig bereitgestellt werden (:eng:`independently deployable`) 
   
@@ -450,7 +450,7 @@ Langlebige Transaktionen mit choreografierten Sagas
 
         .. rubric:: Lösungsideen
 
-        .. class:: incremental negative-list
+        .. class:: incremental-list negative-list
         
         - 2PC ist im Kontext von Microservices keine Option (zu langsam, zu komplex)
         - Änderung der Reihenfolge der Aktionen (1. *publish* dann 2. *update*) führt noch immer zu Inkonsistenzen
@@ -464,6 +464,7 @@ Langlebige Transaktionen mit choreografierten Sagas
         .. container:: incremental assessment
           
          Strikte Konsistenz ist nicht erreichbar.
+
 
 
 *Dual-write Problem* - Outbox Pattern
