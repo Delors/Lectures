@@ -1371,32 +1371,60 @@ Beispiel Primzahltest: Analyse mit elementaren Kosten
 
 
 
-Beispiel Insertion-Sort: Analyse mit abstrahierten Kosten
+Insertion-Sort: Analyse mit abstrahierten Kosten
 -----------------------------------------------------------
 
-.. rubric:: Insertion-Sort
+.. deck::
 
-.. container:: smaller
+    .. card:: 
 
-    Vergleichbar zum Ziehen von Karten: die neue Karte wird an der richtigen Stelle eingeschoben.
+        Vergleichbar zum Ziehen von Karten: die neue Karte wird an der richtigen Stelle eingeschoben.
 
-.. class:: columns incremental
+    .. card::
 
-    - .. image:: images/insertion_sort.svg
-            :alt: Visualisierung des Insertion-Sort-Algorithmus
+        .. raw:: html
 
-    - .. code:: python
-            :number-lines:
-            :class: copy-to-clipboard
+            <style>
+                #insertion-sort-visualization {                
+                    iframe {
+                        border: none;
+                        margin: 0;
+                        padding: 0;
+                    }
+                }
+                @container style(--ld-rendering-mode: slide) {
+                    
+                    #insertion-sort-visualization {
+                        width: 912.5px;
+                        height: 963.75px;
+                        scale: 2.5;
+                        transform-origin: 0 0;
+                    }
+                }
+            </style>
+            <div id="insertion-sort-visualization">
+                <iframe src="vis/insertionsort.html" width="365" height="385.5" frameborder="0"></iframe>
+            </div>
 
-            def insertion_sort(A):
-              for i in range(1, len(A)):         
-                key = A[i]                     
-                j = i - 1                      
-                while j >= 0 and A[j] > key:   
-                  A[j + 1] = A[j]            
-                  j = j - 1                  
-                A[j + 1] = key                 
+    .. card:: 
+
+        .. class:: columns 
+
+            - .. image:: images/insertion_sort.svg
+                    :alt: Visualisierung des Insertion-Sort-Algorithmus
+
+            - .. code:: python
+                    :number-lines:
+                    :class: copy-to-clipboard incremental
+
+                    def insertion_sort(A):
+                    for i in range(1, len(A)):         
+                        key = A[i]                     
+                        j = i - 1                      
+                        while j >= 0 and A[j] > key:   
+                        A[j + 1] = A[j]            
+                        j = j - 1                  
+                        A[j + 1] = key                 
 
 
 
@@ -1678,58 +1706,90 @@ In Hinblick auf den Zeitaufwand gilt:
 Übung - Bubble-Sort
 ------------------------------------------
 
-Der Algorithmus "Bubble-Sort" sortiert eine Liste von Zahlen in aufsteigender Reihenfolge. Der Algorithmus vergleicht benachbarte Elemente und vertauscht sie, wenn sie in der falschen Reihenfolge sind. Dieser Vorgang wird wiederholt, bis die Liste vollständig sortiert ist.
+.. deck::
 
-.. exercise::
+    .. card::
 
-    1. Implementieren Sie den Bubble-Sort Algorithmus in einer Programmiersprache Ihrer Wahl und analysieren Sie die Laufzeitkomplexität des Algorithmus. Der Algorithmus soll ein Array/Liste von Ganzzahlen als Eingabe nehmen und sortiert zurückgeben. Dabei soll das Array/die Liste *in-place* sortiert werden, d. h. ohne zusätzliche Speicherplatznutzung.
+        Der Algorithmus "Bubble-Sort" sortiert eine Liste von Zahlen in aufsteigender Reihenfolge. Der Algorithmus vergleicht benachbarte Elemente und vertauscht sie, wenn sie in der falschen Reihenfolge sind. Dieser Vorgang wird wiederholt, bis die Liste vollständig sortiert ist.
 
-    2. Bestimmen Sie die Komplexität des Algorithmus in Abhängigkeit von der Anzahl der Elemente (n) im Array/der Liste.
+    .. card::
 
-    .. solution:: 
-        :pwd: Bubble-bubble-bubble-sort
+        .. raw:: html
 
-        .. rubric:: Lösung in Java
-
-        .. code:: java
-            :number-lines:
-            :class: copy-to-clipboard
-
-            static void bubbleSort(int[] arr) {
-                int n = arr.length;
-                boolean swapped;
-                do {
-                    swapped = false;
-                    for (int i = 0; i < n - 1; i++) {
-                        if (arr[i] > arr[i + 1]) {
-                            // Swap arr[i] and arr[i + 1]
-                            int temp = arr[i];
-                            arr[i] = arr[i + 1];
-                            arr[i + 1] = temp;
-                            swapped = true;
-                        }
+            <style>
+                #bubble-sort-visualization {                
+                    iframe {
+                        border: none;
+                        margin: 0;
+                        padding: 0;
                     }
-                    n--; // Reduce the range of the next iteration
-                } while (swapped);
-            }
-            
-        .. rubric:: Lösung in Python
+                }
+                @container style(--ld-rendering-mode: slide) {
+                    
+                    #bubble-sort-visualization {
+                        width: 912.5px;
+                        height: 963.75px;
+                        scale: 2.5;
+                        transform-origin: 0 0;
+                    }
+                }
+            </style>
+            <div id="bubble-sort-visualization">
+                <iframe src="vis/bubblesort.html" width="365" height="385.5" frameborder="0"></iframe>
+            </div>
 
-        .. code:: python
-            :number-lines:
-            :class: copy-to-clipboard
+    .. card::
+                
+        .. exercise:: Implementieren Sie Bubble-Sort
 
-            def bubble_sort(arr):
-                n = len(arr)
-                swapped = True
-                while swapped:
-                    swapped = False
-                    for i in range(n - 1):
-                        if arr[i] > arr[i + 1]:
-                            arr[i], arr[i + 1] = arr[i + 1], arr[i]
-                            swapped = True
-                    n -= 1  # Reduce the range of the next iteration
-                return arr
+            1. Implementieren Sie den Bubble-Sort Algorithmus in einer Programmiersprache Ihrer Wahl und analysieren Sie die Laufzeitkomplexität des Algorithmus. Der Algorithmus soll ein Array/Liste von Ganzzahlen als Eingabe nehmen und sortiert zurückgeben. Dabei soll das Array/die Liste *in-place* sortiert werden, d. h. ohne zusätzliche Speicherplatznutzung.
+
+            2. Bestimmen Sie die Komplexität des Algorithmus in Abhängigkeit von der Anzahl der Elemente (n) im Array/der Liste.
+
+            .. solution:: 
+                :pwd: Bubble-bubble-bubble-sort
+
+                .. rubric:: Lösung in Java
+
+                .. code:: java
+                    :number-lines:
+                    :class: copy-to-clipboard
+
+                    static void bubbleSort(int[] arr) {
+                        int n = arr.length;
+                        boolean swapped;
+                        do {
+                            swapped = false;
+                            for (int i = 0; i < n - 1; i++) {
+                                if (arr[i] > arr[i + 1]) {
+                                    // Swap arr[i] and arr[i + 1]
+                                    int temp = arr[i];
+                                    arr[i] = arr[i + 1];
+                                    arr[i + 1] = temp;
+                                    swapped = true;
+                                }
+                            }
+                            n--; // Reduce the range of the next iteration
+                        } while (swapped);
+                    }
+                    
+                .. rubric:: Lösung in Python
+
+                .. code:: python
+                    :number-lines:
+                    :class: copy-to-clipboard
+
+                    def bubble_sort(arr):
+                        n = len(arr)
+                        swapped = True
+                        while swapped:
+                            swapped = False
+                            for i in range(n - 1):
+                                if arr[i] > arr[i + 1]:
+                                    arr[i], arr[i + 1] = arr[i + 1], arr[i]
+                                    swapped = True
+                            n -= 1  # Reduce the range of the next iteration
+                        return arr
 
 
 
