@@ -141,6 +141,8 @@ Kontrollfragen
             
    
 
+.. class:: exercises
+
 Lambda-Ausdrücke
 -------------------------------------
 
@@ -192,6 +194,9 @@ Lambda-Ausdrücke
       7. Ja - siehe 6.
 
 
+
+.. class:: exercises
+
 Streams
 -------------------------------------
       
@@ -225,14 +230,14 @@ Streams
 
 
 
-
-
 .. class:: new-section transition-move-to-top
 
 Datenstrukturen
 -------------------------------------
 
 
+
+.. class:: exercises
 
 Optional
 ---------------
@@ -246,6 +251,8 @@ Optional
       Der Datentyp :java:`Optional` dient dazu, den Umgang mit Nullwerten zu erleichtern und die Möglichkeit darzustellen, dass ein Wert vorhanden sein kann oder nicht. Er hilft, :java:`NullPointerException`\ s zu vermeiden.
 
 
+
+.. class:: exercises
 
 Queue / Warteschlange
 -------------------------------------
@@ -275,7 +282,7 @@ Queue / Warteschlange
 
    .. card::
 
-      .. exercise:: Erstellen Sie ein UML Klassendiagramm für verkettete Listen.
+      .. exercise:: Erstellen Sie ein UML Klassendiagramm für verkettete Listen
 
          .. solution::
             :pwd: UMLChainedList

@@ -75,9 +75,9 @@ Einführung in E/A (:eng:`I/O`) in Java
 ------------------------------------------------
 
 
+
 Architektur von Java I/O
 --------------------------------
-
 
 .. class:: incremental-list
 
@@ -102,13 +102,18 @@ Architektur von Java I/O
 I/O-Ströme in Java
 --------------------------------
 
-.. rubric:: Lesen von Daten
+.. compound::
 
-Um Daten von einer externen Datenquelle zu lesen, öffnet ein Java-Programm einen Eingabestrom und liest die Daten *seriell* (nacheinander) ein:
+    .. rubric:: Lesen von Daten
 
-.. rubric:: Schreiben von Daten
+    Um Daten von einer externen Datenquelle zu lesen, öffnet ein Java-Programm einen Eingabestrom und liest die Daten *seriell* (nacheinander) ein:
 
-Um Daten in eine externe Senke zu schreiben, öffnet ein Java-Programm einen Ausgabestrom und schreibt die Daten *seriell*.
+.. compound::
+    :class: incremental
+
+    .. rubric:: Schreiben von Daten
+
+    Um Daten in eine externe Senke zu schreiben, öffnet ein Java-Programm einen Ausgabestrom und schreibt die Daten *seriell*.
 
 
 
@@ -198,7 +203,7 @@ Allgemeines Vorgehen beim Lesen/Schreiben von Dateien
     2. Lese Daten, solange nötig und es noch Daten gibt 
     3. Schließe den Strom
 
-       Beim Beenden des Lesens bzw. Schreibens ist der Strom durch :java:`close()` zu schließen.
+       Beim Beenden des Lesens ist der Strom durch :java:`close()` zu schließen.
 
 :Schreiben: 
 
@@ -206,7 +211,10 @@ Allgemeines Vorgehen beim Lesen/Schreiben von Dateien
 
     1. Öffne einen Strom
     2. Solange es noch Daten gibt, schreibe Daten
-    3. Schließe den Strom mit :java:`close()`.
+    3. Schließe den Strom 
+    
+       Beim Beenden des Schreibens ist der Strom durch :java:`close()` zu schließen.
+
 
 .. remember::
     :class: incremental
@@ -286,6 +294,7 @@ Schreiben und Lesen von Daten
             Es gilt immer zu überprüfen ob auch die erwartete Anzahl an Bytes/Zeichen geschrieben wurde.
 
 
+
 Dateiströme in Java
 --------------------------------
 
@@ -293,7 +302,7 @@ Dateiströme in Java
 
     .. card::
 
-        .. class:: incremental-list
+        .. class:: incremental-list list-with-sublists
 
         - Dateiströme sind Ein-/Ausgabe-Ströme, deren Quellen/Senken Dateien im Dateisystem sind:
 
@@ -301,9 +310,9 @@ Dateiströme in Java
         - :java:`FileInputStream` / :java:`FileOutputStream` für Lesen / Schreiben von Bytes von/in Dateien
         - Ein Dateistrom kann erzeugt werden, indem man die Quelle- bzw. Senke-Datei durch eines der folgenden Objekte als Parameter des Strom-Konstruktors übergibt:
 
-        - Dateiname  (:java:`String`)
-        - Datei-Objekt (:java:`java.io.File`)
-        - Dateibeschreibung (:java:`java.io.FileDescriptor`)
+          - Dateiname  (:java:`String`)
+          - Datei-Objekt (:java:`java.io.File`)
+          - Dateibeschreibung (:java:`java.io.FileDescriptor`)
 
         - Die Klasse :java:`java.nio.file.Files` bietet weitere Methoden (z. B. :java:`newInputStream(...)`, :java:`newBufferedWriter(...)`) zum Lesen und Schreiben von Dateien als Streams an.
 
@@ -323,6 +332,7 @@ Dateiströme in Java
             }
 
 
+
 Prozessströme 
 --------------------------------
 
@@ -330,12 +340,17 @@ Prozessströme
 
     .. card::
 
-        .. class:: incremental-list list-with-explanations
+        .. class:: list-with-explanations
 
         - Ein Prozess-Strom enthält einen anderen (Daten- oder Prozess-)Strom
 
           Dieser dient als Quelle bzw. Senke.
+
+        .. class:: incremental-list list-with-sublists  
+
         - Prozess-Ströme ändern Daten oder bieten Funktionalität:
+
+          .. class:: incremental-list  
 
           - Zwischenspeichern (Puffern) von Daten 
           - Zählen der gelesenen/geschriebenen Zeilen
@@ -346,7 +361,7 @@ Prozessströme
 
         .. rubric:: Pufferströme
         
-        .. class:: incremental-list list-with-explanations
+        .. class:: incremental-list list-with-sublists
 
         - Ein Pufferstrom (z. B. :java:`BufferedInputStream` oder :java:`BufferedOutputStream`) kapselt einen anderen Datenstrom und einen internen Puffer
         - Beim ersten Lesen wird der Puffer vollständig gefüllt
@@ -474,9 +489,6 @@ Architektur der I/O API
 
 
 
-
-
-
 .. class:: new-section
 
 Java :java:`Stream`\ s und I/O
@@ -487,7 +499,7 @@ Java :java:`Stream`\ s und I/O
 :java:`java.nio.file.Files`
 ----------------------------
 
-Neben den traditionellen I/O-Klassen (seit Java 1.X) gibt es auch die Möglichkeit Dateien als Streams zu lesen und zu schreiben (:java:`java.nio.file.Files`).
+Neben den traditionellen I/O-Klassen (seit Java 1.x) gibt es auch die Möglichkeit Dateien als Streams zu lesen und zu schreiben (:java:`java.nio.file.Files`).
 
 .. code:: java
     :number-lines:
@@ -510,7 +522,7 @@ Neben den traditionellen I/O-Klassen (seit Java 1.X) gibt es auch die Möglichke
 
 
 
-.. class:: exercise
+.. class:: exercises
 
 Übung
 ---------
@@ -566,16 +578,17 @@ Neben den traditionellen I/O-Klassen (seit Java 1.X) gibt es auch die Möglichke
             printLinesWithLineNumber(new File("docutils.conf").toPath());
 
 
-.. class:: exercise
+
+.. class:: exercises
 
 Übung
 ---------
 
 .. exercise:: Durchsuchen von Dateien
 
-    Schreiben Sie ein Programm (Sie können die JShell benutzen), dass alle Textdateien (z. B. \*.rxt, \*.md oder \*.java) eines Verzeichnisses in Hinblick auf das Vorkommen eines bestimmten Wortes (z. B. Java) durchsucht. Geben Sie den Namen der Datei und eine Zeilennummer aus, in der das Wort vorkommt. Parallelisieren Sie die Suche wenn möglich.
+    Schreiben Sie ein Programm (Sie können die JShell benutzen), dass alle Textdateien (z. B. \*.rxt, \*.md oder \*.java) eines Verzeichnisses in Hinblick auf das Vorkommen eines bestimmten Wortes (z. B. Java) durchsucht. Geben Sie den Namen der Datei und eine Zeilennummer aus, in der das Wort vorkommt. Parallelisieren (:java:`parallel()`) Sie die Suche wenn möglich.
 
-    Relevante API: :java:`Files.walk`, :java:`Files.isRegularFile`, :java:`Files.lines`, :java:`Stream.filter`, :java:`Stream.map`, :java:`Stream.findAny`, :java:`Optional.isPresent`, :java:`Optional.get`, :java:`Optional.empty`
+    Relevante API: :java:`Files.walk`, :java:`File.toPath()`, :java:`Files.isRegularFile`, :java:`Files.lines`, :java:`Stream.filter`, :java:`Stream.map`, :java:`Stream.findAny`, :java:`Optional.isPresent`, :java:`Optional.get`, :java:`Optional.empty`
 
     .. hint::
 
@@ -610,4 +623,5 @@ Neben den traditionellen I/O-Klassen (seit Java 1.X) gibt es auch die Möglichke
                     })
                 .filter(x -> x.isPresent())
                 .map(x -> x.get())
+                .sequential() // required to avoid a convoluted output
                 .forEach(System.out::println);

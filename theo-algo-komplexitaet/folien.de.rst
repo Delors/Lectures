@@ -1376,6 +1376,18 @@ Insertion-Sort: Analyse mit abstrahierten Kosten
 
 .. deck::
 
+    .. card::
+
+        .. rubric:: Sortieralgorithmen
+
+        .. background::
+
+            Sortierung basiert (meist) auf paarweisen Vergleichen.
+
+            - Vergleichsoperatoren für numerische Werte (:java:`int`, :java:`float`,...) klar
+            - Andere Datentypen / Klassen benötigen definierten Vergleichsoperator
+
+
     .. card:: 
 
         Vergleichbar zum Ziehen von Karten: die neue Karte wird an der richtigen Stelle eingeschoben.
@@ -1511,6 +1523,12 @@ Beispiel Insertion-Sort: Detailanalyse
             T(n) ≤ c· \left( 2n -1 + 3 · \sum^n_{i=2} 1 \right)\\
 
             = c· \left( 5n - 4 \right)
+
+    .. container:: incremental
+
+        .. remark::
+
+            *Insertion-Sort* hat die gleiche Performance auf Arrays und (doppelt) verketteten Listen
 
 .. supplemental::
 
@@ -2328,27 +2346,68 @@ Master-Theorem: Zusammenfassung
 Übung
 --------------------------------------------------------
 
-.. exercise:: Anwendung des Master-Theorems auf Mergesort
+.. deck::
 
-    Der Mergesort-Algorithmus ist ein rekursiver Algorithmus, der ein Array in zwei Hälften teilt, die Hälften sortiert – wenn sie nicht trivial sind – und dann die sortierten Hälften zusammenführt. Das Zusammenführen der Hälften hat einen Aufwand von :math:`n` und das Teilen des Arrays hat einen konstanten Aufwand.
+    .. card:: 
 
-    - Bestimmen Sie die Rekurrenzgleichung für den Mergesort-Algorithmus.
-    - Bestimmen Sie die Laufzeit des Mergesort-Algorithmus mit Hilfe des Master-Theorems.
-  
-    .. solution:: 
-        :pwd: und somit gilt...
+        .. rubric:: Mergesort
 
-        Der Mergesort-Algorithmus kann durch die Rekurrenz :math:`T(n) = 2 \cdot T(n/2) + n` beschrieben werden:
+        Der Mergesort-Algorithmus ist ein rekursiver Algorithmus, der ein Array solange in zwei Hälften teilt (Teile und Herrsche (:eng:`divide and conquer`)) bis diese trivial sind. Danach werden jeweils zwei sortierte Hälften zusammenführt bis das ganze Array wieder zusammengeführt wurde. Das Zusammenführen der Hälften hat einen Aufwand von :math:`n` und das Teilen des Arrays hat einen konstanten Aufwand.
 
-        - :math:`a = 2`: Es gibt zwei rekursive Aufrufe,
-        - :math:`b = 2`: Jeder Aufruf hat die Größe :math:`n/2`,
-        - :math:`f(n) = n`: Die Kosten für das Mischen.
 
-        Hier ergibt sich :math:`n^{\log_b a} = n^{\log_2 2} = n^1 = n`. Das passt zu Fall 2, da :math:`f(n) = \Theta(n^{\log_b a})` (k = 0). Daher ist die Laufzeit:
+    .. card::
 
-        .. math::
+        .. rubric:: Mergesort (Visualisierung)
 
-           T(n) = \Theta(n \cdot \log n)
+        .. raw:: html
+
+            <style>
+                #merge-sort-visualization {                
+                    iframe {
+                        border: none;
+                        margin: 0;
+                        padding: 0;
+                    }
+                }
+                @container style(--ld-rendering-mode: slide) {
+                    
+                    #merge-sort-visualization {
+                        width: 408px;
+                        height: 864px;
+                        scale: 3;
+                        transform-origin: 0 0;
+                    }
+                }
+            </style>
+            <div id="merge-sort-visualization">
+                <iframe src="vis/mergesort.html" width="136" height="288" frameborder="0"></iframe>
+            </div>
+
+
+    .. card::
+            
+        .. exercise:: Anwendung des Master-Theorems auf Mergesort
+
+            
+
+            - Bestimmen Sie die Rekurrenzgleichung für den Mergesort-Algorithmus.
+            - Bestimmen Sie die Laufzeit des Mergesort-Algorithmus mit Hilfe des Master-Theorems.
+        
+            .. solution:: 
+                :pwd: und somit gilt...
+
+                Der Mergesort-Algorithmus kann durch die Rekurrenz :math:`T(n) = 2 \cdot T(n/2) + n` beschrieben werden:
+
+                - :math:`a = 2`: Es gibt zwei rekursive Aufrufe,
+                - :math:`b = 2`: Jeder Aufruf hat die Größe :math:`n/2`,
+                - :math:`f(n) = n`: Die Kosten für das Mischen.
+
+                Hier ergibt sich :math:`n^{\log_b a} = n^{\log_2 2} = n^1 = n`. Das passt zu Fall 2, da :math:`f(n) = \Theta(n^{\log_b a})` (k = 0). Daher ist die Laufzeit:
+
+                .. math::
+
+                T(n) = \Theta(n \cdot \log n)
+
 
 
 

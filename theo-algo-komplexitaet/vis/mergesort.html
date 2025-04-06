@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta author="Prof. Dr. Michael Eichberg - DHBW Mannheim">
+    <title>Merge Sort</title>
+    <link rel="stylesheet" href="../../LectureDoc2/renaissance/ld.css" />
+</head>
+
+<body style="background-color: white">
+    <style>
+        @import url("../../LectureDoc2/renaissance/css/themes/dhbw.css") layer(theme);
+
+        #merge-sort {
+            --default-background-color: white;
+            background-color: var(--default-background-color);
+
+            font-family: var(--default-font-family);
+            width: fit-content;
+
+            /* Definition all css variables that are manipulated during the animation. */
+            --legend: "...";
+            --show-merge-bar: 0;
+            --v4-1st-row-visible: 0;
+            --v6-1st-row-visible: 0;
+            --v5-1st-row-visible: 0;
+            --v2-1st-row-visible: 0;
+            --v4-2nd-row-visible: 0;
+            --v6-2nd-row-visible: 0;
+            --v5-2nd-row-visible: 0;
+            --v2-2nd-row-visible: 0;
+            --v4-3rd-row-visible: 0;
+            --v6-3rd-row-visible: 0;
+            --v5-3rd-row-visible: 0;
+            --v2-3rd-row-visible: 0;
+            --v4-4th-row-visible: 0;
+            --v6-4th-row-visible: 0;
+            --v5-4th-row-visible: 0;
+            --v2-4th-row-visible: 0;
+            --v4-hpos: 1.5ch;
+            --v6-hpos: 4.5ch;
+            --v5-hpos: 7.5ch;
+            --v2-hpos: 10.5ch;
+            --v4-vpos: 0.5ch;
+            --v6-vpos: 0.5ch;
+            --v5-vpos: 0.5ch;
+            --v2-vpos: 0.5ch;
+            --v4-is-selected: 0;
+            --v6-is-selected: 0;
+            --v5-is-selected: 0;
+            --v2-is-selected: 0;
+        }
+
+        .header {
+            box-sizing: border-box;
+            width: 15.75ch;
+            border-radius: 0.5ch 0.5ch 0 0;
+            padding: 0.5ch 1ch;
+
+            display: flex;
+            justify-content: space-between;
+
+            background-color: hsl(40, 53%, 79%);
+
+            button {
+                width: 3ch;
+                height: 3ch;
+                text-align: center;
+
+                &:hover {
+                    box-shadow: 1px 1px 5px gray;
+                }
+            }
+        }
+
+        #merge-sort-canvas {
+            position: relative;
+            width: 15.75ch;
+            height: 25ch;
+            border-radius: 0 0 0.5ch 0.5ch;
+            overflow: hidden;
+
+            background-color: antiquewhite;
+
+            .value {
+                --is-selected:
+                    /* "boolean value" - needs to be bound to a-per-value variable */
+                    0;
+
+                position: absolute;
+                /* left and top is "animated" */
+                width: 3ch;
+                height: 3ch;
+
+                transition: all 1s linear 0s;
+                text-align: center;
+                border-radius: 0.25ch;
+                border: thin solid black;
+
+                font-weight: bold;
+                color: rgb(calc(255 - var(--is-selected) * 255), calc(255 - var(--is-selected) * 255), calc(255 - var(--is-selected) * 255) );
+                --current-background-color: rgb(calc(175 + var(--is-selected) * 25), calc(var(--is-selected) * 255), calc(var(--is-selected) * 255));
+                background-color: var(--current-background-color);
+
+                --box-shadow-base: var(--is-selected);
+                box-shadow:
+                    calc(1px * var(--box-shadow-base) * -1) calc(1px * var(--box-shadow-base) * -1) calc(10px * var(--box-shadow-base)) calc(1px * var(--box-shadow-base)) gray;
+
+            }
+
+            .shadow-value {
+                position: absolute;
+                width: 3ch;
+                height: 3ch;
+                text-align: center;
+                border-radius: 0.25ch;
+                border: thin solid darkgray;
+                --current-background-color: lightgray;
+                --current-color: white;
+                color: var(--current-color);
+                background-color: var(--current-background-color);
+
+                transition: all 1s linear 0s;
+            }
+
+            #merge-bar {
+                position: absolute;
+                left: 0.25ch;
+                top: 14ch;
+                width: 15ch;
+                height: 0.25ch;
+
+                background-color: black;
+                transition: all 0.3s ease-out 0s;
+            }
+        }
+
+        #legend {
+
+            &::before {
+                content: "Schritt: ";
+                display: block;
+                height: 2ch;
+                line-height: 2ch;
+            }
+
+            &::after {
+                white-space: pre;
+                content: var(--legend);
+                display: block;
+            }
+        }
+    </style>
+    <div id="merge-sort">
+        <div class="header">
+            <button id="reset">⥀</button>
+            <button id="next">&gt;</button>
+        </div>
+
+        <div id="merge-sort-canvas">
+            <div class="shadow-value" style="
+                left:1.75ch;
+                top:0.5ch;
+                opacity: var(--v4-1st-row-visible);">4</div>
+            <div class="shadow-value" style="
+                left:4.75ch;
+                top:0.5ch;
+                opacity: var(--v6-1st-row-visible);">6</div>
+            <div class="shadow-value" style="
+                left:7.75ch;
+                top:0.5ch;
+                opacity: var(--v5-1st-row-visible);">5</div>
+            <div class="shadow-value" style="
+                left:10.75ch;
+                top:0.5ch;
+                opacity: var(--v2-1st-row-visible);">2</div>
+
+            <div class="shadow-value" style="
+                left:1.25ch;
+                top:5ch;
+                opacity: var(--v4-2nd-row-visible);">4</div>
+            <div class="shadow-value" style="
+                left:4.25ch;
+                top:5ch;
+                opacity: var(--v6-2nd-row-visible);">6</div>
+            <div class="shadow-value" style="
+                left:8.25ch;
+                top:5ch;
+                opacity: var(--v5-2nd-row-visible);">5</div>
+            <div class="shadow-value" style="
+                left:11.25ch;
+                top:5ch;
+                opacity: var(--v2-2nd-row-visible);">2</div>
+
+            <div class="shadow-value" style="
+                left:0.25ch;
+                top:10ch;
+                opacity: var(--v4-3rd-row-visible);">4</div>
+            <div class="shadow-value" style="
+                left:4.25ch;
+                top:10ch;
+                opacity: var(--v6-3rd-row-visible);">6</div>
+            <div class="shadow-value" style="
+                left:8.25ch;
+                top:10ch;
+                opacity: var(--v5-3rd-row-visible);">5</div>
+            <div class="shadow-value" style="
+                left:12.25ch;
+                top:10ch;
+                opacity: var(--v2-3rd-row-visible);">2</div>
+
+            <div id="merge-bar" style="opacity: var(--show-merge-bar);"></div>
+
+            <div class="shadow-value" style="
+                left:1.25ch;
+                top:15ch;
+                opacity: var(--v4-4th-row-visible);">4</div>
+            <div class="shadow-value" style="
+                left:4.25ch;
+                top:15ch;
+                opacity: var(--v6-4th-row-visible);">6</div>
+            <div class="shadow-value" style="
+                left:8.25ch;
+                top:15ch;
+                opacity: var(--v2-4th-row-visible);">2</div>
+            <div class="shadow-value" style="
+                left:11.25ch;
+                top:15ch;
+                opacity: var(--v5-4th-row-visible);">5</div>
+            
+            <!-- The elements that are actually moved on the canvas. -->
+        
+            <div id="v4" class="value" style="
+                --is-selected: var(--v4-is-selected);
+                left: calc(var(--v4-hpos) + 0.25ch);
+                top: var(--v4-vpos);">4</div>
+            <div id="v6" class="value" style="
+                --is-selected: var(--v6-is-selected);
+                left: calc(var(--v6-hpos) + 0.25ch);
+                top: var(--v6-vpos);">6</div>
+            <div id="v5" class="value" style="
+                --is-selected: var(--v5-is-selected);
+                left: calc(var(--v5-hpos) + 0.25ch);
+                top: var(--v5-vpos);">5</div>
+            <div id="v2" class="value" style="
+                --is-selected: var(--v2-is-selected);
+                left: calc(var(--v2-hpos) + 0.25ch);
+                top: var(--v2-vpos);">2</div>
+        </div>
+        <span id="legend"></span>
+        <script>
+            function set(cssVar, value) {
+                const legend = document.getElementById("merge-sort");
+                legend.style.setProperty(cssVar, value);
+            }
+            function get(cssVar) {
+                const style = getComputedStyle(document.getElementById("merge-sort"));
+                return style.getPropertyValue(cssVar);
+            }
+            // TODO Do we want to automatically query all properties and save all variables?
+            const INITIAL_VALUES = {
+                "--legend": get("--legend"),
+                
+                "--v4-hpos": get("--v4-hpos"),
+                "--v6-hpos": get("--v6-hpos"),
+                "--v5-hpos": get("--v5-hpos"),
+                "--v2-hpos": get("--v2-hpos"),
+                "--v4-vpos": get("--v4-vpos"),
+                "--v6-vpos": get("--v6-vpos"),
+                "--v5-vpos": get("--v5-vpos"),
+                "--v2-vpos": get("--v2-vpos"),
+                "--v4-is-selected": get("--v4-is-selected"),
+                "--v6-is-selected": get("--v6-is-selected"),
+                "--v5-is-selected": get("--v5-is-selected"),
+                "--v2-is-selected": get("--v2-is-selected"),
+
+                "--v4-1st-row-visible": get("--v4-1st-row-visible"),
+                "--v6-1st-row-visible": get("--v6-1st-row-visible"),
+                "--v5-1st-row-visible": get("--v5-1st-row-visible"),
+                "--v2-1st-row-visible": get("--v2-1st-row-visible"),
+                "--v4-2nd-row-visible": get("--v4-2nd-row-visible"),
+                "--v6-2nd-row-visible": get("--v6-2nd-row-visible"),
+                "--v5-2nd-row-visible": get("--v5-2nd-row-visible"),
+                "--v2-2nd-row-visible": get("--v2-2nd-row-visible"),
+                "--v4-3rd-row-visible": get("--v4-3rd-row-visible"),
+                "--v6-3rd-row-visible": get("--v6-3rd-row-visible"),
+                "--v5-3rd-row-visible": get("--v5-3rd-row-visible"),
+                "--v2-3rd-row-visible": get("--v2-3rd-row-visible"),
+                "--show-merge-bar": get("--show-merge-bar"),
+                "--v2-4th-row-visible": get("--v2-4th-row-visible"),
+                "--v4-4th-row-visible": get("--v4-4th-row-visible"),
+                "--v6-4th-row-visible": get("--v6-4th-row-visible"),
+                "--v5-4th-row-visible": get("--v5-4th-row-visible"),
+            }
+            console.log(INITIAL_VALUES);
+
+            let step = -1;
+            const animationSequence = [
+                {
+                    "--legend": '"Aufspalten (split)"',
+                },
+                {
+                    "--v4-1st-row-visible": "1",
+                    "--v6-1st-row-visible": "1",
+                    "--v5-1st-row-visible": "1",
+                    "--v2-1st-row-visible": "1",
+                    "--v4-hpos": "1ch",
+                    "--v6-hpos": "4ch",
+                    "--v5-hpos": "8ch",
+                    "--v2-hpos": "11ch",
+                    "--v4-vpos": "5ch",
+                    "--v6-vpos": "5ch",
+                    "--v5-vpos": "5ch",
+                    "--v2-vpos": "5ch",
+                },
+                {
+                    "--v4-2nd-row-visible": "1",
+                    "--v6-2nd-row-visible": "1",
+                    "--v5-2nd-row-visible": "1",
+                    "--v2-2nd-row-visible": "1",
+                    "--v4-hpos": "0ch",
+                    "--v6-hpos": "4ch",
+                    "--v5-hpos": "8ch",
+                    "--v2-hpos": "12ch",
+                    "--v4-vpos": "10ch",
+                    "--v6-vpos": "10ch",
+                    "--v5-vpos": "10ch",
+                    "--v2-vpos": "10ch",
+                },
+                {
+                    "--show-merge-bar": "1",
+                    "--legend": '"Mischen (merge)"',
+                },
+                {
+                    "--v4-is-selected": "1",
+                    "--v6-is-selected": "1",
+                },
+                {
+                    "--v4-3rd-row-visible": "1",
+                    "--v4-vpos": "15ch",
+                    "--v4-hpos": "1ch",
+                    "--v4-is-selected": "0",
+                },
+                {
+                    "--v6-3rd-row-visible": "1",
+                    "--v6-vpos": "15ch",
+                    "--v6-hpos": "4ch",
+                    "--v6-is-selected": "0",
+                },
+                {
+                    "--v5-is-selected": "1",
+                    "--v2-is-selected": "1",
+                },
+                {
+                    "--v2-3rd-row-visible": "1",
+                    "--v2-vpos": "15ch",
+                    "--v2-hpos": "8ch",
+                    "--v2-is-selected": "0",
+                },
+                {
+                    "--v5-3rd-row-visible": "1",
+                    "--v5-vpos": "15ch",
+                    "--v5-hpos": "11ch",
+                    "--v5-is-selected": "0",
+                },
+                {
+                    "--v4-is-selected": "1",
+                    "--v2-is-selected": "1",
+                },
+                {
+                    "--v2-is-selected": "0",
+                    "--v2-4th-row-visible": "1",
+                    "--v2-vpos": "20ch",
+                    "--v2-hpos": "1.25ch",
+                    "--v5-is-selected": "1",
+                },
+                {
+                    "--v4-is-selected": "0",
+                    "--v4-4th-row-visible": "1",
+                    "--v4-vpos": "20ch",
+                    "--v4-hpos": "4.25ch",
+                    "--v6-is-selected": "1",
+                },
+                {
+                    "--v5-is-selected": "0",
+                    "--v5-4th-row-visible": "1",
+                    "--v5-vpos": "20ch",
+                    "--v5-hpos": "7.25ch",
+                    "--v5-is-selected": "0",
+                },
+                {
+                    "--v6-4th-row-visible": "1",
+                    "--v6-vpos": "20ch",
+                    "--v6-hpos": "10.25ch",
+                    "--v6-is-selected": "0",
+                }
+            ];
+
+            document.getElementById("next").addEventListener("click", function (event) {
+                const animationStep = animationSequence[++step];
+                for (const [key, value] of Object.entries(animationStep)) {
+                    console.log("Setting: ", key, value);
+                    set(key, value);
+                }
+                if (step >= animationSequence.length - 1) {
+                    event.target.disabled = true;
+                    return;
+                }
+            });
+
+            document.getElementById("reset").addEventListener("click", function () {
+                step = -1;
+                for (const [key, value] of Object.entries(INITIAL_VALUES)) {
+                    console.log("Resetting: ", key, value);
+                    set(key, value);
+                }
+                document.getElementById("next").disabled = false;
+            });
+        </script>
+    </div>
+</body>

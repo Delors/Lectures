@@ -368,7 +368,7 @@ Verkettete Listen
 
        Orientieren Sie sich ggf. an der Implementierung für eine einfach verkettete Liste.
     
-    .. class:: list-with-sublist
+    .. class:: list-with-sublists
 
     2. Implementieren Sie die folgenden Methoden.  Bestimmen Sie das *worst-case* verhalten der Operationen (Laufzeit) in Abhängigkeit von der Anzahl der Elemente N, die bereits in der Liste gespeichert sind. 
 
