@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!-- Generator: DataGraph - https://www.visualdatatools.com/DataGraph/index.html  --><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="556" height="334" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 834.5 501" >
+<g>
+  <!-- Background -->
+  <g id="Background">
+    <defs>
+      <clipPath id="clipPath">
+        <rect x="107.5" y="27.5" width="703.6" height="412"/>
+      </clipPath>
+    </defs>
+    <!-- Grid -->
+    <g id="Grid" clip-path="url(#clipPath)">
+      <g>
+        <path d="M 161.623 439.5 L 161.623 27.5 M 215.746 439.5 L 215.746 27.5 M 269.869 439.5 L 269.869 27.5 
+                 M 323.992 439.5 L 323.992 27.5 M 378.115 439.5 L 378.115 27.5 M 432.238 439.5 L 432.238 27.5 
+                 M 486.362 439.5 L 486.362 27.5 M 540.485 439.5 L 540.485 27.5 M 594.608 439.5 L 594.608 27.5 
+                 M 648.731 439.5 L 648.731 27.5 M 702.854 439.5 L 702.854 27.5 M 756.977 439.5 L 756.977 27.5 "
+          stroke="black" stroke-dasharray="0.00997506,3.99002" stroke-linecap="round" fill="none" stroke-width="0.5"/>
+        <path d="M 134.562 439.5 L 134.562 27.5 M 188.685 439.5 L 188.685 27.5 M 242.808 439.5 L 242.808 27.5 
+                 M 296.931 439.5 L 296.931 27.5 M 351.054 439.5 L 351.054 27.5 M 405.177 439.5 L 405.177 27.5 
+                 M 459.3 439.5 L 459.3 27.5 M 513.423 439.5 L 513.423 27.5 M 567.546 439.5 L 567.546 27.5 
+                 M 621.669 439.5 L 621.669 27.5 M 675.792 439.5 L 675.792 27.5 M 729.915 439.5 L 729.915 27.5 
+                 M 784.038 439.5 L 784.038 27.5 "
+          stroke="black" stroke-dasharray="0.00911001,1.822" stroke-dashoffset="0.004555" stroke-linecap="round" fill="none" stroke-width="0.5"/>
+      </g>
+    </g>
+  </g>
+  <!-- Commands -->
+  <g id="Commands">
+    <!-- 50,⎣220/9⎦= 24 -->
+    <g id="50_220_9_24">
+      <g font-family="Noto Sans Display" font-size="18" fill="black">
+        <text x="332.315" y="268.252">50,⎣220/9⎦= 24</text>
+      </g>
+      <g>
+        <path d="M 403.115, 252.759 L 381.475, 220.73 
+        M 403.115, 252.759 L 381.475, 220.73 "
+          stroke="black" fill="none" stroke-width="2"/>
+        <path d="M 378.115, 215.759 L 378.754, 224.741 
+        L 386.211, 219.702 z "
+          fill="black" stroke="none"/>
+      </g>
+    </g>
+    <!-- 50, 29 -->
+    <g id="50_29">
+      <g font-family="Noto Sans Display" font-size="18" fill="black">
+        <text x="325.093" y="133.094">50, 29</text>
+      </g>
+      <g>
+        <path d="M 350.115, 135.677 L 374.432, 166.941 
+        M 350.115, 135.677 L 374.432, 166.941 "
+          stroke="black" fill="none" stroke-width="2"/>
+        <path d="M 378.115, 171.677 L 376.879, 162.757 
+        L 369.775, 168.283 z "
+          fill="black" stroke="none"/>
+      </g>
+    </g>
+    <!-- 20(x-120)/(30-120)+40(x-30)/(120-30) -->
+    <g id="20_x_120_30_120_40_x_30_120_30">
+      <path d="M 107.5 317.426 L 811.1 52.9321 "
+        stroke="rgb(228,28,28)" stroke-dasharray="0.05,7.5" stroke-linecap="round" fill="none" stroke-width="5"/>
+    </g>
+    <!-- (x-30)*(x-120)/(-30*(-120))+20(x*(x-120))/(30*(30-120))+40(x*(x-30))/(120*(120-30)) -->
+    <g id="x_30_x_120_30_120_20_x_x_120_30_30_120_40_x_x_30_120_120_30">
+      <path d="M 107.5 430.344 L 119.699 415.313 L 131.839 400.672 L 143.97 386.356 L 155.949 372.528 
+               L 167.774 359.18 L 179.581 346.152 L 191.386 333.423 L 203.079 321.109 L 214.729 309.132 
+               L 226.251 297.573 L 237.664 286.404 L 249.069 275.52 L 260.329 265.049 L 271.578 254.858 
+               L 282.731 245.022 L 293.885 235.452 L 304.987 226.191 L 315.935 217.317 L 326.915 208.675 
+               L 337.782 200.376 L 348.565 192.391 L 359.346 184.657 L 370.043 177.228 L 380.645 170.108 
+               L 391.201 163.257 L 401.712 156.673 L 412.242 150.314 L 422.653 144.261 L 433.019 138.464 
+               L 443.348 132.917 L 453.581 127.647 L 463.903 122.558 L 474.051 117.777 L 484.175 113.227 
+               L 494.236 108.924 L 504.261 104.851 L 514.279 100.996 L 524.284 97.3604 L 534.199 93.9688 
+               L 544.111 90.7889 L 553.947 87.8415 L 563.793 85.0985 L 573.636 82.5639 L 583.372 80.261 
+               L 593.219 78.1381 L 602.959 76.2427 L 612.661 74.5568 L 622.325 73.0777 L 632.095 71.7858 
+               L 641.791 70.7058 L 651.512 69.8251 L 661.229 69.147 L 671.03 68.6678 L 680.599 68.3985 
+               L 690.336 68.3257 L 699.957 68.4532 L 709.599 68.7799 L 719.346 69.3125 L 729.145 70.053 
+               L 738.766 70.9801 L 748.47 72.1161 L 758.146 73.4496 L 767.932 75.002 L 777.711 76.7583 
+               L 787.498 78.7212 L 797.293 80.8909 L 807.132 83.2773 L 811.1 84.2984 "
+        stroke="black" stroke-dasharray="9.6,6" stroke-linecap="butt" fill="none" stroke-width="3"/>
+    </g>
+    <!-- 30,20 -->
+    <g id="30_20">
+      <g font-family="Noto Sans Display" font-size="18" fill="black">
+        <text x="186.425" y="229.844">30,20</text>
+      </g>
+      <g>
+        <path d="M 236.869, 223.389 L 266.687, 253.207 
+        M 236.869, 223.389 L 266.687, 253.207 "
+          stroke="rgb(55,126,184)" fill="none" stroke-width="3"/>
+        <path d="M 269.869, 256.389 L 266.369, 243.343 
+        L 265.096, 251.616 L 256.823, 252.889 z "
+          fill="rgb(55,126,184)" stroke="none"/>
+      </g>
+    </g>
+    <!-- 120,40 -->
+    <g id="120_40">
+      <g font-family="Noto Sans Display" font-size="18" fill="black">
+        <text x="715.45" y="138.771">120,40</text>
+      </g>
+      <g>
+        <path d="M 742.977, 123.278 L 755.764, 77.6111 
+        M 742.977, 123.278 L 755.764, 77.6111 "
+          stroke="rgb(55,126,184)" fill="none" stroke-width="3"/>
+        <path d="M 756.977, 73.2778 L 747.322, 82.7245 
+        L 755.157, 79.7778 L 760.322, 86.3645 z "
+          fill="rgb(55,126,184)" stroke="none"/>
+      </g>
+    </g>
+  </g>
+  <!-- Foreground -->
+  <g id="Foreground">
+    <!-- Y Axis -->
+    <g id="Y_Axis">
+      <g transform="translate(20.7781,233.5) rotate(-90) translate(-20.7781,-233.5)" font-family="Noto Sans Display" font-size="18" fill="black">
+        <text x="-57.2687" y="233.5">approx. Array Index</text>
+      </g>
+      <!-- Y Labels -->
+      <g id="Y_Labels">
+        <g font-family="Noto Sans Display" font-size="18" fill="black">
+          <text x="85.8893" y="445.956">0</text>
+        </g>
+        <g font-family="Noto Sans Display" font-size="18" fill="black">
+          <text x="85.8893" y="400.178">5</text>
+        </g>
+        <g font-family="Noto Sans Display" font-size="18" fill="black">
+          <text x="75.8785" y="354.4">10</text>
+        </g>
+        <g font-family="Noto Sans Display" font-size="18" fill="black">
+          <text x="75.8785" y="308.622">15</text>
+        </g>
+        <g font-family="Noto Sans Display" font-size="18" fill="black">
+          <text x="75.8785" y="262.844">20</text>
+        </g>
+        <g font-family="Noto Sans Display" font-size="18" fill="black">
+          <text x="75.8785" y="217.067">25</text>
+        </g>
+        <g font-family="Noto Sans Display" font-size="18" fill="black">
+          <text x="75.8785" y="171.289">30</text>
+        </g>
+        <g font-family="Noto Sans Display" font-size="18" fill="black">
+          <text x="75.8785" y="125.511">35</text>
+        </g>
+        <g font-family="Noto Sans Display" font-size="18" fill="black">
+          <text x="75.8785" y="79.7333">40</text>
+        </g>
+        <g font-family="Noto Sans Display" font-size="18" fill="black">
+          <text x="75.8785" y="33.9556">45</text>
+        </g>
+      </g>
+      <path d="M 99.5 439.5 L 107.5 439.5 M 103.5 430.344 L 107.5 430.344 M 103.5 421.189 L 107.5 421.189 
+               M 103.5 412.033 L 107.5 412.033 M 103.5 402.878 L 107.5 402.878 M 99.5 393.722 L 107.5 393.722 
+               M 103.5 384.567 L 107.5 384.567 M 103.5 375.411 L 107.5 375.411 M 103.5 366.256 L 107.5 366.256 
+               M 103.5 357.1 L 107.5 357.1 M 99.5 347.944 L 107.5 347.944 M 103.5 338.789 L 107.5 338.789 
+               M 103.5 329.633 L 107.5 329.633 M 103.5 320.478 L 107.5 320.478 M 103.5 311.322 L 107.5 311.322 
+               M 99.5 302.167 L 107.5 302.167 M 103.5 293.011 L 107.5 293.011 M 103.5 283.856 L 107.5 283.856 
+               M 103.5 274.7 L 107.5 274.7 M 103.5 265.544 L 107.5 265.544 M 99.5 256.389 L 107.5 256.389 
+               M 103.5 247.233 L 107.5 247.233 M 103.5 238.078 L 107.5 238.078 M 103.5 228.922 L 107.5 228.922 
+               M 103.5 219.767 L 107.5 219.767 M 99.5 210.611 L 107.5 210.611 M 103.5 201.456 L 107.5 201.456 
+               M 103.5 192.3 L 107.5 192.3 M 103.5 183.144 L 107.5 183.144 M 103.5 173.989 L 107.5 173.989 
+               M 99.5 164.833 L 107.5 164.833 M 103.5 155.678 L 107.5 155.678 M 103.5 146.522 L 107.5 146.522 
+               M 103.5 137.367 L 107.5 137.367 M 103.5 128.211 L 107.5 128.211 M 99.5 119.056 L 107.5 119.056 
+               M 103.5 109.9 L 107.5 109.9 M 103.5 100.744 L 107.5 100.744 M 103.5 91.5889 L 107.5 91.5889 
+               M 103.5 82.4333 L 107.5 82.4333 M 99.5 73.2778 L 107.5 73.2778 M 103.5 64.1222 L 107.5 64.1222 
+               M 103.5 54.9667 L 107.5 54.9667 M 103.5 45.8111 L 107.5 45.8111 M 103.5 36.6556 L 107.5 36.6556 
+               M 99.5 27.5 L 107.5 27.5 "
+        stroke="black" fill="none" stroke-width="0.5"/>
+    </g>
+    <!-- X Axis -->
+    <g id="X_Axis">
+      <g font-family="Noto Sans Display" font-size="18" fill="black">
+        <text x="398.136" y="491">gesuchter Wert</text>
+      </g>
+      <g>
+        <g font-family="Noto Sans Display" font-size="18" fill="black">
+          <text x="102.495" y="464.284">0</text>
+        </g>
+        <g font-family="Noto Sans Display" font-size="18" fill="black">
+          <text x="151.612" y="464.284">10</text>
+        </g>
+        <g font-family="Noto Sans Display" font-size="18" fill="black">
+          <text x="205.735" y="464.284">20</text>
+        </g>
+        <g font-family="Noto Sans Display" font-size="18" fill="black">
+          <text x="259.858" y="464.284">30</text>
+        </g>
+        <g font-family="Noto Sans Display" font-size="18" fill="black">
+          <text x="313.982" y="464.284">40</text>
+        </g>
+        <g font-family="Noto Sans Display" font-size="18" fill="black">
+          <text x="368.105" y="464.284">50</text>
+        </g>
+        <g font-family="Noto Sans Display" font-size="18" fill="black">
+          <text x="422.228" y="464.284">60</text>
+        </g>
+        <g font-family="Noto Sans Display" font-size="18" fill="black">
+          <text x="476.351" y="464.284">70</text>
+        </g>
+        <g font-family="Noto Sans Display" font-size="18" fill="black">
+          <text x="530.474" y="464.284">80</text>
+        </g>
+        <g font-family="Noto Sans Display" font-size="18" fill="black">
+          <text x="584.597" y="464.284">90</text>
+        </g>
+        <g font-family="Noto Sans Display" font-size="18" fill="black">
+          <text x="633.715" y="464.284">100</text>
+        </g>
+        <g font-family="Noto Sans Display" font-size="18" fill="black">
+          <text x="688.501" y="464.284">110</text>
+        </g>
+        <g font-family="Noto Sans Display" font-size="18" fill="black">
+          <text x="741.961" y="464.284">120</text>
+        </g>
+        <g font-family="Noto Sans Display" font-size="18" fill="black">
+          <text x="796.084" y="464.284">130</text>
+        </g>
+      </g>
+      <path d="M 107.5 447.5 L 107.5 439.5 M 161.623 447.5 L 161.623 439.5 M 215.746 447.5 L 215.746 439.5 
+               M 269.869 447.5 L 269.869 439.5 M 323.992 447.5 L 323.992 439.5 M 378.115 447.5 L 378.115 439.5 
+               M 432.238 447.5 L 432.238 439.5 M 486.362 447.5 L 486.362 439.5 M 540.485 447.5 L 540.485 439.5 
+               M 594.608 447.5 L 594.608 439.5 M 648.731 447.5 L 648.731 439.5 M 702.854 447.5 L 702.854 439.5 
+               M 756.977 447.5 L 756.977 439.5 M 811.1 447.5 L 811.1 439.5 M 134.562 443.5 L 134.562 439.5 
+               M 188.685 443.5 L 188.685 439.5 M 242.808 443.5 L 242.808 439.5 M 296.931 443.5 L 296.931 439.5 
+               M 351.054 443.5 L 351.054 439.5 M 405.177 443.5 L 405.177 439.5 M 459.3 443.5 L 459.3 439.5 
+               M 513.423 443.5 L 513.423 439.5 M 567.546 443.5 L 567.546 439.5 M 621.669 443.5 L 621.669 439.5 
+               M 675.792 443.5 L 675.792 439.5 M 729.915 443.5 L 729.915 439.5 M 784.038 443.5 L 784.038 439.5 "
+        stroke="black" fill="none" stroke-width="0.5"/>
+    </g>
+    <g font-family="Noto Sans Display" font-size="18" fill="black">
+      <g font-weight="bold">
+        <text x="316.087" y="20.7781" font-family="Helvetica-Bold">
+          Approximation des Array Indexes
+        </text>
+      </g>
+    </g>
+    <path d="M 811.1 439.5 L 811.1 27.5 L 107.5 27.5 L 107.5 439.5 L 811.1 439.5 z "
+      stroke="black" stroke-linecap="square" fill="none" stroke-width="0.5"/>
+  </g>
+</g>
+</svg>

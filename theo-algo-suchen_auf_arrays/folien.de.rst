@@ -1,5 +1,5 @@
 .. meta::
-    :version: genesis
+    :version: renaissance
     :lang: de
     :author: Michael Eichberg
     :keywords: "Suche", "Arrays", "Algorithmen", "Datenstrukturen"
@@ -21,24 +21,16 @@
 .. role:: appear
 .. role:: eng
 .. role:: ger
-.. role:: dhbw-red
-.. role:: green
-.. role:: the-blue
-.. role:: minor
-.. role:: obsolete
-.. role:: line-above
-.. role:: smaller
-.. role:: far-smaller
 .. role:: monospaced
 .. role:: copy-to-clipboard
-.. role:: kbd
+.. role:: peripheral
 .. role:: java(code)
    :language: java
 .. role:: python(code)
    :language: python
 
 
-.. class :: animated-symbol 
+.. class:: animated-logo 
 
 Suchen auf Arrays
 ======================================================
@@ -49,7 +41,7 @@ Suchen auf Arrays
 :Kontakt: michael.eichberg@dhbw.de, Raum 149B
 :Version: 1.1.4
 
-.. container:: minor
+.. container:: peripheral
 
     :Quelle: 
         Die Folien sind teilweise inspiriert von oder basierend auf Lehrmaterial von Prof. Dr. Ritterbusch
@@ -100,14 +92,11 @@ Welche Skalierung haben gesuchte Daten sind im Array?
 
 
 
-.. class:: repetition  smaller-slide-title
-
 Lineare Suche
 --------------------------------------------------------
 
 .. code:: pascal
     :number-lines:
-    :class: slightly-more-smaller
 
     Algorithm linearSearch(A,n,needle)
         for i= 1,...,n do
@@ -117,20 +106,15 @@ Lineare Suche
 
 Laufzeit und Elementzugriffe kann asymptotisch durch :math:`O(n)` abgeschätzt werden.
 
-.. container:: block-footer white dhbw-gray-background text-align-center
-
-    Wiederholung
 
 
 
-.. class:: repetition smaller-slide-title
 
 Binäre Suche
 --------------------------------------------------------
 
 .. code:: pascal
     :number-lines:
-    :class: slightly-more-smaller
 
     Algorithm binarySearch(A,l,u,needle)
         upper = u
@@ -149,29 +133,22 @@ Binäre Suche
 
 Laufzeit ist :math:`O(\log(n))`, genauer im Schnitt :math:`\log_2(n)−1` Zugriffe.
 
-.. container:: block-footer white dhbw-gray-background text-align-center
-
-    Wiederholung
 
 
 
-.. class:: smaller-slide-title
-
-Effizientere Suche bei bekannter Verteilung (hier linear)
+Effizientere Suche bei linearer Verteilung
 ----------------------------------------------------------
 
-.. stack:: invisible
+.. deck:: 
 
-    .. layer:: 
+    .. card:: 
 
         .. image:: images/lagrange/lin-1.svg
-            :height: 1050px
             :align: center
         
-    .. layer:: incremental overlay
+    .. card:: overlay
     
         .. image:: images/lagrange/lin-2.svg
-            :height: 1050px
             :align: center
 
 
@@ -185,7 +162,7 @@ Effizientere Suche bei bekannter Verteilung (hier linear)
         :header: "Index i", "Wert"
         :widths: 10, 10
 
-        i = 10, :minor:`a[i = 10] =`  20.0
+        i = 10, :peripheral:`a[i = 10] =`  20.0
         ..., ...
         i = 30,49.5
         ..., ...
@@ -203,35 +180,30 @@ Effizientere Suche bei bekannter Verteilung (hier linear)
 
 
 
-.. class:: smaller-slide-title
 
-Effizientere Suche bei bekannter Verteilung (hier expo.)
+Effizientere Suche bei exponentieller Verteilung 
 --------------------------------------------------------
 
-.. stack:: invisible
+.. deck:: 
 
-    .. layer:: 
+    .. card:: 
 
         .. image:: images/lagrange/expo-1.svg
-            :height: 1050px
             :align: center
         
-    .. layer:: incremental overlay
+    .. card::  overlay
     
         .. image:: images/lagrange/expo-2.svg
-            :height: 1050px
             :align: center
 
-    .. layer:: incremental overlay
+    .. card::  overlay
     
         .. image:: images/lagrange/expo-3.svg
-            :height: 1050px
             :align: center
 
-    .. layer:: incremental overlay
+    .. card::  overlay
     
         .. image:: images/lagrange/expo-4-quadratic-approx.svg
-            :height: 1050px
             :align: center
 
 
@@ -242,7 +214,7 @@ Effizientere Suche bei bekannter Verteilung (hier expo.)
     Sei beispielsweise ein Array ``a`` mit folgenden Werten geben (Auszug):
 
     .. csv-table::
-        :header: "x", "y"
+        :header: "index i", "a[i]"
         :widths: 10, 10
 
         0, 0
@@ -283,22 +255,20 @@ Approximation der Verteilung
 
     Wenn wir die Verteilung der Werte kennen, können wir effizientere Algorithmen entwickeln.
 
-.. container:: incremental
-
-    .. rubric:: Beispiel:
+.. example:: 
+    :class: incremental
 
     Wenn wir wissen, dass die Werte quadratisch verteilt sind (``Array[10] a = { 1, 4, 9,16, ..., 100 }``), und wir zum Beispiel wissen, dass der kleinste Wert im Array :math:`1` und der größte Wert :math:`100` (an Stelle/mit Index :math:`10`) ist, den wir im Array gespeichert haben, dann macht es „keinen“ Sinn den Wert :math:`85` oder :math:`5` in der Mitte zu suchen! (:math:`85` findet sich vermutlich an Stelle :math:`9 = \lfloor\sqrt{85}\rfloor`).
 
 
 
-.. class:: smaller-slide-title
 
-Modellierung durch Interpolation: hier Lagrange-Polynome
+Interpolation mit Lagrange-Polynomen
 --------------------------------------------------------
 
-.. stack:: 
+.. deck:: 
 
-    .. layer::
+    .. card::
 
         Speichert unser Array kardinal skalierte Daten, so können diese modelliert werden. Das einfachste Prinzip ist die Polynominterpolation mittels Lagrange-Polynomen.
 
@@ -308,9 +278,9 @@ Modellierung durch Interpolation: hier Lagrange-Polynome
 
             p(x_i) = y_i \quad \text{für alle } i = 1, \dots, n
 
-    .. layer:: incremental
+    .. card:: 
 
-        .. admonition:: Satz
+        .. theorem:: 
 
             Das Lagrange-Interpolationspolynom :math:`p(x)` wird als Summe von Lagrange-Basispolynomen :math:`l_i(x)` aufgebaut: 
 
@@ -324,42 +294,36 @@ Modellierung durch Interpolation: hier Lagrange-Polynome
 
                 l_i(x) = \prod_{\substack{j= 1 \\ j \neq i}}^{n} \frac{x - x_j}{x_i - x_j}
 
-    .. layer:: incremental
+    .. card::
 
         Sind :math:`n` Tupel :math:`(x_n ,y_n ) ∈ \mathbb{R}^2` reeller Zahlen gegeben mit :math:`x_l \neq x_m` für :math:`l  \neq m`. 
         
         Das Lagrange-Interpolationspolynom hat dann höchstens den Grad :math:`n-1` und es gilt :math:`p(x_i ) = y_i` für alle :math:`i= 1,...,n`.
 
-    .. layer:: incremental
+    .. card::
 
-        .. rubric:: Beispiel
+        .. example::
 
-        Gegeben sein die zwei Punkte: :math:`(x_1, y_1) = (1, 2)` und :math:`(x_2, y_2) = (3, 4)`.
+            Gegeben sein die zwei Punkte: :math:`(x_1, y_1) = (1, 2)` und :math:`(x_2, y_2) = (3, 4)`.
 
-        Das Lagrange-Polynom :math:`p(x)` wäre dann:
+            Das Lagrange-Polynom :math:`p(x)` wäre dann:
 
-        1. \
-           
-           .. math::
+            1. .. math::
    
                 l_1(x) = \frac{x - x_2}{x_1 - x_2} = \frac{x - 3}{1 - 3} = \frac{3 - x}{2}
            
-        2. \
-           
-           .. math::
+            2. .. math::
    
                 l_2(x) = \frac{x - x_1}{x_2 - x_1} = \frac{x - 1}{3 - 1} = \frac{x - 1}{2}
            
-        3. \
-           
-           .. math::
+            3. .. math::
    
                 p(x) = y_1 \cdot l_1(x) + y_2 \cdot l_2(x) = 2 \cdot \frac{3 - x}{2} + 4 \cdot \frac{x - 1}{2} = x + 1
            
 
-        Nach Ausmultiplizieren und Zusammenfassen ergibt das ein Polynom, das durch beide Punkte verläuft.
+            Nach Ausmultiplizieren und Zusammenfassen ergibt das ein Polynom, das durch beide Punkte verläuft.
 
-    .. layer:: incremental
+    .. card:: 
 
         Wenn zwei Punkte gegeben sind, ist das Lagrange Polynom somit:
 
@@ -386,7 +350,7 @@ Modellierung durch Interpolation: hier Lagrange-Polynome
 
 
 
-.. class:: integrated-exercise
+.. class:: exercises
 
 Übung
 --------    
@@ -500,42 +464,40 @@ Modellierung durch Interpolation: hier Lagrange-Polynome
 Interpolierende Suche - lineare Approximation
 --------------------------------------------------------
 
-.. rubric:: Beispiel
+.. example::
+    :class: dd-margin-left-4em
 
-:Gegeben: Vom Array :java:`a` sei bekannt: :java:`a[1] = 0`, :java:`a[20] = 30` und :java:`a[40] = 120`.
+    :Gegeben: Vom Array :java:`a` sei bekannt: :java:`a[1] = 0`, :java:`a[20] = 30` und :java:`a[40] = 120`.
 
-:Frage: Ist der Wert ``50`` im Array enthalten?
+    :Frage: Ist der Wert ``50`` im Array enthalten?
 
-.. incremental:: 
+    .. incremental:: 
 
-    .. note::
-        :class: far-smaller margin-left-1em incremental
+        .. note:: 
+            :class: width-30 s-font-size-80
 
-        Wir möchten die Position des Wertes 50 im Array abschätzen! Deswegen sind im linearen Modell die Paare :math:`(x_1,y1) = (30,20)` und :math:`(x_2,y_2) = (120,40)` zu wählen. D. h. die Indizes sind unsere y-Werte. 
+            Wir möchten die Position des Wertes 50 im Array abschätzen! Deswegen sind im linearen Modell die Paare :math:`(x_1,y1) = (30,20)` und :math:`(x_2,y_2) = (120,40)` zu wählen. D. h. die Indizes sind unsere y-Werte. 
 
-    :Lösung: Das Lagrangepolynom :math:`p(x)` mit :math:`p(30) = 20` und :math:`p(120) = 40` lautet:
-
-        .. math::
-
-            p(x) = 20· \frac{x−120}{30−120} + 40· \frac{x−30}{120−30}
-
-        .. incremental::
-
-            Für den gesuchten Wert ``50`` ergibt sich als zu untersuchende Position:
+        :Lösung: Das Lagrangepolynom :math:`p(x)` mit :math:`p(30) = 20` und :math:`p(120) = 40` lautet:
 
             .. math::
 
-                p(50) = 20· \frac{50−120}{30−120} + 40· \frac{50−30}{120−30} = \frac{220}{9} \approx 24
+                p(x) = 20· \frac{x−120}{30−120} + 40· \frac{x−30}{120−30}
 
-.. supplemental::
+            .. incremental::
 
-    - Eine binäre Suche würde in diesem Fall mit der Position :math:`{40+20 \over 2} = 30` beginnen.
+                Für den gesuchten Wert ``50`` ergibt sich als zu untersuchende Position:
 
-    - \
-    
-      .. hint::
-        :class: smaller
+                .. math::
 
+                    p(50) = 20· \frac{50−120}{30−120} + 40· \frac{50−30}{120−30} = \frac{220}{9} \approx 24
+
+.. supplemental:: 
+
+    Eine binäre Suche würde in diesem Fall mit der Position :math:`{40+20 \over 2} = 30` beginnen.
+
+    .. hint::
+      
         Das Lagrangepolynom kann per Konstruktion die Position der Werte :math:`30` und :math:`120` perfekt bestimmen:
 
         .. math::
@@ -546,19 +508,19 @@ Interpolierende Suche - lineare Approximation
 
 
 
-Interpolierende Suche - quadratische Approximation
+Interpolierende Suche - quadratische Approxi.
 --------------------------------------------------------
 
-.. rubric:: Beispiel
+.. example:: 
+    :class: dd-margin-left-4em
 
-:Gegeben: Vom Array :java:`a` sei bekannt: :java:`a[1] = 0`, :java:`a[20] = 30` und :java:`a[40] = 120`.
+    :Gegeben: Vom Array :java:`a` sei bekannt: :java:`a[1] = 0`, :java:`a[20] = 30` und :java:`a[40] = 120`.
 
-:Frage: Ist der Wert ``50`` im Array enthalten?
+    :Frage: Ist der Wert ``50`` im Array enthalten?
 
-.. incremental:: 
+    .. incremental:: 
 
-    :Lösung: :math:`p(x)` mit :math:`p(0) = 1`,  :math:`p(30) = 20` und :math:`p(120) = 40` lautet:
-
+        :Lösung: :math:`p(x)` mit :math:`p(0) = 1`,  :math:`p(30) = 20` und :math:`p(120) = 40` lautet:
 
         .. math::
 
@@ -581,15 +543,14 @@ Interpolierende Suche - quadratische Approximation
 Interpolierende Suche - Vergleich
 --------------------------------------------------------
 
-.. stack::
+.. deck::
 
-    .. layer::
+    .. card::
 
         .. image:: images/lagrange/comparison.svg
-            :width: 85%
             :align: center
 
-    .. layer:: incremental
+    .. card:: 
 
         - Auf gleichverteilten Daten hat die lineare Interpolationssuche O(log log n).
         - Auf anderen Verteilungen ist lineare Interpolation oft schlechter als binäre Suche.
@@ -660,7 +621,7 @@ Exponentielle Suche im sortierten (unbeschränkten) *Array*
 
 
 
-.. class:: integrated-exercise
+.. class:: exercises
 
 Übung
 --------
@@ -721,7 +682,7 @@ Exponentielle Suche im sortierten (unbeschränkten) *Array*
 
 
 
-.. class:: integrated-exercise
+.. class:: exercises
 
 Übung
 --------
@@ -733,7 +694,7 @@ Exponentielle Suche im sortierten (unbeschränkten) *Array*
     Testen Sie den Algorithmus mit folgenden Arrays:
 
     .. code:: python
-        :class: far-smaller copy-to-clipboard
+        :class: copy-to-clipboard
 
         A = [1, 3, 5, 7, 9, 11, 13, 15] # linear verteilt (2x-1)
 
@@ -754,7 +715,7 @@ Exponentielle Suche im sortierten (unbeschränkten) *Array*
             :number-lines: 
 
 
-.. class:: integrated-exercise
+.. class:: exercises
 
 Übung
 -------------------
@@ -806,6 +767,7 @@ Exponentielle Suche im sortierten (unbeschränkten) *Array*
             :start-after: # run_exponential_search
 
 
+
 .. class:: new-section transition-move-to-top
 
 Selbstanordnende Arrays
@@ -827,14 +789,15 @@ Suchen auf Arrays mit spezieller Ordnung
   - Die Verteilung wird durch Abzählen angenähert, da sie nicht bekannt ist. Darauf basierend werden die Werte entsprechend sortiert.
 
 
+
 Strategien zur Anordnung
 --------------------------------------------------------
 
-.. stack:: invisible
+.. deck:: 
 
-    .. layer:: 
+    .. card:: 
 
-        .. admonition:: Definition 
+        .. definition::
             
             Ein Array A ist gemäß **frequency count** oder **FC-Regel** sortiert, wenn für alle Werte gilt, dass :math:`c(A[k]) \geq c(A[j])` wenn :math:`k <j` und :math:`c(x)` die realisierte Häufigkeit des Wertes :math:`x` darstellt.
 
@@ -843,15 +806,15 @@ Strategien zur Anordnung
 
             Es wird typischerweise lokal getauscht, um die Ordnung herzustellen.
 
-    .. layer:: incremental
+    .. card:: 
 
-        .. admonition:: Definition 
+        .. definition:: 
             
             Ein Array A ist gemäß **move to front** oder nach der **MF-Regel** sortiert, wenn bei Auftritt eines Wertes :math:`A[k]` in der Folge mit der ersten Position :math:`A[1]` oder :math:`A[0]` vertauscht wird, sollte der Wert noch nicht an der ersten Stelle stehen.
 
-    .. layer:: incremental
+    .. card:: 
 
-        .. admonition:: Definition 
+        .. definition::
             
             Ein Array A ist gemäß **transpose** oder nach der **T-Regel** sortiert, wenn bei Auftritt eines Wertes :math:`A[k]` in der Folge mit der Position davor :math:`A[k-1]` vertauscht wird, sollte der Wert noch nicht an der ersten Stelle stehen.
 
@@ -865,8 +828,8 @@ Strategien zur Anordnung - Diskussion
 - Die MF-Regel nimmt eher starke Änderungen vor und reagiert schnell.
 - Die T-Regel nimmt eher schwache Änderungen vor und ist stabiler.
 
-.. admonition:: Zusammenfassung
-    :class: conclusion incremental
+.. summary::
+    :class: incremental
 
     Die Bewertung sollte an Hand der tatsächlichen Daten erfolgen:
 
@@ -874,7 +837,7 @@ Strategien zur Anordnung - Diskussion
     - Die MF-Regel ist für sich ändernde Verteilungen sinnvoller, die T-Regel für stabilere Situationen.
 
 
-.. class:: integrated-exercise transition-flip
+.. class:: exercises transition-flip
 
 Übung
 --------
@@ -917,7 +880,7 @@ Strategien zur Anordnung - Diskussion
 
 
 
-.. class:: integrated-exercise
+.. class:: exercises
 
 Übung
 --------
@@ -968,7 +931,7 @@ Textsuche
 
 
 
-.. class:: center-child-elements
+.. class:: center-content
 
 Arrays und Textsuche
 --------------------------------------------------------
@@ -984,12 +947,12 @@ Einfache Textsuche
 
 .. To generate strike-through unicode letters: https://yaytext.com/strike/
 
-.. stack:: 
+.. deck:: 
 
-    .. layer:: 
+    .. card:: 
 
         .. note:: 
-            :class: smaller incremental
+            :class: width-40 incremental
 
             Die Laufzeit der einfachen Textsuche kann asymptotisch durch :math:`O(n·m)` abgeschätzt werden.
 
@@ -1008,7 +971,7 @@ Einfache Textsuche
                             return i // Found at i
                 return nil
 
-    .. layer:: incremental
+    .. card:: 
 
         .. rubric:: Beispiel bei einfacher Suche nach ``aaab`` in ``aaaaaaaab``:
 
@@ -1043,9 +1006,9 @@ Knuth-Morris-Pratt Verfahren - Grundlagen
             n̲ = "n\u0332"
             n̅ = "n\u0305"
 
-.. stack::
+.. deck::
 
-    .. layer:: 
+    .. card:: 
 
         Das Verfahren von Knuth-Morris-Pratt vermeidet unnötige Vergleiche, da es zunächst die Suchwortteile auf den größten Rand, also das größte Prefix, das auch Postfix ist, untersucht.
 
@@ -1058,7 +1021,7 @@ Knuth-Morris-Pratt Verfahren - Grundlagen
             
             Für :math:`k <n` werden :math:`p^{(k)}` und :math:`q^{(k)}` auch echte Prä- und Postfixe genannt.
 
-    .. layer:: incremental
+    .. card:: 
 
         .. rubric:: Beispiel/Idee
 
@@ -1081,7 +1044,7 @@ Knuth-Morris-Pratt Verfahren - Grundlagen
                 Wie weit kann man also das Muster im Allgemeinen verschoben werden ohne ein Vorkommen zu übersehen?
 
 
-    .. layer:: incremental
+    .. card:: 
 
         .. rubric:: Beispiel/Idee
 
@@ -1103,9 +1066,7 @@ Knuth-Morris-Pratt Verfahren - Grundlagen
 
                 Wie weit wir das Muster verschieben können, hängt also vom Rand des Teils des Musters ab, der bereits übereinstimmt.
 
-
-
-    .. layer:: incremental
+    .. card:: 
 
             .. rubric:: Beispiel
 
@@ -1121,44 +1082,39 @@ Knuth-Morris-Pratt Verfahren - Grundlagen
 
             Das bedeutet, dass wenn :math:`aufkauf` erkannt wurde, die letzten drei Buchstaben schon den nächsten Treffer einleiten können, wie beispielsweise in :math:`aufkaufkauf`.
 
-
-    .. layer:: incremental
+    .. card:: 
 
         Das KMP-Verfahren fängt nicht immer von vorne an, sondern prüft, ob ein Rand eines Präfixes :math:`- ε` ausgenutzt werden kann. Dazu werden die entsprechenden größten Ränder bestimmt.
 
-        .. container:: two-columns incremental
+        .. class:: columns incremental-list
 
-            .. container:: column
+        - .. rubric:: Beispiel: ananas
 
-                .. rubric:: Beispiel: ananas
+          .. csv-table::
+            :header: "Präfixe :math:`\\setminus \\{ε\\}`", "Größter Rand", "Länge des Randes"
+            :class: width-40
 
-                .. csv-table::
-                    :header: "Präfixe :math:`\\setminus \\{ε\\}`", "Größter Rand", "Länge des Randes"
-                    :class: smaller
-
-                    a, ε, 0
-                    an, ε, 0
-                    a̲na̅, a, 1
-                    a̲n̲a̅n̅, an, 2
-                    a̲n̲a̲̅n̅a̅, ana, 3
-                    ananas, ε , 0
+            a, ε, 0
+            an, ε, 0
+            a̲na̅, a, 1
+            a̲n̲a̅n̅, an, 2
+            a̲n̲a̲̅n̅a̅, ana, 3
+            ananas, ε , 0
 
 
-            .. container:: column
+        - .. rubric:: Beispiel: axaaxax
 
-                .. rubric:: Beispiel: axaaxax
+          .. csv-table::
+            :header: "Präfixe :math:`\\setminus \\{ε\\}`", "Größter Rand", "Länge des Randes"
+            :class: width-40
 
-                .. csv-table::
-                    :header: ":math:`Präfixe \\setminus \\{ε\\}`", "Größter Rand", "Länge des Randes"
-                    :class: smaller
-
-                    a, ε, 0
-                    ax, ε, 0
-                    a̲xa̅, a, 1
-                    a̲xaa̅, a, 1
-                    a̲x̲aa̅x̅, ax, 2
-                    a̲x̲a̲a̅x̅a̅, axa, 3
-                    a̲x̲aaxa̅x̅, ax , 2
+            a, ε, 0
+            ax, ε, 0
+            a̲xa̅, a, 1
+            a̲xaa̅, a, 1
+            a̲x̲aa̅x̅, ax, 2
+            a̲x̲a̲a̅x̅a̅, axa, 3
+            a̲x̲aaxa̅x̅, ax , 2
 
 
 .. supplemental::
@@ -1167,7 +1123,7 @@ Knuth-Morris-Pratt Verfahren - Grundlagen
     Teil einen Rand hat, beim Abgleich des Musters an einer späteren Stelle - basierend auf der Größe des Randes - weitermachen können. Wir müssen also nicht immer das ganze Muster von vorne anfangen zu vergleichen.
 
 
-.. class:: integrated-exercise transition-fade
+.. class:: exercises transition-fade
 
 Übung
 --------
@@ -1249,9 +1205,9 @@ Knuth-Morris-Pratt Verfahren - Grundlagen
 Knuth-Morris-Pratt Verfahren
 ------------------------------------------------
 
-.. stack::
+.. deck::
 
-    .. layer:: incremental
+    .. card:: 
 
         .. code:: pascal
             :number-lines:
@@ -1274,7 +1230,7 @@ Knuth-Morris-Pratt Verfahren
 
         Komplexität: :math:`O(m)`
 
-    .. layer:: incremental
+    .. card:: 
 
         .. code:: pascal
             :number-lines:
@@ -1318,24 +1274,24 @@ Gesucht wird ``ananas`` in ``saansanananas``
         
     ::
 
-                s a a n s a n a n a n a s
-        i       ⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯
-        1       a̶ 
+           s a a n s a n a n a n a s
+        i  ⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯
+        1  a̶ 
         ...
-        3         a n̶
+        3    a n̶
         ...
-        5           a n a̶
+        5      a n a̶
         ...
-        11                a n a n a s̶       Beim Auftreten des Mismatch (Zeile 7) ist 
-        ...                                 q = 5 und wird auf p[5] = 3 (Zeile 8) gesetzt
-        13                    a n a n a s
+        11           a n a n a s̶       Beim Auftreten des Mismatch (ln 7) ist 
+        ...                            q=5 und wird auf p[5]=3 (ln 8) gesetzt
+        13               a n a n a s
 
-.. container:: rounded-corners box-shadow far-smaller padding-1em margin-top-1em
+.. remark:: 
 
     Dargestellt sind die Fälle, in denen ein Mismatch auftritt. ``i`` ist der Index des aktuellen Zeichen im Text, das mit dem Muster verglichen wird. 
 
 
-.. class:: integrated-exercise transition-fade
+.. class:: exercises transition-fade
 
 Übung
 --------
@@ -1414,11 +1370,11 @@ Boyer-Moore-Algorithmus (vereinfacht)
 ------------------------------------------------
 
 
-.. stack::
+.. deck::
 
-    .. layer:: 
+    .. card:: 
 
-        .. admonition:: Beobachtung
+        .. observation:: 
 
             Häufig ist das Alphabet des Textes größer als das des Musters. 
             
@@ -1429,7 +1385,7 @@ Boyer-Moore-Algorithmus (vereinfacht)
               Viele andere Algorithmen führen die Vergleiche von links nach rechts durch.
             - Der Boyer-Moore-Algorithmus nutzt dies aus, indem er die Verschiebung des Musters anhand des letzten Zeichens des Musters und des Textes vornimmt.
 
-    .. layer:: incremental
+    .. card:: 
 
         Wird beispielsweise das Wort :java:`Banane` im Text :java:`Orangen,␣Ananas␣und␣Bananen` gesucht, so wird zunächst die Sprungtabelle für das verwendete Alphabet in Bezug auf das Suchwort (:java:`Banane` mit Länge 6) bestimmt:
 
@@ -1439,7 +1395,7 @@ Boyer-Moore-Algorithmus (vereinfacht)
             Zeichen im Text,  ␣, ",", A, B, O, a, d, e, g, n, r, s, u
             Sprung, 6, 6, 6, 5, 6, 2, 6, 0, 6, 1, 6, 6, 6
 
-    .. layer:: incremental
+    .. card:: 
 
         .. combinbing strike through: \u0336; combining underline: \u0332
 
@@ -1456,11 +1412,11 @@ Boyer-Moore-Algorithmus (vereinfacht)
                                                     B̲ a̲ n̲ a̲ n̲ e̲
                                                       B a n a n e̶̲
 
-        .. container:: margin-top-1em slightly-more-smaller
+        .. remark::
 
             Unterschrichen sind die durchgeführten Vergleiche. Die Verschiebung des Musters erfolgt anhand des letzten Zeichens des Musters und des Textes, dass nicht übereinstimmt. Dabei ist die Verschiebung durch das Zeichen des Textes gegeben, das nicht mit dem Muster übereinstimmt.
 
-    .. layer:: incremental
+    .. card:: 
 
         .. rubric:: Komplexität
 
@@ -1471,7 +1427,8 @@ Boyer-Moore-Algorithmus (vereinfacht)
     Bei der Sprungtabelle handelt es sich um eine Tabelle, die *für jedes Zeichen des Alphabets des Textes* die Verschiebung des Musters angibt, wenn das Zeichen im Text mit dem Muster nicht übereinstimmt. Die Zeichen :java:`A`, :java:`O`, :java:`d`, :java:`g`, :java:`r`, :java:`s`, :java:`u`, :java:`,` und das Leerzeichen haben die größte Verschiebung, da sie nicht im Muster vorkommen. Das Zeichen :java:`e` hat die kleinste Verschiebung, da es das letzte Zeichen des Musters ist. Das Zeichen :java:`n` hat eine Verschiebung von 1, da es im Muster  als vorletztes Zeichen vorkommt, das Zeichen :java:`a` hat eine Verschiebung von 2, da das späteste Vorkommen an drittletzer Stelle ist, und das Zeichen :java:`B` hat eine Verschiebung von 5, da es nur einmal vorkommt und das erste Zeichen des Musters ist.
 
 
-.. class:: integrated-exercise transition-fade
+
+.. class:: exercises transition-fade
 
 Übung - Boyer-Moore-Algorithmus
 ------------------------------------------
@@ -1572,27 +1529,26 @@ Suche nach dem n-ten Element - Einführung
 Suche nach dem n-ten Element mittels Quickselect
 ---------------------------------------------------------------------
 
-        .. code:: pascal
-            :number-lines:
-            :class: far-smaller
+.. code:: pascal
+    :number-lines:
 
-            Algorithm Quickselect(A,k)    // gesucht ist das k größte Element
-                if length(A) == 1 then return A[0]
-                pivot := A[length(A)-1]   // ein bel. Element als Pivot (hier das letzte)
-                lows := []                // Elemente kleiner als Pivot
-                highs := []               // Elemente größer als Pivot 
-                pivotsCount := 0          // Anzahl der Pivot-Elemente
-                for x in A do             // Partitionierung ...
-                    if x < pivot then lows.append(x)
-                    else if x > pivot then highs.append(x)
-                    else pivotsCount := pivotsCount + 1
-    
-                if k < length(lows) then 
-                    return Quickselect(lows, k)
-                else if k < length(lows) + pivotsCount then
-                    return pivot          // das k-te Element ist ein Pivot-Element
-                else
-                    return Quickselect(highs, k - len(lows) -  pivotsCount)
+    Algorithm Quickselect(A,k)    // gesucht ist das k größte Element
+        if length(A) == 1 then return A[0]
+        pivot := A[length(A)-1]   // ein bel. Element als Pivot (hier das letzte)
+        lows := []                // Elemente kleiner als Pivot
+        highs := []               // Elemente größer als Pivot 
+        pivotsCount := 0          // Anzahl der Pivot-Elemente
+        for x in A do             // Partitionierung ...
+            if x < pivot then lows.append(x)
+            else if x > pivot then highs.append(x)
+            else pivotsCount := pivotsCount + 1
+
+        if k < length(lows) then 
+            return Quickselect(lows, k)
+        else if k < length(lows) + pivotsCount then
+            return pivot          // das k-te Element ist ein Pivot-Element
+        else
+            return Quickselect(highs, k - len(lows) -  pivotsCount)
 
 .. supplemental::
 
@@ -1624,7 +1580,7 @@ Beispielanwendung: Bestimmung des Medians
 
 
 
-.. class:: integrated-exercise
+.. class:: exercises
 
 Übung
 --------
@@ -1658,6 +1614,8 @@ Beispielanwendung: Bestimmung des Medians
         Median: 23
 
 
+
+.. class:: exercises
 
 Übung
 --------

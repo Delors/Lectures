@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!-- Generator: DataGraph - https://www.visualdatatools.com/DataGraph/index.html  --><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="556" height="334" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"  viewBox="0 0 834.5 501">
+<g>
+  <!-- Background -->
+  <g id="Background">
+    <!-- Below Grid -->
+    <g id="Below_Grid">
+      <!-- Commands -->
+      <g id="Commands">
+        <!-- X = 7.01,9 -->
+        <g id="X_7_01_9">
+          <path d="M 655.526 439.5 L 811.1 439.5 L 811.1 27.5 L 655.526 27.5 L 655.526 439.5 z "
+            fill="rgb(229,161,165)" opacity="0.5" stroke="none"/>
+        </g>
+      </g>
+    </g>
+    <defs>
+      <clipPath id="clipPath">
+        <rect x="107.5" y="27.5" width="703.6" height="412"/>
+      </clipPath>
+    </defs>
+    <!-- Grid -->
+    <g id="Grid" clip-path="url(#clipPath)">
+      <path d="M 185.678 439.5 L 185.678 27.5 M 263.856 439.5 L 263.856 27.5 M 342.033 439.5 L 342.033 27.5 
+               M 420.211 439.5 L 420.211 27.5 M 498.389 439.5 L 498.389 27.5 M 576.567 439.5 L 576.567 27.5 
+               M 654.744 439.5 L 654.744 27.5 M 732.922 439.5 L 732.922 27.5 "
+        stroke="black" fill="none" stroke-width="0.5"/>
+    </g>
+  </g>
+  <!-- Commands -->
+  <g id="Commands_2">
+    <!-- 1. lineare Interpolation -->
+    <g id="1_lineare_Interpolation">
+      <path d="M 107.5 439.5 L 665.913 27.5 "
+        stroke="rgb(228,28,28)" stroke-dasharray="0.03,4.8,9.6,4.8" stroke-linecap="butt" fill="none" stroke-width="3"/>
+    </g>
+    <!-- 2. lineare Interpolation -->
+    <g id="2_lineare_Interpolation">
+      <path d="M 107.5 439.5 L 758.981 27.5 "
+        stroke="rgb(55,126,184)" stroke-dasharray="9.6,6" stroke-linecap="butt" fill="none" stroke-width="3"/>
+    </g>
+    <!-- Legend -->
+    <g id="Legend">
+      <defs>
+        <clipPath id="clipPath2">
+          <rect x="114.1" y="36.5" width="404" height="91.8"/>
+        </clipPath>
+      </defs>
+      <g clip-path="url(#clipPath2)">
+        <rect x="114.1" y="36.5" width="404" height="91.8" fill="rgb(255,253,234)" opacity="0.820419" stroke="none"/>
+      </g>
+      <rect x="114.1" y="36.5" width="404" height="91.8" stroke="black" fill="none" stroke-width="0.5"/>
+      <defs>
+        <clipPath id="clipPath3">
+          <rect x="114.1" y="36.5" width="404" height="91.8"/>
+        </clipPath>
+      </defs>
+      <g clip-path="url(#clipPath3)">
+        <defs>
+          <clipPath id="clipPath4">
+            <rect x="121.1" y="40.82" width="22" height="18.36"/>
+          </clipPath>
+        </defs>
+        <g clip-path="url(#clipPath4)">
+          <path d="M 121.1 49.5 L 143.1 49.5 "
+            stroke="rgb(228,28,28)" stroke-dasharray="0.03,4.8,9.6,4.8" stroke-dashoffset="17.86" stroke-linecap="butt" fill="none" stroke-width="3"/>
+        </g>
+        <g font-family="Noto Sans Display" font-size="18" fill="black">
+          <text x="150.1" y="56.4556">1. lineare Interpolation</text>
+        </g>
+        <defs>
+          <clipPath id="clipPath5">
+            <rect x="121.1" y="62.42" width="22" height="18.36"/>
+          </clipPath>
+        </defs>
+        <g clip-path="url(#clipPath5)">
+          <path d="M 121.1 71.5 L 143.1 71.5 "
+            stroke="rgb(55,126,184)" stroke-dasharray="9.6,6" stroke-dashoffset="9.4" stroke-linecap="butt" fill="none" stroke-width="3"/>
+        </g>
+        <g font-family="Noto Sans Display" font-size="18" fill="black">
+          <text x="150.1" y="78.0556">2. lineare Interpolation</text>
+        </g>
+        <g>
+          <circle cx="132.5" cy="93.5" r="6" fill="rgb(228,28,28)" stroke="none"/>
+          <circle cx="132.5" cy="93.5" r="6" stroke="black" fill="none" stroke-width="3"/>
+        </g>
+        <g font-family="Noto Sans Display" font-size="18" fill="black">
+          <text x="150.1" y="99.6556">Werte im Array</text>
+        </g>
+        <g>
+          <path d="M 126.5 120.5 L 138.5 120.5 L 138.5 108.5 L 126.5 108.5 L 126.5 120.5 z "
+            fill="rgb(255,255,51)" stroke="none"/>
+          <path d="M 126.5 120.5 L 138.5 120.5 L 138.5 108.5 L 126.5 108.5 L 126.5 120.5 z "
+            stroke="black" fill="none" stroke-width="3"/>
+        </g>
+        <g font-family="Noto Sans Display" font-size="18" fill="black">
+          <text x="150.1" y="121.256">
+            gesuchter Wert im Verhältnis zur Interpolation
+          </text>
+        </g>
+      </g>
+    </g>
+    <!-- Werte im Array -->
+    <g id="Werte_im_Array">
+      <g>
+        <circle cx="107.5" cy="439.5" r="6" fill="rgb(228,28,28)" stroke="none"/>
+        <circle cx="107.5" cy="439.5" r="6" stroke="black" fill="none" stroke-width="3"/>
+        <circle cx="185.678" cy="431.26" r="6" fill="rgb(228,28,28)" stroke="none"/>
+        <circle cx="185.678" cy="431.26" r="6" stroke="black" fill="none" stroke-width="3"/>
+        <circle cx="263.856" cy="406.54" r="6" fill="rgb(228,28,28)" stroke="none"/>
+        <circle cx="263.856" cy="406.54" r="6" stroke="black" fill="none" stroke-width="3"/>
+        <circle cx="342.033" cy="365.34" r="6" fill="rgb(228,28,28)" stroke="none"/>
+        <circle cx="342.033" cy="365.34" r="6" stroke="black" fill="none" stroke-width="3"/>
+        <circle cx="420.211" cy="307.66" r="6" fill="rgb(228,28,28)" stroke="none"/>
+        <circle cx="420.211" cy="307.66" r="6" stroke="black" fill="none" stroke-width="3"/>
+        <circle cx="498.389" cy="233.5" r="6" fill="rgb(228,28,28)" stroke="none"/>
+        <circle cx="498.389" cy="233.5" r="6" stroke="black" fill="none" stroke-width="3"/>
+        <circle cx="576.567" cy="142.86" r="6" fill="rgb(228,28,28)" stroke="none"/>
+        <circle cx="576.567" cy="142.86" r="6" stroke="black" fill="none" stroke-width="3"/>
+        <circle cx="654.744" cy="35.74" r="6" fill="rgb(228,28,28)" stroke="none"/>
+        <circle cx="654.744" cy="35.74" r="6" stroke="black" fill="none" stroke-width="3"/>
+      </g>
+      <g>
+        <g font-family="Noto Sans Display" font-size="18" fill="black">
+          <text x="102.489" y="434.5">0</text>
+        </g>
+        <g font-family="Noto Sans Display" font-size="18" fill="black">
+          <text x="180.667" y="426.26">4</text>
+        </g>
+        <g font-family="Noto Sans Display" font-size="18" fill="black">
+          <text x="248.834" y="401.54">16</text>
+        </g>
+        <g font-family="Noto Sans Display" font-size="18" fill="black">
+          <text x="327.012" y="360.34">36</text>
+        </g>
+        <g font-family="Noto Sans Display" font-size="18" fill="black">
+          <text x="405.19" y="302.66">64</text>
+        </g>
+        <g font-family="Noto Sans Display" font-size="18" fill="black">
+          <text x="473.357" y="228.5">100</text>
+        </g>
+        <g font-family="Noto Sans Display" font-size="18" fill="black">
+          <text x="551.534" y="137.86">144</text>
+        </g>
+        <g font-family="Noto Sans Display" font-size="18" fill="black">
+          <text x="629.712" y="30.74">196</text>
+        </g>
+      </g>
+    </g>
+    <!-- gesuchter Wert im Verhältnis zur Interpolation -->
+    <g id="gesuchter_Wert_im_Verh_ltnis_zur_Interpolation">
+      <g>
+        <path d="M 733.437 45.86 L 745.437 45.86 L 745.437 33.86 L 733.437 33.86 L 733.437 45.86 z "
+          fill="rgb(255,255,51)" stroke="none"/>
+        <path d="M 733.437 45.86 L 745.437 45.86 L 745.437 33.86 L 733.437 33.86 L 733.437 45.86 z "
+          stroke="black" fill="none" stroke-width="3"/>
+        <path d="M 643.16 45.86 L 655.16 45.86 L 655.16 33.86 L 643.16 33.86 L 643.16 45.86 z "
+          fill="rgb(255,255,51)" stroke="none"/>
+        <path d="M 643.16 45.86 L 655.16 45.86 L 655.16 33.86 L 643.16 33.86 L 643.16 45.86 z "
+          stroke="black" fill="none" stroke-width="3"/>
+      </g>
+    </g>
+  </g>
+  <!-- Foreground -->
+  <g id="Foreground">
+    <!-- Y Axis -->
+    <g id="Y_Axis">
+      <g transform="translate(20.7781,233.5) rotate(-90) translate(-20.7781,-233.5)" font-family="Noto Sans Display" font-size="18" fill="black">
+        <text x="1.93877" y="233.5">Wert</text>
+      </g>
+      <!-- Y Labels -->
+      <g id="Y_Labels">
+        <g font-family="Noto Sans Display" font-size="18" fill="black">
+          <text x="85.8893" y="445.956">0</text>
+        </g>
+        <g font-family="Noto Sans Display" font-size="18" fill="black">
+          <text x="75.8785" y="342.956">50</text>
+        </g>
+        <g font-family="Noto Sans Display" font-size="18" fill="black">
+          <text x="65.8678" y="239.956">100</text>
+        </g>
+        <g font-family="Noto Sans Display" font-size="18" fill="black">
+          <text x="65.8678" y="136.956">150</text>
+        </g>
+        <g font-family="Noto Sans Display" font-size="18" fill="black">
+          <text x="65.8678" y="33.9556">200</text>
+        </g>
+      </g>
+      <path d="M 99.5 439.5 L 107.5 439.5 M 103.5 418.9 L 107.5 418.9 M 103.5 398.3 L 107.5 398.3 M 103.5 377.7 L 107.5 377.7 
+               M 103.5 357.1 L 107.5 357.1 M 99.5 336.5 L 107.5 336.5 M 103.5 315.9 L 107.5 315.9 M 103.5 295.3 L 107.5 295.3 
+               M 103.5 274.7 L 107.5 274.7 M 103.5 254.1 L 107.5 254.1 M 99.5 233.5 L 107.5 233.5 M 103.5 212.9 L 107.5 212.9 
+               M 103.5 192.3 L 107.5 192.3 M 103.5 171.7 L 107.5 171.7 M 103.5 151.1 L 107.5 151.1 M 99.5 130.5 L 107.5 130.5 
+               M 103.5 109.9 L 107.5 109.9 M 103.5 89.3 L 107.5 89.3 M 103.5 68.7 L 107.5 68.7 M 103.5 48.1 L 107.5 48.1 
+               M 99.5 27.5 L 107.5 27.5 "
+        stroke="black" fill="none" stroke-width="0.5"/>
+    </g>
+    <!-- X Axis -->
+    <g id="X_Axis">
+      <g font-family="Noto Sans Display" font-size="18" fill="black">
+        <text x="436.983" y="491">Index</text>
+      </g>
+      <g>
+        <g font-family="Noto Sans Display" font-size="18" fill="black">
+          <text x="102.495" y="464.284">0</text>
+        </g>
+        <g font-family="Noto Sans Display" font-size="18" fill="black">
+          <text x="180.672" y="464.284">1</text>
+        </g>
+        <g font-family="Noto Sans Display" font-size="18" fill="black">
+          <text x="258.85" y="464.284">2</text>
+        </g>
+        <g font-family="Noto Sans Display" font-size="18" fill="black">
+          <text x="337.028" y="464.284">3</text>
+        </g>
+        <g font-family="Noto Sans Display" font-size="18" fill="black">
+          <text x="415.206" y="464.284">4</text>
+        </g>
+        <g font-family="Noto Sans Display" font-size="18" fill="black">
+          <text x="493.384" y="464.284">5</text>
+        </g>
+        <g font-family="Noto Sans Display" font-size="18" fill="black">
+          <text x="571.561" y="464.284">6</text>
+        </g>
+        <g font-family="Noto Sans Display" font-size="18" fill="black">
+          <text x="649.739" y="464.284">7</text>
+        </g>
+        <g font-family="Noto Sans Display" font-size="18" fill="black">
+          <text x="727.917" y="464.284">8</text>
+        </g>
+        <g font-family="Noto Sans Display" font-size="18" fill="black">
+          <text x="806.095" y="464.284">9</text>
+        </g>
+      </g>
+      <path d="M 107.5 447.5 L 107.5 439.5 M 185.678 447.5 L 185.678 439.5 M 263.856 447.5 L 263.856 439.5 
+               M 342.033 447.5 L 342.033 439.5 M 420.211 447.5 L 420.211 439.5 M 498.389 447.5 L 498.389 439.5 
+               M 576.567 447.5 L 576.567 439.5 M 654.744 447.5 L 654.744 439.5 M 732.922 447.5 L 732.922 439.5 
+               M 811.1 447.5 L 811.1 439.5 M 115.318 443.5 L 115.318 439.5 M 123.136 443.5 L 123.136 439.5 
+               M 130.953 443.5 L 130.953 439.5 M 138.771 443.5 L 138.771 439.5 M 146.589 443.5 L 146.589 439.5 
+               M 154.407 443.5 L 154.407 439.5 M 162.224 443.5 L 162.224 439.5 M 170.042 443.5 L 170.042 439.5 
+               M 177.86 443.5 L 177.86 439.5 M 193.496 443.5 L 193.496 439.5 M 201.313 443.5 L 201.313 439.5 
+               M 209.131 443.5 L 209.131 439.5 M 216.949 443.5 L 216.949 439.5 M 224.767 443.5 L 224.767 439.5 
+               M 232.584 443.5 L 232.584 439.5 M 240.402 443.5 L 240.402 439.5 M 248.22 443.5 L 248.22 439.5 
+               M 256.038 443.5 L 256.038 439.5 M 271.673 443.5 L 271.673 439.5 M 279.491 443.5 L 279.491 439.5 
+               M 287.309 443.5 L 287.309 439.5 M 295.127 443.5 L 295.127 439.5 M 302.944 443.5 L 302.944 439.5 
+               M 310.762 443.5 L 310.762 439.5 M 318.58 443.5 L 318.58 439.5 M 326.398 443.5 L 326.398 439.5 
+               M 334.216 443.5 L 334.216 439.5 M 349.851 443.5 L 349.851 439.5 M 357.669 443.5 L 357.669 439.5 
+               M 365.487 443.5 L 365.487 439.5 M 373.304 443.5 L 373.304 439.5 M 381.122 443.5 L 381.122 439.5 
+               M 388.94 443.5 L 388.94 439.5 M 396.758 443.5 L 396.758 439.5 M 404.576 443.5 L 404.576 439.5 
+               M 412.393 443.5 L 412.393 439.5 M 428.029 443.5 L 428.029 439.5 M 435.847 443.5 L 435.847 439.5 
+               M 443.664 443.5 L 443.664 439.5 M 451.482 443.5 L 451.482 439.5 M 459.3 443.5 L 459.3 439.5 
+               M 467.118 443.5 L 467.118 439.5 M 474.936 443.5 L 474.936 439.5 M 482.753 443.5 L 482.753 439.5 
+               M 490.571 443.5 L 490.571 439.5 M 506.207 443.5 L 506.207 439.5 M 514.024 443.5 L 514.024 439.5 
+               M 521.842 443.5 L 521.842 439.5 M 529.66 443.5 L 529.66 439.5 M 537.478 443.5 L 537.478 439.5 
+               M 545.296 443.5 L 545.296 439.5 M 553.113 443.5 L 553.113 439.5 M 560.931 443.5 L 560.931 439.5 
+               M 568.749 443.5 L 568.749 439.5 M 584.384 443.5 L 584.384 439.5 M 592.202 443.5 L 592.202 439.5 
+               M 600.02 443.5 L 600.02 439.5 M 607.838 443.5 L 607.838 439.5 M 615.656 443.5 L 615.656 439.5 
+               M 623.473 443.5 L 623.473 439.5 M 631.291 443.5 L 631.291 439.5 M 639.109 443.5 L 639.109 439.5 
+               M 646.927 443.5 L 646.927 439.5 M 662.562 443.5 L 662.562 439.5 M 670.38 443.5 L 670.38 439.5 
+               M 678.198 443.5 L 678.198 439.5 M 686.016 443.5 L 686.016 439.5 M 693.833 443.5 L 693.833 439.5 
+               M 701.651 443.5 L 701.651 439.5 M 709.469 443.5 L 709.469 439.5 M 717.287 443.5 L 717.287 439.5 
+               M 725.104 443.5 L 725.104 439.5 M 740.74 443.5 L 740.74 439.5 M 748.558 443.5 L 748.558 439.5 
+               M 756.376 443.5 L 756.376 439.5 M 764.193 443.5 L 764.193 439.5 M 772.011 443.5 L 772.011 439.5 
+               M 779.829 443.5 L 779.829 439.5 M 787.647 443.5 L 787.647 439.5 M 795.464 443.5 L 795.464 439.5 
+               M 803.282 443.5 L 803.282 439.5 "
+        stroke="black" fill="none" stroke-width="0.5"/>
+    </g>
+    <g font-family="Noto Sans Display" font-size="18" fill="black">
+      <text x="274.167" y="20.7781">
+        Potentielle Berechnung von ungültigen Indizes
+      </text>
+    </g>
+    <path d="M 811.1 439.5 L 811.1 27.5 L 107.5 27.5 L 107.5 439.5 L 811.1 439.5 z "
+      stroke="black" stroke-linecap="square" fill="none" stroke-width="0.5"/>
+  </g>
+</g>
+</svg>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?>
 <!-- Generator: DataGraph - https://www.visualdatatools.com/DataGraph/index.html  --><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg width="834.5" height="501" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg width="556" height="334" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 834.5 501" >
 <g>
   <!-- Background -->
   <g id="Background">
@@ -36,7 +36,7 @@
     </g>
     <!-- 6.1x (lineare Approximation) -->
     <g id="6_1x_lineare_Approximation">
-      <g font-family="Helvetica" font-size="18" fill="black">
+      <g font-family="Noto Sans Display" font-size="18" fill="black">
         <text x="207.844" y="221.433">6.1x (lineare Approximation)</text>
       </g>
       <g>
@@ -69,28 +69,28 @@
         <circle cx="107.5" cy="439.5" r="4.5" stroke="black" fill="none" stroke-width="2"/>
       </g>
       <g>
-        <g font-family="Helvetica" font-size="18" fill="black">
+        <g font-family="Noto Sans Display" font-size="18" fill="black">
           <text x="194.897" y="431.925">5,0</text>
         </g>
-        <g font-family="Helvetica" font-size="18" fill="black">
+        <g font-family="Noto Sans Display" font-size="18" fill="black">
           <text x="346.016" y="421.625">25,0</text>
         </g>
-        <g font-family="Helvetica" font-size="18" fill="black">
+        <g font-family="Noto Sans Display" font-size="18" fill="black">
           <text x="453.436" y="395.514">75,7</text>
         </g>
-        <g font-family="Helvetica" font-size="18" fill="black">
+        <g font-family="Noto Sans Display" font-size="18" fill="black">
           <text x="552.173" y="377.85">110,0</text>
         </g>
-        <g font-family="Helvetica" font-size="18" fill="black">
+        <g font-family="Noto Sans Display" font-size="18" fill="black">
           <text x="658.265" y="238.8">380,0</text>
         </g>
-        <g font-family="Helvetica" font-size="18" fill="black">
+        <g font-family="Noto Sans Display" font-size="18" fill="black">
           <text x="765.685" y="25.59">794,0</text>
         </g>
-        <g font-family="Helvetica" font-size="18" fill="black">
+        <g font-family="Noto Sans Display" font-size="18" fill="black">
           <text x="738.83" y="136.058">579,5</text>
         </g>
-        <g font-family="Helvetica" font-size="18" fill="black">
+        <g font-family="Noto Sans Display" font-size="18" fill="black">
           <text x="102.489" y="434.5">0</text>
         </g>
       </g>
@@ -100,36 +100,36 @@
   <g id="Foreground">
     <!-- Y Axis -->
     <g id="Y_Axis">
-      <g transform="translate(20.7781,233.5) rotate(-90) translate(-20.7781,-233.5)" font-family="Helvetica" font-size="18" fill="black">
+      <g transform="translate(20.7781,233.5) rotate(-90) translate(-20.7781,-233.5)" font-family="Noto Sans Display" font-size="18" fill="black">
         <text x="7.7835" y="233.5">f(x)</text>
       </g>
       <!-- Y Labels -->
       <g id="Y_Labels">
-        <g font-family="Helvetica" font-size="18" fill="black">
+        <g font-family="Noto Sans Display" font-size="18" fill="black">
           <text x="85.8893" y="445.956">0</text>
         </g>
-        <g font-family="Helvetica" font-size="18" fill="black">
+        <g font-family="Noto Sans Display" font-size="18" fill="black">
           <text x="65.8678" y="394.456">100</text>
         </g>
-        <g font-family="Helvetica" font-size="18" fill="black">
+        <g font-family="Noto Sans Display" font-size="18" fill="black">
           <text x="65.8678" y="342.956">200</text>
         </g>
-        <g font-family="Helvetica" font-size="18" fill="black">
+        <g font-family="Noto Sans Display" font-size="18" fill="black">
           <text x="65.8678" y="291.456">300</text>
         </g>
-        <g font-family="Helvetica" font-size="18" fill="black">
+        <g font-family="Noto Sans Display" font-size="18" fill="black">
           <text x="65.8678" y="239.956">400</text>
         </g>
-        <g font-family="Helvetica" font-size="18" fill="black">
+        <g font-family="Noto Sans Display" font-size="18" fill="black">
           <text x="65.8678" y="188.456">500</text>
         </g>
-        <g font-family="Helvetica" font-size="18" fill="black">
+        <g font-family="Noto Sans Display" font-size="18" fill="black">
           <text x="65.8678" y="136.956">600</text>
         </g>
-        <g font-family="Helvetica" font-size="18" fill="black">
+        <g font-family="Noto Sans Display" font-size="18" fill="black">
           <text x="65.8678" y="85.4556">700</text>
         </g>
-        <g font-family="Helvetica" font-size="18" fill="black">
+        <g font-family="Noto Sans Display" font-size="18" fill="black">
           <text x="65.8678" y="33.9556">800</text>
         </g>
       </g>
@@ -142,50 +142,50 @@
     </g>
     <!-- X Axis -->
     <g id="X_Axis">
-      <g font-family="Helvetica" font-size="18" fill="black">
+      <g font-family="Noto Sans Display" font-size="18" fill="black">
         <text x="454.5" y="491">x</text>
       </g>
       <g>
-        <g font-family="Helvetica" font-size="18" fill="black">
+        <g font-family="Noto Sans Display" font-size="18" fill="black">
           <text x="102.495" y="464.284">0</text>
         </g>
-        <g font-family="Helvetica" font-size="18" fill="black">
+        <g font-family="Noto Sans Display" font-size="18" fill="black">
           <text x="151.199" y="464.284">10</text>
         </g>
-        <g font-family="Helvetica" font-size="18" fill="black">
+        <g font-family="Noto Sans Display" font-size="18" fill="black">
           <text x="204.909" y="464.284">20</text>
         </g>
-        <g font-family="Helvetica" font-size="18" fill="black">
+        <g font-family="Noto Sans Display" font-size="18" fill="black">
           <text x="258.619" y="464.284">30</text>
         </g>
-        <g font-family="Helvetica" font-size="18" fill="black">
+        <g font-family="Noto Sans Display" font-size="18" fill="black">
           <text x="312.329" y="464.284">40</text>
         </g>
-        <g font-family="Helvetica" font-size="18" fill="black">
+        <g font-family="Noto Sans Display" font-size="18" fill="black">
           <text x="366.039" y="464.284">50</text>
         </g>
-        <g font-family="Helvetica" font-size="18" fill="black">
+        <g font-family="Noto Sans Display" font-size="18" fill="black">
           <text x="419.749" y="464.284">60</text>
         </g>
-        <g font-family="Helvetica" font-size="18" fill="black">
+        <g font-family="Noto Sans Display" font-size="18" fill="black">
           <text x="473.459" y="464.284">70</text>
         </g>
-        <g font-family="Helvetica" font-size="18" fill="black">
+        <g font-family="Noto Sans Display" font-size="18" fill="black">
           <text x="527.169" y="464.284">80</text>
         </g>
-        <g font-family="Helvetica" font-size="18" fill="black">
+        <g font-family="Noto Sans Display" font-size="18" fill="black">
           <text x="580.879" y="464.284">90</text>
         </g>
-        <g font-family="Helvetica" font-size="18" fill="black">
+        <g font-family="Noto Sans Display" font-size="18" fill="black">
           <text x="629.583" y="464.284">100</text>
         </g>
-        <g font-family="Helvetica" font-size="18" fill="black">
+        <g font-family="Noto Sans Display" font-size="18" fill="black">
           <text x="683.957" y="464.284">110</text>
         </g>
-        <g font-family="Helvetica" font-size="18" fill="black">
+        <g font-family="Noto Sans Display" font-size="18" fill="black">
           <text x="737.003" y="464.284">120</text>
         </g>
-        <g font-family="Helvetica" font-size="18" fill="black">
+        <g font-family="Noto Sans Display" font-size="18" fill="black">
           <text x="790.713" y="464.284">130</text>
         </g>
       </g>
@@ -200,7 +200,7 @@
                M 671.454 443.5 L 671.454 439.5 M 725.164 443.5 L 725.164 439.5 M 778.874 443.5 L 778.874 439.5 "
         stroke="black" fill="none" stroke-width="0.5"/>
     </g>
-    <g font-family="Helvetica" font-size="18" fill="black">
+    <g font-family="Noto Sans Display" font-size="18" fill="black">
       <g font-weight="bold">
         <text x="326.304" y="20.7781" font-family="Helvetica-Bold">Approximation von Funktionen</text>
       </g>

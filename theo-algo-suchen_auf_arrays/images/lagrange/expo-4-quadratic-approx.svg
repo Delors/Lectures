@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?>
 <!-- Generator: DataGraph - https://www.visualdatatools.com/DataGraph/index.html  --><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg width="556" height="334" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"  viewBox="0 0 834.5 501">
+<svg width="556" height="334" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"  viewBox="0 0 834.5 501" >
 <g>
   <!-- Background -->
   <g id="Background">
@@ -67,6 +67,72 @@
           fill="black" stroke="none"/>
       </g>
     </g>
+    <!-- Legend -->
+    <g id="Legend">
+      <rect x="115.1" y="33" width="600" height="91.8" stroke="black" fill="none" stroke-width="0.5"/>
+      <defs>
+        <clipPath id="clipPath2">
+          <rect x="115.1" y="33" width="600" height="91.8"/>
+        </clipPath>
+      </defs>
+      <g clip-path="url(#clipPath2)">
+        <defs>
+          <clipPath id="clipPath3">
+            <rect x="122.1" y="37.32" width="22" height="18.36"/>
+          </clipPath>
+        </defs>
+        <g clip-path="url(#clipPath3)">
+          <path d="M 122.1 46.5 L 144.1 46.5 "
+            stroke="rgb(228,28,28)" stroke-dasharray="0.02,4,8,4" stroke-dashoffset="13.04" stroke-linecap="butt" fill="none" stroke-width="2"/>
+        </g>
+        <g font-family="Noto Sans Display" font-size="18" fill="black">
+          <text x="151.1" y="52.9556">
+            6.1x (Beispielhafte lineare Approximation)
+          </text>
+        </g>
+        <defs>
+          <clipPath id="clipPath4">
+            <rect x="122.1" y="58.92" width="22" height="18.36"/>
+          </clipPath>
+        </defs>
+        <g clip-path="url(#clipPath4)">
+          <path d="M 122.1 68.5 L 144.1 68.5 "
+            stroke="rgb(228,28,28)" fill="none" stroke-width="3"/>
+        </g>
+        <g font-family="Noto Sans Display" font-size="18" fill="black">
+          <text x="151.1" y="74.5556">1.0527</text>
+          <text x="206.155" y="66.5544" font-size="14">x</text>
+          <text x="213.155" y="74.5556">
+            -1 (Beispielhafte exponentielle Approximation)
+          </text>
+        </g>
+        <g>
+          <circle cx="133.5" cy="89.5" r="4.5" fill="rgb(228,28,28)" stroke="none"/>
+          <circle cx="133.5" cy="89.5" r="4.5" stroke="black" fill="none" stroke-width="2"/>
+        </g>
+        <g font-family="Noto Sans Display" font-size="18" fill="black">
+          <g font-style="italic">
+            <text x="151.1" y="96.1556" font-family="Helvetica-Oblique">
+              &quot;ausgewählte Werte des aufsteigend sortierten Arrays a[0]...a[130]&quot;
+            </text>
+          </g>
+        </g>
+        <defs>
+          <clipPath id="clipPath5">
+            <rect x="122.1" y="102.12" width="22" height="18.36"/>
+          </clipPath>
+        </defs>
+        <g clip-path="url(#clipPath5)">
+          <path d="M 122.1 111.5 L 144.1 111.5 "
+            stroke="rgb(255,127,0)" stroke-dasharray="0.04,6" stroke-dashoffset="1.1" stroke-linecap="round" fill="none" stroke-width="4"/>
+        </g>
+        <g font-family="Noto Sans Display" font-size="18" fill="black">
+          <text x="151.1" y="117.756">
+            LaGrange Approximation: (20,5), (90,110), (130,794)
+          </text>
+        </g>
+      </g>
+    </g>
     <!-- 1.0527^x-1 -->
     <g id="1_0527_x_1">
       <g font-family="Noto Sans Display" font-size="18" fill="black">
@@ -129,6 +195,20 @@
           <text x="102.489" y="434.5">0</text>
         </g>
       </g>
+    </g>
+    <!-- LaGrange Approximation: (20,5), (90,110), (130,794) -->
+    <g id="LaGrange_Approximation_20_5_90_110_130_794">
+      <path d="M 107.5 320.91 L 115.671 331.788 L 123.85 342.338 L 131.739 352.192 L 139.59 361.687 L 147.342 370.756 
+               L 154.965 379.377 L 162.736 387.863 L 170.302 395.831 L 177.738 403.38 L 185.336 410.804 
+               L 192.662 417.685 L 199.907 424.223 L 207.203 430.539 L 214.305 436.427 L 218.178 439.5 
+               M 530.85 439.5 L 537.279 434.315 L 544.432 428.289 L 551.755 421.853 L 559.094 415.129 
+               L 566.434 408.132 L 573.893 400.742 L 581.485 392.931 L 589.013 384.897 L 596.647 376.458 
+               L 604.315 367.682 L 612.081 358.493 L 620.011 348.793 L 627.818 338.934 L 635.711 328.653 
+               L 643.893 317.66 L 652.003 306.431 L 660.191 294.755 L 668.288 282.877 L 676.781 270.059 
+               L 685.287 256.857 L 693.783 243.304 L 702.377 229.223 L 711.147 214.467 L 719.886 199.378 
+               L 728.719 183.733 L 737.674 167.467 L 746.832 150.414 L 755.956 133.002 L 765.241 114.848 
+               L 774.511 96.2886 L 783.861 77.1296 L 793.322 57.2928 L 802.982 36.5691 L 805.729 30.59 "
+        stroke="rgb(255,127,0)" stroke-dasharray="0.04,6" stroke-linecap="round" fill="none" stroke-width="4"/>
     </g>
   </g>
   <!-- Foreground -->
