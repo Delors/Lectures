@@ -2,7 +2,7 @@
     :version: renaissance
     :lang: de
     :author: Michael Eichberg
-    :keywords: "Hashing", "Hashmaps", "Algorithmen", "Datenstrukturen"
+    :keywords: "Hashing", "Hashmaps", "Algorithmen", "Java", "Python"
     :description lang=de: Hashing und Hashmaps
     :id: lecture-theo-algo-hashing-and-applications
     :first-slide: last-viewed
@@ -21,13 +21,7 @@
 .. role:: appear
 .. role:: eng
 .. role:: ger
-.. role:: dhbw-red
-.. role:: green
-.. role:: the-blue
-.. role:: obsolete
-.. role:: monospaced
 .. role:: copy-to-clipboard
-.. role:: kbd
 .. role:: java(code)
    :language: java
 .. role:: python(code)
@@ -35,7 +29,7 @@
 
 
 
-.. class .. :: animated-symbol 
+.. class:: animated-logo 
 
 Hashing und Hashmaps
 ======================================================
@@ -44,9 +38,9 @@ Hashing und Hashmaps
 
 :Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
 :Kontakt: michael.eichberg@dhbw.de, Raum 149B
-:Version: 1.0
+:Version: 2.0
 
-.. container:: minor
+.. container:: peripheral
 
     :Quelle: 
         Die Folien sind teilweise inspiriert von oder basierend auf Robert Sedgewick und Kevin Wayne, "Algorithms", Addison-Wesley, 4th Edition, 2011 sowie auf Lehrmaterial von Prof. Dr. Ritterbusch
@@ -143,6 +137,7 @@ Hashing - Grundidee
 .. supplemental::
 
     In dem Beispiel ist der Schlüssel das Wort ``it``.
+
 
 
 Berechnung der Hash-Funktion
@@ -298,6 +293,7 @@ Hashfunktionen
 
 
 
+
 .. class:: new-section transition-move-to-top
 
 Hashing in Python
@@ -312,14 +308,14 @@ Verwendung von Hashes in Python
 
     .. card::
 
-        .. class:: incremental
+        .. class:: incremental-list
 
         - Bei der Speicherung von Objekten in Sets und Dictionaries verwendet Python Hashes.
         - Sobald ein Objekt in einem Set oder Dictionary gespeichert wird, darf der Objektzustand (zumindest im Hinblick auf die Hashfunktion) nicht mehr verändert werden!
         - Der Hashwert eines (nicht veränderlichen) Objekts kann mit der Funktion ``hash()`` berechnet werden.
         - Eigene Objekte in Sets und Dictionaries speichern: 
 
-          .. class:: incremental
+          .. class:: incremental-list
 
           - Um benutzerdefinierte Objekte in einer Hashmap zu speichern, müssen wir die Methoden :python:`__hash__` und :python:`__eq__` implementieren.
 
@@ -535,6 +531,271 @@ Verwendung von Hashes in Python
             :number-lines:
             :code: python
             :class: copy-to-clipboard
+
+
+
+
+
+.. class:: new-section transition-move-to-top
+
+Hashing in Java
+--------------------------------------------------------
+
+
+
+Verwendung von Hashes in Java
+--------------------------------------------------------
+
+.. deck::
+
+    .. card::
+
+        .. class:: incremental-list
+
+        - Bei der Speicherung von Objekten in Sets und :java:`HashMap`\ s/:java:`Hashtable`\ s verwendet Java Hashes.
+        - Sobald ein Objekt in einem Set oder einer Map gespeichert wird, darf der Objektzustand (zumindest im Hinblick auf die Hashfunktion) nicht mehr verändert werden!
+        - Der Hashwert eines (nicht veränderlichen) Objekts kann mit der Funktion :java:`hashCode()` berechnet werden.
+        - Eigene Objekte in Sets und Maps speichern: 
+
+          .. class:: incremental-list
+
+          - Um benutzerdefinierte Objekte in einer :java:`HashMap` zu speichern, müssen wir die Methoden :java:`boolean equals(Object o)` und :python:`int hashCode()` implementieren.
+
+          - Zu beachten:
+        
+            - Hashwerte *müssen für gleiche Objekte gleich sein*.
+            - Hashwerte *für unterschiedliche Objekte sollten unterschiedlich sein*.
+
+    .. card::
+
+        .. rubric:: Beispielklasse :java:`Person`
+
+        .. code:: java
+            :class: copy-to-clipboard
+            :number-lines:
+
+            class Person {
+                private String name;
+                private int age;
+                Person(String name, int age) { this.name = name; this.age = age; }   
+
+                public boolean equals(Object o) { 
+                    if (o instanceof Person) { // Alt. compare class objects
+                        Person other = (Person) o; 
+                        return this.name.equals(other.name) && this.age == other.age; 
+                    } 
+                    return false; 
+                }
+
+                public int hashCode() { return java.util.Objects.hash(name, age); }
+            }
+
+    .. card::
+
+        .. rubric:: Verwendung der Klasse :java:`Person`
+
+        .. code:: java
+            :class: copy-to-clipboard
+            :number-lines:
+
+            var person1 = new Person("Alice", 30); 
+            var person2 = new Person("Bob", 25);
+            var person3 = new Person("Alice", 30); // gleiche Werte wie "person1"
+
+        **Beispielausgabe**
+
+        .. code:: console
+            :class: incremental
+
+            person1 ==> Person@750e297f // the addresses are memory addresses
+            person2 ==> Person@1fb0e5
+            person3 ==> Person@750e297f
+
+    .. card::
+
+        .. rubric:: Speicherung von :java:`Person`-Objekten in einem Set 
+
+        .. code:: java
+            :class: copy-to-clipboard
+            :number-lines:
+
+            var set = new HashSet<Person>();
+            set.add(person1);
+            set.add(person2);
+            set.add(person3);
+
+        .. code:: java
+            :class: copy-to-clipboard incremental
+            :number-lines:
+
+            // throws IllegalArgumentException:
+            var people = Set.of(person1, person2, person3)
+
+        .. incremental::
+
+            .. rubric:: Ausgabe des Sets
+
+            .. code:: java
+                :class: copy-to-clipboard
+                :number-lines:
+
+                for (var p : people) System.out.println(p.name);
+
+        .. incremental::
+
+            **Ausgabe**
+
+            .. code:: java
+            
+                Bob
+                Alice
+
+    .. card::
+
+        .. rubric:: Verwendung der :java:`hashCode`-Funktion
+
+        .. code:: java
+            :class: copy-to-clipboard
+            :number-lines:
+
+            System.out.println(person1.hashCode());
+            System.out.println(person2.hashCode());
+            System.out.println(person3.hashCode());
+
+        **Beispielausgabe**
+
+        .. code:: python
+            :class: incremental
+
+            1963862399
+            2076901
+            1963862399
+
+
+    .. card::
+
+        .. rubric:: Beispielklasse :java:`Person` mit konstantem Hashwert
+
+        .. code:: java
+            :class: copy-to-clipboard
+            :number-lines:
+
+            class PersonWithBadHash { 
+                String name;
+                int age;
+                PersonWithBadHash(String name, int age) { this.name = name; this.age = age; }   
+
+                public boolean equals(Object o) { 
+                    if (o instanceof PersonWithBadHash) { 
+                        PersonWithBadHash other = (PersonWithBadHash) o; 
+                        return this.name.equals(other.name) && this.age == other.age; 
+                    } 
+                    return false; 
+                }
+
+                public int hashCode() { return 1; /* immer der gleiche Hashwert */ }
+            }
+
+        .. supplemental::
+
+            Die Verwendung „nur“ des Alters der Person als Hashwert wäre in den allermeisten Fällen auch keine gute Idee, da es (vermutlich) viele Hashkollisionen geben würde.
+
+    .. card::
+
+        .. rubric:: Verwendung einer Klasse mit einer konstanten Hashfunktion
+
+        .. code:: java
+
+            var person1 = new PersonWithBadHash("Alice", 30);
+            var person2 = new PersonWithBadHash("Bob", 25);
+            System.out.println(person1.hashCode());
+            System.out.println(person2.hashCode());
+            var people = Set.of(person1, person2);
+            people.forEach(p -> System.out.println(p.name));
+
+        **Beispielausgabe**
+
+        .. code:: java
+
+            1
+            1
+            1
+            Alice Bob
+
+        .. supplemental::
+
+            .. warning::
+
+                Die Verwendung einer konstanten Hashfunktion ist in der Regel keine gute Idee, da sie die Effizienz von Hashmaps ganz erheblich beeinträchtigen kann.
+
+
+.. class:: exercises transition-fade
+
+Übung
+--------------------------------------------------------
+
+.. exercise:: Eine Klasse zur Repräsentation von Studierenden.
+    
+    Die Klasse :java:`Student` (Nutzen Sie hier kein :java:`record`) soll:
+    
+    - die Attribute/Properties ``name`` und ``matriculationNumber`` haben.
+
+    - die Methoden ``equals`` und ``hashCode`` sinnvoll/korrekt definieren
+
+    Aufgaben:
+
+    1) Erzeugen Sie drei :java:`Student`-Objekte und speichern Sie diese in einem Set.
+
+    2) *Fragen Sie sich wie sie effizient den Hashwert berechnen können.*
+
+    3) Geben Sie die Namen der Studierenden aus.
+    4) Was passiert, wenn Sie — *nachdem Sie ein Student Objekt einer Map hinzugefügt haben* — den Namen des Studenten ändern? 
+     
+       Schreiben Sie entsprechenden Code, um Ihre Annahme zu überprüfen!
+
+    .. supplemental::
+
+        .. rubric:: Rumpfimplementierung
+
+        .. code:: java
+            :class: copy-to-clipboard
+            :number-lines:
+
+            class Student {
+                private String name;
+                private int matriculationNumber;
+
+                public Student(String name, int matriculationNumber) { 
+                    this.name = name; 
+                    this.matriculationNumber = matriculationNumber; 
+                }
+
+                public String getName() { return name; }
+                public void setName(String name) { this.name = name; }
+                public int getMatriculationNumber(){ return matriculationNumber; }
+                public void setMatriculationNumber(int matriculationNumber) { 
+                    this.matriculationNumber = matriculationNumber; 
+                }
+
+                @Override public boolean equals(Object o) {
+                    throw new UnsupportedOperationException("TODO");
+                }
+
+                @Override public int hashCode() { 
+                    throw new UnsupportedOperationException("TODO");
+                }
+
+    .. solution::
+        :pwd: DieMatrikelnummerIstDerHash
+
+        .. rubric:: Lösung
+
+        .. include:: code/Student.java
+            :number-lines:
+            :code: java
+            :class: copy-to-clipboard
+
+
 
 
 
@@ -880,9 +1141,9 @@ Angriffe auf algorithmische Komplexität
 
 .. epigraph:: 
 
-    Julian Wälde and Alexander Klink reported that the String.hashCode() hash function is not sufficiently collision resistant.
+    Julian Wälde and Alexander Klink reported that the :java:`String.hashCode()` hash function is not sufficiently collision resistant.
 
-    hashCode() value is used in the implementations of [Java 6] HashMap and Hashtable classes. A specially-crafted set of keys could trigger hash function collisions, which can degrade performance of HashMap or Hashtable by changing hash table operations complexity from an expected/average O(1) to the worst case O(n).
+    :java:`hashCode()` value is used in the implementations of [Java 6] HashMap and Hashtable classes. A specially-crafted set of keys could trigger hash function collisions, which can degrade performance of HashMap or Hashtable by changing hash table operations complexity from an expected/average O(1) to the worst case O(n).
     Reporters were able to find colliding strings efficiently using equivalent substrings and meet in the middle techniques.
     This problem can be used to start a denial of service attack against  applications that use untrusted inputs as HashMap or Hashtable keys. An example is a web application server that may fill hash tables with data from HTTP request. A remote attack could use that to make JVM use excessive amount of CPU time by sending a POST request with large amount of parameters which hash to the same value.
     
