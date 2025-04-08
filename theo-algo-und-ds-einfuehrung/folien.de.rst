@@ -46,7 +46,7 @@ Algorithmen und Datenstrukturen - eine Einführung
 
 :Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
 :Kontakt: michael.eichberg@dhbw.de, Raum 149B
-:Version: 1.0
+:Version: 1.1
 
 .. container:: peripheral footer-left
 
@@ -227,6 +227,29 @@ Algorithmus: Beispiel
 
     .. solution::
         :pwd: SchnellSchneller
+
+        .. rubric:: (nicht-optimierter) Naiver Algorithmus
+
+        .. code:: java
+            :number-lines:
+            :class: copy-to-clipboard
+
+            public int findeMehrheitsElement(int[] a) {
+                final var minOccurences = a.length / 2 + 1;
+                for (var v : a) {
+                    var occurences = 0;
+                    for (var i : a) {
+                        if (i == v) {
+                            occurences += 1;
+                        }
+                    }
+                    if (occurences >= minOccurences) {
+                        return v;
+                    }
+                }
+                throw new IllegalArgumentException();
+            }
+
 
         .. rubric::  Boyer-Moore-Algorithmus 
 
