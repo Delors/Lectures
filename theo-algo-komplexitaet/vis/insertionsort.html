@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="../../LectureDoc2/renaissance/ld.css" />
 </head>
 
-<body>
+<body style="background-color: white">
     <style>
         @import url("../../LectureDoc2/renaissance/css/themes/dhbw.css") layer(theme);
 
@@ -75,6 +75,11 @@
                     width: 3ch;
                     height: 3ch;
                     text-align: center;
+                    &:not(:disabled):hover {
+                        box-shadow: 0px 0px 5px 1px gray;
+                        border-radius: 0.25ch;
+                    }
+                    transition: all 0.3s ease-out 0s;
                 }
             }
 
@@ -88,7 +93,7 @@
 
                 position: absolute;
                 bottom: 2.75ch;
-                /* left is individually controlled */
+                /* left is set per bar and used for the animation */
                 width: 7.5ch;
                 padding-top: 1ch;
 
@@ -122,15 +127,21 @@
                     bottom: 0.25ch;
                 }
 
-                .array-index {
+                .array-cell {
                     position: absolute;
                     bottom: 0.25ch;
                     width: 7.5ch;
                     height: 2ch;
-
+                    padding: 0;
+                    border-radius: 0.25ch;
                     color: white;
                     background-color: darkgray;
                     text-align: center;
+
+                    .array-index {
+                        font-size: 0.8em;
+                        text-shadow: -1px -1px 1px black;
+                    }
                 }
             }
 
@@ -170,6 +181,7 @@
             }
         }
     </style>
+
     <div id="insertion-sort">
         <div id="insertion-sort-canvas">
             <div class="header">
@@ -179,10 +191,10 @@
             <div class="footer">
                 <div class="array" style="left: 0.4ch">v[</div>
                 <div class="array" style="right: 1.4ch">]</div>
-                <div class="array-index" style="left: 2.25ch">0</div>
-                <div class="array-index" style="left: 12.25ch">1</div>
-                <div class="array-index" style="left: 22.25ch">2</div>
-                <div class="array-index" style="left: 32.25ch">3</div>
+                <div class="array-cell" style="left: 2.25ch"><p class="array-index">0</p></div>
+                <div class="array-cell" style="left: 12.25ch"><p class="array-index">1</p></div>
+                <div class="array-cell" style="left: 22.25ch"><p class="array-index">2</p></div>
+                <div class="array-cell" style="left: 32.25ch"><p class="array-index">3</p></div>
             </div>
             <div id="sorted-bar" style="left: calc(var(--sorted-bar-pos) * 10ch + 2ch);"></div>
             <div id="sorted-text" style="left: calc(var(--sorted-bar-pos) * 10ch);">sortiert</div>
@@ -233,9 +245,6 @@
                 "--v2-is-selected": get("--v2-is-selected")
             }
             console.log(INITIAL_VALUES);
-
-
-
 
             let step = -1;
             const animationSequence = [
@@ -321,8 +330,6 @@
                     "--sorted-bar-pos": "4",
                     "--v2-is-key": "0"
                 }
-                
-                
             ];
 
             document.getElementById("next").addEventListener("click", function (event) {
