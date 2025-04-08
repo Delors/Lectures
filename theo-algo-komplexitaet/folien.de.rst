@@ -59,7 +59,7 @@ Komplexität und Algorithmen
 
 :Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
 :Kontakt: michael.eichberg@dhbw.de, Raum 149B
-:Version: 2.0.1
+:Version: 2.0.2
 
 .. container:: peripheral
 
@@ -102,7 +102,7 @@ Berechnungskomplexität
 
         Analyse des Aufwands zur Berechnung von Ergebnissen ist wichtig ...
 
-        .. class:: incremental
+        .. class:: incremental-list
 
         - im Design,
         - in der Auswahl
@@ -112,7 +112,7 @@ Berechnungskomplexität
 
         Für relevante Algorithmen und Eingangsdaten können Vorhersagen getroffen werden:
 
-        .. class:: incremental list-with-explanations
+        .. class:: incremental-list list-with-explanations
 
         - Um Zusammenhänge sind zwischen Eingangsdaten und Aufwand zu finden.
         - Aufwand kann Rechenzeit, Speicherbedarf oder auch Komponentennutzung sein.
@@ -221,35 +221,33 @@ Technik der dynamischen Programmierung
 Beispiel: Berechnung der Fibonacci-Zahlen (rekursiv)
 --------------------------------------------------------------------------------
 
-.. container:: scrollable
+.. definition:: 
+
+    :math:`F(0) = 0\qquad\qquad F(1) = 1 \qquad\qquad F(n) = F(n-1) + F(n-2)` 
+
+.. deck:: incremental
+
+    .. card::     
+
+        .. warning::
         
-    .. definition:: 
+            Die Berechnung der Fibonacci-Zahlen mit Hilfe einer naiven rekursiven Funktion ist sehr ineffizient.
 
-        :math:`F(0) = 0\qquad\qquad F(1) = 1 \qquad\qquad F(n) = F(n-1) + F(n-2)` 
+    .. card::
 
-    .. deck:: incremental
+        :math:`F(n)` als stehende Formel:
 
-        .. card::     
+        .. math::
 
-            .. warning::
-            
-                Die Berechnung der Fibonacci-Zahlen mit Hilfe einer naiven rekursiven Funktion ist sehr ineffizient.
-
-        .. card::
-
-            :math:`F(n)` als stehende Formel:
-
-            .. math::
-
-                F(n) = \left[{ 1 \over \sqrt{5} } (1.618 \ldots)^n  \right]
+            F(n) = \left[{ 1 \over \sqrt{5} } (1.618 \ldots)^n  \right]
 
 
-        .. card::
+    .. card::
 
-            .. rubric:: Aufrufbaum
+        .. rubric:: Aufrufbaum
 
-            .. image:: images/fib.svg
-                :align: center
+        .. image:: images/fib.svg
+            :align: center
         
 
 
@@ -259,7 +257,7 @@ Vorgehen beim dynamischen Programmieren
 
 1. Rekursive Beschreibung des Problems P
 
-.. class:: incremental
+.. class:: incremental-list
 
 2. Bestimmung einer Menge :math:`T`, die alle Teilprobleme von :math:`P` enthält, auf die bei der Lösung von :math:`P` – auch in tieferen Rekursionsstufen – zurückgegriffen wird.
 3. Bestimmung einer Reihenfolge :math:`T_0 , \ldots, T_k` der Probleme in :math:`T`, so dass bei der Lösung von :math:`T_i` nur auf Probleme :math:`T_j`  mit :math:`j < i` zurückgegriffen wird.
@@ -276,7 +274,7 @@ Beispiel: Berechnung der Fibonacci-Zahlen mit dynamischer Programmierung
 
         Rekursive Definition der Fibonacci-Zahlen nach gegebener Gleichung:
         
-        .. class:: incremental
+        .. class:: incremental-list
 
         1. :math:`T = { f(0),..., f(n-1)}`
         2. :math:`T_i = f(i), i = 0,...,n – 1`
@@ -397,7 +395,7 @@ Im Allgemeinen werden Laufzeiten oder Aufwände in Abhängigkeit von einer Einga
 
     Eine Folge (:math:`a_n`) ist eine Abbildung, die jedem :math:`n \in \mathbb{N}` ein :math:`a_n` zuweist.
 
-.. class:: incremental
+.. class:: incremental-list
 
 - .. class:: columns
     
@@ -468,7 +466,7 @@ Laufzeit der Lösung der Türme von Hanoi
 
         Für die Lösung sind für jeden Ring :math:`n` die folgenden :math:`a_n` Schritte erforderlich:
 
-        .. class:: incremental
+        .. class:: incremental-list
 
         1. Alle :math:`n−1` kleineren Ringe über Ring :math:`n` müssen mit :math:`a_{n−1}` Schritten auf den Hilfsstab.
         2. Der Ring :math:`n` kommt auf den Zielstab mit einem Schritt.
@@ -639,12 +637,12 @@ Analyse des asymptotischen Verhaltens
 
 Wir möchten :math:`f(x) = \frac{\ln(x)}{x^{2/3}}` für :math:`x \to \infty` untersuchen.
 
-.. deck::
+.. deck::            
+    :class: incremental
 
     .. card:: 
 
         .. observation::
-            :class: incremental
 
             1. Der Zähler, :math:`\ln(x)`, wächst gegen unendlich, aber sehr langsam im Vergleich zur Potenzfunktionen.
             2. Der Nenner, :math:`x^{2/3}`, wächst viel schneller als :math:`\ln(x)` für große :math:`x`.
@@ -837,19 +835,18 @@ Asymptotische Abschätzung
     Folgenden Mengen von Funktionen können asymptotisch von :math:`g(n)`
     ...
 
-    .. class:: incremental
+    .. class:: incremental-list
 
-    - nach oben abgeschätzt werden, :math:`\mathcal{O}(g) := \{f : \mathbb{N} →\mathbb{R}_{≥0} | \lim_{x→∞} {f(n) \over g(n)} < ∞\}`
-    - nach unten abgeschätzt werden, :math:`Ω(g) := \{f : \mathbb{N} →\mathbb{R}_{≥0} | \lim_{x→∞} {f(n) \over g (n)} > 0\}`
-    - in gleicher Ordnung abgeschätzt werden, :math:`Θ(g) := \{f : \mathbb{N} →\mathbb{R}_{≥0} | \lim_{x→∞} {f(n) \over g(n)} = C \in \mathbb{R}_{>0}\}`
+    - nach oben abgeschätzt werden, :math:`\mathcal{O}(g) := \{f : \mathbb{N} →\mathbb{R}_{≥0} | \lim_{n→∞} {f(n) \over g(n)} < ∞\}`
+    - nach unten abgeschätzt werden, :math:`Ω(g) := \{f : \mathbb{N} →\mathbb{R}_{≥0} | \lim_{n→∞} {f(n) \over g (n)} > 0\}`
+    - in gleicher Ordnung abgeschätzt werden, :math:`Θ(g) := \{f : \mathbb{N} →\mathbb{R}_{≥0} | \lim_{n→∞} {f(n) \over g(n)} = C \in \mathbb{R}_{>0}\}`
 
 
-.. container:: incremental smaller
+.. container:: incremental 
         
     Es gilt der folgende Zusammenhang für die Mengen :math:`\mathcal{O}(g)`\ [#]_, :math:`Ω(g)` und :math:`Θ(g)`:
             
     .. math::
-        :class: smaller
 
         Θ(g) = \mathcal{O}(g) ∩ Ω(g)
 
@@ -892,7 +889,8 @@ Verstehen von Aufwandsklassen
 .. image:: images/aufwandsklassen.svg
     :align: center
 
-.. container:: text-align-center incremental peripheral
+.. remark::
+    :class: s-font-size-80
 
     Häufige Vergleichsfunktionen sind zum Beispiel Monome wie :math:`n^k` für :math:`k ∈ \mathbb{N}_0`.
 
@@ -903,7 +901,7 @@ Achtung bei asymptotischen Abschätzungen
 
 Asymptotische Laufzeitabschätzungen können zu Missverständnissen führen:
 
-.. class:: incremental
+.. class:: incremental-list
 
 1. Asymptotische Abschätzungen werden nur für steigende Problemgrößen genauer, für kleine Problemstellungen liegt oft eine ganz andere Situation vor.
 2. Asymptotisch nach oben abschätzende Aussagen mit :math:`O(g)`-Notation können die tatsächliche Laufzeit beliebig hoch überschätzen, auch wenn möglichst scharfe Abschätzungen erwünscht sein sollten, gibt es diese teilweise nicht in beliebiger Genauigkeit, oder sind nicht praktikabel.
@@ -1099,7 +1097,7 @@ Algorithmen - Zeitaufwand
 
 Tatsächlicher Zeitaufwand hängt vom ausführenden Rechnersystem ab.
 
-.. class:: incremental
+.. class:: incremental-list
 
 - Beeindruckende Entwicklung der Rechentechnik in den letzten Jahrzehnten
 - Größere Probleme können gelöst werden
@@ -1113,7 +1111,7 @@ Tatsächlicher Zeitaufwand hängt vom ausführenden Rechnersystem ab.
         
     Eine möglichst sinnvolle Annahme eines Rechnersystems gesucht:
 
-    .. class:: incremental
+    .. class:: incremental-list
 
     - Von-Neumann System
     - *mit einer Recheneinheit*
@@ -1430,12 +1428,12 @@ Insertion-Sort: Analyse mit abstrahierten Kosten
                     :class: copy-to-clipboard incremental
 
                     def insertion_sort(A):
-                    for i in range(1, len(A)):         
+                      for i in range(1, len(A)):         
                         key = A[i]                     
                         j = i - 1                      
                         while j >= 0 and A[j] > key:   
-                        A[j + 1] = A[j]            
-                        j = j - 1                  
+                          A[j + 1] = A[j]            
+                          j = j - 1                  
                         A[j + 1] = key                 
 
 
@@ -1570,12 +1568,12 @@ In Hinblick auf den Zeitaufwand gilt:
         :number-lines:
 
         Algorithmus COMPUTE(n)
-        p(n);
-        for j = 1...n do
-            for k = 1...j do
-                q(n);
+            p(n);
+            for j = 1...n do
+                for k = 1...j do
+                    q(n);
+                end
             end
-        end
 
     Bestimmen Sie die asymptotische Laufzeit des Algorithmus in Abhängigkeit von :math:`n` durch zeilenweise Analyse.
 
@@ -1846,7 +1844,7 @@ Rucksackproblem (:eng:`Knapsack Problem`)
 
             - Gesucht ist die maximale Wertsumme bei einer maximalen Traglast von 13.
 
-              .. class:: incremental
+              .. class:: incremental-list
 
               1. Versuch: bei Einhaltung der Traglast (:math:`n =13`): 
                  
@@ -2136,7 +2134,7 @@ Rekurrenzgleichung für rekursiv teilende Algorithmen
 
         In diesem Fall können drei Fälle unterschieden identifiziert werden:
 
-        .. class:: incremental
+        .. class:: incremental-list
 
         1. Ist der Aufwand :math:`f(n)` vernachlässigbar gegenüber dem Aufwand der weiteren Aufrufe, so ist ein rein durch die Rekursion bestimmtes Verhalten zu erwarten. 
         2. Entspricht der Aufwand :math:`f (n)` genau dem Aufwand der weiteren Aufrufe, so vervielfältigt sich der Aufwand gegenüber dem 1. Fall, bleibt aber in der gleichen Größenordnung.
@@ -2406,7 +2404,7 @@ Master-Theorem: Zusammenfassung
 
                 .. math::
 
-                T(n) = \Theta(n \cdot \log n)
+                    T(n) = \Theta(n \cdot \log n)
 
 
 
@@ -2426,7 +2424,7 @@ Backtracking
 
 - Backtracking ist ein Verfahren, das in vielen Algorithmen zur Anwendung kommt. Insbesondere, wenn kein effizienterer Algorithmus bekannt ist, als *alle möglichen Lösungen auszuprobieren*.
 
-.. class:: incremental list-with-explanations
+.. class:: incremental-list list-with-explanations
 
 - Backtracking ist eine systematische Methode, um alle möglichen Lösungen eines Problems zu finden. Es ist eine Art von rekursivem Durchsuchen, bei dem Teillösungen zu Gesamtlösungen erweitert werden. 
 - Backtracking erlaubt ggf. Heuristiken, um die Suche zu beschleunigen. 
@@ -2500,7 +2498,7 @@ Backtracking - Allgemein
 
         .. rubric:: Voraussetzungen für Backtracking
 
-        .. class:: incremental  list-with-explanations
+        .. class:: incremental-list list-with-explanations
 
         1. Die Lösung ist als Vektor :java:`a[1], a[2], ...` endlicher Länge darstellbar.
         2. Jedes Element :java:`a[i]` hat eine endliche Anzahl von möglichen Werten :java:`A[i]`.

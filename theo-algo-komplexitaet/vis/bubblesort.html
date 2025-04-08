@@ -44,6 +44,10 @@
                 button {
                     width: 2.5ch;
                     height: 2.5ch;
+
+                    &:hover {
+                        box-shadow: 0px 0px 5px 1px gray;
+                    }
                 }
 
                 #action {
@@ -135,6 +139,7 @@
                 step = -1;
                 action.innerHTML = "...";
                 document.getElementById("bubbleSortExample").style.backgroundColor = "antiquewhite";
+                document.getElementById("next").disabled = false;
                 v7.style.left = "2.5ch";
                 v5.style.left = "12.5ch";
                 v8.style.left = "22.5ch";
@@ -216,6 +221,7 @@
                     case 10:
                         document.getElementById("bubbleSortExample").style.backgroundColor = "lightgreen";
                         action.innerHTML = "Fertig!";
+                        document.getElementById("next").disabled = true;
                         break;
                 }
             });
