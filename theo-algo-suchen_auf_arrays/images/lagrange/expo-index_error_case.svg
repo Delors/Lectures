@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?>
 <!-- Generator: DataGraph - https://www.visualdatatools.com/DataGraph/index.html  --><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg width="556" height="334" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"  viewBox="0 0 834.5 501">
+<svg width="516" height="334" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"  viewBox="30 0 804 501">
 <g>
   <!-- Background -->
   <g id="Background">
@@ -44,16 +44,16 @@
     <g id="Legend">
       <defs>
         <clipPath id="clipPath2">
-          <rect x="114.1" y="36.5" width="404" height="91.8"/>
+          <rect x="114.1" y="36.5" width="414" height="91.8"/>
         </clipPath>
       </defs>
       <g clip-path="url(#clipPath2)">
-        <rect x="114.1" y="36.5" width="404" height="91.8" fill="rgb(255,253,234)" opacity="0.820419" stroke="none"/>
+        <rect x="114.1" y="36.5" width="414" height="91.8" fill="rgb(255,253,234)" opacity="0.820419" stroke="none"/>
       </g>
-      <rect x="114.1" y="36.5" width="404" height="91.8" stroke="black" fill="none" stroke-width="0.5"/>
+      <rect x="114.1" y="36.5" width="414" height="91.8" stroke="black" fill="none" stroke-width="0.5"/>
       <defs>
         <clipPath id="clipPath3">
-          <rect x="114.1" y="36.5" width="404" height="91.8"/>
+          <rect x="114.1" y="36.5" width="414" height="91.8"/>
         </clipPath>
       </defs>
       <g clip-path="url(#clipPath3)">
@@ -166,7 +166,7 @@
   <g id="Foreground">
     <!-- Y Axis -->
     <g id="Y_Axis">
-      <g transform="translate(20.7781,233.5) rotate(-90) translate(-20.7781,-233.5)" font-family="Noto Sans Display" font-size="18" fill="black">
+      <g transform="translate(20.7781,233.5) rotate(-90) translate(-20.7781,-203.5)" font-family="Noto Sans Display" font-size="18" fill="black">
         <text x="1.93877" y="233.5">Wert</text>
       </g>
       <!-- Y Labels -->
