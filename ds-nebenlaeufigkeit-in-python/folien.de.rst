@@ -1162,7 +1162,7 @@ Damit eine Klasse thread-sicher ist, muss sie sich in einer single-threaded Umge
 Thread Safety Level
 ------------------------------------------------------------
 
-:Immutable `Unveränderlich`:ger:: Die Objekt sind konstant und können nicht geändert werden.
+:Immutable `Unveränderlich`:ger:: Die Objekte sind konstant und können nicht geändert werden.
 
 .. class:: incremental
 

@@ -44,7 +44,7 @@ Nebenläufigkeit in Java
 
 :Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
 :Kontakt: michael.eichberg@dhbw.de
-:Version: 1.0
+:Version: 1.0.1
 
 .. supplemental::
 
@@ -652,7 +652,7 @@ Thread Safety Level
 
 .. class:: incremental-list
 
-:Immutable `Unveränderlich`:ger:: Die Objekt sind konstant und können nicht geändert werden.
+:Immutable `Unveränderlich`:ger:: Die Objekte sind konstant und können nicht geändert werden.
 :Thread-sicher: Die Objekte sind veränderbar, unterstützen aber nebenläufigen Zugriff, da die Methoden entsprechend synchronisiert sind.
 :Bedingt Thread-sicher: All solche Objekte bei denen jede einzelne Operation thread-sicher ist, aber bestimmte Sequenzen von Operationen eine externe Synchronisierung erfordern können.
 :Thread-kompatibel: Alle Objekte die keinerlei Synchronisierung aufweisen. Der Aufrufer kann die Synchronisierung jedoch ggf. extern übernehmen.
