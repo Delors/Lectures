@@ -2027,7 +2027,7 @@ Einordnung von Grammatiken in die Chomsky-Hierarchie
 
     .. card::   
 
-            Umformulierung einer allgemeinen Regel zur Vertauschung von zwei Variablen in  kontextsensitive Regeln (der Kontext ist hierbei nicht explizit definiert kann aber natürlich ergänzt werden):
+            Umformulierung einer allgemeinen Regel zur Vertauschung von zwei Variablen in kontextsensitive Regeln (der Kontext ist hierbei nicht explizit definiert kann aber natürlich ergänzt werden):
 
             Gegeben sei die Regel :math:`r_2 : \text{CB} ↦ \text{BC}`.
 

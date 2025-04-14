@@ -100,7 +100,7 @@
                 border: thin solid black;
 
                 font-weight: bold;
-                color: rgb(calc(255 - var(--is-selected) * 255), calc(255 - var(--is-selected) * 255), calc(255 - var(--is-selected) * 255) );
+                color: rgb(calc(255 - var(--is-selected) * 255), calc(255 - var(--is-selected) * 255), calc(255 - var(--is-selected) * 255));
                 --current-background-color: rgb(calc(175 + var(--is-selected) * 25), calc(var(--is-selected) * 255), calc(var(--is-selected) * 255));
                 background-color: var(--current-background-color);
 
@@ -229,9 +229,9 @@
                 left:11.25ch;
                 top:15.2ch;
                 opacity: var(--v5-4th-row-visible);">5</div>
-            
+
             <!-- The elements that are actually moved on the canvas. -->
-        
+
             <div id="v4" class="value" style="
                 --is-selected: var(--v4-is-selected);
                 left: calc(var(--v4-hpos) + 0.25ch);
@@ -262,7 +262,7 @@
             // TODO Do we want to automatically query all properties and save all variables?
             const INITIAL_VALUES = {
                 "--legend": get("--legend"),
-                
+
                 "--v4-hpos": get("--v4-hpos"),
                 "--v6-hpos": get("--v6-hpos"),
                 "--v5-hpos": get("--v5-hpos"),
@@ -398,26 +398,107 @@
                 }
             ];
 
-            document.getElementById("next").addEventListener("click", function (event) {
-                const animationStep = animationSequence[++step];
+            const LS_ID = "ld-html-animation-mergesort-step";
+
+            const progressBroadcast = new BroadcastChannel("mergesort-visualization");
+
+            function doAdvanceAnimation(nextStep) {
+                if (nextStep === animationSequence.length) {
+                    event.target.disabled = true;
+                    return;
+                }
+
+                step = nextStep;
+                window.localStorage.setItem(LS_ID, step);
+                const animationStep = animationSequence[nextStep];
                 for (const [key, value] of Object.entries(animationStep)) {
                     console.log("Setting: ", key, value);
                     set(key, value);
                 }
-                if (step >= animationSequence.length - 1) {
-                    event.target.disabled = true;
-                    return;
-                }
-            });
+            }
 
-            document.getElementById("reset").addEventListener("click", function () {
+            function advanceAnimation(nextStep) {
+                console.log("advanceAnimation: ", step, " => ", nextStep);
+                if (nextStep > step) {
+                    for (let i = step + 1; i <= nextStep; i++) {
+                        doAdvanceAnimation(i);
+                    }
+                } else {
+                    console.log("Local animation ", step, " >= ", nextStep);
+                }
+            }
+
+            function resetAnimation() {
                 step = -1;
                 for (const [key, value] of Object.entries(INITIAL_VALUES)) {
                     console.log("Resetting: ", key, value);
                     set(key, value);
                 }
                 document.getElementById("next").disabled = false;
+                localStorage.removeItem(LS_ID);
+            }
+
+            progressBroadcast.addEventListener("message", (event) => {
+                const [msg, data] = event.data;
+                switch (msg) {
+                    case "advanceAnimation":
+                        const nextStep = data;
+                        console.log("advanceAnimation request received: ", nextStep);
+                        advanceAnimation(nextStep);
+                        break;
+                    case "resetAnimation":
+                        resetAnimation();
+                        break;
+                    case "getAnimationProgress":
+                        console.log("animationProgress request received");
+                        progressBroadcast.postMessage([
+                            "advanceAnimation",
+                            step
+                        ]);
+                        break;
+                    default:
+                        console.log("Unknown message: ", event.data.message);
+                        break;
+                }
             });
+
+            document.getElementById("next").addEventListener("click", function (event) {
+                const nextStep = step + 1;
+                console.log("broadcasting advanceAnimation: ", step, "=>", nextStep);
+                progressBroadcast.postMessage([
+                    "advanceAnimation",
+                    nextStep
+                ]);
+                advanceAnimation(nextStep);
+            });
+
+            document.getElementById("reset").addEventListener("click", function () {
+                progressBroadcast.postMessage([
+                    "resetAnimation", undefined
+                ]);
+                resetAnimation();
+            });
+
+            // Let's figure out if there is another window in which the 
+            // animation is already running.
+            progressBroadcast.postMessage([
+                "getAnimationProgress", undefined
+            ]);
+            // Let's see if we got an answer; i. e., if the current animation
+            // step has changed. If we don't get an answer, we assume that
+            // we are the first window that is running the animation. Let's check
+            // the local storage for the current animation step.
+            setTimeout(() => {
+                if (step !== -1) {
+                    console.log("synchronized animation with another window: ", step);
+                    return;
+                }
+                const storedStep = window.localStorage.getItem(LS_ID);
+                if (storedStep !== null) {
+                    console.log("reapplying previous step:", storedStep);
+                    advanceAnimation(parseInt(storedStep));
+                }
+            }, 100);
         </script>
     </div>
 </body>
