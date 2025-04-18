@@ -1,13 +1,13 @@
 
-// Intended to be run using Java > 23.
+// Intended to be run using Java > 23 (Tested with Java 23 and 24)
 // May require --enable-preview to do so.
 
 interface Expr {
 
     /**
-     * True or False if this expression definitively
-     * evaluates to the respective truth value with the
-     * given binding or an empty Optional otherwise.
+     * An Optional True or Optional False if this expression 
+     * definitively evaluates to the respective truth value 
+     * with the given binding or an empty Optional otherwise.
      * 
      * Returning a truth value does not necessarily
      * require all variables to be bound to a definite
@@ -18,11 +18,9 @@ interface Expr {
      * Optional.empty is returned.
      * 
      * An expression such as "A ⋀ B" would return true
-     * if A and B are both true in the
-     * binding and false if at least one of them is bound
-     * to false, and Optional.empty otherwise.
-     * 
-     * @return
+     * if A and B are both bound to "true"  and false 
+     * if at least one of them is bound
+     * to "false", and Optional.empty otherwise.
      */
     Optional<Boolean> isSolution(Map<Var, Boolean> binding);
 }

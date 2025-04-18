@@ -49,20 +49,13 @@ Java - Dateien lesen und schreiben
 
         |pdf-source|
 
-    ..
-        :Kontrollfragen:
+    
+    :Kontrollfragen:
 
-            .. source:: kontrollfragen.de.rst
-                :path: relative
-                :prefix: https://delors.github.io/
-                :suffix: .html
-
-        :Klausurvorbereitung:
-
-            .. source:: klausurvorbereitung.de.rst
-                :path: relative
-                :prefix: https://delors.github.io/
-                :suffix: .html
+        .. source:: kontrollfragen.de.rst
+            :path: relative
+            :prefix: https://delors.github.io/
+            :suffix: .html
 
     :Fehler melden:
         https://github.com/Delors/delors.github.io/issues

@@ -59,7 +59,7 @@ Komplexität und Algorithmen
 
 :Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
 :Kontakt: michael.eichberg@dhbw.de, Raum 149B
-:Version: 2.0.2
+:Version: 2.0.3
 
 .. container:: peripheral
 
@@ -1918,7 +1918,7 @@ Rucksackproblem - iterative Lösung
 
     .. rubric:: Grundsätzliche Idee der iterativen Lösung
     
-    Gehe über alle Objekte. Berechne in jedem Schleifendurchlauf :java:`i` bei Hinzunahme von Teil :java:`i` das jeweils das beste Ergebnis für alle Kapazitäten :java:`j` bis inklusive :java:`n`. 
+    Gehe über alle Objekte. Berechne in jedem Schleifendurchlauf :java:`i` bei Hinzunahme von Teil :java:`i` das jeweils beste Ergebnis für alle Kapazitäten :java:`j` bis inklusive :java:`n`. 
 
     .. example:: 
         :class: incremental        
@@ -1949,7 +1949,7 @@ Rucksackproblem - iterative Lösung
                 best = [0] * (n + 1)    # best[i] = bester Wert für Traglast i (initial 0)
                 for i in range(len(gW)):
                     (gewt, wert) = gW[i]
-                    for j in range(gewt, n + 1): # range(gewt, n + 1): [gewt, ..., n)
+                    for j in range(gewt, n + 1): # range(gewt, n + 1): [gewt, ..., n]
                         test = best[j - gewt] + wert
                         if test > best[j]:
                             best[j] = test
@@ -2350,7 +2350,7 @@ Master-Theorem: Zusammenfassung
 
         .. rubric:: Mergesort
 
-        Der Mergesort-Algorithmus ist ein rekursiver Algorithmus, der ein Array solange in zwei Hälften teilt (Teile und Herrsche (:eng:`divide and conquer`)) bis diese trivial sind. Danach werden jeweils zwei sortierte Hälften zusammenführt bis das ganze Array wieder zusammengeführt wurde. Das Zusammenführen der Hälften hat einen Aufwand von :math:`n` und das Teilen des Arrays hat einen konstanten Aufwand.
+        Der Mergesort-Algorithmus ist ein rekursiver Algorithmus, der ein Array solange in zwei Hälften teilt (Teile und Herrsche (:eng:`divide and conquer`)) bis diese trivial sind. Danach werden jeweils zwei sortierte Hälften zusammengeführt bis das ganze Array wieder zusammengeführt wurde. Das Zusammenführen der Hälften hat einen Aufwand von :math:`n` und das Teilen des Arrays hat einen konstanten Aufwand.
 
 
     .. card::
@@ -2533,7 +2533,7 @@ Backtracking - Allgemein
 
     ``c = (A ∨ ¬B) ∧ (¬A ∨ B) ∧ (¬A ∨ ¬C) ∧ (C ∨ D) ∧ (¬C ∨ ¬D)``
 
-    Füllen Sie dazu die folgende Tabelle aus, um alle Lösungen zu finden. In der letzten Spalte geben Sie an, ob die Zeile eine Teillösung darstellt, eine Inkonsistenz gefunden wurde, oder eine Gesamtlösung identifiziert wurde. Die Evaluation wie vieler vollständiger Belegungen wurde eingespart, wenn die Lösung gefunden wurde?
+    Füllen Sie dazu die folgende Tabelle aus, um alle Lösungen zu finden. In der letzten Spalte geben Sie an, ob die Zeile eine Teillösung darstellt (nicht inkonsistent), keine Lösung ist bzw. sein kann, oder eine Gesamtlösung identifiziert wurde. Die Evaluation wie vieler vollständiger Belegungen wurde eingespart, wenn die Lösung gefunden wurde?
 
     .. csv-table::
         :header: " ", A, B, C, D, "nicht inkonsistent (T), keine Lösung (K), vollständige Lösung (L)"
@@ -2611,9 +2611,17 @@ Backtracking - Allgemein
 
         .. include:: code/sat.py
             :code: python
-            :number-lines:
+            :number-lines: 135
             :class: copy-to-clipboard
             :start-after: variable to its current truth value (True or False)."""
+
+        .. rubric:: Java basierte Lösung
+
+        .. include:: code/sat.java
+            :code: java
+            :number-lines: 141
+            :class: copy-to-clipboard
+            :start-after: void solve(Expr expr, Stack<Var> vars, Map<Var, Boolean> solution) {
 
         Die drei Lösungen sind:
         
