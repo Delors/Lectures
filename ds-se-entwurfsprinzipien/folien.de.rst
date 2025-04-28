@@ -568,9 +568,9 @@ Traditionelle Interaktion mit Informationssystemen (CRUD)
 
   .. cell:: width-60
 
-    .. figure:: images/cqs_and_cqrs/crud.svg
+    .. image:: images/cqs_and_cqrs/crud.svg
 
-       Darstellung nach `Martin Fowler <https://martinfowler.com/bliki/CQRS.html>`_.
+    Darstellung nach `Martin Fowler <https://martinfowler.com/bliki/CQRS.html>`_.
     
   .. cell:: width-40
 
@@ -607,9 +607,6 @@ Command-Query Responsibility Segregation Principle
     4. Weiterleitung der Änderung
     5. Kommando-Modell validiert
     6. Kommando-Modell aktualisiert DB
-
-
-⸺ Greg Young, 2010
 
 .. supplemental::
 
