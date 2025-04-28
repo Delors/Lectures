@@ -7,22 +7,9 @@
     :first-slide: last-viewed
     :master-password: WirklichSchwierig!
 
+.. include:: ../docutils.defs
+
 .. |WS| replace:: *Web Service*
-
-.. |html-source| source::
-    :prefix: https://delors.github.io/
-    :suffix: .html
-.. |pdf-source| source::
-    :prefix: https://delors.github.io/
-    :suffix: .html.pdf
-
-.. role:: eng
-.. role:: ger
-.. role:: red
-.. role:: green
-.. role:: blue
-.. role:: peripheral
-.. role:: smaller
 
 
 

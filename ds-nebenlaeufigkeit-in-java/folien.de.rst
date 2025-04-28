@@ -8,30 +8,7 @@
     :first-slide: last-viewed
     :master-password: WirklichSchwierig!
 
-.. |html-source| source::
-    :prefix: https://delors.github.io/
-    :suffix: .html
-.. |pdf-source| source::
-    :prefix: https://delors.github.io/
-    :suffix: .html.pdf
-
-.. |at| unicode:: 0x40
-
-.. role:: incremental
-.. role:: eng
-.. role:: ger
-.. role:: peripheral
-.. role:: obsolete
-.. role:: dhbw-red
-.. role:: dhbw-gray
-.. role:: dhbw-light-gray
-.. role:: dark-red
-
-.. role:: raw-html(raw)
-   :format: html
-
-.. role:: java(code)
-  :language: java
+.. include:: ../docutils.defs
 
 
 
@@ -196,7 +173,7 @@ Java Thread States
   - Blocksynchronisierung mit dem Schlüsselwort :java:`synchronized` verwendet wird
 
 - Wenn eine Methode als synchronisiert gekennzeichnet ist, kann der Zugriff auf die Methode nur erfolgen, wenn das System die Sperre erhalten hat.
-- Daher haben synchronisierte Methoden einen sich gegenseitig ausschließenden Zugriff auf die vom Objekt gekapselten Daten, :dhbw-red:`wenn auf diese Daten nur von anderen synchronisierten Methoden zugegriffen wird`.
+- Daher haben synchronisierte Methoden einen sich gegenseitig ausschließenden Zugriff auf die vom Objekt gekapselten Daten, :red:`wenn auf diese Daten nur von anderen synchronisierten Methoden zugegriffen wird`.
 - Nicht-synchronisierte Methoden benötigen keine Sperre und können daher *jederzeit* aufgerufen werden.
 
 

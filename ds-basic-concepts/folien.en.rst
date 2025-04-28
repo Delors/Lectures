@@ -8,24 +8,7 @@
     :first-slide: last-viewed
     :master-password: WirklichSchwierig!
 
-.. |html-source| source::
-    :prefix: https://delors.github.io/
-    :suffix: .html
-.. |pdf-source| source::
-    :prefix: https://delors.github.io/
-    :suffix: .html.pdf
-.. |at| unicode:: 0x40
-
-.. role:: incremental
-.. role:: eng
-.. role:: ger
-.. role:: peripheral
-.. role:: obsolete
-.. role:: math-i
-.. role:: math-r
-
-.. role:: raw-html(raw)
-   :format: html
+.. include:: ../docutils.defs
 
 
 
@@ -36,7 +19,7 @@ Basic Concepts of Distributed Systems
 
 :Lecturer: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
 :Contact: michael.eichberg@dhbw.de
-:Version: 1.0
+:Version: 1.0.1
 
 .. supplemental::  
 
@@ -78,7 +61,7 @@ The importance of time in distributed systems
 
 
 
-Problems when the Time is not correct
+Problems when the time is not correct
 --------------------------------------------------------------------------------
 
 .. epigraph::
@@ -94,7 +77,7 @@ Problems when the Time is not correct
 
 .. class:: transition-scale 
 
-Distributed Systems: Real vs. Logical Time
+Real vs. logical time in distributed systems
 --------------------------------------------------------------------------------
 
 .. deck::
@@ -138,6 +121,7 @@ Computer Clock Time
 - by means of message exchange with a time server 
 
 
+
 Clock synchronization according to Christian
 --------------------------------------------------------------------------------
 
@@ -146,7 +130,6 @@ Clock synchronization according to Christian
 - Prerequisite: central time server with UTC.
 - Clients ask periodically and correct by half the response time
 - Client clocks are never reset but only slowed down or accelerated if necessary.
-
 
 
 

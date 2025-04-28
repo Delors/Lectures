@@ -7,23 +7,7 @@
     :first-slide: last-viewed
     :master-password: WirklichSchwierig!
 
-.. |html-source| source::
-    :prefix: https://delors.github.io/
-    :suffix: .html
-.. |pdf-source| source::
-    :prefix: https://delors.github.io/
-    :suffix: .html.pdf
-
-.. |at| unicode:: 0x40
-
-.. role:: incremental
-.. role:: eng
-.. role:: ger
-.. role:: light-gray
-
-
-.. role:: raw-html(raw)
-   :format: html
+.. include:: ../docutils.defs
 
 
 
@@ -66,7 +50,6 @@ Grundlegende Architekturen
 
 Architekturstile (:eng:`Architectural Styles`)
 ----------------------------------------------
-
 
 Ein Architekturstil wird formuliert in Form von
 
