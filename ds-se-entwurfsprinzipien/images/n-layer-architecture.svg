@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xl="http://www.w3.org/1999/xlink" version="1.1" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns="http://www.w3.org/2000/svg" viewBox="5 9 291 284" width="291" height="284">
+  <style>
+    @import url('/LectureDoc2/ext/fonts/ld-fonts.css'); 
+  </style>
+  <defs>
+    <marker orient="auto" overflow="visible" markerUnits="strokeWidth" id="FilledArrow_Marker" stroke-linejoin="miter" stroke-miterlimit="10" viewBox="-1 -4 9 8" markerWidth="9" markerHeight="8" color="black">
+      <g>
+        <path d="M 6.857141 0 L 0 -2.5714278 L 0 2.5714278 Z" fill="currentColor" stroke="currentColor" stroke-width="1"/>
+      </g>
+    </marker>
+    <radialGradient cx="0" cy="0" r="1" id="Gradient" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="white"/>
+      <stop offset="1" stop-color="#e3e3e3"/>
+    </radialGradient>
+    <radialGradient id="Obj_Gradient" xl:href="#Gradient" gradientTransform="translate(145 253.7084) rotate(-90) scale(46.07972)"/>
+    <radialGradient id="Obj_Gradient_2" xl:href="#Gradient" gradientTransform="translate(144.99999 229.56722) rotate(-90) scale(28.934463)"/>
+  </defs>
+  <metadata> Produced by OmniGraffle 8.0\n2025-04-28 11:31:11 +0000</metadata>
+  <g id="classical-layered-architecture" fill="none" stroke="none" stroke-dasharray="none" stroke-opacity="1" fill-opacity="1">
+    <title>classical-layered-architecture</title>
+    <g id="classical-layered-architecture_Layer_1">
+      <title>Layer 1</title>
+      <g id="Graphic_5">
+        <rect x="255" y="10" width="40" height="185" fill="#ec220e"/>
+        <rect x="255" y="10" width="40" height="185" stroke="white" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(265.5 190) rotate(-90)" fill="white">
+          <tspan font-family="Noto Sans Display" font-size="14" font-weight="700" fill="white" x="42.595" y="15" xml:space="preserve">Infrastruktur</tspan>
+        </text>
+      </g>
+      <g id="Graphic_4">
+        <rect x="75" y="82.5" width="140" height="40" fill="#60d936"/>
+        <rect x="75" y="82.5" width="140" height="40" stroke="white" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(80 93)" fill="black">
+          <tspan font-family="Noto Sans Display" font-size="14" font-weight="700" fill="black" x="15.405" y="15" xml:space="preserve">Geschäftslogik</tspan>
+        </text>
+      </g>
+      <g id="Graphic_3">
+        <rect x="75" y="155" width="140" height="40" fill="#feae00"/>
+        <rect x="75" y="155" width="140" height="40" stroke="white" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(80 165.5)" fill="black">
+          <tspan font-family="Noto Sans Display" font-size="14" font-weight="700" fill="black" x="4.772" y="15" xml:space="preserve">Data Access Layer</tspan>
+        </text>
+      </g>
+      <g id="Graphic_7">
+        <rect x="75" y="10" width="140" height="40" fill="#00c1ff"/>
+        <rect x="75" y="10" width="140" height="40" stroke="white" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(80 20.5)" fill="white">
+          <tspan font-family="Noto Sans Display" font-size="14" font-weight="700" fill="white" x="57.3" y="15" xml:space="preserve">UI</tspan>
+        </text>
+      </g>
+      <g id="Line_11">
+        <line x1="215.5" y1="102.5" x2="237.98572" y2="102.5" marker-end="url(#FilledArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+      <g id="Line_14">
+        <line x1="145" y1="123" x2="145" y2="137.48572" marker-end="url(#FilledArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+      <g id="Graphic_15">
+        <text transform="translate(97.3 56.75)" fill="#666">
+          <tspan font-family="Noto Sans Display" font-size="12" font-weight="400" fill="#666" x="0" y="13" xml:space="preserve">nutzt</tspan>
+        </text>
+      </g>
+      <g id="Line_19">
+        <line x1="215.5" y1="175" x2="237.98572" y2="175" marker-end="url(#FilledArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+      <g id="Line_20">
+        <line x1="215.5" y1="30" x2="237.98572" y2="30" marker-end="url(#FilledArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+      <g id="Line_21">
+        <line x1="145" y1="50.5" x2="145" y2="64.98572" marker-end="url(#FilledArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+      <g id="Graphic_22">
+        <text transform="translate(97.3 129.25)" fill="#666">
+          <tspan font-family="Noto Sans Display" font-size="12" font-weight="400" fill="#666" x="0" y="13" xml:space="preserve">nutzt</tspan>
+        </text>
+      </g>
+      <g id="Line_23">
+        <path d="M 74.5 30 L 35 30 L 35 175 L 57.48572 175" marker-end="url(#FilledArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="8.0,8.0" stroke-width="2"/>
+      </g>
+      <g id="Graphic_24">
+        <text transform="translate(9.999997 175.464) rotate(-90)" fill="#666">
+          <tspan font-family="Noto Sans Display" font-size="12" font-weight="400" fill="#666" x="0" y="13" xml:space="preserve">häufige Codeabhängigkeit</tspan>
+        </text>
+      </g>
+      <g id="Graphic_25">
+        <text transform="translate(155 57.75)" fill="#666">
+          <tspan font-family="Noto Sans Display" font-size="12" font-weight="400" fill="#666" x="0" y="13" xml:space="preserve">Codeabhängigkeit</tspan>
+        </text>
+      </g>
+      <g id="Graphic_26">
+        <text transform="translate(155 130)" fill="#666">
+          <tspan font-family="Noto Sans Display" font-size="12" font-weight="400" fill="#666" x="0" y="13" xml:space="preserve">Codeabhängigkeit</tspan>
+        </text>
+      </g>
+      <g id="Group_27">
+        <g id="Graphic_31">
+          <path d="M 120.14908 276.2563 C 119.35315 280.49576 121.74424 284.89986 127.32236 288.15015 C 137.08545 293.83903 152.91454 293.83903 162.67764 288.15015 C 168.25575 284.89986 170.64685 280.49576 169.85091 276.2563 L 169.99998 276.2563 L 169.99998 230.73374 L 169.9202 230.73374 C 170.48299 226.62713 168.0688 222.408 162.67764 219.26666 C 152.91455 213.57778 137.08546 213.57778 127.32236 219.26666 C 121.9312 222.408 119.51701 226.62713 120.0798 230.73374 L 120.00001 230.73374 L 120.00001 276.2563 Z" fill="url(#Obj_Gradient)"/>
+          <path d="M 120.14908 276.2563 C 119.35315 280.49576 121.74424 284.89986 127.32236 288.15015 C 137.08545 293.83903 152.91454 293.83903 162.67764 288.15015 C 168.25575 284.89986 170.64685 280.49576 169.85091 276.2563 L 169.99998 276.2563 L 169.99998 230.73374 L 169.9202 230.73374 C 170.48299 226.62713 168.0688 222.408 162.67764 219.26666 C 152.91455 213.57778 137.08546 213.57778 127.32236 219.26666 C 121.9312 222.408 119.51701 226.62713 120.0798 230.73374 L 120.00001 230.73374 L 120.00001 276.2563 Z" stroke="#b4b4b4" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        </g>
+        <g id="Graphic_30">
+          <ellipse cx="144.99999" cy="229.56722" rx="25.0000259094473" ry="14.5672410308915" fill="url(#Obj_Gradient_2)"/>
+          <ellipse cx="144.99999" cy="229.56722" rx="25.0000259094473" ry="14.5672410308915" stroke="#b4b4b4" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        </g>
+        <g id="Line_29">
+          <path d="M 120 244.59065 C 120 245.6996 120.97656 259.32726 144.99998 259.32726 C 169.0234 259.32726 169.96945 245.92722 169.96945 245.10298" stroke="#b4b4b4" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        </g>
+        <g id="Line_28">
+          <path d="M 120.03055 259.78348 C 120.03055 260.89243 121.0071 274.5201 145.03052 274.5201 C 169.05394 274.5201 170 261.12005 170 260.2958" stroke="#b4b4b4" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        </g>
+      </g>
+      <g id="Line_32">
+        <line x1="145" y1="195.5" x2="145" y2="212.98572" marker-end="url(#FilledArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+      <g id="Graphic_33">
+        <text transform="translate(112.3 195)" fill="#666">
+          <tspan font-family="Noto Sans Display" font-size="12" font-weight="400" fill="#666" x="0" y="13" xml:space="preserve">nutzt</tspan>
+        </text>
+      </g>
+      <g id="Graphic_35">
+        <text transform="translate(134.38402 255)" fill="black">
+          <tspan font-family="Noto Sans Display" font-size="14" font-weight="700" fill="black" x="0" y="15" xml:space="preserve">DB</tspan>
+        </text>
+      </g>
+    </g>
+  </g>
+</svg>
