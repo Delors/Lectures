@@ -8,35 +8,9 @@
     :first-slide: last-viewed
     :master-password: WirklichSchwierig!
 
-.. |html-source| source::
-    :prefix: https://delors.github.io/
-    :suffix: .html
-
-.. |pdf-source| source::
-    :prefix: https://delors.github.io/
-    :suffix: .html.pdf
-
-.. |at| unicode:: 0x40
-.. |qm| unicode:: 0x22
-
-.. |python-icon| image:: /LectureDoc2/ext/icons/python-logo-only.svg
-                    :height: 1em
-                    :class: icon
-
-.. |java-icon| image:: /LectureDoc2/ext/icons/duke.svg
-                    :height: 1em
-                    :class: icon
-
-.. role:: incremental
-.. role:: eng
-.. role:: ger
-.. role:: peripheral
-.. role:: copy-to-clipboard
-.. role:: java(code)
-   :language: java
+.. include:: ../docutils.defs
 
 
-.. class:: animated-logo
 
 Datenstrukturen - Bäume und Graphen
 ====================================================
@@ -66,15 +40,16 @@ Datenstrukturen - Bäume und Graphen
         https://github.com/Delors/delors.github.io/issues
 
 
+
 .. class:: new-section transition-move-to-top
 
 Graphen
 --------------------------------------------------------
 
 
+
 Gerichteter Graph
 ---------------------
-
 
 .. definition::
 
@@ -97,14 +72,16 @@ Gerichteter Graph
       - Statt :math:`v_1, . . . v_n` werden häufig (Groß-) Buchstaben A, B, C etc. verwendet
 
 
+
 Gerichteter Graph - Beispiel
 -------------------------------
 
 .. raw:: html
-    :class: text-align-center
+    :class: center-content
 
-    <svg    width="48ch" height="28ch"
-            viewBox="0 0 24 14"
+    <div    style="width: 48ch; height: 28ch; container-type:size;">
+    <svg    viewBox="0 0 24 14"
+            font-size="2"
             version="1.1" xmlns="http://www.w3.org/2000/svg">
         <style>
             g.graph {
@@ -124,12 +101,9 @@ Gerichteter Graph - Beispiel
                         fill: blue;
                     }
                 }
-                path {
-                    fill: none;
-                    stroke:darkgray;
-                    stroke-width:0.2;
-                }
+                path, 
                 line {
+                    fill: none;
                     stroke:darkgray;
                     stroke-width:0.2;
                 }
@@ -137,14 +111,13 @@ Gerichteter Graph - Beispiel
                     fill: black;
                     font-family: var(--theme-code-font-family);
                     font-weight: bold;
-                    font-size: 0.2cqh;
-                }
-                .edge-label {
-                    fill: darkorange;
-                    font-family: var(--theme-code-font-family);
-                    font-weight: bold;
-                    font-size: 0.12cqh;
-                }
+
+                    &.edge-label {
+                        fill: darkorange;
+                        font-weight: normal;
+                        font-size: 60%;
+                    }
+                }                
             }
         </style>
         <defs>
@@ -194,6 +167,7 @@ Gerichteter Graph - Beispiel
             </g>
         </g>
     </svg>
+    </div>
 
 
 
@@ -214,10 +188,11 @@ Ungerichteter Graph - Beispiel
 -------------------------------
 
 .. raw:: html
-    :class: text-align-center
+    :class: center-content
 
-    <svg    width="48ch" height="28ch"
-            viewBox="0 0 24 14"
+    <div    style="width: 48ch; height: 28ch;">
+    <svg    viewBox="0 0 24 14"
+            font-size="2"
             version="1.1" xmlns="http://www.w3.org/2000/svg">
         <!-- the previous style is reused!-->
         <g class="graph">
@@ -229,7 +204,6 @@ Ungerichteter Graph - Beispiel
             <g class="incremental">
             <circle cx="1" cy="6" r="0.5" />
             <line x1="1.35" y1="5.65" x2="7.65" y2="1.35" />
-            <path d="M 7.5 1 C 4 0.5, 1 3, 1 5.5" />
             <text x="0.5" y="8.25">B</text>
             </g>
 
@@ -254,7 +228,7 @@ Ungerichteter Graph - Beispiel
             </g>
         </g>
     </svg>
-
+    </div>
 
 
 
@@ -272,14 +246,16 @@ Gewichteter Graph
     • Die Attributierung kann aber auch aus mehreren Attributen bestehen, z. B. aus einer Zahl und einer (Kanten-) Farbe; für dieses Beispiel sind die Ergebnisse von :math:`w` dann Zweitupel
 
 
+
 Gewichteter Graph - Beispiel
 -------------------------------
 
 .. raw:: html
-    :class: text-align-center
+    :class: center-content
 
-    <svg    width="48ch" height="28ch"
-            viewBox="0 0 24 14"
+    <div    style="width: 48ch; height: 28ch; container-type:size;">
+    <svg    viewBox="0 0 24 14"
+            font-size="2"
             version="1.1" xmlns="http://www.w3.org/2000/svg">
         <!-- the previous style is reused!-->
         <g class="graph">
@@ -291,7 +267,6 @@ Gewichteter Graph - Beispiel
             <g>
             <circle cx="1" cy="6" r="0.5" />
             <line x1="1.35" y1="5.65" x2="7.65" y2="1.35" />
-            <path d="M 7.5 1 C 4 0.5, 1 3, 1 5.5" />
             <text x="0.5" y="8.25">B</text>
             </g>
 
@@ -316,16 +291,17 @@ Gewichteter Graph - Beispiel
             </g>
 
             <g class="incremental" >
-                <text class="edge-label" x="1" y="2.75">6</text>
                 <text class="edge-label" x="5.5" y="4">8</text>
                 <text class="edge-label" x="12.5" y="4">2</text>
                 <text class="edge-label" x="12.5" y="8.5">12</text>
-                <text class="edge-label" x="15" y="12">7</text>
+                <text class="edge-label" x="15" y="12.25">7</text>
                 <text class="edge-label" x="3.5" y="11">7</text>
                 <text class="edge-label" x="20" y="5">9</text>
             </g>
         </g>
     </svg>
+    </div>
+
 
 
 Markierte Graphen
@@ -344,15 +320,15 @@ Markierte Graphen
 
 
 
-
 Markierter (gewichteter) Graph - Beispiel
 -----------------------------------------
 
 .. raw:: html
     :class: text-align-center
 
-    <svg    width="48ch" height="28ch"
-            viewBox="0 0 24 14"
+    <div    style="width: 48ch; height: 28ch; container-type:size;">
+    <svg    viewBox="0 0 24 14"
+            font-size="2"
             version="1.1" xmlns="http://www.w3.org/2000/svg">
         <!-- the previous style is reused!-->
         <g class="graph">
@@ -364,7 +340,6 @@ Markierter (gewichteter) Graph - Beispiel
             <g>
             <circle class="green" cx="1" cy="6" r="0.5" />
             <line x1="1.35" y1="5.65" x2="7.65" y2="1.35" />
-            <path d="M 7.5 1 C 4 0.5, 1 3, 1 5.5" />
             <text x="0.5" y="8.25">B</text>
             </g>
 
@@ -389,16 +364,16 @@ Markierter (gewichteter) Graph - Beispiel
             </g>
 
             <g>
-                <text class="edge-label" x="1.5" y="2.75">6</text>
                 <text class="edge-label" x="5.5" y="4">8</text>
                 <text class="edge-label" x="12.5" y="4">2</text>
                 <text class="edge-label" x="12.5" y="8.5">12</text>
-                <text class="edge-label" x="15" y="12">7</text>
+                <text class="edge-label" x="15" y="12.25">7</text>
                 <text class="edge-label" x="3.5" y="11">7</text>
                 <text class="edge-label" x="20" y="5">9</text>
             </g>
         </g>
     </svg>
+    </div>
 
 
 
@@ -417,6 +392,7 @@ Pfad
     • Für Pfade wird häufig eine Listenschreibweise verwendet: :math:`< v3, v1, v2, v3, v4 >`
 
 
+
 Fragestellungen auf Graphen
 -----------------------------
 
@@ -426,6 +402,7 @@ Fragestellungen auf Graphen
 • Existiert zwischen 2 Knoten A und B ein Pfad, d. h. ist B von A aus erreichbar?
 • Wenn mehrere Pfade zwischen 2 Knoten existieren, welcher ist der kürzeste?
 • Existieren in einem Graphen Zyklen?
+
 
 
 Implementierung von Graphen
@@ -438,8 +415,9 @@ Implementierung von Graphen
         .. raw:: html
             :class: text-align-center
 
-            <svg    width="24ch" height="14ch"
-                    viewBox="0 0 24 14"
+            <div    style="width: 24ch; height: 14ch; container-type:size;">
+            <svg    viewBox="0 0 24 14"
+                    font-size="2"
                     version="1.1" xmlns="http://www.w3.org/2000/svg">
                 <defs>
                     <marker
@@ -488,7 +466,7 @@ Implementierung von Graphen
                     </g>
                 </g>
             </svg>
-
+            </div>
 
     .. cell:: width-60
 
@@ -512,6 +490,24 @@ Implementierung von Graphen
 
                     .. card::
 
+                        .. example::
+
+                            Seien :java:`A` bis :java:`E` Instanzen der Klasse :java:`Node`, die einen Knoten im Graphen repräsentieren.
+
+                            ::
+
+                                // Konzeptionell
+                                // L0 = List<Tuple<Node,List<Node>>>(
+                                L0 = Map<Node,List<Node>>.of(
+                                    A, List.of(B),
+                                    B, List.of(A),
+                                    C, List.of(A),
+                                    D, List.of(D,C),
+                                    E, List.of(D,A),
+                                )
+
+                    .. card::
+
                         **Bewertung**
 
                         .. class:: incremental-list  positive-list
@@ -526,7 +522,6 @@ Implementierung von Graphen
 
                           - Existiert eine Kante von x nach y?
                           - Welche Kanten enden an einem Knoten x?
-
 
             .. card::
 
@@ -575,10 +570,13 @@ Implementierung von Graphen
                         - Arrays als typische Implementierung für Matrizen erfordern Reorganisationsaufwand, wenn dem Graphen neue Knoten hinzugefügt werden
 
 
+
 .. class:: new-subsection
 
 Suchalgorithmen auf Graphen
 ---------------------------
+
+
 
 Suchalgorithmen auf Graphen - Grundlegendes
 --------------------------------------------
@@ -586,7 +584,6 @@ Suchalgorithmen auf Graphen - Grundlegendes
 .. deck::
 
     .. card::
-
 
         **Eingaben**
 
@@ -677,41 +674,46 @@ Breite-zuerst-Suche (:eng:`Breadth-first-Search`)
 
             ⇒ Knoten werden markiert, bevor lange Pfade entstehen können
 
+
+
 Breite-zuerst-Suche - Beispiel
 -------------------------------
 
 .. raw:: html
     :class: text-align-center
 
-    <svg    width="48ch" height="28ch"
-            viewBox="0 0 24 14"
+    <div    style="width: 48ch; height: 28ch; container-type:size;">
+    <svg    viewBox="0 0 24 14"
+            font-size="2"
             version="1.1" xmlns="http://www.w3.org/2000/svg">
             <!-- the previous style is (also) used!-->
         <style>
-            g.graph {circle{
-                &.start-node {
-                    fill: none;
-                    stroke: red;
-                    stroke-width: 0.3;
-                }
-                &.visited-node {
-                    fill: lightgray;
-                    stroke: blue;
-                    stroke-width: 0.3;
-                }
-                &.unreached-node {
-                    fill: lightgray;
-                    stroke: none;
-                    stroke-width: 0.3;
+            g.graph {
+                circle{
+                    &.start-node {
+                        fill: none;
+                        stroke: red;
+                        stroke-width: 0.3;
+                    }
+                    &.visited-node {
+                        fill: lightgray;
+                        stroke: blue;
+                        stroke-width: 0.3;
+                    }
+                    &.unreached-node {
+                        fill: lightgray;
+                        stroke: none;
+                        stroke-width: 0.3;
+                    }
                 }
 
+                line, path { 
+                    &.irrelevant-edge {
+                        stroke: red;
+                        stroke-width: 0.2;
+                    }
+                }
             }
-                line, path { &.irrelevant-edge {
-                stroke: red;
-                stroke-width: 0.2;
-                }
-                }
-            {
         </style>
         <defs>
             <marker
@@ -800,6 +802,8 @@ Breite-zuerst-Suche - Beispiel
             </g>
         </g>
     </svg>
+    </div>
+
 
 
 Tiefe-zuerst-Suche
@@ -825,15 +829,15 @@ Tiefe-zuerst-Suche
 
 
 
-
 Tiefe-zuerst-Suche - Beispiel
 -------------------------------
 
 .. raw:: html
     :class: text-align-center
 
-    <svg    width="48ch" height="28ch"
-            viewBox="0 0 24 14"
+    <div    style="width: 48ch; height: 28ch; container-type:size;">
+    <svg    viewBox="0 0 24 14"
+            font-size="2"
             version="1.1" xmlns="http://www.w3.org/2000/svg">
             <!-- the previous style is (also) used!-->
         <style>
@@ -945,11 +949,9 @@ Tiefe-zuerst-Suche - Beispiel
                 <text class="edge-label" x="17" y="4.5">7</text>
                 <path class="irrelevant-edge" d="M 22 10.5 C 22 5.5, 16 1, 8.5 1" marker-end="url(#arrow)" stroke-dasharray="0.2,0.2"/>
             </g>
-
         </g>
     </svg>
-
-
+    </div>
 
 
 
@@ -965,8 +967,9 @@ Tiefe-zuerst-Suche - Beispiel
     .. raw:: html
         :class: text-align-center
 
-        <svg    width="36ch" height="21ch"
-                viewBox="0 0 24 14"
+        <div    style="width: 36ch; height: 21ch; container-type:size;">
+        <svg    viewBox="0 0 24 14"
+                font-size="2"
                 version="1.1" xmlns="http://www.w3.org/2000/svg">
                 <!-- the previous style is (also) used!-->
             <defs>
@@ -1001,7 +1004,6 @@ Tiefe-zuerst-Suche - Beispiel
 
                 <g>
                 <circle cx="15" cy="6" r="0.5" />
-
                 <text x="15.75" y="6.75">3</text>
                 </g>
 
@@ -1020,6 +1022,7 @@ Tiefe-zuerst-Suche - Beispiel
                 </g>
             </g>
         </svg>
+        </div>
 
     Führen Sie sowohl eine Tiefe- als auch Breite-zuerst-Suche ausgehend von dem Knoten 4 als auch Knoten 5 durch. Sollte es mehrere Möglichkeiten geben, dann wählen Sie zuerst den Knoten mit der kleineren Nummer!
 
@@ -1060,12 +1063,12 @@ Tiefe-zuerst-Suche - Beispiel
 
 
 
-
-
 .. class:: new-section transition-move-to-top
 
 Bäume
 --------------------------------------------------------
+
+
 
 Bäume - Einführung
 ------------------
@@ -1088,6 +1091,7 @@ Bäume - Einführung
   - Schnelles Suchen
 
 
+
 Bäume - Schlüsselbegriffe
 -------------------------
 
@@ -1101,7 +1105,10 @@ Bäume - Schlüsselbegriffe
 
             .. raw:: html
 
-                <svg width="21ch" height="22ch" viewBox="0 0 21 22" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                <div    style="width: 21ch; height: 22ch; container-type:size;">
+                <svg    viewBox="0 0 21 22"
+                        version="1.1" xmlns="http://www.w3.org/2000/svg"
+                        font-size="2">
                     <style>
                         g.tree {
                             circle {
@@ -1116,7 +1123,6 @@ Bäume - Schlüsselbegriffe
                                 fill: black;
                                 font-family: var(--theme-code-font-family);
                                 font-weight: bold;
-                                font-size: 0.2cqh;
                             }
                         }
                     </style>
@@ -1169,6 +1175,7 @@ Bäume - Schlüsselbegriffe
                         </g>
                     </g>
                 </svg>
+                </div>
 
     .. cell:: width-70 incremental
 
@@ -1260,6 +1267,7 @@ Bäume - Schlüsselbegriffe
                     Da die Kanten in einem Baum grundsätzlich von einem Eltern- zu einem Kindknoten gehen (d. h. es sind gerichtete Kanten), wird die Kantenrichtung typischerweise nicht angegeben (d. h. es wird keine Pfeilspitze gezeichnet).
 
 
+
 Traversierung von Bäumen
 --------------------------
 
@@ -1291,7 +1299,9 @@ Traversierung von Bäumen
 
                     .. raw:: html
 
-                        <svg width="48ch" height="22ch" viewBox="0 0 48 22" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                        <div    style="width: 48ch; height: 22ch; container-type:size;">
+                        <svg    font-size="2"
+                                viewBox="0 0 48 22" version="1.1" xmlns="http://www.w3.org/2000/svg">
                             <style>
                                 g.tree {
                                     circle.visited-node {
@@ -1350,49 +1360,50 @@ Traversierung von Bäumen
                                 </g>
 
                                 <g class="incremental">
-                                    <text x="15" y="1.55">Reihenfolge = [ </text>
+                                    <text x="13.75" y="1.75">Reihenfolge = [ </text>
                                     <circle class="visited-node" cx="8" cy="1" r="0.5" />
-                                    <text x="30" y="1.55">2,</text>
+                                    <text x="30" y="1.75">2,</text>
                                 </g>
 
                                 <g class="incremental">
                                     <circle class="visited-node" cx="3" cy="6" r="0.5" />
-                                    <text x="32" y="1.55">1,</text>
+                                    <text x="32" y="1.75">1,</text>
                                 </g>
 
                                 <g class="incremental">
                                     <circle class="visited-node" cx="13" cy="6" r="0.5" />
-                                    <text x="34" y="1.55">7,</text>
+                                    <text x="34" y="1.75">7,</text>
                                 </g>
 
                                 <g class="incremental">
                                     <circle class="visited-node" cx="8" cy="11" r="0.5" />
-                                    <text x="36" y="1.55">4,</text>
+                                    <text x="36" y="1.75">4,</text>
                                 </g>
 
 
                                 <g class="incremental">
                                     <circle class="visited-node" cx="3" cy="16" r="0.5" />
-                                    <text x="38" y="1.55">3,</text>
+                                    <text x="38" y="1.75">3,</text>
                                 </g>
 
                                 <g class="incremental">
                                     <circle class="visited-node" cx="13" cy="16" r="0.5" />
-                                    <text x="40" y="1.55">6,</text>
+                                    <text x="40" y="1.75">6,</text>
                                 </g>
 
                                 <g class="incremental">
                                     <circle class="visited-node" cx="8" cy="21" r="0.5" />
-                                    <text x="42" y="1.55">5,</text>
+                                    <text x="42" y="1.75">5,</text>
                                 </g>
 
                                 <g class="incremental">
                                     <circle class="visited-node" cx="18" cy="11" r="0.5" />
-                                    <text x="44" y="1.55">8]</text>
+                                    <text x="44" y="1.75">8]</text>
                                 </g>
 
                             </g>
                         </svg>
+                        </div>
 
             .. cell:: width-30
 
@@ -1412,11 +1423,13 @@ Traversierung von Bäumen
 
                     .. raw:: html
 
-                        <svg width="48ch" height="22ch" viewBox="0 0 48 22" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                        <div    style="width: 48ch; height: 22ch; container-type:size;">
+                        <svg    font-size="2" viewBox="0 0 48 22" 
+                                version="1.1" xmlns="http://www.w3.org/2000/svg">
                             <g class="tree">
                                 <g>
                                     <circle cx="8" cy="1" r="0.5" />
-                                    <text x="8.75" y="1.55">2</text>
+                                    <text x="8.75" y="1.75">2</text>
                                 </g>
 
                                 <g>
@@ -1463,48 +1476,49 @@ Traversierung von Bäumen
 
 
                                 <g class="incremental">
-                                    <text x="15" y="1.55">Reihenfolge = [ </text>
+                                    <text x="13.75" y="1.75">Reihenfolge = [ </text>
                                     <circle class="visited-node" cx="3" cy="6" r="0.5" />
-                                    <text x="30" y="1.55">1,</text>
+                                    <text x="30" y="1.75">1,</text>
                                 </g>
 
                                 <g class="incremental">
                                     <circle class="visited-node" cx="8" cy="1" r="0.5" />
-                                    <text x="32" y="1.55">2,</text>
+                                    <text x="32" y="1.75">2,</text>
                                 </g>
 
                                 <g class="incremental">
                                     <circle class="visited-node" cx="3" cy="16" r="0.5" />
-                                    <text x="34" y="1.55">3,</text>
+                                    <text x="34" y="1.75">3,</text>
                                 </g>
 
                                 <g class="incremental">
                                     <circle class="visited-node" cx="8" cy="11" r="0.5" />
-                                    <text x="36" y="1.55">4,</text>
+                                    <text x="36" y="1.75">4,</text>
                                 </g>
 
                                 <g class="incremental">
                                     <circle class="visited-node" cx="8" cy="21" r="0.5" />
-                                    <text x="38" y="1.55">5,</text>
+                                    <text x="38" y="1.75">5,</text>
                                 </g>
 
                                 <g class="incremental">
                                     <circle class="visited-node" cx="13" cy="16" r="0.5" />
-                                    <text x="40" y="1.55">6,</text>
+                                    <text x="40" y="1.75">6,</text>
                                 </g>
 
                                 <g class="incremental">
                                     <circle class="visited-node" cx="13" cy="6" r="0.5" />
-                                    <text x="42" y="1.55">7,</text>
+                                    <text x="42" y="1.75">7,</text>
                                 </g>
 
                                 <g class="incremental">
                                     <circle class="visited-node" cx="18" cy="11" r="0.5" />
-                                    <text x="44" y="1.55">8]</text>
+                                    <text x="44" y="1.75">8]</text>
                                 </g>
 
                             </g>
                         </svg>
+                        </div>
 
             .. cell:: width-30
 
@@ -1529,7 +1543,9 @@ Traversierung von Bäumen
 
                     .. raw:: html
 
-                        <svg width="48ch" height="22ch" viewBox="0 0 48 22" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                        <div    style="width: 48ch; height: 22ch; container-type:size;">
+                        <svg    font-size="2"
+                                viewBox="0 0 48 22" version="1.1" xmlns="http://www.w3.org/2000/svg">
                             <style>
                                 g.tree {
                                     line, path {
@@ -1602,7 +1618,7 @@ Traversierung von Bäumen
                                     <text x="8.75" y="21.5">5</text>
                                 </g>
 
-                                <text x="15" y="1.55">Reihenfolge = [ </text>
+                                <text x="13.75" y="1.75">Reihenfolge = [ </text>
 
                                 <g class="incremental">
                                     <line   class="traversal-edge"
@@ -1613,7 +1629,7 @@ Traversierung von Bäumen
 
                                 <g class="incremental">
                                     <circle class="visited-node" cx="3" cy="6" r="0.5" />
-                                    <text x="30" y="1.55">1,</text>
+                                    <text x="30" y="1.75">1,</text>
                                 </g>
 
                                 <g class="incremental">
@@ -1625,7 +1641,7 @@ Traversierung von Bäumen
 
                                 <g class="incremental">
                                     <circle class="visited-node" cx="3" cy="16" r="0.5" />
-                                    <text x="32" y="1.55">3,</text>
+                                    <text x="32" y="1.75">3,</text>
                                 </g>
 
                                 <g class="incremental">
@@ -1637,7 +1653,7 @@ Traversierung von Bäumen
 
                                 <g class="incremental">
                                     <circle class="visited-node" cx="8" cy="21" r="0.5" />
-                                    <text x="34" y="1.55">5,</text>
+                                    <text x="34" y="1.75">5,</text>
                                 </g>
 
                                 <g class="incremental">
@@ -1649,7 +1665,7 @@ Traversierung von Bäumen
 
                                 <g class="incremental">
                                     <circle class="visited-node" cx="13" cy="16" r="0.5" />
-                                    <text x="36" y="1.55">6,</text>
+                                    <text x="36" y="1.75">6,</text>
                                 </g>
 
                                 <g class="incremental">
@@ -1661,7 +1677,7 @@ Traversierung von Bäumen
 
                                 <g class="incremental">
                                     <circle class="visited-node" cx="8" cy="11" r="0.5" />
-                                    <text x="38" y="1.55">4,</text>
+                                    <text x="38" y="1.75">4,</text>
                                 </g>
 
                                 <g class="incremental">
@@ -1673,7 +1689,7 @@ Traversierung von Bäumen
 
                                 <g class="incremental">
                                     <circle class="visited-node" cx="18" cy="11" r="0.5" />
-                                    <text x="40" y="1.55">8,</text>
+                                    <text x="40" y="1.75">8,</text>
                                 </g>
 
                                 <g class="incremental">
@@ -1685,7 +1701,7 @@ Traversierung von Bäumen
 
                                 <g class="incremental">
                                     <circle class="visited-node" cx="13" cy="6" r="0.5" />
-                                    <text x="42" y="1.55">7,</text>
+                                    <text x="42" y="1.75">7,</text>
                                 </g>
 
                                 <g class="incremental">
@@ -1697,11 +1713,12 @@ Traversierung von Bäumen
 
                                 <g class="incremental">
                                     <circle class="visited-node" cx="8" cy="1" r="0.5" />
-                                    <text x="44" y="1.55">2]</text>
+                                    <text x="44" y="1.75">2]</text>
                                 </g>
 
                             </g>
                         </svg>
+                        </div>
 
             .. cell:: width-30
 
@@ -1828,9 +1845,6 @@ Implementierung eines binären Suchbaums (BST)
         }
 
 
-        
-        
-        
 
 .. class:: exercises
 
