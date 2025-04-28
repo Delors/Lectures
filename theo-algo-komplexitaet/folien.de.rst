@@ -7,14 +7,8 @@
     :id: lecture-theo-algo-komplexitaet
     :first-slide: last-viewed
     :master-password: WirklichSchwierig!
-    
-.. |html-source| source::
-    :prefix: https://delors.github.io/
-    :suffix: .html
 
-.. |pdf-source| source::
-    :prefix: https://delors.github.io/
-    :suffix: .html.pdf
+.. include:: ../docutils.defs
 
 .. |group_assignment_template.py| source:: code/group_assignment_template.py
             :path: relative
@@ -23,32 +17,6 @@
 .. |GroupAssignmentTemplate.java| source:: code/GroupAssignmentTemplate.java
             :path: relative
             :prefix: https://delors.github.io/
-.. |at| unicode:: 0x40
-.. |qm| unicode:: 0x22 
-
-.. |python-icon| image:: /LectureDoc2/ext/icons/python-logo-only.svg
-                    :height: 1em
-                    :class: icon
-
-.. |java-icon| image:: /LectureDoc2/ext/icons/duke.svg
-                    :height: 1em
-                    :class: icon
-
-.. role:: incremental
-.. role:: appear
-.. role:: eng
-.. role:: ger
-.. role:: dhbw-red
-.. role:: green
-.. role:: the-blue
-.. role:: the-green
-.. role:: obsolete
-.. role:: monospaced
-.. role:: peripheral
-.. role:: copy-to-clipboard
-.. role:: kbd
-.. role:: java(code)
-   :language: java
 
 
 
@@ -2555,20 +2523,20 @@ Backtracking - Allgemein
 
             w, , , , T
             w, w, , , T
-            w, w, w, , :dhbw-red:`K`, 2
+            w, w, w, , :red:`K`, 2
             w, w, f, , T, 2
-            w, w, f, w, :the-green:`L`
-            w, w, f, f, :dhbw-red:`K`
-            w, f, , , :dhbw-red:`K`, 4
+            w, w, f, w, :green:`L`
+            w, w, f, f, :red:`K`
+            w, f, , , :red:`K`, 4
             f, , , , T
-            f, w, , , :dhbw-red:`K`, 4
+            f, w, , , :red:`K`, 4
             f, f, , , T
             f, f, w, , T
-            f, f, w, w, :dhbw-red:`K`
-            f, f, w, f, :the-green:`L`
+            f, f, w, w, :red:`K`
+            f, f, w, f, :green:`L`
             f, f, f, , T
-            f, f, f, w, :the-green:`L`
-            f, f, f, f, :dhbw-red:`K`
+            f, f, f, w, :green:`L`
+            f, f, f, f, :red:`K`
 
 
 

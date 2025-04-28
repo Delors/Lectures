@@ -8,12 +8,7 @@
     :first-slide: last-viewed
     :master-password: WirklichSchwierig!
     
-.. |html-source| source::
-    :prefix: https://delors.github.io/
-    :suffix: .html 
-.. |pdf-source| source::
-    :prefix: https://delors.github.io/
-    :suffix: .html.pdf
+.. include:: ../docutils.defs
 
 .. |SomeText.txt| source:: code/SomeText.txt
     :path: relative
@@ -23,28 +18,7 @@
     :path: relative
     :prefix: https://delors.github.io/
 
-.. |at| unicode:: 0x40
-.. |qm| unicode:: 0x22 
 
-.. role:: incremental
-.. role:: appear
-.. role:: eng
-.. role:: ger
-.. role:: emph
-.. role:: obsolete
-.. role:: monospaced
-.. role:: copy-to-clipboard
-.. role:: kbd
-
-.. role:: python(code)
-   :language: python
-
-.. role:: java(code)
-   :language: java
-
-
-
-.. class:: animated-logo
 
 Formale Sprachen
 ======================================================
@@ -55,7 +29,7 @@ Formale Sprachen
 :Kontakt: michael.eichberg@dhbw.de, Raum 149B
 :Version: 1.1.1
 
-.. container:: minor
+.. container:: peripheral
 
     :Quelle: 
         Die Folien sind teilweise inspiriert von oder basierend auf Lehrmaterial von Prof. Dr. Ritterbusch und Theoretische Informatik - kurzgefasst von Prof. Dr. Uwe Schöning.
