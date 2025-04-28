@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+    "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg
+    xmlns:xl="http://www.w3.org/1999/xlink"
+    xmlns="http://www.w3.org/2000/svg"
+    version="1.1"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    viewBox="200 30 919 419"
+    width="719"
+    height="389"
+>
+<style>
+  @import url('/LectureDoc2/ext/fonts/ld-fonts.css');
+</style>
+  <metadata> Produced by OmniGraffle 8.0\n2024-01-30 09:09:04 +0000</metadata>
+  <g
+        id="Canvas_1"
+        stroke-opacity="1"
+        stroke-dasharray="none"
+        fill="none"
+        stroke="none"
+        fill-opacity="1"
+    >
+    <title>architecture</title>
+    <g id="drawing-area_Master_layer">
+      <title>Master layer</title>
+      <g id="Graphic_2">
+        <rect x="905" y="405" width="10" height="10" fill="white" />
+      </g>
+    </g>
+    <g id="Canvas_1_web-db">
+      <title>web-db</title>
+      <g id="Graphic_145">
+        <path
+                    d="M 609.0178 68.28591 C 531.3035 -9.428768 405.3039 -9.428768 327.5896 68.28591 C 249.87493 146.00018 249.87493 271.99982 327.5896 349.7141 C 405.3039 427.42877 531.3035 427.42877 609.0178 349.7141 C 686.7325 271.99982 686.7325 146.00018 609.0178 68.28591 M 581.44066 95.86304 C 643.9248 158.34688 643.9248 259.65312 581.44066 322.13696 C 518.9568 384.6211 417.6506 384.6211 355.16674 322.13696 C 292.6826 259.65312 292.6826 158.34688 355.16674 95.86304 C 417.6506 33.37888 518.9568 33.37888 581.44066 95.86304"
+                    fill="#d5d5d5"
+                    fill-opacity=".34"
+                />
+        <path
+                    d="M 609.0178 68.28591 C 531.3035 -9.428768 405.3039 -9.428768 327.5896 68.28591 C 249.87493 146.00018 249.87493 271.99982 327.5896 349.7141 C 405.3039 427.42877 531.3035 427.42877 609.0178 349.7141 C 686.7325 271.99982 686.7325 146.00018 609.0178 68.28591 M 581.44066 95.86304 C 643.9248 158.34688 643.9248 259.65312 581.44066 322.13696 C 518.9568 384.6211 417.6506 384.6211 355.16674 322.13696 C 292.6826 259.65312 292.6826 158.34688 355.16674 95.86304 C 417.6506 33.37888 518.9568 33.37888 581.44066 95.86304"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
+      </g>
+      <g id="Line_24">
+        <path
+                    d="M 566.73805 357.29476 C 566.73805 357.29476 368.56466 389.13098 316.32198 303.15574 C 264.0793 217.1805 291.67607 103.87296 382.33368 53.822406 C 472.9913 3.771855 583.7735 40.97504 636.322 126.48907 C 688.8705 212.0031 567.81755 355.6668 567.81755 355.6668"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="0"
+                />
+      </g>
+      <g id="Line_26">
+        <path
+                    d="M 642.8997 147.63814 C 642.8997 147.63814 605.31546 348.2936 509.1824 378.10117 C 413.04936 407.90875 328.8625 351.9969 303.57265 252.8519 C 278.2828 153.70692 324.1485 58.36506 419.91523 28.142694 C 515.68194 -2.079669 641.6066 146.17408 641.6066 146.17408"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="0"
+                />
+      </g>
+      <g id="Graphic_27">
+        <text fill="black">
+          <path
+                        d="M 414.71345 42.62511 C 414.71345 42.62511 608.8202 57.91648 636.6923 153.26039 C 664.56445 248.6043 611.4024 352.37368 513.09554 379.16667 C 414.7887 405.95966 317.97922 342.8109 289.6923 247.83333 C 261.4054 152.85576 413.2494 43.918185 413.2494 43.918185"
+                        id="TextPath1"
+                    />
+          <textPath xl:href="#TextPath1" pathLength="1091.54022984037">
+            <tspan
+                            font-family="Noto Sans Display"
+                            font-size="16"
+                            font-weight="400"
+                            fill="black"
+                            x="485.2234"
+                            y="0"
+                        >External Interfaces</tspan>
+          </textPath>
+        </text>
+      </g>
+      <g id="Line_28">
+        <path
+                    d="M 414.71345 42.62511 C 414.71345 42.62511 608.8202 57.91648 636.6923 153.26039 C 664.56445 248.6043 611.4024 352.37368 513.09554 379.16667 C 414.7887 405.95966 317.97922 342.8109 289.6923 247.83333 C 261.4054 152.85576 413.2494 43.918185 413.2494 43.918185"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="0"
+                />
+      </g>
+      <g id="Line_98">
+        <path
+                    d="M 287.81288 219.2035 C 287.81288 219.2035 376.0499 35.112753 476.6221 31.2019 C 577.19424 27.291046 644.0415 103.08692 642.80896 205.39912 C 641.57646 307.7113 572.5973 387.93356 472.27163 392.33987 C 371.94597 396.7462 288.68297 220.95236 288.68297 220.95236"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="0"
+                />
+      </g>
+      <g id="Graphic_97">
+        <text fill="black">
+          <path
+                        d="M 345.748 343.8666 C 345.748 343.8666 277.96917 151.30179 346.31904 77.42114 C 414.6689 3.5404863 515.5328 9.868138 587.00695 83.085295 C 658.4811 156.30245 666.43115 261.80378 598.6059 335.86047 C 530.7807 409.91717 347.59986 344.488 347.59986 344.488"
+                        id="TextPath2"
+                    />
+          <textPath xl:href="#TextPath2" pathLength="1098.26377128148">
+            <tspan
+                            font-family="Noto Sans Display"
+                            font-size="16"
+                            font-weight="400"
+                            fill="black"
+                            x="539.0137"
+                            y="0"
+                        >Web</tspan>
+          </textPath>
+        </text>
+      </g>
+      <g id="Line_96">
+        <path
+                    d="M 345.748 343.8666 C 345.748 343.8666 277.96917 151.30179 346.31904 77.42114 C 414.6689 3.5404863 515.5328 9.868138 587.00695 83.085295 C 658.4811 156.30245 666.43115 261.80378 598.6059 335.86047 C 530.7807 409.91717 347.59986 344.488 347.59986 344.488"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="0"
+                />
+      </g>
+      <g id="Graphic_95">
+        <text transform="translate(331.57895 75.52982) rotate(-34.219474)" fill="black">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="16"
+                        font-weight="400"
+                        fill="black"
+                        x="6.546875"
+                        y="15"
+                    >Devices</tspan>
+        </text>
+      </g>
+      <g id="Graphic_94">
+        <text transform="translate(299.81387 242.94965) rotate(71.32959)" fill="black">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="16"
+                        font-weight="400"
+                        fill="black"
+                        x="23.88672"
+                        y="15"
+                    >DB</tspan>
+        </text>
+      </g>
+      <g id="Graphic_93">
+        <text fill="black">
+          <path
+                        d="M 287.81288 219.2035 C 287.81288 219.2035 376.0499 35.112753 476.6221 31.2019 C 577.19424 27.291046 644.0415 103.08692 642.80896 205.39912 C 641.57646 307.7113 572.5973 387.93356 472.27163 392.33987 C 371.94597 396.7462 288.68297 220.95236 288.68297 220.95236"
+                        id="TextPath3"
+                    />
+          <textPath xl:href="#TextPath3" pathLength="1098.26377128148">
+            <tspan
+                            font-family="Noto Sans Display"
+                            font-size="16"
+                            font-weight="400"
+                            fill="black"
+                            x="547.32226"
+                            y="0"
+                        >UI</tspan>
+          </textPath>
+        </text>
+      </g>
+      <g id="Line_7">
+        <path
+                    d="M 472.72304 308.5 C 472.72304 308.5 385.13957 267.2116 383.72304 216.5 C 382.3065 165.7884 419.2892 129.51132 467.72304 129.5 C 516.1569 129.48868 553.26656 166.03175 554.6831 216.46005 C 556.0996 266.88834 472.72304 307.5 472.72304 307.5"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="0"
+                />
+      </g>
+      <g id="Line_14">
+        <path
+                    d="M 477.359 350.5 C 477.359 350.5 340.1792 294.26052 337.34613 217.16667 C 334.5131 140.07281 390.29638 79.69892 467.359 78.37683 C 544.4216 77.05474 606.1482 135.59502 609.359 212.5 C 612.56976 289.405 478.6923 349.83333 478.6923 349.83333"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="0"
+                />
+      </g>
+    </g>
+  </g>
+</svg>
