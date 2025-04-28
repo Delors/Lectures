@@ -1,15 +1,3 @@
-images/coupling
-images/ocp-example
-images/segregation
-images/cqs_and_cqrs
-images/hexagonal-architecture
-images/clean-architecture
-images/onion-architecture
-images/dip-layers
-
-ccp-and-srp.svg
-n-layer-architecture.svg
-amdahl.svg
 
 # Content that we don't want to share/can't share, because of licensing!
 external
