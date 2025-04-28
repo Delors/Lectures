@@ -7,24 +7,8 @@
     :first-slide: last-viewed
     :master-password: WirklichSchwierig!
 
-.. |at| unicode:: 0x40
+.. include:: ../docutils.defs
 
-.. role:: copy-to-clipboard
-.. role:: incremental   
-.. role:: eng
-.. role:: ger
-.. role:: red
-.. role:: green
-.. role:: obsolete
-.. role:: peripheral  
-.. role:: math-i
-.. role:: math-r
-.. role:: latex(code)
-  :language: latex
-.. role:: raw-html(raw)
-   :format: html
-.. role:: java(code)
-   :language: java
 
 
 W3WI_SE303.2 - Moderne Programmierkonzepte

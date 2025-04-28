@@ -6,18 +6,7 @@
     :id: lecture-w3wi_110.2-verteilte_systeme_data_science
     :first-slide: last-viewed
     
-.. |at| unicode:: 0x40
-
-.. role:: incremental   
-.. role:: eng
-.. role:: ger
-.. role:: red
-.. role:: green
-.. role:: the-blue
-.. role:: obsolete
-
-.. role:: raw-html(raw)
-   :format: html
+.. include:: ../docutils.defs
 
 
 

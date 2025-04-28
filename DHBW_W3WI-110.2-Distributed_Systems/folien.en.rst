@@ -8,18 +8,7 @@
     :first-slide: last-viewed
     :master-password: WirklichSchwierig!
 
-.. |at| unicode:: 0x40
-
-.. role:: incremental   
-.. role:: eng
-.. role:: ger
-.. role:: red
-.. role:: green
-.. role:: obsolete
-.. role:: peripheral
-
-.. role:: raw-html(raw)
-   :format: html
+.. include:: ../docutils.defs
 
 
 

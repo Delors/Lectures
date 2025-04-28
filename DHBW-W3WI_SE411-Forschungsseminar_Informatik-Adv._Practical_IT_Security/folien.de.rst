@@ -6,13 +6,7 @@
     :id: 2024_08-w3wi_se411-forschungsseminar_informatik-adv._practical_it_security
     :first-slide: last-viewed
 
-.. role:: eng
-.. role:: ger
-.. role:: red
-.. role:: dhbw-red
-.. role:: green
-.. role:: blue
-.. role:: peripheral
+.. include:: ../docutils.defs
 
 
 

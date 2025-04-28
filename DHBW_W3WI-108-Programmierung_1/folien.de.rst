@@ -6,25 +6,7 @@
     :id: lecture-w3wi_108-programmierung_1
     :first-slide: last-viewed
 
-.. |html-source| source::
-    :prefix: https://delors.github.io/
-    :suffix: .html
-.. |pdf-source| source::
-    :prefix: https://delors.github.io/
-    :suffix: .html.pdf
-
-.. |at| unicode:: 0x40
-
-.. role:: incremental   
-.. role:: eng
-.. role:: ger
-.. role:: red
-.. role:: green
-.. role:: the-blue
-.. role:: obsolete
-
-.. role:: raw-html(raw)
-   :format: html
+.. include:: ../docutils.defs
 
 
 

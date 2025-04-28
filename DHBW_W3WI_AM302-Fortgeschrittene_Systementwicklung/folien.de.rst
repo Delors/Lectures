@@ -6,26 +6,8 @@
     :id: lecture-w3wi_am302-fortgeschrittene_systementwicklung
     :first-slide: last-viewed
 
-.. |html-source| source::
-    :prefix: https://delors.github.io/
-    :suffix: .html
-.. |pdf-source| source::
-    :prefix: https://delors.github.io/
-    :suffix: .html.pdf
-
-.. |at| unicode:: 0x40
-
-.. role:: incremental   
-.. role:: eng
-.. role:: ger
-.. role:: red
-.. role:: green
-.. role:: the-blue
-.. role:: obsolete
-
-.. role:: raw-html(raw)
-   :format: html
-
+.. include:: ../docutils.defs
+  
 
 
 W3WI_AM302 - Fortgeschrittene Systementwicklung

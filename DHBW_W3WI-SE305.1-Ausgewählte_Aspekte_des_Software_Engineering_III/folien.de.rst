@@ -6,26 +6,7 @@
     :id: lecture-w3wi_se395.1-ausgewaehlte_aspekte_des_software_engineering_iii
     :first-slide: last-viewed
 
-.. |html-source| source::
-    :prefix: https://delors.github.io/
-    :suffix: .html
-.. |pdf-source| source::
-    :prefix: https://delors.github.io/
-    :suffix: .html.pdf
-
-.. |at| unicode:: 0x40
-
-.. role:: incremental   
-.. role:: eng
-.. role:: ger
-.. role:: red
-.. role:: green
-.. role:: the-blue
-.. role:: minor
-.. role:: obsolete
-
-.. role:: raw-html(raw)
-   :format: html
+.. include:: ../docutils.defs
 
 
 

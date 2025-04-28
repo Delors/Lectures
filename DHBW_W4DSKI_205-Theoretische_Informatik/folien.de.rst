@@ -6,22 +6,8 @@
     :id: lecture-w4dski_205-theoretische_informatik
     :first-slide: last-viewed
 
-.. |html-source| source::
-    :prefix: https://delors.github.io/
-    :suffix: .html
-.. |pdf-source| source::
-    :prefix: https://delors.github.io/
-    :suffix: .html.pdf
+.. include:: ../docutils.defs
 
-.. |at| unicode:: 0x40
-
-.. role:: incremental   
-.. role:: eng
-.. role:: ger
-.. role:: obsolete
-
-.. role:: raw-html(raw)
-   :format: html
 
 
 

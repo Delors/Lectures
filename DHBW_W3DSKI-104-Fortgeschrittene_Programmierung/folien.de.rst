@@ -6,20 +6,7 @@
     :id: lecture-w3dski_10-fortgeschrittene_programmierung
     :first-slide: last-viewed
 
-.. |at| unicode:: 0x40
-
-.. role:: incremental   
-.. role:: eng
-.. role:: ger
-.. role:: red
-.. role:: green
-.. role:: the-blue
-.. role:: minor
-.. role:: obsolete
-.. role:: line-above
-
-.. role:: raw-html(raw)
-   :format: html
+.. include:: ../docutils.defs
 
 
 

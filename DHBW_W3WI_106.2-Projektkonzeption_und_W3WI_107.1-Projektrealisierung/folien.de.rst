@@ -6,11 +6,7 @@
     :id: project-w3wi_106.2-107.1-projektkonzeption_und_projektrealisierung
     :first-slide: last-viewed
 
-.. |date| date::
-
-.. role:: ger
-.. role:: peripheral
-.. role:: obsolete
+.. include:: ../docutils.defs
 
 
 
