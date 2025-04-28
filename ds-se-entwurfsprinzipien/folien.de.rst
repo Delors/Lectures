@@ -1,50 +1,25 @@
 .. meta::
-    :version: genesis
+    :version: renaissance
     :author: Michael Eichberg
-    :keywords: "Verteilte Anwendungen", "Design Principles", "Architekturstile"
+    :keywords: "Verteilte Anwendungen", "Entwurfsprinzipien", "Architekturstile"
     :description lang=de: Diskussion von Entwurfsprinzipien für moderne verteilte Anwendungen
-    :id: lecture-ds-design-principles
+    :id: lecture-ds-entwurfsprinzipien
     :first-slide: last-viewed
 
-.. |html-source| source::
-    :prefix: https://delors.github.io/
-    :suffix: .html
-.. |pdf-source| source::
-    :prefix: https://delors.github.io/
-    :suffix: .html.pdf
-.. |at| unicode:: 0x40
-
-.. role:: incremental
-.. role:: eng
-.. role:: ger
-.. role:: minor
-.. role:: obsolete
-.. role:: dhbw-red
-.. role:: dhbw-gray
-.. role:: dhbw-light-gray
-.. role:: the-blue
-.. role:: the-green
-.. role:: the-orange
-.. role:: shiny-green
-.. role:: shiny-red
-.. role:: black
-.. role:: dark-red
-.. role:: far-far-larger
-
-.. role:: raw-html(raw)
-   :format: html
+.. include:: ../docutils.defs
 
 
-Entwurfsprinzipien für :raw-html:`<br>` Moderne Verteilte Anwendungen
+
+Entwurfsprinzipien für Moderne Verteilte Anwendungen
 ===============================================================================
 
 (:eng:`Design Principles and Design Patterns for Distributed Applications`)
 
-.. container:: line-above padding-bottom-1em
+----
 
-  :Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
-  :Kontakt: michael.eichberg@dhbw.de
-  :Version: 1.0
+:Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
+:Kontakt: michael.eichberg@dhbw.de
+:Version: 1.0.1
 
 .. supplemental::
 
@@ -69,10 +44,9 @@ Entwurfsprinzipien
 Entwurfsziele
 -------------------------------------------------------------------------------------------------
 
+Die Entitäten (:light-gray:`Klassen`, :gray:`Module`, :gray:`Komponenten`, Services…) unseres Entwurfs können:
 
-Die Entitäten (:dhbw-light-gray:`Klassen`, :dhbw-gray:`Module`, :dhbw-gray:`Komponenten`, Services…) unseres Entwurfs können:
-
-.. class:: list-with-explanations incremental
+.. class:: incremental-list list-with-explanations 
 
 - unabhängig von einander von einem “kleinen” Team iterativ entwickelt werden
 
@@ -81,8 +55,8 @@ Die Entitäten (:dhbw-light-gray:`Klassen`, :dhbw-gray:`Module`, :dhbw-gray:`Kom
 - unabhängig von einander bereitgestellt (:eng:`to deploy`) werden
 - unabhängig von einander gewartet und weiterentwickelt werden
 
-.. admonition:: Hinweis
-  :class: warning incremental
+.. hint::
+  :class: incremental
 
   Diese Kriterien erlauben es uns einen „fertigen“ Entwurf zu beurteilen ohne zu sagen, wie das Ziel erreicht werden kann.
 
@@ -91,24 +65,19 @@ Die Entitäten (:dhbw-light-gray:`Klassen`, :dhbw-gray:`Module`, :dhbw-gray:`Kom
   Die unabhängige Testbarkeit ersetzt aber nicht die Notwendigkeit von Integrationstests.
 
 
-.. class:: center-child-elements
 
-\ 
---
+.. class:: center-content
 
-.. container:: dhbw-red xxl
+Design needs Principles!
+----------------------------
 
-  Design benötigt Prinzipien!
-
-.. container:: dhbw-gray
+.. container:: gray
 
   Oder welche Entität ist von wem, wann, warum und in welcher Weise abhängig? 
   
   Welche Entität soll mit welcher zusammen definiert werden?
 
-  .. container:: dhbw-light-gray tiny
-
-    [Martin2017]_
+  [Martin2017]_
 
 .. supplemental::
 
@@ -118,28 +87,25 @@ Die Entitäten (:dhbw-light-gray:`Klassen`, :dhbw-gray:`Module`, :dhbw-gray:`Kom
 
 
 Kopplung (:eng:`coupling`)
--------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------
 
-.. container:: foundations
+.. container:: framed
     
   Kopplung beschreibt die Stärke der Abhängigkeit zwischen verschiedenen Entitäten\ [#]_.
 
-
 .. container:: incremental
 
-    Eine Entität E1 ist mit Entität E2 verbunden, wenn E1 direkt oder indirekt E2 benötigt.
+    Eine Entität :math-r:`E1` ist mit Entität :math-r:`E2` verbunden, wenn :math-r:`E1` direkt oder indirekt :math-r:`E2` benötigt.
 
-    :incremental:`Kopplung ist nicht gleich Kopplung:`
+    :incremental:`Jedoch ist Kopplung nicht gleich Kopplung:`
 
-    .. class:: incremental
+    .. class:: incremental-list
 
       - statische und dynamische Kopplung
       - Code-basierte und Daten-basierte
       - ...
 
-
 .. [#] Eine Entität kann z. B. eine Methode, Klasse, Modul, Package, Komponente oder Service sein.
-
 
 .. supplemental::
 
@@ -148,9 +114,9 @@ Kopplung (:eng:`coupling`)
   (*Temporale Kopplung* bezieht sich darauf, dass etwas gleichzeitig ausgeführt wird.)
 
 
-Hohe statische Kopplung (:eng:`high (static) coupling`)
--------------------------------------------------------------------------------------------------
 
+Hohe statische Kopplung (:eng:`high (static) coupling`)
+-------------------------------------------------------------------------------------------
 
 Eine Entität mit hoher Kopplung ist nicht wünschenswert:
 
@@ -158,24 +124,23 @@ Eine Entität mit hoher Kopplung ist nicht wünschenswert:
 - sie sind schwerer zu verstehen
 - sie sind schwerer wiederzuverwenden, da die Verwendung auch aller weiteren Entitäten notwendig ist von denen die Entität abhängt
 
-
 .. supplemental::
 
   Hohe Kopplung ist aber nicht per-se schlecht! Eine hohe Kopplung an Dinge, die extrem stabil sind, ist im Allgemeinen unkritisch.
 
 
+
 Niedrige statische Kopplung (:eng:`low (static) coupling`)
--------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------
 
 - Eine niedrige Kopplung unterstützt den Entwurf von vergleichsweise unabhängigen und deswegen besser wiederverwendbaren Entitäten.
 - „generische“ Entitäten mit einer hohen Wiederverwendungswahrscheinlichkeit sollten eine geringe Kopplung aufweisen.
 
 .. image:: images/coupling/applied-isp.svg
-  :width: 100% 
   :alt: The Interface Segregation Principle applied to a class diagram
   :align: center
+  :class: incremental
   
-
 .. supplemental::
 
   Keine Kopplung ist (auch) nicht wünschenswert, da dies zu Entitäten führt, die alle Arbeit durchführen; weiterhin führt dies auch dazu, dass sich ggf. die Arbeit sehr viel schlechter aufteilen lässt und dann eine agile Entwicklung mit einem kleinen Team nicht mehr möglich ist. 
@@ -183,37 +148,39 @@ Niedrige statische Kopplung (:eng:`low (static) coupling`)
   Relevante Frage: Wer ist/sollte der Eigentümer der Schnittstellen sein? D. h. aus welcher Perspektive sollte die Schnittstelle entworfen werden?
 
 
-.. class:: vertical-title far-smaller
 
 Niedrige vs. hohe dynamische Kopplung
--------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------
 
-.. container:: width-100 larger
+.. grid:: 
 
-  .. container:: width-100 clearfix
+  .. cell:: width-70
 
     .. image:: images/coupling/message-based-coupling.svg
-      :width: 62%
       :align: left
 
+  .. cell:: width-30
+    
     Anforderung-Antwort (Synchron)
     
     (:eng:`Request-response`)
 
-  .. container:: width-100 incremental
+.. grid:: incremental
 
-    .. image:: images/coupling/pub-sub-coupling.svg
-      :width: 75%
-      :align: right
+  .. cell:: width-30
 
     PubSub (Asynchron)
     
     (:eng:`Publisher-subscriber`)
 
+  .. cell:: width-70
+
+    .. image:: images/coupling/pub-sub-coupling.svg
+      :align: right
 
 .. supplemental::
 
-  Beobachtungen:
+  .. rubric:: Beobachtungen
 
   Die Skalierbarkeit der ersten Lösung hängt direkt von der Performance von Zahlung und Inventarisierung ab. Für die Verfügbarkeit der Gesamtlösung gilt das Gleiche. 
   
@@ -226,28 +193,28 @@ Niedrige vs. hohe dynamische Kopplung
   In diesem Fall führt lose Kopplung zu sehr viel höherer Komplexität bei der Fehlerbehandlung.
 
 
-Zusammenhalt / Kohäsion (:eng:`Cohesion`)
--------------------------------------------------------------------------------------------------
 
-.. container:: foundations
+Zusammenhalt / Kohäsion (:eng:`Cohesion`)
+-----------------------------------------------------------------------------------------
+
+.. container:: framed
 
   Der Zusammenhalt ist ein Maß der Stärke zwischen den Elementen einer Entität.
 
 Ausgewählte Typen von Zusammenhalt:
 
-.. class:: list-with-explanations incremental
+.. class:: list-with-explanations incremental-list
 
-- :the-green:`Funktionale Kohäsion`
+- :green:`Funktionale Kohäsion`
   
   Die Elemente realisieren eine logische Funktion.
 - …
-- :the-orange:`Logische bzw. technische Kohäsion`
+- :orange:`Logische bzw. technische Kohäsion`
   
   Die Elemente stehen aus technischer Sicht in enger Beziehung.
-- :shiny-red:`Zufällig`
+- :red:`Zufällig`
   
   Es gibt keine relevante Beziehung zwischen den Elementen.
-
 
 .. supplemental::
 
@@ -268,7 +235,6 @@ Sie sind:
 - schwer wiederzuverwenden 
 - schwer zu warten und oft von Änderungen betroffen
 
-
 .. supplemental::
 
   Services mit einer geringen Kohäsion repräsentieren häufig Dinge auf sehr grober, abstrakter Ebene und haben Verantwortlichkeiten übernommen für Dinge, die sie bessere delegieren sollten.
@@ -282,32 +248,16 @@ Alle Funktionalität und alle Daten sollten „natürlich“ zum Konzept gehöre
 
 
 
-.. class:: center-child-elements
+.. class:: no-title center-content 
 
-\ 
----
+Konflikt: niedrige Kopplung ↔︎ hohe Kohäsion
+-----------------------------------------------------
 
-.. container:: far-far-larger text-align-center margin-bottom-2em
+.. class:: columns font-size-200 
 
-  Konflikt
-
-.. container:: three-columns box-shadow margin-bottom-2em
-
-  .. container:: column no-separator center-child-elements 
-
-     .. container:: text-align-right
-
-        :shiny-green:`niedrige Kopplung`
-
-  .. container:: column bold xxl text-align-center no-separator incremental
-
-    ↔︎
-
-  .. container:: column no-separator center-child-elements incremental
-
-    .. container:: width-100
-      
-      :shiny-green:`hohe Kohäsion`
+- :green:`niedrige Kopplung`
+- ↔︎
+- :green:`hohe Kohäsion`
 
 .. supplemental::
 
@@ -315,31 +265,30 @@ Alle Funktionalität und alle Daten sollten „natürlich“ zum Konzept gehöre
 
 
 
-.. class:: transition-fade center-child-elements thin
+.. class:: no-title transition-fade center-content
 
 Zusammenfassung 
 --------------------------------------------- 
 
-.. container:: line-above padding-top-1em margin-top-1em far-far-larger
+.. summary::
 
   Kopplung und Kohäsion erlauben es uns einen Entwurf auf allen (Abstraktions-)ebenen zu beurteilen.
-
 
 
 
 Von Verantwortung und Zuständigkeit
 -------------------------------------
 
-.. admonition:: Wie verteilt man die Zuständigkeiten auf verschiedene Entitäten?
-  :class: note
+.. question:: 
+  :class: width-30 float-right
   
-  \ 
+  Wie verteilt man die Zuständigkeiten auf verschiedene Entitäten?
 
 - Der Verteilung von Zuständigkeiten ist die zentrale Tätigkeit während des Entwurfs. 
 - Entwurfsmuster, Idiome und Prinzipien helfen dabei die Zuständigkeiten zu verteilen.
 - Bei der Verteilung von Zuständigkeiten gibt es eine große Bandbreite:
 
-  .. class:: incremental
+  .. class:: incremental-list
 
   - Deswegen gibt es gute und schlechte Entwürfe, schöne und hässliche, effiziente und ineffiziente.
   - Eine schlechte Wahl führt zu fragilen Systemen, welche schwer zu warten, zu verstehen, wiederzuverwenden oder zu erweitern sind.
@@ -350,14 +299,14 @@ Von Verantwortung und Zuständigkeit
 
 
 
-.. class:: center-child-elements no-title
+.. class:: center-content
 
 Leitgedanke bzgl. funktionaler Kohäsion
 --------------------------------------------
 
-**Leitgedanke bzgl. funktionaler Kohäsion:**
+.. container:: font-size-200
 
-:far-far-larger:`Code, der sich gemeinsam ändert, bleibt zusammen.`
+  Code, der sich gemeinsam ändert, bleibt zusammen.
 
 
 
@@ -365,9 +314,7 @@ Fasse die Dinge zusammen, die sich aus dem gleichen Grund und zur selben Zeit ä
 -------------------------------------------------------------------------------------------------
 
 .. image:: images/ccp-and-srp.svg
-  :width: 100%
   :alt: Anwendung des Common Closure Principle und des Single Responsibility Principle
-
 
 .. supplemental::
 
@@ -378,18 +325,13 @@ Fasse die Dinge zusammen, die sich aus dem gleichen Grund und zur selben Zeit ä
   Die beiden Prinzipien sind eng miteinander verwandt. Das CCP ist ein Prinzip, das auf allen Abstraktionsgeraden angewendet werden kann. Das SRP ist - zumindest ursprünglich - ein Prinzip, das nur auf der Ebene von Klassen und Modulen angewendet wurde.
 
 
-.. class:: center-child-elements
 
-\ 
---
+Dependency Inversion Principle (DIP)
+-----------------------------------------
 
-.. container:: dhbw-red far-far-larger
+.. deck::
 
-  Dependency Inversion Principle (DIP)
-
-.. container:: stack
-
-  .. container:: layer
+  .. card::
     
     .. epigraph::
       
@@ -397,7 +339,7 @@ Fasse die Dinge zusammen, die sich aus dem gleichen Grund und zur selben Zeit ä
 
       -- Grady Booch
 
-  .. container:: layer incremental
+  .. card::
 
     .. epigraph::
       
@@ -418,9 +360,7 @@ Fasse die Dinge zusammen, die sich aus dem gleichen Grund und zur selben Zeit ä
   **Ein Klassendesign, dass das DIP verletzt:**
 
   .. image:: images/dip-layers/traditionelle-schichtenabhaengigkeit.svg
-    :width: 60%
     :align: center
-
 
   **Die Einhaltung des DIP sollte auf allen Ebenen der Architektur sichergestellt werden.**
 
@@ -429,7 +369,6 @@ Dependency Inversion Principle
 -------------------------------------
 
 .. image:: images/dip-layers/dip-konforme-schichtenabhaengigkeit.svg
-  :height: 1000px
   :align: center
 
 
@@ -444,15 +383,9 @@ Dependency Inversion Principle
   Low-Level-Module enthalten detaillierte Implementierungen einzelner Mechanismen, die zur Umsetzung der Richtlinie benötigt werden.
 
 
-.. class:: center-child-elements no-title
 
 Open-closed Principle (OCP)
 -----------------------------------
-
-.. container:: dhbw-red far-far-larger
-
-  Open-closed Principle (OCP)
-
 
 .. epigraph::
 
@@ -467,37 +400,37 @@ Open-closed Principle (OCP)
 
 
 
-.. class:: smaller
+Open-closed Principle - Case Study\ [#]_
+------------------------------------------
 
-Open-closed Principle - Case Study
--------------------------------------
-
-.. figure:: images/ocp-example/ocp-intended-subscriber_de.svg
-  :width: 1750px
+.. image:: images/ocp-example/ocp-intended-subscriber_de.svg
   :align: center
 
+.. question::
+  :class: incremental
+  
   Ist dieses Design offen für Erweiterungen?
 
 .. supplemental::
 
   In diesem Fall haben wir eine Architektur, die auf “Services” aufbaut welche lose gekoppelt sind und über Nachrichten kommunizieren. 
 
-.. container:: footer-left tiny
-
-  `Beispiel nach David Llobrega, 2019 <https://dzone.com/articles/the-open-closed-principle-at-an-architectural-leve>`_
+.. [#] `Beispiel nach David Llobrega, 2019 <https://dzone.com/articles/the-open-closed-principle-at-an-architectural-leve>`_
 
 
-.. class:: smaller transition-scale
+
+.. class:: transition-scale
 
 Open-closed Principle - Case Study
 -------------------------------------
 
-.. figure:: images/ocp-example/ocp-two-subscribers_de.svg
-  :width: 1750px
+.. image:: images/ocp-example/ocp-two-subscribers_de.svg
   :align: center
 
-  Ist dieses Design *wirklich* offen für Erweiterungen?
+.. question::
+  :class: incremental
 
+  Ist dieses Design *wirklich* offen für Erweiterungen?
 
 .. supplemental::
 
@@ -509,25 +442,24 @@ Open-closed Principle - Case Study
 
 
 
-.. class:: smaller transition-scale
+.. class:: transition-scale
 
 Open-closed Principle - Case Study
 -------------------------------------
 
-.. container:: stack
+.. deck::
 
-  .. container:: layer
+  .. card::
   
     .. image:: images/ocp-example/ocp-multiple-subscribers_de.svg
-      :width: 1600px
       :align: center
 
-  .. container:: layer overlay center-child-elements incremental
+  .. card:: overlay center-content 
 
-    .. container:: width-75 question
+    .. question:: 
+      :class: width-75 backdrop-blur
     
       Wie stellen wir fest welche Informationen in eine Nachricht gehören, um offen für *relevante* Erweiterungen zu sein?
-
 
 .. supplemental::
 
@@ -535,7 +467,7 @@ Open-closed Principle - Case Study
   
   Ein *Bounded Context* ist ein Gültigkeitsbereich eines Domänenmodells, einer `Ubiquitous Language <https://leanpub.com/ddd-referenz/read#ubiquitous-language>`_ und die Basis für die Organisation des Projekts.[...] 
   
-    :dhbw-red:`Eine Modellierung nach den Daten führt nicht zu sinnvollen Bounded Contexts, sondern eher zu komplexen Modellen. Wichtig ist, die Daten als Folge der Funktionalitäten zu modellieren.`
+    :red:`Eine Modellierung nach den Daten führt nicht zu sinnvollen Bounded Contexts, sondern eher zu komplexen Modellen. Wichtig ist, die Daten als Folge der Funktionalitäten zu modellieren.`
 
   Domain-driven Design behandelt Beziehungen zwischen *Bounded Contexts* im sogenannten *Strategic Design*.
   
@@ -543,18 +475,12 @@ Open-closed Principle - Case Study
 
 
 
-.. class:: center-child-elements no-title
-
 Liskov Substitution Principle (LSP) 
 -------------------------------------
 
-.. container:: dhbw-red far-far-larger
+.. deck::
 
-  Liskov Substitution Principle (LSP)
-
-.. container:: stack
-
-  .. container:: layer
+  .. card::
 
     .. epigraph::
 
@@ -562,7 +488,7 @@ Liskov Substitution Principle (LSP)
 
       -- Barbara Liskov, 1988
 
-  .. container:: layer incremental
+  .. card::
 
     **Moderne Interpretation** 
 
@@ -574,39 +500,36 @@ Liskov Substitution Principle (LSP)
 
 
 
-.. class:: smaller
-
 Interface Segregation Principle & Common Reuse Principle
 ------------------------------------------------------------
 
-.. container:: stack
+.. deck:: 
 
-  .. container:: layer
+  .. card::
 
-    .. figure:: images/segregation/no-segregation.svg
-      :width: 1700px
+    .. image:: images/segregation/no-segregation.svg
+      :align: center
 
-      (Ausgangszustand)
+    (Ausgangszustand)
 
-  .. container:: layer incremental
+  .. card::
 
-    .. figure:: images/segregation/no-segregation-2nd-service.svg
-      :width: 1700px
+    .. image:: images/segregation/no-segregation-2nd-service.svg
+      :align: center
 
-      (Geplante Erweiterung)
+    (Geplante Erweiterung)
 
-  .. container:: layer incremental
+  .. card::
 
-    .. figure:: images/segregation/effective-segregation.svg
-      :width: 1700px
+    .. image:: images/segregation/effective-segregation.svg
+      :align: center
 
-      (Teilung der Schnittstelle)
+    (Teilung der Schnittstelle)
 
-.. admonition:: Leitgedanke 
-  :class: warning margin-top-1em incremental
+.. attention::
+  :class: incremental
 
   Hänge nicht von Dingen ab, die du nicht benötigst.
-
 
 .. supplemental::
 
@@ -614,32 +537,23 @@ Interface Segregation Principle & Common Reuse Principle
 
 
 
-.. class:: center-child-elements no-title
-
 Command-Query Separation (CQS)
 -------------------------------
 
-.. container:: dhbw-red far-far-larger
+.. epigraph::
 
-  Command-Query Separation (CQS)
+    Methoden werden strikt aufgeteilt in:
 
-.. container:: stack
+    **Abfragen** (:eng:`Queries`), die keine Veränderung des Objektzustandes erlauben
 
-  .. container:: layer
+    **Kommandos** (:eng:`Commands`), die den Zustand verändern, aber keine Werte zurückliefen
 
-    .. epigraph::
+    -- Bertrand Meyer, 1988
 
-      Methoden werden strikt aufgeteilt in:
+.. remark:: 
+  :class: incremental 
 
-      **Abfragen** (:eng:`Queries`), die keine Veränderung des Objektzustandes erlauben
-
-      **Kommandos** (:eng:`Commands`), die den Zustand verändern, aber keine Werte zurückliefen
-
-      -- Bertrand Meyer, 1988
-
-  .. container:: layer incremental center-child-elements
-
-    Auf der Ebene von nachrichten- bzw. ereignisgetriebenen Systemen wird CQS zum CQRS erweitert (Command-Query Responsibility Segregation).
+  Auf der Ebene von nachrichten- bzw. ereignisgetriebenen Systemen wird CQS zum CQRS erweitert (Command-Query Responsibility Segregation).
 
 .. supplemental::
 
@@ -648,18 +562,17 @@ Command-Query Separation (CQS)
 
 
 Traditionelle Interaktion mit Informationssystemen (CRUD) 
--------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------
 
-.. container:: two-columns
+.. grid:: 
 
-  .. container:: tiny
+  .. cell:: width-60
 
     .. figure:: images/cqs_and_cqrs/crud.svg
-       :width: 1400px
 
        Darstellung nach `Martin Fowler <https://martinfowler.com/bliki/CQRS.html>`_.
     
-  .. container:: scriptsize
+  .. cell:: width-40
 
     1. Modell liest von DB
     2. Service stellt Information für Präsentationsschicht bereit
@@ -674,25 +587,19 @@ Traditionelle Interaktion mit Informationssystemen (CRUD)
 
 
 
-.. class:: center-child-elements no-title
 
 Command-Query Responsibility Segregation Principle
 -----------------------------------------------------------------------------
 
-.. container:: dhbw-red far-far-larger
-  
-  Command-Query Responsibility Segregation Principle
+.. grid:: 
 
-.. container:: two-columns 
-
-  .. container:: tiny
+  .. cell:: width-60
 
     .. image:: images/cqs_and_cqrs/cqrs.svg
-       :width: 1400px
 
     Darstellung nach `Martin Fowler <https://martinfowler.com/bliki/CQRS.html>`_.
     
-  .. container:: scriptsize
+  .. cell:: width-40
 
     1. Abfrage-Modell liest von DB
     2. Abfrage-Service stellt Information für Präsentations- schicht bereit
@@ -701,9 +608,8 @@ Command-Query Responsibility Segregation Principle
     5. Kommando-Modell validiert
     6. Kommando-Modell aktualisiert DB
 
-.. container:: text-align-right serif italic smaller margin-0-5em padding-right-1em
 
-  ⸺ Greg Young, 2010
+⸺ Greg Young, 2010
 
 .. supplemental::
 
@@ -711,14 +617,12 @@ Command-Query Responsibility Segregation Principle
 
 
 
-.. class:: smaller
-
 Command-Query Responsibility Segregation Principle (CQRS)
--------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------
 
 .. rubric:: Einsatzszenarien 
 
-.. class:: incremental
+.. class:: incremental-list
 
 - Die Anzahl an Schreibe- und Leseoperationen ist extrem unterschiedlich.
 - Die Datenmodelle bzgl. Abfragen und „Kommandos“ unterscheiden sich deutlich und es kommen ggf. mehrere Datenbanken zum Einsatz.
@@ -728,7 +632,7 @@ Command-Query Responsibility Segregation Principle (CQRS)
 
   .. rubric:: Vorteile/Möglichkeiten
 
-  .. class:: incremental list-with-explanations
+  .. class:: incremental-list list-with-explanations
 
   -  Die Modelle können von unterschiedlichen Teams entwickelt werden (im Rahmen einzelner Services).
   - Unterschiedliche Skalierung bzgl. Abfragen und Kommandos ist möglich.
@@ -740,12 +644,10 @@ Command-Query Responsibility Segregation Principle (CQRS)
 
 .. class:: new-section
 
-Moderne Architekturprinzipien für :raw-html:`<br>` verteilte Anwendungen
+Moderne Architekturprinzipien für verteilte Anwendungen
 --------------------------------------------------------------------------
 
 
-
-.. class:: center-child-elements no-title
 
 Gute Anwendungsarchitekturen
 -----------------------------
@@ -756,16 +658,13 @@ Gute Anwendungsarchitekturen
 
 
 
-.. class:: smaller
 
-Ein einfacher RESTful Web Service mit Spring
--------------------------------------------------------------------------------------------------
+Ein einfacher RESTful Web Service mit Spring\ [#]_
+------------------------------------------------------------------------------------
 
 .. code:: java
     :number-lines:
-    :class: tiny
-
-    package com.example.restservice;
+    :class: copy-to-clipboard
 
     import java.util.concurrent.atomic.AtomicLong;
     import org.springframework.web.bind.annotation.*;
@@ -784,9 +683,7 @@ Ein einfacher RESTful Web Service mit Spring
       }
     }
 
-.. container:: footer-left tiny 
-
-  Beispiel von http://spring.io.
+.. [#] Beispiel von http://spring.io.
 
 
 
@@ -816,12 +713,11 @@ Ein einfacher RESTful Web Service mit Spring
   Im RESTful-Beispiel hatten wir einen technischen Service for Augen - er implementiert keine wesentliche Geschäftslogik!
 
 
-Traditionelle n-Schichten Architektur (Wiederholung)
--------------------------------------------------------------------------------------------------
 
+Traditionelle n-Schichten Architektur (Wiederholung)
+---------------------------------------------------------------------------------
 
 .. image:: images/n-layer-architecture.svg
-  :height: 950px
   :align: center
 
 .. supplemental::
@@ -833,39 +729,26 @@ Traditionelle n-Schichten Architektur (Wiederholung)
 
 
 Hexagonal Architecture (Ports & Adapters) [#]_
--------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------
 
+.. deck::
 
-.. container:: stack 
-
-  .. container:: layer
+  .. card::
   
     .. image:: images/hexagonal-architecture/overview.svg
-      :height: 800px
       :align: center
 
-  .. container:: layer overlay incremental
+  .. card:: overlay
 
     .. image:: images/hexagonal-architecture/control-flow-overlay.svg
-      :height: 800px
       :align: center
 
-  .. container:: layer overlay incremental
+  .. card:: overlay 
 
     .. image:: images/hexagonal-architecture/code-dependency-overlay.svg
-      :height: 800px
       :align: center
 
-
-.. container:: text-align-right serif italic smaller margin-0-5em
-
-  ⸺ Alistair Cockburn, 2005
-
-
-.. class:: tiny 
-
-.. [#] https://alistair.cockburn.us/hexagonal-architecture/ und https://www.thoughtworks.com/insights/blog/architecture/demystify-software-architecture-patterns
-
+.. [#] `Alistair Cockburn, 2005 <https://alistair.cockburn.us/hexagonal-architecture/ und https://www.thoughtworks.com/insights/blog/architecture/demystify-software-architecture-patterns>`__
 
 .. supplemental::
 
@@ -885,29 +768,21 @@ Hexagonal Architecture (Ports & Adapters) [#]_
     -- https://www.happycoders.eu/de/software-craftsmanship/hexagonale-architektur/
 
 
-
+  
 *Onion Architecture* [#]_
--------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------
 
+.. deck:: 
 
-.. container:: stack 
-
-  .. container:: layer
+  .. card:: 
   
     .. image:: images/onion-architecture/overview.svg
-      :height: 800px
       :align: center
 
-  .. container:: layer overlay incremental
+  .. card::  overlay
 
     .. image:: images/onion-architecture/code-dependencies-overlay.svg
-      :height: 800px
       :align: center
-
-
-.. container:: text-align-right serif italic smaller margin-0-5em
-
-  ⸺ Jeffrey Palermo, 2008
 
 .. supplemental::
 
@@ -919,50 +794,44 @@ Hexagonal Architecture (Ports & Adapters) [#]_
   - Die Richtung der Kopplung ist immer in Richtung zum Zentrum!
   - Der Anwendungskern (*Application Core*) kann immer ohne die Infrastruktur kompiliert und davon unabhängig ausgeführt werden.
 
-.. [#] https://jeffreypalermo.com/2008/07/the-onion-architecture-part-1/
+.. [#]  `Jeffrey Palermo, 2008 <https://jeffreypalermo.com/2008/07/the-onion-architecture-part-1/>`__
 
 
 
 *Clean Architecture* [Martin2017]_
 ----------------------------------------------------------------
 
-.. container:: stack 
+.. deck::
 
-  .. container:: layer
+  .. card::
   
     .. image:: images/clean-architecture/entities-ring.svg
-      :height: 800px
-
-  .. container:: layer overlay incremental
+      
+  .. card:: overlay
 
     .. image:: images/clean-architecture/use-cases-ring.svg
-      :height: 800px
-
-  .. container:: layer overlay incremental
+      
+  .. card:: overlay
 
       .. image:: images/clean-architecture/controllers-ring.svg
-        :height: 800px
-
-  .. container:: layer overlay incremental
+      
+  .. card:: overlay
 
       .. image:: images/clean-architecture/web-ring.svg
-        :height: 800px
-
-  .. container:: layer overlay incremental
+      
+  .. card:: overlay
 
       .. image:: images/clean-architecture/code-abhaengigkeiten.svg
-        :height: 800px
-
-  .. container:: layer overlay incremental 
+      
+  .. card:: overlay
 
       .. image:: images/clean-architecture/legende.svg
-        :height: 800px
-
+      
 .. supplemental::
 
   .. rubric:: Entities
 
-  Entities (:ger:`Entitäten`) kapseln unternehmensweite kritische Geschäftsregeln.
+  Entitäten (:eng:`Entities`) kapseln unternehmensweite kritische Geschäftsregeln.
 
   - Objekte mit Methoden
   - Datastrukturen
@@ -992,20 +861,18 @@ Hexagonal Architecture (Ports & Adapters) [#]_
 
 
 *Clean Architecture* - Prototypische Implementierung
--------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------
 
-.. container:: stack 
+.. deck::
 
-  .. container:: layer
+  .. card:: 
 
     .. image:: images/clean-architecture/uml-overview.svg
-      :height: 800px
       :align: center
 
-  .. container:: layer overlay incremental
+  .. card:: overlay
       
     .. image:: images/clean-architecture/uml-kontrollfluss.svg
-      :height: 800px
       :align: center
 
 .. supplemental::
@@ -1013,10 +880,11 @@ Hexagonal Architecture (Ports & Adapters) [#]_
     Mit einer solchen Implementierung sind auch echte initiale Kosten verbunden - mehrere Interfaces müssen implementiert und gewartet werden. Partielle Lösungen sind denkbar, müssen aber wohl überlegt sein, um ungewünschte Abhängigkeiten zu vermeiden, die häufig zu einer schlechten Wartbarkeit und langfristigen bzw. verzögerten Kosten führen.
 
 
+
 Gemeinsamkeiten aktueller Architekturen
 ----------------------------------------
 
-.. class:: incremental
+.. class:: incremental-list
 
   - Unabhängig von Frameworks
   - Testbar
