@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+    "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg
+    xmlns:xl="http://www.w3.org/1999/xlink"
+    version="1.1"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="50 20 635 577"
+    width="351"
+    height="330.2"
+>
+<style>
+  @import url('/LectureDoc2/ext/fonts/ld-fonts.css');
+</style>
+<defs>
+    <marker
+            orient="auto"
+            overflow="visible"
+            markerUnits="strokeWidth"
+            id="FilledArrow_Marker"
+            stroke-linejoin="miter"
+            stroke-miterlimit="10"
+            viewBox="-1 -3 7 6"
+            markerWidth="7"
+            markerHeight="6"
+            color="#c71836"
+        >
+      <g>
+        <path
+                    d="M 4.1142844 0 L 0 -1.5428567 L 0 1.5428567 Z"
+                    fill="currentColor"
+                    stroke="currentColor"
+                    stroke-width="1"
+                />
+      </g>
+    </marker>
+  </defs>
+  <metadata> Produced by OmniGraffle 8.0\n2025-04-28 11:02:44 +0000</metadata>
+  <g
+        id="onion-architecture"
+        fill="none"
+        stroke="none"
+        stroke-dasharray="none"
+        stroke-opacity="1"
+        fill-opacity="1"
+    >
+    <title>onion-architecture</title>
+    <g id="onion-architecture_code-dependencies-overlay">
+      <title>code-dependencies-overlay</title>
+      <g id="Graphic_25">
+        <ellipse
+                    cx="672.5"
+                    cy="575"
+                    rx="12.5000199737737"
+                    ry="10.000015979019"
+                    fill="white"
+                />
+      </g>
+      <g id="Line_23">
+        <line
+                    x1="55"
+                    y1="310"
+                    x2="334.5992"
+                    y2="309.09124"
+                    marker-end="url(#FilledArrow_Marker)"
+                    stroke="#c71836"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-dasharray="20.0,20.0"
+                    stroke-width="5"
+                />
+      </g>
+      <g id="Graphic_22">
+        <text transform="translate(55 233)" fill="#666">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="18"
+                        font-weight="400"
+                        fill="#666"
+                        x="0"
+                        y="19"
+                        xml:space="preserve"
+                    >Code-</tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="18"
+                        font-weight="400"
+                        fill="#666"
+                        x="0"
+                        y="43"
+                        xml:space="preserve"
+                    >abhängig-</tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="18"
+                        font-weight="400"
+                        fill="#666"
+                        x="0"
+                        y="67"
+                        xml:space="preserve"
+                    >keiten</tspan>
+        </text>
+      </g>
+    </g>
+  </g>
+</svg>
