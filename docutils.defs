@@ -67,6 +67,8 @@
 .. role:: math-r
 .. role:: math-i
 
+.. role:: console(code)
+   :language: console
 
 .. role:: latex(code)
    :language: latex
@@ -74,11 +76,16 @@
 .. role:: css(code)
    :language: css
 
+.. role:: js(code)
+   :language: javascript
 .. role:: javascript(code)
    :language: javascript
 
 .. role:: python(code)
    :language: python
+
+.. role:: c(code)
+   :language: c
 
 .. role:: java(code)
    :language: java
