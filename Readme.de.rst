@@ -39,11 +39,7 @@ Die grundlegende Idee hinter der folgenden Reihenfolge ist, dass die Studierende
    12. Java Projekte mit Maven aufsetzen (`<prog-adv-java-projects/folien.de.rst.html>`__)
    13. Versionsverwaltung mit GIT (`<se-versionskontrolle/folien.de.rst.html>`__)
    14. Objekt-orientierte Programmierung in Java - Funktionale Programmierung (`<prog-adv-java-funktionale-programmierung/folien.de.rst.html>`__)
-
-   Fortgeschrittenere Themen (Planung!):
-   
-   - Objekt-orientierte Programmierung in Java - Ein- und Ausgabe - Streams 
-   - Algorithmen und Datenstrukturen in Java 
+   15. Objekt-orientierte Programmierung in Java - Ein-/Ausgabe (`<prog-adv-java-ea/folien.de.rst.html>`__)
 
 
 
