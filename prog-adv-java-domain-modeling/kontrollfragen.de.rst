@@ -2,33 +2,13 @@
    :version: renaissance
    :lang: de
    :author: Michael Eichberg
-   :keywords: "Programmierung", "Java", "Domänenmodellierung", "kontrollfragen"
-   :description lang=de: Kontrollfragen zum Bauen von Java Projekten
+   :keywords: "Programmierung", "Java", "Domänenmodellierung", "Kontrollfragen"
+   :description lang=de: Kontrollfragen zum Thema Domänenmodellierung in Java
    :id: lecture-prog-java-projekte-kontrollfragen
    :first-slide: last-viewed
    :master-password: WirklichSchwierig!
     
-.. |html-source| source::
-    :prefix: https://delors.github.io/
-    :suffix: .html
-.. |pdf-source| source::
-    :prefix: https://delors.github.io/
-    :suffix: .html.pdf
-.. |at| unicode:: 0x40
-.. |qm| unicode:: 0x22 
-
-.. role:: incremental
-.. role:: eng
-.. role:: ger
-.. role:: dhbw-red
-.. role:: green
-.. role:: the-blue
-.. role:: obsolete
-.. role:: monospaced
-.. role:: copy-to-clipboard
-.. role:: kbd
-.. role:: java(code)
-   :language: java
+.. include:: ../docutils.defs
 
 
 
@@ -39,13 +19,15 @@ Domänenmodellierung mit Java
 
 :Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
 :Kontakt: michael.eichberg@dhbw.de, Raum 149B
-:Version: 1.1
+:Version: 1.1.1
+
 
 
 .. class:: new-section transition-scale
 
 Domänenmodellierung
 -------------------------------------
+
 
 
 .. class:: exercises

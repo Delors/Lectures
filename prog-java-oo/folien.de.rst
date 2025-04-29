@@ -8,32 +8,9 @@
     :first-slide: last-viewed
     :master-password: WirklichSchwierig!
     
-.. |html-source| source::
-    :prefix: https://delors.github.io/
-    :suffix: .html
-.. |pdf-source| source::
-    :prefix: https://delors.github.io/
-    :suffix: .html.pdf
-.. |at| unicode:: 0x40
-
-.. role:: incremental
-.. role:: appear
-.. role:: eng
-.. role:: ger
-.. role:: red
-.. role:: green
-.. role:: the-blue
-.. role:: minor
-.. role:: obsolete
-.. role:: line-above
-.. role:: smaller
-.. role:: far-smaller
-.. role:: monospaced
-.. role:: java(code)
-   :language: java
+.. include:: ../docutils.defs
 
 
-.. class:: animated-symbol
 
 Einführung in die Objekt-orientierte Programmierung
 ===========================================================
@@ -85,8 +62,8 @@ Was ist Objektorientierte Programmierung?
 :Hauptprinzipien:
   - **Kapselung** (:eng:`Encapsulation`)
   - **Abstraktion** (:eng:`Abstraction`)
-  - **Vererbung** (:eng:`Inheritance`) :minor:`(nächster Foliensatz)`
-  - **Polymorphie** (:eng:`Polymorphism`) („vielerlei Gestalt“) :minor:`(nächster Foliensatz)`
+  - **Vererbung** (:eng:`Inheritance`) :peripheral:`(nächster Foliensatz)`
+  - **Polymorphie** (:eng:`Polymorphism`) („vielerlei Gestalt“) :peripheral:`(nächster Foliensatz)`
 
 .. supplemental::
 
@@ -179,7 +156,7 @@ Klassen
 
         Durch die Verwendung von Sichtbarkeiten (insbesondere :java:`private` und ggf. :java:`protected`) ist der Zugriff auf die Attribute und Methoden einer Klasse von außen kontrollierbar. Wir sprechen hier von **Kapselung**. 
         
-        :minor:`Die privaten Daten eines Objekts (und ggf. einiger Methoden) sind also geschützt und können nur über die Methoden der Klasse manipuliert werden. Dabei können alle Objekte einer Klasse auf die Attribute eines anderen Objektes der selben Klasse zugreifen.`
+        :peripheral:`Die privaten Daten eines Objekts (und ggf. einiger Methoden) sind also geschützt und können nur über die Methoden der Klasse manipuliert werden. Dabei können alle Objekte einer Klasse auf die Attribute eines anderen Objektes der selben Klasse zugreifen.`
  
 
 .. supplemental::

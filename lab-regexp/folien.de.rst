@@ -1,36 +1,15 @@
 .. meta::
    :version: genesis
    :author: Michael Eichberg
-   :keywords: "IT Sicherheit", Passwortwiederherstellung
-   :description lang=de: Fortgeschrittene Angewandte IT Sicherheit
-   :id: 2023_11-w3wi_se403_passwort_wiederherstellung-regexp
+   :keywords: "Reguläre Ausdrücke"
+   :description lang=de: Eine erste Einführung in reguläre Ausdrücke
+   :id: lab-regexp
    :first-slide: last-viewed
    :exercises-master-password: WirklichSchwierig!
 
-.. |html-source| source::
-    :prefix: https://delors.github.io/
-    :suffix: .html
-.. |pdf-source| source::
-    :prefix: https://delors.github.io/
-    :suffix: .html.pdf
-.. |at| unicode:: 0x40
-
-.. role:: incremental   
-.. role:: eng
-.. role:: ger
-.. role:: red
-.. role:: green
-.. role:: the-blue
-.. role:: minor
-.. role:: obsolete
-.. role:: line-above
-
-.. role:: raw-html(raw)
-   :format: html
+.. include:: ../docutils.defs
 
 
-
-.. class:: animated-symbol
 
 Reguläre Ausdrücke 
 =====================================================
@@ -39,7 +18,7 @@ Reguläre Ausdrücke
 
 :Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
 :Kontakt: michael.eichberg@dhbw.de
-:Version: 1.2
+:Version: 1.2.1
 
 .. supplemental::
 
@@ -151,7 +130,7 @@ Der Backslash ``\`` dient als Escapezeichen für Sonderzeichen.
 
    echo "abc-123[a-z]" | grep -Eo "\[a-z\]"
 
-findet: ``[a-z]`` :minor:`(aber nicht "abc")`
+findet: ``[a-z]`` :peripheral:`(aber nicht "abc")`
 
 
 

@@ -8,20 +8,9 @@
     :first-slide: last-viewed
     :master-password: WirklichSchwierig!
 
-.. |html-source| source::
-    :prefix: https://delors.github.io/
-    :suffix: .html
-.. |pdf-source| source::
-    :prefix: https://delors.github.io/
-    :suffix: .html.pdf
-
-.. role:: incremental
-.. role:: ger
-.. role:: eng
-.. role:: minor
+.. include:: ../docutils.defs
 
 
-.. class:: animated-symbol
 
 Klassische Verschlüsselungsmethoden
 ====================================
@@ -49,7 +38,7 @@ Definitionen
 
     Die Originalnachricht, die verschlüsselt werden soll.
 
-:Geheimtext oder Chiffretext oder `Krytogramm`:minor:: 
+:Geheimtext oder Chiffretext oder `Krytogramm`:peripheral:: 
     :eng:`Ciphertext`
 
     Die kodierte/verschlüsselte Nachricht.

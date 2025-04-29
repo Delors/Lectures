@@ -1,4 +1,4 @@
-.. meta:: 
+.. meta::
     :version: renaissance
     :lang: de
     :author: Michael Eichberg
@@ -7,29 +7,10 @@
     :id: lecture-theo-algo-hashing-and-applications
     :first-slide: last-viewed
     :master-password: WirklichSchwierig!
-    
-.. |html-source| source::
-    :prefix: https://delors.github.io/
-    :suffix: .html 
-.. |pdf-source| source::
-    :prefix: https://delors.github.io/
-    :suffix: .html.pdf
-.. |at| unicode:: 0x40
-.. |qm| unicode:: 0x22 
 
-.. role:: incremental
-.. role:: appear
-.. role:: eng
-.. role:: ger
-.. role:: copy-to-clipboard
-.. role:: java(code)
-   :language: java
-.. role:: python(code)
-    :language: python
+.. include:: ../docutils.defs
 
 
-
-.. class:: animated-logo 
 
 Hashing und Hashmaps
 ======================================================
@@ -38,18 +19,18 @@ Hashing und Hashmaps
 
 :Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
 :Kontakt: michael.eichberg@dhbw.de, Raum 149B
-:Version: 2.0
+:Version: 2.0.1
 
 .. container:: peripheral
 
-    :Quelle: 
+    :Quelle:
         Die Folien sind teilweise inspiriert von oder basierend auf Robert Sedgewick und Kevin Wayne, "Algorithms", Addison-Wesley, 4th Edition, 2011 sowie auf Lehrmaterial von Prof. Dr. Ritterbusch
 
 .. supplemental::
 
-    :Folien: 
-        
-        |html-source| 
+    :Folien:
+
+        |html-source|
 
         |pdf-source|
 
@@ -68,8 +49,8 @@ Einführung
 Suchen in einer Liste
 --------------------------------------------------------
 
-.. container:: s-font-size-70 highlight-cell-on-hover 
-    
+.. container:: s-font-size-70 highlight-cell-on-hover
+
     .. class:: incremental-table-rows
 
     +-----------------------------------------+----------+----------+---------+-------------------------+-----------+---------+---------------------------------+
@@ -87,8 +68,8 @@ Suchen in einer Liste
     +-----------------------------------------+----------+----------+---------+-------------------------+-----------+---------+---------------------------------+
 
 
-.. question:: 
-    :class: incremental 
+.. question::
+    :class: incremental
 
     Können wir effizienter suchen?
 
@@ -112,21 +93,21 @@ Hashing - Grundidee
         .. class:: incremental list-with-explanations
 
         - Die Elemente werden über den Schlüssel indexiert in einer Tabelle gespeichert.
-        
+
           Der Index ist eine Funktion des Schlüssels.
         - Hash-Funktion:  Methode zur Berechnung des Array-Index aus dem Schlüssel.
 
     .. card:: d-no-clear
-            
+
         .. rubric:: Herausforderungen
-        
+
         1. Berechnung der Hash-Funktion.
         2. Gleichheitstest: Methode zur Überprüfung, ob zwei Schlüssel gleich sind.
         3. Kollisionsauflösung: Algorithmus und Datenstruktur zur Behandlung von zwei Schlüsseln, die auf denselben Array-Index hindeuten.
 
     .. card::
 
-        .. hint:: 
+        .. hint::
 
             .. rubric:: Klassischer Kompromiss zwischen Raum und Zeit!
 
@@ -143,17 +124,17 @@ Hashing - Grundidee
 Berechnung der Hash-Funktion
 --------------------------------------------------------
 
-:Idealistisches Ziel: 
-    
-    Die Schlüssel gleichmäßig verwürfeln, um einen Tabellenindex zu erzeugen. 
+:Idealistisches Ziel:
+
+    Die Schlüssel gleichmäßig verwürfeln, um einen Tabellenindex zu erzeugen.
 
     - Effizient berechenbar.
     - Jeder Tabellenindex ist für jeden Schlüssel gleich wahrscheinlich.
-     
+
     .. supplemental::
 
         Die Frage, wie man gute Schlüssel berechnet, ist ein gründlich erforschtes Problem, dass in der Praxis immer noch problematisch ist.
-  
+
 .. container:: example incremental
 
     .. rubric:: Beispiel 1.  Telefonnummern.
@@ -170,7 +151,7 @@ Berechnung der Hash-Funktion
 
     .. supplemental::
 
-        Die ersten beiden Stellen bei der Sozialversicherungsnummer identifizieren den Rentenversicherungsträger. 
+        Die ersten beiden Stellen bei der Sozialversicherungsnummer identifizieren den Rentenversicherungsträger.
 
 .. container:: challenge incremental
 
@@ -187,18 +168,18 @@ Hashfunktionen
 
         .. admonition:: Definition
 
-            Eine Hashfunktion :math:`h : M →\mathbb{Z}_n` bildet eine Menge :math:`M` mit :math:`|M|≥|\mathbb{Z}_n|` auf die Zahlen :math:`0,...,n−1` ab. 
-            
-            Eine Hashfunktion ist *surjektiv* \ [#]_: für jedes :math:`y ∈Z_n` gibt es ein :math:`x ∈M` mit :math:`h(x) = y`. 
+            Eine Hashfunktion :math:`h : M →\mathbb{Z}_n` bildet eine Menge :math:`M` mit :math:`|M|≥|\mathbb{Z}_n|` auf die Zahlen :math:`0,...,n−1` ab.
 
-            .. presenter-note:: 
+            Eine Hashfunktion ist *surjektiv* \ [#]_: für jedes :math:`y ∈ Z_n` gibt es ein :math:`x ∈ M` mit :math:`h(x) = y`.
+
+            .. presenter-note::
 
                 Surjektiv bedeutet, dass jeder Wert aus dem Wertebereich mindestens einmal von der Funktion berechnet wird.
 
                 Sollte die Funktion nicht-surjektiv sein, dann führt das ggf. zu unnötigen Kollisionen und verschlechtert die Effizienz der Hashtabelle.
-            
+
             Eine Hashfunktion ist *gleichverteilt*, wenn zwei Bilder :math:`y1,y2 ∈ \mathbb{Z}_n` immer ungefähr gleich viele Urbilder haben :math:`|h^{−1}({y1})|≈|h^{−1}({y2})|`.
-        
+
         .. [#] In machen Fällen ist der Nachweis nicht möglich, aber es wird vermutet.
 
     .. card::
@@ -208,9 +189,9 @@ Hashfunktionen
         .. class:: incremental
 
         - **Hashes für Datenstrukturen** *müssen sehr effizient* sein.
-        - Für **Hashes, welche verwendet werden im Rahmen von Verschlüsselung und Signaturen,** 
+        - Für **Hashes, welche verwendet werden im Rahmen von Verschlüsselung und Signaturen,**
           muss es schwer sein:
-          
+
           - ein Urbild zu finden (d. h. von Y auf X zu schließen)
           - zwei kollidierende Werte zu finden.
 
@@ -221,7 +202,7 @@ Hashfunktionen
           - kryptographische Hashes *sollten effizient berechenbar* sein.
         - **Hashes für Passwortspeicherung** müssen die selben Anf. erfüllen wie Hashes für Signaturen und Verschlüsselungszwecke, dürfen aber *nicht effizient berechenbar* sein.
 
-        .. important:: 
+        .. important::
             :class: incremental
 
             Im Folgenden konzentrieren wir uns auf Hashes für Datenstrukturen.
@@ -234,9 +215,9 @@ Hashfunktionen
 
         .. deck::
 
-            .. card:: 
+            .. card::
 
-                **Ganze Zahlen** 
+                **Ganze Zahlen**
 
                 .. code:: rust
                     :number-lines:
@@ -265,30 +246,30 @@ Hashfunktionen
 
                 .. note::
 
-                    .. csv-table:: 
+                    .. csv-table::
                         :header: char, unicode
 
                         'a', 97
                         'b', 98
                         'c', 99
-                        ︙, ︙ 
+                        ︙, ︙
                         'l', 108
 
 
                 Horners Methode für Zeichenketten der Länge L:
-                
+
                 :math:`h = s[0] · 31^{L–1} + …  + s[L – 2] · 31^1  +  s[L – 1] · 31^0`.
 
                 .. code:: rust
                     :number-lines:
-                    
-                    fn hash(s: [char,4]) : u32 { 
+
+                    fn hash(s: [char,4]) : u32 {
                         hash: u32 = 0
                         for i in 0..4 { hash = s[i] + hash * 31; }
                         return hash;
                     }
                     // hash(['c','a','l','l']) = // ≘ hash("call")
-                    //    99 · 31·31·31 + 97 · 31·31 + 108 · 31 + 108 = 
+                    //    99 · 31·31·31 + 97 · 31·31 + 108 · 31 + 108 =
                     //    108 + 31 · ( 108 + 31 · (97 + 31 · (99)))
 
 
@@ -313,14 +294,14 @@ Verwendung von Hashes in Python
         - Bei der Speicherung von Objekten in Sets und Dictionaries verwendet Python Hashes.
         - Sobald ein Objekt in einem Set oder Dictionary gespeichert wird, darf der Objektzustand (zumindest im Hinblick auf die Hashfunktion) nicht mehr verändert werden!
         - Der Hashwert eines (nicht veränderlichen) Objekts kann mit der Funktion ``hash()`` berechnet werden.
-        - Eigene Objekte in Sets und Dictionaries speichern: 
+        - Eigene Objekte in Sets und Dictionaries speichern:
 
           .. class:: incremental-list
 
           - Um benutzerdefinierte Objekte in einer Hashmap zu speichern, müssen wir die Methoden :python:`__hash__` und :python:`__eq__` implementieren.
 
           - Zu beachten:
-        
+
             - Hashwerte *müssen für gleiche Objekte gleich sein*.
             - Hashwerte *für unterschiedliche Objekte sollten unterschiedlich sein*.
 
@@ -332,19 +313,19 @@ Verwendung von Hashes in Python
             :class: copy-to-clipboard
             :number-lines:
 
-            class Person: 
-                def __init__(self, name, age): 
-                    self.name = name 
-                    self.age = age 
+            class Person:
+                def __init__(self, name, age):
+                    self.name = name
+                    self.age = age
 
-                def __eq__(self, other): 
-                    if isinstance(other, Person): 
+                def __eq__(self, other):
+                    if isinstance(other, Person):
                         return  self.name == other.name and \
-                                self.age == other.age 
-                    return False 
+                                self.age == other.age
+                    return False
 
-                def __hash__(self): 
-                    return hash((self.name, self.age)) 
+                def __hash__(self):
+                    return hash((self.name, self.age))
 
     .. card::
 
@@ -354,8 +335,8 @@ Verwendung von Hashes in Python
             :class: copy-to-clipboard
             :number-lines:
 
-            person1 = Person("Alice", 30) 
-            person2 = Person("Bob", 25) 
+            person1 = Person("Alice", 30)
+            person2 = Person("Bob", 25)
             person3 = Person("Alice", 30) # gleiche Werte wie "person1"
 
         **Beispielausgabe**
@@ -372,7 +353,7 @@ Verwendung von Hashes in Python
 
     .. card::
 
-        .. rubric:: Speicherung von :java:`Person`-Objekten in einem Set 
+        .. rubric:: Speicherung von :java:`Person`-Objekten in einem Set
 
         .. code:: python
             :class: copy-to-clipboard
@@ -394,7 +375,7 @@ Verwendung von Hashes in Python
 
             .. code:: python
                 :class: incremental
-    
+
                 Bob
                 Alice
 
@@ -431,19 +412,19 @@ Verwendung von Hashes in Python
             :class: copy-to-clipboard
             :number-lines:
 
-            class PersonWithBadHash: 
-                def __init__(self, name, age): 
-                    self.name = name 
-                    self.age = age 
+            class PersonWithBadHash:
+                def __init__(self, name, age):
+                    self.name = name
+                    self.age = age
 
-                def __eq__(self, other): 
-                    if isinstance(other, Person): 
+                def __eq__(self, other):
+                    if isinstance(other, Person):
                         return  self.name == other.name and \
-                                self.age == other.age 
-                    return False 
+                                self.age == other.age
+                    return False
 
-                def __hash__(self): 
-                    return 1 # immer der gleiche Hashwert 
+                def __hash__(self):
+                    return 1 # immer der gleiche Hashwert
 
         .. supplemental::
 
@@ -455,8 +436,8 @@ Verwendung von Hashes in Python
 
         .. code:: python
 
-            person1 = Person("Alice", 30) 
-            person2 = Person("Bob", 25) 
+            person1 = Person("Alice", 30)
+            person2 = Person("Bob", 25)
             person3 = Person("Alice", 30)
             people = {person1, person2, person3}
             print(hash(person1))
@@ -486,9 +467,9 @@ Verwendung von Hashes in Python
 --------------------------------------------------------
 
 .. exercise:: Eine Klasse zur Repräsentation von Studierenden.
-    
+
     Die Klasse :java:`Student` soll:
-    
+
     - die Attribute/Properties ``name`` und ``matriculation_number`` haben.
 
     - die Methoden ``__eq__`` und ``__hash__`` sinnvoll/korrekt definieren
@@ -500,8 +481,8 @@ Verwendung von Hashes in Python
     2) *Fragen Sie sich wie sie effizient den Hashwert berechnen können.*
 
     3) Geben Sie die Namen der Studierenden aus.
-    4) Was passiert, wenn Sie — *nachdem Sie ein Student Objekt dem Dictionary hinzugefügt haben* — den Namen des Studenten ändern? 
-     
+    4) Was passiert, wenn Sie — *nachdem Sie ein Student Objekt dem Dictionary hinzugefügt haben* — den Namen des Studenten ändern?
+
        Schreiben Sie entsprechenden Code, um Ihre Annahme zu überprüfen!
 
     .. supplemental::
@@ -512,14 +493,14 @@ Verwendung von Hashes in Python
             :class: copy-to-clipboard
             :number-lines:
 
-            class Student: 
-                def __init__(self, ... ): 
+            class Student:
+                def __init__(self, ... ):
                     raise NotImplementedError("TODO")
 
-                def __eq__(self, other): 
+                def __eq__(self, other):
                     raise NotImplementedError("TODO")
 
-                def __hash__(self): 
+                def __hash__(self):
                     raise NotImplementedError("TODO")
 
     .. solution::
@@ -555,14 +536,14 @@ Verwendung von Hashes in Java
         - Bei der Speicherung von Objekten in Sets und :java:`HashMap`\ s/:java:`Hashtable`\ s verwendet Java Hashes.
         - Sobald ein Objekt in einem Set oder einer Map gespeichert wird, darf der Objektzustand (zumindest im Hinblick auf die Hashfunktion) nicht mehr verändert werden!
         - Der Hashwert eines (nicht veränderlichen) Objekts kann mit der Funktion :java:`hashCode()` berechnet werden.
-        - Eigene Objekte in Sets und Maps speichern: 
+        - Eigene Objekte in Sets und Maps speichern:
 
           .. class:: incremental-list
 
           - Um benutzerdefinierte Objekte in einer :java:`HashMap` zu speichern, müssen wir die Methoden :java:`boolean equals(Object o)` und :python:`int hashCode()` implementieren.
 
           - Zu beachten:
-        
+
             - Hashwerte *müssen für gleiche Objekte gleich sein*.
             - Hashwerte *für unterschiedliche Objekte sollten unterschiedlich sein*.
 
@@ -577,14 +558,14 @@ Verwendung von Hashes in Java
             class Person {
                 private String name;
                 private int age;
-                Person(String name, int age) { this.name = name; this.age = age; }   
+                Person(String name, int age) { this.name = name; this.age = age; }
 
-                public boolean equals(Object o) { 
+                public boolean equals(Object o) {
                     if (o instanceof Person) { // Alt. compare class objects
-                        Person other = (Person) o; 
-                        return this.name.equals(other.name) && this.age == other.age; 
-                    } 
-                    return false; 
+                        Person other = (Person) o;
+                        return this.name.equals(other.name) && this.age == other.age;
+                    }
+                    return false;
                 }
 
                 public int hashCode() { return java.util.Objects.hash(name, age); }
@@ -598,7 +579,7 @@ Verwendung von Hashes in Java
             :class: copy-to-clipboard
             :number-lines:
 
-            var person1 = new Person("Alice", 30); 
+            var person1 = new Person("Alice", 30);
             var person2 = new Person("Bob", 25);
             var person3 = new Person("Alice", 30); // gleiche Werte wie "person1"
 
@@ -609,11 +590,11 @@ Verwendung von Hashes in Java
 
             person1 ==> Person@750e297f // the addresses are memory addresses
             person2 ==> Person@1fb0e5
-            person3 ==> Person@750e297f
+            person3 ==> Person@650e893b
 
     .. card::
 
-        .. rubric:: Speicherung von :java:`Person`-Objekten in einem Set 
+        .. rubric:: Speicherung von :java:`Person`-Objekten in einem Set
 
         .. code:: java
             :class: copy-to-clipboard
@@ -646,7 +627,7 @@ Verwendung von Hashes in Java
             **Ausgabe**
 
             .. code:: java
-            
+
                 Bob
                 Alice
 
@@ -680,17 +661,17 @@ Verwendung von Hashes in Java
             :class: copy-to-clipboard
             :number-lines:
 
-            class PersonWithBadHash { 
+            class PersonWithBadHash {
                 String name;
                 int age;
-                PersonWithBadHash(String name, int age) { this.name = name; this.age = age; }   
+                PersonWithBadHash(String name, int age) { this.name = name; this.age = age; }
 
-                public boolean equals(Object o) { 
-                    if (o instanceof PersonWithBadHash) { 
-                        PersonWithBadHash other = (PersonWithBadHash) o; 
-                        return this.name.equals(other.name) && this.age == other.age; 
-                    } 
-                    return false; 
+                public boolean equals(Object o) {
+                    if (o instanceof PersonWithBadHash) {
+                        PersonWithBadHash other = (PersonWithBadHash) o;
+                        return this.name.equals(other.name) && this.age == other.age;
+                    }
+                    return false;
                 }
 
                 public int hashCode() { return 1; /* immer der gleiche Hashwert */ }
@@ -735,9 +716,9 @@ Verwendung von Hashes in Java
 --------------------------------------------------------
 
 .. exercise:: Eine Klasse zur Repräsentation von Studierenden.
-    
+
     Die Klasse :java:`Student` (Nutzen Sie hier kein :java:`record`) soll:
-    
+
     - die Attribute/Properties ``name`` und ``matriculationNumber`` haben.
 
     - die Methoden ``equals`` und ``hashCode`` sinnvoll/korrekt definieren
@@ -749,8 +730,8 @@ Verwendung von Hashes in Java
     2) *Fragen Sie sich wie sie effizient den Hashwert berechnen können.*
 
     3) Geben Sie die Namen der Studierenden aus.
-    4) Was passiert, wenn Sie — *nachdem Sie ein Student Objekt einer Map hinzugefügt haben* — den Namen des Studenten ändern? 
-     
+    4) Was passiert, wenn Sie — *nachdem Sie ein Student Objekt einem (Hash)Set hinzugefügt haben* — den Namen des Studenten ändern?
+
        Schreiben Sie entsprechenden Code, um Ihre Annahme zu überprüfen!
 
     .. supplemental::
@@ -761,29 +742,32 @@ Verwendung von Hashes in Java
             :class: copy-to-clipboard
             :number-lines:
 
+            import java.util.HashSet;
+
             class Student {
                 private String name;
                 private int matriculationNumber;
 
-                public Student(String name, int matriculationNumber) { 
-                    this.name = name; 
-                    this.matriculationNumber = matriculationNumber; 
+                public Student(String name, int matriculationNumber) {
+                    this.name = name;
+                    this.matriculationNumber = matriculationNumber;
                 }
 
                 public String getName() { return name; }
                 public void setName(String name) { this.name = name; }
                 public int getMatriculationNumber(){ return matriculationNumber; }
-                public void setMatriculationNumber(int matriculationNumber) { 
-                    this.matriculationNumber = matriculationNumber; 
+                public void setMatriculationNumber(int matriculationNumber) {
+                    this.matriculationNumber = matriculationNumber;
                 }
 
                 @Override public boolean equals(Object o) {
                     throw new UnsupportedOperationException("TODO");
                 }
 
-                @Override public int hashCode() { 
+                @Override public int hashCode() {
                     throw new UnsupportedOperationException("TODO");
                 }
+            }
 
     .. solution::
         :pwd: DieMatrikelnummerIstDerHash
@@ -811,9 +795,9 @@ Gängige Ansätze für Hashfunktionen
 
 .. deck::
 
-    .. card:: 
+    .. card::
 
-        :Modulo-Hashfunktion: 
+        :Modulo-Hashfunktion:
 
             Sei :math:`n` möglichst eine Primzahl:
 
@@ -825,17 +809,17 @@ Gängige Ansätze für Hashfunktionen
         - surjektiv
         - gleichverteilt
         - wenn :math:`n` keine Primzahl ist, dann kann es (leicht) passieren, dass bestimmte (Teil-)daten weniger oder keinen Einfluss auf den Hashwert haben:
-        
+
           .. class:: incremental
 
-          - :math:`x \cdot 10^3 \mod 40 = 0` 
-          - :math:`x \cdot 10^3 \mod 42 \in \{0,2,4,...,40\}` Anm.: :math:`ggt(42,1000) = 2` 
-          - :math:`x \cdot 10^3 \mod 41 \in \{0,1,2,3,...,40\}` Anm.: :math:`ggt(41,1000) = 1` 
-         
+          - :math:`x \cdot 10^3 \mod 40 = 0`
+          - :math:`x \cdot 10^3 \mod 42 \in \{0,2,4,...,40\}` Anm.: :math:`ggt(42,1000) = 2`
+          - :math:`x \cdot 10^3 \mod 41 \in \{0,1,2,3,...,40\}` Anm.: :math:`ggt(41,1000) = 1`
+
     .. card::
 
-        :Multiplikations-Hashfunktion: 
-            
+        :Multiplikations-Hashfunktion:
+
             Sei :math:`c` fest, oft :math:`c = {\sqrt{5}−1 \over 2} \approx 0,6180339887498949`:
 
             .. presenter-note::
@@ -850,12 +834,12 @@ Gängige Ansätze für Hashfunktionen
 
         - nicht beweisbar surjektiv
         - nur asymptotisch gleichverteilt
-        - Das verwendete :math:`c` sollte eine gute Durchmischung der Key-Bits fördern. 
-      
+        - Das verwendete :math:`c` sollte eine gute Durchmischung der Key-Bits fördern.
+
           Andere irrationale Zahlen sind ggf. auch sinnvoll/möglich.
-     
+
         - Berechnung benötigt eine effiziente Fließkomma-Verarbeitung
-          
+
 
 
 .. class:: exercises
@@ -869,7 +853,7 @@ Gängige Ansätze für Hashfunktionen
 
     1. :math:`h^{mod}_{257}(1 000)`
     2. :math:`h^{mul}_{257}(1 000)`
-  
+
     .. solution::
         :pwd: zweiWerte
 
@@ -897,7 +881,7 @@ Gängige Ansätze für Hashfunktionen
 
     1. :math:`h^{mod}_{263}(10 000)`
     2. :math:`h^{mul}_{263}(10 000)`
-  
+
     .. solution::
         :pwd: WiederZweiWerte+
 
@@ -926,7 +910,7 @@ Das Grundprinzip von Hashtabellen ist einfach:
 .. class:: incremental list-with-explanations
 
 - Im Vorfeld wird ein Array :java:`A` einer Größe :java:`n` angelegt,
- 
+
   Die Größe des Arrays übersteigt die erwartete Belegung deutlich.
 - Daten mit einem Schlüssel :java:`k` werden dann an der Position :java:`A[h(k)]` gespeichert - oder an einer Ersatzposition.
 - Sollte die Belegung zu groß werden, wird das Array vergrößert und die Elemente werden (ggf.) neu bzw. wieder gehasht.
@@ -937,12 +921,12 @@ Das Grundprinzip von Hashtabellen ist einfach:
 Belegung von Hashtabellen
 -------------------------------
 
-Die Belegung von Hashtabllen ist für die Effizienz entscheidend.
+Die Belegung von Hashtabellen ist für die Effizienz entscheidend.
 
 .. admonition:: Definition
 
-    Ein Array :math:`A` der Kapazität :math:`n` mit einer Hashfunktion :math:`h_n` wird :math:`Hashtabelle(A,h_n)` genannt. 
-    
+    Ein Array :math:`A` der Kapazität :math:`n` mit einer Hashfunktion :math:`h_n` wird :math:`Hashtabelle(A,h_n)` genannt.
+
     Sind zu einem Zeitpunkt :math:`m` (erste) Felder belegt, so hat die :math:`Hashtabelle(A,h_n)` eine Belegung von :math:`α = \frac{m}{n}`.
 
 
@@ -952,7 +936,7 @@ Verkettete Hashtabellen
 .. deck::
 
     .. card::
-                
+
         .. rubric:: Direkte Verkettung
 
         .. image:: images/hashtables/direkte_verkettung.svg
@@ -974,8 +958,8 @@ Verkettete Hashtabellen
         .. supplemental::
 
 
-            Die *separate Verkettung* von Überläufern verwendet eine :math:`Hashtabelle(A,h_n)`, bei der das Array :math:`A` aus Knoten einer einfach verketteten Liste besteht, dessen Wert :math:`nil` ist, wenn unter dem Hashwert noch nichts gespeichert wurde. 
-            
+            Die *separate Verkettung* von Überläufern verwendet eine :math:`Hashtabelle(A,h_n)`, bei der das Array :math:`A` aus Knoten einer einfach verketteten Liste besteht, dessen Wert :math:`nil` ist, wenn unter dem Hashwert noch nichts gespeichert wurde.
+
             Ein Eintrag mit Schlüssel :math:`k` wird der verketteten Liste zugeordnet, die in :math:`A[h_n(k)]` verlinkt ist oder startet, und kann entsprechend hinzugefügt, gelöscht und gefunden werden.
 
 
@@ -991,9 +975,9 @@ Offene Adressierung
 
 .. deck::
 
-    .. card:: 
+    .. card::
 
-        :Lineares-Sondieren: 
+        :Lineares-Sondieren:
 
             Das Array wird linear durchsucht.
 
@@ -1001,7 +985,7 @@ Offene Adressierung
 
     .. card::
 
-        :Quadratisches-Sondieren: 
+        :Quadratisches-Sondieren:
 
             Das Array wird quadratisch steigend durchsucht.
 
@@ -1009,12 +993,12 @@ Offene Adressierung
 
     .. card::
 
-        :Doppeltes-Hashing: 
+        :Doppeltes-Hashing:
 
-            Das Array wird mit Hilfe einer zweiten Hashfunktion: 
-            
-            :math:`h^{'}_n(k) = (k\; mod\; (n-2)) +1` 
-            
+            Das Array wird mit Hilfe einer zweiten Hashfunktion:
+
+            :math:`h^{'}_n(k) = (k\; mod\; (n-2)) +1`
+
             durchsucht.
 
             :math:`g^{doppel}_n(k,i) = (h_n(k) + i \cdot h^{'}_n(k))\; mod\; n`
@@ -1026,7 +1010,7 @@ Beispiel Offene Adressierung (Hashing: :math:`x\; mod\; 7`)
 
 .. deck::
 
-    .. card:: 
+    .. card::
 
         .. image:: images/open_addressing/linear_probing.svg
                     :alt: Offene Adressierung mit linearem Sondieren
@@ -1087,14 +1071,14 @@ Beispiel Offene Adressierung (Hashing: :math:`x\; mod\; 7`)
 
         .. csv-table::
             :header: 0, 1, 2, 3, 4
-            
+
             24, , 37, 18, 32
 
         Bei quadratischer Sondierung ergibt sich:
 
         .. csv-table::
             :header: 0, 1, 2, 3, 4
-            
+
             , 32, 37, 18, 24
 
 
@@ -1102,7 +1086,7 @@ Beispiel Offene Adressierung (Hashing: :math:`x\; mod\; 7`)
 
         .. csv-table::
             :header: 0, 1, 2, 3, 4
-            
+
             32, , 37, 18, 24
 
 .. exercise:: Werte in größere Hashtabelle einfügen
@@ -1116,14 +1100,14 @@ Beispiel Offene Adressierung (Hashing: :math:`x\; mod\; 7`)
 
         .. csv-table::
             :header: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10
-            
-            , , , , 37, 49, 26, 39, , , 
+
+            , , , , 37, 49, 26, 39, , ,
 
         Bei quadratischer Sondierung ergibt sich:
 
         .. csv-table::
             :header: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10
-            
+
             ,,,,37,49,39,,26,,
 
 
@@ -1131,7 +1115,7 @@ Beispiel Offene Adressierung (Hashing: :math:`x\; mod\; 7`)
 
         .. csv-table::
             :header: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10
-            
+
             ,,26,,37,49,39,,,,
 
 
@@ -1139,15 +1123,15 @@ Beispiel Offene Adressierung (Hashing: :math:`x\; mod\; 7`)
 Angriffe auf algorithmische Komplexität
 --------------------------------------------------------
 
-.. epigraph:: 
+.. epigraph::
 
     Julian Wälde and Alexander Klink reported that the :java:`String.hashCode()` hash function is not sufficiently collision resistant.
 
     :java:`hashCode()` value is used in the implementations of [Java 6] HashMap and Hashtable classes. A specially-crafted set of keys could trigger hash function collisions, which can degrade performance of HashMap or Hashtable by changing hash table operations complexity from an expected/average O(1) to the worst case O(n).
     Reporters were able to find colliding strings efficiently using equivalent substrings and meet in the middle techniques.
     This problem can be used to start a denial of service attack against  applications that use untrusted inputs as HashMap or Hashtable keys. An example is a web application server that may fill hash tables with data from HTTP request. A remote attack could use that to make JVM use excessive amount of CPU time by sending a POST request with large amount of parameters which hash to the same value.
-    
-    -- [Abbreviated Version] Jan Lieskovsky 2011-11-01 
+
+    -- [Abbreviated Version] Jan Lieskovsky 2011-11-01
 
 
-.. TODO: Discuss https://en.wikipedia.org/wiki/MurmurHash 
+.. TODO: Discuss https://en.wikipedia.org/wiki/MurmurHash

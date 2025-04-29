@@ -8,22 +8,7 @@
     :first-slide: last-viewed
     :master-password: WirklichSchwierig!
 
-.. |html-source| source::
-    :prefix: https://delors.github.io/
-    :suffix: .html
-.. |pdf-source| source::
-    :prefix: https://delors.github.io/
-    :suffix: .html.pdf
-
-.. role:: incremental
-.. role:: ger
-.. role:: eng
-.. role:: red
-.. role:: green 
-.. role:: blue 
-.. role:: minor
-.. role:: far-far-smaller
-.. role:: far-smaller
+.. include:: ../docutils.defs
     
     
 
@@ -838,7 +823,7 @@ MAC: `Poly 1305 <https://datatracker.ietf.org/doc/html/rfc8439#section-2.5>`__
 
     .. layer:: incremental
 
-        :far-smaller:`Beispiel`
+        Beispiel
 
         .. code:: text
             :class: far-far-smaller

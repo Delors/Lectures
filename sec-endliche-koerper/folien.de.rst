@@ -8,22 +8,7 @@
     :first-slide: last-viewed
     :master-password: WirklichSchwierig!
 
-.. |html-source| source::
-    :prefix: https://delors.github.io/
-    :suffix: .html
-.. |pdf-source| source::
-    :prefix: https://delors.github.io/
-    :suffix: .html.pdf
-
-.. role:: incremental
-.. role:: ger
-.. role:: eng
-.. role:: red
-.. role:: smaller
-.. role:: far-smaller
-
-.. role:: raw-html(raw)
-   :format: html
+.. include:: ../docutils.defs
 
 
 
@@ -768,7 +753,7 @@ ___________________________________________________________________
     6,6,3
     7,7,4
 
-:smaller:`(Die Werte wurden aus den vorherigen Tabellen abgelesen.)`
+:peripheral:`(Die Werte wurden aus den vorherigen Tabellen abgelesen.)`
 
 
 

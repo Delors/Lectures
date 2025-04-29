@@ -8,34 +8,9 @@
     :first-slide: last-viewed
     :master-password: WirklichSchwierig!
     
-.. |html-source| source::
-    :prefix: https://delors.github.io/
-    :suffix: .html
-.. |pdf-source| source::
-    :prefix: https://delors.github.io/
-    :suffix: .html.pdf
-.. |at| unicode:: 0x40
-
-.. role:: incremental
-.. role:: appear
-.. role:: eng
-.. role:: ger
-.. role:: red
-.. role:: green
-.. role:: the-blue
-.. role:: minor
-.. role:: obsolete
-.. role:: line-above
-.. role:: dhbw-red    
-.. role:: smaller
-.. role:: far-smaller
-.. role:: monospaced
-.. role:: java(code)
-   :language: java
+.. include:: ../docutils.defs
 
 
-
-.. class:: animated-symbol
 
 Objekt-orientierte Programmierung - Vererbung und Polymorphie
 ==============================================================
@@ -261,14 +236,14 @@ Vererbung (:eng:`Inheritance`)
             :number-lines:
             :class: far-smaller copy-to-clipboard
             :start-after: }   }
-        - Die Methode :java:`getClass()` erlaubt den Zugriff auf die Klasse eines Objekts und ermöglicht :java:`Reflection`. :minor:`Thema für spätere Vorlesung(en).`
+        - Die Methode :java:`getClass()` erlaubt den Zugriff auf die Klasse eines Objekts und ermöglicht :java:`Reflection`. :peripheral:`Thema für spätere Vorlesung(en).`
 
     .. layer:: incremental
 
         .. rubric:: Methoden überschreiben
 
         - Eine Methode in einer Subklasse kann eine Methode in der Superklasse überschreiben.
-        - :dhbw-red:`Eine Methode, die eine Methode in der Superklasse überschreibt hat den Kontrakt der Superklasse immer einzuhalten!`
+        - :red:`Eine Methode, die eine Methode in der Superklasse überschreibt hat den Kontrakt der Superklasse immer einzuhalten!`
           
           D. h. Vorbedingungen können in der Subklassen entspannt und Nachbedingungen verschärft werden, aber nie umgekehrt.
 

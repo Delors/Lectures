@@ -8,20 +8,7 @@
     :first-slide: last-viewed
     :master-password: WirklichSchwierig!
 
-.. |html-source| source::
-    :prefix: https://delors.github.io/
-    :suffix: .html
-.. |pdf-source| source::
-    :prefix: https://delors.github.io/
-    :suffix: .html.pdf
-
-.. role:: incremental
-.. role:: ger
-.. role:: eng
-.. role:: red
-.. role:: green 
-.. role:: blue 
-.. role:: minor
+.. include:: ../docutils.defs
     
     
 
@@ -421,7 +408,7 @@ Sei :math:`p = 383` und :math:`q = 503`, dann ist :math:`n = 192649`. Weiterhin 
         :class: no-table-borders table-rows-align-right
         :header: :math:`i`, :math:`x_i`, :math:`B_i`
 
-        :minor:`0`, :math:`101355 ^ 2 \;mod\; 192649 = 20749`, 
+        :peripheral:`0`, :math:`101355 ^ 2 \;mod\; 192649 = 20749`, 
         1, 143135,1
         2,177671,1
         3,97048,0
@@ -549,7 +536,7 @@ Zwei Ansätze, die eine Blockchiffre zum Aufbau eines PNRG verwenden, haben weit
             :header: i, Wert, Bit
             :align: right
 
-            :minor:`0`, :math:`253^2\; mod\; n` :minor:`= 1.593`,
+            :peripheral:`0`, :math:`253^2\; mod\; n` :peripheral:`= 1.593`,
             1, 1999, 1
             2, 1377, 1
             3, 243, 1

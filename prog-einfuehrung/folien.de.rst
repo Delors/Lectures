@@ -8,31 +8,9 @@
     :first-slide: last-viewed
     :master-password: WirklichSchwierig!
     
-.. |html-source| source::
-    :prefix: https://delors.github.io/
-    :suffix: .html
-.. |pdf-source| source::
-    :prefix: https://delors.github.io/
-    :suffix: .html.pdf
-.. |at| unicode:: 0x40
-
-.. role:: incremental
-.. role:: appear
-.. role:: eng
-.. role:: ger
-.. role:: red
-.. role:: green
-.. role:: the-blue
-.. role:: minor
-.. role:: obsolete
-.. role:: line-above
-.. role:: smaller
-.. role:: far-smaller
-.. role:: monospaced
+.. include:: ../docutils.defs
 
 
-
-.. class:: animated-symbol
 
 Einführung in die Programmierung
 ================================================
@@ -53,6 +31,7 @@ Einführung in die Programmierung
 
     :Fehler melden:
         https://github.com/Delors/delors.github.io/issues
+
 
 
 .. class:: new-section transition-move-to-top
@@ -324,7 +303,7 @@ Zentrale Eigenschaften von Algorithmen
 
 .. container:: scrollable
 
-    :Allgemeinheit: Ein Algorithmus löst eine Klasse von Problemen. :appear:`Die konkrete Instanz wird über die Eingabeparameter/Parametrisierung festgelegt.`
+    :Allgemeinheit: Ein Algorithmus löst eine Klasse von Problemen. :incremental:`Die konkrete Instanz wird über die Eingabeparameter/Parametrisierung festgelegt.`
 
     .. class:: incremental
 
@@ -355,9 +334,9 @@ Zentrale Eigenschaften von Algorithmen
 
       Zeit und Platzbedarf sind endlich und in einem gewissen Rahmen abschätzbar. 
       
-      :minor:`Normalerweise versucht man den besten, schlechtesten und durchschnittlichen Fall zu bestimmen in Abhängigkeit von der Eingabegröße. (Insbesondere Thema des nächsten Semesters).`
+      :peripheral::`Normalerweise versucht man den besten, schlechtesten und durchschnittlichen Fall zu bestimmen in Abhängigkeit von der Eingabegröße. (Insbesondere Thema des nächsten Semesters).`
     
-      :minor:`Diese Angaben erfolgen unabhängig von einer konkreten Implementierung bzw. Verwendung einer bestimmten Programmiersprache oder Hardware.`
+      :peripheral::`Diese Angaben erfolgen unabhängig von einer konkreten Implementierung bzw. Verwendung einer bestimmten Programmiersprache oder Hardware.`
 
     .. class:: incremental
 
@@ -623,7 +602,7 @@ Die EBNF dient der Beschreibung kontext-freier Grammatiken.
 
     Bei kontext-freien Sprachen kommt auf der linken Seite einer Regel genau ein Nichtterminal vor, auf der rechten Seite können beliebig viele Nichtterminale und Terminale vorkommen. 
     
-    .. container:: minor
+    .. container:: peripheral
         
         Was genau „kontext-frei“ bedeutet, ist Gegenstand fortgeschrittener  Vorlesungen. Für den Moment reicht es zu wissen, dass dies gewisse Einschränkungen für die Regeln bedeutet. Diese Einschränkungen aber das Verarbeiten zumindest stark vereinfachen bzw. überhaupt erst ermöglichen.
 
@@ -745,6 +724,6 @@ Zu installieren (für den Anfang):
   https://www.azul.com/downloads/?package=jdk#zulu
 
   (Java 22 ist nicht ausreichend.)
-- Visual Studio Code :minor:`inkl. Java Tools oder Eclipse Theia oder IntelliJ IDEA oder Eclipse`
+- Visual Studio Code :peripheral:`inkl. Java Tools oder Eclipse Theia oder IntelliJ IDEA oder Eclipse`
 
   Ich verwende Visual Studio Code mit dem Java Extension Pack.

@@ -6,27 +6,8 @@
     :id: allgemein-seminararbeiten
     :first-slide: last-viewed
 
-.. |html-source| source::
-    :prefix: https://delors.github.io/
-    :suffix: .html
-.. |pdf-source| source::
-    :prefix: https://delors.github.io/
-    :suffix: .html.pdf
-.. |at| unicode:: 0x40
+.. include:: ../docutils.defs
 
-.. role:: incremental   
-.. role:: eng
-.. role:: ger
-.. role:: red
-.. role:: obsolete
-.. role:: monospaced
-
-.. role:: raw-html(raw)
-   :format: html
-
-
-
-.. class:: animated-symbol
 
 Vorträge: Hinweise und Bewertungskriterien
 ===================================================

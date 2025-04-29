@@ -6,25 +6,7 @@
     :id: lecture-dm-rechtliche-aspekte-des-dokumentenmanagements
     :first-slide: last-viewed
 
-.. |html-source| source::
-    :prefix: https://delors.github.io/
-    :suffix: .html
-.. |pdf-source| source::
-    :prefix: https://delors.github.io/
-    :suffix: .html.pdf
-
-.. |at| unicode:: 0x40
-
-.. role:: incremental   
-
-.. role:: eng
-.. role:: ger
-
-.. role:: minor
-.. role:: obsolete
-
-.. role:: the-blue
-.. role:: line-above
+.. include:: ../docutils.defs
 
 
 
@@ -50,7 +32,7 @@ Rechtliche Anforderungen an das Dokumentenmanagement
 Dokumente
 ----------
 
-- :minor:`Dokumente sind Träger von Daten, die Aufschluss über Handlungen, Abläufe und Produkte eines Unternehmens oder einen Institution geben.`
+- :peripheral:`Dokumente sind Träger von Daten, die Aufschluss über Handlungen, Abläufe und Produkte eines Unternehmens oder einen Institution geben.`
 - Dokumente dienen als Nachweis sowohl im Tagesgeschäft als auch bei Streitigkeiten. 
 - Dokumente berühren eine Reihe von gesetzlichen Regelungen, Normen und Vorschriften.
 
@@ -199,7 +181,7 @@ Grundsätze ordnungsgemäßer Buchführung (GoB)
 
   - Grundsatz der Richtigkeit und Willkürfreiheit
   - Grundsatz der Klarheit und Übersichtlichkeit 
-  - :minor:`Grundsatz der Einzelbewertung`
+  - :peripheral:`Grundsatz der Einzelbewertung`
   - Grundsatz der Vollständigkeit 
   - Grundsatz der Ordnungsmäßigkeit 
   - Grundsatz der Sicherheit (Revisionssichere Aufbewahrung)

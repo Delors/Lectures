@@ -7,37 +7,12 @@
     :first-slide: last-viewed
     :master-password: WirklichSchwierig!
 
-.. |html-source| source::
-    :prefix: https://delors.github.io/
-    :suffix: .html
-.. |pdf-source| source::
-    :prefix: https://delors.github.io/
-    :suffix: .html.pdf
+.. include:: ../docutils.defs
 
 .. |RPN.zip| source:: exercise/RPN.zip
     :prefix: https://delors.github.io/
     :path: relative
 
-
-.. |at| unicode:: 0x40
-
-.. role:: incremental   
-.. role:: eng
-.. role:: ger
-.. role:: red
-.. role:: peripheral
-.. role:: obsolete    
-.. role:: java(code)
-    :language: java
-.. role:: bash(code)
-    :language: bash
-.. role:: sh(code)
-    :language: sh
-.. role:: console(code)
-    :language: console
-
-.. role:: raw-html(raw)
-   :format: html
 
 
 Software Engineering - Versionskontrolle (mit Git)

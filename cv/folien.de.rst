@@ -3,29 +3,7 @@
     :author: Michael Eichberg
     :keywords: "Lebenslauf"
     :description lang=de: Lebenslauf von Prof. Dr. Michael Eichberg
-    :id: lecture-cv
-
-
-.. |at| unicode:: 0x40
-
-.. role:: incremental
-.. role:: eng
-.. role:: ger
-.. role:: obsolete
-.. role:: dhbw-red
-.. role:: dhbw-gray
-.. role:: dhbw-light-gray
-.. role:: the-blue
-.. role:: the-green
-.. role:: the-orange
-.. role:: shiny-green
-.. role:: shiny-red
-.. role:: black
-.. role:: dark-red
-
-
-.. role:: raw-html(raw)
-   :format: html
+    :id: cv-michael-eichberg
 
 
 

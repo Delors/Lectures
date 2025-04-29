@@ -7,32 +7,9 @@
     :first-slide: last-viewed
     :master-password: WirklichSchwierig!
 
-.. |html-source| source::
-    :prefix: https://delors.github.io/
-    :suffix: .html
-.. |pdf-source| source::
-    :prefix: https://delors.github.io/
-    :suffix: .html.pdf
-.. |at| unicode:: 0x40
-
-.. role:: incremental   
-.. role:: eng
-.. role:: ger
-.. role:: red
-.. role:: shiny-green
-.. role:: the-blue
-.. role:: minor
-.. role:: obsolete
-.. role:: line-above
-.. role:: huge
-.. role:: xxl
-.. role:: far-smaller
-
-.. role:: raw-html(raw)
-   :format: html
+.. include:: ../docutils.defs
 
 
-.. class:: animated-symbol organic-red
 
 Passwortwiederherstellung 
 =====================================================
@@ -762,9 +739,9 @@ Szenario 5: Kombination von Wörterbuch mit eigenem Regelsatz
       :class: incremental no-table-borders
       :width: 100%
 
-      cd, :minor:`Erst Groß-Kleinschreibung anpassen und dann duplizieren.`
-      dc, :minor:`Erst duplizieren und dann Groß-Kleinschreibung anpassen.`
-      d, :minor:`Einfach nur duplizieren.`
+      cd, :peripheral:`Erst Groß-Kleinschreibung anpassen und dann duplizieren.`
+      dc, :peripheral:`Erst duplizieren und dann Groß-Kleinschreibung anpassen.`
+      d, :peripheral:`Einfach nur duplizieren.`
 
 .. class:: incremental
 

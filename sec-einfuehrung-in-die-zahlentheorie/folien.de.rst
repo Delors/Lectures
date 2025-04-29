@@ -9,27 +9,9 @@
     :first-slide: last-viewed
     :master-password: WirklichSchwierig!
 
-.. |html-source| source::
-    :prefix: https://delors.github.io/
-    :suffix: .html
-.. |pdf-source| source::
-    :prefix: https://delors.github.io/
-    :suffix: .html.pdf
+.. include:: ../docutils.defs
 
 
-.. role:: incremental
-.. role:: ger
-.. role:: eng
-.. role:: minor
-.. role:: smaller
-.. role:: scriptsize
-
-.. role:: raw-html(raw)
-    :format: html
-
-
-
-.. class:: animated-symbol 
 
 Einführung in die Zahlentheorie
 ================================
@@ -341,7 +323,7 @@ Eigenschaften der Kongruenz
 
 .. class:: incremental
 
-1. :math:`a \equiv b (mod\; n)` wenn :math:`n|(a-b)` :minor:`(Siehe nächste Folie.)`
+1. :math:`a \equiv b (mod\; n)` wenn :math:`n|(a-b)` :peripheral:`(Siehe nächste Folie.)`
 2. :math:`a \equiv b (mod\; n) \Rightarrow b \equiv a (mod\; n)`
 3. :math:`a \equiv b (mod\; n)` und :math:`b \equiv c (mod\; n) \Rightarrow a \equiv c (mod\; n)`
 
@@ -669,7 +651,7 @@ Erweiterter Euklidischer Algorithmus
 
     Der erweiterte euklidische Algorithmus kann auf jeden Ring angewandt werden, in welchem eine Division mit kleinstem Rest durchgeführt werden kann. Ein Beispiel ist der Polynomring in einer Variablen mit rationalen oder reellen Koeffizienten wie sie bei der Verschlüsselung angewandt werden. Wir werden dies später wieder aufgreifen.
     
-    Der erweiterte Algo. dient insbesondere der Berechnung der inversen Elemente in ganzzahligen Restklassenringen. :minor:`(Beides werden wir später in der Vorlesung betrachten).`
+    Der erweiterte Algo. dient insbesondere der Berechnung der inversen Elemente in ganzzahligen Restklassenringen. :peripheral:`(Beides werden wir später in der Vorlesung betrachten).`
   
 
 
@@ -700,7 +682,7 @@ Werfen wir einen Blick auf :math:`x \times a + y \times b` für einige :math:`x`
     Der GGT :math:`6` erscheint in der Tabelle (:math:`x = -2` und :math:`y = 3`).
 
 
-Erweiterter Euklidischer Algorithmus :raw-html:`<br>` :scriptsize:`Systematische Berechnung für ggt(710,310)`
+Erweiterter Euklidischer Algorithmus :raw-html:`<br>` Systematische Berechnung für ggt(710,310)
 ------------------------------------------------------------------------------------------------------------------
 
 .. container:: two-columns

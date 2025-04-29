@@ -7,32 +7,9 @@
     :first-slide: last-viewed
     :master-password: WirklichSchwierig!
 
-.. |html-source| source::
-    :prefix: https://delors.github.io/
-    :suffix: .html
-.. |pdf-source| source::
-    :prefix: https://delors.github.io/
-    :suffix: .html.pdf
-.. |at| unicode:: 0x40
-
-.. role:: incremental   
-.. role:: eng
-.. role:: ger
-.. role:: red
-.. role:: shiny-green
-.. role:: the-blue
-.. role:: minor
-.. role:: obsolete
-.. role:: line-above
-.. role:: huge
-.. role:: xxl
-.. role:: far-smaller
-
-.. role:: raw-html(raw)
-   :format: html
+.. include:: ../docutils.defs
 
 
-.. class:: animated-symbol organic-red
 
 Passwortsicherheit 
 =====================================================
@@ -81,9 +58,9 @@ Verwendung von Passworten
             :alt: Cryptostick
             :height: 400px
 
-        .. class:: text-align-center incremental
+        .. class:: text-align-center incremental xxl
         
-            :xxl:`🛜`
+            🛜
 
     .. container:: column 
 
@@ -285,7 +262,7 @@ Quellen für Passwortkandidaten
 - Verzeichnisse (z. B. Postleitzahlen, Städte, Straßennamen)
 - Leaks 
   
-  :minor:`(Sammlungen von realen Passwörtern, die meist von Hackern veröffentlicht wurden.)`
+  :peripheral:`(Sammlungen von realen Passwörtern, die meist von Hackern veröffentlicht wurden.)`
   
   - Rockyou
   - LinkedIn
@@ -372,10 +349,11 @@ Hashraten in MH/s auf aktueller Hardware
 
     **Quellen:**
 
-    - 4090: :far-smaller:`https://gist.github.com/Chick3nman/e4fcee00cb6d82874dace72106d73fef`
-    - 3090: :far-smaller:`https://gist.github.com/Chick3nman/e4fcee00cb6d82874dace72106d73fef`
-    - 1080Ti: :far-smaller:`https://www.onlinehashcrack.com/tools-benchmark-hashcat-nvidia-gtx-1080-ti.php`
-    - 2080Ti: :far-smaller:`https://gist.github.com/binary1985/c8153c8ec44595fdabbf03157562763e`
+    - `4090 <https://gist.github.com/Chick3nman/e4fcee00cb6d82874dace72106d73fef>`__
+    - `3090 <https://gist.github.com/Chick3nman/e4fcee00cb6d82874dace72106d73fef>`__
+    - `2080Ti <https://gist.github.com/binary1985/c8153c8ec44595fdabbf03157562763e>`__
+    - `1080Ti <https://www.onlinehashcrack.com/tools-benchmark-hashcat-nvidia-gtx-1080-ti.php>`__
+
 
 
 
@@ -1051,7 +1029,7 @@ Aufgrund der „Unmöglichkeit“ eines Brute-Force-Angriffs ist folgendes zu be
 - Es sollten nur *technisch sinnvolle* Passwörter getestet/generiert werden. 
 - Es sollten *keine Duplikate* getestet werden.
 - Auswahl/Generierung von *Passwörten in absteigender Wahrscheinlichkeit*.
-- :minor:`Die Auswahl/Generierung sollte effizient sein.`
+- :peripheral:`Die Auswahl/Generierung sollte effizient sein.`
 
 .. supplemental::
     
@@ -1111,7 +1089,7 @@ Password Cracking Using Probabilistic Context-Free Grammars [PCFG]_
    1. Vorverarbeitung, um die Basisstrukturen und deren Wahrscheinlichkeiten zu identifizieren (z. B. zwei Ziffern gefolgt von einem Sonderzeichen und 8 Buchstaben.)
    2. Passwortkandidatengenerierung unter Beachtung der Wahrscheinlichkeiten der Basisstrukturen und der Wahrscheinlichkeiten der Worte, Ziffern und Sonderzeichen. 
    
-      :minor:`(In der Originalversion wurden die Wahrscheinlichkeiten von Worten nicht beachtet; die auf GitHub verfügbare Version enthält jedoch zahlreiche Verbesserungen.)`
+      :peripheral:`(In der Originalversion wurden die Wahrscheinlichkeiten von Worten nicht beachtet; die auf GitHub verfügbare Version enthält jedoch zahlreiche Verbesserungen.)`
 
 
 PCFG - Analyse - Beispiel

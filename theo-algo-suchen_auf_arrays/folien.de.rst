@@ -8,29 +8,9 @@
     :first-slide: last-viewed
     :master-password: WirklichSchwierig!
     
-.. |html-source| source::
-    :prefix: https://delors.github.io/
-    :suffix: .html
-.. |pdf-source| source::
-    :prefix: https://delors.github.io/
-    :suffix: .html.pdf
-.. |at| unicode:: 0x40
-.. |qm| unicode:: 0x22 
-
-.. role:: incremental
-.. role:: appear
-.. role:: eng
-.. role:: ger
-.. role:: monospaced
-.. role:: copy-to-clipboard
-.. role:: peripheral
-.. role:: java(code)
-   :language: java
-.. role:: python(code)
-   :language: python
+.. include:: ../docutils.defs
 
 
-.. class:: animated-logo 
 
 Suchen auf Arrays
 ======================================================

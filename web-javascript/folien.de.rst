@@ -7,24 +7,9 @@
    :first-slide: last-viewed
    :master-password: WirklichSchwierig!
 
-.. |html-source| source::
-    :prefix: https://delors.github.io/
-    :suffix: .html
-.. |pdf-source| source::
-    :prefix: https://delors.github.io/
-    :suffix: .html.pdf
-.. |at| unicode:: 0x40
-
-.. role:: incremental   
-.. role:: eng
-.. role:: ger
-.. role:: peripheral
-.. role:: obsolete
-.. role:: js(code)
-   :language: javascript
+.. include:: ../docutils.defs
 
 
-.. class:: animated-logo
 
 Webprogrammierung mit JavaScript
 ================================================
@@ -76,10 +61,12 @@ Historie
 Seit 2016 gibt es jährliche Updates (ECMAScript 2016, 2017, 2018, 2019, 2020, 2021, 2022, ...)
 
 
+
 .. class:: new-section
 
 Grundlegende Sprachkonstrukte
 ------------------------------------------------
+
 
 
 Grundlagen

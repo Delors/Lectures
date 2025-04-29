@@ -8,36 +8,9 @@
     :first-slide: last-viewed
     :master-password: WirklichSchwierig!
     
-.. |html-source| source::
-    :prefix: https://delors.github.io/
-    :suffix: .html
-
-.. |pdf-source| source::
-    :prefix: https://delors.github.io/
-    :suffix: .html.pdf
-
-.. |at| unicode:: 0x40
-.. |qm| unicode:: 0x22 
-
-.. |python-icon| image:: /LectureDoc2/ext/icons/python-logo-only.svg
-                    :height: 1em
-                    :class: icon
-
-.. |java-icon| image:: /LectureDoc2/ext/icons/duke.svg
-                    :height: 1em
-                    :class: icon
-
-.. role:: incremental
-.. role:: eng
-.. role:: ger
-.. role:: peripheral
-.. role:: copy-to-clipboard
-.. role:: kbd
-.. role:: java(code)
-   :language: java
+.. include:: ../docutils.defs
 
 
-.. class:: animated-logo
 
 Algorithmen und Datenstrukturen - eine Einführung
 ====================================================

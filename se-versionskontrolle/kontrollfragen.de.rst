@@ -8,21 +8,7 @@
    :first-slide: last-viewed
    :master-password: WirklichSchwierig!
     
-.. |html-source| source::
-    :prefix: https://delors.github.io/
-    :suffix: .html
-.. |pdf-source| source::
-    :prefix: https://delors.github.io/
-    :suffix: .html.pdf
-.. |at| unicode:: 0x40
-.. |qm| unicode:: 0x22 
-
-.. role:: incremental
-.. role:: eng
-.. role:: ger
-.. role:: kbd
-.. role:: java(code)
-   :language: java
+.. include:: ../docutils.defs
 
 
 

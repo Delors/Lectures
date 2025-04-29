@@ -8,36 +8,9 @@
     :first-slide: last-viewed
     :master-password: WirklichSchwierig!
     
-.. |html-source| source::
-    :prefix: https://delors.github.io/
-    :suffix: .html
-.. |pdf-source| source::
-    :prefix: https://delors.github.io/
-    :suffix: .html.pdf
-.. |at| unicode:: 0x40
-.. |qm| unicode:: 0x22 
-
-.. role:: incremental
-.. role:: appear
-.. role:: eng
-.. role:: ger
-.. role:: dhbw-red
-.. role:: green
-.. role:: the-blue
-.. role:: minor
-.. role:: obsolete
-.. role:: line-above
-.. role:: smaller
-.. role:: far-smaller
-.. role:: monospaced
-.. role:: copy-to-clipboard
-.. role:: kbd
-.. role:: java(code)
-   :language: java
+.. include:: ../docutils.defs
 
 
-
-.. class:: animated-symbol 
 
 Einführung in die Programmierung mit Java
 ====================================================
@@ -164,7 +137,7 @@ Ausführung von Java Skripten
 
         Vorgehensweise:
 
-        1) :minor:`Stellen Sie sicher, dass Java korrekt installiert ist. Öffnen Sie dazu die Konsole und geben Sie java --version ein.`
+        1) :peripheral:`Stellen Sie sicher, dass Java korrekt installiert ist. Öffnen Sie dazu die Konsole und geben Sie java --version ein.`
         2) Öffnen Sie einen Texteditor (z. B. Visual Studio Code oder ZED oder ...)
         3) Schreiben Sie den Rumpf des Programms: :java:`void main() { <IHR CODE> }`
         4) Ersetzen Sie ``<IHR CODE>`` durch den Code, der den Nutzer nach seinem Namen X fragt und dann "Guten Morgen X!" ausgibt.
@@ -218,7 +191,7 @@ Prozedurale Elemente
 
     .. class:: incremental
 
-    :primitive Datentypen: ganze Zahlen (byte, int, long), Fließkommazahlen (float, double), Zeichen (char, :minor:`byte`), Wahrheitswerte (boolean)
+    :primitive Datentypen: ganze Zahlen (byte, int, long), Fließkommazahlen (float, double), Zeichen (char, :peripheral:`byte`), Wahrheitswerte (boolean)
 
     .. class:: incremental
 
@@ -688,8 +661,8 @@ Literale stellen konstante Werte eines bestimmten Datentyps dar:
     :align: left
     :class: highlight-cell-on-hover smaller incremental
 
-    :java:`int`, :minor:`Dezimal:` 127 :minor:`; Hexadezimal:` 0xcafebabe\ [#]_ :minor:`; Oktal:` 010 :minor:`; Binär:` 0b1010
-    :java:`long`, 123_456_789l oder 123456789L  :minor:`("_" dient nur der besseren Lesbarkeit)`
+    :java:`int`, :peripheral:`Dezimal:` 127 :peripheral:`; Hexadezimal:` 0xcafebabe\ [#]_ :peripheral:`; Oktal:` 010 :peripheral:`; Binär:` 0b1010
+    :java:`long`, 123_456_789l oder 123456789L  :peripheral:`("_" dient nur der besseren Lesbarkeit)`
     :java:`float`, 0.123456789f oder 0.123456789F
     :java:`double`, "0.123456789 oder 0.123456789d oder 0.123456789D"
     :java:`char`, "'a' (Zeichen-Darstellung) oder 97 (Zahlen-Darstellung) oder 
@@ -2791,7 +2764,7 @@ Rekursive Methoden - Beispiel
 
         - Eine Methode definiert eine unterschiedliche Anzahl von Parametern
         - Eine Methode hat unterschiedliche Datentypen für ihre formalen Parameter
-        - :dhbw-red:`Unterschiedliche Rückgabetypen sind in Java nicht ausreichend.`
+        - :red:`Unterschiedliche Rückgabetypen sind in Java nicht ausreichend.`
         - Zum Beispiel gibt es in Java die Methode :java:`int Math.max(int, int)` und :java:`double Math.max(double, double)`.
         
         .. exercise::  max(long, long)?
@@ -2979,7 +2952,7 @@ Einrückungen und Blöcke
 
 - Rücken Sie zusammenhängende Blöcke um die gleiche Anzahl von Leerzeichen ein. 
   
-  Gängig ist ein Vielfaches von :minor:`2 oder` 4 Leerzeichen.
+  Gängig ist ein Vielfaches von :peripheral:`2 oder` 4 Leerzeichen.
 
 - Verwenden Sie keine Tabulatoren (``\\t``) für Einrückungen.
 

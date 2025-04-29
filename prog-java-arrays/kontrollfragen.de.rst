@@ -2,34 +2,13 @@
    :version: renaissance
    :lang: de
    :author: Michael Eichberg
-   :keywords: "Programmierung", "Java", "Arrays"
+   :keywords: "Programmierung", "Java", "Arrays", "Kontrollfragen"
    :description lang=de: Kontrollfragen zu Java Arrays
    :id: lecture-prog-java-arrays-kontrollfragen
    :first-slide: last-viewed
    :exercises-master-password: WirklichSchwierig!
     
-.. |html-source| source::
-    :prefix: https://delors.github.io/
-    :suffix: .html
-.. |pdf-source| source::
-    :prefix: https://delors.github.io/
-    :suffix: .html.pdf
-.. |at| unicode:: 0x40
-.. |qm| unicode:: 0x22 
-
-.. role:: incremental
-.. role:: appear
-.. role:: eng
-.. role:: ger
-.. role:: dhbw-red
-.. role:: green
-.. role:: the-blue
-.. role:: obsolete
-.. role:: monospaced
-.. role:: copy-to-clipboard
-.. role:: kbd
-.. role:: java(code)
-   :language: java
+.. include:: ../docutils.defs
 
 
 

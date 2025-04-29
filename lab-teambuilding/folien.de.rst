@@ -6,19 +6,8 @@
     :id: se-teambuilding
     :first-slide: last-viewed
 
-.. |html-source| source::
-    :prefix: https://delors.github.io/
-    :suffix: .html
-.. |pdf-source| source::
-    :prefix: https://delors.github.io/
-    :suffix: .html.pdf
-
-.. role:: eng
-.. role:: ger
-.. role:: red
-.. role:: green
-.. role:: blue
-.. role:: not-important
+.. include:: ../docutils.defs
+    
 
 
 Teambuilding im Projekt

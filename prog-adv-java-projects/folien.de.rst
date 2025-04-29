@@ -8,29 +8,10 @@
     :first-slide: last-viewed
     :master-password: WirklichSchwierig!
     
-.. |html-source| source::
-    :prefix: https://delors.github.io/
-    :suffix: .html
-.. |pdf-source| source::
-    :prefix: https://delors.github.io/
-    :suffix: .html.pdf
+.. include:: ../docutils.defs
 
 .. |newton-code.zip| source:: code/newton-code.zip
     :path: relative
-
-.. |at| unicode:: 0x40
-
-.. role:: incremental
-.. role:: eng
-.. role:: ger
-.. role:: red
-.. role:: green
-.. role:: peripheral
-.. role:: obsolete
-.. role:: java(code)
-   :language: java
-.. role:: console(code)
-   :language: console
 
 
 

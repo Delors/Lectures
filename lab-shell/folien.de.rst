@@ -7,26 +7,7 @@
     :first-slide: last-viewed
     :master-password: WirklichSchwierig!
 
-.. |html-source| source::
-    :prefix: https://delors.github.io/
-    :suffix: .html
-.. |pdf-source| source::
-    :prefix: https://delors.github.io/
-    :suffix: .html.pdf
-.. |at| unicode:: 0x40
-
-.. role:: incremental   
-.. role:: eng
-.. role:: ger
-.. role:: red
-.. role:: green
-.. role:: the-blue
-.. role:: minor
-.. role:: obsolete
-.. role:: line-above
-
-.. role:: raw-html(raw)
-   :format: html
+.. include:: ../docutils.defs
 
 
 
@@ -244,7 +225,7 @@ echo
 
 - Universell eingesetzt, um Inhalte in Dateien zu schreiben bzw. anzuhängen.
 - ``-n`` um das automatische Anhängen von Zeilenumbrüchen zu unterdrücken.
-  :minor:`(Besonders dann wichtig, wenn man Hashes für Testdaten generieren will.)`
+  :peripheral:`(Besonders dann wichtig, wenn man Hashes für Testdaten generieren will.)`
 - Entweder ein explizites Programm oder ein in die Shell eingebautes Kommando.
 
 .. container:: incremental line-above margin-top-1em padding-top-1em
@@ -334,7 +315,7 @@ uniq
     
     Mittels ``uniq`` kann die Häufigkeit gezählt werden. 
     
-    :minor:`Die Sortierung - zum Beispiel angefangen mit den am häufigsten vorkommenden Einträgen - kann danach im Nachgang erfolgen`.
+    :peripheral:`Die Sortierung - zum Beispiel angefangen mit den am häufigsten vorkommenden Einträgen - kann danach im Nachgang erfolgen`.
 
     .. code:: bash
 
@@ -361,7 +342,7 @@ awk
 
 .. container:: incremental line-above margin-top-1em padding-top-1em
 
-    **Anwendungsfall**: Die Einträge einer Datei sollen nach länge sortiert werden. In diesem Fall, kann mit Hilfe von awk jede Zeile mit der Länge ausgegeben werden. :minor:`Danach kann die Liste entsprechend sortiert werden.`
+    **Anwendungsfall**: Die Einträge einer Datei sollen nach länge sortiert werden. In diesem Fall, kann mit Hilfe von awk jede Zeile mit der Länge ausgegeben werden. :peripheral:`Danach kann die Liste entsprechend sortiert werden.`
 
     .. code:: bash
 
@@ -479,7 +460,7 @@ grep
 
 .. container:: incremental line-above margin-top-1em padding-top-1em
 
-    **Anwendungsfall**: Alle Textfragmente in einem Leak finden\ :minor:`, um danach mit Regeln neue Passwortkandidaten zu bilden`.
+    **Anwendungsfall**: Alle Textfragmente in einem Leak finden\ :peripheral:`, um danach mit Regeln neue Passwortkandidaten zu bilden`.
 
     .. code:: bash
         :class: smaller 

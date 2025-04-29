@@ -8,33 +8,7 @@
     :first-slide: last-viewed
     :master-password: WirklichSchwierig!
 
-.. |html-source| source::
-    :prefix: https://delors.github.io/
-    :suffix: .html
-.. |pdf-source| source::
-    :prefix: https://delors.github.io/
-    :suffix: .html.pdf
-.. |at| unicode:: 0x40
-
-.. role:: incremental
-.. role:: eng
-.. role:: ger
-.. role:: minor
-.. role:: obsolete
-.. role:: dhbw-red
-.. role:: dhbw-gray
-.. role:: dhbw-light-gray
-.. role:: the-blue
-.. role:: the-green
-.. role:: the-orange
-.. role:: shiny-green
-.. role:: shiny-red
-.. role:: black
-.. role:: dark-red
-.. role:: smaller  
-
-.. role:: raw-html(raw)
-   :format: html
+.. include:: ../docutils.defs
 
 
 
@@ -43,12 +17,11 @@ Nebenläufigkeit in Python
 
 .. rubric:: :eng:`Concurrency` in Python
 
+----
 
-.. container:: line-above 
-
-  :Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
-  :Kontakt: michael.eichberg@dhbw.de
-  :Version: 1.0 
+:Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
+:Kontakt: michael.eichberg@dhbw.de
+:Version: 1.0 
 
 .. supplemental::
 
@@ -836,7 +809,7 @@ Ressourcen immer in der gleichen Reihenfolge sperren
 Alternative Synchronisationsmechanismen
 ------------------------------------------------------------------
 
-.. container:: rounded-corners the-yellow-background padding-1em box-shadow
+.. container:: rounded-corners yellow-background padding-1em box-shadow
 
   *Sperren* (d. h. ``Lock``\ s) in Verbindung mit Bedigungsvariablen sind nur eine Möglichkeit, um die Synchronisation von Threads zu ermöglichen. Es ist jedoch ein sehr häufiges Modell. (Alternativen sind zum Beispiel: *Semaphoren*, *Nachrichtenübermittlung*)
 

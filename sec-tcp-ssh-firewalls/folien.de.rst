@@ -7,26 +7,8 @@
     :first-slide: last-viewed
     :master-password: WirklichSchwierig!
 
-.. |html-source| source::
-    :prefix: https://delors.github.io/
-    :suffix: .html
-.. |pdf-source| source::
-    :prefix: https://delors.github.io/
-    :suffix: .html.pdf
-.. |at| unicode:: 0x40
-
-.. role:: incremental   
-.. role:: eng
-.. role:: ger
-.. role:: red
-.. role:: green
-.. role:: the-blue
-.. role:: minor
-.. role:: obsolete
-.. role:: line-above
-.. role:: far-smaller
-.. role:: raw-html(raw)
-   :format: html
+.. include:: ../docutils.defs
+    
 
 
 Eine erste Einführung in die Sicherheit von (verteilten) Systemen
@@ -1003,7 +985,7 @@ SSH ermöglicht die sichere Fernanmeldung von einem Computer bei einem anderen (
 
         a. Passwort
         b. :obsolete:`.rhosts-Eintrag`
-        c. privatem :minor:`(RSA-)`\ Key (hauptsächlich verwendete Methode)
+        c. privatem :peripheral:`(RSA-)`\ Key (hauptsächlich verwendete Methode)
 
     (3) Kommunikation über symmetrisch verschlüsselte Verbindung
 
@@ -1119,6 +1101,8 @@ Secure Shell (SSH) - Risiken durch mangelnde Schlüsselverwaltung
 SSH Tunneling
 -----------------------
 
+.. class:: list-with-details
+
 - ermöglicht die Übertragung beliebiger Netzwerkdaten über eine verschlüsselte SSH-Verbindung. z. B. 
 
   - um ältere Anwendungen zu verschlüsseln. 
@@ -1127,12 +1111,13 @@ SSH Tunneling
 
 - ermöglicht auch Port-forwarding 
   
-  :far-smaller:`(Lokale Ports werden auf entfernten Rechner weitergeleitet.)`
+  (Lokale Ports werden auf entfernten Rechner weitergeleitet.)
 
 .. image:: images/ssh/tunneling.svg 
     :alt: SSH Protokoll
     :align: center
     :width: 1450px
+
 
 
 SSH und „Back-tunneling“

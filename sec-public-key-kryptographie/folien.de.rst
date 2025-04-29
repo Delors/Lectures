@@ -8,21 +8,7 @@
     :first-slide: last-viewed
     :master-password: WirklichSchwierig!
 
-.. |html-source| source::
-    :prefix: https://delors.github.io/
-    :suffix: .html
-.. |pdf-source| source::
-    :prefix: https://delors.github.io/
-    :suffix: .html.pdf
-
-.. role:: incremental
-.. role:: ger
-.. role:: eng
-.. role:: red
-.. role:: green 
-.. role:: blue 
-.. role:: shiny-red
-.. role:: shiny-green
+.. include:: ../docutils.defs
     
     
 
@@ -42,6 +28,7 @@ Public-Key-Kryptographie und RSA
       [PDF] |pdf-source|
   :Fehler melden:
       https://github.com/Delors/delors.github.io/issues
+
 
 
 .. class:: smaller

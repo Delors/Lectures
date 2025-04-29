@@ -7,36 +7,9 @@
    :first-slide: last-viewed
    :exercises-master-password: WirklichSchwierig!
     
-.. |html-source| source::
-   :prefix: https://delors.github.io/
-   :suffix: .html
-.. |pdf-source| source::
-   :prefix: https://delors.github.io/
-   :suffix: .html.pdf
-.. |at| unicode:: 0x40
-.. |qm| unicode:: 0x22 
-
-.. role:: incremental
-.. role:: appear
-.. role:: eng
-.. role:: ger
-.. role:: dhbw-red
-.. role:: green
-.. role:: the-blue
-.. role:: minor
-.. role:: obsolete
-.. role:: line-above
-.. role:: smaller
-.. role:: far-smaller
-.. role:: monospaced
-.. role:: copy-to-clipboard
-.. role:: kbd
-.. role:: java(code)
-   :language: java
+.. include:: ../docutils.defs
 
 
-
-.. class:: animated-symbol 
 
 Kontrollfragen: Klassische Sicherheitsprinzipien
 ================================================================================

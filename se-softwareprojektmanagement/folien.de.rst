@@ -6,23 +6,9 @@
     :id: se-softwareprojektmanagement
     :first-slide: last-viewed
 
-.. |html-source| source::
-    :prefix: https://delors.github.io/
-    :suffix: .html
-.. |pdf-source| source::
-    :prefix: https://delors.github.io/
-    :suffix: .html.pdf
-.. |at| unicode:: 0x40
-
-.. role:: eng
-.. role:: ger
-.. role:: red
-.. role:: green
-.. role:: blue
-.. role:: not-important
+.. include:: ../docutils.defs
 
 
-.. class:: animated-symbol
 
 Kurze Wiederholung von Aspekten des Softwareprojektmanagements
 ====================================================================================
@@ -79,9 +65,9 @@ Standardtätigkeiten bei Softwareprojekten
   D. h. Software-Projektmanager müssen effektive kommunizieren können - sowohl mündlich als auch schriftlich.
 
 - Projektplanung und Terminplanung 
-- :not-important:`Projektkostenkalkulation`
+- :peripheral:`Projektkostenkalkulation`
 - Projektüberwachung und -überprüfung
-- :not-important:`Personalauswahl und -bewertung`
+- :peripheral:`Personalauswahl und -bewertung`
 - Berichtserstellung und Präsentationen
 
 
@@ -105,7 +91,7 @@ Typen von Plänen
 
 - Projektplan
 - Qualitätssicherungsplan
-- :not-important:`Personalentwicklungsplan`
+- :peripheral:`Personalentwicklungsplan`
 - Konfigurationsmanagementplan
 - Risikomanagementplan
 
@@ -190,7 +176,7 @@ Prinzipien der Agilen Softwareentwicklung
 
 .. class:: incremental
 
-- :not-important:`Höchste Priorität ist es, den Kunden durch die frühzeitige und kontinuierliche Bereitstellung wertvoller Software zufrieden zu stellen.`
+- :peripheral:`Höchste Priorität ist es, den Kunden durch die frühzeitige und kontinuierliche Bereitstellung wertvoller Software zufrieden zu stellen.`
 - Wir liefern *häufig* funktionierende Software (z. B. alle zwei Wochen).
 - Funktionierende Software ist der wichtigste Maßstab für den Fortschritt.
   
@@ -202,7 +188,7 @@ Prinzipien der Agilen Softwareentwicklung
 
 - *Einfachheit* - die Kunst, die Menge der nicht erledigten Arbeit zu maximieren - ist wesentlich.
 
-- :not-important:`Sich ändernde Anforderungen sind willkommen, auch wenn sie erst spät in der Entwicklung auftauchen; agile Prozesse nutzen den Wandel zum Wettbewerbsvorteil des Kunden.`
+- :peripheral:`Sich ändernde Anforderungen sind willkommen, auch wenn sie erst spät in der Entwicklung auftauchen; agile Prozesse nutzen den Wandel zum Wettbewerbsvorteil des Kunden.`
 
 
 Prinzipien der Agilen Softwareentwicklung
@@ -214,7 +200,7 @@ Prinzipien der Agilen Softwareentwicklung
 - Die besten Architekturen, Anforderungen und Entwürfe entstehen in selbstorganisierenden Teams.
 
 - Geschäftsleute und Entwickler müssen während des gesamten Projekts täglich zusammenarbeiten.
-- :not-important:`Bauen Sie Projekte um motivierte Personen herum auf; geben Sie ihnen das Umfeld und die Unterstützung, die sie brauchen, und vertrauen Sie ihnen, dass sie ihre Arbeit erledigen.`
+- :peripheral:`Bauen Sie Projekte um motivierte Personen herum auf; geben Sie ihnen das Umfeld und die Unterstützung, die sie brauchen, und vertrauen Sie ihnen, dass sie ihre Arbeit erledigen.`
 
 
 
@@ -286,7 +272,7 @@ Ausführbare Software wird z. B. alle zwei Wochen geliefert (eine Iteration).
 Planung einer Iteration - Iterationsplan 
 ------------------------------------------
 
-Zu Beginn jeder Iteration werden die User Stories oder auch Use Cases und ihre Prioritäten festgelegt. :not-important:`Der Kunde wählt die Benutzergeschichten aus, die er umgesetzt haben möchte.` 
+Zu Beginn jeder Iteration werden die User Stories oder auch Use Cases und ihre Prioritäten festgelegt. :peripheral:`Der Kunde wählt die Benutzergeschichten aus, die er umgesetzt haben möchte.` 
 
 .. class:: incremental smaller list-with-explanations
 
@@ -441,8 +427,8 @@ Eigenschaften guter Stories
 
 .. class:: incremental
 
-- :not-important:`Die Geschichten müssen für den Kunden verständlich sein.`
-- :not-important:`Jede Geschichte muss dem Kunden einen Mehrwert bieten.`
+- :peripheral:`Die Geschichten müssen für den Kunden verständlich sein.`
+- :peripheral:`Jede Geschichte muss dem Kunden einen Mehrwert bieten.`
 - Stories müssen so groß (klein) sein, dass man in jeder Iteration ein paar von ihnen erstellen kann
 - Geschichten sollten unabhängig voneinander sein
 - Jede Geschichte muss testbar sein
@@ -579,8 +565,6 @@ Ausgewählte Qualitätsmerkmale
 
 
 
-
-
 Auswahl des QS-Ziels
 -------------------------------------------------------------
 
@@ -590,7 +574,8 @@ Auswahl des QS-Ziels
 - Welche anderen Qualitätsziele sind für das Projekt von Bedeutung? 
 - Ist dieses Qualitätsziel wichtiger als die anderen bzw. ist es das Wichtigste? Haben wir die wichtigsten Qualitätsziele identifiziert? 
   
-  :not-important:`Ggf. alle QS Ziele in Hinblick auf die Bedeutung für das Projekt bewerten und in Reihenfolge bringen.`
+  :peripheral:`Ggf. alle QS Ziele in Hinblick auf die Bedeutung für das Projekt bewerten und in Reihenfolge bringen.`
+
 
 
 Planung und Durchführung von QS Maßnahmen

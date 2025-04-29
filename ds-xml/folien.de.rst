@@ -7,42 +7,18 @@
     :first-slide: last-viewed
     :master-password: WirklichSchwierig!
     
-.. |html-source| source::
-    :prefix: https://delors.github.io/
-    :suffix: .html
-.. |pdf-source| source::
-    :prefix: https://delors.github.io/
-    :suffix: .html.pdf
-
-.. |at| unicode:: 0x40
-
-.. role:: incremental   
-.. role:: eng
-.. role:: ger
-.. role:: red
-.. role:: green
-.. role:: the-blue
-.. role:: minor
-.. role:: obsolete
-.. role:: line-above
-.. role:: smaller
-.. role:: far-smaller
-.. role:: monospaced
-
-.. role:: raw-html(raw)
-   :format: html
+.. include:: ../docutils.defs
 
 
-.. class:: animated-symbol
     
 XML (eXtensible Markup Language) und XPath
 ================================================
 
-.. container:: line-above tiny
+----
 
-    :Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
-    :Kontakt: michael.eichberg@dhbw.de, Raum 149B
-    :Version: 1.0.1
+:Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
+:Kontakt: michael.eichberg@dhbw.de, Raum 149B
+:Version: 1.0.2
 
 .. supplemental::
 
@@ -178,7 +154,8 @@ XML Dokument - Beispiel
 ------------------------
 
 .. code:: xml
-    :class: far-smaller
+    :number-lines:
+    :class: copy-to-clipboard
 
     <?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
     <lehrveranstaltungen status="akkreditiert">
@@ -1046,9 +1023,10 @@ Beziehungen zwischen Knoten
 
         .. rubric:: Weitere Beziehungen
 
-        :Attribute: Jedes Element kann Attribute haben :minor:`(welche keine Kinder im Baum sind)`.
+        :Attribute: Jedes Element kann Attribute haben :peripheral:`(welche keine Kinder im Baum sind)`.
 
-        :Namensraum: Jedes Element kann Namensräume haben :minor:`(welche keine Kinder bzgl. des Baums sind)`.
+        :Namensraum: Jedes Element kann Namensräume haben :peripheral:`(welche keine Kinder bzgl. des Baums sind)`.
+
 
 
 Axen in XPath beschreiben die Richtungen von Beziehungen zwischen Knoten.

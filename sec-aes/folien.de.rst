@@ -8,23 +8,7 @@
     :first-slide: last-viewed
     :master-password: WirklichSchwierig!
 
-.. |html-source| source::
-    :prefix: https://delors.github.io/
-    :suffix: .html
-.. |pdf-source| source::
-    :prefix: https://delors.github.io/
-    :suffix: .html.pdf
-
-.. role:: incremental
-.. role:: ger
-.. role:: eng
-.. role:: dhbw-red
-.. role:: green 
-.. role:: the-blue 
-.. role:: smaller
-.. role:: far-smaller
-.. role:: raw-html(raw)
-    :format: html
+.. include:: ../docutils.defs
 
 
 
@@ -88,7 +72,7 @@ Arithmetik endlicher Körper
 
   Division erfordert, dass jedes nicht-null-Element ein multiplikatives Inverses hat.
   
-- Wenn wir modulare Arithmetik auf die Menge der ganzen Zahlen :math:`Z_{2^n}` (mit :math:`n > 1`) anwenden, dann erhalten wir :dhbw-red:`keinen` Körper!
+- Wenn wir modulare Arithmetik auf die Menge der ganzen Zahlen :math:`Z_{2^n}` (mit :math:`n > 1`) anwenden, dann erhalten wir :red:`keinen` Körper!
   
   Zum Beispiel hat die ganze Zahl :math:`2` keine multiplikative Inverse in :math:`Z_{2^n}` (mit :math:`n > 1`), d. h. es gibt keine ganze Zahl :math:`b`, so dass :math:`2b\; mod\; 2^n = 1`
     
@@ -162,8 +146,8 @@ AES Parameter
 
 .. class:: vertical-title smaller-slide-title
 
-AES - Ver-/Entschlüsselungsprozess :raw-html:`<br>` :far-smaller:`(Key Size 128bits ⇒ 10 Runden)`
---------------------------------------------------------------------------------------------------------------
+AES - Ver-/Entschlüsselungsprozess :raw-html:`<br>` (Key Size 128bits ⇒ 10 Runden)
+--------------------------------------------------------------------------------------------------
 
 .. image:: drawings/aes/encryption_and_decryption_process.svg
     :height: 1150px
@@ -652,8 +636,8 @@ Lawineneffekt in AES: Änderung im Schlüssel
 Vertausch von `InvShiftRows` und `InvSubBytes`
 ----------------------------------------------
 
-:*InvShiftRows*: :dhbw-red:`beeinflusst die Reihenfolge` der Bytes im Zustand (*State*), ändert aber nicht den Inhalt der Bytes und ist nicht vom Inhalt der Bytes abhängig, um seine Transformation durchzuführen.
-:*InvSubBytes*: :the-blue:`beeinflusst den Inhalt` von Bytes im Zustand (*State*), ändert aber nicht die Byte-Reihenfolge und hängt nicht von der Byte-Reihenfolge ab, um seine Transformation durchzuführen.
+:*InvShiftRows*: :red:`beeinflusst die Reihenfolge` der Bytes im Zustand (*State*), ändert aber nicht den Inhalt der Bytes und ist nicht vom Inhalt der Bytes abhängig, um seine Transformation durchzuführen.
+:*InvSubBytes*: :blue:`beeinflusst den Inhalt` von Bytes im Zustand (*State*), ändert aber nicht die Byte-Reihenfolge und hängt nicht von der Byte-Reihenfolge ab, um seine Transformation durchzuführen.
 
 
 .. container:: assessment

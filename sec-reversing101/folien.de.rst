@@ -7,29 +7,9 @@
     :first-slide: last-viewed
     :master-password: WirklichSchwierig!    
 
-.. |html-source| source::
-    :prefix: https://delors.github.io/
-    :suffix: .html
-.. |pdf-source| source::
-    :prefix: https://delors.github.io/
-    :suffix: .html.pdf
-.. |at| unicode:: 0x40
-
-.. role:: incremental   
-.. role:: eng
-.. role:: ger
-.. role:: red
-.. role:: green
-.. role:: the-blue
-.. role:: minor
-.. role:: obsolete
-.. role:: line-above
-
-.. role:: raw-html(raw)
-   :format: html
+.. include:: ../docutils.defs
 
 
-.. class:: animated-symbol organic-red
 
 Reverse Engineering 101 
 =====================================================
@@ -454,7 +434,7 @@ Obfuscation - Techniken (Auszug)
 
 .. class:: scrollable incremental
 
-- :minor:`entfernen aller Debug-Informationen`
+- :peripheral:`entfernen aller Debug-Informationen`
 - Das Kürzen aller möglichen Namen (insbesondere Methoden und Klassennamen).
 - Das Verschleiern von Konstanten durch den Einsatz vermeintlich komplexer Berechnungen zu deren Initialisierung.
 
@@ -654,7 +634,7 @@ Die Java Virtual Machine
 .. class:: incremental
 
 - **Java Bytecode** ist die Sprache, in der Java (oder Scala, Kotlin, ...) Programme auf der Java Virtual Machine (JVM) [#]_ ausgeführt werden.
-- :minor:`In den meisten Fällen arbeiten Java Decompiler so gut, dass ein tiefgehendes Verständnis von Java Bytecode selten notwendig ist.`
+- :peripheral:`In den meisten Fällen arbeiten Java Decompiler so gut, dass ein tiefgehendes Verständnis von Java Bytecode selten notwendig ist.`
 - Java Bytecode kann — muss aber nicht — interpretiert werden. (Z. B. können „virtuelle Methodenaufrufe“ in Java schneller sein als in C++.)
 
 

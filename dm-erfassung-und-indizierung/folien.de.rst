@@ -6,28 +6,7 @@
     :id: lecture-dm-erfassung-und-indizierung-von-dokumenten
     :first-slide: last-viewed
 
-.. |html-source| source::
-    :prefix: https://delors.github.io/
-    :suffix: .html
-.. |pdf-source| source::
-    :prefix: https://delors.github.io/
-    :suffix: .html.pdf
-.. |at| unicode:: 0x40
-
-.. role:: incremental   
-.. role:: eng
-.. role:: ger
-.. role:: red
-.. role:: green
-.. role:: the-blue
-.. role:: minor
-.. role:: obsolete
-.. role:: line-above
-.. role:: monospaced
-.. role:: serif
-
-.. role:: raw-html(raw)
-   :format: html
+.. include:: ../docutils.defs
 
 
 
@@ -478,7 +457,9 @@ Sicherstellung der Qualität
 
     Serifenlose Zeichensätze sind solche, bei denen die Zeichensätze keine Endstriche an Zeichen haben, z. B. Arial oder Helvetica (dieser Foliensatz verwendet Helvetica).
 
-    :serif:`Schriftarten mit Serifen sind z. B. Times New Roman oder Garamond`.
+    .. container:: serif
+
+      Schriftarten mit Serifen sind z. B. Times New Roman oder Garamond.
 
 
 
@@ -690,7 +671,7 @@ COLD-Verfahren (historisch)
         1. Zerlegung des Datenstroms in einzelne Dokumente.
         2. Extrahiert die für die Ablage bzw. spätere Recherche der Dokumente notwendigen Index-Daten automatisch + evtl. Bezug zu Overlays. 
          
-           :minor:`(Die Fachdaten und das Layout sind getrennt.)`
+           :peripheral:`(Die Fachdaten und das Layout sind getrennt.)`
         3. Konvertierung bringt die Dokumente in eine für die Ablage geeignete Form.
 
 

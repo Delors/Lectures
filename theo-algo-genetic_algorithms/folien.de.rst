@@ -8,35 +8,7 @@
     :first-slide: last-viewed
     :master-password: WirklichSchwierig!
     
-.. |html-source| source::
-    :prefix: https://delors.github.io/
-    :suffix: .html
-.. |pdf-source| source::
-    :prefix: https://delors.github.io/
-    :suffix: .html.pdf
-.. |at| unicode:: 0x40
-.. |qm| unicode:: 0x22 
-
-.. role:: incremental
-.. role:: appear
-.. role:: eng
-.. role:: ger
-.. role:: dhbw-red
-.. role:: green
-.. role:: the-blue
-.. role:: minor
-.. role:: obsolete
-.. role:: line-above
-.. role:: smaller
-.. role:: far-smaller
-.. role:: monospaced
-.. role:: copy-to-clipboard
-.. role:: kbd
-.. role:: java(code)
-   :language: java
-.. role:: python(code)
-   :language: python
-
+.. include:: ../docutils.defs
 
 .. |chromosone.py| source:: code/lib/chromosome.py
             :path: relative
@@ -98,7 +70,7 @@ Genetische Algorithmen
 
   Z. B. im Bereich des Wirkstoffdesigns oder der Optimierung von Produktionsprozessen.
 - benötigen im Prinzip nur eine Definition des Aufgabenziels
-- :minor:`(Implementierungen)` sind in der Regel hochgradig spezialisiert; hier diskutieren wir eine allgemeine/generische Implementierung
+- :peripheral:`(Implementierungen)` sind in der Regel hochgradig spezialisiert; hier diskutieren wir eine allgemeine/generische Implementierung
 
 
 
@@ -121,7 +93,7 @@ Genetische Algorithmen
 
   :Population: Menge von Individuen, die auch Chromosomen genannt werden und Lösungskandidaten repräsentieren
   :Chromosomen: Lösungskandidaten oder auch Individuen, die aus Genen bestehen
-  :`Gene`:minor:: :minor:`Eigenschaften eines Lösungskandidaten`
+  :`Gene`:peripheral:: :peripheral:`Eigenschaften eines Lösungskandidaten`
   :Fitness(-Funktion): Bewertung eines Chromosoms ( Lösungskandidaten)
 
 
@@ -586,7 +558,7 @@ SEND+MORE=MONEY - Umsetzung
 
     Entwickeln Sie einen genetischen Algorithmus, der eine sehr gute Aufteilung von Personen (Studierenden) auf eine feste Anzahl an Gruppen findet, basierend auf den Präferenzen der Personen. 
 
-    Im Template ist eine initiale Aufgabenstellung hinterlegt, die es zu lösen gilt: Verteilung von 16 Studierenden auf 4 Gruppen inkl. Bewertungsmatrix :minor:`(jeder Studierende hat jeden anderen mit Werten von 1 bis 10 bewertet)`.
+    Im Template ist eine initiale Aufgabenstellung hinterlegt, die es zu lösen gilt: Verteilung von 16 Studierenden auf 4 Gruppen inkl. Bewertungsmatrix :peripheral:`(jeder Studierende hat jeden anderen mit Werten von 1 bis 10 bewertet)`.
 
     .. container:: slightly-more-smaller rounded-corners box-shadow padding-1em
 

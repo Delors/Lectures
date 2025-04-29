@@ -7,28 +7,8 @@
     :first-slide: last-viewed
     :master-password: WirklichSchwierig!
 
-.. |html-source| source::
-    :prefix: https://delors.github.io/
-    :suffix: .html
-.. |pdf-source| source::
-    :prefix: https://delors.github.io/
-    :suffix: .html.pdf
-.. |at| unicode:: 0x40
+.. include:: ../docutils.defs
 
-.. role:: incremental   
-.. role:: eng
-.. role:: ger
-.. role:: red
-.. role:: shiny-red
-.. role:: green
-.. role:: shiny-green
-.. role:: the-blue
-.. role:: minor
-.. role:: obsolete
-.. role:: line-above
-
-.. role:: raw-html(raw)
-   :format: html
 
 
 Agile Softwareentwicklung und Ihre Bedeutung für verteilte Anwendungsarchitekturen
@@ -199,7 +179,7 @@ Wie erreichen wir, dass unsere Softwareentwicklung agil ist?
 
 Um Agilität zu erreichen, müssen wir…
 
-- :minor:`Verfahrensweisen anwenden, die die notwendige Disziplin und Rückmeldung bieten`
+- :peripheral:`Verfahrensweisen anwenden, die die notwendige Disziplin und Rückmeldung bieten`
 
 - **Entwurfsprinzipien anwenden**, die unsere Software flexibel und wartbar machen
 

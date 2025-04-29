@@ -7,26 +7,8 @@
     :first-slide: last-viewed
     :master-password: WirklichSchwierig!    
 
-.. |html-source| source::
-    :prefix: https://delors.github.io/
-    :suffix: .html
-.. |pdf-source| source::
-    :prefix: https://delors.github.io/
-    :suffix: .html.pdf
-.. |at| unicode:: 0x40
-
-.. role:: incremental   
-.. role:: eng
-.. role:: ger
-.. role:: red
-.. role:: green
-.. role:: the-blue
-.. role:: minor
-.. role:: obsolete
-.. role:: line-above
-
-.. role:: raw-html(raw)
-   :format: html
+.. include:: ../docutils.defs
+    
 
 
 TOR - The Onion Router
@@ -98,7 +80,7 @@ Tor - Verwendung
 Tor - potentielle Sicherheitslücken
 -----------------------------------------------------------------------
 
-- :minor:`DoS Attacken`
+- :peripheral:`DoS Attacken`
 
 .. container:: incremental  
 
@@ -425,7 +407,7 @@ Onion Services/Hidden Services
 - ``.onion`` ist eine *Pseudo*-Top-Level-Domain, die für Onion Services verwendet wird.
 - Onion Services können nur über das Tor-Netzwerk erreicht werden. 
   
-  :minor:`Onion-Adresse der New-York-Times im Tor Netzwerk: https://nytimesn7cgmftshazwhfgzm37qxb44r64ytbb2dj3x62d2lljsciiyd.onion (Aus Deutschland faktisch nicht nutzbar.)` 
+  :peripheral:`Onion-Adresse der New-York-Times im Tor Netzwerk: https://nytimesn7cgmftshazwhfgzm37qxb44r64ytbb2dj3x62d2lljsciiyd.onion (Aus Deutschland faktisch nicht nutzbar.)` 
 
 
 

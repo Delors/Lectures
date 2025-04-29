@@ -7,35 +7,7 @@
     :first-slide: last-viewed
     :master-password: WirklichSchwierig!
 
-.. |html-source| source::
-    :prefix: https://delors.github.io/
-    :suffix: .html
-.. |pdf-source| source::
-    :prefix: https://delors.github.io/
-    :suffix: .html.pdf
-.. |at| unicode:: 0x40
-
-.. role:: incremental   
-.. role:: eng
-.. role:: ger
-.. role:: minor
-.. role:: obsolete
-.. role:: dhbw-red
-.. role:: dhbw-gray
-.. role:: dhbw-light-gray
-.. role:: the-blue
-.. role:: the-green
-.. role:: shiny-green
-.. role:: shiny-red 
-.. role:: black
-.. role:: dark-red
-
-.. role:: java(code)
-    :language: java
-.. role:: c(code)
-    :language: c
-.. role:: raw-html(raw)
-   :format: html
+.. include:: ../docutils.defs
 
 
 
@@ -312,7 +284,7 @@ CWE-787: Out-of-bounds Write - Mögliche Abhilfemaßnahmen
 - Kompilierung mit entsprechenden Flags, die entsprechende Prüfung aktivieren (z. B. :code:`-D_FORTIFY_SOURCE=2`)
 - Kompilierung als Position-Independent-Code 
 
-  :minor:`Dies löst nicht das Problem, aber es macht es schwerer eine Schwachstelle auszunutzen.`
+  :peripheral:`Dies löst nicht das Problem, aber es macht es schwerer eine Schwachstelle auszunutzen.`
 - Statische Analyse Werkzeuge
 - Dynamische Analyse Werkzeuge (z. B. *Fuzzing*, *Fault Injection*, ...)
 
@@ -323,7 +295,7 @@ CWE-787: Out-of-bounds Write - Mögliche Abhilfemaßnahmen
 .. class:: new-subsection transition-move-to-top
 
 CWE-79: Improper Neutralization of Input During Web Page Generation (*Cross-site Scripting* or *XSS*)
-----------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------
 
 
 
@@ -1927,7 +1899,7 @@ OWASP
 .. container:: far-smaller
 
   .. note::  
-    :class: the-blue-background
+    :class: blue-background
 
     **URL Encoding**
 

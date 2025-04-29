@@ -9,24 +9,7 @@
     :master-password: WirklichSchwierig!
     :theme: colored
     
-.. |html-source| source::
-    :prefix: https://delors.github.io/
-    :suffix: .html
-.. |pdf-source| source::
-    :prefix: https://delors.github.io/
-    :suffix: .html.pdf
-.. |at| unicode:: 0x40
-
-.. role:: incremental
-.. role:: eng
-.. role:: ger
-.. role:: red
-.. role:: green
-.. role:: obsolete
-.. role:: peripheral
-.. role:: monospaced
-.. role:: java(code)
-   :language: java
+.. include:: ../docutils.defs
 
 
 
@@ -53,14 +36,6 @@ Java Generics
             :path: relative
             :prefix: https://delors.github.io/
             :suffix: .html
-
-    .. 
-        :Klausurvorbereitung:
-
-            .. source:: klausurvorbereitung.de.rst 
-                :path: relative
-                :prefix: https://delors.github.io/
-                :suffix: .html
 
     :Fehler melden:
         https://github.com/Delors/delors.github.io/issues
