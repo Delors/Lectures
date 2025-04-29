@@ -1,41 +1,18 @@
 .. meta::
-    :version: genesis
+    :version: renaissance
     :author: Michael Eichberg
     :keywords: "Web Programmierung", "HTML"
-    :description lang=de: HTML
+    :description lang=de: Einführung in HTML(5)
     :id: lecture-web-programming-html
     :first-slide: last-viewed
     :master-password: WirklichSchwierig!
-    
-.. |html-source| source::
-    :prefix: https://delors.github.io/
-    :suffix: .html
-.. |pdf-source| source::
-    :prefix: https://delors.github.io/
-    :suffix: .html.pdf
-.. |at| unicode:: 0x40
 
-.. role:: incremental   
-.. role:: eng
-.. role:: ger
-.. role:: red
-.. role:: green
-.. role:: the-blue
-.. role:: minor
-.. role:: obsolete
-.. role:: line-above
-.. role:: smaller
-.. role:: far-smaller
-.. role:: monospaced
-
-.. role:: raw-html(raw)
-   :format: html
+.. include:: ../docutils.defs
 
 
+.. class:: animated-logo
 
-.. class:: animated-symbol
-
-HTML(5) - HyperText Markup Language
+HTML(5) 
 ================================================
 
 *Eine Einführung in die grundlegenden Konzepte von HTML*
@@ -44,7 +21,7 @@ HTML(5) - HyperText Markup Language
 
 :Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
 :Kontakt: michael.eichberg@dhbw.de, Raum 149B
-:Version: 1.0.2
+:Version: 2.0.0
 
 .. supplemental::
 
@@ -58,63 +35,89 @@ HTML(5) - HyperText Markup Language
         https://github.com/Delors/delors.github.io/issues
 
 
+
 .. class:: new-section transition-fade
 
 Einführung
 ------------------------------------------------
 
 
-HyperText Markup Language (HTML)
+
+HTML(5)
 ------------------------------------------------
 
-.. stack::
+.. class:: incremental-list
 
-    .. layer::
+:Gegenstand:
 
-        - Sprache zur Beschreibung der Darstellung von Inhalten (Markup Language), zwischen denen „navigiert“ werden kann (Hypertext).
-        - Auszeichnungssprache abgeleitet aus SGML (Standard Generalized Markup Language).
+    .. class:: list-with-explanations
+
+    - Sprache zur Beschreibung der Darstellung von Inhalten (Markup Language), zwischen denen „navigiert“ werden kann (Hypertext).
+      
+      Ursprünglich war HTML ein Akronym für *HyperText Markup Language*; heutzutage wird HTML als Eigenname verwendet.
+    - Auszeichnungssprache abgeleitet aus SGML (Standard Generalized Markup Language).
+
+:Verwendung:
+
+    - Webseiten
+    - Progressive Web-Apps
+    - Desktop Apps (z. B. mit Electron)
+
+
+
+Ein einfaches HTML(5) Dokument
+------------------------------------------------
+
+.. code:: html
+    :number-lines:
+    :class: copy-to-clipboard
     
-    .. layer:: incremental
-    
-        Verwendungszweck:
-  
-        - Webseiten
-        - Progressive Web-Apps
-        - Desktop Apps (z. B. mit Electron)
-  
+    <!DOCTYPE html>
+    <html lang="de">
+        <head><title>Eine Webseite</title></head>
+        <body>
+            <h1>Informationen</h1>
+            <p><!-- Ein Kommentar.. -->
+                Ein einfacher link auf: 
+                <a href="http://www.michael-eichberg.de">
+                    Michael Eichberg's Homepage
+                </a>.
+            </p>
+        </body>
+    </html>
 
-HTML - Historie
+.. supplemental:: 
+
+    Im Folgenden werden wir uns mit den grundlegenden Konzepten von HTML beschäftigen und die wichtigsten Bestandteile von HTML-Dokumenten kennenlernen. Das Ziel ist es, ein Verständnis für HTML zu entwickeln, dass für die fundierte Entwicklung von Webseiten erforderlich sind.
+
+
+
+HTML\ [#]_ - Historie
 ------------------------------------------------
 
 .. module:: timeline 
-    :class: align-center far-far-smaller
+    :class: align-center 
 
     {
-    "class" : "HTML-Timeline",
-    "spread" : "0.9",
-    "data": [
-        {"d":"...","t":"HTML 1.0"},
-        {"d":"1995","t":"HTML 2.0"},
-        {"d":"1997","t":"HTML 3.2 (3.0 wurde nie veröffentlicht)"},
-        {"d":"1998","t":"HTML 4.0/CSS"},
-        {"d":"2000","t":"XHTML (HTML 4 in XML)"},	
-        {"d":"2001","t":"XHTML 1.1"},	
-        {"d":"seit 2004","t":"HTML5 in Entwicklung"},
-        {"d":"2018","t":"XHTML 1.0 und 1.1 - obsolet"},	
-        {"d":"seit 2019","t":"HTML(5) (W3C und WHATWG)"}
-    ]
+        "class" : "HTML-Timeline",
+        "spread" : "0.85",
+        "data": [
+            {"d":"...","t":"HTML 1.0"},
+            {"d":"1995","t":"HTML 2.0"},
+            {"d":"1997","t":"HTML 3.2 (3.0 wurde nie veröffentlicht)"},
+            {"d":"1998","t":"HTML 4.0/CSS"},
+            {"d":"2000","t":"XHTML (HTML 4 in XML)"},	
+            {"d":"2001","t":"XHTML 1.1"},	
+            {"d":"seit 2004","t":"HTML5 in Entwicklung"},
+            {"d":"2018","t":"XHTML 1.0 und 1.1 - obsolet"},	
+            {"d":"seit 2019","t":"HTML(5) (W3C und WHATWG)"}
+        ]
     }     
 
-.. container:: far-smaller
-
-    WHATWG ≘ Web Hypertext Application Technology Working Group
+:`WHATWG`:ab:: Web Hypertext Application Technology Working Group
 
 
-
-.. container:: footer-left far-far-smaller 
-
-    Im folgenden bezeichnet HTML die HTML(5) Spezifikation (Living Standard).
-
+.. [#] Im Folgenden bezeichnet HTML die HTML(5) Spezifikation (Living Standard).
 
 
 
@@ -123,17 +126,19 @@ HTML vs. XML Syntax vs. DOM
 
 Die *HTML Spezifikation* definiert eine abstrakte Sprache zur Beschreibung von Dokumenten. XML und HTML sind konkrete Syntaxbeschreibungen dieser abstrakten Sprache. 
 
-.. class:: list-with-explanations incremental
+.. class:: list-with-explanations incremental-list
 
 - HTML ist eine Beschreibungssprache für entsprechende Dokumente.
-- XML ist eine Beschreibungssprache, die auch für HTML verwendet werden kann. (MIME Type: ``application/xhtml+xml``) (nicht mehr empfohlen)
+- XML ist eine allg. Beschreibungssprache, die auch für HTML verwendet wurde. (MIME Type: ``application/xhtml+xml``) 
+
+  (Heutzutage wird XML zur Beschreibung von HTML Dokumenten nicht mehr verwendet.)
 
 - Das DOM (:eng:`Document Object Model`) ist die In-Memory Darstellung eines Dokuments. 
   
   Das DOM ist ein API, um HTML Dokumente zu manipulieren.
 
-.. admonition:: Hinweis
-    :class: warning incremental far-smaller
+.. hint::
+    :class: incremental
 
     Das DOM, die HTML-Syntax und die XML-Syntax können nicht alle denselben Inhalt darstellen. 
     
@@ -142,24 +147,46 @@ Die *HTML Spezifikation* definiert eine abstrakte Sprache zur Beschreibung von D
     **Beispiele für Unterschiede**
 
     - Namespaces werden nicht von der HTML-Syntax unterstützt, aber sowohl vom DOM als auch der  XML-Syntax unterstützt. 
-    - ``noscript`` wird nur in HTML Dokumenten unterstützt.
-    - Kommentare, die ``-->`` enthalten, werden nur vom DOM unterstützt.
+    - :html:`noscript` wird nur in HTML Dokumenten unterstützt.
+    - Kommentare, die :html:`-->` enthalten, werden nur vom DOM unterstützt; in einem HTML-Dokument beendet dies den Kommentar.
 
 
 
-*HTML in a Nutshell*
+HTML Universum
+------------------------------------------------
+
+Spezifikationen (siehe [#]_), die im Rahmen  der Entwicklung von Webseiten/Webanwendungen relevant sind:
+
+.. class:: incremental-list
+
+- **CSS**: Cascading Style Sheets
+- **JavaScript**: ECMAScript (Fetch API, :obsolete:`XMLHttpRequest`, ...)
+- **DOM**: Document Object Model
+- **Encoding**: Unicode
+- **HTTP**: Hypertext Transfer Protocol
+- **SVG**: Scalable Vector Graphics
+- **MathML**: Mathematical Markup Language
+- **WebAssembly**: Low-Level Bytecode
+- ...
+
+.. [#] https://spec.whatwg.org
+
+
+
+HTML in a Nutshell
 ------------------------------------------------
 
 HTML-Dokumente bestehen aus einem Baum von Elementen und Text. 
 
-.. container:: two-columns far-far-smaller
+.. grid::
 
-    .. container:: column
+    .. cell:: width-60
 
         .. rubric:: HTML Dokument
 
         .. code:: HTML
-            :class: line-height-1-25em    
+            :class: copy-to-clipboard
+            :number-lines:  
             
             <!DOCTYPE html>
             <html lang="de">
@@ -177,12 +204,13 @@ HTML-Dokumente bestehen aus einem Baum von Elementen und Text.
             </body>
             </html>
 
-    .. container:: column
+    .. cell:: width-40
 
         .. rubric:: DOM
 
-        .. code:: html 
-            :class: line-height-1-25em    
+        .. code:: html
+            :number-lines:
+            :class: incremental-code
 
             ├─DOCTYPE: html
             └─html lang="de"
@@ -200,19 +228,21 @@ HTML-Dokumente bestehen aus einem Baum von Elementen und Text.
     Mehrere HTML Dokumente bilden ggf. auf den selben DOM ab. Zum Beispiel werden die Tags als solches gar nicht abgebildet und wenn im HTML Code ein optionales (schließendes) Tag fehlt, dann ist dies im DOM nicht mehr ersichtlich.
 
 
+
 HTML - Verarbeitung
 ------------------------------------------------
 
 .. image:: images/html.svg
     :alt: HTML Verarbeitung
-    :width: 100%
     :align: center
+
 
 
 .. class:: new-section transition-fade
 
 Aufbau von HTML Dokumenten
 ------------------------------------------------
+
 
 
 HTML Dokumente
@@ -222,21 +252,22 @@ Die Dokumente müssen aus den folgenden Teilen in der angegebenen Reihenfolge be
 
   - Optional ein einzelnes U+FEFF BYTE ORDER MARK (BOM) Zeichen.
   - Eine beliebige Anzahl von Kommentaren und ASCII-Whitespace.
-  - Eine DOCTYPE Deklaration: `<!DOCTYPE html>`.
+  - Eine DOCTYPE Deklaration: :html:`<!DOCTYPE html>`.
   - Eine beliebige Anzahl von Kommentaren und ASCII-Whitespace.
   - Das **Dokumentenelement** in Form eines ``html``-Elements\ [#]_.
   - Eine beliebige Anzahl von Kommentaren und ASCII-Leerzeichen.
 
   -- HTML Spezifikation
   
-.. [#] HTML ist nicht case-sensitive, d. h. ``html`` und ``HTML`` sind gleichwertig. Wir verwenden jedoch immer die Kleinschreibung.
+.. [#] HTML ist nicht case-sensitive, d. h. die Tags ``html`` und ``HTML`` sind gleichwertig. Wir verwenden jedoch immer die Kleinschreibung.
+
 
 
 Allgemeiner Aufbau von HTML Elementen
 -------------------------------------
 
 .. table:: 
-    :class:  no-table-borders 
+    :class: booktabs incremental-table-rows
     :align: center
 
     +-------------+--------------------------+-----------+
@@ -245,25 +276,27 @@ Allgemeiner Aufbau von HTML Elementen
     |                                                    |
     | .. code:: html                                     |
     |                                                    |
-    |  <b>    Sehr Wichtig..  </b>                       |
+    |  <b>        Sehr Wichtig...     </b>               |
     +-------------+--------------------------+-----------+
     | Element                                            |
     +-------------+--------------------------+-----------+
 
-.. admonition:: Warnung
-    :class: warning incremental
+.. warning::
+    :class: incremental
 
     Die Spezifikation verlangt nicht in allen Fällen ein Start und Endtag. Es ist jedoch eine gute Praxis, diese immer zu verwenden, wenn ein Endtag möglich ist.
 
 .. incremental:: 
 
-    Im Fall von Elementen ohne Endtag (z. B. ``<wbr>``) darf auch keines hinzugefügt werden!
+    Im Fall von Elementen ohne Endtag (z. B. :html:`<wbr>`) darf auch keines hinzugefügt werden!
 
 .. supplemental::
 
     **Beispiel**
 
     .. code:: html
+        :number-lines:
+        :class: copy-to-clipboard
 
         <!DOCTYPE HTML><head>
                 <title>Hello</title>
@@ -273,7 +306,7 @@ Allgemeiner Aufbau von HTML Elementen
             </body>
         </html>
 
-    Ist ein gültiges Dokument. Es ist jedoch **keine** gute Praxis (hier wurde das *Start Tag* des ``html`` Elements weggelassen.
+    Ist ein gültiges Dokument. Es ist jedoch **keine** gute Praxis (hier wurde das *Start Tag* des :html:`html` Elements weggelassen).
 
 
 
@@ -282,15 +315,14 @@ Typen von HTML Elementen
 
 Sechs Typen von HTML-Elementen werden unterschieden:
 
-:Void elements: ``area``, ``base``, ``br``, ``col``, ``embed``, ``hr``, ``img``, ``input``, ``link``, ``meta``, ``source``, ``track``, ``wbr``
-:Raw text elements: ``script``, ``style``
-:Escapable raw text elements: ``textarea``, ``title``
-:Das template Element: ``template``
-:Foreign elements: Elemente aus dem MathML- und SVG-Namensraum.
+.. class:: incremental-list
 
-.. container:: line-above margin-top-1em
-
-    :Normal elements: **Alle weiteren HTML Elemente** sind *normale Elemente*.
+:*Void elements*: :html:`area`, :html:`base`, :html:`br`, :html:`col`, :html:`embed`, :html:`hr`, :html:`img`, :html:`input`, :html:`link`, :html:`meta`, :html:`source`, :html:`track`, :html:`wbr`
+:*Raw text elements*: :html:`script`, :html:`style`
+:*Escapable raw text elements*: :html:`textarea`, :html:`title`
+:Das *template* Element: :html:`template`
+:*Foreign elements*: Elemente aus dem MathML- und SVG-Namensraum.
+:*Normal elements*: **Alle weiteren HTML Elemente** sind *normale Elemente*.
 
 
 
@@ -300,34 +332,39 @@ Attribute in HTML
 Attribute liefern Informationen über das Element. 
 
 .. table:: 
-    :class:  no-table-borders 
+    :class:  booktabs
     :align: center
 
-    +--+------------------------+-----------+
-    | *Start Tag*                           |
-    +--+------------------------+-----------+
-    |                                       |
-    | .. code:: html                        |
-    |                                       |
-    |  <a  class="obsolete" href="#top" >.. |
-    +--+------------------------+-----------+
-    |  | Attribute              |           |
-    +--+------------------------+-----------+
+    +--+------------------------+--------------+
+    | *Start Tag*                              |
+    +--+------------------------+--------------+
+    |                                          |
+    | .. code:: html                           |
+    |                                          |
+    |  <a    class="obsolete" href="#top" >... |
+    +--+------------------------+--------------+
+    |  | Attribute              |              |
+    +--+------------------------+--------------+
 
-.. class:: incremental list-with-explanations
+.. class:: incremental-list list-with-explanations
 
 - Attribute kommen nur beim Start Tag vor.
 - Attribute (in HTML) können, müssen aber kein Wert haben (Boolsche Attribute).
 - Attributwerte sollten in Anführungszeichen (:eng:`quoted`) (entweder: ``"`` oder ``'``) stehen, müssen aber nicht.  
 
-  Werte ohne Anführungszeichen dürfen keine Leerzeichen oder Anführungszeichen  enthalten.
+  Werte ohne Anführungszeichen dürfen keine Leerzeichen oder Anführungszeichen enthalten.
+
+  Welche Anführungszeichen verwendet werden, ist egal. Es ist jedoch eine gute Praxis, immer die gleichen Anführungszeichen zu verwenden.\ [#]_
+
 - Konkrete Attributwerte aus der HTML Spezifikation sind case-insensitive; andere Werte sind es nicht. 
- 
+
 .. supplemental::
 
   Im Allgemeinen sollten Attributwerte klein geschrieben werden. Selektoren in CSS und JavaScript sind case-sensitive.
 
-  Z. B. ist ``<input type="text">`` und ``<input type="TEXT">`` gleichwertig, aber ``<div id="text">`` und ``<div id="Text">`` nicht!
+  Z. B. ist :html:`<input type="text">` und :html:`<input type="TEXT">` gleichwertig, aber :html:`<div id="text">` und :html:`<div id="Text">` nicht!
+
+  .. [#] Sollte man innerhalb eines Attributwertes Anführungszeichen verwenden wollen, dann sind HTML Entities notwendig: ``&quot;`` für ``"`` und ``&#39;`` für ``'``
 
 
 
@@ -335,9 +372,10 @@ HTML Grundgerüst
 ------------------------------------------------
 
 .. code:: HTML
+    :number-lines:
+    :class: copy-to-clipboard incremental-code
 
     <!DOCTYPE HTML">
-
     <html lang="de">
         <head>
         ... Meta-Daten, Scripte, Stylesheets, etc. ...
@@ -350,16 +388,14 @@ HTML Grundgerüst
 
 
 
-HTML ``<head>`` Element - „obligatorische“ Elemente
+HTML :html:`<head>` Element - „obligatorische“ Elemente
 -----------------------------------------------------------------
 
 Im Head sollten immer die folgenden Informationen deklariert werden:
 
-.. container:: smaller
-
-  :Titel: Der Titel des Dokuments mit Hilfe des ``title`` elements
-  :Zeichensatz: Der verwendete Zeichensatz mit Hilfe des passenden meta elements: ``<meta charset="utf-8">``
-  :Viewport: Konfiguration des *Viewports*\ [#]_ (insbesondere für mobile Geräte relevant): ``<meta name="viewport" content="width=device-width, initial-scale=1.0">``
+:Titel: Der Titel des Dokuments mit Hilfe des :html:`<title>...</title>` elements
+:Zeichensatz: Der verwendete Zeichensatz mit Hilfe des passenden meta elements: :html:`<meta charset="utf-8">`
+:Viewport: Konfiguration des *Viewports*\ [#]_ (insbesondere für mobile Geräte relevant): :html:`<meta name="viewport" content="width=device-width, initial-scale=1.0">`
 
 .. [#] Der *Viewport* (:ger:`Ansichtsbereich`) des Browsers ist der Bereich des Fensters, in dem der Webinhalt zu sehen ist. 
   
@@ -378,37 +414,30 @@ Im Head sollten immer die folgenden Informationen deklariert werden:
     Siehe: https://experienceleague.adobe.com/en/docs/target/using/experiences/vec/mobile-viewports.html?lang=de für weitere Details.
 
 
-HTML ``<head>`` Element - weitere Elemente
+
+HTML :html:`<head>` Element - weitere Elemente
 -----------------------------------------------------------------
 
 Im Head können weitere Informationen und Pragmas deklariert werden bzw. sollten dort deklariert werden, wenn sie benötigt werden:
 
-.. container:: scrollable
+.. story::
     
-    .. class:: incremental
+    .. class:: incremental-list
 
-    :Skripte: ``<script [src="script.js" [defer|async]]></script>``
+    :Skripte: :html:`<script [src="script.js" [defer|async]]></script>`
 
-    .. class:: incremental
-
-    :CSS: Mittels ``<link rel="stylesheet" href="style.css">`` oder  ``<style>...</style>``
-
-    .. class:: incremental
+    :CSS: Mittels :html:`<link rel="stylesheet" href="style.css">` oder :html:`<style>...</style>`
     
-    :Favorite Icon: ``<link rel="icon" type="image/png" href="/img/icon.png" />``
-
-    .. class:: incremental
+    :*Favorite Icon*: :html:`<link rel="icon" type="image/png" href="/img/icon.png" />`
 
     :Pragmas:
 
-        .. container:: minor far-smaller
+        ``http-equiv`` ≘ *HTML equivalent*; d. h. die Informationen könnte auch im HTTP Header stehen.
 
-            ``http-equiv`` ≘ *HTML equivalent*; d. h. die Informationen könnte auch im HTTP Header stehen.
+        - :html:`<meta charset="utf-8">` (alt)
+        - :html:`<meta http-equiv="Content-Security-Policy" content="default-src https:">`
 
-        - ``<meta charset="utf-8">`` (alt)
-        - ``<meta http-equiv="Content-Security-Policy" content="default-src https:">``
-
-          .. incremental:: far-smaller 
+          .. incremental::
 
               Äquivalente HTTP Header Definition: 
                     
@@ -416,23 +445,21 @@ Im Head können weitere Informationen und Pragmas deklariert werden bzw. sollten
                         
                 Content-Security-Policy: default-src https:
 
-    .. class:: incremental
-
-    :Benannte Meta-Daten: ``<meta name="author" content="Michael Eichberg">``
-
+    :Benannte Meta-Daten: :html:`<meta name="author" content="Michael Eichberg">`
 
 .. supplemental::
 
     `Content Security Policies <https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Security-Policy>`__
 
+    Pragmas sind Anweisungen, die die Steuerung/Verarbeitung beeinflussen.
 
 
-Semantisches HTML vs. „generisches“ HTML
+Semantisches vs. „generisches“ HTML
 -----------------------------------------------------------
 
-.. container:: two-columns
+.. grid::
 
-    .. incremental:: column 
+    .. cell:: width-50
 
         .. rubric:: Semantisches HTML
 
@@ -444,32 +471,32 @@ Semantisches HTML vs. „generisches“ HTML
 
             **Beispiel Elemente**
 
-            ``<header>``, ``<footer>``, ``<nav>``, ``<article>``, ``<section>``, ``<aside>``, ``<main>``, ``<figure>``,  ``<address>``, ``<em>``, ``<s>``, ...
+            :html:`<header>`, :html:`<footer>`, :html:`<nav>`, :html:`<article>`, :html:`<section>`, :html:`<aside>`, :html:`<main>`, :html:`<figure>`, :html:`<address>`, :html:`<em>`, :html:`<s>`, ...
 
-    .. incremental:: column
+    .. cell:: width-50 incremental
 
-        .. rubric:: Nicht-Semantic HTML
+        .. rubric:: Semantik freies HTML
 
-        - Verwendung von ``<div>`` und ``<span>`` Elementen, um den Inhalt zu strukturieren.
+        - Verwendung von :html:`<div>` und :html:`<span>` Elementen, um den Inhalt zu strukturieren.
         - Keine klare Bedeutung des Inhalts.
 
-        
 
 
-Semantisches HTML vs. „generisches“ HTML - Beispiel
+Semantisches vs. „generisches“ HTML - Beispiel
 ---------------------------------------------------------------------
 
-.. container:: two-columns smallest
+.. grid::
 
-    .. container:: column
+    .. cell:: width-50
 
         .. code:: html
+            :number-lines:
+            :class: copy-to-clipboard
 
             <div>
                 <span>Zwei Wörter</span>
                 <div>
-                    <a>Ein Wort</a>
-                    <a>Ein Wort</a>
+                    <a>Ein Wort</a><a>Ein Wort</a>
                 </div>
             </div>
             <div>
@@ -482,19 +509,18 @@ Semantisches HTML vs. „generisches“ HTML - Beispiel
                     <div>BlaBlaBla</div>
                 </div>
             </div>
-            <div>
-                <span>Alle Worte</span>
-            </div>
+            <div><span>Alle Worte</span></div>
 
-    .. container:: column incremental
+    .. cell:: width-50
 
         .. code:: html
+            :number-lines:
+            :class: copy-to-clipboard
 
             <header>
                 <h1>Zwei Wörter</h1>
                 <nav>
-                    <a>Ein Wort</a>
-                    <a>Ein Wort</a>
+                    <a>Ein Wort</a><a>Ein Wort</a>
                 </nav>
             </header>
             <main>
@@ -507,79 +533,72 @@ Semantisches HTML vs. „generisches“ HTML - Beispiel
                     <p>BlaBlaBla</p>
                 </section>
             </main>
-            <footer>
-                <p>Alle Worte</p>
-            </footer>
+            <footer><p>Alle Worte</p></footer>
 
 .. supplemental::
 
     Semantische Informationen im DOM zu haben, ist insbesondere für die Barrierefreiheit notwendig.
 
-    Alternativ zur Verwendung von semantischen Elementen können auch generische Attribute mit dem ``role`` Attribute versehen werden, um die Bedeutung des Elements zu spezifizieren: ``<div role="navigation">...</div>``
+    Alternativ zur Verwendung von semantischen Elementen können auch generische Attribute mit dem :html:`role` Attribute versehen werden, um die Bedeutung des Elements zu spezifizieren: :html:`<div role="navigation">...</div>`
 
 
 
-.. class:: center-child-elements no-title
+.. class:: center-content no-title
 
 HTML dient der Strukturierung von Inhalten
 ------------------------------------------------
 
-    Verwenden Sie HTML zur Strukturierung von Inhalten, und nicht, um das Aussehen der Inhalte zu definieren. 
+.. class:: dhbw
+
+1. Verwenden Sie HTML zur Strukturierung von Inhalten, und nicht, um das Aussehen der Inhalte zu definieren. 
     
-    Das Aussehen ist Sache von CSS. 
+2. Das Aussehen ist Sache von CSS. 
 
 
 
 Strukturierung von Dokumenten
 ------------------------------------------------
 
-.. class:: incremental list-with-explanations
+.. class:: incremental-list list-with-explanations
 
-- ``header``, ``footer``, ``nav``, ``article``, ``section``, ``aside``, ``main``, ``figure``, ``address``, ...
+- :html:`header`, :html:`footer`, :html:`nav`, :html:`article`, :html:`section`, :html:`aside`, :html:`main`, :html:`figure`, :html:`address`, ...
   
   In Hinblick auf die konkrete Semantik eines Elements gibt es Unterschiede wo und wie oft diese verwendet werden. 
   
-  Ein ``footer`` Element innerhalb eines ``article`` Elements hat eine andere Bedeutung als ein ``footer`` Element auf oberster Ebene.
+  Ein :html:`footer` Element innerhalb eines :html:`article` Elements hat eine andere Bedeutung als ein :html:`footer` Element auf oberster Ebene.
 
-  Ein ``main`` Element sollte nur einmal pro Dokument verwendet werden.
-- Überschriften: ``h1``, ``h2``, ``h3``, ``h4``, ``h5``, ``h6`` 
+  Ein :html:`main` Element sollte nur einmal pro Dokument verwendet werden.
+- Überschriften: :html:`h1`, :html:`h2`, :html:`h3`, :html:`h4`, :html:`h5`, :html:`h6`
   
   Überschriften sollten in der richtigen Reihenfolge verwendet werden.
-- Überschriften gruppiert mit zugehörigem Inhalt: ``hgroup``.
+- Überschriften gruppiert mit zugehörigem Inhalt: :html:`hgroup`.
 
 .. supplemental::
 
+  Das :html:`hgroup`-Element stellt eine Überschrift und den zugehörigen Inhalt dar. Dient dazu  eine Überschrift mit einem oder mehreren p-Elementen zu gruppieren. Zum Beispiel für eine Unterüberschrift oder einen alternativen Titel.
 
-  Das ``hgroup``-Element stellt eine Überschrift und den zugehörigen Inhalt dar. Dient dazu  eine Überschrift mit einem oder mehreren p-Elementen zu gruppieren. Zum Beispiel für eine Unterüberschrift oder einen alternativen Titel.
 
 
 Attribute
 ------------------------------------------------
 
-.. class:: incremental
+.. class:: incremental-list
 
 :Boolsche Attribute: sind wahr, wenn diese angegeben sind und falsch andernfalls.
  
-
-  .. container:: far-smaller
-    
-    Z. B. ``<input id="the-checkbox" type="checkbox" checked>``. 
-
-.. class:: incremental
+    Z. B. :html:`<input id="the-checkbox" type="checkbox" checked>`.
 
 :Aufgezählte Attribute (`enumerated values`:eng:): definieren eine begrenzte Anzahl von gültigen Werten sowie einen Default, der verwendet wird, wenn kein Wert angegeben ist, aber das Attribut verwendet wird.
-
-.. class:: incremental
 
 :Globale Attribute: 
 
     können für jedes Element verwendet werden; sind aber nicht immer sinnvoll.\ [#]_
 
-    Globale HTML Attribute sind Z. B. ``id``, ``class``, ``data-*``, ``autofocus``, ``role``, ``lang``, ``style``, ``popover``, ``tabindex``.
+    Globale HTML Attribute sind Z. B. :html:`id`, :html:`class`, :html:`data-*`, :html:`autofocus`, :html:`role`, :html:`lang`, :html:`style`, :html:`popover`, :html:`tabindex`.
 
-    .. container:: minor
+    .. deprecated::
     
-        Event Handler Attribute: ``onclick``, ``onclose``, ...
+        Event Handler Attribute: :html:`onclick`, :html:`onclose`, ...
    
 
 .. [#] `Globale Attribute <https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes#list_of_global_attributes>`__
@@ -589,6 +608,8 @@ Attribute
     Boolsche Attribute sollten in JavaScript durch hinzufügen bzw. löschen gesetzt werden (und nicht durch die Manipulation des Wertes eines Attributs).
 
     .. code:: JavaScript
+        :class: copy-to-clipboard
+        :number-lines:
     
         const checkbox = document.getElementById("the-checkbox");
         checkbox.removeAttribute("checked");
@@ -602,17 +623,17 @@ Attribute
     Zum Beispiel kann der ``content``-Wert des ``meta``-Elements wie folgt geschrieben werden:
 
     .. code:: html
-        :class: far-smaller copy-to-clipboard
+        :class: copy-to-clipboard
 
         <meta name="author" content="
         ⇥ ⇥Michael Eichberg
-        ⇥ ⇥ Professor
+        ⇥ ⇥Professor
         ">
 
     Dies ist äquivalent zu:
     
     .. code:: html
-        :class: far-smaller copy-to-clipboard
+        :class: copy-to-clipboard
 
         <meta name="author" content="Michael Eichberg Professor">
 
@@ -621,147 +642,110 @@ Attribute
 Ausgewählte globale Attribute
 ------------------------------------------------
 
-.. container:: scrollable
+.. story::
 
-    :``id``: 
+    .. class:: incremental-list
+
+    :`id`:html:: 
+
+        .. class:: list-with-explanations
 
         - verwendet, um ein Element eindeutig zu identifizieren
         
           (Welches man in CSS oder JavaScript per Selektor referenzieren kann.)
-        - als Ziel von Hyperlinks (``<a href="#id">``)
+        - als Ziel von Hyperlinks (:html:`<a href="#id">`)
         - im Rahmen der Unterstützung von Barrierefreiheit
         - der Wert ist case-sensitive 
 
         Best Practice: Kleinbuchstaben und Bindestriche verwenden (Unterstriche sind erlaubt aber im Zusammenhang mit CSS nicht optimal).
 
-    .. class:: incremental
-
-    :``class``:
+    :`class`:html::
 
         - das ``class``\ -Attribut ermöglicht es Elemente mit CSS und JavaScript anzusprechen
         - dient keinem anderen Zweck in HTML 
         - wird sehr häufig von Frameworks und Bibliotheken verwendet
 
-    .. class:: incremental
+    :`style`:html:: Das ``style``-Attribut ermöglicht die (ad-hoc) Anwendung von Inline-Styles auf das entsprechende Element (nicht empfohlen).
 
-    :``style``: Das ``style``-Attribut ermöglicht die (ad-hoc) Anwendung von Inline-Styles auf das entsprechende Element (nicht empfohlen).
-
-    .. class:: incremental
-
-    :``data-*``: Das ``data-*``-Attribut ermöglicht es, benutzerdefinierte Daten an das Element zu binden, die von JavaScript verwendet werden können. ``*`` kann ein beliebiger Name sein, aber nicht ``xml`` oder ``:``  enthalten.
+    :`data-*`:html:: Das ``data-*``-Attribut ermöglicht es, benutzerdefinierte Daten an das Element zu binden, die von JavaScript verwendet werden können. ``*`` kann ein beliebiger Name sein, aber nicht ``xml`` oder ``:``  enthalten.
 
 
 
 HTML - logische Gruppierung von Text
 ------------------------------------------------
 
-.. container:: scrollable
+.. story:: 
 
-    :Paragraphen: ``<p>Inhalt</p>``
+    .. class:: incremental-list dd-margin-left-6em
 
-    .. class:: incremental
+    :Paragraphen: :html:`<p>Inhalt</p>`
 
-    :Zitate: ``<blockquote>`` und ``<q>`` (für kurze Zitate innerhalb eines Absatzes)
+    :Zitate: :html:`<blockquote>` und :html:`<q>` (für kurze Zitate innerhalb eines Absatzes)
 
-        Das Inline-Zitat-Element ``<q>`` fügt der Sprache entsprechende Anführungszeichen hinzu.
+        Das Inline-Zitat-Element :html:`<q>` fügt der Sprache entsprechende Anführungszeichen hinzu.
 
         **Beispiel**
 
-        .. container:: two-columns incremental far-smaller
+        .. class:: columns incremental-list
 
-            .. container:: column
+        - .. raw:: html
 
-                .. raw:: html
-
+                    <p>
                     <q lang="de">Ein Zitat</q> (deutsch)
-
+                    </p>
                     <q lang="en">A quote</q> (englisch)  
 
-            .. container:: column
-
-                .. code:: html
+        - .. code:: html
 
                     <q lang="de">Ein Zitat</q> 
 
                     <q lang="en">A quote</q> 
 
-    .. class:: incremental
+    :Betonung: :html:`<em>` (:eng:`emphasized`) und :html:`<strong>` 
 
-    :Betonung: ``<em>`` (:eng:`emphasized`) und ``<strong>`` 
+    :Randbemerkungen: :html:`<small>` - für Randbemerkungen und Kleingedrucktes (d. h. :html:`small` steht nicht für unwichtige(re)n Text oder die Schriftgröße) 
 
-    .. class:: incremental
+    :Veraltet bzw. nicht mehr korrekt: :html:`<s>`
 
-    :Randbemerkungen: ``<small>`` - für Randbemerkungen und Kleingedrucktes (d. h. ``small`` steht nicht für unwichtige(re)n Text oder die Schriftgröße) 
+    :Zitierung: :html:`<cite>` - für den **Titel** eines Werkes oder einer Publikation
 
-    .. class:: incremental
+    :Definitionen: :html:`<dfn [title="der definierte Begriff"]>` - für die Definition eines Begriffs
 
-    :Veraltet bzw. nicht mehr korrekt: ``<s>``
+    :Abkürzungen: :html:`<abbr title="HyperText Markup Language">HTML</abbr>` - für Abkürzungen
 
-    .. class:: incremental
+    :Zeitangaben: :html:`<time datetime="2021-10-01">1. Oktober 2021</time>` - für Zeitangaben
 
-    :Zitierung: ``<cite>`` - für den **Titel** eines Werkes oder einer Publikation
+       :html:`datetime` dient der Zeitangabe in einem maschinenlesbaren Format (z. B. für Suchmaschinen)
 
-    .. class:: incremental
+    :Code: :html:`<code>` - für Code; für das Darstellen von Code-Beispielen wird :html:`code` häufig mit :html:`<pre>` kombiniert; die Sprache des Codes wird dann über ein :html:`class` Attribute spezifiziert (z. B. :html:`<pre><code class="language-java">...</code></pre>`)
 
-    :Definitionen: ``<dfn [title="der definierte Begriff"]>`` - für die Definition eines Begriffs
+    :Variablen:    :html:`<var>` - für Variablen in mathematischen oder Programmierkontexten
 
-    .. class:: incremental
-
-    :Abkürzungen: ``<abbr title="HyperText Markup Language">HTML</abbr>`` - für Abkürzungen
-
-    .. class:: incremental
-
-    :Zeitangaben: ``<time datetime="2021-10-01">1. Oktober 2021</time>`` - für Zeitangaben
-
-    .. class:: incremental
-
-    :Code: ``<code>`` - für Code; für das Darstellen von Code-Beispielen wird ``code`` häufig mit ``<pre>`` kombiniert; die Sprache des Codes wird dann über ein ``class`` Attribute spezifiziert (z. B. ``<pre><code class="language-java">...</code></pre>``)
-
-    .. class:: incremental
-
-    :Variablen:    ``<var>`` - für Variablen in mathematischen oder Programmierkontexten
-
-
-    .. class:: incremental
-
-    :(Tastatur-)Eingaben: ``<kbd>`` - für Tastatureingaben oder andere Benutzereingaben
+    :(Tastatur-)Eingaben: :html:`<kbd>` - für Tastatureingaben oder andere Benutzereingaben
 
         .. code:: html
-            :class: far-smaller
 
             Drücken Sie <kbd>cmd</kbd> + <kbd>c</kbd> zum Kopieren.
 
-    .. class:: incremental
-    
-    :Hoch-/Tiefstellung: ``<sup>`` und ``<sub>`` - für Hoch- und Tiefstellung, die nicht typographisch Zwecken dient, sondern inhaltlichen Zwecken. 
+    :Hoch-/Tiefstellung: :html:`<sup>` und :html:`<sub>` - für Hoch- und Tiefstellung, die nicht typographisch Zwecken dient, sondern inhaltlichen Zwecken. 
 
         .. code:: html
-            :class: far-smaller
             
             H<sub>2</sub>O steht für Wasser.
 
-    .. class:: incremental
-
-    :Text mit abweichender Bedeutung: ``<i>`` - Text, der von normaler Prosa abweicht wie z. B. eine taxonomische Bezeichnung, ein technischer Begriff, ...
+    :Text mit abweichender Bedeutung: :html:`<i>` - Text, der von normaler Prosa abweicht wie z. B. eine taxonomische Bezeichnung, ein technischer Begriff, ...
 
         .. code:: html
-            :class: far-smaller
 
             Brot besteht aus <i>Mehl</i>.
 
-    .. class:: incremental
-
-    :Text mit erhöhter Aufmerksamkeit: ``<b>`` - Text, der erhöhte Aufmerksamkeit erfordert, aber nicht unbedingt betont werden muss; z. B. Schlüsselwörter in einem Artikel.
+    :Text mit erhöhter Aufmerksamkeit: :html:`<b>` - Text, der erhöhte Aufmerksamkeit erfordert, aber nicht unbedingt betont werden muss; z. B. Schlüsselwörter in einem Artikel.
 
         .. code:: html
-            :class: far-smaller
                 
             <p>Das <b>Wetter</b> ist heute schön.</p>
 
-    .. class:: incremental
-
-    :Text mit erhöhter Bedeutung: ``<mark>`` - Text, der hervorgehoben werden soll, z. B. Suchergebnisse.
-
+    :Text mit erhöhter Bedeutung: :html:`<mark>` - Text, der hervorgehoben werden soll, z. B. Suchergebnisse.
 
 .. supplemental::
 
@@ -772,37 +756,39 @@ HTML - logische Gruppierung von Text
 HTML - physische Auszeichnung von Text
 ------------------------------------------------
 
-.. container:: scrollable
+.. class:: incremental-list
 
-    :Vorformatierter text: ``<pre>...</pre>`` - für Text, der so angezeigt werden soll, wie er geschrieben wurde)
+:Vorformatierter text: :html:`<pre>...</pre>`` - für Text, der so angezeigt werden soll, wie er geschrieben wurde.
 
-    .. class:: incremental
+:Zeilenumbrüche: :html:`<br>` - für Zeilenumbrüche, die inhärenter Teil der Daten sind wie zum Beispiel bei Adressen. D. h. sollte nicht innerhalb von Text verwendet werden!
 
-    :Zeilenumbrüche: ``<br>`` - für Zeilenumbrüche, die inhärenter Teil der Daten sind wie zum Beispiel bei Adressen. D. h. sollte nicht innerhalb von Text verwendet werden!
+:Optionale Zeilenumbrüche: :html:`<wbr>` (:eng:`word break opportunity`) - ein optionaler Zeilenumbruch 
 
-    .. class:: incremental
+    Beispiel: 
+    
+    .. code:: html
 
-    :Optionale Zeilenumbrüche: ``<wbr>`` (:eng:`word break opportunity``) - ein optionaler Zeilenumbruch 
+        <p> Er schrie: 
+            <q lang="de">Lasst<wbr>Mich<wbr>In<wbr>Ruhe!</q>
+        </p> 
 
-        (Beispiel: ``<p>Er schrie: <q lang="de">Lasst<wbr>Mich<br>In<wbr>Ruhe!</q></p>``) 
 
 
-
-HTML - ``<span>`` und ``div``
+HTML - :html:`<span>` und :html:`<div>`
 ------------------------------------------------
 
-- ``<span>`` und ``<div>`` sind generische Container-Elemente, die verwendet werden, um Text oder andere Elemente zu gruppieren.
-- ``<span>`` ist ein Inline-Element
-- ``<div>`` ist ein Block-Element
+- :html:`<span>` und :html:`<div>` sind generische Container-Elemente, die verwendet werden, um Text oder andere Elemente zu gruppieren.
+- :html:`<span>` ist ein Inline-Element
+- :html:`<div>` ist ein Block-Element
 - beide werden häufig verwendet, um CSS-Klassen zuzuweisen, um den Inhalt zu gruppieren oder um den Inhalt zu manipulieren.
 
 
 
-HTML - ``data``
+HTML - :html:`<data>`
 ------------------------------------------------
 
-- Das ``data``-Element ermöglicht es, maschinenlesbare Date an ein Element zu binden, die dann von JavaScript verwendet werden können. 
-- Die maschinenlesbaren Daten werden im ``value`` Attribut gespeichert.
+- Das :html:`<data>`-Element ermöglicht es, maschinenlesbare Daten an ein Element zu binden, die dann von JavaScript verwendet werden können. 
+- Die maschinenlesbaren Daten werden im :html:`value` Attribut gespeichert.
 
   .. code:: html
 
@@ -810,58 +796,56 @@ HTML - ``data``
 
 
 
-
 HTML - Links
 ------------------------------------------------
 
-.. container:: scrollable
+.. story:: 
 
-  .. class:: incremental
+  .. class:: incremental-list
 
-  - Hyperlinks werden mit dem ``<a>`` Element erstellt.
-  - Der ``href``-Attribut enthält die Adresse des Ziels (innerhalb des gleichen Dokuments, auf einer anderen Webseite, per E-Mail, ...)
+  - Hyperlinks werden mit dem :html:`<a>` Element erstellt.
+  - Der :html:`href`-Attribut enthält die Adresse des Ziels (innerhalb des gleichen Dokuments, auf einer anderen Webseite, per E-Mail, ...)
 
     .. code:: html
       :number-lines:
-      :class: far-smaller
    
       <a href="https://www.dhbw-mannheim.de">DHBW Mannheim</a>
       <a href="#teachers">Unsere Lehrenden</a>
       <a href="mailto:michael.eichberg@dhbw.de">Email: Michael Eichberg</a>
 
-    .. container:: far-smaller
+    .. container:: 
 
       1. Externer Link
       2. Interner Link (:eng:`link fragment identifier`) auf ein Element mit der ID ``teachers``
-      3. E-Mail Link - kann ergänzt werden durch ``subject`` und ``body`` Parameter innerhalb des ``href`` Attributs.
-  - Das ``target``-Attribut ermöglicht die Definition des Browsing-Kontextes für die Link-Navigation (und die Formularübermittlung).
+      3. E-Mail Link - kann ergänzt werden durch ``subject`` und ``body`` Parameter innerhalb des :html:`href` Attributs.
+  - Das :html:`target`-Attribut ermöglicht die Definition des Browsing-Kontextes für die Link-Navigation (und die Formularübermittlung).
     
-    .. code:: html
-      :number-lines:
-      :class: far-smaller
-   
-      <a target="_blank"  href="https://www.dhbw-mannheim.de">DHBW Mannheim</a>
-      <a target="_self"  href="https://www.dhbw-mannheim.de">DHBW Mannheim</a>
-      <a target="_top"  href="https://www.dhbw-mannheim.de">DHBW Mannheim</a>
-      <a target="_parent"  href="https://www.dhbw-mannheim.de">DHBW Mannheim</a>
-      <a target="dhbw"  href="https://www.dhbw-mannheim.de">DHBW Mannheim</a>
-      
-    .. container:: far-smaller
+    .. compound::
+        :class: font-size-90
+            
+        .. code:: html
+            :number-lines:
+    
+            <a target="_blank" href="https://www.dhbw-mannheim.de">DHBW Mannheim</a>
+            <a target="_self" href="https://www.dhbw-mannheim.de">DHBW Mannheim</a>
+            <a target="_top" href="https://www.dhbw-mannheim.de">DHBW Mannheim</a>
+            <a target="_parent" href="https://www.dhbw-mannheim.de">DHBW Mannheim</a>
+            <a target="dhbw" href="https://www.dhbw-mannheim.de">DHBW Mannheim</a>
 
-      1. Öffnet den Link in einem neuen Fenster oder Tab
-      2. Öffnet den Link im gleichen Browsing-Kontext
-      3. Öffnet den Link im obersten Browsing-Kontext
-      4. Öffnet den Link im übergeordneten Browsing-Kontext 
-      5. Öffnet den Link im Browsing-Kontext mit dem Namen `dhbw` (Beispiel: :raw-html:`<a target="dhbw" href="https://www.dhbw-mannheim.de">DHBW Mannheim</a>`)
-       
-      ``_self``, ``_top`` und ``_parent`` sind relativ zum aktuellen Browsing-Kontext und unterscheiden sich nur, wenn die Seite in einem Frame oder einem iframe angezeigt wird.
+        1. Öffnet den Link in einem neuen Fenster oder Tab
+        2. Öffnet den Link im gleichen Browsing-Kontext
+        3. Öffnet den Link im obersten Browsing-Kontext
+        4. Öffnet den Link im übergeordneten Browsing-Kontext 
+        5. Öffnet den Link im Browsing-Kontext mit dem Namen `dhbw` (Beispiel: :raw-html:`<a target="dhbw" href="https://www.dhbw-mannheim.de">DHBW Mannheim</a>`)
+        
+        :html:`_self`, :html:`_top` und `_parent` sind relativ zum aktuellen Browsing-Kontext und unterscheiden sich nur, wenn die Seite in einem Frame oder einem :html:`<iframe>` angezeigt wird.
 
-  - Das ``rel``-Attribut legt die Art des Links fest und definiert die Beziehung zwischen dem aktuellen Dokument und der Ressource, auf die der Hyperlink verweist. (Z. B. ``rel="license"``, ``rel="author"`` oder ``rel="noopener"``; siehe `MDN rel attribute <https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/rel>`__)
-
+  - Das :html:`rel`-Attribut legt die Art des Links fest und definiert die Beziehung zwischen dem aktuellen Dokument und der Ressource, auf die der Hyperlink verweist. (Z. B. :html:`rel="license"`, :html:`rel="author"` oder :html:`rel="noopener"`; siehe `MDN rel attribute <https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/rel>`__)
 
 .. supplemental::
 
     Durch die Zuweisung zu einem Browsing-Kontext kann verhindert werden, dass die selbe Seite X mal geöffnet wird, wenn ein Nutzer auf den Link klickt.
+
 
 
 HTML - Lists
@@ -869,18 +853,15 @@ HTML - Lists
 
 Drei Arten von Listen werden unterstützt, die beliebig verschachtelt werden können:
 
-.. container:: scrollable
+.. story::
 
-    .. class:: incremental
+    .. class:: incremental-list
 
-    - Definitionslisten: ``<dl>``
+    - Definitionslisten: :html:`<dl>`
 
-      .. container:: two-columns
-
-          .. container:: column
-
-            .. code:: html
-                :class: far-smaller
+      .. class:: columns 
+    
+      - .. code:: html
 
                 <dl>
                     <dt>Erster Begriff</dt>
@@ -889,9 +870,7 @@ Drei Arten von Listen werden unterstützt, die beliebig verschachtelt werden kö
                     <dd>Erklärung des 2. Begriffs</dd>
                 </dl>
 
-          .. container:: column far-smaller
-
-            .. raw:: html                    
+      - .. raw:: html                    
 
                 <dl>
                     <dt style="font-weight:bold">Erster Begriff</dt>
@@ -900,14 +879,11 @@ Drei Arten von Listen werden unterstützt, die beliebig verschachtelt werden kö
                     <dd style="margin-left:3em">Erklärung des 2. Begriffs</dd>
                 </dl>
 
-    - geordnete Listen: ``<ol [reversed] [start=<NO>]>``
+    - geordnete Listen: :html:`<ol [reversed] [start=<NO>]>`
 
-      .. container:: two-columns
+      .. class:: columns -spaced
 
-          .. container:: column
-
-             .. code:: html
-                :class: far-smaller
+      - .. code:: html
 
                 <ol start="0">
                     <li>Erster Punkt</li>
@@ -915,11 +891,8 @@ Drei Arten von Listen werden unterstützt, die beliebig verschachtelt werden kö
                     <li value="10">Dritter Punkt</li>
                 </ol>
 
-          .. container:: column far-smaller 
-
-             .. raw:: html                 
-                :class: margin-left-2em   
-
+      - .. raw:: html                 
+        
                 <ol start="0">
                     <li>Erster Punkt</li>
                     <li>Zweiter Punkt</li>
@@ -927,46 +900,39 @@ Drei Arten von Listen werden unterstützt, die beliebig verschachtelt werden kö
                 </ol>
 
 
-    - ungeordnete Listen: ``<ul>``
+    - ungeordnete Listen: :html:`<ul>`
 
-      .. container:: two-columns
+      .. class:: columns 
 
-          .. container:: column
-
-             .. code:: html
-                :class: far-smaller
+      - .. code:: html
 
                 <ul>
                     <li>Erster Punkt</li>
                     <li>Zweiter Punkt</li>
                 </ul> 
 
-          .. container:: column far-smaller
-
-             .. raw:: html                    
+      - .. raw:: html                    
 
                 <ul>
                     <li>Erster Punkt</li>
                     <li>Zweiter Punkt</li>
                 </ul> 
-
-
-
 
 
 
 HTML - Navigation
 ------------------------------------------------
 
-- Das ``<nav>`` Element wird verwendet, um Navigationslinks zu gruppieren.
+- Das :html:`<nav>` Element wird verwendet, um Navigationslinks zu gruppieren.
 - Insbesondere für Screenreader und die Suchmaschine relevant.
 
-.. container:: incremental
+.. compound:: 
+    :class: incremental
 
     .. rubric:: Beispiel
 
     .. code:: HTML
-        :class: far-smaller
+        :number-lines:
 
         <nav id="ld-menu">
             <button type="button" 
@@ -981,30 +947,32 @@ HTML - Navigation
         </nav>
 
 
+
 HTML - Tabellen
 ------------------------------------------------
 
-.. container:: scrollable
+.. story::
 
     Verwendet für die Darstellung von tabellarischen Daten mit Zeilen und Spalten. 
     
-    .. admonition:: Hinweis
-            :class: warning incremental
+    .. attention:: 
+        :class: incremental
 
-            Die Verwendung von <table> sollte sich nach dem Inhalt richten!
+        Die Verwendung von :html:`<table>` sollte sich nach dem Inhalt richten!
 
-            Tabellen sollten nicht zum Layout von Webseiten verwendet werden.
+        Tabellen sollten nicht zum Layout von Webseiten verwendet werden.
 
-    .. incremental:: far-smaller
+    .. compound:: 
+        :class: incremental
 
         Aufbau von Tabellen:
 
-        .. container:: two-columns
+        .. grid::
 
-            .. container:: column no-separator
+            .. cell::
 
                 .. code:: html
-                    :class: far-smaller
+                    :number-lines:
 
                     <table>
                         <caption>Logische Operation</caption>
@@ -1018,8 +986,7 @@ HTML - Tabellen
                         <tfoot></tfoot>
                     </table> 
 
-
-            .. container:: column padding-left-1em
+            .. cell::
 
                 .. raw:: html
                 
@@ -1049,46 +1016,46 @@ HTML - Tabellen
 
     .. class:: incremental
 
-    - Zellen, die über mehrere Spalten oder Zeilen gehen können mit Hilfe von ``colspan`` und ``rowspan`` Attributen definiert werden.
+    - Zellen, die über mehrere Spalten oder Zeilen gehen können mit Hilfe von :html:`colspan` und :html:`rowspan` Attributen definiert werden.
 
-    - Spalten und Zeilen können mit Hilfe von ``<col>`` und ``<colgroup>`` Elementen definiert werden.
+    - Spalten und Zeilen können mit Hilfe von :html:`<col>` und :html:`<colgroup>` Elementen definiert werden.
+
 
 
 HTML - Images
 ------------------------------------------------
 
-.. container:: scrollable
+.. story::
 
-    .. class:: incremental
+    .. class:: incremental-list
 
-    - Bilder werden mit dem ``<img>`` Element eingebunden.
+    - Bilder werden mit dem :html:`<img>` Element eingebunden.
 
       .. code:: html
-         :class: far-smaller
 
             <img src="path/filename" alt="descriptive text" />
 
-    - Das ``src``-Attribut enthält die Adresse des Bildes.
-    - Das ``alt``-Attribut enthält eine Beschreibung des Bildes, die angezeigt wird, wenn das Bild nicht geladen werden kann.
-    - Das ``width`` und ``height``-Attribut können und sollten verwendet werden, um die Größe des Bildes festzulegen.
-    - Lazy loading ist durch die Verwendung des ``loading`` Attributs möglich (:raw-html:`loading="lazy"`).
+    - Das :html:`src`-Attribut enthält die Adresse des Bildes.
+    - Das :html:`alt`-Attribut enthält eine Beschreibung des Bildes, die angezeigt wird, wenn das Bild nicht geladen werden kann.
+    - Das :html:`width` und :html:`height`-Attribut können und sollten verwendet werden, um die Größe des Bildes festzulegen.
+    - Lazy loading ist durch die Verwendung des :html:`loading` Attributs möglich (:html:`loading="lazy"`).
 
     - Folgende Bildformate werden breit unterstützt: ``jpg``, ``png``, ``gif``, ``svg`` und ``webp``. 
-    - Responsive Images werden über das ``srcset`` Attribut unterstützt:
+    - Responsive Images werden über das :html:`srcset` Attribut unterstützt:
     
       .. code:: html
-        :class: far-smaller
+        :number-lines:
     
         <img src="images/dhbw.png" alt="Logo der DHBW"
             srcset="images/dhbw.png 400w, images/dhbw-xl.jpg 800w"
             sizes="(max-width: 800px) 400px, 800px" />
 
-    .. incremental::
+    .. compound::
+        :class: incremental
 
         Weitere `Responsive Features <https://web.dev/learn/design/responsive-images>`__) werden mittels CSS ermöglicht. Um zum Beispiel zu verhindern, dass ein Bild größer als eine Textzeile wird, kann folgendes CSS definiert werden:
 
         .. code:: css
-            :class: far-smaller
 
             img {
                 max-inline-size: 100%;
@@ -1096,47 +1063,46 @@ HTML - Images
             }
 
 
+
 HTML - Formulare
 ------------------------------------------------
 
-.. container:: scrollable
+.. story::
 
-    .. incremental::
+    .. compound::
+        :class: incremental
 
-        Formulare werden mit dem ``<form>`` Element erstellt.
+        Formulare werden mit dem :html:`<form>` Element erstellt.
 
-        .. class:: incremental
-
-        - ``action`` enthält die Adresse, an die die Formulardaten gesendet werden.
-        - ``method`` definiert die Methode, die zum Senden der Daten verwendet wird (``GET`` oder ``POST``).
-        - ``name`` setzt den Namen des Formulars.
-        - ``target`` enthält den Namen des Browsing-Kontexts, in dem die Antwort angezeigt wird.
-        - ``autocomplete`` ermöglicht das automatische Ausfüllen von Formularen.
-        - ``novalidate`` verhindert die Validierung der Formulardaten durch den Browser.
-        - ``accept-charset`` definiert die Zeichencodierung, die zum Senden der Formulardaten verwendet wird.
-
+        - :html:`action` enthält die Adresse, an die die Formulardaten gesendet werden.
+        - :html:`method` definiert die Methode, die zum Senden der Daten verwendet wird (:html:`GET` oder :html:`POST`).
+        - :html:`name` setzt den Namen des Formulars.
+        - :html:`target` enthält den Namen des Browsing-Kontexts, in dem die Antwort angezeigt wird.
+        - :html:`autocomplete` ermöglicht das automatische Ausfüllen von Formularen.
+        - :html:`novalidate` verhindert die Validierung der Formulardaten durch den Browser.
+        - :html:`accept-charset` definiert die Zeichencodierung, die zum Senden der Formulardaten verwendet wird.
     
-    .. incremental:: 
+    .. compound::
+        :class: incremental
 
-        Formularelemente werden mit dem ``<input>`` Element erstellt.
+        Formularelemente werden mit dem :html:`<input>` Element erstellt.
 
-        .. class:: incremental
-
-        - ``type`` definiert den Typ des Formularelements.
-        - ``name`` definiert den Namen des Formularelements.
-        - ``value`` definiert den Wert des Formularelements.
-        - ``placeholder`` definiert den Platzhaltertext des Formularelements.
-        - ``required`` definiert, ob das Formularelement erforderlich ist.
-        - ``disabled`` definiert, ob das Formularelement deaktiviert ist.
-        - ``autofocus`` definiert, ob das Formularelement den Fokus erhält.
+        - :html:`type` definiert den Typ des Formularelements.
+        - :html:`name` definiert den Namen des Formularelements.
+        - :html:`value` definiert den Wert des Formularelements.
+        - :html:`placeholder` definiert den Platzhaltertext des Formularelements.
+        - :html:`required` definiert, ob das Formularelement erforderlich ist.
+        - :html:`disabled` definiert, ob das Formularelement deaktiviert ist.
+        - :html:`autofocus` definiert, ob das Formularelement den Fokus erhält.
     
-    .. incremental:: far-smaller
+    .. compound::
+        :class: incremental
             
         .. rubric:: Beispiel
 
-        .. container:: two-columns 
+        .. grid::
         
-            .. container:: column
+            .. cell:: width-60
         
                 .. code:: html
 
@@ -1151,7 +1117,7 @@ HTML - Formulare
                       <input type="submit" value="Submit">
                     </form>
         
-            .. container:: column
+            .. cell:: width-40
 
                 .. raw:: html
 
@@ -1162,7 +1128,9 @@ HTML - Formulare
                          <option value="10">Attribute</option>
                          <option value="29">Formulare</option>
                       </select>
+                      <p>
                       <input type="submit" value="Submit">
+                      </p>
                     </form>
 
 .. supplemental::
@@ -1174,26 +1142,23 @@ HTML - Formulare
 HTML - Zusammenfassungen und Details
 ------------------------------------------------
 
-HTML unterstützt verschiedene interaktive Elemente:
+Anzeigen von optionalen Details mit Hilfe des :html:`<details>` Elements.
 
-- Anzeigen von optionalen Details mit Hilfe des ``<details>`` Elements.
+.. grid::
 
-  .. container:: two-columns
-  
-    .. container:: column
+    .. cell:: width-50
 
         .. code:: html
-            :class: far-smaller
+            :number-lines:
 
             <details [open]>
                 <summary>Abstract</summary>
                 <p>Password guessing ...</p>
             </details>
 
-    .. container:: column
+    .. cell:: width-50
 
         .. raw:: html
-            :class: far-smaller
 
             <p>
                 Geschlossen - Details werden erst nach einem Klick angezeigt:
@@ -1218,32 +1183,31 @@ HTML unterstützt verschiedene interaktive Elemente:
 HTML - Dialoge
 ------------------------------------------------
 
-- Dialoge werden mit Hilfe des ``<dialog>`` Elements erstellt. Dialoge sind spezielle Fenster, die den Fokus auf sich ziehen und die Interaktion mit dem Rest der Seite unterbrechen - falls diese modal sind.
+Dialoge werden mit Hilfe des :html:`<dialog>` Elements erstellt. Dialoge sind spezielle Fenster, die den Fokus auf sich ziehen und die Interaktion mit dem Rest der Seite unterbrechen - falls diese modal sind.
 
-  .. container:: two-columns
-  
-    .. container:: column no-separator
+.. grid::
+
+    .. cell:: width-50
 
         Beispiel\ [#]_:
 
         .. code:: html
-            :class: far-smaller
+            :number-lines:
 
             <dialog>
-              <h1>Dialog</h1>
-              <p>Dialog Inhalt</p>
-              <button formmethod="dialog">
+                <h1>Dialog</h1>
+                <p>Dialog Inhalt</p>
+                <button formmethod="dialog">
                 OK
-              </button>
-              <button autofocus>Abbrechen</button>
+                </button>
+                <button autofocus>Abbrechen</button>
             </dialog>
 
-    .. container:: column center-child-elements
+    .. cell:: width-50
 
         .. raw:: html
-            :class: smaller
 
-            <button onclick="document.querySelector('#html-dialog-example').showModal()">Open Dialog</button>
+            <button style="padding:0.5em; border-radius:0.2em;" onclick="document.querySelector('#html-dialog-example').showModal()">Open Dialog</button>
 
             <dialog id="html-dialog-example" class="ld-dialog" style="color:white;padding:1em">
                 <header>Dialog</header>
@@ -1252,7 +1216,7 @@ HTML - Dialoge
                 <button autofocus tabindex=1 onclick="document.querySelector('#html-dialog-example').close()">Abbrechen</button>
             </dialog>
 
-.. [#]  :minor:`JavaScript Code zum Öffnen des Dialogs wird hier nicht gezeigt.`
+.. [#]  :peripheral:`JavaScript Code zum Öffnen des Dialogs wird hier nicht gezeigt.`
 
 
 
@@ -1274,7 +1238,7 @@ Ausgewählte Zeichen können (in manchen Kontexten) nur durch HTML Entities darg
   
 .. container:: footer-left  far-smaller
 
-    `Benannte Zeichen <https://html.spec.whatwg.org/multipage/named-characters.html#named-character-references>`__
+    `Liste benannter Zeichen <https://html.spec.whatwg.org/multipage/named-characters.html#named-character-references>`__
 
     Die numerischen Werte sind `Unicode Code Points <https://en.wikipedia.org/wiki/List_of_Unicode_characters>`__ (d.h. ``#60`` ist  der Unicode Code Point von ``<``).
 
@@ -1283,14 +1247,14 @@ Ausgewählte Zeichen können (in manchen Kontexten) nur durch HTML Entities darg
 Eingebettet Webseiten
 ------------------------------------------------
 
-Das ``<iframe>`` Element ermöglicht das Einbetten von Webseiten in Webseiten:
+Das :html:`<iframe>` Element ermöglicht das Einbetten von Webseiten in Webseiten:
 
-.. container:: two-columns 
+.. grid::
 
-    .. container:: column no-separator
+    .. cell:: width-60
 
         .. code:: html
-            :class: far-far-smaller
+            :number-lines:
 
             <iframe src="https://www.dhbw-mannheim.de" 
                     width="600" 
@@ -1305,20 +1269,18 @@ Das ``<iframe>`` Element ermöglicht das Einbetten von Webseiten in Webseiten:
                 iframes are not supported
             </iframe>
 
-    .. container:: column
+    .. cell:: width-40
 
         .. raw:: html
 
             <iframe srcdoc="<html style='font-size:32px'>
                         <h1>HTML</h1>
                         <p>HTML is a markup language.</p>" 
-                    width="900" 
+                    width="600" 
                     height="600" style="border:1px solid black; box-shadow: 2px 2px gray;">
                 iframes are not supported
             </iframe>
 
-
-        
 
 
 HTML Erweiterbarkeit
@@ -1326,54 +1288,53 @@ HTML Erweiterbarkeit
 
 .. class:: incremental
 
-- Hinzufügen von Meta-daten (``<meta name="" content="">``)
-- ``class`` Attribute
-- „Custom Elements“ (z. B. ``<my-element>``)
-- Autoren können APIs mit Hilfe des JavaScript-Prototyping-Mechanismus erweitern
+- Hinzufügen von Meta-daten (:html:`<meta name="" content="">`)
+- :html:`class` Attribute
+- „Custom Elements“ (z. B. :html:`<my-element>`)
+- :peripheral:`Autoren können APIs mit Hilfe des JavaScript-Prototyping-Mechanismus erweitern`
+
 
 
 Veraltetes - aber noch unterstütztes - HTML
 ------------------------------------------------
 
-.. class:: incremental
+.. class:: incremental-list
 
-- keine ``border`` Attribute auf ``img`` Elementen
-- keine ``charset`` Attribute auf ``script`` Elementen (utf-8 ist gefordert)
-- keine ``language`` Attribute auf ``script`` Elementen (JavaScript ist der Standard)
-- kein ``type`` Attribute auf ``style`` Elementen (``text/css`` ist der Standard)
+- keine :html:`border` Attribute auf :html:`<img>` Elementen
+- keine :html:`charset` Attribute auf :html:`<script>` Elementen (UTF-8 ist gefordert)
+- keine :html:`language` Attribute auf :html:`<script>` Elementen (JavaScript ist der Standard)
+- kein :html:`type` Attribute auf :html:`<style>` Elementen (``text/css`` ist der Standard)
+
 
 
 HTML - „nicht mehr unterstützt - April Stand 2024“
 --------------------------------------------------------------
 
-Nicht mehr unterstützte Elemente (Auswahl):
+.. class:: columns
 
-.. class:: far-far-smaller
+- Nicht mehr unterstützte Elemente (Auswahl):
 
-- ``big``
-- ``blink``
-- ``center``
-- ``font``
-- ``marquee``
-- ``nobr``
-- ``tt``
-- ``menuitem``
-- ...
+  - :html:`<big>`
+  - :html:`<blink>`
+  - :html:`<center>`
+  - :html:`<font>`
+  - :html:`<marquee>`
+  - :html:`<nobr>`
+  - :html:`<tt>`
+  - :html:`<menuitem>`
+  - ...
   
-Nicht mehr unterstützte Attribute (Auswahl):
+- Nicht mehr unterstützte Attribute (Auswahl):
 
-.. class:: far-far-smaller
-
-- ``align`` bei ``h1`` bis ``h6`` Elementen
-- ``bgcolor`` bei ``body`` Elementen
-- ``charset`` bei ``a`` und ``link`` Elementen
-- ``name`` bei ``img``, ``option``, ... Elementen
+  - :html:`align` bei :html:`<h1>` bis :html:`<h6>` Elementen
+  - :html:`bgcolor` bei :html:`<body>` Elementen
+  - :html:`charset` bei :html:`<a>` und :html:`<link>` Elementen
+  - :html:`name` bei :html:`<img>`, :html:`<option>`, ... Elementen
 
 
 
 Barrierefreiheit ist verpflichtend
 --------------------------------------
-
 
 .. epigraph::
 
@@ -1398,24 +1359,22 @@ Web Content Accessibility Guidelines 2.1 (WCAG)
 
 Einige Anforderungen\ [#]_:
 
-.. container:: smaller
+.. rubric:: „Harte“ Kriterien
 
-    .. rubric:: „Harte“ Kriterien
+.. class:: incremental-list
 
-    .. class:: incremental smaller
+- die Schrift auf einer Website wenigstens 16 Pixel groß und 
+- Zeilen nicht mehr als 80 Zeichen lang sein sollen. 
+- Der Abstand dazwischen soll das 1,5-Fache ihrer Höhe betragen. 
+- Um einen ausreichenden Kontrast zu erzeugen, muss die Schrift wenigstens 4,5-mal dunkler sein als der Hintergrund. 
+- Klickflächen schließlich müssen wenigstens 44 x 44 Pixel groß sein.
 
-    - die Schrift auf einer Website wenigstens 16 Pixel groß und 
-    - Zeilen nicht mehr als 80 Zeichen lang sein sollen. 
-    - Der Abstand dazwischen soll das 1,5-Fache ihrer Höhe betragen. 
-    - Um einen ausreichenden Kontrast zu erzeugen, muss die Schrift wenigstens 4,5-mal dunkler sein als der Hintergrund. 
-    - Klickflächen schließlich müssen wenigstens 44 x 44 Pixel groß sein.
+.. rubric:: „Weiche“ Kriterien
 
-    .. rubric:: „Weiche“ Kriterien
+.. class:: incremental-list
 
-    .. class:: incremental smaller
-
-    - Starke Animationen sind auf barrierefreien Seiten tabu.
-    - das Layout der Seite außerdem einfach, logisch und auf jeder Unterseite einheitlich aufgebaut sein.
+- Starke Animationen sind auf barrierefreien Seiten tabu.
+- das Layout der Seite soll außerdem einfach, logisch und auf jeder Unterseite einheitlich aufgebaut sein.
 
 .. [#] Sept. 2024; `Golem.de - So setzen gute Webdesigner Barrierefreiheit um
  <https://www.golem.de/news/barrierefreiheit-deutsche-webseiten-sind-versetzungsgefaehrdet-2409-188655-2.html>`__
@@ -1434,27 +1393,28 @@ Referenzen
 - `Web Content Accessibility Guidelines <https://www.w3.org/TR/WCAG21/>`__
 
 
-.. class:: integrated-exercise transition-scale
+
+.. class:: exercises transition-scale
 
 Übung
 --------    
+.. exercise:: Eine einfache HTML Webseite
+  
+  .. grid::
 
-.. container:: two-columns
+    .. cell:: width-40
 
-    .. container:: column smaller no-separator
-
-        Erzeugen Sie ein HTML Dokument, das wie das Dokument auf der rechten Seite aussieht.
+        Erzeugen Sie ein HTML Dokument, das wie das Dokument auf der rechten Seite aussieht. Verwenden Sie kein CSS!
 
         Nutzen Sie den `HTML Validator <https://validator.w3.org/nu/#textarea>`__, um zu verifizieren, dass Ihr Dokument valide ist. 
 
         Achten Sie auf eine korrekte Strukturierung des Dokuments und verwenden Sie semantische Elemente, wo immer dies sinnvoll ist. Denken Sie auch grundlegend an die Barrierefreiheit.
 
-    .. container:: column
+    .. cell:: width-60
 
         .. raw:: html
-            :class: center-child-elements 
 
-            <iframe width=850px height=900px srcdoc='
+            <iframe class="embedded-iframe" width=100% srcdoc='
                 <!DOCTYPE html>
                 <html lang="de">
                 <head>
@@ -1462,7 +1422,7 @@ Referenzen
                 <meta name="author" content="X Y zu W">
                 <meta charset="utf-8">
                 </head> 
-                <body style="font-size:36px"> 
+                <body style="font-size:3.25vw;"> 
                     <header>
                     <nav>
                     <a href="#Ausbildung">Ausbildung</a> <a href="#ehrenamt">Ehrenamt</a>
@@ -1515,15 +1475,28 @@ Referenzen
                 </body>
                 </html>
             ' style="border: 1px solid black;">iframe is not supported</iframe>
+            <script>
+            document.querySelectorAll('.embedded-iframe').forEach((iframe) => {
+            console.log('iframe', iframe);
+                new IntersectionObserver((entries) => {
+                    entries.forEach((entry) => {
+                        if (entry.isIntersecting) {
+                            iframe.style.height = (iframe.contentWindow.document.body.scrollHeight + 36) + 'px';
+                        }
+                    });
+                }).observe(iframe);
+            });
+            </script>
 
-.. exercise:: 
-
-  \ 
 
   .. solution::
     :pwd: HTML5Webseite
 
+    .. rubric:: Eine mögliche Lösung
+
     .. code:: html
+        :class: copy-to-clipboard
+        :number-lines:
 
         <!DOCTYPE html>
         <html lang="de">
@@ -1532,7 +1505,7 @@ Referenzen
             <meta name="author" content="X Y zu W">
             <meta charset="utf-8">
         </head> 
-        <body style="font-size:36px"> 
+        <body> 
             <header>
             <nav>
                <a href="#Ausbildung">Ausbildung</a> <a href="#ehrenamt">Ehrenamt</a>
