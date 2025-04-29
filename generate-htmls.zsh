@@ -35,7 +35,7 @@ function update_html_if_necessary() {
         reStructuredTextToLectureDoc2/rst2ld.py "$1" \
             --output "$html_file" \
             --ld-path $path_prefix"LectureDoc2" \
-            --ld-passwords "$html_file.passwords.txt" \
+            --ld-passwords "$html_file.passwords.json" \
             --link-stylesheet \
             $language_option
             
