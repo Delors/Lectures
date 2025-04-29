@@ -7,6 +7,9 @@ start_python_http_server.sh
 /package-lock.json
 /package.json
 /pnpm-lock.yaml
+node_modules
+.mypy_cache
+__pycache__
 
 # Content we never share publicly
 exercise
@@ -15,11 +18,8 @@ TODO.txt
 Temp*
 
 # Generated/downloaded files and folders
-node_modules
-.mypy_cache
-__pycache__
 *.rst.html
 *.rst.html.pdf
-*.rst.html.passwords.txt
+*.rst.html.passwords.*
 
 
