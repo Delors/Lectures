@@ -1286,7 +1286,7 @@ Das :html:`<iframe>` Element ermöglicht das Einbetten von Webseiten in Webseite
 HTML Erweiterbarkeit
 ------------------------------------------------
 
-.. class:: incremental
+.. class:: incremental-list
 
 - Hinzufügen von Meta-daten (:html:`<meta name="" content="">`)
 - :html:`class` Attribute
@@ -1477,7 +1477,6 @@ Referenzen
             ' style="border: 1px solid black;">iframe is not supported</iframe>
             <script>
             document.querySelectorAll('.embedded-iframe').forEach((iframe) => {
-            console.log('iframe', iframe);
                 new IntersectionObserver((entries) => {
                     entries.forEach((entry) => {
                         if (entry.isIntersecting) {
