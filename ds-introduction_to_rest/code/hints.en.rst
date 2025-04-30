@@ -1,3 +1,7 @@
+.. meta::
+    :version: renaissance
+    :author: Michael Eichberg
+
 Hints
 =======
 
@@ -14,6 +18,7 @@ To get the PID of the Process that uses a specific port (here: port 5000):
    $ ls -e | grep <PID>
 
 
+
 Sending an HTTP POST request using CURL
 ---------------------------------------
 
@@ -21,7 +26,6 @@ Request
 _________
 
 .. code:: bash
-    :class: far-far-smaller
 
     $ curl -X POST -H "Content-Type: application/json" \
       -d '{"user4": {"name": "Jango", "password": "luke", "job": "headhunter", "id": 4}}' \
@@ -30,10 +34,10 @@ _________
 Response
 _________
 
-.. container:: scrollable
+.. scrollable::
 
     .. code:: json
-        :class: far-smaller
+        :number-lines:
 
         {
             "user1": {
