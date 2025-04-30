@@ -808,7 +808,6 @@ NIS 2 - zentrale Einrichtungen
 
 .. image:: images/nis_2.svg
     :align: center
-    :width: 95%
 
 .. legend::
     :class: dd-margin-left-2em s-font-size-80
