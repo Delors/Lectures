@@ -1,0 +1,4 @@
+external/*
+!external/*.md
+
+code/CopyAndPasteAttack.sh
