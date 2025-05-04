@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xl="http://www.w3.org/1999/xlink" version="1.1" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns="http://www.w3.org/2000/svg" viewBox="124 212 454 89" width="454" height="89">
+  <style>
+    @import url('/LectureDoc2/ext/fonts/ld-fonts.css'); 
+  </style>
+  <metadata> Produced by OmniGraffle 8.0\n2025-05-04 06:31:24 +0000</metadata>
+  <g id="structure_of_a_rule" fill="none" stroke="none" stroke-dasharray="none" stroke-opacity="1" fill-opacity="1">
+    <title>structure_of_a_rule</title>
+    <rect fill="white" x="124" y="212" width="454" height="89"/>
+    <g id="structure_of_a_rule_Layer_1">
+      <title>Layer 1</title>
+      <g id="Graphic_5">
+        <rect x="213.5" y="230.5" width="363.5" height="70" fill="white"/>
+        <rect x="213.5" y="230.5" width="363.5" height="70" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_6">
+        <rect x="124.876" y="230.5" width="80.5" height="70" fill="white"/>
+        <rect x="124.876" y="230.5" width="80.5" height="70" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(129.876 254.5)" fill="black">
+          <tspan font-family="Noto Sans Display" font-size="16" font-weight="400" fill="black" x="26.282" y="17" xml:space="preserve">h1</tspan>
+        </text>
+      </g>
+      <g id="Graphic_10">
+        <text transform="translate(229.6105 256.276)" fill="black">
+          <tspan font-family="Noto Sans Display" font-size="16" font-weight="400" fill="black" x="0" y="17" xml:space="preserve">{</tspan>
+        </text>
+      </g>
+      <g id="Graphic_12">
+        <rect x="247.2595" y="251.276" width="144.43" height="28.447998" fill="#eee"/>
+        <rect x="247.2595" y="251.276" width="144.43" height="28.447998" stroke="white" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(252.2595 254.5)" fill="black">
+          <tspan font-family="Noto Sans Display" font-size="16" font-weight="400" fill="black" x="27.846996" y="17" xml:space="preserve">color: blue;</tspan>
+        </text>
+      </g>
+      <g id="Graphic_13">
+        <rect x="398.8105" y="251.276" width="144.43" height="28.447998" fill="#eee"/>
+        <rect x="398.8105" y="251.276" width="144.43" height="28.447998" stroke="white" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(403.8105 254.5)" fill="black">
+          <tspan font-family="Noto Sans Display" font-size="16" font-weight="400" fill="black" x="9.510996" y="17" xml:space="preserve">font-size: larger;</tspan>
+        </text>
+      </g>
+      <g id="Graphic_15">
+        <text transform="translate(555.1615 256.276)" fill="black">
+          <tspan font-family="Noto Sans Display" font-size="16" font-weight="400" fill="black" x="0" y="17" xml:space="preserve">}</tspan>
+        </text>
+      </g>
+      <g id="Graphic_16">
+        <text transform="translate(127.578 215.414)" fill="#666">
+          <tspan font-family="Noto Sans Display" font-size="12" font-weight="400" fill="#666" x="0" y="13" xml:space="preserve">Selector</tspan>
+        </text>
+      </g>
+      <g id="Graphic_17">
+        <text transform="translate(216.448 214.164)" fill="#666">
+          <tspan font-family="Noto Sans Display" font-size="12" font-weight="400" fill="#666" x="4192202e-19" y="13" xml:space="preserve">Declaration Block</tspan>
+        </text>
+      </g>
+      <g id="Graphic_18">
+        <text transform="translate(249.142 234.94)" fill="#666">
+          <tspan font-family="Noto Sans Display" font-size="12" font-weight="400" fill="#666" x="3339551e-19" y="13" xml:space="preserve">Declaration</tspan>
+        </text>
+      </g>
+      <g id="Graphic_19">
+        <text transform="translate(400.6725 234.94)" fill="#666">
+          <tspan font-family="Noto Sans Display" font-size="12" font-weight="400" fill="#666" x="3339551e-19" y="13" xml:space="preserve">Declaration</tspan>
+        </text>
+      </g>
+      <g id="Graphic_20">
+        <text transform="translate(278.9025 281.724)" fill="#666">
+          <tspan font-family="Noto Sans Display" font-size="12" font-weight="400" fill="#666" x="12079227e-20" y="13" xml:space="preserve">Property: Value</tspan>
+        </text>
+      </g>
+      <g id="Graphic_22">
+        <text transform="translate(430.4535 281.724)" fill="#666">
+          <tspan font-family="Noto Sans Display" font-size="12" font-weight="400" fill="#666" x="12079227e-20" y="13" xml:space="preserve">Property: Value</tspan>
+        </text>
+      </g>
+    </g>
+  </g>
+</svg>
