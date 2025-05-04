@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg 
+  viewBox="-200.6504 346.9021 1108.6504 347.5979" width="554.3" height="173.58"
+  xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xl="http://www.w3.org/1999/xlink" xmlns:dc="http://purl.org/dc/elements/1.1/" >
+  <style>
+      @import url('/LectureDoc2/ext/fonts/ld-fonts.css'); 
+  </style>
+  <defs>
+    <marker orient="auto" overflow="visible" markerUnits="strokeWidth" id="UMLInheritance_Marker" stroke-linejoin="miter" stroke-miterlimit="10" viewBox="-6 -4 7 8" markerWidth="7" markerHeight="8" color="#a5a5a5">
+      <g>
+        <path d="M -4.32 0 L 0 2.52 L 0 -2.52 Z" fill="none" stroke="currentColor" stroke-width="1"/>
+      </g>
+    </marker>
+    <marker orient="auto" overflow="visible" markerUnits="strokeWidth" id="FilledArrow_Marker" stroke-linejoin="miter" stroke-miterlimit="10" viewBox="-1 -3 7 6" markerWidth="7" markerHeight="6" color="#666">
+      <g>
+        <path d="M 4.8 0 L 0 -1.8 L 0 1.8 Z" fill="currentColor" stroke="currentColor" stroke-width="1"/>
+      </g>
+    </marker>
+  </defs>
+  <metadata> Produced by OmniGraffle 8.0\n2024-05-16 13:07:38 +0000</metadata>
+  <g id="verarbeitung" stroke="none" fill-opacity="1" stroke-opacity="1" fill="none" stroke-dasharray="none">
+    <title>verarbeitung</title>
+    <rect fill="white" x="-200.6504" y="346.9021" width="1108.6504" height="347.5979"/>
+    <g id="verarbeitung_Layer_1">
+      <title>Layer 1</title>
+      <g id="Graphic_3">
+        <path d="M 108.5498 480.5 L 200.5498 480.5 C 209.38636 480.5 216.5498 487.66344 216.5498 496.5 L 216.5498 546 C 216.5498 554.83656 209.38636 562 200.5498 562 L 108.5498 562 C 99.71325 562 92.5498 554.83656 92.5498 546 L 92.5498 496.5 C 92.5498 487.66344 99.71325 480.5 108.5498 480.5 Z" fill="white"/>
+        <path d="M 108.5498 480.5 L 200.5498 480.5 C 209.38636 480.5 216.5498 487.66344 216.5498 496.5 L 216.5498 546 C 216.5498 554.83656 209.38636 562 200.5498 562 L 108.5498 562 C 99.71325 562 92.5498 554.83656 92.5498 546 L 92.5498 496.5 C 92.5498 487.66344 99.71325 480.5 108.5498 480.5 Z" stroke="#666" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+      <g id="Graphic_7">
+        <path d="M 508.75 449.83964 C 508.75 417.20516 505.5877 413.1676 482.48797 380.87074 L 482.24395 380.5366 C 459.0222 347.9021 458.7807 347.9021 434.9489 347.9021 C 403.21633 347.9021 259.75 347.9021 259.75 347.9021 L 259.75 692.4021 L 508.75 692.4021 L 508.75 449.83964 Z" fill="white"/>
+        <path d="M 508.75 449.83964 C 508.75 417.20516 505.5877 413.1676 482.48797 380.87074 L 482.24395 380.5366 C 459.0222 347.9021 458.7807 347.9021 434.9489 347.9021 C 403.21633 347.9021 259.75 347.9021 259.75 347.9021 L 259.75 692.4021 L 508.75 692.4021 L 508.75 449.83964 Z M 508.75 448.1585 C 508.75 417.20516 508.506 417.20516 458.7807 417.20516 L 458.7807 417.20516 C 458.7807 348.2397 458.7807 347.9021 436.40803 347.9021" stroke="#666" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+      <g id="Graphic_8">
+        <path d="M 582.5 410 L 700.5 410 C 709.33656 410 716.5 417.16344 716.5 426 L 716.5 475.5 C 716.5 484.33656 709.33656 491.5 700.5 491.5 L 582.5 491.5 C 573.66344 491.5 566.5 484.33656 566.5 475.5 L 566.5 426 C 566.5 417.16344 573.66344 410 582.5 410 Z" fill="white"/>
+        <path d="M 582.5 410 L 700.5 410 C 709.33656 410 716.5 417.16344 716.5 426 L 716.5 475.5 C 716.5 484.33656 709.33656 491.5 700.5 491.5 L 582.5 491.5 C 573.66344 491.5 566.5 484.33656 566.5 475.5 L 566.5 426 C 566.5 417.16344 573.66344 410 582.5 410 Z" stroke="#666" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+      <g id="Graphic_9">
+        <path d="M 588 574 L 696.976 574 C 705.81256 574 712.976 581.16344 712.976 590 L 712.976 639.5 C 712.976 648.33656 705.81256 655.5 696.976 655.5 L 588 655.5 C 579.16344 655.5 572 648.33656 572 639.5 L 572 590 C 572 581.16344 579.16344 574 588 574 Z" fill="white"/>
+        <path d="M 588 574 L 696.976 574 C 705.81256 574 712.976 581.16344 712.976 590 L 712.976 639.5 C 712.976 648.33656 705.81256 655.5 696.976 655.5 L 588 655.5 C 579.16344 655.5 572 648.33656 572 639.5 L 572 590 C 572 581.16344 579.16344 574 588 574 Z" stroke="#666" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+      <g id="Group_33">
+        <g id="Group_10">
+          <g id="Graphic_13">
+            <title>Attributes</title>
+            <rect x="318.5" y="427.0953" width="131.5" height="50.19057" stroke="#a5a5a5" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+            <text transform="translate(324.5 433.0953)" fill="#a5a5a5">
+              <tspan font-family="Noto Sans Display" font-size="10" font-weight="400" fill="#a5a5a5" x="0" y="10" xml:space="preserve">Attribute</tspan>
+              <tspan font-family="Noto Sans Display" font-size="10" font-weight="400" fill="#a5a5a5" x="0" y="26" xml:space="preserve">Attribute</tspan>
+            </text>
+          </g>
+          <g id="Graphic_12">
+            <title>Class Name</title>
+            <rect x="318.5" y="402" width="131.5" height="25.095285" stroke="#a5a5a5" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+            <text transform="translate(324.5 408.54764)" fill="#a5a5a5">
+              <tspan font-family="Noto Sans Display" font-size="10" font-weight="700" fill="#a5a5a5" x="31.40039" y="10" xml:space="preserve">Class Name</tspan>
+            </text>
+          </g>
+          <g id="Graphic_11">
+            <title>Operations</title>
+            <rect x="318.5" y="477.28586" width="131.5" height="50.19057" stroke="#a5a5a5" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+            <text transform="translate(324.5 483.28586)" fill="#a5a5a5">
+              <tspan font-family="Noto Sans Display" font-size="10" font-weight="400" fill="#a5a5a5" x="0" y="10" xml:space="preserve">Operation</tspan>
+              <tspan font-family="Noto Sans Display" font-size="10" font-weight="400" fill="#a5a5a5" x="0" y="26" xml:space="preserve">Operation</tspan>
+            </text>
+          </g>
+        </g>
+        <g id="Group_24">
+          <title>Class with Attributes</title>
+          <g id="Graphic_26">
+            <title>Attributes</title>
+            <rect x="318.5" y="588.1136" width="131.5" height="50.19057" stroke="#a5a5a5" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+            <text transform="translate(324.5 594.1136)" fill="#a5a5a5">
+              <tspan font-family="Noto Sans Display" font-size="10" font-weight="400" fill="#a5a5a5" x="0" y="10" xml:space="preserve">Attribute</tspan>
+              <tspan font-family="Noto Sans Display" font-size="10" font-weight="400" fill="#a5a5a5" x="0" y="26" xml:space="preserve">Attribute</tspan>
+            </text>
+          </g>
+          <g id="Graphic_25">
+            <title>Class Name</title>
+            <rect x="318.5" y="563.0183" width="131.5" height="25.095285" stroke="#a5a5a5" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+            <text transform="translate(324.5 569.566)" fill="#a5a5a5">
+              <tspan font-family="Noto Sans Display" font-size="10" font-weight="700" fill="#a5a5a5" x="31.40039" y="10" xml:space="preserve">Class Name</tspan>
+            </text>
+          </g>
+        </g>
+        <g id="Line_32">
+          <line x1="383.93943" y1="539.61604" x2="383.74423" y2="563.0183" marker-start="url(#UMLInheritance_Marker)" stroke="#a5a5a5" stroke-linecap="square" stroke-linejoin="bevel" stroke-width="2"/>
+        </g>
+      </g>
+      <g id="Group_35">
+        <g id="Graphic_34">
+          <text transform="translate(-194.6504 426.5)" fill="#dfe2e3">
+            <tspan font-family="Noto Sans Display" font-size="12" font-weight="400" fill="#dfe2e3" x="0" y="11" xml:space="preserve">&lt;!DOCTYPE html&gt;</tspan>
+            <tspan font-family="Noto Sans Display" font-size="12" font-weight="400" fill="#dfe2e3" x="0" y="25" xml:space="preserve">&lt;html lang=&quot;de&quot;&gt;</tspan>
+            <tspan font-family="Noto Sans Display" font-size="12" font-weight="400" fill="#dfe2e3" x="0" y="39" xml:space="preserve">     &lt;head&gt;&lt;title&gt;Eine Webseite&lt;/title&gt;&lt;/head&gt;</tspan>
+            <tspan font-family="Noto Sans Display" font-size="12" font-weight="400" fill="#dfe2e3" x="0" y="53" xml:space="preserve">     &lt;body&gt;</tspan>
+            <tspan font-family="Noto Sans Display" font-size="12" font-weight="400" fill="#dfe2e3" x="0" y="67" xml:space="preserve">         &lt;h1&gt;Informationen&lt;/h1&gt;</tspan>
+            <tspan font-family="Noto Sans Display" font-size="12" font-weight="400" fill="#dfe2e3" x="0" y="81" xml:space="preserve">         &lt;p&gt;&lt;!-- Ein Kommentar.. --&gt;</tspan>
+            <tspan font-family="Noto Sans Display" font-size="12" font-weight="400" fill="#dfe2e3" x="0" y="95" xml:space="preserve">         Ein einfacher link auf </tspan>
+            <tspan font-family="Noto Sans Display" font-size="12" font-weight="400" fill="#dfe2e3" x="0" y="109" xml:space="preserve">            &lt;a href=&quot;</tspan>
+            <tspan font-family="Noto Sans Display" font-size="12" font-weight="400" fill="#dfe2e3" x="0" y="123" xml:space="preserve">                  http://www.michael-eichberg.de</tspan>
+            <tspan font-family="Noto Sans Display" font-size="12" font-weight="400" fill="#dfe2e3" x="0" y="137" xml:space="preserve">             &quot;&gt;</tspan>
+            <tspan font-family="Noto Sans Display" font-size="12" font-weight="400" fill="#dfe2e3" x="0" y="151" xml:space="preserve">            Michael Eichberg&apos;s Homepage</tspan>
+            <tspan font-family="Noto Sans Display" font-size="12" font-weight="400" fill="#dfe2e3" x="0" y="165" xml:space="preserve">              &lt;/a&gt;.</tspan>
+            <tspan font-family="Noto Sans Display" font-size="12" font-weight="400" fill="#dfe2e3" x="0" y="179" xml:space="preserve">          &lt;/p&gt;</tspan>
+            <tspan font-family="Noto Sans Display" font-size="12" font-weight="400" fill="#dfe2e3" x="0" y="193" xml:space="preserve">      &lt;/body&gt;</tspan>
+            <tspan font-family="Noto Sans Display" font-size="12" font-weight="400" fill="#dfe2e3" x="0" y="207" xml:space="preserve">  &lt;/html&gt;</tspan>
+          </text>
+        </g>
+        <g id="Graphic_6">
+          <path d="M 49.34961 450.93755 C 49.34961 418.30307 46.18731 414.26552 23.08758 381.96865 L 22.84356 381.6345 C -.37818062 349 -.6197106 349 -24.4515 349 C -56.18406 349 -199.6504 349 -199.6504 349 L -199.6504 693.5 L 49.34961 693.5 L 49.34961 450.93755 Z M 49.34961 449.2564 C 49.34961 418.30307 49.10559 418.30307 -.6197106 418.30307 L -.6197106 418.30307 C -.6197106 349.3376 -.6197106 349 -22.99236 349" stroke="#666" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+        </g>
+      </g>
+      <g id="Graphic_36">
+        <text transform="translate(803 549.25)" fill="black">
+          <tspan font-family="Noto Sans Display" font-size="100" font-weight="400" fill="black" x="0" y="100" xml:space="preserve">🗣️</tspan>
+        </text>
+      </g>
+      <g id="Line_40">
+        <line x1="50.34961" y1="521.25" x2="78.6498" y2="521.25" marker-end="url(#FilledArrow_Marker)" stroke="#666" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+      <g id="Line_41">
+        <line x1="217.5498" y1="520.9489" x2="245.85015" y2="520.8136" marker-end="url(#FilledArrow_Marker)" stroke="#666" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+      <g id="Line_43">
+        <line x1="509.75" y1="486.2941" x2="553.0453" y2="474.6137" marker-end="url(#FilledArrow_Marker)" stroke="#666" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+      <g id="Line_44">
+        <line x1="509.75" y1="566.1253" x2="558.9453" y2="584.1466" marker-end="url(#FilledArrow_Marker)" stroke="#666" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+      <g id="Line_45">
+        <line x1="713.976" y1="614.75" x2="785.1" y2="614.75" marker-end="url(#FilledArrow_Marker)" stroke="#666" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+      <g id="Graphic_47">
+        <text transform="translate(108.3418 501.2041)" fill="black">
+          <tspan font-family="Noto Sans Display" font-size="32" font-weight="400" fill="black" x="5400125e-19" y="30" xml:space="preserve">Parser</tspan>
+        </text>
+      </g>
+      <g id="Graphic_50">
+        <text transform="translate(577 431.802)" fill="black">
+          <tspan font-family="Noto Sans Display" font-size="32" font-weight="400" fill="black" x="0" y="30" xml:space="preserve">Renderer</tspan>
+        </text>
+      </g>
+      <g id="Graphic_51">
+        <text transform="translate(577 595.802)" fill="black">
+          <tspan font-family="Noto Sans Display" font-size="32" font-weight="400" fill="black" x="0" y="30" xml:space="preserve">Renderer</tspan>
+        </text>
+      </g>
+      <g id="Graphic_52">
+        <text transform="translate(-117 635)" fill="black">
+          <tspan font-family="Noto Sans Display" font-size="32" font-weight="400" fill="black" x="0" y="30" xml:space="preserve">HTML</tspan>
+        </text>
+      </g>
+      <g id="Graphic_53">
+        <text transform="translate(346.89 642.354)" fill="black">
+          <tspan font-family="Noto Sans Display" font-size="32" font-weight="400" fill="black" x="58264504e-20" y="30" xml:space="preserve">DOM</tspan>
+        </text>
+      </g>
+      <g id="Graphic_54">
+        <text transform="translate(787 385.25)" fill="black">
+          <tspan font-family="Noto Sans Display" font-size="100" font-weight="400" fill="black" x="0" y="100" xml:space="preserve">📰</tspan>
+        </text>
+      </g>
+      <g id="Line_55">
+        <line x1="712.976" y1="450.75" x2="769.1" y2="450.75" marker-end="url(#FilledArrow_Marker)" stroke="#666" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+    </g>
+  </g>
+</svg>
