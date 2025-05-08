@@ -1,8 +1,8 @@
-#!/bin/zsh 
+#!/bin/zsh
 
 # The following script checks every couple of seconds if an rst file was updated.
 # If so, it updates the corresponding html file.
-# It also processes all .publish files in the current directory and copies the 
+# It also processes all .publish files in the current directory and copies the
 # files listed in them to the specified target directory (see below).
 
 target_directory="/Users/Michael/Sites/delors.github.io/" # must end with "/"!
@@ -13,7 +13,7 @@ wd=$(pwd)
 # set +x
 
 function update_html_if_necessary() {
-    html_file="$1.html"   
+    html_file="$1.html"
     language_option=""
     if [[ "$1" == *"."*".rst" ]]
     then
@@ -29,16 +29,17 @@ function update_html_if_necessary() {
         path_prefix=$(echo "$1" | sed -E 's/[ .0-9a-zA-Z_-]+/../g' | grep -Eo "^(\.+/)+")
         if [ $? -ne 0 ]
         then
+            echo "extracting path prefix failed: "$?
             path_prefix=""
         fi
-        echo "$(date '+%Y-%m-%d %H:%M:%S') updating:" $html_file 
+        echo "$(date '+%Y-%m-%d %H:%M:%S') updating:" $html_file
         reStructuredTextToLectureDoc2/rst2ld.py "$1" \
             --output "$html_file" \
             --ld-path $path_prefix"LectureDoc2" \
             --ld-passwords "$html_file.passwords.json" \
             --link-stylesheet \
             $language_option
-            
+
     fi
 }
 
@@ -73,10 +74,10 @@ function process_all_publish_files_in_subfolders() {
             done
         fi
         #set -x
-        rsync -a "$path_to_publish" --files-from="$f" "$target_directory$path_to_publish/" 
+        rsync -a "$path_to_publish" --files-from="$f" "$target_directory$path_to_publish/"
         #set +x
     done
-}   
+}
 
 function process_publish_file_in_root_folder() {
     f=".publish"
@@ -95,11 +96,11 @@ function process_publish_file_in_root_folder() {
     #set -x
     rsync -a "$path_to_publish" --files-from="$f" "$target_directory$path_to_publish/"
     #set +x
-}   
+}
 
 function remove_removed_folders() {
     # We first need to find the folders that are removed in the local directory.
-    # For that, we simply list the folder in the remote directory and the local 
+    # For that, we simply list the folder in the remote directory and the local
     # directory and then compare the two lists by sorting and counting the
     # entries. The entries that are only present in the target directory are
     # the ones which only exist once (the count is 1). These are the folders
@@ -110,9 +111,9 @@ function remove_removed_folders() {
     local_folders=$(find * -type d -not -ipath "*/.git/*")
     shared_folders=$(echo $remote_folders"\n"$local_folders | sort | uniq -c | grep -E "^\s*2 " | sed -E "s/^ *2 //")
     removed_folders=$(echo $remote_folders"\n"$shared_folders | sort | uniq -c | grep -E "^\s*1 " | sed -E "s/^ *1 //" | grep -v "W3M20014")
-    if [[ "$removed_folders" == "" ]]; then 
+    if [[ "$removed_folders" == "" ]]; then
         # If we don't return now, we will delete the target folder itself!
-        return; 
+        return;
     fi
     echo "$removed_folders" | while IFS= read -r removed_folder
     do
