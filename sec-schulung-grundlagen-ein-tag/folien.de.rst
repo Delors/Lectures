@@ -1,11 +1,11 @@
 .. meta::
     :version: renaissance
     :author: Michael Eichberg
-    :keywords: "IT Sicherheit", 
+    :keywords: "IT Sicherheit",
     :description lang=de: Grundlagen IT Security - IT Schulung
     :id: schulung-it-security-grundlagen
     :first-slide: last-viewed
-    :master-password: WirklichSchwierig!    
+    :master-password: WirklichSchwierig!
 
 .. include:: ../docutils.defs
 
@@ -20,7 +20,7 @@ IT Sicherheit - Grundlagen an einem Tag
 
 .. supplemental::
 
-  :Folien: 
+  :Folien:
       |html-source|
 
       |pdf-source|
@@ -81,7 +81,7 @@ Nachrichten aus der Welt der IT-Sicherheit
 
 
     .. card::
-                
+
         .. epigraph::
 
             **Indonesia won’t pay an $8 million ransom after a cyberattack compromised its national data center**
@@ -92,7 +92,7 @@ Nachrichten aus der Welt der IT-Sicherheit
 
     .. card::
 
-        .. epigraph:: 
+        .. epigraph::
 
             **Crypto-Hackers Steal $2.2bn as North Koreans Dominate**
 
@@ -113,14 +113,14 @@ Nachrichten aus der Welt der IT-Sicherheit
             **Hackers shut down heating in Ukrainian city with malware**
 
             For two days in mid-January, some Ukrainians in the city of Lviv had to live without central heating and suffer freezing temperatures because of a cyberattack against a municipal energy company [...]
-            
+
             [...], the cybersecurity company Dragos published a report with details about a new malware dubbed FrostyGoop, which the company says is designed to target industrial control systems [...]
 
             -- Juli 2024 - `Techcrunch <https://techcrunch.com/2024/07/23/hackers-shut-down-heating-in-ukrainian-city-with-malware-researchers-say/?guccounter=1>`__
 
 
     .. card::
-        
+
         .. epigraph::
 
             **US government tells officials, politicians to ditch regular calls and texts**
@@ -130,16 +130,16 @@ Nachrichten aus der Welt der IT-Sicherheit
             The first recommendation: "Use only end-to-end encrypted communications." [...]
 
 
-            --18.12.2024 - `Reuters <https://www.reuters.com/world/us/us-cyber-watchdog-tells-senior-officials-immediately-adopt-end-to-end-encryption-2024-12-18/>`__    
+            --18.12.2024 - `Reuters <https://www.reuters.com/world/us/us-cyber-watchdog-tells-senior-officials-immediately-adopt-end-to-end-encryption-2024-12-18/>`__
 
 
     .. card::
-                
+
         .. epigraph::
 
             **Want to Win a Bike Race? Hack Your Rival’s Wireless Shifters**
 
-            Relatively inexpensive hardware can be used to hack the Shimano Di2 wireless gear-shifting systems used by cyclists [...]. They tested the eavesdrop-and-replay attack with a $1,500 USRP software-defined radio, an antenna, and a laptop but said the setup could be miniaturized. Attackers could spoof signals from up to 30 feet away, causing the target bike to shift gears unexpectedly or lock into the wrong gear. 
+            Relatively inexpensive hardware can be used to hack the Shimano Di2 wireless gear-shifting systems used by cyclists [...]. They tested the eavesdrop-and-replay attack with a $1,500 USRP software-defined radio, an antenna, and a laptop but said the setup could be miniaturized. Attackers could spoof signals from up to 30 feet away, causing the target bike to shift gears unexpectedly or lock into the wrong gear.
 
             --August 2024 - `summary provided by ACM <https://technews.acm.org/archives.cfm?fo=2024-08-aug/aug-16-2024.html>`__; `full article: Wired <https://www.wired.com/story/shimano-wireless-bicycle-shifter-jamming-replay-attacks/>`__
 
@@ -153,7 +153,7 @@ Nachrichten aus der Welt der IT-Sicherheit
 
             .. container:: incremental
 
-                [...] To conduct the Rambo attack, an attacker plants malware on the air-gapped computer to collect sensitive data and prepare it for transmission. It transmits the data by manipulating memory access patterns to generate controlled electromagnetic emissions from the device's RAM. 
+                [...] To conduct the Rambo attack, an attacker plants malware on the air-gapped computer to collect sensitive data and prepare it for transmission. It transmits the data by manipulating memory access patterns to generate controlled electromagnetic emissions from the device's RAM.
 
             .. container:: incremental
 
@@ -167,20 +167,20 @@ Nachrichten aus der Welt der IT-Sicherheit
             .. rubric:: Rambo Attack - weitere Details
 
             .. epigraph::
-            
+
                 The emitted data is encoded into "1" and "0", represented in the radio signals as "on" and "off." The researchers opted for using Manchester code to enhance error detection and ensure signal synchronization, reducing the chances for incorrect interpretations at the receiver's end.
-                
+
                 The attacker may use a relatively inexpensive Software-Defined Radio (SDR) with an antenna to intercept the modulated electromagnetic emissions and convert them back into binary information.
 
 
     .. card::
-                
+
         .. epigraph::
 
             **SnailLoad: Exploiting Remote Network Latency Measurements without JavaScript**
 
             [Side-Channel Attack to circumvent privacy.]
-            
+
             [...] The attack setup for SnailLoad. A victim downloads data from an attacker's HTTP server while it watches a video on a video-sharing platform, e.g., YouTube. Due to the network bottleneck on the victim's side, the attacker can infer the transmitted amount of data by measuring the packet round trip time. The round trip time traces are unique per video and can be used to classify the video watched by the victim. [...]
 
             -- 28.6.2024 Snailload: `Paper <https://www.snailload.com/snailload.pdf>`__, `Web <https://www.snailload.com>`__
@@ -198,7 +198,7 @@ Nachrichten aus der Welt der IT-Sicherheit
             -- 10. Sept. 2024 - `The Hacker News <https://thehackernews.com/2024/09/new-pixhell-attack-exploits-screen.html>`__
 
     .. card::
-                
+
         .. epigraph::
 
             **FAST 4.000 VERHAFTUNGEN: Interpol gelingt großer Schlag gegen Onlinebetrug**
@@ -210,16 +210,16 @@ Nachrichten aus der Welt der IT-Sicherheit
             --29. Juni 2024 - `Golem.de <https://www.golem.de/news/fast-4-000-verhaftungen-interpol-gelingt-grosser-schlag-gegen-onlinebetrug-2406-186568.html>`__
 
     .. card::
-                
+
         .. epigraph::
 
             *CEO VERHAFTET*
 
             Der Hersteller soll insgesamt 240.000 Geräte mit der DDoS-Funktion ausgestattet haben – teils ab Werk, teils erst nachträglich per Firmwareupdate.
 
-            [...] In Südkorea sind fünf Mitarbeiter sowie der CEO eines Unternehmens verhaftet worden. Dieses soll Satellitenreceiver [...] auf Wunsch eines Kunden mit einer DDoS-Funktion ausgestattet haben. [...] lieferte der Hersteller 98.000 Geräte ab Werk mit dieser Funktion aus. [...] 
+            [...] In Südkorea sind fünf Mitarbeiter sowie der CEO eines Unternehmens verhaftet worden. Dieses soll Satellitenreceiver [...] auf Wunsch eines Kunden mit einer DDoS-Funktion ausgestattet haben. [...] lieferte der Hersteller 98.000 Geräte ab Werk mit dieser Funktion aus. [...]
 
-            Dass Geräte ab Werk mit Schadsoftware ausgeliefert werden, ist gerade im unteren Preissegment keine Seltenheit. Sicherheitsforscher deckten erst im vergangenen Jahr eine Malware-Kampagne auf, bei der vor allem billige Android-Geräte wie Smartphones, Tablets und TV-Boxen aus China vor ihrer Auslieferung an Endkunden mit einer Schadsoftware ausgestattet worden waren. 
+            Dass Geräte ab Werk mit Schadsoftware ausgeliefert werden, ist gerade im unteren Preissegment keine Seltenheit. Sicherheitsforscher deckten erst im vergangenen Jahr eine Malware-Kampagne auf, bei der vor allem billige Android-Geräte wie Smartphones, Tablets und TV-Boxen aus China vor ihrer Auslieferung an Endkunden mit einer Schadsoftware ausgestattet worden waren.
 
             -- 3.12.2024 - `Golem.de <https://www.golem.de/news/ceo-verhaftet-satellitenreceiver-jahrelang-mit-ddos-funktion-ausgeliefert-2412-191354.html>`__
 
@@ -227,7 +227,7 @@ Nachrichten aus der Welt der IT-Sicherheit
     .. card::
 
         .. epigraph::
-    
+
             **U.S. charges 14 North Koreans in $88 million identity theft and extortion case**
 
             The Department of Justice accused 14 North Koreans of conspiring to use false identities to get IT jobs with U.S. companies and siphon money back to their home country.
@@ -254,7 +254,7 @@ Nachrichten aus der Welt der IT-Sicherheit
     .. card::
 
         .. epigraph::
-                
+
             .. rubric:: Britische Cybersicherheitsbehörde warnt vor der Gefahr von Quanten-Hackern
 
             **Organisationen, darunter Energie- und Transportunternehmen, sollen ihre Systeme gegen leistungsstarke neue Computer schützen**
@@ -266,10 +266,10 @@ Nachrichten aus der Welt der IT-Sicherheit
     .. card::
 
         .. epigraph::
-                
+
             .. rubric:: Jetzt updaten! Zero-Day-Sicherheitslücke in Chrome wird angegriffen
 
-            **Google hat dem Webbrowser Chrome ein Update spendiert. Es schließt eine Zero-Day-Lücke, die bereits angegriffen wird.**        
+            **Google hat dem Webbrowser Chrome ein Update spendiert. Es schließt eine Zero-Day-Lücke, die bereits angegriffen wird.**
 
             Google hat in der Nacht zum Mittwoch eine Aktualisierung für den Webbrowser Chrome veröffentlicht. Sie stopft ein Zero-Day-Sicherheitsleck, das Angreifer bereits in freier Wildbahn missbrauchen. [...]  :incremental:`"Google hat Kenntnis von Berichten, dass ein Exploit für CVE-2025-2783 im Netz existiert".` :incremental:`[...] Demnach beginnt der Angriff mit einer Phishing-Mail, die vorgeblich zu einem Event des internationalen Wirtschafts- und Politikwissenschaftsforum einlädt und zu einem Programm sowie Anmeldeformular führt.` :incremental:`Beide Links führen im Webbrowser Chrome unter Windows jedoch zu einer Malware-Infektion, ohne weitere Interaktion der Opfer.`
 
@@ -306,7 +306,7 @@ Was ist Cybersecurity?
 
             -- July 4th, 2024 - `Cisco <https://www.cisco.com/c/en/us/products/security/what-is-cybersecurity.html>`__
 
-    .. card:: 
+    .. card::
 
         .. epigraph::
 
@@ -314,19 +314,19 @@ Was ist Cybersecurity?
 
             -- July 4th, 2024 - `Britannica <https://www.britannica.com/technology/computer-security>`__
 
-    .. card:: 
+    .. card::
 
         .. epigraph::
-            
+
             **VERORDNUNG (EU) 2019/881 DES EUROPÄISCHEN PARLAMENTS UND DES RATES vom 17. April 2019 über die ENISA (Agentur der Europäischen Union für Cybersicherheit**
 
-            *Artikel 2 Nummer 1* 
+            *Artikel 2 Nummer 1*
 
             „Cybersicherheit“ bezeichnet alle Tätigkeiten, die notwendig sind, um Netz- und Informationssysteme, die Nutzer solcher Systeme und andere von Cyberbedrohungen betroffene Personen zu schützen [...]
 
             -- `Verordnung (EU) 2019/881 <https://eur-lex.europa.eu/legal-content/DE/TXT/PDF/?uri=CELEX:32019R0881>`__
 
-    .. card:: 
+    .. card::
 
         Das Ziel der IT-Sicherheit ist es Systeme vor:
 
@@ -341,17 +341,17 @@ Was ist Cybersecurity?
 Wichtige Kennzahlen bzgl. Cybersecurity-Vorfällen\ [#]_
 -----------------------------------------------------------------
 
-.. story:: 
+.. story::
 
     .. class:: incremental-list
 
-    :Mean Time to Detection (MTTD): 
+    :Mean Time to Detection (MTTD):
         Die mittlere Zeit, die benötigt wird, um einen Cyberangriff zu entdecken.
 
-    :Mean Time to Identify (MTTI): 
+    :Mean Time to Identify (MTTI):
         Die mittlere Zeit, die benötigt wird, um einen Cyberangriff zu identifizieren in der Hinsicht, dass die Schwachstelle erkannt wird bzw. die Art des Vorfalls erkannt wird und eine erste Idee entwickelt wird, wie gegen den Angriff vorgegangen werden kann.
 
-    :Mean Time to Respond (MTTR): 
+    :Mean Time to Respond (MTTR):
         Die mittlere Zeit, die benötigt wird, um auf einen Cyberangriff so zu reagieren, dass kein weiterer Schaden entsteht und der Weg zur Wiederherstellung der normalen Operationen eingeleitet werden kann.
 
     :Mean Time to Contain (MTTC):
@@ -360,17 +360,17 @@ Wichtige Kennzahlen bzgl. Cybersecurity-Vorfällen\ [#]_
         MTTC = MTTD + MTTI + MTTR
 
     :Mean Time to Normal (MTTN) bzw. Mean Time to Recover/Restore/Resolve (MTTR):
-        Die mittlere Zeit, die benötigt wird, um die normalen Operationen wiederherzustellen. 
-        
+        Die mittlere Zeit, die benötigt wird, um die normalen Operationen wiederherzustellen.
+
         Dies kann zum Beispiel auch die Zeit umfassen, die benötigt wird um etwaige Backups einzuspielen oder ggf. Firmware Patches einzuspielen.
 
-.. [#] Die Begriffe sind nicht einheitlich definiert und ggf. ist es sinnvoll zu klären welcher Zeitraum genau gemeint ist. 
+.. [#] Die Begriffe sind nicht einheitlich definiert und ggf. ist es sinnvoll zu klären welcher Zeitraum genau gemeint ist.
 
 .. supplemental::
 
-    Die MTTD kann häufig nur im Nachgang genau ermittelt werden, sollte aber natürlich nachgefasst werden, um die eigenen Prozesse zu kontrollieren und ggf. zu verbessern. Insbesondere im Zusammenhang mit APTs können vergleichsweise lange Zeiträume bis zur Entdeckung vergehen. Zum Beispiel kann es sein, dass man als erstes feststellt, dass es unerwartete Verbindungen zu einem externen Server gibt. Zu diesem Zeitpunkt ist aber noch unklar wie der Angreifer vorgegangen ist, welche Daten ggf. schon abgeflossen sind und was genau zu tun ist, um den Angreifer zu stoppen. Es ist insbesondere auch noch nicht klar auf welche Systeme er bereits Zugriff hat. 
+    Die MTTD kann häufig nur im Nachgang genau ermittelt werden, sollte aber natürlich nachgefasst werden, um die eigenen Prozesse zu kontrollieren und ggf. zu verbessern. Insbesondere im Zusammenhang mit APTs können vergleichsweise lange Zeiträume bis zur Entdeckung vergehen. Zum Beispiel kann es sein, dass man als erstes feststellt, dass es unerwartete Verbindungen zu einem externen Server gibt. Zu diesem Zeitpunkt ist aber noch unklar wie der Angreifer vorgegangen ist, welche Daten ggf. schon abgeflossen sind und was genau zu tun ist, um den Angreifer zu stoppen. Es ist insbesondere auch noch nicht klar auf welche Systeme er bereits Zugriff hat.
 
-    Die Zeit bis zum Beispiel erkannt wurde, dass ein bestimmter Account ausgenutzt wurde und dieser dann gesperrt wurde, oder zum Beispiel bestimmte Netzwerkverbindungen effektiv blockiert werden und begonnen werden kann mit der Wiederherstellung der Systeme, wird als MTTR bezeichnet. 
+    Die Zeit bis zum Beispiel erkannt wurde, dass ein bestimmter Account ausgenutzt wurde und dieser dann gesperrt wurde, oder zum Beispiel bestimmte Netzwerkverbindungen effektiv blockiert werden und begonnen werden kann mit der Wiederherstellung der Systeme, wird als MTTR bezeichnet.
 
     Die MTTC misst somit nicht wie lange es dauert bis alle Auswirkungen des Angriffs beseitigt sind/die normale Operation wiederhergestellt ist, sondern „nur“ wie lange es dauert die weitere Verbreitung zu stoppen.
 
@@ -398,9 +398,9 @@ Ausgewählte Angriffe, Angriffsmethoden und Bedrohungsszenarien
 - Side-Channel attacks (:ger:`Seitenkanalangriffe`)
 - Spoofing (z. B. IP-Spoofing) (:ger:`Vortäuschen`)
 - Social engineering (z. B. Phishing)
-  
+
 .. class:: incremental-list
-    
+
 - Advanced Persistent Threats (APT)
 - *Store-now, Decrypt-later* (:ger:`Speichere jetzt, Entschlüssele später`)
 
@@ -445,28 +445,28 @@ Schutzziele der IT-Sicherheit: CIA-Triade
             height: 6.75ch;
             z-index: 1;
             bottom: 0;
-            right: 0;            
+            right: 0;
         }
 
         .left,
         .right {
-            width: 10ch;         
+            width: 10ch;
             height: 20ch;
-            z-index: 2;  
+            z-index: 2;
             mix-blend-mode: multiply;
         }
 
         .left {
             background: linear-gradient(116.57deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 50%, var(--dhbw-light-red) 50%, var(--dhbw-light-red) 100%);
         }
-    
+
         .right {
             right: 0;
             background: linear-gradient(243.43deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 50%, var(--dhbw-red) 50%, var(--dhbw-red) 100%);
         }
 
         p {
-            
+
             &.availability {
                 bottom: -20%;
                 left: 50%;
@@ -499,7 +499,7 @@ Schutzziele der IT-Sicherheit: CIA-Triade
 .. supplemental::
 
     Confidentiality ≘ :ger:`Vertraulichkeit`
-    
+
     Integrity ≘ :ger:`Integrität`
 
     Availability ≘ :ger:`Verfügbarkeit`
@@ -554,7 +554,7 @@ Eigenschaften von Social-Engineering Angriffe
 
   (Der Hacker Kevin Mitnick war praktisch immer aufgrund von Social Engineering erfolgreich.)
 - stellen die größte Bedrohung für die Sicherheit von IT-Systemen dar
-- es wird angenommen, dass die betroffenen Personen es in vielen Fällen nicht merken 
+- es wird angenommen, dass die betroffenen Personen es in vielen Fällen nicht merken
 
   :incremental:`(Beispiel: Fake Bewerbungsgespräch)`
 - mittels OSINT kann die Vorbereitung von Social-Engineering Angriffen vereinfacht werden
@@ -566,7 +566,7 @@ Eigenschaften von Social-Engineering Angriffe
 
     Ein vom Angreifer bewusst eingefädeltes Bewerbungsgespräch für eine Position als Administrator könnte zum Beispiel dazu genutzt werden, um Informationen über das Zielsystem zu erhalten, die für einen Angriff nützlich sind (z. B. welche Software wird eingesetzt, wie sieht die Architektur aus, ...). In diesem Fall ist davon auszugehen, dass ein Bewerber zum Beispiel durch ein Headhunter eine gutes Angebot gemacht wird und er dann im Rahmen des Gesprächs gebeten wird eine Sicherheitsarchitektur darzustellen, die er einführen würde. Es ist dann davon auszugehen, dass er auf seine bisherige Erfahrung zurückgreift und diese darstellt und er somit die Architektur des Zielsystems offenlegt.
 
-    .. rubric:: Neue Gefahren 
+    .. rubric:: Neue Gefahren
 
     Durch KI generierte Stimmen kann es Angreifern gelingen, z. B. durch das Vortäuschen einer Notlage einer nahestehenden Person, an Informationen zu gelangen.
 
@@ -584,34 +584,34 @@ Eigenschaften von Social-Engineering Angriffe
 
 
 
-Ausgewählte Social-Engineering Angriffe 
+Ausgewählte Social-Engineering Angriffe
 -------------------------------------------------------------
 
 .. story::
 
     .. class:: incremental-list
 
-    :Phishing and Spear Phishing: 
+    :Phishing and Spear Phishing:
 
-        *Phishing* nutzt elektr. Kommunikationswege um an Informationen zu gelangen (z. B. E-Mail oder SMS). 
-        
+        *Phishing* nutzt elektr. Kommunikationswege um an Informationen zu gelangen (z. B. E-Mail oder SMS).
+
         *Spear phishing* ist Phishing, bei der der Angreifer auf eine bestimmte Zielgruppe oder sogar eine einzelne Person abzielt.
 
 
-    :Smishing: 
-    
+    :Smishing:
+
         Phishing mit Hilfe von SMS.
 
     :Vishing:
 
         Phishing mit Hilfe von Telefonanrufen.
-        
+
         (Z. B. `Anrufe von Europol <https://www.europol.europa.eu/publications-events/publications/vishing-calls>`__)
 
 
-    :Quishing/QR phishing: 
+    :Quishing/QR phishing:
 
-        Phishing mit Hilfe von QR Codes. 
+        Phishing mit Hilfe von QR Codes.
 
     :Whaling:
 
@@ -631,13 +631,13 @@ Ausgewählte Social-Engineering Angriffe
 
     :Shoulder Surfing:
 
-        Beobachten von Personen, die sich an einem Computer anmelden, um das Passwort zu erfahren oder die sensitive Informationen auf dem Schreibtisch liegen haben.   
+        Beobachten von Personen, die sich an einem Computer anmelden, um das Passwort zu erfahren oder die sensitive Informationen auf dem Schreibtisch liegen haben.
 
     :Tailgating:
 
-        Ein Angreifer nutzt die Zugangsberechtigung einer Person, um sich Zugang zu einem Gebäude zu verschaffen ohne dass die Person dies bemerkt oder gar zustimmt. 
-        
-        Dies kann z. B. durch Zugangsschleusen verhindert werden, die immer nur einer Person den Zugang gewähren. 
+        Ein Angreifer nutzt die Zugangsberechtigung einer Person, um sich Zugang zu einem Gebäude zu verschaffen ohne dass die Person dies bemerkt oder gar zustimmt.
+
+        Dies kann z. B. durch Zugangsschleusen verhindert werden, die immer nur einer Person den Zugang gewähren.
 
     :Identity Fraud:
 
@@ -648,17 +648,17 @@ Ausgewählte Social-Engineering Angriffe
         Versenden von Rechnungen, für Dienstleistungen und Produkte die man nicht gekauft hat (z. B. Rechnungen für Postzustellung.)
 
     :Credential Harvesting:
-    
-        Sammlung von Zugangsdaten, die durch Sicherheitslücken in Systemen oder durch Phishing erlangt wurden. 
+
+        Sammlung von Zugangsdaten, die durch Sicherheitslücken in Systemen oder durch Phishing erlangt wurden.
 
     :Hoax:
-        Eine bewusste Falschmeldung, die Menschen dazu veranlasst etwas falsches zu glauben. 
+        Eine bewusste Falschmeldung, die Menschen dazu veranlasst etwas falsches zu glauben.
 
-    :Impersonation oder Pretexting: 
+    :Impersonation oder Pretexting:
         Vorgabe einer falschen Identität (z. B. als Mitarbeiter des IT-Supports); d. h. der Angreifer gibt sich persönlich als jemand anderes aus, um an Informationen zu gelangen und nutzt dafür keine elektronischen Hilfsmittel.
 
     :Eavesdropping:
-        Abhören von Gesprächen, um an relevante Informationen zu gelangen.   
+        Abhören von Gesprächen, um an relevante Informationen zu gelangen.
 
     :Eliciting Information:
         Der Angreifer versucht durch geschicktes Fragen an Informationen zu gelangen, die für einen Angriff nützlich sein könnten.
@@ -675,7 +675,7 @@ Ausgewählte Social-Engineering Angriffe
 
 .. supplemental::
 
-    .. rubric:: Quishing/QR phishing: 
+    .. rubric:: Quishing/QR phishing:
 
     D. h. der Angreifer erstellt einen QR Code, der auf eine gefälschte Webseite führt. Der QR Code wird dann z. B. auf einem Plakat angebracht oder zum Beispiel an einer Säule zum Kaufen von Fahrkarten, um möglichst viele Personen glaubhaft zu erreichen.
 
@@ -689,7 +689,7 @@ Ausgewählte Social-Engineering Angriffe
 
     .. rubric:: Typische Phishing E-Mail
 
-    .. image:: images/phishing-mail-fake-fedex.png 
+    .. image:: images/phishing-mail-fake-fedex.png
         :align: center
         :width: 80%
 
@@ -705,14 +705,14 @@ Ausgewählte Social-Engineering Angriffe
 - Dringlichkeit (*„In 10 Minuten verschlüssele ich den Rechner.“*)
 - Konsens (*„Alle machen das so.“*)
 - Knappheit (*„Es sind nur noch drei Rechner nicht infiziert.“*)
-- Vertrautheit 
+- Vertrautheit
 - Vertrauen
 
 
 
 .. class:: new-section transition-fade
 
-Cybersicherheit stärken 
+Cybersicherheit stärken
 -------------------------------------------------------------
 
 
@@ -728,7 +728,7 @@ Bug-Bounty-Programme
 
     Microsoft on Tuesday unveiled Zero Day Quest, a bug bounty event offering up to $4 million in rewards to security researchers.
 
-    "At the end of the day, we recognize that when it comes to security, it's fundamentally a team sport," Microsoft CEO Satya Nadella said during his Tuesday keynote. "And that's why we want to partner, and we're partnering broadly with the security community." 
+    "At the end of the day, we recognize that when it comes to security, it's fundamentally a team sport," Microsoft CEO Satya Nadella said during his Tuesday keynote. "And that's why we want to partner, and we're partnering broadly with the security community."
 
     [...] Zero Day Quest is the "largest of its kind" and will offer a potential $4 million in awards for research into cloud and AI, which he described as "high-impact areas."
 
@@ -799,7 +799,7 @@ NIS 2 Richtlinie (:eng:`NIS 2 Directive`)
 
     Die neue NIS-2-Richtlinie zielt darauf ab, die Widerstandsfähigkeit und Reaktionsfähigkeit des öffentlichen und privaten Sektors zu verbessern. Der Schwerpunkt der Richtlinie liegt auf der Bekämpfung der Cyberkriminalität.
 
--  Die NIS-2-Richtlinie gilt für Organisationen, inkl. Unternehmen und Zulieferer, die durch Erbringung wesentlicher oder wichtiger Dienstleistungen eine entscheidende Rolle für die Aufrechterhaltung der europäischen Wirtschaft und Gesellschaft spielen. 
+-  Die NIS-2-Richtlinie gilt für Organisationen, inkl. Unternehmen und Zulieferer, die durch Erbringung wesentlicher oder wichtiger Dienstleistungen eine entscheidende Rolle für die Aufrechterhaltung der europäischen Wirtschaft und Gesellschaft spielen.
 
 - Die Führungskräfte von betroffenen Einrichtungen sind für die Überwachung der Umsetzung der NIS-2-Richtlinie verantwortlich und können für Verstöße gegen die NIS-2-Richtlinie haftbar gemacht werden (Artikel 20).
 
@@ -812,7 +812,7 @@ NIS 2 Richtlinie (:eng:`NIS 2 Directive`)
         (1)   Die Mitgliedstaaten stellen sicher, dass die Leitungsorgane wesentlicher und wichtiger Einrichtungen die von diesen Einrichtungen zur Einhaltung von Artikel 21 ergriffenen Risikomanagementmaßnahmen im Bereich der Cybersicherheit billigen, ihre Umsetzung überwachen und für Verstöße gegen diesen Artikel durch die betreffenden Einrichtungen verantwortlich gemacht werden können. [...]
 
         (2)   Die Mitgliedstaaten stellen sicher, dass die Mitglieder der Leitungsorgane wesentlicher und wichtiger Einrichtungen an Schulungen teilnehmen müssen, und fordern wesentliche und wichtige Einrichtungen auf, allen Mitarbeitern regelmäßig entsprechende Schulungen anzubieten, um ausreichende Kenntnisse und Fähigkeiten zur Erkennung und Bewertung von Risiken sowie Managementpraktiken im Bereich der Cybersicherheit und deren Auswirkungen auf die von der Einrichtung erbrachten Dienste zu erwerben.
-   
+
         -- NIS 2 - KAPITEL IV `RISIKOMANAGEMENTMAẞNAHMEN UND BERICHTSPFLICHTEN IM BEREICH DER CYBERSICHERHEIT <https://eur-lex.europa.eu/legal-content/DE/TXT/HTML/?uri=CELEX:32022L2555#d1e3310-80-1>`__
 
 
@@ -838,8 +838,8 @@ Von NIS2 betroffene öff. und priv. Einrichtungen\ [#]_
 
 
 .. class:: columns incremental-list
-    
-- \ 
+
+- \
     - Post- und Kurierdienste
     - Abfallwirtschaft
     - Chemie
@@ -850,7 +850,7 @@ Von NIS2 betroffene öff. und priv. Einrichtungen\ [#]_
     - Kraftfahrzeuge
     - Energie
 
-- \ 
+- \
     - Verkehrswesen
     - Bankwesen
     - Finanzmarkt-Infrastrukturen
@@ -862,9 +862,9 @@ Von NIS2 betroffene öff. und priv. Einrichtungen\ [#]_
     - Cloud Computing-Dienste
 
 .. supplemental::
-    
+
     Bis zum 17. April 2025 erstellen die Mitgliedstaaten eine Liste von wesentlichen und wichtigen Einrichtungen und von Einrichtungen, die Domänennamen-Registrierungsdienste erbringen und aktualisieren sie gegebenenfalls regelmäßig — spätestens alle 2 Jahre.
-  
+
 .. [#] `Details siehe Anhang I und II der NIS 2 Richtlinie <https://eur-lex.europa.eu/legal-content/DE/TXT/HTML/?uri=CELEX:32022L2555#d1e32-143-1>`__
 
 
@@ -892,7 +892,7 @@ NIS 2 - zentrale Einrichtungen
 
     :CSIRT: Computer Security Incident Response Team
     :Behörden für das Krisenmanagement: Sollte es mehr als eine geben, so wird eine explizit benannt, die für die Koordination und das  Management von *Cybersicherheitsvorfällen großen Ausmaßes und Krisen* zuständig ist
- 
+
 
 .. supplemental::
 
@@ -929,7 +929,7 @@ Definition von Schwachstellen nach CVE
 Das Common Vulnerability Scoring System (CVSS)\ [#]_
 ----------------------------------------------------
 
-.. container:: foundations 
+.. container:: foundations
 
     CVSS 4.0 stellt einen Rahmen bereit für die Beschreibung und Bewertung des Schweregrads von Software-/Hardware-/Firmwareschwachstellen.
 
@@ -939,7 +939,7 @@ Das Common Vulnerability Scoring System (CVSS)\ [#]_
 
 .. [#] `CVSS 4.0 <https://www.first.org/cvss/v4.0/specification-document>`__
 
-.. supplemental:: 
+.. supplemental::
 
     Harmlos ist im Prinzip damit gleichzusetzen, dass die Schwachstelle nicht ausgenutzt werden kann oder dass die Auswirkungen nicht weiter relevant sind.
 
@@ -953,10 +953,10 @@ CVSS umfasst vier Gruppen von Metriken
 1) Basis-Metriken (:eng:`Base Metrics`) erfassen die inhärenten Eigenschaften einer Schwachstelle, die sich nicht ändern, wenn sich die Umgebung ändert.
 2) Bedrohungs-Metriken (:eng:`Threat Metric Group`) spiegelt die Merkmale einer Schwachstelle wieder, die sich im Laufe der Zeit verändern.
 3) .. container:: peripheral fade-out
-    
+
         Umgebungs-Metriken (:eng:`Environmental Metric Group`) erfassen die Eigenschaften einer Schwachstelle, die sich ändern, wenn sich die Umgebung ändert.
 4) .. container:: peripheral fade-out
-    
+
         Ergänzende-Metriken (:eng:`Supplemental`) liefern zusätzliche Informationen, die für die Bewertung einer Schwachstelle nützlich sein können, aber den Schweregrad nicht direkt beeinflussen.
 
 
@@ -964,7 +964,7 @@ CVSS umfasst vier Gruppen von Metriken
 CVSS - Basis-Metriken (:eng:`Base Metric Group`)
 ------------------------------------------------------------
 
-.. grid:: 
+.. grid::
 
     .. cell::
 
@@ -991,13 +991,13 @@ CVSS - Basis-Metriken (:eng:`Base Metric Group`)
             - Vertraulichkeit  (:eng:`Confidentiality Impact`)
             - Integrität (:eng:`Integrity Impact`)
             - Verfügbarkeit (:eng:`Availability Impact`)
-        
-        .. container:: incremental 
+
+        .. container:: incremental
 
             *bzgl. nachgelagerter Systeme* (:eng:`Subsequent System`)
 
             .. class:: incremental-list impressive
-                
+
             - Vertraulichkeit (:eng:`Confidentiality Impact`)
             - Integrität (:eng:`Integrity Impact`)
             - Verfügbarkeit (:eng:`Availability Impact`)
@@ -1007,12 +1007,12 @@ CVSS - Basis-Metriken (:eng:`Base Metric Group`)
 CVSS - Bedrohungs-Metriken (:eng:`Threat Metric Group`)\ [#]_
 --------------------------------------------------------------
 
-.. container::  
-    
+.. container::
+
     .. class:: impressive
 
     - Reifegrad des Exploits (:eng:`Exploit Maturity`)
-        
+
 .. [#] Die Namen und der Gruppenzuschnitt (hier: :eng:`Temporal Metric Group`) waren unter `CVSS 3.0 <https://www.first.org/cvss/v3-0/specification-document>`__ anders.
 
 
@@ -1070,7 +1070,7 @@ CVSS - Bewertung der Ausnutzbarkeit (:eng:`Exploitability Metrics`)
     Welche Privilegien muss der Angreifer mindestens haben, um die Schwachstelle auszunutzen (Sind Adminstratorrechte erforderlich oder reichen normale Benutzerrechte).
 
     **User Interaction**
-    
+
     Passiv bedeutet hier, dass der Nutzer unfreiwillig die Schwachstelle ausnutzt ohne bewusst Schutzmechanismen zu unterlaufen. Aktiv bedeutet, dass der Nutzer aktiv Interaktionen unternimmt, um die Schutzmechanismen des Systems auszuhebeln (z. B. durch das Installieren einer nicht-signierten Anwendung aus dem Internet).
 
 
@@ -1101,22 +1101,22 @@ Diskussion: Schwachstellen und Ihre Bewertung
 
 .. exercise::
 
-    Ihnen liegt eine externe Festplatte vor, die Hardwareverschlüsselung unterstützt. D. h. wenn diese Festplatte an einen Computer angeschlossen wird, dann muss ein Passwort eingegeben werden, bevor auf die Daten zugegriffen werden kann. Dieses entsperren der Festplatte geschieht mit Hilfe eines speziellen Programms, dass ggf. vorher installiert werden muss. Die Festplatte ist mit AES-256-XTX verschlüsselt. 
-    
-    Das Clientprogramm *hasht* erst das Passwort clientseitig, bevor es den *Hash* an den Controller der Festplatte überträgt. Die Firmware des Controllers validiert das Passwort in dem es den gesendeten Hash direkt mit dem bei der Einrichtung übermittelten Hash vergleicht; d. h. es finden keine weiteren sicherheitsrelevanten Operationen außer dem direkten Vergleich statt. Zum Entsperren der Festplatte ist es demzufolge ausreichend, den Hash aus der Hardware auszulesen und diesen an den Controller zu senden, um die Festplatte zu entsperren. Danach kann auf die Daten frei zugegriffen werden. 
+    Ihnen liegt eine externe Festplatte vor, die Hardwareverschlüsselung unterstützt. D. h. wenn diese Festplatte an einen Computer angeschlossen wird, dann muss ein Passwort eingegeben werden, bevor auf die Daten zugegriffen werden kann. Dieses entsperren der Festplatte geschieht mit Hilfe eines speziellen Programms, dass ggf. vorher installiert werden muss. Die Festplatte ist mit AES-256-XTX verschlüsselt.
 
-    .. question:: 
-    
+    Das Clientprogramm *hasht* erst das Passwort clientseitig, bevor es den *Hash* an den Controller der Festplatte überträgt. Die Firmware des Controllers validiert das Passwort in dem es den gesendeten Hash direkt mit dem bei der Einrichtung übermittelten Hash vergleicht; d. h. es finden keine weiteren sicherheitsrelevanten Operationen außer dem direkten Vergleich statt. Zum Entsperren der Festplatte ist es demzufolge ausreichend, den Hash aus der Hardware auszulesen und diesen an den Controller zu senden, um die Festplatte zu entsperren. Danach kann auf die Daten frei zugegriffen werden.
+
+    .. question::
+
         Wie sieht der `CVSS 4.0 Score <https://www.first.org/cvss/v4-0/>`__ für diese Schwachstelle aus? (`CVSS Rechner <https://www.first.org/cvss/calculator/4.0>`__)
-    
+
     .. solution::
         :pwd: IT Forensik
 
-        .. rubric:: Lösungsvorschlag 
-        
+        .. rubric:: Lösungsvorschlag
+
         CVSS:4.0/AV:P/AC:H/AT:N/PR:N/UI:N/VC:H/VI:H/VA:N/SC:N/SI:N/SA:N
         CVSS v4.0 Score: 5.3 / Medium
-    
+
 
 
 .. class:: new-section transition-fade
@@ -1130,7 +1130,7 @@ Zweck von CVEs
 
 .. class:: incremental-list
 
-- Schwachstellen eindeutig identifizieren und bestimmten Versionen eines Codes (z. B. Software und gemeinsam genutzte Bibliotheken) mit diesen Schwachstellen verknüpfen. 
+- Schwachstellen eindeutig identifizieren und bestimmten Versionen eines Codes (z. B. Software und gemeinsam genutzte Bibliotheken) mit diesen Schwachstellen verknüpfen.
 - Kommunikationsgrundlage bilden, damit mehrere Parteien über eine eindeutig identifizierte Sicherheitslücke diskutieren können. `National Vulnerabilities Database - NIST <https://nvd.nist.gov>`__
 
 
@@ -1155,7 +1155,7 @@ Zweck von CVEs
                 <div class="col-lg-3">
                     <p id="severity-score-0">
                         <span id="cvss3-link-0"> <em>V3.1:</em> <a href="/vuln-metrics/cvss/v3-calculator?name=CVE-2024-20672&amp;vector=AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H&amp;version=3.1&amp;source=Microsoft%20Corporation" class="label label-danger" data-testid="vuln-cvss3-link-0" aria-label="V3 score for CVE-2024-20672">7.5 HIGH</a><br>
-                        </span> 
+                        </span>
                     </p>
                 </div>
             </li>
@@ -1169,7 +1169,7 @@ Zweck von CVEs
                 <div class="col-lg-3">
                     <p id="severity-score-1">
                         <span id="cvss3-link-1"> <em>V3.1:</em> <a href="/vuln-metrics/cvss/v3-calculator?name=CVE-2024-20666&amp;vector=AV:P/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H&amp;version=3.1&amp;source=Microsoft%20Corporation" class="label label-warning" data-testid="vuln-cvss3-link-1" aria-label="V3 score for CVE-2024-20666">6.6 MEDIUM</a><br>
-                        </span> 
+                        </span>
                     </p>
                 </div>
             </li>
@@ -1183,7 +1183,7 @@ Zweck von CVEs
                 <div class="col-lg-3">
                     <p id="severity-score-2">
                         <span id="cvss3-link-2"> <em>V3.1:</em> <a href="/vuln-metrics/cvss/v3-calculator?name=CVE-2024-20680&amp;vector=AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N&amp;version=3.1&amp;source=Microsoft%20Corporation" class="label label-warning" data-testid="vuln-cvss3-link-2" aria-label="V3 score for CVE-2024-20680">6.5 MEDIUM</a><br>
-                        </span> 
+                        </span>
                     </p>
                 </div>
             </li>
@@ -1197,7 +1197,7 @@ Zweck von CVEs
                 <div class="col-lg-3">
                     <p id="severity-score-3">
                         <span id="cvss3-link-3"> <em>V3.1:</em> <a href="/vuln-metrics/cvss/v3-calculator?name=CVE-2024-20676&amp;vector=AV:N/AC:H/PR:H/UI:N/S:C/C:H/I:H/A:H&amp;version=3.1&amp;source=Microsoft%20Corporation" class="label label-danger" data-testid="vuln-cvss3-link-3" aria-label="V3 score for CVE-2024-20676">8.0 HIGH</a><br>
-                        </span> 
+                        </span>
                     </p>
                 </div>
             </li>
@@ -1210,7 +1210,7 @@ Zweck von CVEs
                 </div>
                 <div class="col-lg-3">
                     <p id="severity-score-4">
-                            
+
                     </p>
                 </div>
             </li>
@@ -1224,7 +1224,7 @@ Zweck von CVEs
                 <div class="col-lg-3">
                     <p id="severity-score-5">
                         <span id="cvss3-link-5"> <em>V3.1:</em> <a href="/vuln-metrics/cvss/v3-calculator?name=CVE-2024-20682&amp;vector=AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H&amp;version=3.1&amp;source=Microsoft%20Corporation" class="label label-danger" data-testid="vuln-cvss3-link-5" aria-label="V3 score for CVE-2024-20682">7.8 HIGH</a><br>
-                        </span> 
+                        </span>
                     </p>
                 </div>
             </li>
@@ -1238,7 +1238,7 @@ Zweck von CVEs
                 <div class="col-lg-3">
                     <p id="severity-score-6">
                         <span id="cvss3-link-6"> <em>V3.1:</em> <a href="/vuln-metrics/cvss/v3-calculator?name=CVE-2024-20683&amp;vector=AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H&amp;version=3.1&amp;source=Microsoft%20Corporation" class="label label-danger" data-testid="vuln-cvss3-link-6" aria-label="V3 score for CVE-2024-20683">7.8 HIGH</a><br>
-                        </span> 
+                        </span>
                     </p>
                 </div>
             </li>
@@ -1252,7 +1252,7 @@ Zweck von CVEs
                 <div class="col-lg-3">
                     <p id="severity-score-7">
                         <span id="cvss3-link-7"> <em>V3.1:</em> <a href="/vuln-metrics/cvss/v3-calculator?name=CVE-2024-20681&amp;vector=AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H&amp;version=3.1&amp;source=Microsoft%20Corporation" class="label label-danger" data-testid="vuln-cvss3-link-7" aria-label="V3 score for CVE-2024-20681">7.8 HIGH</a><br>
-                        </span> 
+                        </span>
                     </p>
                 </div>
             </li>
@@ -1262,13 +1262,13 @@ Zweck von CVEs
 
 
 
-National Vulnerability Database (`NVD <https://nvd.nist.gov/>`__)\ [#]_  
+National Vulnerability Database (`NVD <https://nvd.nist.gov/>`__)\ [#]_
 -------------------------------------------------------------------------
 
 .. class:: incremental-list
 
 - Auflistung aller CVEs und deren Bewertung
-- Alle Schwachstellen in der NVD sind mit einer CVE-Kennung versehen 
+- Alle Schwachstellen in der NVD sind mit einer CVE-Kennung versehen
 - Die NVD ist ein Produkt der NIST Computer Security Division, Information Technology Laboratory
 - Verlinkt häufig weiterführend Seiten, die Lösungshinweise und Tools bereitstellen, um die Schwachstelle zu beheben
 - Verweist auf entsprechende Schwachstellen gemäß `CWEs <https://cwe.mitre.org/>`__
@@ -1282,10 +1282,10 @@ Common Weakness Enumeration (`CWE <https://cwe.mitre.org/>`__)
 ----------------------------------------------------------------
 
 - eine kollaborativ entwickelte, vollständig durchsuchbare, kategorisierte Liste von Typen von Software- und Hardware-Schwachstellen und deren Beschreibung, dient als:
-  
+
   .. class:: incremental-list
 
-  - gemeinsame Sprache, 
+  - gemeinsame Sprache,
   - Messlatte für Sicherheitstools,
   - als Grundlage für die Identifizierung von Schwachstellen sowie für Maßnahmen zur Abschwächung und Prävention.
 
@@ -1296,12 +1296,12 @@ CWE - Schwachstellenkatalog `TOP 25 in 2023 <https://cwe.mitre.org/top25/archive
 --------------------------------------------------------------------------------------------------------------------------------------
 
 .. story::
-        
+
     .. csv-table::
         :class: highlight-line-on-hover incremental-table-rows
         :header: Rank , ID , Name, Rank Change vs. 2022
         :widths: 7, 12, 63, 18
-        
+
         1 , CWE-787 , Out-of-bounds Write  , 0
         2 , CWE-79 , Improper Neutralization of Input During Web Page Generation ("*Cross-site Scripting*") , 0
         3 , CWE-89 , Improper Neutralization of Special Elements used in an SQL Command ("*SQL Injection*"") , 0
@@ -1342,21 +1342,21 @@ CWE - Schwachstellenkatalog `TOP 25 in 2023 <https://cwe.mitre.org/top25/archive
 
         -- 23.10.2024 `Golem.de <https://www.golem.de/news/android-und-ios-fest-codierte-cloud-zugangsdaten-in-populaeren-apps-entdeckt-2410-190106.html>`__
 
-    
+
 
 
 
 CVE-2023-51034 - *Arbitrary Code Execution*
 ----------------------------------------------------------------------
 
-.. epigraph:: 
+.. epigraph::
 
    TOTOlink EX1200L V9.3.5u.6146_B20201023 is vulnerable to arbitrary command execution via the cstecgi.cgi UploadFirmwareFile interface.
 
    -- Published: December 22, 2023; Last modified: January 2, 2024
 
-.. container:: 
-    
+.. container::
+
     :Bewertung: CVSS V3.1: 9.8 Critical
     :PoC Exploit: `815yang.github.io <https://815yang.github.io/2023/12/12/ex1200l/totolink_ex1200L_UploadFirmwareFile/>`__
     :Weakness Enumeration: CWE-434 Unrestricted Upload of File with Dangerous Type
@@ -1376,18 +1376,18 @@ CWE-434 Unrestricted Upload of File with Dangerous Type\ [#]_
 .. class:: incremental-list
 
 - **Beschreibung**
- 
+
   Das Produkt ermöglicht es dem Angreifer, Dateien gefährlicher Typen hochzuladen oder zu übertragen, die in der Produktumgebung automatisch verarbeitet werden können.
 
 - **Art der Einführung**
 
-  Diese Schwäche wird durch das Fehlen einer Sicherheitstaktik während der Architektur- und Entwurfsphase verursacht. 
+  Diese Schwäche wird durch das Fehlen einer Sicherheitstaktik während der Architektur- und Entwurfsphase verursacht.
 
 - **Scope**
 
   Willkürliche Codeausführung ist möglich, wenn eine hochgeladene Datei vom Empfänger als Code interpretiert und ausgeführt wird. [...] Somit ist ggf. die Integrität, Vertraulichkeit und Verfügbarkeit betroffen.
 
-.. [#] `Mitre.org <https://cwe.mitre.org/data/definitions/434.html>`__ (2023; übersetzt mit DeepL) 
+.. [#] `Mitre.org <https://cwe.mitre.org/data/definitions/434.html>`__ (2023; übersetzt mit DeepL)
 
 
 
@@ -1404,7 +1404,7 @@ CVE-2023-51034 - PoC (gekürzt)
             :number-lines:
 
             POST /cgi-bin/cstecgi.cgi HTTP/1.1
-            [...]    
+            [...]
             {
                 "FileName":
                     ";ls../>/www/yf.txt;",
@@ -1412,7 +1412,7 @@ CVE-2023-51034 - PoC (gekürzt)
                     "UploadFirmwareFile"
             }
 
-    .. cell:: 
+    .. cell::
 
         .. rubric:: Abfrage der Datei (hier: :code:`yf.txt`)
 
@@ -1443,7 +1443,7 @@ CVE-2023-51034 - zugrundeliegende Schwachstelle
     v9 = v8;
     if ( v8 )
     {
-        fprintf(v8, "[%s:%d] FileName=%s,FullName=%s,ContentLength=%s\n", 
+        fprintf(v8, "[%s:%d] FileName=%s,FullName=%s,ContentLength=%s\n",
                     "UploadFirmwareFile", 751, Var, v3, v4);
         fclose(v9);
     }
@@ -1451,7 +1451,7 @@ CVE-2023-51034 - zugrundeliegende Schwachstelle
     strcpy(v52, "/tmp/myImage.img");
     doSystem("mv %s %s", Var, v52);
 
-.. supplemental:: 
+.. supplemental::
 
     Die Lücke ist auf die folgenden Zeilen zurückzuführen:
 
@@ -1469,8 +1469,8 @@ CVE-2023-51034 - zugrundeliegende Schwachstelle
 Ausgenutzte Schwachstellen
 ---------------------------
 
-Der `Known Exploited Vulnerabilities (KEV) Katalog der CISA <https://www.cisa.gov/known-exploited-vulnerabilities-catalog>`__ umfasst Produkte deren Schwachstellen ausgenutzt wurden oder aktiv ausgenutzt werden.  
- 
+Der `Known Exploited Vulnerabilities (KEV) Katalog der CISA <https://www.cisa.gov/known-exploited-vulnerabilities-catalog>`__ umfasst Produkte deren Schwachstellen ausgenutzt wurden oder aktiv ausgenutzt werden.
+
 .. class:: incremental-list list-with-sublists
 
 - Kriterien für die Aufnahme in den KEV Katalog:
@@ -1478,13 +1478,13 @@ Der `Known Exploited Vulnerabilities (KEV) Katalog der CISA <https://www.cisa.go
   1. Eine CVE-Id liegt vor.
   2. Die Schwachstelle wird aktiv ausgenutzt (:eng:`Active Exploitation`) (ggf. reicht es jedoch wenn „nur“ ein *Honeypot* aktiv angegriffen wurde) - ein PoC reicht nicht aus.
   3. Eine Handlungsempfehlung liegt vor (z. B. Patch, Workaround oder vollständige Abschaltung).
-- Firmen sollten die KEV *Schwachstellen priorisieren*, um die Wahrscheinlichkeit eines erfolgreichen Angriffs zu verringern. 
+- Firmen sollten die KEV *Schwachstellen priorisieren*, um die Wahrscheinlichkeit eines erfolgreichen Angriffs zu verringern.
 
 
 .. supplemental::
 
     CISA = *Cybersecurity and Infrastructure Security Agency* (oder *America's Cyber Defense Agency*)
-    
+
     Ausgewählte Amerikanische Behörden sind sogar verpflichtet innerhalb vorgegebener Zeiträume zu reagieren.
 
 
@@ -1520,7 +1520,7 @@ Schwachstellen, die auf Fehler beim Speicherzugriff zurückzuführen sind, sind 
 
     [...] Memory access vulnerabilities often occur in programming languages that are not memory safe. In 2019, memory safety issues accounted for 76% of all Android vulnerabilities.
 
-    [...] the transition to memory safe languages through the gradual use of memory safe code in new projects and developments over a five year period. The results showed that despite a gradual rise in code [still] being written in memory unsafe languages, memory safety vulnerabilities dropped significantly. 
+    [...] the transition to memory safe languages through the gradual use of memory safe code in new projects and developments over a five year period. The results showed that despite a gradual rise in code [still] being written in memory unsafe languages, memory safety vulnerabilities dropped significantly.
 
     [...] there has been a significant drop in the number of memory-related vulnerabilities, with memory safe vulnerabilities down to 24% in 2024 [...]
 
@@ -1537,11 +1537,11 @@ Offenlegung von Sicherheitslücken nach `CISA <https://www.cisa.gov/coordinated-
 .. class:: incremental-list
 
 1. Sammlung von Schwachstellenmeldungen:
-   
+
    - Eigene Schwachstellenanalysen
    - Überwachung öffentlicher Quellen
    - Direkte Meldungen von Herstellern, Forschern und Nutzern
-  
+
 2. Analyse der Schwachstellenmeldungen zusammen mit den Herstellern, um die Sicherheitsauswirkungen zu verstehen.
 3. Entwicklung von Strategien zur Eindämmung der Schwachstellen; insbesondere Entwicklung von notwendigen Patches.
 4. Anwendung der Strategien zur Eindämmung der Schwachstellen in Zusammenarbeit mit dem Hersteller und ggf. betroffenen Nutzern.
@@ -1560,7 +1560,7 @@ Zeitlicher Rahmen für die Offenlegung von Sicherheitslücken
 
 Der Zeitrahmen für die Offenlegung von Sicherheitslücken wird durch folgende Faktoren bestimmt:
 
-.. class:: incremental-list 
+.. class:: incremental-list
 
 - Aktive Ausnutzung der Schwachstelle
 - besonders kritische Schwachstellen
@@ -1578,12 +1578,12 @@ Welche neuen Schwachstellen werden in absehbarer Zeit ausgenutzt?
 
 .. observation::
 
-    Am 1. Oktober 2023 hat die NVD 139.473 CVEs veröffentlicht. In den folgenden 30 Tagen wurden 3.852 CVEs beobachtet, die ausgenutzt (:eng:`exploited`) wurden. 
+    Am 1. Oktober 2023 hat die NVD 139.473 CVEs veröffentlicht. In den folgenden 30 Tagen wurden 3.852 CVEs beobachtet, die ausgenutzt (:eng:`exploited`) wurden.
 
     Ca. 5-6% aller Schwachstellen werden „irgendwann“ ausgenutzt. [#]_
-    
-.. question:: 
-    :class: incremental 
+
+.. question::
+    :class: incremental
 
     Wie stelle ich sicher, dass ich meine Bemühungen zum Beseitigen der Schwachstellen auf diejenigen konzentriere, die am wahrscheinlichsten zeitnahe ausgenutzt werden?
 
@@ -1599,10 +1599,10 @@ Annahme: Schwachstellen mit einem CVSS Score :math:`\geq` 7 (d. h. mit einer B
 .. class:: incremental-list
 
 - 80.024 Schwachstellen haben einen CVSS Score :math:`\geq` 7
-  
+
   **Ausgenutzt wurden: 3.166**
 - 59.449 Schwachstellen haben eine CVSS :math:`<` 7
-  
+
   **Ausgenutzt wurden: 686**
 
 .. admonition:: Zusammenfassung
@@ -1642,10 +1642,10 @@ Annahme: Schwachstellen mit EPSS 10% und größer sind werden ausgenutzt werden.
 .. class:: incremental
 
 - 3.735 Schwachstellen haben ein Wahrscheinlichkeit von EPSS 10% und größer
-  
+
   **Ausgenutzt wurden: 2.435**
 - 135.738 Schwachstellen haben ein EPSS :math:`<` 10%
-    
+
   **Ausgenutzt wurden: 1.417**
 
 .. admonition:: Zusammenfassung
@@ -1684,10 +1684,10 @@ Schwachstellenmanagement
 
 .. epigraph::
 
-    [...] Die Entscheidung der US-Regierung, ob eine Schwachstelle veröffentlicht oder eingeschränkt werden soll, ist nur ein Element des Prozesses zur Bewertung der Schwachstellen und ist nicht immer eine binäre Entscheidung. Andere Optionen, die in Betracht gezogen werden können, sind die Verbreitung von Informationen zur Schadensbegrenzung an bestimmte Stellen, ohne die jeweilige Schwachstelle offenzulegen, die Einschränkung der Nutzung der Schwachstelle durch die US-Regierung in irgendeiner Weise, die Information von Regierungsstellen der USA und verbündeter Staaten über die Schwachstelle [...]. 
+    [...] Die Entscheidung der US-Regierung, ob eine Schwachstelle veröffentlicht oder eingeschränkt werden soll, ist nur ein Element des Prozesses zur Bewertung der Schwachstellen und ist nicht immer eine binäre Entscheidung. Andere Optionen, die in Betracht gezogen werden können, sind die Verbreitung von Informationen zur Schadensbegrenzung an bestimmte Stellen, ohne die jeweilige Schwachstelle offenzulegen, die Einschränkung der Nutzung der Schwachstelle durch die US-Regierung in irgendeiner Weise, die Information von Regierungsstellen der USA und verbündeter Staaten über die Schwachstelle [...].
 
     -- Übersetzung: DeepL
-    
+
 `Vulnerabilities Equities Process (VEP) (USA) <https://trumpwhitehouse.archives.gov/sites/whitehouse.gov/files/images/External%20-%20Unclassified%20VEP%20Charter%20FINAL.PDF>`__
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -1706,8 +1706,8 @@ Schwachstellenmanagement
 Schwachstellenmanagement in Deutschland - Quo Vadis?
 -------------------------------------------------------------
 
-.. epigraph:: 
-    
+.. epigraph::
+
     .. container:: obsolete
 
         [...] Die Ausnutzung von Schwachstellen von IT-Systemen steht in einem hochproblematischen Spannungsverhältnis zur IT-Sicherheit und den Bürgerrechten. Der Staat wird daher keine Sicherheitslücken ankaufen oder offenhalten, sondern sich in einem Schwachstellenmanagement unter Federführung eines unabhängigeren Bundesamtes für Sicherheit in der Informationstechnik immer um die schnellstmögliche Schließung bemühen.[...]
@@ -1725,22 +1725,22 @@ Verschlüsselung - eine allererste Einführung
 Definitionen
 -------------
 
-:Klartext: 
+:Klartext:
     :eng:`Plaintext`
 
     Die Originalnachricht, die verschlüsselt werden soll.
 
-:Geheimtext oder Chiffretext oder `Krytogramm`:peripheral:: 
+:Geheimtext oder Chiffretext oder `Krytogramm`:peripheral::
     :eng:`Ciphertext`
 
     Die kodierte/verschlüsselte Nachricht.
 
-:Verschlüsselung: 
+:Verschlüsselung:
     :eng:`Encryption`
 
     Der Prozess der Umwandlung von Klartext in Geheimtext.
 
-:Entschlüsselung: 
+:Entschlüsselung:
     :eng:`Decryption`
 
     Der Prozess der Wiederherstellung des Klartextes aus dem Geheimtext.
@@ -1776,15 +1776,15 @@ Eines der ersten Verschlüsselungsverfahren: Caesar Cipher
 - Dabei wird jeder Buchstabe des Alphabets durch einen Buchstaben ersetzt, der drei Stellen weiter hinten im Alphabet steht.
 - Am Ende des Alphabets wird wieder am Anfang begonnen. Somit folgt auf den Buchstabe Z der Buchstabe A.
 
-    :: 
+    ::
 
         unverschlüsselt:    meet me after the toga party
 
     .. class:: incremental
-        
+
     ::
 
-        verschlüsselt:      PHHW PH DIWHU WKH WRJD SDUWB 
+        verschlüsselt:      PHHW PH DIWHU WKH WRJD SDUWB
 
 
 .. supplemental::
@@ -1810,7 +1810,7 @@ Brute-Force Angriff
 
 
 
-Hashfunktionen 
+Hashfunktionen
 -------------------------------
 
 .. class:: incremental-list
@@ -1851,8 +1851,8 @@ Es geht im Wesentlichen um das Ver- und Entschlüsseln von Daten (:math:`X`) mit
 
     .. card::
 
-        :math:`E(K,X)` bedeutet, dass wir die Nachricht X mit dem Schlüssel :math:`K`  verschlüsseln (:eng:`encryption`). 
-        
+        :math:`E(K,X)` bedeutet, dass wir die Nachricht X mit dem Schlüssel :math:`K`  verschlüsseln (:eng:`encryption`).
+
         :math:`D(K,X)` bezeichnet die Umkehrfunktion, die die Daten wieder entschlüsselt (:eng:`decryption`).
 
     .. card::
@@ -1862,27 +1862,27 @@ Es geht im Wesentlichen um das Ver- und Entschlüsseln von Daten (:math:`X`) mit
         Der Schlüssel zur Verschlüsselung ist identisch mit dem Schlüssel zur Entschlüsselung (:eng:`decryption` (:math:`D`)).
 
         .. math::
-            X = D(K,E(K,X)) 
-    
+            X = D(K,E(K,X))
+
     .. card::
 
         .. rubric:: Asymmetrische Verschlüsselung
 
         Wir unterscheiden zwischen privaten (:math:`PR`) und öffentlichen Schlüsseln (:math:`PU`) (:math:`PU` :math:`\neq` :math:`PR`). Ein privater und ein öffentlicher Schlüssel bilden immer ein Paar. Der private Schlüssel ist immer geheim zu halten.
-        
+
         .. deck:: incremental
 
             .. card::
 
                 **Verschlüsselung von Nachrichten**
-                
+
                 Alice sendet eine Nachricht an Bob mit Hilfe des öffentlichen Schlüssels von Bob.
 
                 .. math::
                     Y = E(PU_{Bob},X) \\
-                    X = D(PR_{Bob},Y) 
+                    X = D(PR_{Bob},Y)
 
-            .. card:: 
+            .. card::
 
                 **Signierung von Nachrichten**
 
@@ -1893,19 +1893,19 @@ Es geht im Wesentlichen um das Ver- und Entschlüsseln von Daten (:math:`X`) mit
                     X = D(PU_{Alice},Y)
 
 
-            .. card:: 
+            .. card::
 
                 **Signierung von Nachrichten mit sicheren Hashfunktionen**
 
                 Alice signiert eine Nachricht :math:`X` mit ihrem privaten Schlüssel.
 
                 .. math::
-                    Alice: [E(PR_{Alice},H=Digest(X)),X] 
+                    Alice: [E(PR_{Alice},H=Digest(X)),X]
 
                 Bob prüft die Nachricht :math:`X` auf Authentizität:
 
                 .. math::
-                    Bob: D(PU_{Alice},H) \stackrel{?}{=} Digest(X) 
+                    Bob: D(PU_{Alice},H) \stackrel{?}{=} Digest(X)
 
 
 
@@ -1915,25 +1915,25 @@ Passwortsicherheit
 ---------------------------
 
 
-Verwendung von Passworten 
+Verwendung von Passworten
 ----------------------------------------------
 
 .. observation::
 
-    Klassische Passwörter werden (noch immer) in zahlreichen Bereichen verwendet. 
+    Klassische Passwörter werden (noch immer) in zahlreichen Bereichen verwendet.
 
 .. container:: incremental
 
-    .. rubric:: Beispiele 
+    .. rubric:: Beispiele
 
-    - Smartphones 
-    - Cryptosticks 
+    - Smartphones
+    - Cryptosticks
     - Logins für Computer und Serversysteme
     - verschlüsselte Dateien und Datenträger
     - "als Backup"
 
 .. supplemental::
-    
+
     **Hintergrund**
 
     Obwohl an vielen Stellen versucht wird Passwörter aus vielen Gründen zurück zu drängen, so ist die Verwendung noch allgegenwärtig und in machen Bereichen ist auch nicht unmittelbar eine Ablösung zu erkennen.
@@ -1946,8 +1946,8 @@ Verwendung von Passworten
 Passwortbasierte Angriffe auf Unternehmen
 ----------------------------------------------
 
-.. epigraph:: 
-    
+.. epigraph::
+
     Microsoft said hackers working for the Russian government breached its corporate networks recently and stole email from executives and some employees to find out what the company knew about them. The tech company said the breach was not due to any flaw in its software, but rather began with a “password spraying.” The technique worked on what Microsoft said was an old test account, and the hackers then used the account’s privileges to get access to multiple streams of email.
 
     -- 19. Januar 2024: The Washington Post; Joseph Menn
@@ -1971,7 +1971,7 @@ Ist Passwortwiederherstellung nicht „trivial“?
 
 
 
-.. class:: no-title 
+.. class:: no-title
 
 Ist Passwortwiederherstellung nicht „trivial“?
 ----------------------------------------------------------
@@ -2036,37 +2036,37 @@ Sammlungen von Passwörtern
 Raum der Passwortkandidaten
 --------------------------------
 
-:vierstellige PIN: 
+:vierstellige PIN:
 
     .. container:: incremental
-    
-        
+
+
         :math:`10.000` Kombinationen
 
 :Passwort mit 8 Zeichen und 70 Zeichen im Zeichensatz (a-z, A-Z, 0-9 und ausgewählte Sonderzeichen):
 
     .. container:: incremental
-    
+
         :math:`70^8 = 576.480.100.000.000 \approx 5,7 \times 10^{14}` Kombinationen
 
-:Passphrase mit 6 Wörtern aus einem Wörterbuch mit 2.000 Wörtern: 
+:Passphrase mit 6 Wörtern aus einem Wörterbuch mit 2.000 Wörtern:
 
     .. container:: incremental
-    
+
         :math:`2.000^6 = 6,4 \times 10 ^{19}` Kombinationen
 
-:Passphrase mit 4 Wörtern aus einem Wörterbuch mit 100.000 Wörtern: 
+:Passphrase mit 4 Wörtern aus einem Wörterbuch mit 100.000 Wörtern:
 
     .. container:: incremental
-    
+
         :math:`100.000^4 = 1 \times 10^{20}` Kombinationen
 
 
 
-:Passwort mit 16 Zeichen und 84 Zeichen im Zeichensatz (a-z, A-Z, 0-9 und die meisten Sonderzeichen): 
+:Passwort mit 16 Zeichen und 84 Zeichen im Zeichensatz (a-z, A-Z, 0-9 und die meisten Sonderzeichen):
 
     .. container:: incremental
-    
+
         :math:`84^{16} = 6,14 \times 10^{30}` Kombinationen
 
 .. supplemental::
@@ -2082,10 +2082,10 @@ Quellen für Passwortkandidaten
 
 - Wörterbücher
 - Verzeichnisse (z. B. Postleitzahlen, Städte, Straßennamen)
-- Leaks 
-  
+- Leaks
+
   :peripheral:`(Sammlungen von realen Passwörtern, die meist von Hackern veröffentlicht wurden.)`
-  
+
   - Rockyou
   - LinkedIn
   - Sony
@@ -2104,13 +2104,13 @@ Wie ist die Qualität der folgenden Passwörter zu bewerten in Hinblick darauf w
 2. Passwort
 3. ME01703138541
 4. 2wsx3edc4rfv
-5. Haus Maus 
+5. Haus Maus
 6. iluvu
 7. Emily18
 8. MuenchenHamburg2023!!!!
 9. hjA223dn4fw"üäKßß k`≤-~ajsdk
 10. Baum Lampe Haus Steak Eis Berg
-11. password123 
+11. password123
 
 
 
@@ -2125,14 +2125,14 @@ Hashraten in MH/s auf aktueller Hardware
 ------------------------------------------------------------
 
 .. csv-table::
-    :class: incremental-table-rows no-table-borders 
+    :class: incremental-table-rows no-table-borders
     :header: **Hashcat Mode (Hashcat 6.2.6)**, **Hash**, **RTX 1080Ti (250 W)**, "**RTX 2080TI (260 W)**", "**RTX 3090 (350 W)**", "**RTX 4090 (450 W)**"
 
     25700, Murmur, , , , "643700.0 (643 GH/s)"
-    23, Skype, 21330.1 , 27843.1 , 37300.7 , 84654.8 
-    1400, SHA2-256, 4459.7 , 7154.8 , 9713.2 , 21975.5 
-    10500, PDF1.4-1.6, 24.9 , 29.8 , 76.8 ,  122.0 
-    1800, SHA 512 Unix (5000 Iterations), 0.2 , 0.3  , 0.5 , 1.2 
+    23, Skype, 21330.1 , 27843.1 , 37300.7 , 84654.8
+    1400, SHA2-256, 4459.7 , 7154.8 , 9713.2 , 21975.5
+    10500, PDF1.4-1.6, 24.9 , 29.8 , 76.8 ,  122.0
+    1800, SHA 512 Unix (5000 Iterations), 0.2 , 0.3  , 0.5 , 1.2
     13723, Veracrypt SHA2- 512 + XTX 1536Bit, 0.0004 , 0.0006  , 0.0009 , "0.002
     (2000 H/s)"
 
@@ -2169,9 +2169,9 @@ Kryptografische Hashfunktionen für Passworte
 .. class:: incremental list-with-explanations
 
 - Zur Schlüsselableitung bzw. zum Hashen von Passwörtern wurden spezialisierte Funktionen entwickelt. Zum Beispiel: PBKDF2, Scrypt, Bcrypt und die Argon2 Familie. Diese wiederstehen gängigen Angriffen.
-  
+
   .. container:: far-smaller
-  
+
     PBKDF2 verwendet zum Beispiel beim Hashing von Passwörtern klassische Basisalgorithmen (z. B. SHA-256) und wiederholt diese mehrfach (ggf. viele hunderttausend Male), um die Laufzeit zu verlängern und es für Angreifer schwieriger zu machen.
 
 - Diese Algorithmen sind parametrisierbar, um sie an verschiedene Zwecke anpassen zu können.  Je nach Parametrisierung sind diese so rechenintensiv, dass sie z. B. nicht für Webanwendungen mit vielen Nutzern geeignet sind.
@@ -2185,7 +2185,7 @@ Vom Salzen (:eng:`Salt`) ...
 -----------------------------
 
 .. story::
-    
+
     **Beobachtung/Problem**
 
     Werden Passwörter direkt mit Hilfe einer kryptografischen Hashfunktion gehasht, dann haben zwei Nutzer, die das gleiche Passwort verwenden, den gleichen Hash.
@@ -2200,10 +2200,10 @@ Vom Salzen (:eng:`Salt`) ...
         ``$5$rounds=1000$$lb/CwYgN/xR9dqYuYxYVtWkxMEh.VK.QOC9IKmy9DP/``"
 
     .. container:: incremental
-        
-        **Lösung**  
 
-        Passwörter sollten immer mit einem einzigartigen und zufälligen „Salt“ gespeichert werden, um Angriffe mittels Regenbogentabellen zu verhindern. 
+        **Lösung**
+
+        Passwörter sollten immer mit einem einzigartigen und zufälligen „Salt“ gespeichert werden, um Angriffe mittels Regenbogentabellen zu verhindern.
 
         .. csv-table::
             :class: highlight-line-on-hover
@@ -2217,7 +2217,7 @@ Vom Salzen (:eng:`Salt`) ...
 
 
 .. supplemental::
-    
+
     .. rubric:: Rainbow Tables
 
     Eine *Rainbow Table* (:ger:`Regenbogentabelle` - Verwendung jedoch nicht gängig) bezeichnet eine vorberechnete Tabelle, die konzeptionell zum einem Hash ein jeweilig dazugehörendes  Passwort speichert und einen effizienten Lookup ermöglicht. Dies kann ggf. die Angriffsgeschwindigkeit sehr signifikant beschleunigen, auch wenn die Tabellen sehr groß sind und ggf. in die Terabytes gehen.
@@ -2229,7 +2229,7 @@ Vom Salzen (:eng:`Salt`) ...
 Verwendung sicherer Hash- bzw. Schlüsselableitungsfunktionen für Passworte
 ----------------------------------------------------------------------------
 
-.. note:: 
+.. note::
     :class: width-40
 
     Häufig werden die „Hashwerte“ von Passwörtern in Datenbanken oder Dateien  als Base64 kodierter String gespeichert.
@@ -2284,11 +2284,11 @@ Von Menschen vergebene Passwörter basieren häufig auf Kombinationen von Wörte
 - Patterns: ``aaaaa``, ``ababab``, ``abcabcabc``, …
 - Reguläre Wörter aus Wörterbüchern: Duden, Webster, …
 - Kontextinformationen:
-  
+
   - szenetypisch:  ``acab``, ``1888``, ``1488``\ [#]_, oder bestimmte Marken (z. B. Gucci, Ferrari), …
   - privates Umfeld: Namen von Kindern, Eltern, Hunden, Geburtsort, Adresse, …
 
-.. [#] ``14`` oder ``1488`` ist ein numerischer Code für die vierzehn Worte des David Eden Lane. 
+.. [#] ``14`` oder ``1488`` ist ein numerischer Code für die vierzehn Worte des David Eden Lane.
         (Er war ein Mitbegründer der Terrororganisation *The Order*, die für die Vorherrschaft der weißen Rasse in den USA kämpfte.)
 
 
@@ -2303,61 +2303,61 @@ Eine gute Quelle für das Studium von Passwörtern sind sogenannte *Leaks* oder 
 -       123456
 
         password
-        
+
         123456789
-        
+
         12345
-        
+
         12345678
-        
+
         qwerty
-        
+
         1234567
-        
+
         111111
-        
+
         1234567890
-        
+
         123123
 
 -       abc123
 
         1234
-        
+
         password1
-        
+
         iloveyou
-        
+
         1q2w3e4r
-        
+
         000000
-        
+
         qwerty123
-        
+
         zaq12wsx
-        
+
         dragon
-        
+
         sunshine
-        
+
 -       princess
 
         letmein
 
         654321
-        
+
         monkey
-        
+
         27653
-        
+
         1qaz2wsx
-        
+
         123321
-        
+
         qwertyuiop
-        
+
         superman
-        
+
         asdfghjkl
 
 .. supplemental::
@@ -2372,7 +2372,7 @@ Eine gute Quelle für das Studium von Passwörtern sind sogenannte *Leaks* oder 
 Die Struktur von Passwörtern in Rockyou
 -----------------------------------------------------------
 
-.. container:: 
+.. container::
 
     Hier haben wir alle **Kleinbuchstaben auf l**, **Großbuchstaben auf u**, **Ziffern auf d** und **Sonderzeichen auf s** abgebildet.
 
@@ -2380,7 +2380,7 @@ Die Struktur von Passwörtern in Rockyou
     :align: left
     :width: 100%
     :class: no-table-borders s-font-size-80
-    
+
     llllllll, "4,8037%", lllllllldd, "1,4869%", dddddddddddd, "0,2683%", ddddddll, "0,1631%"
     llllll, "4,1978%", lllllld, "1,3474%", lllddddd, "0,2625%", lllllls, "0,1615%"
     lllllll, "4,0849%", llllllld, "1,3246%", lllllllllldd, "0,2511%", ddddlll, "0,1613%"
@@ -2401,7 +2401,7 @@ Die Struktur von Passwörtern in Rockyou
 
 .. supplemental::
 
-        
+
     Analyse auf Grundlage des „berühmten“ Rockyou-Lecks.
 
 
@@ -2412,7 +2412,7 @@ Die Zusammensetzung von Passwörtern verstehen
 .. story::
 
     .. container:: incremental
-    
+
         Analyse des ersten/original *Rockyou* Leaks.
 
         .. csv-table::
@@ -2430,16 +2430,16 @@ Die Zusammensetzung von Passwörtern verstehen
             :class: borderless booktabs s-font-size-90
             :width: 100%
             :header: "Kategorie", "Absolut", "Prozentual", "Beispiele"
-            
-            E-Mails, 26.749, "0,22%", me\ |at|\ me.com, , , 
-            Zahlen gerahmt von Buchstaben, 35696, "0,30%", a123456a, , , 
-            Leetspeak, 64.672, "0,54%", G3tm0n3y, , , 
-            Patterns, 124.347, "1,04%", lalala, , , 
-            Reguläre oder Populäre Wörter, 4.911.647, "**41,25%**", princess, iloveu, , 
-            Sequenzen, 5.290, "0,04%", abcdefghij, , , 
-            keyboard walks (de/en), 14.662, "0,12%", q2w3e4r, , , 
-            Einfache Wortkombinationen, 535.037, "4,49%", pinkpink, sexy4u, te amo, 
-            Komplexe Wortkombinationen, 5.983.259, "**50,25%**", Inparadise, kelseylovesbarry, , 
+
+            E-Mails, 26.749, "0,22%", me\ |at|\ me.com, , ,
+            Zahlen gerahmt von Buchstaben, 35696, "0,30%", a123456a, , ,
+            Leetspeak, 64.672, "0,54%", G3tm0n3y, , ,
+            Patterns, 124.347, "1,04%", lalala, , ,
+            Reguläre oder Populäre Wörter, 4.911.647, "**41,25%**", princess, iloveu, ,
+            Sequenzen, 5.290, "0,04%", abcdefghij, , ,
+            keyboard walks (de/en), 14.662, "0,12%", q2w3e4r, , ,
+            Einfache Wortkombinationen, 535.037, "4,49%", pinkpink, sexy4u, te amo,
+            Komplexe Wortkombinationen, 5.983.259, "**50,25%**", Inparadise, kelseylovesbarry, ,
             *<Rest>*, 204.618, "1,72%", j4**9c+p, i(L)you, p\ |at|\ 55w0rd
 
 
@@ -2448,17 +2448,17 @@ Die Zusammensetzung von Passwörtern verstehen
     .. rubric:: Hinweise
 
     Die Sprachen, die bei der Identifizierung der Wörter berücksichtigt wurden, waren: "de, en, fr, es, pt, nl".
-    
+
     *Populäre Wörter* sind Wörter, die auf Twitter oder Facebook verwendet wurden, z. B. "iloveu", "iluvu", ....
 
 
 
-.. class:: transition-move-left exercises 
+.. class:: transition-move-left exercises
 
 Gedankenexperiment
 ---------------------
 
-.. exercise:: Kosten und Aufwand für Passwortwiederherstellung 
+.. exercise:: Kosten und Aufwand für Passwortwiederherstellung
 
     Sie wollen einen *SHA-256* angreifen und sie haben 100 Nvidia 4090 GPUs. Jede GPU hat eine Hash-Rate von ~22GH/s (mit Hashcat 6.2.6) und benötigt ~500 Watt pro Stunde (Wh). Der verwendete Zeichensatz besteht aus 84 verschiedenen Zeichen (z. B. a-z, A-Z, 0-9, <einige Sonderzeichen>).
 
@@ -2468,7 +2468,7 @@ Gedankenexperiment
 
     3. Werden Sie im Laufe Ihres Lebens in der Lage sein, ein Passwort mit 12 Zeichen Länge zu ermitteln?
 
-    .. solution:: 
+    .. solution::
         :pwd: Schlangsam
 
         Die Hashrate beträgt: :math:`100 \times (22 \times 10^9) H/s = 2.200.000.000.000 H/s`
@@ -2476,11 +2476,11 @@ Gedankenexperiment
         Die Dauer ist also: :math:`\frac{84^{10}H}{2.200.000.000.000 H/s} = 84^{10}H/(100 \times 22 \times 10^9 H/s)/(3600 \times 24 s/d) \approx 92d`
 
         Es dauert ca. 3 Monate (~2200 Stunden), um ein Passwort mit 10 Ziffern zu ermitteln!
-            
-        Es wird im schlimmsten Fall: 
-        
-        :math:`2200h \times (500Wh/1000Wh) \times 0,25Eur/h \times 100  \approx 27000Eur` 
-         
+
+        Es wird im schlimmsten Fall:
+
+        :math:`2200h \times (500Wh/1000Wh) \times 0,25Eur/h \times 100  \approx 27000Eur`
+
         Stromkosten verursachen.
 
         Um ein Passwort mit 11 Ziffern zu finden, brauchen Sie 21 Jahre (worst-case).
@@ -2499,33 +2499,33 @@ Gedankenexperiment
 .. exercise:: Verstehen des Suchraums
 
     Sie haben „ganz viele“ Grafikkarten und einen sehr schnellen Hash. Sie kommen auf eine Hashrate von 1 THash/Sekunde (:math:`1 \times 10^{12}`). Sie haben einen Monat Zeit für das Knacken des Passworts.
-    Gehen Sie vereinfacht davon aus, dass Ihr Zeichensatz 100 Zeichen umfasst. 
+    Gehen Sie vereinfacht davon aus, dass Ihr Zeichensatz 100 Zeichen umfasst.
 
     Berechnen Sie den Anteil des Suchraums, den Sie abgesucht haben, wenn das Passwort 32 Zeichen lang sein sollte und Sie dies wissen. Drücken Sie den Anteil des abgesuchten Raums in Relation zu der Anzahl der Sandkörner der Sahara aus. Gehen Sie davon aus, dass die Sahara ca. 70 Trilliarden (:math:`70 \times 10^{21}`) Sandkörner hat.\ [#]_
 
     .. solution::
         :pwd: Fast-nichts!
 
-        Suchraum: :math:`100^{32} = 10^{64}` 
+        Suchraum: :math:`100^{32} = 10^{64}`
 
-        Passworte in einem Monat: 
-        
-        .. math:: 
-            
+        Passworte in einem Monat:
+
+        .. math::
+
             (1 \times 10^{12} {H \over s}) \times 60s \times 60min \times 24h \times 30d = \
 
             2.592.000.000.000.000.000 = \
 
             2,592 \times 10^{18} \
-        
+
         da:
 
-        .. math:: 
+        .. math::
 
             2.592.000.000.000.000.000 \times (4 \times 10^{45}) \approx 10^{64}
 
         haben wir somit ca.
-        
+
         .. math::
 
             1 \over 4 \times 10^{45}
@@ -2539,7 +2539,7 @@ Gedankenexperiment
 
 
 
-Effekte von Passwortrichtlinien 
+Effekte von Passwortrichtlinien
 ---------------------------------------------------------------
 
 Moderne Passwortrichtlinien (:eng:`Password Policies`) machen es unmöglich, ältere Leaks *direkt* zu nutzen.
@@ -2568,7 +2568,7 @@ Moderne Passwortrichtlinien (:eng:`Password Policies`) machen es unmöglich, äl
 Der Effekt von Passwortrichtlinien auf Passwörter
 --------------------------------------------------
 
-Reale Passwortrichtlinie: 
+Reale Passwortrichtlinie:
 
     Nutze 1 Großbuchstabe, 1 Kleinbuchstabe, 2 Symbole, 2 Ziffern, 4 Buchstaben, 4 Nicht-Buchstaben
 
@@ -2578,8 +2578,8 @@ Reale Passwortrichtlinie:
 
         Password11##
 
-        Password12!! 
-    
+        Password12!!
+
     d. h. die Passworte werden mit möglichst geringem Aufwand erweitert.
 
 
@@ -2592,15 +2592,15 @@ Aufbau von Passwörtern - Zusammenfassung
 - Passwörter, die häufig eingegeben werden müssen, basieren in den allermeisten Fällen auf „echten“ Wörtern.
 - Echte Wörter werden oft nicht unverändert verwendet, sondern nach einfachen Regeln umgewandelt, z. B. durch Anhängen einer Zahl oder eines Sonderzeichens, Veränderung der Groß-/Kleinschreibung, etc.
 
-.. admonition:: Frage 
+.. admonition:: Frage
     :class: incremental small
-    
+
     Wie können wir gute Passwortkandidaten identifizieren/generieren, wenn ein *Leak* nicht ausreicht oder nur eine kleine Anzahl von Passwörtern getestet werden kann?
-    
+
     .. container:: incremental
 
         Zum Beispiel dauert das Testen aller Passwörter von Rockyou...:
-        
+
         ~13.000.000 Passworte / 5 Hashes/Sekunde ≈ 1 Monat
 
         ~13.000.000 Passworte / 5 Hashes/Stunde ≈ ~297 Jahre
@@ -2621,20 +2621,20 @@ Bewertung von Passworten
     - **Haus Maus**: In Rockyou ist lediglich hausmaus zu finden.
     - **iluvu**: Nr. 1472 in Rockyou.
     - **Emily060218**: Emily ist Nr. 35567 in Rockyou. Die Zahl ist ganz offensichtlich ein Datum: 6. Feb. 2018 und könnte ein Geburtsdatum, Hochzeitsdatum, oder ein für die Person vergleichbar bedeutends Datum sein.
-    - **MuenchenHamburg2023!!!!***: Das Passwort ist zwar sehr lang aber es handelt sich vermutlich um zwei - für die entsprechende Person - bedeutende Orte. Die Zahl und die Sonderzeichen sind vermutlich auf eine Passwortrichtlinie zurückzuführen. 
-    - **hjA223dn4fw"üäKßß k`≤-~ajsdk**: 28 Stellen basierend auf einem Zeichensatz, der vermutlich ca. 192 Zeichen pro Stelle umfasst. 
-    - **Baum Lampe Haus Steak Eis Berg**: Es handelt sich um ein Passwort mit 30 Stellen, das vermutlich mit Hilfe von Diceware generiert wurde und 6 Worte umfasst. 
+    - **MuenchenHamburg2023!!!!***: Das Passwort ist zwar sehr lang aber es handelt sich vermutlich um zwei - für die entsprechende Person - bedeutende Orte. Die Zahl und die Sonderzeichen sind vermutlich auf eine Passwortrichtlinie zurückzuführen.
+    - **hjA223dn4fw"üäKßß k`≤-~ajsdk**: 28 Stellen basierend auf einem Zeichensatz, der vermutlich ca. 192 Zeichen pro Stelle umfasst.
+    - **Baum Lampe Haus Steak Eis Berg**: Es handelt sich um ein Passwort mit 30 Stellen, das vermutlich mit Hilfe von Diceware generiert wurde und 6 Worte umfasst.
     - **ME01703138541**: Namenskürzel und Telefonnummer.
-    
+
 .. supplemental::
 
     .. admonition:: Diceware
 
         Auch wenn dem Angreifer
-        (a) bekannt ist, dass das Passwort mit Hilfe von Diceware generiert wurde, 
-        (b) die zugrundeliegende Wortliste vorliegt und 
+        (a) bekannt ist, dass das Passwort mit Hilfe von Diceware generiert wurde,
+        (b) die zugrundeliegende Wortliste vorliegt und
         (c) auch die Länge (hier 6 Worte) bekannt sein sollte, dann umfasst der Suchraum: :math:`(6^5)^6 \approx 2,21\times 10^{23}` Passwortkandidaten. Sollte man also mit einer Geschwindigkeit von 1 Billion Hashes pro Sekunde angreifen können, dann brauch man noch immer über 7000  Jahre für das Absuchen des vollständigen Suchraums.
-    
+
         Beim klassischen Dicewareansatz umfasst das Wörterbuch :math:`6^5` Worte, da man mit einem normalen Würfel fünfmal Würfelt und dann das entsprechende Wort nachschlägt. Würde man zum Beispiel die folgenden Zahlen würfeln: 1,4,2,5,2. Dann würde man das Wort zur Zahl: 14252 nachschlagen.
 
 
@@ -2663,7 +2663,7 @@ Password Sniffing
 
 :In der Anfangszeit: unverschlüsselte Übertragung von Passwörtern (telnet, ftp, ...)
 :In der Übergangszeit: Verwendung von Einmal-Passwörtern (S/Key, ...)
-:Heute: Passwörter werden verschlüsselt übertragen (ssh, https, ...) 
+:Heute: Passwörter werden verschlüsselt übertragen (ssh, https, ...)
 
     Zusätzliche Absicherung durch Zwei-Faktor-Authentifizierung (basierend auf Einmalpassworten: TOTP, ...)
 
@@ -2684,20 +2684,20 @@ Die Idee ist, dass Passwörter nur genau einmal gültig sind und nicht wiederver
 - S/Key: Passwort „wird mit einem Zähler kombiniert“ und dann gehasht.
 
 
-Das S/Key Verfahren 
+Das S/Key Verfahren
 ------------------------------
 
 Einmal-Passwort-System nach Codebuch-Verfahren.
 
-.. deck:: 
+.. deck::
 
-    .. card:: 
+    .. card::
 
         **Initialisierung**
 
         .. class:: incremental-list list-with-explanations
 
-        1) Der Nutzer gibt sein Passwort :math:`W` ein; dies ist der geheime Schlüssel. 
+        1) Der Nutzer gibt sein Passwort :math:`W` ein; dies ist der geheime Schlüssel.
 
            (Sollte :math:`W` bekannt werden, dann ist die Sicherheit des Verfahrens nicht mehr gewährleistet.)
         2) Eine kryptografische Hash-Funktion :math:`H` wird n-mal auf :math:`W` angewandt, wodurch eine Hash-Kette von n einmaligen Passwörtern entsteht. :math:`H(W), H(H(W)), \dots, H^{n}(W)`
@@ -2705,15 +2705,15 @@ Einmal-Passwort-System nach Codebuch-Verfahren.
         4) Der Benutzer erhält die :math:`n` Passwörter, die in umgekehrter Reihenfolge ausgedruckt werden: :math:`H^n(W), H^{n-1}(W), ..., H(H(W)), H(W)`.
         5) Nur das Passwort :math:`H^n(W)`, das an erster Stelle der Liste des Benutzers steht, der Wert von :math:`n` und ggf. ein Salt, wird auf dem Server gespeichert.
 
-    .. card:: 
+    .. card::
 
         **Anmeldung**
 
         Identifiziere das letzte verwendete Passwort :math:`n`.
 
         .. class:: incremental-list
-       
-        - Der Server fragt den Nutzer nach dem Passwort :math:`n-1` (d. h. :math:`H^{n-1}(W)`) und übermittelt ggf. auch den Salt. 
+
+        - Der Server fragt den Nutzer nach dem Passwort :math:`n-1` (d. h. :math:`H^{n-1}(W)`) und übermittelt ggf. auch den Salt.
         - Der Server hasht das Passwort und vergleicht es dann mit dem gespeicherten Passwort :math:`H^n(W)`.
         - Ist das Passwort korrekt, dann wird der Nutzer angemeldet und der Server speichert das Passwort :math:`H^{n-1}(W)` als neues Passwort :math:`H^n(W)` und dekrementiert n.
 
@@ -2721,7 +2721,7 @@ Einmal-Passwort-System nach Codebuch-Verfahren.
 
     Im Original basiert S/Key auf der kryptographischen Hashfunktion MD4. Ein Austausch wäre aber selbstverständlich möglich!
 
-    Intern verwendet S/KEY 64-bit Zahlen. Für die Benutzbarkeit werden diese Zahlen auf sechs kurze Wörter, von ein bis vier Zeichen, aus einem öffentlich zugänglichen 2048-Wörter-Wörterbuch (:math:`2048 = 2^{11}`) abgebildet. Zum Beispiel wird eine 64-Bit-Zahl auf "ROY HURT SKI FAIL GRIM KNEE" abgebildet. 
+    Intern verwendet S/KEY 64-bit Zahlen. Für die Benutzbarkeit werden diese Zahlen auf sechs kurze Wörter, von ein bis vier Zeichen, aus einem öffentlich zugänglichen 2048-Wörter-Wörterbuch (:math:`2048 = 2^{11}`) abgebildet. Zum Beispiel wird eine 64-Bit-Zahl auf "ROY HURT SKI FAIL GRIM KNEE" abgebildet.
 
 
 
@@ -2741,7 +2741,7 @@ HMAC-based one-time password (HOTP)\ [#]_
 
 - Zur Authentifizierung berechnen beide das Einmalpasswort (HOTP) und dann vergleicht der Server den Wert mit dem vom Client übermittelten Wert:
 
-  .. container:: 
+  .. container::
 
     Berechnung aus dem Schlüssel :math:`K` und dem Zähler :math:`C`:
 
@@ -2752,7 +2752,7 @@ HMAC-based one-time password (HOTP)\ [#]_
         .. container:: incremental
 
                 :math:`truncate(MAC) = extract31(MAC, MAC[(19 × 8 + 4):(19 × 8 + 7)])`
-            
+
         .. class:: incremental
 
         :math:`HOTP\; value = HOTP(K, C)\; mod\; 10^d\qquad` (führende Nullen behalten!)
@@ -2762,7 +2762,7 @@ HMAC-based one-time password (HOTP)\ [#]_
 .. supplemental::
 
     :math:`truncate` verwendet die 4 niederwertigsten Bits des MAC als Byte-Offset :math:`i` in den MAC.
-    Der Wert :math:`19` kommt daher, dass ein SHA-1 :math:`160` Bit hat und :math:`160/8 = 20` Byte. 
+    Der Wert :math:`19` kommt daher, dass ein SHA-1 :math:`160` Bit hat und :math:`160/8 = 20` Byte.
 
     :math:`extract31` extrahiert 31 Bit aus dem MAC. Das höchstwertig Bit wird (wenn es nicht 0 ist) entsprechend maskiert.
     Eine Schwäche des Algorithmus ist, dass beide Seiten den Zähler erhöhen müssen und, falls die Zähler aus dem Tritt geraten, ggf. eine Resynchronisation notwendig ist.
@@ -2776,7 +2776,7 @@ Time-based one-time password (TOTP)\ [#]_
 
 .. class:: incremental list-with-explanations
 
-- Basierend auf einem vorher ausgetauschten geheimen Schlüssel und der aktuellen Zeit 
+- Basierend auf einem vorher ausgetauschten geheimen Schlüssel und der aktuellen Zeit
 
   Z. B. Unix-Zeit in Sekunden (ganzzahlig) und danach gerundet auf 30 Sekunden.
 
@@ -2784,8 +2784,8 @@ Time-based one-time password (TOTP)\ [#]_
 - Es wird das HOTP Verfahren mit der Zeit als Zähler verwendet und entweder SHA-256 oder SHA-512 als Hashverfahren, d. h. TOTP :math:`value(K)` = HOTP :math:`value(K, C_T)`, wobei :math:`T` die „aktuelle Zeit“ ist.
 
   :math:`C_T = \lfloor { T - T_0 \over T_X } \rfloor`
-  
-  - :math:`T_X` ist die Länge eines Zeitintervalls (z. B. 30 Sekunden) 
+
+  - :math:`T_X` ist die Länge eines Zeitintervalls (z. B. 30 Sekunden)
   - :math:`T` ist die aktuelle Zeit in Sekunden seit einer bestimmten Epoche
   - :math:`T_0` ist bei Verwendung der Unix-Zeit :math:`0`
   - :math:`C_T` ist somit die Anzahl der Dauern :math:`T_X` zwischen :math:`T_0` und :math:`T`
@@ -2796,7 +2796,7 @@ Time-based one-time password (TOTP)\ [#]_
 
 .. supplemental::
 
-   Das verfahren verlangt somit, dass die Uhren von Server und Client (hinreichend) synchronisiert sind.
+   Das Verfahren verlangt somit, dass die Uhren von Server und Client (hinreichend) synchronisiert sind.
 
 
 
@@ -2806,7 +2806,7 @@ Ein letztes Wort
 .. epigraph::
 
     **Why Government Workers, Military Planners Use Signal Now**
- 
+
     This week's revelation that U.S. officials planned a recent military attack in Yemen on Signal highlights increasing use of the messaging app by U.S. government workers to communicate with colleagues, journalists, and family members without fear of monitoring or retaliation. The switch to Signal among federal workers and top government officials has raised concerns about transparency and the preservation of government correspondence and internal communications.
 
     -- 25.3.2025 - ACM Technews based on The Washington Post; Shira Ovide; Danielle Abril; Hannah Natanson; et al.
