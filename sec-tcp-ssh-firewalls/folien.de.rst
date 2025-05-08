@@ -8,7 +8,7 @@
     :master-password: WirklichSchwierig!
 
 .. include:: ../docutils.defs
-    
+
 
 
 Eine erste Einführung in die Sicherheit von (verteilten) Systemen
@@ -19,14 +19,14 @@ Eine erste Einführung in die Sicherheit von (verteilten) Systemen
 :Version: 1.3
 
 .. container:: footer-left tiny
-    
+
     Die Folien basieren in weiten Teilen auf einem Foliensatz von Prof. Dr. Henning Pagnia.
-    
+
     Alle Fehler sind meine eigenen.
 
 .. supplemental::
 
-  :Folien: 
+  :Folien:
       [HTML] |html-source|
 
       [PDF] |pdf-source|
@@ -38,7 +38,7 @@ Eine erste Einführung in die Sicherheit von (verteilten) Systemen
 Themen
 ----------------------------------
 
-- `Transmission Control Protocol (TCP)`_ 
+- `Transmission Control Protocol (TCP)`_
 - `Einmal-Passwörter`_
 - `Secure Shell (SSH)`_
 - `Firewalls`_
@@ -46,7 +46,7 @@ Themen
 
 .. class:: new-section transition-fade
 
-Transmission Control Protocol (TCP) 
+Transmission Control Protocol (TCP)
 -------------------------------------
 
 
@@ -55,7 +55,7 @@ Transmission Control Protocol (TCP)
 TCP Grundlagen
 -------------------
 
-.. class:: incremental more-space-between-list-items 
+.. class:: incremental more-space-between-list-items
 
 - Protokoll der Schicht 4 (Transport Layer) basiert auf IP
 - verbindungsorientierte Kommunikation zweier Rechner im Internet zuverlässig und geordnet:
@@ -101,7 +101,7 @@ Dreifacher Handshake:
 
             <svg width="1200" height="600" viewBox="0 0 1200 600" version="1.1" xmlns="http://www.w3.org/2000/svg">
                 <defs>
-                    <marker 
+                    <marker
                     id="arrow"
                     viewBox="0 0 10 10"
                     refX="10"
@@ -118,7 +118,7 @@ Dreifacher Handshake:
                 <line x1="1000" y1="100" x2="1000" y2="400" style="stroke:rgb(0,0,0);stroke-width:3" />
                 <line x1="200" y1="400" x2="200" y2="550" stroke-dasharray="5,5" style="stroke:rgb(0,0,0);stroke-width:3" />
                 <line x1="1000" y1="400" x2="1000" y2="550" stroke-dasharray="5,5" style="stroke:rgb(0,0,0);stroke-width:3" />
-                
+
                 <text x="500" y="65" transform="rotate(6.6)">SYN(1000)</text>
                 <line x1="200" y1="110" x2="1000" y2="190" style="stroke:rgb(0,0,0);stroke-width:3" marker-end="url(#arrow)"/>
             </svg>
@@ -130,7 +130,7 @@ Dreifacher Handshake:
 
             <svg height="600" width="1200" viewBox="0 0 1200 600" version="1.1" xmlns="http://www.w3.org/2000/svg">
                 <defs>
-                    <marker 
+                    <marker
                     id="arrow"
                     viewBox="0 0 10 10"
                     refX="10"
@@ -144,7 +144,7 @@ Dreifacher Handshake:
 
                 <text x="270" y="300" transform="rotate(-6.6)">SYN(2000), ACK(1001)</text>
                 <line x1="1000" y1="200" x2="200" y2="290" style="stroke:rgb(0,0,0);stroke-width:3" marker-end="url(#arrow)"/>
-                
+
             </svg>
 
     .. container:: layer overlay incremental
@@ -154,7 +154,7 @@ Dreifacher Handshake:
 
             <svg height="600" width="1200" viewBox="0 0 1200 600" version="1.1" xmlns="http://www.w3.org/2000/svg">
                 <defs>
-                    <marker 
+                    <marker
                     id="arrow"
                     viewBox="0 0 10 10"
                     refX="10"
@@ -165,7 +165,7 @@ Dreifacher Handshake:
                     <path d="M 0 0 L 10 5 L 0 10 z" />
                     </marker>
                 </defs>
-                
+
                 <text x="555" y="315" transform="rotate(6.6)">ACK(2001)</text>
                 <line x1="200" y1="300" x2="1000" y2="390" style="stroke:rgb(0,0,0);stroke-width:3" marker-end="url(#arrow)"/>
             </svg>
@@ -182,7 +182,7 @@ Ports bei TCP
 - Ports sind 16 Bit Zahlen (0-65535)
 - (Unix) Ports < 1024 sind privilegiert (nur root kann diese öffnen)
 - einige Port-Nummern sind Standarddiensten zugeordnet
-  
+
 
 .. class:: small
 
@@ -206,7 +206,7 @@ Port-Nummern einiger Standarddienste [#]_
 
 .. csv-table::
     :header: Protokoll, Dienst, Portnummer
-    :class: highlight-line-on-hover 
+    :class: highlight-line-on-hover
     :widths: 100, 600, 50
 
     ssh, Secure Shell, 22
@@ -225,13 +225,13 @@ Angriffe auf TCP - Motivation
 
 .. class:: incremental list-with-explanations
 
-- Netzwerkprogrammierung mit TCP ist relativ komfortabel. 
+- Netzwerkprogrammierung mit TCP ist relativ komfortabel.
 - Viele Dienste sind mit TCP implementiert.
-  
+
   Insbesondere in der Anfangszeit hatten viele TCP Dienste sowohl technische als auch konzeptionelle Schwachstellen. Einige dieser Schwachstellen sind bis heute nicht behoben.
 - Das Auffinden von angreifbaren Diensten kann mit Hilfe von Port Scans systematisch erfolgen.
 
-  Server haben heutzutage im Allgemeinen alle nicht verwendeten Dienste geschlossen. 
+  Server haben heutzutage im Allgemeinen alle nicht verwendeten Dienste geschlossen.
 
 
 Port Scans: TCP Connect Scan
@@ -240,14 +240,14 @@ Port Scans: TCP Connect Scan
 .. container:: two-columns
 
     .. container:: width-60
-        
+
           :Vorgehen: Aufbau vollständiger Verbindungen zu allen bzw. zu ausgewählten Ports.
 
     .. raw:: html
 
         <svg width="900" height="440" viewBox="0 0 1200 600" version="1.1" xmlns="http://www.w3.org/2000/svg">
             <defs>
-                <marker 
+                <marker
                 id="arrow"
                 viewBox="0 0 10 10"
                 refX="10"
@@ -264,13 +264,13 @@ Port Scans: TCP Connect Scan
             <line x1="1000" y1="100" x2="1000" y2="400" style="stroke:rgb(0,0,0);stroke-width:3" />
             <line x1="200" y1="400" x2="200" y2="550" stroke-dasharray="5,5" style="stroke:rgb(0,0,0);stroke-width:3" />
             <line x1="1000" y1="400" x2="1000" y2="550" stroke-dasharray="5,5" style="stroke:rgb(0,0,0);stroke-width:3" />
-            
+
             <text x="500" y="65" transform="rotate(6.6)">SYN</text>
             <line x1="200" y1="110" x2="1000" y2="190" style="stroke:rgb(0,0,0);stroke-width:3" marker-end="url(#arrow)"/>
 
             <text x="390" y="300" transform="rotate(-6.6)">SYN / ACK</text>
             <line x1="1000" y1="200" x2="200" y2="290" style="stroke:rgb(0,0,0);stroke-width:3" marker-end="url(#arrow)"/>
-            
+
             <text x="555" y="315" transform="rotate(6.6)">ACK</text>
             <line x1="200" y1="300" x2="1000" y2="390" style="stroke:rgb(0,0,0);stroke-width:3" marker-end="url(#arrow)"/>
         </svg>
@@ -292,9 +292,9 @@ Port Scans: TCP SYN Scan
     .. container:: width-60
 
         :Vorgehen:
-        
+
             .. class:: incremental
-        
+
             1. Senden eines TCP-Segments mit gesetztem SYN-Flag an einen Port
             2. falls der *Port offen* ist, kommt SYN/ACK zurück danach RST senden
             3. falls der *Port nicht offen* ist, kommt RST (oder nichts) zurück
@@ -303,7 +303,7 @@ Port Scans: TCP SYN Scan
 
         <svg width="900" height="440" viewBox="0 0 1200 600" version="1.1" xmlns="http://www.w3.org/2000/svg">
             <defs>
-                <marker 
+                <marker
                 id="arrow"
                 viewBox="0 0 10 10"
                 refX="10"
@@ -320,24 +320,24 @@ Port Scans: TCP SYN Scan
             <line x1="1000" y1="100" x2="1000" y2="400" style="stroke:rgb(0,0,0);stroke-width:3" />
             <line x1="200" y1="400" x2="200" y2="550" stroke-dasharray="5,5" style="stroke:rgb(0,0,0);stroke-width:3" />
             <line x1="1000" y1="400" x2="1000" y2="550" stroke-dasharray="5,5" style="stroke:rgb(0,0,0);stroke-width:3" />
-            
+
             <text x="500" y="65" transform="rotate(6.6)">SYN</text>
             <line x1="200" y1="110" x2="1000" y2="190" style="stroke:rgb(0,0,0);stroke-width:3" marker-end="url(#arrow)"/>
 
             <text x="390" y="300" transform="rotate(-6.6)">SYN / ACK</text>
             <line x1="1000" y1="200" x2="200" y2="290" style="stroke:rgb(0,0,0);stroke-width:3" marker-end="url(#arrow)"/>
-            
+
             <text x="555" y="315" transform="rotate(6.6)">RST</text>
             <line x1="200" y1="300" x2="1000" y2="390" style="stroke:rgb(0,0,0);stroke-width:3" marker-end="url(#arrow)"/>
         </svg>
 
-.. class:: incremental 
+.. class:: incremental
 
 :Bewertung:
-    
+
     - kein vollständiger Verbindungsaufbau
     - meist nicht protokolliert
-    - geringe(re) Entdeckungsgefahr        
+    - geringe(re) Entdeckungsgefahr
 
 
 
@@ -357,18 +357,18 @@ Port Scans: Stealth Scans
 
     Laut RFC kommt RST zurück, falls der Port offen ist. (Reaktion ist de-facto aber abhängig vom Betriebssystem und oft kommt keine Antwort zurück.)
 
-.. class:: incremental 
-  
+.. class:: incremental
+
 :Bewertung:
 
     - Zugriff wird meist nicht protokolliert
     - Scan bleibt unbemerkt
 
 
-.. supplemental:: 
+.. supplemental::
 
-    **XMAS-Scan**: 
-    
+    **XMAS-Scan**:
+
     Bei diesem Scan sind alle Flags gesetzt; ein XMAS-Scan wird auch als Christmas-Tree-Scan bezeichnet, da das Paket erleuchtet ist wie ein Weihnachtsbaum.
 
 
@@ -377,13 +377,13 @@ Port Scans: Idle Scan [#]_
 
 Bei allen bisher betrachteten Scans kann der Scanner prinzipiell identifiziert werden. Unter Verwendung eines sog. Zombies geht es auch anders:
 
-.. container:: two-columns 
+.. container:: two-columns
 
     .. container:: column
 
         Sondiere IP ID des Zombies:
 
-        .. image:: images/idle-scan/idle-scan-step1.svg 
+        .. image:: images/idle-scan/idle-scan-step1.svg
             :alt: Idle Scan - Schritte 1-2
             :align: left
             :width: 700px
@@ -392,12 +392,12 @@ Bei allen bisher betrachteten Scans kann der Scanner prinzipiell identifiziert w
 
         Starte Scan:
 
-        .. image:: images/idle-scan/idle-scan-step2.svg 
+        .. image:: images/idle-scan/idle-scan-step2.svg
             :alt: Idle Scan - Schritte 3-5
             :align: left
             :width: 750px
 
-.. supplemental:: 
+.. supplemental::
 
     :Zombie: ein Rechner (Computer, Drucker oder anderes IoT Gerät) im Internet *möglichst ohne eigenen Netzverkehr* und mit *altem* Betriebssystem, bei dem die IP ID in vorhersehbarer Weise inkrementiert wird. (Bei modernen Betriebssystemen ist die IP ID zufällig, **konstant** oder sogar ``null``.)
 
@@ -413,7 +413,7 @@ Bei allen bisher betrachteten Scans kann der Scanner prinzipiell identifiziert w
     Das Feld *IP Identifikation (IP ID)* dient der Identifizierung einer Gruppe von Fragmenten eines einzelnen IP-Datagramms.
 
     .. image:: images-external/IPv4_Packet-en.svg
-            :alt: IPv4 Packet            
+            :alt: IPv4 Packet
             :width: 1000px
             :align: left
 
@@ -424,27 +424,27 @@ Bei allen bisher betrachteten Scans kann der Scanner prinzipiell identifiziert w
 
 .. [#] `NMap Book <https://nmap.org/book/idlescan.html>`__
 
-    
+
 
 Port Scans: Idle Scan
 -----------------------------
 
-.. container:: two-columns 
+.. container:: two-columns
 
     .. container:: column
 
         Starte Scan:
 
-        .. image:: images/idle-scan/idle-scan-step2.svg 
+        .. image:: images/idle-scan/idle-scan-step2.svg
             :alt: Idle Scan - Schritte 3-5
             :align: left
             :width: 750px
 
-    .. container:: column   
+    .. container:: column
 
         Sondiere IP ID des Zombies:
 
-        .. image:: images/idle-scan/idle-scan-step3.svg 
+        .. image:: images/idle-scan/idle-scan-step3.svg
             :alt: Idle Scan - Schritt 6
             :align: right
             :width: 700px
@@ -457,13 +457,13 @@ Port Scans: Idle Scan - Zusammenfassung
 - Angreifer sendet SYN/ACK Paket an Zombie
 - der Zombie antwortet mit RST und enthüllt seine IP ID (:eng:`IP Fragment Identification Number`).
 - Angreifer sendet SYN („mit IP vom Zombie“) an Port des Servers:
-  
-  [**Port offen**] Der Zielrechner antwortet mit SYN/ACK an den Zombie, wenn der Port offen ist. Der Zombie antwortet darauf mit RST an den Server, da er kein SYN gesendet hat und kein SYN/ACK erwartet und *erhöht seine IP ID*. 
-  
-  [**Port geschlossen**] Der Zielrechner antwortet mit RST an den Zombie, wenn der Port geschlossen ist. Dies wird vom Zombie ignoriert.
-- Der Angreifer sendet wieder ein SYN/ACK an den Zombie, um die IP ID zu erfahren. 
 
-.. supplemental:: 
+  [**Port offen**] Der Zielrechner antwortet mit SYN/ACK an den Zombie, wenn der Port offen ist. Der Zombie antwortet darauf mit RST an den Server, da er kein SYN gesendet hat und kein SYN/ACK erwartet und *erhöht seine IP ID*.
+
+  [**Port geschlossen**] Der Zielrechner antwortet mit RST an den Zombie, wenn der Port geschlossen ist. Dies wird vom Zombie ignoriert.
+- Der Angreifer sendet wieder ein SYN/ACK an den Zombie, um die IP ID zu erfahren.
+
+.. supplemental::
 
     Mit einem IDLE Scan kann nicht unterschieden werden, ob der Port geschlossen oder gefiltert ist.
 
@@ -479,7 +479,7 @@ Port Scans mit nmap
 - auch OS fingerprinting
 - u. U. sogar Ermittlung der Versionsnummern von Diensten
 
-.. code:: bash 
+.. code:: bash
     :class: incremental smaller copy-to-clipboard
 
     $ nmap 192.168.178.121 -Pn
@@ -502,13 +502,13 @@ Port Scans mit nmap
 
     Es gibt zwei Arten von OS-Fingerprinting: (1) Aktiv und (2) passiv.
 
-        (1) Bei einem aktiven OS-Fingerprinting-Versuch senden die Angreifer ein Paket an das Zielsystem und warten auf eine Antwort, um den Inhalt des TCP-Pakets zu analysieren. 
-        
-        (2) Bei einem passiven Versuch agieren die Angreifer eher als "Schnüffler", der keine absichtlichen Änderungen oder Aktionen im Netzwerk vornimmt. Passives OS-Fingerprinting ist ein unauffälligerer, aber wesentlich langsamerer Prozess. 
+        (1) Bei einem aktiven OS-Fingerprinting-Versuch senden die Angreifer ein Paket an das Zielsystem und warten auf eine Antwort, um den Inhalt des TCP-Pakets zu analysieren.
+
+        (2) Bei einem passiven Versuch agieren die Angreifer eher als "Schnüffler", der keine absichtlichen Änderungen oder Aktionen im Netzwerk vornimmt. Passives OS-Fingerprinting ist ein unauffälligerer, aber wesentlich langsamerer Prozess.
 
 
 Port Knocking
----------------- 
+----------------
 
 .. class:: incremental list-with-explanations
 
@@ -517,12 +517,12 @@ Port Knocking
 - Knock-Daemon beobachtet das Log-File.
 - Erst nach Erkennen einer vordefinierten (Einmal-)Klopfsequenz öffnet der Knock-Daemon den gewünschten Port für diesen Client.
 - Client kann nun die Verbindung aufbauen.
-- Weiterentwicklung: TCP Stealth 
-  
+- Weiterentwicklung: TCP Stealth
+
   In diesem Fall werden offene Ports dadurch versteckt, dass sie nur auf spezielle SYN-Pakete mit bestimmten Sequenznummern reagieren. Die Sequenznummern sind ggf. kryptografisch abgesichert und basieren auf vorher ausgetauschten Schlüsseln.
 
 .. supplemental::
-    
+
     **Weiterführend**
 
     Alternativen zu einer Knock-Sequenz ist zum Beispiel, dass der Port nur dann als offen gilt, wenn die IP ID eine bestimmte Sequenznummer aufweist.
@@ -536,20 +536,20 @@ Connection Hijacking
 
 Angreifer übernimmt eine bestehende - zum Beispiel eine bereits durch (Einmal-)Passwort authentisierte - Verbindung.
 
-.. image:: images/connection-hijacking.svg 
+.. image:: images/connection-hijacking.svg
     :alt: Connection Hijacking (einfache Variante)
     :align: center
     :height: 800px
 
 
-.. supplemental:: 
+.. supplemental::
 
     TCP/IP-Hijacking ist eine Form eines Man-in-the-Middle-Angriffs. Der Angreifer bestimmt erst die IP-Adressen der beiden Sitzungsteilnehmer.
-    
-    Danach gibt es mehrere Möglichkeiten: 
 
-    - Der Angreifer schickt ("in einer Pause") ein Paket mit der passenden Sequenznummer an den Server. 
-    
+    Danach gibt es mehrere Möglichkeiten:
+
+    - Der Angreifer schickt ("in einer Pause") ein Paket mit der passenden Sequenznummer an den Server.
+
       *(Dies kann dann in einem ACK-Storm enden, was ggf. unterbunden werden muss (zum Beispiel durch das Senden eines RSTs), oder ignoriert werden kann.)*
 
     - Der Angreifer macht einen Client mit einem DoS-Angriff unerreichbar, um sich dann mit dem Anderen zu verbinden, indem er die Netzwerk-ID des ausgeschalteten Clients nutzt.
@@ -572,7 +572,7 @@ Ziel des Angreifers: Lahmlegen eines Dienstes oder des ganzen Systems ...
     Ein ``ping`` (vgl. Internet Control Message Protocol (ICMP)) verwendet üblicherweise kleine Nachrichten, aber die verwendete Länge ist einstellbar.
 
     Falls die Länge zu groß ist ⇒ Buffer Overflow ⇒ Systemabsturz!
-    
+
     Variante: mittels Fragmentierung ließen sich generell übergroße IP-Pakete (>65,536 Byte) erstellen.
 
 
@@ -592,7 +592,7 @@ Denial-of-Service: SYN-flooding Angriff
   ⇒ Anfragen normaler Benutzer werden zurückgewiesen
 
 - Angreifer verwendet i. Allg. IP-Spoofing weswegen Firewalls wirkungslos sind.
-- Abwehr: SYN-Cookies 
+- Abwehr: SYN-Cookies
 
 
 
@@ -609,7 +609,7 @@ SYN-Cookies sind speziell konstruiert initiale Sequenznummern.
 
             <svg width="1700" height="600" viewBox="0 0 1700 600" version="1.1" xmlns="http://www.w3.org/2000/svg">
                 <defs>
-                    <marker 
+                    <marker
                     id="arrow"
                     viewBox="0 0 10 10"
                     refX="10"
@@ -623,11 +623,11 @@ SYN-Cookies sind speziell konstruiert initiale Sequenznummern.
                 <text x="125" y="75" style="font-weight: bolder">Client</text>
                 <line x1="200" y1="100" x2="200" y2="400" style="stroke:rgb(0,0,0);stroke-width:3" />
                 <line x1="200" y1="400" x2="200" y2="550" stroke-dasharray="5,5" style="stroke:rgb(0,0,0);stroke-width:3" />
-                
+
                 <text x="925" y="75" style="font-weight: bolder">Server</text>
                 <line x1="1500" y1="100" x2="1500" y2="400" style="stroke:rgb(0,0,0);stroke-width:3" />
                 <line x1="1500" y1="400" x2="1500" y2="550" stroke-dasharray="5,5" style="stroke:rgb(0,0,0);stroke-width:3" />
-                
+
                 <text x="500" y="75" transform="rotate(4.25)">SYN(1000)</text>
                 <line x1="200" y1="110" x2="1500" y2="190" style="stroke:rgb(0,0,0);stroke-width:3" marker-end="url(#arrow)"/>
             </svg>
@@ -638,7 +638,7 @@ SYN-Cookies sind speziell konstruiert initiale Sequenznummern.
 
             <svg height="600" width="1700" viewBox="0 0 1700 600" version="1.1" xmlns="http://www.w3.org/2000/svg">
                 <defs>
-                    <marker 
+                    <marker
                     id="arrow"
                     viewBox="0 0 10 10"
                     refX="10"
@@ -664,7 +664,7 @@ SYN-Cookies sind speziell konstruiert initiale Sequenznummern.
 
             <svg height="600" width="1800" viewBox="0 0 1800 600" version="1.1" xmlns="http://www.w3.org/2000/svg">
                 <defs>
-                    <marker 
+                    <marker
                     id="arrow"
                     viewBox="0 0 10 10"
                     refX="10"
@@ -675,7 +675,7 @@ SYN-Cookies sind speziell konstruiert initiale Sequenznummern.
                     <path d="M 0 0 L 10 5 L 0 10 z" />
                     </marker>
                 </defs>
-                
+
                 <text x="555" y="325" transform="rotate(4.2)">ACK(with cookie(+1))</text>
                 <line x1="200" y1="300" x2="1500" y2="390" style="stroke:rgb(0,0,0);stroke-width:3" marker-end="url(#arrow)"/>
 
@@ -699,7 +699,7 @@ Opfer wird von sehr vielen Angreifern mit Nachrichten überflutet.
 
     Ein Beispiel: Smurf-Angriff:
 
-    .. image:: images/smurf-angriff.svg 
+    .. image:: images/smurf-angriff.svg
         :alt: Smurf Angriff
         :align: center
         :height: 800px
@@ -733,32 +733,32 @@ Distributed-Reflected-Denial-of-Service Angriff
 
         .. class:: list-with-explanations
 
-        - Es wird eine Anfrage an einen Server gesendet, die eine große Antwort auslöst. 
-      
+        - Es wird eine Anfrage an einen Server gesendet, die eine große Antwort auslöst.
+
           (Z. B. hat(te) der NTP Monlist Befehl eine Antwort, die ca. 200 Fach größer ist als die Anfrage!)
         - Mittels IP-Spoofing wird die IP-Adresse des Opfers als Absenderadresse verwendet.
-        
+
         .. class:: incremental
 
         - Es werden insbesondere Dienste basierend auf UDP verwendet, da hier keine Verbindung aufgebaut werden muss.
 
-    .. image:: images/drdos.svg 
+    .. image:: images/drdos.svg
         :alt: DRDoS Angriff
         :align: center
         :width: 600px
 
 .. class:: incremental smaller
 
-- Nehmen einen signifikanten Teil aller DDoS-Angriffe ein. 
+- Nehmen einen signifikanten Teil aller DDoS-Angriffe ein.
 - Die Tatsache, dass die Sender legitime Server sind, erschwert die Abwehr.
-- :eng:`Egress Filtering` kann helfen, die Verwendung von IP-Spoofing zu verhindern.     
+- :eng:`Egress Filtering` kann helfen, die Verwendung von IP-Spoofing zu verhindern.
 
 
 .. supplemental::
-    
+
     Bereits im Jahr 2018 wurde ein Angriff mit einer Bandbreite von 1,7 TBit/s beobachtet.
 
-    :Egress Filtering: Der Router verwirft alle Pakete, die eine Absenderadresse verwenden, die nicht aus dem eigenen Netzwerk stammt. 
+    :Egress Filtering: Der Router verwirft alle Pakete, die eine Absenderadresse verwenden, die nicht aus dem eigenen Netzwerk stammt.
 
 
 `Distributed Denial-of-Service (DDoS) Angriffe - Beispiel <https://cloud.google.com/blog/products/identity-security/google-cloud-mitigated-largest-ddos-attack-peaking-above-398-million-rps>`__
@@ -795,17 +795,17 @@ Schutz vor DDoS-Angriffen: On-Site Maßnahmen
 
 .. class:: incremental
 
-- Aufrüsten der Ressourcen (z. B. Bandbreite, CPU, RAM, ...) 
-- Exemplarische Sofortmaßnahmen bei aktivem Angriff: 
-  
+- Aufrüsten der Ressourcen (z. B. Bandbreite, CPU, RAM, ...)
+- Exemplarische Sofortmaßnahmen bei aktivem Angriff:
+
   .. class:: incremental smaller
 
   - Whitelisting von IP-Adressen von besonders wichtigen Clients
   - Blacklisting von IP-Adressen aus bestimmten Bereichen
   - Captchas
   - Überprüfung der Browser-Echtheit
-  
-- Anti-DDos Appliances 
+
+- Anti-DDos Appliances
 
 .. admonition:: Achtung
     :class: warning incremental
@@ -818,9 +818,9 @@ Schutz vor DDoS-Angriffen: Off-Site Maßnahmen
 ------------------------------------------------------------
 
 .. class:: incremental list-with-explanations
-  
+
 - Einbinden des ISP
-- Einbinden spezialisierter Dienstleister 
+- Einbinden spezialisierter Dienstleister
 
   (Im Angriffsfall wird mittels BGP-Rerouting der Traffic an den Dienstleister umgeleitet, der dann die DDos Attacke filtert.)
 - Content-Delivery-Networks (CDNs) für statische Inhalte (z. B. Cloudflare, Akamai, ...)
@@ -833,7 +833,7 @@ Password Sniffing
 
 :In der Anfangszeit: unverschlüsselte Übertragung von Passwörtern (telnet, ftp, ...)
 :In der Übergangszeit: Verwendung von Einmal-Passwörtern (S/Key, ...)
-:Heute: Passwörter werden verschlüsselt übertragen (ssh, https, ...) 
+:Heute: Passwörter werden verschlüsselt übertragen (ssh, https, ...)
 
     Zusätzliche Absicherung durch Zwei-Faktor-Authentifizierung (basierend auf Einmalpassworten: TOTP, ...)
 
@@ -853,20 +853,20 @@ Die Idee ist, dass Passwörter nur genau einmal gültig sind und nicht wiederver
 - S/Key: Passwort „wird mit einem Zähler kombiniert“ und dann gehasht.
 
 
-Das S/Key Verfahren 
+Das S/Key Verfahren
 ------------------------------
 
 Einmal-Passwort-System nach Codebuch-Verfahren.
 
-.. stack:: 
+.. stack::
 
-    .. layer:: 
+    .. layer::
 
         **Initialisierung**
 
         .. class:: incremental smaller list-with-explanations
 
-        1) Der Nutzer gibt sein Passwort :math:`W` ein; dies ist der geheime Schlüssel. 
+        1) Der Nutzer gibt sein Passwort :math:`W` ein; dies ist der geheime Schlüssel.
 
            (Sollte :math:`W` bekannt werden, dann ist die Sicherheit des Verfahrens nicht mehr gewährleistet.)
         2) Eine kryptografische Hash-Funktion :math:`H` wird n-mal auf :math:`W` angewandt, wodurch eine Hash-Kette von n einmaligen Passwörtern entsteht. :math:`H(W), H(H(W)), \dots, H^{n}(W)`
@@ -881,8 +881,8 @@ Einmal-Passwort-System nach Codebuch-Verfahren.
         Identifiziere das letzte verwendete Passwort :math:`n`.
 
         .. class:: incremental smaller
-       
-        - Der Server fragt den Nutzer nach dem Passwort :math:`n-1` (d. h. :math:`H^{n-1}(W)`) und übermittelt ggf. auch den Salt. 
+
+        - Der Server fragt den Nutzer nach dem Passwort :math:`n-1` (d. h. :math:`H^{n-1}(W)`) und übermittelt ggf. auch den Salt.
         - Der Server hasht das Passwort und vergleicht es dann mit dem gespeicherten Passwort :math:`H^n(W)`.
         - Ist das Passwort korrekt, dann wird der Nutzer angemeldet und der Server speichert das Passwort :math:`H^{n-1}(W)` als neues Passwort :math:`H^n(W)` und dekrementiert n.
 
@@ -890,7 +890,7 @@ Einmal-Passwort-System nach Codebuch-Verfahren.
 
     Im Original basiert S/Key auf der kryptographischen Hashfunktion MD4. Ein Austausch wäre aber selbstverständlich möglich!
 
-    Intern verwendet S/KEY 64-bit Zahlen. Für die Benutzbarkeit werden diese Zahlen auf sechs kurze Wörter, von ein bis vier Zeichen, aus einem öffentlich zugänglichen 2048-Wörter-Wörterbuch (:math:`2048 = 2^{11}`) abgebildet. Zum Beispiel wird eine 64-Bit-Zahl auf "ROY HURT SKI FAIL GRIM KNEE" abgebildet. 
+    Intern verwendet S/KEY 64-bit Zahlen. Für die Benutzbarkeit werden diese Zahlen auf sechs kurze Wörter, von ein bis vier Zeichen, aus einem öffentlich zugänglichen 2048-Wörter-Wörterbuch (:math:`2048 = 2^{11}`) abgebildet. Zum Beispiel wird eine 64-Bit-Zahl auf "ROY HURT SKI FAIL GRIM KNEE" abgebildet.
 
 
 
@@ -921,7 +921,7 @@ HMAC-based one-time password (HOTP)\ [#]_
         .. container:: incremental
 
                 :math:`truncate(MAC) = extract31(MAC, MAC[(19 × 8 + 4):(19 × 8 + 7)])`
-            
+
         .. class:: incremental
 
         :math:`HOTP\; value = HOTP(K, C)\; mod\; 10^d\qquad` (führende Nullen werden nicht abgeschnitten)
@@ -931,7 +931,7 @@ HMAC-based one-time password (HOTP)\ [#]_
 .. supplemental::
 
     :math:`truncate` verwendet die 4 niederwertigsten Bits des MAC als Byte-Offset :math:`i` in den MAC.
-    Der Wert :math:`19` kommt daher, dass ein SHA-1 :math:`160` Bit hat und :math:`160/8 = 20` Byte. 
+    Der Wert :math:`19` kommt daher, dass ein SHA-1 :math:`160` Bit hat und :math:`160/8 = 20` Byte.
 
     :math:`extract31` extrahiert 31 Bit aus dem MAC. Das höchstwertig Bit wird (wenn es nicht 0 ist) entsprechend maskiert.
     Eine Schwäche des Algorithmus ist, dass beide Seiten den Zähler erhöhen müssen und, falls die Zähler aus dem Tritt geraten, ggf. eine Resynchronisation notwendig ist.
@@ -945,7 +945,7 @@ Time-based one-time password (TOTP)\ [#]_
 
 .. class:: incremental list-with-explanations
 
-- Basierend auf einem vorher ausgetauschten geheimen Schlüssel und der aktuellen Zeit 
+- Basierend auf einem vorher ausgetauschten geheimen Schlüssel und der aktuellen Zeit
 
   Z. B. Unix-Zeit in Sekunden (ganzzahlig) und danach gerundet auf 30 Sekunden.
 
@@ -953,8 +953,8 @@ Time-based one-time password (TOTP)\ [#]_
 - Es wird das HOTP Verfahren mit der Zeit als Zähler verwendet und entweder SHA-256 oder SHA-512 als Hashverfahren, d. h. TOTP :math:`value(K)` = HOTP :math:`value(K, C_T)`, wobei :math:`T` die „aktuelle Zeit“ ist.
 
   :math:`C_T = \lfloor { T - T_0 \over T_X } \rfloor`
-  
-  - :math:`T_X` ist die Länge eines Zeitintervalls (z. B. 30 Sekunden) 
+
+  - :math:`T_X` ist die Länge eines Zeitintervalls (z. B. 30 Sekunden)
   - :math:`T` ist die aktuelle Zeit in Sekunden seit einer bestimmten Epoche
   - :math:`T_0` ist bei Verwendung der Unix-Zeit :math:`0`
   - :math:`C_T` ist somit die Anzahl der Dauern :math:`T_X` zwischen :math:`T_0` und :math:`T`
@@ -965,7 +965,7 @@ Time-based one-time password (TOTP)\ [#]_
 
 .. supplemental::
 
-   Das verfahren verlangt somit, dass die Uhren von Server und Client (hinreichend) synchronisiert sind.
+   Das Verfahren verlangt somit, dass die Uhren von Server und Client (hinreichend) synchronisiert sind.
 
 
 
@@ -999,13 +999,13 @@ SSH ermöglicht die sichere Fernanmeldung von einem Computer bei einem anderen (
         [...] In einigen Fällen haben wir mehrere Millionen SSH-Schlüssel gefunden, die den Zugang zu Produktionsservern in Kundenumgebungen autorisieren, wobei 90 % der Schlüssel tatsächlich ungenutzt sind und für einen Zugang stehen, der zwar bereitgestellt, aber nie gekündigt wurde.
 
         -- `SSH.com (Dez. 2023) <https://www.ssh.com/academy/ssh/protocol>`__
-                                                                                                                                                                
+
 
 Secure Shell (SSH) - Protokoll
 --------------------------------------
 
 
-.. image:: images/ssh/initiation.svg 
+.. image:: images/ssh/initiation.svg
     :alt: SSH Protokoll
     :align: center
     :width: 1850px
@@ -1014,7 +1014,7 @@ Secure Shell (SSH) - Protokoll
 
     Beide Seiten haben einen Public-private Key Schlüsselpaar zur gegenseitigen Authentifizierung
 
-    :User Keys: 
+    :User Keys:
      - ``Authorized keys`` - Serverseitige Datei mit den öffentlichen Schlüsseln der Nutzer
      - ``Identity keys`` - private Schlüssel der Nutzer
 
@@ -1022,7 +1022,7 @@ Secure Shell (SSH) - Protokoll
 
     :Session Keys: werden für die symmetrische Verschlüsselung der Daten in einer Verbindung verwendet. Session Keys (:ger:`Sitzungsschlüssel`) werden während des Verbindungsaufbaus ausgehandelt.
 
-.. supplemental:: 
+.. supplemental::
 
     Im Falle von SSH gibt es kein initiales Vertrauen zwischen Server und Client.
 
@@ -1031,7 +1031,7 @@ Secure Shell (SSH) - Protokoll
 Secure Shell (SSH) - Verbindungsaufbau - Beispiel
 ------------------------------------------------------------
 
-.. container:: scrollable 
+.. container:: scrollable
 
     .. code:: text
         :class: far-far-smaller
@@ -1072,7 +1072,7 @@ Secure Shell (SSH) - Verbindungsaufbau - Beispiel
         debug1: Next authentication method: keyboard-interactive
         debug1: Authentications that can continue: publickey,password,keyboard-interactive,hostbased
         debug1: Next authentication method: password
-        user@example.org's password: 
+        user@example.org's password:
         debug1: Authentication succeeded (password).
         debug1: channel 0: new [client-session]
         debug1: Requesting no-more-sessions@openssh.com
@@ -1094,26 +1094,26 @@ Secure Shell (SSH) - Risiken durch mangelnde Schlüsselverwaltung
 - Es ist nicht bekannt, welche Schlüssel auf welche Systeme Zugriff haben
 - Malware kann SSH-Schlüssel stehlen
 - SSH Keys können ggf. privilegierten Zugriff gewähren
-- SSH Keys können benutzt werden, wenn um Backdoors zu verstecken 
+- SSH Keys können benutzt werden, wenn um Backdoors zu verstecken
 - Server keys erlauben ggf. Man-in-the-Middle-Angriffe
-   
-    
+
+
 SSH Tunneling
 -----------------------
 
 .. class:: list-with-details
 
-- ermöglicht die Übertragung beliebiger Netzwerkdaten über eine verschlüsselte SSH-Verbindung. z. B. 
+- ermöglicht die Übertragung beliebiger Netzwerkdaten über eine verschlüsselte SSH-Verbindung. z. B.
 
-  - um ältere Anwendungen zu verschlüsseln. 
+  - um ältere Anwendungen zu verschlüsseln.
   - um VPNs (Virtual Private Networks) zu implementieren.
   - um über Firewalls hinweg auf Intranetdienste zuzugreifen.
 
-- ermöglicht auch Port-forwarding 
-  
+- ermöglicht auch Port-forwarding
+
   (Lokale Ports werden auf entfernten Rechner weitergeleitet.)
 
-.. image:: images/ssh/tunneling.svg 
+.. image:: images/ssh/tunneling.svg
     :alt: SSH Protokoll
     :align: center
     :width: 1450px
@@ -1126,8 +1126,8 @@ SSH und „Back-tunneling“
 .. class:: incremental
 
 - Der Angreifer richtet einen Server außerhalb des Zielnetzwerks ein
-- Nach Infiltration des Zielsystems verbindet der Angreifer sich von innen mit dem externen SSH-Server.  
-- Diese SSH-Verbindung wird so eingerichtet, dass eine TCP-Port-Weiterleitung von einem Port auf dem externen Server zu einem SSH-Port auf einem Server im internen Netzwerk möglich ist. 
+- Nach Infiltration des Zielsystems verbindet der Angreifer sich von innen mit dem externen SSH-Server.
+- Diese SSH-Verbindung wird so eingerichtet, dass eine TCP-Port-Weiterleitung von einem Port auf dem externen Server zu einem SSH-Port auf einem Server im internen Netzwerk möglich ist.
 - Die meisten Firewalls bieten wenig bis gar keinen Schutz dagegen.
 
 
@@ -1137,18 +1137,18 @@ SSH und „Back-tunneling“
 
 
 
-Schwachstellen in SSH 
+Schwachstellen in SSH
 --------------------------
 
 .. epigraph::
 
     **Nearly 11 million SSH servers vulnerable to new Terrapin attacks**
-    
+
     [...]
-    It [The Terrapin attack] manipulates sequence numbers during the handshake process to compromise the integrity of the SSH channel, particularly when specific encryption modes like ChaCha20-Poly1305 or CBC with Encrypt-then-MAC are used. 
+    It [The Terrapin attack] manipulates sequence numbers during the handshake process to compromise the integrity of the SSH channel, particularly when specific encryption modes like ChaCha20-Poly1305 or CBC with Encrypt-then-MAC are used.
     [...]
 
-    By Bill Toulas  
+    By Bill Toulas
 
 
     -- `January 3, 2024 10:06 AM <https://www.bleepingcomputer.com/news/security/nearly-11-million-ssh-servers-vulnerable-to-new-terrapin-attacks/>`__
@@ -1194,17 +1194,17 @@ Schwachstellen in SSH
         1. Schutz gegen Lauscher
         2. Man-in-the-middle
         3. Der Benutzer wählt eine Zufallszahl :math:`r`, hier :math:`r = 769`. Berechnet wird nun:
-        
+
            :math:`769^2\; mod\; 1000 = 361`
 
            :math:`361^2\; mod\; 1000 = 321`
-        
+
            :math:`321^2\; mod\; 1000 = 41`
-        
+
            :math:`41^2\; mod\; 1000 = 681`
-        
+
            :math:`681^2\; mod\; 1000 = 761`
-        
+
            :math:`761^2\; mod\; 1000 = 121`
 
         4. Fünfmal. Der Benutzer erhält folgende Passwortliste: :math:`761, 681, 41, 321, 361`
@@ -1226,7 +1226,7 @@ Schwachstellen in SSH
 
 .. exercise:: HOTP
 
-    Gegeben sei der folgende MAC: 
+    Gegeben sei der folgende MAC:
 
     .. csv-table::
         :class: far-smaller
@@ -1239,10 +1239,10 @@ Schwachstellen in SSH
     .. solution::
         :pwd: HelloWorldAlsHOTP
 
-        Der Offset ergibt sich aus den letzten 4 Bits und ist demzufolge :math:`3`. 
-        
+        Der Offset ergibt sich aus den letzten 4 Bits und ist demzufolge :math:`3`.
+
         Die Bytefolge ist somit: ``ae 1e 35 d5``. Wir müssen jetzt das erste Bit maskieren, bevor wir die Dezimalzahl berechnen. D.h. vor der Anwendung der Modulfunktion wird das erste Bit auf 0 gesetzt und somit ist die relevante Bytefolge: ``2e 1e 35 d5``. Als Dezimalzahl ergibt sich: :math:`773 731 797` und das Token somit zu: :math:`773 731 797\; mod\; 10^6 = 731 797`.
-        
+
 
 
 .. class:: integrated-exercise transition-move-left
@@ -1252,18 +1252,18 @@ Schwachstellen in SSH
 
 .. exercise:: TOTP
 
-  Identifizieren Sie die Vor- und Nachteile von TOTP gegenüber S/Key und fragen Sie sich an welcher Stelle es (aus Sicherheitsperspektive) mögliche Schwächen gibt? 
+  Identifizieren Sie die Vor- und Nachteile von TOTP gegenüber S/Key und fragen Sie sich an welcher Stelle es (aus Sicherheitsperspektive) mögliche Schwächen gibt?
 
   Die Standardzeitspanne ist 30 Sekunden. Welcher Konsequenzen hätte eine deutliche Verlängerung bzg. Verkürzung der Zeitspanne?
-  
+
   .. solution::
     :pwd: TOTPandSKey
 
     - Bei TOTP gibt es keine beschränkte Liste von Passwörtern. Die Passwörter werden dynamisch generiert und es stehen „unendlich“ viele zur Verfügung. Es kann auch keine Verwirrung über das nächste bzw. bereits verbrauchte Passwort geben. Die Synchronisation ist ggf. einfacher.
     - Bei TOTP gibt es ein Shared Secret, das auf dem Server gespeichert wird. Bei S/Key werden keine entsprechenden Informationen auf dem Server gespeichert. D. h. selbst wenn der Server kompromittiert wird, kann nicht auf das ursprüngliche Secret geschlossen werden.
     - SKey verwendet ursprünglich MD4, was heute als unsicher gilt. TOTP verwendet (z. B.) HMAC-SHA-256, was als sicher gilt. Dies ist jedoch kein konzeptioneller Unterschied und eine Einsatz sicherer Hashverfahren ist/wäre auch bei SKey möglich.
-   
-    - Kürzer: mehr Sicherheit, aber ggf. auch schlechtere Bedienbarkeit. 
+
+    - Kürzer: mehr Sicherheit, aber ggf. auch schlechtere Bedienbarkeit.
     - Länger: ggf. bessere Bedienbarkeit (man muss sich nicht beeilen.)
     - Sehr lange (z. B. >> 10 min): ggf. auch schlechtere Bedienbarkeit, da man sich nach ein Logout nicht direkt wieder anmelden kann.
 
@@ -1285,7 +1285,7 @@ Schwachstellen in SSH
 
     1. Ressourcenverschwendung wenn gerade kein Angriff stattfindet. Wenn der Angriff stattfindet, dann ist es immer noch möglich bzw. sogar wahrscheinlich, dass die Ressourcen nicht ausreichen.
     2. (vgl. https://www.cloudflare.com/de-de/learning/ddos/ddos-low-and-slow-attack/)
-    
+
        Ein Low-and-Slow-Angriff ist eine Art von DoS- oder DDoS-Angriff, der sich auf einen kleinen Strom sehr langsamen Traffics stützt, der auf Anwendungs- oder Serverressourcen abzielt. Im Gegensatz zu herkömmlichen Brute-Force-Angriffen benötigen Low-and-Slow-Angriffe nur sehr wenig Bandbreite und können schwer bekämpft werden, da sie Traffic erzeugen, der nur sehr schwer von normalem Traffic zu unterscheiden ist. Während groß angelegte DDoS-Angriffe wahrscheinlich schnell bemerkt werden, können Low-and-Slow-Attacken über lange Zeiträume unentdeckt bleiben, während der Dienst für echte Nutzer verweigert oder verlangsamt wird.
 
        Da sie nicht viele Ressourcen benötigen, können Low-and-Slow-Angriffe von einem einzigen Computer aus erfolgreich durchgeführt werden, im Gegensatz zu verteilten Angriffen, für die ein Botnet erforderlich sein kann. Zwei der beliebtesten Tools für Low-and-Slow-Angriffe heißen Slowloris und R.U.D.Y.
@@ -1297,7 +1297,7 @@ Schwachstellen in SSH
        .. rubric:: Slowloris
 
        Slowloris ist ein *low and slow* DDoS-Angriffsvektor. Die Idee des Slowloris-Angriffs besteht darin, den gesamten TCP-Stack für den HTTP/S-Daemon zu sättigen. Dies geschieht, indem langsam Verbindungen geöffnet und dann eine unvollständige Anfrage gesendet wird, um die Verbindung so lange wie möglich am Leben zu erhalten. Das Tool geht dabei langsam vor, so dass es in einigen Fällen möglich ist, dass ein einziger Angreifer einen Webserver zum Absturz bringen kann. Wenn das Limit der gleichzeitigen Verbindungen auf dem angegriffenen Server erreicht ist, kann der Server nicht mehr auf legitime Anfragen von anderen Benutzern reagieren, was zu einer Dienstverweigerung führt.
-    
+
        Der Slowloris-Angriff zielt darauf ab, die Verbindungstabelle zu füllen, so dass der Server nicht mehr in der Lage ist, neue legitime Anfragen von legitimen Benutzern zu bedienen. Dies wird durch den Einsatz von zwei Hauptfunktionen erreicht: 1. Instabile Öffnungsrate für neue Verbindungen - neue TCP-Verbindungen werden stoßweise angefordert, wobei zwischen jedem Stoß eine gewisse Zeit gewartet wird, was es schwierig macht, von ratenbasierten (:eng:`rate limiting`) Abhilfemaßnahmen entdeckt zu werden. 2. Aufrechterhaltung neu eingerichteter TCP-Verbindungen - neu eingerichtete TCP-Verbindungen werden aufrechterhalten, indem Teildaten über mehrere HTTP-Anforderungen unter Verwendung derselben TCP-Verbindung gesendet werden. Dadurch wird das Ziel gezwungen, die Verbindungen offen zu halten, während gleichzeitig Platz in der Verbindungstabelle und Speicherplatz verbraucht werden.
 
 
@@ -1309,7 +1309,7 @@ Schwachstellen in SSH
 Firewalls
 ------------
 
-Unabhängiges Netz - „Ideale Situation“ 
+Unabhängiges Netz - „Ideale Situation“
 ---------------------------------------------------
 
 .. image:: images/firewalls/all-save.svg
@@ -1319,9 +1319,9 @@ Unabhängiges Netz - „Ideale Situation“
 
 .. class:: incremental
 
-:Vorteile: 
-    
-    - keinerlei Angriffsmöglichkeiten von außen 
+:Vorteile:
+
+    - keinerlei Angriffsmöglichkeiten von außen
 
 .. class:: incremental
 
@@ -1338,8 +1338,8 @@ Unabhängiges Netz - „Ideale Situation“
 Von der Notwendigkeit des Schutzes von Rechnern
 --------------------------------------------------------
 
-.. epigraph:: 
-    
+.. epigraph::
+
     [...] Züger und sein Team hätten [...] erst kürzlich ein Experiment durchgeführt, [...]. Sie hätten einen Computer "ohne jeglichen Schutz" mit dem Internet verbunden, um zu sehen, wie lange es dauere, bis er befallen sei. Konkrete Details zur Konfiguration dieses Systems werden zwar nicht genannt, angeblich war der Rechner aber schon nach 20 Minuten infiltriert.
 
     -- `Golem.de 6.2.2024 <https://www.golem.de/news/iot-hacker-missbrauchen-zahnbuersten-fuer-ddos-angriffe-2402-181921.html>`__
@@ -1354,7 +1354,7 @@ Schutzschicht zwischen internem und externem Netz
     :align: center
     :height: 770px
 
-- Kontrolle des Nachrichtenverkehrs durch Filterung 
+- Kontrolle des Nachrichtenverkehrs durch Filterung
 - begrenzte Isolation mit begrenztem Schutz
 
 .. supplemental::
@@ -1375,7 +1375,7 @@ Realisierung von Virtual Private Networks (VPN)
 
 .. supplemental::
 
-    Ziel ist es aktive und passive Angriffe zu unterbinden. 
+    Ziel ist es aktive und passive Angriffe zu unterbinden.
     Selbst bei verschlüsselten Verbindungen kann die Verkehrsflussanalyse noch Informationen liefern über die Verbindungen liefern.
 
 
@@ -1391,12 +1391,12 @@ Kommerzielle VPNs für Endnutzer
 
     **Motivation**
 
-    - Schutz der Privatsphäre; der ISP kennt nicht mehr die Webseiten, die man aufruft. 
+    - Schutz der Privatsphäre; der ISP kennt nicht mehr die Webseiten, die man aufruft.
     - Die IP-Adresse des Nutzers ist den aufgerufenen Webseiten nicht mehr bekannt und kann deswegen der Umgehung von Geo-Blocking dienen.
 
     **Nachteile?**
 
-    - Vertrauen in den VPN-Anbieter muss vorhanden sein. Insbesondere, beim Einsatz zum Stärken der Privatsphäre, muss der VPN-Anbieter vertrauenswürdig sein und sollte ein so genannter „no-log“ Anbieter sein. 
+    - Vertrauen in den VPN-Anbieter muss vorhanden sein. Insbesondere, beim Einsatz zum Stärken der Privatsphäre, muss der VPN-Anbieter vertrauenswürdig sein und sollte ein so genannter „no-log“ Anbieter sein.
     - Es gibt auch (scheinbar kostenlose) VPN-Anbieter, die die Daten der Nutzer dann aber verkaufen (ehemals: `Facebook Onavo <https://techcrunch.com/2019/02/21/facebook-removes-onavo/?guccounter=1&guce_referrer=aHR0cHM6Ly93d3cuZ29vZ2xlLmNvbS8&guce_referrer_sig=AQAAAGVIppEgEOd9Z0FoMbmk2TCleRmD9wCMWDmIzGYEjIo1c7Cmz8NpiSoibthFG5IZQzmZ-kiJq-5Wj1bj21byh7YUrC_aSJJk1Bapwz80GSgzLFS-LHCF2OOetUYLSKwEG7W75znuqJJBJcNTTbtJ1UGB95Yu90saK9aIIkEywcRq>`__).
 
 
@@ -1408,15 +1408,15 @@ Zentraler Schutz des gesamten internen Netzwerks durch:
 
 .. class:: incremental
 
-- Paket Filter (:eng:`Packet Filtering`) 
+- Paket Filter (:eng:`Packet Filtering`)
 
   .. class:: list-with-explanations
 
   - Blockieren bestimmter IP-Empfänger-Adressen (extern / intern)
   - Blockieren bestimmter IP-Absender-Adressen (extern / intern)
-    
+
     (z. B. aus dem Internet mit internen IP-Absender-Adressen)
-  
+
   - Blockieren bestimmter Dienste; ggf. nur für bestimmte IP-Adressen
 
 - Filter auf Anwendungsebene (:eng:`Application-level Filtering`)
@@ -1424,7 +1424,7 @@ Zentraler Schutz des gesamten internen Netzwerks durch:
   .. class:: list-with-explanations
 
   - inhaltsbezogene Filterung der Verkehrsdaten eines Dienstes
-  
+
     (z. B. Virenfilter oder Spamfilter)
   - wirkungslos bei verschlüsselten Verkehrsdaten
 
@@ -1455,13 +1455,13 @@ Realisierungsmöglichkeiten von Firewalls
 .. class:: incremental
 
 - Hardware-Firewall
- 
+
   - Screening Router
   - Application Gateway (auch Bastion Host)
-  
+
     - Proxy-Server für bestimmte Dienste
-    - Client-Software (HTTP-Browser, telnet, ftp, ...) 
-    - Server-Software 
+    - Client-Software (HTTP-Browser, telnet, ftp, ...)
+    - Server-Software
 
 - Software-Firewall (*Personal Firewall*)
 
@@ -1486,7 +1486,7 @@ Dual-Homed Host
 
 - zwei Netzwerkkarten: ggf. private interne Adressen
 - Screening Router & Gate: Packet Filter und Application-Level Filter
-- Proxy-Dienste installieren 
+- Proxy-Dienste installieren
 - Benutzer-Logins von extern
 
 .. class:: incremental
@@ -1506,34 +1506,34 @@ Screening Router
 
         Programmierbarer Hardwarerouter mit simplen Filterfunktionen:
 
-        - nur Paket-Header prüfen  
+        - nur Paket-Header prüfen
         -  schnelle Auswertung ermöglicht hohen Durchsatz
 
         - Realisierung eines Packet Filters
 
         **Bewertung**
 
-        .. container:: two-columns 
+        .. container:: two-columns
 
             .. container:: incremental column no-separator
-                
+
                 .. class:: positive-list
 
                 - einfach und billig
                 - flexibel
-                
+
             .. container:: incremental column
 
                 .. class:: negative-list
 
                 - schwer zu testen
                 - Protokollierung
-                - Fernwartung 
-                - keine Inhaltsfilterung 
+                - Fernwartung
+                - keine Inhaltsfilterung
 
     .. container:: column
 
-        .. image:: images/firewalls/screening-router.svg 
+        .. image:: images/firewalls/screening-router.svg
             :alt: Screening Router
             :class: margin-1em
             :align: center
@@ -1544,7 +1544,7 @@ Screening Router
 Screened Host
 -----------------
 
-.. image:: images/firewalls/screened-host.svg 
+.. image:: images/firewalls/screened-host.svg
     :alt: Screened Host
     :align: right
     :class: margin-1em padding-left-1em
@@ -1557,7 +1557,7 @@ Screened Host
   - Pakete von / an interne Rechner (nicht Gate)
   - Source-Routed Pakete
 
-- von extern nur Gate sichtbar 
+- von extern nur Gate sichtbar
 - Pakete von intern nur via Gate
 - Gate bietet Proxy-Server (z. B. für E-Mail)
 
@@ -1594,7 +1594,7 @@ Das Ziel der Konfiguration muss eine minimale angreifbare Oberfläche sein.
 
     Die Rechte von ``/bin/sh`` auf 500 setzen bedeutet, dass nur der Eigentümer (root) es ausführen kann.
 
-    Default: 
+    Default:
 
     .. code:: sh
         :class: far-smaller
@@ -1607,7 +1607,7 @@ Das Ziel der Konfiguration muss eine minimale angreifbare Oberfläche sein.
 Screened Subnet
 ----------------
 
-.. image:: images/firewalls/screened-subnet.svg 
+.. image:: images/firewalls/screened-subnet.svg
     :alt: Screened Subnet
     :align: right
     :width: 950px
@@ -1640,7 +1640,7 @@ Intrusion Detection Systeme (IDS)
     .. class:: incremental
 
     - Firewalls alleine sind zu statisch und deswegen häufig nicht ausreichend
-    - bessere Aufzeichnung und flexiblere Erkennung notwendig 
+    - bessere Aufzeichnung und flexiblere Erkennung notwendig
     - angepasste Reaktion notwendig
 
 .. container:: incremental
@@ -1653,7 +1653,7 @@ Intrusion Detection Systeme (IDS)
 
     Miteinander verwandt bzw. typischerweise in einem Produkt zu finden:
 
-    - Intrusion Detection (IDS) 
+    - Intrusion Detection (IDS)
     - Intrusion Response (IRS)
     - Intrusion Prevention (IPS)
 
@@ -1672,9 +1672,9 @@ IDS-Erkennungstechniken
 .. admonition:: Probleme
     :class: incremental
 
-    - Fälschlicherweise gemeldete Angriffe (false positives) 
+    - Fälschlicherweise gemeldete Angriffe (false positives)
     - nicht gemeldete Angriffe (false negatives) (insbesondere bei neuartigen Angriffen)
-    - Echtzeitanforderung, insbesondere bei Hochgeschwindigkeitsnetzen 
+    - Echtzeitanforderung, insbesondere bei Hochgeschwindigkeitsnetzen
     - Aufzeichnung bei Netzwerken mit Switches ( ⇒ spez. SPAN Port)
     - Sensoren sollen unbeobachtbar sein (*stealth*)
 
@@ -1697,7 +1697,7 @@ IDS-Erkennungstechniken
     2. Benennen Sie zwei konzeptionelle Grenzen von Firewalls. D. h. zwei Szenarien gegen die Firewalls nicht schützen können.
 
     3. Für welche der folgenden Cybersicherheitsstrategien können Firewalls eingesetzt werden:
-    
+
        1. Angriffe vermeiden
        2. Angriffe erkennen
        3. Angriffe abwehren/Angriffen entgegenwirken
@@ -1719,7 +1719,7 @@ IDS-Erkennungstechniken
            - Vertrauenswürdigkeit der Kommunikationspartner.
 
         3. Die Hauptaufgabe von Firewalls ist es Angriffen entgegenzuwirken (3.). Eine Reaktion auf Angriffe ist für klassische Firewalls nicht möglich. Eine Reaktion auf Angriffe ist Aufgabe von Intrusion Detection Systemen. Moderne Firewalls integrieren jedoch häufig auch Funktionen von *Intrusion Detection Systemen*. (Angriffe können nicht vermieden werden, da dies nicht in der Macht der Firewall liegt. Klassische/Einfache Firewalls können keine Angriffe erkennen.)
-        4. ... die Mails sollen ja den Mailserver erreichen; eine inhaltsbasierte Beurteilung des Inhalts einer Mail ist nicht Aufgabe einer Firewall. 
+        4. ... die Mails sollen ja den Mailserver erreichen; eine inhaltsbasierte Beurteilung des Inhalts einer Mail ist nicht Aufgabe einer Firewall.
 
 
 
@@ -1727,7 +1727,7 @@ IDS-Erkennungstechniken
     Phishing E-Mails im Umlauf
 
     Hallo Michael Eichberg,
-    
+
     wir möchten Sie darüber informieren, dass derzeit betrügerische Phishing E-Mails im Umlauf sind.
 
     Diese E-Mails behaupten, dass mit der Kamera Ihres Geräts kompromittierende Aufnahmen von Ihnen gemacht wurden und Ihr Gerät durch einen Virus oder Trojaner infiziert ist. Die Absender fordern daraufhin eine Zahlung in Bitcoin und bauen durch Folgemails zusätzlichen Druck auf.
@@ -1735,9 +1735,9 @@ IDS-Erkennungstechniken
     Oftmals erwecken diese Nachrichten mit einer Absenderadresse unter Ihrer Domain den Eindruck, von STRATO oder sogar von Ihrer eigenen E-Mail-Adresse versendet worden zu sein – das ist jedoch nicht der Fall. Bitte ignorieren Sie diese betrügerischen E-Mails.
 
     Um Sie vor solchen Angriffen zu schützen, haben wir die DMARC-Einstellungen für Ihre Domains aktiviert. Dies sorgt dafür, dass unautorisierte E-Mails von Ihren Domains abgelehnt werden und somit gar nicht erst zugestellt werden können. Falls Sie das nicht wünschen, können Sie dies unter den DNS Einstellungen Ihrer Domain jederzeit durch einen Klick auf "Eigene DMARC-Regel" wieder rückgängig machen. Eine Anleitung dazu finden Sie in unserem FAQ-Artikel.
-            
+
     Tipp: Wenn Sie eine E-Mail von STRATO erhalten haben und unsicher sind, ob diese echt ist, nutzen Sie unseren STRATO Validierungsservice, um sofort herauszufinden, ob es sich um einen Phishing-Versuch handelt.
-            
+
     Bei Fragen stehen wir Ihnen gerne zur Verfügung. Sie erreichen uns wie gewohnt über unseren Hilfe & Kontakt-Bereich.
 
     Mit freundlichen Grüßen
