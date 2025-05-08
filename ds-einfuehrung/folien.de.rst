@@ -6,7 +6,7 @@
     :id: lecture-ds-einfuehrung
     :first-slide: last-viewed
     :master-password: WirklichSchwierig!
-    
+
 .. include:: ../docutils.defs
 
 
@@ -24,12 +24,12 @@ Ein weitgefasster Überblick über verteilte Systeme.
 
 .. supplemental::
 
-  :Folien: 
+  :Folien:
 
       |html-source|
 
       |pdf-source|
-      
+
 
   :Fehler melden:
 
@@ -40,10 +40,10 @@ Ein weitgefasster Überblick über verteilte Systeme.
 .. container:: footer-left incremental peripheral
 
     Dieser Foliensatz basiert in Teilen auf Folien von:
-    
+
     (a) Maarten van Steen (Veröffentlicht zum Buch *Distributed Systems*)
 
-    (b) Henning Pagnia (basierend auf seiner Vorlesung *Verteilte Systeme*). 
+    (b) Henning Pagnia (basierend auf seiner Vorlesung *Verteilte Systeme*).
 
     Alle Fehler sind meine eigenen.
 
@@ -64,7 +64,7 @@ Empfohlene Literatur
 ---------------------
 
 .. image:: screenshots/distributed-systems.net.png
-    :width: 75%
+    :class: highdpi
     :align: center
 
 .. supplemental::
@@ -72,30 +72,28 @@ Empfohlene Literatur
     Ergänzend bzw. für interessierte Studierende:
 
     .. image:: screenshots/microservices.jpg
-        :width: 70%
         :align: center
-        :class: trbl-shadow 
+        :class: trbl-shadow highdpi
 
 
 
 
-Empfohlener Podcast: `SE-Radio <https://se-radio.net>`__
+Podcast: `SE-Radio <https://se-radio.net>`__
 -----------------------------------------------------------
 
 .. image:: screenshots/se-radio.net.png
-    :width: 75%
+    :class: highdpi
     :align: center
 
 
 
-Empfohlener Podcast: `Thoughtworks Technology Podcast <https://www.thoughtworks.com/en-de/insights/podcasts/technology-podcasts>`__
+Podcast: `Thoughtworks Technology Podcast <https://www.thoughtworks.com/en-de/insights/podcasts/technology-podcasts>`__
 -------------------------------------------------------------------------------------------------------------------------------------
 
-.. image:: screenshots/thoughtworks-technology-podcast.png  
-    :width: 70%
+.. image:: screenshots/thoughtworks-technology-podcast.png
     :align: center
-    :class: trbl-shadow
-    
+    :class: highdpi trbl-shadow
+
 
 
 .. class:: new-section transition-fade
@@ -104,7 +102,7 @@ Verteilte Systeme - Beschreibung und Eigenschaften
 ------------------------------------------------------------
 
 
-Verteilt vs. Dezentralisiert 
+Verteilt vs. Dezentralisiert
 -------------------------------------------------------------------
 
 .. image:: images/distributed-vs-decentralized.svg
@@ -112,7 +110,7 @@ Verteilt vs. Dezentralisiert
     :width: 100%
     :class: icon
 
-.. supplemental:: 
+.. supplemental::
 
     :ger:`Verteilt vs. Dezentralisiert` ≘ :eng:`Distributed vs. Decentralized`
 
@@ -132,28 +130,28 @@ Verteilt vs. Dezentralisiert
 Häufige Missverständnisse bzgl. zentralisierter Systeme
 --------------------------------------------------------
 
-.. class:: incremental-list 
+.. class:: incremental-list
 
 1. **Zentralisierte Lösungen lassen sich nicht skalieren**
-         
+
    Es gilt zwischen logischer und physischer Zentralisierung zu unterscheiden. Zum Beispiel ist das *Domain Name System*:
 
    - logisch zentralisiert
    - physisch (massiv) verteilt
    - dezentralisiert über mehrere Organisationen
-  
+
 2. **Zentralisierte Lösungen haben einen Single Point of Failure**
-      
-   Im Allgemeinen nicht zutreffend (z. B. DNS). 
-    
+
+   Im Allgemeinen nicht zutreffend (z. B. DNS).
+
    Ein einzelne mögliche Fehlerquelle ist weiterhin oft:
 
    - leichter zu verwalten
    - einfacher robuster zu machen
 
-.. supplemental:: 
-    
-    .. warning:: 
+.. supplemental::
+
+    .. warning::
 
         Es gibt viele, schlecht begründete Missverständnisse in Bezug auf, z. B. Skalierbarkeit, Fehlertoleranz oder Sicherheit. Wir müssen Fähigkeiten entwickeln, mit denen verteilte Systeme leicht verstanden werden können, um solche Missverständnisse zu vermeiden.
 
@@ -182,7 +180,7 @@ Entwurfsziele verteilter Systeme
 
 .. class:: incremental-list dhbw-list
 
-- `gemeinsame Nutzung von Ressourcen`_ 
+- `gemeinsame Nutzung von Ressourcen`_
 - `Verteilungstransparenz`_ (:eng:`Distribution Transparency`)
 - `Offenheit`_
 - `Skalierbarkeit`_
@@ -210,19 +208,19 @@ Gemeinsame Nutzung von Ressourcen - Examples
 
 .. class:: new-subsection transition-fade
 
-Verteilungstransparenz 
+Verteilungstransparenz
 -------------------------------------------------------------
 
 (:eng:`Distribution Transparency`)
 
 
-Definition 
+Definition
 ----------------------------------------------------------
 
 .. definition::
 
     .. rubric:: Verteilungstransparenz
-    
+
     Transparenz beschreibt die Eigenschaft, dass ein verteiltes System versucht, die Tatsache zu verbergen, dass seine Prozesse und Ressourcen physisch auf mehrere Computer verteilt sind, die möglicherweise durch große Entfernungen voneinander getrennt sind.
 
 .. container:: incremental margin-top-2em
@@ -231,17 +229,17 @@ Definition
 
 
 
-Aspekte der Verteilungstransparenz 
+Aspekte der Verteilungstransparenz
 ----------------------------------------------------------------------------
 
-.. csv-table:: 
+.. csv-table::
     :class: incremental-table-rows booktabs
     :stub-columns: 1
 
     Datenzugriff, Verbergen von Unterschieden in der Datendarstellung und der Art des Zugriffs auf ein lokales bzw. entferntes Objekt
     Ort der Datenhaltung, "Verbergen, wo sich ein Objekt befindet"
     Verschieben, "Verbergen, dass ein Objekt während der Verwendung an einen anderen Ort verschoben werden kann"
-    Migration, "Verbergen, dass ein Objekt an einen anderen Ort verschoben werden kann" 
+    Migration, "Verbergen, dass ein Objekt an einen anderen Ort verschoben werden kann"
     Replikation, "Verbergen, dass ein Objekt repliziert wird"
     Nebenläufigkeit, "Verbergen, dass ein Objekt von mehreren unabhängigen Benutzern gemeinsam genutzt werden kann"
     Fehlertransparenz, Verbergen des Ausfalls und der Wiederherstellung eines Objekts
@@ -257,7 +255,7 @@ Grad der erreichbaren Verteilungstransparenz
 
 .. observation::
 
-    Eine vollständige Verteilungstransparenz ist nicht erreichbar. 
+    Eine vollständige Verteilungstransparenz ist nicht erreichbar.
 
 .. container:: incremental
 
@@ -270,8 +268,8 @@ Grad der erreichbaren Verteilungstransparenz
 - Man kann einen langsamen Computer nicht von einem ausgefallenen Computer unterscheiden.
 - Man kann nie sicher sein, dass ein Server tatsächlich eine Operation durchgeführt hat, bevor er abgestürzt ist.
 - Vollständige Transparenz kostet Performance und legt die Verteilung des Systems offen.
-  
-  - Die Replikate exakt auf dem Stand des Masters zu halten, kostet Zeit 
+
+  - Die Replikate exakt auf dem Stand des Masters zu halten, kostet Zeit
   - Schreibvorgänge werden zur Fehlertoleranz sofort auf die Festplatte übertragen
 
 
@@ -288,30 +286,30 @@ Die Verteilung offen zu legen, kann Vorteile bringen
 .. observation::
     :class: incremental
 
-    Verteilungstransparenz ist ein hehres Ziel, aber oft schwer zu erreichen, und häufig auch nicht erstrebenswert. 
+    Verteilungstransparenz ist ein hehres Ziel, aber oft schwer zu erreichen, und häufig auch nicht erstrebenswert.
 
 
 
 .. class:: new-subsection transition-fade
 
-Offene verteilte Systeme   
+Offene verteilte Systeme
 -------------------------------------------------------------
 
 .. _offenheit:
 
-\ 
+\
 
 
 Offene verteilte Systeme
 ----------------------------------
 
-.. definition:: 
+.. definition::
 
-    Ein offenes verteiltes System bietet Komponenten an, die leicht von anderen Systemen verwendet oder in andere Systeme integriert werden können. 
-    
+    Ein offenes verteiltes System bietet Komponenten an, die leicht von anderen Systemen verwendet oder in andere Systeme integriert werden können.
+
     Ein offenes verteiltes System besteht selbst oft aus Komponenten, die von woanders stammen.
 
-.. container:: incremental 
+.. container:: incremental
 
     Offene verteilte Systeme müssen in der Lage sein, mit Diensten anderer (offener) Systeme zu interagieren, unabhängig von der zugrunde liegenden Umgebung:
 
@@ -319,28 +317,28 @@ Offene verteilte Systeme
 
     - Sie sollten wohl-definierte Schnittstellen korrekt realisieren
     - Sie sollten leicht mit anderen Systemen interagieren können
-    - Sie sollten die Portabilität von Anwendungen unterstützen 
+    - Sie sollten die Portabilität von Anwendungen unterstützen
     - Sie sollten leicht erweiterbar sein
 
 .. supplemental::
-    
+
     Ein Beispiel sind Authentifizierungsdienste, die von vielen verschiedenen Anwendungen genutzt werden können.
 
 
-Vorgaben/Richtlinien vs. Umsetzungen 
+Vorgaben/Richtlinien vs. Umsetzungen
 --------------------------------------------------
 
-.. supplemental:: 
+.. supplemental::
 
     :eng:`Policies vs. Mechanisms` ≘ :ger:`Vorgaben/Richtlinien vs. Umsetzungen`
-    
+
 .. rubric:: Richtlinien für die Umsetzung von Offenheit
 
 .. class:: incremental-list
 
 - Welchen Grad an Konsistenz benötigen wir für Daten im Client-Cache?
 - Welche Operationen erlauben wir heruntergeladenem Code?
-- Welche QoS-Anforderungen passen wir angesichts schwankender Bandbreiten an? 
+- Welche QoS-Anforderungen passen wir angesichts schwankender Bandbreiten an?
 - Welchen Grad an Geheimhaltung benötigen wir für die Kommunikation?
 
 .. class:: incremental
@@ -351,7 +349,7 @@ Vorgaben/Richtlinien vs. Umsetzungen
 
 - Ermöglichung der (dynamischen) Einstellung von Caching-Richtlinien
 - Unterstützung verschiedener Vertrauensstufen für mobilen Code
-- Bereitstellung einstellbarer QoS-Parameter pro Datenstrom 
+- Bereitstellung einstellbarer QoS-Parameter pro Datenstrom
 - Angebot verschiedener Verschlüsselungsalgorithmen
 
 .. supplemental::
@@ -400,8 +398,8 @@ Es geht im Wesentlichen um das Ver- und Entschlüsseln von Daten (:math:`X`) mit
 
     .. card:: padding-1em
 
-        :math:`E(K,X)` bedeutet, dass wir die Nachricht X mit dem Schlüssel :math:`K`  verschlüsseln (:eng:`encryption`). 
-        
+        :math:`E(K,X)` bedeutet, dass wir die Nachricht X mit dem Schlüssel :math:`K`  verschlüsseln (:eng:`encryption`).
+
         :math:`D(K,X)` bezeichnet die Umkehrfunktion, die die Daten wieder entschlüsselt (:eng:`decryption`).
 
     .. card:: trbl-shadow padding-1em
@@ -411,27 +409,27 @@ Es geht im Wesentlichen um das Ver- und Entschlüsseln von Daten (:math:`X`) mit
         Der Schlüssel zur Verschlüsselung ist identisch mit dem Schlüssel zur Entschlüsselung (:eng:`decryption` (:math:`D`)).
 
         .. math::
-            X = D(K,E(K,X)) 
-    
+            X = D(K,E(K,X))
+
     .. card:: trbl-shadow padding-1em
 
         .. rubric:: Asymmetrische Verschlüsselung
 
         Wir unterscheiden zwischen privaten (:math:`PR`) und öffentlichen Schlüsseln (:math:`PU`) (:math:`PU` :math:`\neq` :math:`PR`). Ein privater und ein öffentlicher Schlüssel bilden immer ein Paar. Der private Schlüssel ist immer geheim zu halten.
-        
+
         .. deck:: incremental
 
             .. card::
 
                 **Verschlüsselung von Nachrichten**
-                
+
                 Alice sendet eine Nachricht an Bob mit Hilfe des öffentlichen Schlüssels von Bob.
 
                 .. math::
                     Y = E(PU_{Bob},X) \\
-                    X = D(PR_{Bob},Y) 
+                    X = D(PR_{Bob},Y)
 
-            .. card:: 
+            .. card::
 
                 **Signierung von Nachrichten**
 
@@ -443,8 +441,8 @@ Es geht im Wesentlichen um das Ver- und Entschlüsseln von Daten (:math:`X`) mit
 
 
 
-Sicherheit - Sicheres Hashing 
-------------------------------------------------------- 
+Sicherheit - Sicheres Hashing
+-------------------------------------------------------
 
 Eine sichere Hash-Funktion :math:`Digest(X)` gibt eine Zeichenkette fester Länge (:math:`H`) zurück.
 
@@ -481,19 +479,19 @@ Zwischenfrage
 
     Wenn Alice eine mit Bobs öffentlichen Schlüssel verschlüsselte Nachricht an Ihn schickt, welches Sicherheitsproblem kann dann aufkommen?
 
-    .. solution:: 
+    .. solution::
         :pwd: nicht sicher
 
         Alice kann nicht sicher sein, dass Ihre Nachricht nicht ausgetauscht wird! Jeder, der die Nachricht abfängt kann die Nachricht verwerfen und eine eigene mit Bobs öffentlichen Schlüssel verschlüsseln. Je nach Hintergrundwissen der dritten Person kann diese Nachricht ggf. auch so aussehen, als ob sie von Alice stammt.
-        
-        Bob kann also nicht sicher sein, dass die Nachricht von Alice stammt. 
+
+        Bob kann also nicht sicher sein, dass die Nachricht von Alice stammt.
 
 
 
 .. class:: new-subsection transition-fade
 
 Skalierbarkeit
----------------------- 
+----------------------
 
 
 Skalierbarkeit in verteilten Systemen
@@ -504,7 +502,7 @@ Wir können mind. drei Arten von Skalierbarkeit unterscheiden:
 .. class:: incremental-list
 
 - Anzahl der Benutzer oder Prozesse (Skalierbarkeit der Größe)
-- Maximale Entfernung zwischen den Knoten (geografische Skalierbarkeit) 
+- Maximale Entfernung zwischen den Knoten (geografische Skalierbarkeit)
 - Anzahl der administrativen Domänen (administrative Skalierbarkeit)
 
 
@@ -512,7 +510,7 @@ Ursachen für Skalierbarkeitsprobleme bei zentralisierten Lösungen:
 ---------------------------------------------------------------------
 
 - Die Rechenkapazität, da diese begrenzt ist durch die Anzahl CPUs
-- Die Speicherkapazität, einschließlich der Übertragungsrate zwischen CPUs und Festplatten 
+- Die Speicherkapazität, einschließlich der Übertragungsrate zwischen CPUs und Festplatten
 - Das Netzwerk zwischen dem Benutzer und dem zentralisierten Dienst
 
 .. supplemental::
@@ -543,12 +541,12 @@ Formale Analyse der Skalierbarkeit zentralisierter Systeme
 
     .. cell::
 
-        - Ankunftsrate der Anfragen: 
-            
+        - Ankunftsrate der Anfragen:
+
           :math:`\lambda` *(Anfragen pro Sekunde)*
 
-        - Verarbeitungskapazität des Services: 
-                
+        - Verarbeitungskapazität des Services:
+
           :math:`\mu` *(Anfragen pro Sekunde)*
 
           Anteil der Zeit mit :math:`x` Anfragen im System:
@@ -562,12 +560,12 @@ Formale Analyse der Skalierbarkeit zentralisierter Systeme
         .. figure:: images/number_of_requests_in_system.svg
             :align: center
 
-            # Anfragen in Bearbeitung und in Warteschlange 
-            
+            # Anfragen in Bearbeitung und in Warteschlange
+
             Z. B. ist der Anteil der Zeit, in der der Rechner *idle* ist (d. h. :math:`p_0`) : 90 %, 60 % und 30 %.
 
             .. presenter-note::
-            
+
                 :math:`p_0`; d. h.es gibt keine bzw. 0 Anfragen.
 
 .. presenter-note::
@@ -583,12 +581,12 @@ Formale Analyse der Skalierbarkeit zentralisierter Systeme
 ------------------------------------------------------------
 
 .. note::
-    
+
     :math:`x` = # Anfragen im Sys.
 
     .. math::
         p_x  = \bigl(1 - \frac{\lambda}{\mu}\bigr)\bigl(\frac{\lambda}{\mu}\bigr)^x
-    
+
 
 :math:`U` ist der Anteil der Zeit, in der ein Dienst ausgelastet ist:
 
@@ -598,14 +596,14 @@ Formale Analyse der Skalierbarkeit zentralisierter Systeme
 
 
 .. container:: incremental
-        
+
     Durchschnittliche Anzahl der Anfragen:
 
     .. math::
 
-        \bar{N} = \sum_{x\geq 0} x \cdot p_x 
-        = \sum_{x \geq 0} x \cdot (1-U)U^x 
-        = (1-U)\sum_{x\geq 0} x\cdot U^x  
+        \bar{N} = \sum_{x\geq 0} x \cdot p_x
+        = \sum_{x \geq 0} x \cdot (1-U)U^x
+        = (1-U)\sum_{x\geq 0} x\cdot U^x
         = \frac{(1-U)U}{(1-U)^2} = \frac{U}{1-U}
 
 .. container:: incremental
@@ -614,7 +612,7 @@ Formale Analyse der Skalierbarkeit zentralisierter Systeme
 
     .. math::
 
-        X = \underbrace{U \cdot \mu}_{\mbox{ausgelastet}} + \underbrace{(1-U) \cdot 0}_{\mbox{ungenutzt}} = \frac{\lambda}{\mu} \cdot \mu = \lambda 
+        X = \underbrace{U \cdot \mu}_{\mbox{ausgelastet}} + \underbrace{(1-U) \cdot 0}_{\mbox{ungenutzt}} = \frac{\lambda}{\mu} \cdot \mu = \lambda
 
 
 .. supplemental::
@@ -622,7 +620,7 @@ Formale Analyse der Skalierbarkeit zentralisierter Systeme
     Für eine `unendliche geometrische Reihe <https://de.wikipedia.org/wiki/Geometrische_Reihe#Konvergenz_und_Wert_der_geometrischen_Reihe>`__ mit dem Quotienten :math:`U` gilt:
 
     .. math::
-        \sum_{k\geq 0} k\cdot U^k  = \frac{U}{(1-U)^2} 
+        \sum_{k\geq 0} k\cdot U^k  = \frac{U}{(1-U)^2}
 
     Darstellung der durchschnittlichen Anzahl an Anfragen im System in Abhängigkeit von der Auslastung :math:`U`:
 
@@ -639,20 +637,20 @@ Formale Analyse der Skalierbarkeit zentralisierter Systeme
 - Die Antwortszeit (:eng:`response time`) ist die Gesamtzeit für die Bearbeitung einer Anfrage
 
   .. math::
-    
-    R = \frac{\bar{N}}{X} = \frac{S}{1-U} \Rightarrow \frac{R}{S} = \frac{1}{1-U} 
 
-  mit :math:`S = \frac{1}{\mu}` für die durchschnittliche Servicezeit. 
-    
-- \ 
+    R = \frac{\bar{N}}{X} = \frac{S}{1-U} \Rightarrow \frac{R}{S} = \frac{1}{1-U}
+
+  mit :math:`S = \frac{1}{\mu}` für die durchschnittliche Servicezeit.
+
+- \
 
   .. image:: images/response_time.svg
         :alt: Antwortszeit in Abhängigkeit der Auslastung
-        
+
 .. class:: incremental-list
 
 - Wenn :math:`U` klein ist, liegt die Antwortzeit nahe bei 1; d. h.eine Anfrage wird sofort bearbeitet.
-- Wenn :math:`U` auf 1 ansteigt, kommt das System zum Stillstand. 
+- Wenn :math:`U` auf 1 ansteigt, kommt das System zum Stillstand.
 
 
 
@@ -661,7 +659,7 @@ Probleme der geografischen Skalierbarkeit
 --------------------------------------------
 
 - Viele verteilte Systeme gehen von synchronen Client-Server-Interaktionen aus und dies verhindert einen Übergang vom LAN zum WAN. Die Latenzzeiten können prohibitiv sein, wenn der Client auf eine Anfrage lange warten muss.
-  
+
 .. class:: incremental-list
 
 - WAN-Verbindungen sind oft von Natur aus unzuverlässig.
@@ -686,12 +684,12 @@ Probleme der administrativen Skalierbarkeit
 
     .. card::
 
-        .. rubric:: Ausnahme 
+        .. rubric:: Ausnahme
 
         Verschiedene Peer-to-Peer-Netze [#]_ bei denen Endnutzer zusammenarbeiten und nicht Verwaltungseinheiten:
 
-        - File-Sharing-Systeme (z. B. auf der Grundlage von BitTorrent) 
-        - Peer-to-Peer-Telefonie (frühe Versionen von Skype) 
+        - File-Sharing-Systeme (z. B. auf der Grundlage von BitTorrent)
+        - Peer-to-Peer-Telefonie (frühe Versionen von Skype)
 
         .. [#] :eng:`Peer` ist im hier im Sinne von „Gleichgestellter“ zu verstehen. D. h. wir haben ein Netz von gleichgestellten Rechnern.
 
@@ -707,9 +705,9 @@ Ansätze, um Skalierung zu erreichen
         **Verbergen von Kommunikationslatenzen** durch:
 
         - Nutzung asynchroner Kommunikation
-        - Verwendung separater *Handler* für eingehende Antworten 
+        - Verwendung separater *Handler* für eingehende Antworten
 
-        .. observation:: 
+        .. observation::
             :class: incremental
 
             Dieses Modell ist jedoch nicht immer anwendbar.
@@ -718,7 +716,7 @@ Ansätze, um Skalierung zu erreichen
 
         **Partitionierung von Daten und Berechnungen über mehrere Rechner.**
 
-        - Verlagerung von Berechnungen auf Clients 
+        - Verlagerung von Berechnungen auf Clients
         - Dezentrale Namensgebungsdienste (DNS)
         - Dezentralisierte Informationssysteme (WWW)
 
@@ -739,14 +737,14 @@ Ansätze, um Skalierung zu erreichen
 
 .. class:: incremental-list
 
-- replizierte Dateiserver und Datenbanken 
+- replizierte Dateiserver und Datenbanken
 - gespiegelte Websites
-- Web-Caches (in Browsern und Proxies) 
+- Web-Caches (in Browsern und Proxies)
 - Datei-Caching (auf Server und Client)
 
 
 
-Herausforderungen bei der Replikation 
+Herausforderungen bei der Replikation
 ---------------------------------------
 
 .. class:: incremental-list
@@ -765,7 +763,7 @@ Paralleles Rechnen (:eng:`Parallel Computing`)
 ------------------------------------------------
 
 .. class:: columns
-  
+
 - Multiprozessor
 
   .. image:: images/multiprocessor-vs-multicomputer/multiprocessor.svg
@@ -800,16 +798,16 @@ Amdahls Gesetz - Grenzen der Skalierbarkeit
         - Es modelliert die erwartete Beschleunigung (*Speedup*) eines zum Teil parallelisierten/parallelisierbaren Programms relativ zu der nicht-parallelisierten Variante
 
 
-        .. definition:: 
+        .. definition::
             :class: encapsulate-floats
 
             .. note::
 
-                :math:`C` = Anzahl CPUs 
+                :math:`C` = Anzahl CPUs
 
                 :math:`P` = Parallelisierungsgrad in Prozent
-                
-                :math:`S` = Speedup 
+
+                :math:`S` = Speedup
 
             :math:`S(C) = \frac{1}{(1-P) + \frac{P}{C}}`
 
@@ -832,14 +830,14 @@ Gustafsons Gesetz - Grenzen der Skalierbarkeit
 
 .. container:: encapsulate-floats incremental
 
-    .. note:: 
+    .. note::
         :class: width-60 dd-margin-left-2em
 
-        :`C`:math::  Anzahl CPUs 
+        :`C`:math::  Anzahl CPUs
 
         :`P`:math::  Parallelisierungsgrad in Abhängigkeit von der Problemgröße n
-        
-        :`S`:math::  Speedup 
+
+        :`S`:math::  Speedup
 
     Beschleunigung (Speedup) eines parallelisierten Programms relativ zu der nicht-parallelisierten Variante: :math:`S(C) = 1 + P(n) \cdot (C-1)`
 
@@ -887,7 +885,7 @@ Anforderungen an verteilter Systeme
 -------------------------------------
 
 
-Verlässlichkeit verteilter Systeme 
+Verlässlichkeit verteilter Systeme
 ------------------------------------------------------------
 
 .. container:: peripheral
@@ -895,12 +893,12 @@ Verlässlichkeit verteilter Systeme
     (:eng:`Dependability`)
 
 .. admonition:: Abhängigkeiten
-    
+
     Eine **Komponente**\ [#]_ stellt ihren **Clients** **Dienste** zur Verfügung. Dafür kann die Komponente jedoch wiederum Dienste von anderen Komponenten benötigen und somit ist eine Komponente  von einer anderen Komponente abhängig (:eng:`depend`).
 
 .. definition::
 
-    Eine Komponente :math:`C` hängt von :math:`C^*` ab, wenn die Korrektheit des Verhaltens von :math:`C` von der Korrektheit des Verhaltens von :math:`C^*` abhängt. 
+    Eine Komponente :math:`C` hängt von :math:`C^*` ab, wenn die Korrektheit des Verhaltens von :math:`C` von der Korrektheit des Verhaltens von :math:`C^*` abhängt.
 
 .. [#] Komponenten seien Prozesse oder Kanäle.
 
@@ -915,7 +913,7 @@ Anforderungen an die Verlässlichkeit verteilter Systeme
 
     "Verfügbarkeit", "Das System ist nutzbar."
     "Zuverlässigkeit", "Kontinuität der korrekten Leistungserbringung."
-    "Sicherheit 
+    "Sicherheit
     (:eng:`Safety`\ [#]_)", "Niedrige Wahrscheinlichkeit für ein katastrophales Ereignis"
     "Wartbarkeit", "Wie leicht kann ein fehlgeschlagenes System wiederhergestellt werden?"
 
@@ -931,23 +929,23 @@ Zuverlässigkeit (:eng:`Reliability`) vs. Verfügbarkeit (:eng:`Availability`) i
 
 Bedingte Wahrscheinlichkeit, dass :math:`C` während :math:`[0,t)` korrekt funktioniert hat, wenn :math:`C` zum Zeitpunkt :math:`T = 0` korrekt funktionierte.
 
-.. compound:: 
+.. compound::
     :class: incremental
 
     .. rubric:: Traditionelle Metriken
 
     .. class:: incremental-list
 
-    - Mittlere Zeit bis zum Versagen (:eng:`Mean Time to Failure` (:math:`MTTF`)): 
-  
-      Die durchschnittliche Zeit bis zum Ausfall einer Komponente. 
+    - Mittlere Zeit bis zum Versagen (:eng:`Mean Time to Failure` (:math:`MTTF`)):
 
-    - Mittlere Zeit bis zur Reparatur (:eng:`Mean Time to Repair` (:math:`MTTR`)): 
-  
+      Die durchschnittliche Zeit bis zum Ausfall einer Komponente.
+
+    - Mittlere Zeit bis zur Reparatur (:eng:`Mean Time to Repair` (:math:`MTTR`)):
+
       Die durchschnittliche Zeit, die für die Reparatur einer Komponente benötigt wird.
 
-    - Mittlere Zeit zwischen Ausfällen (:eng:`Mean Time Between Failures` (:math:`MTBF`)): 
-     
+    - Mittlere Zeit zwischen Ausfällen (:eng:`Mean Time Between Failures` (:math:`MTBF`)):
+
       :math:`MTTF + MTTR = MTBF`.
 
 
@@ -976,7 +974,7 @@ MapReduce - Programmiermodell und Middleware für paralleles Rechnen
   - Einplanung und Ausführung der “Map”- und “Reduce”- Funktionen auf den Rechnern des Clusters
   - Behandlung von Fehlern und die Kommunikation zwischen den Rechnern
 
-.. hint:: 
+.. hint::
     :class: incremental
 
     Nicht alle Arten von Berechnungen können mit Hilfe von MapReduce durchgeführt werden.
@@ -1012,20 +1010,20 @@ MapReduce - Visualisierung und Beispiel
 
     (a) Bestimmen Sie die Intaktwahrscheinlichkeit eines einzelnen Rechners.
     (b) Ein Datensatz ist aus Gründen der Fehlertoleranz auf drei Rechnern identisch repliziert gespeichert. Wie hoch ist seine mittlere Zugriffsverfügbarkeit beim Lesen?
-    (c) Auf wie vielen Rechnern müssen Sie identische Kopien dieses Datensatzes speichern, damit die mittlere Zugriffsverfügbarkeit beim Lesen bei 99,999 % liegt 
+    (c) Auf wie vielen Rechnern müssen Sie identische Kopien dieses Datensatzes speichern, damit die mittlere Zugriffsverfügbarkeit beim Lesen bei 99,999 % liegt
     (d) Für wie viele Minuten im Jahr (mit 365 Tagen) ist im Mittel bei einer Verfügbarkeit von 99,999 % *kein Lesen des Datensatzes* möglich?
 
     .. solution:: Lösung
         :pwd: Laufend?
 
-        (a) Die Verfügbarkeit eines einzelnen Rechners beträgt p = 36h/48h = 0,75 
+        (a) Die Verfügbarkeit eines einzelnen Rechners beträgt p = 36h/48h = 0,75
         (b) Die mittlere Zugriffsverfügbarkeit (für :math:`p = 0.75`) beim Lesen beträgt :math:`1 - (1 - p)^3 = 0,984375`; :math:`(1-p)` ist die Ausfallwahrscheinlichkeit.
         (c) (Erinnerung: :math:`log_a(u^v) = v \cdot log_a(u)`).
-            
+
             Die Wahrscheinlichkeit, dass alle gleichzeitig ausfallen, muss kleiner(gleich) der erlaubten Nichtverfügbarkeit sein:  :math:`(1-p)^x \leq (1-0,99999) \Leftrightarrow x \cdot log(1-p) \geq log(1-0,99999)`
 
             :math:`\Rightarrow x \geq log(1-0,99999)/log(1-p) \approx 8,3`
-            
+
             Die Anzahl der Rechner, auf denen der Datensatz repliziert werden muss, beträgt :math:`\lceil \frac{log(1-0,99999)}{log(1-p)} \rceil = 9`
         (d) Bei 365 Tagen im Jahr: (1-0,99999) * 365 * 24 * 60 = 5,256 Minuten
 
@@ -1055,10 +1053,10 @@ Eine Gruppe von „High-End-Systemen“, die über ein LAN verbunden sind.
 Grid Computing
 -------------------
 
-Weiterführung des Cluster Computing. 
+Weiterführung des Cluster Computing.
 
-- Viele heterogene, weit und über mehrere Organisationen verstreute Knotenpunkte. 
-- Die Knotenpunkte sind über das WAN verbunden. 
+- Viele heterogene, weit und über mehrere Organisationen verstreute Knotenpunkte.
+- Die Knotenpunkte sind über das WAN verbunden.
 - Die Zusammenarbeit erfolgt im Rahmen einer virtuellen Organisation.
 
 .. supplemental::
@@ -1076,15 +1074,21 @@ Weiterführung des Cluster Computing.
 Grundlegende Architektur für Grid-Computing
 ---------------------------------------------
 
-.. class:: columns 
+.. grid::
 
-- .. image:: images/architecture-for-grid-computing.svg
+    .. cell::
 
-- .. class:: no-margin
+        .. class:: no-margin
 
-  :Anwendungen: Enthält tatsächliche Grid-Anwendungen in einer einzelnen Organisation.
-  :Collective Layer: Verwaltet den Zugriff auf mehrere Ressourcen: Auffindung, Einplanung und Replikation.
-  :Konnektivitätsschicht: Kommunikations- / Transaktions- /Authentifizierungsprotokolle, z. B. für die Übertragung von Daten zwischen Ressourcen.
+        :Anwendungen: Enthält tatsächliche Grid-Anwendungen in einer einzelnen Organisation.
+        :Collective Layer: Verwaltet den Zugriff auf mehrere Ressourcen: Auffindung, Einplanung und Replikation.
+        :Konnektivitätsschicht: Kommunikations- / Transaktions- /Authentifizierungsprotokolle, z. B. für die Übertragung von Daten zwischen Ressourcen.
+
+    .. cell::
+
+        .. image:: images/architecture-for-grid-computing.svg
+            :loading: embed
+
 
 .. class:: no-margin
 
@@ -1102,19 +1106,19 @@ Peer-to-Peer-Systeme
 ----------------------
 
 :Vision: „Das Netzwerk ist der Computer.“ Es gibt einen Datenbestand, der immer weltweit erreichbar ist.
-:Idee: 
+:Idee:
    Keine dedizierten Clients und Server, jeder Teilnehmer (Peer) ist gleichzeitig Anbieter und Kunde.
 
    Selbstorganisierend, ohne zentrale Infrastruktur (Koordinator, Datenbestand, Teilnehmerverzeichnis).
 
    Jeder Peer ist autonom und kann jederzeit offline sein, Netzwerkadressen können sich beliebig ändern.
 
-:Hauptanwendung: 
+:Hauptanwendung:
    File-Sharing-Systeme (insbesondere BitTorrent)
 
 .. supplemental::
 
-    Die große Zeit der klassischen Peer-to-Peer-Systeme war in den 2000er Jahren. 
+    Die große Zeit der klassischen Peer-to-Peer-Systeme war in den 2000er Jahren.
 
     .. class:: positive-list
 
@@ -1140,12 +1144,12 @@ Cloud-Computing
 
     - Public Cloud (z. B. Amazon EC2, Google Apps, Microsoft Azure, …)
     - Private Cloud
-    - Hybrid Cloud 
-     
+    - Hybrid Cloud
+
       (Private Cloud wird bei Bedarf durch Public Cloud ergänzt.)
     - Virtual Private Cloud
 
-.. supplemental:: 
+.. supplemental::
 
     .. class:: positive-list
 
@@ -1154,14 +1158,14 @@ Cloud-Computing
     .. class:: negative-list
 
     - Probleme des Cloud-Computings: Sicherheit und Vertrauen, Verlust von eigenem Know-How, Umgang mit klassifizierten Daten.
-  
-      Ein Ausweg könnte `Hommomorphe Verschlüsselung <https://de.wikipedia.org/wiki/Homomorphe_Verschlüsselung>`_ sein, die es ermöglicht, Berechnungen auf verschlüsselten Daten durchzuführen. 
+
+      Ein Ausweg könnte `Hommomorphe Verschlüsselung <https://de.wikipedia.org/wiki/Homomorphe_Verschlüsselung>`_ sein, die es ermöglicht, Berechnungen auf verschlüsselten Daten durchzuführen.
 
 
 *Serverless Computing*
 ----------------------
 
-*Serverless Computing* ermöglicht es Entwicklern Anwendungen schneller zu erstellen, da sie sich nicht mehr um die Verwaltung der Infrastruktur kümmern müssen. 
+*Serverless Computing* ermöglicht es Entwicklern Anwendungen schneller zu erstellen, da sie sich nicht mehr um die Verwaltung der Infrastruktur kümmern müssen.
 
 .. class:: positive-list incremental
 
@@ -1170,15 +1174,15 @@ Cloud-Computing
 .. class:: negative-list incremental list-with-explanations
 
   - Vendor-Lock-In
-  - Kaltstart-Latenz 
-  
+  - Kaltstart-Latenz
+
     Zeit bis der erste Code ausgeführt wird kann höher sein, da die Instanziierung der Serverless-Funktionen erst bei Bedarf erfolgt.
   - Debugging und Monitoring
 
     Klassische Tools und Methoden sind nicht mehr anwendbar.
   - Kostentransparenz/-management
 
-    Die Kosten für Serverless-Computing sind schwer vorherzusagen und zu kontrollieren. 
+    Die Kosten für Serverless-Computing sind schwer vorherzusagen und zu kontrollieren.
 
 
 
@@ -1192,7 +1196,7 @@ Integration von Anwendungen
 ---------------------------------
 
 .. container:: assessment
-    
+
     Die Standardanwendungen in Unternehmen sind vernetzte Anwendungen und die Herstellung der Interoperabilität zwischen diesen Anwendungen ist eine große Herausforderung.
 
 .. container:: incremental margin-top-1em
@@ -1210,16 +1214,16 @@ Integration von Anwendungen
 
 .. supplemental::
 
-    Eine vernetzte Anwendung ist eine Anwendung, die auf einem Server läuft und ihre Dienste für entfernte Clients verfügbar macht. 
+    Eine vernetzte Anwendung ist eine Anwendung, die auf einem Server läuft und ihre Dienste für entfernte Clients verfügbar macht.
 
 
 
 Transaktionen auf Geschäftsprozessebene
 -----------------------------------------
 
-.. grid:: 
+.. grid::
 
-    .. cell:: 
+    .. cell::
 
         .. image:: images/transactions/transaction.svg
             :align: center
@@ -1229,7 +1233,7 @@ Transaktionen auf Geschäftsprozessebene
             **„Alles oder nichts.“**
 
     .. cell:: width-60
-    
+
         .. deck::
 
             .. card::
@@ -1243,7 +1247,7 @@ Transaktionen auf Geschäftsprozessebene
                     LESEN, "Lesen von Daten aus (z. B.) einer Datei oder einer Tabelle."
                     SCHREIBEN, "Schreiben von Daten (z. B.) in eine Datei oder eine Tabelle."
 
-            .. card:: 
+            .. card::
 
                 :Atomar `Atomic`:eng:: geschieht untrennbar (scheinbar)
                 :Konsistent `Consistent`:eng:: keine Verletzung von Systeminvarianten
@@ -1259,7 +1263,7 @@ Transaktionen auf Geschäftsprozessebene
 
 .. container:: assessment
 
-    Die für eine Transaktion benötigten Daten, sind oft verteilt über mehrere Server. 
+    Die für eine Transaktion benötigten Daten, sind oft verteilt über mehrere Server.
 
 .. image:: images/transactions/tpm.svg
     :align: center
@@ -1272,10 +1276,10 @@ Transaktionen auf Geschäftsprozessebene
 
 .. supplemental::
 
-    Insbesondere im Zusammenhang mit Microservices ist der Einsatz von TPMs und 2PC zum Zwecke der Koordination von Geschäftsprozessen häufig nicht die 1. Wahl. 
+    Insbesondere im Zusammenhang mit Microservices ist der Einsatz von TPMs und 2PC zum Zwecke der Koordination von Geschäftsprozessen häufig nicht die 1. Wahl.
 
     Nichtsdestotrotz sind verteilte Transaktionen ein wichtiger Bestandteil von verteilten Systemen und Google hat z. B. mit Spanner eine Lösung entwickelt, die Transaktionen im globalen Maßstab ermöglicht  (*Global Consistency*). (https://cloud.google.com/spanner?hl=en und https://www.youtube.com/watch?v=iKQhPwbzzxU).
-       
+
 
 
 *Middleware* und *Enterprise Application Integration (EAI)*
@@ -1301,7 +1305,7 @@ Wie kann die Anwendungsintegration erreicht werden?
 
 .. class:: incremental-list dd-margin-left-2em
 
-:Dateiübertragung: 
+:Dateiübertragung:
 
   Technisch einfach, aber nicht flexibel:
 
@@ -1320,7 +1324,7 @@ Moderne verteilte Systeme
 --------------------------------------------
 
 
-*Distributed Pervasive/Ubiquitous Systems* 
+*Distributed Pervasive/Ubiquitous Systems*
 ------------------------------------------------------------------------
 
 .. container:: minor
@@ -1348,7 +1352,7 @@ Moderne verteilte Systeme
 .. class:: incremental-list
 
 1. :eng:`Distribution`: Die Geräte sind vernetzt, verteilt und ohne Hürde zugänglich.
-2. :eng:`Interaction`: Die Interaktion zwischen Benutzern und Geräten ist in hohem Maße unaufdringlich. 
+2. :eng:`Interaction`: Die Interaktion zwischen Benutzern und Geräten ist in hohem Maße unaufdringlich.
 3. :eng:`Context Awareness`: Das System kennt den Kontext eines Benutzers, um die Interaktion zu optimieren.
 4. :eng:`Autonomy`: Die Geräte arbeiten autonom, ohne menschliches Eingreifen, und verwalten sich in hohem Maße eigenständig.
 5. :eng:`Intelligence`: Das System als Ganzes kann ein breites Spektrum dynamischer Aktionen und Interaktionen bewältigen.
@@ -1363,8 +1367,8 @@ Moderne verteilte Systeme
 - Eine Vielzahl unterschiedlicher mobiler Geräte (Smartphones, Tablets, GPS-Geräte, Fernbedienungen, aktive Ausweise).
 - Mobil bedeutet, dass sich der Standort eines Geräts im Laufe der Zeit ändern kann. Dies kann z. B. Auswirkung haben auf die lokalen Dienste oder die Erreichbarkeit.
 - Die Aufrechterhaltung einer stabilen Kommunikation kann zu ernsthaften Problemen führen.
-        
-.. observation:: 
+
+.. observation::
     :class: incremental margin-top-1em
 
     Aktueller Stand ist, dass mobile Geräte Verbindungen zu stationären Servern herstellen, wodurch diese im Prinzip *Clients* von Cloud-basierten Diensten sind.
@@ -1372,7 +1376,7 @@ Moderne verteilte Systeme
 
 
 *Mobile Cloud Computing*
--------------------------------------------- 
+--------------------------------------------
 
 .. image:: images/mobile_computing/mobile_cloud_computing.svg
     :align: center
@@ -1383,17 +1387,17 @@ Moderne verteilte Systeme
 
 .. image:: images/mobile_computing/mobile_edge_computing.svg
     :align: center
-                
-            
 
 
-*Sensor Networks* 
+
+
+*Sensor Networks*
 --------------------------------------------
 
 Die Knoten, an denen Sensoren angebracht sind:
 
 - „viele“
-- einfach (geringe Speicher- / Rechen- / Kommunikationskapazität) 
+- einfach (geringe Speicher- / Rechen- / Kommunikationskapazität)
 - oft batteriebetrieben (oder sogar batterielos)
 
 .. image:: images/sensor_networks/operator_stores_and_processes_data.svg
@@ -1419,7 +1423,7 @@ Das *Cloud-Edge Continuum*
 Fallstricke bei der Entwicklung verteilter Systeme
 -----------------------------------------------------
 
-.. observation:: 
+.. observation::
 
     Viele verteilte Systeme sind unnötig komplex aufgrund fehlerhafter Annahmen sowie von Architektur- und Designfehlern, die später nachgebessert werden müssen.
 
@@ -1431,10 +1435,9 @@ Fallstricke bei der Entwicklung verteilter Systeme
 
     - Das Netzwerk ist zuverlässig
     - Das Netzwerk ist sicher
-    - Das Netz ist homogen 
-    - Die Topologie ändert sich nicht 
+    - Das Netz ist homogen
+    - Die Topologie ändert sich nicht
     - Die Latenz ist gleich null
     - Die Bandbreite ist unendlich
     - Die Transportkosten sind gleich null
     - Es gibt nur einen Administrator
-
