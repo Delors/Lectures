@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Important</title>
+
+    <style>
+        @layer low;
+        @layer medium;
+        @layer high; 
+
+        /* The order is determined by the above declaration order! */ 
+        @layer high {
+            p.important {
+                background-color: yellow;
+                color: blue;  
+            }
+            p.warning {
+                background-color: yellow;
+                color: blue;  
+            }
+            p.error {
+                background-color: yellow;
+                color: blue !important;  
+            }
+            p.success {
+                background-color: lightgreen;
+                color: rgb(61, 205, 200) !important;  
+            }
+        }
+
+        @layer low {
+            p.important {
+                background-color: lightblue !important;
+                color: black;  
+            }
+            p.warning {
+                background-color: lightblue !important;
+                color: black;  
+            }
+            p.error {
+                background-color: lightblue !important;
+                color: red !important;  
+            }
+        }
+
+        @layer medium {
+            p.important {
+                background-color: cornsilk;
+                color: darkgreen;  
+            }
+            p.warning {
+                background-color: cornsilk;
+                color: darkgreen !important;  
+            }
+            p.error {
+                background-color: cornsilk;
+                color: darkgreen !important;  
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Important</h1>
+    <p>This is a message.</p>
+    <p class="important">This is a very important message.</p>
+    <p class="warning">This is a warning message.</p>
+    <p class="error">This is an error message.</p>
+    <p class="success" style="color:salmon">This is a success message.</p>
+</body>        
+</html>
