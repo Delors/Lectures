@@ -121,6 +121,27 @@ HTML\ [#]_ - Historie
 
 
 
+HTML Universum
+------------------------------------------------
+
+Spezifikationen (siehe [#]_), die im Rahmen  der Entwicklung von Webseiten/Webanwendungen relevant sind:
+
+.. class:: incremental-list
+
+- **CSS**: Cascading Style Sheets
+- **JavaScript**: ECMAScript (Fetch API, :obsolete:`XMLHttpRequest`, ...)
+- **DOM**: Document Object Model
+- **Encoding**: Unicode
+- **HTTP**: Hypertext Transfer Protocol
+- **SVG**: Scalable Vector Graphics
+- **MathML**: Mathematical Markup Language
+- **WebAssembly**: Low-Level Bytecode
+- ...
+
+.. [#] https://spec.whatwg.org
+
+
+
 HTML vs. XML Syntax vs. DOM
 ------------------------------------------------
 
@@ -150,26 +171,6 @@ Die *HTML Spezifikation* definiert eine abstrakte Sprache zur Beschreibung von D
     - :html:`noscript` wird nur in HTML Dokumenten unterstützt.
     - Kommentare, die :html:`-->` enthalten, werden nur vom DOM unterstützt; in einem HTML-Dokument beendet dies den Kommentar.
 
-
-
-HTML Universum
-------------------------------------------------
-
-Spezifikationen (siehe [#]_), die im Rahmen  der Entwicklung von Webseiten/Webanwendungen relevant sind:
-
-.. class:: incremental-list
-
-- **CSS**: Cascading Style Sheets
-- **JavaScript**: ECMAScript (Fetch API, :obsolete:`XMLHttpRequest`, ...)
-- **DOM**: Document Object Model
-- **Encoding**: Unicode
-- **HTTP**: Hypertext Transfer Protocol
-- **SVG**: Scalable Vector Graphics
-- **MathML**: Mathematical Markup Language
-- **WebAssembly**: Low-Level Bytecode
-- ...
-
-.. [#] https://spec.whatwg.org
 
 
 
@@ -238,6 +239,25 @@ HTML - Verarbeitung
 
 
 
+.. class:: exercises
+
+Übung
+--------
+
+.. exercise:: Vertraut machen mit dem DOM
+
+    1. Öffnen Sie eine Webseite (z. B. https://delors.github.io/web-html/folien.de.rst.html)
+    2. Öffnen Sie die Entwicklerconsole Ihres Browsers
+    3. Lassen Sie sich den Sourcecode anzeigen
+    4. Vergleichen Sie den DOM mit dem Sourcecode
+
+    .. solution::
+        :pwd: GanzAnders
+
+        Wie in dem Beispiel gut zu sehen ist, der HTML Code deutlich anders als der DOM. Der DOM wird durch das JavaScript auf der Webseite erstellt/manipuliert.
+
+
+
 .. class:: new-section transition-fade
 
 Aufbau von HTML Dokumenten
@@ -288,7 +308,9 @@ Allgemeiner Aufbau von HTML Elementen
 
 .. incremental::
 
-    Im Fall von Elementen ohne Endtag (z. B. :html:`<wbr>`) darf auch keines hinzugefügt werden!
+    Im Fall von Elementen ohne Endtag (z. B. :html:`<wbr>`\ [#]_) darf auch keines hinzugefügt werden!
+
+.. [#] :html:`<wbr>` steht für Line Break Opportunity.
 
 .. supplemental::
 
@@ -1284,7 +1306,6 @@ Das :html:`<iframe>` Element ermöglicht das Einbetten von Webseiten in Webseite
                         <p>HTML is a markup language.</p>
                     </body>
                     '>
-
                 iframes are not supported
             </iframe>
 
