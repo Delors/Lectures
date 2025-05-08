@@ -10,7 +10,7 @@
 
 
 
-W3WI_SE305.1 - Ausgewählte Aspekte des Software Engineering III 
+W3WI_SE305.1 - Ausgewählte Aspekte des Software Engineering III
 ===============================================================================
 
 **IT Sicherheit - „Teil 2“**
@@ -23,12 +23,12 @@ W3WI_SE305.1 - Ausgewählte Aspekte des Software Engineering III
 
 
 
-Prüfungsleistung 
+Prüfungsleistung
 ------------------------------------------
 
 **Klausur** (gemeinsam mit Prof. Pagnia)
 
-.. admonition::  Hintergrund
+.. background::
 
     - 20VL (Anteil!)
     - Klausuranteil: ca. 37-38 Minuten (Modul: 75 Minuten)
@@ -37,7 +37,7 @@ Prüfungsleistung
 
 
 Themen
-------------------------------------------
+---------------------------------------
 
 5 Termine - voraussichtliche Themen:
 
