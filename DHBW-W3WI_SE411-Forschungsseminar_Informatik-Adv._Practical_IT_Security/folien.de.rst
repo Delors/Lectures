@@ -1,7 +1,7 @@
-.. meta:: 
+.. meta::
     :version: renaissance
     :author: Michael Eichberg
-    :keywords: "IT Sicherheit", "Pentesting" 
+    :keywords: "IT Sicherheit", "Pentesting"
     :description lang=de: Fortgeschrittene Angewandte IT Sicherheit - Pentesting
     :id: 2024_08-w3wi_se411-forschungsseminar_informatik-adv._practical_it_security
     :first-slide: last-viewed
@@ -18,7 +18,7 @@ Forschungsseminar Informatik / Advanced Practical IT Security
 :Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
 :Kontakt: michael.eichberg@dhbw-mannheim.de, Raum 149B
 :Version: 22SEA (2. Semester)
-:Modul: *W3WI_SE411* 
+:Modul: *W3WI_SE411*
 :Unterlagen: Moodle
 
 
@@ -26,21 +26,21 @@ Forschungsseminar Informatik / Advanced Practical IT Security
 Teaser
 ---------
 
-.. deck:: 
+.. deck::
 
   .. card::
 
-    In dieser Veranstaltung werden wir uns mit den Grundlagen praktischer Angriffe und Verteidigungsmaßnahmen im Bereich IT Security auseinandersetzen. Wir werden uns der Frage widmen wie, wann und in welcher Form man - auf den ersten Blick abgesicherte Systeme - einerseits angreifen (:eng:`to exploit`) kann und wie man die Sicherheit weiter erhöhen kann. 
-    
+    In dieser Veranstaltung werden wir uns mit den Grundlagen praktischer Angriffe und Verteidigungsmaßnahmen im Bereich IT Security auseinandersetzen. Wir werden uns der Frage widmen wie, wann und in welcher Form man - auf den ersten Blick abgesicherte Systeme - einerseits angreifen (:eng:`to exploit`) kann und wie man die Sicherheit weiter erhöhen kann.
+
     Wir werden uns in diesem und dem nächsten Semester ausgewählten Themen widmen, die von der Sicherheit von Passwörtern und Angriffen auf selbige bis hin zu der Sicherheit von Netzwerken und Webanwendungen reichen. Wir werden uns dabei insbesondere an gängigen Angriffsszenarien orientieren.
 
     :peripheral:`Wir werden uns somit auf praktische Aspekte der IT Sicherheit fokussieren. Das Kennenlernen der theoretischen Grundlagen von Verschlüsselungsalgorithmen, Hashalgorithmen, Zertifikaten und Vergleichbarem ist nicht primärer Fokus dieser Veranstaltung.`
 
   .. card::
 
-      .. hint:: 
-    
-        Für diese Veranstaltung sind Grundkenntnisse in Linux hilfreich aber nicht notwendig. Notwendig ist aber Interesse an tiefergehenden technischen Details. 
+      .. hint::
+
+        Für diese Veranstaltung sind Grundkenntnisse in Linux hilfreich aber nicht notwendig. Notwendig ist aber Interesse an tiefergehenden technischen Details.
 
 
 
@@ -53,11 +53,11 @@ Grober Ablauf
 .. container:: incremental margin-top-1em
 
   .. rubric:: Genereller Ablauf
-  
+
   1. Einführung in ein für die IT-Sicherheit relevantes Thema in Hinblick auf praktische Anwendung
   2. Aufgaben, die jeder für sich lösen muss/soll
-  3. Abgabe, die genau beschreibt wie Sie die Aufgabe gelöst haben. Darüber sammeln Sie Teilnoten, die am Ende verrechnet werden. D. h. es gibt Teilnoten pro Aufgabe. Die Punkte sind zwischen den Aufgaben nicht untereinander vergleichbar. 
-  4. Jeder muss präsentieren. 
+  3. Abgabe, die genau beschreibt wie Sie die Aufgabe gelöst haben. Darüber sammeln Sie Teilnoten, die am Ende verrechnet werden. D. h. es gibt Teilnoten pro Aufgabe. Die Punkte sind zwischen den Aufgaben nicht untereinander vergleichbar.
+  4. Jeder muss präsentieren.
 
 
 
@@ -69,10 +69,10 @@ Inhalte
   Diese Veranstaltung ist ergänzend zur Veranstaltung SE III IT-Sicherheit zu sehen. D. h. Inhalte die dort vermittelt werden, werden hier nicht noch einmal behandelt, sind aber potentiell relevant.
 
 1. Semester
-   
+
    1. Passwortwiederherstellung (:eng:`Password Recovery`)
    2. Reverse Engineering 101
-  
+
 2. Semester
 
    Pentesting von Webanwendungen
@@ -86,108 +86,108 @@ Was passiert wann im 1. Semester...
 
 .. story::
 
-  .. container:: 
+  .. container::
 
-    :26. Aug 2024: 
+    :26. Aug 2024:
       .. rubric:: Einführung & Passwortwiederherstellung (Teil 1)
-        
-      (Ggf. Linux Shell und Reguläre Ausdrücke.) 
 
-    :9. Sep 2024: 
+      (Ggf. Linux Shell und Reguläre Ausdrücke.)
 
-      .. rubric:: Passwortwiederherstellung (Teil 2) 
+    :9. Sep 2024:
+
+      .. rubric:: Passwortwiederherstellung (Teil 2)
 
       Ausgabe der Übung - Notenanteil: 15%
 
   .. container:: line-above incremental
 
-    :23. Sep 2024: 
-      
+    :23. Sep 2024:
+
       .. rubric:: Einführung in Reverse Engineering (und Netzwerkanalyse)
 
       Ausgabe der Übung - Notenanteil: 20%
 
   .. container:: line-above incremental dhbw-gray
 
-    :7. Oct 2024: 
-      
-      Online (*Optional* - Unterstützung bei der Bearbeitung der Aufgaben)  
-      
+    :7. Oct 2024:
+
+      Online (*Optional* - Unterstützung bei der Bearbeitung der Aufgaben)
+
       BBB: https://bbb.dhbw.de/mannheim/eic-mn5-hvh-7qd
 
   .. container:: line-above incremental dhbw-gray
 
-    :21. Oct 2024: Online (*Optional* - Unterstützung bei der Bearbeitung der Aufgaben)  
-      
+    :21. Oct 2024: Online (*Optional* - Unterstützung bei der Bearbeitung der Aufgaben)
+
       BBB: https://bbb.dhbw.de/mannheim/eic-mn5-hvh-7qd
-      
-  .. container:: line-above  incremental 
 
-    :28. Okt. 2024: 
-
-      **Abgabe der Lösungen für alle Aufgaben als PDF Dokument (Moodle)** 
-    
-      *(Ich werde am 29. zuteilen wer welchen Teil präsentiert; bitte schauen Sie in Moodle. Sollten Sie am 30. Okt. bis 22:00 Uhr weder eine Nachricht in Moodle noch eine E-Mail von mir erhalten haben, dann melden Sie sich bitte umgehend bei mir.)*
-      
   .. container:: line-above  incremental
 
-    :4. Nov 2024: 
+    :28. Okt. 2024:
+
+      **Abgabe der Lösungen für alle Aufgaben als PDF Dokument (Moodle)**
+
+      *(Ich werde am 29. zuteilen wer welchen Teil präsentiert; bitte schauen Sie in Moodle. Sollten Sie am 30. Okt. bis 22:00 Uhr weder eine Nachricht in Moodle noch eine E-Mail von mir erhalten haben, dann melden Sie sich bitte umgehend bei mir.)*
+
+  .. container:: line-above  incremental
+
+    :4. Nov 2024:
 
       .. rubric:: Abschlusspräsentationen
-    
-      Die Präsentationsdauer ist am Inhalt zu orientieren; darf max. 30 min pro Person jedoch nicht überschreiten. Jeder soll in der Lage sein alle Schritte nachvollziehen zu können. D. h. die Präsentation kann auch eine „Live-Demo“ sein, die 
+
+      Die Präsentationsdauer ist am Inhalt zu orientieren; darf max. 30 min pro Person jedoch nicht überschreiten. Jeder soll in der Lage sein alle Schritte nachvollziehen zu können. D. h. die Präsentation kann auch eine „Live-Demo“ sein, die
       zeigt wie die Aufgabe gelöst wurde.
 
       Die Präsentation ist bis zum 3. Nov. 2024 23:59 Uhr in Moodle hochzuladen. Sollten Sie eine Live-Demo machen, dann zeichnen Sie Ihren Probelauf auf und laden Sie diesen als Zip-Datei hoch. Alternativ können Sie Ihre Video auch in Youtube stellen oder per OneDrive, Dropbox, ... zur Verfügung stellen. In diesem Falle laden Sie eine Textdatei mit der URL zum Video hoch! Nutzen Sie nicht Moodle für die Videos, da diese häufig Probleme bereitet!
 
       `Erste Tips zur Gestaltung von Vorträgen finden Sie hier. <https://delors.github.io/allg-vortraege/folien.de.rst.html>`__
-      
+
       Notenanteil: 15%
 
 
 
 Was passiert wann im 2. Semester...
 --------------------------------------
-  
-.. story:: 
-  
-  .. compound:: 
 
-    .. rubric:: 19. Feb 2025 
+.. story::
+
+  .. compound::
+
+    .. rubric:: 19. Feb 2025
 
     - Ausgabe der Themen zur Bearbeitung
     - Kurze Einführung in das Thema Pentesting.
 
-  .. compound:: 
+  .. compound::
     :class: incremental
 
-    .. rubric:: 24. Feb 2025 
-    
+    .. rubric:: 24. Feb 2025
+
     **Bearbeitung der Themen** mit dem Ziel „Hands-on“; bei Bedarf stehe ich für Rückfragen *online* zur Verfügung: https://bbb.dhbw.de/mannheim/eic-mn5-hvh-7qd.
 
 
   .. compound::
     :class: incremental
 
-    .. rubric:: 12. Mar 2025 
+    .. rubric:: 12. Mar 2025
 
     - Halten der Präsentationen - Notenanteil: 20%
     - Vergabe der Aufgabe für das Pentesting
 
     .. attention::
       :class: margin-bottom-1em
-      
+
       Die Vorträge müssen am Abend vorher hochgeladen sein.
-  
-  .. compound:: 
+
+  .. compound::
     :class: incremental
 
     .. rubric:: 31. Mar 2025
 
     **Durchführung des Pentesting**; bei Bedarf stehe ich für Rückfragen *online* zur Verfügung: https://bbb.dhbw.de/mannheim/eic-mn5-hvh-7qd.
-    
-    
-  .. compound:: 
+
+
+  .. compound::
     :class: incremental
 
     .. rubric:: 23. Apr 2025
@@ -196,10 +196,10 @@ Was passiert wann im 2. Semester...
 
     .. attention::
       :class: margin-bottom-1em
-      
+
       Die Vorträge müssen am Abend vorher hochgeladen sein.
 
-  .. compound:: 
+  .. compound::
     :class: incremental
 
     .. rubric:: Ende des Semesters
@@ -222,11 +222,10 @@ Vortragsthemen
   (Wep App Scanner)
 - `Burp Suite inkl. Dastardly <https://portswigger.net/burp/communitydownload>`__  (1 Person)
 
-  (Penetration testing toolkit.)  
+  (Penetration testing toolkit.)
 - `Metasploit <https://www.metasploit.com/>`__ (2 Personen)
 
   (Penetration testing framework.)
-
 
 **Dauer pro Person: 25 Minuten**
 
@@ -253,7 +252,7 @@ Bewertungskriterien
 
     - Vermittelt die Präsentation einen guten ersten Einblick in das Tool (Fähigkeiten und Grenzen)
     - Qualität der (Live-)Demonstration (und ggf. des Backups)
-      
+
       (ggf. ist das Aufsetzen einer (kleinen) virtuellen Maschine sinnvoll/notwendig.)
     - Reduktion auf das Wesentliche
     - Qualität der Beantwortung von Fragen
