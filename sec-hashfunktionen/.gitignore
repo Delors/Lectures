@@ -1,7 +1,4 @@
-drawings/hash_functions
 drawings/hmac
-drawings/digests
-drawings/signatures
 drawings/poly1305.svg
 drawings/sha512
 drawings/sha512-processing_a_block

@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+    "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg
+    xmlns="http://www.w3.org/2000/svg"
+    version="1.1"
+    xmlns:xl="http://www.w3.org/1999/xlink"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    viewBox="-297 269 417 250"
+    width="417"
+    height="250"
+>
+<style>
+  @import url('/LectureDoc2/ext/fonts/ld-fonts.css');
+</style>
+<metadata> Produced by OmniGraffle 8.0\n2025-05-11 09:17:26 +0000</metadata>
+  <g
+        id="properties"
+        stroke-dasharray="none"
+        stroke="none"
+        stroke-opacity="1"
+        fill="none"
+        fill-opacity="1"
+    >
+    <title>properties</title>
+    <rect fill="white" x="-297" y="269" width="417" height="250" />
+    <g id="properties_Layer_1">
+      <title>Layer 1</title>
+      <g id="Graphic_2">
+        <circle
+                    cx="-172"
+                    cy="394"
+                    r="125.000199737737"
+                    fill="#b4b4b4"
+                    fill-opacity=".29947917"
+                />
+      </g>
+      <g id="Graphic_3">
+        <circle
+                    cx="-5.5"
+                    cy="394"
+                    r="125.000199737737"
+                    fill="#b4b4b4"
+                    fill-opacity=".29947917"
+                />
+      </g>
+      <g id="Graphic_4">
+        <circle
+                    cx="-5.5"
+                    cy="394"
+                    r="73.5001174457894"
+                    fill="#b4b4b4"
+                    fill-opacity=".29947917"
+                />
+      </g>
+      <g id="Graphic_5">
+        <text transform="translate(-101.228 274)" fill="black">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="16"
+                        font-weight="400"
+                        fill="black"
+                        x="69.84"
+                        y="17"
+                        xml:space="preserve"
+                    >Second </tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="16"
+                        font-weight="400"
+                        fill="black"
+                        x="28.879997"
+                        y="39"
+                        xml:space="preserve"
+                    >preimage resistant</tspan>
+        </text>
+      </g>
+      <g id="Graphic_6">
+        <text transform="translate(-205.96 375.552)" fill="black">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="16"
+                        font-weight="400"
+                        fill="black"
+                        x="0"
+                        y="17"
+                        xml:space="preserve"
+                    >Preimage</tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="16"
+                        font-weight="400"
+                        fill="black"
+                        x="3.088"
+                        y="39"
+                        xml:space="preserve"
+                    >resistant</tspan>
+        </text>
+      </g>
+      <g id="Graphic_7">
+        <text transform="translate(-37.468 375.552)" fill="black">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="16"
+                        font-weight="400"
+                        fill="black"
+                        x="1.952"
+                        y="17"
+                        xml:space="preserve"
+                    >Collision </tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="16"
+                        font-weight="400"
+                        fill="black"
+                        x="1.096"
+                        y="39"
+                        xml:space="preserve"
+                    >resistant</tspan>
+        </text>
+      </g>
+    </g>
+  </g>
+</svg>
