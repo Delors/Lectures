@@ -45,8 +45,8 @@ Einloggen auf einem Server
 
 .. class:: incremental-list
 
-1. Starten Sie eine Shell (Terminal oder iTerm auf MacOS bzw. Linux; cmd oder powershell unter Windows.)
-2. Verwenden Sie SSH um sich auf dem Server einzuloggen. Sollte Ihr Accountname zum Beispiel "mueller" sein und der Server unter der IP "141.72.12.103" erreichbar sein, dann können Sie sich wie folgt auf dem Server einloggen\ [#]_\ :
+1. Starten Sie eine Shell (z. B. Terminal oder iTerm auf MacOS bzw. Linux; cmd oder Powershell unter Windows.)
+2. Verwenden Sie SSH, um sich auf dem Server einzuloggen. Sollte Ihr Accountname zum Beispiel ``mueller`` sein und der Server unter der IP ``141.72.12.103`` erreichbar sein, dann können Sie sich wie folgt auf dem Server einloggen, wenn passwort-basierte Authentifizierung möglich ist\ [#]_\ :
 
    .. code:: bash
         :class: copy-to-clipboard
@@ -57,10 +57,132 @@ Einloggen auf einem Server
 
 .. supplemental::
 
-    Im professionellen Umfeld würde man zur Authentifizierung auf Zertifikate setzen. Für diese erste Übung verzichten wir darauf.
+    SSH ist die Secure Shell und eine allg. etabliertes Werkzeug im Bereich der Administration von (Server-)Systemen, IoT Geräten etc.
+
+    Im professionellen Umfeld würde man zur Authentifizierung mittels SSH auf Zertifikate setzen. Für diese erste Übung verzichten wir darauf.
 
 
-Grundlegende Befehle
+
+Dateisysteme auf Unix-ähnlichen Betriebssytemen
+-----------------------------------------------
+
+.. story::
+
+    .. class:: incremental-list
+
+    - Die Verzeichnisstruktur in Unix-ähnlichen Systemen ist hierarchisch aufgebaut und beginnt bei der Wurzel (``/``).
+    - Alle Dateien und Verzeichnisse sind Unterknoten dieses Wurzelverzeichnisses.
+
+      .. hint::
+        :class: incremental
+
+        In Unixoiden Betriebssystemen trennt ``/`` auch Verzeichnisse.
+
+      .. example::
+        :class: incremental
+
+        D. h. ``/Users/administrator/.zsh_history`` ist der Pfad der Datei .zsh_history im Verzeichnis ``administrator``, welches wiederum im Verzeichnis ``Users`` zu finden ist. ``Users`` ist ein direktes Kindverzeichnis des Wurzelverzeichnisses ``/``.
+
+    - Im Regelfall sind Datei- und Verzeichnisnamen `Case-sensitive`.
+
+      .. example::
+        :class: incremental
+
+        Es ist möglich zwei Dateien ``Test.txt`` und ``test.txt`` gleichzeitig zu haben, die sich nur in der Groß-Kleinschreibung unterscheiden.
+
+    - Geräte (wie zum Beispiel Festplatten, USB Sticks, Zufallszahlengeneratoren ...) können an *fast beliebiger Stelle* eingehängt werden.
+
+      .. example::
+        :class: incremental
+
+        Mittels :console:`mount` kann man sich anzeigen lassen welche Geräte wo eingehängt sind:
+
+        .. code:: systemd
+            :number-lines:
+
+            /dev/vda2 on / type ext4 (rw,relatime)
+            /dev/vda1 on /boot/efi type vfat (rw,relatime,...)
+
+    - Systeminformationen sind auch direkt über spezielle Verzeichnisse verfügbar
+
+      .. example::
+        :class: incremental
+
+        .. code:: console
+
+            more /proc/cpuinfo
+
+        Gibt detaillierte Informationen über die CPU aus.
+
+        .. code:: console
+
+            cat /proc/sys/kernel/printk
+
+        Gibt die Log-level Konfiguration des Kernels aus.
+
+    - Die Systemkonfiguration kann direkt über das Schreiben in spezialisierte Dateien erfolgen (meist sind Administratorrechte notwendig)
+
+      .. example::
+        :class: incremental
+
+        .. code:: console
+
+            echo 7 > /proc/sys/kernel/printk
+
+        Setzt den Logging-level für das Kernel Logging auf den Debug-Level, in dem der Wert 7 in die Datei ``printk`` geschrieben wird.
+
+.. supplemental::
+
+    ``cat``, ``more`` oder auch ``less`` sind ganz generische Programme zum Lesen von jeder Art von Text-basierten Dateien.
+
+
+
+Wichtige Verzeichnisse
+-----------------------
+
+Die wichtigsten Verzeichnisse - insbesondere unter Linux Betriebssystemen - sind:
+
+.. story::
+
+    .. class:: incremental-table-rows
+
+    +--------------+--------------------------------------------------------------------------+
+    | Verzeichnis  | Bedeutung / Inhalt                                                       |
+    +==============+==========================================================================+
+    | /            | Wurzelverzeichnis – Ausgangspunkt aller Pfade                            |
+    +--------------+--------------------------------------------------------------------------+
+    | /bin         | Wichtige Systemprogramme (z. B. ``ls``, ``cp``, ``mv``)                  |
+    +--------------+--------------------------------------------------------------------------+
+    | /dev         | Gerätedateien (z. B. Festplatten: ``/dev/sda``, Terminals: ``/dev/tty``) |
+    +--------------+--------------------------------------------------------------------------+
+    | /etc         | Systemweite Konfigurationsdateien                                        |
+    +--------------+--------------------------------------------------------------------------+
+    | /home        | Persönliche Benutzerverzeichnisse (z. B. ``/home/alex``)                 |
+    +--------------+--------------------------------------------------------------------------+
+    | /lib         | Wichtige Systembibliotheken                                              |
+    +--------------+--------------------------------------------------------------------------+
+    | /media       | Einhängepunkte für Wechseldatenträger                                    |
+    +--------------+--------------------------------------------------------------------------+
+    | /mnt         | Temporärer Einhängepunkt für Administratoren                             |
+    +--------------+--------------------------------------------------------------------------+
+    | /root        | Heimatverzeichnis des Superusers ``root``                                |
+    +--------------+--------------------------------------------------------------------------+
+    | /sbin        | Systemprogramme für den Administrator                                    |
+    +--------------+--------------------------------------------------------------------------+
+    | /tmp         | Temporäre Dateien                                                        |
+    +--------------+--------------------------------------------------------------------------+
+    | /usr         | Sekundäres Hierarchiesystem für Benutzerprogramme                        |
+    +--------------+--------------------------------------------------------------------------+
+    | /var         | Veränderliche Dateien (z. B. Logs, Mails, Spool-Dateien)                 |
+    +--------------+--------------------------------------------------------------------------+
+    +--------------+--------------------------------------------------------------------------+
+    | ~            | Alias für das Homedirectory des aktuellen Nutzer.                        |
+    +--------------+--------------------------------------------------------------------------+
+
+
+
+
+Grundlegendes
 -----------------------
 
 .. deck::
@@ -69,20 +191,17 @@ Grundlegende Befehle
 
         .. rubric:: Verzeichnis Operationen
 
-        .. hint::
-
-            In Unixoiden Betriebssystemen trennt der "/" Verzeichnisnamen und es gibt nur ein Wurzelverzeichnis welches den namen "/" hat.
-
         .. class:: incremental-list dd-margin-left-4em
 
-        :`ls`:console:: Ermöglicht es den Inhalt eines Verzeichnisses aufzulisten. :console:`ls -al` gibt weitergehende Informationen aus. Insbesondere alle versteckten Dateien und Verzeichnisse sowie die Größe der Dateien und die Rechte.
+        :`ls`:console:: Gibt Informationen über eine Datei/Verzeichnis aus. Ermöglicht es insbesondere den Inhalt eines Verzeichnisses aufzulisten. :console:`ls -al` gibt weitergehende Informationen aus. Insbesondere alle versteckten Dateien und Verzeichnisse sowie die Größe der Dateien und die Rechte.
         :`cd`:console:: (:eng:`change directory`)
 
-            Wechsel des Verzeichnisses. Wechsel zu einem bestimmten Verzeichnis erfolgt durch Angabe des Names (:console:`cd source`).             Wechsel zum Elternverzeichnis erfolgt über: :console:`..` (:console:`cd ..`).
+            Wechsel des Verzeichnisses. Wechsel zu einem bestimmten Verzeichnis erfolgt durch Angabe des Names (:console:`cd Test`).             Wechsel zum Elternverzeichnis erfolgt über: :console:`cd ..` (:console:`..` steht immer für das Elternverzeichnis).
             Wechsel zum Wurzelverzeichnis erfolgt über: :console:`cd /`
 
-        :`mkdir`:console:: Anlegen eines Verzeichnisses
-        :`rmdir`:console:: Löschen eines *leeren* Verzeichnisses
+        :`mkdir`:console:: Anlegen eines Verzeichnisses (:console:`mkdir Test`)
+        :`rmdir`:console:: Löschen eines *leeren* Verzeichnisses (:console:`rmdir Test`)
+        :`rm`:console:: (:eng:`remove`) Löschen einer Datei (:console:`rm Hello.txt`)
 
     .. card::
 
@@ -90,17 +209,72 @@ Grundlegende Befehle
 
         .. class:: incremental-list
 
-        - Löschen einer Datei:         :console:`rm` (:eng:`remove`) Löschen
-
         - Wenn man in Linux/MacOS ein Stern benutzt, dann wird dies zu den Namen aller nicht-versteckten Dateien/Verzeichnisse im aktuellen Verzeichnis aufgelöst und diese werden an das Programm übergeben! Zum Beispiel löscht :console:`rm *` alle Dateien im aktuellen Verzeichnis.
 
         - Verfügbarer Speicher auf der Festplatte: :console:`df -h`
 
-        - Benutzer Speicher (eines Verzeichnisses): :console:`du -h ~`
+        - Benutzer Speicher (eines Verzeichnisses): :console:`du -h -s ~`
+
+        - Inhalt einer Datei editieren ist (zum Beispiel) mit ``pico`` möglich. Alternative kann mit Hilfe von ``echo`` ein Text in eine Datei umgeleitet werden (:console:`echo "Hello" > Hello.txt`).
+
+        - Inahlt einer Datei ansehen: ``cat``, ``less``, ``more``, ...
 
 
+.. class:: exercises
 
-TODO Übung: Server (zum Beispiel NodeJS) starten und eine Datei ausliefern...
+Übung - Starten eines kleinen WebServers
+-----------------------------------------
+
+.. exercise:: Unix - Erste Schritte
+
+    .. class:: incremental-list list-with-explanations
+
+    1. Loggen Sie sich auf dem Server (z.B. 141.72.12.103) unter Verwendung der Zugangsdaten für  Ihre Gruppe ein.
+    2. Erzeugen Sie ein Verzeichnis mit Ihrem Nachnamen (z.B. "eichberg")
+    3. Legen Sie in dem Verzeichnis eine rundimentäre ``index.html`` Datei an.
+
+       (Sie können zum Beispiel ``pico``, ``vim`` oder ``echo`` verwenden!)
+    4. Starten Sie einen Webserver mit dem gerade angelegten Verzeichnis als Wurzel. Wählen Sie eine zufälligen Port XXXX > 1024 aus.
+
+       (Zum Beispiel können Sie den bereits installierten Webserver mittels ``http-server`` wie folgt starten. Im Folgenden ist der Port ``XXXX`` und das Wurzelverzeichnis für Ihre Webseiten "``eichberg``":
+        :console:`http-server -p XXXX eichberg`).
+    5. Wechseln Sie in Ihren Browser und öffnen sie die entsprechende Webseite.
+
+       (Denken Sie daran, dass dieser Server nur http und nicht https unterstützt.)
+    6. Beenden Sie den WebServers
+    7. Löschen Sie das gerade angelegte Verzeichnis.
+
+    .. solution::
+        :pwd: ServerStartenIstNichtSchwer
+
+        .. rubric:: Lösung
+
+        Wenn wir davon ausgehen, dass der Name "eichberg" ist und der zufällig Port 8888, dann wären die folgenden Befehle eine mögliche Lösung:
+
+        .. code:: console
+            :number-lines:
+
+            mkdir eichberg
+            cd eichberg
+            echo "<b>Hello World</b>" > index.html
+            cd ..
+            http-server -p 8888 eichberg
+
+        ::
+
+            <Webbrowser öffnen und Seite besuchen.>
+            <CTRL+C>
+
+        .. code:: console
+            :number-lines: 6
+
+            rm eichberg/index.html
+            rmdir eichberg
+
+        Die zu verwendende URL ist:
+
+        http://141.72.12.103:8888
+
 
 
 
@@ -136,12 +310,17 @@ Umleitung von ``stdin`` in Dateien
 
     Erzeugen einer Datei ``tmp/0s.txt``, die 1024 mal den Wert 0 in Base64 Kodierung enthält.
 
-    .. code:: zsh
+    .. code:: bash
+        :number-lines:
         :class: copy-to-clipboard
 
         dd if=/dev/zero bs=1 count=1024 | base64 \ # 1024 * "0" in base64
         >                                        \ # Umleitung der Ausgabe
         /tmp/0s.txt                                # in /tmp/0s.txt
+
+    .. remark::
+
+        Der ``\`` wird dazu verwendet, lange Shellkommandos über mehrere Zeilen schreiben zu können. Die # leitet ein "End-of-line Comment" ein.
 
 
 
@@ -161,6 +340,7 @@ Beim Umleiten von Ausgaben an eine Datei, kann der Dateideskriptor angegeben wer
         Finden von bestimmten Dateien; aber Fehlerausgaben während des Suchprozesses ignorieren.
 
         .. code:: bash
+            :number-lines:
             :class: copy-to-clipboard
 
             find / -iname "*txt*" -type f \
@@ -179,11 +359,12 @@ Grundlegende Prinzipien: Lesen aus einer Datei
     Finden aller Städte, die mit "B" beginnen.\ [#]_
 
     .. code:: zsh
+        :number-lines:
         :class: copy-to-clipboard
 
-        grep B \          # filtert alle Zeilen, die ein "B" enthalten
-        < Big\ Cities.txt # der Inhalt von Big Cities.txt wird über stdin zur
-                          # Verfügung gestellt
+        grep B \             # filtert alle Zeilen, die ein "B" enthalten
+           < Big\ Cities.txt # der Inhalt von Big Cities.txt wird über stdin
+                             # zur Verfügung gestellt
 
 .. [#] In diesem Fall könnte die Datei (``Big Cities.txt``) auch direkt als Parameter an ``grep`` übergeben werden. In anderen Fällen ist dies aber nicht möglich.
 
@@ -193,7 +374,7 @@ Linux Shell - Grundlegendes Design-Pattern: **Pipes and Filters**
 ------------------------------------------------------------------
 
 - Grundlegendes Konzept bzw. Entwurfsmuster (:eng:`Design-Pattern`) in Unix-basierten Betriebssystemen.
-- Ermöglicht die effiziente Verkettung von Befehlen. Die „Pipes-and-Filter“ Architektur erlaubt es komplexe Verarbeitungsoperationen mit Hilfe von einfachen Befehlen durchzuführen.
+- Ermöglicht die effiziente Verkettung von Befehlen. Die „Pipes-and-Filter“ Architektur erlaubt es komplexe Verarbeitungsoperationen mit Hilfe der Kombination von einfachen Befehlen durchzuführen.
 
 .. class:: incremental
 
@@ -206,6 +387,7 @@ Linux Shell - Grundlegendes Design-Pattern: **Pipes and Filters**
     Konvertierung des Wortes ``Test`` in Base64 Kodierung.
 
     .. code:: bash
+        :number-lines:
         :class: copy-to-clipboard
 
         echo -n "Test" \
@@ -281,6 +463,7 @@ echo
     **Anwendungsfall**: Programmatisch Daten nach ``stdout`` schreiben.
 
     .. code:: bash
+        :number-lines:
 
         $ echo -n "TestPasswort"
           | shasum -a 256
@@ -308,6 +491,7 @@ cat
     Inhalt von Test2.txt: ``Test2``
 
     .. code:: bash
+        :number-lines:
 
         $ echo "Test3" | cat Test1.txt Test2.txt -
         Test1
@@ -321,23 +505,25 @@ tr
 
 - Kopiert die Eingabe von ``stdin`` nach ``stdout`` und führt dabei Substitutionen und Löschungen durch.
 
-.. container:: incremental line-above margin-top-1em padding-top-1em
+.. container:: incremental
 
     **Anwendungsfall**: bestimmte Buchstaben - zum Beispiel Sonderzeichen - sollen gelöscht werden.
 
     .. code:: bash
+        :number-lines:
 
-       $ echo -n 'ab.cd_12!' | tr -dc '[:alnum:]'  # -dc = delete complement
-       abcd12
+        $ echo -n 'ab.cd_12!' | tr -dc '[:alnum:]'  # -dc = delete complement
+        abcd12
 
 .. container:: incremental
 
     **Anwendungsfall**: Groß- in Kleinbuchstaben verwandeln.
 
     .. code:: bash
+        :number-lines:
 
-       $ echo -n 'STARK' | tr '[:upper:]' '[:lower:]'
-       stark
+        $ echo -n 'STARK' | tr '[:upper:]' '[:lower:]'
+        stark
 
 
 
@@ -356,6 +542,7 @@ uniq
     :peripheral:`Die Sortierung - zum Beispiel angefangen mit den am häufigsten vorkommenden Einträgen - kann danach im Nachgang erfolgen`.
 
     .. code:: bash
+        :number-lines:
 
         $ echo "Test\nTest\nSchlaraffenland\nTest" | uniq -c
         2 Test
@@ -382,6 +569,7 @@ awk
     **Anwendungsfall**: Die Einträge einer Datei sollen nach länge sortiert werden. In diesem Fall, kann mit Hilfe von awk jede Zeile mit der Länge ausgegeben werden. :peripheral:`Danach kann die Liste entsprechend sortiert werden.`
 
     .. code:: bash
+        :number-lines:
 
         $ echo "Test\nSchlaraffenland" |  awk '{print length " " $1}'
         4 Test
@@ -398,12 +586,12 @@ sort
 - ``-k`` spezifiziert das Feld, nach dem sortiert werden soll. (z. B. -k 3)
 - ``-t`` spezifiziert das Trennzeichen, das die Felder trennt. (z. B. -t ',')
 
-.. container:: incremental line-above margin-top-1em padding-top-1em
+.. container:: incremental
 
     **Anwendungsfall**: Sortiere eine Liste nach Häufigkeit des Vorkommens eines Wortes.
 
     .. code:: bash
-        :class: smaller
+        :number-lines:
 
         $ echo "abc\nxyz\nuvw\nxyz" \
           | sort \                  # alphabetische Sortierung
@@ -421,6 +609,7 @@ sort
     Sortierung einer Liste von Worten in absteigender Reihenfolge bzgl. (1) der Häufigkeit und (2) Länge.
 
     .. code:: bash
+        :number-lines:
 
         $ printf '%s' "abc\nuvw\nxyz\nlmnop\nxyz\nuvw" \
                "\nlmnop\nlmnop\nxyz\ncd\ncd\ncd" \
@@ -437,6 +626,7 @@ sort
     Sortierung einer Liste von Worten in absteigender Reihenfolge bzgl. (1) der Häufigkeit und (2) aufsteigend bzgl. der Länge.
 
     .. code:: bash
+        :number-lines:
 
         $ echo "abc\n" "uvw\n" "xyz\n" "lmnop\n" "xyz\n" "uvw\n" \
                "lmnop\n" "lmnop\n" "xyz\n" "cd\n" "cd\n" "cd" \
@@ -456,17 +646,17 @@ base64
 
 Base64 kodierte Werte bestehen nur noch aus gültigen ASCII Zeichen und können als "Text" gespeichet/übermittelt werden kann.
 
-.. admonition:: Hinweis
-    :class: note smaller
+.. note::
+    :class: width-40
 
     Je nach Betriebssystem/Konfiguration ist der Befehl unter Umständen etwas anders benannt. Grundlegend gibt es den Befehl auf allen Unixoiden.
 
-.. container:: incremental line-above margin-top-1em padding-top-1em
+.. container:: incremental
 
     **Anwendungsfall**: In vielen Fällen können gehashte Passworte nicht roh (d. h. als Binärdaten) gespeichert werden sondern müssen `Base64 <https://datatracker.ietf.org/doc/html/rfc4648#section-4>`__ (oder vergleichbar) kodiert werden.
 
     .. code:: bash
-        :class: smaller
+        :number-lines:
 
         # Codierung
         $ echo "Dies_ist_ein_test" | base64
@@ -495,7 +685,7 @@ grep
     **Anwendungsfall**: Alle Textfragmente in einem Leak finden\ :peripheral:`, um danach mit Regeln neue Passwortkandidaten zu bilden`.
 
     .. code:: bash
-        :class: smaller
+        :number-lines:
 
         $ echo "Test123\nmichael@dhbw.de\n345test@dhbw.de\nEnde__" \
           | grep -Eo "[a-zA-Z]{3,}" | sort -u
@@ -520,7 +710,7 @@ sed - Stromeditor
     **Anwendungsfall**: Löschen des ersten Sonderzeichens in einer Zeile.
 
     .. code:: bash
-        :class: smaller
+        :number-lines:
 
         $ echo 'ab_cd!_ef?' | sed -E  's/[^a-zA-Z0-9]//'
         abcd!_ef?
@@ -531,7 +721,7 @@ sed - Stromeditor
     **Anwendungsfall**: Analyse der Struktur eines Leaks durch das Abbilden **aller** Buchstaben auf die Repräsentanten: ``l``\ (lower) ``u``\ (upper) ``d``\ (digits) ``s``\ (special).
 
     .. code:: bash
-        :class: smaller
+        :number-lines:
 
         $ echo 'aB_c1d!_ef?' |
           sed -E -e's/[a-z]/l/g' -e's/[A-Z]/u/g' -e's/[0-9]/d/g' -e 's/[^lud]/s/g'
@@ -539,9 +729,9 @@ sed - Stromeditor
 
 .. supplemental::
 
-    **Hinweis**
+    .. hint::
 
-    ``sed`` auf dem Mac (BSD) und ``sed`` unter Linux (GNU) unterscheiden sich teilweise deutlich.
+        ``sed`` auf dem Mac (BSD) und ``sed`` unter Linux (GNU) unterscheiden sich teilweise deutlich.
 
 
 
@@ -552,13 +742,12 @@ find
 - ``-iname`` Testet ob der Verzeichniseintrag - unabhängig von der Groß- und Kleinschreibung - dem gegebenen Muster entspricht.
 - ``-exec ... {} ... \;`` ermöglicht es für jede gefilterte Datei ``{}`` einen Befehl auszuführen.
 
-
 .. container:: incremental
 
     **Anwendungsfall**: Feststellen wie lange die Hashes sind.
 
     .. code:: bash
-        :class: smaller
+        :number-lines:
 
         $ find . -iname "*hash*" -exec wc -c {} \;
         33 ./saltedmd5/hash.md5
@@ -577,7 +766,7 @@ Software nachinstallieren
 
   - ``apt`` (Debian, Ubuntu, Kali Linux, ...)
 
-  .. class:: minor
+  .. class:: peripheral
 
   - ``yum`` (RedHat, CentOS, ...)
   - ``pacman`` (Arch Linux, ...)
@@ -585,58 +774,56 @@ Software nachinstallieren
 
 .. [*] Beide sind in diesem Fall nicht Teil des Betriebssystems, sondern müssen erst nachinstalliert werden, bevor damit weitere Software nachinstalliert werden kann.
 
-.. container:: incremental line-above margin-top-1em padding-top-1em copy-to-clipboard
+.. container:: incremental
 
     **Anwendungsfall**: Installieren von ``ent`` (ein Programm, das die Entropie von Dateien berechnet):
 
     .. code:: bash
-        :class: smaller copy-to-clipboard
+        :class: copy-to-clipboard
+        :number-lines:
 
         sudo apt install ent
 
 
-.. class:: small
 
 Shellprogrammierung
 ----------------------
 
 - Jede Shell (insbesondere: ``zsh`` (auf Mac und Kali Linux) und ``bash`` (Debian, Ubuntu, ...)) erlaubt es prozedurale Programme zu schreiben.
 
-.. container:: incremental line-above margin-top-1em padding-top-1em copy-to-clipboard
+.. container:: incremental
 
-   **Anwendungsfall**: Berechnung der Entropie für jede Datei in einer Liste.
+    **Anwendungsfall**: Berechnung der Entropie für jede Datei in einer Liste.
 
-   .. code:: zsh
-    :class: smaller
+    .. code:: zsh
+        :number-lines:
 
-    #!/usr/bin/zsh                   # Shebang zur Spezifikation der Shell
-    IFS=$'\n'                        # IFS = Internal Field Separator
-                                     # (Nur Zeilenumbrüche sind Trennzeichen)
-    rm Files.list.assessed           # Lösche die Ausgabedatei
-    for i in $(cat Files.list); do   # Iteriere über die Zeilen in Files.list
-        echo "Processing: ""$i"
-        ent -t "$i" | \              # Berechne die Entropie
-        grep -E "^1" | \             # Selektiere die Zeile mit der Entropie
-        tr -d '\n' | \               # Lösche den Zeilenumbruch
-        cat - <(echo ",""$i") \      # Füge den Dateinamen hinzu
-            >> Files.list.assessed ; # Schreibe das Ergebnis
-    done;
-
-
+        #!/usr/bin/zsh                   # Shebang zur Spezifikation der Shell
+        IFS=$'\n'                        # IFS = Internal Field Separator
+                                         # (Nur Zeilenumbrüche sind Trennzeichen)
+        rm Files.list.assessed           # Lösche die Ausgabedatei
+        for i in $(cat Files.list); do   # Iteriere über die Zeilen in Files.list
+            echo "Processing: ""$i"
+            ent -t "$i" | \              # Berechne die Entropie
+            grep -E "^1" | \             # Selektiere die Zeile mit der Entropie
+            tr -d '\n' | \               # Lösche den Zeilenumbruch
+            cat - <(echo ",""$i") \      # Füge den Dateinamen hinzu
+                >> Files.list.assessed ; # Schreibe das Ergebnis
+        done;
 
 
-.. class:: transition-scale integrated-exercise
+
+
+.. class:: transition-scale exercises
 
 Fingerübungen
 -------------------
 
 .. admonition:: Voraussetzung
-    :class: far-smaller
 
     Starten Sie z. B. Kali Linux (oder eine entsprechende VM), loggen Sie sich ein und starten Sie ein Terminal.
 
 .. exercise:: Dateien finden
-    :class: smaller
 
     Finden Sie die Datei, die die Standardpassworte von Postgres Datenbanken enthält (der Dateiname enthält sowohl ``postgres`` als auch ``pass``).
 
@@ -648,7 +835,6 @@ Fingerübungen
             $ find /  -iname "*postgres*pass*" -type f 2>/dev/null
 
 .. exercise:: MD5 Hash berechnen
-    :class: smaller
 
     Konkatenieren sie die Zeichenkette „MySalt“ (ohne Zeilenumbruch!) mit dem Inhalt von rockyou.txt (als Ganzes) und berechnen Sie davon den md5 Hash. Verwenden Sie keine expliziten Zwischenergebnisse.
 
@@ -663,9 +849,8 @@ Fingerübungen
             4e50fd427d675821b68c61a4c6099ea0  -
 
 .. exercise:: Base64
-    :class: smaller
 
-    Erzeugen Sie für eine Datei (z. B. ``/usr/bin/wc``) einen MD5 hash und stellen Sie diesen  der Datei selber voran bevor sie alles nach Base64 konvertieren.
+    Erzeugen Sie für eine Datei (z. B. ``/usr/bin/wc``) einen MD5 hash und stellen Sie diesen der Datei selber voran bevor sie alles nach Base64 konvertieren.
 
     .. solution::
         :pwd: md5sum_base64
