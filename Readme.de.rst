@@ -11,7 +11,7 @@ Lehrveranstaltungen und Foliensätze
 ===================================
 
 - Im Folgenden sind Foliensätze verlinkt, die für verschiedene Lehrveranstaltungen genommen werden können.
-- Die Foliensätze sind modularisiert, um sich an die jeweiligen Anforderungen der Vorlesungen anpassen zu lassen. 
+- Die Foliensätze sind modularisiert, um sich an die jeweiligen Anforderungen der Vorlesungen anpassen zu lassen.
 - Im Folgenden sind Vorschläge für einige sinnvolle Kombinationen zu finden.
 
 
@@ -27,8 +27,8 @@ Die grundlegende Idee hinter der folgenden Reihenfolge ist, dass die Studierende
    2. Grundlagen der Programmierung in Java (`<prog-java-basics/folien.de.rst.html>`__)
    3. Verwendung von Arrays in Java (`<prog-java-arrays/folien.de.rst.html>`__)
    4. Modularisierung von einfachen Java Programming (`<prog-java-modularisierung-101/folien.de.rst.html>`__)
-      
-      Es wird lediglich diskutiert, wie Methoden in Klassen organisiert werden können und wie man diese aus anderen Klassen heraus aufrufen kann. 
+
+      Es wird lediglich diskutiert, wie Methoden in Klassen organisiert werden können und wie man diese aus anderen Klassen heraus aufrufen kann.
    5. Einführung in die Modellierung mit UML (`<prog-modellierung_mit_uml/folien.de.rst.html>`__)
    6. Objekt-orientierte Programmierung in Java - Einführung (`<prog-java-oo/folien.de.rst.html>`__)
    7. Objekt-orientierte Programmierung in Java - Vererbung und Polymorphie (`<prog-java-oo-inheritance/folien.de.rst.html>`__)
@@ -53,14 +53,14 @@ Vorlesung "Theoretische Informatik" bzw. "Algorithmen und Datenstrukturen"
    2. Suchen auf Arrays (`<theo-algo-suchen_auf_arrays/folien.de.rst.html>`__)
 
    3. Genetische Algorithmen (`<theo-algo-genetic_algorithms/folien.de.rst.html>`__)
-   
+
    4. Lineare und Mixed-Integer Programmierung (`<theo-algo-mixed_integer_programming/folien.de.rst.html>`__)
 
    5. Hashing und Hashmaps (`<theo-algo-hashing/folien.de.rst.html>`__)
 
    6. Formale Sprachen (`<theo-algo-formale_sprachen/folien.de.rst.html>`__)
-   
-   
+
+
 
 Vorlesung "Verteilte Systeme" / "Distributed Systems"
 -------------------------------------------------------
@@ -71,12 +71,12 @@ Vorlesung "Verteilte Systeme" / "Distributed Systems"
 
       Introduction to Distributed Systems (`<ds-introduction/folien.en.rst.html>`__)
    2. HTTP und Sockets in Java (`<ds-http-and-sockets-java/folien.de.rst.html>`__)
-      
+
       Alternativ:
 
       HTTP und Sockets in Python (`<ds-http-and-sockets-python/folien.de.rst.html>`__)
    3. Nebenläufigkeit und Synchronisation (in Java) (`<ds-nebenlaeufigkeit-java/folien.de.rst.html>`__)
-      
+
       Alternativ:
 
       Nebenläufigkeit und Synchronisation (in Java) (`<ds-nebenlaeufigkeit-python/folien.de.rst.html>`__)
@@ -86,14 +86,15 @@ Vorlesung "Verteilte Systeme" / "Distributed Systems"
 
 
    .. rubric:: Ergänzend
-         
+
    - Zusammenspiel von agilen Methoden und Entwurf verteilter Systeme (`<ds-se-agile/folien.de.rst.html>`__)
    - Entwurfsprinzipien für verteilte Systeme (`<ds-se-entwurfsprinzipien/folien.de.rst.html>`__)
    - RESTful Web Services (`<ds-restful/folien.de.rst.html>`_)
    - XML und XPath (`<ds-xml/folien.de.rst.html>`__)
 
 
-Vorlesungen mit Bezug zu "Software Engineering" 
+
+Vorlesungen mit Bezug zu "Software Engineering"
 ---------------------------------------------------
 
 - Zusammenspiel von agilen Methoden und Entwurf verteilter Systeme (`<ds-se-agile/folien.de.rst.html>`__)
@@ -113,12 +114,12 @@ Vorlesung "Web Engineering"
 4. JavaScript (`<web-javascript/folien.de.rst.html>`__)
 
 .. rubric:: Ergänzend
-      
+
 - Vortragsthemen, die sich gut in die Vorlesung einfügen (`<web-vortragsthemen/folien.de.rst.html>`__)
 
 
 
-Vorlesung mit Bezug zu "IT Sicherheit" 
+Vorlesung mit Bezug zu "IT Sicherheit"
 -----------------------------------------------
 
 .. scrollable::
