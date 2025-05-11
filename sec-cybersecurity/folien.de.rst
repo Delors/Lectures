@@ -5,13 +5,13 @@
     :description lang=de: Fortgeschrittene Angewandte IT Sicherheit
     :id: lecture-security-java_reverse_engineering
     :first-slide: last-viewed
-    :master-password: WirklichSchwierig!    
+    :master-password: WirklichSchwierig!
 
 .. include:: ../docutils.defs
 
 
 
-Cybersecurity 
+Cybersecurity
 =====================================================
 
 :Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
@@ -20,7 +20,7 @@ Cybersecurity
 
 .. supplemental::
 
-  :Folien: 
+  :Folien:
       |html-source|
 
       |pdf-source|
@@ -42,7 +42,7 @@ Was ist Cybersecurity?
 
             -- July 4th, 2024 - `Cisco <https://www.cisco.com/c/en/us/products/security/what-is-cybersecurity.html>`__
 
-    .. card:: 
+    .. card::
 
         .. epigraph::
 
@@ -50,19 +50,19 @@ Was ist Cybersecurity?
 
             -- July 4th, 2024 - `Britannica <https://www.britannica.com/technology/computer-security>`__
 
-    .. card:: 
+    .. card::
 
         .. epigraph::
-            
+
             **VERORDNUNG (EU) 2019/881 DES EUROPÄISCHEN PARLAMENTS UND DES RATES vom 17. April 2019 über die ENISA (Agentur der Europäischen Union für Cybersicherheit**
 
-            *Artikel 2 Nummer 1* 
+            *Artikel 2 Nummer 1*
 
             „Cybersicherheit“ bezeichnet alle Tätigkeiten, die notwendig sind, um Netz- und Informationssysteme, die Nutzer solcher Systeme und andere von Cyberbedrohungen betroffene Personen zu schützen [...]
 
             -- `Verordnung (EU) 2019/881 <https://eur-lex.europa.eu/legal-content/DE/TXT/PDF/?uri=CELEX:32019R0881>`__
 
-    .. card:: 
+    .. card::
 
         Das Ziel der IT-Sicherheit ist es Systeme vor:
 
@@ -80,13 +80,13 @@ Von praktischen und theoretischen Angriffen
 -------------------------------------------------------------
 
 
-Neuigkeiten aus der Welt der IT Sicherheit 
+Neuigkeiten aus der Welt der IT Sicherheit
 -------------------------------------------------------------
 
 .. deck::
 
     .. card::
-                
+
         .. epigraph::
 
             **Indonesia won’t pay an $8 million ransom after a cyberattack compromised its national data center**
@@ -97,7 +97,7 @@ Neuigkeiten aus der Welt der IT Sicherheit
 
     .. card::
 
-        .. epigraph:: 
+        .. epigraph::
 
             **Crypto-Hackers Steal $2.2bn as North Koreans Dominate**
 
@@ -118,14 +118,13 @@ Neuigkeiten aus der Welt der IT Sicherheit
             **Hackers shut down heating in Ukrainian city with malware**
 
             For two days in mid-January, some Ukrainians in the city of Lviv had to live without central heating and suffer freezing temperatures because of a cyberattack against a municipal energy company [...]
-            
+
             [...], the cybersecurity company Dragos published a report with details about a new malware dubbed FrostyGoop, which the company says is designed to target industrial control systems [...]
 
             -- Juli 2024 - `Techcrunch <https://techcrunch.com/2024/07/23/hackers-shut-down-heating-in-ukrainian-city-with-malware-researchers-say/?guccounter=1>`__
 
-
     .. card::
-        
+
         .. epigraph::
 
             **US government tells officials, politicians to ditch regular calls and texts**
@@ -135,16 +134,15 @@ Neuigkeiten aus der Welt der IT Sicherheit
             The first recommendation: "Use only end-to-end encrypted communications." [...]
 
 
-            --18.12.2024 - `Reuters <https://www.reuters.com/world/us/us-cyber-watchdog-tells-senior-officials-immediately-adopt-end-to-end-encryption-2024-12-18/>`__    
-
+            --18.12.2024 - `Reuters <https://www.reuters.com/world/us/us-cyber-watchdog-tells-senior-officials-immediately-adopt-end-to-end-encryption-2024-12-18/>`__
 
     .. card::
-                
+
         .. epigraph::
 
             **Want to Win a Bike Race? Hack Your Rival’s Wireless Shifters**
 
-            Relatively inexpensive hardware can be used to hack the Shimano Di2 wireless gear-shifting systems used by cyclists [...]. They tested the eavesdrop-and-replay attack with a $1,500 USRP software-defined radio, an antenna, and a laptop but said the setup could be miniaturized. Attackers could spoof signals from up to 30 feet away, causing the target bike to shift gears unexpectedly or lock into the wrong gear. 
+            Relatively inexpensive hardware can be used to hack the Shimano Di2 wireless gear-shifting systems used by cyclists [...]. They tested the eavesdrop-and-replay attack with a $1,500 USRP software-defined radio, an antenna, and a laptop but said the setup could be miniaturized. Attackers could spoof signals from up to 30 feet away, causing the target bike to shift gears unexpectedly or lock into the wrong gear.
 
             --August 2024 - `summary provided by ACM <https://technews.acm.org/archives.cfm?fo=2024-08-aug/aug-16-2024.html>`__; `full article: Wired <https://www.wired.com/story/shimano-wireless-bicycle-shifter-jamming-replay-attacks/>`__
 
@@ -158,7 +156,7 @@ Neuigkeiten aus der Welt der IT Sicherheit
 
             .. container:: incremental
 
-                [...] To conduct the Rambo attack, an attacker plants malware on the air-gapped computer to collect sensitive data and prepare it for transmission. It transmits the data by manipulating memory access patterns to generate controlled electromagnetic emissions from the device's RAM. 
+                [...] To conduct the Rambo attack, an attacker plants malware on the air-gapped computer to collect sensitive data and prepare it for transmission. It transmits the data by manipulating memory access patterns to generate controlled electromagnetic emissions from the device's RAM.
 
             .. container:: incremental
 
@@ -172,20 +170,20 @@ Neuigkeiten aus der Welt der IT Sicherheit
             .. rubric:: Rambo Attack - weitere Details
 
             .. epigraph::
-            
+
                 The emitted data is encoded into "1" and "0", represented in the radio signals as "on" and "off." The researchers opted for using Manchester code to enhance error detection and ensure signal synchronization, reducing the chances for incorrect interpretations at the receiver's end.
-                
+
                 The attacker may use a relatively inexpensive Software-Defined Radio (SDR) with an antenna to intercept the modulated electromagnetic emissions and convert them back into binary information.
 
 
     .. card::
-                
+
         .. epigraph::
 
             **SnailLoad: Exploiting Remote Network Latency Measurements without JavaScript**
 
             [Side-Channel Attack to circumvent privacy.]
-            
+
             [...] The attack setup for SnailLoad. A victim downloads data from an attacker's HTTP server while it watches a video on a video-sharing platform, e.g., YouTube. Due to the network bottleneck on the victim's side, the attacker can infer the transmitted amount of data by measuring the packet round trip time. The round trip time traces are unique per video and can be used to classify the video watched by the victim. [...]
 
             -- 28.6.2024 Snailload: `Paper <https://www.snailload.com/snailload.pdf>`__, `Web <https://www.snailload.com>`__
@@ -203,7 +201,7 @@ Neuigkeiten aus der Welt der IT Sicherheit
             -- 10. Sept. 2024 - `The Hacker News <https://thehackernews.com/2024/09/new-pixhell-attack-exploits-screen.html>`__
 
     .. card::
-                
+
         .. epigraph::
 
             **FAST 4.000 VERHAFTUNGEN: Interpol gelingt großer Schlag gegen Onlinebetrug**
@@ -215,16 +213,16 @@ Neuigkeiten aus der Welt der IT Sicherheit
             --29. Juni 2024 - `Golem.de <https://www.golem.de/news/fast-4-000-verhaftungen-interpol-gelingt-grosser-schlag-gegen-onlinebetrug-2406-186568.html>`__
 
     .. card::
-                
+
         .. epigraph::
 
             *CEO VERHAFTET*
 
             Der Hersteller soll insgesamt 240.000 Geräte mit der DDoS-Funktion ausgestattet haben – teils ab Werk, teils erst nachträglich per Firmwareupdate.
 
-            [...] In Südkorea sind fünf Mitarbeiter sowie der CEO eines Unternehmens verhaftet worden. Dieses soll Satellitenreceiver hergestellt und Hunderttausende davon auf Wunsch eines Kunden mit einer DDoS-Funktion ausgestattet haben. Wie [...] unter Verweis auf Angaben der südkoreanischen Polizei berichtet, lieferte der Hersteller 98.000 Geräte ab Werk mit dieser Funktion aus. [...] 
+            [...] In Südkorea sind fünf Mitarbeiter sowie der CEO eines Unternehmens verhaftet worden. Dieses soll Satellitenreceiver hergestellt und Hunderttausende davon auf Wunsch eines Kunden mit einer DDoS-Funktion ausgestattet haben. Wie [...] unter Verweis auf Angaben der südkoreanischen Polizei berichtet, lieferte der Hersteller 98.000 Geräte ab Werk mit dieser Funktion aus. [...]
 
-            Dass Geräte ab Werk mit Schadsoftware ausgeliefert werden, ist gerade im unteren Preissegment keine Seltenheit. Sicherheitsforscher deckten erst im vergangenen Jahr eine Malware-Kampagne auf, bei der vor allem billige Android-Geräte wie Smartphones, Tablets und TV-Boxen aus China vor ihrer Auslieferung an Endkunden mit einer Schadsoftware ausgestattet worden waren. 
+            Dass Geräte ab Werk mit Schadsoftware ausgeliefert werden, ist gerade im unteren Preissegment keine Seltenheit. Sicherheitsforscher deckten erst im vergangenen Jahr eine Malware-Kampagne auf, bei der vor allem billige Android-Geräte wie Smartphones, Tablets und TV-Boxen aus China vor ihrer Auslieferung an Endkunden mit einer Schadsoftware ausgestattet worden waren.
 
             -- 3.12.2024 - `Golem.de <https://www.golem.de/news/ceo-verhaftet-satellitenreceiver-jahrelang-mit-ddos-funktion-ausgeliefert-2412-191354.html>`__
 
@@ -232,7 +230,7 @@ Neuigkeiten aus der Welt der IT Sicherheit
     .. card::
 
         .. epigraph::
-    
+
             **U.S. charges 14 North Koreans in $88 million identity theft and extortion case**
 
             The Department of Justice accused 14 North Koreans of conspiring to use false identities to get IT jobs with U.S. companies and siphon money back to their home country.
@@ -265,17 +263,17 @@ Cybersicherheit ist das Geschäftsrisiko Nr. 1
 Wichtige Kennzahlen bzgl. Cybersecurity-Vorfällen\ [#]_
 -----------------------------------------------------------------
 
-.. story:: 
+.. story::
 
     .. class:: incremental-list
 
-    :Mean Time to Detection (MTTD): 
+    :Mean Time to Detection (MTTD):
         Die mittlere Zeit, die benötigt wird, um einen Cyberangriff zu entdecken.
 
-    :Mean Time to Identify (MTTI): 
+    :Mean Time to Identify (MTTI):
         Die mittlere Zeit, die benötigt wird, um einen Cyberangriff zu identifizieren in der Hinsicht, dass die Schwachstelle erkannt wird bzw. die Art des Vorfalls erkannt wird und eine erste Idee entwickelt wird, wie gegen den Angriff vorgegangen werden kann.
 
-    :Mean Time to Respond (MTTR): 
+    :Mean Time to Respond (MTTR):
         Die mittlere Zeit, die benötigt wird, um auf einen Cyberangriff so zu reagieren, dass kein weiterer Schaden entsteht und der Weg zur Wiederherstellung der normalen Operationen eingeleitet werden kann.
 
     :Mean Time to Contain (MTTC):
@@ -284,17 +282,17 @@ Wichtige Kennzahlen bzgl. Cybersecurity-Vorfällen\ [#]_
         MTTC = MTTD + MTTI + MTTR
 
     :Mean Time to Normal (MTTN) bzw. Mean Time to Recover/Restore/Resolve (MTTR):
-        Die mittlere Zeit, die benötigt wird, um die normalen Operationen wiederherzustellen. 
-        
+        Die mittlere Zeit, die benötigt wird, um die normalen Operationen wiederherzustellen.
+
         Dies kann zum Beispiel auch die Zeit umfassen, die benötigt wird um etwaige Backups einzuspielen oder ggf. Firmware Patches einzuspielen.
 
-.. [#] Die Begriffe sind nicht einheitlich definiert und ggf. ist es sinnvoll zu klären welcher Zeitraum genau gemeint ist. 
+.. [#] Die Begriffe sind nicht einheitlich definiert und ggf. ist es sinnvoll zu klären welcher Zeitraum genau gemeint ist.
 
 .. supplemental::
 
-    Die MTTD kann häufig nur im Nachgang genau ermittelt werden, sollte aber natürlich nachgefasst werden, um die eigenen Prozesse zu kontrollieren und ggf. zu verbessern. Insbesondere im Zusammenhang mit APTs können vergleichsweise lange Zeiträume bis zur Entdeckung vergehen. Zum Beispiel kann es sein, dass man als erstes feststellt, dass es unerwartete Verbindungen zu einem externen Server gibt. Zu diesem Zeitpunkt ist aber noch unklar wie der Angreifer vorgegangen ist, welche Daten ggf. schon abgeflossen sind und was genau zu tun ist, um den Angreifer zu stoppen. Es ist insbesondere auch noch nicht klar auf welche Systeme er bereits Zugriff hat. 
+    Die MTTD kann häufig nur im Nachgang genau ermittelt werden, sollte aber natürlich nachgefasst werden, um die eigenen Prozesse zu kontrollieren und ggf. zu verbessern. Insbesondere im Zusammenhang mit APTs können vergleichsweise lange Zeiträume bis zur Entdeckung vergehen. Zum Beispiel kann es sein, dass man als erstes feststellt, dass es unerwartete Verbindungen zu einem externen Server gibt. Zu diesem Zeitpunkt ist aber noch unklar wie der Angreifer vorgegangen ist, welche Daten ggf. schon abgeflossen sind und was genau zu tun ist, um den Angreifer zu stoppen. Es ist insbesondere auch noch nicht klar auf welche Systeme er bereits Zugriff hat.
 
-    Die Zeit bis zum Beispiel erkannt wurde, dass ein bestimmter Account ausgenutzt wurde und dieser dann gesperrt wurde, oder zum Beispiel bestimmte Netzwerkverbindungen effektiv blockiert werden und begonnen werden kann mit der Wiederherstellung der Systeme, wird als MTTR bezeichnet. 
+    Die Zeit bis zum Beispiel erkannt wurde, dass ein bestimmter Account ausgenutzt wurde und dieser dann gesperrt wurde, oder zum Beispiel bestimmte Netzwerkverbindungen effektiv blockiert werden und begonnen werden kann mit der Wiederherstellung der Systeme, wird als MTTR bezeichnet.
 
     Die MTTC misst somit nicht wie lange es dauert bis alle Auswirkungen des Angriffs beseitigt sind/die normale Operation wiederhergestellt ist, sondern „nur“ wie lange es dauert die weitere Verbreitung zu stoppen.
 
@@ -323,9 +321,9 @@ Ausgewählte Angriffe, Angriffsmethoden und Bedrohungsszenarien
 - Side-Channel attacks (:ger:`Seitenkanalangriffe`)
 - Spoofing (z. B. IP-Spoofing) (:ger:`Vortäuschen`)
 - Social engineering (z. B. Phishing)
-  
+
 .. class:: incremental-list
-    
+
 - Advanced Persistent Threats (APT)
 - *Store-now, Decrypt-later* (:ger:`Speichere jetzt, Entschlüssele später`)
 
@@ -370,28 +368,28 @@ Schutzziele der IT-Sicherheit: CIA-Triade
             height: 6.75ch;
             z-index: 1;
             bottom: 0;
-            right: 0;            
+            right: 0;
         }
 
         .left,
         .right {
-            width: 10ch;         
+            width: 10ch;
             height: 20ch;
-            z-index: 2;  
+            z-index: 2;
             mix-blend-mode: multiply;
         }
 
         .left {
             background: linear-gradient(116.57deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 50%, var(--dhbw-light-red) 50%, var(--dhbw-light-red) 100%);
         }
-    
+
         .right {
             right: 0;
             background: linear-gradient(243.43deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 50%, var(--dhbw-red) 50%, var(--dhbw-red) 100%);
         }
 
         p {
-            
+
             &.availability {
                 bottom: -20%;
                 left: 50%;
@@ -424,7 +422,7 @@ Schutzziele der IT-Sicherheit: CIA-Triade
 .. supplemental::
 
     Confidentiality ≘ :ger:`Vertraulichkeit`
-    
+
     Integrity ≘ :ger:`Integrität`
 
     Availability ≘ :ger:`Verfügbarkeit`
@@ -479,7 +477,7 @@ Eigenschaften von Social-Engineering Angriffe
 
   (Der Hacker Kevin Mitnick war praktisch immer aufgrund von Social Engineering erfolgreich.)
 - stellen die größte Bedrohung für die Sicherheit von IT-Systemen dar
-- es wird angenommen, dass die betroffenen Personen es in vielen Fällen nicht merken 
+- es wird angenommen, dass die betroffenen Personen es in vielen Fällen nicht merken
 
   :incremental:`(Beispiel: Fake Bewerbungsgespräch)`
 - mittels OSINT kann die Vorbereitung von Social-Engineering Angriffen vereinfacht werden
@@ -491,7 +489,7 @@ Eigenschaften von Social-Engineering Angriffe
 
     Ein vom Angreifer bewusst eingefädeltes Bewerbungsgespräch für eine Position als Administrator könnte zum Beispiel dazu genutzt werden, um Informationen über das Zielsystem zu erhalten, die für einen Angriff nützlich sind (z. B. welche Software wird eingesetzt, wie sieht die Architektur aus, ...). In diesem Fall ist davon auszugehen, dass ein Bewerber zum Beispiel durch ein Headhunter eine gutes Angebot gemacht wird und er dann im Rahmen des Gesprächs gebeten wird eine Sicherheitsarchitektur darzustellen, die er einführen würde. Es ist dann davon auszugehen, dass er auf seine bisherige Erfahrung zurückgreift und diese darstellt und er somit die Architektur des Zielsystems offenlegt.
 
-    .. rubric:: Neue Gefahren 
+    .. rubric:: Neue Gefahren
 
     Durch KI generierte Stimmen kann es Angreifern gelingen, z. B. durch das Vortäuschen einer Notlage einer nahestehenden Person, an Informationen zu gelangen.
 
@@ -509,34 +507,34 @@ Eigenschaften von Social-Engineering Angriffe
 
 
 
-Ausgewählte Social-Engineering Angriffe 
+Ausgewählte Social-Engineering Angriffe
 -------------------------------------------------------------
 
 .. story::
 
     .. class:: incremental-list
 
-    :Phishing and Spear Phishing: 
+    :Phishing and Spear Phishing:
 
-        *Phishing* nutzt elektr. Kommunikationswege um an Informationen zu gelangen (z. B. E-Mail oder SMS). 
-        
+        *Phishing* nutzt elektr. Kommunikationswege um an Informationen zu gelangen (z. B. E-Mail oder SMS).
+
         *Spear phishing* ist Phishing, bei der der Angreifer auf eine bestimmte Zielgruppe oder sogar eine einzelne Person abzielt.
 
 
-    :Smishing: 
-    
+    :Smishing:
+
         Phishing mit Hilfe von SMS.
 
     :Vishing:
 
         Phishing mit Hilfe von Telefonanrufen.
-        
+
         (Z. B. `Anrufe von Europol <https://www.europol.europa.eu/publications-events/publications/vishing-calls>`__)
 
 
-    :Quishing/QR phishing: 
+    :Quishing/QR phishing:
 
-        Phishing mit Hilfe von QR Codes. 
+        Phishing mit Hilfe von QR Codes.
 
     :Whaling:
 
@@ -556,13 +554,13 @@ Ausgewählte Social-Engineering Angriffe
 
     :Shoulder Surfing:
 
-        Beobachten von Personen, die sich an einem Computer anmelden, um das Passwort zu erfahren oder die sensitive Informationen auf dem Schreibtisch liegen haben.   
+        Beobachten von Personen, die sich an einem Computer anmelden, um das Passwort zu erfahren oder die sensitive Informationen auf dem Schreibtisch liegen haben.
 
     :Tailgating:
 
-        Ein Angreifer nutzt die Zugangsberechtigung einer Person, um sich Zugang zu einem Gebäude zu verschaffen ohne dass die Person dies bemerkt oder gar zustimmt. 
-        
-        Dies kann z. B. durch Zugangsschleusen verhindert werden, die immer nur einer Person den Zugang gewähren. 
+        Ein Angreifer nutzt die Zugangsberechtigung einer Person, um sich Zugang zu einem Gebäude zu verschaffen ohne dass die Person dies bemerkt oder gar zustimmt.
+
+        Dies kann z. B. durch Zugangsschleusen verhindert werden, die immer nur einer Person den Zugang gewähren.
 
     :Identity Fraud:
 
@@ -573,17 +571,17 @@ Ausgewählte Social-Engineering Angriffe
         Versenden von Rechnungen, für Dienstleistungen und Produkte die man nicht gekauft hat (z. B. Rechnungen für Postzustellung.)
 
     :Credential Harvesting:
-    
-        Sammlung von Zugangsdaten, die durch Sicherheitslücken in Systemen oder durch Phishing erlangt wurden. 
+
+        Sammlung von Zugangsdaten, die durch Sicherheitslücken in Systemen oder durch Phishing erlangt wurden.
 
     :Hoax:
-        Eine bewusste Falschmeldung, die Menschen dazu veranlasst etwas falsches zu glauben. 
+        Eine bewusste Falschmeldung, die Menschen dazu veranlasst etwas falsches zu glauben.
 
-    :Impersonation oder Pretexting: 
+    :Impersonation oder Pretexting:
         Vorgabe einer falschen Identität (z. B. als Mitarbeiter des IT-Supports); d. h. der Angreifer gibt sich persönlich als jemand anderes aus, um an Informationen zu gelangen und nutzt dafür keine elektronischen Hilfsmittel.
 
     :Eavesdropping:
-        Abhören von Gesprächen, um an relevante Informationen zu gelangen.   
+        Abhören von Gesprächen, um an relevante Informationen zu gelangen.
 
     :Eliciting Information:
         Der Angreifer versucht durch geschicktes Fragen an Informationen zu gelangen, die für einen Angriff nützlich sein könnten.
@@ -600,7 +598,7 @@ Ausgewählte Social-Engineering Angriffe
 
 .. supplemental::
 
-    .. rubric:: Quishing/QR phishing: 
+    .. rubric:: Quishing/QR phishing:
 
     D. h. der Angreifer erstellt einen QR Code, der auf eine gefälschte Webseite führt. Der QR Code wird dann z. B. auf einem Plakat angebracht oder zum Beispiel an einer Säule zum Kaufen von Fahrkarten, um möglichst viele Personen glaubhaft zu erreichen.
 
@@ -614,7 +612,7 @@ Ausgewählte Social-Engineering Angriffe
 
     .. rubric:: Typische Phishing E-Mail
 
-    .. image:: images/phishing-mail-fake-fedex.png 
+    .. image:: images/phishing-mail-fake-fedex.png
         :align: center
         :width: 80%
 
@@ -630,14 +628,14 @@ Ausgewählte Social-Engineering Angriffe
 - Dringlichkeit (*„In 10 Minuten verschlüssele ich den Rechner.“*)
 - Konsens (*„Alle machen das so.“*)
 - Knappheit (*„Es sind nur noch drei Rechner nicht infiziert.“*)
-- Vertrautheit 
+- Vertrautheit
 - Vertrauen
 
 
 
 .. class:: new-section transition-fade
 
-Cybersicherheit stärken 
+Cybersicherheit stärken
 -------------------------------------------------------------
 
 
@@ -653,7 +651,7 @@ Bug-Bounty-Programme
 
     Microsoft on Tuesday unveiled Zero Day Quest, a bug bounty event offering up to $4 million in rewards to security researchers.
 
-    "At the end of the day, we recognize that when it comes to security, it's fundamentally a team sport," Microsoft CEO Satya Nadella said during his Tuesday keynote. "And that's why we want to partner, and we're partnering broadly with the security community." 
+    "At the end of the day, we recognize that when it comes to security, it's fundamentally a team sport," Microsoft CEO Satya Nadella said during his Tuesday keynote. "And that's why we want to partner, and we're partnering broadly with the security community."
 
     [...] Zero Day Quest is the "largest of its kind" and will offer a potential $4 million in awards for research into cloud and AI, which he described as "high-impact areas."
 
@@ -722,7 +720,7 @@ NIS 2 Richtlinie (:eng:`NIS 2 Directive`)
 
     Die neue NIS-2-Richtlinie zielt darauf ab, die Widerstandsfähigkeit und Reaktionsfähigkeit des öffentlichen und privaten Sektors zu verbessern. Der Schwerpunkt der Richtlinie liegt auf der Bekämpfung der Cyberkriminalität.
 
--  Die NIS-2-Richtlinie gilt für Organisationen, inkl. Unternehmen und Zulieferer, die durch Erbringung wesentlicher oder wichtiger Dienstleistungen eine entscheidende Rolle für die Aufrechterhaltung der europäischen Wirtschaft und Gesellschaft spielen. 
+-  Die NIS-2-Richtlinie gilt für Organisationen, inkl. Unternehmen und Zulieferer, die durch Erbringung wesentlicher oder wichtiger Dienstleistungen eine entscheidende Rolle für die Aufrechterhaltung der europäischen Wirtschaft und Gesellschaft spielen.
 
 - Die Führungskräfte von betroffenen Einrichtungen sind für die Überwachung der Umsetzung der NIS-2-Richtlinie verantwortlich und können für Verstöße gegen die NIS-2-Richtlinie haftbar gemacht werden (Artikel 20).
 
@@ -735,7 +733,7 @@ NIS 2 Richtlinie (:eng:`NIS 2 Directive`)
         (1)   Die Mitgliedstaaten stellen sicher, dass die Leitungsorgane wesentlicher und wichtiger Einrichtungen die von diesen Einrichtungen zur Einhaltung von Artikel 21 ergriffenen Risikomanagementmaßnahmen im Bereich der Cybersicherheit billigen, ihre Umsetzung überwachen und für Verstöße gegen diesen Artikel durch die betreffenden Einrichtungen verantwortlich gemacht werden können. [...]
 
         (2)   Die Mitgliedstaaten stellen sicher, dass die Mitglieder der Leitungsorgane wesentlicher und wichtiger Einrichtungen an Schulungen teilnehmen müssen, und fordern wesentliche und wichtige Einrichtungen auf, allen Mitarbeitern regelmäßig entsprechende Schulungen anzubieten, um ausreichende Kenntnisse und Fähigkeiten zur Erkennung und Bewertung von Risiken sowie Managementpraktiken im Bereich der Cybersicherheit und deren Auswirkungen auf die von der Einrichtung erbrachten Dienste zu erwerben.
-   
+
         -- NIS 2 - KAPITEL IV `RISIKOMANAGEMENTMAẞNAHMEN UND BERICHTSPFLICHTEN IM BEREICH DER CYBERSICHERHEIT <https://eur-lex.europa.eu/legal-content/DE/TXT/HTML/?uri=CELEX:32022L2555#d1e3310-80-1>`__
 
 
@@ -761,8 +759,8 @@ Von NIS2 betroffene öff. und priv. Einrichtungen\ [#]_
 
 
 .. class:: columns incremental-list
-    
-- \ 
+
+- \
     - Post- und Kurierdienste
     - Abfallwirtschaft
     - Chemie
@@ -773,7 +771,7 @@ Von NIS2 betroffene öff. und priv. Einrichtungen\ [#]_
     - Kraftfahrzeuge
     - Energie
 
-- \ 
+- \
     - Verkehrswesen
     - Bankwesen
     - Finanzmarkt-Infrastrukturen
@@ -785,9 +783,9 @@ Von NIS2 betroffene öff. und priv. Einrichtungen\ [#]_
     - Cloud Computing-Dienste
 
 .. supplemental::
-    
+
     Bis zum 17. April 2025 erstellen die Mitgliedstaaten eine Liste von wesentlichen und wichtigen Einrichtungen und von Einrichtungen, die Domänennamen-Registrierungsdienste erbringen und aktualisieren sie gegebenenfalls regelmäßig — spätestens alle 2 Jahre.
-  
+
 .. [#] `Details siehe Anhang I und II der NIS 2 Richtlinie <https://eur-lex.europa.eu/legal-content/DE/TXT/HTML/?uri=CELEX:32022L2555#d1e32-143-1>`__
 
 
@@ -814,7 +812,7 @@ NIS 2 - zentrale Einrichtungen
 
     :CSIRT: Computer Security Incident Response Team
     :Behörden für das Krisenmanagement: Sollte es mehr als eine geben, so wird eine explizit benannt, die für die Koordination und das  Management von *Cybersicherheitsvorfällen großen Ausmaßes und Krisen* zuständig ist
- 
+
 
 .. supplemental::
 
