@@ -1,5 +1,5 @@
 .. meta::
-    :version: genesis
+    :version: renaissance
     :author: Michael Eichberg
     :keywords: "Sicherheitsprinzipien"
     :description lang=de: Einführung in klassische Sicherheitsprinzipien
@@ -16,18 +16,18 @@ Klassische Sicherheitsprinzipien
 
 :Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
 :Kontakt: michael.eichberg@dhbw.de
-:Version: 1.2
+:Version: 1.2.1
 
 .. supplemental::
 
-    :Folien: 
+    :Folien:
         [HTML] |html-source|
 
         [PDF] |pdf-source|
 
     :Kontrollfragen:
 
-        .. source:: kontrollfragen.de.rst 
+        .. source:: kontrollfragen.de.rst
             :path: relative
             :prefix: https://delors.github.io/
             :suffix: .html
@@ -42,124 +42,88 @@ Klassische Sicherheitsprinzipien
 
 (Jerome Saltzer and Michael Schroeder, 1975)
 
-.. class:: incremental
+.. story::
 
-:Principle of Economy of Mechanism (aka Principle of Simplicity): Die Sicherheitsmechanismen sollten so einfach wie möglich sein.
+    .. class:: incremental-list
 
-.. class:: incremental
+    :Principle of Economy of Mechanism (aka Principle of Simplicity): Die Sicherheitsmechanismen sollten so einfach wie möglich sein.
 
-:Principle of Fail-Safe Defaults: Standardmäßig sollte der Zugriff auf Ressourcen verweigert werden.
+        .. supplemental::
 
-.. class:: incremental
+            :Principle of Economy of Mechanism (aka Principle of Simplicity): dies fördert zum Beispiel die Korrektheit der Implementierung/Anwendung, da diese schneller verstanden wird und auch einfacher getestet werden kann. Weiterhin reduziert es die Angriffsfläche.
 
-:Principle of Complete Mediation: Zugriffsanfragen eines Subjekts auf ein Objekt werden jedes Mal vollständig auf ihre Zulässigkeit hin überprüft.
+    :Principle of Fail-Safe Defaults: Standardmäßig sollte der Zugriff auf Ressourcen verweigert werden.
 
+    :Principle of Complete Mediation: Zugriffsanfragen eines Subjekts auf ein Objekt werden jedes Mal vollständig auf ihre Zulässigkeit hin überprüft.
 
-.. supplemental::
+        .. supplemental::
 
-    :Principle of Economy of Mechanism (aka Principle of Simplicity): dies fördert zum Beispiel die Korrektheit der Implementierung/Anwendung, da diese schneller verstanden wird und auch einfacher getestet werden kann. Weiterhin reduziert es die Angriffsfläche.
+            :Principle of Complete Mediation: Bei der Entwicklung einer Serveranwendung besagt das *Principle of Complete Mediation* somit, dass bei jeder Anfrage zu überprüfen ist, ober der Nutzer die entsprechenden Rechte besitzt.
 
-    :Principle of Complete Mediation: Bei der Entwicklung einer Serveranwendung besagt das *Principle of Complete Mediation* somit, dass bei jeder Anfrage zu überprüfen ist, ober der Nutzer die entsprechenden Rechte besitzt.
+    :Principle of Least Authority (aka POLA)/ Principle of Least Privilege: Jedes Programm und jeder Benutzer sollte nur die für seine Aufgabe unbedingt notwendigen Rechte besitzen.
 
+    :Principle of Separation of Privilege: Ein System sollte in mehrere POLA konforme Komponenten unterteilt sein. Sollte eine Komponente kompromittiert sein, dann sind die Möglichkeiten des Angreifers dennoch begrenzt.
 
-
-
-
-Klassische Sicherheitsprinzipien
------------------------------------------------
+        (Eng verwandt mit dem POLA.)
 
 
-:Principle of Least Authority (aka POLA)/ Principle of Least Privilege: Jedes Programm und jeder Benutzer sollte nur die für seine Aufgabe unbedingt notwendigen Rechte besitzen.
+        .. supplemental::
 
-.. class:: incremental
+            Das *Principle of Separation of Privilege* wird dann eingehalten, wenn ein Angreifer, der eine Komponente kompromittiert hat, nicht die Rechte erhält, die notwendig sind, um das gesamte System zu kompromittieren. Zum Beispiel ist es für Überweisungen notwendig diese auf zwei verschiedene Arten zu autorisieren.
 
-:Principle of Separation of Privilege: Ein System sollte in mehrere POLA konforme Komponenten unterteilt sein. Sollte eine Komponente kompromittiert sein, dann sind die Möglichkeiten des Angreifers dennoch begrenzt. 
+            .. attention::
 
-    (Eng verwandt mit dem POLA.)
+                *Privilege Separation* (für Programme) sollte nicht mit dem hier beschriebenen Prinzip verwechselt werden. *Privilege Separation* liegt zum Beispiel dann vor, wenn ein Programm in zwei Teile aufgeteilt ist und ein Teil - zum Beispiel zum Zugriff auf Betriebssystemressourcen wie Sockets oder bestimmte Dateien - erhöhte Rechte benötigt als der Rest vom Programm. In diesem Fall erfolgt dann der Austausch zwischen den beiden Teilen über eine wohldefinierte, minimale Schnittstelle, die die Rechte des ersten Teils auf das notwendige Minimum beschränkt.
 
+    :Principle of Least Common Mechanism: Die Sicherheitsmechanismen sollten über Nutzer (hier insbesondere Programme, die andere Programme nutzen) hinweg möglichst wenig Gemeinsamkeiten haben.
 
-.. supplemental:: 
+        .. supplemental::
 
-    Das *Principle of Separation of Privilege* wird dann eingehalten, wenn ein Angreifer, der eine Komponente kompromittiert hat, nicht die Rechte erhält, die notwendig sind, um das gesamte System zu kompromittieren. Zum Beispiel ist es für Überweisungen notwendig diese auf zwei verschiedene Arten zu autorisieren.
+            **Beispiel - Principle of Least Common Mechanism**
+            (~ :ger:`Grundsatz des kleinsten gemeinsamen Mechanismus``)
 
-    .. attention:: 
-    
-        *Privilege Separation* (für Programme) sollte nicht mit dem hier beschriebenen Prinzip verwechselt werden. *Privilege Separation* liegt zum Beispiel dann vor, wenn ein Programm in zwei Teile aufgeteilt ist und  ein Teil - zum Beispiel zum Zugriff auf Betriebssystemressourcen wie Sockets oder bestimmte Dateien - erhöhte Rechte benötigt als der Rest vom Programm. In diesem Fall erfolgt dann der Austausch zwischen den beiden Teilen über eine wohldefinierte, minimale Schnittstelle, die die Rechte des ersten Teils auf das notwendige Minimum beschränkt.
+            Das Prinzip besagt zum Beispiel, dass die Mechanismen, die von mehreren Benutzern verwendet werden oder von dem mehrere Nutzer abhängen, minimiert werden sollten.
 
+            Das Prinzip kann/sollte auf ganz verschiedenen Ebenen angewendet werden:
 
-Klassische Sicherheitsprinzipien
------------------------------------------------
+            - Z. B. sollten keine gemeinsamen Speicherbereiche verwendet werden in denen möglicherweise sicherheitsrelevantes Material vorgehalten wird. Es ist deswegen z. B. sinnvoll - wenn möglich - auf Implementierungen im Kernel zu verzichten und statt dessen auf User-Space-Implementierungen zu setzen.
 
-:Principle of Least Common Mechanism: Die Sicherheitsmechanismen sollten über Nutzer (hier insbesondere Programme, die andere Programme nutzen) hinweg möglichst wenig Gemeinsamkeiten haben.
+            TCP Connection Hijacking Angriffe werden bzw. wurden z. B. durch die Implementierung des TCP Stacks im Kernel ermöglicht (:math:`\Leftrightarrow` „Principle of Least Common Mechanism“).
 
-.. class:: incremental
+            - Z. B. sollten keine geteilten Passworte verwendet werden, um sich gegenüber einem System zu authentifizieren. (Dies bezieht sich sowohl auf die Passwörter einer Person als auch auf Passwörter über Personen und Systemgrenzen hinweg!)
 
-:Principle of Open Design (vgl. Kerckhoffs Prinzip): Die Sicherheit des Systems sollte nicht von der Geheimhaltung der Sicherheitsmechanismen abhängen (sondern nur vom Schlüssel). 
+    :Principle of Open Design (vgl. Kerckhoffs Prinzip): Die Sicherheit des Systems sollte nicht von der Geheimhaltung der Sicherheitsmechanismen abhängen (sondern nur vom Schlüssel).
 
-.. supplemental:: 
+    :Principle of Psychological Acceptability: Die Sicherheitsmechanismen sollten einfach zu verstehen und zu benutzen sein.
 
-    **Beispiel - Principle of Least Common Mechanism**
-    (~ :ger:`Grundsatz des kleinsten gemeinsamen Mechanismus``)
+    :Principle of Isolation: Die Sicherheitsmechanismen sollten so entworfen sein, dass Fehler in einem Teil des Systems nicht die Sicherheit des gesamten Systems gefährden; d. h. die einzelnen Komponenten sollten möglichst unabhängig voneinander sein und nur über wohldefinierte  Schnittstellen miteinander kommunizieren und entsprechende Sicherheitsüberprüfungen durchführen.
 
-    Das Prinzip besagt zum Beispiel, dass die Mechanismen, die von mehreren Benutzern verwendet werden oder von dem mehrere Nutzer abhängen, minimiert werden sollten.
+        .. supplemental::
 
-    Das Prinzip kann/sollte auf ganz verschiedenen Ebenen angewendet werden:
+            **Beispiel - Principle of Isolation:**
 
-    - Z. B. sollten keine gemeinsamen Speicherbereiche verwendet werden in denen möglicherweise sicherheitsrelevantes Material vorgehalten wird. Es ist deswegen z. B. sinnvoll - wenn möglich - auf Implementierungen im Kernel zu verzichten und statt dessen auf User-Space-Implementierungen zu setzen. 
-    
-       TCP Connection Hijacking Angriffe werden bzw. wurden z. B. durch die Implementierung des TCP Stacks im Kernel ermöglicht (:math:`\Leftrightarrow` „Principle of Least Common Mechanism“).
-    
-    - Z. B. sollten keine geteilten Passworte verwendet werden, um sich gegenüber einem System zu authentifizieren. (Dies bezieht sich sowohl auf die Passwörter einer Person als auch auf Passwörter über Personen und Systemgrenzen hinweg!)
+            1. Virtuelle Maschinen können genutzt werden, um Anwendungen in einer isolierten Umgebung auszuführen. Ein Angreifer, der eine Anwendung kompromittiert hat, kann somit nicht auf andere Anwendungen oder das Betriebssystem zugreifen.
 
+            2. Typischerweise kommuniziert zum Beispiel ein Basebandchip (WIFI, LTE, 5G, ...) mit dem Betriebssystem über eine minimale Schnittstelle über die nur Nachrichten übermittelt werden können, die leicht auf ihre Korrektheit überprüft werden können. Insbesondere erfolgt kein direkter Zugriff auf den Speicher des Betriebssystems.
 
+            Einen Angreifer ist es somit ggf. möglich den Basebandchip anzugreifen und ggf. zu kompromittieren, aber er kann nicht direkt auf das Betriebssystem zugreifen und Nachrichten, die bereits auf Betriebssystem oder Anwendungsebene verschlüsselt werden, sind weiterhin sicher.
 
-Klassische Sicherheitsprinzipien
------------------------------------------------
+    :Principle of Modularity: Die Sicherheitsmechanismen sollten so entworfen sein, dass sie unabhängig voneinander implementiert und geprüft werden können.
 
+    :Principle of Layering: Die Sicherheitsmechanismen sollten in Schichten organisiert sein.
 
-:Principle of Psychological Acceptability: Die Sicherheitsmechanismen sollten einfach zu verstehen und zu benutzen sein.
-  
-.. class:: incremental
+        .. supplemental::
 
-:Principle of Isolation: Die Sicherheitsmechanismen sollten so entworfen sein, dass Fehler in einem Teil des Systems nicht die Sicherheit des gesamten Systems gefährden; d. h. die einzelnen Komponenten sollten möglichst unabhängig voneinander sein und nur über wohldefinierte  Schnittstellen miteinander kommunizieren und entsprechende Sicherheitsüberprüfungen durchführen. 
+            Beispiel für ein Schutzsystem für Netzwerke, dass mehrere Schichten verwendet:
 
-.. supplemental:: 
+            - einfache (und effiziente) Paketfilter auf unterster Ebene
+            - zustandsbehaftete Paketfilter auf der nächsten bzw. der Anwendungsebene
 
-    **Beispiel - Principle of Isolation:**
-
-    1. Virtuelle Maschinen können genutzt werden, um Anwendungen in einer isolierten Umgebung auszuführen. Ein Angreifer, der eine Anwendung kompromittiert hat, kann somit nicht auf andere Anwendungen oder das Betriebssystem zugreifen.
-
-    2. Typischerweise kommuniziert zum Beispiel ein Basebandchip (WIFI, LTE, 5G, ...) mit dem Betriebssystem über eine minimale Schnittstelle über die nur Nachrichten übermittelt werden können, die leicht auf ihre Korrektheit überprüft werden können. Insbesondere erfolgt kein direkter Zugriff auf den Speicher des Betriebssystems.
-
-       Einen Angreifer ist es somit ggf. möglich den Basebandchip anzugreifen und ggf. zu kompromittieren, aber er kann nicht direkt auf das Betriebssystem zugreifen und Nachrichten, die bereits auf Betriebssystem oder Anwendungsebene verschlüsselt werden, sind weiterhin sicher.
+    :Principle of Least Astonishment: Die Sicherheitsmechanismen sollten so entworfen sein, dass sie keine Überraschungen für die Benutzer bereithalten.
 
 
 
-Ergänzende Sicherheitsprinzipien
------------------------------------------------
-
-:Principle of Modularity: Die Sicherheitsmechanismen sollten so entworfen sein, dass sie unabhängig voneinander implementiert und geprüft werden können.
-
-.. class:: incremental
-
-:Principle of Layering: Die Sicherheitsmechanismen sollten in Schichten organisiert sein.
-
-.. class:: incremental
-
-:Principle of Least Astonishment: Die Sicherheitsmechanismen sollten so entworfen sein, dass sie keine Überraschungen für die Benutzer bereithalten.    
-
-.. supplemental::
-
-    Beispiel für ein Schutzsystem für Netzwerke, dass mehrere Schichten verwendet:
-
-    - einfache (und effiziente) Paketfilter auf unterster Ebene
-    - zustandsbehaftete Paketfilter auf der nächsten bzw. der Anwendungsebene
-  
-
-    
-
-
-.. class:: integrated-exercise
+.. class:: exercises
 
 Übung
 -----------------------------------------------
@@ -168,14 +132,14 @@ Ergänzende Sicherheitsprinzipien
 
     Benennen Sie ein historisches Verschlüsselungsverfahren, das gegen das *Principle of Open Design* verstoßen hat.
 
-    .. solution:: 
+    .. solution::
         :pwd: Caesar
 
         Das Verschlüsselungsverfahren von Caesar verletzt das *Principle of Open Design*, da die Sicherheit des Verfahrens von der Geheimhaltung des Verfahrens abhängt. Selbst zu Zeiten Caesars wäre ein Brute-Force Angriff trivial möglich gewesen.
 
 .. exercise:: Verletzung
 
-    Stellen Sie sich vor, dass Sie als Pin (z. B. für ein Tablet) folgende Zahl verwenden wollen, diese aber abgelehnt wird (Leerzeichen dienen nur der Lesbarkeit): 
+    Stellen Sie sich vor, dass Sie als Pin (z. B. für ein Tablet) folgende Zahl verwenden wollen, diese aber abgelehnt wird (Leerzeichen dienen nur der Lesbarkeit):
 
        ``3671 1197 4769``
 
@@ -185,9 +149,9 @@ Ergänzende Sicherheitsprinzipien
 
     Wie bewerten Sie dies?
 
-    .. container:: minor far-smaller 
-        
-        Hinweis: Schauen Sie sich ggf. ein Pinpad an.
+    .. hint::
+
+        Schauen Sie sich ggf. ein Pinpad an.
 
     .. solution::
         :pwd: PrincipleOfLeastAstonishment
@@ -196,7 +160,7 @@ Ergänzende Sicherheitsprinzipien
 
 
 
-.. class:: integrated-exercise
+.. class:: exercises
 
 Übung
 -----------------------------------------------
@@ -204,18 +168,16 @@ Ergänzende Sicherheitsprinzipien
 .. exercise:: Browser
 
     Der Chrome-Browser (zum Beispiel) unterstützt die so genannten `Isolierung von besuchten Webseiten <https://support.google.com/chrome/a/answer/7581529?hl=en>`__.
-    Bei dieser werden Seiten von verschiedenen Websites in unterschiedliche Prozesse aufgeteilt. 
+    Bei dieser werden Seiten von verschiedenen Websites in unterschiedliche Prozesse aufgeteilt.
 
     Welches Prinzip bzw. welche Prinzipien wird/werden hier umgesetzt?
 
-    .. solution:: 
+    .. solution::
         :pwd: ChromeWasFirst
 
         Das *Principle of Isolation* wird hier umgesetzt. Ist die Sicherheit einer Webseite kompromittiert, so betrifft dies (hoffentlich) nicht sie Sicherheit der anderen Webseiten.
 
         Weiterhin wird auch das *Principle of Least Common Mechanism* umgesetzt, da die Webseiten in unterschiedlichen Prozessen laufen und somit viele Angriffsvektoren unterbunden werden, da es nur minimalen bzw. keinen geteilten Speicher gibt.
-
-        
 
 .. exercise:: Quantum Algorithmen für die Verschlüsselung
 
@@ -227,22 +189,20 @@ Ergänzende Sicherheitsprinzipien
         Das *Principle of Open Design* wird hier umgesetzt und dient letztlich dazu Sicherheitslücken möglichst früh zu entdecken. Dies hat auch dazu geführt, dass kein Algorithmus, der in den letzten Jahren ausgewählt wurde (insbesondere zum Beispiel AES), von bekannten Sicherheitsproblemen betroffen ist.
 
 
-.. class:: integrated-exercise
+.. class:: exercises
 
 Übung
 -----------------------------------------------
 
-
 .. exercise:: Rechte von im Hintergrund laufenden Prozessen auf Servern
 
-    Es ist üblich, dass für Prozesse, die auf Servern im Hintergrund laufen, extra Nutzerkonten eingerichtet werden. 
-    
-    - Warum ist dies so? 
-    - Welche Rechte sollten diese „Nutzer“ bekommen? 
+    Es ist üblich, dass für Prozesse, die auf Servern im Hintergrund laufen, extra Nutzerkonten eingerichtet werden.
+
+    - Warum ist dies so?
+    - Welche Rechte sollten diese „Nutzer“ bekommen?
     - Was sollte weiterhin beachtet werden?
 
-    .. solution:: 
+    .. solution::
         :pwd: LeastPrivilege
 
-        Das *Principle of Least Privilege* wird hier umgesetzt. Ein Prozess sollte nur die Rechte bekommen, die er wirklich benötigt. D. h. die Nutzerkonten sollten auf keinen Fall über Administrationsrechte verfügen. Normalerweise sollte auch kein Einloggen möglich sein. Ggf. notwendige Rechte (zum Beispiel für die Verwendung von privilegierten Ports) sollten explizit vergeben werden. Zugriff nur auf die Verzeichnisse/Dateien sollte möglich sein, die wirklich benötigt werden. 
-
+        Das *Principle of Least Privilege* wird hier umgesetzt. Ein Prozess sollte nur die Rechte bekommen, die er wirklich benötigt. D. h. die Nutzerkonten sollten auf keinen Fall über Administrationsrechte verfügen. Normalerweise sollte auch kein Einloggen möglich sein. Ggf. notwendige Rechte (zum Beispiel für die Verwendung von privilegierten Ports) sollten explizit vergeben werden. Zugriff nur auf die Verzeichnisse/Dateien sollte möglich sein, die wirklich benötigt werden.

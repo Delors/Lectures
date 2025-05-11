@@ -1,4 +1,5 @@
 .. meta::
+   :version: renaissance
    :lang: de
    :author: Michael Eichberg
    :keywords: "Sicherheitsprinzipien, Kontrollfragen"
@@ -6,7 +7,7 @@
    :id: lecture-klassische-Sicherheitsprinzipien-Kontrollfragen
    :first-slide: last-viewed
    :exercises-master-password: WirklichSchwierig!
-    
+
 .. include:: ../docutils.defs
 
 
@@ -22,47 +23,42 @@ Kontrollfragen: Klassische Sicherheitsprinzipien
 
 
 
+.. class:: exercises
+
 Kontrollfragen
 ----------------
 
-.. container:: scrollable
+Die folgenden Fragen sind exemplarisch für Fragen wie sie in einer Prüfung vorkommen könnten.
 
-   Die folgenden Fragen sind exemplarisch für Fragen wie sie in einer Prüfung vorkommen könnten. Der Inhalt der Prüfung kann sich selbstverständlich auf alle Inhalte der Vorlesung beziehen.
+.. exercise:: Principle of Complete Mediation
+        :class: incremental
 
-   .. class:: incremental
+        1) Was besagt das Prinzip?
+        2) Wie kann/sollte das Prinzip im Rahmen der Entwicklung einer Webanwendung umgesetzt werden?
 
-   1. \
-   
-      .. exercise:: Principle of Complete Mediation
-         
-         1) Was besagt das Prinzip?
-         2) Wie kann/sollte das Prinzip im Rahmen der Entwicklung einer Webanwendung umgesetzt werden?
-
-         .. solution::
+        .. solution::
             :pwd: kurz-und-KnapP
 
             Zugriffsanfragen eines Subjekts auf ein Objekt werden jedes Mal vollständig auf ihre Zulässigkeit hin überprüft.
 
             Umsetzung in einer Webanwendung: Jede Anfrage an den Server sollte durch eine zentrale Komponente (z.B. einen Filter oder Middleware) geleitet werden, die die Berechtigungen des Nutzers überprüft.
 
-   2. 
+.. exercise:: Kerckhoffs Prinzip
+        :class: incremental
 
-       .. exercise:: Kerckhoffs Prinzip
-         
-         Was besagt das Prinzip?
+        Was besagt das Prinzip?
 
-         .. solution::
+        .. solution::
             :pwd: Fragen-Antworten
 
             Die Sicherheit des Systems sollte nicht von der Geheimhaltung der Sicherheitsmechanismen abhängen (sondern nur vom Schlüssel).
 
-   3. 
+.. exercise:: FUSE - File System in User Space
+        :class: incremental
 
-       .. exercise:: FUSE - File System in User Space
-         
-         Welche Sicherheitsprinzipien werden mittels FUSE umgesetzt?
+        Welche Sicherheitsprinzipien werden mittels FUSE umgesetzt?
 
-         .. solution::
+        .. solution::
             :pwd: Mehrere-Prinzipien-ganz-einfach
 
             - Principle of Least Privilege (der User Space Prozess hat nur die Rechte, die er wirklich benötigt)
