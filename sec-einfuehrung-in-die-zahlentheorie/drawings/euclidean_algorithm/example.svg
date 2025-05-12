@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+    "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg
+    xmlns="http://www.w3.org/2000/svg"
+    version="1.1"
+    xmlns:xl="http://www.w3.org/1999/xlink"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    viewBox="0 0 192 200"
+    width="192"
+    height="200"
+>
+<style>
+  @import url('/LectureDoc2/ext/fonts/ld-fonts.css');
+</style>
+<defs>
+    <marker
+            orient="auto"
+            overflow="visible"
+            markerUnits="strokeWidth"
+            id="FilledArrow_Marker"
+            stroke-linejoin="miter"
+            stroke-miterlimit="10"
+            viewBox="-1 -4 10 8"
+            markerWidth="10"
+            markerHeight="8"
+            color="black"
+        >
+      <g>
+        <path
+                    d="M 8 0 L 0 -3 L 0 3 Z"
+                    fill="currentColor"
+                    stroke="currentColor"
+                    stroke-width="1"
+                />
+      </g>
+    </marker>
+  </defs>
+  <metadata> Produced by OmniGraffle 8.0\n2025-05-12 20:03:00 +0000</metadata>
+  <g
+        id="example"
+        stroke-dasharray="none"
+        stroke="none"
+        stroke-opacity="1"
+        fill="none"
+        fill-opacity="1"
+    >
+    <title>example</title>
+    <g id="example_Layer_1">
+      <title>Layer 1</title>
+      <g id="Graphic_95">
+        <text transform="translate(10.682883 5)" fill="black">
+          <tspan
+                        font-family="Victor Mono"
+                        font-size="16"
+                        font-weight="400"
+                        fill="black"
+                        x="0"
+                        y="16"
+                    >710 = </tspan>
+          <tspan
+                        font-family="Victor Mono"
+                        font-size="16"
+                        font-weight="400"
+                        fill="#fbbbaa"
+                        y="16"
+                    >2</tspan>
+          <tspan
+                        font-family="Victor Mono"
+                        font-size="16"
+                        font-weight="400"
+                        fill="black"
+                        y="16"
+                    > · 310</tspan>
+        </text>
+      </g>
+      <g id="Graphic_96">
+        <text transform="translate(10.682883 60.66667)" fill="black">
+          <tspan
+                        font-family="Victor Mono"
+                        font-size="16"
+                        font-weight="400"
+                        fill="black"
+                        x="0"
+                        y="16"
+                    >310 = </tspan>
+          <tspan
+                        font-family="Victor Mono"
+                        font-size="16"
+                        font-weight="400"
+                        fill="#fcbbab"
+                        y="16"
+                    >3</tspan>
+          <tspan
+                        font-family="Victor Mono"
+                        font-size="16"
+                        font-weight="400"
+                        fill="black"
+                        y="16"
+                    > ·  90</tspan>
+        </text>
+      </g>
+      <g id="Graphic_97">
+        <text transform="translate(19.8473 116.33333)" fill="black">
+          <tspan
+                        font-family="Victor Mono"
+                        font-size="16"
+                        font-weight="400"
+                        fill="black"
+                        x="0"
+                        y="16"
+                    >90 = </tspan>
+          <tspan
+                        font-family="Victor Mono"
+                        font-size="16"
+                        font-weight="400"
+                        fill="#fcbbab"
+                        y="16"
+                    >2</tspan>
+          <tspan
+                        font-family="Victor Mono"
+                        font-size="16"
+                        font-weight="400"
+                        fill="black"
+                        y="16"
+                    > ·  40</tspan>
+        </text>
+      </g>
+      <g id="Graphic_98">
+        <text transform="translate(19.8473 172)" fill="black">
+          <tspan
+                        font-family="Victor Mono"
+                        font-size="16"
+                        font-weight="400"
+                        fill="black"
+                        x="0"
+                        y="16"
+                    >40 = </tspan>
+          <tspan
+                        font-family="Victor Mono"
+                        font-size="16"
+                        font-weight="400"
+                        fill="#fcbbaa"
+                        y="16"
+                    >4</tspan>
+          <tspan
+                        font-family="Victor Mono"
+                        font-size="16"
+                        font-weight="400"
+                        fill="black"
+                        y="16"
+                    > ·  </tspan>
+          <tspan
+                        font-family="Victor Mono"
+                        font-size="16"
+                        font-weight="400"
+                        fill="#66c48c"
+                        y="16"
+                    >10</tspan>
+        </text>
+      </g>
+      <g id="Line_100">
+        <line
+                    x1="105.23416"
+                    y1="23.69146"
+                    x2="41.81081"
+                    y2="57.20792"
+                    marker-end="url(#FilledArrow_Marker)"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
+      </g>
+      <g id="Line_104">
+        <line
+                    x1="170.4"
+                    y1="23.69146"
+                    x2="131.39936"
+                    y2="56.25494"
+                    marker-end="url(#FilledArrow_Marker)"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
+      </g>
+      <g id="Graphic_107">
+        <text transform="translate(139.39665 60.66667)" fill="black">
+          <tspan
+                        font-family="Victor Mono"
+                        font-size="16"
+                        font-weight="400"
+                        fill="black"
+                        x="6.0454545"
+                        y="16"
+                    >+ 40</tspan>
+        </text>
+      </g>
+      <g id="Graphic_108">
+        <text transform="translate(139.39665 116.33333)" fill="black">
+          <tspan
+                        font-family="Victor Mono"
+                        font-size="16"
+                        font-weight="400"
+                        fill="black"
+                        x="6.0454545"
+                        y="16"
+                    >+ 10</tspan>
+        </text>
+      </g>
+      <g id="Graphic_109">
+        <text transform="translate(151.8 172)" fill="#bfbfbf">
+          <tspan
+                        font-family="Victor Mono"
+                        font-size="16"
+                        font-weight="400"
+                        fill="#bfbfbf"
+                        x="2.209094"
+                        y="16"
+                    >+ 0</tspan>
+        </text>
+      </g>
+      <g id="Graphic_110">
+        <text transform="translate(139.39665 5)" fill="black">
+          <tspan
+                        font-family="Victor Mono"
+                        font-size="16"
+                        font-weight="400"
+                        fill="black"
+                        x="6.0454526"
+                        y="16"
+                    >+ 90</tspan>
+        </text>
+      </g>
+      <g id="Line_112">
+        <line
+                    x1="105.23416"
+                    y1="79.88981"
+                    x2="41.74775"
+                    y2="114.54079"
+                    marker-end="url(#FilledArrow_Marker)"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
+      </g>
+      <g id="Line_111">
+        <line
+                    x1="170.4"
+                    y1="79.88981"
+                    x2="131.42642"
+                    y2="112.14891"
+                    marker-end="url(#FilledArrow_Marker)"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
+      </g>
+      <g id="Line_114">
+        <line
+                    x1="105.23416"
+                    y1="135.53719"
+                    x2="41.77091"
+                    y2="169.77256"
+                    marker-end="url(#FilledArrow_Marker)"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
+      </g>
+      <g id="Line_113">
+        <line
+                    x1="170.4"
+                    y1="136.08815"
+                    x2="131.44145"
+                    y2="168.17853"
+                    marker-end="url(#FilledArrow_Marker)"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
+      </g>
+    </g>
+  </g>
+</svg>

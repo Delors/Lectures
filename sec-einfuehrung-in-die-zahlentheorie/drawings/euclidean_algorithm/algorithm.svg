@@ -1,0 +1,420 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+    "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg
+    xmlns="http://www.w3.org/2000/svg"
+    version="1.1"
+    xmlns:xl="http://www.w3.org/1999/xlink"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    viewBox="26 21 566 328"
+    width="566"
+    height="328"
+>
+<style>
+  @import url('/LectureDoc2/ext/fonts/ld-fonts.css');
+</style>
+  <defs>
+    <marker
+            orient="auto"
+            overflow="visible"
+            markerUnits="strokeWidth"
+            id="FilledArrow_Marker"
+            stroke-linejoin="miter"
+            stroke-miterlimit="10"
+            viewBox="-1 -4 10 8"
+            markerWidth="10"
+            markerHeight="8"
+            color="black"
+        >
+      <g>
+        <path
+                    d="M 8 0 L 0 -3 L 0 3 Z"
+                    fill="currentColor"
+                    stroke="currentColor"
+                    stroke-width="1"
+                />
+      </g>
+    </marker>
+  </defs>
+  <metadata> Produced by OmniGraffle 8.0\n2025-05-12 20:03:00 +0000</metadata>
+  <g
+        id="algorithm"
+        stroke-dasharray="none"
+        stroke="none"
+        stroke-opacity="1"
+        fill="none"
+        fill-opacity="1"
+    >
+    <title>algorithm</title>
+    <g id="algorithm_Layer_1">
+      <title>Layer 1</title>
+      <g id="Graphic_71">
+        <ellipse
+                    cx="58.928695"
+                    cy="189.5"
+                    rx="31.7500507333852"
+                    ry="22.5000359527927"
+                    fill="black"
+                />
+        <ellipse
+                    cx="58.928695"
+                    cy="189.5"
+                    rx="31.7500507333852"
+                    ry="22.5000359527927"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
+        <text transform="translate(38.528695 180)" fill="white">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="14"
+                        font-weight="400"
+                        fill="white"
+                        x="5.4969996"
+                        y="15"
+                        xml:space="preserve"
+                    >Start</tspan>
+        </text>
+      </g>
+      <g id="Graphic_72">
+        <path d="M 167 146 L 222 189.5 L 167 233 L 112 189.5 Z" fill="#ffa35f" />
+        <text transform="translate(131.85 179.13)" fill="black">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="14"
+                        font-weight="400"
+                        fill="black"
+                        x="21.305"
+                        y="15"
+                        xml:space="preserve"
+                    >a &gt; b</tspan>
+        </text>
+      </g>
+      <g id="Graphic_73">
+        <rect x="112" y="261.5" width="110" height="87" fill="#7e90b4" />
+        <text transform="translate(117 295.5)" fill="white">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="14"
+                        font-weight="400"
+                        fill="white"
+                        x=".517"
+                        y="15"
+                        xml:space="preserve"
+                    >tausche a und b</tspan>
+        </text>
+      </g>
+      <g id="Graphic_74">
+        <rect x="258.24935" y="146" width="110" height="87" fill="#7e90b4" />
+        <text transform="translate(263.24935 170.5)" fill="white">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="14"
+                        font-weight="400"
+                        fill="white"
+                        x="4.024"
+                        y="15"
+                        xml:space="preserve"
+                    >teile a durch b, </tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="14"
+                        font-weight="400"
+                        fill="white"
+                        x="9.596"
+                        y="34"
+                        xml:space="preserve"
+                    >der Rest sei r</tspan>
+        </text>
+      </g>
+      <g id="Graphic_75">
+        <path
+                    d="M 449.0109 146 L 504.0109 189.5 L 449.0109 233 L 394.01092 189.5 Z"
+                    fill="#ffa35f"
+                />
+        <text transform="translate(413.8609 179.13)" fill="black">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="14"
+                        font-weight="400"
+                        fill="black"
+                        x="22.579"
+                        y="15"
+                        xml:space="preserve"
+                    >r &gt; 0</tspan>
+        </text>
+      </g>
+      <g id="Graphic_76">
+        <rect x="395.01092" y="21" width="110" height="87" fill="#7e90b4" />
+        <text transform="translate(400.01092 55)" fill="white">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="14"
+                        font-weight="400"
+                        fill="white"
+                        x="4.206"
+                        y="15"
+                        xml:space="preserve"
+                    >ersetze a mit b</tspan>
+        </text>
+      </g>
+      <g id="Graphic_77">
+        <rect x="258.24935" y="21" width="110" height="87" fill="#7e90b4" />
+        <text transform="translate(263.24935 55)" fill="white">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="14"
+                        font-weight="400"
+                        fill="white"
+                        x="5.186"
+                        y="15"
+                        xml:space="preserve"
+                    >ersetze b mit r</tspan>
+        </text>
+      </g>
+      <g id="Graphic_78">
+        <rect x="395.01092" y="261.5" width="110" height="87" fill="#7e90b4" />
+        <text transform="translate(400.01092 276.5)" fill="white">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="14"
+                        font-weight="400"
+                        fill="white"
+                        x="3.303"
+                        y="15"
+                        xml:space="preserve"
+                    >der GGT ist der </tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="14"
+                        font-weight="400"
+                        fill="white"
+                        x="3.009"
+                        y="34"
+                        xml:space="preserve"
+                    >finale Wert von </tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="14"
+                        font-weight="400"
+                        fill="white"
+                        x="45.947"
+                        y="53"
+                        xml:space="preserve"
+                    >b</tspan>
+        </text>
+      </g>
+      <g id="Graphic_79">
+        <ellipse
+                    cx="559.37545"
+                    cy="305"
+                    rx="31.7500507333852"
+                    ry="22.5000359527927"
+                    fill="black"
+                />
+        <ellipse
+                    cx="559.37545"
+                    cy="305"
+                    rx="31.7500507333852"
+                    ry="22.5000359527927"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
+        <text transform="translate(538.97545 295.5)" fill="white">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="14"
+                        font-weight="400"
+                        fill="white"
+                        x="4.8739996"
+                        y="15"
+                        xml:space="preserve"
+                    >Ende</tspan>
+        </text>
+      </g>
+      <g id="Line_80">
+        <line
+                    x1="167"
+                    y1="233"
+                    x2="167"
+                    y2="251.6"
+                    marker-end="url(#FilledArrow_Marker)"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
+      </g>
+      <g id="Line_81">
+        <path
+                    d="M 222 305 L 238.8889 305 L 240 189.58333 L 248.34936 189.57383"
+                    marker-end="url(#FilledArrow_Marker)"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
+      </g>
+      <g id="Line_82">
+        <line
+                    x1="368.24935"
+                    y1="189.5"
+                    x2="384.11092"
+                    y2="189.5"
+                    marker-end="url(#FilledArrow_Marker)"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
+      </g>
+      <g id="Line_83">
+        <line
+                    x1="449.385"
+                    y1="232.70415"
+                    x2="449.5486"
+                    y2="251.60037"
+                    marker-end="url(#FilledArrow_Marker)"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
+      </g>
+      <g id="Line_84">
+        <line
+                    x1="505.0109"
+                    y1="305"
+                    x2="517.7254"
+                    y2="305"
+                    marker-end="url(#FilledArrow_Marker)"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
+      </g>
+      <g id="Line_86">
+        <line
+                    x1="90.67871"
+                    y1="189.5"
+                    x2="102.1"
+                    y2="189.5"
+                    marker-end="url(#FilledArrow_Marker)"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
+      </g>
+      <g id="Line_87">
+        <line
+                    x1="222"
+                    y1="189.5"
+                    x2="248.34935"
+                    y2="189.5"
+                    marker-end="url(#FilledArrow_Marker)"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
+      </g>
+      <g id="Line_88">
+        <line
+                    x1="449.35674"
+                    y1="146.2735"
+                    x2="449.5837"
+                    y2="117.89968"
+                    marker-end="url(#FilledArrow_Marker)"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
+      </g>
+      <g id="Line_89">
+        <line
+                    x1="395.01092"
+                    y1="64.5"
+                    x2="378.14935"
+                    y2="64.5"
+                    marker-end="url(#FilledArrow_Marker)"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
+      </g>
+      <g id="Line_90">
+        <line
+                    x1="313.24935"
+                    y1="108"
+                    x2="313.24935"
+                    y2="136.1"
+                    marker-end="url(#FilledArrow_Marker)"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
+      </g>
+      <g id="Graphic_91">
+        <text transform="translate(218.66813 170.28288)" fill="black">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="14"
+                        font-weight="400"
+                        fill="black"
+                        x="3907985e-19"
+                        y="15"
+                        xml:space="preserve"
+                    >wahr</tspan>
+        </text>
+      </g>
+      <g id="Graphic_92">
+        <text transform="translate(177.18636 231)" fill="black">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="14"
+                        font-weight="400"
+                        fill="black"
+                        x="2309264e-19"
+                        y="15"
+                        xml:space="preserve"
+                    >falsch</tspan>
+        </text>
+      </g>
+      <g id="Graphic_93">
+        <text transform="translate(467.3669 231)" fill="black">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="14"
+                        font-weight="400"
+                        fill="black"
+                        x="2309264e-19"
+                        y="15"
+                        xml:space="preserve"
+                    >falsch</tspan>
+        </text>
+      </g>
+      <g id="Graphic_94">
+        <text transform="translate(469.7679 122)" fill="black">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="14"
+                        font-weight="400"
+                        fill="black"
+                        x="3907985e-19"
+                        y="15"
+                        xml:space="preserve"
+                    >wahr</tspan>
+        </text>
+      </g>
+    </g>
+  </g>
+</svg>

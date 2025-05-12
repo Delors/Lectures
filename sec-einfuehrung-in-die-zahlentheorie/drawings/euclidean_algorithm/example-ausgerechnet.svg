@@ -1,0 +1,451 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+    "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg
+    xmlns="http://www.w3.org/2000/svg"
+    version="1.1"
+    xmlns:xl="http://www.w3.org/1999/xlink"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    viewBox="-88 -1 426 199"
+    width="426"
+    height="199"
+>
+<style>
+  @import url('/LectureDoc2/ext/fonts/ld-fonts.css');
+</style>
+<defs>
+    <marker
+            orient="auto"
+            overflow="visible"
+            markerUnits="strokeWidth"
+            id="SharpArrow_Marker"
+            stroke-linejoin="miter"
+            stroke-miterlimit="10"
+            viewBox="-6 -4 10 8"
+            markerWidth="10"
+            markerHeight="8"
+            color="black"
+        >
+      <g>
+        <path
+                    d="M -5 0 L 3 3 L 0 0 L 0 0 L 3 -3 Z"
+                    fill="currentColor"
+                    stroke="currentColor"
+                    stroke-width="1"
+                />
+      </g>
+    </marker>
+  </defs>
+  <metadata> Produced by OmniGraffle 8.0\n2025-05-12 20:03:00 +0000</metadata>
+  <g
+        id="example-ausgerechnet"
+        stroke-dasharray="none"
+        stroke="none"
+        stroke-opacity="1"
+        fill="none"
+        fill-opacity="1"
+    >
+    <title>example-ausgerechnet</title>
+    <g id="example-ausgerechnet_Layer_1">
+      <title>Layer 1</title>
+      <g id="Graphic_115">
+        <text transform="translate(-82.72181 107.80834)" fill="black">
+          <tspan
+                        font-family="Victor Mono"
+                        font-size="14"
+                        font-weight="400"
+                        fill="black"
+                        x="6536993e-19"
+                        y="14"
+                    >710 - </tspan>
+          <tspan
+                        font-family="Victor Mono"
+                        font-size="14"
+                        font-weight="400"
+                        fill="#fbbbaa"
+                        y="14"
+                    >2</tspan>
+          <tspan
+                        font-family="Victor Mono"
+                        font-size="14"
+                        font-weight="400"
+                        fill="black"
+                        y="14"
+                    >·310 - </tspan>
+          <tspan
+                        font-family="Victor Mono"
+                        font-size="14"
+                        font-weight="400"
+                        fill="#fcbbab"
+                        y="14"
+                    >2</tspan>
+          <tspan
+                        font-family="Victor Mono"
+                        font-size="14"
+                        font-weight="400"
+                        fill="black"
+                        y="14"
+                    > · (310 - </tspan>
+          <tspan
+                        font-family="Victor Mono"
+                        font-size="14"
+                        font-weight="400"
+                        fill="#fcbbab"
+                        y="14"
+                    >3</tspan>
+          <tspan
+                        font-family="Victor Mono"
+                        font-size="14"
+                        font-weight="400"
+                        fill="black"
+                        y="14"
+                    > · (710 - </tspan>
+          <tspan
+                        font-family="Victor Mono"
+                        font-size="14"
+                        font-weight="400"
+                        fill="#fbbbaa"
+                        y="14"
+                    >2</tspan>
+          <tspan
+                        font-family="Victor Mono"
+                        font-size="14"
+                        font-weight="400"
+                        fill="black"
+                        y="14"
+                    >·310)) = 10</tspan>
+        </text>
+      </g>
+      <g id="Graphic_117">
+        <text transform="translate(28.439113 59.98721)" fill="black">
+          <tspan
+                        font-family="Victor Mono"
+                        font-size="14"
+                        font-weight="400"
+                        fill="black"
+                        x="0"
+                        y="14"
+                    >310 - </tspan>
+          <tspan
+                        font-family="Victor Mono"
+                        font-size="14"
+                        font-weight="400"
+                        fill="#fcbbab"
+                        y="14"
+                    >3</tspan>
+          <tspan
+                        font-family="Victor Mono"
+                        font-size="14"
+                        font-weight="400"
+                        fill="black"
+                        y="14"
+                    > · (710 - </tspan>
+          <tspan
+                        font-family="Victor Mono"
+                        font-size="14"
+                        font-weight="400"
+                        fill="#fbbbaa"
+                        y="14"
+                    >2</tspan>
+          <tspan
+                        font-family="Victor Mono"
+                        font-size="14"
+                        font-weight="400"
+                        fill="black"
+                        y="14"
+                    >·310) = 40</tspan>
+        </text>
+      </g>
+      <g id="Graphic_118">
+        <text transform="translate(81.36403 5)" fill="black">
+          <tspan
+                        font-family="Victor Mono"
+                        font-size="14"
+                        font-weight="400"
+                        fill="black"
+                        x="8171241e-19"
+                        y="14"
+                    >710 - </tspan>
+          <tspan
+                        font-family="Victor Mono"
+                        font-size="14"
+                        font-weight="400"
+                        fill="#fbbbaa"
+                        y="14"
+                    >2</tspan>
+          <tspan
+                        font-family="Victor Mono"
+                        font-size="14"
+                        font-weight="400"
+                        fill="black"
+                        y="14"
+                    >·310 = 90</tspan>
+        </text>
+      </g>
+      <g id="Line_127">
+        <line
+                    x1="196.337"
+                    y1="55.3"
+                    x2="196.337"
+                    y2="23.076923"
+                    marker-start="url(#SharpArrow_Marker)"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
+      </g>
+      <g id="Line_128">
+        <line
+                    x1="112.62128"
+                    y1="62.378876"
+                    x2="197.03637"
+                    y2="62.378876"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
+      </g>
+      <g id="Line_129">
+        <line
+                    x1="58.634965"
+                    y1="109.97442"
+                    x2="231.5"
+                    y2="109.97442"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
+      </g>
+      <g id="Line_130">
+        <line
+                    x1="230.5"
+                    y1="102.71667"
+                    x2="230.5"
+                    y2="80.61667"
+                    marker-start="url(#SharpArrow_Marker)"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
+      </g>
+      <g id="Graphic_131">
+        <text transform="translate(198.3196 29)" fill="black">
+          <tspan
+                        font-family="Victor Mono"
+                        font-size="14"
+                        font-weight="400"
+                        fill="black"
+                        x="16520119e-20"
+                        y="14"
+                    >=</tspan>
+        </text>
+      </g>
+      <g id="Graphic_132">
+        <text transform="translate(235.20985 83.80834)" fill="black">
+          <tspan
+                        font-family="Victor Mono"
+                        font-size="14"
+                        font-weight="400"
+                        fill="black"
+                        x="16520119e-20"
+                        y="14"
+                    >=</tspan>
+        </text>
+      </g>
+      <g id="Graphic_133">
+        <text transform="translate(-11.553565 134)" fill="black">
+          <tspan
+                        font-family="Victor Mono"
+                        font-size="14"
+                        font-weight="400"
+                        fill="black"
+                        x="0"
+                        y="14"
+                    >710 - </tspan>
+          <tspan
+                        font-family="Victor Mono"
+                        font-size="14"
+                        font-weight="400"
+                        fill="#fcbbab"
+                        y="14"
+                    >2</tspan>
+          <tspan
+                        font-family="Victor Mono"
+                        font-size="14"
+                        font-weight="400"
+                        fill="black"
+                        y="14"
+                    >·310 - </tspan>
+          <tspan
+                        font-family="Victor Mono"
+                        font-size="14"
+                        font-weight="400"
+                        fill="#fcbbab"
+                        y="14"
+                    >2</tspan>
+          <tspan
+                        font-family="Victor Mono"
+                        font-size="14"
+                        font-weight="400"
+                        fill="black"
+                        y="14"
+                    >·310 + </tspan>
+          <tspan
+                        font-family="Victor Mono"
+                        font-size="14"
+                        font-weight="400"
+                        fill="#fcbbab"
+                        y="14"
+                    >6</tspan>
+          <tspan
+                        font-family="Victor Mono"
+                        font-size="14"
+                        font-weight="400"
+                        fill="black"
+                        y="14"
+                    > · (710 -  </tspan>
+          <tspan
+                        font-family="Victor Mono"
+                        font-size="14"
+                        font-weight="400"
+                        fill="#fbbbaa"
+                        y="14"
+                    >2</tspan>
+          <tspan
+                        font-family="Victor Mono"
+                        font-size="14"
+                        font-weight="400"
+                        fill="black"
+                        y="14"
+                    >·310) = 10</tspan>
+          <tspan
+                        font-family="Victor Mono"
+                        font-size="14"
+                        font-weight="400"
+                        fill="black"
+                        x="22.90909"
+                        y="33.545532"
+                    >710 - </tspan>
+          <tspan
+                        font-family="Victor Mono"
+                        font-size="14"
+                        font-weight="400"
+                        fill="#fcbbab"
+                        y="33.545532"
+                    >2</tspan>
+          <tspan
+                        font-family="Victor Mono"
+                        font-size="14"
+                        font-weight="400"
+                        fill="black"
+                        y="33.545532"
+                    >·310 - </tspan>
+          <tspan
+                        font-family="Victor Mono"
+                        font-size="14"
+                        font-weight="400"
+                        fill="#fcbbab"
+                        y="33.545532"
+                    >2</tspan>
+          <tspan
+                        font-family="Victor Mono"
+                        font-size="14"
+                        font-weight="400"
+                        fill="black"
+                        y="33.545532"
+                    >·310 + </tspan>
+          <tspan
+                        font-family="Victor Mono"
+                        font-size="14"
+                        font-weight="400"
+                        fill="#fcbbab"
+                        y="33.545532"
+                    >6</tspan>
+          <tspan
+                        font-family="Victor Mono"
+                        font-size="14"
+                        font-weight="400"
+                        fill="black"
+                        y="33.545532"
+                    >·710 - </tspan>
+          <tspan
+                        font-family="Victor Mono"
+                        font-size="14"
+                        font-weight="400"
+                        fill="#fbbbaa"
+                        y="33.545532"
+                    >12</tspan>
+          <tspan
+                        font-family="Victor Mono"
+                        font-size="14"
+                        font-weight="400"
+                        fill="black"
+                        y="33.545532"
+                    >·310  = 10</tspan>
+          <tspan
+                        font-family="Victor Mono"
+                        font-size="14"
+                        font-weight="400"
+                        fill="black"
+                        x="183.27273"
+                        y="53.091064"
+                    > </tspan>
+          <tspan
+                        font-family="Victor Mono"
+                        font-size="14"
+                        font-weight="400"
+                        fill="#fcbbab"
+                        y="53.091064"
+                    >7</tspan>
+          <tspan
+                        font-family="Victor Mono"
+                        font-size="14"
+                        font-weight="400"
+                        fill="black"
+                        y="53.091064"
+                    >·710 - </tspan>
+          <tspan
+                        font-family="Victor Mono"
+                        font-size="14"
+                        font-weight="400"
+                        fill="#fbbbaa"
+                        y="53.091064"
+                    >16</tspan>
+          <tspan
+                        font-family="Victor Mono"
+                        font-size="14"
+                        font-weight="400"
+                        fill="black"
+                        y="53.091064"
+                    >·310  = 10</tspan>
+        </text>
+      </g>
+      <g id="Line_134">
+        <line
+                    x1="-82.29863"
+                    y1="108.61667"
+                    x2=".47330834"
+                    y2="108.61667"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
+      </g>
+      <g id="Line_135">
+        <path
+                    d="M -71.24542 101.71667 L -71.24542 38.46154 L 196.337 38.46154 L 196.337 23.076923"
+                    marker-start="url(#SharpArrow_Marker)"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
+      </g>
+    </g>
+  </g>
+</svg>
