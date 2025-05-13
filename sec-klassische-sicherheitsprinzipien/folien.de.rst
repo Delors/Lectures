@@ -44,7 +44,7 @@ Klassische Sicherheitsprinzipien
 
 .. story::
 
-    .. class:: incremental-list
+    .. class:: incremental-list dd-margin-left-4em
 
     :Principle of Economy of Mechanism (aka Principle of Simplicity): Die Sicherheitsmechanismen sollten so einfach wie möglich sein.
 
@@ -128,35 +128,39 @@ Klassische Sicherheitsprinzipien
 Übung
 -----------------------------------------------
 
-.. exercise:: Principle of Open Design
+.. story::
 
-    Benennen Sie ein historisches Verschlüsselungsverfahren, das gegen das *Principle of Open Design* verstoßen hat.
+    .. exercise:: Principle of Open Design
+        :class: incremental
 
-    .. solution::
-        :pwd: Caesar
+        Benennen Sie ein historisches Verschlüsselungsverfahren, das gegen das *Principle of Open Design* verstoßen hat.
 
-        Das Verschlüsselungsverfahren von Caesar verletzt das *Principle of Open Design*, da die Sicherheit des Verfahrens von der Geheimhaltung des Verfahrens abhängt. Selbst zu Zeiten Caesars wäre ein Brute-Force Angriff trivial möglich gewesen.
+        .. solution::
+            :pwd: Caesar
 
-.. exercise:: Verletzung
+            Das Verschlüsselungsverfahren von Caesar verletzt das *Principle of Open Design*, da die Sicherheit des Verfahrens von der Geheimhaltung des Verfahrens abhängt. Selbst zu Zeiten Caesars wäre ein Brute-Force Angriff trivial möglich gewesen.
 
-    Stellen Sie sich vor, dass Sie als Pin (z. B. für ein Tablet) folgende Zahl verwenden wollen, diese aber abgelehnt wird (Leerzeichen dienen nur der Lesbarkeit):
+    .. exercise:: Verletzung
+        :class: incremental
 
-       ``3671 1197 4769``
+        Stellen Sie sich vor, dass Sie als Pin (z. B. für ein Tablet) folgende Zahl verwenden wollen, diese aber abgelehnt wird (Leerzeichen dienen nur der Lesbarkeit):
 
-    Während als Pin das folgende Passwort akzeptiert wird:
+        ``3671 1197 4769``
 
-       ``1364 7964 1364``
+        Während als Pin das folgende Passwort akzeptiert wird:
 
-    Wie bewerten Sie dies?
+        ``1364 7964 1364``
 
-    .. hint::
+        Wie bewerten Sie dies?
 
-        Schauen Sie sich ggf. ein Pinpad an.
+        .. hint::
 
-    .. solution::
-        :pwd: PrincipleOfLeastAstonishment
+            Schauen Sie sich ggf. ein Pinpad an.
 
-        Bei der zweiten Pin handelt es sich um einen einfachen *Keypad Walk*. Während die erste Pin eine (scheinbar ?) zufällige Zahlenfolge ist. Das *Principle of Least Astonishment* wird hier verletzt, da der Benutzer davon ausgehen würde, dass, wenn die erste Pin nicht akzeptiert wird, die zweite Pin erst recht nicht akzeptiert wird.
+        .. solution::
+            :pwd: PrincipleOfLeastAstonishment
+
+            Bei der zweiten Pin handelt es sich um einen einfachen *Keypad Walk*. Während die erste Pin eine (scheinbar ?) zufällige Zahlenfolge ist. Das *Principle of Least Astonishment* wird hier verletzt, da der Benutzer davon ausgehen würde, dass, wenn die erste Pin nicht akzeptiert wird, die zweite Pin erst recht nicht akzeptiert wird.
 
 
 
