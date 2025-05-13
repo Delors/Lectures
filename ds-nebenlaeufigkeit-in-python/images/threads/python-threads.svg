@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xl="http://www.w3.org/1999/xlink" xmlns:dc="http://purl.org/dc/elements/1.1/" version="1.1" viewBox="13 355 375 343" width="375" height="343">
+  <defs>
+    <font-face font-family="Helvetica" font-size="13" units-per-em="1000" underline-position="-75.68359" underline-thickness="49.316406" slope="0" x-height="522.9492" cap-height="717.28516" ascent="770.0195" descent="-229.98047" font-weight="400">
+      <font-face-src>
+        <font-face-name name="Helvetica"/>
+      </font-face-src>
+    </font-face>
+    <font-face font-family="Helvetica" font-size="13" units-per-em="1000" underline-position="-75.68359" underline-thickness="49.316406" slope="0" x-height="532.22656" cap-height="719.7266" ascent="770.0195" descent="-229.98047" font-weight="700">
+      <font-face-src>
+        <font-face-name name="Helvetica-Bold"/>
+      </font-face-src>
+    </font-face>
+    <font-face font-family="Helvetica" font-size="13" units-per-em="1000" underline-position="-75.68359" underline-thickness="49.316406" slope="-923.0769" x-height="539.5508" cap-height="719.7266" ascent="770.0195" descent="-229.98047" font-style="italic" font-weight="700">
+      <font-face-src>
+        <font-face-name name="Helvetica-BoldOblique"/>
+      </font-face-src>
+    </font-face>
+    <font-face font-family="Helvetica" font-size="13" units-per-em="1000" underline-position="-75.68359" underline-thickness="49.316406" slope="-923.0769" x-height="522.9492" cap-height="717.28516" ascent="770.0195" descent="-229.98047" font-style="italic" font-weight="400">
+      <font-face-src>
+        <font-face-name name="Helvetica-Oblique"/>
+      </font-face-src>
+    </font-face>
+    <marker orient="auto" overflow="visible" markerUnits="strokeWidth" id="UMLInheritance_Marker" stroke-linejoin="miter" stroke-miterlimit="10" viewBox="-1 -6 10 12" markerWidth="10" markerHeight="12" color="#666">
+      <g>
+        <path d="M 7.2 0 L 0 -4.2 L 0 4.2 Z" fill="none" stroke="currentColor" stroke-width="1"/>
+      </g>
+    </marker>
+    <marker orient="auto" overflow="visible" markerUnits="strokeWidth" id="StickArrow_Marker" stroke-linejoin="miter" stroke-miterlimit="10" viewBox="-1 -3 7 6" markerWidth="7" markerHeight="6" color="black">
+      <g>
+        <path d="M 4.8 0 L 0 0 M 0 -1.8 L 4.8 0 L 0 1.8" fill="none" stroke="currentColor" stroke-width="1"/>
+      </g>
+    </marker>
+    <filter id="Shadow" filterUnits="userSpaceOnUse" x="-24.5" y="320.7">
+      <feGaussianBlur in="SourceAlpha" result="blur" stdDeviation="1.308"/>
+      <feOffset in="blur" result="offset" dx="2" dy="2"/>
+      <feFlood flood-color="black" flood-opacity=".5" result="flood"/>
+      <feComposite in="flood" in2="offset" operator="in" result="color"/>
+      <feMerge>
+        <feMergeNode in="color"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <font-face font-family="Helvetica" font-size="12" units-per-em="1000" underline-position="-75.68359" underline-thickness="49.316406" slope="0" x-height="522.9492" cap-height="717.28516" ascent="770.0195" descent="-229.98047" font-weight="400">
+      <font-face-src>
+        <font-face-name name="Helvetica"/>
+      </font-face-src>
+    </font-face>
+    <font-face font-family="Helvetica" font-size="14" units-per-em="1000" underline-position="-75.68359" underline-thickness="49.316406" slope="0" x-height="522.9492" cap-height="717.28516" ascent="770.0195" descent="-229.98047" font-weight="400">
+      <font-face-src>
+        <font-face-name name="Helvetica"/>
+      </font-face-src>
+    </font-face>
+    <marker orient="auto" overflow="visible" markerUnits="strokeWidth" id="FilledBall_Marker" stroke-linejoin="miter" stroke-miterlimit="10" viewBox="-1 -3 6 6" markerWidth="6" markerHeight="6" color="black">
+      <g>
+        <circle cx="1.7999992" cy="0" r="1.79999840920999" fill="currentColor" stroke="currentColor" stroke-width="1"/>
+      </g>
+    </marker>
+  </defs>
+  <metadata> Produced by OmniGraffle 8.0\n2024-06-12 13:52:28 +0000</metadata>
+  <g id="python-threads" stroke="none" stroke-opacity="1" fill="none" stroke-dasharray="none" fill-opacity="1">
+    <title>python-threads</title>
+    <g id="python-threads_Layer_1">
+      <title>Layer 1</title>
+      <g id="Group_9">
+        <g id="Graphic_12">
+          <title>Attributes</title>
+          <rect x="14" y="389.40137" width="181.5" height="37.937595" stroke="#b9c0c1" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+          <text transform="translate(20 395.40137)" fill="#515556">
+            <tspan font-family="Helvetica" font-size="13" font-weight="400" fill="#515556" x="0" y="13" xml:space="preserve"> </tspan>
+          </text>
+        </g>
+        <g id="Graphic_11">
+          <title>Class Name</title>
+          <rect x="14" y="356.68146" width="181.5" height="32.719913" stroke="#b9c0c1" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+          <text transform="translate(20 365.0414)" fill="#515556">
+            <tspan font-family="Helvetica" font-size="13" font-weight="700" fill="#515556" x="63.0791" y="13" xml:space="preserve">Thread</tspan>
+          </text>
+        </g>
+        <g id="Graphic_10">
+          <title>Operations</title>
+          <rect x="14" y="427.33897" width="181.5" height="147.16103" stroke="#b9c0c1" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+          <text transform="translate(20 433.33897)" fill="#515556">
+            <tspan font-family="Helvetica" font-size="13" font-weight="400" fill="#515556" x="0" y="13" xml:space="preserve">Thread(</tspan>
+            <tspan font-family="Helvetica" font-size="13" font-weight="400" fill="#515556" x="0" y="33" xml:space="preserve">    target=None,  </tspan>
+            <tspan font-family="Helvetica" font-size="13" font-weight="400" fill="#515556" x="0" y="53" xml:space="preserve">    name=None,  </tspan>
+            <tspan font-family="Helvetica" font-size="13" font-weight="400" fill="#515556" x="0" y="73" xml:space="preserve">    args=(), kwargs={}, *,  </tspan>
+            <tspan font-family="Helvetica" font-size="13" font-weight="400" fill="#515556" x="0" y="93" xml:space="preserve">    daemon=None)   </tspan>
+            <tspan font-family="Helvetica" font-size="13" font-weight="400" fill="#515556" x="0" y="113" xml:space="preserve">run()   </tspan>
+            <tspan font-family="Helvetica" font-size="13" font-weight="400" fill="#515556" x="0" y="133" xml:space="preserve">start()   </tspan>
+          </text>
+        </g>
+      </g>
+      <g id="Group_19">
+        <g id="Graphic_22">
+          <title>Attributes</title>
+          <rect x="48" y="641" width="130" height="28" stroke="#b9c0c1" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+          <text transform="translate(54 647)" fill="#515556">
+            <tspan font-family="Helvetica" font-size="13" font-weight="400" fill="#515556" x="0" y="13" xml:space="preserve"> </tspan>
+          </text>
+        </g>
+        <g id="Graphic_21">
+          <title>Class Name</title>
+          <rect x="48" y="617" width="130" height="24" stroke="#b9c0c1" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+          <text transform="translate(54 621)" fill="#515556">
+            <tspan font-family="Helvetica" font-size="13" font-weight="700" fill="#515556" x="28.29956" y="13" xml:space="preserve">MyThread</tspan>
+          </text>
+        </g>
+        <g id="Graphic_20">
+          <title>Operations</title>
+          <rect x="48" y="669" width="130" height="28" stroke="#b9c0c1" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+          <text transform="translate(54 675)" fill="#515556">
+            <tspan font-family="Helvetica" font-size="13" font-weight="400" fill="#515556" x="0" y="13" xml:space="preserve">run()</tspan>
+          </text>
+        </g>
+      </g>
+      <g id="Group_23">
+        <g id="Graphic_26">
+          <title>Attributes</title>
+          <rect x="253" y="458.0391" width="130" height="29.02466" stroke="#b9c0c1" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+          <text transform="translate(259 464.0391)" fill="#515556">
+            <tspan font-family="Helvetica" font-size="13" font-weight="400" fill="#515556" x="0" y="13" xml:space="preserve"> </tspan>
+          </text>
+        </g>
+        <g id="Graphic_25">
+          <title>Class Name</title>
+          <rect x="253" y="431" width="130" height="27.0391" stroke="#b9c0c1" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+          <text transform="translate(259 436.51955)" fill="#515556">
+            <tspan font-family="Helvetica" font-size="13" font-style="italic" font-weight="700" fill="#515556" x="34.072754" y="13" xml:space="preserve">Callable</tspan>
+          </text>
+        </g>
+        <g id="Graphic_24">
+          <title>Operations</title>
+          <rect x="253" y="487.06376" width="130" height="31.545616" stroke="#b9c0c1" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+          <text transform="translate(259 493.06376)" fill="#515556">
+            <tspan font-family="Helvetica" font-size="13" font-style="italic" font-weight="400" fill="#515556" x="0" y="13" xml:space="preserve">__call__</tspan>
+          </text>
+        </g>
+      </g>
+      <g id="Line_35">
+        <line x1="115.5" y1="617" x2="115.5" y2="591.4" marker-end="url(#UMLInheritance_Marker)" stroke="#666" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+      <g id="Line_37">
+        <line x1="195.5" y1="471.5" x2="239.1" y2="471.5" marker-end="url(#StickArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="8.0,8.0" stroke-width="2"/>
+      </g>
+      <g id="Graphic_38" filter="url(#Shadow)">
+        <path d="M 382.5 604.754 C 382.5 599.0702 380.1251 598.367 362.7771 592.742 L 362.59385 592.6838 C 345.15423 587 344.97284 587 327.07507 587 C 303.2438 587 195.5 587 195.5 587 L 195.5 647 L 382.5 647 L 382.5 604.754 Z" fill="#a5a5a5"/>
+        <path d="M 382.5 604.754 C 382.5 599.0702 380.1251 598.367 362.7771 592.742 L 362.59385 592.6838 C 345.15423 587 344.97284 587 327.07507 587 C 303.2438 587 195.5 587 195.5 587 L 195.5 647 L 382.5 647 L 382.5 604.754 Z M 382.5 604.4612 C 382.5 599.0702 382.31674 599.0702 344.97284 599.0702 L 344.97284 599.0702 C 344.97284 587.0588 344.97284 587 328.1709 587" stroke="white" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(200.5 593)" fill="white">
+          <tspan font-family="Helvetica" font-size="12" font-weight="400" fill="white" x="0" y="11" xml:space="preserve">«method»</tspan>
+          <tspan font-family="Helvetica" font-size="14" font-weight="400" fill="white" x="0" y="28" xml:space="preserve">while(true)</tspan>
+          <tspan font-family="Helvetica" font-size="14" font-weight="400" fill="white" x="0" y="45" xml:space="preserve">   do_something();</tspan>
+        </text>
+      </g>
+      <g id="Line_40">
+        <line x1="195.5" y1="619" x2="93.11459" y2="677.6729" marker-end="url(#FilledBall_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="8.0,8.0" stroke-width="2"/>
+      </g>
+      <g id="Line_41">
+        <line x1="253" y1="597.2031" x2="278.0442" y2="517.4174" marker-end="url(#FilledBall_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="8.0,8.0" stroke-width="2"/>
+      </g>
+      <g id="Graphic_42">
+        <text transform="translate(207.12866 450.5)" fill="#515556">
+          <tspan font-family="Helvetica" font-size="13" font-weight="400" fill="#515556" x="0" y="13" xml:space="preserve">target</tspan>
+        </text>
+      </g>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,400 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+    "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg
+    xmlns="http://www.w3.org/2000/svg"
+    version="1.1"
+    xmlns:xl="http://www.w3.org/1999/xlink"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    viewBox="13 438 536 432"
+    width="412"
+    height="332"
+>
+  <defs>
+    <font-face
+            font-family="Helvetica"
+            font-size="16"
+            units-per-em="1000"
+            underline-position="-75.68359"
+            underline-thickness="49.316406"
+            slope="-750"
+            x-height="522.9492"
+            cap-height="717.28516"
+            ascent="770.0195"
+            descent="-229.98047"
+            font-style="italic"
+            font-weight="400"
+        >
+      <font-face-src>
+        <font-face-name name="Helvetica-Oblique" />
+      </font-face-src>
+    </font-face>
+    <font-face
+            font-family="Helvetica"
+            font-size="16"
+            units-per-em="1000"
+            underline-position="-75.68359"
+            underline-thickness="49.316406"
+            slope="0"
+            x-height="522.9492"
+            cap-height="717.28516"
+            ascent="770.0195"
+            descent="-229.98047"
+            font-weight="400"
+        >
+      <font-face-src>
+        <font-face-name name="Helvetica" />
+      </font-face-src>
+    </font-face>
+    <font-face
+            font-family="Helvetica Neue"
+            font-size="16"
+            panose-1="2 0 5 3 0 0 0 2 0 4"
+            units-per-em="1000"
+            underline-position="-100"
+            underline-thickness="50"
+            slope="0"
+            x-height="517"
+            cap-height="714"
+            ascent="951.9958"
+            descent="-212.99744"
+            font-weight="400"
+        >
+      <font-face-src>
+        <font-face-name name="HelveticaNeue" />
+      </font-face-src>
+    </font-face>
+    <marker
+            orient="auto"
+            overflow="visible"
+            markerUnits="strokeWidth"
+            id="FilledArrow_Marker"
+            stroke-linejoin="miter"
+            stroke-miterlimit="10"
+            viewBox="-1 -3 7 6"
+            markerWidth="7"
+            markerHeight="6"
+            color="black"
+        >
+      <g>
+        <path
+                    d="M 4.8 0 L 0 -1.8 L 0 1.8 Z"
+                    fill="currentColor"
+                    stroke="currentColor"
+                    stroke-width="1"
+                />
+      </g>
+    </marker>
+    <font-face
+            font-family="Menlo"
+            font-size="16"
+            panose-1="2 11 6 9 3 8 4 2 2 4"
+            units-per-em="1000"
+            underline-position="-63.47656"
+            underline-thickness="43.94531"
+            slope="0"
+            x-height="546.875"
+            cap-height="729.0039"
+            ascent="928.2227"
+            descent="-235.83984"
+            font-weight="400"
+        >
+      <font-face-src>
+        <font-face-name name="Menlo-Regular" />
+      </font-face-src>
+    </font-face>
+  </defs>
+  <metadata> Produced by OmniGraffle 8.0\n2024-05-24 11:41:07 +0000</metadata>
+  <g
+        id="python-thread-states"
+        stroke="none"
+        fill-opacity="1"
+        stroke-opacity="1"
+        fill="none"
+        stroke-dasharray="none"
+    >
+    <title>python-thread-states</title>
+    <g id="python-thread-states_Layer_1">
+      <title>Layer 1</title>
+      <g id="Graphic_2">
+        <path
+                    d="M 245 438 L 361 438 C 363.20914 438 365 439.79086 365 442 L 365 501 C 365 503.20914 363.20914 505 361 505 L 245 505 C 242.79086 505 241 503.20914 241 501 L 241 442 C 241 439.79086 242.79086 438 245 438 Z"
+                    fill="#f26077"
+                />
+        <text transform="translate(246 452.5)" fill="white">
+          <tspan
+                        font-family="Helvetica"
+                        font-size="16"
+                        font-style="italic"
+                        font-weight="400"
+                        fill="white"
+                        x="40.101562"
+                        y="15"
+                        xml:space="preserve"
+                    >nicht </tspan>
+          <tspan
+                        font-family="Helvetica"
+                        font-size="16"
+                        font-style="italic"
+                        font-weight="400"
+                        fill="white"
+                        x="18.3125"
+                        y="34"
+                        xml:space="preserve"
+                    >existierend</tspan>
+        </text>
+      </g>
+      <g id="Graphic_4">
+        <path
+                    d="M 245 534 L 361 534 C 363.20914 534 365 535.79086 365 538 L 365 597 C 365 599.20914 363.20914 601 361 601 L 245 601 C 242.79086 601 241 599.20914 241 597 L 241 538 C 241 535.79086 242.79086 534 245 534 Z"
+                    fill="#ff914d"
+                />
+        <path
+                    d="M 245 534 L 361 534 C 363.20914 534 365 535.79086 365 538 L 365 597 C 365 599.20914 363.20914 601 361 601 L 245 601 C 242.79086 601 241 599.20914 241 597 L 241 538 C 241 535.79086 242.79086 534 245 534 Z"
+                    stroke="#b34400"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
+        <text transform="translate(246 558)" fill="white">
+          <tspan
+                        font-family="Helvetica"
+                        font-size="16"
+                        font-weight="400"
+                        fill="white"
+                        x="43.652344"
+                        y="15"
+                        xml:space="preserve"
+                    >neu</tspan>
+        </text>
+      </g>
+      <g id="Graphic_5">
+        <path
+                    d="M 245 630 L 361 630 C 363.20914 630 365 631.79086 365 634 L 365 693 C 365 695.2091 363.20914 697 361 697 L 245 697 C 242.79086 697 241 695.2091 241 693 L 241 634 C 241 631.79086 242.79086 630 245 630 Z"
+                    fill="#68bc36"
+                />
+        <path
+                    d="M 245 630 L 361 630 C 363.20914 630 365 631.79086 365 634 L 365 693 C 365 695.2091 363.20914 697 361 697 L 245 697 C 242.79086 697 241 695.2091 241 693 L 241 634 C 241 631.79086 242.79086 630 245 630 Z"
+                    stroke="#235e00"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
+        <text transform="translate(246 644.5)" fill="white">
+          <tspan
+                        font-family="Helvetica"
+                        font-size="16"
+                        font-weight="400"
+                        fill="white"
+                        x="16.53125"
+                        y="15"
+                        xml:space="preserve"
+                    >ausführbar/</tspan>
+          <tspan
+                        font-family="Helvetica"
+                        font-size="16"
+                        font-weight="400"
+                        fill="white"
+                        x="16.96875"
+                        y="34"
+                        xml:space="preserve"
+                    >ausführend</tspan>
+        </text>
+      </g>
+      <g id="Graphic_6">
+        <path
+                    d="M 428 789 L 544 789 C 546.20914 789 548 790.7909 548 793 L 548 852 C 548 854.2091 546.20914 856 544 856 L 428 856 C 425.79086 856 424 854.2091 424 852 L 424 793 C 424 790.7909 425.79086 789 428 789 Z"
+                    fill="black"
+                />
+        <path
+                    d="M 428 789 L 544 789 C 546.20914 789 548 790.7909 548 793 L 548 852 C 548 854.2091 546.20914 856 544 856 L 428 856 C 425.79086 856 424 854.2091 424 852 L 424 793 C 424 790.7909 425.79086 789 428 789 Z"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
+        <text transform="translate(429 813.276)" fill="white">
+          <tspan
+                        font-family="Helvetica Neue"
+                        font-size="16"
+                        font-weight="400"
+                        fill="white"
+                        x="45.144"
+                        y="15"
+                        xml:space="preserve"
+                    >tod</tspan>
+        </text>
+      </g>
+      <g id="Graphic_7">
+        <path
+                    d="M 18 789 L 134 789 C 136.20914 789 138 790.7909 138 793 L 138 852 C 138 854.2091 136.20914 856 134 856 L 18 856 C 15.790861 856 14 854.2091 14 852 L 14 793 C 14 790.7909 15.790861 789 18 789 Z"
+                    fill="#a5a5a5"
+                />
+        <path
+                    d="M 18 789 L 134 789 C 136.20914 789 138 790.7909 138 793 L 138 852 C 138 854.2091 136.20914 856 134 856 L 18 856 C 15.790861 856 14 854.2091 14 852 L 14 793 C 14 790.7909 15.790861 789 18 789 Z"
+                    stroke="#666"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
+        <text transform="translate(19 813)" fill="white">
+          <tspan
+                        font-family="Helvetica"
+                        font-size="16"
+                        font-weight="400"
+                        fill="white"
+                        x="27.210938"
+                        y="15"
+                        xml:space="preserve"
+                    >blockiert</tspan>
+        </text>
+      </g>
+      <g id="Line_18">
+        <line
+                    x1="303"
+                    y1="505"
+                    x2="303"
+                    y2="521.1"
+                    marker-end="url(#FilledArrow_Marker)"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                />
+      </g>
+      <g id="Line_19">
+        <line
+                    x1="303"
+                    y1="601"
+                    x2="303"
+                    y2="617.1"
+                    marker-end="url(#FilledArrow_Marker)"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                />
+      </g>
+      <g id="Line_20">
+        <line
+                    x1="261.28273"
+                    y1="697.3203"
+                    x2="147.90568"
+                    y2="791.903"
+                    marker-end="url(#FilledArrow_Marker)"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                />
+      </g>
+      <g id="Line_21">
+        <line
+                    x1="76"
+                    y1="789"
+                    x2="230.7325"
+                    y2="671.3095"
+                    marker-end="url(#FilledArrow_Marker)"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                />
+      </g>
+      <g id="Line_23">
+        <line
+                    x1="365"
+                    y1="663.5"
+                    x2="477.04634"
+                    y2="779.71335"
+                    marker-end="url(#FilledArrow_Marker)"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                />
+      </g>
+      <g id="Graphic_27">
+        <text transform="translate(213.5 510)" fill="black">
+          <tspan
+                        font-family="Menlo"
+                        font-size="16"
+                        font-weight="400"
+                        fill="black"
+                        x="0"
+                        y="15"
+                        xml:space="preserve"
+                    >Thread(…)</tspan>
+        </text>
+      </g>
+      <g id="Graphic_28">
+        <text transform="translate(229.5 606)" fill="black">
+          <tspan
+                        font-family="Menlo"
+                        font-size="16"
+                        font-weight="400"
+                        fill="black"
+                        x="0"
+                        y="15"
+                        xml:space="preserve"
+                    >start()</tspan>
+        </text>
+      </g>
+      <g id="Graphic_29">
+        <text transform="translate(379.41034 686.54575) rotate(47)" fill="black">
+          <tspan
+                        font-family="Menlo"
+                        font-size="16"
+                        font-weight="400"
+                        fill="black"
+                        x="37.14884"
+                        y="15"
+                        xml:space="preserve"
+                    >run</tspan>
+          <tspan
+                        font-family="Helvetica"
+                        font-size="16"
+                        font-weight="400"
+                        fill="black"
+                        y="15"
+                        xml:space="preserve"
+                    > endet</tspan>
+        </text>
+      </g>
+      <g id="Graphic_30">
+        <text transform="translate(101.40289 804.177) rotate(-40)" fill="black">
+          <tspan
+                        font-family="Menlo"
+                        font-size="16"
+                        font-weight="400"
+                        fill="black"
+                        x="84.48438"
+                        y="15"
+                        xml:space="preserve"
+                    >join()</tspan>
+          <tspan
+                        font-family="Helvetica"
+                        font-size="16"
+                        font-weight="400"
+                        fill="black"
+                        x="21.765625"
+                        y="53"
+                        xml:space="preserve"
+                    >blockierende Operationen </tspan>
+          <tspan
+                        font-family="Helvetica"
+                        font-size="16"
+                        font-weight="400"
+                        fill="black"
+                        x="0"
+                        y="72"
+                        xml:space="preserve"
+                    >(z. B. IO oder auf Lock wartend)</tspan>
+        </text>
+      </g>
+      <g id="Graphic_34">
+        <text transform="translate(276.45597 751.3149)" fill="black" />
+      </g>
+    </g>
+  </g>
+</svg>

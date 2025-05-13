@@ -1,5 +1,5 @@
 .. meta::
-    :version: genesis
+    :version: renaissance
     :author: Michael Eichberg
     :keywords: "Python", "Concurrency"
     :description lang=de: Nebenläufigkeit in Python
@@ -21,16 +21,16 @@ Nebenläufigkeit in Python
 
 :Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
 :Kontakt: michael.eichberg@dhbw.de
-:Version: 1.0 
+:Version: 1.0
 
 .. supplemental::
 
-  :Folien: 
+  :Folien:
 
       |html-source|
 
       |pdf-source|
-      
+
 
   :Fehler melden:
 
@@ -40,21 +40,19 @@ Nebenläufigkeit in Python
 
 .. class:: no-title center-child-elements transition-move-left
 
-Nebenläufigkeit 
+Nebenläufigkeit
 -------------------------------------------------------------------
 
-.. admonition:: Hintergrund  
-
-  .. container:: 
+.. background::
 
     Nebenläufigkeit ist notwendig, um:
-    
+
     - die Reaktionsfähigkeit von Anwendungen zu verbessern
     - eine bessere Auslastung von (Mehrkern-)prozessoren zu erreichen
 
-  .. incremental::
+    .. container:: incremental
 
-    Ein gutes Verständnis von nebenläufiger Programmierung ist für die Entwicklung von verteilten Anwendungen unerlässlich, da Server immer mehrere Anfragen gleichzeitig bearbeiten.
+        Ein gutes Verständnis von nebenläufiger Programmierung ist für die Entwicklung von verteilten Anwendungen unerlässlich, da Server immer mehrere Anfragen gleichzeitig bearbeiten.
 
 
 
@@ -68,48 +66,44 @@ Nebenläufigkeitsmodelle in Python
 Prozesse vs. Threads vs. Coroutines in Python
 ---------------------------------------------------------------------
 
-.. stack::
+.. deck::
 
-  .. layer:: 
+  .. card::
 
     .. image:: images/threads/multiprocessing.svg
       :alt: Multiprocessing in Python
-      :width: 100%
       :align: center
 
-  .. layer:: incremental overlay
-    
+  .. card:: overlay
+
     .. image:: images/threads/threads_classical.svg
       :alt: Klassisches Threading in Python
-      :width: 100%
       :align: center
 
-  .. layer:: incremental overlay
-    
+  .. card:: overlay
+
     .. image:: images/threads/coroutines.svg
       :alt: Coroutines in Python
-      :width: 100%
       :align: center
 
-  .. layer:: incremental overlay
-    
+  .. card:: overlay
+
     .. image:: images/threads/threads_new.svg
       :alt: Neues Multithreading in Python
-      :width: 100%
       :align: center
 
 .. supplemental::
 
   - Prozesse sind voneinander isoliert und können nur über explizite Mechanismen miteinander kommunizieren (z. B. :code:`Pipe`\ s und :code:`Queue`\ s); Prozesse teilen sich *nicht* denselben Adressraum.
 
-  - Alle Threads eines Prozesses teilen sich denselben Adressraum. Python Threads sind vom Betriebssystem unterstützte Threads, die direkt vom Betriebssystem verwaltet werden. Python (d. h. der Standardinterpreter CPython bis (mind.) einschließlich Version 3.12) führt aber immer nur einen Thread aus aufgrund des *Global Interpreter Lock*\ s (GIL). 
-  
+  - Alle Threads eines Prozesses teilen sich denselben Adressraum. Python Threads sind vom Betriebssystem unterstützte Threads, die direkt vom Betriebssystem verwaltet werden. Python (d. h. der Standardinterpreter CPython bis (mind.) einschließlich Version 3.12) führt aber immer nur einen Thread aus aufgrund des *Global Interpreter Lock*\ s (GIL).
+
     Der GIL existiert(e) insbesondere, da dadurch die Implementierung von Python einfacher wurde (z. B. kann problemlos *Reference Counting* verwendet werden und Probleme mit externen Bibliotheken sind auch minimiert.)
 
     Andere Python-Implementierungen (wie Jython und IronPython) haben keinen GIL und können daher mehrere Threads (echt) parallel ausführen.
 
   - *Coroutines* (auch *Fibres*) nutzen immer kooperatives Multitasking. D. h. ein Fibre gibt die Kontrolle an eine andere Fibre explizit ab. (Früher wurden *Fibres* auch als *Green Threads* bezeichnet.) Diese sind für das Betriebssystem unsichtbar.
-  
+
     *Coroutines* erfordern explizite Unterstützung in den Bibliotheken. Alle auf Koroutinen basierenden Tasks werden in von der Event-Loop verwaltet und von einem einzigen Thread ausgeführt.
 
 
@@ -117,18 +111,17 @@ Prozesse vs. Threads vs. Coroutines in Python
 Nebenläufigkeit in Python
 ------------------------------------------------------------------
 
-.. stack:: 
+.. deck::
 
-  .. layer::
+  .. card::
 
     .. image:: images/threads/python-threads.svg
       :alt: threading.Thread
-      :height: 950px
       :align: center
 
-  .. layer:: incremental overlay center-child-elements
-    
-    .. container:: rounded-corners dhbw-light-gray-background opacity-90 padding-1em
+  .. card:: overlay center-child-elements
+
+    .. container:: border-rounded dhbw-light-gray-background opacity-90 padding-1em text-align-center
 
       Die ``Process`` API bietet eine vergleichbare Schnittstelle.
 
@@ -142,7 +135,7 @@ Nebenläufigkeit in Python
 
   - Python unterscheidet *User*-Threads und *Daemon*-Threads.
 
-    *Daemon-Threads* sind Threads, die allgemeine Dienste bereitstellen und normalerweise nie beendet werden. Jeder Thread, der eine Endlosschleife ausführt sollte als Daemon-Thread gekennzeichnet werden bei Erzeugung.  
+    *Daemon-Threads* sind Threads, die allgemeine Dienste bereitstellen und normalerweise nie beendet werden. Jeder Thread, der eine Endlosschleife ausführt sollte als Daemon-Thread gekennzeichnet werden bei Erzeugung.
 
     Wenn alle Benutzer-Threads beendet sind, werden die Daemon-Threads automatisch beendet, und das Hauptprogramm endet.
 
@@ -166,7 +159,6 @@ Python Thread States
 
 .. image:: images/threads/python-thread-states.svg
    :alt: Python Thread States
-   :height: 950px
    :align: center
 
 
@@ -174,43 +166,43 @@ Python Thread States
 Beispiel: Multiprocessing - „IO-Bound“
 ---------------------------------------------------------------------
 
-.. container:: two-columns
+.. grid::
 
-  .. container:: column
+  .. cell:: width-60
 
     .. code:: python
-      :class: far-far-smaller
+        :number-lines:
+        :class: copy-to-clipboard
 
-      import time
-      from multiprocessing \
-        import Process, current_process
+        import time
+        from multiprocessing \
+            import Process, current_process
 
-      def busy_sleep():
-          time.sleep(10)
+        def busy_sleep():
+            time.sleep(10)
 
-      print(current_process().name)
+        print(current_process().name)
 
-      if __name__ == '__main__':
-          p1 = Process(target=busy_sleep)
-          p2 = Process(target=busy_sleep)
-          p1.start()
-          p2.start()
-          p1.join()
-          p2.join()
+        if __name__ == '__main__':
+            p1 = Process(target=busy_sleep)
+            p2 = Process(target=busy_sleep)
+            p1.start()
+            p2.start()
+            p1.join()
+            p2.join()
 
-  .. container:: column incremental
+  .. cell:: incremental
 
     .. code:: bash
-      :class: far-far-smaller
 
-      $ time ./processes_sleep.py 
+      $ time ./processes_sleep.py
       MainProcess
       Process-2
       Process-1
-      ./processes_sleep.py  
-        0.07s user 
-        0.02s system 
-        0% cpu 
+      ./processes_sleep.py
+        0.07s user
+        0.02s system
+        0% cpu
         10.070 total
 
 
@@ -218,12 +210,13 @@ Beispiel: Multiprocessing - „IO-Bound“
 Beispiel: Multiprocessing - CPU-Bound
 --------------------------------------------------------------------
 
-.. container:: two-columns
+.. grid::
 
-  .. container:: column
+  .. cell:: width-60
 
     .. code:: python
-      :class: far-far-smaller
+      :class: copy-to-clipboard
+      :number-lines:
 
       import time
       from multiprocessing \
@@ -245,10 +238,9 @@ Beispiel: Multiprocessing - CPU-Bound
           p1.join()
           p2.join()
 
-  .. container:: column incremental
+  .. cell::
 
     .. code:: bash
-      :class: far-far-smaller
 
       $ time ./processes_computation.py
       MainProcess
@@ -256,13 +248,13 @@ Beispiel: Multiprocessing - CPU-Bound
       Process-2
       Done:100000000.0
       Done:100000000.0
-      ./processes_computation.py  
-        5.60s user 
+      ./processes_computation.py
+        5.60s user
         0.02s system
         194% cpu
         2.899 total
 
-.. supplemental:: 
+.. supplemental::
 
   .. rubric:: Hinweise
 
@@ -272,14 +264,14 @@ Beispiel: Multiprocessing - CPU-Bound
 Beispiel: Threading - „IO-Bound“
 -------------------------------------------------
 
-.. container:: two-columns
+.. grid::
 
-  .. container:: column
-        
+  .. cell:: width-60
+
     .. code:: python
-      :class: far-far-smaller
+      :class: copy-to-clipboard
+      :number-lines:
 
-      #!/usr/bin/env python3
       import time
       from threading import Thread, current_thread
 
@@ -295,15 +287,14 @@ Beispiel: Threading - „IO-Bound“
           t1.join()
           t2.join()
 
-  .. container:: column incremental
+  .. cell:: incremental
 
     .. code:: bash
-      :class: far-far-smaller
 
-      $ time ./threads_sleep.py  
-        0.02s user 
-        0.01s system 
-        0% cpu 
+      $ time ./threads_sleep.py
+        0.02s user
+        0.01s system
+        0% cpu
         10.188 total
 
 
@@ -311,14 +302,14 @@ Beispiel: Threading - „IO-Bound“
 Beispiel: Threading - CPU-Bound
 ----------------------------------------------------------------------
 
-.. container:: two-columns
+.. grid::
 
-  .. container:: column
-        
+  .. cell:: width-50
+
     .. code:: python
-      :class: far-far-smaller
+      :class: copy-to-clipboard
+      :number-lines:
 
-      #!/usr/bin/env python3
       import time
       from threading \
           import Thread, current_thread
@@ -339,10 +330,9 @@ Beispiel: Threading - CPU-Bound
           t2.join()
 
 
-  .. container:: column incremental
+  .. cell:: width-50 incremental
 
     .. code:: bash
-      :class: far-far-smaller
 
       $ time ./threads_computation.py 16:10:15
       Thread-1 (computation)
@@ -350,31 +340,31 @@ Beispiel: Threading - CPU-Bound
       Done:100000000.0
       Done:100000000.0
       Done.
-      ./threads_computation.py  
-      5.27s user 
-      0.02s system 
-      96% cpu 
+      ./threads_computation.py
+      5.27s user
+      0.02s system
+      96% cpu
       5.450 total
 
 
 
-Beispiel: Coroutines  
+Beispiel: Coroutines
 ---------------------------------------------------------------------
 
-.. container:: two-columns
+.. grid::
 
-  .. container:: column
+  .. cell:: width-60
 
     .. code:: python
-      :class: far-far-smaller
+      :class: copy-to-clipboard
+      :number-lines:
 
-      #!/usr/bin/env python3
       import asyncio
 
       async def busy_sleep(id):
-          print(f"Task {id} started") 
+          print(f"Task {id} started")
           await asyncio.sleep(10)
-          print(f"Task {id} completed") 
+          print(f"Task {id} completed")
 
       async def main():
           t1 = asyncio.create_task(busy_sleep(1))
@@ -388,10 +378,9 @@ Beispiel: Coroutines
       if __name__ == '__main__':
           asyncio.run(main())
 
-  .. container:: column incremental
+  .. cell:: width-40 incremental
 
     .. code:: bash
-      :class: far-far-smaller
 
       $ time ./async.py
       Both initialized.
@@ -400,17 +389,17 @@ Beispiel: Coroutines
       Task 1 completed
       Task 2 completed
       Done.
-      ./async.py  
-        0.05s user 
-        0.01s system 
-        0% cpu 
+      ./async.py
+        0.05s user
+        0.01s system
+        0% cpu
         10.063 total
 
 .. supplemental::
 
   - Beide ``Task``\ s werden von dem gleichen Thread ausgeführt. Der Thread gibt „die Kontrolle an die Event-Loop ab“, wenn er auf eine entsprechende blockierende Methode trifft. Die Event-Loop kann dann die Kontrolle an einen anderen Task übergeben.
-  - Warten (``await``) ist nur möglich in asynchronen Methoden (``async def``). 
-  - ``asyncio.run(<fn>)`` startet die Event-Loop und führt die übergebene asynchrone Methode aus. 
+  - Warten (``await``) ist nur möglich in asynchronen Methoden (``async def``).
+  - ``asyncio.run(<fn>)`` startet die Event-Loop und führt die übergebene asynchrone Methode aus.
   - Die Verwendung von Koroutinen erfordert explizite Unterstützung in den Bibliotheken.
 
 
@@ -422,17 +411,17 @@ Sperren und Bedingungsvariablen
 
 
 
-Synchronisation mit Hilfe von *Sperren* 
+Synchronisation mit Hilfe von *Sperren*
 ---------------------------------------------------------------------
 
 .. class:: incremental list-with-explanations
 
-- Zugriff auf gemeinsam genutzte Ressourcen muss synchronisiert werden, um :eng:`Race Conditions` (:ger:`Wettlaufsituationen`) zu vermeiden. 
+- Zugriff auf gemeinsam genutzte Ressourcen muss synchronisiert werden, um :eng:`Race Conditions` (:ger:`Wettlaufsituationen`) zu vermeiden.
 
   (Unabhängig davon ob Threads echt parallel oder nur scheinbar parallel ausgeführt werden.)
 
-- Eine *Sperre* (``Lock``) ist ein Objekt, das es erlaubt Code im wechselseitigen Ausschluss (engl. *mutual exclusion*) auszuführen. 
-   
+- Eine *Sperre* (``Lock``) ist ein Objekt, das es erlaubt Code im wechselseitigen Ausschluss (engl. *mutual exclusion*) auszuführen.
+
   D. h. ein Thread blockiert, wenn er versucht eine Sperre zu erwerben, die bereits von einem anderen Thread gehalten wird.
 - Der Code, der von einer Sperre geschützt wird, wird als kritischer Abschnitt bezeichnet.
 
@@ -448,13 +437,13 @@ Verwendung von *Sperren*\ [#]_
 - Am Anfang des kritischen Abschnitts wird die Sperre angefordert mit ``<Lock>.acquire()``.
 - Am Ende des kritischen Abschnitts wird die Sperre freigegeben mit ``<Lock>.release()``.
 
-.. class:: incremental 
+.. class:: incremental
 
-- Um sicherzustellen, dass eine gehaltene Sperre immer aufgehoben wird, sollte ``try-finally`` oder ein passendes ``with``\ -Statement verwendet werden. (Lock implementiert z. B. das Protokoll von *Context-Managern*) 
+- Um sicherzustellen, dass eine gehaltene Sperre immer aufgehoben wird, sollte ``try-finally`` oder ein passendes ``with``\ -Statement verwendet werden. (Lock implementiert z. B. das Protokoll von *Context-Managern*)
 
-  .. container:: two-columns
+  .. grid::
 
-    .. container:: column
+    .. cell:: width-50
 
       .. code:: python
         :class: far-smaller
@@ -467,7 +456,7 @@ Verwendung von *Sperren*\ [#]_
           lock.release()
 
 
-    .. container:: column incremental
+    .. cell:: width-50 incremental
 
       .. code:: python
         :class: far-smaller
@@ -484,9 +473,9 @@ Verwendung von *Sperren*\ [#]_
 Beispiel: Thread-safe Shared Counter
 -----------------------------------------------------------------------
 
-.. container:: two-columns
+.. grid::
 
-  .. container:: column
+  .. cell:: width-50
 
     .. code:: python
       :class: smaller copy-to-clipboard
@@ -502,7 +491,7 @@ Beispiel: Thread-safe Shared Counter
           def value(self):
               return self._value
 
-  .. container:: column incremental
+  .. cell:: width-50 incremental
 
     .. code:: python
       :class: smaller copy-to-clipboard
@@ -534,9 +523,9 @@ Beispiel: Thread-safe Shared Counter
 Sperren und komplexe Rückgabewerte
 ------------------------------------
 
-.. container:: two-columns
+.. grid::
 
-  .. container:: column 
+  .. cell:: width-50
 
     .. code:: python
       :class: smaller copy-to-clipboard
@@ -550,12 +539,12 @@ Sperren und komplexe Rückgabewerte
               self.y = y
               self.lock = Lock()
 
-    
-  .. container:: column incremental
-  
+
+  .. cell:: width-50 incremental
+
     .. code:: python
       :class: smaller copy-to-clipboard
-  
+
       def update(self, x, y):
           self.lock.acquire()
           try:
@@ -574,7 +563,7 @@ Sperren und komplexe Rückgabewerte
 
 
 
-.. class:: new-subsection 
+.. class:: new-subsection
 
 Bedingungsvariablen
 ---------------------
@@ -583,13 +572,13 @@ Bedingungsvariablen
 
 Bedingte Synchronisation
 ------------------------------------------------------------------------
-  
+
 .. class:: incremental
 
 - drückt eine Bedingung für die Reihenfolge der Ausführung von Operationen aus.
 - z. B. können Daten erst dann aus einem Puffer entfernt werden, wenn Daten in den Puffer eingegeben wurden.
 - Python unterstützt optionale Bedingungs-Variablen (Instanzen von ``Condition``), mit den klassischen Methoden ``wait`` und ``notify`` bzw. ``notify_all``.
-  
+
   Diese Methoden erlauben es auf bestimmte Bedingungen zu warten und andere Threads zu benachrichtigen, wenn sich die Bedingung geändert hat.
 
 
@@ -597,54 +586,54 @@ Bedingte Synchronisation
 Programmierung mit ``Condition``\ s
 ----------------------------------------------------------------------
 
-.. stack:: incremental footnotesize margin-top-1em
+.. deck:: incremental footnotesize margin-top-1em
 
-  .. layer::
+  .. card::
 
     - Die Methoden ``wait`` und ``notify(_all)`` können nur verwendet werden, wenn die Sperre gehalten wird; andernfalls wird eine ``RuntimeError`` ausgelöst.
-  
-  .. layer:: incremental
+
+  .. card::
 
     - Die ``wait``-Methode blockiert immer den aufrufenden Thread und gibt die mit dem Objekt verbundene Sperre frei.
 
-  .. layer:: incremental
+  .. card::
 
     - Die ``notify(n=1)``-Methode weckt (mind.) *n* wartende Threads auf. Welcher Thread aufgeweckt wird, ist nicht spezifiziert.
-     
+
       ``notify`` gibt die Sperre nicht frei; daher muss der aufgeweckte Thread warten, bis er die Sperre erhalten kann, bevor er fortfahren kann.
-    - Um alle wartenden Threads aufzuwecken, muss die Methode ``notify_all`` verwendet werden. 
-    
+    - Um alle wartenden Threads aufzuwecken, muss die Methode ``notify_all`` verwendet werden.
+
       Warten die Threads aufgrund unterschiedlicher Bedingungen, so ist immer ``notify_all`` zu verwenden.
     - Wenn kein Thread wartet, dann haben ``notify`` und ``notify_all`` keine Wirkung.
 
-  .. layer:: incremental
+  .. card::
 
     .. admonition:: Wichtig
       :class: warning
-    
-      Wenn ein Thread aufgeweckt wird, kann er nicht davon ausgehen, dass seine Bedingung erfüllt ist! 
-      
+
+      Wenn ein Thread aufgeweckt wird, kann er nicht davon ausgehen, dass seine Bedingung erfüllt ist!
+
       Die Bedingung ist immer in einer Schleife zu prüfen und der Thread muss ich ggf. wieder in den Wartezustand versetzen.
 
 
 
-Beispiel: Implementation eines *BoundedBuffer* 
+Beispiel: Implementation eines *BoundedBuffer*
 ---------------------------------------------------------------------
 
-- Ein *BoundedBuffer* hat (z. B.) traditionell zwei Bedingungsvariablen: 
+- Ein *BoundedBuffer* hat (z. B.) traditionell zwei Bedingungsvariablen:
 
-  - *not_full* und 
-  - *not_empty*. 
-  
-  In diesem Fall würde gelten, dass, wenn ein Thread auf eine Bedingung wartet, kein anderer Thread auf die andere Bedingung warten kann, da sich die Bedingungen gegenseitig ausschließen. 
+  - *not_full* und
+  - *not_empty*.
+
+  In diesem Fall würde gelten, dass, wenn ein Thread auf eine Bedingung wartet, kein anderer Thread auf die andere Bedingung warten kann, da sich die Bedingungen gegenseitig ausschließen.
 
 
 Beispiel: Synchronisation mit Bedingungsvariablen
 --------------------------------------------------------------------
 
-.. container:: two-columns far-smaller
+.. grid:: far-smaller
 
-  .. container:: column
+  .. cell:: width-50
 
     .. code:: python
       :class: copy-to-clipboard
@@ -661,7 +650,7 @@ Beispiel: Synchronisation mit Bedingungsvariablen
           self.not_empty = Condition(self.lock)
           self.not_full = Condition(self.lock)
 
-  .. container:: column incremental
+  .. cell:: width-50 incremental
 
     .. code:: python
       :class: copy-to-clipboard
@@ -689,15 +678,15 @@ Beispiel: Synchronisation mit Bedingungsvariablen
 Beispiel: Synchronisation mit nur einer Bedingung
 ----------------------------------------------------------------------
 
-.. stack:: 
+.. deck::
 
-  .. layer:: 
+  .. card::
 
     .. container:: minor
-      
-      Im Folgenden sehen wir eine Implementierung mit nur einer Bedingungsvariablen, um bestimmte Synchronisationsfehler demonstrieren zu können.    
 
-  .. layer:: incremental 
+      Im Folgenden sehen wir eine Implementierung mit nur einer Bedingungsvariablen, um bestimmte Synchronisationsfehler demonstrieren zu können.
+
+  .. card::
 
     .. code:: python
       :class: copy-to-clipboard
@@ -712,10 +701,10 @@ Beispiel: Synchronisation mit nur einer Bedingung
           self.buffer = []
           self.lock = Lock()
           self.not_used = Condition(self.lock)
-      
+
       ...
 
-  .. layer:: incremental 
+  .. card::
 
     .. code:: python
       :class: copy-to-clipboard
@@ -728,7 +717,7 @@ Beispiel: Synchronisation mit nur einer Bedingung
             self.buffer.append(item)
             self.not_used.notify_all() # notify_all() !
 
-  .. layer:: incremental 
+  .. card::
 
     .. code:: python
       :class: copy-to-clipboard
@@ -742,26 +731,25 @@ Beispiel: Synchronisation mit nur einer Bedingung
             self.not_used.notify_all() # notify_all() !
             return item
 
-  .. layer:: incremental
+  .. card::
 
     .. container:: text-align-center dhbw-red bolder
-    
+
       Fehlersituation, die bei der Verwendung von ``notify`` (statt ``notify_all``) auftreten könnte.
 
     .. code:: java
-      :class: far-smaller copy-to-clipboard
+      :class: copy-to-clipboard
 
-      bb = BoundedBuffer(1); 
+      bb = BoundedBuffer(1);
       p1 = Thread(target=lambda: bb.put(1)); p2 = Thread(target=lambda: bb.put(2))
       c1 = Thread(target=lambda: bb.get()); c2 = Thread(target=lambda: bb.get())
       c1.start(); c2.start(); p1.start(); p2.start();
 
     .. csv-table::
-      :class: far-smaller incremental no-table-borders
-      :header: "","Aktionen" , "(Änderung des) Zustand(s) des Buffers", "Auf die Sperre (*Lock*) wartend", "An der Bedingung wartend"
+      :class: incremental no-table-borders
+      :header: " ", "Aktionen", "(Änderung des) Zustand(s) des Buffers", "Auf die Sperre (*Lock*) wartend", "An der Bedingung wartend"
 
-      1, "**c1:bb.get()**, :raw-html:`<br>`
-      c2:bb.get(), p1:bb.put(), p2:bb.put()", empty, "{c2,p1,p2}", {c1}
+      1, "**c1:bb.get()**, :raw-html:`<br>` c2:bb.get(), p1:bb.put(), p2:bb.put()", empty, "{c2,p1,p2}", {c1}
       2,"**c2:bb.get()**",empty,"{p1,p2}","{c1,c2}"
       3,"**p1:bb.put(1)**",empty → not empty,"{p2,c1}",{c2}
       4,"**p2:bb.put(2)**",not empty,{c1},"{c2,p2}"
@@ -771,7 +759,7 @@ Beispiel: Synchronisation mit nur einer Bedingung
 
 .. supplemental::
 
-  In Schritt 5 wurde (z. B.)- aufgrund des Aufrufs von ``notify`` durch ``c1`` - der Thread ``c2`` aufgeweckt - anstatt des Threads ``p2``. Der aufgeweckte Thread ``c2`` prüft die Bedingung (Schritt 6) und stellt fest, dass der Puffer leer ist. Er geht wieder in den Wartezustand. Jetzt warten sowohl ein Thread, der ein Wert schreiben möchte, als auch ein Thread, der einen Wert lesen möchte. 
+  In Schritt 5 wurde (z. B.)- aufgrund des Aufrufs von ``notify`` durch ``c1`` - der Thread ``c2`` aufgeweckt - anstatt des Threads ``p2``. Der aufgeweckte Thread ``c2`` prüft die Bedingung (Schritt 6) und stellt fest, dass der Puffer leer ist. Er geht wieder in den Wartezustand. Jetzt warten sowohl ein Thread, der ein Wert schreiben möchte, als auch ein Thread, der einen Wert lesen möchte.
 
 
 
@@ -782,13 +770,13 @@ Beispiel: Synchronisation mit nur einer Bedingung
 .. class:: impressive incremental
 
 - Code, der eine Sperre hält (:eng:`Lock`) sollte so kurz (zeitlich) wie möglich gehalten werden.
-  
+
   (D. h. der Code zwischen ``Lock.acquire()`` und ``Lock.release()``)
 - Verschachtelte Anforderungen von Sperren sollten vermieden werden, da die äußere Sperre nicht freigegeben wird, wenn man an der Inneren wartet. Dies kann leicht zum Auftreten eines Deadlocks führen.
 
 
 
-.. class:: no-title center-child-elements
+.. class:: no-title center-content
 
 Ressourcen immer in der gleichen Reihenfolge sperren
 ------------------------------------------------------------------
@@ -814,7 +802,7 @@ Alternative Synchronisationsmechanismen
   *Sperren* (d. h. ``Lock``\ s) in Verbindung mit Bedigungsvariablen sind nur eine Möglichkeit, um die Synchronisation von Threads zu ermöglichen. Es ist jedoch ein sehr häufiges Modell. (Alternativen sind zum Beispiel: *Semaphoren*, *Nachrichtenübermittlung*)
 
 
- 
+
 
 
 
@@ -831,12 +819,12 @@ Thread-lokaler Speicher
 Thread-lokaler Speicher (``threading.local()``) ermöglicht es, dass jeder Thread eine lokale Kopie einer bestimmten Variable hat
 
 
-.. container:: two-columns
+.. grid::
 
-  .. container:: column
+  .. cell:: width-50
 
     .. code:: python
-      :class: far-far-smaller
+      :class: copy-to-clipboard
 
       import time
       import threading
@@ -851,10 +839,10 @@ Thread-lokaler Speicher (``threading.local()``) ermöglicht es, dass jeder Threa
               local_data.value += v
               time.sleep(1)
 
-  .. container:: column incremental
+  .. cell:: width-50 incremental
 
     .. code:: python
-      :class: far-far-smaller
+      :class: copy-to-clipboard
 
       # "main" thread
       t1 = threading.Thread(target=f, args=(1,))
@@ -873,7 +861,6 @@ Thread-lokaler Speicher (``threading.local()``) ermöglicht es, dass jeder Threa
 .. supplemental::
 
   .. code:: bash
-    :class: far-smaller
 
     $ ./ThreadLocal.py
     0
@@ -886,11 +873,13 @@ Thread-lokaler Speicher (``threading.local()``) ermöglicht es, dass jeder Threa
     Stop set to True. Waiting for threads to finish.
 
 
+
 Reentrant Locks
 --------------------------------------------------------------
 
 - *Reentrant Lock*\ s (``RLock``) sind Sperren, die von demselben Thread mehrmals erworben werden können.
 - Implementierungen: ``threading.RLock`` oder ``multiprocessing.RLock``.
+
 
 
 Thread-/ProcessPools
@@ -900,14 +889,14 @@ Thread-/ProcessPools
 - Beide erben von ``concurrent.futures.Executor``; zentrale Methoden:
 
   - ``submit(fn, *args, **kwargs)``: Fügt eine Aufgabe hinzu und gibt ein ``Future``-Objekt zurück.
-  
+
     Auf Futures sind die Hauptfunktionen:
 
     - ``done()``: Gibt zurück, ob die Aufgabe abgeschlossen ist.
     - ``result(timeout=None)``: Gibt das Ergebnis zurück, wenn die Aufgabe abgeschlossen ist; blockiert ggf..
   - ``map(func, *iterables, timeout=None, chunksize=1)``: Führt die Funktion für jedes Element in ``iterables`` aus und gibt die Ergebnisse in der Reihenfolge zurück, in der sie abgeschlossen wurden.
 
-  
+
 
 
 .. class:: new-subsection
@@ -916,19 +905,20 @@ Nachrichtenaustausch
 -------------------------------------------------------------
 
 
-Motivation: Nachrichtenaustausch 
+
+Motivation: Nachrichtenaustausch
 -------------------------------------------------------------
 
-.. class:: incremental
+.. class:: incremental-list
 
 - Locks haben das große Potential eigentlich nebenläufige Programme effektiv zu serialisieren (und zu verlangsamen).
 
 - Prozesse nutzen keinen gemeinsamen Adressraum.
-  
+
 - Eine Möglichkeit auf Locks weitgehend zu verzichten ist der Nachrichtenaustausch.
 
 
-.. supplemental:: 
+.. supplemental::
 
   Generell ist der Austausch zwischen Prozessen über ``Queue``\ s, ``Pipe``\ s und (explizitem) ``SharedMemory`` möglich; d. h. in diesen Fällen ist Inter-Prozess-Kommunikation (*Interprocess Communication (IPC)*) notwendig.
 
@@ -944,7 +934,7 @@ Die grundlegenden Methoden von ``Queue``\ s sind:
 .. class:: list-with-explanations
 
 - ``Queue(maxsize=0)``
-   
+
   Erzeugt eine neue Queue-Instanz welche ``maxsize``  Elemente speichern kann. 0 bedeutet, dass die Queue unendlich groß ist.
 
   (Pythons ``Queue`` realisiert einen *Bounded Buffer*.)
@@ -964,63 +954,64 @@ Die grundlegenden Methoden von ``Queue``\ s sind:
 Beispiel - Verwendung von ``Queue``\ s für Thread-Sichere Konsolenausgabe
 -----------------------------------------------------------------------------
 
-.. container:: two-columns
+.. grid::
 
-  .. container:: column 
+  .. cell:: width-50
 
     .. rubric:: Setup
 
     .. code:: python
-      :class: copy-to-clipboard far-far-smaller
+      :class: copy-to-clipboard
+      :number-lines:
 
       import threading
       from queue import Queue
 
       print_queue = Queue()
 
-      def ts_print(msg): 
+      def ts_print(msg):
           print_queue.put(msg)
 
       def print_handler():
           while True:
               msg = print_queue.get()
               # there will ever be only one thread
-              print(msg) 
+              print(msg)
               print_queue.task_done()
 
-  .. container:: column incremental
+  .. cell:: width-50 incremental
 
     .. rubric:: Verwendung
 
     .. code:: python
-      :class: copy-to-clipboard far-far-smaller
+      :class: copy-to-clipboard
 
       Thread(target=print_handler,daemon=True).\
         start()
       ⁞
       # <thread 1:> ts_print("Hello")
       ⁞
-      # <thread 2:> ts_print("World") 
+      # <thread 2:> ts_print("World")
       ⁞
       print_queue.join()
 
 .. supplemental::
 
-  .. rubric:: Hinweise
+  .. hint::
 
-  - **nur ein Thread darf die print_queue abarbeiten**
-  - **wir müssen überall ``ts_print`` verwenden**
+    - **nur ein Thread darf die print_queue abarbeiten**
+    - **wir müssen überall ``ts_print`` verwenden**
 
 
 Verwendung von ``Queue``\ s für die Kommunikation zwischen Prozessen
 ------------------------------------------------------------------------
 
-.. stack::
+.. deck::
 
-  .. layer::
+  .. card::
 
     .. code:: python
-      :class: far-far-smaller copy-to-clipboard 
+      :class: copy-to-clipboard
       :number-lines:
 
       from random import randint
@@ -1041,25 +1032,25 @@ Verwendung von ``Queue``\ s für die Kommunikation zwischen Prozessen
               print_queue.put(msg)
               ip_queue.task_done()
 
-  .. layer:: incremental  
+  .. card::
 
     .. code:: python
-      :class: far-far-smaller copy-to-clipboard 
+      :class: copy-to-clipboard
       :number-lines:
 
       def f(c_to_p_ip_queue):
           time.sleep(randint(1, 3)) # just some fuzzing
 
           c_to_p_ip_queue.put("I'm alive: " + current_process().name)
-          
+
           time.sleep(randint(1, 3)) # just some fuzzing
-          
+
           c_to_p_ip_queue.put("Hell World from " + current_process().name)
 
-  .. layer:: incremental  
+  .. card::
 
     .. code:: python
-      :class: far-far-smaller copy-to-clipboard 
+      :class: copy-to-clipboard
       :number-lines:
 
       if __name__ == "__main__":
@@ -1084,11 +1075,11 @@ Verwendung von ``Queue``\ s für die Kommunikation zwischen Prozessen
 
 .. class:: new-subsection
 
-Thread Safety 
+Thread Safety
 ---------------------------------------------------------------------
 
 .. container:: footer-left tiny minor
-  
+
   :ger:`Threadsicherheit`
 
 
@@ -1100,29 +1091,28 @@ Thread Safety - Voraussetzung
 
 Damit eine Klasse thread-sicher ist, muss sie sich in einer single-threaded Umgebung korrekt verhalten.
 
-.. stack:: smaller
+.. deck::
 
-  .. layer:: 
-  
+  .. card::
+
     D. h. wenn eine Klasse korrekt implementiert ist, dann sollte keine Abfolge von Operationen (Lesen oder Schreiben von öffentlichen Feldern und Aufrufen von öffentlichen Methoden) auf Objekten dieser Klasse in der Lage sein:
 
-      - das Objekt in einen ungültigen Zustand versetzen, 
-      - das Objekt in einem ungültigen Zustand zu beobachten oder 
+      - das Objekt in einen ungültigen Zustand versetzen,
+      - das Objekt in einem ungültigen Zustand zu beobachten oder
       - eine der Invarianten, Vorbedingungen oder Nachbedingungen der Klasse verletzen.
 
-  .. layer:: incremental
+  .. card::
 
-    Die Klasse muss das korrekte Verhalten auch dann aufweisen, 
-    wenn auf sie von mehreren Threads aus zugegriffen wird. 
+    Die Klasse muss das korrekte Verhalten auch dann aufweisen,
+    wenn auf sie von mehreren Threads aus zugegriffen wird.
 
-    - Unabhängig vom *Scheduling* oder der Verschachtelung der Ausführung dieser Threads durch die Laufzeitumgebung, 
+    - Unabhängig vom *Scheduling* oder der Verschachtelung der Ausführung dieser Threads durch die Laufzeitumgebung,
     - Ohne zusätzliche Synchronisierung auf Seiten des aufrufenden Codes.
 
 
-.. container:: incremental rounded-corners dhbw-light-gray-background padding-1em margin-top-1em smaller 
+.. container:: accentuate
 
     Dies hat zur Folge, dass Operationen auf einem thread-sicheren Objekt für alle Threads so erscheinen als ob die Operationen in einer festen, global konsistenten Reihenfolge erfolgen würden.
-
 
 .. supplemental::
 
@@ -1130,50 +1120,40 @@ Damit eine Klasse thread-sicher ist, muss sie sich in einer single-threaded Umge
 
 
 
-.. class:: smaller
-
 Thread Safety Level
 ------------------------------------------------------------
 
-:Immutable `Unveränderlich`:ger:: Die Objekte sind konstant und können nicht geändert werden.
+.. class:: incremental-list
 
-.. class:: incremental
+:Immutable `Unveränderlich`:ger:: Die Objekte sind konstant und können nicht geändert werden.
 
 :Thread-sicher: Die Objekte sind veränderbar, unterstützen aber nebenläufigen Zugriff, da die Methoden entsprechende Sperren und Bedingungen verwenden.
 
-.. class:: incremental
-
 :Bedingt Thread-sicher: All solche Objekte bei denen jede einzelne Operation thread-sicher ist, aber bestimmte Sequenzen von Operationen eine externe Synchronisierung erfordern können.
-
-.. class:: incremental
 
 :Thread-kompatibel: Alle Objekte die keinerlei Synchronisierung aufweisen. Der Aufrufer kann die Synchronisierung jedoch ggf. extern übernehmen.
 
-.. class:: incremental
-
 :Thread-hostile „Thread-schädlich“: Objekte, die nicht thread-sicher sind und auch nicht thread-sicher gemacht werden können, da sie zum Beispiel globalen Zustand manipulieren.
-
 
 .. supplemental::
 
-  Ein Beispiel bzgl. *bedingt Thread-sicher* wäre die Verwendung eines Iterators, bei dem 
+  Ein Beispiel bzgl. *bedingt Thread-sicher* wäre die Verwendung eines Iterators, bei dem
   die Methoden für sich genommen thread-sicher sind, aber die Iteration über die Elemente als ganzes zusätzliche Synchronisation erfordert, damit die Ergebnisse konsistent sind.
 
-  Ein Beispiel für eine *thread-schädliche* Klasse (Code) wäre eine Klasse, die auf eine globale Variable zugreift bzw. globalen Zustand ändert, der von mehreren Threads verwendet wird, ohne dass eine Synchronisierung stattfindet. 
+  Ein Beispiel für eine *thread-schädliche* Klasse (Code) wäre eine Klasse, die auf eine globale Variable zugreift bzw. globalen Zustand ändert, der von mehreren Threads verwendet wird, ohne dass eine Synchronisierung stattfindet.
 
 
 
-.. class:: no-title center-child-elements transition-move-up
+.. class:: no-title center-content transition-move-up
 
 Concurrency Done Wrong
 ---------------------------
 
-.. admonition:: Warnung
-  :class: warning
+.. warning::
 
   Wenn Nebenläufigkeit nicht richtig umgesetzt wird, dann kann dies nicht nur zu schwer zu findenden Fehlern führen sondern auch **zu langsam(er)en Programmen**.
 
-  .. incremental::
+  .. container:: incremental
 
     Im Allgemeinen sollte Parallelisierung auf *höchstmöglicher Ebene* erfolgen.
 
@@ -1182,63 +1162,61 @@ Concurrency Done Wrong
 Threads und Prozesse nicht terminieren
 --------------------------------------------------------------
 
-.. admonition:: Warnung
-  :class: warning
+.. warning::
 
   Auch wenn es technisch möglich ist Threads und Prozesse explizit zu terminieren (z. B. durch ``Process.terminate()``) so sollte man darauf verzichten.
 
 
-.. supplemental:: 
+.. supplemental::
 
   Das Hauptproblem sind nicht freigegebene Locks und Ressourcen, die sich in einem inkonsistenten Zustand befinden können.
 
-  Auch in anderen Programmiersprachen sollte man niemals Threads oder Prozesse explizit terminieren. 
+  Auch in anderen Programmiersprachen sollte man niemals Threads oder Prozesse explizit terminieren.
 
 
 
-.. class:: no-title center-child-elements transition-move-up
+.. class:: no-title center-content transition-move-up
 
 Starte immer mit einer *Single-threaded implementation*
 ---------------------------------------------------------
 
-.. admonition:: Warnung
-  :class: warning
+.. warning::
 
   Nebenläufigkeit macht *nichts* einfacher! Entwickle und teste immer erst eine single-threaded Version des Programms.
 
 
 
-
-
-
-.. class:: integrated-exercise
+.. class:: exercises
 
 Übung
 ---------------------
 
-.. container:: far-smaller scrollable
-    
+.. story::
+
   Implementieren Sie einen einfachen *DelayedBuffer*, der es ermöglicht Aufgaben (d. h. Objekte vom Typ ``Callable``) erst nach einer bestimmten Zeit auszuführen. Die Klasse muss zwei Funktionen zur Verfügung stellen:
 
   :``submit(self, delay, fn, *args, **kwargs)``: Die Funktion ``fn`` wird nach ``delay`` Sekunden ausgeführt wobei delay vom Typ Float ist. ``args`` und ``kwargs`` sind die Argumente, die an ``fn`` übergeben werden.
   :``join(self)``: Wartet bis alle Aufgaben abgearbeitet wurden.
 
-  Im folgenden sehen Sie eine mögliche Verwendung des Puffers:
+  .. container:: incremental
 
-  .. code:: python
-    :class: smaller copy-to-clipboard
+    Im Folgenden sehen Sie eine mögliche Verwendung des Puffers:
 
-    buffer = DelayedBuffer()
-    buffer.submit(100 / 1000, ts_print, "Hello ", **{"end": "", "flush": True})
-    buffer.submit(1000 / 1000, ts_print, "World!")
-    buffer.submit(500 / 1000, ts_print, "of the ", **{"end": "", "flush": True})
-    buffer.submit(200 / 1000, ts_print, "from ", **{"end": "", "flush": True})
-    buffer.submit(300 / 1000, ts_print, "the other side ", **{"end": "", "flush": True})
-    # ggf. await buffer.join() im Falle von Koroutinen
-    buffer.join()
-    print("Done.")
+    .. code:: python
+        :class: copy-to-clipboard
+
+        buffer = DelayedBuffer()
+        buffer.submit(100 / 1000, ts_print, "Hello ", **{"end": "", "flush": True})
+        buffer.submit(1000 / 1000, ts_print, "World!")
+        buffer.submit(500 / 1000, ts_print, "of the ", **{"end": "", "flush": True})
+        buffer.submit(200 / 1000, ts_print, "from ", **{"end": "", "flush": True})
+        buffer.submit(300 / 1000, ts_print, "the other side ", **{"end": "", "flush": True})
+        # ggf. await buffer.join() im Falle von Koroutinen
+        buffer.join()
+        print("Done.")
 
   .. exercise:: Implementation mit Threads
+    :class: incremental
 
     Implementieren Sie die Klasse ``DelayedBuffer`` mit Hilfe von Threads (und ggf. ``Queue``\ s bzw. Locks).
 
@@ -1278,7 +1256,7 @@ Starte immer mit einer *Single-threaded implementation*
                         ts_print(f"Error in {fn}: {e}")
                     finally:
                         self.fn_queue.task_done()
-                    
+
                 self.fn_queue.put((fn, args, kwargs))
                 Thread(target=delayed_fn).start()
 
@@ -1298,6 +1276,7 @@ Starte immer mit einer *Single-threaded implementation*
 
 
   .. exercise:: Implementation mit Threadpool
+    :class: incremental
 
     Implementieren Sie die Klasse ``DelayedBuffer`` mit Hilfe eines ``concurrent.futures.ThreadPool``\ s (und ggf. ``Queue``\ s bzw. Locks).
 
@@ -1334,7 +1313,7 @@ Starte immer mit einer *Single-threaded implementation*
                         fn(*args, **kwargs)
                     except Exception as e:
                         ts_print(f"Error in {fn}: {e}")
-                    
+
                 self.thread_pool.submit(delayed_fn, fn, *args, **kwargs)
 
             def join(self):
@@ -1352,6 +1331,7 @@ Starte immer mit einer *Single-threaded implementation*
             print("Done.")
 
   .. exercise:: Implementation mit Koroutinen
+    :class: incremental
 
     Implementieren Sie die Klasse ``DelayedBuffer`` mit Hilfe von Koroutinen (und ggf. ``asyncio.Queue``\ s).
 
@@ -1362,8 +1342,6 @@ Starte immer mit einer *Single-threaded implementation*
 
       .. code:: python
         :class: copy-to-clipboard
- 
-
 
         from asyncio import Queue
         import asyncio
@@ -1402,19 +1380,19 @@ Starte immer mit einer *Single-threaded implementation*
         async def main():
             buffer = DelayedBuffer()
             buffer.submit(
-              100 / 1000, 
+              100 / 1000,
               ts_print, "Hello ", **{"end": "", "flush": True})
             buffer.submit(
-              1000 / 1000, 
+              1000 / 1000,
               ts_print, "World!")
             buffer.submit(
-              500 / 1000, 
+              500 / 1000,
               ts_print, "of the ", **{"end": "", "flush": True})
             buffer.submit(
-              200 / 1000, 
+              200 / 1000,
               ts_print, "from ", **{"end": "", "flush": True})
             buffer.submit(
-              300 / 1000, 
+              300 / 1000,
               ts_print, "the other side ", **{"end": "", "flush": True})
             await buffer.join()
             print("Done.")

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xl="http://www.w3.org/1999/xlink" xmlns:dc="http://purl.org/dc/elements/1.1/" version="1.1" viewBox="3 119 537 285" width="537" height="285">
+  <defs>
+    <filter id="Shadow" filterUnits="userSpaceOnUse" x="-50.7" y="90.5">
+      <feGaussianBlur in="SourceAlpha" result="blur" stdDeviation="1.308"/>
+      <feOffset in="blur" result="offset" dx="2" dy="2"/>
+      <feFlood flood-color="black" flood-opacity=".5" result="flood"/>
+      <feComposite in="flood" in2="offset" operator="in" result="color"/>
+      <feMerge>
+        <feMergeNode in="color"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <font-face font-family="Helvetica" font-size="16" units-per-em="1000" underline-position="-75.68359" underline-thickness="49.316406" slope="0" x-height="522.9492" cap-height="717.28516" ascent="770.0195" descent="-229.98047" font-weight="400">
+      <font-face-src>
+        <font-face-name name="Helvetica"/>
+      </font-face-src>
+    </font-face>
+    <marker orient="auto" overflow="visible" markerUnits="strokeWidth" id="FilledArrow_Marker" stroke-linejoin="miter" stroke-miterlimit="10" viewBox="-1 -4 10 8" markerWidth="10" markerHeight="8" color="black">
+      <g>
+        <path d="M 8 0 L 0 -3 L 0 3 Z" fill="currentColor" stroke="currentColor" stroke-width="1"/>
+      </g>
+    </marker>
+    <font-face font-family="Menlo" font-size="7" panose-1="2 11 6 9 3 8 4 2 2 4" units-per-em="1000" underline-position="-63.47656" underline-thickness="43.94531" slope="0" x-height="546.875" cap-height="729.0039" ascent="928.2227" descent="-235.83984" font-weight="400">
+      <font-face-src>
+        <font-face-name name="Menlo-Regular"/>
+      </font-face-src>
+    </font-face>
+    <font-face font-family="Helvetica" font-size="13" units-per-em="1000" underline-position="-75.68359" underline-thickness="49.316406" slope="0" x-height="522.9492" cap-height="717.28516" ascent="770.0195" descent="-229.98047" font-weight="400">
+      <font-face-src>
+        <font-face-name name="Helvetica"/>
+      </font-face-src>
+    </font-face>
+  </defs>
+  <metadata> Produced by OmniGraffle 8.0\n2024-06-12 13:49:42 +0000</metadata>
+  <g id="threads" stroke="none" stroke-opacity="1" fill="none" stroke-dasharray="none" fill-opacity="1">
+    <title>threads</title>
+    <g id="threads_coroutines">
+      <title>coroutines</title>
+      <g id="Graphic_148" filter="url(#Shadow)">
+        <path d="M 331.58 120.11 L 412.64 120.11 C 415.9537 120.11 418.64 122.79629 418.64 126.11 L 418.64 278.61 C 418.64 281.9237 415.9537 284.61 412.64 284.61 L 331.58 284.61 C 328.2663 284.61 325.58 281.9237 325.58 278.61 L 325.58 126.11 C 325.58 122.79629 328.2663 120.11 331.58 120.11 Z" fill="#b1001c"/>
+        <text transform="translate(330.58 125.11)" fill="white">
+          <tspan font-family="Helvetica" font-size="16" font-weight="400" fill="white" x="2.8424988" y="15" xml:space="preserve">Coroutines</tspan>
+        </text>
+      </g>
+      <g id="Graphic_147">
+        <rect x="338.485" y="155.61" width="11.5" height="46.948" fill="#00bfc0"/>
+        <rect x="338.485" y="155.61" width="11.5" height="46.948" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_146">
+        <rect x="394.235" y="156.61" width="11.5" height="46.948" fill="#00bfc0"/>
+        <rect x="394.235" y="156.61" width="11.5" height="46.948" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_145">
+        <rect x="366.36" y="156.61" width="11.5" height="46.948" fill="#00bfc0"/>
+        <rect x="366.36" y="156.61" width="11.5" height="46.948" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Line_144">
+        <line x1="343.61" y1="203.11" x2="362.70397" y2="232.40296" marker-end="url(#FilledArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Line_143">
+        <line x1="372.11" y1="204.11" x2="372.11" y2="230.85385" marker-end="url(#FilledArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Line_142">
+        <line x1="372.61" y1="279.01" x2="372.61" y2="317.21" marker-end="url(#FilledArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Line_141">
+        <line x1="399.485" y1="204.11" x2="383.3103" y2="232.12314" marker-end="url(#FilledArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_140">
+        <rect x="366.86" y="240.75385" width="11.5" height="38.256148" fill="#dadada"/>
+        <rect x="366.86" y="240.75385" width="11.5" height="38.256148" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_139">
+        <text transform="translate(379.78 246.38193)" fill="white">
+          <tspan font-family="Menlo" font-size="7" font-weight="400" fill="white" x="0" y="6" xml:space="preserve">async -  </tspan>
+        </text>
+      </g>
+      <g id="Graphic_157">
+        <text transform="translate(29.10235 255.86198)" fill="#00bfc0">
+          <tspan font-family="Helvetica" font-size="13" font-weight="400" fill="#00bfc0" x="0" y="13" xml:space="preserve">Fibre/</tspan>
+          <tspan font-family="Helvetica" font-size="13" font-weight="400" fill="#00bfc0" x="0" y="29" xml:space="preserve">Coroutine</tspan>
+        </text>
+      </g>
+      <g id="Graphic_156">
+        <rect x="12.60235" y="248.38798" width="11.5" height="46.948" fill="#00bfc0"/>
+        <rect x="12.60235" y="248.38798" width="11.5" height="46.948" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_159">
+        <text transform="translate(379.78 256)" fill="white">
+          <tspan font-family="Menlo" font-size="7" font-weight="400" fill="white" x="0" y="6" xml:space="preserve">await    </tspan>
+        </text>
+      </g>
+      <g id="Graphic_160">
+        <text transform="translate(379.78 266.01)" fill="white">
+          <tspan font-family="Menlo" font-size="7" font-weight="400" fill="white" x="0" y="6" xml:space="preserve">framework </tspan>
+        </text>
+      </g>
+    </g>
+  </g>
+</svg>

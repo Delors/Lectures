@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xl="http://www.w3.org/1999/xlink" xmlns:dc="http://purl.org/dc/elements/1.1/" viewBox="3 119 537 285" width="537" height="285">
+  <defs>
+    <filter id="Shadow" filterUnits="userSpaceOnUse" x="-50.7" y="90.5">
+      <feGaussianBlur in="SourceAlpha" result="blur" stdDeviation="1.308"/>
+      <feOffset in="blur" result="offset" dx="2" dy="2"/>
+      <feFlood flood-color="black" flood-opacity=".5" result="flood"/>
+      <feComposite in="flood" in2="offset" operator="in" result="color"/>
+      <feMerge>
+        <feMergeNode in="color"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <font-face font-family="Helvetica" font-size="8" units-per-em="1000" underline-position="-75.68359" underline-thickness="49.316406" slope="0" x-height="522.9492" cap-height="717.28516" ascent="770.0195" descent="-229.98047" font-weight="400">
+      <font-face-src>
+        <font-face-name name="Helvetica"/>
+      </font-face-src>
+    </font-face>
+    <font-face font-family="Helvetica" font-size="16" units-per-em="1000" underline-position="-75.68359" underline-thickness="49.316406" slope="0" x-height="522.9492" cap-height="717.28516" ascent="770.0195" descent="-229.98047" font-weight="400">
+      <font-face-src>
+        <font-face-name name="Helvetica"/>
+      </font-face-src>
+    </font-face>
+    <marker orient="auto" overflow="visible" markerUnits="strokeWidth" id="FilledArrow_Marker" stroke-linejoin="miter" stroke-miterlimit="10" viewBox="-1 -4 10 8" markerWidth="10" markerHeight="8" color="black">
+      <g>
+        <path d="M 8 0 L 0 -3 L 0 3 Z" fill="currentColor" stroke="currentColor" stroke-width="1"/>
+      </g>
+    </marker>
+  </defs>
+  <metadata> Produced by OmniGraffle 8.0\n2024-05-24 11:42:54 +0000</metadata>
+  <g id="threads" stroke="none" fill-opacity="1" stroke-opacity="1" fill="none" stroke-dasharray="none">
+    <title>threads</title>
+    <g id="threads_threads_new">
+      <title>threads_new</title>
+      <g id="Graphic_155" filter="url(#Shadow)">
+        <path d="M 446.31 120.14 L 517.91 120.14 C 521.2237 120.14 523.91 122.82629 523.91 126.14 L 523.91 278.64 C 523.91 281.9537 521.2237 284.64 517.91 284.64 L 446.31 284.64 C 442.9963 284.64 440.31 281.9537 440.31 278.64 L 440.31 126.14 C 440.31 122.82629 442.9963 120.14 446.31 120.14 Z" fill="#b1001c"/>
+        <text transform="translate(445.31 125.14)" fill="white">
+          <tspan font-family="Helvetica" font-size="8" font-weight="400" fill="white" x="6.003128" y="8" xml:space="preserve">Python &gt; 3.12 (?)</tspan>
+          <tspan font-family="Helvetica" font-size="16" font-weight="400" fill="white" x="7.452347" y="25" xml:space="preserve">Threads</tspan>
+        </text>
+      </g>
+      <g id="Graphic_154">
+        <rect x="451.86" y="155.64" width="11.5" height="104.5" fill="#dadada"/>
+        <rect x="451.86" y="155.64" width="11.5" height="104.5" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_153">
+        <rect x="476.36" y="155.64" width="11.5" height="104.5" fill="#dadada"/>
+        <rect x="476.36" y="155.64" width="11.5" height="104.5" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_152">
+        <rect x="500.86" y="155.64" width="11.5" height="104.5" fill="#dadada"/>
+        <rect x="500.86" y="155.64" width="11.5" height="104.5" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Line_151">
+        <line x1="457.11" y1="260.14" x2="457.11" y2="317.21" marker-end="url(#FilledArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Line_150">
+        <line x1="481.61" y1="260.14" x2="481.61" y2="317.21" marker-end="url(#FilledArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Line_149">
+        <line x1="506.11" y1="260.14" x2="506.11" y2="317.21" marker-end="url(#FilledArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+    </g>
+  </g>
+</svg>
