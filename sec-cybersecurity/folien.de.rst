@@ -16,7 +16,7 @@ Cybersecurity
 
 :Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
 :Kontakt: michael.eichberg@dhbw.de
-:Version: 2.7
+:Version: 2.8
 
 .. supplemental::
 
@@ -240,7 +240,6 @@ Neuigkeiten aus der Welt der IT Sicherheit
             The State Department said Thursday it is offering an up to $5 million reward for information about the conspirators and others associated with the two “North Korean front companies.”
 
             -- 12.12.2024 - `CNBC <https://www.cnbc.com/2024/12/12/north-koreans-charged-identity-theft-extortion-conspiracy-doj.html>`__
-
 
 
 
@@ -520,6 +519,13 @@ Ausgewählte Social-Engineering Angriffe
 
         *Spear phishing* ist Phishing, bei der der Angreifer auf eine bestimmte Zielgruppe oder sogar eine einzelne Person abzielt.
 
+        .. supplemental::
+
+            .. image:: images/phishing-mail-fake-fedex.png
+                :alt: Typische „FedEx“ Phishing Email
+                :align: center
+                :class: highdpi
+
 
     :Smishing:
 
@@ -535,6 +541,10 @@ Ausgewählte Social-Engineering Angriffe
     :Quishing/QR phishing:
 
         Phishing mit Hilfe von QR Codes.
+
+        .. supplemental::
+
+            Beim Quishing/QR Phishing erstellt der Angreifer einen QR Code, der auf eine gefälschte Webseite führt. Der QR Code wird dann z. B. auf einem Plakat angebracht oder zum Beispiel an einer Säule zum Kaufen von Fahrkarten, um möglichst viele Personen glaubhaft zu erreichen.
 
     :Whaling:
 
@@ -574,8 +584,17 @@ Ausgewählte Social-Engineering Angriffe
 
         Sammlung von Zugangsdaten, die durch Sicherheitslücken in Systemen oder durch Phishing erlangt wurden.
 
+        .. supplemental::
+
+            Credential Harvesting war insbesondere in der Anfangszeit von Github und Bitbucket verbreitet. Es wurden häufig Zugangsdaten und Zertifikate in öffentlichen Repositories gefunden, da die Nutzer diese im Quellcode hinterlegt hatten oder sogar als Ressourcen direkt eingebunden hatten.
+
+
     :Hoax:
         Eine bewusste Falschmeldung, die Menschen dazu veranlasst etwas falsches zu glauben.
+
+        .. supplemental::
+
+            Ein Beispiel eines nicht-harmlosen Streichs (Hoax) ist die Falschmeldung vom 1. April 2003, dass Bill Gates gestorben sei. Diese Falschmeldung wurde von vielen Menschen geglaubt und hatte relevanten Einfluss auf den Aktienmarkt.
 
     :Impersonation oder Pretexting:
         Vorgabe einer falschen Identität (z. B. als Mitarbeiter des IT-Supports); d. h. der Angreifer gibt sich persönlich als jemand anderes aus, um an Informationen zu gelangen und nutzt dafür keine elektronischen Hilfsmittel.
@@ -595,26 +614,17 @@ Ausgewählte Social-Engineering Angriffe
     :Typo Squatting:
         Ausnutzen von Tippfehlern durch das Registrieren einer Domain, die der Domain eines Zielunternehmens ähnelt, um dann Besucher der Webseite auf eine gefälschte Webseite zu leiten. (z. B. `www.gooogle.com`)
 
+    :Dangling DNS/Subdomain Takeover:
+        Angreifer registrieren alte Domains, die von Firmen (temporär genutzt) wurden, in der Hoffnung, dass es noch (relevanten) Datenverkehr mit diesen Domains gibt, da möglicherweise nicht aller Code/alle Konfigurationen entsprechend umgestellt wurden. Zum Beispiel auch im Zusammenhang mit Subdomains bei Diensten wie AWS oder GitHub.
 
-.. supplemental::
+    :Slopsquatting:
+        Implementation von Sofwarepaketen, die es (bisher) *nicht* gibt, die jedoch von bestimmten LLMs häufig im generierten Code eingebunden werden. Die Pakete werden dann implementiert inkl. von den Nutzern ungewünschter Funktionalität.
 
-    .. rubric:: Quishing/QR phishing:
+        .. supplemental::
 
-    D. h. der Angreifer erstellt einen QR Code, der auf eine gefälschte Webseite führt. Der QR Code wird dann z. B. auf einem Plakat angebracht oder zum Beispiel an einer Säule zum Kaufen von Fahrkarten, um möglichst viele Personen glaubhaft zu erreichen.
+            Slopsquatting ist (Stand Anfang 2025) deswegen möglich, da LLMs beim Generieren von Code häufiger auf nicht-existierende Pakete verweisen und diese im generierten Code importieren. Welche Paket importiert werden ist pro LLM relativ stabil aber über LLM-Grenzen hinweg sehr unterschiedlich.
 
-    .. rubric:: HOAX
 
-    Ein Beispiel eines nicht-harmlosen Streichs (Hoax) ist die Falschmeldung vom 1. April 2003, dass Bill Gates gestorben sei. Diese Falschmeldung wurde von vielen Menschen geglaubt und hatte relevanten Einfluss auf den Aktienmarkt.
-
-    .. rubric:: Credential harvesting
-
-    In der Anfangszeit von Github und Bitbucket wurden häufig Zugangsdaten und Zertifikate in öffentlichen Repositories gefunden, da die Nutzer diese im Quellcode hinterlegt hatten oder sogar als Ressourcen direkt eingebunden hatten.
-
-    .. rubric:: Typische Phishing E-Mail
-
-    .. image:: images/phishing-mail-fake-fedex.png
-        :align: center
-        :width: 80%
 
 
 
@@ -682,6 +692,15 @@ Post-Quantum Cryptography (PQC) Einführen
 
 
 
+Ergänzende Quellen
+----------------------
+
+.. rubric:: Podcasts
+
+- `Passwort - Der Podcast von heise security <https://www.heise.de/thema/Passwort_Podcast>`__
+
+
+
 .. class:: center-content
 
 Quantencomputer - Bedrohungsbewertung
@@ -698,12 +717,13 @@ Quantencomputer - Bedrohungsbewertung
     -- 27.11.2024 `Securing Tomorrow, Today: Transitioning to PQC <https://www.bsi.bund.de/SharedDocs/Downloads/EN/BSI/Crypto/PQC-joint-statement.pdf?__blob=publicationFile&v=3>`__
 
 
+
 .. class:: new-subsection transition-scale
 
 Die NIS 2 Richtlinie
 -------------------------------------------------------------
 
-.. container:: far-far-smaller minor margin-left-1em margin-right-1em margin-top-1em
+.. container::  peripheral
 
     `Directive (EU) 2022/2555 of the European Parliament and of the Council of 14 December 2022 on measures for a high common level of cybersecurity across the Union, amending Regulation (EU) No 910/2014 and Directive (EU) 2018/1972, and repealing Directive (EU) 2016/1148 (NIS 2 Directive) <https://eur-lex.europa.eu/legal-content/DE/TXT/HTML/?uri=CELEX:32022L2555#d1e40-80-1>`__
 
