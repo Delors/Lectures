@@ -5,13 +5,13 @@
     :description lang=de: Fortgeschrittene Angewandte IT Sicherheit
     :id: lecture-security-java_reverse_engineering
     :first-slide: last-viewed
-    :master-password: WirklichSchwierig!    
+    :master-password: WirklichSchwierig!
 
 .. include:: ../docutils.defs
 
 
 
-Reverse Engineering 101 
+Reverse Engineering 101
 =====================================================
 
 :Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
@@ -21,11 +21,11 @@ Reverse Engineering 101
 .. supplemental::
 
   :Folien:
-    
+
     |html-source|
 
     |pdf-source|
-  
+
   :Fehler melden:
 
     https://github.com/Delors/delors.github.io/issues
@@ -40,7 +40,7 @@ Vorerfahrungen?
 - Wer hat schon einmal Software or Hardware Reverse Engineering betrieben?
 - Wer kennt Java Bytecode?
 - Wer hat Erfahrung mit Python?
-  
+
 
 
 Reverse Engineering
@@ -48,18 +48,18 @@ Reverse Engineering
 
 Reverse Engineering ist die Analyse von Systemen mit dem Ziel, ihren Aufbau und ihre Funktionsweise zu verstehen.
 
-.. incremental::  
+.. container:: incremental
 
     Typische Anwendungsfälle:
 
     .. class:: incremental
 
     - die Rekonstruktion (von Teilen) des Quellcodes von Programmen, die nur als Binärabbild vorliegen.
-    - die Analyse von Kommunikationsprotokollen proprietärer Software 
+    - die Analyse von Kommunikationsprotokollen proprietärer Software
 
-.. supplemental:: 
+.. supplemental::
 
-    Vom Reverse Engineering ist das **Reengineering** zu unterscheiden. Im Fall von letzteren geht es „nur“ darum die Funktionalität eines bestehenden Systems mit neuen Techniken wiederherzustellen.  
+    Vom Reverse Engineering ist das **Reengineering** zu unterscheiden. Im Fall von letzteren geht es „nur“ darum die Funktionalität eines bestehenden Systems mit neuen Techniken wiederherzustellen.
 
 
 Zweck von Reverse Engineering
@@ -67,7 +67,7 @@ Zweck von Reverse Engineering
 
 .. class:: incremental
 
-- Herstellung von Interoperabilität 
+- Herstellung von Interoperabilität
 - Untersuchung auf Schwachstellen
 - Untersuchung auf Copyrightverletzungen
 - Untersuchung auf Backdoors
@@ -78,7 +78,7 @@ Zweck von Reverse Engineering
 Bootrom Lücke
 ---------------
 
-.. epigraph:: 
+.. epigraph::
 
     **CPU-Lücke macht Malware-Infektionen nahezu unumkehrbar**
 
@@ -99,11 +99,11 @@ Bootrom Lücke
 .. class:: incremental columns far-far-smaller
 
 - Ziel
-  
-  Das Verhalten von SSH bei der Authentifikation so zu verändern, dass es dem Angreifer Zugang zum System erlaubt. 
-  
+
+  Das Verhalten von SSH bei der Authentifikation so zu verändern, dass es dem Angreifer Zugang zum System erlaubt.
+
   Zur Absicherung der Backdoor ist diese über ein Zertifikat abgesichert.
- 
+
 - Verbreitung des Schadcode?
 
   Die Bibliothek ``liblzma`` wurde so angepasst, dass diese eine Backdoor in SSH einbaut.
@@ -114,7 +114,7 @@ Bootrom Lücke
 
   Die Bibliothek wurde nur in bestimmten Situationen von OpenSSH verwendet.
 - Bewertung
-    
+
   *CVSS Base Score*: 10.0 (kritisch)
 
   *Entstandener Schaden*: vermutlich gering, da (gerade noch) keine offiziellen Releases (von Debian, Ubuntu, etc.) betroffen waren.
@@ -143,7 +143,7 @@ Backdoor in 16 D-Link Routern\ [#]_
 Reverse Engineering - grundlegende Schritte
 ---------------------------------------------
 
-.. class:: incremental dhbw 
+.. class:: incremental dhbw
 
 1. Informationsgewinnung zur Gewinnung aller relevanten Informationen über das Produkt.
 2. Modellierung mit dem Ziel der (Wieder-)Gewinnung eines (abstrakten) Modells der relevanten Funktionalität.
@@ -158,13 +158,13 @@ Gegeben sei eine App zum Ver- und Entschlüsseln von Dateien sowie ein paar vers
 .. container:: stack
 
     .. container:: layer incremental
-    
+
        - Die ausführbare Datei ggf. mit ``file`` (oder sogar mit ``binwalk``) überprüfen (z. B. wie wurde die Datei kompiliert und für welches Betriebssystem und Architektur)
-    
+
         Beispiel:
 
         .. code:: bash
-        
+
             $ file /usr/bin/openssl
             /usr/bin/openssl: Mach-O universal binary with 2 archi...
             /usr/bin/openssl (for architecture x86_64):	Mach-O 64-bit
@@ -174,7 +174,7 @@ Gegeben sei eine App zum Ver- und Entschlüsseln von Dateien sowie ein paar vers
 
        - Die Dateien mit einem (guten) Hexeditor auf Auffälligkeiten untersuchen.
 
-         .. image:: pictures/hexeditor.png 
+         .. image:: pictures/hexeditor.png
             :alt: Hexeditor mit Dateninterpretation
             :align: center
             :height: 600px
@@ -184,25 +184,25 @@ Gegeben sei eine App zum Ver- und Entschlüsseln von Dateien sowie ein paar vers
         Die Datei auf bekannte Viren und Malware überprüfen.
 
     .. container:: layer incremental
-    
+
       - Eine Datei mit einem bekannten Inhalt verschlüsseln und danach vergleichen.
-  
-        Ist die Datei gleich groß? 
-  
-           Falls ja, dann werden keine Metainformationen gespeichert und das Passwort kann (ggf.) nicht (leicht) verifiziert werden. 
-           
+
+        Ist die Datei gleich groß?
+
+           Falls ja, dann werden keine Metainformationen gespeichert und das Passwort kann (ggf.) nicht (leicht) verifiziert werden.
+
            (Es kann zumindest nicht direkt in der Datei gespeichert sein.)
 
     .. container:: layer incremental
 
       - Eine Datei mit verschiedenen Passworten verschlüsseln.
 
-        Sind die Dateien gleich? 
+        Sind die Dateien gleich?
 
            Falls ja, dann wäre die Verschlüsselung komplett nutzlos und es gilt nur noch den konstanten Schlüssel zu finden.
- 
-        Gibt es Gemeinsamkeiten? 
-   
+
+        Gibt es Gemeinsamkeiten?
+
            Falls ja, dann wäre es möglich, dass das Passwort (gehasht) in der Datei gespeichert wird.
 
     .. container:: layer incremental
@@ -213,14 +213,14 @@ Gegeben sei eine App zum Ver- und Entschlüsseln von Dateien sowie ein paar vers
 
        - Mehrere verschiedene Dateien mit dem gleichen Passwort verschlüsseln
 
-         Gibt es Gemeinsamkeiten? 
-         
+         Gibt es Gemeinsamkeiten?
+
            Falls ja, dann wäre es möglich, dass die entsprechenden Teile direkt vom Passwort abgeleitet werden/damit verschlüsselt werden.
-  
+
     .. container:: layer incremental
 
        - ...
-  
+
     .. container:: layer incremental
 
        - Reverse Engineering der App durchführen.
@@ -228,7 +228,7 @@ Gegeben sei eine App zum Ver- und Entschlüsseln von Dateien sowie ein paar vers
 
 Rechtliche Aspekte des Reverse Engineering
 -------------------------------------------
-  
+
 .. caution::
 
     Die Gesetzgebungen unterscheiden sich von Land zu Land teils signifikant.
@@ -242,8 +242,8 @@ Rechtliche Aspekte des Reverse Engineering
 .. container:: center-child-elements
 
     .. admonition:: Warnung
-        :class: incremental warning 
-        
+        :class: incremental warning
+
         Bevor Sie Reverse Engineering von Systemen betreiben, erkundigen sie sich erst über mögliche rechtliche Konsequenzen.
 
 
@@ -259,19 +259,19 @@ Ansätze
 
     :statische Analyse: Studieren des Programms ohne es auszuführen; typischerweise mittels eines Disassemblers oder eines Decompilers.
 
-    .. class:: incremental 
+    .. class:: incremental
 
     :dynamische Analyse: Ausführen des Programms; typischerweise unter Verwendung eines Debuggers oder eines instrumentations Frameworks (z. B. `Frida <https://frida.re>`__).
 
-    .. class:: incremental 
+    .. class:: incremental
 
     :hybride Analyse: Kombination aus statischer und dynamischer Analyse.
 
         Ansätze wie `Unicorn <https://www.unicorn-engine.org>`__, welches auf `QEmu <https://www.qemu.org>`__ aufbaut, erlaubt zum Beispiel die Ausführung von (Teilen von) Binärcode auf einer anderen Architektur als der des Hosts.
-        
+
         Ein Beispiel wäre die Ausführung einer Methode, die im Code verschlüsselte hinterlegte Strings entschlüsselt (:eng:`deobfuscation`), um die Analyse zu vereinfachen.
 
-    .. container:: incremental 
+    .. container:: incremental
 
         Ggf. müssen für Teile des Codes, die die Hostfunktionalität nutzen, Stubs/Mocks bereitgestellt werden.
 
@@ -291,9 +291,9 @@ Kommandozeilenwerkzeuge (exemplarisch):
 .. hint::
     :class: incremental small
 
-    Für einfache Programme ist es häufig möglich direkt den gesamten Assemblercode mittels der entsprechenden Werkzeuge zu erhalten. Im Falle komplexer Binärdateien (z. B. im ELF (Linux) und PE (Windows) Format) gilt dies nicht und erfordert ggf. manuelle Unterstützung zum Beispiel durch das Markieren von Methodenanfängen. 
-    
-    Im Fall von Java ``.class`` ist die Disassemblierung immer möglich. 
+    Für einfache Programme ist es häufig möglich direkt den gesamten Assemblercode mittels der entsprechenden Werkzeuge zu erhalten. Im Falle komplexer Binärdateien (z. B. im ELF (Linux) und PE (Windows) Format) gilt dies nicht und erfordert ggf. manuelle Unterstützung zum Beispiel durch das Markieren von Methodenanfängen.
+
+    Im Fall von Java ``.class`` ist die Disassemblierung immer möglich.
 
 
 Decompiler
@@ -307,10 +307,10 @@ Decompiler
 - CFR (Java ``.class`` Dateien)
 - IntelliJ
 
-.. supplemental:: 
+.. supplemental::
 
-    Mittels Decompiler ist es ggf. möglich Code, der zum Beispiel ursprünglich in Kotlin oder Scala geschrieben und für die JVM kompiliert wurde, als Java Code zurückzubekommen. 
-    
+    Mittels Decompiler ist es ggf. möglich Code, der zum Beispiel ursprünglich in Kotlin oder Scala geschrieben und für die JVM kompiliert wurde, als Java Code zurückzubekommen.
+
     Die Ergebnisse sind für Analysezwecke zwar häufig ausreichend gut – von funktionierendem Code jedoch ggf. (sehr) weit entfernt.
 
     `decompiler.com <https://decompiler.com>`__ unterstützt eine große Anzahl ausführbaren Dateien.
@@ -318,8 +318,8 @@ Decompiler
 .. hint::
     :class: incremental small
 
-    Decompiler sind generell sehr hilfreich, aber gleichzeitig auch sehr fehlerbehaftet. Vieles, dass im Binärcode möglich ist, hat auf der Ebene des Sourcecodes keine Entsprechung. 
-    
+    Decompiler sind generell sehr hilfreich, aber gleichzeitig auch sehr fehlerbehaftet. Vieles, dass im Binärcode möglich ist, hat auf der Ebene des Sourcecodes keine Entsprechung.
+
     Zum Beispiel unterstützt Java Bytecode beliebige Sprünge. Solche Code wird aber durch normale Programme, die z. B. in Java, Kotlin, Scala oder Clojure geschrieben wurden, nicht erzeugt. Decompiler kommen mit solchem Code in der Regel nicht (gut) zurecht.
 
 
@@ -327,7 +327,7 @@ Decompiler
 cfr Decompiler
 ---------------
 
-.. image:: pictures/cfr.png 
+.. image:: pictures/cfr.png
     :alt: The CFR Decompiler (Java)
     :align: center
     :height: 1050px
@@ -337,17 +337,17 @@ cfr Decompiler
 JD Decompiler
 ---------------
 
-.. container:: two-columns 
+.. container:: two-columns
 
     .. container:: column no-separator
-    
-        .. image:: pictures/jd.png 
+
+        .. image:: pictures/jd.png
             :alt: The JD Decompiler (Java)
             :width: 875px
 
     .. container:: column no-separator incremental small
-    
-        .. figure:: pictures/jd-excerpt.png 
+
+        .. figure:: pictures/jd-excerpt.png
             :class: picture
             :width: 875px
 
@@ -357,7 +357,7 @@ JD Decompiler
 JDec Decompiler
 ---------------
 
-.. image:: pictures/jdec.png 
+.. image:: pictures/jdec.png
     :alt: The JDec Decompiler (Java)
     :align: center
     :height: 1050px
@@ -374,10 +374,10 @@ Dient der schrittweisen Ausführung des zu analysierenden Codes oder Hardware; e
 - x64dbg (Windows, Open-Source)
 - jdb (Java Debugger)
 
-.. supplemental:: 
+.. supplemental::
 
     .. rubric:: Hardware Debugger
-    
+
     Für das Debuggen von Hardware gibt es entsprechende Werkzeuge, z. B.
     `Lauterbach Hardware Debugger <https://www.lauterbach.com>`__ (kommerziell und sehr teuer).
 
@@ -404,7 +404,7 @@ Obfuscation → für Menschen unverständlich Code
 - Techniken, die dazu dienen das Reverse Engineering zu erschweren.
 - Häufig eingesetzt ...
 
-  .. class:: incremental 
+  .. class:: incremental
 
   -  von Malware
   -  Adware (im Kontext von Android ein häufig beobachtetes Phänomen)
@@ -416,11 +416,11 @@ Obfuscation → für Menschen unverständlich Code
 - Arbeiten auf Quellcode oder Maschinencode Ebene
 - Grenze zwischen *Code Minimization*, *Code Optimization* und *Code Obfuscation* ist fließend.
 - Mögliche Werkzeuge (ohne Wertung der Qualität/Effektivität):
-  
-  - [Java] Proguard / Dexguard
-  - [C/C++] `Star Force <https://www.star-force.com/products/starforce-crypto/>`__ 
 
-.. supplemental:: 
+  - [Java] Proguard / Dexguard
+  - [C/C++] `Star Force <https://www.star-force.com/products/starforce-crypto/>`__
+
+.. supplemental::
 
     Gerade im Umfeld von klassischen *Binaries* für Windows, Mac und Linux erhöhen Compiler Optimierungen, z. B. von C/C++ und Rust Compilern (``-O2 / -O3``), bereits den Aufwand, der notwendig ist den Code zu verstehen, erheblich.
 
@@ -438,28 +438,28 @@ Obfuscation - Techniken (Auszug)
 - Das Kürzen aller möglichen Namen (insbesondere Methoden und Klassennamen).
 - Das Verschleiern von Konstanten durch den Einsatz vermeintlich komplexer Berechnungen zu deren Initialisierung.
 
-    .. code:: java 
+    .. code:: java
         :class: copy-to-clipboard
-        
+
         ~(((int)Math.PI) ^ Integer.MAX_VALUE >> 16)+Short.MAX_VALUE
 
     .. class:: incremental
-        
+
         .. code:: java
-        
+
             = 2
 
 - Die Verwendung von Unicode Codepoints für Strings oder die Verschleierung von Strings mittels `rot13 <https://cryptii.com/pipes/rot13-decoder>`__ Verschlüsselung.
-  
+
   .. code:: C
     :class: copy-to-clipboard
-    
+
      /* ??? */ printf("\x48""e\154l\x6F"" \127o\x72""l\144!");
 
   .. class:: incremental
 
     .. code:: C
-    
+
         /*  =  */ printf("Hello World!");
 
 - Das Umstellen von Instruktionen, um das Dekompilieren zu erschweren.
@@ -468,19 +468,19 @@ Obfuscation - Techniken (Auszug)
 - Den relevanten Teil der Anwendung komprimieren und verschlüsseln und erst bei Verwendung entpacken und entschlüsseln.
 - ...
 
-.. supplemental:: 
+.. supplemental::
 
-   Obfuscation auf Source Code Ebene: 
+   Obfuscation auf Source Code Ebene:
    `International Obfuscated C Code Contest <https://www.ioccc.org/>`__
 
    **Umstellen von Instruktionen**
-    
+
    Das Umstellen von Instruktionen erschwert die Analyse, da viele Werkzeuge zum Dekompilieren auf die Erkennung von bestimmten Mustern im Code angewiesen sind und ansonsten nur sehr generischen (Spagetti Code) oder gar unsinnigen Code zurückgeben.
 
    **Verschleierung von Strings**
 
-   Das Verschleiern von Strings kann insbesondere das Reversen von Binärcode erschweren, da ein Angreifer häufig „nur“ an einer ganz bestimmten Funktionalität interessiert ist und dann Strings ggf. einen sehr guten Einstiegspunkt für die weitergehende Analyse bieten. 
-   
+   Das Verschleiern von Strings kann insbesondere das Reversen von Binärcode erschweren, da ein Angreifer häufig „nur“ an einer ganz bestimmten Funktionalität interessiert ist und dann Strings ggf. einen sehr guten Einstiegspunkt für die weitergehende Analyse bieten.
+
    Stellen Sie sich eine komplexe Java Anwendung vor, in der alle Namen von Klassen, Methoden und Attributen durch einzelne oder kurze Sequenzen von Buchstaben ersetzt wurden und sie suchen danach wie von der Anwendung Passworte verarbeitet werden. Handelt es sich um eine GUI Anwendung, dann wäre zum Beispiel die Suche nach Text, der in den Dialogen vorkommt (z. B. ``"Password"``) z. B. ein sehr guter Einstiegspunkt.
 
 
@@ -501,13 +501,13 @@ Verschlüsselung von Bytecode und Java Class Loader
   Zwei Instanzen der gleichen Klasse (d. h. mit dem selben Bytecode) sind nicht gleich (Referenzgleichheit), wenn zwei verschiedene ``ClassLoader`` genutzt wurden.
 - ``ClassLoader`` stehen in einer Hierarchie.
 - ``ClassLoader`` können genutzt werden, um:
-  
+
   - ein Programm dynamisch zu erweitern (Plug-ins
   - um Klassen zu laden, die zur Laufzeit generiert wurden
   - um den Bytecode zu manipulieren, bevor er von der JVM ausgeführt wird.
 
 
-  
+
 
 
 Ein eigener ClassLoader
@@ -583,7 +583,7 @@ ClassLoading - Example
             Object a = clazz1
                 .getDeclaredMethod("instance", new Class<?>[] {})
                 .invoke(null);
-            ClassLoader cl2 = ClassLoader.getSystemClassLoader(); 
+            ClassLoader cl2 = ClassLoader.getSystemClassLoader();
             Class<?> clazz2 = cl2.loadClass("demo.MySingleton");
             Object b = clazz2
                 .getDeclaredMethod("instance", new Class<?>[] {})
@@ -629,7 +629,7 @@ Eine sehr kurz Einführung in Java Bytecode
 -----------------------------------------------
 
 Die Java Virtual Machine
-------------------------------------------------- 
+-------------------------------------------------
 
 .. class:: incremental
 
@@ -642,18 +642,18 @@ Die Java Virtual Machine
 
 
 Java Bytecode - stackbasierte virtuelle Maschine
-------------------------------------------------- 
+-------------------------------------------------
 
 .. container:: smaller
 
-   Die JVM ist eine stackbasierte virtuelle Maschine. 
-   
+   Die JVM ist eine stackbasierte virtuelle Maschine.
+
    Die getypten Operanden eines Befehls werden auf einem Stack abgelegt und die Operationen arbeiten auf den obersten Elementen des Stacks. Jeder Thread hat seinen eigenen Stack.
-   
+
         .. container:: two-columns footnotesize incremental
-    
-            .. container:: column 
-        
+
+            .. container:: column
+
                 .. rubric:: Instruktionen
 
                 .. code:: java
@@ -667,9 +667,9 @@ Java Bytecode - stackbasierte virtuelle Maschine
                     iadd        ← 2 ⨉ int    → int
 
 
-            
+
             .. container:: column incremental
-                
+
                 .. rubric:: Veränderung des Stacks
 
                 .. code:: java
@@ -686,7 +686,7 @@ Java Bytecode - stackbasierte virtuelle Maschine
 .. supplemental::
 
     Eine Methode muss einen Stack begrenzter Höhe aufweisen. Code, für den die Stackhöhe nicht berechenbar ist, wird vom Compiler abgelehnt. (Zum Beispiel ein ``bipush`` in einer Endlosschleife.)
-    Die benötigte Höhe des Stacks wird vom Compiler berechnet und von der JVM überprüft. 
+    Die benötigte Höhe des Stacks wird vom Compiler berechnet und von der JVM überprüft.
 
 
 
@@ -695,15 +695,15 @@ Java Bytecode - Methodenaufrufe und lokale Variablen
 
 .. class:: incremental
 
-- Die Java Virtual Machine verwendet lokale Variablen zur Übergabe von Parametern beim Methodenaufruf. 
-- Beim Aufruf von *Klassenmethoden* (``static``) werden alle Parameter in aufeinanderfolgenden lokalen Variablen übergeben, beginnend mit der lokalen Variable 0. 
+- Die Java Virtual Machine verwendet lokale Variablen zur Übergabe von Parametern beim Methodenaufruf.
+- Beim Aufruf von *Klassenmethoden* (``static``) werden alle Parameter in aufeinanderfolgenden lokalen Variablen übergeben, beginnend mit der lokalen Variable 0.
   D. h. in der aufrufenden Methode werden die Parameter vom Stack geholt und in lokalen Variablen gespeichert.
-- Beim Aufruf von *Instanzmethoden* wird die lokale Variable 0 dazu verwendet, um die Referenz (``this``) auf das Objekt zu übergeben, auf dem die Instanzmethode aufgerufen wird. 
+- Beim Aufruf von *Instanzmethoden* wird die lokale Variable 0 dazu verwendet, um die Referenz (``this``) auf das Objekt zu übergeben, auf dem die Instanzmethode aufgerufen wird.
   Anschließend werden alle Parameter in aufeinanderfolgenden lokalen Variablen übergeben, beginnend mit der lokalen Variable 1.
 
 .. supplemental::
 
-    Die Anzahl der benötigten lokalen Variablen wird vom Compiler berechnet und von der JVM überprüft. 
+    Die Anzahl der benötigten lokalen Variablen wird vom Compiler berechnet und von der JVM überprüft.
 
 
 .. class:: small
@@ -725,15 +725,15 @@ Ein *Constructor* welcher keine expliziten Parameter hat und nur den super Konst
 Die Zeilennummern und die Informationen über die lokalen Variablen sind optional und werden nur für Debugging Zwecke benötigt.
 
 .. code:: java
-    
+
       Line numbers:         [pc: 0, line: 9]
-      Local variable table: [pc: 0, pc: 5]  local: this 
-                                            index: 0 
+      Local variable table: [pc: 0, pc: 5]  local: this
+                                            index: 0
                                             type:  de.dhbw.simplesecurepp.Main
 
-.. supplemental:: 
+.. supplemental::
 
-    Es gibt weitere Metainformationen, die „nur“ für Debugging-Zwecke benötigt werden, z. B. Informationen über die ursprünglich Quelle des Codes oder die sogenannte "Local Variable Type Table" in Hinblick auf generische Typinformationen. Solche Informationen werden häufig vor Auslieferung entfernt bzw. nicht hineinkompiliert. 
+    Es gibt weitere Metainformationen, die „nur“ für Debugging-Zwecke benötigt werden, z. B. Informationen über die ursprünglich Quelle des Codes oder die sogenannte "Local Variable Type Table" in Hinblick auf generische Typinformationen. Solche Informationen werden häufig vor Auslieferung entfernt bzw. nicht hineinkompiliert.
 
 
 Beispiel: Aufruf einer komplexeren Methode
@@ -741,7 +741,7 @@ Beispiel: Aufruf einer komplexeren Methode
 
 .. code:: java
     :class: small
-        
+
     // Method descriptor ([Ljava/lang/String;)V
     // Stack: 5, Locals: 8
     public static void main(java.lang.String[] args) throws ...;
@@ -749,9 +749,9 @@ Beispiel: Aufruf einer komplexeren Methode
         1  arraylength
         2  iconst_2
         3  if_icmpeq 74                // integer comparison for equality
-        6  getstatic java.lang.System.err : java.io.PrintStream 
+        6  getstatic java.lang.System.err : java.io.PrintStream
         9  ldc <String "SimpleSecure++">
-        11  invokevirtual java.io.PrintStream.println(java.lang.String) : void 
+        11  invokevirtual java.io.PrintStream.println(java.lang.String) : void
         ...
 
 
@@ -768,13 +768,13 @@ Verschlüsselung von Daten
 Alternativen zur Speicherung von Passwörtern
 ---------------------------------------------
 
-In einigen Anwendungsgebieten ist es möglich auf das explizite Speichern von Passwörtern ganz zu verzichten\ [*]_. 
+In einigen Anwendungsgebieten ist es möglich auf das explizite Speichern von Passwörtern ganz zu verzichten\ [*]_.
 
-.. container:: incremental 
+.. container:: incremental
 
-    Stattdessen wird z. B. einfach versucht das Ziel zu entschlüsseln und danach evaluiert ob das Passwort (vermutlich) das Richtige war. 
+    Stattdessen wird z. B. einfach versucht das Ziel zu entschlüsseln und danach evaluiert ob das Passwort (vermutlich) das Richtige war.
 
-.. container:: incremental 
+.. container:: incremental
 
     Kann darauf verzichtet werden zu überprüfen ob das Passwort korrekt war, dann sind keine Metainformationen notwendig und die verschlüsselte Datei kann genau so groß sein wie die unverschlüsselte Datei.
 
@@ -811,15 +811,15 @@ Generische Dateiverschlüsselung ohne explizite Speicherung des Passworts
 Fokussiert bleiben!
 --------------------------------------
 
-.. important:: 
+.. important::
     :class: warning incremental
-   
-    Bleibe fokussiert! 
+
+    Bleibe fokussiert!
 
     Analysiere nur was notwendig ist.
 
 
-.. class:: integrated-exercise 
+.. class:: integrated-exercise
 
 Live Exercise
 --------------------------------------
@@ -830,7 +830,7 @@ Live Exercise
 :Datei: `42.enc <./exercise/simplesecurepp/42.enc>`__
 :Hinweise: `Hints.pdf <./exercise/reversing_aufgaben.pdf>`__
 
-.. exercise:: Reversing SimpleSecure++ 
+.. exercise:: Reversing SimpleSecure++
 
     .. container
         .. rubric:: Programm
@@ -856,7 +856,7 @@ Live Exercise
         - es scheint keine Blockchiffre zu sein
 
         - [Nach der Analyse des Codes]
-  
+
         .. code:: java
             :class: copy-to-clipboard smaller
 
@@ -879,9 +879,9 @@ Live Exercise
 
                     /**
                     * Reads in an encrypted file from stdin and tries to find the seed that
-                    * was used for the SecureRandom generator. Given the seed, it is then 
+                    * was used for the SecureRandom generator. Given the seed, it is then
                     * possible to easily decrypt the stream.
-                    * 
+                    *
                     * If we are not lucky, it may take several hours on a multi-core machine.
                     */
                     public static void main(String[] args) throws Exception {
@@ -892,8 +892,8 @@ Live Exercise
                         var encryptedCC = System.in.readNBytes(CC.length);
                         var availableProcessors = Runtime.getRuntime().availableProcessors();
                         System.out.println(
-                            "Trying to find the seed for decryption using " + 
-                            availableProcessors + 
+                            "Trying to find the seed for decryption using " +
+                            availableProcessors +
                             " processors.");
 
                         for (int p = 0; p < availableProcessors; p++) {
@@ -928,12 +928,12 @@ Live Exercise
                                         }
 
                                         if (s % 5000000 == 0) {
-                                            var speed = 
-                                                (s - START) / 
+                                            var speed =
+                                                (s - START) /
                                                     (System.currentTimeMillis() - START_TIME);
                                             System.out.println(
-                                                    "[" + fp + "] Tested " + 
-                                                    100l * (s - START) / SEG_SIZE + 
+                                                    "[" + fp + "] Tested " +
+                                                    100l * (s - START) / SEG_SIZE +
                                                     "% (" + speed + "H/ms): "
                                                             + START + "=>" + s);
                                         }
@@ -996,8 +996,8 @@ Reverse Engineering Übung
             from binascii import hexlify
 
             dek = bytes([ 0x43, 0xE7, 0x14, 0x67, 0xF9, 0x86, 0xDE, 0xEA, 0xAA,
-                          0x4E, 0x5F, 0x88, 0xDE, 0x89, 0x15, 0xD7, 0x91, 0x00, 
-                          0x3D, 0x32, 0x0A, 0xE1, 0x2D, 0x19, 0x25, 0x20, 0x5B, 
+                          0x4E, 0x5F, 0x88, 0xDE, 0x89, 0x15, 0xD7, 0x91, 0x00,
+                          0x3D, 0x32, 0x0A, 0xE1, 0x2D, 0x19, 0x25, 0x20, 0x5B,
                           0x92, 0xA9, 0xB1, 0x84, 0xED ])
 
             with open("demo/Poem.enc","rb") as f:
