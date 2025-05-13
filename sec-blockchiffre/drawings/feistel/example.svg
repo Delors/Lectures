@@ -1,0 +1,826 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+    "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg
+    xmlns="http://www.w3.org/2000/svg"
+    version="1.1"
+    xmlns:xl="http://www.w3.org/1999/xlink"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    viewBox="-27 -465 773 313"
+    width="594"
+    height="240"
+>
+
+<style>
+  @import url('/LectureDoc2/ext/fonts/ld-fonts.css');
+</style>
+<defs>
+    <marker
+            orient="auto"
+            overflow="visible"
+            markerUnits="strokeWidth"
+            id="FilledArrow_Marker"
+            stroke-linejoin="miter"
+            stroke-miterlimit="10"
+            viewBox="-1 -3 7 6"
+            markerWidth="7"
+            markerHeight="6"
+            color="black"
+        >
+      <g>
+        <path
+                    d="M 4.8 0 L 0 -1.8 L 0 1.8 Z"
+                    fill="currentColor"
+                    stroke="currentColor"
+                    stroke-width="1"
+                />
+      </g>
+    </marker>
+    <marker
+            orient="auto"
+            overflow="visible"
+            markerUnits="strokeWidth"
+            id="FilledArrow_Marker_2"
+            stroke-linejoin="miter"
+            stroke-miterlimit="10"
+            viewBox="-1 -3 7 6"
+            markerWidth="7"
+            markerHeight="6"
+            color="#a5a5a5"
+        >
+      <g>
+        <path
+                    d="M 4.8 0 L 0 -1.8 L 0 1.8 Z"
+                    fill="currentColor"
+                    stroke="currentColor"
+                    stroke-width="1"
+                />
+      </g>
+    </marker>
+  </defs>
+  <metadata> Produced by OmniGraffle 8.0\n2025-05-13 19:29:25 +0000</metadata>
+  <g
+        id="example"
+        stroke-dasharray="none"
+        stroke="none"
+        stroke-opacity="1"
+        fill="none"
+        fill-opacity="1"
+    >
+    <title>example</title>
+    <g id="example_Layer_1">
+      <title>Layer 1</title>
+      <g id="Graphic_20">
+        <rect x="-15" y="-390" width="180" height="27" fill="white" />
+        <rect
+                    x="-15"
+                    y="-390"
+                    width="180"
+                    height="27"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
+        <text transform="translate(-10 -387.5)" fill="black">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="16"
+                        font-weight="400"
+                        fill="black"
+                        x="67.096"
+                        y="17"
+                        xml:space="preserve"
+                    >DE7F</tspan>
+        </text>
+      </g>
+      <g id="Graphic_19">
+        <rect x="165" y="-390" width="180" height="27" fill="white" />
+        <rect
+                    x="165"
+                    y="-390"
+                    width="180"
+                    height="27"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
+        <text transform="translate(170 -387.5)" fill="black">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="16"
+                        font-weight="400"
+                        fill="black"
+                        x="67.28"
+                        y="17"
+                        xml:space="preserve"
+                    >03A6</tspan>
+        </text>
+      </g>
+      <g id="Graphic_18">
+        <rect x="-15" y="-246" width="180" height="27" fill="white" />
+        <rect
+                    x="-15"
+                    y="-246"
+                    width="180"
+                    height="27"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
+        <text transform="translate(-10 -243.5)" fill="black">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="16"
+                        font-weight="400"
+                        fill="black"
+                        x="67.28"
+                        y="17"
+                        xml:space="preserve"
+                    >03A6</tspan>
+        </text>
+      </g>
+      <g id="Graphic_17">
+        <rect x="165" y="-246" width="180" height="27" fill="white" />
+        <rect
+                    x="165"
+                    y="-246"
+                    width="180"
+                    height="27"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
+        <text transform="translate(170 -243.66797)" fill="black">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="16"
+                        font-weight="400"
+                        fill="black"
+                        x="2.2989375"
+                        y="17"
+                        xml:space="preserve"
+                    >F(03A6,12DE52) </tspan>
+          <tspan
+                        font-family="Apple Symbols"
+                        font-size="16"
+                        font-weight="400"
+                        fill="black"
+                        y="17"
+                        xml:space="preserve"
+                    >⊕</tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="16"
+                        font-weight="400"
+                        fill="black"
+                        y="17"
+                        xml:space="preserve"
+                    > DE7F</tspan>
+        </text>
+      </g>
+      <g id="Group_13">
+        <title>g3270</title>
+        <g id="Graphic_16">
+          <title>path3272</title>
+          <ellipse
+                        cx="255"
+                        cy="-275.36566"
+                        rx="12.5418844783557"
+                        ry="11.36566"
+                        fill="white"
+                    />
+          <ellipse
+                        cx="255"
+                        cy="-275.36566"
+                        rx="12.5418844783557"
+                        ry="11.36566"
+                        stroke="black"
+                        stroke-linecap="butt"
+                        stroke-linejoin="round"
+                        stroke-width="1.6306387"
+                    />
+        </g>
+        <g id="Graphic_15">
+          <title>path3274</title>
+          <line
+                        x1="242.4864"
+                        y1="-275.76197"
+                        x2="267.47236"
+                        y2="-275.76197"
+                        fill="#0a0"
+                    />
+          <line
+                        x1="242.4864"
+                        y1="-275.76197"
+                        x2="267.47236"
+                        y2="-275.76197"
+                        stroke="black"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="1.7237265"
+                    />
+        </g>
+        <g id="Graphic_14">
+          <title>path3276</title>
+          <line
+                        x1="254.8519"
+                        y1="-286.73675"
+                        x2="254.8519"
+                        y2="-264.09406"
+                        fill="#0a0"
+                    />
+          <line
+                        x1="254.8519"
+                        y1="-286.73675"
+                        x2="254.8519"
+                        y2="-264.09406"
+                        stroke="black"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="1.7237265"
+                    />
+        </g>
+      </g>
+      <g id="Graphic_12">
+        <rect x="240" y="-336.4902" width="30" height="27" fill="white" />
+        <rect
+                    x="240"
+                    y="-336.4902"
+                    width="30"
+                    height="27"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
+        <text transform="translate(245 -333.9902)" fill="black">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="16"
+                        font-weight="400"
+                        fill="black"
+                        x="6.072"
+                        y="17"
+                        xml:space="preserve"
+                    >F</tspan>
+        </text>
+      </g>
+      <g id="Graphic_11">
+        <text transform="translate(279.72584 -333)" fill="black">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="16"
+                        font-weight="400"
+                        fill="black"
+                        x="0"
+                        y="17"
+                        xml:space="preserve"
+                    >12DE52</tspan>
+        </text>
+      </g>
+      <g id="Line_10">
+        <line
+                    x1="99.02745"
+                    y1="-363"
+                    x2="232.37872"
+                    y2="-288.0756"
+                    marker-end="url(#FilledArrow_Marker)"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="bevel"
+                    stroke-width="2"
+                />
+      </g>
+      <g id="Line_9">
+        <line
+                    x1="255"
+                    y1="-263.18468"
+                    x2="255"
+                    y2="-258.9"
+                    marker-end="url(#FilledArrow_Marker)"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="bevel"
+                    stroke-width="2"
+                />
+      </g>
+      <g id="Line_8">
+        <line
+                    x1="255"
+                    y1="-363"
+                    x2="255"
+                    y2="-349.3902"
+                    marker-end="url(#FilledArrow_Marker)"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="bevel"
+                    stroke-width="2"
+                />
+      </g>
+      <g id="Line_7">
+        <line
+                    x1="255"
+                    y1="-309.4902"
+                    x2="255"
+                    y2="-300.44664"
+                    marker-end="url(#FilledArrow_Marker)"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="bevel"
+                    stroke-width="2"
+                />
+      </g>
+      <g id="Line_6">
+        <path
+                    d="M 238.125 -363 L 185.81359 -321.15087 C 181.75307 -326.2265 171.60177 -318.10548 175.6623 -313.02983 L 101.94821 -254.05857"
+                    marker-end="url(#FilledArrow_Marker)"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="bevel"
+                    stroke-width="2"
+                />
+      </g>
+      <g id="Line_5" />
+      <g id="Graphic_36">
+        <rect x="378" y="-390" width="180" height="27" fill="white" />
+        <rect
+                    x="378"
+                    y="-390"
+                    width="180"
+                    height="27"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
+        <text transform="translate(383 -387.66797)" fill="black">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="16"
+                        font-weight="400"
+                        fill="black"
+                        x="2.2989375"
+                        y="17"
+                        xml:space="preserve"
+                    >F(03A6,12DE52) </tspan>
+          <tspan
+                        font-family="Apple Symbols"
+                        font-size="16"
+                        font-weight="400"
+                        fill="black"
+                        y="17"
+                        xml:space="preserve"
+                    >⊕</tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="16"
+                        font-weight="400"
+                        fill="black"
+                        y="17"
+                        xml:space="preserve"
+                    > DE7F</tspan>
+        </text>
+      </g>
+      <g id="Graphic_35">
+        <rect x="558" y="-390" width="180" height="27" fill="white" />
+        <rect
+                    x="558"
+                    y="-390"
+                    width="180"
+                    height="27"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
+        <text transform="translate(563 -387.5)" fill="black">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="16"
+                        font-weight="400"
+                        fill="black"
+                        x="67.28"
+                        y="17"
+                        xml:space="preserve"
+                    >03A6</tspan>
+        </text>
+      </g>
+      <g id="Graphic_34">
+        <rect x="378" y="-246" width="180" height="27" fill="white" />
+        <rect
+                    x="378"
+                    y="-246"
+                    width="180"
+                    height="27"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
+        <text transform="translate(383 -243.5)" fill="black">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="16"
+                        font-weight="400"
+                        fill="black"
+                        x="67.28"
+                        y="17"
+                        xml:space="preserve"
+                    >03A6</tspan>
+        </text>
+      </g>
+      <g id="Graphic_33">
+        <rect x="558" y="-246" width="180" height="27" fill="white" />
+        <rect
+                    x="558"
+                    y="-246"
+                    width="180"
+                    height="27"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
+        <text transform="translate(563 -243.5)" fill="black">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="16"
+                        font-weight="400"
+                        fill="black"
+                        x="67.096"
+                        y="17"
+                        xml:space="preserve"
+                    >DE7F</tspan>
+        </text>
+      </g>
+      <g id="Group_29">
+        <title>g3270</title>
+        <g id="Graphic_32">
+          <title>path3272</title>
+          <ellipse
+                        cx="648"
+                        cy="-276.36566"
+                        rx="12.5418844783557"
+                        ry="11.36566"
+                        fill="white"
+                    />
+          <ellipse
+                        cx="648"
+                        cy="-276.36566"
+                        rx="12.5418844783557"
+                        ry="11.36566"
+                        stroke="black"
+                        stroke-linecap="butt"
+                        stroke-linejoin="round"
+                        stroke-width="1.6306387"
+                    />
+        </g>
+        <g id="Graphic_31">
+          <title>path3274</title>
+          <line
+                        x1="635.4864"
+                        y1="-276.76197"
+                        x2="660.4724"
+                        y2="-276.76197"
+                        fill="#0a0"
+                    />
+          <line
+                        x1="635.4864"
+                        y1="-276.76197"
+                        x2="660.4724"
+                        y2="-276.76197"
+                        stroke="black"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="1.7237265"
+                    />
+        </g>
+        <g id="Graphic_30">
+          <title>path3276</title>
+          <line
+                        x1="647.8519"
+                        y1="-287.73675"
+                        x2="647.8519"
+                        y2="-265.09406"
+                        fill="#0a0"
+                    />
+          <line
+                        x1="647.8519"
+                        y1="-287.73675"
+                        x2="647.8519"
+                        y2="-265.09406"
+                        stroke="black"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="1.7237265"
+                    />
+        </g>
+      </g>
+      <g id="Graphic_28">
+        <rect x="633" y="-337.00057" width="30" height="27" fill="white" />
+        <rect
+                    x="633"
+                    y="-337.00057"
+                    width="30"
+                    height="27"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
+        <text transform="translate(638 -334.50057)" fill="black">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="16"
+                        font-weight="400"
+                        fill="black"
+                        x="6.072"
+                        y="17"
+                        xml:space="preserve"
+                    >F</tspan>
+        </text>
+      </g>
+      <g id="Graphic_27">
+        <text transform="translate(692 -333)" fill="black">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="16"
+                        font-weight="400"
+                        fill="black"
+                        x="0"
+                        y="17"
+                        xml:space="preserve"
+                    >12DE52</tspan>
+        </text>
+      </g>
+      <g id="Line_26">
+        <line
+                    x1="492.2674"
+                    y1="-363"
+                    x2="625.3211"
+                    y2="-288.98197"
+                    marker-end="url(#FilledArrow_Marker)"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="bevel"
+                    stroke-width="2"
+                />
+      </g>
+      <g id="Line_25">
+        <line
+                    x1="648"
+                    y1="-264.18468"
+                    x2="648"
+                    y2="-258.9"
+                    marker-end="url(#FilledArrow_Marker)"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="bevel"
+                    stroke-width="2"
+                />
+      </g>
+      <g id="Line_24">
+        <line
+                    x1="648"
+                    y1="-363"
+                    x2="648"
+                    y2="-349.90057"
+                    marker-end="url(#FilledArrow_Marker)"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="bevel"
+                    stroke-width="2"
+                />
+      </g>
+      <g id="Line_23">
+        <line
+                    x1="648"
+                    y1="-310.00057"
+                    x2="648"
+                    y2="-301.44664"
+                    marker-end="url(#FilledArrow_Marker)"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="bevel"
+                    stroke-width="2"
+                />
+      </g>
+      <g id="Line_22">
+        <path
+                    d="M 631.125 -363 L 579.2467 -321.49736 C 575.1862 -326.573 565.0349 -318.45197 569.0954 -313.37632 L 494.9482 -254.05857"
+                    marker-end="url(#FilledArrow_Marker)"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="bevel"
+                    stroke-width="2"
+                />
+      </g>
+      <g id="Line_21">
+        <line
+                    x1="692"
+                    y1="-322.56885"
+                    x2="675.8971"
+                    y2="-322.90984"
+                    marker-end="url(#FilledArrow_Marker)"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="bevel"
+                    stroke-width="2"
+                />
+      </g>
+      <g id="Graphic_37">
+        <text transform="translate(263.94 -460)" fill="black">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="16"
+                        font-weight="400"
+                        fill="black"
+                        x="0"
+                        y="17"
+                        xml:space="preserve"
+                    >Ver- und Entschlüsselung mit n Runden</tspan>
+        </text>
+      </g>
+      <g id="Graphic_38">
+        <text transform="translate(-27 -274.948) rotate(-90)" fill="black">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="16"
+                        font-weight="400"
+                        fill="black"
+                        x="0"
+                        y="17"
+                        xml:space="preserve"
+                    >Runde n</tspan>
+        </text>
+      </g>
+      <g id="Graphic_39">
+        <text transform="translate(369 -275.324) rotate(-90)" fill="black">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="16"
+                        font-weight="400"
+                        fill="black"
+                        x="0"
+                        y="17"
+                        xml:space="preserve"
+                    >Runde 1</tspan>
+        </text>
+      </g>
+      <g id="Graphic_41">
+        <text transform="translate(59.38975 -414)" fill="black">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="16"
+                        font-weight="400"
+                        fill="black"
+                        x="0"
+                        y="17"
+                        xml:space="preserve"
+                    >Verschlüsselungsrunde</tspan>
+        </text>
+      </g>
+      <g id="Graphic_42">
+        <text transform="translate(498.8761 -415)" fill="black">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="16"
+                        font-weight="400"
+                        fill="black"
+                        x="0"
+                        y="17"
+                        xml:space="preserve"
+                    >Entschlüsselungsrunde</tspan>
+        </text>
+      </g>
+      <g id="Line_43">
+        <line
+                    x1="354"
+                    y1="-417.51037"
+                    x2="354"
+                    y2="-210.51037"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                />
+      </g>
+      <g id="Graphic_49">
+        <rect x="-15" y="-183" width="180" height="27" fill="white" />
+        <rect
+                    x="-15"
+                    y="-183"
+                    width="180"
+                    height="27"
+                    stroke="#a5a5a5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
+        <text transform="translate(-10 -180.66797)" fill="#a5a5a5">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="16"
+                        font-weight="400"
+                        fill="#a5a5a5"
+                        x="2.2989375"
+                        y="17"
+                        xml:space="preserve"
+                    >F(03A6,12DE52) </tspan>
+          <tspan
+                        font-family="Apple Symbols"
+                        font-size="16"
+                        font-weight="400"
+                        fill="#a5a5a5"
+                        y="17"
+                        xml:space="preserve"
+                    >⊕</tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="16"
+                        font-weight="400"
+                        fill="#a5a5a5"
+                        y="17"
+                        xml:space="preserve"
+                    > DE7F</tspan>
+        </text>
+      </g>
+      <g id="Graphic_48">
+        <rect x="165" y="-183" width="180" height="27" fill="white" />
+        <rect
+                    x="165"
+                    y="-183"
+                    width="180"
+                    height="27"
+                    stroke="#a5a5a5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
+        <text transform="translate(170 -180.5)" fill="#a5a5a5">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="16"
+                        font-weight="400"
+                        fill="#a5a5a5"
+                        x="67.28"
+                        y="17"
+                        xml:space="preserve"
+                    >03A6</tspan>
+        </text>
+      </g>
+      <g id="Line_47">
+        <line
+                    x1="113.57143"
+                    y1="-219"
+                    x2="204.2528"
+                    y2="-187.26152"
+                    marker-end="url(#FilledArrow_Marker_2)"
+                    stroke="#a5a5a5"
+                    stroke-linecap="round"
+                    stroke-linejoin="bevel"
+                    stroke-width="2"
+                />
+      </g>
+      <g id="Line_45">
+        <path
+                    d="M 216.42857 -219 L 171.13508 -203.14728 C 168.9878 -209.28236 156.71764 -204.9878 158.86492 -198.85272 L 125.7472 -187.26152"
+                    marker-end="url(#FilledArrow_Marker_2)"
+                    stroke="#a5a5a5"
+                    stroke-linecap="round"
+                    stroke-linejoin="bevel"
+                    stroke-width="2"
+                />
+      </g>
+      <g id="Graphic_50">
+        <text transform="translate(190.164 -211)" fill="#a5a5a5">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="16"
+                        font-weight="400"
+                        fill="#a5a5a5"
+                        x="5115908e-19"
+                        y="17"
+                        xml:space="preserve"
+                    >swap</tspan>
+        </text>
+      </g>
+      <g id="Line_51">
+        <line
+                    x1="354"
+                    y1="-153.51037"
+                    x2="354"
+                    y2="-210.51037"
+                    stroke="#a5a5a5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                />
+      </g>
+    </g>
+  </g>
+</svg>

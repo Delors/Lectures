@@ -1,0 +1,534 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+    "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg
+    xmlns="http://www.w3.org/2000/svg"
+    version="1.1"
+    xmlns:xl="http://www.w3.org/1999/xlink"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    viewBox="-69 28 1010 353"
+    width="433"
+    height="151"
+>
+<style>
+  @import url('/LectureDoc2/ext/fonts/ld-fonts.css');
+</style>
+<defs>
+    <marker
+            orient="auto"
+            overflow="visible"
+            markerUnits="strokeWidth"
+            id="FilledArrow_Marker"
+            stroke-linejoin="miter"
+            stroke-miterlimit="10"
+            viewBox="-1 -3 6 6"
+            markerWidth="6"
+            markerHeight="6"
+            color="black"
+        >
+      <g>
+        <path
+                    d="M 3.7333333 0 L 0 -1.4 L 0 1.4 Z"
+                    fill="currentColor"
+                    stroke="currentColor"
+                    stroke-width="1"
+                />
+      </g>
+    </marker>
+  </defs>
+  <metadata> Produced by OmniGraffle 8.0\n2025-05-13 15:32:17 +0000</metadata>
+  <g
+        id="stromchiffre"
+        stroke-dasharray="none"
+        stroke="none"
+        stroke-opacity="1"
+        fill="none"
+        fill-opacity="1"
+    >
+    <title>stromchiffre</title>
+    <g id="stromchiffre_Layer_1">
+      <title>Layer 1</title>
+      <g id="Graphic_73">
+        <path
+                    d="M 551.5625 29.745483 L 736.5 29.745483 C 744.7843 29.745483 751.5 36.461212 751.5 44.745483 L 751.5 366.04376 C 751.5 374.32803 744.7843 381.04376 736.5 381.04376 L 551.5625 381.04376 C 543.2782 381.04376 536.5625 374.32803 536.5625 366.04376 L 536.5625 44.745483 C 536.5625 36.461212 543.2782 29.745483 551.5625 29.745483 Z"
+                    fill="#b4c9ef"
+                />
+        <text transform="translate(541.5625 338)" fill="#344463">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="28"
+                        font-weight="400"
+                        fill="#344463"
+                        x="1.71075"
+                        y="30"
+                    >Entschlüsselung</tspan>
+        </text>
+      </g>
+      <g id="Graphic_71">
+        <path
+                    d="M 141.32264 29 L 326.26014 29 C 334.5444 29 341.26014 35.71573 341.26014 44 L 341.26014 365.29827 C 341.26014 373.58255 334.5444 380.29827 326.26014 380.29827 L 141.32264 380.29827 C 133.03837 380.29827 126.32264 373.58255 126.32264 365.29827 L 126.32264 44 C 126.32264 35.71573 133.03837 29 141.32264 29 Z"
+                    fill="#b4c9ef"
+                />
+        <text transform="translate(131.32264 338)" fill="#344463">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="28"
+                        font-weight="400"
+                        fill="#344463"
+                        x="1.43075"
+                        y="30"
+                    >Verschlüsselung</tspan>
+        </text>
+      </g>
+      <g id="Graphic_13">
+        <text transform="translate(205 197.75)" fill="black">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="28"
+                        font-style="italic"
+                        font-weight="400"
+                        fill="black"
+                        x="2.626625"
+                        y="30"
+                    >k</tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="22"
+                        font-style="italic"
+                        font-weight="400"
+                        fill="black"
+                        y="42"
+                    >i</tspan>
+        </text>
+      </g>
+      <g id="Graphic_17">
+        <text transform="translate(4.5202736 258.5)" fill="black">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="28"
+                        font-weight="400"
+                        fill="black"
+                        x="6.64725"
+                        y="30"
+                    >Klartext</tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="28"
+                        font-weight="400"
+                        fill="black"
+                        x="36.59825"
+                        y="68"
+                    >(</tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="28"
+                        font-style="italic"
+                        font-weight="400"
+                        fill="black"
+                        y="68"
+                    >p</tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="22"
+                        font-style="italic"
+                        font-weight="400"
+                        fill="black"
+                        y="80"
+                    >i</tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="28"
+                        font-weight="400"
+                        fill="black"
+                        y="68"
+                    >)</tspan>
+        </text>
+      </g>
+      <g id="Line_61">
+        <line
+                    x1="233.6992"
+                    y1="171"
+                    x2="233.91318"
+                    y2="255.10014"
+                    marker-end="url(#FilledArrow_Marker)"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="3"
+                />
+      </g>
+      <g id="Graphic_33">
+        <text transform="translate(353.47973 257.5)" fill="black">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="28"
+                        font-weight="400"
+                        fill="black"
+                        x="13.73525"
+                        y="30"
+                    >Geheimtext</tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="28"
+                        font-weight="400"
+                        fill="black"
+                        x="69.26425"
+                        y="68"
+                    >(</tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="28"
+                        font-style="italic"
+                        font-weight="400"
+                        fill="black"
+                        y="68"
+                    >c</tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="22"
+                        font-style="italic"
+                        font-weight="400"
+                        fill="black"
+                        y="80"
+                    >i</tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="28"
+                        font-weight="400"
+                        fill="black"
+                        y="68"
+                    >)</tspan>
+        </text>
+      </g>
+      <g id="Graphic_34">
+        <text transform="translate(756.5 258.5)" fill="black">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="28"
+                        font-weight="400"
+                        fill="black"
+                        x="11.64725"
+                        y="30"
+                    >Klartext</tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="28"
+                        font-weight="400"
+                        fill="black"
+                        x="41.59825"
+                        y="68"
+                    >(</tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="28"
+                        font-style="italic"
+                        font-weight="400"
+                        fill="black"
+                        y="68"
+                    >p</tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="22"
+                        font-style="italic"
+                        font-weight="400"
+                        fill="black"
+                        y="80"
+                    >i</tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="28"
+                        font-weight="400"
+                        fill="black"
+                        y="68"
+                    >)</tspan>
+        </text>
+      </g>
+      <g id="Graphic_57">
+        <circle cx="234.03125" cy="301.5" r="29.000046339155" fill="white" />
+        <circle
+                    cx="234.03125"
+                    cy="301.5"
+                    r="29.000046339155"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="3"
+                />
+      </g>
+      <g id="Graphic_58">
+        <circle cx="644.03125" cy="301.5" r="29.000046339155" fill="white" />
+        <circle
+                    cx="644.03125"
+                    cy="301.5"
+                    r="29.000046339155"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="3"
+                />
+      </g>
+      <g id="Graphic_59">
+        <text transform="translate(615 197.75)" fill="black">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="28"
+                        font-style="italic"
+                        font-weight="400"
+                        fill="black"
+                        x="2.626625"
+                        y="30"
+                    >k</tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="22"
+                        font-style="italic"
+                        font-weight="400"
+                        fill="black"
+                        y="42"
+                    >i</tspan>
+        </text>
+      </g>
+      <g id="Graphic_62">
+        <path
+                    d="M 173.53125 39 L 293.53125 39 C 301.81552 39 308.53125 45.71573 308.53125 54 L 308.53125 156 C 308.53125 164.28427 301.81552 171 293.53125 171 L 173.53125 171 C 165.24698 171 158.53125 164.28427 158.53125 156 L 158.53125 54 C 158.53125 45.71573 165.24698 39 173.53125 39 Z"
+                    fill="#e2e2e2"
+                />
+        <text transform="translate(163.53125 67)" fill="#344463">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="28"
+                        font-weight="400"
+                        fill="#344463"
+                        x="12.208"
+                        y="30"
+                    >Bitstrom-</tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="28"
+                        font-weight="400"
+                        fill="#344463"
+                        x="7.896"
+                        y="68"
+                    >generator</tspan>
+        </text>
+      </g>
+      <g id="Line_63">
+        <line
+                    x1="644.03125"
+                    y1="171"
+                    x2="644.03125"
+                    y2="255.1"
+                    marker-end="url(#FilledArrow_Marker)"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="3"
+                />
+      </g>
+      <g id="Graphic_64">
+        <path
+                    d="M 584.03125 39 L 704.03125 39 C 712.3155 39 719.03125 45.71573 719.03125 54 L 719.03125 156 C 719.03125 164.28427 712.3155 171 704.03125 171 L 584.03125 171 C 575.747 171 569.03125 164.28427 569.03125 156 L 569.03125 54 C 569.03125 45.71573 575.747 39 584.03125 39 Z"
+                    fill="#e2e2e2"
+                />
+        <text transform="translate(574.03125 67)" fill="#344463">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="28"
+                        font-weight="400"
+                        fill="#344463"
+                        x="12.208"
+                        y="30"
+                    >Bitstrom-</tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="28"
+                        font-weight="400"
+                        fill="#344463"
+                        x="7.896"
+                        y="68"
+                    >generator</tspan>
+        </text>
+      </g>
+      <g id="Line_65">
+        <line
+                    x1="119.58277"
+                    y1="301.5"
+                    x2="187.63123"
+                    y2="301.5"
+                    marker-end="url(#FilledArrow_Marker)"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="3"
+                />
+      </g>
+      <g id="Line_66">
+        <line
+                    x1="264.5309"
+                    y1="301.35157"
+                    x2="332.5799"
+                    y2="301.0204"
+                    marker-end="url(#FilledArrow_Marker)"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="3"
+                />
+      </g>
+      <g id="Line_67">
+        <line
+                    x1="530.5422"
+                    y1="300.9451"
+                    x2="597.6318"
+                    y2="301.27313"
+                    marker-end="url(#FilledArrow_Marker)"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="3"
+                />
+      </g>
+      <g id="Line_68">
+        <line
+                    x1="674.5313"
+                    y1="301.5"
+                    x2="735.6"
+                    y2="301.5"
+                    marker-end="url(#FilledArrow_Marker)"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="3"
+                />
+      </g>
+      <g id="Graphic_69">
+        <text transform="translate(216.34725 257)" fill="black">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="64"
+                        font-weight="400"
+                        fill="black"
+                        x="0"
+                        y="68"
+                    >+</tspan>
+        </text>
+      </g>
+      <g id="Graphic_70">
+        <text transform="translate(626.84725 257)" fill="black">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="64"
+                        font-weight="400"
+                        fill="black"
+                        x="0"
+                        y="68"
+                    >+</tspan>
+        </text>
+      </g>
+      <g id="Graphic_74">
+        <text transform="translate(-59.234375 88)" fill="black">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="28"
+                        font-weight="400"
+                        fill="black"
+                        x="7.357625"
+                        y="30"
+                    >Schlüssel(</tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="28"
+                        font-style="italic"
+                        font-weight="400"
+                        fill="black"
+                        y="30"
+                    >K</tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="28"
+                        font-weight="400"
+                        fill="black"
+                        y="30"
+                    >)</tspan>
+        </text>
+      </g>
+      <g id="Graphic_75">
+        <text transform="translate(353 88)" fill="black">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="28"
+                        font-weight="400"
+                        fill="black"
+                        x="7.357625"
+                        y="30"
+                    >Schlüssel(</tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="28"
+                        font-style="italic"
+                        font-weight="400"
+                        fill="black"
+                        y="30"
+                    >K</tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="28"
+                        font-weight="400"
+                        fill="black"
+                        y="30"
+                    >)</tspan>
+        </text>
+      </g>
+      <g id="Line_76">
+        <line
+                    x1="105.29688"
+                    y1="106.20408"
+                    x2="142.63195"
+                    y2="105.85351"
+                    marker-end="url(#FilledArrow_Marker)"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="3"
+                />
+      </g>
+      <g id="Line_77">
+        <line
+                    x1="517.53125"
+                    y1="106.19754"
+                    x2="553.13196"
+                    y2="105.86052"
+                    marker-end="url(#FilledArrow_Marker)"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="3"
+                />
+      </g>
+      <g id="Graphic_78">
+        <text transform="translate(931.0625 100.84126) rotate(90)" fill="black">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="28"
+                        font-weight="400"
+                        fill="black"
+                        x="32.136"
+                        y="30"
+                    >Stromchiffre</tspan>
+        </text>
+      </g>
+      <g id="Line_79">
+        <line
+                    x1="889.0625"
+                    y1="36.76778"
+                    x2="889.0625"
+                    y2="381.04376"
+                    stroke="#797979"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                />
+      </g>
+    </g>
+  </g>
+</svg>

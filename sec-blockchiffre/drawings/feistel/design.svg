@@ -1,0 +1,2153 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+    "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg
+    xmlns="http://www.w3.org/2000/svg"
+    version="1.1"
+    xmlns:xl="http://www.w3.org/1999/xlink"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    viewBox="1 30 547 635"
+    width="342"
+    height="396"
+>
+<style>
+  @import url('/LectureDoc2/ext/fonts/ld-fonts.css');
+</style>
+  <defs>
+    <marker
+            orient="auto"
+            overflow="visible"
+            markerUnits="strokeWidth"
+            id="FilledArrow_Marker"
+            stroke-linejoin="miter"
+            stroke-miterlimit="10"
+            viewBox="-1 -3 7 6"
+            markerWidth="7"
+            markerHeight="6"
+            color="black"
+        >
+      <g>
+        <path
+                    d="M 4.8 0 L 0 -1.8 L 0 1.8 Z"
+                    fill="currentColor"
+                    stroke="currentColor"
+                    stroke-width="1"
+                />
+      </g>
+    </marker>
+  </defs>
+  <metadata> Produced by OmniGraffle 8.0\n2025-05-13 19:29:25 +0000</metadata>
+  <g
+        id="design"
+        stroke-dasharray="none"
+        stroke="none"
+        stroke-opacity="1"
+        fill="none"
+        fill-opacity="1"
+    >
+    <title>design</title>
+    <g id="design_Layer_1">
+      <title>Layer 1</title>
+      <g id="Line_388">
+        <line
+                    x1="101.31897"
+                    y1="591"
+                    x2="148.72514"
+                    y2="610.2078"
+                    marker-end="url(#FilledArrow_Marker)"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="bevel"
+                    stroke-width="2"
+                />
+      </g>
+      <g id="Graphic_254">
+        <rect x="2" y="54" width="126" height="27" fill="#c0ffc0" />
+        <rect
+                    x="2"
+                    y="54"
+                    width="126"
+                    height="27"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
+        <text transform="translate(7 54.5)" fill="black">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="16"
+                        font-weight="400"
+                        fill="black"
+                        x="51.0785"
+                        y="17"
+                        xml:space="preserve"
+                    >L</tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="11"
+                        font-weight="400"
+                        fill="black"
+                        y="23"
+                        xml:space="preserve"
+                    >0</tspan>
+        </text>
+      </g>
+      <g id="Graphic_257">
+        <rect x="128" y="54" width="126" height="27" fill="#c0ffc0" />
+        <rect
+                    x="128"
+                    y="54"
+                    width="126"
+                    height="27"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
+        <text transform="translate(133 54.5)" fill="black">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="16"
+                        font-weight="400"
+                        fill="black"
+                        x="50.3425"
+                        y="17"
+                        xml:space="preserve"
+                    >R</tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="11"
+                        font-weight="400"
+                        fill="black"
+                        y="23"
+                        xml:space="preserve"
+                    >0</tspan>
+        </text>
+      </g>
+      <g id="Graphic_259">
+        <rect x="2" y="198" width="126" height="27" fill="white" />
+        <rect
+                    x="2"
+                    y="198"
+                    width="126"
+                    height="27"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
+        <text transform="translate(7 198.5)" fill="black">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="11"
+                        font-weight="400"
+                        fill="black"
+                        x="34.53172"
+                        y="23"
+                        xml:space="preserve"
+                    > </tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="16"
+                        font-weight="400"
+                        fill="black"
+                        y="17"
+                        xml:space="preserve"
+                    >L</tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="11"
+                        font-weight="400"
+                        fill="black"
+                        y="23"
+                        xml:space="preserve"
+                    >1  </tspan>
+          <tspan
+                        font-family="Apple Symbols"
+                        font-size="16"
+                        font-weight="400"
+                        fill="#a5a5a5"
+                        y="17"
+                        xml:space="preserve"
+                    >≙</tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="16"
+                        font-weight="400"
+                        fill="#a5a5a5"
+                        y="17"
+                        xml:space="preserve"
+                    >R</tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="11"
+                        font-weight="400"
+                        fill="#a5a5a5"
+                        y="23"
+                        xml:space="preserve"
+                    >0</tspan>
+        </text>
+      </g>
+      <g id="Graphic_258">
+        <rect x="128" y="198" width="126" height="27" fill="white" />
+        <rect
+                    x="128"
+                    y="198"
+                    width="126"
+                    height="27"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
+        <text transform="translate(133 198.5)" fill="black">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="16"
+                        font-weight="400"
+                        fill="black"
+                        x="50.3425"
+                        y="17"
+                        xml:space="preserve"
+                    >R</tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="11"
+                        font-weight="400"
+                        fill="black"
+                        y="23"
+                        xml:space="preserve"
+                    >1</tspan>
+        </text>
+      </g>
+      <g id="Group_268">
+        <title>g3270</title>
+        <g id="Graphic_271">
+          <title>path3272</title>
+          <ellipse
+                        cx="191.54188"
+                        cy="167.08234"
+                        rx="12.5418844783557"
+                        ry="11.36566"
+                        fill="white"
+                    />
+          <ellipse
+                        cx="191.54188"
+                        cy="167.08234"
+                        rx="12.5418844783557"
+                        ry="11.36566"
+                        stroke="black"
+                        stroke-linecap="butt"
+                        stroke-linejoin="round"
+                        stroke-width="1.6306387"
+                    />
+        </g>
+        <g id="Graphic_270">
+          <title>path3274</title>
+          <line
+                        x1="179.02828"
+                        y1="166.68603"
+                        x2="204.01425"
+                        y2="166.68603"
+                        fill="#0a0"
+                    />
+          <line
+                        x1="179.02828"
+                        y1="166.68603"
+                        x2="204.01425"
+                        y2="166.68603"
+                        stroke="black"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="1.7237265"
+                    />
+        </g>
+        <g id="Graphic_269">
+          <title>path3276</title>
+          <line
+                        x1="191.39377"
+                        y1="155.71125"
+                        x2="191.39377"
+                        y2="178.35394"
+                        fill="#0a0"
+                    />
+          <line
+                        x1="191.39377"
+                        y1="155.71125"
+                        x2="191.39377"
+                        y2="178.35394"
+                        stroke="black"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="1.7237265"
+                    />
+        </g>
+      </g>
+      <g id="Graphic_284">
+        <rect x="176" y="106.448" width="30" height="27" fill="white" />
+        <rect
+                    x="176"
+                    y="106.448"
+                    width="30"
+                    height="27"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
+        <text transform="translate(181 108.948)" fill="black">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="16"
+                        font-weight="400"
+                        fill="black"
+                        x="6.072"
+                        y="17"
+                        xml:space="preserve"
+                    >F</tspan>
+        </text>
+      </g>
+      <g id="Graphic_285">
+        <text transform="translate(232.97172 106.948)" fill="black">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="16"
+                        font-weight="400"
+                        fill="black"
+                        x="0"
+                        y="17"
+                        xml:space="preserve"
+                    >K</tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="11"
+                        font-weight="400"
+                        fill="black"
+                        y="23"
+                        xml:space="preserve"
+                    >1</tspan>
+        </text>
+      </g>
+      <g id="Line_294">
+        <line
+                    x1="82.1548"
+                    y1="81"
+                    x2="171.29088"
+                    y2="151.14577"
+                    marker-end="url(#FilledArrow_Marker)"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="bevel"
+                    stroke-width="2"
+                />
+      </g>
+      <g id="Line_295">
+        <line
+                    x1="191.39329"
+                    y1="179.26258"
+                    x2="191.32206"
+                    y2="185.10096"
+                    marker-end="url(#FilledArrow_Marker)"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="bevel"
+                    stroke-width="2"
+                />
+      </g>
+      <g id="Line_296">
+        <line
+                    x1="191"
+                    y1="81"
+                    x2="191"
+                    y2="93.548"
+                    marker-end="url(#FilledArrow_Marker)"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="bevel"
+                    stroke-width="2"
+                />
+      </g>
+      <g id="Line_297">
+        <line
+                    x1="191.1552"
+                    y1="133.448"
+                    x2="191.25356"
+                    y2="142.00287"
+                    marker-end="url(#FilledArrow_Marker)"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="bevel"
+                    stroke-width="2"
+                />
+      </g>
+      <g id="Line_298">
+        <path
+                    d="M 179.1875 81 L 143.89907 121.32963 C 139.00733 117.04935 130.44677 126.83285 135.33851 131.11313 L 85.30721 188.29176"
+                    marker-end="url(#FilledArrow_Marker)"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="bevel"
+                    stroke-width="2"
+                />
+      </g>
+      <g id="Line_299">
+        <line
+                    x1="227.97172"
+                    y1="119.948"
+                    x2="218.9"
+                    y2="119.948"
+                    marker-end="url(#FilledArrow_Marker)"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="bevel"
+                    stroke-width="2"
+                />
+      </g>
+      <g id="Graphic_313">
+        <rect x="2" y="348" width="126" height="27" fill="white" />
+        <rect
+                    x="2"
+                    y="348"
+                    width="126"
+                    height="27"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
+        <text transform="translate(7 348.5)" fill="black">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="11"
+                        font-weight="400"
+                        fill="black"
+                        x="34.53172"
+                        y="23"
+                        xml:space="preserve"
+                    > </tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="16"
+                        font-weight="400"
+                        fill="black"
+                        y="17"
+                        xml:space="preserve"
+                    >L</tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="11"
+                        font-weight="400"
+                        fill="black"
+                        y="23"
+                        xml:space="preserve"
+                    >2  </tspan>
+          <tspan
+                        font-family="Apple Symbols"
+                        font-size="16"
+                        font-weight="400"
+                        fill="#a5a5a5"
+                        y="17"
+                        xml:space="preserve"
+                    >≙</tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="16"
+                        font-weight="400"
+                        fill="#a5a5a5"
+                        y="17"
+                        xml:space="preserve"
+                    >R</tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="11"
+                        font-weight="400"
+                        fill="#a5a5a5"
+                        y="23"
+                        xml:space="preserve"
+                    >1</tspan>
+        </text>
+      </g>
+      <g id="Graphic_312">
+        <rect x="128" y="348" width="126" height="27" fill="white" />
+        <rect
+                    x="128"
+                    y="348"
+                    width="126"
+                    height="27"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
+        <text transform="translate(133 348.5)" fill="black">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="16"
+                        font-weight="400"
+                        fill="black"
+                        x="50.3425"
+                        y="17"
+                        xml:space="preserve"
+                    >R</tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="11"
+                        font-weight="400"
+                        fill="black"
+                        y="23"
+                        xml:space="preserve"
+                    >2</tspan>
+        </text>
+      </g>
+      <g id="Group_308">
+        <title>g3270</title>
+        <g id="Graphic_311">
+          <title>path3272</title>
+          <ellipse
+                        cx="191.54188"
+                        cy="318.3456"
+                        rx="12.5418844783557"
+                        ry="11.36566"
+                        fill="white"
+                    />
+          <ellipse
+                        cx="191.54188"
+                        cy="318.3456"
+                        rx="12.5418844783557"
+                        ry="11.36566"
+                        stroke="black"
+                        stroke-linecap="butt"
+                        stroke-linejoin="round"
+                        stroke-width="1.6306387"
+                    />
+        </g>
+        <g id="Graphic_310">
+          <title>path3274</title>
+          <line
+                        x1="179.02828"
+                        y1="317.94928"
+                        x2="204.01425"
+                        y2="317.94928"
+                        fill="#0a0"
+                    />
+          <line
+                        x1="179.02828"
+                        y1="317.94928"
+                        x2="204.01425"
+                        y2="317.94928"
+                        stroke="black"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="1.7237265"
+                    />
+        </g>
+        <g id="Graphic_309">
+          <title>path3276</title>
+          <line x1="191.39377" y1="306.9745" x2="191.39377" y2="329.6172" fill="#0a0" />
+          <line
+                        x1="191.39377"
+                        y1="306.9745"
+                        x2="191.39377"
+                        y2="329.6172"
+                        stroke="black"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="1.7237265"
+                    />
+        </g>
+      </g>
+      <g id="Graphic_307">
+        <rect x="176" y="257.71125" width="30" height="27" fill="white" />
+        <rect
+                    x="176"
+                    y="257.71125"
+                    width="30"
+                    height="27"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
+        <text transform="translate(181 260.21125)" fill="black">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="16"
+                        font-weight="400"
+                        fill="black"
+                        x="6.072"
+                        y="17"
+                        xml:space="preserve"
+                    >F</tspan>
+        </text>
+      </g>
+      <g id="Graphic_306">
+        <text transform="translate(232.97172 258.21125)" fill="black">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="16"
+                        font-weight="400"
+                        fill="black"
+                        x="0"
+                        y="17"
+                        xml:space="preserve"
+                    >K</tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="11"
+                        font-weight="400"
+                        fill="black"
+                        y="23"
+                        xml:space="preserve"
+                    >2</tspan>
+        </text>
+      </g>
+      <g id="Line_305">
+        <line
+                    x1="80.98864"
+                    y1="225"
+                    x2="171.88336"
+                    y2="301.74692"
+                    marker-end="url(#FilledArrow_Marker)"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="bevel"
+                    stroke-width="2"
+                />
+      </g>
+      <g id="Line_304">
+        <line
+                    x1="191.38894"
+                    y1="330.5258"
+                    x2="191.3315"
+                    y2="335.101"
+                    marker-end="url(#FilledArrow_Marker)"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="bevel"
+                    stroke-width="2"
+                />
+      </g>
+      <g id="Line_303">
+        <line
+                    x1="191"
+                    y1="225"
+                    x2="191"
+                    y2="244.81125"
+                    marker-end="url(#FilledArrow_Marker)"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="bevel"
+                    stroke-width="2"
+                />
+      </g>
+      <g id="Line_302">
+        <line
+                    x1="191.1552"
+                    y1="284.71125"
+                    x2="191.25356"
+                    y2="293.2661"
+                    marker-end="url(#FilledArrow_Marker)"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="bevel"
+                    stroke-width="2"
+                />
+      </g>
+      <g id="Line_301">
+        <path
+                    d="M 179.66 225 L 142.89713 268.76532 C 137.92005 264.58457 129.55855 274.53873 134.53564 278.71948 L 84.63718 338.1224"
+                    marker-end="url(#FilledArrow_Marker)"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="bevel"
+                    stroke-width="2"
+                />
+      </g>
+      <g id="Line_300">
+        <line
+                    x1="227.97172"
+                    y1="271.21125"
+                    x2="218.9"
+                    y2="271.21125"
+                    marker-end="url(#FilledArrow_Marker)"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="bevel"
+                    stroke-width="2"
+                />
+      </g>
+      <g id="Graphic_331">
+        <rect x="5" y="414" width="126" height="27" fill="white" />
+        <rect
+                    x="5"
+                    y="414"
+                    width="126"
+                    height="27"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
+        <text transform="translate(10 414.5)" fill="black">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="11"
+                        font-weight="400"
+                        fill="black"
+                        x="44.858"
+                        y="23"
+                        xml:space="preserve"
+                    > </tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="16"
+                        font-weight="400"
+                        fill="black"
+                        y="17"
+                        xml:space="preserve"
+                    >L</tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="11"
+                        font-weight="400"
+                        fill="black"
+                        y="23"
+                        xml:space="preserve"
+                    >n-1</tspan>
+        </text>
+      </g>
+      <g id="Graphic_330">
+        <rect x="131" y="414" width="126" height="27" fill="white" />
+        <rect
+                    x="131"
+                    y="414"
+                    width="126"
+                    height="27"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
+        <text transform="translate(136 414.5)" fill="black">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="16"
+                        font-weight="400"
+                        fill="black"
+                        x="45.464"
+                        y="17"
+                        xml:space="preserve"
+                    >R</tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="11"
+                        font-weight="400"
+                        fill="black"
+                        y="23"
+                        xml:space="preserve"
+                    >n-1</tspan>
+        </text>
+      </g>
+      <g id="Graphic_327">
+        <rect x="5" y="564" width="126" height="27" fill="white" />
+        <rect
+                    x="5"
+                    y="564"
+                    width="126"
+                    height="27"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
+        <text transform="translate(10 564.5)" fill="black">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="11"
+                        font-weight="400"
+                        fill="black"
+                        x="29.39472"
+                        y="23"
+                        xml:space="preserve"
+                    > </tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="16"
+                        font-weight="400"
+                        fill="black"
+                        y="17"
+                        xml:space="preserve"
+                    >L</tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="11"
+                        font-weight="400"
+                        fill="black"
+                        y="23"
+                        xml:space="preserve"
+                    >n  </tspan>
+          <tspan
+                        font-family="Apple Symbols"
+                        font-size="16"
+                        font-weight="400"
+                        fill="#a5a5a5"
+                        y="17"
+                        xml:space="preserve"
+                    >≙</tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="16"
+                        font-weight="400"
+                        fill="#a5a5a5"
+                        y="17"
+                        xml:space="preserve"
+                    >R</tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="11"
+                        font-weight="400"
+                        fill="#a5a5a5"
+                        y="23"
+                        xml:space="preserve"
+                    >n-1</tspan>
+        </text>
+      </g>
+      <g id="Graphic_326">
+        <rect x="131" y="564" width="126" height="27" fill="white" />
+        <rect
+                    x="131"
+                    y="564"
+                    width="126"
+                    height="27"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
+        <text transform="translate(136 564.5)" fill="black">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="16"
+                        font-weight="400"
+                        fill="black"
+                        x="50.084"
+                        y="17"
+                        xml:space="preserve"
+                    >R</tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="11"
+                        font-weight="400"
+                        fill="black"
+                        y="23"
+                        xml:space="preserve"
+                    >n</tspan>
+        </text>
+      </g>
+      <g id="Group_322">
+        <title>g3270</title>
+        <g id="Graphic_325">
+          <title>path3272</title>
+          <ellipse
+                        cx="194"
+                        cy="531.58234"
+                        rx="12.5418844783557"
+                        ry="11.36566"
+                        fill="white"
+                    />
+          <ellipse
+                        cx="194"
+                        cy="531.58234"
+                        rx="12.5418844783557"
+                        ry="11.36566"
+                        stroke="black"
+                        stroke-linecap="butt"
+                        stroke-linejoin="round"
+                        stroke-width="1.6306387"
+                    />
+        </g>
+        <g id="Graphic_324">
+          <title>path3274</title>
+          <line x1="181.4864" y1="531.186" x2="206.47236" y2="531.186" fill="#0a0" />
+          <line
+                        x1="181.4864"
+                        y1="531.186"
+                        x2="206.47236"
+                        y2="531.186"
+                        stroke="black"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="1.7237265"
+                    />
+        </g>
+        <g id="Graphic_323">
+          <title>path3276</title>
+          <line x1="193.8519" y1="520.21125" x2="193.8519" y2="542.85394" fill="#0a0" />
+          <line
+                        x1="193.8519"
+                        y1="520.21125"
+                        x2="193.8519"
+                        y2="542.85394"
+                        stroke="black"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="1.7237265"
+                    />
+        </g>
+      </g>
+      <g id="Graphic_321">
+        <rect x="179" y="470.948" width="30" height="27" fill="white" />
+        <rect
+                    x="179"
+                    y="470.948"
+                    width="30"
+                    height="27"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
+        <text transform="translate(184 473.448)" fill="black">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="16"
+                        font-weight="400"
+                        fill="black"
+                        x="6.072"
+                        y="17"
+                        xml:space="preserve"
+                    >F</tspan>
+        </text>
+      </g>
+      <g id="Graphic_320">
+        <text transform="translate(232.45472 471.448)" fill="black">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="16"
+                        font-weight="400"
+                        fill="black"
+                        x="0"
+                        y="17"
+                        xml:space="preserve"
+                    >K</tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="11"
+                        font-weight="400"
+                        fill="black"
+                        y="23"
+                        xml:space="preserve"
+                    >n</tspan>
+        </text>
+      </g>
+      <g id="Line_319">
+        <line
+                    x1="84.34283"
+                    y1="441"
+                    x2="174.15383"
+                    y2="515.1884"
+                    marker-end="url(#FilledArrow_Marker)"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="bevel"
+                    stroke-width="2"
+                />
+      </g>
+      <g id="Line_318">
+        <line
+                    x1="194"
+                    y1="543.7633"
+                    x2="194"
+                    y2="551.1"
+                    marker-end="url(#FilledArrow_Marker)"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="bevel"
+                    stroke-width="2"
+                />
+      </g>
+      <g id="Line_317">
+        <line
+                    x1="194"
+                    y1="441"
+                    x2="194"
+                    y2="458.048"
+                    marker-end="url(#FilledArrow_Marker)"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="bevel"
+                    stroke-width="2"
+                />
+      </g>
+      <g id="Line_316">
+        <line
+                    x1="194"
+                    y1="497.948"
+                    x2="194"
+                    y2="506.50136"
+                    marker-end="url(#FilledArrow_Marker)"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="bevel"
+                    stroke-width="2"
+                />
+      </g>
+      <g id="Line_315">
+        <path
+                    d="M 182.66 441 L 146.56608 483.96895 C 141.589 479.7882 133.2275 489.74236 138.20459 493.9231 L 87.63718 554.1224"
+                    marker-end="url(#FilledArrow_Marker)"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="bevel"
+                    stroke-width="2"
+                />
+      </g>
+      <g id="Line_314">
+        <line
+                    x1="227.45472"
+                    y1="484.448"
+                    x2="221.9"
+                    y2="484.448"
+                    marker-end="url(#FilledArrow_Marker)"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="bevel"
+                    stroke-width="2"
+                />
+      </g>
+      <g id="Graphic_332">
+        <text transform="translate(101 30)" fill="black">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="16"
+                        font-weight="400"
+                        fill="black"
+                        x="0"
+                        y="17"
+                        xml:space="preserve"
+                    >Klartext</tspan>
+        </text>
+      </g>
+      <g id="Graphic_333">
+        <text transform="translate(87.59425 642.052)" fill="black">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="16"
+                        font-weight="400"
+                        fill="black"
+                        x="0"
+                        y="17"
+                        xml:space="preserve"
+                    >Geheimtext</tspan>
+        </text>
+      </g>
+      <g id="Line_335">
+        <line
+                    x1="129"
+                    y1="382.552"
+                    x2="129"
+                    y2="406.448"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-dasharray="4.0,16.0"
+                    stroke-width="4"
+                />
+      </g>
+      <g id="Graphic_336">
+        <text transform="translate(371 30)" fill="black">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="16"
+                        font-weight="400"
+                        fill="black"
+                        x="0"
+                        y="17"
+                        xml:space="preserve"
+                    >Geheimtext</tspan>
+        </text>
+      </g>
+      <g id="Graphic_337">
+        <text transform="translate(381.4731 642.052)" fill="black">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="16"
+                        font-weight="400"
+                        fill="black"
+                        x="0"
+                        y="17"
+                        xml:space="preserve"
+                    >Klartext</tspan>
+        </text>
+      </g>
+      <g id="Graphic_384">
+        <rect x="287" y="54" width="126" height="27" fill="#ffbfc0" />
+        <rect
+                    x="287"
+                    y="54"
+                    width="126"
+                    height="27"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
+        <text transform="translate(292 54.5)" fill="black">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="16"
+                        font-weight="400"
+                        fill="black"
+                        x="50.82"
+                        y="17"
+                        xml:space="preserve"
+                    >L</tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="11"
+                        font-weight="400"
+                        fill="black"
+                        y="23"
+                        xml:space="preserve"
+                    >n</tspan>
+        </text>
+      </g>
+      <g id="Graphic_383">
+        <rect x="413" y="54" width="126" height="27" fill="#ffbfc0" />
+        <rect
+                    x="413"
+                    y="54"
+                    width="126"
+                    height="27"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
+        <text transform="translate(418 54.5)" fill="black">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="16"
+                        font-weight="400"
+                        fill="black"
+                        x="50.084"
+                        y="17"
+                        xml:space="preserve"
+                    >R</tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="11"
+                        font-weight="400"
+                        fill="black"
+                        y="23"
+                        xml:space="preserve"
+                    >n</tspan>
+        </text>
+      </g>
+      <g id="Graphic_382">
+        <rect x="287" y="198" width="126" height="27" fill="white" />
+        <rect
+                    x="287"
+                    y="198"
+                    width="126"
+                    height="27"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
+        <text transform="translate(292 198.5)" fill="black">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="11"
+                        font-weight="400"
+                        fill="black"
+                        x="44.858"
+                        y="23"
+                        xml:space="preserve"
+                    > </tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="16"
+                        font-weight="400"
+                        fill="black"
+                        y="17"
+                        xml:space="preserve"
+                    >L</tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="11"
+                        font-weight="400"
+                        fill="black"
+                        y="23"
+                        xml:space="preserve"
+                    >n-1</tspan>
+        </text>
+      </g>
+      <g id="Graphic_381">
+        <rect x="413" y="197.948" width="126" height="27" fill="white" />
+        <rect
+                    x="413"
+                    y="197.948"
+                    width="126"
+                    height="27"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
+        <text transform="translate(418 198.448)" fill="black">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="16"
+                        font-weight="400"
+                        fill="black"
+                        x="45.464"
+                        y="17"
+                        xml:space="preserve"
+                    >R</tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="11"
+                        font-weight="400"
+                        fill="black"
+                        y="23"
+                        xml:space="preserve"
+                    >n-1</tspan>
+        </text>
+      </g>
+      <g id="Group_377">
+        <title>g3270</title>
+        <g id="Graphic_380">
+          <title>path3272</title>
+          <path
+                        d="M 489.08377 167.08234 C 489.08377 173.35942 483.4686 178.448 476.5419 178.448 C 469.6152 178.448 464 173.35942 464 167.08234 C 464 160.80526 469.6152 155.71668 476.5419 155.71668 C 483.4686 155.71668 489.08377 160.80526 489.08377 167.08234 Z"
+                        fill="white"
+                    />
+          <path
+                        d="M 489.08377 167.08234 C 489.08377 173.35942 483.4686 178.448 476.5419 178.448 C 469.6152 178.448 464 173.35942 464 167.08234 C 464 160.80526 469.6152 155.71668 476.5419 155.71668 C 483.4686 155.71668 489.08377 160.80526 489.08377 167.08234 Z"
+                        stroke="black"
+                        stroke-linecap="butt"
+                        stroke-linejoin="round"
+                        stroke-width="1.6306387"
+                    />
+        </g>
+        <g id="Graphic_379">
+          <title>path3274</title>
+          <line x1="464.0283" y1="166.68603" x2="489.01425" y2="166.68603" fill="#0a0" />
+          <line
+                        x1="464.0283"
+                        y1="166.68603"
+                        x2="489.01425"
+                        y2="166.68603"
+                        stroke="black"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="1.7237265"
+                    />
+        </g>
+        <g id="Graphic_378">
+          <title>path3276</title>
+          <line x1="476.3938" y1="155.71125" x2="476.3938" y2="178.35394" fill="#0a0" />
+          <line
+                        x1="476.3938"
+                        y1="155.71125"
+                        x2="476.3938"
+                        y2="178.35394"
+                        stroke="black"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="1.7237265"
+                    />
+        </g>
+      </g>
+      <g id="Graphic_376">
+        <rect x="461" y="106.448" width="30" height="27" fill="white" />
+        <rect
+                    x="461"
+                    y="106.448"
+                    width="30"
+                    height="27"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
+        <text transform="translate(466 108.948)" fill="black">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="16"
+                        font-weight="400"
+                        fill="black"
+                        x="6.072"
+                        y="17"
+                        xml:space="preserve"
+                    >F</tspan>
+        </text>
+      </g>
+      <g id="Graphic_375">
+        <text transform="translate(526.24 106.948)" fill="black">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="16"
+                        font-weight="400"
+                        fill="black"
+                        x="0"
+                        y="17"
+                        xml:space="preserve"
+                    >K</tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="11"
+                        font-weight="400"
+                        fill="black"
+                        y="23"
+                        xml:space="preserve"
+                    >n</tspan>
+        </text>
+      </g>
+      <g id="Line_374">
+        <line
+                    x1="367.1548"
+                    y1="81"
+                    x2="456.2909"
+                    y2="151.14577"
+                    marker-end="url(#FilledArrow_Marker)"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="bevel"
+                    stroke-width="2"
+                />
+      </g>
+      <g id="Line_373">
+        <line
+                    x1="476.3931"
+                    y1="179.26258"
+                    x2="476.32244"
+                    y2="185.04896"
+                    marker-end="url(#FilledArrow_Marker)"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="bevel"
+                    stroke-width="2"
+                />
+      </g>
+      <g id="Line_372">
+        <line
+                    x1="476"
+                    y1="81"
+                    x2="476"
+                    y2="93.548"
+                    marker-end="url(#FilledArrow_Marker)"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="bevel"
+                    stroke-width="2"
+                />
+      </g>
+      <g id="Line_371">
+        <line
+                    x1="476.1552"
+                    y1="133.448"
+                    x2="476.25356"
+                    y2="142.00287"
+                    marker-end="url(#FilledArrow_Marker)"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="bevel"
+                    stroke-width="2"
+                />
+      </g>
+      <g id="Line_370">
+        <path
+                    d="M 464.1875 81 L 428.89907 121.32963 C 424.0073 117.04935 415.44677 126.83285 420.3385 131.11313 L 370.3072 188.29176"
+                    marker-end="url(#FilledArrow_Marker)"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="bevel"
+                    stroke-width="2"
+                />
+      </g>
+      <g id="Line_369">
+        <line
+                    x1="521.24"
+                    y1="119.948"
+                    x2="503.9"
+                    y2="119.948"
+                    marker-end="url(#FilledArrow_Marker)"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="bevel"
+                    stroke-width="2"
+                />
+      </g>
+      <g id="Graphic_368">
+        <rect x="287" y="348" width="126" height="27" fill="white" />
+        <rect
+                    x="287"
+                    y="348"
+                    width="126"
+                    height="27"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
+        <text transform="translate(292 348.5)" fill="black">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="11"
+                        font-weight="400"
+                        fill="black"
+                        x="44.858"
+                        y="23"
+                        xml:space="preserve"
+                    > </tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="16"
+                        font-weight="400"
+                        fill="black"
+                        y="17"
+                        xml:space="preserve"
+                    >L</tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="11"
+                        font-weight="400"
+                        fill="black"
+                        y="23"
+                        xml:space="preserve"
+                    >n-2</tspan>
+        </text>
+      </g>
+      <g id="Graphic_367">
+        <rect x="413" y="348" width="126" height="27" fill="white" />
+        <rect
+                    x="413"
+                    y="348"
+                    width="126"
+                    height="27"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
+        <text transform="translate(418 348.5)" fill="black">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="16"
+                        font-weight="400"
+                        fill="black"
+                        x="45.464"
+                        y="17"
+                        xml:space="preserve"
+                    >R</tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="11"
+                        font-weight="400"
+                        fill="black"
+                        y="23"
+                        xml:space="preserve"
+                    >n-2</tspan>
+        </text>
+      </g>
+      <g id="Group_363">
+        <title>g3270</title>
+        <g id="Graphic_366">
+          <title>path3272</title>
+          <path
+                        d="M 489.08377 316.8456 C 489.08377 323.12267 483.4686 328.21125 476.5419 328.21125 C 469.6152 328.21125 464 323.12267 464 316.8456 C 464 310.5685 469.6152 305.47993 476.5419 305.47993 C 483.4686 305.47993 489.08377 310.5685 489.08377 316.8456 Z"
+                        fill="white"
+                    />
+          <path
+                        d="M 489.08377 316.8456 C 489.08377 323.12267 483.4686 328.21125 476.5419 328.21125 C 469.6152 328.21125 464 323.12267 464 316.8456 C 464 310.5685 469.6152 305.47993 476.5419 305.47993 C 483.4686 305.47993 489.08377 310.5685 489.08377 316.8456 Z"
+                        stroke="black"
+                        stroke-linecap="butt"
+                        stroke-linejoin="round"
+                        stroke-width="1.6306387"
+                    />
+        </g>
+        <g id="Graphic_365">
+          <title>path3274</title>
+          <line x1="464.0283" y1="316.44928" x2="489.01425" y2="316.44928" fill="#0a0" />
+          <line
+                        x1="464.0283"
+                        y1="316.44928"
+                        x2="489.01425"
+                        y2="316.44928"
+                        stroke="black"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="1.7237265"
+                    />
+        </g>
+        <g id="Graphic_364">
+          <title>path3276</title>
+          <line x1="476.3938" y1="305.4745" x2="476.3938" y2="328.1172" fill="#0a0" />
+          <line
+                        x1="476.3938"
+                        y1="305.4745"
+                        x2="476.3938"
+                        y2="328.1172"
+                        stroke="black"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="1.7237265"
+                    />
+        </g>
+      </g>
+      <g id="Graphic_362">
+        <rect x="461" y="256.21125" width="30" height="27" fill="white" />
+        <rect
+                    x="461"
+                    y="256.21125"
+                    width="30"
+                    height="27"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
+        <text transform="translate(466 258.71125)" fill="black">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="16"
+                        font-weight="400"
+                        fill="black"
+                        x="6.072"
+                        y="17"
+                        xml:space="preserve"
+                    >F</tspan>
+        </text>
+      </g>
+      <g id="Graphic_361">
+        <text transform="translate(517 256.71125)" fill="black">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="16"
+                        font-weight="400"
+                        fill="black"
+                        x="6252776e-19"
+                        y="17"
+                        xml:space="preserve"
+                    >K</tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="11"
+                        font-weight="400"
+                        fill="black"
+                        y="23"
+                        xml:space="preserve"
+                    >n-1</tspan>
+        </text>
+      </g>
+      <g id="Line_360">
+        <line
+                    x1="366.2163"
+                    y1="225"
+                    x2="456.76196"
+                    y2="300.37888"
+                    marker-end="url(#FilledArrow_Marker)"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="bevel"
+                    stroke-width="2"
+                />
+      </g>
+      <g id="Line_359">
+        <line
+                    x1="476.3941"
+                    y1="329.02584"
+                    x2="476.32035"
+                    y2="335.10095"
+                    marker-end="url(#FilledArrow_Marker)"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="bevel"
+                    stroke-width="2"
+                />
+      </g>
+      <g id="Line_358">
+        <line
+                    x1="476"
+                    y1="224.948"
+                    x2="476"
+                    y2="243.31125"
+                    marker-end="url(#FilledArrow_Marker)"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="bevel"
+                    stroke-width="2"
+                />
+      </g>
+      <g id="Line_357">
+        <line
+                    x1="476.1552"
+                    y1="283.21125"
+                    x2="476.25356"
+                    y2="291.76612"
+                    marker-end="url(#FilledArrow_Marker)"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="bevel"
+                    stroke-width="2"
+                />
+      </g>
+      <g id="Line_356">
+        <path
+                    d="M 464.66393 224.948 L 428.3131 268.2378 C 423.3353 264.0579 414.9755 274.01348 419.9533 278.19338 L 369.63156 338.121"
+                    marker-end="url(#FilledArrow_Marker)"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="bevel"
+                    stroke-width="2"
+                />
+      </g>
+      <g id="Line_355">
+        <line
+                    x1="512"
+                    y1="269.71125"
+                    x2="503.9"
+                    y2="269.71125"
+                    marker-end="url(#FilledArrow_Marker)"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="bevel"
+                    stroke-width="2"
+                />
+      </g>
+      <g id="Graphic_354">
+        <rect x="287" y="414" width="126" height="27" fill="white" />
+        <rect
+                    x="287"
+                    y="414"
+                    width="126"
+                    height="27"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
+        <text transform="translate(292 414.5)" fill="black">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="11"
+                        font-weight="400"
+                        fill="black"
+                        x="49.7365"
+                        y="23"
+                        xml:space="preserve"
+                    > </tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="16"
+                        font-weight="400"
+                        fill="black"
+                        y="17"
+                        xml:space="preserve"
+                    >L</tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="11"
+                        font-weight="400"
+                        fill="black"
+                        y="23"
+                        xml:space="preserve"
+                    >1</tspan>
+        </text>
+      </g>
+      <g id="Graphic_353">
+        <rect x="413" y="414" width="126" height="27" fill="white" />
+        <rect
+                    x="413"
+                    y="414"
+                    width="126"
+                    height="27"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
+        <text transform="translate(418 414.5)" fill="black">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="16"
+                        font-weight="400"
+                        fill="black"
+                        x="50.3425"
+                        y="17"
+                        xml:space="preserve"
+                    >R</tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="11"
+                        font-weight="400"
+                        fill="black"
+                        y="23"
+                        xml:space="preserve"
+                    >1</tspan>
+        </text>
+      </g>
+      <g id="Graphic_352">
+        <rect x="287" y="564" width="126" height="27" fill="white" />
+        <rect
+                    x="287"
+                    y="564"
+                    width="126"
+                    height="27"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
+        <text transform="translate(292 564.5)" fill="black">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="11"
+                        font-weight="400"
+                        fill="black"
+                        x="49.7365"
+                        y="23"
+                        xml:space="preserve"
+                    > </tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="16"
+                        font-weight="400"
+                        fill="black"
+                        y="17"
+                        xml:space="preserve"
+                    >L</tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="11"
+                        font-weight="400"
+                        fill="black"
+                        y="23"
+                        xml:space="preserve"
+                    >0</tspan>
+        </text>
+      </g>
+      <g id="Graphic_351">
+        <rect x="413" y="564" width="126" height="27" fill="white" />
+        <rect
+                    x="413"
+                    y="564"
+                    width="126"
+                    height="27"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
+        <text transform="translate(418 564.5)" fill="black">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="16"
+                        font-weight="400"
+                        fill="black"
+                        x="50.3425"
+                        y="17"
+                        xml:space="preserve"
+                    >R</tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="11"
+                        font-weight="400"
+                        fill="black"
+                        y="23"
+                        xml:space="preserve"
+                    >0</tspan>
+        </text>
+      </g>
+      <g id="Group_347">
+        <title>g3270</title>
+        <g id="Graphic_350">
+          <title>path3272</title>
+          <ellipse
+                        cx="476"
+                        cy="531.58234"
+                        rx="12.5418844783557"
+                        ry="11.36566"
+                        fill="white"
+                    />
+          <ellipse
+                        cx="476"
+                        cy="531.58234"
+                        rx="12.5418844783557"
+                        ry="11.36566"
+                        stroke="black"
+                        stroke-linecap="butt"
+                        stroke-linejoin="round"
+                        stroke-width="1.6306387"
+                    />
+        </g>
+        <g id="Graphic_349">
+          <title>path3274</title>
+          <line x1="463.4864" y1="531.186" x2="488.47236" y2="531.186" fill="#0a0" />
+          <line
+                        x1="463.4864"
+                        y1="531.186"
+                        x2="488.47236"
+                        y2="531.186"
+                        stroke="black"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="1.7237265"
+                    />
+        </g>
+        <g id="Graphic_348">
+          <title>path3276</title>
+          <line x1="475.8519" y1="520.21125" x2="475.8519" y2="542.85394" fill="#0a0" />
+          <line
+                        x1="475.8519"
+                        y1="520.21125"
+                        x2="475.8519"
+                        y2="542.85394"
+                        stroke="black"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="1.7237265"
+                    />
+        </g>
+      </g>
+      <g id="Graphic_346">
+        <rect x="461" y="470.948" width="30" height="27" fill="white" />
+        <rect
+                    x="461"
+                    y="470.948"
+                    width="30"
+                    height="27"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
+        <text transform="translate(466 473.448)" fill="black">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="16"
+                        font-weight="400"
+                        fill="black"
+                        x="6.072"
+                        y="17"
+                        xml:space="preserve"
+                    >F</tspan>
+        </text>
+      </g>
+      <g id="Graphic_345">
+        <text transform="translate(526.757 471.448)" fill="black">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="16"
+                        font-weight="400"
+                        fill="black"
+                        x="0"
+                        y="17"
+                        xml:space="preserve"
+                    >K</tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="11"
+                        font-weight="400"
+                        fill="black"
+                        y="23"
+                        xml:space="preserve"
+                    >1</tspan>
+        </text>
+      </g>
+      <g id="Line_344">
+        <line
+                    x1="366.34283"
+                    y1="441"
+                    x2="456.15383"
+                    y2="515.1884"
+                    marker-end="url(#FilledArrow_Marker)"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="bevel"
+                    stroke-width="2"
+                />
+      </g>
+      <g id="Line_343">
+        <line
+                    x1="476"
+                    y1="543.7633"
+                    x2="476"
+                    y2="551.1"
+                    marker-end="url(#FilledArrow_Marker)"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="bevel"
+                    stroke-width="2"
+                />
+      </g>
+      <g id="Line_342">
+        <line
+                    x1="476"
+                    y1="441"
+                    x2="476"
+                    y2="458.048"
+                    marker-end="url(#FilledArrow_Marker)"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="bevel"
+                    stroke-width="2"
+                />
+      </g>
+      <g id="Line_341">
+        <line
+                    x1="476"
+                    y1="497.948"
+                    x2="476"
+                    y2="506.50136"
+                    marker-end="url(#FilledArrow_Marker)"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="bevel"
+                    stroke-width="2"
+                />
+      </g>
+      <g id="Line_340">
+        <path
+                    d="M 464.66 441 L 428.5661 483.96895 C 423.589 479.7882 415.2275 489.74236 420.2046 493.9231 L 369.63718 554.1224"
+                    marker-end="url(#FilledArrow_Marker)"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="bevel"
+                    stroke-width="2"
+                />
+      </g>
+      <g id="Line_339">
+        <line
+                    x1="521.757"
+                    y1="484.448"
+                    x2="503.9"
+                    y2="484.448"
+                    marker-end="url(#FilledArrow_Marker)"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="bevel"
+                    stroke-width="2"
+                />
+      </g>
+      <g id="Line_338">
+        <line
+                    x1="414"
+                    y1="382.552"
+                    x2="414"
+                    y2="406.448"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-dasharray="4.0,16.0"
+                    stroke-width="4"
+                />
+      </g>
+      <g id="Graphic_386">
+        <rect x="5" y="615" width="126" height="27" fill="#ffc0c0" />
+        <rect
+                    x="5"
+                    y="615"
+                    width="126"
+                    height="27"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
+        <text transform="translate(10 615.5)" fill="black">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="11"
+                        font-weight="400"
+                        fill="black"
+                        x="28.10772"
+                        y="23"
+                        xml:space="preserve"
+                    > </tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="16"
+                        font-weight="400"
+                        fill="black"
+                        y="17"
+                        xml:space="preserve"
+                    >L</tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="11"
+                        font-weight="400"
+                        fill="black"
+                        y="23"
+                        xml:space="preserve"
+                    >n+1  </tspan>
+          <tspan
+                        font-family="Apple Symbols"
+                        font-size="16"
+                        font-weight="400"
+                        fill="#a5a5a5"
+                        y="17"
+                        xml:space="preserve"
+                    >≙</tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="16"
+                        font-weight="400"
+                        fill="#a5a5a5"
+                        y="17"
+                        xml:space="preserve"
+                    >R</tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="11"
+                        font-weight="400"
+                        fill="#a5a5a5"
+                        y="23"
+                        xml:space="preserve"
+                    >n</tspan>
+        </text>
+      </g>
+      <g id="Graphic_385">
+        <rect x="131" y="615.052" width="126" height="27" fill="#ffc0c0" />
+        <rect
+                    x="131"
+                    y="615.052"
+                    width="126"
+                    height="27"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
+        <text transform="translate(136 615.552)" fill="black">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="16"
+                        font-weight="400"
+                        fill="black"
+                        x="44.177"
+                        y="17"
+                        xml:space="preserve"
+                    >R</tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="11"
+                        font-weight="400"
+                        fill="black"
+                        y="23"
+                        xml:space="preserve"
+                    >n+1</tspan>
+        </text>
+      </g>
+      <g id="Line_387">
+        <path
+                    d="M 160.64706 591 L 136.99305 600.57424 C 134.5543 594.5491 122.50399 599.4266 124.94274 605.45175 L 113.31056 610.16"
+                    marker-end="url(#FilledArrow_Marker)"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="bevel"
+                    stroke-width="2"
+                />
+      </g>
+      <g id="Graphic_390">
+        <rect x="287" y="615" width="126" height="27" fill="#c0ffc0" />
+        <rect
+                    x="287"
+                    y="615"
+                    width="126"
+                    height="27"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
+        <text transform="translate(292 615.5)" fill="black">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="11"
+                        font-weight="400"
+                        fill="black"
+                        x="48.07"
+                        y="23"
+                        xml:space="preserve"
+                    > </tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="16"
+                        font-weight="400"
+                        fill="black"
+                        y="17"
+                        xml:space="preserve"
+                    >L</tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="11"
+                        font-weight="400"
+                        fill="black"
+                        y="23"
+                        xml:space="preserve"
+                    >-1</tspan>
+        </text>
+      </g>
+      <g id="Graphic_389">
+        <rect x="413" y="615" width="126" height="27" fill="#c0ffc0" />
+        <rect
+                    x="413"
+                    y="615"
+                    width="126"
+                    height="27"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
+        <text transform="translate(418 615.5)" fill="black">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="16"
+                        font-weight="400"
+                        fill="black"
+                        x="48.676"
+                        y="17"
+                        xml:space="preserve"
+                    >R</tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="11"
+                        font-weight="400"
+                        fill="black"
+                        y="23"
+                        xml:space="preserve"
+                    >-1</tspan>
+        </text>
+      </g>
+      <g id="Line_391">
+        <line
+                    x1="383.35294"
+                    y1="591"
+                    x2="430.68944"
+                    y2="610.16"
+                    marker-end="url(#FilledArrow_Marker)"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="bevel"
+                    stroke-width="2"
+                />
+      </g>
+      <g id="Line_392">
+        <path
+                    d="M 442.64706 591 L 419.02515 600.56125 C 416.5864 594.5361 404.5361 599.4136 406.97485 605.43875 L 395.31056 610.16"
+                    marker-end="url(#FilledArrow_Marker)"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="bevel"
+                    stroke-width="2"
+                />
+      </g>
+    </g>
+  </g>
+</svg>
