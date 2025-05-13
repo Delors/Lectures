@@ -45,7 +45,7 @@ XML (eXtensible Markup Language)
 
 - Sprachen, die verwendete werden, um Texte zu strukturieren und zu formatieren
 
-.. class:: incremental list-with-explanations
+.. class:: incremental-list list-with-explanations
 
   - maschinenlesbar
   - Beispiele:
