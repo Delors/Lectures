@@ -361,7 +361,7 @@ Verwendung von Hashes in Python
 
             people = {person1, person2, person3}
 
-        .. incremental::
+        .. container:: incremental
 
             .. rubric:: Ausgabe des Sets
 
@@ -612,7 +612,7 @@ Verwendung von Hashes in Java
             // throws IllegalArgumentException:
             var people = Set.of(person1, person2, person3)
 
-        .. incremental::
+        .. container:: incremental
 
             .. rubric:: Ausgabe des Sets
 
@@ -622,7 +622,7 @@ Verwendung von Hashes in Java
 
                 for (var p : people) System.out.println(p.name);
 
-        .. incremental::
+        .. container:: incremental
 
             **Ausgabe**
 
@@ -1040,7 +1040,7 @@ Beispiel Offene Adressierung (Hashing: :math:`x\; mod\; 7`)
 
         Hinzufügen von (17, 5, 3, 21, 9, 10, 12)
 
-        .. incremental::
+        .. container:: incremental
 
             Für den Wert 10 wird kein Platz gefunden!
 
