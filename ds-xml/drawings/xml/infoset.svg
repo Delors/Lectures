@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+    "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg
+    xmlns="http://www.w3.org/2000/svg"
+    version="1.1"
+    xmlns:xl="http://www.w3.org/1999/xlink"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    viewBox="87 119 532 117"
+    width="532"
+    height="117"
+>
+<style>
+  @import url('/LectureDoc2/ext/fonts/ld-fonts.css');
+</style>
+  <defs>
+    <filter id="Shadow" filterUnits="userSpaceOnUse" x="33.8" y="107.3">
+      <feGaussianBlur in="SourceAlpha" result="blur" stdDeviation="2.18" />
+      <feOffset in="blur" result="offset" dx="3" dy="3" />
+      <feFlood flood-color="black" flood-opacity=".5" result="flood" />
+      <feComposite in="flood" in2="offset" operator="in" />
+    </filter>
+    <marker
+            orient="auto"
+            overflow="visible"
+            markerUnits="strokeWidth"
+            id="FilledArrow_Marker"
+            stroke-linejoin="miter"
+            stroke-miterlimit="10"
+            viewBox="-1 -3 7 6"
+            markerWidth="7"
+            markerHeight="6"
+            color="black"
+        >
+      <g>
+        <path
+                    d="M 4.8 0 L 0 -1.8 L 0 1.8 Z"
+                    fill="currentColor"
+                    stroke="currentColor"
+                    stroke-width="1"
+                />
+      </g>
+    </marker>
+  </defs>
+  <metadata> Produced by OmniGraffle 8.0\n2025-05-13 11:05:26 +0000</metadata>
+  <g
+        id="infoset"
+        stroke-dasharray="none"
+        stroke="none"
+        stroke-opacity="1"
+        fill="none"
+        fill-opacity="1"
+    >
+    <title>infoset</title>
+    <g id="infoset_Layer_1">
+      <title>Layer 1</title>
+      <g id="Graphic_2_shadow" filter="url(#Shadow)">
+        <path
+                    d="M 189.15082 157.09 C 189.15082 147.617 187.88082 146.445 178.60382 137.07 L 178.50582 136.973 C 169.17982 127.5 169.08282 127.5 159.51182 127.5 C 146.76782 127.5 89.15082 127.5 89.15082 127.5 L 89.15082 227.5 L 189.15082 227.5 L 189.15082 157.09 Z"
+                    fill="#dadada"
+                />
+      </g>
+      <g id="Graphic_4_shadow" filter="url(#Shadow)">
+        <path
+                    d="M 268.0241 127.5 L 304.0241 127.5 C 321.69722 127.5 336.0241 141.82689 336.0241 159.5 L 336.0241 195.5 C 336.0241 213.1731 321.69722 227.5 304.0241 227.5 L 268.0241 227.5 C 250.351 227.5 236.0241 213.1731 236.0241 195.5 L 236.0241 159.5 C 236.0241 141.82689 250.351 127.5 268.0241 127.5 Z"
+                    fill="#d5fc79"
+                />
+      </g>
+      <g id="Graphic_6_shadow" filter="url(#Shadow)">
+        <rect x="379.35566" y="121.27493" width="87.5" height="61.5" fill="#941100" />
+      </g>
+      <g id="Graphic_7_shadow" filter="url(#Shadow)">
+        <rect x="510.1872" y="127.5" width="100" height="100" fill="#ffd579" />
+      </g>
+      <g id="Graphic_2">
+        <path
+                    d="M 189.15082 157.09 C 189.15082 147.617 187.88082 146.445 178.60382 137.07 L 178.50582 136.973 C 169.17982 127.5 169.08282 127.5 159.51182 127.5 C 146.76782 127.5 89.15082 127.5 89.15082 127.5 L 89.15082 227.5 L 189.15082 227.5 L 189.15082 157.09 Z"
+                    fill="#dadada"
+                />
+        <text transform="translate(94.15082 168)" fill="black">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="14"
+                        font-weight="400"
+                        fill="black"
+                        x="19.723"
+                        y="15"
+                        xml:space="preserve"
+                    >&lt;?xml …</tspan>
+        </text>
+      </g>
+      <g id="Graphic_4">
+        <path
+                    d="M 268.0241 127.5 L 304.0241 127.5 C 321.69722 127.5 336.0241 141.82689 336.0241 159.5 L 336.0241 195.5 C 336.0241 213.1731 321.69722 227.5 304.0241 227.5 L 268.0241 227.5 C 250.351 227.5 236.0241 213.1731 236.0241 195.5 L 236.0241 159.5 C 236.0241 141.82689 250.351 127.5 268.0241 127.5 Z"
+                    fill="#d5fc79"
+                />
+        <text transform="translate(241.0241 158.5)" fill="black">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="14"
+                        font-weight="400"
+                        fill="black"
+                        x="31.644"
+                        y="15"
+                        xml:space="preserve"
+                    >XML </tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="14"
+                        font-weight="400"
+                        fill="black"
+                        x="14.592"
+                        y="34"
+                        xml:space="preserve"
+                    >Prozessor</tspan>
+        </text>
+      </g>
+      <g id="Graphic_6">
+        <rect x="379.35566" y="121.27493" width="87.5" height="61.5" fill="#941100" />
+        <text transform="translate(384.35566 142.52493)" fill="white">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="14"
+                        font-weight="700"
+                        fill="white"
+                        x="14.642"
+                        y="15"
+                        xml:space="preserve"
+                    >Infoset</tspan>
+        </text>
+      </g>
+      <g id="Graphic_7">
+        <rect x="510.1872" y="127.5" width="100" height="100" fill="#ffd579" />
+        <text transform="translate(515.1872 168)" fill="black">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="14"
+                        font-weight="400"
+                        fill="black"
+                        x="7.396"
+                        y="15"
+                        xml:space="preserve"
+                    >Anwendung</tspan>
+        </text>
+      </g>
+      <g id="Line_8">
+        <line
+                    x1="189.15082"
+                    y1="177.5"
+                    x2="223.1241"
+                    y2="177.5"
+                    marker-end="url(#FilledArrow_Marker)"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                />
+      </g>
+      <g id="Line_9">
+        <line
+                    x1="335.33143"
+                    y1="152.84634"
+                    x2="366.4562"
+                    y2="152.55507"
+                    marker-end="url(#FilledArrow_Marker)"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                />
+      </g>
+      <g id="Line_10">
+        <line
+                    x1="466.85566"
+                    y1="152.2636"
+                    x2="497.2874"
+                    y2="152.42963"
+                    marker-end="url(#FilledArrow_Marker)"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                />
+      </g>
+      <g id="Line_11">
+        <line
+                    x1="335.33143"
+                    y1="202.15366"
+                    x2="497.2872"
+                    y2="202.47445"
+                    marker-end="url(#FilledArrow_Marker)"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                />
+      </g>
+      <g id="Graphic_12">
+        <text transform="translate(403.68066 203.5)" fill="black">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="14"
+                        font-weight="400"
+                        fill="black"
+                        x="0"
+                        y="15"
+                        xml:space="preserve"
+                    >Fehler</tspan>
+        </text>
+      </g>
+    </g>
+  </g>
+</svg>

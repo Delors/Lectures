@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+    "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg
+    xmlns="http://www.w3.org/2000/svg"
+    version="1.1"
+    xmlns:xl="http://www.w3.org/1999/xlink"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    viewBox="-414 -3 552 283"
+    width="552"
+    height="283"
+>
+<style>
+  @import url('/LectureDoc2/ext/fonts/ld-fonts.css');
+</style>
+  <metadata> Produced by OmniGraffle 8.0\n2025-05-13 11:05:26 +0000</metadata>
+  <g
+        id="struktur-prolog"
+        stroke-dasharray="none"
+        stroke="none"
+        stroke-opacity="1"
+        fill="none"
+        fill-opacity="1"
+    >
+    <title>struktur-prolog</title>
+    <g id="struktur-prolog_Layer_1">
+      <title>Layer 1</title>
+      <g id="Graphic_3">
+        <rect x="-413" y="-2.5" width="551.432" height="281.5" fill="white" />
+        <rect
+                    x="-413"
+                    y="-2.5"
+                    width="551.432"
+                    height="281.5"
+                    stroke="white"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
+      </g>
+      <g id="Graphic_10">
+        <rect
+                    x="-413"
+                    y="-2.5"
+                    width="551.432"
+                    height="101.5"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
+      </g>
+      <g id="Graphic_2">
+        <text transform="translate(-390 25)" fill="black">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="18"
+                        font-weight="400"
+                        fill="black"
+                        x="0"
+                        y="19"
+                    >&lt;?xml version=“1.0” encoding=“UTF-8” standalone=&quot;yes&quot; ?&gt;</tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="18"
+                        font-weight="400"
+                        fill="black"
+                        x="0"
+                        y="43"
+                    >&lt;?xml-stylesheet ?&gt; …</tspan>
+        </text>
+      </g>
+      <g id="Graphic_4">
+        <text transform="translate(86.92 72)" fill="black">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="16"
+                        font-weight="400"
+                        fill="black"
+                        x="0"
+                        y="17"
+                    >Prolog</tspan>
+        </text>
+      </g>
+    </g>
+  </g>
+</svg>

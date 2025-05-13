@@ -1,0 +1,585 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+    "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg
+    xmlns="http://www.w3.org/2000/svg"
+    version="1.1"
+    xmlns:xl="http://www.w3.org/1999/xlink"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    viewBox="113 142 464 414"
+    width="386"
+    height="345"
+>
+<style>
+  @import url('/LectureDoc2/ext/fonts/ld-fonts.css');
+</style>
+  <metadata> Produced by OmniGraffle 8.0\n2025-05-13 11:05:26 +0000</metadata>
+  <g
+        id="xpath-axis"
+        stroke-dasharray="none"
+        stroke="none"
+        stroke-opacity="1"
+        fill="none"
+        fill-opacity="1"
+    >
+    <title>xpath-axis</title>
+    <g id="xpath-axis_Layer_1">
+      <title>Layer 1</title>
+      <g id="Graphic_42">
+        <rect x="269.125" y="405" width="151.75" height="150.5" fill="#dadada" />
+        <rect
+                    x="269.125"
+                    y="405"
+                    width="151.75"
+                    height="150.5"
+                    stroke="#a5a5a5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
+      </g>
+      <g id="Graphic_39">
+        <rect x="449.22656" y="226" width="126.77344" height="251" fill="#dadada" />
+        <rect
+                    x="449.22656"
+                    y="226"
+                    width="126.77344"
+                    height="251"
+                    stroke="#a5a5a5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
+      </g>
+      <g id="Graphic_37">
+        <rect x="114" y="226" width="126.77344" height="251" fill="#dadada" />
+        <rect
+                    x="114"
+                    y="226"
+                    width="126.77344"
+                    height="251"
+                    stroke="#a5a5a5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
+      </g>
+      <g id="Graphic_35">
+        <rect x="310.38273" y="174" width="67.65925" height="144.5" fill="#dadada" />
+        <rect
+                    x="310.38273"
+                    y="174"
+                    width="67.65925"
+                    height="144.5"
+                    stroke="#a5a5a5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
+      </g>
+      <g id="Graphic_2">
+        <rect x="320.21236" y="181.5" width="48" height="48" fill="#6b7ca5" />
+        <rect
+                    x="320.21236"
+                    y="181.5"
+                    width="48"
+                    height="48"
+                    stroke="#283450"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
+      </g>
+      <g id="Graphic_4">
+        <rect x="154.00781" y="237.5" width="48" height="48" fill="#6b7ca5" />
+        <rect
+                    x="154.00781"
+                    y="237.5"
+                    width="48"
+                    height="48"
+                    stroke="#283450"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
+      </g>
+      <g id="Graphic_5">
+        <rect x="320.21236" y="262.5" width="48" height="48" fill="#6b7ca5" />
+        <rect
+                    x="320.21236"
+                    y="262.5"
+                    width="48"
+                    height="48"
+                    stroke="#283450"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
+      </g>
+      <g id="Graphic_6">
+        <rect x="502.0078" y="237.5" width="48" height="48" fill="#6b7ca5" />
+        <rect
+                    x="502.0078"
+                    y="237.5"
+                    width="48"
+                    height="48"
+                    stroke="#283450"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
+      </g>
+      <g id="Graphic_7">
+        <rect x="321" y="328.75" width="48" height="48" fill="#ff914d" />
+        <rect
+                    x="321"
+                    y="328.75"
+                    width="48"
+                    height="48"
+                    stroke="#283450"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
+      </g>
+      <g id="Graphic_8">
+        <rect x="273.25" y="422.5" width="48" height="48" fill="#6b7ca5" />
+        <rect
+                    x="273.25"
+                    y="422.5"
+                    width="48"
+                    height="48"
+                    stroke="#283450"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
+      </g>
+      <g id="Graphic_9">
+        <rect x="368.75" y="422.5" width="48" height="48" fill="#6b7ca5" />
+        <rect
+                    x="368.75"
+                    y="422.5"
+                    width="48"
+                    height="48"
+                    stroke="#283450"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
+      </g>
+      <g id="Graphic_10">
+        <rect x="187" y="329" width="48" height="48" fill="#6b7ca5" />
+        <rect
+                    x="187"
+                    y="329"
+                    width="48"
+                    height="48"
+                    stroke="#283450"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
+      </g>
+      <g id="Graphic_11">
+        <rect x="455" y="329" width="48" height="48" fill="#6b7ca5" />
+        <rect
+                    x="455"
+                    y="329"
+                    width="48"
+                    height="48"
+                    stroke="#283450"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
+      </g>
+      <g id="Line_12">
+        <line
+                    x1="344.21236"
+                    y1="229.5"
+                    x2="344.21236"
+                    y2="262.5"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
+      </g>
+      <g id="Line_13">
+        <line
+                    x1="320.21236"
+                    y1="213.58642"
+                    x2="202.00781"
+                    y2="253.41358"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
+      </g>
+      <g id="Line_14">
+        <line
+                    x1="368.21236"
+                    y1="212.89292"
+                    x2="502.0078"
+                    y2="254.10708"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
+      </g>
+      <g id="Line_15">
+        <line
+                    x1="344.4977"
+                    y1="310.5"
+                    x2="344.71467"
+                    y2="328.75"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
+      </g>
+      <g id="Line_16">
+        <line
+                    x1="320.21236"
+                    y1="298.48087"
+                    x2="235"
+                    y2="341.01913"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
+      </g>
+      <g id="Line_17">
+        <line
+                    x1="368.21236"
+                    y1="298.34085"
+                    x2="455"
+                    y2="341.15915"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
+      </g>
+      <g id="Line_18">
+        <line
+                    x1="332.776"
+                    y1="376.75"
+                    x2="309.474"
+                    y2="422.5"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
+      </g>
+      <g id="Line_19">
+        <line
+                    x1="357.224"
+                    y1="376.75"
+                    x2="380.526"
+                    y2="422.5"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
+      </g>
+      <g id="Graphic_20">
+        <text transform="translate(309.72436 147)" fill="black">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="16"
+                        font-weight="400"
+                        fill="black"
+                        x="0"
+                        y="17"
+                        xml:space="preserve"
+                    >ancestors</tspan>
+        </text>
+      </g>
+      <g id="Graphic_21">
+        <text transform="translate(320.66836 238.5)" fill="black">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="16"
+                        font-weight="400"
+                        fill="black"
+                        x="0"
+                        y="17"
+                        xml:space="preserve"
+                    >parent</tspan>
+        </text>
+      </g>
+      <g id="Graphic_22">
+        <text transform="translate(491.4169 189.5)" fill="black">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="16"
+                        font-weight="400"
+                        fill="black"
+                        x="0"
+                        y="17"
+                        xml:space="preserve"
+                    >following</tspan>
+        </text>
+      </g>
+      <g id="Graphic_23">
+        <text transform="translate(300.008 380.5)" fill="black">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="16"
+                        font-weight="400"
+                        fill="black"
+                        x="19184654e-20"
+                        y="17"
+                        xml:space="preserve"
+                    >descendants</tspan>
+        </text>
+      </g>
+      <g id="Graphic_24">
+        <text transform="translate(147.19947 189.5)" fill="black">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="16"
+                        font-weight="400"
+                        fill="black"
+                        x="8597567e-19"
+                        y="17"
+                        xml:space="preserve"
+                    >preceding</tspan>
+        </text>
+      </g>
+      <g id="Graphic_25">
+        <text transform="translate(141.73072 291.5)" fill="black">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="16"
+                        font-weight="400"
+                        fill="black"
+                        x="8597567e-19"
+                        y="17"
+                        xml:space="preserve"
+                    >preceding</tspan>
+        </text>
+      </g>
+      <g id="Graphic_26">
+        <text transform="translate(131.23169 343.5)" fill="black">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="16"
+                        font-weight="400"
+                        fill="black"
+                        x="31974423e-20"
+                        y="17"
+                        xml:space="preserve"
+                    >sibling</tspan>
+        </text>
+      </g>
+      <g id="Graphic_27">
+        <text transform="translate(491.4169 290.5)" fill="black">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="16"
+                        font-weight="400"
+                        fill="black"
+                        x="0"
+                        y="17"
+                        xml:space="preserve"
+                    >following</tspan>
+        </text>
+      </g>
+      <g id="Graphic_28">
+        <text transform="translate(316.232 466)" fill="black">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="16"
+                        font-weight="400"
+                        fill="black"
+                        x="2842171e-20"
+                        y="17"
+                        xml:space="preserve"
+                    >children</tspan>
+        </text>
+      </g>
+      <g id="Graphic_29">
+        <rect x="454.79297" y="422.5" width="48" height="48" fill="#6b7ca5" />
+        <rect
+                    x="454.79297"
+                    y="422.5"
+                    width="48"
+                    height="48"
+                    stroke="#283450"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
+      </g>
+      <g id="Graphic_30">
+        <rect x="121.5664" y="422.5" width="48" height="48" fill="#6b7ca5" />
+        <rect
+                    x="121.5664"
+                    y="422.5"
+                    width="48"
+                    height="48"
+                    stroke="#283450"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
+      </g>
+      <g id="Graphic_31">
+        <rect x="187.20703" y="422.5" width="48" height="48" fill="#6b7ca5" />
+        <rect
+                    x="187.20703"
+                    y="422.5"
+                    width="48"
+                    height="48"
+                    stroke="#283450"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
+      </g>
+      <g id="Line_32">
+        <line
+                    x1="211.05314"
+                    y1="377"
+                    x2="211.1539"
+                    y2="422.5"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
+      </g>
+      <g id="Line_33">
+        <line
+                    x1="194.2042"
+                    y1="377"
+                    x2="162.3622"
+                    y2="422.5"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
+      </g>
+      <g id="Line_34">
+        <line
+                    x1="478.94686"
+                    y1="377"
+                    x2="478.8461"
+                    y2="422.5"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
+      </g>
+      <g id="Graphic_38">
+        <rect
+                    x="115"
+                    y="323"
+                    width="126.77344"
+                    height="60"
+                    fill="black"
+                    fill-opacity=".37267037"
+                />
+        <rect
+                    x="115"
+                    y="323"
+                    width="126.77344"
+                    height="60"
+                    stroke="#a5a5a5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
+      </g>
+      <g id="Graphic_40">
+        <rect
+                    x="449.22656"
+                    y="323"
+                    width="126.77344"
+                    height="60"
+                    fill="black"
+                    fill-opacity=".37267037"
+                />
+        <rect
+                    x="449.22656"
+                    y="323"
+                    width="126.77344"
+                    height="60"
+                    stroke="#a5a5a5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
+      </g>
+      <g id="Graphic_41">
+        <text transform="translate(514.6809 343.5)" fill="black">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="16"
+                        font-weight="400"
+                        fill="black"
+                        x="31974423e-20"
+                        y="17"
+                        xml:space="preserve"
+                    >sibling</tspan>
+        </text>
+      </g>
+      <g id="Graphic_43">
+        <rect
+                    x="269.125"
+                    y="412"
+                    width="151.75"
+                    height="78"
+                    fill="black"
+                    fill-opacity=".37267037"
+                />
+        <rect
+                    x="269.125"
+                    y="412"
+                    width="151.75"
+                    height="78"
+                    stroke="#a5a5a5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
+      </g>
+      <g id="Graphic_44">
+        <rect x="273.25" y="501.41797" width="48" height="48" fill="#6b7ca5" />
+        <rect
+                    x="273.25"
+                    y="501.41797"
+                    width="48"
+                    height="48"
+                    stroke="#283450"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
+      </g>
+      <g id="Line_45">
+        <line
+                    x1="297.25"
+                    y1="501.41797"
+                    x2="297.25"
+                    y2="470.5"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
+      </g>
+    </g>
+  </g>
+</svg>

@@ -1,16 +1,16 @@
 .. meta::
-    :version: genesis
+    :version: renaissance
     :author: Michael Eichberg
     :keywords: "Web Programmierung", "XML", "XPath"
     :description lang=de: XML, XPath
     :id: lecture-distributed-systems-xml-xpath
     :first-slide: last-viewed
     :master-password: WirklichSchwierig!
-    
+
 .. include:: ../docutils.defs
 
 
-    
+
 XML (eXtensible Markup Language) und XPath
 ================================================
 
@@ -22,7 +22,7 @@ XML (eXtensible Markup Language) und XPath
 
 .. supplemental::
 
-    :Folien: 
+    :Folien:
 
         |html-source|
 
@@ -31,7 +31,7 @@ XML (eXtensible Markup Language) und XPath
     :Fehler melden:
         https://github.com/Delors/delors.github.io/issues
 
-    
+
 
 
 .. class:: new-section transition-fade
@@ -41,7 +41,7 @@ XML (eXtensible Markup Language)
 
 
 *Markup Languages*
----------------------   
+---------------------
 
 - Sprachen, die verwendete werden, um Texte zu strukturieren und zu formatieren
 
@@ -58,8 +58,8 @@ XML (eXtensible Markup Language)
     - ...
 
 .. supplemental::
-   
-   Auch wenn Markup-Sprachen für Menschen lesbar sind, sind sie in erster Linie für Maschinen gedacht. Darüber hinaus sollte im Allgemeinen vermieden werden, dass der Markup dem Formatieren dient/zum formatieren verwendet wird. 
+
+   Auch wenn Markup-Sprachen für Menschen lesbar sind, sind sie in erster Linie für Maschinen gedacht. Darüber hinaus sollte im Allgemeinen vermieden werden, dass der Markup dem Formatieren dient/zum formatieren verwendet wird.
 
    YAML hat keinen Dokumentenfokus und ist nicht (mehr) als Markup-Sprache klassifiziert.
 
@@ -67,7 +67,7 @@ XML (eXtensible Markup Language)
 XML - Hintergrund
 -----------------
 
-.. class:: incremental
+.. class:: incremental-list
 
 - Aufbauend auf **Standard Generalized Markup Language (SGML)**
 
@@ -75,12 +75,13 @@ XML - Hintergrund
 
   - SGML ist Standardisiert als ISO 8879:1986
   - In SGML ist die Basis für jedes Dokument eine Formatbeschreibung mit Hilfe einer *Document type definition* (DTD)
-  
+
     Beschreibt welche Elemente es gibt und wie diese ineinander geschachtelt werden können
-   
+
     .. code:: DTD
+        :number-lines:
         :class: far-smaller
-   
+
         <!ELEMENT note (head,body)>
         <!ELEMENT head (#PCDATA)>
         <!ELEMENT body (#PCDATA)>
@@ -91,7 +92,7 @@ XML - Hintergrund
 XML\ [#]_
 -----------------
 
-.. class:: incremental list-with-explanations
+.. class:: incremental-list list-with-explanations
 
 - Ein XML Dokument kann man sich als einen Baum von Elementen vorstellen, die Informationen enthalten.
 - Dokumentenstruktur kann durch DTDs oder XML-Schemas beschrieben werden.
@@ -115,7 +116,7 @@ XML\ [#]_
     - Mails, Nachrichten
     - Rechnungen, Bestellungen, Lieferscheine
     - Log Dateien, Protokolle, Konfigurationsdateien
-  
+
     Wesentliche Anforderungen bzgl. der Syntax eines XML Dokuments (*Well-formed* XML Dokumente):
 
     - es gibt nur ein Wurzelelement
@@ -124,6 +125,8 @@ XML\ [#]_
 
 Was bietet XML?
 -------------------
+
+.. class:: incremental-list
 
 - Internationalisierung durch die Verwendung von Unicode.
 - Validierung von Instanzen (d. h. von Dokumenten).
@@ -134,20 +137,20 @@ Was bietet XML?
 
 .. supplemental::
 
-    Wie auch in HTML (HyperText Markup Language) kann auch in XML jedes Zeichen als Referenz auf ein Unicode-Zeichen kodiert werden. 
+    Wie auch in HTML (HyperText Markup Language) kann auch in XML jedes Zeichen als Referenz auf ein Unicode-Zeichen kodiert werden.
 
-    Beispiel:
-    
-    .. code:: xml
+    .. example::
 
-        &#x2200;&#x03b1;&#x2208;&#x0393;
+        .. code:: xml
 
-    entspricht:
+            &#x2200;&#x03b1;&#x2208;&#x0393;
+
+        entspricht:
 
         .. raw:: html
 
-           &#x2200;&#x03b1;&#x2208;&#x0393;
-        
+            &#x2200;&#x03b1;&#x2208;&#x0393;
+
 
 
 XML Dokument - Beispiel
@@ -168,10 +171,10 @@ XML Dokument - Beispiel
 
 .. container:: incremental
 
-    :XML-Deklaration: ``<?xml version="1.0" encoding="UTF-8" standalone="yes"?>``
-    :Start-Tags: ``<lehrveranstaltungen>``, ``<modul>``, ``<vorlesung>``
-    :End-Tags: ``</lehrveranstaltungen>``, ``</modul>``, ``</vorlesung>``
-    :Attribute: ``status``
+    :XML-Deklaration: :xml:`<?xml version="1.0" encoding="UTF-8" standalone="yes"?>`
+    :Start-Tags: :xml:`<lehrveranstaltungen>`, :xml:`<modul>`, :xml:`<vorlesung>`
+    :End-Tags: :xml:`</lehrveranstaltungen>`, :xml:`</modul>`, :xml:`</vorlesung>`
+    :Attribute: :xml:`status`
     :#Text Nodes: ``Web Entwicklung``, ``Verteilte Systeme``
 
 
@@ -184,24 +187,21 @@ XML Dokument - Beispiel
 XML Dokument - allgemeine Struktur
 -----------------------------------
 
-.. stack::
+.. deck::
 
-    .. layer:: no-box-shadow
+    .. card::
 
         .. image:: drawings/xml/struktur-prolog.svg
-            :height: 700px
             :align: center
 
-    .. layer:: incremental overlay no-box-shadow
+    .. card:: overlay
 
         .. image:: drawings/xml/struktur-element.svg
-            :height: 700px
             :align: center
 
-    .. layer:: incremental overlay no-box-shadow
+    .. card:: overlay
 
         .. image:: drawings/xml/struktur-epilog.svg
-            :height: 700px
             :align: center
 
 
@@ -211,9 +211,10 @@ Formale Beschreibung der XML Syntax
 - die Syntax von XML Dokumenten wird durch eine *formale Grammatik* (hier: EBNF) beschrieben.
 
   Beispiel - Beschreibung des Prologs von XML Dokumenten in EBNF:
-  
+
   .. code:: ebnf
-    :class: far-smaller
+    :class: copy-to-clipboard
+    :number-lines:
 
     prolog      ::= XMLDecl? Misc* (doctypedecl Misc*)?
     XMLDecl     ::= "<?xml" VersionInfo EncodingDecl? SDDecl? S? "?>""
@@ -222,15 +223,15 @@ Formale Beschreibung der XML Syntax
     VersionNum  ::= "1." [0-9]+
     Misc        ::= Comment | PI | S
 
-  .. container:: incremental minor rounded-corners dhbw-light-gray-background padding-1em far-far-smaller margin-top-2em
-  
+  .. container:: accentuate
+
     Wir werden uns auf eine informelle Beschreibung der Syntax der wichtigsten Konstrukte beschränken.
 
 .. supplemental::
 
     EBNF (*Extended Backus-Naur Form*) 101:
 
-    - '+' bedeutet 'eins oder mehr', 
+    - '+' bedeutet 'eins oder mehr',
     - '?' bedeutet 'optional'
     - '*' bedeutet 'null oder mehr'.
     - Klammerkonstrukte werden gruppiert.
@@ -238,13 +239,15 @@ Formale Beschreibung der XML Syntax
     - 'S' steht für Leerzeichen (hier).
     - 'string' bedeutet das Vorkommen der wörtlichen Zeichenkette.
     - [c-c] ist eine Zeichenklasse und steht für ein einzelnes Zeichen im angegebenen Bereich.
-  
+
     EBNFs sind eng mit regulären Ausdrücke verwandt. EBNFs können jedoch auch rekursive Strukturen beschreiben und werden häufig für die Beschreibung von Programmiersprachen verwendet.
- 
+
 
 
 Elemente
 -------------------
+
+.. class:: incremental-list
 
 - Im Allgemeinen bestehen Elemente aus einem Start-Tag (z. B. ``<start>``), seinem Inhalt und einem End-Tag (z. B. ``</start>``).
 - Der Inhalt eines Elements ist geordnet.
@@ -253,14 +256,17 @@ Elemente
 - Elemente können leer sein (z. B. ``<empty/>``); d. h. sie haben keinen Inhalt, können aber Attribute haben.
 
 
+
 Attribute
 -------------------
+
+.. class:: incremental-list
 
 - Attribute sind *ungeordnete* Name/Wert-Paare, die in einem Start-Tag eines Elements enthalten sind.
 - Jedes Attribut darf nur einmal in einem Element vorkommen.
 - Ausgewählte Zeichen müssen maskiert werden, wenn sie im Wert vorkommen sollen.
 - Die Werte von Attributen werden normalisiert (z. B. werden Zeilenumbrüche entfernt).
-   
+
 
 Vordefinierte *Entity References*
 ----------------------------------
@@ -278,7 +284,7 @@ Vordefinierte *Entity References*
 
 
 *Whitespace* in XML
---------------------    
+--------------------
 
 - Oft wird Leerraum (Leerzeichen, Zeilenumbrüche, Tabulatoren usw.) hinzugefügt, um das XML "lesbarer" zu machen.
 - Leerzeichen können als nicht signifikant gekennzeichnet werden; dies erfordert jedoch einen validierenden XML Prozessor.
@@ -297,7 +303,6 @@ XML für Anwendungen - *Infosets*
 - Ein *Infoset* enthält alle Informationen, die in einem XML Dokument enthalten sind.
 
   .. image:: drawings/xml/infoset.svg
-      :width: 100%
       :align: center
 
   Ein Infoset ist eine Hierarchie (oder ein Baum) von Elementen mit benannten Eigenschaften.
@@ -313,13 +318,11 @@ Die verschiedenen *Info Items* eines *Infosets* stellen z. B. die folgenden Info
 
 .. class:: incremental
 
-:*Element Info Item*: lokaler Name, Kinder, Attribute, Vorgänger 
-
+:*Element Info Item*: lokaler Name, Kinder, Attribute, Vorgänger
 
 .. class:: incremental
 
 :*Attribute Info Item*: lokaler Name, normalisierter Wert, deklarierendes Element
-
 
 .. container:: incremental
 
@@ -329,47 +332,42 @@ Die verschiedenen *Info Items* eines *Infosets* stellen z. B. die folgenden Info
 
 .. class:: new-section transition-fade
 
-XML Namensräume 
+XML Namensräume (:eng:`XML Namespaces`)
 ------------------------------------------------
 
-.. container:: block-footer margin-bottom-1em
-    
-    :eng:`XML Namespaces`
 
 
 
 Namensräume in XML - Motivation
 --------------------------------
 
-.. stack:: 
+.. deck::
 
-    .. layer:: 
+    .. card::
 
         Wenn wir nur einen Namen(sraum) haben sollten...
 
-        .. class:: incremental
+        .. class:: incremental-list
 
         - Was würde passieren, wenn wir Markup von zwei verschiedenen Autoritäten nutzen wollten?
         - Wie assoziiere ich Semantik mit gemischtem Markup?
         - Wie verbinde ich ein Schema (oder Regeln) mit dem gemischten Markup?
 
-    .. layer:: incremental
+    .. card::
 
         *Variante 1*:
 
         .. code:: xml
-            :class: far-smaller
 
             <date>1/27</date>
 
         *Variante 2*:
-        
+
         .. code:: xml
-            :class: far-smaller
 
             <date><year>2004</year><day>1</day><month>27</month></date>
 
-        .. incremental:: margin-top-1em
+        .. container:: incremental margin-top-1em
 
             Wie kann ich beide unterscheiden?
 
@@ -384,16 +382,15 @@ Namen werden in zwei Teile unterteilt:
 
 :``lokaler Name``: Ein Bezeichner für einen Namen in diesem Namensraum
 
-.. incremental:: margin-top-1em
+.. container:: incremental
 
   Diese Teile werden durch einen Doppelpunkt getrennt und **QNames** (:eng:`Qualified Names`) genannt.
 
-.. incremental:: margin-top-1em
+.. container:: incremental
 
     Beispiel:
 
     .. code:: xml
-        :class: far-smaller
 
         <c:pseudocode>
           <c:comment xlink:href="http://somewhere..."/>
@@ -402,7 +399,7 @@ Namen werden in zwei Teile unterteilt:
     Dies gilt nur für Element- und Attributnamen.
 
 
-.. supplemental:: 
+.. supplemental::
 
     Jedes Präfix, das "xml" enthält, ist für das W3C reserviert.
 
@@ -414,17 +411,16 @@ XML Präfixe und Namensräume
 - Präfixe müssen durch assoziierte Präfixe mit Namensräumen deklariert werden, *bevor* sie verwendet werden.
 - Diese Assoziation kann nur für Elemente deklariert werden.
 
-.. class:: incremental
+.. class:: incremental-list
 
 - Die Syntax lautet: ``xmlns:prefix="some:uri"``.
- 
+
   Beispiel:
 
   .. code:: xml
-      :class: far-smaller
 
       <c:pseudocode xmlns:c="urn:publicid:IDN+mathdoc.org">
-        <c:comment xlink:href="http://somewhere..." 
+        <c:comment xlink:href="http://somewhere..."
                    xmlns:xlink="http://www.w3.org/..."/>
       </c:pseudocode>
 
@@ -451,26 +447,23 @@ XML Präfixe und Namensräume
 - Dies gilt nur für Elementnamen ohne Präfixe.
 - Die Syntax lautet: ``xmlns="some:uri"``.
 
-  Beispiel:
+  .. example::
 
-  .. code:: xml
-    :class: far-smaller
+    .. code:: xml
 
-    <c:pseudocode xmlns:c="urn:publicid:IDN+mathdoc.org">
-       <c:comment xmlns="http://www.w3.org/1999/xhtml">
-          <p>Dieser Code macht folgendes:</p>
-          ...
-       </c:comment>
-    </c:pseudocode>
-
+        <c:pseudocode xmlns:c="urn:publicid:IDN+mathdoc.org">
+        <c:comment xmlns="http://www.w3.org/1999/xhtml">
+            <p>Dieser Code macht folgendes:</p>
+            ...
+        </c:comment>
+        </c:pseudocode>
 
 .. supplemental::
 
     Mit ``xmlns=""`` kann der gesetzte Standardnamensraum aufgehoben werden.
 
-    
-    .. admonition:: Hinweis
-        :class: warning
+
+    .. attention::
 
         Attribute ohne Präfix befinden sich immer im leeren Namensraum, d. h. sie haben keinen Namensraum
 
@@ -491,7 +484,7 @@ Geltungsbereich von Namensräumen\ [#]_
 
 
 
-Der Name des Namensraums  
+Der Name des Namensraums
 --------------------------------
 
 - Das Präfix ist nur eine Abkürzung des eigentlichen Namens des Namensraumes (d. h. des Wertes der Deklaration).
@@ -506,9 +499,9 @@ Der Name des Namensraums
 Namensräume und das XML Information Set (Infoset)
 --------------------------------------------------
 
-.. stack::
+.. deck::
 
-    .. layer:: 
+    .. card::
 
         .. rubric:: Elemente
 
@@ -522,7 +515,7 @@ Namensräume und das XML Information Set (Infoset)
 
         :Deklarationen von Namensräumen: Eine ungeordnete Liste aller Attribute des Elements, die Namensräume deklarieren.
 
-    .. layer:: incremental
+    .. card::
 
         .. rubric:: Attribute
 
@@ -533,13 +526,12 @@ Namensräume und das XML Information Set (Infoset)
         :Präfix: der für das Attribut verwendete Namensraumpräfix oder ``no value``, wenn es keinen gibt.
 
 
-Namensräume 
+Namensräume
 ------------------------------------------------
 
 .. rubric:: Setzen des Standardnamensraums
 
 .. code:: xml
-    :class: far-smaller
 
     <pseudocode xmlns="urn:publicid:IDN+mathdoc.org">
         <comment>e = mc^2</comment>
@@ -548,7 +540,6 @@ Namensräume
 .. rubric:: Definition eines Präfixes (hier: „m“)
 
 .. code:: xml
-    :class: far-smaller
 
     <m:pseudocode xmlns:m="urn:publicid:IDN+mathdoc.org">
         <m:comment>e = mc^2</m:comment>
@@ -558,7 +549,6 @@ Namensräume
 .. rubric:: Redefinition eines Präfixes (hier: „m“)
 
 .. code:: xml
-    :class: far-smaller
 
     <m:pseudocode xmlns:m="urn:publicid:IDN+mathdoc.org">
         <m:comment xmlns:m="urn:comment">e = mc^2</m:comment>
@@ -570,20 +560,19 @@ Beispiel: OpenOffice Dokumentenformat
 ---------------------------------------
 
 .. code:: xml
-    :class: far-far-smaller
+    :number-lines:
 
     <?xml version="1.0" encoding="UTF-8"?>
-    <office:document-content 
+    <office:document-content
         [...]
-        xmlns:style="urn:oasis:names:tc:opendocument:xmlns:style:1.0" 
-        xmlns:text="urn:oasis:names:tc:opendocument:xmlns:text:1.0" 
-        xmlns:office="urn:oasis:names:tc:opendocument:xmlns:office:1.0" office:version="1.3">
+            xmlns:style="urn:oasis:names:tc:opendocument:xmlns:style:1.0"
+            xmlns:text="urn:oasis:names:tc:opendocument:xmlns:text:1.0"
+            xmlns:office="urn:oasis:names:tc:opendocument:xmlns:office:1.0"
+            office:version="1.3">
         <office:scripts/>
-        <office:font-face-decls>[...]
-        </office:font-face-decls>
+        <office:font-face-decls>[...]</office:font-face-decls>
         <office:automatic-styles>
-            <style:style style:name="P1" [...]>[...]
-            </style:style>
+            <style:style style:name="P1" [...]>[...]</style:style>
         </office:automatic-styles>
         <office:body>
             <office:text> [...]
@@ -593,7 +582,7 @@ Beispiel: OpenOffice Dokumentenformat
     </office:document-content>
 
 
-.. class:: integrated-exercise transition-scale
+.. class:: exercises transition-scale
 
 Übung: XML Dokument mit Namensräumen
 ------------------------------------------------
@@ -604,18 +593,17 @@ Beispiel: OpenOffice Dokumentenformat
 
     - Das Wurzelelement ist ``document``.
     - Das Dokument fasst mehrere  Bestellungen (``order``-Elemente) zusammen.
-    - Es gibt vier Bestellungen (d.h. vier ``order``-Elemente). 
+    - Es gibt vier Bestellungen (d.h. vier ``order``-Elemente).
     - Jede Bestellung enthält mehrere Produkte (d. h. ``product``-Elemente).
     - Pro Produkt soll angegeben werden um welches Produkt es sich handelt und wie viele davon bestellt wurden. Fügen Sie den Bestellungen zwischen einem und drei Produkte hinzu.
-    - Die Bestellungen gehen an verschiedenen Partnersysteme und sollen deswegen durch entsprechende Namensräume voneinander getrennt sein.    
+    - Die Bestellungen gehen an verschiedenen Partnersysteme und sollen deswegen durch entsprechende Namensräume voneinander getrennt sein.
 
-    .. solution:: 
+    .. solution::
         :pwd: !xml_and_NameSpaces
 
         Im folgenden ist **eine** mögliche Lösung dargestellt:
 
         .. code:: xml
-            :class: far-smaller
 
             <document>
                 <orders>
@@ -643,20 +631,20 @@ Beispiel: OpenOffice Dokumentenformat
 
 .. class:: new-section transition-fade
 
-XPath 
+XPath
 ------------------------------------------------
 
 
 XPath - Übersicht
 -------------------
 
-.. class:: incremental 
+.. class:: incremental-list
 
 - XPath ist eine Syntax/Sprache zur Adressierung von Knoten in einem Dokument.
 - XPath-Ausdrücke sind *Pfadausdrücke* (:eng:`path expressions`).
 - Erlaubt es folgende Dinge auszudrücken:
-  
-  .. class:: incremental
+
+  .. class:: incremental-list
 
   - Selektiere alle ``vorlesung``-Kinderelemente des ``lehrveranstaltungselements``-Elements.
 
@@ -668,21 +656,21 @@ XPath - Übersicht
 - Implementationen sind in vielen Programmiersprachen verfügbar (z. B. Java, JavaScript, Python, ...) und alle Browser unterstützen XPath-Ausdrücke für die Selektion von Elementen.
 
 
+
 XPath - Pfadausdrücke
 -----------------------
 
 - Ein Pfadausdruck besteht aus einer Folge von Schritten, die durch Schrägstriche getrennt sind. (Ähnlich wie bei Dateipfaden.)
 
-.. class:: incremental
+.. class:: incremental-list
 
 - Ein einzelner Schrägstrich ("``/``") steht für das Wurzelelement.
 - Nachfolgende benannte Schritte im Pfad stellen Kinder dar:
 
   .. code:: xslt
-    :class: far-smaller
 
     /lehrveranstaltungen/modul
-  
+
   Wählt das untergeordnete Element ``modul`` des Dokumentenelements ``lehrveranstaltungen`` aus.
 
 - XPath-Ausdrücke müssen nicht bei der Wurzel starten:
@@ -691,7 +679,7 @@ XPath - Pfadausdrücke
     :class: far-smaller
 
     modul/vorlesung
-    
+
   Wählt das ``vorlesung``-Kinderelement des ``modul``-Elements aus.
 
 
@@ -707,7 +695,7 @@ Resultat eines XPath-Ausdrucks
 
   - Beispiel
 
-    Sei das folgende XML-Dokument gegeben:  
+    Sei das folgende XML-Dokument gegeben:
 
     .. code:: xml
         :class: far-smaller
@@ -724,7 +712,7 @@ Resultat eines XPath-Ausdrucks
 
         /modul/vorlesung
 
-    
+
 
 
 .. [#] Die Reihenfolge der Ergebnisse muss nicht über alle Implementierungen (z. B. Browser) hinweg konsistent sein. (vgl. `XPathResult <https://developer.mozilla.org/en-US/docs/Web/API/XPathResult>`__)
@@ -739,10 +727,9 @@ Attribute Selektieren
 
   - Beispiel
 
-    Sei das folgende XML-Dokument gegeben: 
+    Sei das folgende XML-Dokument gegeben:
 
     .. code:: xml
-        :class: far-smaller
 
         <modul>
             <vorlesung mhb="123">Eins</vorlesung>
@@ -752,10 +739,9 @@ Attribute Selektieren
     Dann würde der Ausdruck:
 
     .. code:: xslt
-        :class: far-smaller
 
         /modul/vorlesung/@mhb
-    
+
     Die beiden ``mhb`` Attribute als Menge zurückgeben.
 
 
@@ -771,7 +757,6 @@ Namen und Namensräume
   - Beispiele für XPath-Ausdrücke mit Namensraum:
 
     .. code:: xslt
-        :class: far-smaller
 
         /dhbw:modul/dhbw:vorlesung
         /dhbw:modul/dhbw:vorlesung/@mhb
@@ -781,7 +766,7 @@ Namen und Namensräume
 .. admonition:: Hinweis
     :class: warning incremental margin-top-1em
 
-    Die Präfixbindung wird außerhalb des Ausdrucks definiert (i. d. R. anwendungsspezifisch). 
+    Die Präfixbindung wird außerhalb des Ausdrucks definiert (i. d. R. anwendungsspezifisch).
 
 
 .. supplemental::
@@ -795,14 +780,12 @@ Namen und Namensräume
     Zum Beispiel:
 
     .. code:: xslt
-        :class: far-smaller
 
         m:section/title
 
     selektiert das Element ``title`` im folgenden Beispiel, da es keinen Namensraum hat:
 
     .. code:: xml
-        :class: far-smaller
 
         <m:section xmlns:m='urn:...'>
           <title>Kein Namespace</title>
@@ -810,14 +793,13 @@ Namen und Namensräume
 
     in folgendem Beispiel jedoch nicht:
 
-    .. code:: xml  
-        :class: far-smaller 
+    .. code:: xml
 
-        <m:section xmlns:m='urn:...' 
+        <m:section xmlns:m='urn:...'
                    xmlns='urn:something-else...'>
           <title>Ich habe einen Namensraum...</title>
         </m:section>
-    
+
     *Der Namensabgleich basiert auf dem lokalen Namen und dem Namen des Namensraums.*
 
 
@@ -827,11 +809,11 @@ Namen und Namensräume
 
 - ``*`` wird als Platzhalter für Namen verwendet werden.
 
-.. class:: incremental
+.. class:: incremental-list
 
 - Beispiele:
 
-  .. class:: incremental
+  .. class:: incremental-list
 
   - Alle Elemente, die in einem ``modul``-Element enthalten sind:
 
@@ -839,7 +821,7 @@ Namen und Namensräume
         :class: far-smaller
 
         /modul/*
-    
+
   - Alle Attribute eines ``vorlesung``-Elements:
 
     .. code:: xslt
@@ -861,18 +843,17 @@ Namen und Namensräume
 
 
 
-Kontextknoten   
+Kontextknoten
 -----------------------
 
 - Die Auswertung erfolgt immer in Bezug auf einen Kontextknoten.
 - Der Kontextknoten wird mit ``.`` (Punkt) referenziert.
 
-.. class:: incremental
+.. class:: incremental-list
 
 - Beispiel - Selektion der Attribute des Kontextknotens:
 
   .. code:: xslt
-    :class: far-smaller
 
     ./@*
 
@@ -889,30 +870,30 @@ Bedingtes Matching
 - Prädikate sind in eckigen Klammern (``[`` und ``]``) eingeschlossen.
 - Verschachtelte Prädikate sind möglich.
 
-.. class:: incremental 
+.. class:: incremental-list
 
-- Beispiel
+- .. example::
 
-  .. code:: xslt
-        :class: far-smaller
-    
-        /modul/vorlesung[@mhb='123']
-    
-  Wählt das ``vorlesung``-Element aus, das das Attribut ``mhb`` mit dem Wert ``123`` hat.
+    .. code:: xslt
+
+            /modul/vorlesung[@mhb='123']
+
+    Wählt das ``vorlesung``-Element aus, das das Attribut ``mhb`` mit dem Wert ``123`` hat.
 
 - Die Verwendung von (komplexen) Pfadausdrücken in Bedingungen ist ebenfalls möglich.
 
-  Beispiel
+  .. example::
 
-  .. code:: xslt
-    :class: far-smaller
+    .. code:: xslt
 
-    lehrveranstaltungen/modul[vorlesung/@mhb='123']
+        lehrveranstaltungen/modul[vorlesung/@mhb='123']
+
+
 
 Bedingtes Matching - Operatoren und Funktionen
 ----------------------------------------------------------
 
-.. class:: incremental
+.. class:: incremental-list
 
 - boolesche Operatoren: (``or`` und ``and``)
 - boolesche Funktionen: ``not ( boolean )``, ``lang ( string )``, ``true()``, ``false()``, ...
@@ -921,12 +902,12 @@ Bedingtes Matching - Operatoren und Funktionen
 - Node-set Funktionen: ``last()``, ``position()``, ``count( node-set )``, ``id( object )``, ``local-name( node-set )``, ``namespace-uri( node-set )``, ...
 
 
-.. container:: incremental
+.. example::
+    :class: incremental
 
-    Beispiel - alle Element, die den lokalen Namen ``modul`` haben:
-    
+    Alle Element, die den lokalen Namen ``modul`` haben:
+
     .. code:: xslt
-        :class: far-smaller
 
         //*[local-name()='modul']
 
@@ -943,15 +924,13 @@ Selektion von Elternknoten und Vorgängerknoten
 - Über den Kontextknoten kann  auf  übergeordnete und vorgelagerte Elemente zugegriffen werden.
 - ``..`` steht für das übergeordnete Element; wie bei Verzeichnissen.
 
-.. class:: incremental
+.. example::
+    :class: incremental
 
-  - Beispiel
-   
     .. code:: xslt
-        :class: far-smaller
 
         /modul/vorlesung[@mhb='123']/..
-    
+
     Wählt das ``modul``-Element aus, das das ``vorlesung``-Element mit dem Attribut ``mhb`` und dem Wert ``123`` enthält.
 
 
@@ -961,18 +940,17 @@ Selektion von Kindknoten
 .. class:: list-with-explanations
 
 - mit dem ``//`` können Elemente, die keine direkten Kinder sind abgeglichen werden
-  
+
   Es werden somit die Nachkommen des *aktuellen Kontexts* durchsucht.
 
-.. class:: incremental
+.. example::
+    :class: incremental
 
-  - Beispiel
-   
     .. code:: xslt
         :class: far-smaller
 
         lehrveranstaltungen//vorlesung[@mhb='123']/..
-    
+
     Wählt alle ``vorlesung``-Elemente mit dem Attribut ``mhb`` und dem Wert ``123``, die Nachkommen des ``lehrveranstaltungen``-Elements sind aus.
 
 
@@ -980,7 +958,7 @@ Selektion von Kindknoten
 Auswahl von Knoten, die keine Elemente oder Attribute sind
 -----------------------------------------------------------
 
-.. csv-table:: 
+.. csv-table::
     :class: incremental
     :header: "Funktion", "Beschreibung"
     :align: center
@@ -990,18 +968,16 @@ Auswahl von Knoten, die keine Elemente oder Attribute sind
     ``processing-instruction()``, "Wählt Verarbeitungsanweisungen aus."
     ``node()``, "Wählt alle Knoten aus."
 
-.. container:: smaller
+.. example::
+    :class: incremental
 
-    .. container:: incremental
+    Alle Kommentare, die Kinder des ``document``-Elements sind:
 
-        Beispiel - alle Kommentare, die Kinder des ``document``-Elements sind:
-        
-        .. code:: xml
-            :class: far-smaller
+    .. code:: xml
 
-            /document/comment()
+        /document/comment()
 
-        
+
 
 
 
@@ -1009,17 +985,14 @@ Auswahl von Knoten, die keine Elemente oder Attribute sind
 Beziehungen zwischen Knoten
 ----------------------------
 
-.. container:: two-columns
+.. grid::
 
-    .. container:: column no-separator
-
-        .. rubric:: Baumstruktur
+    .. cell:: width-60
 
         .. image:: drawings/xml/xpath-axis.svg
-            :height: 900px
             :align: center
 
-    .. container:: column incremental
+    .. cell:: incremental dd-margin-left-2em
 
         .. rubric:: Weitere Beziehungen
 
@@ -1032,9 +1005,9 @@ Beziehungen zwischen Knoten
 Axen in XPath beschreiben die Richtungen von Beziehungen zwischen Knoten.
 ---------------------------------------------------------------------------
 
-.. container:: two-columns
+.. grid::
 
-    .. incremental:: column
+    .. cell:: width-50
 
       - Baumbeziehungen:
 
@@ -1054,126 +1027,123 @@ Axen in XPath beschreiben die Richtungen von Beziehungen zwischen Knoten.
         - *Attribute*
         - *Namensräume*
 
-    .. incremental:: column
+    .. cell:: incremental width-50
 
-        - Beispiel:
-    
+        - .. example::
+
             .. code:: xslt
-                :class: far-smaller
-    
+
                 //modul/ancestor::lehrveranstaltungen
-    
+
             Wählt das ``lehrveranstaltungen``-Element aus, das das ``modul``-Element enthält.
-    
-        - Beispiel:
-    
+
+        - .. example::
+
             .. code:: xslt
-                :class: far-smaller
-    
+
                 //modul/child::vorlesung
-    
+
             Wählt das ``vorlesung``-Element aus, das ein Kind des ``modul``-Elements ist.
 
 
 
-.. class:: no-title center-child-elements
+.. class:: no-title center-content
 
 XPath Support
 -------------
 
 .. container:: box-shadow padding-1em  dhbw-red-background white rounded-corners
 
-    Alle gängigen Browser unterstützen XPath 1.0. 
-    
+    Alle gängigen Browser unterstützen XPath 1.0.
+
     Gängige Bibliotheken (z. B. Saxon) unterstützen XPath 3.1.
 
 
 .. container:: block-footer margin-bottom-1em
-    
+
      https://www.saxonica.com/welcome/welcome.xml
 
 
 
-.. class:: integrated-exercise transition-scale far-smaller
+.. class:: exercises transition-scale
 
 Übung: XPath
 ------------------------------------------------
 
-Schreiben Sie XPath-Ausdrücke, um die folgenden Anfragen zu beantworten:
+.. story::
 
-- Wählen Sie alle ``orders``-Elemente aus.
-- Wählen Sie alle ``product``-Elemente aus, die im Namensraum ``http://fruits.com`` sind.
-- Berechnen Sie die Summe der Werte der ``quantity``-Attribute, die zu Bestellungen aus dem Namensraum von ``http://fruits.com`` gehören.
-- Berechnen Sie die Summe der Werte der ``quantity``-Attribute, die im Namensraum ``http://meat.com`` sind.
-- Berechnen Sie die Summe der Werte *aller* ``quantity``-Attribute; unabhängig von dem konkreten Ziel der Bestellung.
-- Wählen Sie alle ``order``-Elemente aus.
-- Wählen Sie das erste ``product``-Element jeder Bestellung aus, die ``http://meat.com`` zugeordnet ist.
-- Wählen Sie alle ``order``-Elemente aus, bei denen mehr als fünf Produkte bestellt wurden.
-- Bestimmen Sie wie viele Bestellungen es gibt.
-- Selektieren Sie alle Produkte der Bestellungen, die genau vier Produkte umfassen.
+    .. exercise:: Erste XPath Ausdrücke
 
+        Schreiben Sie XPath-Ausdrücke, um die folgenden Anfragen zu beantworten:
 
-.. admonition:: Hinweis
-    :class: warning incremental smaller
+        .. class:: incremental-list
 
-    Verwenden Sie das XML Dokument aus der Musterlösung zur letzten Aufgabe als Grundlage.
+        - Wählen Sie alle ``orders``-Elemente aus.
+        - Wählen Sie alle ``product``-Elemente aus, die im Namensraum ``http://fruits.com`` sind.
+        - Berechnen Sie die Summe der Werte der ``quantity``-Attribute, die zu Bestellungen aus dem Namensraum von ``http://fruits.com`` gehören.
+        - Berechnen Sie die Summe der Werte der ``quantity``-Attribute, die im Namensraum ``http://meat.com`` sind.
+        - Berechnen Sie die Summe der Werte *aller* ``quantity``-Attribute; unabhängig von dem konkreten Ziel der Bestellung.
+        - Wählen Sie alle ``order``-Elemente aus.
+        - Wählen Sie das erste ``product``-Element jeder Bestellung aus, die ``http://meat.com`` zugeordnet ist.
+        - Wählen Sie alle ``order``-Elemente aus, bei denen mehr als fünf Produkte bestellt wurden.
+        - Bestimmen Sie wie viele Bestellungen es gibt.
+        - Selektieren Sie alle Produkte der Bestellungen, die genau vier Produkte umfassen.
 
+        .. hint::
+            :class: incremental
 
+            Verwenden Sie das XML Dokument aus der Musterlösung zur letzten Aufgabe als Grundlage.
 
-.. exercise::
+        .. solution::
+            :pwd: xpath-rauf-und-runter
 
-    .. solution:: 
-        :pwd: xpath-rauf-und-runter
+            .. code:: json
 
-        .. code:: json
-            :class: smaller
-
-            {
-                "source": "orders.xml",
-                "namespaces": {
-                "f": "http://fruits.com",
-                "e": "http://electronics.com",
-                "m" : "http://meat.com"
-                },
-                "xpaths" : [
                 {
-                    "expr": "//orders"
-                },
-                {
-                    "expr": "//f:order/f:product"
-                },
-                {
-                    "expr": "sum(//f:order//@quantity)"
-                },
-                {
-                    "expr": "sum(//@m:quantity)"
-                },
-                { 
-                    "expr": "sum(//@*[local-name()='quantity'])"
-                },
-                {
-                    "expr": "//*[local-name()='order']"
-                },
-                {
-                    "expr" : "//m:product[1]"
-                },
-                {
-                    "expr": "//*[local-name()='order' and sum(.//@*[local-name()='quantity']) > 5]"
-                },
-                {
-                    "expr": "count(//orders/*)"
-                },
-                {
-                    "expr": "//orders/*/*[last()=4]"
+                    "source": "orders.xml",
+                    "namespaces": {
+                    "f": "http://fruits.com",
+                    "e": "http://electronics.com",
+                    "m" : "http://meat.com"
+                    },
+                    "xpaths" : [
+                    {
+                        "expr": "//orders"
+                    },
+                    {
+                        "expr": "//f:order/f:product"
+                    },
+                    {
+                        "expr": "sum(//f:order//@quantity)"
+                    },
+                    {
+                        "expr": "sum(//@m:quantity)"
+                    },
+                    {
+                        "expr": "sum(//@*[local-name()='quantity'])"
+                    },
+                    {
+                        "expr": "//*[local-name()='order']"
+                    },
+                    {
+                        "expr" : "//m:product[1]"
+                    },
+                    {
+                        "expr": "//*[local-name()='order' and sum(.//@*[local-name()='quantity']) > 5]"
+                    },
+                    {
+                        "expr": "count(//orders/*)"
+                    },
+                    {
+                        "expr": "//orders/*/*[last()=4]"
+                    }
+                    ]
                 }
-                ]
-            }
 
+.. supplemental::
 
-.. supplemental:: 
-    
     .. rubric:: Voraussetzungen
-    
+
     **Installation von node.js**
 
     Installieren Sie node.js von https://nodejs.org/en (Version 21 und 22 sind getestet). Benutzen Sie bitte *eine getestet Version*!
@@ -1184,18 +1154,18 @@ Schreiben Sie XPath-Ausdrücke, um die folgenden Anfragen zu beantworten:
 
     .. code:: shell
         :class: copy-to-clipboard
-    
+
         npm install jsonschema@~1.4.1
         npm install xpath@~0.0.34
         npm install @xmldom/xmldom@~0.8.10 #ACHTUNG: 0.9.0 funktioniert nicht!
 
     **Ausführen der XPath Ausdrücke**
 
-    
-    Nutzen Sie den XPath Evaluator, um die XPath-Ausdrücke auf dem XML-Dokument auszuführen: 
-    
+
+    Nutzen Sie den XPath Evaluator, um die XPath-Ausdrücke auf dem XML-Dokument auszuführen:
+
     https://gist.github.com/Delors/189629b86265463e4a625924a9f705c8
 
     (Speichern Sie das Script in der Datei ``xpaths_evaluator.js`` und führen Sie es mit ``node xpaths_evaluator.js <xpath specifications>`` aus.)
 
-    In der Datei finden Sie am Anfang eine Beschreibung wie die Dateien auszusehen haben. Alternativ können Sie auch die XML Datei `demo.xml <https://gist.github.com/Delors/89e57bd0665f66376cac0cbdf359fa83>`__ und die Datei `demo.xpaths.json <https://gist.github.com/Delors/aee6eb48450657a5ae22e530580548b2>`__ herunterladen und als Grundlage nutzen. 
+    In der Datei finden Sie am Anfang eine Beschreibung wie die Dateien auszusehen haben. Alternativ können Sie auch die XML Datei `demo.xml <https://gist.github.com/Delors/89e57bd0665f66376cac0cbdf359fa83>`__ und die Datei `demo.xpaths.json <https://gist.github.com/Delors/aee6eb48450657a5ae22e530580548b2>`__ herunterladen und als Grundlage nutzen.
