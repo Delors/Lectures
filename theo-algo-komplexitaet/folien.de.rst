@@ -31,21 +31,21 @@ Komplexität und Algorithmen
 
 .. container:: peripheral
 
-    :Quelle: 
+    :Quelle:
         Die Folien sind teilweise inspiriert von oder basierend auf Lehrmaterial von Prof. Dr. Ritterbusch, Prof. Dr. Baumgart oder Prof. Dr. Albers.
 
 .. supplemental::
 
-    :Folien: 
-        
-        |html-source| 
+    :Folien:
+
+        |html-source|
 
         |pdf-source|
 
 
     :Kontrollfragen:
 
-        .. source:: kontrollfragen.de.rst 
+        .. source:: kontrollfragen.de.rst
             :path: relative
             :prefix: https://delors.github.io/
             :suffix: .html
@@ -66,7 +66,7 @@ Berechnungskomplexität
 
 .. deck::
 
-    .. card:: 
+    .. card::
 
         Analyse des Aufwands zur Berechnung von Ergebnissen ist wichtig ...
 
@@ -87,7 +87,7 @@ Berechnungskomplexität
 
           **Der Rechenaufwand ist häufig zentral** und wird hier betrachtet, die Verfahren sind aber auch für weitere Ressourcen anwendbar.
 
-    .. card:: 
+    .. card::
 
         .. rubric:: Die Vorhersagen erfolgen über asymptotische Schätzungen
 
@@ -95,7 +95,7 @@ Berechnungskomplexität
         - durch Kategorisierung im Sinne des Wachstumsverhaltens,
         - damit ist oft keine exakte Vorhersage möglich.
 
-    .. card:: 
+    .. card::
 
         .. rubric:: Unterschiedliche Systeme sind unterschiedlich schnell, relativ dazu wird es interessant.
 
@@ -103,7 +103,7 @@ Berechnungskomplexität
 
         - die Beschreibung des asymptotischen Wachstumsverhaltens
         - die Analyse von iterativen Algorithmen
-        - die Analyse von rekursiv teilenden Algorithmen  
+        - die Analyse von rekursiv teilenden Algorithmen
 
 .. supplemental::
 
@@ -133,16 +133,16 @@ Entwurf von Algorithmen: Dynamische Programmierung
     .. hint::
 
         Die Fibonacci-Zahlen sind definiert durch die Rekursionsformel:
-        
-        :math:`F(n) = F(n-1) + F(n-2)` 
-        
-        mit den Anfangswerten: 
-         
+
+        :math:`F(n) = F(n-1) + F(n-2)`
+
+        mit den Anfangswerten:
+
         :math:`F(0) = 0` und :math:`F(1) = 1`.
 
     Bis zu welchem :math:`n` können Sie die Fibonacci-Zahlen in vernünftiger Zeit berechnen (d. h. < 10 Sekunden) ?
 
-    .. solution:: 
+    .. solution::
         :pwd: das ist einfach gewesen
 
         Je nach Rechner und Laufzeitumgebung dürfte zwischen fib(35) und fib(45) die Grenze liegen, wenn man innerhalb von 10 Sekunden bleiben möchte.
@@ -150,7 +150,8 @@ Entwurf von Algorithmen: Dynamische Programmierung
         .. rubric:: |python-icon| Lösung in Python:
 
         .. code:: Python
-            :class: smaller copy-to-clipboard
+            :class: copy-to-clipboard
+            :number-lines:
 
             def fib(n):
                  if n == 0:
@@ -160,12 +161,13 @@ Entwurf von Algorithmen: Dynamische Programmierung
                  else :
                      return fib(n-1) + fib(n-2)
 
-        .. rubric:: |java-icon| Lösung in Java >23 
-        
+        .. rubric:: |java-icon| Lösung in Java >23
+
         (Ggf. mit --enable-preview zu starten!)
 
         .. code:: Java
-            :class: smaller copy-to-clipboard
+            :number-lines:
+            :class: copy-to-clipboard
 
             int fib(int n) {
                 return switch(n){
@@ -189,16 +191,16 @@ Technik der dynamischen Programmierung
 Beispiel: Berechnung der Fibonacci-Zahlen (rekursiv)
 --------------------------------------------------------------------------------
 
-.. definition:: 
+.. definition::
 
-    :math:`F(0) = 0\qquad\qquad F(1) = 1 \qquad\qquad F(n) = F(n-1) + F(n-2)` 
+    :math:`F(0) = 0\qquad\qquad F(1) = 1 \qquad\qquad F(n) = F(n-1) + F(n-2)`
 
 .. deck:: incremental
 
-    .. card::     
+    .. card::
 
         .. warning::
-        
+
             Die Berechnung der Fibonacci-Zahlen mit Hilfe einer naiven rekursiven Funktion ist sehr ineffizient.
 
     .. card::
@@ -216,7 +218,7 @@ Beispiel: Berechnung der Fibonacci-Zahlen (rekursiv)
 
         .. image:: images/fib.svg
             :align: center
-        
+
 
 
 
@@ -236,19 +238,19 @@ Vorgehen beim dynamischen Programmieren
 Beispiel: Berechnung der Fibonacci-Zahlen mit dynamischer Programmierung
 --------------------------------------------------------------------------------
 
-.. deck:: 
+.. deck::
 
     .. card::
 
         Rekursive Definition der Fibonacci-Zahlen nach gegebener Gleichung:
-        
+
         .. class:: incremental-list
 
         1. :math:`T = { f(0),..., f(n-1)}`
         2. :math:`T_i = f(i), i = 0,...,n – 1`
         3. Berechnung von :math:`fib(i)` benötigt von den früheren Problemen nur die zwei letzten Teillösungen :math:`fib(i – 1)` und :math:`fib(i – 2)` für :math:`i ≥ 2`.
 
-    .. card:: 
+    .. card::
 
         .. rubric:: Lösung mit linearer Laufzeit und konstantem Speicherbedarf
 
@@ -263,10 +265,10 @@ Beispiel: Berechnung der Fibonacci-Zahlen mit dynamischer Programmierung
                     f_n := f_n_m1 + f_n_m2
                     f_n_m2 := f_n_m1
                     f_n_m1 := f_n
-                if n ≤ 1 then return n 
+                if n ≤ 1 then return n
                 else          return f_n
 
-    .. card:: 
+    .. card::
 
         .. rubric:: Lösung mit Memoisierung (:eng:`Memoization`)
 
@@ -274,10 +276,10 @@ Beispiel: Berechnung der Fibonacci-Zahlen mit dynamischer Programmierung
 
         .. code:: pascal
             :number-lines:
-            :class: far-smaller copy-to-clipboard
-            
+            :class: copy-to-clipboard
+
             procedure fib (n : integer) : integer
-                F[0] := 0 
+                F[0] := 0
                 F[1] := 1
                 for i := 2 to n do
                     F[i] := ∞ // Initialisierung
@@ -301,7 +303,7 @@ Beispiel: Berechnung der Fibonacci-Zahlen mit dynamischer Programmierung
 
     Bis zur welcher Fibonacci-Zahl können Sie die Berechnung nun durchführen?
 
-    .. solution:: 
+    .. solution::
         :pwd: das ist schnell
 
         .. rubric:: |java-icon| Lösung
@@ -314,7 +316,7 @@ Beispiel: Berechnung der Fibonacci-Zahlen mit dynamischer Programmierung
 
             import java.math.BigInteger;
 
-            BigInteger fib(int n) {  
+            BigInteger fib(int n) {
                 BigInteger f_n = null;
                 var f_n_m2 = BigInteger.ZERO;
                 var f_n_m1 = BigInteger.ONE;
@@ -366,30 +368,30 @@ Im Allgemeinen werden Laufzeiten oder Aufwände in Abhängigkeit von einer Einga
 .. class:: incremental-list
 
 - .. class:: columns
-    
+
     * Definition über Folgenglieder
-    * .. example:: 
-    
+    * .. example::
+
             (:math:`a_n`) : :math:`a_1 = 2, a_2 = 3, a_3 = 7, a_4 = 11, ...`
 
-- .. class:: columns 
+- .. class:: columns
 
-    - Rekursive Definition 
-    - .. example:: 
-    
+    - Rekursive Definition
+    - .. example::
+
         (:math:`c_n`) : :math:`c_1 = 1, c_2 = 1, c_{n+2} = c_n + c_{n+1}` für :math:`n \in \mathbb(N)`
 
 - .. class:: columns
-    
-    - Explizite Definition 
-    - .. example:: 
-    
+
+    - Explizite Definition
+    - .. example::
+
         (:math:`b_n`) : :math:`b_n = n^2` für :math:`n \in \mathbb{N}`
 
 .. supplemental::
 
-    Eine rekursive Definition ist eine Definition, die sich auf sich selbst bezieht. Eine solche Definition ist häufiger schwieriger zu analysieren. 
-    
+    Eine rekursive Definition ist eine Definition, die sich auf sich selbst bezieht. Eine solche Definition ist häufiger schwieriger zu analysieren.
+
     Die explizite Definition ist eine direkte Zuweisung und meist die beste Wahl.
 
 
@@ -407,7 +409,7 @@ Folgen und Laufzeiten
     .. image:: images/hanoi.svg
         :align: center
 
-    .. container:: text-align-center minor far-smaller
+    .. container:: text-align-center peripheral
 
         Türme von Hanoi mit 3 Scheiben.
 
@@ -442,7 +444,7 @@ Laufzeit der Lösung der Türme von Hanoi
 
         .. container:: incremental
 
-            Bei nur einem Ring ist :math:`a_1 = 1` und sonst :math:`a_n = a_{n−1} + 1+ a_{n−1} = 2a_{n−1} + 1`. 
+            Bei nur einem Ring ist :math:`a_1 = 1` und sonst :math:`a_n = a_{n−1} + 1+ a_{n−1} = 2a_{n−1} + 1`.
 
         .. container:: incremental
 
@@ -455,21 +457,21 @@ Laufzeit der Lösung der Türme von Hanoi
 
     .. card::
 
-        .. proof:: 
-            
+        .. proof::
+
             .. rubric:: Beweis durch vollständige Induktion
 
             - Induktionsanfang :math:`n = 1`: :math:`a_1 = 2^n -1 =  2^1−1 = 1`
             - Induktionsvoraussetzung: :math:`a_{n-1} = 2^{n-1}−1` und :math:`a_{n} = 2a_{n-1} + 1`
-            - Induktionsschritt (:math:`n-1 \rightarrow n`): 
-        
+            - Induktionsschritt (:math:`n-1 \rightarrow n`):
+
               :math:`a_{n} = 2·(2^{n-1}−1)+1`
 
-              .. container:: incremental  
+              .. container:: incremental
 
                 :math:`\quad\, = 2^{n}−2+1`
 
-              .. container:: incremental  
+              .. container:: incremental
 
                 :math:`\quad\, = 2^{n}−1`
 
@@ -498,8 +500,8 @@ Eigenschaften von Folgen - Konvergenz
       .. math::
 
         a_n \xrightarrow{n→∞} a , a_n \rightarrow a\; \text{oder}\; \lim_{n → ∞} a_n = a
-    
-      geschrieben. 
+
+      geschrieben.
 
     - Eine Folge ist divergent, wenn es keinen Grenzwert gibt.
 
@@ -508,24 +510,24 @@ Eigenschaften von Folgen - Konvergenz
 Eigenschaften von Folgen - Beispiel für Konvergenz
 --------------------------------------------------
 
-.. example:: 
+.. example::
 
     Betrachten wir die Folge (:math:`a_n`) mit :math:`a_n = {(−1)^n \over n} + 2`, :math:`n \in \mathbb{N}`:
 
-    .. deck:: 
+    .. deck::
 
-        .. card:: 
+        .. card::
 
             .. rubric:: Entwicklung der Folge
 
             :math:`a_1 = -1 + 2 = 1`
-            
-            :math:`a_2 = 0.5 + 2 = 2.5` 
-            
-            :math:`a_3 = -0.33.. + 2 \approx 1.67` 
-            
-            :math:`a_4 = 0.25 + 2 = 2.25` 
-            
+
+            :math:`a_2 = 0.5 + 2 = 2.5`
+
+            :math:`a_3 = -0.33.. + 2 \approx 1.67`
+
+            :math:`a_4 = 0.25 + 2 = 2.25`
+
             ...
 
 
@@ -534,11 +536,11 @@ Eigenschaften von Folgen - Beispiel für Konvergenz
             Die Folge konvergiert zu 2, da für ein gegebenes :math:`ε > 0` ein :math:`N` existiert so dass :math:`|a_n−a|<ε`:
 
             .. math::
-            
+
                 |a_n−a|= |{ (−1)^n \over n} + 2 − 2| = |{(−1)^n \over n}| = {1 \over n} < ε
 
             wenn :math:`n > {1 \over ε}` ist.
-            
+
             D. h. :math:`a_n \rightarrow 2` oder :math:`lim_{n→∞} a_n = 2`
 
 
@@ -559,7 +561,7 @@ Konvergenz von Folgen - Rechenregeln
             lim_{n→∞} {a_n \over b_n} & = & {a \over b},\; \text{für}\; b ≠ 0, b_n ≠ 0 \\
             lim_{n→∞} a^{p/q}_n & = & a^{p/q} , \text{wenn}\; a^{p/q}\; \text{existiert} \\
         \end{array}
-        
+
 
 Konvergenz von Folgen - wichtige Grenzwerte
 --------------------------------------------
@@ -605,10 +607,10 @@ Analyse des asymptotischen Verhaltens
 
 Wir möchten :math:`f(x) = \frac{\ln(x)}{x^{2/3}}` für :math:`x \to \infty` untersuchen.
 
-.. deck::            
+.. deck::
     :class: incremental
 
-    .. card:: 
+    .. card::
 
         .. observation::
 
@@ -623,7 +625,7 @@ Wir möchten :math:`f(x) = \frac{\ln(x)}{x^{2/3}}` für :math:`x \to \infty` unt
 
         .. rubric:: Anwendung von L'Hôpital
 
-        .. math:: 
+        .. math::
             :class: incremental
 
             \lim_{x \to \infty} \frac{\ln(x)}{x^{2/3}} = \lim_{x \to \infty} \frac{\frac{d}{dx}(\ln(x))}{\frac{d}{dx}(x^{2/3})} = \lim_{x \to \infty} \frac{\frac{1}{x}}{\frac{2}{3}x^{-1/3}}
@@ -632,7 +634,7 @@ Wir möchten :math:`f(x) = \frac{\ln(x)}{x^{2/3}}` für :math:`x \to \infty` unt
 
             Das vereinfacht sich zu:
 
-            .. math:: 
+            .. math::
 
                 = \lim_{x \to \infty} \frac{1}{x} \cdot \frac{3}{2}x^{1/3} = \lim_{x \to \infty} \frac{3}{2} \cdot \frac{1}{x^{2/3}} = 0
 
@@ -647,7 +649,7 @@ Wir möchten :math:`f(x) = \frac{\ln(x)}{x^{2/3}}` für :math:`x \to \infty` unt
     .. math::
 
         \lim_{x \to a} \frac{f(x)}{g(x)} = \lim_{x \to a} \frac{f'(x)}{g'(x)},
-    
+
 
     sofern der Grenzwert auf der rechten Seite existiert oder unendlich ist.
 
@@ -662,7 +664,7 @@ Wir möchten :math:`f(x) = \frac{\ln(x)}{x^{2/3}}` für :math:`x \to \infty` unt
 
     Zeigen Sie, dass die Folge :math:`a_n = {n^2 \over n^2 + 1}` konvergiert und bestimmen Sie den Grenzwert.
 
-    .. solution:: 
+    .. solution::
         :pwd: das ist wirklich so
 
         Der Grenzwert der Folge :math:`a_n` ist 1, da:
@@ -679,7 +681,7 @@ Wir möchten :math:`f(x) = \frac{\ln(x)}{x^{2/3}}` für :math:`x \to \infty` unt
         :pwd: so und nur so
 
         Nach Kürzen der höchsten Potenz kann der Grenzwert für die einzelnen Terme bestimmt werden:
-    
+
         .. math::
 
             \begin{array}{rl}
@@ -711,18 +713,18 @@ Wir möchten :math:`f(x) = \frac{\ln(x)}{x^{2/3}}` für :math:`x \to \infty` unt
     Hier könnte die dritte binomische Formel (:math:`(a−b)(a + b) = a^2 −b^2`) hilfreich sein.
 
 
-    .. solution:: 
+    .. solution::
         :pwd: da sind sie wieder
 
         Um die Wurzel loszuwerden betrachten wir :math:`\sqrt{n^2 + n}` als :math:`a` und :math:`n` als :math:`b` bzgl. der 3. binomischen Formel. Wir verwenden jetzt den entsprechenden Term: :math:`\sqrt{n^2 + n} + n` (*Achtung: Vorzeichen beachten, damit wir die dritte binomische Formel anwenden können*). Diesen wenden wir auf den Zähler  und Nenner (hier implizit :math:`1`) an:
 
-        .. math:: 
-            
+        .. math::
+
             \lim_{n→∞} {(\sqrt{n^2 + n} - n) \cdot (\sqrt{n^2 + n} + n) \over \sqrt{n^2 + n} + n }
 
         Anwendung der dritten Binomischen Formel auf den Zähler:
 
-        .. math:: 
+        .. math::
 
             \lim_{n→∞} {n^2 + n - n^2 \over \sqrt{n^2 + n} + n }
 
@@ -730,18 +732,18 @@ Wir möchten :math:`f(x) = \frac{\ln(x)}{x^{2/3}}` für :math:`x \to \infty` unt
 
         Ausklammern der höchsten Potenz:
 
-        .. math:: 
+        .. math::
 
             \lim_{n→∞} {n \over n \left(\sqrt{1 + 1/n} +1 \right) }
 
-            \lim_{n→∞} {1 \over \sqrt{1 + 1/n} +1  } = {1 \over 2} 
-        
+            \lim_{n→∞} {1 \over \sqrt{1 + 1/n} +1  } = {1 \over 2}
+
         (Da gilt: :math:`\lim_{n→∞} \sqrt{1 + 1/n} = 1`)
 
 .. supplemental::
 
-    Um eine Potenz aus einer Wurzel zu bekommen, hilft ggf. das Wurzelgesetz :math:`\sqrt{a} \cdot \sqrt{b} = \sqrt{a \cdot b}`. 
-    
+    Um eine Potenz aus einer Wurzel zu bekommen, hilft ggf. das Wurzelgesetz :math:`\sqrt{a} \cdot \sqrt{b} = \sqrt{a \cdot b}`.
+
     Beispiel: :math:`\sqrt{x^4 + x^2} = \sqrt{x^4 (1 + 1/x ^2)} = \sqrt{x^4} \cdot \sqrt{(1 + 1/x ^2)} = x^2 \cdot \sqrt{(1 + 1/x ^2)}`.
 
 
@@ -749,7 +751,7 @@ Wir möchten :math:`f(x) = \frac{\ln(x)}{x^{2/3}}` für :math:`x \to \infty` unt
 
     Berechnen Sie den Grenzwert Folge  :math:`b_n = {n^2 -1 \over n + 3 } - {n^2 + 1 \over n - 1}` falls er existiert.
 
-    .. solution:: 
+    .. solution::
         :pwd: ausmultiplizieren_ist_der_Schluessel
 
         Vorgehen: Auf einem gemeinsamen Nenner bringen und dann die höchste Potenz ausklammern.
@@ -770,12 +772,12 @@ Wir möchten :math:`f(x) = \frac{\ln(x)}{x^{2/3}}` für :math:`x \to \infty` unt
 
     Bestimmen Sie den Grenzwert :math:`\lim_{n→∞} \sqrt{n^2 + 1} - \sqrt{n^2 + 4n}`.
 
-    .. solution:: 
+    .. solution::
         :pwd: Binomische_Teil2
 
         Auch hier helfen die Binomischen Formeln:
 
-        .. math:: 
+        .. math::
 
             \begin{array}{rl}
             \lim_{n→∞} \sqrt{n^2 + 1} - \sqrt{n^2 + 4n} = & \lim_{n→∞} {(\sqrt{n^2 + 1} - \sqrt{n^2 + 4n}) \cdot (\sqrt{n^2 + 1} + \sqrt{n^2 + 4n}) \over \sqrt{n^2 + 1} + \sqrt{n^2 + 4n}} \\
@@ -785,7 +787,7 @@ Wir möchten :math:`f(x) = \frac{\ln(x)}{x^{2/3}}` für :math:`x \to \infty` unt
             = & \lim_{n→∞} {n(1/n - 4) \over n \cdot (\sqrt{1 + 1/n^2} + \sqrt{1 + 4/n})} \\
             = & \lim_{n→∞} {1/n - 4 \over \sqrt{1 + 1/n^2} + \sqrt{1 + 4/n}} \\
             = & {-4 \over 1 + 1} = -2
-            \end{array} 
+            \end{array}
 
 .. class:: new-subsection
 
@@ -793,7 +795,7 @@ Landau-Notation
 --------------------------------------------------------
 
 
-Asymptotische Abschätzung 
+Asymptotische Abschätzung
 --------------------------------------------------------
 
 .. admonition:: Definition
@@ -810,10 +812,10 @@ Asymptotische Abschätzung
     - in gleicher Ordnung abgeschätzt werden, :math:`Θ(g) := \{f : \mathbb{N} →\mathbb{R}_{≥0} | \lim_{n→∞} {f(n) \over g(n)} = C \in \mathbb{R}_{>0}\}`
 
 
-.. container:: incremental 
-        
+.. container:: incremental
+
     Es gilt der folgende Zusammenhang für die Mengen :math:`\mathcal{O}(g)`\ [#]_, :math:`Ω(g)` und :math:`Θ(g)`:
-            
+
     .. math::
 
         Θ(g) = \mathcal{O}(g) ∩ Ω(g)
@@ -837,14 +839,14 @@ Alternative Schreibweisen
 
     Insbesondere für die obere Abschätzung :math:`O(g)` gibt es eine alternative Schreibweise:
 
-    .. math:: 
-        
+    .. math::
+
         f(n) ∈ O(g(n)) ⇔ ∃c_0, n_0 ∀n : n > n_0 ⇒ f (n) ≤ c_0· g(n)
 
     D. h. ab einem Wert :math:`n_0` liegt die Funktion :math:`f` unter dem :math:`c_0`-fachen der Funktion :math:`g`.
 
     Beispiel: :math:`f(n) = 4n + 7 ∈ O(n)`
-    
+
     :math:`4n + 7 ≤ c_0· n ⇔ n· (4− c_0) ≤ −7`
 
     Wähle (exemplarisch): :math:`c_0 = 5` und :math:`n_0 = 7` sowie :math:`g(n) = n`.
@@ -894,32 +896,32 @@ Asymptotische Laufzeitabschätzungen können zu Missverständnissen führen:
 
         \lim_{x→∞} {f_1(x) \over f_2(x)}, \lim_{x→∞} {f_2(x) \over f_3(x)},\; \text{und ggf.}\; \lim_{x→∞} {f_1(x) \over f_3(x)}
 
-    .. solution::  
+    .. solution::
         :pwd: viel_zu-berechnen
 
         1. Aufgabe
-        
-        .. math:: 
-        
+
+        .. math::
+
             \lim_{x→∞} {f_1(x) \over f_2(x)} = \lim_{x→∞} {\sqrt[3]{x} \over e^{-1+ln\, x}} = \lim_{x→∞} {x^{1/3}  \over {e^{-1} \cdot e^{ln\,x}}}  = \lim_{x→∞} e \cdot x^{-2/3} = \lim_{x→∞} {e \over \sqrt[3]{x^2}} = 0
 
         2. Aufgabe
 
         .. math::
 
-            \lim_{x→∞} {f_2(x) \over f_3(x)} = {e^{−1+ln\, x} \over {x \over ln(x) + 1}} = {e^{−1} \cdot e^{ln\, x} \over {x \over ln(x) + 1}} = { x (ln(x) + 1) \over x \cdot e} =  { ln(x) + 1 \over e} = \infty 
+            \lim_{x→∞} {f_2(x) \over f_3(x)} = {e^{−1+ln\, x} \over {x \over ln(x) + 1}} = {e^{−1} \cdot e^{ln\, x} \over {x \over ln(x) + 1}} = { x (ln(x) + 1) \over x \cdot e} =  { ln(x) + 1 \over e} = \infty
 
         3. Aufgabe
-        
+
         .. math::
 
             \begin{array}{rl}
                 \lim_{x→∞} {f_1(x) \over f_3(x)} = \lim_{x→∞}  {\sqrt[3]{x} \over {x \over ln(x) + 1}} = & \lim_{x→∞} x^{1/3} \cdot x^{-1} \cdot (ln(x) + 1) \\
-                = & \lim_{x→∞} x^{-2/3} \cdot (ln(x) + 1) 
+                = & \lim_{x→∞} x^{-2/3} \cdot (ln(x) + 1)
             \end{array}
 
         Sowohl Zähler als auch Nenner gehen gegen unendlich. Deswegen ist die Anwendung von L'Hôpital (bzw. L'Hospital) erforderlich! (D. h. getrennte Ableitung von Zähler und Nenner):
-    
+
         .. math::
 
             = \lim_{x→∞} {{d \over dx} (ln(x) + 1)  \over {d \over dx}  (x^{2/3}) } = \lim_{x→∞} {{1 \over x} \over 2/3 \cdot x^{-1/3}} = \lim_{x→∞} x^{-1} \cdot x^{1/3} \cdot {3 \over 2} = \lim_{x→∞} {3 \over \sqrt[3]{x^2} \cdot 2} = 0
@@ -933,7 +935,7 @@ Asymptotische Laufzeitabschätzungen können zu Missverständnissen führen:
 .. supplemental::
 
     Denken Sie daran, dass die erste Ableitung von :math:`f(x) = ln(x)` die Funktion :math:`f'(x)= {1 \over x}` ist.
-    
+
 
 
 .. class:: exercises
@@ -988,7 +990,7 @@ Asymptotische Laufzeitabschätzungen können zu Missverständnissen führen:
         .. math::
 
             \lim_{x→∞} {2 \cdot 4^x \over  4^x + 2^x} = \lim_{x→∞} {2 \cdot 4^x \over  4^x \cdot (1 + 1/2^x)} = 2
-        
+
 
         Somit sind die Funktionen :math:`f_1` und :math:`f_2` asymptotisch äquivalent.
 
@@ -996,7 +998,7 @@ Asymptotische Laufzeitabschätzungen können zu Missverständnissen führen:
 
 .. class:: new-section
 
-Algorithmische Komplexität 
+Algorithmische Komplexität
 --------------------------------------------------------
 
 
@@ -1074,9 +1076,9 @@ Tatsächlicher Zeitaufwand hängt vom ausführenden Rechnersystem ab.
     :class: incremental
 
     Langsamere Algorithmen bleiben langsamer auch auf schnellen Systemen.
-  
+
 .. container:: incremental
-        
+
     Eine möglichst sinnvolle Annahme eines Rechnersystems gesucht:
 
     .. class:: incremental-list
@@ -1123,19 +1125,19 @@ Komplexität und bekannte Algorithmen/Probleme
 
 .. deck::
 
-    .. card:: 
+    .. card::
 
         :math:`O(1)`
 
         - Liegt typischerweise dann vor, wenn das Programm nur einmal linear durchlaufen wird.
         - Es liegt keine Abhängigkeit von der Problemgröße vor, d. h. beispielsweise keine Schleifen in Abhängigkeit von :math:`n`.
-      
+
         .. example::
             :class: incremental
 
             Die Position eines Datensatzes auf einem Datenträger kann mit konstanten Aufwand berechnet werden.
 
-    .. card:: 
+    .. card::
 
         :math:`O(\log n)`
 
@@ -1171,7 +1173,7 @@ Komplexität und bekannte Algorithmen/Probleme
 
         .. example::
             :class: incremental
-          
+
             Einfache Sortierverfahren oder die Matrixaddition.
 
 
@@ -1187,7 +1189,7 @@ Komplexität und bekannte Algorithmen/Probleme
             .. rubric:: Die (naive) Matrixmultiplikation
 
             :math:`M(m, t)` ist eine Matrix mit :math:`m` Zeilen und :math:`t` Spalten.
-                
+
             :math:`C(m, t) = A(m, n)· B(n, t)` mit
 
             :math:`c_{i,j} = \sum_{k = 1}^n a_{i,k}· b_{k,j}\qquad i = 1, . . . , m \qquad j = 1, . . . , t`
@@ -1196,7 +1198,7 @@ Komplexität und bekannte Algorithmen/Probleme
     .. card::
 
         :math:`O(2^n)`
-            
+
         - Typischerweise der Fall, wenn für eine Menge mit :math:`n` Elementen alle Teilmengen berechnet und verarbeitet werden müssen.
 
         .. example::
@@ -1231,7 +1233,7 @@ Approximation von Laufzeiten
 
     Für die Approximation sei ein Rechner mit 4 GHz Taktrate angenommen und ein Rechenschritt soll einen Takt benötigen.
 
-    .. container:: smaller
+    .. container:: 
 
         Verwendete Abkürzungen:
 
@@ -1246,7 +1248,7 @@ Sei die Problemgröße :math:`n = 128`:
 
 .. csv-table::
     :header: Klasse, Laufzeit
-    :class: highlight-line-on-hover 
+    :class: highlight-line-on-hover
 
     ":math:`O(\log_2\, n)`", ":math:`1,75\,ns`"
     :math:`O(n)`, ":math:`32\,ns`"
@@ -1280,7 +1282,7 @@ Elementare Kosten als Approximation
         .. csv-table::
             :header: "Operation", "Anzahl der Rechenschritte"
             :widths: 35, 65
-            :class: smaller highlight-line-on-hover
+            :class: highlight-line-on-hover
 
             "elementare Arithmetik: +    ,-    ,    *    , /, <, <=, etc.", 1
             "elementare logische Operationen: &&, ||, !, etc.", 1
@@ -1293,7 +1295,7 @@ Elementare Kosten als Approximation
         .. csv-table::
             :header: "Kontrollstrukturen", "Anzahl der Rechenschritte"
             :widths: 35, 65
-            :class: smaller highlight-line-on-hover 
+            :class: highlight-line-on-hover
 
             Methodenaufruf, 1 + Komplexität der Methode
             "Fallunterscheidung", "Komplexität des logischen Ausdrucks + Maximum der Komplexität der Rechenschritte der Zweige"
@@ -1354,7 +1356,7 @@ Insertion-Sort: Analyse mit abstrahierten Kosten
             - Andere Datentypen / Klassen benötigen definierten Vergleichsoperator
 
 
-    .. card:: 
+    .. card::
 
         Vergleichbar zum Ziehen von Karten: die neue Karte wird an der richtigen Stelle eingeschoben.
 
@@ -1363,7 +1365,7 @@ Insertion-Sort: Analyse mit abstrahierten Kosten
         .. raw:: html
 
             <style>
-                #insertion-sort-visualization {                
+                #insertion-sort-visualization {
                     iframe {
                         border: none;
                         margin: 0;
@@ -1371,7 +1373,7 @@ Insertion-Sort: Analyse mit abstrahierten Kosten
                     }
                 }
                 @container style(--ld-rendering-mode: slide) {
-                    
+
                     #insertion-sort-visualization {
                         width: 912.5px;
                         height: 963.75px;
@@ -1384,9 +1386,9 @@ Insertion-Sort: Analyse mit abstrahierten Kosten
                 <iframe src="vis/insertionsort.html" width="365" height="385.5" frameborder="0"></iframe>
             </div>
 
-    .. card:: 
+    .. card::
 
-        .. class:: columns 
+        .. class:: columns
 
             - .. image:: images/insertion_sort.svg
                     :alt: Visualisierung des Insertion-Sort-Algorithmus
@@ -1396,23 +1398,23 @@ Insertion-Sort: Analyse mit abstrahierten Kosten
                     :class: copy-to-clipboard incremental
 
                     def insertion_sort(A):
-                      for i in range(1, len(A)):         
-                        key = A[i]                     
-                        j = i - 1                      
-                        while j >= 0 and A[j] > key:   
-                          A[j + 1] = A[j]            
-                          j = j - 1                  
-                        A[j + 1] = key                 
+                      for i in range(1, len(A)):
+                        key = A[i]
+                        j = i - 1
+                        while j >= 0 and A[j] > key:
+                          A[j + 1] = A[j]
+                          j = j - 1
+                        A[j + 1] = key
 
 
 
-Beispiel Insertion-Sort: Detailanalyse 
+Beispiel Insertion-Sort: Detailanalyse
 --------------------------------------------------------
 
 .. story::
 
     .. csv-table::
-        :class: borderless highlight-line-on-hover 
+        :class: borderless highlight-line-on-hover
         :header: "", "Algorithmus: Insertion-Sort(A, n) [Pseudocode - Index startet bei 1]", "Zeit", "Anzahl"
         :widths: 3, 80, 10, 25
 
@@ -1427,7 +1429,7 @@ Beispiel Insertion-Sort: Detailanalyse
     - :math:`c_x` sind die konstanten Kosten für die jeweilige Operation. Wir abstrahieren diese als :math:`c = max(c_1,...c_7)`.
     - :math:`t_i` ist die Anzahl der Schritte, die für das Einsortieren der :math:`i`-ten Karte benötigt wird. Dies hängt davon ab, wie die Liste vorliegt.
 
-    .. container:: incremental 
+    .. container:: incremental
 
         Abschätzung der Laufzeit :math:`T(n)` nach oben:
 
@@ -1463,7 +1465,7 @@ Beispiel Insertion-Sort: Detailanalyse
         - die Liste ist umgekehrt sortiert, d. h. :math:`t_i = i`
         - die Liste ist zufällig sortiert, d. h. :math:`t_i = {i+1 \over 2}`
 
-    .. container:: incremental 
+    .. container:: incremental
 
         Im schlimmsten Fall, d. h. die Liste ist umgekehrt sortiert, ergibt sich:
 
@@ -1480,7 +1482,7 @@ Beispiel Insertion-Sort: Detailanalyse
             = c· \left( {3 \over 2} n^2 + {7 \over 2} n - 4 \right)
 
 
-    .. container:: incremental 
+    .. container:: incremental
 
         Im besten Fall, d. h. die Liste ist bereits sortiert, ergibt sich:
 
@@ -1504,7 +1506,7 @@ Beispiel Insertion-Sort: Detailanalyse
 
 
 
-Beispiel Insertion-Sort: Ergebnisse 
+Beispiel Insertion-Sort: Ergebnisse
 --------------------------------------------------------
 
 In Hinblick auf den Zeitaufwand gilt:
@@ -1521,15 +1523,15 @@ In Hinblick auf den Zeitaufwand gilt:
 
     Der Insertion-Sort-Algorithmus hat eine quadratische Komplexität, d. h. die Laufzeit wächst quadratisch mit der Problemgröße. Er hat die Komplexität :math:`O(n^2)`.
 
-    
+
 
 .. class:: exercises transition-scale
 
-Übung 
+Übung
 ------------------------------------------
 
-.. exercise:: Bestimmung der asymptotischen Laufzeit eines Algorithmus 
-    
+.. exercise:: Bestimmung der asymptotischen Laufzeit eines Algorithmus
+
     Die Funktion :math:`p(n)` hat die Laufzeit :math:`T_p(n) = c_p \cdot n^2` und :math:`q(n)` die Laufzeit :math:`T_q(n) = c_q \cdot \log(n)`.
 
     .. code:: pascal
@@ -1545,7 +1547,7 @@ In Hinblick auf den Zeitaufwand gilt:
 
     Bestimmen Sie die asymptotische Laufzeit des Algorithmus in Abhängigkeit von :math:`n` durch zeilenweise Analyse.
 
-    .. solution:: 
+    .. solution::
         :pwd: \log(n)*n^2
 
         Die Komplexität ergibt sich zu: :math:`\log(n)\cdot n^2`
@@ -1557,27 +1559,27 @@ In Hinblick auf den Zeitaufwand gilt:
         Eine Analyse der Schleifen ergibt, dass q(n):
 
             :math:`1\cdot q(n)+2\cdot q(n)+3\cdot q(n)+…+n\cdot q(n) = q(n) \cdot \sum_{i = 1}^n i = q(n) \cdot {n(n+1)\over 2} = { n^2+n \over 2 } \cdot q(n)`
-        
-        aufgerufen wird. Daraus folgt: 
-        
+
+        aufgerufen wird. Daraus folgt:
+
             :math:`(n(n+1))/2 \cdot q(n)` bzw. :math:`n^2 \cdot \log(n)`
 
 
 
 .. class:: exercises transition-scale
 
-Übung 
+Übung
 ------------------------------------------
 
 .. exercise:: „Naive“ Power Funktion
 
-    .. container:: 
+    .. container::
 
         Bestimmen Sie die algorithmische asymptotische Komplexität des folgenden Algorithmus durch Analyse jeder einzelnen Zeile. Jede Zeile kann für sich mit konstantem Zeitaufwand abgeschätzt werden. Die Eingabe ist eine nicht-negative Ganzzahl :math:`n` mit :math:`k` Bits. Bestimmen Sie die Laufzeitkomplexität für den schlimmstmöglichen Fall in Abhängigkeit von :math:`k`!
-        
-        .. container:: 
-        
-            (Beispiel: die Zahl :math:`n = 7_d` benötigt drei Bits :math:`n= 111_b`, die Zahl :math:`4_d` benötigt zwar auch drei Bits :math:`100_b` aber dennoch weniger Rechenschritte.). 
+
+        .. container::
+
+            (Beispiel: die Zahl :math:`n = 7_d` benötigt drei Bits :math:`n= 111_b`, die Zahl :math:`4_d` benötigt zwar auch drei Bits :math:`100_b` aber dennoch weniger Rechenschritte.).
 
         .. code:: pascal
             :number-lines:
@@ -1594,14 +1596,13 @@ In Hinblick auf den Zeitaufwand gilt:
 
             .. code:: pseudocode
                 :number-lines:
-                :class: far-smaller
 
                 Algorithmus Power(x,n)      # Anzahl der Rechenschritte
                     r = 1                   # 1
-                    for i = 1...n do        # n + 1 
+                    for i = 1...n do        # n + 1
                         r = r * x           # n
                     return r                # 1
-                
+
             Sei c ein konstanter Faktor, der gleich dem größten Faktor ist, der von einem Rechenschritt benötigt wird.
 
             :math:`T(n) \leq c \cdot (1 + (n + 1) + n + 1)`
@@ -1618,21 +1619,20 @@ In Hinblick auf den Zeitaufwand gilt:
 
 .. class:: exercises transition-scale
 
-Übung 
+Übung
 ------------------------------------------
 
 .. exercise:: Effizientere Power Funktion
-        
-    Bestimmen Sie die algo. asymptotische Komplexität durch Analyse jeder einzelnen Zeile. Jede Zeile kann mit konstantem Zeitaufwand abgeschätzt werden. 
-    Bestimmen Sie die Laufzeitkomplexität mit Indikator :math:`t_i` für gesetzte Bits in :math:`n` für den schlimmstmöglichen Fall - in Abhängigkeit von :math:`k` für eine nicht-negative Ganzzahl :math:`n` mit :math:`k` Bits. 
-    
-    .. supplemental:: 
-    
+
+    Bestimmen Sie die algo. asymptotische Komplexität durch Analyse jeder einzelnen Zeile. Jede Zeile kann mit konstantem Zeitaufwand abgeschätzt werden.
+    Bestimmen Sie die Laufzeitkomplexität mit Indikator :math:`t_i` für gesetzte Bits in :math:`n` für den schlimmstmöglichen Fall - in Abhängigkeit von :math:`k` für eine nicht-negative Ganzzahl :math:`n` mit :math:`k` Bits.
+
+    .. supplemental::
+
         (D. h. :math:`t_i = 1`, wenn der i-te Bit von :math:`n` gesetzt ist, sonst ist :math:`t_i = 0`; sei :math:`n = 5_d = 101_b` dann ist :math:`t_1 = 1, t_2 = 0, t_3 = 1`).
 
     .. code:: pascal
         :number-lines:
-        :class: far-smaller
 
         Algorithmus BinPower(x,n)
             r = 1
@@ -1652,23 +1652,22 @@ In Hinblick auf den Zeitaufwand gilt:
 
         .. code:: pseudocode
             :number-lines:
-            :class: far-smaller
 
             Algorithmus BinPower(x,n)       # Anzahl der Rechenschritte
                 r = 1                       # 1
                 while n > 0 do              # 1 + (max i für das gilt t_i = 1)
                     if n mod 2 == 1 then    # max i für das gilt t_i = 1 (# der Vergleiche)
-                        r = r * x           # Summe aller t_i; d.h. Anzahl der 1-Bits in n 
+                        r = r * x           # Summe aller t_i; d.h. Anzahl der 1-Bits in n
                         n = (n-1)/2         # Summe aller t_i
                     else
                         n = n/2             # Summe aller (1-t_i); d.h. Anzahl der „relevanten“ 0-Bits in n
                     x = x *x                # max i für das gilt t_i = 1
                 return r                    # 1
-            
+
         Sei c ein konstanter Faktor, der gleich dem größten Faktor ist, der von einem Rechenschritt benötigt wird.
 
-        Sei :math:`l = \underset{t_i = 1}{max}\; i` und :math:`m = \sum_{k=1}^l t_i`: 
-        
+        Sei :math:`l = \underset{t_i = 1}{max}\; i` und :math:`m = \sum_{k=1}^l t_i`:
+
             .. math::
 
                 \begin{array}{rl}
@@ -1676,7 +1675,7 @@ In Hinblick auf den Zeitaufwand gilt:
                 & = c·(3+ 4l + m)
                 \end{array}
 
-        
+
 
         Im schlimmsten Fall, d. h. :math:`n_{worst} = 2^k - 1` und :math:`l_{worst} = m_{worst} = k` : :math:`T_{worst}(k) ≤ c · (3+ 4k + k) = c· (5k + 3)`
 
@@ -1701,7 +1700,7 @@ In Hinblick auf den Zeitaufwand gilt:
         .. raw:: html
 
             <style>
-                #bubble-sort-visualization {                
+                #bubble-sort-visualization {
                     iframe {
                         border: none;
                         margin: 0;
@@ -1709,7 +1708,7 @@ In Hinblick auf den Zeitaufwand gilt:
                     }
                 }
                 @container style(--ld-rendering-mode: slide) {
-                    
+
                     #bubble-sort-visualization {
                         width: 912.5px;
                         height: 963.75px;
@@ -1723,14 +1722,14 @@ In Hinblick auf den Zeitaufwand gilt:
             </div>
 
     .. card::
-                
+
         .. exercise:: Implementieren Sie Bubble-Sort
 
             1. Implementieren Sie den Bubble-Sort Algorithmus in einer Programmiersprache Ihrer Wahl und analysieren Sie die Laufzeitkomplexität des Algorithmus. Der Algorithmus soll ein Array/Liste von Ganzzahlen als Eingabe nehmen und sortiert zurückgeben. Dabei soll das Array/die Liste *in-place* sortiert werden, d. h. ohne zusätzliche Speicherplatznutzung.
 
             2. Bestimmen Sie die Komplexität des Algorithmus in Abhängigkeit von der Anzahl der Elemente (n) im Array/der Liste.
 
-            .. solution:: 
+            .. solution::
                 :pwd: Bubble-bubble-bubble-sort
 
                 .. rubric:: Lösung in Java
@@ -1756,7 +1755,7 @@ In Hinblick auf den Zeitaufwand gilt:
                             n--; // Reduce the range of the next iteration
                         } while (swapped);
                     }
-                    
+
                 .. rubric:: Lösung in Python
 
                 .. code:: python
@@ -1789,7 +1788,7 @@ Rucksackproblem (:eng:`Knapsack Problem`)
         .. definition::
 
             .. rubric:: Das Rucksackproblem
-            
+
             Gegeben seien Wertepaare :math:`\{(g_1,w_1),...,(g_m,w_m)\}` mit
             :math:`g_i ,w_i ∈ \mathbb{N}`, die das Gewicht :math:`g_i` und den Wert :math:`w_i` eines Teils :math:`i` darstellen. Gesucht sind
             die Anzahlen :math:`a_i ∈ \mathbb{N}_0` der jeweiligen Teile, so dass
@@ -1804,22 +1803,22 @@ Rucksackproblem (:eng:`Knapsack Problem`)
 
         .. example::
 
-            Verfügbare Objekte (:math:`(Gewicht,Wert)`): :math:`A = \{(1,1),(3,4),(5,8),(2,3)\}`. 
-            
+            Verfügbare Objekte (:math:`(Gewicht,Wert)`): :math:`A = \{(1,1),(3,4),(5,8),(2,3)\}`.
+
             .. class:: incremental
 
-            - Bei einer maximalen Traglast von :math:`5` ist der maximale Wert :math:`8` (:math:`1 \times` Objekt :math:`3`). 
+            - Bei einer maximalen Traglast von :math:`5` ist der maximale Wert :math:`8` (:math:`1 \times` Objekt :math:`3`).
 
             - Gesucht ist die maximale Wertsumme bei einer maximalen Traglast von 13.
 
               .. class:: incremental-list
 
-              1. Versuch: bei Einhaltung der Traglast (:math:`n =13`): 
-                 
+              1. Versuch: bei Einhaltung der Traglast (:math:`n =13`):
+
                  :math:`\overset{\#}{1}·\overset{g}{1}+ \overset{\#}{4}·\overset{g}{3}= 13 ≤13 \quad\Rightarrow\quad \overset{\#}{1}·\overset{w}{1}+ \overset{\#}{4}·\overset{w}{4}= 17` (Wert)
 
-              2. Versuch: bei Einhaltung der Traglast (:math:`n =13`): 
-                 
+              2. Versuch: bei Einhaltung der Traglast (:math:`n =13`):
+
                  :math:`1·1+ 2·5+ 1·2= 13 ≤13\quad \Rightarrow\quad 1·1+ 2·8+ 1·3= 20`  (Wert)
 
 
@@ -1828,7 +1827,7 @@ Rucksackproblem - rekursive Lösung
 ----------------------------------------
 
 .. story::
-        
+
     .. code:: python
         :number-lines:
         :class: copy-to-clipboard
@@ -1839,7 +1838,7 @@ Rucksackproblem - rekursive Lösung
             best = 0
             for i in range(len(gW)):
                 (gewt,wert) = gW[i]
-                if n >= gewt: 
+                if n >= gewt:
                     test = wert + bestWertRekursiv(n - gewt)
                     if test > best:
                         best = test
@@ -1847,21 +1846,21 @@ Rucksackproblem - rekursive Lösung
 
         print(bestWertRekursiv(5)) # max. Traglast ist hier zu Beginn n = 5
 
-    .. incremental::
+    .. container:: incremental
 
         Für die Bestimmung der Komplexität nehmen wir jetzt die häufigste Aktion her; hier die Additionen.
 
         Bei der Rekursion ergibt sich (:math:`m` = Anzahl der verschiedenen Objekte):
 
         - Im schlimmsten Fall sind alle :math:`g_i = 1` (d. h. die Gewichte).
-        - Pro Aufruf :math:`m` weitere Aufrufe. 
-        
+        - Pro Aufruf :math:`m` weitere Aufrufe.
+
           (D. h. auf erster Ebene haben wir :math:`m` Additionen, auf der zweiten Ebene :math:`m^2` Additionen, usw.)
 
-    .. incremental::
+    .. container:: incremental
 
         .. math::
-            
+
             \begin{array}{rl}
             c^{Rek}_{Add}(n) = & m + m^2 +...+ m^n\quad | \text{Anw. der Summenformel für geo. Reihen}\\
             = & m· \dfrac{m^n-1}{m-1}            =  \dfrac{m}{m-1} (m^n-1) \\
@@ -1885,11 +1884,11 @@ Rucksackproblem - iterative Lösung
 .. story::
 
     .. rubric:: Grundsätzliche Idee der iterativen Lösung
-    
-    Gehe über alle Objekte. Berechne in jedem Schleifendurchlauf :java:`i` bei Hinzunahme von Teil :java:`i` das jeweils beste Ergebnis für alle Kapazitäten :java:`j` bis inklusive :java:`n`. 
 
-    .. example:: 
-        :class: incremental        
+    Gehe über alle Objekte. Berechne in jedem Schleifendurchlauf :java:`i` bei Hinzunahme von Teil :java:`i` das jeweils beste Ergebnis für alle Kapazitäten :java:`j` bis inklusive :java:`n`.
+
+    .. example::
+        :class: incremental
 
         Verfügbare Objekte (:math:`(Gewicht,Wert)`): :math:`A = \{(1,1),(3,4),(5,8),(2,3)\}`. Sei die maximale Traglast :math:`n = 7`:
 
@@ -1906,7 +1905,7 @@ Rucksackproblem - iterative Lösung
     .. container:: incremental
 
         .. rubric:: Implementierung
-                    
+
         .. code:: python
             :number-lines:
             :class: copy-to-clipboard
@@ -1921,12 +1920,12 @@ Rucksackproblem - iterative Lösung
                         test = best[j - gewt] + wert
                         if test > best[j]:
                             best[j] = test
-                
+
                 return best[n]
 
             print(bestWertIterativ(5))  # max. Traglast ist hier zu Beginn n = 5
 
-    .. container:: incremental 
+    .. container:: incremental
 
         .. rubric:: Komplexitätsanalyse
 
@@ -1946,7 +1945,7 @@ Rucksackproblem - iterative Lösung
     .. rubric:: Erklärungen
 
     Grobe Idee: Wir gehen in der Methode :java:`bestWertIterativ` über alle Objekte (Zeile 5). In der inneren Schleife (Zeile 7) iterieren wir über die Traglasten, die das Objekt — ggf. auch mehrfach — aufnehmen könnten (:java:`range(gewt, n + 1)`). Für jede dieser Traglasten prüfen wir ob es vorteilhaft ist das Objekt in den Rucksack zu packen. Falls ja, dann wird der aktuell beste Wert für die Traglast aktualisiert.
-    
+
     D. h. wir legen zum Beispiel ein Objekt mit dem Gewicht 2 bei einer verbleibenden Traglast von 5 ggf. (implizit) dadurch mehrfach in den Rucksack, dass wir bereits den besten Wert für die kleineren Traglasten kennen.
 
 
@@ -1957,22 +1956,22 @@ Rucksackproblem - Vergleich
 .. story::
 
     .. class:: columns evenly-spaced
-        
+
     - .. math::
 
                 \begin{array}{rl}
                 c^{Rek}_{Add}(n) = & \dfrac{m}{m-1} (m^n-1) \\
-                = & \dfrac{4}{3}(4^n-1) 
+                = & \dfrac{4}{3}(4^n-1)
                 \end{array}
 
     - .. math::
-                    
+
                 \begin{array}{rl}
                     c^{Ite}_{Add}(n)    & = m·n \\
-                                        & = 4n 
+                                        & = 4n
                 \end{array}
 
-    .. summary:: 
+    .. summary::
         :class: incremental
 
         Die iterative Variante ist wegen der vermiedenen Berechnung gleicher Werte – aufgrund der Verwendung von dynamischer Programmierung – praktisch immer schneller. Dies könnte bei Rekursion ggf. mit Caching erreicht werden.
@@ -1985,15 +1984,15 @@ Rucksackproblem - Vergleich
         .. container:: incremental
 
             Die Analyse erfolgte nicht über die Wortlänge (als Eingabegröße); d. h. :math:`n` (Kapazität bzw. Tragkraft) entspricht nicht der Wortlänge. Ein Binärwort :math:`n` mit :math:`k` Zeichen (Bits) hat bis zu :math:`2^k-1` Werte.
-        
+
             .. math::
 
                 c^{Rek}_{Add}(2^k-1) =  \dfrac{4}{3}(4^{2^k-1}-1) \in O(4^{2\cdot k})
-                        
+
             .. math::
-                            
+
                 c^{Ite}_{Add}(2^k-1) = 4(2^k-1) \in \Theta(2^k)
-                        
+
 
     .. important::
         :class: margin-top-1em incremental
@@ -2002,8 +2001,8 @@ Rucksackproblem - Vergleich
 
         Es ist immer genau zu prüfen was die Wortlänge ist!
 
-.. supplemental:: 
-    
+.. supplemental::
+
     Die Wortlänge eines Problems bezeichnet hier die Anzahl der Bits, die benötigt werden, um die Eingabe eines Problems darzustellen. Sie ist ein Maß dafür, wie groß oder komplex die Darstellung der Eingabedaten ist.
 
     Die iterative Variante mit dynamischer Programmierung hat eine Laufzeit von :math:`O(m⋅n)` wobei :math:`n` hier die Kapazität in Gewichtseinheiten ist, nicht die Wortlänge. Wenn :math:`n` exponentiell groß ist, wird der Algorithmus ineffizient, da die Eingabegröße :math:`⌈log_2	N⌉` viel kleiner ist als :math:`N` selbst. (D. h. wenn die Kapazität 10 ist, dann brauchen wir 4 Bits, um die Kapazität darzustellen, wenn die Kapazität jedoch 1000 (100 mal größer) ist, dann brauchen wir 10 Bits (d. h. nur 2,5 mal so viele Bits.)
@@ -2030,7 +2029,7 @@ Standardverfahren zur Analyse rekursiver Algorithmen:
 1. Anwendung der Verfahren zur Analyse iterativer Algorithmen um die Rekurrenzgleichung zu bestimmen.
 2. Eine Anzahl von Werten ausrechnen und auf sinnvollen Zusammenhang schließen.
 3. Beweis des Zusammenhangs mit vollständiger Induktion.
-   
+
    .. attention::
 
       Das Finden eines sinnvollen Zusammenhangs und der Beweis ist nicht immer einfach.
@@ -2050,16 +2049,16 @@ Teilende Verfahren, *bzw. Divide-and-Conquer-Algorithmen*, sind typischerweise s
 
 .. example::
 
-    Wird beispielsweise das Problem immer halbiert, ist also :math:`a_{2n} = a_n + 1` und ist :math:`a_1 = 1`, dann würde für die Folgenglieder gelten :math:`a_1 = 1, a_2 = 2, a_4 = 3, a_8 = 4, a_{16} = 5, ...`. 
-    
-    Verallgemeinert: :math:`a_n = \log_2(n) +1`. 
+    Wird beispielsweise das Problem immer halbiert, ist also :math:`a_{2n} = a_n + 1` und ist :math:`a_1 = 1`, dann würde für die Folgenglieder gelten :math:`a_1 = 1, a_2 = 2, a_4 = 3, a_8 = 4, a_{16} = 5, ...`.
+
+    Verallgemeinert: :math:`a_n = \log_2(n) +1`.
 
     .. container:: incremental
 
         Herleitung:
 
         :math:`a_1 = \log_2(1) + 1 = 0 + 1`
-        
+
     .. container:: incremental
 
         :math:`a_{2n} = a_n + 1 = \log_2(n) + 1 + 1 = \log_2(n) + \log_2(2) + 1 = \log_2(2n) + 1`
@@ -2079,12 +2078,12 @@ Rekurrenzgleichung für rekursiv teilende Algorithmen
 .. container:: scrollable
 
     - In vielen Fällen geben rekursiv teilende Algorithmen Grund zur Hoffnung, dass die Laufzeit einen relevanten logarithmischen Anteil hat.
-  
+
     .. class:: incremental
 
     - Häufig können die Rekurrenz-Gleichungen rekursiv teilender Algorithmen in folgende Form gebracht werden:
-    
-      .. container:: far-smaller
+
+      .. container::
 
         Sei:
 
@@ -2098,24 +2097,24 @@ Rekurrenzgleichung für rekursiv teilende Algorithmen
         T(n) = a \cdot T\left({n \over b}\right) + f(n)
 
 
-    .. container:: incremental smaller
+    .. container:: incremental 
 
         In diesem Fall können drei Fälle unterschieden identifiziert werden:
 
         .. class:: incremental-list
 
-        1. Ist der Aufwand :math:`f(n)` vernachlässigbar gegenüber dem Aufwand der weiteren Aufrufe, so ist ein rein durch die Rekursion bestimmtes Verhalten zu erwarten. 
+        1. Ist der Aufwand :math:`f(n)` vernachlässigbar gegenüber dem Aufwand der weiteren Aufrufe, so ist ein rein durch die Rekursion bestimmtes Verhalten zu erwarten.
         2. Entspricht der Aufwand :math:`f (n)` genau dem Aufwand der weiteren Aufrufe, so vervielfältigt sich der Aufwand gegenüber dem 1. Fall, bleibt aber in der gleichen Größenordnung.
         3.  Ist der Aufwand :math:`f (n)` größer als der Aufwand der verbleibenden Aufrufe, so wird der Aufwand asymptotisch von :math:`f (n)` dominiert.
-    
-    
-    
+
+
+
 .. supplemental::
-    
+
     .. rubric:: Beispiel für den 1. Fall
 
     Bei :math:`a = 1` und :math:`b= 2` — wie bei der binären Suche — ist somit logarithmisches Verhalten zu erwarten. Wird hingegen ein :math:`b= 2` halbiertes Feld :math:`a = 4` viermal aufgerufen, so ist ein quadratisches Verhalten zu erwarten.
-  
+
 
 
 Lösen von Rekurrenzgleichungen mit dem Master-Theorem
@@ -2123,29 +2122,29 @@ Lösen von Rekurrenzgleichungen mit dem Master-Theorem
 
 .. story::
 
-    Das Master-Theorem ist ein Werkzeug zur Analyse der Zeitkomplexität von rekursiven Algorithmen, die mit Hilfe von Rekurrenzgleichungen der Form :math:`T(n) = a \cdot T\left({n \over b}\right) + f(n)` beschrieben werden können. 
-    
-    .. incremental::
+    Das Master-Theorem ist ein Werkzeug zur Analyse der Zeitkomplexität von rekursiven Algorithmen, die mit Hilfe von Rekurrenzgleichungen der Form :math:`T(n) = a \cdot T\left({n \over b}\right) + f(n)` beschrieben werden können.
+
+    .. container:: incremental
 
         Anwendungsgebiet sind insbesondere Teile-und-Herrsche Algorithmen.
 
-    .. incremental::
+    .. container:: incremental
 
         Das Master-Theorem hat drei Fälle, die auf dem Vergleich zwischen :math:`f(n)` und :math:`n^{\log_b a}` basieren und die asymptotische Komplexität von :math:`T(n)` bestimmen. Wobei :math:`n^{\log_b a}` die Laufzeit für die Rekursion selbst beschreibt:
 
         Seien :math:`a >0` und :math:`b >1` Konstanten und :math:`f : \mathbb{N} → \mathbb{N}`:
 
-    .. incremental::
+    .. container:: incremental
 
         1. Wenn :math:`f(n) \in O(n^{\log_b a - \epsilon})` für ein :math:`\epsilon > 0` gilt – d. h. wenn :math:`f(n)` langsamer wächst als :math:`n^{\log_b a}` – dann dominiert die Rekursion, und es gilt: :math:`T(n) \in \Theta(n^{\log_b a})`.
- 
- 
-    .. incremental::
+
+
+    .. container:: incremental
 
         2. Wenn :math:`f(n) \in \Theta(n^{\log_b a} \cdot (\log n)^k)` für ein :math:`k \geq 0` gilt – d. h. wenn :math:`f(n)` und :math:`n^{\log_b a} \cdot (\log n)^k` gleich schnell wachsen – dann tragen beide Teile zur Gesamtkomplexität bei, und es gilt: :math:`T(n) \in \Theta(n^{\log_b a} \cdot (\log n)^{k+1})`.
 
-    .. incremental::
-      
+    .. container:: incremental
+
         3. Wenn :math:`f(n) \in \Omega(n^{\log_b a + \epsilon})` für ein :math:`\epsilon > 0` gilt und weiterhin gilt :math:`af(n/b) \leq c f(n)` für eine Konstante :math:`c < 1` und ein hinreichend großes :math:`n` – d. h. wenn also :math:`f(n)` schneller wächst als :math:`n^{\log_b a}` – dann dominiert :math:`f(n)` die Komplexität, und es gilt: :math:`T(n) \in \Theta(f(n))`.
 
 
@@ -2155,7 +2154,7 @@ Lösen von Rekurrenzgleichungen mit dem Master-Theorem
 
     .. hint::
 
-        Nicht immer kann das Master-Theorem angewandt werden, da es nur für spezielle Rekurrenzgleichungen gilt. 
+        Nicht immer kann das Master-Theorem angewandt werden, da es nur für spezielle Rekurrenzgleichungen gilt.
 
 
     Im Mastertheorem erfolgt der Vergleich ggf. mit :math:`n^{(\log_ba)-\epsilon}` und nicht mit :math:`n^{\log_b (a-\epsilon)}`.
@@ -2166,15 +2165,15 @@ Anwendung des Master-Theorems: 1. Beispiel
 
 :Gegeben sei: :math:`T (n) = 2T (n/2) + n \log_2 n`
 
-.. incremental:: margin-top-1em
+.. container:: incremental margin-top-1em
 
     :Somit gilt: :math:`a = 2`, :math:`b = 2` und :math:`n^{\log_2 2} = n`
 
-.. incremental:: margin-top-1em
+.. container:: incremental margin-top-1em
 
-    :Analyse: Es liegt Fall 2 vor, da :math:`f(n) = n \cdot (\log_2n)^{k=1} \in \Theta(n^{\log_b a} \cdot (\log n))`. 
+    :Analyse: Es liegt Fall 2 vor, da :math:`f(n) = n \cdot (\log_2n)^{k=1} \in \Theta(n^{\log_b a} \cdot (\log n))`.
 
-.. incremental:: margin-top-1em
+.. container:: incremental margin-top-1em
 
     :Ergebnis: Die Laufzeit beträgt somit :math:`T(n) = \Theta(n \cdot (\log_2 n)^2)`.
 
@@ -2182,9 +2181,9 @@ Anwendung des Master-Theorems: 1. Beispiel
 .. supplemental::
 
     Der Wechsel der Basis des Logarithmus ist möglich, da sich die Basis nur um einen konstanten Faktor unterscheidet:
-    
+
     :math:`\log_\textcolor{blue}{a} \textcolor{red}{x} = \frac{ 1 }{ \log_b \textcolor{blue}{a}} \cdot \log_b \textcolor{red}{x}`
-	
+
 
 
 Anwendung des Master-Theorems: 2. Beispiel
@@ -2192,17 +2191,18 @@ Anwendung des Master-Theorems: 2. Beispiel
 
 :Gegeben sei: :math:`T (n) = 9T (n/3) + 2n`
 
-.. incremental:: margin-top-1em
+.. container:: incremental margin-top-1em
 
     :Somit gilt: :math:`a = 9`, :math:`b = 3` und :math:`n^{\log_3 9} = n^2`
 
-.. incremental:: margin-top-1em
+.. container:: incremental margin-top-1em
 
     :Analyse: Es liegt Fall 1 vor, da :math:`f(n) = 2n \in O(n^{\log_3 9 - \epsilon})`.
 
-.. incremental:: margin-top-1em
+.. container:: incremental margin-top-1em
 
     :Ergebnis: Die Laufzeit beträgt somit :math:`T(n) = \Theta(n^2)`.
+
 
 
 Anwendung des Master-Theorems: 3. Beispiel
@@ -2210,18 +2210,18 @@ Anwendung des Master-Theorems: 3. Beispiel
 
 :Gegeben sei: :math:`T (n) = 2T (n/3) + n`
 
-.. incremental:: margin-top-1em
+.. container:: incremental margin-top-1em
 
     :Somit gilt: :math:`a = 2`, :math:`b = 3` und :math:`n^{\log_3 2}`, :math:`log_32 \approx 0,63 < 1`
 
-.. incremental:: margin-top-1em
+.. container:: incremental margin-top-1em
 
-    :Analyse: 
-        Es liegt Fall 3 vor, da :math:`f(n) = n \in \Omega(n^{\log_3 2 + \epsilon})` und 
-        
+    :Analyse:
+        Es liegt Fall 3 vor, da :math:`f(n) = n \in \Omega(n^{\log_3 2 + \epsilon})` und
+
         :math:`af(n/b) = 2n/3 \leq c \cdot n` für :math:`1 > c \geq 2/3`.
 
-.. incremental:: margin-top-1em
+.. container:: incremental margin-top-1em
 
     :Ergebnis: Die Laufzeit beträgt somit :math:`T(n) = \Theta(n)`.
 
@@ -2232,7 +2232,7 @@ Anwendung des Master-Theorems: 3. Beispiel
 Master-Theorem: Zusammenfassung
 ----------------------------------------
 
-.. summary:: 
+.. summary::
 
     Das Master-Theorem hilft also, die asymptotische Komplexität von Algorithmen schnell zu bestimmen, ohne dass eine detaillierte Analyse der Rekurrenz erforderlich ist.
 
@@ -2248,21 +2248,21 @@ Master-Theorem: Zusammenfassung
     Gegeben sei: :math:`T (n) = 2T (n/4) + 1`
 
     - Bestimmen Sie die Laufzeit des Algorithmus mit Hilfe des Master-Theorems.
-  
-    .. solution:: 
+
+    .. solution::
         :pwd: so_ist_es
 
         - :math:`a = 2`: Es gibt zwei rekursive Aufrufe,
         - :math:`b = 4`: Jeder Aufruf hat die Größe :math:`n/4`,
         - :math:`f(n) = 1`: Die Kosten für die Rekursion.
 
-        (Hinweis: :math:`\log_4 2 = {\log_{10} 2 \over \log_{10} 4 } = {\ln 2 \over \ln 4 }  = 1/2`) 
+        (Hinweis: :math:`\log_4 2 = {\log_{10} 2 \over \log_{10} 4 } = {\ln 2 \over \ln 4 }  = 1/2`)
 
-        :Analyse: 
-        
-            Hier ergibt sich :math:`n^{\log_b a} = n^{\log_4 2} = n^\frac{1}{2}`. Für :math:`\epsilon \leq ½` gilt :math:`f(n) \in O(n^{\log_4 2 - \epsilon})` d. h. :math:`1 \in O(n^{(1/2)-\epsilon}`. 
+        :Analyse:
 
-            Das passt zu Fall 1, da :math:`f(n) \in O(n^{\log_b a - \epsilon})`. 
+            Hier ergibt sich :math:`n^{\log_b a} = n^{\log_4 2} = n^\frac{1}{2}`. Für :math:`\epsilon \leq ½` gilt :math:`f(n) \in O(n^{\log_4 2 - \epsilon})` d. h. :math:`1 \in O(n^{(1/2)-\epsilon}`.
+
+            Das passt zu Fall 1, da :math:`f(n) \in O(n^{\log_b a - \epsilon})`.
 
         :Ergebnis: Daher ist die Laufzeit :math:`T(n) \in \Theta(\sqrt{n})`.
 
@@ -2272,18 +2272,18 @@ Master-Theorem: Zusammenfassung
     Gegeben sei: :math:`T (n) = 3T (n/9) + \sqrt{n}`
 
     - Bestimmen Sie die Laufzeit des Algorithmus mit Hilfe des Master-Theorems.
-  
-    .. solution:: 
+
+    .. solution::
         :pwd: Haus_und_Hof
 
         - :math:`a = 3`: Es gibt drei rekursive Aufrufe,
         - :math:`b = 9`: Jeder Aufruf hat die Größe :math:`n/9`,
         - :math:`f(n) = \sqrt{n}`: Die Kosten für die Rekursion.
 
-        :Analyse: 
-            Hier ergibt sich :math:`n^{\log_b a} = n^{\log_9 3} = n^\frac{1}{2}`. 
+        :Analyse:
+            Hier ergibt sich :math:`n^{\log_b a} = n^{\log_9 3} = n^\frac{1}{2}`.
 
-            Das passt zu Fall 2, da :math:`f(n) \in \Theta(\sqrt{n}\cdot (\log n)^0)`. 
+            Das passt zu Fall 2, da :math:`f(n) \in \Theta(\sqrt{n}\cdot (\log n)^0)`.
 
             Anmerkung: :math:`f(n) =  n^{(1/2)} \notin O(n^{(1/2) - \epsilon})` für :math:`\epsilon > 0`.
 
@@ -2293,16 +2293,16 @@ Master-Theorem: Zusammenfassung
 .. exercise:: a=1 und f(n) sind konstant
 
     Gegeben sei: :math:`T (n) = T (n/2) + 1`
-  
+
     - Bestimmen Sie die Laufzeit des Algorithmus mit Hilfe des Master-Theorems.
-  
-    .. solution:: 
+
+    .. solution::
         :pwd: der zweite Fall
 
-        :Analyse: 
-            Hier ergibt sich :math:`n^{\log_b a} = n^{\log_2 1} = n ^ 0 = 1`. 
+        :Analyse:
+            Hier ergibt sich :math:`n^{\log_b a} = n^{\log_2 1} = n ^ 0 = 1`.
 
-            Das passt zu Fall 2, da :math:`f(n) \in \Theta(1)`. 
+            Das passt zu Fall 2, da :math:`f(n) \in \Theta(1)`.
 
         :Ergebnis: Daher ist die Laufzeit :math:`T(n) \in \Theta(\log n)`.
 
@@ -2314,7 +2314,7 @@ Master-Theorem: Zusammenfassung
 
 .. deck::
 
-    .. card:: 
+    .. card::
 
         .. rubric:: Mergesort
 
@@ -2328,7 +2328,7 @@ Master-Theorem: Zusammenfassung
         .. raw:: html
 
             <style>
-                #merge-sort-visualization {                
+                #merge-sort-visualization {
                     iframe {
                         border: none;
                         margin: 0;
@@ -2336,7 +2336,7 @@ Master-Theorem: Zusammenfassung
                     }
                 }
                 @container style(--ld-rendering-mode: slide) {
-                    
+
                     #merge-sort-visualization {
                         width: 408px;
                         height: 864px;
@@ -2351,15 +2351,15 @@ Master-Theorem: Zusammenfassung
 
 
     .. card::
-            
+
         .. exercise:: Anwendung des Master-Theorems auf Mergesort
 
-            
+
 
             - Bestimmen Sie die Rekurrenzgleichung für den Mergesort-Algorithmus.
             - Bestimmen Sie die Laufzeit des Mergesort-Algorithmus mit Hilfe des Master-Theorems.
-        
-            .. solution:: 
+
+            .. solution::
                 :pwd: und somit gilt...
 
                 Der Mergesort-Algorithmus kann durch die Rekurrenz :math:`T(n) = 2 \cdot T(n/2) + n` beschrieben werden:
@@ -2394,9 +2394,9 @@ Backtracking
 
 .. class:: incremental-list list-with-explanations
 
-- Backtracking ist eine systematische Methode, um alle möglichen Lösungen eines Problems zu finden. Es ist eine Art von rekursivem Durchsuchen, bei dem Teillösungen zu Gesamtlösungen erweitert werden. 
-- Backtracking erlaubt ggf. Heuristiken, um die Suche zu beschleunigen. 
-  
+- Backtracking ist eine systematische Methode, um alle möglichen Lösungen eines Problems zu finden. Es ist eine Art von rekursivem Durchsuchen, bei dem Teillösungen zu Gesamtlösungen erweitert werden.
+- Backtracking erlaubt ggf. Heuristiken, um die Suche zu beschleunigen.
+
   Weder die Komplexitätsklasse noch die Korrektheit ändert sich dadurch.
 - Viele NP-harte Probleme werden mit Backtracking gelöst.\ [#]_
 
@@ -2414,14 +2414,14 @@ Beispiel: Das 4-Damen Problem (konzeptuell)
 
 .. code:: pascal
     :number-lines:
-    :class: far-smaller 
+    :class: copy-to-clipboard
 
     // i: Spalte; j: Zeile
-    procedure findeStellung(i : integer)  
+    procedure findeStellung(i : integer)
       j := 0
       repeat
         { wähle nächste Zeile j }
-        if  Dame an Position i / j bedroht 
+        if  Dame an Position i / j bedroht
             keine bisher platzierte Dame then
           { platziere Dame in Feld i / j }
           if i = 4 then
@@ -2451,7 +2451,7 @@ Beispiel: Das 4-Damen Problem (konzeptuell)
 
     - Die Lösung ist endlich.
     - Die Lösung wird iterativ aufgebaut. Es ist jederzeit möglich zu testen, ob die bisherige Lösung noch gültig ist (Zeile 6, 7).
-    - Ist eine Lösung nicht mehr möglich, wird die Teillösung auch nicht weiter verfolgt. 
+    - Ist eine Lösung nicht mehr möglich, wird die Teillösung auch nicht weiter verfolgt.
     - Wurde eine Lösung gefunden, wird sie ausgegeben (Zeile 10, 11).
     - Die Methode wird rekursiv aufgerufen, um die Lösung zu vervollständigen (Zeile 13).
 
@@ -2471,17 +2471,17 @@ Backtracking - Allgemein
         1. Die Lösung ist als Vektor :java:`a[1], a[2], ...` endlicher Länge darstellbar.
         2. Jedes Element :java:`a[i]` hat eine endliche Anzahl von möglichen Werten :java:`A[i]`.
 
-           D. h. die Menge der möglichen Werte pro :java:`a[i]` kann unterschiedlich sein. 
+           D. h. die Menge der möglichen Werte pro :java:`a[i]` kann unterschiedlich sein.
         3. Es gibt einen effizienten Test, ob eine Teillösung :java:`a[1], a[2], ..., a[k]` zu einer gültigen Lösung führen kann.
 
-    .. card:: 
+    .. card::
 
         .. rubric:: Verfahren
 
         :Start: Wähle eine Teillösung :java:`a[1]`.
-        :Allgemein: 
+        :Allgemein:
             Ist eine Teillösung basierend auf :java:`a[1], a[2], ..., a[k-1]` noch keine Gesamtlösung, dann erweitere sie mit dem nächsten nicht ausgeschlossenen Wert :java:`a[k]` aus :java:`A[k]` zur neuen Teillösung :java:`a[1], a[2], ..., a[k]`.
-        
+
             Falls noch nicht alle Elemente von :java:`A[K]`, die zu keiner inkonsistenten Lösungen führen, ausgeschöpft sind, dann gehe zurück (backtrack) und wähle :java:`a[k]` neu. Ggf. gehe zu  :java:`a[k-1]` usw. zurück.
 
 .. supplemental::
@@ -2497,7 +2497,7 @@ Backtracking - Allgemein
 
 .. exercise:: Auswerten logischer Ausdrücke mittels Backtracking
 
-    Bestimmen Sie für folgenden Ausdruck ``c`` - mittels Backtracking - Wahrheitswerte für die Variablen, damit der Ausdruck als Ganzes wahr wird: 
+    Bestimmen Sie für folgenden Ausdruck ``c`` - mittels Backtracking - Wahrheitswerte für die Variablen, damit der Ausdruck als Ganzes wahr wird:
 
     ``c = (A ∨ ¬B) ∧ (¬A ∨ B) ∧ (¬A ∨ ¬C) ∧ (C ∨ D) ∧ (¬C ∨ ¬D)``
 
@@ -2506,9 +2506,8 @@ Backtracking - Allgemein
     .. csv-table::
         :header: " ", A, B, C, D, "nicht inkonsistent (T), keine Lösung (K), vollständige Lösung (L)"
         :align: center
-        :class: smaller
 
-        1, w, , , , T        
+        1, w, , , , T
         ..., ..., ..., ..., ..., ...
         16, ..., ..., ..., ..., ...
 
@@ -2547,22 +2546,22 @@ Backtracking - Allgemein
 
 .. exercise:: Das Erfüllbarkeitsproblem
 
-    .. supplemental:: 
-    
+    .. supplemental::
+
         .. rubric:: Konjunktive Normalform (KNF)
 
         Ein logischer Ausdruck ist in KNF, wenn der Ausdruck nur als Konjunktion (UND-Verknüpfung) von Disjunktionen (ODER-Verknüpfungen) dargestellt wird. Die Negation darf nur auf Variablen angewendet werden.
 
         Beispiel: (A ∨ B ∨ C) ∧ (¬C ∨ D)
 
-    Entwickeln Sie ein Programm — in einer Programmiersprache Ihrer Wahl — das in der Lage ist eine Formel in konjunktiver Normalform (KNF) auf Erfüllbarkeit zu prüfen. 
-    
+    Entwickeln Sie ein Programm — in einer Programmiersprache Ihrer Wahl — das in der Lage ist eine Formel in konjunktiver Normalform (KNF) auf Erfüllbarkeit zu prüfen.
+
     Prüfen Sie Ihr Programm anhand der vorhergehenden Aufgabe.
 
     .. hint::
 
-        Sollten Sie das Programm in Python oder Java implementieren wollen, dann können sie den entsprechenden Code im Anhang als Grundlage verwenden. Sie müssen dann nur noch die Methode ``solve`` implementieren. Der Code implementiert eine kleine Klassenhierarchie zur Repräsentation von logischen Ausdrücken und ermöglicht die Evaluation (``is_solution`` bzw. ``isSolution``) unter einer gegebenen Belegung. 
-    
+        Sollten Sie das Programm in Python oder Java implementieren wollen, dann können sie den entsprechenden Code im Anhang als Grundlage verwenden. Sie müssen dann nur noch die Methode ``solve`` implementieren. Der Code implementiert eine kleine Klassenhierarchie zur Repräsentation von logischen Ausdrücken und ermöglicht die Evaluation (``is_solution`` bzw. ``isSolution``) unter einer gegebenen Belegung.
+
     .. solution::
         :pwd: Anzahl_der_Belegungen
 
@@ -2592,10 +2591,10 @@ Backtracking - Allgemein
             :start-after: void solve(Expr expr, Stack<Var> vars, Map<Var, Boolean> solution) {
 
         Die drei Lösungen sind:
-        
+
         .. code:: prolog
             :number-lines:
-            
+
             A = B, B = D, D = true, C = false ;
             A = B, B = D, D = false, C = true ;
             A = B, B = C, C = false, D = true ;
@@ -2643,4 +2642,4 @@ Backtracking - Allgemein
         .. include:: code/group_assignment.py
             :code: python
             :number-lines:
-            :class: smaller
+            :class: copy-to-clipboard
