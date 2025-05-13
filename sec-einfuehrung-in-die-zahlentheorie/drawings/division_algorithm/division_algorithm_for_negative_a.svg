@@ -1,0 +1,456 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+    "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg
+    xmlns="http://www.w3.org/2000/svg"
+    version="1.1"
+    xmlns:xl="http://www.w3.org/1999/xlink"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    viewBox="199 411 609 179"
+    width="609"
+    height="179"
+>
+<style>
+  @import url('/LectureDoc2/ext/fonts/ld-fonts.css');
+</style>
+  <metadata> Produced by OmniGraffle 8.0\n2025-05-13 06:16:58 +0000</metadata>
+  <g
+        id="division_algorithm_for_negative_a"
+        stroke-dasharray="none"
+        stroke="none"
+        stroke-opacity="1"
+        fill="none"
+        fill-opacity="1"
+    >
+    <title>division_algorithm_for_negative_a</title>
+    <rect fill="white" x="199" y="411" width="609" height="179" />
+    <g id="division_algorithm_for_negative_a_Layer_1">
+      <title>Layer 1</title>
+      <g id="Line_114">
+        <line
+                    x1="380.3852"
+                    y1="513.03906"
+                    x2="623.8983"
+                    y2="513.03906"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
+      </g>
+      <g id="Line_113">
+        <line
+                    x1="672.02286"
+                    y1="512.8824"
+                    x2="803.4491"
+                    y2="512.8824"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
+      </g>
+      <g id="Line_112">
+        <line
+                    x1="623.8983"
+                    y1="513.03906"
+                    x2="672.02286"
+                    y2="512.8824"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-dasharray="1.0,4.0"
+                    stroke-width="1"
+                />
+      </g>
+      <g id="Line_126">
+        <line
+                    x1="331.6871"
+                    y1="512.8824"
+                    x2="380.3852"
+                    y2="513.03906"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-dasharray="1.0,4.0"
+                    stroke-width="1"
+                />
+      </g>
+      <g id="Graphic_111">
+        <text transform="translate(459.1122 535.6719)" fill="black">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="14"
+                        font-weight="400"
+                        fill="black"
+                        x="14654944e-21"
+                        y="15"
+                        xml:space="preserve"
+                    >0</tspan>
+        </text>
+      </g>
+      <g id="Graphic_110">
+        <text transform="translate(507.9077 535.6719)" fill="black">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="14"
+                        font-weight="400"
+                        fill="black"
+                        x="0"
+                        y="15"
+                        xml:space="preserve"
+                    >n</tspan>
+        </text>
+      </g>
+      <g id="Graphic_109">
+        <text transform="translate(552.97925 535.6719)" fill="black">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="14"
+                        font-weight="400"
+                        fill="black"
+                        x="0"
+                        y="15"
+                        xml:space="preserve"
+                    >2n</tspan>
+        </text>
+      </g>
+      <g id="Graphic_129">
+        <text transform="translate(402.2969 535.6719)" fill="black">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="14"
+                        font-weight="400"
+                        fill="black"
+                        x="7425172e-19"
+                        y="15"
+                        xml:space="preserve"
+                    >-n</tspan>
+        </text>
+      </g>
+      <g id="Graphic_108">
+        <text transform="translate(603.2043 535.6719)" fill="black">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="14"
+                        font-weight="400"
+                        fill="black"
+                        x="0"
+                        y="15"
+                        xml:space="preserve"
+                    >3n</tspan>
+        </text>
+      </g>
+      <g id="Graphic_107">
+        <text transform="translate(706.42686 565.6719)" fill="black">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="14"
+                        font-weight="400"
+                        fill="black"
+                        x="0"
+                        y="15"
+                        xml:space="preserve"
+                    >r</tspan>
+        </text>
+      </g>
+      <g id="Graphic_106">
+        <text transform="translate(729.07586 416.67188)" fill="black">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="14"
+                        font-weight="400"
+                        fill="black"
+                        x="0"
+                        y="15"
+                        xml:space="preserve"
+                    >n</tspan>
+        </text>
+      </g>
+      <g id="Graphic_105">
+        <text transform="translate(677.02286 470.6719)" fill="black">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="14"
+                        font-weight="400"
+                        fill="black"
+                        x="0"
+                        y="15"
+                        xml:space="preserve"
+                    >qn</tspan>
+        </text>
+      </g>
+      <g id="Graphic_104">
+        <text transform="translate(729.44686 470.6719)" fill="black">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="14"
+                        font-weight="400"
+                        fill="black"
+                        x="55289107e-20"
+                        y="15"
+                        xml:space="preserve"
+                    >a</tspan>
+        </text>
+      </g>
+      <g id="Graphic_103">
+        <text transform="translate(763.5149 470.6719)" fill="black">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="14"
+                        font-weight="400"
+                        fill="black"
+                        x="0"
+                        y="15"
+                        xml:space="preserve"
+                    >(q+1)n</tspan>
+        </text>
+      </g>
+      <g id="Line_102">
+        <line
+                    x1="462.3712"
+                    y1="500.6719"
+                    x2="462.3712"
+                    y2="523.9927"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
+      </g>
+      <g id="Line_101">
+        <line
+                    x1="511.4957"
+                    y1="500.6719"
+                    x2="511.4957"
+                    y2="530.6719"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
+      </g>
+      <g id="Line_100">
+        <line
+                    x1="560.32625"
+                    y1="500.6719"
+                    x2="560.32625"
+                    y2="530.6719"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
+      </g>
+      <g id="Line_127">
+        <line
+                    x1="410.3828"
+                    y1="500.6719"
+                    x2="410.3828"
+                    y2="530.6719"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
+      </g>
+      <g id="Line_99">
+        <line
+                    x1="610.5513"
+                    y1="500.6719"
+                    x2="610.5513"
+                    y2="532.6719"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
+      </g>
+      <g id="Line_98">
+        <line
+                    x1="684.66386"
+                    y1="500.6719"
+                    x2="684.66386"
+                    y2="532.6719"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
+      </g>
+      <g id="Line_97">
+        <line
+                    x1="734.765"
+                    y1="500.6719"
+                    x2="734.765"
+                    y2="532.6719"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
+      </g>
+      <g id="Line_96">
+        <line
+                    x1="784.8661"
+                    y1="500.6719"
+                    x2="784.8661"
+                    y2="532.6719"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
+      </g>
+      <g id="Line_95">
+        <path
+                    d="M 684.66386 542.6719 L 684.66386 562.6719 L 734.765 562.5306 L 734.765 542.8272"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
+      </g>
+      <g id="Line_94">
+        <path
+                    d="M 684.66386 465.6719 L 684.66386 441.6719 L 784.8661 441.7679 L 784.8661 465.6719"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
+      </g>
+      <g id="Line_125">
+        <line
+                    x1="200.26087"
+                    y1="512.8824"
+                    x2="331.6871"
+                    y2="512.8824"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
+      </g>
+      <g id="Graphic_124">
+        <text transform="translate(234.66487 565.6719)" fill="black">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="14"
+                        font-weight="400"
+                        fill="black"
+                        x="0"
+                        y="15"
+                        xml:space="preserve"
+                    >r</tspan>
+        </text>
+      </g>
+      <g id="Graphic_123">
+        <text transform="translate(257.31387 416.67188)" fill="black">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="14"
+                        font-weight="400"
+                        fill="black"
+                        x="0"
+                        y="15"
+                        xml:space="preserve"
+                    >n</tspan>
+        </text>
+      </g>
+      <g id="Graphic_122">
+        <text transform="translate(205.26087 470.6719)" fill="black">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="14"
+                        font-weight="400"
+                        fill="black"
+                        x="0"
+                        y="15"
+                        xml:space="preserve"
+                    >qn</tspan>
+        </text>
+      </g>
+      <g id="Graphic_121">
+        <text transform="translate(257.68487 470.6719)" fill="black">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="14"
+                        font-weight="400"
+                        fill="black"
+                        x="55289107e-20"
+                        y="15"
+                        xml:space="preserve"
+                    >a</tspan>
+        </text>
+      </g>
+      <g id="Graphic_120">
+        <text transform="translate(291.75287 470.6719)" fill="black">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="14"
+                        font-weight="400"
+                        fill="black"
+                        x="0"
+                        y="15"
+                        xml:space="preserve"
+                    >(q+1)n</tspan>
+        </text>
+      </g>
+      <g id="Line_119">
+        <line
+                    x1="212.90187"
+                    y1="500.6719"
+                    x2="212.90187"
+                    y2="532.6719"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
+      </g>
+      <g id="Line_118">
+        <line
+                    x1="263.00298"
+                    y1="500.6719"
+                    x2="263.00298"
+                    y2="532.6719"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
+      </g>
+      <g id="Line_117">
+        <line
+                    x1="313.1041"
+                    y1="500.6719"
+                    x2="313.1041"
+                    y2="532.6719"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
+      </g>
+      <g id="Line_116">
+        <path
+                    d="M 212.90187 542.6719 L 212.90187 562.6719 L 263.00298 562.5306 L 263.00298 542.8272"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
+      </g>
+      <g id="Line_115">
+        <path
+                    d="M 212.90187 465.6719 L 212.90187 441.6719 L 313.1041 441.7679 L 313.1041 465.6719"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
+      </g>
+    </g>
+  </g>
+</svg>

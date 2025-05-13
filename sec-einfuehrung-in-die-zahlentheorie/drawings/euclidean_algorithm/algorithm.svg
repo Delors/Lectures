@@ -6,14 +6,14 @@
     version="1.1"
     xmlns:xl="http://www.w3.org/1999/xlink"
     xmlns:dc="http://purl.org/dc/elements/1.1/"
-    viewBox="26 21 566 328"
-    width="566"
-    height="328"
+    viewBox="31 52 562 253"
+    width="562"
+    height="253"
 >
 <style>
   @import url('/LectureDoc2/ext/fonts/ld-fonts.css');
 </style>
-  <defs>
+<defs>
     <marker
             orient="auto"
             overflow="visible"
@@ -36,7 +36,7 @@
       </g>
     </marker>
   </defs>
-  <metadata> Produced by OmniGraffle 8.0\n2025-05-12 20:03:00 +0000</metadata>
+  <metadata> Produced by OmniGraffle 8.0\n2025-05-12 20:09:17 +0000</metadata>
   <g
         id="algorithm"
         stroke-dasharray="none"
@@ -50,15 +50,15 @@
       <title>Layer 1</title>
       <g id="Graphic_71">
         <ellipse
-                    cx="58.928695"
-                    cy="189.5"
+                    cx="63.39213"
+                    cy="178.5"
                     rx="31.7500507333852"
                     ry="22.5000359527927"
                     fill="black"
                 />
         <ellipse
-                    cx="58.928695"
-                    cy="189.5"
+                    cx="63.39213"
+                    cy="178.5"
                     rx="31.7500507333852"
                     ry="22.5000359527927"
                     stroke="black"
@@ -66,7 +66,7 @@
                     stroke-linejoin="round"
                     stroke-width="1"
                 />
-        <text transform="translate(38.528695 180)" fill="white">
+        <text transform="translate(42.99213 169)" fill="white">
           <tspan
                         font-family="Noto Sans Display"
                         font-size="14"
@@ -79,8 +79,8 @@
         </text>
       </g>
       <g id="Graphic_72">
-        <path d="M 167 146 L 222 189.5 L 167 233 L 112 189.5 Z" fill="#ffa35f" />
-        <text transform="translate(131.85 179.13)" fill="black">
+        <path d="M 167 146 L 222 178.5 L 167 211 L 112 178.5 Z" fill="#ffa35f" />
+        <text transform="translate(131.85 168.35)" fill="black">
           <tspan
                         font-family="Noto Sans Display"
                         font-size="14"
@@ -93,8 +93,8 @@
         </text>
       </g>
       <g id="Graphic_73">
-        <rect x="112" y="261.5" width="110" height="87" fill="#7e90b4" />
-        <text transform="translate(117 295.5)" fill="white">
+        <rect x="112" y="240" width="110" height="65" fill="#7e90b4" />
+        <text transform="translate(117 263)" fill="white">
           <tspan
                         font-family="Noto Sans Display"
                         font-size="14"
@@ -107,8 +107,8 @@
         </text>
       </g>
       <g id="Graphic_74">
-        <rect x="258.24935" y="146" width="110" height="87" fill="#7e90b4" />
-        <text transform="translate(263.24935 170.5)" fill="white">
+        <rect x="258.24935" y="146" width="110" height="65" fill="#7e90b4" />
+        <text transform="translate(263.24935 159.5)" fill="white">
           <tspan
                         font-family="Noto Sans Display"
                         font-size="14"
@@ -131,10 +131,10 @@
       </g>
       <g id="Graphic_75">
         <path
-                    d="M 449.0109 146 L 504.0109 189.5 L 449.0109 233 L 394.01092 189.5 Z"
+                    d="M 449.0109 146 L 504.0109 178.5 L 449.0109 211 L 394.01092 178.5 Z"
                     fill="#ffa35f"
                 />
-        <text transform="translate(413.8609 179.13)" fill="black">
+        <text transform="translate(413.8609 168.35)" fill="black">
           <tspan
                         font-family="Noto Sans Display"
                         font-size="14"
@@ -147,8 +147,8 @@
         </text>
       </g>
       <g id="Graphic_76">
-        <rect x="395.01092" y="21" width="110" height="87" fill="#7e90b4" />
-        <text transform="translate(400.01092 55)" fill="white">
+        <rect x="395.01092" y="52" width="110" height="65" fill="#7e90b4" />
+        <text transform="translate(400.01092 75)" fill="white">
           <tspan
                         font-family="Noto Sans Display"
                         font-size="14"
@@ -161,8 +161,8 @@
         </text>
       </g>
       <g id="Graphic_77">
-        <rect x="258.24935" y="21" width="110" height="87" fill="#7e90b4" />
-        <text transform="translate(263.24935 55)" fill="white">
+        <rect x="258.24935" y="52" width="110" height="65" fill="#7e90b4" />
+        <text transform="translate(263.24935 75)" fill="white">
           <tspan
                         font-family="Noto Sans Display"
                         font-size="14"
@@ -175,8 +175,8 @@
         </text>
       </g>
       <g id="Graphic_78">
-        <rect x="395.01092" y="261.5" width="110" height="87" fill="#7e90b4" />
-        <text transform="translate(400.01092 276.5)" fill="white">
+        <rect x="395.01092" y="240" width="110" height="65" fill="#7e90b4" />
+        <text transform="translate(400.01092 244)" fill="white">
           <tspan
                         font-family="Noto Sans Display"
                         font-size="14"
@@ -208,15 +208,15 @@
       </g>
       <g id="Graphic_79">
         <ellipse
-                    cx="559.37545"
-                    cy="305"
+                    cx="560.25"
+                    cy="272.5"
                     rx="31.7500507333852"
                     ry="22.5000359527927"
                     fill="black"
                 />
         <ellipse
-                    cx="559.37545"
-                    cy="305"
+                    cx="560.25"
+                    cy="272.5"
                     rx="31.7500507333852"
                     ry="22.5000359527927"
                     stroke="black"
@@ -224,7 +224,7 @@
                     stroke-linejoin="round"
                     stroke-width="1"
                 />
-        <text transform="translate(538.97545 295.5)" fill="white">
+        <text transform="translate(539.85 263)" fill="white">
           <tspan
                         font-family="Noto Sans Display"
                         font-size="14"
@@ -239,9 +239,9 @@
       <g id="Line_80">
         <line
                     x1="167"
-                    y1="233"
+                    y1="211"
                     x2="167"
-                    y2="251.6"
+                    y2="230.1"
                     marker-end="url(#FilledArrow_Marker)"
                     stroke="black"
                     stroke-linecap="round"
@@ -251,7 +251,7 @@
       </g>
       <g id="Line_81">
         <path
-                    d="M 222 305 L 238.8889 305 L 240 189.58333 L 248.34936 189.57383"
+                    d="M 222 272.5 L 240.35533 272.5 L 239.3401 178.6802 L 248.34938 178.65824"
                     marker-end="url(#FilledArrow_Marker)"
                     stroke="black"
                     stroke-linecap="round"
@@ -262,9 +262,9 @@
       <g id="Line_82">
         <line
                     x1="368.24935"
-                    y1="189.5"
+                    y1="178.5"
                     x2="384.11092"
-                    y2="189.5"
+                    y2="178.5"
                     marker-end="url(#FilledArrow_Marker)"
                     stroke="black"
                     stroke-linecap="round"
@@ -274,10 +274,10 @@
       </g>
       <g id="Line_83">
         <line
-                    x1="449.385"
-                    y1="232.70415"
-                    x2="449.5486"
-                    y2="251.60037"
+                    x1="449.3545"
+                    y1="210.79697"
+                    x2="449.55987"
+                    y2="230.10056"
                     marker-end="url(#FilledArrow_Marker)"
                     stroke="black"
                     stroke-linecap="round"
@@ -288,9 +288,9 @@
       <g id="Line_84">
         <line
                     x1="505.0109"
-                    y1="305"
-                    x2="517.7254"
-                    y2="305"
+                    y1="272.5"
+                    x2="518.6"
+                    y2="272.5"
                     marker-end="url(#FilledArrow_Marker)"
                     stroke="black"
                     stroke-linecap="round"
@@ -300,10 +300,10 @@
       </g>
       <g id="Line_86">
         <line
-                    x1="90.67871"
-                    y1="189.5"
+                    x1="95.14215"
+                    y1="178.5"
                     x2="102.1"
-                    y2="189.5"
+                    y2="178.5"
                     marker-end="url(#FilledArrow_Marker)"
                     stroke="black"
                     stroke-linecap="round"
@@ -314,9 +314,9 @@
       <g id="Line_87">
         <line
                     x1="222"
-                    y1="189.5"
+                    y1="178.5"
                     x2="248.34935"
-                    y2="189.5"
+                    y2="178.5"
                     marker-end="url(#FilledArrow_Marker)"
                     stroke="black"
                     stroke-linecap="round"
@@ -326,10 +326,10 @@
       </g>
       <g id="Line_88">
         <line
-                    x1="449.35674"
-                    y1="146.2735"
-                    x2="449.5837"
-                    y2="117.89968"
+                    x1="449.3545"
+                    y1="146.20303"
+                    x2="449.55987"
+                    y2="126.89944"
                     marker-end="url(#FilledArrow_Marker)"
                     stroke="black"
                     stroke-linecap="round"
@@ -340,9 +340,9 @@
       <g id="Line_89">
         <line
                     x1="395.01092"
-                    y1="64.5"
+                    y1="84.5"
                     x2="378.14935"
-                    y2="64.5"
+                    y2="84.5"
                     marker-end="url(#FilledArrow_Marker)"
                     stroke="black"
                     stroke-linecap="round"
@@ -353,7 +353,7 @@
       <g id="Line_90">
         <line
                     x1="313.24935"
-                    y1="108"
+                    y1="117"
                     x2="313.24935"
                     y2="136.1"
                     marker-end="url(#FilledArrow_Marker)"
@@ -364,7 +364,7 @@
                 />
       </g>
       <g id="Graphic_91">
-        <text transform="translate(218.66813 170.28288)" fill="black">
+        <text transform="translate(221.76335 161)" fill="black">
           <tspan
                         font-family="Noto Sans Display"
                         font-size="14"
@@ -377,7 +377,7 @@
         </text>
       </g>
       <g id="Graphic_92">
-        <text transform="translate(177.18636 231)" fill="black">
+        <text transform="translate(174.84126 216)" fill="black">
           <tspan
                         font-family="Noto Sans Display"
                         font-size="14"
@@ -390,7 +390,7 @@
         </text>
       </g>
       <g id="Graphic_93">
-        <text transform="translate(467.3669 231)" fill="black">
+        <text transform="translate(456.72685 216)" fill="black">
           <tspan
                         font-family="Noto Sans Display"
                         font-size="14"

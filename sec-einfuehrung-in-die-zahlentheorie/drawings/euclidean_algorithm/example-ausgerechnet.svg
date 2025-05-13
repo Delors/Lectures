@@ -36,7 +36,8 @@
       </g>
     </marker>
   </defs>
-  <metadata> Produced by OmniGraffle 8.0\n2025-05-12 20:03:00 +0000</metadata>
+  <metadata> Produced by OmniGraffle 8.0 and Michael Eichberg\n2025-05-12 20:03:00 +0000
+    </metadata>
   <g
         id="example-ausgerechnet"
         stroke-dasharray="none"
@@ -184,9 +185,9 @@
       </g>
       <g id="Line_127">
         <line
-                    x1="196.337"
+                    x1="204.337"
                     y1="55.3"
-                    x2="196.337"
+                    x2="204.337"
                     y2="23.076923"
                     marker-start="url(#SharpArrow_Marker)"
                     stroke="black"
@@ -197,9 +198,9 @@
       </g>
       <g id="Line_128">
         <line
-                    x1="112.62128"
+                    x1="120.62128"
                     y1="62.378876"
-                    x2="197.03637"
+                    x2="207.03637"
                     y2="62.378876"
                     stroke="black"
                     stroke-linecap="round"
@@ -209,9 +210,9 @@
       </g>
       <g id="Line_129">
         <line
-                    x1="58.634965"
+                    x1="75.634965"
                     y1="109.97442"
-                    x2="231.5"
+                    x2="259.75"
                     y2="109.97442"
                     stroke="black"
                     stroke-linecap="round"
@@ -221,9 +222,9 @@
       </g>
       <g id="Line_130">
         <line
-                    x1="230.5"
+                    x1="246.5"
                     y1="102.71667"
-                    x2="230.5"
+                    x2="246.5"
                     y2="80.61667"
                     marker-start="url(#SharpArrow_Marker)"
                     stroke="black"
@@ -233,31 +234,31 @@
                 />
       </g>
       <g id="Graphic_131">
-        <text transform="translate(198.3196 29)" fill="black">
+        <text transform="translate(209.2196 29)" fill="black">
           <tspan
                         font-family="Victor Mono"
                         font-size="14"
                         font-weight="400"
                         fill="black"
-                        x="16520119e-20"
+                        x="0"
                         y="14"
                     >=</tspan>
         </text>
       </g>
       <g id="Graphic_132">
-        <text transform="translate(235.20985 83.80834)" fill="black">
+        <text transform="translate(250.20985 83.80834)" fill="black">
           <tspan
                         font-family="Victor Mono"
                         font-size="14"
                         font-weight="400"
                         fill="black"
-                        x="16520119e-20"
+                        x="0"
                         y="14"
                     >=</tspan>
         </text>
       </g>
       <g id="Graphic_133">
-        <text transform="translate(-11.553565 134)" fill="black">
+        <text transform="translate(-48.5 128)" fill="black">
           <tspan
                         font-family="Victor Mono"
                         font-size="14"
@@ -385,22 +386,15 @@
                         font-weight="400"
                         fill="black"
                         y="33.545532"
-                    >·310  = 10</tspan>
-          <tspan
-                        font-family="Victor Mono"
-                        font-size="14"
-                        font-weight="400"
-                        fill="black"
-                        x="183.27273"
-                        y="53.091064"
-                    > </tspan>
+                    >·310 = 10</tspan>
           <tspan
                         font-family="Victor Mono"
                         font-size="14"
                         font-weight="400"
                         fill="#fcbbab"
+                        x="203.27273"
                         y="53.091064"
-                    >7</tspan>
+                    > 7</tspan>
           <tspan
                         font-family="Victor Mono"
                         font-size="14"
@@ -421,7 +415,7 @@
                         font-weight="400"
                         fill="black"
                         y="53.091064"
-                    >·310  = 10</tspan>
+                    >·310 = 10</tspan>
         </text>
       </g>
       <g id="Line_134">
@@ -438,7 +432,7 @@
       </g>
       <g id="Line_135">
         <path
-                    d="M -71.24542 101.71667 L -71.24542 38.46154 L 196.337 38.46154 L 196.337 23.076923"
+                    d="M -71.24542 101.71667 L -71.24542 38.46154 L 204.337 38.46154 L 204.337 23.076923"
                     marker-start="url(#SharpArrow_Marker)"
                     stroke="black"
                     stroke-linecap="round"
