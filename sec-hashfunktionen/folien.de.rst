@@ -1,5 +1,5 @@
 .. meta::
-    :version: genesis
+    :version: renaissance
     :author: Michael Eichberg
     :keywords: hash functions
     :description lang=en: Cryptographic Hash Functions
@@ -9,8 +9,8 @@
     :master-password: WirklichSchwierig!
 
 .. include:: ../docutils.defs
-    
-    
+
+
 
 Kryptografische Hash Funktionen
 ===============================================
@@ -22,7 +22,7 @@ Kryptografische Hash Funktionen
 
 .. supplemental::
 
-  :Folien: 
+  :Folien:
       [HTML] |html-source|
 
       [PDF] |pdf-source|
@@ -40,34 +40,32 @@ Hashfunktionen - Grundlagen
 Hashfunktionen
 -------------------------------
 
-.. class:: incremental
+.. class:: incremental-list
 
 - Eine Hashfunktion :math:`H` akzeptiert eine beliebig lange Nachricht :math:`M` als Eingabe und gibt einen Wert fixer Größe zurück: :math:`h = H(M)`.
 - Wird oft zur Gewährleistung der Datenintegrität verwendet. Eine Änderung eines beliebigen Bits in :math:`M` sollte mit hoher Wahrscheinlichkeit zu einer Änderung des Hashwerts :math:`h` führen.
 - Kryptographische Hashfunktionen werden für Sicherheitsanwendungen benötigt. Mögliche Anwendungen:
-  
+
   - Authentifizierung von Nachrichten
   - Digitale Signaturen
   - Speicherung von Passwörtern
-  
+
 
 Beispiel: Berechnung von Hashwerten mittels MD5
 -------------------------------------------------------
 
-.. class:: monospaced
-
-:: 
+::
 
     md5("Hello") = 8b1a9953c4611296a827abf8c47804d7
     md5("hello") = 5d41402abc4b2a76b9719d911017c592
-    md5("Dieses Passwort ist wirklich total sicher 
-          und falls Du es mir nicht glaubst, dann
-          tippe es zweimal hintereinander blind 
-          fehlerfrei ein.") 
+    md5("Dieses Passwort ist wirklich total sicher
+         und falls Du es mir nicht glaubst, dann
+         tippe es zweimal hintereinander blind
+         fehlerfrei ein.")
                  = 8fcf22b1f8327e3a005f0cba48dd44c8
 
-.. admonition:: Warnung
-    :class: warning incremental margin-top-2em
+.. warning::
+    :class: incremental
 
     Die Verwendung von MD5 dient hier lediglich der Illustration. In realen Anwendung sollte MD5 nicht mehr verwendet werden.
 
@@ -79,29 +77,30 @@ Sicherheitsanforderungen an kryptografische Hashfunktion I
 :Variable Eingabegröße: H kann auf einen Block beliebiger Größe angewendet werden.
 :Pseudozufälligkeit: Die Ausgabe von :math:`H` erfüllt die Standardtests für Pseudozufälligkeit.
 
-.. class:: incremental 
+.. class:: incremental
 
-:Einweg Eigenschaft: 
-    
+:Einweg Eigenschaft:
+
     Es ist rechnerisch/praktisch nicht machbar für einen gegeben Hashwert :math:`h` ein :math:`N` zu finden so dass gilt: :math:`H(N) = h`
 
     (:eng:`Preimage resistant; one-way property`)
 
 
+
 Sicherheitsanforderungen an kryptografische Hashfunktion II
 -------------------------------------------------------------------------
 
-:Schwache Kollisionsresistenz: 
+:Schwache Kollisionsresistenz:
 
-    Es ist rechnerisch nicht machbar für eine gegebene Nachricht M eine Nachricht N zu finden so dass gilt: :math:`M \neq N` mit :math:`H(M) = H(N)` 
+    Es ist rechnerisch nicht machbar für eine gegebene Nachricht M eine Nachricht N zu finden so dass gilt: :math:`M \neq N` mit :math:`H(M) = H(N)`
 
     (:eng:`Second preimage resistant; weak collision resistant`)
 
 .. class:: incremental
 
-:Starke Kollisionsresistenz: 
-    
-    Es ist rechnerisch unmöglich ein paar :math:`(N,M)` zu finden so dass gilt: :math:`H(M) = H(N)`. 
+:Starke Kollisionsresistenz:
+
+    Es ist rechnerisch unmöglich ein paar :math:`(N,M)` zu finden so dass gilt: :math:`H(M) = H(N)`.
 
     (:eng:`Collision resistant; strong collision resistant`)
 
@@ -114,54 +113,47 @@ Sicherheitsanforderungen an kryptografische Hashfunktion II
     *Second preimage resistance* ist dann gleichbedeutend damit, dass man nicht effektiv einen „Zweites-Urbild-Angriff“ durchführen kann. Es ist nicht möglich zu einer Nachricht M eine zweite Nachricht N (d. h. ein zweites Urbild) zu finden, die für eine gegebene Hashfunktion den gleich Hash aufweist.
 
 
+
 Beziehung zwischen den Sicherheitsanforderungen an Hashfunktionen
 ------------------------------------------------------------------
 
-.. image:: drawings/hash_functions/properties.svg 
+.. image:: drawings/hash_functions/properties.svg
     :alt: Beziehung zwischen den Eigenschaften von Hashfunktionen
     :align: center
-    :width: 1200px
 
 
 
 Nachrichtenauthentifizierung - vereinfacht
 -------------------------------------------------------
 
-.. class:: far-smaller
-
 Nachrichten können auf verschiedene Weisen authentifiziert werden, so dass *Man-in-the-Middle-Angriffe* (MitM)\ [#]_ verhindert werden können.
 
-.. stack::
+.. deck::
 
-    .. layer::
+    .. card::
 
         .. image:: drawings/digests/all_encrypted.svg
             :align: center
-            :width: 1326
 
-    .. layer:: incremental
+    .. card::
 
         .. image:: drawings/digests/hash_encrypted.svg
             :align: center
-            :width: 1560
 
-    .. layer:: incremental
+    .. card::
 
         .. image:: drawings/digests/secret_appended.svg
             :align: center
-            :width: 1560
 
-    .. layer:: incremental
+    .. card::
 
         .. image:: drawings/digests/secret_encrypted.svg
             :align: center
-            :width: 1774
 
-
-.. [#] :eng:`Man` ist hier geschlechtsneutral zu verstehen. 
+.. [#] :eng:`Man` ist hier geschlechtsneutral zu verstehen.
 
 .. supplemental::
-    
+
     **Szenarien**
 
     Im ersten Szenario wird der Hash an die Nachricht angehängt und als ganzes verschlüsselt. Wir erhalten Vertraulichkeit und Authentizität.
@@ -182,37 +174,32 @@ Nachrichten können auf verschiedene Weisen authentifiziert werden, so dass *Man
     :S: eine geheime Zeichenkette
     :||: die Konkatenation von zwei Werten (d. h. das Aneinanderhängen von zwei Werten)
 
+    .. hint::
 
-    .. admonition:: Hinweis
+        Bei *Man-in-the-Middle-Angriffen* handelt es sich um einen Fachbegriff und häufig wird zum Beispiel Eve oder Mallory verwendet, um die Person zu bezeichnen, die den Angriff durchführt. Gelegentlich wird auch *Adversary-in-the-Middle* oder *Person-in-the-Middle* verwendet.
 
-        Bei *Man-in-the-Middle-Angriffen* handelt es sich um einen Fachbegriff und häufig wird zum Beispiel Eve oder Mallory verwendet, um die Person zu bezeichnen, die den Angriff durchführt. Gelegentlich wird auch *Adversary-in-the-Middle* oder *Person-in-the-Middle* verwendet. 
+    .. rubric:: Message-Digests
 
-    .. admonition:: Message-Digests
-        
-        Im allgemeinen Sprachgebrauch wird auch von :eng:`Message Digests` gesprochen.
+    Im allgemeinen Sprachgebrauch wird auch von :eng:`Message Digests` gesprochen.
 
 
 
 Digitale Signaturen - vereinfacht
 -------------------------------------------------------
 
-.. class:: far-smaller
-
 Digitale Signaturen dienen dem Nachweis der Authentizität einer Nachricht und der Integrität der Nachricht.  Jeder, der einen öffentlichen Schlüssel hat, kann die Signatur überprüfen, aber nur der Besitzer des privaten Schlüssels kann die Signatur erstellen.
 
-.. stack::
+.. deck::
 
-    .. layer::
+    .. card::
 
         .. image:: drawings/signatures/just_authentication.svg
             :align: center
-            :width: 1582
 
-    .. layer:: incremental
+    .. card::
 
         .. image:: drawings/signatures/authentication_and_encryption.svg
             :align: center
-            :width: 1775
 
 .. supplemental::
 
@@ -233,29 +220,28 @@ Anforderungen an die Resistenz von Hashfunktionen
 
 .. csv-table::
     :header: "", Preimage Resistant, Second Preimage Resistant, Collision Resistant
-    :class: smaller highlight-line-on-hover incremental
+    :class: incremental-table-rows highlight-line-on-hover
     :widths: 28, 10, 10, 10
-    
+
     Hash + Digitale Signaturen, ✓, ✓, ✓
-    Einbruchserkennung und Viruserkennung, , ✓ , 
-    Hash + Symmetrische Verschlüsselung, , , 
-    Passwortspeicherung, ✓, , 
+    Einbruchserkennung und Viruserkennung, , ✓ ,
+    Hash + Symmetrische Verschlüsselung, , ,
+    Passwortspeicherung, ✓, ,
     MAC, ✓, ✓, ✓
 
-.. supplemental:: 
+.. supplemental::
 
     .. rubric:: Einbruchserkennung und Viruserkennung - Hintergrund
 
     Bei der Einbruchserkennung und Viruserkennung ist *second preimage* Resistenz erforderlich. Andernfalls könnte ein Angreifer seine Malware so schreiben, ass diese einen Hash wie eine vorhandene gutartige Software hat und so verhindern, dass die Malware auf eine schwarze Liste gesetzt werde kann, ohne den Kollateralschaden, dass auch die gutartige Software fälschlicherweise als Malware erkannt wird.
-    
+
     .. rubric:: Aufwand eines Kollisionsangriffs
 
     Ein Kollisionsangriff erfordert weniger Aufwand als ein *preimage* oder ein *second preimage* Angriff.
 
     Dies wird durch das Geburtstagsparadoxon erklärt. Wählt man Zufallsvariablen aus einer Gleichverteilung im Bereich von :math:`0` bis :math:`N-1`, so übersteigt die Wahrscheinlichkeit, dass ein sich wiederholendes Element gefunden wird, nach :math:`\sqrt{N}` Auswahlen :math:`0,5`. Wenn wir also für einen m-Bit-Hashwert Datenblöcke zufällig auswählen, können wir erwarten, zwei Datenblöcke innerhalb von :math:`\sqrt{2^m} = 2^{m/2}` Versuchen zu finden.
 
-    .. admonition:: Beispiel
-        :class: smaller
+    .. example::
 
         Es ist relativ einfach, ähnliche Meldungen zu erstellen. Wenn ein Text 8 Stellen hat, an denen ein Wort mit einem anderen ausgetauscht werden kann, dann hat man bereits :math:`2^{8}` verschiedene Texte.
 
@@ -273,7 +259,7 @@ Effizienzanforderungen an kryptografische Hashfunktionen
 .. container:: incremental
 
     .. container:: text-align-center bold huge
-        
+
         vs.
 
     :Brute-Force-Angriffe auf Passwörter erschweren:
@@ -282,73 +268,68 @@ Effizienzanforderungen an kryptografische Hashfunktionen
 
 
 
-Struktur eines sicheren Hash-Codes 
+Struktur eines sicheren Hash-Codes
 ------------------------------------------------------------------------
 
 (Vorgeschlagen von Merkle.)
 
 .. image:: drawings/hash_functions/structure_of_secure_hash_codes.svg
-    :width: 1400px
-    :align: center 
+    :align: center
 
-.. container:: two-columns smaller 
+.. class:: columns
 
-    .. container:: column no-separator
+-       :math:`IV` = Initialer Wert (Algorithmus-abhängig)
 
-        :math:`IV` = Initialer Wert (Algorithmus-abhängig)
+        :math:`CV_i` = Verkettungsvariable
 
-        :math:`CV_i` = Verkettungsvariable 
-        
         :math:`Y_i` = i-er Eingabeblock
 
         :math:`f` = Kompressionsfunktion
-        
-    .. container:: column
 
-        :math:`n` = Länge des Blocks
+-       :math:`n` = Länge des Blocks
 
         :math:`L` = Anzahl der Eingabeblöcke
-        
-        :math:`b` = Länge des Eingabeblocks
 
+        :math:`b` = Länge des Eingabeblocks
 
 .. supplemental::
 
     Diese Struktur liegt insbesondere den Hashfunktionen der SHA-2 Familie zugrunde.
 
 
-.. class:: integrated-exercise
+
+.. class:: exercises
 
 Übung
 -------
 
 .. exercise:: XOR als Hashfunktion
 
-    
+
     Warum ist eine einfache „Hash-Funktion“, die einen 256-Bit-Hash-Wert berechnet, indem sie ein XOR über alle 256-Bit Blöcke einer Nachricht durchführt, im Allgemeinen ungeeignet?
 
-    .. container:: minor
+    .. container:: peripheral
 
         Wir nehmen hier an, dass die Nachricht ein Vielfaches von 256 Bit lang ist. Falls nicht, dann wenden wir Padding an.
 
-    .. solution:: 
+    .. solution::
         :pwd: alles nichts
 
-        Je nach Beschaffenheit der zugrunde liegenden Daten können wir die ursprüngliche Nachricht ggf. wiederherstellen bzw. diese liegt direkt vor. Stellen Sie sich z. B. vor, dass nur ein Block sinnvolle Daten enthält und alle anderen Blöcke einfach "0" sind. 
-        
+        Je nach Beschaffenheit der zugrunde liegenden Daten können wir die ursprüngliche Nachricht ggf. wiederherstellen bzw. diese liegt direkt vor. Stellen Sie sich z. B. vor, dass nur ein Block sinnvolle Daten enthält und alle anderen Blöcke einfach "0" sind.
+
         Darüber hinaus wäre es ggf. sehr einfach eine Nachricht zu finden, die denselben Hashwert hat wie die ursprüngliche Nachricht. Somit wäre die Kollisionsresistenz nicht gegeben und eine Integritätssicherung wäre nicht möglich.
 
         ::
 
             Nachricht     A:                 B:
             1. Block      10101010101010     01010101010101
-            2. Block      10101111101011     01010000010100 
-            
+            2. Block      10101111101011     01010000010100
+
             "Hash" (XOR): 00000101000001  =  00000101000001
-            
 
 
-.. class:: integrated-exercise
+
+.. class:: exercises
 
 Übung
 ---------
@@ -356,13 +337,13 @@ Struktur eines sicheren Hash-Codes
 .. exercise:: Bewertung der Sicherheit
 
     .. class:: list-with-explanations
- 
+
     - Eine Nachricht :math:`M` bestehe aus :math:`N` 64-bit Blöcken: :math:`X_1, \ldots, X_n`.
     - Der Hashcode H(M) ist ein simpler XOR über alle Blöcke: :math:`H(M) = h = X_1 \oplus X_2 \oplus \ldots \oplus X_n`.
     - :math:`h` wird als der :math:`X_{N+1}` Block an die Nachricht angehängt und danach wird unter Verwendung des CBC Modus die Nachricht inkl. des Hashcodes verschlüsselt (:math:`C = Y_1, \ldots, Y_{N+1}`).
     - Gegen welche Art von Manipulation ist diese Konstruktion *nicht* sicher?
-     
-      Studieren Sie ggf. noch einmal den CBC Modus. 
+
+      Studieren Sie ggf. noch einmal den CBC Modus.
 
     .. solution::
         :pwd: umsortiert
@@ -379,7 +360,7 @@ Struktur eines sicheren Hash-Codes
 
 
 
-.. class:: integrated-exercise
+.. class:: exercises
 
 Übung
 -------
@@ -397,45 +378,39 @@ Struktur eines sicheren Hash-Codes
 `SHA 512 - Übersicht <https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.180-4.pdf>`__
 --------------------------------------------------------------------------------------
 
-.. stack::
+.. deck::
 
-    .. layer::
+    .. card::
 
         .. image:: drawings/sha512/sha512-main.svg
             :alt: Nachricht
             :align: center
-            :width: 1400px
 
-    .. layer:: incremental overlay
+    .. card:: overlay
 
         .. image:: drawings/sha512/sha512-blocks.svg
             :alt: Nachricht
             :align: center
-            :width: 1400px
 
 
-    .. layer:: incremental overlay
+    .. card:: overlay
 
         .. image:: drawings/sha512/sha512-nth-block.svg
             :alt: Nachricht
             :align: center
-            :width: 1400px
 
-
-    .. layer:: incremental overlay
+    .. card:: overlay
 
         .. image:: drawings/sha512/sha512-padding.svg
             :alt: Nachricht
             :align: center
-            :width: 1400px
-
 
 .. supplemental::
 
-    - SHA-512 nimmt eine Nachricht beliebiger Größe und gibt einen 512-Bit-Hashwert zurück. 
+    - SHA-512 nimmt eine Nachricht beliebiger Größe und gibt einen 512-Bit-Hashwert zurück.
     - Der IV von SHA-512 besteht aus den folgenden acht 64-Bit-Zahlen:
-    
-      :: 
+
+      ::
 
         6a09e667f3bcc908
         bb67ae8584caa73b
@@ -445,10 +420,10 @@ Struktur eines sicheren Hash-Codes
         9b05688c2b3e6c1f
         1f83d9abfb41bd6b
         5be0cd19137e2179
-  
+
     - Die Addition erfolgt Wortweise modulo :math:`2^{64}`.
 
-    - Die Nachricht wird in 1024-Bit-Blöcke unterteilt. Die Nachricht wird - unabhängig von der tatsächlichen Länge - *immer* aufgefüllt (:eng:`padded`) und auf eine Länge  :math:`l \equiv 896 (mod\, 1024)` Bits gebracht. 
+    - Die Nachricht wird in 1024-Bit-Blöcke unterteilt. Die Nachricht wird - unabhängig von der tatsächlichen Länge - *immer* aufgefüllt (:eng:`padded`) und auf eine Länge  :math:`l \equiv 896 (mod\, 1024)` Bits gebracht.
     - Das Padding besteht aus einem Bit mit Wert 1, gefolgt von der notwendigen Anzahl Nullen.
     - Am Ende wird die Länge der Nachricht als 128-Bit-Wert angehängt, um ein Vielfaches von 1024 zu erhalten.
 
@@ -457,48 +432,38 @@ Struktur eines sicheren Hash-Codes
 SHA-512 Verarbeitung eines 1024-Bit-Blocks
 ------------------------------------------------------------
 
-.. stack::
+.. deck::
 
-    .. layer::
+    .. card::
 
         .. image:: drawings/sha512-processing_a_block/main.svg
-            :alt: Nachricht
             :align: center
-            :width: 1600px
 
-    .. layer:: incremental overlay
+    .. card:: overlay
 
         .. image:: drawings/sha512-processing_a_block/main-pass-through.svg
-            :alt: Nachricht
             :align: center
-            :width: 1600px
 
-    .. layer:: incremental overlay
+    .. card:: overlay
 
         .. image:: drawings/sha512-processing_a_block/block.svg
-            :alt: Nachricht
             :align: center
-            :width: 1600px
 
-    .. layer:: incremental overlay
+    .. card:: overlay
 
         .. image:: drawings/sha512-processing_a_block/wi.svg
-            :alt: Nachricht
             :align: center
-            :width: 1600px
 
-    .. layer:: incremental overlay
+    .. card:: overlay
 
         .. image:: drawings/sha512-processing_a_block/constants.svg
-            :alt: Nachricht
             :align: center
-            :width: 1600px
 
-.. supplemental:: 
+.. supplemental::
 
-    Die Additionen erfolgen Modulo :math:`2^{64}`. 
+    Die Additionen erfolgen Modulo :math:`2^{64}`.
 
-    .. rubric:: Berechnung der :math:`W_i` 
+    .. rubric:: Berechnung der :math:`W_i`
 
     :math:`W_0` bis :math:`W_{15}` sind die ersten 16 Wörter des 1024-Bit-Blocks. Die restlichen 64 Wörter werden wie folgt berechnet.
 
@@ -510,15 +475,14 @@ SHA-512 Verarbeitung eines 1024-Bit-Blocks
 
     :math:`\sigma_1(x) = (x \ggg 19) \oplus (x \ggg 61) \oplus (x \gg 6)`
 
-    .. admonition:: Legende
-        :class: legend far-smaller
-  
+    .. legend::
+
         :math:`\gg` ist die Rechtsverschiebung bei der die linke Seite mit Nullen aufgefüllt wird.
 
         :math:`\ggg` ist die zyklische Rechtsverschiebung.
 
         :math:`\oplus` steht für die bitweise XOR-Operation.
-        
+
 
     .. rubric:: Rundenfunktion
 
@@ -526,7 +490,7 @@ SHA-512 Verarbeitung eines 1024-Bit-Blocks
 
         T_1 = h + Ch(e,f,g) + ( \sum\nolimits_{1}^{512} e ) + K_t + W_t
 
-        T_2 = (\sum\nolimits_{0}^{512} a ) + Maj(a,b,c) 
+        T_2 = (\sum\nolimits_{0}^{512} a ) + Maj(a,b,c)
 
         h = g
 
@@ -538,7 +502,7 @@ SHA-512 Verarbeitung eines 1024-Bit-Blocks
 
         d = c
 
-        c = b 
+        c = b
 
         b = a
 
@@ -554,17 +518,17 @@ SHA-512 Verarbeitung eines 1024-Bit-Blocks
 
     :math:`\sum\nolimits_{0}^{512} a = a \ggg 28 \oplus a \ggg 34 \oplus a \ggg 39`
 
-    :math:`\sum\nolimits_{1}^{512} e = e \ggg 14 \oplus e \ggg 18 \oplus e \ggg 41` 
+    :math:`\sum\nolimits_{1}^{512} e = e \ggg 14 \oplus e \ggg 18 \oplus e \ggg 41`
 
-    .. rubric:: Berechnung der Konstanten 
+    .. rubric:: Berechnung der Konstanten
 
-    Die Konstanten :math:`K` sind die ersten 64 Bits der Bruchteile der Kubikwurzeln der ersten 80 Primzahlen. 
-    
+    Die Konstanten :math:`K` sind die ersten 64 Bits der Bruchteile der Kubikwurzeln der ersten 80 Primzahlen.
+
     Konzeptionell: :math:`((\sqrt[3]{n_{te}\, Primzahl} - \lfloor \sqrt[3]{n_{te}\, Primzahl} \rfloor) << 64)`\ :code:`.toInt().toString(16)`
 
-    **Die SHA-512 Konstanten**    
+    **Die SHA-512 Konstanten**
 
-    .. container:: far-far-smaller monospaced
+    ::
 
         428a2f98d728ae22 7137449123ef65cd b5c0fbcfec4d3b2f e9b5dba58189dbbc
         3956c25bf348b538 59f111f1b605d019 923f82a4af194f9b ab1c5ed5da6d8118
@@ -590,18 +554,18 @@ SHA-512 Verarbeitung eines 1024-Bit-Blocks
 
     **Exemplarischer Code zur Berechnung der Konstanten**
 
-    Der folgende JavaScript Code demonstriert, wie die Konstanten für SHA-512 berechnet werden bzw. wurden. Die Präzision von Standard JavaScript Gleitkommazahlen (64-Bit Double) ist jedoch nicht ganz ausreichend, um die Konstanten vollständig zu berechnen. 
+    Der folgende JavaScript Code demonstriert, wie die Konstanten für SHA-512 berechnet werden bzw. wurden. Die Präzision von Standard JavaScript Gleitkommazahlen (64-Bit Double) ist jedoch nicht ganz ausreichend, um die Konstanten vollständig zu berechnen.
 
     .. code:: javascript
-        :class: far-far-smaller
+        :class: copy-to-clipboard
         :number-lines:
 
         const primes = [
-            2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 
-            61, 67, 71, 73, 79, 83, 89, 97, 101, 103, 107, 109, 113, 127, 
-            131, 137, 139, 149, 151, 157, 163, 167, 173, 179, 181, 191, 193, 
-            197, 199, 211, 223, 227, 229, 233, 239, 241, 251, 257, 263, 269, 
-            271, 277, 281, 283, 293, 307, 311, 313, 317, 331, 337, 347, 349, 
+            2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59,
+            61, 67, 71, 73, 79, 83, 89, 97, 101, 103, 107, 109, 113, 127,
+            131, 137, 139, 149, 151, 157, 163, 167, 173, 179, 181, 191, 193,
+            197, 199, 211, 223, 227, 229, 233, 239, 241, 251, 257, 263, 269,
+            271, 277, 281, 283, 293, 307, 311, 313, 317, 331, 337, 347, 349,
             353, 359, 367, 373, 379, 383, 389, 397, 401, 409 ];
 
         function* genSHA512Constants() {
@@ -620,22 +584,22 @@ SHA-512 Verarbeitung eines 1024-Bit-Blocks
     Der folgenden Java Code demonstriert, wie die Konstanten für SHA-512 berechnet werden können. Wir verwenden hier die Klasse `BigDecimal`, um die Konstanten zu berechnen, da Java keinen ``long double`` Typ (mit 128 Bit) kennt.
 
     .. code:: java
-        :class: far-far-smaller
+        :class: copy-to-clipboard
         :number-lines:
 
-        /** 
+        /**
          * Compute the cube root using BigDecimals and the Newton-Raphson
-         * algorithm. 
-         * 
+         * algorithm.
+         *
          * @param n the number for which the cube root should be computed.
          * @param guess the current/initial guess. Can be BigDecimal.ONE.
-         * @param the number of steps to be executed. The algorithm is 
-         *        iterative and the number of steps determines the 
+         * @param the number of steps to be executed. The algorithm is
+         *        iterative and the number of steps determines the
          *        precision of the result.
          */
         BigDecimal cbrt(BigDecimal n, BigDecimal guess,  int steps) {
             if (steps == 0) return guess;
-            final var newGuess = 
+            final var newGuess =
                 guess.add(
                     guess.pow(3).add(n.negate()).divide(
                         guess.pow(2).multiply(new BigDecimal(3)),
@@ -644,18 +608,18 @@ SHA-512 Verarbeitung eines 1024-Bit-Blocks
                 );
             return cbrt(n,newGuess,steps -1);
         }
-        /** 
-         * Given a prime number get the first 64 bits of the fractional 
-         * part of the cube root. 
+        /**
+         * Given a prime number get the first 64 bits of the fractional
+         * part of the cube root.
          */
         String shaConstant(int prime) {
             final var cubeRoot = cbrt(new BigDecimal(prime),BigDecimal.ONE,16);
             // "extract" the fractional by computing modulo 1
             final var fractionalPart = cubeRoot.remainder(BigDecimal.ONE);
-            // To extract the first 64 bits we effectively do a shift-left 
+            // To extract the first 64 bits we effectively do a shift-left
             // by 64 which we simulate by multiplying with 2^64
             final var bits = fractionalPart.multiply(BigDecimal.TWO.pow(64));
-            // to get the HEX representation we use BigInteger's toString 
+            // to get the HEX representation we use BigInteger's toString
             // method as a convenience method
             return bits.toBigInteger().toString(16);
         }
@@ -669,9 +633,9 @@ SHA-512 Verarbeitung eines 1024-Bit-Blocks
 
 .. supplemental::
 
-    .. admonition:: Hinweis
-    
-        *Message Authentication Codes* könnte ins Deutsche mit 
+    .. hint::
+
+        *Message Authentication Codes* könnte ins Deutsche mit
         Nachrichtenauthentifizierungscodes übersetzt werden, dies ist aber nicht üblich.
 
         Im allgemeinen (IT-)Sprachgebrauch wird von *MAC*\ s gesprochen.
@@ -681,7 +645,7 @@ SHA-512 Verarbeitung eines 1024-Bit-Blocks
 HMAC (Hash-based Message Authentication Code)
 ----------------------------------------------
 
-.. container:: small
+.. container::
 
     Auch als *keyed-hash message authentication code* bezeichnet.
 
@@ -694,7 +658,7 @@ HMAC (Hash-based Message Authentication Code)
                 K & \text{andernfalls}
                 \end{cases}
         \end{array}
-    
+
     :math:`H` is eine kryptografische Hashfunktion.
 
     :math:`m` ist die Nachricht.
@@ -721,62 +685,62 @@ HMAC Berechnung visualisiert
 .. image:: drawings/hmac/hmac_i_o_key_derivation.svg
         :alt: Schlüsselableitung für den inneren und äußeren Schlüssel K'
         :align: left
-        :width: 1400px
 
 .. image:: drawings/hmac/hmac_message_hashing.svg
         :alt: Schlüsselableitung für den inneren und äußeren Schlüssel K'
         :align: right
-        :width: 1300px
-        :class: incremental margin-top-1em padding-top-1em
+        :class: incremental
 
 .. supplemental::
 
     **Padding und Hashing**
 
-    Im Rahmen der Speicherung von Passwörtern und *Secret Keys* ist die Verwendung von Padding Operationen bzw. das Hashing von Passwörtern, um Eingaben in einer wohl-definierten Länge zu bekommen, üblich. Neben dem hier gesehenen Padding, bei dem 0x00 Werte angefügt werden, ist zum Beispiel auch das einfache Wiederholen des ursprünglichen Wertes, bis man auf die notwendige Länge kommt, ein Ansatz. 
-    
+    Im Rahmen der Speicherung von Passwörtern und *Secret Keys* ist die Verwendung von Padding Operationen bzw. das Hashing von Passwörtern, um Eingaben in einer wohl-definierten Länge zu bekommen, üblich. Neben dem hier gesehenen Padding, bei dem 0x00 Werte angefügt werden, ist zum Beispiel auch das einfache Wiederholen des ursprünglichen Wertes, bis man auf die notwendige Länge kommt, ein Ansatz.
+
     Diese Art Padding darf jedoch nicht verwechselt werden mit dem Padding, dass ggf. im Rahmen der Verschlüsselung von Nachrichten notwendig ist, um diese ggf. auf eine bestimmte Blockgröße zu bringen (zum Beispiel bei ECB bzw. CBC Block Mode Operations.)
 
 
 
 HMAC Berechnung in Python
 ---------------------------
-    
+
 **Implementierung**
 
 .. code:: python
-    :class: small
+    :class: copy-to-clipboard
+    :number-lines:
 
     import hashlib
     pwd = b"MyPassword"
-    stretched_pwd = pwd + (64-len(pwd)) * b"\x00" 
+    stretched_pwd = pwd + (64-len(pwd)) * b"\x00"
 
-    ikeypad = bytes(map(lambda x : x ^ 0x36 , stretched_pwd)) # xor with ipad 
-    okeypad = bytes(map(lambda x : x ^ 0x5c , stretched_pwd)) # xor with opad 
+    ikeypad = bytes(map(lambda x : x ^ 0x36 , stretched_pwd)) # xor with ipad
+    okeypad = bytes(map(lambda x : x ^ 0x5c , stretched_pwd)) # xor with opad
 
     hash1 = hashlib.sha256(ikeypad+b"JustAMessage").digest()
     hmac  = hashlib.sha256(okeypad+hash1).digest()
 
-    # hmac = 
+    # hmac =
     #        b'\xab\xa0\xd9\xe2\x8ar\xc8\x081\x8e\x1b\x1d,
     #        \x8f\xa6\xd6L\x94\xab\x89\x9a\x89*\xc7\x0f_no\xc1\xdc6\xfc'
 
 .. supplemental::
-    
+
     HMAC ist auch direkt als Bibliotheksfunktion verfügbar.
 
     .. code:: python
-        :class: black
+        :class: copy-to-clipboard
+        :number-lines:
 
         import hashlib
         import hmac
-        
+
         hash_hmac = hmac.new(
             b"MyPassword",
             b"JustAMessage",
             hashlib.sha256).digest()
 
-        hash_hmac = 
+        hash_hmac =
             b'\xab\xa0\xd9\xe2\x8ar\xc8\x081\x8e\x1b\x1d,
             \x8f\xa6\xd6L\x94\xab\x89\x9a\x89*\xc7\x0f_no\xc1\xdc6\xfc'
 
@@ -785,67 +749,64 @@ HMAC Berechnung in Python
 MAC: `Poly 1305 <https://datatracker.ietf.org/doc/html/rfc8439#section-2.5>`__
 --------------------------------------------------------------------------------
 
-.. stack::
+.. deck::
 
-    .. layer::
+    .. card::
 
         - Ein MAC Algorithmus für die Einmalauthentifizierung von Nachrichten.
         - Entwickelt von Daniel J. Bernstein.
         - Basierend auf einem 256-Bit-Schlüssel und einer Nachricht wird ein 128-Bit-Tag berechnet.
         - In Verbindung mit *ChaCha20* in einer Reihe von Protokollen verwendet.
 
-    .. layer:: incremental
+    .. card::
 
         .. image:: drawings/poly1305.svg
            :alt: Poly 1305 - Verwendung des Schlüssels
            :align: center
-           :width: 1775px
 
         .. container:: align-center
 
-            .. rubric:: Aufteilung des Schlüssels 
+            .. rubric:: Aufteilung des Schlüssels
 
-    .. layer:: incremental
+    .. card::
 
         .. rubric:: Verarbeitung der Nachricht
 
-        .. class:: incremental list-with-explanations
+        .. class:: incremental-list list-with-explanations
 
         - initialisiere den Akkumulator :math:`a` mit 0
         - die Nachricht wird in Blöcke von 16 Byte aufgeteilt und als *little-endian* Zahl verarbeitet; d. h. ein Block hat 16 Oktette (:math:`16 \times 8` Bit)
-        - Füge dem Block :math:`n` ein Bit jenseits der Anzahl der Oktette des aktuellen Blocks hinzu :math:`= n'`; d. h. im Falle eines 16-Byte-Blocks wird die Zahl :math:`2^{128}` addiert 
-        
+        - Füge dem Block :math:`n` ein Bit jenseits der Anzahl der Oktette des aktuellen Blocks hinzu :math:`= n'`; d. h. im Falle eines 16-Byte-Blocks wird die Zahl :math:`2^{128}` addiert
+
           (Danach haben wir ggf. eine 17-Byte-Zahl.)
         - Addiere :math:`n'` aus dem letzten Schritt zum Akkumulator :math:`a` und multipliziere mit :math:`\text{clamped r}`
         - Aktualisiere den Akkumulator mit dem Ergebnis :math:`modulo\, P` mit :math:`P = 2^{130} - 5`:
           :math:`a = ((a + n') \times \text{clamped r})\mod P`
 
 
-    .. layer:: incremental
+    .. card::
 
         Beispiel
 
         .. code:: text
-            :class: far-far-smaller
 
             000  43 72 79 70 74 6f 67 72 61 70 68 69 63 20 46 6f  Cryptographic Fo
             016  72 75 6d 20 52 65 73 65 61 72 63 68 20 47 72 6f  rum Research Gro
             032  75 70                                            up
 
-        .. container:: far-far-smaller margin-bottom-1em margin-top-1em
+        .. container::
 
             Sei :math:`\text{clamped r} = 806d5400e52447c036d555408bed685`
 
             Sei :math:`s = 1bf54941aff6bf4afdb20dfb8a800301`
 
-        .. stack:: smaller incremental
+        .. deck:: incremental
 
-            .. layer:: 
-        
+            .. card::
+
                 .. rubric:: Verarbeitung des ersten Blocks
 
                 .. math::
-                    :class: far-far-smaller
 
                     \begin{array}{rr}
                         a      & = & 00 \\
@@ -858,12 +819,11 @@ MAC: `Poly 1305 <https://datatracker.ietf.org/doc/html/rfc8439#section-2.5>`__
                                 2c88c77849d64ae9147ddeb88e69c83fc \\
                     \end{array}
 
-            .. layer:: incremental
-        
+            .. card::
+
                 .. rubric:: Verarbeitung des letzten Blocks
 
                 .. math::
-                    :class: far-far-smaller
 
                     \begin{array}{rr}
                         a      & = & 2d8adaf23b0337fa7cccfb4ea344b30de \\
@@ -876,12 +836,12 @@ MAC: `Poly 1305 <https://datatracker.ietf.org/doc/html/rfc8439#section-2.5>`__
                                 28d31b7caff946c77c8844335369d03a7 \\
                     \end{array}
 
-            .. layer:: incremental far-smaller
+            .. card::
 
                 .. rubric:: Abschuss
 
                 Addiere auf den Wert des Akkumulators :math:`a` den Wert :math:`s`.
-                
+
                 Und somit ist der Tag :math:`2a927010caf8b2bc2c6365130c11d06a8` (als Zahl im little-endian Format).
 
 
@@ -902,16 +862,14 @@ MAC: `Poly 1305 <https://datatracker.ietf.org/doc/html/rfc8439#section-2.5>`__
 Zusammenfassung
 -------------------
 
-.. class:: incremental list-with-explanations
+.. class:: incremental-list list-with-explanations
 
 - Ein Hashwert dient der Integritätssicherung von Nachrichten.
-- Ein Mac dient der Authentifizierung von Nachrichten. 
+- Ein Mac dient der Authentifizierung von Nachrichten.
 - Ein Mac sichert auch immer die Integrität der Nachricht.
-  
+
   Es ist somit möglich die Integrität einer Nachricht zu sichern ohne Authentizität zu gewährleisten, aber nicht umgekehrt.
 - Ein Mac erlaubt es dem Empfänger eine gefälschte Nachricht zu erkennen aber ggf. auch zu erstellen (:eng:`to forge a message`).
-- Eine Signatur basiert auf einem Hashwert und einem privaten Schlüssel. 
-- Der Empfänger kann bei einer signierten Nachricht, diese nicht verändern und als eine Nachricht des Senders ausgeben. 
+- Eine Signatur basiert auf einem Hashwert und einem privaten Schlüssel.
+- Der Empfänger kann bei einer signierten Nachricht, diese nicht verändern und als eine Nachricht des Senders ausgeben.
 - Nur für Nachrichten, die signiert sind, gilt somit die Nichtabstreitbarkeit (:eng:`non-repudation`).
-
-
