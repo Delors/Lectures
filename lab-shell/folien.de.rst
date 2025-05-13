@@ -34,6 +34,13 @@ Eine kurze Wiederholung / Einführung.
 
 
 
+.. class:: new-section
+
+Erste Schritte
+-----------------
+
+
+
 Einloggen auf einem Server
 ----------------------------
 
@@ -220,6 +227,39 @@ Grundlegendes
         - Inahlt einer Datei ansehen: ``cat``, ``less``, ``more``, ...
 
 
+
+Hilfe bekommen
+-----------------
+
+In unixoiden Betriebssystemen gibt es für Kommandozeilentools Insbesondere die folgenden *eingebauten* Hilfemöglichkeiten:
+
+- Hilfe des Programms (typischerweise :console:`--help` oder einfach starten).
+- **Manpages** (mittels :console:`man <Name des Programms>`)
+- Infopages (mittels :console:`info <Name des Programms>`)
+
+.. remark::
+    :class: incremental
+
+    Manpages exisitieren für praktisch alle Kommandozeilenwerkzeuge.
+
+    Die schnelle Hilfe ist insbesondere bei „neueren“ Programmen nicht immer über :console:`--help` verfügbar.
+
+    Je nach Anwendung kann das Starten der Anwendung ohne Parameter dazu führen, dass das Programm auf Eingaben wartet (z. B. :console:`cat`).
+
+
+
+Kommandozeilenprogrammen beenden
+--------------------------------
+
+.. class:: incremental-list
+
+:<ctrl>+c: Programm abbrechen (ggf. unkontrolliert)
+:<ctrl>+d: Eingabe abschließen bzw. Ende der Eingabe
+:`kill <PID>`:console:: Mittels des Befehls :console:`kill` lässt sich das Progrmm auch beenden. Erfordert ggf. dass man einen zweiten Terminal startet um die PID zu ermitteln (zum Beispiel mittels :console:`top` oder :console:`ps`):
+
+
+
+
 .. class:: exercises
 
 Übung - Starten eines kleinen WebServers
@@ -274,6 +314,42 @@ Grundlegendes
         Die zu verwendende URL ist:
 
         http://141.72.12.103:8888
+
+
+.. class:: exercises
+
+Übung - Daten transferieren
+-----------------------------------------
+
+.. exercise:: Secure Copy (scp) nutzen zum Kopieren
+    :formatted-title: Secure Copy (:console:`scp`) nutzen
+
+    Nutzen Sie das Programm :console:`scp`, um eine HTML Datei von Ihrem lokalen Rechner auf den Zielserver zu kopieren.
+
+    1. Nutzen Sie die Hilfe zu :console:`scp`, um herauszufinden wie Sie eine Datei auf den Server in das richtige Verzeichnis kopieren können.
+    2. Öffnen Sie Ihren Browser, um zu prüfen, dass Sie auf die kopierte Webseite zugreifen können.
+
+    .. solution::
+        :pwd: scp...verstehen
+
+        .. rubric:: Verwendung von :console:`scp` bei Verwendung eines Identity-Files.
+
+        Kopiert die lokale Datei ``tips.md`` in das Rootverzeichnis auf dem Server.
+
+        .. code:: bash
+
+            scp -i lectures_stack_dhbw_cloud tips.md eichberg@141.72.12.103:~
+
+        .. remark::
+
+            Wird der -i Parameter weggelassen, dann wird nach dem Passwort gefragt.
+
+
+
+.. class:: new-section transition-move-to-top
+
+(Text-)Dateien und Ihre Bearbeitung
+--------------------------------------
 
 
 
