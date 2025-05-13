@@ -7,7 +7,7 @@
     :id: lecture-theo-mixed_integer_programming
     :first-slide: last-viewed
     :master-password: WirklichSchwierig!
-    
+
 .. include:: ../docutils.defs
 
 
@@ -20,7 +20,7 @@
     :prefix: https://delors.github.io/
 
 
-.. class:: animated-symbol 
+.. class:: animated-symbol
 
 Lineare und Mixed-Integer Programmierung
 ======================================================
@@ -35,15 +35,15 @@ Lineare und Mixed-Integer Programmierung
 
 .. container:: minor
 
-    :Quelle: 
-       
+    :Quelle:
+
        Introduction to Algorithms, 3rd Edition, Cormen, Leiserson, Rivest, Stein, MIT Press, 2009
 
 .. supplemental::
 
-    :Folien: 
-        
-        |html-source| 
+    :Folien:
+
+        |html-source|
 
         |pdf-source|
 
@@ -68,18 +68,18 @@ Beispielszenario: Kostenoptimierung
 
     Seien :math:`x_1` und :math:`x_2` die Menge an Nahrungsmitteln 1 und 2, die wir kaufen. :incremental:`Die Kosten für Nahrungsmittel 1 und 2 betragen 1 und 2 Euro pro Einheit.` :incremental:`Die täglichen Ernährungsbedürfnisse sind 10 Einheiten Protein und 20 Einheiten Fett.` :incremental:`Nahrungsmittel 1 enthält 2 Einheiten Protein und 3 Einheiten Fett pro Einheit. Nahrungsmittel 2 enthält 1 Einheit Protein und 4 Einheiten Fett pro Einheit.`
 
-    .. incremental:: 
+    .. container:: incremental
 
         .. rubric:: Zielfunktion (:eng:`objective function` oder einfach nur :eng:`objective`)
 
         .. math::
 
             \text{minimiere }x_1 \cdot 1\text{€} + x_2 \cdot 2\text{€}
-            
+
         .. rubric:: (unter den) Nebenbedingungen (:eng:`constraints`/:eng:`subject to (s.t.)`)
 
         .. math::
-            
+
             \begin{array}{rcll}
             2 \cdot x_1 + 1 \cdot x_2 & \geq & 10 & \text{Nebenbedingung bzgl. Protein}\\
             3 \cdot x_1 + 4 \cdot x_2 & \geq & 20 & \text{Nebenbedingung bzgl. Fett}\\
@@ -104,7 +104,7 @@ Lineare Programmierung
         f(x_1,\ldots,x_n) = a_1 \cdot x_1 + a_2 \cdot x_2 + \ldots + a_n \cdot x_n = \sum_{i=1}^{n} a_i \cdot x_i
 
     Unter einer Menge von linearen Nebenbedingungen. Sei :math:`b \in \mathbb{R}`, dann ist ...
-    
+
     - eine *lineare Ungleichung* der Form: :math:`f(x_1,\ldots,x_n) \leq b`
     - eine *lineare Gleichung* der Form: :math:`f(x_1,\ldots,x_n) = b`
     - lineare Ungleichungen und Gleichungen beschreiben die *linearen Nebenbedingungen*.
@@ -114,9 +114,9 @@ Lineare Programmierung
 Lösen von linearen Optimierungsproblemen
 ------------------------------------------
 
-.. stack:: invisible 
-   
-    .. layer:: 
+.. stack:: invisible
+
+    .. layer::
 
         .. container:: two-columns
 
@@ -128,12 +128,12 @@ Lösen von linearen Optimierungsproblemen
 
                 .. math::
 
-                        x_1 + x_2 
+                        x_1 + x_2
 
                 **Nebenbedingungen**
 
                 .. math::
-                
+
                         \begin{array}{rrcr}
                         4 x_1 & - &   x_2 & \leq & 8 \\
                         2 x_1 & + &   x_2 & \leq & 10 \\
@@ -146,7 +146,7 @@ Lösen von linearen Optimierungsproblemen
 
                 .. stack:: invisible
 
-                    .. layer:: 
+                    .. layer::
 
                         .. image:: images/lp-constraints.svg
                             :align: center
@@ -158,7 +158,7 @@ Lösen von linearen Optimierungsproblemen
                             :align: center
                             :height: 925px
 
-    .. layer:: incremental 
+    .. layer:: incremental
 
         .. rubric:: Schlupfform (:eng:`Slack Form`) - „nur“ Verwendung von linearen Gleichungen
 
@@ -166,15 +166,15 @@ Lösen von linearen Optimierungsproblemen
 
         .. math::
 
-                x_1 + x_2 
+                x_1 + x_2
 
-        .. container:: incremental 
+        .. container:: incremental
 
             **unter den Nebenbedingungen**
 
             .. math::
                 :class: text-align-left left align-left
-            
+
                     \begin{array}{rcrcrcr}
                     x_3 & = &  8 & - & 4x_1 & + & x_2  \\
                     x_4 & = & 10 & - & 2x_1 & - & x_2  \\
@@ -185,8 +185,8 @@ Lösen von linearen Optimierungsproblemen
         .. container:: incremental smaller
 
             Die Variablen :math:`x_3`, :math:`x_4` und :math:`x_5` sind die Schlupfvariablen. Sie messen die Differenz zwischen der linken und der rechten Seite der Ungleichungen und sind nicht Teil der Zielfunktion.
-            
-           
+
+
 
 .. supplemental::
 
@@ -201,7 +201,7 @@ Lösen von linearen Optimierungsproblemen
 
     .. container:: minor smaller
 
-        :Affine Unabhängigkeit: 
+        :Affine Unabhängigkeit:
 
             Zwei Punkte sind affin unabhängig, wenn die Differenz der beiden Punkte nicht durch einen Skalarfaktor auf den anderen Punkt abgebildet werden kann. (Im 2-D Raum: Die beiden Punkte liegen nicht auf einer Geraden, wenn die beiden Punkte als entsprechende Vektoren aufgefasst werden.)
 
@@ -210,7 +210,7 @@ Lösen von linearen Optimierungsproblemen
 
 .. class:: integrated-exercise transition-scale
 
-Übung\ [#]_ 
+Übung\ [#]_
 --------------
 
 .. exercise:: Formulierung eines linearen Programms
@@ -271,9 +271,9 @@ Lösen von linearen Optimierungsproblemen
 
         .. container:: smaller incremental
 
-            Sie können die vereinfachende Annahme machen, dass die Summe der Zuflüsse  zur Quelle :math:`0`  ist (:math:`\sum_{v\in V} f_{vs} = 0`); dass die Quelle keine eingehenden Kanten hat. Weiterhin sei die Kapazität zwischen zwei nicht-verbundenen Knoten :math:`0`.   
+            Sie können die vereinfachende Annahme machen, dass die Summe der Zuflüsse  zur Quelle :math:`0`  ist (:math:`\sum_{v\in V} f_{vs} = 0`); dass die Quelle keine eingehenden Kanten hat. Weiterhin sei die Kapazität zwischen zwei nicht-verbundenen Knoten :math:`0`.
 
-    .. solution:: 
+    .. solution::
         :pwd: G(V,E)
 
         **Lösung**
@@ -295,17 +295,17 @@ Lösen von linearen Optimierungsproblemen
 
     .. image:: images/max-flow/capacities.svg
         :align: center
-        :width: 800px  
+        :width: 800px
 
     Eine (nicht notwendigerweise optimale) Lösung, die die Nebenbedingungen erfüllt:
 
     .. image:: images/max-flow/flows.svg
         :align: center
-        :width: 800px  
+        :width: 800px
 
     **Im  Allgemeinen gilt**
 
-    Das Netzwerk ist modelliert als gerichteter Graph :math:`G = (V,E`) ohne Eigenschleifen und ohne antiparallele Kanten (d. h. :math:`(v,u) \in E \Rightarrow (u,v) \notin E`). Jeder Kante :math:`(u,v) \in E` ist eine nicht-negative Kapazität :math:`c(u,v) \geq 0` zugeordnet. 
+    Das Netzwerk ist modelliert als gerichteter Graph :math:`G = (V,E`) ohne Eigenschleifen und ohne antiparallele Kanten (d. h. :math:`(v,u) \in E \Rightarrow (u,v) \notin E`). Jeder Kante :math:`(u,v) \in E` ist eine nicht-negative Kapazität :math:`c(u,v) \geq 0` zugeordnet.
 
     Sei :math:`(u,v) \notin E`, dann ist :math:`c(u,v) = 0`.
 
@@ -314,14 +314,14 @@ Lösen von linearen Optimierungsproblemen
 
     1. Bestimmen Sie die Zielfunktion in Hinblick auf den Fluss bzw. der Variablen, die den Fluss repräsentieren.
     2. Formulieren Sie die Nebenbedingungen:
-    
+
        1. in Hinblick darauf, dass der Fluss über eine Kante nie negativ sein darf
        2. in Bezug auf die Kanten und die Kapazitäten
        3. in Bezug auf die Kapazitätserhaltung
 
 .. class:: new-section transition-fade
 
-Simplex Algorithmus 
+Simplex Algorithmus
 ---------------------------------
 
 
@@ -332,10 +332,10 @@ Simplex Algorithmus - Einführung
 
 - Der Simplex-Algorithmus ist ein Algorithmus zur Lösung von linearen Optimierungsproblemen.
 - Der Algorithmus wurde von George Dantzig entwickelt und 1947 veröffentlicht.
-- Der Simplex-Algorithmus ist ein iteratives Verfahren, das in der Regel sehr effizient ist 
+- Der Simplex-Algorithmus ist ein iteratives Verfahren, das in der Regel sehr effizient ist
 
   Im Regelfall polynomielle Laufzeit, im Worst-case jedoch exponentiell.
-- Der Simplex-Algorithmus ist ein Beispiel für einen Algorithmus, der auf einem Netzwerk von Kanten operiert. 
+- Der Simplex-Algorithmus ist ein Beispiel für einen Algorithmus, der auf einem Netzwerk von Kanten operiert.
 
   Der Simplex-Algorithmus bewegt sich systematisch entlang der Ecken (:eng:`Vertices`) des Bereichs, der die zulässigen Lösungen des linearen Programms beschreibt, um die optimale Lösung zu finden. Er terminiert, wenn er das lokale Optimum erreicht hat. :incremental:`Aufgrund der konvexen Natur des Problems ist das lokale Optimum gleichzeitig das globale Optimum.`
 
@@ -350,7 +350,7 @@ Standardform
 
 .. container:: scrollable
 
-    Gegeben sein :math:`n` reelle Zahlen :math:`(c_1,...,c_n`); :math:`m` reelle Zahlen (:math:`b_1,...,b_m`); und eine :math:`m \times n` Matrix :math:`A = (a_{ij})` für :math:`i = 1,2,...m` und :math:`j = 1,2,...n`. 
+    Gegeben sein :math:`n` reelle Zahlen :math:`(c_1,...,c_n`); :math:`m` reelle Zahlen (:math:`b_1,...,b_m`); und eine :math:`m \times n` Matrix :math:`A = (a_{ij})` für :math:`i = 1,2,...m` und :math:`j = 1,2,...n`.
 
     Wir möchten nun :math:`n` reelle Zahlen :math:`(x_1,...,x_n)` finden, die die folgenden Bedingungen erfüllen:
 
@@ -370,7 +370,7 @@ Standardform
         x_j & \geq & 0 & \text{für } j = 1,2,...,n
         \end{array}
 
-    .. incremental::
+    .. container:: incremental
 
         .. rubric:: Kompakte Darstellung
 
@@ -384,7 +384,7 @@ Standardform
             & x & \geq & 0
             \end{array}
 
-    .. incremental::
+    .. container:: incremental
 
         .. rubric:: Terminologie
 
@@ -393,7 +393,7 @@ Standardform
         :unbeschränkt: Ein lineares Programm, dass Lösungen hat, die die Zielfunktion nicht beschränken.
         :unzulässig/`infeasible`:eng:: Ein lineares Programm, dass keine zulässige Lösung hat.
 
-    .. incremental::
+    .. container:: incremental
 
         .. rubric::  Konvertierung von beliebigen linearen Programmen in die Standardform
 
@@ -403,8 +403,8 @@ Standardform
         - Es gibt Variablen ohne Nichtnegativitätsbedingung
         - Es gibt Gleichungen (:math:`=`)
         - Es gibt Ungleichungen mit :math:`\geq` statt :math:`\leq`
-        
-    .. incremental:: 
+
+    .. container:: incremental
 
         *Regeln*
 
@@ -426,7 +426,7 @@ Standardform
 .. class:: integrated-exercise transition-move-to-top
 
 Übung
-------- 
+-------
 
 .. exercise:: Überführen Sie das lineare Programm in Standardform.
 
@@ -442,7 +442,7 @@ Standardform
 
     .. solution::
         :pwd: QuickFix
-        
+
         :math:`x_2` wurde durch :math:`x_2` und :math:`x_3` nach Regel 2 ersetzt.
 
         .. math::
@@ -480,9 +480,9 @@ Standardform
 
             \begin{array}{rrcrcl}
             & x_1 & + & x_2 & \leq & 2 \\
-            & x_1 & + & x_2 & \geq & 5 \\   
+            & x_1 & + & x_2 & \geq & 5 \\
             \end{array}
-        
+
         Und somit unmittelbar einen Widerspruch (Alternativ: Ungleichungen in einander einsetzen führt zum Widerspruch).
 
 
@@ -491,24 +491,24 @@ Schlupfform (:eng:`Slack Form`)
 ----------------------------------
 
 .. container:: scrollable
-    
-    - Zum effizienten Lösung von linearen Programmen wird die Schlupfform verwendet. 
+
+    - Zum effizienten Lösung von linearen Programmen wird die Schlupfform verwendet.
     - Bei der Schlupfform werden alle Nebenbedingungen in Gleichungen umgewandelt - abgesehen von den Nichtnegativitätsbedingungen.
 
       .. container:: box-shadow padding-0-5em rounded-corners smaller
-        
+
         .. rubric:: Vorgehen
 
         Gegeben sei *eine* Ungleichung:
 
         .. container:: math
-            
+
             \\[
             \\begin{align}
             \\textstyle\\sum_{j=1}^{n} a_{ij} \\cdot x_j \\leq b_i \\tag{1}
             \\end{align}
             \\]
-        
+
         Wir führen dann eine Schlupfvariable (:eng:`slack variable`) :math:`x_{n+i}` ein und erhalten:
 
         .. container:: math
@@ -518,7 +518,7 @@ Schlupfform (:eng:`Slack Form`)
             \\textstyle x_{n+1} = b_i - \\sum_{j=1}^{n} a_{ij} \\cdot x_j  \\tag{2}
             \\end{equation}
             \\]
-            
+
             \\[
             \\begin{equation}
             x_{n+1} \\geq 0 \\tag{3}
@@ -527,25 +527,25 @@ Schlupfform (:eng:`Slack Form`)
 
     .. class:: incremental
 
-    - Somit stehen die Variablen :math:`x_1,...,x_n` für die ursprünglichen Variablen und die Variablen :math:`x_{n+1},...,x_{n+m}` für die Schlupfvariablen. 
+    - Somit stehen die Variablen :math:`x_1,...,x_n` für die ursprünglichen Variablen und die Variablen :math:`x_{n+1},...,x_{n+m}` für die Schlupfvariablen.
     - Auf der rechten Seite der Gleichung :math:`(2)` stehen die ursprünglichen Variablen. Nur diese Variablen sind (initial) Teil der Zielfunktion.
-      
+
       :Basisvariablen: Die Variablen auf der linken Seite der Gleichung :math:`(2)`.
       :Nichtbasisvariablen: Die Variablen auf der rechten Seite der Gleichung :math:`(2)`.
     - Für den Wert der Zielfunktion verwenden wir die Variable :math:`z`.
     - Im Folgenden gilt:
-      
+
       :`N`:math:: die Menge der Indizes der Nichtbasisvariablen
       :`B`:math:: die Menge der Indizes der Basisvariablen
       :`v`:math:: ein optionaler konstanter Term in der Zielfunktion
 
       :math:`|N| = n`, :math:`|B| = m` und :math:`N \cup B = {1, ..., n + m }`
-       
+
       Somit ist die kompakte Darstellung des linearen Programms in Schlupfform:
 
       .. math::
 
-        \begin{array}{rcrcl}        
+        \begin{array}{rcrcl}
             z     & = &   v & + & \sum_{j \in N} c_j \cdot x_j \\
             x_{i} & = & b_i & - & \sum_{j \in N} a_{ij} \cdot x_j \quad \text{für } i \in B\\
         \end{array}
@@ -553,7 +553,7 @@ Schlupfform (:eng:`Slack Form`)
 
 .. supplemental::
 
-    Diese Schlupfvariable (:math:`x_{n+1}`) misst die Differenz zwischen der linken und der rechten Seite der Ungleichung (1). 
+    Diese Schlupfvariable (:math:`x_{n+1}`) misst die Differenz zwischen der linken und der rechten Seite der Ungleichung (1).
 
 
 Schlupfform - Beispiel
@@ -561,10 +561,10 @@ Schlupfform - Beispiel
 
 .. container:: smaller
 
-    .. container:: 
+    .. container::
 
         .. rubric::  Gegebenes lineares Programm
-    
+
         .. math::
 
             \begin{array}{rrcrcl}
@@ -577,25 +577,25 @@ Schlupfform - Beispiel
 
     .. container:: incremental
 
-        .. rubric::  Gegebenes lineares Programm in Schlupfform 
+        .. rubric:: Gegebenes lineares Programm in Schlupfform
 
         Wir führen die Schlupfvariablen :math:`x_4`, :math:`x_5` und :math:`x_6` ein mit der Nebenbedingung: :math:`x_4, x_5, x_6 \geq 0`.
 
         .. math::
-            
+
                 \begin{array}{rrcrcl}
                 \text{maximiere}     &  z & = &    & & 3x_1 & + &  x_2 & + & 2x_3 \\
                 \text{unter den Nebenbedingungen}    &x_4 & = & 30 & - &  x_1 & - &  x_2 & - & 3x_3 \\
                                 &x_5 & = & 24 & - & 2x_1 & - & 2x_2 & - & 5x_3 \\
                                 &x_6 & = & 36 & - & 4x_1 & - &  x_2 & - & 2x_3 \\
                 \end{array}
-    
+
 
 
 .. class:: integrated-exercise transition-move-to-top
 
 Übung
-------- 
+-------
 
 .. exercise:: Überführen eines linearen Programms in Schlupfform
 
@@ -638,7 +638,7 @@ Schlupfform - Beispiel
     .. solution::
         :pwd: Grenzen waren gestern
 
-        Durch 
+        Durch
 
         .. image:: images/lp-exercise-solution-unbounded.svg
             :align: center
@@ -659,18 +659,18 @@ Schlupfform - Beispiel
 
     .. class:: incremental list-with-explanations
 
-    1. Wir wählen immer eine Variable, die in der Zielfunktion vorkommt und einen positiven Koeffizienten hat. 
+    1. Wir wählen immer eine Variable, die in der Zielfunktion vorkommt und einen positiven Koeffizienten hat.
 
        (D. h. wir wählen eine Variable deren Erhöhung die Zielfunktion maximiert.)
-    2. Dann bestimmen wir die Ungleichung, die die Maximierung der gewählten Variable am stärksten einschränkt. 
+    2. Dann bestimmen wir die Ungleichung, die die Maximierung der gewählten Variable am stärksten einschränkt.
     3. Wir „tauschen“ die Variable mit der Schlupfvariablen, die in dieser Ungleichung vorkommt und lösen die Gleichung nach der gewählten Variable auf.
     4. Wir setzen dann die umgestellte Gleichung in alle anderen Gleichungen (inkl. Zielfunktion) ein, um die Werte der anderen Variablen zu bestimmen.
 
-    .. incremental::
-    
+    .. container:: incremental
+
         Wir nennen diesen Prozess (1-4) „Pivot Operation“.
 
-    .. incremental::
+    .. container:: incremental
 
         Wir wiederholen diesen Prozess, bis wir keine Variable mehr finden, die die Zielfunktion maximiert. An dieser Stelle können wir dann das Optimum und die Werte für die Variablen (:math:`x_i,...,x_{n+m}`) ablesen.
 
@@ -685,33 +685,33 @@ Simplex anwenden
 
 .. container:: scrollable
 
-    .. rubric::  Gegebenes lineares Programm in Schlupfform 
+    .. rubric:: Gegebenes lineares Programm in Schlupfform
 
     Wir führen die Schlupfvariablen :math:`x_4`, :math:`x_5` und :math:`x_6` ein mit der Nebenbedingung: :math:`x_4, x_5, x_6 \geq 0`.
 
     .. math::
-        
+
             \begin{array}{rrcrcr}
             \text{maximiere}     &  z & = &    & & 3x_1 & + &  x_2 & + & 2x_3 \\
             \text{unter den Nebenbedingungen}    &x_4 & = & 30 & - &  x_1 & - &  x_2 & - & 3x_3 \\
                             &x_5 & = & 24 & - & 2x_1 & - & 2x_2 & - & 5x_3 \\
                             &x_6 & = & 36 & - & 4x_1 & - &  x_2 & - & 2x_3 \\
             \end{array}
-    
+
     .. class:: incremental
-    
+
     - Wir können die Zielfunktion maximieren, indem wir die Variable der Zielfunktion mit dem größten positiven Koeffizienten wählen: :math:`x_1`.
-    - Wir prüfen welche Nebenbed. die Maximierung von :math:`x_1` am stärksten einschränkt: 
-    
-      1. Nebenbed.: :math:`x_1\leq 30`, 2. Nebenbed.: :math:`x_1\leq 12` und 3. Nebenbed.: :math:`x_1\leq 9` 
+    - Wir prüfen welche Nebenbed. die Maximierung von :math:`x_1` am stärksten einschränkt:
+
+      1. Nebenbed.: :math:`x_1\leq 30`, 2. Nebenbed.: :math:`x_1\leq 12` und 3. Nebenbed.: :math:`x_1\leq 9`
     - Die (nicht-Basis)Variable :math:`x_1` wird somit durch die Schlupfvariable/Basisvariable :math:`x_6` ersetzt:
-      
-      .. math:: 
+
+      .. math::
 
         4x_1 = 36 - x_6 - x_2 - 2x_3  \Rightarrow x_1 = 9 - \frac{1}{4}x_6 - \frac{1}{4}x_2 - \frac{1}{2}x_3
 
     - Wir setzen :math:`x_1` in die Zielfunktion und die anderen Nebenbedingungen ein und erhalten:
-    
+
       :math:`x_4 = 30 - (9 - \frac{1}{4}x_6 - \frac{1}{4}x_2 - \frac{1}{2}x_3) - x_2 - 3x_3`
 
       :math:`x_4 = 21 + \frac{1}{4}x_6 - \frac{3}{4}x_2 - \frac{5}{2}x_3`
@@ -719,21 +719,21 @@ Simplex anwenden
     - Ergebnis
 
       .. math::
-      
+
             \begin{array}{rrrcrcrcr}
             z & = & 27 & - & \frac{3}{4}x_6 & + & \frac{1}{4}x_2 & + & \frac{1}{2}x_3 \\
             x_1 & = & 9 & - & \frac{1}{4}x_6 & - & \frac{1}{4}x_2 & - & \frac{1}{2}x_3 \\
             x_4 & = & 21 & + & \frac{1}{4}x_6 & - & \frac{3}{4}x_2 & - & \frac{5}{2}x_3 \\
             x_5 & = & 6 & + & \frac{1}{2}x_6 & - & \frac{3}{2}x_2 & - & 4x_3 \\
             \end{array}
-      
+
       :incremental:`Diese Operation wird als Pivot Operation bezeichnet.`
     - Im nächsten Schritt könnten wir :math:`x_3` wählen, da es den größten positiven Koeffizienten hat. Da die dritte Nebenbedingung die Maximierung von :math:`x_3` am stärksten einschränkt, würden wir :math:`x_3` durch die Schlupfvariable :math:`x_5` ersetzen.
 
     - Ergebnis
 
       .. math::
-      
+
             \begin{array}{rrrcrcrcr}
             z   & = & \frac{111}{4} & + & \frac{1}{16}x_2 & - & \frac{1}{8}x_5 & - & \frac{11}{16}x_6 \\
             x_1 & = & \frac{33}{4} & - & \frac{1}{16}x_2 & + & \frac{1}{8}x_5 & - & \frac{5}{16}x_6 \\
@@ -746,7 +746,7 @@ Simplex anwenden
     - Ergebnis
 
       .. math::
-      
+
             \begin{array}{rrrcrcrcr}
             z   & = & 28 & - & \frac{1}{6}x_3 & - & \frac{1}{6}x_5 & - & \frac{2}{3}x_6 \\
             x_1 & = &  8 & + & \frac{1}{6}x_3 & + & \frac{1}{6}x_5 & - & \frac{1}{3}x_6 \\
@@ -756,7 +756,7 @@ Simplex anwenden
 
     - Die Basislösung ist: :math:`(8,4,0,18,0,0)` und der Wert der Zielfunktion ist :math:`28`.
 
-    - Eine weitere Verbesserung der Zielfunktion ist nicht möglich. Die Basislösung ist somit unsere optimale Lösung. 
+    - Eine weitere Verbesserung der Zielfunktion ist nicht möglich. Die Basislösung ist somit unsere optimale Lösung.
 
 .. supplemental::
 
@@ -769,14 +769,14 @@ Simplex anwenden
 
 
 
-Simplex Algorithmus 
+Simplex Algorithmus
 ------------------------
 
 .. code:: pascal
     :number-lines:
     :class: slightly-more-smaller
 
-    Algorithm Simplex(A,b,c): 
+    Algorithm Simplex(A,b,c):
         (N,B,A,b,c,v) := InitialisiereSimplex(A,b,c)
         sei Δ ein Vektor der Länge m
         while ∃ j ∈ N mit c_j > 0 do
@@ -793,10 +793,10 @@ Simplex Algorithmus
                 x_i := 0
         return (x_1,...,x_n)
 
-.. supplemental:: 
+.. supplemental::
 
     .. rubric:: InitialisiereSimplex(A,b,c)
-     
+
     Falls das LP lösbar ist, dann gib das LP in Schlupfform zurück, in der die initiale Basislösung zulässig ist.
 
     Wir werden uns im Rahmen dieses Kurses nicht weiter mit der Implementierung des Simplex-Algorithmus beschäftigen. Es ist jedoch wichtig, dass Sie die Funktionsweise des Algorithmus verstehen.
@@ -820,7 +820,7 @@ Simplex Algorithmus
                                             & 2x_1  & + & x_2   & \leq & 12 \\
                                             & 2x_1  & + & 3x_2  & \leq & 18 \\
                                             &  x_1, & x_2 &     & \geq & 0
-        \end{array}        
+        \end{array}
 
     .. solution::
         :pwd: 270_ist_der_Wert
@@ -834,7 +834,7 @@ Simplex Algorithmus
             x_3 & = &  8    & - &  x_1  & - &  x_2  \\
             x_4 & = & 12    & - & 2x_1  & - &  x_2  \\
             x_5 & = & 18    & - & 2x_1  & - & 3x_2  \\
-            \end{array} 
+            \end{array}
 
         Wir können jetzt :math:`x_1` oder :math:`x_2` wählen, da beide in der Zielfunktion vorkommen und positive Koeffizienten haben. Wir wählen :math:`x_2` und versuchen :math:`x_2` zu maximieren. Da der maximale Wert, den :math:`x_2` annehmen kann, für die dritte Ungleichung (:math:`6`) am geringsten ist (in den anderen Fällen wäre es der Wert :math:`8` bzw. :math:`12`), tauschen wir :math:`x_2` und :math:`x_5`.
 
@@ -867,7 +867,7 @@ Simplex Algorithmus
 
             \begin{array}{rcrcrcr}
             \frac{4}{3}x_1 & = &           6 & - &            x_4 & + & \frac{1}{3}x_5 \\
-                       x_1 & = & \frac{9}{2} & - & \frac{3}{4}x_4 & + & \frac{1}{4}x_5 \\ 
+                       x_1 & = & \frac{9}{2} & - & \frac{3}{4}x_4 & + & \frac{1}{4}x_5 \\
             \end{array}
 
         Nach dem Einsetzen von :math:`x_1` in die Zielfunktion und die anderen Nebenbedingungen erhalten wir:
@@ -885,11 +885,11 @@ Simplex Algorithmus
             x_2 & = &              6 & - & \frac{2}{3}(\frac{9}{2} & - & \frac{3}{4}x_4  & + & \frac{1}{4}x_5) & - & \frac{1}{3}x_5  \\
             x_2 & = &              6 & - &                       3 & + & \frac{1}{2}x_4  & - &  \frac{1}{6}x_5 & - & \frac{1}{3}x_5  \\
             x_2 & = &              3 & + &          \frac{1}{2}x_4 & - & \frac{1}{2} x_5 \\
-            x_1 & = &    \frac{9}{2} & - &          \frac{3}{4}x_4 & + & \frac{1}{4}x_5  \\ 
+            x_1 & = &    \frac{9}{2} & - &          \frac{3}{4}x_4 & + & \frac{1}{4}x_5  \\
             \end{array}
 
-        Somit ist die Lösung (eine Maximierung der Zielfunktion ist nicht mehr möglich!): :math:`x_1 = \frac{9}{2}`, :math:`x_2 = 3`, :math:`x_3 = \frac{1}{2}`, :math:`x_4 = 0`, :math:`x_5 = 0` und :math:`z = 270`. 
-        
+        Somit ist die Lösung (eine Maximierung der Zielfunktion ist nicht mehr möglich!): :math:`x_1 = \frac{9}{2}`, :math:`x_2 = 3`, :math:`x_3 = \frac{1}{2}`, :math:`x_4 = 0`, :math:`x_5 = 0` und :math:`z = 270`.
+
         .. container:: minor
 
             (Ein Einsetzen der Wert für :math:`x_1` und :math:`x_2` in die Originalzielfunktion bestätigt das Ergebnis (:math:`270`) und das Einsetzen bestätigt auch das Einhalten der Nebenbedingungen.)
@@ -917,12 +917,12 @@ MIP: einige (oder alle) Variablen sind ganzzahlig
 
             .. math::
 
-                    x_1 + x_2 
+                    x_1 + x_2
 
             **Nebenbedingungen**
 
             .. math::
-            
+
                     \begin{array}{rcrcl}
                     4 x_1 & - &   x_2 & \leq & 8 \\
                     2 x_1 & + &   x_2 & \leq & 10 \\
@@ -946,12 +946,12 @@ MIP: einige (oder alle) Variablen sind ganzzahlig
 
             .. math::
 
-                    x_1 + x_2 
+                    x_1 + x_2
 
             **Nebenbedingungen**
 
             .. math::
-            
+
                     \begin{array}{rcrcrl}
                     4 x_1 & - &   x_2 & \leq & 8 \\
                     2 x_1 & + &   x_2 & \leq & 10,5 \\
@@ -969,12 +969,12 @@ MIP: einige (oder alle) Variablen sind ganzzahlig
 
 
 
-    .. hint:: 
+    .. hint::
         :class: incremental
 
         Durch die Einschränkung, dass die Variablen ganzzahlig sein müssen, wird das Problem schwieriger zu lösen und ist NP-schwer, während das lineare Programm in polynomieller Zeit gelöst werden kann.
 
-    .. incremental:: rounded-corners box-shadow padding-1em dhbw-dark-gray-background white
+    .. container:: incremental rounded-corners box-shadow padding-1em dhbw-dark-gray-background white
 
         Zur Lösung von MIPs gibt es verschiedene Ansätze, wie z. B. den Branch-and-Bound-Algorithmus, bzw. Branch-and-Cut-Algorithmus. Häufig werden in der Praxis auch Kombinationen von Algorithmen eingesetzt, die auf dem Simplex-Algorithmus basieren.
 
@@ -994,7 +994,7 @@ Fokussierung auf Lösungsstrategien
 
 .. container:: dhbw-dark-gray-background white box-shadow padding-1em rounded-corners
 
-    Wir konzentrieren uns im Folgenden darauf für konkrete Probleme, ganzzahlige Programme zu entwickeln. Wir betrachten die zugrunde liegenden Algorithmen nicht. 
+    Wir konzentrieren uns im Folgenden darauf für konkrete Probleme, ganzzahlige Programme zu entwickeln. Wir betrachten die zugrunde liegenden Algorithmen nicht.
 
 
 
@@ -1017,9 +1017,9 @@ Binärvariablen oder ganzzahlige Variablen?
 
         Wir verwenden :math:`81` Integer Variablen :math:`1 ≤ y_i ≤ 9`.
 
-        .. incremental::
+        .. container:: incremental
 
-            Und jetzt? 
+            Und jetzt?
 
 .. container:: incremental
 
@@ -1043,9 +1043,9 @@ Problembeschreibung: SEND+MORE=MONEY\ [#]_
 - Klassisches Problem der Kryptographie
 - Jeder Buchstabe repräsentiert eine Ziffer von 0 bis 9
 - Keine Ziffer darf doppelt vorkommen
-  
-  :: 
-    
+
+  ::
+
       S E N D
     + M O R E
     ---------
@@ -1053,7 +1053,7 @@ Problembeschreibung: SEND+MORE=MONEY\ [#]_
 
 - Welcher Buchstabe steht für welchen Wert?
 
-.. [#] Mit Hilfe von (Mixed-)Integer-Programmierung lässt sich dieses Problem schnell lösen. 
+.. [#] Mit Hilfe von (Mixed-)Integer-Programmierung lässt sich dieses Problem schnell lösen.
 
 
 
@@ -1062,36 +1062,36 @@ Lösung des Rätsels: SEND+MORE=MONEY
 
 .. stack::
 
-    .. layer:: 
+    .. layer::
 
-        :Initiale Idee: 
+        :Initiale Idee:
 
             - Jeder Buchstabe wird durch eine Variable repräsentiert, die auf den Wertebereich 0 bis 9 beschränkt ist.
             - Die Gleichung (zum Optimieren) wird dann wie folgt dargestellt:
-            
-              .. math::  
+
+              .. math::
 
                 \begin{array}{rrrrr}
                     & 1000 \cdot S + & 100 \cdot E + & 10 \cdot N + & D &+  \\
                     & 1000 \cdot M + & 100 \cdot O + & 10 \cdot R + & E & = \\
                     10000 \cdot M + & 1000 \cdot O + & 100 \cdot N + & 10 \cdot E + & Y &
                 \end{array}
-              
+
         .. class:: incremental
 
         :Ergebnis: Alle Variablen bekommen den Wert „0“ zugewiesen.
-            
+
 
     .. layer:: incremental
 
         :Herausforderung:
-            Wir müssen die Nebenbedingungen formulieren, die sicherstellen, dass die Variablen die Werte 0 bis 9 annehmen und dass keine Ziffer doppelt vorkommt. 
-        
-        .. class:: incremental
-            
-        :Problem: Es ist nicht direkt möglich eine mathematische Formulierung zu finden, die die Nebenbedingungen beschreibt. 
+            Wir müssen die Nebenbedingungen formulieren, die sicherstellen, dass die Variablen die Werte 0 bis 9 annehmen und dass keine Ziffer doppelt vorkommt.
 
-        .. class:: incremental            
+        .. class:: incremental
+
+        :Problem: Es ist nicht direkt möglich eine mathematische Formulierung zu finden, die die Nebenbedingungen beschreibt.
+
+        .. class:: incremental
 
         :Lösungsansatz (häufiger Ansatz bei „\ *Set-Partitioning-Problems*\ “):
             - Jeder Variablen ([S, E, N, D, M, O, R, Y]) werden jeweils 10 binäre Variablen zugewiesen, die den Wert 0 oder 1 annehmen, wenn die Variable den entsprechenden Wert hat.
@@ -1099,18 +1099,18 @@ Lösung des Rätsels: SEND+MORE=MONEY
     .. layer:: incremental
 
         .. rubric:: Nebenbedingungen
-        
+
         - Jede Variable hat genau einen Wert
         - Keine Ziffer darf doppelt vorkommen
-        
-        .. math::  
+
+        .. math::
             :class: smaller incremental
 
             \begin{array}{cccccccl}
                 S_0 & + & S_1 & + & \ldots & + & S_9 & = & 1 \\
                 + &  & + &  & \ldots &  & + & &  \\
                 E_0 & + & E_1 & + & \ldots & + & E_9 & = & 1 \\
-                \vdots & & \vdots & & \vdots & & \vdots & & \\   
+                \vdots & & \vdots & & \vdots & & \vdots & & \\
                 + &  & + &  & \ldots &  & + & &  \\
                 Y_0 & + & Y_1 & + & \ldots & + & Y_9 & = & 1 \\
                 \shortparallel &   & \shortparallel & & & &  \shortparallel & \\
@@ -1128,16 +1128,16 @@ Lösung des Rätsels: SEND+MORE=MONEY
             \begin{array}{r}
                 \displaystyle\sum_{i=0}^{9} i \cdot S_i  \times 1000 + \sum_{i=0}^{9} i \cdot E_i  \times 100 + \sum_{i=0}^{9} i \cdot N_i  \times 10 + \sum_{i=0}^{9} i \cdot D_i  \times 1 & + \\
                 \displaystyle\sum_{i=0}^{9} i \cdot M_i  \times 1000 + \sum_{i=0}^{9} i \cdot O_i  \times 100 + \sum_{i=0}^{9} i \cdot R_i  \times 10 + \sum_{i=0}^{9} i \cdot E_i  \times 1 & = \\
-                \displaystyle\sum_{i=0}^{9} i \cdot M_i  \times 10000 + \sum_{i=0}^{9} i \cdot O_i  \times 1000 + \sum_{i=0}^{9} i \cdot N_i  \times 100 + \sum_{i=0}^{9} i \cdot E_i  \times 10 + \sum_{i=0}^{9} i \cdot Y_i  \times 1 & 
+                \displaystyle\sum_{i=0}^{9} i \cdot M_i  \times 10000 + \sum_{i=0}^{9} i \cdot O_i  \times 1000 + \sum_{i=0}^{9} i \cdot N_i  \times 100 + \sum_{i=0}^{9} i \cdot E_i  \times 10 + \sum_{i=0}^{9} i \cdot Y_i  \times 1 &
             \end{array}
-            
-        
+
+
 
     .. layer:: incremental
 
         Umsetzung in Python mit Hilfe von `PuLP <https://coin-or.github.io/pulp/>`
 
-        .. rubric:: Imports 
+        .. rubric:: Imports
 
         .. include:: code/send_more_money.py
             :code: python
@@ -1145,7 +1145,7 @@ Lösung des Rätsels: SEND+MORE=MONEY
             :class: far-smaller copy-to-clipboard
             :end-before: VALS
 
-        .. rubric:: Variablen 
+        .. rubric:: Variablen
 
         .. include:: code/send_more_money.py
             :code: python
@@ -1167,7 +1167,7 @@ Lösung des Rätsels: SEND+MORE=MONEY
 
     .. layer:: incremental
 
-        .. rubric:: „hauptsächliche Nebenbedingung“ 
+        .. rubric:: „hauptsächliche Nebenbedingung“
 
         .. include:: code/send_more_money.py
             :code: python
@@ -1194,10 +1194,10 @@ Lösung des Rätsels: SEND+MORE=MONEY
 
         .. container::  incremental box-shadow padding-1em far-smaller rounded-corners margin-top-1em
 
-            Code: |send_more_money.py| 
+            Code: |send_more_money.py|
 
 .. supplemental::
- 
+
     Eine Formulierung wie :math:`28 \leq S + E + N + D + M + O + R + Y \leq 44`, um sicherzustellen, dass (zumindest einige) Variablen nicht :math:`0` sind stellt leider nicht die gewünschte Nebenbedingung sicher, dass jeder Wert nur einmal vergeben wird (:math:`0 + 1+ 2 + 3 + 4 + 5 + 6 + 7 = 28` und :math:`0 + 1+ 2 + 3 + 4 + 5 + 6 + 7 + 8 + 9 = 45`).
 
     Eine Lösung mit obiger Nebenbedingung wäre zum Beispiel:
@@ -1207,15 +1207,15 @@ Lösung des Rätsels: SEND+MORE=MONEY
             S=0 E=8 N=9 D=0
             M=0 O=0 R=9 E=8
         M=0 O=0 N=9 E=8 Y=8
-    
+
     .. rubric:: PuLP (Details)
 
     Die Datenstruktur :python:`choices` ist ein Dictionary mit folgenden Aufbau:
 
     .. code:: python
 
-        choices = 
-            {'S': {0: Choice_S_0, 1: Choice_S_1,..., 9: Choice_S_9}, 
+        choices =
+            {'S': {0: Choice_S_0, 1: Choice_S_1,..., 9: Choice_S_9},
              ...
              'Y': {0: Choice_Y_0, 1: Choice_Y_1,..., 9: Choice_Y_9}}
         # choices['S'][0].name == 'Choice_S_0'
@@ -1279,7 +1279,7 @@ Lösung des Rätsels: SEND+MORE=MONEY
             :class: smaller
 
 .. exercise:: Alle Gruppen gleich glücklich machen
-    
+
     Fragen Sie sich was Sie tun müssten, wenn Sie zusätzlich sicherstellen wollen, dass alle Gruppen in etwa die gleiche Glücklichkeit haben sollen. (Hier geht es nur um ein Gedankenexperiment.)
 
     .. solution::
@@ -1305,7 +1305,7 @@ Nächste Schritte
 
 - Studiere Mathematische Programmiersprachen (AMPL, `ZIMPL  <https://webdoc.sub.gwdg.de/ebook/serien/ah/ZIB/ZR-12-27.pd>`__ .)
 - Studiere verfügbare Bibliotheken zum Lösen entsprechender Probleme (GLPK, SCIP, `Gurobi <https://www.gurobi.com/>`__, `CPLEX <https://www.ibm.com/analytics/cplex-optimizer>`__, ...)
-  
-.. hint:: 
-    
+
+.. hint::
+
     PuLP ist ein einfaches, aber mächtiges Werkzeug, um lineare und gemischt-ganzzahlige Programme zu beschreiben. PuLP nutzt im Hintergrund verschiedene Solver!
