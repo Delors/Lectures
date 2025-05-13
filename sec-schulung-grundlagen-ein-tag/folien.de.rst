@@ -933,7 +933,7 @@ Das Common Vulnerability Scoring System (CVSS)\ [#]_
 
     CVSS 4.0 stellt einen Rahmen bereit für die Beschreibung und Bewertung des Schweregrads von Software-/Hardware-/Firmwareschwachstellen.
 
-    .. incremental::
+    .. container:: incremental
 
         Die Bewertung der Basiskennzahlen ergibt eine Punktzahl zwischen 0,0 und 10,0. Wobei 0 bedeutet, dass die Schwachstelle (bisher) harmlos ist und 10,0 bedeutet, dass die Schwachstelle sehr gravierend ist.
 
