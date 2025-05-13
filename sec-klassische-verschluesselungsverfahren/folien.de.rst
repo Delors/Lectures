@@ -1,5 +1,5 @@
 .. meta::
-    :version: genesis
+    :version: renaissance
     :author: Michael Eichberg
     :keywords: Verschlüsselung, Vernam, Vigenère, Caesar, Hill, Playfair, Steganographie
     :description lang=en: Classical Encryption Techniques
@@ -21,7 +21,7 @@ Klassische Verschlüsselungsmethoden
 
 .. supplemental::
 
-  :Folien: 
+  :Folien:
       [HTML] |html-source|
 
       [PDF] |pdf-source|
@@ -33,22 +33,24 @@ Klassische Verschlüsselungsmethoden
 Definitionen
 -------------
 
-:Klartext: 
+.. class:: incremental-list
+
+:Klartext:
     :eng:`Plaintext`
 
     Die Originalnachricht, die verschlüsselt werden soll.
 
-:Geheimtext oder Chiffretext oder `Krytogramm`:peripheral:: 
+:Geheimtext oder Chiffretext oder `Krytogramm`:peripheral::
     :eng:`Ciphertext`
 
     Die kodierte/verschlüsselte Nachricht.
 
-:Verschlüsselung: 
+:Verschlüsselung:
     :eng:`Encryption`
 
     Der Prozess der Umwandlung von Klartext in Geheimtext.
 
-:Entschlüsselung: 
+:Entschlüsselung:
     :eng:`Decryption`
 
     Der Prozess der Wiederherstellung des Klartextes aus dem Geheimtext.
@@ -58,19 +60,21 @@ Definitionen
 Definitionen
 --------------
 
-:Kryptographie: 
+.. class:: incremental-list
+
+:Kryptographie:
     :eng:`Cryptography`
 
     Das Studiengebiet der Verschlüsselungsschemata.
 
-:Kryptoanalyse: 
+:Kryptoanalyse:
     :eng:`Cryptanalysis`
 
-    Methoden und Techniken, die zur Gewinnung von Informationen aus einer verschlüsselten Nachricht dienen. 
-    
+    Methoden und Techniken, die zur Gewinnung von Informationen aus einer verschlüsselten Nachricht dienen.
+
     Analyse von kryptographischen Verfahren.
 
-:Kryptologie: 
+:Kryptologie:
     :eng:`Cryptology`
 
     Die Bereiche Kryptographie und Kryptoanalyse.
@@ -81,25 +85,24 @@ Definitionen
 Vereinfachtes Modell der symmetrischen Verschlüsselung
 --------------------------------------------------------
 
-.. image:: drawings/symmetrische_verschluesselung/simplified_model.svg 
+.. image:: drawings/symmetrische_verschluesselung/simplified_model.svg
     :alt: Vereinfachtes Modell der symmetrischen Verschlüsselung
-    :width: 95%
     :align: center
 
 
 
 Symmetrisches Verschlüsselungsmodell
 ---------------------------------------
- 
+
 Es gibt zwei Voraussetzungen für die sichere Verwendung der herkömmlichen Verschlüsselung:
 
-.. class:: incremental
+.. class:: incremental-list
 
 1. Ein starker Verschlüsselungsalgorithmus.
 2. Effektive Schlüsselverwaltung:
 
-   (a) Sender und Empfänger müssen Kopien des geheimen Schlüssels auf sichere Weise erhalten haben und 
-   
+   (a) Sender und Empfänger müssen Kopien des geheimen Schlüssels auf sichere Weise erhalten haben und
+
    (b) :incremental:`den Schlüssel sicher aufbewahren.`
 
 
@@ -109,7 +112,6 @@ Modell eines symmetrischen Kryptosystems
 
 .. image:: drawings/symmetrische_verschluesselung/model.svg
     :alt: Modell eines symmetrischen Kryptosystems
-    :width: 90%
     :align: center
 
 
@@ -117,29 +119,30 @@ Modell eines symmetrischen Kryptosystems
 Kryptografische Systeme können entlang dreier unabhängiger Dimensionen charakterisiert werden
 ----------------------------------------------------------------------------------------------------------
 
-.. note:: 
+.. note::
+    :class: width-30
 
     Eine Permutation ist eine Folge von Vertauschungen (:eng:`Transposition`).
 
-.. class:: incremental
+.. class:: incremental-list
 
 1. Die Art der Operationen, die zur Umwandlung von Klartext in Chiffretext verwendet werden.
 
-   .. class:: incremental
+   .. class:: incremental-list
 
    - Substitution
    - Transposition (Vertauschungen)
 
 2. Die Anzahl der verwendeten Schlüssel.
- 
-   .. class:: incremental
+
+   .. class:: incremental-list
 
    Symmetrisch: Ein-Schlüssel-, **Secret-Key**-, konventionelle Verschlüsselung
    Asymmetrisch: Zwei-Schlüssel- oder **Public-Key**-Verschlüsselung
 
 3. Die Art und Weise, in der der Klartext verarbeitet wird:
 
-   .. class:: incremental
+   .. class:: incremental-list
 
    - Blockchiffre
    - Stromchiffre
@@ -149,7 +152,7 @@ Kryptografische Systeme können entlang dreier unabhängiger Dimensionen charakt
 Kryptoanalyse und Brute-Force-Angriff
 --------------------------------------
 
-.. container:: 
+.. container::
 
     **Kryptoanalyse**
 
@@ -165,25 +168,27 @@ Kryptoanalyse und Brute-Force-Angriff
 
 
 
-.. class:: smaller-slide-title
 
 Klassifizierung von Angriffen
 -------------------------------
 
-.. csv-table:: 
-    :header: Art des Angriffs, dem Kryptoanalytiker bekannt
-    :class: tiny, incremental, wobble
+.. story::
 
-    Ciphertext Only, "- Verschlüsselungsalgorithmus und Chiffretext"
-    Known Plaintext, "- Verschlüsselungsalgorithmus und Chiffretext
-    - ein oder mehrere Klartext-Chiffretext-Paare, die mit dem geheimen Schlüssel verschlüsselt wurden"
-    Chosen Plaintext, "- Verschlüsselungsalgorithmus und Chiffretext
-    - Klartextnachricht, die vom Kryptoanalytiker gewählt wurde, zusammen mit dem zugehörigen Chiffretext, der mit dem geheimen Schlüssel verschlüsselt wurde."
-    Chosen Ciphertext, "- Verschlüsselungsalgorithmus und Chiffretext
-    - Chiffretext, der vom Kryptoanalytiker gewählt wurde, zusammen mit dem zugehörigen entschlüsselten Klartext, der mit dem geheimen Schlüssel entschlüsselt wurde."
-    Chosen Text, "- Verschlüsselungsalgorithmus und Chiffretext
-    - vom Kryptoanalytiker gewählte Klartextnachricht, zusammen mit dem zugehörigen Chiffretext, der mit dem geheimen Schlüssel verschlüsselt wurde.
-    - vom Kryptoanalytiker gewählter Chiffretext zusammen mit dem entsprechenden entschlüsselten Klartext, der mit dem geheimen Schlüssel erzeugt wurde."
+    .. csv-table::
+        :header: Art des Angriffs, dem Kryptoanalytiker bekannt
+        :class: incremental-table-rows
+        :stub-columns: 1
+
+        Ciphertext Only, "- Verschlüsselungsalgorithmus und Chiffretext"
+        Known Plaintext, "- Verschlüsselungsalgorithmus und Chiffretext
+        - ein oder mehrere Klartext-Chiffretext-Paare, die mit dem geheimen Schlüssel verschlüsselt wurden"
+        Chosen Plaintext, "- Verschlüsselungsalgorithmus und Chiffretext
+        - Klartextnachricht, die vom Kryptoanalytiker gewählt wurde, zusammen mit dem zugehörigen Chiffretext, der mit dem geheimen Schlüssel verschlüsselt wurde."
+        Chosen Ciphertext, "- Verschlüsselungsalgorithmus und Chiffretext
+        - Chiffretext, der vom Kryptoanalytiker gewählt wurde, zusammen mit dem zugehörigen entschlüsselten Klartext, der mit dem geheimen Schlüssel entschlüsselt wurde."
+        Chosen Text, "- Verschlüsselungsalgorithmus und Chiffretext
+        - vom Kryptoanalytiker gewählte Klartextnachricht, zusammen mit dem zugehörigen Chiffretext, der mit dem geheimen Schlüssel verschlüsselt wurde.
+        - vom Kryptoanalytiker gewählter Chiffretext zusammen mit dem entsprechenden entschlüsselten Klartext, der mit dem geheimen Schlüssel erzeugt wurde."
 
 
 
@@ -203,7 +208,7 @@ Sicherheit von Verschlüsselungsschemata
     - Die Kosten für das Brechen der Chiffre übersteigen den Wert der verschlüsselten Informationen.
     - Die zum Knacken der Chiffre benötigte Zeit übersteigt die Lebensdauer der Informationen.
 
-.. admonition:: Frage
+.. question::
     :class: incremental
 
     Wie lange könnte der Nutzen einer bestimmten Information andauern?
@@ -213,7 +218,7 @@ Sicherheit von Verschlüsselungsschemata
 Brute-Force Angriff
 --------------------
 
-.. class:: incremental
+.. class:: incremental-list
 
 - Es werden alle möglichen Schlüssel ausprobiert, bis eine verständliche Übersetzung des Chiffriertextes in Klartext erreicht wird.
 
@@ -221,7 +226,7 @@ Brute-Force Angriff
 
 - Zur Durchführung des Brute-Force-Ansatzes ist ein gewisses Maß an Wissen über den zu erwartenden Klartext erforderlich. Es werden Mittel zur automatischen Unterscheidung von Klartext und „Müll“ benötigt.
 
-  .. admonition:: Frage
+  .. question::
 
       Was bedeuted somit *bis eine verständliche Übersetzung des Chiffriertextes in Klartext erreicht wird*? Wenn der Klartext zum Beispiel ein Bild, ein Video oder ein Computerprogramm ist?
 
@@ -236,7 +241,7 @@ Substitutionsverfahren
 
 
 .. class:: new-subsection transition-fade
-    
+
 Substitutions-Chiffren
 -------------------------
 
@@ -249,54 +254,52 @@ Caesar Cipher
 - Dabei wird jeder Buchstabe des Alphabets durch einen Buchstaben ersetzt, der drei Stellen weiter hinten im Alphabet steht.
 - Am Ende des Alphabets wird wieder am Anfang begonnen. Somit folgt auf den Buchstabe Z der Buchstabe A.
 
-    :: 
+    ::
 
         unverschlüsselt:    meet me after the toga party
 
     .. class:: incremental
-        
+
     ::
 
-        verschlüsselt:      PHHW PH DIWHU WKH WRJD SDUWB 
+        verschlüsselt:      PHHW PH DIWHU WKH WRJD SDUWB
 
 
 
-Cäsar-Chiffre-Algorithmus - historische Verwendung
+Cäsar-Chiffre - historische Verwendung
 ----------------------------------------------------
 
 Die Transformation kann wie folgt ausgedrückt werden:
 
-.. csv-table:: 
+.. csv-table::
     :delim: space
-    :class: far-smaller
-    :align: center
-    :width: 1860px
-    
-        a b c d e f g h i j k l m n o p q r s t u v w x y z 
-        D E F G H I J K L M N O P Q R S T U V W X Y Z A B C
+    :width: 100%
+    :class: font-size-75 text-align-center
+    :header: a b c d e f g h i j k l m n o p q r s t u v w x y z
+
+    D E F G H I J K L M N O P Q R S T U V W X Y Z A B C
 
 Mathematisch, wenn wir jedem Buchstaben einen Wert zuweisen:
 
-.. csv-table:: 
+.. csv-table::
     :delim: space
-    :class: far-smaller
-    :align: center
-    :width: 1840px
+    :width: 100%
+    :class: font-size-75 text-align-center
+    :header: a b c d e f g h i j k l m n o p q r s t u v w x y z
 
-        a b c d e f g h i j k l m n o p q r s t u v w x y z
-        0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25
+    0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25
 
 Der Algorithmus zur Verschlüsselung ist dann (:math:`p` ist der Wert des zu verschlüsselnden Buchstabens):
 
 .. math::
-    Y = E(3, p) = (p + 3)\; mod\; 26
+    Y = E(3, p) = (p + 3)\bmod 26
 
 
 
-Verallgemeinerter Cäsar-Chiffre-Algorithmus 
+Verallgemeinerter Cäsar-Chiffre-Algorithmus
 ------------------------------------------------
 
-Eine Verschiebung kann beliebig groß sein (:math:`k`), so dass der allgemeine Caesar-Algorithmus lautet:  
+Eine Verschiebung kann beliebig groß sein (:math:`k`), so dass der allgemeine Caesar-Algorithmus lautet:
 
 .. math::
 
@@ -314,11 +317,12 @@ Brute-Force-Kryptoanalyse der Caesar-Chiffre
 ------------------------------------------------------
 
 
-.. csv-table:: 
+.. csv-table::
     :delim: space
-    :class: tiny highlight-line-on-hover
+    :class: highlight-row-on-hover
     :align: center
-    :header: Key, PHHW, PH, DIWHU, WKH, WRJD, SDUWB 
+    :header: Key PHHW PH DIWHU WKH WRJD SDUWB
+    :stub-columns: 1
 
     1 OGGV OG CHVGT VJG VQIC RCTVA
     2 NFFU NF BGUFS UIF UPHB QBSUZ
@@ -333,9 +337,6 @@ Brute-Force-Kryptoanalyse der Caesar-Chiffre
     11 EWWL EW SXLWJ LZW LGYS HSJLQ
     12 DVVK DV RWKVI KYV KFXR GRIKP
     13 CUUJ CU QVJUH JXU JEWQ FQHJO
-    14 BTTI BT PUITG IWT IDVP EPGIN
-    15 ASSH AS OTHSF HVS HCUO DOFHM
-    16 ZRRG ZR NSGRE GUR GBTN CNEGL
     ... ... ... ... ... ... ...
     25 QIIX QI EJXIV XLI XSKE TEVXC
 
@@ -345,9 +346,9 @@ Brute-Force-Kryptoanalyse (z. B. der Caesar-Chiffre)
 
 Die Entschlüsselung ist komplizierter, wenn der Klartext bereits eine sehr hohe Entropie aufweist, wie z. B. im Falle einer komprimierten ZIP Datei:
 
-.. csv-table:: 
+.. csv-table::
     :delim: space
-    :class: far-far-smaller monospaced highlight-line-on-hover
+    :class: monospaced highlight-row-on-hover booktabs font-size-75
     :width: 100%
 
     00000000: 504b 0304 1400 0000 0800 afb1 4257 1da9  PK..........BW..
@@ -365,14 +366,13 @@ Die Entschlüsselung ist komplizierter, wenn der Klartext bereits eine sehr hohe
     000000c0: 7478 7455 5405 0003 6a24 1b65 7578 0b00  txtUT...j$.eux..
     000000d0: 0104 f801 0000 0414 0000 0050 4b05 0600  ...........PK...
     000000e0: 0000 0001 0001 004e 0000 008d 0000 0000  .......N........
-    000000f0: 00 
+    000000f0: 00
 
+.. question::
+    :class: incremental
 
-.. supplemental::
+    Wie kann man - wenn man weiss, dass es sich um eine ZIP Datei handelt - die Caesar-Chiffre knacken?
 
-    .. admonition:: Frage
-    
-        Wie kann man - wenn man weiss, dass es sich um eine ZIP Datei handelt - die Caesar-Chiffre knacken?
 
 
 Monoalphabetische Chiffren
@@ -382,10 +382,10 @@ Monoalphabetische Chiffren
 
 .. class:: incremental
 
-  - Wenn die „Chiffre“-Zeile (siehe Cäsar-Chiffre) eine beliebige Permutation der 26 alphabetischen Zeichen sein kann, dann gibt es :math:`26!` oder mehr als :math:`4 \times 10^{26}` mögliche Schlüssel.
+- Wenn die „Chiffre“-Zeile (siehe Cäsar-Chiffre) eine beliebige Permutation der 26 alphabetischen Zeichen sein kann, dann gibt es :math:`26!` oder mehr als :math:`4 \times 10^{26}` mögliche Schlüssel.
 
-    - Dies ist um 10 Größenordnungen größer als der Schlüsselraum für DES!
-    - Der Ansatz wird als monoalphabetische Substitutions-Chiffre bezeichnet, da pro Nachricht ein einziges Chiffre-Alphabet verwendet wird.
+  - Dies ist um 10 Größenordnungen größer als der Schlüsselraum für DES!
+  - Der Ansatz wird als monoalphabetische Substitutions-Chiffre bezeichnet, da pro Nachricht ein einziges Chiffre-Alphabet verwendet wird.
 
 
 
@@ -393,7 +393,6 @@ Häufigkeit der englischen Buchstaben [#]_
 -------------------------------------------
 
 .. image:: drawings/english_letter_frequency.svg
-    :width: 1200px
     :align: center
     :alt: Häufigkeit der englischen Buchstaben (alphabetisch)
 
@@ -417,23 +416,24 @@ Playfair Cipher
 
 Erfunden vom britischen Wissenschaftler Sir Charles Wheatstone im Jahr 1854.
 
-.. container:: note
+.. note::
+    :class: width-30
 
     *Digram*
 
     - Zwei-Buchstaben-Kombination
     - am häufigsten im Englischen: "*th*""
-  
+
     *Trigram*
 
     - Drei-Buchstaben-Kombination
     - am häufigsten im Englischen: "*the*"
 
-.. class:: incremental
+.. class:: incremental-list
 
 - Bekannteste Chiffrierung mit mehreren Buchstaben.
 - Behandelt Digramme im Klartext als einzelne Einheiten und übersetzt diese Einheiten in Digramme des Geheimtextes.
-- Basiert auf der Verwendung einer 5 x 5 Buchstabenmatrix, die mit Hilfe eines Schlüsselworts konstruiert wird. 
+- Basiert auf der Verwendung einer 5 x 5 Buchstabenmatrix, die mit Hilfe eines Schlüsselworts konstruiert wird.
 - Wurde von der britischen Armee im Ersten Weltkrieg und von der US-Armee und anderen alliierten Streitkräften im zweiten Weltkrieg als Standardfeldsystem verwendet.
 
 
@@ -445,11 +445,10 @@ Füllen Sie die Buchstaben des Schlüsselworts (abzüglich der Duplikate) von li
 
 Sei das Schlüsselwort MONARCHY:
 
-
-.. csv-table:: 
+.. csv-table::
     :delim: space
     :align: center
-    :class: highlight-cell-on-hover
+    :class: highlight-row-on-hover
 
     *M* *O* *N* *A* *R*
     *C* *H* *Y* B D
@@ -464,9 +463,10 @@ Playfair Verschlüsselung
 
 Die Verschlüsselung wird für jedes Buchstabenpaar des Klartextes durchgeführt.
 
-.. container:: note width-30 smaller
+.. note::
+    :class: width-30
 
-    .. csv-table:: 
+    .. csv-table::
         :delim: space
         :align: center
         :class: highlight-cell-on-hover
@@ -477,7 +477,7 @@ Die Verschlüsselung wird für jedes Buchstabenpaar des Klartextes durchgeführt
         L P Q S T
         U V W X Z
 
-.. class:: smaller incremental
+.. class:: incremental-list
 
 1. Wenn beide Buchstaben gleich sind (oder nur ein Buchstabe übrig ist), fügen Sie ein "X" hinter dem ersten Buchstaben ein. Verschlüsseln Sie das neue Paar und fahren Sie fort. (Z. B. würde statt "ballon" "ba lx lo nX" verschlüsselt werden.)
 2. Wenn die Buchstaben in der gleichen Zeile stehen, ersetzen Sie sie durch die Buchstaben unmittelbar rechts davon (ggf. umbrechen). (Z. B. wird `ar` als `RM` verschlüsselt.)
@@ -492,7 +492,7 @@ Hill Chiffre
 Entwickelt von dem Mathematiker Lester Hill im Jahr 1929.
 
 - Die Stärke ist, dass die Häufigkeit von einzelnen Buchstaben vollständig ausgeblendet wird.
-  
+
   - Durch die Verwendung einer größeren Matrix werden mehr Frequenzinformationen verborgen.
   - Eine 3 x 3 Hill-Chiffre verbirgt nicht nur die Häufigkeiten einzelner Buchstaben sondern auch von Digrammen.
 
@@ -503,8 +503,9 @@ Entwickelt von dem Mathematiker Lester Hill im Jahr 1929.
 Polyalphabetische Chiffren
 ---------------------------
 
-.. container:: note width-40
-     
+.. note::
+    :class: width-40
+
     **Alle diese Techniken haben die folgenden Merkmale gemeinsam:**
 
     - Es wird ein Satz verwandter monoalphabetischer Substitutionsregeln verwendet.
@@ -522,58 +523,62 @@ Vigenère Chiffre
 - Jede Chiffre wird durch einen Schlüsselbuchstaben identifiziert, der den Klartextbuchstaben durch den Chiffretextbuchstaben ersetzt.
 
 
-.. class:: smaller vertical-title
+
+.. class:: no-title
 
 Vigenère-Tableau
 ----------------
 
-.. container:: smaller width-30 margin-left-1em margin-right-1em
+.. grid::
 
-    **Aufbau**
+    .. cell:: width-30
 
-    - Kopfzeile: Klartextbuchstabe
-    - 1\ . Spalte: Schlüsselbuchstabe
-    - Tableau: Verschlüsselter Buchstabe
+        .. rubric:: Aufbau des Vigenère-Tableaus
 
-    .. container:: incremental
+        - Kopfzeile: Klartextbuchstabe
+        - 1\ . Spalte: Schlüsselbuchstabe
+        - Tableau: Verschlüsselter Buchstabe
 
-        **Beispiel**
+        .. container:: incremental
 
-        Nehmen wir an, der Schlüssel ist "D" und der Klartextbuchstabe sei "b". Dann ist der Chiffretextbuchstabe "E".
+            **Beispiel**
 
-.. csv-table::
-    :delim: space
-    :align: right
-    :width: 1100px
-    :class: scriptsize compact compact-cells highlight-on-hover monospaced text-align-center
+            Nehmen wir an, der Schlüssel ist "D" und der Klartextbuchstabe sei "b". Dann ist der Chiffretextbuchstabe "E".
 
-    / **a** **b** **c** **d** **e** **f** **g** **h** **i** **j** **k** **l** **m** **n** **o** **p** **q** **r** **s** **t** **u** **v** **w** **x** **y** **z** 
-    **A** A B C D E F G H I J K L M N O P Q R S T U V W X Y Z 
-    **B** B C D E F G H I J K L M N O P Q R S T U V W X Y Z A 
-    **C** C D E F G H I J K L M N O P Q R S T U V W X Y Z A B 
-    **D** D E F G H I J K L M N O P Q R S T U V W X Y Z A B C 
-    **E** E F G H I J K L M N O P Q R S T U V W X Y Z A B C D 
-    **F** F G H I J K L M N O P Q R S T U V W X Y Z A B C D E 
-    **G** G H I J K L M N O P Q R S T U V W X Y Z A B C D E F 
-    **H** H I J K L M N O P Q R S T U V W X Y Z A B C D E F G 
-    **I** I J K L M N O P Q R S T U V W X Y Z A B C D E F G H 
-    **J** J K L M N O P Q R S T U V W X Y Z A B C D E F G H I 
-    **K** K L M N O P Q R S T U V W X Y Z A B C D E F G H I J 
-    **L** L M N O P Q R S T U V W X Y Z A B C D E F G H I J K 
-    **M** M N O P Q R S T U V W X Y Z A B C D E F G H I J K L 
-    **N** N O P Q R S T U V W X Y Z A B C D E F G H I J K L M 
-    **O** O P Q R S T U V W X Y Z A B C D E F G H I J K L M N 
-    **P** P Q R S T U V W X Y Z A B C D E F G H I J K L M N O 
-    **Q** Q R S T U V W X Y Z A B C D E F G H I J K L M N O P 
-    **R** R S T U V W X Y Z A B C D E F G H I J K L M N O P Q 
-    **S** S T U V W X Y Z A B C D E F G H I J K L M N O P Q R 
-    **T** T U V W X Y Z A B C D E F G H I J K L M N O P Q R S 
-    **U** U V W X Y Z A B C D E F G H I J K L M N O P Q R S T 
-    **V** V W X Y Z A B C D E F G H I J K L M N O P Q R S T U 
-    **W** W X Y Z A B C D E F G H I J K L M N O P Q R S T U V 
-    **X** X Y Z A B C D E F G H I J K L M N O P Q R S T U V W 
-    **Y** Y Z A B C D E F G H I J K L M N O P Q R S T U V W X 
-    **Z** Z A B C D E F G H I J K L M N O P Q R S T U V W X Y
+    .. cell::
+
+        .. csv-table::
+            :delim: space
+            :align: right
+            :class: font-size-70 compact compact-cells highlight-on-hover monospaced text-align-center
+
+            / **a** **b** **c** **d** **e** **f** **g** **h** **i** **j** **k** **l** **m** **n** **o** **p** **q** **r** **s** **t** **u** **v** **w** **x** **y** **z**
+            **A** A B C D E F G H I J K L M N O P Q R S T U V W X Y Z
+            **B** B C D E F G H I J K L M N O P Q R S T U V W X Y Z A
+            **C** C D E F G H I J K L M N O P Q R S T U V W X Y Z A B
+            **D** D E F G H I J K L M N O P Q R S T U V W X Y Z A B C
+            **E** E F G H I J K L M N O P Q R S T U V W X Y Z A B C D
+            **F** F G H I J K L M N O P Q R S T U V W X Y Z A B C D E
+            **G** G H I J K L M N O P Q R S T U V W X Y Z A B C D E F
+            **H** H I J K L M N O P Q R S T U V W X Y Z A B C D E F G
+            **I** I J K L M N O P Q R S T U V W X Y Z A B C D E F G H
+            **J** J K L M N O P Q R S T U V W X Y Z A B C D E F G H I
+            **K** K L M N O P Q R S T U V W X Y Z A B C D E F G H I J
+            **L** L M N O P Q R S T U V W X Y Z A B C D E F G H I J K
+            **M** M N O P Q R S T U V W X Y Z A B C D E F G H I J K L
+            **N** N O P Q R S T U V W X Y Z A B C D E F G H I J K L M
+            **O** O P Q R S T U V W X Y Z A B C D E F G H I J K L M N
+            **P** P Q R S T U V W X Y Z A B C D E F G H I J K L M N O
+            **Q** Q R S T U V W X Y Z A B C D E F G H I J K L M N O P
+            **R** R S T U V W X Y Z A B C D E F G H I J K L M N O P Q
+            **S** S T U V W X Y Z A B C D E F G H I J K L M N O P Q R
+            **T** T U V W X Y Z A B C D E F G H I J K L M N O P Q R S
+            **U** U V W X Y Z A B C D E F G H I J K L M N O P Q R S T
+            **V** V W X Y Z A B C D E F G H I J K L M N O P Q R S T U
+            **W** W X Y Z A B C D E F G H I J K L M N O P Q R S T U V
+            **X** X Y Z A B C D E F G H I J K L M N O P Q R S T U V W
+            **Y** Y Z A B C D E F G H I J K L M N O P Q R S T U V W X
+            **Z** Z A B C D E F G H I J K L M N O P Q R S T U V W X Y
 
 
 
@@ -583,14 +588,14 @@ Beispiel einer Vigenère-Verschüsselung
 - Um eine Nachricht zu verschlüsseln, wird ein Schlüssel benötigt, der so lang ist wie die Nachricht.
 - In der Regel ist der Schlüssel ein sich wiederholendes Schlüsselwort.
 
-.. admonition:: Beispiel
+.. example::
     :class: incremental
 
     Wenn das Schlüsselwort ``deceptive`` ist, wird die Nachricht „Wir wurden entdeckt, rette dich“ wie folgt verschlüsselt:
 
-    :: 
+    ::
 
-        Schlüssel:  DECEPTIVEDECEPTIVEDECEPTIVE 
+        Schlüssel:  DECEPTIVEDECEPTIVEDECEPTIVE
         Klartext:   wearediscoveredsaveyourself
         Geheimtext: ZICVTWQNGRZGVTWAVZHCQYGLMGJ
 
@@ -600,17 +605,22 @@ Vigenère *Autokey System*
 --------------------------
 
 Ein Schlüsselwort wird mit dem Klartext selbst verkettet, um einen laufenden Schlüssel zu erhalten.
-  
-.. admonition:: Beispiel
+
+.. example::
     :class: incremental
 
-    .. container:: monospaced
+    .. csv-table::
+        :stub-columns: 1
+        :align: center
 
-        Schlüssel.: DECEPTIVE\ *wearediscoveredsav*
+        Schlüssel, "
 
-        Klartext..: wearediscoveredsaveyourself
+        .. container:: monospaced
 
-        Geheimtext: ZICVTWQNGKZEIIGASXSTSLVVWLA
+          DECEPTIVE\ *wearediscoveredsav*
+        "
+        Klartext, ":monospaced:`wearediscoveredsaveyourself`"
+        Geheimtext, ":monospaced:`ZICVTWQNGKZEIIGASXSTSLVVWLA`"
 
 .. class:: incremental
 
@@ -624,8 +634,6 @@ Vernam Chiffre
 .. image:: drawings/vernam_cipher.svg
     :alt: Vernam Cipher
     :align: center
-    :width: 75%
-
 
 
 
@@ -633,7 +641,7 @@ Vernam Chiffre
 One-Time Pad
 ------------
 
-.. class:: incremental just-a-bit-smaller
+.. class:: incremental-list
 
 - Verbesserung der Vernam-Chiffre, vorgeschlagen von dem Offizier Joseph Mauborgne des Army Signal Corp.
 - Verwendung eines Zufallsschlüssels, der so lang wie die Nachricht ist, so dass der Schlüssel nicht wiederholt werden muss.
@@ -641,7 +649,7 @@ One-Time Pad
 - Jede neue Nachricht erfordert einen neuen Schlüssel mit der gleichen Länge wie die neue Nachricht.
 - Das Schema ist nachweislich nicht zu knacken.
 
-  .. class:: smaller incremental
+  .. class:: incremental-list
 
   - Erzeugt eine zufällige Ausgabe, die in keinem statistischen Zusammenhang mit dem Klartext steht.
   - Da der Chiffriertext keinerlei Informationen über den Klartext enthält, gibt es keine Möglichkeit, den Code zu knacken.
@@ -651,11 +659,11 @@ One-Time Pad
 Schwierigkeiten von One-Time-Pads
 ---------------------------------------------------------
 
-.. class:: incremental just-a-bit-smaller
+.. class:: incremental-list
 
 - Das One-Time-Pad bietet vollständige Sicherheit, hat aber in der Praxis zwei grundlegende Schwierigkeiten:
 
-  .. class:: incremental list-with-explanations
+  .. class:: incremental-list list-with-explanations
 
   1. Es gibt das praktische Problem der Herstellung großer Mengen von Zufallsschlüsseln.
 
@@ -667,11 +675,12 @@ Schwierigkeiten von One-Time-Pads
 
 - Aufgrund dieser Schwierigkeiten ist das One-Time-Pad nur von begrenztem Nutzen; es eignet sich vor allem für Kanäle mit geringer Bandbreite, die eine sehr hohe Sicherheit erfordern.
 
-- Das One-Time-Pad ist das einzige Kryptosystem, das eine perfekte Geheimhaltung bietet. 
+- Das One-Time-Pad ist das einzige Kryptosystem, das eine perfekte Geheimhaltung bietet.
+
 
 
 .. class:: new-subsection transition-fade
-    
+
 Transpositions-Chiffren
 -------------------------
 
@@ -682,11 +691,11 @@ Rail Fence Chiffre
 - Einfachste Transpositions-Chiffre (d. h. Chiffre basierend auf `Vertauschung`).
 - Der Klartext wird als eine Folge von Diagonalen aufgeschrieben und dann als eine Folge von Zeilen abgelesen.
 
-.. admonition:: Beispiel
+.. example::
     :class: incremental
 
     Um die Nachricht: „Meet me after the Toga-Party“ mit einer Rail Fence Chiffre der Tiefe 2 (Schlüssel) zu verschlüsseln, würden wir schreiben:
-    
+
     ::
 
         m e m a t r h t g p r y
@@ -696,42 +705,44 @@ Rail Fence Chiffre
 
 .. supplemental::
 
-    Um die Nachricht zu entschlüsseln, wird die Nachricht in :math:`K` Zeilen geschrieben und dann in einer Diagonalen abgelesen. Die Länge einer Zeile ergibt sich aus der Länge der Nachricht (L) und der Tiefe der Chiffre (K): :math:`\lfloor L/K \rfloor`. Wobei die ersten :math:`L\;mod\;K` Zeilen um eins länger sind als die anderen.
+    Um die Nachricht zu entschlüsseln, wird die Nachricht in :math:`K` Zeilen geschrieben und dann in einer Diagonalen abgelesen. Die Länge einer Zeile ergibt sich aus der Länge der Nachricht (L) und der Tiefe der Chiffre (K): :math:`\lfloor L/K \rfloor`. Wobei die ersten :math:`L\bmod K` Zeilen um eins länger sind als die anderen.
 
 
 Skytale
 --------
 
-- Ältestes bekannte (militärische) Verschlüsselungsverfahren. 
-- Vor mehr als 2500 Jahren (vermutlich) von den Spartanern entwickelt. 
+- Ältestes bekannte (militärische) Verschlüsselungsverfahren.
+- Vor mehr als 2500 Jahren (vermutlich) von den Spartanern entwickelt.
 - Die Verschlüsselung erfolgte mit einen (Holz-)Stab mit einem bestimmten Durchmesser („Schlüssel“) (Skytale).
 
 .. image:: drawings/skytale.svg
     :alt: Skytale
     :align: right
-    :height: 600px
 
 
-Zeilenverschiebungs-Chiffre 
+
+Zeilenverschiebungs-Chiffre
 ---------------------------------------------------------------
 
 - Ist eine komplexere Transposition.
 - Schreiben Sie die Nachricht zeilenweise in ein Rechteck mit wohldefinierter Breite und lesen Sie die Nachricht spaltenweise ab, aber vertauschen Sie die Reihenfolge der Spalten.
 - Die Reihenfolge der Spalten ist dann der Schlüssel.
 
-.. admonition:: Beispiel - Verschlüsselung von *attack postpone until two am*
+.. example::
     :class: incremental
 
-    .. container:: slightly-more-smaller
-            
+    .. rubric:: Verschlüsselung von *attack postpone until two am*
+
+    .. container::
+
         ::
 
-            Schlüssel:  4312567 
-            Klartext:   attackp  
-                        ostpone 
-                        duntilt 
+            Schlüssel:  4312567
+            Klartext:   attackp
+                        ostpone
+                        duntilt
                         woamxyz
-            
+
             Geheimtext: TTNA APTM TSUO AODW COIX KNLY PETZ
             (Spalte:    3--- 4--- 2--- 1--- 5--- 6--- 7---)
 
@@ -745,15 +756,18 @@ Zeilenverschiebungs-Chiffre
    - die zweite Spalte als die *dritte* (3),
    - die dritte Spalte als die *erste* (1),
    - ...
-  
+
    geschrieben
 
    Beim Entschlüsseln ergibt sich die Anzahl der Reihen trivial aus der Länge der Nachricht (:math:`28` Zeichen) und der Länge des Schlüssels (:math:`7` Zeichen); :math:`28/7 = 4` .
 
+
+
 .. class:: new-subsection transition-fade
-    
+
 Steganografie
 -------------------------
+
 
 
 Steganografie - Beispiel
@@ -762,22 +776,22 @@ Steganografie - Beispiel
 .. exercise::
 
     .. code:: Text
-        :class: far-smaller copy-to-clipboard
+        :class: copy-to-clipboard
 
-        Dear Friend ; We know you are interested in receiving cutting-edge 
-        announcement . If you are not interested in our publications and wish to be 
+        Dear Friend ; We know you are interested in receiving cutting-edge
+        announcement . If you are not interested in our publications and wish to be
         removed from our lists, simply do NOT respond and ignore this mail . This mail
-        is being sent in compliance with Senate bill 1626 ; Title 4 , Section 305 . 
-        This is a ligitimate business proposal ! Why work for somebody else when you 
-        can become rich in 96 months . Have you ever noticed nobody is getting any 
-        younger & nobody is getting any younger . Well, now is your chance to 
+        is being sent in compliance with Senate bill 1626 ; Title 4 , Section 305 .
+        This is a ligitimate business proposal ! Why work for somebody else when you
+        can become rich in 96 months . Have you ever noticed nobody is getting any
+        younger & nobody is getting any younger . Well, now is your chance to
         capitalize on  this ! We will help you decrease perceived waiting time by 170%
-        and use credit cards on your website ! You are guaranteed to succeed because 
-        we take all the risk ! But don't believe us . Mrs Anderson of Indiana tried us 
-        and says "I was skeptical but it worked for me" . We assure you that we 
-        operate within all applicable laws . You will blame yourself forever if you 
-        don't order now . Sign up a friend and you'll get a discount of 10% ! 
-        Thank-you for your serious consideration of our offer ! 
+        and use credit cards on your website ! You are guaranteed to succeed because
+        we take all the risk ! But don't believe us . Mrs Anderson of Indiana tried us
+        and says "I was skeptical but it worked for me" . We assure you that we
+        operate within all applicable laws . You will blame yourself forever if you
+        don't order now . Sign up a friend and you'll get a discount of 10% !
+        Thank-you for your serious consideration of our offer !
 
     Mit Spammimic https://www.spammimic.com/, kann die Nachricht extrahiert werden.
 
@@ -788,12 +802,12 @@ Steganografie - Beispiel
 
 
 
-Auswahl anderer Steganographie-Techniken 
+Auswahl anderer Steganographie-Techniken
 ------------------------------------------
 
-.. class:: incremental list-with-explanations just-a-bit-smaller
+.. class:: incremental list-with-explanations
 
-- **Zeichenmarkierung** 
+- **Zeichenmarkierung**
 
   Ausgewählte Buchstaben eines gedruckten oder maschinengeschriebenen Textes werden mit Bleistift überstrichen. Die Markierungen sind nur sichtbar, wenn das Papier schräg in helles Licht gehalten wird.
 
@@ -817,7 +831,7 @@ Steganographie vs. Verschlüsselung
 
 - Steganografie hat eine Reihe von *Nachteilen* im Vergleich zur Verschlüsselung:
 
-  .. class:: incremental negative-list
+  .. class:: incremental-list negative-list
 
   - Es erfordert einen hohen Overhead, um relativ wenige Bits an Informationen zu verbergen.
   - Sobald das System entdeckt wird, wird es praktisch wertlos.
@@ -827,14 +841,14 @@ Steganographie vs. Verschlüsselung
 - Der *Vorteil* der Steganografie:
 
 
-  .. class:: incremental positive-list
+  .. class:: incremental-list positive-list
 
   - Sie kann von Parteien eingesetzt werden, die etwas zu verlieren haben, wenn die Tatsache ihrer geheimen Kommunikation (nicht unbedingt der Inhalt) entdeckt wird.
   - Verschlüsselung kennzeichnet den Verkehr als wichtig oder geheim oder kann den Sender oder Empfänger als jemanden identifizieren, der etwas zu verbergen hat.
 
 
 
-.. class:: integrated-exercise
+.. class:: exercises
 
 Übung
 --------
@@ -858,7 +872,7 @@ Steganographie vs. Verschlüsselung
     1. Wie ist der Schlüssel?
 
     2. Welche Art von Angriff haben Sie durchgeführt?
-    
+
     .. solution::
         :pwd: PODPOD
 
@@ -866,26 +880,25 @@ Steganographie vs. Verschlüsselung
         2. Einen Klartextangriffe (:eng:`plaintext attack`).
 
 
-.. class:: integrated-exercise
+.. class:: exercises
 
 Übung
 --------
 
-
 .. exercise:: Rail-fence Chiffre
-    
+
     Entschlüsseln Sie: ggettueietmsr
 
-    .. solution:: 
+    .. solution::
         :pwd: GutGemeistert
 
         ::
 
             K = 3 (durch ausprobieren)
-            
+
             Länge("ggettueietmsr") = 13
 
-            13 (=L) / 3 (=K) = 4 Rest 1 
+            13 (=L) / 3 (=K) = 4 Rest 1
             ⇒ 1 Zeile mit 5 Buchstaben und die Zeilen 2 und 3 mit 4 Buchstaben.
 
             g  g  e  t  t
@@ -894,38 +907,38 @@ Steganographie vs. Verschlüsselung
 
             P = gutgemeistert
 
-            
-
 .. exercise:: Rail-fence Chiffre
-    
+
     Verschlüsseln Sie "i love crypto" mit dem Schlüssel/der Tiefe 3.
 
-    .. solution:: 
+    .. solution::
         :pwd: ILOVECRYPTO
-   
-        :: 
+
+        ::
 
             P = I L O V E C R Y P T O
-                1 2 3 1 2 3 1 2 3 1 2    
+                1 2 3 1 2 3 1 2 3 1 2
 
             C = I V R T L E Y O O C P
 
-            I  V  R  T 
+            I  V  R  T
              L  E  Y  O
               O  C  P
 
-.. class:: integrated-exercise
+
+
+.. class:: exercises
 
 Übung
 --------
 
-.. exercise::  Zeilenverschiebungs-Chiffre 
+.. exercise::  Zeilenverschiebungs-Chiffre
 
     Sie haben die folgende Nachricht erhalten:
 
-    .. class:: monospaced
+    .. container:: monospaced
 
-    YSFRITTUNCOSPJU
+        YSFRITTUNCOSPJU
 
     Außerdem konnten Sie den Schlüssel bis auf einen Wert ermitteln: 4153.
 
@@ -933,10 +946,9 @@ Steganographie vs. Verschlüsselung
 
     (b) Bestimmen Sie den richtigen Schlüssel und entschlüsseln Sie den Text?
 
-
     .. solution:: Enschlüsselungsmöglichkeiten
         :pwd: FuenfMGL
-   
+
         (a) 5: 24153, 42153, 41253, 41523, 41532
 
         (b) Wir haben fünf Spalten (basierend auf der Länge des Schlüssels) und daher drei Zeilen.
@@ -949,13 +961,13 @@ Steganographie vs. Verschlüsselung
             ::
 
                 y r t c p   ⇒ Sieht unmittelbar wie "crypt" aus
-                s i u o j   
-                f t n s u   
+                s i u o j
+                f t n s u
 
             Umsortiert gemäß dem vorhandenen Schlüssel:
 
             ::
-                
+
                 c y p t
                 o s j u
                 s f u n
@@ -967,14 +979,8 @@ Steganographie vs. Verschlüsselung
 
             ``K = 42153``
 
-
 .. exercise:: Eigenschaften von Chiffren
 
-    1. Wie unterscheiden sich Transpositions- und Substitutions-Chiffren? 
-    2. Handelt es sich bei Monoalphabetischen Chiffren um Transpositions- oder Substitutions-Chiffren? 
+    1. Wie unterscheiden sich Transpositions- und Substitutions-Chiffren?
+    2. Handelt es sich bei Monoalphabetischen Chiffren um Transpositions- oder Substitutions-Chiffren?
     3. Kann man Transpositions- und Substitutions-Chiffren kombinieren?
-
-
-
-
-    
