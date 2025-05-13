@@ -306,7 +306,7 @@ Allgemeiner Aufbau von HTML Elementen
 
     Die Spezifikation verlangt nicht in allen Fällen ein Start und Endtag. Es ist jedoch eine gute Praxis, diese immer zu verwenden, wenn ein Endtag möglich ist.
 
-.. incremental::
+.. container:: incremental
 
     Im Fall von Elementen ohne Endtag (z. B. :html:`<wbr>`\ [#]_) darf auch keines hinzugefügt werden!
 
@@ -459,7 +459,7 @@ Im Head können weitere Informationen und Pragmas deklariert werden bzw. sollten
         - :html:`<meta charset="utf-8">` (alt)
         - :html:`<meta http-equiv="Content-Security-Policy" content="default-src https:">`
 
-          .. incremental::
+          .. container:: incremental
 
               Äquivalente HTTP Header Definition:
 
@@ -489,7 +489,7 @@ Semantisches vs. „generisches“ HTML
         - Bessere Zugänglichkeit
         - Bessere Suchmaschinen-Optimierung
 
-        .. incremental::
+        .. container:: incremental
 
             **Beispiel Elemente**
 
