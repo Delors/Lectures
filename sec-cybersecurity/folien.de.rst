@@ -614,11 +614,29 @@ Ausgewählte Social-Engineering Angriffe
     :Typo Squatting:
         Ausnutzen von Tippfehlern durch das Registrieren einer Domain, die der Domain eines Zielunternehmens ähnelt, um dann Besucher der Webseite auf eine gefälschte Webseite zu leiten. (z. B. `www.gooogle.com`)
 
+    :Juice Jacking/Choice Jacking:
+        Angriffe auf Smartphones über manipulierte Ladegeräte. Beim Laden wird gleichzeitig Malware auf die Handys gespielt.
+
+        .. supplemental::
+
+            Klassisches Juice Jacking spielt (Stand 2025) auf aktuellen Smartphones von Apple und Google keine relevante Rolle mehr.
+
+            Choice Jacking war zum Beispiel bis iOS 18.4 möglich. Hierbei wird auf Fehler in den USB Implementierungen gesetzt. Insbesondere darauf, dass manche Geräte gleichzeitig USB Host und USB Device sein können - wider der Spezifikation. Dies wird dann ausgenutzt um zum Beispiel gleichzeitig eine Tastatur ein Ladegerät und eine Tastatur zu simulieren. Alternativ ist es ggf. möglich eine Bluetooth Tastatur zu simulieren. Beides wird dazu benötigt um die Dialoge, die vom Betriebssystem bei Geräteverbindungen aufgehen und als Schutz dienen sollen, unmittelbar abzunicken.
+
+            .. admonition:: Links
+
+                https://www.derstandard.at/story/3000000266075/choice-jacking-grazer-forscher-zeigen-wie-man-daten-vom-handy-abzapft
+
+                bzw.
+
+                https://www.blackhat.com/asia-25/briefings/schedule/index.html#watch-your-phone-novel-usb-based-file-access-attacks-against-mobile-devices-43262
+
+
     :Dangling DNS/Subdomain Takeover:
         Angreifer registrieren alte Domains, die von Firmen (temporär genutzt) wurden, in der Hoffnung, dass es noch (relevanten) Datenverkehr mit diesen Domains gibt, da möglicherweise nicht aller Code/alle Konfigurationen entsprechend umgestellt wurden. Zum Beispiel auch im Zusammenhang mit Subdomains bei Diensten wie AWS oder GitHub.
 
     :Slopsquatting:
-        Implementation von Sofwarepaketen, die es (bisher) *nicht* gibt, die jedoch von bestimmten LLMs häufig im generierten Code eingebunden werden. Die Pakete werden dann implementiert inkl. von den Nutzern ungewünschter Funktionalität.
+        Implementation von Sofwarepaketen/-bibliotheken, die es (bisher) *nicht* gibt, die jedoch von bestimmten LLMs häufig im generierten Code eingebunden werden. Die Pakete werden dann implementiert inkl. von den Nutzern ungewünschter Funktionalität.
 
         .. supplemental::
 
@@ -697,7 +715,15 @@ Ergänzende Quellen
 
 .. rubric:: Podcasts
 
+.. class:: incremental-list list-with-explanations
+
 - `Passwort - Der Podcast von heise security <https://www.heise.de/thema/Passwort_Podcast>`__
+
+- `Nachgehackt – Der IT-Security Podcast <https://nachgehacktpodcast.podigee.io>`__
+
+- `Spiegel Vulkan Files <https://www.spiegel.de/thema/vulkanfiles/>`__
+
+  (Es gibt sowohl einen Podcast als auch Artikel (frei/zu bezahlen))
 
 
 
