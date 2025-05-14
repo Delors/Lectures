@@ -261,7 +261,7 @@ Prüfungsleistungsbestandteile
 
 .. csv-table::
     :header: "Bestandteil","Benotung", "Punkte"
-    :class: incremental-table-rows booktabs
+    :class: incremental-table-rows booktabs highlight-cell-and-row-on-hover
     :width: 100%
 
     ein bewerteter Kurztest, Individualnote, 30
