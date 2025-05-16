@@ -40,7 +40,7 @@ Definitionen
 
     Die Originalnachricht, die verschlüsselt werden soll.
 
-:Geheimtext oder Chiffretext oder `Krytogramm`:peripheral::
+:Geheimtext oder Chiffretext oder `Kryptogramm`:peripheral::
     :eng:`Ciphertext`
 
     Die kodierte/verschlüsselte Nachricht.
