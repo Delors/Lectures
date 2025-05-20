@@ -16,7 +16,7 @@ Klassische Verschlüsselungsmethoden
 ====================================
 
 :Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
-:Version: 1.0.1
+:Version: 1.0.2
 :Quelle: Im Wesentlichen: *Cryptography and Network Security - Principles and Practice, 8th Edition, William Stallings*
 
 .. supplemental::
@@ -101,9 +101,11 @@ Es gibt zwei Voraussetzungen für die sichere Verwendung der herkömmlichen Vers
 1. Ein starker Verschlüsselungsalgorithmus.
 2. Effektive Schlüsselverwaltung:
 
+   .. class:: incremental-list
+
    (a) Sender und Empfänger müssen Kopien des geheimen Schlüssels auf sichere Weise erhalten haben und
 
-   (b) :incremental:`den Schlüssel sicher aufbewahren.`
+   (b) den Schlüssel sicher aufbewahren.
 
 
 
@@ -190,6 +192,10 @@ Klassifizierung von Angriffen
         - vom Kryptoanalytiker gewählte Klartextnachricht, zusammen mit dem zugehörigen Chiffretext, der mit dem geheimen Schlüssel verschlüsselt wurde.
         - vom Kryptoanalytiker gewählter Chiffretext zusammen mit dem entsprechenden entschlüsselten Klartext, der mit dem geheimen Schlüssel erzeugt wurde."
 
+.. supplemental::
+
+    Das Ziel ist es immer den Schlüssel zu ermitteln, damit man weitere Kommunikation effektiv entschlüsseln kann.
+
 
 
 Sicherheit von Verschlüsselungsschemata
@@ -274,7 +280,7 @@ Die Transformation kann wie folgt ausgedrückt werden:
 .. csv-table::
     :delim: space
     :width: 100%
-    :class: font-size-75 text-align-center
+    :class: compact table-data-monospaced text-align-center highlight-cell-on-hover
     :header: a b c d e f g h i j k l m n o p q r s t u v w x y z
 
     D E F G H I J K L M N O P Q R S T U V W X Y Z A B C
@@ -284,7 +290,7 @@ Mathematisch, wenn wir jedem Buchstaben einen Wert zuweisen:
 .. csv-table::
     :delim: space
     :width: 100%
-    :class: font-size-75 text-align-center
+    :class: compact table-data-monospaced text-align-center highlight-cell-on-hover
     :header: a b c d e f g h i j k l m n o p q r s t u v w x y z
 
     0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25
@@ -344,34 +350,36 @@ Brute-Force-Kryptoanalyse der Caesar-Chiffre
 Brute-Force-Kryptoanalyse (z. B. der Caesar-Chiffre)
 -----------------------------------------------------
 
-Die Entschlüsselung ist komplizierter, wenn der Klartext bereits eine sehr hohe Entropie aufweist, wie z. B. im Falle einer komprimierten ZIP Datei:
+.. story::
 
-.. csv-table::
-    :delim: space
-    :class: monospaced highlight-row-on-hover booktabs font-size-75
-    :width: 100%
+    Die Entschlüsselung ist komplizierter, wenn der Klartext bereits eine sehr hohe Entropie aufweist, wie z. B. im Falle einer komprimierten ZIP Datei:
 
-    00000000: 504b 0304 1400 0000 0800 afb1 4257 1da9  PK..........BW..
-    00000010: b0b9 4b00 0000 4f04 0000 0800 1c00 6465  ..K...O.......de
-    00000020: 6d6f 2e74 7874 5554 0900 036a 241b 65a4  mo.txtUT...j$.e.
-    00000030: a9c0 6575 780b 0001 04f8 0100 0004 1400  ..eux...........
-    00000040: 0000 edcc db09 8030 0c05 d07f a7c8 049d  .......0........
-    00000050: a28b c4f6 6203 e983 18d0 6e2f ee91 ffc3  ....b.....n/....
-    00000060: c928 b697 cb1c 2437 f569 a032 fb52 29ec  .(....$7.i.2.R).
-    00000070: a8f4 340c f206 5aca 321c afff 8cd5 c075  ..4...Z.2......u
-    00000080: d3c5 762a d291 2389 2492 48d2 0750 4b01  ..v*..#.$.H..PK.
-    00000090: 021e 0314 0000 0008 00af b142 571d a9b0  ...........BW...
-    000000a0: b94b 0000 004f 0400 0008 0018 0000 0000  .K...O..........
-    000000b0: 0001 0000 00ff 8100 0000 0064 656d 6f2e  ...........demo.
-    000000c0: 7478 7455 5405 0003 6a24 1b65 7578 0b00  txtUT...j$.eux..
-    000000d0: 0104 f801 0000 0414 0000 0050 4b05 0600  ...........PK...
-    000000e0: 0000 0001 0001 004e 0000 008d 0000 0000  .......N........
-    000000f0: 00
+    .. csv-table::
+        :delim: space
+        :class: compact table-data-monospaced highlight-row-on-hover booktabs font-size-75
+        :width: 100%
 
-.. question::
-    :class: incremental
+        00000000: 504b 0304 1400 0000 0800 afb1 4257 1da9  PK..........BW..
+        00000010: b0b9 4b00 0000 4f04 0000 0800 1c00 6465  ..K...O.......de
+        00000020: 6d6f 2e74 7874 5554 0900 036a 241b 65a4  mo.txtUT...j$.e.
+        00000030: a9c0 6575 780b 0001 04f8 0100 0004 1400  ..eux...........
+        00000040: 0000 edcc db09 8030 0c05 d07f a7c8 049d  .......0........
+        00000050: a28b c4f6 6203 e983 18d0 6e2f ee91 ffc3  ....b.....n/....
+        00000060: c928 b697 cb1c 2437 f569 a032 fb52 29ec  .(....$7.i.2.R).
+        00000070: a8f4 340c f206 5aca 321c afff 8cd5 c075  ..4...Z.2......u
+        00000080: d3c5 762a d291 2389 2492 48d2 0750 4b01  ..v*..#.$.H..PK.
+        00000090: 021e 0314 0000 0008 00af b142 571d a9b0  ...........BW...
+        000000a0: b94b 0000 004f 0400 0008 0018 0000 0000  .K...O..........
+        000000b0: 0001 0000 00ff 8100 0000 0064 656d 6f2e  ...........demo.
+        000000c0: 7478 7455 5405 0003 6a24 1b65 7578 0b00  txtUT...j$.eux..
+        000000d0: 0104 f801 0000 0414 0000 0050 4b05 0600  ...........PK...
+        000000e0: 0000 0001 0001 004e 0000 008d 0000 0000  .......N........
+        000000f0: 00
 
-    Wie kann man - wenn man weiss, dass es sich um eine ZIP Datei handelt - die Caesar-Chiffre knacken?
+    .. question::
+        :class: incremental
+
+        Wie kann man - wenn man weiss, dass es sich um eine ZIP Datei handelt - die Caesar-Chiffre knacken?
 
 
 
@@ -422,7 +430,7 @@ Erfunden vom britischen Wissenschaftler Sir Charles Wheatstone im Jahr 1854.
     *Digram*
 
     - Zwei-Buchstaben-Kombination
-    - am häufigsten im Englischen: "*th*""
+    - am häufigsten im Englischen: "*th*"
 
     *Trigram*
 
@@ -448,7 +456,7 @@ Sei das Schlüsselwort MONARCHY:
 .. csv-table::
     :delim: space
     :align: center
-    :class: highlight-row-on-hover
+    :class: highlight-cell-on-hover
 
     *M* *O* *N* *A* *R*
     *C* *H* *Y* B D
@@ -463,8 +471,8 @@ Playfair Verschlüsselung
 
 Die Verschlüsselung wird für jedes Buchstabenpaar des Klartextes durchgeführt.
 
-.. note::
-    :class: width-30
+.. compound::
+    :class: width-30 float-right
 
     .. csv-table::
         :delim: space
@@ -545,12 +553,12 @@ Vigenère-Tableau
 
             Nehmen wir an, der Schlüssel ist "D" und der Klartextbuchstabe sei "b". Dann ist der Chiffretextbuchstabe "E".
 
-    .. cell::
+    .. cell:: width-70
 
         .. csv-table::
             :delim: space
             :align: right
-            :class: font-size-70 compact compact-cells highlight-on-hover monospaced text-align-center
+            :class: font-size-70 ultra-compact highlight-on-hover monospaced text-align-center
 
             / **a** **b** **c** **d** **e** **f** **g** **h** **i** **j** **k** **l** **m** **n** **o** **p** **q** **r** **s** **t** **u** **v** **w** **x** **y** **z**
             **A** A B C D E F G H I J K L M N O P Q R S T U V W X Y Z
@@ -591,7 +599,7 @@ Beispiel einer Vigenère-Verschüsselung
 .. example::
     :class: incremental
 
-    Wenn das Schlüsselwort ``deceptive`` ist, wird die Nachricht „Wir wurden entdeckt, rette dich“ wie folgt verschlüsselt:
+    Wenn das Schlüsselwort ``deceptive`` ist, wird die Nachricht „We are discovered save yourself“ wie folgt verschlüsselt:
 
     ::
 
@@ -770,10 +778,10 @@ Steganografie
 
 
 
-Steganografie - Beispiel
+Steganografie
 --------------------------
 
-.. exercise::
+.. exercise:: Entschlüsseln
 
     .. code:: Text
         :class: copy-to-clipboard
@@ -805,7 +813,7 @@ Steganografie - Beispiel
 Auswahl anderer Steganographie-Techniken
 ------------------------------------------
 
-.. class:: incremental list-with-explanations
+.. class:: incremental-list list-with-explanations
 
 - **Zeichenmarkierung**
 
