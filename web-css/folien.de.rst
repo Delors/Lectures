@@ -19,7 +19,7 @@ Cascading Style Sheets (CSS)
 
 :Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
 :Kontakt: michael.eichberg@dhbw.de, Raum 149B
-:Version: 1.2
+:Version: 1.3.1
 
 .. supplemental::
 
@@ -698,6 +698,66 @@ Kombinatoren - Beispiele
 
 
 
+.. class:: exercises transition-scale
+
+Übung
+------------------------------------------------
+
+.. exercise:: Pseudo-class Selektoren
+
+    .. grid::
+
+        .. cell:: width-40
+
+            **Gegeben sei**
+
+            .. code:: html
+                :class: copy-to-clipboard
+                :number-lines:
+
+                <div class="slide">
+                  <h1>CSS</h1>
+                  <div class="version">1.0</div>
+                  <aside>
+                    <p>Cascading Style Sheets</p>
+                    <ol id="topics">
+                      <li>What is CSS?</li>
+                      <li>How to use CSS?<br></li>
+                      <li>Inline vs. Block</li>
+                      <li>Font Styling</li>
+                      <li class="todo">Lists</li>
+                      <li>Background Styling</li>
+                    </ol>
+                  </aside>
+                </div>
+
+        .. cell:: width-60
+
+            **Aufgaben**
+
+            1. Schreiben Sie einen CSS Selektor, um den ersten Buchstaben des ersten Wortes eines jeden Listenelements (:css:`:first-letter`) in Kleinbuchstaben darzustellen mit :css:`text-transform: lowercase`.
+            2. Schreiben Sie einen CSS Selektor, um jeder zweiten Zeile der Liste eine andere Hintergrundfarbe zu geben mit :css:`background-color: plum`.
+            3. Selektieren Sie die Überschrift eines Blocks(:html:`<div>`\ s) mit der Klasse :html:`slide` wenn diese das erst Kind ist und geben Sie ihr zum Beispiel die Schriftfarbe rot mit :css:`color: red`.
+
+        .. solution::
+            :pwd: 1C2S3S
+
+            .. code:: css
+
+                li:nth-of-type(2n) {
+                    background-color: lightgreen;
+                }
+
+                li:first-letter {
+                    text-transform: lowercase;
+                }
+
+                div.slide > h1:first-child {
+                    font-style: italic;
+                }
+
+
+
 Spezifität von Selektoren
 -----------------------------
 
@@ -1259,6 +1319,195 @@ JavaScript und CSS Selektoren
     CSS Selektoren werden auch von der JavaScript API für HTML Dokumente verwendet, um Elemente zu selektieren.
 
 
+.. class:: exercises
+
+Übung
+------------------------------------------------
+
+.. story::
+
+    .. exercise:: Spezifität von Selektoren
+
+        Bestimmen Sie die Spezifität der folgenden Selektoren:
+
+        .. csv-table::
+            :width: 100%
+            :header: Selektor, a, b, c
+
+            \*,
+            #ld-menu:has(+ #ld-main[style*='display: none;'])
+            #ld-menu:hover
+            div#ld-menu
+            #continuous-view div.supplemental img
+
+
+        .. solution::
+            :pwd: Mal0MalMehr
+
+            .. rubric:: Lösung
+
+            .. csv-table::
+                :width: 100%
+                :header: Selektor, a, b, c
+
+                \*, 0, 0, 0
+                #ld-menu:has(+ #ld-main[style*='display: none;']), 2, 1, 0
+                #ld-menu:hover, 1, 1, 0
+                div#ld-menu , 1, 0, 1
+                #continuous-view div.supplemental img, 1, 1, 2
+
+    .. exercise:: :is vs. :where
+        :formatted-title: :css:`:is` vs. :css:`:where`
+        :class: incremental
+
+        .. grid::
+
+            .. cell::
+
+                .. code:: css
+                    :class: copy-to-clipboard
+                    :number-lines:
+
+
+                    table :is(th, td.head) {
+                        font-weight: 900;
+                        color: green;
+                    }
+
+                    table :where(th, td.head):hover {
+                        background-color: lightgray;
+                        color: blue;
+                    }
+
+            .. cell::
+
+                .. raw:: html
+
+                    <div>
+                        <template shadowrootmode="open">
+                            <style>
+                                table, table th, table td {
+                                    padding: 0.15em;
+                                    border: 1px solid black;
+                                    border-collapse: collapse;
+                                }
+                                table :is(th, td.head) {
+                                    font-weight: 900;
+                                    color: green;
+                                }
+
+                                /*
+                                table :where(th, td.head):hover {
+                                    background-color: lightgray;
+                                    color: blue;
+                                }
+                                */
+                            </style>
+                            <table>
+                                <tr>
+                                    <th>Header 1</th>
+                                    <th>Header 2</th>
+                                    <td>A Value</td>
+                                </tr>
+                                <tr>
+                                    <td class="red">Row 1, Cell 1</td>
+                                    <td>Row 1, Cell 2</td>
+                                    <td class="head">Row 1, Cell 3</td>
+                                </tr>
+                                <tr>
+                                    <td>Row 2, Cell 1</td>
+                                    <td>Row 2, Cell 2</td>
+                                    <td>Row 2, Cell 3</td>
+                                </tr>
+                            </table>
+                        </template>
+                    </div>
+
+        Was passiert, wenn Sie mit der Maus über die Tabelle fahren? Wird der Text blau/verändert sich der Hintergrund?
+
+
+
+.. class:: exercises
+
+Übung
+------------------------------------------------
+
+.. exercise:: Einfache Selektoren
+
+    .. grid::
+
+        .. cell:: width-40
+
+            **Gegeben sei**
+
+            .. code:: html
+                :class: copy-to-clipboard
+                :number-lines:
+
+                <div class="slide">
+                  <h1>CSS</h1>
+                  <div class="version">1.0</div>
+                  <aside>
+                    <p>Cascading Style Sheets</p>
+                    <ol id="topics">
+                      <li>What is CSS?</li>
+                      <li>How to use CSS?<br></li>
+                      <li>Inline vs. Block</li>
+                      <li>Font Styling</li>
+                      <li class="todo">Lists</li>
+                      <li>Background Styling</li>
+                    </ol>
+                  </aside>
+                </div>
+
+        .. cell:: width-60
+
+            **Aufgaben**
+
+            1. Selektieren Sie :html:`<div>` Elemente mit Klassen.
+            2. Selektieren Sie alle :html:`<div>` Elemente, die eine Klasse haben und ein :html:`<h1>` Element enthalten.
+            3. Selektieren Sie :html:`<li>` Elemente die die Klasse :html:`todo` haben oder auf ein :html:`<li>` folgen, das die Klasse :html:`todo` hat.
+            4. Selektieren Sie die geordnete Liste mit der id :html:`topics`.
+            5. Selektieren Sie ein :html:`<h1>` Element, wenn es ein direktes Geschwister-Element hat, dass die Klasse :html:`version` hat.
+            6. Selektieren Sie :html:`<li>` Elemente, die keine Klassen haben.
+
+    .. supplemental::
+
+        Kopieren Sie den HTML Code in eine Datei und fügen Sie ein :html:`<style>`\-Element hinzu. Testen Sie Ihre Selektoren zum Beispiel durch das Setzen der Farbe des Textes oder des Hintergrunds (background-color). Insbesondere für den Hintergrund bietet es sich ggf. an eine Farge zu verwenden, die einen Alpha Kanal hat (z. B. :css:`background-color: rgba(255, 155, 0, 0.6);`).
+
+    .. solution::
+        :pwd: Mal0MalMehr
+
+        .. rubric:: Lösung
+
+        .. code:: css
+            :class: copy-to-clipboard
+            :number-lines:
+
+            div[class] {
+                color: red;
+                background-color: rgba(255, 155, 0, 0.6);
+            }
+
+            div[class]:has(h1) {
+                color: green;
+            }
+
+            li.todo, li.todo ~ li {
+                color: blue;
+            }
+
+            ol#topics /*oder nur #topics*/ {
+                background-color: plum;
+            }
+
+            h1:has(+ .version) {
+                text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+            }
+
+            li:not([class]) {
+               color: lightcyan;
+            }
 
 Nesting
 ------------------------------------------------
@@ -1542,7 +1791,7 @@ Nesting - Beispiel
 
         .. cell:: width-50
 
-            Realisieren folgenden Effekt nur mit CSS:
+            Realisieren Sie folgenden Effekt nur mit CSS:
 
             .. raw:: html
 
@@ -1642,7 +1891,21 @@ Grundlagen
 
     :``ch``: Breite des Zeichens „0“ (ZERO, U+0030) (Ein Wert von 60ch entspricht bei vielen Fonts einer effektiven Breite von ca. 80 Zeichen im Durchschnitt.)
 
-    :``calc``: erlaubt verschiedenste Berechnungen ist aber an einigen Stellen *Whitespace-sensitive* und unterliegt bestimmten Einschränkungen welche Arten von Werten verrechnet werden können. (+ und - müssen immer mit Leerraum umgeben sein.)
+    :``calc``: erlaubt verschiedene Berechnungen ist aber an einigen Stellen *Whitespace-sensitive* und unterliegt bestimmten Einschränkungen welche Arten von Werten verrechnet werden können. (+ und - müssen immer mit Leerraum umgeben sein.)
+
+
+:css:`initial` vs. :css:`inherit` vs. :css:`unset` vs. :css:`revert`\ [#]_
+---------------------------------------------------------------------------------
+
+.. class:: incremental-list
+
+:`initial`:css:: setzt den Wert auf den Standardwert der CSS Spezifikation
+:`inherit`:css:: setzt den Wert auf den Wert des Elternelements
+:`unset`:css:: setzt den Wert auf den Standardwert der CSS Spezifikation, wenn die Eigenschaft nicht vererbt wird (vgl. :css:`initial`), ansonsten auf den Wert des Elternelements (:css:`inherit`)
+:`revert`:css:: setzt den Wert auf den Wert, der durch die frühere Kaskade bestimmt wird (Typischerweise der Wert der sich aus der dem User-Agent ergibt, wenn keine anderen Regeln zutreffen.)
+:`revert-layer`:css:: setzt den Wert auf den Wert, der durch die frühere Kaskade bestimmt wird, aber nur für die Layer, die vor dem aktuellen Layer liegen. (Siehe auch :css:`@layer`.)
+
+.. [#] https://www.w3.org/Style/CSS/all-properties.en.html bzw. https://www.w3.org/TR/CSS2/propidx.html
 
 
 
@@ -2486,10 +2749,10 @@ Bauen Sie Unterstützung für den Dark und Light Mode nach.\ [#]_
 
 .. class:: exercises transition-move-up
 
-Übung - Komplexeres Layout
+Übung
 ---------------------------
 
-.. exercise::
+.. exercise:: komplexeres Layout
 
     Versuchen Sie das Layout der folgenden HTML-Datei mittels CSS nachzubauen. Der HTML Code darf nicht verändert werden. JavaScript darf auch nicht verwendet werden. Den Rumpf der HTML-Datei finden Sie im Anhang.
 

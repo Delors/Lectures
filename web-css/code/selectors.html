@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <style>
+        table :is(th, td.head) {
+            font-weight: 900;
+            color: green;
+        }
+
+        table :where(th, td.head):hover {
+            background-color: lightgray;
+            color: blue;
+        }
+
+        table td.red {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <table>
+        <tr>
+            <th>Header 1</th>
+            <th>Header 2</th>
+            <td>A Value</td>
+        </tr>
+        <tr>
+            <td class="red">Row 1, Cell 1</td>
+            <td>Row 1, Cell 2</td>
+            <td class="head">Row 1, Cell 3</td>
+        </tr>
+        <tr>
+            <td>Row 2, Cell 1</td>
+            <td>Row 2, Cell 2</td>
+            <td>Row 2, Cell 3</td>
+        </tr>
+    </table>
+</body>
+
+</html>

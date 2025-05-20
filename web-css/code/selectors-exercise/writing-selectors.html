@@ -1,0 +1,71 @@
+<style>
+    div[class] {
+        color: red;
+        background-color: rgba(255, 155, 0, 0.6);
+    }
+
+    div[class]:has(h1) {
+        color: green;
+    }
+
+    li {
+        padding: 0.5em;
+    }
+
+    li.todo,
+    li.todo~li {
+        color: blue;
+    }
+
+    h1:has(+ .version) {
+        text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+    }
+
+    ol#topics {
+        background-color: plum;
+    }
+
+    li:not([class]) {
+        color: lightcyan;
+    }
+
+    li:nth-of-type(2n) {
+        background-color: lightgreen;
+    }
+
+    li:first-letter {
+        text-transform: lowercase;
+    }
+
+    .slide h1:first-child {
+        font-style: italic;
+    }
+</style>
+<div class="slide">
+    <h1>CSS</h1>
+    <div class="version">1.0</div>
+    <aside>
+        <p>Cascading Style Sheets</p>
+        <ol id="topics">
+            <li>What is CSS?</li>
+            <li>How to use CSS?<br></li>
+            <li>Inline vs. Block</li>
+            <li>Font Styling</li>
+            <li class="todo">Lists</li>
+            <li>Background Styling
+                <div>
+                    <template shadowrootmode="open">
+                        <style>
+                            li {
+                            }
+                        </style>
+                        <ol>
+                            <li>Color</li>
+                            <li>Image</li>
+                        </ol>
+                    </template>
+                </div>
+            </li>
+        </ol>
+    </aside>
+</div>
