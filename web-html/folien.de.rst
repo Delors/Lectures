@@ -21,7 +21,7 @@ HTML(5)
 
 :Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
 :Kontakt: michael.eichberg@dhbw.de, Raum 149B
-:Version: 2.0.0
+:Version: 2.1.1
 
 .. supplemental::
 
@@ -1585,3 +1585,54 @@ Referenzen
             </footer>
         </body>
         </html>
+
+
+
+.. class:: exercises transition-scale
+
+Übung
+--------
+
+.. story::
+
+    .. exercise:: HTML Dialog
+
+        Erstellen Sie folgende Webseite (ohne Verwendung von CSS und/oder JavaScript):
+
+        .. grid::
+
+            .. cell:: width-50
+
+                **Nach dem Laden der Seite**
+
+                .. image:: code/dialogs-open.png
+                        :width: 100%
+                        :alt: Dialog ist geöffnet
+
+            .. cell:: width-50 incremental
+
+                **Nach dem Schließen des Dialogs**
+
+                .. image:: code/dialogs-closed.png
+                        :width: 100%
+                        :alt: Dialog ist geschlossen
+
+        .. container:: incremental
+
+            Verwenden Sie das :html:`<dialog>` Element, um den Dialog zu erstellen. Damit der Dialog direkt beim Laden geöffnet ist, verwenden Sie das boolsche Attribut :html:`open`. Für den Schließen-Button verwenden Sie ein :html:`<form>` Element mit dem Attribut :html:`method="dialog"` und ein Button-element (z. B. :html:`<form method="dialog"><button>X</button></form>`).
+
+        .. container:: incremental
+
+            Sie können das :html:`closedby` Attribut verwenden (see `WhatWg closedby attribute <https://html.spec.whatwg.org/dev/interactive-elements.html#attr-dialog-closedby>`__), um den Dialog zu schließen, wenn der Benutzer außerhalb des Dialogs klickt.
+
+        .. container:: incremental
+
+            Die Definition von Trumpismus finden Sie hier: `Wikipedia - Trumpismus <https://de.wikipedia.org/wiki/Trumpismus>`__; Sie können auch jegliche andere Definition verwenden.
+
+        .. solution::
+            :pwd: HTMLOnlyDialog
+
+            .. include:: code/dialogs.html
+                :code: html
+                :class: copy-to-clipboard
+                :number-lines:
