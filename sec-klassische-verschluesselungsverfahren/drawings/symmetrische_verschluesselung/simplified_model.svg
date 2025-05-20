@@ -45,24 +45,6 @@
                 />
       </g>
     </marker>
-    <font-face
-            font-family="Noto Sans Display"
-            font-size="20"
-            panose-1="2 11 5 2 4 5 4 2 2 4"
-            units-per-em="1000"
-            underline-position="-100"
-            underline-thickness="50"
-            slope="0"
-            x-height="536"
-            cap-height="714"
-            ascent="1069.0002"
-            descent="-292.99927"
-            font-weight="400"
-        >
-      <font-face-src>
-        <font-face-name name="NotoSansDisplay-Regular" />
-      </font-face-src>
-    </font-face>
   </defs>
   <metadata> Produced by OmniGraffle 8.0\n2025-05-13 13:23:19 +0000</metadata>
   <g
@@ -99,7 +81,6 @@
                         fill="#797979"
                         x="0"
                         y="7"
-                        xml:space="preserve"
                     >Lorem ipsum dolor sit amet, </tspan>
           <tspan
                         font-family="Noto Sans Display"
@@ -108,7 +89,6 @@
                         fill="#797979"
                         x="0"
                         y="16"
-                        xml:space="preserve"
                     >consectetur adipiscing elit, </tspan>
           <tspan
                         font-family="Noto Sans Display"
@@ -117,7 +97,6 @@
                         fill="#797979"
                         x="0"
                         y="25"
-                        xml:space="preserve"
                     >sed do eiusmod tempor </tspan>
           <tspan
                         font-family="Noto Sans Display"
@@ -126,7 +105,6 @@
                         fill="#797979"
                         x="0"
                         y="34"
-                        xml:space="preserve"
                     >incididunt ut labore et </tspan>
           <tspan
                         font-family="Noto Sans Display"
@@ -135,7 +113,6 @@
                         fill="#797979"
                         x="0"
                         y="43"
-                        xml:space="preserve"
                     >dolore magna aliqua. Ut </tspan>
           <tspan
                         font-family="Noto Sans Display"
@@ -144,7 +121,6 @@
                         fill="#797979"
                         x="0"
                         y="52"
-                        xml:space="preserve"
                     >enim ad minim veniam, quis </tspan>
           <tspan
                         font-family="Noto Sans Display"
@@ -153,7 +129,6 @@
                         fill="#797979"
                         x="0"
                         y="61"
-                        xml:space="preserve"
                     >nostrud exercitation </tspan>
           <tspan
                         font-family="Noto Sans Display"
@@ -162,7 +137,6 @@
                         fill="#797979"
                         x="0"
                         y="70"
-                        xml:space="preserve"
                     >ullamco laboris nisi ut </tspan>
           <tspan
                         font-family="Noto Sans Display"
@@ -171,7 +145,6 @@
                         fill="#797979"
                         x="0"
                         y="79"
-                        xml:space="preserve"
                     >aliquip ex ea commodo </tspan>
           <tspan
                         font-family="Noto Sans Display"
@@ -180,7 +153,6 @@
                         fill="#797979"
                         x="0"
                         y="88"
-                        xml:space="preserve"
                     >consequat. Duis aute irure </tspan>
           <tspan
                         font-family="Noto Sans Display"
@@ -189,8 +161,7 @@
                         fill="#797979"
                         x="0"
                         y="97"
-                        xml:space="preserve"
-                    >dolor in reprehenderit in </tspan>
+                    >dolor in reprehender </tspan>
           <tspan
                         font-family="Noto Sans Display"
                         font-size="7"
@@ -198,17 +169,8 @@
                         fill="#797979"
                         x="0"
                         y="106"
-                        xml:space="preserve"
-                    >voluptate velit esse cillum </tspan>
-          <tspan
-                        font-family="Noto Sans Display"
-                        font-size="7"
-                        font-weight="400"
-                        fill="#797979"
-                        x="0"
-                        y="115"
-                        xml:space="preserve"
-                    >dolore </tspan>
+                    >voluptate velit</tspan>
+
           <tspan
                         font-family="Noto Sans Display"
                         font-size="7"
@@ -216,7 +178,6 @@
                         fill="#797979"
                         x="0"
                         y="124"
-                        xml:space="preserve"
                     > fugiat nulla pa</tspan>
           <tspan
                         font-family="Noto Sans Display"
@@ -225,7 +186,6 @@
                         fill="#797979"
                         x="0"
                         y="133"
-                        xml:space="preserve"
                     >Excep</tspan>
         </text>
       </g>
@@ -252,7 +212,6 @@
                         fill="#797979"
                         x="0"
                         y="7"
-                        xml:space="preserve"
                     >OXANV RYBDV MXUXA BRC </tspan>
           <tspan
                         font-family="Noto Sans Display"
@@ -261,7 +220,6 @@
                         fill="#797979"
                         x="0"
                         y="16"
-                        xml:space="preserve"
                     >JVNCI LXWBNLCNCDA </tspan>
           <tspan
                         font-family="Noto Sans Display"
@@ -270,7 +228,6 @@
                         fill="#797979"
                         x="0"
                         y="25"
-                        xml:space="preserve"
                     >JMRYRBLRWP NURCI BNM </tspan>
           <tspan
                         font-family="Noto Sans Display"
@@ -279,7 +236,6 @@
                         fill="#797979"
                         x="0"
                         y="34"
-                        xml:space="preserve"
                     >MX NRDBVXM CNVYXA </tspan>
           <tspan
                         font-family="Noto Sans Display"
@@ -288,7 +244,6 @@
                         fill="#797979"
                         x="0"
                         y="43"
-                        xml:space="preserve"
                     >RWLRMRMDWC DC UJKXAN </tspan>
           <tspan
                         font-family="Noto Sans Display"
@@ -297,7 +252,6 @@
                         fill="#797979"
                         x="0"
                         y="52"
-                        xml:space="preserve"
                     >NC MXUXAN VJPWJ JURZDJK </tspan>
           <tspan
                         font-family="Noto Sans Display"
@@ -306,7 +260,6 @@
                         fill="#797979"
                         x="0"
                         y="61"
-                        xml:space="preserve"
                     >XC NWRV JM VRWRV </tspan>
           <tspan
                         font-family="Noto Sans Display"
@@ -315,7 +268,6 @@
                         fill="#797979"
                         x="0"
                         y="70"
-                        xml:space="preserve"
                     >ENWRJVI ZDRB WXBCADM </tspan>
           <tspan
                         font-family="Noto Sans Display"
@@ -324,7 +276,6 @@
                         fill="#797979"
                         x="0"
                         y="79"
-                        xml:space="preserve"
                     >NGNALRCJCRXW DUUJVLX </tspan>
           <tspan
                         font-family="Noto Sans Display"
@@ -333,7 +284,6 @@
                         fill="#797979"
                         x="0"
                         y="88"
-                        xml:space="preserve"
                     >UJK</tspan>
           <tspan
                         font-family="Noto Sans Display"
@@ -342,7 +292,6 @@
                         fill="#797979"
                         x="0"
                         y="97"
-                        xml:space="preserve"
                     >XARB </tspan>
         </text>
       </g>
@@ -369,7 +318,6 @@
                         fill="#797979"
                         x="0"
                         y="7"
-                        xml:space="preserve"
                     >Lorem ipsum dolor sit amet, </tspan>
           <tspan
                         font-family="Noto Sans Display"
@@ -378,7 +326,6 @@
                         fill="#797979"
                         x="0"
                         y="16"
-                        xml:space="preserve"
                     >consectetur adipiscing elit, </tspan>
           <tspan
                         font-family="Noto Sans Display"
@@ -387,7 +334,6 @@
                         fill="#797979"
                         x="0"
                         y="25"
-                        xml:space="preserve"
                     >sed do eiusmod tempor </tspan>
           <tspan
                         font-family="Noto Sans Display"
@@ -396,7 +342,6 @@
                         fill="#797979"
                         x="0"
                         y="34"
-                        xml:space="preserve"
                     >incididunt ut labore et </tspan>
           <tspan
                         font-family="Noto Sans Display"
@@ -405,7 +350,6 @@
                         fill="#797979"
                         x="0"
                         y="43"
-                        xml:space="preserve"
                     >dolore magna aliqua. Ut </tspan>
           <tspan
                         font-family="Noto Sans Display"
@@ -414,7 +358,6 @@
                         fill="#797979"
                         x="0"
                         y="52"
-                        xml:space="preserve"
                     >enim ad minim veniam, quis </tspan>
           <tspan
                         font-family="Noto Sans Display"
@@ -423,7 +366,6 @@
                         fill="#797979"
                         x="0"
                         y="61"
-                        xml:space="preserve"
                     >nostrud exercitation </tspan>
           <tspan
                         font-family="Noto Sans Display"
@@ -432,7 +374,6 @@
                         fill="#797979"
                         x="0"
                         y="70"
-                        xml:space="preserve"
                     >ullamco laboris nisi ut </tspan>
           <tspan
                         font-family="Noto Sans Display"
@@ -441,7 +382,6 @@
                         fill="#797979"
                         x="0"
                         y="79"
-                        xml:space="preserve"
                     >aliquip ex ea commodo </tspan>
           <tspan
                         font-family="Noto Sans Display"
@@ -450,7 +390,6 @@
                         fill="#797979"
                         x="0"
                         y="88"
-                        xml:space="preserve"
                     >consequat. Duis aute irure </tspan>
           <tspan
                         font-family="Noto Sans Display"
@@ -459,8 +398,7 @@
                         fill="#797979"
                         x="0"
                         y="97"
-                        xml:space="preserve"
-                    >dolor in reprehenderit in </tspan>
+                    >dolor in reprehender </tspan>
           <tspan
                         font-family="Noto Sans Display"
                         font-size="7"
@@ -468,17 +406,7 @@
                         fill="#797979"
                         x="0"
                         y="106"
-                        xml:space="preserve"
-                    >voluptate velit esse cillum </tspan>
-          <tspan
-                        font-family="Noto Sans Display"
-                        font-size="7"
-                        font-weight="400"
-                        fill="#797979"
-                        x="0"
-                        y="115"
-                        xml:space="preserve"
-                    >dolore </tspan>
+                    >voluptate velit</tspan>
           <tspan
                         font-family="Noto Sans Display"
                         font-size="7"
@@ -486,7 +414,6 @@
                         fill="#797979"
                         x="0"
                         y="124"
-                        xml:space="preserve"
                     > fugiat nulla pa</tspan>
           <tspan
                         font-family="Noto Sans Display"
@@ -495,7 +422,6 @@
                         fill="#797979"
                         x="0"
                         y="133"
-                        xml:space="preserve"
                     >Excep</tspan>
         </text>
       </g>
@@ -508,7 +434,6 @@
                         fill="black"
                         x="0"
                         y="64"
-                        xml:space="preserve"
                     >🔑</tspan>
         </text>
       </g>
@@ -521,7 +446,6 @@
                         fill="black"
                         x="0"
                         y="64"
-                        xml:space="preserve"
                     >🔑</tspan>
         </text>
       </g>
@@ -535,7 +459,6 @@
                         fill="black"
                         x="17408297e-20"
                         y="34"
-                        xml:space="preserve"
                     >K</tspan>
         </text>
       </g>
@@ -549,7 +472,6 @@
                         fill="black"
                         x="17408297e-20"
                         y="34"
-                        xml:space="preserve"
                     >K</tspan>
         </text>
       </g>
@@ -562,7 +484,6 @@
                         fill="black"
                         x="38.03755"
                         y="30"
-                        xml:space="preserve"
                     >gemeinsamer</tspan>
           <tspan
                         font-family="Noto Sans Display"
@@ -571,7 +492,6 @@
                         fill="black"
                         x="3.835551"
                         y="68"
-                        xml:space="preserve"
                     >geheimer Schlüssel </tspan>
           <tspan
                         font-family="Noto Sans Display"
@@ -580,7 +500,6 @@
                         fill="black"
                         x="25.96955"
                         y="106"
-                        xml:space="preserve"
                     >von Sender und </tspan>
           <tspan
                         font-family="Noto Sans Display"
@@ -589,7 +508,6 @@
                         fill="black"
                         x="55.06155"
                         y="144"
-                        xml:space="preserve"
                     >Empfänger</tspan>
         </text>
       </g>
@@ -602,7 +520,6 @@
                         fill="#797979"
                         x="14.65525"
                         y="26"
-                        xml:space="preserve"
                     >übermittelter</tspan>
           <tspan
                         font-family="Noto Sans Display"
@@ -611,7 +528,6 @@
                         fill="#797979"
                         x="24.06325"
                         y="59"
-                        xml:space="preserve"
                     >Geheimtext</tspan>
         </text>
       </g>
@@ -624,16 +540,14 @@
                         font-weight="400"
                         fill="black"
                         x="31.36125"
-                        y="30"
-                        xml:space="preserve"
+                        y="26"
                     >Y</tspan>
           <tspan
                         font-family="Noto Sans Display"
                         font-size="28"
                         font-weight="400"
                         fill="black"
-                        y="30"
-                        xml:space="preserve"
+                        y="26"
                     > = E(</tspan>
           <tspan
                         font-family="Noto Sans Display"
@@ -641,16 +555,14 @@
                         font-style="italic"
                         font-weight="400"
                         fill="black"
-                        y="30"
-                        xml:space="preserve"
+                        y="26"
                     >K</tspan>
           <tspan
                         font-family="Noto Sans Display"
                         font-size="28"
                         font-weight="400"
                         fill="black"
-                        y="30"
-                        xml:space="preserve"
+                        y="26"
                     >,</tspan>
           <tspan
                         font-family="Noto Sans Display"
@@ -658,16 +570,14 @@
                         font-style="italic"
                         font-weight="400"
                         fill="black"
-                        y="30"
-                        xml:space="preserve"
+                        y="26"
                     >X</tspan>
           <tspan
                         font-family="Noto Sans Display"
                         font-size="28"
                         font-weight="400"
                         fill="black"
-                        y="30"
-                        xml:space="preserve"
+                        y="26"
                     >)</tspan>
         </text>
       </g>
@@ -680,7 +590,6 @@
                         fill="black"
                         x="2.3074062"
                         y="30"
-                        xml:space="preserve"
                     >Klartext</tspan>
           <tspan
                         font-family="Noto Sans Display"
@@ -689,7 +598,6 @@
                         fill="black"
                         x=".65540625"
                         y="68"
-                        xml:space="preserve"
                     >Eingabe</tspan>
         </text>
       </g>
@@ -702,7 +610,6 @@
                         fill="black"
                         x="5.881625"
                         y="30"
-                        xml:space="preserve"
                     >Klartext</tspan>
           <tspan
                         font-family="Noto Sans Display"
@@ -711,7 +618,6 @@
                         fill="black"
                         x=".225625"
                         y="68"
-                        xml:space="preserve"
                     >Ausgabe</tspan>
         </text>
       </g>
@@ -737,7 +643,6 @@
                         fill="black"
                         x="0"
                         y="48"
-                        xml:space="preserve"
                     >🔒</tspan>
         </text>
       </g>
@@ -763,7 +668,6 @@
                         fill="black"
                         x="0"
                         y="48"
-                        xml:space="preserve"
                     >🔓</tspan>
         </text>
       </g>
@@ -771,13 +675,12 @@
         <text transform="translate(172.74023 331.5)" fill="black">
           <tspan
                         font-family="Noto Sans Display"
-                        font-size="28"
+                        font-size="26"
                         font-style="italic"
                         font-weight="400"
                         fill="black"
                         x="32.681625"
-                        y="30"
-                        xml:space="preserve"
+                        y="26"
                     >X</tspan>
         </text>
       </g>
@@ -785,55 +688,49 @@
         <text transform="translate(685.53125 328)" fill="black">
           <tspan
                         font-family="Noto Sans Display"
-                        font-size="28"
+                        font-size="26"
                         font-style="italic"
                         font-weight="400"
                         fill="black"
                         x="29.02325"
-                        y="30"
-                        xml:space="preserve"
+                        y="26"
                     >X </tspan>
           <tspan
                         font-family="Noto Sans Display"
-                        font-size="28"
+                        font-size="26"
                         font-weight="400"
                         fill="black"
-                        y="30"
-                        xml:space="preserve"
+                        y="26"
                     >= D(</tspan>
           <tspan
                         font-family="Noto Sans Display"
-                        font-size="28"
+                        font-size="26"
                         font-style="italic"
                         font-weight="400"
                         fill="black"
-                        y="30"
-                        xml:space="preserve"
+                        y="26"
                     >K</tspan>
           <tspan
                         font-family="Noto Sans Display"
-                        font-size="28"
+                        font-size="26"
                         font-weight="400"
                         fill="black"
-                        y="30"
-                        xml:space="preserve"
+                        y="26"
                     >,</tspan>
           <tspan
                         font-family="Noto Sans Display"
-                        font-size="28"
+                        font-size="26"
                         font-style="italic"
                         font-weight="400"
                         fill="black"
-                        y="30"
-                        xml:space="preserve"
+                        y="26"
                     >Y</tspan>
           <tspan
                         font-family="Noto Sans Display"
-                        font-size="28"
+                        font-size="26"
                         font-weight="400"
                         fill="black"
-                        y="30"
-                        xml:space="preserve"
+                        y="26"
                     >)</tspan>
         </text>
       </g>
@@ -885,7 +782,6 @@
                         fill="#344463"
                         x="12.482332"
                         y="30"
-                        xml:space="preserve"
                     >Verschlüsselungs-</tspan>
           <tspan
                         font-family="Noto Sans Display"
@@ -894,7 +790,6 @@
                         fill="#344463"
                         x="48.37833"
                         y="68"
-                        xml:space="preserve"
                     >algorithmus</tspan>
           <tspan
                         font-family="Noto Sans Display"
@@ -903,7 +798,6 @@
                         fill="#344463"
                         x="81.53033"
                         y="97"
-                        xml:space="preserve"
                     >(z. B. AES)</tspan>
         </text>
       </g>
@@ -916,7 +810,6 @@
                         fill="#344463"
                         x="27.187625"
                         y="30"
-                        xml:space="preserve"
                     >Entschlüsselungs-</tspan>
           <tspan
                         font-family="Noto Sans Display"
@@ -925,7 +818,6 @@
                         fill="#344463"
                         x="62.803625"
                         y="68"
-                        xml:space="preserve"
                     >algorithmus </tspan>
           <tspan
                         font-family="Noto Sans Display"
@@ -934,7 +826,6 @@
                         fill="#344463"
                         x="64.275625"
                         y="97"
-                        xml:space="preserve"
                     >(Umkehrung des </tspan>
           <tspan
                         font-family="Noto Sans Display"
@@ -943,7 +834,6 @@
                         fill="#344463"
                         x="4.895625"
                         y="124"
-                        xml:space="preserve"
                     >Verschlüsselungsalgorithmus)</tspan>
         </text>
       </g>
@@ -956,7 +846,6 @@
                         fill="black"
                         x="38.03755"
                         y="30"
-                        xml:space="preserve"
                     >gemeinsamer</tspan>
           <tspan
                         font-family="Noto Sans Display"
@@ -965,7 +854,6 @@
                         fill="black"
                         x="3.835551"
                         y="68"
-                        xml:space="preserve"
                     >geheimer Schlüssel </tspan>
           <tspan
                         font-family="Noto Sans Display"
@@ -974,7 +862,6 @@
                         fill="black"
                         x="25.96955"
                         y="106"
-                        xml:space="preserve"
                     >von Sender und </tspan>
           <tspan
                         font-family="Noto Sans Display"
@@ -983,7 +870,6 @@
                         fill="black"
                         x="55.06155"
                         y="144"
-                        xml:space="preserve"
                     >Empfänger</tspan>
         </text>
       </g>

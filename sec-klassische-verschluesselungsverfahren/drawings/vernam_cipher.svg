@@ -35,24 +35,6 @@
                 />
       </g>
     </marker>
-    <font-face
-            font-family="Noto Sans Display"
-            font-size="64"
-            panose-1="2 11 5 2 4 5 4 2 2 4"
-            units-per-em="1000"
-            underline-position="-100"
-            underline-thickness="50"
-            slope="0"
-            x-height="536"
-            cap-height="714"
-            ascent="1069.0002"
-            descent="-292.99927"
-            font-weight="400"
-        >
-      <font-face-src>
-        <font-face-name name="NotoSansDisplay-Regular" />
-      </font-face-src>
-    </font-face>
   </defs>
   <metadata> Produced by OmniGraffle 8.0\n2025-05-13 13:15:41 +0000</metadata>
   <g
@@ -75,7 +57,6 @@
                         fill="black"
                         x="8.371625"
                         y="30"
-                        xml:space="preserve"
                     >Kryptografischer </tspan>
           <tspan
                         font-family="Noto Sans Display"
@@ -84,7 +65,6 @@
                         fill="black"
                         x="41.346625"
                         y="68"
-                        xml:space="preserve"
                     >Bitstrom(</tspan>
           <tspan
                         font-family="Noto Sans Display"
@@ -93,7 +73,6 @@
                         font-weight="400"
                         fill="black"
                         y="68"
-                        xml:space="preserve"
                     >k</tspan>
           <tspan
                         font-family="Noto Sans Display"
@@ -102,7 +81,6 @@
                         font-weight="400"
                         fill="black"
                         y="80"
-                        xml:space="preserve"
                     >i</tspan>
           <tspan
                         font-family="Noto Sans Display"
@@ -110,7 +88,6 @@
                         font-weight="400"
                         fill="black"
                         y="68"
-                        xml:space="preserve"
                     >)</tspan>
         </text>
       </g>
@@ -123,7 +100,6 @@
                         fill="black"
                         x="11.64725"
                         y="30"
-                        xml:space="preserve"
                     >Klartext</tspan>
           <tspan
                         font-family="Noto Sans Display"
@@ -132,7 +108,6 @@
                         fill="black"
                         x="41.59825"
                         y="68"
-                        xml:space="preserve"
                     >(</tspan>
           <tspan
                         font-family="Noto Sans Display"
@@ -141,7 +116,6 @@
                         font-weight="400"
                         fill="black"
                         y="68"
-                        xml:space="preserve"
                     >p</tspan>
           <tspan
                         font-family="Noto Sans Display"
@@ -150,7 +124,6 @@
                         font-weight="400"
                         fill="black"
                         y="80"
-                        xml:space="preserve"
                     >i</tspan>
           <tspan
                         font-family="Noto Sans Display"
@@ -158,7 +131,6 @@
                         font-weight="400"
                         fill="black"
                         y="68"
-                        xml:space="preserve"
                     >)</tspan>
         </text>
       </g>
@@ -184,7 +156,6 @@
                         fill="black"
                         x="13.73525"
                         y="30"
-                        xml:space="preserve"
                     >Geheimtext</tspan>
           <tspan
                         font-family="Noto Sans Display"
@@ -193,7 +164,6 @@
                         fill="black"
                         x="69.26425"
                         y="68"
-                        xml:space="preserve"
                     >(</tspan>
           <tspan
                         font-family="Noto Sans Display"
@@ -202,7 +172,6 @@
                         font-weight="400"
                         fill="black"
                         y="68"
-                        xml:space="preserve"
                     >c</tspan>
           <tspan
                         font-family="Noto Sans Display"
@@ -211,7 +180,6 @@
                         font-weight="400"
                         fill="black"
                         y="80"
-                        xml:space="preserve"
                     >i</tspan>
           <tspan
                         font-family="Noto Sans Display"
@@ -219,7 +187,6 @@
                         font-weight="400"
                         fill="black"
                         y="68"
-                        xml:space="preserve"
                     >)</tspan>
         </text>
       </g>
@@ -232,7 +199,6 @@
                         fill="black"
                         x="11.64725"
                         y="30"
-                        xml:space="preserve"
                     >Klartext</tspan>
           <tspan
                         font-family="Noto Sans Display"
@@ -241,7 +207,6 @@
                         fill="black"
                         x="41.59825"
                         y="68"
-                        xml:space="preserve"
                     >(</tspan>
           <tspan
                         font-family="Noto Sans Display"
@@ -250,7 +215,6 @@
                         font-weight="400"
                         fill="black"
                         y="68"
-                        xml:space="preserve"
                     >p</tspan>
           <tspan
                         font-family="Noto Sans Display"
@@ -259,7 +223,6 @@
                         font-weight="400"
                         fill="black"
                         y="80"
-                        xml:space="preserve"
                     >i</tspan>
           <tspan
                         font-family="Noto Sans Display"
@@ -267,7 +230,6 @@
                         font-weight="400"
                         fill="black"
                         y="68"
-                        xml:space="preserve"
                     >)</tspan>
         </text>
       </g>
@@ -304,7 +266,6 @@
                         fill="black"
                         x="8.371625"
                         y="30"
-                        xml:space="preserve"
                     >Kryptografischer </tspan>
           <tspan
                         font-family="Noto Sans Display"
@@ -313,7 +274,6 @@
                         fill="black"
                         x="40.599625"
                         y="68"
-                        xml:space="preserve"
                     >Bitstrom(</tspan>
           <tspan
                         font-family="Noto Sans Display"
@@ -322,7 +282,6 @@
                         font-weight="400"
                         fill="black"
                         y="68"
-                        xml:space="preserve"
                     >k</tspan>
           <tspan
                         font-family="Noto Sans Display"
@@ -331,7 +290,6 @@
                         font-weight="400"
                         fill="black"
                         y="83"
-                        xml:space="preserve"
                     >i</tspan>
           <tspan
                         font-family="Noto Sans Display"
@@ -339,7 +297,6 @@
                         font-weight="400"
                         fill="black"
                         y="68"
-                        xml:space="preserve"
                     >)</tspan>
         </text>
       </g>
@@ -356,7 +313,6 @@
                         fill="#344463"
                         x="8.862"
                         y="30"
-                        xml:space="preserve"
                     >Schlüssel-</tspan>
           <tspan
                         font-family="Noto Sans Display"
@@ -365,7 +321,6 @@
                         fill="#344463"
                         x="29.064"
                         y="68"
-                        xml:space="preserve"
                     >strom-</tspan>
           <tspan
                         font-family="Noto Sans Display"
@@ -374,7 +329,6 @@
                         fill="#344463"
                         x="7.896"
                         y="106"
-                        xml:space="preserve"
                     >generator</tspan>
         </text>
       </g>
@@ -404,7 +358,6 @@
                         fill="#344463"
                         x="8.862"
                         y="30"
-                        xml:space="preserve"
                     >Schlüssel-</tspan>
           <tspan
                         font-family="Noto Sans Display"
@@ -413,7 +366,6 @@
                         fill="#344463"
                         x="29.064"
                         y="68"
-                        xml:space="preserve"
                     >strom-</tspan>
           <tspan
                         font-family="Noto Sans Display"
@@ -422,7 +374,6 @@
                         fill="#344463"
                         x="7.896"
                         y="106"
-                        xml:space="preserve"
                     >generator</tspan>
         </text>
       </g>
@@ -487,7 +438,6 @@
                         fill="black"
                         x="0"
                         y="68"
-                        xml:space="preserve"
                     >+</tspan>
         </text>
       </g>
@@ -500,7 +450,6 @@
                         fill="black"
                         x="0"
                         y="68"
-                        xml:space="preserve"
                     >+</tspan>
         </text>
       </g>
