@@ -1,5 +1,5 @@
 .. meta::
-    :version: genesis
+    :version: renaissance
     :author: Michael Eichberg
     :keywords: "IT Sicherheit", Passwortsicherheit
     :description lang=de: Sicherheit von Passwörtern
@@ -18,7 +18,7 @@ Passwortsicherheit
 
 :Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
 :Kontakt: michael.eichberg@dhbw.de
-:Version: 2.1.1
+:Version: 2.1.2
 
 
 .. supplemental::
@@ -40,49 +40,48 @@ Passwörter: Verwendung und Angriffe
 Verwendung von Passworten
 ----------------------------------------------
 
-.. container:: three-columns
+.. story::
 
-    .. container:: column no-separator
+    .. grid::
 
-        .. image:: logos/android.webp
-            :class: incremental
-            :align: center
-            :height: 575px
-            :alt: Android Smartphone
+        .. cell:: width-40
 
-    .. container:: column no-separator
+            .. image:: logos/android.png
+                :class: incremental highdpi
+                :align: center
+                :alt: Android Smartphone
 
-        .. image:: logos/cryptostick.jpg
-            :class: incremental
-            :align: center
-            :alt: Cryptostick
-            :height: 400px
+        .. cell:: width-20
 
-        .. class:: text-align-center incremental xxl
+            .. image:: logos/cryptostick.jpg
+                :class: incremental highdpi
+                :align: center
+                :alt: Cryptostick
 
-            🛜
+            .. class:: text-align-center incremental font-size-300
 
-    .. container:: column
+                🛜
 
-        .. image:: logos/filevault.webp
-            :class: incremental
-            :align: center
-            :height: 300px
-            :alt: Filevault Logo
+        .. cell:: width-40
 
-        .. image:: logos/veracrypt.webp
-            :class: incremental
-            :align: center
-            :height: 200px
-            :alt: Veracrypt Logo
+            .. image:: logos/filevault.jpeg
+                :class: incremental highdpi
+                :align: center
+                :alt: Filevault Logo
 
-.. container:: incremental margin-top-1em padding-top-1em line-above
+            .. image:: logos/veracrypt.png
+                :class: incremental highdpi
+                :align: center
+                :alt: Veracrypt Logo
 
-    Klassische Passwörter werden (noch immer) in zahlreichen Bereichen verwendet. Beispiele sind Smartphones, Cryptosticks, Logins für Computer und Serversysteme, verschlüsselte Dateien und Datenträger.
+    .. remark::
+        :class: incremental
+
+        Klassische Passwörter werden (noch immer) in zahlreichen Bereichen verwendet. Beispiele sind Smartphones, Cryptosticks, Logins für Computer und Serversysteme, verschlüsselte Dateien und Datenträger.
 
 .. supplemental::
 
-    **Hintergrund**
+    .. rubric:: Hintergrund
 
     Obwohl an vielen Stellen versucht wird Passwörter aus vielen Gründen zurück zu drängen, so ist die Verwendung noch allgegenwärtig und in machen Bereichen ist auch nicht unmittelbar eine Ablösung zu erkennen.
 
@@ -90,7 +89,6 @@ Verwendung von Passworten
 
 
 
-.. class:: no-title center-child-elements
 
 Passwortbasierte Angriffe auf Unternehmen
 ----------------------------------------------
@@ -102,8 +100,6 @@ Passwortbasierte Angriffe auf Unternehmen
     -- 19. Januar 2024: The Washington Post; Joseph Menn
 
 
-
-.. class:: no-title center-child-elements
 
 Angriffe auf Passworte
 ----------------------------------------------
@@ -123,60 +119,68 @@ Angriffe auf Passworte
 
 
 
-.. class:: no-title center-child-elements
-
 Ist Passwortwiederherstellung nicht „trivial“?
 ----------------------------------------------------------------
 
-.. epigraph::
+.. deck::
 
-    **59 Prozent aller Passwörter in unter 60 Minuten knackbar**
+    .. card::
 
-    *Forscher haben per Brute-Force-Methode mit einer Nvidia Geforce RTX 4090 Millionen von Passwörtern aus dem Darknet geknackt*.
+        .. epigraph::
 
-    [...] Sicherheitsforscher von Kaspersky haben untersucht, wie schnell sich gängige Passwörter mit einer modernen GPU vom Typ Nvidia Geforce RTX 4090 knacken lassen. Durchgeführt wurde die Untersuchung anhand einer Datenbank mit 193 Millionen echten Nutzerpasswörtern, die die Forscher aus dem Darknet bezogen. Sämtliche Passwörter lagen dabei in Form von gesalzenen MD5-Hashes vor. [...]
+            **59 Prozent aller Passwörter in unter 60 Minuten knackbar**
 
-    -- 21. Juni 2024: `golem.de <https://www.golem.de/news/forscher-machen-den-test-59-prozent-aller-passwoerter-in-unter-60-minuten-knackbar-2406-186329.html>`__
+            *Forscher haben per Brute-Force-Methode mit einer Nvidia Geforce RTX 4090 Millionen von Passwörtern aus dem Darknet geknackt*.
 
+            [...] Sicherheitsforscher von Kaspersky haben untersucht, wie schnell sich gängige Passwörter mit einer modernen GPU vom Typ Nvidia Geforce RTX 4090 knacken lassen. Durchgeführt wurde die Untersuchung anhand einer Datenbank mit 193 Millionen echten Nutzerpasswörtern, die die Forscher aus dem Darknet bezogen. Sämtliche Passwörter lagen dabei in Form von gesalzenen MD5-Hashes vor. [...]
 
-
-.. class:: no-title
-
-Ist Passwortwiederherstellung nicht „trivial“?
-----------------------------------------------------------
-
-.. epigraph::
-
-    **An AI just cracked your password.**
-
-    We used [...] PassGAN to run through a list of 15,680,000 passwords. [...]
-
-    Time It Takes Using AI to Crack Your Password
-
-    .. container:: far-smaller incremental
-
-        .. csv-table::
-            :class: far-smaller highlight-line-on-hover
-            :header: # OF CHARACTER, Numbers Only, Lowercase Letters, Lower- & Uppercase Letters, "Numbers, Upper- & Lowercase Letters", "Numbers, Upper- & Lowercase Letters, Symbols"
-
-            4, Instantly, Instantly, Instantly, Instantly, Instantly
-            5, Instantly, Instantly, Instantly, Instantly, Instantly
-            6, Instantly, Instantly, Instantly, Instantly, 4 Seconds
-            7, Instantly, Instantly, 22 Seconds, 42 Seconds, 6 Minutes
-            8, Instantly, 3 Seconds, 19 Minutes, 48 Minutes, 7 Hours
-            9, Instantly, 1 Minutes, 11 Hours, 2 Days, 2 Weeks
-            10, Instantly, 1 Hours, 4 Weeks, 6 Months, 5 Years
-            11, Instantly, 23 Hours, 4 Years, 38 Years, 356 Years
-            12, 25 Seconds, 3 Weeks, 289 Years, 2K Years, 30K Years
-            13, 3 Minutes, 11 Months, 16K Years, 91K Years, 2M Years
-            14, 36 Minutes, 49 Years, 827K Years, 9M Years, 187M Years
-            15, 5 Hours, 890 Years, 47M Years, 613M Years, 14Bn Years
-            16, 2 Days, 23K Years, 2Bn Years, 26Bn Years, 1Tn Years
-            17, 3 Weeks, 812K Years, 539.72M Years, 2Tn Years, 95Tn Years
-            18, 10 Months, 22M Years, 7.23Bn Years, 96Tn Years, 6Qn Years
+            -- 21. Juni 2024: `golem.de <https://www.golem.de/news/forscher-machen-den-test-59-prozent-aller-passwoerter-in-unter-60-minuten-knackbar-2406-186329.html>`__
 
 
-    -- 2023: `Home Security Heroes <https://www.securityhero.io/ai-password-cracking/>`__
+    .. card::
+
+        .. epigraph::
+
+            **An AI just cracked your password.**
+
+            We used [...] PassGAN to run through a list of 15,680,000 passwords. [...]
+
+            Time It Takes Using AI to Crack Your Password
+
+            .. deck:: incremental
+
+                .. card::
+
+                    .. csv-table::
+                        :class: font-size-75 highlight-row-on-hover  compact
+                        :header: # of Chars, Numbers Only, Lowercase Letters, Lower- & Uppercase Letters, "Numbers, Upper- & Lowercase Letters", "Numbers, Upper- & Lowercase Letters, Symbols"
+
+                        4, Instantly, Instantly, Instantly, Instantly, Instantly
+                        5, Instantly, Instantly, Instantly, Instantly, Instantly
+                        6, Instantly, Instantly, Instantly, Instantly, 4 Seconds
+                        7, Instantly, Instantly, 22 Seconds, 42 Seconds, 6 Minutes
+                        8, Instantly, 3 Seconds, 19 Minutes, 48 Minutes, 7 Hours
+                        9, Instantly, 1 Minutes, 11 Hours, 2 Days, 2 Weeks
+                        10, Instantly, 1 Hours, 4 Weeks, 6 Months, 5 Years
+                        11, Instantly, 23 Hours, 4 Years, 38 Years, 356 Years
+                        ..., ..., ..., ... ,..., ...
+
+                .. card::
+
+                    .. csv-table::
+                        :class: font-size-75 highlight-row-on-hover compact
+                        :header: # of Chars, Numbers Only, Lowercase Letters, Lower- & Uppercase Letters, "Numbers, Upper- & Lowercase Letters", "Numbers, Upper- & Lowercase Letters, Symbols"
+
+                        ..., ..., ..., ... ,..., ...
+                        12, 25 Seconds, 3 Weeks, 289 Years, 2K Years, 30K Years
+                        13, 3 Minutes, 11 Months, 16K Years, 91K Years, 2M Years
+                        14, 36 Minutes, 49 Years, 827K Years, 9M Years, 187M Years
+                        15, 5 Hours, 890 Years, 47M Years, 613M Years, 14Bn Years
+                        16, 2 Days, 23K Years, 2Bn Years, 26Bn Years, 1Tn Years
+                        17, 3 Weeks, 812K Years, 539.72M Years, 2Tn Years, 95Tn Years
+                        18, 10 Months, 22M Years, 7.23Bn Years, 96Tn Years, 6Qn Years
+
+            -- 2023: `Home Security Heroes <https://www.securityhero.io/ai-password-cracking/>`__
 
 .. supplemental::
 
@@ -192,9 +196,8 @@ Ist Passwortwiederherstellung nicht „trivial“?
     Wie bewerten Sie die Einschätzungen dieses Tools?
 
 
-.. class:: no-title center-child-elements
 
-Sammlungen von Passwörtern
+Passwort Leaks
 -------------------------------------------------------------------
 
 .. epigraph::
@@ -213,6 +216,8 @@ Sammlungen von Passwörtern
 
 Raum der Passwortkandidaten
 --------------------------------
+
+.. class:: incremental-list
 
 :vierstellige PIN:
 
@@ -256,7 +261,7 @@ Raum der Passwortkandidaten
 Quellen für Passwortkandidaten
 --------------------------------
 
-.. class:: incremental
+.. class:: incremental-list
 
 - Wörterbücher
 - Verzeichnisse (z. B. Postleitzahlen, Städte, Straßennamen)
@@ -277,19 +282,19 @@ Qualität von Passworten
 
 Wie ist die Qualität der folgenden Passwörter zu bewerten in Hinblick darauf wie aufwändig es ist das Passwort ggf. wiederherzustellen:
 
-.. class:: incremental smaller
+.. class:: incremental-list
 
-1. Donaudampfschifffahrt
-2. Passwort
-3. ME01703138541
-4. 2wsx3edc4rfv
-5. Haus Maus
-6. iluvu
-7. Emily18
-8. MuenchenHamburg2023!!!!
-9. hjA223dn4fw"üäKßß k`≤-~ajsdk
-10. Baum Lampe Haus Steak Eis Berg
-11. password123
+1. ``Donaudampfschifffahrt``
+2. ``Passwort``
+3. ``ME01703138541``
+4. ``2wsx3edc4rfv``
+5. ``Haus Maus``
+6. ``iluvu``
+7. ``Emily18``
+8. ``MuenchenHamburg2023!!!!``
+9. ``hjA223dn4fw"üäKßß k`≤-~ajsdk``
+10. ``Baum Lampe Haus Steak Eis Berg``
+11. ``password123``
 
 
 
@@ -300,21 +305,23 @@ Kryptografische Hashfunktionen und Passwörter
 
 
 
-.. class:: center-child-elements no-title
+.. class:: center-content no-title
 
 Passwörter nicht im Klartext speichern
 ---------------------------------------
 
 .. warning::
 
-    Es ist nie eine Option Passwörter im Klartext zu speichern.
+    Passwörter sind niemals im Klartext zu speichern.
 
 
 
-Hashfunktionen (Wiederholung)
+.. class:: repetition
+
+Hashfunktionen
 -------------------------------
 
-.. class:: incremental
+.. class:: incremental-list
 
 - Eine Hashfunktion :math:`H` akzeptiert eine beliebig lange Nachricht :math:`M` als Eingabe und gibt einen Wert fixer Größe zurück: :math:`h = H(M)`.
 - Eine Änderung eines beliebigen Bits in :math:`M` sollte mit hoher Wahrscheinlichkeit zu einer Änderung des Hashes :math:`h` führen.
@@ -323,7 +330,7 @@ Hashfunktionen (Wiederholung)
 
 .. supplemental::
 
-    **Kollisionen bei Hashes**
+    .. rubric:: Kollisionen bei Hashes
 
     Wenn ein Passwort „nur“ als Hash gespeichert wird, dann gibt es zwangsläufig Kollisionen und es kann theoretisch passieren, dass ein Angreifer (zufällig) ein völlig anderes Passwort findet, dass bei der Überprüfung des Passworts akzeptiert wird. Die Konstruktion kryptografischer Hashfunktionen stellt jedoch sicher, dass dies in der Praxis nicht auftritt. Sollte jedoch eine „normale Hashfunktion“ genommen werden, dann ist dieses Szenario durchaus realistisch.
 
@@ -333,20 +340,24 @@ Hashraten in MH/s auf aktueller Hardware
 ------------------------------------------------------------
 
 .. csv-table::
-    :class: incremental scriptsize no-table-borders
-    :header: **Hashcat Mode (Hashcat 6.2.6)**, **Hash**, **RTX 1080Ti (250 W)**, "**RTX 2080TI (260 W)**", "**RTX 3090 (350 W)**", "**RTX 4090 (450 W)**"
+    :class: incremental-table-rows booktabs
+    :width: 100%
+    :widths: 5, 20, 10, 10, 10, 10, 10
+    :header: **Hashcat Mode (Hashcat 6.2.6)**, **Hash**, **RTX 1080Ti (250 W)**, "**RTX 2080TI (260 W)**", "**RTX 3090 (350 W)**", "**RTX 4090 (450 W)**", "**RTX 5090 (575 W)**"
 
-    25700, Murmur, , , , "643700.0 (643 GH/s)"
-    23, Skype, 21330.1 , 27843.1 , 37300.7 , 84654.8
-    1400, SHA2-256, 4459.7 , 7154.8 , 9713.2 , 21975.5
-    10500, PDF1.4-1.6, 24.9 , 29.8 , 76.8 ,  122.0
-    1800, SHA 512 Unix (5000 Iterations), 0.2 , 0.3  , 0.5 , 1.2
+    25700, Murmur, , , , "643700.0 (643 GH/s)", "819500.0 (819 GH/s)"
+    23, Skype, 21330.1 , 27843.1 , 37300.7 , 84654.8, 116900.0
+    1400, SHA2-256, 4459.7 , 7154.8 , 9713.2 , 21975.5, 28353.3
+    10500, PDF1.4-1.6, 24.9 , 29.8 , 76.8 ,  122.0, 166.4
+    1800, SHA 512 Unix (5000 Iterations), 0.2 , 0.3  , 0.5 , 1.2, 1.4
     13723, Veracrypt SHA2- 512 + XTX 1536Bit, 0.0004 , 0.0006  , 0.0009 , "0.002
-    (2000 H/s)"
+    (2000 H/s)", "0.002 (2278 H/s)"
 
-.. supplemental:: smaller
+.. supplemental::
 
     **Quellen:**
+
+    -`5090 <https://gist.github.com/Chick3nman/09bac0775e6393468c2925c1e1363d5c>`__
 
     - `4090 <https://gist.github.com/Chick3nman/e4fcee00cb6d82874dace72106d73fef>`__
     - `3090 <https://gist.github.com/Chick3nman/e4fcee00cb6d82874dace72106d73fef>`__
@@ -359,10 +370,11 @@ Hashraten in MH/s auf aktueller Hardware
 Brute-Force Angriff auf lange Passworte
 ------------------------------------------------------------------------------
 
+Zeit für vollständigen Brute-Force Angriff
+
 .. image:: dgraphs/brute_force.svg
-    :width: 1820px
     :align: center
-    :alt: Zeit für für Angriffe auf lange Passwörter benötigt wird.
+    :alt: Zeit, die für Angriffe auf lange Passwörter benötigt wird.
 
 
 
@@ -375,11 +387,11 @@ Kryptografische Hashfunktionen für Passworte
     Bekannte kryptografische Hash-Funktionen wie :obsolete:`MD4`, :obsolete:`MD5`, SHA-256, SHA-512 oder auch RIPE-MD sind für das Hashen von Passwörtern nicht geeignet.
 
 
-.. class:: incremental list-with-explanations
+.. class:: incremental-list list-with-explanations
 
 - Zur Schlüsselableitung bzw. zum Hashen von Passwörtern wurden spezialisierte Funktionen entwickelt. Zum Beispiel: PBKDF2, Scrypt, Bcrypt und die Argon2 Familie. Diese wiederstehen gängigen Angriffen.
 
-  .. container:: far-smaller
+  .. container::
 
     PBKDF2 verwendet zum Beispiel beim Hashing von Passwörtern klassische Basisalgorithmen (z. B. SHA-256) und wiederholt diese mehrfach (ggf. viele hunderttausend Male), um die Laufzeit zu verlängern und es für Angreifer schwieriger zu machen.
 
@@ -390,39 +402,43 @@ Kryptografische Hashfunktionen für Passworte
     Parametrisierungen, die die Laufzeit und den Speicherbedarf so stark erhöhen, dass eine Verwendung in Webanwendungen nicht mehr sinnvoll ist, können z. B. ideal sein zum Schutz von Dateien, Containern oder lokaler Festplatten.
 
 
+
 Vom Salzen (:eng:`Salt`) ...
 -----------------------------
 
-.. container:: small
+.. story::
 
-    **Beobachtung/Problem**
+    .. compound::
 
-    Werden Passwörter direkt mit Hilfe einer kryptografischen Hashfunktion gehasht, dann haben zwei Nutzer, die das gleiche Passwort verwenden, den gleichen Hash.
+        **Beobachtung/Problem**
 
-    .. csv-table::
-        :class: tiny highlight-line-on-hover
-        :header: User, Hash
+        Werden Passwörter direkt mit Hilfe einer kryptografischen Hashfunktion gehasht, dann haben zwei Nutzer, die das gleiche Passwort verwenden, den gleichen Hash.
 
-        Alice, "sha256_crypt.hash('\ **DHBWMannheim**\ ',salt='',rounds=1000) =
-        ``$5$rounds=1000$$lb/CwYgN/xR9dqYuYxYVtWkxMEh.VK.QOC9IKmy9DP/``"
-        Bob, "sha256_crypt.hash('\ **DHBWMannheim**\ ',salt='',rounds=1000) =
-        ``$5$rounds=1000$$lb/CwYgN/xR9dqYuYxYVtWkxMEh.VK.QOC9IKmy9DP/``"
+        .. csv-table::
+            :class: highlight-row-on-hover booktabs compact
+            :header: User, Hash
 
-.. container:: incremental small
+            Alice, "sha256_crypt.hash('\ **DHBWMannheim**\ ',salt='',rounds=1000) =
+            ``$5$rounds=1000$$lb/CwYgN/xR9dqYuYxYVtWkxMEh.VK.QOC9IKmy9DP/``"
+            Bob, "sha256_crypt.hash('\ **DHBWMannheim**\ ',salt='',rounds=1000) =
+            ``$5$rounds=1000$$lb/CwYgN/xR9dqYuYxYVtWkxMEh.VK.QOC9IKmy9DP/``"
 
-    **Lösung**
+    .. compound::
+        :class: incremental
 
-    Passwörter sollten immer mit einem einzigartigen und zufälligen „Salt“ gespeichert werden, um Angriffe mittels Regenbogentabellen zu verhindern.
+        **Lösung**
 
-    .. csv-table::
-        :class: tiny highlight-line-on-hover
-        :header: User, Hash
+        Passwörter sollten immer mit einem einzigartigen und zufälligen „Salt“ gespeichert werden, um Angriffe mittels Regenbogentabellen zu verhindern.
 
-        Alice, "sha256_crypt.hash('\ **DHBWMannheim**\ ',\ :red:`salt='0123456'`\ ,rounds=1000)
-        ``$5$rounds=1000$0123456$66x8MB.qev25coq9OVrD1lr1ZGJJelAzOVlCDZykrY0``"
+        .. csv-table::
+            :class: highlight-row-on-hover booktabs compact
+            :header: User, Hash
 
-        Bob, "sha256_crypt.hash('\ **DHBWMannheim**\ ',\ :red:`salt='1234567'`\ ,rounds=1000)
-        ``$5$rounds=1000$1234567$LxD/hg29N9KYpNdFMW69Kk65BLkVLlzlSEJvqhCmFU9``"
+            Alice, "sha256_crypt.hash('\ **DHBWMannheim**\ ',\ :red:`salt='0123456'`\ ,rounds=1000) =
+            ``$5$rounds=1000$0123456$66x8MB.qev25coq9OVrD1lr1ZGJJelAzOV...``"
+
+            Bob, "sha256_crypt.hash('\ **DHBWMannheim**\ ',\ :red:`salt='1234567'`\ ,rounds=1000) =
+            ``$5$rounds=1000$1234567$LxD/hg29N9KYpNdFMW69Kk65BLkVLlzlSE...``"
 
 
 .. supplemental::
@@ -434,10 +450,11 @@ Vom Salzen (:eng:`Salt`) ...
     Aufgrund der allgemeinen Verwendung von Salts sind Angriffe mit Hilfe von Regenbogentabellen heute (fast nur noch) von historischer Bedeutung.
 
 
+
 Vom Salzen (:eng:`Salt`)...
 ----------------------------
 
-.. class:: incremental more-space-between-list-items
+.. class:: incremental-list
 
 - Ein *Salt* sollte ausreichend lang sein (zum Beispiel mind. 16 Zeichen oder 16 Byte).
 - Ein *Salt* darf nicht wiederverwendet werden.
@@ -445,7 +462,7 @@ Vom Salzen (:eng:`Salt`)...
 - Ein *Salt* unterliegt (eigentlich) keinen Geheimhaltungsanforderungen.
 
 .. admonition:: Problem
-    :class: incremental small
+    :class: incremental
 
     Sollte es einem Angreifer gelingen in eine Datenbank einzubrechen und die Tabellen mit den Nutzerdaten abzufragen (zum Beispiel aufgrund einer erfolgreichen SQL Injection), dann ist es Ihm danach direkt möglich zu versuchen Passworte wiederherzustellen.
 
@@ -459,16 +476,16 @@ Vom Salzen (:eng:`Salt`)...
 ... und Pfeffern (:eng:`Pepper`) von Passwörtern
 ------------------------------------------------
 
-.. container:: small
+.. container::
 
     (In Normen bzw. in anderer Literatur wird häufig statt *Pepper* *Secret Key* verwendet.)
 
-.. class:: incremental more-space-between-list-items
+.. class:: incremental-list
 
 - Wie ein *Salt* geht auch der *Secret Key* in den Hashvorgang des Passworts ein.
 - Der *Secret Key* wird jedoch **nicht** mit den Hashwerten der Passworte gespeichert.
 
-  .. class:: incremental list-with-explanations
+  .. class:: incremental-list
 
   - Ein *Secret key* kann zum Beispiel in einem Hardwaresicherheitsmodul (z. B. Secure Element oder TPM Chip) gespeichert werden.
   - Gel. wird der *Secret Key* bzw. ein Teil davon auch im Code bzw. einer Konfigurationsdatei gespeichert.
@@ -480,13 +497,16 @@ Vom Salzen (:eng:`Salt`)...
 - Der *Secret Key* sollte pro Instanziierung einer Anwendung einmalig sein.
 
 
+
 Verwendung sicherer Hash- bzw. Schlüsselableitungsfunktionen für Passworte
 ----------------------------------------------------------------------------
 
 .. note::
-    :class: far-smaller
+    :class: width-30
 
     Häufig werden die „Hashwerte“ von Passwörtern in Datenbanken oder Dateien  als Base64 kodierter String gespeichert.
+
+.. class:: incremental-list dd-margin-left-6em
 
 :Argon2: z. B. verwendete von LUKS2
 :bcrypt: basierend auf Blowfish; z. B. verwendet in OpenBSD
@@ -499,7 +519,7 @@ Verwendung sicherer Hash- bzw. Schlüsselableitungsfunktionen für Passworte
 `PBKDF2 <https://datatracker.ietf.org/doc/html/rfc2898.html#section-5.2>`__ (Password-Based Key Derivation Function 2)
 ----------------------------------------------------------------------------------------------------------------------------
 
-.. class:: incremental more-space-between-list-items
+.. class:: incremental-list
 
 - Dient der Ableitung eines Schlüssels aus einem Passwort.
 - Das Ergebnis der Anwendung der PBKDF2 wird zusammen mit dem *Salt* und dem Iterationszähler für die anschließende Passwortverifizierung gespeichert.
@@ -536,7 +556,8 @@ Im Fall von PBKDF2 ist das Passwort der HMAC Schlüssel (:eng:`Key`) und das Sal
 **Beispielcode**
 
 .. code:: python
-    :class: black smaller
+    :class: copy-to-clipboard
+    :number-lines:
 
     from passlib.crypto.digest import pbkdf2_hmac
     pbkdf2_hmac("sha256",
@@ -544,7 +565,6 @@ Im Fall von PBKDF2 ist das Passwort der HMAC Schlüssel (:eng:`Key`) und das Sal
         salt=b"JustASalt",
         rounds=1,   # a real value should be >> 500.000
         keylen=32 )
-
 
 .. supplemental::
 
@@ -555,14 +575,13 @@ Im Fall von PBKDF2 ist das Passwort der HMAC Schlüssel (:eng:`Key`) und das Sal
 Berechnung der ersten Runde des PBKDF2-HMAC
 ----------------------------------------------
 
-.. class:: far-far-smaller
-
-    Bei einer Runde und passenden Blockgrößen ist das Ergebnis der PBKDF2 somit gleich mit der Berechnung des HMACs wenn der Salt um die Nummer des Blocks ``\x00\x00\x00\x01`` ergänzt wurde.
+Bei einer Runde und passenden Blockgrößen ist das Ergebnis der PBKDF2 somit gleich mit der Berechnung des HMACs wenn der Salt um die Nummer des Blocks ``\x00\x00\x00\x01`` ergänzt wurde.
 
 **Implementierung in Python**
 
 .. code:: python
-    :class: slightly-more-smaller
+    :class: copy-to-clipboard
+    :number-lines:
 
     import hashlib
     pwd = b"MyPassword"
@@ -575,7 +594,7 @@ Berechnung der ersten Runde des PBKDF2-HMAC
     hmac  = hashlib.sha256(okeypad+hash1).digest()
 
 
-.. container:: incremental far-smaller
+.. container:: incremental
 
     **Ergebnis**
 
@@ -590,7 +609,8 @@ Berechnung der ersten Runde des PBKDF2-HMAC
     HMAC ist auch direkt als Bibliotheksfunktion verfügbar.
 
     .. code:: python
-        :class: black
+        :class: copy-to-clipboard
+        :number-lines:
 
         import hashlib
         import hmac
@@ -613,9 +633,8 @@ Berechnung der ersten Runde des PBKDF2-HMAC
     ist die Blocknummer (hier: 1).
 
 
-.. class:: no-title center-child-elements
 
-Angriff auf LUKS2 mit Argon2
+Linux Unified Key Setup (LUKS)
 --------------------------------------------------
 
 .. epigraph:: Angriff auf LUKS2 mit Argon2
@@ -630,22 +649,23 @@ Effizienz eines Brute-Force Angriffs auf LUKS2
 -------------------------------------------------------------------
 
 .. image:: dgraphs/brute_force-luks2.svg
-    :width: 900px
     :align: center
     :alt: Zeit die für einen Angriff auf LUKS2 benötigt wird.
 
 
 
-.. class:: transition-move-left integrated-exercise
+.. class:: transition-move-left exercises
 
 Übung
 -----------
 
-.. container:: slightly-more-smaller
+.. story::
 
   .. exercise:: Schwachstellenbewertung
 
     Ihnen liegt eine externer Festplatte/SSD mit USB Anschluss vor, die die folgenden Eigenschaften hat:
+
+    .. class:: incremental-list
 
     - Die Daten auf der SSD/FP sind hardwareverschlüsselt.
     - Die Verschlüsselung erfolgt mit XTS-AES 256.
@@ -653,6 +673,8 @@ Effizienz eines Brute-Force Angriffs auf LUKS2
     - Die SSD/FP ist FIPS zertifiziert und gegen Hardwaremanipulation geschützt; zum Beispiel eingegossen mit Epoxidharz.
     - Das Passwort wird von der Software gehasht und dann als Hash an den Controller der externen FP/SSD übertragen.
     - Im Controller wird der übermittelte Hash direkt zur Autorisierung des Nutzers verwendet. Dazu wird der Hash mit dem im EPROM hinterlegten verglichen.
+
+    .. class:: incremental
 
     Diskutieren Sie die Sicherheit der Passwortvalidierung und wie diese ggf. zu verbessern wäre.
 
@@ -665,7 +687,6 @@ Effizienz eines Brute-Force Angriffs auf LUKS2
 
         .. image:: graffles/unsichere_passwort_validierung.svg
             :alt: Unsichere Passwortvalidierung
-            :height: 300px
             :align: center
 
 
@@ -683,7 +704,7 @@ Aufbau von Passworten
 
 Von Menschen vergebene Passwörter basieren häufig auf Kombinationen von Wörtern aus den folgenden Kategorien:
 
-.. class:: incremental more-space-between-list-items
+.. class:: incremental-list
 
 - Pins: ``1111``, ``1234``, ``123456``, …
 - Tastaturwanderungen (:eng:`keyboard walks`): ``asdfg``, ``q2w3e4r5t``, …
@@ -704,9 +725,9 @@ Häufige Passworte
 Eine gute Quelle für das Studium von Passwörtern sind sogenannte *Leaks* oder auch Listen mit gängigen Passwörtern. Zum Beispiel `Becker's Health IT 2023 <https://www.beckershospitalreview.com/cybersecurity/30-most-common-passwords-of-2023.html>`__:
 
 
-.. container:: three-columns small
+.. grid:: monospaced
 
-    .. container:: column text-align-center
+    .. cell:: width-33 text-align-center
 
         123456
 
@@ -728,7 +749,7 @@ Eine gute Quelle für das Studium von Passwörtern sind sogenannte *Leaks* oder 
 
         123123
 
-    .. container:: column text-align-center
+    .. cell:: width-33 text-align-center
 
         abc123
 
@@ -750,7 +771,7 @@ Eine gute Quelle für das Studium von Passwörtern sind sogenannte *Leaks* oder 
 
         sunshine
 
-    .. container:: column text-align-center
+    .. cell:: width-33 text-align-center
 
         princess
 
@@ -784,16 +805,15 @@ Eine gute Quelle für das Studium von Passwörtern sind sogenannte *Leaks* oder 
 Die Struktur von Passwörtern verstehen
 -----------------------------------------------------------
 
-.. container:: scriptsize
+.. container::
 
     Analyse auf Grundlage des „berühmten“ Rockyou-Lecks.
 
     Hier haben wir alle Kleinbuchstaben auf l, Großbuchstaben auf u, Ziffern auf d und Sonderzeichen auf s abgebildet.
 
 .. csv-table::
-    :align: left
     :width: 100%
-    :class: compact-cells tiny no-inner-borders
+    :class: compact monospaced font-size-70 highlight-cell-on-hover
 
     llllllll, "4,8037%", lllllllldd, "1,4869%", dddddddddddd, "0,2683%", ddddddll, "0,1631%"
     llllll, "4,1978%", lllllld, "1,3474%", lllddddd, "0,2625%", lllllls, "0,1615%"
@@ -817,12 +837,12 @@ Die Struktur von Passwörtern verstehen
 Die Zusammensetzung von Passwörtern verstehen
 ----------------------------------------------
 
-.. container:: small
+.. story::
 
     Analyse des ersten/original *Rockyou* Leaks.
 
     .. csv-table::
-        :class: tiny no-table-borders no-inner-borders incremental
+        :class: booktabs
         :header: ∑ Passworte, 14.334.851, "100%"
 
         Pins, 2.346.591, "16,37%"
@@ -833,33 +853,34 @@ Die Zusammensetzung von Passwörtern verstehen
         Analyse der Passworte mit Buchstaben:
 
         .. csv-table::
-            :class: tiny no-table-borders no-inner-borders incremental
+            :class: booktabs highlight-cell-on-hover compact table-header-align-left
+            :stub-columns: 1
             :header: "Kategorie", "Absolut", "Prozentual", "Beispiele"
 
 
-            E-Mails, 26.749, "0,22%", me\ |at|\ me.com, , ,
-            Zahlen gerahmt von Buchstaben, 35696, "0,30%", a123456a, , ,
-            Leetspeak, 64.672, "0,54%", G3tm0n3y, , ,
-            Patterns, 124.347, "1,04%", lalala, , ,
-            Reguläre oder Populäre Wörter, 4.911.647, "**41,25%**", princess, iloveu, ,
-            Sequenzen, 5.290, "0,04%", abcdefghij, , ,
-            keyboard walks (de/en), 14.662, "0,12%", q2w3e4r, , ,
-            Einfache Wortkombinationen, 535.037, "4,49%", pinkpink, sexy4u, te amo,
-            Komplexe Wortkombinationen, 5.983.259, "**50,25%**", Inparadise, kelseylovesbarry, ,
-            *<Rest>*, 204.618, "1,72%", j4**9c+p, i(L)you, p\ |at|\ 55w0rd, sk8er4life
+            E-Mails, 26.749, "0,22%", me\ |at|\ me.com
+            Zahlen gerahmt von Buchstaben, 35696, "0,30%", a123456a
+            Leetspeak, 64.672, "0,54%", G3tm0n3y
+            Patterns, 124.347, "1,04%", lalala
+            Reguläre oder Populäre Wörter, 4.911.647, "**41,25%**", "princess, iloveu"
+            Sequenzen, 5.290, "0,04%", abcdefghij
+            keyboard walks (de/en), 14.662, "0,12%", q2w3e4r
+            Einfache Wortkombinationen, 535.037, "4,49%", "pinkpink, sexy4u, te amo"
+            Komplexe Wortkombinationen, 5.983.259, "**50,25%**", "Inparadise, kelseylovesbarry"
+            *<Rest>*, 204.618, "1,72%", "j4**9c+p, i(L)you, p\ |at|\ 55w0rd, sk8er4life"
 
 
 .. supplemental::
 
     .. rubric:: Hinweise
 
-    Die Sprachen, die bei der Identifizierung der Wörter berücksichtigt wurden, waren: "de, en, fr, es, pt, nl".
+    Die Sprachen, die bei der Identifizierung der Wörter berücksichtigt wurden, waren: de, en, fr, es, pt, nl.
 
-    *Populäre Wörter* sind Wörter, die auf Twitter oder Facebook verwendet wurden, z. B. "iloveu", "iluvu", ....
+    *Populäre Wörter* sind Wörter, die auf Twitter oder Facebook verwendet wurden, z. B. „iloveu“, „iluvu“, ....
 
 
 
-.. class:: transition-move-left integrated-exercise
+.. class:: transition-move-left exercises
 
 Gedankenexperiment
 ---------------------
@@ -896,11 +917,10 @@ Gedankenexperiment
 
 
 
-.. class:: transition-move-left integrated-exercise
+.. class:: transition-move-left exercises
 
 Gedankenexperiment
 ---------------------
-
 
 .. exercise:: Verstehen des Suchraums
 
@@ -951,7 +971,7 @@ Moderne Passwortrichtlinien (:eng:`Password Policies`) machen es unmöglich, äl
 
 *Beispiele:*
 
-.. class:: incremental more-space-between-list-items
+.. class:: incremental-list
 
 - Mindestanzahl von Zeichen (maximale Anzahl von Zeichen)
 - Anforderungen an die Anzahl der Ziffern, Sonderzeichen, Groß- und Kleinbuchstaben
@@ -973,7 +993,7 @@ Moderne Passwortrichtlinien (:eng:`Password Policies`) machen es unmöglich, äl
 Der Effekt von Passwortrichtlinien auf Passwörter
 --------------------------------------------------
 
-Reale Passwortrichtlinie:
+Reale Passwortrichtlinie eines speziellen Messengers:
 
     Nutze 1 Großbuchstabe, 1 Kleinbuchstabe, 2 Symbole, 2 Ziffern, 4 Buchstaben, 4 Nicht-Buchstaben
 
@@ -992,13 +1012,11 @@ Reale Passwortrichtlinie:
 Aufbau von Passwörtern - Zusammenfassung
 ------------------------------------------
 
-.. class:: more-space-between-list-items
-
 - Passwörter, die häufig eingegeben werden müssen, basieren in den allermeisten Fällen auf „echten“ Wörtern.
 - Echte Wörter werden oft nicht unverändert verwendet, sondern nach einfachen Regeln umgewandelt, z. B. durch Anhängen einer Zahl oder eines Sonderzeichens, Veränderung der Groß-/Kleinschreibung, etc.
 
-.. admonition:: Frage
-    :class: incremental small
+.. question::
+    :class: incremental
 
     Wie können wir gute Passwortkandidaten identifizieren/generieren, wenn ein *Leak* nicht ausreicht oder nur eine kleine Anzahl von Passwörtern getestet werden kann?
 
@@ -1011,10 +1029,12 @@ Aufbau von Passwörtern - Zusammenfassung
         ~13.000.000 Passworte / 5 Hashes/Stunde ≈ ~297 Jahre
 
 
+
 .. class:: new-section
 
 Das Vorgehen von Angreifern verstehen
 -------------------------------------------
+
 
 
 Vorgehensweise beim Testen/Generieren von Passwörtern
@@ -1022,7 +1042,7 @@ Vorgehensweise beim Testen/Generieren von Passwörtern
 
 Aufgrund der „Unmöglichkeit“ eines Brute-Force-Angriffs ist folgendes zu beachten:
 
-.. class:: incremental
+.. class:: incremental-list
 
 - Verfügbare *Kontextinformationen sollten in die Auswahl/Generierung einfließen*.
 - Es sollten nur *technisch sinnvolle* Passwörter getestet/generiert werden.
@@ -1037,6 +1057,7 @@ Aufgrund der „Unmöglichkeit“ eines Brute-Force-Angriffs ist folgendes zu be
         Auf einer deutschen Standardtastatur für Macs können in Kombination mit „Shift“, „Alt“ und „Alt+Shift“ zum Beispiel 192 verschiedene Zeichen eingegeben werden – ohne auf Unicode oder Zeichentabellen zurückgreifen zu müssen.
 
     Sollte der Algorithmus zum Generieren der Passwörter langsamer sein als die Zeit, die benötigt wird, um ein Passwort zu falsifizieren, dann beschränkt nicht mehr länger nur die Hashrate den Suchraum.
+
 
 
 Ansätze und Werkzeuge zum Generieren von Passwortlisten
@@ -1059,15 +1080,17 @@ Ansätze und Werkzeuge zum Generieren von Passwortlisten
 Markov-Ketten
 ------------------
 
-.. admonition:: Hintergrund
-    :class: note smaller incremental
+.. container:: encapsulate-floats
 
-    Eine Markov-Kette beschreibt eine Sequenz möglicher Ereignisse in welcher die Wahrscheinlichkeit des nächsten Ereignisses nur vom Zustand des vorherigen Ereignis abhängt.
+    .. note::
+        :class: width-40
 
-OMEN lernt - zum Beispiel basierend auf Leaks - die Wahrscheinlichkeiten für das Aufeinanderfolgen von Bigrammen und Trigrammen und nutzt diese, um neue Passwortkandidaten zu generieren.
+        Eine Markov-Kette beschreibt eine Sequenz möglicher Ereignisse in welcher die Wahrscheinlichkeit des nächsten Ereignisses nur vom Zustand des vorherigen Ereignis abhängt.
+
+    OMEN lernt - zum Beispiel basierend auf Leaks - die Wahrscheinlichkeiten für das Aufeinanderfolgen von Bigrammen und Trigrammen und nutzt diese, um neue Passwortkandidaten zu generieren.
 
 .. admonition:: Grundlegende Idee
-    :class: smaller incremental
+    :class: incremental clear
 
     Gegeben: ``lachen, sachen, last, muster``
 
@@ -1076,10 +1099,11 @@ OMEN lernt - zum Beispiel basierend auf Leaks - die Wahrscheinlichkeiten für da
     Auf ein ``st`` folgt entweder ein ``er`` oder ``<Wortende>``; demzufolge ist ``laster`` ein Kandidat, aber auch ``must``.
 
 
+
 Password Cracking Using Probabilistic Context-Free Grammars [PCFG]_
 -----------------------------------------------------------------------
 
-.. class:: incremental smaller
+.. class:: incremental-list
 
 - Lernt die Muster, Worte, Ziffern und verwendeten Sonderzeichen basierend auf der Auswertung von realen Leaks. Die gelernte Grammatik wird als Schablone verwendet und aus „Wörterbüchern“ befüllt. (Zum Beispiel: ``S → D1L3S2 → 1L3!! → 1luv!!`` )
 - Generiert Passwortkandidaten mit absteigender Wahrscheinlichkeit.
@@ -1092,9 +1116,9 @@ Password Cracking Using Probabilistic Context-Free Grammars [PCFG]_
 
 
 PCFG - Analyse - Beispiel
-------------------------------------------------------------------------------------
+------------------------------------------------------------------------------
 
-.. container:: small
+.. story::
 
     Im ersten Schritt werden die Produktionswahrscheinlichkeiten von Basisstrukturen, Ziffernfolgen, Sonderzeichenfolgen und Alpha-Zeichenfolgen ermittelt. (Z. Bsp.:
     ``!cat123`` :math:`\Rightarrow` S\ :sub:`1`\ L\ :sub:`3`\ D\ :sub:`3`)
@@ -1102,7 +1126,7 @@ PCFG - Analyse - Beispiel
     .. csv-table::
         :header: Basis Struktur, Häufigkeit, Wahrscheinlichkeit der Produktion
         :widths: 200  200 400
-        :class: smaller highlight-line-on-hover
+        :class: incremental highlight-line-on-hover
 
         L3S1D3, 12788, 0.75
         S1L3D3, 2789, 0.35
@@ -1110,7 +1134,7 @@ PCFG - Analyse - Beispiel
     .. csv-table::
         :header: S1, Häufigkeit, Wahrscheinlichkeit der Produktion
         :widths: 200  200 400
-        :class: smaller highlight-line-on-hover
+        :class: incremental highlight-line-on-hover
 
         !, 12788, 0.50
         ., 2789, 0.30
@@ -1119,7 +1143,7 @@ PCFG - Analyse - Beispiel
     .. csv-table::
         :header: L3, Häufigkeit, Wahrscheinlichkeit der Produktion
         :widths: 200  200 400
-        :class: smaller highlight-line-on-hover
+        :class: incremental highlight-line-on-hover
 
         cat, 12298, 0.85
         dog, 2890, 0.15
@@ -1127,22 +1151,23 @@ PCFG - Analyse - Beispiel
     .. csv-table::
         :header: D3, Häufigkeit, Wahrscheinlichkeit der Produktion
         :widths: 200  200 400
-        :class: smaller highlight-line-on-hover
+        :class: incremental highlight-line-on-hover
 
         123, 10788, 0.60
         321, 5789, 0.35
         654, 4708, 0.25
 
 
-PCFG - Generierung - Beispiel
--------------------------------------------------------------------------------------
 
-.. container:: small
+PCFG - Generierung - Beispiel
+----------------------------------------------------------------------------
+
+.. container::
 
     **Ergebnis der Analyse**:
 
-    .. admonition:: Hinweis
-        :class: note small
+    .. note::
+        :class: width-30
 
         Nicht-Terminale = ``[S,T]``
 
@@ -1150,40 +1175,41 @@ PCFG - Generierung - Beispiel
 
     .. csv-table::
         :header: "Nich-Terminale", "Produktion", "Wahrscheinlichkeit der Produktion"
-        :class: small highlight-line-on-hover
+        :class: highlight-row-on-hover
 
         S, ``password``\ T, 0.7
         S, ``secure``\ T, 0.3
         T, ``123``, 0.6
         T, ``111``, 0.4
 
-    .. container:: incremental
+.. container:: incremental
 
-        **Ableitung**:
+    **Ableitung**:
 
-        1. S :math:`\Rightarrow` ``password``\ T :math:`\Rightarrow` ``password123``
-        2. S :math:`\Rightarrow` ``password``\ T :math:`\Rightarrow` ``password111``
-        3. S :math:`\Rightarrow` ``secure``\ T :math:`\Rightarrow` ``secure123``
-        4. S :math:`\Rightarrow` ``secure``\ T :math:`\Rightarrow` ``secure111``
+    1. S :math:`\Rightarrow` ``password``\ T :math:`\Rightarrow` ``password123``
+    2. S :math:`\Rightarrow` ``password``\ T :math:`\Rightarrow` ``password111``
+    3. S :math:`\Rightarrow` ``secure``\ T :math:`\Rightarrow` ``secure123``
+    4. S :math:`\Rightarrow` ``secure``\ T :math:`\Rightarrow` ``secure111``
+
+
 
 PCFG+
 --------------
+
+.. class:: incremental-list
 
 :Next Gen PCFG Password Cracking [NGPCFG]_:
 
     Unterstützt Tastaturwanderungen (zum Beispiel ``asdf`` oder ``qwerty12345``) und Passworte bestehend aus mehrerern Worten und wiederholten Worten (zum Beispiel ``qpqpqpq``).
 
-.. class:: incremental margin-top-1em line-above padding-top-1em
-
 :On Practical Aspects of PCFG Password Cracking [PAofPCFG]_:
 
     Im Wesentlichen Performanceoptimierungen, um PCFG schneller zu machen.
 
-.. class:: incremental margin-top-1em line-above padding-top-1em
-
 :Using personal information in targeted grammar-based probabilistic password attacks [PIandPCFG]_:
 
     Im Wesentlichen werden zwei PCFGs gewichtet zusammengeführt (0 < alpha < 1).
+
 
 
 SePass: Semantic Password Guessing Using k-nn Similarity Search in Word Embeddings [SePass]_
@@ -1193,11 +1219,11 @@ Zusätzliche Wortkandidaten werden mithilfe von *Worteinbettungen* identifiziert
 
 **Example**
 
-.. container:: two-columns smaller
+.. grid::
 
-    .. container:: column padding-right-1em
+    .. cell:: width-50
 
-        Gegeben:
+        Gegeben sein die folgenden „echten“ Passwörter:
 
             :shiny-green:`Ferrari`\ 01
 
@@ -1207,7 +1233,7 @@ Zusätzliche Wortkandidaten werden mithilfe von *Worteinbettungen* identifiziert
 
             :shiny-green:`Bugatti` 666
 
-    .. container:: column margin-left-1em
+    .. cell:: width-50
 
         „Offensichtliche“ Kandidaten für Basiswörter:
 
@@ -1230,11 +1256,11 @@ Vermeidet menschliche Voreingenommenheit.
 
 **Example**
 
-.. container:: two-columns smaller
+.. grid::
 
-    .. container:: column padding-right-1em
+    .. cell:: width-50
 
-        Gegeben:
+        Gegeben sein die folgenden „echten“ Passwörter:
 
             :shiny-green:`Luke`\ 2017
 
@@ -1242,7 +1268,7 @@ Vermeidet menschliche Voreingenommenheit.
 
             01\ :shiny-green:`Mark`\ !
 
-    .. container:: column margin-left-1em
+    .. cell:: width-50
 
         „Offensichtliche“ Kandidaten für Basiswörter:
 
@@ -1254,6 +1280,8 @@ Vermeidet menschliche Voreingenommenheit.
 
                 Gospel
 
+
+
 SePass: Semantic Password Guessing Using k-nn Similarity Search in Word Embeddings
 -----------------------------------------------------------------------------------
 
@@ -1261,11 +1289,11 @@ Vermeidet menschliche Voreingenommenheit.
 
 **Example**
 
-.. container:: two-columns smaller
+.. grid::
 
-    .. container:: column padding-right-1em
+    .. cell:: width-50
 
-        Gegeben:
+        Gegeben sein die folgenden „echten“ Passwörter:
 
             :shiny-green:`Luke`\ 2017
 
@@ -1273,7 +1301,7 @@ Vermeidet menschliche Voreingenommenheit.
 
             01\ :shiny-green:`Mark`\ !
 
-    .. container:: column margin-left-1em
+    .. cell:: width-50
 
         „Offensichtliche“ Kandidaten für Basiswörter:
 
@@ -1290,30 +1318,35 @@ Vermeidet menschliche Voreingenommenheit.
 Bewertung von Passworten
 ---------------------------
 
-.. class:: far-smaller incremental
+.. story::
 
-    - **Donaudampfschifffahrt**: Ist weder in Rockyou noch im Duden und auch nicht in den Corpora von Twitter und Facebook von 2022 zu finden.
-    - **Passwort**: Nr. 93968 in Rockyou.
-    - **password123**: Nr. 1348 in Rockyou.
-    - **2wsx3edc4rfv**: So nicht in Rockyou, aber 1qaz\ *2wsx3edc4rfv* ist Nr. 143611 in Rockyou.
-    - **Haus Maus**: In Rockyou ist lediglich hausmaus zu finden.
-    - **iluvu**: Nr. 1472 in Rockyou.
-    - **Emily060218**: Emily ist Nr. 35567 in Rockyou. Die Zahl ist ganz offensichtlich ein Datum: 6. Feb. 2018 und könnte ein Geburtsdatum, Hochzeitsdatum, oder ein für die Person vergleichbar bedeutends Datum sein.
-    - **MuenchenHamburg2023!!!!***: Das Passwort ist zwar sehr lang aber es handelt sich vermutlich um zwei - für die entsprechende Person - bedeutende Orte. Die Zahl und die Sonderzeichen sind vermutlich auf eine Passwortrichtlinie zurückzuführen.
-    - **hjA223dn4fw"üäKßß k`≤-~ajsdk**: 28 Stellen basierend auf einem Zeichensatz, der vermutlich ca. 192 Zeichen pro Stelle umfasst.
-    - **Baum Lampe Haus Steak Eis Berg**: Es handelt sich um ein Passwort mit 30 Stellen, das vermutlich mit Hilfe von Diceware generiert wurde und 6 Worte umfasst.
-    - **ME01703138541**: Namenskürzel und Telefonnummer.
+    .. class:: incremental-list
+
+        - **Donaudampfschifffahrt**: Ist weder in Rockyou noch im Duden und auch nicht in den Corpora von Twitter und Facebook von 2022 zu finden.
+        - **Passwort**: Nr. 93968 in Rockyou.
+        - **password123**: Nr. 1348 in Rockyou.
+        - **2wsx3edc4rfv**: So nicht in Rockyou, aber 1qaz\ *2wsx3edc4rfv* ist Nr. 143611 in Rockyou.
+        - **Haus Maus**: In Rockyou ist lediglich hausmaus zu finden.
+        - **iluvu**: Nr. 1472 in Rockyou.
+        - **Emily060218**: Emily ist Nr. 35567 in Rockyou. Die Zahl ist ganz offensichtlich ein Datum: 6. Feb. 2018 und könnte ein Geburtsdatum, Hochzeitsdatum, oder ein für die Person vergleichbar bedeutends Datum sein.
+        - **MuenchenHamburg2023!!!!***: Das Passwort ist zwar sehr lang aber es handelt sich vermutlich um zwei - für die entsprechende Person - bedeutende Orte. Die Zahl und die Sonderzeichen sind vermutlich auf eine Passwortrichtlinie zurückzuführen.
+        - **hjA223dn4fw"üäKßß k`≤-~ajsdk**: 28 Stellen basierend auf einem Zeichensatz, der vermutlich ca. 192 Zeichen pro Stelle umfasst.
+        - **Baum Lampe Haus Steak Eis Berg**: Es handelt sich um ein Passwort mit 30 Stellen, das vermutlich mit Hilfe von Diceware generiert wurde und 6 Worte umfasst.
+        - **ME01703138541**: Namenskürzel und Telefonnummer.
 
 .. supplemental::
 
-    .. admonition:: Diceware
+    .. rubric:: Diceware
 
-        Auch wenn dem Angreifer
-        (a) bekannt ist, dass das Passwort mit Hilfe von Diceware generiert wurde,
-        (b) die zugrundeliegende Wortliste vorliegt und
-        (c) auch die Länge (hier 6 Worte) bekannt sein sollte, dann umfasst der Suchraum: :math:`(6^5)^6 \approx 2,21\times 10^{23}` Passwortkandidaten. Sollte man also mit einer Geschwindigkeit von 1 Billion Hashes pro Sekunde angreifen können, dann brauch man noch immer über 7000  Jahre für das Absuchen des vollständigen Suchraums.
+    Auch wenn dem Angreifer
 
-        Beim klassischen Dicewareansatz umfasst das Wörterbuch :math:`6^5` Worte, da man mit einem normalen Würfel fünfmal Würfelt und dann das entsprechende Wort nachschlägt. Würde man zum Beispiel die folgenden Zahlen würfeln: 1,4,2,5,2. Dann würde man das Wort zur Zahl: 14252 nachschlagen.
+    (a) bekannt ist, dass das Passwort mit Hilfe von Diceware generiert wurde,
+    (b) die zugrundeliegende Wortliste vorliegt und
+    (c) auch die Länge (hier 6 Worte) bekannt sein sollte,
+
+    dann umfasst der Suchraum: :math:`(6^5)^6 \approx 2,21\times 10^{23}` Passwortkandidaten. Sollte man also mit einer Geschwindigkeit von 1 Billion Hashes pro Sekunde angreifen können, dann brauch man noch immer über 7000  Jahre für das Absuchen des vollständigen Suchraums.
+
+    Beim klassischen Dicewareansatz umfasst das Wörterbuch :math:`6^5` Worte, da man mit einem normalen Würfel fünfmal Würfelt und dann das entsprechende Wort nachschlägt. Würde man zum Beispiel die folgenden Zahlen würfeln: 1,4,2,5,2. Dann würde man das Wort zur Zahl: 14252 nachschlagen.
 
 
 
@@ -1324,11 +1357,11 @@ Wörterbuchgenerierung - Evaluation von Werkzeugen
 .. image:: passwortwiederherstellung-evaluation.png
     :alt: Evaluation verschiedener Ansätze für die Passwortevaluation
     :align: center
-    :width: 1200px
+    :class: highdpi
 
 
 
-.. class:: integrated-exercise transition-move-to-top
+.. class:: exercises transition-move-to-top
 
 Übung - Wiederherstellung eines Passworts
 --------------------------------------------------
@@ -1346,7 +1379,8 @@ Wörterbuchgenerierung - Evaluation von Werkzeugen
     verwenden:
 
     .. code:: python
-        :class: copy-to-clipboard far-far-smaller
+        :class: copy-to-clipboard
+        :number-lines:
 
         import hashlib
         import binascii
@@ -1355,11 +1389,12 @@ Wörterbuchgenerierung - Evaluation von Werkzeugen
 
         """ In some loop do: hashlib.md5(...).digest() """
 
-
     .. solution::
         :pwd: 1234
 
         .. code:: python
+            :number-lines:
+            :class: copy-to-clipboard
 
             import hashlib
             import binascii
@@ -1378,6 +1413,7 @@ Wörterbuchgenerierung - Evaluation von Werkzeugen
           Ausgabe: 1234
 
 
+
 Sichere Passwörter
 --------------------------
 
@@ -1389,11 +1425,8 @@ Sichere Passwörter
 
 
 
-.. class:: no-title organic-red center-child-elements
-
 Schwachstellen in Passwort-Managern
 ------------------------------------
-
 
 .. epigraph::
 
@@ -1410,7 +1443,7 @@ Schwachstellen in Passwort-Managern
 Literaturverzeichnis
 -----------------------
 
-.. container:: far-smaller
+.. scrollable::
 
     .. [SePass]
         SePass: Semantic Password Guessing Using k-nn Similarity Search in Word Embeddings; Maximilian Hünemörder, Levin Schäfer, Nadine-Sarah Schüler, Michael Eichberg & Peer Kröger, ADMA 2022: Advanced Data Mining and Applications, Springer LNAI, volume 13726

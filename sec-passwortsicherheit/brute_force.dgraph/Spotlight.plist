@@ -3,8 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>Labels</key>
-	<string>Zeit für vollständigen Brute-Force Angriff
-# Zeichen
+	<string># Zeichen
 Sekunden
 </string>
 	<key>Text</key>

@@ -1,0 +1,464 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<!-- Generator: DataGraph - https://www.visualdatatools.com/DataGraph/index.html  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+    "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg
+    viewBox="0 0 550 300"
+    width="550"
+    height="300"
+    version="1.1"
+    xmlns="http://www.w3.org/2000/svg"
+    xmlns:xlink="http://www.w3.org/1999/xlink"
+>
+<style>
+  @import url('/LectureDoc2/ext/fonts/ld-fonts.css');
+</style>
+<g>
+  <!-- Commands -->
+  <g id="Commands">
+    <!-- (70^x)/2000 -->
+    <g id="70_x_2000">
+      <path
+                    d="M 57.5 254.5 L 113.186 254.401 L 121.196 254.188 L 126.102 253.869 L 129.738 253.437 L 132.614 252.896
+               L 135.02 252.235 L 137.021 251.483 L 138.779 250.618 L 140.477 249.549 L 142.089 248.262
+               L 143.534 246.826 L 144.844 245.242 L 146.014 243.552 L 147.162 241.593 L 148.45 238.976
+               L 149.685 235.971 L 150.773 232.842 L 152.072 228.411 L 153.293 223.422 L 154.4 218.082
+               L 155.572 211.416 L 156.678 204.021 L 157.805 195.17 L 158.9 185.092 L 159.934 173.997
+               L 161.103 159.317 L 162.19 143.28 L 163.268 124.692 L 164.41 101.603 L 165.506 75.59 L 166.617 44.7266
+               L 167.666 10.5 "
+                    stroke="rgb(228,28,28)"
+                    stroke-dasharray="9.6,6"
+                    stroke-linecap="butt"
+                    fill="none"
+                    stroke-width="3"
+                />
+    </g>
+    <!-- (70^x)/643000000000 -->
+    <g id="70_x_643000000000">
+      <path
+                    d="M 57.5 254.5 L 249.92 254.4 L 257.984 254.183 L 262.75 253.872 L 266.22 253.467 L 269.076 252.945
+               L 271.444 252.316 L 273.373 251.62 L 275.082 250.821 L 276.678 249.876 L 278.229 248.725
+               L 279.658 247.412 L 281.109 245.773 L 282.398 244.004 L 283.649 241.942 L 284.879 239.52
+               L 286.034 236.823 L 287.106 233.89 L 288.237 230.261 L 289.465 225.599 L 290.595 220.517
+               L 291.835 213.908 L 293.034 206.294 L 294.051 198.729 L 295.15 189.217 L 296.262 177.94
+               L 297.467 163.506 L 298.478 149.317 L 299.747 128.349 L 300.872 106.279 L 302.023 79.6947
+               L 303.082 51.0222 L 304.24 14.3196 L 304.342 10.5 "
+                    stroke="rgb(228,26,28)"
+                    stroke-dasharray="0.03,4.5"
+                    stroke-linecap="round"
+                    fill="none"
+                    stroke-width="3"
+                />
+    </g>
+    <!-- (10^x)/2000 -->
+    <g id="10_x_2000">
+      <path
+                    d="M 57.5 254.5 L 160.288 254.401 L 175.131 254.185 L 184.169 253.865 L 190.656 253.448 L 195.896 252.92
+               L 200.287 252.278 L 203.911 251.555 L 207.089 250.731 L 209.974 249.784 L 212.651 248.693
+               L 214.993 247.535 L 217.192 246.238 L 219.256 244.801 L 221.303 243.13 L 223.258 241.265
+               L 225.164 239.154 L 227.028 236.762 L 228.792 234.157 L 230.513 231.248 L 232.121 228.155
+               L 233.855 224.356 L 235.418 220.465 L 237.025 215.94 L 238.566 211.035 L 240.208 205.124
+               L 241.868 198.33 L 243.52 190.64 L 245.029 182.697 L 246.612 173.304 L 248.254 162.256
+               L 249.92 149.51 L 251.53 135.529 L 253.102 120.076 L 254.727 101.996 L 256.272 82.5458
+               L 257.927 58.959 L 259.42 34.9106 L 260.763 10.5 "
+                    stroke="rgb(55,126,184)"
+                    stroke-dasharray="0.03,4.8,9.6,4.8"
+                    stroke-linecap="round"
+                    fill="none"
+                    stroke-width="3"
+                />
+    </g>
+    <!-- (10^x)/643000000000 -->
+    <g id="10_x_643000000000">
+      <path
+                    d="M 57.5 254.5 L 412.35 254.402 L 427.252 254.187 L 436.253 253.869 L 442.904 253.443 L 448.17 252.909
+               L 452.433 252.284 L 456.161 251.54 L 459.333 250.713 L 462.244 249.752 L 464.887 248.67
+               L 467.327 247.454 L 469.499 246.159 L 471.647 244.644 L 473.645 242.99 L 475.455 241.252
+               L 477.398 239.094 L 479.179 236.809 L 480.89 234.293 L 482.657 231.321 L 484.379 228.005
+               L 485.979 224.497 L 487.473 220.807 L 489.092 216.29 L 490.726 211.121 L 492.22 205.784
+               L 493.875 199.097 L 495.416 192.056 L 497.034 183.694 L 498.579 174.665 L 500.201 163.945
+               L 501.734 152.495 L 503.324 139.086 L 504.942 123.627 L 506.474 107.084 L 508.082 87.4819
+               L 509.685 65.3294 L 511.256 40.7711 L 512.869 12.2573 L 512.957 10.5 "
+                    stroke="rgb(55,126,184)"
+                    stroke-dasharray="0.03,4.5"
+                    stroke-linecap="round"
+                    fill="none"
+                    stroke-width="3"
+                />
+    </g>
+    <!-- Legend -->
+    <g id="Legend">
+      <defs>
+        <clipPath id="clipPath">
+          <rect x="105.3" y="18" width="420" height="88.2" />
+        </clipPath>
+      </defs>
+      <g clip-path="url(#clipPath)">
+        <rect
+                        x="105.3"
+                        y="18"
+                        width="420"
+                        height="88.2"
+                        fill="white"
+                        opacity="0.803545"
+                        stroke="none"
+                    />
+      </g>
+      <rect
+                    x="105.3"
+                    y="18"
+                    width="420"
+                    height="88.2"
+                    stroke="black"
+                    fill="none"
+                    stroke-width="0.5"
+                />
+      <defs>
+        <clipPath id="clipPath2">
+          <rect x="105.3" y="18" width="420" height="88.2" />
+        </clipPath>
+      </defs>
+      <g clip-path="url(#clipPath2)">
+        <defs>
+          <clipPath id="clipPath3">
+            <rect x="111.3" y="38.16" width="17" height="14.28" />
+          </clipPath>
+        </defs>
+        <g clip-path="url(#clipPath3)">
+          <path
+                            d="M 111.3 45.5 L 128.3 45.5 "
+                            stroke="rgb(228,28,28)"
+                            stroke-dasharray="9.6,6"
+                            stroke-dashoffset="11.9"
+                            stroke-linecap="butt"
+                            fill="none"
+                            stroke-width="3"
+                        />
+        </g>
+        <g font-family="Noto Sans Display" font-size="14" fill="black">
+          <text x="134.3" y="50.321">(70</text>
+          <text x="154.534" y="44.0979" font-size="11">x</text>
+          <text x="160.034" y="50.321">)/2000</text>
+        </g>
+        <defs>
+          <clipPath id="clipPath4">
+            <rect x="111.3" y="54.96" width="17" height="14.28" />
+          </clipPath>
+        </defs>
+        <g clip-path="url(#clipPath4)">
+          <path
+                            d="M 111.3 62.5 L 128.3 62.5 "
+                            stroke="rgb(228,26,28)"
+                            stroke-dasharray="0.03,4.5"
+                            stroke-dashoffset="0.575"
+                            stroke-linecap="round"
+                            fill="none"
+                            stroke-width="3"
+                        />
+        </g>
+        <g font-family="Noto Sans Display" font-size="14" fill="black">
+          <text x="134.3" y="67.121">(70</text>
+          <text x="154.534" y="60.8979" font-size="11">x</text>
+          <text x="160.034" y="67.121">)/643000000000</text>
+        </g>
+        <defs>
+          <clipPath id="clipPath5">
+            <rect x="111.3" y="71.76" width="17" height="14.28" />
+          </clipPath>
+        </defs>
+        <g clip-path="url(#clipPath5)">
+          <path
+                            d="M 111.3 78.5 L 128.3 78.5 "
+                            stroke="rgb(55,126,184)"
+                            stroke-dasharray="0.03,4.8,9.6,4.8"
+                            stroke-dashoffset="1.13"
+                            stroke-linecap="round"
+                            fill="none"
+                            stroke-width="3"
+                        />
+        </g>
+        <g font-family="Noto Sans Display" font-size="14" fill="black">
+          <text x="134.3" y="83.921">(10</text>
+          <text x="154.534" y="77.6979" font-size="11">x</text>
+          <text x="160.034" y="83.921">)/2000</text>
+        </g>
+        <defs>
+          <clipPath id="clipPath6">
+            <rect x="111.3" y="88.56" width="17" height="14.28" />
+          </clipPath>
+        </defs>
+        <g clip-path="url(#clipPath6)">
+          <path
+                            d="M 111.3 95.5 L 128.3 95.5 "
+                            stroke="rgb(55,126,184)"
+                            stroke-dasharray="0.03,4.5"
+                            stroke-dashoffset="0.575"
+                            stroke-linecap="round"
+                            fill="none"
+                            stroke-width="3"
+                        />
+        </g>
+        <g font-family="Noto Sans Display" font-size="14" fill="black">
+          <text x="134.3" y="100.721">(10</text>
+          <text x="154.534" y="94.4979" font-size="11">x</text>
+          <text x="160.034" y="100.721">)/643000000000</text>
+        </g>
+        <g font-family="Noto Sans Display" font-size="14" fill="black">
+          <text x="111.3" y="33.521"># möglicher Zeichen</text>
+          <text x="237.362" y="27.2979" font-size="11">^</text>
+          <text x="242.523" y="33.521">
+            (Passwortlänge x) / angenommene Hashrate
+          </text>
+        </g>
+      </g>
+    </g>
+  </g>
+  <!-- Foreground -->
+  <g id="Foreground">
+    <!-- Y Axis -->
+    <g id="Y_Axis">
+      <g
+                    transform="translate(12.2719,132.5) rotate(-90) translate(-29.2719,-132.5)"
+                    font-family="Noto Sans Display"
+                    font-size="14"
+                    fill="black"
+                >
+        <text x="-15.2555" y="132.5">Sekunden</text>
+      </g>
+      <!-- Y Labels -->
+      <g id="Y_Labels">
+        <g font-family="Noto Sans Display" font-size="14" fill="black">
+          <text x="38.9139" y="259.521">0</text>
+        </g>
+        <g font-family="Noto Sans Display" font-size="14" fill="black">
+          <text x="15.5555" y="191.743">1000</text>
+        </g>
+        <g font-family="Noto Sans Display" font-size="14" fill="black">
+          <text x="15.5555" y="123.965">2000</text>
+        </g>
+        <g font-family="Noto Sans Display" font-size="14" fill="black">
+          <text x="15.5555" y="56.1877">3000</text>
+        </g>
+      </g>
+      <path
+                    d="M 49.5 254.5 L 57.5 254.5 M 53.5 247.722 L 57.5 247.722 M 53.5 240.944 L 57.5 240.944
+               M 53.5 234.167 L 57.5 234.167 M 53.5 227.389 L 57.5 227.389 M 53.5 220.611 L 57.5 220.611
+               M 53.5 213.833 L 57.5 213.833 M 53.5 207.056 L 57.5 207.056 M 53.5 200.278 L 57.5 200.278
+               M 53.5 193.5 L 57.5 193.5 M 49.5 186.722 L 57.5 186.722 M 53.5 179.944 L 57.5 179.944
+               M 53.5 173.167 L 57.5 173.167 M 53.5 166.389 L 57.5 166.389 M 53.5 159.611 L 57.5 159.611
+               M 53.5 152.833 L 57.5 152.833 M 53.5 146.056 L 57.5 146.056 M 53.5 139.278 L 57.5 139.278
+               M 53.5 132.5 L 57.5 132.5 M 53.5 125.722 L 57.5 125.722 M 49.5 118.944 L 57.5 118.944
+               M 53.5 112.167 L 57.5 112.167 M 53.5 105.389 L 57.5 105.389 M 53.5 98.6111 L 57.5 98.6111
+               M 53.5 91.8333 L 57.5 91.8333 M 53.5 85.0556 L 57.5 85.0556 M 53.5 78.2778 L 57.5 78.2778
+               M 53.5 71.5 L 57.5 71.5 M 53.5 64.7222 L 57.5 64.7222 M 53.5 57.9444 L 57.5 57.9444 M 49.5 51.1667 L 57.5 51.1667
+               M 53.5 44.3889 L 57.5 44.3889 M 53.5 37.6111 L 57.5 37.6111 M 53.5 30.8333 L 57.5 30.8333
+               M 53.5 24.0556 L 57.5 24.0556 M 53.5 17.2778 L 57.5 17.2778 M 53.5 10.5 L 57.5 10.5 "
+                    stroke="black"
+                    fill="none"
+                    stroke-width="0.5"
+                />
+    </g>
+    <!-- X Axis -->
+    <g id="X_Axis">
+      <g font-family="Noto Sans Display" font-size="14" fill="black">
+        <text x="264.259" y="292"># Zeichen</text>
+      </g>
+      <g>
+        <g font-family="Noto Sans Display" font-size="14" fill="black">
+          <text x="53.6069" y="275.555">0</text>
+        </g>
+        <g font-family="Noto Sans Display" font-size="14" fill="black">
+          <text x="112.894" y="275.555">2</text>
+        </g>
+        <g font-family="Noto Sans Display" font-size="14" fill="black">
+          <text x="172.182" y="275.555">4</text>
+        </g>
+        <g font-family="Noto Sans Display" font-size="14" fill="black">
+          <text x="231.469" y="275.555">6</text>
+        </g>
+        <g font-family="Noto Sans Display" font-size="14" fill="black">
+          <text x="290.757" y="275.555">8</text>
+        </g>
+        <g font-family="Noto Sans Display" font-size="14" fill="black">
+          <text x="346.151" y="275.555">10</text>
+        </g>
+        <g font-family="Noto Sans Display" font-size="14" fill="black">
+          <text x="405.439" y="275.555">12</text>
+        </g>
+        <g font-family="Noto Sans Display" font-size="14" fill="black">
+          <text x="464.726" y="275.555">14</text>
+        </g>
+        <g font-family="Noto Sans Display" font-size="14" fill="black">
+          <text x="524.014" y="275.555">16</text>
+        </g>
+      </g>
+      <path
+                    d="M 57.5 262.5 L 57.5 254.5 M 116.787 262.5 L 116.787 254.5 M 176.075 262.5 L 176.075 254.5
+               M 235.362 262.5 L 235.362 254.5 M 294.65 262.5 L 294.65 254.5 M 353.938 262.5 L 353.938 254.5
+               M 413.225 262.5 L 413.225 254.5 M 472.512 262.5 L 472.512 254.5 M 531.8 262.5 L 531.8 254.5
+               M 87.1437 258.5 L 87.1437 254.5 M 146.431 258.5 L 146.431 254.5 M 205.719 258.5 L 205.719 254.5
+               M 265.006 258.5 L 265.006 254.5 M 324.294 258.5 L 324.294 254.5 M 383.581 258.5 L 383.581 254.5
+               M 442.869 258.5 L 442.869 254.5 M 502.156 258.5 L 502.156 254.5 "
+                    stroke="black"
+                    fill="none"
+                    stroke-width="0.5"
+                />
+    </g>
+    <path
+                d="M 531.8 254.5 L 531.8 10.5 L 57.5 10.5 L 57.5 254.5 L 531.8 254.5 z "
+                stroke="black"
+                stroke-linecap="square"
+                fill="none"
+                stroke-width="0.5"
+            />
+  </g>
+  <!-- Zoom -->
+  <g id="Zoom">
+    <!-- Connection -->
+    <g id="Connection">
+      <path
+                    d="M 221.519 254.839 L 241.5 232.5 "
+                    stroke="black"
+                    fill="none"
+                    stroke-width="0.5"
+                />
+      <path
+                    d="M 110.088 254.839 L 97.5 232.5 "
+                    stroke="black"
+                    fill="none"
+                    stroke-width="0.5"
+                />
+    </g>
+    <!-- Source -->
+    <g id="Source">
+      <defs>
+        <clipPath id="clipPath7">
+          <rect x="97.5" y="147.5" width="144" height="85" />
+        </clipPath>
+      </defs>
+      <g clip-path="url(#clipPath7)">
+        <rect
+                        x="97.5"
+                        y="147.5"
+                        width="144"
+                        height="85"
+                        fill="rgb(238,238,238)"
+                        stroke="none"
+                    />
+      </g>
+      <rect
+                    x="110.088"
+                    y="243.588"
+                    width="111.431"
+                    height="11.2511"
+                    stroke="black"
+                    fill="none"
+                    stroke-width="0.5"
+                />
+    </g>
+    <!-- Destination -->
+    <g id="Destination">
+      <!-- Content -->
+      <g id="Content" transform="translate(97,233)">>
+        <!-- Commands -->
+        <g id="Commands_2">
+          <path
+                            d="M 0.5 -3.54051 L 5.76849 -3.92171 L 9.82786 -4.41156 L 13.1452 -5.0125 L 15.9326 -5.71968
+                   L 18.3868 -6.55163 L 20.5472 -7.49685 L 22.5359 -8.59166 L 24.3748 -9.84307 L 26.0764 -11.2518
+                   L 27.6864 -12.8531 L 29.2504 -14.708 L 30.7515 -16.8178 L 32.1911 -19.1993 L 33.6071 -21.9437
+                   L 35.0003 -25.0989 L 36.3953 -28.7864 L 37.7488 -32.9527 L 39.1088 -37.8191 L 40.452 -43.4028
+                   L 41.7857 -49.8337 L 43.1093 -57.2293 L 44.4331 -65.7953 L 45.7487 -75.6499 L 46.8857 -85.5 "
+                            stroke="rgb(228,28,28)"
+                            stroke-dasharray="9.6,6"
+                            stroke-linecap="butt"
+                            fill="none"
+                            stroke-width="3"
+                        />
+          <path
+                            d="M 0.5 -3.06024 L 144.5 -3.07312 "
+                            stroke="rgb(228,26,28)"
+                            stroke-dasharray="0.03,4.5"
+                            stroke-linecap="round"
+                            fill="none"
+                            stroke-width="3"
+                        />
+          <path
+                            d="M 0.5 -3.07546 L 38.581 -3.21033 L 54.7173 -3.45613 L 65.3209 -3.80906 L 73.2916 -4.26929
+                   L 79.6793 -4.83521 L 85.0162 -5.50652 L 89.6058 -6.28364 L 93.6616 -7.17351 L 97.2879 -8.17529
+                   L 100.598 -9.30112 L 103.629 -10.5484 L 106.44 -11.9269 L 109.071 -13.4457 L 111.546 -15.1115
+                   L 113.909 -16.951 L 116.175 -18.9778 L 118.339 -21.1888 L 120.446 -23.6368 L 122.498 -26.3384
+                   L 124.509 -29.329 L 126.462 -32.6008 L 128.403 -36.2562 L 130.322 -40.3142 L 132.191 -44.7437
+                   L 134.045 -49.6568 L 135.895 -55.1398 L 137.732 -61.2186 L 139.551 -67.937 L 141.354 -75.3652
+                   L 143.173 -83.7188 L 143.526 -85.5 "
+                            stroke="rgb(55,126,184)"
+                            stroke-dasharray="0.03,4.8,9.6,4.8"
+                            stroke-linecap="round"
+                            fill="none"
+                            stroke-width="3"
+                        />
+          <path
+                            d="M 0.5 -3.06024 L 144.5 -3.06024 "
+                            stroke="rgb(55,126,184)"
+                            stroke-dasharray="0.03,4.5"
+                            stroke-linecap="round"
+                            fill="none"
+                            stroke-width="3"
+                        />
+        </g>
+        <g>
+          <!-- Y Labels -->
+          <g id="Y_Labels_2">
+            <g font-family="Noto Sans Display" font-size="13" fill="black">
+              <text x="-17.33" y="1.60211">0</text>
+            </g>
+            <g font-family="Noto Sans Display" font-size="13" fill="black">
+              <text x="-24.56" y="-24.0003">50</text>
+            </g>
+            <g font-family="Noto Sans Display" font-size="13" fill="black">
+              <text x="-31.7899" y="-49.6027">100</text>
+            </g>
+            <g font-family="Noto Sans Display" font-size="13" fill="black">
+              <text x="-31.7899" y="-75.2051">150</text>
+            </g>
+          </g>
+          <path
+                            d="M -7.5 -3.06024 L 0.5 -3.06024 M -3.5 -8.18072 L 0.5 -8.18072 M -3.5 -13.3012 L 0.5 -13.3012
+                   M -3.5 -18.4217 L 0.5 -18.4217 M -3.5 -23.5422 L 0.5 -23.5422 M -7.5 -28.6627 L 0.5 -28.6627
+                   M -3.5 -33.7831 L 0.5 -33.7831 M -3.5 -38.9036 L 0.5 -38.9036 M -3.5 -44.0241 L 0.5 -44.0241
+                   M -3.5 -49.1446 L 0.5 -49.1446 M -7.5 -54.2651 L 0.5 -54.2651 M -3.5 -59.3855 L 0.5 -59.3855
+                   M -3.5 -64.506 L 0.5 -64.506 M -3.5 -69.6265 L 0.5 -69.6265 M -3.5 -74.747 L 0.5 -74.747
+                   M -7.5 -79.8675 L 0.5 -79.8675 M -3.5 -84.988 L 0.5 -84.988 "
+                            stroke="black"
+                            fill="none"
+                            stroke-width="0.5"
+                        />
+          <g>
+            <g font-family="Noto Sans Display" font-size="13" fill="black">
+              <text x="5.54263" y="-95.3649">2</text>
+            </g>
+            <g font-family="Noto Sans Display" font-size="13" fill="black">
+              <text x="82.1588" y="-95.3649">4</text>
+            </g>
+          </g>
+          <path
+                            d="M 9.15762 -85.5 L 9.15762 -93.5 M 47.4657 -85.5 L 47.4657 -89.5 M 85.7737 -85.5 L 85.7737 -93.5
+                   M 124.082 -85.5 L 124.082 -89.5 "
+                            stroke="black"
+                            fill="none"
+                            stroke-width="0.5"
+                        />
+        </g>
+      </g>
+      <rect
+                    x="97.5"
+                    y="147.5"
+                    width="144"
+                    height="85"
+                    stroke="black"
+                    fill="none"
+                    stroke-width="0.5"
+                />
+    </g>
+  </g>
+</g>
+</svg>
