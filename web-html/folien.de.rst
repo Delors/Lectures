@@ -1508,8 +1508,6 @@ Referenzen
                 </html>
             '>iframe is not supported</iframe>
 
-
-
   .. solution::
     :pwd: HTML5Webseite
 
