@@ -6,13 +6,13 @@
    :description lang=de: Kontrollfragen bzgl. klassischer Sicherheitsprinzipien
    :id: lecture-klassische-Sicherheitsprinzipien-Kontrollfragen
    :first-slide: last-viewed
-   :exercises-master-password: WirklichSchwierig!
+   :master-password: WirklichSchwierig!
 
 .. include:: ../docutils.defs
 
 
 
-Kontrollfragen: Klassische Sicherheitsprinzipien
+Klassische Sicherheitsprinzipien - Kontrollfragen
 ================================================================================
 
 -----
@@ -22,10 +22,16 @@ Kontrollfragen: Klassische Sicherheitsprinzipien
 :Version: 1.0
 
 
+.. class:: new-section
+
+Prinzipien
+------------------
+
+
 
 .. class:: exercises
 
-Kontrollfragen
+Übung
 ----------------
 
 Die folgenden Fragen sind exemplarisch für Fragen wie sie in einer Prüfung vorkommen könnten.
@@ -52,6 +58,20 @@ Die folgenden Fragen sind exemplarisch für Fragen wie sie in einer Prüfung vor
             :pwd: Fragen-Antworten
 
             Die Sicherheit des Systems sollte nicht von der Geheimhaltung der Sicherheitsmechanismen abhängen (sondern nur vom Schlüssel).
+
+
+
+.. class:: new-section
+
+Umsetzung von Prinzipien
+---------------------------------
+
+
+
+.. class:: exercises
+
+Übung
+----------------
 
 .. exercise:: FUSE - File System in User Space
         :class: incremental
