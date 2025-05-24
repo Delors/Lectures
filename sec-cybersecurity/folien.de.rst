@@ -16,15 +16,24 @@ Cybersecurity
 
 :Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
 :Kontakt: michael.eichberg@dhbw.de
-:Version: 2.8
+:Version: 2.8.1
 
 .. supplemental::
 
-  :Folien:
+    :Folien:
       |html-source|
 
       |pdf-source|
-  :Fehler melden:
+
+    :Kontrollfragen:
+
+        .. source:: kontrollfragen.de.rst
+            :path: relative
+            :prefix: https://delors.github.io/
+            :suffix: .html
+
+
+    :Fehler melden:
       https://github.com/Delors/delors.github.io/issues
 
 
@@ -240,6 +249,17 @@ Neuigkeiten aus der Welt der IT Sicherheit
             The State Department said Thursday it is offering an up to $5 million reward for information about the conspirators and others associated with the two “North Korean front companies.”
 
             -- 12.12.2024 - `CNBC <https://www.cnbc.com/2024/12/12/north-koreans-charged-identity-theft-extortion-conspiracy-doj.html>`__
+
+
+    .. card::
+
+        .. epigraph::
+
+            **VMware Hacked As $150,000 Zero-Day Exploit Dropped**
+
+            [...] Nguyen Hoang Thach of STARLabs SG used a single integer overflow to exploit #VMware ESXi - a first in Pwn2Own history. He earns $150,000 [...]
+
+            -- May 17, 2025 - `Davey Winder <https://www.forbes.com/sites/daveywinder/2025/05/17/vmware-hacked-as-150000-zero-day-exploit-dropped/>`__
 
 
 
