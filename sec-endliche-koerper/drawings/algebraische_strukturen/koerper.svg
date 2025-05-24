@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+    "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg
+    xmlns:xl="http://www.w3.org/1999/xlink"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns="http://www.w3.org/2000/svg"
+    version="1.1"
+    viewBox="78 299 533 251"
+    width="533"
+    height="251"
+>
+<style>
+  @import url('/LectureDoc2/ext/fonts/ld-fonts.css');
+</style>
+<metadata> Produced by OmniGraffle 8.0\n2025-05-23 10:36:47 +0000</metadata>
+  <g
+        id="koerper"
+        stroke="none"
+        stroke-opacity="1"
+        stroke-dasharray="none"
+        fill-opacity="1"
+        fill="none"
+    >
+    <title>koerper</title>
+    <g id="koerper_Layer_1">
+      <title>Layer 1</title>
+      <g id="Graphic_2">
+        <path
+                    d="M 221.7126 299.29458 L 347.7126 299.29458 C 354.34 299.29458 359.7126 304.66716 359.7126 311.29458 L 359.7126 316.29458 C 359.7126 322.922 354.34 328.29458 347.7126 328.29458 L 221.7126 328.29458 C 215.08518 328.29458 209.7126 322.922 209.7126 316.29458 L 209.7126 311.29458 C 209.7126 304.66716 215.08518 299.29458 221.7126 299.29458 Z"
+                    fill="#e9e9e9"
+                />
+        <text transform="translate(214.7126 304.29458)" fill="black">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="14"
+                        font-weight="400"
+                        fill="black"
+                        x="48.664"
+                        y="15"
+                    >Körper</tspan>
+        </text>
+      </g>
+      <g id="Graphic_3">
+        <text transform="translate(83.5 350)" fill="black">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="14"
+                        font-weight="400"
+                        fill="black"
+                        x="18.942"
+                        y="15"
+                    >Körper mit einer </tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="14"
+                        font-weight="400"
+                        fill="black"
+                        x="8.806"
+                        y="34"
+                    >unendlichen Anzahl </tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="14"
+                        font-weight="400"
+                        fill="black"
+                        x="23.527"
+                        y="53"
+                    >von Elementen</tspan>
+        </text>
+      </g>
+      <g id="Graphic_4">
+        <text transform="translate(312.1658 372.43945)" fill="black">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="14"
+                        font-weight="400"
+                        fill="black"
+                        x="20.664"
+                        y="15"
+                    >endliche Körper</tspan>
+        </text>
+      </g>
+      <g id="Graphic_5">
+        <path
+                    d="M 197.98196 435.58433 L 362.40716 435.58433 C 369.0346 435.58433 374.40716 440.9569 374.40716 447.58433 L 374.40716 537.78994 C 374.40716 544.41735 369.0346 549.78994 362.40716 549.78994 L 197.98196 549.78994 C 191.35455 549.78994 185.98196 544.41735 185.98196 537.78994 L 185.98196 447.58433 C 185.98196 440.9569 191.35455 435.58433 197.98196 435.58433 Z"
+                    fill="#c0ffc0"
+                />
+        <text transform="translate(190.98196 451.68713)" fill="black">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="14"
+                        font-weight="400"
+                        fill="black"
+                        x="72.9446"
+                        y="15"
+                    >GF(p)</tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="14"
+                        font-weight="400"
+                        fill="black"
+                        x="22.1596"
+                        y="57"
+                    >Endliche Körper mit p </tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="14"
+                        font-weight="400"
+                        fill="black"
+                        x="55.8996"
+                        y="78"
+                    >Elementen</tspan>
+        </text>
+      </g>
+      <g id="Graphic_6">
+        <path
+                    d="M 428.4295 435.58433 L 598.7598 435.58433 C 605.3872 435.58433 610.7598 440.9569 610.7598 447.58433 L 610.7598 537.78994 C 610.7598 544.41735 605.3872 549.78994 598.7598 549.78994 L 428.4295 549.78994 C 421.8021 549.78994 416.4295 544.41735 416.4295 537.78994 L 416.4295 447.58433 C 416.4295 440.9569 421.8021 435.58433 428.4295 435.58433 Z"
+                    fill="#c0ffc0"
+                />
+        <text transform="translate(421.4295 449.18713)" fill="black">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="14"
+                        font-weight="400"
+                        fill="black"
+                        x="71.41013"
+                        y="20"
+                        xml:space="preserve"
+                    >GF(p   )</tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="14"
+                        font-weight="400"
+                        fill="black"
+                        x="30.87313"
+                        y="62"
+                    >Endliche Körper mit </tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="14"
+                        font-weight="400"
+                        fill="black"
+                        x="58.85213"
+                        y="83"
+                    >Elementen</tspan>
+        </text>
+      </g>
+      <g id="Line_7">
+        <line
+                    x1="305.44888"
+                    y1="328.29458"
+                    x2="361.4295"
+                    y2="367.43945"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                />
+      </g>
+      <g id="Line_8">
+        <line
+                    x1="399.37353"
+                    y1="396.43945"
+                    x2="445.8284"
+                    y2="435.58433"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                />
+      </g>
+      <g id="Line_9">
+        <line
+                    x1="368.81487"
+                    y1="396.43945"
+                    x2="332.77212"
+                    y2="435.58433"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                />
+      </g>
+      <g id="Line_10">
+        <line
+                    x1="255.30884"
+                    y1="328.29458"
+                    x2="221.43282"
+                    y2="345"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                />
+      </g>
+      <g id="Graphic_11">
+        <text transform="translate(522.0126 449.17487)" fill="black">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="14"
+                        font-weight="400"
+                        fill="black"
+                        y="15"
+                    >n</tspan>
+        </text>
+      </g>
+      <g id="Graphic_12">
+        <text transform="translate(454.72364 512.5346)" fill="black">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="14"
+                        font-weight="400"
+                        fill="black"
+                        x="0"
+                        y="20"
+                    >p</tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="14"
+                        font-weight="400"
+                        fill="black"
+                        y="15"
+                    >n</tspan>
+        </text>
+      </g>
+    </g>
+  </g>
+</svg>

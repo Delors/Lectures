@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+    "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg
+    xmlns:xl="http://www.w3.org/1999/xlink"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns="http://www.w3.org/2000/svg"
+    version="1.1"
+    viewBox="100 162 510 369"
+    width="510"
+    height="369"
+>
+<style>
+  @import url('/LectureDoc2/ext/fonts/ld-fonts.css');
+</style>
+  <metadata> Produced by OmniGraffle 8.0\n2025-05-23 10:36:47 +0000</metadata>
+  <g
+        id="algebraische_strukturen"
+        stroke="none"
+        stroke-opacity="1"
+        stroke-dasharray="none"
+        fill-opacity="1"
+        fill="none"
+    >
+    <title>algebraische_strukturen</title>
+    <g id="algebraische_strukturen_Layer_1">
+      <title>Layer 1</title>
+      <g id="Graphic_18">
+        <rect
+                    x="100"
+                    y="163.46446"
+                    width="505.5"
+                    height="366.30953"
+                    fill="#b4b4b4"
+                    fill-opacity=".29947917"
+                />
+      </g>
+      <g id="Graphic_21">
+        <rect
+                    x="100"
+                    y="239.60238"
+                    width="505.5"
+                    height="289.9456"
+                    fill="#b4b4b4"
+                    fill-opacity=".29947917"
+                />
+      </g>
+      <g id="Graphic_22">
+        <rect
+                    x="100.08093"
+                    y="298.1007"
+                    width="506.02963"
+                    height="231.56028"
+                    fill="#b4b4b4"
+                    fill-opacity=".29947917"
+                />
+      </g>
+      <g id="Graphic_23">
+        <rect
+                    x="100.08093"
+                    y="373.21786"
+                    width="506.02963"
+                    height="156.55613"
+                    fill="#b4b4b4"
+                    fill-opacity=".29947917"
+                />
+      </g>
+      <g id="Graphic_24">
+        <rect
+                    x="100.08093"
+                    y="425.06864"
+                    width="506.02963"
+                    height="104.81835"
+                    fill="#b4b4b4"
+                    fill-opacity=".29947917"
+                />
+      </g>
+      <g id="Graphic_25">
+        <rect
+                    x="100"
+                    y="482.36293"
+                    width="505.11057"
+                    height="47.63707"
+                    fill="#b4b4b4"
+                    fill-opacity=".29947917"
+                />
+      </g>
+      <g id="Graphic_4">
+        <text transform="translate(379.64554 162.69066)" fill="black">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="14"
+                        font-weight="400"
+                        fill="black"
+                        x="0"
+                        y="15"
+                    >(A1) Abgeschlossen bzgl. Addition </tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="14"
+                        font-weight="400"
+                        fill="black"
+                        x="0"
+                        y="34"
+                    >(A2) Assoziativität der Addition </tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="14"
+                        font-weight="400"
+                        fill="black"
+                        x="0"
+                        y="53"
+                    >(A3) Neutrales Element bzgl. Add. </tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="14"
+                        font-weight="400"
+                        fill="black"
+                        x="0"
+                        y="72"
+                    >(A4) Inverse bzgl. der Addition </tspan>
+        </text>
+      </g>
+      <g id="Graphic_5">
+        <text transform="translate(379.64554 260.08488)" fill="black">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="14"
+                        font-weight="400"
+                        fill="black"
+                        x="0"
+                        y="15"
+                    >(A5) Kommutativität der Addition</tspan>
+        </text>
+      </g>
+      <g id="Graphic_6">
+        <text transform="translate(379.64554 299.84844)" fill="black">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="14"
+                        font-weight="400"
+                        fill="black"
+                        x="0"
+                        y="15"
+                    >(M1) Abgeschlossen bzgl. Multi. </tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="14"
+                        font-weight="400"
+                        fill="black"
+                        x="0"
+                        y="34"
+                    >(M2) Assoziativität der Multiplikation </tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="14"
+                        font-weight="400"
+                        fill="black"
+                        x="0"
+                        y="53"
+                    >(M3) Distributiv Gesetz</tspan>
+        </text>
+      </g>
+      <g id="Graphic_7">
+        <text transform="translate(379.64554 432.4959)" fill="black">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="14"
+                        font-weight="400"
+                        fill="black"
+                        x="0"
+                        y="15"
+                    >(M5) neutrales Element bzgl. Multi. </tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="14"
+                        font-weight="400"
+                        fill="black"
+                        x="0"
+                        y="34"
+                    >(M6) Nullteilerfrei</tspan>
+        </text>
+      </g>
+      <g id="Graphic_8">
+        <text transform="translate(379.64554 500.60623)" fill="black">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="14"
+                        font-weight="400"
+                        fill="black"
+                        x="0"
+                        y="15"
+                    >(M7) Inverses Element bzgl. Multi.</tspan>
+        </text>
+      </g>
+      <g id="Graphic_15">
+        <text transform="translate(379.64554 383.48454)" fill="black">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="14"
+                        font-weight="400"
+                        fill="black"
+                        x="0"
+                        y="15"
+                    >(M4) Kommutativität der Multi.</tspan>
+        </text>
+      </g>
+      <g id="Graphic_31">
+        <rect
+                    x="100.08093"
+                    y="163.6822"
+                    width="134.76294"
+                    height="209.53566"
+                    fill="#b4b4b4"
+                    fill-opacity=".29947917"
+                />
+      </g>
+      <g id="Graphic_28">
+        <rect
+                    x="100"
+                    y="163.46446"
+                    width="176.4276"
+                    height="134.63624"
+                    fill="#b4b4b4"
+                    fill-opacity=".29947917"
+                />
+      </g>
+      <g id="Graphic_27">
+        <rect
+                    x="100"
+                    y="163.46446"
+                    width="90.95226"
+                    height="261.60418"
+                    fill="#b4b4b4"
+                    fill-opacity=".29947917"
+                />
+      </g>
+      <g id="Graphic_26">
+        <rect
+                    x="100"
+                    y="163.46446"
+                    width="45.5"
+                    height="319.43775"
+                    fill="#b4b4b4"
+                    fill-opacity=".29947917"
+                />
+      </g>
+      <g id="Graphic_30">
+        <rect
+                    x="100"
+                    y="163.46446"
+                    width="225.49638"
+                    height="76.13792"
+                    fill="#b4b4b4"
+                    fill-opacity=".29947917"
+                />
+      </g>
+      <g id="Graphic_9">
+        <text transform="translate(113.25 499.5687) rotate(-90)" fill="black">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="14"
+                        font-weight="400"
+                        fill="black"
+                        x="0"
+                        y="15"
+                    >Körper</tspan>
+        </text>
+      </g>
+      <g id="Graphic_10">
+        <text transform="translate(160.26584 453.73076) rotate(-90)" fill="black">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="14"
+                        font-weight="400"
+                        fill="black"
+                        x="0"
+                        y="15"
+                    >Integritätsbereich</tspan>
+        </text>
+      </g>
+      <g id="Graphic_11">
+        <text transform="translate(203.2482 401.8787) rotate(-90)" fill="black">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="14"
+                        font-weight="400"
+                        fill="black"
+                        x="0"
+                        y="15"
+                    >Kommutativer Ring</tspan>
+        </text>
+      </g>
+      <g id="Graphic_12">
+        <text transform="translate(251.79536 346.3094) rotate(-90)" fill="black">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="14"
+                        font-weight="400"
+                        fill="black"
+                        x="0"
+                        y="15"
+                    >Ring</tspan>
+        </text>
+      </g>
+      <g id="Graphic_13">
+        <text transform="translate(291.54316 278.47903) rotate(-90)" fill="black">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="14"
+                        font-weight="400"
+                        fill="black"
+                        x="0"
+                        y="15"
+                    >Abelsche Gruppe</tspan>
+        </text>
+      </g>
+      <g id="Graphic_14">
+        <text transform="translate(341.07096 234.60238) rotate(-90)" fill="black">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="14"
+                        font-weight="400"
+                        fill="black"
+                        x="0"
+                        y="15"
+                    >Gruppen</tspan>
+        </text>
+      </g>
+    </g>
+  </g>
+</svg>

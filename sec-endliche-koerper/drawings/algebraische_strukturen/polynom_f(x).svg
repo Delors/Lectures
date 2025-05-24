@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+    "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg
+    xmlns:xl="http://www.w3.org/1999/xlink"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns="http://www.w3.org/2000/svg"
+    version="1.1"
+    viewBox="190 320 560 260"
+    width="560"
+    height="260"
+>
+<style>
+  @import url('/LectureDoc2/ext/fonts/ld-fonts.css');
+</style>
+  <metadata> Produced by OmniGraffle 8.0\n2025-05-23 10:36:47 +0000</metadata>
+  <g
+        id="polynom_f(x)"
+        stroke="none"
+        stroke-opacity="1"
+        stroke-dasharray="none"
+        fill-opacity="1"
+        fill="none"
+    >
+    <title>polynom_f(x)</title>
+    <g id="polynom_f(x)_Layer_1">
+      <title>Layer 1</title>
+      <g id="Graphic_2">
+        <path
+                    d="M 546.5 493.255 L 738 493.255 C 744.6274 493.255 750 498.6276 750 505.255 L 750 567.255 C 750 573.8824 744.6274 579.255 738 579.255 L 546.5 579.255 C 539.8726 579.255 534.5 573.8824 534.5 567.255 L 534.5 505.255 C 534.5 498.6276 539.8726 493.255 546.5 493.255 Z"
+                    fill="#c0ffc0"
+                />
+        <text transform="translate(539.5 498.255)" fill="black">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="14"
+                        font-weight="400"
+                        fill="black"
+                        x="0"
+                        y="15"
+                    >Die Arithmetik der Koeffizienten </tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="14"
+                        font-weight="400"
+                        fill="black"
+                        x="0"
+                        y="34"
+                    >wird modulo p durchgeführt, </tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="14"
+                        font-weight="400"
+                        fill="black"
+                        x="0"
+                        y="53"
+                    >und Polynome werden modulo </tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="14"
+                        font-weight="400"
+                        fill="black"
+                        x="0"
+                        y="72"
+                    >eines Polynoms m(x) definiert</tspan>
+        </text>
+      </g>
+      <g id="Graphic_3">
+        <path
+                    d="M 379.9744 320.34238 L 442.6384 320.34238 C 449.26584 320.34238 454.6384 325.71496 454.6384 332.3424 L 454.6384 337.3424 C 454.6384 343.9698 449.26584 349.3424 442.6384 349.3424 L 379.9744 349.3424 C 373.347 349.3424 367.9744 343.9698 367.9744 337.3424 L 367.9744 332.3424 C 367.9744 325.71496 373.347 320.34238 379.9744 320.34238 Z"
+                    fill="#ffffc0"
+                />
+        <text transform="translate(372.9744 325.3424)" fill="black">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="14"
+                        font-weight="400"
+                        fill="black"
+                        x="0"
+                        y="15"
+                    >Polynom </tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="14"
+                        font-style="italic"
+                        font-weight="400"
+                        fill="black"
+                        y="15"
+                    >f(x)</tspan>
+        </text>
+      </g>
+      <g id="Graphic_4">
+        <path
+                    d="M 206.74327 402.9432 L 416.713 402.9432 C 423.3404 402.9432 428.713 408.3158 428.713 414.9432 L 428.713 457.9432 C 428.713 464.5706 423.3404 469.9432 416.713 469.9432 L 206.74327 469.9432 C 200.11585 469.9432 194.74327 464.5706 194.74327 457.9432 L 194.74327 414.9432 C 194.74327 408.3158 200.11585 402.9432 206.74327 402.9432 Z"
+                    fill="#ffc0c0"
+                />
+        <text transform="translate(199.74327 407.9432)" fill="black">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="14"
+                        font-style="italic"
+                        font-weight="400"
+                        fill="black"
+                        x="0"
+                        y="15"
+                    >x</tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="14"
+                        font-weight="400"
+                        fill="black"
+                        y="15"
+                    > ist eine Variable und f(x) wird für </tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="14"
+                        font-weight="400"
+                        fill="black"
+                        x="0"
+                        y="34"
+                    >einen bestimmten Wert von x </tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="14"
+                        font-weight="400"
+                        fill="black"
+                        x="0"
+                        y="53"
+                    >ausgewertet</tspan>
+        </text>
+      </g>
+      <g id="Graphic_5">
+        <path
+                    d="M 202.50479 493.255 L 314.5048 493.255 C 321.1322 493.255 326.5048 498.6276 326.5048 505.255 L 326.5048 529.255 C 326.5048 535.8824 321.1322 541.255 314.5048 541.255 L 202.50479 541.255 C 195.87737 541.255 190.50479 535.8824 190.50479 529.255 L 190.50479 505.255 C 190.50479 498.6276 195.87737 493.255 202.50479 493.255 Z"
+                    fill="#c0ffc0"
+                />
+        <text transform="translate(195.50479 498.255)" fill="black">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="14"
+                        font-weight="400"
+                        fill="black"
+                        x="0"
+                        y="15"
+                    >Gewöhnliche </tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="14"
+                        font-weight="400"
+                        fill="black"
+                        x="0"
+                        y="34"
+                    >Polynomarithmetik</tspan>
+        </text>
+      </g>
+      <g id="Graphic_6">
+        <path
+                    d="M 374.5024 493.255 L 486.5024 493.255 C 493.1298 493.255 498.5024 498.6276 498.5024 505.255 L 498.5024 548.255 C 498.5024 554.8824 493.1298 560.255 486.5024 560.255 L 374.5024 560.255 C 367.87498 560.255 362.5024 554.8824 362.5024 548.255 L 362.5024 505.255 C 362.5024 498.6276 367.87498 493.255 374.5024 493.255 Z"
+                    fill="#c0ffc0"
+                />
+        <text transform="translate(367.5024 498.255)" fill="black">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="14"
+                        font-weight="400"
+                        fill="black"
+                        x="0"
+                        y="15"
+                    >Die Arithmetik der </tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="14"
+                        font-weight="400"
+                        fill="black"
+                        x="0"
+                        y="34"
+                    >Koeffizienten </tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="14"
+                        font-weight="400"
+                        fill="black"
+                        x="0"
+                        y="53"
+                    >erfolgt modulo p</tspan>
+        </text>
+      </g>
+      <g id="Graphic_7">
+        <path
+                    d="M 522.43145 412.4432 L 624.2551 412.4432 C 630.8825 412.4432 636.2551 417.8158 636.2551 424.4432 L 636.2551 448.4432 C 636.2551 455.0706 630.8825 460.4432 624.2551 460.4432 L 522.43145 460.4432 C 515.80404 460.4432 510.43145 455.0706 510.43145 448.4432 L 510.43145 424.4432 C 510.43145 417.8158 515.80404 412.4432 522.43145 412.4432 Z"
+                    fill="#ffc0c0"
+                />
+        <text transform="translate(515.43145 417.4432)" fill="black">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="14"
+                        font-style="italic"
+                        font-weight="400"
+                        fill="black"
+                        x="0"
+                        y="15"
+                    >×</tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="14"
+                        font-weight="400"
+                        fill="black"
+                        y="15"
+                    > verwendet als </tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="14"
+                        font-weight="400"
+                        fill="black"
+                        x="0"
+                        y="34"
+                    >unbestimmte</tspan>
+        </text>
+      </g>
+      <g id="Line_8">
+        <path
+                    d="M 411.3064 349.3424 L 411.3064 379.0511 L 311.72813 379.0511 L 311.72813 402.9432"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                />
+      </g>
+      <g id="Line_9">
+        <path
+                    d="M 411.3064 349.3424 L 411.3064 378.5887 L 573.34326 378.5887 L 573.34326 412.4432"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                />
+      </g>
+      <g id="Line_11">
+        <path
+                    d="M 430.5024 493.255 L 430.5024 486.04664 L 573.34326 486.04664 L 573.34326 460.4432"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="miter"
+                    stroke-width="2"
+                />
+      </g>
+      <g id="Line_12">
+        <path
+                    d="M 573.34326 460.4432 L 573.34326 486.09254 L 642.25 486.09254 L 642.25 493.255"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="miter"
+                    stroke-width="2"
+                />
+      </g>
+      <g id="Line_13">
+        <path
+                    d="M 573.34326 460.4432 L 573.34326 486.1621 L 258.5048 486.1621 L 258.5048 493.2248"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="miter"
+                    stroke-width="2"
+                />
+      </g>
+    </g>
+  </g>
+</svg>
