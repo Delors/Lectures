@@ -19,7 +19,7 @@ Cascading Style Sheets (CSS)
 
 :Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
 :Kontakt: michael.eichberg@dhbw.de, Raum 149B
-:Version: 1.3.1
+:Version: 1.3.2
 
 .. supplemental::
 
@@ -2617,34 +2617,6 @@ Dark and Light Mode
             }
 
 
-.. class:: not-covered-topics transition-fade
-
-Nicht Behandelte Themen
-------------------------------------------------
-
-- Cascade Layers
-- Counter
-
-- Transformation (skalieren, drehen, ...)
-- Animation
-
-  .. scaling using  :css:`scale`  vs. using  :css:`transform: scale`
-- (bisher nur grob) Flexbox  (`A guide to flex-box <https://css-tricks.com/snippets/css/a-guide-to-flexbox/>`__)
-- Grid-Layout (`A complete guide to CSS Grid <https://css-tricks.com/snippets/css/complete-guide-grid/>`__)
-
-- CSS Tricks
-
-
-- Shadow-DOM (und HTML Custom Elements)
-- Dokumente mit alternativen Flussrichtungen (rechts nach links / oben nach unten)
-- CSS bzgl. Printing
-
-
-.. supplemental::
-
-    Es gibt sehr, sehr viele CSS Tricks die Dinge ermöglichen, die nicht unmittelbar zu erwarten gewesen wären. Z. B. kann man einem Element einen Index zuordnen basierend auf dem ":nth-child()" Selektor. Dieser Index kann dann für „die Berechnung“ von weiteren Werten verwendet werden.
-
-
 
 .. class:: exercises transition-move-up
 
@@ -3007,3 +2979,88 @@ Bauen Sie Unterstützung für den Dark und Light Mode nach.\ [#]_
         </body>
 
         </html>
+
+
+
+.. class:: transition-fade
+
+CSS-Layers
+------------------------------------------------
+
+:css:`@layer` ermöglicht das Festlegen einer expliziten Kaskaden-Reihenfolge:
+
+.. example::
+    
+    .. code:: css
+        :class: copy-to-clipboard
+        :number-lines:
+
+        @layer basis {
+            p {
+                color: green;
+            }
+        }
+
+        @layer overrides {
+            p {
+                color: red;
+            }
+        }
+
+.. class:: incremental-list
+
+- Eine später deklarierte Schicht überschreibt frühere Schichten.
+- Ermöglicht eine bessere Strukturierung größerer Projekte und vermeidet Konflikte.
+
+
+
+Verschachtelte CSS-Layers
+------------------------------------------------
+
+:css:`@layer` kann auch verschachtelt werden, um etwa globale Basisklassen und darauf aufbauende Komponenten sauber zu organisieren:
+
+.. example::
+
+    .. code:: css
+        :class: copy-to-clipboard
+        :number-lines:
+
+        @layer base {
+            h1 {
+                color: navy;
+            }
+
+            @layer components {
+                .highlight {
+                    background-color: yellow;
+                }
+            }
+        }
+
+.. class:: incremental-list
+  - Die innere Schicht (components) erbt den vorherigen Kontext.
+  - Verschachtelte Schichten sind übersichtlich und ermöglichen eine klare Struktur.
+
+
+
+.. class:: transition-fade
+
+Nicht Behandelte Themen
+------------------------------------------------
+
+- Counter
+- Transformation (skalieren, drehen, ...)
+
+  .. scaling using  :css:`scale`  vs. using  :css:`transform: scale`
+
+- Animation
+- (bisher nur grob) Flexbox  (`A guide to flex-box <https://css-tricks.com/snippets/css/a-guide-to-flexbox/>`__)
+- Grid-Layout (`A complete guide to CSS Grid <https://css-tricks.com/snippets/css/complete-guide-grid/>`__)
+- CSS Tricks
+- Dokumente mit alternativen Flussrichtungen (rechts nach links / oben nach unten)
+- CSS bzgl. Printing
+
+
+.. supplemental::
+
+    Es gibt sehr, sehr viele CSS Tricks die Dinge ermöglichen, die nicht unmittelbar zu erwarten gewesen wären. Z. B. kann man einem Element einen Index zuordnen basierend auf dem ":nth-child()" Selektor. Dieser Index kann dann für „die Berechnung“ von weiteren Werten verwendet werden.
