@@ -1,5 +1,5 @@
 .. meta::
-    :version: genesis
+    :version: renaissance
     :author: Michael Eichberg
     :keywords: "IT Sicherheit", "Reverse Engineering"
     :description lang=de: Fortgeschrittene Angewandte IT Sicherheit
@@ -35,7 +35,7 @@ Reverse Engineering 101
 Vorerfahrungen?
 -------------------
 
-.. class:: incremental
+.. class:: incremental-list
 
 - Wer hat schon einmal Software or Hardware Reverse Engineering betrieben?
 - Wer kennt Java Bytecode?
@@ -62,10 +62,11 @@ Reverse Engineering ist die Analyse von Systemen mit dem Ziel, ihren Aufbau und 
     Vom Reverse Engineering ist das **Reengineering** zu unterscheiden. Im Fall von letzteren geht es „nur“ darum die Funktionalität eines bestehenden Systems mit neuen Techniken wiederherzustellen.
 
 
+
 Zweck von Reverse Engineering
 --------------------------------
 
-.. class:: incremental
+.. class:: incremental-list
 
 - Herstellung von Interoperabilität
 - Untersuchung auf Schwachstellen
@@ -73,6 +74,7 @@ Zweck von Reverse Engineering
 - Untersuchung auf Backdoors
 - Analyse von Viren, Würmern etc.
 - Umgehung von ungerechtfertigten(?) Schutzmaßnahmen (z. B. bei Malware)
+
 
 
 Bootrom Lücke
@@ -96,7 +98,7 @@ Bootrom Lücke
 `CVE-2024-3094 <https://nvd.nist.gov/vuln/detail/CVE-2024-3094>`__ - ``liblzma`` Backdoor in OpenSSH\ [#]_\ [#]_
 -------------------------------------------------------------------------------------------------------------------------------------------------
 
-.. class:: incremental columns far-far-smaller
+.. class:: incremental-list column-list dhbw list-with-details
 
 - Ziel
 
@@ -104,7 +106,7 @@ Bootrom Lücke
 
   Zur Absicherung der Backdoor ist diese über ein Zertifikat abgesichert.
 
-- Verbreitung des Schadcode?
+- Wie verbreitet?
 
   Die Bibliothek ``liblzma`` wurde so angepasst, dass diese eine Backdoor in SSH einbaut.
 
@@ -143,11 +145,12 @@ Backdoor in 16 D-Link Routern\ [#]_
 Reverse Engineering - grundlegende Schritte
 ---------------------------------------------
 
-.. class:: incremental dhbw
+.. class:: incremental-list dhbw
 
 1. Informationsgewinnung zur Gewinnung aller relevanten Informationen über das Produkt.
 2. Modellierung mit dem Ziel der (Wieder-)Gewinnung eines (abstrakten) Modells der relevanten Funktionalität.
 3. Überprüfung (:eng:`review`) des Modells auf seine Richtigkeit und Vollständigkeit.
+
 
 
 Informationsgewinnung - Beispiel
@@ -155,9 +158,9 @@ Informationsgewinnung - Beispiel
 
 Gegeben sei eine App zum Ver- und Entschlüsseln von Dateien sowie ein paar verschlüsselte Dateien. Mögliche erste Schritte vor der Analyse von Binärcode:
 
-.. container:: stack
+.. deck::
 
-    .. container:: layer incremental
+    .. card::
 
        - Die ausführbare Datei ggf. mit ``file`` (oder sogar mit ``binwalk``) überprüfen (z. B. wie wurde die Datei kompiliert und für welches Betriebssystem und Architektur)
 
@@ -170,20 +173,22 @@ Gegeben sei eine App zum Ver- und Entschlüsseln von Dateien sowie ein paar vers
             /usr/bin/openssl (for architecture x86_64):	Mach-O 64-bit
             /usr/bin/openssl (for architecture arm64e):	Mach-O 64-bit
 
-    .. container:: layer incremental
+    .. card::
 
        - Die Dateien mit einem (guten) Hexeditor auf Auffälligkeiten untersuchen.
 
          .. image:: pictures/hexeditor.png
             :alt: Hexeditor mit Dateninterpretation
             :align: center
-            :height: 600px
+            :class: highdpi
 
-    .. container:: layer incremental warning
+    .. card::
 
-        Die Datei auf bekannte Viren und Malware überprüfen.
+        .. caution::
 
-    .. container:: layer incremental
+            Die Datei ggf. auf (bekannte) Viren und Malware überprüfen.
+
+    .. card::
 
       - Eine Datei mit einem bekannten Inhalt verschlüsseln und danach vergleichen.
 
@@ -191,9 +196,9 @@ Gegeben sei eine App zum Ver- und Entschlüsseln von Dateien sowie ein paar vers
 
            Falls ja, dann werden keine Metainformationen gespeichert und das Passwort kann (ggf.) nicht (leicht) verifiziert werden.
 
-           (Es kann zumindest nicht direkt in der Datei gespeichert sein.)
+           (Es kann zumindest nicht *direkt* in der Datei gespeichert sein.)
 
-    .. container:: layer incremental
+    .. card::
 
       - Eine Datei mit verschiedenen Passworten verschlüsseln.
 
@@ -205,11 +210,11 @@ Gegeben sei eine App zum Ver- und Entschlüsseln von Dateien sowie ein paar vers
 
            Falls ja, dann wäre es möglich, dass das Passwort (gehasht) in der Datei gespeichert wird.
 
-    .. container:: layer incremental
+    .. card::
 
        - Eine Datei mit einem wohldefinierten Muster verschlüsseln, um ggf. den „Mode of Operation“ (insbesondere ECB) zu identifizieren.
 
-    .. container:: layer incremental
+    .. card::
 
        - Mehrere verschiedene Dateien mit dem gleichen Passwort verschlüsseln
 
@@ -217,11 +222,11 @@ Gegeben sei eine App zum Ver- und Entschlüsseln von Dateien sowie ein paar vers
 
            Falls ja, dann wäre es möglich, dass die entsprechenden Teile direkt vom Passwort abgeleitet werden/damit verschlüsselt werden.
 
-    .. container:: layer incremental
+    .. card::
 
        - ...
 
-    .. container:: layer incremental
+    .. card::
 
        - Reverse Engineering der App durchführen.
 
@@ -233,18 +238,16 @@ Rechtliche Aspekte des Reverse Engineering
 
     Die Gesetzgebungen unterscheiden sich von Land zu Land teils signifikant.
 
-.. class:: incremental
+.. class:: incremental-list
 
 - Die Rechtslage hat sich in Deutschland mehrfach geändert.
 - Umgehung von Kopierschutzmechanismen ist im Allgemeinen verboten.
 - Lizenzen verbieten das Reverse Engineering häufig; es stellt sich aber die Frage nach der Rechtmäßigkeit der Klauseln.
 
-.. container:: center-child-elements
+.. warning::
+    :class: incremental
 
-    .. admonition:: Warnung
-        :class: incremental warning
-
-        Bevor Sie Reverse Engineering von Systemen betreiben, erkundigen sie sich erst über mögliche rechtliche Konsequenzen.
+    Bevor Sie Reverse Engineering von Systemen betreiben, erkundigen sie sich erst über mögliche rechtliche Konsequenzen.
 
 
 .. class:: new-section transition-scale
@@ -255,15 +258,13 @@ Software Reverse Engineering
 Ansätze
 -----------
 
-.. container:: scrollable
+.. story::
+
+    .. class:: incremental-list
 
     :statische Analyse: Studieren des Programms ohne es auszuführen; typischerweise mittels eines Disassemblers oder eines Decompilers.
 
-    .. class:: incremental
-
     :dynamische Analyse: Ausführen des Programms; typischerweise unter Verwendung eines Debuggers oder eines instrumentations Frameworks (z. B. `Frida <https://frida.re>`__).
-
-    .. class:: incremental
 
     :hybride Analyse: Kombination aus statischer und dynamischer Analyse.
 
@@ -271,9 +272,11 @@ Ansätze
 
         Ein Beispiel wäre die Ausführung einer Methode, die im Code verschlüsselte hinterlegte Strings entschlüsselt (:eng:`deobfuscation`), um die Analyse zu vereinfachen.
 
-    .. container:: incremental
+    .. compound::
+        :class: incremental
 
         Ggf. müssen für Teile des Codes, die die Hostfunktionalität nutzen, Stubs/Mocks bereitgestellt werden.
+
 
 
 Disassembler
@@ -289,11 +292,12 @@ Kommandozeilenwerkzeuge (exemplarisch):
 - ``javap (für Java)``
 
 .. hint::
-    :class: incremental small
+    :class: incremental
 
     Für einfache Programme ist es häufig möglich direkt den gesamten Assemblercode mittels der entsprechenden Werkzeuge zu erhalten. Im Falle komplexer Binärdateien (z. B. im ELF (Linux) und PE (Windows) Format) gilt dies nicht und erfordert ggf. manuelle Unterstützung zum Beispiel durch das Markieren von Methodenanfängen.
 
     Im Fall von Java ``.class`` ist die Disassemblierung immer möglich.
+
 
 
 Decompiler
@@ -316,7 +320,7 @@ Decompiler
     `decompiler.com <https://decompiler.com>`__ unterstützt eine große Anzahl ausführbaren Dateien.
 
 .. hint::
-    :class: incremental small
+    :class: incremental
 
     Decompiler sind generell sehr hilfreich, aber gleichzeitig auch sehr fehlerbehaftet. Vieles, dass im Binärcode möglich ist, hat auf der Ebene des Sourcecodes keine Entsprechung.
 
@@ -330,26 +334,25 @@ cfr Decompiler
 .. image:: pictures/cfr.png
     :alt: The CFR Decompiler (Java)
     :align: center
-    :height: 1050px
+    :class: highdpi
 
 
 
 JD Decompiler
 ---------------
 
-.. container:: two-columns
+.. grid::
 
-    .. container:: column no-separator
+    .. cell:: width-30
 
         .. image:: pictures/jd.png
+            :class: highdpi
             :alt: The JD Decompiler (Java)
-            :width: 875px
 
-    .. container:: column no-separator incremental small
+    .. cell:: width-55 incremental framed trbl-shadow-dark
 
         .. figure:: pictures/jd-excerpt.png
-            :class: picture
-            :width: 875px
+            :class: highdpi
 
             Beispiel fehlgeschlagener Dekompilierung
 
@@ -360,7 +363,7 @@ JDec Decompiler
 .. image:: pictures/jdec.png
     :alt: The JDec Decompiler (Java)
     :align: center
-    :height: 1050px
+    :class: highdpi
 
 
 
@@ -384,10 +387,12 @@ Dient der schrittweisen Ausführung des zu analysierenden Codes oder Hardware; e
     Mittels solcher Werkzeuge ist es möglich die Ausführung von Hardware Schritt für Schritt (:eng:`single step mode``) zu verfolgen und den Zustand der Hardware (Speicher und Register) zu inspizieren. Dies erfordert jedoch häufig eine JTAG Schnittstelle oder etwas vergleichbares.
 
 
+
 .. class:: new-section transition-fade
 
 Erschwerung des Reverse Engineering
 ------------------------------------
+
 
 
 .. class:: new-subsection
@@ -396,29 +401,32 @@ Obfuscation (:ger:`Verschleierung`)
 ------------------------------------
 
 
+
 Obfuscation → für Menschen unverständlich Code
 ----------------------------------------------------------
 
-.. class:: incremental scrollable
+.. story::
 
-- Techniken, die dazu dienen das Reverse Engineering zu erschweren.
-- Häufig eingesetzt ...
+    .. class:: incremental-list
 
-  .. class:: incremental
+    - Techniken, die dazu dienen das Reverse Engineering zu erschweren.
+    - Häufig eingesetzt ...
 
-  -  von Malware
-  -  Adware (im Kontext von Android ein häufig beobachtetes Phänomen)
-  -  zum Schutz geistigen Eigentums
-  -  für DRM / Durchsetzung von Kopierrechten
-  -  zur Prävention von „Cheating“ (insbesondere im Umfeld von Online Games)
-  -  Wenn das Programm als Source Code vertrieben wird bzw. vertrieben werden muss (JavaScript)
+    .. class:: incremental-list
 
-- Arbeiten auf Quellcode oder Maschinencode Ebene
-- Grenze zwischen *Code Minimization*, *Code Optimization* und *Code Obfuscation* ist fließend.
-- Mögliche Werkzeuge (ohne Wertung der Qualität/Effektivität):
+    -  von Malware
+    -  Adware (im Kontext von Android ein häufig beobachtetes Phänomen)
+    -  zum Schutz geistigen Eigentums
+    -  für DRM / Durchsetzung von Kopierrechten
+    -  zur Prävention von „Cheating“ (insbesondere im Umfeld von Online Games)
+    -  Wenn das Programm als Source Code vertrieben wird bzw. vertrieben werden muss (JavaScript)
 
-  - [Java] Proguard / Dexguard
-  - [C/C++] `Star Force <https://www.star-force.com/products/starforce-crypto/>`__
+    - Arbeiten auf Quellcode oder Maschinencode Ebene
+    - Grenze zwischen *Code Minimization*, *Code Optimization* und *Code Obfuscation* ist fließend.
+    - Mögliche Werkzeuge (ohne Wertung der Qualität/Effektivität):
+
+    - [Java] Proguard / Dexguard
+    - [C/C++] `Star Force <https://www.star-force.com/products/starforce-crypto/>`__
 
 .. supplemental::
 
@@ -429,44 +437,47 @@ Obfuscation → für Menschen unverständlich Code
         Einen ambitionierten und entsprechend ausgestatteten Angreifer wird **Code Obfuscation** bremsen, aber sicher nicht vollständig ausbremsen und das Vorhaben verteilen.
 
 
+
 Obfuscation - Techniken (Auszug)
 ------------------------------------
 
-.. class:: scrollable incremental
+.. story::
 
-- :peripheral:`entfernen aller Debug-Informationen`
-- Das Kürzen aller möglichen Namen (insbesondere Methoden und Klassennamen).
-- Das Verschleiern von Konstanten durch den Einsatz vermeintlich komplexer Berechnungen zu deren Initialisierung.
 
-    .. code:: java
-        :class: copy-to-clipboard
+    .. class:: incremental-list
 
-        ~(((int)Math.PI) ^ Integer.MAX_VALUE >> 16)+Short.MAX_VALUE
+    - :peripheral:`entfernen aller Debug-Informationen`
+    - Das Kürzen aller möglichen Namen (insbesondere Methoden und Klassennamen).
+    - Das Verschleiern von Konstanten durch den Einsatz vermeintlich komplexer Berechnungen zu deren Initialisierung.
 
-    .. class:: incremental
+      .. code:: java
+            :class: copy-to-clipboard
 
-        .. code:: java
+            ~(((int)Math.PI) ^ Integer.MAX_VALUE >> 16)+Short.MAX_VALUE
+
+      .. code:: java
+            :class: incremental
 
             = 2
 
-- Die Verwendung von Unicode Codepoints für Strings oder die Verschleierung von Strings mittels `rot13 <https://cryptii.com/pipes/rot13-decoder>`__ Verschlüsselung.
+    - Die Verwendung von Unicode Codepoints für Strings oder die Verschleierung von Strings mittels `rot13 <https://cryptii.com/pipes/rot13-decoder>`__ Verschlüsselung.
 
-  .. code:: C
-    :class: copy-to-clipboard
+      .. code:: C
+        :class: copy-to-clipboard
 
-     /* ??? */ printf("\x48""e\154l\x6F"" \127o\x72""l\144!");
+        /* ??? */ printf("\x48""e\154l\x6F"" \127o\x72""l\144!");
 
-  .. class:: incremental
 
-    .. code:: C
+      .. code:: C
+        :class: incremental
 
         /*  =  */ printf("Hello World!");
 
-- Das Umstellen von Instruktionen, um das Dekompilieren zu erschweren.
-- Das Hinzufügen von totem Code.
+    - Das Umstellen von Instruktionen, um das Dekompilieren zu erschweren.
+    - Das Hinzufügen von totem Code.
 
-- Den relevanten Teil der Anwendung komprimieren und verschlüsseln und erst bei Verwendung entpacken und entschlüsseln.
-- ...
+    - Den relevanten Teil der Anwendung komprimieren und verschlüsseln und erst bei Verwendung entpacken und entschlüsseln.
+    - ...
 
 .. supplemental::
 
@@ -493,7 +504,7 @@ Verschlüsselung von Bytecode und Java Class Loader
 ``ClassLoader``
 ----------------
 
-.. class:: incremental list-with-explanations
+.. class:: incremental-list list-with-explanations
 
 - ``ClassLoader`` dienen dazu Klassen dynamisch zu laden. D. h. eine Klasse wird erst dann von der JVM geladen, wenn sie benötigt bzw. angefordert wird.
 - Jeder ``ClassLoader`` spannt seinen eigenen Namensraum auf.
@@ -514,7 +525,8 @@ Ein eigener ClassLoader
 --------------------------
 
 .. code:: Java
-    :class: copy-to-clipboard far-smaller
+    :class: copy-to-clipboard
+    :number-lines:
 
     static class MyClassLoader extends ClassLoader {
       public MyClassLoader(ClassLoader parent) { super(parent); }
@@ -530,38 +542,42 @@ Ein eigener ClassLoader
           return defineClass(name,classBytes, 0, classBytes.length);
         } catch (IOException ioe) {
            throw new ClassNotFoundException("failed loading " + name, ioe);
-        }
-      }
-    }
+    } } }
+
 
 
 ClassLoading - Example
 ------------------------
 
-.. container:: scrollable
+.. story::
 
-    .. rubric:: Ein Singleton
+    .. compound::
 
-    .. code:: Java
-        :class: copy-to-clipboard smaller
+        .. rubric:: Ein Singleton
 
-        public class MySingleton {
+        .. code:: Java
+            :class: copy-to-clipboard
+            :number-lines:
 
-            private static MySingleton instance = null;
-            private MySingleton() {}
+            public class MySingleton {
 
-            public static synchronized MySingleton instance() {
-                if (instance == null) instance = new MySingleton();
-                return instance;
+                private static MySingleton instance = null;
+                private MySingleton() {}
+
+                public static synchronized MySingleton instance() {
+                    if (instance == null) instance = new MySingleton();
+                    return instance;
+                }
             }
-        }
 
-    .. container:: incremental
+    .. compound::
+        :class: incremental
 
         .. rubric:: Gleichheit von Instanzen
 
         .. code:: Java
-            :class: copy-to-clipboard  smaller
+            :class: copy-to-clipboard
+            :number-lines:
 
             Object a = MySingleton.instance();
             Object b = MySingleton.instance();
@@ -576,7 +592,8 @@ ClassLoading - Example
         .. rubric:: Verwendung des SystemClassLoader
 
         .. code:: Java
-            :class: copy-to-clipboard  smaller
+            :class: copy-to-clipboard
+            :number-lines:
 
             ClassLoader cl1 = ClassLoader.getSystemClassLoader();
             Class<?> clazz1 = cl1.loadClass("demo.MySingleton");
@@ -595,13 +612,14 @@ ClassLoading - Example
 
             Ergebnis: true
 
-
-    .. container:: incremental
+    .. compound::
+        :class: incremental
 
         .. rubric:: Verwendung von zwei Instanzen von MyClassLoader
 
         .. code:: Java
-            :class: copy-to-clipboard  smaller
+            :class: copy-to-clipboard
+            :number-lines:
 
             ClassLoader cl1 = new MyClassLoader();
             Class<?> clazz1 = cl1.loadClass("demo.MySingleton");
@@ -616,11 +634,11 @@ ClassLoading - Example
 
             System.out.println(a == b);
 
-        .. container:: incremental
+        .. code:: Text
+            :class: incremental
 
-            .. code:: Text
+            Ergebnis: false
 
-                Ergebnis: False
 
 
 .. class:: new-section transition-fade
@@ -628,17 +646,19 @@ ClassLoading - Example
 Eine sehr kurz Einführung in Java Bytecode
 -----------------------------------------------
 
+
+
 Die Java Virtual Machine
 -------------------------------------------------
 
-.. class:: incremental
+.. class:: incremental-list
 
 - **Java Bytecode** ist die Sprache, in der Java (oder Scala, Kotlin, ...) Programme auf der Java Virtual Machine (JVM) [#]_ ausgeführt werden.
 - :peripheral:`In den meisten Fällen arbeiten Java Decompiler so gut, dass ein tiefgehendes Verständnis von Java Bytecode selten notwendig ist.`
 - Java Bytecode kann — muss aber nicht — interpretiert werden. (Z. B. können „virtuelle Methodenaufrufe“ in Java schneller sein als in C++.)
 
-
 .. [#] `Java Bytecode Spezifikation <https://docs.oracle.com/javase/specs/jvms/se21/html/index.html>`__
+
 
 
 Java Bytecode - stackbasierte virtuelle Maschine
@@ -650,9 +670,9 @@ Java Bytecode - stackbasierte virtuelle Maschine
 
    Die getypten Operanden eines Befehls werden auf einem Stack abgelegt und die Operationen arbeiten auf den obersten Elementen des Stacks. Jeder Thread hat seinen eigenen Stack.
 
-        .. container:: two-columns footnotesize incremental
+        .. grid:: incremental
 
-            .. container:: column
+            .. cell:: width-50
 
                 .. rubric:: Instruktionen
 
@@ -668,7 +688,7 @@ Java Bytecode - stackbasierte virtuelle Maschine
 
 
 
-            .. container:: column incremental
+            .. cell:: width-50 incremental
 
                 .. rubric:: Veränderung des Stacks
 
@@ -693,12 +713,12 @@ Java Bytecode - stackbasierte virtuelle Maschine
 Java Bytecode - Methodenaufrufe und lokale Variablen
 ---------------------------------------------------------
 
-.. class:: incremental
+.. class:: incremental-list
 
 - Die Java Virtual Machine verwendet lokale Variablen zur Übergabe von Parametern beim Methodenaufruf.
-- Beim Aufruf von *Klassenmethoden* (``static``) werden alle Parameter in aufeinanderfolgenden lokalen Variablen übergeben, beginnend mit der lokalen Variable 0.
+- Beim Aufruf von *Klassenmethoden* (:java:`static`) werden alle Parameter in aufeinanderfolgenden lokalen Variablen übergeben, beginnend mit der lokalen Variable 0.
   D. h. in der aufrufenden Methode werden die Parameter vom Stack geholt und in lokalen Variablen gespeichert.
-- Beim Aufruf von *Instanzmethoden* wird die lokale Variable 0 dazu verwendet, um die Referenz (``this``) auf das Objekt zu übergeben, auf dem die Instanzmethode aufgerufen wird.
+- Beim Aufruf von *Instanzmethoden* wird die lokale Variable 0 dazu verwendet, um die Referenz (:java:`this`) auf das Objekt zu übergeben, auf dem die Instanzmethode aufgerufen wird.
   Anschließend werden alle Parameter in aufeinanderfolgenden lokalen Variablen übergeben, beginnend mit der lokalen Variable 1.
 
 .. supplemental::
@@ -706,7 +726,6 @@ Java Bytecode - Methodenaufrufe und lokale Variablen
     Die Anzahl der benötigten lokalen Variablen wird vom Compiler berechnet und von der JVM überprüft.
 
 
-.. class:: small
 
 Beispiel: *Default Constructor* In Java Bytecode
 -------------------------------------------------
@@ -714,6 +733,7 @@ Beispiel: *Default Constructor* In Java Bytecode
 Ein *Constructor* welcher keine expliziten Parameter hat und nur den super Konstruktor aufruft.
 
 .. code:: java
+    :number-lines:
 
     // Method descriptor ()V
     // Stack: 1, Locals: 1
@@ -740,7 +760,7 @@ Beispiel: Aufruf einer komplexeren Methode
 -------------------------------------------
 
 .. code:: java
-    :class: small
+    :number-lines:
 
     // Method descriptor ([Ljava/lang/String;)V
     // Stack: 5, Locals: 8
@@ -785,41 +805,36 @@ In einigen Anwendungsgebieten ist es möglich auf das explizite Speichern von Pa
 Schematische Darstellung der Verschlüsselung von Containern (z. B. Veracrypt)
 -------------------------------------------------------------------------------
 
-
-.. image:: graffles/verschluesselung_von_veracrypt.svg
+.. image:: drawings/password-recovery/verschluesselung_von_veracrypt.svg
     :alt: Schematische Darstellung von Containern.
     :align: center
-    :width: 1800px
 
 
 
 Generische Dateiverschlüsselung ohne explizite Speicherung des Passworts
 -------------------------------------------------------------------------
 
-
-
-.. image:: graffles/generische_dateiverschluesselung.svg
+.. image:: drawings/password-recovery/generische_dateiverschluesselung.svg
     :alt: Beispiehafte Verschlüsselung von Containern.
     :align: center
-    :width: 1800px
 
 
 
-
-.. class:: center-child-elements no-title
+.. class:: center-content no-title
 
 Fokussiert bleiben!
 --------------------------------------
 
 .. important::
-    :class: warning incremental
+    :class: width-100
 
     Bleibe fokussiert!
 
     Analysiere nur was notwendig ist.
 
 
-.. class:: integrated-exercise
+
+.. class:: exercises
 
 Live Exercise
 --------------------------------------
@@ -947,7 +962,7 @@ Live Exercise
 
 
 
-.. class:: integrated-exercise
+.. class:: exercises
 
 Reverse Engineering Übung
 --------------------------------------
@@ -959,7 +974,7 @@ Reverse Engineering Übung
     **Exemplarische Verwendung zum Verschlüsseln**
 
     .. code:: bash
-        :class: far-smaller copy-to-clipboard
+        :class: copy-to-clipboard
 
         java -jar securepp-0.0.1.jar de.dhbw.securepp.Main \
             -p 'VielleichtIstEsRichtig-vielleichtAuchNICHT...' \
@@ -981,6 +996,7 @@ Reverse Engineering Übung
 
         .. code:: python
             :class: copy-to-clipboard
+            :number-lines:
 
             #!/usr/local/bin/python3
 

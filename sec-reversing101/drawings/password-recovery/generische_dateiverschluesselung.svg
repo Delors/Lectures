@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+    "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg
+    xmlns:xl="http://www.w3.org/1999/xlink"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns="http://www.w3.org/2000/svg"
+    version="1.1"
+    viewBox="301 43 568 179"
+    width="568"
+    height="179"
+>
+<style>
+  @import url('/LectureDoc2/ext/fonts/ld-fonts.css');
+</style>
+  <metadata> Produced by OmniGraffle 8.0\n2025-05-24 09:32:53 +0000</metadata>
+  <g
+        id="generische_dateiverschluesselung"
+        stroke="none"
+        stroke-opacity="1"
+        stroke-dasharray="none"
+        fill-opacity="1"
+        fill="none"
+    >
+    <title>generische_dateiverschluesselung</title>
+    <rect fill="white" x="301" y="43" width="568" height="179" />
+    <g id="generische_dateiverschluesselung_Layer_1">
+      <title>Layer 1</title>
+      <g id="Graphic_19">
+        <rect
+                    x="301.65294"
+                    y="96.14121"
+                    width="529.407"
+                    height="29.626927"
+                    fill="#929292"
+                />
+      </g>
+      <g id="Graphic_18">
+        <text transform="translate(554.1144 101.45468)" fill="white">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="14"
+                        font-weight="400"
+                        fill="white"
+                        x="0"
+                        y="15"
+                        xml:space="preserve"
+                    >verschlüsselte Daten</tspan>
+        </text>
+      </g>
+      <g id="Graphic_17">
+        <path
+                    d="M 304.791 96.2512 C 303.61304 96.44222 302.43676 95.85862 302.1853 94.92478 C 300.43817 88.60041 299.14277 66.73822 364.7641 66.73827 C 436.48695 66.73827 494.20667 71.71239 511.6775 71.71236 C 528.6718 71.71236 545.3452 73.130275 558.9115 61.266766 C 559.5865 60.67251 560.6322 60.461604 561.5586 60.76935 C 562.8689 61.20443 563.4313 62.43535 562.7167 63.42221 C 559.11665 68.36712 545.51226 81.11413 501.2132 79.9362 C 452.13624 78.63099 401.365 77.55393 353.63804 76.885415 C 328.7157 76.53523 305.61823 77.25944 306.61088 94.46055 C 306.6638 95.32008 305.89117 96.08148 304.83235 96.2512 C 304.81913 96.2512 304.8042 96.2512 304.791 96.2512 Z M 827.8805 96.2512 C 826.8217 96.08148 826.0489 95.32008 826.1019 94.46055 C 827.0944 77.25944 803.997 76.53523 779.0749 76.885415 C 731.348 77.55393 680.5765 78.63099 631.4996 79.9362 C 587.2006 81.11413 573.5962 68.36712 569.9962 63.42221 C 569.2815 62.43535 569.84396 61.20443 571.1543 60.76935 C 572.0807 60.461604 573.1264 60.67251 573.8014 61.266766 C 587.3676 73.130275 604.04105 71.71236 621.0355 71.71236 C 638.5063 71.71239 696.226 66.73827 767.9488 66.73827 C 833.57 66.73822 832.2747 88.60041 830.5275 94.92478 C 830.276 95.85862 829.1 96.44222 827.9219 96.2512 C 827.9085 96.2512 827.8938 96.2512 827.8805 96.2512 Z"
+                    fill="black"
+                />
+      </g>
+      <g id="Graphic_16">
+        <text transform="translate(338.06542 43.623154)" fill="black">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="14"
+                        font-weight="400"
+                        fill="black"
+                        x="0"
+                        y="15"
+                        xml:space="preserve"
+                    >verschlüsselt mit einem vom Passwort des Nutzers abgeleiteten Schlüssel</tspan>
+        </text>
+      </g>
+      <g id="Graphic_15">
+        <rect
+                    x="763.33615"
+                    y="96.14121"
+                    width="67.72376"
+                    height="29.626927"
+                    fill="#ff644e"
+                />
+      </g>
+      <g id="Graphic_14">
+        <text transform="translate(776.4812 101.45468)" fill="white">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="14"
+                        font-weight="400"
+                        fill="white"
+                        x="0"
+                        y="15"
+                        xml:space="preserve"
+                    >CRC</tspan>
+        </text>
+      </g>
+      <g id="Graphic_13">
+        <rect
+                    x="301.65294"
+                    y="151.04979"
+                    width="529.407"
+                    height="29.626927"
+                    fill="#929292"
+                />
+      </g>
+      <g id="Graphic_12">
+        <text transform="translate(554.1144 151.62294)" fill="white">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="14"
+                        font-weight="400"
+                        fill="white"
+                        x="0"
+                        y="15"
+                        xml:space="preserve"
+                    >verschlüsselte Daten</tspan>
+        </text>
+      </g>
+      <g id="Graphic_11">
+        <rect
+                    x="301.65294"
+                    y="151.04979"
+                    width="194.57142"
+                    height="29.626927"
+                    fill="#ff644e"
+                />
+        <text transform="translate(301.65294 156.36325)" fill="white">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="14"
+                        font-weight="400"
+                        fill="white"
+                        x="24.807713"
+                        y="15"
+                        xml:space="preserve"
+                    >wohldefinierter Header</tspan>
+        </text>
+      </g>
+      <g id="Graphic_7">
+        <text transform="translate(836.5 101.45468)" fill="#5e5e5e">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="14"
+                        font-weight="400"
+                        fill="#5e5e5e"
+                        x="0"
+                        y="15"
+                        xml:space="preserve"
+                    >Alt 1</tspan>
+        </text>
+      </g>
+      <g id="Graphic_6">
+        <text transform="translate(836.5 156.36325)" fill="#5e5e5e">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="14"
+                        font-weight="400"
+                        fill="#5e5e5e"
+                        x="0"
+                        y="15"
+                        xml:space="preserve"
+                    >Alt 2</tspan>
+        </text>
+      </g>
+      <g id="Graphic_24">
+        <text transform="translate(312.96342 183.20561)" fill="black">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="14"
+                        font-weight="400"
+                        fill="black"
+                        x="1.708"
+                        y="15"
+                        xml:space="preserve"
+                    >Die Prüfsumme (CRC) oder der wohldefinierte Header werden zum Validieren des </tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="14"
+                        font-weight="400"
+                        fill="black"
+                        x="185.318"
+                        y="34"
+                        xml:space="preserve"
+                    >Passworts verwendet.</tspan>
+        </text>
+      </g>
+    </g>
+  </g>
+</svg>

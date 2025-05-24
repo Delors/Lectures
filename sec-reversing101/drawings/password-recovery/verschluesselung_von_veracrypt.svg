@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+    "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg
+    xmlns:xl="http://www.w3.org/1999/xlink"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns="http://www.w3.org/2000/svg"
+    version="1.1"
+    viewBox="92 894 528 222"
+    width="528"
+    height="222"
+>
+<style>
+  @import url('/LectureDoc2/ext/fonts/ld-fonts.css');
+</style>
+  <metadata> Produced by OmniGraffle 8.0\n2025-05-24 09:32:53 +0000</metadata>
+  <g
+        id="verschluesselung_von_veracrypt"
+        stroke="none"
+        stroke-opacity="1"
+        stroke-dasharray="none"
+        fill-opacity="1"
+        fill="none"
+    >
+    <title>verschluesselung_von_veracrypt</title>
+    <rect fill="white" x="92" y="894" width="528" height="222" />
+    <g id="verschluesselung_von_veracrypt_Layer_1">
+      <title>Layer 1</title>
+      <g id="Graphic_32">
+        <rect x="92.5" y="978.8083" width="46.292497" height="40.96705" fill="black" />
+      </g>
+      <g id="Graphic_31">
+        <text transform="translate(105.68287 989.5223)" fill="white">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="14"
+                        font-weight="400"
+                        fill="white"
+                        x="0"
+                        y="15"
+                        xml:space="preserve"
+                    >Salt</tspan>
+        </text>
+      </g>
+      <g id="Graphic_30">
+        <rect
+                    x="141.57005"
+                    y="978.8083"
+                    width="162.64097"
+                    height="40.428007"
+                    fill="#ee220d"
+                />
+      </g>
+      <g id="Graphic_29">
+        <text transform="translate(193.3038 989.5223)" fill="white">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="14"
+                        font-weight="400"
+                        fill="white"
+                        x="0"
+                        y="15"
+                        xml:space="preserve"
+                    >Metadata</tspan>
+        </text>
+      </g>
+      <g id="Graphic_28">
+        <rect
+                    x="141.57005"
+                    y="1019.2363"
+                    width="123.75528"
+                    height="40.428007"
+                    fill="#ff644e"
+                />
+      </g>
+      <g id="Graphic_27">
+        <text transform="translate(175.89078 1029.1602)" fill="white">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="14"
+                        font-weight="400"
+                        fill="white"
+                        x="0"
+                        y="15"
+                        xml:space="preserve"
+                    >&quot;VERA&quot; ...</tspan>
+        </text>
+      </g>
+      <g id="Graphic_26">
+        <rect
+                    x="265.32532"
+                    y="1019.2363"
+                    width="38.885698"
+                    height="40.428007"
+                    fill="#ff644e"
+                />
+      </g>
+      <g id="Graphic_25">
+        <text transform="translate(271.92116 1029.6808)" fill="white">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="14"
+                        font-weight="400"
+                        fill="white"
+                        x="0"
+                        y="15"
+                        xml:space="preserve"
+                    >CRC</tspan>
+        </text>
+      </g>
+      <g id="Graphic_24">
+        <rect
+                    x="304.21102"
+                    y="978.7534"
+                    width="74.68523"
+                    height="40.428007"
+                    fill="#ff4255"
+                />
+      </g>
+      <g id="Graphic_23">
+        <text transform="translate(310.9657 989.4675)" fill="white">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="14"
+                        font-weight="400"
+                        fill="white"
+                        x="0"
+                        y="15"
+                        xml:space="preserve"
+                    >Masterkey</tspan>
+        </text>
+      </g>
+      <g id="Graphic_22">
+        <rect
+                    x="381.6738"
+                    y="978.8083"
+                    width="237.3262"
+                    height="40.428007"
+                    fill="#929292"
+                />
+      </g>
+      <g id="Graphic_21">
+        <text transform="translate(437.6932 989.7918)" fill="white">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="14"
+                        font-weight="400"
+                        fill="white"
+                        x="0"
+                        y="15"
+                        xml:space="preserve"
+                    >verschlüsselte Daten</tspan>
+        </text>
+      </g>
+      <g id="Graphic_20">
+        <path
+                    d="M 384.17915 1022.0518 C 383.65604 1021.867 383.13386 1022.4316 383.02214 1023.335 C 382.2463 1029.4537 381.671 1050.6046 410.81246 1050.6046 C 442.66355 1050.6046 468.2963 1045.7922 476.05463 1045.7923 C 483.60154 1045.7923 491.0062 1044.4205 497.0307 1055.898 C 497.33036 1056.4729 497.7948 1056.677 498.2062 1056.3792 C 498.78826 1055.9584 499.03793 1054.7675 498.7207 1053.8127 C 497.12173 1049.0287 491.08025 1036.6964 471.4078 1037.836 C 449.6133 1039.0987 427.06637 1040.1408 405.8715 1040.7876 C 394.8039 1041.1263 384.5467 1040.4257 384.9874 1023.7842 C 385.01087 1022.9527 384.6677 1022.216 384.19767 1022.0518 C 384.1918 1022.0518 384.185 1022.0518 384.17915 1022.0518 Z M 616.4761 1022.0518 C 616.0061 1022.216 615.6629 1022.9527 615.6864 1023.7842 C 616.1271 1040.4257 605.8699 1041.1263 594.8023 1040.7876 C 573.6074 1040.1408 551.0605 1039.0987 529.266 1037.836 C 509.59355 1036.6964 503.55207 1049.0287 501.9531 1053.8127 C 501.63587 1054.7675 501.88554 1055.9584 502.4676 1056.3792 C 502.879 1056.677 503.34344 1056.4729 503.6431 1055.898 C 509.6676 1044.4205 517.07225 1045.7923 524.61917 1045.7923 C 532.3775 1045.7922 558.01025 1050.6046 589.86134 1050.6046 C 619.0028 1050.6046 618.4275 1029.4537 617.65165 1023.335 C 617.54024 1022.4316 617.01776 1021.867 616.49465 1022.0518 C 616.4888 1022.0518 616.482 1022.0518 616.4761 1022.0518 Z"
+                    fill="black"
+                />
+      </g>
+      <g id="Graphic_19">
+        <path
+                    d="M 142.97681 968.8575 C 142.44874 969.0441 141.9214 968.4741 141.8087 967.5621 C 141.0255 961.3856 140.44477 940.0347 169.86195 940.0347 C 202.01438 940.0347 227.88935 944.8925 235.7213 944.8925 C 243.33963 944.8925 250.8141 946.2772 256.89567 934.6912 C 257.19827 934.1108 257.66703 933.9049 258.08234 934.2054 C 258.66973 934.6303 258.92187 935.8325 258.6015 936.7962 C 256.98764 941.6255 250.88898 954.0744 231.0303 952.924 C 209.02973 951.6494 186.26965 950.5975 164.8743 949.9446 C 153.70192 949.6026 143.34765 950.3098 143.79261 967.1087 C 143.81634 967.9482 143.46998 968.6918 142.99533 968.8575 C 142.9894 968.8575 142.98271 968.8575 142.97681 968.8575 Z M 377.47106 968.8575 C 376.9964 968.6918 376.64983 967.9482 376.6736 967.1087 C 377.1186 950.3098 366.76434 949.6026 355.592 949.9446 C 334.19665 950.5975 311.43657 951.6494 289.436 952.924 C 269.57732 954.0744 263.47865 941.6255 261.8648 936.7962 C 261.54443 935.8325 261.79657 934.6303 262.38396 934.2054 C 262.79926 933.9049 263.26802 934.1108 263.57062 934.6912 C 269.65216 946.2772 277.12667 944.8925 284.745 944.8925 C 292.5769 944.8925 318.45192 940.0347 350.60434 940.0347 C 380.02146 940.0347 379.44065 961.3856 378.6577 967.5621 C 378.54473 968.4741 378.0176 969.0441 377.48957 968.8575 C 377.4834 968.8575 377.4769 968.8575 377.47106 968.8575 Z"
+                    fill="black"
+                />
+      </g>
+      <g id="Graphic_16">
+        <text transform="translate(92.5 894.5418)" fill="#5e5e5e">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="14"
+                        font-weight="400"
+                        fill="#5e5e5e"
+                        x="0"
+                        y="15"
+                        xml:space="preserve"
+                    >Der Schlüssel wird mit Hilfe einer Schlüsselableitungsfunktionen </tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="14"
+                        font-weight="400"
+                        fill="#5e5e5e"
+                        x="0"
+                        y="34"
+                        xml:space="preserve"
+                    >aus dem Nutzerpasswort berechnet.</tspan>
+        </text>
+      </g>
+      <g id="Line_15">
+        <line
+                    x1="268.12324"
+                    y1="1059.1253"
+                    x2="268.1463"
+                    y2="1019.2363"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="miter"
+                    stroke-width="1"
+                />
+      </g>
+      <g id="Graphic_14">
+        <path
+                    d="M 142.8222 1060.0341 C 142.54154 1059.935 142.26129 1060.238 142.20138 1060.7227 C 141.78515 1064.0053 141.4765 1075.3528 157.11096 1075.3528 C 174.19913 1075.3528 187.95102 1072.7709 192.1135 1072.771 C 196.16242 1072.771 200.13493 1072.035 203.3671 1078.1927 C 203.52792 1078.5011 203.77707 1078.6106 203.9978 1078.4509 C 204.31 1078.225 204.444 1077.5862 204.2737 1077.0739 C 203.416 1074.5073 200.17471 1067.891 189.62033 1068.5024 C 177.92762 1069.1799 165.83123 1069.7389 154.46016 1070.0859 C 148.52235 1070.2677 143.01928 1069.8917 143.2558 1060.9636 C 143.2684 1060.5175 143.08434 1060.1223 142.83207 1060.0341 C 142.8289 1060.0341 142.82535 1060.0341 142.8222 1060.0341 Z M 267.44972 1060.0341 C 267.19748 1060.1223 267.01336 1060.5175 267.026 1060.9636 C 267.26248 1069.8917 261.75944 1070.2677 255.82163 1070.0859 C 244.45055 1069.7389 232.35417 1069.1799 220.66143 1068.5024 C 210.10708 1067.891 206.8658 1074.5073 206.00806 1077.0739 C 205.8378 1077.5862 205.9718 1078.225 206.284 1078.4509 C 206.50472 1078.6106 206.75386 1078.5011 206.91468 1078.1927 C 210.14686 1072.035 214.11937 1072.771 218.1683 1072.771 C 222.33076 1072.7709 236.08266 1075.3528 253.17083 1075.3528 C 268.80528 1075.3528 268.49664 1064.0053 268.0804 1060.7227 C 268.0205 1060.238 267.74022 1059.935 267.4596 1060.0341 C 267.4564 1060.0341 267.4529 1060.0341 267.44972 1060.0341 Z"
+                    fill="black"
+                />
+      </g>
+      <g id="Line_13">
+        <line
+                    x1="343.1171"
+                    y1="1019.2363"
+                    x2="343.27013"
+                    y2="1094.7034"
+                    stroke="black"
+                    stroke-linecap="butt"
+                    stroke-linejoin="miter"
+                    stroke-width="2"
+                />
+      </g>
+      <g id="Line_12">
+        <path
+                    d="M 500.29957 1068.062 L 500.29754 1069.4096 L 500.25955 1094.7026"
+                    stroke="black"
+                    stroke-linecap="butt"
+                    stroke-linejoin="miter"
+                    stroke-width="2"
+                />
+      </g>
+      <g id="Graphic_11">
+        <path
+                    d="M 503.4456 1069.4241 L 500.31406 1058.4133 L 497.1498 1069.3952 Z"
+                    fill="black"
+                />
+      </g>
+      <g id="Line_10">
+        <line
+                    x1="343.1171"
+                    y1="1094.7582"
+                    x2="500.56817"
+                    y2="1094.7582"
+                    stroke="black"
+                    stroke-linecap="butt"
+                    stroke-linejoin="miter"
+                    stroke-width="2"
+                />
+      </g>
+      <g id="Line_9">
+        <line
+                    x1="204.50437"
+                    y1="1079.6081"
+                    x2="204.50437"
+                    y2="1093.7962"
+                    stroke="black"
+                    stroke-linecap="butt"
+                    stroke-linejoin="miter"
+                    stroke-width="2"
+                />
+      </g>
+      <g id="Line_8">
+        <path
+                    d="M 284.99515 1072.73 L 284.99454 1074.0777 L 284.99454 1093.7962"
+                    stroke="black"
+                    stroke-linecap="butt"
+                    stroke-linejoin="miter"
+                    stroke-width="2"
+                />
+      </g>
+      <g id="Graphic_7">
+        <path
+                    d="M 288.14243 1074.082 L 284.9995 1063.0812 L 281.84665 1074.0733 Z"
+                    fill="black"
+                />
+      </g>
+      <g id="Line_6">
+        <line
+                    x1="204.50437"
+                    y1="1093.7962"
+                    x2="284.99454"
+                    y2="1093.7962"
+                    stroke="black"
+                    stroke-linecap="butt"
+                    stroke-linejoin="miter"
+                    stroke-width="2"
+                />
+      </g>
+      <g id="Graphic_5">
+        <text transform="translate(222.75212 1095.7357)" fill="#5e5e5e">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="14"
+                        font-weight="400"
+                        fill="#5e5e5e"
+                        x="2842171e-20"
+                        y="15"
+                        xml:space="preserve"
+                    >Eingabe</tspan>
+        </text>
+      </g>
+      <g id="Graphic_4">
+        <text transform="translate(344.38772 1095.7357)" fill="#5e5e5e">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="14"
+                        font-weight="400"
+                        fill="#5e5e5e"
+                        x="0"
+                        y="15"
+                        xml:space="preserve"
+                    >verwendet für die Verschlüsselung</tspan>
+        </text>
+      </g>
+    </g>
+  </g>
+</svg>

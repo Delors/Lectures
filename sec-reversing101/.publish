@@ -6,8 +6,8 @@ pictures/hexeditor.png
 pictures/jd-excerpt.png
 pictures/jd.png
 pictures/jdec.png
-graffles/generische_dateiverschluesselung.svg
-graffles/verschluesselung_von_veracrypt.svg
+drawings/password-recovery/generische_dateiverschluesselung.svg
+drawings/password-recovery/verschluesselung_von_veracrypt.svg
 
 exercise/reversing_aufgaben.pdf
 exercise/securepp/Poem.enc
