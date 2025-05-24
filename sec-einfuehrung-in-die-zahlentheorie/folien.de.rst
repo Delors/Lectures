@@ -18,7 +18,7 @@ Einführung in die Zahlentheorie
 
 :Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
 :Kontakt: michael.eichberg@dhbw.de
-:Version: 1.1
+:Version: 1.1.1
 :Quelle: Im Wesentlichen *Cryptography and Network Security - Principles and Practice, 8th Edition, William Stallings*
 
 .. supplemental::
@@ -76,10 +76,12 @@ Eigenschaften der Teilbarkeit
 
 - Wenn :math:`a | b` und :math:`b|c`, dann :math:`a|c`.
 
-.. example::
+  .. example::
     :class: incremental
 
-    :math:`11|66, 66|198 \Rightarrow 11|198`
+    Sei :math:`a = 11`, :math:`b = 66` und :math:`c = 198`, dann gilt:
+
+    :math:`11|66` und :math:`66|198 \Rightarrow 11|198`
 
 
 
