@@ -361,14 +361,12 @@ Data Encryption Standard (DES)
 - War das am häufigsten verwendete Verschlüsselungsverfahren bis zur Einführung des Advanced Encryption Standard (AES) im Jahr 2001
 - Der Algorithmus selbst wird als Data Encryption Algorithm (DEA) bezeichnet.
 
-  .. admonition:: Eigenschaften
-
-    .. class:: incremental-list
+.. admonition:: Eigenschaften
+    :class: incremental
 
     - Die Daten werden in 64-Bit-Blöcken mit einem 56-Bit-Schlüssel verschlüsselt.
     - Der Algorithmus wandelt die 64-Bit-Eingabe in einer Reihe von Schritten in eine 64-Bit-Ausgabe um.
     - Dieselben Schritte werden mit demselben Schlüssel verwendet, um die Verschlüsselung rückgängig zu machen.
-
 
 .. supplemental::
 
@@ -612,17 +610,18 @@ Durchschnittliche Zeit für erschöpfende Schlüsselsuche
 .. csv-table::
     :class: highlight-row-on-hover font-size-90
     :align: center
+    :widths: 12 12 18 20 20
 
 
     "Schlüsselgröße (bits)", Chiffre, "Anzahl der alternativen
     Schlüssel", "Zeit benötigt bei :math:`10^9` Entschlüsselungen/s", "Zeit benötigt bei :math:`10^{13}` Entschlüsselungen/s"
 
-    56, DES, ":math:`2^{56}` ≈ 7.2 x :math:`10^{16}`", 1.125 Jahre, 1 Stunde
-    128, AES, ":math:`2^{128}` ≈ 3.4 x :math:`10^{38}`", "5.3 x :math:`10^{21}` Jahre", "5.3 x :math:`10^{17}` Jahre"
-    168, Triple DES, ":math:`2^{168}` ≈ 3.7 x :math:`10^{50}`", "5.8 x :math:`10^{33}` Jahre", 5.8 × :math:`10^{29}` Jahre
-    192, AES, ":math:`2^{192}` ≈ 6.3 x :math:`10^{57}`", ":math:`2^{191}` ns = 9.8 x :math:`10^{40}` Jahre", "9.8 × :math:`10^{36}` Jahre"
-    256, AES, ":math:`2^{256}` ≈ 1.2 x :math:`10^{77}`", ":math:`2^{255}` ns = 1.8 x :math:`10^{60}` Jahre", "1.8 x :math:`10^{56}` Jahre"
-    26 Zeichen (Permutation), Monoalphabetisch, 26! = 4 x :math:`10^{26}`, "6.3 x :math:`10^9` Jahre", 6.3 × :math:`10^6` Jahre
+    56, DES, ":math:`2^{56}` ≈ :math:`7.2 \times 10^{16}`", :math:`1.125` Jahre, 1 Stunde
+    128, AES, ":math:`2^{128}` ≈ :math:`3.4 \times 10^{38}`", ":math:`5.3 \times 10^{21}` Jahre", ":math:`5.3 \times 10^{17}` Jahre"
+    168, Triple DES, ":math:`2^{168}` ≈ :math:`3.7 \times 10^{50}`", ":math:`5.8 \times 10^{33}` Jahre", :math:`5.8 × 10^{29}` Jahre
+    192, AES, ":math:`2^{192}` ≈ :math:`6.3 \times 10^{57}`", ":math:`2^{191}` ns = :math:`9.8 \times 10^{40}` Jahre", ":math:`9.8 \times 10^{36}` Jahre"
+    256, AES, ":math:`2^{256}` ≈ :math:`1.2 \times 10^{77}`", ":math:`2^{255}` ns = :math:`1.8 \times 10^{60}` Jahre", ":math:`1.8 \times 10^{56}` Jahre"
+    26 Zeichen (Permutation), Mono-alphabetisch, :math:`26!` = :math:`4 \times 10^{26}`, ":math:`6.3 \times 10^9` Jahre", :math:`6.3 × 10^6` Jahre
 
 
 
