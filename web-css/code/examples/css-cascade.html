@@ -16,6 +16,18 @@
             p {
                 color: blue;
             }
+
+            @layer finer-first {
+                p {
+                    color: green;
+                }
+            }
+
+            @layer finer-second {
+                p {
+                    color: yellow;
+                }
+            }
         }
     </style>
 
