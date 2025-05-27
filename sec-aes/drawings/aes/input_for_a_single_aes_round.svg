@@ -1412,7 +1412,6 @@
                         fill="black"
                         x="0"
                         y="19"
-                        xml:space="preserve"
                     >State Matrix</tspan>
           <tspan
                         font-family="Noto Sans Display"
@@ -1421,7 +1420,6 @@
                         fill="black"
                         x="0"
                         y="43"
-                        xml:space="preserve"
                     >zu Beginn</tspan>
           <tspan
                         font-family="Noto Sans Display"
@@ -1430,7 +1428,6 @@
                         fill="black"
                         x="0"
                         y="67"
-                        xml:space="preserve"
                     >der Runde</tspan>
         </text>
       </g>
@@ -12741,16 +12738,7 @@
                         fill="black"
                         x="0"
                         y="19"
-                        xml:space="preserve"
                     >State Matrix</tspan>
-          <tspan
-                        font-family="Noto Sans Display"
-                        font-size="18"
-                        font-weight="400"
-                        fill="black"
-                        y="19"
-                        xml:space="preserve"
-                    > </tspan>
           <tspan
                         font-family="Noto Sans Display"
                         font-size="18"
@@ -12758,7 +12746,6 @@
                         fill="black"
                         x="0"
                         y="43"
-                        xml:space="preserve"
                     >am Ende </tspan>
           <tspan
                         font-family="Noto Sans Display"
