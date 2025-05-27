@@ -10629,7 +10629,6 @@
                             fill="white"
                             x="13.425478"
                             y="21"
-                            xml:space="preserve"
                         >S</tspan>
             <tspan
                             font-family="Noto Sans Display"
@@ -10637,7 +10636,6 @@
                             font-weight="400"
                             fill="white"
                             y="28"
-                            xml:space="preserve"
                         >1,1</tspan>
           </text>
         </g>
@@ -10690,7 +10688,6 @@
                             fill="black"
                             x="13.425478"
                             y="21"
-                            xml:space="preserve"
                         >S</tspan>
             <tspan
                             font-family="Noto Sans Display"
@@ -10698,7 +10695,6 @@
                             font-weight="400"
                             fill="black"
                             y="28"
-                            xml:space="preserve"
                         >0,0</tspan>
           </text>
         </g>
@@ -10711,7 +10707,6 @@
                             fill="black"
                             x="13.425478"
                             y="21"
-                            xml:space="preserve"
                         >S</tspan>
             <tspan
                             font-family="Noto Sans Display"
@@ -10719,7 +10714,6 @@
                             font-weight="400"
                             fill="black"
                             y="28"
-                            xml:space="preserve"
                         >3,3</tspan>
           </text>
         </g>
@@ -10732,7 +10726,6 @@
                             fill="black"
                             x="13.425478"
                             y="21"
-                            xml:space="preserve"
                         >S</tspan>
             <tspan
                             font-family="Noto Sans Display"
@@ -10740,7 +10733,6 @@
                             font-weight="400"
                             fill="black"
                             y="28"
-                            xml:space="preserve"
                         >3,0</tspan>
           </text>
         </g>
@@ -10753,7 +10745,6 @@
                             fill="black"
                             x="13.425478"
                             y="21"
-                            xml:space="preserve"
                         >S</tspan>
             <tspan
                             font-family="Noto Sans Display"
@@ -10761,7 +10752,6 @@
                             font-weight="400"
                             fill="black"
                             y="28"
-                            xml:space="preserve"
                         >0,3</tspan>
           </text>
         </g>
@@ -11101,7 +11091,6 @@
                             fill="white"
                             x="11.285478"
                             y="21"
-                            xml:space="preserve"
                         >S&apos;</tspan>
             <tspan
                             font-family="Noto Sans Display"
@@ -11109,7 +11098,6 @@
                             font-weight="400"
                             fill="white"
                             y="28"
-                            xml:space="preserve"
                         >1,1</tspan>
           </text>
         </g>
@@ -11162,7 +11150,6 @@
                             fill="black"
                             x="11.285478"
                             y="21"
-                            xml:space="preserve"
                         >S&apos;</tspan>
             <tspan
                             font-family="Noto Sans Display"
@@ -11170,7 +11157,6 @@
                             font-weight="400"
                             fill="black"
                             y="28"
-                            xml:space="preserve"
                         >0,0</tspan>
           </text>
         </g>
@@ -11183,7 +11169,6 @@
                             fill="black"
                             x="11.285478"
                             y="21"
-                            xml:space="preserve"
                         >S&apos;</tspan>
             <tspan
                             font-family="Noto Sans Display"
@@ -11191,7 +11176,6 @@
                             font-weight="400"
                             fill="black"
                             y="28"
-                            xml:space="preserve"
                         >3,3</tspan>
           </text>
         </g>
@@ -11204,7 +11188,6 @@
                             fill="black"
                             x="11.285478"
                             y="21"
-                            xml:space="preserve"
                         >S&apos;</tspan>
             <tspan
                             font-family="Noto Sans Display"
@@ -11212,7 +11195,6 @@
                             font-weight="400"
                             fill="black"
                             y="28"
-                            xml:space="preserve"
                         >3,0</tspan>
           </text>
         </g>
@@ -11225,7 +11207,6 @@
                             fill="black"
                             x="11.285478"
                             y="21"
-                            xml:space="preserve"
                         >S&apos;</tspan>
             <tspan
                             font-family="Noto Sans Display"
@@ -11233,7 +11214,6 @@
                             font-weight="400"
                             fill="black"
                             y="28"
-                            xml:space="preserve"
                         >0,3</tspan>
           </text>
         </g>
@@ -11319,7 +11299,6 @@
                         fill="black"
                         x="119.50396"
                         y="21"
-                        xml:space="preserve"
                     >X </tspan>
           <tspan
                         font-family="Noto Sans Display"
@@ -11341,7 +11320,6 @@
                         fill="black"
                         x="108.71688"
                         y="21"
-                        xml:space="preserve"
                     >y</tspan>
           <tspan
                         font-family="Noto Sans Display"
@@ -11365,7 +11343,7 @@
                 />
       </g>
       <g id="Graphic_879">
-        <text transform="translate(462.3181 1086.1305)" fill="black">
+        <text transform="translate(465 1086.1305)" fill="black">
           <tspan
                         font-family="Noto Sans Display"
                         font-size="12"
@@ -11373,12 +11351,11 @@
                         fill="black"
                         x="756728e-18"
                         y="13"
-                        xml:space="preserve"
                     >1,1</tspan>
         </text>
       </g>
       <g id="Graphic_881">
-        <text transform="translate(491.25596 904)" fill="black">
+        <text transform="translate(495 904)" fill="black">
           <tspan
                         font-family="Noto Sans Display"
                         font-size="12"
@@ -11386,7 +11363,6 @@
                         fill="black"
                         x="756728e-18"
                         y="13"
-                        xml:space="preserve"
                     >1,1</tspan>
         </text>
       </g>
