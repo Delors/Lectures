@@ -18,7 +18,7 @@ Endliche Körper
 :Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
 :Kontakt: michael.eichberg@dhbw.de
 :Basierend auf: *Cryptography and Network Security - Principles and Practice, 8th Edition, William Stallings*
-:Version: 1.1
+:Version: 1.1.1
 
 .. supplemental::
 
@@ -262,7 +262,7 @@ Endliche Körper der Form :math:`GF(p)`
 
 
 
-klassische Rechnung mit ganzen Zahlen modulo 8\ [#]_
+Rechnung mit ganzen Zahlen modulo 8\ [#]_
 ------------------------------------------------------
 
 .. grid::
@@ -307,6 +307,8 @@ klassische Rechnung mit ganzen Zahlen modulo 8\ [#]_
 
 
 
+.. class:: repetition
+
 Additive and Muliplikative Inverse Modulo 8
 --------------------------------------------
 
@@ -327,7 +329,7 @@ Additive and Muliplikative Inverse Modulo 8
 
 
 
-klassische Rechnung mit ganzen Zahlen modulo 7\ [#]_
+Rechnung mit ganzen Zahlen modulo 7\ [#]_
 ------------------------------------------------------
 
 .. grid::
@@ -435,6 +437,7 @@ Der Körper GF(2)
     Die Addition ist die XOR-Operation und die Multiplikation ist die AND-Operation.
 
 
+
 Endliche Körper - Konstruktion
 -----------------------------------
 
@@ -443,7 +446,9 @@ In diesem Abschnitt haben wir gezeigt, wie man endliche Körper der Ordnung :mat
 :math:`GF(p)` ist mit den folgenden Eigenschaften definiert:
 
 1. :math:`GF(p)` besteht aus  :math:`p` Elementen.
-2. Die binären Operationen :math:`+` und :math:`\times` sind über der Menge definiert. Die Operationen der Addition, Subtraktion, Multiplikation und Division können durchgeführt werden, ohne die Menge zu verlassen. Jedes Element der Menge, das nicht 0 ist, hat eine multiplikative Inverse.
+2. Die binären Operationen :math:`+` und :math:`\times` sind über der Menge definiert.
+
+   Die Operationen der Addition, Subtraktion, Multiplikation und Division können durchgeführt werden, ohne die Menge zu verlassen. Jedes Element der Menge, das nicht 0 ist, hat eine multiplikative Inverse.
 
 .. summary::
     :class: incremental
@@ -543,14 +548,14 @@ Polynomarithmetik mit Koeffizienten in :math:`Z_p`
 - Wenn die Polynomarithmetik auf Polynomen über einem Körper durchgeführt wird, dann ist die Division möglich.
 - Wenn wir versuchen, eine Polynomdivision über eine Koeffizientenmenge durchzuführen, die kein Körper ist, dann ist die Division nicht immer definiert.
 
-- Auch wenn die Koeffizientenmenge ein Körper ist, ist die Polynomdivision nicht unbedingt exakt; d. h. es gibt ggf. einen Rest.
+- Auch *wenn die Koeffizientenmenge ein Körper ist*, ist die Polynomdivision nicht unbedingt exakt; d. h. es gibt ggf. einen Rest.
 
   .. note::
         :class: width-40
 
         Das bedeutet nicht, dass eine exakte Teilung möglich ist.
 
-- Unter der Voraussetzung, dass Reste erlaubt sind, dann ist die Polynomdivision möglich, wenn die Koeffizientenmenge ein Körper bildet.
+- Unter der Voraussetzung, dass Reste erlaubt sind, dann ist die Polynomdivision möglich, *wenn die Koeffizientenmenge ein Körper bildet*.
 
 
 
@@ -786,6 +791,7 @@ Um den endlichen Körper :math:`GF(2^3)` zu konstruieren, müssen wir ein irredu
 
     Die 8 Polynome sind die möglichen "Reste" bei der Division von Polynomen über :math:`GF(2^3)` mit :math:`x^3 + x + 1`.
 
+    Jedes Polynom vom Grad :math-r:`3`; insbesondere auch das Polynom :math:`x^3`, könnte durch unser Polynom geteilt werden.
 
 
 Polynomarithmetik im :math:`GF(2^3)` Modulo :math:`(x^3 + x + 1)`
@@ -845,7 +851,7 @@ Polynomarithmetik im :math:`GF(2^3)` Modulo :math:`(x^3 + x + 1)`
     .. math::
 
         \begin{array}{rllll}
-            ((x^2 \times (x^2 + 1)) = & x^4 + x^2 ) & \bmod (x^3 + x + 1) = & x & \text{(D. h. } x \text{ ist der Rest!)} \\
+            ((x^2 \times (x^2 + 1)) = & x^4 + x^2 ) & \bmod (x^3 + x + 1) = & x & \\
             ((x^2 \times x^2) = & x^4) & \bmod (x^3 + x + 1) = &  x^2 + x &
         \end{array}
 
@@ -859,7 +865,8 @@ Multiplikation in :math:`GF(2^n)`
 - Mit keiner einfachen Operation lässt sich die Multiplikation in :math:`GF(2^n)` erreichen.
 - Es gibt jedoch eine vernünftige, unkomplizierte Technik.
 
-.. admonition:: "Beispiel: Multiplikation in :math:`GF(2^8)` wie von AES verwendet"
+.. admonition:: Beispiel: Multiplikation in :math:`GF(2^8)` wie von AES verwendet
+    :class: incremental
 
     Beobachtung: :math:`x^8\;mod\; m(x) = [m(x)-x^8] = x^4 +x^3 +x +1`
 
