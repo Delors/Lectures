@@ -71,6 +71,7 @@
                         font-weight="400"
                         fill="black"
                         y="16"
+                        xml:space="preserve"
                     > · 310</tspan>
         </text>
       </g>
@@ -83,7 +84,7 @@
                         fill="black"
                         x="0"
                         y="16"
-                    >310 = </tspan>
+                    >310 = </tspan>
           <tspan
                         font-family="Victor Mono"
                         font-size="16"
@@ -97,6 +98,7 @@
                         font-weight="400"
                         fill="black"
                         y="16"
+                        xml:space="preserve"
                     > ·  90</tspan>
         </text>
       </g>
@@ -123,6 +125,7 @@
                         font-weight="400"
                         fill="black"
                         y="16"
+                        xml:space="preserve"
                     > ·  40</tspan>
         </text>
       </g>
@@ -149,14 +152,8 @@
                         font-weight="400"
                         fill="black"
                         y="16"
-                    > ·  </tspan>
-          <tspan
-                        font-family="Victor Mono"
-                        font-size="16"
-                        font-weight="400"
-                        fill="#66c48c"
-                        y="16"
-                    >10</tspan>
+                        xml:space="preserve"
+                    > ·  10</tspan>
         </text>
       </g>
       <g id="Line_100">

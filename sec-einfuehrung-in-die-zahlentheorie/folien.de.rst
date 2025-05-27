@@ -18,7 +18,7 @@ Einführung in die Zahlentheorie
 
 :Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
 :Kontakt: michael.eichberg@dhbw.de
-:Version: 1.1.1
+:Version: 1.1.2
 :Quelle: Im Wesentlichen *Cryptography and Network Security - Principles and Practice, 8th Edition, William Stallings*
 
 .. supplemental::
@@ -167,8 +167,8 @@ Größter Gemeinsamer Teiler (:ab:`GGT`)
 
 - Die **positive** ganze Zahl :math:`c` wird als GGT von :math:`a` und :math:`b` bezeichnet, wenn:
 
-    - :math:`c` ein Teiler von :math:`a` und :math:`b` ist
-    - jeder Teiler von :math:`a` und :math:`b` ein Teiler von :math:`c` ist
+  - :math:`c` ein Teiler von :math:`a` und :math:`b` ist
+  - jeder Teiler von :math:`a` und :math:`b` ein Teiler von :math:`c` ist
 
 
 
@@ -243,7 +243,7 @@ Euklidischer Algorithmus
     7, 137.984, 70.070, 1, 67.914
     8, 70.070, 67.914, 1, 2.156
     9, 67.914, 2.156, 31, 1.078
-    10, 2.156, **1.078**, 2, 0
+    10, 2.156, **1.078**, 2, :red:`0`
 
 
 
@@ -342,17 +342,17 @@ Wenn :math:`n|(a - b)`, dann gilt :math:`(a - b) = kn` für ein :math:`k`
 .. example::
   :class: incremental
 
-  :math:`23 \equiv 8(\mod 5)`, da :math:`23 - 8 = 15 = 5 \times 3`
+  :math:`23 \equiv 8\pmod{5}`, da :math:`23 - 8 = 15 = 5 \times 3`
 
   .. class:: incremental
 
-  :math:`-11 \equiv 5(\mod 8)`, da :math:`-11 - 5 = -16 = 8 \times -2`
+  :math:`-11 \equiv 5\pmod{8}`, da :math:`-11 - 5 = -16 = 8 \times -2`
 
   .. \qquad 5 \equiv -11\pmod{8}, 5 - (-11) = 8 \times 2
 
   .. class:: incremental
 
-  :math:`81 \equiv 0(\mod 27)`, da :math:`81 - 0 = 81 = 27 \times 3`
+  :math:`81 \equiv 0 \pmod{27}`, da :math:`81 - 0 = 81 = 27 \times 3`
 
 .. supplemental::
 
@@ -363,7 +363,7 @@ Wenn :math:`n|(a - b)`, dann gilt :math:`(a - b) = kn` für ein :math:`k`
 Eigenschaften der modularen Arithmetik
 ----------------------------------------
 
-.. class:: incremental
+.. class:: incremental-list
 
 1. :math:`[(a \bmod n) + (b \bmod n)] \bmod n = (a + b) \bmod n`
 2. :math:`[(a \bmod n) - (b \bmod n)] \bmod n = (a - b) \bmod n`
@@ -598,7 +598,7 @@ Euklidischer Algorithmus - neu betrachtet
 
         **Algorithmus**
 
-        .. code:: pseudocode
+        .. code:: python
             :class: incremental-code
             :number-lines:
 
@@ -653,7 +653,7 @@ Erweiterter Euklidischer Algorithmus
 :math:`ggt(a=42,b=30)` mit erweitertem Euklidischen Algorithmus
 ------------------------------------------------------------------------------
 
-Werfen wir einen Blick auf :math:`x \times a + y \times b` für einige :math:`x` und :math:`y`:
+Werfen wir zuerst einen Blick auf :math:`x \times a + y \times b` für einige :math:`x` und :math:`y`:
 
 .. csv-table::
     :width: 100%
@@ -683,6 +683,8 @@ Erweiterter Euklidischer Algorithmus :raw-html:`<br>` Systematische Berechnung f
 .. grid::
 
     .. cell:: width-50
+
+        Klassischer Algorithmus:
 
         .. image:: drawings/euclidean_algorithm/example.svg
 
@@ -764,8 +766,9 @@ Erweiterter Euklidischer Algorithmus - Beispiel :math:`ggt(1759,550)`
 .. csv-table::
     :header: :math:`i`, :math:`r_i`, :math:`q_i`, :math:`x_i`, :math:`y_i`
     :width: 100%
-    :class: monospaced highlight-line-on-hover
-    :align: center
+    :widths: 5 10 10 10 10
+    :header-rows: 2
+    :class: monospaced highlight-line-on-hover incremental-table-rows table-data-align-right table-header-align-right
 
     -1, 1759, , 1, 0
     0, 550, , 0, 1
@@ -773,9 +776,11 @@ Erweiterter Euklidischer Algorithmus - Beispiel :math:`ggt(1759,550)`
     2, 5, 5, -5, 16
     3, 4, 21, 106, -339
     4, 1, 1, -111, 355
-    5, 0, 4, ,
+    5, :red:`0`, 4, ,
 
-Resultat: :math:`d=1; x= -111; y = 355`
+.. container:: incremental
+
+    Resultat: :math:`d=1; x= -111; y = 355`
 
 
 
@@ -789,7 +794,7 @@ Primzahlen und Primzahlenbestimmung
 Primzahlen
 -------------
 
-.. class:: incremental
+.. class:: incremental-list
 
    - Primzahlen haben als Teiler nur 1 und sich selbst.
    - Sie können nicht als Produkt von anderen Zahlen geschrieben werden.
@@ -835,6 +840,8 @@ Primzahlen
 
    Primzahlen spielen in der Zahlentheorie eine zentrale Rolle. Wir betrachten sie hier aber nur insoweit es für das Verständnis der Kryptographie notwendig ist.
 
+   Die Zerlegung zu bestimmen geschieht dadurch, dass man die Zahl durch die kleinste Primzahl (2) solange teilt, bis dies nicht mehr ohne Rest möglich ist, die Potenz ergibt sich dann aus der Anzahl der erfolgreichen Teilungen. Danach fährt man mit der nächsten Primzahl fort (3, 5, 7, ...) bis die Zahl zerlegt wurde.
+
 
 Fermats (kleines) Theorem
 -------------------------
@@ -859,11 +866,13 @@ Besagt folgendes:
 
     .. math::
 
-        Sei\; p=7\; und\; a=2:
+        \text{Sei } p=7 \text{ und } a=2:\; (2^6 = 64) \equiv 1 \pmod{7},\quad da\; 64/7 = 9\; Rest\; 1
 
-        (2^6 = 64) \equiv 1 \pmod{7},\qquad da\; 64/7 = 9\; Rest\; 1
+    .. container:: incremental
 
+        .. math::
 
+            \text{Sei } p=7 \text{ und } a=8:\; (8^6 = 262.144) \equiv 1 \pmod{7}
 
 .. supplemental::
 
@@ -974,31 +983,31 @@ Miller-Rabin-Primzahltest
 Miller-Rabin Algorithmus
 -------------------------
 
-.. code:: pseudocode
+.. code:: python
     :number-lines:
     :class: copy-to-clipboard
 
-    TEST(n, k) # n > 2, eine ungerade ganze Zahl,
-               #        die auf Primalität geprüft wird
-               # k,     die Anzahl der Testrunden
+    def MRTest(n, k): # n > 2, eine ungerade ganze Zahl,
+                      #        die auf Primalität geprüft wird
+                      # k,     die Anzahl der Testrunden
 
-    let s > 0 and d odd > 0 such that n−1 = pow(2,s)*d
-    repeat k times:
-        a ← random(2, n−2)
-        x ← pow(a,d) mod n
-        repeat s times:
-            y ← sqr(x) mod n
-            if y = 1 and x ≠ 1 and x ≠ n−1 then return “composite”
-            x ← y
-        if y ≠ 1 then return “composite”
-    return “probably prime”
+        let s > 0 and d odd > 0 such that n−1 = pow(2,s)*d
+        repeat k times:
+            a ← random(2, n−2)
+            x ← pow(a,d) mod n
+            repeat s times:
+                y ← sqr(x) mod n
+                if y = 1 and x ≠ 1 and x ≠ n−1 then return “composite”
+                x ← y
+            if y ≠ 1 then return “composite”
+        return “probably prime”
 
 
 
 Deterministische Primzahltests
 ---------------------------------
 
-.. class:: incremental
+.. class:: incremental-list
 
   - Vor 2002 gab es keine bekannte Methode, um für sehr große Zahlen effizient zu beweisen, dass diese Primzahlen sind.
   - Alle verwendeten Algorithmen lieferten ein probabilistisches Ergebnis.
@@ -1034,6 +1043,7 @@ Chinesischer Restsatz
     Bei RSA rechnen wir mit Zahlen mit weit über 300 Ziffern.
 
     Von der Menge der paarweise relativ primen Moduli interessieren wir uns aber „nur“ für ein paar im Folgenden.
+
 
 
 Chinesischer Restsatz - Beispiel in :math:`Z_{10}`
@@ -1096,9 +1106,12 @@ Die eindeutige Lösung in :math:`Z_{10}` ist: :math:`8`.
 Chinesische Restsatz - Zusammenfassung
 -----------------------------------------
 
-Der chinesische Restsatz wird häufig für Berechnungen mit großen ganzen Zahlen verwendet, da er es ermöglicht, eine Berechnung, für die man eine Grenze für die Größe des Ergebnisses kennt, durch mehrere ähnliche Berechnungen mit kleinen ganzen Zahlen zu ersetzen.
+.. compound::
+    :class: accentuate
 
-Das CRT findet in der Public-Key-Kryptographie Einsatz.
+    Der chinesische Restsatz wird häufig für Berechnungen mit großen ganzen Zahlen verwendet, da er es ermöglicht, eine Berechnung, für die man eine Grenze für die Größe des Ergebnisses kennt, durch mehrere ähnliche Berechnungen mit kleinen ganzen Zahlen zu ersetzen.
+
+    Das CRT findet in der Public-Key-Kryptographie Einsatz.
 
 
 
