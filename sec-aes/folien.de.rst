@@ -19,7 +19,7 @@ Advanced Encryption Standard (AES)
 
 :Dozent:        `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
 :Kontakt: michael.eichberg@dhbw.de
-:Version:       1.0.3
+:Version:       1.0.4
 
 .. class:: faded-to-white
 
@@ -76,12 +76,13 @@ Arithmetik endlicher Körper
 
   Zum Beispiel hat die ganze Zahl :math:`2` keine multiplikative Inverse in :math:`Z_{2^n}` (mit :math:`n > 1`), d. h. es gibt keine ganze Zahl :math:`b`, so dass :math:`2b\bmod 2^n = 1`
 
+.. class:: incremental
+
 - Ein endlicher Körper der :math:`2^n` Elemente enthält, wird als :math:`GF(2^n)` bezeichnet.
 
   .. hint::
 
     Jedes Polynom in :math:`GF(2^n)` kann durch eine n-Bit-Zahl dargestellt werden.
-
 
 
 
@@ -128,7 +129,7 @@ AES Parameter
 
 .. csv-table::
     :width: 100%
-    :class: highlight-row-on-hover table-header-align-left
+    :class: highlight-row-on-hover table-header-align-left incremental-table-rows
     :stub-columns: 1
 
     Schlüsselgröße (words/bytes/bits), 4/16/128, 6/24/192, 8/32/256
@@ -158,7 +159,7 @@ AES Detaillierter Aufbau
     .. class:: incremental-list
 
     - Verarbeitet in jeder Runde den gesamten Datenblock als eine einzige Matrix unter Verwendung von Substitutionen und Permutationen.
-    - Der als Eingabe bereitgestellte Schlüssel - bei 128 Bit Schlüsselgröße -  wird in ein Array von vierundvierzig 32-Bit-Wörtern expandiert (:math:`w[i]`)
+    - Der als Eingabe bereitgestellte Schlüssel - bei 128 Bit Schlüsselgröße -  wird in ein Array von vierundvierzig 32-Bit-Wörtern expandiert (:math:`w[i]`).
     - Die Chiffre beginnt und endet mit der *AddRoundKey*-Operation.
     - Man kann sich die Chiffre als abwechselnde Operationen zwischen
 
@@ -520,8 +521,8 @@ AES Schlüsselexpansion - Beispiel (Runde 1)
 AES Schlüsselexpansion - Begründung
 ---------------------------------------
 
-.. note:: Designziele
-    :class: width-50 incremental font-size-85
+.. admonition:: Designziele
+    :class: width-50 float-right incremental font-size-85
 
     - Kenntnis eines Teils des Chiffrierschlüssels oder des Rundenschlüssels ermöglicht nicht die Berechnung vieler anderer Bits des Rundenschlüssels
     - Eine invertierbare Transformation
