@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:dc="http://purl.org/dc/elements/1.1/" version="1.1" xmlns:xl="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" viewBox="-663 433 1555 855" width="1555" height="855">
+  <defs>
+    <font-face font-family="Helvetica" font-size="20" units-per-em="1000" underline-position="-75.68359" underline-thickness="49.316406" slope="0" x-height="522.9492" cap-height="717.28516" ascent="770.0195" descent="-229.98047" font-weight="400">
+      <font-face-src>
+        <font-face-name name="Helvetica"/>
+      </font-face-src>
+    </font-face>
+    <font-face font-family="Helvetica" font-size="22" units-per-em="1000" underline-position="-75.68359" underline-thickness="49.316406" slope="0" x-height="522.9492" cap-height="717.28516" ascent="770.0195" descent="-229.98047" font-weight="400">
+      <font-face-src>
+        <font-face-name name="Helvetica"/>
+      </font-face-src>
+    </font-face>
+    <marker orient="auto" overflow="visible" markerUnits="strokeWidth" id="FilledArrow_Marker" stroke-linejoin="miter" stroke-miterlimit="10" viewBox="-1 -3 7 6" markerWidth="7" markerHeight="6" color="black">
+      <g>
+        <path d="M 4.8 0 L 0 -1.8 L 0 1.8 Z" fill="currentColor" stroke="currentColor" stroke-width="1"/>
+      </g>
+    </marker>
+  </defs>
+  <metadata> Produced by OmniGraffle 8.0\n2024-09-28 13:26:13 +0000</metadata>
+  <g id="feedback_characteristics" fill="none" stroke-opacity="1" stroke="none" stroke-dasharray="none" fill-opacity="1">
+    <title>feedback_characteristics</title>
+    <g id="feedback_characteristics_Layer_1">
+      <title>Layer 1</title>
+      <g id="Graphic_72">
+        <text transform="translate(-527 435.659)" fill="black">
+          <tspan font-family="Helvetica" font-size="20" font-weight="400" fill="black" x="52.880615" y="19" xml:space="preserve">Klartext</tspan>
+        </text>
+      </g>
+      <g id="Graphic_69">
+        <path d="M -556.218 607.459 L -324.218 607.459 C -317.5906 607.459 -312.218 612.8316 -312.218 619.459 L -312.218 623.459 C -312.218 630.0864 -317.5906 635.459 -324.218 635.459 L -556.218 635.459 C -562.84543 635.459 -568.218 630.0864 -568.218 623.459 L -568.218 619.459 C -568.218 612.8316 -562.84543 607.459 -556.218 607.459 Z" fill="#b4b4b4" fill-opacity=".29947917"/>
+        <text transform="translate(-563.218 609.459)" fill="black">
+          <tspan font-family="Helvetica" font-size="20" font-weight="400" fill="black" x="60.74414" y="19" xml:space="preserve">Input Register</tspan>
+        </text>
+      </g>
+      <g id="Graphic_68">
+        <path d="M -556.218 794.009 L -324.218 794.009 C -317.5906 794.009 -312.218 799.3816 -312.218 806.009 L -312.218 810.009 C -312.218 816.6364 -317.5906 822.009 -324.218 822.009 L -556.218 822.009 C -562.84543 822.009 -568.218 816.6364 -568.218 810.009 L -568.218 806.009 C -568.218 799.3816 -562.84543 794.009 -556.218 794.009 Z" fill="#b4b4b4" fill-opacity=".29947917"/>
+        <text transform="translate(-563.218 796.009)" fill="black">
+          <tspan font-family="Helvetica" font-size="20" font-weight="400" fill="black" x="52.96582" y="19" xml:space="preserve">Output Register</tspan>
+        </text>
+      </g>
+      <g id="Graphic_67">
+        <path d="M -556.218 687.109 L -324.218 687.109 C -317.5906 687.109 -312.218 692.4816 -312.218 699.109 L -312.218 730.359 C -312.218 736.9864 -317.5906 742.359 -324.218 742.359 L -556.218 742.359 C -562.84543 742.359 -568.218 736.9864 -568.218 730.359 L -568.218 699.109 C -568.218 692.4816 -562.84543 687.109 -556.218 687.109 Z" fill="#ffc0ff"/>
+        <text transform="translate(-563.218 702.734)" fill="black">
+          <tspan font-family="Helvetica" font-size="20" font-weight="400" fill="black" x="61.2959" y="19" xml:space="preserve">Verschlüsseln</tspan>
+        </text>
+      </g>
+      <g id="Graphic_66">
+        <text transform="translate(-658 746.223) rotate(-90)" fill="black">
+          <tspan font-family="Helvetica" font-size="22" font-weight="400" fill="black" x="30.485107" y="21" xml:space="preserve">CBC Modus</tspan>
+        </text>
+      </g>
+      <g id="Line_58">
+        <line x1="-440.218" y1="635.459" x2="-440.218" y2="674.209" marker-end="url(#FilledArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+      <g id="Line_57">
+        <line x1="-440.218" y1="742.359" x2="-440.218" y2="781.109" marker-end="url(#FilledArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+      <g id="Group_78">
+        <g id="Graphic_75">
+          <circle cx="-440.218" cy="534.559" r="21.2500339554153" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+        </g>
+        <g id="Line_77">
+          <line x1="-461.468" y1="534.059" x2="-418.968" y2="534.4797" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+        </g>
+        <g id="Line_76">
+          <path d="M -440.718 513.309 L -440.718 535.059 L -440.718 555.809" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+        </g>
+      </g>
+      <g id="Graphic_79">
+        <text transform="translate(-527 875.659)" fill="black">
+          <tspan font-family="Helvetica" font-size="20" font-weight="400" fill="black" x="35.64917" y="19" xml:space="preserve">Geheimtext</tspan>
+        </text>
+      </g>
+      <g id="Graphic_80">
+        <text transform="translate(-258 702.734)" fill="black">
+          <tspan font-family="Helvetica" font-size="20" font-weight="400" fill="black" x="6.7021484" y="19" xml:space="preserve">Schlüssel</tspan>
+        </text>
+      </g>
+      <g id="Line_81">
+        <path d="M -440.218 461.659 L -440.218 472.659 L -440.468 487.484 L -440.718 494.409 L -440.718 500.409" marker-end="url(#FilledArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+      <g id="Line_82">
+        <line x1="-440.218" y1="556.809" x2="-440.218" y2="594.559" marker-end="url(#FilledArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+      <g id="Line_83">
+        <line x1="-263" y1="714.734" x2="-299.318" y2="714.734" marker-end="url(#FilledArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+      <g id="Line_84">
+        <line x1="-440.218" y1="822.009" x2="-440.218" y2="860.759" marker-end="url(#FilledArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+      <g id="Line_86">
+        <path d="M -440.218 838.659 L -599.9706 838.659 L -599.9706 533.67027 L -474.368 533.67027" marker-end="url(#FilledArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+      <g id="Graphic_106">
+        <text transform="translate(326.82703 777.877)" fill="black">
+          <tspan font-family="Helvetica" font-size="20" font-weight="400" fill="black" x="15.598633" y="19" xml:space="preserve">Klartext</tspan>
+        </text>
+      </g>
+      <g id="Graphic_105">
+        <path d="M 94.60901 487.877 L 326.609 487.877 C 333.23643 487.877 338.609 493.2496 338.609 499.877 L 338.609 503.877 C 338.609 510.50444 333.23643 515.877 326.609 515.877 L 94.60901 515.877 C 87.98159 515.877 82.60901 510.50444 82.60901 503.877 L 82.60901 499.877 C 82.60901 493.2496 87.98159 487.877 94.60901 487.877 Z" fill="#b4b4b4" fill-opacity=".29947917"/>
+        <text transform="translate(87.60901 489.877)" fill="black">
+          <tspan font-family="Helvetica" font-size="20" font-weight="400" fill="black" x="60.74414" y="19" xml:space="preserve">Input Register</tspan>
+        </text>
+      </g>
+      <g id="Graphic_104">
+        <path d="M 94.60901 692.877 L 326.609 692.877 C 333.23643 692.877 338.609 698.2496 338.609 704.877 L 338.609 708.877 C 338.609 715.50444 333.23643 720.877 326.609 720.877 L 94.60901 720.877 C 87.98159 720.877 82.60901 715.50444 82.60901 708.877 L 82.60901 704.877 C 82.60901 698.2496 87.98159 692.877 94.60901 692.877 Z" fill="#b4b4b4" fill-opacity=".29947917"/>
+        <text transform="translate(87.60901 694.877)" fill="black">
+          <tspan font-family="Helvetica" font-size="20" font-weight="400" fill="black" x="52.96582" y="19" xml:space="preserve">Output Register</tspan>
+        </text>
+      </g>
+      <g id="Graphic_103">
+        <path d="M 94.60901 567.527 L 326.609 567.527 C 333.23643 567.527 338.609 572.8996 338.609 579.527 L 338.609 610.777 C 338.609 617.40444 333.23643 622.777 326.609 622.777 L 94.60901 622.777 C 87.98159 622.777 82.60901 617.40444 82.60901 610.777 L 82.60901 579.527 C 82.60901 572.8996 87.98159 567.527 94.60901 567.527 Z" fill="#ffc0ff"/>
+        <text transform="translate(87.60901 583.152)" fill="black">
+          <tspan font-family="Helvetica" font-size="20" font-weight="400" fill="black" x="61.2959" y="19" xml:space="preserve">Verschlüsseln</tspan>
+        </text>
+      </g>
+      <g id="Graphic_102">
+        <text transform="translate(-7.172974 746.223) rotate(-90)" fill="black">
+          <tspan font-family="Helvetica" font-size="22" font-weight="400" fill="black" x="31.709717" y="21" xml:space="preserve">CFB Modus</tspan>
+        </text>
+      </g>
+      <g id="Line_101">
+        <line x1="210.609" y1="515.877" x2="210.609" y2="554.627" marker-end="url(#FilledArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+      <g id="Line_100">
+        <line x1="210.609" y1="622.777" x2="210.609" y2="679.977" marker-end="url(#FilledArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+      <g id="Group_96">
+        <g id="Graphic_99">
+          <circle cx="210.609" cy="789.877" r="21.2500339554153" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+        </g>
+        <g id="Line_98">
+          <line x1="189.359" y1="789.377" x2="231.859" y2="789.7977" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+        </g>
+        <g id="Line_97">
+          <line x1="211.2019" y1="768.627" x2="211.2019" y2="811.127" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+        </g>
+      </g>
+      <g id="Graphic_95">
+        <text transform="translate(123.82703 875.659)" fill="black">
+          <tspan font-family="Helvetica" font-size="20" font-weight="400" fill="black" x="35.64917" y="19" xml:space="preserve">Geheimtext</tspan>
+        </text>
+      </g>
+      <g id="Graphic_94">
+        <text transform="translate(386.82703 583.152)" fill="black">
+          <tspan font-family="Helvetica" font-size="20" font-weight="400" fill="black" x="5.397644" y="19" xml:space="preserve">Schlüssel</tspan>
+        </text>
+      </g>
+      <g id="Line_93">
+        <line x1="321.82703" y1="789.877" x2="245.75902" y2="789.877" marker-end="url(#FilledArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+      <g id="Line_91">
+        <line x1="381.82703" y1="595.152" x2="351.509" y2="595.152" marker-end="url(#FilledArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+      <g id="Line_90">
+        <line x1="210.609" y1="812.127" x2="210.609" y2="860.759" marker-end="url(#FilledArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+      <g id="Line_89">
+        <path d="M 210.609 831.9626 L 43.91526 831.9626 L 43.91526 502.85605 L 44.24311 502.85605 L 44.24311 501.877 L 69.70901 501.877" marker-end="url(#FilledArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+      <g id="Line_107">
+        <line x1="210.609" y1="720.877" x2="210.609" y2="754.727" marker-end="url(#FilledArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+      <g id="Graphic_125">
+        <text transform="translate(-7.172974 1178.759)" fill="black">
+          <tspan font-family="Helvetica" font-size="20" font-weight="400" fill="black" x="14.294128" y="19" xml:space="preserve">Klartext</tspan>
+        </text>
+      </g>
+      <g id="Graphic_124">
+        <path d="M -242 873.659 L -10 873.659 C -3.372583 873.659 2 879.0316 2 885.659 L 2 889.659 C 2 896.2864 -3.372583 901.659 -10 901.659 L -242 901.659 C -248.62742 901.659 -254 896.2864 -254 889.659 L -254 885.659 C -254 879.0316 -248.62742 873.659 -242 873.659 Z" fill="#b4b4b4" fill-opacity=".29947917"/>
+        <text transform="translate(-249 875.659)" fill="black">
+          <tspan font-family="Helvetica" font-size="20" font-weight="400" fill="black" x="60.74414" y="19" xml:space="preserve">Input Register</tspan>
+        </text>
+      </g>
+      <g id="Graphic_123">
+        <path d="M -242 1078.659 L -10 1078.659 C -3.372583 1078.659 2 1084.0316 2 1090.659 L 2 1094.659 C 2 1101.2864 -3.372583 1106.659 -10 1106.659 L -242 1106.659 C -248.62742 1106.659 -254 1101.2864 -254 1094.659 L -254 1090.659 C -254 1084.0316 -248.62742 1078.659 -242 1078.659 Z" fill="#b4b4b4" fill-opacity=".29947917"/>
+        <text transform="translate(-249 1080.659)" fill="black">
+          <tspan font-family="Helvetica" font-size="20" font-weight="400" fill="black" x="52.96582" y="19" xml:space="preserve">Output Register</tspan>
+        </text>
+      </g>
+      <g id="Graphic_122">
+        <path d="M -242 953.309 L -10 953.309 C -3.372583 953.309 2 958.6816 2 965.309 L 2 996.559 C 2 1003.1864 -3.372583 1008.559 -10 1008.559 L -242 1008.559 C -248.62742 1008.559 -254 1003.1864 -254 996.559 L -254 965.309 C -254 958.6816 -248.62742 953.309 -242 953.309 Z" fill="#ffc0ff"/>
+        <text transform="translate(-249 968.934)" fill="black">
+          <tspan font-family="Helvetica" font-size="20" font-weight="400" fill="black" x="61.2959" y="19" xml:space="preserve">Verschlüsseln</tspan>
+        </text>
+      </g>
+      <g id="Graphic_121">
+        <text transform="translate(-343.782 1132.005) rotate(-90)" fill="black">
+          <tspan font-family="Helvetica" font-size="22" font-weight="400" fill="black" x="31.097412" y="21" xml:space="preserve">OFB Modus</tspan>
+        </text>
+      </g>
+      <g id="Line_120">
+        <line x1="-126" y1="901.659" x2="-126" y2="940.409" marker-end="url(#FilledArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+      <g id="Line_119">
+        <line x1="-126" y1="1008.559" x2="-126" y2="1065.759" marker-end="url(#FilledArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+      <g id="Group_115">
+        <g id="Graphic_118">
+          <circle cx="-126" cy="1190.909" r="21.2500339554152" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+        </g>
+        <g id="Line_117">
+          <line x1="-147.25" y1="1190.409" x2="-104.75" y2="1190.8297" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+        </g>
+        <g id="Line_116">
+          <line x1="-125.4071" y1="1169.659" x2="-125.4071" y2="1212.159" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+        </g>
+      </g>
+      <g id="Graphic_114">
+        <text transform="translate(-212.78198 1261.441)" fill="black">
+          <tspan font-family="Helvetica" font-size="20" font-weight="400" fill="black" x="35.64917" y="19" xml:space="preserve">Geheimtext</tspan>
+        </text>
+      </g>
+      <g id="Graphic_113">
+        <text transform="translate(50.21802 968.934)" fill="black">
+          <tspan font-family="Helvetica" font-size="20" font-weight="400" fill="black" x="5.397644" y="19" xml:space="preserve">Schlüssel</tspan>
+        </text>
+      </g>
+      <g id="Line_112">
+        <path d="M -12.172974 1190.759 L -23.172974 1190.759 L -58.46148 1190.834 L -85.84999 1190.909 L -90.84999 1190.909" marker-end="url(#FilledArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+      <g id="Line_111">
+        <line x1="45.21802" y1="980.934" x2="14.9" y2="980.934" marker-end="url(#FilledArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+      <g id="Line_110">
+        <line x1="-126" y1="1213.159" x2="-126" y2="1246.541" marker-end="url(#FilledArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+      <g id="Line_109">
+        <path d="M -126 1130.8642 L -137 1130.8642 L -285.503 1130.6102 L -286.51445 1130.6102 L -286.51445 887.3546 L -272.9 887.659 L -266.9 887.659" marker-end="url(#FilledArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+      <g id="Line_108">
+        <line x1="-126" y1="1106.659" x2="-126" y2="1155.759" marker-end="url(#FilledArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+      <g id="Graphic_143">
+        <text transform="translate(730 1178.759)" fill="black">
+          <tspan font-family="Helvetica" font-size="20" font-weight="400" fill="black" x="15.598633" y="19" xml:space="preserve">Klartext</tspan>
+        </text>
+      </g>
+      <g id="Graphic_142">
+        <path d="M 497.782 873.659 L 729.782 873.659 C 736.4094 873.659 741.782 879.0316 741.782 885.659 L 741.782 889.659 C 741.782 896.2864 736.4094 901.659 729.782 901.659 L 497.782 901.659 C 491.15457 901.659 485.782 896.2864 485.782 889.659 L 485.782 885.659 C 485.782 879.0316 491.15457 873.659 497.782 873.659 Z" fill="#b4b4b4" fill-opacity=".29947917"/>
+        <text transform="translate(490.782 875.659)" fill="black">
+          <tspan font-family="Helvetica" font-size="20" font-weight="400" fill="black" x="60.74414" y="19" xml:space="preserve">Input Register</tspan>
+        </text>
+      </g>
+      <g id="Graphic_141">
+        <path d="M 497.782 1078.659 L 729.782 1078.659 C 736.4094 1078.659 741.782 1084.0316 741.782 1090.659 L 741.782 1094.659 C 741.782 1101.2864 736.4094 1106.659 729.782 1106.659 L 497.782 1106.659 C 491.15457 1106.659 485.782 1101.2864 485.782 1094.659 L 485.782 1090.659 C 485.782 1084.0316 491.15457 1078.659 497.782 1078.659 Z" fill="#b4b4b4" fill-opacity=".29947917"/>
+        <text transform="translate(490.782 1080.659)" fill="black">
+          <tspan font-family="Helvetica" font-size="20" font-weight="400" fill="black" x="52.96582" y="19" xml:space="preserve">Output Register</tspan>
+        </text>
+      </g>
+      <g id="Graphic_140">
+        <path d="M 497.782 953.309 L 729.782 953.309 C 736.4094 953.309 741.782 958.6816 741.782 965.309 L 741.782 996.559 C 741.782 1003.1864 736.4094 1008.559 729.782 1008.559 L 497.782 1008.559 C 491.15457 1008.559 485.782 1003.1864 485.782 996.559 L 485.782 965.309 C 485.782 958.6816 491.15457 953.309 497.782 953.309 Z" fill="#ffc0ff"/>
+        <text transform="translate(490.782 968.934)" fill="black">
+          <tspan font-family="Helvetica" font-size="20" font-weight="400" fill="black" x="61.2959" y="19" xml:space="preserve">Verschlüsseln</tspan>
+        </text>
+      </g>
+      <g id="Graphic_139">
+        <text transform="translate(396 1132.005) rotate(-90)" fill="black">
+          <tspan font-family="Helvetica" font-size="22" font-weight="400" fill="black" x="31.102783" y="21" xml:space="preserve">CTR Modus</tspan>
+        </text>
+      </g>
+      <g id="Line_138">
+        <line x1="613.782" y1="901.659" x2="613.782" y2="940.409" marker-end="url(#FilledArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+      <g id="Line_137">
+        <line x1="613.782" y1="1008.559" x2="613.782" y2="1065.759" marker-end="url(#FilledArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+      <g id="Group_133">
+        <g id="Graphic_136">
+          <circle cx="613.782" cy="1190.909" r="21.2500339554152" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+        </g>
+        <g id="Line_135">
+          <line x1="592.532" y1="1190.409" x2="635.032" y2="1190.8297" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+        </g>
+        <g id="Line_134">
+          <line x1="614.3749" y1="1169.659" x2="614.3749" y2="1212.159" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+        </g>
+      </g>
+      <g id="Graphic_132">
+        <text transform="translate(527 1261.441)" fill="black">
+          <tspan font-family="Helvetica" font-size="20" font-weight="400" fill="black" x="35.64917" y="19" xml:space="preserve">Geheimtext</tspan>
+        </text>
+      </g>
+      <g id="Graphic_131">
+        <text transform="translate(790 968.934)" fill="black">
+          <tspan font-family="Helvetica" font-size="20" font-weight="400" fill="black" x="5.397644" y="19" xml:space="preserve">Schlüssel</tspan>
+        </text>
+      </g>
+      <g id="Line_130">
+        <path d="M 725 1190.759 L 714 1190.759 L 680.016 1190.834 L 653.932 1190.909 L 648.932 1190.909" marker-end="url(#FilledArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+      <g id="Line_129">
+        <line x1="785" y1="980.934" x2="754.682" y2="980.934" marker-end="url(#FilledArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+      <g id="Line_128">
+        <line x1="613.782" y1="1213.159" x2="613.782" y2="1246.541" marker-end="url(#FilledArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+      <g id="Line_127">
+        <path d="M 485.782 887.659 L 440.3509 887.659 L 440.3509 817.3469 L 441.84694 817.3469 L 441.84694 817.877 L 472.882 817.877" marker-end="url(#FilledArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+      <g id="Line_126">
+        <line x1="613.782" y1="1106.659" x2="613.782" y2="1155.759" marker-end="url(#FilledArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+      <g id="Graphic_144">
+        <path d="M 497.782 803.877 L 729.782 803.877 C 736.4094 803.877 741.782 809.2496 741.782 815.877 L 741.782 819.877 C 741.782 826.5044 736.4094 831.877 729.782 831.877 L 497.782 831.877 C 491.15457 831.877 485.782 826.5044 485.782 819.877 L 485.782 815.877 C 485.782 809.2496 491.15457 803.877 497.782 803.877 Z" fill="#b4b4b4" fill-opacity=".29947917"/>
+        <text transform="translate(490.782 805.877)" fill="black">
+          <tspan font-family="Helvetica" font-size="20" font-weight="400" fill="black" x="87.42383" y="19" xml:space="preserve">Counter</tspan>
+        </text>
+      </g>
+      <g id="Line_145">
+        <line x1="613.782" y1="831.877" x2="613.782" y2="860.759" marker-end="url(#FilledArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+    </g>
+  </g>
+</svg>

@@ -1,5 +1,5 @@
-.. meta:: 
-    :version: genesis
+.. meta::
+    :version: renaissance
     :author: Michael Eichberg
     :keywords: Blockchiffren, Operationsmodi, ECB, CBC, CFB, OFB, CTR, XTS-AES
     :description lang=en: Block Cipher Operations
@@ -9,8 +9,8 @@
     :master-password: WirklichSchwierig!
 
 .. include:: ../docutils.defs
-    
-    
+
+
 
 Betriebsmodi bei Blockchiffren
 ===============================================
@@ -22,7 +22,7 @@ Betriebsmodi bei Blockchiffren
 
 .. supplemental::
 
-  :Folien: 
+  :Folien:
       :HTML: |html-source|
 
       :PDF: |pdf-source|
@@ -47,29 +47,29 @@ Betriebsmodi
 Betriebsmodi - Übersicht
 ------------------------------
 
-.. container:: scrollable
+.. story::
 
     .. csv-table::
-        :class: smaller highlight-line-on-hover 
+        :class: highlight-row-on-hover incremental-table-rows
         :width: 100%
         :header: Modus, Beschreibung, Typische Anwendung
 
         **Electronic Codebook (ECB)**, Jeder Block von Klartextbits wird unabhängig voneinander mit demselben Schlüssel verschlüsselt., "
         • Sichere Übertragung einzelner Werte (z. B. eines Verschlüsselungsschlüssels)
         "
-        **Cipher Block Chaining (CBC)**, Die Eingabe für den Verschlüsselungsalgorithmus ist die XOR-Verknüpfung des nächsten Klartextblocks mit dem vorangegangenen Chiffretextblock., " 
-        - Universelle blockorientierte Übertragung 
+        **Cipher Block Chaining (CBC)**, Die Eingabe für den Verschlüsselungsalgorithmus ist die XOR-Verknüpfung des nächsten Klartextblocks mit dem vorangegangenen Chiffretextblock., "
+        - Universelle blockorientierte Übertragung
         - Authentifizierung
         "
         **Cipher Feedback (CFB)**, "Die Eingabe wird Bit für Bit verarbeitet.
-        Der vorhergehende Chiffretext wird als Eingabe für den Verschlüsselungsalgorithmus verwendet, um eine pseudozufällige Ausgabe zu erzeugen, die mit dem Klartext XOR-verknüpft wird, um die nächste Einheit des Chiffretextes zu erzeugen.", " 
+        Der vorhergehende Chiffretext wird als Eingabe für den Verschlüsselungsalgorithmus verwendet, um eine pseudozufällige Ausgabe zu erzeugen, die mit dem Klartext XOR-verknüpft wird, um die nächste Einheit des Chiffretextes zu erzeugen.", "
         - Allgemeine stromorientierte Übertragung
         - Authentifizierung
-        " 
-        **Output Feedback (OFB)**, "Ähnlich wie CFB, mit dem Unterschied, dass die Eingabe für den Verschlüsselungsalgorithmus die vorangegangene Verschlüsselungsausgabe ist, und volle Blöcke verwendet werden.", " 
-        • Stromorientierte Übertragung über verrauschte Kanäle (z. B. Satellitenkommunikation) 
         "
-        "**Counter (CTR**)", "Jeder Klartextblock wird mit einem verschlüsselten Zähler XOR-verknüpft. Der Zähler wird für jeden nachfolgenden Block erhöht.", " 
+        **Output Feedback (OFB)**, "Ähnlich wie CFB, mit dem Unterschied, dass die Eingabe für den Verschlüsselungsalgorithmus die vorangegangene Verschlüsselungsausgabe ist, und volle Blöcke verwendet werden.", "
+        • Stromorientierte Übertragung über verrauschte Kanäle (z. B. Satellitenkommunikation)
+        "
+        "**Counter (CTR**)", "Jeder Klartextblock wird mit einem verschlüsselten Zähler XOR-verknüpft. Der Zähler wird für jeden nachfolgenden Block erhöht.", "
         - Blockorientierte Übertragung für allgemeine Zwecke
         - Nützlich für Hochgeschwindigkeitsanforderungen
         "
@@ -83,63 +83,64 @@ Grundlegende Blockchiffren
 
 
 
-Electronic Codebook
---------------------
+Electronic Codebook\ [#]_
+--------------------------
 
 .. image:: opensource-drawings/ecb_encryption.svg
-    :width: 1200px
-    :align: center 
+    :align: center
 
 .. image:: opensource-drawings/ecb_decryption.svg
-    :width: 1200px
-    :align: center 
+    :align: center
+    :class: incremental
 
-.. container:: far-far-smaller
-    
-    Autor: https://commons.wikimedia.org/wiki/User:WhiteTimberwolf
+.. [#] Bilder von: `White Timberwolf <https://commons.wikimedia.org/wiki/User:WhiteTimberwolf>`__
 
 
 
 Probleme bei der Verwendung der Verschlüsselung im ECB-Modus
 ----------------------------------------------------------------
 
-.. container:: two-columns
+.. deck::
 
-    .. container:: column no-separator
-
-        *ECB-Tux* - der Linux-Pinguin verschlüsselt im ECB-Modus:
-
-        Quelle: https://github.com/robertdavidgraham/ecb-penguin
-
-    .. image:: opensource-drawings/tux.ecb.from_robert_david_graham.png
-        :align: center
-  
-Kriterien und Eigenschaften für die Bewertung und Konstruktion von Blockchiffre-Betriebsarten, die ECB überlegen sind.
-
-- Overhead
-- Fehlerbehebung 
-- Fehlerfortpflanzung
-- Streuung
-- Sicherheit
+    .. card::
 
 
+        .. grid::
 
-Cipher Block Chaining
-----------------------
+            .. cell:: width-30
+
+                *ECB-Tux* - der Linux-Pinguin verschlüsselt im ECB-Modus:
+
+                Quelle: https://github.com/robertdavidgraham/ecb-penguin
+
+            .. cell:: width-70
+
+                .. image:: opensource-drawings/tux.ecb.from_robert_david_graham.png
+                    :align: center
+
+    .. card::
+
+        Kriterien und Eigenschaften für die Bewertung und Konstruktion von Blockchiffre-Betriebsarten, die ECB überlegen sind.
+
+        - Overhead
+        - Fehlerbehebung
+        - Fehlerfortpflanzung
+        - Streuung
+        - Sicherheit
+
+
+
+Cipher Block Chaining\ [#]_
+-----------------------------
 
 .. image:: opensource-drawings/cbc_encryption.svg
-    :width: 1200px
-    :align: center 
+    :align: center
 
-.. container:: incremental
+.. image:: opensource-drawings/cbc_decryption.svg
+    :align: center
+    :class: incremental
 
-    .. image:: opensource-drawings/cbc_decryption.svg
-        :width: 1200px
-        :align: center 
-
-    .. container:: far-far-smaller
-        
-        Autor: https://commons.wikimedia.org/wiki/User:WhiteTimberwolf
+.. [#] Bilder von: `White Timberwolf <https://commons.wikimedia.org/wiki/User:WhiteTimberwolf>`__
 
 
 
@@ -167,28 +168,23 @@ Konvertierung von Blockchiffren in Stromchiffre
 
 Bei AES, DES oder jeder anderen Blockchiffre erfolgt die Verschlüsselung immer Block-für-Block mit Blockgrößen von b Bits:
 
-- Im Fall von (3)DES: :math:`b=64` 
+- Im Fall von (3)DES: :math:`b=64`
 - Im Fall von AES: :math:`b=128`
 
 
 
 
-*Cipher Feedback Mode*
------------------------
+*Cipher Feedback Mode*\ [#]_
+------------------------------
 
 .. image:: opensource-drawings/cfb_encryption.svg
-    :width: 1200px
-    :align: center 
+    :align: center
 
-.. container:: incremental
+.. image:: opensource-drawings/cfb_decryption.svg
+    :align: center
+    :class: incremental
 
-    .. image:: opensource-drawings/cfb_decryption.svg
-        :width: 1200px
-        :align: center 
-
-    .. container:: far-far-smaller
-        
-        Autor: https://commons.wikimedia.org/wiki/User:WhiteTimberwolf
+.. [#] Bilder von: `White Timberwolf <https://commons.wikimedia.org/wiki/User:WhiteTimberwolf>`__
 
 
 
@@ -196,8 +192,7 @@ Bei AES, DES oder jeder anderen Blockchiffre erfolgt die Verschlüsselung immer 
 --------------------------------------------
 
 .. image:: drawings/operationsmodi/cfb_s_bits.svg
-    :width: 100%
-    :align: center 
+    :align: center
 
 
 
@@ -205,18 +200,13 @@ Bei AES, DES oder jeder anderen Blockchiffre erfolgt die Verschlüsselung immer 
 ------------------------
 
 .. image:: opensource-drawings/ofb_encryption.svg
-    :width: 1200px
-    :align: center 
+    :align: center
 
-.. container:: incremental
-        
-    .. image:: opensource-drawings/ofb_decryption.svg
-        :width: 1200px
-        :align: center 
+.. image:: opensource-drawings/ofb_decryption.svg
+    :align: center
+    :class: incremental
 
-    .. container:: far-far-smaller
-        
-        Autor: https://commons.wikimedia.org/wiki/User:WhiteTimberwolf
+.. [#] Bilder von: `White Timberwolf <https://commons.wikimedia.org/wiki/User:WhiteTimberwolf>`__
 
 .. When used as a Stream Cipher we can simply discard the last bytes of the encrypted block cipher.
 
@@ -226,18 +216,14 @@ Bei AES, DES oder jeder anderen Blockchiffre erfolgt die Verschlüsselung immer 
 -----------------
 
 .. image:: opensource-drawings/ctr_encryption.svg
-    :width: 1200px
-    :align: center 
+    :align: center
 
-.. container:: incremental
-        
-    .. image:: opensource-drawings/ctr_decryption.svg
-        :width: 1200px
-        :align: center 
+.. image:: opensource-drawings/ctr_decryption.svg
+    :align: center
+    :class: incremental
 
-    .. container:: far-far-smaller
-        
-        Autor: https://commons.wikimedia.org/wiki/User:WhiteTimberwolf
+.. [#] Bilder von: `White Timberwolf <https://commons.wikimedia.org/wiki/User:WhiteTimberwolf>`__
+
 
 
 
@@ -257,8 +243,7 @@ Rückkopplungseigenschaften\ [#]_  der Betriebsmodi
 -------------------------------------------------------------------------------
 
 .. image:: drawings/operationsmodi/feedback_characteristics.svg
-    :width: 1750px
-    :align: center 
+    :align: center
 
 .. [#] (:eng:`Feedback Characteristics`)
 
@@ -277,7 +262,7 @@ XTS-AES Modus für block-orientierte Speichergeräte
 2010 vom NIST als zusätzlicher Blockchiffre-Betriebsmodus genehmigt.
 
 Modus ist auch ein IEEE-Standard, IEEE Std 1619-2007
- 
+
 .. admonition:: Frage
     :class: note
 
@@ -287,7 +272,7 @@ Modus ist auch ein IEEE-Standard, IEEE Std 1619-2007
     .. data is freely accessible
 
 - Die Norm beschreibt eine Verschlüsselungsmethode für Daten, die in sektor-basierten Geräten gespeichert sind, wobei das Bedrohungsmodell einen möglichen Zugriff des Gegners auf die gespeicherten Daten beinhaltet.
-  
+
 - Hat breite Unterstützung der Industrie erhalten.
 
 
@@ -302,7 +287,7 @@ Modus ist auch ein IEEE-Standard, IEEE Std 1619-2007
   - **Symmetrischer Schlüssel**
   - **Tweak**
 
-- Der *Tweak* muss nicht geheim gehalten werden; der Zweck ist, Variabilität zu bieten. 
+- Der *Tweak* muss nicht geheim gehalten werden; der Zweck ist, Variabilität zu bieten.
 
 .. supplemental::
 
@@ -314,8 +299,7 @@ Modus ist auch ein IEEE-Standard, IEEE Std 1619-2007
 -----------------------------------------------------
 
 .. image:: drawings/operationsmodi/tweakable_block_cipher.svg
-    :width: 1750px
-    :align: center 
+    :align: center
 
 
 
@@ -341,61 +325,60 @@ XTS-AES Operation auf einem Block
 ------------------------------------
 
 .. image:: drawings/operationsmodi/xts_aes.svg
-    :width: 1750px
-    :align: center 
+    :align: center
 
 .. container:: far-far-smaller two-columns margin-top-1em
-    
+
     .. container:: column no-separator
 
-      - Schlüssel: es gilt: :math:`Schlüssel = Schlüssel_1\, ||\, Schlüssel_2` 
+      - Schlüssel: es gilt: :math:`Schlüssel = Schlüssel_1\, ||\, Schlüssel_2`
       - :math:`P_j`: Der j-te Block des Klartexts. Alle Blöcke haben eine Länge von 128 bits. Eine (Klartext)dateneinheit – in der Regel ein Festplattensektor – besteht aus einer Folge von Klartextblöcken.
       - :math:`C_j`: Der j-te Block des Chiffretextes.
       - :math:`j`: Die fortlaufende Nummer des 128-Bit-Blocks innerhalb der Dateneinheit.
-    
-    
+
+
     .. container:: column
 
       - :math:`i`: Der Wert des 128-Bit-Tweaks.
       - :math:`\alpha`: Ein primitives Element des :math:`GF(2^{128})` welches dem Polynom :math:`x` (d. h. 0000...0010) entspricht.
-      - :math:`\alpha^j`: :math:`\alpha` :math:`j` mal mit sich selbst multipliziert im Körper :math:`GF(2^{128})`  
+      - :math:`\alpha^j`: :math:`\alpha` :math:`j` mal mit sich selbst multipliziert im Körper :math:`GF(2^{128})`
       - :math:`\oplus` Bitwise XOR
-      - :math:`\otimes` Modulare Multiplikation mit Binärkoeffizienten modulo :math:`x^{128}+x^7+x^2+x+1`.  
+      - :math:`\otimes` Modulare Multiplikation mit Binärkoeffizienten modulo :math:`x^{128}+x^7+x^2+x+1`.
 
 
-.. class:: integrated-exercise transition-scale
+.. class:: exercises transition-scale
 
 Übung
 ---------------------
 
 - \
-  
+
   .. exercise:: Der Initialisierungsvektor (IV) bei CBC
 
      Warum ist es bei CBC wichtig, den Initialisierungsvektor (IV) zu schützen?
 
      .. solution::
         :pwd: IV und CBC
-    
+
         Wenn der IV im Klartext gesendet wird, können wir in bestimmten Szenarien einige Bits des Klartextes (des ersten Blocks) im Rahmen einer MITM Attacke umdrehen, wenn wir den IV ändern (`Bit Flipping Attack <https://en.wikipedia.org/wiki/Bit-flipping_attack>`__). D. h. wir fangen die Nachricht ab, ändern den IV und senden die Nachricht weiter. Wenn der Empfänger die Nachricht entschlüsselt, dann ist der erste Block des Klartextes gezielt verändert. Wenn man Kenntnisse über den Aufbau/Inhalt des ersten Blocks hat, dann kann dies dazu führen, dass man die Daten gezielt verändert.
 
 
 - \
-  
+
   .. exercise:: Padding
-    
+
      In welchen Betriebsarten ist eine Auffüllung (:eng:`Padding`) notwendig?
 
      .. solution::
-     
+
         ECB und CBC (die Eingabe für die Verschlüsselung ist ein vollständiger Klartextblock).
 
 - \
-  
+
   .. exercise:: Auswirkungen eines Bitflips
 
      Was geschieht im Falle eines Übertragungsfehlers (einzelner Bitflip im Chiffretext) bei ECB, CBC, CFB, OFB, CTR?
-   
+
      .. solution::
         :pwd: bitFlip
 
@@ -405,14 +388,14 @@ XTS-AES Operation auf einem Block
         :OFB, CTR: Im Klartext wird ein Bit umgedreht.
 
 - \
-  
+
   .. exercise:: Nonce bei OFB
- 
+
      Warum muss der IV bei OFB eine Nonce sein?
 
      .. solution::
         :pwd: nOnce
- 
+
         Die O_i hängen nur vom Schlüssel und dem Initialisierungsvektor ab. Wenn der IV mit demselben Schlüssel wiederverwendet wird und wir zufällig einen bestimmten Klartext kennen, können wir möglicherweise einen entsprechenden Chiffretext in einer anderen Nachricht entschlüsseln.
 
 
@@ -422,13 +405,13 @@ XTS-AES Operation auf einem Block
 
 
 
-.. class:: integrated-exercise transition-scale
+.. class:: exercises transition-scale
 
 Übung
 ---------------------
 
 - \
-  
+
   .. exercise:: ECB?
 
      Sie möchten feststellen, ob ein Programm zur Verschlüsselung von Dateien den ECB-Modus verwendet. Was müssen Sie tun?
@@ -442,79 +425,79 @@ XTS-AES Operation auf einem Block
 
   .. exercise:: XTS-AES
 
-    Wie viele Blöcke hat eine Dateneinheiten, wenn ein Festplattensektor 4 KiB groß ist?
+    Wie viele Blöcke hat eine Dateneinheit, wenn ein Festplattensektor 4 KiB groß ist?
 
     Welchen praktischen Vorteil hat es, das der Hash T vor und nach der Verschlüsselung des Klartextes mit dem aktuellen Wert XOR-verknüpft wird?
 
-    .. solution:: 
+    .. solution::
         :pwd: XTS-AES
 
         Wenn ein Festplattensektor 4 KiB groß ist und ein Block eine Größe von 128 Bit (16 Byte) hat, dann gilt, dass ein Sektor 4096/16 = 256 Blöcke hat.
 
-        Dadurch kann der Selbe Algorithmus für die Verschlüsselung und die Entschlüsselung verwendet werden. 
+        Dadurch kann der Selbe Algorithmus für die Verschlüsselung und die Entschlüsselung verwendet werden.
 
 
 
 
 
-.. class:: integrated-exercise
+.. class:: exercises
 
-Übung 
+Übung
 ---------------------
 
-.. container:: far-far-smaller
+.. story::
 
     .. exercise:: OFB-Modus
-        
-        Verwenden Sie den OFB-Modus in Kombination mit einer Caesar-Chiffre, bei der die Blockgröße ein Zeichen sei. Der Schlüssel ist die Anzahl der Zeichen, um die Sie ein Zeichen verschieben wollen - wie zuvor. Der IV ist ein Zeichen. Damit sie ein XOR durchführen können, ordnen wir jedem Zeichen einen Wert zu und erweitern das Alphabet um die Ziffern 1 bis 3, "!", "?" und das "_". Auf diese Weise ist es immer möglich, ein sinnvolles Zeichen auszugeben. 
+
+        Verwenden Sie den OFB-Modus in Kombination mit einer Caesar-Chiffre, bei der die Blockgröße ein Zeichen sei. Der Schlüssel ist die Anzahl der Zeichen, um die Sie ein Zeichen verschieben wollen - wie zuvor. Der IV ist ein Zeichen. Damit sie ein XOR durchführen können, ordnen wir jedem Zeichen einen Wert zu und erweitern das Alphabet um die Ziffern 1 bis 3, "!", "?" und das "_". Auf diese Weise ist es immer möglich, ein sinnvolles Zeichen auszugeben.
 
         Daraus ergibt sich die folgende Kodierung:
 
-        .. container:: three-columns far-smaller
+        .. grid::
 
-            .. container:: column  no-separator
-                        
+            .. cell:: width-30
+
                 .. csv-table::
                     :header: Index, Zeichen, Binärdarstellung
 
-                    0, A, 00000 
-                    1, B, 00001 
-                    2, C, 00010 
-                    3, D, 00011 
-                    4, E, 00100 
-                    5, F, 00101 
-                    6, G, 00110 
-                    7, H, 00111 
-                    8, I, 01000 
-                    9, J, 01001 
+                    0, A, 00000
+                    1, B, 00001
+                    2, C, 00010
+                    3, D, 00011
+                    4, E, 00100
+                    5, F, 00101
+                    6, G, 00110
+                    7, H, 00111
+                    8, I, 01000
+                    9, J, 01001
                     10, K, 01010
 
-            .. container:: column no-separator
-                        
-                .. csv-table::
-                    :header: Index, Zeichen, Binärdarstellung
- 
-                    11, L, 01011 
-                    12, M, 01100 
-                    13, N, 01101 
-                    14, O, 01110 
-                    15, P, 01111 
-                    16, Q, 10000 
-                    17, R, 10001 
-                    18, S, 10010 
-                    19, T, 10011 
-                    20, U, 10100 
-                    21, V, 10101 
+            .. cell:: width-30
 
-            .. container:: column
-                        
                 .. csv-table::
                     :header: Index, Zeichen, Binärdarstellung
-                    
-                    22, W, 10110 
-                    23, X, 10111 
-                    24, Y, 11000 
-                    25, Z, 11001 
+
+                    11, L, 01011
+                    12, M, 01100
+                    13, N, 01101
+                    14, O, 01110
+                    15, P, 01111
+                    16, Q, 10000
+                    17, R, 10001
+                    18, S, 10010
+                    19, T, 10011
+                    20, U, 10100
+                    21, V, 10101
+
+            .. cell:: width-30
+
+                .. csv-table::
+                    :header: Index, Zeichen, Binärdarstellung
+
+                    22, W, 10110
+                    23, X, 10111
+                    24, Y, 11000
+                    25, Z, 11001
                     26, 1, 11010
                     27, 2, 11011
                     28, 3, 11100
@@ -529,21 +512,22 @@ XTS-AES Operation auf einem Block
 
             Das gleiche Klartextzeichen wird nicht mehr (notwendigerweise) dem gleichen Chiffretextzeichen zugeordnet, wenn es in der ursprünglichen Nachricht wieder auftaucht, d. h. es liegt eine gewisse Diffusion vor.
 
-            .. admonition:: Beispiel - Verschlüsselung
-            
+            .. example::
+
+                .. rubric::  Verschlüsselung
+
                 .. math::
-            
+
                     IV = A, k = 3, M = AA
 
                     1. I_1 = IV = A; E(I_1) = D; C_1 = A \oplus D = D
 
                     2. I_2 = D; E(I_2) = G, C_2 = A \oplus G = G
-        
-            .. admonition:: Beispiel - Entschlüsselung
-            
-                .. math:: 
-                    
-                    IV = Z, k = 3, C = T
-                
-                    E(IV) = 3, M = T \oplus 3 = P\qquad (10011_b \oplus 11100_b = 01111_b = P) 
 
+                .. rubric:: Entschlüsselung
+
+                .. math::
+
+                    IV = Z, k = 3, C = T
+
+                    E(IV) = 3, M = T \oplus 3 = P\qquad (10011_b \oplus 11100_b = 01111_b = P)

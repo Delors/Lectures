@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:dc="http://purl.org/dc/elements/1.1/" version="1.1" xmlns:xl="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" viewBox="-697 541 924 476" width="924" height="476">
+  <defs>
+    <font-face font-family="Helvetica" font-size="20" units-per-em="1000" underline-position="-75.68359" underline-thickness="49.316406" slope="0" x-height="522.9492" cap-height="717.28516" ascent="770.0195" descent="-229.98047" font-weight="400">
+      <font-face-src>
+        <font-face-name name="Helvetica"/>
+      </font-face-src>
+    </font-face>
+    <marker orient="auto" overflow="visible" markerUnits="strokeWidth" id="FilledArrow_Marker" stroke-linejoin="miter" stroke-miterlimit="10" viewBox="-1 -3 7 6" markerWidth="7" markerHeight="6" color="black">
+      <g>
+        <path d="M 4.8 0 L 0 -1.8 L 0 1.8 Z" fill="currentColor" stroke="currentColor" stroke-width="1"/>
+      </g>
+    </marker>
+    <font-face font-family="Helvetica" font-size="13" units-per-em="1000" underline-position="-75.68359" underline-thickness="49.316406" slope="0" x-height="522.9492" cap-height="717.28516" ascent="770.0195" descent="-229.98047" font-weight="400">
+      <font-face-src>
+        <font-face-name name="Helvetica"/>
+      </font-face-src>
+    </font-face>
+    <linearGradient x1="0" x2="1" id="Gradient" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="white"/>
+      <stop offset=".8774084" stop-color="white" stop-opacity=".5"/>
+      <stop offset="1" stop-color="white" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="Obj_Gradient" xl:href="#Gradient" gradientTransform="translate(203.31362 875.8233) rotate(96.47544) scale(104.01698)"/>
+  </defs>
+  <metadata> Produced by OmniGraffle 8.0\n2024-09-28 13:26:13 +0000</metadata>
+  <g id="cfb_s_bits" fill="none" stroke-opacity="1" stroke="none" stroke-dasharray="none" fill-opacity="1">
+    <title>cfb_s_bits</title>
+    <g id="cfb_s_bits_Layer_1">
+      <title>Layer 1</title>
+      <g id="Graphic_69">
+        <path d="M -556.218 584.278 L -324.218 584.278 C -317.5906 584.278 -312.218 589.6506 -312.218 596.278 L -312.218 622.769 C -312.218 629.3964 -317.5906 634.769 -324.218 634.769 L -556.218 634.769 C -562.84543 634.769 -568.218 629.3964 -568.218 622.769 L -568.218 596.278 C -568.218 589.6506 -562.84543 584.278 -556.218 584.278 Z" fill="#b4b4b4" fill-opacity=".29947917"/>
+        <text transform="translate(-563.218 597.5235)" fill="black">
+          <tspan font-family="Helvetica" font-size="20" font-weight="400" fill="black" x="113.55176" y="19" xml:space="preserve">IV</tspan>
+        </text>
+      </g>
+      <g id="Graphic_68">
+        <path d="M -556.218 794.009 L -324.218 794.009 C -317.5906 794.009 -312.218 799.3816 -312.218 806.009 L -312.218 832.5 C -312.218 839.1274 -317.5906 844.5 -324.218 844.5 L -556.218 844.5 C -562.84543 844.5 -568.218 839.1274 -568.218 832.5 L -568.218 806.009 C -568.218 799.3816 -562.84543 794.009 -556.218 794.009 Z" fill="#b4b4b4" fill-opacity=".29947917"/>
+        <text transform="translate(-558.218 795.2545)" fill="black">
+          <tspan font-family="Helvetica" font-size="20" font-weight="400" fill="black" x="0" y="19" xml:space="preserve">Nimm</tspan>
+          <tspan font-family="Helvetica" font-size="20" font-weight="400" fill="black" x="0" y="43" xml:space="preserve">s Bits</tspan>
+        </text>
+      </g>
+      <g id="Graphic_67">
+        <path d="M -556.218 687.109 L -324.218 687.109 C -317.5906 687.109 -312.218 692.4816 -312.218 699.109 L -312.218 730.359 C -312.218 736.9864 -317.5906 742.359 -324.218 742.359 L -556.218 742.359 C -562.84543 742.359 -568.218 736.9864 -568.218 730.359 L -568.218 699.109 C -568.218 692.4816 -562.84543 687.109 -556.218 687.109 Z" fill="#ffc0ff"/>
+        <text transform="translate(-563.218 702.734)" fill="black">
+          <tspan font-family="Helvetica" font-size="20" font-weight="400" fill="black" x="61.2959" y="19" xml:space="preserve">Verschlüsseln</tspan>
+        </text>
+      </g>
+      <g id="Line_58">
+        <line x1="-440.218" y1="634.769" x2="-440.218" y2="674.209" marker-end="url(#FilledArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+      <g id="Line_57">
+        <line x1="-440.48575" y1="742.359" x2="-440.875" y2="782.52045" marker-end="url(#FilledArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+      <g id="Graphic_80">
+        <text transform="translate(-692 702.734)" fill="black">
+          <tspan font-family="Helvetica" font-size="20" font-weight="400" fill="black" x="1.3355103" y="19" xml:space="preserve">Schlüssel</tspan>
+        </text>
+      </g>
+      <g id="Line_83">
+        <line x1="-598.7333" y1="714.734" x2="-581.118" y2="714.734" marker-end="url(#FilledArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+      <g id="Graphic_163">
+        <path d="M -638 885.75 L -598.25 885.75 C -591.6226 885.75 -586.25 891.1226 -586.25 897.75 L -586.25 901.75 C -586.25 908.3774 -591.6226 913.75 -598.25 913.75 L -638 913.75 C -644.6274 913.75 -650 908.3774 -650 901.75 L -650 897.75 C -650 891.1226 -644.6274 885.75 -638 885.75 Z" fill="#b4b4b4" fill-opacity=".29947917"/>
+        <text transform="translate(-645 885.75)" fill="black">
+          <tspan font-family="Helvetica" font-size="20" font-weight="400" fill="black" x="16.590088" y="19" xml:space="preserve">P</tspan>
+          <tspan font-family="Helvetica" font-size="13" font-weight="400" fill="black" y="25" xml:space="preserve">1</tspan>
+        </text>
+      </g>
+      <g id="Graphic_164">
+        <path d="M -556.218 955 L -516.468 955 C -509.8406 955 -504.468 960.3726 -504.468 967 L -504.468 971 C -504.468 977.6274 -509.8406 983 -516.468 983 L -556.218 983 C -562.84543 983 -568.218 977.6274 -568.218 971 L -568.218 967 C -568.218 960.3726 -562.84543 955 -556.218 955 Z" fill="#b4b4b4" fill-opacity=".29947917"/>
+        <text transform="translate(-563.218 955)" fill="black">
+          <tspan font-family="Helvetica" font-size="20" font-weight="400" fill="black" x="16.03833" y="19" xml:space="preserve">C</tspan>
+          <tspan font-family="Helvetica" font-size="13" font-weight="400" fill="black" y="25" xml:space="preserve">1</tspan>
+        </text>
+      </g>
+      <g id="Group_165">
+        <g id="Graphic_168">
+          <circle cx="-536.343" cy="899.75" r="21.2500339554152" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+        </g>
+        <g id="Line_167">
+          <line x1="-557.593" y1="899.25" x2="-515.093" y2="899.6707" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+        </g>
+        <g id="Line_166">
+          <path d="M -536.843 878.5 L -536.843 900.25 L -536.843 921" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+        </g>
+      </g>
+      <g id="Graphic_169">
+        <path d="M -483.092 794.699 L -323.528 794.699 C -316.9006 794.699 -311.528 800.0716 -311.528 806.699 L -311.528 833.19 C -311.528 839.8174 -316.9006 845.19 -323.528 845.19 L -483.092 845.19 C -489.7194 845.19 -495.092 839.8174 -495.092 833.19 L -495.092 806.699 C -495.092 800.0716 -489.7194 794.699 -483.092 794.699 Z" fill="#b4b4b4" fill-opacity=".29947917"/>
+        <text transform="translate(-490.092 795.9445)" fill="black">
+          <tspan font-family="Helvetica" font-size="20" font-weight="400" fill="black" x="47.31421" y="19" xml:space="preserve">Verwerfe</tspan>
+          <tspan font-family="Helvetica" font-size="20" font-weight="400" fill="black" x="53.44214" y="43" xml:space="preserve">b-s Bits</tspan>
+        </text>
+      </g>
+      <g id="Graphic_170">
+        <text transform="translate(-641.46484 856.75)" fill="black">
+          <tspan font-family="Helvetica" font-size="20" font-weight="400" fill="black" x="0" y="19" xml:space="preserve">s Bits</tspan>
+        </text>
+      </g>
+      <g id="Graphic_171">
+        <text transform="translate(-559.68286 988)" fill="black">
+          <tspan font-family="Helvetica" font-size="20" font-weight="400" fill="black" x="0" y="19" xml:space="preserve">s Bits</tspan>
+        </text>
+      </g>
+      <g id="Graphic_173">
+        <text transform="translate(-436 647.509)" fill="black">
+          <tspan font-family="Helvetica" font-size="20" font-weight="400" fill="black" x="0" y="19" xml:space="preserve">I</tspan>
+          <tspan font-family="Helvetica" font-size="13" font-weight="400" fill="black" y="25" xml:space="preserve">1</tspan>
+        </text>
+      </g>
+      <g id="Graphic_174">
+        <text transform="translate(-436 753.959)" fill="black">
+          <tspan font-family="Helvetica" font-size="20" font-weight="400" fill="black" x="0" y="19" xml:space="preserve">O</tspan>
+          <tspan font-family="Helvetica" font-size="13" font-weight="400" fill="black" y="25" xml:space="preserve">1</tspan>
+        </text>
+      </g>
+      <g id="Line_175">
+        <path d="M -586.25 899.75 L -584.641 899.75 L -571.9215 899.5 L -576.493 899.25 L -570.493 899.25" marker-end="url(#FilledArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+      <g id="Line_176">
+        <path d="M -536.843 921 L -536.843 932 L -536.593 938 L -536.4466 942.1004" marker-end="url(#FilledArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+      <g id="Line_177">
+        <path d="M -536.843 845.19 L -536.843 861.845 L -536.843 865.6" marker-end="url(#FilledArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+      <g id="Graphic_198">
+        <path d="M -97.52802 584.278 L 134.47198 584.278 C 141.0994 584.278 146.47198 589.6506 146.47198 596.278 L 146.47198 622.769 C 146.47198 629.3964 141.0994 634.769 134.47198 634.769 L -97.52802 634.769 C -104.15543 634.769 -109.52802 629.3964 -109.52802 622.769 L -109.52802 596.278 C -109.52802 589.6506 -104.15543 584.278 -97.52802 584.278 Z" fill="#b4b4b4" fill-opacity=".29947917"/>
+        <text transform="translate(-99.52802 597.5235)" fill="black">
+          <tspan font-family="Helvetica" font-size="20" font-weight="400" fill="black" x="0" y="19" xml:space="preserve">IV &lt;&lt; (b-s) Bits</tspan>
+        </text>
+      </g>
+      <g id="Graphic_197">
+        <path d="M -98.21802 794.009 L 133.78198 794.009 C 140.4094 794.009 145.78198 799.3816 145.78198 806.009 L 145.78198 832.5 C 145.78198 839.1274 140.4094 844.5 133.78198 844.5 L -98.21802 844.5 C -104.84543 844.5 -110.21802 839.1274 -110.21802 832.5 L -110.21802 806.009 C -110.21802 799.3816 -104.84543 794.009 -98.21802 794.009 Z" fill="#b4b4b4" fill-opacity=".29947917"/>
+        <text transform="translate(-102.21802 795.2545)" fill="black">
+          <tspan font-family="Helvetica" font-size="20" font-weight="400" fill="black" x="0" y="19" xml:space="preserve">Nimm</tspan>
+          <tspan font-family="Helvetica" font-size="20" font-weight="400" fill="black" x="0" y="43" xml:space="preserve">s Bits</tspan>
+        </text>
+      </g>
+      <g id="Graphic_196">
+        <path d="M -98.21802 687.109 L 133.78198 687.109 C 140.4094 687.109 145.78198 692.4816 145.78198 699.109 L 145.78198 730.359 C 145.78198 736.9864 140.4094 742.359 133.78198 742.359 L -98.21802 742.359 C -104.84543 742.359 -110.21802 736.9864 -110.21802 730.359 L -110.21802 699.109 C -110.21802 692.4816 -104.84543 687.109 -98.21802 687.109 Z" fill="#ffc0ff"/>
+        <text transform="translate(-105.21802 702.734)" fill="black">
+          <tspan font-family="Helvetica" font-size="20" font-weight="400" fill="black" x="61.2959" y="19" xml:space="preserve">Verschlüsseln</tspan>
+        </text>
+      </g>
+      <g id="Line_195">
+        <line x1="18.306415" y1="634.769" x2="18.047755" y2="674.2093" marker-end="url(#FilledArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+      <g id="Line_194">
+        <line x1="17.51425" y1="742.359" x2="17.125017" y2="782.52045" marker-end="url(#FilledArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+      <g id="Graphic_193">
+        <text transform="translate(-233 702.734)" fill="black">
+          <tspan font-family="Helvetica" font-size="20" font-weight="400" fill="black" x="1.3355103" y="19" xml:space="preserve">Schlüssel</tspan>
+        </text>
+      </g>
+      <g id="Line_192">
+        <line x1="-139.73328" y1="714.734" x2="-123.11802" y2="714.734" marker-end="url(#FilledArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+      <g id="Graphic_191">
+        <path d="M -180 885.75 L -140.25 885.75 C -133.62258 885.75 -128.25 891.1226 -128.25 897.75 L -128.25 901.75 C -128.25 908.3774 -133.62258 913.75 -140.25 913.75 L -180 913.75 C -186.62742 913.75 -192 908.3774 -192 901.75 L -192 897.75 C -192 891.1226 -186.62742 885.75 -180 885.75 Z" fill="#b4b4b4" fill-opacity=".29947917"/>
+        <text transform="translate(-187 885.75)" fill="black">
+          <tspan font-family="Helvetica" font-size="20" font-weight="400" fill="black" x="16.590088" y="19" xml:space="preserve">P</tspan>
+          <tspan font-family="Helvetica" font-size="13" font-weight="400" fill="black" y="25" xml:space="preserve">2</tspan>
+        </text>
+      </g>
+      <g id="Graphic_190">
+        <path d="M -98.21802 955 L -58.46802 955 C -51.8406 955 -46.46802 960.3726 -46.46802 967 L -46.46802 971 C -46.46802 977.6274 -51.8406 983 -58.46802 983 L -98.21802 983 C -104.84543 983 -110.21802 977.6274 -110.21802 971 L -110.21802 967 C -110.21802 960.3726 -104.84543 955 -98.21802 955 Z" fill="#b4b4b4" fill-opacity=".29947917"/>
+        <text transform="translate(-105.21802 955)" fill="black">
+          <tspan font-family="Helvetica" font-size="20" font-weight="400" fill="black" x="16.03833" y="19" xml:space="preserve">C</tspan>
+          <tspan font-family="Helvetica" font-size="13" font-weight="400" fill="black" y="25" xml:space="preserve">2</tspan>
+        </text>
+      </g>
+      <g id="Group_186">
+        <g id="Graphic_189">
+          <circle cx="-78.34302" cy="899.75" r="21.2500339554153" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+        </g>
+        <g id="Line_188">
+          <line x1="-99.59302" y1="899.25" x2="-57.09302" y2="899.6707" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+        </g>
+        <g id="Line_187">
+          <path d="M -78.84302 878.5 L -78.84302 900.25 L -78.84302 921" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+        </g>
+      </g>
+      <g id="Graphic_185">
+        <path d="M -25.091982 794.699 L 134.47198 794.699 C 141.0994 794.699 146.47198 800.0716 146.47198 806.699 L 146.47198 833.19 C 146.47198 839.8174 141.0994 845.19 134.47198 845.19 L -25.091982 845.19 C -31.7194 845.19 -37.091982 839.8174 -37.091982 833.19 L -37.091982 806.699 C -37.091982 800.0716 -31.7194 794.699 -25.091982 794.699 Z" fill="#b4b4b4" fill-opacity=".29947917"/>
+        <text transform="translate(-32.091982 795.9445)" fill="black">
+          <tspan font-family="Helvetica" font-size="20" font-weight="400" fill="black" x="47.31421" y="19" xml:space="preserve">Verwerfe</tspan>
+          <tspan font-family="Helvetica" font-size="20" font-weight="400" fill="black" x="53.44214" y="43" xml:space="preserve">b-s Bits</tspan>
+        </text>
+      </g>
+      <g id="Graphic_184">
+        <text transform="translate(-183.46484 856.75)" fill="black">
+          <tspan font-family="Helvetica" font-size="20" font-weight="400" fill="black" x="0" y="19" xml:space="preserve">s Bits</tspan>
+        </text>
+      </g>
+      <g id="Graphic_183">
+        <text transform="translate(-101.68286 988)" fill="black">
+          <tspan font-family="Helvetica" font-size="20" font-weight="400" fill="black" x="0" y="19" xml:space="preserve">s Bits</tspan>
+        </text>
+      </g>
+      <g id="Graphic_182">
+        <text transform="translate(22 647.509)" fill="black">
+          <tspan font-family="Helvetica" font-size="20" font-weight="400" fill="black" x="0" y="19" xml:space="preserve">I</tspan>
+          <tspan font-family="Helvetica" font-size="13" font-weight="400" fill="black" y="25" xml:space="preserve">2</tspan>
+        </text>
+      </g>
+      <g id="Graphic_181">
+        <text transform="translate(22 753.959)" fill="black">
+          <tspan font-family="Helvetica" font-size="20" font-weight="400" fill="black" x="0" y="19" xml:space="preserve">O</tspan>
+          <tspan font-family="Helvetica" font-size="13" font-weight="400" fill="black" y="25" xml:space="preserve">2</tspan>
+        </text>
+      </g>
+      <g id="Line_180">
+        <path d="M -128.25 899.75 L -126.64099 899.75 L -113.92151 899.5 L -118.49302 899.25 L -112.49302 899.25" marker-end="url(#FilledArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+      <g id="Line_179">
+        <path d="M -78.84302 921 L -78.84302 932 L -78.59302 938 L -78.44657 942.1004" marker-end="url(#FilledArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+      <g id="Line_178">
+        <path d="M -78.84302 845.19 L -78.84302 861.845 L -78.84302 865.6" marker-end="url(#FilledArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+      <g id="Graphic_199">
+        <path d="M 94.72198 584.278 L 134.47198 584.278 C 141.0994 584.278 146.47198 589.6506 146.47198 596.278 L 146.47198 622.769 C 146.47198 629.3964 141.0994 634.769 134.47198 634.769 L 94.72198 634.769 C 88.09457 634.769 82.72198 629.3964 82.72198 622.769 L 82.72198 596.278 C 82.72198 589.6506 88.09457 584.278 94.72198 584.278 Z" fill="#b4b4b4" fill-opacity=".29947917"/>
+        <text transform="translate(87.72198 595.5235)" fill="black">
+          <tspan font-family="Helvetica" font-size="20" font-weight="400" fill="black" x="16.03833" y="19" xml:space="preserve">C</tspan>
+          <tspan font-family="Helvetica" font-size="13" font-weight="400" fill="black" y="25" xml:space="preserve">1</tspan>
+        </text>
+      </g>
+      <g id="Line_200">
+        <path d="M -504.468 969 L -493.468 969 L -245.80153 968.7023 L -245.80153 542.7481 L 114.59698 542.7481 L 114.59698 571.378" marker-end="url(#FilledArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+      <g id="Line_202">
+        <path d="M -46.46802 969 L 215.55556 969 L 215.55556 898.0946 L 216.32812 898.0946" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="3.0,12.0" stroke-width="3"/>
+      </g>
+      <g id="Graphic_203">
+        <rect x="168" y="878.5" width="58.896484" height="98" fill="url(#Obj_Gradient)"/>
+      </g>
+    </g>
+  </g>
+</svg>
