@@ -2989,37 +2989,76 @@ CSS-Layers
 
 :css:`@layer` ermöglicht das Festlegen einer expliziten Kaskaden-Reihenfolge:
 
-.. example::
-    
-    .. code:: css
-        :class: copy-to-clipboard
-        :number-lines:
-
-        @layer basis {
-            p {
-                color: green;
-            }
-        }
-
-        @layer overrides {
-            p {
-                color: red;
-            }
-        }
-
 .. class:: incremental-list
 
-- Eine später deklarierte Schicht überschreibt frühere Schichten.
-- Ermöglicht eine bessere Strukturierung größerer Projekte und vermeidet Konflikte.
+- Eine später deklarierte Schicht überschreibt frühere Schichten unabhängig von der Spezifität der Selektoren.
+
+.. grid:: incremental
+
+    .. cell:: width-40
+
+        *HTML*
+
+        .. code:: html
+            :class: copy-to-clipboard
+            :number-lines:
+
+            <p id="the-one">
+                Dies ist ein Absatz.
+            </p>
+
+    .. cell:: width-60
+
+        *Spielwiese*
+
+        .. container::
+
+            .. raw:: html
+                
+                <template shadowrootmode="open">
+                <style>
+                    style[contenteditable] { 
+                        font-family:var(--code-font-family); 
+                        font-size: smaller;
+                        display:block; 
+                        white-space: pre;
+                        overflow: scroll;
+                        position: relative;
+                        border: thin solid black;
+                        padding: 0.25em;
+                        height: 8lh;
+
+                        &::before {
+                            content: "🖊️";
+                            position: absolute;
+                            top: 0.1em;
+                            right: 0.1em;
+                        }
+                    }
+                </style>
+                <style contenteditable onkeydown="event.stopPropagation()">/* @layer overrides; */
+                @layer basis {
+                    p#the-one{color:green;}
+                }            
+                @layer overrides {
+                    p{color:red;}
+                }
+                /* @layer basis{p#the-one{color:blue;}} */
+                </style>
+                <p id="the-one">Dies ist ein Absatz.</p>
+                </template>
 
 
 
 Verschachtelte CSS-Layers
 ------------------------------------------------
 
-:css:`@layer` kann auch verschachtelt werden, um etwa globale Basisklassen und darauf aufbauende Komponenten sauber zu organisieren:
+.. class:: incremental-list
 
-.. example::
+- :css:`@layer` könne beliebig tieft verschachtelt werden:
+- Deklarationen einer höheren Schicht (hier ``base``) überschreiben Deklarationen einer tieferen Schicht (hier: ``base.components``).
+
+  .. example::
 
     .. code:: css
         :class: copy-to-clipboard
@@ -3031,15 +3070,102 @@ Verschachtelte CSS-Layers
             }
 
             @layer components {
+
+                h1 {
+                    color: red;
+                }
+
                 .highlight {
                     background-color: yellow;
                 }
             }
         }
 
-.. class:: incremental-list
-  - Die innere Schicht (components) erbt den vorherigen Kontext.
-  - Verschachtelte Schichten sind übersichtlich und ermöglichen eine klare Struktur.
+
+
+
+
+
+.. class:: new-section transition-fade
+
+Web Komponenten (Shadow DOM und CSS)\ [#]_
+------------------------------------------------
+
+.. [#] JavaScript spezifische Funktionalitäten von Web Komponenten werden hier nicht behandelt.
+
+
+
+Shadow DOM und Light DOM
+------------------------------------------------
+
+- Web Komponenten ermöglichen die Kapselung von HTML, CSS (und JavaScript) in einem eigenen Kontext, dem Shadow DOM. 
+- Der Shadow DOM ermöglicht eine klare Trennung von Stilen und Verhalten der Komponente von dem umgebenden Dokument, dem Light DOM.
+
+
+Ausgewählte vererbte CSS Eigenschaften
+------------------------------------------------
+
+.. story::
+
+    Die folgenden Eigenschaften werden vererbt, und gelten auch im Shadow DOM von Web Komponenten; solange diese nicht überschrieben werden.
+
+    .. class:: incremental-table-rows booktabs 
+
+    +------------------------------+----------------------------------------------------------------------------------------------------------+
+    | Kategorie                    | Vererbte CSS Eigenschaften                                                                               |
+    +==============================+==========================================================================================================+
+    | Text und Font                | - `color <https://developer.mozilla.org/en-US/docs/Web/CSS/color>`__                                     |
+    |                              |                                                                                                          |               
+    |                              | - `font <https://developer.mozilla.org/en-US/docs/Web/CSS/font>`__,                                      |
+    |                              |   `font-family <https://developer.mozilla.org/en-US/docs/Web/CSS/font-family>`__,                        |
+    |                              |   `font-kerning <https://developer.mozilla.org/en-US/docs/Web/CSS/font-kerning>`__,                      |
+    |                              |   `font-optical-sizing <https://developer.mozilla.org/en-US/docs/Web/CSS/font-optical-sizing>`__,        |
+    |                              |   `font-size <https://developer.mozilla.org/en-US/docs/Web/CSS/font-size>`__,                            |
+    |                              |   `font-size-adjust <https://developer.mozilla.org/en-US/docs/Web/CSS/font-size-adjust>`__,              |
+    |                              |   `font-stretch <https://developer.mozilla.org/en-US/docs/Web/CSS/font-stretch>`__,                      |
+    |                              |   `font-style <https://developer.mozilla.org/en-US/docs/Web/CSS/font-style>`__,                          |
+    |                              |   `font-variant <https://developer.mozilla.org/en-US/docs/Web/CSS/font-variant>`__,                      |
+    |                              |   `font-variant-caps <https://developer.mozilla.org/en-US/docs/Web/CSS/font-variant-caps>`__,            |
+    |                              |   `font-variant-ligatures <https://developer.mozilla.org/en-US/docs/Web/CSS/font-variant-ligatures>`__,  |
+    |                              |   `font-variant-numeric <https://developer.mozilla.org/en-US/docs/Web/CSS/font-variant-numeric>`__,      |
+    |                              |   `font-variant-position <https://developer.mozilla.org/en-US/docs/Web/CSS/font-variant-position>`__,    |
+    |                              |   `font-variation-settings <https://developer.mozilla.org/en-US/docs/Web/CSS/font-variation-settings>`__,|
+    |                              |   `font-weight <https://developer.mozilla.org/en-US/docs/Web/CSS/font-weight>`__                         |
+    |                              |                                                                                                          |
+    |                              | - `letter-spacing <https://developer.mozilla.org/en-US/docs/Web/CSS/letter-spacing>`__,                  |
+    |                              |   `line-height <https://developer.mozilla.org/en-US/docs/Web/CSS/line-height>`__                         |
+    |                              |                                                                                                          |
+    |                              | - `text-align <https://developer.mozilla.org/en-US/docs/Web/CSS/text-align>`__,                          |
+    |                              |   `text-align-last <https://developer.mozilla.org/en-US/docs/Web/CSS/text-align-last>`__,                |
+    |                              |   `text-indent <https://developer.mozilla.org/en-US/docs/Web/CSS/text-indent>`__,                        |
+    |                              |   `text-justify <https://developer.mozilla.org/en-US/docs/Web/CSS/text-justify>`__,                      |
+    |                              |   `text-transform <https://developer.mozilla.org/en-US/docs/Web/CSS/text-transform>`__                   |
+    |                              |                                                                                                          |         
+    |                              | - `visibility <https://developer.mozilla.org/en-US/docs/Web/CSS/visibility>`__                           |
+    |                              |                                                                                                          |         
+    |                              | - `white-space <https://developer.mozilla.org/en-US/docs/Web/CSS/white-space>`__,                        |
+    |                              |   `word-break <https://developer.mozilla.org/en-US/docs/Web/CSS/word-break>`__,                          |
+    |                              |   `word-spacing <https://developer.mozilla.org/en-US/docs/Web/CSS/word-spacing>`__                       |
+    +------------------------------+----------------------------------------------------------------------------------------------------------+
+    | Listen und Zähler            | - `list-style <https://developer.mozilla.org/en-US/docs/Web/CSS/list-style>`__,                          |
+    |                              |   `list-style-image <https://developer.mozilla.org/en-US/docs/Web/CSS/list-style-image>`__,              |
+    |                              |   `list-style-position <https://developer.mozilla.org/en-US/docs/Web/CSS/list-style-position>`__,        |
+    |                              |   `list-style-type <https://developer.mozilla.org/en-US/docs/Web/CSS/list-style-type>`__                 |
+    +------------------------------+----------------------------------------------------------------------------------------------------------+
+    | Table Layout                 | - `border-collapse <https://developer.mozilla.org/en-US/docs/Web/CSS/border-collapse>`__,                |
+    |                              |   `border-spacing <https://developer.mozilla.org/en-US/docs/Web/CSS/border-spacing>`__,                  |
+    |                              |   `caption-side <https://developer.mozilla.org/en-US/docs/Web/CSS/caption-side>`__,                      |
+    |                              |   `empty-cells <https://developer.mozilla.org/en-US/docs/Web/CSS/empty-cells>`__                         |
+    +------------------------------+----------------------------------------------------------------------------------------------------------+
+    | Other                        | - `tab-size <https://developer.mozilla.org/en-US/docs/Web/CSS/tab-size>`__                               |
+    |                              | - `quotes <https://developer.mozilla.org/en-US/docs/Web/CSS/quotes>`__                                   |    
+    +------------------------------+----------------------------------------------------------------------------------------------------------+
+
+
+
+
+
+
 
 
 
@@ -3059,7 +3185,7 @@ Nicht Behandelte Themen
 - CSS Tricks
 - Dokumente mit alternativen Flussrichtungen (rechts nach links / oben nach unten)
 - CSS bzgl. Printing
-
+- ...
 
 .. supplemental::
 
