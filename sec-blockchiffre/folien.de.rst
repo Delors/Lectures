@@ -17,7 +17,7 @@ Block Chiffre und der *Data Encryption Standard (DES)*
 
 :Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
 :Kontakt: michael.eichberg@dhbw.de
-:Version: 1.1
+:Version: 1.1.1
 :Basierend auf: *Cryptography and Network Security - Principles and Practice, 8th Edition, William Stallings*
 
 .. supplemental::
@@ -233,7 +233,7 @@ Feistel-Chiffre - Hintergrund
 Diffusion
 ---------------------------
 
-- Die statistische Struktur des Klartextes wird in weitreichende Statistiken des Chiffretextes überführt, d. h. die statistische Beziehung zwischen Klartext und Chiffretext wird so komplex wie möglich.
+- Die statistische Struktur des Klartextes wird in weitreichende Statistiken des Chiffretextes überführt, d. h. die **statistische Beziehung zwischen Klartext und Chiffretext wird so komplex wie möglich**.
 
 .. class:: incremental list-with-explanations
 
@@ -247,7 +247,7 @@ Diffusion
 Konfusion
 ---------------------------
 
-- Versucht, die Beziehung zwischen den Statistiken des Chiffriertextes und dem Wert des Chiffrierschlüssels so komplex wie möglich zu gestalten, d. h. eine einzige Änderung des Chiffrierschlüssels sollte viele Bits des Chiffriertextes beeinflussen.
+- Versucht, **die Beziehung zwischen den Statistiken des Chiffriertextes und dem Wert des Chiffrierschlüssels so komplex wie möglich zu gestalten**, d. h. eine einzige Änderung des Chiffrierschlüssels sollte viele Bits des Chiffriertextes beeinflussen.
 
 .. class:: incremental
 
@@ -272,8 +272,6 @@ Feistel-Chiffre - Verschlüsselung und Entschlüsselung
         .. legend::
             :class: width-100
 
-            **Legende**
-
             :math:`K_x` - Schlüssel der :math:`x`-ten Runde
 
             :math:`L_{x-1}` - linke Hälfte des Eingabeblocks der :math:`x`-ten Runde
@@ -291,9 +289,11 @@ Feistel-Chiffre - Verschlüsselung und Entschlüsselung
 
 .. supplemental::
 
-    .. rubric:: Swap
+    .. rubric:: Notwendigkeit der *Swap* Operation
 
-    Die Verwendung des Swaps am Ende ist notwendig, damit die Verschlüsselung und Entschlüsselung identisch sind; d. h. der selbe Algorithmus kann verwendet werden.
+    Die Verwendung des *Swap*\ s am Ende ist notwendig, damit die Verschlüsselung und Entschlüsselung identisch sind; d. h. der selbe Algorithmus verwendet werden kann.
+
+    Zum besseren Verständnis gehen wir im Folgenden davon aus, dass wir nur eine Runde hätten:
 
     .. image:: drawings/feistel/one_round_and_swap.svg
         :align: center
@@ -335,7 +335,7 @@ Feistel Chiffre - Eigenschaften
         Größere Komplexität bedeutet in der Regel größere Resistenz gegen Kryptoanalyse.
 
     :**Schnelle Ver-/Entschlüsselung in Software**:
-        Häufig ist die Verschlüsselung so in Anwendungen oder Dienstprogramme eingebettet, dass eine Hardwareimplementierung nicht möglich ist; dementsprechend ist die Geschwindigkeit des Algorithmus relevant.
+        Wenn die Verschlüsselung so in Anwendungen oder Dienstprogramme eingebettet ist, dass eine Hardwareimplementierung nicht möglich ist, dann ist die Geschwindigkeit des Algorithmus relevant.
 
     :**Einfachheit der Analyse**:
         Wenn der Algorithmus kurz und klar erklärt werden kann, ist es einfacher den Algorithmus auf kryptoanalytische Schwachstellen hin zu analysieren und somit ein höheres Maß an Sicherheit in Bezug auf seine Stärke zu entwickeln.
@@ -388,7 +388,7 @@ DES: Design
 
     .. class:: dd-margin-left-4em
 
-    :Permuted Choice 1: Permutation und Selektion (d. h. Entfernung der Paritätsbits) der 56 (Schlüssel-)bits
+    :Permuted Choice\ [#]_ 1: Permutation und Selektion (d. h. Entfernung der Paritätsbits) der 56 (Schlüssel-)bits
 
               .. csv-table::
                 :class: monospaced highlight-cell-on-hover table-data-align-right
@@ -429,7 +429,7 @@ DES: Design
     :Permuted Choice 2: Auswahl der 48 zur Verschlüsselung zu verwendenden Bits aus den 56 Eingabebits
 
               .. csv-table::
-                :class: monospaced highlight-cell-on-hover table-data-align-right
+                :class: monospaced highlight-cell-on-hover  table-data-align-right
 
                 14,  17, 11,  24,   1,  5
                 3,  28, 15,   6,  21, 10
@@ -440,14 +440,14 @@ DES: Design
                 44,  49, 39,  56,  34, 53
                 46,  42, 50,  36,  29, 32
 
+    .. [#] Permuted Choice ≘ :ger:`permutierte Auswahl`
+
 
 DES: Rundenfunktion („F“)
 --------------------------------------
 
 .. legend::
     :class: width-40 float-right
-
-    **Legende**
 
     R - rechte Hälfte der Nachricht
 
@@ -465,7 +465,7 @@ DES: Rundenfunktion („F“)
     **Expansionsfunktion 32 → 48 Bit**
 
     .. csv-table::
-        :class: monospaced highlight-cell-on-hover text-align-right
+        :class: monospaced highlight-cell-on-hover highlight-identical-cells-on-hover text-align-right
 
         32, 1, 2, 3, 4, 5
         4, 5, 6, 7, 8, 9
@@ -475,6 +475,11 @@ DES: Rundenfunktion („F“)
         20, 21, 22, 23, 24, 25
         24, 25, 26, 27, 28, 29
         28, 29, 30, 31, 32, 1
+
+    **Substitution Boxes**
+
+    Die acht Boxen sind auf https://en.wikipedia.org/wiki/DES_supplementary_material zu finden. Dabei ist zu beachten, dass die 6 Eingabebits jeweils auf vier Ausgabebits abgebildet werden.
+
 
 
 .. class:: vertical-title
@@ -567,7 +572,7 @@ Kleine Änderung im Klartext (erster Wert +1)
 Lawineneffekt in DES
 -----------------------------------
 
-Kleine Änderung des Schlüssels: 0f1571c947d9e859 ➟ 1f1571c947d9e859
+Kleine Änderung des Schlüssels: :monospaced:`0f1571c947d9e859` ➟ :monospaced:`1f1571c947d9e859`
 
 .. csv-table::
     :class: font-size-80 monospaced highlight-row-on-hover
@@ -604,18 +609,26 @@ Kleine Änderung des Schlüssels: 0f1571c947d9e859 ➟ 1f1571c947d9e859
 
 
 
-Durchschnittliche Zeit für erschöpfende Schlüsselsuche
+Erschöpfende Schlüsselsuche
 ---------------------------------------------------------
 
-.. csv-table::
-    :class: highlight-row-on-hover font-size-90
-    :align: center
-    :widths: 12 12 18 20 20
+.. compound::
 
+    **Durchschnittliche Zeiten**
+
+    .. presenter-note::
+
+        :math:`10^9` = eine Milliarde; :math:`10^{13}` = 10 Billionen; :math:`10^{60}` = 1 Dezillion
+
+.. csv-table::
+    :class: highlight-row-on-hover font-size-80 incremental-table-rows
+    :align: center
+    :widths: 10 10 10 20 20
+    :header-rows: 1
+    :width: 100%
 
     "Schlüsselgröße (bits)", Chiffre, "Anzahl der alternativen
     Schlüssel", "Zeit benötigt bei :math:`10^9` Entschlüsselungen/s", "Zeit benötigt bei :math:`10^{13}` Entschlüsselungen/s"
-
     56, DES, ":math:`2^{56}` ≈ :math:`7.2 \times 10^{16}`", :math:`1.125` Jahre, 1 Stunde
     128, AES, ":math:`2^{128}` ≈ :math:`3.4 \times 10^{38}`", ":math:`5.3 \times 10^{21}` Jahre", ":math:`5.3 \times 10^{17}` Jahre"
     168, Triple DES, ":math:`2^{168}` ≈ :math:`3.7 \times 10^{50}`", ":math:`5.8 \times 10^{33}` Jahre", :math:`5.8 × 10^{29}` Jahre
@@ -710,7 +723,13 @@ Doppelte Verschlüsselung
 
         .. observation::
 
-            :math:`E(K_2,E(K_1,P)) = E(K_3,P)` ist nicht gültig. D. h. die zweifache Anwendung von DES führt zu einer Abbildung, die nicht äquivalent zu einer einfachen DES-Verschlüsselung ist.
+            :math:`E(K_2,E(K_1,P)) = E(K_3,P)` ist nicht gültig.
+
+            D. h. die zweifache Anwendung von DES führt zu einer Abbildung, die nicht äquivalent zu einer einfachen DES-Verschlüsselung ist.
+
+            .. supplemental::
+
+                Es gilt, dass es keinen Schlüssel :math:`DES_{K^{1-2}} = DES_{K^1} \circ DES_{K^2}` gibt. Weiterhin gilt, dass die Teilmenge der durch DES erzeugbaren Permutationen extrem klein ist und nicht abgeschlossen unter Komposition.
 
     .. card::
 
@@ -736,7 +755,7 @@ Doppelte Verschlüsselung
 
             Die zweifache Anwendung einer Blockchiffre ist nicht sinnvoll!
 
-            Das Ergebnis ist, dass ein bekannter Klartextangriff gegen Doppel-DES mit einem Aufwand in der Größenordnung von :math:`2^{56}` im Durchschnitt erfolgreich ist, verglichen mit durchschnittlich :math:`2^{55}` für einen einfachen DES.
+            Das Ergebnis ist, dass ein bekannter Klartextangriff gegen Doppel-DES mit einem Aufwand in der Größenordnung von :math:`2^{56}` *im Durchschnitt* erfolgreich ist, verglichen mit *durchschnittlich* :math:`2^{55}` für einen einfachen DES.
 
 
 
@@ -815,7 +834,7 @@ Triple-DES mit drei Schlüsseln
   2. Was passiert, wenn f nur 0x01-Werte zurückgibt (unabhängig vom Rundenschlüssel)?
   3. Was passiert, wenn f einfach ein *xor* der entsprechende Hälfte mit dem Ergebnis der Verschiebung des Schlüssels durchführt?
   4. Was passiert, wenn man eine Nachricht ändert? Testen Sie insbesondere, was passiert wenn die Nachricht nur aus 0x00 besteht (und Sie eine „vernünftigere“ f-Funktion verwenden.)
-  5. Was passiert, wenn man den Schlüssel änderst? Was passiert in extremen Fällen (z. B. wenn das Passwort nur aus "0" besteht?
+  5. Was passiert, wenn man den Schlüssel änderst? Was passiert in extremen Fällen (z. B. wenn das Passwort nur aus "0" besteht)?
 
   .. solution::
     :pwd: OhFeistel
