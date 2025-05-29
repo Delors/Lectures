@@ -58,9 +58,9 @@
 
 
 .. The following definitions enable "lightweight" definitions of mathematical
-   expressions that resemble MathJax definitions without causing the overhead 
+   expressions that resemble MathJax 3.2.2 definitions without causing the overhead 
    incurred by MathJax. 
-   Both (are intended to) change the font to the font used by MathJax. 
+   Both (are intended to) change the font to the font used by MathJax 3.2.2. 
    "math-r" uses the normal style which is used by MathJax for numbers.
    "math-i" uses (the italic) font which is used by MathJax for other characters.
 
