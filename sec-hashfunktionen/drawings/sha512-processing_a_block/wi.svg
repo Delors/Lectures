@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+    "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg
+    xmlns="http://www.w3.org/2000/svg"
+    version="1.1"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:xl="http://www.w3.org/1999/xlink"
+    viewBox="-198 62 871 495"
+    width="600"
+    height="341"
+>
+<style>
+  @import url('/LectureDoc2/ext/fonts/ld-fonts.css');
+</style>
+<defs>
+    <marker
+            orient="auto"
+            overflow="visible"
+            markerUnits="strokeWidth"
+            id="FilledArrow_Marker"
+            stroke-linejoin="miter"
+            stroke-miterlimit="10"
+            viewBox="-1 -3 7 6"
+            markerWidth="7"
+            markerHeight="6"
+            color="#666"
+        >
+      <g>
+        <path
+                    d="M 4.8 0 L 0 -1.8 L 0 1.8 Z"
+                    fill="currentColor"
+                    stroke="currentColor"
+                    stroke-width="1"
+                />
+      </g>
+    </marker>
+  </defs>
+  <metadata> Produced by OmniGraffle 8.0\n2024-10-11 08:59:18 +0000</metadata>
+  <g
+        id="overview"
+        fill="none"
+        fill-opacity="1"
+        stroke-opacity="1"
+        stroke="none"
+        stroke-dasharray="none"
+    >
+    <title>overview</title>
+    <g id="overview_wi">
+      <title>wi</title>
+      <g id="Graphic_355">
+        <path
+                    d="M -102.44173 181.01488 L -40.441733 181.01488 C -38.232594 181.01488 -36.441733 182.80574 -36.441733 185.01488 L -36.441733 201.01488 C -36.441733 203.22402 -38.232594 205.01488 -40.441733 205.01488 L -102.44173 205.01488 C -104.65087 205.01488 -106.44173 203.22402 -106.44173 201.01488 L -106.44173 185.01488 C -106.44173 182.80574 -104.65087 181.01488 -102.44173 181.01488 Z"
+                    fill="#fff9e7"
+                />
+        <path
+                    d="M -102.44173 181.01488 L -40.441733 181.01488 C -38.232594 181.01488 -36.441733 182.80574 -36.441733 185.01488 L -36.441733 201.01488 C -36.441733 203.22402 -38.232594 205.01488 -40.441733 205.01488 L -102.44173 205.01488 C -104.65087 205.01488 -106.44173 203.22402 -106.44173 201.01488 L -106.44173 185.01488 C -106.44173 182.80574 -104.65087 181.01488 -102.44173 181.01488 Z"
+                    stroke="#a5a5a5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
+        <text transform="translate(-101.44173 181.51488)" fill="black">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="16"
+                        font-weight="400"
+                        fill="black"
+                        x="19.39038"
+                        y="15"
+                        xml:space="preserve"
+                    >W</tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="11"
+                        font-weight="400"
+                        fill="black"
+                        y="20"
+                        xml:space="preserve"
+                    >0</tspan>
+        </text>
+      </g>
+      <g id="Graphic_354">
+        <path
+                    d="M -102.44173 253.3903 L -40.441733 253.3903 C -38.232594 253.3903 -36.441733 255.18116 -36.441733 257.3903 L -36.441733 273.3903 C -36.441733 275.59943 -38.232594 277.3903 -40.441733 277.3903 L -102.44173 277.3903 C -104.65087 277.3903 -106.44173 275.59943 -106.44173 273.3903 L -106.44173 257.3903 C -106.44173 255.18116 -104.65087 253.3903 -102.44173 253.3903 Z"
+                    fill="#fff9e7"
+                />
+        <path
+                    d="M -102.44173 253.3903 L -40.441733 253.3903 C -38.232594 253.3903 -36.441733 255.18116 -36.441733 257.3903 L -36.441733 273.3903 C -36.441733 275.59943 -38.232594 277.3903 -40.441733 277.3903 L -102.44173 277.3903 C -104.65087 277.3903 -106.44173 275.59943 -106.44173 273.3903 L -106.44173 257.3903 C -106.44173 255.18116 -104.65087 253.3903 -102.44173 253.3903 Z"
+                    stroke="#a5a5a5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
+        <text transform="translate(-101.44173 253.8903)" fill="black">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="16"
+                        font-weight="400"
+                        fill="black"
+                        x="19.39038"
+                        y="15"
+                        xml:space="preserve"
+                    >W</tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="11"
+                        font-weight="400"
+                        fill="black"
+                        y="20"
+                        xml:space="preserve"
+                    >1</tspan>
+        </text>
+      </g>
+      <g id="Graphic_353">
+        <path
+                    d="M -102.44173 386.52026 L -40.441733 386.52026 C -38.232594 386.52026 -36.441733 388.3111 -36.441733 390.52026 L -36.441733 406.52026 C -36.441733 408.7294 -38.232594 410.52026 -40.441733 410.52026 L -102.44173 410.52026 C -104.65087 410.52026 -106.44173 408.7294 -106.44173 406.52026 L -106.44173 390.52026 C -106.44173 388.3111 -104.65087 386.52026 -102.44173 386.52026 Z"
+                    fill="#fff9e7"
+                />
+        <path
+                    d="M -102.44173 386.52026 L -40.441733 386.52026 C -38.232594 386.52026 -36.441733 388.3111 -36.441733 390.52026 L -36.441733 406.52026 C -36.441733 408.7294 -38.232594 410.52026 -40.441733 410.52026 L -102.44173 410.52026 C -104.65087 410.52026 -106.44173 408.7294 -106.44173 406.52026 L -106.44173 390.52026 C -106.44173 388.3111 -104.65087 386.52026 -102.44173 386.52026 Z"
+                    stroke="#a5a5a5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
+        <text transform="translate(-101.44173 387.02026)" fill="black">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="16"
+                        font-weight="400"
+                        fill="black"
+                        x="16.331543"
+                        y="15"
+                        xml:space="preserve"
+                    >W</tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="11"
+                        font-weight="400"
+                        fill="black"
+                        y="20"
+                        xml:space="preserve"
+                    >79</tspan>
+        </text>
+      </g>
+      <g id="Line_349">
+        <line
+                    x1="-36.441733"
+                    y1="193.01488"
+                    x2="-10.31807"
+                    y2="193.01488"
+                    marker-end="url(#FilledArrow_Marker)"
+                    stroke="#666"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                />
+      </g>
+      <g id="Line_348">
+        <line
+                    x1="-36.441733"
+                    y1="265.3903"
+                    x2="-10.4"
+                    y2="265.3903"
+                    marker-end="url(#FilledArrow_Marker)"
+                    stroke="#666"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                />
+      </g>
+      <g id="Line_347">
+        <path
+                    d="M -36.441733 398.52026 L -25.441733 398.52026 L -17.4917 398.5592 L -17.441666 398.5982 L -11.441666 398.5982"
+                    marker-end="url(#FilledArrow_Marker)"
+                    stroke="#666"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                />
+      </g>
+      <g id="Line_372">
+        <path
+                    d="M -138.56838 150.63384 L -138.56838 398.5982 L -119.34173 398.5982"
+                    marker-end="url(#FilledArrow_Marker)"
+                    stroke="#666"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                />
+      </g>
+      <g id="Line_382">
+        <path
+                    d="M -138.56838 152.69151 L -138.56838 265.3903 L -119.34173 265.3903"
+                    marker-end="url(#FilledArrow_Marker)"
+                    stroke="#666"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                />
+      </g>
+      <g id="Line_385">
+        <path
+                    d="M -138.56838 150.63384 L -138.56838 193.01488 L -119.34173 193.01488"
+                    marker-end="url(#FilledArrow_Marker)"
+                    stroke="#666"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                />
+      </g>
+    </g>
+  </g>
+</svg>

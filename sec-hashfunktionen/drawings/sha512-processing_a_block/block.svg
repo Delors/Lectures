@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+    "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg
+    xmlns="http://www.w3.org/2000/svg"
+    version="1.1"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:xl="http://www.w3.org/1999/xlink"
+    viewBox="-198 62 871 495"
+    width="600"
+    height="341"
+>
+<style>
+  @import url('/LectureDoc2/ext/fonts/ld-fonts.css');
+</style>
+  <defs>
+    <marker
+            orient="auto"
+            overflow="visible"
+            markerUnits="strokeWidth"
+            id="DimensionArrow_Marker"
+            stroke-linejoin="miter"
+            stroke-miterlimit="10"
+            viewBox="-1 -6 10 12"
+            markerWidth="10"
+            markerHeight="12"
+            color="black"
+        >
+      <g>
+        <path
+                    d="M 0 0 L 8 0 M 8 5 L 8 -5 M 0 2 L 7 0 L 0 -2"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1"
+                />
+      </g>
+    </marker>
+    <marker
+            orient="auto"
+            overflow="visible"
+            markerUnits="strokeWidth"
+            id="DimensionArrow_Marker_2"
+            stroke-linejoin="miter"
+            stroke-miterlimit="10"
+            viewBox="-9 -6 10 12"
+            markerWidth="10"
+            markerHeight="12"
+            color="black"
+        >
+      <g>
+        <path
+                    d="M 0 0 L -8 0 M -8 -5 L -8 5 M 0 -2 L -7 0 L 0 2"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1"
+                />
+      </g>
+    </marker>
+  </defs>
+  <metadata> Produced by OmniGraffle 8.0\n2024-10-11 08:59:36 +0000</metadata>
+  <g
+        id="overview"
+        fill="none"
+        fill-opacity="1"
+        stroke-opacity="1"
+        stroke="none"
+        stroke-dasharray="none"
+    >
+    <title>overview</title>
+    <g id="overview_block">
+      <title>block</title>
+      <g id="Graphic_379">
+        <path
+                    d="M -192.08 92.26033 L -86.33 92.26033 C -84.12086 92.26033 -82.33 94.05119 -82.33 96.26033 L -82.33 140.26033 C -82.33 142.46947 -84.12086 144.26033 -86.33 144.26033 L -192.08 144.26033 C -194.28914 144.26033 -196.08 142.46947 -196.08 140.26033 L -196.08 96.26033 C -196.08 94.05119 -194.28914 92.26033 -192.08 92.26033 Z"
+                    fill="#fef4c3"
+                />
+        <path
+                    d="M -192.08 92.26033 L -86.33 92.26033 C -84.12086 92.26033 -82.33 94.05119 -82.33 96.26033 L -82.33 140.26033 C -82.33 142.46947 -84.12086 144.26033 -86.33 144.26033 L -192.08 144.26033 C -194.28914 144.26033 -196.08 142.46947 -196.08 140.26033 L -196.08 96.26033 C -196.08 94.05119 -194.28914 92.26033 -192.08 92.26033 Z"
+                    stroke="#a5a5a5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
+      </g>
+      <g id="Graphic_366">
+        <text transform="translate(-167.92706 68.47458)" fill="black">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="12"
+                        font-weight="400"
+                        fill="black"
+                        x="0"
+                        y="11"
+                        xml:space="preserve"
+                    >1024 Bits</tspan>
+        </text>
+      </g>
+      <g id="Graphic_378">
+        <path
+                    d="M -146.00143 92.26033 L -141.70895 111.05241 L -145.52449 127.52766 L -144.09366 144.26033 L -132.88551 144.26033 L -135.5087 126.75538 L -132.40857 110.28013 L -137.41647 92.26033 Z"
+                    fill="white"
+                />
+        <path
+                    d="M -146.00143 92.26033 L -141.70895 111.05241 L -145.52449 127.52766 L -144.09366 144.26033 L -132.88551 144.26033 L -135.5087 126.75538 L -132.40857 110.28013 L -137.41647 92.26033 Z"
+                    stroke="#a5a5a5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
+      </g>
+      <g id="Graphic_369">
+        <text transform="translate(-147.09099 108.76033)" fill="black">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="16"
+                        font-weight="400"
+                        fill="black"
+                        x="0"
+                        y="15"
+                        xml:space="preserve"
+                    >M</tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="11"
+                        font-weight="400"
+                        fill="black"
+                        y="20"
+                        xml:space="preserve"
+                    >i</tspan>
+        </text>
+      </g>
+      <g id="Graphic_374">
+        <rect x="-143.56838" y="142.97417" width="10" height="7.659673" fill="white" />
+      </g>
+      <g id="Graphic_373">
+        <rect x="-145.3457" y="85.25639" width="7.7" height="7.659673" fill="white" />
+      </g>
+      <g id="Line_380">
+        <line
+                    x1="-187.46"
+                    y1="87.09458"
+                    x2="-89.71"
+                    y2="87.09458"
+                    marker-end="url(#DimensionArrow_Marker)"
+                    marker-start="url(#DimensionArrow_Marker_2)"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
+      </g>
+    </g>
+  </g>
+</svg>

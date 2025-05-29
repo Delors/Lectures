@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+    "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg
+    xmlns="http://www.w3.org/2000/svg"
+    version="1.1"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:xl="http://www.w3.org/1999/xlink"
+    viewBox="-76 61 713 466"
+    width="570"
+    height="372"
+>
+<style>
+  @import url('/LectureDoc2/ext/fonts/ld-fonts.css');
+</style>
+<defs>
+    <marker
+            orient="auto"
+            overflow="visible"
+            markerUnits="strokeWidth"
+            id="DimensionArrow_Marker"
+            stroke-linejoin="miter"
+            stroke-miterlimit="10"
+            viewBox="-1 -6 10 12"
+            markerWidth="10"
+            markerHeight="12"
+            color="#1679be"
+        >
+      <g>
+        <path
+                    d="M 0 0 L 8 0 M 8 5 L 8 -5 M 0 2 L 7 0 L 0 -2"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1"
+                />
+      </g>
+    </marker>
+    <marker
+            orient="auto"
+            overflow="visible"
+            markerUnits="strokeWidth"
+            id="DimensionArrow_Marker_2"
+            stroke-linejoin="miter"
+            stroke-miterlimit="10"
+            viewBox="-9 -6 10 12"
+            markerWidth="10"
+            markerHeight="12"
+            color="#1679be"
+        >
+      <g>
+        <path
+                    d="M 0 0 L -8 0 M -8 -5 L -8 5 M 0 -2 L -7 0 L 0 2"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1"
+                />
+      </g>
+    </marker>
+  </defs>
+  <metadata> Produced by OmniGraffle 8.0\n2024-10-10 20:39:41 +0000</metadata>
+  <g
+        id="overview"
+        fill="none"
+        fill-opacity="1"
+        stroke-opacity="1"
+        stroke="none"
+        stroke-dasharray="none"
+    >
+    <title>overview</title>
+    <g id="overview_padding">
+      <title>padding</title>
+      <g id="Graphic_113">
+        <path
+                    d="M 605.09 117.78871 L 614.84 117.78871 C 617.04914 117.78871 618.84 119.57957 618.84 121.78871 L 618.84 165.78871 C 618.84 167.99785 617.04914 169.78871 614.84 169.78871 L 605.09 169.78871 C 602.88086 169.78871 601.09 167.99785 601.09 165.78871 L 601.09 121.78871 C 601.09 119.57957 602.88086 117.78871 605.09 117.78871 Z"
+                    fill="#dadada"
+                />
+        <path
+                    d="M 605.09 117.78871 L 614.84 117.78871 C 617.04914 117.78871 618.84 119.57957 618.84 121.78871 L 618.84 165.78871 C 618.84 167.99785 617.04914 169.78871 614.84 169.78871 L 605.09 169.78871 C 602.88086 169.78871 601.09 167.99785 601.09 165.78871 L 601.09 121.78871 C 601.09 119.57957 602.88086 117.78871 605.09 117.78871 Z"
+                    stroke="#a5a5a5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
+        <text transform="translate(606.09 134.28871)" fill="black">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="16"
+                        font-weight="400"
+                        fill="black"
+                        x="0"
+                        y="15"
+                        xml:space="preserve"
+                    >L</tspan>
+        </text>
+      </g>
+      <g id="Graphic_112">
+        <path
+                    d="M 534.09 117.78871 L 597.09 117.78871 C 599.29914 117.78871 601.09 119.57957 601.09 121.78871 L 601.09 165.78871 C 601.09 167.99785 599.29914 169.78871 597.09 169.78871 L 534.09 169.78871 C 531.88086 169.78871 530.09 167.99785 530.09 165.78871 L 530.09 121.78871 C 530.09 119.57957 531.88086 117.78871 534.09 117.78871 Z"
+                    fill="#fff9e7"
+                />
+        <path
+                    d="M 534.09 117.78871 L 597.09 117.78871 C 599.29914 117.78871 601.09 119.57957 601.09 121.78871 L 601.09 165.78871 C 601.09 167.99785 599.29914 169.78871 597.09 169.78871 L 534.09 169.78871 C 531.88086 169.78871 530.09 167.99785 530.09 165.78871 L 530.09 121.78871 C 530.09 119.57957 531.88086 117.78871 534.09 117.78871 Z"
+                    stroke="#a5a5a5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
+        <text transform="translate(535.09 134.28871)" fill="black">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="16"
+                        font-weight="400"
+                        fill="black"
+                        x="4.703125"
+                        y="15"
+                        xml:space="preserve"
+                    >100…0</tspan>
+        </text>
+      </g>
+      <g id="Line_111">
+        <line
+                    x1="609.09"
+                    y1="105.71997"
+                    x2="611.263"
+                    y2="105.71997"
+                    marker-end="url(#DimensionArrow_Marker)"
+                    marker-start="url(#DimensionArrow_Marker_2)"
+                    stroke="#1679be"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
+      </g>
+      <g id="Graphic_110">
+        <text transform="translate(588.4968 87.71997)" fill="#1679be">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="12"
+                        font-weight="400"
+                        fill="#1679be"
+                        x="0"
+                        y="11"
+                        xml:space="preserve"
+                    >128 Bits</tspan>
+        </text>
+      </g>
+    </g>
+  </g>
+</svg>

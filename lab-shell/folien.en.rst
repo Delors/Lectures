@@ -1,9 +1,11 @@
+TODO TRANSLATE TO ENGLISH
+
 .. meta::
     :version: renaissance
     :author: Michael Eichberg
-    :keywords: "Linux", Shell, "Kommandozeile", "Unix", "Bash", "Scripting", "Administration"
+    :keywords: "Linux", Shell, "Command Line", "Unix", "Bash", "Scripting", "Administration"
     :description lang=de: Einführung in die Linux Shell und Verwendung von Kommandozeilenwerkzeugen auf Linux Systemen
-    :id: 2025_05-linux-shell-erste-schritte
+    :id: 2025_05-2025_05-linux-shell-first-steps
     :first-slide: last-viewed
     :master-password: WirklichSchwierig!
 
@@ -127,6 +129,8 @@ Dateisysteme auf Unix-ähnlichen Betriebssytemen
         .. code:: console
 
             cat /proc/sys/kernel/printk
+
+        
 
     - Die Systemkonfiguration kann direkt über das Schreiben in spezialisierte Dateien erfolgen (meist sind Administratorrechte notwendig)
 
@@ -315,6 +319,7 @@ Kommandozeilenprogrammen beenden
         Die zu verwendende URL ist:
 
         http://141.72.12.103:8888
+
 
 
 .. class:: exercises
@@ -577,145 +582,6 @@ cat
 
 
 
-tr
-------
-
-- Kopiert die Eingabe von ``stdin`` nach ``stdout`` und führt dabei Substitutionen und Löschungen durch.
-
-.. container:: incremental
-
-    **Anwendungsfall**: bestimmte Buchstaben - zum Beispiel Sonderzeichen - sollen gelöscht werden.
-
-    .. code:: bash
-        :number-lines:
-
-        $ echo -n 'ab.cd_12!' | tr -dc '[:alnum:]'  # -dc = delete complement
-        abcd12
-
-.. container:: incremental
-
-    **Anwendungsfall**: Groß- in Kleinbuchstaben verwandeln.
-
-    .. code:: bash
-        :number-lines:
-
-        $ echo -n 'STARK' | tr '[:upper:]' '[:lower:]'
-        stark
-
-
-
-uniq
-------
-
-- vergleicht nebeneinanderliegende Zeilen und schreibt jede einzigartige Zeile einmal nach ``stdout``. Nicht-nebeneinanderliegende Wiederholungen werden nicht erkannt.
-- ``-c`` erlaubt es die Anzahl der Wiederholungen zu zählen.
-
-.. container:: incremental
-
-    **Anwendungsfall**: Wir möchten eine alphabetisch sortierte Liste nach der Häufigkeit des Vorkommens eines Wortes sortieren.
-
-    Mittels ``uniq`` kann die Häufigkeit gezählt werden.
-
-    :peripheral:`Die Sortierung - zum Beispiel angefangen mit den am häufigsten vorkommenden Einträgen - kann danach im Nachgang erfolgen`.
-
-    .. code:: bash
-        :number-lines:
-
-        $ echo "Test\nTest\nSchlaraffenland\nTest" | uniq -c
-        2 Test
-        1 Schlaraffenland
-        1 Test
-
-
-
-awk
-------
-
-- Muster-orientierte Verarbeitung der Zeilen einer Eingabedatei.
-- Jede Zeile wird segmentiert (Standardmäßig basierend auf Leerzeichen), die einzelnen Segmente werden mit ``$1``, ``$2``, ... bezeichnet. ``$0`` steht für die ganze Zeile.
-- Die Verarbeitung erfolgt durch Muster-Handlungsanweisungen der Form:
-
-  .. code:: awk
-
-     pattern { action }
-
-  ist das Muster (:eng:`pattern`) leer, dann wird die Zeile immer verarbeitet; ist keine Handlungsanweisung (:eng:`action`) angegeben, dann wird die Zeile ausgegeben.
-
-.. container:: incremental
-
-    **Anwendungsfall**: Die Einträge einer Datei sollen nach länge sortiert werden. In diesem Fall, kann mit Hilfe von awk jede Zeile mit der Länge ausgegeben werden. :peripheral:`Danach kann die Liste entsprechend sortiert werden.`
-
-    .. code:: bash
-        :number-lines:
-
-        $ echo "Test\nSchlaraffenland" |  awk '{print length " " $1}'
-        4 Test
-        15 Schlaraffenland
-
-
-
-sort
-----
-
-- Sortiert eine Liste gemäß der entsprechenden Felder.
-- ``-r`` sortiert in absteigender Reihenfolge.
-- ``-n`` der Wert des ersten Feldes wird als numerischer Wert interpretiert.
-- ``-k`` spezifiziert das Feld, nach dem sortiert werden soll. (z. B. -k 3)
-- ``-t`` spezifiziert das Trennzeichen, das die Felder trennt. (z. B. -t ',')
-
-.. container:: incremental
-
-    **Anwendungsfall**: Sortiere eine Liste nach Häufigkeit des Vorkommens eines Wortes.
-
-    .. code:: bash
-        :number-lines:
-
-        $ echo "abc\nxyz\nuvw\nxyz" \
-          | sort \                  # alphabetische Sortierung
-          | uniq -c \               # zähle Häuigkeit des Vorkommens einer Zeile
-          | sort -nr \              # absteigende Sortierung
-          | sed -E 's/ *[0-9]+ *//' # entferne den Zähler
-        xyz
-        uvw
-        abc
-
-.. supplemental::
-
-    **Komplexes Beispiel**
-
-    Sortierung einer Liste von Worten in absteigender Reihenfolge bzgl. (1) der Häufigkeit und (2) Länge.
-
-    .. code:: bash
-        :number-lines:
-
-        $ printf '%s' "abc\nuvw\nxyz\nlmnop\nxyz\nuvw" \
-               "\nlmnop\nlmnop\nxyz\ncd\ncd\ncd" \
-          | awk '{print length " " $1}'
-          | sort
-          | uniq -c
-          | sort -nr -k 1 -k 2
-        3 5 lmnop
-        3 3 xyz
-        3 2 cd
-        2 3 uvw
-        1 3 abc
-
-    Sortierung einer Liste von Worten in absteigender Reihenfolge bzgl. (1) der Häufigkeit und (2) aufsteigend bzgl. der Länge.
-
-    .. code:: bash
-        :number-lines:
-
-        $ echo "abc\n" "uvw\n" "xyz\n" "lmnop\n" "xyz\n" "uvw\n" \
-               "lmnop\n" "lmnop\n" "xyz\n" "cd\n" "cd\n" "cd" \
-          | awk '{print length " " $1}' \
-          | sort | uniq -c \
-          | sort  -k1nr -k2n
-        3 3 cd
-        3 4 xyz
-        3 6 lmnop
-        2 4 uvw
-        1 3 abc
-
 
 
 base64
@@ -774,43 +640,6 @@ grep
 
 
 
-sed - Stromeditor
--------------------
-
-- modifiziert die Eingabe gemäß der spezifizierten Kommandos in der angegebenen Reihenfolge.
-- ``-E`` zur Verwendung moderner regulärer Ausdrücke
-- Standardform: ``Funktion[Agrumente]``
-- Substitutionen: ``s/Regulärer Ausdruck/Ersatz/[Kennzeichen]``; das Kennzeichen "``g``" z. B. bewirkt, dass jedes Vorkommen ersetzt wird; sonst nur das erste Vorkommen.
-
-.. container:: incremental
-
-    **Anwendungsfall**: Löschen des ersten Sonderzeichens in einer Zeile.
-
-    .. code:: bash
-        :number-lines:
-
-        $ echo 'ab_cd!_ef?' | sed -E  's/[^a-zA-Z0-9]//'
-        abcd!_ef?
-
-
-.. container:: incremental
-
-    **Anwendungsfall**: Analyse der Struktur eines Leaks durch das Abbilden **aller** Buchstaben auf die Repräsentanten: ``l``\ (lower) ``u``\ (upper) ``d``\ (digits) ``s``\ (special).
-
-    .. code:: bash
-        :number-lines:
-
-        $ echo 'aB_c1d!_ef?' |
-          sed -E -e's/[a-z]/l/g' -e's/[A-Z]/u/g' -e's/[0-9]/d/g' -e 's/[^lud]/s/g'
-        lusldlsslls
-
-.. supplemental::
-
-    .. hint::
-
-        ``sed`` auf dem Mac (BSD) und ``sed`` unter Linux (GNU) unterscheiden sich teilweise deutlich.
-
-
 
 find
 -------
@@ -836,31 +665,6 @@ find
 
 
 
-Software nachinstallieren
----------------------------
-
-- Auf allen Linux und BSD Distributionen können Softwarepakete durch den Paketmanager des Betriebssystems nachinstalliert werden, z. B.:
-
-  - ``apt`` (Debian, Ubuntu, Kali Linux, ...)
-
-  .. class:: peripheral
-
-  - ``yum`` (RedHat, CentOS, ...)
-  - ``pacman`` (Arch Linux, ...)
-  - ``brew`` oder ``macports`` (MacOS) [*]_
-
-.. [*] Beide sind in diesem Fall nicht Teil des Betriebssystems, sondern müssen erst nachinstalliert werden, bevor damit weitere Software nachinstalliert werden kann.
-
-.. container:: incremental
-
-    **Anwendungsfall**: Installieren von ``ent`` (ein Programm, das die Entropie von Dateien berechnet):
-
-    .. code:: bash
-        :class: copy-to-clipboard
-        :number-lines:
-
-        sudo apt install ent
-
 
 
 Shellprogrammierung
@@ -873,6 +677,7 @@ Shellprogrammierung
     **Anwendungsfall**: Berechnung der Entropie für jede Datei in einer Liste.
 
     .. code:: zsh
+        :class: copy-to-clipboard
         :number-lines:
 
         #!/usr/bin/zsh                   # Shebang zur Spezifikation der Shell

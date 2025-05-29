@@ -400,7 +400,6 @@
                         fill="black"
                         x="0"
                         y="26"
-                        xml:space="preserve"
                     >E(PR</tspan>
           <tspan
                         font-family="Noto Sans Display"
@@ -408,7 +407,6 @@
                         font-weight="400"
                         fill="black"
                         y="34"
-                        xml:space="preserve"
                     >a</tspan>
           <tspan
                         font-family="Noto Sans Display"
@@ -416,7 +414,6 @@
                         font-weight="400"
                         fill="black"
                         y="26"
-                        xml:space="preserve"
                     >, H(M))</tspan>
         </text>
       </g>
@@ -494,11 +491,11 @@
       </g>
       <g id="Graphic_92">
         <path
-                    d="M 435.5 710 L 644.5 710 C 648.9183 710 652.5 713.5817 652.5 718 L 652.5 772 C 652.5 776.4183 648.9183 780 644.5 780 L 435.5 780 C 431.0817 780 427.5 776.4183 427.5 772 L 427.5 718 C 427.5 713.5817 431.0817 710 435.5 710 Z"
+                    d="M 435.5 710 L 654.5 710 C 658.9183 710 662.5 713.5817 662.5 718 L 662.5 772 C 662.5 776.4183 658.9183 780 654.5 780 L 435.5 780 C 431.0817 780 427.5 776.4183 427.5 772 L 427.5 718 C 427.5 713.5817 431.0817 710 435.5 710 Z"
                     fill="#fde6e5"
                 />
         <path
-                    d="M 435.5 710 L 644.5 710 C 648.9183 710 652.5 713.5817 652.5 718 L 652.5 772 C 652.5 776.4183 648.9183 780 644.5 780 L 435.5 780 C 431.0817 780 427.5 776.4183 427.5 772 L 427.5 718 C 427.5 713.5817 431.0817 710 435.5 710 Z"
+                    d="M 435.5 710 L 654.5 710 C 658.9183 710 662.5 713.5817 662.5 718 L 662.5 772 C 662.5 776.4183 658.9183 780 654.5 780 L 435.5 780 C 431.0817 780 427.5 776.4183 427.5 772 L 427.5 718 C 427.5 713.5817 431.0817 710 435.5 710 Z"
                     stroke="#a5a5a5"
                     stroke-linecap="round"
                     stroke-linejoin="round"
@@ -528,7 +525,6 @@
                         font-weight="400"
                         fill="black"
                         y="26"
-                        xml:space="preserve"
                     >∥⃦⃦</tspan>
           <tspan
                         font-family="Noto Sans Display"
@@ -536,7 +532,6 @@
                         font-weight="400"
                         fill="black"
                         y="26"
-                        xml:space="preserve"
                     > E(PR</tspan>
           <tspan
                         font-family="Noto Sans Display"
@@ -544,7 +539,6 @@
                         font-weight="400"
                         fill="black"
                         y="34"
-                        xml:space="preserve"
                     >a</tspan>
           <tspan
                         font-family="Noto Sans Display"

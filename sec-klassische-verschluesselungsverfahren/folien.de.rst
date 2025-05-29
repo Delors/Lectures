@@ -16,7 +16,7 @@ Klassische Verschlüsselungsmethoden
 ====================================
 
 :Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
-:Version: 1.0.2
+:Version: 1.1
 :Quelle: Im Wesentlichen: *Cryptography and Network Security - Principles and Practice, 8th Edition, William Stallings*
 
 .. supplemental::
@@ -345,6 +345,7 @@ Brute-Force-Kryptoanalyse der Caesar-Chiffre
     13 CUUJ CU QVJUH JXU JEWQ FQHJO
     ... ... ... ... ... ... ...
     25 QIIX QI EJXIV XLI XSKE TEVXC
+
 
 
 Brute-Force-Kryptoanalyse (z. B. der Caesar-Chiffre)
@@ -713,7 +714,45 @@ Rail Fence Chiffre
 
 .. supplemental::
 
-    Um die Nachricht zu entschlüsseln, wird die Nachricht in :math:`K` Zeilen geschrieben und dann in einer Diagonalen abgelesen. Die Länge einer Zeile ergibt sich aus der Länge der Nachricht (L) und der Tiefe der Chiffre (K): :math:`\lfloor L/K \rfloor`. Wobei die ersten :math:`L\bmod K` Zeilen um eins länger sind als die anderen.
+    Um die Nachricht zu entschlüsseln, konstruieren Sie eine *Railfence* mit der entsprechenden Tiefe und Länge des Chiffretexts. Danach können Sie die Nachricht direkt ablesen.
+
+    Geben Sie die folgende Nachricht: ``voeodrgy`` und der Schlüssel sei 4.
+
+    .. csv-table::
+        :class: table-data-monospaced
+        :stub-columns: 1
+
+        Nachricht, v, o, e, o, d, r, g, y
+        Index,     1, 2, 3, 4, 5, 6, 7, 8
+
+    1. Railfence der Tiefe 4 für eine Nachricht der Länge 8.
+
+    ::
+
+      -     -
+       -   - -
+        - -
+         -
+
+    2. Daraus ergibt sich unmittelbar welcher Buchstabe an welcher Stelle im Chriffretext gelandet ist (wir numerieren einfach die Platzhalter zeilenweise durch):
+
+    ::
+
+      -     -     ⇒   1     2
+       -   - -         3   4 5
+        - -             6 7
+         -               8
+
+    3. Ersetzen des Index mit dem Buchstaben aus der verschlüsselten Nachricht:
+
+    ::
+
+      -     -       1 ⇒ v      2 ⇒ o
+       -   - -       3 ⇒ e    4 ⇒ o  5 ⇒ d
+        - -           6 ⇒ r  7 ⇒ g
+         -             8 ⇒ y
+
+    Plaintext = very good
 
 
 Skytale
@@ -895,25 +934,36 @@ Steganographie vs. Verschlüsselung
 
 .. exercise:: Rail-fence Chiffre
 
-    Entschlüsseln Sie: ggettueietmsr
+    Entschlüsseln Sie: gestugmitrtee
 
     .. solution::
         :pwd: GutGemeistert
 
+        Länge("gestugmitrtee") = 13
+
+        .. csv-table::
+            :stub-columns: 1
+
+            Buchstabe, g,e,s,t,u,g,m,i,t,r,t,e,e
+            Index, 1,2,3,4,5,6,7,8,9,10,11,12,13
+
+        K = 3 (durch ausprobieren)
+
+        Index der Buchstaben in der Verschlüsselten Nachricht:
+
         ::
+           1    2    3     4
+            5  6 7  8 9  10
+             11   12   13
 
-            K = 3 (durch ausprobieren)
+        d. h. der zweite Buchstabe des Plaintexts hat den Index 5 in der verschlüsselten Nachricht.
 
-            Länge("ggettueietmsr") = 13
+        ::
+            g   e   s   t
+             u g m i t r
+              t   e   e
 
-            13 (=L) / 3 (=K) = 4 Rest 1
-            ⇒ 1 Zeile mit 5 Buchstaben und die Zeilen 2 und 3 mit 4 Buchstaben.
-
-            g  g  e  t  t
-             u  e  i  e
-              t  m  s  r
-
-            P = gutgemeistert
+        P = gutgemeistert
 
 .. exercise:: Rail-fence Chiffre
 
@@ -925,13 +975,14 @@ Steganographie vs. Verschlüsselung
         ::
 
             P = I L O V E C R Y P T O
-                1 2 3 1 2 3 1 2 3 1 2
+                1 2 3 2 1 2 3 2 1 2 3
 
-            C = I V R T L E Y O O C P
+            C = I E P L V C Y T O R O
 
-            I  V  R  T
-             L  E  Y  O
-              O  C  P
+            I   E   P
+             L V C Y T
+              O   R   O
+
 
 
 

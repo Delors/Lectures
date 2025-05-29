@@ -230,6 +230,8 @@ Bei AES, DES oder jeder anderen Blockchiffre erfolgt die Verschlüsselung immer 
 *Counter Mode* - Vorteile
 -------------------------
 
+.. class:: incremental-list
+
 :Hardware-Effizienz: kann von der Parallelisierung der Hardware profitieren
 :Software-Effizienz: leicht parallelisierbar in Software
 :Vorverarbeitung: die Verschlüsselung der Zähler
@@ -291,7 +293,7 @@ Modus ist auch ein IEEE-Standard, IEEE Std 1619-2007
 
 .. supplemental::
 
-    Ein Tweak ist insbesondere bei der Verschlüsselung von Daten auf Speichergeräten wichtig, da der gleiche Klartext an verschiedenen Stellen in verschiedene Chiffretexte verschlüsselt wird, aber immer in denselben Chiffretext, wenn er wieder an dieselbe Stelle geschrieben wird.
+    Ein Tweak ist insbesondere bei der Verschlüsselung von Daten auf Speichergeräten wichtig, da der gleiche Klartext an verschiedenen Stellen in verschiedene Chiffretexte verschlüsselt wird, aber immer in denselben Chiffretext, wenn er wieder an dieselbe Stelle geschrieben wird. Ein Tweak ist ein Modifikator, der für die unterschiedliche Verarbeitung gleicher Daten sorgt.
 
 
 
@@ -310,7 +312,7 @@ Die Anforderungen an die Verschlüsselung gespeicherter Daten, die auch als *dat
 
 Die IEEE Norm P1619 wurde in Hinblick auf folgende Eigenschaften entwickelt:
 
-.. class:: incremental smaller
+.. class:: incremental-list
 
 - Der Chiffretext ist für einen Angreifer frei verfügbar.
 - Das Datenlayout wird auf dem Speichermedium und beim Transport nicht verändert.
@@ -327,23 +329,21 @@ XTS-AES Operation auf einem Block
 .. image:: drawings/operationsmodi/xts_aes.svg
     :align: center
 
-.. container:: far-far-smaller two-columns margin-top-1em
+.. supplemental::
 
-    .. container:: column no-separator
+    .. hint::
 
-      - Schlüssel: es gilt: :math:`Schlüssel = Schlüssel_1\, ||\, Schlüssel_2`
-      - :math:`P_j`: Der j-te Block des Klartexts. Alle Blöcke haben eine Länge von 128 bits. Eine (Klartext)dateneinheit – in der Regel ein Festplattensektor – besteht aus einer Folge von Klartextblöcken.
-      - :math:`C_j`: Der j-te Block des Chiffretextes.
-      - :math:`j`: Die fortlaufende Nummer des 128-Bit-Blocks innerhalb der Dateneinheit.
+        Dargestellt ist der Fall, dass alle zu verschlüsselnden (Klartext-)Blöcke eine Größe von 128 Bit haben. Sollt der letzte Block nicht eine Größe von 128 Bit haben, dann kommt "Cipher Text Stealing" zum Einsatz.
 
-
-    .. container:: column
-
-      - :math:`i`: Der Wert des 128-Bit-Tweaks.
-      - :math:`\alpha`: Ein primitives Element des :math:`GF(2^{128})` welches dem Polynom :math:`x` (d. h. 0000...0010) entspricht.
-      - :math:`\alpha^j`: :math:`\alpha` :math:`j` mal mit sich selbst multipliziert im Körper :math:`GF(2^{128})`
-      - :math:`\oplus` Bitwise XOR
-      - :math:`\otimes` Modulare Multiplikation mit Binärkoeffizienten modulo :math:`x^{128}+x^7+x^2+x+1`.
+    - Schlüssel: es gilt: :math:`Schlüssel = Schlüssel_1\, ||\, Schlüssel_2`
+    - :math:`P_j`: Der j-te Block des Klartexts. Alle Blöcke haben eine Länge von 128 bits. Eine (Klartext)dateneinheit – in der Regel ein Festplattensektor – besteht aus einer Folge von Klartextblöcken.
+    - :math:`C_j`: Der j-te Block des Chiffretextes.
+    - :math:`j`: Die fortlaufende Nummer des 128-Bit-Blocks innerhalb der Dateneinheit.
+    - :math:`i`: Der Wert des 128-Bit-Tweaks.
+    - :math:`\alpha`: Ein primitives Element des :math:`GF(2^{128})` welches dem Polynom :math:`x` (d. h. 0000...0010) entspricht.
+    - :math:`\alpha^j`: :math:`\alpha` :math:`j` mal mit sich selbst multipliziert im Körper :math:`GF(2^{128})`
+    - :math:`\oplus` Bitwise XOR
+    - :math:`\otimes` Modulare Multiplikation mit Binärkoeffizienten modulo :math:`x^{128}+x^7+x^2+x+1`.
 
 
 .. class:: exercises transition-scale
@@ -449,63 +449,68 @@ XTS-AES Operation auf einem Block
 
     .. exercise:: OFB-Modus
 
-        Verwenden Sie den OFB-Modus in Kombination mit einer Caesar-Chiffre, bei der die Blockgröße ein Zeichen sei. Der Schlüssel ist die Anzahl der Zeichen, um die Sie ein Zeichen verschieben wollen - wie zuvor. Der IV ist ein Zeichen. Damit sie ein XOR durchführen können, ordnen wir jedem Zeichen einen Wert zu und erweitern das Alphabet um die Ziffern 1 bis 3, "!", "?" und das "_". Auf diese Weise ist es immer möglich, ein sinnvolles Zeichen auszugeben.
+        Verwenden Sie den OFB-Modus in Kombination mit einer Caesar-Chiffre, bei der die *Blockgröße* ein Zeichen sei.
 
-        Daraus ergibt sich die folgende Kodierung:
+        Der Schlüssel ist die Anzahl der Zeichen, um die Sie ein Zeichen verschieben wollen - wie zuvor. Der IV ist ein Zeichen. Damit sie ein XOR durchführen können, ordnen wir jedem Zeichen einen Wert zu und erweitern das Alphabet um die Ziffern 1 bis 3, "!", "?" und das "_". Auf diese Weise ist es immer möglich, ein sinnvolles Zeichen auszugeben.
 
-        .. grid::
+        .. compound::
+            :class: incremental
 
-            .. cell:: width-30
+            Daraus ergibt sich die folgende Kodierung:
 
-                .. csv-table::
-                    :header: Index, Zeichen, Binärdarstellung
+            .. grid::
 
-                    0, A, 00000
-                    1, B, 00001
-                    2, C, 00010
-                    3, D, 00011
-                    4, E, 00100
-                    5, F, 00101
-                    6, G, 00110
-                    7, H, 00111
-                    8, I, 01000
-                    9, J, 01001
-                    10, K, 01010
+                .. cell:: width-30
 
-            .. cell:: width-30
+                    .. csv-table::
+                        :header: Idx., Zeichen, Binär
 
-                .. csv-table::
-                    :header: Index, Zeichen, Binärdarstellung
+                        0, A, 00000
+                        1, B, 00001
+                        2, C, 00010
+                        3, D, 00011
+                        4, E, 00100
+                        5, F, 00101
+                        6, G, 00110
+                        7, H, 00111
+                        8, I, 01000
+                        9, J, 01001
+                        10, K, 01010
 
-                    11, L, 01011
-                    12, M, 01100
-                    13, N, 01101
-                    14, O, 01110
-                    15, P, 01111
-                    16, Q, 10000
-                    17, R, 10001
-                    18, S, 10010
-                    19, T, 10011
-                    20, U, 10100
-                    21, V, 10101
+                .. cell:: width-30
 
-            .. cell:: width-30
+                    .. csv-table::
+                        :header: Idx., Zeichen, Binär
 
-                .. csv-table::
-                    :header: Index, Zeichen, Binärdarstellung
+                        11, L, 01011
+                        12, M, 01100
+                        13, N, 01101
+                        14, O, 01110
+                        15, P, 01111
+                        16, Q, 10000
+                        17, R, 10001
+                        18, S, 10010
+                        19, T, 10011
+                        20, U, 10100
+                        21, V, 10101
 
-                    22, W, 10110
-                    23, X, 10111
-                    24, Y, 11000
-                    25, Z, 11001
-                    26, 1, 11010
-                    27, 2, 11011
-                    28, 3, 11100
-                    29, !, 11101
-                    30, ?, 11110
-                    31, "_", 11111
+                .. cell:: width-30
 
-        Verschlüsseln Sie nun einige Nachrichten mit dieser Chiffre. Welchen Effekt hat die Anwendung des OFB-Modus auf die Nachrichten?
+                    .. csv-table::
+                        :header: Idx., Zeichen, Binär
+
+                        22, W, 10110
+                        23, X, 10111
+                        24, Y, 11000
+                        25, Z, 11001
+                        26, 1, 11010
+                        27, 2, 11011
+                        28, 3, 11100
+                        29, !, 11101
+                        30, ?, 11110
+                        31, "_", 11111
+
+            Verschlüsseln Sie nun einige Nachrichten mit dieser Chiffre. Welchen Effekt hat die Anwendung des OFB-Modus auf die Nachrichten?
 
         .. solution::
             :pwd: Caesar_ofb

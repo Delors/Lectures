@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+    "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg
+    xmlns="http://www.w3.org/2000/svg"
+    version="1.1"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:xl="http://www.w3.org/1999/xlink"
+    viewBox="-76 61 713 466"
+    width="570"
+    height="372"
+>
+<style>
+  @import url('/LectureDoc2/ext/fonts/ld-fonts.css');
+</style>
+<defs>
+    <marker
+            orient="auto"
+            overflow="visible"
+            markerUnits="strokeWidth"
+            id="DimensionArrow_Marker"
+            stroke-linejoin="miter"
+            stroke-miterlimit="10"
+            viewBox="-1 -6 10 12"
+            markerWidth="10"
+            markerHeight="12"
+            color="#b34401"
+        >
+      <g>
+        <path
+                    d="M 0 0 L 8 0 M 8 5 L 8 -5 M 0 2 L 7 0 L 0 -2"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1"
+                />
+      </g>
+    </marker>
+    <marker
+            orient="auto"
+            overflow="visible"
+            markerUnits="strokeWidth"
+            id="DimensionArrow_Marker_2"
+            stroke-linejoin="miter"
+            stroke-miterlimit="10"
+            viewBox="-9 -6 10 12"
+            markerWidth="10"
+            markerHeight="12"
+            color="#b34401"
+        >
+      <g>
+        <path
+                    d="M 0 0 L -8 0 M -8 -5 L -8 5 M 0 -2 L -7 0 L 0 2"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1"
+                />
+      </g>
+    </marker>
+  </defs>
+  <metadata> Produced by OmniGraffle 8.0\n2024-10-10 20:31:43 +0000</metadata>
+  <g
+        id="overview"
+        fill="none"
+        fill-opacity="1"
+        stroke-opacity="1"
+        stroke="none"
+        stroke-dasharray="none"
+    >
+    <title>overview</title>
+    <g id="overview_main">
+      <title>main</title>
+      <g id="Graphic_35">
+        <path
+                    d="M 5.376953 117.69871 L 526 117.69871 C 528.20914 117.69871 530 119.48957 530 121.69871 L 530 165.69871 C 530 167.90785 528.20914 169.69871 526 169.69871 L 5.376953 169.69871 C 3.167814 169.69871 1.3769531 167.90785 1.3769531 165.69871 L 1.3769531 121.69871 C 1.3769531 119.48957 3.167814 117.69871 5.376953 117.69871 Z"
+                    fill="#fef4c3"
+                />
+        <path
+                    d="M 5.376953 117.69871 L 526 117.69871 C 528.20914 117.69871 530 119.48957 530 121.69871 L 530 165.69871 C 530 167.90785 528.20914 169.69871 526 169.69871 L 5.376953 169.69871 C 3.167814 169.69871 1.3769531 167.90785 1.3769531 165.69871 L 1.3769531 121.69871 C 1.3769531 119.48957 3.167814 117.69871 5.376953 117.69871 Z"
+                    stroke="#a5a5a5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
+        <text transform="translate(6.376953 134.19871)" fill="black">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="16"
+                        font-weight="400"
+                        fill="black"
+                        x="225.52246"
+                        y="15"
+                        xml:space="preserve"
+                    >Nachricht</tspan>
+        </text>
+      </g>
+      <g id="Graphic_78">
+        <path
+                    d="M 377.27783 117.69871 L 381.5703 136.49079 L 377.75478 152.96604 L 379.1856 169.69871 L 390.39375 169.69871 L 387.77057 152.19376 L 390.8707 135.71851 L 385.8628 117.69871 Z"
+                    fill="white"
+                />
+        <path
+                    d="M 377.27783 117.69871 L 381.5703 136.49079 L 377.75478 152.96604 L 379.1856 169.69871 L 390.39375 169.69871 L 387.77057 152.19376 L 390.8707 135.71851 L 385.8628 117.69871 Z"
+                    stroke="#a5a5a5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
+      </g>
+      <g id="Graphic_80">
+        <rect
+                    x="378.336"
+                    y="115.33654"
+                    width="6.6640085"
+                    height="2.6987107"
+                    fill="white"
+                />
+        <rect
+                    x="378.336"
+                    y="115.33654"
+                    width="6.6640085"
+                    height="2.6987107"
+                    stroke="white"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
+      </g>
+      <g id="Graphic_82">
+        <rect
+                    x="380.18043"
+                    y="169.37214"
+                    width="9.181885"
+                    height="2.6987107"
+                    fill="white"
+                />
+        <rect
+                    x="380.18043"
+                    y="169.37214"
+                    width="9.181885"
+                    height="2.6987107"
+                    stroke="white"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
+      </g>
+      <g id="Line_86">
+        <line
+                    x1="9.934441"
+                    y1="105.62997"
+                    x2="521.4425"
+                    y2="105.62997"
+                    marker-end="url(#DimensionArrow_Marker)"
+                    marker-start="url(#DimensionArrow_Marker_2)"
+                    stroke="#b34401"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
+      </g>
+      <g id="Graphic_89">
+        <text transform="translate(250.35156 87.62997)" fill="#b34400">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="12"
+                        font-weight="400"
+                        fill="#b34400"
+                        x="0"
+                        y="11"
+                        xml:space="preserve"
+                    >L-Bits</tspan>
+        </text>
+      </g>
+    </g>
+  </g>
+</svg>

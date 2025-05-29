@@ -18,7 +18,7 @@ Kryptografische Hash Funktionen
 :Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
 :Kontakt: michael.eichberg@dhbw.de
 :Basierend auf: *Cryptography and Network Security - Principles and Practice, 8th Edition, William Stallings*
-:Version: 2.2.1
+:Version: 2.2.2
 
 .. supplemental::
 
@@ -49,6 +49,7 @@ Hashfunktionen
   - Authentifizierung von Nachrichten
   - Digitale Signaturen
   - Speicherung von Passwörtern
+
 
 
 Beispiel: Berechnung von Hashwerten mittels MD5
@@ -126,7 +127,7 @@ Beziehung zwischen den Sicherheitsanforderungen an Hashfunktionen
 Nachrichtenauthentifizierung - vereinfacht
 -------------------------------------------------------
 
-Nachrichten können auf verschiedene Weisen authentifiziert werden, so dass *Man-in-the-Middle-Angriffe* (MitM)\ [#]_ verhindert werden können.
+Nachrichten können auf verschiedene Weisen authentifiziert werden, so dass *Person-in-the-Middle-Angriffe*\ [#]_ verhindert werden können.
 
 .. deck::
 
@@ -150,7 +151,7 @@ Nachrichten können auf verschiedene Weisen authentifiziert werden, so dass *Man
         .. image:: drawings/digests/secret_encrypted.svg
             :align: center
 
-.. [#] :eng:`Man` ist hier geschlechtsneutral zu verstehen.
+.. [#] Ursprünglich wurde von Man-in-the-Middle gesprochen; dies wird aber zunehmend weniger benutzt.
 
 .. supplemental::
 
@@ -164,15 +165,15 @@ Nachrichten können auf verschiedene Weisen authentifiziert werden, so dass *Man
 
     Im letzten Szenario werden alle Ansätze kombiniert.
 
-    **Legende**
+    .. legend::
 
-    :M: die Nachricht
-    :H: die Hashfunktion
-    :E: der Verschlüsselungsalgorithmus
-    :D: der Entschlüsselungsalgorithmus
-    :K: ein geheimer Schlüssel
-    :S: eine geheime Zeichenkette
-    :||: die Konkatenation von zwei Werten (d. h. das Aneinanderhängen von zwei Werten)
+        :M: die Nachricht
+        :H: die Hashfunktion
+        :E: der Verschlüsselungsalgorithmus
+        :D: der Entschlüsselungsalgorithmus
+        :K: ein geheimer Schlüssel
+        :S: eine geheime Zeichenkette
+        :||: die Konkatenation von zwei Werten (d. h. das Aneinanderhängen von zwei Werten)
 
     .. hint::
 
@@ -221,6 +222,7 @@ Anforderungen an die Resistenz von Hashfunktionen
 .. csv-table::
     :header: "", Preimage Resistant, Second Preimage Resistant, Collision Resistant
     :class: incremental-table-rows highlight-line-on-hover
+    :stub-columns: 1
     :widths: 28, 10, 10, 10
 
     Hash + Digitale Signaturen, ✓, ✓, ✓
@@ -338,8 +340,8 @@ Struktur eines sicheren Hash-Codes
 
     .. class:: list-with-explanations
 
-    - Eine Nachricht :math:`M` bestehe aus :math:`N` 64-bit Blöcken: :math:`X_1, \ldots, X_n`.
-    - Der Hashcode H(M) ist ein simpler XOR über alle Blöcke: :math:`H(M) = h = X_1 \oplus X_2 \oplus \ldots \oplus X_n`.
+    - Eine Nachricht :math-i:`M` bestehe aus :math-i:`N` 64-bit Blöcken: :math:`X_1, \ldots, X_n`.
+    - Der Hashcode :math-i:`H(M)` ist ein simpler XOR über alle Blöcke: :math:`H(M) = h = X_1 \oplus X_2 \oplus \ldots \oplus X_n`.
     - :math:`h` wird als der :math:`X_{N+1}` Block an die Nachricht angehängt und danach wird unter Verwendung des CBC Modus die Nachricht inkl. des Hashcodes verschlüsselt (:math:`C = Y_1, \ldots, Y_{N+1}`).
     - Gegen welche Art von Manipulation ist diese Konstruktion *nicht* sicher?
 
@@ -374,6 +376,9 @@ Struktur eines sicheren Hash-Codes
 
         Wir haben keinen Block der Nachricht, mit dem wir arbeiten können, und wir haben keinen Vorteil davon, zwei beliebige aber verschiedene Nachrichten zu finden, die denselben Hash haben. Bei der Passwortwiederherstellung liegt uns immer ein Hashwert vor, und wir versuchen, *eine* Nachricht zu finden, die diesen Hashwert erzeugt hat.
 
+
+
+.. class:: s-vertical-title
 
 `SHA 512 - Übersicht <https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.180-4.pdf>`__
 --------------------------------------------------------------------------------------
@@ -645,35 +650,37 @@ SHA-512 Verarbeitung eines 1024-Bit-Blocks
 HMAC (Hash-based Message Authentication Code)
 ----------------------------------------------
 
-.. container::
+Auch als *keyed-hash message authentication code* bezeichnet.
 
-    Auch als *keyed-hash message authentication code* bezeichnet.
+.. math::
 
-    .. math::
+    \begin{array}{rcl}
+    HMAC(K,m) & = & H( (K' \oplus opad) || H( ( K' \oplus ipad) || m) ) \\
+    K' & = &\begin{cases}
+            H(K) & \text{falls K größer als die Blockgröße ist}\\
+            K & \text{andernfalls}
+            \end{cases}
+    \end{array}
 
-        \begin{array}{rcl}
-        HMAC(K,m) & = & H( (K' \oplus opad) || H( ( K' \oplus ipad) || m) ) \\
-        K' & = &\begin{cases}
-                H(K) & \text{falls K größer als die Blockgröße ist}\\
-                K & \text{andernfalls}
-                \end{cases}
-        \end{array}
+.. supplemental::
 
-    :math:`H` is eine kryptografische Hashfunktion.
+    .. legend::
 
-    :math:`m` ist die Nachricht.
+        :math-i:`H` is eine kryptografische Hashfunktion.
 
-    :math:`K` ist der geheime Schlüssel (*Secret Key*).
+        :math-i:`m` ist die Nachricht.
 
-    :math:`K'` ist vom Schlüssel K abgeleiteter Schlüssel mit Blockgröße (ggf. *padded* oder *gehasht*).
+        :math-i:`K` ist der geheime Schlüssel (*Secret Key*).
 
-    :math:`||` ist die Konkatenation.
+        :math-i:`K'` ist vom Schlüssel K abgeleiteter Schlüssel mit Blockgröße (ggf. *padded* oder *gehasht*).
 
-    :math:`\oplus` ist die XOR Operation.
+        :math:`||` ist die Konkatenation.
 
-    :math:`opad` ist das äußere Padding bestehend aus Wiederholungen von 0x5c in Blockgröße.
+        :math:`\oplus` ist die XOR Operation.
 
-    :math:`ipad` ist das innere Padding bestehend aus Wiederholungen von 0x36 in Blockgröße.
+        :math-i:`opad` ist das äußere Padding bestehend aus Wiederholungen von 0x5c in Blockgröße.
+
+        :math-i:`ipad` ist das innere Padding bestehend aus Wiederholungen von 0x36 in Blockgröße.
 
 
 
@@ -802,7 +809,7 @@ MAC: `Poly 1305 <https://datatracker.ietf.org/doc/html/rfc8439#section-2.5>`__
 
         .. deck:: incremental
 
-            .. card::
+            .. card:: font-size-65
 
                 .. rubric:: Verarbeitung des ersten Blocks
 
@@ -819,7 +826,7 @@ MAC: `Poly 1305 <https://datatracker.ietf.org/doc/html/rfc8439#section-2.5>`__
                                 2c88c77849d64ae9147ddeb88e69c83fc \\
                     \end{array}
 
-            .. card::
+            .. card:: font-size-65
 
                 .. rubric:: Verarbeitung des letzten Blocks
 
@@ -853,7 +860,7 @@ MAC: `Poly 1305 <https://datatracker.ietf.org/doc/html/rfc8439#section-2.5>`__
 
     :math:`P = 2^{130} - 5 = 3fffffffffffffffffffffffffffffffb`
 
-    Dadurch, dass wir den Block als Zahl in *little-endian* Reihenfolge interpretieren, ist das hinzufügen des Bits jenseits der Anzahl der Oktette gleichbedeutend damit, dass wir den Wert 0x01 am Ende des Blocks hinzufügen.
+    Dadurch, dass wir den Block als Zahl in *little-endian* Reihenfolge interpretieren, ist das Hinzufügen des Bits jenseits der Anzahl der Oktette gleichbedeutend damit, dass wir den Wert 0x01 am Ende des Blocks hinzufügen.
 
 
 .. TODO discuss CBC-MAC
