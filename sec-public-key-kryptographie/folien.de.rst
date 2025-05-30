@@ -218,7 +218,7 @@ Anwendungen für Public-Key-Kryptosysteme
 
       Kryptosysteme mit öffentlichen Schlüsseln lassen sich in drei Kategorien einteilen:
 
-      .. class:: incremental
+      .. class:: incremental-list
 
       1. *Ver-/Entschlüsselung*: Der Absender verschlüsselt eine Nachricht mit dem öffentlichen Schlüssel des Empfängers.
       2. *Digitale Unterschriften*: Der Absender „unterschreibt“ eine Nachricht mit seinem privaten Schlüssel.
@@ -230,24 +230,24 @@ Anwendungen für Public-Key-Kryptosysteme
 
         .. csv-table::
             :header: Algorithmus, Ver-/ Entschlüsselung, Digitale Signaturen, Schlüssel-austausch
-            :class: incremental
+            :class: incremental-table-rows
             :widths: 13, 10, 10, 10
 
             RSA,:shiny-green:`✓`,:shiny-green:`✓`,:shiny-green:`✓`
             Elliptic Curve,:shiny-green:`✓`,:shiny-green:`✓`,:shiny-green:`✓`
             Diffie-Hellman,:shiny-red:`✗`,:shiny-red:`✗`,:shiny-green:`✓`
-            DSS,:shiny-red:`✗`,:shiny-green:`✓`,:shiny-red:`✗`
+            DSS\ [#]_,:shiny-red:`✗`,:shiny-green:`✓`,:shiny-red:`✗`
 
-        .. container:: smaller
 
-            *DSS = Digital Signature Standard*, entwickelt von der NSA (National Security Agency)
+
+        .. [#] DSS = Digital Signature Standard*, entwickelt von der NSA (National Security Agency)
 
 
 
 Anforderungen an Public-Key-Algorithmen
 --------------------------------------------
 
-.. class:: incremental
+.. class:: incremental-list
 
 - Für eine Partei :math:`B` ist es rechnerisch einfach, ein Schlüsselpaar (bestehend aus öffentlicher Schlüssel :math:`PU_b` und privater Schlüssel :math:`PR_b`) zu erzeugen.
 - Für einen Absender :math:`A` ist es rechnerisch einfach, bei Kenntnis des öffentlichen Schlüssels von :math:`B` und der zu verschlüsselnden Nachricht den entsprechenden Chiffretext zu erzeugen.
@@ -276,9 +276,9 @@ Anforderungen an Public-Key-Algorithmen
 
   .. container:: s-font-size-90
 
-    - :math:`Y = f_k(X)` einfach, wenn :math:`k` und :math:`X` bekannt sind.
-    - :math:`X = f_k^{–1}(Y)` einfach,  wenn :math:`k` und :math:`Y` bekannt sind.
-    - :math:`X = f_k^{–1}(Y)` unmöglich, wenn :math:`Y` bekannt ist, aber k nicht.
+    - :math:`Y = f_k(X)` einfach, wenn :math-i:`k` und :math-i:`X` bekannt sind.
+    - :math:`X = f_k^{–1}(Y)` einfach,  wenn :math-i:`k` und :math-i:`Y` bekannt sind.
+    - :math:`X = f_k^{–1}(Y)` unmöglich, wenn :math-i:`Y` bekannt ist, aber :math-i:`k` nicht.
 
 - Ein praktisches Public-Key-Verfahren hängt von einer geeigneten Trapdoor-Einwegfunktion ab.
 
@@ -297,7 +297,7 @@ Public-Key-Kryptoanalyse
 
         Ein Verschlüsselungsverfahren mit öffentlichem Schlüssel ist anfällig für einen Brute-Force-Angriff.
 
-        .. class:: incremental smaller
+        .. class:: incremental-list
 
         - Gegenmaßnahme: große Schlüssel verwenden!
         - Die Schlüsselgröße muss klein genug sein, um eine praktische Ver- und Entschlüsselung zu ermöglichen.
@@ -379,49 +379,44 @@ Damit dieser Algorithmus für die Verschlüsselung mit öffentlichen Schlüsseln
 The RSA Algorithm
 -------------------
 
-.. grid::
+**Schlüsselgenerierung von Alice**
 
-    .. cell:: width-60
+.. csv-table::
+    :class: booktabs incremental-table-rows
+    :width: 100%
+    :align: left
 
-        **Schlüsselgenerierung von Alice**
+    "Wähle :math:`p, q`", ":math:`p` und :math:`b` beide prim, :math:`p \neq q` "
+    "Berechne :math:`n`", ":math:`n = p \times q` "
+    "Berechne :math:`𝜙(n)` ", ":math:`\phi(n) = (p - 1)(q - 1)` "
+    "Wähle :math:`e`", ":math:`GGT(\phi(n),e) = 1; \quad 1 < e < \phi(n)` "
+    Berechne :math:`d`, :math:`d \equiv e^{-1}\; (mod\; \phi(n)) \Leftrightarrow ed\; mod\; \phi(n)= 1`
+    Public-Key, ":math:`PU = \lbrace e,n \rbrace` "
+    Private-Key, ":math:`PR = \lbrace d,n \rbrace` "
 
-        .. csv-table::
-            :class: no-table-borders no-inner-borders incremental
-            :align: left
+.. compound::
+    :class: incremental
 
-            "Wähle :math:`p, q`", ":math:`p` und :math:`b` beide prim, :math:`p \neq q` "
-            "Berechne :math:`n`", ":math:`n = p \times q` "
-            "Berechne :math:`𝜙(n)` ", ":math:`\phi(n) = (p - 1)(q - 1)` "
-            "Wähle :math:`e`", ":math:`GGT(\phi(n),e) = 1; \qquad 1 < e < \phi(n)` "
-            Berechne :math:`d`, :math:`d \equiv e^{-1}\; (mod\; \phi(n)) \Leftrightarrow ed\; mod\; \phi(n)= 1`
-            Public-Key, ":math:`PU = \lbrace e,n \rbrace` "
-            Private-Key, ":math:`PR = \lbrace d,n \rbrace` "
+    **Verschlüsselung von Bob mit Alices öffentlichen Schlüssel**
 
-    .. cell:: width-40
+    .. csv-table::
+        :stub-columns: 1
+        :class: borderless table-header-align-right
 
-        .. compound::
-            :class: incremental
+        Klartext, :math:`M<n`
+        Chiffretext, :math:`C=M^e\; mod\; n`
 
-            **Verschlüsselung von Bob mit Alices öffentlichen Schlüssel**
+.. compound::
+    :class: incremental
 
-            .. csv-table::
-                :stub-columns: 1
-                :class: borderless
+    **Entschlüsselung von Alice mit ihrem privaten Schlüssel**
 
-                Klartext, :math:`M<n`
-                Chiffretext, :math:`C=M^e\; mod\; n`
+    .. csv-table::
+        :stub-columns: 1
+        :class: borderless table-header-align-right
 
-        .. compound::
-            :class: incremental
-
-            **Entschlüsselung von Alice mit ihrem privaten Schlüssel**
-
-            .. csv-table::
-                :stub-columns: 1
-                :class: borderless
-
-                Chiffretext, :math:`C`
-                Klartext, :math:`M = C^d\; mod\; n`
+        Chiffretext, :math:`C`
+        Klartext, :math:`M = C^d\; mod\; n`
 
 
 
@@ -430,10 +425,9 @@ Berechnung von :math:`d`
 
 Der Wert von :math:`d` wird mit Hilfe des erweiterten Euklidischen Algorithmus\ [#]_ berechnet.
 
-Wir wissen dass :math:`GGT(\phi(n),e) = 1` gilt; d. h. :math:`e` und :math:`\phi(n)` sind teilerfremd/*coprime*.
+Wir wissen dass :math:`GGT(\phi(n),e) = 1` gilt; d. h. :math-i:`e` und :math:`\phi(n)` sind teilerfremd/*coprime*.
 
 .. math::
-    :class: smaller
 
     \begin{matrix}
     ex + \phi(n)y & = & GGT(e,\phi(n)) \\
@@ -444,10 +438,11 @@ Wir wissen dass :math:`GGT(\phi(n),e) = 1` gilt; d. h. :math:`e` und :math:`\ph
     ex\; mod\; \phi(n) & = & 1
     \end{matrix}
 
-.. math::
-    :class: smaller incremental margin-top-2em
+.. container:: incremental
 
-    \text{somit}\;  x\; \hat{=}\; d
+    .. math::
+
+        \text{somit }  x \hat{=} d
 
 .. ex & \equiv & 1\; (mod\; \phi(n))
 
@@ -462,9 +457,11 @@ Wir wissen dass :math:`GGT(\phi(n),e) = 1` gilt; d. h. :math:`e` und :math:`\ph
 Beispiel für den RSA-Algorithmus
 ---------------------------------
 
+.. class:: incremental-list
+
 :p und q:
 
-    :math:`p = 11;\quad q = 17;\quad n = 187\qquad\qquad (\phi(n) = 10 \times 16 = 160)`
+    :math:`p = 11;\quad q = 17;\quad n = 187\qquad (\phi(n) = 10 \times 16 = 160)`
 
 :Klartext:
     :math:`88`
@@ -484,7 +481,7 @@ Beispiel für den RSA-Algorithmus
 
     :math:`e = 137 \Rightarrow d = 153`
 
-    :math:`\qquad 88^{137}\; mod\; 187 = 99 = C\qquad\qquad 99^{153}\; mod\; 187 = 88`
+    :math:`\qquad 88^{137}\; mod\; 187 = 99 = C\qquad 99^{153}\; mod\; 187 = 88`
 
 
 
@@ -565,6 +562,7 @@ Ergebnis des schnellen modularen Exponierungsalgorithmus für :math:`a^b\;mod\;n
     :widths: 6, 10,10,10,10,10,10,10,10,10,10
     :width: 100%
     :header-rows: 1
+    :stub-columns: 1
 
     ":math:`b_i`", 1,0,0,0,1,1,0,0,0,0
     c, 1,2,4,8,17,35,70,140,280,560
@@ -590,14 +588,14 @@ Effiziente Entschlüsselung mit dem privaten Schlüssel
 
 - Die Entschlüsselung verwendet die Potenzierung mit :math:`d`.
 
-.. class:: incremental-list
+.. class:: incremental-list list-with-explanations
 
 - Ein kleiner Wert von :math:`d` ist jedoch anfällig für einen Brute-Force-Angriff und für andere Formen der Kryptoanalyse.
 - Der Chinesischen Restsatz (CRT) kann verwendet werden, um Berechnungen zu beschleunigen:
 
-    Die Größen :math:`d\; mod\; (p - 1)` und :math:`d\; mod\; (q - 1)` können vorberechnet werden.
+  Die Größen :math:`d\; mod\; (p - 1)` und :math:`d\; mod\; (q - 1)` können vorberechnet werden.
 
-    Das Ergebnis ist, dass die Berechnung etwa viermal so schnell ist wie die direkte Berechnung von :math:`M = C^d\; mod\; n`.
+  Das Ergebnis ist, dass die Berechnung etwa viermal so schnell ist wie die direkte Berechnung von :math:`M = C^d\; mod\; n`.
 
 
 
@@ -606,14 +604,14 @@ Schlüsselgenerierung
 
 .. grid::
 
-    .. cell::
+    .. cell:: width-50
 
         Vor der Anwendung des Public-Key-Kryptosystems muss jeder Teilnehmer ein Schlüsselpaar erzeugen:
 
         - Bestimmung der Primzahlen :math:`p` und :math:`q`.
         - Wahl von :math:`e` oder :math:`d` und Berechnung der anderen.
 
-    .. cell::
+    .. cell:: width-50
 
         - Da der Wert von :math:`n = pq` jedem potenziellen Gegner bekannt sein wird, müssen die Primzahlen aus einer ausreichend großen Menge ausgewählt werden.
         - Die Methode, die zum Finden großer Primzahlen verwendet wird, muss einigermaßen effizient sein.
@@ -670,7 +668,7 @@ Timing-Angriffe
 Gegenmaßnahmen gegen Timing-Angriffe
 ----------------------------------------
 
-.. class:: inkrementel-list
+.. class:: incremental-list
 
 :Konstante Potenzierungszeit:
     Es gilt sicherzustellen, dass alle Potenzierungen die gleiche Zeit benötigen, bevor ein Ergebnis zurückgegeben wird; dies ist eine einfache Lösung, die jedoch die Leistung beeinträchtigt.
