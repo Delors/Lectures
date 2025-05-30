@@ -1,14 +1,14 @@
 .. meta::
-    :version: genesis
+    :version: renaissance
     :author: Michael Eichberg
     :keywords: "TOR"
-    :description lang=de: TOR 
+    :description lang=de: TOR
     :id: lecture-security-tor
     :first-slide: last-viewed
-    :master-password: WirklichSchwierig!    
+    :master-password: WirklichSchwierig!
 
 .. include:: ../docutils.defs
-    
+
 
 
 TOR - The Onion Router
@@ -20,7 +20,7 @@ TOR - The Onion Router
 
 .. supplemental::
 
-  :Folien: 
+  :Folien:
       [HTML] |html-source|
 
       [PDF] |pdf-source|
@@ -34,7 +34,7 @@ Tor (The Onion Router)
 
 Anwendungsunabhängiger **low-latency Anonymisierungsdienst für TCP-Verbindungen**, der den Standort und die IP des Nutzers verschleiert.
 
-.. class:: incremental
+.. class:: incremental-list
 
 - Typische Anwendung: anonymes Surfen im Internet und Instant Messaging (z. B. Briar)
 - Frei und Open Source
@@ -46,31 +46,31 @@ Anwendungsunabhängiger **low-latency Anonymisierungsdienst für TCP-Verbindunge
 
     :low-latency: Die Verzögerung durch die Anonymisierung ist so gering, dass Tor für Instant Messaging und das Surfen im Internet verwendet werden kann.
 
-    :Overlay-Netzwerk: Tor baut ein eigenes Netzwerk auf, welches auf dem Internet aufsetzt. Die Verbindungen zwischen den Tor-Knoten werden von Tor zusätzlich verschlüsselt. 
+    :Overlay-Netzwerk: Tor baut ein eigenes Netzwerk auf, welches auf dem Internet aufsetzt. Die Verbindungen zwischen den Tor-Knoten werden von Tor zusätzlich verschlüsselt.
 
 
 
-Tor - Verwendung 
+Tor - Verwendung
 --------------------------------
 
-.. class:: incremental
+.. class:: incremental-list list-with-explanations
 
 - legale/intendierte Nutzungen: Nutzer mit allg. Datenschutzbedürfnissen, *Whistleblowers*, Dissidenten, Journalisten, ...
 - illegale Zwecke (**Darknet**)
 
-  .. container:: smaller minor incremental
-    
+  .. container:: incremental
+
     Marktplatz für illegale Waren und Dienstleistungen, z. B. Drogen, Waffen, gefälschte Dokumente, ... (z. B. `Silk Road <https://en.wikipedia.org/wiki/Silk_Road_(marketplace)>`__, oder `CyberBunker <https://en.wikipedia.org/wiki/CyberBunker>`__ als Hosting-Provider für illegale Dienst)
 
-  .. container:: smaller minor incremental
+  .. container:: incremental
 
     Es wird geschätzt, dass etwa 80% des Datenverkehrs im Zusammenhang mit dem Zugriff auf Kinderpornografie steht. Solche Schätzungen sind allerdings mit Vorsicht zu genießen!
 
 
 .. supplemental::
 
-    Wir können unterscheiden zwischen: 
-    
+    Wir können unterscheiden zwischen:
+
     :*Surface Web*: Das frei-verfügbare Internet.
     :*Deep Web*: Das Internet, das durch Zugriffsbeschränkungen nicht öffentlich zugänglich ist.
     :*Dark Web*: Das Internet, das nicht indiziert ist und nur über spezielle Software (z. B. Tor) erreichbar ist. Häufig - aber nicht ausschließlich - wird das Dark Web für illegale Aktivitäten genutzt und ist meist zusätzlich durch Zugriffsbeschränkungen geschützt.
@@ -82,16 +82,16 @@ Tor - potentielle Sicherheitslücken
 
 - :peripheral:`DoS Attacken`
 
-.. container:: incremental  
+.. container:: incremental
 
   - Identifikation von *Onion Services* (aka *Hidden Services*)
-  
-.. container:: incremental  
+
+.. container:: incremental
 
   - Deanonymisierungsattacken
 
 .. container:: incremental
-    
+
     `Aufstellung von Angriffen auf Tor <https://github.com/Attacks-on-Tor/Attacks-on-Tor#correlation-attacks>`__.
 
 
@@ -102,32 +102,32 @@ Tor - Deanonymisierungsattacke 2013
 .. epigraph::
 
     Wenn ein einzelner Nutzer Tor über einen längeren Zeitraum [3 bis 6-Monate, abhängig von einigen Faktoren] regelmäßig nutzt, ist es fast sicher, dass er *de-anonymisiert* werden kann.
-    
+
     [Übersetzt mit DeepL.]
 
     -- 2013 - `Tor is not as safe as you may think <https://www.infosecurity-magazine.com/news/tor-is-not-as-safe-as-you-may-think/>`__
 
-   
+
 
 Tor - Deanonymisierungsattacke 2024
 ------------------------------------
 
 .. epigraph::
 
-    Strafverfolgungsbehörden haben offenbar einen Weg gefunden, Nutzer des Tor-Netzwerkes gezielt zu deanonymisieren. Möglich sein soll dies [...] durch sogenannte Timing-Analysen, die bisher als praktisch nicht umsetzbar galten. Dadurch sei es aufgrund der verschlüsselten Datenpakete zwar nicht möglich zu sehen, was Nutzer verschickten, dass sie überhaupt kommunizierten, sei aber sichtbar. 
-    
+    Strafverfolgungsbehörden haben offenbar einen Weg gefunden, Nutzer des Tor-Netzwerkes gezielt zu deanonymisieren. Möglich sein soll dies [...] durch sogenannte Timing-Analysen, die bisher als praktisch nicht umsetzbar galten. Dadurch sei es aufgrund der verschlüsselten Datenpakete zwar nicht möglich zu sehen, was Nutzer verschickten, dass sie überhaupt kommunizierten, sei aber sichtbar.
+
     .. container:: incremental
 
         [...] ist dafür allerdings eine teils jahrelange Überwachung einzelner Tor-Nodes erforderlich. [...]
 
-    -- 2024 - `Behörden unterwandern Tor <https://www.golem.de/news/deanonymisierung-von-nutzern-behoerden-unterwandern-tor-netzwerk-2409-189076.html>`__    
+    -- 2024 - `Behörden unterwandern Tor <https://www.golem.de/news/deanonymisierung-von-nutzern-behoerden-unterwandern-tor-netzwerk-2409-189076.html>`__
 
 
 
 Tor - Hintergrund
 ------------------
 
-.. class:: incremental
+.. class:: incremental-list
 
 - Die grundlegende Idee ist es eine Trennung zwischen der Quelle und dem Ziel des Datenverkehrs zu schaffen.
 - Der Datenverkehr wird über *mehrere Knoten* (*Relays*) umgeleitet, die jeweils nur den vorherigen und den nächsten Knoten kennen. Der Weg den ein Datenpaket nimmt, wird als *Circuit* oder *Path* bezeichnet.
@@ -141,52 +141,48 @@ Tor - Bedrohungsmodel
 
 Tor bietet Schutz for folgenden Angreifern: Einem Angreifer dem es gelingt ...
 
-- einen Teil der Kommunikation zu beobachten und 
+- einen Teil der Kommunikation zu beobachten und
 - nur einen Teil der Tor-Knoten zu kontrollieren, indem er entweder einen eigenen Tor-Knoten (*Relay*\ ; früher *Onion-Router*) betreibt oder einen bereits laufenden Knoten kompromittiert.
 
-.. admonition:: Warnung
-   :class: incremental margin-top-2em
+.. warning::
+   :class: incremental
 
    Folgendes Szenario ist nicht abgedeckt: Ein Angreifer, der beide Enden der Kommunikation, den ``Entry Guard`` und den ``Exit Node`` überwachen kann.
-   
+
    Gegen solche Angreifer bietet Tor keine Anonymität.
 
 
 
-.. class:: vertical-title tiny
+.. class:: s-vertical-title
 
 Tor - Aufbau
 ----------------
 
-.. container:: stack
+.. deck::
 
-    .. container:: layer
+    .. card::
 
         .. image:: images/tor/base-network.svg
             :alt: Tor - Network
             :align: center
-            :height: 1120px
 
-    .. container:: layer incremental overlay
+    .. card:: overlay
 
         .. image:: images/tor/directory-authority.svg
             :alt: Tor - Directory Authority
             :align: center
-            :height: 1120px
 
-    .. container:: layer incremental overlay
+    .. card:: overlay
 
         .. image:: images/tor/bridge-nodes.svg
             :alt: TOR - Bridges and Bridge Nodes
             :align: center
-            :height: 1120px
 
-    .. container:: layer incremental overlay
+    .. card:: overlay
 
         .. image:: images/tor/msg.svg
             :alt: TOR - Onion Routing
             :align: center
-            :height: 1120px
 
 
 .. supplemental::
@@ -195,27 +191,27 @@ Tor - Aufbau
 
     :Tor-Knoten: Rechner, die das Tor-Netzwerk bilden. Es gibt drei Arten von Tor-Knoten:
 
-      - *Entry Nodes* (auch *Guard Nodes*): Diese Knoten sind die ersten Knoten in der Kette. Sie kennen die IP-Adresse des Clients. Sie können den Datenverkehr nicht entschlüsseln. Sie können aber sehen, dass der Datenverkehr von einem bestimmten Client kommt. 
-      - *Middle Nodes*: Diese Knoten sind die mittleren Knoten in der Kette. Sie kennen weder die IP-Adresse des Clients noch die IP-Adresse des Ziels. Sie können den Datenverkehr nicht entschlüsseln. Sie können aber sehen, dass der Datenverkehr von einem bestimmten Entry Node kommt und an einen bestimmten Exit Node geht. 
-      - *Exit Nodes*: Diese Knoten sind die letzten Knoten in der Kette. Sie kennen die IP-Adresse des Ziels. Sie können den Datenverkehr entschlüsseln. Sie können aber nicht sehen, von welchem Entry Node der Datenverkehr kommt. 
-      - *Bridge Nodes*: Diese Knoten sind *Entry Nodes*, die nicht bzw. nicht vollständig öffentlich bekannt. Diese dienen ggf. dazu in Ländern, in denen Tor blockiert wird, den Zugang zu Tor zu ermöglichen. Sollte eine Verbindung zu einer Bridge nicht hergestellt werden können, aufgrund der Struktur der Nachrichten - zum Beispiel aufgrund der Verwendung von *Deep Packet Inspection* - dann ist es möglich diese mit Hilfe von *Pluggable Transports* zu verschleiern. 
+      - *Entry Nodes* (auch *Guard Nodes*): Diese Knoten sind die ersten Knoten in der Kette. Sie kennen die IP-Adresse des Clients. Sie können den Datenverkehr nicht entschlüsseln. Sie können aber sehen, dass der Datenverkehr von einem bestimmten Client kommt.
+      - *Middle Nodes*: Diese Knoten sind die mittleren Knoten in der Kette. Sie kennen weder die IP-Adresse des Clients noch die IP-Adresse des Ziels. Sie können den Datenverkehr nicht entschlüsseln. Sie können aber sehen, dass der Datenverkehr von einem bestimmten Entry Node kommt und an einen bestimmten Exit Node geht.
+      - *Exit Nodes*: Diese Knoten sind die letzten Knoten in der Kette. Sie kennen die IP-Adresse des Ziels. Sie können den Datenverkehr entschlüsseln. Sie können aber nicht sehen, von welchem Entry Node der Datenverkehr kommt.
+      - *Bridge Nodes*: Diese Knoten sind *Entry Nodes*, die nicht bzw. nicht vollständig öffentlich bekannt. Diese dienen ggf. dazu in Ländern, in denen Tor blockiert wird, den Zugang zu Tor zu ermöglichen. Sollte eine Verbindung zu einer Bridge nicht hergestellt werden können, aufgrund der Struktur der Nachrichten - zum Beispiel aufgrund der Verwendung von *Deep Packet Inspection* - dann ist es möglich diese mit Hilfe von *Pluggable Transports* zu verschleiern.
 
-    :Tor-Netzwerk: besteht aus mehreren tausend Tor-Knoten. Viele Knoten sind freiwillig betriebene Knoten. 
+    :Tor-Netzwerk: besteht aus mehreren tausend Tor-Knoten. Viele Knoten sind freiwillig betriebene Knoten.
 
     :Circuit/Path: Ein Circuit besteht typischerweise aus drei Knoten: *Entry Node*, *Middle Node* und *Exit Node*. Mehr Knoten sind möglich, haben jedoch nur einen geringen Einfluss auf die Sicherheit. Die Übertragung der Daten zwischen diesen Knoten erfolgt verschlüsselt. In welcher Form die Daten vom *Exit Node* zum Ziel übertragen werden, ist nicht Teil von Tor. Hat der Client eine verschlüsselte Verbindung initiiert (HTTPS), dann ist auch der Datenverkehr zwischen dem Exit Node und dem Ziel (noch) verschlüsselt ansonsten nicht und der Exit Node kann den Datenverkehr lesen.
 
-    :Directory Authority: 
-    
+    :Directory Authority:
+
         Knoten, die die Liste der aktiven Tor-Knoten verwalten. Diese Liste wird von allen Tor-Knoten regelmäßig in Hinblick auf das *Consensus Document* bzgl. der Knoten und deren Eigenschaften sowie Zustand abgefragt. Das *Consensus Document* wird von den *Directory Authorities* einmal pro Stunde gemeinsam erstellt und beschreibt die relevanten Eigenschaften jedes Tor-Knotens. Die Authentizität des *Consensus Document* wird durch die Signaturen der *Directory Authorities* nachgewiesen.
-    
-        Es gibt (Stand 2023) 9 *Directory Authorities*. 
+
+        Es gibt (Stand 2023) 9 *Directory Authorities*.
 
     :`Onion Routing`:eng:: bedeutet, dass die Datenpakete mehrfach verschlüsselt werden. Jeder Tor-Knoten kann nur die Verschlüsselungsschicht entfernen, für die er den Schlüssel hat. Die Schlüssel werden mit dem Client während des Aufbaus des Circuits ausgehandelt. Es gibt für jeden Tor-Knoten einen eigenen Schlüssel und die Nachrichten werden in umgekehrter Reihenfolge der Tor-Knoten entlang des Pfades verschlüsselt. d. h. die Verschlüsselung für den Entry Node wird als letztes angewendet, da diese als erstes entfernt wird.
 
     :Cells: sind die Datenpakete, die zwischen den Tor-Knoten ausgetauscht werden. Cells sind immer 512Byte groß, um es unmöglich zu machen anhand der Größe der Datenpakete Rückschlüsse auf die Daten zu ziehen.
 
     .. admonition:: Hinweis
-    
+
         In älteren Dokumenten wird der *Client* auch als *Onion Proxy (OP)* bezeichnet und die Tor-Knoten als *Onion Router (OR)*. Die Tor-Knoten (:eng:`Nodes`) werden auch als *Onion Relay* bezeichnet.
 
 
@@ -228,7 +224,6 @@ Initiierung eines Circuits (konzeptionell)
 .. image:: images/tor/circuit-creation.svg
     :alt: Initiierung eines Circuits
     :align: center
-    :width: 1800px
 
 .. supplemental::
 
@@ -244,19 +239,19 @@ Tor Relays in Deutschland
 .. image:: images/tor-metrics-relays.png
    :alt: Tor Relays gelistet von Tor Metrics Jan. 2024
    :align: center
-   :height: 1050px
+   :class: highdpi trbl-box-shadow-dark
 
 .. supplemental::
 
     **Flags**
 
-    Beschreibung jedes Tor-Knotens in Hinblick auf die Rolle des Knotens im Tor-Netzwerk. Zum Beispiel: kann der Knoten als Entry Node verwendet werden? Ist der Knoten schnell genug um als Exit Node verwendet zu werden? 
+    Beschreibung jedes Tor-Knotens in Hinblick auf die Rolle des Knotens im Tor-Netzwerk. Zum Beispiel: kann der Knoten als Entry Node verwendet werden? Ist der Knoten schnell genug um als Exit Node verwendet zu werden?
 
     Auszug wichtiger *Flags*:
 
     :HSDir: Ein Router ist ein *v2 Hidden Service Directory*
     :Running: Eine Authority konnte sich innerhalb der letzten 45 Minuten mit dem Router verbinden.
-    :Stable: die gewichtet Zeit zwischen zwei Fehlern (*weighted MTBF*) ist größer als 7 Tage oder größer als der Median aller aktiven Router. 
+    :Stable: die gewichtet Zeit zwischen zwei Fehlern (*weighted MTBF*) ist größer als 7 Tage oder größer als der Median aller aktiven Router.
     :Valid: eine Version von Tor wird ausgeführt, die von den Authorities als aktuell angesehen wird und keine bekannten Schwachstellen aufweist.
 
 
@@ -267,32 +262,30 @@ Informationen über Tor Relays
 .. image:: images/tor-relay-snorlax.png
         :alt: Tor Relay Snorlax
         :align: right
-        :width: 50%
-        :class: picture
+        :class: highdpi trbl-box-shadow-dark
 
-.. container:: smaller width-40 float-left
+.. container:: incremental width-40 float-left
 
-    .. stack::
+    .. deck::
 
-        .. layer:: incremental
+        .. card::
 
-            - Viele Tor Relays werden von Freiwilligen betrieben 
+            - Viele Tor Relays werden von Freiwilligen betrieben
             - In Deutschland gibt es viele Relays
             - Hetzner ist diesbezüglich beliebt...
-            
+
             .. container:: incremental
 
                 ... und deswegen steht Hetzner auf der Liste der zu `vermeidenden Hoster <https://community.torproject.org/relay/community-resources/good-bad-isps/>`__ (Stand Jan. 2024).
 
 
-        .. layer:: incremental
+        .. card::
 
             Ein Tor-Knoten wird as ``schnell`` (*fast*) eingestuft, wenn er aktiv ist und eine Bandbreite von mindestens 100KB/s hat oder unter den Top 7/8tel aller bekannten aktiven Router ist.
-            
+
             Zum Vergleich: Die durchschnittliche Bandbreite in Deutschland ist 80Mbit/s (cf. `Statista <https://www.statista.com/statistics/1338657/average-internet-speed-germany/>`__).
 
             (Stand Jan. 2024)
-
 
 .. supplemental::
 
@@ -301,7 +294,7 @@ Informationen über Tor Relays
     .. image:: images/tor-circuit.png
         :alt: Tor Circuit
         :align: center
-        :class: picture
+        :class: trbl-box-shadow-dark highdpi
 
     **Jan. 2024 - zu vermeidende Hoster**:
 
@@ -326,7 +319,7 @@ Die Anzahl der Exit nodes ist deutlich kleiner (2. Jan. 2024 - 1314 Einträge) a
 .. image:: images/tor-german-exit-node.png
     :alt: Deutscher Tor Exit Node von der TU Berlin
     :align: center
-    :class: picture
+    :class: highdpi
 
 .. supplemental::
 
@@ -354,9 +347,9 @@ Jeder ``Node`` legt in seiner ``Exit Policy`` genau fest welchen Datenverkehr we
 Bedeutung von Bridge Nodes (hier: WebTunnel bridges)
 -------------------------------------------------------
 
-.. stack::
+.. deck::
 
-    .. layer::
+    .. card::
 
         .. epigraph::
 
@@ -368,7 +361,7 @@ Bedeutung von Bridge Nodes (hier: WebTunnel bridges)
 
             -- 28.11.2024 `Tor needs 200 new WebTunnel bridges to fight censorship <https://www.bleepingcomputer.com/news/security/tor-needs-200-new-webtunnel-bridges-to-fight-censorship/>`__
 
-    .. layer:: incremental
+    .. card::
 
         .. epigraph::
 
@@ -382,7 +375,7 @@ Bedeutung von Bridge Nodes (hier: WebTunnel bridges)
 
             -- 28.11.2024 `Tor needs 200 new WebTunnel bridges to fight censorship <https://www.bleepingcomputer.com/news/security/tor-needs-200-new-webtunnel-bridges-to-fight-censorship/>`__
 
-    .. layer:: incremental
+    .. card::
 
         .. epigraph::
 
@@ -397,17 +390,17 @@ Bedeutung von Bridge Nodes (hier: WebTunnel bridges)
             - **Avoid hosting with Hetzner.**
 
             -- 28.11.2024 `Tor needs 200 new WebTunnel bridges to fight censorship <https://www.bleepingcomputer.com/news/security/tor-needs-200-new-webtunnel-bridges-to-fight-censorship/>`__
-            
+
 
 
 Onion Services/Hidden Services
 -----------------------------------
 
-- Server, die Anfragen nur aus dem Tor-Netzwerk annehmen, werden als *Onion Services* (bzw. *Hidden Services*) bezeichnet. 
+- Server, die Anfragen nur aus dem Tor-Netzwerk annehmen, werden als *Onion Services* (bzw. *Hidden Services*) bezeichnet.
 - ``.onion`` ist eine *Pseudo*-Top-Level-Domain, die für Onion Services verwendet wird.
-- Onion Services können nur über das Tor-Netzwerk erreicht werden. 
-  
-  :peripheral:`Onion-Adresse der New-York-Times im Tor Netzwerk: https://nytimesn7cgmftshazwhfgzm37qxb44r64ytbb2dj3x62d2lljsciiyd.onion (Aus Deutschland faktisch nicht nutzbar.)` 
+- Onion Services können nur über das Tor-Netzwerk erreicht werden.
+
+  :peripheral:`Onion-Adresse der New-York-Times im Tor Netzwerk: https://nytimesn7cgmftshazwhfgzm37qxb44r64ytbb2dj3x62d2lljsciiyd.onion (Aus Deutschland faktisch nicht nutzbar.)`
 
 
 
@@ -416,23 +409,23 @@ Tor Browser
 
 Standardanwendung für den Zugriff auf das Tor-Netzwerk.
 
-.. container:: stack
+.. deck::
 
-    .. container:: layer clearfix
-        
+    .. card:: clearfix
+
         .. image:: images/tor-onion-service-nyt.png
             :alt: Tor Browser mit Ney-York-Times - 01.01.2024
-            :height: 848px
             :align: left
+            :class: highdpi
 
         .. container:: scriptsize
 
             Ergebnis nach mehreren Minuten Wartezeit und zwei Versuchen überhaupt eine Verbindung aufzubauen.
 
-    .. container:: layer incremental
+    .. card::
 
-        **Sicherheitseinstellungen des Tor Browsers**       
-        
+        **Sicherheitseinstellungen des Tor Browsers**
+
         :Standard: alle Browserfunktionen sind aktiviert.
         :Sicherer: JavaScript ist auf Nicht-HTTPS-Seiten deaktiviert. Wenn JavaScript aktiviert ist, dann sind die Leistungsoptimierungen deaktiviert. Audio und Video (HTML5-Medien) sowie WebGL werden nur nach Mausklick abgespielt.
         :Sicher: (zusätzlich) JavaScript ist immer deaktiviert. Einige Schriftarten, Symbole, mathematische Symbole und Bilder sind deaktiviert.
@@ -450,7 +443,7 @@ Tor
 
 .. class:: positive-list incremental
 
-- Schützt vor der Analyse des Datenverkehrs. 
+- Schützt vor der Analyse des Datenverkehrs.
 
   Von `SecureDrop <https://securedrop.org/>`__ wird zum Beispiel für Whistleblower empfohlen sich mit dem SecureDrop Service über Tor zu verbinden und erst dann Dokumente hochzuladen.
 
@@ -479,32 +472,32 @@ Tor
     - System Fonts
     - Werden Cookies unterstützt?
     - Betriebssystem
-    - Betriebssystem Sprache 
+    - Betriebssystem Sprache
     - Keyboard layout
     - Art/Version des Browsers
     - verfügbare Sensoren: Beschleunigungssensor, Näherungssensor, Gyroskop
     - verfügbare Browser Plugins
     - HTTP-Header Eigenschaften
     - CPU Klasse
-    - HTML 5 Canvas Fingerprinting 
+    - HTML 5 Canvas Fingerprinting
     - Unterstützung von Multitouch
 
     *Monitoring des Netzwerks an den Grenzen*
 
     Hat in der Vergangenheit dazu geführt, dass Nutzer von Tor-Netzwerken identifiziert werden konnten.
 
-    *Ende-zu-Ende Korrelation von Datenverkehr* 
+    *Ende-zu-Ende Korrelation von Datenverkehr*
 
-    Auch als *Traffic Confirmation* bekannt. Diese Art von Attacke ist möglich, wenn *Relays* am Anfang und am Ende der Verbindung kontrolliert werden. Die Angreifer können dann den Datenverkehr an beiden Enden beobachten und die Datenpakete korrelieren z. B. basierend auf statistischen Informationen über die Zeitpunkte und Volumen von Datenflüssen. 
+    Auch als *Traffic Confirmation* bekannt. Diese Art von Attacke ist möglich, wenn *Relays* am Anfang und am Ende der Verbindung kontrolliert werden. Die Angreifer können dann den Datenverkehr an beiden Enden beobachten und die Datenpakete korrelieren z. B. basierend auf statistischen Informationen über die Zeitpunkte und Volumen von Datenflüssen.
 
 
 
-.. class:: integrated-exercise transition-move-left
+.. class:: exercises transition-move-left
 
 Übung: Tor
 -----------
 
-- \ 
+- \
 
   .. exercise:: Onion Services
 
@@ -514,14 +507,12 @@ Tor
         :pwd: nurHTTP
 
         Im Allgemeinen ist es ausreichend wenn Onion Service "nur" HTTP anbieten, da der gesamte Verkehr zwischen Client und Server durch Tor verschlüsselt ist.
-    
+
         Für Onion Services ist es sinnvoller über HTTP zu kommunizieren. HTTPS bietet keinen relevanten zusätzlichen Schutz. Auf der anderen Seite gefährdet HTTPS die Anonymität des Servers, da die TLS Zertifikate öffentlich sind und damit die Existenz des Servers preisgeben.
 
         https://support.torproject.org/https/https-1/
 
-- \ 
-
-  .. exercise:: TOR und DNS Lookups
+- .. exercise:: TOR und DNS Lookups
 
     Warum führt der Tor Browser keine DNS Lookups durch? Warum ist dies wichtig und wer kann/muss es stattdessen machen?
 
@@ -532,12 +523,10 @@ Tor
 
         Ein standardmäßiger DNS Lookup würde die Anonymität des Nutzers gefährden. Der Exit Node könnte den DNS Lookup mit dem Datenverkehr des Nutzers korrelieren und damit die Identität des Nutzers ermitteln.
 
-- \ 
+- .. exercise:: TOR abschalten?
 
-  .. exercise:: TOR abschalten?
-    
     Warum hätte das Abschalten von TOR auf kriminelle Aktivitäten im Internet vermutlich nur einen geringeren Einfluss?
-  
+
     .. solution::
         :pwd: BringtNichts
 
@@ -545,35 +534,35 @@ Tor
 
 
 
-.. class:: integrated-exercise transition-move-left
+.. class:: exercises transition-move-left
 
 Übung: Tor
 -----------
 
-- \ 
+- \
 
   .. exercise:: Wie vergleichen sich Proxies und Tor-Knoten?
 
-    .. solution:: 
+    .. solution::
         :pwd: ProxyVsTor
 
         Ein Proxy ist ein Server, der als Vermittler zwischen einem Client und einem Server fungiert. Ein Tor-Knoten ist ein Server, der als Vermittler zwischen einem Client und einem Server fungiert. Ein Tor-Knoten ist also ein Proxy, aber ein Proxy ist nicht unbedingt ein Tor-Knoten.
 
-- \ 
+- \
 
   .. exercise:: Wie unterscheidet sich Tor von einem VPN?
-  
-    .. solution:: 
+
+    .. solution::
         :pwd: VPNsundTOR
 
-        Ein VPN ist ein Tunnel zwischen zwei Netzwerken. Tor ist ein Tunnel zwischen einem Client und einem Server. 
+        Ein VPN ist ein Tunnel zwischen zwei Netzwerken. Tor ist ein Tunnel zwischen einem Client und einem Server.
         - In beiden Fällen kennt der Ziel(webs)erver nicht die IP-Adresse des Clients.
-        - Tor ist dezentralisiert und anonym. VPNs sind zentralisiert und nicht anonym; der VPN Anbieter kennt die IP-Adresse des Clients. 
+        - Tor ist dezentralisiert und anonym. VPNs sind zentralisiert und nicht anonym; der VPN Anbieter kennt die IP-Adresse des Clients.
         - Tor ist sehr langsam; VPNs sind schnell(er).
         - Bei Tor ist dem *Exit Node* nicht bekannt wer der Client ist; bei VPNs ist dem VPN Anbieter bekannt wer der Client ist.
         - Tor erlaubt den Zugriff auf .onion Adressen; VPNs nicht.
 
-- \ 
+- \
 
   .. exercise:: Tor über VPN oder VPN über TOR?
 
@@ -584,15 +573,15 @@ Tor
 
         Es macht nur selten Sinn ein VPN über Tor (d. h. erst TOR, dann VPN) zu betreiben. In diesem Fall ist zum Beispiel kein Zugriff auf .onion Adressen möglich. Weiterhin kennt der VPN Anbieter seine Kunden. Jedoch wird der Standort des Clients vor dem VPN Anbieter verborgen. Die Einrichtung ist jedoch kompliziert und wird ggf. vom VPN Anbieter nicht unterstützt. Möglicherweise sinnvoll wenn der Einsatz eines VPN verboten ist.
 
-        Es macht meistens mehr Sinn Tor über ein VPN zu betreiben. In diesem Fall sieht kein TOR-Knoten die IP Adresse des Clients. Insbesondere garantiert diese Lösung die Annonymisierung, die das TOR Netzwerk bietet. Weiterhin weiss der VPN Anbieter nicht, dass der Client TOR benutzt.  
+        Es macht meistens mehr Sinn Tor über ein VPN zu betreiben. In diesem Fall sieht kein TOR-Knoten die IP Adresse des Clients. Insbesondere garantiert diese Lösung die Annonymisierung, die das TOR Netzwerk bietet. Weiterhin weiss der VPN Anbieter nicht, dass der Client TOR benutzt.
 
-- \ 
+- \
 
   .. exercise:: Kontrolle über TOR Netzwerk?
 
     Was passiert, wenn eine Angreifer in der Lage ist :math:`50\% + 1` der ``Directory Authority`` Server zu kontrollieren?
 
-    .. solution:: 
+    .. solution::
         :pwd: Hell!
 
         "Hell breaks loose." Er kann zum Beispiel auf die Entry und Exitnodes verweisen, die er kontrolliert. Damit kann er den Datenverkehr entschlüsseln. Er kann auf die Onion Services verweisen, die er kontrolliert. Damit kann er die Identität der Nutzer der Onion Services ermitteln.
