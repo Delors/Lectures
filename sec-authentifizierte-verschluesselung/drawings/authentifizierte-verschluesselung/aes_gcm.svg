@@ -1,0 +1,1059 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+    "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg
+    xmlns:xl="http://www.w3.org/1999/xlink"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns="http://www.w3.org/2000/svg"
+    version="1.1"
+    viewBox="-1142 581 770 643"
+    width="445"
+    height="380"
+>
+<style>
+  @import url('/LectureDoc2/ext/fonts/ld-fonts.css');
+</style>
+<defs>
+    <marker
+            orient="auto"
+            overflow="visible"
+            markerUnits="strokeWidth"
+            id="FilledArrow_Marker"
+            stroke-linejoin="miter"
+            stroke-miterlimit="10"
+            viewBox="-1 -3 7 6"
+            markerWidth="7"
+            markerHeight="6"
+            color="black"
+        >
+      <g>
+        <path
+                    d="M 4.8 0 L 0 -1.8 L 0 1.8 Z"
+                    fill="currentColor"
+                    stroke="currentColor"
+                    stroke-width="1"
+                />
+      </g>
+    </marker>
+  </defs>
+  <metadata> Produced by OmniGraffle 8.0\n2025-06-02 15:40:32 +0000</metadata>
+  <g
+        id="aes_gcm"
+        stroke="none"
+        stroke-opacity="1"
+        stroke-dasharray="none"
+        fill-opacity="1"
+        fill="none"
+    >
+    <title>aes_gcm</title>
+    <g id="aes_gcm_Layer_1">
+      <title>Layer 1</title>
+      <g id="Graphic_330">
+        <path
+                    d="M -929.9554 882.8556 L -856.6722 882.8556 C -854.463 882.8556 -852.6722 884.6465 -852.6722 886.8556 L -852.6722 929.3466 C -852.6722 931.5557 -854.463 933.3466 -856.6722 933.3466 L -929.9554 933.3466 C -932.1645 933.3466 -933.9554 931.5557 -933.9554 929.3466 L -933.9554 886.8556 C -933.9554 884.6465 -932.1645 882.8556 -929.9554 882.8556 Z"
+                    fill="#fece88"
+                    fill-opacity=".49912933"
+                />
+        <text transform="translate(-928.9554 898.6011)" fill="black">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="14"
+                        font-weight="400"
+                        fill="black"
+                        x="14.655602"
+                        y="15"
+                        xml:space="preserve"
+                    >mult H</tspan>
+        </text>
+      </g>
+      <g id="Graphic_365">
+        <path
+                    d="M -489.255 1097.1769 L -415.9718 1097.1769 C -413.76267 1097.1769 -411.9718 1098.9678 -411.9718 1101.1769 L -411.9718 1143.6679 C -411.9718 1145.877 -413.76267 1147.6679 -415.9718 1147.6679 L -489.255 1147.6679 C -491.46415 1147.6679 -493.255 1145.877 -493.255 1143.6679 L -493.255 1101.1769 C -493.255 1098.9678 -491.46415 1097.1769 -489.255 1097.1769 Z"
+                    fill="#fece88"
+                    fill-opacity=".49912933"
+                />
+        <text transform="translate(-488.255 1112.9224)" fill="black">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="14"
+                        font-weight="400"
+                        fill="black"
+                        x="14.655602"
+                        y="15"
+                        xml:space="preserve"
+                    >mult H</tspan>
+        </text>
+      </g>
+      <g id="Graphic_331">
+        <path
+                    d="M -791.9339 957.9958 L -718.6507 957.9958 C -716.4415 957.9958 -714.6507 959.7867 -714.6507 961.9958 L -714.6507 1004.4868 C -714.6507 1006.696 -716.4415 1008.4868 -718.6507 1008.4868 L -791.9339 1008.4868 C -794.143 1008.4868 -795.9339 1006.696 -795.9339 1004.4868 L -795.9339 961.9958 C -795.9339 959.7867 -794.143 957.9958 -791.9339 957.9958 Z"
+                    fill="#fece88"
+                    fill-opacity=".49912933"
+                />
+        <text transform="translate(-790.9339 973.7413)" fill="black">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="14"
+                        font-weight="400"
+                        fill="black"
+                        x="14.655602"
+                        y="15"
+                        xml:space="preserve"
+                    >mult H</tspan>
+        </text>
+      </g>
+      <g id="Graphic_308">
+        <path
+                    d="M -983.0239 733.7269 L -831.0239 733.7269 C -828.8148 733.7269 -827.0239 735.5177 -827.0239 737.7269 L -827.0239 780.2179 C -827.0239 782.427 -828.8148 784.2179 -831.0239 784.2179 L -983.0239 784.2179 C -985.233 784.2179 -987.0239 782.427 -987.0239 780.2179 L -987.0239 737.7269 C -987.0239 735.5177 -985.233 733.7269 -983.0239 733.7269 Z"
+                    fill="#b4b4b4"
+                    fill-opacity=".29947917"
+                />
+        <text transform="translate(-987.0239 749.4724)" fill="black">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="14"
+                        font-weight="400"
+                        fill="black"
+                        x="47.366"
+                        y="15"
+                        xml:space="preserve"
+                    >Plaintext 1</tspan>
+        </text>
+      </g>
+      <g id="Graphic_313">
+        <path
+                    d="M -831.5537 808.4832 L -679.55374 808.4832 C -677.3446 808.4832 -675.55374 810.274 -675.55374 812.4832 L -675.55374 854.9742 C -675.55374 857.1833 -677.3446 858.9742 -679.55374 858.9742 L -831.5537 858.9742 C -833.7629 858.9742 -835.5537 857.1833 -835.5537 854.9742 L -835.5537 812.4832 C -835.5537 810.274 -833.7629 808.4832 -831.5537 808.4832 Z"
+                    fill="#b4b4b4"
+                    fill-opacity=".29947917"
+                />
+        <text transform="translate(-835.5537 824.2287)" fill="black">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="14"
+                        font-weight="400"
+                        fill="black"
+                        x="42.123"
+                        y="15"
+                        xml:space="preserve"
+                    >Ciphertext 1</tspan>
+        </text>
+      </g>
+      <g id="Graphic_205">
+        <path
+                    d="M -1137.2148 584.5981 L -985.2148 584.5981 C -983.0057 584.5981 -981.2148 586.389 -981.2148 588.5981 L -981.2148 631.0891 C -981.2148 633.29824 -983.0057 635.0891 -985.2148 635.0891 L -1137.2148 635.0891 C -1139.424 635.0891 -1141.2148 633.29824 -1141.2148 631.0891 L -1141.2148 588.5981 C -1141.2148 586.389 -1139.424 584.5981 -1137.2148 584.5981 Z"
+                    fill="#b4b4b4"
+                    fill-opacity=".29947917"
+                />
+        <text transform="translate(-1141.2148 600.3436)" fill="black">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="14"
+                        font-weight="400"
+                        fill="black"
+                        x="16.167"
+                        y="15"
+                        xml:space="preserve"
+                    >IV = Nonce || Zähler</tspan>
+        </text>
+      </g>
+      <g id="Group_309">
+        <g id="Graphic_312">
+          <ellipse
+                        cx="-755.7446"
+                        cy="758.7659"
+                        rx="21.2500339554153"
+                        ry="21.043594231606"
+                        stroke="black"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                    />
+        </g>
+        <g id="Line_311">
+          <line
+                        x1="-776.9946"
+                        y1="758.893"
+                        x2="-734.4946"
+                        y2="758.893"
+                        stroke="black"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                    />
+        </g>
+        <g id="Line_310">
+          <line
+                        x1="-756.041"
+                        y1="737.7224"
+                        x2="-756.041"
+                        y2="780.2224"
+                        stroke="black"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                    />
+        </g>
+      </g>
+      <g id="Group_383">
+        <g id="Graphic_386">
+          <ellipse
+                        cx="-755.2923"
+                        cy="907.8947"
+                        rx="21.2500339554152"
+                        ry="21.043594231606"
+                        stroke="black"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                    />
+        </g>
+        <g id="Line_385">
+          <line
+                        x1="-776.5423"
+                        y1="908.0218"
+                        x2="-734.0423"
+                        y2="908.0218"
+                        stroke="black"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                    />
+        </g>
+        <g id="Line_384">
+          <line
+                        x1="-755.5887"
+                        y1="886.8511"
+                        x2="-755.5887"
+                        y2="929.3511"
+                        stroke="black"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                    />
+        </g>
+      </g>
+      <g id="Group_387">
+        <g id="Graphic_390">
+          <ellipse
+                        cx="-452.6134"
+                        cy="758.7659"
+                        rx="21.2500339554153"
+                        ry="21.043594231606"
+                        stroke="black"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                    />
+        </g>
+        <g id="Line_389">
+          <line
+                        x1="-473.8634"
+                        y1="758.893"
+                        x2="-431.3634"
+                        y2="758.893"
+                        stroke="black"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                    />
+        </g>
+        <g id="Line_388">
+          <line
+                        x1="-452.90985"
+                        y1="737.7224"
+                        x2="-452.90985"
+                        y2="780.2224"
+                        stroke="black"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                    />
+        </g>
+      </g>
+      <g id="Group_391">
+        <g id="Graphic_394">
+          <ellipse
+                        cx="-452.6134"
+                        cy="907.8947"
+                        rx="21.2500339554153"
+                        ry="21.043594231606"
+                        stroke="black"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                    />
+        </g>
+        <g id="Line_393">
+          <line
+                        x1="-473.8634"
+                        y1="908.0218"
+                        x2="-431.3634"
+                        y2="908.0218"
+                        stroke="black"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                    />
+        </g>
+        <g id="Line_392">
+          <line
+                        x1="-452.90985"
+                        y1="886.8511"
+                        x2="-452.90985"
+                        y2="929.3511"
+                        stroke="black"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                    />
+        </g>
+      </g>
+      <g id="Group_395">
+        <g id="Graphic_398">
+          <ellipse
+                        cx="-452.6134"
+                        cy="1052.6254"
+                        rx="21.2500339554153"
+                        ry="21.0435942316059"
+                        stroke="black"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                    />
+        </g>
+        <g id="Line_397">
+          <line
+                        x1="-473.8634"
+                        y1="1052.7525"
+                        x2="-431.3634"
+                        y2="1052.7525"
+                        stroke="black"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                    />
+        </g>
+        <g id="Line_396">
+          <line
+                        x1="-452.90985"
+                        y1="1031.5819"
+                        x2="-452.90985"
+                        y2="1074.0819"
+                        stroke="black"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                    />
+        </g>
+      </g>
+      <g id="Group_399">
+        <g id="Graphic_402">
+          <ellipse
+                        cx="-755.2923"
+                        cy="1122.216"
+                        rx="21.2500339554152"
+                        ry="21.043594231606"
+                        stroke="black"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                    />
+        </g>
+        <g id="Line_401">
+          <line
+                        x1="-776.5423"
+                        y1="1122.3431"
+                        x2="-734.0423"
+                        y2="1122.3431"
+                        stroke="black"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                    />
+        </g>
+        <g id="Line_400">
+          <line
+                        x1="-755.5887"
+                        y1="1101.1724"
+                        x2="-755.5887"
+                        y2="1143.6724"
+                        stroke="black"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                    />
+        </g>
+      </g>
+      <g id="Graphic_219">
+        <path
+                    d="M -1137.2148 654.2115 L -985.2148 654.2115 C -983.0057 654.2115 -981.2148 656.0024 -981.2148 658.2115 L -981.2148 705.4615 C -981.2148 707.6707 -983.0057 709.4615 -985.2148 709.4615 L -1137.2148 709.4615 C -1139.424 709.4615 -1141.2148 707.6707 -1141.2148 705.4615 L -1141.2148 658.2115 C -1141.2148 656.0024 -1139.424 654.2115 -1137.2148 654.2115 Z"
+                    fill="#ffc0ff"
+                />
+        <text transform="translate(-1141.2148 662.8365)" fill="black">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="14"
+                        font-weight="400"
+                        fill="black"
+                        x="68.492"
+                        y="15"
+                        xml:space="preserve"
+                    >AES </tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="14"
+                        font-weight="400"
+                        fill="black"
+                        x="29.481"
+                        y="34"
+                        xml:space="preserve"
+                    >Verschlüsselung</tspan>
+        </text>
+      </g>
+      <g id="Graphic_307">
+        <path
+                    d="M -831.5537 654.2115 L -679.55374 654.2115 C -677.3446 654.2115 -675.55374 656.0024 -675.55374 658.2115 L -675.55374 705.4615 C -675.55374 707.6707 -677.3446 709.4615 -679.55374 709.4615 L -831.5537 709.4615 C -833.7629 709.4615 -835.5537 707.6707 -835.5537 705.4615 L -835.5537 658.2115 C -835.5537 656.0024 -833.7629 654.2115 -831.5537 654.2115 Z"
+                    fill="#ffc0ff"
+                />
+        <text transform="translate(-835.5537 662.8365)" fill="black">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="14"
+                        font-weight="400"
+                        fill="black"
+                        x="68.492"
+                        y="15"
+                        xml:space="preserve"
+                    >AES </tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="14"
+                        font-weight="400"
+                        fill="black"
+                        x="29.481"
+                        y="34"
+                        xml:space="preserve"
+                    >Verschlüsselung</tspan>
+        </text>
+      </g>
+      <g id="Graphic_305">
+        <path
+                    d="M -943.6655 584.5981 L -870.3823 584.5981 C -868.1732 584.5981 -866.3823 586.389 -866.3823 588.5981 L -866.3823 631.0891 C -866.3823 633.29824 -868.1732 635.0891 -870.3823 635.0891 L -943.6655 635.0891 C -945.8747 635.0891 -947.6655 633.29824 -947.6655 631.0891 L -947.6655 588.5981 C -947.6655 586.389 -945.8747 584.5981 -943.6655 584.5981 Z"
+                    fill="#c7ebf8"
+                />
+        <text transform="translate(-942.6655 600.3436)" fill="black">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="14"
+                        font-weight="400"
+                        fill="black"
+                        x="6.6616016"
+                        y="15"
+                        xml:space="preserve"
+                    >Zähler +1</tspan>
+        </text>
+      </g>
+      <g id="Line_222">
+        <line
+                    x1="-1061.2148"
+                    y1="635.0891"
+                    x2="-1061.2148"
+                    y2="641.3115"
+                    marker-end="url(#FilledArrow_Marker)"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                />
+      </g>
+      <g id="Line_320">
+        <line
+                    x1="-981.2148"
+                    y1="609.8436"
+                    x2="-960.5655"
+                    y2="609.8436"
+                    marker-end="url(#FilledArrow_Marker)"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                />
+      </g>
+      <g id="Line_260">
+        <line
+                    x1="-957.2983"
+                    y1="681.8365"
+                    x2="-968.3148"
+                    y2="681.8365"
+                    marker-end="url(#FilledArrow_Marker)"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                />
+      </g>
+      <g id="Graphic_332">
+        <path
+                    d="M -969.3138 957.9958 L -817.3138 957.9958 C -815.1046 957.9958 -813.3138 959.7867 -813.3138 961.9958 L -813.3138 1004.4868 C -813.3138 1006.696 -815.1046 1008.4868 -817.3138 1008.4868 L -969.3138 1008.4868 C -971.5229 1008.4868 -973.3138 1006.696 -973.3138 1004.4868 L -973.3138 961.9958 C -973.3138 959.7867 -971.5229 957.9958 -969.3138 957.9958 Z"
+                    fill="#c0ffc0"
+                />
+        <text transform="translate(-973.3138 973.7413)" fill="black">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="14"
+                        font-weight="400"
+                        fill="black"
+                        x="11.827"
+                        y="15"
+                        xml:space="preserve"
+                    >Authentication Data A</tspan>
+        </text>
+      </g>
+      <g id="Graphic_381">
+        <path
+                    d="M -696.99455 1027.5864 L -544.99455 1027.5864 C -542.7854 1027.5864 -540.99455 1029.3772 -540.99455 1031.5864 L -540.99455 1074.0774 C -540.99455 1076.2865 -542.7854 1078.0774 -544.99455 1078.0774 L -696.99455 1078.0774 C -699.2037 1078.0774 -700.99455 1076.2865 -700.99455 1074.0774 L -700.99455 1031.5864 C -700.99455 1029.3772 -699.2037 1027.5864 -696.99455 1027.5864 Z"
+                    fill="#c0ffc0"
+                />
+        <text transform="translate(-700.99455 1043.3319)" fill="black">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="14"
+                        font-weight="400"
+                        fill="black"
+                        x="33.926"
+                        y="15"
+                        xml:space="preserve"
+                    >len(A) || len(C)</tspan>
+        </text>
+      </g>
+      <g id="Graphic_364">
+        <path
+                    d="M -831.2923 1173.4404 L -679.2923 1173.4404 C -677.0831 1173.4404 -675.2923 1175.2312 -675.2923 1177.4404 L -675.2923 1219.9313 C -675.2923 1222.1405 -677.0831 1223.9313 -679.2923 1223.9313 L -831.2923 1223.9313 C -833.5014 1223.9313 -835.2923 1222.1405 -835.2923 1219.9313 L -835.2923 1177.4404 C -835.2923 1175.2312 -833.5014 1173.4404 -831.2923 1173.4404 Z"
+                    fill="#84d086"
+                />
+        <text transform="translate(-835.2923 1189.1858)" fill="black">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="14"
+                        font-weight="400"
+                        fill="black"
+                        x="21.508"
+                        y="15"
+                        xml:space="preserve"
+                    >Authentication Tag</tspan>
+        </text>
+      </g>
+      <g id="Graphic_306">
+        <path
+                    d="M -831.5537 584.5981 L -679.55374 584.5981 C -677.3446 584.5981 -675.55374 586.389 -675.55374 588.5981 L -675.55374 631.0891 C -675.55374 633.29824 -677.3446 635.0891 -679.55374 635.0891 L -831.5537 635.0891 C -833.7629 635.0891 -835.5537 633.29824 -835.5537 631.0891 L -835.5537 588.5981 C -835.5537 586.389 -833.7629 584.5981 -831.5537 584.5981 Z"
+                    fill="#b4b4b4"
+                    fill-opacity=".29947917"
+                />
+        <text transform="translate(-835.5537 600.3436)" fill="black">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="14"
+                        font-weight="400"
+                        fill="black"
+                        x="6.71"
+                        y="15"
+                        xml:space="preserve"
+                    >IV = Nonce || (Zähler 1)</tspan>
+        </text>
+      </g>
+      <g id="Graphic_319">
+        <text transform="translate(-952.2983 668.8365)" fill="black">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="14"
+                        font-weight="400"
+                        fill="black"
+                        x="6.746008"
+                        y="15"
+                        xml:space="preserve"
+                    >Schlüssel</tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="14"
+                        font-weight="400"
+                        fill="black"
+                        y="22"
+                        xml:space="preserve"
+                    > k</tspan>
+        </text>
+      </g>
+      <g id="Line_318">
+        <line
+                    x1="-866.3823"
+                    y1="681.8365"
+                    x2="-848.4537"
+                    y2="681.8365"
+                    marker-end="url(#FilledArrow_Marker)"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                />
+      </g>
+      <g id="Line_323">
+        <line
+                    x1="-866.3823"
+                    y1="609.8436"
+                    x2="-848.4537"
+                    y2="609.8436"
+                    marker-end="url(#FilledArrow_Marker)"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                />
+      </g>
+      <g id="Line_324">
+        <line
+                    x1="-755.5537"
+                    y1="635.0891"
+                    x2="-755.5537"
+                    y2="641.3115"
+                    marker-end="url(#FilledArrow_Marker)"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                />
+      </g>
+      <g id="Line_325">
+        <line
+                    x1="-755.7946"
+                    y1="709.4615"
+                    x2="-755.9286"
+                    y2="724.82285"
+                    marker-end="url(#FilledArrow_Marker)"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                />
+      </g>
+      <g id="Line_326">
+        <line
+                    x1="-827.0239"
+                    y1="758.9236"
+                    x2="-789.8946"
+                    y2="758.9009"
+                    marker-end="url(#FilledArrow_Marker)"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                />
+      </g>
+      <g id="Line_327">
+        <line
+                    x1="-756.041"
+                    y1="780.2224"
+                    x2="-755.9011"
+                    y2="795.5837"
+                    marker-end="url(#FilledArrow_Marker)"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                />
+      </g>
+      <g id="Line_328">
+        <line
+                    x1="-755.5704"
+                    y1="858.9742"
+                    x2="-755.5802"
+                    y2="873.9511"
+                    marker-end="url(#FilledArrow_Marker)"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                />
+      </g>
+      <g id="Line_333">
+        <line
+                    x1="-893.3138"
+                    y1="957.9958"
+                    x2="-893.3138"
+                    y2="946.2466"
+                    marker-end="url(#FilledArrow_Marker)"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                />
+      </g>
+      <g id="Line_334">
+        <line
+                    x1="-852.6722"
+                    y1="908.0735"
+                    x2="-789.4423"
+                    y2="908.0306"
+                    marker-end="url(#FilledArrow_Marker)"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                />
+      </g>
+      <g id="Line_335">
+        <line
+                    x1="-755.5887"
+                    y1="929.3511"
+                    x2="-755.5021"
+                    y2="945.096"
+                    marker-end="url(#FilledArrow_Marker)"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                />
+      </g>
+      <g id="Graphic_362">
+        <path
+                    d="M -489.255 957.9958 L -415.9718 957.9958 C -413.76267 957.9958 -411.9718 959.7867 -411.9718 961.9958 L -411.9718 1004.4868 C -411.9718 1006.696 -413.76267 1008.4868 -415.9718 1008.4868 L -489.255 1008.4868 C -491.46415 1008.4868 -493.255 1006.696 -493.255 1004.4868 L -493.255 961.9958 C -493.255 959.7867 -491.46415 957.9958 -489.255 957.9958 Z"
+                    fill="#fece88"
+                    fill-opacity=".49912933"
+                />
+        <text transform="translate(-488.255 973.7413)" fill="black">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="14"
+                        font-weight="400"
+                        fill="black"
+                        x="14.655602"
+                        y="15"
+                        xml:space="preserve"
+                    >mult H</tspan>
+        </text>
+      </g>
+      <g id="Graphic_361">
+        <path
+                    d="M -680.4653 733.7269 L -528.4653 733.7269 C -526.25615 733.7269 -524.4653 735.5177 -524.4653 737.7269 L -524.4653 780.2179 C -524.4653 782.427 -526.25615 784.2179 -528.4653 784.2179 L -680.4653 784.2179 C -682.6744 784.2179 -684.4653 782.427 -684.4653 780.2179 L -684.4653 737.7269 C -684.4653 735.5177 -682.6744 733.7269 -680.4653 733.7269 Z"
+                    fill="#b4b4b4"
+                    fill-opacity=".29947917"
+                />
+        <text transform="translate(-684.4653 749.4724)" fill="black">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="14"
+                        font-weight="400"
+                        fill="black"
+                        x="47.366"
+                        y="15"
+                        xml:space="preserve"
+                    >Plaintext 2</tspan>
+        </text>
+      </g>
+      <g id="Graphic_360">
+        <path
+                    d="M -528.6134 808.4832 L -376.6134 808.4832 C -374.40427 808.4832 -372.6134 810.274 -372.6134 812.4832 L -372.6134 854.9742 C -372.6134 857.1833 -374.40427 858.9742 -376.6134 858.9742 L -528.6134 858.9742 C -530.82255 858.9742 -532.6134 857.1833 -532.6134 854.9742 L -532.6134 812.4832 C -532.6134 810.274 -530.82255 808.4832 -528.6134 808.4832 Z"
+                    fill="#b4b4b4"
+                    fill-opacity=".29947917"
+                />
+        <text transform="translate(-532.6134 824.2287)" fill="black">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="14"
+                        font-weight="400"
+                        fill="black"
+                        x="42.123"
+                        y="15"
+                        xml:space="preserve"
+                    >Ciphertext 2</tspan>
+        </text>
+      </g>
+      <g id="Graphic_351">
+        <path
+                    d="M -528.6134 654.2115 L -376.6134 654.2115 C -374.40427 654.2115 -372.6134 656.0024 -372.6134 658.2115 L -372.6134 705.4615 C -372.6134 707.6707 -374.40427 709.4615 -376.6134 709.4615 L -528.6134 709.4615 C -530.82255 709.4615 -532.6134 707.6707 -532.6134 705.4615 L -532.6134 658.2115 C -532.6134 656.0024 -530.82255 654.2115 -528.6134 654.2115 Z"
+                    fill="#ffc0ff"
+                />
+        <text transform="translate(-532.6134 662.8365)" fill="black">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="14"
+                        font-weight="400"
+                        fill="black"
+                        x="68.492"
+                        y="15"
+                        xml:space="preserve"
+                    >AES </tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="14"
+                        font-weight="400"
+                        fill="black"
+                        x="29.481"
+                        y="34"
+                        xml:space="preserve"
+                    >Verschlüsselung</tspan>
+        </text>
+      </g>
+      <g id="Graphic_350">
+        <path
+                    d="M -640.7252 584.5981 L -567.442 584.5981 C -565.23283 584.5981 -563.442 586.389 -563.442 588.5981 L -563.442 631.0891 C -563.442 633.29824 -565.23283 635.0891 -567.442 635.0891 L -640.7252 635.0891 C -642.9343 635.0891 -644.7252 633.29824 -644.7252 631.0891 L -644.7252 588.5981 C -644.7252 586.389 -642.9343 584.5981 -640.7252 584.5981 Z"
+                    fill="#c7ebf8"
+                />
+        <text transform="translate(-639.7252 600.3436)" fill="black">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="14"
+                        font-weight="400"
+                        fill="black"
+                        x="6.6616016"
+                        y="15"
+                        xml:space="preserve"
+                    >Zähler +1</tspan>
+        </text>
+      </g>
+      <g id="Line_349">
+        <line
+                    x1="-675.55374"
+                    y1="609.8436"
+                    x2="-657.6252"
+                    y2="609.8436"
+                    marker-end="url(#FilledArrow_Marker)"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                />
+      </g>
+      <g id="Graphic_347">
+        <path
+                    d="M -528.6134 584.5981 L -376.6134 584.5981 C -374.40427 584.5981 -372.6134 586.389 -372.6134 588.5981 L -372.6134 631.0891 C -372.6134 633.29824 -374.40427 635.0891 -376.6134 635.0891 L -528.6134 635.0891 C -530.82255 635.0891 -532.6134 633.29824 -532.6134 631.0891 L -532.6134 588.5981 C -532.6134 586.389 -530.82255 584.5981 -528.6134 584.5981 Z"
+                    fill="#b4b4b4"
+                    fill-opacity=".29947917"
+                />
+        <text transform="translate(-532.6134 600.3436)" fill="black">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="14"
+                        font-weight="400"
+                        fill="black"
+                        x="6.71"
+                        y="15"
+                        xml:space="preserve"
+                    >IV = Nonce || (Zähler 2)</tspan>
+        </text>
+      </g>
+      <g id="Graphic_346">
+        <text transform="translate(-644.5416 668.8365)" fill="black">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="14"
+                        font-weight="400"
+                        fill="black"
+                        x="6.746008"
+                        y="15"
+                        xml:space="preserve"
+                    >Schlüssel</tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="14"
+                        font-weight="400"
+                        fill="black"
+                        y="22"
+                        xml:space="preserve"
+                    > k</tspan>
+        </text>
+      </g>
+      <g id="Line_345">
+        <line
+                    x1="-558.6256"
+                    y1="681.8365"
+                    x2="-545.5134"
+                    y2="681.8365"
+                    marker-end="url(#FilledArrow_Marker)"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                />
+      </g>
+      <g id="Line_403">
+        <line
+                    x1="-649.5416"
+                    y1="681.8365"
+                    x2="-662.65374"
+                    y2="681.8365"
+                    marker-end="url(#FilledArrow_Marker)"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                />
+      </g>
+      <g id="Line_344">
+        <line
+                    x1="-563.442"
+                    y1="609.8436"
+                    x2="-545.5134"
+                    y2="609.8436"
+                    marker-end="url(#FilledArrow_Marker)"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                />
+      </g>
+      <g id="Line_343">
+        <line
+                    x1="-452.6134"
+                    y1="635.0891"
+                    x2="-452.6134"
+                    y2="641.3115"
+                    marker-end="url(#FilledArrow_Marker)"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                />
+      </g>
+      <g id="Line_342">
+        <line
+                    x1="-452.75994"
+                    y1="709.4615"
+                    x2="-452.8414"
+                    y2="724.8225"
+                    marker-end="url(#FilledArrow_Marker)"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                />
+      </g>
+      <g id="Line_341">
+        <line
+                    x1="-524.4653"
+                    y1="758.9238"
+                    x2="-486.7634"
+                    y2="758.9009"
+                    marker-end="url(#FilledArrow_Marker)"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                />
+      </g>
+      <g id="Line_340">
+        <line
+                    x1="-452.90985"
+                    y1="780.2224"
+                    x2="-452.82474"
+                    y2="795.5834"
+                    marker-end="url(#FilledArrow_Marker)"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                />
+      </g>
+      <g id="Line_339">
+        <line
+                    x1="-452.7543"
+                    y1="858.9742"
+                    x2="-452.83786"
+                    y2="873.9513"
+                    marker-end="url(#FilledArrow_Marker)"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                />
+      </g>
+      <g id="Line_337">
+        <path
+                    d="M -714.6507 983.2413 L -594.25704 983.2413 L -594.25704 908.0218 L -486.7634 908.0218"
+                    marker-end="url(#FilledArrow_Marker)"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                />
+      </g>
+      <g id="Line_336">
+        <line
+                    x1="-452.90985"
+                    y1="929.3511"
+                    x2="-452.82324"
+                    y2="945.096"
+                    marker-end="url(#FilledArrow_Marker)"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                />
+      </g>
+      <g id="Line_374">
+        <path
+                    d="M -1061.2148 709.4615 L -1061.2148 1122.2341 L -790.4423 1122.218"
+                    marker-end="url(#FilledArrow_Marker)"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                />
+      </g>
+      <g id="Line_375">
+        <line
+                    x1="-452.6134"
+                    y1="1008.4868"
+                    x2="-452.6134"
+                    y2="1017.6818"
+                    marker-end="url(#FilledArrow_Marker)"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                />
+      </g>
+      <g id="Line_376">
+        <line
+                    x1="-452.90985"
+                    y1="1074.0819"
+                    x2="-452.90985"
+                    y2="1084.2803"
+                    marker-end="url(#FilledArrow_Marker)"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                />
+      </g>
+      <g id="Line_379">
+        <path
+                    d="M -493.255 1122.4224 L -504.255 1122.4224 L -715.1423 1122.216 L -720.1423 1122.216"
+                    marker-end="url(#FilledArrow_Marker)"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                />
+      </g>
+      <g id="Line_380">
+        <path
+                    d="M -755.5887 1143.6724 L -755.5887 1154.6724 L -755.4405 1158.5564 L -755.4172 1160.541"
+                    marker-end="url(#FilledArrow_Marker)"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                />
+      </g>
+      <g id="Line_382">
+        <path
+                    d="M -540.99455 1052.8319 L -534.5601 1052.8319 L -507.429 1052.7922 L -492.7634 1052.7525 L -486.7634 1052.7525"
+                    marker-end="url(#FilledArrow_Marker)"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                />
+      </g>
+    </g>
+  </g>
+</svg>

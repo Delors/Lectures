@@ -1,5 +1,5 @@
 .. meta::
-    :version: genesis
+    :version: renaissance
     :author: Michael Eichberg
     :keywords: "Authentifizierte Verschlüsselung", AES-GCM
     :description lang=en: Authenticated Encryption
@@ -9,8 +9,8 @@
     :master-password: WirklichSchwierig!
 
 .. include:: ../docutils.defs
-    
-    
+
+
 
 Authentifizierte Verschlüsselung
 ===============================================
@@ -22,7 +22,7 @@ Authentifizierte Verschlüsselung
 
 .. supplemental::
 
-  :Folien: 
+  :Folien:
       :HTML: |html-source|
 
       :PDF: |pdf-source|
@@ -31,35 +31,34 @@ Authentifizierte Verschlüsselung
 
 
 
+.. class:: s-vertical-title
 
-Drei Ansätze in Hinblick auf *Authenticated Encryption* 
+Drei Ansätze in Hinblick auf *Authenticated Encryption*
 --------------------------------------------------------
 
-.. container:: two-columns
+.. grid:: width-100
 
-    .. container:: column no-separator
+    .. cell:: width-50
 
-        **Encrypt-then-MAC**
+        .. compound::
 
-        .. image:: drawings/authentifizierte-verschluesselung/encrypt_then_mac.svg
-            :width: 675px
-            :align: center
+            **Encrypt-then-MAC**
 
-        .. container:: incremental margin-top-1em
+            .. image:: drawings/authentifizierte-verschluesselung/encrypt_then_mac.svg
+
+        .. compound::
+            :class: incremental
 
             **Encrypt-and-MAC**
 
             .. image:: drawings/authentifizierte-verschluesselung/encrypt_and_mac.svg
-                :width: 675px
-                :align: center
 
-    .. container:: column incremental
+    .. cell:: width-50 incremental
 
         **MAC-then-Encrypt**
 
         .. image:: drawings/authentifizierte-verschluesselung/mac_then_encrypt.svg
-            :width: 675px
-            :align: center        
+            :align: left
 
 
 .. supplemental::
@@ -78,16 +77,12 @@ Drei Ansätze in Hinblick auf *Authenticated Encryption*
 
 
 
+.. class:: s-vertical-title
+
 AES-GCM Modus (Galois/Counter Mode)
---------------------------------------
+-----------------------------------------
 
 .. image:: drawings/authentifizierte-verschluesselung/aes_gcm.svg
-    :height: 975px
-    :align: center
-
-.. container:: footer far-far-smaller
-
-    Die Visualisierung stellt nur zwei Schritte dar; eine Erweiterung auf n-Blöcke ist jedoch offensichtlich.
 
 .. supplemental::
 
@@ -98,13 +93,16 @@ AES-GCM Modus (Galois/Counter Mode)
     - Die Eingabe in den Algorithmus ist der Klartext (:eng:`Plaintext`), der Schlüssel, ein Initialisierungsvektor (IV) und zusätzliche (optionale) authentifizierte Daten A.
     - Das Authentication Tag wird mittels Arithmetik über dem Körper :math:`GF(2^{128})` berechnet und wird am Ende des Chiffretextes angehängt. Es wird das bekannte Polynom: :math:`x^{128} + x^7 + x^2 + x + 1` verwendet.
     - Die Blockgröße ist 128Bit (d. h. die AES-Blockgröße).
-    - :math:`H` ist der Hash Key:  :math:`H = E(K,0^{128})` (wobei :math:`E` die AES-Verschlüsselung ist).
-    - :math:`mult` ist Multiplikation im Körper :math:`GF(2^{128})`.
+    - :math-i:`H` ist der Hash Key:  :math:`H = E(K,0^{128})` (wobei :math-i:`E` die AES-Verschlüsselung ist).
+    - :math-i:`mult` ist Multiplikation im Körper :math:`GF(2^{128})`.
     - Die optionalen authentifizierten Daten A werden zum Beispiel benötigt, um den Kontext einer Nachricht zu erfassen (und zum Beispiel Replay-attacken vorzubeugen). Ein konkretes Beispiel könnte die Ziel-IP-Adresse sein, wenn die Nachricht über das Internet übertragen wird.
 
+    .. hint::
+
+        Die Visualisierung stellt nur zwei Schritte dar; eine Erweiterung auf n-Blöcke ist jedoch offensichtlich.
 
 
-.. class:: integrated-exercise transition-scale
+.. class:: exercises transition-scale
 
 Übung
 ---------------------
@@ -113,8 +111,7 @@ AES-GCM Modus (Galois/Counter Mode)
 
     Warum ist es wichtig, dass der IV bei AES-GCM nur einmal verwendet wird?
 
-    .. solution:: 
+    .. solution::
         :pwd: ASE-GCM->StreamCipher
 
-        Bei AES-GCM handelt es sich effektiv um eine Stromchiffre. Als solche ist es wichtig, dass der IV nur einmal verwendet wird, da sonst die Sicherheit des Verfahrens beeinträchtigt wird. 
-
+        Bei AES-GCM handelt es sich effektiv um eine Stromchiffre. Als solche ist es wichtig, dass der IV nur einmal verwendet wird, da sonst die Sicherheit des Verfahrens beeinträchtigt wird.

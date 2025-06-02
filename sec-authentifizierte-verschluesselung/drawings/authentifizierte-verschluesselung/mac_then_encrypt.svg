@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+    "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg
+    xmlns:xl="http://www.w3.org/1999/xlink"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns="http://www.w3.org/2000/svg"
+    version="1.1"
+    viewBox="-426 640 234 187"
+    width="234"
+    height="187"
+>
+<style>
+  @import url('/LectureDoc2/ext/fonts/ld-fonts.css');
+</style>
+<defs>
+    <marker
+            orient="auto"
+            overflow="visible"
+            markerUnits="strokeWidth"
+            id="FilledArrow_Marker"
+            stroke-linejoin="miter"
+            stroke-miterlimit="10"
+            viewBox="-1 -3 7 6"
+            markerWidth="7"
+            markerHeight="6"
+            color="black"
+        >
+      <g>
+        <path
+                    d="M 4.8 0 L 0 -1.8 L 0 1.8 Z"
+                    fill="currentColor"
+                    stroke="currentColor"
+                    stroke-width="1"
+                />
+      </g>
+    </marker>
+  </defs>
+  <metadata> Produced by OmniGraffle 8.0\n2025-06-02 15:40:32 +0000</metadata>
+  <g
+        id="mac_then_encrypt"
+        stroke="none"
+        stroke-opacity="1"
+        stroke-dasharray="none"
+        fill-opacity="1"
+        fill="none"
+    >
+    <title>mac_then_encrypt</title>
+    <g id="mac_then_encrypt_Layer_1">
+      <title>Layer 1</title>
+      <g id="Graphic_395">
+        <path
+                    d="M -340.26715 687.8562 L -298.26715 687.8562 C -296.058 687.8562 -294.26715 689.6471 -294.26715 691.8562 L -294.26715 703.8562 C -294.26715 706.06535 -296.058 707.8562 -298.26715 707.8562 L -340.26715 707.8562 C -342.4763 707.8562 -344.26715 706.06535 -344.26715 703.8562 L -344.26715 691.8562 C -344.26715 689.6471 -342.4763 687.8562 -340.26715 687.8562 Z"
+                    fill="#fece88"
+                    fill-opacity=".49912933"
+                />
+        <text transform="translate(-339.26715 688.3562)" fill="black">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="14"
+                        font-weight="400"
+                        fill="black"
+                        x="5.755"
+                        y="15"
+                        xml:space="preserve"
+                    >MAC</tspan>
+        </text>
+      </g>
+      <g id="Graphic_394">
+        <path
+                    d="M -420.26715 640.31754 L -348.26715 640.31754 C -346.058 640.31754 -344.26715 642.1084 -344.26715 644.31754 L -344.26715 656.31754 C -344.26715 658.5267 -346.058 660.31754 -348.26715 660.31754 L -420.26715 660.31754 C -422.4763 660.31754 -424.26715 658.5267 -424.26715 656.31754 L -424.26715 644.31754 C -424.26715 642.1084 -422.4763 640.31754 -420.26715 640.31754 Z"
+                    fill="#c2c2c2"
+                    fill-opacity=".29947917"
+                />
+        <text transform="translate(-419.26715 640.81754)" fill="black">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="14"
+                        font-weight="400"
+                        fill="black"
+                        x="7.833"
+                        y="15"
+                        xml:space="preserve"
+                    >Plaintext</tspan>
+        </text>
+      </g>
+      <g id="Graphic_393">
+        <path
+                    d="M -420.26715 806.9335 L -298.26715 806.9335 C -296.058 806.9335 -294.26715 808.7244 -294.26715 810.9335 L -294.26715 822.9335 C -294.26715 825.1427 -296.058 826.9335 -298.26715 826.9335 L -420.26715 826.9335 C -422.4763 826.9335 -424.26715 825.1427 -424.26715 822.9335 L -424.26715 810.9335 C -424.26715 808.7244 -422.4763 806.9335 -420.26715 806.9335 Z"
+                    fill="#c2c2c2"
+                    fill-opacity=".29947917"
+                />
+        <text transform="translate(-419.26715 807.4335)" fill="black">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="14"
+                        font-weight="400"
+                        fill="black"
+                        x="27.59"
+                        y="15"
+                        xml:space="preserve"
+                    >Ciphertext</tspan>
+        </text>
+      </g>
+      <g id="Graphic_397">
+        <path
+                    d="M -420.26715 687.8562 L -348.26715 687.8562 C -346.058 687.8562 -344.26715 689.6471 -344.26715 691.8562 L -344.26715 703.8562 C -344.26715 706.06535 -346.058 707.8562 -348.26715 707.8562 L -420.26715 707.8562 C -422.4763 707.8562 -424.26715 706.06535 -424.26715 703.8562 L -424.26715 691.8562 C -424.26715 689.6471 -422.4763 687.8562 -420.26715 687.8562 Z"
+                    fill="#c2c2c2"
+                    fill-opacity=".29947917"
+                />
+        <text transform="translate(-419.26715 688.3562)" fill="black">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="14"
+                        font-weight="400"
+                        fill="black"
+                        x="7.833"
+                        y="15"
+                        xml:space="preserve"
+                    >Plaintext</tspan>
+        </text>
+      </g>
+      <g id="Graphic_392">
+        <path
+                    d="M -420.26715 735.3949 L -298.26715 735.3949 C -296.058 735.3949 -294.26715 737.1857 -294.26715 739.3949 L -294.26715 776.3949 C -294.26715 778.604 -296.058 780.3949 -298.26715 780.3949 L -420.26715 780.3949 C -422.4763 780.3949 -424.26715 778.604 -424.26715 776.3949 L -424.26715 739.3949 C -424.26715 737.1857 -422.4763 735.3949 -420.26715 735.3949 Z"
+                    fill="#ffc0ff"
+                />
+        <text transform="translate(-419.26715 748.3949)" fill="black">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="14"
+                        font-weight="400"
+                        fill="black"
+                        x="9.481"
+                        y="15"
+                        xml:space="preserve"
+                    >Verschlüsselung</tspan>
+        </text>
+      </g>
+      <g id="Line_391">
+        <line
+                    x1="-384.26715"
+                    y1="660.31754"
+                    x2="-384.26715"
+                    y2="674.9562"
+                    marker-end="url(#FilledArrow_Marker)"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                />
+      </g>
+      <g id="Line_398">
+        <line
+                    x1="-358.7225"
+                    y1="707.8562"
+                    x2="-358.88184"
+                    y2="722.4956"
+                    marker-end="url(#FilledArrow_Marker)"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                />
+      </g>
+      <g id="Graphic_390">
+        <text transform="translate(-256.18712 748.3949)" fill="black">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="14"
+                        font-weight="400"
+                        fill="black"
+                        x=".4455585"
+                        y="15"
+                        xml:space="preserve"
+                    >Schlüssel</tspan>
+        </text>
+      </g>
+      <g id="Line_389">
+        <line
+                    x1="-261.18712"
+                    y1="757.8949"
+                    x2="-281.36715"
+                    y2="757.8949"
+                    marker-end="url(#FilledArrow_Marker)"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                />
+      </g>
+      <g id="Line_396">
+        <line
+                    x1="-227.29356"
+                    y1="746.3949"
+                    x2="-227.29356"
+                    y2="733.2562"
+                    marker-end="url(#FilledArrow_Marker)"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                />
+      </g>
+      <g id="Graphic_388">
+        <path
+                    d="M -258.29356 675.3562 L -196.29356 675.3562 C -194.08442 675.3562 -192.29356 677.1471 -192.29356 679.3562 L -192.29356 716.3562 C -192.29356 718.56535 -194.08442 720.3562 -196.29356 720.3562 L -258.29356 720.3562 C -260.5027 720.3562 -262.29356 718.56535 -262.29356 716.3562 L -262.29356 679.3562 C -262.29356 677.1471 -260.5027 675.3562 -258.29356 675.3562 Z"
+                    fill="#c0ffc0"
+                />
+        <text transform="translate(-257.29356 678.8562)" fill="black">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="14"
+                        font-weight="400"
+                        fill="black"
+                        x="14.138"
+                        y="15"
+                        xml:space="preserve"
+                    >Hash </tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="14"
+                        font-weight="400"
+                        fill="black"
+                        x="2.623"
+                        y="34"
+                        xml:space="preserve"
+                    >Funktion</tspan>
+        </text>
+      </g>
+      <g id="Line_385">
+        <line
+                    x1="-359.26715"
+                    y1="780.3949"
+                    x2="-359.26715"
+                    y2="794.0335"
+                    marker-end="url(#FilledArrow_Marker)"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                />
+      </g>
+      <g id="Line_384">
+        <line
+                    x1="-262.29356"
+                    y1="697.8562"
+                    x2="-281.36715"
+                    y2="697.8562"
+                    marker-end="url(#FilledArrow_Marker)"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                />
+      </g>
+      <g id="Line_383">
+        <path
+                    d="M -344.26715 650.31754 L -227.29356 650.31754 L -227.29356 662.4562"
+                    marker-end="url(#FilledArrow_Marker)"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                />
+      </g>
+      <g id="Line_399">
+        <line
+                    x1="-424.26715"
+                    y1="707.8562"
+                    x2="-294.26715"
+                    y2="707.8562"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                />
+      </g>
+    </g>
+  </g>
+</svg>

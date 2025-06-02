@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+    "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg
+    xmlns:xl="http://www.w3.org/1999/xlink"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns="http://www.w3.org/2000/svg"
+    version="1.1"
+    viewBox="-507 648 266 123"
+    width="266"
+    height="123"
+>
+<style>
+  @import url('/LectureDoc2/ext/fonts/ld-fonts.css');
+</style>
+<defs>
+
+    <marker
+            orient="auto"
+            overflow="visible"
+            markerUnits="strokeWidth"
+            id="FilledArrow_Marker"
+            stroke-linejoin="miter"
+            stroke-miterlimit="10"
+            viewBox="-1 -3 7 6"
+            markerWidth="7"
+            markerHeight="6"
+            color="black"
+        >
+      <g>
+        <path
+                    d="M 4.8 0 L 0 -1.8 L 0 1.8 Z"
+                    fill="currentColor"
+                    stroke="currentColor"
+                    stroke-width="1"
+                />
+      </g>
+    </marker>
+  </defs>
+  <metadata> Produced by OmniGraffle 8.0\n2025-06-02 15:40:32 +0000</metadata>
+  <g
+        id="encrypt_and_mac"
+        stroke="none"
+        stroke-opacity="1"
+        stroke-dasharray="none"
+        fill-opacity="1"
+        fill="none"
+    >
+    <title>encrypt_and_mac</title>
+    <g id="encrypt_and_mac_Layer_1">
+      <title>Layer 1</title>
+      <g id="Graphic_395">
+        <path
+                    d="M -422.21157 750.934 L -380.21157 750.934 C -378.00243 750.934 -376.21157 752.7249 -376.21157 754.934 L -376.21157 766.934 C -376.21157 769.1432 -378.00243 770.934 -380.21157 770.934 L -422.21157 770.934 C -424.4207 770.934 -426.21157 769.1432 -426.21157 766.934 L -426.21157 754.934 C -426.21157 752.7249 -424.4207 750.934 -422.21157 750.934 Z"
+                    fill="#fece88"
+                    fill-opacity=".49912933"
+                />
+        <text transform="translate(-421.21157 751.434)" fill="black">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="14"
+                        font-weight="400"
+                        fill="black"
+                        x="5.755"
+                        y="15"
+                        xml:space="preserve"
+                    >MAC</tspan>
+        </text>
+      </g>
+      <g id="Graphic_394">
+        <path
+                    d="M -502.2116 648.4539 L -430.21157 648.4539 C -428.00243 648.4539 -426.21157 650.2448 -426.21157 652.4539 L -426.21157 664.4539 C -426.21157 666.66305 -428.00243 668.4539 -430.21157 668.4539 L -502.2116 668.4539 C -504.4207 668.4539 -506.2116 666.66305 -506.2116 664.4539 L -506.2116 652.4539 C -506.2116 650.2448 -504.4207 648.4539 -502.2116 648.4539 Z"
+                    fill="#c2c2c2"
+                    fill-opacity=".29947917"
+                />
+        <text transform="translate(-501.2116 648.9539)" fill="black">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="14"
+                        font-weight="400"
+                        fill="black"
+                        x="7.833"
+                        y="15"
+                        xml:space="preserve"
+                    >Plaintext</tspan>
+        </text>
+      </g>
+      <g id="Graphic_393">
+        <path
+                    d="M -502.2116 750.934 L -430.21157 750.934 C -428.00243 750.934 -426.21157 752.7249 -426.21157 754.934 L -426.21157 766.934 C -426.21157 769.1432 -428.00243 770.934 -430.21157 770.934 L -502.2116 770.934 C -504.4207 770.934 -506.2116 769.1432 -506.2116 766.934 L -506.2116 754.934 C -506.2116 752.7249 -504.4207 750.934 -502.2116 750.934 Z"
+                    fill="#c2c2c2"
+                    fill-opacity=".29947917"
+                />
+        <text transform="translate(-501.2116 751.434)" fill="black">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="14"
+                        font-weight="400"
+                        fill="black"
+                        x="2.59"
+                        y="15"
+                        xml:space="preserve"
+                    >Ciphertext</tspan>
+        </text>
+      </g>
+      <g id="Graphic_392">
+        <path
+                    d="M -502.2116 687.194 L -430.21157 687.194 C -428.00243 687.194 -426.21157 688.9848 -426.21157 691.194 L -426.21157 728.194 C -426.21157 730.4031 -428.00243 732.194 -430.21157 732.194 L -502.2116 732.194 C -504.4207 732.194 -506.2116 730.4031 -506.2116 728.194 L -506.2116 691.194 C -506.2116 688.9848 -504.4207 687.194 -502.2116 687.194 Z"
+                    fill="#ffc0ff"
+                />
+        <text transform="translate(-501.2116 690.694)" fill="black">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="14"
+                        font-weight="400"
+                        fill="black"
+                        x="3.185"
+                        y="15"
+                        xml:space="preserve"
+                    >Verschlüs-</tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="14"
+                        font-weight="400"
+                        fill="black"
+                        x="14.175"
+                        y="34"
+                        xml:space="preserve"
+                    >selung</tspan>
+        </text>
+      </g>
+      <g id="Line_391">
+        <line
+                    x1="-466.2116"
+                    y1="668.4539"
+                    x2="-466.2116"
+                    y2="674.294"
+                    marker-end="url(#FilledArrow_Marker)"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                />
+      </g>
+      <g id="Graphic_390">
+        <text transform="translate(-402.54735 700.194)" fill="black">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="14"
+                        font-weight="400"
+                        fill="black"
+                        x="5.099348"
+                        y="15"
+                        xml:space="preserve"
+                    >Schlüssel</tspan>
+        </text>
+      </g>
+      <g id="Line_389">
+        <line
+                    x1="-404.54735"
+                    y1="709.694"
+                    x2="-413.31157"
+                    y2="709.694"
+                    marker-end="url(#FilledArrow_Marker)"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                />
+      </g>
+      <g id="Line_396">
+        <line
+                    x1="-333.45265"
+                    y1="709.694"
+                    x2="-324.68843"
+                    y2="709.694"
+                    marker-end="url(#FilledArrow_Marker)"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                />
+      </g>
+      <g id="Graphic_388">
+        <path
+                    d="M -307.78843 687.194 L -245.78843 687.194 C -243.5793 687.194 -241.78843 688.9848 -241.78843 691.194 L -241.78843 728.194 C -241.78843 730.4031 -243.5793 732.194 -245.78843 732.194 L -307.78843 732.194 C -309.99757 732.194 -311.78843 730.4031 -311.78843 728.194 L -311.78843 691.194 C -311.78843 688.9848 -309.99757 687.194 -307.78843 687.194 Z"
+                    fill="#c0ffc0"
+                />
+        <text transform="translate(-306.78843 690.694)" fill="black">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="14"
+                        font-weight="400"
+                        fill="black"
+                        x="14.138"
+                        y="15"
+                        xml:space="preserve"
+                    >Hash </tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="14"
+                        font-weight="400"
+                        fill="black"
+                        x="2.623"
+                        y="34"
+                        xml:space="preserve"
+                    >Funktion</tspan>
+        </text>
+      </g>
+      <g id="Line_385">
+        <line
+                    x1="-466.2116"
+                    y1="732.194"
+                    x2="-466.2116"
+                    y2="738.034"
+                    marker-end="url(#FilledArrow_Marker)"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                />
+      </g>
+      <g id="Line_384">
+        <path
+                    d="M -276.78843 732.194 L -276.78843 760.9441 L -357.31157 760.934 L -363.31157 760.934"
+                    marker-end="url(#FilledArrow_Marker)"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                />
+      </g>
+      <g id="Line_383">
+        <path
+                    d="M -426.21157 658.4539 L -276.78843 658.4539 L -276.78843 674.294"
+                    marker-end="url(#FilledArrow_Marker)"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                />
+      </g>
+    </g>
+  </g>
+</svg>
