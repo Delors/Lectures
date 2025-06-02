@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xl="http://www.w3.org/1999/xlink" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="14 -198 693 472" width="693" height="472">
+  <defs>
+    <filter id="Shadow" filterUnits="userSpaceOnUse" x="-55.3" y="-245.2">
+      <feGaussianBlur in="SourceAlpha" result="blur" stdDeviation="1.308"/>
+      <feOffset in="blur" result="offset" dx="3" dy="3"/>
+      <feFlood flood-color="black" flood-opacity=".5" result="flood"/>
+      <feComposite in="flood" in2="offset" operator="in"/>
+    </filter>
+    <filter id="Shadow_2" filterUnits="userSpaceOnUse" x="-55.3" y="-245.2">
+      <feGaussianBlur in="SourceAlpha" result="blur" stdDeviation="1.308"/>
+      <feOffset in="blur" result="offset" dx="1" dy="1"/>
+      <feFlood flood-color="black" flood-opacity=".5" result="flood"/>
+      <feComposite in="flood" in2="offset" operator="in"/>
+    </filter>
+    <font-face font-family="Apple Color Emoji" font-size="42" units-per-em="1000" underline-position="-125.0003" underline-thickness="62.50015" slope="0" x-height="625.0015" cap-height="1000.0024" ascent="1000.0024" descent="-312.50074" font-weight="400">
+      <font-face-src>
+        <font-face-name name="AppleColorEmoji"/>
+      </font-face-src>
+    </font-face>
+    <linearGradient x1="0" x2="1" id="Gradient" gradientUnits="userSpaceOnUse">
+      <stop offset=".16833588" stop-color="#cde95f"/>
+      <stop offset=".9336584" stop-color="#e7f4b5" stop-opacity=".5"/>
+      <stop offset="1" stop-color="white" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="Obj_Gradient" xl:href="#Gradient" gradientTransform="translate(383.45717 -42.37604) rotate(-133.44236) scale(91.49519)"/>
+    <linearGradient id="Obj_Gradient_2" xl:href="#Gradient" gradientTransform="translate(382.2422 -5.658918) rotate(-133.44236) scale(87.96142)"/>
+    <linearGradient x1="0" x2="1" id="Gradient_2" gradientUnits="userSpaceOnUse">
+      <stop offset=".16833588" stop-color="#e9e9e9"/>
+      <stop offset=".9336584" stop-color="#f5f5f5" stop-opacity=".5"/>
+      <stop offset="1" stop-color="white" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="Obj_Gradient_3" xl:href="#Gradient_2" gradientTransform="translate(381.2822 -44.30766) rotate(-133.44236) scale(85.1692)"/>
+    <linearGradient x1="0" x2="1" id="Gradient_3" gradientUnits="userSpaceOnUse">
+      <stop offset=".16833588" stop-color="#e7e9dd"/>
+      <stop offset=".9336584" stop-color="#f3f5ee" stop-opacity=".5"/>
+      <stop offset="1" stop-color="white" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="Obj_Gradient_4" xl:href="#Gradient_3" gradientTransform="translate(378.10564 -45.47344) rotate(-133.44236) scale(75.92992)"/>
+    <linearGradient x1="0" x2="1" id="Gradient_4" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="white"/>
+      <stop offset=".08420465" stop-color="#a4a4a4"/>
+      <stop offset="1" stop-color="#333"/>
+    </linearGradient>
+    <linearGradient id="Obj_Gradient_5" xl:href="#Gradient_4" gradientTransform="translate(324.08007 -101.72497) rotate(90) scale(2.2060922)"/>
+    <linearGradient id="Obj_Gradient_6" xl:href="#Gradient_4" gradientTransform="translate(327.93292 -101.72497) rotate(90) scale(2.2060922)"/>
+    <linearGradient id="Obj_Gradient_7" xl:href="#Gradient_4" gradientTransform="translate(331.7858 -101.72497) rotate(90) scale(2.2060922)"/>
+    <font-face font-family="Noto Sans Display" font-size="4" panose-1="2 11 5 2 4 5 4 2 2 4" units-per-em="1000" underline-position="-100" underline-thickness="50" slope="0" x-height="536" cap-height="714" ascent="1069.0002" descent="-292.99927" font-weight="400">
+      <font-face-src>
+        <font-face-name name="NotoSansDisplay-Regular"/>
+      </font-face-src>
+    </font-face>
+    <linearGradient x1="0" x2="1" id="Gradient_5" gradientUnits="userSpaceOnUse">
+      <stop offset=".1060121" stop-color="#029ed7"/>
+      <stop offset=".8529494" stop-color="#99d0eb" stop-opacity=".5"/>
+      <stop offset="1" stop-color="white" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="Obj_Gradient_8" xl:href="#Gradient_5" gradientTransform="translate(376.44513 177.17237) rotate(-32.658855) scale(82.68186)"/>
+    <linearGradient id="Obj_Gradient_9" xl:href="#Gradient_5" gradientTransform="translate(412.94513 177.17237) rotate(-32.658855) scale(82.68186)"/>
+    <linearGradient x1="0" x2="1" id="Gradient_6" gradientUnits="userSpaceOnUse">
+      <stop offset=".16833588" stop-color="#029ed5"/>
+      <stop offset=".9336584" stop-color="#99d0eb" stop-opacity=".5"/>
+      <stop offset="1" stop-color="white" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="Obj_Gradient_10" xl:href="#Gradient_6" gradientTransform="translate(456.17104 135.01563) rotate(-133.44236) scale(77.57443)"/>
+    <linearGradient x1="0" x2="1" id="Gradient_7" gradientUnits="userSpaceOnUse">
+      <stop offset=".1060121" stop-color="#78cc7b"/>
+      <stop offset=".8529494" stop-color="#c0e6c1" stop-opacity=".5"/>
+      <stop offset="1" stop-color="white" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="Obj_Gradient_11" xl:href="#Gradient_7" gradientTransform="translate(237.5722 150.17122) rotate(-32.658855) scale(58.030274)"/>
+    <linearGradient id="Obj_Gradient_12" xl:href="#Gradient_7" gradientTransform="translate(263.5722 150.17122) rotate(-32.658855) scale(58.030274)"/>
+    <linearGradient x1="0" x2="1" id="Gradient_8" gradientUnits="userSpaceOnUse">
+      <stop offset=".16833588" stop-color="#78cb7b"/>
+      <stop offset=".9336584" stop-color="#c0e6c1" stop-opacity=".5"/>
+      <stop offset="1" stop-color="white" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="Obj_Gradient_13" xl:href="#Gradient_8" gradientTransform="translate(293.84157 121.01043) rotate(-133.44236) scale(54.80193)"/>
+    <linearGradient id="Obj_Gradient_14" xl:href="#Gradient_7" gradientTransform="translate(120.5722 150.17122) rotate(-32.658855) scale(58.030274)"/>
+    <linearGradient id="Obj_Gradient_15" xl:href="#Gradient_7" gradientTransform="translate(146.5722 150.17122) rotate(-32.658855) scale(58.030274)"/>
+    <linearGradient id="Obj_Gradient_16" xl:href="#Gradient_8" gradientTransform="translate(176.84157 121.01043) rotate(-133.44236) scale(54.80193)"/>
+    <linearGradient id="Obj_Gradient_17" xl:href="#Gradient_7" gradientTransform="translate(554.5722 150.17122) rotate(-32.658855) scale(58.030274)"/>
+    <linearGradient id="Obj_Gradient_18" xl:href="#Gradient_7" gradientTransform="translate(580.5722 150.17122) rotate(-32.658855) scale(58.030274)"/>
+    <linearGradient id="Obj_Gradient_19" xl:href="#Gradient_8" gradientTransform="translate(610.8416 121.01043) rotate(-133.44236) scale(54.80193)"/>
+  </defs>
+  <metadata> Produced by OmniGraffle 8.0\n2025-06-02 09:16:20 +0000</metadata>
+  <g id="all-save" stroke="none" stroke-opacity="1" stroke-dasharray="none" fill-opacity="1" fill="none">
+    <title>all-save</title>
+    <g id="all-save_Layer_2">
+      <title>Layer 2</title>
+      <g id="Graphic_914_shadow" filter="url(#Shadow)">
+        <path d="M 701 -159.42346 L 701 -190 C 701 -194.41828 697.4183 -198 693 -198 L 25.644135 -198 C 21.225857 -198 17.644135 -194.41828 17.644135 -190 L 17.644135 256 C 17.644135 260.41828 21.225857 264 25.644135 264 L 693 264 C 697.4183 264 701 260.41828 701 256 L 701 225.42346 Z M 662.42346 -151.42346 L 662.42346 217.42346 C 662.42346 221.84174 658.8417 225.42346 654.42346 225.42346 L 64.220676 225.42346 C 59.8024 225.42346 56.220676 221.84174 56.220676 217.42346 L 56.220676 -151.42346 C 56.220676 -155.84174 59.8024 -159.42346 64.220676 -159.42346 L 654.42346 -159.42346 C 658.8417 -159.42346 662.42346 -155.84174 662.42346 -151.42346 Z" fill="#e20019"/>
+      </g>
+      <g id="Line_920_shadow" filter="url(#Shadow_2)">
+        <line x1="159.5" y1="21" x2="591.5" y2="21" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+      <g id="Line_919_shadow" filter="url(#Shadow_2)">
+        <line x1="158.5" y1="88" x2="158.5" y2="21" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+      <g id="Line_918_shadow" filter="url(#Shadow_2)">
+        <line x1="275.5" y1="88" x2="275.5" y2="21" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+      <g id="Line_917_shadow" filter="url(#Shadow_2)">
+        <line x1="351.5" y1="-28" x2="351.5" y2="21" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+      <g id="Line_916_shadow" filter="url(#Shadow_2)">
+        <line x1="428.5" y1="88" x2="428.5" y2="22" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+      <g id="Line_915_shadow" filter="url(#Shadow_2)">
+        <line x1="591.5" y1="88" x2="591.5" y2="21" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+      <g id="Graphic_914">
+        <path d="M 701 -159.42346 L 701 -190 C 701 -194.41828 697.4183 -198 693 -198 L 25.644135 -198 C 21.225857 -198 17.644135 -194.41828 17.644135 -190 L 17.644135 256 C 17.644135 260.41828 21.225857 264 25.644135 264 L 693 264 C 697.4183 264 701 260.41828 701 256 L 701 225.42346 Z M 662.42346 -151.42346 L 662.42346 217.42346 C 662.42346 221.84174 658.8417 225.42346 654.42346 225.42346 L 64.220676 225.42346 C 59.8024 225.42346 56.220676 221.84174 56.220676 217.42346 L 56.220676 -151.42346 C 56.220676 -155.84174 59.8024 -159.42346 64.220676 -159.42346 L 654.42346 -159.42346 C 658.8417 -159.42346 662.42346 -155.84174 662.42346 -151.42346 Z" fill="#e20019"/>
+      </g>
+      <g id="Line_920">
+        <line x1="159.5" y1="21" x2="591.5" y2="21" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+      <g id="Line_919">
+        <line x1="158.5" y1="88" x2="158.5" y2="21" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+      <g id="Line_918">
+        <line x1="275.5" y1="88" x2="275.5" y2="21" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+      <g id="Line_917">
+        <line x1="351.5" y1="-28" x2="351.5" y2="21" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+      <g id="Line_916">
+        <line x1="428.5" y1="88" x2="428.5" y2="22" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+      <g id="Line_915">
+        <line x1="591.5" y1="88" x2="591.5" y2="21" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+      <g id="Graphic_1250">
+        <text transform="translate(19 214)" fill="black">
+          <tspan font-family="Apple Color Emoji" font-size="42" font-weight="400" fill="black" x="0" y="42" xml:space="preserve">🔥</tspan>
+        </text>
+      </g>
+      <g id="Group_1259">
+        <g id="Group_1267">
+          <g id="Graphic_1269">
+            <rect x="318.63415" y="-107" width="66.73171" height="62.81633" fill="url(#Obj_Gradient)"/>
+            <rect x="318.63415" y="-107" width="66.73171" height="62.81633" stroke="white" stroke-opacity=".4807276" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+          </g>
+          <g id="Graphic_1268">
+            <path d="M 295 -31 L 409 -31 L 386.2 -44.183673 L 317.8 -44.183673 Z" fill="url(#Obj_Gradient_2)"/>
+            <path d="M 295 -31 L 409 -31 L 386.2 -44.183673 L 317.8 -44.183673 Z" stroke="white" stroke-opacity=".4807276" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+          </g>
+        </g>
+        <g id="Group_1260">
+          <g id="Graphic_1266">
+            <rect x="320.3921" y="-103.94362" width="63.21578" height="57.43342" fill="url(#Obj_Gradient_3)"/>
+            <rect x="320.3921" y="-103.94362" width="63.21578" height="57.43342" stroke="white" stroke-opacity=".4807276" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+          </g>
+          <g id="Graphic_1265">
+            <rect x="321.61214" y="-96.54811" width="60.77572" height="47.01917" fill="url(#Obj_Gradient_4)"/>
+            <rect x="321.61214" y="-96.54811" width="60.77572" height="47.01917" stroke="white" stroke-opacity=".4807276" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+          </g>
+          <g id="Graphic_1264">
+            <ellipse cx="324.08007" cy="-100.62192" rx="1.24285915432544" ry="1.10304788089247" fill="url(#Obj_Gradient_5)"/>
+            <ellipse cx="324.08007" cy="-100.62192" rx="1.24285915432544" ry="1.10304788089247" stroke="#a5a5a5" stroke-linecap="round" stroke-linejoin="round" stroke-width=".25"/>
+          </g>
+          <g id="Graphic_1263">
+            <ellipse cx="327.93292" cy="-100.62192" rx="1.24285915432543" ry="1.10304788089247" fill="url(#Obj_Gradient_6)"/>
+            <ellipse cx="327.93292" cy="-100.62192" rx="1.24285915432543" ry="1.10304788089247" stroke="#a5a5a5" stroke-linecap="round" stroke-linejoin="round" stroke-width=".25"/>
+          </g>
+          <g id="Graphic_1262">
+            <ellipse cx="331.7858" cy="-100.62192" rx="1.24285915432543" ry="1.10304788089247" fill="url(#Obj_Gradient_7)"/>
+            <ellipse cx="331.7858" cy="-100.62192" rx="1.24285915432543" ry="1.10304788089247" stroke="#a5a5a5" stroke-linecap="round" stroke-linejoin="round" stroke-width=".25"/>
+          </g>
+          <g id="Graphic_1261">
+            <text transform="translate(340.1882 -103.21542)" fill="#666">
+              <tspan font-family="Noto Sans Display" font-size="4" font-weight="400" fill="#666" x="71409545e-20" y="4" xml:space="preserve">www.xyz.com</tspan>
+            </text>
+          </g>
+        </g>
+      </g>
+      <g id="Group_1255">
+        <g id="Graphic_1258">
+          <path d="M 393 183.74533 L 393 106.72664 L 429.5 125.98131 L 429.5 203 Z" fill="url(#Obj_Gradient_8)"/>
+          <path d="M 393 183.74533 L 393 106.72664 L 429.5 125.98131 L 429.5 203 Z" stroke="white" stroke-opacity=".48790474" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+        </g>
+        <g id="Graphic_1257">
+          <path d="M 466 183.74533 L 466 106.72664 L 429.5 125.98131 L 429.5 203 Z" fill="url(#Obj_Gradient_9)"/>
+          <path d="M 466 183.74533 L 466 106.72664 L 429.5 125.98131 L 429.5 203 Z" stroke="white" stroke-opacity=".48790474" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+        </g>
+        <g id="Graphic_1256">
+          <path d="M 429.5 88 L 466 106.85354 L 429.5 125.70707 L 393 106.85354 Z" fill="url(#Obj_Gradient_10)"/>
+          <path d="M 429.5 88 L 466 106.85354 L 429.5 125.70707 L 393 106.85354 Z" stroke="white" stroke-opacity=".48790474" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+        </g>
+      </g>
+      <g id="Group_1251">
+        <g id="Graphic_1254">
+          <path d="M 249 154.60544 L 249 101.02722 L 275 114.42178 L 275 168 Z" fill="url(#Obj_Gradient_11)"/>
+          <path d="M 249 154.60544 L 249 101.02722 L 275 114.42178 L 275 168 Z" stroke="white" stroke-opacity=".48790474" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+        </g>
+        <g id="Graphic_1253">
+          <path d="M 301 154.60544 L 301 101.02722 L 275 114.42178 L 275 168 Z" fill="url(#Obj_Gradient_12)"/>
+          <path d="M 301 154.60544 L 301 101.02722 L 275 114.42178 L 275 168 Z" stroke="white" stroke-opacity=".48790474" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+        </g>
+        <g id="Graphic_1252">
+          <path d="M 275 88 L 301 101.1155 L 275 114.23101 L 249 101.1155 Z" fill="url(#Obj_Gradient_13)"/>
+          <path d="M 275 88 L 301 101.1155 L 275 114.23101 L 249 101.1155 Z" stroke="white" stroke-opacity=".48790474" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+        </g>
+      </g>
+      <g id="Group_1270">
+        <g id="Graphic_1273">
+          <path d="M 132 154.60544 L 132 101.02722 L 158 114.42178 L 158 168 Z" fill="url(#Obj_Gradient_14)"/>
+          <path d="M 132 154.60544 L 132 101.02722 L 158 114.42178 L 158 168 Z" stroke="white" stroke-opacity=".48790474" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+        </g>
+        <g id="Graphic_1272">
+          <path d="M 184 154.60544 L 184 101.02722 L 158 114.42178 L 158 168 Z" fill="url(#Obj_Gradient_15)"/>
+          <path d="M 184 154.60544 L 184 101.02722 L 158 114.42178 L 158 168 Z" stroke="white" stroke-opacity=".48790474" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+        </g>
+        <g id="Graphic_1271">
+          <path d="M 158 88 L 184 101.1155 L 158 114.23101 L 132 101.1155 Z" fill="url(#Obj_Gradient_16)"/>
+          <path d="M 158 88 L 184 101.1155 L 158 114.23101 L 132 101.1155 Z" stroke="white" stroke-opacity=".48790474" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+        </g>
+      </g>
+      <g id="Group_1274">
+        <g id="Graphic_1277">
+          <path d="M 566 154.60544 L 566 101.02722 L 592 114.42178 L 592 168 Z" fill="url(#Obj_Gradient_17)"/>
+          <path d="M 566 154.60544 L 566 101.02722 L 592 114.42178 L 592 168 Z" stroke="white" stroke-opacity=".48790474" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+        </g>
+        <g id="Graphic_1276">
+          <path d="M 618 154.60544 L 618 101.02722 L 592 114.42178 L 592 168 Z" fill="url(#Obj_Gradient_18)"/>
+          <path d="M 618 154.60544 L 618 101.02722 L 592 114.42178 L 592 168 Z" stroke="white" stroke-opacity=".48790474" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+        </g>
+        <g id="Graphic_1275">
+          <path d="M 592 88 L 618 101.1155 L 592 114.23101 L 566 101.1155 Z" fill="url(#Obj_Gradient_19)"/>
+          <path d="M 592 88 L 618 101.1155 L 592 114.23101 L 566 101.1155 Z" stroke="white" stroke-opacity=".48790474" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

@@ -1,12 +1,3 @@
-# Folders with generated images
-firewalls
-idle-scan
-ssh
 
-# Folder with external resources such as papers 
-external 
-
-# individual generated images
-connection-hijacking.svg
-smurf-angriff.svg
-drdos.svg
+# Folder with external resources such as papers
+external

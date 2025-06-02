@@ -1,5 +1,5 @@
 .. meta::
-    :version: genesis
+    :version: renaissance
     :author: Michael Eichberg
     :keywords: "TCP", "DDoS", SSH
     :description lang=de: Network Security - Eine Einführung in die Sicherheit von (verteilten) Systemen
@@ -11,16 +11,14 @@
 
 
 
-Eine erste Einführung in die Sicherheit von (verteilten) Systemen
-===================================================================
+Eine erste Einführung in die Sicherheit von (verteilten) Systemen\ [#]_
+========================================================================
 
 :Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
 :Kontakt: michael.eichberg@dhbw.de
-:Version: 1.3
+:Version: 1.3.1
 
-.. container:: footer-left tiny
-
-    Die Folien basieren in weiten Teilen auf einem Foliensatz von Prof. Dr. Henning Pagnia.
+.. [#] Die Folien basieren unter anderem auf einem Foliensatz von Prof. Dr. Henning Pagnia.
 
     Alle Fehler sind meine eigenen.
 
@@ -50,17 +48,18 @@ Transmission Control Protocol (TCP)
 -------------------------------------
 
 
-.. class:: vertical-title
+
+.. class:: repetition
 
 TCP Grundlagen
 -------------------
 
-.. class:: incremental more-space-between-list-items
+.. class:: incremental-list
 
 - Protokoll der Schicht 4 (Transport Layer) basiert auf IP
 - verbindungsorientierte Kommunikation zweier Rechner im Internet zuverlässig und geordnet:
 
-  .. class:: incremental
+  .. class:: incremental-list
 
   - Verwerfen von Duplikaten und fehlerhaft übertragener Pakete
   - automatisches Wiederversenden fehlender Pakete
@@ -68,6 +67,9 @@ TCP Grundlagen
 
 - Verbindungsaufbau immer zwischen zwei Sockets (Socket-Adresse: IP Adresse und 16 Bit-Port-Nummer)
 
+
+
+.. class:: repetition
 
 Aufbau einer TCP Verbindung
 -----------------------------
@@ -92,91 +94,54 @@ Dreifacher Handshake:
 
     Bei einer laufenden Verbindung werden die Sequenznummern inkrementiert und es ist nicht (mehr) erkennbar wer die Verbindung aufgebaut hat.
 
-.. container:: stack
+.. raw:: html
+    :class: center-child-elements
 
-    .. container:: layer
+    <div style="width: 76ch; height: 40ch"; container-type:size;">
+    <svg viewBox="100 0 1140 600" font-size="36" version="1.1" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+            <marker
+            id="arrow"
+            viewBox="0 0 10 10"
+            refX="10"
+            refY="5"
+            markerWidth="8"
+            markerHeight="8"
+            orient="auto-start-reverse">
+            <path d="M 0 0 L 10 5 L 0 10 z" />
+            </marker>
+        </defs>
+        <text x="125" y="75" style="font-weight: bolder">Client</text>
+        <line x1="200" y1="100" x2="200" y2="400" style="stroke:rgb(0,0,0);stroke-width:3" />
+        <text x="925" y="75" style="font-weight: bolder">Server</text>
+        <line x1="1000" y1="100" x2="1000" y2="400" style="stroke:rgb(0,0,0);stroke-width:3" />
+        <line x1="200" y1="400" x2="200" y2="550" stroke-dasharray="5,5" style="stroke:rgb(0,0,0);stroke-width:3" />
+        <line x1="1000" y1="400" x2="1000" y2="550" stroke-dasharray="5,5" style="stroke:rgb(0,0,0);stroke-width:3" />
 
-        .. raw:: html
-            :class: center-child-elements
+        <text x="500" y="65" transform="rotate(6.6)">SYN(1000)</text>
+        <line x1="200" y1="110" x2="1000" y2="190" style="stroke:rgb(0,0,0);stroke-width:3" marker-end="url(#arrow)"/>
 
-            <svg width="1200" height="600" viewBox="0 0 1200 600" version="1.1" xmlns="http://www.w3.org/2000/svg">
-                <defs>
-                    <marker
-                    id="arrow"
-                    viewBox="0 0 10 10"
-                    refX="10"
-                    refY="5"
-                    markerWidth="8"
-                    markerHeight="8"
-                    orient="auto-start-reverse">
-                    <path d="M 0 0 L 10 5 L 0 10 z" />
-                    </marker>
-                </defs>
-                <text x="125" y="75" style="font-weight: bolder">Client</text>
-                <line x1="200" y1="100" x2="200" y2="400" style="stroke:rgb(0,0,0);stroke-width:3" />
-                <text x="925" y="75" style="font-weight: bolder">Server</text>
-                <line x1="1000" y1="100" x2="1000" y2="400" style="stroke:rgb(0,0,0);stroke-width:3" />
-                <line x1="200" y1="400" x2="200" y2="550" stroke-dasharray="5,5" style="stroke:rgb(0,0,0);stroke-width:3" />
-                <line x1="1000" y1="400" x2="1000" y2="550" stroke-dasharray="5,5" style="stroke:rgb(0,0,0);stroke-width:3" />
+        <g class="incremental">
+        <text x="270" y="300" transform="rotate(-6.6)">SYN(2000), ACK(1001)</text>
+        <line x1="1000" y1="200" x2="200" y2="290" style="stroke:rgb(0,0,0);stroke-width:3" marker-end="url(#arrow)"/>
+        </g>
 
-                <text x="500" y="65" transform="rotate(6.6)">SYN(1000)</text>
-                <line x1="200" y1="110" x2="1000" y2="190" style="stroke:rgb(0,0,0);stroke-width:3" marker-end="url(#arrow)"/>
-            </svg>
-
-    .. container:: layer overlay incremental
-
-        .. raw:: html
-            :class: center-child-elements
-
-            <svg height="600" width="1200" viewBox="0 0 1200 600" version="1.1" xmlns="http://www.w3.org/2000/svg">
-                <defs>
-                    <marker
-                    id="arrow"
-                    viewBox="0 0 10 10"
-                    refX="10"
-                    refY="5"
-                    markerWidth="8"
-                    markerHeight="8"
-                    orient="auto-start-reverse">
-                    <path d="M 0 0 L 10 5 L 0 10 z" />
-                    </marker>
-                </defs>
-
-                <text x="270" y="300" transform="rotate(-6.6)">SYN(2000), ACK(1001)</text>
-                <line x1="1000" y1="200" x2="200" y2="290" style="stroke:rgb(0,0,0);stroke-width:3" marker-end="url(#arrow)"/>
-
-            </svg>
-
-    .. container:: layer overlay incremental
-
-        .. raw:: html
-            :class: center-child-elements
-
-            <svg height="600" width="1200" viewBox="0 0 1200 600" version="1.1" xmlns="http://www.w3.org/2000/svg">
-                <defs>
-                    <marker
-                    id="arrow"
-                    viewBox="0 0 10 10"
-                    refX="10"
-                    refY="5"
-                    markerWidth="8"
-                    markerHeight="8"
-                    orient="auto-start-reverse">
-                    <path d="M 0 0 L 10 5 L 0 10 z" />
-                    </marker>
-                </defs>
-
-                <text x="555" y="315" transform="rotate(6.6)">ACK(2001)</text>
-                <line x1="200" y1="300" x2="1000" y2="390" style="stroke:rgb(0,0,0);stroke-width:3" marker-end="url(#arrow)"/>
-            </svg>
+        <g class="incremental">
+        <text x="555" y="315" transform="rotate(6.6)">ACK(2001)</text>
+        <line x1="200" y1="300" x2="1000" y2="390" style="stroke:rgb(0,0,0);stroke-width:3" marker-end="url(#arrow)"/>
+        </g>
+    </svg>
+    </div>
 
 
+
+.. class:: repetition
 
 
 Ports bei TCP
 ----------------
 
-.. class:: incremental
+.. class:: incremental-list
 
 - Port-Nummern werden für die Kommunikation zwischen zwei Diensten/Prozessen verwendet
 - Ports sind 16 Bit Zahlen (0-65535)
@@ -184,7 +149,8 @@ Ports bei TCP
 - einige Port-Nummern sind Standarddiensten zugeordnet
 
 
-.. class:: small
+
+.. class:: repetition
 
 Port-Nummern einiger Standarddienste [#]_
 ------------------------------------------
@@ -193,7 +159,7 @@ Port-Nummern einiger Standarddienste [#]_
 
 .. csv-table::
     :header: Protokoll, Dienst, Portnummer
-    :class: highlight-line-on-hover
+    :class: highlight-row-on-hover
     :widths: 100, 600, 50
 
     ftp, Dateitransfer, 21
@@ -206,7 +172,7 @@ Port-Nummern einiger Standarddienste [#]_
 
 .. csv-table::
     :header: Protokoll, Dienst, Portnummer
-    :class: highlight-line-on-hover
+    :class: highlight-row-on-hover incremental
     :widths: 100, 600, 50
 
     ssh, Secure Shell, 22
@@ -223,7 +189,7 @@ Port-Nummern einiger Standarddienste [#]_
 Angriffe auf TCP - Motivation
 --------------------------------
 
-.. class:: incremental list-with-explanations
+.. class:: incremental-list list-with-explanations
 
 - Netzwerkprogrammierung mit TCP ist relativ komfortabel.
 - Viele Dienste sind mit TCP implementiert.
@@ -234,106 +200,114 @@ Angriffe auf TCP - Motivation
   Server haben heutzutage im Allgemeinen alle nicht verwendeten Dienste geschlossen.
 
 
+
 Port Scans: TCP Connect Scan
 -------------------------------
 
-.. container:: two-columns
+.. grid::
 
-    .. container:: width-60
+    .. cell:: width-50 incremental
 
-          :Vorgehen: Aufbau vollständiger Verbindungen zu allen bzw. zu ausgewählten Ports.
+          .. rubric:: Vorgehen
 
-    .. raw:: html
+          Aufbau vollständiger Verbindungen zu allen bzw. zu ausgewählten Ports.
 
-        <svg width="900" height="440" viewBox="0 0 1200 600" version="1.1" xmlns="http://www.w3.org/2000/svg">
-            <defs>
-                <marker
-                id="arrow"
-                viewBox="0 0 10 10"
-                refX="10"
-                refY="5"
-                markerWidth="8"
-                markerHeight="8"
-                orient="auto-start-reverse">
-                <path d="M 0 0 L 10 5 L 0 10 z" />
-                </marker>
-            </defs>
-            <text x="125" y="75" style="font-weight: bolder">Scanner</text>
-            <line x1="200" y1="100" x2="200" y2="400" style="stroke:rgb(0,0,0);stroke-width:3" />
-            <text x="925" y="75" style="font-weight: bolder">Server</text>
-            <line x1="1000" y1="100" x2="1000" y2="400" style="stroke:rgb(0,0,0);stroke-width:3" />
-            <line x1="200" y1="400" x2="200" y2="550" stroke-dasharray="5,5" style="stroke:rgb(0,0,0);stroke-width:3" />
-            <line x1="1000" y1="400" x2="1000" y2="550" stroke-dasharray="5,5" style="stroke:rgb(0,0,0);stroke-width:3" />
+    .. cell:: width-50
 
-            <text x="500" y="65" transform="rotate(6.6)">SYN</text>
-            <line x1="200" y1="110" x2="1000" y2="190" style="stroke:rgb(0,0,0);stroke-width:3" marker-end="url(#arrow)"/>
+        .. raw:: html
 
-            <text x="390" y="300" transform="rotate(-6.6)">SYN / ACK</text>
-            <line x1="1000" y1="200" x2="200" y2="290" style="stroke:rgb(0,0,0);stroke-width:3" marker-end="url(#arrow)"/>
+            <div style="width: 36ch; height:18ch; container-type:size;">
+            <svg viewBox="0 0 1200 600" font-size="48" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                    <marker
+                    id="arrow"
+                    viewBox="0 0 10 10"
+                    refX="10"
+                    refY="5"
+                    markerWidth="8"
+                    markerHeight="8"
+                    orient="auto-start-reverse">
+                    <path d="M 0 0 L 10 5 L 0 10 z" />
+                    </marker>
+                </defs>
+                <text x="125" y="75" style="font-weight: bolder">Scanner</text>
+                <line x1="200" y1="100" x2="200" y2="400" style="stroke:rgb(0,0,0);stroke-width:3" />
+                <text x="925" y="75" style="font-weight: bolder">Server</text>
+                <line x1="1000" y1="100" x2="1000" y2="400" style="stroke:rgb(0,0,0);stroke-width:3" />
+                <line x1="200" y1="400" x2="200" y2="550" stroke-dasharray="5,5" style="stroke:rgb(0,0,0);stroke-width:3" />
+                <line x1="1000" y1="400" x2="1000" y2="550" stroke-dasharray="5,5" style="stroke:rgb(0,0,0);stroke-width:3" />
 
-            <text x="555" y="315" transform="rotate(6.6)">ACK</text>
-            <line x1="200" y1="300" x2="1000" y2="390" style="stroke:rgb(0,0,0);stroke-width:3" marker-end="url(#arrow)"/>
-        </svg>
+                <text x="500" y="65" transform="rotate(6.6)">SYN</text>
+                <line x1="200" y1="110" x2="1000" y2="190" style="stroke:rgb(0,0,0);stroke-width:3" marker-end="url(#arrow)"/>
 
-.. class:: incremental
+                <text x="390" y="300" transform="rotate(-6.6)">SYN / ACK</text>
+                <line x1="1000" y1="200" x2="200" y2="290" style="stroke:rgb(0,0,0);stroke-width:3" marker-end="url(#arrow)"/>
 
-:Bewertung:
+                <text x="555" y="315" transform="rotate(6.6)">ACK</text>
+                <line x1="200" y1="300" x2="1000" y2="390" style="stroke:rgb(0,0,0);stroke-width:3" marker-end="url(#arrow)"/>
+            </svg>
+            </div>
+
+.. assessment::
+    :class: incremental
 
     - simpelster Port Scan
     - große Entdeckungsgefahr (Scan selbst ist kein Angriff)
     - mögliche Verbesserung: zwischen dem Scannen mehrerer Ports Pausen einstreuen (Wie lange?)
 
 
+
 Port Scans: TCP SYN Scan
 -----------------------------
 
-.. container:: two-columns
+.. grid::
 
-    .. container:: width-60
+    .. cell:: width-50 incremental
 
-        :Vorgehen:
+        .. rubric:: Vorgehen
 
-            .. class:: incremental
+        1. Senden eines TCP-Segments mit gesetztem SYN-Flag an einen Port
+        2. falls der *Port offen* ist, kommt SYN/ACK zurück danach RST senden
+        3. falls der *Port nicht offen* ist, kommt RST (oder nichts) zurück
 
-            1. Senden eines TCP-Segments mit gesetztem SYN-Flag an einen Port
-            2. falls der *Port offen* ist, kommt SYN/ACK zurück danach RST senden
-            3. falls der *Port nicht offen* ist, kommt RST (oder nichts) zurück
+    .. cell:: widh-50
 
-    .. raw:: html
+        .. raw:: html
 
-        <svg width="900" height="440" viewBox="0 0 1200 600" version="1.1" xmlns="http://www.w3.org/2000/svg">
-            <defs>
-                <marker
-                id="arrow"
-                viewBox="0 0 10 10"
-                refX="10"
-                refY="5"
-                markerWidth="8"
-                markerHeight="8"
-                orient="auto-start-reverse">
-                <path d="M 0 0 L 10 5 L 0 10 z" />
-                </marker>
-            </defs>
-            <text x="125" y="75" style="font-weight: bolder">Scanner</text>
-            <line x1="200" y1="100" x2="200" y2="400" style="stroke:rgb(0,0,0);stroke-width:3" />
-            <text x="925" y="75" style="font-weight: bolder">Server</text>
-            <line x1="1000" y1="100" x2="1000" y2="400" style="stroke:rgb(0,0,0);stroke-width:3" />
-            <line x1="200" y1="400" x2="200" y2="550" stroke-dasharray="5,5" style="stroke:rgb(0,0,0);stroke-width:3" />
-            <line x1="1000" y1="400" x2="1000" y2="550" stroke-dasharray="5,5" style="stroke:rgb(0,0,0);stroke-width:3" />
+            <div style="width: 36ch; height:18ch; container-type:size;">
+            <svg viewBox="0 0 1200 600" font-size="48" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                    <marker
+                    id="arrow"
+                    viewBox="0 0 10 10"
+                    refX="10"
+                    refY="5"
+                    markerWidth="8"
+                    markerHeight="8"
+                    orient="auto-start-reverse">
+                    <path d="M 0 0 L 10 5 L 0 10 z" />
+                    </marker>
+                </defs>
+                <text x="125" y="75" style="font-weight: bolder">Scanner</text>
+                <line x1="200" y1="100" x2="200" y2="400" style="stroke:rgb(0,0,0);stroke-width:3" />
+                <text x="925" y="75" style="font-weight: bolder">Server</text>
+                <line x1="1000" y1="100" x2="1000" y2="400" style="stroke:rgb(0,0,0);stroke-width:3" />
+                <line x1="200" y1="400" x2="200" y2="550" stroke-dasharray="5,5" style="stroke:rgb(0,0,0);stroke-width:3" />
+                <line x1="1000" y1="400" x2="1000" y2="550" stroke-dasharray="5,5" style="stroke:rgb(0,0,0);stroke-width:3" />
 
-            <text x="500" y="65" transform="rotate(6.6)">SYN</text>
-            <line x1="200" y1="110" x2="1000" y2="190" style="stroke:rgb(0,0,0);stroke-width:3" marker-end="url(#arrow)"/>
+                <text x="500" y="65" transform="rotate(6.6)">SYN</text>
+                <line x1="200" y1="110" x2="1000" y2="190" style="stroke:rgb(0,0,0);stroke-width:3" marker-end="url(#arrow)"/>
 
-            <text x="390" y="300" transform="rotate(-6.6)">SYN / ACK</text>
-            <line x1="1000" y1="200" x2="200" y2="290" style="stroke:rgb(0,0,0);stroke-width:3" marker-end="url(#arrow)"/>
+                <text x="390" y="300" transform="rotate(-6.6)">SYN / ACK</text>
+                <line x1="1000" y1="200" x2="200" y2="290" style="stroke:rgb(0,0,0);stroke-width:3" marker-end="url(#arrow)"/>
 
-            <text x="555" y="315" transform="rotate(6.6)">RST</text>
-            <line x1="200" y1="300" x2="1000" y2="390" style="stroke:rgb(0,0,0);stroke-width:3" marker-end="url(#arrow)"/>
-        </svg>
+                <text x="555" y="315" transform="rotate(6.6)">RST</text>
+                <line x1="200" y1="300" x2="1000" y2="390" style="stroke:rgb(0,0,0);stroke-width:3" marker-end="url(#arrow)"/>
+            </svg>
+            </div>
 
-.. class:: incremental
-
-:Bewertung:
+.. assessment::
+    :class: incremental
 
     - kein vollständiger Verbindungsaufbau
     - meist nicht protokolliert
@@ -357,13 +331,11 @@ Port Scans: Stealth Scans
 
     Laut RFC kommt RST zurück, falls der Port offen ist. (Reaktion ist de-facto aber abhängig vom Betriebssystem und oft kommt keine Antwort zurück.)
 
-.. class:: incremental
-
-:Bewertung:
+.. assessment::
+    :class: incremental
 
     - Zugriff wird meist nicht protokolliert
     - Scan bleibt unbemerkt
-
 
 .. supplemental::
 
@@ -372,30 +344,27 @@ Port Scans: Stealth Scans
     Bei diesem Scan sind alle Flags gesetzt; ein XMAS-Scan wird auch als Christmas-Tree-Scan bezeichnet, da das Paket erleuchtet ist wie ein Weihnachtsbaum.
 
 
+
 Port Scans: Idle Scan [#]_
 -----------------------------
 
 Bei allen bisher betrachteten Scans kann der Scanner prinzipiell identifiziert werden. Unter Verwendung eines sog. Zombies geht es auch anders:
 
-.. container:: two-columns
+.. grid::
 
-    .. container:: column
+    .. cell:: width-50
 
         Sondiere IP ID des Zombies:
 
         .. image:: images/idle-scan/idle-scan-step1.svg
             :alt: Idle Scan - Schritte 1-2
-            :align: left
-            :width: 700px
 
-    .. container:: column faded-to-white
+    .. cell:: width-50 fade-out
 
         Starte Scan:
 
         .. image:: images/idle-scan/idle-scan-step2.svg
             :alt: Idle Scan - Schritte 3-5
-            :align: left
-            :width: 750px
 
 .. supplemental::
 
@@ -407,17 +376,15 @@ Bei allen bisher betrachteten Scans kann der Scanner prinzipiell identifiziert w
 
         Sollte ein Intrusion Detection System vorhanden sein, so wird dieses den Zombie als Angreifer identifizieren.
 
-
     .. rubric:: Hintergrund - IP ID
 
     Das Feld *IP Identifikation (IP ID)* dient der Identifizierung einer Gruppe von Fragmenten eines einzelnen IP-Datagramms.
 
     .. image:: images-external/IPv4_Packet-en.svg
             :alt: IPv4 Packet
-            :width: 1000px
             :align: left
 
-    .. container:: minor far-smaller
+    .. container:: peripheral
 
         By Michel Bakni - Postel, J. (September 1981) RFC 791, IP Protocol, DARPA Internet Program Protocol Specification, p. 1 DOI: 10.17487/RFC0791., CC BY-SA 4.0, https://commons.wikimedia.org/w/index.php?curid=79949694
 
@@ -429,25 +396,21 @@ Bei allen bisher betrachteten Scans kann der Scanner prinzipiell identifiziert w
 Port Scans: Idle Scan
 -----------------------------
 
-.. container:: two-columns
+.. grid::
 
-    .. container:: column
+    .. cell:: width-50
 
         Starte Scan:
 
         .. image:: images/idle-scan/idle-scan-step2.svg
             :alt: Idle Scan - Schritte 3-5
-            :align: left
-            :width: 750px
 
-    .. container:: column
+    .. cell:: width-50
 
         Sondiere IP ID des Zombies:
 
         .. image:: images/idle-scan/idle-scan-step3.svg
             :alt: Idle Scan - Schritt 6
-            :align: right
-            :width: 700px
 
 
 
@@ -473,14 +436,14 @@ Port Scans: Idle Scan - Zusammenfassung
 Port Scans mit nmap
 -----------------------
 
-.. class:: incremental
+.. class:: incremental-list
 
 - alle Arten von Port-Scans möglich
 - auch OS fingerprinting
 - u. U. sogar Ermittlung der Versionsnummern von Diensten
 
 .. code:: bash
-    :class: incremental smaller copy-to-clipboard
+    :class: incremental
 
     $ nmap 192.168.178.121 -Pn
     Starting Nmap 7.94 ( https://nmap.org ) at 2023-12-14 13:16 PST
@@ -507,10 +470,11 @@ Port Scans mit nmap
         (2) Bei einem passiven Versuch agieren die Angreifer eher als "Schnüffler", der keine absichtlichen Änderungen oder Aktionen im Netzwerk vornimmt. Passives OS-Fingerprinting ist ein unauffälligerer, aber wesentlich langsamerer Prozess.
 
 
+
 Port Knocking
 ----------------
 
-.. class:: incremental list-with-explanations
+.. class:: incremental-list list-with-explanations
 
 - Ein Knock-Daemon versteckt offene Ports auf dem Server.
 - Zugriffe auf alle Ports werden im Log-File protokolliert.
@@ -539,8 +503,6 @@ Angreifer übernimmt eine bestehende - zum Beispiel eine bereits durch (Einmal-)
 .. image:: images/connection-hijacking.svg
     :alt: Connection Hijacking (einfache Variante)
     :align: center
-    :height: 800px
-
 
 .. supplemental::
 
@@ -564,8 +526,10 @@ Ziel des Angreifers: Lahmlegen eines Dienstes oder des ganzen Systems ...
 - durch Ausnutzen von Schwachstellen (:eng:`vulnerabilities`) wie z. B. Buffer Overflows
 - durch Generierung von Überlast (Ausschöpfen von RAM, CPU, Netzwerkbandbreite, ...)
 
-.. admonition:: Beispiel: Ping-of-Death
-    :class: incremental smaller
+.. example::
+    :class: incremental
+
+    .. rubric:: Ping-of-Death
 
     (Historisch: aus dem Jahr 1997)
 
@@ -580,7 +544,7 @@ Ziel des Angreifers: Lahmlegen eines Dienstes oder des ganzen Systems ...
 Denial-of-Service: SYN-flooding Angriff
 -----------------------------------------
 
-.. class:: incremental
+.. class:: incremental-list
 
 - Angriff auf Design
 - Angreifer sendet eine Verbindungsaufbauanforderung (gesetztes SYN-Flag) an Zielmaschine
@@ -601,13 +565,14 @@ Denial-of-Service: SYN-flooding Angriff
 
 SYN-Cookies sind speziell konstruiert initiale Sequenznummern.
 
-.. stack::
+.. deck::
 
-    .. layer::
+    .. card::
 
         .. raw:: html
 
-            <svg width="1700" height="600" viewBox="0 0 1700 600" version="1.1" xmlns="http://www.w3.org/2000/svg">
+            <div style="width:72ch;height:27ch">
+            <svg viewBox="100 0 1600 600" font-size="36" version="1.1" xmlns="http://www.w3.org/2000/svg">
                 <defs>
                     <marker
                     id="arrow"
@@ -620,23 +585,25 @@ SYN-Cookies sind speziell konstruiert initiale Sequenznummern.
                     <path d="M 0 0 L 10 5 L 0 10 z" />
                     </marker>
                 </defs>
-                <text x="125" y="75" style="font-weight: bolder">Client</text>
+                <text x="150" y="75" style="font-weight: bolder">Client</text>
                 <line x1="200" y1="100" x2="200" y2="400" style="stroke:rgb(0,0,0);stroke-width:3" />
                 <line x1="200" y1="400" x2="200" y2="550" stroke-dasharray="5,5" style="stroke:rgb(0,0,0);stroke-width:3" />
 
-                <text x="925" y="75" style="font-weight: bolder">Server</text>
+                <text x="1450" y="75" style="font-weight: bolder">Server</text>
                 <line x1="1500" y1="100" x2="1500" y2="400" style="stroke:rgb(0,0,0);stroke-width:3" />
                 <line x1="1500" y1="400" x2="1500" y2="550" stroke-dasharray="5,5" style="stroke:rgb(0,0,0);stroke-width:3" />
 
                 <text x="500" y="75" transform="rotate(4.25)">SYN(1000)</text>
                 <line x1="200" y1="110" x2="1500" y2="190" style="stroke:rgb(0,0,0);stroke-width:3" marker-end="url(#arrow)"/>
             </svg>
+            </div>
 
-    .. layer:: overlay incremental
+    .. card:: overlay
 
         .. raw:: html
 
-            <svg height="600" width="1700" viewBox="0 0 1700 600" version="1.1" xmlns="http://www.w3.org/2000/svg">
+            <div style="width:72ch;height:27ch">
+            <svg viewBox="100 0 1600 600" font-size="36"  version="1.1" xmlns="http://www.w3.org/2000/svg">
                 <defs>
                     <marker
                     id="arrow"
@@ -653,16 +620,16 @@ SYN-Cookies sind speziell konstruiert initiale Sequenznummern.
                 <text x="270" y="290" transform="rotate(-4.25)">SYN(with cookie), ACK(1001)</text>
                 <line x1="1500" y1="200" x2="200" y2="290" style="stroke:rgb(0,0,0);stroke-width:3" marker-end="url(#arrow)"/>
             </svg>
+            </div>
 
-        .. container:: smaller
+        Der Cookie ermöglicht es, dass keine Informationen im Speicher gehalten werden müssen. Der Cookie encodiert die Informationen, die der Server benötigt, um die Verbindung aufzubauen: Client IP, time window, etc.
 
-            Der Cookie ermöglicht es, dass keine Informationen im Speicher gehalten werden müssen. Der Cookie encodiert die Informationen, die der Server benötigt, um die Verbindung aufzubauen: Client IP, time window, etc.
-
-    .. layer:: overlay incremental
+    .. card:: overlay
 
         .. raw:: html
 
-            <svg height="600" width="1800" viewBox="0 0 1800 600" version="1.1" xmlns="http://www.w3.org/2000/svg">
+            <div style="width:72ch;height:27ch">
+            <svg  viewBox="100 0 1600 600" font-size="36"  version="1.1" xmlns="http://www.w3.org/2000/svg">
                 <defs>
                     <marker
                     id="arrow"
@@ -679,14 +646,14 @@ SYN-Cookies sind speziell konstruiert initiale Sequenznummern.
                 <text x="555" y="325" transform="rotate(4.2)">ACK(with cookie(+1))</text>
                 <line x1="200" y1="300" x2="1500" y2="390" style="stroke:rgb(0,0,0);stroke-width:3" marker-end="url(#arrow)"/>
 
-                <text x="1515" y="340" style="font-size:40px">Validierung</text>
-                <text x="1515" y="390" style="font-size:40px">des Cookie</text>
+                <text x="1515" y="340" >Validierung</text>
+                <text x="1515" y="390" >des Cookie</text>
                 <line x1="1600" y1="400" x2="1600" y2="455" style="stroke:rgb(0,0,0);stroke-width:3" marker-end="url(#arrow)"/>
-                <text x="1515" y="490" style="font-size:40px">ggf. </text>
-                <text x="1515" y="540" style="font-size:40px">Verbindungs-</text>
-                <text x="1515" y="590" style="font-size:40px">aufbau</text>
-
+                <text x="1515" y="490" >ggf. </text>
+                <text x="1515" y="540" >Verbindungs-</text>
+                <text x="1515" y="590" >aufbau</text>
             </svg>
+            </div>
 
 
 
@@ -702,13 +669,13 @@ Opfer wird von sehr vielen Angreifern mit Nachrichten überflutet.
     .. image:: images/smurf-angriff.svg
         :alt: Smurf Angriff
         :align: center
-        :height: 800px
+
 
 
 Distributed Denial-of-Service (DDoS) Angriff
 ------------------------------------------------
 
-.. class:: incremental
+.. class:: incremental-list
 
 - Bot-Netze (Botnetze) werden verwendet, um DDoS-Angriffe durchzuführen.
 - Bot-Netze können viele 10.000 Rechner umfassen.
@@ -725,40 +692,46 @@ Distributed Denial-of-Service (DDoS) Angriff
 Distributed-Reflected-Denial-of-Service Angriff
 ------------------------------------------------------------
 
-.. container:: two-columns
+.. deck::
 
-    .. container:: column no-separator smaller
+    .. card::
 
-      - Idee eines (DRDoS) Angriffs:
+        .. grid::
 
-        .. class:: list-with-explanations
+            .. cell:: width-50
 
-        - Es wird eine Anfrage an einen Server gesendet, die eine große Antwort auslöst.
+                Idee eines (DRDoS) Angriffs
 
-          (Z. B. hat(te) der NTP Monlist Befehl eine Antwort, die ca. 200 Fach größer ist als die Anfrage!)
-        - Mittels IP-Spoofing wird die IP-Adresse des Opfers als Absenderadresse verwendet.
+                .. class:: incremental-list list-with-explanations
 
-        .. class:: incremental
+                - Es wird eine Anfrage an einen Server gesendet, die eine große Antwort auslöst.
 
-        - Es werden insbesondere Dienste basierend auf UDP verwendet, da hier keine Verbindung aufgebaut werden muss.
+                  .. supplemental::
 
-    .. image:: images/drdos.svg
-        :alt: DRDoS Angriff
-        :align: center
-        :width: 600px
+                    Z. B. hat(te) der NTP Monlist Befehl eine Antwort, die ca. 200 Fach größer ist als die Anfrage!
 
-.. class:: incremental smaller
+                - Mittels IP-Spoofing wird die IP-Adresse des Opfers als Absenderadresse verwendet.
 
-- Nehmen einen signifikanten Teil aller DDoS-Angriffe ein.
-- Die Tatsache, dass die Sender legitime Server sind, erschwert die Abwehr.
-- :eng:`Egress Filtering` kann helfen, die Verwendung von IP-Spoofing zu verhindern.
+                - Es werden insbesondere Dienste basierend auf UDP verwendet, da hier keine Verbindung aufgebaut werden muss.
 
+            .. cell:: width-50
+
+                .. image:: images/drdos.svg
+                    :alt: DRDoS Angriff
+                    :align: center
+
+    .. card::
+
+        - Nehmen einen signifikanten Teil aller DDoS-Angriffe ein.
+        - Die Tatsache, dass die Sender legitime Server sind, erschwert die Abwehr.
+        - :eng:`Egress Filtering` kann helfen, die Verwendung von IP-Spoofing zu verhindern.
 
 .. supplemental::
 
     Bereits im Jahr 2018 wurde ein Angriff mit einer Bandbreite von 1,7 TBit/s beobachtet.
 
     :Egress Filtering: Der Router verwirft alle Pakete, die eine Absenderadresse verwenden, die nicht aus dem eigenen Netzwerk stammt.
+
 
 
 `Distributed Denial-of-Service (DDoS) Angriffe - Beispiel <https://cloud.google.com/blog/products/identity-security/google-cloud-mitigated-largest-ddos-attack-peaking-above-398-million-rps>`__
@@ -775,30 +748,28 @@ Distributed-Reflected-Denial-of-Service Angriff
 Distributed Denial-of-Service Angriffe - Beispiele
 ---------------------------------------------------
 
-.. container:: smaller
-
-   - **TCP Stack Attacks** SYN, FIN, RST, ACK, SYN-ACK, URG-PSH, other combinations of TCP Flags, slow TCP attacks
-   - **Application Attacks**:HTTP GET/POST Floods, slow HTTP Attacks, SIP Invite Floods, DNS Attacks, HTTPS Protocol Attacks
-   - **SSL/TLS Attacks**: Malformed SSL Floods, SSL Renegotiation, SSL Session Floods
-   - **DNS Cache Poisoning**
-   - **Reflection Amplification Flood Attacks**: TCP, UDP, ICMP, DNS, mDNS, SSDP, NTP, NetBIOS, RIPv1, rpcbind, SNMP, SQL RS, Chargen, L2TP, Microsoft SQL Resolution Service
-   - **Fragmentation Attacks**: Teardrop, Targa3, Jolt2, Nestea
-   - **Vulnerability Attacks**
-   - **Resource Exhaustion Attacks**: Slowloris, Pyloris, LOIC, etc.
-   - **Flash Crowd Protection**
-   - **Attacks on Gaming Protocols**
+- **TCP Stack Attacks** SYN, FIN, RST, ACK, SYN-ACK, URG-PSH, other combinations of TCP Flags, slow TCP attacks
+- **Application Attacks**:HTTP GET/POST Floods, slow HTTP Attacks, SIP Invite Floods, DNS Attacks, HTTPS Protocol Attacks
+- **SSL/TLS Attacks**: Malformed SSL Floods, SSL Renegotiation, SSL Session Floods
+- **DNS Cache Poisoning**
+- **Reflection Amplification Flood Attacks**: TCP, UDP, ICMP, DNS, mDNS, SSDP, NTP, NetBIOS, RIPv1, rpcbind, SNMP, SQL RS, Chargen, L2TP, Microsoft SQL Resolution Service
+- **Fragmentation Attacks**: Teardrop, Targa3, Jolt2, Nestea
+- **Vulnerability Attacks**
+- **Resource Exhaustion Attacks**: Slowloris, Pyloris, LOIC, etc.
+- **Flash Crowd Protection**
+- **Attacks on Gaming Protocols**
 
 
 
 Schutz vor DDoS-Angriffen: On-Site Maßnahmen
 --------------------------------------------------------
 
-.. class:: incremental
+.. class:: incremental-list list-with-sublists
 
 - Aufrüsten der Ressourcen (z. B. Bandbreite, CPU, RAM, ...)
 - Exemplarische Sofortmaßnahmen bei aktivem Angriff:
 
-  .. class:: incremental smaller
+  .. class:: incremental-list
 
   - Whitelisting von IP-Adressen von besonders wichtigen Clients
   - Blacklisting von IP-Adressen aus bestimmten Bereichen
@@ -807,8 +778,8 @@ Schutz vor DDoS-Angriffen: On-Site Maßnahmen
 
 - Anti-DDos Appliances
 
-.. admonition:: Achtung
-    :class: warning incremental
+.. attention::
+    :class: incremental
 
     Diese Maßnahmen sind häufig teuer und ggf. begrenzt effektiv; wenn der Angriff die verfügbare Bandbreite übersteigt, sind diese Maßnahmen darüber hinaus wirkungslos.
 
@@ -817,7 +788,7 @@ Schutz vor DDoS-Angriffen: On-Site Maßnahmen
 Schutz vor DDoS-Angriffen: Off-Site Maßnahmen
 ------------------------------------------------------------
 
-.. class:: incremental list-with-explanations
+.. class:: incremental-list list-with-explanations
 
 - Einbinden des ISP
 - Einbinden spezialisierter Dienstleister
@@ -831,16 +802,18 @@ Schutz vor DDoS-Angriffen: Off-Site Maßnahmen
 Password Sniffing
 ---------------------
 
+.. class:: incremental-list
+
 :In der Anfangszeit: unverschlüsselte Übertragung von Passwörtern (telnet, ftp, ...)
 :In der Übergangszeit: Verwendung von Einmal-Passwörtern (S/Key, ...)
 :Heute: Passwörter werden verschlüsselt übertragen (ssh, https, ...)
 
     Zusätzliche Absicherung durch Zwei-Faktor-Authentifizierung (basierend auf Einmalpassworten: TOTP, ...)
 
-
 .. supplemental::
 
     Unverschlüsselte Passworte können leicht mittels eines Sniffers, der den Netzwerkverkehr mitschneidet (z. B. Wireshark), abgefangen werden.
+
 
 
 Einmal-Passwörter
@@ -858,13 +831,13 @@ Das S/Key Verfahren
 
 Einmal-Passwort-System nach Codebuch-Verfahren.
 
-.. stack::
+.. deck::
 
-    .. layer::
+    .. card::
 
         **Initialisierung**
 
-        .. class:: incremental smaller list-with-explanations
+        .. class:: incremental-list list-with-explanations
 
         1) Der Nutzer gibt sein Passwort :math:`W` ein; dies ist der geheime Schlüssel.
 
@@ -874,13 +847,13 @@ Einmal-Passwort-System nach Codebuch-Verfahren.
         4) Der Benutzer erhält die :math:`n` Passwörter, die in umgekehrter Reihenfolge ausgedruckt werden: :math:`H^n(W), H^{n-1}(W), ..., H(H(W)), H(W)`.
         5) Nur das Passwort :math:`H^n(W)`, das an erster Stelle der Liste des Benutzers steht, der Wert von :math:`n` und ggf. ein Salt, wird auf dem Server gespeichert.
 
-    .. layer:: incremental
+    .. card::
 
         **Anmeldung**
 
         Identifiziere das letzte verwendete Passwort :math:`n`.
 
-        .. class:: incremental smaller
+        .. class:: incremental-list
 
         - Der Server fragt den Nutzer nach dem Passwort :math:`n-1` (d. h. :math:`H^{n-1}(W)`) und übermittelt ggf. auch den Salt.
         - Der Server hasht das Passwort und vergleicht es dann mit dem gespeicherten Passwort :math:`H^n(W)`.
@@ -899,30 +872,28 @@ HMAC-based one-time password (HOTP)\ [#]_
 
 - ermöglicht die Erzeugung von Einmal-Passwörtern auf Basis eines geheimen Schlüssels und eines Zählers; Parameter:
 
-    .. class:: incremental far-smaller
+  .. class:: incremental-list
 
-    - Ein kryptografisches Hash-Verfahren :math:`H` (Standard ist SHA-1)
-    - einen geheimen Schlüssel :math:`K`, der eine beliebige Bytefolge ist
-    - Ein Zähler :math:`C`, der die Anzahl der Iterationen zählt
-    - Länge des Passworts: :math:`d` (6-10, Standardwert ist 6, empfohlen werden 6-8)
+  - Ein kryptografisches Hash-Verfahren :math:`H` (Standard ist SHA-1)
+  - einen geheimen Schlüssel :math:`K`, der eine beliebige Bytefolge ist
+  - Ein Zähler :math:`C`, der die Anzahl der Iterationen zählt
+  - Länge des Passworts: :math:`d` (6-10, Standardwert ist 6, empfohlen werden 6-8)
 
 .. class:: incremental
 
 - Zur Authentifizierung berechnen beide das Einmalpasswort (HOTP) und dann vergleicht der Server den Wert mit dem vom Client übermittelten Wert:
 
-  .. container:: far-smaller
+  Berechnung aus dem Schlüssel :math:`K` und dem Zähler :math:`C`:
 
-    Berechnung aus dem Schlüssel :math:`K` und dem Zähler :math:`C`:
+  .. container:: incremental
 
-        .. class:: incremental
+    :math:`HOTP(K, C) = truncate(HMAC_H(K, C))`
 
-        :math:`HOTP(K, C) = truncate(HMAC_H(K, C))`
+    .. container:: incremental
 
-        .. container:: incremental
+        :math:`truncate(MAC) = extract31(MAC, MAC[(19 × 8 + 4):(19 × 8 + 7)])`
 
-                :math:`truncate(MAC) = extract31(MAC, MAC[(19 × 8 + 4):(19 × 8 + 7)])`
-
-        .. class:: incremental
+    .. container:: incremental
 
         :math:`HOTP\; value = HOTP(K, C)\; mod\; 10^d\qquad` (führende Nullen werden nicht abgeschnitten)
 
@@ -943,12 +914,11 @@ Time-based one-time password (TOTP)\ [#]_
 
 - Erzeugung von zeitlich limitierten Einmal-Passwörtern (z. B. 30 Sekunden)
 
-.. class:: incremental list-with-explanations
+.. class:: incremental-list list-with-explanations
 
 - Basierend auf einem vorher ausgetauschten geheimen Schlüssel und der aktuellen Zeit
 
   Z. B. Unix-Zeit in Sekunden (ganzzahlig) und danach gerundet auf 30 Sekunden.
-
 
 - Es wird das HOTP Verfahren mit der Zeit als Zähler verwendet und entweder SHA-256 oder SHA-512 als Hashverfahren, d. h. TOTP :math:`value(K)` = HOTP :math:`value(K, C_T)`, wobei :math:`T` die „aktuelle Zeit“ ist.
 
@@ -959,9 +929,7 @@ Time-based one-time password (TOTP)\ [#]_
   - :math:`T_0` ist bei Verwendung der Unix-Zeit :math:`0`
   - :math:`C_T` ist somit die Anzahl der Dauern :math:`T_X` zwischen :math:`T_0` und :math:`T`
 
-
 .. [#] https://www.rfc-editor.org/rfc/rfc6238
-
 
 .. supplemental::
 
@@ -976,7 +944,8 @@ Time-based one-time password (TOTP)\ [#]_
 
 SSH ermöglicht die sichere Fernanmeldung von einem Computer bei einem anderen (typischerweise über TCP über Port 22). Es bietet mehrere Optionen für eine starke Authentifizierung und schützt die Sicherheit und Integrität der Kommunikation durch starke Verschlüsselung
 
-.. container:: incremental
+.. compound::
+    :class: incremental
 
     **Ablauf**
 
@@ -1001,18 +970,19 @@ SSH ermöglicht die sichere Fernanmeldung von einem Computer bei einem anderen (
         -- `SSH.com (Dez. 2023) <https://www.ssh.com/academy/ssh/protocol>`__
 
 
+
 Secure Shell (SSH) - Protokoll
 --------------------------------------
 
+.. story::
 
-.. image:: images/ssh/initiation.svg
-    :alt: SSH Protokoll
-    :align: center
-    :width: 1850px
-
-.. container:: incremental small
+    .. image:: images/ssh/initiation.svg
+        :alt: SSH Protokoll
+        :align: center
 
     Beide Seiten haben einen Public-private Key Schlüsselpaar zur gegenseitigen Authentifizierung
+
+    .. class:: incremental-list dd-margin-left-8em
 
     :User Keys:
      - ``Authorized keys`` - Serverseitige Datei mit den öffentlichen Schlüsseln der Nutzer
@@ -1031,10 +1001,9 @@ Secure Shell (SSH) - Protokoll
 Secure Shell (SSH) - Verbindungsaufbau - Beispiel
 ------------------------------------------------------------
 
-.. container:: scrollable
+.. scrollable::
 
     .. code:: text
-        :class: far-far-smaller
 
         debug1: Reading configuration data /etc/ssh/ssh_config
         debug1: Applying options for *
@@ -1085,7 +1054,7 @@ Secure Shell (SSH) - Verbindungsaufbau - Beispiel
 Secure Shell (SSH) - Risiken durch mangelnde Schlüsselverwaltung
 ------------------------------------------------------------------
 
-.. class:: incremental
+.. class:: incremental-list
 
 - Schlüssel werden nicht regelmäßig ausgetauscht
 - Schlüssel werden nicht gelöscht, wenn sie nicht mehr benötigt werden
@@ -1096,6 +1065,7 @@ Secure Shell (SSH) - Risiken durch mangelnde Schlüsselverwaltung
 - SSH Keys können ggf. privilegierten Zugriff gewähren
 - SSH Keys können benutzt werden, wenn um Backdoors zu verstecken
 - Server keys erlauben ggf. Man-in-the-Middle-Angriffe
+
 
 
 SSH Tunneling
@@ -1116,14 +1086,13 @@ SSH Tunneling
 .. image:: images/ssh/tunneling.svg
     :alt: SSH Protokoll
     :align: center
-    :width: 1450px
 
 
 
 SSH und „Back-tunneling“
 --------------------------------------
 
-.. class:: incremental
+.. class:: incremental-list
 
 - Der Angreifer richtet einen Server außerhalb des Zielnetzwerks ein
 - Nach Infiltration des Zielsystems verbindet der Angreifer sich von innen mit dem externen SSH-Server.
@@ -1155,7 +1124,7 @@ Schwachstellen in SSH
 
 
 
-.. class:: integrated-exercise transition-move-left
+.. class:: exercises transition-move-left
 
 Übung
 ------------------------------
@@ -1173,7 +1142,7 @@ Schwachstellen in SSH
 
 
 
-.. class:: integrated-exercise transition-move-left
+.. class:: exercises transition-move-left
 
 Übung
 --------------
@@ -1219,7 +1188,7 @@ Schwachstellen in SSH
 
 
 
-.. class:: integrated-exercise transition-move-left
+.. class:: exercises transition-move-left
 
 Übung
 --------------
@@ -1229,7 +1198,9 @@ Schwachstellen in SSH
     Gegeben sei der folgende MAC:
 
     .. csv-table::
-        :class: far-smaller
+        :class: compact table-data-monospaced
+        :stub-columns: 1
+        :width: 100%
 
         Offset, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19
         Mac, bc, 9f, aa, ae, 1e, 35, d5, 2f, 3d, ea, 96, 51, da, 12, cd, 36, 62, 7b, 84, 03
@@ -1245,7 +1216,7 @@ Schwachstellen in SSH
 
 
 
-.. class:: integrated-exercise transition-move-left
+.. class:: exercises transition-move-left
 
 Übung
 --------------
@@ -1269,7 +1240,7 @@ Schwachstellen in SSH
 
 
 
-.. class:: integrated-exercise transition-move-left
+.. class:: exercises transition-move-left
 
 Übung
 --------------
@@ -1304,10 +1275,13 @@ Schwachstellen in SSH
     3. Dies kann zum Beispiel auf Seiten eines ISPs geschehen oder auch bei Firmennetzwerken
 
 
+
 .. class:: new-section transition-fade
 
 Firewalls
 ------------
+
+
 
 Unabhängiges Netz - „Ideale Situation“
 ---------------------------------------------------
@@ -1315,15 +1289,12 @@ Unabhängiges Netz - „Ideale Situation“
 .. image:: images/firewalls/all-save.svg
     :alt: Ideale Situation
     :align: center
-    :height: 700px
 
-.. class:: incremental
+.. class:: incremental-list
 
 :Vorteile:
 
     - keinerlei Angriffsmöglichkeiten von außen
-
-.. class:: incremental
 
 :Nachteile:
 
@@ -1333,6 +1304,7 @@ Unabhängiges Netz - „Ideale Situation“
 .. supplemental::
 
     Wie bereits diskutiert gibt es auch Angriffsmuster gegen Air-Gapped-Systeme. Ein Beispiel ist der Stuxnet-Wurm, der sich initial über USB-Sticks verbreitet.
+
 
 
 Von der Notwendigkeit des Schutzes von Rechnern
@@ -1352,7 +1324,6 @@ Schutzschicht zwischen internem und externem Netz
 .. image:: images/firewalls/firewall.svg
     :alt: Schutzschicht zwischen internem und externem Netz
     :align: center
-    :height: 770px
 
 - Kontrolle des Nachrichtenverkehrs durch Filterung
 - begrenzte Isolation mit begrenztem Schutz
@@ -1368,7 +1339,6 @@ Realisierung von Virtual Private Networks (VPN)
 .. image:: images/firewalls/vpn.svg
     :alt: Realisierung von Virtual Private Networks (VPN)
     :align: center
-    :width: 1500px
 
 - Aufbau einer scheinbar privaten Verbindung von Firmenteilnetzen über das (öffentliche) Internet.
 - Zusätzliche Verbindungsverschlüsselung zwischen den Firewalls.
@@ -1385,7 +1355,6 @@ Kommerzielle VPNs für Endnutzer
 .. image:: images/firewalls/vpn-commercial.svg
     :alt: Einsatz von Virtual Private Networks (VPN) für Privatnutzer
     :align: center
-    :width: 1400px
 
 .. supplemental::
 
@@ -1406,7 +1375,7 @@ Schutz auf den Schichten des TCP/IP Stacks
 
 Zentraler Schutz des gesamten internen Netzwerks durch:
 
-.. class:: incremental
+.. class:: incremental-list
 
 - Paket Filter (:eng:`Packet Filtering`)
 
@@ -1430,7 +1399,6 @@ Zentraler Schutz des gesamten internen Netzwerks durch:
 
 - Protokollierungsmöglichkeit der Kommunikation von / nach extern
 
-
 .. supplemental::
 
     Firewalls (alleine) können die Struktur des Netzwerks nicht verbergen.
@@ -1449,10 +1417,11 @@ DoS Attacke auf Anwendungsebene
     -- `Mastodon: Spamwelle zeigt Schwächen auf [...] <https://www.heise.de/news/Mastodon-Spamwelle-zeigt-Schwaechen-auf-und-weckt-Sorge-vor-schlimmerer-Methode-9632055.html>`__
 
 
+
 Realisierungsmöglichkeiten von Firewalls
 ------------------------------------------------
 
-.. class:: incremental
+.. class:: incremental-list
 
 - Hardware-Firewall
 
@@ -1471,7 +1440,7 @@ Realisierungsmöglichkeiten von Firewalls
     Im Falle eines :eng:`Bastion Host`, ist dies der einzige unmittelbar aus dem Internet erreichbare Rechner.
 
 
-.. .. class:: vertical-title
+.. .. class:: s-vertical-title
 
 Dual-Homed Host
 ----------------
@@ -1480,7 +1449,6 @@ Dual-Homed Host
     :alt: Dual-Homed Host
     :align: right
     :class: margin-1em
-    :width: 800px
 
 **Aufbau**
 
@@ -1498,9 +1466,9 @@ Dual-Homed Host
 Screening Router
 ----------------------------------------------------
 
-.. container:: two-columns no-default-width
+.. grid::
 
-    .. container:: column no-separator
+    .. cell::
 
         **Aufbau**
 
@@ -1531,7 +1499,7 @@ Screening Router
                 - Fernwartung
                 - keine Inhaltsfilterung
 
-    .. container:: column
+    .. cell::
 
         .. image:: images/firewalls/screening-router.svg
             :alt: Screening Router
@@ -1548,7 +1516,6 @@ Screened Host
     :alt: Screened Host
     :align: right
     :class: margin-1em padding-left-1em
-    :height: 900px
 
 **Aufbau**
 
@@ -1578,7 +1545,7 @@ Konfiguration eines Gateways
 
 Das Ziel der Konfiguration muss eine minimale angreifbare Oberfläche sein.
 
-.. class:: incremental
+.. class:: incremental-list
 
 - Abschalten aller nicht-benötigten Netzdienste
 - Löschen aller nicht benötigter Programme
@@ -1610,12 +1577,10 @@ Screened Subnet
 .. image:: images/firewalls/screened-subnet.svg
     :alt: Screened Subnet
     :align: right
-    :width: 950px
-
 
 **Aufbau**
 
-.. class:: incremental
+.. class:: incremental-list
 
 - interner Screening Router als weiterer Schutzwall
 
@@ -1629,21 +1594,23 @@ Screened Subnet
 Intrusion Detection Systeme (IDS)
 --------------------------------------
 
-.. admonition:: Definition
+.. definition::
 
     Ein IDS ist ein Gerät (meist ein speziell konfigurierter Rechner), das vielfältige Techniken zur Erkennung von Angriffen anwendet und Angriffe meldet und ggf. abwehrt, in dem (z. B.) die Firewall automatisch umkonfiguriert wird.
 
-.. container:: incremental
+.. compound::
+    :class: incremental
 
     **Motivation**
 
-    .. class:: incremental
+    .. class:: incremental-list
 
     - Firewalls alleine sind zu statisch und deswegen häufig nicht ausreichend
     - bessere Aufzeichnung und flexiblere Erkennung notwendig
     - angepasste Reaktion notwendig
 
-.. container:: incremental
+.. compound::
+    :class: incremental
 
     **Umsetzung**
 
@@ -1662,7 +1629,7 @@ Intrusion Detection Systeme (IDS)
 IDS-Erkennungstechniken
 ----------------------------
 
-.. class:: incremental
+.. class:: incremental-list
 
 - Signaturerkennung
 - statistische Analyse
@@ -1678,14 +1645,13 @@ IDS-Erkennungstechniken
     - Aufzeichnung bei Netzwerken mit Switches ( ⇒ spez. SPAN Port)
     - Sensoren sollen unbeobachtbar sein (*stealth*)
 
-
 .. supplemental::
 
     SPAN (:eng:`Switched Port Analyzer`) Ports sind spezielle Ports auf Switches, die bestimmten Verkehr (z. B. bestimmte Pakete) die über ein Switch gehen, an einen definierten Port weiterleiten können. An diesem Port kann dann eine Analyse des Verkehrs durchgeführt werden / ein Sensor angeschlossen werden.
 
 
 
-.. class:: integrated-exercise transition-move-left
+.. class:: exercises transition-move-left
 
 Übung
 ------------------

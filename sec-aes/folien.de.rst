@@ -21,7 +21,7 @@ Advanced Encryption Standard (AES)
 :Kontakt: michael.eichberg@dhbw.de
 :Version:       1.0.4
 
-.. class:: faded-to-white
+.. class:: faded-out
 
 :Basierend auf:
 

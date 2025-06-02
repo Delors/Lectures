@@ -1,0 +1,393 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+    "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg
+    xmlns:xl="http://www.w3.org/1999/xlink"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns="http://www.w3.org/2000/svg"
+    version="1.1"
+    viewBox="-60 114 863 194"
+    width="603"
+    height="135"
+>
+<style>
+  @import url('/LectureDoc2/ext/fonts/ld-fonts.css');
+</style>
+<defs>
+    <linearGradient x1="0" x2="1" id="Gradient" gradientUnits="userSpaceOnUse">
+      <stop offset=".16833588" stop-color="#cde95f" />
+      <stop offset=".9336584" stop-color="#e7f4b5" stop-opacity=".5" />
+      <stop offset="1" stop-color="white" stop-opacity="0" />
+    </linearGradient>
+    <linearGradient
+            id="Obj_Gradient"
+            xl:href="#Gradient"
+            gradientTransform="translate(106.23495 262.16335) rotate(-133.44236) scale(173.98323)"
+        />
+    <linearGradient
+            id="Obj_Gradient_2"
+            xl:href="#Gradient"
+            gradientTransform="translate(102.72736 325.9536) rotate(-133.44236) scale(164.26803)"
+        />
+    <marker
+            orient="auto"
+            overflow="visible"
+            markerUnits="strokeWidth"
+            id="FilledArrow_Marker"
+            stroke-linejoin="miter"
+            stroke-miterlimit="10"
+            viewBox="-1 -3 7 6"
+            markerWidth="7"
+            markerHeight="6"
+            color="black"
+        >
+      <g>
+        <path
+                    d="M 4.8 0 L 0 -1.8 L 0 1.8 Z"
+                    fill="currentColor"
+                    stroke="currentColor"
+                    stroke-width="1"
+                />
+      </g>
+    </marker>
+    <marker
+            orient="auto"
+            overflow="visible"
+            markerUnits="strokeWidth"
+            id="FilledArrow_Marker_2"
+            stroke-linejoin="miter"
+            stroke-miterlimit="10"
+            viewBox="-6 -3 7 6"
+            markerWidth="7"
+            markerHeight="6"
+            color="black"
+        >
+      <g>
+        <path
+                    d="M -4.8 0 L 0 1.8 L 0 -1.8 Z"
+                    fill="currentColor"
+                    stroke="currentColor"
+                    stroke-width="1"
+                />
+      </g>
+    </marker>
+    <linearGradient x1="0" x2="1" id="Gradient_2" gradientUnits="userSpaceOnUse">
+      <stop offset=".1060121" stop-color="#029ed7" />
+      <stop offset=".8529494" stop-color="#99d0eb" stop-opacity=".5" />
+      <stop offset="1" stop-color="white" stop-opacity="0" />
+    </linearGradient>
+    <linearGradient
+            id="Obj_Gradient_3"
+            xl:href="#Gradient_2"
+            gradientTransform="translate(665.3973 286.1217) rotate(-32.658855) scale(103.5818)"
+        />
+    <linearGradient
+            id="Obj_Gradient_4"
+            xl:href="#Gradient_2"
+            gradientTransform="translate(726.8973 286.1217) rotate(-32.658855) scale(103.5818)"
+        />
+    <linearGradient x1="0" x2="1" id="Gradient_3" gradientUnits="userSpaceOnUse">
+      <stop offset=".16833588" stop-color="#029ed5" />
+      <stop offset=".9336584" stop-color="#99d0eb" stop-opacity=".5" />
+      <stop offset="1" stop-color="white" stop-opacity="0" />
+    </linearGradient>
+    <linearGradient
+            id="Obj_Gradient_5"
+            xl:href="#Gradient_3"
+            gradientTransform="translate(778.215 250.9154) rotate(-133.44236) scale(111.87792)"
+        />
+    <linearGradient
+            id="Obj_Gradient_6"
+            xl:href="#Gradient_2"
+            gradientTransform="translate(665.3973 209.6217) rotate(-32.658855) scale(103.5818)"
+        />
+    <linearGradient
+            id="Obj_Gradient_7"
+            xl:href="#Gradient_2"
+            gradientTransform="translate(726.8973 209.6217) rotate(-32.658855) scale(103.5818)"
+        />
+    <linearGradient
+            id="Obj_Gradient_8"
+            xl:href="#Gradient_3"
+            gradientTransform="translate(778.215 174.4154) rotate(-133.44236) scale(111.87792)"
+        />
+  </defs>
+  <metadata> Produced by OmniGraffle 8.0\n2025-06-02 08:21:34 +0000</metadata>
+  <g
+        id="initiation"
+        stroke="none"
+        stroke-opacity="1"
+        stroke-dasharray="none"
+        fill-opacity="1"
+        fill="none"
+    >
+    <title>initiation</title>
+    <g id="initiation_Layer_2">
+      <title>Layer 2</title>
+      <g id="Group_885">
+        <g id="Graphic_887">
+          <rect
+                        x="-20.670134"
+                        y="142.725"
+                        width="134.17504"
+                        height="112.55331"
+                        fill="url(#Obj_Gradient)"
+                    />
+          <rect
+                        x="-20.670134"
+                        y="142.725"
+                        width="134.17504"
+                        height="112.55331"
+                        stroke="white"
+                        stroke-opacity=".4807276"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                    />
+        </g>
+        <g id="Graphic_886">
+          <path
+                        d="M -58.75 280 L 151.25 280 L 109.25 252.63765 L -16.75 252.63765 Z"
+                        fill="url(#Obj_Gradient_2)"
+                    />
+          <path
+                        d="M -58.75 280 L 151.25 280 L 109.25 252.63765 L -16.75 252.63765 Z"
+                        stroke="white"
+                        stroke-opacity=".4807276"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                    />
+        </g>
+      </g>
+      <g id="Line_862">
+        <line
+                    x1="116.25"
+                    y1="148.75"
+                    x2="672.1"
+                    y2="148.75"
+                    marker-end="url(#FilledArrow_Marker)"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                />
+      </g>
+      <g id="Line_863">
+        <line
+                    x1="682.5"
+                    y1="184.75"
+                    x2="129.15"
+                    y2="184.75"
+                    marker-end="url(#FilledArrow_Marker)"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                />
+      </g>
+      <g id="Line_864">
+        <line
+                    x1="129.15"
+                    y1="220.75"
+                    x2="669.6"
+                    y2="220.75"
+                    marker-end="url(#FilledArrow_Marker)"
+                    marker-start="url(#FilledArrow_Marker_2)"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                />
+      </g>
+      <g id="Line_865">
+        <line
+                    x1="116.25"
+                    y1="256.75"
+                    x2="669.6"
+                    y2="256.75"
+                    marker-end="url(#FilledArrow_Marker)"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                />
+      </g>
+      <g id="Graphic_867">
+        <text transform="translate(-9.375 121.75)" fill="black">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="20"
+                        font-weight="400"
+                        fill="black"
+                        x="10.395"
+                        y="21"
+                        xml:space="preserve"
+                    >SSH Client</tspan>
+        </text>
+      </g>
+      <g id="Graphic_868">
+        <text transform="translate(220 121.75)" fill="black">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="20"
+                        font-weight="400"
+                        fill="black"
+                        x="41.305"
+                        y="21"
+                        xml:space="preserve"
+                    >1. Client initiiert die Verbindung</tspan>
+        </text>
+      </g>
+      <g id="Graphic_869">
+        <text transform="translate(186.875 158.75)" fill="black">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="20"
+                        font-weight="400"
+                        fill="black"
+                        x="18.98"
+                        y="21"
+                        xml:space="preserve"
+                    >2. Sendet öffentlichen Schlüssel des Servers</tspan>
+        </text>
+      </g>
+      <g id="Graphic_870">
+        <text transform="translate(106.875 194.25)" fill="black">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="20"
+                        font-weight="400"
+                        fill="black"
+                        x="3.165"
+                        y="21"
+                        xml:space="preserve"
+                    >3. Verhandlung der Parameter und öffnen eines sicheren Kanals</tspan>
+        </text>
+      </g>
+      <g id="Graphic_871">
+        <text transform="translate(120 231.25)" fill="black">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="20"
+                        font-weight="400"
+                        fill="black"
+                        x="6.63"
+                        y="21"
+                        xml:space="preserve"
+                    >4. Benutzeranmeldung beim Betriebssystem auf dem Server </tspan>
+        </text>
+      </g>
+      <g id="Group_872">
+        <g id="Graphic_875">
+          <path
+                        d="M 678.25 286.97346 L 678.25 210.17346 L 739.75 229.37346 L 739.75 306.17346 Z"
+                        fill="url(#Obj_Gradient_3)"
+                    />
+          <path
+                        d="M 678.25 286.97346 L 678.25 210.17346 L 739.75 229.37346 L 739.75 306.17346 Z"
+                        stroke="white"
+                        stroke-opacity=".48790474"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                    />
+        </g>
+        <g id="Graphic_874">
+          <path
+                        d="M 801.25 286.97346 L 801.25 210.17346 L 739.75 229.37346 L 739.75 306.17346 Z"
+                        fill="url(#Obj_Gradient_4)"
+                    />
+          <path
+                        d="M 801.25 286.97346 L 801.25 210.17346 L 739.75 229.37346 L 739.75 306.17346 Z"
+                        stroke="white"
+                        stroke-opacity=".48790474"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                    />
+        </g>
+        <g id="Graphic_873">
+          <path
+                        d="M 739.75 191.5 L 801.25 210.3 L 739.75 229.1 L 678.25 210.3 Z"
+                        fill="url(#Obj_Gradient_5)"
+                    />
+          <path
+                        d="M 739.75 191.5 L 801.25 210.3 L 739.75 229.1 L 678.25 210.3 Z"
+                        stroke="white"
+                        stroke-opacity=".48790474"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                    />
+        </g>
+      </g>
+      <g id="Group_876">
+        <g id="Graphic_879">
+          <path
+                        d="M 678.25 210.47346 L 678.25 133.67346 L 739.75 152.87346 L 739.75 229.67346 Z"
+                        fill="url(#Obj_Gradient_6)"
+                    />
+          <path
+                        d="M 678.25 210.47346 L 678.25 133.67346 L 739.75 152.87346 L 739.75 229.67346 Z"
+                        stroke="white"
+                        stroke-opacity=".48790474"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                    />
+        </g>
+        <g id="Graphic_878">
+          <path
+                        d="M 801.25 210.47346 L 801.25 133.67346 L 739.75 152.87346 L 739.75 229.67346 Z"
+                        fill="url(#Obj_Gradient_7)"
+                    />
+          <path
+                        d="M 801.25 210.47346 L 801.25 133.67346 L 739.75 152.87346 L 739.75 229.67346 Z"
+                        stroke="white"
+                        stroke-opacity=".48790474"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                    />
+        </g>
+        <g id="Graphic_877">
+          <path
+                        d="M 739.75 115 L 801.25 133.8 L 739.75 152.6 L 678.25 133.8 Z"
+                        fill="url(#Obj_Gradient_8)"
+                    />
+          <path
+                        d="M 739.75 115 L 801.25 133.8 L 739.75 152.6 L 678.25 133.8 Z"
+                        stroke="white"
+                        stroke-opacity=".48790474"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                    />
+        </g>
+      </g>
+      <g id="Graphic_436">
+        <text transform="translate(695 173.75)" fill="black">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="20"
+                        font-weight="400"
+                        fill="black"
+                        x="27.17"
+                        y="21"
+                        xml:space="preserve"
+                    >SSH</tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="20"
+                        font-weight="400"
+                        fill="black"
+                        x="16.05"
+                        y="48"
+                        xml:space="preserve"
+                    >Server</tspan>
+        </text>
+      </g>
+    </g>
+  </g>
+</svg>
