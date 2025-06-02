@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+    "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg
+    xmlns:xl="http://www.w3.org/1999/xlink"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns="http://www.w3.org/2000/svg"
+    version="1.1"
+    viewBox="451 665 582 64"
+    width="582"
+    height="64"
+>
+<style>
+  @import url('/LectureDoc2/ext/fonts/ld-fonts.css');
+</style> <defs>
+    <marker
+            orient="auto"
+            overflow="visible"
+            markerUnits="strokeWidth"
+            id="FilledArrow_Marker"
+            stroke-linejoin="miter"
+            stroke-miterlimit="10"
+            viewBox="-1 -3 7 6"
+            markerWidth="7"
+            markerHeight="6"
+            color="black"
+        >
+      <g>
+        <path
+                    d="M 4.8 0 L 0 -1.8 L 0 1.8 Z"
+                    fill="currentColor"
+                    stroke="currentColor"
+                    stroke-width="1"
+                />
+      </g>
+    </marker>
+  </defs>
+  <metadata> Produced by OmniGraffle 8.0\n2025-06-02 10:37:07 +0000</metadata>
+  <g
+        id="generation_of_seed_input"
+        stroke="none"
+        stroke-opacity="1"
+        stroke-dasharray="none"
+        fill-opacity="1"
+        fill="none"
+    >
+    <title>generation_of_seed_input</title>
+    <rect fill="white" x="451" y="665" width="582" height="64" />
+    <g id="generation_of_seed_input_Layer_1">
+      <title>Layer 1</title>
+      <g id="Graphic_2">
+        <text transform="translate(451.3279 687.5)" fill="black">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="14"
+                        font-weight="400"
+                        fill="black"
+                        x="2344791e-19"
+                        y="15"
+                        xml:space="preserve"
+                    >Entropiequelle</tspan>
+        </text>
+      </g>
+      <g id="Graphic_5">
+        <path
+                    d="M 586 665.5 L 693 665.5 C 699.6274 665.5 705 670.8726 705 677.5 L 705 716.5 C 705 723.1274 699.6274 728.5 693 728.5 L 586 728.5 C 579.3726 728.5 574 723.1274 574 716.5 L 574 677.5 C 574 670.8726 579.3726 665.5 586 665.5 Z"
+                    fill="#e0e0e0"
+                />
+        <text transform="translate(579 668.5)" fill="black">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="14"
+                        font-weight="400"
+                        fill="black"
+                        x="40.634"
+                        y="15"
+                        xml:space="preserve"
+                    >echter </tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="14"
+                        font-weight="400"
+                        fill="black"
+                        x="17.499"
+                        y="34"
+                        xml:space="preserve"
+                    >Zufallszahlen-</tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="14"
+                        font-weight="400"
+                        fill="black"
+                        x="29.448"
+                        y="53"
+                        xml:space="preserve"
+                    >generator</tspan>
+        </text>
+      </g>
+      <g id="Graphic_6">
+        <path
+                    d="M 770.7542 665.5 L 877.7542 665.5 C 884.3816 665.5 889.7542 670.8726 889.7542 677.5 L 889.7542 716.5 C 889.7542 723.1274 884.3816 728.5 877.7542 728.5 L 770.7542 728.5 C 764.1268 728.5 758.7542 723.1274 758.7542 716.5 L 758.7542 677.5 C 758.7542 670.8726 764.1268 665.5 770.7542 665.5 Z"
+                    fill="#666"
+                />
+        <path
+                    d="M 770.7542 665.5 L 877.7542 665.5 C 884.3816 665.5 889.7542 670.8726 889.7542 677.5 L 889.7542 716.5 C 889.7542 723.1274 884.3816 728.5 877.7542 728.5 L 770.7542 728.5 C 764.1268 728.5 758.7542 723.1274 758.7542 716.5 L 758.7542 677.5 C 758.7542 670.8726 764.1268 665.5 770.7542 665.5 Z"
+                    stroke="gray"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
+        <text transform="translate(763.7542 678)" fill="white">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="14"
+                        font-weight="400"
+                        fill="white"
+                        x="15.658"
+                        y="15"
+                        xml:space="preserve"
+                    >Pseudozufalls-</tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="14"
+                        font-weight="400"
+                        fill="white"
+                        x="9.015"
+                        y="34"
+                        xml:space="preserve"
+                    >zahlengenerator</tspan>
+        </text>
+      </g>
+      <g id="Graphic_7">
+        <text transform="translate(929.414 678)" fill="black">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="14"
+                        font-weight="400"
+                        fill="black"
+                        x="0"
+                        y="15"
+                        xml:space="preserve"
+                    >Pseudozufälliger</tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="14"
+                        font-weight="400"
+                        fill="black"
+                        x="25.018"
+                        y="34"
+                        xml:space="preserve"
+                    >Bitstrom</tspan>
+        </text>
+      </g>
+      <g id="Graphic_8">
+        <text transform="translate(714.8372 673.7654)" fill="black">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="14"
+                        font-weight="400"
+                        fill="black"
+                        x="7993606e-19"
+                        y="15"
+                        xml:space="preserve"
+                    >Seed</tspan>
+        </text>
+      </g>
+      <g id="Line_9">
+        <line
+                    x1="541.8659"
+                    y1="697"
+                    x2="561.1"
+                    y2="697"
+                    marker-end="url(#FilledArrow_Marker)"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                />
+      </g>
+      <g id="Line_10">
+        <line
+                    x1="705"
+                    y1="697"
+                    x2="745.8542"
+                    y2="697"
+                    marker-end="url(#FilledArrow_Marker)"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                />
+      </g>
+      <g id="Line_11">
+        <line
+                    x1="889.7542"
+                    y1="697"
+                    x2="916.514"
+                    y2="697"
+                    marker-end="url(#FilledArrow_Marker)"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                />
+      </g>
+    </g>
+  </g>
+</svg>

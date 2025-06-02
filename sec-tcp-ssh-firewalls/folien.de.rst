@@ -1299,11 +1299,14 @@ Unabhängiges Netz - „Ideale Situation“
 :Nachteile:
 
     - kein Schutz gegen Insider
-    - kein Zugang zum Internet (d. h. kein direkter Zugriff auf externe Dienste wie NTP, Einspielen von Updates ist nur über Umwege möglich, etc.)
+    - kein Zugang zum Internet
 
 .. supplemental::
 
     Wie bereits diskutiert gibt es auch Angriffsmuster gegen Air-Gapped-Systeme. Ein Beispiel ist der Stuxnet-Wurm, der sich initial über USB-Sticks verbreitet.
+
+    Wenn man kein Zugang zum Internet hat, dann hat man zum Beispiel kein Zugriff auf externe Dienste wie NTP und das Einspielen von Updates ist nur über Umwege möglich.
+
 
 
 
@@ -1445,21 +1448,26 @@ Realisierungsmöglichkeiten von Firewalls
 Dual-Homed Host
 ----------------
 
-.. image:: images/firewalls/dual-homed-host.svg
-    :alt: Dual-Homed Host
-    :align: right
-    :class: margin-1em
+.. compound::
+    :class: encapsulate-floats
 
-**Aufbau**
+    .. image:: images/firewalls/dual-homed-host.svg
+        :alt: Dual-Homed Host
+        :align: right
 
-- zwei Netzwerkkarten: ggf. private interne Adressen
-- Screening Router & Gate: Packet Filter und Application-Level Filter
-- Proxy-Dienste installieren
-- Benutzer-Logins von extern
+    **Aufbau**
 
-.. class:: incremental
+    - zwei Netzwerkkarten: ggf. private interne Adressen
+    - Screening Router & Gate: Packet Filter und Application-Level Filter
+    - Proxy-Dienste installieren
+    - Benutzer-Logins von extern
 
-- Konf. der Netzwerkkarten: *IP-Pakete nicht automat. weiterleiten*
+.. important::
+    :class: incremental
+
+    Bei der Konfiguration der Netzwerkkarten gilt:
+
+    *IP-Pakete nicht automat. weiterleiten*
 
 
 
@@ -1468,7 +1476,7 @@ Screening Router
 
 .. grid::
 
-    .. cell::
+    .. cell:: width-60
 
         **Aufbau**
 
@@ -1479,33 +1487,29 @@ Screening Router
 
         - Realisierung eines Packet Filters
 
-        **Bewertung**
+        .. assessment::
+            :class: incremental
 
-        .. container:: two-columns
+            .. class:: columns
 
-            .. container:: incremental column no-separator
+            - .. class:: positive-list incremental
 
-                .. class:: positive-list
+                    - einfach und billig
+                    - flexibel
 
-                - einfach und billig
-                - flexibel
+            - .. class:: negative-list incremental
 
-            .. container:: incremental column
+                    - schwer zu testen
+                    - Protokollierung
+                    - Fernwartung
+                    - keine Inhaltsfilterung
 
-                .. class:: negative-list
-
-                - schwer zu testen
-                - Protokollierung
-                - Fernwartung
-                - keine Inhaltsfilterung
-
-    .. cell::
+    .. cell:: width-40
 
         .. image:: images/firewalls/screening-router.svg
             :alt: Screening Router
-            :class: margin-1em
             :align: center
-            :width: 600px
+
 
 
 
@@ -1515,7 +1519,6 @@ Screened Host
 .. image:: images/firewalls/screened-host.svg
     :alt: Screened Host
     :align: right
-    :class: margin-1em padding-left-1em
 
 **Aufbau**
 
@@ -1528,7 +1531,6 @@ Screened Host
 - Pakete von intern nur via Gate
 - Gate bietet Proxy-Server (z. B. für E-Mail)
 
-
 .. supplemental::
 
     *Source-Routed Pakete* sind Pakete, die den Weg durch das Netzwerk explizit angeben. (*Source-routing* wird auch als *Path Addressing* bezeichnet und wird im Allgemeinen als Sicherheitsproblem angesehen.)
@@ -1538,6 +1540,7 @@ Screened Host
     Ein allgemeines Problem ist, dass viele Anwendungen auf generische Protokolle wie HTTP aufsetzen. Weiterhin betreiben einige Anwendungen „Port Hopping“, d. h. sie wechseln den Port wenn der Standardport nicht offen ist.
 
     Eine Anforderung an „Next-generation Firewalls“ ist, dass diese die Analyse von den Daten einer Anwendung unabhängig vom Port und Protokoll ermöglichen.
+
 
 
 Konfiguration eines Gateways

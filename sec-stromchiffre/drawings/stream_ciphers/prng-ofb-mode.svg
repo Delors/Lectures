@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+    "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg
+    xmlns:xl="http://www.w3.org/1999/xlink"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns="http://www.w3.org/2000/svg"
+    version="1.1"
+    viewBox="831 970 204 245"
+    width="204"
+    height="245"
+>
+<style>
+  @import url('/LectureDoc2/ext/fonts/ld-fonts.css');
+</style> <defs>
+    <marker
+            orient="auto"
+            overflow="visible"
+            markerUnits="strokeWidth"
+            id="FilledArrow_Marker"
+            stroke-linejoin="miter"
+            stroke-miterlimit="10"
+            viewBox="-1 -3 7 6"
+            markerWidth="7"
+            markerHeight="6"
+            color="black"
+        >
+      <g>
+        <path
+                    d="M 4.8 0 L 0 -1.8 L 0 1.8 Z"
+                    fill="currentColor"
+                    stroke="currentColor"
+                    stroke-width="1"
+                />
+      </g>
+    </marker>
+  </defs>
+  <metadata> Produced by OmniGraffle 8.0\n2025-06-02 10:37:07 +0000</metadata>
+  <g
+        id="prng-ofb-mode"
+        stroke="none"
+        stroke-opacity="1"
+        stroke-dasharray="none"
+        fill-opacity="1"
+        fill="none"
+    >
+    <title>prng-ofb-mode</title>
+    <rect fill="white" x="831" y="970" width="204" height="245" />
+    <g id="prng-ofb-mode_Layer_1">
+      <title>Layer 1</title>
+      <g id="Graphic_57">
+        <path
+                    d="M 885.0494 1084.211 L 1003.5728 1084.211 C 1010.2002 1084.211 1015.5728 1089.5835 1015.5728 1096.211 L 1015.5728 1147.9531 C 1015.5728 1154.5805 1010.2002 1159.9531 1003.5728 1159.9531 L 885.0494 1159.9531 C 878.422 1159.9531 873.0494 1154.5805 873.0494 1147.9531 L 873.0494 1096.211 C 873.0494 1089.5835 878.422 1084.211 885.0494 1084.211 Z"
+                    fill="#c0ffc0"
+                />
+        <text transform="translate(878.0494 1094.582)" fill="black">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="14"
+                        font-weight="700"
+                        fill="black"
+                        x="11.682726"
+                        y="15"
+                        xml:space="preserve"
+                    >Verschlüsselung</tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="12"
+                        font-weight="400"
+                        fill="black"
+                        x="1.4797264"
+                        y="51"
+                        xml:space="preserve"
+                    >(z. B. mit AES oder 3DES)</tspan>
+        </text>
+      </g>
+      <g id="Graphic_56">
+        <path
+                    d="M 885.0494 1014.582 L 1003.5728 1014.582 C 1010.2002 1014.582 1015.5728 1019.9546 1015.5728 1026.582 L 1015.5728 1036.1641 C 1015.5728 1042.7915 1010.2002 1048.1641 1003.5728 1048.1641 L 885.0494 1048.1641 C 878.422 1048.1641 873.0494 1042.7915 873.0494 1036.1641 L 873.0494 1026.582 C 873.0494 1019.9546 878.422 1014.582 885.0494 1014.582 Z"
+                    fill="#e0e0e0"
+                />
+        <text transform="translate(878.0494 1021.873)" fill="black">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="14"
+                        font-weight="400"
+                        fill="black"
+                        x="62.28573"
+                        y="15"
+                        xml:space="preserve"
+                    >V</tspan>
+        </text>
+      </g>
+      <g id="Graphic_54">
+        <text transform="translate(837.6 1113.1297)" fill="black">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="14"
+                        font-weight="400"
+                        fill="black"
+                        x="0"
+                        y="15"
+                        xml:space="preserve"
+                    >K</tspan>
+        </text>
+      </g>
+      <g id="Graphic_52">
+        <text transform="translate(877.7118 975)" fill="black">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="14"
+                        font-weight="400"
+                        fill="black"
+                        x="781597e-18"
+                        y="15"
+                        xml:space="preserve"
+                    >OFB Modus</tspan>
+        </text>
+      </g>
+      <g id="Line_51">
+        <path
+                    d="M 979.4816 1171.5336 L 832.6 1171.5336 L 832.6 1031.6176 L 860.1494 1031.5573"
+                    marker-end="url(#FilledArrow_Marker)"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                />
+      </g>
+      <g id="Line_50">
+        <line
+                    x1="850.79"
+                    y1="1122.6297"
+                    x2="860.1494"
+                    y2="1122.6297"
+                    marker-end="url(#FilledArrow_Marker)"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                />
+      </g>
+      <g id="Line_47">
+        <line
+                    x1="944.3111"
+                    y1="1048.1641"
+                    x2="944.3111"
+                    y2="1071.311"
+                    marker-end="url(#FilledArrow_Marker)"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                />
+      </g>
+      <g id="Graphic_46">
+        <text transform="translate(929.4876 1196)" fill="black">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="14"
+                        font-weight="400"
+                        fill="black"
+                        x="5968559e-19"
+                        y="15"
+                        xml:space="preserve"
+                    >Pseudozfallsbits</tspan>
+        </text>
+      </g>
+      <g id="Line_45">
+        <line
+                    x1="979.4816"
+                    y1="1159.9531"
+                    x2="979.4816"
+                    y2="1183.1"
+                    marker-end="url(#FilledArrow_Marker)"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                />
+      </g>
+    </g>
+  </g>
+</svg>
