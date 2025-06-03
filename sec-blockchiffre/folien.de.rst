@@ -1,14 +1,21 @@
 .. meta::
     :version: renaissance
     :author: Michael Eichberg
-    :keywords: Blockverschlüsselung, DES, Feistel
+    :keywords: Blockverschlüsselung, Blockchiffren, DES, Feistel
     :description lang=en: Block Ciphers
     :description lang=de: Blockverschlüsselung
-    :id: lecture-security-blockchiffre
+    :id: vorlesung-blockchiffre
     :first-slide: last-viewed
     :master-password: WirklichSchwierig!
 
 .. include:: ../docutils.defs
+
+
+
+.. |Kontrollfragen| source:: kontrollfragen.de.rst
+                    :path: relative
+                    :prefix: https://delors.github.io/
+                    :suffix: .html
 
 
 
@@ -17,13 +24,17 @@ Block Chiffre und der *Data Encryption Standard (DES)*
 
 :Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
 :Kontakt: michael.eichberg@dhbw.de
-:Version: 1.1.1
+:Version: 1.1.2
 :Basierend auf: *Cryptography and Network Security - Principles and Practice, 8th Edition, William Stallings*
 
 .. supplemental::
 
-  :HTML [normativ]: |html-source|
-  :PDF: |pdf-source|
+    :HTML [normativ]: |html-source|
+
+    :PDF: |pdf-source|
+
+    :Kontrollfragen: |Kontrollfragen|
+
   :Fehler melden:
       https://github.com/Delors/delors.github.io/issues
 
@@ -33,6 +44,7 @@ Block Chiffre und der *Data Encryption Standard (DES)*
 
 Stromchiffre
 --------------
+
 
 - Verschlüsselt einen digitalen Datenstrom ein Bit oder ein Byte nach dem anderen.
 
