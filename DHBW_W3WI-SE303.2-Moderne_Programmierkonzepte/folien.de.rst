@@ -1,13 +1,13 @@
+.. include:: ../docutils.defs
+
 .. meta::
     :version: renaissance
     :author: Michael Eichberg
-    :keywords: "Programmierkonzepte"
+    :keywords: moderne Programmierkonzepte, Organisation
     :description lang=de: Einführung in moderne Programmierkonzepte
-    :id: lecture-w3wi_se303.2-moderne_programmierkonzepte_wirtschaftsinformatik
+    :id: lv-w3wi_se303.2-moderne_programmierkonzepte_wirtschaftsinformatik
     :first-slide: last-viewed
     :master-password: WirklichSchwierig!
-
-.. include:: ../docutils.defs
 
 
 
@@ -298,8 +298,7 @@ Entwickeln Sie einen einfachen interaktiven Taschenrechner, der beliebig große 
  
   Bei RPN werden die Operanden auf den Stack gelegt und die Operatoren arbeiten auf den entsprechenden obersten Elementen des Stacks. D. h. die Eingabe erfolgt zum Beispiel in der Form `1 2 + 3 *` und das Ergebnis ist 9.
 
-
-.. story:: margin-top-1em
+.. story:: 
 
   .. compound:: 
     :class: incremental

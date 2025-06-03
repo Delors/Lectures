@@ -1,9 +1,9 @@
 .. meta::
     :version: renaissance
     :author: Michael Eichberg
-    :keywords: "Web Programmierung", "HTML"
+    :keywords: Web Programmierung, HTML
     :description lang=de: Einführung in HTML(5)
-    :id: lecture-web-programming-html
+    :id: vorlesung-web-programmierung-html
     :first-slide: last-viewed
     :master-password: WirklichSchwierig!
 

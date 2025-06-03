@@ -2,9 +2,9 @@
     :version: renaissance
     :lang: de
     :author: Michael Eichberg
-    :keywords: "Web Programmierung", "CSS"
+    :keywords: Web Programmierung, CSS
     :description lang=de: CSS
-    :id: lecture-web-programming-css
+    :id: vorlesung-web-programmierung-css
     :first-slide: last-viewed
     :master-password: WirklichSchwierig!
 
@@ -113,7 +113,6 @@ CSS - Historie
   - CSS Flexbox Level 1 (2018) (`nach 9 Jahren Entwicklungszeit <https://www.w3.org/standards/history/css-flexbox-1/>`_)
   - CSS Selectors Level 4 (`2024 noch Draft Status <https://www.w3.org/TR/selectors-4/>`__; insbesondere  :css:`:has()`  hat `breite Unterstützung <https://caniuse.com/css-has>`__)
   - CSS Nesting (`2024 noch Draft Status <https://drafts.csswg.org/css-nesting/>`__; `dennoch bereits seit 2024 weit verfügbar <https://caniuse.com/css-nesting>`__)
-
 
 
 
@@ -336,7 +335,6 @@ Selektoren
 
 :eng:`Attribute-Selectors` - Beispiel
 --------------------------------------------------
-
 
 .. grid::
 
@@ -1085,7 +1083,6 @@ Die Entscheidung welche Regeln bzw. Deklarationen Anwendung finden, wird durch d
 
 CSS und nicht-unterstützte Eigenschaften
 ------------------------------------------------
-
 
 Sollte eine Deklaration möglicherweise nicht unterstützt werden, es jedoch einen vernünftigen Fallback geben, dann ist es möglich, die Deklarationen untereinander zu schreiben. Der Browser wird die unterstützte Deklaration verwenden und die anderen ignorieren.
 
@@ -3014,13 +3011,13 @@ CSS-Layers
         .. container::
 
             .. raw:: html
-                
+
                 <template shadowrootmode="open">
                 <style>
-                    style[contenteditable] { 
-                        font-family:var(--code-font-family); 
+                    style[contenteditable] {
+                        font-family:var(--code-font-family);
                         font-size: smaller;
-                        display:block; 
+                        display:block;
                         white-space: pre;
                         overflow: scroll;
                         position: relative;
@@ -3039,7 +3036,7 @@ CSS-Layers
                 <style contenteditable onkeydown="event.stopPropagation()">/* @layer overrides; */
                 @layer basis {
                     p#the-one{color:green;}
-                }            
+                }
                 @layer overrides {
                     p{color:red;}
                 }
@@ -3098,7 +3095,7 @@ Web Komponenten (Shadow DOM und CSS)\ [#]_
 Shadow DOM und Light DOM
 ------------------------------------------------
 
-- Web Komponenten ermöglichen die Kapselung von HTML, CSS (und JavaScript) in einem eigenen Kontext, dem Shadow DOM. 
+- Web Komponenten ermöglichen die Kapselung von HTML, CSS (und JavaScript) in einem eigenen Kontext, dem Shadow DOM.
 - Der Shadow DOM ermöglicht eine klare Trennung von Stilen und Verhalten der Komponente von dem umgebenden Dokument, dem Light DOM.
 
 
@@ -3109,13 +3106,13 @@ Ausgewählte vererbte CSS Eigenschaften
 
     Die folgenden Eigenschaften werden vererbt, und gelten auch im Shadow DOM von Web Komponenten; solange diese nicht überschrieben werden.
 
-    .. class:: incremental-table-rows booktabs 
+    .. class:: incremental-table-rows booktabs
 
     +------------------------------+----------------------------------------------------------------------------------------------------------+
     | Kategorie                    | Vererbte CSS Eigenschaften                                                                               |
     +==============================+==========================================================================================================+
     | Text und Font                | - `color <https://developer.mozilla.org/en-US/docs/Web/CSS/color>`__                                     |
-    |                              |                                                                                                          |               
+    |                              |                                                                                                          |
     |                              | - `font <https://developer.mozilla.org/en-US/docs/Web/CSS/font>`__,                                      |
     |                              |   `font-family <https://developer.mozilla.org/en-US/docs/Web/CSS/font-family>`__,                        |
     |                              |   `font-kerning <https://developer.mozilla.org/en-US/docs/Web/CSS/font-kerning>`__,                      |
@@ -3140,9 +3137,9 @@ Ausgewählte vererbte CSS Eigenschaften
     |                              |   `text-indent <https://developer.mozilla.org/en-US/docs/Web/CSS/text-indent>`__,                        |
     |                              |   `text-justify <https://developer.mozilla.org/en-US/docs/Web/CSS/text-justify>`__,                      |
     |                              |   `text-transform <https://developer.mozilla.org/en-US/docs/Web/CSS/text-transform>`__                   |
-    |                              |                                                                                                          |         
+    |                              |                                                                                                          |
     |                              | - `visibility <https://developer.mozilla.org/en-US/docs/Web/CSS/visibility>`__                           |
-    |                              |                                                                                                          |         
+    |                              |                                                                                                          |
     |                              | - `white-space <https://developer.mozilla.org/en-US/docs/Web/CSS/white-space>`__,                        |
     |                              |   `word-break <https://developer.mozilla.org/en-US/docs/Web/CSS/word-break>`__,                          |
     |                              |   `word-spacing <https://developer.mozilla.org/en-US/docs/Web/CSS/word-spacing>`__                       |
@@ -3158,7 +3155,7 @@ Ausgewählte vererbte CSS Eigenschaften
     |                              |   `empty-cells <https://developer.mozilla.org/en-US/docs/Web/CSS/empty-cells>`__                         |
     +------------------------------+----------------------------------------------------------------------------------------------------------+
     | Other                        | - `tab-size <https://developer.mozilla.org/en-US/docs/Web/CSS/tab-size>`__                               |
-    |                              | - `quotes <https://developer.mozilla.org/en-US/docs/Web/CSS/quotes>`__                                   |    
+    |                              | - `quotes <https://developer.mozilla.org/en-US/docs/Web/CSS/quotes>`__                                   |
     +------------------------------+----------------------------------------------------------------------------------------------------------+
 
 

@@ -1,9 +1,9 @@
-.. meta:: 
+.. meta::
    :version: renaissance
    :author: Michael Eichberg
-   :keywords: "Web Programmierung", "JavaScript"
+   :keywords: Web Programmierung, JavaScript, ECMAScript
    :description lang=de: Webprogrammierung mit JavaScript
-   :id: lecture-web-programming-javascript
+   :id: vorlesung-web-programmierung-javascript
    :first-slide: last-viewed
    :master-password: WirklichSchwierig!
 
@@ -24,8 +24,8 @@ Eine kurze Einführung/eine kurze Übersicht über JavaScript für erfahrene Pro
 
 .. supplemental::
 
-    :Folien: 
-        
+    :Folien:
+
         |html-source|
 
         |pdf-source|
@@ -49,7 +49,7 @@ Historie
         {"d":"08/1996","t":"1.1"},
         {"d":"06/1997","t":"1.2"},
         {"d":"10/1998","t":"1.3 - ECMA-262 1st + 2nd edition"},
-        {"d":"11/2000","t":"1.5 - ECMA-262 3rd edition"},						
+        {"d":"11/2000","t":"1.5 - ECMA-262 3rd edition"},
         {"d":"11/2005","t":"1.6"},
         {"d":"10/2006","t":"1.7"},
         {"d":"06/2008","t":"1.8"},
@@ -57,7 +57,7 @@ Historie
         {"d":"06/2015","t":"ECMAScript 6"}
     ]
    }
-    
+
 Seit 2016 gibt es jährliche Updates (ECMAScript 2016, 2017, 2018, 2019, 2020, 2021, 2022, ...)
 
 
@@ -73,17 +73,17 @@ Grundlagen
 --------------
 
 .. story::
-   
+
   .. class:: incremental-list
 
   - Objektorientiert
-  
-    .. class:: list-with-explanations 
+
+    .. class:: list-with-explanations
 
     - Protoypische Vererbung
     - Objekte *erben* von anderen Objekten
     - Objekte als allgemeine Container
-      
+
       (Im Grunde eine Vereinheitlichung von Objekten und Hashtabellen.)
     - seit ES6 werden auch Klassen unterstützt; diese sind aber nur syntaktischer Zucker
   - Skriptsprache
@@ -115,7 +115,7 @@ Schlüsselworte:
   - ``const, let, var``
   - ``export, import``
 
-.. remark:: 
+.. remark::
    :class: incremental margin-top-1em
 
    Nicht genutzte Schlüsselworte:
@@ -126,7 +126,7 @@ Schlüsselworte:
 
 Bezeichner (*Identifier*)
 ---------------------------
- 
+
 .. container:: peripheral
 
    (Sehr vergleichbar mit Java.)
@@ -135,9 +135,9 @@ Bezeichner (*Identifier*)
 
 - Buchstaben (Unicode), Ziffern, Unterstriche, Dollarzeichen
 - Ein Identifier darf nicht mit einer Ziffer beginnen
-  
-- Nameskonventionen: 
-  
+
+- Nameskonventionen:
+
   - Klassen beginnen mit einem Großbuchstaben (*UpperCamelCase*)
   - Variablen und Funktionen beginnen mit einem Kleinbuchstaben (*lowerCamelCase*)
   - Konstanten sind komplett in Großbuchstaben
@@ -153,14 +153,14 @@ _________
 - ``console``
 - ``Number``, ``Boolean``,  ``Date``, ``BigInt``, ``Math``, ...
 
-`Von Browsern zur Verfügung gestellte Objekte <https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects>`__ (Ein Auszug) 
+`Von Browsern zur Verfügung gestellte Objekte <https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects>`__ (Ein Auszug)
 ________________________________________________________________________________________________________________________________________________________
 
 .. class:: horizontal
 
-- ``window`` 
+- ``window``
 - ``document`` (bzw. ``window.document``)
-- ``alert`` 
+- ``alert``
 - ``navigator``
 - ``location``
 
@@ -197,7 +197,7 @@ ________________________________________________________________________________
    und am Ende der Datei:
 
      :js:`done();`
-   
+
    hinzugefügt werden.
 
    Den entsprechenden Code der Module (log.mjs und später Queue.mjs) finden Sie auf:
@@ -210,7 +210,7 @@ ________________________________________________________________________________
 -----------------------------------------------------
 
 .. scrollable::
-      
+
    .. include:: code/Datatypes.js
       :code: javascript
       :number-lines:
@@ -245,22 +245,22 @@ ________________________________________________________________________________
 
    Starten Sie die Konsole/Terminal und schreiben Sie ein einfaches JavaScript Programm, das "Hello World" ausgibt.
 
-   .. solution:: 
+   .. solution::
       :pwd: HelloWorld
 
       .. code:: javascript
-            
+
          console.log("Hello World");
 
-.. exercise:: Hello World auf der JavaScript Console 
+.. exercise:: Hello World auf der JavaScript Console
 
    Starten Sie einen Browser und aktivieren Sie die JavaScript Console in den Entwicklerwerkzeugen. Schreiben Sie ein einfaches JavaScript Programm, das "Hello World" ausgibt.
 
-   .. solution:: 
+   .. solution::
       :pwd: HelloWorld
 
       .. code:: javascript
-            
+
          console.log("Hello World");
 
 
@@ -274,15 +274,15 @@ ________________________________________________________________________________
    Schreiben Sie ein kurzes JavaScript Programm, das programmatisch zum Ende des Dokuments scrollt.
 
    .. container:: smaller
-   
-      Hinweise: 
+
+      Hinweise:
 
       - das von :js:`document.body` referenziert HTML Element enthält den gesamten Inhalt des Dokuments
       - die aktuellen Abmaße des Dokuments können Sie mit der Funktion :js:`window.getComputedStyle(<HTML Element>).height` ermitteln; geben Sie den Wert auf der Konsole aus bevor Sie das Dokument scrollen; was fällt Ihnen auf?
       - um zu scrollen, können Sie window.scrollTo(x,y) verwenden
       - um den Integer Wert eines Wertes in Pixeln zu bestimmen, können Sie :js:`parseInt` verwenden
 
-   .. solution:: 
+   .. solution::
       :pwd: scrollTo(x,y)
 
       .. code:: javascript
@@ -345,7 +345,7 @@ ________________________________________________________________________________
 
 .. supplemental::
 
-   In JavaScript können während der Laufzeit Fehler auftreten, die (z. B.) in Java während des kompilierens erkannt werden. 
+   In JavaScript können während der Laufzeit Fehler auftreten, die (z. B.) in Java während des kompilierens erkannt werden.
 
 
 
@@ -360,8 +360,8 @@ ________________________________________________________________________________
 
    Beispiel: :js:`removeNthElement([1,2,3,4,5,6,7], 2)` :math:`\Rightarrow` :js:`[1,3,5,7]`
 
-   - Schreiben Sie Ihren Code in eine JavaScript Datei und führen Sie diese mit Hilfe von Node.js aus. 
-   
+   - Schreiben Sie Ihren Code in eine JavaScript Datei und führen Sie diese mit Hilfe von Node.js aus.
+
    - Testen Sie Ihre Funktion mit verschiedenen Eingaben und lassen Sie sich das Ergebnis ausgeben (z. B. :js:`console.log(removeNthElement([1,2,3,4,5,6,7],2))`)!
 
    .. solution::
@@ -393,16 +393,16 @@ ________________________________________________________________________________
 .. exercise:: removeNthElement mit Fehlerbehandlung
 
    - Erweitern Sie die Implementierung von :js:`removeNthElement` so, dass die Funktion einen Fehler wirft, wenn das übergebene Array kein Array ist oder wenn der zweite Parameter kein positiver Integer ist.
-  
+
    - Testen Sie alle Fehlerzustände und fangen Sie die entsprechenden Fehler ab (:js:`catch`) und geben Sie die Nachrichten aus.
 
-   .. solution:: 
+   .. solution::
       :pwd: removeNthElementWithErrorHandling
 
       .. code:: javascript
 
          function removeNthElement(arr, n) {
-            if (!Array.isArray(arr)) 
+            if (!Array.isArray(arr))
                throw new Error("arr must be an array.");
             if (!Number.isInteger(n)) {
                throw new Error("n must be an integer.");
@@ -434,12 +434,12 @@ ________________________________________________________________________________
          } catch (e) {
             console.error(e.message);
          }
-         
+
 
 
 .. class:: exercises
 
-Übung - Funktionen 
+Übung - Funktionen
 ---------------------
 
 .. exercise:: Einfacher RPN Calculator
@@ -473,28 +473,28 @@ ________________________________________________________________________________
                   const op = ops[e];
                   if (!op) {
                      throw new Error("Unknown operator: "+e);
-                  } 
+                  }
                   stack.push(op(a,b));
                }
             }
             return stack.pop();
          }
 
-         eval([2,3,"+",4,"*"]) 
-         eval([2,3,"+",4,"%"]) 
+         eval([2,3,"+",4,"*"])
+         eval([2,3,"+",4,"%"])
 
 
 
 .. TODO ALLES ÜBERARBEITEN!!!!!!!!!!!!
 
-.. TODO: 
+.. TODO:
    - adding JavaScript to HTML files (in particular "defer" and "async" and type="module" )
    - adding major events DOMContentLoaded, onload, etc.
-   - 
+   -
 
 
 
-`Variables (var) <./code/Variables_var.mjs>`__ 
+`Variables (var) <./code/Variables_var.mjs>`__
 -----------------------------------------------------------------------------------------------
 
 **(Neuer Code sollte var nicht mehr verwenden!)**
@@ -515,7 +515,7 @@ ________________________________________________________________________________
 -------------------------------------------------------------------------
 
 .. scrollable::
-      
+
    .. include:: code/Destructuring.mjs
       :code: javascript
       :number-lines:
@@ -530,7 +530,7 @@ ________________________________________________________________________________
 ----------------------------------------------------------
 
 .. scrollable::
-      
+
    .. include:: code/JSON.js
       :code: javascript
       :number-lines:
@@ -553,7 +553,7 @@ ________________________________________________________________________________
 - Methoden auf Strings, die reguläre Ausdrücke verarbeiten: :js:`search`, :js:`match`, :js:`replace`, :js:`split`, ...
 
 .. scrollable::
-      
+
    .. include:: code/RegularExpressions.js
       :code: javascript
       :number-lines:
@@ -588,7 +588,7 @@ Grundlagen von ECMAScript Modulen
       :tab-width: 4
 
    `log.mjs <./code/log.mjs>`__ verwendet (:js:`import`) die Klasse Queue und exportiert Funktionen zum Loggen
-   
+
    .. include:: code/log.mjs
       :code: javascript
       :number-lines:
@@ -617,7 +617,7 @@ Alles ist ein Objekt
    .. include:: code/EverythingIsAnObject.js
       :code: javascript
       :number-lines:
-      :class: far-far-smaller copy-to-clipboard 
+      :class: far-far-smaller copy-to-clipboard
       :tab-width: 4
 
 
@@ -646,7 +646,7 @@ Alles ist ein Objekt
 
       .. code:: javascript
          :number-lines:
-         :class: copy-to-clipboard 
+         :class: copy-to-clipboard
 
          const p = { s : "p" };
          const c = Object.create(p);
@@ -656,13 +656,13 @@ Alles ist ein Objekt
          :align: center
          :class: margin-top-1em
 
-   .. card:: 
-      
+   .. card::
+
       Verwendung der Eigenschaften von Prototypen:
 
       .. code:: javascript
          :number-lines:
-         :class: copy-to-clipboard 
+         :class: copy-to-clipboard
 
          const p = { s : "p" };
          const c = Object.create(p);
@@ -682,8 +682,8 @@ Alles ist ein Objekt
          delete gc.s;
          console.log(gc.s); // p
 
-   .. card:: 
-      
+   .. card::
+
       .. rubric:: *Pseudoclassical Inheritance*
 
       .. code:: javascript
@@ -691,25 +691,25 @@ Alles ist ein Objekt
          :class: copy-to-clipboard
 
          // constructor for Person objects:
-         function Person(name, title){ this.name = name; this.title = title; } 
+         function Person(name, title){ this.name = name; this.title = title; }
          Person.prototype.formOfAddress = function (){
             const foa = "Dear ";
             if(this.title){ foa += this.title+" "; }
-            return foa + this.name; 
+            return foa + this.name;
          }
-         function Student(name, title, id, email) { 
+         function Student(name, title, id, email) {
             Person.call(this, name, title); // super constructor call
             this.id = id;
             this.email = email;
          }
          Student.prototype = Object.create(Person.prototype);
          Student.prototype.constructor = Student;
-         
-         const aStudent = new Student("Emily Xi", "Mrs.", 12441, 'emily@xi.de'); 
 
-   .. card:: 
-      
-      .. container:: scale-on-hover 
+         const aStudent = new Student("Emily Xi", "Mrs.", 12441, 'emily@xi.de');
+
+   .. card::
+
+      .. container:: scale-on-hover
 
             .. image:: images/prototype_chain/pseudoclassical_Inheritance.svg
                :align: center
@@ -726,11 +726,11 @@ Alles ist ein Objekt
          function Student(name, title, id, email) { … }
          Student.prototype = Object.create(Person.prototype);
          Student.prototype.constructor = Student;
- 
-         const p = new Person(…); 
+
+         const p = new Person(…);
          const s = new Student(…);
 
-      
+
 
 .. supplemental::
 
@@ -790,7 +790,7 @@ Praktische Verwendung von Prototypen basierter Vererbung
    .. code:: bash
 
       $ pnpm init
-      $ pnpm install express 
+      $ pnpm install express
 
    Danach starten Sie Ihren Server mit:
 
@@ -862,14 +862,14 @@ Authentifizierung mit JWT (und Express)
    Im Folgenden wird primär die Verwendung eines JWTs zur Authentifizierung von Benutzern demonstriert.
 
    .. class:: peripheral
-   
-      Die initiale Authentifizierung, die im folgenden Beispiel über ein per get-Request übermittelten Benutzernamen und Passwort erfolgt, ist **nicht sicher**. In einer realen Anwendung sollte für die initiale Authentifizierung ein sicherer Mechanismus verwendet werden. Eine Möglichkeit wäre z. B. die Verwendung von DIGEST Authentication (nicht empfohlen bzw. nur für einfachste Fälle). Sinnvoll wäre Basic Authentication *in Verbindung mit HTTPS* oder zum Beispiel der Einsatz von OAuth. 
-      
+
+      Die initiale Authentifizierung, die im folgenden Beispiel über ein per get-Request übermittelten Benutzernamen und Passwort erfolgt, ist **nicht sicher**. In einer realen Anwendung sollte für die initiale Authentifizierung ein sicherer Mechanismus verwendet werden. Eine Möglichkeit wäre z. B. die Verwendung von DIGEST Authentication (nicht empfohlen bzw. nur für einfachste Fälle). Sinnvoll wäre Basic Authentication *in Verbindung mit HTTPS* oder zum Beispiel der Einsatz von OAuth.
+
    .. warning::
       :class: far-smaller
 
-      *Basic Authentication* ohne HTTPS ist nicht sicher! 
-      
+      *Basic Authentication* ohne HTTPS ist nicht sicher!
+
       D.h. *Basic Authentication* ist genauso unsicher wie die hier gezeigte Lösung für die initiale Authentifizierung.
 
    **Server**
@@ -895,13 +895,13 @@ Authentifizierung mit JWT (und Express)
    `admin.js <./code/authentication/admin.js>`__
 
    `admin.html <./code/authentication/admin.html>`__
-   
+
    `admin.css <./code/authentication/admin.css>`__
-   
+
    `server.mjs <./code/authentication/server.mjs>`__
-   
+
    `start_server.sh <./code/authentication/start_server.sh>`__
-   
+
    `Users.json <./code/authentication/users.json>`__
 
 

@@ -2,12 +2,12 @@
     :version: genesis
     :lang: de
     :author: Michael Eichberg
-    :keywords: "genetische Algorithmen", "python"
+    :keywords: genetische Algorithmen, Python
     :description lang=de: Implementierung von genetischen Algorithmen in Python
-    :id: lecture-Genetische_Algorithmen
+    :id: vorlesung-genetische_algorithmen
     :first-slide: last-viewed
     :master-password: WirklichSchwierig!
-    
+
 .. include:: ../docutils.defs
 
 .. |chromosone.py| source:: code/lib/chromosome.py
@@ -24,7 +24,7 @@
 
 
 
-.. class:: animated-symbol 
+.. class:: animated-symbol
 
 Genetische Algorithmen
 ======================================================
@@ -37,15 +37,15 @@ Genetische Algorithmen
 
 .. container:: minor
 
-    :Quelle: 
-       
+    :Quelle:
+
        Davic Kopec, Algorithmen in Python, Rheinwerk Computing
 
 .. supplemental::
 
-    :Folien: 
-        
-        |html-source| 
+    :Folien:
+
+        |html-source|
 
         |pdf-source|
 
@@ -77,7 +77,7 @@ Genetische Algorithmen
 (Biologische) Grundlagen
 --------------------------------------------------------
 
-.. class:: incremental 
+.. class:: incremental
 
 - Genetische Algorithmen basieren auf der Evolutionstheorie:
 
@@ -108,17 +108,17 @@ Genetische Algorithmen
 Grundidee
 --------------------------------------------------------
 
-.. class:: incremental 
+.. class:: incremental
 
 - ein genetischer Algorithmus durchläuft Generationen
 - In jeder Generation werden die Individuen/Chromosomen bewertet und die besser angepassten Individuen (solche die *fitter* sind) mit einer höheren Wahrscheinlichkeit zum Überleben und zur Fortpflanzung ausgewählt
-- in jeder Generation werden die Individuen mit gewissen Wahrscheinlichkeiten: 
+- in jeder Generation werden die Individuen mit gewissen Wahrscheinlichkeiten:
 
-  1. rekombiniert (:java:`crossover` von zwei Chromosomen) und 
+  1. rekombiniert (:java:`crossover` von zwei Chromosomen) und
   2. mutiert (:java:`mutate`)
 
 
-.. warning:: 
+.. warning::
     :class: incremental margin-top-1em
 
     Genetische Algorithmen sind somit stochastische Algorithmen, d. h. sie liefern nicht immer das gleiche Ergebnis in der gleichen Zeitspanne und es gibt keine Garantie, dass sie das beste Ergebnis finden.
@@ -135,7 +135,7 @@ Grundlegendes Framework in Python
 
 
 
-Basisklasse für Chromosomen    
+Basisklasse für Chromosomen
 --------------------------------------------------------
 
 .. include:: code/lib/chromosome.py
@@ -166,7 +166,7 @@ Ablauf von genetischen Algorithmen
 3. Wähle einige Individuen aus, die sich fortpflanzen - bevorzuge die Fitteren mit einer höheren Wahrscheinlichkeit
 4. Kombiniere die ausgewählten Individuen, um neue Individuen zu erzeugen
 5. Mutiere einige Individuen, um die neue Generation zu vervollständigen
-   
+
 .. class:: incremental margin-top-1em
 
 6. Wiederhole die Schritte 2-5 für eine bestimmte Anzahl von Generationen
@@ -185,7 +185,7 @@ Parameter von genetischen Algorithmen
 - Wie und mit welcher Wahrscheinlichkeit eine Mutation erfolgt (:java:`mutate`)
 - Wie viele Generationen max. durchlaufen werden
 
-.. supplemental:: 
+.. supplemental::
 
     Es gibt zwei typische Strategien zur Auswahl der Chromosomen, die sich fortpflanzen: die *Tournament Selection* und die *Roulette Wheel Selection*.
 
@@ -201,8 +201,8 @@ Selektionsstrategien von Chromosomen
 
     .. class:: incremental
 
-    :*Tournament Selection*: 
-        
+    :*Tournament Selection*:
+
         Wähle zufällig einige Chromosomen aus und wähle das beste(/die besten) Chromosom(en) aus dieser Gruppe:
 
         .. include:: code/lib/genetic_algorithm.py
@@ -260,7 +260,7 @@ Hauptmethode des genetischen Algorithmus
 
 
 
-.. supplemental:: 
+.. supplemental::
 
     :java:`fitness_key` ist eine Referenz auf die Methode, die die Fitness eines Chromosoms berechnet.
 
@@ -281,7 +281,7 @@ Durchführung der Selektion und Vererbung
 
 .. stack:: invisible
 
-    .. layer:: 
+    .. layer::
 
         .. include:: code/lib/genetic_algorithm.py
             :code: python
@@ -319,7 +319,7 @@ Herausforderungen bei der Entwicklung genetischer Algorithmen
 
     .. class:: incremental
 
-    1. eine passende Formulierung für das Problem zu entwickeln und 
+    1. eine passende Formulierung für das Problem zu entwickeln und
     2. danach die Parameter so zu wählen, dass der Algorithmus in einer akzeptablen Zeit eine gute Lösung findet.
 
 
@@ -337,9 +337,9 @@ SEND+MORE=MONEY\ [#]_
 - Klassisches Problem der Kryptographie
 - Jeder Buchstabe repräsentiert eine Ziffer von 0 bis 9
 - Keine Ziffer darf doppelt vorkommen
-  
-  :: 
-    
+
+  ::
+
       S E N D
     + M O R E
     ---------
@@ -356,7 +356,7 @@ SEND+MORE=MONEY - Umsetzung
 
 .. stack::
 
-    .. layer:: 
+    .. layer::
 
         .. rubric:: Chromosomen ermöglichen Zuordnung von Buchstaben zu Ziffern
 
@@ -365,23 +365,23 @@ SEND+MORE=MONEY - Umsetzung
         *Zuordnung von Ziffern zu Buchstaben:*
 
         .. csv-table::
-            :header: "Index: ", "0", "1", "2", "3", "4", "5" , "6", "7" ,"8", "9" , " "
+            :header: "Index: ", 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, " "
             :widths: 25, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10
             :width: 100%
-            :class: no-table-borders no-inner-borders
+            :class: borderless
 
             "letters = \[", "O,", "M,", "Y,", "␣,", "␣,", "E,", "N,", "D,", "R,", "S", "]"
 
         .. container:: minor smaller line-above
 
             *Für die Lösung würde sich ergeben:*
-            
+
             .. csv-table::
-                    :header: "S", "E", "N", "D", "M", "O", "R", "Y" ,"␣ ", "␣"
-                    :widths: 10, 10, 10, 10, 10, 10, 10, 10, 10, 10
-                    :class: no-table-borders
-        
-                    9, 5, 6, 7, 1, 0, 8, 2, 3 ,4
+                :header: S, E, N, D, M, O, R, Y, "␣ ", "␣"
+                :widths: 10, 10, 10, 10, 10, 10, 10, 10, 10, 10
+                :class: no-table-borders
+
+                9, 5, 6, 7, 1, 0, 8, 2, 3 ,4
 
         .. container:: incremental
 
@@ -404,7 +404,7 @@ SEND+MORE=MONEY - Umsetzung
         .. rubric:: Erzeugen von Individuen bzw. Chromosomen
 
         **Idee**: beliebige Verwürfelung der Buchstaben in der Liste.
-        
+
         .. include:: code/send_more_money.py
             :code: python
             :number-lines:
@@ -433,7 +433,7 @@ SEND+MORE=MONEY - Umsetzung
         **Idee**: pro Nachkommen sicherstellen, dass einige Buchstaben Indizes (d. h. Wertzuordnungen) von einem Elternteil und einige vom anderen Elternteil stammen.
 
         .. container:: smaller
-                
+
             **Beispiel** (verkürzt):
 
             .. container:: smaller
@@ -443,16 +443,16 @@ SEND+MORE=MONEY - Umsetzung
                     Elternteil 1 = [a,b,c,d,e]  # d.h. ein Chromosom
                     Elternteil 2 = [c,a,b,e,d]  # d.h. ein Chromosom
 
-            gewählte Indizes seien: 0 und 2 
+            gewählte Indizes seien: 0 und 2
 
             .. container:: smaller
 
-                ::    
-                        
-                    Nachkomme 1 = [a,c,b,d,e]  # im Wesentlichen Elternteil 1, 
+                ::
+
+                    Nachkomme 1 = [a,c,b,d,e]  # im Wesentlichen Elternteil 1,
                                                 aber Position von "b" vom 2ten übernommen
                                                 (dadurch Anpassung der Pos. von "c" notw.)
-                    Nachkomme 2 = [a,c,b,e,d]  # im Wesentlichen Elternteil 2, 
+                    Nachkomme 2 = [a,c,b,e,d]  # im Wesentlichen Elternteil 2,
                                                 aber Position von "a" vom 1ten übernommen
                                                 (dadurch Anpassung der Pos. von "c" notw.)
 
@@ -471,21 +471,21 @@ SEND+MORE=MONEY - Umsetzung
 
         .. rubric:: Fitness-Funktion
 
-        **Idee**: Eine Lösung ist besser, je näher die Summe der Ziffern von SEND und MORE an MONEY ist. D. h.: 
+        **Idee**: Eine Lösung ist besser, je näher die Summe der Ziffern von SEND und MORE an MONEY ist. D. h.:
 
         .. container:: incremental
 
-            .. math:: 
+            .. math::
                 :class: smaller
 
                 \text{minimiere}(|money - (send + more)|)
 
 
         .. container:: incremental
-        
+
             **Feststellung**: Das Ziel des generischen genetischen Algorithmus ist es, die Fitness-Funktion zu maximieren. Wir müssen somit unser Minimierungsproblem in ein Maximierungsproblem umwandeln:
 
-            .. math:: 
+            .. math::
                 :class: smaller
 
                 \text{maximiere}\left(\frac{1} { |money - (send + more)| + 1 }\right)\\
@@ -526,7 +526,7 @@ SEND+MORE=MONEY - Umsetzung
             ::
 
                 Generation 0 Best 0.03333333333333333 Avg 0.0001322689088530895
-                ︙                
+                ︙
                 Generation 236 Best 0.5 Avg 0.26552306542712417
                 9567 + 1085 = 10652 Difference: 0
 
@@ -556,7 +556,7 @@ SEND+MORE=MONEY - Umsetzung
 
 .. exercise:: Gruppenzuteilung
 
-    Entwickeln Sie einen genetischen Algorithmus, der eine sehr gute Aufteilung von Personen (Studierenden) auf eine feste Anzahl an Gruppen findet, basierend auf den Präferenzen der Personen. 
+    Entwickeln Sie einen genetischen Algorithmus, der eine sehr gute Aufteilung von Personen (Studierenden) auf eine feste Anzahl an Gruppen findet, basierend auf den Präferenzen der Personen.
 
     Im Template ist eine initiale Aufgabenstellung hinterlegt, die es zu lösen gilt: Verteilung von 16 Studierenden auf 4 Gruppen inkl. Bewertungsmatrix :peripheral:`(jeder Studierende hat jeden anderen mit Werten von 1 bis 10 bewertet)`.
 
@@ -583,11 +583,11 @@ SEND+MORE=MONEY - Umsetzung
 
 .. supplemental::
 
-    Denken Sie daran, dass Sie die Parameter bzgl. :java:`mutation_chance`, :java:`crossover_chance`, :java:`selection_type`, :java:`initial_population` und :java:`max_generations` anpassen können. 
-    
+    Denken Sie daran, dass Sie die Parameter bzgl. :java:`mutation_chance`, :java:`crossover_chance`, :java:`selection_type`, :java:`initial_population` und :java:`max_generations` anpassen können.
+
     Sie können für die Darstellung der Mitglieder einer Gruppe auch eine andere Darstellung als eine Liste von Listen verwenden. Sie müssen dann nur ggf. auch die :java:`__str__` Methode anpassen. Es steht Ihnen natürlich auch frei Konzepte wie Memoization zu verwenden, um die Fitness-Funktion zu beschleunigen.
 
-    Sieger ist, wer in einem akzeptablen Zeitrahmen (3 Minuten) die beste Lösung findet. 
+    Sieger ist, wer in einem akzeptablen Zeitrahmen (3 Minuten) die beste Lösung findet.
 
 
 
@@ -599,8 +599,8 @@ SEND+MORE=MONEY - Umsetzung
 .. exercise:: Ausgeglichene Gruppenzuteilung
 
     Passen Sie Ihren genetischen Algorithmus aus der vorherigen Übung so an, dass die Gruppen alle in etwa die gleiche Glücklichkeit aufweisen. D. h. eine Zuteilung, bei der die  Gruppenglücklichkeiten z. B. 92 + 91 + 73 + 89 = 345 sind, die aber größere Unterschiede zwischen den Gruppen hat, sollte vermieden werden. Eine Verteilung z. B. mit den Gruppenglücklichkeiten: 80, 84, 80, 80 = 324 sollte bevorzugt werden.
-    
-    .. hint:: 
+
+    .. hint::
         :class: smaller
 
         Sie können den bisher errechneten Wert zum Beispiel dadurch anpassen, dass Sie von dem Wert die Summe der absoluten Abweichungen vom Durchschnitt abziehen. Ggf. ist es erforderlich den Wert auch noch zu skalieren, damit steigende Abweichungen stärker ins Gewicht fallen.

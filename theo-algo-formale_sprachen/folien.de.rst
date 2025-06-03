@@ -1,14 +1,14 @@
+.. include:: ../docutils.defs
+
 .. meta::
     :version: renaissance
     :lang: de
     :author: Michael Eichberg
-    :keywords: "Formale Sprachen", "Gödelnummern",  "Chomsky"
+    :keywords: Formale Sprachen, Gödelnummern, Chomsky Hierarchie, Alphabete, Sprachen, Abzählbarkeit
     :description lang=de: Formale Sprachen
-    :id: lecture-theo-algo-formal_languages
+    :id: vorlesung-theo-algo-formale_sprachen
     :first-slide: last-viewed
     :master-password: WirklichSchwierig!
-
-.. include:: ../docutils.defs
 
 .. |SomeText.txt| source:: code/SomeText.txt
     :path: relative

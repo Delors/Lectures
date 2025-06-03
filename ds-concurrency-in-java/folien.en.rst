@@ -1,7 +1,7 @@
 .. meta::
     :version: renaissance
     :author: Michael Eichberg
-    :keywords: "Java", "Concurrency"
+    :keywords: Java, Concurrency
     :description lang=de: Nebenläufigkeit in Java
     :description lang=en: Concurrency in Java
     :id: lecture-ds-concurrency-in-java
@@ -23,25 +23,25 @@ Concurrency in Java
 
 .. supplemental::
 
-  :Slides/Scripts: 
-    
+  :Slides/Scripts:
+
     |html-source|
 
     |pdf-source|
   :Reporting errors:
-    
+
     https://github.com/Delors/delors.github.io/issues
 
 
 
 .. class:: no-title center-content
 
-Concurrency 
+Concurrency
 --------------------------------------------------------------------------------
 
 .. container:: exclamation-mark
 
-  A good understanding of concurrent programming is essential for the development of distributed applications, as servers always process several requests simultaneously.  
+  A good understanding of concurrent programming is essential for the development of distributed applications, as servers always process several requests simultaneously.
 
 
 
@@ -50,19 +50,19 @@ Processes vs. threads
 
 .. deck::
 
-  .. card:: 
+  .. card::
 
     .. image:: images/threads/threads.svg
       :alt: Prozesse vs. Threads
       :align: center
 
   .. card:: overlay
-    
+
     .. image:: images/threads/fibres.svg
       :align: center
 
   .. card:: overlay
-    
+
     .. image:: images/threads/virtual_threads.svg
       :align: center
 
@@ -70,7 +70,7 @@ Processes vs. threads
 .. supplemental::
 
   - Processes are isolated from each other and can only communicate with each other via explicit mechanisms; processes do not share the same address space.
-  - All threads of a process share the same address space. *Native threads* are threads supported by the operating system that are managed directly by the operating system. Standard Java threads are *native threads*. 
+  - All threads of a process share the same address space. *Native threads* are threads supported by the operating system that are managed directly by the operating system. Standard Java threads are *native threads*.
 
   - Fibres* (also *coroutines*) always use cooperative multitasking. This means that a fibre explicitly passes control to another fibre. (Formerly also referred to as *green threads*.) These are invisible to the operating system.
 
@@ -78,7 +78,7 @@ Processes vs. threads
 
 
 
-Communication and synchronization with the help of *monitors* 
+Communication and synchronization with the help of *monitors*
 -------------------------------------------------------------------
 
 A *monitor* is an object in which the methods are executed in mutual exclusion (*mutual exclusion*).
@@ -87,7 +87,7 @@ A *monitor* is an object in which the methods are executed in mutual exclusion (
   :alt: Monitor
   :align: right
 
-  
+
 .. rubric:: Condition synchronization
 
 - expresses a condition on the order in which operations are executed.
@@ -96,9 +96,9 @@ A *monitor* is an object in which the methods are executed in mutual exclusion (
 
 .. supplemental::
 
-  .. warning:: 
-      
-     In Java, mutual exclusion only takes place between methods that have been explicitly declared as :java:`synchronized`.  
+  .. warning::
+
+     In Java, mutual exclusion only takes place between methods that have been explicitly declared as :java:`synchronized`.
 
   *Monitors* are just one model (alternatives: *Semaphores*, *Message Passing*) that enables the communication and synchronization of threads. It is the standard model in Java and is directly supported by the Java Virtual Machine (JVM).
 
@@ -111,7 +111,7 @@ Communication between threads with the help of monitors
 - Each object is implicitly derived from the class :java:`java.lang.Object`, which defines a mutual exclusion lock.
 - Methods in a class can be marked as :java:`synchronized`. The method is only executed when the lock is present. It waits until then. This process happens automatically.
 - The lock can also be acquired via a :java:`synchronized` statement that names the object.
-- A thread can wait for a single (anonymous) condition variable and notify it. 
+- A thread can wait for a single (anonymous) condition variable and notify it.
 
 
 
@@ -128,9 +128,9 @@ Concurrency in Java
 
   - Threads are provided in Java via the predefined class :java:`java.lang.Thread`.
   - Alternatively, the interface:
-   
-    :java:`public interface Runnable { void run(); }` 
-    
+
+    :java:`public interface Runnable { void run(); }`
+
     can be implemented and an instance can then be passed to a Thread-Objekt.
   - Threads only start their execution when the :java:`start` method is called in the thread class. The :java:`thread.start` method calls the :java:`run` method. Calling the :java:`run` method directly does not lead to parallel execution.
   - The current thread can be determined using the static method :java:`Thread.currentThread()`.
@@ -179,7 +179,7 @@ Java Thread States
 Example: synchronized method
 --------------------------------------------------------------------------------
 
-.. deck:: 
+.. deck::
 
   .. card::
 
@@ -205,7 +205,7 @@ Example: synchronized method
     .. code:: java
       :class: copy-to-clipboard
       :number-lines:
-      
+
         public class SharedLong {
 
           private long theData; // reading and writing longs is not atomic
@@ -246,7 +246,7 @@ Example: synchronized method
             return count;
           }
         }
-      } 
+      }
 
 
 .. supplemental::
@@ -268,9 +268,9 @@ Complex return values
   :number-lines:
 
   public class SharedCoordinate {
-    
+
     private int x, y;
-    
+
     public SharedCoordinate(int initX, int initY) {
       this.x = initX; this.y = initY;
     }
@@ -278,7 +278,7 @@ Complex return values
     public synchronized void write(int newX, int newY) {
       this.x = newX; this.y = newY;
     }
-    
+
     /*⚠️*/ public /* synchronized irrelevant */ int readX() { return x; } /*⚠️*/
     /*⚠️*/ public /* synchronized irrelevant */ int readY() { return y; } /*⚠️*/
 
@@ -314,12 +314,12 @@ Conditional synchronization
 
 For the purpose of conditional synchronisation, the methods :java:`wait`, :java:`notify` and :java:`notifyAll` can be used in Java.  These methods allow you to wait for certain conditions and notify other threads when the condition has changed.
 
-.. deck:: incremental 
+.. deck:: incremental
 
   .. card::
 
-    - These methods can only be used within methods that hold the object lock; otherwise a :java:`IllegalMonitorStateException` is thrown.    
-  
+    - These methods can only be used within methods that hold the object lock; otherwise a :java:`IllegalMonitorStateException` is thrown.
+
   .. card::
 
     - The :java:`wait` method always blocks the calling thread and releases the lock associated with the object.
@@ -330,17 +330,17 @@ For the purpose of conditional synchronisation, the methods :java:`wait`, :java:
 
       :java:`notify` does not release the lock; therefore, the awakened thread must wait until it can receive the lock before it can continue.
     - Use :java:`notifyAll` to wake up all waiting threads.
-    
-      If the threads are waiting due to different conditions, :java:`notifyAll` must always be used.     
+
+      If the threads are waiting due to different conditions, :java:`notifyAll` must always be used.
 
     - If no thread is waiting, then :java:`notify` and :java:`notifyAll` have no effect.
 
   .. card::
 
-    .. important:: 
-      
-      When a thread is woken up, it cannot assume that its condition has been fulfilled! 
-      
+    .. important::
+
+      When a thread is woken up, it cannot assume that its condition has been fulfilled!
+
       The condition must always be checked in a loop and the thread may have to be put back into the wait state.
 
 
@@ -348,18 +348,18 @@ For the purpose of conditional synchronisation, the methods :java:`wait`, :java:
 Example: Synchronisation with *condition variables*
 -------------------------------------------------------------------------------
 
-.. deck:: 
+.. deck::
 
   .. card::
 
-    If a thread is waiting for a condition, no other thread can wait for the other condition. 
+    If a thread is waiting for a condition, no other thread can wait for the other condition.
 
 
     :peripheral:`With the primitives presented so far, direct modelling of this scenario is not possible. Instead, all threads must always be woken up to ensure that the intended thread is also woken up. This is why it is also necessary to check the condition in a loop.`
 
-  .. card:: 
+  .. card::
 
-    A *BoundedBuffer* traditionally uses two condition variables: *BufferNotFull* und *BufferNotEmpty*. 
+    A *BoundedBuffer* traditionally uses two condition variables: *BufferNotFull* und *BufferNotEmpty*.
 
     .. code:: java
       :class: copy-to-clipboard
@@ -388,13 +388,13 @@ Example: Synchronisation with *condition variables*
         public synchronized void put(int item) throws InterruptedException {
           while (numberInBuffer == size)
             wait();
-          last = (last + 1) % size; 
+          last = (last + 1) % size;
           numberInBuffer++;
           buffer[last] = item;
           notifyAll();
         };
 
-  .. card:: 
+  .. card::
 
     .. code:: java
       :class: copy-to-clipboard
@@ -403,14 +403,14 @@ Example: Synchronisation with *condition variables*
         public synchronized int get() throws InterruptedException {
           while (numberInBuffer == 0)
             wait();
-          first = (first + 1) % size; 
+          first = (first + 1) % size;
           numberInBuffer--;
           notifyAll();
           return buffer[first];
         }
       }
 
-  .. card:: 
+  .. card::
 
     Error situation that could occur when using :java:`notify` instead of :java:`notifyAll`:
 
@@ -418,13 +418,13 @@ Example: Synchronisation with *condition variables*
       :class: copy-to-clipboard
       :number-lines: 1
 
-      BoundedBuffer bb = new BoundedBuffer(1); 
+      BoundedBuffer bb = new BoundedBuffer(1);
       Thread g1,g2 = new Thread(() => { bb.get(); });
       Thread p1,p2 = new Thread(() => { bb.put(new Object()); });
       g1.start(); g2.start(); p1.start(); p2.start();
 
     .. csv-table::
-      :header: "","Operation" , "Change of State of the Buffer", "Waiting for the lock", "Waiting for the condition" 
+      :header: "", "Operation", "Change of State of the Buffer", "Waiting for the lock", "Waiting for the condition"
       :widths: 3, 25, 50, 33, 39
       :class: s-font-size-90 incremental-table-rows
 
@@ -439,8 +439,8 @@ Example: Synchronisation with *condition variables*
 
 .. supplemental::
 
-  In step 5, the VM woke up the :java:`g2` thread - instead of the :java:`p2` thread - due to the call of :java:`notify` by :java:`g1`. The awakened thread :java:`g2` checks the condition (step 6) and realises that the buffer is empty. It goes back to the wait state. Now both a thread that wants to write a value and a thread that wants to read a value are waiting. 
- 
+  In step 5, the VM woke up the :java:`g2` thread - instead of the :java:`p2` thread - due to the call of :java:`notify` by :java:`g1`. The awakened thread :java:`g2` checks the condition (step 6) and realises that the buffer is empty. It goes back to the wait state. Now both a thread that wants to write a value and a thread that wants to read a value are waiting.
+
 
 
 .. class:: new-section
@@ -464,9 +464,9 @@ Java API for concurrent programming
 Example: Synchronization with *ReentrantLock*\ s.
 -------------------------------------------------------------------------------
 
-A *BoundedBuffer*, for example, traditionally has two condition variables: *BufferNotFull* and *BufferNotEmpty*. 
+A *BoundedBuffer*, for example, traditionally has two condition variables: *BufferNotFull* and *BufferNotEmpty*.
 
-.. deck:: 
+.. deck::
 
   .. card::
 
@@ -580,12 +580,12 @@ Best Practices
 Always lock resources in the same order
 ------------------------------------------------------------------
 
-.. warning:: 
+.. warning::
 
   If two (or more) threads access the same resources in a different order, a deadlock can occur.
 
 .. important::
-  :class: incremental width-100 
+  :class: incremental width-100
 
   **Resources must always be locked in the same order** to avoid deadlocks.
 
@@ -593,7 +593,7 @@ Always lock resources in the same order
 
 .. class:: new-section
 
-Thread Safety 
+Thread Safety
 --------------------------------------------------------------------------------
 
 
@@ -603,21 +603,21 @@ Thread Safety - Prerequisites
 
 For a class to be thread-safe, it must behave correctly in a single-threaded environment.
 
-.. deck:: 
+.. deck::
 
-  .. card:: 
-  
+  .. card::
+
     I.e. if a class is implemented correctly, then no sequence of operations (reading or writing public fields and calling public methods) on objects of this class should be able to
 
-    - set the object to an invalid state, 
-    - observe the object in an invalid state, or 
+    - set the object to an invalid state,
+    - observe the object in an invalid state, or
     - violate one of the invariants, preconditions or postconditions of the class.
 
   .. card::
 
-    The class must also behave correctly when accessed by multiple threads. 
+    The class must also behave correctly when accessed by multiple threads.
 
-    - Independent of *scheduling* or the interleaving of the execution of these threads by the runtime environment, 
+    - Independent of *scheduling* or the interleaving of the execution of these threads by the runtime environment,
     - Without additional synchronisation on the part of the calling code.
 
     .. container:: framed incremental
@@ -645,7 +645,7 @@ Exercise
 ---------------------
 
 .. exercise:: Delayed Execution
-  
+
   Implement a class (:java:`DelayingExecutor`) that accepts tasks (instances of :java:`java.lang.Runable`) and executes them after a certain time. The class must not block or be locked during this time.
 
   Consider using virtual threads. A virtual thread can be created using the method: :java:`Thread.ofVirtual()`. A :java:`Runnable` object can then be passed to the :java:`start` method.
@@ -672,7 +672,7 @@ Exercise
                       return;
                   }
                   System.out.println(
-                    "delaying " + id + 
+                    "delaying " + id +
                     " by " + sleepTime + "ms");
                   Thread.sleep(sleepTime);
               } catch (InterruptedException e) {
@@ -683,7 +683,7 @@ Exercise
         );
       return thread;
 
-.. supplemental:: 
+.. supplemental::
 
   .. code:: java
     :class: copy-to-clipboard
@@ -708,7 +708,7 @@ Exercise
         for (int i = 0; i < 100000; i++) {
           final var no = i;
           var thread = executor.runDelayed(
-              i, 
+              i,
               () -> System.out.println("i'm no.: " + no));
           threads.add(thread);
         }
@@ -725,31 +725,31 @@ Exercise
 
 
 
-.. class:: exercises 
+.. class:: exercises
 
 Exercise
 ----------------------------------------------
 
-.. scrollable:: 
+.. scrollable::
 
   .. exercise:: Thread-safe programming
-    
+
     Implement a class :java:`ThreadsafeArray` to store non-:java:`null` objects (:java:`java.lang.Object`) at selected indices - comparable to a normal array. Compared to a normal array, however, a thread which wants to read a value should be blocked if the cell is occupied. The class should provide the following methods:
 
-    :`get(int index)`:java:: Returns the value at the position :java:`index`. The calling thread may be blocked until a value has been saved at the :java:`index` position. (The :java:`get` method does not remove the value from the array). 
+    :`get(int index)`:java:: Returns the value at the position :java:`index`. The calling thread may be blocked until a value has been saved at the :java:`index` position. (The :java:`get` method does not remove the value from the array).
     :`set(int index, Object value)`:java:: Stores the value :java:`value` at the position :java:`index`. If a value has already been saved at the position :java:`index`, the calling thread is blocked until the value at the position :java:`index` has been deleted.
     :`delete(int index)`:java:: Deletes the value at position :java:`index` if a value exists. Otherwise, the thread is blocked until there is a value that can be deleted.
 
-    (a) Implement the :java:`ThreadsafeArray` class using only the standard primitives: :java:`synchronized`, :java:`wait`, :java:`notify` and :java:`notifyAll`. Use the template. 
+    (a) Implement the :java:`ThreadsafeArray` class using only the standard primitives: :java:`synchronized`, :java:`wait`, :java:`notify` and :java:`notifyAll`. Use the template.
     (b) Can you use both :java:`notify` and :java:`notifyAll`?
 
-    (c) Implement the :java:`ThreadsafeArray` class using :java:`ReentrantLock`\ s and :java:`Condition`\ s. Use the template. 
+    (c) Implement the :java:`ThreadsafeArray` class using :java:`ReentrantLock`\ s and :java:`Condition`\ s. Use the template.
     (d) What are the advantages of using :java:`ReentrantLock`\ s?
 
-    .. solution:: 
+    .. solution::
       :pwd: ThreadSafeArrays
 
-      (a) 
+      (a)
 
         .. code:: java
           :class: copy-to-clipboard
@@ -785,9 +785,9 @@ Exercise
             notifyAll();
           }
 
-      (b) java:`notify` cannot be used because we have different conditions and using :java:`notify` could wake up an unsuitable thread. This could lead to all threads being in the waiting state although progress would be possible. 
+      (b) java:`notify` cannot be used because we have different conditions and using :java:`notify` could wake up an unsuitable thread. This could lead to all threads being in the waiting state although progress would be possible.
 
-      (c) 
+      (c)
           .. code:: java
             :class: copy-to-clipboard
             :number-lines:
@@ -804,7 +804,7 @@ Exercise
               this.notFullConditions = new Condition[size];
               for (int i = 0; i < size; i++) {
                 locks[i] = new ReentrantLock(true);
-                notEmptyConditions[i] = locks[i].newCondition(); 
+                notEmptyConditions[i] = locks[i].newCondition();
                 notFullConditions[i] = locks[i].newCondition();
               }
             }
@@ -836,7 +836,7 @@ Exercise
                 array[index] = value;
                 // "signalAll", because otherwise, it may happen that we "just"
                 // wake up a getter thread...
-                notEmptyConditions[index].signalAll(); 
+                notEmptyConditions[index].signalAll();
               } finally {
                 locks[index].unlock();
               }
@@ -860,7 +860,7 @@ Exercise
 
       (d) We can at least use :java:`signal` for the condition *notFull*, since only the :java:`set` method may be waiting on the condition variable *notFull*. For the condition *notEmpty*, however, we can only use :java:`signalAll`, as both the :java:`get` and the :java:`delete` methods can wait on the condition variable *notEmpty* and it could otherwise happen that no :java:`delete` is awakened after a :java:`set` call.
 
-.. supplemental:: 
+.. supplemental::
 
   You can also consider the class :java:`ThreadsafeArray` as an array of *BoundedBuffers* with the size 1.
 
@@ -877,7 +877,7 @@ Exercise
       }
 
       // complete method signatures and implementations
-      Object get(int index) 
+      Object get(int index)
       void set(int index, Object value)
       void remove(int index)
 
@@ -895,7 +895,7 @@ Exercise
               try {
                 out.println(readerThreadName + "[" + j + "]" );
                 var o = array.get(j);
-                out.println(readerThreadName + 
+                out.println(readerThreadName +
                     "[" + j + "] ⇒ #" + o.hashCode());
                 Thread.sleep(SLEEP_TIME);
               } catch (InterruptedException e) {
@@ -941,4 +941,3 @@ Exercise
         }
       }
     }
-
