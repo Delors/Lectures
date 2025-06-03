@@ -58,8 +58,6 @@ Drei Ansätze in Hinblick auf *Authenticated Encryption*
         **MAC-then-Encrypt**
 
         .. image:: drawings/authentifizierte-verschluesselung/mac_then_encrypt.svg
-            :align: left
-
 
 .. supplemental::
 
