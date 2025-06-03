@@ -34,6 +34,8 @@ function update_html_if_necessary() {
         fi
         echo "$(date '+%Y-%m-%d %H:%M:%S') updating:" $html_file
         reStructuredTextToLectureDoc2/rst2ld.py "$1" \
+            --strip-comments \
+            --no-xml-declaration \
             --output "$html_file" \
             --ld-path $path_prefix"LectureDoc2" \
             --ld-passwords "$html_file.passwords.json" \
