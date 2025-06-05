@@ -18,7 +18,7 @@ Einführung in die Zahlentheorie
 
 :Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
 :Kontakt: michael.eichberg@dhbw.de
-:Version: 1.1.2
+:Version: 1.1.3
 :Quelle: Im Wesentlichen *Cryptography and Network Security - Principles and Practice, 8th Edition, William Stallings*
 
 .. supplemental::
@@ -102,7 +102,7 @@ Wenn :math:`b | g` und :math:`b|h`, dann :math:`b|(mg+nh)` für beliebige ganze 
 
     Wenn :math:`b | h`, dann gilt für :math:`h`, dass :math:`h = b \times h_1` ist für eine beliebige ganze Zahl :math:`h_1`.
 
-    Somit gilt: :math:`mg+nh = mb g_1 + n b h_1 = b \times (mg_1+nh_1)` und deshalb wird :math:`mg+mh` von teilt :math:`b` geteilt.
+    Somit gilt: :math-i:`mg+nh = mb g_1 + n b h_1 = b \times (mg_1+nh_1)` und deshalb wird :math-i:`mg+nh` von :math-i:`b` geteilt.
 
 
 
@@ -613,7 +613,7 @@ Euklidischer Algorithmus - neu betrachtet
         .. example::
             :class: incremental
 
-            .. code:: pseudocode
+            .. code:: python
 
                 ggt(10,6)
                     ↳ ggt(6,4)
@@ -1185,6 +1185,45 @@ Chinesische Restsatz - Zusammenfassung
 
    .. exercise::
 
+        Berechne :math:`ggt(42,16)` mit Hilfe des erweiterten Euklidischen Algorithmus. D. h. berechnen Sie auch :math-i:`x` und :math-i:`y`!
+
+        .. solution::
+            :pwd: x und y - das ist nicht schwer
+
+            ::
+
+                42 = 2 × 16 + 10
+                16 = 1 × 10 + 6
+                10 = 1 × 6 + 4
+                6 = 1 × 4 + 2
+                4 = 2 × 2 + 0
+
+                ggt(42,16) = 2
+
+            .. csv-table::
+                :width: 100%
+
+                :math:`r_{-1} = 42`, ,:math:`x_{-1} = 1`, :math:`y_{-1} = 0`
+                :math:`r_0 = 16`, ,:math:`x_0 = 0`, :math:`y_0 = 1`
+                :math:`r_1 = 10`, :math:`q_1 = 2`, :math:`x_1 = 1`, :math:`y_1 = -2`
+                :math:`r_2 = 6`, :math:`q_2 = 1`, :math:`x_2 = 1`, :math:`y_2 = 3`
+                :math:`r_3 = 4`, :math:`q_3 = 1`, :math:`x_3 = 2`, :math:`y_3 = -5`
+                :math:`r_4 = 2`, :math:`q_4 = 1`, :math:`x_4 = -3`, :math:`y_4 = 8`
+
+
+            x = -3 und y = 8
+
+
+
+.. class:: exercises
+
+Übung
+---------------------------------
+
+1. \
+
+   .. exercise::
+
     Bestimme das Ergebnis von Euler's Totient Funktion :math:`\phi` für den Wert :math:`37` ohne das Ergebnis nachzuschlagen.
 
     .. solution::
@@ -1192,7 +1231,7 @@ Chinesische Restsatz - Zusammenfassung
 
         Das Ergebnis ist 36, da 37 eine Primzahl ist und deswegen alle Zahlen von 1 bis 36 relativ prim zu 37 sind.
 
-5. \
+2. \
 
    .. exercise::
 
@@ -1203,7 +1242,7 @@ Chinesische Restsatz - Zusammenfassung
 
         :math:`9^6\, mod\, 7 = 531441\, mod\, 7 = 1`
 
-6. \
+3. \
 
    .. exercise::
 
@@ -1216,7 +1255,7 @@ Chinesische Restsatz - Zusammenfassung
 
             :math:`7^6\, mod\, 9 = 1`
 
-7. \
+4. \
 
    .. exercise::
 
@@ -1242,9 +1281,10 @@ Chinesische Restsatz - Zusammenfassung
             _____________________________
             Wahrscheinlich prim
 
-        `Jupyter Notebook mit Miller-Rabin Algorithm. <https://github.com/Delors/Course_W3M20014/blob/main/1-miller-rabin-algorithm.ipynb>`__
 
-8. \
+        `Jupyter Notebook mit Miller-Rabin Algorithm. <https://github.com/Delors/Lectures/blob/main/sec-einfuehrung-in-die-zahlentheorie/resources/miller-rabin-algorithm.ipynb>`__
+
+5. \
 
    .. exercise::
 
