@@ -6,7 +6,7 @@
    :description lang=de: Kontrollfragen bzgl. Einführung in Blockchiffren
    :id: vorlesung-sec-blockchiffren-kontrollfragen
    :first-slide: last-viewed
-   :exercises-master-password: WirklichSchwierig!
+   :master-password: WirklichSchwierig!
 
 .. include:: ../docutils.defs
 
