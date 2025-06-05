@@ -18,7 +18,7 @@ Endliche Körper
 :Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
 :Kontakt: michael.eichberg@dhbw.de
 :Basierend auf: *Cryptography and Network Security - Principles and Practice, 8th Edition, William Stallings*
-:Version: 1.1.1
+:Version: 1.2.1
 
 .. supplemental::
 
@@ -28,6 +28,13 @@ Endliche Körper
       [PDF] |pdf-source|
   :Fehler melden:
       https://github.com/Delors/delors.github.io/issues
+
+
+
+.. class:: new-section
+
+Einführung in Gruppen, Ringe und Körper
+-----------------------------------------
 
 
 
@@ -269,9 +276,9 @@ Rechnung mit ganzen Zahlen modulo 8\ [#]_
 
     .. cell:: width-50
 
-        .. rubric:: Addition Modulo 8
+        .. _Addition mod 8:
 
-        .. csv-table::
+        .. csv-table:: Addition Modulo 8
             :class: highlight-on-hover highlight-identical-cells-on-hover
             :stub-columns: 1
             :header: ":math:`+`", 0, 1, 2, 3, 4, 5, 6, 7
@@ -287,9 +294,9 @@ Rechnung mit ganzen Zahlen modulo 8\ [#]_
 
     .. cell:: width-50 incremental
 
-        .. rubric:: Multiplikation Modulo 8
+        .. _Multiplikation mod 8:
 
-        .. csv-table::
+        .. csv-table:: Multiplikation Modulo 8
             :class: highlight-on-hover highlight-identical-cells-on-hover
             :stub-columns: 1
             :header: ":math:`\times`", 0, 1, 2, 3, 4, 5, 6, 7
@@ -303,7 +310,7 @@ Rechnung mit ganzen Zahlen modulo 8\ [#]_
             6, 0, 6, 4, 2, 0, 6, 4, 2
             7, 0, 7, 6, 5, 4, 3, 2, :red:`1`
 
-.. [#] Hervorgehoben ist jeweils das inverse Element.
+.. [#] Hervorgehoben ist jeweils das neutrale Element.
 
 
 
@@ -312,9 +319,10 @@ Rechnung mit ganzen Zahlen modulo 8\ [#]_
 Additive and Muliplikative Inverse Modulo 8
 --------------------------------------------
 
-.. csv-table::
+.. csv-table:: Abgelesen aus Tabelle `Addition mod 8`_ und `Multiplikation mod 8`_
     :align: center
     :class: highlight-on-hover
+    :widths: 1 1 1
     :stub-columns: 1
     :header: :math:`w`, :math:`-w`, :math:`w^{-1}`
 
@@ -336,9 +344,9 @@ Rechnung mit ganzen Zahlen modulo 7\ [#]_
 
     .. cell:: width-50
 
-        .. rubric:: Addition Modulo 7
+        .. _Addition mod 7:
 
-        .. csv-table::
+        .. csv-table:: Addition Modulo 7
             :class: highlight-on-hover highlight-identical-cells-on-hover
             :stub-columns: 1
             :header: ":math:`+`", 0, 1, 2, 3, 4, 5, 6
@@ -354,9 +362,9 @@ Rechnung mit ganzen Zahlen modulo 7\ [#]_
 
     .. cell:: width-50 incremental
 
-        .. rubric:: Multiplikation Modulo 7
+        .. _Multiplikation mod 7:
 
-        .. csv-table::
+        .. csv-table:: Multiplikation Modulo 7
             :class: highlight-on-hover highlight-identical-cells-on-hover
             :stub-columns: 1
             :header: ":math:`\times`", 0, 1, 2, 3, 4, 5, 6
@@ -369,14 +377,18 @@ Rechnung mit ganzen Zahlen modulo 7\ [#]_
             5, 0, 5, 3, :red:`1`, 6, 4, 2
             6, 0, 6, 5, 4, 3, 2, :red:`1`
 
-.. [#] Hervorgehoben ist jeweils das inverse Element.
+.. [#] Hervorgehoben ist jeweils das neutrale Element.
+
+.. supplemental::
+
+    Zu beachten ist hier, dass es zu jedem Element :math:`[0,6]` ein zweites Element :math:`[0,6]` gibt, so dass die Verrechnung (Addition oder Multiplikation) das jeweilige neutrale Element ergibt.
 
 
 
 Additive und Muliplikative Inverse Modulo 7
 --------------------------------------------
 
-.. csv-table::
+.. csv-table:: Abgelesen aus Tabelle `Addition mod 7`_ und `Multiplikation mod 7`_
     :align: center
     :class: highlight-on-hover
     :stub-columns: 1
@@ -398,11 +410,10 @@ Der Körper GF(2)
 
     .. cell:: width-50
 
-        .. rubric:: Addition
-
-        .. csv-table::
+        .. csv-table:: Addition
             :class: highlight-on-hover
             :stub-columns: 1
+            :align: center
             :header: ":math:`+`", 0, 1
 
             0, 0, 1
@@ -410,27 +421,24 @@ Der Körper GF(2)
 
     .. cell:: width-50 incremental
 
-        .. rubric:: Multiplikation
-
-        .. csv-table::
+        .. csv-table:: Multiplikation
             :class: highlight-on-hover
             :stub-columns: 1
+            :align: center
             :header: ":math:`\times`",0,1
 
             0, 0, 0
             1, 0, 1
 
-.. container:: incremental
+.. csv-table:: Inverse
+    :class: incremental
+    :align: center
+    :stub-columns: 1
+    :widths: 1 1 1
+    :header: ":math:`w`", ":math:`-w`", ":math:`w^{-1}`"
 
-    .. rubric:: Inverse
-
-    .. csv-table::
-        :stub-columns: 1
-        :header: ":math:`w`", ":math:`-w`", ":math:`w^{-1}`"
-
-        0, 0, 0
-        1, 0, 1
-
+    0, 0, :math-r:`-`
+    1, 1, 1
 
 .. supplemental::
 
@@ -471,6 +479,13 @@ Körper der Form :math:`GF(2^n)`
 .. container:: accentuate
 
     Für eine effiziente Nutzung klassischer Computer benötigen wir einen endlichen Körper der Form :math:`GF(2^n)`.
+
+
+
+.. class:: new-section
+
+Polynome und Polynomarithmetik
+-----------------------------------------
 
 
 
@@ -687,10 +702,7 @@ Arithmetik in :math:`GF(2^3)`\ [#]_
 
     .. card::
 
-
-        .. rubric:: Addition
-
-        .. csv-table::
+        .. csv-table:: Addition
             :align: center
             :class:  highlight-on-hover  highlight-identical-cells-on-hover
             :stub-columns: 2
@@ -716,9 +728,7 @@ Arithmetik in :math:`GF(2^3)`\ [#]_
 
     .. card::
 
-        .. rubric:: Multiplikation
-
-        .. csv-table::
+        .. csv-table:: Multiplikation
             :align: center
             :class:  highlight-on-hover  highlight-identical-cells-on-hover
             :stub-columns: 2
@@ -742,13 +752,11 @@ Arithmetik in :math:`GF(2^3)`\ [#]_
 
     .. card::
 
-        .. rubric:: Aditive (:math:`-w`) und Multiplikative Inverse (:math:`w^{-1}`)
-
-
-        .. csv-table::
+        .. csv-table:: Additive (:math:`-w`) und Multiplikative Inverse (:math:`w^{-1}`)
             :class: highlight-on-hover
             :align: center
             :stub-columns: 1
+            :widths: 1 1 1
             :header: :math:`w`, :math:`-w`, :math:`w^{-1}`
 
             0,0,:math:`-`
@@ -759,8 +767,6 @@ Arithmetik in :math:`GF(2^3)`\ [#]_
             5,5,2
             6,6,3
             7,7,4
-
-        :peripheral:`(Die Werte wurden aus den vorherigen Tabellen abgelesen.)`
 
 
 
@@ -801,9 +807,7 @@ Polynomarithmetik im :math:`GF(2^3)` Modulo :math:`(x^3 + x + 1)`
 
     .. card::
 
-        .. rubric:: Addition
-
-        .. csv-table::
+        .. csv-table:: Addition
             :class: highlight-on-hover table-data-align-right highlight-identical-cells-on-hover font-size-80 compact
             :stub-columns: 2
             :header-rows: 2
@@ -823,9 +827,7 @@ Polynomarithmetik im :math:`GF(2^3)` Modulo :math:`(x^3 + x + 1)`
 
     .. card::
 
-        .. rubric:: Multiplikation
-
-        .. csv-table::
+        .. csv-table:: Multiplikation
             :class: highlight-on-hover highlight-identical-cells-on-hover table-data-align-right font-size-80 compact
             :stub-columns: 2
             :header-rows: 2
@@ -992,6 +994,7 @@ Multiplikation in :math:`GF(2^n)`
 ------
 
 .. exercise:: Polynomarithmetik im GF(2^5)
+   :formatted-title: Polynomarithmetik im :math:`GF(2^5)`
 
    Gegeben sei :math:`GF(2^5)` mit dem irreduziblen Polynom :math:`p(x) = x^5 + x^2 + 1`
 
@@ -1026,6 +1029,7 @@ Multiplikation in :math:`GF(2^n)`
 ----------------------------
 
 .. exercise:: Einfache Polynomarithmetik im GF(2^8)
+    :formatted-title: Einfache Polynomarithmetik im :math:`GF(2^8)`
 
     Nehmen wir an, dass 7 und 3 stellvertretend für die Bitmuster der Koeffizienten des Polynoms stehen.
 
@@ -1044,6 +1048,7 @@ Multiplikation in :math:`GF(2^n)`
         Die Lösung ist in beiden Fällen: 4 (d. h. Addition und Subtraktion sind gleich; jeder Wert ist sein additiver Kehrwert).
 
 .. exercise:: Polynommultiplikation im GF(2^8)
+    :formatted-title: Polynommultiplikation im :math:`GF(2^8)`
 
     .. class:: list-with-explanations
 
