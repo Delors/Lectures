@@ -14,3 +14,4 @@ drawings/feistel/one_round_and_swap.svg
 drawings/multiple_encryption/double_encryption.svg
 drawings/multiple_encryption/triple_encryption.svg
 resources/feistel.ipynb
+resources/Feistel.java
