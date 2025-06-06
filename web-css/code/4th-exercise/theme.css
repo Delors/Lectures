@@ -1,0 +1,24 @@
+:root {
+
+    /* the default light theme */
+    --body-background-color: white;
+    --h1-background-color: rgba(0, 0, 0, 0.3);
+    --h1-color: white;
+    --p-background-color: whitesmoke;
+    --p-color: black;
+    --cite-color: gray;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --body-background-color: black;
+        --h1-background-color: rgba(255, 255, 255, 0.3);
+        --h1-color: whitesmoke;
+        --p-background-color: rgba(255, 255, 255, 0.2);
+        --p-color: whitesmoke;
+    }
+
+    a:link {
+        color: lightcoral;
+    }
+}

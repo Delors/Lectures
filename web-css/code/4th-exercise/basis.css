@@ -1,0 +1,50 @@
+:root {
+    --font-size: 18px;
+    --font-family: sans-serif;
+}
+
+body {
+    max-width: 60ch;
+    padding: 20px;
+    font-size: var(--font-size);
+    font-family: var(--font-family);
+    padding: 0;
+    margin: 0;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: var(--body-background-color);
+}
+
+h1 {
+    padding: 0.75rem;
+    margin-bottom: 0;
+    border-radius: 0.5em 0.5em 0 0;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(5px);
+    background-color: var(--h1-background-color);
+    color: var(--h1-color);
+}
+
+p {
+    position: relative;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 0.75rem;
+    background-color: var(--p-background-color);
+    color: var(--p-color);
+    border-radius: 0 0 0.5em 0.5em;
+    font-weight: 100;
+    text-wrap: pretty;
+}
+
+cite {
+    display: block;
+    padding: 0.5rem;
+    text-align: right;
+    font-size: smaller;
+    color: var(--cite-color);
+}
+
+main {
+    container: main / inline-size;
+}

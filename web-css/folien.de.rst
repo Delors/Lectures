@@ -15,11 +15,9 @@
 Cascading Style Sheets (CSS)
 =============================================
 
-----
-
 :Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
 :Kontakt: michael.eichberg@dhbw.de, Raum 149B
-:Version: 1.3.2
+:Version: 1.4
 
 .. supplemental::
 
@@ -54,6 +52,7 @@ CSS (Cascading Style Sheets) ist eine Stylesheet-Sprache, die verwendet wird, um
 
         .. code:: html
             :class: copy-to-clipboard
+            :number-lines:
 
             <section>
                 <p>1. Absatz</p>
@@ -399,40 +398,30 @@ Kombinatoren
 
 .. story::
 
-    .. class:: incremental-list
-
-    - Nachfahren (bzgl. Dokumentenstruktur) (:eng:`Descendant Selector`):
-
-      .. csv-table::
-        :class: booktabs
+    .. csv-table:: Nachfahren (bzgl. Dokumentenstruktur) (:eng:`Descendant Selector`)
+        :class: booktabs incremental
         :width: 100%
         :widths: 30 80
 
         ``div p``, alle :html:`<p>` Nachfahren von :html:`<div>` Elementen
         ``.important p``, "alle :html:`<p>` Nachfahren von ``.important`` Elementen"
 
-    - Alle direkten Kinder (:eng:`Child Selector`):
-
-      .. csv-table::
-        :class: booktabs
+    .. csv-table:: Alle direkten Kinder (:eng:`Child Selector`)
+        :class: booktabs incremental
         :width: 100%
         :widths: 30 80
 
         ``div > p``, alle :html:`<p>` Kinder von :html:`<div>` Elementen
 
-    - Benachbarte Geschwister (:eng:`Adjacent Sibling Selector`):
-
-      .. csv-table::
-        :class: booktabs
+    .. csv-table:: Benachbarte Geschwister (:eng:`Adjacent Sibling Selector`)
+        :class: booktabs incremental
         :width: 100%
         :widths: 30 80
 
         ``h1 + p``, "alle :html:`<p>` Elemente, die *direkt* auf ein :html:`<h1>` Element folgen und sich das gleiche Eltern-Element teilen"
 
-    - Allgemeiner Geschwister Selektor (:eng:`General Sibling Selector`):
-
-      .. csv-table::
-        :class: booktabs
+    .. csv-table:: Allgemeiner Geschwister Selektor (:eng:`General Sibling Selector`)
+        :class: booktabs incremental
         :width: 100%
         :widths: 30 80
 
@@ -1316,6 +1305,7 @@ JavaScript und CSS Selektoren
     CSS Selektoren werden auch von der JavaScript API für HTML Dokumente verwendet, um Elemente zu selektieren.
 
 
+
 .. class:: exercises
 
 Übung
@@ -1831,6 +1821,8 @@ Grundlagen
 
 .. story::
 
+    .. rubric:: Schlüsselworte und einfache Werte
+
     .. class:: incremental-list
 
     - Einige Eigenschaften haben Schlüsselworte, die spezielle Werte repräsentieren (z. B. :css:`none` bei :css:`text-decoration`)
@@ -1840,41 +1832,48 @@ Grundlagen
     - Identifikatoren (z. B.  :css:`checked` )
     - URLs werden mittels  :css:`url(...)`  angegeben
     - Ganzzahlen, Fließkommazahlen und Prozente
-    - Ausgewählte Distanzen:
-
-      .. class:: incremental-list
-
-        - Absolute Längen: ``cm``, ``mm``, ``in``, ``pt``, ``pc``, ``px``
-        - Relative Längen:
-
-          - Charakter bezogene Längen: ``em``, ``ex``, ``lh``, ``ch``
-          - Root bezogene Längen: ``rem`` (*root-em*)
-          - Relation: ``fr`` (Anteil vom Leerraum)
-        - Viewport bezogene Längen: ``vw`` (viewport width), ``vh`` (viewport height), ``dvh`` (dynamic viewport height), ``dvw`` (dynamic viewport width), ``svh`` (small viewport height), ``svw`` (small viewport width)
-        - Container bezogene Größen: cqw (container query width)
-    - Funktionswerte:  :css:`calc()` ,  :css:`min()` ,  :css:`max()` ,  :css:`clamp(<min_value>,<preferred_value>,<max_value>)` ,  :css:`attr`  und über 90 weitere Funktionen
     - Farben werden spezifiziert mittels Schlüsselworte: (:css:`red` ,  :css:`green` , etc.), RGB-Werte:  :css:`rgb(<red>,<green>,<blue>)`  oder  :css:`rgb(<red> <green> <blue> [/ <alpha>])` ; oder ...
     - Zeitangaben: ``s`` und ``ms``
     - Verhältnisse: ``<number> / <number>`` (z. B. ``16/9``)
-    - Benutzerdefinierte Eigenschaften (*CSS Variables*):
+    - Funktionswerte:  :css:`calc()` ,  :css:`min()` ,  :css:`max()` ,  :css:`clamp(<min_value>,<preferred_value>,<max_value>)` ,  :css:`attr`  und über 90 weitere Funktionen
 
-      Beispiel:
+    .. class:: incremental
 
-      1. Deklaration
+    .. rubric:: Ausgewählte Distanzen
 
-         :css:`html { --main-color: red;}`
+    .. class:: incremental-list
 
-         (Häufig :css:`:root {...}` statt :css:`html { ... }`.)
+    - Absolute Längen: ``cm``, ``mm``, ``in``, ``pt``, ``pc``, ``px``
+    - Relative Längen:
 
-      2. Verwendung inkl. Fallback-Wert:
+      - Charakter bezogene Längen: ``em``, ``ex``, ``lh``, ``ch``
+      - Root bezogene Längen: ``rem`` (*root-em*)
+      - Relation: ``fr`` (Anteil vom Leerraum)
+    - Viewport bezogene Längen: ``vw`` (viewport width), ``vh`` (viewport height), ``dvh`` (dynamic viewport height), ``dvw`` (dynamic viewport width), ``svh`` (small viewport height), ``svw`` (small viewport width)
+    - Container bezogene Größen: cqw (container query width)
+    
+    .. class:: incremental
 
-         :css:`p {color: var(--main-color, black)}`
+    .. rubric:: Benutzerdefinierte Eigenschaften (*CSS Variables*)
 
-      Der Scope ergibt sich aus dem Element, in dem die Variable definiert wurde.
+    .. example:: 
+        :class: incremental
 
-      .. container:: warning
+        1. Deklaration
 
-        Bei Verwendung findet einfaches (textuelles) Ersetzen statt.
+           :css:`html { --main-color: red;}`
+
+           (Häufig :css:`:root {...}` statt :css:`html { ... }`.)
+
+        2. Verwendung inkl. Fallback-Wert:
+
+           :css:`p {color: var(--main-color, black)}`
+
+        Der Scope ergibt sich aus dem Element, in dem die Variable definiert wurde.
+
+        .. container:: warning
+
+            Bei Verwendung findet einfaches (textuelles) Ersetzen statt.
 
 .. supplemental::
 
@@ -1939,20 +1938,20 @@ Box-Modell - Einführung
   - entweder eine *Block Box*
   - oder eine *Inline Box*
 
-.. container:: incremental scrollable
+.. story:: incremental
 
   - Es ist möglich den Typ der Box zu ändern.
   - Es ist möglich die Größe der Box zu ändern.
 
-    .. class:: incremental list-with-explanations
+    .. class:: incremental-list list-with-sublists
 
-    - Basierend auf der Größe des Inhalts: max-content, min-content, fit-content
+    - Basierend auf der Größe des Inhalts: :css:`max-content`, :css:`min-content`, :css:`fit-content`
 
       (Insbesondere - aber nicht ausschließlich - genutzt bei Grid-Layouts.)
-    - Explizite Angabe der Größe: ``width``, ``height``, ``min-width``, ``max-width``, ``min-height``, ``max-height``
+    - Explizite Angabe der Größe: :css:`width`, :css:`height`, :css:`min-width`, :css:`max-width`, :css:`min-height`, :css:`max-height`
 
-      - absolute Werte: insbesondere ``px``
-      - relative Werte:  :css:`width: x%`  setzt die Breite auf ``x%`` der Größe des *Containing Block*.  :css:`height: y%`  setzt die Höhe auf ``y%`` der Größe des *Containing Block* - wenn dieser eine explizite Höhe hat!
+      - absolute Werte: insbesondere :css:`px`
+      - relative Werte: :css:`width: x%` setzt die Breite auf ``x%`` der Größe des *Containing Block*. :css:`height: y%`  setzt die Höhe auf ``y%`` der Größe des *Containing Block* - wenn dieser eine explizite Höhe hat!
       - ``auto`` ist der Standardwert
     - Die Größe wird bei *Inline-Replaced Elements* ignoriert.
 
@@ -1970,47 +1969,47 @@ Darstellung des Box-Modells
 
 Im Zentrum ist der Content-Bereich (*Content Area*)
 
-    .. raw:: html
-        :class: center-content
+.. raw:: html
+    :class: center-content
 
-        <style>
-            div.web-css-box-model {
-                position:relative;
+    <style>
+        div.web-css-box-model {
+            position:relative;
 
-                margin:0;
-                border: 0;
-                padding:1em;
+            margin:0;
+            border: 0;
+            padding:1em;
 
-                display: flex;
-                justify-content: center;
-                align-items: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
 
-                background: white;
-                color: white;
+            background: white;
+            color: white;
 
-                > span {
-                    position: absolute;
-                    top: 0.5em;
-                    left: 0.5em;
-                }
+            > span {
+                position: absolute;
+                top: 0.5em;
+                left: 0.5em;
             }
-        </style>
+        }
+    </style>
+    <div    class="web-css-box-model"
+            style="width:36em; height:15em; border: 1px solid black;">
+        <span style="color: gray;">Margin</span>
         <div    class="web-css-box-model"
-                style="width:36em; height:15em; border: 1px solid black;">
-            <span style="color: gray;">Margin</span>
+                style="width:32em; height:11em; background:darkgray;">
+            <span>Border</span>
             <div    class="web-css-box-model"
-                    style="width:32em; height:11em; background:darkgray;">
-                <span>Border</span>
+                    style="width:28em; height:7em; background:lightblue;">
+                <span style="color:black;">Padding</span>
                 <div    class="web-css-box-model"
-                        style="width:28em; height:7em; background:lightblue;">
-                    <span style="color:black;">Padding</span>
-                    <div    class="web-css-box-model"
-                            style="width:24em; height:3em; background:blue;">
-                        Content Area
-                    </div>
+                        style="width:24em; height:3em; background:blue;">
+                    Content Area
                 </div>
             </div>
         </div>
+    </div>
 
 - Das Layout erfolgt relativ zum *Containing Block*.
 
@@ -2026,8 +2025,8 @@ Im Zentrum ist der Content-Bereich (*Content Area*)
 
 
 
-Inhalt, der nicht in die umgebende Box passt
-------------------------------------------------
+Anzeige des Inhalts, der nicht in die umgebende Box passt, kontrollieren
+-------------------------------------------------------------------------
 
 .. grid::
 
@@ -2160,7 +2159,7 @@ Floating
 
 Elemente können mit  :css:`float`  aus dem normalen Fluss genommen werden:
 
-.. grid:: smaller
+.. grid:: 
 
     .. cell:: width-50
 
@@ -2316,6 +2315,68 @@ Positioning -  :css:`fixed`  und  :css:`sticky`
 
 :fixed: Das Element wird relativ zum Viewport positioniert.
 :sticky: Das Element bleibt im normalen Fluss, bis der Zeitpunkt erreicht ist, an dem es fixiert wird (d. h. absolut positioniert wird).
+
+
+.. grid:: smaller
+
+    .. cell:: width-50
+
+        *HTML*
+
+        .. code:: html
+            :number-lines:
+            :class: copy-to-clipboard
+
+            <div class="fixed">😅</div>
+            <p>Währung der Welt</p>
+            <h1>Euro</h1>
+            <p>The euro (symbol: €; currency 
+               code: EUR) is the official ...</p>
+            <style>
+                .fixed { position: fixed;
+                         top: 0;
+                         right: 0; }
+                h1 {     position: sticky;
+                         top: 0; }
+            </style>
+
+
+    .. cell:: width-50
+
+        *Spielwiese*
+
+        .. module:: embedded-iframe
+            :class: br-shadow
+
+            <iframe width="100%" height="10lh" style="height: 10lh;" srcdoc='
+                <html>
+                    <head>
+                        {{ld-embedded-iframe.head.frag.html}}
+                        <style>
+                            div { hyphens: auto; }
+                        </style>
+                    </head>
+                    <body style="overflow: scroll;">
+                        <div class="fixed">😅</div>
+                        <p>Währungen der Welt</p>
+                        <h1>Euro</h1>
+                        <p>The euro (symbol: €; currency code: EUR) is the official currency of 20 of the 27 member states of the European Union. This group of states is officially known as the euro area or, more commonly, the eurozone. The euro is divided into 100 euro cents.</p>
+                        <p>The currency is also used officially by the institutions of the European Union, by four European microstates that are not EU members, the British Overseas Territory of Akrotiri and Dhekelia, as well as unilaterally by Montenegro and Kosovo. Outside Europe, a number of special territories of EU members also use the euro as their currency.</p>
+                        <p>
+                        The euro is used by 350 million people in Europe and additionally, over 200 million people worldwide use currencies pegged to the euro. It is the second-largest reserve currency as well as the second-most traded currency in the world after the United States dollar. As of December 2019, with more than €1.3 trillion in circulation, the euro has one of the highest combined values of banknotes and coins in circulation in the world.</p>
+                        <style>
+                        .fixed {
+                            position: fixed;
+                            top: 0;
+                            right: 0;
+                        }
+                        h1 {
+                            position: sticky; 
+                            top: 0;
+                        }
+                    </body>' >
+                iframes are not supported
+            </iframe>
 
 
 
@@ -2518,8 +2579,8 @@ Kombination von Media-Queries und CSS Nesting, um *Drop Caps* nur auf großen Bi
 
 
 
-Flexbox - Beispielhaft
---------------------------
+CSS Trick mit Flexbox - Beispielhaft
+--------------------------------------
 
 .. grid:: no-default-width
 
@@ -2573,7 +2634,9 @@ Flexbox - Beispielhaft
 
 .. supplemental::
 
-    Der „Trick“ ist, dass die Berechnung für  :css:`flex-basis`  so gewählt ist, dass ab einer bestimmten Größe der Wert für flex-basis entweder sehr groß ist (und damit nur noch ein Element in die Zeile passt oder eben sehr klein ist und damit alle Elemente in eine Zeile passen.)
+    Der „Trick“ ist, dass die Berechnung für  :css:`flex-basis` so gewählt ist, dass ab einer bestimmten Größe der Wert für flex-basis entweder sehr groß ist (und damit nur noch ein Element in die Zeile passt oder eben sehr klein ist und damit alle Elemente in eine Zeile passen.)
+
+    Ist der Viewport kleiner als 900px - also zum Beispiel 800px, dann ist der Wert für :css:`flex-basis` :math-r:`900px * 999 - 800px * 999 = 99.900 und somit extrem groß. Damit wird der Wert von :css:`flex-basis` „ignoriert“ und jedes Elemente wird in einer Zeile dargestellt. Ist der Viewport zum Beispiel 1000px, dann ist der Wert für :css:`flex-basis` :math-r:`900px * 999 - 1000px * 999 = -99.000` und damit negativ. Somit wird der Wert von :css:`flex-basis` wieder „ignoriert“ und alle Elemente werden neben einander in einer Zeile dargestellt.
 
 
 
@@ -2979,18 +3042,49 @@ Bauen Sie Unterstützung für den Dark und Light Mode nach.\ [#]_
 
 
 
-.. class:: transition-fade
+.. class:: new-section transition-fade
 
 CSS-Layers
 ------------------------------------------------
 
-:css:`@layer` ermöglicht das Festlegen einer expliziten Kaskaden-Reihenfolge:
 
-.. class:: incremental-list
+CSS-Layers
+------------------------------------------------
 
-- Eine später deklarierte Schicht überschreibt frühere Schichten unabhängig von der Spezifität der Selektoren.
+.. class:: incremental-list 
 
-.. grid:: incremental
+- CSS Layers sind insbesondere in komplexen Projekten hilfreich, um die Kaskadierung von CSS-Regeln zu steuern und sicherzustellen, dass bestimmte Regeln Vorrang haben. 
+
+- :css:`@layer` ermöglicht das deklarative Festlegen einer expliziten Kaskaden-Reihenfolge:
+
+- Eine *später* deklarierte Schicht überschreibt frühere Schichten unabhängig von der Spezifität der Selektoren.
+- Beim Import von CSS-Dateien kann die Schicht ebenfalls angegeben werden:
+
+  .. example::
+
+
+    .. code:: css
+        :number-lines:
+        :class: copy-to-clipboard
+
+        @layer basis, overrides, theme;
+
+        @import url("modularization/basis.css") layer(basis);
+        @import url("modularization/overrides.css") layer(overrides);
+        @import url("modularization/theme.css") layer(theme);
+
+- Importiert/deklariert eine CSS Datei, die bereits einer Schicht zugeordnet ist, weitere Schicthen so bilden diese automatisch eine Hierarchie.
+
+.. supplemental::
+  
+  Insbesondere in großen Projekten sind CSS Layers wichtige, um ein Kampf um die höchste Spezifität zu vermeiden. Weiterhin erlaubt es die problemlose Nutzung von CSS-Frameworks, die in eigenen Schichten organisiert sind. Ggf. kann auch ein Import in eine Schicht erfolgen, um die Kaskadierung zu steuern.
+
+
+
+CSS-Layers - Beispiel
+------------------------------------------------
+
+.. grid:: 
 
     .. cell:: width-40
 
@@ -3062,15 +3156,11 @@ Verschachtelte CSS-Layers
         :number-lines:
 
         @layer base {
-            h1 {
-                color: navy;
-            }
+            h1 { color: navy; }
 
             @layer components {
 
-                h1 {
-                    color: red;
-                }
+                h1 { color: red; }
 
                 .highlight {
                     background-color: yellow;
@@ -3079,6 +3169,38 @@ Verschachtelte CSS-Layers
         }
 
 
+
+.. class:: exercises
+
+Übung - Modularisierung von CSS und CSS-Layers
+------------------------------------------------
+
+.. exercise:: CSS Layers
+
+    Nehmen Sie die Lösung von der vorherigen Übung und modularisieren Sie diese mit Hilfe von CSS-Layers. Nutzen Sie zum Normalisieren von CSS die Datei `normalize.css <code/4th-exercise/normalize.css>`__\ [#]_.
+
+    Legen Sie danach zwei weitere Dateien an, die die grundlegenden CSS Eigenschaften (Position etc.) enthalten und eine Datei, die sich nur um das Theming kümmert. 
+
+    .. solution::
+        :pwd: web-css.
+
+        .. include:: code/4th-exercise/exercise-solution.html
+            :code: html
+            :class: copy-to-clipboard
+            :number-lines:
+
+        .. include:: code/4th-exercise/basis.css
+            :code: css
+            :class: copy-to-clipboard
+            :number-lines:
+
+        .. include:: code/4th-exercise/theme.css
+            :code: css
+            :class: copy-to-clipboard
+            :number-lines:
+
+
+.. [#] Original: `normalize.css @ GitHub <https://raw.githubusercontent.com/necolas/normalize.css/refs/heads/master/normalize.css>`__
 
 
 
