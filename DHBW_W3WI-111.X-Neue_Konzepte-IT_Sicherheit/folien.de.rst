@@ -13,8 +13,6 @@
 W3WI_111.X - Neue Konzepte (IT Sicherheit)
 ================================================
 
-----
-
 :Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
 :Kontakt: michael.eichberg@dhbw.de, Raum 149B
 :Version: 22EG/EH 

@@ -16,8 +16,6 @@ Einführung in verteilte Systeme
 
 Ein weitgefasster Überblick über verteilte Systeme.
 
-----
-
 :Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
 :Kontakt: michael.eichberg@dhbw.de, Raum 149B
 :Version: 1.0.1

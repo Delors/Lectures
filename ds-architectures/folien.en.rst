@@ -16,8 +16,6 @@ Architectures of Distributed Applications
 
 A first overview.
 
-----
-
 :Lecturer: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
 :Contact: michael.eichberg@dhbw.de, Raum 149B
 :Version: 1.0

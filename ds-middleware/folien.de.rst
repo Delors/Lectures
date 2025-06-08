@@ -15,8 +15,6 @@
 Middleware
 ===============================================================================
 
-----
-
 .. container:: 
 
   :Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__

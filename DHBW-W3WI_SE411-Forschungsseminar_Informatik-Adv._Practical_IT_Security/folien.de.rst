@@ -13,8 +13,6 @@
 Forschungsseminar Informatik / Advanced Practical IT Security
 =================================================================
 
-----
-
 :Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
 :Kontakt: michael.eichberg@dhbw-mannheim.de, Raum 149B
 :Version: 22SEA (2. Semester)

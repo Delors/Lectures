@@ -15,8 +15,6 @@ Projektkonzeption und -realisierung
 
 *W3WI_106.2 und W3WI_107*
 
-----
-
 :Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
 :Kontakt: michael.eichberg@dhbw-mannheim.de, Raum 149B
 :Version: WWI-22SEA

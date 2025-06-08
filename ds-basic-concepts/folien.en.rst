@@ -15,8 +15,6 @@
 Basic Concepts of Distributed Systems
 ===============================================================================
 
-----
-
 :Lecturer: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
 :Contact: michael.eichberg@dhbw.de
 :Version: 1.0.1

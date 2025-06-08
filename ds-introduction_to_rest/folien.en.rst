@@ -19,8 +19,6 @@ RESTful Web Services
 
 A brief introduction.
 
-----
-
 :Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
 :Kontakt: michael.eichberg@dhbw.de
 :Version: 1.0 

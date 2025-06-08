@@ -13,8 +13,6 @@
 W3WI_AM302 - Fortgeschrittene Systementwicklung
 ================================================
 
-----
-
 :Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
 :Kontakt: michael.eichberg@dhbw.de, Raum 149B
 :Version: 23AMA (Rev. 1)

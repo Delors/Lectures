@@ -14,8 +14,6 @@
 W4DSKI 104 - Fortgeschrittene Informatik
 ================================================
 
-----
-
 :Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
 :Kontakt: michael.eichberg@dhbw.de, Raum 149B
 :Version: MA-WDSKI24A

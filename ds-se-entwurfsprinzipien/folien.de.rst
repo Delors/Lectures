@@ -15,8 +15,6 @@ Entwurfsprinzipien für Moderne Verteilte Anwendungen
 
 (:eng:`Design Principles and Design Patterns for Distributed Applications`)
 
-----
-
 :Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
 :Kontakt: michael.eichberg@dhbw.de
 :Version: 1.0.1

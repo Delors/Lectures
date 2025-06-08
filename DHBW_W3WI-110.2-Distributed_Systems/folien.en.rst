@@ -15,8 +15,6 @@
 W3WI_110.2 - Distributed Systems
 ================================================
 
-----
-
 :Lecturer: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
 :Contact: michael.eichberg@dhbw.de, Raum 149B
 :Version: 2.0 (WWI23SCB)

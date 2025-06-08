@@ -17,8 +17,6 @@ Domain Modeling sowie Java Records und Enums
 
 Eine kurze Einführung, um das Entwickeln von kleinen Projekten zu erleichtern.
 
-----
-
 :Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
 :Kontakt: michael.eichberg@dhbw.de, Raum 149B
 :Version: 1.0.1

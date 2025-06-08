@@ -15,8 +15,6 @@ W3WI_SE305.1 - Ausgewählte Aspekte des Software Engineering III
 
 **IT Sicherheit - „Teil 2“**
 
-----
-
 :Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
 :Kontakt: michael.eichberg@dhbw.de, Raum 149B
 :Version: 22SEA
