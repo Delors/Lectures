@@ -16,11 +16,9 @@ Introduction to Distributed Systems
 
 A broad overview of distributed systems!
 
-----
-
 :Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
 :Kontakt: michael.eichberg@dhbw.de, Raum 149B
-:Version: 1.0
+:Version: 1.0.1
 
 .. supplemental::
 
@@ -902,7 +900,7 @@ Exercise
         The attacks are highly parallelizable and effectively depend on the number of CUs. The graphics cards are able to accelerate the attacks effectively.
 
     .. solution:: Computation of the Speedup
-        :pwd: so schnell wird's
+        :pwd: how fast, does it go?
 
         This is a problem with structurally repeating data sets, i.e. Gustafson's law is applicable. The serial part is 10 %, i.e. the degree of parallelization is 90 %. The speedup is then:
 
@@ -1066,10 +1064,10 @@ Exercise
     (d) For how many minutes per year (with 365 days) is it *not possible to read the data set*, when we have an average availability of 99.999%?
 
     .. solution:: Solution
-        :pwd: Laufend?
+        :pwd: still running?
 
         (a) The availability of a single computer is :math-i:`p = 36h/48h = 0,75` 
-        (b) The average availability (with :math-i:`p = 0.75`) of the data is :math:`1 - (1 - p)^3 = 0,984375` when we have three computers; :math-i:`(1-p)` ist die Ausfallwahrscheinlichkeit.
+        (b) The average availability (with :math-i:`p = 0.75`) of the data is :math:`1 - (1 - p)^3 = 0,984375` when we have three computers; :math-i:`(1-p)` is the probability that the system fails.
         (c) (Recall: :math:`log_a(u^v) = v \cdot log_a(u)`).
             
             The probability that they all fail at the same time must be less than or equal to the permitted unavailability:  :math:`(1-p)^x \leq (1-0,99999) \Leftrightarrow x \cdot log(1-p) \geq log(1-0,99999)`
