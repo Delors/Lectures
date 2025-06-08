@@ -17,7 +17,7 @@ Cascading Style Sheets (CSS)
 
 :Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
 :Kontakt: michael.eichberg@dhbw.de, Raum 149B
-:Version: 1.4
+:Version: 1.4.1
 
 .. supplemental::
 
@@ -1851,12 +1851,12 @@ Grundlagen
       - Relation: ``fr`` (Anteil vom Leerraum)
     - Viewport bezogene Längen: ``vw`` (viewport width), ``vh`` (viewport height), ``dvh`` (dynamic viewport height), ``dvw`` (dynamic viewport width), ``svh`` (small viewport height), ``svw`` (small viewport width)
     - Container bezogene Größen: cqw (container query width)
-    
+
     .. class:: incremental
 
     .. rubric:: Benutzerdefinierte Eigenschaften (*CSS Variables*)
 
-    .. example:: 
+    .. example::
         :class: incremental
 
         1. Deklaration
@@ -2159,7 +2159,7 @@ Floating
 
 Elemente können mit  :css:`float`  aus dem normalen Fluss genommen werden:
 
-.. grid:: 
+.. grid::
 
     .. cell:: width-50
 
@@ -2330,7 +2330,7 @@ Positioning -  :css:`fixed`  und  :css:`sticky`
             <div class="fixed">😅</div>
             <p>Währung der Welt</p>
             <h1>Euro</h1>
-            <p>The euro (symbol: €; currency 
+            <p>The euro (symbol: €; currency
                code: EUR) is the official ...</p>
             <style>
                 .fixed { position: fixed;
@@ -2371,7 +2371,7 @@ Positioning -  :css:`fixed`  und  :css:`sticky`
                             right: 0;
                         }
                         h1 {
-                            position: sticky; 
+                            position: sticky;
                             top: 0;
                         }
                     </body>' >
@@ -2740,7 +2740,7 @@ Bauen Sie Unterstützung für den Dark und Light Mode nach.\ [#]_
 
         /* The following CSS does not define any colors/color scheme. */
         :root {
-            --font-siz
+            --font-size: 18px;
             --font-family: sans-serif;
         }
 
@@ -3051,9 +3051,9 @@ CSS-Layers
 CSS-Layers
 ------------------------------------------------
 
-.. class:: incremental-list 
+.. class:: incremental-list
 
-- CSS Layers sind insbesondere in komplexen Projekten hilfreich, um die Kaskadierung von CSS-Regeln zu steuern und sicherzustellen, dass bestimmte Regeln Vorrang haben. 
+- CSS Layers sind insbesondere in komplexen Projekten hilfreich, um die Kaskadierung von CSS-Regeln zu steuern und sicherzustellen, dass bestimmte Regeln Vorrang haben.
 
 - :css:`@layer` ermöglicht das deklarative Festlegen einer expliziten Kaskaden-Reihenfolge:
 
@@ -3076,7 +3076,7 @@ CSS-Layers
 - Importiert/deklariert eine CSS Datei, die bereits einer Schicht zugeordnet ist, weitere Schicthen so bilden diese automatisch eine Hierarchie.
 
 .. supplemental::
-  
+
   Insbesondere in großen Projekten sind CSS Layers wichtige, um ein Kampf um die höchste Spezifität zu vermeiden. Weiterhin erlaubt es die problemlose Nutzung von CSS-Frameworks, die in eigenen Schichten organisiert sind. Ggf. kann auch ein Import in eine Schicht erfolgen, um die Kaskadierung zu steuern.
 
 
@@ -3084,7 +3084,7 @@ CSS-Layers
 CSS-Layers - Beispiel
 ------------------------------------------------
 
-.. grid:: 
+.. grid::
 
     .. cell:: width-40
 
@@ -3179,7 +3179,7 @@ Verschachtelte CSS-Layers
 
     Nehmen Sie die Lösung von der vorherigen Übung und modularisieren Sie diese mit Hilfe von CSS-Layers. Nutzen Sie zum Normalisieren von CSS die Datei `normalize.css <code/4th-exercise/normalize.css>`__\ [#]_.
 
-    Legen Sie danach zwei weitere Dateien an, die die grundlegenden CSS Eigenschaften (Position etc.) enthalten und eine Datei, die sich nur um das Theming kümmert. 
+    Legen Sie danach zwei weitere Dateien an, die die grundlegenden CSS Eigenschaften (Position etc.) enthalten und eine Datei, die sich nur um das Theming kümmert.
 
     .. solution::
         :pwd: web-css.
