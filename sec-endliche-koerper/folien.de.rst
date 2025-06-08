@@ -18,16 +18,24 @@ Endliche Körper
 :Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
 :Kontakt: michael.eichberg@dhbw.de
 :Basierend auf: *Cryptography and Network Security - Principles and Practice, 8th Edition, William Stallings*
-:Version: 1.2.1
+:Version: 1.2.2
 
 .. supplemental::
 
-  :Folien:
+    :Folien:
       [HTML] |html-source|
 
       [PDF] |pdf-source|
-  :Fehler melden:
-      https://github.com/Delors/delors.github.io/issues
+
+    :Kontrollaufgaben:
+
+        .. source:: kontrollaufgaben.de.rst
+            :path: relative
+            :prefix: https://delors.github.io/
+            :suffix: .html
+
+    :Fehler melden:
+        https://github.com/Delors/delors.github.io/issues
 
 
 
@@ -800,7 +808,7 @@ Um den endlichen Körper :math:`GF(2^3)` zu konstruieren, müssen wir ein irredu
     Jedes Polynom vom Grad :math-r:`3`; insbesondere auch das Polynom :math:`x^3`, könnte durch unser Polynom geteilt werden.
 
 
-Polynomarithmetik im :math:`GF(2^3)` Modulo :math:`(x^3 + x + 1)`
+Polynomarithmetik im :math-i:`GF(2³)` Modulo :math-i:`(x³ + x + 1)`
 ---------------------------------------------------------------------
 
 .. deck::
@@ -815,15 +823,15 @@ Polynomarithmetik im :math:`GF(2^3)` Modulo :math:`(x^3 + x + 1)`
             :widths: 4 10 10 10 10 10 10 10 10 10
 
             " ", " ", *000*, *001*, *010*, *011*, *100*, *101*, *110*, *111*
-            " ", ":math:`+`", :math:`0`, :math:`1`, :math:`x`, :math:`x+1`, :math:`x^2`, :math:`x^2+1`, :math:`x^2+x`, :math:`x^2+x+1`
-            *000*,  :math:`0`, :red:`0`, :math:`1`, :math:`x`, :math:`x+1`, :math:`x^2`, :math:`x^2 + 1`, :math:`x^2 + x`, :math:`x^2 + x + 1`
-            *001*,  :math:`1`, :math:`1`, :red:`0`, :math:`x+1`, :math:`x`, :math:`x^2 + 1`, :math:`x^2`, :math:`x^2 + x + 1`, :math:`x^2 + x`
-            *010*,  :math:`x`, :math:`x`, :math:`x+1`, :red:`0`, :math:`1`, :math:`x^2 + x`, :math:`x^2 + x + 1`, :math:`x^2`, :math:`x^2 + 1`
-            *011*,  :math:`x+1`, :math:`x+1`, :math:`x`, :math:`1`, :red:`0`, :math:`x^2 + x + 1`, :math:`x^2 + x`, :math:`x^2 + 1`, :math:`x^2`
-            *100*,  :math:`x^2`, :math:`x^2`, :math:`x^2 + 1`, :math:`x^2 + x`, :math:`x^2 + x + 1`, :red:`0`, :math:`1`, :math:`x`, :math:`x+1`
-            *101*,  :math:`x^2+1`, :math:`x^2 + 1`, :math:`x^2`, :math:`x^2 + x + 1`, :math:`x^2 + x`, 1, :red:`0`, :math:`x+1`, :math:`x`
-            *110*,  :math:`x^2+x`, :math:`x^2 + x`, :math:`x^2 + x + 1`, :math:`x^2`, :math:`x^2 + 1`, x, :math:`x+1`, :red:`0`, :math:`1`
-            *111*,  :math:`x^2+x+1`, :math:`x^2 + x + 1`, :math:`x^2 + x`, :math:`x^2 + 1`, :math:`x^2`, :math:`x+1`, :math:`x`, :math:`1`, :red:`0`
+            " ", ":math-i:`+`", :math-i:`0`, :math-i:`1`, :math-i:`x`, :math-i:`x+1`, :math-i:`x²`, :math-i:`x²+1`, :math-i:`x²+x`, :math-i:`x²+x+1`
+            *000*,  :math-i:`0`, :red:`0`, :math-i:`1`, :math-i:`x`, :math-i:`x+1`, :math-i:`x²`, :math-i:`x²+1`, :math-i:`x²+x`, :math-i:`x²+x+1`
+            *001*,  :math-i:`1`, :math-i:`1`, :red:`0`, :math-i:`x+1`, :math-i:`x`, :math-i:`x²+1`, :math-i:`x²`, :math-i:`x²+x+1`, :math-i:`x²+x`
+            *010*,  :math-i:`x`, :math-i:`x`, :math-i:`x+1`, :red:`0`, :math-i:`1`, :math-i:`x²+x`, :math-i:`x²+x+1`, :math-i:`x²`, :math-i:`x²+1`
+            *011*,  :math-i:`x+1`, :math-i:`x+1`, :math-i:`x`, :math-i:`1`, :red:`0`, :math-i:`x²+x+1`, :math-i:`x²+x`, :math-i:`x²+1`, :math-i:`x²`
+            *100*,  :math-i:`x²`, :math-i:`x²`, :math-i:`x²+1`, :math-i:`x²+x`, :math-i:`x²+x+1`, :red:`0`, :math-i:`1`, :math-i:`x`, :math-i:`x+1`
+            *101*,  :math-i:`x²+1`, :math-i:`x²+1`, :math-i:`x²`, :math-i:`x²+x+1`, :math-i:`x²+x`, 1, :red:`0`, :math-i:`x+1`, :math-i:`x`
+            *110*,  :math-i:`x²+x`, :math-i:`x²+x`, :math-i:`x²+x+1`, :math-i:`x²`, :math-i:`x²+1`, :math-i:`x`, :math-i:`x+1`, :red:`0`, :math-i:`1`
+            *111*,  :math-i:`x²+x+1`, :math-i:`x²+x+1`, :math-i:`x²+x`, :math-i:`x²+1`, :math-i:`x²`, :math-i:`x+1`, :math-i:`x`, :math-i:`1`, :red:`0`
 
     .. card::
 
@@ -835,15 +843,15 @@ Polynomarithmetik im :math:`GF(2^3)` Modulo :math:`(x^3 + x + 1)`
             :widths: 4 10 10 10 10 10 10 10 10 10
 
             " ", " ", *000*, *001*, *010*, *011*, *100*, *101*, *110*, *111*
-            " ", ":math:`\times`", :math:`0`, :math:`1`, :math:`x`, :math:`x+1`, :math:`x^2`, :math:`x^2+1`, :math:`x^2+x`, :math:`x^2+x+1`
-            *000*,  :math:`0`, 0, 0, 0, 0, 0, 0, 0, 0
-            *001*,  :math:`1`, 0, :red:`1`, :math:`x`, :math:`x+1`, :math:`x^2`, :math:`x^2 + 1`, :math:`x^2 + x`, :math:`x^2 + x + 1`
-            *010*,  :math:`x`, 0, :math:`x`, :math:`x^2`, :math:`x^2 + x`, :math:`x+1`, :red:`1`, :math:`x^2 + x + 1`, :math:`x^2 + 1`
-            *011*,  :math:`x+1`, 0, :math:`x+1`, :math:`x^2 + x`, :math:`x^2 + 1`, :math:`x^2 + x + 1`, :math:`x^2`, :red:`1`, :math:`x`
-            *100*,  :math:`x^2`, 0, :math:`x^2`, :math:`x+1`, :math:`x^2 + x + 1`, :math:`x^2 + x`, :math:`x`, :math:`x^2 + 1`, :red:`1`
-            *101*,  :math:`x^2+1`, 0, :math:`x^2 + 1`, :red:`1`, :math:`x^2`, :math:`x`, :math:`x^2 + x + 1`, :math:`x+1`, :math:`x^2 + x`
-            *110*,  :math:`x^2+x`, 0, :math:`x^2 + x`, :math:`x^2 + x + 1`, :red:`1`, :math:`x^2 + 1`, :math:`x+1`, :math:`x`, :math:`x^2`
-            *111*,  :math:`x^2+x+1`, 0, :math:`x^2 + x + 1`, :math:`x^2 + 1`, :math:`x`, :red:`1`, :math:`x^2 + x`, :math:`x^2`, :math:`x+1`
+            " ", ":math:`\times`", :math-i:`0`, :math-i:`1`, :math-i:`x`, :math-i:`x+1`, :math-i:`x²`, :math-i:`x²+1`, :math-i:`x²+x`, :math-i:`x²+x+1`
+            *000*,  :math-i:`0`, 0, 0, 0, 0, 0, 0, 0, 0
+            *001*,  :math-i:`1`, 0, :red:`1`, :math-i:`x`, :math-i:`x+1`, :math-i:`x²`, :math-i:`x²+1`, :math-i:`x²+x`, :math-i:`x²+x+1`
+            *010*,  :math-i:`x`, 0, :math-i:`x`, :math-i:`x²`, :math-i:`x²+x`, :math-i:`x+1`, :red:`1`, :math-i:`x²+x+1`, :math-i:`x²+1`
+            *011*,  :math-i:`x+1`, 0, :math-i:`x+1`, :math-i:`x²+x`, :math-i:`x²+1`, :math-i:`x²+x+1`, :math-i:`x²`, :red:`1`, :math-i:`x`
+            *100*,  :math-i:`x²`, 0, :math-i:`x²`, :math-i:`x+1`, :math-i:`x²+x+1`, :math-i:`x²+x`, :math-i:`x`, :math-i:`x²+1`, :red:`1`
+            *101*,  :math-i:`x²+1`, 0, :math-i:`x²+1`, :red:`1`, :math-i:`x²`, :math-i:`x`, :math-i:`x²+x+1`, :math-i:`x+1`, :math-i:`x²+x`
+            *110*,  :math-i:`x²+x`, 0, :math-i:`x²+x`, :math-i:`x²+x+1`, :red:`1`, :math-i:`x²+1`, :math-i:`x+1`, :math-i:`x`, :math-i:`x²`
+            *111*,  :math-i:`x²+x+1`, 0, :math-i:`x²+x+1`, :math-i:`x²+1`, :math-i:`x`, :red:`1`, :math-i:`x²+x`, :math-i:`x²`, :math-i:`x+1`
 
 .. replacements, e.g., 5 == x^2+1
 
