@@ -1,10 +1,10 @@
 .. meta::
     :version: renaissance
+    :id: lecture-security-aes
     :author: Michael Eichberg
     :keywords: AES
     :description lang=en: Advanced Encryption Standard (AES)
     :description lang=de: Advanced Encryption Standard (AES)
-    :id: lecture-security-aes
     :first-slide: last-viewed
     :master-password: WirklichSchwierig!
 
@@ -127,7 +127,7 @@ AES Parameter
 
 .. csv-table::
     :width: 100%
-    :class: highlight-row-on-hover table-header-align-left incremental-table-rows
+    :class: booktabs highlight-row-on-hover table-header-align-left incremental-table-rows
     :stub-columns: 1
 
     Schlüsselgröße (words/bytes/bits), 4/16/128, 6/24/192, 8/32/256
