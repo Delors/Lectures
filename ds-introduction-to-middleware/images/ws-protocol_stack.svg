@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xl="http://www.w3.org/1999/xlink" xmlns:dc="http://purl.org/dc/elements/1.1/" version="1.1" viewBox="137 88 519 301" width="519" height="301">
+  <style>
+    @import url('/LectureDoc2/ext/fonts/ld-fonts.css'); 
+  </style>
+  <defs>
+    <filter id="Shadow" filterUnits="userSpaceOnUse" x="85.1" y="57.9">
+      <feGaussianBlur in="SourceAlpha" result="blur" stdDeviation="1.308"/>
+      <feOffset in="blur" result="offset" dx="0" dy="2"/>
+      <feFlood flood-color="black" flood-opacity=".5" result="flood"/>
+      <feComposite in="flood" in2="offset" operator="in"/>
+    </filter>
+    <filter id="Shadow_2" filterUnits="userSpaceOnUse" x="85.1" y="57.9">
+      <feGaussianBlur in="SourceAlpha" result="blur" stdDeviation="1.308"/>
+      <feOffset in="blur" result="offset" dx="0" dy="2"/>
+      <feFlood flood-color="black" flood-opacity=".5" result="flood"/>
+      <feComposite in="flood" in2="offset" operator="in" result="color"/>
+      <feMerge>
+        <feMergeNode in="color"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <marker orient="auto" overflow="visible" markerUnits="strokeWidth" id="FilledArrow_Marker" stroke-linejoin="miter" stroke-miterlimit="10" viewBox="-1 -4 10 8" markerWidth="10" markerHeight="8" color="black">
+      <g>
+        <path d="M 8 0 L 0 -3 L 0 3 Z" fill="currentColor" stroke="currentColor" stroke-width="1"/>
+      </g>
+    </marker>
+  </defs>
+  <metadata> Produced by OmniGraffle 8.0\n2025-03-05 14:16:34 +0000</metadata>
+  <g id="Canvas_1" fill-opacity="1" stroke-opacity="1" stroke="none" stroke-dasharray="none" fill="none">
+    <title>Canvas 1</title>
+    <g id="Canvas_1_Layer_1">
+      <title>Layer 1</title>
+      <g id="Graphic_1177_shadow" filter="url(#Shadow)">
+        <rect x="141.732" y="255.118" width="340.158" height="127.55916" fill="white"/>
+        <path d="M 141.732 255.118 L 481.89 255.118 L 481.89 382.67716 L 141.732 382.67716 Z" stroke="#005494" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="8.0,8.0" stroke-width="2"/>
+      </g>
+      <g id="Graphic_1176_shadow" filter="url(#Shadow)">
+        <rect x="141.732" y="113.38583" width="340.158" height="127.55877" fill="white"/>
+        <path d="M 141.732 113.38583 L 481.89 113.38583 L 481.89 240.9446 L 141.732 240.9446 Z" stroke="#005494" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="8.0,8.0" stroke-width="2"/>
+      </g>
+      <g id="Graphic_1177">
+        <rect x="141.732" y="255.118" width="340.158" height="127.55916" fill="white"/>
+        <path d="M 141.732 255.118 L 481.89 255.118 L 481.89 382.67716 L 141.732 382.67716 Z" stroke="#005494" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="8.0,8.0" stroke-width="2"/>
+        <text transform="translate(146.732 358.67716)" fill="black">
+          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="103.227" y="15" xml:space="preserve">Basic Protocol Stack</tspan>
+        </text>
+      </g>
+      <g id="Graphic_1176">
+        <rect x="141.732" y="113.38583" width="340.158" height="127.55877" fill="white"/>
+        <path d="M 141.732 113.38583 L 481.89 113.38583 L 481.89 240.9446 L 141.732 240.9446 Z" stroke="#005494" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="8.0,8.0" stroke-width="2"/>
+        <text transform="translate(146.732 118.38583)" fill="black">
+          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="90.074" y="15" xml:space="preserve">Extended Protocol Stack</tspan>
+        </text>
+      </g>
+      <g id="Graphic_1167" filter="url(#Shadow_2)">
+        <rect x="155.906" y="184.252" width="99.2126" height="45" fill="white"/>
+        <rect x="155.906" y="184.252" width="99.2126" height="45" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(160.906 197.252)" fill="black">
+          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="19.7423" y="15" xml:space="preserve">Security</tspan>
+        </text>
+      </g>
+      <g id="Graphic_1169" filter="url(#Shadow_2)">
+        <rect x="368.504" y="184.252" width="99.2126" height="45" fill="white"/>
+        <rect x="368.504" y="184.252" width="99.2126" height="45" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(373.504 197.252)" fill="black">
+          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="7.6953" y="15" xml:space="preserve">Tansactions</tspan>
+        </text>
+      </g>
+      <g id="Graphic_1170" filter="url(#Shadow_2)">
+        <rect x="262.205" y="184.252" width="99.2126" height="45" fill="white"/>
+        <rect x="262.205" y="184.252" width="99.2126" height="45" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(267.205 187.752)" fill="black">
+          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="20.1203" y="15" xml:space="preserve">Reliable </tspan>
+          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="10.9293" y="34" xml:space="preserve">Messaging</tspan>
+        </text>
+      </g>
+      <g id="Graphic_1172" filter="url(#Shadow_2)">
+        <rect x="155.906" y="262.291" width="311.811" height="28.3465" fill="white"/>
+        <rect x="155.906" y="262.291" width="311.811" height="28.3465" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(160.906 266.96425)" fill="black">
+          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="12.158502" y="15" xml:space="preserve">XSD, WSDL, UDDI, Policy, MetadataExchange</tspan>
+        </text>
+      </g>
+      <g id="Graphic_1173" filter="url(#Shadow_2)">
+        <rect x="155.90553" y="294.13768" width="311.811" height="28.3464" fill="white"/>
+        <rect x="155.90553" y="294.13768" width="311.811" height="28.3464" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(160.90553 298.81088)" fill="black">
+          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="78.6025" y="15" xml:space="preserve">XML, SOAP, Addressing</tspan>
+        </text>
+      </g>
+      <g id="Graphic_1174" filter="url(#Shadow_2)">
+        <rect x="155.90553" y="325.98425" width="311.811" height="28.3465" fill="white"/>
+        <rect x="155.90553" y="325.98425" width="311.811" height="28.3465" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(160.90553 330.6575)" fill="black">
+          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="90.5865" y="15" xml:space="preserve">HTTP, HTTPS, SMTP</tspan>
+        </text>
+      </g>
+      <g id="Graphic_1175" filter="url(#Shadow_2)">
+        <rect x="155.906" y="141.732" width="311.811" height="28.3465" fill="white"/>
+        <rect x="155.906" y="141.732" width="311.811" height="28.3465" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(160.906 146.40525)" fill="black">
+          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="121.9745" y="15" xml:space="preserve">BPEL4WS</tspan>
+        </text>
+      </g>
+      <g id="Graphic_1178">
+        <text transform="translate(141.73228 88.03937)" fill="black">
+          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="2.367699" y="15" xml:space="preserve">WS - Security</tspan>
+        </text>
+      </g>
+      <g id="Graphic_1179">
+        <text transform="translate(396.8504 88.03937)" fill="black">
+          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="0" y="15" xml:space="preserve">WS-Reliability</tspan>
+        </text>
+      </g>
+      <g id="Graphic_1180">
+        <text transform="translate(504.063 92.03937)" fill="black">
+          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="55422333e-20" y="15" xml:space="preserve">WS-AtomicTransaction</tspan>
+          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="7.889" y="34" xml:space="preserve">WS-BusinessActivity</tspan>
+        </text>
+      </g>
+      <g id="Line_1181">
+        <line x1="504.063" y1="111.03937" x2="445.26475" y2="176.51416" marker-end="url(#FilledArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Line_1182">
+        <line x1="427.6911" y1="107.03937" x2="345.84264" y2="177.4686" marker-end="url(#FilledArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Line_1183">
+        <line x1="186.10134" y1="107.03937" x2="199.145" y2="174.04363" marker-end="url(#FilledArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_1184" filter="url(#Shadow_2)">
+        <rect x="496.063" y="141.732" width="155.905" height="28.3465" fill="white"/>
+        <rect x="496.063" y="141.732" width="155.905" height="28.3465" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(501.063 146.40525)" fill="black">
+          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="9.700499" y="15" xml:space="preserve">Service Composition</tspan>
+        </text>
+      </g>
+      <g id="Graphic_1185" filter="url(#Shadow_2)">
+        <rect x="496.063" y="184.252" width="155.905" height="42.5197" fill="white"/>
+        <rect x="496.063" y="184.252" width="155.905" height="42.5197" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(501.063 186.51185)" fill="black">
+          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="10.4285" y="15" xml:space="preserve">Composable Service </tspan>
+          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="37.7075" y="34" xml:space="preserve">Assurances</tspan>
+        </text>
+      </g>
+      <g id="Graphic_1186" filter="url(#Shadow_2)">
+        <rect x="496.063" y="262.291" width="155.905" height="28.3465" fill="white"/>
+        <rect x="496.063" y="262.291" width="155.905" height="28.3465" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(501.063 266.96425)" fill="black">
+          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="37.3505" y="15" xml:space="preserve">Description</tspan>
+        </text>
+      </g>
+      <g id="Graphic_1187" filter="url(#Shadow_2)">
+        <rect x="496.0635" y="294.13763" width="155.905" height="28.3465" fill="white"/>
+        <rect x="496.0635" y="294.13763" width="155.905" height="28.3465" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(501.0635 298.81088)" fill="black">
+          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="39.2755" y="15" xml:space="preserve">Messaging</tspan>
+        </text>
+      </g>
+      <g id="Graphic_1188" filter="url(#Shadow_2)">
+        <rect x="496.063" y="325.98425" width="155.905" height="28.3465" fill="white"/>
+        <rect x="496.063" y="325.98425" width="155.905" height="28.3465" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(501.063 330.6575)" fill="black">
+          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="39.2195" y="15" xml:space="preserve">Transports</tspan>
+        </text>
+      </g>
+    </g>
+  </g>
+</svg>

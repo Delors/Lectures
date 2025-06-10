@@ -1,0 +1,16 @@
+folien.en.rst.html
+folien.en.rst.html.pdf
+
+images/middleware.svg
+images/rpc_conceptual.svg
+images/middleware-conceptual.svg
+images/web_services-and-message_brokers.svg
+images/ws-protocol_stack.svg
+images/soap_message.svg
+images/genealogy-of-middleware.svg
+images/zeromq/client-server.svg
+images/zeromq/pipeline.svg
+images/zeromq/pub-sub.svg
+screenshots/ws_standards_w3c.png
+screenshots/ws_standards.png
+images/message-queueing.svg

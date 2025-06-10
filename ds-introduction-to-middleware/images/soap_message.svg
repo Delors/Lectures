@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xl="http://www.w3.org/1999/xlink" xmlns:dc="http://purl.org/dc/elements/1.1/" version="1.1" viewBox="124 126 192 277" width="192" height="277">
+  <style>
+    @import url('/LectureDoc2/ext/fonts/ld-fonts.css'); 
+  </style>
+  <defs>
+    <filter id="Shadow" filterUnits="userSpaceOnUse" x="104.8" y="98.3">
+      <feGaussianBlur in="SourceAlpha" result="blur" stdDeviation="1.308"/>
+      <feOffset in="blur" result="offset" dx="0" dy="2"/>
+      <feFlood flood-color="black" flood-opacity=".5" result="flood"/>
+      <feComposite in="flood" in2="offset" operator="in"/>
+    </filter>
+  </defs>
+  <metadata> Produced by OmniGraffle 8.0\n2025-03-05 14:18:16 +0000</metadata>
+  <g id="Canvas_1" fill-opacity="1" stroke-opacity="1" stroke="none" stroke-dasharray="none" fill="none">
+    <title>Canvas 1</title>
+    <g id="Canvas_1_Layer_1">
+      <title>Layer 1</title>
+      <g id="Graphic_3_shadow" filter="url(#Shadow)">
+        <rect x="127.55905" y="127.55876" width="184.252" height="269.29163" fill="white"/>
+        <rect x="127.55905" y="127.55876" width="184.252" height="269.29163" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_5_shadow" filter="url(#Shadow)">
+        <rect x="136.772" y="159.771" width="165.827" height="109.52034" fill="white"/>
+        <rect x="136.772" y="159.771" width="165.827" height="109.52034" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_6_shadow" filter="url(#Shadow)">
+        <rect x="145.984" y="198.4252" width="147.402" height="32.2119" fill="white"/>
+        <rect x="145.984" y="198.4252" width="147.402" height="32.2119" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_7_shadow" filter="url(#Shadow)">
+        <rect x="145.984" y="230.6372" width="147.402" height="32.2119" fill="white"/>
+        <rect x="145.984" y="230.6372" width="147.402" height="32.2119" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_8_shadow" filter="url(#Shadow)">
+        <rect x="136.772" y="283.46457" width="165.827" height="104.36685" fill="white"/>
+        <rect x="136.772" y="283.46457" width="165.827" height="104.36685" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_9_shadow" filter="url(#Shadow)">
+        <rect x="145.984" y="316.96527" width="147.402" height="32.2119" fill="white"/>
+        <rect x="145.984" y="316.96527" width="147.402" height="32.2119" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_10_shadow" filter="url(#Shadow)">
+        <rect x="145.984" y="349.17827" width="147.402" height="32.2119" fill="white"/>
+        <rect x="145.984" y="349.17827" width="147.402" height="32.2119" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_3">
+        <rect x="127.55905" y="127.55876" width="184.252" height="269.29163" fill="white"/>
+        <rect x="127.55905" y="127.55876" width="184.252" height="269.29163" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(132.55905 132.55876)" fill="black">
+          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="40.233" y="15" xml:space="preserve">SOAP Envelope</tspan>
+        </text>
+      </g>
+      <g id="Graphic_5">
+        <rect x="136.772" y="159.771" width="165.827" height="109.52034" fill="white"/>
+        <rect x="136.772" y="159.771" width="165.827" height="109.52034" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(141.772 164.771)" fill="black">
+          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="36.5015" y="15" xml:space="preserve">SOAP Header</tspan>
+        </text>
+      </g>
+      <g id="Graphic_6">
+        <rect x="145.984" y="198.4252" width="147.402" height="32.2119" fill="white"/>
+        <rect x="145.984" y="198.4252" width="147.402" height="32.2119" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(150.984 203.4252)" fill="black">
+          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="27.414996" y="15" xml:space="preserve">Header Block</tspan>
+        </text>
+      </g>
+      <g id="Graphic_7">
+        <rect x="145.984" y="230.6372" width="147.402" height="32.2119" fill="white"/>
+        <rect x="145.984" y="230.6372" width="147.402" height="32.2119" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(150.984 235.6372)" fill="black">
+          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="27.414996" y="15" xml:space="preserve">Header Block</tspan>
+        </text>
+      </g>
+      <g id="Graphic_8">
+        <rect x="136.772" y="283.46457" width="165.827" height="104.36685" fill="white"/>
+        <rect x="136.772" y="283.46457" width="165.827" height="104.36685" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(141.772 288.46457)" fill="black">
+          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="43.6275" y="15" xml:space="preserve">SOAP Body</tspan>
+        </text>
+      </g>
+      <g id="Graphic_9">
+        <rect x="145.984" y="316.96527" width="147.402" height="32.2119" fill="white"/>
+        <rect x="145.984" y="316.96527" width="147.402" height="32.2119" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(150.984 321.96527)" fill="black">
+          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="34.540996" y="15" xml:space="preserve">Body Block</tspan>
+        </text>
+      </g>
+      <g id="Graphic_10">
+        <rect x="145.984" y="349.17827" width="147.402" height="32.2119" fill="white"/>
+        <rect x="145.984" y="349.17827" width="147.402" height="32.2119" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(150.984 354.17827)" fill="black">
+          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="34.540996" y="15" xml:space="preserve">Body Block</tspan>
+        </text>
+      </g>
+    </g>
+  </g>
+</svg>
