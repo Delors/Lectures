@@ -3,7 +3,8 @@ folien.de.rst.html.pdf
 
 drawings/operationsmodi/cfb_s_bits.svg
 drawings/operationsmodi/feedback_characteristics.svg
-drawings/operationsmodi/tweakable_block_cipher.svg
+drawings/operationsmodi/tweakable_block_cipher-decryption.svg
+drawings/operationsmodi/tweakable_block_cipher-encryption.svg
 drawings/operationsmodi/xts_aes.svg
 opensource-drawings/cbc_decryption.svg
 opensource-drawings/cbc_encryption.svg

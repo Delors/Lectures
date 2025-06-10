@@ -4,7 +4,7 @@
     :keywords: Blockchiffren, Operationsmodi, ECB, CBC, CFB, OFB, CTR, XTS-AES
     :description lang=en: Block Cipher Operations
     :description lang=de: Betriebsmodi bei Blockchiffren
-    :id: lecture-security-blockchiffre-operationsmodi
+    :id: vorlesung-it-security-blockchiffre-operationsmodi
     :first-slide: last-viewed
     :master-password: WirklichSchwierig!
 
@@ -17,7 +17,7 @@ Betriebsmodi bei Blockchiffren
 
 :Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
 :Kontakt: michael.eichberg@dhbw.de
-:Version: 1.1
+:Version: 1.2
 :Basierend auf: *Cryptography and Network Security - Principles and Practice, 8th Edition, William Stallings*
 
 .. supplemental::
@@ -50,8 +50,9 @@ Betriebsmodi - Übersicht
 .. story::
 
     .. csv-table::
-        :class: highlight-row-on-hover incremental-table-rows
+        :class: highlight-row-on-hover incremental-table-rows sticky-header
         :width: 100%
+        :widths: 20 40 40
         :header: Modus, Beschreibung, Typische Anwendung
 
         **Electronic Codebook (ECB)**, Jeder Block von Klartextbits wird unabhängig voneinander mit demselben Schlüssel verschlüsselt., "
@@ -61,7 +62,7 @@ Betriebsmodi - Übersicht
         - Universelle blockorientierte Übertragung
         - Authentifizierung
         "
-        **Cipher Feedback (CFB)**, "Die Eingabe wird Bit für Bit verarbeitet.
+        **Cipher Feedback (CFB)**, "Die Eingabe wird *Bit für Bit* verarbeitet.
         Der vorhergehende Chiffretext wird als Eingabe für den Verschlüsselungsalgorithmus verwendet, um eine pseudozufällige Ausgabe zu erzeugen, die mit dem Klartext XOR-verknüpft wird, um die nächste Einheit des Chiffretextes zu erzeugen.", "
         - Allgemeine stromorientierte Übertragung
         - Authentifizierung
@@ -76,7 +77,7 @@ Betriebsmodi - Übersicht
 
 
 
-.. class:: new-subsection transition-fade
+.. class:: new-section transition-fade
 
 Grundlegende Blockchiffren
 --------------------------------
@@ -144,7 +145,7 @@ Cipher Block Chaining\ [#]_
 
 
 
-.. class:: new-subsection transition-fade
+.. class:: new-section transition-fade
 
 Blockchiffren, die als Stromchiffren verwendet werden können.
 ---------------------------------------------------------------
@@ -155,8 +156,8 @@ Blockchiffren, die als Stromchiffren verwendet werden können.
 Konvertierung von Blockchiffren in Stromchiffre
 ------------------------------------------------
 
-.. admonition:: Hinweis
-    :class: note smaller
+.. hint::
+    :class: float-right width-40 incremental
 
     Es gibt drei Modi, die es ermöglichen, eine Blockchiffre in eine zeichenorientierte Stromchiffre umzuwandeln:
 
@@ -251,7 +252,7 @@ Rückkopplungseigenschaften\ [#]_  der Betriebsmodi
 
 
 
-.. class:: new-subsection transition-fade
+.. class:: new-section transition-fade
 
 Spezielle Betriebsmodi
 --------------------------------
@@ -300,8 +301,17 @@ Modus ist auch ein IEEE-Standard, IEEE Std 1619-2007
 *Tweakable* Blockchiffren - grundlegende Struktur
 -----------------------------------------------------
 
-.. image:: drawings/operationsmodi/tweakable_block_cipher.svg
-    :align: center
+.. deck::
+
+    .. card::
+
+        .. image:: drawings/operationsmodi/tweakable_block_cipher-encryption.svg
+            :align: center
+
+    .. card:: overlay
+
+        .. image:: drawings/operationsmodi/tweakable_block_cipher-decryption.svg
+            :align: center
 
 
 
@@ -351,31 +361,27 @@ XTS-AES Operation auf einem Block
 Übung
 ---------------------
 
-- \
+.. exercise:: Der Initialisierungsvektor (IV) bei CBC
 
-  .. exercise:: Der Initialisierungsvektor (IV) bei CBC
+    Warum ist es bei CBC wichtig, den Initialisierungsvektor (IV) zu schützen?
 
-     Warum ist es bei CBC wichtig, den Initialisierungsvektor (IV) zu schützen?
-
-     .. solution::
+    .. solution::
         :pwd: IV und CBC
 
         Wenn der IV im Klartext gesendet wird, können wir in bestimmten Szenarien einige Bits des Klartextes (des ersten Blocks) im Rahmen einer MITM Attacke umdrehen, wenn wir den IV ändern (`Bit Flipping Attack <https://en.wikipedia.org/wiki/Bit-flipping_attack>`__). D. h. wir fangen die Nachricht ab, ändern den IV und senden die Nachricht weiter. Wenn der Empfänger die Nachricht entschlüsselt, dann ist der erste Block des Klartextes gezielt verändert. Wenn man Kenntnisse über den Aufbau/Inhalt des ersten Blocks hat, dann kann dies dazu führen, dass man die Daten gezielt verändert.
 
 
-- \
+.. exercise:: Padding
 
-  .. exercise:: Padding
+    In welchen Betriebsarten ist eine Auffüllung (:eng:`Padding`) notwendig?
 
-     In welchen Betriebsarten ist eine Auffüllung (:eng:`Padding`) notwendig?
-
-     .. solution::
+    .. solution::
+        :pwd: ECBC
 
         ECB und CBC (die Eingabe für die Verschlüsselung ist ein vollständiger Klartextblock).
 
-- \
 
-  .. exercise:: Auswirkungen eines Bitflips
+.. exercise:: Auswirkungen eines Bitflips
 
      Was geschieht im Falle eines Übertragungsfehlers (einzelner Bitflip im Chiffretext) bei ECB, CBC, CFB, OFB, CTR?
 
@@ -387,16 +393,15 @@ XTS-AES Operation auf einem Block
         :CFB: Das umgedrehte Bit beeinflusst das entsprechende Klartextbit und alle nachfolgenden Bits mit einer Wahrscheinlichkeit von ca. 50%, solange das umgedrehte Bit als Eingabe für die Verschlüsselung verwendet wird.
         :OFB, CTR: Im Klartext wird ein Bit umgedreht.
 
-- \
 
-  .. exercise:: Nonce bei OFB
+.. exercise:: Nonce bei OFB
 
      Warum muss der IV bei OFB eine Nonce sein?
 
      .. solution::
         :pwd: nOnce
 
-        Die O_i hängen nur vom Schlüssel und dem Initialisierungsvektor ab. Wenn der IV mit demselben Schlüssel wiederverwendet wird und wir zufällig einen bestimmten Klartext kennen, können wir möglicherweise einen entsprechenden Chiffretext in einer anderen Nachricht entschlüsseln.
+        Die Werte, die zum Verschlüsseln der Plaintexte verwendete werden, hängen nur vom Schlüssel und dem Initialisierungsvektor ab. Wenn der IV/die Nonce mit demselben Schlüssel wiederverwendet wird und wir zufällig einen bestimmten Klartext kennen, können wir möglicherweise einen entsprechenden Chiffretext in einer anderen Nachricht entschlüsseln.
 
 
 .. supplemental::
@@ -410,9 +415,30 @@ XTS-AES Operation auf einem Block
 Übung
 ---------------------
 
-- \
 
-  .. exercise:: ECB?
+.. exercise:: CTR Mode - Anforderungen and den IV?
+
+    Wenn beim Counter Mode garantiert ist, dass der Schlüssel niemals wiederverwendet wird (zum Beispiel, weil er ein Session Key ist), kann dann für die Nonce *in diesem speziellen Fall* auch eine Konstante verwendet werden?
+
+    .. solution::
+        :pwd: Ja-SoIst$es#
+
+        Ja - das ist möglich; aber nicht empfehlenswert, da dies zusätzliche Sicherheit bringt, wenn doch mal ein Schlüssel wiederverwendet werden sollte.
+
+        **Generell gilt, dass eine konstante Nonce auf keinen Fall zu verwenden ist, da dann zukünftige Nachrichten mit der selben Bitreihenfolge verschlüsselt werden würden und dies würde eine Reihe von Attacken ermöglichen!**
+
+        Beispielweise könnte der Angreifer folgende Berechnung durchführen:
+
+        :math-i:`P2 = (C1 ⊕ C2) ⊕ P1`
+
+        und somit den anderen Plaintext berechnen. Dies ist immer dann gefährlich, wenn man einen Plaintext haben sollte oder zumindest vorhersehen kann, wie dies zum Beispiel bei Protokollen der Fall ist!
+
+        Sollte der Angreifer in der Lage sein eine Choosen-Plaintext Attacke durchzuführen, dann kann er ggf. eine Nachricht so erstellen, dass der Schlüsselstrom abgeleitet werden kann. Dies würde dann die Entschlüsselung aller Nachrichten erlauben, die das selbe Paar bestehend aus Schlüssel und Nonce verwenden habent.
+
+
+
+
+.. exercise:: ECB identifizieren
 
      Sie möchten feststellen, ob ein Programm zur Verschlüsselung von Dateien den ECB-Modus verwendet. Was müssen Sie tun?
 
@@ -421,9 +447,8 @@ XTS-AES Operation auf einem Block
 
         Verwenden Sie ein Dokument, das aus mehreren Blöcken besteht, wobei jeder Block die Größe der zugrunde liegenden Chiffre hat und jeder Block den gleichen Inhalt hat. Bei Verwendung des ECB-Modus werden alle Blöcke auf die gleiche Weise verschlüsselt.
 
-- \
 
-  .. exercise:: XTS-AES
+.. exercise:: XTS-AES
 
     Wie viele Blöcke hat eine Dateneinheit, wenn ein Festplattensektor 4 KiB groß ist?
 
@@ -510,7 +535,10 @@ XTS-AES Operation auf einem Block
                         30, ?, 11110
                         31, "_", 11111
 
-            Verschlüsseln Sie nun einige Nachrichten mit dieser Chiffre. Welchen Effekt hat die Anwendung des OFB-Modus auf die Nachrichten?
+            - Verschlüsseln Sie nun die Nachricht "hello" (k = 5 und IV = !) mit dieser Chiffre.
+            - Entschlüsseln Sie nun die Nachricht "OCEBL_RLI1MELOA". Der IV ist A und der Schlüssel ist 3.
+
+            Welchen Effekt hat die Anwendung des OFB-Modus auf die Nachrichten?
 
         .. solution::
             :pwd: Caesar_ofb
@@ -536,3 +564,60 @@ XTS-AES Operation auf einem Block
                     IV = Z, k = 3, C = T
 
                     E(IV) = 3, M = T \oplus 3 = P\qquad (10011_b \oplus 11100_b = 01111_b = P)
+
+
+            .. rubric:: Verschlüsselung von "hello" mit K=3 und IV=I
+
+            Berechnung des OFB-Keystreams (mit k=3)
+
+            Start: S₀ = IV = "!" (Idx. 29)
+            Jeder nächste Keystream-Block: Sᵢ = Eₖ(Sᵢ₋₁) = (Sᵢ₋₁ + 3) mod 32
+
+            .. csv-table::
+                :class: booktabs
+                :header: Schritt, Sᵢ (Zeichen), Sᵢ (Index), Eₖ(Sᵢ) = (Idx. + 3) mod 32, Keystream (Index), Keystream (Zeichen)
+
+                S₀, !, 29, (29 + 3) mod 32 = 0, 0, A
+                S₁, A, 0, (0 + 3) mod 32 = 3, 3, D
+                S₂, D, 3, (3 + 3) mod 32 = 6, 6, G
+                S₃, G, 6, (6 + 3) mod 32 = 9, 9, J
+                S₄, J, 9, (9 + 3) mod 32 = 12, 12, M
+
+
+            .. csv-table::
+                :class: booktabs
+                :header: Position, Klartext (Zeichen), Klartext (Index), Keystream (Index), XOR (Index), XOR (Zeichen)
+
+                1, H, 7, 0 (A), 7 ⊕ 0 = 7, H
+                2, E, 4, 3 (D), 4 ⊕ 3 = 7, H
+                3, L, 11, 6 (G), 11 ⊕ 6 = 13, N
+                4, L, 11, 9 (J), 11 ⊕ 9 = 2, C
+                5, O, 14, 12 (M), 14 ⊕ 12 = 2, C
+
+            Somit ist der Geheimtext: **HHNCC**
+
+            .. rubric:: Entschlüsselung von **OCEBL_RLI1MELOA**
+
+            .. csv-table::
+                :class: booktabs
+                :header: Position, Klartext (Index), Keystream (Index), XOR (⊕), Ciphertext (Zeichen/Index)
+
+                1, 13 (N), 3 (D), 13 = 3 ⊕ 14, O (14)
+                2, 4 (E), 6 (G), 4 = 6 ⊕ 2, C (2)
+                3, 13 (N), 9 (J), 13 = 9 ⊕ 4, E (4)
+                4, 13 (N), 12 (M), 13 = 12 ⊕ 1, B (1)
+                5, 4 (E), 15 (P), 4 = 15 ⊕ 11, L (11)
+                6, (Leerzeichen), (nicht kodiert), –, –
+                7, 13 (N), 18 (S), 13 = 18 ⊕ 31, _ (31)
+                8, 4 (E), 21 (V), 4 = 21 ⊕ 17, R (17)
+                9, 19 (T), 24 (Y), 19 = 24 ⊕ 11, L (11)
+                10, 19 (T), 27 (2), 19 = 27 ⊕ 8, I (8)
+                11, 4 (E), 30 (?), 4 = 30 ⊕ 26, 1 (26)
+                12, (Leerzeichen), (nicht kodiert), –, –
+                13, 13 (N), 1 (B), 13 = 1 ⊕ 12, M (12)
+                14, 0 (A), 4 (E), 0 = 4 ⊕ 4, E (4)
+                15, 12 (M), 7 (H), 12 = 7 ⊕ 11, L (11)
+                16, 4 (E), 10 (K), 4 = 10 ⊕ 14, O (14)
+                17, 13 (N), 13 (N), 13 = 13 ⊕ 0, A (0)
+
+            Die Entschlüsselung ist somit: **NENNE NETTE NAMEN**
