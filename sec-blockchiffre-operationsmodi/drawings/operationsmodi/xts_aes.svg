@@ -632,27 +632,25 @@
                 />
       </g>
       <g id="Graphic_226">
-        <text transform="translate(-950.8739 684.375)" fill="black">
+        <text transform="translate(-957 710)" fill="black">
           <tspan
                         font-family="Noto Sans Display"
                         font-size="14"
                         font-weight="400"
                         fill="black"
                         x="0"
-                        y="15"
                         xml:space="preserve"
                     >T</tspan>
         </text>
       </g>
       <g id="Graphic_320">
-        <text transform="translate(-618.8795 684.375)" fill="black">
+        <text transform="translate(-642 710)" fill="black">
           <tspan
                         font-family="Noto Sans Display"
                         font-size="14"
                         font-weight="400"
                         fill="black"
                         x="0"
-                        y="15"
                         xml:space="preserve"
                     >T</tspan>
         </text>
