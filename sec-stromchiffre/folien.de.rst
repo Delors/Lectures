@@ -17,7 +17,7 @@ Erzeugung von Zufallsbits und Stromchiffren
 
 :Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
 :Basierend auf: *Cryptography and Network Security - Principles and Practice, 8th Edition, William Stallings*
-:Version: 2.0.1
+:Version: 2.1
 
 .. supplemental::
 
@@ -179,7 +179,7 @@ Pseudozufallszahlengenerator (PRNG) und Pseudozufallsfunktion (PRF)
 
     .. card::
 
-        .. class:: incremental list-with-explanations
+        .. class:: incremental-list list-with-explanations
 
         - Nimmt als Eingabe einen festen Wert, den so genannten *Seed*, und erzeugt mithilfe eines deterministischen Algorithmus eine Folge von Ausgabebits.
 
@@ -198,7 +198,7 @@ Pseudozufallszahlengenerator (PRNG) und Pseudozufallsfunktion (PRF)
 PRNG-Anforderungen
 -------------------
 
-.. class:: incremental
+.. class:: incremental-list
 
 - Die grundlegende Anforderung bei der Verwendung eines PRNG oder PRF für eine kryptografische Anwendung ist, dass **ein Gegner, der den Seed nicht kennt, nicht in der Lage ist, die pseudozufällige Zeichenfolge zu bestimmen**.
 - Die Forderung nach Geheimhaltung der Ausgabe eines PRNG oder PRF führt zu spezifischen Anforderungen in den Bereichen:
@@ -214,7 +214,7 @@ Zufälligkeit
 
 - Der erzeugte Bitstrom muss zufällig erscheinen, obwohl er deterministisch ist:
 
-  .. class:: incremental
+  .. class:: incremental-list
 
   - Es gibt keinen einzigen Test, mit dem festgestellt werden kann, ob ein PRNG Zahlen erzeugt, die die Eigenschaft der Zufälligkeit aufweisen
   - Wenn der PRNG auf der Grundlage mehrerer Tests Zufälligkeit aufweist, kann davon ausgegangen werden, dass er die Anforderung der Zufälligkeit erfüllt.
@@ -264,7 +264,7 @@ Unvorhersehbarkeit
 
         Ein Strom von Pseudozufallszahlen sollte zwei Formen der Unvorhersehbarkeit aufweisen:
 
-        .. class:: incremental-list
+        .. class:: incremental-list dhbw
 
         1. **Vorwärtsgerichtete Unvorhersehbarkeit**
 
@@ -304,11 +304,11 @@ Algorithmen lassen sich in zwei Kategorien einteilen:
 
 .. class:: incremental
 
-1. Speziell entwickelte Verfahren.
+1. **Speziell entwickelte Verfahren**.
 
    Algorithmen, die speziell und ausschließlich für die Erzeugung pseudozufälliger Bitströme entwickelt wurden.
 
-2. Algorithmen, die auf bestehenden kryptographischen Algorithmen basieren.
+2. **Algorithmen, die auf bestehenden kryptographischen Algorithmen basieren**.
 
    Sie bewirken eine Zufallsverteilung der Eingabedaten.
 
@@ -364,9 +364,9 @@ Blum Blum Shub (BBS) Generator
 
 - Er wird als *kryptographisch sicherer Pseudozufallsbitgenerator (CSPRBG)* bezeichnet.
 
-  Ein CSPRBG ist definiert als ein Algorithmus, der den Next-Bit-Test besteht, wenn es keinen Polynomialzeit-Algorithmus gibt, der bei Eingabe der ersten :math:`k` Bits einer Ausgabesequenz das :math:`(k + 1)`-te Bit mit einer Wahrscheinlichkeit deutlich größer als 1/2 vorhersagen kann.
+  Ein CSPRBG ist definiert als ein Algorithmus, der den Next-Bit-Test besteht, wenn es keinen Polynomialzeit-Algorithmus gibt, der bei Eingabe der ersten :math-i:`k` Bits einer Ausgabesequenz das :math:`(k + 1)`-te Bit mit einer Wahrscheinlichkeit deutlich größer als :math-r:`1/2` vorhersagen kann.
 
-- Die Sicherheit von BBS beruht auf der Schwierigkeit der Faktorisierung von :math:`n`.
+- Die Sicherheit von BBS beruht auf der Schwierigkeit der Faktorisierung von :math-i:`n`.
 
 
 
@@ -377,7 +377,7 @@ Blum Blum Shub Block Diagram
     :alt: Blum Blum Shub Block Diagram
     :align: center
 
-:math:`n` ist das Produkt von zwei (sehr großen) Primzahlen :math:`p` und :math:`q`: :math:`n = p \times q`. Weiterhin muss gelten: :math:`p \equiv q \equiv 3 \; (mod \; 4)`.
+:math-i:`n` ist das Produkt von zwei (sehr großen) Primzahlen :math:`p` und :math:`q`: :math:`n = p \times q`. Weiterhin muss gelten: :math:`p \equiv q \equiv 3 \; (mod \; 4)`.
 
 Der Seed :math:`s` sollte eine ganze Zahl sein, die zu :math:`n` *coprime* ist (d. h. :math:`p` und :math:`q` sind keine Faktoren von :math:`s`) und nicht 1 oder 0.
 
@@ -473,12 +473,13 @@ Zwei Ansätze, die eine Blockchiffre zum Aufbau eines PNRG verwenden, haben weit
 
     Testen Sie Ihren Zufallszahlengenerator unter anderem mit den folgenden Werten:
 
-    .. code:: pseudocode
+    .. code:: java
         :number-lines:
 
         lcg(seed,a,c,m,number_of_random_values_to_generate)
         lcg(1234,8,8,4096,100)
         lcg(1234,4,8,4096,100)
+        lcg(1234,8,4,1111111111111111111l,100)
 
     .. solution::
         :pwd: Jupyter...!
@@ -486,7 +487,8 @@ Zwei Ansätze, die eine Blockchiffre zum Aufbau eines PNRG verwenden, haben weit
         Vgl. `Jupyter Notebook <https://github.com/Delors/delors.github.io/blob/main/sec-stromchiffre/code/stream_ciphers.ipynb>`__.
 
         .. code:: java
-
+            :number-lines:
+            :class: copy-to-clipboard
 
             void lcg(long s, long a, long c, long m, int valuesToGenerate) {
                 var x = (s * a + c ) % m;
@@ -497,7 +499,7 @@ Zwei Ansätze, die eine Blockchiffre zum Aufbau eines PNRG verwenden, haben weit
                 }
             }
 
-            lcg(98346444l,2323, 665458, 987655333, 10);
+            lcg(98346444l, 2323, 665458, 1111111111111111111l, 100000);
 
 
 
@@ -580,7 +582,20 @@ Quellen der Entropie
 .. class:: incremental-list
 
 - Die meisten funktionieren durch Messung unvorhersehbarer natürlicher Prozesse, wie z. B. Impulsdetektoren für ionisierende Strahlung, Gasentladungsröhren und undichte Kondensatoren.
-- Intel hat einen kommerziell erhältlichen Chip entwickelt, der das thermische Rauschen durch Verstärkung der an nicht angesteuerten Widerständen gemessenen Spannung erfasst.
+- Intel CPUs (seit Ivy Bridge) verwenden seit 2012 thermisches Rauschen als Quelle. Dies geschieht durch Verstärkung der an nicht angesteuerten Widerständen gemessenen Spannung.
+
+  Auslesen ist mit dem RDRAND Befehl möglich bzw. (neuer) mit dem RDSEED Befehl.
+
+- AMD und ARM CPUs bieten vergleichbare Funktionen. Auf aktuellen AMD CPUs dauert es ca. 2500 Clock Cycles für die Generierung eines 64 Bit Wertes.
+
+.. supplemental::
+
+    Die Befehle RDRAND und RDSEED erfüllen die Anforderungen von NIST SP 800-90A, FIPS 140-2, und ANSI X9.82.
+
+.. attention::
+    :class: incremental
+
+    Es gibt *Vermutungen*, dass diese Funktionen absichtlich kompromitiert wurden. `FreeBSD <https://www.theregister.com/2013/12/09/freebsd_abandoning_hardware_randomness/>`_ hat 2013 die Verwendung wieder eingestellt. Linux nutzt diese nur ergänzend.
 
 
 
@@ -588,7 +603,7 @@ Vergleich von PRNGs und TRNGs
 -----------------------------
 
 .. csv-table::
-    :class: booktabs
+    :class: booktabs table-header-align-left
     :header: , Pseudozufallszahlengeneratoren, echte Zufallszahlengeneratoren
     :stub-columns: 1
 
@@ -642,30 +657,33 @@ Allgemeine Struktur einer typischen Stromchiffre
     :alt:  Typical Stream Cipher
     :align: center
 
-.. grid:: s-font-size-80
+.. grid::
 
-    .. cell:: width-30
+    .. cell:: width-20
 
-        Klartext :math:`p_i`
+        Klartext: p\ :sub:`i`
 
-        Chiffretext :math:`c_i`
+        Chiffretext: c\ :sub:`i`
 
-        Schlüsselstrom :math:`z_i`
+        Schlüsselstrom: z\ :sub:`i`
 
-    .. cell:: width-30
+    .. cell:: width-20
 
-        Schlüssel K
+        Schlüssel: K
 
-        Initialisierungswert IV
+        Initialisierungswert: IV
 
-    .. cell:: width-30
+    .. cell:: width-50
 
-        Zustand :math:`\sigma_i`
+        Zustand: σ\ :sub:`i`
 
-        Funktion zur Berechnung des nächsten Zustands :math-i:`f`
+        Funktion zur Berechnung des nächsten Zustands: f
 
-        Schlüsselstromfunktion :math-i:`g`
+        Schlüsselstromfunktion: g
 
+.. supplemental::
+
+    Die Schlüsselstromfunktion g projeziert den internen Zustand (welcher sehr groß sein kann) auf den nächsten Block/das nächste Byte, das zur Verschlüsselung verwendet wird.
 
 
 Überlegungen zum Entwurf von Stromchiffren
@@ -673,12 +691,12 @@ Allgemeine Struktur einer typischen Stromchiffre
 
 .. story::
 
-    .. class:: incremental-list
+    .. class:: incremental-list dd-margin-left-4em
 
-    :**Die Verschlüsselungssequenz sollte eine große Periode haben**:
+    :Die Verschlüsselungssequenz sollte eine große Periode haben:
         Ein Pseudozufallszahlengenerator verwendet eine Funktion, die einen deterministischen Strom von Bits erzeugt, der sich schließlich wiederholt; je länger die Wiederholungsperiode, desto schwieriger wird die Kryptoanalyse.
 
-    :**Der Schlüsselstrom sollte die Eigenschaften eines echten Zufallszahlenstroms so gut wie möglich nachbilden**:
+    :Der Schlüsselstrom sollte die Eigenschaften eines echten Zufallszahlenstroms so gut wie möglich nachbilden:
         Es sollte eine ungefähr gleiche Anzahl von 1en und 0en geben.
 
         Wenn der Schlüsselstrom als ein Strom von Bytes behandelt wird, sollten alle 256 möglichen Byte-Werte ungefähr gleich oft vorkommen.
@@ -695,8 +713,8 @@ Allgemeine Struktur einer typischen Stromchiffre
 
 
 
-RC 4
-------
+Historische Stromchiffre: RC 4
+---------------------------------
 
 - 1987 von Ron Rivest für RSA Security entwickelt.
 - Stromchiffre mit variabler Schlüsselgröße und byteorientierten Operationen, die in Software sehr schnell ausgeführt werden können.
@@ -738,7 +756,7 @@ ChaCha20 Zustand - Matrix - Indizierung
     8, 9, 10, 11
     12, 13, 14, 15
 
-Die 16 Werte der Matrix sind vorzeichenlose 32-Bit Ganzzahlen (:eng:`Integers`).
+Die 16 Werte der Matrix sind vorzeichenlose 32-Bit Ganzzahlen (:eng:`Integers`); d.h. der Zustand hat somit 16 * 4 Byte = 64 Byte = 512 Bit.
 
 
 ChaCha Quarter Round
@@ -748,23 +766,25 @@ Grundlegende Operation in ChaCha20.
 
 .. grid::
 
-    .. cell:: width-60
+    .. cell:: width-40
 
         1. :code:`a += b; d ^= a; d <<<= 16;`
         2. :code:`c += d; b ^= c; b <<<= 12;`
         3. :code:`a += b; d ^= a; d <<<=  8;`
         4. :code:`c += d; b ^= c; b <<<=  7;`
 
-    .. cell:: dd-margin-left-4em
+    .. cell:: width-60 dd-margin-left-3em
 
-        :``+``: ist die Addition modulo :math:`2^{32}`.
-        :``^``: ist die XOR-Operation.
-        :``<<<``: ist die zyklische Linksverschiebung um die angegebene Anzahl von Stellen.
+        .. legend::
+
+            :``+``: ist die Addition modulo 2³².
+            :``^``: ist die XOR-Operation.
+            :``<<<``: ist die zyklische Linksverschiebung um die angegebene Anzahl von Stellen.
 
 
 .. grid:: incremental
 
-    .. cell:: width-50
+    .. cell:: width-40
 
         Gegeben seien die folgenden Werte:
 
@@ -775,22 +795,30 @@ Grundlegende Operation in ChaCha20.
             c = 0x77777777
             d = 0x01234567
 
-    .. cell:: width-50
+    .. cell:: width-60
 
         Anwendung der vierten Formel:
 
         .. code:: java
 
-            c = c + d = 0x77777777 + 0x01234567
-                      = 0x789abcde
+            c = c + d   = 0x77777777 + 0x01234567
+                        = 0x789abcde
 
-            b = b ^ c = 0x01020304 ^ 0x789abcde
-                      = 0x7998bfda
+            b = b ^ c   = 0x01020304 ^ 0x789abcde
+                        = 0x7998bfda
 
             b = b <<< 7 = 0x7998bfda <<< 7
                         = 0xcc5fed3c
 
 .. supplemental::
+
+    Linksverschiebung um 7 Stellen:
+
+    .. code:: python
+
+        0x7998bfda = 0b01111001100110001011111111011010
+        0b0111100_1100110001011111111011010 <<< 7 =  0b1100110001011111111011010_0111100
+        0b1100110001011111111011010_0111100 = 0xcc5fed3c
 
     ChaCha20-Poly1305 - d. h. ChaCha20 mit zusätzlicher Authentifizierung (Poly 1305) - wird unter anderem von IPsec, SSH, TLS 1.2, DTLS 1.2, TLS 1.3, WireGuard, S/MIME 4.0, und OTRv4[22].
 
@@ -814,11 +842,12 @@ Anwendung der *Quarter Round Operation*
 
         .. csv-table::
             :class: borderless monospaced table-data-align-right
+            :align: center
 
-            0, :red:`a`, 2, 3
-            4, :red:`b`, 6 ,7
-            8, :red:`c`, 10, 11
-            12, :red:`d`, 14, 15
+            0, :red:`a`\ =1, 2, 3
+            4, :red:`b`\ =5, 6 ,7
+            8, :red:`c`\ =9, 10, 11
+            12, :red:`d`\ =13, 14, 15
 
 
     .. card::
@@ -829,6 +858,7 @@ Anwendung der *Quarter Round Operation*
 
         .. csv-table::
             :class: monospaced highlight-cell-on-hover borderless
+            :align: center
 
             879531e0,  c5ecf37d,  516461b1,  c9a62f8a
             44c20ef3,  3390af7f,  d9fc690b,  2a5f714c
@@ -839,6 +869,7 @@ Anwendung der *Quarter Round Operation*
 
         .. csv-table::
             :class: monospaced highlight-cell-on-hover borderless
+            :align: center
 
             879531e0,  c5ecf37d, :red:`bdb886dc`,  c9a62f8a
             44c20ef3,  3390af7f,  d9fc690b, :red:`cfacafd2`
@@ -860,9 +891,12 @@ Die ChaCha20 Blockfunktion
 
         Eingaben:
 
-        - Ein 256-Bit-Schlüssel (:math:`8 \times 32`-Bit-Werte (little-endian))
-        - Eine 96-Bit-Nonce (:math:`3 \times 32`-Bit-Werte (little-endian))
+        - Ein 256-Bit-Schlüssel (8 × 32-Bit-Werte (little-endian))
         - Ein 32-Bit-Blockzähler
+        - Eine 96-Bit-Nonce (3 × 32-Bit-Werte (little-endian))
+
+
+        ∑ 384 Bit.
 
         Ausgabe:
 
@@ -873,11 +907,14 @@ Die ChaCha20 Blockfunktion
         Initialer Zustand:
 
         :Werte 0-3:  ``0x61707865``, ``0x3320646e``, ``0x79622d32``, ``0x6b206574``
-        :Werte 4-11:  Der 256-Bit Schlüssel (:math:`8 \times 32`\ Bit)
+        :Werte 4-11:  der 256-Bit Schlüssel (8 × 32Bit)
         :Wert 12: der Blockzähler
 
-            Da ein Block 64 Byte lang ist, können max 256GiB Daten verschlüsselt werden.
-        :Wert 13-15: Die 96-Bit Nonce
+
+            .. container:: peripheral
+
+                Da ein Block 64 Byte lang ist, können max 256GiB Daten verschlüsselt werden.
+        :Wert 13-15: die 96-Bit Nonce
 
     .. card::
 
@@ -923,11 +960,11 @@ Die ChaCha20 Blockfunktion
 
     .. card::
 
-        Nach den 20 Runden wird der Zustand mit dem initialen Zustand addiert. Auf diese Weise erhält man den Schlüsselstrom.
+        Nach den 20 Runden wird der Zustand mit dem initialen Zustand addiert (modulo 2³², wortweise). Auf diese Weise erhält man den Schlüsselstrom.
 
-        Dieser wird dann zum Verschlüsseln des Klartexts mittels XOR verwendet. Somit muss der Klartext somit kein vielfaches der Blockgröße sein.
+        Diese Verrechnung mit dem initialen Zustand dient der Vereitelung bestimmter Angriffstechniken (z. B. differenzielle Analyse).
 
-
+        Dieser wird dann zum Verschlüsseln des Klartexts mittels XOR verwendet. Somit muss der Klartext kein vielfaches der Blockgröße sein.
 
 .. supplemental::
 
@@ -946,4 +983,66 @@ Die ChaCha20 Blockfunktion
         (kleinste Adresse) 0xXX, 0xXX+1, 0xXX+2, (größte Adresse) 0xXX+3
         01, 00, 00, 00
 
-    gespeichert.
+    gespeichert. Intel und AMD CPUs verwenden traditionell Little-endian. ARM CPUs können beides, verwenden jedoch typischerweise auch Little-endian; insbesondere im Falle von MACs oder Smartphones (Android and iOS).
+
+
+.. class:: exercises
+
+Übung
+---------
+
+
+.. exercise:: CHA CHA verstehen
+
+    - Welchem Zweck dient die Nonce? Bzw. warum reicht ein Schlüssel alleine nicht?
+
+    - Muss die Nonce geheim gehalten werden?
+
+    - Wenn die Nonce wiederverwendet wird, welche Information kann der Angreifer in welchen Situationen ableiten?
+
+    - Wie viele Nachrichten kann man mit einem Schlüssel verschlüsseln?
+
+    - Welche Vor-/Nachteil hat es, wenn man den Blockzähler auf 64 Bit erhöht und die Nonce auf 64 Bit verringert?
+
+      Wie ist der Zusammenhang zum Geburtstagsparadoxon?
+
+      .. supplemental::
+
+        Geburtstagsparadoxon: Wie groß ist die Wahrscheinlichkeit, dass bei zufälliger Auswahl von k Werten aus einer Menge mit N möglichen Werten mindestens zwei identisch sind.
+
+        Bei großen N kann die Abschätzung wie folgt erfolgen: Bei k ≈ √N besteht ≈ 50 % Kollisionswahrscheinlichkeit.
+
+        .. example::
+
+            In einer Gruppe von nur 23 Personen liegt die Wahrscheinlichkeit, dass mindestens zwei am gleichen Tag Geburtstag haben, bei über 50 % (präzise berechnet; nicht überschlägig).
+
+    .. solution::
+        :pwd: zum????
+
+        .. rubric:: Lösung
+
+        Die Nonce dient dazu, mehrere Nachrichten mit demselben Schlüssel sicher zu verschlüsseln, ohne dabei denselben Schlüsselstrom zu erzeugen.
+
+        Die Nonce muss nicht geheim gehalten werden.
+
+        Würden wir mehrere Nachrichten mit der selben Nonce verschlüsseln, dann könnten wir direkt P1 ⊕ P2 berechnen und Rückschlüsse auf die Nachricht erhalten:
+
+        ::
+
+            C1 = P1 ⊕ Z
+            C2 = P2 ⊕ Z
+            ⇒ C1 ⊕ C2 = P1 ⊕ P2
+
+        Beispiele:
+
+        - Sei P1 ⊕ P2 = 0, dann wurde zweimal die selbe Nachricht versendet.
+        - Sind Teile von P1 bekannt (zum Beispiel aufgrund der Verwendung eines bekannten Protokolls), dann kann man daraus direkt die entsprechenden Abschnitte von P2 rekonstruieren.
+
+        Da die Nonce 2⁹⁶ Bit hat, kann man entsprechend viele Nachrichten mit dem selben Schlüssel verschlüsseln.
+
+
+        .. rubric:: 64-64-Bit Design
+
+        :Vorteile: Praktisch unbegrenzte Nachrichtenlänge; ggf. relevante wenn man sehr große Datenströme über längere Zeiträume kontinuierlich verschlüsseln will.
+
+        :Nachteile: Anzahl der Nonces ist kleiner, wodurch die Wahrscheinlichkeit der Wiederverwendung steigt; d.h. ab der Verwendung von 2³² Nonces ist die Wahrscheinlichkeit ≥ 50% (cf. Geburtstagsparadoxon)
