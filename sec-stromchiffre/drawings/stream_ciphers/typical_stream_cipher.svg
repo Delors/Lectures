@@ -6,9 +6,9 @@
     xmlns:dc="http://purl.org/dc/elements/1.1/"
     xmlns="http://www.w3.org/2000/svg"
     version="1.1"
-    viewBox="426 1008 443 245"
+    viewBox="426 1015 435 241"
     width="443"
-    height="245"
+    height="241"
 >
 <style>
   @import url('/LectureDoc2/ext/fonts/ld-fonts.css');
@@ -582,7 +582,7 @@
       </g>
       <g id="Line_53">
         <line
-                    x1="452.6283"
+                    x1="455"
                     y1="1230.7073"
                     x2="513.45315"
                     y2="1230.6502"

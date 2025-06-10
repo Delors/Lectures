@@ -59,7 +59,6 @@
                         fill="black"
                         x="1.708"
                         y="15"
-                        xml:space="preserve"
                     >initialisiere mit </tspan>
           <tspan
                         font-family="Noto Sans Display"
@@ -69,7 +68,6 @@
                         fill="black"
                         x="28.693"
                         y="34"
-                        xml:space="preserve"
                     >Seed</tspan>
           <tspan
                         font-family="Noto Sans Display"
@@ -77,7 +75,6 @@
                         font-weight="400"
                         fill="black"
                         y="34"
-                        xml:space="preserve"
                     > s</tspan>
         </text>
       </g>
@@ -94,7 +91,6 @@
                         fill="black"
                         x="30.4"
                         y="15"
-                        xml:space="preserve"
                     >generiere </tspan>
           <tspan
                         font-family="Noto Sans Display"
@@ -103,23 +99,13 @@
                         fill="black"
                         x="32.587"
                         y="34"
-                        xml:space="preserve"
-                    >x</tspan>
-          <tspan
-                        font-family="Noto Sans Display"
-                        font-size="10"
-                        font-weight="400"
-                        fill="black"
-                        y="31"
-                        xml:space="preserve"
-                    >2</tspan>
+                    >x²</tspan>
           <tspan
                         font-family="Noto Sans Display"
                         font-size="14"
                         font-weight="400"
                         fill="black"
                         y="34"
-                        xml:space="preserve"
                     > mod n</tspan>
         </text>
       </g>
@@ -144,7 +130,6 @@
                         fill="white"
                         x="5.83095"
                         y="15"
-                        xml:space="preserve"
                     > least significant bit</tspan>
         </text>
       </g>
@@ -157,7 +142,6 @@
                         fill="black"
                         x="0"
                         y="15"
-                        xml:space="preserve"
                     >[0,1]</tspan>
         </text>
       </g>

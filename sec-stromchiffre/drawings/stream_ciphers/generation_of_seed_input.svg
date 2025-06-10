@@ -57,7 +57,6 @@
                         fill="black"
                         x="2344791e-19"
                         y="15"
-                        xml:space="preserve"
                     >Entropiequelle</tspan>
         </text>
       </g>
@@ -74,7 +73,6 @@
                         fill="black"
                         x="40.634"
                         y="15"
-                        xml:space="preserve"
                     >echter </tspan>
           <tspan
                         font-family="Noto Sans Display"
@@ -83,7 +81,6 @@
                         fill="black"
                         x="17.499"
                         y="34"
-                        xml:space="preserve"
                     >Zufallszahlen-</tspan>
           <tspan
                         font-family="Noto Sans Display"
@@ -92,7 +89,6 @@
                         fill="black"
                         x="29.448"
                         y="53"
-                        xml:space="preserve"
                     >generator</tspan>
         </text>
       </g>
@@ -116,7 +112,6 @@
                         fill="white"
                         x="15.658"
                         y="15"
-                        xml:space="preserve"
                     >Pseudozufalls-</tspan>
           <tspan
                         font-family="Noto Sans Display"
@@ -125,7 +120,6 @@
                         fill="white"
                         x="9.015"
                         y="34"
-                        xml:space="preserve"
                     >zahlengenerator</tspan>
         </text>
       </g>
@@ -138,7 +132,6 @@
                         fill="black"
                         x="0"
                         y="15"
-                        xml:space="preserve"
                     >Pseudozufälliger</tspan>
           <tspan
                         font-family="Noto Sans Display"
@@ -147,7 +140,6 @@
                         fill="black"
                         x="25.018"
                         y="34"
-                        xml:space="preserve"
                     >Bitstrom</tspan>
         </text>
       </g>
@@ -160,13 +152,12 @@
                         fill="black"
                         x="7993606e-19"
                         y="15"
-                        xml:space="preserve"
                     >Seed</tspan>
         </text>
       </g>
       <g id="Line_9">
         <line
-                    x1="541.8659"
+                    x1="544"
                     y1="697"
                     x2="561.1"
                     y2="697"

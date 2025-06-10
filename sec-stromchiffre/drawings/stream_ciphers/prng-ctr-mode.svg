@@ -61,7 +61,6 @@
                         fill="black"
                         x="11.682726"
                         y="15"
-                        xml:space="preserve"
                     >Verschlüsselung</tspan>
           <tspan
                         font-family="Noto Sans Display"
@@ -70,7 +69,6 @@
                         fill="black"
                         x="1.4797264"
                         y="51"
-                        xml:space="preserve"
                     >(z. B. mit AES oder 3DES)</tspan>
         </text>
       </g>
@@ -87,7 +85,6 @@
                         fill="black"
                         x="62.28573"
                         y="15"
-                        xml:space="preserve"
                     >V</tspan>
         </text>
       </g>
@@ -113,7 +110,6 @@
                         fill="black"
                         x="0"
                         y="15"
-                        xml:space="preserve"
                     >K</tspan>
         </text>
       </g>
@@ -126,7 +122,6 @@
                         fill="black"
                         x="14654944e-21"
                         y="15"
-                        xml:space="preserve"
                     >1</tspan>
         </text>
       </g>
@@ -139,7 +134,6 @@
                         fill="black"
                         x="29132252e-20"
                         y="15"
-                        xml:space="preserve"
                     >CTR Modus</tspan>
         </text>
       </g>
@@ -192,7 +186,6 @@
                         fill="black"
                         x="9.976238"
                         y="15"
-                        xml:space="preserve"
                     >+</tspan>
         </text>
       </g>
@@ -218,7 +211,6 @@
                         fill="black"
                         x="5968559e-19"
                         y="15"
-                        xml:space="preserve"
                     >Pseudozfallsbits</tspan>
         </text>
       </g>
