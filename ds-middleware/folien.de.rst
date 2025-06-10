@@ -1,10 +1,10 @@
 .. meta::
     :version: renaissance
     :author: Michael Eichberg
-    :keywords: "Middleware", "RPC", "RMI", "MoM"
+    :keywords: Middleware, RPC, RMI, MoM
     :description lang=de: Middleware
     :description lang=en: Middleware
-    :id: lecture-ds-middleware
+    :id: vorlesung-verteilte-systeme-middleware
     :first-slide: last-viewed
     :master-password: WirklichSchwierig!
 
@@ -15,15 +15,15 @@
 Middleware
 ===============================================================================
 
-.. container:: 
+.. container::
 
   :Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
   :Kontakt: michael.eichberg@dhbw.de, Raum 149B
-  :Version: 1.0
+  :Version: 1.0.1
 
 .. supplemental::
 
-  :Folien: 
+  :Folien:
       [HTML] |html-source|
 
       [PDF] |pdf-source|
@@ -43,10 +43,10 @@ Was ist Middleware?
 
 .. definition::
 
-   Middleware ist eine Klasse von Software-Technologien, die dazu dienen, 
-   
-   (I) die Komplexität und 
-   
+   Middleware ist eine Klasse von Software-Technologien, die dazu dienen,
+
+   (I) die Komplexität und
+
    (II) die Heterogenität verteilter Systeme zu verwalten.
 
 
@@ -56,7 +56,7 @@ Was ist Middleware?
 Ein einfacher Server mit Sockets (in C)
 ----------------------------------------
 
-.. scrollable:: 
+.. scrollable::
 
   .. code:: C
     :class: copy-to-clipboard
@@ -64,7 +64,7 @@ Ein einfacher Server mit Sockets (in C)
 
     /* A simple TCP based server. The port number is passed as an argument */
     #include <stdio.h>
-    #include <sys/types.h> 
+    #include <sys/types.h>
     #include <sys/socket.h>
     #include <netinet/in.h>
 
@@ -76,17 +76,17 @@ Ein einfacher Server mit Sockets (in C)
       struct sockaddr_in serv_addr, cli_addr;
 
       sockfd = socket(AF_INET, SOCK_STREAM, 0); // socket() returns a socket descriptor
-      if (sockfd < 0) 
+      if (sockfd < 0)
       error("ERROR opening socket");
 
-      bzero((char *) &serv_addr, sizeof(serv_addr)); // bzero() sets all values to zero. 
+      bzero((char *) &serv_addr, sizeof(serv_addr)); // bzero() sets all values to zero.
       portno = atoi(argv[1]); // atoi() converts str into an integer
 
       serv_addr.sin_family = AF_INET;
       serv_addr.sin_addr.s_addr = INADDR_ANY;
       serv_addr.sin_port = htons(portno);
 
-      if (bind(sockfd, (struct sockaddr *) &serv_addr, sizeof(serv_addr)) < 0) 
+      if (bind(sockfd, (struct sockaddr *) &serv_addr, sizeof(serv_addr)) < 0)
       error("ERROR on binding");
       listen(sockfd,5); // tells the socket to listen for connections
       clilen = sizeof(cli_addr);
@@ -101,7 +101,7 @@ Ein einfacher Server mit Sockets (in C)
 
       if (n < 0) error("ERROR writing to socket");
 
-      return 0; 
+      return 0;
     }
 
 
@@ -121,7 +121,7 @@ Ein einfacher Client mit Sockets (in C)
         #include <sys/types.h>
         #include <sys/socket.h>
         #include <netinet/in.h>
-        #include <netdb.h> 
+        #include <netdb.h>
 
         void error(char *msg){ perror(msg);exit(0);}
 
@@ -134,7 +134,7 @@ Ein einfacher Client mit Sockets (in C)
           portno = atoi(argv[2]);
 
           sockfd = socket(AF_INET, SOCK_STREAM, 0);
-          if (sockfd < 0) 
+          if (sockfd < 0)
             error("ERROR opening socket");
 
           server = gethostbyname(argv[1]);
@@ -145,7 +145,7 @@ Ein einfacher Client mit Sockets (in C)
 
           if (connect(sockfd,&serv_addr,sizeof(serv_addr)) < 0) error("ERROR connecting");
 
-          printf("Please enter the message: "); 
+          printf("Please enter the message: ");
           bzero(buffer,256);
           fgets(buffer,255,stdin);
           n = write(sockfd,buffer,strlen(buffer));
@@ -171,11 +171,11 @@ Wir müssen uns kümmern um …
 - … die Einrichtung eines Kanals und alle Fehler, die während dieses Prozesses auftreten können.
 
 - … die Festlegung eines Protokolls.
-  
+
   Wer sendet was, wann, in welcher Reihenfolge und welche Antwort wird erwartet?
 
-- … Nachrichtenformate 
-  
+- … Nachrichtenformate
+
   Umwandlung von Daten der Anwendungsebene in Bytes, die über das Netz übertragen werden können.
 
 
@@ -208,7 +208,7 @@ Die von Middleware angebotenen Programmierabstraktionen verbergen einen Teil der
 
 .. supplemental::
 
-  Alte Middlewarestandards – wie zum Beispiel CORBA – waren sehr komplex und die Implementierungen verschiedener Hersteller meist nicht vollständig kompatibel. 
+  Alte Middlewarestandards – wie zum Beispiel CORBA – waren sehr komplex und die Implementierungen verschiedener Hersteller meist nicht vollständig kompatibel.
 
 
 
@@ -231,10 +231,10 @@ Middleware bietet (beim Programmieren) Transparenz in Bezug auf eine oder mehrer
 Middleware als Infrastruktur
 ---------------------------------
 
-.. class:: incremental list-with-explanations
+.. class:: incremental-list list-with-explanations
 
-- Hinter Programmierabstraktionen steht eine komplexe Infrastruktur, die diese Abstraktionen implementiert 
-  
+- Hinter Programmierabstraktionen steht eine komplexe Infrastruktur, die diese Abstraktionen implementiert
+
   Middleware-Plattformen können sehr komplexe Softwaresysteme sein.
 - Da die Programmierabstraktionen immer höhere Ebenen erreichen, muss die zugrunde liegende Infrastruktur, die die Abstraktionen implementiert, entsprechend wachsen.
 - Zusätzliche Funktionalität wird fast immer durch zusätzliche Softwareschichten implementiert.
@@ -242,8 +242,8 @@ Middleware als Infrastruktur
 
 .. supplemental::
 
-  Seit Jahrzehnten kann beobachtet werden, dass Middleware immer komplexer wird bzw. wurde bis zu dem Punkt an dem die Komplexität kaum mehr beherrschbar war. Zu diesen Zeitpunkten wurden dann häufig neue Ansätze entwickelt, die die Komplexität reduzierten bis diese wiederum Eingang in komplexere Middleware-Produkten Eingang fand. 
-  
+  Seit Jahrzehnten kann beobachtet werden, dass Middleware immer komplexer wird bzw. wurde bis zu dem Punkt an dem die Komplexität kaum mehr beherrschbar war. Zu diesen Zeitpunkten wurden dann häufig neue Ansätze entwickelt, die die Komplexität reduzierten bis diese wiederum Eingang in komplexere Middleware-Produkten Eingang fand.
+
   Ansätze, wie z. B. REST, haben sich als recht erfolgreich erwiesen stellen aber Entwickler vor neue Herausforderungen.
 
 
@@ -251,7 +251,7 @@ Middleware als Infrastruktur
 Middleware und nicht-funktionale Anforderungen
 ------------------------------------------------
 
-Die Infrastruktur kümmert sich um nicht-funktionale Eigenschaften, die normalerweise von Datenmodellen, Programmiermodellen und Programmiersprachen ignoriert werden: 
+Die Infrastruktur kümmert sich um nicht-funktionale Eigenschaften, die normalerweise von Datenmodellen, Programmiermodellen und Programmiersprachen ignoriert werden:
 
 - Performance
 - Verfügbarkeit
@@ -266,12 +266,12 @@ Middleware als Infrastruktur
 
 Middleware unterstützt zusätzliche Funktionen die die Entwicklung, Wartung und Überwachung einfacher und kostengünstiger machen (Auszug):
 
-.. class:: incremental
+.. class:: incremental-list
 
-- Protokollierung (:eng:`Logging`) 
+- Protokollierung (:eng:`Logging`)
 - Wiederherstellung (:eng:`Recovery`)
-- Sprachprimitive für transaktionale Abgrenzung 
- 
+- Sprachprimitive für transaktionale Abgrenzung
+
   (:peripheral:`Bzw. fortgeschrittene Transaktionsmodelle (z. B. transaktionale RPC) oder transaktionale Dateisysteme`)
 
 
@@ -279,7 +279,7 @@ Middleware unterstützt zusätzliche Funktionen die die Entwicklung, Wartung und
 Middleware - konzeptionelle (historisch)
 -----------------------------------------------------
 
-.. container:: footer-left 
+.. container:: footer-left
 
     Darstellung nach: Alonso; Web services: Concepts, Architectures and Applications; Springer, 2004
 
@@ -308,7 +308,7 @@ Entwicklung von Middleware
 - Middleware beabsichtigt die Details der Hardware, der Netze und der Verteilung auf niedriger Ebene zu verbergen.
 - Anhaltender Trend zu immer leistungsfähigeren Primitiven (*Events*), die zusätzliche Eigenschaften haben oder eine flexiblere Nutzung des Konzepts ermöglichen.
 - Die Entwicklung und das Erscheinungsbild für den Programmierer wird von den Trends in den Programmiersprachen diktiert:
-  
+
   - RPC und C
   - CORBA und C++
   - RMI (Corba) und Java
@@ -360,20 +360,20 @@ RPCs konzeptionell (synchrone Kommunikation)
 
 .. grid::
 
-  .. cell:: 
+  .. cell::
 
     - Ein Server ist ein Programm, das bestimmte Dienste implementiert.
     - Cients möchten diese Dienste in Anspruch nehmen:
-      
-      .. class:: incremental
+
+      .. class:: incremental-list
 
       - Die Kommunikation erfolgt durch das Senden von Nachrichten (kein gemeinsamer Speicher, keine gemeinsamen Festplatten usw.)
       - Einige minimale Garantien müssen gegeben werden (Behandlung von Fehlern, Aufrufsemantik, usw.)
 
   .. cell:: width-40
-  
+
     .. image:: images/rpc_konzeptionell.svg
-  
+
 
 
 RPCs - zentrale Fragestellungen und Herausforderungen
@@ -383,16 +383,16 @@ RPCs - zentrale Fragestellungen und Herausforderungen
 
   .. card::
 
-    Sollen entfernte Aufrufe transparent oder nicht transparent für den Entwickler sein? 
- 
+    Sollen entfernte Aufrufe transparent oder nicht transparent für den Entwickler sein?
+
       Ein entfernter Aufruf ist etwas völlig anderes als ein lokaler Aufruf; sollte sich der Programmierer dessen bewusst sein?
 
   .. card::
-  
-    Wie können Daten zwischen Maschinen ausgetauscht werden, die möglicherweise unterschiedliche Darstellungen für verschiedene Datentypen verwenden? 
+
+    Wie können Daten zwischen Maschinen ausgetauscht werden, die möglicherweise unterschiedliche Darstellungen für verschiedene Datentypen verwenden?
 
   .. card::
-  
+
     Komplexe Datentypen müssen linearisiert werden:
 
     :**Marshalling**: der Prozess des Aufbereitens der Daten in eine für die Übermittlung in einer Nachricht geeignete Form.
@@ -400,8 +400,8 @@ RPCs - zentrale Fragestellungen und Herausforderungen
 
   .. card::
 
-    Wie findet und bindet man den Dienst, den man tatsächlich will, in einer potenziell großen Sammlung von Diensten und Servern? 
-    
+    Wie findet und bindet man den Dienst, den man tatsächlich will, in einer potenziell großen Sammlung von Diensten und Servern?
+
     Das Ziel ist, dass der Kunde nicht unbedingt wissen muss, wo sich der Server befindet oder sogar welcher Server den Dienst anbietet (Standorttransparenz).
 
   .. card::
@@ -436,14 +436,14 @@ High-level View auf RPC
 
   Um Transparenz zu erreichen, führte RPC viele Konzepte von Middleware-Systemen ein:
 
-  .. class:: incremental list-with-explanations
-  
+  .. class:: incremental-list list-with-explanations
+
   - *Interface Description Language* (IDL)
   - Verzeichnis- und Benennungsdienste
   - Dynamische Bindung
   - Marshalling und Unmarshalling
-  - *Opaque References*, um bei verschiedenen Aufrufen auf dieselbe Datenstruktur oder Entität auf dem Server zu verweisen. 
-      
+  - *Opaque References*, um bei verschiedenen Aufrufen auf dieselbe Datenstruktur oder Entität auf dem Server zu verweisen.
+
     (Der Server ist für die Bereitstellung dieser undurchsichtigen Referenzen verantwortlich.)
 
 
@@ -453,9 +453,9 @@ RPC - Call Semantics
 Nehmen wir an, ein Client stellt eine RPC-Anfrage an einen Dienst eines bestimmten Servers.
 Nachdem die Zeitüberschreitung abgelaufen ist, beschließt der Client die Anfrage erneut zu senden. Das finale Verhalten hängt von der Semantik des Aufrufs (:eng:`Call Semantics`) ab:
 
-.. deck:: 
-  
-  .. card:: 
+.. deck::
+
+  .. card::
 
     .. rubric:: Maybe (vielleicht; keine Garantie)
 
@@ -469,8 +469,8 @@ Nachdem die Zeitüberschreitung abgelaufen ist, beschließt der Client die Anfra
 
     .. rubric:: At least once (mindestens einmal)
 
-    Die Prozedur wird ausgeführt werden solange der Server nicht endgültig versagt. 
-    
+    Die Prozedur wird ausgeführt werden solange der Server nicht endgültig versagt.
+
     Es ist jedoch möglich, dass sie mehr als einmal ausgeführt wird wenn der Client die Anfrage nach einer Zeitüberschreitung erneut gesendet hatte.
 
   .. card::
@@ -480,19 +480,19 @@ Nachdem die Zeitüberschreitung abgelaufen ist, beschließt der Client die Anfra
     Die Prozedur wird entweder einmal oder gar nicht ausgeführt. Ein erneutes Senden der Anfrage führt nicht dazu, dass die Prozedur mehrmals ausgeführt wird.
 
   .. card::
-  
+
     .. rubric:: Exactly once (genau einmal)
 
-    Das System garantiert die gleiche Semantik wie bei lokalen Aufrufen unter der Annahme, dass ein abgestürzter Server irgendwann wieder startet. 
-    
-    Verwaiste Aufrufe, d. h. Aufrufe auf abgestürzten Server-Rechnern, werden nachgehalten, damit sie später von einem neuen Server übernommen werden können.  
+    Das System garantiert die gleiche Semantik wie bei lokalen Aufrufen unter der Annahme, dass ein abgestürzter Server irgendwann wieder startet.
+
+    Verwaiste Aufrufe, d. h. Aufrufe auf abgestürzten Server-Rechnern, werden nachgehalten, damit sie später von einem neuen Server übernommen werden können.
 
 
 
 Asynchrones RPC
 ----------------
 
-.. grid::  
+.. grid::
 
   .. cell:: fade-out width-30
 
@@ -504,7 +504,7 @@ Asynchrones RPC
 
 ----
 
-.. grid:: 
+.. grid::
 
   .. cell:: fade-out width-30
 
@@ -580,7 +580,7 @@ Java RMI vs. RPC
 
 .. supplemental::
 
-  Java RMI ist eine spezielle Form von RPC, die in Java implementiert wurde. Der Unterschied ergibt sich im Prinzip aus dem Unterschied zwischen einem 
+  Java RMI ist eine spezielle Form von RPC, die in Java implementiert wurde. Der Unterschied ergibt sich im Prinzip aus dem Unterschied zwischen einem
   Prozeduraufruf und einem Methodenaufruf auf ein Objekt
 
 
@@ -593,7 +593,7 @@ Java RMI implementiert ein *Distributed Object Model*
 .. supplemental::
 
   - Jeder Prozess enthält sowohl Objekte die entfernte Aufrufe empfangen können als auch solche, die nur lokale Aufrufe empfangen können.
-  
+
     (Objekte die entfernte Aufrufe empfangen können, werden *Remote Objects* genannt).
   - Objekte müssen die Remote-Objektreferenz eines Objekts in einem anderen Prozess kennen, um dessen Methoden aufrufen zu können (Remote Method Invocation; Remote Object References)
 
@@ -608,7 +608,7 @@ Anatomie eine Java RMI Aufrufs
 .. supplemental::
 
   Der Proxy versteckt für den Client, dass es sich um einen entfernten Aufrufe handelt.  Er implementiert die Remote-Schnittstelle und kümmert sich um das Marshalling und Unmarshalling der Parameter und des Ergebnisses.
-  
+
   Der Skeleton ist für die Entgegennahme der Nachrichten verantwortlich und leitet die Nachricht an das eigentliche Objekt weiter. Er sorgt für die Transparenz auf Serverseite.
 
   Referenzen auf *Remote Objects* sind systemweit eindeutig und können frei zwischen Prozessen weitergegeben werden (z. B. als Parameter). Die Implementierung der entfernten Objektreferenzen wird von der Middleware verborgen (*Opaque-Referenzen*).
@@ -671,7 +671,7 @@ Einfacher RMI Dienst und Aufruf
           return new Date();
         }
       }
-    
+
   .. card::
 
     **Registrierung des Zeitservers**
@@ -720,8 +720,8 @@ Java RMI - Tidbits
 
 - RMI verwendet einen referenzzählenden Garbage-Collection-Algorithmus. Netzwerkprobleme können dann zu einer verfrühten GC führen was wiederum bei Aufrufen zu Ausnahmen führen kann.
 - Die Aufrufsemantik (*Call Semantics*) von RMI ist *at most once*.
-- (Un)Marshalling ist in Java RMI automatisch und verwendet Java Object Serialization. 
-  
+- (Un)Marshalling ist in Java RMI automatisch und verwendet Java Object Serialization.
+
   Der Overhead kann leicht ~25%-50% der Zeit für einen entfernten Aufruf ausmachen.
 
 
@@ -735,13 +735,13 @@ Klassische Web Services und SOAP
 Integration von Unternehmensanwendungen
 ----------------------------------------
 
-Die Probleme unternehmensübergreifende Punkt-zu-Punkt-Integration zu ermöglichen führten zur Entwicklung der nächsten Generation von Middleware-Technologien. 
+Die Probleme unternehmensübergreifende Punkt-zu-Punkt-Integration zu ermöglichen führten zur Entwicklung der nächsten Generation von Middleware-Technologien.
 
 .. image:: images/web_services-vs-message_brokers/message-brokers_and_adapters.svg
    :align: center
 
 .. container:: footer-left
-  
+
   Darstellung nach *Web Services - Concepts, Architectures and Applications; Alonso et al.; Springer 2004*
 
 .. supplemental::
@@ -786,11 +786,11 @@ Web Services - wesentliche Bestandteile
 
 .. container:: block-footer text-align-center dhbw-gray-background white
 
-   Konzeptionell hat sich somit im Vergleich zur RPC-Welt nicht viel geändert. 
+   Konzeptionell hat sich somit im Vergleich zur RPC-Welt nicht viel geändert.
 
 
 
-Web Services - Protokoll Stack  
+Web Services - Protokoll Stack
 --------------------------------
 
 .. image:: images/ws-protocol_stack.svg
@@ -815,8 +815,8 @@ SOAP
 
 .. supplemental::
 
-  SOAP ist eine Weiterentwicklung von XML-RPC und stand ursprünglich für Simple Object Access Protocol. 
-  
+  SOAP ist eine Weiterentwicklung von XML-RPC und stand ursprünglich für Simple Object Access Protocol.
+
   SOAP (ab Version 1.2) ist ein Standard des W3C.
 
 
@@ -827,17 +827,16 @@ Aufbau einer SOAP-Nachricht
 
 .. grid::
 
-  .. cell::
+  .. cell:: width-40
 
     .. image:: images/soap_message.svg
-     
 
-  .. cell::
+  .. cell:: width-60
 
     Nachrichten sind Umschläge, in die die Nutzdaten der Anwendung eingeschlossen werden.
-    
+
     Eine Nachricht hat zwei Hauptbestandteile:
-    
+
     :Header (optional): Für infrastrukturelle Daten wie Sicherheit oder Zuverlässigkeit vorgesehen.
     :Body (obligatorisch): Für Daten auf Anwendungsebene vorgesehen. Jeder Teil kann in Blöcke unterteilt werden.
 
@@ -847,9 +846,9 @@ Beispiel einer SOAP-Nachricht
 -------------------------------
 
 .. code:: xml
-  :class: scriptsize
+  :number-lines:
 
-    <SOAP-ENV:Envelope
+  <SOAP-ENV:Envelope
       xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"
       SOAP-ENV:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
 
@@ -865,7 +864,7 @@ Beispiel einer SOAP-Nachricht
       </m:GetLastTradePrice>
     </SOAP-ENV:Body>
 
-    </SOAP-ENV:Envelope>
+  </SOAP-ENV:Envelope>
 
 
 Beispiel eines SOAP-Aufrufs
@@ -897,7 +896,7 @@ Beispiel einer SOAP-Antwort
 ---------------------------
 
 .. code:: http
-  :number-lines:  
+  :number-lines:
 
   HTTP/1.1 200 OK
   Content-Type: text/xml; charset="utf-8"
@@ -937,7 +936,7 @@ Web Services - Standardisierung
 
 .. class:: vertical-title
 
-Überblick 
+Überblick
 ---------------------
 
 .. image:: images/genealogy-of-middleware.svg
@@ -946,24 +945,24 @@ Web Services - Standardisierung
 
 
 .. class:: new-section transition-move-to-top
-  
-Messaging and Message-oriented Communication/Middleware
+
+Messaging und Message-oriented Communication/Middleware
 -----------------------------------------------------------
 
 
 ZeroMQ
 --------------------------------
 
-.. class:: incremental
+.. class:: incremental-list
 
 - ZeroMQ ist eine Messaging-Infrastruktur ohne explizite Server („Broker“).
 - ZeroMQ unterstützt verbindungsorientierte aber asynchrone Kommunikation.
 - ZeroMQ basiert auf klassischen Sockets, fügt aber neue Abstraktionen hinzu, um folgende Messaging Patterns zu ermöglichen:
-  
+
   - *request-reply*
   - *pub-sub* (:eng:`publish-subscribe`)
   - pipeplining (:ger:`parallele Verarbeitung`)
-  
+
 - ZeroMQ ermöglicht N-zu-N Kommunikation.
 - ZeroMQ unterstützt sehr viele Programmiersprachen; der Nutzer ist für das passend Marshalling bzw. Unmarshalling verantwortlich.
 
@@ -973,16 +972,16 @@ ZeroMQ
 
 
 
-ZeroMQ - Messaging Patterns 
+ZeroMQ - Messaging Patterns
 ----------------------------
 
 .. scrollable::
 
-  
+
     .. image:: images/zeromq/client-server.svg
       :align: center
 
-  
+
     .. image:: images/zeromq/pub-sub.svg
       :align: center
       :class: margin-top-2em
@@ -1019,10 +1018,10 @@ ZeroMQ - Beispiel *Publish-Subscribe* (Java)
     import org.zeromq.ZContext;
 
     public class Publisher {
-      public static void main(String[] args) 
+      public static void main(String[] args)
           throws Exception {
         try (ZContext context = new ZContext()) {
-          ZMQ.Socket publisher = 
+          ZMQ.Socket publisher =
               context.createSocket(SocketType.PUB);
           publisher.bind("tcp://*:5556");
           publisher.bind("ipc://" + <endpoint>);
@@ -1030,7 +1029,7 @@ ZeroMQ - Beispiel *Publish-Subscribe* (Java)
           while (!currentThread().isInterrupted()) {
             int zipcode = <some zipcode>
             //  Send to all subscribers
-            String update = String.format("%05d %s", 
+            String update = String.format("%05d %s",
                 zipcode, <some msg>);
             publisher.send(update, 0);
           }
@@ -1058,7 +1057,7 @@ ZeroMQ - Beispiel *Publish-Subscribe* (Java)
     public class Subscriber{
       public static void main(String[] args) {
         try (ZContext context = new ZContext()) {
-          ZMQ.Socket subscriber = 
+          ZMQ.Socket subscriber =
               context.createSocket(SocketType.SUB);
           subscriber.connect("tcp://localhost:5556");
           subscriber.subscribe(
@@ -1079,7 +1078,7 @@ ZeroMQ - Beispiel *Publish-Subscribe* (Python)
 
 .. grid::
 
-  .. cell:: 
+  .. cell::
 
     .. code:: python
       :class: copy-to-clipboard
@@ -1089,7 +1088,7 @@ ZeroMQ - Beispiel *Publish-Subscribe* (Python)
       import time
       import zmq
 
-      signal.signal(signal.SIGINT, 
+      signal.signal(signal.SIGINT,
                     signal.SIG_DFL)
 
       context = zmq.Context()
@@ -1100,7 +1099,7 @@ ZeroMQ - Beispiel *Publish-Subscribe* (Python)
           socket.send(b'status 5')
           socket.send(b'All is well')
           time.sleep(1)
-      
+
   .. cell::
 
     .. code:: python
@@ -1111,7 +1110,7 @@ ZeroMQ - Beispiel *Publish-Subscribe* (Python)
       import zmq
 
 
-      signal.signal(signal.SIGINT, 
+      signal.signal(signal.SIGINT,
                     signal.SIG_DFL)
 
       context = zmq.Context()
@@ -1147,10 +1146,10 @@ MOM - Message Oriented Middleware
 MOM - Grundlegendes Interface
 --------------------------------
 
-.. csv-table:: 
+.. csv-table::
    :header: "Operation", "Beschreibung"
-   :class: highlight-line-on-hover
-   
+   :class: highlight-row-on-hover booktabs
+
    PUT, "Legt eine Nachricht in eine bestimmte Warteschlange."
    GET, "Blockiert an einer bestimmten Warteschlange bis eine Nachricht verfügbar ist. Entfernt die erste Nachricht."
    POLL, "Prüft, ob eine Nachricht in einer bestimmten Warteschlange verfügbar ist. Entfernt ggf.  die erste Nachricht. POLL blockiert niemals"
@@ -1165,7 +1164,7 @@ MOM - Queue Managers
     :align: center
 
 .. supplemental::
-  
+
   *Queue Managers* sind der zentrale Baustein von Message-queueing Systemen. Im Allgemeinen gibt es (mindestens konzeptionell) einen lokalen *Queue Manager* pro Prozess. Ein *Queue Manager* ist ein Prozess, der Nachrichten in Warteschlangen speichert und verwaltet. Bei Bedarf kann er mehrere Warteschlangen verwalten und an andere *Queue Manager* weiterleiten.
 
 
@@ -1182,7 +1181,7 @@ MOM - Queue Managers
   Stellen Sie sicher, dass Nachrichten immer in der richtigen Reihenfolge am Server ankommen. D. h. stellen Sie zum Beispiel sicher, dass eine gepufferte Nachricht nie nach einer neueren Nachricht ankommt.
 
   Verwenden Sie den Code im Anhang als Schablone.
-  
+
   .. solution::
     :pwd: NurEinBisschenCode
 
@@ -1237,13 +1236,13 @@ MOM - Queue Managers
       ...
 
 
-.. supplemental:: 
+.. supplemental::
 
   .. rubric:: Einfacher TCP basierter SyslogServer in Java
 
   .. code:: java
     :class: far-smaller copy-to-clipboard
-  
+
     import java.net.*;
     import java.io.*;
 
@@ -1287,17 +1286,17 @@ MOM - Queue Managers
        */
       private static void sendMsg(String msg) throws IOException{
         try (Socket s = new Socket("localhost", 9999)) {
-          BufferedReader networkIn = 
+          BufferedReader networkIn =
               new BufferedReader(
                   new InputStreamReader(s.getInputStream()));
-          PrintWriter networkOut = 
+          PrintWriter networkOut =
               new PrintWriter(s.getOutputStream());
           networkOut.println(msg);
           networkOut.flush();
-        } 
+        }
       }
 
-      > Datenstruktur zum Zwischenspeichern der 
+      > Datenstruktur zum Zwischenspeichern der
       > bisher nicht erfolgreich versendeten Nachrichten!
 
       public static void log(String msg) {
@@ -1309,19 +1308,19 @@ MOM - Queue Managers
           Thread.ofVirtual().start(() -> {
               while (true) {
                   try {
-                    // Alle 5 Sekunden prüfen wir ob wir noch 
+                    // Alle 5 Sekunden prüfen wir ob wir noch
                     // nicht versendete Nachrichten haben:
                     Thread.sleep(5000);
                   } catch (InterruptedException e) { }
-                  > Versende Nachrichten, 
-                  > die noch nicht versendet wurden 
+                  > Versende Nachrichten,
+                  > die noch nicht versendet wurden
               }
           });
       }
 
       public static void main(String[] args) throws Exception {
           startThread();
-          BufferedReader userIn = 
+          BufferedReader userIn =
               new BufferedReader(
                   new InputStreamReader(System.in));
           while (true) {
@@ -1344,9 +1343,9 @@ MOM - Queue Managers
 
   .. exercise:: Asynchrone, verbindungsorientierte Kommunikation
 
-    Entwickeln Sie sowohl einen Client (bzw. eine Clientkomponente) als auch einen Server für das zentralisierte Loggen von Nachrichten. 
-    
-    Im Fehlerfall, z. B. wenn der Server nicht verfügbar ist oder es zu einer Netzwerkpartitionierung kam, sollen die Nachrichten, die der Client an den Server senden will/wollte, zwischengepuffert werden und bei Serververfügbarkeit wieder zugestellt werden. Mit anderen Worten: die Methode des Clients zum senden von Nachrichten sollte nicht blockieren, sondern immer weiter funktionieren - auch im Fehlerfall. 
+    Entwickeln Sie sowohl einen Client (bzw. eine Clientkomponente) als auch einen Server für das zentralisierte Loggen von Nachrichten.
+
+    Im Fehlerfall, z. B. wenn der Server nicht verfügbar ist oder es zu einer Netzwerkpartitionierung kam, sollen die Nachrichten, die der Client an den Server senden will/wollte, zwischengepuffert werden und bei Serververfügbarkeit wieder zugestellt werden. Mit anderen Worten: die Methode des Clients zum senden von Nachrichten sollte nicht blockieren, sondern immer weiter funktionieren - auch im Fehlerfall.
 
     **Anforderungen**
 
@@ -1354,7 +1353,7 @@ MOM - Queue Managers
     - Der Client nimmt (hier) die Nachrichten über die Konsole entgegen und sendet sie direkt an den Server. Der Server sollte diese dann sofort ausgeben!
     - Stellen Sie sicher, dass keine Nachrichten verloren gehen, wenn der Server unkontrolliert beendet wird.
     - Bevor Sie versuchen eine Nachricht wieder zu versenden, warten Sie X Sekunden (z. B. 5 Sekunden).
-    
+
     **Hinweise**
 
     - Orientieren Sie sich an dem Code auf den Folien.
@@ -1368,7 +1367,7 @@ MOM - Queue Managers
     .. solution::
       :pwd: ThreadPoolsAreASolution
 
-      .. rubric:: Server in Python 
+      .. rubric:: Server in Python
 
       .. code:: python
         :class: copy-to-clipboard
@@ -1525,7 +1524,7 @@ MOM - Queue Managers
 
 .. supplemental::
 
-  .. rubric:: Schablone für die Serverseite 
+  .. rubric:: Schablone für die Serverseite
 
   .. code:: python
     :class: copy-to-clipboard
