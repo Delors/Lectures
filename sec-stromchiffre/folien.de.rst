@@ -17,7 +17,7 @@ Erzeugung von Zufallsbits und Stromchiffren
 
 :Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
 :Basierend auf: *Cryptography and Network Security - Principles and Practice, 8th Edition, William Stallings*
-:Version: 2.1
+:Version: 2.2
 
 .. supplemental::
 
@@ -762,18 +762,19 @@ Die 16 Werte der Matrix sind vorzeichenlose 32-Bit Ganzzahlen (:eng:`Integers`);
 ChaCha Quarter Round
 ----------------------
 
-Grundlegende Operation in ChaCha20.
 
 .. grid::
 
-    .. cell:: width-40
+    .. cell:: width-50
+
+        Grundlegende Operationen in ChaCha20.
 
         1. :code:`a += b; d ^= a; d <<<= 16;`
         2. :code:`c += d; b ^= c; b <<<= 12;`
         3. :code:`a += b; d ^= a; d <<<=  8;`
         4. :code:`c += d; b ^= c; b <<<=  7;`
 
-    .. cell:: width-60 dd-margin-left-3em
+    .. cell:: width-50 dd-margin-left-3em
 
         .. legend::
 
@@ -784,7 +785,7 @@ Grundlegende Operation in ChaCha20.
 
 .. grid:: incremental
 
-    .. cell:: width-40
+    .. cell:: width-50
 
         Gegeben seien die folgenden Werte:
 
@@ -795,7 +796,7 @@ Grundlegende Operation in ChaCha20.
             c = 0x77777777
             d = 0x01234567
 
-    .. cell:: width-60
+    .. cell:: width-50
 
         Anwendung der vierten Formel:
 
@@ -844,9 +845,9 @@ Anwendung der *Quarter Round Operation*
             :class: borderless monospaced table-data-align-right
             :align: center
 
-            0, :red:`a`\ =1, 2, 3
-            4, :red:`b`\ =5, 6 ,7
-            8, :red:`c`\ =9, 10, 11
+             0, :red:`a`\ = 1,  2,  3
+             4, :red:`b`\ = 5,  6,  7
+             8, :red:`c`\ = 9, 10, 11
             12, :red:`d`\ =13, 14, 15
 
 
@@ -966,6 +967,59 @@ Die ChaCha20 Blockfunktion
 
         Dieser wird dann zum Verschlüsseln des Klartexts mittels XOR verwendet. Somit muss der Klartext kein vielfaches der Blockgröße sein.
 
+    .. card::
+
+        .. grid::
+
+            .. cell:: width-30
+
+                Ablauf für die Verschlüsselung *eines* Blocks:
+
+            .. cell:: width-70
+
+                .. raw:: html
+                    :class: center-content
+
+                    <div style="width: 42ch; height: 40ch"; container-type:size;">
+                    <svg viewBox="190 50 420 400" xmlns="http://www.w3.org/2000/svg" font-size="16">
+                    <!-- Eingabeblock -->
+                    <rect x="200" y="60" width="400" height="80" fill="#f0f8ff" stroke="#000" />
+                    <text x="220" y="90" font-weight="bold">Initialer Zustand (State) (512 Bit):</text>
+                    <text x="220" y="115">[Const | Key | Block Counter = i | Nonce]</text>
+
+                    <!-- Pfeil zu 20 Runden -->
+                    <line x1="400" y1="140" x2="400" y2="176" stroke="#000" marker-end="url(#arrow)" />
+                    <text x="410" y="165" font-style="italic">20 Runden (Mix)</text>
+
+                    <!-- Rundenblock -->
+                    <rect x="200" y="180" width="400" height="80" fill="#e6ffe6" stroke="#000" />
+                    <text x="220" y="210">W = ChaCha20_Rounds(State)</text>
+                    <text x="220" y="235">(Wird intern verwürfelt)</text>
+
+                    <!-- Pfeil zu Addition -->
+                    <line x1="400" y1="260" x2="400" y2="296" stroke="#000" marker-end="url(#arrow)" />
+                    <text x="410" y="285" font-style="italic">+ initialer Zustand Block i</text>
+
+                    <!-- Addition -->
+                    <rect x="200" y="300" width="400" height="60" fill="#fffbe6" stroke="#000" />
+                    <text x="220" y="335">Keystream Block</text>
+
+                    <!-- Klartext XOR -->
+                    <line x1="400" y1="360" x2="400" y2="396" stroke="#000" marker-end="url(#arrow)" />
+                    <text x="410" y="385" font-style="italic">⊕ Klartext</text>
+
+                    <rect x="200" y="400" width="400" height="40" fill="#ffe6e6" stroke="#000" />
+                    <text x="250" y="425">Chiffretext = Klartext ⊕ Keystream</text>
+
+                    <!-- Definitions -->
+                    <defs>
+                        <marker id="arrow" markerWidth="10" markerHeight="10" refX="5" refY="3" orient="auto" markerUnits="strokeWidth">
+                        <path d="M0,0 L0,6 L9,3 z" fill="#000" />
+                        </marker>
+                    </defs>
+                    </svg>
+                    </div>
+
 .. supplemental::
 
     Es gibt auch eine Variante von ChaCha20, die einen 64-Bit-Blockzähler und eine 64-Bit Nonce verwendet. Hier wird jedoch die IETF Variante diskutiert.
@@ -1008,13 +1062,27 @@ Die ChaCha20 Blockfunktion
 
       .. supplemental::
 
-        Geburtstagsparadoxon: Wie groß ist die Wahrscheinlichkeit, dass bei zufälliger Auswahl von k Werten aus einer Menge mit N möglichen Werten mindestens zwei identisch sind.
+        .. rubric:: Geburtstagsparadoxon
+
+        Wie groß ist die Wahrscheinlichkeit, dass bei zufälliger Auswahl von k Werten aus einer Menge mit N möglichen Werten mindestens zwei identisch sind.
 
         Bei großen N kann die Abschätzung wie folgt erfolgen: Bei k ≈ √N besteht ≈ 50 % Kollisionswahrscheinlichkeit.
 
         .. example::
 
             In einer Gruppe von nur 23 Personen liegt die Wahrscheinlichkeit, dass mindestens zwei am gleichen Tag Geburtstag haben, bei über 50 % (präzise berechnet; nicht überschlägig).
+
+    - Welche Operationen dienen (a) der Konfusion und (b) der Diffusion? Wie wird der Lawineneffekt erreicht?
+
+      .. supplemental::
+
+        .. repetition::
+
+            :Konfusion: Erschwert die Beziehung zwischen Schlüssel und Chiffretext (→ „Schlüsselversteckung“)
+
+            :Diffusion: Verteilt den Einfluss eines einzelnen Eingabebits über viele Ausgabebits (→ „Durchmischung”)
+
+    - Kann CHACHA20 parallelisiert werden?
 
     .. solution::
         :pwd: zum????
@@ -1041,8 +1109,26 @@ Die ChaCha20 Blockfunktion
         Da die Nonce 2⁹⁶ Bit hat, kann man entsprechend viele Nachrichten mit dem selben Schlüssel verschlüsseln.
 
 
-        .. rubric:: 64-64-Bit Design
+        **64-64-Bit Design**
 
         :Vorteile: Praktisch unbegrenzte Nachrichtenlänge; ggf. relevante wenn man sehr große Datenströme über längere Zeiträume kontinuierlich verschlüsseln will.
 
         :Nachteile: Anzahl der Nonces ist kleiner, wodurch die Wahrscheinlichkeit der Wiederverwendung steigt; d.h. ab der Verwendung von 2³² Nonces ist die Wahrscheinlichkeit ≥ 50% (cf. Geburtstagsparadoxon)
+
+        **Konfusion und Diffusion**
+
+        Die grundlegenden Operationen der CHACHA Chiffre sind die Quater-Round Operationen, die alle gleich aufgebaut sind und aus einer Addition modulo 2³², einem XOR und einer Bit-Rotation bestehen. Zum Beispiel: :code:`a += b; d ^= a; d <<<= 16;`.
+
+        Die Addition modulo 2³² ist nicht linear (mod 2³²) und deswegen schwer rückrechenbar (Beispiel mit mod 2⁴: 1010 + 0110 = 0000 aber auch 1000 + 1000 = 0000 etc. und somit nicht-linear) . Sie dient der Konfusion.
+
+        XOR ist im Prinzip eine lineare Operation, die in Kombination mit der modularen Addition (Schritt davor) auch zur Diffusion beiträgt. Die Kombination mit der vorhergehenden Operation ist hier entscheidend und somit trägt das XOR sowohl zur Konfusion als auch Diffusion bei.
+
+        Die Bit-Rotation dient der Diffusion. Dadurch haben Änderungen an einem Eingabebit Auswirkungen auf viele Ausgabebits. Dies sorgt für den Lawineneffekt.
+
+        .. important::
+
+            Die Kombination aus Addition und XOR ist eine gängige Methode in kryptographischen Algorithmen, um Diffusion und Konfusion zu erzielen.
+
+        **Parallelisierung**
+
+        Die Parallelisierung von CHACHA(20) ist inhärent möglich. Der Keystream wird in Blöcken berechnet, die jeweils von 2 Konstanten: Nonce und Schlüssel sowie dem Blockzähler abhängen. Der (End-)Zustand des vorherigen Blocks hat keine direkte Auswirkung auf den nachfolgendne Block.
