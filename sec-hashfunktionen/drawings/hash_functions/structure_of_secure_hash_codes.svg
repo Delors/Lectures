@@ -212,7 +212,6 @@
                         fill="black"
                         x="0"
                         y="21"
-                        xml:space="preserve"
                     >IV =</tspan>
           <tspan
                         font-family="Noto Sans Display"
@@ -221,7 +220,6 @@
                         fill="black"
                         x="1.6095"
                         y="48"
-                        xml:space="preserve"
                     >CV</tspan>
           <tspan
                         font-family="Noto Sans Display"
@@ -229,7 +227,6 @@
                         font-weight="400"
                         fill="black"
                         y="55"
-                        xml:space="preserve"
                     >0</tspan>
         </text>
       </g>
