@@ -1,7 +1,7 @@
 .. meta::
     :version: renaissance
     :author: Michael Eichberg
-    :keywords: hash functions
+    :keywords: Kryptografische Hash Funktionen, SHA
     :description lang=en: Cryptographic Hash Functions
     :description lang=de: Kryptografische Hashfunktionen
     :id: lecture-security-hash_functions
@@ -42,8 +42,8 @@ Hashfunktionen
 
 .. class:: incremental-list
 
-- Eine Hashfunktion :math:`H` akzeptiert eine beliebig lange Nachricht :math:`M` als Eingabe und gibt einen Wert fixer Größe zurück: :math:`h = H(M)`.
-- Wird oft zur Gewährleistung der Datenintegrität verwendet. Eine Änderung eines beliebigen Bits in :math:`M` sollte mit hoher Wahrscheinlichkeit zu einer Änderung des Hashwerts :math:`h` führen.
+- Eine Hashfunktion :math-i:`H` akzeptiert eine beliebig lange Nachricht :math-i:`M` als Eingabe und gibt einen Wert fixer Größe zurück: :math-i:`h = H(M)`.
+- Wird oft zur Gewährleistung der Datenintegrität verwendet. Eine Änderung eines beliebigen Bits in :math-i:`M` sollte mit hoher Wahrscheinlichkeit zu einer Änderung des Hashwerts :math-i:`h` führen.
 - Kryptographische Hashfunktionen werden für Sicherheitsanwendungen benötigt. Mögliche Anwendungen:
 
   - Authentifizierung von Nachrichten
@@ -68,42 +68,46 @@ Beispiel: Berechnung von Hashwerten mittels MD5
 .. warning::
     :class: incremental
 
-    Die Verwendung von MD5 dient hier lediglich der Illustration. In realen Anwendung sollte MD5 nicht mehr verwendet werden.
+    Die Verwendung von MD5 dient hier lediglich der Illustration. In realen Anwendung sollte MD5 nicht mehr verwendet werden, da es nachgewiesene Schwachstellen aufweist.
 
 
 
-Sicherheitsanforderungen an kryptografische Hashfunktion I
+Sicherheitsanforderungen an kryptografische Hashfunktion
 ----------------------------------------------------------
 
-:Variable Eingabegröße: H kann auf einen Block beliebiger Größe angewendet werden.
-:Pseudozufälligkeit: Die Ausgabe von :math:`H` erfüllt die Standardtests für Pseudozufälligkeit.
+.. story::
 
-.. class:: incremental
+    .. class:: incremental-list
 
-:Einweg Eigenschaft:
+    :Variable Eingabegröße: :math-i:`H` kann auf einen Block beliebiger Größe angewendet werden.
 
-    Es ist rechnerisch/praktisch nicht machbar für einen gegeben Hashwert :math:`h` ein :math:`N` zu finden so dass gilt: :math:`H(N) = h`
+    :Pseudozufälligkeit: Die Ausgabe von :math-i:`H` erfüllt die Standardtests für Pseudozufälligkeit.
 
-    (:eng:`Preimage resistant; one-way property`)
+    :Einweg Eigenschaft:
 
+        Es ist rechnerisch/praktisch nicht machbar für einen gegeben Hashwert :math-i:`h` ein :math-i:`N` zu finden so dass gilt: :math-i:`H(N) = h`
 
+        (:eng:`Preimage resistant; one-way property`)
 
-Sicherheitsanforderungen an kryptografische Hashfunktion II
--------------------------------------------------------------------------
+        .. presenter-note::
 
-:Schwache Kollisionsresistenz:
+            Es ist also *praktisch* unmöglich die ursprüngliche Nachricht zu finden die auf den Hashwert abbildet. (Zum Beispiel bei Passwörtern notwendig!)
 
-    Es ist rechnerisch nicht machbar für eine gegebene Nachricht M eine Nachricht N zu finden so dass gilt: :math:`M \neq N` mit :math:`H(M) = H(N)`
+    :Schwache Kollisionsresistenz:
 
-    (:eng:`Second preimage resistant; weak collision resistant`)
+        Es ist rechnerisch nicht machbar für eine gegebene Nachricht :math-i:`M` eine Nachricht :math-i:`N` zu finden so dass gilt: :math:`M \neq N` mit :math:`H(M) = H(N)`
 
-.. class:: incremental
+        (:eng:`Second preimage resistant; weak collision resistant`)
 
-:Starke Kollisionsresistenz:
+        .. presenter-note::
 
-    Es ist rechnerisch unmöglich ein paar :math:`(N,M)` zu finden so dass gilt: :math:`H(M) = H(N)`.
+            Sehr relevant, wenn wir ein Dokument signieren wollen und sicherstellen müssen, dass das Dokument nicht nachträglich gefälscht werden kann.
 
-    (:eng:`Collision resistant; strong collision resistant`)
+    :Starke Kollisionsresistenz:
+
+        Es ist rechnerisch unmöglich ein paar :math:`(N,M)` zu finden so dass gilt: :math:`H(M) = H(N)`.
+
+        (:eng:`Collision resistant; strong collision resistant`)
 
 .. supplemental::
 
@@ -177,9 +181,9 @@ Nachrichten können auf verschiedene Weisen authentifiziert werden, so dass *Per
 
     .. hint::
 
-        Bei *Man-in-the-Middle-Angriffen* handelt es sich um einen Fachbegriff und häufig wird zum Beispiel Eve oder Mallory verwendet, um die Person zu bezeichnen, die den Angriff durchführt. Gelegentlich wird auch *Adversary-in-the-Middle* oder *Person-in-the-Middle* verwendet.
+        Bei *Person-in-the-Middle-Angriffen* handelt es sich um einen Fachbegriff und häufig wird zum Beispiel Eve oder Mallory verwendet, um die Person zu bezeichnen, die den Angriff durchführt. Gelegentlich wird auch *Adversary-in-the-Middle* oder früher *Man-in-the-Middle* verwendet.
 
-    .. rubric:: Message-Digests
+    .. rubric:: Hashes und Message-Digests
 
     Im allgemeinen Sprachgebrauch wird auch von :eng:`Message Digests` gesprochen.
 
@@ -221,9 +225,10 @@ Anforderungen an die Resistenz von Hashfunktionen
 
 .. csv-table::
     :header: "", Preimage Resistant, Second Preimage Resistant, Collision Resistant
-    :class: incremental-table-rows highlight-line-on-hover
+    :class: incremental-table-rows highlight-row-on-hover booktabs table-data-align-center table-body-header-align-left
     :stub-columns: 1
     :widths: 28, 10, 10, 10
+
 
     Hash + Digitale Signaturen, ✓, ✓, ✓
     Einbruchserkennung und Viruserkennung, , ✓ ,
@@ -280,19 +285,19 @@ Struktur eines sicheren Hash-Codes
 
 .. class:: columns
 
--       :math:`IV` = Initialer Wert (Algorithmus-abhängig)
+-       IV = Initialer Wert (Algorithmus-abhängig)
 
-        :math:`CV_i` = Verkettungsvariable
+        CV\ :sub:`i` = Verkettungsvariable
 
-        :math:`Y_i` = i-er Eingabeblock
+        Y\ :sub:`i` = i-er Eingabeblock
 
-        :math:`f` = Kompressionsfunktion
+        f = Kompressionsfunktion
 
--       :math:`n` = Länge des Blocks
+-       n = Länge des Blocks
 
-        :math:`L` = Anzahl der Eingabeblöcke
+        L = Anzahl der Eingabeblöcke
 
-        :math:`b` = Länge des Eingabeblocks
+        b = Länge des Eingabeblocks
 
 .. supplemental::
 
@@ -312,10 +317,22 @@ Struktur eines sicheren Hash-Codes
 
     .. container:: peripheral
 
-        Wir nehmen hier an, dass die Nachricht ein Vielfaches von 256 Bit lang ist. Falls nicht, dann wenden wir Padding an.
+        Wir nehmen hier an, dass die Nachricht ein Vielfaches von 256 Bit lang ist. Falls nicht, dann wenden wir Padding an. Weiterhin gibt es eine 256 Bit lange Konstante, die für das hashen des ersten Blocks verwendet wird.
 
     .. solution::
         :pwd: alles nichts
+
+        Erste Beobachtung: die Funktion ist linear. D. h., Hash(M₁ ⨁ M₂) = Hash(M₁) ⨁ Hash(M₂).
+
+        Sei: M = B₁ || B₂ || ... || Bₙ
+
+        Dann ist: Hash(M) = B₁ ⨁ B₂ ⨁ ... ⨁ Bₙ
+
+        Es ist somit jederzeit möglich zum Beispiel ein Paar B' anzuhängen, da B' ⨁ B' = 0. Somit ist diese Funktion nicht kollisionsresistent.
+
+        Die Funktion weisst auch keinen Lawineneffekt auf!
+
+        Eine Permutation der Daten führt aufgrund der kommutativität und assoziativität von XOR dazu, dass das Ergebnis sich nicht ändert.
 
         Je nach Beschaffenheit der zugrunde liegenden Daten können wir die ursprüngliche Nachricht ggf. wiederherstellen bzw. diese liegt direkt vor. Stellen Sie sich z. B. vor, dass nur ein Block sinnvolle Daten enthält und alle anderen Blöcke einfach "0" sind.
 
@@ -374,7 +391,7 @@ Struktur eines sicheren Hash-Codes
     .. solution::
         :pwd: kein Startpunkt
 
-        Wir haben keinen Block der Nachricht, mit dem wir arbeiten können, und wir haben keinen Vorteil davon, zwei beliebige aber verschiedene Nachrichten zu finden, die denselben Hash haben. Bei der Passwortwiederherstellung liegt uns immer ein Hashwert vor, und wir versuchen, *eine* Nachricht zu finden, die diesen Hashwert erzeugt hat.
+        Wir haben keinen Block der Nachricht, mit dem wir arbeiten können, und wir haben keinen Vorteil davon, zwei beliebige aber verschiedene Nachrichten zu finden, die denselben Hash haben; eine reicht. Bei der Passwortwiederherstellung liegt uns immer ein Hashwert vor, und wir versuchen, *eine* Nachricht zu finden, die diesen Hashwert erzeugt hat.
 
 
 
@@ -413,7 +430,7 @@ Struktur eines sicheren Hash-Codes
 .. supplemental::
 
     - SHA-512 nimmt eine Nachricht beliebiger Größe und gibt einen 512-Bit-Hashwert zurück.
-    - Der IV von SHA-512 besteht aus den folgenden acht 64-Bit-Zahlen:
+    - Der IV von SHA-512 besteht aus den folgenden acht 64-Bit-Zahlen mit Wortgröße:
 
       ::
 
@@ -426,9 +443,9 @@ Struktur eines sicheren Hash-Codes
         1f83d9abfb41bd6b
         5be0cd19137e2179
 
-    - Die Addition erfolgt Wortweise modulo :math:`2^{64}`.
+    - Die Addition erfolgt wortweise modulo 2⁶⁴.
 
-    - Die Nachricht wird in 1024-Bit-Blöcke unterteilt. Die Nachricht wird - unabhängig von der tatsächlichen Länge - *immer* aufgefüllt (:eng:`padded`) und auf eine Länge  :math:`l \equiv 896 (mod\, 1024)` Bits gebracht.
+    - Die Nachricht wird in 1024-Bit-Blöcke unterteilt. Die Nachricht wird - unabhängig von der tatsächlichen Länge - *immer* aufgefüllt (:eng:`padded`) und auf eine Länge l ≡ 896 (mod 1024) Bits gebracht.
     - Das Padding besteht aus einem Bit mit Wert 1, gefolgt von der notwendigen Anzahl Nullen.
     - Am Ende wird die Länge der Nachricht als 128-Bit-Wert angehängt, um ein Vielfaches von 1024 zu erhalten.
 
@@ -466,9 +483,9 @@ SHA-512 Verarbeitung eines 1024-Bit-Blocks
 
 .. supplemental::
 
-    Die Additionen erfolgen Modulo :math:`2^{64}`.
+    Die Additionen erfolgen Modulo 2⁶⁴.
 
-    .. rubric:: Berechnung der :math:`W_i`
+    .. rubric:: Berechnung der W\ :sub:`i`
 
     :math:`W_0` bis :math:`W_{15}` sind die ersten 16 Wörter des 1024-Bit-Blocks. Die restlichen 64 Wörter werden wie folgt berechnet.
 
