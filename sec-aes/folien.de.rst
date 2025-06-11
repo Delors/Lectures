@@ -17,7 +17,7 @@ Advanced Encryption Standard (AES)
 
 :Dozent:        `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
 :Kontakt: michael.eichberg@dhbw.de
-:Version:       1.0.4
+:Version:       1.0.5
 
 .. class:: faded-out
 
@@ -545,7 +545,7 @@ Lawineneffekt in AES: Änderung im Klartext
         :align: center
         :widths: 90 400 325
         :stub-columns: 1
-        :header: Round,,"# unterschiedlicher Bits"
+        :header: Runde,,"# unterschiedlicher Bits"
 
             ,"0123456789abcdeffedcba9876543210
         0023456789abcdeffedcba9876543210",1
