@@ -3,7 +3,7 @@
    :lang: de
    :author: Michael Eichberg
    :keywords: Kontrollaufgaben, Polynomartihmetik
-   :description lang=de: Kontrollaufgaben in Hinblick auf Polynomarithmetik im Körper GF(2^x).
+   :description lang=de: Kontrollaufgaben in Hinblick auf Polynomarithmetik im Körper GF(2^x)
    :id: vorlesung-endliche-koerper-kontrollaufgaben
    :first-slide: last-viewed
    :master-password: WirklichSchwierig!
@@ -17,7 +17,7 @@ Endliche Körper - Kontrollaufgaben
 
 :Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
 :Kontakt: michael.eichberg@dhbw.de, Raum 149B
-:Version: 1.0
+:Version: 1.0.1
 
 
 .. class:: new-section
@@ -49,6 +49,8 @@ Klassenraumübung
         1. Ergebnis: :math:`(x^4 + x^3 + 1)`
         2. Ergebnis: :math:`(x^5 + x^3 + x^2 + x^3 + x + 1) = x^5 + x^2 + x + 1`
         3. Ergebnis: :math:`x^{11} \bmod (x^7 + x + 1) = (x^4 \times x^7) \bmod (x^7 + x + 1) = x^4 \times (x + 1) = x^5 + x^4`
+
+           Hinweis: :math:`x + 1` ist einfach der Rest, der Division von :math:`x^7` durch unser irreduzibles Polynom.
 
            Alternativ: :math:`x^{11} / (x^7 + x + 1) = x^4 + \frac{(x^5 + x^4)}{x^7 + x + 1} \Rightarrow \text{d. h. der Rest ist } x^5 + x^4`
         4. Ergebnis:
