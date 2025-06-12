@@ -17,7 +17,7 @@ Cascading Style Sheets (CSS)
 
 :Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
 :Kontakt: michael.eichberg@dhbw.de, Raum 149B
-:Version: 1.4.1
+:Version: 1.5
 
 .. supplemental::
 
@@ -3102,22 +3102,39 @@ CSS-Layers - Beispiel
 
         *Spielwiese*
 
-        .. container::
+        .. module:: lightweight-css-editor
+
+            <config>
+            <height>8lh</height>
+            <style>/* @layer overrides; */
+            @layer basis {
+                p#the-one{color:green;}
+            }
+            @layer overrides {
+                p{color:red;}
+            }
+            /* @layer basis{p#the-one{color:blue;}} */'</style>
+            <body>&lt;p id="the-one"&gt;Dies ist ein Absatz.&lt;/p&gt;</body>
+            </config>
+
+        .. container  :  :
 
             .. raw:: html
 
                 <template shadowrootmode="open">
                 <style>
                     style[contenteditable] {
-                        font-family:var(--code-font-family);
-                        font-size: smaller;
-                        display:block;
-                        white-space: pre;
-                        overflow: scroll;
+                        display: block;
                         position: relative;
+
+                        height: 8lh;
+                        overflow: scroll;
                         border: thin solid black;
                         padding: 0.25em;
-                        height: 8lh;
+
+                        font-family: var(--code-font-family);
+                        font-size: smaller;
+                        white-space: pre;
 
                         &::before {
                             content: "🖊️";
@@ -3217,8 +3234,133 @@ Web Komponenten (Shadow DOM und CSS)\ [#]_
 Shadow DOM und Light DOM
 ------------------------------------------------
 
-- Web Komponenten ermöglichen die Kapselung von HTML, CSS (und JavaScript) in einem eigenen Kontext, dem Shadow DOM.
-- Der Shadow DOM ermöglicht eine klare Trennung von Stilen und Verhalten der Komponente von dem umgebenden Dokument, dem Light DOM.
+.. story::
+
+    .. class:: incremental-list
+
+    - Web Komponenten ermöglichen die Kapselung von HTML, CSS (und JavaScript) in einem eigenen Kontext, dem Shadow DOM.
+    - Der Shadow DOM ermöglicht eine klare Trennung von Stilen und Verhalten der Komponente von dem umgebenden Dokument.
+    - *normale* Kindelemente des Shadow Host bilden den Light DOM und können aus dem Shadow DOM via :html:`<slot>` referenziert werden.
+
+    - Struktur:
+
+      .. container::
+
+        .. raw:: html
+
+            <template shadowrootmode="open">
+                <style>
+                </style>
+                <div style="background-color: orange; padding: 1em">
+                    Shadow Host Element (typischerweise/häufig ein DIV oder <i>custom</i> Element)
+                    <div width=30ch height=5lh style="background-color: darkgreen; color: white; padding: 1em; margin-bottom: 1em">
+                    Light DOM
+                    </div>
+                    <div width=30ch height=5lh style="background-color: darkred; color: white; padding: 1em;">
+                        #Shadow Root
+                        <div width=30ch height=5lh style="background-color: darkblue; color: white; padding: 1em; padding-left: 0em;">
+                        Content (Shadow DOM)
+                        </div>
+                    </div>
+                </div>
+            </template>
+
+
+.. supplemental::
+
+    Der Light DOM sind die Kindelement des *Shadow Host*. Diese werden nicht gerendert.
+
+
+
+(Declarative) Shadow/Light DOM  - Anwendungsbeispiel
+---------------------------------------------------------
+
+.. grid::
+
+    .. cell:: width-60
+
+        .. rubric:: Code
+
+        .. code:: html
+            :number-lines:
+            :class: copy-to-clipboard
+
+            <div>   <!-- Das h2 Element wird "slotted"! -->
+                    <h2 style="color: var(--c)">Demo</h2>
+              <template shadowrootmode="open">
+                <style>
+                  style[contenteditable] {
+                    display: block;
+                    font-family: var(--code-font-family); }
+                </style>
+                <style contenteditable
+                       onkeydown="event.stopPropagation()">
+                   /* :host { --code-font-family: Serif; }*/
+                   p#the-one{color:green;}</style>
+                <slot></slot>
+                <p>Dies ist der erste Absatz.</>
+                <p id="the-one">Dies ist ein Absatz.</p>
+              </template></div>
+
+    .. cell:: width-40
+
+        .. rubric:: Eingebettet
+
+        (⚠️ :red:`keine Spiegelung!`)
+
+        .. container::
+
+            .. raw:: html
+
+                <div>
+                <h2 style="color: var(--c)">Demo</h2>
+                <template shadowrootmode="open">
+                    <style>
+                        style[contenteditable] {
+                            display: block;
+                            position: relative;
+
+                            height: 8lh;
+                            overflow: scroll;
+                            border: thin solid black;
+                            padding: 0.25em;
+
+                            font-family: var(--code-font-family);
+                            font-size: smaller;
+                            white-space: pre;
+
+                            &::before {
+                                content: "🖊️";
+                                position: absolute;
+                                top: 0.1em;
+                                right: 0.1em;
+                            }
+                        }
+                    </style>
+                    <style contenteditable onkeydown="event.stopPropagation()">/*:host {
+                     --code-font-family: Serif;
+                }*/
+                /*:host { --c: red; }*/
+                p#the-one{color:green;}
+                    </style>
+                    <slot></slot>
+                    <p>Dies ist der erste Absatz.</>
+                    <p id="the-one">Dies ist ein Absatz.</p>
+                </template>
+                </div>
+
+
+.. supplemental::
+
+    Slotted Elemente befinden sich im Light DOM, werden aber visuell im Shadow DOM über :html:`<slot>` angezeigt.
+    Ihr Layout kann nicht direkt vom Shadow DOM beeinflusst werden.
+    CSS-Variablen (:css:`--var`) hingegen können vom Shadow DOM nach außen vererbt und vom Light DOM genutzt werden.
+    Für ein slotted Element gilt grundsätzlich das CSS des Light DOMs, außer es wird über :css:`::slotted(...)` gestylt.
+
+    Wenn ein :html:`<template>`-Element das Attribut :html:`shadowrootmode="open"` hat, erzeugt der Browser beim Parsen automatisch einen Shadow Root für das direkt übergeordnete Element.
+    Der Inhalt des :html:`<template>` wird in diesen Shadow Root übernommen und automatisch gerendert, sofern der Browser Declarative Shadow DOM unterstützt.
+
+
 
 
 Ausgewählte vererbte CSS Eigenschaften
@@ -3228,7 +3370,7 @@ Ausgewählte vererbte CSS Eigenschaften
 
     Die folgenden Eigenschaften werden vererbt, und gelten auch im Shadow DOM von Web Komponenten; solange diese nicht überschrieben werden.
 
-    .. class:: incremental-table-rows booktabs
+    .. class:: incremental-table-rows booktabs sticky-header
 
     +------------------------------+----------------------------------------------------------------------------------------------------------+
     | Kategorie                    | Vererbte CSS Eigenschaften                                                                               |
@@ -3281,6 +3423,54 @@ Ausgewählte vererbte CSS Eigenschaften
     +------------------------------+----------------------------------------------------------------------------------------------------------+
 
 
+.. class:: exercises
+
+Übung - Shadow und Light DOM
+--------------------------------
+
+.. exercise:: Shadow DOM und Slots verstehen
+
+    .. code:: html
+        :number-lines:
+        :class: copy-to-clipboard float-right
+
+        <x-demo>
+          <template shadowrootmode="open">
+            <style>
+              ::slotted(p) { color: green; }
+            </style>
+            <slot></slot>
+          </template>
+          <p>Hallo Welt!</p>
+        </x-demo>
+
+    1. Welche Rolle spielt das :html:`<template>`-Element in diesem Beispiel?
+    2. Was passiert beim Parsen dieses Dokuments mit dem Inhalt des `template`-Elements?
+    3. Warum wird der Text „Hallo Welt!“ in grün dargestellt?
+    4. Wie müsste man den Code ändern, damit der Text **nicht** mehr sichtbar ist, obwohl er im DOM vorhanden bleibt?
+    5. Ergänzen Sie den Code so, dass mehrere Slots mit Namen verwendet werden. Dazu geben Sie bei den Element im Light DOM den Namen mittels des slot attributes an (z. B. :html:`<p slot="footer">`) und referenzieren diesen dann durch die Angabe des Namens im :html:`<slot>` Elements (z. B. `<slot name="header">` und `<slot name="footer">`).
+
+    .. solution::
+        :pwd: SlotIt
+
+        1. Das `template` dient zur Definition eines Shadow DOM-Inhalts für das Element `<x-test>`.
+        2. Da `shadowrootmode="open"` gesetzt ist und sich das Template im Inneren von `<x-test>` befindet, erzeugt der Browser beim Parsen automatisch einen Shadow Root für `<x-test>` und kopiert den Template-Inhalt hinein.
+        3. Das `<p>`-Element im Light DOM wird durch den `<slot>` im Shadow DOM eingeblendet. Das Shadow DOM enthält ein CSS mit `::slotted(p)`, das die Textfarbe auf grün setzt.
+        4. Entfernt man das `<slot>` aus dem Template, wird der Light DOM-Inhalt nicht mehr angezeigt, obwohl er im DOM noch vorhanden ist.
+        5. Beispiel:
+
+           .. code-block:: html
+
+            <x-test>
+              <template shadowrootmode="open">
+                <slot name="header"></slot>
+                <hr>
+                <slot name="footer"></slot>
+              </template>
+              <h1 slot="header">Überschrift</h1>
+              <p slot="footer">Fußzeile</p>
+            </x-test>
+
 
 
 
@@ -3290,22 +3480,22 @@ Ausgewählte vererbte CSS Eigenschaften
 
 .. class:: transition-fade
 
-Nicht Behandelte Themen
+Nicht Behandelte Themen (Auszug)
 ------------------------------------------------
 
 - Counter
-- Transformation (skalieren, drehen, ...)
+- Transformations (skalieren, drehen, ...)
 
   .. scaling using  :css:`scale`  vs. using  :css:`transform: scale`
 
 - Animation
 - (bisher nur grob) Flexbox  (`A guide to flex-box <https://css-tricks.com/snippets/css/a-guide-to-flexbox/>`__)
 - Grid-Layout (`A complete guide to CSS Grid <https://css-tricks.com/snippets/css/complete-guide-grid/>`__)
-- CSS Tricks
+- (mehr) CSS Tricks
 - Dokumente mit alternativen Flussrichtungen (rechts nach links / oben nach unten)
 - CSS bzgl. Printing
 - ...
 
 .. supplemental::
 
-    Es gibt sehr, sehr viele CSS Tricks die Dinge ermöglichen, die nicht unmittelbar zu erwarten gewesen wären. Z. B. kann man einem Element einen Index zuordnen basierend auf dem ":nth-child()" Selektor. Dieser Index kann dann für „die Berechnung“ von weiteren Werten verwendet werden.
+    Es gibt sehr, sehr viele CSS Tricks die Dinge ermöglichen, die nicht unmittelbar zu erwarten gewesen wären. Z. B. kann man einem Element einen Index zuordnen basierend auf dem ":nth-child()" Selektor in Kombination mit einer CSS Variable. Dieser Index kann dann für „die Berechnung“ von weiteren Werten verwendet werden.
