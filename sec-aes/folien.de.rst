@@ -11,13 +11,18 @@
 .. include:: ../docutils.defs
 
 
+.. |Kontrollaufgaben| source:: kontrollaufgaben.de.rst
+    :path: relative
+    :prefix: https://delors.github.io/
+    :suffix: .html
+
 
 Advanced Encryption Standard (AES)
 ===============================================
 
-:Dozent:        `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
+:Dozent:  `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
 :Kontakt: michael.eichberg@dhbw.de
-:Version:       1.0.5
+:Version: 1.0.7
 
 .. class:: faded-out
 
@@ -29,12 +34,17 @@ Advanced Encryption Standard (AES)
 
 .. supplemental::
 
-  :Folien:
-      :HTML: |html-source|
+    :Folien:
+        :HTML: |html-source|
 
-      :PDF: |pdf-source|
-  :Fehler melden:
-      https://github.com/Delors/delors.github.io/issues
+        :PDF: |pdf-source|
+
+    :Kontrollaufgaben:
+
+        |Kontrollaufgaben|
+
+    :Fehler melden:
+        https://github.com/Delors/delors.github.io/issues
 
 
 
@@ -444,8 +454,8 @@ AES Schlüsselexpansion - Visualisiert
 
 
 
-AES *Round Key* Berechnung
------------------------------
+AES *Round Constant* Berechnung
+---------------------------------
 
 .. math::
 
@@ -468,7 +478,7 @@ AES *Round Key* Berechnung
         x_6x_5x_5x_4x_3x_2x_1x_00 \oplus 0001 1011,& if\; x_7 = 1\\
         \end{cases}
 
-.. admonition:: Die *Round Key* Werte
+.. admonition:: Die *Round Constant* Werte
     :class: incremental
 
     :math:`r_{c_{1}}=01, r_{c_{2}}=02,r_{c_{3}}=04,r_{c_{4}}=08,r_{c_{5}}=10`
@@ -712,22 +722,21 @@ AES kann effizient auf einem 32-Bit-Prozessor implementiert werden:
 
 .. class:: exercises
 
-Übung (AES-128) - Berechnung des *RoundKey*
+Übung (AES-128)
 --------------------------------------------
 
-Sei der folgende *RoundKey* gegeben:
+.. exercise:: Formeln für die Berechnung des RoundKey aufstellen
+    :formatted-title: Formeln für die Berechnung des *RoundKey* aufstellen
 
-:math:`rk_1=w[4]\,||\,w[5]\,||\,w[6]\,||\,w[7]` :math:`=`
+    Sei der folgende *RoundKey* gegeben:
 
-``-w[4]------   -w[5]------   -w[6]------   -w[7]------``
+    :math:`rk_1=w[4]\,||\,w[5]\,||\,w[6]\,||\,w[7]` :math:`=`
 
-``E2 32 FC F1   91 12 91 88   B1 59 E4 E6   D6 79 A2 93``
+    ``-w[4]------   -w[5]------   -w[6]------   -w[7]------``
 
-In Hinblick auf die Berechnung von :math:`rk_2`; d. h. den Rundschlüssel (*Roundkey*) für die zweite Runde, führe folgende Schritte durch.
+    ``E2 32 FC F1   91 12 91 88   B1 59 E4 E6   D6 79 A2 93``
 
-.. exercise::
-
-    .. rubric:: Formeln für die Berechnung des *RoundKey*
+    In Hinblick auf die Berechnung von :math:`rk_2`; d. h. den Rundschlüssel (*Roundkey*) für die zweite Runde, führe folgende Schritte durch.
 
     Bevor Sie die konkrete Berechnung durchführen, schreiben Sie zunächst die Formeln für:
     :math:`w[8] = \ldots \oplus \ldots \quad w[9]= \ldots \oplus \ldots  \quad w[10]= \ldots \oplus \ldots \quad w[11]= \ldots \oplus \ldots` auf.
@@ -746,9 +755,8 @@ In Hinblick auf die Berechnung von :math:`rk_2`; d. h. den Rundschlüssel (*Ro
             w[11] = w[7] \oplus w[10]
 
 
-.. exercise::
-
-    .. rubric:: Berechne :math:`w[8]` und :math:`w[9]`.
+.. exercise:: Berechne w[8] und w[9]
+    :formatted-title: Berechne :math:`w[8]` und :math:`w[9]`
 
     .. solution:: :math:`w[8]` und :math:`w[9]`:
         :pwd: w8undw9
@@ -779,9 +787,8 @@ Nehmen wir an, dass der Zustand (*State*) folgendermaßen sei:
    0E 08 1B 31
    54 59 0B 1A
 
-.. exercise::
-
-    .. rubric:: Führen Sie den *Substitute Bytes* Schritt durch (Anwendung der S-box Transformation).
+.. exercise:: Durchführung der Substitute Bytes Transformation
+    :formatted-title: Führen Sie den *Substitute Bytes* Schritt durch (Anwendung der S-box Transformation)
 
     .. solution:: Substitute Bytes
         :pwd: subBytes
@@ -793,9 +800,8 @@ Nehmen wir an, dass der Zustand (*State*) folgendermaßen sei:
             AB 30 AF C7
             20 CB 2B A2
 
-.. exercise::
-
-    .. rubric:: Führen Sie die *Shift Rows Transformation* auf dem Ergebnis des vorherigen Schrittes durch.
+.. exercise:: Durchführung der Shift Rows Transformation
+    :formatted-title: Führen Sie die *Shift Rows Transformation* auf dem Ergebnis des vorherigen Schrittes durch.
 
     .. solution::
         :pwd: ShiftIt
