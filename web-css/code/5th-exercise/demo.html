@@ -1,0 +1,17 @@
+<h1>Demo des deklarativen Shadow Roots</h1>
+<x-demo>
+  <template shadowrootmode="open">
+    <style>
+      ::slotted(p) { color: green; }
+      ::slotted(p pre) { color: blue; } /* <= such selectors are not allowed! */
+      ::slotted(pre) { font-weight: 900; } 
+      ::slotted(.pre) { font-style: italic; }
+    </style>
+    <slot></slot>
+  </template>
+  <p>Hallo Welt!
+    <pre class="pre">
+      ACHTUNG GEFAHR!
+    </pre>
+  </p>
+</x-demo>
