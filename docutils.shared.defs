@@ -1,0 +1,86 @@
+.. This file is intended to be included in rst files and contains
+   substitution definitions as wells as role definitions frequently
+   used in LectureDoc documents.
+
+   Created 2025 - Michael Eichberg
+
+.. SUBSTITUTIONS
+
+.. |date| date::
+
+.. |at| unicode:: 0x40
+.. |qm| unicode:: 0x22
+
+.. ANIMATION RELATED
+
+.. role:: incremental
+
+.. LANGUAGE RELATED
+
+.. role:: eng
+.. role:: ger
+
+.. TEXT RELATED
+
+.. role:: black
+.. role:: gray
+.. role:: light-gray
+.. role:: white
+.. role:: blue
+.. role:: red
+.. role:: shiny-red
+.. role:: dark-red
+.. role:: green
+.. role:: shiny-green
+.. role:: orange
+.. role:: dark-orange
+
+.. role:: emph
+.. role:: obsolete
+.. role:: peripheral
+.. role:: monospaced
+
+.. role:: kbd
+
+
+.. The following definitions enable "lightweight" definitions of mathematical
+   expressions that resemble MathJax 3.2.2 definitions without causing the overhead
+   incurred by MathJax.
+   Both (are intended to) change the font to the font used by MathJax 3.2.2.
+   "math-r" uses the normal style which is used by MathJax for numbers.
+   "math-i" uses (the italic) font which is used by MathJax for other characters.
+
+.. role:: math-r
+.. role:: math-i
+
+.. role:: console(code)
+   :language: console
+
+.. role:: latex(code)
+   :language: latex
+
+.. role:: css(code)
+   :language: css
+
+.. role:: js(code)
+   :language: javascript
+.. role:: javascript(code)
+   :language: javascript
+
+.. role:: python(code)
+   :language: python
+
+.. role:: c(code)
+   :language: c
+
+.. role:: java(code)
+   :language: java
+
+.. role:: xml(code)
+   :language: xml
+
+.. role:: html(code)
+   :language: html
+
+.. role:: raw-html(raw)
+   :format: html
