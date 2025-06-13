@@ -17,7 +17,7 @@ Cascading Style Sheets (CSS)
 
 :Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
 :Kontakt: michael.eichberg@dhbw.de, Raum 149B
-:Version: 1.5
+:Version: 1.5.1
 
 .. supplemental::
 
@@ -3117,45 +3117,6 @@ CSS-Layers - Beispiel
             <body>&lt;p id="the-one"&gt;Dies ist ein Absatz.&lt;/p&gt;</body>
             </config>
 
-        .. container  :  :
-
-            .. raw:: html
-
-                <template shadowrootmode="open">
-                <style>
-                    style[contenteditable] {
-                        display: block;
-                        position: relative;
-
-                        height: 8lh;
-                        overflow: scroll;
-                        border: thin solid black;
-                        padding: 0.25em;
-
-                        font-family: var(--code-font-family);
-                        font-size: smaller;
-                        white-space: pre;
-
-                        &::before {
-                            content: "🖊️";
-                            position: absolute;
-                            top: 0.1em;
-                            right: 0.1em;
-                        }
-                    }
-                </style>
-                <style contenteditable onkeydown="event.stopPropagation()">/* @layer overrides; */
-                @layer basis {
-                    p#the-one{color:green;}
-                }
-                @layer overrides {
-                    p{color:red;}
-                }
-                /* @layer basis{p#the-one{color:blue;}} */
-                </style>
-                <p id="the-one">Dies ist ein Absatz.</p>
-                </template>
-
 
 
 Verschachtelte CSS-Layers
@@ -3306,8 +3267,6 @@ Shadow DOM und Light DOM
 
         .. rubric:: Eingebettet
 
-        (⚠️ :red:`keine Spiegelung!`)
-
         .. container::
 
             .. raw:: html
@@ -3335,6 +3294,18 @@ Shadow DOM und Light DOM
                                 top: 0.1em;
                                 right: 0.1em;
                             }
+
+                            &::after {
+                                position: absolute;
+                                content: "⚠️keine Spiegelung";
+                                font-size: 0.6em;
+                                background-color: rgba(255,200,200,0.5);
+                                bottom: 0;
+                                left: 0;
+                                width: 100%;
+                                padding: 0.15em;
+                                text-align: center;
+                            }
                         }
                     </style>
                     <style contenteditable onkeydown="event.stopPropagation()">/*:host {
@@ -3354,11 +3325,13 @@ Shadow DOM und Light DOM
 
     Slotted Elemente befinden sich im Light DOM, werden aber visuell im Shadow DOM über :html:`<slot>` angezeigt.
     Ihr Layout kann nicht direkt vom Shadow DOM beeinflusst werden.
+
     CSS-Variablen (:css:`--var`) hingegen können vom Shadow DOM nach außen vererbt und vom Light DOM genutzt werden.
+
     Für ein slotted Element gilt grundsätzlich das CSS des Light DOMs, außer es wird über :css:`::slotted(...)` gestylt.
 
     Wenn ein :html:`<template>`-Element das Attribut :html:`shadowrootmode="open"` hat, erzeugt der Browser beim Parsen automatisch einen Shadow Root für das direkt übergeordnete Element.
-    Der Inhalt des :html:`<template>` wird in diesen Shadow Root übernommen und automatisch gerendert, sofern der Browser Declarative Shadow DOM unterstützt.
+    Der Inhalt des :html:`<template>` wird in diesen Shadow Root übernommen und automatisch gerendert, sofern der Browser deklarative Shadow DOMs unterstützt.
 
 
 
