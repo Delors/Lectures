@@ -17,7 +17,7 @@ Betriebsmodi bei Blockchiffren
 
 :Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
 :Kontakt: michael.eichberg@dhbw.de
-:Version: 1.2
+:Version: 1.3
 :Basierend auf: *Cryptography and Network Security - Principles and Practice, 8th Edition, William Stallings*
 
 .. supplemental::
@@ -98,13 +98,67 @@ Electronic Codebook\ [#]_
 
 
 
+Padding-Modi in Blockchiffren
+-------------------------------------
+
+.. story::
+
+    .. remark::
+
+        Bei Blockchiffren (z. B. AES mit 128 Bit = 16 Byte Blockgröße) muss die zu verschlüsselnde Nachricht eine exakte Vielfache der Blockgröße sein. Ist das nicht der Fall, wird Padding verwendet, um die Nachricht auf eine vielfaches der Blockgröße zu bringen.
+
+    .. rubric:: Ausgewählte Modi
+
+    .. class:: incremental-list
+
+    - PKCS#7
+
+      Füllt den restlichen Block mit Bytes, deren Wert gleich der Anzahl hinzugefügter Bytes ist.
+
+      .. example::
+
+        - Nachricht mit 13 Byte → 3 Bytes Padding → ``03 03 03``
+        - Nachricht mit Blocklänge (z. B. 16 Byte) → ein kompletter zusätzlicher Block mit 16 × ``0x10``
+
+    - ANSI X.923
+
+      Auffüllen mit ``0x00``, außer dem letzten Byte, das die Anzahl Padding-Bytes angibt.
+
+    - ISO/IEC 7816-4
+
+      Beginnt mit ``0x80``, gefolgt von Nullen.
+
+    - Zero Padding
+
+      .. attention::
+
+        Füllt mit Nullen (``0x00``). Funktioniert **nur**, wenn die Nachricht nie mit `0x00` endet, sonst ist Entschlüsselung mehrdeutig!
+
+    .. compound::
+        :class: incremental
+
+        .. rubric:: Verhalten bei voller Blockgröße - Zusammenfassung
+
+        Angenommen, die Nachricht ist exakt 16 Byte lang (z. B. `"1234567890ABCDEF"`), so ergibt sich:
+
+        =================  ======================================================
+        **Padding-Modus**   **Erweiterte Nachricht (hex)**
+        PKCS#7              `... 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10`
+        ANSI X.923          `... 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 10`
+        ISO/IEC 7816-4      `... 80 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00`
+        Zero Padding        `... 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00`
+        =================  ======================================================
+
+        Hinweis: Bei allen Modi wird bei Nachrichten mit dem x-fachen der Blocklänge ein **zusätzlicher** Padding-Block hinzugefügt, um bei der Entschlüsselung korrekt erkennen zu können, ob Padding entfernt werden muss.
+
+
+
 Probleme bei der Verwendung der Verschlüsselung im ECB-Modus
 ----------------------------------------------------------------
 
 .. deck::
 
     .. card::
-
 
         .. grid::
 
