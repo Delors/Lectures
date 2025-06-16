@@ -3,7 +3,13 @@
 
 <head>
     <script>
-        const ws = new WebSocket("ws://localhost:8800/player");
+        let ws = undefined
+        try {
+            ws = new WebSocket("ws://localhost:5557/player");
+        } catch (e) {
+            alert("WebSocket connection failed: " + e);
+            document.getElementById("main").innerText = "WebSocket connection failed. Please check the server.";
+        }
         ws.onmessage = (event) => {
             const data = JSON.parse(event.data);
             switch (data.type) {

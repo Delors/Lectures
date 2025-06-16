@@ -17,7 +17,7 @@ Cascading Style Sheets (CSS)
 
 :Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
 :Kontakt: michael.eichberg@dhbw.de, Raum 149B
-:Version: 1.5.1
+:Version: 1.5.2
 
 .. supplemental::
 
@@ -3421,7 +3421,7 @@ Ausgewählte vererbte CSS Eigenschaften
     2. Was passiert beim Parsen dieses Dokuments mit dem Inhalt des `template`-Elements?
     3. Warum wird der Text „Hallo Welt!“ in grün dargestellt?
     4. Wie müsste man den Code ändern, damit der Text **nicht** mehr sichtbar ist, obwohl er im DOM vorhanden bleibt?
-    5. Ergänzen Sie den Code so, dass mehrere Slots mit Namen verwendet werden. Dazu geben Sie bei den Element im Light DOM den Namen mittels des slot attributes an (z. B. :html:`<p slot="footer">`) und referenzieren diesen dann durch die Angabe des Namens im :html:`<slot>` Elements (z. B. `<slot name="header">` und `<slot name="footer">`).
+    5. Ergänzen Sie den Code so, dass mehrere Slots mit Namen verwendet werden. Dazu geben Sie bei den Element im Light DOM den Namen mittels des slot attributes an (z. B. :html:`<p slot="footer">`) und referenzieren diesen dann durch die Angabe des Namens im :html:`<slot>` Elements (z. B. :html:`<slot name="header">` und :html:`<slot name="footer">`).
 
     .. solution::
         :pwd: SlotIt

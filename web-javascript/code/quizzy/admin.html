@@ -3,7 +3,7 @@
 
 <head>
     <script>
-        const ws = new WebSocket("ws://localhost:8800/admin");
+        const ws = new WebSocket("ws://localhost:5557/admin");
 
         ws.onmessage = (event) => {
             const data = JSON.parse(event.data);

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quizzy Demo</title>
+    <script src="quizzy.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        button {
+            padding: 10px 15px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Quizzy Demo</h1>
+    <ld-quizzy ws-url="ws://localhost:5557">
+        <!-- When used as a real component, we have to either specify the questions here and send them to the server when required, or refer to a set of questions stored on the server by means of a parameter/attribute... -->
+    </ld-quizzy>
+    <p>Enjoy</p>
+</body>
+
+</html>

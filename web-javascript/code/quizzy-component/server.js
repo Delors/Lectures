@@ -12,7 +12,6 @@ let correctAnswersCount = 0;
 
 app.use(express.static('.')); // required to serve static files
 
-
 function sendCurrentPlayers() {
     if (adminWS && playerWSs.length > 0) {
         allPlayers = playerWSs
