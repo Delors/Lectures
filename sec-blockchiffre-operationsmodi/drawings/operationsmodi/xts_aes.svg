@@ -92,7 +92,7 @@
       <title>Layer 1</title>
       <g id="Line_304">
         <path
-                    d="M -638.4273 716.044 L -638.4273 787.4239 L -638.4273 872 L -613.6569 871.9078"
+                    d="M -638.4273 716.044 L -638.4273 787.4239 L -638.4273 872 L -602 872"
                     marker-end="url(#FilledArrow_Marker)"
                     stroke="black"
                     stroke-linecap="round"
@@ -1019,7 +1019,7 @@
       </g>
       <g id="Line_224">
         <path
-                    d="M -953.2443 716.1415 L -952.7837 871.2275 L -927.7155 871.4467"
+                    d="M -953 716.1415 L -953 871.4467 L -928 871.4467"
                     marker-end="url(#FilledArrow_Marker)"
                     stroke="black"
                     stroke-linecap="round"
