@@ -180,3 +180,36 @@ Code Reviews von HTML
     - Werden übermäßig große Bilder/Icons vermieden?
 
     - Sind Links inhaltlich nachvollziehbar?
+
+
+Code Reviews von JavaScript
+----------------------------
+
+.. story::
+
+    .. class:: incremental-list
+
+    - Macht der Code was er vorgibt zu tun?
+
+      (D. h. sind Variablen, Klassen, Methoden, ... -namen korrekt und sinnvoll?)
+    - Werden Sonderfälle und Fehlerzustände behandelt?
+    - Ist die Fehlerbehandlung konsisten und für den Endnutzer nachvollziehbar?
+    - Werden keine Fehler „verschluckt“?
+    - Wird null/undefined korrekt behandelt?
+    - Wird modernes JavaScript verwendet (z. B. Klassen, :javascript:`const` und :javascript:`let` anstatt von `var`, Destrukturierung, Spread und Rest Operator etc.)?
+    - Wird :javascript:`eval()` nicht verwendet?
+    - Werden asynchrone Funktionen richtige verwendet?
+    - Ist der Kontrollfluss verständlich?
+
+      (Nachfragen deuten auf Probleme bzgl. der Verständlichkeit hin.)
+    - Ist der Code modularisiert?
+    - Wird auf tief verschachteltete Logik verzichtet?
+    - Werden teure Manipulationen (des DOMs) auf das notwendige Minimum beschränkt?
+    - Werden Eingaben validiert (auf Client und **Server** Seite)?
+    - Ist das Logging von Fehlern (Error) sinnvoll und enthält genug Kontextinformationen?
+    - Gibt es Testfälle? Falls ja, sind diese ausreichend?
+
+      (Codeabdeckung ist hier *nur* ein erster Indikator.)
+    - Wird nur minimaler globaler Zustand verwendet?
+    - Ist die (Inline-)Dokumentation ausreichend und korrekt.
+    - Sind die TODOs, FIXMEs verständlich und umsetzbar?
