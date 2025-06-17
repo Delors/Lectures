@@ -4,10 +4,9 @@ const someJSON = `{
     "cars": {
         "American": ["Ford"],
         "German": ["BMW", "Mercedes", "Audi"],
-        "Italian": ["Fiat","Alfa Romeo", "Ferrari"] 
+        "Italian": ["Fiat","Alfa Romeo", "Ferrari"]
     }
-}
-`
+}`;
 
 // JSON.parse(...) JSON String => JavaScript Object
 const someObject = JSON.parse(someJSON);

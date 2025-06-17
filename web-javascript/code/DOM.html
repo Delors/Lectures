@@ -10,9 +10,10 @@
                     scriptElement.contentEditable = false;
                     const style = scriptElement.style;
                     style.display = "block";
+                    style.fontFamily = "menlo, monospaced";
                     style.whiteSpace = "preserve";
-                    style.padding = "1em";
-                    style.backgroundColor = "yellow";
+                    style.padding = "0.25em";
+                    style.backgroundColor = "lightyellow";
                 }
             }
         </script>
@@ -33,14 +34,8 @@
         <script>
             const demoElement = document.getElementById("demo");
             const style = demoElement.style;
-            demoElement.addEventListener(
-                "mouseover",
-                () => (style.color = "green"),
-            );
-            demoElement.addEventListener(
-                "mouseout",
-                () => (style.color = "unset"),
-            );
+            demoElement.addEventListener("mouseover", () => (style.color = "green"));
+            demoElement.addEventListener("mouseout", () => (style.color = "unset"));
         </script>
 
         <p>Position der Mouse: <span id="position"></span></p>

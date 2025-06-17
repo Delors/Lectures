@@ -18,7 +18,7 @@ Eine kurze Einführung/eine kurze Übersicht über JavaScript für erfahrene Pro
 
 :Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
 :Kontakt: michael.eichberg@dhbw.de, Raum 149B
-:Version: 2.0
+:Version: 2.1
 
 .. supplemental::
 
@@ -102,23 +102,23 @@ Grundlagen
 Reservierte Schlüsselworte
 -----------------------------
 
-Schlüsselworte:
+.. rubric:: Genutzte Schlüsselworte
 
 .. class:: incremental-list
 
-  - ``function, async, await, return, yield``
-  - ``break, continue, case, default, do, else, for, if, instanceof, of, typeof, switch, while``
-  - ``throw, try, finally, catch``
-  - ``class, delete, extends, in, new, static, super, this``
-  - ``const, let, var``
-  - ``export, import``
+  - :javascript:`function`, :javascript:`async`, :javascript:`await`, :javascript:`return`, :javascript:`yield`, :javascript:`void`
+  - :javascript:`break`, :javascript:`continue`, :javascript:`case`, :javascript:`default`, :javascript:`do`, :javascript:`else`, :javascript:`for`, :javascript:`if`, :javascript:`instanceof`, :javascript:`of`, :javascript:`typeof`, :javascript:`switch`, :javascript:`while`
+  - :javascript:`throw`, :javascript:`try`, :javascript:`finally`, :javascript:`catch`
+  - :javascript:`class`, :javascript:`delete`, :javascript:`extends`, :javascript:`in`, :javascript:`new`, :javascript:`static`, :javascript:`super`, :javascript:`this`
+  - :javascript:`const`, :javascript:`let`, :javascript:`var`
+  - :javascript:`export`, :javascript:`import`
 
 .. remark::
-   :class: incremental margin-top-1em
+   :class: incremental
 
-   Nicht genutzte Schlüsselworte:
+   Nicht (mehr) genutzte Schlüsselworte:
 
-   ``enum, implements, interface, package, private, protected, public, void, with`` (no longer)
+   :javascript:`enum`, :javascript:`implements`, :javascript:`interface`, :javascript:`package`, :javascript:`private`, :javascript:`protected`, :javascript:`public`, :javascript:`with` (no longer)
 
 
 
@@ -183,7 +183,6 @@ ________________________________________________________________________________
       :start-line: 2
       :end-before: done();
       :number-lines:
-      :class: code far-far-smaller copy-to-clipboard
       :tab-width: 2
 
 .. supplemental::
@@ -212,7 +211,6 @@ ________________________________________________________________________________
    .. include:: code/Datatypes.js
       :code: javascript
       :number-lines:
-      :class: code far-far-smaller copy-to-clipboard
       :tab-width: 2
 
 
@@ -227,7 +225,6 @@ ________________________________________________________________________________
       :start-line: 3
       :end-before: ////////////////////////////////////////////////////////////////////////////////
       :number-lines:
-      :class: code far-far-smaller copy-to-clipboard
       :tab-width: 2
 
 
@@ -277,8 +274,10 @@ ________________________________________________________________________________
 
       - das von :js:`document.body` referenziert HTML Element enthält den gesamten Inhalt des Dokuments
       - die aktuellen Abmaße des Dokuments können Sie mit der Funktion :js:`window.getComputedStyle(<HTML Element>).height` ermitteln; geben Sie den Wert auf der Konsole aus bevor Sie das Dokument scrollen; was fällt Ihnen auf?
-      - um zu scrollen, können Sie window.scrollTo(x,y) verwenden
-      - um den Integer Wert eines Wertes in Pixeln zu bestimmen, können Sie :js:`parseInt` verwenden
+      - um zu scrollen, können Sie :js:`window.scrollTo(x,y)` verwenden
+      - um den Integer Wert eines Wertes in Pixeln zu bestimmen, können Sie :js:`parseInt` verwenden.
+
+        (Sei der String: :js:`"100px"`, dann liefert :js:`parseInt`, den Wert :js:`100`).
 
    .. solution::
       :pwd: scrollTo(x,y)
@@ -300,12 +299,12 @@ ________________________________________________________________________________
       :start-line: 2
       :end-before: done();
       :number-lines:
-      :class: far-far-smaller copy-to-clipboard
       :tab-width: 4
 
 .. supplemental::
 
    NaN (Not a Number) repräsentiert das Ergebnis einer Operation die keinen sinnvollen Wert hat. Ein Vergleich mit NaN ist *immer* :js:`false`. Um zu überprüfen, ob ein Wert NaN ist muss :js:`isNaN(<Value>)` verwendet werden.
+
 
 
 `Bedingungen und Schleifen <./code/LoopsAndConditions.mjs>`__
@@ -361,6 +360,14 @@ ________________________________________________________________________________
    - Schreiben Sie Ihren Code in eine JavaScript Datei und führen Sie diese mit Hilfe von Node.js aus.
 
    - Testen Sie Ihre Funktion mit verschiedenen Eingaben und lassen Sie sich das Ergebnis ausgeben (z. B. :js:`console.log(removeNthElement([1,2,3,4,5,6,7],2))`)!
+
+   .. hint::
+
+        Einem Array können Sie einen neuen Wert mittels :js:`push` hinzufügen:
+        :js:`const a = [].push(1);`.
+
+
+
 
    .. solution::
       :pwd: _RemoveNthElement
@@ -495,14 +502,15 @@ ________________________________________________________________________________
 `Variables (var) <./code/Variables_var.mjs>`__
 -----------------------------------------------------------------------------------------------
 
-**(Neuer Code sollte var nicht mehr verwenden!)**
+.. attention::
+
+    Neuer Code sollte var nicht mehr verwenden!
 
 .. scrollable::
 
    .. include:: code/Variables_var.mjs
       :code: javascript
       :number-lines:
-      :class: code far-far-smaller copy-to-clipboard
       :tab-width: 2
       :start-line: 2
       :end-before: done();
@@ -517,7 +525,6 @@ ________________________________________________________________________________
    .. include:: code/Destructuring.mjs
       :code: javascript
       :number-lines:
-      :class: code far-far-smaller copy-to-clipboard
       :tab-width: 2
       :start-line: 2
       :end-before: done();
@@ -532,8 +539,7 @@ ________________________________________________________________________________
    .. include:: code/JSON.js
       :code: javascript
       :number-lines:
-      :class: code far-far-smaller copy-to-clipboard
-      :tab-width: 4
+      :tab-width: 2
 
 
 .. supplemental::
@@ -547,7 +553,7 @@ ________________________________________________________________________________
 
 - Eingebaute Unterstützung basierend auf entsprechenden Literalen (Strings in "/") und einer API
 - inspiriert von der Perl Syntax
-- Methoden auf regulären Objekten: :js:`test` (e.g., :js:`RegExp.test(String)`).
+- Methoden auf regulären RegExps: :js:`test` (e.g., :js:`<RegExp>.test(String)`).
 - Methoden auf Strings, die reguläre Ausdrücke verarbeiten: :js:`search`, :js:`match`, :js:`replace`, :js:`split`, ...
 
 .. scrollable::
@@ -555,7 +561,6 @@ ________________________________________________________________________________
    .. include:: code/RegularExpressions.js
       :code: javascript
       :number-lines:
-      :class: code far-far-smaller copy-to-clipboard
       :tab-width: 2
 
 
@@ -563,12 +568,13 @@ ________________________________________________________________________________
 `Klassen und Vererbung <./code/Classes.js>`__
 ------------------------------------------------
 
-.. include:: code/Classes.js
-   :code: javascript
-   :number-lines:
-   :class: far-far-smaller scrollable copy-to-clipboard
-   :tab-width: 4
-   :end-before: class Queue {
+.. scrollable::
+
+    .. include:: code/Classes.js
+        :code: javascript
+        :number-lines:
+        :tab-width: 2
+        :end-before: class Queue {
 
 
 
@@ -608,20 +614,20 @@ Alles ist ein Objekt
 
 - :js:`this` ist ein "zusätzlicher" Parameter, dessen Wert von der aufrufenden Form abhängt
 - :js:`this` ermöglicht den Methoden den Zugriff auf ihr Objekt
-- :js:`this` wird zum Zeitpunkt des Aufrufs gebunden (außer bei Arrow-Funktionen)
+- :js:`this` wird zum Zeitpunkt des Aufrufs gebunden (außer bei Arrow-Funktionen, da erfolgt die Bindung zum Zeitpunkt der Definition und es wird das this aus dem umgebenden Context geerbt.)
+
 
 .. scrollable::
 
-   .. include:: code/EverythingIsAnObject.js
-      :code: javascript
-      :number-lines:
-      :class: far-far-smaller copy-to-clipboard
-      :tab-width: 4
+    .. include:: code/EverythingIsAnObject.js
+        :code: javascript
+        :number-lines:
+        :tab-width: 2
 
 
 
 `Partial Function Application <./code/Functions_partiell.js>`__
-------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------
 
 .. scrollable::
 
@@ -652,7 +658,6 @@ Alles ist ein Objekt
 
       .. image:: images/prototype_chain/object_literals_and_the_prototype_chain.svg
          :align: center
-         :class: margin-top-1em
 
    .. card::
 
@@ -669,7 +674,6 @@ Alles ist ein Objekt
 
       .. image:: images/prototype_chain/object_literals_and_the_prototype_chain_with_update.svg
          :align: center
-         :class: margin-top-1em margin-bottom-1em
 
       .. code:: javascript
          :number-lines: 5
@@ -716,7 +720,7 @@ Alles ist ein Objekt
 
       .. code:: javascript
          :number-lines:
-         :class: copy-to-clipboard far-far-smaller
+         :class: copy-to-clipboard
 
          function Person(name, title){ … }
          Person.prototype.formOfAddress = function (){ … }

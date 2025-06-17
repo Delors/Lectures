@@ -10,18 +10,24 @@ log("Object Destructuring:");
 let { a, b } = { a: "aaa", b: "bbb" };
 ilog('let { a, b } = { a: "aaa", b: "bbb" }: ', "a:", a, ", b:", b); // 1
 
-let { a: x, b: y } = { a: "aaa", b: "bbb" };
-ilog('let { a: x, b: y } = { a: "aaa", b: "bbb" }: ', "x:", x, ", y:", y); // 1
+{
+    let { a: x, b: y } = { a: "aaa", b: "bbb" };
+    ilog('let { a: x, b: y } = { a: "aaa", b: "bbb" }: ', "x:", x, ", y:", y); // 1
+}
+{
+    let { a: x, c: y } = { a: "aaa", b: "bbb" };
+    ilog('let { a: x, c: y } = { a: "aaa", b: "bbb" }: ', "x:", x, ", y:", y); // 1
+}
 
 let { a: u, b: v, ...w } = { a: "+", b: "-", c: "*", d: "/" };
 ilog(
-  'let { a: u, b: v, ...w } = { a: "+", b: "-", c: "*", d: "/" }:',
-  "u:",
-  u,
-  ", v:",
-  v,
-  ", w:",
-  JSON.stringify(w), // just for better readability/comprehension
+    'let { a: u, b: v, ...w } = { a: "+", b: "-", c: "*", d: "/" }:',
+    "u:",
+    u,
+    ", v:",
+    v,
+    ", w:",
+    JSON.stringify(w), // just for better readability/comprehension
 );
 
 let { k1, k2 } = { a: "a", b: "b" };
