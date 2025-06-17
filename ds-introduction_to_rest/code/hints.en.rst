@@ -2,6 +2,8 @@
     :version: renaissance
     :author: Michael Eichberg
 
+
+
 Hints
 =======
 
@@ -13,7 +15,7 @@ In case you get an EADDRINUSE error
 To get the PID of the Process that uses a specific port (here: port 5000):
 
 .. code:: bash
-   
+
    $ lsof -i :5000
    $ ls -e | grep <PID>
 
