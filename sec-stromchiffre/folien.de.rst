@@ -17,7 +17,7 @@ Erzeugung von Zufallsbits und Stromchiffren
 
 :Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
 :Basierend auf: *Cryptography and Network Security - Principles and Practice, 8th Edition, William Stallings*
-:Version: 2.2
+:Version: 2.3
 
 .. supplemental::
 
@@ -596,6 +596,23 @@ Quellen der Entropie
     :class: incremental
 
     Es gibt *Vermutungen*, dass diese Funktionen absichtlich kompromitiert wurden. `FreeBSD <https://www.theregister.com/2013/12/09/freebsd_abandoning_hardware_randomness/>`_ hat 2013 die Verwendung wieder eingestellt. Linux nutzt diese nur ergänzend.
+
+
+
+NIST and Partners Use Quantum Mechanics to Make a Factory for Random Numbers\ [#]_
+-----------------------------------------------------------------------------------
+
+.. epigraph::
+
+    **NIST and its partners at the University of Colorado Boulder built the first random number generator that uses quantum entanglement to produce verifiable random numbers.**
+
+    Broadcast as a free public service, the Colorado University Randomness Beacon (CURBy) can be used anywhere an independent, public source of random numbers would be useful [...]
+
+    [...] Unlike dice or computer algorithms, quantum mechanics is inherently random. Carrying out a quantum experiment called a Bell test, Shalm and his team have transformed this source of true quantum randomness into a traceable and certifiable random-number service.[...]
+
+    -- `June 20205 -  NIST <https://www.nist.gov/news-events/news/2025/06/nist-and-partners-use-quantum-mechanics-make-factory-random-numbers>`__
+
+.. [#] https://random.colorado.edu
 
 
 
