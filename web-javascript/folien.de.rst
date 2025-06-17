@@ -910,3 +910,73 @@ Referenzen
 ------------------------------------------------
 
 - `HTML DOM API  <https://developer.mozilla.org/en-US/docs/Web/API/HTML_DOM_API>`__
+
+
+.. class:: new-section transition-scale
+
+Web Komponenten
+-------------------
+
+.. class:: subtitle
+
+    Work in progress!
+
+
+
+Quizzy
+------------------------------------------------
+
+Bei der Quizzy Komponenten handelt es sich um eine (ganz) einfache Client-Server basierte Komponente für Quizzes. Die Komponente besteht aus der Definition der Web Komponente und einem Server. Die Komponente und der Server kommunizieren über Web Sockets. Der Server führt in Hinblick auf Cross-origin requests keine besonderen Prüfungen durch!
+
+.. warning::
+
+    Es handelt sich nur um einen minimalen Prototyp, der lediglich der Demonstration von Webkomponenten und der Kommunikation selbiger mit Servern dient. Es existiert keinerlei Sicherheit!
+
+
+Quizzy - Server Code (server.js)
+---------------------------------
+
+.. scrollable::
+
+    .. include:: code/quizzy-component/server.js
+        :code: JavaScript
+        :number-lines:
+        :class: copy-to-clipboard
+
+
+
+Quizzy - Client Code (quizzy.js)
+---------------------------------
+
+
+.. scrollable::
+
+    .. include:: code/quizzy-component/quizzy.js
+        :code: JavaScript
+        :number-lines:
+        :class: copy-to-clipboard
+
+
+
+
+Verwendung der Quizzy Komponente
+----------------------------------------------------------
+
+.. code:: html
+
+   <script src="code/quizzy-component/quizzy.js"></script>
+   <div onclick="event.stopPropagation();">
+        <ld-quizzy ws-url="ws://localhost:5557">
+            <!-- When used as a real component, we have to either specify the
+            questions here (somehow encrypted) and send them to the server when
+            required, or refer to a set of questions stored on the server by
+            means of a parameter/attribute... -->
+       </ld-quizzy>
+   </div>
+
+.. raw : : html
+
+    <script src="code/quizzy-component/quizzy.js"></script>
+    <div onclick="event.stopPropagation();">
+        <ld-quizzy ws-url="ws://localhost:5557" set="capitals"></ld-quizzy>
+    </div>
