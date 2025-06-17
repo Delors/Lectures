@@ -10,6 +10,11 @@
 
 .. include:: ../docutils.defs
 
+.. |Kontrollfragen| source:: kontrollfragen.de.rst
+    :path: relative
+    :prefix: https://delors.github.io/
+    :suffix: .html
+
 
 
 Betriebsmodi bei Blockchiffren
@@ -17,17 +22,26 @@ Betriebsmodi bei Blockchiffren
 
 :Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
 :Kontakt: michael.eichberg@dhbw.de
-:Version: 1.3
+:Version: 1.3.1
 :Basierend auf: *Cryptography and Network Security - Principles and Practice, 8th Edition, William Stallings*
 
 .. supplemental::
 
-  :Folien:
-      :HTML: |html-source|
+    :Folien:
 
-      :PDF: |pdf-source|
-  :Fehler melden:
-      https://github.com/Delors/delors.github.io/issues
+        .. class:: dd-margin-left-3em
+
+        :HTML: |html-source|
+
+        :PDF: |pdf-source|
+
+    :Kontrollfragen:
+
+        |Kontrollfragen|
+
+    :Fehler melden:
+        https://github.com/Delors/delors.github.io/issues
+
 
 
 Betriebsmodi
@@ -281,7 +295,6 @@ Bei AES, DES oder jeder anderen Blockchiffre erfolgt die Verschlüsselung immer 
 
 
 
-
 *Counter Mode* - Vorteile
 -------------------------
 
@@ -400,12 +413,12 @@ XTS-AES Operation auf einem Block
         Dargestellt ist der Fall, dass alle zu verschlüsselnden (Klartext-)Blöcke eine Größe von 128 Bit haben. Sollt der letzte Block nicht eine Größe von 128 Bit haben, dann kommt "Cipher Text Stealing" zum Einsatz.
 
     - Schlüssel: es gilt: :math:`Schlüssel = Schlüssel_1\, ||\, Schlüssel_2`
-    - :math:`P_j`: Der j-te Block des Klartexts. Alle Blöcke haben eine Länge von 128 bits. Eine (Klartext)dateneinheit – in der Regel ein Festplattensektor – besteht aus einer Folge von Klartextblöcken.
-    - :math:`C_j`: Der j-te Block des Chiffretextes.
-    - :math:`j`: Die fortlaufende Nummer des 128-Bit-Blocks innerhalb der Dateneinheit.
-    - :math:`i`: Der Wert des 128-Bit-Tweaks.
-    - :math:`\alpha`: Ein primitives Element des :math:`GF(2^{128})` welches dem Polynom :math:`x` (d. h. 0000...0010) entspricht.
-    - :math:`\alpha^j`: :math:`\alpha` :math:`j` mal mit sich selbst multipliziert im Körper :math:`GF(2^{128})`
+    - P\ :sub:`j`: Der j-te Block des Klartexts. Alle Blöcke haben eine Länge von 128 bits. Eine (Klartext)dateneinheit – in der Regel ein Festplattensektor – besteht aus einer Folge von Klartextblöcken.
+    - C\ :sub:`j`: Der j-te Block des Chiffretextes.
+    - j: Die fortlaufende Nummer des 128-Bit-Blocks innerhalb der Dateneinheit.
+    - i: Der Wert des 128-Bit-Tweaks.
+    - ⍺: Ein primitives Element des GF(2¹²⁸) welches dem Polynom :math:`x` (d. h. 0000...0010\ :sub:`b`) entspricht.
+    - ⍺\ :sup:`j`: ⍺ j mal mit sich selbst multipliziert im Körper GF(2¹²⁸)
     - :math:`\oplus` Bitwise XOR
     - :math:`\otimes` Modulare Multiplikation mit Binärkoeffizienten modulo :math:`x^{128}+x^7+x^2+x+1`.
 
@@ -489,9 +502,6 @@ XTS-AES Operation auf einem Block
 
         Sollte der Angreifer in der Lage sein eine Choosen-Plaintext Attacke durchzuführen, dann kann er ggf. eine Nachricht so erstellen, dass der Schlüsselstrom abgeleitet werden kann. Dies würde dann die Entschlüsselung aller Nachrichten erlauben, die das selbe Paar bestehend aus Schlüssel und Nonce verwenden habent.
 
-
-
-
 .. exercise:: ECB identifizieren
 
      Sie möchten feststellen, ob ein Programm zur Verschlüsselung von Dateien den ECB-Modus verwendet. Was müssen Sie tun?
@@ -501,7 +511,6 @@ XTS-AES Operation auf einem Block
 
         Verwenden Sie ein Dokument, das aus mehreren Blöcken besteht, wobei jeder Block die Größe der zugrunde liegenden Chiffre hat und jeder Block den gleichen Inhalt hat. Bei Verwendung des ECB-Modus werden alle Blöcke auf die gleiche Weise verschlüsselt.
 
-
 .. exercise:: XTS-AES
 
     Wie viele Blöcke hat eine Dateneinheit, wenn ein Festplattensektor 4 KiB groß ist?
@@ -509,13 +518,11 @@ XTS-AES Operation auf einem Block
     Welchen praktischen Vorteil hat es, das der Hash T vor und nach der Verschlüsselung des Klartextes mit dem aktuellen Wert XOR-verknüpft wird?
 
     .. solution::
-        :pwd: XTS-AES
+        :pwd: XTS#AES
 
         Wenn ein Festplattensektor 4 KiB groß ist und ein Block eine Größe von 128 Bit (16 Byte) hat, dann gilt, dass ein Sektor 4096/16 = 256 Blöcke hat.
 
         Dadurch kann der Selbe Algorithmus für die Verschlüsselung und die Entschlüsselung verwendet werden.
-
-
 
 
 
