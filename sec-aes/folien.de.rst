@@ -10,11 +10,11 @@
 
 .. include:: ../docutils.defs
 
-
 .. |Kontrollaufgaben| source:: kontrollaufgaben.de.rst
     :path: relative
     :prefix: https://delors.github.io/
     :suffix: .html
+
 
 
 Advanced Encryption Standard (AES)
@@ -22,9 +22,9 @@ Advanced Encryption Standard (AES)
 
 :Dozent:  `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
 :Kontakt: michael.eichberg@dhbw.de
-:Version: 1.0.7
+:Version: 1.0.8
 
-.. class:: faded-out
+.. class:: fade-out
 
 :Basierend auf:
 
@@ -45,6 +45,13 @@ Advanced Encryption Standard (AES)
 
     :Fehler melden:
         https://github.com/Delors/delors.github.io/issues
+
+
+
+.. class:: new-section
+
+AES - Überblick
+-----------------------
 
 
 
@@ -145,6 +152,13 @@ AES Parameter
     Anzahl der Runden, 10, 12, 14
     Größe des Rundenschlüssels (*RoundKeys*) (words/bytes/bits), 4/16/128, 4/16/128, 4/16/128
     Expandierte Schlüsselgröße (words/bytes), 44/176, 52/208, 60/240
+
+
+
+.. class:: new-section
+
+AES - Detaillierter Aufbau
+---------------------------
 
 
 
