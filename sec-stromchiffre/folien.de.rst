@@ -17,7 +17,7 @@ Erzeugung von Zufallsbits und Stromchiffren
 
 :Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
 :Basierend auf: *Cryptography and Network Security - Principles and Practice, 8th Edition, William Stallings*
-:Version: 2.3
+:Version: 2.4
 
 .. supplemental::
 
@@ -108,9 +108,9 @@ Unvorhersehbarkeit
 
 .. class:: incremental
 
-- Bei ``echten`` Zufallsfolgen ist jede Zahl statistisch unabhängig von den anderen Zahlen in der Folge und daher unvorhersehbar.
+- Bei *echten* Zufallsfolgen ist jede Zahl statistisch unabhängig von den anderen Zahlen in der Folge und daher unvorhersehbar.
 
-  - Echte Zufallszahlen(-generatoren) haben Grenzen, insbesondere die Ineffizienz, so dass es häufiger vorkommt, dass Algorithmen implementiert werden, die scheinbar zufällige Zahlenfolgen erzeugen.
+  - Echte Zufallszahlen(-generatoren) haben Grenzen; insbesondere die ineffizienz selbiger ist eine Herausforderung, so dass es häufiger vorkommt, dass Algorithmen implementiert werden, die scheinbar zufällige Zahlenfolgen erzeugen.
   - Es muss darauf geachtet werden, dass ein Gegner nicht in der Lage ist, zukünftige Elemente der Folge auf der Grundlage früherer Elemente vorherzusagen.
 
 
@@ -142,6 +142,8 @@ Zufalls- und Pseudozufallszahlengeneratoren
 
 Echter Zufallszahlengenerator (TRNG)
 ------------------------------------
+
+.. class:: incremental-list
 
 - Nimmt als Eingabe eine Quelle, die effektiv zufällig ist.
 - Die Quelle wird als Entropiequelle bezeichnet und stammt aus der physischen Umgebung des Computers:
@@ -185,7 +187,7 @@ Pseudozufallszahlengenerator (PRNG) und Pseudozufallsfunktion (PRF)
 
           Häufig wird der Seed von einem TRNG erzeugt.
 
-        - Der Ausgangsbitstrom wird ausschließlich durch den oder die Eingabewerte bestimmt, so dass ein Angreifer, der den Algorithmus und den Seed kennt, den gesamten Bitstrom reproduzieren kann.
+        - Der Ausgangsbitstrom wird ausschließlich durch den oder die Eingabewerte bestimmt, so dass :red:`ein Angreifer, der den Algorithmus und den Seed kennt, den gesamten Bitstrom reproduzieren kann`.
 
         - Abgesehen von der Anzahl der erzeugten Bits gibt es keinen Unterschied zwischen einem PRNG und einer PRF.
 
@@ -322,8 +324,8 @@ Algorithmen lassen sich in zwei Kategorien einteilen:
 
 
 
-Lineare Kongruenzgeneratoren
------------------------------
+Primitive Zufallszahlengeneratoren: Lineare Kongruenzgeneratoren
+------------------------------------------------------------------
 
 Ein erstmals von Lehmer vorgeschlagener Algorithmus, der mit vier Zahlen parametrisiert ist:
 
@@ -336,7 +338,7 @@ Ein erstmals von Lehmer vorgeschlagener Algorithmus, der mit vier Zahlen paramet
     :math-i:`c`, das Inkrement , :math:`0≤ c < m`
     :math:`X_0`, "der Startwert, oder *Seed*", :math:`0 ≤ X_0 < m`
 
-Die Folge von Zufallszahlen :math:`\lbrace{X_n}\rbrace` erhält man durch die folgende iterative Gleichung: :math:`X_{n+1} = (aX_n + c)\bmod m`
+Die Folge von Zufallszahlen :math:`\lbrace{X_n}\rbrace` erhält man durch die folgende iterative Gleichung: :math:`X_{n+1} = (a \cdot X_n + c)\bmod m`
 
 .. container:: incremental
 
@@ -377,9 +379,11 @@ Blum Blum Shub Block Diagram
     :alt: Blum Blum Shub Block Diagram
     :align: center
 
-:math-i:`n` ist das Produkt von zwei (sehr großen) Primzahlen :math:`p` und :math:`q`: :math:`n = p \times q`. Weiterhin muss gelten: :math:`p \equiv q \equiv 3 \; (mod \; 4)`.
+:math-i:`n` ist das Produkt von zwei (sehr großen) Primzahlen :math-i:`p` und :math-i:`q`: :math:`n = p \times q`.
 
-Der Seed :math:`s` sollte eine ganze Zahl sein, die zu :math:`n` *coprime* ist (d. h. :math:`p` und :math:`q` sind keine Faktoren von :math:`s`) und nicht 1 oder 0.
+Weiterhin muss gelten: :math:`p \equiv q \equiv 3 \; (mod \; 4)`.
+
+Der Seed :math-i:`s` sollte eine ganze Zahl sein, die zu :math-i:`n` *coprime* ist (d. h. :math-i:`p` und :math-i:`q` sind keine Faktoren von :math-i:`s`) und nicht :math-r:`1` oder :math-r:`0`.
 
 
 Beispiel - Blum Blum Shub (BBS) Generator
@@ -582,7 +586,7 @@ Quellen der Entropie
 .. class:: incremental-list
 
 - Die meisten funktionieren durch Messung unvorhersehbarer natürlicher Prozesse, wie z. B. Impulsdetektoren für ionisierende Strahlung, Gasentladungsröhren und undichte Kondensatoren.
-- Intel CPUs (seit Ivy Bridge) verwenden seit 2012 thermisches Rauschen als Quelle. Dies geschieht durch Verstärkung der an nicht angesteuerten Widerständen gemessenen Spannung.
+- Intel CPUs verwenden seit 2012 (Ivy Bridge) thermisches Rauschen als Quelle. Dies geschieht durch Verstärkung der an nicht angesteuerten Widerständen gemessenen Spannung.
 
   Auslesen ist mit dem RDRAND Befehl möglich bzw. (neuer) mit dem RDSEED Befehl.
 
@@ -657,6 +661,106 @@ Ein TRNG kann eine Ausgabe erzeugen, die in irgendeiner Weise verzerrt ist (z.�
         - Die Konditionierung erfolgt in der Regel durch die Verwendung eines kryptografischen Algorithmus zur Verschlüsselung der Zufallsbits, um Verzerrungen zu vermeiden und die Entropie zu erhöhen.
 
         - Die beiden gängigsten Ansätze sind die Verwendung einer Hash-Funktion oder einer symmetrischen Blockchiffre.
+
+
+
+Shannon Entropie
+--------------------
+
+- die Shannon Entropie ist ein Maß für die Zufälligkeit oder Unvorhersehbarkeit einer Bitfolge.
+
+- Entropie :math:`H = -\sum_{i=1}^{n} p_i \cdot \log_2(p_i)`; normalisiert auf [0,1]: :math:`H_{\text{norm}} = \frac{H_{\text{beobachtet}}}{H_{\text{max}}} =  \frac{H}{\log_2(\# \text{distinct symbols})}`
+
+  :math:`p_i` ist die empirische Wahrscheinlichkeit des Symbols :math-i:`i` berechnet als :math:`\frac{f_i}{n}` wobei :math:`f_i` die Häufigkeit des Symbols :math-i:`i` ist und :math:`n` die Gesamtanzahl der Symbole(/Länge der Daten) ist.
+
+  .. example::
+
+    Shannon-Entropie für ``Hello``:
+
+    - ``H``: 1 → p(``H``) = 1/5
+    - ``e``: 1 → p(``e``) = 1/5
+    - ``l``: 2 → p(``l``) = 2/5
+    - ``o``: 1 → p(``o``) = 1/5
+
+    ⇒ -(⅕*log₂(⅕)+⅕*log₂(⅕)+2/5*log₂(2/5)+⅕*log₂(⅕)) / log₂(4) =  0,96
+
+  .. supplemental::
+
+    :math:`H_{\text{max}}` ist die Anzahl an Bits die benötigt werden um alle möglichen Symbole zu kodieren. Für ein Alphabet mit :math:`k` Symbolen ist :math:`H_{\text{max}} = \log_2(k)`. D. h. für ein Alphabet mit 8 verschiedenen Symbole ist :math:`H_{\text{max}} = \log_2(8) = 3`.
+
+    Der Shannon-Entropie liegt die Frage zugrunde, wie viele Bits im Mittel nötig sind, um die Ausgaben einer Informationsquelle effizient zu kodieren. Sie hängt von der Wahrscheinlichkeitsverteilung der Symbole ab und bildet ein theoretisches Minimum für die mittlere Codewortlänge verlustfreier Kodierungen.
+
+    .. example::
+
+        Haben wir einen Text, der aus 5 verschiedenen Symbole besteht, die alle gleich wahrscheinlich sind, so ist die Shannon-Entropie
+
+        :math:`H = -\sum_{i=1}^{5} \frac{1}{5} \log_2 \left( \frac{1}{5} \right) = \log_2(5) \approx 2.32~\text{Bits pro Symbol}`
+
+        Liegt jedoch eine starke Ungleichvertverteilung vor, so ist die Shannon-Entropie kleiner als :math:`\log_2(5)`.
+
+        Sein die empirischen Wahrscheinlichkeiten der 5 Symbole so, dass ein Symbol mit der Wahrscheinlichkeit 0,6 und alle anderen mit der Wahrscheinlichkeit 0,1 auftreten, so ergibt sich für die Shannon-Entropie:
+
+        :math:`H = -(0.6 \log_2 0.6 + 4 \cdot 0.1 \log_2 0.1) \approx 1.77~\text{Bit pro Symbol}`
+
+        An das Ergebniss könnten man zum Beispiel mit einer Huffman-Kodierung herankommen. Mit einer Huffman-Kodierung kann man die Codewortlänge optimieren, indem man die häufigsten Symbole kürzer kodiert als die seltenen Symbole. In diesem Fall könnte man das Symbol mit der Wahrscheinlichkeit 0,6 mit einem Codewort von Länge 1 kodieren und die anderen Symbole mit Codewörtern von Länge 3 kodieren. Daraus ergibt sich eine mittlere Codewortlänge von:
+
+        :math:`0.6 \cdot 1~\text{Bit} + 4 \cdot 0.1 \cdot 3~\text{Bit} = 0.6~\text{Bit} + 1.2~\text{Bit} = 1.8~\text{Bit pro Symbol}`
+
+.. class:: exercises
+
+Übung
+--------
+
+.. exercise:: Shannon Entropie
+
+    Berechnen Sie die normalisierte Shannon Entropie mit Taschenrechner für:
+
+    ::
+
+        Dies ist ein Test.
+
+    .. solution::
+        :pwd: ImmerZwischen0und1
+
+        .. rubric:: Lösung
+
+        Länge: :math-i:`n` = 18
+
+        .. csv-table::
+            :header: Symbol, Häufigkeit
+
+            D, 1
+            e, 3
+            i, 3
+            s, 3
+            T, 1
+            t, 2
+            n, 1
+              :peripheral:`(Leerzeichen)`, 3
+            ., 1
+
+        Ausgerechnet: :math:`H_{\text{norm}}` =
+        -(4*(1/18*log2(1/18))+4*(3/18*log2(3/18))+1*(2/18*log2(2/18))) / log2(9) = 0,9470798905
+
+        .. code:: python
+            :class: copy-to-clipboard
+            :number-lines:
+
+            import math
+            from collections import Counter
+
+            def normalized_entropy(data: bytes) -> float:
+                if not data:
+                    return 0.0
+                counts = Counter(data)
+                total = len(data)
+                probs = [count / total for count in counts.values()]
+                entropy = -sum(p * math.log2(p) for p in probs)
+                max_entropy = math.log2(len(counts)) if len(counts) > 1 else 1  # Avoid div-by-zero
+                return entropy / max_entropy
+
+            normalized_entropy(bytes("Dies ist ein Test.","utf-8"))
+            # => 0.9470798904762033
 
 
 

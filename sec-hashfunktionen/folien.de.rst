@@ -18,7 +18,7 @@ Kryptografische Hash Funktionen
 :Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
 :Kontakt: michael.eichberg@dhbw.de
 :Basierend auf: *Cryptography and Network Security - Principles and Practice, 8th Edition, William Stallings*
-:Version: 2.2.2
+:Version: 2.3
 
 .. supplemental::
 
@@ -109,6 +109,10 @@ Sicherheitsanforderungen an kryptografische Hashfunktion
 
         (:eng:`Collision resistant; strong collision resistant`)
 
+        .. presenter-note::
+
+            D. h. der Angreifer darf *zwei Nachrichten frei wählen* und somit ist es so, dass dies eine stärkere Anforderung an den Hashalgorithmus ist, da er mehr Angriffsmöglichkeiten hat. Bei der schwachen reicht es aus, wenn der Hashalgorithmus so gut ist, dass es nicht möglich ist *zu einer gegegebenen Nachricht eine Zweite zu finden*.
+
 .. supplemental::
 
     **Hintergrund**
@@ -126,36 +130,51 @@ Beziehung zwischen den Sicherheitsanforderungen an Hashfunktionen
     :alt: Beziehung zwischen den Eigenschaften von Hashfunktionen
     :align: center
 
+.. supplemental::
+
+    Dass die *collision resistance* (:ger:`starke Kollisionsresistenz`) eine stärkere Anforderung ist als die *second preimage resistance* lässt sich wie folgt erklären: Bei *second preimage resistance* geht es darum, dass zu einer gegebenen, fixen Nachricht ein Angreifer ggf. eine zweite Nachricht finden soll.
+
+    Bei *collision resistance* geht es darum, dass ein Angreifer „irgendwelche“ zwei beliebigen Nachrichten finden kann, die den gleichen Hashwert haben. Ein solcher Angriff hat nur einen Aufwand von :math:`O(\sqrt{2^{n}})`, was durch das Geburtstagsparadoxon erklärt werden kann.
+
 
 
 Nachrichtenauthentifizierung - vereinfacht
 -------------------------------------------------------
-
-Nachrichten können auf verschiedene Weisen authentifiziert werden, so dass *Person-in-the-Middle-Angriffe*\ [#]_ verhindert werden können.
-
 .. deck::
 
     .. card::
 
-        .. image:: drawings/digests/all_encrypted.svg
-            :align: center
+        Nachrichten können auf verschiedene Weisen authentifiziert werden, so dass *Person-in-the-Middle-Angriffe*\ [#]_ verhindert werden können.
 
     .. card::
 
-        .. image:: drawings/digests/hash_encrypted.svg
+        .. figure:: drawings/digests/all_encrypted.svg
             :align: center
+
+            Garantiert Authentizität und Vertraulichkeit.
 
     .. card::
 
-        .. image:: drawings/digests/secret_appended.svg
+        .. figure:: drawings/digests/hash_encrypted.svg
             :align: center
+
+            Garantiert Authentizität, benötigt aber sowohl Hashing als auch Verschlüsselung.
 
     .. card::
 
-        .. image:: drawings/digests/secret_encrypted.svg
+        .. figure:: drawings/digests/secret_appended.svg
             :align: center
 
-.. [#] Ursprünglich wurde von Man-in-the-Middle gesprochen; dies wird aber zunehmend weniger benutzt.
+            Garantiert Authentizität und es wird nur ein Hashalgorithmus benötigt; anfällig für bestimmte Angriffe - insbesondere gegen Angriffe mit Längenerweiterung bei Hashverfahren basierend auf Merkle-Damgard Konstruktionen.
+
+    .. card::
+
+        .. figure:: drawings/digests/secret_encrypted.svg
+            :align: center
+
+            Garantiert Authentizität und Vertraulichkeit.
+
+.. [#] *Person-in-the-Middle* (in Standards auch *on-path attack*) ist die gender-neutrale Version von *man-in-the-Middle*.
 
 .. supplemental::
 
@@ -192,19 +211,27 @@ Nachrichten können auf verschiedene Weisen authentifiziert werden, so dass *Per
 Digitale Signaturen - vereinfacht
 -------------------------------------------------------
 
-Digitale Signaturen dienen dem Nachweis der Authentizität einer Nachricht und der Integrität der Nachricht.  Jeder, der einen öffentlichen Schlüssel hat, kann die Signatur überprüfen, aber nur der Besitzer des privaten Schlüssels kann die Signatur erstellen.
-
 .. deck::
 
     .. card::
 
-        .. image:: drawings/signatures/just_authentication.svg
-            :align: center
+        Digitale Signaturen dienen (auch) dem Nachweis der :emph:`Authentizität` und :emph:`Integrität` einer Nachricht. Darüber hinaus garantieren sie die :emph:`Nichtabstreitbarkeit`: Der Absender kann nicht bestreiten, der Urheber der Nachricht zu sein.
+
+        Jede Person, die den öffentlichen Schlüssel besitzt, kann die Signatur überprüfen. Nur der Inhaber des zugehörigen privaten Schlüssels ist jedoch in der Lage, die Signatur zu erzeugen.
 
     .. card::
 
-        .. image:: drawings/signatures/authentication_and_encryption.svg
+        .. figure:: drawings/signatures/just_authentication.svg
             :align: center
+
+            Authentizität und Nichtabstreitbarkeit
+
+    .. card::
+
+        .. figure:: drawings/signatures/authentication_and_encryption.svg
+            :align: center
+
+            Authentizität, Vertraulichkeit und Nichtabstreitbarkeit
 
 .. supplemental::
 
@@ -214,8 +241,8 @@ Digitale Signaturen dienen dem Nachweis der Authentizität einer Nachricht und d
     :H: die Hashfunktion
     :E: der Verschlüsselungsalgorithmus
     :D: der Entschlüsselungsalgorithmus
-    :`PR_a`:math:: der private Schlüssel von a
-    :`PU_a`:math:: der öffentliche Schlüssel von a
+    :PR\ `a`:sub:: der private Schlüssel von a
+    :PU\ `a`:sub:: der öffentliche Schlüssel von a
     :||: die Konkatenation von zwei Werten (d. h. das Aneinanderhängen von zwei Werten)
 
 
@@ -240,19 +267,19 @@ Anforderungen an die Resistenz von Hashfunktionen
 
     .. rubric:: Einbruchserkennung und Viruserkennung - Hintergrund
 
-    Bei der Einbruchserkennung und Viruserkennung ist *second preimage* Resistenz erforderlich. Andernfalls könnte ein Angreifer seine Malware so schreiben, ass diese einen Hash wie eine vorhandene gutartige Software hat und so verhindern, dass die Malware auf eine schwarze Liste gesetzt werde kann, ohne den Kollateralschaden, dass auch die gutartige Software fälschlicherweise als Malware erkannt wird.
+    Bei der Einbruchserkennung und Viruserkennung ist *second preimage* Resistenz erforderlich. Andernfalls könnte ein Angreifer seine Malware so schreiben, dass diese einen Hash wie eine vorhandene gutartige Software hat und so verhindern, dass die Malware auf eine schwarze Liste gesetzt werden kann, ohne den Kollateralschaden, dass auch die gutartige Software fälschlicherweise als Malware erkannt wird.
 
     .. rubric:: Aufwand eines Kollisionsangriffs
 
     Ein Kollisionsangriff erfordert weniger Aufwand als ein *preimage* oder ein *second preimage* Angriff.
 
-    Dies wird durch das Geburtstagsparadoxon erklärt. Wählt man Zufallsvariablen aus einer Gleichverteilung im Bereich von :math:`0` bis :math:`N-1`, so übersteigt die Wahrscheinlichkeit, dass ein sich wiederholendes Element gefunden wird, nach :math:`\sqrt{N}` Auswahlen :math:`0,5`. Wenn wir also für einen m-Bit-Hashwert Datenblöcke zufällig auswählen, können wir erwarten, zwei Datenblöcke innerhalb von :math:`\sqrt{2^m} = 2^{m/2}` Versuchen zu finden.
+    Dies wird durch das Geburtstagsparadoxon erklärt. Wählt man Zufallsvariablen aus einer Gleichverteilung im Bereich von :math-r:`0` bis :math:`N-1`, so übersteigt die Wahrscheinlichkeit, dass ein sich wiederholendes Element gefunden wird, nach :math:`\sqrt{N}` (für große :math-i:`N`) Auswahlen :math-r:`0,5`. Wenn wir also für einen m-Bit-Hashwert Datenblöcke zufällig auswählen, können wir erwarten, zwei Datenblöcke innerhalb von :math:`\sqrt{2^m} = 2^{m/2}` Versuchen zu finden.
 
     .. example::
 
-        Es ist relativ einfach, ähnliche Meldungen zu erstellen. Wenn ein Text 8 Stellen hat, an denen ein Wort mit einem anderen ausgetauscht werden kann, dann hat man bereits :math:`2^{8}` verschiedene Texte.
+        Es ist relativ einfach, ähnliche Meldungen zu erstellen. Wenn ein Text 8 Stellen hat, an denen ein Wort mit einem anderen ausgetauscht werden kann, dann hat man bereits 2⁸ verschiedene Texte.
 
-        Es ist relativ trivial(1), vergleichbare(2) Nachrichten(3) zu schreiben(4). Wenn ein Text 8 Stellen hat, an denen ein Ausdruck(5) mit einem vergleichbaren (6) ausgetauscht werden kann, dann erhält(7) man bereits :math:`2^{8}` verschiedene Dokumente(8).
+        Es ist relativ trivial(1), vergleichbare(2) Nachrichten(3) zu schreiben(4). Wenn ein Text 8 Stellen hat, an denen ein Ausdruck(5) mit einem vergleichbaren (6) ausgetauscht werden kann, dann erhält(7) man bereits 2⁸ verschiedene Dokumente(8).
 
 
 
@@ -261,7 +288,7 @@ Effizienzanforderungen an kryptografische Hashfunktionen
 
 :Effizienz bei der Verwendung für Signaturen und zur Authentifizierung:
 
-  Bei der Verwendung zur Nachrichtenauthentifizierung und für digitale Signaturen ist :math:`H(N)` für jedes beliebige :math:`N` relativ einfach zu berechnen. Dies soll sowohl Hardware- als auch Softwareimplementierungen ermöglichen.
+  Bei der Verwendung zur Nachrichtenauthentifizierung und für digitale Signaturen ist :math-i:`H(N)` für jedes beliebige :math-i:`N` relativ einfach zu berechnen. Dies soll sowohl Hardware- als auch Softwareimplementierungen ermöglichen.
 
 .. container:: incremental
 
@@ -283,21 +310,21 @@ Struktur eines sicheren Hash-Codes
 .. image:: drawings/hash_functions/structure_of_secure_hash_codes.svg
     :align: center
 
-.. class:: columns
+.. class:: columns left-aligned dd-margin-left-3em
 
--       IV = Initialer Wert (Algorithmus-abhängig)
+-       :IV: Initialer Wert (Algorithmus-abhängig)
 
-        CV\ :sub:`i` = Verkettungsvariable
+        :CV\ `i`:sub:: Verkettungsvariable
 
-        Y\ :sub:`i` = i-er Eingabeblock
+        :Y\ `i`:sub:: i-er Eingabeblock
 
-        f = Kompressionsfunktion
+        :f: Kompressionsfunktion
 
--       n = Länge des Blocks
+-       :n: Länge des Blocks
 
-        L = Anzahl der Eingabeblöcke
+        :L: Anzahl der Eingabeblöcke
 
-        b = Länge des Eingabeblocks
+        :b: Länge des Eingabeblocks
 
 .. supplemental::
 
@@ -392,6 +419,53 @@ Struktur eines sicheren Hash-Codes
         :pwd: kein Startpunkt
 
         Wir haben keinen Block der Nachricht, mit dem wir arbeiten können, und wir haben keinen Vorteil davon, zwei beliebige aber verschiedene Nachrichten zu finden, die denselben Hash haben; eine reicht. Bei der Passwortwiederherstellung liegt uns immer ein Hashwert vor, und wir versuchen, *eine* Nachricht zu finden, die diesen Hashwert erzeugt hat.
+
+
+
+.. class:: new-section
+
+Hashverfahren
+---------------------
+
+
+
+Die SHA-Familie (Secure Hash Algorithms)
+------------------------------------------
+
+.. story::
+
+    .. class:: incremental-list
+
+    - eine Gruppe kryptographischer Hashfunktionen, die von der US-amerikanischen NIST standardisiert wurden.
+    - Anwendungsziele:
+
+      - Prüfsummenbildung (Integrität)
+      - Digitale Signaturen
+      - Basis für weitere kryptographische Konstrukte (z. B. HMAC)
+
+    - Mitglieder:
+
+      - SHA-1 hat 160 Bit und wird seit 2004 nicht mehr als sicher betrachtet; praktikable Angriffe gibt es seit 2009
+      - SHA-2 entwickelt im Jahr 2000 und umfasst 224, 256, 384 und 512 Bit Varianten
+      - SHA-3 2015 spezifiziert und basiert auf Keccak
+
+    .. example::
+        :class: incremental
+
+        ::
+
+            SHA-256("Hallo") →
+                f7ff9e8b7bb2b91af11f5d024c5c34c3d7d3c4c2b8b3c8a3c6e52efdbbe6b0c1
+
+    .. attention::
+        :class: incremental
+
+        Passwort-Hashing ist kein direktes Anwendungsziel!
+
+
+.. supplemental::
+
+    SHA-2 ist momentan weit verbreitet und gilt als sicher, aber SHA-3 bietet ein alternatives Sicherheitsdesign mit dem Keccak-Ansatz.
 
 
 
@@ -510,25 +584,23 @@ SHA-512 Verarbeitung eines 1024-Bit-Blocks
 
     .. math::
 
-        T_1 = h + Ch(e,f,g) + ( \sum\nolimits_{1}^{512} e ) + K_t + W_t
+        \begin{array}{rcl}
+            T_1 & = & h + Ch(e,f,g) + ( \sum\nolimits_{1}^{512} e ) + K_t + W_t \\
+            T_2 & = & (\sum\nolimits_{0}^{512} a ) + Maj(a,b,c) \\
+        \end{array}
 
-        T_2 = (\sum\nolimits_{0}^{512} a ) + Maj(a,b,c)
+    .. math::
 
-        h = g
-
-        g = f
-
-        f = e
-
-        e = d + T_1
-
-        d = c
-
-        c = b
-
-        b = a
-
-        a = T_1 + T_2
+        \begin{array}{rcl}
+            h & = & g \\
+            g & = & f \\
+            f & = & e \\
+            e & = & d + T_1 \\
+            d & = & c \\
+            c & = & b \\
+            b & = & a \\
+            a & = & T_1 + T_2 \\
+        \end{array}
 
     Weiterhin gilt:
 
@@ -603,7 +675,7 @@ SHA-512 Verarbeitung eines 1024-Bit-Blocks
             console.log(c.toString(16));
         }
 
-    Der folgenden Java Code demonstriert, wie die Konstanten für SHA-512 berechnet werden können. Wir verwenden hier die Klasse `BigDecimal`, um die Konstanten zu berechnen, da Java keinen ``long double`` Typ (mit 128 Bit) kennt.
+    Der folgende Java Code demonstriert, wie die Konstanten für SHA-512 berechnet werden können. Wir verwenden hier die Klasse `BigDecimal`, um die Konstanten zu berechnen, da Java keinen ``long double`` Typ (mit 128 Bit) kennt.
 
     .. code:: java
         :class: copy-to-clipboard
@@ -667,9 +739,13 @@ SHA-512 Verarbeitung eines 1024-Bit-Blocks
 HMAC (Hash-based Message Authentication Code)
 ----------------------------------------------
 
-Auch als *keyed-hash message authentication code* bezeichnet.
+.. class:: incremental-list
 
-.. math::
+- Auch als *keyed-hash message authentication code* bezeichnet.
+- Konstruktion:
+
+  .. math::
+    :class: framed
 
     \begin{array}{rcl}
     HMAC(K,m) & = & H( (K' \oplus opad) || H( ( K' \oplus ipad) || m) ) \\
@@ -678,6 +754,7 @@ Auch als *keyed-hash message authentication code* bezeichnet.
             K & \text{andernfalls}
             \end{cases}
     \end{array}
+- Standardisiert - sicher gegen Längenerweiterungsangriffe.
 
 .. supplemental::
 
@@ -780,7 +857,7 @@ MAC: `Poly 1305 <https://datatracker.ietf.org/doc/html/rfc8439#section-2.5>`__
         - Ein MAC Algorithmus für die Einmalauthentifizierung von Nachrichten.
         - Entwickelt von Daniel J. Bernstein.
         - Basierend auf einem 256-Bit-Schlüssel und einer Nachricht wird ein 128-Bit-Tag berechnet.
-        - In Verbindung mit *ChaCha20* in einer Reihe von Protokollen verwendet.
+        - (Insbesondere) In Verbindung mit *ChaCha20* in einer Reihe von Protokollen verwendet.
 
     .. card::
 
@@ -792,6 +869,17 @@ MAC: `Poly 1305 <https://datatracker.ietf.org/doc/html/rfc8439#section-2.5>`__
 
             .. rubric:: Aufteilung des Schlüssels
 
+        .. supplemental::
+
+            .. rubric:: "Clamping"
+
+            .. code:: python
+                :class: copy-to-clipboard
+                :number-lines:
+
+                clamped_r = r & 0x0ffffffc0ffffffc0ffffffc0fffffff # Zahlen
+
+
     .. card::
 
         .. rubric:: Verarbeitung der Nachricht
@@ -800,100 +888,335 @@ MAC: `Poly 1305 <https://datatracker.ietf.org/doc/html/rfc8439#section-2.5>`__
 
         - initialisiere den Akkumulator :math:`a` mit 0
         - die Nachricht wird in Blöcke von 16 Byte aufgeteilt und als *little-endian* Zahl verarbeitet; d. h. ein Block hat 16 Oktette (:math:`16 \times 8` Bit)
-        - Füge dem Block :math:`n` ein Bit jenseits der Anzahl der Oktette des aktuellen Blocks hinzu :math:`= n'`; d. h. im Falle eines 16-Byte-Blocks wird die Zahl :math:`2^{128}` addiert
+        - Füge dem Block :math-i:`n` ein Bit jenseits der Anzahl der Oktette des aktuellen Blocks hinzu :math-i:`→ n'`
 
-          (Danach haben wir ggf. eine 17-Byte-Zahl.)
-        - Addiere :math:`n'` aus dem letzten Schritt zum Akkumulator :math:`a` und multipliziere mit :math:`\text{clamped r}`
-        - Aktualisiere den Akkumulator mit dem Ergebnis :math:`modulo\, P` mit :math:`P = 2^{130} - 5`:
-          :math:`a = ((a + n') \times \text{clamped r})\mod P`
+          (D. h. im Falle eines 16-Byte-Blocks wird die Zahl :math-r:`2¹²⁸` addiert und danach haben wir somit eine 17-Byte-Zahl.)
+        - Addiere :math-i:`n'` aus dem letzten Schritt zum Akkumulator :math-i:`a` und multipliziere mit :math:`\text{clamped r}`
+        - Aktualisiere den Akkumulator mit dem Ergebnis :math-i:`modulo P` mit :math:`P = 2^{130} - 5`:
+          :math:`a = ((a + n') \times \text{clamped r})\bmod P`
 
 
     .. card::
 
-        Beispiel
+        .. example::
 
-        .. code:: text
+            .. code:: text
 
-            000  43 72 79 70 74 6f 67 72 61 70 68 69 63 20 46 6f  Cryptographic Fo
-            016  72 75 6d 20 52 65 73 65 61 72 63 68 20 47 72 6f  rum Research Gro
-            032  75 70                                            up
+                0000  43 72 79 70 74 6f 67 72 61 70 68 69 63 20 46 6f  Cryptographic Fo
+                0016  72 75 6d 20 52 65 73 65 61 72 63 68 20 47 72 6f  rum Research Gro
+                0032  75 70                                            up
 
-        .. container::
+            Schlüssel
 
-            Sei :math:`\text{clamped r} = 806d5400e52447c036d555408bed685`
+            ::
 
-            Sei :math:`s = 1bf54941aff6bf4afdb20dfb8a800301`
+                r = 85 d6 be 78 57 55 6d 33 7f 44 52 fe 42 d5 06 a8
+                s = 01 03 80 8a fb 0d b2 fd 4a bf f6 af 41 49 f5 1b
 
-        .. deck:: incremental
+            .. container:: font-size-65
 
-            .. card:: font-size-65
-
-                .. rubric:: Verarbeitung des ersten Blocks
-
-                .. math::
-
-                    \begin{array}{rr}
-                        a      & = & 00 \\
-                        n      & = &   6f4620636968706172676f7470797243 \\
-                        n'    & = & 016f4620636968706172676f7470797243 \\
-                        a + n' & = & 016f4620636968706172676f7470797243 \\
-                        (a + n') \times \text{clamped r} & = &
-                                b83fe991ca66800489155dcd69e8426ba2779453994ac90ed284034da565ecf \\
-                        a = ((a + n') \times \text{clamped r})\, mod\, P & = &
-                                2c88c77849d64ae9147ddeb88e69c83fc \\
-                    \end{array}
-
-            .. card:: font-size-65
-
-                .. rubric:: Verarbeitung des letzten Blocks
+                .. rubric:: ⚠️ Verwendung der (*normalen*) Zahlendarstellung
 
                 .. math::
 
                     \begin{array}{rr}
-                        a      & = & 2d8adaf23b0337fa7cccfb4ea344b30de \\
-                        n      & = &   7075 \\
-                        n'    & = & 017075 \\
-                        a + n' & = & 2d8adaf23b0337fa7cccfb4ea344ca153 \\
-                        (a + n') \times \text{clamped r} & = &
-                                16d8e08a0f3fe1de4fe4a15486aca7a270a29f1e6c849221e4a6798b8e45321f \\
-                        a = ((a + n') \times \text{clamped r})\, mod\, P & = &
-                                28d31b7caff946c77c8844335369d03a7 \\
+                        \text{clamped } r = & 806d5400e52447c036d555408bed685 \\
+                        s = & 1bf54941aff6bf4afdb20dfb8a800301
                     \end{array}
 
-            .. card::
+            .. deck:: incremental
 
-                .. rubric:: Abschuss
+                .. card:: font-size-65
 
-                Addiere auf den Wert des Akkumulators :math:`a` den Wert :math:`s`.
+                    .. rubric:: Verarbeitung des ersten Blocks
 
-                Und somit ist der Tag :math:`2a927010caf8b2bc2c6365130c11d06a8` (als Zahl im little-endian Format).
+                    .. math::
 
+                        \begin{array}{rr}
+                            a       = &                                 00 \\
+                            n       = &   6f4620636968706172676f7470797243 \\
+                            n'      = & 016f4620636968706172676f7470797243 \\
+                            a + n'  = & 016f4620636968706172676f7470797243 \\
+                            (a + n') \times \text{clamped r}  = &
+                                        b83fe991ca66800489155dcd69e8426ba2779453994ac90ed284034da565ecf \\
+                            a = ((a + n') \times \text{clamped r})\bmod P = &
+                                        2c88c77849d64ae9147ddeb88e69c83fc \\
+                        \end{array}
+
+                    .. supplemental::
+
+                        .. remark::
+
+                            Berechnung für den ersten Block in Python
+
+                            .. code:: python
+                                :number-lines:
+                                :class: copy-to-clipboard
+
+                                a = 0x00 # initial
+                                a = a + n'
+                                a = 0x016f4620636968706172676f7470797243 # 0x00 + n' = n'
+                                a *= 0x806d5400e52447c036d555408bed685
+                                print("((a+n') ⨉ clamped r)=",hex(a))
+                                print("((a+n') ⨉ clamped r) mod P=",hex(a % 0x3fffffffffffffffffffffffffffffffb))
+
+                .. card:: font-size-65
+
+                    .. rubric:: Verarbeitung des letzten Blocks mit 2 Bytes
+
+                    .. math::
+
+                        \begin{array}{rr}
+                            a      = & 2d8adaf23b0337fa7cccfb4ea344b30de \\
+                            n      = &   7075 \\
+                            n'     = & 017075 \\
+                            a + n' = & 2d8adaf23b0337fa7cccfb4ea344ca153 \\
+                            (a + n') \times \text{clamped r} = &
+                                    16d8e08a0f3fe1de4fe4a15486aca7a270a29f1e6c849221e4a6798b8e45321f \\
+                            a = ((a + n') \times \text{clamped r})\bmod P = &
+                                    28d31b7caff946c77c8844335369d03a7 \\
+                        \end{array}
+
+                .. card:: font-size-65
+
+                    .. rubric:: Abschluss
+
+                    Addiere auf den Wert des Akkumulators :math-i:`a` den Wert :math-i:`s`.
+
+                    Somit ist der Tag :math:`t = a + s = 2a927010caf8b2bc2c6365130c11d06a8` (als Zahl).
+
+                    Davon werden die *least-significant 128 Bit* serialisiert und verwendet.
+
+                    ::
+
+                        a8 06 1d c1 30 51 36 c6 c2 2b 8b af 0c 01 27 a9
+
+                    .. supplemental::
+
+                        .. rubric:: Serialisierung in Python
+
+                        .. code:: python
+                            :number-lines:
+                            :class: copy-to-clipboard
+
+                            from binascii import hexlify
+
+                            t = 0x2a927010caf8b2bc2c6365130c11d06a8
+                            hexlify(t.to_bytes(17,byteorder="little")[0:16])
 
 .. supplemental::
 
     .. rubric:: Hinweise
 
-    In dieser Diskussion betrachten wir jeden Block der Nachricht als „große Zahl“.
+    - In dieser Diskussion betrachten wir jeden Block der Nachricht als „große Zahl“.
 
-    :math:`P = 2^{130} - 5 = 3fffffffffffffffffffffffffffffffb`
+    - :math:`P = 2^{130} - 5 = 3fffffffffffffffffffffffffffffffb`
 
-    Dadurch, dass wir den Block als Zahl in *little-endian* Reihenfolge interpretieren, ist das Hinzufügen des Bits jenseits der Anzahl der Oktette gleichbedeutend damit, dass wir den Wert 0x01 am Ende des Blocks hinzufügen.
+    - Dadurch, dass wir den Block als Zahl in *little-endian* Reihenfolge interpretieren, ist das Hinzufügen des Bits jenseits der Anzahl der Oktette gleichbedeutend damit, dass wir den Wert 0x01 am Ende des Blocks hinzufügen.
 
 
-.. TODO discuss CBC-MAC
+
+.. class:: exercises
+
+Übung
+---------
+
+.. exercise:: SHA 512
+
+   1. Wie ist die Blockgröße von SHA-512?
+   2. Warum ist SHA-512 resistenter gegen Kollisionsangriffe als SHA-256?
+   3. Wofür eignet sich SHA-512 weniger als SHA-256, trotz höherer Sicherheit?
+   4. Wie viele Bytes werden mindestens verarbeitet, wenn eine 3-Byte-Nachricht mit SHA-512 gehasht wird?
+
+   .. solution::
+        :pwd: ShaShaSha
+
+        .. rubric:: Lösungen
+
+        1. 128 Byte (128 Byte ⨉ 8 Bit = 1024 Bit)
+        2. SHA-512 gibt 512 Bit aus statt 256 Bit und bietet somit mehr Sicherheit gegen Kollisionsangriffe.
+        3. SHA-512 ist langsamer als SHA-256 und benötigt mehr Speicher.
+        4. 128 Byte (Blockgröße inkl. Padding)
+
+
+
+Übung
+--------
+
+.. exercise:: Poly 1305
+
+    Berechnen Sie das Tag für folgende Daten welches als Octet String gegeben sind:
+
+    ::
+
+        0000: 4c 6f 63 6b 20 79 6f 75 72 20 67 61 74 65 2c 0a  Lock your gate,.
+        0010: 45 6e 63 72 79 70 74 20 74 68 65 20 66 61 74 65  Encrypt the fate
+        0020: 2e 0a                                            ..
+
+    Die Daten in *little-endian* Darstellung (z. B. mit :console:`xxd -e -g 16`):
+
+    ::
+
+        0000: 0a2c657461672072756f79206b636f4c   Lock your gate,.
+        0010: 65746166206568742074707972636e45   Encrypt the fate
+        0020:                             0a2e   ..
+
+    Der Schlüssel sei als Octet String:
+
+    ::
+
+        0000: c0 30 14 6f 7f 93 9d 0d e4 36 21 9a d2 4f 89 d3
+        0010: 7a 65 80 93 c3 d1 a0 f9 36 a6 26 f1 53 18 43 e7
+
+
+    Sie können/sollten zur Berechnung auf die Python Shell zurückgreifen (siehe ergänzende Hinweise bei Bedarf.)
+
+    .. supplemental::
+
+        .. rubric:: Python 101
+
+        Die Verwendung von Python bietet sich hier an, da Pyhton "Mathematik mit beliebiger Genauigkeit für Ganzzahlen" hat.
+
+        In Python können Variablen (zum Beispiel :python:`a`) einfach initialisiert und dann direkt genutzt werden. Pyhton unterstützt die gewohnten mathematischen und logischen bzw. binären Operationen. Weiterhin dient der :python:`**` Operator zur Potenzierung (z. B. :python:`2 ** 128` = 2¹²⁸)
+
+        Um einen Octect String in eine Zahl umzuwandeln, kann folgender Code verwendet werden:
+
+        .. code:: python
+            :number-lines:
+            :class: copy-to-clipboard
+
+            octet_string = "21 9a d2 4f 89 d3"
+            r = hex(int.from_bytes(bytes.fromhex(octet_string.replace(" ","")),"little"))
+
+        Um eine Zahl (z. B. :python:`t`) in Little-endian Hexdarstellung umzuwandeln, kann folgender Code verwendet werden:
+
+        .. code:: python
+            :number-lines:
+            :class: copy-to-clipboard
+
+            from binascii import hexlify
+
+            t = 0x2a927010caf8b2bc2c6365130c11d06a8
+            hexlify(t.to_bytes(17,byteorder="little")[0:16])
+
+    .. solution::
+        :pwd: Poly13Poly05
+
+        .. rubric:: Lösung - Schrittweise Berechnung
+
+        .. code:: python
+            :number-lines:
+            :class: copy-to-clipboard
+
+            def octet_string_to_int(octet_string):
+                return hex(int.from_bytes(bytes.fromhex(octet_string.replace(" ","")),"little"))
+
+            raw_r = "c0 30 14 6f 7f 93 9d 0d e4 36 21 9a d2 4f 89 d3"
+            r = octet_string_to_int(raw_r)
+            raw_s = "7a 65 80 93 c3 d1 a0 f9 36 a6 26 f1 53 18 43 e7"
+            s = octet_string_to_int(raw_s)
+            clamped_r = r & 0x0ffffffc0ffffffc0ffffffc0fffffff
+            P = 2**130 - 5
+
+        .. csv-table:: Berechnung Schritt-für-Schritt
+            :header: Variable, Wert, Wert (Hex)
+            :class: table-data-align-right highlight-table-row-on-hover font-size-80
+            :width: 100%
+
+            a, 0,  0x00
+            r, 281180070776210182324449603775708278976, 0xd3894fd29a2136e40d9d937f6f1430c0
+            r = clamp(r), 4700647449925514317655370139444719808, 0x3894fd00a2136e40d9d937c0f1430c0
+            s, 307400044344237987890958630539369670010, 0xe7431853f126a636f9a0d1c39380657a
+            i=1, "n₁ = b'Lock your gate,\\n'"
+            n₁', 353805165684544693620653169504369733452, 0x10a2c657461672072756f79206b636f4c
+            a += n₁', 353805165684544693620653169504369733452, 0x10a2c657461672072756f79206b636f4c
+            a = (r * a) % p, 1089264044342714995172028223103456928030,  0x333789fc0b7e34a09c9beb74c1112611e
+            i=2, "n₂ = b'Encrypt the fate'"
+            n₂', 475138676415835252388901484031803354693, 0x165746166206568742074707972636e45
+            a += n₂', 1564402720758550247560929707135260282723, 0x498ed0126d848b27dea3327c58375cf63
+            a = (r * a) % p, 160922463706615097368433003229876855225, 0x79108a063d6c3d99ca635de208c821b9
+            i=3, "n₃ = b'.\\n'"
+            n₃', 68142, 0x10a2e
+            a += n₃', 160922463706615097368433003229876923367, 0x79108a063d6c3d99ca635de208c92be7
+            a = (r * a) % p, 379175503693830260547054247424415914338, 0x11d428bb14e05529dbd8457ad49765962
+            a + s, 686575548038068248438012877963785584348 ,0x20485a4053f2bf8d4b7252970dcf6bedc
+
+        Das Tag ist somit: :code:`dc be f6 dc 70 29 25 b7 d4 f8 2b 3f 05 a4 85 04`.
+
+
+        .. rubric:: Lösung - Implementierung des Algorithmus
+
+        .. code:: python
+            :number-lines:
+            :class: copy-to-clipboard
+
+            from math import ceil
+            from binascii import hexlify
+
+            """ Converts a hexadecimal string to an integer (e.g. "af fe" => 65199). The hexadecimal string is interpreted as a little-endian byte array.
+            """
+            def octet_string_to_int(octet_string):
+                return int.from_bytes(bytes.fromhex(octet_string.replace(" ","")),"little")
+
+            def octets_to_int(octects):
+                return int.from_bytes(octects, "little");
+
+            def clamp(r):
+                return r & 0x0ffffffc0ffffffc0ffffffc0fffffff
+
+            # msg is a "normal" string
+            # raw_s und raw_r sind octect strings.
+
+            def poly1305_mac(msg, raw_r, raw_s):
+                print("len(msg)", len(msg))
+                r = octet_string_to_int(raw_r)
+                print("r",r, hex(r))
+                r = clamp(r)
+                print("clamped_r", r, hex(r))
+                s = octet_string_to_int(raw_s)
+                print("s",s, hex(s))
+                a = 0  # a is the accumulator
+                p = (1<<130)-5
+                for i in range(1,1+ceil(len(msg) / 16)):
+                    block = bytes(msg[((i-1)*16):(i*16)], "utf-8")
+                    print("i", i, "block:" , block)
+                    n = int.from_bytes(block + b"\x01","little")
+                    print("n", n, hex(n))
+                    a += n
+                    print("a += n" ,a, hex(a))
+                    a = (r * a) % p
+                    print("(r * a) % p" ,a, hex(a))
+                t = a + s
+                print("raw t", t, hex(t))
+                return t.to_bytes(17,byteorder="little")[0:16]
+
+            string = "Lock your gate,\nEncrypt the fate.\n"
+            print("\n\n",string)
+            print(hexlify(poly1305_mac(
+                string,
+                "c0 30 14 6f 7f 93 9d 0d e4 36 21 9a d2 4f 89 d3",
+                "7a 65 80 93 c3 d1 a0 f9 36 a6 26 f1 53 18 43 e7")))
+
+            string = "Cryptographic Forum Research Group"
+            print("\n\n",string)
+            print(hexlify(poly1305_mac(
+                string,
+                "85 d6 be 78 57 55 6d 33 7f 44 52 fe 42 d5 06 a8",
+                "01 03 80 8a fb 0d b2 fd 4a bf f6 af 41 49 f5 1b")))
 
 
 Zusammenfassung
 -------------------
 
-.. class:: incremental-list list-with-explanations
+.. class:: incremental-list
 
 - Ein Hashwert dient der Integritätssicherung von Nachrichten.
 - Ein Mac dient der Authentifizierung von Nachrichten.
 - Ein Mac sichert auch immer die Integrität der Nachricht.
 
-  Es ist somit möglich die Integrität einer Nachricht zu sichern ohne Authentizität zu gewährleisten, aber nicht umgekehrt.
+  :peripheral:`Es ist somit möglich die Integrität einer Nachricht zu sichern ohne Authentizität zu gewährleisten, aber nicht umgekehrt.`
 - Ein Mac erlaubt es dem Empfänger eine gefälschte Nachricht zu erkennen aber ggf. auch zu erstellen (:eng:`to forge a message`).
-- Eine Signatur basiert auf einem Hashwert und einem privaten Schlüssel.
-- Der Empfänger kann bei einer signierten Nachricht, diese nicht verändern und als eine Nachricht des Senders ausgeben.
-- Nur für Nachrichten, die signiert sind, gilt somit die Nichtabstreitbarkeit (:eng:`non-repudation`).
+- Eine Signatur basiert auf einem Hashwert und einem *privaten* Schlüssel.
+
+  - Der Empfänger kann bei einer signierten Nachricht, diese nicht verändern und als eine Nachricht des Senders ausgeben.
+  - Nur für Nachrichten, die signiert sind, gilt somit die Nichtabstreitbarkeit (:eng:`non-repudation`).
