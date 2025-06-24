@@ -6,9 +6,9 @@
     version="1.1"
     xmlns:xl="http://www.w3.org/1999/xlink"
     xmlns:dc="http://purl.org/dc/elements/1.1/"
-    viewBox="99 490 873 191"
+    viewBox="99 490 873 240"
     width="513"
-    height="112"
+    height="141"
 >
 <style>
   @import url('/LectureDoc2/ext/fonts/ld-fonts.css');
@@ -77,7 +77,6 @@
         fill-opacity="1"
     >
     <title>just_authentication</title>
-    <rect fill="white" x="99" y="490" width="873" height="191" />
     <g id="just_authentication_Layer_1">
       <title>Layer 1</title>
       <g id="Graphic_59">
@@ -413,7 +412,6 @@
                         fill="black"
                         x="0"
                         y="26"
-                        xml:space="preserve"
                     >E(PR</tspan>
           <tspan
                         font-family="Noto Sans Display"
@@ -421,7 +419,6 @@
                         font-weight="400"
                         fill="black"
                         y="34"
-                        xml:space="preserve"
                     >a</tspan>
           <tspan
                         font-family="Noto Sans Display"
@@ -429,7 +426,6 @@
                         font-weight="400"
                         fill="black"
                         y="26"
-                        xml:space="preserve"
                     >, H(M))</tspan>
         </text>
       </g>
@@ -459,7 +455,7 @@
         </text>
       </g>
       <g id="Graphic_82">
-        <text transform="translate(327.96314 555)" fill="#666">
+        <text transform="translate(300 695)" fill="#666">
           <tspan
                         font-family="Noto Sans Display"
                         font-size="24"
@@ -481,10 +477,10 @@
       </g>
       <g id="Line_81">
         <line
-                    x1="353.54937"
-                    y1="599"
-                    x2="354.18633"
-                    y2="601.1003"
+                    x1="335"
+                    y1="710"
+                    x2="360"
+                    y2="685"
                     marker-end="url(#SharpArrow_Marker)"
                     stroke="#666"
                     stroke-linecap="round"
