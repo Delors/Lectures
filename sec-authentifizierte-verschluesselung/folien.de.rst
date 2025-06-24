@@ -17,7 +17,7 @@ Authentifizierte Verschlüsselung
 
 :Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
 :Kontakt: michael.eichberg@dhbw.de
-:Version: 0.1.2
+:Version: 0.1.4
 :Teilweise basierend auf: *Cryptography and Network Security - Principles and Practice, 8th Edition, William Stallings*
 
 .. supplemental::
@@ -53,9 +53,9 @@ Drei Ansätze in Hinblick auf *Authenticated Encryption*
 
             .. image:: drawings/authentifizierte-verschluesselung/encrypt_and_mac.svg
 
-    .. cell:: width-50 incremental
+    .. cell:: width-50 incremental fade-out
 
-        **MAC-then-Encrypt**
+        :obsolete:`MAC-then-Encrypt`
 
         .. image:: drawings/authentifizierte-verschluesselung/mac_then_encrypt.svg
 
@@ -65,11 +65,13 @@ Drei Ansätze in Hinblick auf *Authenticated Encryption*
 
     - **Encrypt-then-MAC**: Der Klartext wird verschlüsselt und dann wird ein MAC über den Chiffretext berechnet. Dieser Ansatz wird von IPSec und TLS 1.3 verwendet.
     - **Encrypt-and-MAC**: Der Klartext wird verschlüsselt und ein MAC über den Klartext berechnet. Beides wird versendet. Dieser Ansatz wird von SSH verwendet. Es wurde gezeigt, dass kleinere Änderungen die Sicherheit weiter verbessern können.
-    - **MAC-then-Encrypt**: Ein MAC wird über den Klartext berechnet und dann wird der Klartext und der MAC verschlüsselt. Dies war bis TLS 1.2 der Standard. Aufgrund von erfolgreichen Angriffen insbesondere gegen das Padding wird dieser Ansatz nicht mehr verwendet/empfohlen.
+    - **MAC-then-Encrypt**: Ein MAC wird über den Klartext berechnet und dann wird der Klartext und der MAC verschlüsselt. Dies war bis TLS 1.2 der Standard. Aufgrund von erfolgreichen Angriffen - insbesondere gegen das Padding bei Verwendung des CBC Modus (siehe `Padding-Oracle Attacks <https://en.wikipedia.org/wiki/Padding_oracle_attack>`__) - wird dieser Ansatz nicht mehr verwendet.
+
+    Das grundlegende Problem entsteht dann, wenn der Angreifer bei einer Manipulation der Nachricht (am Ende) nicht nur eine generische Fehlermeldung erhält (Decryption failed) sondern ggf. die Information, dass ein Padding-Fehler vorliegt. Er kann diese Information nutzen, um  schrittweise eine Entschlüsselung vorzunehmen. Alternativ können ggf. Timing-Unterschiede im Verhalten verwendet werden.
 
     .. rubric:: Integrität und Authentizität
 
-    Es ist möglich Integrität ohne Authentizität zu gewährleisten. Durch einen einfachen MAC kann gewährleistet werden, dass die Daten während der Übertragung nicht verändert wurden (insbesondere durch einen Fehler). Wenn ich jedoch Authentizität gewährleisten möchte, dann muss ich einen MAC verwenden, der auf einem Schlüssel basiert, der nur dem Sender und dem Empfänger bekannt ist. Dies verhindert, dass ein Angreifer einfach die Daten verändert und den MAC neu berechnet.
+    Es ist möglich Integrität ohne Authentizität zu gewährleisten. Durch einen einfachen Hash kann gewährleistet werden, dass die Daten während der Übertragung nicht verändert wurden (insbesondere durch einen Fehler). Wenn ich jedoch Authentizität gewährleisten möchte, dann muss ich einen MAC verwenden, der auf einem Schlüssel basiert, der nur dem Sender und dem Empfänger bekannt ist. Dies verhindert, dass ein Angreifer einfach die Daten verändert und den MAC neu berechnet.
 
     Authentizität ohne Integrität ist nicht sinnvoll. Der Nutzen zu wissen, dass eine Nachricht von einer bestimmten Person kam, aber nicht zu wissen ob die Nachricht verändert wurde, ist sehr gering.
 
@@ -80,7 +82,10 @@ Drei Ansätze in Hinblick auf *Authenticated Encryption*
 AES-GCM Modus (Galois/Counter Mode)
 -----------------------------------------
 
-.. image:: drawings/authentifizierte-verschluesselung/aes_gcm.svg
+.. figure:: drawings/authentifizierte-verschluesselung/aes_gcm.svg
+    :align: center
+
+    Authenticated Encryption with Additional Data (AEAD)
 
 .. supplemental::
 
