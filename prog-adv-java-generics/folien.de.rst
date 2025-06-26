@@ -3,12 +3,12 @@
     :lang: de
     :author: Michael Eichberg
     :keywords: "Programmierung", "Java", "Generics", "Software Development"
-    :description lang=de: Java Generics 
+    :description lang=de: Java Generics
     :id: lecture-prog-java-generics
     :first-slide: last-viewed
     :master-password: WirklichSchwierig!
     :theme: colored
-    
+
 .. include:: ../docutils.defs
 
 
@@ -22,15 +22,15 @@ Java Generics
 
 .. supplemental::
 
-    :Folien: 
-        
-        |html-source| 
+    :Folien:
+
+        |html-source|
 
         |pdf-source|
 
     :Kontrollfragen:
 
-        .. source:: kontrollfragen.de.rst 
+        .. source:: kontrollfragen.de.rst
             :path: relative
             :prefix: https://delors.github.io/
             :suffix: .html
@@ -51,9 +51,9 @@ Einfache nicht-generische Datenstrukturen
 
 
 
-.. class:: exercises 
+.. class:: exercises
 
-Übung 
+Übung
 ------------------------------------------------
 
 .. scrollable::
@@ -74,7 +74,7 @@ Einfache nicht-generische Datenstrukturen
         6. Was wäre bei der Addition passiert, wenn an zweiter Stelle ein :java:`String` gespeichert gewesen wäre? Wann wäre das Verhalten aufgefallen?
         7. Welchen statischen Typ hat der Wert, den die Methode :java:`getFirst()` zurückgibt?
 
-        .. solution:: 
+        .. solution::
             :pwd: EinfachAberUnschoen
 
             .. include:: code/Pair.java
@@ -88,16 +88,16 @@ Einfache nicht-generische Datenstrukturen
 
 
 
-.. class:: exercises 
+.. class:: exercises
 
-Übung 
+Übung
 ------------------------------------------------
 
 .. scrollable::
 
     .. exercise:: Datenstruktur zum Speichern von ganz vielen Werten
 
-        1.  Implementieren Sie eine Datenstruktur :java:`List` zum Speichern beliebig vieler Werte im Package ``ds``. Die Klasse soll folgende Methoden bereitstellen: 
+        1.  Implementieren Sie eine Datenstruktur :java:`List` zum Speichern beliebig vieler Werte im Package ``ds``. Die Klasse soll folgende Methoden bereitstellen:
 
             - :java:`List()`: Konstruktor
             - :java:`List(int size)`: Konstruktor
@@ -121,8 +121,8 @@ Einfache nicht-generische Datenstrukturen
                 Denken Sie an die Modellierung von Sichtbarkeiten.
 
                 Modellieren Sie alle Ausnahmen. Stellen Sie sicher, dass alle Methoden die Bedingungen einhalten.
-    
-        .. solution:: 
+
+        .. solution::
             :pwd: WeiterGehtEs
 
             1. .. include:: code/ds/List.java
@@ -137,9 +137,9 @@ Einfache nicht-generische Datenstrukturen
 
 
 
-.. class:: exercises 
+.. class:: exercises
 
-Übung 
+Übung
 ------------------------------------------------
 
 .. scrollable::
@@ -157,7 +157,7 @@ Einfache nicht-generische Datenstrukturen
         2. Schreiben Sie eine Klasse RPN (im *Default Package*), die einen String von der Kommandozeile übernimmt (als einzelne "args") und diesen als *umgekehrte polnische Notation* interpretiert (d. h. erst kommen die Operanden, dann ein Operator) und berechnet.
 
            Beispielinteraktion:
-        
+
            .. code:: console
                 :number-lines:
 
@@ -168,14 +168,14 @@ Einfache nicht-generische Datenstrukturen
 
         3. Wenn Sie sich den Code des RPN ansehen - wo sehen Sie insbesondere Verbesserungspotential?
 
-        .. solution:: 
+        .. solution::
             :pwd: WeiterGehtEs
 
             .. include:: code/RPN.java
                 :code: java
                 :class: copy-to-clipboard
                 :number-lines:
-        
+
 
 .. class:: summary
 
@@ -214,24 +214,24 @@ Generics - Motivation
             .. class:: incremental-list list-with-explanations
 
             - Eine Collection wie :java:`Pair` oder :java:`List` sollte zu mehr als einem Typ passen.
-            
+
             - Eine Implementierung sollte für verschiedene Zwecke ausreichend sein.
 
             - Das allgemeine Verhalten der Collection hängt nicht vom Elementtyp ab.
 
-            - Zusätzlich wollen wir einen spezifischen Elementtyp garantiert haben. 
+            - Zusätzlich wollen wir einen spezifischen Elementtyp garantiert haben.
 
               Angenommen, wir nutzen eine Collection nur für Person Instanzen, dann wollen wir auch Person Objekte verwenden können und nicht immer mit "Object" arbeiten müssen.
 
     .. card::
 
-        Generics erlauben die Definition generischer und typsicherer Datentypen, die über die Typen der Elemente abstrahieren. 
-        
+        Generics erlauben die Definition generischer und typsicherer Datentypen, die über die Typen der Elemente abstrahieren.
+
         D. h. wir können zum Beispiel angeben, dass wir nur Elemente vom statischen Typ :java:`Person` speichern wollen. Dies hat folgende Vorteile:
 
         .. class:: positive-list incremental-list
 
-        - Kompakterer / besser wartbarer Code 
+        - Kompakterer / besser wartbarer Code
         - Fehler, die sonst erst zur Laufzeit auftreten würden, können zur Compilezeit erkannt werden (z. B. das versehentliche Speichern eines :java:`String`\ s in einer Liste für :java:`Integer` Werte.)
 
 
@@ -242,7 +242,7 @@ Generics - Beispiel: RPN Calculator mit verschiedenen :java:`Stack`\ s
 .. deck::
 
     .. card::
-        
+
         .. rubric:: Verwendung eines einfachen :java:`Stack`\ s ohne Typparametrisierung
 
         .. include:: code/RPN.java
@@ -251,13 +251,13 @@ Generics - Beispiel: RPN Calculator mit verschiedenen :java:`Stack`\ s
             :number-lines:
             :start-after: // Main logic
             :end-before: System.out.println(stack.pop())
-    
-        .. supplemental:: 
+
+        .. supplemental::
 
             In diesem Beispiel würden wir insbesondere gerne auf die Casts (2 Mal in Zeile 5 und 2 man in Zeile 8) verzichten wollen. Dies Casts sind nicht nur unschön, sondern können auch (in komplexeren Fällen) zu Laufzeitfehlern führen.
 
     .. card::
-        
+
         .. rubric:: Verwendung eines :java:`Stack`\ s für Double Werte
 
         .. include:: code/RPN2.java
@@ -304,7 +304,7 @@ Generics: Instanziierung
 
     .. class:: incremental-list
 
-    - Der konkrete Datentyp muss eine Klasse sein, d. h. es darf kein primitiver Datentyp (z.B. :java:`int`) sein. 
+    - Der konkrete Datentyp muss eine Klasse sein, d. h. es darf kein primitiver Datentyp (z.B. :java:`int`) sein.
 
 
     - Der konkrete Datentyp kann allerdings auch bei der Verwendung weggelassen werden (dann spricht man von Raw-Types).
@@ -324,7 +324,7 @@ Generics: Instanziierung
         :class: dhbw
 
         :java:`Stack<Double> stack = new Stack<>();`
-        
+
         oder
 
         :java:`List<Integer> v1 = new ArrayList<>();`
@@ -344,8 +344,8 @@ Generics: Instanziierung
 
 .. exercise:: Pair mit Typparametern
 
-    Erweitern Sie Ihre Klasse Pair um zwei generische Typparameter :java:`U` und :java:`V` für die beiden Werte, die gespeichert werden sollen. 
-    
+    Erweitern Sie Ihre Klasse Pair um zwei generische Typparameter :java:`U` und :java:`V` für die beiden Werte, die gespeichert werden sollen.
+
     Nutzen Sie dann die entsprechenden Typen :java:`U` und :java:`V` für die entsprechenden Attribute der Klasse und ggf. auch für Methodenparameter/-rückgabewerte und lokale Variablen.
 
     Passen Sie auch die main Methode entsprechend an.
@@ -403,10 +403,10 @@ Wrapper-Klassen und Auto(un)boxing
             Sie werden nicht von Object abgeleitet und besitzen keine Methoden.
 
     .. observation::
-        :class: incremental 
+        :class: incremental
 
         Wie wir gesehen haben ist es möglich primitive Datentypen in Datenstrukturen wie Listen zu speichern obwohl diese eigentlich nur Objekte speichern können.
-        
+
     .. compound::
         :class: incremental
 
@@ -427,7 +427,7 @@ Wrapper-Klassen und Auto(un)boxing
             :class: incremental margin-top-0-5em
 
             Dieses so genannten *Autoboxing* hat jedoch ggf. erhebliche Laufzeitkosten und sollte daher vermieden werden.
-    
+
 
 
 Grundlegende Klassen des Collections Frameworks
@@ -460,7 +460,7 @@ Grundlegende Klassen des Collections Frameworks
   - Ein Set, aber geordnet bzgl. einer spezifischen Vergleichsstrategie.
 
 
-.. class:: new-subsection 
+.. class:: new-subsection
 
 Collections für einen Typ von Werten
 ------------------------------------------------
@@ -499,7 +499,7 @@ Im Folgenden betrachten wir Collections die Element vom Typ „E“ verwalten; d
         - :java:`boolean remove(Object O)`: Versucht Objekt :java:`o` aus der Liste zu entfernen; true bei Erfolg
         - :java:`int size()`: Liefert die Größe der Liste
         - :java:`Object[] toArray()`: Liefert ein Array, das alle Elemente der Liste umfasst
-    
+
     .. compound::
         :class: incremental
 
@@ -521,7 +521,7 @@ Im Folgenden betrachten wir Collections die Element vom Typ „E“ verwalten; d
         - :java:`void addLast(E)`
         - :java:`E getFirst()`
         - :java:`E getLast()`
-            
+
         :java:`java.util.ArrayList` speichert die Elemente in einem Array und fügt folgende Methoden hinzu (Auswahl):
 
         - :java:`void ensureCapacity(int minCapacity)` - falls die Liste weniger Elemente als :java:`minCapacity` fassen kann, wird das Array vergrößert
@@ -568,10 +568,10 @@ Im Folgenden betrachten wir Collections die Element vom Typ „E“ verwalten; d
 
 
 
-.. class:: new-subsection 
+.. class:: new-subsection
 
 Collections für Paare von Werten (Schlüssel und Wert)
-------------------------------------------------------  
+------------------------------------------------------
 
 
 
@@ -595,7 +595,7 @@ Im folgenden wird der Typ „K“ für den Typ des Schlüssels und der Typ "V" f
 
     Wenn Objekte nicht über einen numerischen Index, sondern über einen Schlüssel (einzigartiger, aber sonst zufälliger Wert) auffindbar sein sollen, z.B. eine Telefonnummer mit „Nachname + Vorname“.
 
-    .. compound:: 
+    .. compound::
         :class: incremental
 
         **Das Interface bietet folgende Methoden**:
@@ -608,10 +608,10 @@ Im folgenden wird der Typ „K“ für den Typ des Schlüssels und der Typ "V" f
         - :java:`boolean containsValue(Object value)` beantwortet, ob "value" in der HashMap ist
         - :java:`Object remove(Object key)`	löscht "key" und die assoziierten Objekte
 
-        .. supplemental:: 
+        .. supplemental::
 
             Wir werden später klären warum nur die Parameter der Methode :java:`put` einen generischen Typ (:java:`K` für *Key* (:ger:`Schlüssel`) und :java:`V` für *Value* (:ger:`Wert`)) haben.
-            
+
 
     .. compound::
         :class: incremental
@@ -621,7 +621,7 @@ Im folgenden wird der Typ „K“ für den Typ des Schlüssels und der Typ "V" f
         :java:`java.util.HashMap`
 
         Erlaubt Zugriff auf Elemente durch einen berechneten Schlüssel, z.B. „Nachname + Vorname“ Schlüssel wird in numerischen Index (Hashwert\ [#]_) konvertiert und für effizienten Zugriff genutzt.
-        
+
         .. [#] Hashing diskutieren wir später detailliert.
 
 
@@ -647,7 +647,7 @@ Iterieren über Collections bzw. Laufen über die Elemente eine Collection
       - Für eine :java:`HashMap` nutzt man :java:`keys()` und darauf :java:`iterator()`
       - :java:`iterator()` liefert eine Instanz von :java:`java.util.Iterator`
 
-    \ 
+    \
 
     .. class:: incremental-list
 
@@ -681,13 +681,13 @@ Iterieren über Collections bzw. Laufen über die Elemente eine Collection
         .. code:: java
             :number-lines:
 
-            do { 
+            do {
                 r += it.next(); // Element zur Summe addieren
             } while(it.hasNext()); // weiter, solange Elemente da
 
 
-    .. compound:: 
-        :class: incremental 
+    .. compound::
+        :class: incremental
 
         Weiterhin gibt es eine besondere :java:`for`\ -Schleife (:eng:`foreach-loop`), die die Iteration über eine :java:`Collection`, die das Interface :java:`Iterable` implementiert vereinfacht:
 
@@ -700,7 +700,7 @@ Iterieren über Collections bzw. Laufen über die Elemente eine Collection
                 for (Integer i : l) // für jedes Element in der Liste
                     r += i; // Element zur Summe addieren
 
-        :java:`java.util.Iterable` definiert dabei lediglich das Protokoll zur Erzeugung eines :java:`java.util.Iterator`\ s. 
+        :java:`java.util.Iterable` definiert dabei lediglich das Protokoll zur Erzeugung eines :java:`java.util.Iterator`\ s.
 
 
 
@@ -719,7 +719,7 @@ Die Implementation von *Iterator*\ s ist ein Beispiel für die Umsetzung des *De
 
 
 
-.. class:: exercises 
+.. class:: exercises
 
 Übung
 ------------------------------------------------
@@ -759,11 +759,11 @@ Typkompatibilität
     :number-lines:
     :class: copy-to-clipboard
 
-    List<String> ls = new LinkedList<String>(); 
-    List<Object> lo = ls; 
-    lo.add(new Object()); 
-    String s = ls.get(0); 
-    
+    List<String> ls = new LinkedList<String>();
+    List<Object> lo = ls;
+    lo.add(new Object());
+    String s = ls.get(0);
+
 .. question::
     :class: incremental
 
@@ -772,7 +772,7 @@ Typkompatibilität
 .. answer::
     :class: incremental
 
-    Die Zuweisung in Zeile 2 ist nicht erlaubt, da :java:`List<String>` und :java:`List<Object>` nicht kompatibel sind. Obwohl String ein Subtype von Object ist, ist :java:`List<String>` kein Subtyp von :java:`List<Object>`. Wäre dies erlaubt, dann könnte man in Zeile 3 ein Objekt vom Typ :java:`Object` einer Liste von Strings hinzufügen! 
+    Die Zuweisung in Zeile 2 ist nicht erlaubt, da :java:`List<String>` und :java:`List<Object>` nicht kompatibel sind. Obwohl String ein Subtype von Object ist, ist :java:`List<String>` kein Subtyp von :java:`List<Object>`. Wäre dies erlaubt, dann könnte man in Zeile 3 ein Objekt vom Typ :java:`Object` einer Liste von Strings hinzufügen!
 
 .. summary::
     :class: incremental
@@ -782,10 +782,10 @@ Typkompatibilität
 
 
 Wildcards
-----------------------------------------------------    
+----------------------------------------------------
 
 .. story::
-        
+
 
     .. deck::
 
@@ -816,7 +816,7 @@ Wildcards
 
                     Diese Methode definiert einen Parameter vom Typ :java:`Stack<Object>`. Das bedeutet, dass nur :java:`Stack<Object>`-Objekte übergeben werden können.
 
-                    Die Implementierung funktioniert aber auch mit Listen von Subtypen von :java:`Object` wie :java:`String` oder :java:`Integer`.   
+                    Die Implementierung funktioniert aber auch mit Listen von Subtypen von :java:`Object` wie :java:`String` oder :java:`Integer`.
 
                 .. card::
 
@@ -826,9 +826,9 @@ Wildcards
 
                         printAll(new Stack<Integer>())
                         |  Error:
-                        |  incompatible types: 
-                        |       Stack<java.lang.Integer> 
-                        |       cannot be converted to 
+                        |  incompatible types:
+                        |       Stack<java.lang.Integer>
+                        |       cannot be converted to
                         |       Stack<java.lang.String>
 
                 .. card::
@@ -878,7 +878,7 @@ Beschränkte Wildcards
 .. deck::
 
     .. card::
-                
+
 
         .. grid::
 
@@ -901,7 +901,7 @@ Beschränkte Wildcards
                     void draw(Shape s) {
                         s.draw(this);
                     } }
-                
+
                 **Aufgabe**: Definition einer Methode :java:`drawAll(<list of shapes>)` für :java:`Canvas`, die eine Liste von Formen zeichnet?
 
             .. cell:: width-50
@@ -955,7 +955,7 @@ Beschränkte Wildcards
                     shapes.add(0, new Rectangle());
                 }
 
-        .. supplemental::        
+        .. supplemental::
 
             :java:`? super X` bedeutet:
 
@@ -969,12 +969,12 @@ Generische Methoden
 
 .. deck::
 
-    .. card:: 
+    .. card::
 
         Zusätzlich zu generischen Klassen können auch generische Methoden definiert werden. Bei diesen Methoden wird der generische Typ vor dem Rückgabetyp spezifiziert.
 
     .. card::
-                
+
         .. example::
 
             .. code:: java
@@ -999,11 +999,11 @@ Generische Methoden
             .. code:: java
                 :number-lines:
                 :class: copy-to-clipboard
-                
+
                 /*Tuple2<String> ts =*/ new Tuple2<Integer>(1,2).map(e -> "value: " + e)
 
 
-        
+
 
 
 .. class:: summary
@@ -1029,7 +1029,7 @@ Statische Typisierung
 
     .. class:: list-with-details
 
-    1.  Fügen Sie Ihrer generischen Klasse :java:`Pair` eine Methode :java:`addToMap(...)` hinzu, die die Elemente des Pairs in einer :java:`java.util.Map` speichert. D. h. der erste Wert eines Pairs wird als Schlüssel und der Zweite als Value verwendet. 
+    1.  Fügen Sie Ihrer generischen Klasse :java:`Pair` eine Methode :java:`addToMap(...)` hinzu, die die Elemente des Pairs in einer :java:`java.util.Map` speichert. D. h. der erste Wert eines Pairs wird als Schlüssel und der Zweite als Value verwendet.
 
         Achten Sie darauf, dass die Methode auch Maps von Supertypen von :java:`U` und :java:`V` akzeptiert. D. h. es sollte folgendes Szenario unterstützt werden:
 
@@ -1054,12 +1054,7 @@ Statische Typisierung
     .. solution::
         :pwd: DasWarenGenerics
 
-        .. rubric:: Lösung
-
         .. include:: code/ds/generic/PairComplete.java
             :code: java
             :class: copy-to-clipboard
             :number-lines:
-
-
-

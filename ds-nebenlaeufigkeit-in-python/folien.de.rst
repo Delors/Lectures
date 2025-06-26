@@ -1223,9 +1223,10 @@ Starte immer mit einer *Single-threaded implementation*
     .. solution::
       :pwd: DelayedBuffer-Threads
 
-      .. rubric:: Lösungsvorschlag
+      Python
 
       .. code:: python
+        :number-lines:
         :class: copy-to-clipboard
 
         from threading import Thread, Lock
@@ -1283,9 +1284,10 @@ Starte immer mit einer *Single-threaded implementation*
     .. solution::
       :pwd: ThreadPools machen es einfacher
 
-      .. rubric:: Lösungsvorschlag
+      Python
 
       .. code:: python
+        :number-lines:
         :class: copy-to-clipboard
 
         from threading import Lock
@@ -1336,20 +1338,19 @@ Starte immer mit einer *Single-threaded implementation*
     .. solution::
       :pwd: KoroutinenUndDelayedBuffer
 
-      .. rubric:: Lösungsvorschlag
+      Python
 
       .. code:: python
+        :number-lines:
         :class: copy-to-clipboard
 
         from asyncio import Queue
         import asyncio
 
-
         def ts_print(*args, **kwargs):
             print(
                 *args, **kwargs
             )  # no lock needed, because we are using coroutines and not threads
-
 
         class DelayedBuffer:
 
@@ -1374,7 +1375,6 @@ Starte immer mit einer *Single-threaded implementation*
             async def join(self):
                 await self.fn_queue.join()
 
-
         async def main():
             buffer = DelayedBuffer()
             buffer.submit(
@@ -1394,7 +1394,6 @@ Starte immer mit einer *Single-threaded implementation*
               ts_print, "the other side ", **{"end": "", "flush": True})
             await buffer.join()
             print("Done.")
-
 
         if __name__ == "__main__":
             asyncio.run(main())

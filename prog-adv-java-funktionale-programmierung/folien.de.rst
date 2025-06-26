@@ -166,7 +166,7 @@ Lambdas
 
             .. card::
 
-                .. rubric:: Lösung ab Java 8
+                .. rubric:: Lösung ab Java 8+
 
                 .. code:: java
                     :number-lines:
@@ -256,7 +256,7 @@ Lambdas
                     /*final static*/ int MAGIC_NUMBER = 42;
                 }
 
-                MyActionListener actionListener = 
+                MyActionListener actionListener =
                         (e) -> System.out.println(text + MyActionListener.MAGIC_NUMBER);
 
 
@@ -318,12 +318,12 @@ Lambdas
                         for (T x : l) action.accept(x);
                 }   }
 
-                WorkerOnList<Integer> worker = 
+                WorkerOnList<Integer> worker =
                         new WorkerOnList<>( (i) -> System.out.println(i*10) );
                 worker.accept(Arrays.asList(1,2,3,4));
 
-            .. container:: incremental-list 
-            
+            .. container:: incremental-list
+
                 *Ausgabe:* :console:`10 20 30 40`
 
 
@@ -446,7 +446,7 @@ Erweiterungen der Collection API
                 l.forEach(System.out::println);
 
             .. container:: incremental
-            
+
                 *Ausgabe:* :console:`10 20 30 40 50 60 70 80 90`
 
 
@@ -464,7 +464,7 @@ Erweiterungen der Collection API
     - :java:`void replaceAll(UnaryOperator<...> operator)`: Ersetzt alle Elemente in der :java:`Queue` durch das Ergebnis der Anwendung des Operators auf das Element.
 
     Schreiben Sie Tests für die neuen Methoden; verwenden Sie dafür Closures bzw. Lambda-Funktionen. Stellen Sie 100% *Statementcoverage* sicher.
-    
+
     .. supplemental::
 
         Die Java Dokumentation finden Sie hier:
@@ -475,7 +475,7 @@ Erweiterungen der Collection API
           (Hier der Link auf die Dokumentation der Klasse :java:`UnaryOperator`: https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/function/UnaryOperator.html)
 
 
-    .. hint:: 
+    .. hint::
 
         - Sorgen Sie ggf. vorher dafür, dass Sie eine angemessene Projektstruktur haben.
         - Passen Sie ggf. die ``pom.xml`` von ihren anderen Projekten an.
@@ -523,13 +523,13 @@ Verkettete Listen
 
 .. remark::
 
-    Bisher haben wir Arrays verwendet, um Listen zu speichern. Arrays haben jedoch den Nachteil, dass sie eine feste Größe haben und nicht effizient vergrößert werden können. 
+    Bisher haben wir Arrays verwendet, um Listen zu speichern. Arrays haben jedoch den Nachteil, dass sie eine feste Größe haben und nicht effizient vergrößert werden können.
 
 Eine verkettete Liste ist eine alternative Implementierungstechnik, die flexibler ist als ein Array und dynamisch wachsen kann. Jedes Element in einer verketteten Liste enthält eine Referenz auf das nächste Element in der Liste.
 
 
 .. image:: images/chainedlist.svg
-    :alt: Verkettete Liste    
+    :alt: Verkettete Liste
     :align: center
 
 
@@ -545,7 +545,7 @@ Eine verkettete Liste ist eine alternative Implementierungstechnik, die flexible
     .. code:: java
         :number-lines:
         :class: copy-to-clipboard
-        
+
         public interface Queue<T> {
             void enqueue(T item);
             T dequeue();
@@ -557,18 +557,18 @@ Eine verkettete Liste ist eine alternative Implementierungstechnik, die flexible
             <X> Queue<X> map(Function<T, X> mapper);
             static <T> Queue<T> empty() { TODO }
         }
-        
+
     .. supplemental::
 
         **Erklärungen**
 
-        :`map`:java:: Erzeugt eine neue :java:`Queue<X>` bei der die Elemente der neuen Queue 
-                das Ergebnis der Anwendung der Funktion :java:`apply` des Objekts :java:`mappers` auf die Element der :java:`Queue` sind. 
-        :`empty`:java:: Erzeugt eine leere Queue. 
+        :`map`:java:: Erzeugt eine neue :java:`Queue<X>` bei der die Elemente der neuen Queue
+                das Ergebnis der Anwendung der Funktion :java:`apply` des Objekts :java:`mappers` auf die Element der :java:`Queue` sind.
+        :`empty`:java:: Erzeugt eine leere Queue.
 
     Schreiben Sie Testfälle, um die Implementierung zu überprüfen. Zielen Sie auf mind. 100% *Statementcoverage* ab.
 
-    
+
     .. solution::
         :pwd: FuncF
 
@@ -599,7 +599,7 @@ Eine verkettete Liste ist eine alternative Implementierungstechnik, die flexible
 Zusammenfassung
 ------------------------------------------------
 
-.. rubric:: Funktionale Programmierung  
+.. rubric:: Funktionale Programmierung
 
 .. class:: incremental-list
 
@@ -652,7 +652,7 @@ Streams sind :incremental:`umgeformte Sammlungen`\ :incremental:`, die durch die
         ll.forEach(x -> System.out.println(x));
 
     .. container:: incremental
-    
+
         *Ausgabe:* :console:`20 40 60 80`
 
 
@@ -703,7 +703,7 @@ Erzeugung von Streams
                 // Stream of objects:
                 Stream<Integer> isO = Arrays.stream(
                     new Integer[] { 1, 2, 3, 4, 5, 6, 7, 8, 9, 0 }
-                ); 
+                );
 
     .. card::
 
@@ -730,21 +730,21 @@ Erzeugung von Streams
                         :class: copy-to-clipboard
 
                         // Object-Stream 1, 2 ... 9, 0:
-                        Stream<Integer> is1a = Stream.of(1,2,3,4,5,6,7,8,9,0); 
+                        Stream<Integer> is1a = Stream.of(1,2,3,4,5,6,7,8,9,0);
 
                     .. code:: java
                         :number-lines: 2
                         :class: copy-to-clipboard incremental
 
                         // int-Stream 1, 2, ... 9, 0
-                        IntStream is1b = IntStream.of(1,2,3,4,5,6,7,8,9,0); 
+                        IntStream is1b = IntStream.of(1,2,3,4,5,6,7,8,9,0);
 
                     .. code:: java
                         :number-lines: 3
                         :class: copy-to-clipboard incremental
 
                         // (infinite) Stream 1, 2, ...
-                        Stream<Integer> is2 = Stream.iterate(1, ((x) -> x+1)); 
+                        Stream<Integer> is2 = Stream.iterate(1, ((x) -> x+1));
 
                     .. code:: java
                         :number-lines: 4
@@ -789,7 +789,7 @@ Erzeugung von Streams
 Verwendung von Streams
 ------------------------------------------------
 
-.. deck:: 
+.. deck::
 
     .. card::
 
@@ -810,7 +810,7 @@ Verwendung von Streams
         .. class:: incremental-list list-with-explanations
 
         - zustandslose Operationen
-        
+
           Transformieren die Elemente jeweils völlig unabhängig von allen anderen.
         - zustandsbehaftete Operationen
 
@@ -823,7 +823,7 @@ Verwendung von Streams
         .. deck::
 
             .. card::
-                        
+
 
                 .. class:: incremental-list
 
@@ -837,7 +837,7 @@ Verwendung von Streams
 
                     .. code:: java
                         :number-lines:
-                        :class: copy-to-clipboard      
+                        :class: copy-to-clipboard
 
                         import java.util.List;
                         import java.util.stream.Collectors;
@@ -850,18 +850,18 @@ Verwendung von Streams
                             .boxed()
                             .collect(Collectors.toList());
                         System.out.println(is);
-            
+
                     .. container:: incremental
-    
+
                         *Ausgabe:* :console:`1 3 5 7 9 [10, 30, 50, 70, 90]`
-            
+
             .. card::
 
                 .. example::
 
                     .. code:: java
                         :number-lines:
-                        :class: copy-to-clipboard      
+                        :class: copy-to-clipboard
 
 
                         import java.util.List;
@@ -879,7 +879,7 @@ Verwendung von Streams
 
 
                     .. container:: incremental
-    
+
                         *Ausgabe:* :console:`is ==> [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29]`
 
     .. card::
@@ -889,7 +889,7 @@ Verwendung von Streams
         .. deck::
 
             .. card::
-                        
+
                 .. class:: incremental-list
 
                 - :java:`distinct()`: Entfernt Duplikate.
@@ -904,7 +904,7 @@ Verwendung von Streams
 
                     .. code:: java
                         :number-lines:
-                        :class: copy-to-clipboard      
+                        :class: copy-to-clipboard
 
                             import java.util.List;
                             import java.util.stream.Collectors;
@@ -916,9 +916,9 @@ Verwendung von Streams
                                 .skip(1)
                                 .limit(3)
                                 .collect(Collectors.toList());
-                            
+
                     .. container:: incremental
-    
+
                         *Ausgabe:* :console:`is ==> [1, 2, 3]`
 
     .. card::
@@ -930,32 +930,32 @@ Verwendung von Streams
 
         .. deck:: incremental
 
-            .. card:: 
+            .. card::
 
                 .. rubric:: Terminale Operationen ohne Ergebnis
-                
+
                 .. class:: incremental-list list-with-explanations
 
                 - :java:`forEach(Consumer<? super T> action)`
-                
+
                   Wendet die übergebene Aktion auf alle Elemente des Streams an.
 
-            .. card:: 
+            .. card::
 
                 .. rubric:: Terminale Operationen mit Ergebnis
 
                 .. class:: incremental-list list-with-explanations
 
                 - Operationen mit Array-Ergebnis: :java:`Stream => Array`
-                
+
                   Operationen die den Stream in ein äquivalentes Array umwandeln.
 
                 - Operationen mit Kollektions-Ergebnis: :java:`Stream => Kollektion`
-                
+
                   Operationen die den Stream in eine äquivalente Kollektion umwandeln.
 
-                - Operationen mit Einzel-Ergebnis: Aggregierende Operationen 
-                
+                - Operationen mit Einzel-Ergebnis: Aggregierende Operationen
+
                   Operationen die den Stream zu einem einzigen Wert verarbeiten.
 
             .. card::
@@ -973,7 +973,7 @@ Verwendung von Streams
                             .sorted( (i,j) -> i-j )
                             .limit(3)
                             .forEach( System.out::println );
-            
+
             .. card::
 
                 .. example::
@@ -1027,7 +1027,7 @@ Verwendung von Streams
 
                                 List<Integer> l2 = IntStream.range(1, 4).boxed()
                                         .collect( Collectors.toList() );
-            
+
                                 Set<String> s1 = (Set<String>) Stream.of("1", "2", "3")
                                         .collect( Collectors.toSet());
 
@@ -1038,7 +1038,7 @@ Verwendung von Streams
 
                             .. code:: java
                                 :number-lines:
-                                :class: copy-to-clipboard     
+                                :class: copy-to-clipboard
 
                                 // Generating a map from a stream of strings
 
@@ -1057,7 +1057,7 @@ Verwendung von Streams
                 - :java:`static <T,K> Collector<T,?,Map<K,List<T>>> groupingBy(Function<? super T,? extends K> classifier)`
 
                   Gruppiert die Elemente entsprechend einer Klassifizierungsfunktion.
-                
+
                 - :java:`static <T> Collector<T,?,Map<Boolean,List<T>>> partitioningBy(Predicate<? super T> predicate)`
 
                   Partitioniert die Elemente entsprechend einem Prädikat.
@@ -1082,14 +1082,14 @@ Verwendung von Streams
 
                     .. code:: java
                         :number-lines:
-                        :class: copy-to-clipboard 
+                        :class: copy-to-clipboard
 
                         Map<Integer, List<Integer>> groupedByMod3 = Stream.of(1, 2, 3, 4, 5, 6 ,7 ,8, 9)
                                 .collect( groupingBy( (x) -> x%3 ) );
 
                     .. container:: incremental
-    
-                        *Ausgabe:* :console:`groupedByMod3 = {0=[3, 6, 9], 1=[1, 4, 7], 2=[2, 5,8]}`                        
+
+                        *Ausgabe:* :console:`groupedByMod3 = {0=[3, 6, 9], 1=[1, 4, 7], 2=[2, 5,8]}`
 
                     .. code:: java
                         :number-lines:
@@ -1100,7 +1100,7 @@ Verwendung von Streams
                                 .collect( groupingBy( (s) -> s.length() ) );
 
                     .. container:: incremental
-    
+
                         *Ausgabe:* :console:`groupedByLength ==> {3=[one, two, six], 4=[four, five], 5=[three, seven, eight]}`
 
             .. card::
@@ -1108,7 +1108,7 @@ Verwendung von Streams
                 Das Interface :java:`Stream` bzw. die Interfaces für Ströme primitiver Daten (:java:`IntStream`, etc.) bieten einige **einfache aggregierende Funktionen für Standardoperationen** auf allen Elementen des Stroms.
 
                 .. example::
-                    :class: incremental        
+                    :class: incremental
 
                     .. code:: java
                         :number-lines:
@@ -1124,7 +1124,7 @@ Verwendung von Streams
 
                 Das Interface Stream bieten einige einfache **aggregierende Funktionen für den Test aller Elemente des Stroms** mit einem übergebenen Prädikat.
 
-                .. example::        
+                .. example::
                     :class: incremental
 
                     .. code:: java
@@ -1146,11 +1146,11 @@ Verwendung von Streams
 
                 .. attention::
                     :class: incremental
-                    
+
                     Diese Methoden haben kein Prädikat als Parameter. Es empfiehlt sich darum den :java:`Stream` vorher mit dem entsprechenden Prädikat zu filtern.
 
-                .. example::  
-                    :class: incremental      
+                .. example::
+                    :class: incremental
 
                     .. code:: java
                         :number-lines:
@@ -1158,10 +1158,10 @@ Verwendung von Streams
 
                         Optional<Integer> firstEven = Stream.of(1, 2, 3, 4, 5, 6, 7, 8, 9)
                                 .filter( (x) -> x%2 == 0 )
-                                .findFirst();       
+                                .findFirst();
 
                     .. container:: incremental
-    
+
                         *Ausgabe:* :console:`firstEven ==> Optional[2]`
 
             .. card::
@@ -1178,18 +1178,18 @@ Verwendung von Streams
 
             .. card::
 
-                .. example::    
+                .. example::
 
                     .. rubric:: :java:`reduce`
 
                     .. code:: java
                         :number-lines:
-                        :class: copy-to-clipboard                                        
+                        :class: copy-to-clipboard
 
                         Optional<Integer> sumOfAll = Stream.of(1, 2, 3, 4, 5).reduce( (a, x) -> a+x );
 
                     .. container:: incremental
-    
+
                         *Ausgabe:* :console:`sumOfAll ==> Optional[15]`
 
                     .. code:: java
@@ -1199,7 +1199,7 @@ Verwendung von Streams
                         Optional<Integer> subOfAll = Stream.of(1, 2, 3, 4, 5).reduce( (a, x) -> a-x );
 
                     .. container:: incremental
-    
+
                         *Ausgabe:* :console:`subOfAll ==> Optional[-13]`
 
                     .. code:: java
@@ -1210,7 +1210,7 @@ Verwendung von Streams
                                 .reduce(100, (a, x) -> a+x );
 
                     .. container:: incremental
-    
+
                         *Ausgabe:* :console:`sumOfAllPlus100 ==> 115`
 
             .. card::
@@ -1219,20 +1219,20 @@ Verwendung von Streams
 
                     :java:`static Collector<CharSequence,?,String> joining(CharSequence delimiter)`
 
-                .. example::    
+                .. example::
                     :class: incremental
 
                     .. rubric:: :java:`reduce`
 
                     .. code:: java
                         :number-lines:
-                        :class: copy-to-clipboard               
+                        :class: copy-to-clipboard
 
                         String concat = Stream.of("one", "two", "three")
-                                .collect( joining("+") );                         
+                                .collect( joining("+") );
 
                     .. container:: incremental
-    
+
                         *Ausgabe:* :console:`concat = one+two+three`
 
 
@@ -1294,14 +1294,14 @@ Streams - fortgeschrittene Konzepte
                 // ...
             }
 
-            
+
 
 
 Java :java:`Optional`\ s
 ------------------------------------------------
 
 Instanzen der Klasse :java:`java.util.Optional<T>` (bzw. :java:`java.util.OptionalInt` etc.) **repräsentieren Werte die vorhanden sind oder
-auch nicht**. 
+auch nicht**.
 
 Insbesondere :java:`java.util.Optional<T>` kann/sollte anstelle von :java:`null` verwendet werden, in Fällen in denen unter bestimmten Umständen kein sinnvoller Wert angegeben werden kann.
 
@@ -1310,19 +1310,19 @@ Insbesondere :java:`java.util.Optional<T>` kann/sollte anstelle von :java:`null`
     .. card::
 
         .. remark::
-            
+
             Es gibt moderne Programmiersprachen, die auf :java:`null` komplett verzichten und stattdessen immer auf ``Optionals`` oder ähnliche Konstrukte setzen.
 
     .. card::
 
         .. example::
-            
+
             .. code:: java
                 :number-lines:
                 :class: copy-to-clipboard
 
                 static Optional<Integer> min(int[] a ) {
-                    if(a == null || a.length == 0) 
+                    if(a == null || a.length == 0)
                         return Optional.empty();
 
                     int min = a[0];
@@ -1339,7 +1339,7 @@ Insbesondere :java:`java.util.Optional<T>` kann/sollte anstelle von :java:`null`
 .. exercise:: Java Streams
 
     .. remark::
-    
+
         Verwenden Sie ausschließlich Streams und Lambda-Ausdrücke.
 
     1. Schreiben Sie eine Methode :java:`int sumOfSquares(int[] a)` die die Elemente des Arrays quadriert und dann die Summe berechnet.
@@ -1377,7 +1377,7 @@ Insbesondere :java:`java.util.Optional<T>` kann/sollte anstelle von :java:`null`
     .. solution::
         :pwd: QuadrierteStreams
 
-        .. rubric:: Lösung 1
+        1. Lösung
 
         .. code:: java
             :number-lines:
@@ -1387,7 +1387,7 @@ Insbesondere :java:`java.util.Optional<T>` kann/sollte anstelle von :java:`null`
             s.map(x -> x * x).reduce(0, (x,y) -> x + y)
             // s.map(x -> x * x).sum()
 
-        .. rubric:: Lösung 2
+        2. Lösung
 
         .. code:: java
             :number-lines:
@@ -1397,9 +1397,9 @@ Insbesondere :java:`java.util.Optional<T>` kann/sollte anstelle von :java:`null`
             s
                 .map(x -> x * x)
                 .filter(x -> x % 2 == 0 )
-                .reduce(0, (x,y) -> x + y)        
+                .reduce(0, (x,y) -> x + y)
 
-        .. rubric:: Lösung 3
+        3. Lösung
 
         .. code:: java
             :number-lines:
@@ -1407,10 +1407,10 @@ Insbesondere :java:`java.util.Optional<T>` kann/sollte anstelle von :java:`null`
 
             //var s = Stream.of("Hello", "World")
             var s = List.of("Hello", "World").stream()
-            //Stream<Integer> sc =  s.flatMap((String x) -> x.chars().boxed())    
-            var l = s.flatMap((String x) -> x.chars().boxed()).collect(Collectors.toList())    
+            //Stream<Integer> sc =  s.flatMap((String x) -> x.chars().boxed())
+            var l = s.flatMap((String x) -> x.chars().boxed()).collect(Collectors.toList())
 
-        .. rubric:: Lösung 4
+        4. Lösung
 
         .. code:: java
             :number-lines:
@@ -1418,7 +1418,7 @@ Insbesondere :java:`java.util.Optional<T>` kann/sollte anstelle von :java:`null`
 
             // sequential
             time (() -> IntStream.range(1,Integer.MAX_VALUE).map(x -> x -1).reduce(0, (x,y) -> x + y));
-            
+
             // parallel
             time (() -> IntStream.range(1,Integer.MAX_VALUE).parallel().map(x -> x -1).reduce(0, (x,y) -> x + y));
 

@@ -121,14 +121,14 @@ Dateisysteme auf Unix-ähnlichen Betriebssytemen
 
             more /proc/cpuinfo
 
-        
+
         Ausgabe der Log-level Konfiguration des Kernels:
 
         .. code:: console
 
             cat /proc/sys/kernel/printk
 
-        
+
 
     - Die Systemkonfiguration kann direkt über das Schreiben in spezialisierte Dateien erfolgen (meist sind Administratorrechte notwendig)
 
@@ -289,8 +289,6 @@ Kommandozeilenprogrammen beenden
 
     .. solution::
         :pwd: ServerStartenIstNichtSchwer
-
-        .. rubric:: Lösung
 
         Wenn wir davon ausgehen, dass der Name "eichberg" ist und der zufällig Port 8888, dann wären die folgenden Befehle eine mögliche Lösung:
 

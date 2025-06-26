@@ -28,7 +28,7 @@ Java - Dateien lesen und schreiben
 
         |pdf-source|
 
-    
+
     :Kontrollfragen:
 
         .. source:: kontrollfragen.de.rst
@@ -54,7 +54,7 @@ Architektur von Java I/O
 .. class:: incremental-list
 
 - Verschiedene Quellen/Senken für die Daten
- 
+
   - Tastatureingabe („Standard I/O“)
   - Datei(en) auf dem lokalen Rechner („File I/O“)
   - Datei(en)/Prozess(e) im Netzwerk („Network I/O“)
@@ -65,10 +65,10 @@ Architektur von Java I/O
   .. class:: incremental list-with-explanations
 
   - Verstecken Details über die Implementierung / Funktionsweise der einzelnen I/O-Geräte vor dem Java Programmierer
-  
+
     (D. h. ob die Eingabe zum Beispiel eine Tastatur, Datei, anderes Programm, Netz, Hauptspeicher, … ist.)
   - Stellen Java-Programmen einheitliche Schnittstellen zum Lesen bzw. Schreiben von Daten zur Verfügung.
-  
+
 
 
 I/O-Ströme in Java
@@ -105,7 +105,7 @@ Klassifizierung von Datenströmen
 
                 .. container:: incremental peripheral
 
-                    :java:`java.io.Reader`/:java:`java.io.Writer` stellen die Schnittstelle und eine partielle Implementierung von Zeichenströmen zur Verfügung. 
+                    :java:`java.io.Reader`/:java:`java.io.Writer` stellen die Schnittstelle und eine partielle Implementierung von Zeichenströmen zur Verfügung.
 
                     Subklassen von :java:`Reader`/:java:`Writer` fügen neues Verhalten hinzu bzw. ändern dieses.
 
@@ -126,8 +126,8 @@ Klassifizierung von Datenströmen
             .. class:: incremental-list
 
             :Datensenkeströme: Daten werden direkt von „physikalischer“ Datenquelle gelesen bzw. auf „physikalische“ Datensenke geschrieben
-            
-            
+
+
             :Prozessströme: Daten werden von anderen Strömen gelesen bzw. auf andere Ströme geschrieben
 
                 Daten werden nach dem Lesen bzw. vor dem Schreiben gefiltert, gepuffert, bearbeitet, usw.
@@ -163,28 +163,28 @@ Hierarchie der Zeichenströme für I/O
 Allgemeines Vorgehen beim Lesen/Schreiben von Dateien
 ------------------------------------------------------------
 
-.. class:: incremental-list 
+.. class:: incremental-list
 
 :Lesen:
 
     .. class:: incremental-list list-with-explanations
 
     1. Öffne einen Strom
-       
+
        Ströme werden beim Erzeugen automatisch geöffnet
-    2. Lese Daten, solange nötig und es noch Daten gibt 
+    2. Lese Daten, solange nötig und es noch Daten gibt
     3. Schließe den Strom
 
        Beim Beenden des Lesens ist der Strom durch :java:`close()` zu schließen.
 
-:Schreiben: 
+:Schreiben:
 
-    .. class:: incremental-list list-with-explanations  
+    .. class:: incremental-list list-with-explanations
 
     1. Öffne einen Strom
     2. Solange es noch Daten gibt, schreibe Daten
-    3. Schließe den Strom 
-    
+    3. Schließe den Strom
+
        Beim Beenden des Schreibens ist der Strom durch :java:`close()` zu schließen.
 
 
@@ -195,7 +195,7 @@ Allgemeines Vorgehen beim Lesen/Schreiben von Dateien
 
 
 
-Schreiben und Lesen von Daten 
+Schreiben und Lesen von Daten
 ------------------------------------------------
 
 .. deck::
@@ -299,13 +299,13 @@ Dateiströme in Java
             void print(String fileName) throws IOException {
                 try (FileReader in = new FileReader(fileName)) {
                     int b;
-                    while ((b = in.read()) != -1) System.out.print(b); 
+                    while ((b = in.read()) != -1) System.out.print(b);
                 }
             }
 
 
 
-Prozessströme 
+Prozessströme
 --------------------------------
 
 .. deck::
@@ -318,13 +318,13 @@ Prozessströme
 
           Dieser dient als Quelle bzw. Senke.
 
-        .. class:: incremental-list list-with-sublists  
+        .. class:: incremental-list list-with-sublists
 
         - Prozess-Ströme ändern Daten oder bieten Funktionalität:
 
-          .. class:: incremental-list  
+          .. class:: incremental-list
 
-          - Zwischenspeichern (Puffern) von Daten 
+          - Zwischenspeichern (Puffern) von Daten
           - Zählen der gelesenen/geschriebenen Zeilen
           - Konvertierung zwischen Byte und Zeichen
           - Kompression, …
@@ -332,7 +332,7 @@ Prozessströme
     .. card::
 
         .. rubric:: Pufferströme
-        
+
         .. class:: incremental-list list-with-sublists
 
         - Ein Pufferstrom (z. B. :java:`BufferedInputStream` oder :java:`BufferedOutputStream`) kapselt einen anderen Datenstrom und einen internen Puffer
@@ -368,7 +368,7 @@ Prozessströme
                 out.writeDouble(Math.PI);
                 out.writeBoolean(true);
             }
-  
+
         .. code:: console
             :number-lines:
             :class: incremental
@@ -385,7 +385,7 @@ Architektur der I/O API
 
     .. card::
 
-        Ströme können ineinander verschachtelt werden. 
+        Ströme können ineinander verschachtelt werden.
 
         :peripheral:`Abstraktionsebenen, bei denen unterliegende „primitive“ Ströme von umschließenden („höheren“, komfortableren) Strömen benutzt werden („Prozessströme“).`
 
@@ -394,11 +394,11 @@ Architektur der I/O API
             :number-lines:
             :class: copy-to-clipboard
 
-            // erzeugt gepufferten, komprimierenden Dateiausgabestrom 
+            // erzeugt gepufferten, komprimierenden Dateiausgabestrom
             OutputStream out = new FileOutputStream(<filename>);
             var bout = new BufferedOutputStream(out);
-            var zout = new ZipOutputStream(bout); 
-            // … mehr Eigenschaften koennen dynamisch hinzugefuegt werden 
+            var zout = new ZipOutputStream(bout);
+            // … mehr Eigenschaften koennen dynamisch hinzugefuegt werden
             // Die Stromeigenschaften sind unsichtbar fuer Klienten
 
     .. card::
@@ -410,7 +410,7 @@ Architektur der I/O API
             In der Softwaretechnik werden solche Techniken in der Form so genannter *Design Patterns* (:ger:`Entwurfsmuster`) dokumentiert; d. h. wiederverwendbare, dokumentierte Designideen.
 
         .. container:: incremental
-            
+
             Die oben genannte Technik bei Streams ist als „Decorator Pattern“ bekannt.
 
 
@@ -422,22 +422,22 @@ Architektur der I/O API
 
 .. exercise:: Datei lesen und ausgeben
 
-    Schreiben Sie ein Programm, dass eine Textdatei liest und die Zeilen in der Konsole ausgibt. Schreiben Sie vor jede Zeile die Zeilennummer. 
+    Schreiben Sie ein Programm, dass eine Textdatei liest und die Zeilen in der Konsole ausgibt. Schreiben Sie vor jede Zeile die Zeilennummer.
 
     .. example::
 
         Für folgende Datei (Autor: ChatGPT):
 
-        :: 
+        ::
 
             In Java springt der Code so leicht,
             Klammern tanzen, Ziel erreicht,
-            Fehler? Nur ein Abenteuer vielleicht! 
+            Fehler? Nur ein Abenteuer vielleicht!
 
 
         sollte folgende Ausgabe erzeugt werden:
 
-        :: 
+        ::
 
             1: In Java springt der Code so leicht,
             2: Klammern tanzen, Ziel erreicht,
@@ -507,16 +507,16 @@ Neben den traditionellen I/O-Klassen (seit Java 1.x) gibt es auch die Möglichke
 
         Für folgende Datei (Autor: ChatGPT):
 
-        :: 
+        ::
 
             In Java springt der Code so leicht,
             Klammern tanzen, Ziel erreicht,
-            Fehler? Nur ein Abenteuer vielleicht! 
+            Fehler? Nur ein Abenteuer vielleicht!
 
 
         sollte folgende Ausgabe erzeugt werden:
 
-        :: 
+        ::
 
             1: In Java springt der Code so leicht,
             2: Klammern tanzen, Ziel erreicht,
@@ -525,23 +525,23 @@ Neben den traditionellen I/O-Klassen (seit Java 1.x) gibt es auch die Möglichke
     .. solution::
         :pwd: JavaIO-Streams
 
-        .. rubric:: Lösung bei der Verwendung der JShell
+        Mittels JShell
 
         .. code:: java
             :number-lines:
             :class: copy-to-clipboard
 
-            var c = 0; 
+            var c = 0;
             Files.lines(path).map(l -> (++c) + ": " + l).forEach(System.out::println);
 
-        .. rubric:: Allgemeine Lösung
+        Allgemeine Lösung
 
         .. code:: java
             :number-lines:
             :class: copy-to-clipboard
 
             void printLinesWithLineNumber(Path path) throws IOException {
-                final int[] c = {0}; 
+                final int[] c = {0};
                 try (var s = Files.lines(path)) {
                     s.map(l -> (++c[0]) + ": " + l).forEach(System.out::println);
                 }
@@ -569,7 +569,7 @@ Neben den traditionellen I/O-Klassen (seit Java 1.x) gibt es auch die Möglichke
     .. solution::
         :pwd: JavaIO--DasWars
 
-        .. rubric:: Lösung bei der Verwendung der JShell (Java 24)
+        JShell (Java 24)
 
         .. code::
             :number-lines:
@@ -588,7 +588,7 @@ Neben den traditionellen I/O-Klassen (seit Java 1.x) gibt es auch die Möglichke
                                     .map(x -> p + ":" + x)
                                     .findAny();
                         }
-                        catch(Exception e){ 
+                        catch(Exception e){
                             System.out.println("Ignoring: "+p);
                             return Optional.empty();
                         }

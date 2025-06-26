@@ -1185,10 +1185,11 @@ MOM - Queue Managers
   .. solution::
     :pwd: NurEinBisschenCode
 
-    .. rubric:: Lösung in Java
+    Java
 
     .. code:: java
-      :class: far-smaller copy-to-clipboard
+      :number-lines:
+      :class: copy-to-clipboard
 
       ...
 

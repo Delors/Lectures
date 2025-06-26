@@ -7,7 +7,7 @@
     :id: lecture-prog-einfuehrung
     :first-slide: last-viewed
     :master-password: WirklichSchwierig!
-    
+
 .. include:: ../docutils.defs
 
 
@@ -21,9 +21,9 @@ Einführung in die Programmierung
 
 .. supplemental::
 
-    :Folien: 
-        
-        |html-source| 
+    :Folien:
+
+        |html-source|
 
         |pdf-source|
 
@@ -59,16 +59,16 @@ AI Assistenten in der Softwareentwicklung
 
     **AI accelerates software development to breakneck speeds, but measuring that is tricky**
 
-    [...] 
-    
-    AI-assisted development is now the norm - 78% of survey respondents currently use AI in software development or plan to in the next two years, up from 64% in 2023. 
-    
+    [...]
+
+    AI-assisted development is now the norm - 78% of survey respondents currently use AI in software development or plan to in the next two years, up from 64% in 2023.
+
     [...]
 
     .. class:: incremental
 
-        Bringing in AI may be accelerating software development toward blinding speeds. Stunningly, most executives (69%) indicate they are shipping software twice as fast as last year. 
-        
+        Bringing in AI may be accelerating software development toward blinding speeds. Stunningly, most executives (69%) indicate they are shipping software twice as fast as last year.
+
         [...]
 
     -- `Juli 2024 - ZDNET <https://www.zdnet.com/article/ai-accelerates-software-development-to-breakneck-speeds-but-measuring-that-is-tricky/>`__
@@ -85,7 +85,7 @@ Auswirkungen von generativer KI
     Viele Branchen und Berufe wurden in den letzten Jahrzehnten durch IT umgekrempelt. Laut McKinsey und IDC trifft es wegen generativer KI jetzt die IT-Branche.
 
     .. container:: incremental
-        
+
         Laut McKinsey sollen in den kommenden drei Jahren bis zu 250 Milliarden US-Dollar in generative KI (GenAI) [...] investiert werden. Das betrifft vor allem die Codeerstellung, den IT-Helpdesk und die Testautomatisierung. [...]
 
     .. container:: incremental
@@ -117,7 +117,7 @@ AI Assistenten und Grundlagen der Programmierung
 
 .. class:: incremental
 
-- Verwenden Sie keine AI Assistenten, um die Konzepte einer Programmiersprache oder Bibliothek zu erlernen. 
+- Verwenden Sie keine AI Assistenten, um die Konzepte einer Programmiersprache oder Bibliothek zu erlernen.
 - Später müssen Sie in der Lage sein, den Code, der von Assistenten generiert wurde, zu verstehen und zu validieren. Ohne ein tiefgreifendes Verständnis ist dies nicht möglich.
 - Die Aufgaben werden immer nur Dinge verlangen, die gelehrt wurden.
 - In der Klausur/Prüfung steht Ihnen auch kein AI Assistent zur Verfügung.
@@ -135,10 +135,10 @@ Programmieren bezeichnet das Formulieren eines Lösungskonzeptes (Algorithmus) i
     :class: incremental margin-top-2em margin-bottom-2em
 
 
-.. hint:: 
+.. hint::
     :class: incremental
-    
-    Ohne Programmierkenntnisse ist es unmöglich zu beurteilen, wie komplex eine Aufgabenstellung ist. 
+
+    Ohne Programmierkenntnisse ist es unmöglich zu beurteilen, wie komplex eine Aufgabenstellung ist.
 
 
 
@@ -151,7 +151,7 @@ Programmiersprachen
 
         .. rubric:: `Tiobe Index <https://www.tiobe.com/tiobe-index/>`__ für August 2024
 
-        .. csv-table::    
+        .. csv-table::
             :header: Programmiersprache, Anteil
             :class: highlight-line-on-hover
 
@@ -168,10 +168,10 @@ Programmiersprachen
 
     .. container:: column
 
-        .. rubric:: `Pypl Index <https://pypl.github.io/PYPL.html>`__ für August 2024 
+        .. rubric:: `Pypl Index <https://pypl.github.io/PYPL.html>`__ für August 2024
 
-        .. csv-table::  
-            :header: Programmiersprache, Anteil  
+        .. csv-table::
+            :header: Programmiersprache, Anteil
             :class: highlight-line-on-hover
 
             Python, 29.6%
@@ -192,8 +192,8 @@ Programmiersprachen und -paradigmen
 
 .. class:: incremental list-with-explanations
 
-- Maschinensprachen (Zahlenkombinationen als Befehle) 
-  
+- Maschinensprachen (Zahlenkombinationen als Befehle)
+
   (Eine Programmierung in Maschinensprache wird heute nicht mehr durchgeführt.)
 - Assemblersprachen (wie Maschinensprachen nur besser lesbar)
 
@@ -204,10 +204,10 @@ Programmiersprachen und -paradigmen
 
   - Prozedurale Programmiersprachen (z. B. C - noch immer sehr verbreitet)
   - Objekt-orientierte Programmiersprachen (z. B. C++, Java, ... - noch immer sehr verbreitet)
-  - Funktionale Programmiersprachen (z. B. Clojure, F#, ...) 
+  - Funktionale Programmiersprachen (z. B. Clojure, F#, ...)
   - Logische Programmiersprachen (z. B. Prolog - nur noch in (sehr) speziellen Anwendungsgebieten)
 
-- Sprachen für spezielle Anwendungsgebiete (z. B. SQL oder Low-code Ansätze) 
+- Sprachen für spezielle Anwendungsgebiete (z. B. SQL oder Low-code Ansätze)
 
   (Meist deklarative Sprachen, die für spezielle Anwendungsgebiete entwickelt wurden.)
 
@@ -236,20 +236,20 @@ Was ist ein Algorithmus?
 
 
 
-Klassifizierung von Algorithmen 
+Klassifizierung von Algorithmen
 -----------------------------------
 
-:Entscheidungsprobleme: 
-    Für eine Eingabe eine bestimmte Eigenschaft feststellen 
+:Entscheidungsprobleme:
+    Für eine Eingabe eine bestimmte Eigenschaft feststellen
 
     :Beispiel: Ist eine gegebene Zahl eine Primzahl?
 
-:Aufzählungsprobleme: 
-    Alle Daten mit einer gegeben Eigenschaft aufzuzählen 
+:Aufzählungsprobleme:
+    Alle Daten mit einer gegeben Eigenschaft aufzuzählen
 
     :Beispiel: Zähle alle Primzahlen kleiner als 100 auf!
 
-:Berechnungsprobleme: 
+:Berechnungsprobleme:
     Eine gegebene Eingabe in eine Ausgabe zu transformieren.
 
     :Beispiel: Addition zweier gegebener Zahlen
@@ -266,7 +266,7 @@ Beispiel: Berechnung der Fakultät (rekursiv)
         .. rubric:: Mathematisch
 
         .. math::
-            \begin{aligned}            
+            \begin{aligned}
             \text{Input} &:  \text{natürliche Zahl (inkl. 0)} \\
             \text{Output} &:  \text{natürliche Zahl}
             \end{aligned}
@@ -275,12 +275,12 @@ Beispiel: Berechnung der Fakultät (rekursiv)
         .. math::
             :class: incremental
 
-            \text{fak}(n) = 
-                \begin{cases} 
+            \text{fak}(n) =
+                \begin{cases}
                     1 & \text{if } n = 0 \\
-                n \cdot \text{fak}(n-1) & \text{if } n > 0 
+                n \cdot \text{fak}(n-1) & \text{if } n > 0
                 \end{cases}
-            
+
 
     .. container:: column incremental
 
@@ -313,11 +313,11 @@ Zentrale Eigenschaften von Algorithmen
 
     .. class:: incremental
 
-    :Ausführbarkeit: 
-    
-      Der Algorithmus besteht aus einer Folge von elementaren (ausführbaren) Schritte. Diese werden vom Prozessor ausgeführt. Elementare Operationen sind z. B.: 
+    :Ausführbarkeit:
 
-      - einfache arithmetische Operationen wie Addition, Subtraktion, Division etc. 
+      Der Algorithmus besteht aus einer Folge von elementaren (ausführbaren) Schritte. Diese werden vom Prozessor ausgeführt. Elementare Operationen sind z. B.:
+
+      - einfache arithmetische Operationen wie Addition, Subtraktion, Division etc.
       - Vergleiche
       - Zuweisungen
       - etc.
@@ -330,10 +330,10 @@ Zentrale Eigenschaften von Algorithmen
 
     :Komplexität:
 
-      Zeit und Platzbedarf sind endlich und in einem gewissen Rahmen abschätzbar. 
-      
+      Zeit und Platzbedarf sind endlich und in einem gewissen Rahmen abschätzbar.
+
       :peripheral::`Normalerweise versucht man den besten, schlechtesten und durchschnittlichen Fall zu bestimmen in Abhängigkeit von der Eingabegröße. (Insbesondere Thema des nächsten Semesters).`
-    
+
       :peripheral::`Diese Angaben erfolgen unabhängig von einer konkreten Implementierung bzw. Verwendung einer bestimmten Programmiersprache oder Hardware.`
 
     .. class:: incremental
@@ -366,7 +366,7 @@ Beispiel: Berechnung bzw. Approximation von :math:`e`
         .. rubric:: Mathematisch (exakt)
 
         .. math::
-            \begin{aligned}            
+            \begin{aligned}
             \text{Output} &:  \text{reelle Zahl}
             \end{aligned}
 
@@ -398,7 +398,7 @@ Beispiel: Berechnung bzw. Approximation von :math:`e`
 
 .. supplemental::
 
-    :math:`e` steht hier für die eulersche Zahl. 
+    :math:`e` steht hier für die eulersche Zahl.
 
     In diesem Fall wurde folgende Implementierung der Fakultät verwendet:
 
@@ -408,7 +408,7 @@ Beispiel: Berechnung bzw. Approximation von :math:`e`
         import java.math.BigInteger;
 
         BigInteger fak(int n) {
-          if (n == 0) 
+          if (n == 0)
             return BigInteger.valueOf(1);
           else {
             var bn = BigInteger.valueOf(n);
@@ -438,7 +438,7 @@ Beispiel: Berechnung bzw. Approximation von :math:`e`
 
 .. class:: incremental
 
-:formale Sprachen: 
+:formale Sprachen:
 
   - Dienen der eindeutigen Beschreibung von Sachverhalten; sind präzise und eindeutig.
 
@@ -454,7 +454,7 @@ Einsatzbereiche verschiedener Programmiersprachen
 - Systemprogrammierung
 - Anwendungsprogrammierung / Web-Entwicklung
 - Skriptsprachen
-  
+
 
 
 Arten der Programmierung
@@ -494,9 +494,9 @@ Syntax und Semantik von formalen Sprachen
 
 :Syntax: definiert welche Sätze in der Sprache gültig sind. Die Syntax wird durch eine Grammatik formal und präzise beschrieben.
 
-:Semantik: 
+:Semantik:
 
-  definiert die Bedeutung der Sätze; wenn dies möglich ist. Nicht jeder syntaktisch korrekte Satz hat eine Bedeutung. 
+  definiert die Bedeutung der Sätze; wenn dies möglich ist. Nicht jeder syntaktisch korrekte Satz hat eine Bedeutung.
 
   .. container:: incremental dhbw-gray
 
@@ -509,24 +509,24 @@ Formale Sprachen: Beispiel in einer *EBNF* Variante
 
 .. stack:: incremental
 
-    .. layer:: 
-        
+    .. layer::
+
         **Syntaktisch gültiger Satz**
 
-        Sie geht nach Hause. 
+        Sie geht nach Hause.
 
     .. layer:: incremental
 
         **Syntaktisch gültig, aber semantisch falscher Satz**
 
         Tim schwimmt auf den Mond.
-    
+
     .. layer:: incremental
 
         **Syntaktisch ungültige Sätze**
 
         Sie fährt nach Hause in die Schule.
-        
+
         Tim geht in die Schule
 
 .. code:: ebnf
@@ -539,7 +539,7 @@ Formale Sprachen: Beispiel in einer *EBNF* Variante
 
 .. supplemental::
 
-    Es gibt zahlreiche Varianten der `EBNF (Extended Backus-Naur Form) <https://en.wikipedia.org/wiki/Extended_Backus–Naur_form#:~:text=In%20computer%20science%2C%20extended%20Backus,as%20a%20computer%20programming%20language.>`__. Die grundlegenden Ideen und Konzepte sind jedoch überall gleich. 
+    Es gibt zahlreiche Varianten der `EBNF (Extended Backus-Naur Form) <https://en.wikipedia.org/wiki/Extended_Backus–Naur_form#:~:text=In%20computer%20science%2C%20extended%20Backus,as%20a%20computer%20programming%20language.>`__. Die grundlegenden Ideen und Konzepte sind jedoch überall gleich.
 
     Beispiele für verschiedene Fehler in Java Programmen
 
@@ -547,11 +547,11 @@ Formale Sprachen: Beispiel in einer *EBNF* Variante
         :class: smaller
 
             int fak(long n){
-              if (n == 0) 
+              if (n == 0)
                 return 1l // ';' expected
                           // ⇒ "Syntaktischer Fehler"
-              else 
-                return n * fak(n-1); 
+              else
+                return n * fak(n-1);
                           // incompatible types: possible lossy conversion from long to int
                           // ⇒ "Semantischer Fehler"
             }
@@ -583,25 +583,25 @@ Die EBNF dient der Beschreibung kontext-freier Grammatiken.
         .. rubric:: Beispiel
 
         .. code:: ebnf
-            
-            Ausdruck = 
-                Ziffer, 
-                {   ("+" | "-"), 
+
+            Ausdruck =
+                Ziffer,
+                {   ("+" | "-"),
                     Ziffer };
-            Ziffer = 
-                "1" | "2" | "3" | 
-                "4" | "5" | "6" | 
-                "7" | "8" | "9" | 
+            Ziffer =
+                "1" | "2" | "3" |
+                "4" | "5" | "6" |
+                "7" | "8" | "9" |
                 "0";
 
 .. supplemental::
 
     Die Beschreibung einer Programmiersprache in EBNF besteht aus einer Startregel und einer Menge von weiteren Regeln sowie Terminalen, die die Syntax der Sprache beschreiben. Die Terminalen sind die Basiswörter der Sprache („reservierte Wörter“).
 
-    Bei kontext-freien Sprachen kommt auf der linken Seite einer Regel genau ein Nichtterminal vor, auf der rechten Seite können beliebig viele Nichtterminale und Terminale vorkommen. 
-    
+    Bei kontext-freien Sprachen kommt auf der linken Seite einer Regel genau ein Nichtterminal vor, auf der rechten Seite können beliebig viele Nichtterminale und Terminale vorkommen.
+
     .. container:: peripheral
-        
+
         Was genau „kontext-frei“ bedeutet, ist Gegenstand fortgeschrittener  Vorlesungen. Für den Moment reicht es zu wissen, dass dies gewisse Einschränkungen für die Regeln bedeutet. Diese Einschränkungen aber das Verarbeiten zumindest stark vereinfachen bzw. überhaupt erst ermöglichen.
 
 
@@ -613,7 +613,7 @@ Die EBNF dient der Beschreibung kontext-freier Grammatiken.
 
 .. exercise:: Binärzahlen in Java
 
-    Folgend wird die Syntax von Binärzahlen (:code:`BinaryNumeral`) in Java beschrieben.\ [#]_ 
+    Folgend wird die Syntax von Binärzahlen (:code:`BinaryNumeral`) in Java beschrieben.\ [#]_
 
     .. code:: ebnf
         :class: far-smaller
@@ -642,14 +642,14 @@ Die EBNF dient der Beschreibung kontext-freier Grammatiken.
         .. code:: java
 
             0b1010
-            0b1_0_1_0 
+            0b1_0_1_0
             0B1010_0
             0b1010_0_1
 
         Die ungültigen Binärzahlen sind:
 
         .. code:: pseudocode
-        
+
             0B_1010
             0b1010_
             0B1010_0_
@@ -664,13 +664,13 @@ Die EBNF dient der Beschreibung kontext-freier Grammatiken.
 ----------------------
 
 .. exercise:: EBNF für einfache Ausdrücke
-        
+
     Erweitern Sie die EBNF für mathematische Ausdrücke, um die Möglichkeit Zahlen beliebiger Länge anzugeben und auch Ausdrücke (mathematisch korrekt) zu klammern. D. h. Ihre erweiterte Grammatik soll folgende Ausdrücke zulassen:
 
     .. math::
 
         12+25\\
-        13-4-(4+5) 
+        13-4-(4+5)
 
     .. rubric:: Bonus
 
@@ -679,42 +679,44 @@ Die EBNF dient der Beschreibung kontext-freier Grammatiken.
     .. solution::
         :pwd: ebnf_fuer_ausdruck
 
-        Es gibt mehrere gültige Lösungen!
+        .. attention::
 
-        .. rubric:: Lösung 1
-            
-        .. code:: ebnf    
+            Es gibt mehrere gültige Lösungen
 
-            Ausdruck = 
+        1. Lösung
+
+        .. code:: ebnf
+
+            Ausdruck =
                 ( "(", Ausdruck , ")" ) |
-                Zahl | 
+                Zahl |
                 Term ;
             Term = Ausdruck, ("+" | "-"), Ausdruck ;
             Zahl = Ziffer, { Ziffer } ;
-            Ziffer = 
-                ( "1" | "2" | "3" | "4" | "5" | "6" | 
+            Ziffer =
+                ( "1" | "2" | "3" | "4" | "5" | "6" |
                   "7" | "8" | "9" | "0" ) ;
 
-        .. rubric:: Lösung 2 (mit Fließkommazahlen)
+        2. Lösung 2 (mit Fließkommazahlen)
 
-        .. code:: ebnf    
+        .. code:: ebnf
 
-            Ausdruck = 
+            Ausdruck =
                 ( "(", Ausdruck , ")" ) |
-                ( Zahl, { ("+" | "-"), Ausdruck } ); 
+                ( Zahl, { ("+" | "-"), Ausdruck } );
             Zahl = Ziffer, { Ziffer }, ["," , Ziffer, { Ziffer }];
-            Ziffer = 
-                ( "1" | "2" | "3" | "4" | "5" | "6" | 
+            Ziffer =
+                ( "1" | "2" | "3" | "4" | "5" | "6" |
                   "7" | "8" | "9" | "0" ) ;
 
 
 Voraussetzungen
----------------- 
+----------------
 
 Zu installieren (für den Anfang):
 
-- (mind.) Java 23 JDK (Java Development Kit) 
-  
+- (mind.) Java 23 JDK (Java Development Kit)
+
   https://adoptium.net/en-GB/temurin/releases/?version=23
 
   oder
