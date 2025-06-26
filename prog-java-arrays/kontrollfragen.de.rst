@@ -7,7 +7,7 @@
    :id: lecture-prog-java-arrays-kontrollfragen
    :first-slide: last-viewed
    :exercises-master-password: WirklichSchwierig!
-    
+
 .. include:: ../docutils.defs
 
 
@@ -28,8 +28,8 @@ Kontrollfragen
 
 .. deck:: numbered
 
-   .. card:: 
-   
+   .. card::
+
       .. exercise:: Welche der folgenden Deklarationen sind gültig?
 
          .. code:: java
@@ -45,22 +45,18 @@ Kontrollfragen
          .. solution::
             :pwd: int_und_so
 
-            .. rubric:: Lösung
-
             Wir kennen die primitiven Datentypen :java:`byte`, :java:`short`, :java:`int`, :java:`long`, :java:`float`, :java:`double`, :java:`boolean`, :java:`char`.
 
-   .. card:: 
+   .. card::
 
       .. exercise:: Wie kann man über die Elemente in einem Array iterieren?
 
          .. solution::
             :pwd: es gibt zwei Wege
 
-            .. rubric:: Lösung
+            For und For-each Schleifen.
 
-            For und For-each Schleifen.   
-
-   .. card:: 
+   .. card::
 
       .. exercise:: Was ist die Ausgabe?
 
@@ -76,15 +72,13 @@ Kontrollfragen
          .. solution::
             :pwd: BezeichNer
 
-            .. rubric:: Lösung
-
             ::
 
                0
                0
                0
 
-   .. card:: 
+   .. card::
 
       .. exercise:: Was ist die Ausgabe?
 
@@ -100,15 +94,13 @@ Kontrollfragen
          .. solution::
             :pwd: BezeichneR
 
-            .. rubric:: Lösung
-            
             ::
 
                2
                6
-               
 
-   .. card:: 
+
+   .. card::
 
       .. exercise:: Welche Werte enthalten die Arrayelemente und was ist die Ausgabe?
 
@@ -127,13 +119,11 @@ Kontrollfragen
          .. solution::
             :pwd: 45_-was-sonst
 
-            .. rubric:: Lösung
-
             ::
-            
+
                45
-            
-   .. card:: 
+
+   .. card::
 
       .. exercise:: Welche Zeile ist korrekt?
 
@@ -148,13 +138,11 @@ Kontrollfragen
          .. solution::
             :pwd: multidim_array
 
-            .. rubric:: Lösung
-
             1. ja
             2. nein (Syntaxfehler!)
             3. ja
-   
-   .. card:: 
+
+   .. card::
 
       .. exercise:: Finden Sie den Fehler:
 
@@ -169,7 +157,4 @@ Kontrollfragen
          .. solution::
             :pwd: array_index
 
-            .. rubric:: Lösung
-
             Der Index des Arrays beginnt bei 0 und endet bei a.length-1. Der Code führt zu einer :java:`ArrayIndexOutOfBoundsException`.
-            

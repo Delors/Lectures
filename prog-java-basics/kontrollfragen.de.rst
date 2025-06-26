@@ -7,7 +7,7 @@
    :id: lecture-prog-java-basics-kontrollfragen
    :first-slide: last-viewed
    :master-password: WirklichSchwierig!
-    
+
 .. include:: ../docutils.defs
 
 
@@ -28,14 +28,12 @@ Kontrollfragen
 
 .. deck:: numbered
 
-   .. card:: 
-   
+   .. card::
+
       .. exercise:: Welche primitiven Datentypen kennen wir?
 
          .. solution::
             :pwd: int_und_so
-
-            .. rubric:: Lösung
 
             Wir kennen die primitiven Datentypen :java:`byte`, :java:`short`, :java:`int`, :java:`long`, :java:`float`, :java:`double`, :java:`boolean`, :java:`char`.
 
@@ -46,15 +44,13 @@ Kontrollfragen
          .. solution::
             :pwd: lits
 
-            .. rubric:: Lösung
-
             Konstante Werte, die direkt in den Code geschrieben werden.
 
    .. card::
 
       .. exercise:: Welche der folgenden Bezeichner sind für Variablen gültig?
 
-         1. :java:`fooBar`   
+         1. :java:`fooBar`
          2. :java:`BarFoo`
          3. :java:`_fooBar`
          4. :java:`1fooBar`
@@ -66,9 +62,7 @@ Kontrollfragen
          .. solution::
             :pwd: BezeichNer
 
-            .. rubric:: Lösung
-
-            1. ja   
+            1. ja
             2. ja
             3. ja
             4. nein
@@ -81,7 +75,7 @@ Kontrollfragen
 
       .. exercise:: Welche der folgenden Bezeichner sollte man verwenden?
 
-         1. :java:`gewinn`   
+         1. :java:`gewinn`
          2. :java:`Gewinn`
          3. :java:`_private_i`
          4. :java:`i`
@@ -91,7 +85,6 @@ Kontrollfragen
          .. solution::
             :pwd: BezeichNer_Teil2
 
-            .. rubric:: Lösung
 
             1. ja
             2. nein
@@ -114,8 +107,6 @@ Kontrollfragen
          .. solution::
             :pwd: BezeichNer_Teil2
 
-            .. rubric:: Lösung
-
             Wenn die Konstante einen deutschen bekommen  soll, dann sollte man dennoch auf Umlaute verzichten. Daher ist 3. die beste Wahl.
 
    .. card::
@@ -131,8 +122,6 @@ Kontrollfragen
 
          .. solution::
             :pwd: MeinTypDeinTyp
-
-            .. rubric:: Lösung
 
             1. :java:`int`
             2. :java:`double`
@@ -155,8 +144,6 @@ Kontrollfragen
          .. solution::
             :pwd: 3_2_Bits
 
-            .. rubric:: Lösung
-
             32
 
    .. card::
@@ -167,12 +154,10 @@ Kontrollfragen
          2. -128 bis 128
          3. -128 bis 127
          4. -127 bis 127
-         5. -127 bis 128 
-                  
+         5. -127 bis 128
+
          .. solution::
             :pwd: Es gibt nur eine Antwort
-
-            .. rubric:: Lösung
 
             -128 bis 127
 
@@ -187,50 +172,42 @@ Kontrollfragen
          .. solution::
             :pwd: 3_2_Bits
 
-            .. rubric:: Lösung
-
             1. b = 42
             2. b = -1
             3. b = 0
 
    .. card::
 
-       .. exercise:: Warum ist der folgende  Ausdruck wahr? 
-         
+       .. exercise:: Warum ist der folgende  Ausdruck wahr?
+
          :java:`(long) ((float) (Long.MAX_VALUE - Integer.MAX_VALUE)) == Long.MAX_VALUE;`
 
-         .. remark::         
+         .. remark::
 
                Rein mathematisch betrachtet - d. h. ohne Betrachtung von Typen und Typumwandlungen - wäre dieser natürlich falsch.
 
          .. solution::
             :pwd: VerlusteSindDA!
 
-            .. rubric:: Lösung
-
             Durch die Typkonvertierung wird der Wert von :java:`Long.MAX_VALUE - Integer.MAX_VALUE` in einen :java:`float` umgewandelt. Da ein float nur 24 Bit für die Mantisse hat kommt es zu einem Präzisionsverlust. Der Wert wird also verändert. In (2) wird der Wert als :java:`long` berechnet und ist daher korrekt.
-   
+
    .. card::
 
-       .. exercise:: Ist die Länge eines Strings gleich der Anzahl sichtbarer Zeichen? 
-         :formatted-title: Ist die Länge eines Strings gleich der Anzahl *sichtbarer* Zeichen? 
+       .. exercise:: Ist die Länge eines Strings gleich der Anzahl sichtbarer Zeichen?
+         :formatted-title: Ist die Länge eines Strings gleich der Anzahl *sichtbarer* Zeichen?
 
 
          .. solution::
             :pwd: x_plus_plus
 
-            .. rubric:: Lösung
-
             Nein - es gibt Zeichen (zum Beispiel Emojis), die mehrere Zeichen (:java:`char`\ s) benötigen.
-   
+
    .. card::
 
        .. exercise:: Wie fügen Sie in einen String ein Anführungszeichen ein?
 
          .. solution::
             :pwd: backslash
-
-            .. rubric:: Lösung
 
             Sie verwenden ein Backslash: :java:`"\""`.
 
@@ -241,37 +218,31 @@ Kontrollfragen
          .. solution::
             :pwd: nein...
 
-            .. rubric:: Lösung
-
             Nein, in Java kann der Typ auch implizit durch den Compiler ermittelt werden, wenn die Variable auch direkt initialisiert wird.
 
    .. card::
 
-       .. exercise:: Wie deklariert man eine Konstante? 
-         
+       .. exercise:: Wie deklariert man eine Konstante?
+
          Sollte man Werte, die man nicht ändern möchte immer als Konstanten deklarieren?
 
          .. solution::
             :pwd: final var
 
-            .. rubric:: Lösung
+            Durch die Verwendung des Schlüsselwortes :java:`final`.
 
-            Durch die Verwendung des Schlüsselwortes :java:`final`. 
-            
             Ja - es ist eine gute Praxis, Werte, die sich nicht ändern sollen, als Konstanten zu deklarieren.
 
    .. card::
 
        .. exercise:: Wie ist der Operator für die Modulorechnung in Java?
 
-         (D. h. wenn Sie eine Restwertberechnung in Java durchführen wollen.) 
+         (D. h. wenn Sie eine Restwertberechnung in Java durchführen wollen.)
 
          .. solution::
             :pwd: _-%-_
 
-            .. rubric:: Lösung
-
-            Das Prozentzeichen :java:`%`. 
+            Das Prozentzeichen :java:`%`.
 
    .. card::
 
@@ -280,14 +251,12 @@ Kontrollfragen
          .. solution::
             :pwd: if?then:else
 
-            .. rubric:: Lösung
-
             Es ist das Fragezeichen :java:`?` und der Doppelpunkt :java:`:`. Beispiel :java:`x > 18 ? "alt" : "jung"`.
 
    .. card::
 
-       .. exercise:: Welchen Wert haben die folgenden Ausdrücke? 
-         
+       .. exercise:: Welchen Wert haben die folgenden Ausdrücke?
+
          :java:`x` hat vor der jeweiligen Auswertung den Wert 5.
 
          (1) :java:`x++`
@@ -303,8 +272,6 @@ Kontrollfragen
          .. solution::
             :pwd: mal_so_mal_so
 
-            .. rubric:: Lösung
-
             (1) 5, (2) 6, (3) 6, (4) 15, (5) 15, (6) 24, (7) true, (8) Division durch 0, (9) 2
 
    .. card::
@@ -313,8 +280,6 @@ Kontrollfragen
 
          .. solution::
             :pwd: gibts_mich_oder_nicht
-
-            .. rubric:: Lösung
 
             Den Gültigkeitsbereich einer Variable.
 
@@ -326,8 +291,6 @@ Kontrollfragen
          .. solution::
             :pwd: einfach_ja
 
-            .. rubric:: Lösung
-
             Ja.
 
    .. card::
@@ -337,8 +300,6 @@ Kontrollfragen
 
          .. solution::
             :pwd: einmal wird die do-while ausgefuehrt
-
-            .. rubric:: Lösung
 
             Eine do-while-Schleife wird mindestens einmal ausgeführt, während eine while-Schleife nur dann ausgeführt wird, wenn die Bedingung wahr ist.
 
@@ -362,8 +323,6 @@ Kontrollfragen
          .. solution::
             :pwd: i ist 0
 
-            .. rubric:: Lösung
-
             Die Ausgabe ist ``0``. (Die Variable ``i`` in der Schleife ist eine andere Variable als die Variable ``i``, die vor der Schleife deklariert wurde. Achtung: in einem Java Skript würde dies zu einem Fehler führen.)
 
    .. card::
@@ -385,10 +344,8 @@ Kontrollfragen
          .. solution::
             :pwd: i==5
 
-            .. rubric:: Lösung
+            Die Ausgabe ist ``5``.
 
-            Die Ausgabe ist ``5``. 
-            
             (Die Update Anweisung wird nicht ausgeführt, wenn die Schleife durch ein :java:`break` beendet wird.)
 
    .. card::
@@ -407,12 +364,10 @@ Kontrollfragen
          .. solution::
             :pwd: nix_da
 
-            .. rubric:: Lösung
-
             Die Schleife wird nicht betreten.
 
    .. card::
-   
+
        .. exercise:: Schleife mit continue - wie ist die Ausgabe?
 
          .. code:: java
@@ -426,16 +381,14 @@ Kontrollfragen
                 }
                 System.out.println(i);
             }
-            
+
          .. solution::
             :pwd: ungerade
-
-            .. rubric:: Lösung
 
             Es werden die ungeraden Zahlen von 1 bis einschließlich 9 ausgegeben.
 
    .. card::
-   
+
        .. exercise:: Verschachteltet Schleifen - wie ist die Ausgabe?
 
          .. code:: java
@@ -454,15 +407,13 @@ Kontrollfragen
                 }
             }
             System.out.println(i);
-            
+
          .. solution::
             :pwd: 1__1_1-und_so_weiter
 
-            .. rubric:: Lösung
-
             Ausgabe:
 
-            :: 
+            ::
 
                1
                1 1
@@ -481,7 +432,7 @@ Kontrollfragen
                9 2
 
    .. card::
-   
+
        .. exercise:: Verschachteltet Schleifen - wie ist die Ausgabe?
 
          .. code:: java
@@ -499,18 +450,16 @@ Kontrollfragen
                      break;
                   System.out.println(i + " " + j);
             }  }
-            
+
          .. solution::
             :pwd: 1_3_5_oder_so...
-
-            .. rubric:: Lösung
 
             Ausgabe:
 
             *<keine>*
 
    .. card::
-   
+
        .. exercise:: Rekursive Funktion
 
          .. code:: java
@@ -530,14 +479,12 @@ Kontrollfragen
          .. solution::
             :pwd: Summe-rekursiv
 
-            .. rubric:: Lösung
-
             - Die Summe der Zahlen von 1 bis n.
             - Nein, da die Funktion rekursiv ist und daher für große Werte von n - bei einigen Programmiersprachen (insbesondere Java, Python, etc.) - zu einem Stackoverflow führen wird.
             - Jein - sie ist nur um einen Konstanten Faktor schneller, aber sie braucht keinen Stack.
 
    .. card::
-   
+
        .. exercise:: Funktion mit „Tail-Call“
 
          .. code:: java
@@ -557,13 +504,11 @@ Kontrollfragen
          .. solution::
             :pwd: Summe-optimierbar
 
-            .. rubric:: Lösung
-
             - Die Summe der Zahlen von 1 bis n.
 
             - Dieser Code könnte in der Programmiersprache Scala verwendet werden, um die Summe der Zahlen von 1 bis n zu berechnen. In Scala wird der rekursive Aufruf so optimiert, dass es keinen Stackoverflow gibt; in Java ist dies nicht möglich.
-          
-               .. code:: scala   
+
+               .. code:: scala
                   :class: copy-to-clipboard
                   :number-lines:
 
@@ -579,18 +524,16 @@ Kontrollfragen
                   }
 
    .. card::
-   
+
        .. exercise:: Wie werden Parameter übergeben?
 
          .. solution::
             :pwd: Call-by-value
 
-            .. rubric:: Lösung
-
-            Call-by-Value (Java) 
+            Call-by-Value (Java)
 
    .. card::
-   
+
        .. exercise:: Wie bewerten Sie folgende Kommentierung?
 
          .. code:: java
@@ -599,9 +542,9 @@ Kontrollfragen
 
             /**
              * Testet ob eine Zahl eine Primzahl ist.
-             * 
+             *
              * Die Laufzeit ist O(n/4).
-             * 
+             *
              * @param n Eine positive ganze Zahl.
              * @return true, wenn n eine Primzahl ist, sonst false.
              */
@@ -612,22 +555,20 @@ Kontrollfragen
          .. solution::
             :pwd: "Ausreichend"
 
-            .. rubric:: Lösung
-
             Ausreichend - obwohl die Frage ist, was bei negativen Zahlen passiert!
 
    .. card::
-   
+
        .. exercise:: Ist der Kommentar ausreichend?
 
          .. code:: java
             :class: copy-to-clipboard
             :number-lines:
-         
+
             /**
              * Computes the absolute value of the argument.
-             * 
-             * @param a - the argument whose absolute value is to be 
+             *
+             * @param a - the argument whose absolute value is to be
              *            determined
              * @return the absolute value of the argument.
              */
@@ -635,8 +576,6 @@ Kontrollfragen
 
          .. solution::
             :pwd: Nicht schlecht, aber ...
-
-            .. rubric:: Lösung
 
             Es fehlt eine Diskussion der besonderen Werte von :java:`a` (NaN, +0.0, -0.0, Infinity).
 
@@ -647,14 +586,14 @@ Kontrollfragen
          .. code:: java
             :class: copy-to-clipboard
             :number-lines:
-         
+
             /**
-             * Returns the absolute value of an int value. 
-             * If the argument is not negative, the argument is returned. 
-             * If the argument is negative, the negation of the argument 
+             * Returns the absolute value of an int value.
+             * If the argument is not negative, the argument is returned.
+             * If the argument is negative, the negation of the argument
              * is returned.
-             * 
-             * @param a - the argument whose absolute value is to be 
+             *
+             * @param a - the argument whose absolute value is to be
              *            determined
              * @return the absolute value of the argument.
              */
@@ -662,8 +601,6 @@ Kontrollfragen
 
          .. solution::
             :pwd: Nicht schlecht, aber ...
-
-            .. rubric:: Lösung
 
             Der Wertebereich von Long ist nicht symmetrisch! Es stellt sich also unmittelbar die Frage was bei Long.MIN_VALUE passiert. (Die Antwort ist Long.MIN_VALUE.)
 
@@ -674,8 +611,6 @@ Kontrollfragen
 
          .. solution::
             :pwd: Nope
-
-            .. rubric:: Lösung
 
             Sie müssen extra aktiviert werden.
 
@@ -690,8 +625,6 @@ Kontrollfragen
          .. solution::
             :pwd: so oder so
 
-            .. rubric:: Lösung
-
             1. Nur dann, wenn die Funktion eine private Funktion ist, die kein Teil der öffentlichen API ist! Sollte die Eingabe auf Nutzereingaben zurückzuführen sein, dann sind Java Assertions der falsche Mechanismus.
             2. Ja
             3. Ja
@@ -703,10 +636,10 @@ Kontrollfragen
          .. code:: java
             :class:  copy-to-clipboard
             :number-lines:
-   		
+
             int width = 20;
-            int height = 10; 
-            for (int i = 0; i < width; i++) print("-"); 
+            int height = 10;
+            for (int i = 0; i < width; i++) print("-");
             println("");
             for (int i = 0; i < height - 2; i++) {
                   print("|");
@@ -721,6 +654,4 @@ Kontrollfragen
          .. solution::
             :pwd: ein Rechteck
 
-            .. rubric:: Lösung
-
-            In Abhängigkeit von :java:`width` und :java:`height` wird ein Rechteck gezeichnet.   
+            In Abhängigkeit von :java:`width` und :java:`height` wird ein Rechteck gezeichnet.
