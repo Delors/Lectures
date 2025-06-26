@@ -17,7 +17,7 @@ Erzeugung von Zufallsbits und Stromchiffren
 
 :Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
 :Basierend auf: *Cryptography and Network Security - Principles and Practice, 8th Edition, William Stallings*
-:Version: 2.4
+:Version: 2.4.1
 
 .. supplemental::
 
@@ -488,7 +488,11 @@ Zwei Ansätze, die eine Blockchiffre zum Aufbau eines PNRG verwenden, haben weit
     .. solution::
         :pwd: Jupyter...!
 
+        Python
+
         Vgl. `Jupyter Notebook <https://github.com/Delors/delors.github.io/blob/main/sec-stromchiffre/code/stream_ciphers.ipynb>`__.
+
+        Java
 
         .. code:: java
             :number-lines:
@@ -504,6 +508,26 @@ Zwei Ansätze, die eine Blockchiffre zum Aufbau eines PNRG verwenden, haben weit
             }
 
             lcg(98346444l, 2323, 665458, 1111111111111111111l, 100000);
+
+
+        JavaScript
+
+        .. code:: javascript
+            :number-lines:
+            :class: copy-to-clipboard
+
+            function* lcg(s,a,c,m){
+                let x = (s * a + c) % m;
+                while(true) {
+                    yield x;
+                    x = (x * a + c) % m;
+                }
+            }
+
+            let r  = lcg(1221,423,7272,6655456554)
+
+            r.next().value
+            r.next().value
 
 
 
@@ -560,14 +584,14 @@ Zwei Ansätze, die eine Blockchiffre zum Aufbau eines PNRG verwenden, haben weit
             :number-lines:
             :class: copy-to-clipboard
 
-                let n = 83 * 47;
-                let x = 253**2 % n;
-                function* bitGen() {
-                    x = x ** 2 % n;
-                    yield x % 2;
-                }
-                const g = bitGen()
-                g.next().value;
+            let n = 83 * 47;
+            let x = 253**2 % n;
+            function* bitGen() {
+                x = x ** 2 % n;
+                yield x % 2;
+            }
+            const g = bitGen()
+            g.next().value;
 
 
 
@@ -721,8 +745,6 @@ Shannon Entropie
 
     .. solution::
         :pwd: ImmerZwischen0und1
-
-        .. rubric:: Lösung
 
         Länge: :math-i:`n` = 18
 
@@ -1208,8 +1230,6 @@ Die ChaCha20 Blockfunktion
     .. solution::
         :pwd: zum????
 
-        .. rubric:: Lösung
-
         Die Nonce dient dazu, mehrere Nachrichten mit demselben Schlüssel sicher zu verschlüsseln, ohne dabei denselben Schlüsselstrom zu erzeugen.
 
         Die Nonce muss nicht geheim gehalten werden.
@@ -1248,7 +1268,7 @@ Die ChaCha20 Blockfunktion
 
         .. important::
 
-            Die Kombination aus Addition und XOR ist eine gängige Methode in kryptographischen Algorithmen, um Diffusion und Konfusion zu erzielen.
+            Die Kombination aus Addition (modulo :math-i:`X`) und XOR ist eine gängige Methode in kryptographischen Algorithmen, um Diffusion und Konfusion zu erzielen.
 
         **Parallelisierung**
 

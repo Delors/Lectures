@@ -367,26 +367,26 @@ ________________________________________________________________________________
         :js:`const a = [].push(1);`.
 
 
-
-
    .. solution::
-      :pwd: _RemoveNthElement
+        :pwd: _RemoveNthElement
 
-      .. code:: javascript
+        .. code:: javascript
+            :number-lines:
+            :class: copy-to-clipboard
 
-         function removeNthElement(arr, n) {
-            const a = [];
-            for (i = 0; i < arr.length ; i ++) {
-               if ((i+1) % n === 0) continue;
-               a.push(arr[i]);
+            function removeNthElement(arr, n) {
+                const a = [];
+                for (i = 0; i < arr.length ; i ++) {
+                    if ((i+1) % n === 0) continue;
+                    a.push(arr[i]);
+                }
+                return a;
             }
-            return a;
-         }
 
-         console.log(removeNthElement([1,2,3,4,5,6,7],2))
-         console.log(removeNthElement([1],2))
-         console.log(removeNthElement([1,2,3],1))
-         console.log(removeNthElement([1,2,3,4,5,6],4))
+            console.log(removeNthElement([1,2,3,4,5,6,7],2))
+            console.log(removeNthElement([1],2))
+            console.log(removeNthElement([1,2,3],1))
+            console.log(removeNthElement([1,2,3,4,5,6],4))
 
 
 
@@ -405,8 +405,10 @@ ________________________________________________________________________________
       :pwd: removeNthElementWithErrorHandling
 
       .. code:: javascript
+        :number-lines:
+        :class: copy-to-clipboard
 
-         function removeNthElement(arr, n) {
+        function removeNthElement(arr, n) {
             if (!Array.isArray(arr))
                throw new Error("arr must be an array.");
             if (!Number.isInteger(n)) {
@@ -422,23 +424,23 @@ ________________________________________________________________________________
                a.push(arr[i]);
             }
             return a;
-         }
+        }
 
-         try {
+        try {
             console.log(removeNthElement(undefined,2))
-         } catch (e) {
+        } catch (e) {
             console.error(e.message);
-         }
-         try {
+        }
+        try {
             console.log(removeNthElement([1],{}))
-         } catch (e) {
+        } catch (e) {
             console.error(e.message);
-         }
-         try {
+        }
+        try {
             console.log(removeNthElement([1],-2))
-         } catch (e) {
+        } catch (e) {
             console.error(e.message);
-         }
+        }
 
 
 
@@ -456,37 +458,39 @@ ________________________________________________________________________________
    Beispiel: :js:`eval([2,3,"+",4,"*"])` :math:`\Rightarrow` :js:`20`
 
    .. solution::
-      :pwd: _RPNCalculator+
+        :pwd: _RPNCalculator+
 
-      .. code:: javascript
+        .. code:: javascript
+            :number-lines:
+            :class: copy-to-clipboard
 
-         const ops = {
-            "+": (a,b) => a+b,
-            "-": (a,b) => a-b,
-            "*": (a,b) => a*b,
-            "/": (a,b) => a/b
-         }
-
-         function eval(expr) {
-            const stack = [];
-            for (const e of expr) {
-               if (Number.isInteger(e)) {
-                  stack.push(e);
-               } else {
-                  const b = stack.pop();
-                  const a = stack.pop();
-                  const op = ops[e];
-                  if (!op) {
-                     throw new Error("Unknown operator: "+e);
-                  }
-                  stack.push(op(a,b));
-               }
+            const ops = {
+                "+": (a,b) => a+b,
+                "-": (a,b) => a-b,
+                "*": (a,b) => a*b,
+                "/": (a,b) => a/b
             }
-            return stack.pop();
-         }
 
-         eval([2,3,"+",4,"*"])
-         eval([2,3,"+",4,"%"])
+            function eval(expr) {
+                const stack = [];
+                for (const e of expr) {
+                    if (Number.isInteger(e)) {
+                        stack.push(e);
+                    } else {
+                        const b = stack.pop();
+                        const a = stack.pop();
+                        const op = ops[e];
+                        if (!op) {
+                            throw new Error("Unknown operator: "+e);
+                        }
+                        stack.push(op(a,b));
+                    }
+                }
+                return stack.pop();
+            }
+
+            eval([2,3,"+",4,"*"])
+            eval([2,3,"+",4,"%"])
 
 
 
