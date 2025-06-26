@@ -18,7 +18,7 @@ Kryptografische Hash Funktionen
 :Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
 :Kontakt: michael.eichberg@dhbw.de
 :Basierend auf: *Cryptography and Network Security - Principles and Practice, 8th Edition, William Stallings*
-:Version: 2.3
+:Version: 2.3.1
 
 .. supplemental::
 
@@ -455,7 +455,30 @@ Die SHA-Familie (Secure Hash Algorithms)
         ::
 
             SHA-256("Hallo") →
-                f7ff9e8b7bb2b91af11f5d024c5c34c3d7d3c4c2b8b3c8a3c6e52efdbbe6b0c1
+                753692ec36adb4c794c973945eb2a99c1649703ea6f76bf259abb4fb838e013e
+
+        .. supplemental::
+
+            **Berechnung des SHA-256**
+
+            *Python*
+
+            .. code:: python
+                :class: copy-to-clipboard
+                :number-lines:
+
+                from hashlib import sha256
+                from binascii import hexlify
+                hexlify(sha256(bytes("Hallo","UTF-8")).digest())
+
+
+            *Shell/Console*
+
+            .. code:: console
+                :class: copy-to-clipboard
+                :number-lines:
+
+                echo -n "Hallo" |sha256sum
 
     .. attention::
         :class: incremental
@@ -744,16 +767,18 @@ HMAC (Hash-based Message Authentication Code)
 - Auch als *keyed-hash message authentication code* bezeichnet.
 - Konstruktion:
 
-  .. math::
-    :class: framed
+  .. container:: framed
 
-    \begin{array}{rcl}
-    HMAC(K,m) & = & H( (K' \oplus opad) || H( ( K' \oplus ipad) || m) ) \\
-    K' & = &\begin{cases}
-            H(K) & \text{falls K größer als die Blockgröße ist}\\
-            K & \text{andernfalls}
-            \end{cases}
-    \end{array}
+    .. math::
+
+        \begin{array}{rcl}
+        HMAC(K,m) & = & H( (K' \oplus opad) || H( ( K' \oplus ipad) || m) ) \\
+        K' & = &\begin{cases}
+                H(K) & \text{falls K größer als die Blockgröße ist}\\
+                K & \text{andernfalls}
+                \end{cases}
+        \end{array}
+
 - Standardisiert - sicher gegen Längenerweiterungsangriffe.
 
 .. supplemental::
@@ -1039,13 +1064,14 @@ MAC: `Poly 1305 <https://datatracker.ietf.org/doc/html/rfc8439#section-2.5>`__
         4. 128 Byte (Blockgröße inkl. Padding)
 
 
+.. class:: exercises
 
 Übung
 --------
 
 .. exercise:: Poly 1305
 
-    Berechnen Sie das Tag für folgende Daten welches als Octet String gegeben sind:
+    Berechnen Sie das Tag für folgende Daten welche als Octet String gegeben sind:
 
     ::
 
@@ -1071,38 +1097,10 @@ MAC: `Poly 1305 <https://datatracker.ietf.org/doc/html/rfc8439#section-2.5>`__
 
     Sie können/sollten zur Berechnung auf die Python Shell zurückgreifen (siehe ergänzende Hinweise bei Bedarf.)
 
-    .. supplemental::
-
-        .. rubric:: Python 101
-
-        Die Verwendung von Python bietet sich hier an, da Pyhton "Mathematik mit beliebiger Genauigkeit für Ganzzahlen" hat.
-
-        In Python können Variablen (zum Beispiel :python:`a`) einfach initialisiert und dann direkt genutzt werden. Pyhton unterstützt die gewohnten mathematischen und logischen bzw. binären Operationen. Weiterhin dient der :python:`**` Operator zur Potenzierung (z. B. :python:`2 ** 128` = 2¹²⁸)
-
-        Um einen Octect String in eine Zahl umzuwandeln, kann folgender Code verwendet werden:
-
-        .. code:: python
-            :number-lines:
-            :class: copy-to-clipboard
-
-            octet_string = "21 9a d2 4f 89 d3"
-            r = hex(int.from_bytes(bytes.fromhex(octet_string.replace(" ","")),"little"))
-
-        Um eine Zahl (z. B. :python:`t`) in Little-endian Hexdarstellung umzuwandeln, kann folgender Code verwendet werden:
-
-        .. code:: python
-            :number-lines:
-            :class: copy-to-clipboard
-
-            from binascii import hexlify
-
-            t = 0x2a927010caf8b2bc2c6365130c11d06a8
-            hexlify(t.to_bytes(17,byteorder="little")[0:16])
-
     .. solution::
         :pwd: Poly13Poly05
 
-        .. rubric:: Lösung - Schrittweise Berechnung
+        .. rubric:: Schrittweise Berechnung
 
         .. code:: python
             :number-lines:
@@ -1113,9 +1111,9 @@ MAC: `Poly 1305 <https://datatracker.ietf.org/doc/html/rfc8439#section-2.5>`__
 
             raw_r = "c0 30 14 6f 7f 93 9d 0d e4 36 21 9a d2 4f 89 d3"
             r = octet_string_to_int(raw_r)
+            clamped_r = r & 0x0ffffffc0ffffffc0ffffffc0fffffff
             raw_s = "7a 65 80 93 c3 d1 a0 f9 36 a6 26 f1 53 18 43 e7"
             s = octet_string_to_int(raw_s)
-            clamped_r = r & 0x0ffffffc0ffffffc0ffffffc0fffffff
             P = 2**130 - 5
 
         .. csv-table:: Berechnung Schritt-für-Schritt
@@ -1144,7 +1142,7 @@ MAC: `Poly 1305 <https://datatracker.ietf.org/doc/html/rfc8439#section-2.5>`__
         Das Tag ist somit: :code:`dc be f6 dc 70 29 25 b7 d4 f8 2b 3f 05 a4 85 04`.
 
 
-        .. rubric:: Lösung - Implementierung des Algorithmus
+        .. rubric:: Implementierung des Algorithmus
 
         .. code:: python
             :number-lines:
@@ -1203,6 +1201,37 @@ MAC: `Poly 1305 <https://datatracker.ietf.org/doc/html/rfc8439#section-2.5>`__
                 string,
                 "85 d6 be 78 57 55 6d 33 7f 44 52 fe 42 d5 06 a8",
                 "01 03 80 8a fb 0d b2 fd 4a bf f6 af 41 49 f5 1b")))
+
+
+
+.. supplemental::
+
+    .. rubric:: Python 101
+
+    Die Verwendung von Python bietet sich hier an, da Pyhton "Mathematik mit beliebiger Genauigkeit für Ganzzahlen" hat.
+
+    In Python können Variablen (zum Beispiel :python:`a`) einfach initialisiert und dann direkt genutzt werden. Pyhton unterstützt die gewohnten mathematischen und logischen bzw. binären Operationen. Weiterhin dient der :python:`**` Operator zur Potenzierung (z. B. :python:`2 ** 128` = 2¹²⁸)
+
+    Um einen Octect String in eine Zahl umzuwandeln, kann folgender Code verwendet werden:
+
+    .. code:: python
+        :number-lines:
+        :class: copy-to-clipboard
+
+        octet_string = "21 9a d2 4f 89 d3"
+        r = hex(int.from_bytes(bytes.fromhex(octet_string.replace(" ","")),"little"))
+
+    Um eine Zahl (z. B. :python:`t`) in Little-endian Hexdarstellung umzuwandeln, kann folgender Code verwendet werden:
+
+    .. code:: python
+        :number-lines:
+        :class: copy-to-clipboard
+
+        from binascii import hexlify
+
+        t = 0x2a927010caf8b2bc2c6365130c11d06a8
+        hexlify(t.to_bytes(17,byteorder="little")[0:16])
+
 
 
 Zusammenfassung
