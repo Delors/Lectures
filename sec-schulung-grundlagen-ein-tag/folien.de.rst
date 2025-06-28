@@ -1,7 +1,7 @@
 .. meta::
     :version: renaissance
     :author: Michael Eichberg
-    :keywords: "IT Sicherheit",
+    :keywords: IT Sicherheit
     :description lang=de: Grundlagen IT Security - IT Schulung
     :id: schulung-it-security-grundlagen
     :first-slide: last-viewed
