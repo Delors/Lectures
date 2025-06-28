@@ -17,14 +17,14 @@ Grundlegende Konzepte verteilter Systeme
 
 :Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
 :Kontakt: michael.eichberg@dhbw.de
-:Version: 1.0.1
+:Version: 1.0.2
 
-.. supplemental::  
+.. supplemental::
 
-  :Folien: 
-    
+  :Folien:
+
       |html-source|
-      
+
       |pdf-source|
   :Fehler melden:
 
@@ -33,7 +33,7 @@ Grundlegende Konzepte verteilter Systeme
 
 .. class:: center-content
 
-\ 
+\
 ----
 
 Die folgenden Konzepte sind für die Entwicklung verteilter Systeme von zentraler Bedeutung und sind in vielen aktuellen Middlewareprodukten umgesetzt.
@@ -70,7 +70,7 @@ Probleme, wenn die Zeit nicht korrekt ist
 
 
 
-.. class:: transition-scale 
+.. class:: transition-scale
 
 Verteilte Systeme: Reale vs. logische Zeit
 --------------------------------------------------------------------------------
@@ -91,7 +91,7 @@ Verteilte Systeme: Reale vs. logische Zeit
 
     .. class:: incremental
 
-    :Atomzeitsekunde: 
+    :Atomzeitsekunde:
       Bezugspunkt ist die Schwingungsdauer eines Cäsium-133-Atoms.
 
       TAI (Temps Atomique International): Durchschnittszeit der Atomuhren von über 60 Instituten weltweit (z. B. Braunschweig), ermittelt vom BIH (Bureau International de l’Heure) in Paris
@@ -109,11 +109,11 @@ Computeruhrzeit
 .. class:: incremental-list list-with-explanations
 
 - Real-time Clock (RTC): interne batteriegepufferte Uhr.
-  
+
   (Die Genauigkeit und Auflösung sind teilweise sehr grob.)
 - Funkuhr (DCF77 aus Mainflingen, ca. 2000 km Reichweite)
 - GPS-Signal (Global Positioning System) mit einer  Auflösung von ca. 100 ns
-- mittels Nachrichtenaustausch mit einem Zeitserver 
+- mittels Nachrichtenaustausch mit einem Zeitserver
 
 
 Uhrensynchronisation nach Christian
@@ -133,7 +133,7 @@ Network Time Protocol (NTP, RFC 5905)
 .. class:: incremental-list list-with-explanations
 
 - Synchronisierung auf UTC
-  
+
   - im lokalen Netz mit einer Genauigkeit von bis zu 200 Mikrosekunden
   - im Internet mit einer Genauigkeit von 1-10 Millisekunden
 
@@ -142,16 +142,16 @@ Network Time Protocol (NTP, RFC 5905)
   Stratum 0: Quelle - z. B. DCF77-Zeitzeichensender
 
   Stratum 1: Primärserver
-  
-  Stratum 2,...: Sekundär-/...server 
-  
+
+  Stratum 2,...: Sekundär-/...server
+
   Clients
 
 - Wechselseitiger Austausch von Zeitstempeln zwischen den Server-Rechnern wird unterstützt (NTP ist symmetrisch).
 
 .. supplemental::
 
-  Aktualisierung der Zeit eines NTP Servers erfolgt aber nur wenn der anfragende Server einen höheren *Stratum*\ wert hat (d. h. potentiell unpräziser ist) als der angefragte Server. Der anfragende Server erhält danach den Stratumwert des abgefragten Servers :math:`+1`. 
+  Aktualisierung der Zeit eines NTP Servers erfolgt aber nur wenn der anfragende Server einen höheren *Stratum*\ wert hat (d. h. potentiell unpräziser ist) als der angefragte Server. Der anfragende Server erhält danach den Stratumwert des abgefragten Servers :math:`+1`.
 
 
 
@@ -178,17 +178,17 @@ Zeit: Berechnung der Round-Trip-Time und der Zeitdifferenz/des Gangunterschieds
 .. attention::
   :class: incremental
 
-  Eine exakte Uhrensynchronisation ist in einem asynchronem System nicht realisierbar! 
+  Eine exakte Uhrensynchronisation ist in einem asynchronem System nicht realisierbar!
 
 .. supplemental::
 
-  Es wird die Annahme getroffen, dass die Zeit auf beiden Rechnern quasi gleichschnell vergeht. Die Zeitdifferenz zwischen den beiden Rechnern ist also konstant. 
+  Es wird die Annahme getroffen, dass die Zeit auf beiden Rechnern quasi gleichschnell vergeht. Die Zeitdifferenz zwischen den beiden Rechnern ist also konstant.
 
   :math:`(T3 - T2)` ist die Zeit, die der Server zum Bearbeiten benötigt.
-  
-  Die Round-Trip-Time (RTT) ist die Zeit, die ein Signal benötigt, um von einem Rechner zum anderen und zurückzugelangen. 
-  
-  Der Gangunterschied ist die Differenz zwischen der Zeit auf dem Server und der Zeit auf dem Client. 
+
+  Die Round-Trip-Time (RTT) ist die Zeit, die ein Signal benötigt, um von einem Rechner zum anderen und zurückzugelangen.
+
+  Der Gangunterschied ist die Differenz zwischen der Zeit auf dem Server und der Zeit auf dem Client.
 
   Probleme bei der Uhrensynchronisation entstehen aufgrund ungewisser Latenzen:
 
@@ -196,7 +196,7 @@ Zeit: Berechnung der Round-Trip-Time und der Zeitdifferenz/des Gangunterschieds
   - Zeitverzögerung in Routern bei Weitervermittling (lastabhängig)
   - Zeit bis zur Interrupt-Annahme im Betriebssystem (kontextabhängig)
   - Zeit zum Kopieren von Puffern (lastabhängig)
-  
+
   Aufgrund der Probleme ist ein konsistenter, realistischer globaler Schnappschuss nicht realisierbar.
 
 
@@ -205,22 +205,22 @@ Beispiel zur Berechnung des Gangunterschieds
 
 .. container:: incremental
 
-  Sei die Latenz 5 ms und die Bearbeitungszeit 2 ms. 
-  
-  Weiterhin sei :math:`T_1 = 110` und :math:`T_2 = 100`. D. h. der Client geht vor. 
+  Sei die Latenz 5 ms und die Bearbeitungszeit 2 ms.
+
+  Weiterhin sei :math:`T_1 = 110` und :math:`T_2 = 100`. D. h. der Client geht vor.
 
 .. container:: incremental margin-top-2em
 
   Da die Bearbeitungszeit des Servers 2 ms beträgt, gilt für :math:`T_3` und :math:`T_4`:
-    
-  :math:`T_3 = 102` und 
-  
+
+  :math:`T_3 = 102` und
+
   :math:`T_4 = 110+(2 \times 5) +2 =  122`.
 
 .. container:: incremental margin-top-2em
 
   Somit ergibt sich der Gangunterschied zu:
-  
+
   :math:`x = \frac{(100-110) - (122-102)}{2} = \frac{(-10 - 20)}{2} = -15` ms.
 
 
@@ -231,11 +231,11 @@ Logische Zeit
 --------------------------------------------------------------------------------
 
 .. container:: assessment
-   
-  Für die konsistente Sicht von Ereignissen in einem verteilten System ist die reale Zeit in vielen Fällen nicht wichtig! 
-  
+
+  Für die konsistente Sicht von Ereignissen in einem verteilten System ist die reale Zeit in vielen Fällen nicht wichtig!
+
   Wir benötigen nur eine global eindeutige Reihenfolge der Ereignisse; d. h. wir benötigten Zeitstempel.
- 
+
   Jedoch beeinflussen sich nicht alle Ereignisse untereinander; d. h. sind kausal unabhängig.
 
 .. supplemental::
@@ -248,7 +248,7 @@ Lamport-Uhren (*logical clocks*)
 --------------------------------------------------------------------------------
 
 .. definition::
-  
+
   Ein Ereignis (*write*, *send*, *receive*) ist eine Zustandsänderung in einem Prozess.
 
 .. rubric:: Vorgehensweise
@@ -256,20 +256,20 @@ Lamport-Uhren (*logical clocks*)
 - vor *write* und *send*: erhöhen der lokalen Zeit :math:`T_{local} = T_{local} + 1`
 - *send* immer inklusive Zeitstempel: :math:`T_{msg} = T_{local}`
 - vor *receive*: :math:`T_{local} = max(T_{msg}, T_{local}) + 1`
-      
+
 .. container:: incremental
-  
+
    Ereignis *receive* ist zeitlich immer nach *send*.
 
    Ereignisse werden eingeordnet nach der „happened-before“ Relation: **a → b**
 
-   (a happened-before b) 
-   
+   (a happened-before b)
+
 .. container:: incremental
-  
+
   Resultat: es ergibt sich eine partielle Ordnung (partial ordering) der Ereignisse.
 
-  Ein konsistenter Schnappschuss enthält zu jedem Empfangs- das entsprechende Sendeereignis. 
+  Ein konsistenter Schnappschuss enthält zu jedem Empfangs- das entsprechende Sendeereignis.
 
 .. supplemental::
 
@@ -285,8 +285,8 @@ Lamport-Uhren (*logical clocks*)
 
   .. exercise:: Lamport-Uhren
 
-    Gegeben sei die nachfolgend dargestellte Situation mit drei Prozessen in einem verteilten System. Die Zeitstempel der Ereignisse werden mittels der Lamport'schen Uhren vergeben. 
-    (Die Werte :math-r:`c` ganz links, geben den Stand der jeweiligen Uhren zu Beginn an.)
+    Gegeben sei die nachfolgend dargestellte Situation mit drei Prozessen in einem verteilten System. Die Zeitstempel der Ereignisse werden mittels der Lamport'schen Uhren vergeben.
+    (Die Werte **lc** ganz links, geben den Stand der jeweiligen Uhren zu Beginn an.)
 
     (a) Versehen Sie alle Ereignisse mit den korrekten Zeitstempeln.
     (b) Geben Sie einen konsistenten Sicherungspunkt an, der Ereignis r enthält.
@@ -328,14 +328,14 @@ Verteilte Transaktionen
 
   .. code:: java
     :number-lines:
-      
-    send_money(A, B, amount) { 
+
+    send_money(A, B, amount) {
       Begin_Transaction();
       if (A.balance - amount >= 0) {
-        A.balance = A.balance - amount; 
-        B.balance = B.balance + amount; 
+        A.balance = A.balance - amount;
+        B.balance = B.balance + amount;
         Commit_Transaction();
-      } else { 
+      } else {
         Abort_Transaction();
     } }
 
@@ -349,13 +349,13 @@ Verteilte Transaktionen
   .. rubric:: Wiederholung: Transaktionen
 
   Eine Transaktion stellt die zuverlässige Bearbeitung persistenter Daten sicher – auch in Fehlersituationen. Zentrales Merkmal ist die Garantie der ACID-Eigenschaften (Atomicity, Consistency, Isolation, Durability).
-  
+
   Am Ende einer Transaktion findet entweder ein commit oder abort / rollback statt.
 
   Nach einem commit sind alle Änderungen dauerhaft.
 
   .. rubric:: Fehlertoleranz
-  
+
   Das Ziel ist es zu ermöglichen, ein zuverlässiges System aus unzuverlässigen Komponenten aufzubauen.
 
   Drei grundsätzliche Schritte:
@@ -380,7 +380,7 @@ Teilnehmer sind (1) die Partizipanten (:math:`P_i`), welche die verteilten Daten
    - K sendet eine PREPARE-Nachricht an alle :math:`P_i`.
    - Jeder :math:`P_i` prüft für sich, ob die Transaktion lokal korrekt abgeschlossen werden kann.
    - Falls ja, sendet er READY, anderenfalls ABORT an :math:`K`
-  
+
 2. **Entscheidungsphase**\ :
 
    .. class:: incremental-list
@@ -396,19 +396,19 @@ Teilnehmer sind (1) die Partizipanten (:math:`P_i`), welche die verteilten Daten
 
 
 
-CAP Theorem\ [#]_ 
+CAP Theorem\ [#]_
 --------------------------------------------------------------------------------
 
 In **verteilten** (*Datenbank-*)\ *Systemen* können nur zwei der drei folgenden Eigenschaften gleichzeitig garantiert werden:
 
-.. grid:: 
+.. grid::
 
-  .. grid:: 
+  .. grid::
 
     .. image:: images/cap.svg
       :align: center
 
-  .. grid::  incremental 
+  .. grid::  incremental
 
     .. class:: list-with-explanations
 
@@ -416,10 +416,10 @@ In **verteilten** (*Datenbank-*)\ *Systemen* können nur zwei der drei folgenden
 
       (Nach Abschluss einer Transaktion ist der Rückgabewert der nächsten Leseoperation das Ergebnis der letzten Schreiboperation oder ein Fehler.)
     - Verfügbarkeit (:eng:`Availability`)
-      
+
       (Jede Anfrage erhält eine Antwort in akzeptabler Zeit.)
     - Partitionstoleranz (:eng:`Partition Tolerance`)
-        
+
       (Das System funktioniert auch bei Netzwerkpartitionierungen; d.h. Knoten können nicht mehr miteinander kommunizieren.)
 
 
@@ -433,7 +433,7 @@ In **verteilten** (*Datenbank-*)\ *Systemen* können nur zwei der drei folgenden
 
   :DNS: Verfügbarkeit und Partitionstoleranz
   :Banking: Konsistenz und Partitionstoleranz
-  
+
 
 
 
@@ -458,19 +458,16 @@ In **verteilten** (*Datenbank-*)\ *Systemen* können nur zwei der drei folgenden
     Szenarien: Es können Nachrichten verloren gehen, es können Knoten ausfallen und es kann zu einer Netzpartitionierung kommen.
 
     Verlorengegangene Nachrichten können mittels Timeouts erkannt und nochmals gesendet werden.
-    
+
     Eine andauernde Netzpartitionierung während der ersten Phase, die dazu führt, dass ein oder mehrere Teilnehmer des Protokollablaufs nicht mehr mit dem Koordinator kommunizieren können, wird dazu führen, dass der Koordinator ABORT entscheidet.
 
     Fällt ein Teilnehmer in der ersten Phase aus, so antwortet er nicht. Der Koordinator wertet dies als ABORT und entscheidet ABORT.
 
     Fällt ein Teilnehmer in der zweiten Phase aus, so bekommt er die Entscheidung des Koordinators nicht mit. Es gilt jedoch:
-    
+
     - Der Koordinator hat die Entscheidung im persistenten Log-File (stable storage) festgehalten.
     - Der Teilnehmer hat in seinem persistenten Log-File notiert, dass die Transaktion begonnen, aber noch nicht abgeschlossen wurde. Nach dem Booten erfragt der Teilnehmer beim Koordinator den Ausgang der Transaktion. Wenn alle Teilnehmer den Ausgang der Transaktion kennen, kann der Koordinator den Log-Eintrag löschen.
-     
+
     Fällt der Koordinator aus, nachdem er die Entscheidung getroffen und diese im Log-File notiert hat, oder kommt es zu diesem Zeitpunkt zu einer Netzpartitionierung, so kann das Protokoll erst nach dem Reboot des Koordinators fortgesetzt werden. Das Protokoll ist solange blockiert.
     - Kennt einer der Teilnehmer die Entscheidung des Koordinators bereits, kann er diese auf Nachfrage an die anderen Teilnehmer weiterleiten.
     - Hat ein Teilnehmer mit ABORT geantwortet, dann kann er die Transaktion auch ohne den Koordinator zurücksetzen und dies auf Nachfrage auch den anderen Teilnehmern mitteilen.
-
-
-
