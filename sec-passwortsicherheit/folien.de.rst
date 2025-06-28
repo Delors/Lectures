@@ -16,8 +16,7 @@ Passwortsicherheit
 
 :Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
 :Kontakt: michael.eichberg@dhbw.de
-:Version: 2.1.2
-
+:Version: 2.1.3
 
 .. supplemental::
 
@@ -150,6 +149,7 @@ Ist Passwortwiederherstellung nicht „trivial“?
                 .. card::
 
                     .. csv-table::
+                        :widths: 10, 30,30, 50 , 50, 50
                         :class: font-size-75 highlight-row-on-hover  compact
                         :header: # of Chars, Numbers Only, Lowercase Letters, Lower- & Uppercase Letters, "Numbers, Upper- & Lowercase Letters", "Numbers, Upper- & Lowercase Letters, Symbols"
 
@@ -166,6 +166,7 @@ Ist Passwortwiederherstellung nicht „trivial“?
                 .. card::
 
                     .. csv-table::
+                        :widths: 10, 30,30, 50 , 50, 50
                         :class: font-size-75 highlight-row-on-hover compact
                         :header: # of Chars, Numbers Only, Lowercase Letters, Lower- & Uppercase Letters, "Numbers, Upper- & Lowercase Letters", "Numbers, Upper- & Lowercase Letters, Symbols"
 
@@ -202,7 +203,7 @@ Passwort Leaks
 
     **Check Your Accounts: 10 Billion Passwords Exposed in Largest Leak Ever**
 
-    *The 'RockYou2024' database includes almost 10 billion passwords pulled from 'a mix of old and new data breaches.' Here's how to check if yours are at risk.*
+    The "RockYou2024" database includes almost 10 billion passwords pulled from :blue:`a mix of old and new data breaches`. Here's how to check if yours are at risk.
 
     [...]Researchers at Cybernews have uncovered a massive trove of nearly 10 billion passwords on a popular hacking forum in what they're calling "largest password compilation" ever.
 
@@ -1010,7 +1011,7 @@ Reale Passwortrichtlinie eines speziellen Messengers:
 Aufbau von Passwörtern - Zusammenfassung
 ------------------------------------------
 
-- Passwörter, die häufig eingegeben werden müssen, basieren in den allermeisten Fällen auf „echten“ Wörtern.
+- Passwörter, die häufig eingegeben werden müssen, *basieren* in vielen Fällen auf „echten“ Wörtern.
 - Echte Wörter werden oft nicht unverändert verwendet, sondern nach einfachen Regeln umgewandelt, z. B. durch Anhängen einer Zahl oder eines Sonderzeichens, Veränderung der Groß-/Kleinschreibung, etc.
 
 .. question::
