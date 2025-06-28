@@ -21,14 +21,19 @@ Erzeugung von Zufallsbits und Stromchiffren
 
 .. supplemental::
 
-  :Folien:
-      [HTML] |html-source|
+    :Folien:
+        [HTML] |html-source|
 
-      [PDF] |pdf-source|
-  :Fehler melden:
-      https://github.com/Delors/delors.github.io/issues
+        [PDF] |pdf-source|
+    :Fehler melden:
+        https://github.com/Delors/delors.github.io/issues
 
+    :Kontrollaufgaben:
 
+        .. source:: kontrollaufgaben.de.rst
+            :path: relative
+            :prefix: https://delors.github.io/
+            :suffix: .html
 
 .. class:: new-section
 
