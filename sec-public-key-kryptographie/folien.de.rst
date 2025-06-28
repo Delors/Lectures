@@ -75,7 +75,7 @@ Prinzipien von Public-Key-Kryptosystemen
 
   .. admonition:: Schlüsselverteilung
 
-        Wie kann man generell sicher kommunizieren, ohne einem KDC seinen Schlüssel anvertrauen zu müssen?
+        Wie kann man generell sicher kommunizieren, ohne einem "Key Distribution Center" (KDC) seinen Schlüssel anvertrauen zu müssen?
 
   .. admonition:: Digitale Signaturen
 
@@ -91,6 +91,8 @@ Prinzipien von Public-Key-Kryptosystemen
 
 Prinzipien von Public-Key-Kryptosystemen
 -----------------------------------------
+
+.. container:: exclamation-mark
 
     **Whitfield Diffie** und **Martin Hellman** von der Stanford University erzielten 1976 einen Durchbruch, indem sie eine Methode entwickelten, die beide Probleme löste und sich radikal von allen bisherigen Ansätzen der Kryptografie unterschied.
 
@@ -532,7 +534,7 @@ Die Ganzzahl :math:`b` wird als Binärzahl ``b[k]b[k-1]...b[0]`` ausgedrückt:
 
     ``c`` stellt lediglich die Komponente dar.
 
-.. code:: pseudocode
+.. code:: pascal
     :number-lines:
 
     c := 0; f := 1
