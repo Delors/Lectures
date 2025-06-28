@@ -19,7 +19,7 @@ Middleware
 
   :Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
   :Kontakt: michael.eichberg@dhbw.de, Raum 149B
-  :Version: 1.0.1
+  :Version: 1.0.2
 
 .. supplemental::
 
@@ -1169,7 +1169,7 @@ MOM - Queue Managers
 
 
 
-.. class:: integrated-exercise
+.. class:: exercises
 
 Übung - Java
 ----------------------------------------------------------
@@ -1335,7 +1335,7 @@ MOM - Queue Managers
 
 
 
-.. class:: integrated-exercise
+.. class:: exercises
 
 Übung - Python
 -------------------------------------------------------
