@@ -35,10 +35,13 @@ Erzeugung von Zufallsbits und Stromchiffren
             :prefix: https://delors.github.io/
             :suffix: .html
 
+
+
 .. class:: new-section
 
 Erzeugung und Zufälligkeit von Zufallszahlen
 ----------------------------------------------
+
 
 
 Zufallszahlen
