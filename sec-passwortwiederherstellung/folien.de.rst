@@ -1,7 +1,7 @@
 .. meta::
-    :version: genesis
+    :version: renaissance
     :author: Michael Eichberg
-    :keywords: "IT Sicherheit", Passwortwiederherstellung
+    :keywords: IT Sicherheit, Passwortwiederherstellung
     :description lang=de: Wiederherstellung von Passwörtern
     :id: lecture-security-passwort_wiederherstellung
     :first-slide: last-viewed
@@ -11,7 +11,7 @@
 
 
 
-Passwortwiederherstellung 
+Passwortwiederherstellung
 =====================================================
 
 :Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
@@ -21,7 +21,7 @@ Passwortwiederherstellung
 
 .. supplemental::
 
-  :Folien: 
+  :Folien:
       [HTML] |html-source|
 
       [PDF] |pdf-source|
@@ -34,7 +34,7 @@ Passwortwiederherstellung
 Was ist Passwortwiederherstellung?
 ----------------------------------
 
-.. admonition:: Definition 
+.. definition::
 
     Passwortwiederherstellung ist der Prozess, der dazu dient, ein nicht (mehr) vorhandenes Passwort wiederzuerlangen.
 
@@ -52,17 +52,17 @@ Was ist Passwortwiederherstellung?
 Passwortwiederherstellung -  Haftungsausschluss
 ------------------------------------------------
 
-.. container:: stack smaller
+.. deck::
 
-    .. container:: layer
+    .. card::
 
         .. epigraph::
-        
+
             Wer unbefugt sich oder einem anderen Zugang zu Daten, die nicht für ihn bestimmt und die gegen unberechtigten Zugang besonders gesichert sind, unter Überwindung der Zugangssicherung verschafft, wird mit Freiheitsstrafe bis zu drei Jahren oder mit Geldstrafe bestraft.
 
             -- § 202 a Abs. 1 StGB
-    
-    .. container:: layer incremental
+
+    .. card::
 
         **Gericht sieht Nutzung von Klartext-Passwörtern als Hacken an**
 
@@ -74,29 +74,25 @@ Passwortwiederherstellung -  Haftungsausschluss
 
 
 
-
-
 Wiederherstellung von Passwörtern
 --------------------------------------------------------------------
 
 Welches Vorgehen müssen wir wählen, um Passworte der folgenden Art  wiederherzustellen?
 
-.. class:: far-smaller
-
 1. Donaudampfschifffahrt
 2. Passwort
 3. ME01703138541
 4. 2wsx3edc4rfv
-5. Haus Maus 
+5. Haus Maus
 6. iluvu
 7. Emily18
 8. MuenchenHamburg2023!!!!
-9. password123 
+9. password123
 
 .. important::
-    :class: smaller 
 
     Es gibt „einfach sichere Passworte“, die in vernünftiger Zeit mit angemessenen Ressourcen nicht wiederhergestellt werden können.
+
 
 
 .. class:: new-section transition-fade
@@ -109,11 +105,12 @@ Passwortwiederherstellung 101
 Passwortwiederherstellung
 -------------------------
 
-.. class:: incremental dhbw
+.. class:: incremental-list dhbw
 
 1. Wissen wo/in welcher Form der Passworthash zu finden ist.
-2. Extraktion des Hashes 
-3. Wiederherstellung des Passwortes durch das systematische Durchprobieren aller Kandidaten. 
+2. Extraktion des Hashes
+3. Wiederherstellung des Passwortes durch das systematische Durchprobieren aller Kandidaten.
+
 
 
 Beispiel - Wiederherstellung eines Linux Login Passwortes
@@ -122,7 +119,7 @@ Beispiel - Wiederherstellung eines Linux Login Passwortes
 .. code:: bash
     :class: incremental
 
-    ~% sudo cat /etc/shadow      
+    ~% sudo cat /etc/shadow
     [...]
     john:$6$zElzjLsMqi36JXWG$FX2Br1/[...]. ↩︎
     RxAHnNCBsqiouWUz751crHodXxs0iqZfBt9j40l3G0:19425:0:99999:7:::
@@ -130,13 +127,13 @@ Beispiel - Wiederherstellung eines Linux Login Passwortes
 
 .. code:: bash
     :class: incremental line-above
-    
+
     % echo -n '$6$zElzjLsMqi36JXWG$FX2Br1/[...]. ↩︎
-    RxAHnNCBsqiouWUz751crHodXxs0iqZfBt9j40l3G0' > hash.txt 
+    RxAHnNCBsqiouWUz751crHodXxs0iqZfBt9j40l3G0' > hash.txt
 
 .. code:: bash
     :class: incremental line-above
-    
+
     % hashcat -m 1800 hash.txt -a 3 '?d?d?d?d?d?d'
 
 .. supplemental::
@@ -154,12 +151,12 @@ Beispiel - Wiederherstellung eines Linux Login Passwortes
 
 
 
-Systematisches Testen aller Kandidaten 
+Systematisches Testen aller Kandidaten
 ---------------------------------------------------------------
 
 Konzeptionell führt die Software Hashcat die folgenden Schritte durch:
 
-.. container:: monospaced small
+.. container:: monospaced
 
   <extracted_hash> =? SHA512crypt("zElzjLsMqi36JXWG","000000") ✘
 
@@ -202,14 +199,15 @@ Konzeptionell führt die Software Hashcat die folgenden Schritte durch:
     <extracted_hash> == SHA512crypt("zElzjLsMqi36JXWG","123456") ✔︎
 
 
-.. supplemental:: 
+.. supplemental::
 
     Der folgende Code könnte als Grundlage genutzt werden, um das Passwort wiederherzustellen.
 
     (Linux nutzt standardmäßig 5000 Runden.)
 
     .. code:: python
-        :class: slightly-smaller
+        :class: copy-to-clipboard
+        :number-lines:
 
         from passlib.hash import sha512_crypt
 
@@ -226,12 +224,10 @@ Werkzeuge und Methoden zur Wiederherstellung von Passwörtern
 
 
 
-Passwortwiederherstellung 
+Passwortwiederherstellung
 --------------------------------
 
 .. rubric:: initiale Quellen für Passwortkandidaten
-
-.. class:: smaller
 
 - Wörterbücher
 - Verzeichnisse (z. B. Postleitzahlen, Städte, Straßennamen)
@@ -239,16 +235,12 @@ Passwortwiederherstellung
 
 .. rubric:: Werkzeuge zum Generieren von weiteren Passwortkandidaten
 
-.. class:: smaller
-
 - Prince
 - OMEN (Markov-Modelle
-- Hashcat 
+- Hashcat
 - PCFG
 
 .. rubric:: Werkzeuge, um Passworthashes zu extrahieren bwz. anzugreifen
-
-.. class:: smaller
 
 - John (the Ripper)
 - Hashcat
@@ -285,11 +277,10 @@ Quellen für Werkzeuge & Anleitungen
 - KI Assistent (z. B.) ChatGPT
 
 .. supplemental::
-    :class: far-smaller
 
     .. rubric:: Konversation mit ChatGPT (23. August 2024)
 
-    .. container:: far-far-smaller
+    .. admonition:: Disclaimer
 
         Im Folgenden wurde Anpassungen der Formatierung vorgenommen, zwecks Integration in den Foliensatz. Die Inhalte sind jedoch vollständig von ChatGPT erstellt.
 
@@ -334,7 +325,7 @@ Quellen für Werkzeuge & Anleitungen
         In diesem Fall ist hashed_password der Passwort-Hash des Benutzers.
 
     4. Extraktion des Passwort-Hashes:
-   
+
         Wenn Sie nur den Hash extrahieren möchten, können Sie den Befehl grep zusammen mit cut verwenden:
 
         .. code:: bash
@@ -358,24 +349,25 @@ Quellen für Werkzeuge & Anleitungen
 Relevante Linux Kommandozeilenwerkzeuge
 ----------------------------------------
 
-.. class:: incremental
+.. class:: incremental-list
 
 - ``file`` dient der Ermittlung des Typs einer Datei.
-- ``binwalk`` durchsucht Binärdateien in Hinblick auf das Vorkommen bekannter Muster (insbsondere Dateiheader, aber auch Kryptokonstanten etc.) 
-  
+- ``binwalk`` durchsucht Binärdateien in Hinblick auf das Vorkommen bekannter Muster (insbsondere Dateiheader, aber auch Kryptokonstanten etc.)
+
   ``-E`` kann zur Visualisierung der Entropie verwendet werden.
 
 - ``dd`` kopiert Daten blockweise von einem Startpunkt in einer Datei in eine andere Datei. Wird ggf. zum Extrahieren von Hashes benötigt.
 - ``xxd`` und ``hexdump`` erstellen beide einen Hexdump einer Datei.
 
 
-Verschlüsselte PDF Dateien 
+
+Verschlüsselte PDF Dateien
 ----------------------------
 
 Extraktion erfolgt (zum Beispiel) mit den John Tools:
 
 .. code:: bash
-    
+
     $ pdf2john Document.pdf > Document.pdf.john
     $ cat Document.pdf.john
     Document.pdf:$pdf$4*4*128*-3392*1*16*861da8b9c1672ddc3953dee025
@@ -400,11 +392,11 @@ Extraktion des Basishashes erfolgt auch hier (zum Beispiel) mit den John Tools. 
 
 .. code:: bash
 
-    $ libreoffice2john Document.odt 
-      | sed -E -e 's/[^:]+://' -e 's/:::::[^:]+$//' 
+    $ libreoffice2john Document.odt
+      | sed -E -e 's/[^:]+://' -e 's/:::::[^:]+$//'
       > Document.odt.hashcat
 
-.. container:: incremental 
+.. container:: incremental
 
     Um zu verstehen, wie der Hash genau auszusehen hat, ist es im Allgemeinen hilfreich sich die erwartete Struktur für einen Hash anzusehen: `Hashcat - Example Hashes <https://hashcat.net/wiki/doku.php?id=example_hashes>`__
 
@@ -419,10 +411,10 @@ In diesem Fall hat nur John (the Ripper) Unterstützung für den konkreten Hash.
     $ dmg2john Container.dmg > Container.dmg.john   # Extraktion
 
 .. code:: bash
-    :class: incremental 
-        
-    $ john Container.dmg.john \                     # Angriff 
-      --wordlist=/usr/share/wordlists/rockyou.txt   
+    :class: incremental
+
+    $ john Container.dmg.john \                     # Angriff
+      --wordlist=/usr/share/wordlists/rockyou.txt
 
 
 
@@ -431,12 +423,10 @@ Verschlüsselter USB Stick (APFS Volume)
 
 Es liegt ein normaler USB Stick vor auf dem eine Partition vom Typ ``Apple APFS`` ist.
 
-.. class:: smaller
-
 ::
 
     Disk /dev/sda: 14.45 GiB, 15518924800 bytes, 30310400 sectors
-    Disk model: Flash Disk      
+    Disk model: Flash Disk
     Units: sectors of 1 * 512 = 512 bytes
     Sector size (logical/physical): 512 bytes / 512 bytes
     I/O size (minimum/optimal): 512 bytes / 512 bytes
@@ -446,6 +436,7 @@ Es liegt ein normaler USB Stick vor auf dem eine Partition vom Typ ``Apple APFS`
     Device      Start      End  Sectors  Size Type
     /dev/sda1      40   409639   409600  200M EFI System
     /dev/sda2  409640 30310359 29900720 14.3G Apple APFS
+
 
 
 Verschlüsselter USB Stick (APFS Volume)
@@ -458,11 +449,10 @@ Verschlüsselter USB Stick (APFS Volume)
 
       $ sudo ./apfs-dump-quick \
         /dev/sda2 \   # /dev/sda2 ist die Ziel APFS Partition
-        /tmp/log.txt 
+        /tmp/log.txt
 
+3. Hash angreifen
 
-3. Hash angreifen 
-   
    .. code:: bash
       :class: incremental
 
@@ -484,15 +474,15 @@ Hashcat ist – Stand 2024 – das Tool zum Wiederherstellen von Passwörtern.
 
 Liest ein(e Liste von) Hash(es) ein und prüft, ob einer der angegebenen Passwortkandidaten nach dem Hashen mit einem gegeben Hash übereinstimmt.
 
-.. class:: incremental
+.. class:: incremental-list
 
 - unterstützt über 350 Hash-Typen (mit einigen automatischen Erkennungen)
-- unterstützt mehrere Angriffsmodi, z. B., 
+- unterstützt mehrere Angriffsmodi, z. B.,
 	- Wörterbuch (ggf. mit Regeln)
 	- Masken
 	- Kombinationen aus Wörterbüchern und Masken
 	- <Lesen von Passwortkandidaten aus stdin>
-- Open-Source 
+- Open-Source
 - Kann zum Generieren von neuen Kandidaten verwendet werden.
 - ist CUDA/OpenCL basiert und **auf entsprechenden Grafikkarten extrem schnell**.
 
@@ -500,11 +490,9 @@ Liest ein(e Liste von) Hash(es) ein und prüft, ob einer der angegebenen Passwor
 Hashcat - relevante Parameter
 ------------------------------
 
-.. container:: two-columns smaller
+.. class:: columns
 
-    .. container:: column padding-right-1em
-
-        Angriffsmodi:
+- Angriffsmodi:
 
         .. code:: bash
 
@@ -517,25 +505,22 @@ Hashcat - relevante Parameter
 
           -a3 Brute-force Angriff
 
-          -a6 Hybridangriff 
+          -a6 Hybridangriff
               Wörterbuch und Maske
 
-
-    .. container:: column margin-left-1em
-
-        Brute-force - Eingebaute Zeichensätze:
+- Brute-force - Eingebaute Zeichensätze:
 
         .. class:: monospaced
 
           ?l = abcdefghijklmnopqrstuvxyz
 
           ?u = ABCDEFGHIJKLMNOPQRSTUVWXYZ
-          
+
           ?d = 0123456789
-          
+
           ?s = !"$%&'()*+,-./:;<=>?@[]\^_{|}~
-          
-          ?a = ?l?u?d?s        
+
+          ?a = ?l?u?d?s
 
         Definition von bis zu 4 eigenen Zeichensätzen (?1,...,?4) ist möglich.
 
@@ -548,8 +533,8 @@ Hashcat - relevante Parameter
 
 .. csv-table::
     :header: "Name", "Function", Description, Input, Output
-    :class: small incremental
-    
+    :class:  incremental-table-rows
+
     Nothing, :, Do nothing (passthrough), ``p@ssW0rd``, ``p@ssW0rd``
     Lowercase, l, Lowercase all letters, ``p@ssW0rd``, ``p@ssw0rd``
     Uppercase, u, Uppercase all letters, ``p@ssW0rd``, ``P@SSW0RD``
@@ -562,7 +547,6 @@ Hashcat - relevante Parameter
     ..., ..., ..., ..., ...
 
 
-.. class:: small
 
 Szenario 1: eine Pin Angreifen
 -------------------------------
@@ -573,7 +557,7 @@ Gegeben sein ein mit SHA256 gehashter 5-stelliger Pin in der Datei: ``5_digits_p
 
 Hashwert:
 
-.. container:: monospaced 
+.. container:: monospaced
 
     ``79737ac46dad121166483e084a0727e5d6769fb47fa9b0b627eba4107e696078``
 
@@ -581,17 +565,16 @@ Hashwert:
 
 .. code:: bash
     :class: incremental
-	
+
     hashcat -m 1400 5_digits_pin.sha256 -a3 "?d?d?d?d?d"
 
 .. container:: incremental
 
     :-m 1400: Modus für einen einfachen SHA256 Hash.
-    :-a3: bezeichnet einen Maskenangriffe 
+    :-a3: bezeichnet einen Maskenangriffe
     :"?d?d?d?d?d": Beschreibt die Maske. Hier 5 Ziffern (:eng:`digits`).
 
 
-.. class:: small
 
 Szenario 2: Ein (hoffentlich) einfaches Loginpasswort angreifen
 ----------------------------------------------------------------
@@ -603,18 +586,17 @@ Ein mit SHA512crypt gehashtes Passwort in der Datei: ``password.sha512crypt``.
 **Angriff mit Wörterbuch**
 
 .. code:: bash
-    	
+
     hashcat password.sha512crypt -a0 /usr/share/wordlists/rockyou.txt
 
 .. container:: incremental
 
-    :-a0: bezeichnet einen Wörterbuchangriff. 
+    :-a0: bezeichnet einen Wörterbuchangriff.
     :/usr/share/wordlists/rockyou.txt: Das zum Angriff verwendete Wörterbuch; der Pfad ist der Standardpfad zum Rockyou Wörterbuch in Kali Linux.
 
 
-.. class:: small
 
-Szenario 3: ein komplexeres Passwort angreifen 
+Szenario 3: ein komplexeres Passwort angreifen
 ---------------------------------------------------
 
 **Ausgangssituation**
@@ -625,23 +607,23 @@ Ein mit MD5 gehashtes Passwort in der Datei: ``password.md5``. Ein erster Angrif
 
 .. code:: bash
     :class: incremental
-	
+
     hashcat -m 0 password.md5 \
 		-a0 /usr/share/wordlists/rockyou.txt \
 		-r /usr/share/hashcat/rules/best64.rule
 
 .. container:: incremental
 
-    :-a0: bezeichnet einen Wörterbuchangriff. 
+    :-a0: bezeichnet einen Wörterbuchangriff.
     :/usr/share/wordlists/rockyou.txt: Das zum Angriff verwendete Wörterbuch.
-    :-r /usr/share/hashcat/rules/best64.rule: 
-    
-        Der zum Beugen der Passwortkandidaten verwendete Regelsatz. 
-    
-        Der Regelsatz best64 hat sich in einem Wettbewerb als „bester“ Regelsatz erwiesen. 
+    :-r /usr/share/hashcat/rules/best64.rule:
+
+        Der zum Beugen der Passwortkandidaten verwendete Regelsatz.
+
+        Der Regelsatz best64 hat sich in einem Wettbewerb als „bester“ Regelsatz erwiesen.
 
 
-.. class:: small
+
 
 Szenario 4: ein Passwort mit Salt angreifen
 ----------------------------------------------
@@ -668,7 +650,6 @@ Ein MD5 Hash ist gegeben: ``c84b5c34c9ff7d3431018d795b5975e5``. Weiterhin ist be
 
       hashcat -m10 salted.md5.hash  -a3 '?a?a?a?a'
 
-
 .. supplemental::
 
     **Lösung**
@@ -676,27 +657,25 @@ Ein MD5 Hash ist gegeben: ``c84b5c34c9ff7d3431018d795b5975e5``. Weiterhin ist be
     Das Passwort ist ``Test``. In diesem Fall wäre es auch möglich gewesen direkt zu Prüfen ob das Passwort ``Test`` ist, indem man Hashcat im Modus -m0 (für reinen MD5) startet und als Kandidaten ``TestSALT`` vorgibt.
 
 
-.. class:: small
 
 Szenario 5: Kombination von Wörterbuch mit eigenem Regelsatz
 -------------------------------------------------------------
 
 **Ausgangssituation**
 
-Wir greifen einen sogennanten langsamen Hash an und können deswegen nur wenige Passworte gezielt testen. 
-    
+Wir greifen einen sogennanten langsamen Hash an und können deswegen nur wenige Passworte gezielt testen.
+
 Aufgrund von Social Engineering/Ermittlungen wissen wir, dass die Person häufig kurze Worte (max 4 Buchstaben nimmt) diese aber oft verdoppelt und häufig die Worte mit einem Großbuchstaben anfangen lässt.
 
 **Angriff**
 
-.. class:: incremental
+.. class:: incremental-list
 
 1. Erstellen eines fokussierten Wörterbuchs: ``candidates.txt``.
 2. Erstellen des Regelsatzes: ``case.rule``.
 3. Angriff mit den erstellten Wörterbuch und dem Regelsatz.
 
 
-.. class:: small
 
 Szenario 5: Kombination von Wörterbuch mit eigenem Regelsatz
 -------------------------------------------------------------
@@ -708,7 +687,7 @@ Szenario 5: Kombination von Wörterbuch mit eigenem Regelsatz
    Um sicherzustellen, dass wir keine Duplikate testen, wandeln wir alle Worte in Kleinschreibung um und filtern entsprechende Duplikate. Die Beachtung aller Varianten in Hinblick auf die Groß- und Kleinschreibung wird durch die Regeln sichergestellt.
 
    .. code:: bash
- 
+
       $ grep -Po "^[a-zA-Z]{3,4}(?=[^a-zA-Z])" \
              /usr/share/wordlists/rockyou.txt \
         | tr [:upper:] [:lower:] \
@@ -722,7 +701,6 @@ Szenario 5: Kombination von Wörterbuch mit eigenem Regelsatz
     Die gezeigte Operation löst die Ordnung in der Datei auf und sortiert diese alphabetisch. Dies ist aber häufig nicht gewünscht – insbesondere wenn der Leak nach Verwendungshäufigkeit sortiert ist!
 
 
-.. class:: small
 
 Szenario 5: Kombination von Wörterbuch mit eigenem Regelsatz
 -------------------------------------------------------------
@@ -730,7 +708,7 @@ Szenario 5: Kombination von Wörterbuch mit eigenem Regelsatz
 **Angriff**
 
 1. Erstellen des Regelsatzes: ``case.rule``
-   
+
    Um sicherzugehen, dass wir alle Varianten abdecken, brauchen wir drei Regeln.
 
    .. csv-table::
@@ -749,7 +727,7 @@ Szenario 5: Kombination von Wörterbuch mit eigenem Regelsatz
 
       hashcat -m 1700 hash.sha125 candidates.txt -r case.rule
 
-.. supplemental:: 
+.. supplemental::
 
     **Tips**
 
@@ -759,14 +737,13 @@ Szenario 5: Kombination von Wörterbuch mit eigenem Regelsatz
 
     .. code:: bash
         :class: black
-        
+
         $ grep -Po "^[a-zA-Z]{3,4}(?=[^a-zA-Z])" \
              /usr/share/wordlists/rockyou.txt
 
     Das Passwort ``TreeTree`` würde sich damit erfolgreich wiederherstellen lassen.
 
 
-.. class:: small 
 
 Szenario 6: Kartesiche Produkt von zwei Wörterbüchern
 ------------------------------------------------------
@@ -778,7 +755,7 @@ Aufgrund von Social Engineering/Ermittlungen wissen wir, dass die Person sehr ge
 **Angriff**
 
 .. class:: incremental
-   
+
 1. Erstellen eines fokussierten Wörterbuchs durch *Googeln* von großen Städten.
 2. Angriff durch Kombination des Wörterbuchs mit sich selbst.
 
@@ -787,7 +764,6 @@ Aufgrund von Social Engineering/Ermittlungen wissen wir, dass die Person sehr ge
       $ hashcat -m 1400 hash.sha256 -a 1 big_cities2.txt big_cities2.txt
 
 
-.. class:: small
 
 Szenario 7: Wörterbuch mit Maske
 ----------------------------------
@@ -804,7 +780,6 @@ Es ist bekannt, dass die Passwörter der Gruppierung häufig mit vier Zahlen und
    2. Angriff mit passendem Maskenangriff
 
 
-.. class:: small
 
 Szenario 7: Wörterbuch mit Maske
 ----------------------------------
@@ -832,7 +807,7 @@ Szenario 7: Wörterbuch mit Maske
 .. supplemental::
 
     **Beispiel**
-    
+
     In diesem Falle verwenden wir einen Hybridangriff, der eine Wordliste mit einer Maske kombiniert. Hier definieren wir unseren eigenen „Zeichensatz“ mit dem Parameter ``-1 '$.!'`` und referenzieren diesen in unserer Maske später mit ``?1``.
 
     Ein Beispielpasswort, dass wir mit dem Ansatz ermitteln könnten, wäre:
@@ -845,14 +820,13 @@ Szenario 7: Wörterbuch mit Maske
          8466c4a924f608d54fd279d24b3dc937", ILuvU2023!!
 
 
-.. class:: small
 
 Szenario 8: Passwörter mit Muster
 --------------------------------------------------------------------------------------------------
 
 **Ausgangssituation**
 
-Wir möchten ein Wörterbuch erstellen mit „Wörtern“, die Buchstabenvervielfältigungen enthalten, aber nicht länger als 16 Zeichen sind. Zum Beispiel: ``aaaaBBBBcccc`` oder auch ``AFFFFFE``. 
+Wir möchten ein Wörterbuch erstellen mit „Wörtern“, die Buchstabenvervielfältigungen enthalten, aber nicht länger als 16 Zeichen sind. Zum Beispiel: ``aaaaBBBBcccc`` oder auch ``AFFFFFE``.
 Weiterhin soll die Liste nach der Länge der gefundenen Einträge aufsteigend sortiert sein und Zeichen, die keine Buchstaben sind, einfach gelöscht werden.
 
 **Lösung**
@@ -863,38 +837,37 @@ Weiterhin soll die Liste nach der Länge der gefundenen Einträge aufsteigend so
 
    .. code:: bash
 
-      $ grep -E "([a-zA-Z])\1{3,}" /usr/share/wordlists/rockyou.txt 
-        | grep -E "^.{4,16}$" 
-        | sed -E 's/[^a-zAZ]//g' 
-        | sort -u 
-        | awk '{print length " " $1}' 
-        | sort -n 
+      $ grep -E "([a-zA-Z])\1{3,}" /usr/share/wordlists/rockyou.txt
+        | grep -E "^.{4,16}$"
+        | sed -E 's/[^a-zAZ]//g'
+        | sort -u
+        | awk '{print length " " $1}'
+        | sort -n
         | sed -E 's/^[0-9]+ //'
 
 
 .. supplemental::
-    
+
     *Alternative Aufgabenstellung*
 
     Sortierung der finalen Liste nach nach der Häufigkeit der Muster, angefangen mit dem häufigsten Mustern.
 
 
-.. class:: small
 
 Szenario 9: Passwörter bestehend aus Fragmenten
 -----------------------------------------------------------
 
 **Ausgangssituation**
 
-- Einer gegebenen Liste können wir nur entnehmen, dass alle Passwörter zusammengesetzt sind aus den Fragmenten: ``ab``, ``mem``, ``li`` und ``xy``. 
-- Darüber hinaus ist immer eine Zahl vorangestellt und am Ende kommt ein Punkt (``.``) oder ein Ausrufezeichen (``!``). 
-- Die Länge scheint zwischen 6 und 16 Zeichen zu sein und Fragmente können sich wiederholen. 
+- Einer gegebenen Liste können wir nur entnehmen, dass alle Passwörter zusammengesetzt sind aus den Fragmenten: ``ab``, ``mem``, ``li`` und ``xy``.
+- Darüber hinaus ist immer eine Zahl vorangestellt und am Ende kommt ein Punkt (``.``) oder ein Ausrufezeichen (``!``).
+- Die Länge scheint zwischen 6 und 16 Zeichen zu sein und Fragmente können sich wiederholen.
 
 Beispiel: ``1ablixyxy.``
 
 **Vorgehen**
 
-.. class:: incremental
+.. class:: incremental-list
 
 1. Erstellen eines Basiswörterbuchs (``base.txt``) mit den Fragmenten als Einträge.
 2. Erstellen von Regeln für das Voranstellen und Anhängen der entsprechenden (Sonder)zeichen.
@@ -902,7 +875,6 @@ Beispiel: ``1ablixyxy.``
 4. Mit dem finalen Wörterbuch und entsprechenden Regeln angreifen.
 
 
-.. class:: small
 
 Szenario 9: Generierung von Wörterbüchern aus Fragmenten
 -----------------------------------------------------------
@@ -948,8 +920,8 @@ Zu Generierung aller Kombinationen aus den Fragmenten verwenden wir den Princepr
         "8b11f8e8d487266a791d6d723a3e380c
         38f49679735a7f3395ace4302e83dd0e",  8abxylixy.
 
-    In diesem Falle wäre es auch möglich gewesen nur einen Regelsatz zu erstellen mit den passenden Regeln (zum Beispiel: ``^1$.``, ``^1$!``, ...) der Aufwand wäre hier jedoch höher gewesen und hätte keinen Nutzen gehabt. 
-    
+    In diesem Falle wäre es auch möglich gewesen nur einen Regelsatz zu erstellen mit den passenden Regeln (zum Beispiel: ``^1$.``, ``^1$!``, ...) der Aufwand wäre hier jedoch höher gewesen und hätte keinen Nutzen gehabt.
+
     Im Allgemeinen ist jedoch bei der Verwendung des Kreuzproduktes von Regeln immer darauf zu achten, dass keine (oder zumindest keine relevante Anzahl von) Regeln dupliziert werden. Ein Beispiel wäre das Kreuprodukt aus einem Regelnsatz für das optionale Anhängen einer Ziffer mit sich selbst. Sei der Regelsatz:
 
     .. code::
@@ -974,29 +946,28 @@ Zu Generierung aller Kombinationen aus den Fragmenten verwenden wir den Princepr
         $1:
         $2:
 
-    Wie zu erkennen ist, führen zum Beispiel die Regeln ``$1:`` und ``:$1`` jeweils zum gleichen Ergebnis und wären deswegen nicht effektiv.   
+    Wie zu erkennen ist, führen zum Beispiel die Regeln ``$1:`` und ``:$1`` jeweils zum gleichen Ergebnis und wären deswegen nicht effektiv.
 
 
 
-.. class:: small
 
 Szenario 10: Hashcat als Werkzeug zur Wörterbuchgenerierung
 ------------------------------------------------------------
 
 **Ausgangssituation**
-Gegeben sein 3 Wörterbücher [#]_: ``base1.txt``, ``base2.txt`` und ``base3.txt``. Gesucht ist ein Wörterbuch, dass alle Kombinationen aus den drei Wörterbüchern enthält und bei dem alle Teilworte immer mit Sonderzeichen (-) voneinander getrennt sind. 
+Gegeben sein 3 Wörterbücher [#]_: ``base1.txt``, ``base2.txt`` und ``base3.txt``. Gesucht ist ein Wörterbuch, dass alle Kombinationen aus den drei Wörterbüchern enthält und bei dem alle Teilworte immer mit Sonderzeichen (-) voneinander getrennt sind.
 
 
-.. container:: incremental 
+.. container:: incremental
 
     **Beispiel**
     Sei ``base1.txt``: *Kuh*, *Schwein*; ``base2.txt``: *Haus*, *Villa* und ``base3.txt``: *Baum*, *Busch*. Dann wäre das gesuchte Wörterbuch: *Kuh-Haus-Baum*, *Kuh-Haus-Busch*, ..., *Schwein-Villa-Busch*.
 
-.. container:: incremental 
+.. container:: incremental
 
     **Vorgehen**
 
-    .. container:: incremental 
+    .. container:: incremental
 
         1. Erzeugen des Kreuzprodukts der ersten beiden Wörterbücher.
 
@@ -1004,17 +975,17 @@ Gegeben sein 3 Wörterbücher [#]_: ``base1.txt``, ``base2.txt`` und ``base3.txt
 
             $ hashcat --stdout base1.txt base2.txt -j '$-' > base1-base2.txt
 
-    .. container:: incremental 
+    .. container:: incremental
 
 
        1. Erzeugen des finalen Wörterbuchs durch Bildung des Kreugprodukts der Ergebnisse aus Schritt 1 mit dem dritten Wörterbuch.
-    
+
        .. code:: bash
 
             $ hashcat --stdout base1-base2.txt base3.txt -j '$-' > final.txt
 
 
-.. supplemental:: 
+.. supplemental::
 
     Die Hashcat Utilities Bibliothek hat auch noch weitere Werkzeug zum Kombinieren von Wörterbüchern, die viele Fälle sehr effizient abdecken (auch den besprochenen). Jedoch ist es gerade in Fällen, in denen komplexere Regeln zur Anwendung kommen sollen, häufiger sinnvoller/nowendig direkt Hashcat im "stdout" Modus zu verwenden, um die Zwischenwörterbücher zu generieren.
 
@@ -1026,17 +997,17 @@ Gegeben sein 3 Wörterbücher [#]_: ``base1.txt``, ``base2.txt`` und ``base3.txt
 Passwörter angreifen - Zusammenfassung
 ---------------------------------------
 
-.. class:: incremental more-space-between-list-items
+.. class:: incremental-list dhbw
 
 - Passwörter können vielfach effizient angegriffen werden.
 - (gute bis exzellente) Kenntnisse über die Zielpersonen sind häufig notwendig.
 - Viele Werkzeuge sind verfügbar (siehe auch Hashcat Werkzeuge, Princeprocessor, John the Ripper, etc.)
-- Kleine etablierte Kommandozeilenwerkzeuge (``tr``, ``greb``, ``sed``, ``awk``, ...) oder selbstentwickelte Werkzeuge (zum Beispiel in Python) sind häufig ergänzend notwendig und führen oft  schneller zum Ziel als die Suche nach *dem* Tool. 
+- Kleine etablierte Kommandozeilenwerkzeuge (``tr``, ``greb``, ``sed``, ``awk``, ...) oder selbstentwickelte Werkzeuge (zum Beispiel in Python) sind häufig ergänzend notwendig und führen oft  schneller zum Ziel als die Suche nach *dem* Tool.
 - Insbesondere wenn es um die semantische Anreicherung von Wörterbüchern geht, dann sind (bisher) keine etablierten Werkzeuge vorhanden.
 - Häufig führen nur Kombinationen von etablierten und eigenen Werkzeugen zum gewünschten Ziel.
 
 
-.. class:: integrated-exercise transition-move-to-top
+.. class:: exercises transition-move-to-top
 
 Übung
 ------------------------------------------------------
@@ -1049,14 +1020,13 @@ Passwörter angreifen - Zusammenfassung
         :class: copy-to-clipboard
 
         7c6a180b36896a0a8c02787eeafb0e4c
-        
+
     Hinweise: Das Passwort besteht aus Buchstaben gefolgt von Ziffern und ist sehr häufig.
-    
-    Sie können Hashcat (https://hashcat.net/hashcat/) verwenden oder ein Bash-Skript schreiben oder eine kleine Lösung in einer Programmiersprache Ihrer Wahl entwickeln. Verwenden Sie ggf. eine 
+
+    Sie können Hashcat (https://hashcat.net/hashcat/) verwenden oder ein Bash-Skript schreiben oder eine kleine Lösung in einer Programmiersprache Ihrer Wahl entwickeln. Verwenden Sie ggf. eine
     Liste bekannter Passwörter (z. B. Rockyou).
-    
-    .. solution:: 
+
+    .. solution::
         :pwd: password1
 
         Das Passwort ist: ``password1``
-
