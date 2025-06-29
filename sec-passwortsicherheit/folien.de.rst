@@ -16,7 +16,7 @@ Passwortsicherheit
 
 :Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
 :Kontakt: michael.eichberg@dhbw.de
-:Version: 2.1.3
+:Version: 2.2
 
 .. supplemental::
 
@@ -28,10 +28,12 @@ Passwortsicherheit
       https://github.com/Delors/delors.github.io/issues
 
 
+
 .. class:: new-section transition-move-to-top
 
 Passwörter: Verwendung und Angriffe
 ----------------------------------------------
+
 
 
 Verwendung von Passworten
@@ -1410,6 +1412,52 @@ Wörterbuchgenerierung - Evaluation von Werkzeugen
         ::
 
           Ausgabe: 1234
+
+
+
+.. class:: exercises transition-move-to-top
+
+Übung - Wiederherstellung eines Passworts
+--------------------------------------------------
+
+.. exercise:: Gegeben seien folgende SHA256 Hashes
+
+    .. code:: text
+        :class: copy-to-clipboard
+
+        ac3160b0a933ac03d7fb269baf8443e65936aa4322881e30c60443d7dda152d5
+        748224afd4d37f9c3cae97bf2d38068a2ca0fabfa2f751a391bd2ac958df5403
+        6e609749618fa564c83d712f96706337f6a78ef9132c16bea215774c8c1382be
+        9d394775682dde10d89eb667f1049312d76bfcfc030a33f2598b117eb30a3966
+
+    Verwenden Sie den bekannten Leak Rockyou.txt (z. B. zu finden auf https://github.com/brannondorsey/naive-hashcat/releases/download/data/rockyou.txt), um das Passwort zu finden.
+
+    .. important::
+
+        Rockyou.txt wird bei Kali Linux standardmäßig mitgeliefert.
+
+        Die Original Rockyou.txt Datei ist 139MB groß und enthält ca. 14 Millionen Passwörter. Sollte Ihre Datei davon abweichen, dann ist diese vermutlich „fake“.
+
+    Sie können diesbezüglich ein Shellscript schreiben oder ein Script in einer Sprache Ihrer Wahl; Parallelisierung ist ggf. natürlich erlaubt!
+
+    .. solution::
+        :pwd: RockyouPasswOErter
+
+        .. rubric:: Hashes und Passwörter
+
+        ::
+
+            ac3160b0a933ac03d7fb269baf8443e65936aa4322881e30c60443d7dda152d5: ragnarok
+            748224afd4d37f9c3cae97bf2d38068a2ca0fabfa2f751a391bd2ac958df5403: 13021994sunshine
+            6e609749618fa564c83d712f96706337f6a78ef9132c16bea215774c8c1382be: #1badboy
+            9d394775682dde10d89eb667f1049312d76bfcfc030a33f2598b117eb30a3966: xCvBnM,
+
+        .. rubric:: Nicht-parallelisiertes/naives ZSH Script
+
+        .. include:: exercise/crack.zsh
+            :code: zsh
+            :number-lines:
+            :class: copy-to-clipboard
 
 
 
