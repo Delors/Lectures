@@ -16,7 +16,7 @@ Eine erste Einführung in die Sicherheit von (verteilten) Systemen\ [#]_
 
 :Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
 :Kontakt: michael.eichberg@dhbw.de
-:Version: 1.3.1
+:Version: 1.3.2
 
 .. [#] Die Folien basieren unter anderem auf einem Foliensatz von Prof. Dr. Henning Pagnia.
 
@@ -734,14 +734,32 @@ Distributed-Reflected-Denial-of-Service Angriff
 
 
 
-`Distributed Denial-of-Service (DDoS) Angriffe - Beispiel <https://cloud.google.com/blog/products/identity-security/google-cloud-mitigated-largest-ddos-attack-peaking-above-398-million-rps>`__
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Distributed Denial-of-Service (DDoS) Angriffe
+--------------------------------------------------------------------------------
 
-.. epigraph::
+.. deck::
 
-    [...] Google's DDoS Response Team has observed the trend that distributed denial-of-service (DDoS) attacks are **increasing exponentially in size**. Last year, we blocked the largest DDoS attack recorded at the time. This August [2023], we stopped an even larger DDoS attack — 7½ times larger — that also used new techniques to try to disrupt websites and Internet services.
+    .. card::
 
-    This new series of DDoS attacks reached **a peak of 398 million requests per second (rps)**, and relied on a novel HTTP/2 “Rapid Reset” technique based on stream multiplexing that has affected multiple Internet infrastructure companies. By contrast, last year's largest-recorded DDoS attack peaked at 46 million rps.
+        .. epigraph::
+
+            [...] Google's DDoS Response Team has observed the trend that distributed denial-of-service (DDoS) attacks are **increasing exponentially in size**. Last year, we blocked the largest DDoS attack recorded at the time. This August [2023], we stopped an even larger DDoS attack — 7½ times larger — that also used new techniques to try to disrupt websites and Internet services.
+
+            This new series of DDoS attacks reached **a peak of 398 million requests per second (rps)**, and relied on a novel HTTP/2 “Rapid Reset” technique based on stream multiplexing that has affected multiple Internet infrastructure companies. By contrast, last year's largest-recorded DDoS attack peaked at 46 million rps.
+
+            -- `Okt. 2023 - DDoS Attack with 398 Million RPS  <https://cloud.google.com/blog/products/identity-security/google-cloud-mitigated-largest-ddos-attack-peaking-above-398-million-rps>`__
+
+    .. card::
+
+        .. epigraph::
+
+            Cloudflare hat Mitte Mai den "größten jemals registrierten" Denial-of-Service-Angriff (DDoS) mit [...] 7,3 Terabit pro Sekunde (TBit/s) blockiert. [...] Diese Attacke war demnach rund 12 Prozent größer als der vorherige Rekord und lieferte ein massives Datenvolumen von 37,4 Terabyte in nur 45 Sekunden. [...]
+
+            Stellen Sie sich vor, Sie könnten mit Ihrem Smartphone 12,5 Millionen hochauflösende Fotos schießen und hätten nie einen vollen Speicherplatz." Und das alles in 45 Sekunden.
+
+            [...] Mitgewirkt hätten über 122.145 Quell-IP-Adressen, die sich über 5433 autonome Netzwerksysteme in 161 Ländern erstreckten.
+
+            -- `22.06.2025 Heise.de - Rekord DDoS Angriff <https://www.heise.de/news/Junk-Traffic-Flut-Rekord-DDoS-Angriff-auf-Provider-mit-7-3-TBit-s-10455216.html>`__
 
 
 
