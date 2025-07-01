@@ -1,0 +1,1289 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+    "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg
+    xmlns:xl="http://www.w3.org/1999/xlink"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns="http://www.w3.org/2000/svg"
+    version="1.1"
+    viewBox="245 -38 325 380"
+    width="186"
+    height="217"
+>  <style>
+  @import url('/LectureDoc2/ext/fonts/ld-fonts.css');
+</style>
+  <defs>
+    <filter id="Shadow" filterUnits="userSpaceOnUse" x="212.5" y="-76">
+      <feGaussianBlur in="SourceAlpha" result="blur" stdDeviation="1.308" />
+      <feOffset in="blur" result="offset" dx="0" dy="2" />
+      <feFlood flood-color="#020100" flood-opacity=".5849727" result="flood" />
+      <feComposite in="flood" in2="offset" operator="in" result="color" />
+      <feMerge>
+        <feMergeNode in="color" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+    <filter id="Shadow_2" filterUnits="userSpaceOnUse" x="212.5" y="-76">
+      <feGaussianBlur in="SourceAlpha" result="blur" stdDeviation="1.308" />
+      <feOffset in="blur" result="offset" dx="1" dy="1" />
+      <feFlood flood-color="black" flood-opacity=".5" result="flood" />
+      <feComposite in="flood" in2="offset" operator="in" result="color" />
+      <feMerge>
+        <feMergeNode in="color" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+    <filter id="Shadow_3" filterUnits="userSpaceOnUse" x="212.5" y="-76">
+      <feOffset in="SourceAlpha" result="offset" dx="-1" dy="0" />
+      <feFlood flood-color="white" result="flood" />
+      <feComposite in="flood" in2="offset" operator="in" result="color" />
+      <feMerge>
+        <feMergeNode in="color" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+
+    <marker
+            orient="auto"
+            overflow="visible"
+            markerUnits="strokeWidth"
+            id="FilledArrow_Marker"
+            stroke-linejoin="miter"
+            stroke-miterlimit="10"
+            viewBox="-1 -3 6 6"
+            markerWidth="6"
+            markerHeight="6"
+            color="#0000e9"
+        >
+      <g>
+        <path
+                    d="M 3.7333333 0 L 0 -1.4 L 0 1.4 Z"
+                    fill="currentColor"
+                    stroke="currentColor"
+                    stroke-width="1"
+                />
+      </g>
+    </marker>
+    <marker
+            orient="auto"
+            overflow="visible"
+            markerUnits="strokeWidth"
+            id="FilledArrow_Marker_2"
+            stroke-linejoin="miter"
+            stroke-miterlimit="10"
+            viewBox="-5 -3 6 6"
+            markerWidth="6"
+            markerHeight="6"
+            color="red"
+        >
+      <g>
+        <path
+                    d="M -3.7333333 0 L 0 1.4 L 0 -1.4 Z"
+                    fill="currentColor"
+                    stroke="currentColor"
+                    stroke-width="1"
+                />
+      </g>
+    </marker>
+
+    <linearGradient x1="0" x2="1" id="Gradient" gradientUnits="userSpaceOnUse">
+      <stop offset=".16833588" stop-color="#cde95f" />
+      <stop offset=".9336584" stop-color="#e7f4b5" stop-opacity=".5" />
+      <stop offset="1" stop-color="white" stop-opacity="0" />
+    </linearGradient>
+    <linearGradient
+            id="Obj_Gradient"
+            xl:href="#Gradient"
+            gradientTransform="translate(473.269 52.889744) rotate(-133.44236) scale(93.85645)"
+        />
+    <linearGradient
+            id="Obj_Gradient_2"
+            xl:href="#Gradient"
+            gradientTransform="translate(471.931 86.47696) rotate(-133.44236) scale(89.96485)"
+        />
+    <linearGradient x1="0" x2="1" id="Gradient_2" gradientUnits="userSpaceOnUse">
+      <stop offset=".16833588" stop-color="#e9e9e9" />
+      <stop offset=".9336584" stop-color="#f5f5f5" stop-opacity=".5" />
+      <stop offset="1" stop-color="white" stop-opacity="0" />
+    </linearGradient>
+    <linearGradient
+            id="Obj_Gradient_3"
+            xl:href="#Gradient_2"
+            gradientTransform="translate(471.09155 50.746027) rotate(-133.44236) scale(87.52322)"
+        />
+    <linearGradient x1="0" x2="1" id="Gradient_3" gradientUnits="userSpaceOnUse">
+      <stop offset=".16833588" stop-color="#e7e9dd" />
+      <stop offset=".9336584" stop-color="#f3f5ee" stop-opacity=".5" />
+      <stop offset="1" stop-color="white" stop-opacity="0" />
+    </linearGradient>
+    <linearGradient
+            id="Obj_Gradient_4"
+            xl:href="#Gradient_3"
+            gradientTransform="translate(468.6703 49.107023) rotate(-133.44236) scale(80.48081)"
+        />
+    <linearGradient x1="0" x2="1" id="Gradient_4" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="white" />
+      <stop offset=".08420465" stop-color="#a4a4a4" />
+      <stop offset="1" stop-color="#333" />
+    </linearGradient>
+    <linearGradient
+            id="Obj_Gradient_5"
+            xl:href="#Gradient_4"
+            gradientTransform="translate(410.7652 -7.689001) rotate(90) scale(1.9699154)"
+        />
+    <linearGradient
+            id="Obj_Gradient_6"
+            xl:href="#Gradient_4"
+            gradientTransform="translate(414.88845 -7.689001) rotate(90) scale(1.9699154)"
+        />
+    <linearGradient
+            id="Obj_Gradient_7"
+            xl:href="#Gradient_4"
+            gradientTransform="translate(419.0117 -7.689001) rotate(90) scale(1.9699154)"
+        />
+
+    <linearGradient x1="0" x2="1" id="Gradient_5" gradientUnits="userSpaceOnUse">
+      <stop offset=".1060121" stop-color="#78cc7b" />
+      <stop offset=".8529494" stop-color="#c0e6c1" stop-opacity=".5" />
+      <stop offset="1" stop-color="white" stop-opacity="0" />
+    </linearGradient>
+    <linearGradient
+            id="Obj_Gradient_8"
+            xl:href="#Gradient_5"
+            gradientTransform="translate(243.36047 50.977146) rotate(-32.658855) scale(55.56377)"
+        />
+    <linearGradient
+            id="Obj_Gradient_9"
+            xl:href="#Gradient_5"
+            gradientTransform="translate(278.86047 50.977146) rotate(-32.658855) scale(55.56377)"
+        />
+    <linearGradient x1="0" x2="1" id="Gradient_6" gradientUnits="userSpaceOnUse">
+      <stop offset=".16833588" stop-color="#78cb7b" />
+      <stop offset=".9336584" stop-color="#c0e6c1" stop-opacity=".5" />
+      <stop offset="1" stop-color="white" stop-opacity="0" />
+    </linearGradient>
+    <linearGradient
+            id="Obj_Gradient_10"
+            xl:href="#Gradient_6"
+            gradientTransform="translate(305.93746 34.89323) rotate(-133.44236) scale(62.352215)"
+        />
+    <linearGradient
+            id="Obj_Gradient_11"
+            xl:href="#Gradient_5"
+            gradientTransform="translate(243.36047 12.813282) rotate(-32.658855) scale(55.56377)"
+        />
+    <linearGradient
+            id="Obj_Gradient_12"
+            xl:href="#Gradient_5"
+            gradientTransform="translate(278.86047 12.813282) rotate(-32.658855) scale(55.56377)"
+        />
+    <linearGradient
+            id="Obj_Gradient_13"
+            xl:href="#Gradient_6"
+            gradientTransform="translate(305.93746 -3.2706357) rotate(-133.44236) scale(62.352215)"
+        />
+  </defs>
+  <metadata> Produced by OmniGraffle 8.0\n2025-06-02 09:16:20 +0000</metadata>
+  <g
+        id="screening-router"
+        stroke="none"
+        stroke-opacity="1"
+        stroke-dasharray="none"
+        fill-opacity="1"
+        fill="none"
+    >
+    <title>screening-router</title>
+    <g id="screening-router_Layer_2">
+      <title>Layer 2</title>
+      <g id="Graphic_604" filter="url(#Shadow)">
+        <path
+                    d="M 280 130 L 526.5 130 C 530.9183 130 534.5 133.58172 534.5 138 L 534.5 176 C 534.5 180.41828 530.9183 184 526.5 184 L 280 184 C 275.58172 184 272 180.41828 272 176 L 272 138 C 272 133.58172 275.58172 130 280 130 Z"
+                    fill="#dadada"
+                />
+        <path
+                    d="M 280 130 L 526.5 130 C 530.9183 130 534.5 133.58172 534.5 138 L 534.5 176 C 534.5 180.41828 530.9183 184 526.5 184 L 280 184 C 275.58172 184 272 180.41828 272 176 L 272 138 C 272 133.58172 275.58172 130 280 130 Z"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="0"
+                />
+      </g>
+      <g id="Graphic_548" filter="url(#Shadow)">
+        <ellipse
+                    cx="520.0889"
+                    cy="141.59998"
+                    rx="2.4888929029765"
+                    ry="2.40000387072739"
+                    fill="black"
+                />
+        <ellipse
+                    cx="520.0889"
+                    cy="141.59998"
+                    rx="2.4888929029765"
+                    ry="2.40000387072739"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="0"
+                />
+      </g>
+      <g id="Graphic_547" filter="url(#Shadow)">
+        <ellipse
+                    cx="511.8889"
+                    cy="141.59998"
+                    rx="2.48889290297652"
+                    ry="2.40000387072739"
+                    fill="black"
+                />
+        <ellipse
+                    cx="511.8889"
+                    cy="141.59998"
+                    rx="2.48889290297652"
+                    ry="2.40000387072739"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="0"
+                />
+      </g>
+      <g id="Graphic_546" filter="url(#Shadow)">
+        <ellipse
+                    cx="503.6889"
+                    cy="141.59998"
+                    rx="2.48889290297654"
+                    ry="2.40000387072739"
+                    fill="black"
+                />
+        <ellipse
+                    cx="503.6889"
+                    cy="141.59998"
+                    rx="2.48889290297654"
+                    ry="2.40000387072739"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="0"
+                />
+      </g>
+      <g id="Graphic_545" filter="url(#Shadow)">
+        <ellipse
+                    cx="495.4889"
+                    cy="141.59998"
+                    rx="2.48889290297656"
+                    ry="2.40000387072739"
+                    fill="black"
+                />
+        <ellipse
+                    cx="495.4889"
+                    cy="141.59998"
+                    rx="2.48889290297656"
+                    ry="2.40000387072739"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="0"
+                />
+      </g>
+      <g id="Graphic_544" filter="url(#Shadow)">
+        <ellipse
+                    cx="487.2889"
+                    cy="141.59998"
+                    rx="2.48889290297654"
+                    ry="2.40000387072739"
+                    fill="black"
+                />
+        <ellipse
+                    cx="487.2889"
+                    cy="141.59998"
+                    rx="2.48889290297654"
+                    ry="2.40000387072739"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="0"
+                />
+      </g>
+      <g id="Graphic_543" filter="url(#Shadow)">
+        <ellipse
+                    cx="479.0889"
+                    cy="141.59998"
+                    rx="2.48889290297654"
+                    ry="2.40000387072739"
+                    fill="black"
+                />
+        <ellipse
+                    cx="479.0889"
+                    cy="141.59998"
+                    rx="2.48889290297654"
+                    ry="2.40000387072739"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="0"
+                />
+      </g>
+      <g id="Graphic_542" filter="url(#Shadow)">
+        <ellipse
+                    cx="470.8889"
+                    cy="141.59998"
+                    rx="2.48889290297654"
+                    ry="2.40000387072739"
+                    fill="black"
+                />
+        <ellipse
+                    cx="470.8889"
+                    cy="141.59998"
+                    rx="2.48889290297654"
+                    ry="2.40000387072739"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="0"
+                />
+      </g>
+      <g id="Graphic_541" filter="url(#Shadow)">
+        <ellipse
+                    cx="462.6889"
+                    cy="141.59998"
+                    rx="2.48889290297654"
+                    ry="2.40000387072739"
+                    fill="black"
+                />
+        <ellipse
+                    cx="462.6889"
+                    cy="141.59998"
+                    rx="2.48889290297654"
+                    ry="2.40000387072739"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="0"
+                />
+      </g>
+      <g id="Graphic_540" filter="url(#Shadow)">
+        <ellipse
+                    cx="454.4889"
+                    cy="141.59998"
+                    rx="2.48889290297654"
+                    ry="2.40000387072739"
+                    fill="black"
+                />
+        <ellipse
+                    cx="454.4889"
+                    cy="141.59998"
+                    rx="2.48889290297654"
+                    ry="2.40000387072739"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="0"
+                />
+      </g>
+      <g id="Graphic_539" filter="url(#Shadow)">
+        <ellipse
+                    cx="523.8889"
+                    cy="147.99998"
+                    rx="2.4888929029765"
+                    ry="2.40000387072739"
+                    fill="black"
+                />
+        <ellipse
+                    cx="523.8889"
+                    cy="147.99998"
+                    rx="2.4888929029765"
+                    ry="2.40000387072739"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="0"
+                />
+      </g>
+      <g id="Graphic_538" filter="url(#Shadow)">
+        <ellipse
+                    cx="515.6889"
+                    cy="147.99998"
+                    rx="2.48889290297652"
+                    ry="2.40000387072739"
+                    fill="black"
+                />
+        <ellipse
+                    cx="515.6889"
+                    cy="147.99998"
+                    rx="2.48889290297652"
+                    ry="2.40000387072739"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="0"
+                />
+      </g>
+      <g id="Graphic_537" filter="url(#Shadow)">
+        <ellipse
+                    cx="507.4889"
+                    cy="147.99998"
+                    rx="2.48889290297653"
+                    ry="2.40000387072739"
+                    fill="black"
+                />
+        <ellipse
+                    cx="507.4889"
+                    cy="147.99998"
+                    rx="2.48889290297653"
+                    ry="2.40000387072739"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="0"
+                />
+      </g>
+      <g id="Graphic_536" filter="url(#Shadow)">
+        <ellipse
+                    cx="499.2889"
+                    cy="147.99998"
+                    rx="2.48889290297654"
+                    ry="2.40000387072739"
+                    fill="black"
+                />
+        <ellipse
+                    cx="499.2889"
+                    cy="147.99998"
+                    rx="2.48889290297654"
+                    ry="2.40000387072739"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="0"
+                />
+      </g>
+      <g id="Graphic_535" filter="url(#Shadow)">
+        <ellipse
+                    cx="491.0889"
+                    cy="147.99998"
+                    rx="2.48889290297656"
+                    ry="2.40000387072739"
+                    fill="black"
+                />
+        <ellipse
+                    cx="491.0889"
+                    cy="147.99998"
+                    rx="2.48889290297656"
+                    ry="2.40000387072739"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="0"
+                />
+      </g>
+      <g id="Graphic_534" filter="url(#Shadow)">
+        <ellipse
+                    cx="482.8889"
+                    cy="147.99998"
+                    rx="2.48889290297654"
+                    ry="2.40000387072739"
+                    fill="black"
+                />
+        <ellipse
+                    cx="482.8889"
+                    cy="147.99998"
+                    rx="2.48889290297654"
+                    ry="2.40000387072739"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="0"
+                />
+      </g>
+      <g id="Graphic_533" filter="url(#Shadow)">
+        <ellipse
+                    cx="474.6889"
+                    cy="147.99998"
+                    rx="2.48889290297654"
+                    ry="2.40000387072739"
+                    fill="black"
+                />
+        <ellipse
+                    cx="474.6889"
+                    cy="147.99998"
+                    rx="2.48889290297654"
+                    ry="2.40000387072739"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="0"
+                />
+      </g>
+      <g id="Graphic_532" filter="url(#Shadow)">
+        <ellipse
+                    cx="466.4889"
+                    cy="147.99998"
+                    rx="2.48889290297656"
+                    ry="2.40000387072739"
+                    fill="black"
+                />
+        <ellipse
+                    cx="466.4889"
+                    cy="147.99998"
+                    rx="2.48889290297656"
+                    ry="2.40000387072739"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="0"
+                />
+      </g>
+      <g id="Graphic_531" filter="url(#Shadow)">
+        <ellipse
+                    cx="458.2889"
+                    cy="147.99998"
+                    rx="2.48889290297654"
+                    ry="2.40000387072739"
+                    fill="black"
+                />
+        <ellipse
+                    cx="458.2889"
+                    cy="147.99998"
+                    rx="2.48889290297654"
+                    ry="2.40000387072739"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="0"
+                />
+      </g>
+      <g id="Line_900" filter="url(#Shadow_2)">
+        <line
+                    x1="285"
+                    y1="75"
+                    x2="419.1722"
+                    y2="75"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                />
+      </g>
+      <g id="Line_904" filter="url(#Shadow_2)">
+        <line
+                    x1="284.28517"
+                    y1="74"
+                    x2="284.28517"
+                    y2="59"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                />
+      </g>
+      <g id="Line_905" filter="url(#Shadow_2)">
+        <line
+                    x1="420.28517"
+                    y1="59"
+                    x2="420.28517"
+                    y2="129"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                />
+      </g>
+      <g id="Graphic_920">
+        <path
+                    d="M 325.1125 279.76746 C 280.34375 273 298.1964 216.0291 369.61254 225.75 C 376.2384 206.80086 459.28575 209.87652 458.74283 225.75 C 510.81606 205.44762 577.36254 245.93016 532.72676 266.23254 C 586.2875 276.07566 532.0509 329.10906 488.09375 320.25 C 484.57585 335.01594 405.9937 340.1832 399.0964 320.25 C 354.59914 341.5377 261.81522 308.80668 325.1125 279.76746 Z"
+                    fill="white"
+                />
+        <path
+                    d="M 325.1125 279.76746 C 280.34375 273 298.1964 216.0291 369.61254 225.75 C 376.2384 206.80086 459.28575 209.87652 458.74283 225.75 C 510.81606 205.44762 577.36254 245.93016 532.72676 266.23254 C 586.2875 276.07566 532.0509 329.10906 488.09375 320.25 C 484.57585 335.01594 405.9937 340.1832 399.0964 320.25 C 354.59914 341.5377 261.81522 308.80668 325.1125 279.76746 Z"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
+        <text transform="translate(335.55 255)" fill="black">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="26"
+                        font-weight="400"
+                        fill="black"
+                        x="44.694997"
+                        y="28"
+                        xml:space="preserve"
+                    >Internet</tspan>
+        </text>
+      </g>
+      <g id="Line_928" filter="url(#Shadow_2)">
+        <line
+                    x1="422"
+                    y1="185"
+                    x2="422"
+                    y2="210"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                />
+      </g>
+      <g id="Graphic_929">
+        <text transform="translate(390 128)" fill="black">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="28"
+                        font-weight="400"
+                        fill="black"
+                        x="0"
+                        y="28"
+                        xml:space="preserve"
+                    >🔥</tspan>
+        </text>
+      </g>
+      <g id="Graphic_991" filter="url(#Shadow)">
+        <ellipse
+                    cx="353.0889"
+                    cy="141.59998"
+                    rx="2.48889290297655"
+                    ry="2.40000387072739"
+                    fill="black"
+                />
+        <ellipse
+                    cx="353.0889"
+                    cy="141.59998"
+                    rx="2.48889290297655"
+                    ry="2.40000387072739"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="0"
+                />
+      </g>
+      <g id="Graphic_990" filter="url(#Shadow)">
+        <ellipse
+                    cx="344.8889"
+                    cy="141.59998"
+                    rx="2.48889290297654"
+                    ry="2.40000387072739"
+                    fill="black"
+                />
+        <ellipse
+                    cx="344.8889"
+                    cy="141.59998"
+                    rx="2.48889290297654"
+                    ry="2.40000387072739"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="0"
+                />
+      </g>
+      <g id="Graphic_989" filter="url(#Shadow)">
+        <ellipse
+                    cx="336.6889"
+                    cy="141.59998"
+                    rx="2.48889290297655"
+                    ry="2.40000387072739"
+                    fill="black"
+                />
+        <ellipse
+                    cx="336.6889"
+                    cy="141.59998"
+                    rx="2.48889290297655"
+                    ry="2.40000387072739"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="0"
+                />
+      </g>
+      <g id="Graphic_988" filter="url(#Shadow)">
+        <ellipse
+                    cx="328.4889"
+                    cy="141.59998"
+                    rx="2.48889290297655"
+                    ry="2.40000387072739"
+                    fill="black"
+                />
+        <ellipse
+                    cx="328.4889"
+                    cy="141.59998"
+                    rx="2.48889290297655"
+                    ry="2.40000387072739"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="0"
+                />
+      </g>
+      <g id="Graphic_987" filter="url(#Shadow)">
+        <ellipse
+                    cx="320.2889"
+                    cy="141.59998"
+                    rx="2.48889290297654"
+                    ry="2.40000387072739"
+                    fill="black"
+                />
+        <ellipse
+                    cx="320.2889"
+                    cy="141.59998"
+                    rx="2.48889290297654"
+                    ry="2.40000387072739"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="0"
+                />
+      </g>
+      <g id="Graphic_986" filter="url(#Shadow)">
+        <ellipse
+                    cx="312.0889"
+                    cy="141.59998"
+                    rx="2.48889290297653"
+                    ry="2.40000387072739"
+                    fill="black"
+                />
+        <ellipse
+                    cx="312.0889"
+                    cy="141.59998"
+                    rx="2.48889290297653"
+                    ry="2.40000387072739"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="0"
+                />
+      </g>
+      <g id="Graphic_985" filter="url(#Shadow)">
+        <ellipse
+                    cx="303.8889"
+                    cy="141.59998"
+                    rx="2.48889290297655"
+                    ry="2.40000387072739"
+                    fill="black"
+                />
+        <ellipse
+                    cx="303.8889"
+                    cy="141.59998"
+                    rx="2.48889290297655"
+                    ry="2.40000387072739"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="0"
+                />
+      </g>
+      <g id="Graphic_984" filter="url(#Shadow)">
+        <ellipse
+                    cx="295.6889"
+                    cy="141.59998"
+                    rx="2.48889290297654"
+                    ry="2.40000387072739"
+                    fill="black"
+                />
+        <ellipse
+                    cx="295.6889"
+                    cy="141.59998"
+                    rx="2.48889290297654"
+                    ry="2.40000387072739"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="0"
+                />
+      </g>
+      <g id="Graphic_983" filter="url(#Shadow)">
+        <ellipse
+                    cx="287.4889"
+                    cy="141.59998"
+                    rx="2.48889290297656"
+                    ry="2.40000387072739"
+                    fill="black"
+                />
+        <ellipse
+                    cx="287.4889"
+                    cy="141.59998"
+                    rx="2.48889290297656"
+                    ry="2.40000387072739"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="0"
+                />
+      </g>
+      <g id="Graphic_982" filter="url(#Shadow)">
+        <ellipse
+                    cx="356.8889"
+                    cy="147.99998"
+                    rx="2.48889290297655"
+                    ry="2.40000387072739"
+                    fill="black"
+                />
+        <ellipse
+                    cx="356.8889"
+                    cy="147.99998"
+                    rx="2.48889290297655"
+                    ry="2.40000387072739"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="0"
+                />
+      </g>
+      <g id="Graphic_981" filter="url(#Shadow)">
+        <ellipse
+                    cx="348.6889"
+                    cy="147.99998"
+                    rx="2.48889290297653"
+                    ry="2.40000387072739"
+                    fill="black"
+                />
+        <ellipse
+                    cx="348.6889"
+                    cy="147.99998"
+                    rx="2.48889290297653"
+                    ry="2.40000387072739"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="0"
+                />
+      </g>
+      <g id="Graphic_980" filter="url(#Shadow)">
+        <ellipse
+                    cx="340.4889"
+                    cy="147.99998"
+                    rx="2.48889290297655"
+                    ry="2.40000387072739"
+                    fill="black"
+                />
+        <ellipse
+                    cx="340.4889"
+                    cy="147.99998"
+                    rx="2.48889290297655"
+                    ry="2.40000387072739"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="0"
+                />
+      </g>
+      <g id="Graphic_979" filter="url(#Shadow)">
+        <ellipse
+                    cx="332.2889"
+                    cy="147.99998"
+                    rx="2.48889290297655"
+                    ry="2.40000387072739"
+                    fill="black"
+                />
+        <ellipse
+                    cx="332.2889"
+                    cy="147.99998"
+                    rx="2.48889290297655"
+                    ry="2.40000387072739"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="0"
+                />
+      </g>
+      <g id="Graphic_978" filter="url(#Shadow)">
+        <ellipse
+                    cx="324.0889"
+                    cy="147.99998"
+                    rx="2.48889290297654"
+                    ry="2.40000387072739"
+                    fill="black"
+                />
+        <ellipse
+                    cx="324.0889"
+                    cy="147.99998"
+                    rx="2.48889290297654"
+                    ry="2.40000387072739"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="0"
+                />
+      </g>
+      <g id="Graphic_977" filter="url(#Shadow)">
+        <ellipse
+                    cx="315.8889"
+                    cy="147.99998"
+                    rx="2.48889290297655"
+                    ry="2.40000387072739"
+                    fill="black"
+                />
+        <ellipse
+                    cx="315.8889"
+                    cy="147.99998"
+                    rx="2.48889290297655"
+                    ry="2.40000387072739"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="0"
+                />
+      </g>
+      <g id="Graphic_976" filter="url(#Shadow)">
+        <ellipse
+                    cx="307.6889"
+                    cy="147.99998"
+                    rx="2.48889290297655"
+                    ry="2.40000387072739"
+                    fill="black"
+                />
+        <ellipse
+                    cx="307.6889"
+                    cy="147.99998"
+                    rx="2.48889290297655"
+                    ry="2.40000387072739"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="0"
+                />
+      </g>
+      <g id="Graphic_975" filter="url(#Shadow)">
+        <ellipse
+                    cx="299.4889"
+                    cy="147.99998"
+                    rx="2.48889290297654"
+                    ry="2.40000387072739"
+                    fill="black"
+                />
+        <ellipse
+                    cx="299.4889"
+                    cy="147.99998"
+                    rx="2.48889290297654"
+                    ry="2.40000387072739"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="0"
+                />
+      </g>
+      <g id="Graphic_974" filter="url(#Shadow)">
+        <ellipse
+                    cx="291.2889"
+                    cy="147.99998"
+                    rx="2.48889290297653"
+                    ry="2.40000387072739"
+                    fill="black"
+                />
+        <ellipse
+                    cx="291.2889"
+                    cy="147.99998"
+                    rx="2.48889290297653"
+                    ry="2.40000387072739"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="0"
+                />
+      </g>
+      <g id="Graphic_992" filter="url(#Shadow_3)">
+        <text transform="translate(373.83422 153)" fill="#283450">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="22"
+                        font-weight="400"
+                        fill="#283450"
+                        x="0"
+                        y="24"
+                        xml:space="preserve"
+                    >Router</tspan>
+        </text>
+      </g>
+      <g id="Line_993" filter="url(#Shadow_2)">
+        <line
+                    x1="467"
+                    y1="59"
+                    x2="467"
+                    y2="123.29998"
+                    marker-end="url(#FilledArrow_Marker)"
+                    stroke="#0000e9"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-dasharray="6.0,6.0"
+                    stroke-width="3"
+                />
+      </g>
+      <g id="Graphic_994">
+        <text transform="translate(454 136)" fill="black">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="28"
+                        font-weight="400"
+                        fill="black"
+                        x="0"
+                        y="28"
+                        xml:space="preserve"
+                    >🚫</tspan>
+        </text>
+      </g>
+      <g id="Line_996" filter="url(#Shadow_2)">
+        <line
+                    x1="352"
+                    y1="191.9"
+                    x2="352"
+                    y2="223"
+                    marker-start="url(#FilledArrow_Marker_2)"
+                    stroke="red"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-dasharray="6.0,6.0"
+                    stroke-width="3"
+                />
+      </g>
+      <g id="Graphic_997">
+        <text transform="translate(332 136)" fill="black">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="36"
+                        font-weight="400"
+                        fill="black"
+                        x="0"
+                        y="36"
+                        xml:space="preserve"
+                    >🧯</tspan>
+        </text>
+      </g>
+      <g id="Group_998">
+        <g id="Group_1006">
+          <g id="Graphic_1008">
+            <rect
+                            x="405.2927"
+                            y="-12"
+                            width="71.41463"
+                            height="61.633466"
+                            fill="url(#Obj_Gradient)"
+                        />
+            <rect
+                            x="405.2927"
+                            y="-12"
+                            width="71.41463"
+                            height="61.633466"
+                            stroke="white"
+                            stroke-opacity=".4807276"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                        />
+          </g>
+          <g id="Graphic_1007">
+            <path
+                            d="M 380 58 L 502 58 L 477.6 49.633466 L 404.4 49.633466 Z"
+                            fill="url(#Obj_Gradient_2)"
+                        />
+            <path
+                            d="M 380 58 L 502 58 L 477.6 49.633466 L 404.4 49.633466 Z"
+                            stroke="white"
+                            stroke-opacity=".4807276"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                        />
+          </g>
+        </g>
+        <g id="Group_999">
+          <g id="Graphic_1005">
+            <rect
+                            x="407.174"
+                            y="-9.264939"
+                            width="67.65197"
+                            height="56.474255"
+                            fill="url(#Obj_Gradient_3)"
+                        />
+            <rect
+                            x="407.174"
+                            y="-9.264939"
+                            width="67.65197"
+                            height="56.474255"
+                            stroke="white"
+                            stroke-opacity=".4807276"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                        />
+          </g>
+          <g id="Graphic_1004">
+            <rect
+                            x="408.47966"
+                            y="-4.734128"
+                            width="65.04068"
+                            height="49.247885"
+                            fill="url(#Obj_Gradient_4)"
+                        />
+            <rect
+                            x="408.47966"
+                            y="-4.734128"
+                            width="65.04068"
+                            height="49.247885"
+                            stroke="white"
+                            stroke-opacity=".4807276"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="1"
+                        />
+          </g>
+          <g id="Graphic_1003">
+            <ellipse
+                            cx="410.7652"
+                            cy="-6.7040436"
+                            rx="1.33007734059394"
+                            ry="0.984959281817032"
+                            fill="url(#Obj_Gradient_5)"
+                        />
+            <ellipse
+                            cx="410.7652"
+                            cy="-6.7040436"
+                            rx="1.33007734059394"
+                            ry="0.984959281817032"
+                            stroke="#a5a5a5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width=".25"
+                        />
+          </g>
+          <g id="Graphic_1002">
+            <ellipse
+                            cx="414.88845"
+                            cy="-6.7040436"
+                            rx="1.3300773405939"
+                            ry="0.984959281817032"
+                            fill="url(#Obj_Gradient_6)"
+                        />
+            <ellipse
+                            cx="414.88845"
+                            cy="-6.7040436"
+                            rx="1.3300773405939"
+                            ry="0.984959281817032"
+                            stroke="#a5a5a5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width=".25"
+                        />
+          </g>
+          <g id="Graphic_1001">
+            <ellipse
+                            cx="419.0117"
+                            cy="-6.7040436"
+                            rx="1.33007734059394"
+                            ry="0.984959281817032"
+                            fill="url(#Obj_Gradient_7)"
+                        />
+            <ellipse
+                            cx="419.0117"
+                            cy="-6.7040436"
+                            rx="1.33007734059394"
+                            ry="0.984959281817032"
+                            stroke="#a5a5a5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width=".25"
+                        />
+          </g>
+          <g id="Graphic_1000">
+            <text transform="translate(428.934 -9.204044)" fill="#666">
+              <tspan
+                                font-family="Noto Sans Display"
+                                font-size="4"
+                                font-weight="400"
+                                fill="#666"
+                                x="71409545e-20"
+                                y="4"
+                                xml:space="preserve"
+                            >www.xyz.com</tspan>
+            </text>
+          </g>
+        </g>
+      </g>
+      <g id="Group_1009">
+        <g id="Group_1014">
+          <g id="Graphic_1017">
+            <path
+                            d="M 249 50.25932 L 249 12.194583 L 284.5 21.710768 L 284.5 59.775505 Z"
+                            fill="url(#Obj_Gradient_8)"
+                        />
+            <path
+                            d="M 249 50.25932 L 249 12.194583 L 284.5 21.710768 L 284.5 59.775505 Z"
+                            stroke="white"
+                            stroke-opacity=".48790474"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                        />
+          </g>
+          <g id="Graphic_1016">
+            <path
+                            d="M 320 50.25932 L 320 12.194583 L 284.5 21.710768 L 284.5 59.775505 Z"
+                            fill="url(#Obj_Gradient_9)"
+                        />
+            <path
+                            d="M 320 50.25932 L 320 12.194583 L 284.5 21.710768 L 284.5 59.775505 Z"
+                            stroke="white"
+                            stroke-opacity=".48790474"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                        />
+          </g>
+          <g id="Graphic_1015">
+            <path
+                            d="M 284.5 2.9393694 L 320 12.257301 L 284.5 21.575233 L 249 12.257301 Z"
+                            fill="url(#Obj_Gradient_10)"
+                        />
+            <path
+                            d="M 284.5 2.9393694 L 320 12.257301 L 284.5 21.575233 L 249 12.257301 Z"
+                            stroke="white"
+                            stroke-opacity=".48790474"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                        />
+          </g>
+        </g>
+        <g id="Group_1010">
+          <g id="Graphic_1013">
+            <path
+                            d="M 249 12.095456 L 249 -25.96928 L 284.5 -16.453097 L 284.5 21.61164 Z"
+                            fill="url(#Obj_Gradient_11)"
+                        />
+            <path
+                            d="M 249 12.095456 L 249 -25.96928 L 284.5 -16.453097 L 284.5 21.61164 Z"
+                            stroke="white"
+                            stroke-opacity=".48790474"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                        />
+          </g>
+          <g id="Graphic_1012">
+            <path
+                            d="M 320 12.095456 L 320 -25.96928 L 284.5 -16.453097 L 284.5 21.61164 Z"
+                            fill="url(#Obj_Gradient_12)"
+                        />
+            <path
+                            d="M 320 12.095456 L 320 -25.96928 L 284.5 -16.453097 L 284.5 21.61164 Z"
+                            stroke="white"
+                            stroke-opacity=".48790474"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                        />
+          </g>
+          <g id="Graphic_1011">
+            <path
+                            d="M 284.5 -35.224495 L 320 -25.906563 L 284.5 -16.588631 L 249 -25.906563 Z"
+                            fill="url(#Obj_Gradient_13)"
+                        />
+            <path
+                            d="M 284.5 -35.224495 L 320 -25.906563 L 284.5 -16.588631 L 249 -25.906563 Z"
+                            stroke="white"
+                            stroke-opacity=".48790474"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                        />
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
