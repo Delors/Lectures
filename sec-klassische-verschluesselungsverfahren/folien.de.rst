@@ -817,8 +817,8 @@ Steganografie
 
 
 
-Steganografie
---------------------------
+Text-basierte Steganografie
+-----------------------------
 
 .. exercise:: Entschlüsseln
 
