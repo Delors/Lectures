@@ -136,8 +136,9 @@ Vorlesung mit Bezug zu "IT Sicherheit"
    10. Public-Key-Kryptographie (`<sec-public-key-kryptographie/folien.de.rst.html>`__)
    11. Hashfunktionen (`<sec-hashfunktionen/folien.de.rst.html>`__)
    12. Authentifizierte Verschlüsselung (`<sec-authentifizierte-verschluesselung/folien.de.rst.html>`__)
-   13. Passwortsicherheit (`<sec-passwortsicherheit/folien.de.rst.html>`__)
-   14. Passwortwiederherstellung (`<sec-passwortwiederherstellung/folien.de.rst.html>`__)
+   13. Nutzerauthentifizierung (`<sec-nutzerauthentifizierung/folien.de.rst.html>`__)
+   14. Passwortsicherheit (`<sec-passwortsicherheit/folien.de.rst.html>`__)
+   15. Passwortwiederherstellung (`<sec-passwortwiederherstellung/folien.de.rst.html>`__)
 
 
 
