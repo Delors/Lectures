@@ -17,7 +17,7 @@ Hashfunktionen - Kontrollaufgaben
 
 :Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
 :Kontakt: michael.eichberg@dhbw.de, Raum 149B
-:Version: 1.0
+:Version: 1.0.1
 
 
 
@@ -44,7 +44,7 @@ Hashfunktionen
         3. Hashfunktionen sind nicht deterministisch.
         4. Hashfunktionen können zur Absicherung der Integrität verwendet werden.
         5. Die Mindestausgabelänge für eine sichere Hashfunktion beträgt mindestens 512 Bit.
-        6. Der Input eine Hashalgorithmuss muss ein vielfaches der Blockgröße des Hashes betragen.
+        6. Der Input eines Hashalgorithmus muss ein Vielfaches der Blockgröße des Hashes betragen.
         7. Poly 1305 ist nur deswegen sicher weil die Nonce 96Bit lang ist.
         8. Jeder Hashalgorithmus, der starke Kollisionsresistenz bietet, kann zur Absicherung der Integrität verwendet werden.
         9. Jeder Hashalgorithmus, der schwache Kollisionsresistenz bietet, kann zum Hashing von Passwörtern verwendet werden.
