@@ -31,6 +31,13 @@ Public-Key-Kryptographie und RSA
 
 
 
+.. class:: new-section
+
+Grundlagen
+-------------
+
+
+
 Terminologie bzgl. asymmetrischer Verschlüsselung
 -----------------------------------------------------------------
 
@@ -322,6 +329,12 @@ Public-Key-Kryptoanalyse
 
     Bei einem Angriff mit „wahrscheinlicher Nachricht“, verschlüsselt der Angreifer eine Reihe von Nachrichten (z. B. alle DES Schlüssel mit dem öffentlichen Schlüssel des Adressaten) und analysiert die resultierenden Chiffretexte, um den privaten Schlüssel zu ermitteln.
 
+
+
+.. class:: new-section transition-scale
+
+Public-Key Algorithmen
+------------------------
 
 
 Rivest-Shamir-Adleman (RSA) Algorithm
