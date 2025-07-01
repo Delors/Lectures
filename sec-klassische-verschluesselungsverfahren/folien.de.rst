@@ -178,7 +178,7 @@ Klassifizierung von Angriffen
 
     .. csv-table::
         :header: Art des Angriffs, dem Kryptoanalytiker bekannt
-        :class: incremental-table-rows
+        :class: incremental-table-rows sticky-header
         :stub-columns: 1
 
         Ciphertext Only, "- Verschlüsselungsalgorithmus und Chiffretext"
@@ -253,7 +253,7 @@ Substitutions-Chiffren
 
 
 
-Caesar Cipher
+Cäsar Chiffre
 -------------
 
 - Einfachste und früheste bekannte Verwendung einer Substitutions-Chiffre; verwendet von Julius Cäsar.
@@ -305,7 +305,7 @@ Der Algorithmus zur Verschlüsselung ist dann (:math:`p` ist der Wert des zu ver
 Verallgemeinerter Cäsar-Chiffre-Algorithmus
 ------------------------------------------------
 
-Eine Verschiebung kann beliebig groß sein (:math:`k`), so dass der allgemeine Caesar-Algorithmus lautet:
+Eine Verschiebung kann beliebig groß sein (:math:`k`), so dass der allgemeine Cäsar-Algorithmus lautet:
 
 .. math::
 
@@ -319,7 +319,7 @@ Wobei :math:`k` einen Wert im Bereich von 1 bis 25 annimmt; der Entschlüsselung
 
 
 
-Brute-Force-Kryptoanalyse der Caesar-Chiffre
+Brute-Force-Kryptoanalyse der Cäsar-Chiffre
 ------------------------------------------------------
 
 
@@ -528,7 +528,7 @@ Vigenère Chiffre
 ------------------
 
 - Die bekannteste und eine der einfachsten polyalphabetischen Substitutions-Chiffren.
-- In diesem Schema besteht die Menge der verwandten monoalphabetischen Substitutionsregeln aus den 26 Caesar-Chiffren mit Verschiebungen von 0 bis 25.
+- In diesem Schema besteht die Menge der verwandten monoalphabetischen Substitutionsregeln aus den 26 Cäsar-Chiffren mit Verschiebungen von 0 bis 25.
 - Jede Chiffre wird durch einen Schlüsselbuchstaben identifiziert, der den Klartextbuchstaben durch den Chiffretextbuchstaben ersetzt.
 
 
