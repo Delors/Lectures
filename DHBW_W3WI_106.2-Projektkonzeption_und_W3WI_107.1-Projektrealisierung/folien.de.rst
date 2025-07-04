@@ -1,4 +1,4 @@
-.. meta:: 
+.. meta::
     :version: renaissance
     :author: Michael Eichberg
     :keywords: "Projektkonzeption" und "Projektrealisierung"
@@ -38,7 +38,7 @@ Einführung
    4. Kurze Wiederholung von relevanten Themen
 
 2. Start der Projektkonzeption
-    
+
 
 
 .. class:: transition-fade
@@ -46,16 +46,19 @@ Einführung
 Das Projekt
 -------------
 
-Entwicklung eines AppStores für Apps zum Deployment auf OpenStack. 
+Entwicklung eines AppStores für Apps zum Deployment auf OpenStack.
 
 .. admonition:: Ziel
 
-    Dozenten können - ohne tiefergehende Kenntnisse von OpenStack etc. - Anwendungen auf der OpenStack Platform deployen, die dann durch Studierende im Rahmen von Lehrveranstaltungen genutzt werden können. 
-    
+    Dozenten können - ohne tiefergehende Kenntnisse von OpenStack etc. - Anwendungen auf der OpenStack Platform deployen, die dann durch Studierende im Rahmen von Lehrveranstaltungen genutzt werden können.
+
     Den Dozenten soll eine einfache Administrierbarkeit der Anwendungen ermöglicht werden.
 
     Den Administratoren ist es stets möglich Dozenten zu unterstützen.
 
+
+
+.. HINWEIS: Gruppenbenotung -> Einzelbenotung nur auf explizitem Wunsch hin
 
 
 .. class:: transition-move-to-top
@@ -91,19 +94,19 @@ Anforderungen bzw. Herausforderungen
 
     - Es soll sowohl sowohl vorgefertigte Anwendungen (bzw. Anwendungstemplates)  geben, die einfach deployt werden können, als auch möglich sein dem App Store eigene (private) Anwendungen hinzuzufügen.
     - beim Deployment von Anwendungen werden die notwendigen Konfigurationsschritte möglichst automatisiert durchgeführt:
-    
+
       - Anlegen der entsprechenden Anzahl an VMS
       - Anlegen von Nutzeraccounts bzw. Gruppenaccounts (ggf. basierend auf CSV Dateien, manuell oder von einem LDAP Server); alternativ Konfiguration von SSH Keys
       - Einrichten von Netzwerkkonfigurationen (ggf. inkl. Erzeugung von Zertifikaten)
       - Konfiguration von DNS...
-      
-    - Es ist dem Dozenten ggf. möglich (einzelne) Anwendungen neu zu starten bzw. neu zu konfigurieren (z. B. wenn Anwendungen nicht mehr reagieren weil zum Beispiel im Rahmen des Pentesting die ZielVMs abgestürzt sind). 
+
+    - Es ist dem Dozenten ggf. möglich (einzelne) Anwendungen neu zu starten bzw. neu zu konfigurieren (z. B. wenn Anwendungen nicht mehr reagieren weil zum Beispiel im Rahmen des Pentesting die ZielVMs abgestürzt sind).
     - Anwendungen können in unterschiedlichen Versionen vorliegen.
     - Anwendungen können einfach aktualisiert werden. (Z. B. können die Anwendungen in einem GIT liegen und ein Dozent bzw. Administrator kann darüber Aktualisierungen durchführen.)
     - jedem Dozenten sind nur begrenzte Ressourcen zur Verfügung gestellt (z. B. nur 10 VMs). Es kann ggf. sinnvoll sein, mehrere Instanzen einer Anwendung in einer VM zu deployen.
 
-    .. hint:: 
-        :class: incremental 
+    .. hint::
+        :class: incremental
 
         Die genauen Features bzw. Anforderungen legen wir gemeinsam in den folgenden Wochen im Rahmen von *Requirements Workshops* fest. Die oben genannten Anforderungen dienen nur als Leitfaden.
 
@@ -137,7 +140,7 @@ Benotungsgrundlage
 
   **Kleingruppenpräsentationen (und Dokumentation) mit insgesamt 50 Punkten.**
 
-  Aus jeder Gruppe muss jeder in etwa gleich lang präsentieren. 
+  Aus jeder Gruppe muss jeder in etwa gleich lang präsentieren.
 
 .. class:: incremental
 
@@ -163,15 +166,15 @@ Benotungsgrundlage
 
 - `Aspekte der Projektdurchführung <https://delors.github.io/lab-aspekte-der-projektdurchfuehrung/folien.de.rst.html?ld-slide-no=1>`__
 
-    
-.. rubric:: Teil 2 - *Requirements Workshop* zur Erhebung der User Stories 
-    
+
+.. rubric:: Teil 2 - *Requirements Workshop* zur Erhebung der User Stories
+
 Geteiltest `Kanboard <http://141.72.12.83/kanboard-1.2.39>`__
 
 .. Nutzer: admin
    Passwort: Kanboard!Admin
 
-**Je Gruppe**: ca. 60 Minuten, um User Stories zu erfassen 
+**Je Gruppe**: ca. 60 Minuten, um User Stories zu erfassen
 
 .. rubric:: Teil 3
 
@@ -181,7 +184,7 @@ Geteiltest `Kanboard <http://141.72.12.83/kanboard-1.2.39>`__
 
 .. class:: fade-out
 
-1. Projektkonzeption - 02.09.2024 [Optional - Online] 
+1. Projektkonzeption - 02.09.2024 [Optional - Online]
 -------------------------------------------------------------------------------------------------
 
 :BBB: https://bbb.dhbw.de/mannheim/eic-mn5-hvh-7qd
@@ -189,8 +192,8 @@ Geteiltest `Kanboard <http://141.72.12.83/kanboard-1.2.39>`__
 Je Gruppe:
 
 - Vertraut machen mit dem Technologiestack
-- **Prototyping / Entwicklung eines Spike** 
-- Ausarbeitung der initialen Präsentation\ [#]_  
+- **Prototyping / Entwicklung eines Spike**
+- Ausarbeitung der initialen Präsentation\ [#]_
 
 .. [#] `(WIP) Vorträge: Hinweise und Bewertungskriterien <https://delors.github.io/allg-vortraege/folien.de.rst.html?ld-slide-no=1>`__
 
@@ -200,7 +203,7 @@ Je Gruppe:
 
 3. Projektkonzeption - 09.09.2024
 ----------------------------------
-   
+
 .. rubric:: Teil 1 - „informelle“ Präsentation und Vorführung
 
 (*Je Gruppe max. 45 Minuten inkl. Diskussion/Rückfragen*)
@@ -222,7 +225,7 @@ Je Gruppe:
 
 .. class:: fade-out
 
-4. Projektkonzeption - 16.09.2024 [Optional - Online] 
+4. Projektkonzeption - 16.09.2024 [Optional - Online]
 -------------------------------------------------------------------------------------------------
 
 :BBB: https://bbb.dhbw.de/mannheim/eic-mn5-hvh-7qd
@@ -254,16 +257,16 @@ Je Gruppe:
 
 .. supplemental::
 
-    .. admonition:: Notenrelevante Präsentationen (je Gruppe max 50 Punkte) 
+    .. admonition:: Notenrelevante Präsentationen (je Gruppe max 50 Punkte)
 
         - [1P] Projektorganisation (Projektname, Zuständigkeiten)
         - [1P] gewählte Lizenz(en)
-    
+
         *(Sie können die Reihenfolge der folgenden Punkte bei der Präsentation anpassen.)*
 
-        - [4P] identifizierte Risiken und Maßnahmen zur Risikominimierung/-vermeidung    
-        - [6P] Präsentation der Technologien des (aktuellen) Technologiestacks 
-        - [8P] Architektur mit Hilfe von UML Diagrammen 
+        - [4P] identifizierte Risiken und Maßnahmen zur Risikominimierung/-vermeidung
+        - [6P] Präsentation der Technologien des (aktuellen) Technologiestacks
+        - [8P] Architektur mit Hilfe von UML Diagrammen
         - [4P] UI Konzept (z. B. Wireframes oder Mockups)
         - [3P] nicht-funktionale Anforderungen
 
@@ -272,7 +275,7 @@ Je Gruppe:
         - [10P] Qualitätsmaßnahmen: Welche sind wann und warum geplant. Wie sieht die konkrete Ausgestaltung aus.
 
         - [8P] Akzeptanzkriterien für die User Stories
-        - [2P] Schätzung der User Stories 
+        - [2P] Schätzung der User Stories
 
 
 
@@ -283,10 +286,10 @@ Je Gruppe:
 
 .. rubric:: Teil 1
 
-**Je Gruppe**: 
+**Je Gruppe**:
 
 - Präsentation des aktuellen Projektfortschritts (Umgesetzte User Stories; geplanter und tatsächlicher Aufwand; Entwicklung der Story Points)
-- ggf. Präsentation von unerwarteten Problemen und deren Lösung 
+- ggf. Präsentation von unerwarteten Problemen und deren Lösung
 - Präsentation der Ressourcenplanung (zur Verfügung stehende Arbeitszeit pro Person) für nächste Iteration
 
 .. rubric:: Teil 2
@@ -303,12 +306,12 @@ Je Gruppe:
 
 .. class:: fade-out
 
-2. Projektrealisierung - 07.10.2024 [Optional - Online] 
+2. Projektrealisierung - 07.10.2024 [Optional - Online]
 -------------------------------------------------------------------------------------------------
 
 :BBB: https://bbb.dhbw.de/mannheim/eic-mn5-hvh-7qd
 
-**Je Gruppe**: 
+**Je Gruppe**:
 
 - Entwicklung der Anwendung (d. h. der gewählten User Stories)
 - Durchführung der QS
@@ -322,10 +325,10 @@ Je Gruppe:
 
 .. rubric:: Teil 1
 
-**Je Gruppe**: 
+**Je Gruppe**:
 
 - Präsentation des aktuellen Projektfortschritts (Umgesetzte User Stories; geplanter und tatsächlicher Aufwand; Entwicklung der Story Points)
-- ggf. Präsentation von unerwarteten Problemen und deren Lösung 
+- ggf. Präsentation von unerwarteten Problemen und deren Lösung
 - Präsentation der Ressourcenplanung (zur Verfügung stehende Arbeitszeit pro Person) für nächste Iteration
 
 .. rubric:: Teil 2
@@ -342,12 +345,12 @@ Je Gruppe:
 
 .. class:: fade-out
 
-4. Projektrealisierung - 21.10.2024 [Optional - Online] 
+4. Projektrealisierung - 21.10.2024 [Optional - Online]
 -------------------------------------------------------------------------------------------------
 
 :BBB: https://bbb.dhbw.de/mannheim/eic-mn5-hvh-7qd
 
-**Je Gruppe**: 
+**Je Gruppe**:
 
 - Entwicklung der Anwendung (d. h. der gewählten User Stories)
 - Durchführung der QS
@@ -359,26 +362,26 @@ Je Gruppe:
 
 5. Projektrealisierung - 28.10.2024
 --------------------------------------------
-    
+
 **Je Gruppe**: Zwischenpräsentation (ca. 45 - 60 Minuten je Gruppe inkl. Diskussion/Rückfragen)
 
 .. supplemental::
 
-    .. admonition:: Notenrelevante Bestandteile (20% der endgültigen Projektnote) 
+    .. admonition:: Notenrelevante Bestandteile (20% der endgültigen Projektnote)
 
         - [8P] [Vorführung] aktueller Projektstand
-  
+
           Hier ist eine Livedemo des aktuellen Projektstandes notwendig. Es sollte klar ersichtlich sein, welche Funktionalitäten bereits umgesetzt wurden und welche noch nicht.
 
         - [5P] [Präsentation] aktuell implementierte Architektur
-  
+
           Eine Darstellung der *Architektur* unter Verwendung der UML ist notwendig.  Ggf. ist auch eine Darstellung des Datenbankschemas notwendig.
 
         - [4P] [Präsentation] Stand der QS
-          
-          Eine präzise Darstellung der bisher durchgeführten QS-Maßnahmen und der Ergebnisse ist notwendig. 
+
+          Eine präzise Darstellung der bisher durchgeführten QS-Maßnahmen und der Ergebnisse ist notwendig.
         - [3P] [Präsentation] Build-Prozess (und CI/CD-Pipeline)
-     
+
           Es sollen alle Schritte genau dargelegt werden. Inkl. Konfiguration und Zielen. Sollten Standardkonfigurationen (zum Beispiel für Codeformatierung) verwendet werden, so ist ein Verweis darauf ausreichend. Es muss klar ersichtlich sein, welche Schritte manuell und welche automatisiert durchgeführt werden. Für manuelle Schritte ist ggf. zu begründen warum diese nicht automatisiert werden können. Insbesondere ist der Prozess darzustellen, wie auf Probleme (zum Beispiel beim Merge, Tests, ...) reagiert wird.
 
 
@@ -397,7 +400,7 @@ Projektrealisierung Teil 2
 
 - Noten Zwischenpräsentation
 - Überblick über den weiteren Ablauf
-- nächste Schritte / User Stories auswählen 
+- nächste Schritte / User Stories auswählen
 
   (Kanboard: http://141.72.12.83/kanboard-1.2.39/)
 
@@ -406,14 +409,14 @@ Projektrealisierung Teil 2
   Start der ersten Iteration
 
 
-7. Projektrealisierung - 24. Feb 2025 
+7. Projektrealisierung - 24. Feb 2025
 --------------------------------------------
 
 .. container:: exclamation-mark
 
   Online: https://bbb.dhbw.de/mannheim/eic-mn5-hvh-7qd
 
-- Diskussion von Rückfragen 
+- Diskussion von Rückfragen
 
 
 
@@ -465,7 +468,7 @@ Projektrealisierung Teil 2
 
 
 
-11. Projektrealisierung - 31. März 2025 
+11. Projektrealisierung - 31. März 2025
 --------------------------------------------
 
 .. container:: exclamation-mark
@@ -474,23 +477,23 @@ Projektrealisierung Teil 2
 
 
 
-12. Projektrealisierung - 8. Apr 2025 
--------------------------------------------- 
+12. Projektrealisierung - 8. Apr 2025
+--------------------------------------------
 
 - Festlegen der abzuschließenden User Stories
 - Besprechung der Endabgaben und der Bewertungskriterien
 - Diskussion der Anforderungen an die Abschlusspräsentation
 
-.. story:: 
+.. story::
 
-  .. rubric:: Notenrelevante Bestandteile 
+  .. rubric:: Notenrelevante Bestandteile
 
   .. class:: incremental-list
 
-  :`Zwischenpräsentation`:obsolete::	
+  :`Zwischenpräsentation`:obsolete::
       ∑ 20 (erledigt)
 
-  :Projekt: 
+  :Projekt:
     **∑ 50**
 
     - Sourcecode	**25**
@@ -519,7 +522,7 @@ Projektrealisierung Teil 2
 
 
 
-Projektabschluss - 22. Apr 2025 
+Projektabschluss - 22. Apr 2025
 -----------------------------------------
 
 .. class:: list-with-explanations
@@ -537,8 +540,6 @@ Projektabschluss - 22. Apr 2025
   :peripheral:`Videos sind per Downloadlink zur Verfügung zu stellen. Die Auflösung sollte dabei (1600-1920) x (1080-1200) auf keinen Fall überschreiten.`
 
 .. attention::
-  :class: incremental 
+  :class: incremental
 
   Dies markiert das Endes der vierten Iteration!
-
-
