@@ -16,7 +16,7 @@ Code Reviews
 
 :Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
 :Kontakt: michael.eichberg@dhbw.de
-:Version: 0.1
+:Version: 0.1.1
 
 .. supplemental::
 
@@ -127,7 +127,7 @@ Code Review von CSS
     - Modularisiert
     - Einfachheit des Layouts?
     - Gibt es ein klares Vorgehen (Mobile-first or Desktop-first)?
-    - Werden Tools eingesetzt, um bei der Formatierung dem Linting zu helfen.
+    - Werden Tools eingesetzt, um bei der Formatierung bzw. dem Linting zu helfen.
     - Sind komplizierte Selektoren - falls notwendig - dokumentiert/begründet/nachhvollziehbar?
 
 
@@ -193,7 +193,7 @@ Code Reviews von JavaScript
 
       (D. h. sind Variablen, Klassen, Methoden, ... -namen korrekt und sinnvoll?)
     - Werden Sonderfälle und Fehlerzustände behandelt?
-    - Ist die Fehlerbehandlung konsisten und für den Endnutzer nachvollziehbar?
+    - Ist die Fehlerbehandlung konsistent und für den Endnutzer nachvollziehbar?
     - Werden keine Fehler „verschluckt“?
     - Wird null/undefined korrekt behandelt?
     - Wird modernes JavaScript verwendet (z. B. Klassen, :javascript:`const` und :javascript:`let` anstatt von `var`, Destrukturierung, Spread und Rest Operator etc.)?
