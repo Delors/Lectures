@@ -1,0 +1,1033 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+    "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg
+    xmlns:xl="http://www.w3.org/1999/xlink"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns="http://www.w3.org/2000/svg"
+    version="1.1"
+    viewBox="69 -10 928 515"
+    width="464"
+    height="262"
+>
+<style>
+  @import url('/LectureDoc2/ext/fonts/ld-fonts.css');
+</style>
+  <defs>
+    <filter id="Shadow" filterUnits="userSpaceOnUse" x="-23.8" y="-61.5">
+      <feGaussianBlur in="SourceAlpha" result="blur" stdDeviation="1.308" />
+      <feOffset in="blur" result="offset" dx="0" dy="2" />
+      <feFlood flood-color="black" flood-opacity=".5" result="flood" />
+      <feComposite in="flood" in2="offset" operator="in" result="color" />
+      <feMerge>
+        <feMergeNode in="color" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+    <marker
+            orient="auto"
+            overflow="visible"
+            markerUnits="strokeWidth"
+            id="FilledArrow_Marker"
+            stroke-linejoin="miter"
+            stroke-miterlimit="10"
+            viewBox="-1 -3 6 6"
+            markerWidth="6"
+            markerHeight="6"
+            color="black"
+        >
+      <g>
+        <path
+                    d="M 3.7333333 0 L 0 -1.4 L 0 1.4 Z"
+                    fill="currentColor"
+                    stroke="currentColor"
+                    stroke-width="1"
+                />
+      </g>
+    </marker>
+    <marker
+            orient="auto"
+            overflow="visible"
+            markerUnits="strokeWidth"
+            id="FilledArrow_Marker_2"
+            stroke-linejoin="miter"
+            stroke-miterlimit="10"
+            viewBox="-1 -3 7 6"
+            markerWidth="7"
+            markerHeight="6"
+            color="black"
+        >
+      <g>
+        <path
+                    d="M 4.8 0 L 0 -1.8 L 0 1.8 Z"
+                    fill="currentColor"
+                    stroke="currentColor"
+                    stroke-width="1"
+                />
+      </g>
+    </marker>
+  </defs>
+  <metadata> Produced by OmniGraffle 8.0\n2025-05-29 19:07:20 +0000</metadata>
+  <g
+        id="enc_with_priv_key"
+        stroke="none"
+        stroke-opacity="1"
+        stroke-dasharray="none"
+        fill-opacity="1"
+        fill="none"
+    >
+    <title>enc_with_priv_key</title>
+    <rect fill="white" x="69" y="-10" width="928" height="515" />
+    <g id="enc_with_priv_key_Layer_1">
+      <title>Layer 1</title>
+      <g id="Graphic_5" filter="url(#Shadow)">
+        <path
+                    d="M 77.5 260.5 L 176.5 260.5 L 176.5 359.7 C 146.8 347.3 107.2 396.9 77.5 372.1 Z"
+                    fill="white"
+                />
+        <clipPath id="clip_path">
+          <path
+                        d="M 0 0 L 99 0 L 99 99.2 C 69.3 86.8 29.7 136.4 0 111.6 Z"
+                        fill="white"
+                    />
+        </clipPath>
+        <text
+                    clip-path="url(#clip_path)"
+                    transform="translate(82.5 265.5)"
+                    fill="#797979"
+                >
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="7"
+                        font-weight="400"
+                        fill="#797979"
+                        x="0"
+                        y="7"
+                    >Lorem ipsum dolor sit amet, </tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="7"
+                        font-weight="400"
+                        fill="#797979"
+                        x="0"
+                        y="16"
+                    >consectetur adipiscing elit, </tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="7"
+                        font-weight="400"
+                        fill="#797979"
+                        x="0"
+                        y="25"
+                    >sed do eiusmod tempor </tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="7"
+                        font-weight="400"
+                        fill="#797979"
+                        x="0"
+                        y="34"
+                    >incididunt ut labore et </tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="7"
+                        font-weight="400"
+                        fill="#797979"
+                        x="0"
+                        y="43"
+                    >dolore magna aliqua. Ut </tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="7"
+                        font-weight="400"
+                        fill="#797979"
+                        x="0"
+                        y="52"
+                    >enim ad minim veniam, quis </tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="7"
+                        font-weight="400"
+                        fill="#797979"
+                        x="0"
+                        y="61"
+                    >nostrud exercitation </tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="7"
+                        font-weight="400"
+                        fill="#797979"
+                        x="0"
+                        y="70"
+                    >ullamco laboris nisi ut </tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="7"
+                        font-weight="400"
+                        fill="#797979"
+                        x="0"
+                        y="79"
+                    >aliquip ex ea commodo </tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="7"
+                        font-weight="400"
+                        fill="#797979"
+                        x="0"
+                        y="88"
+                    >consequat. Duis aute irure </tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="7"
+                        font-weight="400"
+                        fill="#797979"
+                        x="0"
+                        y="97"
+                    >dolor in reprehende</tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="7"
+                        font-weight="400"
+                        fill="#797979"
+                        x="0"
+                        y="106"
+                    >voluptate velit</tspan>
+        </text>
+      </g>
+      <g id="Graphic_6" filter="url(#Shadow)">
+        <path
+                    d="M 423.2682 192.5 L 522.2682 192.5 L 522.2682 291.7 C 492.5682 279.3 452.9682 328.9 423.2682 304.1 Z"
+                    fill="white"
+                />
+        <clipPath id="clip_path_2">
+          <path
+                        d="M 0 0 L 99 0 L 99 99.2 C 69.3 86.8 29.7 136.4 0 111.6 Z"
+                        fill="white"
+                    />
+        </clipPath>
+        <text
+                    clip-path="url(#clip_path_2)"
+                    transform="translate(428.2682 197.5)"
+                    fill="#797979"
+                >
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="7"
+                        font-weight="400"
+                        fill="#797979"
+                        x="0"
+                        y="7"
+                    >OXANV RYBDV MXUXA BRC </tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="7"
+                        font-weight="400"
+                        fill="#797979"
+                        x="0"
+                        y="16"
+                    >JVNCI LXWBNLCNCDA </tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="7"
+                        font-weight="400"
+                        fill="#797979"
+                        x="0"
+                        y="25"
+                    >JMRYRBLRWP NURCI BNM </tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="7"
+                        font-weight="400"
+                        fill="#797979"
+                        x="0"
+                        y="34"
+                    >MX NRDBVXM CNVYXA </tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="7"
+                        font-weight="400"
+                        fill="#797979"
+                        x="0"
+                        y="43"
+                    >RWLRMRMDWC DC UJKXAN </tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="7"
+                        font-weight="400"
+                        fill="#797979"
+                        x="0"
+                        y="52"
+                    >NC MXUXAN VJPWJ JURZDJK </tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="7"
+                        font-weight="400"
+                        fill="#797979"
+                        x="0"
+                        y="61"
+                    >XC NWRV JM VRWRV </tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="7"
+                        font-weight="400"
+                        fill="#797979"
+                        x="0"
+                        y="70"
+                    >ENWRJVI ZDRB WXBCADM </tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="7"
+                        font-weight="400"
+                        fill="#797979"
+                        x="0"
+                        y="79"
+                    >NGNALRCJCRXW DUUJVLX </tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="7"
+                        font-weight="400"
+                        fill="#797979"
+                        x="0"
+                        y="88"
+                    >UJK</tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="7"
+                        font-weight="400"
+                        fill="#797979"
+                        x="0"
+                        y="97"
+                    >XARB </tspan>
+        </text>
+      </g>
+      <g id="Graphic_7" filter="url(#Shadow)">
+        <path
+                    d="M 888.5903 260.5 L 987.5903 260.5 L 987.5903 359.7 C 957.8903 347.3 918.2903 396.9 888.5903 372.1 Z"
+                    fill="white"
+                />
+        <clipPath id="clip_path_3">
+          <path
+                        d="M 0 0 L 99 0 L 99 99.2 C 69.3 86.8 29.7 136.4 0 111.6 Z"
+                        fill="white"
+                    />
+        </clipPath>
+        <text
+                    clip-path="url(#clip_path_3)"
+                    transform="translate(893.5903 265.5)"
+                    fill="#797979"
+                >
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="7"
+                        font-weight="400"
+                        fill="#797979"
+                        x="0"
+                        y="7"
+                    >Lorem ipsum dolor sit amet, </tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="7"
+                        font-weight="400"
+                        fill="#797979"
+                        x="0"
+                        y="16"
+                    >consectetur adipiscing elit, </tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="7"
+                        font-weight="400"
+                        fill="#797979"
+                        x="0"
+                        y="25"
+                    >sed do eiusmod tempor </tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="7"
+                        font-weight="400"
+                        fill="#797979"
+                        x="0"
+                        y="34"
+                    >incididunt ut labore et </tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="7"
+                        font-weight="400"
+                        fill="#797979"
+                        x="0"
+                        y="43"
+                    >dolore magna aliqua. Ut </tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="7"
+                        font-weight="400"
+                        fill="#797979"
+                        x="0"
+                        y="52"
+                    >enim ad minim veniam, quis </tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="7"
+                        font-weight="400"
+                        fill="#797979"
+                        x="0"
+                        y="61"
+                    >nostrud exercitation </tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="7"
+                        font-weight="400"
+                        fill="#797979"
+                        x="0"
+                        y="70"
+                    >ullamco laboris nisi ut </tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="7"
+                        font-weight="400"
+                        fill="#797979"
+                        x="0"
+                        y="79"
+                    >aliquip ex ea commodo </tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="7"
+                        font-weight="400"
+                        fill="#797979"
+                        x="0"
+                        y="88"
+                    >consequat. Duis aute irure </tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="7"
+                        font-weight="400"
+                        fill="#797979"
+                        x="0"
+                        y="97"
+                    >dolor in reprehende</tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="7"
+                        font-weight="400"
+                        fill="#797979"
+                        x="0"
+                        y="106"
+                    >voluptate velit</tspan>
+        </text>
+      </g>
+      <g id="Graphic_10">
+        <text transform="translate(605.16135 203.3812) rotate(-45)" fill="black">
+          <tspan
+                        font-family="Apple Color Emoji"
+                        font-size="48"
+                        font-weight="400"
+                        fill="black"
+                        x="0"
+                        y="48"
+                    >🔑</tspan>
+        </text>
+      </g>
+      <g id="Graphic_11">
+        <text transform="translate(670.6785 190.6845)" fill="black">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="24"
+                        font-weight="400"
+                        fill="black"
+                        x="0"
+                        y="26"
+                    >PU</tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="24"
+                        font-weight="400"
+                        fill="black"
+                        y="39"
+                    >b</tspan>
+        </text>
+      </g>
+      <g id="Graphic_12">
+        <text transform="translate(299.81518 195.6845)" fill="black">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="24"
+                        font-style="italic"
+                        font-weight="400"
+                        fill="black"
+                        x="29132252e-20"
+                        y="26"
+                    >PR</tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="24"
+                        font-style="italic"
+                        font-weight="400"
+                        fill="black"
+                        y="39"
+                    >b</tspan>
+        </text>
+      </g>
+      <g id="Graphic_13">
+        <text transform="translate(175.5625 -9.9375)" fill="black">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="28"
+                        font-weight="400"
+                        fill="black"
+                        x="87.97275"
+                        y="30"
+                    >Bobs </tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="28"
+                        font-weight="400"
+                        fill="black"
+                        x="9.69875"
+                        y="68"
+                    >privater Schlüssel</tspan>
+        </text>
+      </g>
+      <g id="Graphic_15">
+        <text transform="translate(387.96657 119.8125)" fill="#797979">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="24"
+                        font-weight="400"
+                        fill="#797979"
+                        x="14.61925"
+                        y="26"
+                    >übertragener</tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="24"
+                        font-weight="400"
+                        fill="#797979"
+                        x="29.82325"
+                        y="59"
+                    >Chiffretext</tspan>
+        </text>
+      </g>
+      <g id="Graphic_16">
+        <text transform="translate(386.73695 328)" fill="black">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="24"
+                        font-style="italic"
+                        font-weight="400"
+                        fill="black"
+                        x="25.94725"
+                        y="26"
+                    >Y</tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="24"
+                        font-weight="400"
+                        fill="black"
+                        y="26"
+                    > = E(</tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="24"
+                        font-style="italic"
+                        font-weight="400"
+                        fill="black"
+                        y="26"
+                    >PR</tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="24"
+                        font-style="italic"
+                        font-weight="400"
+                        fill="black"
+                        y="39"
+                    >b</tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="24"
+                        font-weight="400"
+                        fill="black"
+                        y="26"
+                    >,</tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="24"
+                        font-style="italic"
+                        font-weight="400"
+                        fill="black"
+                        y="26"
+                    >X</tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="24"
+                        font-weight="400"
+                        fill="black"
+                        y="26"
+                    >)</tspan>
+        </text>
+      </g>
+      <g id="Graphic_17">
+        <text transform="translate(81 195.5)" fill="black">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="24"
+                        font-weight="400"
+                        fill="black"
+                        x="3.778"
+                        y="26"
+                    >Klartext</tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="20"
+                        font-weight="400"
+                        fill="black"
+                        x="3.81"
+                        y="54"
+                    >(Eingabe)</tspan>
+        </text>
+      </g>
+      <g id="Graphic_18">
+        <text transform="translate(893.5903 195.5)" fill="black">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="24"
+                        font-weight="400"
+                        fill="black"
+                        x="3.028"
+                        y="26"
+                    >Klartext</tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="20"
+                        font-weight="400"
+                        fill="black"
+                        x=".2"
+                        y="54"
+                    >(Ausgabe)</tspan>
+        </text>
+      </g>
+      <g id="Graphic_19">
+        <rect x="236" y="255" width="123" height="132" fill="#7e90b4" />
+        <rect
+                    x="236"
+                    y="255"
+                    width="123"
+                    height="132"
+                    stroke="#344463"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="4"
+                />
+      </g>
+      <g id="Graphic_22">
+        <text transform="translate(270.53125 297)" fill="black">
+          <tspan
+                        font-family="Apple Color Emoji"
+                        font-size="48"
+                        font-weight="400"
+                        fill="black"
+                        x="0"
+                        y="48"
+                    >🔒</tspan>
+        </text>
+      </g>
+      <g id="Graphic_23">
+        <rect x="598.5903" y="255" width="123" height="132" fill="#7e90b4" />
+        <rect
+                    x="598.5903"
+                    y="255"
+                    width="123"
+                    height="132"
+                    stroke="#344463"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="4"
+                />
+      </g>
+      <g id="Graphic_21">
+        <text transform="translate(635.5903 293)" fill="black">
+          <tspan
+                        font-family="Apple Color Emoji"
+                        font-size="48"
+                        font-weight="400"
+                        fill="black"
+                        x="0"
+                        y="48"
+                    >🔓</tspan>
+        </text>
+      </g>
+      <g id="Graphic_24">
+        <text transform="translate(160.50861 329)" fill="black">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="24"
+                        font-style="italic"
+                        font-weight="400"
+                        fill="black"
+                        x="33.693625"
+                        y="26"
+                    >X</tspan>
+        </text>
+      </g>
+      <g id="Graphic_25">
+        <text transform="translate(715 328)" fill="black">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="24"
+                        font-style="italic"
+                        font-weight="400"
+                        fill="black"
+                        x="15.248"
+                        y="26"
+                    >X </tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="24"
+                        font-weight="400"
+                        fill="black"
+                        y="26"
+                    >= D(</tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="24"
+                        font-style="italic"
+                        font-weight="400"
+                        fill="black"
+                        y="26"
+                    >PU</tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="24"
+                        font-style="italic"
+                        font-weight="400"
+                        fill="black"
+                        y="39"
+                    >b</tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="24"
+                        font-weight="400"
+                        fill="black"
+                        y="26"
+                    >,</tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="24"
+                        font-style="italic"
+                        font-weight="400"
+                        fill="black"
+                        y="26"
+                    >Y</tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="24"
+                        font-weight="400"
+                        fill="black"
+                        y="26"
+                    >)</tspan>
+        </text>
+      </g>
+      <g id="Line_26">
+        <line
+                    x1="176.5"
+                    y1="322.5"
+                    x2="220.1"
+                    y2="322.5"
+                    marker-end="url(#FilledArrow_Marker)"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="3"
+                />
+      </g>
+      <g id="Line_27">
+        <line
+                    x1="359.8"
+                    y1="323"
+                    x2="584.2333"
+                    y2="323"
+                    marker-end="url(#FilledArrow_Marker)"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="3"
+                />
+      </g>
+      <g id="Line_28">
+        <line
+                    x1="721.5903"
+                    y1="322.5"
+                    x2="872.6903"
+                    y2="322.5"
+                    marker-end="url(#FilledArrow_Marker)"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="3"
+                />
+      </g>
+      <g id="Graphic_29">
+        <text transform="translate(192.5 392)" fill="#344463">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="24"
+                        font-weight="400"
+                        fill="#344463"
+                        x="9.336"
+                        y="26"
+                    >Verschlüsselungs-</tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="24"
+                        font-weight="400"
+                        fill="#344463"
+                        x="40.104"
+                        y="59"
+                    >algorithmus</tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="24"
+                        font-weight="400"
+                        fill="#344463"
+                        x="52.248"
+                        y="92"
+                    >(z.B. RSA)</tspan>
+        </text>
+      </g>
+      <g id="Graphic_30">
+        <text transform="translate(559.0989 392)" fill="#344463">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="24"
+                        font-weight="400"
+                        fill="#344463"
+                        x="9.576"
+                        y="26"
+                    >Entschlüsselungs-</tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="24"
+                        font-weight="400"
+                        fill="#344463"
+                        x="40.104"
+                        y="59"
+                    >algorithmus</tspan>
+        </text>
+      </g>
+      <g id="Graphic_31">
+        <text transform="translate(238.029 203.3812) rotate(-45)" fill="black">
+          <tspan
+                        font-family="Apple Color Emoji"
+                        font-size="48"
+                        font-weight="400"
+                        fill="black"
+                        x="0"
+                        y="48"
+                    >🔑</tspan>
+        </text>
+      </g>
+      <g id="Line_39">
+        <line
+                    x1="294.49345"
+                    y1="66.0625"
+                    x2="294.31832"
+                    y2="242.1"
+                    marker-end="url(#FilledArrow_Marker_2)"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                />
+      </g>
+      <g id="Graphic_56">
+        <text transform="translate(74.89619 465.7587)" fill="black">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="24"
+                        font-weight="400"
+                        fill="black"
+                        x="2344791e-19"
+                        y="26"
+                    >Bob</tspan>
+        </text>
+      </g>
+      <g id="Graphic_57">
+        <text transform="translate(559.0989 465.7587)" fill="black">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="24"
+                        font-weight="400"
+                        fill="black"
+                        x="0"
+                        y="26"
+                    >Alice</tspan>
+        </text>
+      </g>
+      <g id="Line_58">
+        <path
+                    d="M 70.242215 439.7004 L 70.242215 503.7587 L 400.63295 503.7587 L 400.63295 439.9345"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                />
+      </g>
+      <g id="Line_59">
+        <path
+                    d="M 554.0989 439.9345 L 554.0989 503.7587 L 996 503.7587 L 996 437.4655"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                />
+      </g>
+      <g id="Graphic_66">
+        <text transform="translate(508.49306 -9.9375)" fill="black">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="28"
+                        font-weight="400"
+                        fill="black"
+                        x="148.79148"
+                        y="30"
+                    >Alices </tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="28"
+                        font-weight="400"
+                        fill="black"
+                        x="20.67748"
+                        y="68"
+                    >Ring öffentlicher Schlüssel</tspan>
+        </text>
+      </g>
+      <g id="Graphic_77">
+        <text transform="translate(629.1387 101.1312) rotate(-45)" fill="black">
+          <tspan
+                        font-family="Apple Color Emoji"
+                        font-size="48"
+                        font-weight="400"
+                        fill="black"
+                        x="0"
+                        y="48"
+                    >🔑</tspan>
+        </text>
+      </g>
+      <g id="Graphic_76">
+        <text transform="translate(578.06764 134.625)" fill="black">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="28"
+                        font-weight="400"
+                        fill="black"
+                        x="61.36325"
+                        y="30"
+                    >Bob</tspan>
+        </text>
+      </g>
+      <g id="Graphic_75">
+        <text transform="translate(748.8546 133.8125)" fill="black">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="28"
+                        font-weight="400"
+                        fill="black"
+                        x="13.390744"
+                        y="30"
+                    >Joe</tspan>
+        </text>
+      </g>
+      <g id="Graphic_74">
+        <text transform="translate(556.75215 134.625)" fill="black">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="28"
+                        font-weight="400"
+                        fill="black"
+                        x="14.617495"
+                        y="30"
+                    >Jane</tspan>
+        </text>
+      </g>
+      <g id="Graphic_73">
+        <text transform="translate(695.0916 134.625)" fill="black">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="28"
+                        font-weight="400"
+                        fill="black"
+                        x="5.553285"
+                        y="30"
+                    >Ted</tspan>
+        </text>
+      </g>
+      <g id="Line_72">
+        <line
+                    x1="664.0989"
+                    y1="177.625"
+                    x2="664.0989"
+                    y2="242.1"
+                    marker-end="url(#FilledArrow_Marker_2)"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                />
+      </g>
+      <g id="Graphic_71">
+        <text transform="translate(683.3664 101.1312) rotate(-45)" fill="black">
+          <tspan
+                        font-family="Apple Color Emoji"
+                        font-size="48"
+                        font-weight="400"
+                        fill="black"
+                        x="0"
+                        y="48"
+                    >🔑</tspan>
+        </text>
+      </g>
+      <g id="Graphic_70">
+        <text transform="translate(565.1387 101.1312) rotate(-45)" fill="black">
+          <tspan
+                        font-family="Apple Color Emoji"
+                        font-size="48"
+                        font-weight="400"
+                        fill="black"
+                        x="0"
+                        y="48"
+                    >🔑</tspan>
+        </text>
+      </g>
+      <g id="Graphic_69">
+        <text transform="translate(742.0689 100.3187) rotate(-45)" fill="black">
+          <tspan
+                        font-family="Apple Color Emoji"
+                        font-size="48"
+                        font-weight="400"
+                        fill="black"
+                        x="0"
+                        y="48"
+                    >🔑</tspan>
+        </text>
+      </g>
+      <g id="Graphic_68">
+        <rect
+                    x="565.0291"
+                    y="66.875"
+                    width="65.03857"
+                    height="106.75"
+                    fill="white"
+                    fill-opacity=".7283163"
+                />
+      </g>
+      <g id="Graphic_67">
+        <rect
+                    x="694.0089"
+                    y="66.0625"
+                    width="124.76322"
+                    height="106.75"
+                    fill="white"
+                    fill-opacity=".7283163"
+                />
+      </g>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,709 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+    "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg
+    xmlns="http://www.w3.org/2000/svg"
+    version="1.1"
+    xmlns:xl="http://www.w3.org/1999/xlink"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    viewBox="99 509 972 472"
+    width="571"
+    height="277"
+>
+<style>
+  @import url('/LectureDoc2/ext/fonts/ld-fonts.css');
+</style>
+  <defs>
+    <filter id="Shadow" filterUnits="userSpaceOnUse" x="1.8" y="461.8">
+      <feGaussianBlur in="SourceAlpha" result="blur" stdDeviation="1.308" />
+      <feOffset in="blur" result="offset" dx="0" dy="2" />
+      <feFlood flood-color="black" flood-opacity=".5" result="flood" />
+      <feComposite in="flood" in2="offset" operator="in" result="color" />
+      <feMerge>
+        <feMergeNode in="color" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+    <marker
+            orient="auto"
+            overflow="visible"
+            markerUnits="strokeWidth"
+            id="FilledArrow_Marker"
+            stroke-linejoin="miter"
+            stroke-miterlimit="10"
+            viewBox="-1 -3 7 6"
+            markerWidth="7"
+            markerHeight="6"
+            color="black"
+        >
+      <g>
+        <path
+                    d="M 4.8 0 L 0 -1.8 L 0 1.8 Z"
+                    fill="currentColor"
+                    stroke="currentColor"
+                    stroke-width="1"
+                />
+      </g>
+    </marker>
+    <marker
+            orient="auto"
+            overflow="visible"
+            markerUnits="strokeWidth"
+            id="SharpArrow_Marker"
+            stroke-linejoin="miter"
+            stroke-miterlimit="10"
+            viewBox="-3 -3 7 6"
+            markerWidth="7"
+            markerHeight="6"
+            color="#666"
+        >
+      <g>
+        <path
+                    d="M 3 0 L -1.8 -1.8 L 0 0 L 0 0 L -1.8 1.8 Z"
+                    fill="currentColor"
+                    stroke="currentColor"
+                    stroke-width="1"
+                />
+      </g>
+    </marker>
+  </defs>
+  <metadata> Produced by OmniGraffle 8.0\n2025-05-11 09:05:47 +0000</metadata>
+  <g
+        id="authentication_and_encryption"
+        stroke-dasharray="none"
+        stroke="none"
+        stroke-opacity="1"
+        fill="none"
+        fill-opacity="1"
+    >
+    <title>authentication_and_encryption</title>
+    <rect fill="white" x="99" y="509" width="972" height="472" />
+    <g id="authentication_and_encryption_Layer_1">
+      <title>Layer 1</title>
+      <g id="Graphic_59">
+        <path
+                    d="M 428 600 L 437 600 C 441.4183 600 445 603.5817 445 608 L 445 662 C 445 666.4183 441.4183 670 437 670 L 428 670 C 423.5817 670 420 666.4183 420 662 L 420 608 C 420 603.5817 423.5817 600 428 600 Z"
+                    fill="#98dde7"
+                />
+        <path
+                    d="M 428 600 L 437 600 C 441.4183 600 445 603.5817 445 608 L 445 662 C 445 666.4183 441.4183 670 437 670 L 428 670 C 423.5817 670 420 666.4183 420 662 L 420 608 C 420 603.5817 423.5817 600 428 600 Z"
+                    stroke="#a5a5a5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
+      </g>
+      <g id="Graphic_2">
+        <path
+                    d="M 108 510 L 292 510 C 296.41828 510 300 513.5817 300 518 L 300 572 C 300 576.4183 296.41828 580 292 580 L 108 580 C 103.58172 580 100 576.4183 100 572 L 100 518 C 100 513.5817 103.58172 510 108 510 Z"
+                    fill="#6bd9a5"
+                    fill-opacity=".2690371"
+                />
+        <path
+                    d="M 108 510 L 292 510 C 296.41828 510 300 513.5817 300 518 L 300 572 C 300 576.4183 296.41828 580 292 580 L 108 580 C 103.58172 580 100 576.4183 100 572 L 100 518 C 100 513.5817 103.58172 510 108 510 Z"
+                    stroke="#a5a5a5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
+        <text transform="translate(100 528.5)" fill="black">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="24"
+                        font-weight="400"
+                        fill="black"
+                        x="89.728"
+                        y="26"
+                        xml:space="preserve"
+                    >M</tspan>
+        </text>
+      </g>
+      <g id="Graphic_30">
+        <path
+                    d="M 233 610 L 292 610 C 296.41828 610 300 613.5817 300 618 L 300 672 C 300 676.4183 296.41828 680 292 680 L 233 680 C 228.58172 680 225 676.4183 225 672 L 225 618 C 225 613.5817 228.58172 610 233 610 Z"
+                    fill="#6b7ca5"
+                    fill-opacity=".2690371"
+                />
+        <path
+                    d="M 233 610 L 292 610 C 296.41828 610 300 613.5817 300 618 L 300 672 C 300 676.4183 296.41828 680 292 680 L 233 680 C 228.58172 680 225 676.4183 225 672 L 225 618 C 225 613.5817 228.58172 610 233 610 Z"
+                    stroke="#a5a5a5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
+        <text transform="translate(225 628.5)" fill="black">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="24"
+                        font-weight="400"
+                        fill="black"
+                        x="29.112"
+                        y="26"
+                        xml:space="preserve"
+                    >H</tspan>
+        </text>
+      </g>
+      <g id="Graphic_31">
+        <path
+                    d="M 403 510 L 462 510 C 466.4183 510 470 513.5817 470 518 L 470 572 C 470 576.4183 466.4183 580 462 580 L 403 580 C 398.5817 580 395 576.4183 395 572 L 395 518 C 395 513.5817 398.5817 510 403 510 Z"
+                    fill="#bd7ca5"
+                    fill-opacity=".2690371"
+                />
+        <path
+                    d="M 403 510 L 462 510 C 466.4183 510 470 513.5817 470 518 L 470 572 C 470 576.4183 466.4183 580 462 580 L 403 580 C 398.5817 580 395 576.4183 395 572 L 395 518 C 395 513.5817 398.5817 510 403 510 Z"
+                    stroke="#a5a5a5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
+        <text transform="translate(395 530)" fill="black">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="24"
+                        font-weight="400"
+                        fill="black"
+                        x="31.08"
+                        y="18"
+                        xml:space="preserve"
+                    >‖</tspan>
+        </text>
+      </g>
+      <g id="Line_33" filter="url(#Shadow)">
+        <line
+                    x1="300"
+                    y1="545"
+                    x2="382.1"
+                    y2="545"
+                    marker-end="url(#FilledArrow_Marker)"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                />
+      </g>
+      <g id="Line_34" filter="url(#Shadow)">
+        <path
+                    d="M 405 645 L 424.5 645 C 428.9183 645 432.5 641.4183 432.5 637 L 432.5 592.9"
+                    marker-end="url(#FilledArrow_Marker)"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                />
+      </g>
+      <g id="Line_35" filter="url(#Shadow)">
+        <path
+                    d="M 200 580 L 200 637 C 200 641.4183 203.58172 645 208 645 L 212.1 645"
+                    marker-end="url(#FilledArrow_Marker)"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                />
+      </g>
+      <g id="Line_43" filter="url(#Shadow)">
+        <path
+                    d="M 940 845 L 996.424 845 C 1000.8423 845 1004.424 848.5817 1004.424 853 L 1004.424 862.1"
+                    marker-end="url(#FilledArrow_Marker)"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                />
+      </g>
+      <g id="Line_44" filter="url(#Shadow)">
+        <path
+                    d="M 940 945 L 996.424 945 C 1000.8423 945 1004.424 941.4183 1004.424 937 L 1004.424 930.9"
+                    marker-end="url(#FilledArrow_Marker)"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                />
+      </g>
+      <g id="Graphic_46">
+        <text transform="translate(943.788 880)" fill="black">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="24"
+                        font-weight="700"
+                        fill="black"
+                        x="4192202e-19"
+                        y="26"
+                        xml:space="preserve"
+                    >Vergleiche</tspan>
+        </text>
+      </g>
+      <g id="Line_47" filter="url(#Shadow)">
+        <path
+                    d="M 705 880 L 705 937 C 705 941.4183 708.5817 945 713 945 L 852.1 945"
+                    marker-end="url(#FilledArrow_Marker)"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                />
+      </g>
+      <g id="Line_58" filter="url(#Shadow)">
+        <line
+                    x1="300"
+                    y1="645"
+                    x2="317.1"
+                    y2="645"
+                    marker-end="url(#FilledArrow_Marker)"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                />
+      </g>
+      <g id="Graphic_69">
+        <path
+                    d="M 873 810 L 932 810 C 936.4183 810 940 813.5817 940 818 L 940 872 C 940 876.4183 936.4183 880 932 880 L 873 880 C 868.5817 880 865 876.4183 865 872 L 865 818 C 865 813.5817 868.5817 810 873 810 Z"
+                    fill="#ffdf00"
+                    fill-opacity=".69467715"
+                />
+        <path
+                    d="M 873 810 L 932 810 C 936.4183 810 940 813.5817 940 818 L 940 872 C 940 876.4183 936.4183 880 932 880 L 873 880 C 868.5817 880 865 876.4183 865 872 L 865 818 C 865 813.5817 868.5817 810 873 810 Z"
+                    stroke="#a5a5a5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
+        <text transform="translate(865 828.5)" fill="black">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="24"
+                        font-weight="400"
+                        fill="black"
+                        x="29.256"
+                        y="26"
+                        xml:space="preserve"
+                    >D</tspan>
+        </text>
+      </g>
+      <g id="Line_68" filter="url(#Shadow)">
+        <line
+                    x1="830"
+                    y1="845"
+                    x2="852.1"
+                    y2="845"
+                    marker-end="url(#FilledArrow_Marker)"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                />
+      </g>
+      <g id="Graphic_74">
+        <path
+                    d="M 338 610 L 397 610 C 401.4183 610 405 613.5817 405 618 L 405 672 C 405 676.4183 401.4183 680 397 680 L 338 680 C 333.58172 680 330 676.4183 330 672 L 330 618 C 330 613.5817 333.58172 610 338 610 Z"
+                    fill="#f27577"
+                />
+        <path
+                    d="M 338 610 L 397 610 C 401.4183 610 405 613.5817 405 618 L 405 672 C 405 676.4183 401.4183 680 397 680 L 338 680 C 333.58172 680 330 676.4183 330 672 L 330 618 C 330 613.5817 333.58172 610 338 610 Z"
+                    stroke="#a5a5a5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
+        <text transform="translate(330 628.5)" fill="black">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="24"
+                        font-weight="400"
+                        fill="black"
+                        x="31.224"
+                        y="26"
+                        xml:space="preserve"
+                    >E</tspan>
+        </text>
+      </g>
+      <g id="Graphic_76">
+        <text transform="translate(971.7511 765)" fill="#666">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="24"
+                        font-weight="400"
+                        fill="#666"
+                        x="3907985e-19"
+                        y="26"
+                        xml:space="preserve"
+                    >PU</tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="16"
+                        font-weight="400"
+                        fill="#666"
+                        y="34"
+                        xml:space="preserve"
+                    >a</tspan>
+        </text>
+      </g>
+      <g id="Line_75">
+        <line
+                    x1="966.7511"
+                    y1="801.136"
+                    x2="947.6808"
+                    y2="814.1552"
+                    marker-end="url(#SharpArrow_Marker)"
+                    stroke="#666"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                />
+      </g>
+      <g id="Graphic_77">
+        <path
+                    d="M 613 810 L 797 810 C 801.4183 810 805 813.5817 805 818 L 805 872 C 805 876.4183 801.4183 880 797 880 L 613 880 C 608.5817 880 605 876.4183 605 872 L 605 818 C 605 813.5817 608.5817 810 613 810 Z"
+                    fill="#6bd9a5"
+                    fill-opacity=".2690371"
+                />
+        <path
+                    d="M 613 810 L 797 810 C 801.4183 810 805 813.5817 805 818 L 805 872 C 805 876.4183 801.4183 880 797 880 L 613 880 C 608.5817 880 605 876.4183 605 872 L 605 818 C 605 813.5817 608.5817 810 613 810 Z"
+                    stroke="#a5a5a5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
+        <text transform="translate(605 828.5)" fill="black">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="24"
+                        font-weight="400"
+                        fill="black"
+                        x="89.728"
+                        y="26"
+                        xml:space="preserve"
+                    >M</tspan>
+        </text>
+      </g>
+      <g id="Graphic_78">
+        <path
+                    d="M 813 810 L 822 810 C 826.4183 810 830 813.5817 830 818 L 830 872 C 830 876.4183 826.4183 880 822 880 L 813 880 C 808.5817 880 805 876.4183 805 872 L 805 818 C 805 813.5817 808.5817 810 813 810 Z"
+                    fill="#98dde7"
+                />
+        <path
+                    d="M 813 810 L 822 810 C 826.4183 810 830 813.5817 830 818 L 830 872 C 830 876.4183 826.4183 880 822 880 L 813 880 C 808.5817 880 805 876.4183 805 872 L 805 818 C 805 813.5817 808.5817 810 813 810 Z"
+                    stroke="#a5a5a5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
+      </g>
+      <g id="Graphic_79">
+        <text transform="translate(721.8145 895)" fill="black">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="24"
+                        font-weight="400"
+                        fill="black"
+                        x="0"
+                        y="26"
+                    >E(PR</tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="16"
+                        font-weight="400"
+                        fill="black"
+                        y="34"
+                    >a</tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="24"
+                        font-weight="400"
+                        fill="black"
+                        y="26"
+                    >, H(M))</tspan>
+        </text>
+      </g>
+      <g id="Graphic_80">
+        <path
+                    d="M 873 910 L 932 910 C 936.4183 910 940 913.5817 940 918 L 940 972 C 940 976.4183 936.4183 980 932 980 L 873 980 C 868.5817 980 865 976.4183 865 972 L 865 918 C 865 913.5817 868.5817 910 873 910 Z"
+                    fill="#6b7ca5"
+                    fill-opacity=".2690371"
+                />
+        <path
+                    d="M 873 910 L 932 910 C 936.4183 910 940 913.5817 940 918 L 940 972 C 940 976.4183 936.4183 980 932 980 L 873 980 C 868.5817 980 865 976.4183 865 972 L 865 918 C 865 913.5817 868.5817 910 873 910 Z"
+                    stroke="#a5a5a5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
+        <text transform="translate(865 928.5)" fill="black">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="24"
+                        font-weight="400"
+                        fill="black"
+                        x="29.112"
+                        y="26"
+                        xml:space="preserve"
+                    >H</tspan>
+        </text>
+      </g>
+      <g id="Graphic_82">
+        <text transform="translate(300 715)" fill="#666">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="24"
+                        font-weight="400"
+                        fill="#666"
+                        x="856204e-18"
+                        y="26"
+                        xml:space="preserve"
+                    >PR</tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="16"
+                        font-weight="400"
+                        fill="#666"
+                        y="34"
+                        xml:space="preserve"
+                    >a</tspan>
+        </text>
+      </g>
+      <g id="Line_81">
+        <line
+                    x1="335"
+                    y1="730"
+                    x2="354"
+                    y2="688"
+                    marker-end="url(#SharpArrow_Marker)"
+                    stroke="#666"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                />
+      </g>
+      <g id="Line_83">
+        <line
+                    x1="805"
+                    y1="871.3757"
+                    x2="796.1736"
+                    y2="890"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-dasharray="8.0,8.0"
+                    stroke-width="2"
+                />
+      </g>
+      <g id="Graphic_92">
+        <path
+                    d="M 435.5 710 L 654.5 710 C 658.9183 710 662.5 713.5817 662.5 718 L 662.5 772 C 662.5 776.4183 658.9183 780 654.5 780 L 435.5 780 C 431.0817 780 427.5 776.4183 427.5 772 L 427.5 718 C 427.5 713.5817 431.0817 710 435.5 710 Z"
+                    fill="#fde6e5"
+                />
+        <path
+                    d="M 435.5 710 L 654.5 710 C 658.9183 710 662.5 713.5817 662.5 718 L 662.5 772 C 662.5 776.4183 658.9183 780 654.5 780 L 435.5 780 C 431.0817 780 427.5 776.4183 427.5 772 L 427.5 718 C 427.5 713.5817 431.0817 710 435.5 710 Z"
+                    stroke="#a5a5a5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
+        <text transform="translate(427.5 725.5)" fill="black">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="24"
+                        font-weight="400"
+                        fill="black"
+                        x="4.416"
+                        y="26"
+                        xml:space="preserve"
+                    >E(K,[M</tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="12"
+                        font-weight="400"
+                        fill="black"
+                        y="26"
+                        xml:space="preserve"
+                    > </tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="24"
+                        font-weight="400"
+                        fill="black"
+                        y="26"
+                    >‖</tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="24"
+                        font-weight="400"
+                        fill="black"
+                        y="26"
+                    > E(PR</tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="16"
+                        font-weight="400"
+                        fill="black"
+                        y="34"
+                    >a</tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="24"
+                        font-weight="400"
+                        fill="black"
+                        y="26"
+                        xml:space="preserve"
+                    >,H(M)])</tspan>
+        </text>
+      </g>
+      <g id="Graphic_91">
+        <path
+                    d="M 508 510 L 567 510 C 571.4183 510 575 513.5817 575 518 L 575 572 C 575 576.4183 571.4183 580 567 580 L 508 580 C 503.5817 580 500 576.4183 500 572 L 500 518 C 500 513.5817 503.5817 510 508 510 Z"
+                    fill="#f26077"
+                    fill-opacity=".63017696"
+                />
+        <path
+                    d="M 508 510 L 567 510 C 571.4183 510 575 513.5817 575 518 L 575 572 C 575 576.4183 571.4183 580 567 580 L 508 580 C 503.5817 580 500 576.4183 500 572 L 500 518 C 500 513.5817 503.5817 510 508 510 Z"
+                    stroke="#a5a5a5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
+        <text transform="translate(500 528.5)" fill="black">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="24"
+                        font-weight="400"
+                        fill="black"
+                        x="31.224"
+                        y="26"
+                        xml:space="preserve"
+                    >E</tspan>
+        </text>
+      </g>
+      <g id="Line_90" filter="url(#Shadow)">
+        <line
+                    x1="470"
+                    y1="545"
+                    x2="487.1"
+                    y2="545"
+                    marker-end="url(#FilledArrow_Marker)"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                />
+      </g>
+      <g id="Line_89" filter="url(#Shadow)">
+        <line
+                    x1="537.9375"
+                    y1="580"
+                    x2="539.40126"
+                    y2="697.101"
+                    marker-end="url(#FilledArrow_Marker)"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                />
+      </g>
+      <g id="Graphic_88">
+        <path
+                    d="M 510.5 810 L 569.5 810 C 573.9183 810 577.5 813.5817 577.5 818 L 577.5 872 C 577.5 876.4183 573.9183 880 569.5 880 L 510.5 880 C 506.0817 880 502.5 876.4183 502.5 872 L 502.5 818 C 502.5 813.5817 506.0817 810 510.5 810 Z"
+                    fill="#faa82e"
+                    fill-opacity=".69467715"
+                />
+        <path
+                    d="M 510.5 810 L 569.5 810 C 573.9183 810 577.5 813.5817 577.5 818 L 577.5 872 C 577.5 876.4183 573.9183 880 569.5 880 L 510.5 880 C 506.0817 880 502.5 876.4183 502.5 872 L 502.5 818 C 502.5 813.5817 506.0817 810 510.5 810 Z"
+                    stroke="#a5a5a5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
+        <text transform="translate(502.5 828.5)" fill="black">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="24"
+                        font-weight="400"
+                        fill="black"
+                        x="29.256"
+                        y="26"
+                        xml:space="preserve"
+                    >D</tspan>
+        </text>
+      </g>
+      <g id="Line_87" filter="url(#Shadow)">
+        <line
+                    x1="540"
+                    y1="780"
+                    x2="540"
+                    y2="797.1"
+                    marker-end="url(#FilledArrow_Marker)"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                />
+      </g>
+      <g id="Line_86" filter="url(#Shadow)">
+        <line
+                    x1="577.5"
+                    y1="845"
+                    x2="592.1"
+                    y2="845"
+                    marker-end="url(#FilledArrow_Marker)"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                />
+      </g>
+      <g id="Graphic_85">
+        <text transform="translate(590 910)" fill="#666">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="24"
+                        font-weight="400"
+                        fill="#666"
+                        x="4360956e-19"
+                        y="26"
+                        xml:space="preserve"
+                    >K</tspan>
+        </text>
+      </g>
+      <g id="Line_84">
+        <line
+                    x1="603.4839"
+                    y1="605.4822"
+                    x2="579.733"
+                    y2="583.7116"
+                    marker-end="url(#SharpArrow_Marker)"
+                    stroke="#666"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                />
+      </g>
+      <g id="Line_93">
+        <line
+                    x1="585"
+                    y1="918"
+                    x2="560.0534"
+                    y2="888.4438"
+                    marker-end="url(#SharpArrow_Marker)"
+                    stroke="#666"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                />
+      </g>
+      <g id="Graphic_94">
+        <text transform="translate(608.4839 600)" fill="#666">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="24"
+                        font-weight="400"
+                        fill="#666"
+                        x="4360956e-19"
+                        y="26"
+                        xml:space="preserve"
+                    >K</tspan>
+        </text>
+      </g>
+    </g>
+  </g>
+</svg>

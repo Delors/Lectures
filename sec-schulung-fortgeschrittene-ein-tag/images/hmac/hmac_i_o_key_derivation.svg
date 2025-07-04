@@ -1,0 +1,549 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+    "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg
+    xmlns:xl="http://www.w3.org/1999/xlink"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns="http://www.w3.org/2000/svg"
+    version="1.1"
+    viewBox="8 84 1163 327"
+  width="581"
+  height="163"
+        
+>
+<style>
+  @import url('/LectureDoc2/ext/fonts/ld-fonts.css');
+</style>
+  <metadata> Produced by OmniGraffle 8.0\n2025-05-29 14:22:01 +0000</metadata>
+  <g
+        id="hmac_i_o_key_derivation"
+        stroke="none"
+        stroke-opacity="1"
+        stroke-dasharray="none"
+        fill-opacity="1"
+        fill="none"
+    >
+    <title>hmac_i_o_key_derivation</title>
+    <g id="hmac_i_o_key_derivation_Layer_1">
+      <title>Layer 1</title>
+      <g id="Graphic_11">
+        <path
+                    d="M 278 335 L 462 335 C 466.4183 335 470 338.58172 470 343 L 470 397 C 470 401.4183 466.4183 405 462 405 L 278 405 C 273.58172 405 270 401.4183 270 397 L 270 343 C 270 338.58172 273.58172 335 278 335 Z"
+                    fill="#ded4e8"
+                    fill-opacity=".7503294"
+                />
+        <path
+                    d="M 278 335 L 462 335 C 466.4183 335 470 338.58172 470 343 L 470 397 C 470 401.4183 466.4183 405 462 405 L 278 405 C 273.58172 405 270 401.4183 270 397 L 270 343 C 270 338.58172 273.58172 335 278 335 Z"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
+      </g>
+      <g id="Graphic_2">
+        <path
+                    d="M 278 85 L 462 85 C 466.4183 85 470 88.58172 470 93 L 470 147 C 470 151.41828 466.4183 155 462 155 L 278 155 C 273.58172 155 270 151.41828 270 147 L 270 93 C 270 88.58172 273.58172 85 278 85 Z"
+                    fill="#6b7ca5"
+                    fill-opacity=".2690371"
+                />
+        <path
+                    d="M 278 85 L 462 85 C 466.4183 85 470 88.58172 470 93 L 470 147 C 470 151.41828 466.4183 155 462 155 L 278 155 C 273.58172 155 270 151.41828 270 147 L 270 93 C 270 88.58172 273.58172 85 278 85 Z"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
+        <text transform="translate(270 103.5)" fill="black">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="24"
+                        font-weight="400"
+                        fill="black"
+                        x="81.94"
+                        y="26"
+                        xml:space="preserve"
+                    >key</tspan>
+        </text>
+      </g>
+      <g id="Graphic_4">
+        <path
+                    d="M 278 200 L 687 200 C 691.4183 200 695 203.58172 695 208 L 695 262 C 695 266.41828 691.4183 270 687 270 L 278 270 C 273.58172 270 270 266.41828 270 262 L 270 208 C 270 203.58172 273.58172 200 278 200 Z"
+                    fill="#fde6e5"
+                />
+        <path
+                    d="M 278 200 L 687 200 C 691.4183 200 695 203.58172 695 208 L 695 262 C 695 266.41828 691.4183 270 687 270 L 278 270 C 273.58172 270 270 266.41828 270 262 L 270 208 C 270 203.58172 273.58172 200 278 200 Z"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
+        <text transform="translate(270 218.5)" fill="black">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="24"
+                        font-weight="400"
+                        fill="black"
+                        x="189.28"
+                        y="26"
+                        xml:space="preserve"
+                    >ipad</tspan>
+        </text>
+      </g>
+      <g id="Graphic_5">
+        <text transform="translate(14 406) rotate(-90)" fill="black">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="24"
+                        font-weight="400"
+                        fill="black"
+                        x="8.528"
+                        y="26"
+                        xml:space="preserve"
+                    >Ableitung der Schlüssel, die </tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="24"
+                        font-weight="400"
+                        fill="black"
+                        x="87.176"
+                        y="59"
+                        xml:space="preserve"
+                    >jeweils in die </tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="24"
+                        font-weight="400"
+                        fill="black"
+                        x="7.16"
+                        y="92"
+                        xml:space="preserve"
+                    >Hashberechnung eingehen.</tspan>
+        </text>
+      </g>
+      <g id="Graphic_9">
+        <path
+                    d="M 478 85 L 687 85 C 691.4183 85 695 88.58172 695 93 L 695 147 C 695 151.41828 691.4183 155 687 155 L 478 155 C 473.5817 155 470 151.41828 470 147 L 470 93 C 470 88.58172 473.5817 85 478 85 Z"
+                    fill="#dadada"
+                />
+        <path
+                    d="M 478 85 L 687 85 C 691.4183 85 695 88.58172 695 93 L 695 147 C 695 151.41828 691.4183 155 687 155 L 478 155 C 473.5817 155 470 151.41828 470 147 L 470 93 C 470 88.58172 473.5817 85 478 85 Z"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-dasharray="4.0,4.0"
+                    stroke-width="1"
+                />
+        <text transform="translate(475 85)" fill="#666">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="18"
+                        font-weight="400"
+                        fill="#666"
+                        x="44.17972"
+                        y="19"
+                        xml:space="preserve"
+                    > ((B - len(key)) </tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="18"
+                        font-weight="400"
+                        fill="#666"
+                        y="19"
+                        xml:space="preserve"
+                    >⨉</tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="18"
+                        font-weight="400"
+                        fill="#666"
+                        y="19"
+                        xml:space="preserve"
+                    > 0x00)</tspan>
+        </text>
+      </g>
+      <g id="Graphic_10">
+        <path
+                    d="M 478 335 L 687 335 C 691.4183 335 695 338.58172 695 343 L 695 397 C 695 401.4183 691.4183 405 687 405 L 478 405 C 473.5817 405 470 401.4183 470 397 L 470 343 C 470 338.58172 473.5817 335 478 335 Z"
+                    fill="#fee7e6"
+                />
+        <path
+                    d="M 478 335 L 687 335 C 691.4183 335 695 338.58172 695 343 L 695 397 C 695 401.4183 691.4183 405 687 405 L 478 405 C 473.5817 405 470 401.4183 470 397 L 470 343 C 470 338.58172 473.5817 335 478 335 Z"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-dasharray="4.0,4.0"
+                    stroke-width="1"
+                />
+        <text transform="translate(475 335)" fill="#666">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="16"
+                        font-weight="400"
+                        fill="#666"
+                        x="63.15975"
+                        y="17"
+                        xml:space="preserve"
+                    > ((B - len(key)) </tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="16"
+                        font-weight="400"
+                        fill="#666"
+                        y="17"
+                        xml:space="preserve"
+                    >⨉</tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="16"
+                        font-weight="400"
+                        fill="#666"
+                        y="17"
+                        xml:space="preserve"
+                    > 0x36)</tspan>
+        </text>
+      </g>
+      <g id="Graphic_7">
+        <path
+                    d="M 278 335 L 687 335 C 691.4183 335 695 338.58172 695 343 L 695 397 C 695 401.4183 691.4183 405 687 405 L 278 405 C 273.58172 405 270 401.4183 270 397 L 270 343 C 270 338.58172 273.58172 335 278 335 Z"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
+        <text transform="translate(270 353.5)" fill="black">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="24"
+                        font-weight="400"
+                        fill="black"
+                        x="165.364"
+                        y="26"
+                        xml:space="preserve"
+                    >i key pad</tspan>
+        </text>
+      </g>
+      <g id="Graphic_12">
+        <text transform="translate(446.9746 160)" fill="#a5a5a5">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="52"
+                        font-weight="400"
+                        fill="#a5a5a5"
+                        x="0"
+                        y="35"
+                        xml:space="preserve"
+                    >⊕</tspan>
+        </text>
+      </g>
+      <g id="Graphic_15">
+        <text transform="translate(450.812 270)" fill="#a5a5a5">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="52"
+                        font-weight="400"
+                        fill="#a5a5a5"
+                        x="0"
+                        y="56"
+                        xml:space="preserve"
+                    >=</tspan>
+        </text>
+      </g>
+      <g id="Graphic_17" />
+      <g id="Graphic_18">
+        <path
+                    d="M 278 200 L 687 200 C 691.4183 200 695 203.58172 695 208 L 695 262 C 695 266.41828 691.4183 270 687 270 L 278 270 C 273.58172 270 270 266.41828 270 262 L 270 208 C 270 203.58172 273.58172 200 278 200 Z"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
+        <text transform="translate(275 205)" fill="#666">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="16"
+                        font-weight="400"
+                        fill="#666"
+                        x="343.81575"
+                        y="17"
+                        xml:space="preserve"
+                    >(B </tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="16"
+                        font-weight="400"
+                        fill="#666"
+                        y="17"
+                        xml:space="preserve"
+                    >⨉</tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="16"
+                        font-weight="400"
+                        fill="#666"
+                        y="17"
+                        xml:space="preserve"
+                    > 0x36)</tspan>
+        </text>
+      </g>
+      <g id="Graphic_28">
+        <path
+                    d="M 753 335 L 937 335 C 941.4183 335 945 338.58172 945 343 L 945 397 C 945 401.4183 941.4183 405 937 405 L 753 405 C 748.5817 405 745 401.4183 745 397 L 745 343 C 745 338.58172 748.5817 335 753 335 Z"
+                    fill="#73d4e8"
+                    fill-opacity=".50628294"
+                />
+        <path
+                    d="M 753 335 L 937 335 C 941.4183 335 945 338.58172 945 343 L 945 397 C 945 401.4183 941.4183 405 937 405 L 753 405 C 748.5817 405 745 401.4183 745 397 L 745 343 C 745 338.58172 748.5817 335 753 335 Z"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
+      </g>
+      <g id="Graphic_27">
+        <path
+                    d="M 753 85 L 937 85 C 941.4183 85 945 88.58172 945 93 L 945 147 C 945 151.41828 941.4183 155 937 155 L 753 155 C 748.5817 155 745 151.41828 745 147 L 745 93 C 745 88.58172 748.5817 85 753 85 Z"
+                    fill="#6b7ca5"
+                    fill-opacity=".2690371"
+                />
+        <path
+                    d="M 753 85 L 937 85 C 941.4183 85 945 88.58172 945 93 L 945 147 C 945 151.41828 941.4183 155 937 155 L 753 155 C 748.5817 155 745 151.41828 745 147 L 745 93 C 745 88.58172 748.5817 85 753 85 Z"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
+        <text transform="translate(745 103.5)" fill="black">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="24"
+                        font-weight="400"
+                        fill="black"
+                        x="81.94"
+                        y="26"
+                        xml:space="preserve"
+                    >key</tspan>
+        </text>
+      </g>
+      <g id="Graphic_26">
+        <path
+                    d="M 753 200 L 1162 200 C 1166.4183 200 1170 203.58172 1170 208 L 1170 262 C 1170 266.41828 1166.4183 270 1162 270 L 753 270 C 748.5817 270 745 266.41828 745 262 L 745 208 C 745 203.58172 748.5817 200 753 200 Z"
+                    fill="#c5e6e5"
+                />
+        <path
+                    d="M 753 200 L 1162 200 C 1166.4183 200 1170 203.58172 1170 208 L 1170 262 C 1170 266.41828 1166.4183 270 1162 270 L 753 270 C 748.5817 270 745 266.41828 745 262 L 745 208 C 745 203.58172 748.5817 200 753 200 Z"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
+        <text transform="translate(745 218.5)" fill="black">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="24"
+                        font-weight="400"
+                        fill="black"
+                        x="185.392"
+                        y="26"
+                        xml:space="preserve"
+                    >opad</tspan>
+        </text>
+      </g>
+      <g id="Graphic_25">
+        <path
+                    d="M 953 85 L 1162 85 C 1166.4183 85 1170 88.58172 1170 93 L 1170 147 C 1170 151.41828 1166.4183 155 1162 155 L 953 155 C 948.5817 155 945 151.41828 945 147 L 945 93 C 945 88.58172 948.5817 85 953 85 Z"
+                    fill="#dadada"
+                />
+        <path
+                    d="M 953 85 L 1162 85 C 1166.4183 85 1170 88.58172 1170 93 L 1170 147 C 1170 151.41828 1166.4183 155 1162 155 L 953 155 C 948.5817 155 945 151.41828 945 147 L 945 93 C 945 88.58172 948.5817 85 953 85 Z"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-dasharray="4.0,4.0"
+                    stroke-width="1"
+                />
+        <text transform="translate(950 85)" fill="#666">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="18"
+                        font-weight="400"
+                        fill="#666"
+                        x="44.17972"
+                        y="19"
+                        xml:space="preserve"
+                    > ((B - len(key)) </tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="18"
+                        font-weight="400"
+                        fill="#666"
+                        y="19"
+                        xml:space="preserve"
+                    >⨉</tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="18"
+                        font-weight="400"
+                        fill="#666"
+                        y="19"
+                        xml:space="preserve"
+                    > 0x00)</tspan>
+        </text>
+      </g>
+      <g id="Graphic_24">
+        <path
+                    d="M 953 335 L 1162 335 C 1166.4183 335 1170 338.58172 1170 343 L 1170 397 C 1170 401.4183 1166.4183 405 1162 405 L 953 405 C 948.5817 405 945 401.4183 945 397 L 945 343 C 945 338.58172 948.5817 335 953 335 Z"
+                    fill="#c5e6e5"
+                />
+        <path
+                    d="M 953 335 L 1162 335 C 1166.4183 335 1170 338.58172 1170 343 L 1170 397 C 1170 401.4183 1166.4183 405 1162 405 L 953 405 C 948.5817 405 945 401.4183 945 397 L 945 343 C 945 338.58172 948.5817 335 953 335 Z"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-dasharray="4.0,4.0"
+                    stroke-width="1"
+                />
+        <text transform="translate(950 335)" fill="#666">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="16"
+                        font-weight="400"
+                        fill="#666"
+                        x="62.24775"
+                        y="17"
+                        xml:space="preserve"
+                    > ((B - len(key)) </tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="16"
+                        font-weight="400"
+                        fill="#666"
+                        y="17"
+                        xml:space="preserve"
+                    >⨉</tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="16"
+                        font-weight="400"
+                        fill="#666"
+                        y="17"
+                        xml:space="preserve"
+                    > 0x5C)</tspan>
+        </text>
+      </g>
+      <g id="Graphic_23">
+        <path
+                    d="M 753 335 L 1162 335 C 1166.4183 335 1170 338.58172 1170 343 L 1170 397 C 1170 401.4183 1166.4183 405 1162 405 L 753 405 C 748.5817 405 745 401.4183 745 397 L 745 343 C 745 338.58172 748.5817 335 753 335 Z"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
+        <text transform="translate(745 353.5)" fill="black">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="24"
+                        font-weight="400"
+                        fill="black"
+                        x="161.476"
+                        y="26"
+                        xml:space="preserve"
+                    >o key pad</tspan>
+        </text>
+      </g>
+      <g id="Graphic_22">
+        <text transform="translate(921.9746 160)" fill="#a5a5a5">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="52"
+                        font-weight="400"
+                        fill="#a5a5a5"
+                        x="0"
+                        y="35"
+                        xml:space="preserve"
+                    >⊕</tspan>
+        </text>
+      </g>
+      <g id="Graphic_21">
+        <text transform="translate(925.812 270)" fill="#a5a5a5">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="52"
+                        font-weight="400"
+                        fill="#a5a5a5"
+                        x="0"
+                        y="56"
+                        xml:space="preserve"
+                    >=</tspan>
+        </text>
+      </g>
+      <g id="Graphic_20" />
+      <g id="Graphic_19">
+        <path
+                    d="M 753 200 L 1162 200 C 1166.4183 200 1170 203.58172 1170 208 L 1170 262 C 1170 266.41828 1166.4183 270 1162 270 L 753 270 C 748.5817 270 745 266.41828 745 262 L 745 208 C 745 203.58172 748.5817 200 753 200 Z"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
+        <text transform="translate(750 205)" fill="#666">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="16"
+                        font-weight="400"
+                        fill="#666"
+                        x="345.14375"
+                        y="17"
+                        xml:space="preserve"
+                    >(B </tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="16"
+                        font-weight="400"
+                        fill="#666"
+                        y="17"
+                        xml:space="preserve"
+                    >⨉</tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="16"
+                        font-weight="400"
+                        fill="#666"
+                        y="17"
+                        xml:space="preserve"
+                    > 0x5c)</tspan>
+        </text>
+      </g>
+      <g id="Graphic_29">
+        <text transform="translate(134 406) rotate(-90)" fill="black">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="24"
+                        font-weight="400"
+                        fill="black"
+                        x="14.612"
+                        y="26"
+                        xml:space="preserve"
+                    >Die Blockgröße sei B bytes </tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="24"
+                        font-weight="400"
+                        fill="black"
+                        x="14.96"
+                        y="59"
+                        xml:space="preserve"
+                    >und der Schlüssel (Key) sei </tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="24"
+                        font-weight="400"
+                        fill="black"
+                        x="117.416"
+                        y="92"
+                        xml:space="preserve"
+                    >kleiner.</tspan>
+        </text>
+      </g>
+    </g>
+  </g>
+</svg>
