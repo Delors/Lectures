@@ -5,6 +5,7 @@
     :description lang=de: Entwicklung verteilter Systeme
     :id: lecture-w3wi_110-entwicklung_verteilter_systeme
     :first-slide: last-viewed
+    :master-password: WirklichSchwierig!
 
 .. include:: ../docutils.defs
 
@@ -72,6 +73,16 @@ Zwei Bestandteile:
    1. Projekt (Funktionsumfang, Code, Dokumentation, etc.)
    2. Abschlusspräsentation / Vorführung
    3. Code Reviews
+
+
+Gruppenarbeit = Gruppennote
+------------------------------
+
+.. container:: exclamation-mark
+
+    Das Projekt ist als Gruppenarbeit ausgelegt und alle Gruppenmitglieder erhalten für den Projekteil die gleiche Note.
+
+    Sollte eine individuelle Benoten gewünscht sein, dann ist dies **vor Abgabe des Projekts** explizit zu kommunizieren, damit das weitere Vorgehen besprochen werden kann.
 
 
 
@@ -184,7 +195,7 @@ Ablauf - W3WI-110 - Entwicklung verteilter Systeme 23SEB
 
       Gegenseitige Code Reviews und Präsentation der Ergebnisse der Code-Reviews.
 
-      (Jedes Team führt ein Review durch (30 Minuten) und wird auch einmal reviewed. Danach erstellen alle Teams einen Bericht über das Projekt, dass sie reviewed haben. Dafür stehen ca. 30 Minuten zur Verfügung. Die Berichte werden danach präsentiert (ca. 10 Minuten). Die Präsentation und die Berichte werden als Teil der Gruppenleistung bewertet.)
+      (Jedes Team führt ein Review durch (45 Minuten) und wird auch einmal reviewed. Danach erstellen alle Teams einen Bericht über das Projekt, dass sie reviewed haben. Dafür stehen ca. 45 Minuten zur Verfügung. Die Berichte werden danach präsentiert (ca. 10 Minuten). Die Präsentation und die Berichte werden als Teil der Gruppenleistung bewertet.)
 
     - Scheduled: 7. Jul 2025 at 13:15 to 17:30, CEST
 
@@ -195,3 +206,69 @@ Ablauf - W3WI-110 - Entwicklung verteilter Systeme 23SEB
       Abschlusspräsentationen (Vorstellung des Tools und Vorstellung wie die Komponenten genutzt werden kann - d. h. Code zeige) und Vorführung der Projekte.
 
       Die Projektabgabe ist am 9.7.2025 um 23:59 Uhr.
+
+
+Code Reviews - 4.7.2025
+----------------------------
+
+1. Durchführung eines Code Reviews (Frontend, Backend, Buildscripte, Projektstruktur, Dokumentation,...) eines anderen Projektes (2 * 45 Minuten)
+
+   Die Code Reviews erfolgen in zwei Runden, damit jede Gruppe ein Review bekommmt; die Gruppen sollten sich aufteilen, damit alle Teile reviewt werden!
+
+
+   .. presenter-note::
+
+        Zuteilung in der ersten Runde:
+
+        .. csv-table::
+            :header: "Gruppe", "Review von"
+
+            1, 5
+            2, 6
+            3, 4
+
+        Zuteilung in der zweiten Runde:
+
+        .. csv-table::
+            :header: "Gruppe", "Review von"
+
+            4, 1
+            5, 2
+            6, 3
+
+3. Erstellung eines Reports, der konstruktive Vorschläge enthält (30-45 Minuten).
+
+4. Präsentation der Reports
+
+.. supplemental::
+
+    - Gruppe 1:	Planning Poker
+        Nico Wrede,
+        Max Meinel,
+        Okan Sönmez,
+        Johannes Kling
+    - Gruppe 2:	CoCreate
+        Ramona Korten,
+        Monika Pjano,
+        Paulina Klaus,
+        Lisa Molter
+    - Gruppe 3:	Chat App
+        Jonas Stammer,
+        Felix Erhard,
+        Luca Bäck,
+        Raphael Plett
+    - Gruppe 4:	Chat App
+        Iven Stahl,
+        Christian Zweigert,
+        Ibrahim Tikce,
+        Nils Teschke
+    - Gruppe 5:	Tool für Umfragen
+        Jonathan Wieder,
+        Mika Jun,
+        Leon Priemer,
+        Sergio Meli
+    - Gruppe 6:	Planning Poker
+        Tom Weber,
+        Tarnbir Singh,
+        Jan Müller,
+        Dilmand Sado
