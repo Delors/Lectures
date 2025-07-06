@@ -17,7 +17,7 @@ Public-Key-Kryptographie und RSA
 
 :Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
 :Kontakt: michael.eichberg@dhbw.de
-:Version: 1.1
+:Version: 1.1.1
 :Basierend auf: *Cryptography and Network Security - Principles and Practice, 8th Edition, William Stallings*
 
 .. supplemental::
@@ -61,17 +61,6 @@ Terminologie bzgl. asymmetrischer Verschlüsselung
 
     :Public-Key-Infrastruktur (PKI):
             Eine Reihe von Richtlinien, Prozessen, Serverplattformen, Software und Workstations, die für die Verwaltung von Zertifikaten und öffentlich-privaten Schlüsselpaaren verwendet werden, einschließlich der Möglichkeit, Public-Key-Zertifikate auszustellen, zu pflegen und zu widerrufen.
-
-
-
-Missverständnisse bei der Verwendung von Public-Key-Kryptosystemen
-------------------------------------------------------------------------
-
-.. class:: incremental-list
-
-- Public-Key-Verschlüsselung ist sicherer vor Kryptoanalyse als die symmetrische Verschlüsselung.
-- Public-Key-Kryptografie (d. h. die Verschlüsselung mit öffentlichen Schlüsseln) ist eine Allzwecktechnik, die die symmetrische Verschlüsselung überflüssig gemacht hat.
-- Man hat das Gefühl, dass die Schlüsselverteilung bei der Verschlüsselung mit öffentlichen Schlüsseln trivial ist, verglichen mit dem mühsamen Handshaking, das bei der symmetrischen Verschlüsselung mit Schlüsselverteilungszentren verbunden ist.
 
 
 
@@ -136,6 +125,7 @@ Verschlüsselung mit privatem Schlüssel
     :align: center
 
 
+
 .. class:: smaller-slide-title
 
 Konventionelle und Public-Key-Verschlüsselung
@@ -162,7 +152,7 @@ Konventionelle und Public-Key-Verschlüsselung
 
                 1.	Der Schlüssel muss geheim gehalten werden.
 
-                2.	Es muss unmöglich oder zumindest unpraktisch sein, eine Nachricht zu entschlüsseln, wenn der Schlüssel geheim gehalten wird.
+                2.	Es muss „\ *unmöglich*\ “ sein, eine Nachricht zu entschlüsseln, wenn der Schlüssel geheim gehalten wird.
 
                 3.	Die Kenntnis des Algorithmus und von (ggf. vielen) Geheimtexten ist nicht ausreichend, um den Schlüssel zu ermitteln.
 
@@ -183,7 +173,7 @@ Konventionelle und Public-Key-Verschlüsselung
 
                 1.	Einer der  Schlüssel muss geheim bleiben.
 
-                2.	Es muss unmöglich sein, eine Nachricht zu entschlüsseln, wenn ein Schlüssel geheim gehalten wird.
+                2.	Es muss „\ *unmöglich*\ “ sein, eine Nachricht zu entschlüsseln, wenn ein Schlüssel geheim gehalten wird.
 
                 3.	Die Kenntnis des Algorithmus und eines Schlüssels sowie von  Geheimtexten ist nicht ausreichend, um den anderen Schlüssel zu ermitteln.
 
@@ -328,6 +318,17 @@ Public-Key-Kryptoanalyse
 .. supplemental::
 
     Bei einem Angriff mit „wahrscheinlicher Nachricht“, verschlüsselt der Angreifer eine Reihe von Nachrichten (z. B. alle DES Schlüssel mit dem öffentlichen Schlüssel des Adressaten) und analysiert die resultierenden Chiffretexte, um den privaten Schlüssel zu ermitteln.
+
+
+
+Missverständnisse bei der Verwendung von Public-Key-Kryptosystemen
+------------------------------------------------------------------------
+
+.. class:: incremental-list
+
+- Public-Key-Verschlüsselung ist sicherer vor Kryptoanalyse als die symmetrische Verschlüsselung.
+- Public-Key-Kryptografie (d. h. die Verschlüsselung mit öffentlichen Schlüsseln) ist eine Allzwecktechnik, die die symmetrische Verschlüsselung überflüssig gemacht hat.
+- Man hat das Gefühl, dass die Schlüsselverteilung bei der Verschlüsselung mit öffentlichen Schlüsseln trivial ist, verglichen mit dem mühsamen Handshaking, das bei der symmetrischen Verschlüsselung mit Schlüsselverteilungszentren verbunden ist.
 
 
 
@@ -517,7 +518,7 @@ Potenzierung in der Modularen Arithmetik
 
   :math:`[(a\; mod\; n) \times (b\; mod\; n)]\; mod\; n =(a \times b)\; mod\; n`
 
-    Beispiel:
+  .. example::
 
     :math:`[11 = 1011_b]\qquad 2^{11} = 2^1 \times 2^2 \times 2^8 = 2 \times 4 \times  256`
 
@@ -570,7 +571,7 @@ Die Ganzzahl :math:`b` wird als Binärzahl ``b[k]b[k-1]...b[0]`` ausgedrückt:
 Ergebnis des schnellen modularen Exponierungsalgorithmus für :math:`a^b\;mod\;n`
 --------------------------------------------------------------------------------
 
-:math:`a=7; b = 560 = 1000110000_b`, und :math:`n=561`
+:math:`a=7; b = 560 = 10\,0011\,0000_b`, und :math:`n=561`
 
 .. csv-table::
     :header: i, 9,8,7,6,5,4,3,2,1,0
