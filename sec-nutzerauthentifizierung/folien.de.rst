@@ -17,7 +17,7 @@ Nutzerauthentifizierung
 
 :Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
 :Kontakt: michael.eichberg@dhbw.de
-:Version: 1.0
+:Version: 1.1
 
 .. supplemental::
 
@@ -161,9 +161,9 @@ Fiat-Shamir Protokoll
 
         4. Peggy berechnet :math:`y = r \cdot s^b \bmod n`
 
-        5. Peggy sende :math-i:`y` an Victor.
+        5. Peggy sendet :math-i:`y` an Victor.
 
-        6. Victor testet:  :math:`x \cdot v^b \bmod n \stackrel{?}{=} y^2 \bmod n`
+        6. Victor testet:  :math:`x \cdot v^{-b} \bmod n \stackrel{?}{=} y^2 \bmod n`
 
 
 
@@ -198,7 +198,7 @@ Fiat-Shamir Protokoll
 
          → Gesucht ist :math:`v = s^{-2} \bmod 21 = 4^{-1} \bmod 21`
 
-         Der Inverse von 4 modulo 21 ist 16, denn: :math:`4 \cdot 16 = 64 \equiv 1 \mod 21`
+         Der Inverse von 4 modulo 21 ist 16, denn: :math:`4 \cdot 16 = 64 \equiv 1 \bmod 21`
 
          → Also: :math:`v = 16`
 
@@ -220,12 +220,12 @@ Fiat-Shamir Protokoll
 
       #. Verifikation durch Victor:
 
-         - :math:`y^2 = 8^2 = 64 \mod 21 = 1`
-         - :math:`x \cdot v^b = 16 \cdot 16 = 256 \mod 21 = 1`
+         - :math:`y^2 = 8^2 = 64 \bmod 21 = 1`
+         - :math:`x \cdot v^{-b} \bmod 21 = 16 \cdot v^{-1} \bmod 21= 16 \cdot 4 \bmod 21 = 64 \bmod 21 = 1`
 
          → Beide Seiten ergeben 1 modulo 21
 
-         Die Gleichung stimmt also: :math:`y^2 \equiv x \cdot v \mod n`
+         Die Gleichung stimmt also: :math:`y^2 \equiv x \cdot v^{-b} \mod n`
 
          Somit ist die Verifikation erfolgreich.
 
