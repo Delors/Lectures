@@ -22,7 +22,7 @@ Betriebsmodi bei Blockchiffren
 
 :Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
 :Kontakt: michael.eichberg@dhbw.de
-:Version: 1.3.1
+:Version: 1.3.2
 :Basierend auf: *Cryptography and Network Security - Principles and Practice, 8th Edition, William Stallings*
 
 .. supplemental::
@@ -119,7 +119,7 @@ Padding-Modi in Blockchiffren
 
     .. remark::
 
-        Bei Blockchiffren (z. B. AES mit 128 Bit = 16 Byte Blockgröße) muss die zu verschlüsselnde Nachricht eine exakte Vielfache der Blockgröße sein. Ist das nicht der Fall, wird Padding verwendet, um die Nachricht auf eine vielfaches der Blockgröße zu bringen.
+        Bei Blockchiffren (z. B. AES mit 128 Bit = 16 Byte Blockgröße) muss die zu verschlüsselnde Nachricht eine exakte Vielfache der Blockgröße sein. Ist das nicht der Fall, wird Padding verwendet, um die Nachricht auf ein vielfaches der Blockgröße zu bringen.
 
     .. rubric:: Ausgewählte Modi
 
@@ -493,7 +493,7 @@ XTS-AES Operation auf einem Block
 
         Ja - das ist möglich; aber nicht empfehlenswert, da dies zusätzliche Sicherheit bringt, wenn doch mal ein Schlüssel wiederverwendet werden sollte.
 
-        **Generell gilt, dass eine konstante Nonce auf keinen Fall zu verwenden ist, da dann zukünftige Nachrichten mit der selben Bitreihenfolge verschlüsselt werden würden und dies würde eine Reihe von Attacken ermöglichen!**
+        **Generell gilt, dass eine konstante Nonce auf keinen Fall zu verwenden ist, da dann zukünftige Nachrichten mit derselben Bitreihenfolge verschlüsselt werden würden und dies würde eine Reihe von Attacken ermöglichen!**
 
         Beispielweise könnte der Angreifer folgende Berechnung durchführen:
 
@@ -523,7 +523,7 @@ XTS-AES Operation auf einem Block
 
         Wenn ein Festplattensektor 4 KiB groß ist und ein Block eine Größe von 128 Bit (16 Byte) hat, dann gilt, dass ein Sektor 4096/16 = 256 Blöcke hat.
 
-        Dadurch kann der Selbe Algorithmus für die Verschlüsselung und die Entschlüsselung verwendet werden.
+        Dadurch kann derselbe Algorithmus für die Verschlüsselung und die Entschlüsselung verwendet werden.
 
 
 
@@ -538,7 +538,7 @@ XTS-AES Operation auf einem Block
 
         Verwenden Sie den OFB-Modus in Kombination mit einer Caesar-Chiffre, bei der die *Blockgröße* ein Zeichen sei.
 
-        Der Schlüssel ist die Anzahl der Zeichen, um die Sie ein Zeichen verschieben wollen - wie zuvor. Der IV ist ein Zeichen. Damit sie ein XOR durchführen können, ordnen wir jedem Zeichen einen Wert zu und erweitern das Alphabet um die Ziffern 1 bis 3, "!", "?" und das "_". Auf diese Weise ist es immer möglich, ein sinnvolles Zeichen auszugeben.
+        Der Schlüssel ist die Anzahl der Zeichen, um die Sie ein Zeichen verschieben wollen - wie zuvor. Der IV ist ein Zeichen. Damit Sie ein XOR durchführen können, ordnen wir jedem Zeichen einen Wert zu und erweitern das Alphabet um die Ziffern 1 bis 3, "!", "?" und das "_". Auf diese Weise ist es immer möglich, ein sinnvolles Zeichen auszugeben.
 
         .. compound::
             :class: incremental

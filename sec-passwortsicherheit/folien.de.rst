@@ -16,7 +16,7 @@ Passwortsicherheit
 
 :Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
 :Kontakt: michael.eichberg@dhbw.de
-:Version: 2.2
+:Version: 2.2.1
 
 .. supplemental::
 
@@ -84,7 +84,7 @@ Verwendung von Passworten
 
     Obwohl an vielen Stellen versucht wird Passwörter aus vielen Gründen zurück zu drängen, so ist die Verwendung noch allgegenwärtig und in machen Bereichen ist auch nicht unmittelbar eine Ablösung zu erkennen.
 
-    Biometrie ist zum Beispiel in machen Bereichen kein Ersatz für Passwörter und wird - wenn überhaupt - nur ergänzend genommen. So ist es zum Beispiel im deutschen Recht erlaubt/möglich einem Beschuldigten sein Smartphone bei Bedarf vor das Gesicht zu halten, um es zu entsperren (Stand 2023). Je nach Qualität des Fingerabdrucksensors können ggf. auch genommene Fingerabdrücke verwendet werden. Möchte der Beschuldigte jedoch das Passwort nicht freiwillige nennen, dann besteht keine direkte weitere Handhabe.
+    Biometrie ist zum Beispiel in machen Bereichen kein Ersatz für Passwörter und wird - wenn überhaupt - nur ergänzend genommen. So ist es zum Beispiel im deutschen Recht erlaubt/möglich einem Beschuldigten sein Smartphone bei Bedarf vor das Gesicht zu halten, um es zu entsperren (Stand 2023). Je nach Qualität des Fingerabdrucksensors können ggf. auch genommene Fingerabdrücke verwendet werden. Möchte der Beschuldigte jedoch das Passwort nicht freiwillig nennen, dann besteht keine direkte weitere Handhabe.
 
 
 
@@ -185,7 +185,7 @@ Ist Passwortwiederherstellung nicht „trivial“?
 
 .. supplemental::
 
-    Auf der Webseite https://www.securityhero.io/ai-password-cracking/ wird ein Tool angeboten, dass eine Schätzung vornimmt wie lange eine AI braucht, um das Passwort zu knacken.
+    Auf der Webseite https://www.securityhero.io/ai-password-cracking/ wird ein Tool angeboten, das eine Schätzung vornimmt wie lange eine AI braucht, um das Passwort zu knacken.
 
     Empfohlene Tests:
 
@@ -281,7 +281,7 @@ Quellen für Passwortkandidaten
 Qualität von Passworten
 --------------------------------------------------------------------
 
-Wie ist die Qualität der folgenden Passwörter zu bewerten in Hinblick darauf wie aufwändig es ist das Passwort ggf. wiederherzustellen:
+Wie ist die Qualität der folgenden Passwörter zu bewerten in Hinblick darauf, wie aufwändig es ist das Passwort ggf. wiederherzustellen:
 
 .. class:: incremental-list
 
@@ -333,7 +333,7 @@ Hashfunktionen
 
     .. rubric:: Kollisionen bei Hashes
 
-    Wenn ein Passwort „nur“ als Hash gespeichert wird, dann gibt es zwangsläufig Kollisionen und es kann theoretisch passieren, dass ein Angreifer (zufällig) ein völlig anderes Passwort findet, dass bei der Überprüfung des Passworts akzeptiert wird. Die Konstruktion kryptografischer Hashfunktionen stellt jedoch sicher, dass dies in der Praxis nicht auftritt. Sollte jedoch eine „normale Hashfunktion“ genommen werden, dann ist dieses Szenario durchaus realistisch.
+    Wenn ein Passwort „nur“ als Hash gespeichert wird, dann gibt es zwangsläufig Kollisionen und es kann theoretisch passieren, dass ein Angreifer (zufällig) ein völlig anderes Passwort findet, das bei der Überprüfung des Passworts akzeptiert wird. Die Konstruktion kryptografischer Hashfunktionen stellt jedoch sicher, dass dies in der Praxis nicht auftritt. Sollte jedoch eine „normale Hashfunktion“ genommen werden, dann ist dieses Szenario durchaus realistisch.
 
 
 
@@ -465,13 +465,13 @@ Vom Salzen (:eng:`Salt`)...
 .. admonition:: Problem
     :class: incremental
 
-    Sollte es einem Angreifer gelingen in eine Datenbank einzubrechen und die Tabellen mit den Nutzerdaten abzufragen (zum Beispiel aufgrund einer erfolgreichen SQL Injection), dann ist es Ihm danach direkt möglich zu versuchen Passworte wiederherzustellen.
+    Sollte es einem Angreifer gelingen in eine Datenbank einzubrechen und die Tabellen mit den Nutzerdaten abzufragen (zum Beispiel aufgrund einer erfolgreichen SQL Injection), dann ist es ihm danach direkt möglich zu versuchen Passworte wiederherzustellen.
 
 .. supplemental::
 
     **Speicherung von Salts**
 
-    In Webanwendungen bzw. allgemein datenbankgestützten Anwendungen wird der *Salt* häufig in der selben Tabelle gespeichert in der auch der Hash des Passworts gespeichert wird. Im Falle von verschlüsselten Dateien, wird der Salt (unverschlüsselt) mit in der Datei gespeichert.
+    In Webanwendungen bzw. allgemein datenbankgestützten Anwendungen wird der *Salt* häufig in derselben Tabelle gespeichert in der auch der Hash des Passworts gespeichert wird. Im Falle von verschlüsselten Dateien wird der Salt (unverschlüsselt) mit in der Datei gespeichert.
 
 
 ... und Pfeffern (:eng:`Pepper`) von Passwörtern
@@ -1000,7 +1000,7 @@ Reale Passwortrichtlinie eines speziellen Messengers:
 
 .. container:: incremental
 
-    Exemplarisch beobachteter Effekt wenn die Passwörter vorher einfacher waren und der Benutzer gezwungen wurde diese zu erweitern:
+    Exemplarisch beobachteter Effekt, wenn die Passwörter vorher einfacher waren und der Benutzer gezwungen wurde diese zu erweitern:
 
         Password11##
 
@@ -1041,7 +1041,7 @@ Das Vorgehen von Angreifern verstehen
 Vorgehensweise beim Testen/Generieren von Passwörtern
 -----------------------------------------------------------
 
-Aufgrund der „Unmöglichkeit“ eines Brute-Force-Angriffs ist folgendes zu beachten:
+Aufgrund der „Unmöglichkeit“ eines Brute-Force-Angriffs ist Folgendes zu beachten:
 
 .. class:: incremental-list
 
@@ -1467,7 +1467,7 @@ Sichere Passwörter
 - Nehmen Sie kein Passwort, dass 1:1 in einem Wörterbuch, Verzeichnis oder Leak (vgl. https://haveibeenpwned.com) vorkommt.
 - Nehmen Sie keine Szenepasswörter (zum Beispiel: admin, root, acab, 1312, 88, ...).
 - Je länger desto besser, aber keine trivialen Sätze.
-- Wählen Sie ein Passwort, dass sie sich merken können. Kombinieren Sie z. B. Dinge aus Ihrem privaten Umfeld, die aber niemand direkt mit Ihnen in Verbindung bringen kann. (D. h. die Namen Ihrer Kinder, Haustiere, etc. sind keine gute Wahl, aber ggf. das Modell Ihres Fernsehers in Kombination mit einer Pin und dem Namen Ihres ersten Smartphones getrennt durch ein paar Sonderzeichen).
+- Wählen Sie ein Passwort, dass Sie sich merken können. Kombinieren Sie z. B. Dinge aus Ihrem privaten Umfeld, die aber niemand direkt mit Ihnen in Verbindung bringen kann. (D. h. die Namen Ihrer Kinder, Haustiere, etc. sind keine gute Wahl, aber ggf. das Modell Ihres Fernsehers in Kombination mit einer Pin und dem Namen Ihres ersten Smartphones getrennt durch ein paar Sonderzeichen).
 - Verwenden Sie sichere Passwortmanager.
 
 

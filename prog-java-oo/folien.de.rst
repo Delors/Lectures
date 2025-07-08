@@ -7,7 +7,7 @@
     :id: lecture-prog-oo
     :first-slide: last-viewed
     :master-password: WirklichSchwierig!
-    
+
 .. include:: ../docutils.defs
 
 
@@ -17,19 +17,19 @@ Einführung in die Objekt-orientierte Programmierung
 
 :Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
 :Kontakt: michael.eichberg@dhbw.de, Raum 149B
-:Version: 1.1
+:Version: 1.1.1
 
 .. supplemental::
 
-    :Folien: 
-        
-        |html-source| 
+    :Folien:
+
+        |html-source|
 
         |pdf-source|
 
     :Kontrollfragen:
 
-        .. source:: kontrollfragen.de.rst 
+        .. source:: kontrollfragen.de.rst
             :path: relative
             :prefix: https://delors.github.io/
             :suffix: .html
@@ -55,7 +55,7 @@ Was ist Objektorientierte Programmierung?
 :Hauptziele:
   Code **erweiterbar**, **strukturierter** und wiederverwendbar gestalten.
 
-.. class:: incremental 
+.. class:: incremental
 
 :Hauptprinzipien:
   - **Kapselung** (:eng:`Encapsulation`)
@@ -75,18 +75,18 @@ Klassen
 .. container:: scrollable
 
     :Klasse: Ein Bauplan für Objekte, der beschreibt, welche Daten bzw. Attribute und Methoden ein Objekt haben kann.
-    
-    :Syntax: 
+
+    :Syntax:
             .. code:: java
-                
-                <Modifikator>* class <Klassenname> { 
+
+                <Modifikator>* class <Klassenname> {
                   (<Attributdeklarationen>|<Methodendeklarationen>)*
                 }
 
     .. class:: incremental
 
     **Beispiele:**
-    
+
     .. container:: incremental
 
         .. rubric:: :java:`Auto` ist eine Klasse.
@@ -148,14 +148,14 @@ Klassen
 
     .. container:: incremental margin-top-1em box-shadow rounded-corners padding-1em margin-1em
 
-        Klassen ermöglichen es uns über konkrete Objekte zu **abstrahieren**: Klassen sind eine Beschreibung vieler Objekte mit gleichen Eigenschaften und Verhalten.   
+        Klassen ermöglichen es uns über konkrete Objekte zu **abstrahieren**: Klassen sind eine Beschreibung vieler Objekte mit gleichen Eigenschaften und Verhalten.
 
-    .. container:: incremental margin-top-1em box-shadow rounded-corners padding-1em margin-1em 
+    .. container:: incremental margin-top-1em box-shadow rounded-corners padding-1em margin-1em
 
-        Durch die Verwendung von Sichtbarkeiten (insbesondere :java:`private` und ggf. :java:`protected`) ist der Zugriff auf die Attribute und Methoden einer Klasse von außen kontrollierbar. Wir sprechen hier von **Kapselung**. 
-        
-        :peripheral:`Die privaten Daten eines Objekts (und ggf. einiger Methoden) sind also geschützt und können nur über die Methoden der Klasse manipuliert werden. Dabei können alle Objekte einer Klasse auf die Attribute eines anderen Objektes der selben Klasse zugreifen.`
- 
+        Durch die Verwendung von Sichtbarkeiten (insbesondere :java:`private` und ggf. :java:`protected`) ist der Zugriff auf die Attribute und Methoden einer Klasse von außen kontrollierbar. Wir sprechen hier von **Kapselung**.
+
+        :peripheral:`Die privaten Daten eines Objekts (und ggf. einiger Methoden) sind also geschützt und können nur über die Methoden der Klasse manipuliert werden. Dabei können alle Objekte einer Klasse auf die Attribute eines anderen Objektes derselben Klasse zugreifen.`
+
 
 .. supplemental::
 
@@ -183,13 +183,13 @@ Objekterzeugung/Instanziierung einer Java Klasse
     .. class:: incremental
 
     - reserviert den benötigten Speicher für die Attribute, und stellt sicher, dass alle Attribute mit dem Defaultwert initialisiert sind.
-    
+
     .. class:: incremental
 
-    - ruft dann den *Konstruktor* der Klasse auf. 
+    - ruft dann den *Konstruktor* der Klasse auf.
 
       Der Konstruktor ist eine spezielle Methode, die einmalig beim Erzeugen eines Objekts aufgerufen wird und der Initialisierung des Objekts dient.
-    
+
 
     .. class:: incremental
 
@@ -197,9 +197,9 @@ Objekterzeugung/Instanziierung einer Java Klasse
 
     .. class:: incremental
 
-    :Beispiel: 
+    :Beispiel:
 
-        `meinAuto` referenziert ein Objekt der Klasse `Auto`. 
+        `meinAuto` referenziert ein Objekt der Klasse `Auto`.
 
         .. code:: java
             :class: far-smaller faded-to-white copy-to-clipboard
@@ -215,7 +215,7 @@ Objekterzeugung/Instanziierung einer Java Klasse
             :class: far-smaller copy-to-clipboard
 
             var meinAuto = new Auto(); // Aufruf des impliziten Konstruktors
-        
+
 
 .. supplemental::
 
@@ -240,8 +240,8 @@ Variablen, die auf Objekte verweisen
                 :class: far-smaller faded-to-white copy-to-clipboard
 
                 class Rectangle {
-                    int width;  
-                    int height; 
+                    int width;
+                    int height;
                     int x;
                     int y;
                 }
@@ -249,19 +249,19 @@ Variablen, die auf Objekte verweisen
             .. code:: java
                 :class: far-smaller copy-to-clipboard
 
-                Rectangle a = new Rectangle(); 
+                Rectangle a = new Rectangle();
 
-            bzw. 
+            bzw.
 
             .. code:: java
                 :class: far-smaller copy-to-clipboard
 
-                var b = new Rectangle();  
+                var b = new Rectangle();
 
     .. layer:: incremental
 
         - Objektvariablen sind *Referenzvariablen* und werden durch den Klassennamen gefolgt von einem Variablennamen deklariert.
-        
+
           .. class:: incremental
 
           :Syntax: :java:`<Klassenname> <Variablenname>`
@@ -271,19 +271,19 @@ Variablen, die auf Objekte verweisen
         - Die Referenzvariable speichert eine Referenz (wie bei Feldern/Arrays) auf ein Objekt der Klasse.
         - Bei Objekten gelten die gleichen Regeln beim Kopieren und Vergleichen wie bei Arrays (z. B. bzgl. des :java:`==` Operators).
         - Objektvariablen können überall dort deklariert werden, wo auch andere Variablen (für primitive Datentypen) deklariert werden können.
-        - Wie bei Arrays ist der Standardwert für Objektvariablen :java:`null` und bedeutet, dass diese Variable auf *kein* Objekt verweist. 
-       
+        - Wie bei Arrays ist der Standardwert für Objektvariablen :java:`null` und bedeutet, dass diese Variable auf *kein* Objekt verweist.
+
 
     .. layer:: incremental
 
-        - Der Typ der Variablen ist durch die Klasse bestimmt. 
+        - Der Typ der Variablen ist durch die Klasse bestimmt.
         - Der Name des Typs ist somit der Klassenname.
         - Überall, wo ein primitiver Typ verwendet werden kann, kann auch der Typ eines Objektes verwendet werden.
-  
+
         .. class:: incremental
-        
+
         :Beispiel:
-        
+
             .. code:: java
                 :class: far-smaller copy-to-clipboard
 
@@ -293,7 +293,7 @@ Variablen, die auf Objekte verweisen
                 double intersect(Circle... circles) { }       // Varags
                 class Student { private String s; }           // Attribute
 
-                Car c = new Car(); 
+                Car c = new Car();
                 Rectangle[] rs = new Rectangle[10];
                 Rectangle[] rs = new Rectangle[]{new Rectangle(), new Rectangle()};
 
@@ -305,7 +305,7 @@ Variablen, die auf Objekte verweisen
         .. code:: java
             :class: far-smaller copy-to-clipboard
 
-            Rectangle a = new Rectangle(); 
+            Rectangle a = new Rectangle();
             Rectangle b = a;
 
         .. image:: images/objekte.svg
@@ -319,7 +319,7 @@ Variablen, die auf Objekte verweisen
 Bereinigung von Objekten
 -------------------------
 
-Verweist keine Referenzvariable mehr auf ein Objekt im Speicher, dann wird es automatisch vom *Garbage Collector* aus dem Speicher entfernt, d. h. der Entwickler muss sich nicht explizit um die Speicherbereinigung kümmern. 
+Verweist keine Referenzvariable mehr auf ein Objekt im Speicher, dann wird es automatisch vom *Garbage Collector* aus dem Speicher entfernt, d. h. der Entwickler muss sich nicht explizit um die Speicherbereinigung kümmern.
 
 Es ist insbesondere nicht notwendig, Referenzvariablen auf :java:`null` zu setzen.
 
@@ -336,11 +336,11 @@ Objekte und die Selbstreferenz `this`
 
     :Objekt: Eine Instanz einer Klasse.
 
-    :Definition: :java:`this` ist eine Referenz auf das aktuelle Objekt. Es wird verwendet, um auf die Attribute und Methoden des aktuellen Objekts zuzugreifen. 
-    
+    :Definition: :java:`this` ist eine Referenz auf das aktuelle Objekt. Es wird verwendet, um auf die Attribute und Methoden des aktuellen Objekts zuzugreifen.
+
     .. class:: incremental
 
-    :Beispiel: 
+    :Beispiel:
 
         .. include:: code/Auto.java
             :code: java
@@ -361,13 +361,13 @@ Explizite Konstruktoren
 
     .. layer::
 
-        Ein Konstruktor hat immer den Namen der Klasse und kann Parameter enthalten. Ein Konstruktor hat keinen Rückgabewert. 
+        Ein Konstruktor hat immer den Namen der Klasse und kann Parameter enthalten. Ein Konstruktor hat keinen Rückgabewert.
 
         :Syntax: :java:`<Klassenname>(<Parameter>) { ... }`
 
     .. layer:: incremental
 
-        :Beispiel: 
+        :Beispiel:
 
             .. code:: java
                 :class: far-smaller copy-to-clipboard
@@ -377,9 +377,9 @@ Explizite Konstruktoren
                     int geschwindigkeit;    // der Standardwert ist 0
 
                     Auto(String marke, int geschwindigkeit) {
-                        // ⚠️ "this." ist notwendig, 
+                        // ⚠️ "this." ist notwendig,
                         //   zur Unterscheidung von Parameter und Attribut
-                        this.marke = marke;                     
+                        this.marke = marke;
                         this.geschwindigkeit = geschwindigkeit;notwendig!
                     }
                 }
@@ -393,14 +393,14 @@ Explizite Konstruktoren
 
         Ein Konstruktor kann auch andere Konstruktoren der Klasse aufrufen.  Der „Methodenname“ der anderen Konstruktoren ist in diesem Fall :java:`this`.
 
-        :Beispiel: 
+        :Beispiel:
 
             .. code:: java
                 :class: far-smaller copy-to-clipboard
 
                 class Auto {
-                    String marke;           
-                    int geschwindigkeit;    
+                    String marke;
+                    int geschwindigkeit;
 
                     Auto(String marke) { this.marke = marke; }
 
@@ -424,7 +424,7 @@ Explizite Konstruktoren
 
             Es ist zum Beispiel nicht möglich andere Methoden des Objekts aufzurufen (d. h. Aufrufe auf :java:`this` sind nicht möglich).
 
-        .. hint:: 
+        .. hint::
             :class: incremental
 
             Erst seit Java 22 ist es überhaupt möglich, dass vor dem Aufruf eines anderen Konstruktors Code ausgeführt werden darf.
@@ -437,12 +437,12 @@ Explizite Konstruktoren
                 :class: far-smaller copy-to-clipboard
 
                 class Auto {
-                    String marke; int geschwindigkeit;    
+                    String marke; int geschwindigkeit;
 
                     Auto(String marke) { this.marke = marke; }
 
                     Auto(String marke, int geschwindigkeit) {
-                        if (geschwindigkeit < 0) 
+                        if (geschwindigkeit < 0)
                             throw new IllegalArgumentException("Geschw. < 0");
                         this.geschwindigkeit = geschwindigkeit;
                         this(marke); // Aufruf des anderen Konstruktors
@@ -450,7 +450,7 @@ Explizite Konstruktoren
                 }
 
 
-       
+
 
 
     .. layer:: incremental
@@ -458,12 +458,12 @@ Explizite Konstruktoren
         .. rubric:: Initialisierungsfolge
 
         1. Initialisierung der Attribute mit Standardwerten
-      
+
         .. class:: incremental list-with-explanations
 
         2. Aufruf des Konstruktors des expliziten Konstruktors, wenn angegeben sonst des impliziten Konstruktors.
-     
-           (Dies führt ggf. zu weiteren Konstruktoraufrufen.)   
+
+           (Dies führt ggf. zu weiteren Konstruktoraufrufen.)
 
 
 
@@ -476,9 +476,9 @@ Auf sichtbare Attribute und Methoden eines beliebigen Objektes kann über den **
 
 :Syntax: :java:`<Objektinstanz>.<Attribut/Methode>`
 
-:Beispiel: 
+:Beispiel:
 
-    `meinAuto` referenziert ein Objekt der Klasse `Auto`. 
+    `meinAuto` referenziert ein Objekt der Klasse `Auto`.
 
 
     .. code:: java
@@ -502,7 +502,7 @@ Auf sichtbare Attribute und Methoden eines beliebigen Objektes kann über den **
 Kapselung (:eng:`Encapsulation`)\ [#]_
 --------------------------------------------------
 
-:Ziel: 
+:Ziel:
    Daten eines Objekts vor direktem Zugriff von außen schützen.
 
    Best Practice: Zugriff auf Daten erfolgt über öffentliche **Getter** (Methoden, die mit :java:`get` anfangen) und **Setter** (Methoden, die mit :java:`set` anfangen). Alle Attribute (außer Konstanten) sollten **privat** sein.
@@ -514,7 +514,7 @@ Kapselung (:eng:`Encapsulation`)\ [#]_
     - Schutz der Datenintegrität
     - Kontrollierter Zugriff auf die Daten; fördert die Wartbarkeit
 
-    .. code:: java 
+    .. code:: java
         :class: far-smaller copy-to-clipboard
 
         class Auto {
@@ -525,7 +525,7 @@ Kapselung (:eng:`Encapsulation`)\ [#]_
                     this.geschwindigkeit = geschwindigkeit;
         }   }   }
 
-.. [#] Kapselung dient vor allem dem Programming-in-the-Large. 
+.. [#] Kapselung dient vor allem dem Programming-in-the-Large.
 
 
 .. supplemental::
@@ -554,14 +554,14 @@ Kapselung (:eng:`Encapsulation`)\ [#]_
         :Bücher: Titel, ISBN, Jahr, Autoren
         :Exemplare: Exemplar-Nummer, Regal, Position
         :Benutzer: Benutzer-Nummer, Vorname, Nachname
-        :Bibliotheken: Name der zugehörigen Institution, Standort 
+        :Bibliotheken: Name der zugehörigen Institution, Standort
 
         Es soll weiterhin gelten:
 
         - Ein Buch hat max. 10 Exemplare.
         - Ein Exemplar kann durch max. einen Benutzer ausgeliehen sein.
         - Eine Bibliothek hat max. 100 Bücher und max. 20 Benutzer.
-  
+
     .. solution::
         :pwd: Bibliothek_v1
 
@@ -600,9 +600,9 @@ Kapselung (:eng:`Encapsulation`)\ [#]_
 Übung
 --------------------------------------------------
 
-.. exercise:: Bibliothek 
+.. exercise:: Bibliothek
 
-    - Entwickeln Sie Konstruktoren und folgende Methoden für die jeweiligen Klassen: 
+    - Entwickeln Sie Konstruktoren und folgende Methoden für die jeweiligen Klassen:
 
       .. class:: dd-margin-left-8em
 
@@ -658,13 +658,13 @@ Kapselung (:eng:`Encapsulation`)\ [#]_
 
 .. exercise:: Patientenakte - die Klasse Patient
 
-    - Die Klasse Patient hat folgende Attribute das Geburtsdatum (:java:`String geburtsdatum`), einen :java:`Namen (String name)`, ein Gewicht in Kilogramm (:java:`double gewicht`) und eine Größe in Zentimetern (:java:`int groesse`). 
+    - Die Klasse Patient hat folgende Attribute das Geburtsdatum (:java:`String geburtsdatum`), einen :java:`Namen (String name)`, ein Gewicht in Kilogramm (:java:`double gewicht`) und eine Größe in Zentimetern (:java:`int groesse`).
     - Definieren Sie einen Konstruktor, der es ermöglicht einen Patienten wie folgt zu erzeugen: :java:`new Patient("24.12.2024", "Max Müller", 180, 80d)`
 
     - In einer (externen) :java:`main` Methode:
-    
+
       - Legen Sie mehrere Patienten an und speichern Sie diese in einem Array :java:`patienten`.
-      - Schreiben Sie eine Methode, die die Durchschnittsgröße aller Patienten berechnet. Rufen Sie die Methode auf und geben Sie das Ergebnis aus. 
+      - Schreiben Sie eine Methode, die die Durchschnittsgröße aller Patienten berechnet. Rufen Sie die Methode auf und geben Sie das Ergebnis aus.
 
     .. solution::
         :pwd: Patientenakte
@@ -681,7 +681,7 @@ Kapselung (:eng:`Encapsulation`)\ [#]_
         .. include:: code/patientenakte_v1/Main.java
             :code: java
             :number-lines:
-            :class: far-smaller      
+            :class: far-smaller
 
 .. supplemental::
 
@@ -699,9 +699,9 @@ Kapselung (:eng:`Encapsulation`)\ [#]_
     .. class:: list-with-explanations
 
     - Machen Sie alle Attribute der Klasse ``Patient`` :java:`private`.
-    - Implementieren Sie für jedes Attribut eine Getter Methode. 
-  
-      D. h. eine Methode, die einfach den Wert des Attributs direkt zurückgibt. 
+    - Implementieren Sie für jedes Attribut eine Getter Methode.
+
+      D. h. eine Methode, die einfach den Wert des Attributs direkt zurückgibt.
     - Passen Sie Ihre Main-Methode entsprechend an.
 
     .. solution::
@@ -719,7 +719,7 @@ Kapselung (:eng:`Encapsulation`)\ [#]_
         .. include:: code/patientenakte_v2/Main.java
             :code: java
             :number-lines:
-            :class: far-smaller 
+            :class: far-smaller
 
 .. supplemental::
 
@@ -739,8 +739,8 @@ Kapselung (:eng:`Encapsulation`)\ [#]_
     .. class:: list-with-explanations
 
     - Legen Sie eine Klasse Arzt an, die ein privates Attribut vom Typ Array („Feld“) von Patienten hat.
-    - Fügen Sie der Klasse Arzt eine Methode :java:`addPatient` hinzu, die ein neues Array erzeugt, das alle bisherigen Patienten des Arztes und den neuen Patienten enthält. Stellen Sie sicher, dass der Patient nur einmal hinzugefügt wird. Sollte der Patient schon in der Liste sein, dann passiert nichts. 
-    
+    - Fügen Sie der Klasse Arzt eine Methode :java:`addPatient` hinzu, die ein neues Array erzeugt, das alle bisherigen Patienten des Arztes und den neuen Patienten enthält. Stellen Sie sicher, dass der Patient nur einmal hinzugefügt wird. Sollte der Patient schon in der Liste sein, dann passiert nichts.
+
       (Gehen Sie für diese Aufgabe davon aus, dass jeder echte Patient immer nur durch genau ein Objekt repräsentiert wird.)
     - Verschieben Sie die Methode zur Berechnung der Durschnittsgröße in die Klasse Arzt, um die Durschnittsgröße aller Patienten des Arztes zu berechnen.
 
@@ -763,11 +763,8 @@ Kapselung (:eng:`Encapsulation`)\ [#]_
         .. include:: code/patientenakte_v3/Main.java
             :code: java
             :number-lines:
-            :class: far-smaller 
+            :class: far-smaller
 
 .. supplemental::
 
     Sie können ggf. zum Vergrößern des Arrays die Methode :java:`java.util.Arrays.copyOf` verwenden.
-
-
-

@@ -17,7 +17,7 @@ Kontrollfragen: Blockchiffren
 
 :Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
 :Kontakt: michael.eichberg@dhbw.de, Raum 149B
-:Version: 1.0
+:Version: 1.0.1
 
 
 .. class:: new-section
@@ -113,7 +113,7 @@ Kontrollfragen
         .. solution::
             :pwd: selbeAlgo
 
-            Damit der selbe Algo verwendet werden kann für die Verschlüsselung und Entschlüsselung.
+            Damit derselbe Algo verwendet werden kann für die Verschlüsselung und Entschlüsselung.
 
 
     .. exercise:: Welche Anforderung muss die Rundenfunktion F erfüllen?

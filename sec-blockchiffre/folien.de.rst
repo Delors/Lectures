@@ -24,7 +24,7 @@ Block Chiffre und der *Data Encryption Standard (DES)*
 
 :Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
 :Kontakt: michael.eichberg@dhbw.de
-:Version: 1.1.2
+:Version: 1.1.3
 :Basierend auf: *Cryptography and Network Security - Principles and Practice, 8th Edition, William Stallings*
 
 .. supplemental::
@@ -303,7 +303,7 @@ Feistel-Chiffre - Verschlüsselung und Entschlüsselung
 
     .. rubric:: Notwendigkeit der *Swap* Operation
 
-    Die Verwendung des *Swap*\ s am Ende ist notwendig, damit die Verschlüsselung und Entschlüsselung identisch sind; d. h. der selbe Algorithmus verwendet werden kann.
+    Die Verwendung des *Swap*\ s am Ende ist notwendig, damit die Verschlüsselung und Entschlüsselung identisch sind; d. h. derselbe Algorithmus verwendet werden kann.
 
     Zum besseren Verständnis gehen wir im Folgenden davon aus, dass wir nur eine Runde hätten:
 
@@ -370,7 +370,7 @@ Data Encryption Standard (DES)
 -------------------------------
 
 - Wurde 1977 vom National Bureau of Standards (heute NIST) als Federal Information Processing Standard 46 herausgegeben.
-- War das am häufigsten verwendete Verschlüsselungsverfahren bis zur Einführung des Advanced Encryption Standard (AES) im Jahr 2001
+- War das am häufigsten verwendete Verschlüsselungsverfahren bis zur Einführung des Advanced Encryption Standard (AES) im Jahr 2001.
 - Der Algorithmus selbst wird als Data Encryption Algorithm (DEA) bezeichnet.
 
 .. admonition:: Eigenschaften

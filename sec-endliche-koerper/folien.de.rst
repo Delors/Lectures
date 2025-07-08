@@ -18,7 +18,7 @@ Endliche Körper
 :Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
 :Kontakt: michael.eichberg@dhbw.de
 :Basierend auf: *Cryptography and Network Security - Principles and Practice, 8th Edition, William Stallings*
-:Version: 1.2.2
+:Version: 1.2.3
 
 .. supplemental::
 
@@ -605,7 +605,7 @@ Polynomiale Division
 
       Ein irreduzibles Polynom wird auch als Primpolynom bezeichnet.
 
-    • Die Polynomdivision kann über die Multiplikation definiert werden. Sei :math:`a,b \in F` dann ist :math:`a/b = a \times b^{-1}`, wobei :math:`b^{-1}` das einzige Element des Körpers ist, für das :math:`bb^{-1} = 1` gilt.
+    • Die Polynomdivision kann über die Multiplikation definiert werden. Seien :math:`a,b \in F`, dann ist :math:`a/b = a \times b^{-1}`, wobei :math:`b^{-1}` das einzige Element des Körpers ist, für das :math:`bb^{-1} = 1` gilt.
 
       .. TODO: check if the above statement is only true if the field is defined over a prime!
 

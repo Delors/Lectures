@@ -7,17 +7,17 @@
    :id: lecture-prog-java-oo-kontrollfragen
    :first-slide: last-viewed
    :exercises-master-password: WirklichSchwierig!
-   
+
 .. include:: ../docutils.defs
 
- 
+
 
 Kontrollfragen: Objekt-orientierte Programmierung - Vererbung und Polymorphie
 ================================================================================
 
 :Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
 :Kontakt: michael.eichberg@dhbw.de, Raum 149B
-:Version: 1.0
+:Version: 1.0.1
 
 
 
@@ -29,9 +29,9 @@ Kontrollfragen
    .. class:: incremental long-list
 
    1. \
-   
+
       .. exercise:: Ober- und Unterklassen
-         
+
          1. :java:`class X extends Y { ... }` - Welches ist die Oberklasse und welches die Unterklasse?
          2. :java:`class Z extends Y { ... }` - Ist Z eine Unterklasse von X?
 
@@ -42,10 +42,10 @@ Kontrollfragen
             2. Nein, Z ist keine Unterklasse von X.
 
 
-   2. 
+   2.
 
        .. exercise:: Statischer und dynamischer Typ
-         
+
          .. container:: two-columns
 
             .. container:: column no-separator
@@ -80,7 +80,7 @@ Kontrollfragen
             5. Mit :java:`if (y instanceof X) { ... }`
             6. Es wird `false` von `instanceof` zurückgegeben.
 
-   3. 
+   3.
 
        .. exercise:: Methoden
 
@@ -90,7 +90,7 @@ Kontrollfragen
          2. Was ist der Unterschied zwischen *Method Overloading* und *Method Overriding*?
          3. Was ist der Unterschied zwischen einem Konstruktor und einer Methode?
          4. Wie kann ich gezielt eine Methode der Superklasse in einer Subklasse aufrufen?
-         5. Wie kann ich gezielt einen anderen Konstruktor der selben Klasse aufrufen?
+         5. Wie kann ich gezielt einen anderen Konstruktor derselben Klasse aufrufen?
          6. Welche Methoden hat jede Klasse und warum?
 
          .. solution::
@@ -102,10 +102,10 @@ Kontrollfragen
             4. Mit :java:`super.methodName()`.
             5. Jede Klasse erbt von der Klasse :java:`Object` insbesondere die Methode :java:`toString()`, :java:`equals(Object o)` und :java:`hashCode()`. Diese Methoden können in jeder Klasse überschrieben werden.
 
-   4. 
+   4.
 
        .. exercise:: Überschriebene Methoden
-         
+
          .. container:: two-columns
 
             .. container:: no-separator
@@ -119,11 +119,11 @@ Kontrollfragen
 
                   class Y { void p(){println("Y.p");} }
                   class X extends Y { void p(){println("X.p");} }
-                  class Z extends Y { 
-                     void p(){println("Z.p");} 
+                  class Z extends Y {
+                     void p(){println("Z.p");}
                      void m(){println("Z.m");} }
                   Y x = new X(); Y z = new Z();
-                  
+
          .. class:: incremental
 
          1. Was wird ausgegeben bei :java:`x.p();`?
@@ -140,21 +140,21 @@ Kontrollfragen
             4. Es wird zur Laufzeit eine `ClassCastException` geworfen, da der dynamische Typ der Referenzvariable :java:`x` :java:`X` ist und die Methode :java:`m` nicht in der Klasse :java:`X` definiert ist.
 
 
-   5. 
+   5.
 
-       .. exercise:: Ausnahmen 
+       .. exercise:: Ausnahmen
 
          (:eng:`Exceptions`)
 
          .. class:: incremental
-            
-         1. Welches ist die Superklasse aller Ausnahmen? 
+
+         1. Welches ist die Superklasse aller Ausnahmen?
          2. Was ist der Unterschied zwischen *checked* und *unchecked* Ausnahmen?
          3. Wie fange ich eine Ausnahme?
          4. Was muss ich machen, wenn ich eine *checked Exception* nicht fangen will?
          5. Was ist ein :java:`catch` Block.
          6. Warum sollte ich :java:`Error`\ s nicht fangen?`
-         
+
          .. solution::
             :pwd: Fehler-hier-und-Fehler-da
 

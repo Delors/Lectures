@@ -17,7 +17,7 @@ Hashfunktionen - Kontrollaufgaben
 
 :Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
 :Kontakt: michael.eichberg@dhbw.de, Raum 149B
-:Version: 1.0.1
+:Version: 1.0.2
 
 
 
@@ -70,7 +70,7 @@ Hashfunktionen
             9. Nein - beim Hashing ist insbesondere (Preimage Resistance) relevant.
             10. Je nach Einsatzbereich (z. B. Integritätssicherung) ist ggf. insbesondere Second Preimage Resistace notwendig. Insbesondere immer dann, wenn bereits eine Nachricht *und* ein Hashwert vorliegt. Die Möglichkeit zu einem Hashwert irgendeine Nachricht zu finden, die ggf. den gleichen Hashwert hat, ist in in diesen Fällen zwar nicht gewünscht aber im Vergleich weniger kritisch.
             11. Beides sind MACs und in dieser Hinsicht dienen Sie dem gleichen Zweck.
-            12. Bei HMACs ja - bei Poly1305 ist dies nicht der Fall. Hier ist es ggf. möglich den Schlüssel zu brechen bzw. zu finden, wenn für mehrere Nachrichten der selbe Schlüssel verwendet wird. Poly 1305 dient der *Einmal*\ authentifizierung.
+            12. Bei HMACs ja - bei Poly1305 ist dies nicht der Fall. Hier ist es ggf. möglich den Schlüssel zu brechen bzw. zu finden, wenn für mehrere Nachrichten derselbe Schlüssel verwendet wird. Poly 1305 dient der *Einmal*\ authentifizierung.
             13. Nein - nur wenn dieser zu lange ist; sonst wird ggf. gepaddet!
             14. Nein - die SHA 2 Familie ist eine Merkle-Damgard Konstruktion.
             15. Nonce steht für “number used once”, also eine einmal verwendete Zahl. Eine Wiederverwendung sollte nicht erfolgen!

@@ -17,7 +17,7 @@ Erzeugung von Zufallsbits und Stromchiffren
 
 :Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
 :Basierend auf: *Cryptography and Network Security - Principles and Practice, 8th Edition, William Stallings*
-:Version: 2.4.1
+:Version: 2.4.2
 
 .. supplemental::
 
@@ -118,7 +118,7 @@ Unvorhersehbarkeit
 
 - Bei *echten* Zufallsfolgen ist jede Zahl statistisch unabhängig von den anderen Zahlen in der Folge und daher unvorhersehbar.
 
-  - Echte Zufallszahlen(-generatoren) haben Grenzen; insbesondere die ineffizienz selbiger ist eine Herausforderung, so dass es häufiger vorkommt, dass Algorithmen implementiert werden, die scheinbar zufällige Zahlenfolgen erzeugen.
+  - Echte Zufallszahlen(-generatoren) haben Grenzen; insbesondere die Ineffizienz selbiger ist eine Herausforderung, so dass es häufiger vorkommt, dass Algorithmen implementiert werden, die scheinbar zufällige Zahlenfolgen erzeugen.
   - Es muss darauf geachtet werden, dass ein Gegner nicht in der Lage ist, zukünftige Elemente der Folge auf der Grundlage früherer Elemente vorherzusagen.
 
 
@@ -297,7 +297,7 @@ Unvorhersehbarkeit
 Anforderungen an den Seed
 ------------------------------
 
-- Der Seed, der als Eingabe für den PRNG dient, muss sicher und unvorhersehbar sein
+- Der Seed, der als Eingabe für den PRNG dient, muss sicher und unvorhersehbar sein.
 - Der Seed selbst muss eine Zufalls- oder Pseudozufallszahl sein.
 - Normalerweise wird der Seed von einem TRNG erzeugt.
 
@@ -481,7 +481,7 @@ Zwei Ansätze, die eine Blockchiffre zum Aufbau eines PNRG verwenden, haben weit
 
 .. exercise:: Lineare Kongruenzgeneratoren
 
-    Implementiere einen linearen Kongruenzgenerator, um zu untersuchen, wie er sich verhält, wenn sich die Zahlenwerte von :math:`a`, :math:`c` und :math:`m` ändern. Versuchen Sie Werte zu finden, die eine vermeintlich zufällige Folge ergeben.
+    Implementieren Sie einen linearen Kongruenzgenerator, um zu untersuchen, wie er sich verhält, wenn sich die Zahlenwerte von :math:`a`, :math:`c` und :math:`m` ändern. Versuchen Sie Werte zu finden, die eine vermeintlich zufällige Folge ergeben.
 
     Testen Sie Ihren Zufallszahlengenerator unter anderem mit den folgenden Werten:
 
@@ -718,7 +718,7 @@ Shannon Entropie
 
   .. supplemental::
 
-    :math:`H_{\text{max}}` ist die Anzahl an Bits die benötigt werden um alle möglichen Symbole zu kodieren. Für ein Alphabet mit :math:`k` Symbolen ist :math:`H_{\text{max}} = \log_2(k)`. D. h. für ein Alphabet mit 8 verschiedenen Symbole ist :math:`H_{\text{max}} = \log_2(8) = 3`.
+    :math:`H_{\text{max}}` ist die Anzahl der Bits, die benötigt werden, um alle möglichen Symbole eindeutig zu kodieren. Für ein Alphabet mit :math:`k` Symbolen ist :math:`H_{\text{max}} = \log_2(k)`. D. h. für ein Alphabet mit 8 verschiedenen Symbole ist :math:`H_{\text{max}} = \log_2(8) = 3`.
 
     Der Shannon-Entropie liegt die Frage zugrunde, wie viele Bits im Mittel nötig sind, um die Ausgaben einer Informationsquelle effizient zu kodieren. Sie hängt von der Wahrscheinlichkeitsverteilung der Symbole ab und bildet ein theoretisches Minimum für die mittlere Codewortlänge verlustfreier Kodierungen.
 
@@ -730,11 +730,11 @@ Shannon Entropie
 
         Liegt jedoch eine starke Ungleichvertverteilung vor, so ist die Shannon-Entropie kleiner als :math:`\log_2(5)`.
 
-        Sein die empirischen Wahrscheinlichkeiten der 5 Symbole so, dass ein Symbol mit der Wahrscheinlichkeit 0,6 und alle anderen mit der Wahrscheinlichkeit 0,1 auftreten, so ergibt sich für die Shannon-Entropie:
+        Seien die empirischen Wahrscheinlichkeiten der 5 Symbole so, dass ein Symbol mit der Wahrscheinlichkeit 0,6 und alle anderen mit der Wahrscheinlichkeit 0,1 auftreten, so ergibt sich für die Shannon-Entropie:
 
         :math:`H = -(0.6 \log_2 0.6 + 4 \cdot 0.1 \log_2 0.1) \approx 1.77~\text{Bit pro Symbol}`
 
-        An das Ergebniss könnten man zum Beispiel mit einer Huffman-Kodierung herankommen. Mit einer Huffman-Kodierung kann man die Codewortlänge optimieren, indem man die häufigsten Symbole kürzer kodiert als die seltenen Symbole. In diesem Fall könnte man das Symbol mit der Wahrscheinlichkeit 0,6 mit einem Codewort von Länge 1 kodieren und die anderen Symbole mit Codewörtern von Länge 3 kodieren. Daraus ergibt sich eine mittlere Codewortlänge von:
+        An das Ergebnis könnte man zum Beispiel mit einer Huffman-Kodierung herankommen. Mit einer Huffman-Kodierung kann man die Codewortlänge optimieren, indem man die häufigsten Symbole kürzer kodiert als die seltenen Symbole. In diesem Fall könnte man das Symbol mit der Wahrscheinlichkeit 0,6 mit einem Codewort von Länge 1 kodieren und die anderen Symbole mit Codewörtern von Länge 3 kodieren. Daraus ergibt sich eine mittlere Codewortlänge von:
 
         :math:`0.6 \cdot 1~\text{Bit} + 4 \cdot 0.1 \cdot 3~\text{Bit} = 0.6~\text{Bit} + 1.2~\text{Bit} = 1.8~\text{Bit pro Symbol}`
 
@@ -1116,7 +1116,7 @@ Die ChaCha20 Blockfunktion
 
         Diese Verrechnung mit dem initialen Zustand dient der Vereitelung bestimmter Angriffstechniken (z. B. differenzielle Analyse).
 
-        Dieser wird dann zum Verschlüsseln des Klartexts mittels XOR verwendet. Somit muss der Klartext kein vielfaches der Blockgröße sein.
+        Dieser wird dann zum Verschlüsseln des Klartexts mittels XOR verwendet. Somit muss der Klartext kein Vielfaches der Blockgröße sein.
 
     .. card::
 
@@ -1242,7 +1242,7 @@ Die ChaCha20 Blockfunktion
 
         Die Nonce muss nicht geheim gehalten werden.
 
-        Würden wir mehrere Nachrichten mit der selben Nonce verschlüsseln, dann könnten wir direkt P1 ⊕ P2 berechnen und Rückschlüsse auf die Nachricht erhalten:
+        Würden wir mehrere Nachrichten mit derselben Nonce verschlüsseln, dann könnten wir direkt P1 ⊕ P2 berechnen und Rückschlüsse auf die Nachricht erhalten:
 
         ::
 

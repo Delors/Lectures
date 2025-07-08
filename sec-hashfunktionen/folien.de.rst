@@ -18,7 +18,7 @@ Kryptografische Hash Funktionen
 :Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
 :Kontakt: michael.eichberg@dhbw.de
 :Basierend auf: *Cryptography and Network Security - Principles and Practice, 8th Edition, William Stallings*
-:Version: 2.3.1
+:Version: 2.3.2
 
 .. supplemental::
 
@@ -124,7 +124,7 @@ Sicherheitsanforderungen an kryptografische Hashfunktion
 
     Im Deutschen wird auch von Urbild-Angriffen gesprochen. In dem Fall ist *preimage resistance* (d. h. die Einweg Eigenschaft) gleichbedeutend damit, dass man nicht effektiv einen „Erstes-Urbild-Angriff“ durchführen kann. Hierbei ist das Urbild die ursprüngliche Nachricht :math:`M`, die *gehasht* wurde.
 
-    *Second preimage resistance* ist dann gleichbedeutend damit, dass man nicht effektiv einen „Zweites-Urbild-Angriff“ durchführen kann. Es ist nicht möglich zu einer Nachricht M eine zweite Nachricht N (d. h. ein zweites Urbild) zu finden, die für eine gegebene Hashfunktion den gleich Hash aufweist.
+    *Second preimage resistance* ist dann gleichbedeutend damit, dass man nicht effektiv einen „Zweites-Urbild-Angriff“ durchführen kann. Es ist nicht möglich zu einer Nachricht M eine zweite Nachricht N (d. h. ein zweites Urbild) zu finden, die für eine gegebene Hashfunktion den gleichen Hash aufweist.
 
 
 
@@ -137,7 +137,7 @@ Beziehung zwischen den Sicherheitsanforderungen an Hashfunktionen
 
 .. supplemental::
 
-    Dass die *collision resistance* (:ger:`starke Kollisionsresistenz`) eine stärkere Anforderung ist als die *second preimage resistance* lässt sich wie folgt erklären: Bei *second preimage resistance* geht es darum, dass zu einer gegebenen, fixen Nachricht ein Angreifer ggf. eine zweite Nachricht finden soll.
+    Dass die *collision resistance* (:ger:`starke Kollisionsresistenz`) eine stärkere Anforderung ist als die *second preimage resistance*, lässt sich wie folgt erklären: Bei *second preimage resistance* geht es darum, dass zu einer gegebenen, fixen Nachricht ein Angreifer ggf. eine zweite Nachricht finden soll.
 
     Bei *collision resistance* geht es darum, dass ein Angreifer „irgendwelche“ zwei beliebigen Nachrichten finden kann, die den gleichen Hashwert haben. Ein solcher Angriff hat nur einen Aufwand von :math:`O(\sqrt{2^{n}})`, was durch das Geburtstagsparadoxon erklärt werden kann.
 
@@ -185,7 +185,7 @@ Nachrichtenauthentifizierung - vereinfacht
 
     **Szenarien**
 
-    Im ersten Szenario wird der Hash an die Nachricht angehängt und als ganzes verschlüsselt. Wir erhalten Vertraulichkeit und Authentizität.
+    Im ersten Szenario wird der Hash an die Nachricht angehängt und als Ganzes verschlüsselt. Wir erhalten Vertraulichkeit und Authentizität.
 
     Im zweiten Szenario wird der Hash der Nachricht berechnet und dann verschlüsselt. Der Empfänger kann den Hash berechnen und mit dem entschlüsselten Hash vergleichen. Wir erhalten Authentizität, aber keine Vertraulichkeit.
 
@@ -349,7 +349,7 @@ Struktur eines sicheren Hash-Codes
 
     .. container:: peripheral
 
-        Wir nehmen hier an, dass die Nachricht ein Vielfaches von 256 Bit lang ist. Falls nicht, dann wenden wir Padding an. Weiterhin gibt es eine 256 Bit lange Konstante, die für das hashen des ersten Blocks verwendet wird.
+        Wir nehmen hier an, dass die Nachricht ein Vielfaches von 256 Bit lang ist. Falls nicht, dann wenden wir Padding an. Weiterhin gibt es eine 256 Bit lange Konstante, die für das Hashen des ersten Blocks verwendet wird.
 
     .. solution::
         :pwd: alles nichts

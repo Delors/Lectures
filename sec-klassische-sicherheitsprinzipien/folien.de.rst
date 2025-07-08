@@ -16,7 +16,7 @@ Klassische Sicherheitsprinzipien
 
 :Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
 :Kontakt: michael.eichberg@dhbw.de
-:Version: 1.2.1
+:Version: 1.2.2
 
 .. supplemental::
 
@@ -58,7 +58,7 @@ Klassische Sicherheitsprinzipien
 
         .. supplemental::
 
-            :Principle of Complete Mediation: Bei der Entwicklung einer Serveranwendung besagt das *Principle of Complete Mediation* somit, dass bei jeder Anfrage zu überprüfen ist, ober der Nutzer die entsprechenden Rechte besitzt.
+            :Principle of Complete Mediation: Bei der Entwicklung einer Serveranwendung besagt das *Principle of Complete Mediation* somit, dass bei jeder Anfrage zu überprüfen ist, ob der Nutzer die entsprechenden Rechte besitzt.
 
     :Principle of Least Authority (aka POLA)/ Principle of Least Privilege: Jedes Programm und jeder Benutzer sollte nur die für seine Aufgabe unbedingt notwendigen Rechte besitzen.
 
@@ -69,7 +69,7 @@ Klassische Sicherheitsprinzipien
 
         .. supplemental::
 
-            Das *Principle of Separation of Privilege* wird dann eingehalten, wenn ein Angreifer, der eine Komponente kompromittiert hat, nicht die Rechte erhält, die notwendig sind, um das gesamte System zu kompromittieren. Zum Beispiel ist es für Überweisungen notwendig diese auf zwei verschiedene Arten zu autorisieren.
+            Das *Principle of Separation of Privilege* wird dann eingehalten, wenn ein Angreifer, der eine Komponente kompromittiert hat, nicht die Rechte erhält, die notwendig sind, um das gesamte System zu kompromittieren. Zum Beispiel ist es für Überweisungen notwendig, diese auf zwei verschiedene Arten zu autorisieren.
 
             .. attention::
 
