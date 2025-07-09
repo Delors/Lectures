@@ -1,5 +1,4 @@
 #!/usr/bin/env python3
-import time
 from multiprocessing import Process, current_process
 
 """
