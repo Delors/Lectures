@@ -19,7 +19,7 @@ Nebenläufigkeit in Python
 
 :Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
 :Kontakt: michael.eichberg@dhbw.de
-:Version: 1.0
+:Version: 1.0.1
 
 .. supplemental::
 
@@ -117,7 +117,7 @@ Nebenläufigkeit in Python
       :alt: threading.Thread
       :align: center
 
-  .. card:: overlay center-child-elements
+  .. card:: overlay center-content
 
     .. container:: border-rounded dhbw-light-gray-background opacity-90 padding-1em text-align-center
 
@@ -125,7 +125,7 @@ Nebenläufigkeit in Python
 
 .. supplemental::
 
-  - Threads werden in Python über die vordefinierte Klasse ``threading.Thread`` bereitgestellt.
+  - Threads werden in Python über die vordefinierte Klasse ``threading.Thread`` bereitgestellt. :python:`target` ist hierbei die Referenz auf das Callable Objekt, dass ausgeführt wird als Reaktion auf ein :python:`start` Aufruf.
   - Alternativ kann ein *Callable* an ein Thread-Objekt übergeben werden.
   - Threads beginnen ihre Ausführung erst, wenn die ``start``-Methode in der Thread-Klasse aufgerufen wird. Die ``Thread.start``-Methode ruft die ``run``-Methode auf. Ein direkter Aufruf der ``run``-Methode führt nicht zu einer nebenläufigen Ausführung.
   - Der aktuelle Thread kann mittels der statischen Methode ``Thread.currentThread()`` ermittelt werden.
@@ -184,8 +184,7 @@ Beispiel: Multiprocessing - „IO-Bound“
         if __name__ == '__main__':
             p1 = Process(target=busy_sleep)
             p2 = Process(target=busy_sleep)
-            p1.start()
-            p2.start()
+            p1.start() ; p2.start()
             p1.join()
             p2.join()
 
@@ -216,7 +215,6 @@ Beispiel: Multiprocessing - CPU-Bound
       :class: copy-to-clipboard
       :number-lines:
 
-      import time
       from multiprocessing \
         import Process, current_process
 
@@ -476,7 +474,8 @@ Beispiel: Thread-safe Shared Counter
   .. cell:: width-50
 
     .. code:: python
-      :class: smaller copy-to-clipboard
+      :class: copy-to-clipboard
+      :number-lines:
 
       from threading import Thread,Lock
 
@@ -492,10 +491,11 @@ Beispiel: Thread-safe Shared Counter
   .. cell:: width-50 incremental
 
     .. code:: python
-      :class: smaller copy-to-clipboard
+      :class: copy-to-clipboard
+      :number-lines:
 
       # Thread-sichere Implementierungen
-      #  von increment und decrement
+      # von increment und decrement
 
 
       def increment(self):
@@ -511,10 +511,9 @@ Beispiel: Thread-safe Shared Counter
 
 .. supplemental::
 
-  .. admonition:: Warnung
-    :class: warning
+  .. warning::
 
-    Code, der eine konkrete Sperre erzeugt, anfordert und freigibt, sollte immer lokal sein; d.h. nicht über die Code-basis verteilt sein. Auch wenn es möglich ist eine Instanz eines Locks weiterzureichen und sperren in einer Methode anzufordern und in einer anderen Methode freizugeben, so ist dies eine schlechte Praxis, da es zu ((sehr,) sehr) schwer zu findenden Fehlern führen kann.
+    Code, der eine konkrete Sperre erzeugt, anfordert und freigibt, sollte immer lokal sein; d. h. nicht über die Codebasis verteilt sein. Auch wenn es möglich ist eine Instanz eines Locks weiterzureichen und Sperren in einer Methode anzufordern und in einer anderen Methode freizugeben, so ist dies eine schlechte Praxis, da es zu ((sehr,) sehr) schwer zu findenden Fehlern führen kann.
 
 
 
@@ -526,7 +525,8 @@ Sperren und komplexe Rückgabewerte
   .. cell:: width-50
 
     .. code:: python
-      :class: smaller copy-to-clipboard
+      :class: copy-to-clipboard
+      :number-lines:
 
       from threading import Thread,Lock
 
@@ -541,7 +541,8 @@ Sperren und komplexe Rückgabewerte
   .. cell:: width-50 incremental
 
     .. code:: python
-      :class: smaller copy-to-clipboard
+      :class: copy-to-clipboard
+      :number-lines:
 
       def update(self, x, y):
           self.lock.acquire()
@@ -571,7 +572,7 @@ Bedingungsvariablen
 Bedingte Synchronisation
 ------------------------------------------------------------------------
 
-.. class:: incremental
+.. class:: incremental-list
 
 - drückt eine Bedingung für die Reihenfolge der Ausführung von Operationen aus.
 - z. B. können Daten erst dann aus einem Puffer entfernt werden, wenn Daten in den Puffer eingegeben wurden.
@@ -584,7 +585,7 @@ Bedingte Synchronisation
 Programmierung mit ``Condition``\ s
 ----------------------------------------------------------------------
 
-.. deck:: incremental footnotesize margin-top-1em
+.. deck::
 
   .. card::
 
@@ -606,8 +607,7 @@ Programmierung mit ``Condition``\ s
 
   .. card::
 
-    .. admonition:: Wichtig
-      :class: warning
+    .. warning::
 
       Wenn ein Thread aufgeweckt wird, kann er nicht davon ausgehen, dass seine Bedingung erfüllt ist!
 
@@ -626,15 +626,17 @@ Beispiel: Implementation eines *BoundedBuffer*
   In diesem Fall würde gelten, dass, wenn ein Thread auf eine Bedingung wartet, kein anderer Thread auf die andere Bedingung warten kann, da sich die Bedingungen gegenseitig ausschließen.
 
 
+
 Beispiel: Synchronisation mit Bedingungsvariablen
 --------------------------------------------------------------------
 
-.. grid:: far-smaller
+.. grid::
 
   .. cell:: width-50
 
     .. code:: python
       :class: copy-to-clipboard
+      :number-lines:
 
       from threading \
         import Condition, Lock
@@ -652,6 +654,7 @@ Beispiel: Synchronisation mit Bedingungsvariablen
 
     .. code:: python
       :class: copy-to-clipboard
+      :number-lines:
 
         def put(self, item):
           with self.not_full:
@@ -731,12 +734,13 @@ Beispiel: Synchronisation mit nur einer Bedingung
 
   .. card::
 
-    .. container:: text-align-center dhbw-red bolder
+    .. container:: red
 
-      Fehlersituation, die bei der Verwendung von ``notify`` (statt ``notify_all``) auftreten könnte.
+      Fehler, der bei der Verwendung von ``notify`` (statt ``notify_all``) auftreten könnte.
 
-    .. code:: java
+    .. code:: python
       :class: copy-to-clipboard
+      :number-lines:
 
       bb = BoundedBuffer(1);
       p1 = Thread(target=lambda: bb.put(1)); p2 = Thread(target=lambda: bb.put(2))
@@ -744,7 +748,7 @@ Beispiel: Synchronisation mit nur einer Bedingung
       c1.start(); c2.start(); p1.start(); p2.start();
 
     .. csv-table::
-      :class: incremental no-table-borders
+      :class: incremental-table-rows borderless compact highlight-cell-on-hover
       :header: " ", "Aktionen", "(Änderung des) Zustand(s) des Buffers", "Auf die Sperre (*Lock*) wartend", "An der Bedingung wartend"
 
       1, "**c1:bb.get()**, :raw-html:`<br>` c2:bb.get(), p1:bb.put(), p2:bb.put()", empty, "{c2,p1,p2}", {c1}
@@ -765,7 +769,7 @@ Beispiel: Synchronisation mit nur einer Bedingung
 *Best Practices* in Hinblick auf Synchronisation
 -----------------------------------------------------------
 
-.. class:: impressive incremental
+.. class:: incremental-list dhbw
 
 - Code, der eine Sperre hält (:eng:`Lock`) sollte so kurz (zeitlich) wie möglich gehalten werden.
 
@@ -779,14 +783,13 @@ Beispiel: Synchronisation mit nur einer Bedingung
 Ressourcen immer in der gleichen Reihenfolge sperren
 ------------------------------------------------------------------
 
-.. class:: impressive
+.. container:: accentuate
 
-- Wenn zwei (oder mehr) Threads bzw. Prozesse auf die gleichen Ressourcen in unterschiedlicher Reihenfolge zugreifen und entsprechende Sperren halten bzw. anfordern, kann es zu einem Deadlock kommen.
+    Wenn zwei (oder mehr) Threads bzw. Prozesse auf die gleichen Ressourcen in unterschiedlicher Reihenfolge zugreifen und entsprechende Sperren halten bzw. anfordern, kann es zu einem Deadlock kommen.
 
-.. admonition:: Zu Beachten
-  :class: warning incremental
+.. warning::
 
-  **Ressourcen immer in der gleichen Reihenfolge sperren**, um Deadlocks zu vermeiden.
+    **Ressourcen immer in der gleichen Reihenfolge sperren**, um Deadlocks zu vermeiden.
 
 
 
