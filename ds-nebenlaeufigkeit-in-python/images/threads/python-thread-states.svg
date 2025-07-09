@@ -10,9 +10,12 @@
     width="412"
     height="332"
 >
+<style>
+  @import url('/LectureDoc2/ext/fonts/ld-fonts.css');
+</style>
   <defs>
     <font-face
-            font-family="Helvetica"
+            font-family="Noto Sans Display"
             font-size="16"
             units-per-em="1000"
             underline-position="-75.68359"
@@ -26,11 +29,11 @@
             font-weight="400"
         >
       <font-face-src>
-        <font-face-name name="Helvetica-Oblique" />
+        <font-face-name name="Noto Sans Display-Oblique" />
       </font-face-src>
     </font-face>
     <font-face
-            font-family="Helvetica"
+            font-family="Noto Sans Display"
             font-size="16"
             units-per-em="1000"
             underline-position="-75.68359"
@@ -43,11 +46,11 @@
             font-weight="400"
         >
       <font-face-src>
-        <font-face-name name="Helvetica" />
+        <font-face-name name="Noto Sans Display" />
       </font-face-src>
     </font-face>
     <font-face
-            font-family="Helvetica Neue"
+            font-family="Noto Sans Display Neue"
             font-size="16"
             panose-1="2 0 5 3 0 0 0 2 0 4"
             units-per-em="1000"
@@ -61,7 +64,7 @@
             font-weight="400"
         >
       <font-face-src>
-        <font-face-name name="HelveticaNeue" />
+        <font-face-name name="Noto Sans DisplayNeue" />
       </font-face-src>
     </font-face>
     <marker
@@ -123,24 +126,22 @@
                 />
         <text transform="translate(246 452.5)" fill="white">
           <tspan
-                        font-family="Helvetica"
+                        font-family="Noto Sans Display"
                         font-size="16"
                         font-style="italic"
                         font-weight="400"
                         fill="white"
                         x="40.101562"
                         y="15"
-                        xml:space="preserve"
                     >nicht </tspan>
           <tspan
-                        font-family="Helvetica"
+                        font-family="Noto Sans Display"
                         font-size="16"
                         font-style="italic"
                         font-weight="400"
                         fill="white"
                         x="18.3125"
                         y="34"
-                        xml:space="preserve"
                     >existierend</tspan>
         </text>
       </g>
@@ -158,13 +159,12 @@
                 />
         <text transform="translate(246 558)" fill="white">
           <tspan
-                        font-family="Helvetica"
+                        font-family="Noto Sans Display"
                         font-size="16"
                         font-weight="400"
                         fill="white"
                         x="43.652344"
                         y="15"
-                        xml:space="preserve"
                     >neu</tspan>
         </text>
       </g>
@@ -182,22 +182,20 @@
                 />
         <text transform="translate(246 644.5)" fill="white">
           <tspan
-                        font-family="Helvetica"
+                        font-family="Noto Sans Display"
                         font-size="16"
                         font-weight="400"
                         fill="white"
-                        x="16.53125"
+                        x="16.5"
                         y="15"
-                        xml:space="preserve"
                     >ausführbar/</tspan>
           <tspan
-                        font-family="Helvetica"
+                        font-family="Noto Sans Display"
                         font-size="16"
                         font-weight="400"
                         fill="white"
-                        x="16.96875"
+                        x="16.5"
                         y="34"
-                        xml:space="preserve"
                     >ausführend</tspan>
         </text>
       </g>
@@ -215,13 +213,12 @@
                 />
         <text transform="translate(429 813.276)" fill="white">
           <tspan
-                        font-family="Helvetica Neue"
+                        font-family="Noto Sans Display Neue"
                         font-size="16"
                         font-weight="400"
                         fill="white"
                         x="45.144"
                         y="15"
-                        xml:space="preserve"
                     >tod</tspan>
         </text>
       </g>
@@ -239,13 +236,12 @@
                 />
         <text transform="translate(19 813)" fill="white">
           <tspan
-                        font-family="Helvetica"
+                        font-family="Noto Sans Display"
                         font-size="16"
                         font-weight="400"
                         fill="white"
                         x="27.210938"
                         y="15"
-                        xml:space="preserve"
                     >blockiert</tspan>
         </text>
       </g>
@@ -323,7 +319,6 @@
                         fill="black"
                         x="0"
                         y="15"
-                        xml:space="preserve"
                     >Thread(…)</tspan>
         </text>
       </g>
@@ -336,7 +331,6 @@
                         fill="black"
                         x="0"
                         y="15"
-                        xml:space="preserve"
                     >start()</tspan>
         </text>
       </g>
@@ -349,15 +343,13 @@
                         fill="black"
                         x="37.14884"
                         y="15"
-                        xml:space="preserve"
                     >run</tspan>
           <tspan
-                        font-family="Helvetica"
+                        font-family="Noto Sans Display"
                         font-size="16"
                         font-weight="400"
                         fill="black"
                         y="15"
-                        xml:space="preserve"
                     > endet</tspan>
         </text>
       </g>
@@ -370,25 +362,22 @@
                         fill="black"
                         x="84.48438"
                         y="15"
-                        xml:space="preserve"
                     >join()</tspan>
           <tspan
-                        font-family="Helvetica"
+                        font-family="Noto Sans Display"
                         font-size="16"
                         font-weight="400"
                         fill="black"
                         x="21.765625"
                         y="53"
-                        xml:space="preserve"
                     >blockierende Operationen </tspan>
           <tspan
-                        font-family="Helvetica"
+                        font-family="Noto Sans Display"
                         font-size="16"
                         font-weight="400"
                         fill="black"
                         x="0"
                         y="72"
-                        xml:space="preserve"
                     >(z. B. IO oder auf Lock wartend)</tspan>
         </text>
       </g>
