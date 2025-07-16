@@ -18,7 +18,7 @@ Einführung in die Zahlentheorie
 
 :Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
 :Kontakt: michael.eichberg@dhbw.de
-:Version: 1.1.3
+:Version: 1.1.4
 :Quelle: Im Wesentlichen *Cryptography and Network Security - Principles and Practice, 8th Edition, William Stallings*
 
 .. supplemental::
@@ -503,14 +503,14 @@ Rechnung Modulo 8
 
                 for i in range(0,8):
                     print(str(i)+", ",end="")
-                for j in range(0,8):
-                    v = (i*j) % 8
-                    if v == 1:
-                        v = "*"+str(v)+"*"
-                    else:
-                        v = str(v)
-                    print(v+",",end="")
-                print()
+                    for j in range(0,8):
+                        v = (i*j) % 8
+                        if v == 1:
+                            v = "*"+str(v)+"*"
+                        else:
+                            v = str(v)
+                        print(v+",",end="")
+                    print()
 
 
 
@@ -677,6 +677,7 @@ Werfen wir zuerst einen Blick auf :math:`x \times a + y \times b` für einige :m
     Der GGT von :math:`42` und :math:`30`: :math:`6` erscheint in der Tabelle (:math:`x = -2` und :math:`y = 3`).
 
 
+
 Erweiterter Euklidischer Algorithmus :raw-html:`<br>` Systematische Berechnung für ggt(710,310)
 ------------------------------------------------------------------------------------------------------------------
 
@@ -841,6 +842,7 @@ Primzahlen
    Primzahlen spielen in der Zahlentheorie eine zentrale Rolle. Wir betrachten sie hier aber nur insoweit es für das Verständnis der Kryptographie notwendig ist.
 
    Die Zerlegung zu bestimmen geschieht dadurch, dass man die Zahl durch die kleinste Primzahl (2) solange teilt, bis dies nicht mehr ohne Rest möglich ist, die Potenz ergibt sich dann aus der Anzahl der erfolgreichen Teilungen. Danach fährt man mit der nächsten Primzahl fort (3, 5, 7, ...) bis die Zahl zerlegt wurde.
+
 
 
 Fermats (kleines) Theorem
