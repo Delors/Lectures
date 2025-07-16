@@ -16,7 +16,7 @@ Code Reviews
 
 :Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
 :Kontakt: michael.eichberg@dhbw.de
-:Version: 0.1.1
+:Version: 0.1.2
 
 .. supplemental::
 
@@ -213,3 +213,4 @@ Code Reviews von JavaScript
     - Wird nur minimaler globaler Zustand verwendet?
     - Ist die (Inline-)Dokumentation ausreichend und korrekt.
     - Sind die TODOs, FIXMEs verständlich und umsetzbar?
+    - Bei verteilten Anwendungen: ist die Aufteilung der Logik nachvollziehbar und sinnvoll (zum Beispiel auch aus Sicht von Cheatingmöglichkeiten)
