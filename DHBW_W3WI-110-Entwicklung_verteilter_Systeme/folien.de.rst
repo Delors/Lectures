@@ -91,6 +91,8 @@ Projekt/Programmieraufgabe
 
 Entwicklung eines Kollaborationstools als wiederverwendbare Webkomponenten. D. h. jedes Team entwickelt *ein* eigenes Tool.
 
+.. TODO Anforderungen präzisieren - insbesondere an die Webkomponente!
+
 .. story::
 
     .. compound::
@@ -204,6 +206,8 @@ Ablauf - W3WI-110 - Entwicklung verteilter Systeme 23SEB
     - Scheduled: 11. Jul 2025 at 13:15 to 17:30, CEST
 
       Abschlusspräsentationen (Vorstellung des Tools und Vorstellung wie die Komponenten genutzt werden kann - d. h. Code zeige) und Vorführung der Projekte.
+
+      .. TODO Anforderungen präzisieren!
 
       Die Projektabgabe ist am 9.7.2025 um 23:59 Uhr.
 
