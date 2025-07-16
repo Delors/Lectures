@@ -17,7 +17,7 @@ Public-Key-Kryptographie und RSA
 
 :Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
 :Kontakt: michael.eichberg@dhbw.de
-:Version: 1.1.2
+:Version: 1.2
 :Basierend auf: *Cryptography and Network Security - Principles and Practice, 8th Edition, William Stallings*
 
 .. supplemental::
@@ -246,40 +246,43 @@ Anwendungen für Public-Key-Kryptosysteme
 Anforderungen an Public-Key-Algorithmen
 --------------------------------------------
 
-.. class:: incremental-list
+.. class:: incremental-list positive-list
 
-- Für eine Partei :math:`B` ist es rechnerisch einfach, ein Schlüsselpaar (bestehend aus öffentlicher Schlüssel :math:`PU_b` und privater Schlüssel :math:`PR_b`) zu erzeugen.
-- Für einen Absender :math:`A` ist es rechnerisch einfach, bei Kenntnis des öffentlichen Schlüssels von :math:`B` und der zu verschlüsselnden Nachricht den entsprechenden Chiffretext zu erzeugen.
-- Für den Empfänger :math:`B` ist es rechnerisch einfach, den resultierenden Chiffretext mit Hilfe des privaten Schlüssels zu entschlüsseln, um die ursprüngliche Nachricht wiederherzustellen.
+- Für eine Partei :math:`B` ist es *rechnerisch einfach*, ein Schlüsselpaar (bestehend aus öffentlicher Schlüssel :math:`PU_b` und privater Schlüssel :math:`PR_b`) zu erzeugen.
+- Für einen Absender :math:`A` ist es *rechnerisch einfach*, bei Kenntnis des öffentlichen Schlüssels von :math:`B` und der zu verschlüsselnden Nachricht den entsprechenden Chiffretext zu erzeugen.
+- Für den Empfänger :math:`B` ist es *rechnerisch einfach*, den resultierenden Chiffretext mit Hilfe des privaten Schlüssels zu entschlüsseln, um die ursprüngliche Nachricht wiederherzustellen.
+- Die beiden Schlüssel können in beliebiger Reihenfolge verwendet werden.
+
+.. class:: incremental-list negative-list
+
 - Für einen Angreifer, der den öffentlichen Schlüssel kennt, ist es *rechnerisch unmöglich*, den privaten Schlüssel zu ermitteln.
 - Für einen Angreifer, der den öffentlichen Schlüssel und einen Chiffretext kennt, ist es *rechnerisch unmöglich*, die ursprüngliche Nachricht wiederherzustellen.
-- Die beiden Schlüssel können in beliebiger Reihenfolge verwendet werden.
+
 
 
 
 Anforderungen an Public-Key-Algorithmen
 --------------------------------------------
 
-.. class:: incremental-list
+.. repetition::
 
-- Benötigt wird eine Falltürfunktion (:eng:`Trapdoor one-way function`)
-
-  .. container:: s-font-size-90
-
-    Eine Einwegfunktion ist im Allgemeinen eine Funktion, bei der jeder Funktionswert eine eindeutige Umkehrung hat, wobei die *Berechnung der Funktion einfach* ist, während die *Bestimmung der Umkehrfunktion praktisch undurchführbar ist*.
+    Eine Einwegfunktion ist im Allgemeinen eine Funktion, bei der jeder Funktionswert :math-i:`Y` eine eindeutige Umkehrung hat, wobei die *Berechnung der Funktion einfach* ist, während die *Bestimmung der Umkehrfunktion praktisch undurchführbar ist*.
 
     - :math:`Y = f(X)` einfach
     - :math:`X = f^{–1}(Y)` „unmöglich“
 
-- Eine Einwegfunktion mit Falltür ist eine Familie invertierbarer Funktionen :math:`f_k`, für die gilt:
+.. story::
 
-  .. container:: s-font-size-90
+    .. class:: incremental-list
 
-    - :math:`Y = f_k(X)` einfach, wenn :math-i:`k` und :math-i:`X` bekannt sind.
-    - :math:`X = f_k^{–1}(Y)` einfach,  wenn :math-i:`k` und :math-i:`Y` bekannt sind.
-    - :math:`X = f_k^{–1}(Y)` unmöglich, wenn :math-i:`Y` bekannt ist, aber :math-i:`k` nicht.
+    - Benötigt wird jedoch eine Falltürfunktion (:eng:`Trapdoor one-way function`); d. h. eine Einwegfunktion die effizient umkehrbar ist, **wenn ein Geheimnis bekannt ist**.
+    - Eine Einwegfunktion mit Falltür ist eine Familie invertierbarer Funktionen :math:`f_k`, für die gilt:
 
-- Ein praktisches Public-Key-Verfahren hängt von einer geeigneten Trapdoor-Einwegfunktion ab.
+        - :math:`Y = f_k(X)` einfach, wenn :math-i:`k` und :math-i:`X` bekannt sind.
+        - :math:`X = f_k^{–1}(Y)` einfach,  wenn :math-i:`k` und :math-i:`Y` bekannt sind.
+        - :math:`X = f_k^{–1}(Y)` unmöglich, wenn :math-i:`Y` bekannt ist, aber :math-i:`k` nicht.
+
+    - Ein praktisches Public-Key-Verfahren hängt von einer geeigneten Trapdoor-Einwegfunktion ab.
 
 .. supplemental::
 
@@ -336,6 +339,97 @@ Missverständnisse bei der Verwendung von Public-Key-Kryptosystemen
 
 Public-Key Algorithmen
 ------------------------
+
+
+
+Idee bzgl. Schlüsseltauschverfahren
+--------------------------------------------
+
+.. rubric:: Schlüssel wird gemeinsam konstruiert
+
+.. story::
+
+    .. class:: incremental-list
+
+    - es gibt eine öffentliche Zahl :math-i:`s` und eine öffentlich bekannte Funktion :math-i:`F`, die kommutativ ist.
+    - A und B überlegen sich je eine geheime Zahl :math-i:`a` und :math-i:`b`
+    - A berechnet :math:`F(a, s)` und sendet das Ergebnis an B
+    - B berechnet :math:`F(b, s)` und sendet das Ergebnis an A
+    - Aus den geheimen und bekanntgegebenen Werten wird der Schlüssel berechnet:
+
+      A berechnet :math:`K = F(a, F(b,s))`
+
+      B berechnet :math:`K = F(b, F(a,s))`
+
+    .. class:: incremental-list negative-list
+
+    - Angreifer M kennt :math-i:`F` und :math-i:`s`.
+
+      Der Angreifer kann/könnte ggf. berechnen :math:`K = F(F(a,s),F^{-1}(F(b,s),s))`
+
+    - Die Sicherheit beruht auf der Annahme, dass die Umkehrung der Funktion :math-i:`F(x, s)` nach :math-i:`x` nicht effizient möglich ist – selbst wenn :math-i:`s` bekannt ist.
+
+      .. supplemental::
+
+         .. example::
+
+            .. rubric:: Falls :math:`F` invertierbar ist
+
+            Sei :math:`a = 3`, :math:`b = 5` und :math:`s = 4`.
+
+            Sei unsere Funktion :math:`F`: :math:`F(x,y) = x + y`
+
+            Dann ist :math:`F(a, F(b,s)) = F(a, b + s) = a + b + s = 3 + 5 + 4 = 12` und :math:`F(b, F(a,s)) = F(b, a + s) = b + a + s = 5 + 3 + 4 = 12`.
+
+            Der Angreifer kann nun folgende Rechnung durchführen, da :math-i:`s` bekannt ist:
+
+            :math:`F(F(a,s),F_s^{-1}(F(b,s))) =`
+
+            :math:`F(7,F_s^{-1}(9)) =`
+
+            :math:`F(7,5) = 12`
+
+            Da :math:`s = 4` bekannt ist, kann ein Angreifer die Umkehrfunktion leicht bestimmen und es gilt: :math:`F_{s=4}^{-1}(x) = x - 4`
+
+
+
+Diffie-Hellmann(-Merkle)-Schlüsseltausch
+-----------------------------------------
+
+.. story::
+
+    .. class:: incremental-list
+
+    - ermöglich es zwei Kommunikationspartnern, über eine öffentliche (abhörbare) Leitung einen gemeinsamen (Sitzungs-)Schlüssel zu vereinbaren
+    - der Sitzungsschlüssel wird dann für ein symmetrisches Verschlüsselungsverfahren verwendet
+    - veröffentlicht im Jahr 1976
+
+    - Ablauf:
+
+      #. Gegeben sein eine Primzahl :math-i:`p` und ein Erzeuger (Generator) :math:`s \in \mathbb{Z}_p^*`
+      #. Beide Kommunikationspartner wählen eine Zahl :math-i:`a` bzw. :math-i:`b` für die gilt  :math:`a,b \in \mathbb{Z}_{p-1}`
+      #. A berechnet :math:`\alpha = s^a \bmod p` und B berechnet :math:`\beta = s^b \bmod p`
+      #. A und B senden sich gegenseitig ihre Ergebnisse zu
+
+      #. Der Schlüssel wird dann wie folgt berechnet: :math:`K = \alpha^b \bmod p = \beta^a \bmod p`
+
+    - Die Sicherheit des Diffie-Hellman-Protokolls beruht auf der Schwierigkeit des diskreten Logarithmusproblems. Das Problem aus :math:`g^x \equiv y \mod p` den Exponenten :math-i:`x` zu finden, ist in großen Gruppen praktisch schwer lösbar.
+
+    .. warning::
+        :class: incremental
+
+        Klassisches Diffie-Hellmann kann von zukünftigen leistungsstarken Quantenrechnern unter Einsatz des Shor Algorithmus potentiell gebrochen werden.
+
+        „Nachfolger“ ist zum Beispiel CRYSTALS-Kyber.
+
+
+
+
+.. supplemental::
+
+    :math:`\mathbb{Z}_p^*` ist die multiplikative Gruppe modulo :math:`p`; ist :math:`p` eine Primzahl, dann ist die Gruppe zyklisch. Damit der gemeinsam berechnete Schlüssel den gesamten Wertebereich von :math:`\mathbb{Z}_p^*` abdecken kann, muss :math:`s` ein Erzeuger dieser Gruppe sein; d. h. :math:`s^x \bmod p` mit :math:`x \in \mathbb{Z}_{p-1}` erzeugt alle Element der Gruppe. Ist :math:`s` kein Erzeuger, so ist der Schlüsselraum auf eine echte Untergruppe eingeschränkt, was die kryptografische Sicherheit verringert. Die Anzahl der Erzeuger einer Gruppe :math:`\mathbb{Z}_p^*` (auch primitive Wurzeln genannt)  ist gegeben durch: :math:`\varphi(p - 1)` wobei :math:`\varphi` die Eulersche Totientenfunktion ist.
+
+
 
 
 Rivest-Shamir-Adleman (RSA) Algorithm
@@ -745,6 +839,27 @@ Zusammenfassung - Hashes, Macs und digitale Signaturen
 - Hashes dienen der Gewährleistung der Integrität von Daten.
 - Macs dienen der Authentifizierung von Daten. Da jedoch ein gemeinsamer Schlüssel vom Sender und Empfänger verwendet wird, können beide Seiten Nachrichten fälschen. Sie bieten keine Nichtabstreitbarkeit.
 - Digitale Signaturen bieten Integrität, Authentizität und Nichtabstreitbarkeit. Sie basieren auf asymmetrischen Verschlüsselungsalgorithmen und sind daher langsamer als Macs.
+
+
+.. class:: exercises transition-fade
+
+Übung
+----------
+
+.. exercise:: Diffie-Hellmann(-Merkle)
+
+    Führen Sie das DH-Verfahren von Hand durch. Die gemeinsame Primzahl :math:`p` sei :math:`17`, :math:`s` sei :math:`7`. Alice wählt :math:`a = 5`, Bob wählt :math:`b = 6`.
+
+    Welche Werte werden ausgetauscht, wie lautet der Schlüssel?
+
+    .. solution::
+        :pwd: GruppenTheorie!
+
+        Alice: :math:`\alpha = 7^5 \equiv 11 \pmod{17}`
+
+        Bob: :math:`\beta = 7^6 \equiv 9 \pmod{17}`
+
+        Schlüssel: :math:`\alpha^b \equiv 11^6 \equiv 8 \pmod{17} = \beta^a \equiv 9^5 \equiv 8 \pmod{17}`
 
 
 
