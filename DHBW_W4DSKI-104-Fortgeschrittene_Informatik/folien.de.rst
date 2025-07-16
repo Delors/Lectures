@@ -64,7 +64,7 @@ Prüfungsleistung - Portfolio
       .. rubric:: Bewertung
 
       - Kurztest 25%
-      - Portfolioaufgabe 75% in Teams von 5 bis 6 Studierenden. Die Aufgabe umfasst Präsentationen, Code Reviews und die Entwicklung eines Projekts. Jeder muss mind. einmal vortragen.
+      - Portfolioaufgabe 75% in Teams von 5 bis 6 Studierenden. Die Aufgabe umfasst Präsentationen, Code Reviews und die Entwicklung eines Projekts.
 
   .. card::
 
@@ -87,7 +87,7 @@ Prüfungsleistung - Portfolio
 
     - Die Entwicklung erfolgt in Gruppen von 5 bis 6 Personen und muss immer einen Webclient und eine Serverkomponente umfassen.
 
-    - Die eingesetzten Technologien sind auf JavaScript, CSS und HTML sowie ggf. Python für die Serverseite beschränkt. Frameworks, um ggf. die Kommunikation zwischen Web-Client und Server zu vereinfachen dürfen eingesetzt werden.
+    - Die eingesetzten Technologien sind auf JavaScript, CSS und HTML sowie ggf. Python für die Serverseite beschränkt. Frameworks, um ggf. die Kommunikation zwischen Web-Client und Server zu vereinfachen, dürfen eingesetzt werden.
 
     - Die Webanwendung muss responsive sein und braucht nur auf den neuesten Browsern laufen: Safari, Chrome und Firefox. Es sollten also die neuesten Web-Technologien verwendet werden.
 
@@ -141,6 +141,26 @@ Termine - 2. Block
               Welche Gruppe welche andere Gruppe reviewt wird *nach* den Vorträgen bekannt gegeben.
 
            .. presenter-note::
+
+                .. FIXME Zuteilung bei der keine Gruppe eine andere Gruppe zweimal reviewt und auch kein Review bekommt von einer Gruppe von der die Gruppe reviewt wurde:
+
+                    1. Termin
+                    1 -> 2
+                    3 -> 4
+                    5 -> 6
+
+                    6 -> 1
+                    2 -> 3
+                    4 -> 5
+
+                    2. Termin
+                    3 -> 5
+                    1 -> 4
+                    2 -> 6
+
+                    5 -> 1
+                    4 -> 2
+                    6 -> 3
 
                 Zuteilung in der ersten Runde:
 
@@ -268,10 +288,45 @@ Prüfungsleistungsbestandteile
     initiale Projektpräsentation, Gruppennote, 05
     Qualität des Reviews (d.h. des Reports), Gruppennote, 15
 
-
     zweite Projektpräsentation, Gruppennote, 05
     Qualität des Reviews (d.h. des Reports), Gruppennote, 20
 
     Spielbarkeit (inkl. Abschlusspräsentation), Gruppennote, 10
 
     Projekt, Gruppennote, 35
+
+
+
+Abgabe (Ergänzt am 14. Juli 2025)
+------------------------------------
+
+.. story::
+
+    - Abgabe des Projekts am 3.8.2025 bis 23:59 Uhr per Moodle.
+
+      (Die Abgabemöglichkeit ist breits eingerichtet und bis zur Deadline jederzeit möglich.)
+    - Abzugeben sind:
+
+      .. class:: incremental-list list-with-explanations
+
+      - **die vollständigen Sourcen des Projekts**; sollten externe Libraries verwendet worden sein, so ist eine entsprechende ``package.json`` bzw. ``requirements.txt`` Datei beizulegen, die alle Abhängigkeiten des Projekts enthält.
+      - eine Beschreibung der Architektur in Hinblick auf den Nachrichtenaustausch.
+
+        D. h. wann werden welche Nachrichten vom Client zum Server und wieder zurück zum Client gesendet. Wie ist das Datenformat der Nachrichten. Neben einer Überblicksdarstellung ist eine exemplarische Darstellung der Nachrichten anzugeben.
+      - das Projekt muss eine **License.txt** enthalten, die die Lizenzbedingungen des Projekts beschreibt. (Für eine Opensourcelizenz: https://opensource.org/licenses)
+      - das Projekt muss eine **README.md** enthalten, die beschreibt wie der Server zu konfigurieren und zu starten ist.
+      - ein kures Dokument, dass besagt **wer an welchem Teil gearbeitet hat**
+      - eine kurze **Erklärung welche KI Tools wo und wie verwendet wurden**.
+
+        Das bezieht alle Aspekte ein: Generierung von Code, Icons, Musik und Dokumentation.
+
+
+
+Benotungsgrundlage für das Projekt (Ergänzt am 14. Juli 2025)
+----------------------------------------------------------------
+
+- (max. 25 Punkte) die Qualität des Sourcecodes (HTML, CSS, JavaScript und ggf. Python)
+
+  Hierbei werden insbesondere die Kriterien beachtet, die auch bei den Reviews Gegenstand waren. Darüber hinaus wird auf die Verständlichkeit der Netzwerkkommunikation geachtet.
+- (max. 10 Punkte) die Qualität der Dokumentation (Readme und Architektur)
+- die anderen Dokumente (License.txt, Erklärung bzgl. KI Tools, Beteiligung an der Entwicklung) führen ggf. zum Aufschub der Notenmeldung
