@@ -16,7 +16,7 @@ Eine erste Einführung in die Sicherheit von (verteilten) Systemen\ [#]_
 
 :Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
 :Kontakt: michael.eichberg@dhbw.de
-:Version: 1.3.2
+:Version: 1.3.4
 
 .. [#] Die Folien basieren unter anderem auf einem Foliensatz von Prof. Dr. Henning Pagnia.
 
@@ -506,7 +506,7 @@ Angreifer übernimmt eine bestehende - zum Beispiel eine bereits durch (Einmal-)
 
 .. supplemental::
 
-    TCP/IP-Hijacking ist eine Form eines Man-in-the-Middle-Angriffs. Der Angreifer bestimmt erst die IP-Adressen der beiden Sitzungsteilnehmer.
+    TCP/IP-Hijacking ist eine Form eines Person-in-the-Middle-Angriffs. Der Angreifer bestimmt erst die IP-Adressen der beiden Sitzungsteilnehmer.
 
     Danach gibt es mehrere Möglichkeiten:
 
@@ -892,7 +892,7 @@ HMAC-based one-time password (HOTP)\ [#]_
 
   .. class:: incremental-list
 
-  - Ein kryptografisches Hash-Verfahren :math:`H` (Standard ist SHA-1)
+  - Ein kryptografisches Hash-Verfahren :math:`H` (Standard ist SHA-1 mit 160 Bit)
   - einen geheimen Schlüssel :math:`K`, der eine beliebige Bytefolge ist
   - Ein Zähler :math:`C`, der die Anzahl der Iterationen zählt
   - Länge des Passworts: :math:`d` (6-10, Standardwert ist 6, empfohlen werden 6-8)
@@ -1006,7 +1006,7 @@ Secure Shell (SSH) - Protokoll
      - ``Authorized keys`` - Serverseitige Datei mit den öffentlichen Schlüsseln der Nutzer
      - ``Identity keys`` - private Schlüssel der Nutzer
 
-    :Host keys: dienen der Authentifizierung von Servern (verhindern Man-in-the-Middle-Angriffe)
+    :Host keys: dienen der Authentifizierung von Servern (verhindern Person-in-the-Middle-Angriffe)
 
     :Session Keys: werden für die symmetrische Verschlüsselung der Daten in einer Verbindung verwendet. Session Keys (:ger:`Sitzungsschlüssel`) werden während des Verbindungsaufbaus ausgehandelt.
 
@@ -1082,7 +1082,7 @@ Secure Shell (SSH) - Risiken durch mangelnde Schlüsselverwaltung
 - Malware kann SSH-Schlüssel stehlen
 - SSH Keys können ggf. privilegierten Zugriff gewähren
 - SSH Keys können benutzt werden, wenn um Backdoors zu verstecken
-- Server keys erlauben ggf. Man-in-the-Middle-Angriffe
+- Server keys erlauben ggf. Person-in-the-Middle-Angriffe
 
 
 
@@ -1179,7 +1179,7 @@ Schwachstellen in SSH
         :pwd: sKey.!
 
         1. Schutz gegen Lauscher
-        2. Man-in-the-middle
+        2. Person-in-the-middle
         3. Der Benutzer wählt eine Zufallszahl :math:`r`, hier :math:`r = 769`. Berechnet wird nun:
 
            :math:`769^2\; mod\; 1000 = 361`
@@ -1449,9 +1449,9 @@ Realisierungsmöglichkeiten von Firewalls
   - Screening Router
   - Application Gateway (auch Bastion Host)
 
-    - Proxy-Server für bestimmte Dienste
-    - Client-Software (HTTP-Browser, telnet, ftp, ...)
-    - Server-Software
+    - (Reverse-)Proxy-Server für bestimmte Dienste
+    - Endpunkt aus Sicht von Client-Software (HTTP-Browser, EMail, ...)
+    - spezialisierte Server-Software
 
 - Software-Firewall (*Personal Firewall*)
 
