@@ -132,19 +132,19 @@ Zyklische Gruppen
 
         .. math::
 
-            3^1 = 3\; mod\; 7 = 3
+            3^1 = 3 \bmod 7 = 3
 
-            3^2 = 3+3\; mod\; 7 = 6
+            3^2 = 3+3 \bmod 7 = 6
 
-            3^3 = 3+3+3\; mod\; 7 = 2
+            3^3 = 3+3+3 \bmod 7 = 2
 
-            3^4 = 3+3+3+3\; mod\; 7 = 5
+            3^4 = 3+3+3+3 \bmod 7 = 5
 
-            3^5 = 3+3+3+3+3\; mod\; 7 = 1
+            3^5 = 3+3+3+3+3 \bmod 7 = 1
 
-            3^6 = 3+3+3+3+3+3\; mod\; 7 = 4
+            3^6 = 3+3+3+3+3+3 \bmod 7 = 4
 
-            3^7 = 3+3+3+3+3+3+3\; mod\; 7 = 0
+            3^7 = 3+3+3+3+3+3+3 \bmod 7 = 0
 
 
 
@@ -593,7 +593,7 @@ Polynomiale Division
     • Wir können jedes Polynom in der Form schreiben: :math:`f(x) = q(x) g(x) + r(x)`
 
       • :math:`r(x)` kann als Rest interpretiert werden
-      • Es gilt :math:`r(x) = f(x)\; mod\; g(x)`
+      • Es gilt :math:`r(x) = f(x) \bmod g(x)`
 
     • Wenn es keinen Rest gibt, dann teilt :math:`g(x)` das Polynom :math:`f(x)`
 
@@ -903,7 +903,7 @@ Multiplikation in :math:`GF(2^n)`
 
     .. math::
 
-        (x^7 \times x = x^8)\; mod\; m(x) = x^4 + x^3 + x + 1
+        (x^7 \times x = x^8) \bmod m(x) = x^4 + x^3 + x + 1
 
     da
 
@@ -915,7 +915,7 @@ Multiplikation in :math:`GF(2^n)`
 
     .. math::
 
-        (x^7 + x^6 + 1) \times x = (x^8 + x^7 + x)\; mod\; m(x)
+        (x^7 + x^6 + 1) \times x = (x^8 + x^7 + x) \bmod m(x)
 
     Hilfsrechnung:
 
@@ -930,7 +930,7 @@ Multiplikation in :math:`GF(2^n)`
 
     .. math::
 
-        x^7 \times x^2 = (x^9)\; mod\; m(x)
+        x^7 \times x^2 = (x^9) \bmod m(x)
 
     Hilfsrechnung:
 
@@ -1020,7 +1020,7 @@ Multiplikation in :math:`GF(2^n)`
         :pwd: 5 Loesungen
 
         1. :math:`x^3 + x^2`
-        2. :math:`f(x)=(x^4+x)·(x^3+x^2)\; mod\; p(x)= (x^7+x^6+x^4+x^3)\; mod\; p(x)=x^2+x`
+        2. :math:`f(x)=(x^4+x)·(x^3+x^2) \bmod p(x)= (x^7+x^6+x^4+x^3) \bmod p(x)=x^2+x`
         3. :math:`x^4 +x^3 +x^2 +1`
         4. :math:`x^4 + 1`
         5. Verifikation:
