@@ -17,7 +17,7 @@ Cybersecurity - Kontrollfragen
 
 :Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
 :Kontakt: michael.eichberg@dhbw.de, Raum 149B
-:Version: 1.0
+:Version: 1.0.1
 
 
 .. class:: new-section
@@ -84,7 +84,7 @@ Klassenraumübung
             - Direct-access Angriffe (d. h. physischer Angriff auf das System)
             - Eavesdropping (Abhören)
             - Malware
-            - Man-in-the-middle (MITM) Angriffe
+            - Person-in-the-middle Angriffe
             - Privilege escalation (unterschieden werden: horizontale und vertikale)
             - Side-Channel attacks (Seitenkanalangriffe)
             - Spoofing (z. B. IP-Spoofing) (Vortäuschen)

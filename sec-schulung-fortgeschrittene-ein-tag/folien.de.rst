@@ -18,7 +18,7 @@ IT Sicherheit - Vertiefung
 
 :Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
 :Kontakt: michael.eichberg@dhbw.de
-:Version: 1.0.1
+:Version: 1.0.2
 
 .. supplemental::
 
@@ -3177,7 +3177,7 @@ Secure Shell (SSH) - Protokoll
      - ``Authorized keys`` - Serverseitige Datei mit den öffentlichen Schlüsseln der Nutzer
      - ``Identity keys`` - private Schlüssel der Nutzer
 
-    :Host keys: dienen der Authentifizierung von Servern (verhindern Man-in-the-Middle-Angriffe)
+    :Host keys: dienen der Authentifizierung von Servern (verhindern Person-in-the-Middle-Angriffe)
 
     :Session Keys: werden für die symmetrische Verschlüsselung der Daten in einer Verbindung verwendet. Session Keys (:ger:`Sitzungsschlüssel`) werden während des Verbindungsaufbaus ausgehandelt.
 
@@ -3253,7 +3253,7 @@ Secure Shell (SSH) - Risiken durch mangelnde Schlüsselverwaltung
 - Malware kann SSH-Schlüssel stehlen
 - SSH Keys können ggf. privilegierten Zugriff gewähren
 - SSH Keys können benutzt werden, wenn um Backdoors zu verstecken
-- Server keys erlauben ggf. Man-in-the-Middle-Angriffe
+- Server keys erlauben ggf. Person-in-the-Middle-Angriffe
 
 
 
@@ -3307,7 +3307,7 @@ Schwachstellen in SSH
         :pwd: sKey.!
 
         1. Schutz gegen Lauscher
-        2. Man-in-the-middle
+        2. Person-in-the-middle
         3. Keine
 
 
@@ -3528,7 +3528,7 @@ Realisierungsmöglichkeiten von Firewalls
 
     - Proxy-Server für bestimmte Dienste
     - Server-Software
-    - Client-Software (HTTP-Browser, telnet, ftp, ...) kommuniziert nur mit dem Application Gateway
+    - Client-Software (HTTP-Browser, telnet, ftp, ...) kommuniziert nur mit dem Application Gateway; erscheint gegenüber Client Software als Endpunkt.
 
 - Software-Firewall (*Personal Firewall*)
 
