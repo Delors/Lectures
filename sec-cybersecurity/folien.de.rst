@@ -16,7 +16,7 @@ Cybersecurity
 
 :Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
 :Kontakt: michael.eichberg@dhbw.de
-:Version: 2.8.1
+:Version: 2.8.2
 
 .. supplemental::
 
@@ -335,7 +335,7 @@ Ausgewählte Angriffe, Angriffsmethoden und Bedrohungsszenarien
 - Direct-access Angriffe (d. h. physischer Angriff auf das System)
 - Eavesdropping (:ger:`Abhören`)
 - Malware
-- Man-in-the-middle (MITM) Angriffe
+- Person-in-the-middle Angriffe
 - Privilege escalation (unterschieden werden: horizontale und vertikale)
 - Side-Channel attacks (:ger:`Seitenkanalangriffe`)
 - Spoofing (z. B. IP-Spoofing) (:ger:`Vortäuschen`)
