@@ -16,7 +16,7 @@ Eine erste Einführung in die Sicherheit von (verteilten) Systemen\ [#]_
 
 :Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
 :Kontakt: michael.eichberg@dhbw.de
-:Version: 1.3.4
+:Version: 1.3.5
 
 .. [#] Die Folien basieren unter anderem auf einem Foliensatz von Prof. Dr. Henning Pagnia.
 
@@ -1081,7 +1081,7 @@ Secure Shell (SSH) - Risiken durch mangelnde Schlüsselverwaltung
 - Es ist nicht bekannt, welche Schlüssel auf welche Systeme Zugriff haben
 - Malware kann SSH-Schlüssel stehlen
 - SSH Keys können ggf. privilegierten Zugriff gewähren
-- SSH Keys können benutzt werden, wenn um Backdoors zu verstecken
+- SSH Keys können benutzt werden, um Backdoors zu verstecken
 - Server keys erlauben ggf. Person-in-the-Middle-Angriffe
 
 
