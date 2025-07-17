@@ -17,7 +17,7 @@ Public-Key-Kryptographie und RSA
 
 :Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
 :Kontakt: michael.eichberg@dhbw.de
-:Version: 1.2
+:Version: 1.2.1
 :Basierend auf: *Cryptography and Network Security - Principles and Practice, 8th Edition, William Stallings*
 
 .. supplemental::
@@ -54,7 +54,7 @@ Terminologie bzgl. asymmetrischer Verschlüsselung
             Zwei zusammengehörige Schlüssel, ein öffentlicher und ein privater Schlüssel, die zur Durchführung komplementärer Operationen verwendet werden, z. B. Ver- und Entschlüsselung oder Signaturerstellung und Signaturprüfung.
 
     :Public-Key-Zertifikat:
-            Ein digitales Dokument, das mit dem privaten Schlüssel einer Zertifizierungsstelle (eng:`Certification Authority`) ausgestellt und digital signiert wird und den Namen eines Teilnehmers an einen öffentlichen Schlüssel bindet. Das Zertifikat gibt an, dass der im Zertifikat genannte Teilnehmer die alleinige Kontrolle und den Zugriff auf den entsprechenden privaten Schlüssel hat.
+            Ein digitales Dokument, das mit dem privaten Schlüssel einer Zertifizierungsstelle (:eng:`Certification Authority`) ausgestellt und digital signiert wird und den Namen eines Teilnehmers an einen öffentlichen Schlüssel bindet. Das Zertifikat gibt an, dass der im Zertifikat genannte Teilnehmer die alleinige Kontrolle und den Zugriff auf den entsprechenden privaten Schlüssel hat.
 
     :Public-Key (asymmetrischer) kryptografischer Algorithmus:
             Ein kryptographischer Algorithmus, der zwei zusammengehörige Schlüssel verwendet, einen öffentlichen und einen privaten Schlüssel. Die beiden Schlüssel haben die Eigenschaft, dass die Ableitung des privaten Schlüssels aus dem öffentlichen Schlüssel rechnerisch nicht machbar ist bzw. sein sollte (vgl. Quantenkryptografie).
@@ -496,7 +496,7 @@ The RSA Algorithm
     :width: 100%
     :align: left
 
-    "Wähle :math:`p, q`", ":math:`p` und :math:`b` beide prim, :math:`p \neq q` "
+    "Wähle :math:`p, q`", ":math:`p` und :math:`q` beide prim, :math:`p \neq q` "
     "Berechne :math:`n`", ":math:`n = p \times q` "
     "Berechne :math:`𝜙(n)` ", ":math:`\phi(n) = (p - 1)(q - 1)` "
     "Wähle :math:`e`", ":math:`GGT(\phi(n),e) = 1; \quad 1 < e < \phi(n)` "
@@ -919,7 +919,7 @@ Zusammenfassung - Hashes, Macs und digitale Signaturen
             c = 70789294130501
             print("C=", c)
             print("M=", square_and_multiply(c, d, n))
-
+            # M=509822222563827
             # Umwandlung des int Wertes in Array of Chars:
             bstr = bin(m)
             chars = [bstr[i : i + 7] for i in range(2, len(bstr) - 1, 7)]
