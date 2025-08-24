@@ -16,7 +16,7 @@ Cybersecurity
 
 :Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
 :Kontakt: michael.eichberg@dhbw.de
-:Version: 2.8.2
+:Version: 2.9
 
 .. supplemental::
 
@@ -85,11 +85,16 @@ Was ist Cybersecurity?
 
 .. class:: new-section
 
-Von praktischen und theoretischen Angriffen
--------------------------------------------------------------
+Neuigkeiten aus der Welt der IT-Security 
+-----------------------------------------------------------------------------------------
+
+.. class:: section-subtitle
+
+Vorfälle, Forschung und Kampf gegen Cyberkriminalität
 
 
-Neuigkeiten aus der Welt der IT Sicherheit
+
+IT-Security Vorfälle
 -------------------------------------------------------------
 
 .. deck::
@@ -103,6 +108,19 @@ Neuigkeiten aus der Welt der IT Sicherheit
             [...] The attackers have held data hostage and offered a key for access in return for the $8 million ransom, said PT Telkom Indonesia’s director of network & IT solutions, Herlan Wijanarko, without giving further details. Wijanarko said the company, in collaboration with authorities at home and abroad, is investigating and trying to break the encryption that made data inaccessible. [...]
 
             -- June 25th, 2024 - `AP News <https://apnews.com/article/indonesia-ransomware-attack-national-data-center-213c14c6cc69d7b66815e58478f64cee>`__
+
+    .. card::
+
+        .. epigraph::
+
+            **UK government to ban public bodies from paying ransoms to hackers**
+
+            The UK government is planning to ban public bodies from paying ransoms to computer hackers, and private companies will be required to inform authorities if they plan to cave into cash demands.
+
+            […] The government could then provide those businesses with advice and support, including notifying them if any such payment would risk breaking the law by sending money to sanctioned cybercriminal groups, many of whom are based in Russia. […]
+
+            -- July, 22nd, 2025 - `The Guardian <https://www.theguardian.com/technology/2025/jul/22/uk-government-to-ban-public-bodies-from-paying-ransoms-to-hackers>`__
+
 
     .. card::
 
@@ -142,8 +160,119 @@ Neuigkeiten aus der Welt der IT Sicherheit
 
             The first recommendation: "Use only end-to-end encrypted communications." [...]
 
-
             --18.12.2024 - `Reuters <https://www.reuters.com/world/us/us-cyber-watchdog-tells-senior-officials-immediately-adopt-end-to-end-encryption-2024-12-18/>`__
+
+    .. card::
+
+        .. epigraph::
+
+            **Hijacked satellites and orbiting space weapons: In the 21st century, space is the new battlefield**
+
+            [...] hackers backing the Kremlin hijacked an orbiting satellite that provides television service to Ukraine.
+
+            Instead of normal programing, Ukrainian viewers saw parade footage beamed in from Moscow: waves of tanks, soldiers and weaponry. The message was meant to intimidate and was an illustration that 21st-century war is waged not just on land, sea and air but also in cyberspace and the reaches of outer space. [...]
+
+            More than 12,000 operating satellites now orbit the planet, playing a critical role not just in broadcast communications but also in military operations, navigation systems like GPS, intelligence gathering and economic supply chains.[...] 
+
+            .. supplemental::
+
+                .. rubric:: GenAI Browserextensions verhalten sich unterschiedlich:
+
+                “Perplexity always prevents any collection of sensitive information. It was the most private assistant we found in our study.”
+
+            -- April 24th, 2025 - `AP News <https://apnews.com/article/space-weapons-trump-satellites-russia-0fdd31a1e3d350a54823e8a3d228fc17>`__
+
+    .. card::
+
+        .. epigraph::
+
+            **Big Help or Big Brother? UC Davis Study Reveals Alarming Browser Tracking**
+
+            [...] GenAI browser assistants use large language models to make browsing easier and more personalized, and act as your ride-along as you surf the web. [...] these assistants can pose a significant threat to user privacy. [They]  often collect personal and sensitive information and share that information with both first-party servers and third-party trackers [...] one GenAI browser extension,  collected form inputs as well. While filling out a form on the IRS website, [teh extension] exfiltrated the social security number that was provided in the form field. 
+
+            -- August 13th, 2025 - `UC Davis <https://engineering.ucdavis.edu/news/big-help-or-big-brother-uc-davis-study-reveals-alarming-browser-tracking>`__
+
+
+    .. card::
+
+        .. epigraph::
+
+            **Chameleon Channels: Measuring YouTube Accounts Repurposed for Deception and Profit**
+
+            [...] We explore this problem of repurposed channels, whereby a channel changes its identity and contents. [...] By observing YouTube channels (re)sold over these 6~months, we find that a substantial number (37%) are used to disseminate potentially harmful content, often without facing any penalty. Even more surprisingly, these channels seem to gain rather than lose subscribers. [...]
+    
+            We confirm that these repurposed channels share several characteristics with sold channels -- mainly, the fact that they had a significantly high presence of potentially problematic content. Across repurposed channels, we find channels that became disinformation channels, as well as channels that link to web pages with financial scams. 
+
+            -- July 21st, 2025 - `arXiv <https://arxiv.org/abs/2507.16045>`__
+
+
+    .. card::
+
+        .. epigraph::
+
+            **Hackers Compromise Intelligence Website Used by CIA and Other Agencies**
+
+            Unidentified hackers have successfully breached a critical intelligence website used by the CIA and other U.S. agencies to manage sensitive government contracts [...]
+
+            Sources familiar with the investigation confirmed that data from Digital Hammer, one of the CIA’s most sensitive technology development programs, was among the  information accessed by the hackers. Digital Hammer compiles cutting-edge technologies for human intelligence gathering, surveillance, and counterintelligence operations, with a particular focus on countering Chinese intelligence and information operations.[...]
+
+            [...] The NNSA breach, exploited zero-day vulnerabilities in Microsoft SharePoint servers. Three Chinese threat groups Linen Typhoon, Violet Typhoon, and Storm-2603 were identified as the primary actors [...].
+
+            -- https://cybersecuritynews.com/cia-intelligence-website-compromised/
+
+
+    .. card::
+
+        .. epigraph::
+
+            **Trump administration to spend $1 billion on ‘offensive’ hacking operations**
+
+            [...] Offensive cyber operations can describe a wide range of targeted hacks against U.S. adversaries, which include the use of zero-day exploits — unknown flaws in software that give their operators the ability to hack into a target’s device — or the deployment of spyware, which can be used to steal data from a person. [...]
+
+            -- July 14th, 2025 - `TechCrunch <https://techcrunch.com/2025/07/14/trump-administration-to-spend-1-billion-on-offensive-hacking-operations/>`__
+
+
+    .. card::
+
+        .. epigraph::
+
+            **Hacker sneaks infostealer malware into early access Steam game**
+
+            A threat actor called EncryptHub has compromised a game on Steam to distribute info-stealing malware to unsuspecting users downloading the title.
+
+            A few days ago, the hacker (also tracked as Larva-208), injected malicious binaries into the Chemia game files hosted on Steam.
+
+            [...] According to threat intelligence company Prodaft, the initial compromise occurred on July 22, when EncryptHub added to the game files the HijackLoader malware (CVKRUTNP.exe), which establishes persistence on the victim device and downloads the Vidar infostealer (v9d9d.exe). [...] It is unclear how EncryptHub managed to add the malicious files to the game project but one explanation could be an insider helping out.
+
+            :red:`[...] This is the third case of malware slipping into Steam this year. [...]`
+
+            -- July 24th, 2025 - `BleepingComputer <https://www.bleepingcomputer.com/news/security/hacker-sneaks-infostealer-malware-into-early-access-steam-game/>`__
+
+
+
+IT-Security Forschung
+----------------------------------------------------
+
+.. deck::
+
+    .. card::
+
+        .. epigraph::
+
+            **Internet-wide Vulnerability Enables Giant DDoS Attacks**
+
+            Researchers have uncovered a distributed denial-of-service (DDoS) vulnerability in the HTTP/2 protocol that is more serious than anything seen in two years.
+
+            .. background:: 
+                :class: s-font-size-90
+                
+                In August 2023, unknown threat actors carried out the largest DDoS attack [...]. It worked thanks to a then-novel technique called "Rapid Reset," which took advantage of a fundamental flaw in implementations of HTTP/2.
+
+            Now, researchers from Tel Aviv University have identified a way around the Rapid Reset fix. They named the technique "MadeYouReset," and it's once again raising the possibility that attackers could enact colossal cyberattacks [...].
+            
+            [...] but a large number of the vendors that were potentially exposed to this were informed about it, and they did whatever they believed they should do. [...]
+
+            -- August, 18th, 2025 - `Dark Reading <https://www.darkreading.com/vulnerabilities-threats/internet-wide-vulnerability-giant-ddos-attacks>`__
 
     .. card::
 
@@ -207,7 +336,30 @@ Neuigkeiten aus der Welt der IT Sicherheit
 
             Malware in the air-gap and audio-gap computers generates crafted pixel patterns that produce noise in the frequency range of 0 - 22 kHz," Dr. Mordechai Guri, the head of the Offensive Cyber Research Lab in the Department of Software and Information Systems Engineering at the Ben Gurion University of the Negev in Israel, said in a newly published paper. [...]
 
-            -- 10. Sept. 2024 - `The Hacker News <https://thehackernews.com/2024/09/new-pixhell-attack-exploits-screen.html>`__
+            -- Sept. 10th, 2024 - `The Hacker News <https://thehackernews.com/2024/09/new-pixhell-attack-exploits-screen.html>`__
+
+    .. card::
+
+        .. epigraph::
+
+            **Nvidia warns its GPUs – even Blackwells [Released in 2024] – need protection against Rowhammer attacks**
+
+
+            Nvidia last week advised customers to ensure they employ mitigations against Rowhammer attacks, after researchers found one of its workstation-grade GPUs is susceptible to the exploit.
+
+            Rowhammer is a method of attempting to corrupt memory by repeatedly "hammering" rows of memory cells with a burst of read or write operations. The repeat operations can create electrical interference between rows of memory cells, potentially disrupting operations.[...]
+
+            -- July 13th, 2025 - `The Register <https://www.theregister.com/2025/07/13/infosec_in_brief/>`__
+
+
+
+
+
+
+Kampf gegen Cyberkriminalität
+-----------------------------------------------------------------------------------------
+
+.. deck::
 
     .. card::
 
@@ -225,7 +377,7 @@ Neuigkeiten aus der Welt der IT Sicherheit
 
         .. epigraph::
 
-            *CEO VERHAFTET*
+            **CEO VERHAFTET**
 
             Der Hersteller soll insgesamt 240.000 Geräte mit der DDoS-Funktion ausgestattet haben – teils ab Werk, teils erst nachträglich per Firmwareupdate.
 
@@ -261,6 +413,46 @@ Neuigkeiten aus der Welt der IT Sicherheit
 
             -- May 17, 2025 - `Davey Winder <https://www.forbes.com/sites/daveywinder/2025/05/17/vmware-hacked-as-150000-zero-day-exploit-dropped/>`__
 
+    .. card::
+
+        .. epigraph::
+
+            **CISA open-sources Thorium platform for malware, forensic analysis**
+
+            The U.S. Cybersecurity and Infrastructure Security Agency (CISA) today announced the public availability of Thorium. Thorium was developed [...] as a scalable cybersecurity suite that automates many tasks involved in cyberattack investigations [...]
+
+            [...] teams can use Thorium for automating [...] various file analysis workflows [such as]:
+
+            - Easily import and export tools to facilitate sharing across cyber defense teams,
+            - Integrate command-line tools as Docker images, [...]
+            - Filter results using tags and full-text search,
+            - Control access to submissions, tools, and results with strict group-based permissions,
+            - Scale with Kubernetes and ScyllaDB to meet workload demands.
+
+            [...]
+
+            -- August 24th, 2025 - `BleepingComputer <https://www.bleepingcomputer.com/news/security/cisa-open-sources-thorium-platform-for-malware-forensic-analysis/>`__
+
+
+    .. card::
+
+        .. epigraph::
+
+            **Global crackdown hits pro-Russian cybercrime, 100+ systems taken down worldwide**
+
+            In a major blow to pro-Russian cybercrime, authorities across Europe and the United States launched a sweeping international crackdown on the hacking group NoName057(16) between 14 and 17 July. The coordinated operation, led by Europol and Eurojust, targeted the group’s members and infrastructure.
+
+            Law enforcement and judicial authorities from Czechia, France, Finland, Germany, Italy, Lithuania, Poland, Spain, Sweden, Switzerland, the Netherlands, and the United States took part in the simultaneous actions. The investigation was further supported by ENISA and authorities from Belgium, Canada, Estonia, Denmark, Latvia, Romania, and Ukraine.
+
+            The operation disrupted a global attack infrastructure [...].
+
+            -- July 16th, 2025 - `HelpNet Security <https://www.helpnetsecurity.com/2025/07/16/pro-russian-cybercrime-crackdown-noname05716/>`__
+
+
+.. class:: new-section
+
+Cybersicherheitsvorfälle
+-------------------------
 
 
 Cybersicherheit ist das Geschäftsrisiko Nr. 1
@@ -315,6 +507,16 @@ Wichtige Kennzahlen bzgl. Cybersecurity-Vorfällen\ [#]_
 
     Die MTTC misst somit nicht wie lange es dauert bis alle Auswirkungen des Angriffs beseitigt sind/die normale Operation wiederhergestellt ist, sondern „nur“ wie lange es dauert die weitere Verbreitung zu stoppen.
 
+    .. admonition:: Beispielszenario
+        :class: dd-margin-left-2em   
+
+        :MTTD: Es kommt zu einer starken Häufung von gesperrten (z.B. Exchange-) Accounts aufgrund von zu vielen fehlschlagenden Anmeldeversuchen durch die vermeintlichen Nutzer. Aufgrund der hohen Zahl muss jedoch von einem Cyberangriff ausgegangen werden. *Durch eine Analyse der Log-Dateien kann festgestellt werden wann der Angriff begonnen hat und die MTTD ermittelt werden.*
+
+        :MTTI: Nach einer Analyse des Netzwerkverkehrs wird festgestellt, dass alle Anfragen von externen Rechnern aus einem definierten IP-Addressbereich erfolgen. (Eine Alternative wäre, dass die Anfragen von einem oder mehreren  internen Rechner ausgehen.) Dies ist die MTTI.
+            
+        :MTTR: Durch eine Rekonfiguration der Firewallregeln können die Anfragen blockiert werden und somit der Angriff eingedämmt werden. Dies ist die MTTR.
+
+        :MTTN: Als letzter Schritt muss untersucht werden welche Credentials ggf. erfolgreich gestohlen wurden und ob diese bereits genutzt wurden/werden. Nach dem Abschluss dieser Schritte kann ggf. die MTTN ermittelt werden.
 
 
 
@@ -663,6 +865,9 @@ Ausgewählte Social-Engineering Angriffe
             Slopsquatting ist (Stand Anfang 2025) deswegen möglich, da LLMs beim Generieren von Code häufiger auf nicht-existierende Pakete verweisen und diese im generierten Code importieren. Welche Paket importiert werden ist pro LLM relativ stabil aber über LLM-Grenzen hinweg sehr unterschiedlich.
 
 
+    :*Noch zu benennen*:
+
+        *Wie an den letzten Einträgen zu erkennen ist, darf diese Liste nicht als abschließend betrachtet werden! Neue Technologien (insbesondere KI) werden (vermutlich) zu neuen Angriffen führen.*
 
 
 
@@ -688,8 +893,6 @@ Cybersicherheit stärken
 
 
 
-.. class:: center-content
-
 Bug-Bounty-Programme
 -------------------------------------------------------------
 
@@ -711,7 +914,6 @@ Bug-Bounty-Programme
     Bug-Bounty-Programme sind Initiativen, die Einzelpersonen oder Forschergruppen für das Finden und Melden von Softwarefehlern belohnen. Diese Programme werden häufig von Softwareanbietern initiiert, um die Sicherheit ihrer Produkte zu verbessern.
 
 
-.. class:: center-content
 
 Post-Quantum Cryptography (PQC) Einführen
 -------------------------------------------------------------
