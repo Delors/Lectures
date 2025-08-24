@@ -597,7 +597,7 @@ XTS-AES Operation auf einem Block
                         30, ?, 11110
                         31, "_", 11111
 
-            - Verschlüsseln Sie nun die Nachricht "hello" (k = 5 und IV = !) mit dieser Chiffre.
+            - Verschlüsseln Sie nun die Nachricht "hello" (k = 3 und IV = !) mit dieser Chiffre.
             - Entschlüsseln Sie nun die Nachricht "OCEBL_RLI1MELOA". Der IV ist A und der Schlüssel ist 3.
 
             Welchen Effekt hat die Anwendung des OFB-Modus auf die Nachrichten?
