@@ -101,7 +101,7 @@
                         fill="black"
                         x="164.206"
                         y="15"
-                        xml:space="preserve"
+
                     >National</tspan>
         </text>
       </g>
@@ -125,7 +125,7 @@
                         fill="black"
                         x="0"
                         y="15"
-                        xml:space="preserve"
+
                     >National</tspan>
         </text>
       </g>
@@ -170,7 +170,7 @@
                         fill="white"
                         x="27.71"
                         y="15"
-                        xml:space="preserve"
+
                     >Zuständige </tspan>
           <tspan
                         font-family="Noto Sans Display"
@@ -179,7 +179,7 @@
                         fill="white"
                         x="25.218"
                         y="34"
-                        xml:space="preserve"
+
                     >Behörde für </tspan>
           <tspan
                         font-family="Noto Sans Display"
@@ -188,7 +188,7 @@
                         fill="white"
                         x="4.463"
                         y="53"
-                        xml:space="preserve"
+
                     >Aufsichtsaufgaben</tspan>
         </text>
       </g>
@@ -202,7 +202,7 @@
                         fill="white"
                         x="36.74"
                         y="15"
-                        xml:space="preserve"
+
                     >Zentrale </tspan>
           <tspan
                         font-family="Noto Sans Display"
@@ -211,7 +211,7 @@
                         fill="white"
                         x="25.932"
                         y="34"
-                        xml:space="preserve"
+
                     >Anlaufstelle</tspan>
         </text>
       </g>
@@ -301,7 +301,7 @@
                         fill="white"
                         x="20.988"
                         y="15"
-                        xml:space="preserve"
+
                     >Behörden für das </tspan>
           <tspan
                         font-family="Noto Sans Display"
@@ -310,7 +310,7 @@
                         fill="white"
                         x="13.596"
                         y="34"
-                        xml:space="preserve"
+
                     >Krisenmanagement</tspan>
         </text>
       </g>
@@ -334,7 +334,7 @@
                         fill="white"
                         x="57.185"
                         y="15"
-                        xml:space="preserve"
+
                     >CSIRT</tspan>
           <tspan
                         font-family="Noto Sans Display"
@@ -343,7 +343,7 @@
                         fill="white"
                         x="46.678"
                         y="34"
-                        xml:space="preserve"
+
                     >(ggf. z. B. </tspan>
           <tspan
                         font-family="Noto Sans Display"
@@ -352,7 +352,7 @@
                         fill="white"
                         x="23.284"
                         y="53"
-                        xml:space="preserve"
+
                     >sektorspezifisch)</tspan>
         </text>
       </g>
@@ -366,7 +366,7 @@
                         fill="white"
                         x="10.964"
                         y="15"
-                        xml:space="preserve"
+
                     >Zentrale Anlaufstelle</tspan>
         </text>
       </g>
@@ -423,7 +423,7 @@
                         fill="white"
                         x="20.988"
                         y="15"
-                        xml:space="preserve"
+
                     >Behörden für das </tspan>
           <tspan
                         font-family="Noto Sans Display"
@@ -432,7 +432,7 @@
                         fill="white"
                         x="13.596"
                         y="34"
-                        xml:space="preserve"
+
                     >Krisenmanagement</tspan>
         </text>
       </g>
@@ -495,7 +495,7 @@
                         fill="white"
                         x="57.185"
                         y="15"
-                        xml:space="preserve"
+
                     >CSIRT</tspan>
           <tspan
                         font-family="Noto Sans Display"
@@ -504,7 +504,7 @@
                         fill="white"
                         x="46.678"
                         y="34"
-                        xml:space="preserve"
+
                     >(ggf. z. B. </tspan>
           <tspan
                         font-family="Noto Sans Display"
@@ -513,7 +513,7 @@
                         fill="white"
                         x="23.284"
                         y="53"
-                        xml:space="preserve"
+
                     >sektorspezifisch)</tspan>
         </text>
       </g>
@@ -540,25 +540,17 @@
                         fill="black"
                         x="26.696895"
                         y="15"
-                        xml:space="preserve"
+
                     >EU-CyCLONe</tspan>
           <tspan
                         font-family="Noto Sans Display"
                         font-size="11"
                         font-weight="400"
                         fill="#797979"
-                        x="12.638395"
+                        x="12.638395"            
                         y="31"
-                        xml:space="preserve"
-                    >(</tspan>
-          <tspan
-                        font-family="Noto Sans Display"
-                        font-size="11"
-                        font-weight="400"
-                        fill="#797979"
-                        y="31"
-                        xml:space="preserve"
-                    >European cyber crisis </tspan>
+
+                    >(European cyber crisis </tspan>
           <tspan
                         font-family="Noto Sans Display"
                         font-size="11"
@@ -566,7 +558,7 @@
                         fill="#797979"
                         x="18.138395"
                         y="46"
-                        xml:space="preserve"
+
                     >liaison organisation </tspan>
           <tspan
                         font-family="Noto Sans Display"
@@ -575,16 +567,8 @@
                         fill="#797979"
                         x="44.477895"
                         y="61"
-                        xml:space="preserve"
-                    >network</tspan>
-          <tspan
-                        font-family="Noto Sans Display"
-                        font-size="11"
-                        font-weight="400"
-                        fill="#797979"
-                        y="61"
-                        xml:space="preserve"
-                    >)</tspan>
+
+                    >network)</tspan>
         </text>
       </g>
       <g id="Graphic_46">
@@ -596,7 +580,7 @@
                         fill="black"
                         x="0"
                         y="15"
-                        xml:space="preserve"
+
                     >CIRTs Netzwerk</tspan>
         </text>
       </g>
@@ -609,7 +593,7 @@
                         fill="black"
                         x="0"
                         y="43"
-                        xml:space="preserve"
+
                     >⟳</tspan>
         </text>
       </g>
@@ -622,7 +606,7 @@
                         fill="black"
                         x="2927436e-18"
                         y="15"
-                        xml:space="preserve"
+
                     >kann auch eine Behörde sein</tspan>
         </text>
       </g>
