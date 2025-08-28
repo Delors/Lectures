@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns="http://www.w3.org/2000/svg" xmlns:xl="http://www.w3.org/1999/xlink" version="1.1" viewBox="-14 574 511 417" width="465" height="380">
+  <style>
+    @import url('/LectureDoc2/ext/fonts/ld-fonts.css'); 
+  </style>
+  <defs>
+    <filter id="Shadow" filterUnits="userSpaceOnUse" x="-65.1" y="532.3">
+      <feGaussianBlur in="SourceAlpha" result="blur" stdDeviation="1.308"/>
+      <feOffset in="blur" result="offset" dx="2" dy="2"/>
+      <feFlood flood-color="black" flood-opacity=".5" result="flood"/>
+      <feComposite in="flood" in2="offset" operator="in" result="color"/>
+      <feMerge>
+        <feMergeNode in="color"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <font-face font-family="Noto Sans Display" font-size="16" panose-1="2 0 5 3 0 0 0 2 0 4" units-per-em="1000" underline-position="-100" underline-thickness="50" slope="0" x-height="517" cap-height="714" ascent="951.9958" descent="-212.99744" font-weight="400">
+      <font-face-src>
+        <font-face-name name="Noto Sans Display"/>
+      </font-face-src>
+    </font-face>
+    <font-face font-family="Noto Sans Display" font-size="21" panose-1="2 0 5 3 0 0 0 2 0 4" units-per-em="1000" underline-position="-100" underline-thickness="50" slope="0" x-height="517" cap-height="714" ascent="951.9958" descent="-212.99744" font-weight="400">
+      <font-face-src>
+        <font-face-name name="Noto Sans Display"/>
+      </font-face-src>
+    </font-face>
+  </defs>
+  <metadata> Produced by OmniGraffle 8.0\n2024-03-08 15:33:31 +0000</metadata>
+  <g id="dokumenten-management-loesung" stroke-dasharray="none" stroke="none" stroke-opacity="1" fill-opacity="1" fill="none">
+    <title>dokumenten-management-loesung</title>
+    <g id="dokumenten-management-loesung_Layer_1">
+      <title>Layer 1</title>
+      <g id="Graphic_6" filter="url(#Shadow)">
+        <path d="M -8.5 895.5 L 108.5 895.5 C 110.70914 895.5 112.5 897.2909 112.5 899.5 L 112.5 981.5 C 112.5 983.7091 110.70914 985.5 108.5 985.5 L -8.5 985.5 C -10.709139 985.5 -12.5 983.7091 -12.5 981.5 L -12.5 899.5 C -12.5 897.2909 -10.709139 895.5 -8.5 895.5 Z" fill="#a5a5a5"/>
+        <text transform="translate(-7.5 912.828)" fill="white">
+          <tspan font-family="Noto Sans Display" font-size="16" font-weight="400" fill="white" x="8.732" y="15">Dokumenten-</tspan>
+          <tspan font-family="Noto Sans Display" font-size="16" font-weight="400" fill="white" x="7.404" y="33.448">Management-</tspan>
+          <tspan font-family="Noto Sans Display" font-size="16" font-weight="400" fill="white" x="30.676" y="51.895996">System</tspan>
+        </text>
+      </g>
+      <g id="Group_19">
+        <g id="Graphic_2" filter="url(#Shadow)">
+          <path d="M 158.5 719.5 L 320.5 719.5 C 322.70914 719.5 324.5 721.2909 324.5 723.5 L 324.5 855.5 C 324.5 857.7091 322.70914 859.5 320.5 859.5 L 158.5 859.5 C 156.29086 859.5 154.5 857.7091 154.5 855.5 L 154.5 723.5 C 154.5 721.2909 156.29086 719.5 158.5 719.5 Z" fill="#6b7ca5"/>
+          <text transform="translate(159.5 752.618)" fill="white">
+            <tspan font-family="Noto Sans Display" font-size="21" font-weight="400" fill="white" x="15.992" y="20">Dokumenten-</tspan>
+            <tspan font-family="Noto Sans Display" font-size="21" font-weight="400" fill="white" x="14.249" y="44.588">Management-</tspan>
+            <tspan font-family="Noto Sans Display" font-size="21" font-weight="400" fill="white" x="45.182" y="69.175995">Lösung</tspan>
+          </text>
+        </g>
+        <g id="Graphic_11" filter="url(#Shadow)">
+          <path d="M 181 575 L 298 575 C 300.20914 575 302 576.79086 302 579 L 302 661 C 302 663.2091 300.20914 665 298 665 L 181 665 C 178.79086 665 177 663.2091 177 661 L 177 579 C 177 576.79086 178.79086 575 181 575 Z" fill="#a5a5a5"/>
+          <text transform="translate(182 601.552)" fill="white">
+            <tspan font-family="Noto Sans Display" font-size="16" font-weight="400" fill="white" x="8.732" y="15">Dokumenten-</tspan>
+            <tspan font-family="Noto Sans Display" font-size="16" font-weight="400" fill="white" x="13.724" y="33.448">organisation</tspan>
+          </text>
+        </g>
+      </g>
+      <g id="Graphic_15" filter="url(#Shadow)">
+        <path d="M 370.5 895.5 L 487.5 895.5 C 489.70914 895.5 491.5 897.2909 491.5 899.5 L 491.5 981.5 C 491.5 983.7091 489.70914 985.5 487.5 985.5 L 370.5 985.5 C 368.29086 985.5 366.5 983.7091 366.5 981.5 L 366.5 899.5 C 366.5 897.2909 368.29086 895.5 370.5 895.5 Z" fill="#a5a5a5"/>
+        <text transform="translate(371.5 922.052)" fill="white">
+          <tspan font-family="Noto Sans Display" font-size="16" font-weight="400" fill="white" x="25.956" y="15">Prozess-</tspan>
+          <tspan font-family="Noto Sans Display" font-size="16" font-weight="400" fill="white" x="13.724" y="33.448">organisation</tspan>
+        </text>
+      </g>
+      <g id="Line_16">
+        <line x1="106.47351" y1="895.5" x2="154.7905" y2="856.9994" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+      </g>
+      <g id="Line_17">
+        <line x1="372.5265" y1="895.5" x2="324.2095" y2="856.9994" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+      </g>
+      <g id="Line_18">
+        <line x1="239.5" y1="665" x2="239.5" y2="719.5" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+      </g>
+    </g>
+  </g>
+</svg>

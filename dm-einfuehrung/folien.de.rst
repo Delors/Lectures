@@ -1,25 +1,28 @@
 .. meta::
-    :version: genesis
+    :version: renaissance
     :author: Michael Eichberg
     :keywords: "Dokumenten Management"
     :description lang=de: "Einführung in das Dokumenten Management"
-    :id: lecture-dm-einfuehrung
+    :id: vorlesung-dm-einfuehrung
     :first-slide: last-viewed
+    :master-password: WirklichSchwierig!
 
 .. include:: ../docutils.defs
 
 
 
-.. class:: animated-symbol
+Dokumentenmanagement, Archivierungs- und Verschlüsselungsverfahren\ [#]_
+========================================================================
 
-Dokumentenmanagement, Archivierungs- und Verschlüsselungsverfahren
-===================================================================
+:Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
+:Kontakt: michael.eichberg@dhbw.de, Raum 149B
+:Version: 1.0.1
 
-.. container:: smaller line-above
+.. [#] Dieser Foliensatz basiert auf Folien von: Klaus Götzer.
+    
+   Dokumenten-Management von *Klaus Götzer, Patrick Maué, und Ulrich Emmert*, dpunkt.verlag, 2023.
 
-    :Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
-    :Kontakt: michael.eichberg@dhbw.de, Raum 149B
-    :Version: 1.0.1
+   Alle Fehler sind meine eigenen.
 
 .. supplemental::
 
@@ -30,14 +33,6 @@ Dokumentenmanagement, Archivierungs- und Verschlüsselungsverfahren
   :Fehler melden:
       https://github.com/Delors/delors.github.io/issues
 
-
-.. container:: footer-left smallest incremental
-
-    Dieser Foliensatz basiert auf Folien von: Klaus Götzer.
-    
-    Dokumenten-Management von *Klaus Götzer, Patrick Maué, und Ulrich Emmert*, dpunkt.verlag, 2023.
-
-    Alle Fehler sind meine eigenen.
 
     
 
@@ -54,21 +49,21 @@ Dokumentmanagement, Archivierungs- und Verschlüsselungsverfahren - W3WI_EH304.
     (d. h. mündl. Prüfungsgespräche - voraussichtlich 10min pro Person)
 
 
-.. supplemental::
 
-    .. rubric:: Kerninhalte gem. MHB
+Kerninhalte gem. MHB
+--------------------
 
-    - Definitionen, Grundsätze, Aufgaben, Funktionen und Prozesse von Dokumentenmanagement 
-    - Archivierungssysteme 
-    - Struktur elektronischer Verwaltungsunterlagen, Archivierungsvarianten der Software- und Hardware-Lösungen 
-    - Rechtliche, technische, organisatorische und wirtschaftliche Anforderungen 
-    - Schnittstellen 
-    - Aktuelle Standards 
-    - Verfügbarkeit elektronischer Verwaltungsakten 
-    - IT-Sicherheit von digital erzeugten und gescannten Dokumenten 
-    - Elektronische Signaturen
-    - Archivierungsverfahren 
-    - Verschlüsselungsverfahren
+- Definitionen, Grundsätze, Aufgaben, Funktionen und Prozesse von Dokumentenmanagement 
+- Archivierungssysteme 
+- Struktur elektronischer Verwaltungsunterlagen, Archivierungsvarianten der Software- und Hardware-Lösungen 
+- Rechtliche, technische, organisatorische und wirtschaftliche Anforderungen 
+- Schnittstellen 
+- Aktuelle Standards 
+- Verfügbarkeit elektronischer Verwaltungsakten 
+- IT-Sicherheit von digital erzeugten und gescannten Dokumenten 
+- Elektronische Signaturen
+- Archivierungsverfahren 
+- Verschlüsselungsverfahren
 
 
 
@@ -78,9 +73,10 @@ Literatur
 - Bzgl. Dokumentenmanagement:
 
   .. image:: images/dokumentenmanagement.jpg
-        :class: box-shadow
+        :class: highdpi trbl-box-shadow-dark
 
 - weitere bzgl. der IT sicherheitsrelevanten Aspekte: Verschlüsselungsverfahren und Signaturen
+
 
 
 .. class:: new-section
@@ -93,7 +89,7 @@ Warum Dokumentenmanagement?
 Motivation
 ----------------------------------------------------------------------------------
 
-.. class:: incremental list-with-explanations
+.. class:: incremental-list list-with-explanations
 
 - Die meisten strukturierten Daten liegen elektronisch vor (ERP, CRM, etc.). 
 - Dokumente liegen aber (noch immer) in Papierform vor (insbesondere in Deutschland) und es gilt dieses Rationalisierungspotential zu heben.
@@ -108,21 +104,22 @@ Motivation
 
 .. supplemental::
 
-  - Zum Beispiel wurden an der DHBW erst zum Jahrgang 2024/25 die Schriftform bei (einigen) der Dokumenten zu Anmeldung abgeschafft.
+    Beispiele für die schleichende Digitalisierung
 
-  - An der DHBW ist es (zumindest im Jahr 2024) noch erforderlich Projektarbeiten und Bachelorarbeiten in Papierform einzureichen, obwohl dies von vielen Dozenten nicht verlangt wird.
+  - an der DHBW wurden erst zum Jahrgang 2024/25 die Schriftform bei (einigen) der Dokumenten zu Anmeldung abgeschafft.
 
-  - Zum  Beispiel fallen für ein einzelnes konventionelles Kraftwerk bereits ca. 500  000 Dokumente.
+  - An der DHBW war es bis Ende 2024 noch erforderlich Projektarbeiten und Bachelorarbeiten in Papierform einzureichen, obwohl dies von vielen Dozenten schon lange nicht mehr verlangt wurde. Für PA I arbeirten gilt dies auch im Jahr 2025 noch.
+
+  - Für ein einzelnes konventionelles Kraftwerk fallen bereits ca. 500  000 Dokumente.
    
 
-.. class:: smaller
 
 Digitalisierung - ein langwieriger Prozess...
 -------------------------------------------------
 
-.. figure:: images/floppydisk.com.2024-01.png
-    :width: 70%
+.. figure:: images/floppydisk.com.2024-01.png    
     :align: center
+    :class: highdpi trbl-box-shadow-dark
     
     Jan. 2024
 
@@ -132,9 +129,7 @@ Digitalisierung - ein langwieriger Prozess...
 
     .. epigraph::
 
-        *Bundeswehrschiffe mit Diskettenlaufwerken: Marine sucht Ersatz für Floppy Disks*
-
-        :raw-html:`<hr>`
+        **Bundeswehrschiffe mit Diskettenlaufwerken: Marine sucht Ersatz für Floppy Disks**
 
         In kleinen Schritten schreitet auch die Bundeswehr bei der Digitalisierung voran: Jetzt will sie ihre Fregatten mit moderner Technik ausstatten – und verabschiedet sich dafür vom technischen Standard der Neunzigerjahre: der Diskette.
 
@@ -142,10 +137,8 @@ Digitalisierung - ein langwieriger Prozess...
 
 
 
-.. class:: smaller
-
 Digitalisierung - ein langwieriger nicht-aufzuhaltender Prozess...
-----------------------------------------------------------------------------------
+------------------------------------------------------------------------
 
   .. rubric::  `Japanese government finally bids sayonara to the 3.5" floppy disk <https://www.theregister.com/2024/01/29/japan_government_floppy_disks/>`__
 
@@ -162,13 +155,12 @@ Digitalisierung - ein langwieriger nicht-aufzuhaltender Prozess...
    -- The Register, Mon 29 Jan 2024 // 19:00 UTC
 
 
-.. class:: vertical-title
 
 Digitalisierung - ein Prozess mit Stilblüten...
 -------------------------------------------------
 
 .. image:: images/sparkasse-verschickt-usb-sticks.2024-03-03.png
-    :height: 1175px
+    :class: highdpi trbl-box-shadow-dark
     :align: center
 
 
@@ -178,27 +170,23 @@ Digitalisierung - ein Prozess mit Stilblüten...
 
 
 
-.. class:: no-title center-child-elements transition-scale
+.. class:: no-title s-center-child-elements transition-scale
 
 Über die Ordnung von Dokumenten - Arthur Schopenhauer
 -------------------------------------------------------
 
-.. container:: 
+.. epigraph:: 
 
-    .. epigraph:: 
+    Wie die zahlreichste Bibliothek, wenn ungeordnet, nicht so viel Nutzen schafft, als eine sehr mäßige, sorgfältig geordnete; eben so ist die größte Menge von Kenntnissen, die nicht gehörig durch eigenes Denken bearbeitet werden, viel weniger Wert als eine viel geringere Menge von Kenntnissen, die gehörig durchdacht werden.
 
-        Wie die zahlreichste Bibliothek, wenn ungeordnet, nicht so viel Nutzen schafft, als eine sehr mäßige, sorgfältig geordnete; eben so ist die größte Menge von Kenntnissen, die nicht gehörig durch eigenes Denken bearbeitet werden, viel weniger Wert als eine viel geringere Menge von Kenntnissen, die gehörig durchdacht werden.
-
-        -- Arthur Schopenhauer (mutmaßlich)
+    -- Arthur Schopenhauer (mutmaßlich)
 
 
-
-.. class:: smaller
 
 Was kann ein Dokumentenmanagement System (DMS) leisten?
--------------------------------------------------------------------------------
+--------------------------------------------------------------
 
-.. class:: incremental
+.. class:: incremental-list
 
 • Beschleunigung der Prozesse
 
@@ -221,18 +209,20 @@ Was kann ein Dokumentenmanagement System (DMS) leisten?
 
 
 Gegenüberstellung konventionelles Archiv zu DMS
--------------------------------------------------------------------------------
+----------------------------------------------------------------------
 
-.. csv-table::
-    :class: highlight-line-on-hover slightly-more-smaller incremental
-    :header: " ", "Konventionell","DMS"
+.. story::
 
-    Ablagestruktur, "hierarchisch, meist nach Dokumententypen getrennt", "datenbankgestützt, Suchbeginn nach jedem Suchkriterium möglich, Suche wahlweise z. B. je Kunde, Vorgang oder Beleg"
-    Auskunftsbereitschaft,"zeitverzögert, nach Sichtung bzw. Entnahme aller Dokumente", "unmittelbar durch vorgangsbezogene bzw. dokumentenübergreifende Suche"
-    Auskunftsaufwand, "für Belegsuche, Entnahme und wieder einordnen, evtl. kopieren und Versand", "nur für Recherche am Bildschirm, gegebenenfalls direkter Versand per E-Mail"
-    Redundanz, "Abteilungsablagen = mehrfacher Aufwand", Einmalablage
-    Vollständigkeit, "leidet unter jeder Entnahme", bleibt immer gewahrt
-    Sicherheit, "Ordner u. Dokumente lassen sich leicht entfernen oder kopieren", "klare Regelung der Zugriffsrechte, keine ungewollte Entnahme möglich"
+    .. csv-table::
+        :class: highlight-row-on-hover booktabs incremental-table-rows sticky-header
+        :header: " ", "Konventionell","DMS"
+
+        Ablagestruktur, "hierarchisch, meist nach Dokumententypen getrennt", "datenbankgestützt, Suchbeginn nach jedem Suchkriterium möglich, Suche wahlweise z. B. je Kunde, Vorgang oder Beleg"
+        Auskunftsbereitschaft,"zeitverzögert, nach Sichtung bzw. Entnahme aller Dokumente", "unmittelbar durch vorgangsbezogene bzw. dokumentenübergreifende Suche"
+        Auskunftsaufwand, "für Belegsuche, Entnahme und wieder einordnen, evtl. kopieren und Versand", "nur für Recherche am Bildschirm, gegebenenfalls direkter Versand per E-Mail"
+        Redundanz, "Abteilungsablagen = mehrfacher Aufwand", Einmalablage
+        Vollständigkeit, "leidet unter jeder Entnahme", bleibt immer gewahrt
+        Sicherheit, "Ordner u. Dokumente lassen sich leicht entfernen oder kopieren", "klare Regelung der Zugriffsrechte, keine ungewollte Entnahme möglich"
 
 
 
@@ -242,17 +232,16 @@ Zyklus von Dokumenten
 ---------------------------------------
 
 .. image:: drawings/dokumente/lebenszyklus.svg
-    :height: 1150px
     :align: center
 
 
 
 Grundlegende Voraussetzungen für Dokumentenmanagementorganisation
--------------------------------------------------------------------------------
+--------------------------------------------------------------------
 
 In einer Organisation ist zu regeln:
 
-.. class:: incremental smaller
+.. class:: incremental-list
 
 • Kennzeichnung und Beschreibung von Dokumenten
 • Fortschreibung und Historienverwaltung von Dokumenten
@@ -262,10 +251,11 @@ In einer Organisation ist zu regeln:
 • Vernichtung von Dokumenten
 • Regelung von Verantwortlichkeiten für Inhalt und Verwaltung von Dokumenten
 
-.. admonition:: Feststellung 
-    :class: incremental smaller
+.. remark::
+    :class: incremental 
     
     Ein Dokumentenmanagementsystem ist ein IT System zur Unterstützung der Dokumentenmanagementorganisation.
+
 
 
 .. class:: new-section
@@ -277,24 +267,22 @@ Dokumente - Beispiele
 ----------------------
 
 .. image:: drawings/dokumente/dokumente.svg
-    :height: 950px
     :align: center
-    :class: incremental
 
 
 
 Was ist ein Dokument aus logischer Sicht?
 -------------------------------------------
 
-.. admonition:: Definition
+.. definition::
 
     Ein Dokument fasst inhaltlich zusammengehörende Informationen strukturiert zusammen, die nicht ohne erheblichen Bedeutungsverlust weiter unterteilt werden könnten.
 
     • Die Information ist für einen gewissen Zeitraum zu erhalten.
     • Dokumente dienen dem Nachweis von Tatsachen.
     
-.. admonition:: Feststellung 
-    :class: incremental smaller
+.. remark:: 
+    :class: incremental
     
     Das Dokument ist somit eigentlich der Träger, der die Informationen speichert, unabhängig davon ob das Dokument ein Stück Papier, eine Datei auf einem Rechner, ein Videoband oder eine Tontafel ist etc.
 
@@ -303,7 +291,7 @@ Was ist ein Dokument aus logischer Sicht?
 Was ist ein Dokument aus technischer Sicht?
 -------------------------------------------
 
-.. admonition:: Definition
+.. definition::
 
     Ein Dokument ist ein Objekt, das in einer Datenbank beschrieben wird.
 
@@ -311,21 +299,18 @@ Was ist ein Dokument aus technischer Sicht?
 
         Das beschriebene Objekt kann selbst elektronisch gespeichert werden.
 
-
 .. supplemental::
 
     Es ist somit eine reine Deklarationsfrage, was ein Dokument ist!
 
 
 
-.. class:: vertical-title
+.. class:: no-title
 
 Elektronische Dokumente
 -------------------------
 
-
 .. image:: drawings/dokumente/elektronische_dokumente.svg
-    :height: 1150px
     :align: center
 
 .. supplemental::
@@ -348,19 +333,18 @@ Elektronische Dokumente
 Bestandteile eines Dokumentes
 --------------------------------
 
-.. the following is necessary, because we can't have local svgs that reference local pngs... (browser security)
-.. container:: stack
+.. deck::
 
-    .. container:: layer
+    .. card::
 
         .. image:: images/eheurkunde.png
-            :height: 950px
+            :class: highdpi
             :align: center
 
-    .. container:: layer overlay incremental
+    .. card:: overlay
 
-        .. image:: drawings/dokumente/mit_stempel.svg
-            :height: 950px
+        .. image:: drawings/dokumente/mit_stempel.png
+            :class: highdpi
             :align: center
 
     
@@ -368,19 +352,19 @@ Bestandteile eines Dokumentes
 Struktur eines Dokumentes
 --------------------------------
 
-.. container:: stack
+.. deck::
 
-    .. container:: layer
+    .. card::
 
         .. image:: images/berufung.png
-            :height: 950px
+            :class: highdpi
             :align: center
 
 
-    .. container:: layer overlay
+    .. card:: overlay
 
-        .. image:: drawings/dokumente/struktur.svg
-            :height: 950px
+        .. image:: drawings/dokumente/struktur.png
+            :class: highdpi
             :align: center
 
 
@@ -389,7 +373,7 @@ Dokumente annotieren
 --------------------------------
 
 .. image:: images/dokument_mit_anmerkungen.png
-    :height: 1050px
+    :class: highdpi trbl-box-shadow-dark
     :align: center
 
 
@@ -397,38 +381,37 @@ Dokumente annotieren
 *Renditions* eines Dokumentes
 --------------------------------
 
-.. class:: incremental
+.. class:: incremental-list
 
 - Man unterscheidet zwischen dem Originalformat des Dokuments (z. B. von MS-Word oder LibreOffice) und Renditions (wie PDF/a und TIFF).
 - Formate wie PDF/a und TIFF sind in der Regel langlebiger. Für beide Formate gibt es weitverbreitete Viewer und sie erhalten besser den ursprünglichen optischen Zustand.
 - Preview Images sind oft zusätzlich eingebettet.
 
-
-.. container:: question incremental
+.. question:: 
+    :class: incremental
 
     Was beeinflusst den ursprüngliche optische Zustand? 
     
     Wo sind die Probleme beim Erhalt des ursprünglichen optischen Zustandes?
 
+.. presenter-note::
 
-    .. - nicht-gängigen Schriftarten/Fonts
-       - Anpassung der Algorithmen zum Layout
-       - die Wörterbücher/Algorithmen für die Trennung von Wörtern werden aktualisiert
-       - ...
+    - nicht-gängigen Schriftarten/Fonts
+    - Anpassung der Algorithmen zum Layout
+    - die Wörterbücher/Algorithmen für die Trennung von Wörtern werden aktualisiert
+    - ...
 
 
 Hashwerte und Signaturen [#]_
 --------------------------------
 
-.. class:: incremental
+.. class:: incremental-list
 
 - Ein Hashwert ist wie ein (eindeutige) mathematischer Fingerabdruck des Dokumentes.
 - Ein (kryptografischer) Hashwert erlaubt keinen Rückschluss auf die Inhalte des Dokuments.
 - Die kleinste Änderung am Dokument führt zu einem (völlig) anderen Hashwert.
   
 - Dieser Hashwert – verknüpft mit einer persönlichen Signatur – zeigt, dass dieses Dokument von dem Absender der Signatur stammt und das Dokument nicht verändert wurde.
-
-
 
 .. [#] Hashwerte und Signaturen sind Gegenstand der Vorlesungen im Bereich IT Security.
 
@@ -445,7 +428,7 @@ Volltext(-indizierung)
 Versionierung von Dokumenten
 --------------------------------
 
-.. class:: incremental
+.. class:: incremental-list
 
 • Was ist die aktuelle gültige Version?
 • Was hat sich gegenüber den Vorgängern geändert?
@@ -468,7 +451,7 @@ Meta-Daten
 
   Beispiele:
 
-  .. class:: incremental
+  .. class:: incremental-list
 
   - Eindeutige Schlüssel wie Personalnr., Produktnr., ...
   - Stichwörter zum Klassifizieren des Textes
@@ -490,7 +473,7 @@ Arten von Meta-Daten
 • Eindeutiger Schlüssel im DMS
 • Fremdschlüssel (z. B. Buchungsnummern)
 
-.. container:: incremental margin-top-2em
+.. container:: incremental
 
   • Statische Metadaten (unveränderlich)
   • Dynamische Metadaten (wie Status oder Version der Dokumente)
@@ -500,8 +483,10 @@ Arten von Meta-Daten
 Beispiele von Meta-Daten einer Verwaltungssoftware für grafische Zeichnungen
 ----------------------------------------------------------------------------------------------
 
-.. csv-table::
-    :class: highlight-line-on-hover far-smaller incremental
+.. story::
+
+  .. csv-table::
+    :class: highlight-row-on-hover  incremental-table-rows sticky-header
     :header: Nr., Attribut, Muss, Funktion, Quelle, Bemerkung
 
     1, Zeichnungsnummer, M, Eindeutiger Schlüssel, Manuelle Vergabe durch Benutzer, Identifiziert Zeichnung
@@ -518,7 +503,7 @@ Zusammenfassung: Dokumente in einem DMS
 
 Ein Dokument in einem DMS ist ein komplexes Objekt, das aus verschiedenen Komponenten bestehen kann:
 
-.. class:: incremental
+.. class:: incremental-list
 
 • Das Dokument im Originalformat (z. B. odt, docx, xlsx, txt, ...)
 • Verschiedene Renditions (pdf, tiff, xml, ....)
@@ -535,7 +520,7 @@ Ein Dokument in einem DMS ist ein komplexes Objekt, das aus verschiedenen Kompon
 Dokumentenstrukturen
 -----------------------------------------------
 
-.. class:: incremental
+.. class:: incremental-list
 
 • Welche Dokumente bilden eine logische Einheit („Mappen“, „Ordner“, „Vorgang“)?
 • Metadaten zu diesen Mappen definieren.
@@ -582,11 +567,8 @@ Dokumentenlebenszyklus
 Dokumentenlebenszyklus - Überblick
 -----------------------------------------------
 
-.. class:: center-child-elements 
-
-    .. image:: drawings/dokumente/lebenszyklus_a_bis_z.svg
-        :width: 100%
-        :align: center
+.. image:: drawings/dokumente/lebenszyklus_a_bis_z.svg
+    :align: center
 
 
 
@@ -595,7 +577,7 @@ Dokumentenlebenszyklus
 
 Dokumente ...
 
-.. class:: incremental
+.. class:: incremental-list
 
 • entstehen,
 • verändern sich,
@@ -609,7 +591,7 @@ Dokumente ...
 Erstellen von Dokumenten
 -----------------------------------------------
 
-.. class:: incremental
+.. class:: incremental-list
 
 • Scannen analoger Dokumente (Papier, Mikrofilm, ..)
 • Neuerstellung von Dokumenten (Vorlagen im DMS,..)
@@ -623,7 +605,7 @@ Erstellen von Dokumenten
 Nutzen und Bearbeiten von Dokumenten
 -----------------------------------------------
 
-.. class:: incremental
+.. class:: incremental-list
 
 - Suchen und Retrieval:
 
@@ -640,12 +622,11 @@ Nutzen und Bearbeiten von Dokumenten
 Rahmenbedingungen für die Lebensdauer von Dokumenten
 ------------------------------------------------------
 
-.. class:: incremental
+.. class:: incremental-list
 
 • Betriebliche Notwendigkeiten
 • Gesetzliche Aufbewahrungs- bzw. Löschungspflichten 
 • Datenschutzbestimmungen
-
 
 .. supplemental::
 
@@ -662,19 +643,17 @@ Löschen von Dokumenten
 • Falsche Dokumente (z. B. Fehler beim Indizieren)
 • Nicht mehr benötigte Dokumente
 
-.. class:: incremental
+.. class:: incremental-list
 
 • Logisches Löschen
 • Physikalisches Löschen
 
 
 
-.. class:: center-child-elements
-
 Archivierung (von Dokumenten)
 -----------------------------------------------
 
-.. admonition:: Definition
+.. definition:: 
     
     :Archiv: Ein realer oder elektronischer Ort, in dem Dokumente, die zur laufenden Aufgabenerfüllung nicht mehr benötigt werden, erfasst, ausgewertet und zugänglich gemacht werden.
 
@@ -685,20 +664,16 @@ Kerneigenschaften elektronischer Archive
 
 Archivsysteme müssen die folgenden Eigenschaften bei langjähriger Aufbewahrung unterstützen:
 
-.. class:: incremental
+.. class:: incremental-list
 
 :Integrität: Nachweis, dass die Informationen während der Aufbewahrung nicht verändert oder gelöscht wurden.
 
-.. class:: incremental
-
 :Authenzität: Herkunft lässt sich zweifelsfrei nachweisen.
-
-.. class:: incremental
 
 :Lesbarkeit: Informationen müssen auch in Zukunft lesbar sein.
 
-.. admonition:: Feststellung 
-    :class: incremental smaller
+.. observation::
+    :class: incremental
 
     Eigenschaften wie die Unterstützung von Volltextindizierung sind nicht in allen Fällen notwendig. 
 
@@ -716,24 +691,24 @@ Archivsysteme müssen die folgenden Eigenschaften bei langjähriger Aufbewahrung
 Revisionssichere elektronische Archivierung
 -----------------------------------------------
 
-.. stack::
+.. deck::
 
-    .. layer::
+    .. card::
 
         Merkmale revisionssicherer Archivsysteme sind:
 
-        .. class:: incremental
+        .. class:: incremental-list
 
         - Informationen sind wieder auffindbar, 
         - Änderungen sind nachvollziehbar, 
         - Informationen sind unveränderbar und 
         - die Informationen sind verfälschungssicher archiviert 
 
-    .. layer:: incremental
+    .. card:: 
 
         Aufgrund von HGB-Vorschriften gilt für die Revisionssicherheit bei der Archivierung:
 
-        .. class:: incremental
+        .. class:: incremental-list
 
         - Richtigkeit
         - Vollständigkeit
@@ -752,7 +727,7 @@ Revisionssichere elektronische Archivierung
 Strategien für die langfristige Aufbewahrung von Dokumenten
 ------------------------------------------------------------
 
-.. class:: incremental
+.. class:: incremental-list
 
 - *Technikmuseum* (Variante: Alte Umgebung emulieren)
 - Dauerhafte Formate nutzen
@@ -764,7 +739,7 @@ Strategien für die langfristige Aufbewahrung von Dokumenten
 Bewertung von Dateiformaten in Hinblick auf die Dauerhaftigkeit
 -----------------------------------------------------------------
 
-.. class:: incremental
+.. class:: incremental-list
 
 - vollständige und offene Dokumentation (am besten mit Standardisierung)
 - Plattformunabhängigkeit
@@ -778,25 +753,26 @@ Bewertung von Dateiformaten in Hinblick auf die Dauerhaftigkeit
 
 
 
-Langfristige Aufbewahrung von Dokumenten
---------------------------------------------
+Langfristige Aufbewahrung von Dokumenten\ [#]_
+-----------------------------------------------
 
-.. container:: stack far-far-smaller
+.. deck:: s-font-size-80
 
-    .. container:: layer
+    .. card::
 
         .. csv-table::
-            :class:  overflow-y-scroll
+            :width: 100%
+            :widths: 14 30 30 30
             :header: "Content Type", High probability for long-term preservation, Medium probability for long-term preservation, Low probability for long-term preservation
 
             
             Text, "
-            .. class:: incremental 
+            .. class:: incremental-list
             
             • Plain text (encoding: USASCII, UTF-8, UTF-16 with BOM) 
             • XML (includes XSD/XSL/XHTML, etc.; with included or accessible schema)
             • PDF/A-1 (ISO 19005-1) (\*.pdf)", "
-            .. class:: incremental 
+            .. class:: incremental-list
             
             • Cascading Style Sheets (\*.css)
             • DTD (\*.dtd)
@@ -807,7 +783,7 @@ Langfristige Aufbewahrung von Dokumenten
             • SGML (\*.sgml)
             • Open Office (\*.sxw/\*.odt)
             • OOXML (ISO/IEC DIS 29500) (\*.docx)", "
-            .. class:: incremental 
+            .. class:: incremental-list
             
             • PDF (\*.pdf) (encrypted)
             • Microsoft Word (\*.doc)
@@ -816,20 +792,20 @@ Langfristige Aufbewahrung von Dokumenten
             
             "
 
-
-    .. container:: layer incremental
+    .. card:: 
 
         .. csv-table::
-            :class:  overflow-y-scroll
+            :width: 100%
+            :widths: 14 30 30 30
             :header: "Content Type", High probability for long-term preservation, Medium probability for long-term preservation, Low probability for long-term preservation
 
             Raster Image, "
-            .. class:: incremental 
+            .. class:: incremental-list
             
             • TIFF (uncompressed)
             • JPEG2000 (lossless) (\*.jp2)
             • PNG (\*.png)", "
-            .. class:: incremental 
+            .. class:: incremental-list
             
             • BMP (\*.bmp)
             • JPEG/JFIF (\*.jpg)
@@ -837,7 +813,7 @@ Langfristige Aufbewahrung von Dokumenten
             • TIFF (compressed)
             • GIF (\*.gif)
             • Digital Negative DNG (\*.dng)", "
-            .. class:: incremental 
+            .. class:: incremental-list
             
             • MrSID (\*.sid)
             • TIFF (in Planar format)
@@ -847,37 +823,39 @@ Langfristige Aufbewahrung von Dokumenten
             • JPEG 2000 Part 2 (\*.jpf, \*.jpx)
             • All other raster image formats not listed here"
 
-    .. container:: layer incremental
+    .. card::
 
         .. csv-table::
-            :class:  overflow-y-scroll
+            :width: 100%
+            :widths: 14 30 30 30
             :header: "Content Type", High probability for long-term preservation, Medium probability for long-term preservation, Low probability for long-term preservation
 
             Vector Graphics, "
-            .. class:: incremental 
+            .. class:: incremental-list 
             
             • SVG (no Java script binding) (\*.svg)", "
-            .. class:: incremental 
+            .. class:: incremental-list
             
             • Computer Graphic Metafile (CGM, WebCGM) (\*.cgm)", "
-            .. class:: incremental 
+            .. class:: incremental-list
             
             • Encapsulated Postscript (EPS)
             • Macromedia Flash (\*.swf)
             • All other vector image formats not listed here"
 
-    .. container:: layer incremental
+    .. card:: 
 
         .. csv-table::
-            :class:  overflow-y-scroll
+            :width: 100%
+            :widths: 14 30 30 30
             :header: "Content Type", High probability for long-term preservation, Medium probability for long-term preservation, Low probability for long-term preservation
 
             Audio, "
-            .. class:: incremental 
+            .. class:: incremental-list 
             
             • AIFF (PCM) (\*.aif, \*.aiff)
             • WAV (PCM) (\*.wav)", "
-            .. class:: incremental 
+            .. class:: incremental-list 
             
             • SUN Audio (uncompressed) (\*.au)
             • Standard MIDI (\*.mid, \*.midi)
@@ -885,7 +863,7 @@ Langfristige Aufbewahrung von Dokumenten
             • Free Lossless Audio Codec (\*.flac)
             • Advance Audio Coding (\*.mp4, \*.m4a, \*.aac)
             • MP3 (MPEG-1/2, Layer 3) (\*.mp3)", "
-            .. class:: incremental 
+            .. class:: incremental-list 
             
             • AIFC (compressed) (\*.aifc)
             • NeXT SND (\*.snd)
@@ -895,24 +873,25 @@ Langfristige Aufbewahrung von Dokumenten
             • WAV (compressed) (\*.wav)
             • All other audio formats not listed here"
 
-    .. container:: layer incremental
+    .. card:: 
 
         .. csv-table::
-            :class:  overflow-y-scroll
+            :width: 100%
+            :widths:  14 30 30 30
             :header: "Content Type", High probability for long-term preservation, Medium probability for long-term preservation, Low probability for long-term preservation
 
             Video, "
-            .. class:: incremental 
+            .. class:: incremental-list 
             
             • Motion JPEG 2000 (ISO/IEC 15444-4)(\*.mj2)
             • AVI (uncompressed, motion JPEG) (\*.avi)
             • QuickTime Movie (uncompressed, motion JPEG) (\*.mov)", "
-            .. class:: incremental 
+            .. class:: incremental-list 
             
             • Ogg Theora (\*.ogg)
             • MPEG-1, MPEG-2 (\*.mpg, \*.mpeg, wrapped in AVI, MOV)
             • MPEG-4 (H.263, H.264) (\*.mp4, wrapped in AVI, MOV)", "
-            .. class:: incremental 
+            .. class:: incremental-list 
             
             • AVI (others) (\*.avi)
             • QuickTime Movie (others) (\*.mov)
@@ -920,79 +899,81 @@ Langfristige Aufbewahrung von Dokumenten
             • Windows Media Video (\*.wmv)
             • All other video formats not listed here"
 
-    .. container:: layer incremental
+    .. card::
 
         .. csv-table::
-            :class:  overflow-y-scroll
+            :width: 100%
+            :widths:  14 30 30 30
             :header: "Content Type", High probability for long-term preservation, Medium probability for long-term preservation, Low probability for long-term preservation
 
-            Spreadsheet/ Database, "
-            .. class:: incremental 
+            Spreadsheet / Database, "
+            .. class:: incremental-list 
             
             • Comma Separated Values (\*.csv)
             • Delimited Text (\*.txt)
             • SQL DDL", "
-            .. class:: incremental 
+            .. class:: incremental-list 
             
             • DBF (\*.dbf)
             • OpenOffice (\*.sxc/\*.ods)
             • OOXML (ISO/IEC DIS 29500) (\*.xlsx)", "
-            .. class:: incremental 
+            .. class:: incremental-list 
             
             • Excel (\*.xls)
             • All other spreadsheet/ database formats not listed here"
 
-    .. container:: layer incremental
+    .. card::
 
         .. csv-table::
-            :class:  overflow-y-scroll
+            :width: 100%
+            :widths:  14 30 30 30
             :header: "Content Type", High probability for long-term preservation, Medium probability for long-term preservation, Low probability for long-term preservation
 
             Virtual Reality, "
-            .. class:: incremental 
+            .. class:: incremental-list 
             
             • X3D (\*.x3d)", "
-            .. class:: incremental 
+            .. class:: incremental-list 
             
             • VRML (\*.wrl, \*.vrml)
             • U3D (Universal 3D file format)", "
-            .. class:: incremental 
+            .. class:: incremental-list 
             
             • All other virtual reality formats not listed here"
 
-    .. container:: layer incremental
+    .. card::
 
         .. csv-table::
-            :class:  overflow-y-scroll
+            :width: 100%
+            :widths:  14 30 30 30
             :header: "Content Type", High probability for long-term preservation, Medium probability for long-term preservation, Low probability for long-term preservation
 
             Computer Programs,"
-            .. class:: incremental 
+            .. class:: incremental-list 
             
             • Computer program source code, uncompiled (\*.c, \*.c++, \*.java, \*.js, \*.jsp, \*.php, \*.pl, etc.)", ,"
-            .. class:: incremental 
+            .. class:: incremental-list 
             
             • Compiled / Executable files (EXE, \*.class, COM, DLL, BIN, DRV, OVL, SYS, PIF)"
 
-    .. container:: layer incremental
+    .. card::
 
         .. csv-table::
-            :class:  overflow-y-scroll
+            :width: 100%
+            :widths: 14 30 30 30
             :header: "Content Type", High probability for long-term preservation, Medium probability for long-term preservation, Low probability for long-term preservation
 
             Presentation, , "
-            .. class:: incremental 
+            .. class:: incremental-list 
             
             • OpenOffice (\*.sxi/\*.odp)
             • OOXML (ISO/IEC DIS 29500) (\*.pptx)", "
-            .. class:: incremental 
+            .. class:: incremental-list 
             
             • PowerPoint (\*.ppt)
             • All other presentation formats not listed here"
 
-.. container:: minor far-smaller margin-top-1em
-    
-    `Recommended File Formats for Long-Term Data Curation - Georgia Southern University | University Libraries <https://georgiasouthern.libguides.com/c.php?g=833713&p=5953146>`__
+.. [#] `Recommended File Formats for Long-Term Data Curation - Georgia Southern University |  University Libraries <https://georgiasouthern.libguides.com/c.php?g=833713&p=5953146>`__
 
 
 
@@ -1027,7 +1008,7 @@ E-Mail-Archivierung - eine besondere Herausforderung
 
     Herausforderungen:
 
-    .. class:: incremental list-with-explanations
+    .. class:: incremental-list list-with-explanations
 
     - nicht alle E-Mails sind (geschäftlich) relevant (z. B. private E-Mails oder Spam)
   
@@ -1037,7 +1018,6 @@ E-Mail-Archivierung - eine besondere Herausforderung
     - E-Mails enthalten Schadsoftware 
       
       (Diesbezüglich gilt das Fernmeldegeheimnis seit dem 1.12.2021 nicht mehr.)
-
 
 .. supplemental::
 
@@ -1054,8 +1034,8 @@ Regelmäßiges Umkopieren der Bestände ist häufig notwendig:
 • Dokumente und Mappen sollen zusammengefasst werden (Performance)
 • Datenträger altern (Sicherheit)
 
-.. admonition:: Hinweis
-  :class: warning incremental margin-top-2em
+.. hint:: 
+  :class: incremental 
 
   Kann mit einer Migration auf andere Formate bzw. Formatversionen verbunden sein! 
 
@@ -1064,7 +1044,7 @@ Regelmäßiges Umkopieren der Bestände ist häufig notwendig:
 Sichere Speicherung
 -----------------------------------------------
 
-.. class:: incremental
+.. class:: incremental-list
 
 - Dokumente und Metadaten können grundsätzlich folgendermaßen gespeichert werden:
 
@@ -1085,13 +1065,12 @@ Sichere Speicherung
 
 
 
-.. class:: center-child-elements no-title transition-scale
+.. class:: s-center-child-elements no-title transition-scale
 
 Sichere Speicherung kann nicht lokal erfolgen
 -----------------------------------------------
 
-.. admonition:: Hinweis
-    :class: warning
+.. warning::
 
     Das Speichern auf lokalen Netzlaufwerken oder gar auf dem Arbeitsplatzrechner ist sowohl aus betrieblicher (und ggf. auch rechtlicher Sicht) nicht ausreichend.
 
@@ -1104,7 +1083,7 @@ DM-Systeme müssen das Drucken von Dokumenten unterstützen, da Nutzer oft Ausdr
 
 Relevante Anforderungen an den Ausdruck:
 
-.. class:: incremental
+.. class:: incremental-list
 
 - eindeutige Dokumentenkennungen müssen mit ausgedruckt werden
 - relevante Dokumentenmerkmale (z. B. Autoren, Version, Status) sollten auf den Ausdrucken erscheinen
@@ -1123,12 +1102,12 @@ DMS als Infrastruktur
 
 - DMS kann nie sinnvoll für sich allein stehen
 
-.. class:: incremental
+.. class:: incremental-list
 
 - DMS bietet Dienste für andere Applikationen an, um Dokumente zu verwalten.
 - Integration in:
  
-  .. class:: incremental
+  .. class:: incremental-list
 
   - Standardsysteme (wie MS-Office)
   - Mail-Systeme
@@ -1144,9 +1123,9 @@ DMS als Infrastruktur
 Typische (Web-) Dienste eines DMS
 -----------------------------------------------
 
-.. container:: two-columns
+.. grid::
 
-    .. container:: column no-separator
+    .. cell::
                 
         • Create document 
         • Move document
@@ -1157,7 +1136,7 @@ Typische (Web-) Dienste eines DMS
         • Retrieve full document info 
         • ...
 
-    .. container:: column
+    .. cell::
 
         • Create folder 
         • Move folder
@@ -1172,7 +1151,6 @@ Beispiel: Anlagendokumentation
 -----------------------------------------------
 
 .. image:: drawings/dokumente/anlagendokumentation.svg
-    :width: 100%
     :align: center
 
 .. supplemental::
@@ -1186,7 +1164,7 @@ Beispiel: Anlagendokumentation
 Beispiel: Anlagendokumentation
 -----------------------------------------------
 
-.. class:: incremental
+.. class:: incremental-list
 
 • Integrierte und konsistente Gesamtsicht auf alle Anlagen und ihre Bestandteile (Pläne und sonstige Dokumente)
 • SAP als führendes System für Schlüssel (Datenqualität)
@@ -1200,7 +1178,7 @@ Beispiel: Anlagendokumentation
 Typische Fragestellungen bei Integration
 --------------------------------------------
 
-.. class:: incremental
+.. class:: incremental-list
 
 • Welches System ist bezüglich der Schlüssel das führende System?
 • Einheitliche Nutzer- und Zugriffsrechte
@@ -1215,7 +1193,6 @@ Zusammenfassung: Dokumenten-Management-Lösung
 -----------------------------------------------
 
 .. image:: drawings/dokumente/dokumenten-management-loesung.svg
-    :height: 1150px
     :align: center
 
 
@@ -1229,7 +1206,7 @@ Produkte
 Kategorisierung von DMS Produkten
 -----------------------------------------------
 
-.. class:: incremental list-with-explanations
+.. class:: incremental-list list-with-explanations
 
 - nach Funktionsbreite
 - nach Funktionstiefe 
@@ -1252,7 +1229,6 @@ Enterprise Content Management (ECM)
 - Häufig aus Content-Management-Systemen (CMS) hervorgegangen.
 - unterstützt auch schwach- oder unstrukturierte Daten (z. B. E-Mails, Webseiten, ...)
 
-
 .. supplemental::
 
     Beim Records-Management (Schriftgutverwaltung) ist die Betrachtung des gesamten Lebenszyklus von Akten in Hinblick auf einen sachlichen Kontext bzw. Geschäftsvorfall (Transaktion) und die Dokumentation desselbigen im Fokus.
@@ -1267,13 +1243,9 @@ Enterprise Content Management (ECM) im AIIM Modell\ [#]_
 -----------------------------------------------------------
 
 .. image:: drawings/ecm.svg
-    :height: 820px
     :align: center
 
-
-.. container:: footer-left far-smaller
-
-    .. [#] `Association for Intelligent Information Management (AIIM) <https://www.aiim.org>`_ 
+.. [#] `Association for Intelligent Information Management (AIIM) <https://www.aiim.org>`_ 
 
 
 Open-Source Lösungen (Stand 2024)

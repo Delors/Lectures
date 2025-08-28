@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns="http://www.w3.org/2000/svg" xmlns:xl="http://www.w3.org/1999/xlink" version="1.1" viewBox="71 -187 748 795" width="748" height="795">
+  <defs>
+    <font-face font-family="Helvetica" font-size="24" units-per-em="1000" underline-position="-75.68359" underline-thickness="49.316406" slope="0" x-height="522.9492" cap-height="717.28516" ascent="770.0195" descent="-229.98047" font-weight="400">
+      <font-face-src>
+        <font-face-name name="Helvetica"/>
+      </font-face-src>
+    </font-face>
+  </defs>
+  <metadata> Produced by OmniGraffle 8.0\n2024-03-08 15:33:31 +0000</metadata>
+  <g id="struktur" stroke-dasharray="none" stroke="none" stroke-opacity="1" fill-opacity="1" fill="none">
+    <title>struktur</title>
+    <g id="struktur_Layer_1">
+      <title>Layer 1</title>
+      <g id="Graphic_9">
+        <rect x="183" y="-187" width="524" height="793.92" stroke="#a5a5a5" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_3">
+        <text transform="translate(743.5 -26)" fill="#003776">
+          <tspan font-family="Helvetica" font-size="24" font-weight="400" fill="#003776" x="0" y="23">Kopf</tspan>
+        </text>
+      </g>
+      <g id="Graphic_4">
+        <text transform="translate(742.5 298.69922)" fill="#235e00">
+          <tspan font-family="Helvetica" font-size="24" font-weight="400" fill="#235e00" x="0" y="23">Rumpf</tspan>
+        </text>
+      </g>
+      <g id="Graphic_5">
+        <text transform="translate(743.5 523.39844)" fill="#310067">
+          <tspan font-family="Helvetica" font-size="24" font-weight="400" fill="#310067" x="0" y="23">Fuß</tspan>
+        </text>
+      </g>
+      <g id="Line_6">
+        <line x1="737.5" y1="-143" x2="737.5" y2="108" stroke="#003776" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+      <g id="Line_7">
+        <line x1="737.5" y1="129.5" x2="737.5" y2="470" stroke="#235e00" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+      <g id="Line_8">
+        <line x1="737.5" y1="488" x2="737.5" y2="587.7969" stroke="#310067" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+    </g>
+  </g>
+</svg>
