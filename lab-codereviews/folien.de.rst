@@ -16,7 +16,7 @@ Code Reviews
 
 :Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
 :Kontakt: michael.eichberg@dhbw.de
-:Version: 0.1.2
+:Version: 0.2
 
 .. supplemental::
 
@@ -103,10 +103,13 @@ Voraussetzung für Code Reviews
 Code Review von CSS
 ---------------------
 
+.. rubric:: Exemplarische Kriterien
+
 .. story::
 
-    .. class:: incremental-list
+    .. class:: incremental-list list-with-explanations
 
+    - keine Redundanzen, keine unnötigen Style Definitionen.
     - Konsistente Schreibweise von ....
 
       .. class:: incremental-list
@@ -118,22 +121,29 @@ Code Review von CSS
     - Sind die Namen (CSS Variablen, Klassennamen und IDs) verständlich und sprechend?
 
       :red:`(Korrektes Deutsch oder Englisch!)`
+    - Werden CSS Variablen sinnvoll verwendet? (Z.B. um ein leicht anpassbares Design zu ermöglichen?)
+    - Werden CSS Layer verwendet, um die Styles zu organisieren und die Wartbarkeit zu erhöhen (Stichwort: Modularisierung)?
+    - Wird CSS Nesting verwendet, um die Struktur der Styles zu verdeutlichen?
     - *Einfachheit und Korrektheit von* Selektoren
 
       (Z. B. keine Verwendung von :css:`!important`.)
     - Sind die Selektoren effizient?
+    - Sind komplizierte Selektoren - falls notwendig - dokumentiert/begründet/nachhvollziehbar?
     - Konsistente Vorgehensweise in Hinblick auf (z. B.) Responsiveness (z. B. konsistente Verwendung von Größen (rem, rem,...) oder das Farbschema.
-    - keine Redundanzen, keine unnötigen Style Definitionen.
-    - Modularisiert
     - Einfachheit des Layouts?
     - Gibt es ein klares Vorgehen (Mobile-first or Desktop-first)?
     - Werden Tools eingesetzt, um bei der Formatierung bzw. dem Linting zu helfen.
-    - Sind komplizierte Selektoren - falls notwendig - dokumentiert/begründet/nachhvollziehbar?
+    - Wird modernes CSS verwendet?
+
+      (Dies gilt immer in Hinblick auf die Zielplattformen/Browserversionen.) 
+    
 
 
 
 Code Reviews von HTML
 -------------------------
+
+.. rubric:: Exemplarische Kriterien
 
 .. story::
 
@@ -182,8 +192,11 @@ Code Reviews von HTML
     - Sind Links inhaltlich nachvollziehbar?
 
 
+
 Code Reviews von JavaScript
 ----------------------------
+
+.. rubric:: Exemplarische Kriterien
 
 .. story::
 
@@ -203,7 +216,7 @@ Code Reviews von JavaScript
 
       (Nachfragen deuten auf Probleme bzgl. der Verständlichkeit hin.)
     - Ist der Code modularisiert?
-    - Wird auf tief verschachteltete Logik verzichtet?
+    - Wird auf tief verschachtelte Logik verzichtet?
     - Werden teure Manipulationen (des DOMs) auf das notwendige Minimum beschränkt?
     - Werden Eingaben validiert (auf Client und **Server** Seite)?
     - Ist das Logging von Fehlern (Error) sinnvoll und enthält genug Kontextinformationen?
