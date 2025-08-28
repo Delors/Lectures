@@ -18,7 +18,7 @@ Eine kurze Wiederholung / Einführung.
 
 :Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
 :Kontakt: michael.eichberg@dhbw.de
-:Version: 1.0.1
+:Version: 1.1
 
 .. supplemental::
 
@@ -51,12 +51,18 @@ Einloggen auf einem Server
 .. class:: incremental-list
 
 1. Starten Sie eine Shell (z. B. Terminal oder iTerm auf MacOS bzw. Linux; cmd oder Powershell unter Windows.)
-2. Verwenden Sie SSH, um sich auf dem Server einzuloggen. Sollte Ihr Accountname zum Beispiel ``mueller`` sein und der Server unter der IP ``141.72.12.103`` erreichbar sein, dann können Sie sich wie folgt auf dem Server einloggen, wenn passwort-basierte Authentifizierung möglich ist\ [#]_\ :
+2. Verwenden Sie SSH, um sich auf dem Server einzuloggen. Sollte Ihr Accountname zum Beispiel ``mueller`` sein und der Server z. B. unter der IP ``141.72.12.103`` erreichbar sein, dann können Sie sich wie folgt auf dem Server einloggen *wenn passwort-basierte Authentifizierung möglich ist\ [#]_*:
 
    .. code:: bash
         :class: copy-to-clipboard
 
         ssh -l mueller 141.72.12.103
+
+   .. supplemental::
+
+        .. hint::
+
+            Im professionellen Umfeld ist es bei der Verwendung von SSH üblich, sich mittels Public-Key-Authentifizierung zu authentifizieren.
 
 .. [#] Erhalten Sie eine Meldung, dass eine Passwort basierte Authentifizierung nicht erlaubt ist, dannn müssen Sie sich an Ihren Administrator wenden.
 
@@ -86,14 +92,18 @@ Dateisysteme auf Unix-ähnlichen Betriebssytemen
       .. example::
         :class: incremental
 
-        D. h. ``/Users/administrator/.zsh_history`` ist der Pfad der Datei .zsh_history im Verzeichnis ``administrator``, welches wiederum im Verzeichnis ``Users`` zu finden ist. ``Users`` ist ein direktes Kindverzeichnis des Wurzelverzeichnisses ``/``.
+        ``/Users/administrator/.zsh_history`` ist der Pfad der Datei .zsh_history im Verzeichnis ``administrator``, welches wiederum im Verzeichnis ``Users`` zu finden ist. ``Users`` ist ein direktes Kindverzeichnis des Wurzelverzeichnisses ``/``.
 
-    - Im Regelfall sind Datei- und Verzeichnisnamen `Case-sensitive`.
+    - Im Regelfall sind Datei- und Verzeichnisnamen *Case-sensitive*.
 
       .. example::
         :class: incremental
 
         Es ist möglich zwei Dateien ``Test.txt`` und ``test.txt`` gleichzeitig zu haben, die sich nur in der Groß-Kleinschreibung unterscheiden.
+
+      .. supplemental::
+
+        Ist ein Dateisystem nur *Case-preserving* (Standard unter Windows und MacOS), dann ist es zwar möglich z. B. eine Datei Test.txt anzulegen, aber nicht gleichzeitig auch eine Datei test.txt, die sich nur in der Kapitalisierung der Buchstaben unterscheidet.
 
     - Geräte (wie zum Beispiel Festplatten, USB Sticks, Zufallszahlengeneratoren ...) können an *fast beliebiger Stelle* eingehängt werden.
 
@@ -257,6 +267,41 @@ Kommandozeilenprogrammen beenden
 :`kill <PID>`:console:: Mittels des Befehls :console:`kill` lässt sich das Progrmm auch beenden. Erfordert ggf. dass man einen zweiten Terminal startet um die PID zu ermitteln (zum Beispiel mittels :console:`top` oder :console:`ps`):
 
 
+.. class:: exercises
+
+Übung - mit einem Server verbinden
+-----------------------------------------
+
+.. exercise:: Unix - Erste Schritte
+
+    .. class:: incremental-list list-with-explanations
+
+    1. Loggen Sie sich auf dem Server unter Verwendung der passenden Zugangsdaten ein.
+
+    2. Ändern Sie Ihr Passwort mit Hilfe von ``passwd``.
+
+
+
+.. class:: exercises
+
+Übung - Installation von Software als normaler Nutzer
+-------------------------------------------------------
+
+.. exercise:: NVM installieren
+
+    Installieren Sie nvm (Node Version Manager), um im zweiten Schritt eine aktuelle Version von node.js zu installieren.
+
+    https://github.com/nvm-sh/nvm?tab=readme-ov-file#installing-and-updating
+
+    .. solution::
+        :pwd: LesenIstWichtig
+
+        1. Script herunterladen: :console:`curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.3/install.sh | bash` (die Verwendung von wget ist auch möglich!)
+
+        2. Ausloggen und einloggen (oder "Sourcen")
+
+        3. Aktuellste Version von Node installieren: :console:`nvm install node`
+
 
 
 .. class:: exercises
@@ -268,25 +313,24 @@ Kommandozeilenprogrammen beenden
 
     .. class:: incremental-list list-with-explanations
 
-    1. Loggen Sie sich auf dem Server (z.B. 141.72.12.103) unter Verwendung der Zugangsdaten für  Ihre Gruppe ein.
-    2. Erzeugen Sie ein Verzeichnis mit Ihrem Nachnamen (z.B. "eichberg")
-    3. Legen Sie in dem Verzeichnis eine rundimentäre ``index.html`` Datei an.
+    1. Erzeugen Sie ein Verzeichnis mit Ihrem Nachnamen (z.B. "eichberg")
+    2. Legen Sie in dem Verzeichnis eine rundimentäre ``index.html`` Datei an.
 
        (Sie können zum Beispiel ``pico``, ``vim`` oder ``echo`` verwenden!)
-    4. Starten Sie einen Webserver mit dem gerade angelegten Verzeichnis als Wurzel. Wählen Sie eine zufälligen Port XXXX > 1024 aus.
+    3. Starten Sie einen Webserver mit dem gerade angelegten Verzeichnis als Wurzel. Wählen Sie eine zufälligen Port XXXX > 1024 aus.
 
        (Zum Beispiel können Sie den bereits installierten Webserver mittels ``http-server`` wie folgt starten. Im Folgenden ist der Port ``XXXX`` und das Wurzelverzeichnis für Ihre Webseiten "``eichberg``":
         :console:`http-server -p XXXX eichberg`).
-    5. Wechseln Sie in Ihren Browser und öffnen sie die entsprechende Webseite.
+    4. Wechseln Sie in Ihren Browser und öffnen sie die entsprechende Webseite.
 
        (Denken Sie daran, dass dieser Server nur http und nicht https unterstützt.)
-    6. Beenden Sie den WebServers
-    7. Löschen Sie das gerade angelegte Verzeichnis.
+    5. Beenden Sie den WebServers
+    6. Löschen Sie das gerade angelegte Verzeichnis.
 
     .. solution::
         :pwd: ServerStartenIstNichtSchwer
 
-        Wenn wir davon ausgehen, dass der Name "eichberg" ist und der zufällig Port 8888, dann wären die folgenden Befehle eine mögliche Lösung:
+        Wenn wir davon ausgehen, dass der Name "eichberg" ist und der zugewiesene Port 8888, dann wären die folgenden Befehle eine mögliche Lösung:
 
         .. code:: console
             :number-lines:
@@ -310,7 +354,7 @@ Kommandozeilenprogrammen beenden
 
         Die zu verwendende URL ist:
 
-        http://141.72.12.103:8888
+        http://<IP des Servers>:8888
 
 
 .. class:: exercises
