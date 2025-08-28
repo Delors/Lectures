@@ -19,7 +19,7 @@ HTML(5)
 
 :Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
 :Kontakt: michael.eichberg@dhbw.de, Raum 149B
-:Version: 2.1.1
+:Version: 2.1.2
 
 .. supplemental::
 
@@ -154,7 +154,7 @@ Die *HTML Spezifikation* definiert eine abstrakte Sprache zur Beschreibung von D
 
 - Das DOM (:eng:`Document Object Model`) ist die In-Memory Darstellung eines Dokuments.
 
-  Das DOM ist ein API, um HTML Dokumente zu manipulieren.
+  Das DOM ist (auch) eine API, um HTML Dokumente zu manipulieren.
 
 .. hint::
     :class: incremental
