@@ -747,10 +747,10 @@ Rail Fence Chiffre
 
     ::
 
-      -     -       1 ⇒ v      2 ⇒ o
-       -   - -       3 ⇒ e    4 ⇒ o  5 ⇒ d
-        - -           6 ⇒ r  7 ⇒ g
-         -             8 ⇒ y
+      -     -       1 ⇒ v          2 ⇒ o
+       -   - -        3 ⇒ e      4 ⇒ o  5 ⇒ d
+        - -             6 ⇒ r  7 ⇒ g
+         -                8 ⇒ y
 
     Plaintext = very good
 
@@ -936,8 +936,10 @@ Steganographie vs. Verschlüsselung
 
     Entschlüsseln Sie: gestugmitrtee
 
+    D. h. finden Sie den Schlüssel k.
+
     .. solution::
-        :pwd: GutGemeistert
+        :pwd: gutgemeistert
 
         Länge("gestugmitrtee") = 13
 
@@ -952,6 +954,7 @@ Steganographie vs. Verschlüsselung
         Index der Buchstaben in der Verschlüsselten Nachricht:
 
         ::
+
            1    2    3     4
             5  6 7  8 9  10
              11   12   13
@@ -959,6 +962,7 @@ Steganographie vs. Verschlüsselung
         d. h. der zweite Buchstabe des Plaintexts hat den Index 5 in der verschlüsselten Nachricht.
 
         ::
+
             g   e   s   t
              u g m i t r
               t   e   e
