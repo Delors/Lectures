@@ -15,7 +15,7 @@
 
 
 
-Software Engineering - Versionskontrolle (mit Git)
+Software Engineering - Versionskontrolle (mit Git)\ [#]_
 ===================================================================
 
 Eine allererste Einführung 
@@ -24,7 +24,7 @@ Eine allererste Einführung
 :Kontakt: michael.eichberg@dhbw.de
 :Version: 1.0
 
-.. container:: footer-left tiny
+.. [#]
     
     Die Folien basieren in Teilen auf Folien von Dr. Helm und Prof. Dr. Hermann.
     
@@ -54,8 +54,9 @@ Versionsmanagement und Versionskontrollsysteme
 --------------------------------------------------
 
 
-Versionsmanagement
--------------------
+
+Aspekte der Softwareentwicklung
+---------------------------------
 
 .. deck::
 
@@ -67,17 +68,19 @@ Versionsmanagement
 
                 .. card::
 
+                    .. class:: incremental-list
+
                     - Softwareentwicklung ist Teamarbeit
                     - Viel (indirekte) Kommunikation nötig
                     - Entwicklungswissen muss dokumentiert werden
                     - Software besteht aus vielen Dokumenten:
 
-                    - Lastenheft
-                    - Pflichtenheft
-                    - Analyse- und Designdokument
-                    - Programmcode (Quellcode, Skripte, Konfigurationsdateien, ...)
-                    - Testdokumentation
-                    - Codedokumentation
+                      - Lastenheft
+                      - Pflichtenheft
+                      - Analyse- und Designdokument
+                      - Programmcode (Quellcode, Skripte, Konfigurationsdateien, ...)
+                      - Testdokumentation
+                      - Codedokumentation
 
                 .. card::
 
@@ -86,32 +89,34 @@ Versionsmanagement
 
     .. card::
 
-        .. compound::
+        .. grid::
 
-            .. rubric:: Versionsmanagement 
+            .. cell:: width-50
 
-            .. class:: list-with-explanations
+                .. rubric:: Versionsmanagement 
 
-            - Wo ist die aktuelle Version?
-            - Was ist die zuletzt lauffähige Version?
-            - Wo ist die Implementierungsversion vom 01. April 2016? 
+                .. class:: incremental-list list-with-explanations
 
-                Und welche Dokumente beziehen sich auf diese Version?
-            - Welche Version wurde dem Kunden präsentiert?
+                - Wo ist die aktuelle Version?
+                - Was ist die zuletzt lauffähige Version?
+                - Wo ist die Implementierungsversion vom 01. April 2016? 
 
-        .. compound::
-            :class: incremental
+                  Und welche Dokumente beziehen sich auf diese Version?
+                - Welche Version wurde dem Kunden präsentiert?
 
-            .. rubric:: Änderungsmanagement
+            .. cell:: incremental
 
-            - Was hat sich seit letzter Woche geändert? 
-            - Wer hat diese Änderung gemacht?
-            - Warum wurde diese Änderung gemacht?
+                .. rubric:: Änderungsmanagement
 
+                .. class:: incremental-list    
+
+                - Was hat sich seit letzter Woche geändert? 
+                - Wer hat diese Änderung gemacht?
+                - Warum wurde diese Änderung gemacht?
 
     .. card::
 
-        Einfache Lösungen, die oft verwendet werden:
+        Einfache „*ad-hoc Lösungen*“ bei der Entwicklung von Softwareprojekten
 
         - Austausch der Dokumente via USB-Stick / Festplatte
         - Austausch der Dokumente via Mail
@@ -165,25 +170,28 @@ Versionskontrollsysteme (VCS) - Überblick
     .. card:: dd-margin-left-6em
 
         .. rubric:: Arten
+
+        .. class:: incremental-list
         
         :Zentralisierte VCS: 
-            synchronisieren alle Änderungen in einem zentralen Repository (Subversion, . . . )
+            synchronisieren alle Änderungen in einem zentralen Repository (Subversion, ... )
 
-            .. class:: negative-list
+            .. attention:: 
+                :class: incremental
             
-            - Keine Offline-Nutzung möglich.
+                Es ist keine Offline-Nutzung möglich.
              
 
         :Dezentralisierte VCS: 
         
-            können mehrere, unabhängige Repositories haben (Git, Mercurial, . . . )
+            können mehrere, unabhängige Repositories haben (Git, Mercurial, ... )
         
             .. remark::
                 :class: incremental
         
                 Dezentralisierte VCS (insbesondere Git) sind heute am weitesten verbreitet.
 
-    .. card:: dd-margin-left-6em
+    .. card:: dd-margin-left-2em
 
         .. rubric:: Konsistenzmechanismen
         
@@ -202,7 +210,7 @@ Versionskontrollsysteme (VCS) - Überblick
 
         .. class:: negative-list
 
-        - Mergen kann in seltenen Fällen komplex werden und zu Fehlern führen  
+        - Mergen kann *in seltenen Fällen* komplex werden und zu Fehlern führen  
 
 
 
@@ -260,68 +268,79 @@ VCS - Git - Prozess
 .. raw:: html
     :class: align-center
 
-    <svg width="57ch" height="13lh" version="1.1" xmlns="http://www.w3.org/2000/svg">
-        <style>
-        </style>
+    <div style="width: 70ch; height: 18.15ch; container-type:size;">
+    <svg viewBox="0 0 54 14" font-size="1" version="1.1" xmlns="http://www.w3.org/2000/svg">
         <defs>
             <marker 
-            id="arrow"
-            viewBox="0 0 10 10"
-            refX="10"
-            refY="5"
-            markerUnits="strokeWidth"
-            markerWidth="8"
-            markerHeight="8"
-            orient="auto-start-reverse">
-            <path d="M 0 0 L 10 5 L 0 10 z" />
+                id="arrow"
+                viewBox="0 0 10 10"
+                refX="10"
+                refY="5"
+                markerUnits="strokeWidth"
+                markerWidth="6"
+                markerHeight="6"
+                orient="auto-start-reverse">
+                <path d="M 0 0 L 10 5 L 0 10 z" />
             </marker>
         </defs>
-
+        <style>
+            .svg-life-line {
+                stroke:rgb(0,0,0);
+                stroke-width:0.2ch;
+                stroke-dasharray: 1 1;
+            }
+            .svg-action {
+                stroke:rgb(0,0,0);
+                stroke-width:0.2;
+                /* FIXME move marker-end here as soon as we enable global defs!*/
+            }
+        </style>
         <g style="fill:white">
-            <rect width="10ch" height="3lh" x="0ch" y="0" rx="1ch" ry="1ch" style="fill:rgb(71, 65, 254)" />
-            <text x="1ch" y="1.5lh">Working</text>
-            <text x="1ch" y="2.5lh">Directory</text>
-            <line x1="5ch" y1="3lh" x2="5ch" y2="13lh" style="stroke:rgb(0,0,0);stroke-width:0.2ch;" stroke-dasharray="1ch 1ch"/>
+            <rect width="6" height="3" x="2" y="0" rx="1" ry="1" style="fill:rgb(71, 65, 254)" />
+            <text x="3" y="1.5">Working</text>
+            <text x="3" y="2.5">Directory</text>
+            <line x1="5" y1="3" x2="5" y2="15" class="svg-life-line"/>
         </g>
         <g class="incremental" style="fill:white">
-            <rect width="10ch" height="3lh" x="15ch" y="0" rx="1ch" ry="1ch" style="fill:rgb(71, 65, 254)" />
-            <text x="16ch" y="2lh">Index</text>
-            <line x1="20ch" y1="3lh" x2="20ch" y2="13lh" style="stroke:rgb(0,0,0);stroke-width:0.2ch;" stroke-dasharray="1ch 1ch"/>
-            <line x1="5ch" y1="4.5lh" x2="20ch" y2="4.5lh" style="stroke:rgb(0,0,0);stroke-width:0.2ch" marker-end="url(#arrow)"/>
-            <text x="6ch" y="4.25lh" style="fill:black">add</text>
+            <rect width="6" height="3" x="17" y="0" rx="1" ry="1" style="fill:rgb(71, 65, 254)" />
+            <text x="18" y="2">Index</text>
+            <line x1="20" y1="3" x2="20" y2="15" class="svg-life-line"/>
+            <line x1="5" y1="4.5" x2="20" y2="4.5" class="svg-action" marker-end="url(#arrow)" />
+            <text x="6" y="4.25" style="fill:black">add</text>
         </g>
         <g class="incremental" style="fill:white">
-            <rect width="10ch" height="3lh" x="30ch" y="0" rx="1ch" ry="1ch" style="fill:rgb(71, 65, 254)" />
-            <text x="31ch" y="1.5lh">Local</text>
-            <text x="31ch" y="2.5lh">Repo</text>
-            <line x1="35ch" y1="3lh" x2="35ch" y2="13lh" style="stroke:rgb(0,0,0);stroke-width:0.2ch;" stroke-dasharray="1ch 1ch"/>
-            <line x1="20ch" y1="6lh" x2="35ch" y2="6lh" style="stroke:rgb(0,0,0);stroke-width:0.2ch" marker-end="url(#arrow)"/>
-            <text x="21ch" y="5.75lh" style="fill:black">commit</text>
+            <rect width="6" height="3" x="32" y="0" rx="1" ry="1" style="fill:rgb(71, 65, 254)" />
+            <text x="33" y="1.5">Local</text>
+            <text x="33" y="2.5">Repo</text>
+            <line x1="35" y1="3" x2="35" y2="15" class="svg-life-line"/>
+            <line x1="20" y1="6" x2="35" y2="6" class="svg-action" marker-end="url(#arrow)"/>
+            <text x="21" y="5.75" style="fill:black">commit</text>
         </g>
         <g class="incremental" style="fill:white">
-            <rect width="10ch" height="3lh" x="45ch" y="0" rx="1ch" ry="1ch" style="fill:rgb(55,155,55)" />
-            <text x="46ch" y="1.5lh">Remote</text>
-            <text x="46ch" y="2.5lh">Repo</text>
-            <line x1="50ch" y1="3lh" x2="50ch" y2="13lh" style="stroke:rgb(0,0,0);stroke-width:0.2ch;" stroke-dasharray="1ch 1ch"/>
-            <line x1="35ch" y1="7.5lh" x2="50ch" y2="7.5lh" style="stroke:rgb(0,0,0);stroke-width:0.2ch" marker-end="url(#arrow)"/>
-            <text x="36ch" y="7.25lh" style="fill:black">push</text>
+            <rect width="6" height="3" x="47" y="0" rx="1" ry="1" style="fill:rgb(55,155,55)" />
+            <text x="48" y="1.5">Remote</text>
+            <text x="48" y="2.5">Repo</text>
+            <line x1="50" y1="3" x2="50" y2="15" class="svg-life-line"/>
+            <line x1="35" y1="7.5" x2="50" y2="7.5" class="svg-action" marker-end="url(#arrow)"/>
+            <text x="36" y="7.25" style="fill:black">push</text>
         </g>
         <g class="incremental" style="fill:black">
-            <line x2="35ch" y1="10.5lh" x1="50ch" y2="10.5lh" style="stroke:rgb(0,0,0);stroke-width:0.2ch" marker-end="url(#arrow)"/>
-            <text x="36ch" y="10.25lh" style="fill:black">fetch</text>
-            <!-- To get a stable animation: --><circle cx="57ch" cy="13lh" r="0.1ch" fill="white"/>
+            <line x2="35" y1="10.5" x1="50" y2="10.5" class="svg-action" marker-end="url(#arrow)"/>
+            <text x="36" y="10.25" style="fill:black">fetch</text>
+            <!-- To get a stable animation: --><circle cx="57" cy="13" r="0.1" fill="white"/>
         </g>
         <g class="incremental" style="fill:black">
-            <line x1="35ch" y1="10.5lh" x2="5ch" y2="10.5lh" style="stroke:rgb(0,0,0);stroke-width:0.2ch" marker-end="url(#arrow)"/>
-            <text x="15ch" y="10.25lh" style="fill:black">merge/checkout</text>
-            <!-- To get a stable animation: --><circle cx="57ch" cy="13lh" r="0.1ch" fill="white"/>
+            <line x1="35" y1="10.5" x2="5" y2="10.5" class="svg-action" marker-end="url(#arrow)"/>
+            <text x="15" y="10.25" style="fill:black">merge/checkout</text>
+            <!-- To get a stable animation: --><circle cx="57" cy="13" r="0.1" fill="white"/>
         </g>
         <g class="incremental" style="fill:black">
-            <line x1="50ch" y1="12lh" x2="5ch" y2="12lh" style="stroke:rgb(0,0,0);stroke-width:0.2ch" marker-end="url(#arrow)"/>
-            <text x="25ch" y="11.75lh" style="fill:black">pull</text>
-            <!-- To get a stable animation: --><circle cx="57ch" cy="13lh" r="0.1ch" fill="white"/>
+            <line x1="50" y1="13" x2="5" y2="13" class="svg-action" marker-end="url(#arrow)"/>
+            <text x="25" y="12.75" style="fill:black">pull</text>
+            <!-- To get a stable animation: --><circle cx="57" cy="13" r="0.1" fill="white"/>
         </g>
     </svg>
+    </div>
 
 
 
@@ -424,15 +443,17 @@ Git verwaltet Versionen von Dokumenten mittels Commits in Branches.
 
         .. raw:: html
 
-            <svg width="48ch" height="8lh" version="1.1" xmlns="http://www.w3.org/2000/svg">
-                <rect width="4ch" height="1lh" x="0ch" y="3lh" rx="1ch" ry="1ch" style="fill:darkblue" />
-                <text x="1.5ch" y="3.75lh" style="fill:white">A</text>
+            <div style="width: 90ch; height:16ch">
+            <svg viewBox="0 0 48 8" font-size="0.75" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                <rect width="4" height="1" x="0" y="3" rx="1" ry="1" style="fill:darkblue" />
+                <text x="1.5" y="3.75" style="fill:white">A</text>
 
-                <rect width="6ch" height="1lh" x="6ch" y="0lh" rx="1ch" ry="1ch" style="fill:darkorange" />
-                <text x="7ch" y="0.75lh" style="fill:white">main</text>       
+                <rect width="6" height="1" x="6" y="0" rx="1" ry="1" style="fill:darkorange" />
+                <text x="7" y="0.75" style="fill:white">main</text>       
 
-                <line x1="2ch" y1="3lh" x2="6ch" y2="0.5lh" style="stroke:darkorange;stroke-width:0.2ch"/>     
+                <line x1="2" y1="3" x2="6" y2="0.5" style="stroke:darkorange;stroke-width:0.2"/>     
             </svg>
+            </div>
     
     .. card:: 
         
@@ -440,28 +461,24 @@ Git verwaltet Versionen von Dokumenten mittels Commits in Branches.
 
         .. raw:: html
 
-            <svg width="48ch" height="8lh" version="1.1" xmlns="http://www.w3.org/2000/svg">
-                <style>
-                    polygon.star {
-                        transform: scale(calc(var(--unitless-current-base-font-size) / 20));
-                    }
-                </style>
+            <div style="width: 90ch; height:16ch">
+            <svg viewBox="0 0 48 8" font-size="0.75"  version="1.1" xmlns="http://www.w3.org/2000/svg">
                 <defs>
                     <g id="star">
-                        <polygon class="star" points="12,2 15,9 22,9 16,14 18,21 12,17 6,21 8,14 2,9 9,9" fill="gold" stroke="black" stroke-width="1"/>
+                        <polygon class="star" points="12,2 15,9 22,9 16,14 18,21 12,17 6,21 8,14 2,9 9,9" fill="gold" stroke="black" stroke-width="1" style="transform: scale(0.05)"/>
                     </g>
                 </defs>
+                <rect width="4" height="1" x="0" y="3" rx="1" ry="1" style="fill:darkblue" />
+                <text x="1.5" y="3.75" style="fill:white">A</text>
 
-                    <rect width="4ch" height="1lh" x="0ch" y="3lh" rx="1ch" ry="1ch" style="fill:darkblue" />
-                    <text x="1.5ch" y="3.75lh" style="fill:white">A</text>
+                <rect width="6" height="1" x="6" y="0" rx="1" ry="1" style="fill:darkorange" />
+                <text x="7" y="0.75" style="fill:white">main</text>       
 
-                    <rect width="6ch" height="1lh" x="6ch" y="0lh" rx="1ch" ry="1ch" style="fill:darkorange" />
-                    <text x="7ch" y="0.75lh" style="fill:white">main</text>       
+                <line x1="2" y1="3" x2="6" y2="0.5" style="stroke:darkorange;stroke-width:0.2"/>     
 
-                    <line x1="2ch" y1="3lh" x2="6ch" y2="0.5lh" style="stroke:darkorange;stroke-width:0.2ch"/>     
-
-                    <use href="#star" x="11ch" y="0"/>
+                <use href="#star" x="11" y="0"/>
             </svg>
+            </div>
 
     .. card:: 
         
@@ -469,30 +486,27 @@ Git verwaltet Versionen von Dokumenten mittels Commits in Branches.
 
         .. raw:: html
 
-            <svg width="48ch" height="8lh" version="1.1" xmlns="http://www.w3.org/2000/svg">
-                <style>
-                    polygon.star {
-                        transform: scale(calc(var(--unitless-current-base-font-size) / 20));
-                    }
-                </style>
+            <div style="width: 90ch; height:16ch">
+            <svg viewBox="0 0 48 8" font-size="0.75"  version="1.1" xmlns="http://www.w3.org/2000/svg">
                 <defs>
                     <g id="star">
-                        <polygon class="star" points="12,2 15,9 22,9 16,14 18,21 12,17 6,21 8,14 2,9 9,9" fill="gold" stroke="black" stroke-width="1"/>
+                        <polygon class="star" points="12,2 15,9 22,9 16,14 18,21 12,17 6,21 8,14 2,9 9,9" fill="gold" stroke="black" stroke-width="1" style="transform: scale(0.05)"/>
                     </g>
                 </defs>
 
-                <rect width="4ch" height="1lh" x="0ch" y="3lh" rx="1ch" ry="1ch" style="fill:darkblue" />
-                <text x="1.5ch" y="3.75lh" style="fill:white">A</text>
+                <rect width="4" height="1" x="0" y="3" rx="1" ry="1" style="fill:darkblue" />
+                <text x="1.5" y="3.75" style="fill:white">A</text>
 
-                <rect width="6ch" height="1lh" x="6ch" y="0lh" rx="1ch" ry="1ch" style="fill:darkorange" />
-                <text x="7ch" y="0.75lh" style="fill:white">main</text>       
-                <line x1="2ch" y1="3lh" x2="6ch" y2="0.5lh" style="stroke:darkorange;stroke-width:0.2ch"/>     
-                <use href="#star" x="11ch" y="0"/>
+                <rect width="6" height="1" x="6" y="0" rx="1" ry="1" style="fill:darkorange" />
+                <text x="7" y="0.75" style="fill:white">main</text>       
+                <line x1="2" y1="3" x2="6" y2="0.5" style="stroke:darkorange;stroke-width:0.2"/>     
+                <use href="#star" x="11" y="0"/>
 
-                <rect width="8ch" height="1lh" x="6ch" y="6lh" rx="1ch" ry="1ch" style="fill:darkorange" />
-                <text x="7ch" y="6.75lh" style="fill:white">develop</text>       
-                <line x1="2ch" y1="4lh" x2="6ch" y2="6.5lh" style="stroke:darkorange;stroke-width:0.2ch"/>     
+                <rect width="8" height="1" x="6" y="6" rx="1" ry="1" style="fill:darkorange" />
+                <text x="7" y="6.75" style="fill:white">develop</text>       
+                <line x1="2" y1="4" x2="6" y2="6.5" style="stroke:darkorange;stroke-width:0.2"/>     
             </svg>
+            </div>
 
     .. card:: 
         
@@ -500,30 +514,27 @@ Git verwaltet Versionen von Dokumenten mittels Commits in Branches.
 
         .. raw:: html
 
-            <svg width="48ch" height="8lh" version="1.1" xmlns="http://www.w3.org/2000/svg">
-                <style>
-                    polygon.star {
-                        transform: scale(calc(var(--unitless-current-base-font-size) / 20));
-                    }
-                </style>
+            <div style="width: 90ch; height:16ch">
+            <svg viewBox="0 0 48 8" font-size="0.75"  version="1.1" xmlns="http://www.w3.org/2000/svg">
                 <defs>
                     <g id="star">
-                        <polygon class="star" points="12,2 15,9 22,9 16,14 18,21 12,17 6,21 8,14 2,9 9,9" fill="gold" stroke="black" stroke-width="1"/>
+                        <polygon class="star" points="12,2 15,9 22,9 16,14 18,21 12,17 6,21 8,14 2,9 9,9" fill="gold" stroke="black" stroke-width="1" style="transform: scale(0.05)"/>
                     </g>
                 </defs>
 
-                <rect width="4ch" height="1lh" x="0ch" y="3lh" rx="1ch" ry="1ch" style="fill:darkblue" />
-                <text x="1.5ch" y="3.75lh" style="fill:white">A</text>
+                <rect width="4" height="1" x="0" y="3" rx="1" ry="1" style="fill:darkblue" />
+                <text x="1.5" y="3.75" style="fill:white">A</text>
 
-                <rect width="6ch" height="1lh" x="6ch" y="0lh" rx="1ch" ry="1ch" style="fill:darkorange" />
-                <text x="7ch" y="0.75lh" style="fill:white">main</text>       
-                <line x1="2ch" y1="3lh" x2="6ch" y2="0.5lh" style="stroke:darkorange;stroke-width:0.2ch"/>     
+                <rect width="6" height="1" x="6" y="0" rx="1" ry="1" style="fill:darkorange" />
+                <text x="7" y="0.75" style="fill:white">main</text>       
+                <line x1="2" y1="3" x2="6" y2="0.5" style="stroke:darkorange;stroke-width:0.2"/>     
 
-                <rect width="8ch" height="1lh" x="6ch" y="6lh" rx="1ch" ry="1ch" style="fill:darkorange" />
-                <text x="7ch" y="6.75lh" style="fill:white">develop</text>       
-                <line x1="2ch" y1="4lh" x2="6ch" y2="6.5lh" style="stroke:darkorange;stroke-width:0.2ch"/>     
-                <use href="#star" class="star" x="13ch" y="6lh" />
+                <rect width="8" height="1" x="6" y="6" rx="1" ry="1" style="fill:darkorange" />
+                <text x="7" y="6.75" style="fill:white">develop</text>       
+                <line x1="2" y1="4" x2="6" y2="6.5" style="stroke:darkorange;stroke-width:0.2"/>     
+                <use href="#star" class="star" x="13" y="6" />
             </svg>
+            </div>
 
 
     .. card:: 
@@ -532,34 +543,31 @@ Git verwaltet Versionen von Dokumenten mittels Commits in Branches.
 
         .. raw:: html
 
-            <svg width="48ch" height="8lh" version="1.1" xmlns="http://www.w3.org/2000/svg">
-                <style>
-                    polygon.star {
-                        transform: scale(calc(var(--unitless-current-base-font-size) / 20));
-                    }
-                </style>
+            <div style="width: 90ch; height:16ch">
+            <svg viewBox="0 0 48 8" font-size="0.75"  version="1.1" xmlns="http://www.w3.org/2000/svg">
                 <defs>
                     <g id="star">
-                        <polygon class="star" points="12,2 15,9 22,9 16,14 18,21 12,17 6,21 8,14 2,9 9,9" fill="gold" stroke="black" stroke-width="1"/>
+                        <polygon class="star" points="12,2 15,9 22,9 16,14 18,21 12,17 6,21 8,14 2,9 9,9" fill="gold" stroke="black" stroke-width="1" style="transform: scale(0.05)"/>
                     </g>
                 </defs>
 
-                <rect width="4ch" height="1lh" x="0ch" y="3lh" rx="1ch" ry="1ch" style="fill:darkblue" />
-                <text x="1.5ch" y="3.75lh" style="fill:white">A</text>
+                <rect width="4" height="1" x="0" y="3" rx="1" ry="1" style="fill:darkblue" />
+                <text x="1.5" y="3.75" style="fill:white">A</text>
 
-                <rect width="4ch" height="1lh" x="8ch" y="3lh" rx="1ch" ry="1ch" style="fill:darkblue" />
-                <text x="9.5ch" y="3.75lh" style="fill:white">B</text>
-                <line x1="4ch" y1="3.5lh" x2="8ch" y2="3.5lh" style="stroke:blue;stroke-width:0.2ch"/>     
+                <rect width="4" height="1" x="8" y="3" rx="1" ry="1" style="fill:darkblue" />
+                <text x="9.5" y="3.75" style="fill:white">B</text>
+                <line x1="4" y1="3.5" x2="8" y2="3.5" style="stroke:blue;stroke-width:0.2"/>     
 
-                <rect width="6ch" height="1lh" x="6ch" y="0lh" rx="1ch" ry="1ch" style="fill:darkorange" />
-                <text x="7ch" y="0.75lh" style="fill:white">main</text>       
-                <line x1="2ch" y1="3lh" x2="6ch" y2="0.5lh" style="stroke:darkorange;stroke-width:0.2ch"/>     
+                <rect width="6" height="1" x="6" y="0" rx="1" ry="1" style="fill:darkorange" />
+                <text x="7" y="0.75" style="fill:white">main</text>       
+                <line x1="2" y1="3" x2="6" y2="0.5" style="stroke:darkorange;stroke-width:0.2"/>     
 
-                <rect width="8ch" height="1lh" x="6ch" y="6lh" rx="1ch" ry="1ch" style="fill:darkorange" />
-                <text x="7ch" y="6.75lh" style="fill:white">develop</text>       
-                <line x1="2ch" y1="4lh" x2="6ch" y2="6.5lh" style="stroke:darkorange;stroke-width:0.2ch"/>     
-                <use href="#star" class="star" x="13ch" y="6lh" />
+                <rect width="8" height="1" x="6" y="6" rx="1" ry="1" style="fill:darkorange" />
+                <text x="7" y="6.75" style="fill:white">develop</text>       
+                <line x1="2" y1="4" x2="6" y2="6.5" style="stroke:darkorange;stroke-width:0.2"/>     
+                <use href="#star" class="star" x="13" y="6" />
             </svg>
+            </div>
 
     .. card:: 
         
@@ -567,13 +575,55 @@ Git verwaltet Versionen von Dokumenten mittels Commits in Branches.
 
         .. raw:: html
 
-            <svg width="48ch" height="8lh" version="1.1" xmlns="http://www.w3.org/2000/svg">
-                <style>
-                    polygon.star {
-                        transform: scale(calc(var(--unitless-current-base-font-size) / 20));
-                    } 
-                </style>
+            <div style="width: 90ch; height:16ch">
+            <svg viewBox="0 0 48 8" font-size="0.75"  version="1.1" xmlns="http://www.w3.org/2000/svg">
                 <defs>
+                    <g id="star">
+                        <polygon class="star" points="12,2 15,9 22,9 16,14 18,21 12,17 6,21 8,14 2,9 9,9" fill="gold" stroke="black" stroke-width="1" style="transform: scale(0.05)"/>
+                    </g>
+                    <marker 
+                        id="arrow"
+                        viewBox="0 0 10 10"
+                        refX="10"
+                        refY="5"
+                        markerUnits="strokeWidth"
+                        markerWidth="6"
+                        markerHeight="6"
+                        orient="auto-start-reverse">
+                        <path class="arrow-head" d="M 0 0 L 10 5 L 0 10 z" />
+                    </marker>
+                </defs>
+
+                <rect width="4" height="1" x="0" y="3" rx="1" ry="1" style="fill:darkblue" />
+                <text x="1.5" y="3.75" style="fill:white">A</text>
+
+                <rect width="4" height="1" x="8" y="3" rx="1" ry="1" style="fill:darkblue" />
+                <text x="9.5" y="3.75" style="fill:white">B</text>
+                <line x1="4" y1="3.5" x2="8" y2="3.5" style="stroke:blue;stroke-width:0.2" marker-end="url(#arrow)"/>     
+
+                <rect width="6" height="1" x="6" y="0" rx="1" ry="1" style="fill:darkorange" />
+                <text x="7" y="0.75" style="fill:white">main</text>       
+                <line x1="2" y1="3" x2="6" y2="0.5" style="stroke:darkorange;stroke-width:0.2"/>     
+
+                <rect width="8" height="1" x="14" y="6" rx="1" ry="1" style="fill:darkorange" />
+                <text x="15" y="6.75" style="fill:white">develop</text>       
+                <line x1="10" y1="4" x2="14" y2="6.5" style="stroke:darkorange;stroke-width:0.2"/>     
+                <use href="#star" class="star" x="21" y="6" />
+            </svg>
+            </div>
+
+    .. card:: 
+        
+        .. rubric:: :console:`git checkout -b cveXXX-hotfix` 
+
+        .. raw:: html
+
+            <div style="width: 90ch; height:16ch">
+            <svg viewBox="0 0 48 8" font-size="0.75"  version="1.1" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                    <g id="star">
+                        <polygon class="star" points="12,2 15,9 22,9 16,14 18,21 12,17 6,21 8,14 2,9 9,9" fill="gold" stroke="black" stroke-width="1" style="transform: scale(0.05)"/>
+                    </g>
                     <marker 
                     id="arrow"
                     viewBox="0 0 10 10"
@@ -585,33 +635,31 @@ Git verwaltet Versionen von Dokumenten mittels Commits in Branches.
                     orient="auto-start-reverse">
                     <path class="arrow-head" d="M 0 0 L 10 5 L 0 10 z" />
                     </marker>
-                    <g id="star">
-                        <polygon class="star" points="12,2 15,9 22,9 16,14 18,21 12,17 6,21 8,14 2,9 9,9" fill="gold" stroke="black" stroke-width="1"/>
-                    </g>
                 </defs>
 
-                <rect width="4ch" height="1lh" x="0ch" y="3lh" rx="1ch" ry="1ch" style="fill:darkblue" />
-                <text x="1.5ch" y="3.75lh" style="fill:white">A</text>
+                <rect width="4" height="1" x="0" y="3" rx="1" ry="1" style="fill:darkblue" />
+                <text x="1.5" y="3.75" style="fill:white">A</text>
 
-                <rect width="4ch" height="1lh" x="8ch" y="3lh" rx="1ch" ry="1ch" style="fill:darkblue" />
-                <text x="9.5ch" y="3.75lh" style="fill:white">B</text>
-                <line x1="4ch" y1="3.5lh" x2="8ch" y2="3.5lh" style="stroke:blue;stroke-width:0.2ch" marker-end="url(#arrow)"/>     
+                <rect width="4" height="1" x="8" y="3" rx="1" ry="1" style="fill:darkblue" />
+                <text x="9.5" y="3.75" style="fill:white">B</text>
+                <line x1="4" y1="3.5" x2="8" y2="3.5" style="stroke:blue;stroke-width:0.2" marker-end="url(#arrow)"/>     
 
-                <rect width="6ch" height="1lh" x="6ch" y="0lh" rx="1ch" ry="1ch" style="fill:darkorange" />
-                <text x="7ch" y="0.75lh" style="fill:white">main</text>       
-                <line x1="2ch" y1="3lh" x2="6ch" y2="0.5lh" style="stroke:darkorange;stroke-width:0.2ch"/>     
+                <rect width="6" height="1" x="6" y="0" rx="1" ry="1" style="fill:darkorange" />
+                <text x="7" y="0.75" style="fill:white">main</text>       
+                <line x1="2" y1="3" x2="6" y2="0.5" style="stroke:darkorange;stroke-width:0.2"/>     
 
-                <rect width="8ch" height="1lh" x="14ch" y="6lh" rx="1ch" ry="1ch" style="fill:darkorange" />
-                <text x="15ch" y="6.75lh" style="fill:white">develop</text>       
-                <line x1="10ch" y1="4lh" x2="14ch" y2="6.5lh" style="stroke:darkorange;stroke-width:0.2ch"/>     
-                <use href="#star" class="star" x="21ch" y="6lh" />
-            </svg>
+                <rect width="8" height="1" x="14" y="5" rx="1" ry="1" style="fill:darkorange" />
+                <text x="15" y="5.75" style="fill:white">develop</text>       
+                <line x1="10" y1="4" x2="14" y2="5.5" style="stroke:darkorange;stroke-width:0.2"/>     
 
-    .. card:: 
-        
-        .. rubric:: :console:`git checkout -b cveXXX-hotfix` 
+                <rect width="8" height="1" x="14" y="7" rx="1" ry="1" style="fill:darkorange" />
+                <text x="15" y="7.75" style="fill:white">cveXXX-hotfix</text>       
+                <line x1="10" y1="4" x2="14" y2="7.5" style="stroke:darkorange;stroke-width:0.2"/>     
+                <use href="#star" class="star" x="21" y="7" />
+            </svg>   
+            </div>
 
-        .. note::
+        .. remark::
 
             ``git checkout -b cveXXX-hotfix``
         
@@ -619,53 +667,7 @@ Git verwaltet Versionen von Dokumenten mittels Commits in Branches.
 
             ``git branch cveXXX-hotfix``
 
-            ``git checkout cveXXX-hotfix``
-
-        .. raw:: html
-
-            <svg width="32ch" height="8lh" version="1.1" xmlns="http://www.w3.org/2000/svg">
-                <style>
-                    polygon.star {
-                        transform: scale(calc(var(--unitless-current-base-font-size) / 20));
-                    }
-                </style>
-                <defs>
-                    <marker 
-                    id="arrow"
-                    viewBox="0 0 10 10"
-                    refX="10"
-                    refY="5"
-                    markerUnits="strokeWidth"
-                    markerWidth="6"
-                    markerHeight="6"
-                    orient="auto-start-reverse">
-                    <path class="arrow-head" d="M 0 0 L 10 5 L 0 10 z" />
-                    </marker>
-                    <g id="star">
-                        <polygon class="star" points="12,2 15,9 22,9 16,14 18,21 12,17 6,21 8,14 2,9 9,9" fill="gold" stroke="black" stroke-width="1"/>
-                    </g>
-                </defs>
-
-                <rect width="4ch" height="1lh" x="0ch" y="3lh" rx="1ch" ry="1ch" style="fill:darkblue" />
-                <text x="1.5ch" y="3.75lh" style="fill:white">A</text>
-
-                <rect width="4ch" height="1lh" x="8ch" y="3lh" rx="1ch" ry="1ch" style="fill:darkblue" />
-                <text x="9.5ch" y="3.75lh" style="fill:white">B</text>
-                <line x1="4ch" y1="3.5lh" x2="8ch" y2="3.5lh" style="stroke:blue;stroke-width:0.2ch" marker-end="url(#arrow)"/>     
-
-                <rect width="6ch" height="1lh" x="6ch" y="0lh" rx="1ch" ry="1ch" style="fill:darkorange" />
-                <text x="7ch" y="0.75lh" style="fill:white">main</text>       
-                <line x1="2ch" y1="3lh" x2="6ch" y2="0.5lh" style="stroke:darkorange;stroke-width:0.2ch"/>     
-
-                <rect width="8ch" height="1lh" x="14ch" y="5lh" rx="1ch" ry="1ch" style="fill:darkorange" />
-                <text x="15ch" y="5.75lh" style="fill:white">develop</text>       
-                <line x1="10ch" y1="4lh" x2="14ch" y2="5.5lh" style="stroke:darkorange;stroke-width:0.2ch"/>     
-
-                <rect width="12.5ch" height="1lh" x="14ch" y="7lh" rx="1ch" ry="1ch" style="fill:darkorange" />
-                <text x="15ch" y="7.75lh" style="fill:white">cveXXX-hotfix</text>       
-                <line x1="10ch" y1="4lh" x2="14ch" y2="7.5lh" style="stroke:darkorange;stroke-width:0.2ch"/>     
-                <use href="#star" class="star" x="25.5ch" y="7lh" />
-            </svg>    
+            ``git checkout cveXXX-hotfix``            
 
     .. card:: 
         
@@ -673,162 +675,153 @@ Git verwaltet Versionen von Dokumenten mittels Commits in Branches.
 
         .. raw:: html
 
-            <svg width="40ch" height="8lh" version="1.1" xmlns="http://www.w3.org/2000/svg">
-                <style>
-                    polygon.star {
-                        transform: scale(calc(var(--unitless-current-base-font-size) / 20));
-                    }
-                </style>
+            <div style="width: 90ch; height:16ch">
+            <svg viewBox="0 0 48 8" font-size="0.75"  version="1.1" xmlns="http://www.w3.org/2000/svg">
                 <defs>
-                    <marker 
-                    id="arrow"
-                    viewBox="0 0 10 10"
-                    refX="10"
-                    refY="5"
-                    markerUnits="strokeWidth"
-                    markerWidth="6"
-                    markerHeight="6"
-                    orient="auto-start-reverse">
-                    <path class="arrow-head" d="M 0 0 L 10 5 L 0 10 z" />
-                    </marker>
                     <g id="star">
-                        <polygon class="star" points="12,2 15,9 22,9 16,14 18,21 12,17 6,21 8,14 2,9 9,9" fill="gold" stroke="black" stroke-width="1"/>
+                        <polygon class="star" points="12,2 15,9 22,9 16,14 18,21 12,17 6,21 8,14 2,9 9,9" fill="gold" stroke="black" stroke-width="1" style="transform: scale(0.05)"/>
                     </g>
+                    <marker 
+                        id="arrow"
+                        viewBox="0 0 10 10"
+                        refX="10"
+                        refY="5"
+                        markerUnits="strokeWidth"
+                        markerWidth="6"
+                        markerHeight="6"
+                        orient="auto-start-reverse">
+                        <path class="arrow-head" d="M 0 0 L 10 5 L 0 10 z" />
+                    </marker>
                 </defs>
 
-                <rect width="4ch" height="1lh" x="0ch" y="3lh" rx="1ch" ry="1ch" style="fill:darkblue" />
-                <text x="1.5ch" y="3.75lh" style="fill:white">A</text>
+                <rect width="4" height="1" x="0" y="3" rx="1" ry="1" style="fill:darkblue" />
+                <text x="1.5" y="3.75" style="fill:white">A</text>
 
-                <rect width="4ch" height="1lh" x="8ch" y="3lh" rx="1ch" ry="1ch" style="fill:darkblue" />
-                <text x="9.5ch" y="3.75lh" style="fill:white">B</text>
-                <line x1="4ch" y1="3.5lh" x2="8ch" y2="3.5lh" style="stroke:blue;stroke-width:0.2ch" marker-end="url(#arrow)"/>     
+                <rect width="4" height="1" x="8" y="3" rx="1" ry="1" style="fill:darkblue" />
+                <text x="9.5" y="3.75" style="fill:white">B</text>
+                <line x1="4" y1="3.5" x2="8" y2="3.5" style="stroke:blue;stroke-width:0.2" marker-end="url(#arrow)"/>     
 
-                <rect width="4ch" height="1lh" x="16ch" y="3lh" rx="1ch" ry="1ch" style="fill:darkblue" />
-                <text x="17.5ch" y="3.75lh" style="fill:white">C</text>
-                <line x1="12ch" y1="3.5lh" x2="16ch" y2="3.5lh" style="stroke:blue;stroke-width:0.2ch" marker-end="url(#arrow)"/>     
+                <rect width="4" height="1" x="16" y="3" rx="1" ry="1" style="fill:darkblue" />
+                <text x="17.5" y="3.75" style="fill:white">C</text>
+                <line x1="12" y1="3.5" x2="16" y2="3.5" style="stroke:blue;stroke-width:0.2" marker-end="url(#arrow)"/>     
 
-                <rect width="6ch" height="1lh" x="6ch" y="0lh" rx="1ch" ry="1ch" style="fill:darkorange" />
-                <text x="7ch" y="0.75lh" style="fill:white">main</text>       
-                <line x1="2ch" y1="3lh" x2="6ch" y2="0.5lh" style="stroke:darkorange;stroke-width:0.2ch"/>     
+                <rect width="6" height="1" x="6" y="0" rx="1" ry="1" style="fill:darkorange" />
+                <text x="7" y="0.75" style="fill:white">main</text>       
+                <line x1="2" y1="3" x2="6" y2="0.5" style="stroke:darkorange;stroke-width:0.2"/>     
 
-                <rect width="8ch" height="1lh" x="14ch" y="5lh" rx="1ch" ry="1ch" style="fill:darkorange" />
-                <text x="15ch" y="5.75lh" style="fill:white">develop</text>       
-                <line x1="10ch" y1="4lh" x2="14ch" y2="5.5lh" style="stroke:darkorange;stroke-width:0.2ch"/>     
+                <rect width="8" height="1" x="14" y="5" rx="1" ry="1" style="fill:darkorange" />
+                <text x="15" y="5.75" style="fill:white">develop</text>       
+                <line x1="10" y1="4" x2="14" y2="5.5" style="stroke:darkorange;stroke-width:0.2"/>     
 
-                <rect width="12.5ch" height="1lh" x="22ch" y="0lh" rx="1ch" ry="1ch" style="fill:darkorange" />
-                <text x="23ch" y="0.75lh" style="fill:white">cveXXX-hotfix</text>       
-                <line x1="18ch" y1="3lh" x2="22ch" y2="0.5lh" style="stroke:darkorange;stroke-width:0.2ch"/>     
-                <use href="#star" class="star" x="33.5ch" y="0lh" />
+                <rect width="8" height="1" x="22" y="0" rx="1" ry="1" style="fill:darkorange" />
+                <text x="23" y="0.75" style="fill:white">cveXXX-hotfix</text>       
+                <line x1="18" y1="3" x2="22" y2="0.5" style="stroke:darkorange;stroke-width:0.2"/>     
+                <use href="#star" class="star" x="29" y="0" />
             </svg>
-        
+            </div>
+
     .. card:: 
         
         .. rubric:: :console:`git checkout develop`
 
         .. raw:: html
 
-            <svg width="40ch" height="8lh" version="1.1" xmlns="http://www.w3.org/2000/svg">
-                <style>
-                    polygon.star {
-                        transform: scale(calc(var(--unitless-current-base-font-size) / 20));
-                    }
-                </style>
+            <div style="width: 90ch; height:16ch">
+            <svg viewBox="0 0 48 8" font-size="0.75"  version="1.1" xmlns="http://www.w3.org/2000/svg">
                 <defs>
-                    <marker 
-                    id="arrow"
-                    viewBox="0 0 10 10"
-                    refX="10"
-                    refY="5"
-                    markerUnits="strokeWidth"
-                    markerWidth="6"
-                    markerHeight="6"
-                    orient="auto-start-reverse">
-                    <path class="arrow-head" d="M 0 0 L 10 5 L 0 10 z" />
-                    </marker>
                     <g id="star">
-                        <polygon class="star" points="12,2 15,9 22,9 16,14 18,21 12,17 6,21 8,14 2,9 9,9" fill="gold" stroke="black" stroke-width="1"/>
+                        <polygon class="star" points="12,2 15,9 22,9 16,14 18,21 12,17 6,21 8,14 2,9 9,9" fill="gold" stroke="black" stroke-width="1" style="transform: scale(0.05)"/>
                     </g>
+                    <marker 
+                        id="arrow"
+                        viewBox="0 0 10 10"
+                        refX="10"
+                        refY="5"
+                        markerUnits="strokeWidth"
+                        markerWidth="6"
+                        markerHeight="6"
+                        orient="auto-start-reverse">
+                        <path class="arrow-head" d="M 0 0 L 10 5 L 0 10 z" />
+                    </marker>
                 </defs>
 
-                <rect width="4ch" height="1lh" x="0ch" y="3lh" rx="1ch" ry="1ch" style="fill:darkblue" />
-                <text x="1.5ch" y="3.75lh" style="fill:white">A</text>
+                <rect width="4" height="1" x="0" y="3" rx="1" ry="1" style="fill:darkblue" />
+                <text x="1.5" y="3.75" style="fill:white">A</text>
 
-                <rect width="4ch" height="1lh" x="8ch" y="3lh" rx="1ch" ry="1ch" style="fill:darkblue" />
-                <text x="9.5ch" y="3.75lh" style="fill:white">B</text>
-                <line x1="4ch" y1="3.5lh" x2="8ch" y2="3.5lh" style="stroke:blue;stroke-width:0.2ch" marker-end="url(#arrow)"/>     
+                <rect width="4" height="1" x="8" y="3" rx="1" ry="1" style="fill:darkblue" />
+                <text x="9.5" y="3.75" style="fill:white">B</text>
+                <line x1="4" y1="3.5" x2="8" y2="3.5" style="stroke:blue;stroke-width:0.2" marker-end="url(#arrow)"/>     
 
-                <rect width="4ch" height="1lh" x="16ch" y="3lh" rx="1ch" ry="1ch" style="fill:darkblue" />
-                <text x="17.5ch" y="3.75lh" style="fill:white">C</text>
-                <line x1="12ch" y1="3.5lh" x2="16ch" y2="3.5lh" style="stroke:blue;stroke-width:0.2ch" marker-end="url(#arrow)"/>     
+                <rect width="4" height="1" x="16" y="3" rx="1" ry="1" style="fill:darkblue" />
+                <text x="17.5" y="3.75" style="fill:white">C</text>
+                <line x1="12" y1="3.5" x2="16" y2="3.5" style="stroke:blue;stroke-width:0.2" marker-end="url(#arrow)"/>     
 
-                <rect width="6ch" height="1lh" x="6ch" y="0lh" rx="1ch" ry="1ch" style="fill:darkorange" />
-                <text x="7ch" y="0.75lh" style="fill:white">main</text>       
-                <line x1="2ch" y1="3lh" x2="6ch" y2="0.5lh" style="stroke:darkorange;stroke-width:0.2ch"/>     
+                <rect width="6" height="1" x="6" y="0" rx="1" ry="1" style="fill:darkorange" />
+                <text x="7" y="0.75" style="fill:white">main</text>       
+                <line x1="2" y1="3" x2="6" y2="0.5" style="stroke:darkorange;stroke-width:0.2"/>     
 
-                <rect width="8ch" height="1lh" x="14ch" y="6lh" rx="1ch" ry="1ch" style="fill:darkorange" />
-                <text x="15ch" y="6.75lh" style="fill:white">develop</text>       
-                <line x1="10ch" y1="4lh" x2="14ch" y2="6.5lh" style="stroke:darkorange;stroke-width:0.2ch"/>     
-                <use href="#star" class="star" x="21ch" y="6lh" />
+                <rect width="8" height="1" x="14" y="6" rx="1" ry="1" style="fill:darkorange" />
+                <text x="15" y="6.75" style="fill:white">develop</text>       
+                <line x1="10" y1="4" x2="14" y2="6.5" style="stroke:darkorange;stroke-width:0.2"/>     
+                <use href="#star" class="star" x="21" y="6" />
 
-                <rect width="12.5ch" height="1lh" x="22ch" y="0lh" rx="1ch" ry="1ch" style="fill:darkorange" />
-                <text x="23ch" y="0.75lh" style="fill:white">cveXXX-hotfix</text>       
-                <line x1="18ch" y1="3lh" x2="22ch" y2="0.5lh" style="stroke:darkorange;stroke-width:0.2ch"/>     
+                <rect width="8" height="1" x="22" y="0" rx="1" ry="1" style="fill:darkorange" />
+                <text x="23" y="0.75" style="fill:white">cveXXX-hotfix</text>       
+                <line x1="18" y1="3" x2="22" y2="0.5" style="stroke:darkorange;stroke-width:0.2"/>     
             </svg>
+            </div>
 
 
     .. card:: 
         
-        .. rubric:: Fast-forward Merge :console:`git merge cveXXX-hotfix`
+        .. rubric:: Fast-forward Merge: :console:`git merge cveXXX-hotfix`
 
         .. raw:: html
 
-            <svg width="40ch" height="8lh" version="1.1" xmlns="http://www.w3.org/2000/svg">
-                <style>
-                    polygon.star {
-                        transform: scale(calc(var(--unitless-current-base-font-size) / 20));
-                    }  
-                </style>
+            <div style="width: 90ch; height:16ch">
+            <svg viewBox="0 0 48 8" font-size="0.75"  version="1.1" xmlns="http://www.w3.org/2000/svg">
                 <defs>
-                    <marker 
-                    id="arrow"
-                    viewBox="0 0 10 10"
-                    refX="10"
-                    refY="5"
-                    markerUnits="strokeWidth"
-                    markerWidth="6"
-                    markerHeight="6"
-                    orient="auto-start-reverse">
-                    <path class="arrow-head" d="M 0 0 L 10 5 L 0 10 z" />
-                    </marker>
                     <g id="star">
-                        <polygon class="star" points="12,2 15,9 22,9 16,14 18,21 12,17 6,21 8,14 2,9 9,9" fill="gold" stroke="black" stroke-width="1"/>
+                        <polygon class="star" points="12,2 15,9 22,9 16,14 18,21 12,17 6,21 8,14 2,9 9,9" fill="gold" stroke="black" stroke-width="1" style="transform: scale(0.05)"/>
                     </g>
+                    <marker 
+                        id="arrow"
+                        viewBox="0 0 10 10"
+                        refX="10"
+                        refY="5"
+                        markerUnits="strokeWidth"
+                        markerWidth="6"
+                        markerHeight="6"
+                        orient="auto-start-reverse">
+                        <path class="arrow-head" d="M 0 0 L 10 5 L 0 10 z" />
+                    </marker>
                 </defs>
 
-                <rect width="4ch" height="1lh" x="0ch" y="3lh" rx="1ch" ry="1ch" style="fill:darkblue" />
-                <text x="1.5ch" y="3.75lh" style="fill:white">A</text>
+                <rect width="4" height="1" x="0" y="3" rx="1" ry="1" style="fill:darkblue" />
+                <text x="1.5" y="3.75" style="fill:white">A</text>
 
-                <rect width="4ch" height="1lh" x="8ch" y="3lh" rx="1ch" ry="1ch" style="fill:darkblue" />
-                <text x="9.5ch" y="3.75lh" style="fill:white">B</text>
-                <line x1="4ch" y1="3.5lh" x2="8ch" y2="3.5lh" style="stroke:blue;stroke-width:0.2ch" marker-end="url(#arrow)"/>     
+                <rect width="4" height="1" x="8" y="3" rx="1" ry="1" style="fill:darkblue" />
+                <text x="9.5" y="3.75" style="fill:white">B</text>
+                <line x1="4" y1="3.5" x2="8" y2="3.5" style="stroke:blue;stroke-width:0.2" marker-end="url(#arrow)"/>     
 
-                <rect width="4ch" height="1lh" x="16ch" y="3lh" rx="1ch" ry="1ch" style="fill:darkblue" />
-                <text x="17.5ch" y="3.75lh" style="fill:white">C</text>
-                <line x1="12ch" y1="3.5lh" x2="16ch" y2="3.5lh" style="stroke:blue;stroke-width:0.2ch" marker-end="url(#arrow)"/>     
+                <rect width="4" height="1" x="16" y="3" rx="1" ry="1" style="fill:darkblue" />
+                <text x="17.5" y="3.75" style="fill:white">C</text>
+                <line x1="12" y1="3.5" x2="16" y2="3.5" style="stroke:blue;stroke-width:0.2" marker-end="url(#arrow)"/>     
 
-                <rect width="6ch" height="1lh" x="6ch" y="0lh" rx="1ch" ry="1ch" style="fill:darkorange" />
-                <text x="7ch" y="0.75lh" style="fill:white">main</text>       
-                <line x1="2ch" y1="3lh" x2="6ch" y2="0.5lh" style="stroke:darkorange;stroke-width:0.2ch"/>     
+                <rect width="6" height="1" x="6" y="0" rx="1" ry="1" style="fill:darkorange" />
+                <text x="7" y="0.75" style="fill:white">main</text>       
+                <line x1="2" y1="3" x2="6" y2="0.5" style="stroke:darkorange;stroke-width:0.2"/>     
 
-                <rect width="8ch" height="1lh" x="22ch" y="6lh" rx="1ch" ry="1ch" style="fill:darkorange" />
-                <text x="23ch" y="6.75lh" style="fill:white">develop</text>       
-                <line x1="18ch" y1="4lh" x2="22ch" y2="6.5lh" style="stroke:darkorange;stroke-width:0.2ch"/>     
-                <use href="#star" class="star" x="29ch" y="6lh" />
+                <rect width="8" height="1" x="22" y="6" rx="1" ry="1" style="fill:darkorange" />
+                <text x="23" y="6.75" style="fill:white">develop</text>       
+                <line x1="18" y1="4" x2="22" y2="6.5" style="stroke:darkorange;stroke-width:0.2"/>     
+                <use href="#star" class="star" x="29" y="6" />
 
-                <rect width="12.5ch" height="1lh" x="22ch" y="0lh" rx="1ch" ry="1ch" style="fill:darkorange" />
-                <text x="23ch" y="0.75lh" style="fill:white">cveXXX-hotfix</text>       
-                <line x1="18ch" y1="3lh" x2="22ch" y2="0.5lh" style="stroke:darkorange;stroke-width:0.2ch"/>     
+                <rect width="8" height="1" x="22" y="0" rx="1" ry="1" style="fill:darkorange" />
+                <text x="23" y="0.75" style="fill:white">cveXXX-hotfix</text>       
+                <line x1="18" y1="3" x2="22" y2="0.5" style="stroke:darkorange;stroke-width:0.2"/>     
             </svg>
+            </div>
 
     .. card::
 
@@ -865,7 +858,8 @@ Dezentralisierte VCS - Verteiltes Arbeiten
 .. raw:: html
     :class: align-center
 
-    <svg width="48ch" height="9lh" version="1.1" xmlns="http://www.w3.org/2000/svg">
+    <div style="width: 70ch; height: 12ch; container-type:size;">
+    <svg viewBox="0 0 48 9" font-size="1" version="1.1" xmlns="http://www.w3.org/2000/svg">
         <style>
         </style>
         <defs>
@@ -876,51 +870,52 @@ Dezentralisierte VCS - Verteiltes Arbeiten
             refY="5"
             marker
             markerUnits="strokeWidth"
-            markerWidth="8"
-            markerHeight="8"
+            markerWidth="4"
+            markerHeight="4"
             orient="auto-start-reverse">
             <path d="M 0 0 L 10 5 L 0 10 z" />
             </marker>
         </defs>
 
         <g class="incremental" style="fill:white">
-            <rect width="12ch" height="3lh" x="0ch" y="0" rx="1ch" ry="1ch" style="fill:rgb(55,155,55)" />
-            <text x="1ch" y="1.5lh">Main</text>
-            <text x="1ch" y="2.5lh">Repository</text>
+            <rect width="12" height="3" x="0" y="0" rx="1" ry="1" style="fill:rgb(55,155,55)" />
+            <text x="1" y="1.5">Main</text>
+            <text x="1" y="2.5">Repository</text>
         </g>
         <g class="incremental" >
-            <rect width="12ch" height="3lh" x="18ch" y="6lh" rx="1ch" ry="1ch" style="fill:rgb(194, 191, 246)" />
-            <text x="19ch" y="7.5lh">Developer A</text>
-            <text x="19ch" y="8.5lh">Private</text>
-            <line x1="9ch" y1="3lh" x2="21ch" y2="6lh" style="stroke:rgb(0,0,0);stroke-width:0.2ch" marker-end="url(#arrow)"/>
+            <rect width="12" height="3" x="18" y="6" rx="1" ry="1" style="fill:rgb(194, 191, 246)" />
+            <text x="19" y="7.5">Developer A</text>
+            <text x="19" y="8.5">Private</text>
+            <line x1="9" y1="3" x2="21" y2="6" style="stroke:rgb(0,0,0);stroke-width:0.2" marker-end="url(#arrow)"/>
         </g>
         <g class="incremental" >
-            <rect width="12ch" height="3lh" x="36ch" y="6lh" rx="1ch" ry="1ch" style="fill:rgb(194, 191, 246)" />
-            <text x="37ch" y="7.5lh">Developer B</text>
-            <text x="37ch" y="8.5lh">Private</text>
-            <line x1="9ch" y1="3lh" x2="39ch" y2="6lh" style="stroke:rgb(0,0,0);stroke-width:0.2ch" marker-end="url(#arrow)"/>
+            <rect width="12" height="3" x="36" y="6" rx="1" ry="1" style="fill:rgb(194, 191, 246)" />
+            <text x="37" y="7.5">Developer B</text>
+            <text x="37" y="8.5">Private</text>
+            <line x1="9" y1="3" x2="39" y2="6" style="stroke:rgb(0,0,0);stroke-width:0.2" marker-end="url(#arrow)"/>
         </g>
         <g class="incremental" style="fill:white">
-            <rect width="12ch" height="3lh" x="18ch" y="0" rx="1ch" ry="1ch" style="fill:rgb(112, 105, 238)" />
-            <text x="19ch" y="1.5lh">Developer A</text>
-            <text x="19ch" y="2.5lh">Public</text>
-            <line x1="24ch" y1="6lh" x2="24ch" y2="3lh" style="stroke:rgb(0,0,0);stroke-width:0.2ch" marker-end="url(#arrow)"/>
+            <rect width="12" height="3" x="18" y="0" rx="1" ry="1" style="fill:rgb(112, 105, 238)" />
+            <text x="19" y="1.5">Developer A</text>
+            <text x="19" y="2.5">Public</text>
+            <line x1="24" y1="6" x2="24" y2="3" style="stroke:rgb(0,0,0);stroke-width:0.2" marker-end="url(#arrow)"/>
         </g>
         <g class="incremental" style="fill:white">
-            <rect width="12ch" height="3lh" x="36ch" y="0" rx="1ch" ry="1ch" style="fill:rgb(112, 105, 238)" />
-            <text x="37ch" y="1.5lh">Developer B</text>
-            <text x="37ch" y="2.5lh">Public</text>
-            <line x1="42ch" y1="6lh" x2="42ch" y2="3lh" style="stroke:rgb(0,0,0);stroke-width:0.2ch" marker-end="url(#arrow)"/>
+            <rect width="12" height="3" x="36" y="0" rx="1" ry="1" style="fill:rgb(112, 105, 238)" />
+            <text x="37" y="1.5">Developer B</text>
+            <text x="37" y="2.5">Public</text>
+            <line x1="42" y1="6" x2="42" y2="3" style="stroke:rgb(0,0,0);stroke-width:0.2" marker-end="url(#arrow)"/>
         </g>
         <g class="incremental" style="fill:white">
-            <rect width="12ch" height="3lh" x="0ch" y="6lh" rx="1ch" ry="1ch" style="fill:rgb(247, 173, 0)" />
-            <text x="1ch" y="7.5lh">Integration</text>
-            <text x="1ch" y="8.5lh">Repository</text>
-            <line x1="6ch" y1="6lh" x2="6ch" y2="3lh" style="stroke:rgb(0,0,0);stroke-width:0.2ch" marker-end="url(#arrow)"/>
-            <line x1="21ch" y1="3lh" x2="9ch" y2="6lh" style="stroke:rgb(0,0,0);stroke-width:0.2ch" marker-end="url(#arrow)"/>
-            <line x1="39ch" y1="3lh" x2="9ch" y2="6lh" style="stroke:rgb(0,0,0);stroke-width:0.2ch" marker-end="url(#arrow)"/>
+            <rect width="12" height="3" x="0" y="6" rx="1" ry="1" style="fill:rgb(247, 173, 0)" />
+            <text x="1" y="7.5">Integration</text>
+            <text x="1" y="8.5">Repository</text>
+            <line x1="6" y1="6" x2="6" y2="3" style="stroke:rgb(0,0,0);stroke-width:0.2" marker-end="url(#arrow)"/>
+            <line x1="21" y1="3" x2="9" y2="6" style="stroke:rgb(0,0,0);stroke-width:0.2" marker-end="url(#arrow)"/>
+            <line x1="39" y1="3" x2="9" y2="6" style="stroke:rgb(0,0,0);stroke-width:0.2" marker-end="url(#arrow)"/>
         </g>
     </svg>
+    </div>
 
 .. deck:: margin-top-1em
 
@@ -940,7 +935,7 @@ Dezentralisierte VCS - Verteiltes Arbeiten
 
         .. attention::
 
-            Die Commit-Historie des blessed repository niemals verändern!
+            Die Commit-Historie des *blessed repository* niemals verändern!
 
 
 
@@ -1027,29 +1022,6 @@ Die Datei .gitignore listet alle Arten von Dateien und Verzeichnissen auf, die v
         6. Nutzen Sie :console:`git status`, um sich zu vergewissern, dass die Binärdateien ignoriert werden.
         7. fügen Sie die ``.gitignore`` Datei Ihrem Repository hinzu.
 
-        8. Erstellen Sie einen neuen Branch mit dem Namen ``feature/bugfix`` und wechseln Sie auf den neuen Branch. 
-        
-           (Nutzen Sie git status, um zu verifizieren, dass Sie auf dem neuen Branch sind)
-        9. Ändern Sie die Datei ``RPN.java``, um den Bug im Switch statement (:java:`case "* "` => :java:`case "*"`) zu beheben.
-        10. Committen Sie die Änderungen.
-        11. Wechseln Sie zurück auf den ``main`` Branch.
-        12. Mergen Sie den Branch ``feature/bugfix`` in den ``main`` Branch mit Hilfe von :console:`git merge`.
-        13. Löschen Sie den Branch ``feature/bugfix`` mit Hilfe von :console:`git branch -d`.
-        14. Erstellen Sie einen neuen Branch develop und wechseln Sie auf diesen Branch.
-        15. Ändern Sie die Reihenfolge der Methoden :java:`pop` und :java:`peek` in der Klasse :java:`Stack`.
-        16. Committen Sie die Änderungen.
-        17. Wechseln Sie zurück auf den ``main`` Branch.
-            
-            *(Führen Sie noch keinen Merge durch!)*
-        18. Entfernen Sie die ``{}`` Klammern um die :java:`throw new NoSuchElementException()` Anweisungen.
-        19. Committen Sie die Änderungen.  
-        20. Führen Sie einen Merge von ``develop`` in ``main`` durch.
-        21. Öffnen Sie die Datei ``ds/Stack.java`` und beheben Sie den Merge-Konflikt.
-        22. Committen Sie die Änderungen.
-        23. Nutzen Sie :console:`git log --oneline --graph --all` um sich die Commit-Historie anzusehen.
-        24. Wechseln Sie zurück zum ``develop`` Branch.
-        25. Führen Sie einen Merge von ``main`` in ``develop`` durch.
-
         .. solution::
             :pwd: GITgitGit
 
@@ -1064,22 +1036,98 @@ Die Datei .gitignore listet alle Arten von Dateien und Verzeichnissen auf, die v
                 6. git status
                 7. git add .gitignore
                    git commit -m "Add .gitignore"
-                8. git checkout -b feature/bugfix
-                10. git add rpn/RPN.java
-                    git commit -m "Fix bug in RPN.java"
-                11. git checkout main
-                12. git merge feature/bugfix#
-                13. git branch -d feature/bugfix
-                14. git checkout -b develop
-                16. git add ds/Stack.java
-                    git commit -m "Change order of pop and peek"
-                17. git checkout main
-                19. git add ds/Stack.java
-                    git commit -m "Remove {}"
-                20. git merge develop
-                22. git add ds/Stack.java
-                    git commit -m "Resolve merge conflict in Stack.java"
-                23. git log --oneline --graph --all
-                24. git checkout develop
-                25. git merge main
+
+
+.. class:: exercises
+
+Übung
+------
+
+.. story::
+
+    .. exercise:: Branching mit GIT
+
+        1. Erstellen Sie einen neuen Branch mit dem Namen ``feature/bugfix`` und wechseln Sie auf den neuen Branch. 
+        
+           (Nutzen Sie ``git status``, um zu verifizieren, dass Sie auf dem neuen Branch sind)
+        2. Ändern Sie die Datei ``RPN.java``, um den Bug im Switch statement (:java:`case "* "` => :java:`case "*"`) zu beheben.
+        3. Committen Sie die Änderungen.
+        4. Wechseln Sie zurück auf den ``main`` Branch.
+        5. Mergen Sie den Branch ``feature/bugfix`` in den ``main`` Branch mit Hilfe von :console:`git merge`.
+        6. Löschen Sie den Branch ``feature/bugfix`` mit Hilfe von :console:`git branch -d`.
+
+        .. solution::
+            :pwd: GITgitGit
+
+            ::
+
+                1. git checkout -b feature/bugfix
+                2. git add rpn/RPN.java
+                3. git commit -m "Fix bug in RPN.java"
+                4. git checkout main
+                5. git merge feature/bugfix
+                6. git branch -d feature/bugfix
+
+
+
+.. class:: exercises
+
+Übung
+------
+
+.. story::
+
+    .. exercise:: Merging mit GIT
+
+        1. Erstellen Sie einen neuen Branch develop und wechseln Sie auf diesen Branch.
+        2. Ändern Sie die Reihenfolge der Methoden :java:`pop` und :java:`peek` in der Klasse :java:`Stack`.
+        3. Committen Sie die Änderungen.
+
+        4. Wechseln Sie zurück auf den ``main`` Branch.
+            
+           *(Führen Sie noch keinen Merge durch!)*
+        5. Entfernen Sie die ``{}`` Klammern um die :java:`throw new NoSuchElementException()` Anweisungen.
+        6. Committen Sie die Änderungen.  
+        7. Führen Sie einen Merge von ``develop`` in ``main`` durch.
+        8. Öffnen Sie die Datei ``ds/Stack.java`` und beheben Sie den Merge-Konflikt.
+        9. Committen Sie die Änderungen.
+
+        .. solution::
+            :pwd: GITgitGit
+
+            ::
+
+                1. git checkout -b develop
+                3. git add ds/Stack.java
+                   git commit -m "Change order of pop and peek"
+                4. git checkout main
+                6. git add ds/Stack.java
+                   git commit -m "Remove {}"
+                7. git merge develop
+                9. git add ds/Stack.java
+                   git commit -m "Resolve merge conflict in Stack.java"
+
+
+
+.. class:: exercises
+
+Übung
+------
+
+.. story::
+
+    .. exercise:: Release vorbereiten
+
+        1. Nutzen Sie :console:`git log --oneline --graph --all` um sich die Commit-Historie anzusehen.
+        2. Wechseln Sie zurück zum ``develop`` Branch.
+        3. Führen Sie einen Merge von ``main`` in ``develop`` durch.
+
+        .. solution::
+            :pwd: GITgitGit
+
+            ::
+
+                1. git log --oneline --graph --all
+                2. git checkout develop
+                3. git merge main
 
