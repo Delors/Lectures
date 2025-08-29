@@ -10,16 +10,16 @@
 .. include:: ../docutils.defs
 
 
-Software Engineering - Projekte bauen, Testen und Bewerten
+Software Engineering - Projekte bauen, Testen und Bewerten\ [#]_
 ===================================================================
 
 Eine allererste Einführung
 
 :Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
 :Kontakt: michael.eichberg@dhbw.de
-:Version: 1.0
+:Version: 1.0.1
 
-.. container:: footer-left tiny
+.. [#] 
 
     Die Folien basieren in Teilen auf Folien von Dr. Helm und Prof. Dr. Hermann.
 
@@ -33,6 +33,7 @@ Eine allererste Einführung
       [PDF] |pdf-source|
   :Fehler melden:
       https://github.com/Delors/delors.github.io/issues
+
 
 
 .. class:: new-section transition-scale
@@ -397,18 +398,17 @@ Zweigüberdeckung (:eng:`Branch Coverage`)
 
         .. raw:: html
 
-            <svg width="30ch" height="9.25lh" version="1.1" xmlns="http://www.w3.org/2000/svg">
+            <div style="width: 30ch; height: 7lh; container-type:size;">
+            <svg viewBox="0 0 30 13" font-size="1.75" version="1.1" xmlns="http://www.w3.org/2000/svg">
                 <style>
-                    /* TODO: How to scale Arrowheads? */
                     rect {
                         fill: white;
                         stroke: blue;
-                        stroke-width: 0.2ch;
+                        stroke-width: 0.2;
                     }
                     text {
                         fill: black;
                         font-family: var(--theme-code-font-family);
-                        font-size: 0.75lh;
                     }
                 </style>
                 <defs>
@@ -417,21 +417,21 @@ Zweigüberdeckung (:eng:`Branch Coverage`)
                     viewBox="0 0 10 10"
                     refX="10"
                     refY="5"
-                    markerWidth="0.4ex"
-                    markerHeight="0.4ex"
+                    markerWidth="4"
+                    markerHeight="4"
                     orient="auto-start-reverse">
                     <path class="arrow-head" d="M 0 0 L 10 5 L 0 10 z" />
                     </marker>
                 </defs>
 
-                <rect width="22ch" height="2lh" x="1ch" y="1lh" rx="1ch" ry="1ch" />
-                <text class="code" x="2.5ch" y="1.85lh">
+                <rect width="21" height="4.25" x="1" y="0.15" rx="1" ry="1" />
+                <text class="code" x="2.5" y="1.75">
                     <tspan class="keyword type">double</tspan>
                     <tspan class="name">result</tspan>
                     <tspan class="operator">=</tspan>
                     <tspan class="literal number">1.3</tspan>
                 </text>
-                <text class="code" x="2.5ch" y="2.85lh">
+                <text class="code" x="2.5" y="3.75">
                     <tspan class="keyword">if</tspan>
                     <tspan class="whitespace"> </tspan>
                     <tspan class="punctuation">(</tspan>
@@ -440,9 +440,9 @@ Zweigüberdeckung (:eng:`Branch Coverage`)
                 </text>
 
                 <g class="incremental">
-                <line x1="14ch" y1="3lh" x2="14ch" y2="5lh" style="stroke:blue;stroke-width:0.2ch" marker-end="url(#arrow)"/>
-                <rect width="16.5ch" height="1lh" x="6ch" y="5lh" rx="1ch" ry="1ch" />
-                <text class="code" x="7.5ch" y="5.95lh">
+                <line x1="14" y1="4.4" x2="14" y2="6.15" style="stroke:blue;stroke-width:0.2" marker-end="url(#arrow)"/>
+                <rect width="16.5" height="2" x="6" y="6.15" rx="1" ry="1" />
+                <text class="code" x="7.5" y="7.75">
                     <tspan class="name">result</tspan>
                     <tspan class="whitespace"> </tspan>
                     <tspan class="operator">*=</tspan>
@@ -453,23 +453,23 @@ Zweigüberdeckung (:eng:`Branch Coverage`)
                 </g>
 
                 <g class="incremental">
-                <line x1="4ch" y1="3lh" x2="4ch" y2="8lh" style="stroke:blue;stroke-width:0.2ch" marker-end="url(#arrow)"/>
-                <line x1="14ch" y1="6lh" x2="14ch" y2="8lh" style="stroke:blue;stroke-width:0.2ch" marker-end="url(#arrow)"/>
-                <rect width="16ch" height="1lh" x="1ch" y="8lh" rx="1ch" ry="1ch" />
-                <text class="code" x="2.5ch" y="8.95lh">
+                <line x1="4" y1="4.4" x2="4" y2="10.15" style="stroke:blue;stroke-width:0.2" marker-end="url(#arrow)"/>
+                <line x1="14" y1="8.15" x2="14" y2="10.15" style="stroke:blue;stroke-width:0.2" marker-end="url(#arrow)"/>
+                <rect width="15" height="2" x="1" y="10.15" rx="1" ry="1" />
+                <text class="code" x="2.5" y="11.75">
                     <tspan class="keyword">return</tspan>
                     <tspan class="whitespace"> </tspan>
                     <tspan class="name">result</tspan>
                 </text>
                 </g>
             </svg>
+            </div>
 
-.. deck::
+.. deck:: incremental
 
     .. card::
 
         .. question::
-            :class: incremental
 
             Wie hoch ist die Anweisungsüberdeckung? Sind beide Testfälle notwendig?
 
@@ -484,6 +484,7 @@ Zweigüberdeckung (:eng:`Branch Coverage`)
             .. math::
 
                 \text{Zweigüberdeckung} = \frac{\text{\# ausgeführte Zweige}}{\text{\# aller Zweige}} \cdot 100\%
+
 
 
 Pfadüberdeckung (:eng:`Path Coverage`)
@@ -559,6 +560,7 @@ Pfadüberdeckung (:eng:`Path Coverage`)
             In der Praxis wird daher oft die Zweigüberdeckung als Kompromiss genutzt.
 
 
+
 Weitere Überdeckungskriterien
 ------------------------------
 
@@ -571,6 +573,7 @@ Weitere Überdeckungskriterien
 
   (Erfodert ggf. das ein endlicher Automat modelliert wird.)
 - Datenflussüberdeckung (:eng:`Data Flow Coverage`)
+
 
 
 Überdeckungsziele
@@ -597,11 +600,12 @@ Weitere Überdeckungskriterien
     .. card:: s-overlay center-content height-100
 
         .. summary::
-            :class: incremental backdrop-blur
+            :class: backdrop-blur
 
             Das Erreichen eines Überdeckungsziels erfordert Aufwand, der durch die Kritikalität möglicher Fehler motiviert sein muss.
 
             In vielen Anwendersystemen ist eine hundertprozentige Testabdeckung nicht notwendig. Testabdeckung ist dennoch zu messen.
+
 
 
 .. class:: transition-flip no-title center-content
@@ -788,7 +792,7 @@ Qualitätsmetriken
           z. B. Zeilen pro Methode < 50
         - Zur Bewertung von Software
 
-    .. card:: dd-margin-left-6em
+    .. card:: 
 
         .. rubric:: Einfache Metriken
 
@@ -800,7 +804,7 @@ Qualitätsmetriken
         :Non-Comment Lines of Code (NCLOC) / Effective Lines of Code (ELOC): Codezeilen ohne Kommentarzeile oder Zeilen, die nur Klammern enthalten, reine Import Statements oder Methodendeklarationen
         :Logical Lines of Code (LLOC): Zählt nur Anweisungen
 
-    .. card:: dd-margin-left-6em
+    .. card::
 
         .. rubric:: Fortgeschrittene Metriken
 
@@ -823,7 +827,7 @@ Es gibt keine fixen Werten
 
     Metriken sind immer kontextabhängig zu bewerten.
 
-    Metriken eignen sich insbesondere um Veränderungen zu bewerten und um die Entwicklung von Software zu überwachen.
+    Metriken eignen sich insbesondere, um Veränderungen zu bewerten und um die Entwicklung von Software zu überwachen.
 
 
 
@@ -861,7 +865,9 @@ Ansätze der analytischen Softwarequalitätssicherung
     Semiformale Methoden, , , ✓, ↓
     formale Methoden, , , :green:`✓`, ↑
     Strukturanalysen, ✓, ✓, , ↓
-    Stilüberprüfungen, , :green:`✓` , , ↓
+    "Stilüberprüfungen
+    
+    (:eng:`Linting`)", , :green:`✓` , , ↓
 
 .. supplemental::
 
