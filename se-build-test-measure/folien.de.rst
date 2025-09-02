@@ -17,7 +17,7 @@ Eine allererste Einführung
 
 :Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
 :Kontakt: michael.eichberg@dhbw.de
-:Version: 1.0.1
+:Version: 1.1
 
 .. [#] 
 
@@ -872,3 +872,131 @@ Ansätze der analytischen Softwarequalitätssicherung
 .. supplemental::
 
     Leichtgewichtige statische Analysen können zum Beispiel Code-Clone erkennen (Maintenance), oder Verletzungen von empfohlenen Vorgehensweisen identifizieren und auf gängige Fehlermuster (:eng:`Bug Patterns`) hinweisen.
+
+
+
+.. class:: exercises
+
+Übung
+---------
+
+.. story::
+
+    .. attention::
+        :class: incremental
+
+        Um einen Lernerfolg zu erhalten, sollten Sie die Schritte unten selber durchführen und nicht die Aufgabenstellung als solches direkt an den KI Assistenten Ihrer Wahl übergeben!
+
+    .. remark:: 
+        :class: incremental
+
+        Für die folgenden Aufgabe sind keine Kenntnisse von HTML, JavaScript oder CSS notwendig. Wenn es Probleme gibt, dann beschreiben Sie das Problem der KI und lassen sich helfen!
+
+    .. exercise::
+
+        Entwickeln Sie mittels Vibe-Coding eine einfache, aber vollständige Webanwendung, die nur Standard JavaScript, CSS und HTML verwendet. Es sollen keine Frameworks oder externe Bibliotheken für die Ausführung der Anwendung notwendig sein.
+
+        .. supplemental::
+
+            Ein Beispiel für eine solche Anwendung wäre TicTacToe oder Stein-Schere-Papier, welches Sie gegen den Computer spielen. Sie können selbstverständlich auch ein anderes kleines Spiel wählen, dass keine komplexe Logik benötigt.
+
+
+        .. class:: incremental-list
+
+        1. Erstellen Sie mit Hilfe eines *eigenem* Prompts die Anwendung. Dieser Prompt sollte die Anwendung beschreiben und die zu verwendenden Technologien. Fordern Sie ggf. explizit, dass der Code und das Styling in getrennten Dateien erfolgen soll, falls nur eine Datei (``index.html``?) zu finden ist. 
+ 
+        2. Lassen Sie sich ein **NPM Build-Skript** generieren, dass die nachfolgenden Schritte durchführt. D.h. es soll eine ``package.json`` Datei erzeugt werden, die *alle* notwendigen Abhängigkeiten und Skripte definiert. Es muss insbesondere möglich sein: ``npm run build`` und ``npm run clean`` auszuführen.   
+        
+           1. Formatierung aller Dateien (.js, .html, .css)
+           2. Linting aller Dateien (.js, .html, .css) 
+
+           Validieren Sie, dass Ihr Build-Skript auch die neuesten Versionen der eingebundenen Tools verwendet. *Dies erfordert in der Regel eine Google-Suche nach den aktuellen Versionen.*
+
+           .. supplemental:: 
+
+              Wenn Sie NodeJs installieren, dann steht Ihnen auch NPM zur Verfügung.
+
+              .. hint::
+
+                KI Codegeneratoren referenzieren üblicherweise veraltete Tools und Bibliotheken. Ggf. müssen Sie danach auch die Konfigurationsskripte anpassen lassen.
+
+        3. Führen Sie Ihr Build-Skript aus und beheben Sie alle gefundenen Probleme.
+        4. Finden Sie heraus, wie Sie Ihre Anwendung für den Einsatz optimieren könn(t)en und erweitern Sie das Build-Skript entsprechend.
+        5. Lassen Sie sich Testfälle generieren und führen Sie diese als Teil des Builds aus.
+        6. Hinterfragen Sie den generierten, lauffähigen Code. Lassen Sie sich ggf. von der KI beim Verständnis helfen und stellen Sie kritische Fragen.
+
+        .. solution::
+            :pwd: TicTacToe!
+            
+            .. rubric:: Exemplarisches Vorgehen
+
+            Im Folgenden wird kurz beschrieben wie vorgegangen werden könnte, um ein vollständiges TicTacToe-Projekt zu erstellen. *In diesem Fall wurde Copilot und GPT-4.1 verwendet, um den Code zu generieren. (August 2025)*
+
+            .. rubric:: Prompts für die Webanwendung
+
+            .. rubric:: 1. Prompt
+
+            ::
+                
+                Please create a small webpage to play TicTacToe against a computer. You should only use plain HTML, CSS and JavaScript. 
+
+            .. rubric:: 2. Prompt
+
+            :: 
+                
+                I need an npm build script which performs code formatting and linting for all files. The file should define all dependencies and scripts.
+
+            .. rubric:: 3. Prompt
+
+            ::
+
+                Please, create some example configuration files for ESLint and Prettier and HtmlHint with sensible defaults.
+
+            .. rubric:: 4. Prompt
+
+            Das Ausführen des Skripts mittels ``npm run build`` deckte einige Probleme auf, die zu beheben waren.
+
+            ::
+
+                When I run the build script, it detects invalid HTML in the index.html: "Opening div not terminated". Please, fix it.
+
+            .. rubric:: 5. Prompt
+
+            :: 
+
+                ESLint is complaining that I should use an ``eslint.config`` file instead of an ``.eslintrc`` file. Please, update the file.
+
+            .. rubric:: 6. Prompt
+            
+            An dieser Stelle zeigte sich, dass der Code Inkonsistenzen aufwies.
+
+            ::
+
+                OK - I want to use ECMAScript Modules and not CommonJS. Please, make the necessary changes?
+
+            .. rubric:: 7. Prompt
+
+            Danach gab es noch Probleme mit dem CSS Linting.
+
+            ::
+
+                ``stylelint`` complains that it misses the ``stylelint-config-standard`` file. Please, fix this bug and don't forget to update my build script.
+
+            .. rubric:: 8. Prompt
+
+            Eine detailliertere Analyse des Code ergab, dass ein paar Styles nicht verwendet wurden. Diesbezüglich erstellte Prompts haben diese Probleme gelöst.
+
+            Ein Prompt bzgl. der Optimierung des Codes ergab, dass der JavaScript und CSS Code kompaktiert werden kann und dies mittels des Tools **vite** möglich ist.
+
+            ::
+
+                Please, update my build script to use ``vite`` to bundle and minify my JavaScript and CSS code.
+
+            .. rubric:: 9. Prompt
+
+            Ein Prompt bzgl. Tools für **End-to-End-Tests** ergab, dass Playwright eine geeignete Wahl ist (Cypress wäre eine Alternative, ist aber ggf. kommerziell).
+
+            ::
+
+                I need some end-to-end tests for my application. Please, create them using Playwright. Also update the build script to run all tests when the application is build.
+
