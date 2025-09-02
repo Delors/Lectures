@@ -7,7 +7,7 @@
     :first-slide: last-viewed
 
 .. include:: ../docutils.defs
-  
+
 
 
 W3WI_AM302 - Fortgeschrittene Systementwicklung
@@ -19,32 +19,43 @@ W3WI_AM302 - Fortgeschrittene Systementwicklung
 
 
 
-.. class:: fade-out
+.. class:: transition-fade
 
 Inhalte 1. Semester
 ---------------------------------
   
 - Entwicklung von verteilten Anwendungen - Grundlagen
 
- - Linux/Server Handhabung
- - Buildprozesse
- - Versionsverwaltung
- - Crashkurs CSS (Responsive Design)
- - Crashkrus JavaScript (Wiederholung)
- - Authentifizierung in Webanwendungen (JSON Web Token, Cookies, Sessions)
- - Virtualisierung und Containerisierung (optional)  
+  - Linux/Server Handhabung
+  - Buildprozesse
+  - Versionsverwaltung (?)
+  - Container (?)  
+  - Crashkrus JavaScript (?)
+  - Authentifizierung in Webanwendungen (JSON Web Token, Cookies, Sessions) (?)
+  
+.. supplemental::
+
+  Bereits bekannt sein sollte:
+
+  .. class:: list-with-explanations 
+
+  - Programmiersprache Go aus dem ersten Semester
+  - Programmiersprache Java aus dem zweiten Semester
+  - Grundkenntnisse in HTML und CSS sollten parallel in der Web-Programmierung gelehrt werden.
+
+    *Was wird noch gelehrt?*
+  - Datenbanken findet auch parallel statt.
+  - GitHub ist aus dem ersten Semester bekannt. 
+  
+    *Ist GIT als Versionskontrollsystem erklärt worden?*
+
 
 
 
 Inhalte 2. Semester
 ---------------------------------
 
-**Durchführung eines Entwicklungsprojekts.** 
-
-(Vermutlich Entwicklung eines geteilten Infospaces.)
-
-
-
+**Durchführung eines Entwicklungsprojekts in kleine(re)n Gruppen.** 
 
 
 Prüfungsleistung 
@@ -68,16 +79,16 @@ Ablauf
 .. deck::
 
   .. card:: 
-    :class: fade-out
 
     1. Semester 16 VL:
 
-      -  1. Sep 2025 
-      -  3. Sep 2025 
-      - 15. Sep 2025 
-      -  6. Okt 2025 (Davon 20Minuten Kurztest)
+       -  1. Sep 2025 
+       -  3. Sep 2025 
+       - 15. Sep 2025 
+       -  6. Okt 2025 (davon 20 Minuten Kurztest (und ggf. Kurzvorträge für Bonuspunkte))
 
   .. card:: 
+    :class: fade-out
   
     2. Semester: 39 VL
 
@@ -85,50 +96,45 @@ Ablauf
 
 
 
-Aufgabenstellung
+Aufgabenstellung 2. Semester
 ---------------------------------
 
-Entwicklung einer Webanwendung.
+(Vermutlich Entwicklung eines geteilten Infospaces.)
 
 Details erfolgen im nächsten Semester.
 
 
 
-Detailplanung
+Detailplanung 2. Semester
 ---------------------------------
 
-.. story::
-
-  Details erfolgen im nächsten Semester.
+Details erfolgen im nächsten Semester.
 
 
 
-Abgaben
+Abgaben 2. Semester
 ---------------------------------
 
-.. story::
-
-  Details erfolgen im nächsten Semester.
+Details erfolgen im nächsten Semester.
 
 
 
-Benotungsgrundlage für das Projekt
-------------------------------------
+Benotungsgrundlage für das Projekt im 2. Semester
+--------------------------------------------------
 
-.. story::
-
-  Details erfolgen im nächsten Semester.
+Details erfolgen im nächsten Semester.
 
 
 
 Zur Verfügung gestellt wird
 ---------------------------------
 
-- Zugriff auf einem Server, der aus dem UNI Netz (ggf. mittels VPN) erreichbar ist.
+Zugriff auf einem Server, der aus dem UNI Netz (ggf. mittels VPN) erreichbar ist. 
+Zugangsdaten stehen im Moodle.
 
-  :Server: 141.72.12.132
-  :Nutzer: wwi23ama1, wwi23ama2, wwi23ama3
-  :Passwort: wird im Kurs bekannt gegeben 
+**Der Server wird nach dem ersten Semester vermutlich neu aufgesetzt.**
+
+
 
 
 
