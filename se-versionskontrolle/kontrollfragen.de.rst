@@ -57,7 +57,7 @@ Kontrollfragen
             :pwd: ZentralisierteVonDezentralisierten
          
             - Zentralisierte VCS speichern alle Versionen in einer zentralen Datenbank.
-            - Dezentrale VCS speichern alle Versionen lokal auf dem Rechner des Benutzers. Es gibt aber meistens auch eine Datenbank, die den "Ground Truth" darstellt.
+            - Dezentrale VCS speichern alle Versionen lokal auf dem Rechner des Benutzers. Es gibt aber (meistens auch) eine Datenbank, die den "Ground Truth" darstellt.
             - Dezentrale VCS ermöglichen es, **Änderungen offline vorzunehmen und später mit der zentralen Datenbank zu synchronisieren**.
 
    .. card::
