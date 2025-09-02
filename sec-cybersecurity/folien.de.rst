@@ -16,7 +16,7 @@ Cybersecurity
 
 :Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
 :Kontakt: michael.eichberg@dhbw.de
-:Version: 2.9
+:Version: 2.9.1
 
 .. supplemental::
 
@@ -757,7 +757,10 @@ Ausgewählte Social-Engineering Angriffe
 
         Phishing mit Hilfe von Telefonanrufen.
 
+        (`heise.de - Aug. 2025 - Vishing: So gelingt der Angriff per Telefon selbst auf Großunternehmen <https://www.heise.de/hintergrund/Vishing-So-gelingt-der-Angriff-per-Telefon-selbst-auf-Grossunternehmen-10625451.html>`__)
+
         (Z. B. `Anrufe von Europol <https://www.europol.europa.eu/publications-events/publications/vishing-calls>`__)
+
 
 
     :Quishing/QR phishing:
