@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" version="1.1" xmlns:xl="http://www.w3.org/1999/xlink" viewBox="0 0 366 215" width="300" height="176">
+  <defs>
+    <font-face font-family="Avenir Next" font-size="12" panose-1="2 11 5 3 2 2 2 2 2 4" units-per-em="1000" underline-position="-75" underline-thickness="50" slope="0" x-height="468" cap-height="708" ascent="1e3" descent="-365.9973" font-weight="400">
+      <font-face-src>
+        <font-face-name name="AvenirNext-Regular"/>
+      </font-face-src>
+    </font-face>
+  </defs>
+  <metadata> Produced by OmniGraffle 8.0\n2023-11-14 09:28:49 +0000</metadata>
+  <g id="gantt_chart" stroke="none" fill-opacity="1" stroke-opacity="1" fill="none" stroke-dasharray="none">
+    <title>gantt_chart</title>
+    <rect fill="white" x="0" y="0" width="366" height="215"/>
+    <g id="gantt_chart_Layer_1">
+      <title>Layer 1</title>
+      <g id="Group_51">
+        <g id="Graphic_72">
+          <rect x="15.437" y="20.673" width="340.158" height="184.252" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        </g>
+        <g id="Graphic_71">
+          <rect x="15.437" y="34.847" width="113.386" height="14.1732" fill="#f5f5f5"/>
+          <rect x="15.437" y="34.847" width="113.386" height="14.1732" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+          <text transform="translate(20.437 34.847)" fill="black">
+            <tspan font-family="Avenir Next" font-size="12" font-weight="400" fill="black" x="44.793" y="12">T1</tspan>
+          </text>
+        </g>
+        <g id="Graphic_70">
+          <rect x="15.437" y="63.193" width="141.732" height="14.1732" fill="#f5f5f5"/>
+          <rect x="15.437" y="63.193" width="141.732" height="14.1732" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+          <text transform="translate(20.437 63.193)" fill="black">
+            <tspan font-family="Avenir Next" font-size="12" font-weight="400" fill="black" x="58.966" y="12">T2</tspan>
+          </text>
+        </g>
+        <g id="Graphic_69">
+          <rect x="15.437" y="91.54" width="212.598" height="14.1732" fill="#f5f5f5"/>
+          <rect x="15.437" y="91.54" width="212.598" height="14.1732" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+          <text transform="translate(20.437 91.54)" fill="black">
+            <tspan font-family="Avenir Next" font-size="12" font-weight="400" fill="black" x="94.399" y="12">T3</tspan>
+          </text>
+        </g>
+        <g id="Graphic_68">
+          <path d="M 157.1696 13.587 L 164.2562 20.6736 L 157.1696 27.7602 L 150.083 20.6736 Z" fill="#584d4d"/>
+          <path d="M 157.1696 13.587 L 164.2562 20.6736 L 157.1696 27.7602 L 150.083 20.6736 Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        </g>
+        <g id="Graphic_67">
+          <rect x="157.169" y="119.886" width="85.0394" height="14.1732" fill="#f5f5f5"/>
+          <rect x="157.169" y="119.886" width="85.0394" height="14.1732" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+          <text transform="translate(162.169 119.886)" fill="black">
+            <tspan font-family="Avenir Next" font-size="12" font-weight="400" fill="black" x="30.6197" y="12">T4</tspan>
+          </text>
+        </g>
+        <g id="Graphic_66">
+          <path d="M 242.2086 13.587 L 249.2952 20.6736 L 242.2086 27.7602 L 235.122 20.6736 Z" fill="#584d4d"/>
+          <path d="M 242.2086 13.587 L 249.2952 20.6736 L 242.2086 27.7602 L 235.122 20.6736 Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        </g>
+        <g id="Graphic_65">
+          <rect x="128.823" y="34.847" width="28.3465" height="14.1732" fill="#d6fdad"/>
+          <rect x="128.823" y="34.847" width="28.3465" height="14.1732" stroke="GrayText" stroke-opacity=".24705882" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        </g>
+        <g id="Graphic_64">
+          <rect x="228.036" y="91.54" width="14.1732" height="14.1732" fill="#d6fdad"/>
+          <rect x="228.036" y="91.54" width="14.1732" height="14.1732" stroke="GrayText" stroke-opacity=".24705882" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        </g>
+        <g id="Graphic_63">
+          <rect x="242.209" y="148.232" width="42.5197" height="14.1732" fill="#f5f5f5"/>
+          <rect x="242.209" y="148.232" width="42.5197" height="14.1732" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+          <text transform="translate(247.209 148.232)" fill="black">
+            <tspan font-family="Avenir Next" font-size="12" font-weight="400" fill="black" x="9.35985" y="12">T5</tspan>
+          </text>
+        </g>
+        <g id="Graphic_62">
+          <rect x="242.209" y="176.579" width="70.8661" height="14.1732" fill="#f5f5f5"/>
+          <rect x="242.209" y="176.579" width="70.8661" height="14.1732" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+          <text transform="translate(247.209 176.579)" fill="black">
+            <tspan font-family="Avenir Next" font-size="12" font-weight="400" fill="black" x="23.53305" y="12">T6</tspan>
+          </text>
+        </g>
+        <g id="Graphic_61">
+          <rect x="284.729" y="148.232" width="28.3465" height="14.1732" fill="#d6fdad"/>
+          <rect x="284.729" y="148.232" width="28.3465" height="14.1732" stroke="GrayText" stroke-opacity=".24705882" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        </g>
+        <g id="Graphic_60">
+          <path d="M 15.4376 13.587 L 22.5242 20.6736 L 15.4376 27.7602 L 8.351 20.6736 Z" fill="#584d4d"/>
+          <path d="M 15.4376 13.587 L 22.5242 20.6736 L 15.4376 27.7602 L 8.351 20.6736 Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        </g>
+        <g id="Graphic_59">
+          <path d="M 313.0746 13.587 L 320.1612 20.6736 L 313.0746 27.7602 L 305.988 20.6736 Z" fill="#584d4d"/>
+          <path d="M 313.0746 13.587 L 320.1612 20.6736 L 313.0746 27.7602 L 305.988 20.6736 Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        </g>
+        <g id="Graphic_58">
+          <text transform="translate(148.936 0)" fill="black">
+            <tspan font-family="Avenir Next" font-size="12" font-weight="400" fill="black" x="27711167e-20" y="12">M1</tspan>
+          </text>
+        </g>
+        <g id="Graphic_57">
+          <text transform="translate(233.975 0)" fill="black">
+            <tspan font-family="Avenir Next" font-size="12" font-weight="400" fill="black" x="27711167e-20" y="12">M2</tspan>
+          </text>
+        </g>
+        <g id="Graphic_56">
+          <text transform="translate(292.976 0)" fill="black">
+            <tspan font-family="Avenir Next" font-size="12" font-weight="400" fill="black" x="2629008e-19" y="12">Release</tspan>
+          </text>
+        </g>
+        <g id="Graphic_55">
+          <text transform="translate(5.056 0)" fill="black">
+            <tspan font-family="Avenir Next" font-size="12" font-weight="400" fill="black" x="0" y="12">Start</tspan>
+          </text>
+        </g>
+        <g id="Line_54">
+          <line x1="157.16958" y1="28.260223" x2="157.169" y2="204.925" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        </g>
+        <g id="Line_53">
+          <line x1="242.20862" y1="28.260215" x2="242.209" y2="204.925" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        </g>
+        <g id="Line_52">
+          <line x1="313.0746" y1="28.260215" x2="313.075" y2="204.925" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xl="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" viewBox="-.48740207 10.838583 488.7651 356.791" width="488.7651" height="356.791">
+  <defs>
+    <filter id="Shadow" filterUnits="userSpaceOnUse" x="-49.36391" y="-24.840517">
+      <feGaussianBlur in="SourceAlpha" result="blur" stdDeviation="1.308"/>
+      <feOffset in="blur" result="offset" dx="0" dy="2"/>
+      <feFlood flood-color="black" flood-opacity=".5" result="flood"/>
+      <feComposite in="flood" in2="offset" operator="in"/>
+    </filter>
+    <marker orient="auto" overflow="visible" markerUnits="strokeWidth" id="FilledArrow_Marker" stroke-linejoin="miter" stroke-miterlimit="10" viewBox="-1 -4 10 8" markerWidth="10" markerHeight="8" color="black">
+      <g>
+        <path d="M 8 0 L 0 -3 L 0 3 Z" fill="currentColor" stroke="currentColor" stroke-width="1"/>
+      </g>
+    </marker>
+    <font-face font-family="Helvetica" font-size="11" units-per-em="1000" underline-position="-75.68359" underline-thickness="49.316406" slope="0" x-height="522.9492" cap-height="717.28516" ascent="770.0195" descent="-229.98047" font-weight="400">
+      <font-face-src>
+        <font-face-name name="Helvetica"/>
+      </font-face-src>
+    </font-face>
+    <font-face font-family="Helvetica" font-size="11" units-per-em="1000" underline-position="-75.68359" underline-thickness="49.316406" slope="0" x-height="532.22656" cap-height="719.7266" ascent="770.0195" descent="-229.98047" font-weight="700">
+      <font-face-src>
+        <font-face-name name="Helvetica-Bold"/>
+      </font-face-src>
+    </font-face>
+    <marker orient="auto" overflow="visible" markerUnits="strokeWidth" id="FilledBall_Marker" stroke-linejoin="miter" stroke-miterlimit="10" viewBox="-9 -5 10 10" markerWidth="10" markerHeight="10" color="black">
+      <g>
+        <circle cx="-3.5999985" cy="0" r="3.59999696147101" fill="currentColor" stroke="currentColor" stroke-width="1"/>
+      </g>
+    </marker>
+  </defs>
+  <metadata> Produced by OmniGraffle 8.0\n2023-11-15 12:48:03 +0000</metadata>
+  <g id="Canvas_1" stroke-opacity="1" stroke-dasharray="none" stroke="none" fill-opacity="1" fill="none">
+    <title>Canvas 1</title>
+    <g id="Canvas_1_Layer_1">
+      <title>Layer 1</title>
+      <g id="Graphic_1185_shadow" filter="url(#Shadow)">
+        <path d="M 72.16778 53.02058 L 140.12058 53.02058 C 142.882 53.02058 145.12058 55.25916 145.12058 58.02058 L 145.12058 93.02058 C 145.12058 95.78201 142.882 98.02058 140.12058 98.02058 L 72.16778 98.02058 C 69.40636 98.02058 67.16778 95.78201 67.16778 93.02058 L 67.16778 58.02058 C 67.16778 55.25916 69.40636 53.02058 72.16778 53.02058 Z" fill="#0591cc"/>
+      </g>
+      <g id="Graphic_1163_shadow" filter="url(#Shadow)">
+        <path d="M 73.16788 122.02058 L 139.12068 122.02058 C 142.43439 122.02058 145.12068 124.70687 145.12068 128.02058 L 145.12068 175.41768 C 145.12068 178.7314 142.43439 181.41768 139.12068 181.41768 L 73.16788 181.41768 C 69.85417 181.41768 67.16788 178.7314 67.16788 175.41768 L 67.16788 128.02058 C 67.16788 124.70687 69.85417 122.02058 73.16788 122.02058 Z" fill="#fdda12"/>
+      </g>
+      <g id="Line_5">
+        <line x1="106.14421" y1="98.02058" x2="106.14423" y2="112.12058" marker-end="url(#FilledArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_1185">
+        <path d="M 72.16778 53.02058 L 140.12058 53.02058 C 142.882 53.02058 145.12058 55.25916 145.12058 58.02058 L 145.12058 93.02058 C 145.12058 95.78201 142.882 98.02058 140.12058 98.02058 L 72.16778 98.02058 C 69.40636 98.02058 67.16778 95.78201 67.16778 93.02058 L 67.16778 58.02058 C 67.16778 55.25916 69.40636 53.02058 72.16778 53.02058 Z" fill="#0591cc"/>
+        <text transform="translate(72.16778 62.52058)" fill="white">
+          <tspan font-family="Helvetica" font-size="11" font-weight="400" fill="white" x="19.00179" y="10">Risiko </tspan>
+          <tspan font-family="Helvetica" font-size="11" font-weight="400" fill="white" x="3.095295" y="23">Identifikation</tspan>
+        </text>
+      </g>
+      <g id="Graphic_1163">
+        <path d="M 73.16788 122.02058 L 139.12068 122.02058 C 142.43439 122.02058 145.12068 124.70687 145.12068 128.02058 L 145.12068 175.41768 C 145.12068 178.7314 142.43439 181.41768 139.12068 181.41768 L 73.16788 181.41768 C 69.85417 181.41768 67.16788 178.7314 67.16788 175.41768 L 67.16788 128.02058 C 67.16788 124.70687 69.85417 122.02058 73.16788 122.02058 Z" fill="#fdda12"/>
+        <text transform="translate(72.16788 132.21913)" fill="black">
+          <tspan font-family="Helvetica" font-size="11" font-weight="400" fill="black" x="22.358723" y="10">Liste </tspan>
+          <tspan font-family="Helvetica" font-size="11" font-weight="400" fill="black" x="10.134113" y="23">möglicher </tspan>
+          <tspan font-family="Helvetica" font-size="11" font-weight="400" fill="black" x="15.942951" y="36">Risiken</tspan>
+        </text>
+      </g>
+      <g id="Graphic_1179">
+        <text transform="translate(4.512598 211.62958)" fill="black">
+          <tspan font-family="Helvetica" font-size="11" font-weight="700" fill="black" x="0" y="10">Typen:</tspan>
+          <tspan font-family="Helvetica" font-size="11" font-weight="400" fill="black" x="0" y="23">- Technologische Risiken</tspan>
+          <tspan font-family="Helvetica" font-size="11" font-weight="400" fill="black" x="0" y="36">- Menschliche Risiken</tspan>
+          <tspan font-family="Helvetica" font-size="11" font-weight="400" fill="black" x="0" y="49">- Organisatorische Risiken</tspan>
+          <tspan font-family="Helvetica" font-size="11" font-weight="400" fill="black" x="0" y="62">- Werkzeug bezogene Risiken</tspan>
+          <tspan font-family="Helvetica" font-size="11" font-weight="400" fill="black" x="0" y="75">- Anforderungsrisiken</tspan>
+          <tspan font-family="Helvetica" font-size="11" font-weight="400" fill="black" x="0" y="88">- Schätzrisiken</tspan>
+        </text>
+      </g>
+      <g id="Line_1180">
+        <line x1="95.55405" y1="188.82198" x2="89.0441" y2="211.62958" marker-start="url(#FilledBall_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+    </g>
+    <g id="Canvas_1_Layer_2">
+      <title>Layer 2</title>
+      <g id="Graphic_1196_shadow" filter="url(#Shadow)">
+        <path d="M 185.55388 53.02058 L 253.50668 53.02058 C 256.2681 53.02058 258.50668 55.25916 258.50668 58.02058 L 258.50668 93.02058 C 258.50668 95.78201 256.2681 98.02058 253.50668 98.02058 L 185.55388 98.02058 C 182.79246 98.02058 180.55388 95.78201 180.55388 93.02058 L 180.55388 58.02058 C 180.55388 55.25916 182.79246 53.02058 185.55388 53.02058 Z" fill="#0591cc"/>
+      </g>
+      <g id="Graphic_1197_shadow" filter="url(#Shadow)">
+        <path d="M 186.55388 122.02058 L 252.50668 122.02058 C 255.8204 122.02058 258.50668 124.70687 258.50668 128.02058 L 258.50668 175.41768 C 258.50668 178.7314 255.8204 181.41768 252.50668 181.41768 L 186.55388 181.41768 C 183.24017 181.41768 180.55388 178.7314 180.55388 175.41768 L 180.55388 128.02058 C 180.55388 124.70687 183.24017 122.02058 186.55388 122.02058 Z" fill="#fdda12"/>
+      </g>
+      <g id="Line_1194">
+        <line x1="219.53028" y1="98.02058" x2="219.53028" y2="112.12058" marker-end="url(#FilledArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Line_1195">
+        <line x1="145.62088" y1="75.50658" x2="170.65388" y2="75.511325" marker-end="url(#FilledArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_1196">
+        <path d="M 185.55388 53.02058 L 253.50668 53.02058 C 256.2681 53.02058 258.50668 55.25916 258.50668 58.02058 L 258.50668 93.02058 C 258.50668 95.78201 256.2681 98.02058 253.50668 98.02058 L 185.55388 98.02058 C 182.79246 98.02058 180.55388 95.78201 180.55388 93.02058 L 180.55388 58.02058 C 180.55388 55.25916 182.79246 53.02058 185.55388 53.02058 Z" fill="#0591cc"/>
+        <text transform="translate(185.55388 62.52058)" fill="white">
+          <tspan font-family="Helvetica" font-size="11" font-weight="400" fill="white" x="19.00179" y="10">Risiko </tspan>
+          <tspan font-family="Helvetica" font-size="11" font-weight="400" fill="white" x="14.409504" y="23">Analyse</tspan>
+        </text>
+      </g>
+      <g id="Graphic_1197">
+        <path d="M 186.55388 122.02058 L 252.50668 122.02058 C 255.8204 122.02058 258.50668 124.70687 258.50668 128.02058 L 258.50668 175.41768 C 258.50668 178.7314 255.8204 181.41768 252.50668 181.41768 L 186.55388 181.41768 C 183.24017 181.41768 180.55388 178.7314 180.55388 175.41768 L 180.55388 128.02058 C 180.55388 124.70687 183.24017 122.02058 186.55388 122.02058 Z" fill="#fdda12"/>
+        <text transform="translate(185.55388 138.71913)" fill="black">
+          <tspan font-family="Helvetica" font-size="11" font-weight="400" fill="black" x="7.692951" y="10">Priorisierte </tspan>
+          <tspan font-family="Helvetica" font-size="11" font-weight="400" fill="black" x="5.856037" y="23">Risiko Liste</tspan>
+        </text>
+      </g>
+      <g id="Graphic_1198">
+        <text transform="translate(161.59756 211.62958)" fill="black">
+          <tspan font-family="Helvetica" font-size="11" font-weight="700" fill="black" x="0" y="10">Bestandteile:</tspan>
+          <tspan font-family="Helvetica" font-size="11" font-weight="700" fill="black" x="0" y="23">- Wahrscheinlichkeit</tspan>
+          <tspan font-family="Helvetica" font-size="11" font-weight="400" fill="black" x="0" y="36">  - sehr gering</tspan>
+          <tspan font-family="Helvetica" font-size="11" font-weight="400" fill="black" x="0" y="49">  - gering</tspan>
+          <tspan font-family="Helvetica" font-size="11" font-weight="400" fill="black" x="0" y="62">  - mittel</tspan>
+          <tspan font-family="Helvetica" font-size="11" font-weight="400" fill="black" x="0" y="75">  - hoch</tspan>
+          <tspan font-family="Helvetica" font-size="11" font-weight="400" fill="black" x="0" y="88">  - sehr hoch</tspan>
+          <tspan font-family="Helvetica" font-size="11" font-weight="700" fill="black" x="0" y="101">- Auswirkung</tspan>
+          <tspan font-family="Helvetica" font-size="11" font-weight="400" fill="black" x="0" y="114">  - katastrophal</tspan>
+          <tspan font-family="Helvetica" font-size="11" font-weight="400" fill="black" x="0" y="127">  - schwerwiegend</tspan>
+          <tspan font-family="Helvetica" font-size="11" font-weight="400" fill="black" x="0" y="140">  - akzeptabel</tspan>
+          <tspan font-family="Helvetica" font-size="11" font-weight="400" fill="black" x="0" y="153">  - unbedeutend</tspan>
+        </text>
+      </g>
+      <g id="Line_1199">
+        <line x1="219.53028" y1="189.11768" x2="219.53028" y2="211.62958" marker-start="url(#FilledBall_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+    </g>
+    <g id="Canvas_1_Layer_3">
+      <title>Layer 3</title>
+      <g id="Graphic_1208_shadow" filter="url(#Shadow)">
+        <path d="M 298.93888 53.02058 L 366.8917 53.02058 C 369.6531 53.02058 371.8917 55.25916 371.8917 58.02058 L 371.8917 93.02058 C 371.8917 95.78201 369.6531 98.02058 366.8917 98.02058 L 298.93888 98.02058 C 296.17746 98.02058 293.93888 95.78201 293.93888 93.02058 L 293.93888 58.02058 C 293.93888 55.25916 296.17746 53.02058 298.93888 53.02058 Z" fill="#0591cc"/>
+      </g>
+      <g id="Graphic_1209_shadow" filter="url(#Shadow)">
+        <path d="M 299.93888 122.02058 L 365.8917 122.02058 C 369.2054 122.02058 371.8917 124.70687 371.8917 128.02058 L 371.8917 175.41768 C 371.8917 178.7314 369.2054 181.41768 365.8917 181.41768 L 299.93888 181.41768 C 296.62517 181.41768 293.93888 178.7314 293.93888 175.41768 L 293.93888 128.02058 C 293.93888 124.70687 296.62517 122.02058 299.93888 122.02058 Z" fill="#fdda12"/>
+      </g>
+      <g id="Line_1206">
+        <line x1="332.91528" y1="98.02058" x2="332.91528" y2="112.12058" marker-end="url(#FilledArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Line_1207">
+        <line x1="259.00688" y1="75.50658" x2="284.03888" y2="75.51132" marker-end="url(#FilledArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_1208">
+        <path d="M 298.93888 53.02058 L 366.8917 53.02058 C 369.6531 53.02058 371.8917 55.25916 371.8917 58.02058 L 371.8917 93.02058 C 371.8917 95.78201 369.6531 98.02058 366.8917 98.02058 L 298.93888 98.02058 C 296.17746 98.02058 293.93888 95.78201 293.93888 93.02058 L 293.93888 58.02058 C 293.93888 55.25916 296.17746 53.02058 298.93888 53.02058 Z" fill="#0591cc"/>
+        <text transform="translate(298.93888 62.52058)" fill="white">
+          <tspan font-family="Helvetica" font-size="11" font-weight="400" fill="white" x="19.00179" y="10">Risiko </tspan>
+          <tspan font-family="Helvetica" font-size="11" font-weight="400" fill="white" x="13.791828" y="23">Planung</tspan>
+        </text>
+      </g>
+      <g id="Graphic_1209">
+        <path d="M 299.93888 122.02058 L 365.8917 122.02058 C 369.2054 122.02058 371.8917 124.70687 371.8917 128.02058 L 371.8917 175.41768 C 371.8917 178.7314 369.2054 181.41768 365.8917 181.41768 L 299.93888 181.41768 C 296.62517 181.41768 293.93888 178.7314 293.93888 175.41768 L 293.93888 128.02058 C 293.93888 124.70687 296.62517 122.02058 299.93888 122.02058 Z" fill="#fdda12"/>
+        <text transform="translate(298.93888 125.71913)" fill="black">
+          <tspan font-family="Helvetica" font-size="11" font-weight="400" fill="black" x="19.00179" y="10">Risiko </tspan>
+          <tspan font-family="Helvetica" font-size="11" font-weight="400" fill="black" x="4.3199043" y="23">Vermeidung </tspan>
+          <tspan font-family="Helvetica" font-size="11" font-weight="400" fill="black" x="24.799885" y="36">und  </tspan>
+          <tspan font-family="Helvetica" font-size="11" font-weight="400" fill="black" x="6.151447" y="49">Notfallpäne</tspan>
+        </text>
+      </g>
+      <g id="Graphic_1210">
+        <path d="M 285.0422 211.62958 L 380.78836 211.62958 C 383.5498 211.62958 385.78836 213.86816 385.78836 216.62958 L 385.78836 271.62958 C 385.78836 274.391 383.5498 276.62958 380.78836 276.62958 L 285.0422 276.62958 C 282.28077 276.62958 280.0422 274.391 280.0422 271.62958 L 280.0422 216.62958 C 280.0422 213.86816 282.28077 211.62958 285.0422 211.62958 Z" fill="white"/>
+        <text transform="translate(285.0422 211.62958)" fill="black">
+          <tspan font-family="Helvetica" font-size="11" font-weight="700" fill="black" x="0" y="10">Strategien:</tspan>
+          <tspan font-family="Helvetica" font-size="11" font-weight="400" fill="black" x="0" y="23">- Vermeidung</tspan>
+          <tspan font-family="Helvetica" font-size="11" font-weight="400" fill="black" x="0" y="36">- Auswirkung ggf. </tspan>
+          <tspan font-family="Helvetica" font-size="11" font-weight="400" fill="black" x="0" y="49">  minimieren </tspan>
+          <tspan font-family="Helvetica" font-size="11" font-weight="400" fill="black" x="0" y="62">- Notfallpläne</tspan>
+        </text>
+      </g>
+      <g id="Line_1211">
+        <line x1="332.91528" y1="189.11768" x2="332.91528" y2="211.62958" marker-start="url(#FilledBall_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+    </g>
+    <g id="Canvas_1_Layer_4">
+      <title>Layer 4</title>
+      <g id="Graphic_1214_shadow" filter="url(#Shadow)">
+        <path d="M 412.3249 53.02058 L 480.2777 53.02058 C 483.0391 53.02058 485.2777 55.25916 485.2777 58.02058 L 485.2777 93.02058 C 485.2777 95.78201 483.0391 98.02058 480.2777 98.02058 L 412.3249 98.02058 C 409.56346 98.02058 407.3249 95.78201 407.3249 93.02058 L 407.3249 58.02058 C 407.3249 55.25916 409.56346 53.02058 412.3249 53.02058 Z" fill="#0591cc"/>
+      </g>
+      <g id="Graphic_1215_shadow" filter="url(#Shadow)">
+        <path d="M 413.3249 122.02058 L 479.2777 122.02058 C 482.5914 122.02058 485.2777 124.70687 485.2777 128.02058 L 485.2777 175.41768 C 485.2777 178.7314 482.5914 181.41768 479.2777 181.41768 L 413.3249 181.41768 C 410.01117 181.41768 407.3249 178.7314 407.3249 175.41768 L 407.3249 128.02058 C 407.3249 124.70687 410.01117 122.02058 413.3249 122.02058 Z" fill="#fdda12"/>
+      </g>
+      <g id="Line_1212">
+        <line x1="446.3013" y1="98.02058" x2="446.3013" y2="112.12058" marker-end="url(#FilledArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Line_1213">
+        <line x1="372.3919" y1="75.47058" x2="397.4249" y2="75.48752" marker-end="url(#FilledArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_1214">
+        <path d="M 412.3249 53.02058 L 480.2777 53.02058 C 483.0391 53.02058 485.2777 55.25916 485.2777 58.02058 L 485.2777 93.02058 C 485.2777 95.78201 483.0391 98.02058 480.2777 98.02058 L 412.3249 98.02058 C 409.56346 98.02058 407.3249 95.78201 407.3249 93.02058 L 407.3249 58.02058 C 407.3249 55.25916 409.56346 53.02058 412.3249 53.02058 Z" fill="#0591cc"/>
+        <text transform="translate(412.3249 62.52058)" fill="white">
+          <tspan font-family="Helvetica" font-size="11" font-weight="400" fill="white" x="19.00179" y="10">Risiko </tspan>
+          <tspan font-family="Helvetica" font-size="11" font-weight="400" fill="white" x="8.297199" y="23">Monitoring</tspan>
+        </text>
+      </g>
+      <g id="Graphic_1215">
+        <path d="M 413.3249 122.02058 L 479.2777 122.02058 C 482.5914 122.02058 485.2777 124.70687 485.2777 128.02058 L 485.2777 175.41768 C 485.2777 178.7314 482.5914 181.41768 479.2777 181.41768 L 413.3249 181.41768 C 410.01117 181.41768 407.3249 178.7314 407.3249 175.41768 L 407.3249 128.02058 C 407.3249 124.70687 410.01117 122.02058 413.3249 122.02058 Z" fill="#fdda12"/>
+        <text transform="translate(412.3249 132.21913)" fill="black">
+          <tspan font-family="Helvetica" font-size="11" font-weight="400" fill="black" x="19.00179" y="10">Risiko </tspan>
+          <tspan font-family="Helvetica" font-size="11" font-weight="400" fill="black" x="7.682209" y="23">Bewertung </tspan>
+          <tspan font-family="Helvetica" font-size="11" font-weight="400" fill="black" x=".3587227" y="36">(Assessment)</tspan>
+        </text>
+      </g>
+    </g>
+    <g id="Canvas_1_Layer_5">
+      <title>Layer 5</title>
+      <g id="Line_1216">
+        <path d="M 432.0499 52.59558 L 406.3999 11.338583 L 250.49488 11.338583 L 234.9046 43.65401" marker-end="url(#FilledArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+    </g>
+  </g>
+</svg>

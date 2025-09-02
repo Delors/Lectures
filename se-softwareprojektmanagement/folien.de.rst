@@ -1,5 +1,5 @@
 .. meta::
-    :version: genesis
+    :version: renaissance
     :author: Michael Eichberg
     :keywords: "Projekt"
     :description lang=de: Projektkonzeption und Projektrealisierung
@@ -15,7 +15,7 @@ Kurze Wiederholung von Aspekten des Softwareprojektmanagements
 
 :Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
 :Kontakt: michael.eichberg@dhbw.de, Raum 149B
-:Version: 1.0
+:Version: 1.1
 
 .. supplemental::
 
@@ -40,7 +40,7 @@ Softwareprojekte und deren Planung
 Besonderheiten von Softwareprojekten
 --------------------------------------
 
-.. class:: incremental list-with-explanations
+.. class:: incremental-list list-with-explanations
     
 - Das Produkt ist nicht greifbar (:eng:`intangible`)
 - Die Projektmanager können den Fortschritt nicht (leicht) sehen. 
@@ -56,7 +56,7 @@ Besonderheiten von Softwareprojekten
 Standardtätigkeiten bei Softwareprojekten
 -------------------------------------------
 
-.. class:: incremental list-with-explanations
+.. class:: incremental-list list-with-explanations
 
 - Antrags- bzw. Angebotserstellung 
 
@@ -73,7 +73,7 @@ Standardtätigkeiten bei Softwareprojekten
 Projektplanung als iterativer Prozess
 -----------------------------------------
 
-.. class:: incremental list-with-explanations
+.. class:: incremental-list list-with-explanations
 
 - Ein zu Beginn erstellter Plan sollte als Motor für das Projekt dienen.
 
@@ -85,7 +85,7 @@ Projektplanung als iterativer Prozess
 Typen von Plänen
 -----------------------
 
-.. class:: incremental
+.. class:: incremental-list
 
 - Projektplan
 - Qualitätssicherungsplan
@@ -98,11 +98,11 @@ Typen von Plänen
 Bestandteile von Projektplänen
 -----------------------------------------
 
-.. container:: two-columns small
+.. grid::
 
-    .. container:: column
+    .. cell:: width-50
 
-       .. class:: incremental list-with-explanations
+       .. class:: incremental-list list-with-explanations
        
        - Einführung
 
@@ -120,9 +120,9 @@ Bestandteile von Projektplänen
 
          Die für die Durchführung des Projekts erforderliche Hardware und unterstützende Software.
 
-    .. container:: column
+    .. cell:: width-50
 
-        .. class:: incremental list-with-explanations
+        .. class:: incremental-list list-with-explanations
 
         - Arbeitsaufteilung :eng:`work breakdown` 
         
@@ -135,23 +135,22 @@ Bestandteile von Projektplänen
         - Überwachungs- und Berichterstattungsmechanismen 
 
 
+
 Projektzeitpläne
 -------------------
 
 .. image:: drawings/projektzeitplan/gantt_chart.svg
     :alt: Gantt Chart
     :align: left
-    :width: 900px
 
 .. image:: drawings/projektzeitplan/aktivitaetsdiagramm.svg
     :alt: Aktivitätsdiagramm
     :align: right
-    :width: 1200px
-    :class: incremental 
+    :class: incremental
 
 
 
-.. class:: vertical-title
+.. class:: s-vertical-title
 
 Risikoanalyse
 -----------------
@@ -159,8 +158,7 @@ Risikoanalyse
 .. image:: drawings/risikomanagementprozess.svg 
     :alt: Der Risikomanagementprozess
     :align: center
-    :width: 1400px
-    :class: inline-block
+
 
 
 .. class:: new-section transition-fade
@@ -172,13 +170,13 @@ Agile Softwareentwicklung
 Prinzipien der Agilen Softwareentwicklung
 --------------------------------------------
 
-.. class:: incremental
+.. class:: incremental-list
 
 - :peripheral:`Höchste Priorität ist es, den Kunden durch die frühzeitige und kontinuierliche Bereitstellung wertvoller Software zufrieden zu stellen.`
 - Wir liefern *häufig* funktionierende Software (z. B. alle zwei Wochen).
 - Funktionierende Software ist der wichtigste Maßstab für den Fortschritt.
   
-  .. container:: complement
+  .. attention:: 
   
     Wenn 30% der Funktionalität implementiert sind, sind 30% des Projekts abgeschlossen.
 
@@ -192,7 +190,7 @@ Prinzipien der Agilen Softwareentwicklung
 Prinzipien der Agilen Softwareentwicklung
 --------------------------------------------
 
-.. class:: incremental more-space-between-list-items
+.. class:: incremental-list 
 
 - In regelmäßigen Abständen reflektiert das Team, wie es effektiver werden kann, und passt sein Verhalten entsprechend an zwecks Prozessverbesserung.
 - Die besten Architekturen, Anforderungen und Entwürfe entstehen in selbstorganisierenden Teams.
@@ -210,13 +208,13 @@ Prinzipien der Agilen Softwareentwicklung
   .. image:: drawings/nachhaltige_entwicklung.svg 
      :alt: Nachhaltige Entwicklung
      :align: left
-     :width: 1200px
+
 
 
 (Noch relevante) Aspekte des *Unified Process* 
 -------------------------------------------------
 
-.. class:: incremental 
+.. class:: incremental-list 
 
 - Behandlung von Problemen mit hohem Risiko und hohem Wert in frühen Iterationen.
 - Kontinuierliche Einbindung der Benutzer für Bewertung, Feedback und Anforderungen.
@@ -226,6 +224,7 @@ Prinzipien der Agilen Softwareentwicklung
 - Visuelle Modellierung bei Bedarf.
 - *Sorgfältige* Verwaltung der Anforderungen.
 - Änderungsanfragen und Konfigurationsmanagement.
+
 
 
 (Hier relevante) Aspekte des *eXtreme Programming*
@@ -253,6 +252,7 @@ Extreme Programming ist eine Sammlung von einfachen, von einander abhängigen Pr
         :eng:`"Eats(,) shoots and leaves."`
 
 
+
 (Hier relevante) Aspekte des *eXtreme Programming*
 ----------------------------------------------------
 
@@ -260,11 +260,12 @@ Extreme Programming ist eine Sammlung von einfachen, von einander abhängigen Pr
 
 Ausführbare Software wird z. B. alle zwei Wochen geliefert (eine Iteration).
 
-.. class:: incremental smaller more-space-between-list-items
+.. class:: incremental-list
 
 - Die gelieferte Software kann, muss aber nicht in Produktion gehen. 
 - Iterationen sind zeitlich begrenzt. 
 - Terminverschiebungen sind illegal; wenn nicht alle für die Iteration geplanten Aufgaben erledigt werden können,  dann sind diese zu entfernen.
+
 
 
 Planung einer Iteration - Iterationsplan 
@@ -272,7 +273,7 @@ Planung einer Iteration - Iterationsplan
 
 Zu Beginn jeder Iteration werden die User Stories oder auch Use Cases und ihre Prioritäten festgelegt. :peripheral:`Der Kunde wählt die Benutzergeschichten aus, die er umgesetzt haben möchte.` 
 
-.. class:: incremental smaller list-with-explanations
+.. class:: incremental-list list-with-explanations
 
 - Die User Stories werden in Tasks :ger:`Aufgaben (dt. unüblich)` aufgeteilt, deren Umsetzung zwischen 4 und 16 Stunden dauern sollte. 
 - Die Anzahl der Geschichten wird durch das Budget begrenzt, das von den Entwicklern festgelegt wird.
@@ -283,10 +284,11 @@ Zu Beginn jeder Iteration werden die User Stories oder auch Use Cases und ihre P
 - Die Reihenfolge der Stories innerhalb der Iteration ist eine technische Entscheidung.
 
 
+
 Ende einer Iteration
 ------------------------------------------
 
-.. class:: incremental smaller 
+.. class:: incremental-list
 
 - Die Iteration endet zum festgelegten Datum (Timebox), auch wenn noch nicht alle Stories fertig sind.
 
@@ -301,7 +303,7 @@ Ende einer Iteration
 Anfängliche Exploration (Beginn des Projekts)
 -----------------------------------------------
 
-.. class:: incremental smaller
+.. class:: incremental-list
 
 - Entwickler und Kunden versuchen, alle wichtigen User Stories zu identifizieren.
 - Die Entwickler schätzen - relativ zueinander - die Storys, indem sie Story-Punkte zuweisen; eine Story mit doppelt so vielen Punkten wie eine andere Story wird voraussichtlich doppelt so lange für die Umsetzung benötigen.
@@ -328,6 +330,7 @@ Akzeptanztest/Abnahmetests
 Die Details der User Stories werden in Form von Akzeptanztests festgehalten. Akzeptanztests (in der Regel Blackbox-Tests) werden vor oder gleichzeitig mit der Implementierung einer User Story geschrieben. Sobald ein Akzeptanztest bestanden ist, wird er der Gruppe der bestandenen Akzeptanztests hinzugefügt und darf nie wieder fehlschlagen.
 
 
+
 Testgetriebene Entwicklung
 ----------------------------
 
@@ -336,21 +339,23 @@ Code wird geschrieben, um fehlschlagende (Unit-)Tests zu beheben.
 Eine (sehr) vollständige Sammlung von Testfällen erleichtert Refactorings und führt oft (implizit) zu weniger gekoppeltem Code.
 
 
+
 Continuous Integration 
 ------------------------------------------------------------------------
 
-(Der dt. Begriff :ger:`Kontinuierliche Integration` wird üblicherweise nicht verwendet.)
+(Der Begriff :ger:`Kontinuierliche Integration` wird üblicherweise nicht verwendet.)
 
 Die Programmierer checken ihren Code ein und integrieren ihn mehrmals am Tag; es wird eine nicht blockierende Versionskontrolle verwendet. Nach dem Einchecken wird das System gebaut und alle Tests (einschließlich der Akzeptanztests) werden durchgeführt.
+
 
 
 Initiale User Stories
 ---------------------
 
 .. note:: 
-    :class: smaller
+    :class: width-25
 
-    Die Schätzung des Aufwands ist hier in ideal Tagen. 
+    Die Schätzung des Aufwands ist hier in *Idealtagen*. 
 
 
 .. container:: index-card 
@@ -364,11 +369,12 @@ Initiale User Stories
     Der Login ist nur einmal pro Session notwendig.
 
 
+
 Initiale User Stories
 ---------------------
 
 .. note:: 
-    :class: smaller
+    :class: width-25
 
     Nicht implementierbar.
 
@@ -377,53 +383,63 @@ Initiale User Stories
 
     Einschränkung
 
-    Das System zeigt keine Popups, die als Werbepopups interpretiert werden könnten.
+    | Das System zeigt keine Popups, 
+    | die als Werbepopups interpretiert werden könnten.
+
 
 
 Initiale User Stories
 ---------------------
 
 .. note:: 
-    :class: smaller
+    :class: width-25
 
     Aufbrechen von Stories in Aufgaben.
 
     
-.. container:: index-card small
+.. container:: index-card
 
     Login-Story - zwei Tage
 
-    Wenn ein Login erforderlich ist und die Seite den Nutzer nicht als Mitglied identifizieren kann, dann wird der Nutzer auf die Loginseite weitergeleitet. 
+    | Wenn ein Login erforderlich ist und die Seite den Nutzer 
+    | nicht als Mitglied identifizieren kann, dann wird der 
+    | Nutzer auf die Loginseite weitergeleitet. 
     
-    Diese fragt dann nach dem Nutzernamen und Passwort und erläutert den Loginprozess und die Philosophie der Seite.
+    | Diese fragt dann nach dem Nutzernamen und Passwort und 
+    | erläutert den Loginprozess und die Philosophie der Seite.
 
-.. container:: column tiny margin-above
+.. grid:: 
 
-    .. container:: index-card smaller light-green-background margin-below
+    .. cell:: 
 
-        Login-Start
+      .. container:: index-card very-light-green-background
 
-        Lese cookie.
+          Login-Start
 
-        Falls gesetzt: zeige Bestätigung an und Option als jemand anderes einzuloggen.
+          Lese cookie.
 
-        Andernfalls leite auf Loginseite um.
+          Falls gesetzt: zeige Bestätigung an und Option als jemand anderes einzuloggen.
 
-    .. container:: index-card smaller light-green-background 
+          Andernfalls leite auf Loginseite um.
 
-        Login
+    .. cell:: 
 
-        Lese Daten von HTML input. 
-        
-        Prüfe ob der Nutzer in der Datenbank mit dem angegebenen Namen und Passwort hinterlegt ist. Falls nicht erfolgreiche umleiten auf Startseite mit entsprechender Fehlermeldung.
+      .. container:: index-card very-light-green-background 
 
-        Speichere Cookie.
+          Login
+
+          Lese Daten von HTML input. 
+          
+          Prüfe ob der Nutzer in der Datenbank mit dem angegebenen Namen und Passwort hinterlegt ist. Falls nicht erfolgreiche umleiten auf Startseite mit entsprechender Fehlermeldung.
+
+          Speichere Cookie.
+
 
 
 Eigenschaften guter Stories
 -----------------------------
 
-.. class:: incremental
+.. class:: incremental-list
 
 - :peripheral:`Die Geschichten müssen für den Kunden verständlich sein.`
 - :peripheral:`Jede Geschichte muss dem Kunden einen Mehrwert bieten.`
@@ -432,53 +448,45 @@ Eigenschaften guter Stories
 - Jede Geschichte muss testbar sein
 
 
+
 Gute Stories: INVEST
 ---------------------
 
-.. container:: small
+.. class:: incremental-list
 
-    .. class:: incremental
-    
-    :Independent: Unabhängig - Die User Story sollte in sich geschlossen sein, so dass keine Abhängigkeit von einer anderen User Story besteht.
+:Independent: Unabhängig - Die User Story sollte in sich geschlossen sein, so dass keine Abhängigkeit von einer anderen User Story besteht.
 
-    .. class:: incremental
-    
-    :Negotiable: Verhandlungsfähig - User Stories können, bis sie Teil eines Sprints sind, jederzeit geändert und umgeschrieben werden.
+:Negotiable: Verhandlungsfähig - User Stories können, bis sie Teil eines Sprints sind, jederzeit geändert und umgeschrieben werden.
 
-    .. class:: incremental
-    
-    :Valuable: Wertvoll - eine User Story muss dem Endbenutzer einen Wert liefern.
+:Valuable: Wertvoll - eine User Story muss dem Endbenutzer einen Wert liefern.
 
-    .. class:: incremental
-    
-    :Estimable: Abschätzbar - Sie müssen immer in der Lage sein, den Umfang einer User Story abzuschätzen.
+:Estimable: Abschätzbar - Sie müssen immer in der Lage sein, den Umfang einer User Story abzuschätzen.
 
-    .. class:: incremental
-    
-    :Sized Appropriately or Small: Angemessen dimensioniert oder klein - User Stories sollten nicht so groß sein, dass eine Planung/Aufgabe/Priorisierung mit einem gewissen Grad an Sicherheit unmöglich wird.
+:Sized Appropriately or Small: Angemessen dimensioniert oder klein - User Stories sollten nicht so groß sein, dass eine Planung/Aufgabe/Priorisierung mit einem gewissen Grad an Sicherheit unmöglich wird.
 
-    .. class:: incremental
+:Testable: Die User Story oder die zugehörige Beschreibung muss die notwendigen Informationen liefern, um die Entwicklung von Tests zu ermöglichen.
 
-    :Testable: Die User Story oder die zugehörige Beschreibung muss die notwendigen Informationen liefern, um die Entwicklung von Tests zu ermöglichen.
 
 
 Beispielaufzeichnung von User Stories
 ---------------------------------------
 
-.. csv-table::
-    :class: annotated-text tiny
-    :widths: 300 400 1200
-    
-    "", **ID**, 2
-    , Name, Admin-Login
-    , Beschreibung, "Als Administrator*in muss ich mich am System mittels Benutzername und Passwort authentifizieren können, um Änderungen vornehmen zu können."
-    „Mit allen abzustimmen“ , Akzeptanzkriterium, "Der Dialog zum Einloggen wird korrekt angezeigt und es ist möglich sich als Administrator*in zu authentifizieren. Ungültige Eingaben werden ignoriert und normale Nutzer*innen erhalten nicht die Rolle Administrator."
-    "Beim Anlegen", Geschätzter Aufwand in Story Points (SPs), 3
-    Bei Iterationsstart festzulegen, Entwickler*in, Michaela Müller
-    , Umgesetzt in Iteration, 2
-    Am Iterationsende, Tatsächlicher Aufwand (Std.), 12
-    , Velocity (SPs / Std.), "0,25"
-    , Bemerkungen, /
+.. story::
+
+  .. csv-table::
+      :class: annotated-text incremental-table-rows sticky-header
+      :widths: 300 450 1200
+      
+      "", **ID**, 2
+      , Name, Admin-Login
+      , Beschreibung, "Als Administrator*in muss ich mich am System mittels Benutzername und Passwort authentifizieren können, um Änderungen vornehmen zu können."
+      „Mit allen abzustimmen“ , Akzeptanzkriterium, "Der Dialog zum Einloggen wird korrekt angezeigt und es ist möglich sich als Administrator*in zu authentifizieren. Ungültige Eingaben werden ignoriert und normale Nutzer*innen erhalten nicht die Rolle Administrator."
+      "Beim Anlegen", Geschätzter Aufwand in Story Points (SPs), 3
+      Bei Iterationsstart festzulegen, Entwickler*in, Michaela Müller
+      , Umgesetzt in Iteration, 2
+      Am Iterationsende, Tatsächlicher Aufwand (Std.), 12
+      , Velocity (SPs / Std.), "0,25"
+      , Bemerkungen, /
 
 
 .. supplemental::
@@ -518,55 +526,45 @@ Softwarequalitätsmerkmale
 ---------------------------
 
 .. image:: drawings/software_quality_properties_iso_9126.svg 
-    :alt: Softwarequalitätsmermale nach ISO 9126
+    :alt: Softwarequalitätsmerkmale nach ISO 9126
     :align: center
-    :height: 1150px
 
-
-Ausgewählte Qualitätsmerkmale
--------------------------------
-
-:Korrektheit:
-    Grad der Konsistenz zwischen Spezifikation und Programm bzw. als Grad der Erfüllung der Benutzererwartung durch ein Programm (d.h. ohne Spezifikation ist keine Korrektheit nachweisbar).
-
-.. class:: incremental
-
-:Vollständigkeit:
-    Alle geforderten Funktionen sind realisiert.
-
-.. class:: incremental
-
-:Sicherheit `Safety`:eng::
-    Eigenschaft eines Systems weder Menschen, noch Sachen oder die Umwelt zu gefährden.
-
-.. class:: incremental    
-
-:Datensicherheit `Security`:eng::
-    Eigenschaft eines Systems Informationsverluste und unbefugten Datenzugriff zu verhindern.
 
 
 Ausgewählte Qualitätsmerkmale
 -------------------------------
 
-:Zuverlässigkeit:
-    Die Wahrscheinlichkeit des ausfallfreien Betriebs der (in diesem Kontext) Software über einen bestimmten Zeitraum bei einer definierten Betriebsweise.
+.. story::
 
-.. class:: incremental
+  .. class:: incremental-list
 
-:Verfügbarkeit:
-    Eigenschaft zu einem gegebenen Zeitpunkt funktionstüchtig zu sein.
+    :Korrektheit:
+        Grad der Konsistenz zwischen Spezifikation und Programm bzw. als Grad der Erfüllung der Benutzererwartung durch ein Programm (d.h. ohne Spezifikation ist keine Korrektheit nachweisbar).
 
-.. class:: incremental
+    :Vollständigkeit:
+        Alle geforderten Funktionen sind realisiert.
 
-:Robustheit:
-    Im Wesentlichen eine Eigenschaft der Spezifikation. Resultiert im Wesentlichen aus der korrekten Umsetzung einer Spezifikation, die auch ungewöhnliche Betriebssituationen erfasst.
+    :Sicherheit `Safety`:eng::
+        Eigenschaft eines Systems weder Menschen, noch Sachen oder die Umwelt zu gefährden.
+
+    :Datensicherheit `Security`:eng::
+        Eigenschaft eines Systems Informationsverluste und unbefugten Datenzugriff zu verhindern.
+
+    :Zuverlässigkeit:
+        Die Wahrscheinlichkeit des ausfallfreien Betriebs der (in diesem Kontext) Software über einen bestimmten Zeitraum bei einer definierten Betriebsweise.
+        
+    :Verfügbarkeit:
+        Eigenschaft zu einem gegebenen Zeitpunkt funktionstüchtig zu sein.
+
+    :Robustheit:
+        Im Wesentlichen eine Eigenschaft der Spezifikation. Resultiert im Wesentlichen aus der korrekten Umsetzung einer Spezifikation, die auch ungewöhnliche Betriebssituationen erfasst.
 
 
 
 Auswahl des QS-Ziels
 -------------------------------------------------------------
 
-.. class:: incremental
+.. class:: incremental-list
 
 - Wieso ist das Qualitätsziel für das Projekt von Bedeutung?
 - Welche anderen Qualitätsziele sind für das Projekt von Bedeutung? 
@@ -579,7 +577,7 @@ Auswahl des QS-Ziels
 Planung und Durchführung von QS Maßnahmen
 -------------------------------------------
 
-.. class:: incremental
+.. class:: incremental-list
 
 - Welche QS-Maßnahmen können durchgeführt werden, die der Erreichung des QS-Ziels direkt dienlich sind?
 - Wer (Person oder IT-System) führt die Maßnahme durch?
@@ -589,10 +587,11 @@ Planung und Durchführung von QS Maßnahmen
 - Welcher Maßstab kann anlegt werden, um die Ziel-Erreichung zu messen?
 
 
+
 QS-Ziel Benutzerfreundlichkeit
 --------------------------------
 
-.. class:: incremental
+.. class:: incremental-list
 
 - Zur Sicherstellung der Benutzerfreundlichkeit sind häufig Benutzerstudien notwendig. 
 - Objektive Maßstäbe sind z.B. die Anzahl der Fehler, die ein Benutzer macht, die Zeit, die ein Benutzer benötigt, um eine Aufgabe zu erledigen, oder die Anzahl der Aufgaben, die ein Benutzer in einer bestimmten Zeit erledigen kann.
