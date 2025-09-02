@@ -18,7 +18,7 @@ Eine kurze Wiederholung / Einführung.
 
 :Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
 :Kontakt: michael.eichberg@dhbw.de
-:Version: 1.1
+:Version: 1.2
 
 .. supplemental::
 
@@ -233,7 +233,7 @@ Grundlegendes
 
         - Inhalt einer Datei editieren ist (zum Beispiel) mit ``pico`` möglich. Alternative kann mit Hilfe von ``echo`` ein Text in eine Datei umgeleitet werden (:console:`echo "Hello" > Hello.txt`).
 
-        - Inahlt einer Datei ansehen: ``cat``, ``less``, ``more``, ...
+        - Inhalt einer Datei ansehen: ``cat``, ``less``, ``more``, ...
 
 
 
@@ -281,27 +281,39 @@ Kommandozeilenprogrammen beenden
     2. Ändern Sie Ihr Passwort mit Hilfe von ``passwd``.
 
 
-
 .. class:: exercises
 
-Übung - Installation von Software als normaler Nutzer
--------------------------------------------------------
+Übung - mit einem Server über Keys verbinden\ [#]_
+-----------------------------------------------------
 
-.. exercise:: NVM installieren
+.. exercise:: Unix - Einloggen mittels SSHKey
 
-    Installieren Sie nvm (Node Version Manager), um im zweiten Schritt eine aktuelle Version von node.js zu installieren.
+    **Im professionellen Umfeld ist die Authentifizierung über SSH-Keys üblich.** SSH-Keys sind eine sicherere Alternative zu Passwörtern, da keine Passwörter übertragen werden.
 
-    https://github.com/nvm-sh/nvm?tab=readme-ov-file#installing-and-updating
+    .. class:: incremental-list list-with-explanations
+
+    1. Erstellen Sie **lokal** - auf Ihrem Clientrechner - einen SSH Key-Paar mittels ssh-keygen. Nutzen Sie den ``ed25519`` Algorithmus.
+
+       Sollten Sie bereits ein SSH Key-Paar haben, dann können Sie diesen verwenden. Ansonten erstellen Sie das Schlüsselpaar im lokalen Verzeichnis.
+
+    2. Kopieren Sie den **öffentlichen Schlüssel** auf den Server mittels :console:`ssh-copy-id`.
+
+       Der öffentliche Schlüssel ist in der ``.pub`` Datei. Diese Datei ist das *ìdentity file*, dass der Server benötigt/verwendet.
+
+    3. Testen Sie ob Sie sich beim Server anmelden können ohne Paswort!
 
     .. solution::
         :pwd: LesenIstWichtig
 
-        1. Script herunterladen: :console:`curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.3/install.sh | bash` (die Verwendung von wget ist auch möglich!)
+        Die folgenden Schritte sind auf dem Client auszuführen.
 
-        2. Ausloggen und einloggen (oder "Sourcen")
+        Die Nutzerkennung und die IP-Adressen sind ggf. an „Ihren“ Server anzupassen.
 
-        3. Aktuellste Version von Node installieren: :console:`nvm install node`
+        1. :console:`ssh-keygen -t ed25519 -f ./userX-ssh-keypair`
+        2. :console:`ssh-copy-id -i userx-ssh-keypair.pub  userx@141.72.12.138`
+        3. :console:`ssh -i ./userx-ssh-keypair 'userx@141.72.12.138'`
 
+.. [#]  Nutzen Sie Google/LLMs nur, wenn die Manpages und die Hilfe der Programme Ihnen nicht weiterhelfen.
 
 
 .. class:: exercises
@@ -309,7 +321,7 @@ Kommandozeilenprogrammen beenden
 Übung - Starten eines kleinen WebServers
 -----------------------------------------
 
-.. exercise:: Unix - Erste Schritte
+.. exercise:: Unix - Grundlegende Operationen
 
     .. class:: incremental-list list-with-explanations
 
@@ -355,6 +367,47 @@ Kommandozeilenprogrammen beenden
         Die zu verwendende URL ist:
 
         http://<IP des Servers>:8888
+
+
+.. class:: exercises
+
+Übung - Starten des Servers im Hintergrund
+-------------------------------------------
+
+.. exercise:: nohup
+    :formatted-title: nohup
+
+    1. Starten Sie den Webserver im Hintergrund und leiten Sie die Ausgaben in eine Log-Datei um. Nutzen Sie ``nohup`` als Tool.
+
+       .. example::
+
+         :console:`nohup http-server -p 8888 eichberg > web.log 2>&1 &`
+
+    2. Überprüfen Sie, ob der Server im Hintergrund läuft. D. h. loggen sie sich aus und rufen Sie danach wieder die Webseite auf.
+    3. Loggen Sie sich wieder ein und beenden Sie den Server mittels ``kill`` Befehl. Die PID können Sie mittels :console:`ps -aux | grep http-server` herausfinden.
+
+
+
+.. class:: exercises
+
+Übung - Installation von Software als normaler Nutzer
+-------------------------------------------------------
+
+.. exercise:: NVM installieren
+
+    Installieren Sie nvm (Node Version Manager), um im zweiten Schritt eine aktuelle Version von node.js zu installieren.
+
+    https://github.com/nvm-sh/nvm?tab=readme-ov-file#installing-and-updating
+
+    .. solution::
+        :pwd: LesenIstWichtig
+
+        1. Script herunterladen: :console:`curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.3/install.sh | bash` (die Verwendung von wget ist auch möglich!)
+
+        2. Ausloggen und einloggen (oder "Sourcen")
+
+        3. Aktuellste Version von Node installieren: :console:`nvm install node`
+
 
 
 .. class:: exercises
@@ -560,6 +613,7 @@ Wichtige Linux Kommandozeilenwerkzeuge für die Verarbeitung von Passwortkandida
     **Anwendungsfälle**
 
     Typischerweise werden diese Werkzeuge bei der Verarbeitung von Leaks/Aufbereitung von Wörterbüchern im Vorfeld gebraucht - vor dem eigentlichen Versuch das Passwort wiederherzustellen.
+
 
 
 echo
@@ -913,6 +967,7 @@ Shellprogrammierung
     **Anwendungsfall**: Berechnung der Entropie für jede Datei in einer Liste.
 
     .. code:: zsh
+        :class: copy-to-clipboard
         :number-lines:
 
         #!/usr/bin/zsh                   # Shebang zur Spezifikation der Shell
