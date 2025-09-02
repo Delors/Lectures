@@ -1116,7 +1116,7 @@ Die Datei .gitignore listet alle Arten von Dateien und Verzeichnissen auf, die v
 
 .. story::
 
-    .. exercise:: Release vorbereiten
+    .. exercise:: Weiterentwicklung vorbereiten
 
         1. Nutzen Sie :console:`git log --oneline --graph --all` um sich die Commit-Historie anzusehen.
         2. Wechseln Sie zurück zum ``develop`` Branch.
