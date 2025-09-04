@@ -31,6 +31,79 @@ Eine allererste Einführung
 .. [#] Erstellt unter Zuhilfenahme von ChatGPT
 
 
+
+LLMs und Code-Generierung
+---------------------------------------------------
+
+.. grid:: 
+
+    .. cell:: width-30
+    
+        **Normales LLM**
+
+        .. class:: incremental-list
+
+        - Antwortet direkt: Eingabe → Ausgabe
+        - Schnell, ausreichend für einfache Aufgaben
+        - Risiko: unvollständiger oder fehlerhafter Code bei komplexeren Problemen
+        - Beispiel: „Schreibe eine Python-Funktion für Fibonacci-Zahlen“ → sofortiger Code
+
+    .. cell:: width-70
+        
+        **Thinking-LLM**
+
+        .. raw:: html
+
+                <div style="width: 15ch; height: 15ch;">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="75 75 450 450" font-size="30">
+                    <defs>
+                        <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+                        <path d="M 0 0 L 10 5 L 0 10 z" fill="#111"/>
+                        </marker>
+                        <style>
+                        .label { font-family: "Noto Sans Display"; font-weight: 400; fill: #111; }
+                        .arrow { fill: none; stroke: darkgray; stroke-width: 6;  }
+                        </style>
+                    </defs>
+                    
+                    <!-- Circle center (300,300), radius 200 -->
+                    <!-- Labels -->
+                    <text class="label" x="300" y="140" text-anchor="middle">PERCEIVE</text>
+                    <text class="label incremental#1" x="420" y="310" text-anchor="middle">REASON</text>
+                    <text class="label incremental#2" x="300" y="480" text-anchor="middle">ACT</text>
+                    <text class="label incremental#3" x="180" y="310" text-anchor="middle">OBSERVE</text>
+                    
+                    
+                    <!-- Arcs with arrows (clockwise) -->
+                    <g transform="rotate(2.5,300,300)"> 
+                        <!-- PERCEIVE -> REASON -->
+                        <path class="arrow incremental#1" d="M 300 100 A 200 200 0 0 1 500 300" marker-end="url(#arrow)" />
+                        <!-- REASON -> ACT -->
+                        <path class="arrow incremental#2" d="M 500 300 A 200 200 0 0 1 300 500" marker-end="url(#arrow)" />
+                        <!-- ACT -> OBSERVE -->
+                        <path class="arrow incremental#3" d="M 300 500 A 200 200 0 0 1 100 300" marker-end="url(#arrow)" />
+                        <!-- OBSERVE -> PERCEIVE -->
+                        <path class="arrow incremental#4" d="M 100 300 A 200 200 0 0 1 300 100" marker-end="url(#arrow)"/>
+                    </g>  
+                </svg>
+                </div>
+
+        .. class:: incremental-list
+
+        - Führt interne „Denk“-Schritte vor der Antwort aus
+        - Reflektiert, prüft und verbessert den Code, bevor er ausgegeben wird
+        - Langsamer, aber zuverlässiger bei komplexen Aufgaben
+        - Beispiel: Überlegt Algorithmus-Varianten, Edge-Cases und Tests, bevor Code zurückkommt
+
+.. supplemental::
+
+    .. summary::
+        :class: incremental
+
+        Normale LLMs sind schnell für Routinetätigkeiten – Thinking-LLMs liefern bessere Ergebnisse bei schwierigen Programmieraufgaben.
+
+
+
 .. class:: transition-scale
 
 Prompting-Strategien für Code-Generierung mit LLMs
@@ -129,33 +202,6 @@ Typische Stolperfallen beim Code-Prompting
 
 
 
-LLMs und Code-Generierung
----------------------------------------------------
-
-.. class:: columns incremental-list
-
-   * **Normales LLM**
-
-     .. class:: incremental-list
-
-     - Antwortet direkt: Eingabe → Ausgabe
-     - Schnell, ausreichend für einfache Aufgaben
-     - Risiko: unvollständiger oder fehlerhafter Code bei komplexeren Problemen
-     - Beispiel: „Schreibe eine Python-Funktion für Fibonacci-Zahlen“ → sofortiger Code
-
-   * **Thinking-LLM**
-
-     .. class:: incremental-list
-
-     - Führt interne „Denk“-Schritte vor der Antwort aus
-     - Reflektiert, prüft und verbessert den Code, bevor er ausgegeben wird
-     - Langsamer, aber zuverlässiger bei komplexen Aufgaben
-     - Beispiel: Überlegt Algorithmus-Varianten, Edge-Cases und Tests, bevor Code zurückkommt
-
-.. summary::
-    :class: incremental
-
-    Normale LLMs sind schnell für Routinetätigkeiten – Thinking-LLMs liefern bessere Ergebnisse bei schwierigen Programmieraufgaben.
 
 
 

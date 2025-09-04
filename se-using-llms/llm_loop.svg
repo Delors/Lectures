@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="600" viewBox="0 0 600 600" font-size="28">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#111"/>
+    </marker>
+    <style>
+      .label { font-family: "Noto Sans Display"; font-weight: 400; fill: #111; }
+      .arrow { fill: none; stroke: darkgray; stroke-width: 6; marker-end: url(#arrow); }
+    </style>
+  </defs>
+  
+  <!-- Circle center (300,300), radius 200 -->
+  <!-- Labels -->
+  <text class="label" x="300" y="140" text-anchor="middle">PERCEIVE</text>
+  <text class="label" x="420" y="310" text-anchor="middle">REASON</text>
+  <text class="label" x="300" y="480" text-anchor="middle">ACT</text>
+  <text class="label" x="180" y="310" text-anchor="middle">OBSERVE</text>
+  
+  
+  <!-- Arcs with arrows (clockwise) -->
+  <g transform="rotate(2.5,300,300)"> 
+    <!-- PERCEIVE -> REASON -->
+    <path class="arrow" d="M 300 100 A 200 200 0 0 1 500 300" />
+    <!-- REASON -> ACT -->
+    <path class="arrow" d="M 500 300 A 200 200 0 0 1 300 500" />
+    <!-- ACT -> OBSERVE -->
+    <path class="arrow" d="M 300 500 A 200 200 0 0 1 100 300" />
+    <!-- OBSERVE -> PERCEIVE -->
+    <path class="arrow" d="M 100 300 A 200 200 0 0 1 300 100" />
+  </g>  
+</svg>
