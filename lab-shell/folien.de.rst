@@ -18,7 +18,7 @@ Eine kurze Wiederholung / Einführung.
 
 :Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
 :Kontakt: michael.eichberg@dhbw.de
-:Version: 1.2
+:Version: 1.2.1
 
 .. supplemental::
 
@@ -51,7 +51,7 @@ Einloggen auf einem Server
 .. class:: incremental-list
 
 1. Starten Sie eine Shell (z. B. Terminal oder iTerm auf MacOS bzw. Linux; cmd oder Powershell unter Windows.)
-2. Verwenden Sie SSH, um sich auf dem Server einzuloggen. Sollte Ihr Accountname zum Beispiel ``mueller`` sein und der Server z. B. unter der IP ``141.72.12.103`` erreichbar sein, dann können Sie sich wie folgt auf dem Server einloggen *wenn passwort-basierte Authentifizierung möglich ist\ [#]_*:
+2. Verwenden Sie SSH, um sich auf dem Server einzuloggen. Sollte Ihr Accountname zum Beispiel ``mueller`` sein und der Server z. B. unter der IP ``141.72.12.103`` erreichbar sein, dann können Sie sich wie folgt auf dem Server einloggen *wenn passwort-basierte Authentifizierung möglich ist*\ [#]_\ :
 
    .. code:: bash
         :class: copy-to-clipboard
@@ -941,9 +941,9 @@ Software nachinstallieren
 
   - ``yum`` (RedHat, CentOS, ...)
   - ``pacman`` (Arch Linux, ...)
-  - ``brew`` oder ``macports`` (MacOS) [*]_
+  - ``brew`` oder ``macports`` (MacOS) [#]_
 
-.. [*] Beide sind in diesem Fall nicht Teil des Betriebssystems, sondern müssen erst nachinstalliert werden, bevor damit weitere Software nachinstalliert werden kann.
+.. [#] Beide sind in diesem Fall nicht Teil des Betriebssystems, sondern müssen erst nachinstalliert werden, bevor damit weitere Software nachinstalliert werden kann.
 
 .. container:: incremental
 
@@ -954,6 +954,11 @@ Software nachinstallieren
         :number-lines:
 
         sudo apt install ent
+
+.. remark::
+    :class: incremental
+
+    Die meiste Software (z. B. Laufzeitumgebungen wie NodeJs) lassen sich auch als normaler Nutzer für die eigene Nutzung installieren.
 
 
 
