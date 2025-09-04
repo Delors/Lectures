@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <style>
+        /* Grid Container */
+        .stack {
+            display: grid;
+            grid-template-columns: auto;
+            grid-template-rows: auto;
+            grid-template-areas: stack;
+        }
+
+        /* Grid Item */
+        .card {
+
+            grid-column: 1 / 2;
+            grid-row: 1 / 2;
+
+            background-color: rgba(100, 100, 100, 0.897);
+            padding: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="stack">
+        <div class="card">
+            Dies ist ein Test.
+        </div>
+        <div class="card" style="visibility: hidden;">
+            2. Test.
+            <p>
+                Dies ist ein weiterer Test.
+            </p>
+        </div>
+    </div>
+
+</body>
+
+</html>
