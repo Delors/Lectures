@@ -25,7 +25,7 @@ Formale Sprachen
 
 :Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
 :Kontakt: michael.eichberg@dhbw.de, Raum 149B
-:Version: 1.1.1
+:Version: 1.1.2
 
 .. container:: peripheral
 
@@ -1510,17 +1510,20 @@ Englische Grammatik (Beispielhaft)
             }_{\textstyle \text{ Verbphrase }} %
             }_{\textstyle \text{Satz}} .
 
-        .. math::
-            :class: incremental
 
-            \underbrace{ %
-            \underbrace{ %
-            \underbrace{One}_{\textstyle \text{ Bestimmungswort }} \underbrace{student}_{\textstyle \text{ Substantiv }} %
-            }_{\textstyle \text{ Substantivphrase }} %
-            \underbrace{ %
-            \underbrace{might}_{\textstyle \text{ Modalverb }} \underbrace{listen}_{\textstyle \text{ Hauptwort }}
-            }_{\textstyle \text{ Verbphrase }} %
-            }_{\textstyle \text{Satz}} .
+        .. container:: incremental
+
+            .. math::
+                
+
+                \underbrace{ %
+                \underbrace{ %
+                \underbrace{One}_{\textstyle \text{ Bestimmungswort }} \underbrace{student}_{\textstyle \text{ Substantiv }} %
+                }_{\textstyle \text{ Substantivphrase }} %
+                \underbrace{ %
+                \underbrace{might}_{\textstyle \text{ Modalverb }} \underbrace{listen}_{\textstyle \text{ Hauptwort }}
+                }_{\textstyle \text{ Verbphrase }} %
+                }_{\textstyle \text{Satz}} .
 
     .. card::
 
@@ -1795,9 +1798,11 @@ Grammatiken für die vorhergehenden Beispiele
 
         :math:`M_3 = \{0\}∪\{1\}×\{0,1\}^* = \{0,1,10,11,100,101,110,111,...\}= L(G )`:
 
-        .. math::
-            :class: incremental
 
+        .. container:: incremental
+
+          .. math::
+          
             \begin{array}{rcl}
             G & = & (V ,T ,R,S) \\
             V & = & \{\text{Start},\text{A}\} \\
@@ -1812,8 +1817,9 @@ Grammatiken für die vorhergehenden Beispiele
 
         :math:`M_2 = \{0^n1^n |n ∈ \mathbb{N}\}= \{01,0011,000111,...\}= L(G )`:
 
-        .. math::
-            :class: incremental
+        .. container:: incremental
+            
+          .. math::
 
             \begin{array}{rcl}
             G & = & (V ,T ,R,S) \\
@@ -1828,8 +1834,9 @@ Grammatiken für die vorhergehenden Beispiele
 
         :math:`M_1 = \{0^n1^n2^n |n ∈ \mathbb{N}\}= \{012,001122,000111222,...\}= L(G )`:
 
-        .. math::
-            :class: incremental
+        .. container:: incremental
+            
+          .. math::
 
             \begin{array}{rcl}
             G & = & (V ,T ,R,S) \\
@@ -2397,11 +2404,12 @@ Zwei Grammatiken für Terme wie :math:`{\color{red}1+ 2 * 3} ∈ L(G1) = L(G2)`:
                 S_1 & = & T
             \end{array}
 
-      .. math::
-        :class: incremental
+      .. container:: incremental
+            
+        .. math::
 
-        \underbrace{%
-            \underbrace{\underbrace{1}_{Term}+\underbrace{2}_{Term}}_{Term} * \underbrace{3}_{Term}}_{Term}
+            \underbrace{%
+                \underbrace{\underbrace{1}_{Term}+\underbrace{2}_{Term}}_{Term} * \underbrace{3}_{Term}}_{Term}
     - .. math::
 
             \begin{array}{rcl}
@@ -2416,10 +2424,11 @@ Zwei Grammatiken für Terme wie :math:`{\color{red}1+ 2 * 3} ∈ L(G1) = L(G2)`:
                 S_2 & = & Sum
             \end{array}
 
-      .. math::
-        :class: incremental
+      .. container:: incremental
+            
+        .. math::
 
-        \underbrace{%
+            \underbrace{%
             \underbrace{\underbrace{1}_{Prod}}_{Sum}+\underbrace{\underbrace{2}_{Prod} * \underbrace{3}_{Prod}}_{Prod}}_{Sum}
 
     .. question::
