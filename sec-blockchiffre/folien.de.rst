@@ -24,7 +24,7 @@ Block Chiffre und der *Data Encryption Standard (DES)*
 
 :Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
 :Kontakt: michael.eichberg@dhbw.de
-:Version: 1.1.3
+:Version: 1.1.4
 :Basierend auf: *Cryptography and Network Security - Principles and Practice, 8th Edition, William Stallings*
 
 .. supplemental::
@@ -630,7 +630,7 @@ Erschöpfende Schlüsselsuche
 
     .. presenter-note::
 
-        :math:`10^9` = eine Milliarde; :math:`10^{13}` = 10 Billionen; :math:`10^{60}` = 1 Dezillion
+        10⁹ = eine Milliarde; 10¹³ = 10 Billionen; 10⁶⁰ = 1 Dezillion
 
 .. csv-table::
     :class: highlight-row-on-hover font-size-80 incremental-table-rows
@@ -640,13 +640,13 @@ Erschöpfende Schlüsselsuche
     :width: 100%
 
     "Schlüsselgröße (bits)", Chiffre, "Anzahl der alternativen
-    Schlüssel", "Zeit benötigt bei :math:`10^9` Entschlüsselungen/s", "Zeit benötigt bei :math:`10^{13}` Entschlüsselungen/s"
-    56, DES, ":math:`2^{56}` ≈ :math:`7.2 \times 10^{16}`", :math:`1.125` Jahre, 1 Stunde
-    128, AES, ":math:`2^{128}` ≈ :math:`3.4 \times 10^{38}`", ":math:`5.3 \times 10^{21}` Jahre", ":math:`5.3 \times 10^{17}` Jahre"
-    168, Triple DES, ":math:`2^{168}` ≈ :math:`3.7 \times 10^{50}`", ":math:`5.8 \times 10^{33}` Jahre", :math:`5.8 × 10^{29}` Jahre
-    192, AES, ":math:`2^{192}` ≈ :math:`6.3 \times 10^{57}`", ":math:`2^{191}` ns = :math:`9.8 \times 10^{40}` Jahre", ":math:`9.8 \times 10^{36}` Jahre"
-    256, AES, ":math:`2^{256}` ≈ :math:`1.2 \times 10^{77}`", ":math:`2^{255}` ns = :math:`1.8 \times 10^{60}` Jahre", ":math:`1.8 \times 10^{56}` Jahre"
-    26 Zeichen (Permutation), Mono-alphabetisch, :math:`26!` = :math:`4 \times 10^{26}`, ":math:`6.3 \times 10^9` Jahre", :math:`6.3 × 10^6` Jahre
+    Schlüssel", "Zeit benötigt bei 10⁹ Entschlüsselungen/s", "Zeit benötigt bei 10¹³ Entschlüsselungen/s"
+    56, DES, "2⁵⁶ ≈ 7.2 ⨉⨉ 10¹⁶", 1.125 Jahre, 1 Stunde
+    128, AES, "2¹²⁸ ≈ 3.4 ⨉ 10³⁸", "5.3 ⨉ 10²¹ Jahre", "5.3 ⨉ 10¹⁷ Jahre"
+    168, Triple DES, "2¹⁶⁸ ≈ 3.7 ⨉ 10⁵⁰", "5.8 ⨉ 10³³ Jahre", 5.8 × 10²⁹ Jahre
+    192, AES, "2¹⁹² ≈ 6.3 ⨉ 10⁵⁷", "2¹⁹¹ ns = 9.8 ⨉ 10⁴⁰ Jahre", "9.8 ⨉ 10³⁶ Jahre"
+    256, AES, "2²⁵⁶ ≈ 1.2 ⨉ 10⁷⁷", "2²⁵⁵ ns = 1.8 ⨉ 10⁶⁰ Jahre", "1.8 ⨉ 10⁵⁶ Jahre"
+    26 Zeichen (Permutation), Mono-alphabetisch, 26! = 4 ⨉ 10²⁶, "6.3 ⨉ 10⁹ Jahre", 6.3 × 10⁶ Jahre
 
 
 
@@ -786,8 +786,8 @@ Triple-DES mit zwei Schlüsseln
 
 Die offensichtliche Antwort auf den *Meet-in-the-middle*-Angriff ist die dreifache Verschlüsselung mit drei verschiedenen Schlüsseln.
 
-- Dies erhöht die Kosten des *Meet-in-the-Middle*-Angriffs auf :math:`2^{112}`, was jenseits dessen liegt, was praktikabel ist.
-- Das hat den Nachteil, dass eine Schlüssellänge von :math:`56\,bits \times 3 = 168\,bits` erforderlich ist, was etwas unhandlich sein kann.
+- Dies erhöht die Kosten des *Meet-in-the-Middle*-Angriffs auf 2¹¹², was jenseits dessen liegt, was praktikabel ist.
+- Das hat den Nachteil, dass eine Schlüssellänge von 56 bits ⨉ 3 = 168 bits erforderlich ist, was etwas unhandlich sein kann.
 - Als Alternative schlug Tuchman eine dreifache Verschlüsselungsmethode vor, die nur zwei Schlüssel verwendet.
 - 3DES mit zwei Schlüsseln war eine Alternative zu DES und wurde in die Schlüsselverwaltungsstandards ANSI X9.17 und ISO 8732 aufgenommen.
 
@@ -858,3 +858,9 @@ Triple-DES mit drei Schlüsseln
     Wenn man die obige Implementierung anpasst und testet, wird sofort deutlich, dass die Verwendung einer ungeeigneten f-Funktion zu keinerlei Sicherheit führt und dass der Entwurf einer solchen Funktion nicht trivial ist. Außerdem ist es notwendig, alle möglichen Extremfälle zu berücksichtigen.
 
     Eine Java Implementierung (d. h. ein Java Script) (ohne Keyschedule) ist hier zu finden: `Feistel.java <https://github.com/Delors/delors.github.io/blob/main/sec-blockchiffre/resources/Feistel.java>`__
+
+    Folgender Prompt kann ggf. genutzt werden, um eine passende Implementierung in einer anderen Sprache (z. B. Java, Scala, Python, C, JavaScript ...) zu erhalten:
+
+    ::
+
+        Implementiere mir in Java 21 oder neuer eine Klasse mit einer Methode, die eine Feistelchiffre realisiert. Die Methode soll über der Rundenfunktion F parametrisierbar sein. Implementiere mir auch ein paar Beispiele für Rundenfunktionen. Insbesondere eine Funktion, die einfach alle Werte auf einen Konstanten Wert abbildet. Weiterhin benötige ich eine Rundenfunktion, die in Abhängigkeit von einer Rundenschlüsselfunktion die Verschlüsselung durchführt. Die Verschlüsselungsmethode soll nach jeder Runde alle Werte ausgeben, um das Verständnis zu ermöglichen. Bitte lege mir auch direkt ein Build-Skript an und generiere entsprechende Tests.
