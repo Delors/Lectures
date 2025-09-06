@@ -22,7 +22,9 @@ W3WI_108 - Programmierung 1
 Inhalte gem. MHB
 ---------------------------------
 
-.. container:: scrollable
+.. story::
+
+  .. class:: incremental-list 
 
   :Prinzipien der Programmerstellung: Darstellung von Algorithmen, Erstellen von Quellcode, Programmierstil, Übersetzen, Programmausführung, Testen, Fehlersuche.
   :Aufbau der Programmiersprache: Grundstruktur eines Programms, Variablen, einfache Datentypen, Operatoren und Ausdrücke, Anweisungen, Ablaufsteuerung, Kontrollstrukturen, strukturierte Datentypen bzw. Referenzdatentypen (Felder und Klassen). 
