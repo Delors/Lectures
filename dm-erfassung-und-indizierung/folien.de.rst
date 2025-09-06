@@ -164,13 +164,13 @@ Beispiel für Eingangspostbearbeitung
 
 .. grid::
 
-    .. cell::
+    .. cell:: width-40
 
         • Workflow zur strukturierten Abarbeitung
         • Ausnahmebehandlungen vorsehen
         • Möglichst automatische Klassifikation und Indizierung
 
-    .. cell::
+    .. cell:: width-60
 
         .. image:: drawings/eingangspostbearbeitung.svg
 
