@@ -16,7 +16,7 @@ Eine erste Einführung in die Sicherheit von (verteilten) Systemen\ [#]_
 
 :Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
 :Kontakt: michael.eichberg@dhbw.de
-:Version: 1.3.5
+:Version: 1.3.6
 
 .. [#] Die Folien basieren unter anderem auf einem Foliensatz von Prof. Dr. Henning Pagnia.
 
@@ -734,7 +734,7 @@ Distributed-Reflected-Denial-of-Service Angriff
 
 
 
-Distributed Denial-of-Service (DDoS) Angriffe
+Distributed-Denial-of-Service-Angriffe (DDoS)
 --------------------------------------------------------------------------------
 
 .. deck::
@@ -761,6 +761,15 @@ Distributed Denial-of-Service (DDoS) Angriffe
 
             -- `22.06.2025 Heise.de - Rekord DDoS Angriff <https://www.heise.de/news/Junk-Traffic-Flut-Rekord-DDoS-Angriff-auf-Provider-mit-7-3-TBit-s-10455216.html>`__
 
+    .. card::
+
+        .. epigraph::
+
+            [...] Der letzte rekordverdächtige Überlastungsangriff ist noch gar nicht so lange her, da vermeldet Cloudflare schon den nächsten beobachteten Spitzenwert. Am Montag erreichte ein Distributed-Denial-of-Service-Angriff (DDoS) in der Spitze eine Last von 11,5 Terabit pro Sekunde. Das entspricht umgerechnet mehr als 1,4 Terabyte je Sekunde oder dem Inhalt von 184 randvollen DVDs.
+
+            [...] Dabei sendeten die Angreifer 5,1 Milliarden Pakete pro Sekunde (Bpps). Bei letzterer handelte es sich demnach um eine UDP-Flood-Attacke, die ihren Ausgangspunkt hauptsächlich in der Google-Cloud hatte. Die Zeitspanne, die der Höchstlast-Angriff einnahm, war etwa 35 Sekunden lang, schreibt Cloudflare weiter.
+
+            -- `03.09.2025 - Heise.de: Überlastungsattacke erreicht 11,5 TBit pro Sekunde <https://www.heise.de/news/Ueberlastungsattacke-erreicht-11-5-TBit-pro-Sekunde-10630141.html>`__
 
 
 Distributed Denial-of-Service Angriffe - Beispiele
