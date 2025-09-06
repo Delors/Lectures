@@ -583,10 +583,11 @@ Konvergenz von Folgen - Beispiel
 
 Die Folge :math:`a_n = {n^2 + 1 \over n^3}` konvergiert gegen :incremental:`0`, da:
 
-.. math::
-    :class: incremental
+.. container:: incremental
 
-    \lim_{{n \to \infty}} {n^2 + 1 \over n^3} = \lim_{{n \to \infty}} {n^3( 1/n + 1/n^3) \over n^3} = \lim_{{n \to \infty}} {( 1/n + 1/n^3) \over 1} = 0
+    .. math::
+
+        \lim_{{n \to \infty}} {n^2 + 1 \over n^3} = \lim_{{n \to \infty}} {n^3( 1/n + 1/n^3) \over n^3} = \lim_{{n \to \infty}} {( 1/n + 1/n^3) \over 1} = 0
 
 .. class:: incremental
 
@@ -623,10 +624,11 @@ Wir möchten :math:`f(x) = \frac{\ln(x)}{x^{2/3}}` für :math:`x \to \infty` unt
 
         .. rubric:: Anwendung von L'Hôpital
 
-        .. math::
-            :class: incremental
+        .. container:: incremental
 
-            \lim_{x \to \infty} \frac{\ln(x)}{x^{2/3}} = \lim_{x \to \infty} \frac{\frac{d}{dx}(\ln(x))}{\frac{d}{dx}(x^{2/3})} = \lim_{x \to \infty} \frac{\frac{1}{x}}{\frac{2}{3}x^{-1/3}}
+            .. math::
+
+                \lim_{x \to \infty} \frac{\ln(x)}{x^{2/3}} = \lim_{x \to \infty} \frac{\frac{d}{dx}(\ln(x))}{\frac{d}{dx}(x^{2/3})} = \lim_{x \to \infty} \frac{\frac{1}{x}}{\frac{2}{3}x^{-1/3}}
 
         .. container:: incremental
 
@@ -1592,7 +1594,7 @@ In Hinblick auf den Zeitaufwand gilt:
         .. solution::
             :pwd: Zaehlen_der_Schritte
 
-            .. code:: pseudocode
+            .. code:: pascal
                 :number-lines:
 
                 Algorithmus Power(x,n)      # Anzahl der Rechenschritte
@@ -1648,7 +1650,7 @@ In Hinblick auf den Zeitaufwand gilt:
 
         Bestimmung der Anzahl Rechenschritte in Abhängigkeit von der Anzahl an Bits von :math:`n`:
 
-        .. code:: pseudocode
+        .. code:: pascal
             :number-lines:
 
             Algorithmus BinPower(x,n)       # Anzahl der Rechenschritte
@@ -2047,7 +2049,7 @@ Teilende Verfahren, *bzw. Divide-and-Conquer-Algorithmen*, sind typischerweise s
 
 .. example::
 
-    Wird beispielsweise das Problem immer halbiert, ist also :math:`a_{2n} = a_n + 1` und ist :math:`a_1 = 1`, dann würde für die Folgenglieder gelten :math:`a_1 = 1, a_2 = 2, a_4 = 3, a_8 = 4, a_{16} = 5, ...`.
+    Wird beispielsweise das Problem immer halbiert, ist also :math:`a_{2n} = a_n + 1` und ist :math:`a_1 = 1`, dann würde für die Folgenglieder gelten :math:`a_1 = 1, a_2 = 2, a_4 = 3, a_8 = 4, a_{16} = 5, …`.
 
     Verallgemeinert: :math:`a_n = \log_2(n) +1`.
 
@@ -2073,7 +2075,7 @@ Teilende Verfahren, *bzw. Divide-and-Conquer-Algorithmen*, sind typischerweise s
 Rekurrenzgleichung für rekursiv teilende Algorithmen
 -------------------------------------------------------
 
-.. container:: scrollable
+.. story::
 
     - In vielen Fällen geben rekursiv teilende Algorithmen Grund zur Hoffnung, dass die Laufzeit einen relevanten logarithmischen Anteil hat.
 
@@ -2089,10 +2091,12 @@ Rekurrenzgleichung für rekursiv teilende Algorithmen
         - :math:`{n \over b}`: die Größe jedes rekursiven Unterproblems wobei  :math:`b` die Anzahl der Teile ist in die das Problem geteilt wird,
         - :math:`f(n)`: der Aufwand während der Ausführung (z. B. der Aufwand für das Teilen der Eingabedaten und das Zusammenführen der Teillösungen).
 
-      .. math::
-        :class: incremental
+    
+      .. container:: incremental
+         
+         .. math::
 
-        T(n) = a \cdot T\left({n \over b}\right) + f(n)
+            T(n) = a \cdot T\left({n \over b}\right) + f(n)
 
 
     .. container:: incremental 
@@ -2104,8 +2108,6 @@ Rekurrenzgleichung für rekursiv teilende Algorithmen
         1. Ist der Aufwand :math:`f(n)` vernachlässigbar gegenüber dem Aufwand der weiteren Aufrufe, so ist ein rein durch die Rekursion bestimmtes Verhalten zu erwarten.
         2. Entspricht der Aufwand :math:`f (n)` genau dem Aufwand der weiteren Aufrufe, so vervielfältigt sich der Aufwand gegenüber dem 1. Fall, bleibt aber in der gleichen Größenordnung.
         3.  Ist der Aufwand :math:`f (n)` größer als der Aufwand der verbleibenden Aufrufe, so wird der Aufwand asymptotisch von :math:`f (n)` dominiert.
-
-
 
 .. supplemental::
 
