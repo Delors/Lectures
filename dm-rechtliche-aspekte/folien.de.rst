@@ -1,5 +1,5 @@
 .. meta::
-    :version: genesis
+    :version: renaissance
     :author: Michael Eichberg
     :keywords: "Dokumentenmanagement"
     :description lang=de: "Ausgewählte rechtliche Aspekte des Dokumentenmanagements"
@@ -13,11 +13,9 @@
 Rechtliche Anforderungen an das Dokumentenmanagement
 ===================================================================
 
-.. container:: smaller line-above
-
-    :Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
-    :Kontakt: michael.eichberg@dhbw.de, Raum 149B
-    :Version: 1.0.1
+:Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
+:Kontakt: michael.eichberg@dhbw.de, Raum 149B
+:Version: 1.1
 
 .. supplemental::
 
@@ -29,6 +27,9 @@ Rechtliche Anforderungen an das Dokumentenmanagement
       https://github.com/Delors/delors.github.io/issues
     
 
+
+.. class:: repetition
+
 Dokumente
 ----------
 
@@ -36,27 +37,24 @@ Dokumente
 - Dokumente dienen als Nachweis sowohl im Tagesgeschäft als auch bei Streitigkeiten. 
 - Dokumente berühren eine Reihe von gesetzlichen Regelungen, Normen und Vorschriften.
 
-.. admonition:: Warnung
-    :class: warning incremental
+.. warning:: 
+    :class: incremental
 
     Dieser Foliensatz dient ausschließlich einer grundlegenden Orientierung. Für eine abschließende juristische Bewertung ist ggf. juristischer Rat einzuholen.
 
-
-.. container:: block-footer white dhbw-gray-background text-align-center
-
-    Wiederholung
 
 
 Rechtliche Grundlagen (Deutschland - 2023)
 --------------------------------------------
 
-.. container:: scrollable far-far-smaller
+.. story:: font-size-75
 
     .. csv-table::
-        :class:  incremental fake-header-row fake-header-column highlight-line-on-hover
+        :class: sticky-header highlight-row-on-hover incremental-table-rows
         :widths: 20 10 10 10 10 10 10 10 10 10 10 10
-        
-        "gesetzliche Grundlagen, rechtliche Themen", AO, DSGVO, BDSG, BetrVG, BGB, GoB, GoBD, HGB, "eIDAS VDG", UrhG, ZPO
+        :header: "gesetzliche Grundlagen, rechtliche Themen", AO, DSGVO, BDSG, BetrVG, BGB, GoB, GoBD, HGB, "eIDAS VDG", UrhG, ZPO
+        :stub-columns: 1
+
         "Ordnungsmäßigkeit, Integrität, Authentizität", X, X, X, , X, X, x, X, X, , 
         Schutz vor Verlust (Datensicherheit), , X, X, , , , x, , , , 
         "Schutz vor unberechtigtem Zugriff
@@ -69,11 +67,9 @@ Rechtliche Grundlagen (Deutschland - 2023)
         "Schutz vor
         Verletzung des Urheberrechts", , , , , , , , , , X, 
 
-    .. container:: smaller minor
+    .. container:: incremental
 
         (Quelle: S. 30, Tab. 3-1 in *Dokumentenmanagement* von K. Götzer, Pc. Maué, U. Emmert, 2023, dpunkt.verlag)
-
-
 
 .. supplemental::
 
@@ -97,12 +93,14 @@ Rechtliche Grundlagen (Deutschland - 2023)
 Rechtliche Grundlagen (Schweiz - 2023)
 --------------------------------------------
 
-.. csv-table:: 
-    :class: far-smaller wobble incremental fake-header-row
+.. story:: font-size-75
+
+  .. csv-table:: 
+    :class: incremental-table-rows 
     :widths: 20 10 10 10 10 10 10
-    
-    "Gesetzliche Grundlagen/ rechtliche Themen", "DSG, VDSG", GeBüV, "MWSTG,
-    MWSTGV", OR, UrhG, "ZertES, VZertES"
+    :header: "Gesetzliche Grundlagen/ rechtliche Themen", "DSG, VDSG", GeBüV, "MWSTG, MWSTGV", OR, UrhG, "ZertES, VZertES"
+    :stub-columns: 1
+
     "Ordnungsmäßigkeit, Integrität, Authentizität", , X, X, X, , X
     "Schutz vor Verlust 
     (Datensicherung)", , X, , , , 
@@ -113,7 +111,15 @@ Rechtliche Grundlagen (Schweiz - 2023)
 
 .. supplemental::
 
-    DSG - Bundesgesetz über den Datenschutz; VDSG - Verordnung zum Bundesgesetz über den Datenschutz; GeBüV - Geschäftsbücherverordnung; MWSTG - Mehrwertsteuergesetz, MWSTGV - Verordnung zum Mehrwertsteuergesetz; OR - Obligationsrecht; UrhG - Gesetz über Urheberrecht und verwandte Schutzrechte; ZertES - Bundesgesetz über Zertifizierungsdienste im Bereich der elektronischen Signatur, VZertES - Verordnung über Zertifizierungsdienste im Bereich der elektronischen Signatur
+    :DS: Bundesgesetz über den Datenschutz
+    :VDSG: Verordnung zum Bundesgesetz über den Datenschutz
+    :GeBüV: Geschäftsbücherverordnung
+    :MWSTG: Mehrwertsteuergesetz
+    :MWSTGV: Verordnung zum Mehrwertsteuergesetz
+    :OR: Obligationsrecht
+    :UrhG: Gesetz über Urheberrecht und verwandte Schutzrechte
+    :ZertES: Bundesgesetz über Zertifizierungsdienste im Bereich der elektronischen Signatur
+    :VZertES: Verordnung über Zertifizierungsdienste im Bereich der elektronischen Signatur
 
 
 
@@ -136,13 +142,13 @@ Allgemeine Grundsätze: Ordnungsmäßigkeit von Dokumenten
 Allgemeine Grundsätze: Integrität von Dokumenten
 -------------------------------------------------
 
-.. class:: incremental 
+.. class:: incremental-list 
 
 - gilt als gewahrt, wenn Dokumente inhaltlich vollständig und unveränderlich erhalten sind.
 
   Mögliche formalisierte Kriterien:
 
-  .. class:: incremental
+  .. class:: incremental-list
 
   - Seitennummerierung mit Bezug zur Gesamtzahl der Seiten
   - Kordel und Siegel bei notariellen Urkunden
@@ -155,11 +161,12 @@ Allgemeine Grundsätze: Integrität von Dokumenten
 Allgemeine Grundsätze: Authentizität von Dokumenten
 ---------------------------------------------------
 
-.. class:: incremental
+.. class:: incremental-list
 
 - Nachweis des Ursprungs des Dokuments.
 - Bei originären Papierdokumenten, typischerweise durch handschriftliche Signatur auf dem Originaldokument.
 - Die Authentizität von elektronischen Dokumenten kann durch Signaturen gewährleistet werden. 
+
 
 
 Revisionssicherheit 
@@ -188,14 +195,15 @@ Grundsätze ordnungsgemäßer Buchführung (GoB)
   - Belegprinzip
 
 
-.. class:: center-child-elements    
 
 §126a BGB: Schriftform
 ------------------------
 
-.. container:: foundations
+.. container:: accentuate
 
     Die elektronische Form wird mit der Schriftform im deutschen Recht gleichgestellt. Die gesetzliche Schriftform ist erfüllt, wenn elektronische Dokumente mit einer qualifizierten elektronischen Signatur versehen sind.
+
+.. container:: incremental
 
     Die Beweiskraft elektronisch signierter Dokumente ist in der ZPO geregelt. 
 
@@ -204,49 +212,46 @@ Grundsätze ordnungsgemäßer Buchführung (GoB)
 Elektronische Signaturen
 ----------------------------
 
-:einfache elektronische Signatur: 
+.. story::
 
-    .. class:: smaller
+  .. class:: incremental-list dd-margin-left-6em
+
+  :einfache elektronische Signatur: 
 
     Die Daten sind keiner Person zugeordnet. 
 
-.. class:: incremental
+  :fortgeschrittene elektronische Signatur: 
 
-:fortgeschrittene elektronische Signatur: 
+    - ausschließlich einer best. Person zugeordnet. 
+    - ermöglicht die Identifizierung der Person.
+    - wird mit Mitteln erzeugt, die ausschließlich die Person unter alleiniger Kontrolle hat. 
+    - eine nachträgliche Veränderung der Daten kann erkannt werden.
 
-  .. class:: smaller
+  :qualifizierte elektronische Signatur: 
 
-  1. ausschließlich einer best. Person zugeordnet. 
-  2. ermöglicht die Identifizierung der Person.
-  3. wird mit Mitteln erzeugt, die ausschließlich die Person unter alleiniger Kontrolle hat. 
-  4. eine nachträgliche Veränderung der Daten kann erkannt werden.
+    - basiert auf einem qualifizierten Zertifikat für eine natürliche Person.
+    - wird mit einem sicheren Signaturerstellungsgerät erzeugt.
 
-.. class:: incremental
-
-:qualifizierte elektronische Signatur: 
-
-  .. class:: smaller
-
-  1. basiert auf einem qualifizierten Zertifikat für eine natürliche Person.
-  2. wird mit einem sicheren Signaturerstellungsgerät erzeugt.
-
-.. class:: incremental
-
-:elektronisches Siegel: 
-
-    .. class:: smaller
+  :elektronisches Siegel: 
 
     Erfolgt mithilfe eines Zertifikats, dass auf den Namen einer Organisation ausgestellt wurde.
+
+.. supplemental::
+
+  Die einfache elektronische Signatur ist die am wenigsten sichere Form der elektronischen Signatur.
+  
 
 
 Scannen von externen Dokumenten
 ------------------------------------------------------------
 
-.. class:: incremental
+.. class:: incremental-list list-with-explanations
 
 - Externe Dokumente dürfen ersetzend gescannt werden.
-- Die Dokumente sind nach dem Stand der Technik zu scannen. (TR-ESOR 03125 bzw. TR-RESISCAN 03138)
-- Bei gescannten öffentlichen Urkunden gilt §371 B ZPO; d. h. der Beweiswert bleibt erhalten wenn der Scan von einer öffentlichen Behörde oder einer mit öffentlichen Glauben versehen Personen durchgeführt wurde.
+- Die Dokumente sind nach dem Stand der Technik zu scannen. 
+
+  (TR-ESOR 03125 bzw. TR-RESISCAN 03138)
+- Bei gescannten öffentlichen Urkunden gilt §371b ZPO; d. h. der Beweiswert bleibt erhalten wenn der Scan von einer öffentlichen Behörde oder einer mit öffentlichen Glauben versehen Personen durchgeführt wurde.
 - Relevante Vorschriften ergeben sich aus TR 3138 Resiscan des BSI.
 - Durch eine verbindliche Auskunft nach Paragraph 38 AO kann eine Garantie für die Akzeptanz gescannter Dokumente durch das Finanzamt erwirkt werden.
 
@@ -262,25 +267,21 @@ Datenschutz und Datensicherheit
 Datenschutz - Grundlagen
 ----------------------------
 
-.. container:: assessment
+.. attention::
 
     In Dokumentenmanagementsystem enthalten fast alle Dokumente personenbezogene Daten!
 
-.. class:: incremental
+.. class:: incremental-list dd-margin-left-6em
 
 :für Unternehmen in Deutschland und Bundesbehörden:
 
   - Datenschutz-Grundverordnung (DSGVO)
   - Bundesdatenschutz-gesetz (BDSG)
 
-.. class:: incremental
-
 :für öffentliche Stellen der Länder:
 
   - Datenschutz-Grundverordnung (DSGVO)
   - die jeweiligen Landesdatenschutzgesetze
-
-.. class:: incremental
 
 :spezielle Regelungen:
 
@@ -295,20 +296,21 @@ Datenschutz - Grundlagen
 
 Stellen, die mit personenbezogenen Daten umgehen, müssen technische und organisatorische Maßnahmen treffen, um die Anforderungen der DSGVO zu gewährleisten.
 
-.. container:: smaller incremental
+.. container:: incremental
 
     Zu gewährleisten ist:
 
-    .. class:: incremental
+    .. class:: incremental-list
 
     - die Pseudonymisierung und Verschlüsselung personenbezogener Daten.
     - die Fähigkeit, die Vertraulichkeit, Integrität, Verfügbarkeit und Belastbarkeit des Systems und der Dienste im Zusammenhang mit der Verarbeitung auf Dauer sicherzustellen.
     - die Fähigkeit, die Verfügbarkeit der personenbezogenen Daten und den Zugang zu Ihnen bei einem Zwischenfall wiederherstellen zu können.
     - ein dokumentiertes Verfahren bezüglich der Wirksamkeit der technischen und organisatorischen Maßnahmen in Hinblick auf die Gewährleistung der Sicherheit der Verarbeitung.
 
-    .. container:: assessment text-align-center incremental
+    .. remark:: 
+      :class: incremental
 
-        Es gilt der Grundsatz der Verhältnismäßigkeit.
+      Es gilt der Grundsatz der Verhältnismäßigkeit.
 
 
 
@@ -316,6 +318,8 @@ Datensicherheit von Dokumentenverwaltungs- und Archivierungslösungen
 --------------------------------------------------------------------------
 
 in folgenden Bereichen müssen Maßnahmen ergriffen werden: 
+
+.. class:: incremental-list
 
 - Personal 
 - Gebäudesicherheit
@@ -330,7 +334,7 @@ Besondere Schutzmaßnahmen bei personenbezogenen Daten (§5 DSGVO)
 
 .. rubric:: Verarbeitungsgrundsätze
 
-.. class:: incremental
+.. class:: incremental-list
 
 - Rechtmäßigkeit, Verarbeitung nach Treu und Glauben, Transparenz.
 - Zweckbindung, Verarbeitung der Daten, nur für den bei Erhebung beabsichtigten Zweck.
@@ -341,10 +345,11 @@ Besondere Schutzmaßnahmen bei personenbezogenen Daten (§5 DSGVO)
 - Rechenschaftspflicht für alle vorangegangenen Pflichten
 
 
+
 Anforderung an die Revisionssicherheit gemäß GoBD
 ---------------------------------------------------
 
-.. class:: incremental
+.. class:: incremental-list
 
 - das Verfahren zur Vergabe von Zugriffsberechtigungen muss dokumentiert und nachvollziehbar sein.
 - Zugriffsberechtigungen sind Personen bezogen zu vergeben. 
@@ -365,18 +370,21 @@ Rechte von Betroffenen gemäß DSGVO
 - Recht auf Gegendarstellung.
 
 
-.. admonition:: Achtung!
-    :class: warning incremental
+.. warning::
+    :class: incremental
 
     Diese Rechte können im Widerspruch zu anderen rechtlichen Vorschriften stehen.
 
-    (Beispiel: gezielte Korrektur von gespeicherten Daten nach DSGVO; nach HGB bzw. AO soll eine Manipulation von Daten nicht möglich sein. )
+    .. example::
+
+      Gezielte Korrektur von gespeicherten Daten nach DSGVO; nach HGB bzw. AO soll eine Manipulation von Daten nicht möglich sein.
+
 
 
 "privilegiertes Löschen"
 ---------------------------
 
-.. class:: incremental list-with-explanations
+.. class:: incremental-list list-with-explanations
 
 - die Speicherung von Daten ist bei unrechtmäßiger Verarbeitung nicht erlaubt (BDSG).
 
@@ -387,13 +395,42 @@ Rechte von Betroffenen gemäß DSGVO
   Dies muss unter erhöhten Sicherheitsanforderungen (Vier-Augen-Prinzip, erweiterte Protokollierung) geschehen; das Vorgehen muss dokumentiert sein.
 
 
+
 Datenschutz und Datensicherheit bei der Verwendung von Cloud-Diensten
 -----------------------------------------------------------------------
 
 - Die Regelungen bezüglich der Datensicherheit sind im Cloud Vertrag festzuhalten.
 - Sicherheitsvereinbarungen werden häufig über Security Service Level Agreements (SSLAs) getroffen.
 - Gemäß Datenschutzrecht ist diejenige Stelle, die die Entscheidungen bzgl. des Umgangs mit den personenbezogenen Daten trägt, auch rechtlich verantwortlich.
--  Auch bei der Auftragsverarbeitung bleibt der Cloud Anwender als Auftraggeber verantwortlich; eine Übertragung der Verantwortlichkeit ist nicht möglich.
+- Auch bei der Auftragsverarbeitung bleibt der Cloud Anwender als Auftraggeber verantwortlich; eine Übertragung der Verantwortlichkeit ist nicht möglich.
+
+
+
+Datenschutz beim Vertrauen in US-amerikanische Cloud-Anbieter
+-----------------------------------------------------------------
+
+.. epigraph::
+
+  [...] Microsoft gibt keine Garantie, dass EU-Daten nie an die US-Regierung weitergegeben werden: Das sagte Anton Carniaux, Chefjustiziar von Microsoft France, bei einer Anhörung vor dem französischen Senat des Parlaments aus. Konkret ging es um Daten, die Microsoft von der Union des Groupements d'Achats Publics (UGAP) erhält, der zentralen Beschaffungsstelle des öffentlichen Sektors für Schulen, Rathäuser und kommunale Verwaltungen. Auf die Frage, ob der Konzern niemals deren Informationen an die US-Regierung ohne ausdrückliche Zustimmung der französischen Behörden übermitteln würde, antwortete Carniaux, dass er das unter Eid nicht garantieren könne.
+
+  [...] Der Konzern wolle ferner die betroffenen Kunden hierüber informieren, müsse bei den US-Behörden jedoch erst um eine Erlaubnis hierzu bitten. [...]
+
+  -- `21.07.2025 - Heise.de: Keine Garantien: Microsoft muss EU-Daten an USA übermitteln  <https://www.heise.de/news/Nicht-souveraen-Microsoft-kann-Sicherheit-von-EU-Daten-nicht-garantieren-10494684.html?wt_mc=sm.red.ho.mastodon.mastodon.md_beitraege.md_beitraege>`__
+
+
+
+Datenschutz beim Austausch von Daten mit den USA
+-------------------------------------------------
+
+.. epigraph::
+
+  Zwischen der EU und den USA sollen Daten unkompliziert fließen - unter Einhaltung hoher Schutzstandards. Ist das dafür bestehende Abkommen ausreichend? Ja, sagt das Gericht der EU - und sendet zugleich ein wichtiges Signal.
+
+  [...] Um regelmäßigen Datentransfer zu vereinfachen und dabei gleichzeitig einen hohen Datenschutzstandard zu gewährleisten, gibt es zwischen der Europäischen Union und den USA [...] Das *Data Privacy Framework* (DPF) - eine Rahmenvereinbarung [:red:`aus dem Jahr 2023`], die dafür sorgen soll, dass das hohe Schutzniveau für Daten in der EU auch dann nicht verwässert wird, wenn Daten aus Europa in die USA fließen. [...]
+
+  [...] Ob dieses hohe Datenschutzniveau und diese strengen Vorgaben für die US-Behörden auch unter der Präsidentschaft von Donald Trump noch gelten, hat das Gericht in seinem Urteil nicht geklärt. Es sei aber Sache der EU-Kommission, darauf ein Auge zu haben. [...]
+
+  -- `03.09.2025 - Tagesschau.de: EU-Gericht weist Klage gegen Abkommen mit den USA ab <https://www.tagesschau.de/ausland/europa/eu-datenschutz-urteil-100.html>`__ 
 
 
 
@@ -407,11 +444,11 @@ Aufbewahrungsfristen
 Die Frist
 ------------
 
-.. admonition:: Definition   
+.. definition::
     
     Frist: ein bestimmter oder bestimmbarer Zeitraum.
 
-.. class:: incremental
+.. class:: incremental-list
 
 - Die Dauer einer Aufbewahrungsfrist ist abhängig von dem Fristbeginn und dem Aufbewahrungszeitraum.
 - Die Aufbewahrungsgründe und die Inhalte der Dokumente müssen dazu bekannt sein.
@@ -423,7 +460,7 @@ Fristbeginn (vgl. §187 BGB)
 
 Häufig an ein konkretes Datum geknüpft:
 
-.. class:: incremental
+.. class:: incremental-list
 
 - z. B. 1. Januar des Folgejahres
 - an ein Ereignis
@@ -435,7 +472,7 @@ Häufig an ein konkretes Datum geknüpft:
 Aufbewahrungsgründe
 -----------------------
 
-.. class:: incremental
+.. class:: incremental-list
 
 - die Dokumente werden für betriebliche Belange benötigt (z. B. Wartung/Instandhaltung)
 - historische Gründe (z. B. Unternehmensgeschichte)
@@ -447,7 +484,7 @@ Aufbewahrungsgründe
 Gesetzliche Aufbewahrungsfristen
 ----------------------------------
 
-.. class:: incremental list-with-explanations
+.. class:: incremental-list list-with-explanations
 
 - Häufig nicht an konkrete Dokumententypen gebunden.
 - Aussagen zur Frist leiten sich ggf. aus Nachweispflichten ab.
@@ -457,13 +494,14 @@ Gesetzliche Aufbewahrungsfristen
 
   Vgl. `IHK Konstanz - Aufbewahrungsfristen (Stand 2020) <https://www.ihk.de/konstanz/recht-und-steuern/steuer-und-finanzpolitik/finverwal/aufbewahrung-von-geschaeftsunterlagen-1672476#:~:text=Die%20Aufbewahrungsfrist%20für%20Bücher%20und,und%20Rechnungen%20beträgt%20zehn%20Jahre.>`__
 - Werden auch gel. angepasst (2024 wurde die Aufbewahrungspflicht für Belege verkürzt).
-- **Direkte Aufbewahrungspflichten werden in der Fachliteratur zusammengetragen und können dort entnommen werden.**
+- *Aufbewahrungspflichten werden in der Fachliteratur zusammengetragen und können dort entnommen werden.*
+
 
 
 Aufbewahrungspflichten Ermitteln
 --------------------------------------------
 
-.. class:: incremental
+.. class:: incremental-list
 
 - Einzelheiten zu der steuerrechtlichen Aufbewahrungspflicht werden in der Abgabenordnung (primär in § 147) geregelt. 
 - Jedoch ergeben sich steuerrechtliche Aufbewahrungspflichten auch durch „andere Gesetze“ (z. B. Steuergesetze wie das Umsatzsteuergesetz).  
@@ -475,6 +513,7 @@ Aufbewahrungspflichten Ermitteln
     [... Gemeint] sind u. a. das HGB und **eine Vielzahl von Gesetzen und Verordnungen**, die für bestimmte Berufe oder Tätigkeiten Aufzeichnungs- und Buchführungspflichten vorschreiben. Beispielsweise müssen die Bewachungsbetriebe Auftragsbücher nach § 14 Abs. 2 Verordnung über das Bewachungsgewerbe i. V. m. § 34a Abs. 2 Nr. 3c Gewerbeordnung führen.
 
     -- `IHK Hamburg (Abgerufen März 2024) <https://www.ihk.de/hamburg/produktmarken/beratung-service/recht-und-steuern/steuerrecht/abgabenrecht/aufbewahrungsfristen-geschaeftsunterlagen-1157174>`__
+
 
 
 Fristfindung
@@ -496,6 +535,7 @@ Fristfindung
   3. Feststellung der entsprechenden Dokumententypen
 
 
+
 Dokumentation der Aufbewahrungsfristen
 --------------------------------------------
 
@@ -512,7 +552,7 @@ Fristenkatalog:
 Sicherstellung des gesetzlichen Zugriffs
 --------------------------------------------
 
-.. class:: list-with-explanations incremental
+.. class:: list-with-explanations incremental-list
 
 - Innerhalb der Aufbewahrungsfrist muss der Zugriff auf die Dokumente innerhalb angemessener Zeit gewährleistet sein.
 - Eine Speicherung in der Cloud ist nicht grundsätzliche verboten; der Zugriff (durch Behörden etc.) muss jedoch gewährleistet sein.
@@ -535,7 +575,7 @@ Sicherstellung des gesetzlichen Zugriffs
 Arten des Datenzugriffs
 ----------------------------
 
-.. class:: incremental list-with-explanations
+.. class:: incremental-list list-with-explanations
 
 1. unmittelbarer Zugriff auf die Daten
    
@@ -552,7 +592,7 @@ Arten des Datenzugriffs
 Sicherstellung der Beweiskraft vor Gericht
 ---------------------------------------------------
 
-.. class:: incremental list-with-explanations
+.. class:: incremental-list list-with-explanations
 
 - gem. ZPO sind insbesondere Urkunden als Beweismittel zulässig.
 - Beweisführung mittels elektronischer Dokumente erfolgt nach den Regeln des Augenscheinbeweises.
@@ -579,7 +619,7 @@ Sicherstellung der Beweiskraft vor Gericht
 Zertifizierung von Systemen und Lösungen
 --------------------------------------------
 
-.. class:: incremental list-with-explanations
+.. class:: incremental-list list-with-explanations
 
 - Prüfkriterien für Dokumentenmanagementlösungen (PK-DML) vom TÜV-IT und dem VOI. 
   
@@ -592,7 +632,7 @@ Zertifizierung von Systemen und Lösungen
 Zertifizierungen von Dokumentenmanagementsystemen
 ---------------------------------------------------
 
-.. class:: incremental
+.. class:: incremental-list
 
 - Die (Entwicklungs-)Prozesse des Herstellers sind zertifiziert (z. B. ISO 9000).
 - Die DMS Lösung wird von anderen Herstellern zertifiziert (Zweck garantierte Interoperabilität).
@@ -605,7 +645,7 @@ Zertifizierungen von Dokumentenmanagementsystemen
 Typische Zertifizierungsgrundlagen
 --------------------------------------
 
-.. class:: incremental
+.. class:: incremental-list
 
 - IEC/ISO 12119
   
