@@ -1,5 +1,5 @@
 .. meta::
-   :version: genesis
+   :version: renaissance
    :author: Michael Eichberg
    :keywords: "Reguläre Ausdrücke"
    :description lang=de: Eine erste Einführung in reguläre Ausdrücke
@@ -33,7 +33,7 @@ Reguläre Ausdrücke
 Reguläre Ausdrücke (Wiederholung)
 ----------------------------------
 
-.. class:: incremental
+.. class:: incremental-list
 
 - Reguläre Ausdrücke (:eng:`regular expressions`) sind ein Standardwerkzeug. Wir verwenden diese z. B. um Wörterbücher, Leaks und weitere Kontextinformationen zu verarbeiten.
 
@@ -48,9 +48,9 @@ Reguläre Ausdrücke (Wiederholung)
 Reguläre Ausdrücke - Zeichenklassen
 ------------------------------------
 
-.. container:: scrollable
+.. deck::
 
-   .. container:: incremental
+   .. card::
 
       Buchstaben und Zahlen können direkt in einem regulären Ausdruck verwenden, um entsprechenden Text zu finden. Zum Beispiel steht ``"a"`` für das Zeichen ``a``.
 
@@ -60,7 +60,7 @@ Reguläre Ausdrücke - Zeichenklassen
       
       findet: ``a``
     
-   .. container:: incremental line-above
+   .. card:: 
 
       Der Punkt repräsentiert ein beliebiges Zeichen - außer den Zeilenumbruch.
 
@@ -70,26 +70,26 @@ Reguläre Ausdrücke - Zeichenklassen
 
       findet: ``ab``
 
-   .. container:: incremental line-above
-            
+   .. card:: 
+
       Klassen von Zeichen können in eckigen Klammern angegeben werden "[]". 
 
-         .. code:: bash
+      .. code:: bash
 
-            echo -n "abcdefg" | grep -E "[acg]"
+         echo -n "abcdefg" | grep -E "[acg]"
 
-         findet: ``a``, ``c``, ``g``
+      findet: ``a``, ``c``, ``g``
 
-         Klassen können auch durch Bereiche beschrieben werden (``a-z``, ``A-Z``, ``0-9``):
+      Klassen können auch durch Bereiche beschrieben werden (``a-z``, ``A-Z``, ``0-9``):
 
-         .. code:: bash
+      .. code:: bash
 
-            echo -n "ab12xy" | grep -Eo "[a-z]"
+         echo -n "ab12xy" | grep -Eo "[a-z]"
 
-         findet: ``a``, ``b``, ``x``, ``y``
+      findet: ``a``, ``b``, ``x``, ``y``
 
-   .. container:: incremental line-above
-      
+   .. card:: 
+
       Welche Buchstaben genau durch eine Klasse repräsentiert werden hängt von den Spracheinstellungen ab!
 
       .. code:: bash
@@ -106,7 +106,7 @@ Reguläre Ausdrücke - Zeichenklassen
 
       findet „nur“: ``a`` 
 
-   .. container:: incremental line-above
+   .. card:: 
 
       Die Negation einer Klasse wird durch an ein ``^`` direkt am Anfang der Klasse erzwungen.
 
@@ -120,7 +120,6 @@ Reguläre Ausdrücke - Zeichenklassen
 
 Reguläre Ausdrücke - Escapezeichen
 ----------------------------------
-
 
 Der Backslash ``\`` dient als Escapezeichen für Sonderzeichen.
 
@@ -155,7 +154,7 @@ Reguläre Ausdrücke - Anker
 Reguläre Ausdrücke - Quantifizierung
 ------------------------------------- 
 
-.. container:: scrollable
+.. story::
 
    ``*``: "null oder mehr" Vorkommen des vorherigen Zeichens oder Musters.
 
@@ -186,6 +185,7 @@ Reguläre Ausdrücke - Quantifizierung
          aaa
 
 
+
 Reguläre Ausdrücke - Alternativen
 ----------------------------------
 
@@ -211,6 +211,7 @@ Reguläre Ausdrücke - Alternativen
       Schiff
 
 
+
 Reguläre Ausdrücke - Klammern
 ----------------------------------
 
@@ -224,6 +225,7 @@ Beispiel: der folgende Ausdruck findet Zeichenketten, die mit dem Zeichen aufhö
    XaaaaX
 
    $ echo "XaaaaY" | grep -Eo "^(.).*\1$" 
+
 
 
 Reguläre Ausdrücke - Lookahead
@@ -242,7 +244,8 @@ Reguläre Ausdrücke - Lookahead
    HundMa
 
 
-.. class:: transition-scale integrated-exercise
+
+.. class:: transition-scale exercises
 
 Fingerübungen
 ---------------
