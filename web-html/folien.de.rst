@@ -19,7 +19,7 @@ HTML(5)
 
 :Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
 :Kontakt: michael.eichberg@dhbw.de, Raum 149B
-:Version: 2.1.2
+:Version: 2.1.3
 
 .. supplemental::
 
@@ -67,16 +67,16 @@ Ein einfaches HTML(5) Dokument
 ------------------------------------------------
 
 .. code:: html
-    :number-lines:
     :class: copy-to-clipboard
-
+    :number-lines:
+    
     <!DOCTYPE html>
     <html lang="de">
         <head><title>Eine Webseite</title></head>
         <body>
             <h1>Informationen</h1>
-            <p><!-- Ein Kommentar.. -->
-                Ein einfacher link auf:
+            <p><!-- Ein Kommentar ... -->
+                Ein einfacher Link auf:
                 <a href="http://www.michael-eichberg.de">
                     Michael Eichberg's Homepage
                 </a>.
@@ -122,7 +122,7 @@ HTML\ [#]_ - Historie
 HTML Universum
 ------------------------------------------------
 
-Spezifikationen (siehe [#]_), die im Rahmen  der Entwicklung von Webseiten/Webanwendungen relevant sind:
+Spezifikationen (siehe [#]_), die im Rahmen der Entwicklung von Webseiten/Webanwendungen relevant sind:
 
 .. class:: incremental-list
 
@@ -143,18 +143,18 @@ Spezifikationen (siehe [#]_), die im Rahmen  der Entwicklung von Webseiten/Weban
 HTML vs. XML Syntax vs. DOM
 ------------------------------------------------
 
-Die *HTML Spezifikation* definiert eine abstrakte Sprache zur Beschreibung von Dokumenten. XML und HTML sind konkrete Syntaxbeschreibungen dieser abstrakten Sprache.
+Die HTML-Spezifikation definiert eine abstrakte Sprache zur Beschreibung von Dokumenten. XML und HTML sind konkrete Syntaxbeschreibungen dieser abstrakten Sprache.
 
 .. class:: list-with-explanations incremental-list
 
 - HTML ist eine Beschreibungssprache für entsprechende Dokumente.
 - XML ist eine allg. Beschreibungssprache, die auch für HTML verwendet wurde. (MIME Type: ``application/xhtml+xml``)
 
-  (Heutzutage wird XML zur Beschreibung von HTML Dokumenten nicht mehr verwendet.)
+  (Heutzutage wird XML zur Beschreibung von HTML-Dokumenten nicht mehr verwendet.)
 
 - Das DOM (:eng:`Document Object Model`) ist die In-Memory Darstellung eines Dokuments.
 
-  Das DOM ist (auch) eine API, um HTML Dokumente zu manipulieren.
+  Das DOM ist (auch) eine API, um HTML-Dokumente zu manipulieren.
 
 .. hint::
     :class: incremental
@@ -166,7 +166,7 @@ Die *HTML Spezifikation* definiert eine abstrakte Sprache zur Beschreibung von D
     **Beispiele für Unterschiede**
 
     - Namespaces werden nicht von der HTML-Syntax unterstützt, aber sowohl vom DOM als auch der XML-Syntax unterstützt.
-    - :html:`noscript` wird nur in HTML Dokumenten unterstützt.
+    - :html:`noscript` wird nur in HTML-Dokumenten unterstützt.
     - Kommentare, die :html:`-->` enthalten, werden nur vom DOM unterstützt; in einem HTML-Dokument beendet dies den Kommentar.
 
 
@@ -181,7 +181,7 @@ HTML-Dokumente bestehen aus einem Baum von Elementen und Text.
 
     .. cell:: width-60
 
-        .. rubric:: HTML Dokument
+        .. rubric:: HTML-Dokument
 
         .. code:: HTML
             :class: copy-to-clipboard
@@ -192,8 +192,8 @@ HTML-Dokumente bestehen aus einem Baum von Elementen und Text.
             <head><title>Eine Webseite</title></head>
             <body>
                 <h1>Informationen</h1>
-                <p><!-- Ein Kommentar.. -->
-                    Ein einfacher link auf
+                <p><!-- Ein Kommentar ... -->
+                    Ein einfacher Link auf
                     <a href="
                        http://www.michael-eichberg.de
                     ">
@@ -224,7 +224,7 @@ HTML-Dokumente bestehen aus einem Baum von Elementen und Text.
 
 .. supplemental::
 
-    Mehrere HTML Dokumente bilden ggf. auf den selben DOM ab. Zum Beispiel werden die Tags als solches gar nicht abgebildet und wenn im HTML Code ein optionales (schließendes) Tag fehlt, dann ist dies im DOM nicht mehr ersichtlich.
+    Mehrere HTML-Dokumente bilden ggf. auf denselben DOM ab. Zum Beispiel werden die Tags als solches gar nicht abgebildet und wenn im HTML Code ein optionales (schließendes) Tag fehlt, dann ist dies im DOM nicht mehr ersichtlich.
 
 
 
@@ -258,24 +258,24 @@ HTML - Verarbeitung
 
 .. class:: new-section transition-fade
 
-Aufbau von HTML Dokumenten
+Aufbau von HTML-Dokumenten
 ------------------------------------------------
 
 
 
-HTML Dokumente
+HTML-Dokumente
 ------------------------------------------------
 
 Die Dokumente müssen aus den folgenden Teilen in der angegebenen Reihenfolge bestehen:
 
-  - Optional ein einzelnes U+FEFF BYTE ORDER MARK (BOM) Zeichen.
+  - Optional ein einzelnes U+FEFF Zeichen (Byte-Order-Mark(BOM)).
   - Eine beliebige Anzahl von Kommentaren und ASCII-Whitespace.
-  - Eine DOCTYPE Deklaration: :html:`<!DOCTYPE html>`.
+  - Eine DOCTYPE-Deklaration: :html:`<!DOCTYPE html>`.
   - Eine beliebige Anzahl von Kommentaren und ASCII-Whitespace.
   - Das **Dokumentenelement** in Form eines ``html``-Elements\ [#]_.
   - Eine beliebige Anzahl von Kommentaren und ASCII-Leerzeichen.
 
-  -- HTML Spezifikation
+  -- HTML-Spezifikation
 
 .. [#] HTML ist nicht case-sensitive, d. h. die Tags ``html`` und ``HTML`` sind gleichwertig. Wir verwenden jedoch immer die Kleinschreibung.
 
@@ -289,7 +289,7 @@ Allgemeiner Aufbau von HTML Elementen
     :align: center
 
     +-------------+--------------------------+-----------+
-    | *Start Tag* | *Inhalt des Elements*    | *End Tag* |
+    | *Start-Tag* | *Inhalt des Elements*    | *End-Tag* |
     +-------------+--------------------------+-----------+
     |                                                    |
     | .. code:: html                                     |
@@ -306,9 +306,7 @@ Allgemeiner Aufbau von HTML Elementen
 
 .. container:: incremental
 
-    Im Fall von Elementen ohne Endtag (z. B. :html:`<wbr>`\ [#]_) darf auch keines hinzugefügt werden!
-
-.. [#] :html:`<wbr>` steht für Line Break Opportunity.
+    Im Fall von Elementen ohne Endtag (z. B. :html:`<wbr>`) darf auch keines hinzugefügt werden!
 
 .. supplemental::
 
@@ -326,7 +324,7 @@ Allgemeiner Aufbau von HTML Elementen
             </body>
         </html>
 
-    Ist ein gültiges Dokument. Es ist jedoch **keine** gute Praxis (hier wurde das *Start Tag* des :html:`html` Elements weggelassen).
+    Ist ein gültiges Dokument. Es ist jedoch **keine** gute Praxis (hier wurde das Start-Tag des :html:`html` Elements weggelassen).
 
 
 
@@ -352,11 +350,11 @@ Attribute in HTML
 Attribute liefern Informationen über das Element.
 
 .. table::
-    :class:  booktabs
+    :class: booktabs
     :align: center
 
     +--+------------------------+--------------+
-    | *Start Tag*                              |
+    | *Start-Tag*                              |
     +--+------------------------+--------------+
     |                                          |
     | .. code:: html                           |
@@ -368,7 +366,7 @@ Attribute liefern Informationen über das Element.
 
 .. class:: incremental-list list-with-explanations
 
-- Attribute kommen nur beim Start Tag vor.
+- Attribute kommen nur beim Start-Tag vor.
 - Attribute (in HTML) können, müssen aber kein Wert haben (Boolsche Attribute).
 - Attributwerte sollten in Anführungszeichen (:eng:`quoted`) (entweder: ``"`` oder ``'``) stehen, müssen aber nicht.
 
@@ -376,11 +374,11 @@ Attribute liefern Informationen über das Element.
 
   Welche Anführungszeichen verwendet werden, ist egal. Es ist jedoch eine gute Praxis, immer die gleichen Anführungszeichen zu verwenden.\ [#]_
 
-- Konkrete Attributwerte aus der HTML Spezifikation sind case-insensitive; andere Werte sind es nicht.
+- Konkrete Attributwerte aus der HTML-Spezifikation sind *case-insensitive*; andere Werte sind es nicht.
 
 .. supplemental::
 
-  Im Allgemeinen sollten Attributwerte klein geschrieben werden. Selektoren in CSS und JavaScript sind case-sensitive.
+  Im Allgemeinen sollten Attributwerte klein geschrieben werden. Selektoren in CSS und JavaScript sind *case-sensitive*.
 
   Z. B. ist :html:`<input type="text">` und :html:`<input type="TEXT">` gleichwertig, aber :html:`<div id="text">` und :html:`<div id="Text">` nicht!
 
@@ -388,17 +386,17 @@ Attribute liefern Informationen über das Element.
 
 
 
-HTML Grundgerüst
+HTML-Grundgerüst
 ------------------------------------------------
 
 .. code:: HTML
     :number-lines:
     :class: copy-to-clipboard incremental-code
 
-    <!DOCTYPE HTML">
+    <!DOCTYPE HTML>
     <html lang="de">
         <head>
-        ... Meta-Daten, Scripte, Stylesheets, etc. ...
+        ... Metadaten, Skripte, Stylesheets, etc. ...
         </head>
 
         <body>
@@ -421,7 +419,7 @@ Im Head sollten immer die folgenden Informationen deklariert werden:
 
 .. supplemental::
 
-    Insbesondere Mobilgeräte haben oft entweder eine geringere Auflösung als Desktop-Computer oder verwenden HiDPI Screens. Beides führt dazu, dass die Webseiten nicht wie gewünscht aussehen. In diesem Fall verwenden die Browser für die Webseiten einen virtuellen Viewport mit (z. B.) 960px und skalieren dann die Seite (z. B.) auf 390px herunter. Wenn dieses Verhalten nicht gewünscht ist — z. B. weil die Seite :eng:`Responsive` ist oder von vorneherein auf mobile Endgeräte ausgerichtet ist — dann ist auf jeden Fall eine *Viewport* Konfiguration notwendig.
+    Insbesondere Mobilgeräte haben oft entweder eine geringere Auflösung als Desktop-Computer oder verwenden HiDPI Screens. Beides führt dazu, dass die Webseiten nicht wie gewünscht aussehen. In diesem Fall verwenden die Browser für die Webseiten einen virtuellen Viewport mit (z. B.) 960px und skalieren dann die Seite (z. B.) auf 390px herunter. Wenn dieses Verhalten nicht gewünscht ist — z. B. weil die Seite :eng:`responsive` ist oder von vorneherein auf mobile Endgeräte ausgerichtet ist — dann ist auf jeden Fall eine *Viewport* Konfiguration notwendig.
 
     .. csv-table::
         :header: "Device", "Viewport Size (width x height)", "Device Resolution (width x height)"
@@ -448,7 +446,7 @@ Im Head können weitere Informationen und Pragmas deklariert werden bzw. sollten
 
     :CSS: Mittels :html:`<link rel="stylesheet" href="style.css">` oder :html:`<style>...</style>`
 
-    :*Favorite Icon*: :html:`<link rel="icon" type="image/png" href="/img/icon.png" />`
+    :*Favorite-Icon*: :html:`<link rel="icon" type="image/png" href="/img/icon.png" />`
 
     :Pragmas:
 
@@ -465,7 +463,7 @@ Im Head können weitere Informationen und Pragmas deklariert werden bzw. sollten
 
                 Content-Security-Policy: default-src https:
 
-    :Benannte Meta-Daten: :html:`<meta name="author" content="Michael Eichberg">`
+    :Benannte Metadaten: :html:`<meta name="author" content="Michael Eichberg">`
 
 .. supplemental::
 
@@ -495,7 +493,7 @@ Semantisches vs. „generisches“ HTML
 
     .. cell:: width-50 incremental
 
-        .. rubric:: Semantik freies HTML
+        .. rubric:: Semantikfreies HTML
 
         - Verwendung von :html:`<div>` und :html:`<span>` Elementen, um den Inhalt zu strukturieren.
         - Keine klare Bedeutung des Inhalts.
@@ -595,7 +593,7 @@ Strukturierung von Dokumenten
 
 .. supplemental::
 
-  Das :html:`hgroup`-Element stellt eine Überschrift und den zugehörigen Inhalt dar. Dient dazu  eine Überschrift mit einem oder mehreren p-Elementen zu gruppieren. Zum Beispiel für eine Unterüberschrift oder einen alternativen Titel.
+  Das :html:`hgroup`-Element stellt eine Überschrift und den zugehörigen Inhalt dar. Dient dazu eine Überschrift mit einem oder mehreren p-Elementen zu gruppieren. Zum Beispiel für eine Unterüberschrift oder einen alternativen Titel.
 
 
 
@@ -614,7 +612,7 @@ Attribute
 
     können für jedes Element verwendet werden; sind aber nicht immer sinnvoll.\ [#]_
 
-    Globale HTML Attribute sind Z. B. :html:`id`, :html:`class`, :html:`data-*`, :html:`autofocus`, :html:`role`, :html:`lang`, :html:`style`, :html:`popover`, :html:`tabindex`.
+    Globale HTML-Attribute sind Z. B. :html:`id`, :html:`class`, :html:`data-*`, :html:`autofocus`, :html:`role`, :html:`lang`, :html:`style`, :html:`popover`, :html:`tabindex`.
 
     .. deprecated::
 
@@ -625,7 +623,7 @@ Attribute
 
 .. supplemental::
 
-    Boolsche Attribute sollten in JavaScript durch hinzufügen bzw. löschen gesetzt werden (und nicht durch die Manipulation des Wertes eines Attributs).
+    Boolsche Attribute sollten in JavaScript durch Hinzufügen bzw. Löschen gesetzt werden (und nicht durch die Manipulation des Wertes eines Attributs).
 
     .. code:: JavaScript
         :class: copy-to-clipboard
@@ -675,7 +673,7 @@ Ausgewählte globale Attribute
           (Welches man in CSS oder JavaScript per Selektor referenzieren kann.)
         - als Ziel von Hyperlinks (:html:`<a href="#id">`)
         - im Rahmen der Unterstützung von Barrierefreiheit
-        - der Wert ist case-sensitive
+        - der Wert ist *case-sensitive*
 
         Best Practice: Kleinbuchstaben und Bindestriche verwenden (Unterstriche sind erlaubt aber im Zusammenhang mit CSS nicht optimal).
 
@@ -747,7 +745,7 @@ HTML - logische Gruppierung von Text
 
             Drücken Sie <kbd>cmd</kbd> + <kbd>c</kbd> zum Kopieren.
 
-    :Hoch-/Tiefstellung: :html:`<sup>` und :html:`<sub>` - für Hoch- und Tiefstellung, die nicht typographisch Zwecken dient, sondern inhaltlichen Zwecken.
+    :Hoch-/Tiefstellung: :html:`<sup>` und :html:`<sub>` - für Hoch- und Tiefstellung, die nicht typographischen Zwecken dient, sondern inhaltlichen Zwecken.
 
         .. code:: html
 
@@ -778,7 +776,7 @@ HTML - physische Auszeichnung von Text
 
 .. class:: incremental-list
 
-:Vorformatierter text: :html:`<pre>...</pre>`` - für Text, der so angezeigt werden soll, wie er geschrieben wurde.
+:Vorformatierter Text: :html:`<pre>...</pre>` - für Text, der so angezeigt werden soll, wie er geschrieben wurde.
 
 :Zeilenumbrüche: :html:`<br>` - für Zeilenumbrüche, die inhärenter Teil der Daten sind wie zum Beispiel bei Adressen. D. h. sollte nicht innerhalb von Text verwendet werden!
 
@@ -831,7 +829,7 @@ HTML - Links
 
       <a href="https://www.dhbw-mannheim.de">DHBW Mannheim</a>
       <a href="#teachers">Unsere Lehrenden</a>
-      <a href="mailto:michael.eichberg@dhbw.de">Email: Michael Eichberg</a>
+      <a href="mailto:michael.eichberg@dhbw.de">E-Mail: Michael Eichberg</a>
 
     .. container::
 
@@ -864,11 +862,11 @@ HTML - Links
 
 .. supplemental::
 
-    Durch die Zuweisung zu einem Browsing-Kontext kann verhindert werden, dass die selbe Seite X mal geöffnet wird, wenn ein Nutzer auf den Link klickt.
+    Durch die Zuweisung zu einem Browsing-Kontext kann verhindert werden, dass dieselbe Seite X-mal geöffnet wird, wenn ein Nutzer auf den Link klickt.
 
 
 
-HTML - Lists
+HTML - Listen
 ------------------------------------------------
 
 Drei Arten von Listen werden unterstützt, die beliebig verschachtelt werden können:
@@ -899,9 +897,9 @@ Drei Arten von Listen werden unterstützt, die beliebig verschachtelt werden kö
                     <dd style="margin-left:3em">Erklärung des 2. Begriffs</dd>
                 </dl>
 
-    - geordnete Listen: :html:`<ol [reversed] [start=<NO>]>`
+    - Geordnete Listen: :html:`<ol [reversed] [start=<NO>]>`
 
-      .. class:: columns -spaced
+      .. class:: columns 
 
       - .. code:: html
 
@@ -920,7 +918,7 @@ Drei Arten von Listen werden unterstützt, die beliebig verschachtelt werden kö
                 </ol>
 
 
-    - ungeordnete Listen: :html:`<ul>`
+    - Ungeordnete Listen: :html:`<ul>`
 
       .. class:: columns
 
@@ -1042,7 +1040,7 @@ HTML - Tabellen
 
 
 
-HTML - Images
+HTML - Bilder
 ------------------------------------------------
 
 .. story::
@@ -1057,7 +1055,7 @@ HTML - Images
 
     - Das :html:`src`-Attribut enthält die Adresse des Bildes.
     - Das :html:`alt`-Attribut enthält eine Beschreibung des Bildes, die angezeigt wird, wenn das Bild nicht geladen werden kann.
-    - Das :html:`width` und :html:`height`-Attribut können und sollten verwendet werden, um die Größe des Bildes festzulegen.
+    - Die :html:`width` und :html:`height`-Attribute können und sollten verwendet werden, um die ursprünglich reservierte Größe des Bildes festzulegen.
     - Lazy loading ist durch die Verwendung des :html:`loading` Attributs möglich (:html:`loading="lazy"`).
 
     - Folgende Bildformate werden breit unterstützt: ``jpg``, ``png``, ``gif``, ``svg`` und ``webp``.
@@ -1314,7 +1312,7 @@ HTML Erweiterbarkeit
 
 .. class:: incremental-list
 
-- Hinzufügen von Meta-daten (:html:`<meta name="" content="">`)
+- Hinzufügen von Metadaten (:html:`<meta name="" content="">`)
 - :html:`class` Attribute
 - „Custom Elements“ (z. B. :html:`<my-element>`)
 - :peripheral:`Autoren können APIs mit Hilfe des JavaScript-Prototyping-Mechanismus erweitern`
@@ -1333,7 +1331,7 @@ Veraltetes - aber noch unterstütztes - HTML
 
 
 
-HTML - „nicht mehr unterstützt - April Stand 2024“
+HTML - „nicht mehr unterstützt (Stand April 2024)“
 --------------------------------------------------------------
 
 .. class:: columns
@@ -1430,7 +1428,7 @@ Referenzen
 
     .. cell:: width-40
 
-        Erzeugen Sie ein HTML Dokument, das wie das Dokument auf der rechten Seite aussieht. Verwenden Sie kein CSS!
+        Erzeugen Sie ein HTML-Dokument, das wie das Dokument auf der rechten Seite aussieht. Verwenden Sie kein CSS!
 
         Nutzen Sie den `HTML Validator <https://validator.w3.org/nu/#textarea>`__, um zu verifizieren, dass Ihr Dokument valide ist.
 
@@ -1469,7 +1467,7 @@ Referenzen
                             </address>
                             <p>
                                 <a href="mailto:x.y@nirgendwo.de">x.y@nirgendwo.de</a>
-                            <p>
+                            </p>
                         </section>
                         <section>
                         <h1 id="Ausbildung">Ausbildung</h1>
@@ -1479,10 +1477,12 @@ Referenzen
                                 </thead>
                                 <tbody>
                                     <tr>
-                                        <td>1990</td><td><details>
-                                        <summary>Theodor Gymnasium</summary>
-                                        Gegründet von Theodor von und zu Frankenburg im Jahr 1818</details>
-                                        </summary></td>
+                                        <td>1990</td>
+                                        <td><details>
+                                            <summary>Theodor Gymnasium</summary>
+                                            Gegründet von Theodor von und zu Frankenburg im Jahr 1818
+                                            </details>
+                                        </td>
                                     </tr>
                                     <tr>
                                         <td>2000</td><td><a target="_blank" href="https://www.dhbw-mannheim.de">Duale Hochschule Baden-Württemberg Mannheim (<abbr>DHBW</abbr>)</a></td>
@@ -1539,7 +1539,7 @@ Referenzen
                     </address>
                     <p>
                         <a href="mailto:x.y@nirgendwo.de">x.y@nirgendwo.de</a>
-                    <p>
+                    </p>
                 </section>
                 <section>
                 <h1 id="Ausbildung">Ausbildung</h1>
@@ -1615,11 +1615,11 @@ Referenzen
 
         .. container:: incremental
 
-            Verwenden Sie das :html:`<dialog>` Element, um den Dialog zu erstellen. Damit der Dialog direkt beim Laden geöffnet ist, verwenden Sie das boolsche Attribut :html:`open`. Für den Schließen-Button verwenden Sie ein :html:`<form>` Element mit dem Attribut :html:`method="dialog"` und ein Button-element (z. B. :html:`<form method="dialog"><button>X</button></form>`).
+            Verwenden Sie das :html:`<dialog>` Element, um den Dialog zu erstellen. Damit der Dialog direkt beim Laden geöffnet ist, verwenden Sie das boolsche Attribut :html:`open`. Für den Schließen-Button verwenden Sie ein :html:`<form>` Element mit dem Attribut :html:`method="dialog"` und ein Button-Element (z. B. :html:`<form method="dialog"><button>X</button></form>`).
 
         .. container:: incremental
 
-            Sie können das :html:`closedby` Attribut verwenden (see `WhatWg closedby attribute <https://html.spec.whatwg.org/dev/interactive-elements.html#attr-dialog-closedby>`__), um den Dialog zu schließen, wenn der Benutzer außerhalb des Dialogs klickt.
+            Sie können das :html:`closedby`-Attribut verwenden (see `WhatWg closedby-attribute <https://html.spec.whatwg.org/dev/interactive-elements.html#attr-dialog-closedby>`__), um den Dialog zu schließen, wenn der Benutzer außerhalb des Dialogs klickt.
 
         .. container:: incremental
 
