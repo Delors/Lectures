@@ -1,0 +1,751 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+    "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg
+    xmlns="http://www.w3.org/2000/svg"
+    version="1.1"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:xl="http://www.w3.org/1999/xlink"
+    viewBox="18 38 1350 900"
+    width="1650"
+    height="1100"
+>
+<style>
+  @import url('/LectureDoc2/ext/fonts/ld-fonts.css');
+</style>
+<defs>
+    <linearGradient x1="0" x2="1" id="Gradient" gradientUnits="userSpaceOnUse">
+      <stop offset=".10824424" stop-color="#212121" />
+      <stop offset=".8533165" stop-color="#797979" />
+      <stop offset="1" stop-color="#c1c1c1" />
+    </linearGradient>
+    <linearGradient
+            id="Obj_Gradient"
+            xl:href="#Gradient"
+            gradientTransform="translate(245.63574 687.0146) rotate(-32.658855) scale(59.12551)"
+        />
+    <linearGradient x1="0" x2="1" id="Gradient_2" gradientUnits="userSpaceOnUse">
+      <stop offset=".1060121" stop-color="#424242" />
+      <stop offset=".8529494" stop-color="#aaa" stop-opacity=".5" />
+      <stop offset="1" stop-color="white" stop-opacity="0" />
+    </linearGradient>
+    <linearGradient
+            id="Obj_Gradient_2"
+            xl:href="#Gradient_2"
+            gradientTransform="translate(278.03418 687.0146) rotate(-32.658855) scale(59.12551)"
+        />
+    <linearGradient x1="0" x2="1" id="Gradient_3" gradientUnits="userSpaceOnUse">
+      <stop offset=".16833588" stop-color="black" />
+      <stop offset=".9336584" stop-color="#929292" stop-opacity=".5" />
+      <stop offset="1" stop-color="white" stop-opacity="0" />
+    </linearGradient>
+    <linearGradient
+            id="Obj_Gradient_3"
+            xl:href="#Gradient_3"
+            gradientTransform="translate(307.82707 663.869) rotate(-133.44236) scale(61.38021)"
+        />
+    <linearGradient
+            id="Obj_Gradient_4"
+            xl:href="#Gradient"
+            gradientTransform="translate(280.4579 698.9146) rotate(-32.658855) scale(59.12551)"
+        />
+    <linearGradient
+            id="Obj_Gradient_5"
+            xl:href="#Gradient_2"
+            gradientTransform="translate(312.85632 698.9146) rotate(-32.658855) scale(59.12551)"
+        />
+    <linearGradient
+            id="Obj_Gradient_6"
+            xl:href="#Gradient_3"
+            gradientTransform="translate(342.6492 675.769) rotate(-133.44236) scale(61.38021)"
+        />
+    <linearGradient
+            id="Obj_Gradient_7"
+            xl:href="#Gradient"
+            gradientTransform="translate(316.0579 711.7146) rotate(-32.658855) scale(59.12551)"
+        />
+    <linearGradient
+            id="Obj_Gradient_8"
+            xl:href="#Gradient_2"
+            gradientTransform="translate(348.45632 711.7146) rotate(-32.658855) scale(59.12551)"
+        />
+    <linearGradient
+            id="Obj_Gradient_9"
+            xl:href="#Gradient_3"
+            gradientTransform="translate(378.2492 688.569) rotate(-133.44236) scale(61.38021)"
+        />
+    <linearGradient
+            id="Obj_Gradient_10"
+            xl:href="#Gradient"
+            gradientTransform="translate(210.42467 701.1146) rotate(-32.658855) scale(59.12551)"
+        />
+    <linearGradient
+            id="Obj_Gradient_11"
+            xl:href="#Gradient_2"
+            gradientTransform="translate(242.8231 701.1146) rotate(-32.658855) scale(59.12551)"
+        />
+    <linearGradient
+            id="Obj_Gradient_12"
+            xl:href="#Gradient_3"
+            gradientTransform="translate(272.616 677.969) rotate(-133.44236) scale(61.38021)"
+        />
+    <linearGradient
+            id="Obj_Gradient_13"
+            xl:href="#Gradient"
+            gradientTransform="translate(245.2468 713.0146) rotate(-32.658855) scale(59.12551)"
+        />
+    <linearGradient
+            id="Obj_Gradient_14"
+            xl:href="#Gradient_2"
+            gradientTransform="translate(277.64525 713.0146) rotate(-32.658855) scale(59.12551)"
+        />
+    <linearGradient
+            id="Obj_Gradient_15"
+            xl:href="#Gradient_3"
+            gradientTransform="translate(307.43814 689.86904) rotate(-133.44236) scale(61.38021)"
+        />
+    <linearGradient
+            id="Obj_Gradient_16"
+            xl:href="#Gradient"
+            gradientTransform="translate(280.8468 725.8146) rotate(-32.658855) scale(59.12551)"
+        />
+    <linearGradient
+            id="Obj_Gradient_17"
+            xl:href="#Gradient_2"
+            gradientTransform="translate(313.24525 725.8146) rotate(-32.658855) scale(59.12551)"
+        />
+    <linearGradient
+            id="Obj_Gradient_18"
+            xl:href="#Gradient_3"
+            gradientTransform="translate(343.03814 702.66904) rotate(-133.44236) scale(61.38021)"
+        />
+    <linearGradient
+            id="Obj_Gradient_19"
+            xl:href="#Gradient"
+            gradientTransform="translate(175.19665 715.1977) rotate(-32.658855) scale(59.12551)"
+        />
+    <linearGradient
+            id="Obj_Gradient_20"
+            xl:href="#Gradient_2"
+            gradientTransform="translate(207.5951 715.1977) rotate(-32.658855) scale(59.12551)"
+        />
+    <linearGradient
+            id="Obj_Gradient_21"
+            xl:href="#Gradient_3"
+            gradientTransform="translate(237.38798 692.0521) rotate(-133.44236) scale(61.38021)"
+        />
+    <linearGradient
+            id="Obj_Gradient_22"
+            xl:href="#Gradient"
+            gradientTransform="translate(210.0188 727.0977) rotate(-32.658855) scale(59.12551)"
+        />
+    <linearGradient
+            id="Obj_Gradient_23"
+            xl:href="#Gradient_2"
+            gradientTransform="translate(242.41723 727.0977) rotate(-32.658855) scale(59.12551)"
+        />
+    <linearGradient
+            id="Obj_Gradient_24"
+            xl:href="#Gradient_3"
+            gradientTransform="translate(272.21012 703.9521) rotate(-133.44236) scale(61.38021)"
+        />
+    <linearGradient
+            id="Obj_Gradient_25"
+            xl:href="#Gradient"
+            gradientTransform="translate(245.6188 739.8977) rotate(-32.658855) scale(59.12551)"
+        />
+    <linearGradient
+            id="Obj_Gradient_26"
+            xl:href="#Gradient_2"
+            gradientTransform="translate(278.01723 739.8977) rotate(-32.658855) scale(59.12551)"
+        />
+    <linearGradient
+            id="Obj_Gradient_27"
+            xl:href="#Gradient_3"
+            gradientTransform="translate(307.81012 716.7521) rotate(-133.44236) scale(61.38021)"
+        />
+    <filter id="Shadow" filterUnits="userSpaceOnUse" x="-117" y="-52">
+      <feOffset in="SourceAlpha" result="offset" dx="-1" dy="0" />
+      <feFlood flood-color="white" result="flood" />
+      <feComposite in="flood" in2="offset" operator="in" result="color" />
+      <feMerge>
+        <feMergeNode in="color" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+    <font-face
+            font-family="Noto Sans Display"
+            font-size="22"
+            units-per-em="1000"
+            underline-position="-75.68359"
+            underline-thickness="49.316406"
+            slope="0"
+            x-height="522.9492"
+            cap-height="717.28516"
+            ascent="770.0195"
+            descent="-229.98047"
+            font-weight="400"
+        >
+      <font-face-src>
+        <font-face-name name="Noto Sans Display" />
+      </font-face-src>
+    </font-face>
+    <filter id="Shadow_2" filterUnits="userSpaceOnUse" x="-117" y="-52">
+      <feGaussianBlur in="SourceAlpha" result="blur" stdDeviation="1.308" />
+      <feOffset in="blur" result="offset" dx="0" dy="2" />
+      <feFlood flood-color="black" flood-opacity=".5" result="flood" />
+      <feComposite in="flood" in2="offset" operator="in" result="color" />
+      <feMerge>
+        <feMergeNode in="color" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+    <marker
+            orient="auto"
+            overflow="visible"
+            markerUnits="strokeWidth"
+            id="FilledArrow_Marker"
+            stroke-linejoin="miter"
+            stroke-miterlimit="10"
+            viewBox="-1 -3 6 6"
+            markerWidth="6"
+            markerHeight="6"
+            color="#283450"
+        >
+      <g>
+        <path
+                    d="M 3.7333333 0 L 0 -1.4 L 0 1.4 Z"
+                    fill="currentColor"
+                    stroke="currentColor"
+                    stroke-width="1"
+                />
+      </g>
+    </marker>
+  </defs>
+  <metadata> Produced by OmniGraffle 8.0\n2024-03-13 21:11:55 +0000</metadata>
+  <g
+        id="tor-network"
+        stroke-opacity="1"
+        fill-opacity="1"
+        fill="none"
+        stroke="none"
+        stroke-dasharray="none"
+    >
+    <title>tor-network</title>
+    <g id="tor-network_directory-authority">
+      <title>directory-authority</title>
+      <g id="Graphic_624">
+        <path
+                    d="M 118.16405 715.0142 C 44.46533 701.2 73.85453 584.907 191.42045 604.75 C 202.32797 566.0697 339.04133 572.34795 338.14757 604.75 C 423.871 563.3074 533.42045 645.9432 459.9406 687.3858 C 548.1128 707.4783 458.82797 815.7337 386.46533 797.65 C 380.67413 827.7913 251.3115 838.3391 239.9571 797.65 C 166.70525 841.104 13.963489 774.2911 118.16405 715.0142 Z"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-dasharray="8.0,5.0"
+                    stroke-width="1"
+                />
+      </g>
+      <g id="Group_935">
+        <g id="Group_976">
+          <g id="Graphic_980">
+            <path
+                            d="M 287.64088 630 L 318.95937 641.5282 L 319.12224 687.99165 L 286.9659 700.57144 L 254.83746 689.0432 L 255.37744 642.9303 Z"
+                            fill="white"
+                        />
+          </g>
+          <g id="Graphic_979">
+            <path
+                            d="M 254.32537 688.7674 L 254.32537 641.5514 L 286.7238 653.3554 L 286.7238 700.57144 Z"
+                            fill="url(#Obj_Gradient)"
+                        />
+            <path
+                            d="M 254.32537 688.7674 L 254.32537 641.5514 L 286.7238 653.3554 L 286.7238 700.57144 Z"
+                            stroke="white"
+                            stroke-opacity=".4811747"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                        />
+          </g>
+          <g id="Graphic_978">
+            <path
+                            d="M 319.12224 688.7674 L 319.12224 641.5514 L 286.7238 653.3554 L 286.7238 700.57144 Z"
+                            fill="url(#Obj_Gradient_2)"
+                        />
+            <path
+                            d="M 319.12224 688.7674 L 319.12224 641.5514 L 286.7238 653.3554 L 286.7238 700.57144 Z"
+                            stroke="white"
+                            stroke-opacity=".4811747"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                        />
+          </g>
+          <g id="Graphic_977">
+            <path
+                            d="M 286.7238 630 L 319.12224 641.5859 L 286.7238 653.17184 L 254.32537 641.5859 Z"
+                            fill="url(#Obj_Gradient_3)"
+                        />
+            <path
+                            d="M 286.7238 630 L 319.12224 641.5859 L 286.7238 653.17184 L 254.32537 641.5859 Z"
+                            stroke="white"
+                            stroke-opacity=".4811747"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                        />
+          </g>
+        </g>
+        <g id="Group_971">
+          <g id="Graphic_975">
+            <path
+                            d="M 322.46302 641.90004 L 353.7815 653.4283 L 353.9444 699.8917 L 321.78806 712.4715 L 289.6596 700.94325 L 290.19958 654.83035 Z"
+                            fill="white"
+                        />
+          </g>
+          <g id="Graphic_974">
+            <path
+                            d="M 289.1475 700.6675 L 289.1475 653.4515 L 321.54594 665.2555 L 321.54594 712.4715 Z"
+                            fill="url(#Obj_Gradient_4)"
+                        />
+            <path
+                            d="M 289.1475 700.6675 L 289.1475 653.4515 L 321.54594 665.2555 L 321.54594 712.4715 Z"
+                            stroke="white"
+                            stroke-opacity=".4811747"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                        />
+          </g>
+          <g id="Graphic_973">
+            <path
+                            d="M 353.9444 700.6675 L 353.9444 653.4515 L 321.54594 665.2555 L 321.54594 712.4715 Z"
+                            fill="url(#Obj_Gradient_5)"
+                        />
+            <path
+                            d="M 353.9444 700.6675 L 353.9444 653.4515 L 321.54594 665.2555 L 321.54594 712.4715 Z"
+                            stroke="white"
+                            stroke-opacity=".4811747"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                        />
+          </g>
+          <g id="Graphic_972">
+            <path
+                            d="M 321.54594 641.90004 L 353.9444 653.48596 L 321.54594 665.0719 L 289.1475 653.48596 Z"
+                            fill="url(#Obj_Gradient_6)"
+                        />
+            <path
+                            d="M 321.54594 641.90004 L 353.9444 653.48596 L 321.54594 665.0719 L 289.1475 653.48596 Z"
+                            stroke="white"
+                            stroke-opacity=".4811747"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                        />
+          </g>
+        </g>
+        <g id="Group_966">
+          <g id="Graphic_970">
+            <path
+                            d="M 358.06302 654.70004 L 389.3815 666.2283 L 389.5444 712.6917 L 357.38806 725.2715 L 325.2596 713.74325 L 325.79958 667.63035 Z"
+                            fill="white"
+                        />
+          </g>
+          <g id="Graphic_969">
+            <path
+                            d="M 324.7475 713.4675 L 324.7475 666.2515 L 357.14594 678.0555 L 357.14594 725.2715 Z"
+                            fill="url(#Obj_Gradient_7)"
+                        />
+            <path
+                            d="M 324.7475 713.4675 L 324.7475 666.2515 L 357.14594 678.0555 L 357.14594 725.2715 Z"
+                            stroke="white"
+                            stroke-opacity=".4811747"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                        />
+          </g>
+          <g id="Graphic_968">
+            <path
+                            d="M 389.5444 713.4675 L 389.5444 666.2515 L 357.14594 678.0555 L 357.14594 725.2715 Z"
+                            fill="url(#Obj_Gradient_8)"
+                        />
+            <path
+                            d="M 389.5444 713.4675 L 389.5444 666.2515 L 357.14594 678.0555 L 357.14594 725.2715 Z"
+                            stroke="white"
+                            stroke-opacity=".4811747"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                        />
+          </g>
+          <g id="Graphic_967">
+            <path
+                            d="M 357.14594 654.70004 L 389.5444 666.28596 L 357.14594 677.8719 L 324.7475 666.28596 Z"
+                            fill="url(#Obj_Gradient_9)"
+                        />
+            <path
+                            d="M 357.14594 654.70004 L 389.5444 666.28596 L 357.14594 677.8719 L 324.7475 666.28596 Z"
+                            stroke="white"
+                            stroke-opacity=".4811747"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                        />
+          </g>
+        </g>
+        <g id="Group_961">
+          <g id="Graphic_965">
+            <path
+                            d="M 252.4298 644.10004 L 283.7483 655.6283 L 283.91117 702.0917 L 251.75484 714.6715 L 219.6264 703.14325 L 220.16637 657.03035 Z"
+                            fill="white"
+                        />
+          </g>
+          <g id="Graphic_964">
+            <path
+                            d="M 219.1143 702.8675 L 219.1143 655.6515 L 251.51273 667.4555 L 251.51273 714.6715 Z"
+                            fill="url(#Obj_Gradient_10)"
+                        />
+            <path
+                            d="M 219.1143 702.8675 L 219.1143 655.6515 L 251.51273 667.4555 L 251.51273 714.6715 Z"
+                            stroke="white"
+                            stroke-opacity=".4811747"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                        />
+          </g>
+          <g id="Graphic_963">
+            <path
+                            d="M 283.91117 702.8675 L 283.91117 655.6515 L 251.51273 667.4555 L 251.51273 714.6715 Z"
+                            fill="url(#Obj_Gradient_11)"
+                        />
+            <path
+                            d="M 283.91117 702.8675 L 283.91117 655.6515 L 251.51273 667.4555 L 251.51273 714.6715 Z"
+                            stroke="white"
+                            stroke-opacity=".4811747"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                        />
+          </g>
+          <g id="Graphic_962">
+            <path
+                            d="M 251.51273 644.10004 L 283.91117 655.68596 L 251.51273 667.2719 L 219.1143 655.68596 Z"
+                            fill="url(#Obj_Gradient_12)"
+                        />
+            <path
+                            d="M 251.51273 644.10004 L 283.91117 655.68596 L 251.51273 667.2719 L 219.1143 655.68596 Z"
+                            stroke="white"
+                            stroke-opacity=".4811747"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                        />
+          </g>
+        </g>
+        <g id="Group_956">
+          <g id="Graphic_960">
+            <path
+                            d="M 287.25195 656.0001 L 318.57044 667.5283 L 318.7333 713.9917 L 286.577 726.5715 L 254.44853 715.0433 L 254.9885 668.9304 Z"
+                            fill="white"
+                        />
+          </g>
+          <g id="Graphic_959">
+            <path
+                            d="M 253.93644 714.7675 L 253.93644 667.5515 L 286.33487 679.3555 L 286.33487 726.5715 Z"
+                            fill="url(#Obj_Gradient_13)"
+                        />
+            <path
+                            d="M 253.93644 714.7675 L 253.93644 667.5515 L 286.33487 679.3555 L 286.33487 726.5715 Z"
+                            stroke="white"
+                            stroke-opacity=".4811747"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                        />
+          </g>
+          <g id="Graphic_958">
+            <path
+                            d="M 318.7333 714.7675 L 318.7333 667.5515 L 286.33487 679.3555 L 286.33487 726.5715 Z"
+                            fill="url(#Obj_Gradient_14)"
+                        />
+            <path
+                            d="M 318.7333 714.7675 L 318.7333 667.5515 L 286.33487 679.3555 L 286.33487 726.5715 Z"
+                            stroke="white"
+                            stroke-opacity=".4811747"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                        />
+          </g>
+          <g id="Graphic_957">
+            <path
+                            d="M 286.33487 656.0001 L 318.7333 667.586 L 286.33487 679.1719 L 253.93644 667.586 Z"
+                            fill="url(#Obj_Gradient_15)"
+                        />
+            <path
+                            d="M 286.33487 656.0001 L 318.7333 667.586 L 286.33487 679.1719 L 253.93644 667.586 Z"
+                            stroke="white"
+                            stroke-opacity=".4811747"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                        />
+          </g>
+        </g>
+        <g id="Group_951">
+          <g id="Graphic_955">
+            <path
+                            d="M 322.85195 668.8001 L 354.17044 680.3283 L 354.3333 726.7917 L 322.177 739.3715 L 290.04853 727.8433 L 290.5885 681.7304 Z"
+                            fill="white"
+                        />
+          </g>
+          <g id="Graphic_954">
+            <path
+                            d="M 289.53644 727.5675 L 289.53644 680.3515 L 321.93487 692.1555 L 321.93487 739.3715 Z"
+                            fill="url(#Obj_Gradient_16)"
+                        />
+            <path
+                            d="M 289.53644 727.5675 L 289.53644 680.3515 L 321.93487 692.1555 L 321.93487 739.3715 Z"
+                            stroke="white"
+                            stroke-opacity=".4811747"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                        />
+          </g>
+          <g id="Graphic_953">
+            <path
+                            d="M 354.3333 727.5675 L 354.3333 680.3515 L 321.93487 692.1555 L 321.93487 739.3715 Z"
+                            fill="url(#Obj_Gradient_17)"
+                        />
+            <path
+                            d="M 354.3333 727.5675 L 354.3333 680.3515 L 321.93487 692.1555 L 321.93487 739.3715 Z"
+                            stroke="white"
+                            stroke-opacity=".4811747"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                        />
+          </g>
+          <g id="Graphic_952">
+            <path
+                            d="M 321.93487 668.8001 L 354.3333 680.386 L 321.93487 691.9719 L 289.53644 680.386 Z"
+                            fill="url(#Obj_Gradient_18)"
+                        />
+            <path
+                            d="M 321.93487 668.8001 L 354.3333 680.386 L 321.93487 691.9719 L 289.53644 680.386 Z"
+                            stroke="white"
+                            stroke-opacity=".4811747"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                        />
+          </g>
+        </g>
+        <g id="Group_946">
+          <g id="Graphic_950">
+            <path
+                            d="M 217.2018 658.1831 L 248.52028 669.71135 L 248.68315 716.1748 L 216.52683 728.75455 L 184.39837 717.2263 L 184.93835 671.1134 Z"
+                            fill="white"
+                        />
+          </g>
+          <g id="Graphic_949">
+            <path
+                            d="M 183.88628 716.95055 L 183.88628 669.73454 L 216.28471 681.53854 L 216.28471 728.75455 Z"
+                            fill="url(#Obj_Gradient_19)"
+                        />
+            <path
+                            d="M 183.88628 716.95055 L 183.88628 669.73454 L 216.28471 681.53854 L 216.28471 728.75455 Z"
+                            stroke="white"
+                            stroke-opacity=".4811747"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                        />
+          </g>
+          <g id="Graphic_948">
+            <path
+                            d="M 248.68315 716.95055 L 248.68315 669.73454 L 216.28471 681.53854 L 216.28471 728.75455 Z"
+                            fill="url(#Obj_Gradient_20)"
+                        />
+            <path
+                            d="M 248.68315 716.95055 L 248.68315 669.73454 L 216.28471 681.53854 L 216.28471 728.75455 Z"
+                            stroke="white"
+                            stroke-opacity=".4811747"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                        />
+          </g>
+          <g id="Graphic_947">
+            <path
+                            d="M 216.28471 658.1831 L 248.68315 669.769 L 216.28471 681.35495 L 183.88628 669.769 Z"
+                            fill="url(#Obj_Gradient_21)"
+                        />
+            <path
+                            d="M 216.28471 658.1831 L 248.68315 669.769 L 216.28471 681.35495 L 183.88628 669.769 Z"
+                            stroke="white"
+                            stroke-opacity=".4811747"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                        />
+          </g>
+        </g>
+        <g id="Group_941">
+          <g id="Graphic_945">
+            <path
+                            d="M 252.02393 670.08315 L 283.34242 681.6114 L 283.5053 728.0748 L 251.34897 740.6546 L 219.22051 729.1264 L 219.7605 683.0135 Z"
+                            fill="white"
+                        />
+          </g>
+          <g id="Graphic_944">
+            <path
+                            d="M 218.70842 728.8506 L 218.70842 681.6346 L 251.10685 693.4386 L 251.10685 740.6546 Z"
+                            fill="url(#Obj_Gradient_22)"
+                        />
+            <path
+                            d="M 218.70842 728.8506 L 218.70842 681.6346 L 251.10685 693.4386 L 251.10685 740.6546 Z"
+                            stroke="white"
+                            stroke-opacity=".4811747"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                        />
+          </g>
+          <g id="Graphic_943">
+            <path
+                            d="M 283.5053 728.8506 L 283.5053 681.6346 L 251.10685 693.4386 L 251.10685 740.6546 Z"
+                            fill="url(#Obj_Gradient_23)"
+                        />
+            <path
+                            d="M 283.5053 728.8506 L 283.5053 681.6346 L 251.10685 693.4386 L 251.10685 740.6546 Z"
+                            stroke="white"
+                            stroke-opacity=".4811747"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                        />
+          </g>
+          <g id="Graphic_942">
+            <path
+                            d="M 251.10685 670.08315 L 283.5053 681.6691 L 251.10685 693.255 L 218.70842 681.6691 Z"
+                            fill="url(#Obj_Gradient_24)"
+                        />
+            <path
+                            d="M 251.10685 670.08315 L 283.5053 681.6691 L 251.10685 693.255 L 218.70842 681.6691 Z"
+                            stroke="white"
+                            stroke-opacity=".4811747"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                        />
+          </g>
+        </g>
+        <g id="Group_936">
+          <g id="Graphic_940">
+            <path
+                            d="M 287.62393 682.88315 L 318.94242 694.4114 L 319.1053 740.8748 L 286.94897 753.4546 L 254.8205 741.9264 L 255.3605 695.8135 Z"
+                            fill="white"
+                        />
+          </g>
+          <g id="Graphic_939">
+            <path
+                            d="M 254.30842 741.6506 L 254.30842 694.4346 L 286.70685 706.2386 L 286.70685 753.4546 Z"
+                            fill="url(#Obj_Gradient_25)"
+                        />
+            <path
+                            d="M 254.30842 741.6506 L 254.30842 694.4346 L 286.70685 706.2386 L 286.70685 753.4546 Z"
+                            stroke="white"
+                            stroke-opacity=".4811747"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                        />
+          </g>
+          <g id="Graphic_938">
+            <path
+                            d="M 319.1053 741.6506 L 319.1053 694.4346 L 286.70685 706.2386 L 286.70685 753.4546 Z"
+                            fill="url(#Obj_Gradient_26)"
+                        />
+            <path
+                            d="M 319.1053 741.6506 L 319.1053 694.4346 L 286.70685 706.2386 L 286.70685 753.4546 Z"
+                            stroke="white"
+                            stroke-opacity=".4811747"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                        />
+          </g>
+          <g id="Graphic_937">
+            <path
+                            d="M 286.70685 682.88315 L 319.1053 694.4691 L 286.70685 706.055 L 254.30842 694.4691 Z"
+                            fill="url(#Obj_Gradient_27)"
+                        />
+            <path
+                            d="M 286.70685 682.88315 L 319.1053 694.4691 L 286.70685 706.055 L 254.30842 694.4691 Z"
+                            stroke="white"
+                            stroke-opacity=".4811747"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                        />
+          </g>
+        </g>
+      </g>
+      <g id="Graphic_506" filter="url(#Shadow)">
+        <text transform="translate(178.46533 753.4546)" fill="#283450">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="22"
+                        font-weight="400"
+                        fill="#283450"
+                        x="18.38086"
+                        y="21"
+                    >Directory Authority</tspan>
+        </text>
+      </g>
+      <g id="Graphic_504">
+        <text transform="translate(275.09765 705)" fill="white">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="22"
+                        font-weight="400"
+                        fill="white"
+                        x="0"
+                        y="21"
+                    >9x</tspan>
+        </text>
+      </g>
+      <g id="Graphic_759">
+        <path
+                    d="M 402.0615 611.0187 L 467.1287 577.8653 L 522.2599 686.0664 L 457.1927 719.2198 Z"
+                    fill="white"
+                />
+        <path
+                    d="M 402.0615 611.0187 L 467.1287 577.8653 L 522.2599 686.0664 L 457.1927 719.2198 Z"
+                    stroke="white"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
+      </g>
+      <g id="Line_816" filter="url(#Shadow_2)">
+        <line
+                    x1="286.21533"
+                    y1="479.5"
+                    x2="286.21533"
+                    y2="614.1"
+                    marker-end="url(#FilledArrow_Marker)"
+                    stroke="#283450"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="3"
+                />
+      </g>
+    </g>
+  </g>
+</svg>

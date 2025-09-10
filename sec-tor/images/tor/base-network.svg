@@ -1,0 +1,987 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+    "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    version="1.1"
+    xmlns:xl="http://www.w3.org/1999/xlink"
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="18 38 1350 900"
+    width="1650"
+    height="1100"
+>
+<style>
+  @import url('/LectureDoc2/ext/fonts/ld-fonts.css');
+</style>
+  <defs>
+    <filter id="Shadow" filterUnits="userSpaceOnUse" x="-117" y="-52">
+      <feGaussianBlur in="SourceAlpha" result="blur" stdDeviation="1.308" />
+      <feOffset in="blur" result="offset" dx="0" dy="2" />
+      <feFlood flood-color="black" flood-opacity=".5" result="flood" />
+      <feComposite in="flood" in2="offset" operator="in" result="color" />
+      <feMerge>
+        <feMergeNode in="color" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+    <filter id="Shadow_2" filterUnits="userSpaceOnUse" x="-117" y="-52">
+      <feOffset in="SourceAlpha" result="offset" dx="-1" dy="0" />
+      <feFlood flood-color="white" result="flood" />
+      <feComposite in="flood" in2="offset" operator="in" result="color" />
+      <feMerge>
+        <feMergeNode in="color" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+    <font-face
+            font-family="Noto Sans Display"
+            font-size="22"
+            units-per-em="1000"
+            underline-position="-75.68359"
+            underline-thickness="49.316406"
+            slope="0"
+            x-height="522.9492"
+            cap-height="717.28516"
+            ascent="770.0195"
+            descent="-229.98047"
+            font-weight="400"
+        >
+      <font-face-src>
+        <font-face-name name="Noto Sans Display" />
+      </font-face-src>
+    </font-face>
+    <marker
+            orient="auto"
+            overflow="visible"
+            markerUnits="strokeWidth"
+            id="FilledArrow_Marker"
+            stroke-linejoin="miter"
+            stroke-miterlimit="10"
+            viewBox="-1 -3 6 6"
+            markerWidth="6"
+            markerHeight="6"
+            color="#b1001c"
+        >
+      <g>
+        <path
+                    d="M 3.7333333 0 L 0 -1.4 L 0 1.4 Z"
+                    fill="currentColor"
+                    stroke="currentColor"
+                    stroke-width="1"
+                />
+      </g>
+    </marker>
+    <marker
+            orient="auto"
+            overflow="visible"
+            markerUnits="strokeWidth"
+            id="FilledArrow_Marker_2"
+            stroke-linejoin="miter"
+            stroke-miterlimit="10"
+            viewBox="-5 -3 6 6"
+            markerWidth="6"
+            markerHeight="6"
+            color="#b1001c"
+        >
+      <g>
+        <path
+                    d="M -3.7333333 0 L 0 1.4 L 0 -1.4 Z"
+                    fill="currentColor"
+                    stroke="currentColor"
+                    stroke-width="1"
+                />
+      </g>
+    </marker>
+    <marker
+            orient="auto"
+            overflow="visible"
+            markerUnits="strokeWidth"
+            id="FilledArrow_Marker_3"
+            stroke-linejoin="miter"
+            stroke-miterlimit="10"
+            viewBox="-1 -3 6 6"
+            markerWidth="6"
+            markerHeight="6"
+            color="#003776"
+        >
+      <g>
+        <path
+                    d="M 3.7333333 0 L 0 -1.4 L 0 1.4 Z"
+                    fill="currentColor"
+                    stroke="currentColor"
+                    stroke-width="1"
+                />
+      </g>
+    </marker>
+    <marker
+            orient="auto"
+            overflow="visible"
+            markerUnits="strokeWidth"
+            id="FilledArrow_Marker_4"
+            stroke-linejoin="miter"
+            stroke-miterlimit="10"
+            viewBox="-5 -3 6 6"
+            markerWidth="6"
+            markerHeight="6"
+            color="#003776"
+        >
+      <g>
+        <path
+                    d="M -3.7333333 0 L 0 1.4 L 0 -1.4 Z"
+                    fill="currentColor"
+                    stroke="currentColor"
+                    stroke-width="1"
+                />
+      </g>
+    </marker>
+    <linearGradient x1="0" x2="1" id="Gradient" gradientUnits="userSpaceOnUse">
+      <stop offset=".16833588" stop-color="#cde95f" />
+      <stop offset=".9336584" stop-color="#e7f4b5" stop-opacity=".5" />
+      <stop offset="1" stop-color="white" stop-opacity="0" />
+    </linearGradient>
+    <linearGradient
+            id="Obj_Gradient"
+            xl:href="#Gradient"
+            gradientTransform="translate(332.4143 464.86937) rotate(-133.44236) scale(127.7276)"
+        />
+    <linearGradient
+            id="Obj_Gradient_2"
+            xl:href="#Gradient"
+            gradientTransform="translate(331.0163 513.3932) rotate(-133.44236) scale(123.66141)"
+        />
+    <linearGradient x1="0" x2="1" id="Gradient_2" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#979797" />
+      <stop offset="1" stop-color="#333" />
+    </linearGradient>
+    <linearGradient
+            id="Obj_Gradient_3"
+            xl:href="#Gradient_2"
+            gradientTransform="translate(336.068 449.1272) rotate(-146.46168) scale(114.13809)"
+        />
+    <linearGradient x1="0" x2="1" id="Gradient_3" gradientUnits="userSpaceOnUse">
+      <stop offset=".1060121" stop-color="#78cc7b" />
+      <stop offset=".8529494" stop-color="#c0e6c1" stop-opacity=".5" />
+      <stop offset="1" stop-color="white" stop-opacity="0" />
+    </linearGradient>
+    <linearGradient
+            id="Obj_Gradient_4"
+            xl:href="#Gradient_3"
+            gradientTransform="translate(947.1877 373.8838) rotate(-32.658855) scale(82.15001)"
+        />
+    <linearGradient
+            id="Obj_Gradient_5"
+            xl:href="#Gradient_3"
+            gradientTransform="translate(995.1877 373.8838) rotate(-32.658855) scale(82.15001)"
+        />
+    <linearGradient x1="0" x2="1" id="Gradient_4" gradientUnits="userSpaceOnUse">
+      <stop offset=".16833588" stop-color="#78cb7b" />
+      <stop offset=".9336584" stop-color="#c0e6c1" stop-opacity=".5" />
+      <stop offset="1" stop-color="white" stop-opacity="0" />
+    </linearGradient>
+    <linearGradient
+            id="Obj_Gradient_6"
+            xl:href="#Gradient_4"
+            gradientTransform="translate(1036.0267 345.09662) rotate(-133.44236) scale(88.00741)"
+        />
+    <linearGradient
+            id="Obj_Gradient_7"
+            xl:href="#Gradient_3"
+            gradientTransform="translate(946.429 653.7491) rotate(-32.658855) scale(82.15001)"
+        />
+    <linearGradient
+            id="Obj_Gradient_8"
+            xl:href="#Gradient_3"
+            gradientTransform="translate(994.429 653.7491) rotate(-32.658855) scale(82.15001)"
+        />
+    <linearGradient
+            id="Obj_Gradient_9"
+            xl:href="#Gradient_4"
+            gradientTransform="translate(1035.268 624.9619) rotate(-133.44236) scale(88.00741)"
+        />
+    <linearGradient x1="0" x2="1" id="Gradient_5" gradientUnits="userSpaceOnUse">
+      <stop offset=".1060121" stop-color="#971e1e" />
+      <stop offset=".8529494" stop-color="#ce9b9d" stop-opacity=".5" />
+      <stop offset="1" stop-color="white" stop-opacity="0" />
+    </linearGradient>
+    <linearGradient
+            id="Obj_Gradient_10"
+            xl:href="#Gradient_5"
+            gradientTransform="translate(1198.1817 476.05504) rotate(-32.658855) scale(92.21617)"
+        />
+    <linearGradient
+            id="Obj_Gradient_11"
+            xl:href="#Gradient_5"
+            gradientTransform="translate(1246.1817 476.05504) rotate(-32.658855) scale(92.21617)"
+        />
+    <linearGradient x1="0" x2="1" id="Gradient_6" gradientUnits="userSpaceOnUse">
+      <stop offset=".16833588" stop-color="#971e1e" />
+      <stop offset=".9336584" stop-color="#ce9b9d" stop-opacity=".5" />
+      <stop offset="1" stop-color="white" stop-opacity="0" />
+    </linearGradient>
+    <linearGradient
+            id="Obj_Gradient_12"
+            xl:href="#Gradient_6"
+            gradientTransform="translate(1293.0818 437.1754) rotate(-133.44236) scale(93.31206)"
+        />
+    <linearGradient x1="0" x2="1" id="Gradient_7" gradientUnits="userSpaceOnUse">
+      <stop offset=".1060121" stop-color="#029ed7" />
+      <stop offset=".8529494" stop-color="#99d0eb" stop-opacity=".5" />
+      <stop offset="1" stop-color="white" stop-opacity="0" />
+    </linearGradient>
+    <linearGradient
+            id="Obj_Gradient_13"
+            xl:href="#Gradient_7"
+            gradientTransform="translate(726.819 352.90378) rotate(-32.658855) scale(82.15001)"
+        />
+    <linearGradient
+            id="Obj_Gradient_14"
+            xl:href="#Gradient_7"
+            gradientTransform="translate(774.819 352.90378) rotate(-32.658855) scale(82.15001)"
+        />
+    <linearGradient x1="0" x2="1" id="Gradient_8" gradientUnits="userSpaceOnUse">
+      <stop offset=".16833588" stop-color="#029ed5" />
+      <stop offset=".9336584" stop-color="#99d0eb" stop-opacity=".5" />
+      <stop offset="1" stop-color="white" stop-opacity="0" />
+    </linearGradient>
+    <linearGradient
+            id="Obj_Gradient_15"
+            xl:href="#Gradient_8"
+            gradientTransform="translate(815.658 324.1166) rotate(-133.44236) scale(88.00741)"
+        />
+    <linearGradient
+            id="Obj_Gradient_16"
+            xl:href="#Gradient_7"
+            gradientTransform="translate(671.3965 623.0838) rotate(-32.658855) scale(82.15001)"
+        />
+    <linearGradient
+            id="Obj_Gradient_17"
+            xl:href="#Gradient_7"
+            gradientTransform="translate(719.3965 623.0838) rotate(-32.658855) scale(82.15001)"
+        />
+    <linearGradient
+            id="Obj_Gradient_18"
+            xl:href="#Gradient_8"
+            gradientTransform="translate(760.2355 594.2966) rotate(-133.44236) scale(88.00741)"
+        />
+    <linearGradient x1="0" x2="1" id="Gradient_9" gradientUnits="userSpaceOnUse">
+      <stop offset=".02307037" stop-color="#3782a5" />
+      <stop offset=".7809276" stop-color="#a6c4d4" stop-opacity=".5" />
+      <stop offset=".930128" stop-color="white" stop-opacity="0" />
+    </linearGradient>
+    <linearGradient
+            id="Obj_Gradient_19"
+            xl:href="#Gradient_9"
+            gradientTransform="translate(486.2037 436.2238) rotate(-32.658855) scale(82.15001)"
+        />
+    <linearGradient x1="0" x2="1" id="Gradient_10" gradientUnits="userSpaceOnUse">
+      <stop offset=".1060121" stop-color="#357ea0" />
+      <stop offset=".8529494" stop-color="#a5c2d2" stop-opacity=".5" />
+      <stop offset="1" stop-color="white" stop-opacity="0" />
+    </linearGradient>
+    <linearGradient
+            id="Obj_Gradient_20"
+            xl:href="#Gradient_10"
+            gradientTransform="translate(534.2037 436.2238) rotate(-32.658855) scale(82.15001)"
+        />
+    <linearGradient x1="0" x2="1" id="Gradient_11" gradientUnits="userSpaceOnUse">
+      <stop offset=".16833588" stop-color="#3685aa" />
+      <stop offset=".9336584" stop-color="#a5c5d6" stop-opacity=".5" />
+      <stop offset="1" stop-color="white" stop-opacity="0" />
+    </linearGradient>
+    <linearGradient
+            id="Obj_Gradient_21"
+            xl:href="#Gradient_11"
+            gradientTransform="translate(575.0427 407.43663) rotate(-133.44236) scale(88.00741)"
+        />
+  </defs>
+  <metadata> Produced by OmniGraffle 8.0\n2024-03-26 13:30:18 +0000</metadata>
+  <g
+        id="tor-network"
+        fill="none"
+        stroke="none"
+        fill-opacity="1"
+        stroke-dasharray="none"
+        stroke-opacity="1"
+    >
+    <title>tor-network</title>
+    <g id="tor-network_base-network">
+      <title>base-network</title>
+      <g id="Graphic_791" filter="url(#Shadow)">
+        <path
+                    d="M 774.2091 575.48746 L 961.9022 601.866 L 957.727 631.57405 L 770.0339 605.1955 Z"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                />
+      </g>
+      <g id="Graphic_503">
+        <path
+                    d="M 485.3923 507.1334 C 357.7125 474.8 408.628 202.6057 612.3058 249.05 C 631.2026 158.51522 868.0525 173.21004 866.5041 249.05 C 1015.0162 152.04974 1204.8058 345.46632 1077.5052 442.4666 C 1230.2596 489.4948 1075.5776 742.8766 950.2125 700.55 C 940.1795 771.0984 716.0644 795.7864 696.3934 700.55 C 569.4878 802.2579 304.8694 645.8764 485.3923 507.1334 Z"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
+      </g>
+      <g id="Graphic_779" filter="url(#Shadow)">
+        <path
+                    d="M 827.4527 295 L 982 327.85005 L 975.7626 357.19448 L 821.2153 324.34443 Z"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                />
+      </g>
+      <g id="Graphic_782" filter="url(#Shadow)">
+        <path
+                    d="M 569.07464 418.92536 L 713.0746 562.92536 L 691.8614 584.13856 L 547.86144 440.13856 Z"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                />
+      </g>
+      <g id="Graphic_444" filter="url(#Shadow_2)">
+        <text transform="translate(1226.6016 358.5)" fill="#283450">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="22"
+                        font-weight="400"
+                        fill="#283450"
+                        x="0"
+                        y="21"
+                    >Server</tspan>
+        </text>
+      </g>
+      <g id="Graphic_772">
+        <text transform="translate(260.37695 345)" fill="black">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="22"
+                        font-weight="400"
+                        fill="black"
+                        x="0"
+                        y="21"
+                    >Client</tspan>
+        </text>
+      </g>
+      <g id="Graphic_777">
+        <text transform="translate(490.1955 335.53572)" fill="black">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="22"
+                        font-weight="400"
+                        fill="black"
+                        x="0"
+                        y="21"
+                    >Entry Guard</tspan>
+        </text>
+      </g>
+      <g id="Graphic_776">
+        <text transform="translate(664.6 635)" fill="black">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="22"
+                        font-weight="400"
+                        fill="black"
+                        x="0"
+                        y="21"
+                    >Middle Node</tspan>
+        </text>
+      </g>
+      <g id="Graphic_775">
+        <text transform="translate(719.8 255)" fill="black">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="22"
+                        font-weight="400"
+                        fill="black"
+                        x="0"
+                        y="21"
+                    >Middle Node</tspan>
+        </text>
+      </g>
+      <g id="Graphic_774">
+        <text transform="translate(964.5532 277.8)" fill="black">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="22"
+                        font-weight="400"
+                        fill="black"
+                        x="0"
+                        y="21"
+                    >Exit Node</tspan>
+        </text>
+      </g>
+      <g id="Graphic_773">
+        <text transform="translate(964.5532 557)" fill="black">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="22"
+                        font-weight="400"
+                        fill="black"
+                        x="0"
+                        y="21"
+                    >Exit Node</tspan>
+        </text>
+      </g>
+      <g id="Line_778" filter="url(#Shadow)">
+        <line
+                    x1="351.9"
+                    y1="416"
+                    x2="480.8847"
+                    y2="416"
+                    marker-end="url(#FilledArrow_Marker)"
+                    marker-start="url(#FilledArrow_Marker_2)"
+                    stroke="#b1001c"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="3"
+                />
+      </g>
+      <g id="Line_784" filter="url(#Shadow)">
+        <line
+                    x1="583.5449"
+                    y1="453.43764"
+                    x2="673.9551"
+                    y2="547.06236"
+                    marker-end="url(#FilledArrow_Marker)"
+                    marker-start="url(#FilledArrow_Marker_2)"
+                    stroke="#b1001c"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="3"
+                />
+      </g>
+      <g id="Line_785" filter="url(#Shadow)">
+        <line
+                    x1="793.73555"
+                    y1="595.5754"
+                    x2="941.242"
+                    y2="615.41935"
+                    marker-end="url(#FilledArrow_Marker)"
+                    marker-start="url(#FilledArrow_Marker_2)"
+                    stroke="#b1001c"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="3"
+                />
+      </g>
+      <g id="Line_786" filter="url(#Shadow)">
+        <line
+                    x1="1064.8697"
+                    y1="597.4904"
+                    x2="1199.1403"
+                    y2="477.5904"
+                    marker-end="url(#FilledArrow_Marker_3)"
+                    marker-start="url(#FilledArrow_Marker_4)"
+                    stroke="#003776"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="3"
+                />
+      </g>
+      <g id="Graphic_787" filter="url(#Shadow)">
+        <rect
+                    x="1174.2734"
+                    y="564.125"
+                    width="179.0225"
+                    height="30"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                />
+      </g>
+      <g id="Graphic_788">
+        <text transform="translate(1193.7847 538.125)" fill="black">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="22"
+                        font-weight="400"
+                        fill="black"
+                        x="28.515137"
+                        y="21"
+                    >Channel</tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="22"
+                        font-weight="400"
+                        fill="black"
+                        x="0"
+                        y="47"
+                    >TLS over TCP</tspan>
+        </text>
+      </g>
+      <g id="Line_789" filter="url(#Shadow)">
+        <line
+                    x1="1201.6998"
+                    y1="647"
+                    x2="1330.6845"
+                    y2="647"
+                    marker-end="url(#FilledArrow_Marker)"
+                    marker-start="url(#FilledArrow_Marker_2)"
+                    stroke="#b1001c"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="3"
+                />
+      </g>
+      <g id="Graphic_790">
+        <text transform="translate(1184.4067 622)" fill="black">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="22"
+                        font-weight="400"
+                        fill="black"
+                        x="15.903809"
+                        y="21"
+                    >Path / Circuit</tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="22"
+                        font-weight="400"
+                        fill="black"
+                        x="3.0561523"
+                        y="47"
+                    >Kommunikation </tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="22"
+                        font-weight="400"
+                        fill="black"
+                        x="33.209473"
+                        y="73"
+                    >durch Tor</tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="22"
+                        font-weight="400"
+                        fill="black"
+                        x="15.291504"
+                        y="99"
+                    >verschlüsselt</tspan>
+        </text>
+      </g>
+      <g id="Graphic_796" filter="url(#Shadow)">
+        <rect
+                    x="336"
+                    y="401"
+                    width="164"
+                    height="30"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                />
+      </g>
+      <g id="Graphic_803">
+        <text transform="translate(756 727)" fill="black">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="22"
+                        font-weight="400"
+                        fill="black"
+                        x="0"
+                        y="21"
+                    >Tor Netzwerk</tspan>
+        </text>
+      </g>
+      <g id="Line_814" filter="url(#Shadow)">
+        <line
+                    x1="1204.6847"
+                    y1="769.5"
+                    x2="1331.245"
+                    y2="769.5"
+                    marker-end="url(#FilledArrow_Marker_3)"
+                    marker-start="url(#FilledArrow_Marker_4)"
+                    stroke="#003776"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="3"
+                />
+      </g>
+      <g id="Graphic_813">
+        <text transform="translate(1198.6919 744)" fill="black">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="22"
+                        font-weight="400"
+                        fill="black"
+                        x="17.727692"
+                        y="21"
+                    >Nicht durch</tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="22"
+                        font-weight="400"
+                        fill="black"
+                        x="7.941559"
+                        y="47"
+                    >Tor geschützt</tspan>
+        </text>
+      </g>
+      <g id="Group_869">
+        <g id="Graphic_874">
+          <rect x="241.1229" y="376.0479" width="95.61533" height="83.6" fill="white" />
+        </g>
+        <g id="Group_871">
+          <g id="Graphic_873">
+            <rect x="240.5" y="376" width="96" height="85" fill="url(#Obj_Gradient)" />
+            <rect
+                            x="240.5"
+                            y="376"
+                            width="96"
+                            height="85"
+                            stroke="white"
+                            stroke-opacity=".4807276"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                        />
+          </g>
+          <g id="Graphic_872">
+            <path
+                            d="M 206.5 476 L 370.5 476 L 337.7 461 L 239.3 461 Z"
+                            fill="url(#Obj_Gradient_2)"
+                        />
+            <path
+                            d="M 206.5 476 L 370.5 476 L 337.7 461 L 239.3 461 Z"
+                            stroke="white"
+                            stroke-opacity=".4807276"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                        />
+          </g>
+        </g>
+        <g id="Graphic_870">
+          <path
+                        d="M 332.57708 383.8 L 332.57708 451.39375 C 332.57708 453.0506 331.23393 454.39375 329.57708 454.39375 L 247.42292 454.39375 C 245.76607 454.39375 244.42292 453.0506 244.42292 451.39375 L 244.42292 383.8 C 244.42292 382.14315 245.76607 380.8 247.42292 380.8 L 329.57708 380.8 C 331.23393 380.8 332.57708 382.14315 332.57708 383.8 Z"
+                        fill="url(#Obj_Gradient_3)"
+                    />
+          <path
+                        d="M 332.57708 383.8 L 332.57708 451.39375 C 332.57708 453.0506 331.23393 454.39375 329.57708 454.39375 L 247.42292 454.39375 C 245.76607 454.39375 244.42292 453.0506 244.42292 451.39375 L 244.42292 383.8 C 244.42292 382.14315 245.76607 380.8 247.42292 380.8 L 329.57708 380.8 C 331.23393 380.8 332.57708 382.14315 332.57708 383.8 Z"
+                        stroke="#a5a5a5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width=".5"
+                    />
+        </g>
+      </g>
+      <g id="Graphic_875">
+        <path
+                    d="M 1005.6 302.6 L 1052 317.4 L 1052.2413 377.05 L 1004.6 393.2 L 957 378.4 L 957.8 319.2 Z"
+                    fill="white"
+                />
+      </g>
+      <g id="Graphic_880">
+        <path
+                    d="M 1005.61 302.61 L 1052.01 317.41 L 1052.2513 377.06 L 1004.61 393.21 L 957.01 378.41 L 957.81 319.21 Z"
+                    fill="white"
+                />
+      </g>
+      <g id="Group_876">
+        <g id="Graphic_879">
+          <path
+                        d="M 957.7687 374.92216 L 957.7687 313.04505 L 1005.7687 328.51433 L 1005.7687 390.39143 Z"
+                        fill="url(#Obj_Gradient_4)"
+                    />
+          <path
+                        d="M 957.7687 374.92216 L 957.7687 313.04505 L 1005.7687 328.51433 L 1005.7687 390.39143 Z"
+                        stroke="white"
+                        stroke-opacity=".48790474"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                    />
+        </g>
+        <g id="Graphic_878">
+          <path
+                        d="M 1053.7687 374.92216 L 1053.7687 313.04505 L 1005.7687 328.51433 L 1005.7687 390.39143 Z"
+                        fill="url(#Obj_Gradient_5)"
+                    />
+          <path
+                        d="M 1053.7687 374.92216 L 1053.7687 313.04505 L 1005.7687 328.51433 L 1005.7687 390.39143 Z"
+                        stroke="white"
+                        stroke-opacity=".48790474"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                    />
+        </g>
+        <g id="Graphic_877">
+          <path
+                        d="M 1005.7687 298 L 1053.7687 313.147 L 1005.7687 328.294 L 957.7687 313.147 Z"
+                        fill="url(#Obj_Gradient_6)"
+                    />
+          <path
+                        d="M 1005.7687 298 L 1053.7687 313.147 L 1005.7687 328.294 L 957.7687 313.147 Z"
+                        stroke="white"
+                        stroke-opacity=".48790474"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                    />
+        </g>
+      </g>
+      <g id="Graphic_985">
+        <path
+                    d="M 1006.3687 578.761 L 1052.7687 593.561 L 1053.01 653.211 L 1005.3687 669.361 L 957.7687 654.561 L 958.5687 595.361 Z"
+                    fill="white"
+                />
+      </g>
+      <g id="Group_981">
+        <g id="Graphic_984">
+          <path
+                        d="M 957.01 654.7875 L 957.01 592.91036 L 1005.01 608.37964 L 1005.01 670.25674 Z"
+                        fill="url(#Obj_Gradient_7)"
+                    />
+          <path
+                        d="M 957.01 654.7875 L 957.01 592.91036 L 1005.01 608.37964 L 1005.01 670.25674 Z"
+                        stroke="white"
+                        stroke-opacity=".48790474"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                    />
+        </g>
+        <g id="Graphic_983">
+          <path
+                        d="M 1053.01 654.7875 L 1053.01 592.91036 L 1005.01 608.37964 L 1005.01 670.25674 Z"
+                        fill="url(#Obj_Gradient_8)"
+                    />
+          <path
+                        d="M 1053.01 654.7875 L 1053.01 592.91036 L 1005.01 608.37964 L 1005.01 670.25674 Z"
+                        stroke="white"
+                        stroke-opacity=".48790474"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                    />
+        </g>
+        <g id="Graphic_982">
+          <path
+                        d="M 1005.01 577.8653 L 1053.01 593.0123 L 1005.01 608.1593 L 957.01 593.0123 Z"
+                        fill="url(#Obj_Gradient_9)"
+                    />
+          <path
+                        d="M 1005.01 577.8653 L 1053.01 593.0123 L 1005.01 608.1593 L 957.01 593.0123 Z"
+                        stroke="white"
+                        stroke-opacity=".48790474"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                    />
+        </g>
+      </g>
+      <g id="Group_986">
+        <g id="Graphic_989">
+          <path
+                        d="M 1213 479.97346 L 1213 403.17346 L 1261 422.37346 L 1261 499.17346 Z"
+                        fill="url(#Obj_Gradient_10)"
+                    />
+          <path
+                        d="M 1213 479.97346 L 1213 403.17346 L 1261 422.37346 L 1261 499.17346 Z"
+                        stroke="white"
+                        stroke-opacity=".4842103"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                    />
+        </g>
+        <g id="Graphic_988">
+          <path
+                        d="M 1309 479.97346 L 1309 403.17346 L 1261 422.37346 L 1261 499.17346 Z"
+                        fill="url(#Obj_Gradient_11)"
+                    />
+          <path
+                        d="M 1309 479.97346 L 1309 403.17346 L 1261 422.37346 L 1261 499.17346 Z"
+                        stroke="white"
+                        stroke-opacity=".4842103"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                    />
+        </g>
+        <g id="Graphic_987">
+          <path
+                        d="M 1261 384.5 L 1309 403.3 L 1261 422.1 L 1213 403.3 Z"
+                        fill="url(#Obj_Gradient_12)"
+                    />
+          <path
+                        d="M 1261 384.5 L 1309 403.3 L 1261 422.1 L 1213 403.3 Z"
+                        stroke="white"
+                        stroke-opacity=".4842103"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                    />
+        </g>
+      </g>
+      <g id="Group_995">
+        <g id="Graphic_990">
+          <path
+                        d="M 786 278.81142 L 832.4 293.61142 L 832.6413 353.2614 L 785 369.41142 L 737.4 354.61142 L 738.2 295.41142 Z"
+                        fill="white"
+                    />
+        </g>
+        <g id="Group_991">
+          <g id="Graphic_994">
+            <path
+                            d="M 737.4 353.94215 L 737.4 292.06504 L 785.4 307.5343 L 785.4 369.41142 Z"
+                            fill="url(#Obj_Gradient_13)"
+                        />
+            <path
+                            d="M 737.4 353.94215 L 737.4 292.06504 L 785.4 307.5343 L 785.4 369.41142 Z"
+                            stroke="white"
+                            stroke-opacity=".48790474"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                        />
+          </g>
+          <g id="Graphic_993">
+            <path
+                            d="M 833.4 353.94215 L 833.4 292.06504 L 785.4 307.5343 L 785.4 369.41142 Z"
+                            fill="url(#Obj_Gradient_14)"
+                        />
+            <path
+                            d="M 833.4 353.94215 L 833.4 292.06504 L 785.4 307.5343 L 785.4 369.41142 Z"
+                            stroke="white"
+                            stroke-opacity=".48790474"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                        />
+          </g>
+          <g id="Graphic_992">
+            <path
+                            d="M 785.4 277.02 L 833.4 292.167 L 785.4 307.314 L 737.4 292.167 Z"
+                            fill="url(#Obj_Gradient_15)"
+                        />
+            <path
+                            d="M 785.4 277.02 L 833.4 292.167 L 785.4 307.314 L 737.4 292.167 Z"
+                            stroke="white"
+                            stroke-opacity=".48790474"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                        />
+          </g>
+        </g>
+      </g>
+      <g id="Group_996">
+        <g id="Graphic_1001">
+          <path
+                        d="M 730.5775 548.99144 L 776.9775 563.79144 L 777.2188 623.4414 L 729.5775 639.5914 L 681.9775 624.7914 L 682.7775 565.59144 Z"
+                        fill="white"
+                    />
+        </g>
+        <g id="Group_997">
+          <g id="Graphic_1000">
+            <path
+                            d="M 681.9775 624.12216 L 681.9775 562.24506 L 729.9775 577.7143 L 729.9775 639.5914 Z"
+                            fill="url(#Obj_Gradient_16)"
+                        />
+            <path
+                            d="M 681.9775 624.12216 L 681.9775 562.24506 L 729.9775 577.7143 L 729.9775 639.5914 Z"
+                            stroke="white"
+                            stroke-opacity=".48790474"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                        />
+          </g>
+          <g id="Graphic_999">
+            <path
+                            d="M 777.9775 624.12216 L 777.9775 562.24506 L 729.9775 577.7143 L 729.9775 639.5914 Z"
+                            fill="url(#Obj_Gradient_17)"
+                        />
+            <path
+                            d="M 777.9775 624.12216 L 777.9775 562.24506 L 729.9775 577.7143 L 729.9775 639.5914 Z"
+                            stroke="white"
+                            stroke-opacity=".48790474"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                        />
+          </g>
+          <g id="Graphic_998">
+            <path
+                            d="M 729.9775 547.2 L 777.9775 562.347 L 729.9775 577.494 L 681.9775 562.347 Z"
+                            fill="url(#Obj_Gradient_18)"
+                        />
+            <path
+                            d="M 729.9775 547.2 L 777.9775 562.347 L 729.9775 577.494 L 681.9775 562.347 Z"
+                            stroke="white"
+                            stroke-opacity=".48790474"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                        />
+          </g>
+        </g>
+      </g>
+      <g id="Group_1020">
+        <g id="Graphic_1025">
+          <path
+                        d="M 545.3847 362.13144 L 591.7847 376.93144 L 592.026 436.58143 L 544.3847 452.73144 L 496.7847 437.93144 L 497.5847 378.73144 Z"
+                        fill="white"
+                    />
+        </g>
+        <g id="Group_1021">
+          <g id="Graphic_1024">
+            <path
+                            d="M 496.7847 437.26216 L 496.7847 375.38506 L 544.7847 390.85433 L 544.7847 452.73144 Z"
+                            fill="url(#Obj_Gradient_19)"
+                        />
+            <path
+                            d="M 496.7847 437.26216 L 496.7847 375.38506 L 544.7847 390.85433 L 544.7847 452.73144 Z"
+                            stroke="white"
+                            stroke-opacity=".48790474"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                        />
+          </g>
+          <g id="Graphic_1023">
+            <path
+                            d="M 592.7847 437.26216 L 592.7847 375.38506 L 544.7847 390.85433 L 544.7847 452.73144 Z"
+                            fill="url(#Obj_Gradient_20)"
+                        />
+            <path
+                            d="M 592.7847 437.26216 L 592.7847 375.38506 L 544.7847 390.85433 L 544.7847 452.73144 Z"
+                            stroke="white"
+                            stroke-opacity=".48790474"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                        />
+          </g>
+          <g id="Graphic_1022">
+            <path
+                            d="M 544.7847 360.34 L 592.7847 375.487 L 544.7847 390.634 L 496.7847 375.487 Z"
+                            fill="url(#Obj_Gradient_21)"
+                        />
+            <path
+                            d="M 544.7847 360.34 L 592.7847 375.487 L 544.7847 390.634 L 496.7847 375.487 Z"
+                            stroke="white"
+                            stroke-opacity=".48790474"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                        />
+          </g>
+        </g>
+      </g>
+      <g id="Graphic_1032">
+        <rect x="1146.1714" y="533.125" width="33.23535" height="100" fill="white" />
+      </g>
+      <g id="Graphic_1031">
+        <rect x="1347.145" y="533.125" width="13.854977" height="100" fill="white" />
+      </g>
+    </g>
+  </g>
+</svg>

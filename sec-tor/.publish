@@ -6,8 +6,8 @@ images/tor/bridge-nodes.svg
 images/tor/circuit-creation.svg
 images/tor/directory-authority.svg
 images/tor/msg.svg
-images/tor-circuit.png
-images/tor-german-exit-node.png
-images/tor-metrics-relays.png
-images/tor-onion-service-nyt.png
-images/tor-relay-snorlax.png
+images/tor-circuit.webp
+images/tor-german-exit-node.webp
+images/tor-metrics-relays.webp
+images/tor-onion-service-nyt.webp
+images/tor-relay-snorlax.webp
