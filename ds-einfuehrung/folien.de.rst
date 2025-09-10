@@ -62,7 +62,6 @@ Empfohlene Literatur
 ---------------------
 
 .. image:: screenshots/distributed-systems.net.png
-    :class: highdpi
     :align: center
 
 .. supplemental::
@@ -71,7 +70,7 @@ Empfohlene Literatur
 
     .. image:: screenshots/microservices.jpg
         :align: center
-        :class: trbl-shadow highdpi
+        :class: trbl-shadow
 
 
 
@@ -80,7 +79,6 @@ Podcast: `SE-Radio <https://se-radio.net>`__
 -----------------------------------------------------------
 
 .. image:: screenshots/se-radio.net.png
-    :class: highdpi
     :align: center
 
 
@@ -90,7 +88,7 @@ Podcast: `Thoughtworks Technology Podcast <https://www.thoughtworks.com/en-de/in
 
 .. image:: screenshots/thoughtworks-technology-podcast.png
     :align: center
-    :class: highdpi trbl-shadow
+    :class: trbl-shadow
 
 
 
