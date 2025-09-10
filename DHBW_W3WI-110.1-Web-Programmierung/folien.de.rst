@@ -54,7 +54,7 @@ Portfolioaufgabe
 
 Entwicklung eines kleinen *verteilten* zwei Personen Spiels mit HTML, CSS und JavaScript.
 
-Der Einsatz von großen Frameworks ist nicht erlaubt. Der Einsatz von Socket.io und Express (auf Serverseite) ist erlaubt, um die Kommunikation zwischen den Clients zu vereinfachen. Der Einsatz weiterer Frameworks ist nur nach Absprache gestattet.
+Der Einsatz von großen Frameworks ist nicht erlaubt. Der Einsatz von Socket.io und Express (auf Serverseite) ist erlaubt, um die Kommunikation zwischen den Clients zu vereinfachen. Der Einsatz weiterer Frameworks ist nur nach Absprache gestattet. Der Einsatz von Frameworks zum Testen (z. B., Jest) ist erlaubt.
 
 .. container:: incremental
 
@@ -131,12 +131,12 @@ Bewertung (max. 70 Punkte)
 .. admonition:: Möglichkeiten für Bonuspunkte
   :class: font-size-90
 
-  :Responsiveness: max 5 Punkte (d.h. die Anwendung passt sich an verschiedene Bildschirmgrößen an, z.B. Desktop, Tablet, Smartphone)
+  :Responsiveness: max 5 Punkte (d. h. die Anwendung passt sich an verschiedene Bildschirmgrößen an, z.B. Desktop, Tablet, Smartphone)
   :Internationalisierung: 
   
-    max 5 Punkte (d.h. Unterstützung von mind. 2 Sprachen)
+    max 5 Punkte (d. h. Unterstützung von mind. 2 Sprachen wird geboten)
 
-  :Cheatingpräventation: max 5 Punkte (d.h. Maßnahmen zur Verhinderung von Betrug, z.B. durch Validierung von Eingaben, Überprüfung von Spielständen)
+  :Cheatingpräventation: max 5 Punkte (d. h. Maßnahmen zur Verhinderung von Betrug, z.B. durch Validierung von Eingaben, Überprüfung von Spielständen)
 
     Bitte **dokumentieren Sie dies ggf. sehr deutlich** im Code!
 
