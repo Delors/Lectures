@@ -884,15 +884,15 @@ Spezifität von Selektoren
 
         **Chrome 135** - falsche Darstellung in den Entwicklertools - Farbe von "*error message*" ist im Browser rot, wird in den Entwicklertools aber als blau angezeigt.
 
-        .. image:: screenshots/important-chrome-135.png
-            :class: highdpi trbl-box-shadow-dark
+        .. image:: screenshots/important-chrome-135.webp
+            :class: trbl-box-shadow-dark
 
     .. card::
 
         **Firefox 138** - korrekte Darstellung in den Entwicklertools - Farbe von "*error message*" ist im Browser rot und wird in den Entwicklertools auch als rot angezeigt.
 
-        .. image:: screenshots/important-firefox-138.png
-            :class: highdpi trbl-box-shadow-dark
+        .. image:: screenshots/important-firefox-138.webp
+            :class: trbl-box-shadow-dark
 
     .. card::
 
@@ -1634,7 +1634,7 @@ Nesting - Beispiel
             .. container:: center-content
 
                 .. image:: code/1st-exercise/screenshot-ausgangssituation.png
-                    :class: highdpi trbl-box-shadow-dark border-rounded
+                    :class: trbl-box-shadow-dark border-rounded
 
             :Code (HTML): `exercise-template.html <code/1st-exercise/exercise-template.html>`__
             :Hintergrundbild: `image.png <code/1st-exercise/image.png>`__
@@ -1649,7 +1649,7 @@ Nesting - Beispiel
             .. container:: center-content
 
                 .. image:: code/1st-exercise/screenshot-final.png
-                    :class: highdpi trbl-box-shadow-dark border-rounded
+                    :class: trbl-box-shadow-dark border-rounded
 
         .. card::
 
