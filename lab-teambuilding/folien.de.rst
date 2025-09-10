@@ -1,5 +1,5 @@
 .. meta::
-    :version: genesis
+    :version: renaissance
     :author: Michael Eichberg
     :keywords: Projekt, Teambuilding
     :description lang=de: Teambuilding
@@ -29,21 +29,17 @@ Teambuilding im Projekt
 
 
 
-.. class:: no-title
+Materialien für die Marshmallow-Challenge
+-------------------------------------------------
 
-Materialien
--------------
+.. grid::
 
-.. container:: two-columns 
-
-    .. container:: column no-separator
+    .. cell:: width-70
     
-        .. container:: clearfix
-
-            .. image:: images/tape.webp 
-                :alt: Tape
-                :align: right
-                :width: 275
+        .. image:: images/tape.webp 
+            :alt: Tape
+            :align: right
+            :width: 275
 
         .. image:: images/rope.webp 
             :alt: Rope
@@ -55,7 +51,7 @@ Materialien
             :align: center
             :width: 250
 
-    .. container:: column 
+    .. cell:: width-30
     
         .. image:: images/spaghetti.webp 
             :alt: Spaghetti
@@ -69,17 +65,14 @@ Materialien
 Marshmallow-Challenge
 -----------------------------------------
 
-.. container:: foundations green-background 
+**Aufgabe**
 
-    **Aufgabe**
-    
-    - Jedes Team baut aus 20 Spaghetti-Stäbchen, 1m Klebeband und 2m Schnur ein freistehendes Gebäude auf dessen Spitze ein Marshmallow sitzt.
+- Jedes Team baut aus 20 Spaghetti-Stäbchen, 1m Klebeband und 2m Schnur ein freistehendes Gebäude auf dessen Spitze ein Marshmallow sitzt.
 
-    - Es gewinnt die Gruppe, die das höchste Gebäude in 18min baut.
+- Es gewinnt die Gruppe, die das höchste Gebäude in 18min baut.
 
-.. container:: incremental foundations blue-background smaller
-        
-    **Bedingungen**
+.. remark:: 
+    :class: incremental 
 
     - Wer nach dem Ablauf der Zeit noch am Gebäude baut wird disqualifiziert.
 
