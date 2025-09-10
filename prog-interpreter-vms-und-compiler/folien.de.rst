@@ -7,8 +7,39 @@
     :id: lecture-prog-compiler-interpreter-vms
     :first-slide: last-viewed
     :master-password: WirklichSchwierig!
-    
-.. include:: ../docutils.defs  
+    :svg-style:
+        rect {
+            fill: white;
+            stroke: blue;
+            stroke-width: 0.2ch;
+            filter: drop-shadow( 2px 2px 4px rgba(0, 0, 0, .7));
+        }
+        line {
+            stroke:darkorange;
+            stroke-width:0.2ch;
+        }
+        text {
+            fill: black;
+            font-family: var(--theme-code-font-family);
+            font-size: 0.75lh;
+        }
+        .subtext {
+            fill: var(--dark-gray);
+        }
+    :svg-defs:
+        <marker
+        id="arrow"
+        viewBox="0 0 2 2"
+        refX="2"
+        refY="1"
+        markerUnits="strokeWidth"
+        markerWidth="7"
+        markerHeight="7"
+        orient="auto-start-reverse">
+            <path class="arrow-head" d="M 0 0 L 2 1 L 0 2 z" />
+        </marker>
+
+.. include:: ../docutils.defs
 
 
 
@@ -21,9 +52,9 @@ Von Compilern, Interpretern und virtuellen Maschinen
 
 .. supplemental::
 
-    :Folien: 
-        
-        |html-source| 
+    :Folien:
+
+        |html-source|
 
         |pdf-source|
 
@@ -32,7 +63,7 @@ Von Compilern, Interpretern und virtuellen Maschinen
 
     :Kontrollfragen:
 
-        .. source:: kontrollfragen.de.rst 
+        .. source:: kontrollfragen.de.rst
             :path: relative
             :prefix: https://delors.github.io/
             :suffix: .html
@@ -58,7 +89,7 @@ Arbeitsweise eines Interpreters:
     (:java:`inpExpr` sei der aktueller Ausdruck des auszuführenden Programms)
 
 1. Syntaktische Analyse von :java:`inpExpr`
-2. Überführung von :java:`inpExpr` in eine Befehlsfolge der Maschinensprache, oder der Sprache, in der das Interpreterprogramm selbst geschrieben ist (:java:`outExpr`) 
+2. Überführung von :java:`inpExpr` in eine Befehlsfolge der Maschinensprache, oder der Sprache, in der das Interpreterprogramm selbst geschrieben ist (:java:`outExpr`)
 3. Ausführung von :java:`outExpr`
 4. Wiederholung der Schritte (1) bis (3) für die nächste Anweisung.
 
@@ -70,7 +101,7 @@ Compiler
 .. deck::
 
     .. card::
-                
+
 
         .. definition::
 
@@ -80,67 +111,34 @@ Compiler
         .. raw:: html
 
             <svg width="70ch" height="5lh" version="1.1" xmlns="http://www.w3.org/2000/svg">
-                <style>
-                    rect {
-                        fill: white;
-                        stroke: blue;
-                        stroke-width: 0.2ch;
-                        filter: drop-shadow( 2px 2px 4px rgba(0, 0, 0, .7));
-                    } 
-                    line { 
-                        stroke:darkorange;
-                        stroke-width:0.2ch;
-                    }
-                    text {
-                        fill: black;
-                        font-family: var(--theme-code-font-family);
-                        font-size: 0.75lh;
-                    }
-                    .subtext {
-                        fill: var(--dark-gray);
-                    }
-                </style>
-                <defs>
-                    <marker 
-                    id="arrow"
-                    viewBox="0 0 2 2"
-                    refX="2"
-                    refY="1"
-                    markerUnits="strokeWidth"
-                    markerWidth="7"
-                    markerHeight="7"
-                    orient="auto-start-reverse">
-                    <path class="arrow-head" d="M 0 0 L 2 1 L 0 2 z" />
-                    </marker>
-                </defs>
 
-                    <!-- Quellprogramm P1 -->
-                    <rect x="0.1ch" y="0.1ch" rx="1ch" ry="1ch" width="16ch" height="2.5lh" />
-                    <text x="1ch" y="1lh">Programm in</text>
-                    <text x="1ch" y="2lh">der Sprache A</text>
-                    <text class="subtext" x="1ch" y="4lh">Quellprogramm P1</text>
-                    
-                    <g class="incremental">
-                    <!-- Übersetzer -->
-                    <line x1="16ch" y1="1.25lh" x2="20ch" y2="1.25lh" marker-end="url(#arrow)" />
-                    <rect x="20ch" y="0.5lh" rx="1ch" ry="1ch"  width="12ch" height="1.5lh" />
-                    <text x="21.35ch" y="1.6lh">Übersetzer</text>
-                    </g>
+                <!-- Quellprogramm P1 -->
+                <rect x="0.1ch" y="0.1ch" rx="1ch" ry="1ch" width="16ch" height="2.5lh" />
+                <text x="1ch" y="1lh">Programm in</text>
+                <text x="1ch" y="2lh">der Sprache A</text>
+                <text class="subtext" x="1ch" y="4lh">Quellprogramm P1</text>
 
-                    <g class="incremental">
-                    <!-- Zielprogramm P2 -->
-                    <line x1="32ch" y1="1.25lh" x2="36ch" y2="1.25lh" marker-end="url(#arrow)" />
-                    <rect x="36ch" y="0.1ch" width="16ch" rx="1ch" ry="1ch" height="2.5lh" />
-                    <text x="37ch" y="1lh">Programm in</text>
-                    <text x="37ch" y="2lh">der Sprache B</text>
-                    <text class="subtext" x="37ch" y="4lh">Zielprogramm P2</text>
-                    </g>
+                <g class="incremental">
+                <!-- Übersetzer -->
+                <line x1="16ch" y1="1.25lh" x2="20ch" y2="1.25lh" marker-end="url(#arrow)" />
+                <rect x="20ch" y="0.5lh" rx="1ch" ry="1ch"  width="12ch" height="1.5lh" />
+                <text x="21.35ch" y="1.6lh">Übersetzer</text>
+                </g>
 
-                    <g class="incremental">
-                        <!-- Ausführung -->
-                        <line x1="52ch" y1="1.25lh" x2="56ch" y2="1.25lh" marker-end="url(#arrow)" />
-                        <text x="57ch" y="1.6lh" style="font-style:italic">Ausführung</text> 
-                    </g>
+                <g class="incremental">
+                <!-- Zielprogramm P2 -->
+                <line x1="32ch" y1="1.25lh" x2="36ch" y2="1.25lh" marker-end="url(#arrow)" />
+                <rect x="36ch" y="0.1ch" width="16ch" rx="1ch" ry="1ch" height="2.5lh" />
+                <text x="37ch" y="1lh">Programm in</text>
+                <text x="37ch" y="2lh">der Sprache B</text>
+                <text class="subtext" x="37ch" y="4lh">Zielprogramm P2</text>
+                </g>
+
+                <g class="incremental">
+                    <!-- Ausführung -->
+                    <line x1="52ch" y1="1.25lh" x2="56ch" y2="1.25lh" marker-end="url(#arrow)" />
+                    <text x="57ch" y="1.6lh" style="font-style:italic">Ausführung</text>
+                </g>
             </svg>
 
         .. legend::
@@ -154,7 +152,7 @@ Compiler
 
     .. card::
 
-        Mutmaßlich erfunden von Konteradmiral Grace Murray Hopper (1906–1992) 
+        Mutmaßlich erfunden von Konteradmiral Grace Murray Hopper (1906–1992)
 
         Nach eigener Aussage hat sie den Compiler aus Faulheit erfunden, und weil sie hoffte, dass "Programmierer wieder Mathematiker werden" könnten.
 
@@ -175,7 +173,7 @@ Compiler - Übersetzungsphasen
 
 :Semantische Analyse:
 
-    Testet, ob alle im Quellprogramm benutzten Namen deklariert wurden und ihrem Typ entsprechend verwendet werden, usw. 
+    Testet, ob alle im Quellprogramm benutzten Namen deklariert wurden und ihrem Typ entsprechend verwendet werden, usw.
 
 :Code-Generierung:
 
@@ -192,33 +190,6 @@ Compiler - Übersetzung (Traditionell)
     :class: center-content
 
     <svg width="55ch" height="9lh" version="1.1" xmlns="http://www.w3.org/2000/svg">
-        <style>
-            line { 
-                stroke:darkorange;
-                stroke-width:0.2ch;
-            }
-            text {
-                fill: black;
-                font-family: var(--theme-code-font-family);
-                font-size: 0.75lh;
-            }
-            .subtext {
-                fill: var(--dark-gray);
-            }
-        </style>
-        <defs>
-            <marker 
-            id="arrow"
-            viewBox="0 0 2 2"
-            refX="2"
-            refY="1"
-            markerUnits="strokeWidth"
-            markerWidth="7"
-            markerHeight="7"
-            orient="auto-start-reverse">
-            <path class="arrow-head" d="M 0 0 L 2 1 L 0 2 z" />
-            </marker>
-        </defs>
 
         <text x="1ch" y="1lh" style="font-style: italic">N Sprachen</text>
         <text x="40ch" y="1lh" style="font-style: italic">M Plattformen</text>
@@ -322,7 +293,7 @@ Virtuelle Maschinen
 
         .. definition::
 
-            Eine virtuelle Maschine ist ein Programm, das die Arbeit eines Prozessors in Software simuliert 
+            Eine virtuelle Maschine ist ein Programm, das die Arbeit eines Prozessors in Software simuliert
 
 
         .. class:: incremental-list
@@ -337,71 +308,43 @@ Virtuelle Maschinen
 
 
     .. card::
-                
+
         .. raw:: html
             :class: center-content
 
             <svg width="55ch" height="9lh" version="1.1" xmlns="http://www.w3.org/2000/svg">
-                <style>
-                    line { 
-                    stroke:darkorange;
-                    stroke-width:0.2ch;
-                    }
-                    text {
-                    fill: black;
-                    font-family: var(--theme-code-font-family);
-                    font-size: 0.75lh;
-                    }
-                    .subtext {
-                    fill: var(--dark-gray);
-                    }
-                </style>
-                <defs>
-                    <marker 
-                        id="arrow"
-                        viewBox="0 0 2 2"
-                        refX="2"
-                        refY="1"
-                        markerUnits="strokeWidth"
-                        markerWidth="7"
-                        markerHeight="7"
-                        orient="auto-start-reverse">
-                        <path class="arrow-head" d="M 0 0 L 2 1 L 0 2 z" />
-                    </marker>
-                </defs>
-                
                 <text x="1ch" y="1lh" style="font-style: italic">N Sprachen</text>
                 <text x="40ch" y="1lh" style="font-style: italic">M Plattformen</text>
-                
+
                 <text x="20ch" y="4.5lh" style="font-style: italic">Virtuelle</text>
                 <text x="20ch" y="5.5lh" style="font-style: italic">Machine</text>
-                
+
                 <text x="1ch" y= 2.5lh>Pascal</text>
                 <g class="incremental">
                     <line x1="7ch" y1="2.15lh" x2="19ch" y2="4.15lh" marker-end="url(#arrow)" />
-                    
+
                 </g>
-                
+
                 <text x="1ch" y= 4lh>C</text>
                 <g class="incremental">
                     <line x1="2.5ch" y1="3.65lh" x2="19ch" y2="4.35lh" marker-end="url(#arrow)" />
                 </g>
-                
+
                 <text x="1ch" y= 5.5lh>C++</text>
                 <g class="incremental">
                     <line x1="4.5ch" y1="5.15lh" x2="19ch" y2="4.55lh" marker-end="url(#arrow)" />
                 </g>
-                
+
                 <text x="1ch" y= 7lh>Smalltalk</text>
                 <g class="incremental">
                     <line x1="10.5ch" y1="6.65lh" x2="19ch" y2="4.75lh" marker-end="url(#arrow)" />
                 </g>
-                
+
                 <text x="1ch" y= 8.5lh>...</text>
                 <g class="incremental">
                     <line x1="5ch" y1="8.25lh" x2="19ch" y2="4.95lh" marker-end="url(#arrow)" />
                 </g>
-                
+
                 <g class="incremental">
                     <line x1="29ch" y1="4.95lh" x2="39ch" y2="8.25lh" marker-end="url(#arrow)" />
                     <line x1="29ch" y1="4.15lh" x2="39ch" y2="2.15lh" marker-end="url(#arrow)" />
@@ -409,15 +352,15 @@ Virtuelle Maschinen
                     <line x1="29ch" y1="4.55lh" x2="39ch" y2="5.15lh" marker-end="url(#arrow)" />
                     <line x1="29ch" y1="4.75lh" x2="39ch" y2="6.65lh" marker-end="url(#arrow)" />
                 </g>
-                
+
                 <text x="40ch" y= 2.5lh>Linux (ARM)</text>
                 <text x="40ch" y= 4lh>Apple (ARM)</text>
                 <text x="40ch" y= 5.5lh>Apple (Intel)</text>
                 <text x="40ch" y= 7lh>Windows (Intel)</text>
                 <text x="40ch" y= 8.5lh>...</text>
-                
+
             </svg>
-        
+
     .. card::
 
 
@@ -425,7 +368,7 @@ Virtuelle Maschinen
 
         .. class:: incremental-list positive-list
 
-        - Übersetzte Programme einer Sprache laufen auf allen Prozessortypen, für die es einen Byte-Code Interpreter(VM) gibt. 
+        - Übersetzte Programme einer Sprache laufen auf allen Prozessortypen, für die es einen Byte-Code Interpreter(VM) gibt.
         - Es wird nur ein Compiler benötigt und die Sprache wird plattformunabhängig.
 
         .. supplemental::
@@ -480,10 +423,10 @@ Java-Laufzeitumgebung
     :Runtime-System: Stellt einem Java-Programm wichtige Ressourcen zur Verfügung.
     :Bytecode Verifier: Überprüft, ob die geladenen Bytecodes der JVM-Spezifikation entsprechen.
         Klassen können über das Netz oder aus dem lokalen Dateisystem zur Laufzeit einer Java-Anwendung in das Laufzeitsystem nachgeladen werden
-        
-        Ein Teil der Sicherheitsmaßnahmen wird durch den Bytecode Verifier realisiert. 
 
-    .. attention:: 
+        Ein Teil der Sicherheitsmaßnahmen wird durch den Bytecode Verifier realisiert.
+
+    .. attention::
         :class: incremental
 
         Die Sicherheit, die der Bytecode-Verifier und Java als solches bietet - ist nicht ausreichend, um die Sicherheit des Systems zu gewährleisten. Führen Sie Java Programme, denen Sie nicht vertrauen, niemals aus.
@@ -493,7 +436,7 @@ Java-Laufzeitumgebung
 Java-Übersetzung
 ------------------------------------------------
 
-- Die Eingabe für :console:`javac` sind ein oder mehrere Java-Dateien, die jeweils die eine oder mehrere Klassendefinitionen enthalten. 
+- Die Eingabe für :console:`javac` sind ein oder mehrere Java-Dateien, die jeweils die eine oder mehrere Klassendefinitionen enthalten.
 - Eine derartige Datei nennt man eine Übersetzungseinheit
 - Die Ausgabe ist pro Klasse X genau eine Datei X.class, die den Bytecode der Klasse enthält.
 
@@ -516,7 +459,7 @@ Java-Übersetzung
             .. code:: console
                 :number-lines:
 
-                $ javac HelloWorld.java                                  
+                $ javac HelloWorld.java
                 $ ls
                 HelloWorld.class HelloWorld.java
                 $ java HelloWorld                                        # ACHTUNG kein ".java"!
@@ -539,7 +482,7 @@ Java-Übersetzung
             .. code:: console
                 :number-lines:
 
-                $ javac de/dhbw/HelloWorld.java                                  
+                $ javac de/dhbw/HelloWorld.java
                 $ ls de/dhbw
                 HelloWorld.class HelloWorld.java
                 $ java de.dhbw.HelloWorld                # ACHTUNG vollständiger Name der Klasse!
@@ -579,7 +522,7 @@ Java-Übersetzung
         .. include:: code/ds/List.java
             :code: java
             :number-lines:
-            :class: copy-to-clipboard            
+            :class: copy-to-clipboard
 
     .. solution::
         :pwd: JetztMalRichtig:javac
@@ -596,5 +539,4 @@ Java-Übersetzung
             List.class List.java Stack.class Stack.java
             $java rpn.RPN 1 2 +
             (2 + 1) = 3.0
-            (2 + 1) 
-    
+            (2 + 1)

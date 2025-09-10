@@ -6,6 +6,18 @@
     :id: lecture-security-a-primer-in-network-security
     :first-slide: last-viewed
     :master-password: WirklichSchwierig!
+    :svg-defs:
+        <marker
+            id="arrow"
+            viewBox="0 0 10 10"
+            refX="10"
+            refY="5"
+            markerWidth="8"
+            markerHeight="8"
+            orient="auto-start-reverse">
+            <path d="M 0 0 L 10 5 L 0 10 z" />
+        </marker>
+
 
 .. include:: ../docutils.defs
 
@@ -40,6 +52,7 @@ Themen
 - `Einmal-Passwörter`_
 - `Secure Shell (SSH)`_
 - `Firewalls`_
+
 
 
 .. class:: new-section transition-fade
@@ -99,18 +112,7 @@ Dreifacher Handshake:
 
     <div style="width: 76ch; height: 40ch"; container-type:size;">
     <svg viewBox="100 0 1140 600" font-size="36" version="1.1" xmlns="http://www.w3.org/2000/svg">
-        <defs>
-            <marker
-            id="arrow"
-            viewBox="0 0 10 10"
-            refX="10"
-            refY="5"
-            markerWidth="8"
-            markerHeight="8"
-            orient="auto-start-reverse">
-            <path d="M 0 0 L 10 5 L 0 10 z" />
-            </marker>
-        </defs>
+
         <text x="125" y="75" style="font-weight: bolder">Client</text>
         <line x1="200" y1="100" x2="200" y2="400" style="stroke:rgb(0,0,0);stroke-width:3" />
         <text x="925" y="75" style="font-weight: bolder">Server</text>
@@ -218,18 +220,6 @@ Port Scans: TCP Connect Scan
 
             <div style="width: 36ch; height:18ch; container-type:size;">
             <svg viewBox="0 0 1200 600" font-size="48" version="1.1" xmlns="http://www.w3.org/2000/svg">
-                <defs>
-                    <marker
-                    id="arrow"
-                    viewBox="0 0 10 10"
-                    refX="10"
-                    refY="5"
-                    markerWidth="8"
-                    markerHeight="8"
-                    orient="auto-start-reverse">
-                    <path d="M 0 0 L 10 5 L 0 10 z" />
-                    </marker>
-                </defs>
                 <text x="125" y="75" style="font-weight: bolder">Scanner</text>
                 <line x1="200" y1="100" x2="200" y2="400" style="stroke:rgb(0,0,0);stroke-width:3" />
                 <text x="925" y="75" style="font-weight: bolder">Server</text>
@@ -276,18 +266,6 @@ Port Scans: TCP SYN Scan
 
             <div style="width: 36ch; height:18ch; container-type:size;">
             <svg viewBox="0 0 1200 600" font-size="48" version="1.1" xmlns="http://www.w3.org/2000/svg">
-                <defs>
-                    <marker
-                    id="arrow"
-                    viewBox="0 0 10 10"
-                    refX="10"
-                    refY="5"
-                    markerWidth="8"
-                    markerHeight="8"
-                    orient="auto-start-reverse">
-                    <path d="M 0 0 L 10 5 L 0 10 z" />
-                    </marker>
-                </defs>
                 <text x="125" y="75" style="font-weight: bolder">Scanner</text>
                 <line x1="200" y1="100" x2="200" y2="400" style="stroke:rgb(0,0,0);stroke-width:3" />
                 <text x="925" y="75" style="font-weight: bolder">Server</text>
@@ -573,18 +551,6 @@ SYN-Cookies sind speziell konstruiert initiale Sequenznummern.
 
             <div style="width:72ch;height:27ch">
             <svg viewBox="100 0 1600 600" font-size="36" version="1.1" xmlns="http://www.w3.org/2000/svg">
-                <defs>
-                    <marker
-                    id="arrow"
-                    viewBox="0 0 10 10"
-                    refX="10"
-                    refY="5"
-                    markerWidth="8"
-                    markerHeight="8"
-                    orient="auto-start-reverse">
-                    <path d="M 0 0 L 10 5 L 0 10 z" />
-                    </marker>
-                </defs>
                 <text x="150" y="75" style="font-weight: bolder">Client</text>
                 <line x1="200" y1="100" x2="200" y2="400" style="stroke:rgb(0,0,0);stroke-width:3" />
                 <line x1="200" y1="400" x2="200" y2="550" stroke-dasharray="5,5" style="stroke:rgb(0,0,0);stroke-width:3" />
@@ -604,19 +570,6 @@ SYN-Cookies sind speziell konstruiert initiale Sequenznummern.
 
             <div style="width:72ch;height:27ch">
             <svg viewBox="100 0 1600 600" font-size="36"  version="1.1" xmlns="http://www.w3.org/2000/svg">
-                <defs>
-                    <marker
-                    id="arrow"
-                    viewBox="0 0 10 10"
-                    refX="10"
-                    refY="5"
-                    markerWidth="8"
-                    markerHeight="8"
-                    orient="auto-start-reverse">
-                    <path d="M 0 0 L 10 5 L 0 10 z" />
-                    </marker>
-                </defs>
-
                 <text x="270" y="290" transform="rotate(-4.25)">SYN(with cookie), ACK(1001)</text>
                 <line x1="1500" y1="200" x2="200" y2="290" style="stroke:rgb(0,0,0);stroke-width:3" marker-end="url(#arrow)"/>
             </svg>
@@ -630,19 +583,6 @@ SYN-Cookies sind speziell konstruiert initiale Sequenznummern.
 
             <div style="width:72ch;height:27ch">
             <svg  viewBox="100 0 1600 600" font-size="36"  version="1.1" xmlns="http://www.w3.org/2000/svg">
-                <defs>
-                    <marker
-                    id="arrow"
-                    viewBox="0 0 10 10"
-                    refX="10"
-                    refY="5"
-                    markerWidth="8"
-                    markerHeight="8"
-                    orient="auto-start-reverse">
-                    <path d="M 0 0 L 10 5 L 0 10 z" />
-                    </marker>
-                </defs>
-
                 <text x="555" y="325" transform="rotate(4.2)">ACK(with cookie(+1))</text>
                 <line x1="200" y1="300" x2="1500" y2="390" style="stroke:rgb(0,0,0);stroke-width:3" marker-end="url(#arrow)"/>
 

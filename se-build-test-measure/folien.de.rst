@@ -6,6 +6,28 @@
     :id: lecture-se-testen-und-metriken
     :first-slide: last-viewed
     :master-password: WirklichSchwierig!
+    :svg-style:
+        rect {
+            fill: white;
+            stroke: blue;
+            stroke-width: 0.2;
+        }
+        text {
+            fill: black;
+            font-family: var(--theme-code-font-family);
+        }
+    :svg-defs:
+        <marker
+        id="arrow"
+        viewBox="0 0 10 10"
+        refX="10"
+        refY="5"
+        markerWidth="4"
+        markerHeight="4"
+        orient="auto-start-reverse">
+            <path class="arrow-head" d="M 0 0 L 10 5 L 0 10 z" />
+        </marker>
+
 
 .. include:: ../docutils.defs
 
@@ -19,7 +41,7 @@ Eine allererste Einführung
 :Kontakt: michael.eichberg@dhbw.de
 :Version: 1.1
 
-.. [#] 
+.. [#]
 
     Die Folien basieren in Teilen auf Folien von Dr. Helm und Prof. Dr. Hermann.
 
@@ -269,7 +291,7 @@ Entwicklung eines Testplans - Beispiel
            - gleichseitig ist.
 
         .. hint::
-            :class: incremental 
+            :class: incremental
 
             Ein gültiges Dreieck muss zwei Bedingungen erfüllen:
 
@@ -296,9 +318,9 @@ Entwicklung eines Testplans - Beispiel
             Drei Seiten mit maximaler Länge, MAX, MAX, MAX, Gleichseitig
             Zwei Seiten mit maximaler Länge, MAX, MAX, 1, Gleichschenklig
             Eine Seite mit maximaler Länge, 1, 1, MAX, Ungültig
-        
-        .. supplemental:: 
-            
+
+        .. supplemental::
+
             Die Testfälle sind noch nicht vollständig (zum Beispiel wenn A, B und C alle 0 sind; oder wenn eine Seite die Länge der beiden anderen Seiten addiert hat). Tests zum Beispiel in Hinblick auf objektorientierte Struktur, Fehlerbehandlung, etc. ... fehlen.
 
 
@@ -400,29 +422,6 @@ Zweigüberdeckung (:eng:`Branch Coverage`)
 
             <div style="width: 30ch; height: 7lh; container-type:size;">
             <svg viewBox="0 0 30 13" font-size="1.75" version="1.1" xmlns="http://www.w3.org/2000/svg">
-                <style>
-                    rect {
-                        fill: white;
-                        stroke: blue;
-                        stroke-width: 0.2;
-                    }
-                    text {
-                        fill: black;
-                        font-family: var(--theme-code-font-family);
-                    }
-                </style>
-                <defs>
-                    <marker
-                    id="arrow"
-                    viewBox="0 0 10 10"
-                    refX="10"
-                    refY="5"
-                    markerWidth="4"
-                    markerHeight="4"
-                    orient="auto-start-reverse">
-                    <path class="arrow-head" d="M 0 0 L 10 5 L 0 10 z" />
-                    </marker>
-                </defs>
 
                 <rect width="21" height="4.25" x="1" y="0.15" rx="1" ry="1" />
                 <text class="code" x="2.5" y="1.75">
@@ -714,7 +713,7 @@ The Last Word
 Übung
 -------
 
-.. scrollable:: 
+.. scrollable::
 
     .. exercise::
 
@@ -738,7 +737,7 @@ The Last Word
 
             - :java:`main` ohne Parameter
             - wir haben zu viele Operanden bzw. zu wenige Operatoren
-            - wir haben zu wenige Operanden bzw. wir haben zu viele Operatoren      
+            - wir haben zu wenige Operanden bzw. wir haben zu viele Operatoren
             - wir haben einen unbekannten Operator
             - wir haben sehr große Operanden (d. h. die Berechnung führt zu einem Überlauf)
             - ...
@@ -792,7 +791,7 @@ Qualitätsmetriken
           z. B. Zeilen pro Methode < 50
         - Zur Bewertung von Software
 
-    .. card:: 
+    .. card::
 
         .. rubric:: Einfache Metriken
 
@@ -866,7 +865,7 @@ Ansätze der analytischen Softwarequalitätssicherung
     formale Methoden, , , :green:`✓`, ↑
     Strukturanalysen, ✓, ✓, , ↓
     "Stilüberprüfungen
-    
+
     (:eng:`Linting`)", , :green:`✓` , , ↓
 
 .. supplemental::
@@ -887,7 +886,7 @@ Ansätze der analytischen Softwarequalitätssicherung
 
         Um einen Lernerfolg zu erhalten, sollten Sie die Schritte unten selber durchführen und nicht die Aufgabenstellung als solches direkt an den KI Assistenten Ihrer Wahl übergeben!
 
-    .. remark:: 
+    .. remark::
         :class: incremental
 
         Für die folgenden Aufgabe sind keine Kenntnisse von HTML, JavaScript oder CSS notwendig. Wenn es Probleme gibt, dann beschreiben Sie das Problem der KI und lassen sich helfen!
@@ -903,16 +902,16 @@ Ansätze der analytischen Softwarequalitätssicherung
 
         .. class:: incremental-list
 
-        1. Erstellen Sie mit Hilfe eines *eigenem* Prompts die Anwendung. Dieser Prompt sollte die Anwendung beschreiben und die zu verwendenden Technologien. Fordern Sie ggf. explizit, dass der Code und das Styling in getrennten Dateien erfolgen soll, falls nur eine Datei (``index.html``?) zu finden ist. 
- 
-        2. Lassen Sie sich ein **NPM Build-Skript** generieren, dass die nachfolgenden Schritte durchführt. D.h. es soll eine ``package.json`` Datei erzeugt werden, die *alle* notwendigen Abhängigkeiten und Skripte definiert. Es muss insbesondere möglich sein: ``npm run build`` und ``npm run clean`` auszuführen.   
-        
+        1. Erstellen Sie mit Hilfe eines *eigenem* Prompts die Anwendung. Dieser Prompt sollte die Anwendung beschreiben und die zu verwendenden Technologien. Fordern Sie ggf. explizit, dass der Code und das Styling in getrennten Dateien erfolgen soll, falls nur eine Datei (``index.html``?) zu finden ist.
+
+        2. Lassen Sie sich ein **NPM Build-Skript** generieren, dass die nachfolgenden Schritte durchführt. D.h. es soll eine ``package.json`` Datei erzeugt werden, die *alle* notwendigen Abhängigkeiten und Skripte definiert. Es muss insbesondere möglich sein: ``npm run build`` und ``npm run clean`` auszuführen.
+
            1. Formatierung aller Dateien (.js, .html, .css)
-           2. Linting aller Dateien (.js, .html, .css) 
+           2. Linting aller Dateien (.js, .html, .css)
 
            Validieren Sie, dass Ihr Build-Skript auch die neuesten Versionen der eingebundenen Tools verwendet. *Dies erfordert in der Regel eine Google-Suche nach den aktuellen Versionen.*
 
-           .. supplemental:: 
+           .. supplemental::
 
               Wenn Sie NodeJs installieren, dann steht Ihnen auch NPM zur Verfügung.
 
@@ -927,7 +926,7 @@ Ansätze der analytischen Softwarequalitätssicherung
 
         .. solution::
             :pwd: TicTacToe!
-            
+
             .. rubric:: Exemplarisches Vorgehen
 
             Im Folgenden wird kurz beschrieben wie vorgegangen werden könnte, um ein vollständiges TicTacToe-Projekt zu erstellen. *In diesem Fall wurde Copilot und GPT-4.1 verwendet, um den Code zu generieren. (August 2025)*
@@ -937,13 +936,13 @@ Ansätze der analytischen Softwarequalitätssicherung
             .. rubric:: 1. Prompt
 
             ::
-                
-                Please create a small webpage to play TicTacToe against a computer. You should only use plain HTML, CSS and JavaScript. 
+
+                Please create a small webpage to play TicTacToe against a computer. You should only use plain HTML, CSS and JavaScript.
 
             .. rubric:: 2. Prompt
 
-            :: 
-                
+            ::
+
                 I need an npm build script which performs code formatting and linting for all files. The file should define all dependencies and scripts.
 
             .. rubric:: 3. Prompt
@@ -962,12 +961,12 @@ Ansätze der analytischen Softwarequalitätssicherung
 
             .. rubric:: 5. Prompt
 
-            :: 
+            ::
 
                 ESLint is complaining that I should use an ``eslint.config`` file instead of an ``.eslintrc`` file. Please, update the file.
 
             .. rubric:: 6. Prompt
-            
+
             An dieser Stelle zeigte sich, dass der Code Inkonsistenzen aufwies.
 
             ::
@@ -999,4 +998,3 @@ Ansätze der analytischen Softwarequalitätssicherung
             ::
 
                 I need some end-to-end tests for my application. Please, create them using Playwright. Also update the build script to run all tests when the application is build.
-

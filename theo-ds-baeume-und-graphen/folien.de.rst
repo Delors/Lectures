@@ -7,6 +7,102 @@
     :id: lecture-theo-ds-baeume-und-graphen
     :first-slide: last-viewed
     :master-password: WirklichSchwierig!
+    :svg-style:
+        g.graph {
+            circle{
+                fill: black;
+                stroke-width: 0.2;
+
+                &.red { fill: red;}
+                &.green { fill: green; }
+                &.blue { fill: blue; }
+                &.start-node {
+                    fill: none;
+                    stroke: red;
+                    stroke-width: 0.3;
+                }
+                &.visited-node {
+                    fill: lightgray;
+                    stroke: blue;
+                    stroke-width: 0.3;
+                }
+                &.unreached-node {
+                    fill: lightgray;
+                    stroke: none;
+                    stroke-width: 0.3;
+                }
+            }
+            path,
+            line {
+                fill: none;
+                stroke:darkgray;
+                stroke-width:0.2;
+
+                &.irrelevant-edge {  stroke: red; }
+            }
+            text {
+                fill: black;
+                font-family: var(--theme-code-font-family);
+                font-weight: bold;
+
+                &.edge-label {
+                    fill: darkorange;
+                    font-weight: normal;
+                    font-size: 60%;
+                }
+            }
+        }
+        g.tree {
+            circle {
+                fill: darkgray;
+                filter: drop-shadow( 2 2 4 rgb(0, 0, 0));
+                &.visited-node {
+                    fill: lightgray;
+                    stroke: blue;
+                    stroke-width: 0.3;
+                }
+            }
+            line {
+                stroke:darkgray;
+                stroke-width:0.2;
+            }
+            text {
+                fill: black;
+                font-family: var(--theme-code-font-family);
+                font-weight: bold;
+            }
+            line, path {
+                &.traversal-edge {
+                    fill: none;
+                    stroke: red;
+                    stroke-width: 0.2;
+                }
+            }
+        }
+    :svg-defs:
+        <marker
+            id="arrow"
+            viewBox="0 0 2 2"
+            refX="1.8"
+            refY="1"
+            markerUnits="strokeWidth"
+            markerWidth="6"
+            markerHeight="6"
+            orient="auto-start-reverse">
+            <path class="arrow-head" d="M 0 0 L 2 1 L 0 2 z" />
+        </marker>
+        <marker
+            id="small-arrow"
+            viewBox="0 0 2 2"
+            refX="1.5"
+            refY="1"
+            markerUnits="strokeWidth"
+            markerWidth="4"
+            markerHeight="4"
+            orient="auto-start-reverse">
+            <path class="arrow-head" d="M 0 0 L 2 1 L 0 2 z" />
+        </marker>
+
 
 .. include:: ../docutils.defs
 
@@ -81,56 +177,6 @@ Gerichteter Graph - Beispiel
     <svg    viewBox="0 0 24 14"
             font-size="2"
             version="1.1" xmlns="http://www.w3.org/2000/svg">
-        <style>
-            g.graph {
-                circle{
-                    fill: black;
-                    stroke-width: 0.2;
-
-                    &.red {
-                        fill: red;
-                    }
-
-                    &.green {
-                        fill: green;
-                    }
-
-                    &.blue {
-                        fill: blue;
-                    }
-                }
-                path, 
-                line {
-                    fill: none;
-                    stroke:darkgray;
-                    stroke-width:0.2;
-                }
-                text {
-                    fill: black;
-                    font-family: var(--theme-code-font-family);
-                    font-weight: bold;
-
-                    &.edge-label {
-                        fill: darkorange;
-                        font-weight: normal;
-                        font-size: 60%;
-                    }
-                }                
-            }
-        </style>
-        <defs>
-            <marker
-            id="arrow"
-            viewBox="0 0 2 2"
-            refX="2"
-            refY="1"
-            markerUnits="strokeWidth"
-            markerWidth="6"
-            markerHeight="6"
-            orient="auto-start-reverse">
-            <path class="arrow-head" d="M 0 0 L 2 1 L 0 2 z" />
-            </marker>
-        </defs>
         <g class="graph">
             <g>
             <circle cx="8" cy="1" r="0.5" />
@@ -417,19 +463,6 @@ Implementierung von Graphen
             <svg    viewBox="0 0 24 14"
                     font-size="2"
                     version="1.1" xmlns="http://www.w3.org/2000/svg">
-                <defs>
-                    <marker
-                    id="arrow"
-                    viewBox="0 0 2 2"
-                    refX="2"
-                    refY="1"
-                    markerUnits="strokeWidth"
-                    markerWidth="6"
-                    markerHeight="6"
-                    orient="auto-start-reverse">
-                    <path class="arrow-head" d="M 0 0 L 2 1 L 0 2 z" />
-                    </marker>
-                </defs>
                 <g class="graph">
                     <g>
                     <circle cx="8" cy="1" r="0.5" />
@@ -685,47 +718,6 @@ Breite-zuerst-Suche - Beispiel
             font-size="2"
             version="1.1" xmlns="http://www.w3.org/2000/svg">
             <!-- the previous style is (also) used!-->
-        <style>
-            g.graph {
-                circle{
-                    &.start-node {
-                        fill: none;
-                        stroke: red;
-                        stroke-width: 0.3;
-                    }
-                    &.visited-node {
-                        fill: lightgray;
-                        stroke: blue;
-                        stroke-width: 0.3;
-                    }
-                    &.unreached-node {
-                        fill: lightgray;
-                        stroke: none;
-                        stroke-width: 0.3;
-                    }
-                }
-
-                line, path { 
-                    &.irrelevant-edge {
-                        stroke: red;
-                        stroke-width: 0.2;
-                    }
-                }
-            }
-        </style>
-        <defs>
-            <marker
-            id="arrow"
-            viewBox="0 0 2 2"
-            refX="2"
-            refY="1"
-            markerUnits="strokeWidth"
-            markerWidth="6"
-            markerHeight="6"
-            orient="auto-start-reverse">
-            <path class="arrow-head" d="M 0 0 L 2 1 L 0 2 z" />
-            </marker>
-        </defs>
 
         <g class="graph">
             <g>
@@ -838,47 +830,6 @@ Tiefe-zuerst-Suche - Beispiel
             font-size="2"
             version="1.1" xmlns="http://www.w3.org/2000/svg">
             <!-- the previous style is (also) used!-->
-        <style>
-            g.graph {
-                circle{
-                    &.start-node {
-                        fill: none;
-                        stroke: red;
-                        stroke-width: 0.3;
-                    }
-                    &.visited-node {
-                        fill: lightgray;
-                        stroke: blue;
-                        stroke-width: 0.3;
-                    }
-                    &.unreached-node {
-                        fill: lightgray;
-                        stroke: none;
-                        stroke-width: 0.3;
-                    }
-                }
-
-                line, path {
-                    &.irrelevant-edge {
-                        stroke: red;
-                        stroke-width: 0.2;
-                    }
-                }
-            }
-        </style>
-        <defs>
-            <marker
-            id="arrow"
-            viewBox="0 0 2 2"
-            refX="2"
-            refY="1"
-            markerUnits="strokeWidth"
-            markerWidth="6"
-            markerHeight="6"
-            orient="auto-start-reverse">
-            <path class="arrow-head" d="M 0 0 L 2 1 L 0 2 z" />
-            </marker>
-        </defs>
 
         <g class="graph">
             <g>
@@ -970,19 +921,6 @@ Tiefe-zuerst-Suche - Beispiel
                 font-size="2"
                 version="1.1" xmlns="http://www.w3.org/2000/svg">
                 <!-- the previous style is (also) used!-->
-            <defs>
-                <marker
-                id="arrow"
-                viewBox="0 0 2 2"
-                refX="2"
-                refY="1"
-                markerUnits="strokeWidth"
-                markerWidth="6"
-                markerHeight="6"
-                orient="auto-start-reverse">
-                <path class="arrow-head" d="M 0 0 L 2 1 L 0 2 z" />
-                </marker>
-            </defs>
 
             <g class="graph">
                 <g>
@@ -1107,23 +1045,7 @@ Bäume - Schlüsselbegriffe
                 <svg    viewBox="0 0 21 22"
                         version="1.1" xmlns="http://www.w3.org/2000/svg"
                         font-size="2">
-                    <style>
-                        g.tree {
-                            circle {
-                                fill: darkgray;
-                                filter: drop-shadow( 2 2 4 rgb(0, 0, 0));
-                            }
-                            line {
-                                stroke:darkgray;
-                                stroke-width:0.2;
-                            }
-                            text {
-                                fill: black;
-                                font-family: var(--theme-code-font-family);
-                                font-weight: bold;
-                            }
-                        }
-                    </style>
+
                     <g class="tree">
                         <g>
                         <circle cx="8" cy="1" r="0.5" />
@@ -1300,15 +1222,7 @@ Traversierung von Bäumen
                         <div    style="width: 48ch; height: 22ch; container-type:size;">
                         <svg    font-size="2"
                                 viewBox="0 0 48 22" version="1.1" xmlns="http://www.w3.org/2000/svg">
-                            <style>
-                                g.tree {
-                                    circle.visited-node {
-                                        fill: lightgray;
-                                        stroke: blue;
-                                        stroke-width: 0.3;
-                                    }
-                                }
-                            </style>
+
                             <g class="tree">
                                 <g>
                                 <circle cx="8" cy="1" r="0.5" />
@@ -1422,7 +1336,7 @@ Traversierung von Bäumen
                     .. raw:: html
 
                         <div    style="width: 48ch; height: 22ch; container-type:size;">
-                        <svg    font-size="2" viewBox="0 0 48 22" 
+                        <svg    font-size="2" viewBox="0 0 48 22"
                                 version="1.1" xmlns="http://www.w3.org/2000/svg">
                             <g class="tree">
                                 <g>
@@ -1544,30 +1458,7 @@ Traversierung von Bäumen
                         <div    style="width: 48ch; height: 22ch; container-type:size;">
                         <svg    font-size="2"
                                 viewBox="0 0 48 22" version="1.1" xmlns="http://www.w3.org/2000/svg">
-                            <style>
-                                g.tree {
-                                    line, path {
-                                        &.traversal-edge {
-                                            fill: none;
-                                            stroke: red;
-                                            stroke-width: 0.2;
-                                        }
-                                    }
-                                }
-                            </style>
-                            <defs>
-                                <marker
-                                id="small-arrow"
-                                viewBox="0 0 2 2"
-                                refX="2"
-                                refY="1"
-                                markerUnits="strokeWidth"
-                                markerWidth="4"
-                                markerHeight="4"
-                                orient="auto-start-reverse">
-                                <path class="arrow-head" d="M 0 0 L 2 1 L 0 2 z" />
-                                </marker>
-                            </defs>
+
                             <g class="tree">
                                 <g>
                                 <circle cx="8" cy="1" r="0.5" />

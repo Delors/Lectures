@@ -6,6 +6,17 @@
     :id: schulung-it-security-vertiefung
     :first-slide: last-viewed
     :master-password: WirklichSchwierig!
+    :svg-defs:
+        <marker
+            id="arrow"
+            viewBox="0 0 10 10"
+            refX="10"
+            refY="5"
+            markerWidth="8"
+            markerHeight="8"
+            orient="auto-start-reverse">
+                <path d="M 0 0 L 10 5 L 0 10 z" />
+        </marker>
 
 .. include:: ../docutils.defs
 
@@ -2515,18 +2526,6 @@ Dreifacher Handshake:
 
     <div style="width: 76ch; height: 40ch"; container-type:size;">
     <svg viewBox="100 0 1140 600" font-size="36" version="1.1" xmlns="http://www.w3.org/2000/svg">
-        <defs>
-            <marker
-            id="arrow"
-            viewBox="0 0 10 10"
-            refX="10"
-            refY="5"
-            markerWidth="8"
-            markerHeight="8"
-            orient="auto-start-reverse">
-            <path d="M 0 0 L 10 5 L 0 10 z" />
-            </marker>
-        </defs>
         <text x="125" y="75" style="font-weight: bolder">Client</text>
         <line x1="200" y1="100" x2="200" y2="400" style="stroke:rgb(0,0,0);stroke-width:3" />
         <text x="925" y="75" style="font-weight: bolder">Server</text>
@@ -2626,18 +2625,6 @@ Port Scans: TCP Connect Scan
 
             <div style="width: 36ch; height:18ch; container-type:size;">
             <svg viewBox="0 0 1200 600" font-size="48" version="1.1" xmlns="http://www.w3.org/2000/svg">
-                <defs>
-                    <marker
-                    id="arrow"
-                    viewBox="0 0 10 10"
-                    refX="10"
-                    refY="5"
-                    markerWidth="8"
-                    markerHeight="8"
-                    orient="auto-start-reverse">
-                    <path d="M 0 0 L 10 5 L 0 10 z" />
-                    </marker>
-                </defs>
                 <text x="125" y="75" style="font-weight: bolder">Scanner</text>
                 <line x1="200" y1="100" x2="200" y2="400" style="stroke:rgb(0,0,0);stroke-width:3" />
                 <text x="925" y="75" style="font-weight: bolder">Server</text>
