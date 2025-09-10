@@ -1,9 +1,2 @@
-# Folders which contain generated/exported files
-xss
-
-# Exported files
-ssrf.svg
-csrf.svg
-
 # Generated files
 *.pdf
