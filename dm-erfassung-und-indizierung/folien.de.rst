@@ -21,7 +21,7 @@ Dokumentenerfassung und -indizierung\ [#]_
 
 .. supplemental::
 
-  :Folien: 
+  :Folien:
       [HTML] |html-source|
 
       [PDF] |pdf-source|
@@ -29,7 +29,7 @@ Dokumentenerfassung und -indizierung\ [#]_
       https://github.com/Delors/delors.github.io/issues
 
 .. [#] Dieser Foliensatz basiert auf Folien von: Klaus Götzer.
-    
+
    Dokumenten-Management von *Klaus Götzer, Patrick Maué, und Ulrich Emmert*, dpunkt.verlag, 2023.
 
    Alle Fehler sind meine eigenen.
@@ -50,7 +50,7 @@ Quellen von Dokumenten - Dimensionen
 .. class:: incremental-list
 
 • Eigenerstellte und fremderstellte Dokumente
-• Papierdokumente und elektronische Dokumente 
+• Papierdokumente und elektronische Dokumente
 • Einmalige Übernahme und laufende Übernahme
 
 
@@ -60,15 +60,15 @@ Eigenerstellte Dokumente
 
 .. class:: incremental-list list-with-explanations
 
-• Editoren für Texte, Graphiken, Mails, etc. 
+• Editoren für Texte, Graphiken, Mails, etc.
 
   (Office, Outlook, AutoCAD, ....)
-• Dokumentenerzeugende Systeme 
- 
+• Dokumentenerzeugende Systeme
+
   (z. B. Rechnungen aus ERP-Systemen) (COLD)
 • Übernahme von Bildern aus speziellen Verfahren wie Röntgen
 
-.. assessment:: 
+.. assessment::
     :class: incremental
 
     Anzustreben ist, dass beim Speichern automatisch Dokumente und Metadaten der Dokumente in das DMS übernommen werden.
@@ -78,27 +78,29 @@ Eigenerstellte Dokumente
 Integration mit Office-Anwendungen
 ------------------------------------------
 
-.. image:: screenshots/elo-office-ms-word-integration-2024-02-05.png
+.. image:: screenshots/elo-office-ms-word-integration-2024-02-05.webp
+    :width: 1800px
     :align: center
-    :class: scale-35 trbl-box-shadow-dark
+    :class: trbl-box-shadow-dark
 
 
 
 Speichern von Dokumenten aus Anwendungen (hier Word)
 -----------------------------------------------------
 
-.. image:: screenshots/elo-office-ms-word-speichern-in-archiv-2024-02-05.png
+.. image:: screenshots/elo-office-ms-word-speichern-in-archiv-2024-02-05.webp
+    :width: 1800px
     :align: center
-    :class: scale-35 trbl-box-shadow-dark
+    :class: trbl-box-shadow-dark
 
 
 
 Fremderstellte Dokumente
 ------------------------------------
 
-.. container:: 
+.. container::
 
-    .. rubric:: Herkunft der Dokumente 
+    .. rubric:: Herkunft der Dokumente
 
     .. class:: incremental-list
 
@@ -117,8 +119,8 @@ Fremderstellte Dokumente
 
 .. container:: incremental
 
-    .. rubric:: Probleme beim Eingang als Papier 
-    
+    .. rubric:: Probleme beim Eingang als Papier
+
     .. class:: incremental-list
 
     • Aufbereitung des Eingangs
@@ -135,7 +137,7 @@ Fremderstellte Dokumente
 „Analoge“ (NCI) oder elektronische(CI) Dokumente
 -------------------------------------------------
 
-.. container:: 
+.. container::
 
     .. rubric:: Papierdokument
 
@@ -151,7 +153,7 @@ Fremderstellte Dokumente
 
     • Welches Dateiformat liegt vor? Konvertieren?
     • Automatisch auswertbar?
-    
+
       Strukturiertes Dokument oder Fließtext?
 
 
@@ -181,12 +183,12 @@ Beispiel für Eingangspostbearbeitung
 Unterstützung für Workflowdefinitionen in ECM Systemen - z. B. `DocuWare <https://start.docuware.com>`__
 -----------------------------------------------------------------------------------------------------------
 
-.. image:: screenshots/docuware-workflow-manager-2024-02.png
+.. image:: screenshots/docuware-workflow-manager-2024-02.webp
     :align: center
-    :class: highdpi trbl-box-shadow-dark
+    :class: trbl-box-shadow-dark
 
 .. supplemental::
-    
+
         :ECM: *Enterprise Content Management*
 
 
@@ -194,15 +196,15 @@ Unterstützung für Workflowdefinitionen in ECM Systemen - z. B. `DocuWare <ht
 Erstmalige Übernahme von Dokumenten
 ---------------------------------------
 
-.. container:: 
+.. container::
 
     .. rubric:: Quellen
 
     .. class:: incremental-list
 
-    • Altsystem (Archiv, DMS) 
+    • Altsystem (Archiv, DMS)
     • Filesystem
-    • Mikrofilm, Mikrofiche etc. 
+    • Mikrofilm, Mikrofiche etc.
     • Papierbeständen
 
 .. container:: incremental
@@ -212,7 +214,7 @@ Erstmalige Übernahme von Dokumenten
     .. class:: incremental-list
 
     • Was ist wirklich sinnvoll zu übernehmen?
-    • Automatisierbare Übernahme möglich? (Zeitaufwand!) 
+    • Automatisierbare Übernahme möglich? (Zeitaufwand!)
     • Outsourcing prüfen
 
 
@@ -222,9 +224,9 @@ Laufende Übernahme
 
 .. class:: incremental-list
 
-• Eingehende Papierpost 
+• Eingehende Papierpost
 • Eingehende E-Mails
-• Ausgehende Dokumente 
+• Ausgehende Dokumente
 • Ausgehende E-Mails
 • Fortschreibungen von Dokumentationen, Akten etc.
 
@@ -233,7 +235,7 @@ Laufende Übernahme
 
     **Zentrale Aspekte**
 
-    • Etablierter „revisionssicherer“ Prozess 
+    • Etablierter „revisionssicherer“ Prozess
     • Möglichst „Vollautomatik“
 
 
@@ -252,11 +254,11 @@ Automatisierung des Posteinganges (Papier)
 • **Klassifikation des Dokuments und Indizierung**
 
   - Manuell durch Bearbeiter
-  - Automatisch (Formularerkennung, OCR - Volltext, Barcode) 
+  - Automatisch (Formularerkennung, OCR - Volltext, Barcode)
   - Gemischte Verfahren
 
 • **Zuordnung zu einem Geschäftsvorfall**
- 
+
   - Abgeleitet aus Metadaten
   - Durch Bearbeiter
 
@@ -281,7 +283,7 @@ Scannen der Eingangspost
 • **Scanner** sind die gängigsten Erfassungsgeräte für Dokumente auf Papier oder Film
 
   .. admonition:: Prozess
-  
+
     Papierdokument → Scannen → Elektronisches Dokument
 
 .. class:: incremental-list
@@ -294,25 +296,27 @@ Scannen der Eingangspost
 Scanprofile (hier in Elo Office)
 ------------------------------------------------
 
-.. image:: screenshots/elo-office-scanprofil-2024-02-05.png
+.. image:: screenshots/elo-office-scanprofil-2024-02-05.webp
+    :width: 1800px
     :align: center
-    :class: scale-35 trbl-box-shadow-dark
+    :class: trbl-box-shadow-dark
 
 
 
 Vordefiniertes Scanprofile (hier in Elo Office)
 ------------------------------------------------
 
-.. image:: screenshots/elo-office-vordefiniertes-scanprofil-2024-02-05.png
+.. image:: screenshots/elo-office-vordefiniertes-scanprofil-2024-02-05.webp
+    :width: 1800px
     :align: center
-    :class: scale-35 trbl-box-shadow-dark
+    :class: trbl-box-shadow-dark
 
 .. supplemental::
 
-    Festgelegt wird: 
+    Festgelegt wird:
 
     • Auflösung
-    • Farbe oder S/W 
+    • Farbe oder S/W
     • Trennseiten
     • Barcodes
     • Duplex
@@ -325,28 +329,27 @@ Scanner
 ---------------------------------
 
 .. grid::
-    
+
         .. cell::
-    
+
             Scanner unterscheiden sich in:
 
-            - Zufuhr von Seiten 
+            - Zufuhr von Seiten
             - Vorlagengröße (z. B. A4, A3)
             - Geschwindigkeit (bis zu mehrere hundert Seiten pro Minute)
             - Farbtiefe
             - Umschlagerkennung
             - Heftklammererkennung
             - Preis
-            - ... 
-    
+            - ...
+
         .. cell::
 
-            .. figure:: screenshots/hochleistungsscanner-140blatt_pro_min-canon-scanmachine-10000eur-2024.png
-                :class: highdpi
+            .. figure:: screenshots/hochleistungsscanner-140blatt_pro_min-canon-scanmachine-10000eur-2024.webp
                 :align: center
 
             .. container:: text-align-center width-100
-            
+
                 `Scanmachine <https://www.scanmachine.de>`__
 
 
@@ -357,14 +360,14 @@ Weiterverarbeitung gescannter Dokumente
 .. class:: incremental-list list-with-explanations
 
 • Umwandlung von Images (NCI) im CI-Dokumente (wie Texte)
-• Klassifikation und Indizierung der Dokumente 
+• Klassifikation und Indizierung der Dokumente
 
   - manuell
   - automatisch
-  
+
 • Automatisches Auslesen von Formulardaten
-• Automatisches Auslesen von Rechnungen oder ähnlichem 
- 
+• Automatisches Auslesen von Rechnungen oder ähnlichem
+
   (Z. B. wenn die Dokumentenklasse bekannt ist.)
 
 
@@ -420,7 +423,7 @@ Sicherstellung der Qualität
       - Schriftart (mit/ohne Serifen...) und Qualität des Ausdrucks
       - Qualität der Software
       - Vorinformationen (welche Schriftarten werden verwendet...)
-  
+
     .. card::
 
       **Problemfälle**
@@ -455,7 +458,7 @@ Sicherstellung der Qualität
 Barcodes und QR-Codes
 ------------------------
 
-.. grid:: 
+.. grid::
 
   .. cell::
 
@@ -474,9 +477,10 @@ Barcodes und QR-Codes
 
     .. example:: Lohnsteuerbescheinigung mit QR-Code
 
-      .. image:: screenshots/lohnsteuer-mit-qr-code.jpeg
+      .. image:: screenshots/lohnsteuer-mit-qr-code.webp
+        :width: 1000px
         :align: center
-        :class: scale-40 trbl-box-shadow-dark
+        :class: trbl-box-shadow-dark
 
 
 
@@ -493,7 +497,7 @@ Drei typische Erfassungsszenarien für Eingangspost:
 
 
 
-Szenario 1: Frühes Archivieren / Erfassen beim Posteingang 
+Szenario 1: Frühes Archivieren / Erfassen beim Posteingang
 --------------------------------------------------------------
 
 .. class:: incremental-list
@@ -502,7 +506,7 @@ Szenario 1: Frühes Archivieren / Erfassen beim Posteingang
 
   - Scannen erfolgt meist im Posteingang
   - Weiterleitung an Sachbearbeiter auf elektronischem Weg
-  
+
 - Vor elektronischer Weiterleitung: evlt. Klassifikation + evtl. Attributierung
 
 .. grid::  incremental
@@ -517,14 +521,14 @@ Szenario 1: Frühes Archivieren / Erfassen beim Posteingang
         - Weiterleitung an mehrere Personen
         - Evlt. automatisierte Adressermittlung
         - Steuerung und Verfolgen der Bearbeitung (Workflow)
-     
+
     .. cell::
 
       .. rubric:: Nachteile:
 
       .. class:: negative-list
 
-      - Sachbearbeiter benötigen Arbeitsplatz mit DMS-Zugang 
+      - Sachbearbeiter benötigen Arbeitsplatz mit DMS-Zugang
       - ggf. Neuausrichtung des Geschäftsprozesses
       - ggf. aufwändiger Einstieg
 
@@ -537,7 +541,7 @@ Szenario 2: Erfassung bei der Bearbeitung
 - Dort werden sie direkt vor oder gleich nach der Bearbeitung eingescannt, attributiert und abgelegt.
 
 .. container:: incremental
-        
+
     **Einsatzgebiet**
 
     .. class:: list-with-explanations
@@ -568,7 +572,7 @@ Szenario 3: Spätes Archivieren
 • Papierdokumente werden nach ihrer Bearbeitung an die zentrale Erfassungsstelle geschickt und dort eingescannt.
 • Zusätzlich wird ein Identifikator für das Papierdokument benötigt.
 
-  - für Zuordnung des Papierdokuments zu Vorgang während Bearbeitung 
+  - für Zuordnung des Papierdokuments zu Vorgang während Bearbeitung
   - Bar-/QR-Code oder Referenznummer/Belegnummer
 
 • Bar-/QR-Code:
@@ -576,14 +580,14 @@ Szenario 3: Spätes Archivieren
   - Registrierung: Dokument erhält eindeutigen Barcode z. B. im Posteingang oder durch Sachbearbeiter
   - Barcode-Erfassung mit Barcodestift oder Lesepistole
   - Erfassung des Papierdokuments
-  
+
     - Erfassungssoftware erkennt Code automatisch
     - Code auf der ersten Seite kann gleichzeitig für Dokumententrennung genutzt werden
     - Die Zuordnungstabelle zw. Code und Dokument ist regelmäßig zu prüfen, ob alle registrierten Dokumente zwischenzeitlich gescannt wurden
 
 .. supplemental::
 
-    Typischerweise werden die Codes nach Erfassung des Dokuments nicht mehr benötigt und eine Wiederverwendung ist ca. nach einem Jahr möglich. 
+    Typischerweise werden die Codes nach Erfassung des Dokuments nicht mehr benötigt und eine Wiederverwendung ist ca. nach einem Jahr möglich.
 
 
 
@@ -621,7 +625,7 @@ Entscheidungsdimensionen:
 
 .. class:: new-section
 
-COLD-Verfahren 
+COLD-Verfahren
 ---------------
 
 .. container:: section-subtitle
@@ -663,8 +667,8 @@ COLD-Verfahren (historisch)
         **Verarbeitung auf COLD-Server**
 
         1. Zerlegung des Datenstroms in einzelne Dokumente.
-        2. Extrahiert die für die Ablage bzw. spätere Recherche der Dokumente notwendigen Index-Daten automatisch + evtl. Bezug zu Overlays. 
-         
+        2. Extrahiert die für die Ablage bzw. spätere Recherche der Dokumente notwendigen Index-Daten automatisch + evtl. Bezug zu Overlays.
+
            :peripheral:`(Die Fachdaten und das Layout sind getrennt.)`
         3. Konvertierung bringt die Dokumente in eine für die Ablage geeignete Form.
 
@@ -681,7 +685,7 @@ Metadaten
 .. class:: incremental-list
 
 • Beschreibende Merkmale für Dokumente
-• Ziel ist das möglichst exakte Wiederfinden der richtigen 
+• Ziel ist das möglichst exakte Wiederfinden der richtigen
   Dokumente (strukturierte Suche!)
 • Metadaten sind strukturiert und möglichst exakt vordefiniert (z. B. Wertebereiche)
 • Quellen für Metadaten:
@@ -700,9 +704,9 @@ Manuelles Indizieren
 - Freitexteingabe (z. B. Zusammenfassung, Notizen)
 - Unterstützung durch Auswahlmenüs, Formatvorgaben oder Defaultwerte, z.B
 
-  - Schlagwortindizierung (definierter Wortschatz) 
+  - Schlagwortindizierung (definierter Wortschatz)
   - Formalisierte Eingabe (z. B. Datum)
-  
+
 - **Probleme**:
 
   .. class:: negative-list
@@ -719,7 +723,7 @@ Manuelles Indizieren
 .. class:: incremental-list list-with-explanations
 
 - basierend auf wissensbasierten bzw. regelbasierten Ansätzen
-  
+
   Durch ein umfangreiches Regelwerk wird versucht, die Metadaten (insbesondere Art des Dokuments, Vorgangsnummer, Empfänger) automatisch zu ermitteln; um eine automatische Klassifikation und Verarbeitung zu ermöglichen.
 
 - basierend auf (überwachten) maschinellen Lernverfahren
@@ -741,7 +745,7 @@ gestellt.
 
 .. class:: negative-list
 
-- Suchraster ist vorgegeben (d. h. Metadatenschema ist fest). 
+- Suchraster ist vorgegeben (d. h. Metadatenschema ist fest).
 
 **Volltextsuche**
 
@@ -755,4 +759,3 @@ Evtl. ergänzt um semantische Hilfsmittel (Thesaurus, etc. ).
 .. class:: negative-list
 
 - Unstrukturiert, „langsam“, Ressourcenbedarf, keine semantisch zusammenfassenden Informationen abfragbar.
-

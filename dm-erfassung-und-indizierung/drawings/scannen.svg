@@ -1,147 +1,505 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg xmlns:xl="http://www.w3.org/1999/xlink" xmlns:dc="http://purl.org/dc/elements/1.1/" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="48 63 727 512" width="540" height="380">
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+    "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg
+    xmlns:xl="http://www.w3.org/1999/xlink"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    version="1.1"
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="48 63 727 512"
+    width="1454"
+    height="1024"
+>
   <style>
-    @import url('/LectureDoc2/ext/fonts/ld-fonts.css'); 
+    @import url('/LectureDoc2/ext/fonts/ld-fonts.css');
   </style>
   <defs>
     <filter id="Shadow" filterUnits="userSpaceOnUse" x="-24.7" y="11.8">
-      <feGaussianBlur in="SourceAlpha" result="blur" stdDeviation="1.744"/>
-      <feOffset in="blur" result="offset" dx="2" dy="2"/>
-      <feFlood flood-color="black" flood-opacity=".5" result="flood"/>
-      <feComposite in="flood" in2="offset" operator="in" result="color"/>
+      <feGaussianBlur in="SourceAlpha" result="blur" stdDeviation="1.744" />
+      <feOffset in="blur" result="offset" dx="2" dy="2" />
+      <feFlood flood-color="black" flood-opacity=".5" result="flood" />
+      <feComposite in="flood" in2="offset" operator="in" result="color" />
       <feMerge>
-        <feMergeNode in="color"/>
-        <feMergeNode in="SourceGraphic"/>
+        <feMergeNode in="color" />
+        <feMergeNode in="SourceGraphic" />
       </feMerge>
     </filter>
-    <font-face font-family="Noto Sans Display" font-size="16" panose-1="2 0 5 3 0 0 0 2 0 4" units-per-em="1000" underline-position="-100" underline-thickness="50" slope="0" x-height="517" cap-height="714" ascent="951.9958" descent="-212.99744" font-weight="400">
+    <font-face
+            font-family="Noto Sans Display"
+            font-size="16"
+            panose-1="2 0 5 3 0 0 0 2 0 4"
+            units-per-em="1000"
+            underline-position="-100"
+            underline-thickness="50"
+            slope="0"
+            x-height="517"
+            cap-height="714"
+            ascent="951.9958"
+            descent="-212.99744"
+            font-weight="400"
+        >
       <font-face-src>
-        <font-face-name name="HelveticaNeue"/>
+        <font-face-name name="HelveticaNeue" />
       </font-face-src>
     </font-face>
-    <font-face font-family="Noto Sans Display" font-size="17.333" panose-1="2 0 5 3 0 0 0 2 0 4" units-per-em="1000" underline-position="-100" underline-thickness="50" slope="0" x-height="517" cap-height="714" ascent="951.9958" descent="-212.99744" font-weight="400">
+    <font-face
+            font-family="Noto Sans Display"
+            font-size="17.333"
+            panose-1="2 0 5 3 0 0 0 2 0 4"
+            units-per-em="1000"
+            underline-position="-100"
+            underline-thickness="50"
+            slope="0"
+            x-height="517"
+            cap-height="714"
+            ascent="951.9958"
+            descent="-212.99744"
+            font-weight="400"
+        >
       <font-face-src>
-        <font-face-name name="HelveticaNeue"/>
+        <font-face-name name="HelveticaNeue" />
       </font-face-src>
     </font-face>
-    <font-face font-family="Noto Sans Display" font-size="14.667" panose-1="2 0 5 3 0 0 0 2 0 4" units-per-em="1000" underline-position="-100" underline-thickness="50" slope="0" x-height="517" cap-height="714" ascent="951.9958" descent="-212.99744" font-weight="400">
+    <font-face
+            font-family="Noto Sans Display"
+            font-size="14.667"
+            panose-1="2 0 5 3 0 0 0 2 0 4"
+            units-per-em="1000"
+            underline-position="-100"
+            underline-thickness="50"
+            slope="0"
+            x-height="517"
+            cap-height="714"
+            ascent="951.9958"
+            descent="-212.99744"
+            font-weight="400"
+        >
       <font-face-src>
-        <font-face-name name="HelveticaNeue"/>
+        <font-face-name name="HelveticaNeue" />
       </font-face-src>
     </font-face>
-    <marker orient="auto" overflow="visible" markerUnits="strokeWidth" id="FilledArrow_Marker" stroke-linejoin="miter" stroke-miterlimit="10" viewBox="-1 -3 7 6" markerWidth="7" markerHeight="6" color="#666">
+    <marker
+            orient="auto"
+            overflow="visible"
+            markerUnits="strokeWidth"
+            id="FilledArrow_Marker"
+            stroke-linejoin="miter"
+            stroke-miterlimit="10"
+            viewBox="-1 -3 7 6"
+            markerWidth="7"
+            markerHeight="6"
+            color="#666"
+        >
       <g>
-        <path d="M 4.8 0 L 0 -1.8 L 0 1.8 Z" fill="currentColor" stroke="currentColor" stroke-width="1"/>
+        <path
+                    d="M 4.8 0 L 0 -1.8 L 0 1.8 Z"
+                    fill="currentColor"
+                    stroke="currentColor"
+                    stroke-width="1"
+                />
       </g>
     </marker>
   </defs>
   <metadata> Produced by OmniGraffle 8.0\n2024-02-05 15:59:18 +0000</metadata>
-  <g id="Canvas_1" stroke-dasharray="none" stroke="none" stroke-opacity="1" fill="none" fill-opacity="1">
+  <g
+        id="Canvas_1"
+        stroke-dasharray="none"
+        stroke="none"
+        stroke-opacity="1"
+        fill="none"
+        fill-opacity="1"
+    >
     <title>Canvas 1</title>
     <g id="Canvas_1_Layer_1">
       <title>Layer 1</title>
       <g id="Graphic_3" filter="url(#Shadow)">
-        <path d="M 54.5 65.5 L 247.8728 65.5 C 250.08194 65.5 251.8728 67.29086 251.8728 69.5 L 251.8728 92.06597 C 251.8728 94.27511 250.08194 96.06597 247.8728 96.06597 L 54.5 96.06597 C 52.29086 96.06597 50.5 94.27511 50.5 92.06597 L 50.5 69.5 C 50.5 67.29086 52.29086 65.5 54.5 65.5 Z" fill="white"/>
+        <path
+                    d="M 54.5 65.5 L 247.8728 65.5 C 250.08194 65.5 251.8728 67.29086 251.8728 69.5 L 251.8728 92.06597 C 251.8728 94.27511 250.08194 96.06597 247.8728 96.06597 L 54.5 96.06597 C 52.29086 96.06597 50.5 94.27511 50.5 92.06597 L 50.5 69.5 C 50.5 67.29086 52.29086 65.5 54.5 65.5 Z"
+                    fill="white"
+                />
         <text transform="translate(58.5 71.558984)" fill="black">
-          <tspan font-family="Noto Sans Display" font-size="16" font-weight="400" fill="black" x="3.9024014" y="15">kleine Dokumentmengen</tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="16"
+                        font-weight="400"
+                        fill="black"
+                        x="3.9024014"
+                        y="15"
+                    >kleine Dokumentmengen</tspan>
         </text>
       </g>
       <g id="Graphic_4" filter="url(#Shadow)">
-        <path d="M 328.5 65.5 L 763.9738 65.5 C 766.1829 65.5 767.9738 67.29086 767.9738 69.5 L 767.9738 92.06597 C 767.9738 94.27511 766.1829 96.06597 763.9738 96.06597 L 328.5 96.06597 C 326.29086 96.06597 324.5 94.27511 324.5 92.06597 L 324.5 69.5 C 324.5 67.29086 326.29086 65.5 328.5 65.5 Z" fill="white"/>
+        <path
+                    d="M 328.5 65.5 L 763.9738 65.5 C 766.1829 65.5 767.9738 67.29086 767.9738 69.5 L 767.9738 92.06597 C 767.9738 94.27511 766.1829 96.06597 763.9738 96.06597 L 328.5 96.06597 C 326.29086 96.06597 324.5 94.27511 324.5 92.06597 L 324.5 69.5 C 324.5 67.29086 326.29086 65.5 328.5 65.5 Z"
+                    fill="white"
+                />
         <text transform="translate(332.5 71.558984)" fill="black">
-          <tspan font-family="Noto Sans Display" font-size="16" font-weight="400" fill="black" x="125.2489" y="15">große Dokumentmengen </tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="16"
+                        font-weight="400"
+                        fill="black"
+                        x="125.2489"
+                        y="15"
+                    >große Dokumentmengen </tspan>
         </text>
       </g>
       <g id="Graphic_5" filter="url(#Shadow)">
-        <path d="M 54.5 141 L 247.8728 141 C 250.08194 141 251.8728 142.79086 251.8728 145 L 251.8728 211 C 251.8728 213.20914 250.08194 215 247.8728 215 L 54.5 215 C 52.29086 215 50.5 213.20914 50.5 211 L 50.5 145 C 50.5 142.79086 52.29086 141 54.5 141 Z" fill="white"/>
-        <path d="M 54.5 141 L 247.8728 141 C 250.08194 141 251.8728 142.79086 251.8728 145 L 251.8728 211 C 251.8728 213.20914 250.08194 215 247.8728 215 L 54.5 215 C 52.29086 215 50.5 213.20914 50.5 211 L 50.5 145 C 50.5 142.79086 52.29086 141 54.5 141 Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <path
+                    d="M 54.5 141 L 247.8728 141 C 250.08194 141 251.8728 142.79086 251.8728 145 L 251.8728 211 C 251.8728 213.20914 250.08194 215 247.8728 215 L 54.5 215 C 52.29086 215 50.5 213.20914 50.5 211 L 50.5 145 C 50.5 142.79086 52.29086 141 54.5 141 Z"
+                    fill="white"
+                />
+        <path
+                    d="M 54.5 141 L 247.8728 141 C 250.08194 141 251.8728 142.79086 251.8728 145 L 251.8728 211 C 251.8728 213.20914 250.08194 215 247.8728 215 L 54.5 215 C 52.29086 215 50.5 213.20914 50.5 211 L 50.5 145 C 50.5 142.79086 52.29086 141 54.5 141 Z"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
         <text transform="translate(58.5 150.328)" fill="black">
-          <tspan font-family="Noto Sans Display" font-size="16" font-weight="400" fill="black" x="61.2704" y="15">Scannen</tspan>
-          <tspan font-family="Noto Sans Display" font-size="16" font-weight="400" fill="black" x="26.2384" y="33.448">+ Qualitätsprüfung</tspan>
-          <tspan font-family="Noto Sans Display" font-size="16" font-weight="400" fill="black" x="37.0624" y="51.895996">+ Attributierung </tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="16"
+                        font-weight="400"
+                        fill="black"
+                        x="61.2704"
+                        y="15"
+                    >Scannen</tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="16"
+                        font-weight="400"
+                        fill="black"
+                        x="26.2384"
+                        y="33.448"
+                    >+ Qualitätsprüfung</tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="16"
+                        font-weight="400"
+                        fill="black"
+                        x="37.0624"
+                        y="51.895996"
+                    >+ Attributierung </tspan>
         </text>
       </g>
       <g id="Graphic_6" filter="url(#Shadow)">
-        <path d="M 570.601 141 L 763.9738 141 C 766.1829 141 767.9738 142.79086 767.9738 145 L 767.9738 211 C 767.9738 213.20914 766.1829 215 763.9738 215 L 570.601 215 C 568.39184 215 566.601 213.20914 566.601 211 L 566.601 145 C 566.601 142.79086 568.39184 141 570.601 141 Z" fill="white"/>
-        <path d="M 570.601 141 L 763.9738 141 C 766.1829 141 767.9738 142.79086 767.9738 145 L 767.9738 211 C 767.9738 213.20914 766.1829 215 763.9738 215 L 570.601 215 C 568.39184 215 566.601 213.20914 566.601 211 L 566.601 145 C 566.601 142.79086 568.39184 141 570.601 141 Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <path
+                    d="M 570.601 141 L 763.9738 141 C 766.1829 141 767.9738 142.79086 767.9738 145 L 767.9738 211 C 767.9738 213.20914 766.1829 215 763.9738 215 L 570.601 215 C 568.39184 215 566.601 213.20914 566.601 211 L 566.601 145 C 566.601 142.79086 568.39184 141 570.601 141 Z"
+                    fill="white"
+                />
+        <path
+                    d="M 570.601 141 L 763.9738 141 C 766.1829 141 767.9738 142.79086 767.9738 145 L 767.9738 211 C 767.9738 213.20914 766.1829 215 763.9738 215 L 570.601 215 C 568.39184 215 566.601 213.20914 566.601 211 L 566.601 145 C 566.601 142.79086 568.39184 141 570.601 141 Z"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
         <text transform="translate(574.601 150.328)" fill="black">
-          <tspan font-family="Noto Sans Display" font-size="16" font-weight="400" fill="black" x="61.2704" y="15">Scannen</tspan>
-          <tspan font-family="Noto Sans Display" font-size="16" font-weight="400" fill="black" x="58.9024" y="33.448">mit erster </tspan>
-          <tspan font-family="Noto Sans Display" font-size="16" font-weight="400" fill="black" x="33.2624" y="51.895996">Qualitätsprüfung </tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="16"
+                        font-weight="400"
+                        fill="black"
+                        x="61.2704"
+                        y="15"
+                    >Scannen</tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="16"
+                        font-weight="400"
+                        fill="black"
+                        x="58.9024"
+                        y="33.448"
+                    >mit erster </tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="16"
+                        font-weight="400"
+                        fill="black"
+                        x="33.2624"
+                        y="51.895996"
+                    >Qualitätsprüfung </tspan>
         </text>
       </g>
       <g id="Graphic_8" filter="url(#Shadow)">
-        <path d="M 570.601 273 L 763.9738 273 C 766.1829 273 767.9738 274.79086 767.9738 277 L 767.9738 362.5 C 767.9738 364.70914 766.1829 366.5 763.9738 366.5 L 570.601 366.5 C 568.39184 366.5 566.601 364.70914 566.601 362.5 L 566.601 277 C 566.601 274.79086 568.39184 273 570.601 273 Z" fill="white"/>
-        <path d="M 570.601 273 L 763.9738 273 C 766.1829 273 767.9738 274.79086 767.9738 277 L 767.9738 362.5 C 767.9738 364.70914 766.1829 366.5 763.9738 366.5 L 570.601 366.5 C 568.39184 366.5 566.601 364.70914 566.601 362.5 L 566.601 277 C 566.601 274.79086 568.39184 273 570.601 273 Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <path
+                    d="M 570.601 273 L 763.9738 273 C 766.1829 273 767.9738 274.79086 767.9738 277 L 767.9738 362.5 C 767.9738 364.70914 766.1829 366.5 763.9738 366.5 L 570.601 366.5 C 568.39184 366.5 566.601 364.70914 566.601 362.5 L 566.601 277 C 566.601 274.79086 568.39184 273 570.601 273 Z"
+                    fill="white"
+                />
+        <path
+                    d="M 570.601 273 L 763.9738 273 C 766.1829 273 767.9738 274.79086 767.9738 277 L 767.9738 362.5 C 767.9738 364.70914 766.1829 366.5 763.9738 366.5 L 570.601 366.5 C 568.39184 366.5 566.601 364.70914 566.601 362.5 L 566.601 277 C 566.601 274.79086 568.39184 273 570.601 273 Z"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
         <text transform="translate(574.601 291.59666)" fill="black">
-          <tspan font-family="Noto Sans Display" font-size="17.333" font-weight="400" fill="black" x="28.31164" y="17">Qualitätsprüfung </tspan>
-          <tspan font-family="Noto Sans Display" font-size="14.667" font-weight="400" fill="black" x="13.359932" y="35.48532">Kontrast, Vollständigkeit </tspan>
-          <tspan font-family="Noto Sans Display" font-size="14.667" font-weight="400" fill="black" x="12.699917" y="52.895996">Reihenfolge, Schräglage</tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="17.333"
+                        font-weight="400"
+                        fill="black"
+                        x="28.31164"
+                        y="17"
+                    >Qualitätsprüfung </tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="14.667"
+                        font-weight="400"
+                        fill="black"
+                        x="13.359932"
+                        y="35.48532"
+                    >Kontrast, Vollständigkeit </tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="14.667"
+                        font-weight="400"
+                        fill="black"
+                        x="12.699917"
+                        y="52.895996"
+                    >Reihenfolge, Schräglage</tspan>
         </text>
       </g>
       <g id="Graphic_9" filter="url(#Shadow)">
-        <path d="M 328.5 368.5 L 521.8728 368.5 C 524.08194 368.5 525.8728 370.29086 525.8728 372.5 L 525.8728 451.9351 C 525.8728 454.14425 524.08194 455.9351 521.8728 455.9351 L 328.5 455.9351 C 326.29086 455.9351 324.5 454.14425 324.5 451.9351 L 324.5 372.5 C 324.5 370.29086 326.29086 368.5 328.5 368.5 Z" fill="white"/>
-        <path d="M 328.5 368.5 L 521.8728 368.5 C 524.08194 368.5 525.8728 370.29086 525.8728 372.5 L 525.8728 451.9351 C 525.8728 454.14425 524.08194 455.9351 521.8728 455.9351 L 328.5 455.9351 C 326.29086 455.9351 324.5 454.14425 324.5 451.9351 L 324.5 372.5 C 324.5 370.29086 326.29086 368.5 328.5 368.5 Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <path
+                    d="M 328.5 368.5 L 521.8728 368.5 C 524.08194 368.5 525.8728 370.29086 525.8728 372.5 L 525.8728 451.9351 C 525.8728 454.14425 524.08194 455.9351 521.8728 455.9351 L 328.5 455.9351 C 326.29086 455.9351 324.5 454.14425 324.5 451.9351 L 324.5 372.5 C 324.5 370.29086 326.29086 368.5 328.5 368.5 Z"
+                    fill="white"
+                />
+        <path
+                    d="M 328.5 368.5 L 521.8728 368.5 C 524.08194 368.5 525.8728 370.29086 525.8728 372.5 L 525.8728 451.9351 C 525.8728 454.14425 524.08194 455.9351 521.8728 455.9351 L 328.5 455.9351 C 326.29086 455.9351 324.5 454.14425 324.5 451.9351 L 324.5 372.5 C 324.5 370.29086 326.29086 368.5 328.5 368.5 Z"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
         <text transform="translate(332.5 390.73223)" fill="black">
-          <tspan font-family="Noto Sans Display" font-size="17.333" font-weight="400" fill="black" x="40.037414" y="17">Attributierung</tspan>
-          <tspan font-family="Noto Sans Display" font-size="17.333" font-weight="400" fill="black" x="18.293165" y="38.48532"> + Qualitätsprüfung</tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="17.333"
+                        font-weight="400"
+                        fill="black"
+                        x="40.037414"
+                        y="17"
+                    >Attributierung</tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="17.333"
+                        font-weight="400"
+                        fill="black"
+                        x="18.293165"
+                        y="38.48532"
+                    > + Qualitätsprüfung</tspan>
         </text>
       </g>
       <g id="Graphic_11" filter="url(#Shadow)">
-        <path d="M 570.601 448 L 763.9738 448 C 766.1829 448 767.9738 449.79086 767.9738 452 L 767.9738 474.56597 C 767.9738 476.7751 766.1829 478.56597 763.9738 478.56597 L 570.601 478.56597 C 568.39184 478.56597 566.601 476.7751 566.601 474.56597 L 566.601 452 C 566.601 449.79086 568.39184 448 570.601 448 Z" fill="white"/>
-        <path d="M 570.601 448 L 763.9738 448 C 766.1829 448 767.9738 449.79086 767.9738 452 L 767.9738 474.56597 C 767.9738 476.7751 766.1829 478.56597 763.9738 478.56597 L 570.601 478.56597 C 568.39184 478.56597 566.601 476.7751 566.601 474.56597 L 566.601 452 C 566.601 449.79086 568.39184 448 570.601 448 Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <path
+                    d="M 570.601 448 L 763.9738 448 C 766.1829 448 767.9738 449.79086 767.9738 452 L 767.9738 474.56597 C 767.9738 476.7751 766.1829 478.56597 763.9738 478.56597 L 570.601 478.56597 C 568.39184 478.56597 566.601 476.7751 566.601 474.56597 L 566.601 452 C 566.601 449.79086 568.39184 448 570.601 448 Z"
+                    fill="white"
+                />
+        <path
+                    d="M 570.601 448 L 763.9738 448 C 766.1829 448 767.9738 449.79086 767.9738 452 L 767.9738 474.56597 C 767.9738 476.7751 766.1829 478.56597 763.9738 478.56597 L 570.601 478.56597 C 568.39184 478.56597 566.601 476.7751 566.601 474.56597 L 566.601 452 C 566.601 449.79086 568.39184 448 570.601 448 Z"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
         <text transform="translate(574.601 454.059)" fill="black">
-          <tspan font-family="Noto Sans Display" font-size="16" font-weight="400" fill="black" x="44.0864" y="15">Attributierung </tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="16"
+                        font-weight="400"
+                        fill="black"
+                        x="44.0864"
+                        y="15"
+                    >Attributierung </tspan>
         </text>
       </g>
       <g id="Graphic_15" filter="url(#Shadow)">
-        <path d="M 328.5 141 L 521.8728 141 C 524.08194 141 525.8728 142.79086 525.8728 145 L 525.8728 211 C 525.8728 213.20914 524.08194 215 521.8728 215 L 328.5 215 C 326.29086 215 324.5 213.20914 324.5 211 L 324.5 145 C 324.5 142.79086 326.29086 141 328.5 141 Z" fill="white"/>
-        <path d="M 328.5 141 L 521.8728 141 C 524.08194 141 525.8728 142.79086 525.8728 145 L 525.8728 211 C 525.8728 213.20914 524.08194 215 521.8728 215 L 328.5 215 C 326.29086 215 324.5 213.20914 324.5 211 L 324.5 145 C 324.5 142.79086 326.29086 141 328.5 141 Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <path
+                    d="M 328.5 141 L 521.8728 141 C 524.08194 141 525.8728 142.79086 525.8728 145 L 525.8728 211 C 525.8728 213.20914 524.08194 215 521.8728 215 L 328.5 215 C 326.29086 215 324.5 213.20914 324.5 211 L 324.5 145 C 324.5 142.79086 326.29086 141 328.5 141 Z"
+                    fill="white"
+                />
+        <path
+                    d="M 328.5 141 L 521.8728 141 C 524.08194 141 525.8728 142.79086 525.8728 145 L 525.8728 211 C 525.8728 213.20914 524.08194 215 521.8728 215 L 328.5 215 C 326.29086 215 324.5 213.20914 324.5 211 L 324.5 145 C 324.5 142.79086 326.29086 141 328.5 141 Z"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
         <text transform="translate(332.5 150.328)" fill="black">
-          <tspan font-family="Noto Sans Display" font-size="16" font-weight="400" fill="black" x="61.2704" y="15">Scannen</tspan>
-          <tspan font-family="Noto Sans Display" font-size="16" font-weight="400" fill="black" x="58.9024" y="33.448">mit erster </tspan>
-          <tspan font-family="Noto Sans Display" font-size="16" font-weight="400" fill="black" x="33.2624" y="51.895996">Qualitätsprüfung </tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="16"
+                        font-weight="400"
+                        fill="black"
+                        x="61.2704"
+                        y="15"
+                    >Scannen</tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="16"
+                        font-weight="400"
+                        fill="black"
+                        x="58.9024"
+                        y="33.448"
+                    >mit erster </tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="16"
+                        font-weight="400"
+                        fill="black"
+                        x="33.2624"
+                        y="51.895996"
+                    >Qualitätsprüfung </tspan>
         </text>
       </g>
       <g id="Graphic_18" filter="url(#Shadow)">
-        <path d="M 570.601 537 L 763.9738 537 C 766.1829 537 767.9738 538.79086 767.9738 541 L 767.9738 563.566 C 767.9738 565.7751 766.1829 567.566 763.9738 567.566 L 570.601 567.566 C 568.39184 567.566 566.601 565.7751 566.601 563.566 L 566.601 541 C 566.601 538.79086 568.39184 537 570.601 537 Z" fill="white"/>
-        <path d="M 570.601 537 L 763.9738 537 C 766.1829 537 767.9738 538.79086 767.9738 541 L 767.9738 563.566 C 767.9738 565.7751 766.1829 567.566 763.9738 567.566 L 570.601 567.566 C 568.39184 567.566 566.601 565.7751 566.601 563.566 L 566.601 541 C 566.601 538.79086 568.39184 537 570.601 537 Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <path
+                    d="M 570.601 537 L 763.9738 537 C 766.1829 537 767.9738 538.79086 767.9738 541 L 767.9738 563.566 C 767.9738 565.7751 766.1829 567.566 763.9738 567.566 L 570.601 567.566 C 568.39184 567.566 566.601 565.7751 566.601 563.566 L 566.601 541 C 566.601 538.79086 568.39184 537 570.601 537 Z"
+                    fill="white"
+                />
+        <path
+                    d="M 570.601 537 L 763.9738 537 C 766.1829 537 767.9738 538.79086 767.9738 541 L 767.9738 563.566 C 767.9738 565.7751 766.1829 567.566 763.9738 567.566 L 570.601 567.566 C 568.39184 567.566 566.601 565.7751 566.601 563.566 L 566.601 541 C 566.601 538.79086 568.39184 537 570.601 537 Z"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
         <text transform="translate(574.601 543.059)" fill="black">
-          <tspan font-family="Noto Sans Display" font-size="16" font-weight="400" fill="black" x="67.7984" y="15">Ablage </tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="16"
+                        font-weight="400"
+                        fill="black"
+                        x="67.7984"
+                        y="15"
+                    >Ablage </tspan>
         </text>
       </g>
       <g id="Graphic_19" filter="url(#Shadow)">
-        <path d="M 54.5 537 L 247.8728 537 C 250.08194 537 251.8728 538.79086 251.8728 541 L 251.8728 563.566 C 251.8728 565.7751 250.08194 567.566 247.8728 567.566 L 54.5 567.566 C 52.29086 567.566 50.5 565.7751 50.5 563.566 L 50.5 541 C 50.5 538.79086 52.29086 537 54.5 537 Z" fill="white"/>
-        <path d="M 54.5 537 L 247.8728 537 C 250.08194 537 251.8728 538.79086 251.8728 541 L 251.8728 563.566 C 251.8728 565.7751 250.08194 567.566 247.8728 567.566 L 54.5 567.566 C 52.29086 567.566 50.5 565.7751 50.5 563.566 L 50.5 541 C 50.5 538.79086 52.29086 537 54.5 537 Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <path
+                    d="M 54.5 537 L 247.8728 537 C 250.08194 537 251.8728 538.79086 251.8728 541 L 251.8728 563.566 C 251.8728 565.7751 250.08194 567.566 247.8728 567.566 L 54.5 567.566 C 52.29086 567.566 50.5 565.7751 50.5 563.566 L 50.5 541 C 50.5 538.79086 52.29086 537 54.5 537 Z"
+                    fill="white"
+                />
+        <path
+                    d="M 54.5 537 L 247.8728 537 C 250.08194 537 251.8728 538.79086 251.8728 541 L 251.8728 563.566 C 251.8728 565.7751 250.08194 567.566 247.8728 567.566 L 54.5 567.566 C 52.29086 567.566 50.5 565.7751 50.5 563.566 L 50.5 541 C 50.5 538.79086 52.29086 537 54.5 537 Z"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
         <text transform="translate(58.5 543.059)" fill="black">
-          <tspan font-family="Noto Sans Display" font-size="16" font-weight="400" fill="black" x="67.7984" y="15">Ablage </tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="16"
+                        font-weight="400"
+                        fill="black"
+                        x="67.7984"
+                        y="15"
+                    >Ablage </tspan>
         </text>
       </g>
       <g id="Graphic_20" filter="url(#Shadow)">
-        <path d="M 328.5 537 L 521.8728 537 C 524.08194 537 525.8728 538.79086 525.8728 541 L 525.8728 563.566 C 525.8728 565.7751 524.08194 567.566 521.8728 567.566 L 328.5 567.566 C 326.29086 567.566 324.5 565.7751 324.5 563.566 L 324.5 541 C 324.5 538.79086 326.29086 537 328.5 537 Z" fill="white"/>
-        <path d="M 328.5 537 L 521.8728 537 C 524.08194 537 525.8728 538.79086 525.8728 541 L 525.8728 563.566 C 525.8728 565.7751 524.08194 567.566 521.8728 567.566 L 328.5 567.566 C 326.29086 567.566 324.5 565.7751 324.5 563.566 L 324.5 541 C 324.5 538.79086 326.29086 537 328.5 537 Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <path
+                    d="M 328.5 537 L 521.8728 537 C 524.08194 537 525.8728 538.79086 525.8728 541 L 525.8728 563.566 C 525.8728 565.7751 524.08194 567.566 521.8728 567.566 L 328.5 567.566 C 326.29086 567.566 324.5 565.7751 324.5 563.566 L 324.5 541 C 324.5 538.79086 326.29086 537 328.5 537 Z"
+                    fill="white"
+                />
+        <path
+                    d="M 328.5 537 L 521.8728 537 C 524.08194 537 525.8728 538.79086 525.8728 541 L 525.8728 563.566 C 525.8728 565.7751 524.08194 567.566 521.8728 567.566 L 328.5 567.566 C 326.29086 567.566 324.5 565.7751 324.5 563.566 L 324.5 541 C 324.5 538.79086 326.29086 537 328.5 537 Z"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
         <text transform="translate(332.5 543.059)" fill="black">
-          <tspan font-family="Noto Sans Display" font-size="16" font-weight="400" fill="black" x="67.7984" y="15">Ablage </tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="16"
+                        font-weight="400"
+                        fill="black"
+                        x="67.7984"
+                        y="15"
+                    >Ablage </tspan>
         </text>
       </g>
       <g id="Line_25">
-        <line x1="667.2874" y1="215" x2="667.2874" y2="260.1" marker-end="url(#FilledArrow_Marker)" stroke="#666" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+        <line
+                    x1="667.2874"
+                    y1="215"
+                    x2="667.2874"
+                    y2="260.1"
+                    marker-end="url(#FilledArrow_Marker)"
+                    stroke="#666"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                />
       </g>
       <g id="Line_26">
-        <line x1="667.2874" y1="366.5" x2="667.2874" y2="435.1" marker-end="url(#FilledArrow_Marker)" stroke="#666" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+        <line
+                    x1="667.2874"
+                    y1="366.5"
+                    x2="667.2874"
+                    y2="435.1"
+                    marker-end="url(#FilledArrow_Marker)"
+                    stroke="#666"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                />
       </g>
       <g id="Line_27">
-        <line x1="667.2874" y1="478.56597" x2="667.2874" y2="524.1" marker-end="url(#FilledArrow_Marker)" stroke="#666" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+        <line
+                    x1="667.2874"
+                    y1="478.56597"
+                    x2="667.2874"
+                    y2="524.1"
+                    marker-end="url(#FilledArrow_Marker)"
+                    stroke="#666"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                />
       </g>
       <g id="Line_28">
-        <line x1="425.1864" y1="456.4351" x2="425.1864" y2="524.1" marker-end="url(#FilledArrow_Marker)" stroke="#666" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+        <line
+                    x1="425.1864"
+                    y1="456.4351"
+                    x2="425.1864"
+                    y2="524.1"
+                    marker-end="url(#FilledArrow_Marker)"
+                    stroke="#666"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                />
       </g>
       <g id="Line_22">
-        <line x1="151.1864" y1="215" x2="151.1864" y2="524.1" marker-end="url(#FilledArrow_Marker)" stroke="#666" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+        <line
+                    x1="151.1864"
+                    y1="215"
+                    x2="151.1864"
+                    y2="524.1"
+                    marker-end="url(#FilledArrow_Marker)"
+                    stroke="#666"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                />
       </g>
       <g id="Line_29">
-        <line x1="425.1864" y1="215" x2="425.1864" y2="355.6" marker-end="url(#FilledArrow_Marker)" stroke="#666" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+        <line
+                    x1="425.1864"
+                    y1="215"
+                    x2="425.1864"
+                    y2="355.6"
+                    marker-end="url(#FilledArrow_Marker)"
+                    stroke="#666"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                />
       </g>
     </g>
   </g>
