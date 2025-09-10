@@ -1633,11 +1633,11 @@ Nesting - Beispiel
 
             .. container:: center-content
 
-                .. image:: code/1st-exercise/screenshot-ausgangssituation.png
+                .. image:: code/1st-exercise/screenshot-ausgangssituation.webp
                     :class: trbl-box-shadow-dark border-rounded
 
             :Code (HTML): `exercise-template.html <code/1st-exercise/exercise-template.html>`__
-            :Hintergrundbild: `image.png <code/1st-exercise/image.png>`__
+            :Hintergrundbild: `image.webp <code/1st-exercise/image.webp>`__
 
         .. card::
 
@@ -1648,7 +1648,7 @@ Nesting - Beispiel
 
             .. container:: center-content
 
-                .. image:: code/1st-exercise/screenshot-final.png
+                .. image:: code/1st-exercise/screenshot-final.webp
                     :class: trbl-box-shadow-dark border-rounded
 
         .. card::
@@ -1703,7 +1703,7 @@ Nesting - Beispiel
 
         :root {
             background-size: cover;
-            background-image: url('image.png');
+            background-image: url('web-css/code/1st-exercise/image.webp');
         }
         body {
             max-width: 60ch;

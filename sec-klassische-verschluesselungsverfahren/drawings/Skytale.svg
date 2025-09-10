@@ -1,0 +1,491 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+    "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg
+    xmlns="http://www.w3.org/2000/svg"
+    version="1.1"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:xl="http://www.w3.org/1999/xlink"
+    viewBox="74 107 524 323"
+    width="1048"
+    height="626"
+>
+  <defs>
+    <filter id="Shadow" filterUnits="userSpaceOnUse" x="21.6" y="74.7">
+      <feGaussianBlur in="SourceAlpha" result="blur" stdDeviation="5.8424235" />
+      <feOffset in="blur" result="offset" dx="8" dy="8" />
+      <feFlood flood-color="black" flood-opacity=".6590503" result="flood" />
+      <feComposite in="flood" in2="offset" operator="in" />
+    </filter>
+    <linearGradient x1="0" x2="1" id="Gradient" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="white" />
+      <stop offset="1" stop-color="#a5a5a5" />
+    </linearGradient>
+    <linearGradient
+            id="Obj_Gradient"
+            xl:href="#Gradient"
+            gradientTransform="translate(296.52883 63.42556) rotate(76.64888) scale(316.5201)"
+        />
+    <linearGradient
+            id="Obj_Gradient_2"
+            xl:href="#Gradient"
+            gradientTransform="translate(296.52883 63.42556) rotate(76.64888) scale(316.5201)"
+        />
+    <filter id="Shadow_2" filterUnits="userSpaceOnUse" x="21.6" y="74.7">
+      <feGaussianBlur in="SourceAlpha" result="blur" stdDeviation="1.308" />
+      <feOffset in="blur" result="offset" dx="4" dy="0" />
+      <feFlood flood-color="black" flood-opacity=".75" result="flood" />
+      <feComposite in="flood" in2="offset" operator="in" result="color" />
+      <feMerge>
+        <feMergeNode in="color" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+    <font-face
+            font-family="Brush Script MT"
+            font-size="26"
+            panose-1="3 6 8 2 4 4 6 7 3 4"
+            units-per-em="1000"
+            underline-position="-100.09766"
+            underline-thickness="49.80469"
+            slope="-1423.077"
+            x-height="360.35156"
+            cap-height="640.1367"
+            ascent="888.6719"
+            descent="-337.89062"
+            font-weight="400"
+        >
+      <font-face-src>
+        <font-face-name name="BrushScriptMT" />
+      </font-face-src>
+    </font-face>
+    <linearGradient x1="0" x2="1" id="Gradient_2" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="white" />
+      <stop offset="1" stop-color="#5e5e5e" />
+    </linearGradient>
+    <linearGradient
+            id="Obj_Gradient_3"
+            xl:href="#Gradient_2"
+            gradientTransform="translate(61.766145 332.41407) rotate(13.494285) scale(76.998585)"
+        />
+  </defs>
+  <metadata> Produced by OmniGraffle 8.0\n2024-03-11 20:37:00 +0000</metadata>
+  <g
+        id="Canvas_2"
+        stroke-opacity="1"
+        fill-opacity="1"
+        fill="none"
+        stroke="none"
+        stroke-dasharray="none"
+    >
+    <title>Canvas 2</title>
+    <rect fill="white" x="74" y="107" width="524" height="323" />
+    <g id="Canvas_2_Layer_1">
+      <title>Layer 1</title>
+      <g id="Graphic_73_shadow" filter="url(#Shadow)">
+        <path
+                    d="M 122.50705 408.07464 L 576.6478 251.70144 L 576.6478 202.52208 L 120.42945 359.61066 L 120.8858 361.1763 L 123.3858 407.3763 L 121.98652 406.4726 Z"
+                    fill="#424242"
+                />
+      </g>
+      <g id="Graphic_19_shadow" filter="url(#Shadow)">
+        <path
+                    d="M 576.6478 112.56016 L 89.5 274.71443 L 89.5 322.25656 L 576.6478 160.1023 Z"
+                    fill="url(#Obj_Gradient)"
+                />
+      </g>
+      <g id="Graphic_20_shadow" filter="url(#Shadow)">
+        <path
+                    d="M 576.6478 154.40034 L 89.5 322.13878 L 89.5 371.31814 L 576.6478 203.5797 Z"
+                    fill="#797979"
+                />
+      </g>
+      <g id="Graphic_73">
+        <path
+                    d="M 122.50705 408.07464 L 576.6478 251.70144 L 576.6478 202.52208 L 120.42945 359.61066 L 120.8858 361.1763 L 123.3858 407.3763 L 121.98652 406.4726 Z"
+                    fill="#424242"
+                />
+      </g>
+      <g id="Graphic_19">
+        <path
+                    d="M 576.6478 112.56016 L 89.5 274.71443 L 89.5 322.25656 L 576.6478 160.1023 Z"
+                    fill="url(#Obj_Gradient_2)"
+                />
+      </g>
+      <g id="Graphic_20">
+        <path
+                    d="M 576.6478 154.40034 L 89.5 322.13878 L 89.5 371.31814 L 576.6478 203.5797 Z"
+                    fill="#797979"
+                />
+      </g>
+      <g id="Group_47">
+        <g id="Graphic_50" filter="url(#Shadow_2)">
+          <path
+                        d="M 238.95153 224.44865 L 253.3204 266.1789 L 213.13587 280.01556 L 198.76699 238.2853 Z"
+                        fill="white"
+                    />
+        </g>
+        <g id="Graphic_49" filter="url(#Shadow_2)">
+          <path
+                        d="M 253.17277 265.527 L 268.2248 309.24125 L 228.04025 323.0779 L 212.98823 279.36366 Z"
+                        fill="#ebebeb"
+                    />
+        </g>
+        <g id="Graphic_48" filter="url(#Shadow_2)">
+          <path
+                        d="M 268.40067 309.39835 L 283.31276 352.7062 L 243.12822 366.54286 L 228.21613 323.235 Z"
+                        fill="#aaa"
+                    />
+        </g>
+      </g>
+      <g id="Group_51">
+        <g id="Graphic_54" filter="url(#Shadow_2)">
+          <path
+                        d="M 315.02153 199.1749 L 329.0952 240.04787 L 288.91068 253.88452 L 274.837 213.01155 Z"
+                        fill="white"
+                    />
+        </g>
+        <g id="Graphic_53" filter="url(#Shadow_2)">
+          <path
+                        d="M 328.94758 239.39597 L 343.9996 283.1102 L 303.81506 296.94686 L 288.76304 253.23262 Z"
+                        fill="#ebebeb"
+                    />
+        </g>
+        <g id="Graphic_52" filter="url(#Shadow_2)">
+          <path
+                        d="M 344.1755 283.2673 L 359.08757 326.57517 L 318.90303 340.4118 L 303.99094 297.10396 Z"
+                        fill="#aaa"
+                    />
+        </g>
+      </g>
+      <g id="Graphic_25">
+        <text
+                    transform="translate(211.32514 240.42772) rotate(-19)"
+                    fill="black"
+                    fill-opacity=".6516378"
+                >
+          <tspan
+                        font-family="Brush Script MT"
+                        font-size="26"
+                        font-weight="400"
+                        fill="black"
+                        fill-opacity=".6516378"
+                        x="0"
+                        y="23"
+                    >H</tspan>
+        </text>
+      </g>
+      <g id="Graphic_26">
+        <text
+                    transform="translate(289.54243 213.54802) rotate(-19)"
+                    fill="black"
+                    fill-opacity=".6516378"
+                >
+          <tspan
+                        font-family="Brush Script MT"
+                        font-size="26"
+                        font-weight="400"
+                        fill="black"
+                        fill-opacity=".6516378"
+                        x="0"
+                        y="23"
+                    >B</tspan>
+        </text>
+      </g>
+      <g id="Graphic_29">
+        <text
+                    transform="translate(240.31965 326.09297) rotate(-19)"
+                    fill="black"
+                    fill-opacity=".3475386"
+                >
+          <tspan
+                        font-family="Brush Script MT"
+                        font-size="26"
+                        font-weight="400"
+                        fill="black"
+                        fill-opacity=".3475386"
+                        x="0"
+                        y="23"
+                    >M</tspan>
+        </text>
+      </g>
+      <g id="Graphic_31">
+        <text
+                    transform="translate(227.6481 286.58437) rotate(-19)"
+                    fill="black"
+                    fill-opacity=".5488046"
+                >
+          <tspan
+                        font-family="Brush Script MT"
+                        font-size="26"
+                        font-weight="400"
+                        fill="black"
+                        fill-opacity=".5488046"
+                        x="0"
+                        y="23"
+                    >N</tspan>
+        </text>
+      </g>
+      <g id="Graphic_32">
+        <text
+                    transform="translate(321.42337 298.0102) rotate(-19)"
+                    fill="black"
+                    fill-opacity=".3475386"
+                >
+          <tspan
+                        font-family="Brush Script MT"
+                        font-size="26"
+                        font-weight="400"
+                        fill="black"
+                        fill-opacity=".3475386"
+                        x="0"
+                        y="23"
+                    >-</tspan>
+        </text>
+      </g>
+      <g id="Graphic_36">
+        <text
+                    transform="translate(305.50025 255.41156) rotate(-19)"
+                    fill="black"
+                    fill-opacity=".5488046"
+                >
+          <tspan
+                        font-family="Brush Script MT"
+                        font-size="26"
+                        font-weight="400"
+                        fill="black"
+                        fill-opacity=".5488046"
+                        x="0"
+                        y="23"
+                    >N</tspan>
+        </text>
+      </g>
+      <g id="Group_46">
+        <g id="Graphic_44" filter="url(#Shadow_2)">
+          <path
+                        d="M 160.30838 251.08273 L 174.97735 293.68452 L 134.79281 307.52116 L 120.12384 264.91938 Z"
+                        fill="white"
+                    />
+        </g>
+        <g id="Graphic_11" filter="url(#Shadow_2)">
+          <path
+                        d="M 174.82971 293.0326 L 189.88173 336.74685 L 149.6972 350.5835 L 134.64517 306.86926 Z"
+                        fill="#ebebeb"
+                    />
+        </g>
+        <g id="Graphic_45" filter="url(#Shadow_2)">
+          <path
+                        d="M 190.05762 336.90395 L 204.9697 380.2118 L 164.78517 394.04846 L 149.87308 350.7406 Z"
+                        fill="#aaa"
+                    />
+        </g>
+      </g>
+      <g id="Graphic_23">
+        <text
+                    transform="translate(134.35736 266.87497) rotate(-19)"
+                    fill="black"
+                    fill-opacity=".65410864"
+                >
+          <tspan
+                        font-family="Brush Script MT"
+                        font-size="26"
+                        font-weight="400"
+                        fill="black"
+                        fill-opacity=".65410864"
+                        x="0"
+                        y="23"
+                    >D</tspan>
+        </text>
+      </g>
+      <g id="Graphic_30">
+        <text
+                    transform="translate(149.22339 309.23544) rotate(-19)"
+                    fill="black"
+                    fill-opacity=".55473456"
+                >
+          <tspan
+                        font-family="Brush Script MT"
+                        font-size="26"
+                        font-weight="400"
+                        fill="black"
+                        fill-opacity=".55473456"
+                        x="0"
+                        y="23"
+                    >A</tspan>
+        </text>
+      </g>
+      <g id="Graphic_35">
+        <text
+                    transform="translate(168.92688 349.97845) rotate(-19)"
+                    fill="black"
+                    fill-opacity=".35196254"
+                >
+          <tspan
+                        font-family="Brush Script MT"
+                        font-size="26"
+                        font-weight="400"
+                        fill="black"
+                        fill-opacity=".35196254"
+                        x="0"
+                        y="23"
+                    >I</tspan>
+        </text>
+      </g>
+      <g id="Group_55">
+        <g id="Graphic_58" filter="url(#Shadow_2)">
+          <path
+                        d="M 392.4714 173.29547 L 406.25733 213.33273 L 366.0728 227.16937 L 352.28685 187.13211 Z"
+                        fill="white"
+                    />
+        </g>
+        <g id="Graphic_57" filter="url(#Shadow_2)">
+          <path
+                        d="M 406.1097 212.68083 L 421.1617 256.39506 L 380.97716 270.2317 L 365.92515 226.51747 Z"
+                        fill="#ebebeb"
+                    />
+        </g>
+        <g id="Graphic_56" filter="url(#Shadow_2)">
+          <path
+                        d="M 421.3376 256.55216 L 436.2497 299.86002 L 396.06514 313.69667 L 381.15305 270.3888 Z"
+                        fill="#aaa"
+                    />
+        </g>
+      </g>
+      <g id="Group_59">
+        <g id="Graphic_62" filter="url(#Shadow_2)">
+          <path
+                        d="M 470.0656 147.8352 L 483.41943 186.61758 L 443.2349 200.45423 L 429.88105 161.67184 Z"
+                        fill="white"
+                    />
+        </g>
+        <g id="Graphic_61" filter="url(#Shadow_2)">
+          <path
+                        d="M 483.2718 185.96568 L 498.3238 229.67992 L 458.13927 243.51656 L 443.08725 199.80233 Z"
+                        fill="#ebebeb"
+                    />
+        </g>
+        <g id="Graphic_60" filter="url(#Shadow_2)">
+          <path
+                        d="M 498.4997 229.83702 L 513.4118 273.14488 L 473.22725 286.98152 L 458.31515 243.67366 Z"
+                        fill="#aaa"
+                    />
+        </g>
+      </g>
+      <g id="Graphic_27">
+        <text
+                    transform="translate(365.443 186.2659) rotate(-19)"
+                    fill="black"
+                    fill-opacity=".6516378"
+                >
+          <tspan
+                        font-family="Brush Script MT"
+                        font-size="26"
+                        font-weight="400"
+                        fill="black"
+                        fill-opacity=".6516378"
+                        x="0"
+                        y="23"
+                    >W</tspan>
+        </text>
+      </g>
+      <g id="Graphic_28">
+        <text
+                    transform="translate(439.02035 160.48082) rotate(-19)"
+                    fill="black"
+                    fill-opacity=".6516378"
+                >
+          <tspan
+                        font-family="Brush Script MT"
+                        font-size="26"
+                        font-weight="400"
+                        fill="black"
+                        fill-opacity=".6516378"
+                        x="0"
+                        y="23"
+                    >M</tspan>
+        </text>
+      </g>
+      <g id="Graphic_33">
+        <text
+                    transform="translate(380.37133 228.93118) rotate(-19)"
+                    fill="black"
+                    fill-opacity=".5488046"
+                >
+          <tspan
+                        font-family="Brush Script MT"
+                        font-size="26"
+                        font-weight="400"
+                        fill="black"
+                        fill-opacity=".5488046"
+                        x="0"
+                        y="23"
+                    >H</tspan>
+        </text>
+      </g>
+      <g id="Graphic_34">
+        <text
+                    transform="translate(460.5351 202.08584) rotate(-19)"
+                    fill="black"
+                    fill-opacity=".5488046"
+                >
+          <tspan
+                        font-family="Brush Script MT"
+                        font-size="26"
+                        font-weight="400"
+                        fill="black"
+                        fill-opacity=".5488046"
+                        x="0"
+                        y="23"
+                    >E</tspan>
+        </text>
+      </g>
+      <g id="Graphic_37">
+        <text
+                    transform="translate(397.8868 272.79088) rotate(-19)"
+                    fill="black"
+                    fill-opacity=".3475386"
+                >
+          <tspan
+                        font-family="Brush Script MT"
+                        font-size="26"
+                        font-weight="400"
+                        fill="black"
+                        fill-opacity=".3475386"
+                        x="0"
+                        y="23"
+                    >2</tspan>
+        </text>
+      </g>
+      <g id="Graphic_40">
+        <text
+                    transform="translate(475.02916 244.579) rotate(-19)"
+                    fill="black"
+                    fill-opacity=".3475386"
+                >
+          <tspan
+                        font-family="Brush Script MT"
+                        font-size="26"
+                        font-weight="400"
+                        fill="black"
+                        fill-opacity=".3475386"
+                        x="0"
+                        y="23"
+                    >4</tspan>
+        </text>
+      </g>
+      <g id="Graphic_65">
+        <path
+                    d="M 88.8 275.6 L 107.50519 316.39562 L 120.50519 360.99562 L 123.00519 407.19562 L 103.80519 394.79562 L 84.2 360.4 L 75.4 322.4 L 77.6 279.2 Z"
+                    fill="url(#Obj_Gradient_3)"
+                />
+        <path
+                    d="M 88.8 275.6 L 107.50519 316.39562 L 120.50519 360.99562 L 123.00519 407.19562 L 103.80519 394.79562 L 84.2 360.4 L 75.4 322.4 L 77.6 279.2 Z"
+                    stroke="#666"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
+      </g>
+    </g>
+  </g>
+</svg>

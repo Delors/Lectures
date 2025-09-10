@@ -1602,7 +1602,7 @@ Referenzen
 
                 **Nach dem Laden der Seite**
 
-                .. image:: code/dialogs-open.png
+                .. image:: code/dialogs-open.webp
                         :width: 100%
                         :alt: Dialog ist geöffnet
 
@@ -1610,7 +1610,7 @@ Referenzen
 
                 **Nach dem Schließen des Dialogs**
 
-                .. image:: code/dialogs-closed.png
+                .. image:: code/dialogs-closed.webp
                         :width: 100%
                         :alt: Dialog ist geschlossen
 

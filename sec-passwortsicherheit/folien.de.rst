@@ -45,7 +45,7 @@ Verwendung von Passworten
 
         .. cell:: width-40
 
-            .. image:: logos/android.png
+            .. image:: logos/android.webp
                 :class: incremental
                 :align: center
                 :alt: Android Smartphone
@@ -68,7 +68,7 @@ Verwendung von Passworten
                 :align: center
                 :alt: Filevault Logo
 
-            .. image:: logos/veracrypt.png
+            .. image:: logos/veracrypt.webp
                 :class: incremental
                 :align: center
                 :alt: Veracrypt Logo
@@ -1355,7 +1355,7 @@ Bewertung von Passworten
 Wörterbuchgenerierung - Evaluation von Werkzeugen
 --------------------------------------------------------
 
-.. image:: passwortwiederherstellung-evaluation.png
+.. image:: passwortwiederherstellung-evaluation.webp
     :alt: Evaluation verschiedener Ansätze für die Passwortevaluation
     :align: center
 

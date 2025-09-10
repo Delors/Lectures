@@ -177,7 +177,7 @@ Gegeben sei eine App zum Ver- und Entschlüsseln von Dateien sowie ein paar vers
 
        - Die Dateien mit einem (guten) Hexeditor auf Auffälligkeiten untersuchen.
 
-         .. image:: pictures/hexeditor.png
+         .. image:: pictures/hexeditor.webp
             :alt: Hexeditor mit Dateninterpretation
             :align: center
 
@@ -330,7 +330,7 @@ Decompiler
 cfr Decompiler
 ---------------
 
-.. image:: pictures/cfr.png
+.. image:: pictures/cfr.webp
     :alt: The CFR Decompiler (Java)
     :align: center
 
@@ -343,12 +343,12 @@ JD Decompiler
 
     .. cell:: width-30
 
-        .. image:: pictures/jd.png
+        .. image:: pictures/jd.webp
             :alt: The JD Decompiler (Java)
 
     .. cell:: width-55 incremental framed trbl-shadow-dark
 
-        .. figure:: pictures/jd-excerpt.png
+        .. figure:: pictures/jd-excerpt.webp
 
             Beispiel fehlgeschlagener Dekompilierung
 
@@ -356,7 +356,7 @@ JD Decompiler
 JDec Decompiler
 ---------------
 
-.. image:: pictures/jdec.png
+.. image:: pictures/jdec.webp
     :alt: The JDec Decompiler (Java)
     :align: center
 

@@ -297,14 +297,14 @@ Aktuelle Standardtechnologien
 
   .. card::
   
-    .. image:: screenshots/tiobe_2012-04.png
+    .. image:: screenshots/tiobe_2012-04.webp
        :align: center
 
     Quelle: TIOBE Programming Community Index - April 2012
 
   .. card::
 
-    .. image:: screenshots/tiobe_2024-02.png
+    .. image:: screenshots/tiobe_2024-02.webp
        :align: center
 
     Quelle: `TIOBE Programming Community Index - Feb. 2024 <https://www.tiobe.com/tiobe-index/>`__

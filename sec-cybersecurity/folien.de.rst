@@ -751,7 +751,7 @@ Ausgewählte Social-Engineering Angriffe
 
         .. supplemental::
 
-            .. image:: images/phishing-mail-fake-fedex.png
+            .. image:: images/phishing-mail-fake-fedex.webp
                 :alt: Typische „FedEx“ Phishing Email
                 :align: center
 

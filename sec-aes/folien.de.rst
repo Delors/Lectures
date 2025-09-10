@@ -17,20 +17,19 @@
 
 
 
-Advanced Encryption Standard (AES)
+Advanced Encryption Standard (AES)\ [#]_
 ===============================================
 
 :Dozent:  `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
 :Kontakt: michael.eichberg@dhbw.de
 :Version: 1.0.8
 
-.. class:: fade-out
+.. [#]
+        Basierend auf:
 
-:Basierend auf:
+        **William Stallings**, *Cryptography and Network Security - Principles and Practice*, 8th Edition, Pearson, 2023
 
-                *Cryptography and Network Security - Principles and Practice*,  **William Stallings**, 8th Edition, Pearson, 2023
-
-                `NIST FIPS PUB 197, "Advanced Encryption Standard (AES)" <https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.197.pdf>`_
+        `NIST FIPS PUB 197, "Advanced Encryption Standard (AES)" <https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.197.pdf>`_
 
 .. supplemental::
 
@@ -723,7 +722,7 @@ AES kann effizient auf einem 32-Bit-Prozessor implementiert werden:
 
 .. supplemental::
 
-    .. image:: drawings/vorberechnung-von-mixcolumns.png
+    .. image:: drawings/vorberechnung-von-mixcolumns.webp
         :align: center
         :alt: Vorberechnung von MixColumns
 

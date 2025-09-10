@@ -689,7 +689,7 @@ Ausgewählte Social-Engineering Angriffe
 
     .. rubric:: Typische Phishing E-Mail
 
-    .. image:: images/phishing-mail-fake-fedex.png
+    .. image:: images/phishing-mail-fake-fedex.webp
         :align: center
         :width: 80%
 

@@ -47,7 +47,7 @@ Traditionelle Sicht: Ein |WS| ist lediglich eine Webseite, die von einem Compute
 
 .. supplemental::
 
-    .. image:: book-restful_web_services.png 
+    .. image:: book-restful_web_services.webp 
         :alt: RESTful Web Services
         :align: center
         :class: box-shadow

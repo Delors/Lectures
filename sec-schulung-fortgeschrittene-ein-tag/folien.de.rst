@@ -1070,7 +1070,7 @@ Probleme bei der Verwendung der Verschlüsselung im ECB-Modus
 
             .. cell:: width-70
 
-                .. image:: images/tux.ecb.from_robert_david_graham.png
+                .. image:: images/tux.ecb.from_robert_david_graham.webp
                     :align: center
 
     .. card::

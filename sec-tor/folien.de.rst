@@ -236,7 +236,7 @@ Initiierung eines Circuits (konzeptionell)
 Tor Relays in Deutschland
 ----------------------------
 
-.. image:: images/tor-metrics-relays.png
+.. image:: images/tor-metrics-relays.webp
    :alt: Tor Relays gelistet von Tor Metrics Jan. 2024
    :align: center
    :class: trbl-box-shadow-dark
@@ -259,7 +259,7 @@ Tor Relays in Deutschland
 Informationen über Tor Relays
 -------------------------------
 
-.. image:: images/tor-relay-snorlax.png
+.. image:: images/tor-relay-snorlax.webp
         :alt: Tor Relay Snorlax
         :align: right
         :class: trbl-box-shadow-dark
@@ -291,7 +291,7 @@ Informationen über Tor Relays
 
     Pfade, die über die ganze Welt gehen verhindern, dass der ``Entry-`` und ``Exit-node`` beim gleichen Anbieter liegen.
 
-    .. image:: images/tor-circuit.png
+    .. image:: images/tor-circuit.webp
         :alt: Tor Circuit
         :align: center
         :class: trbl-box-shadow-dark
@@ -316,7 +316,7 @@ Tor Exit Nodes
 
 Die Anzahl der Exit nodes ist deutlich kleiner (2. Jan. 2024 - 1314 Einträge) als die Anzahl der Knoten. Dies liegt daran, dass die technischen Anforderungen höher sind (z. B. stabile IP Adressen) und insbesondere daran, dass die Betreiber der ``Exit nodes`` darauf vorbereitet sein müssen ggf. (zahlreiche) Anfragen von den Behörden zu bekommen. [#]_
 
-.. image:: images/tor-german-exit-node.png
+.. image:: images/tor-german-exit-node.webp
     :alt: Deutscher Tor Exit Node von der TU Berlin
     :align: center
 
@@ -412,7 +412,7 @@ Standardanwendung für den Zugriff auf das Tor-Netzwerk.
 
     .. card:: clearfix
 
-        .. image:: images/tor-onion-service-nyt.png
+        .. image:: images/tor-onion-service-nyt.webp
             :alt: Tor Browser mit Ney-York-Times - 01.01.2024
             :align: left
 

@@ -51,7 +51,7 @@ A |WS| is simply a web page that can be requested and processed by a computer.
 
 .. supplemental::
 
-    .. image:: book-restful_web_services.png 
+    .. image:: book-restful_web_services.webp 
         :alt: RESTful Web Services
         :align: center
         :class: box-shadow

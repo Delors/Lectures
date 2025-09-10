@@ -99,7 +99,7 @@ Marshmallow-Challenge
 Ein mögliches Gebäude
 ------------------------
 
-.. image:: images/gebaeude.png 
+.. image:: images/gebaeude.webp 
     :alt: Ein mögliches Gebäude
     :align: center
     :width: 800px

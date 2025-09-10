@@ -390,6 +390,8 @@ Data Encryption Standard (DES)
 
 
 
+.. class:: s-vertical-title
+
 DES: Design
 -------------------
 
@@ -459,7 +461,7 @@ DES: Rundenfunktion („F“)
 --------------------------------------
 
 .. legend::
-    :class: width-40 float-right
+    :class: width-35 float-right
 
     R - rechte Hälfte der Nachricht
 
