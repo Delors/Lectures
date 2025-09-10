@@ -34,7 +34,7 @@ Kontrollfragen
 
 .. story::
 
-    .. exercise:: Wie unterscheidet sich eine Blockchiffre von einer Stromchiffere.
+    .. exercise:: Wie unterscheidet sich eine Blockchiffre von einer Stromchiffere?
 
         .. solution::
             :pwd: Bloecke...
@@ -57,7 +57,7 @@ Kontrollfragen
 
             Insbesondere AES genießt umfangreiche Hardwareunterstützung und ist deswegen effizient; im Allgemeinen kann keine solche Aussage getroffen werden.
 
-    .. exercise:: Welche grundlegenden Technicken sollten Blockchiffren immer umsetzen, um welche Ziele zu erreichen?
+    .. exercise:: Welche grundlegenden Techniken sollten Blockchiffren immer umsetzen, um welche Ziele zu erreichen?
         :class: incremental
 
         .. solution::
