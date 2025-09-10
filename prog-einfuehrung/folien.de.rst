@@ -1,5 +1,5 @@
 .. meta::
-    :version: genesis
+    :version: renaissance
     :lang: de
     :author: Michael Eichberg
     :keywords: "Programmierung", "Java", "Grundlagen", "Software Development"
@@ -42,7 +42,7 @@ Einführung
 Ziele
 -------
 
-.. class:: incremental
+.. class:: incremental-list
 
 - Einfache Programme (in Java) schreiben zu können
 - Grundlegende Werkzeuge für die Softwareentwicklung kennen lernen
@@ -95,6 +95,7 @@ Auswirkungen von generativer KI
     -- `August 2024, Heise <https://www.heise.de/news/Unternehmensberater-glauben-weiterhin-an-die-GenAI-Revolution-in-der-IT-Branche-9821979.html>`__
 
 
+
 Der wirkliche Effekt von AI Coding Assistenten
 -------------------------------------------------
 
@@ -115,7 +116,7 @@ Der wirkliche Effekt von AI Coding Assistenten
 AI Assistenten und Grundlagen der Programmierung
 -------------------------------------------------
 
-.. class:: incremental
+.. class:: incremental-list
 
 - Verwenden Sie keine AI Assistenten, um die Konzepte einer Programmiersprache oder Bibliothek zu erlernen.
 - Später müssen Sie in der Lage sein, den Code, der von Assistenten generiert wurde, zu verstehen und zu validieren. Ohne ein tiefgreifendes Verständnis ist dies nicht möglich.
@@ -130,9 +131,8 @@ Was ist Programmieren?
 Programmieren bezeichnet das Formulieren eines Lösungskonzeptes (Algorithmus) in einer Programmiersprache.
 
 .. image:: images/programmierung.svg
-    :width: 1600px
     :align: center
-    :class: incremental margin-top-2em margin-bottom-2em
+    :class: incremental
 
 
 .. hint::
@@ -145,9 +145,9 @@ Programmieren bezeichnet das Formulieren eines Lösungskonzeptes (Algorithmus) i
 Programmiersprachen
 ----------------------
 
-.. container:: two-columns
+.. grid::
 
-    .. container:: column no-separator
+    .. cell:: width-50
 
         .. rubric:: `Tiobe Index <https://www.tiobe.com/tiobe-index/>`__ für August 2024
 
@@ -166,7 +166,7 @@ Programmiersprachen
             Go, 2.03%
             Fortran, 1.79%
 
-    .. container:: column
+    .. cell:: width-50
 
         .. rubric:: `Pypl Index <https://pypl.github.io/PYPL.html>`__ für August 2024
 
@@ -190,7 +190,7 @@ Programmiersprachen
 Programmiersprachen und -paradigmen
 ---------------------------------------
 
-.. class:: incremental list-with-explanations
+.. class:: incremental-list list-with-explanations
 
 - Maschinensprachen (Zahlenkombinationen als Befehle)
 
@@ -200,7 +200,7 @@ Programmiersprachen und -paradigmen
   (Es gibt auch heute noch (vereinzelt) Anwendungsbereiche für Assemblersprachen.)
 - Höhere Programmiersprachen:
 
-  .. class:: incremental
+  .. class:: incremental-list
 
   - Prozedurale Programmiersprachen (z. B. C - noch immer sehr verbreitet)
   - Objekt-orientierte Programmiersprachen (z. B. C++, Java, ... - noch immer sehr verbreitet)
@@ -259,9 +259,9 @@ Klassifizierung von Algorithmen
 Beispiel: Berechnung der Fakultät (rekursiv)
 ---------------------------------------------------------
 
-.. container:: two-columns
+.. grid::
 
-    .. container:: column
+    .. cell:: width-50
 
         .. rubric:: Mathematisch
 
@@ -282,12 +282,13 @@ Beispiel: Berechnung der Fakultät (rekursiv)
                 \end{cases}
 
 
-    .. container:: column incremental
+    .. cell:: width-50 incremental
 
         .. rubric:: Java Programm bzw. Skript
 
         .. code:: Java
-            :class: smaller
+            :number-lines: 
+            :class: copy-to-clipboard 
 
             long fak(long n){
               if (n == 0) return 1;
@@ -299,19 +300,15 @@ Beispiel: Berechnung der Fakultät (rekursiv)
 Zentrale Eigenschaften von Algorithmen
 ----------------------------------------
 
-.. container:: scrollable
+.. story::
+
+    .. class:: incremental-list
 
     :Allgemeinheit: Ein Algorithmus löst eine Klasse von Problemen. :incremental:`Die konkrete Instanz wird über die Eingabeparameter/Parametrisierung festgelegt.`
 
-    .. class:: incremental
-
     :Endlichkeit: Die Beschreibung des Algorithmus bzgl. der Verarbeitungsschritte und (Eingabe-)Daten ist endlich und ermöglicht eine Ausführung mit endlichen Ressourcen.
 
-    .. class:: incremental
-
     :Determiniertheit: Der Algorithmus führt bei gleichen Eingaben immer zu gleichen Ausgaben.
-
-    .. class:: incremental
 
     :Ausführbarkeit:
 
@@ -322,11 +319,7 @@ Zentrale Eigenschaften von Algorithmen
       - Zuweisungen
       - etc.
 
-    .. class:: incremental
-
     :Terminiertheit: Das Ergebnis liegt nach endlich vielen Schritten vor. :incremental:`(Dies bedeutet aber nicht, dass das Problem auch praktisch lösbar ist.)`
-
-    .. class:: incremental
 
     :Komplexität:
 
@@ -335,8 +328,6 @@ Zentrale Eigenschaften von Algorithmen
       :peripheral::`Normalerweise versucht man den besten, schlechtesten und durchschnittlichen Fall zu bestimmen in Abhängigkeit von der Eingabegröße. (Insbesondere Thema des nächsten Semesters).`
 
       :peripheral::`Diese Angaben erfolgen unabhängig von einer konkreten Implementierung bzw. Verwendung einer bestimmten Programmiersprache oder Hardware.`
-
-    .. class:: incremental
 
     :Determinismus: Jeder (Teil-)schritt führt bei gleichen Eingaben immer zu gleichen Ausgaben.
 
@@ -359,9 +350,9 @@ Zentrale Eigenschaften von Algorithmen
 Beispiel: Berechnung bzw. Approximation von :math:`e`
 ---------------------------------------------------------
 
-.. container:: two-columns smaller
+.. grid::
 
-    .. container:: column
+    .. cell::
 
         .. rubric:: Mathematisch (exakt)
 
@@ -376,12 +367,13 @@ Beispiel: Berechnung bzw. Approximation von :math:`e`
 
             e = \sum_{i=0}^{\infty} \frac{1}{i!} = \frac{1}{0!} + \frac{1}{1!} + \frac{1}{2!} + \ldots
 
-    .. container:: column incremental
+    .. cell:: width-50 incremental
 
         .. rubric:: `Java Programm bzw. Skript <code/e.java>`__
 
         .. code:: Java
-            :class: smaller
+            :number-lines: 
+            :class: copy-to-clipboard
 
             BigDecimal e(int steps) {
               BigDecimal e = BigDecimal.ZERO;
@@ -403,7 +395,8 @@ Beispiel: Berechnung bzw. Approximation von :math:`e`
     In diesem Fall wurde folgende Implementierung der Fakultät verwendet:
 
     .. code:: Java
-        :class: smaller
+        :class: copy-to-clipboard
+        :number-lines:
 
         import java.math.BigInteger;
 
@@ -418,7 +411,7 @@ Beispiel: Berechnung bzw. Approximation von :math:`e`
 
 
 
-.. class:: integrated-exercise
+.. class:: exercises
 
 Übung: Primzahltest
 -----------------------
@@ -460,31 +453,26 @@ Einsatzbereiche verschiedener Programmiersprachen
 Arten der Programmierung
 -------------------------
 
-.. stack::
+.. deck::
 
-    .. layer::
+    .. card::
 
         .. image:: images/Programmiermodelle/skript.svg
-            :width: 1400px
             :align: center
 
-    .. layer:: incremental overlay
+    .. card:: overlay
 
         .. image:: images/Programmiermodelle/anwendung.svg
-            :width: 1400px
             :align: center
 
-    .. layer:: incremental overlay
+    .. card:: overlay
 
         .. image:: images/Programmiermodelle/systemcode.svg
-            :width: 1400px
             :align: center
 
-
-    .. layer:: incremental overlay
+    .. card:: overlay
 
         .. image:: images/Programmiermodelle/repl.svg
-            :width: 1400px
             :align: center
 
 
@@ -498,30 +486,31 @@ Syntax und Semantik von formalen Sprachen
 
   definiert die Bedeutung der Sätze; wenn dies möglich ist. Nicht jeder syntaktisch korrekte Satz hat eine Bedeutung.
 
-  .. container:: incremental dhbw-gray
+  .. remark:: 
+    :class: incremental 
 
-        Häufig wird die Semantik „nur“ in einem Standard oder „sogar nur“ in durch eine Implementierung festgelegt.
+    Häufig wird die Semantik „nur“ in einem Standard oder „sogar nur“ durch eine Implementierung festgelegt.
 
 
 
 Formale Sprachen: Beispiel in einer *EBNF* Variante
 -----------------------------------------------------
 
-.. stack:: incremental
+.. deck::
 
-    .. layer::
+    .. card::
 
         **Syntaktisch gültiger Satz**
 
         Sie geht nach Hause.
 
-    .. layer:: incremental
+    .. card::
 
         **Syntaktisch gültig, aber semantisch falscher Satz**
 
         Tim schwimmt auf den Mond.
 
-    .. layer:: incremental
+    .. card:: 
 
         **Syntaktisch ungültige Sätze**
 
@@ -530,7 +519,7 @@ Formale Sprachen: Beispiel in einer *EBNF* Variante
         Tim geht in die Schule
 
 .. code:: ebnf
-    :class: margin-top-1em
+    :number-lines:
 
     Satz = Subjekt Prädikat Objekt "."
     Subjekt = "Tim" | "Sie"
@@ -544,17 +533,17 @@ Formale Sprachen: Beispiel in einer *EBNF* Variante
     Beispiele für verschiedene Fehler in Java Programmen
 
     .. code:: Java
-        :class: smaller
+        :number-lines:
 
-            int fak(long n){
-              if (n == 0)
+        int fak(long n){
+            if (n == 0)
                 return 1l // ';' expected
                           // ⇒ "Syntaktischer Fehler"
-              else
+            else
                 return n * fak(n-1);
-                          // incompatible types: possible lossy conversion from long to int
-                          // ⇒ "Semantischer Fehler"
-            }
+                        // incompatible types: possible lossy conversion from long to int
+                        // ⇒ "Semantischer Fehler"
+        }
 
 
 
@@ -563,22 +552,24 @@ Extended-Backus-Naur-Form (EBNF)
 
 Die EBNF dient der Beschreibung kontext-freier Grammatiken.
 
-.. container:: two-columns
+.. grid::
 
-    .. csv-table::
-        :header: Verwendung, Notation, Bedeutung
+    .. cell:: width-50
 
-        Definition, =
-        Konkatenation, ","
-        Terminierung, ";", "Ende der Def."
-        Alternative, \|
-        Optional, [ ... ], 0 oder 1mal
-        Wiederholung, { ... }, 0 oder mehrfach
-        Gruppierung, ( ... )
-        Kommentar, \(* ... \*\)
-        Terminalsymbol, \"Terminal\"
+        .. csv-table::
+            :header: Verwendung, Notation, Bedeutung
 
-    .. container:: margin-left-1em incremental
+            Definition, =
+            Konkatenation, ","
+            Terminierung, ";", "Ende der Def."
+            Alternative, \|
+            Optional, [ ... ], 0 oder 1mal
+            Wiederholung, { ... }, 0 oder mehrfach
+            Gruppierung, ( ... )
+            Kommentar, \(* ... \*\)
+            Terminalsymbol, \"Terminal\"
+
+    .. cell:: incremental
 
         .. rubric:: Beispiel
 
@@ -606,7 +597,7 @@ Die EBNF dient der Beschreibung kontext-freier Grammatiken.
 
 
 
-.. class:: integrated-exercise
+.. class:: exercises
 
 Übung: EBNF verwenden
 ------------------------
@@ -616,7 +607,7 @@ Die EBNF dient der Beschreibung kontext-freier Grammatiken.
     Folgend wird die Syntax von Binärzahlen (:code:`BinaryNumeral`) in Java beschrieben.\ [#]_
 
     .. code:: ebnf
-        :class: far-smaller
+        :number-lines:
 
         BinaryNumeral = "0", ("b" | "B"), BinaryDigits
         BinaryDigits = BinaryDigit | (BinaryDigit [BinaryDigitsAndUnderscores] BinaryDigit)
@@ -627,7 +618,6 @@ Die EBNF dient der Beschreibung kontext-freier Grammatiken.
     Welche der folgenden Zahlen sind gültige Binärzahlen in Java?
 
     .. code:: java
-        :class: far-smaller
 
         0b1010                  0B1010_0
         0b1_0_1_0               0B1010_0_
@@ -648,7 +638,7 @@ Die EBNF dient der Beschreibung kontext-freier Grammatiken.
 
         Die ungültigen Binärzahlen sind:
 
-        .. code:: pseudocode
+        ::
 
             0B_1010
             0b1010_
@@ -658,7 +648,8 @@ Die EBNF dient der Beschreibung kontext-freier Grammatiken.
 .. [#] Die von der JLS (Java Language Specification) verwendete Syntax wurde hier adaptiert an die zuvor gezeigte Variante. Weitere Änderungen wurden nicht vorgenommen.
 
 
-.. class:: integrated-exercise
+
+.. class:: exercises
 
 Übung: EBNF erweitern
 ----------------------
