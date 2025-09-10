@@ -180,7 +180,6 @@ Gegeben sei eine App zum Ver- und Entschlüsseln von Dateien sowie ein paar vers
          .. image:: pictures/hexeditor.png
             :alt: Hexeditor mit Dateninterpretation
             :align: center
-            :class: highdpi
 
     .. card::
 
@@ -334,7 +333,6 @@ cfr Decompiler
 .. image:: pictures/cfr.png
     :alt: The CFR Decompiler (Java)
     :align: center
-    :class: highdpi
 
 
 
@@ -346,13 +344,11 @@ JD Decompiler
     .. cell:: width-30
 
         .. image:: pictures/jd.png
-            :class: highdpi
             :alt: The JD Decompiler (Java)
 
     .. cell:: width-55 incremental framed trbl-shadow-dark
 
         .. figure:: pictures/jd-excerpt.png
-            :class: highdpi
 
             Beispiel fehlgeschlagener Dekompilierung
 
@@ -363,7 +359,6 @@ JDec Decompiler
 .. image:: pictures/jdec.png
     :alt: The JDec Decompiler (Java)
     :align: center
-    :class: highdpi
 
 
 

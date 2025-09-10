@@ -239,7 +239,7 @@ Tor Relays in Deutschland
 .. image:: images/tor-metrics-relays.png
    :alt: Tor Relays gelistet von Tor Metrics Jan. 2024
    :align: center
-   :class: highdpi trbl-box-shadow-dark
+   :class: trbl-box-shadow-dark
 
 .. supplemental::
 
@@ -262,7 +262,7 @@ Informationen über Tor Relays
 .. image:: images/tor-relay-snorlax.png
         :alt: Tor Relay Snorlax
         :align: right
-        :class: highdpi trbl-box-shadow-dark
+        :class: trbl-box-shadow-dark
 
 .. container:: incremental width-40 float-left
 
@@ -294,7 +294,7 @@ Informationen über Tor Relays
     .. image:: images/tor-circuit.png
         :alt: Tor Circuit
         :align: center
-        :class: trbl-box-shadow-dark highdpi
+        :class: trbl-box-shadow-dark
 
     **Jan. 2024 - zu vermeidende Hoster**:
 
@@ -319,7 +319,6 @@ Die Anzahl der Exit nodes ist deutlich kleiner (2. Jan. 2024 - 1314 Einträge) a
 .. image:: images/tor-german-exit-node.png
     :alt: Deutscher Tor Exit Node von der TU Berlin
     :align: center
-    :class: highdpi
 
 .. supplemental::
 
@@ -416,7 +415,6 @@ Standardanwendung für den Zugriff auf das Tor-Netzwerk.
         .. image:: images/tor-onion-service-nyt.png
             :alt: Tor Browser mit Ney-York-Times - 01.01.2024
             :align: left
-            :class: highdpi
 
         .. container:: scriptsize
 

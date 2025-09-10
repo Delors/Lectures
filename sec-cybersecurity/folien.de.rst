@@ -85,7 +85,7 @@ Was ist Cybersecurity?
 
 .. class:: new-section
 
-Neuigkeiten aus der Welt der IT-Security 
+Neuigkeiten aus der Welt der IT-Security
 -----------------------------------------------------------------------------------------
 
 .. class:: section-subtitle
@@ -172,7 +172,7 @@ IT-Security Vorfälle
 
             Instead of normal programing, Ukrainian viewers saw parade footage beamed in from Moscow: waves of tanks, soldiers and weaponry. The message was meant to intimidate and was an illustration that 21st-century war is waged not just on land, sea and air but also in cyberspace and the reaches of outer space. [...]
 
-            More than 12,000 operating satellites now orbit the planet, playing a critical role not just in broadcast communications but also in military operations, navigation systems like GPS, intelligence gathering and economic supply chains.[...] 
+            More than 12,000 operating satellites now orbit the planet, playing a critical role not just in broadcast communications but also in military operations, navigation systems like GPS, intelligence gathering and economic supply chains.[...]
 
             .. supplemental::
 
@@ -188,7 +188,7 @@ IT-Security Vorfälle
 
             **Big Help or Big Brother? UC Davis Study Reveals Alarming Browser Tracking**
 
-            [...] GenAI browser assistants use large language models to make browsing easier and more personalized, and act as your ride-along as you surf the web. [...] these assistants can pose a significant threat to user privacy. [They]  often collect personal and sensitive information and share that information with both first-party servers and third-party trackers [...] one GenAI browser extension,  collected form inputs as well. While filling out a form on the IRS website, [teh extension] exfiltrated the social security number that was provided in the form field. 
+            [...] GenAI browser assistants use large language models to make browsing easier and more personalized, and act as your ride-along as you surf the web. [...] these assistants can pose a significant threat to user privacy. [They]  often collect personal and sensitive information and share that information with both first-party servers and third-party trackers [...] one GenAI browser extension,  collected form inputs as well. While filling out a form on the IRS website, [teh extension] exfiltrated the social security number that was provided in the form field.
 
             -- August 13th, 2025 - `UC Davis <https://engineering.ucdavis.edu/news/big-help-or-big-brother-uc-davis-study-reveals-alarming-browser-tracking>`__
 
@@ -200,8 +200,8 @@ IT-Security Vorfälle
             **Chameleon Channels: Measuring YouTube Accounts Repurposed for Deception and Profit**
 
             [...] We explore this problem of repurposed channels, whereby a channel changes its identity and contents. [...] By observing YouTube channels (re)sold over these 6~months, we find that a substantial number (37%) are used to disseminate potentially harmful content, often without facing any penalty. Even more surprisingly, these channels seem to gain rather than lose subscribers. [...]
-    
-            We confirm that these repurposed channels share several characteristics with sold channels -- mainly, the fact that they had a significantly high presence of potentially problematic content. Across repurposed channels, we find channels that became disinformation channels, as well as channels that link to web pages with financial scams. 
+
+            We confirm that these repurposed channels share several characteristics with sold channels -- mainly, the fact that they had a significantly high presence of potentially problematic content. Across repurposed channels, we find channels that became disinformation channels, as well as channels that link to web pages with financial scams.
 
             -- July 21st, 2025 - `arXiv <https://arxiv.org/abs/2507.16045>`__
 
@@ -263,13 +263,13 @@ IT-Security Forschung
 
             Researchers have uncovered a distributed denial-of-service (DDoS) vulnerability in the HTTP/2 protocol that is more serious than anything seen in two years.
 
-            .. background:: 
+            .. background::
                 :class: s-font-size-90
-                
+
                 In August 2023, unknown threat actors carried out the largest DDoS attack [...]. It worked thanks to a then-novel technique called "Rapid Reset," which took advantage of a fundamental flaw in implementations of HTTP/2.
 
             Now, researchers from Tel Aviv University have identified a way around the Rapid Reset fix. They named the technique "MadeYouReset," and it's once again raising the possibility that attackers could enact colossal cyberattacks [...].
-            
+
             [...] but a large number of the vendors that were potentially exposed to this were informed about it, and they did whatever they believed they should do. [...]
 
             -- August, 18th, 2025 - `Dark Reading <https://www.darkreading.com/vulnerabilities-threats/internet-wide-vulnerability-giant-ddos-attacks>`__
@@ -516,12 +516,12 @@ Wichtige Kennzahlen bzgl. Cybersecurity-Vorfällen\ [#]_
     Die MTTC misst somit nicht wie lange es dauert bis alle Auswirkungen des Angriffs beseitigt sind/die normale Operation wiederhergestellt ist, sondern „nur“ wie lange es dauert die weitere Verbreitung zu stoppen.
 
     .. admonition:: Beispielszenario
-        :class: dd-margin-left-2em   
+        :class: dd-margin-left-2em
 
         :MTTD: Es kommt zu einer starken Häufung von gesperrten (z.B. Exchange-) Accounts aufgrund von zu vielen fehlschlagenden Anmeldeversuchen durch die vermeintlichen Nutzer. Aufgrund der hohen Zahl muss jedoch von einem Cyberangriff ausgegangen werden. *Durch eine Analyse der Log-Dateien kann festgestellt werden wann der Angriff begonnen hat und die MTTD ermittelt werden.*
 
         :MTTI: Nach einer Analyse des Netzwerkverkehrs wird festgestellt, dass alle Anfragen von externen Rechnern aus einem definierten IP-Addressbereich erfolgen. (Eine Alternative wäre, dass die Anfragen von einem oder mehreren  internen Rechner ausgehen.) Dies ist die MTTI.
-            
+
         :MTTR: Durch eine Rekonfiguration der Firewallregeln können die Anfragen blockiert werden und somit der Angriff eingedämmt werden. Dies ist die MTTR.
 
         :MTTN: Als letzter Schritt muss untersucht werden welche Credentials ggf. erfolgreich gestohlen wurden und ob diese bereits genutzt wurden/werden. Nach dem Abschluss dieser Schritte kann ggf. die MTTN ermittelt werden.
@@ -754,7 +754,6 @@ Ausgewählte Social-Engineering Angriffe
             .. image:: images/phishing-mail-fake-fedex.png
                 :alt: Typische „FedEx“ Phishing Email
                 :align: center
-                :class: highdpi
 
 
     :Smishing:

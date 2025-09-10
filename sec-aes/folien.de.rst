@@ -724,7 +724,6 @@ AES kann effizient auf einem 32-Bit-Prozessor implementiert werden:
 .. supplemental::
 
     .. image:: drawings/vorberechnung-von-mixcolumns.png
-        :class: highdpi
         :align: center
         :alt: Vorberechnung von MixColumns
 

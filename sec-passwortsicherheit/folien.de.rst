@@ -46,14 +46,14 @@ Verwendung von Passworten
         .. cell:: width-40
 
             .. image:: logos/android.png
-                :class: incremental highdpi
+                :class: incremental
                 :align: center
                 :alt: Android Smartphone
 
         .. cell:: width-20
 
             .. image:: logos/cryptostick.jpg
-                :class: incremental highdpi
+                :class: incremental
                 :align: center
                 :alt: Cryptostick
 
@@ -64,12 +64,12 @@ Verwendung von Passworten
         .. cell:: width-40
 
             .. image:: logos/filevault.jpeg
-                :class: incremental highdpi
+                :class: incremental
                 :align: center
                 :alt: Filevault Logo
 
             .. image:: logos/veracrypt.png
-                :class: incremental highdpi
+                :class: incremental
                 :align: center
                 :alt: Veracrypt Logo
 
@@ -1358,7 +1358,6 @@ Wörterbuchgenerierung - Evaluation von Werkzeugen
 .. image:: passwortwiederherstellung-evaluation.png
     :alt: Evaluation verschiedener Ansätze für die Passwortevaluation
     :align: center
-    :class: highdpi
 
 
 
