@@ -73,7 +73,7 @@ Literatur
 - Bzgl. Dokumentenmanagement:
 
   .. image:: images/dokumentenmanagement.jpg
-        :class: highdpi trbl-box-shadow-dark
+        :class: trbl-box-shadow-dark
 
 - weitere bzgl. der IT sicherheitsrelevanten Aspekte: Verschlüsselungsverfahren und Signaturen
 
@@ -160,7 +160,7 @@ Digitalisierung - ein Prozess mit Stilblüten...
 -------------------------------------------------
 
 .. image:: images/sparkasse-verschickt-usb-sticks.2024-03-03.png
-    :class: highdpi trbl-box-shadow-dark
+    :class: trbl-box-shadow-dark
     :align: center
 
 
@@ -369,7 +369,7 @@ Dokumente annotieren
 --------------------------------
 
 .. image:: images/dokument_mit_anmerkungen.png
-    :class: highdpi trbl-box-shadow-dark
+    :class: trbl-box-shadow-dark
     :align: center
 
 
