@@ -1,66 +1,177 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns="http://www.w3.org/2000/svg" xmlns:xl="http://www.w3.org/1999/xlink" version="1.1" viewBox="-4 -169 932 576" width="582" height="360">
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+    "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns="http://www.w3.org/2000/svg"
+    xmlns:xl="http://www.w3.org/1999/xlink"
+    version="1.1"
+    viewBox="-4 -169 932 576"
+    width="1456"
+    height="900"
+>
+  <style>
+    @import url('/LectureDoc2/ext/fonts/ld-fonts.css');
+  </style>
   <defs>
-    <font-face font-family="Helvetica" font-size="19" units-per-em="1000" underline-position="-75.68359" underline-thickness="49.316406" slope="0" x-height="522.9492" cap-height="717.28516" ascent="770.0195" descent="-229.98047" font-weight="400">
-      <font-face-src>
-        <font-face-name name="Helvetica"/>
-      </font-face-src>
-    </font-face>
     <filter id="Shadow" filterUnits="userSpaceOnUse" x="-97.2" y="-226.6">
-      <feGaussianBlur in="SourceAlpha" result="blur" stdDeviation="1.308"/>
-      <feOffset in="blur" result="offset" dx="0" dy="2"/>
-      <feFlood flood-color="black" flood-opacity=".5" result="flood"/>
-      <feComposite in="flood" in2="offset" operator="in" result="color"/>
+      <feGaussianBlur in="SourceAlpha" result="blur" stdDeviation="1.308" />
+      <feOffset in="blur" result="offset" dx="0" dy="2" />
+      <feFlood flood-color="black" flood-opacity=".5" result="flood" />
+      <feComposite in="flood" in2="offset" operator="in" result="color" />
       <feMerge>
-        <feMergeNode in="color"/>
-        <feMergeNode in="SourceGraphic"/>
+        <feMergeNode in="color" />
+        <feMergeNode in="SourceGraphic" />
       </feMerge>
     </filter>
-    <marker orient="auto" overflow="visible" markerUnits="strokeWidth" id="FilledArrow_Marker" stroke-linejoin="miter" stroke-miterlimit="10" viewBox="-1 -3 6 6" markerWidth="6" markerHeight="6" color="#003776">
+    <marker
+            orient="auto"
+            overflow="visible"
+            markerUnits="strokeWidth"
+            id="FilledArrow_Marker"
+            stroke-linejoin="miter"
+            stroke-miterlimit="10"
+            viewBox="-1 -3 6 6"
+            markerWidth="6"
+            markerHeight="6"
+            color="#003776"
+        >
       <g>
-        <path d="M 3.7333333 0 L 0 -1.4 L 0 1.4 Z" fill="currentColor" stroke="currentColor" stroke-width="1"/>
+        <path
+                    d="M 3.7333333 0 L 0 -1.4 L 0 1.4 Z"
+                    fill="currentColor"
+                    stroke="currentColor"
+                    stroke-width="1"
+                />
       </g>
     </marker>
   </defs>
   <metadata> Produced by OmniGraffle 8.0\n2024-03-08 15:33:31 +0000</metadata>
-  <g id="mit_stempel" stroke-dasharray="none" stroke="none" stroke-opacity="1" fill-opacity="1" fill="none">
+  <g
+        id="mit_stempel"
+        stroke-dasharray="none"
+        stroke="none"
+        stroke-opacity="1"
+        fill-opacity="1"
+        fill="none"
+    >
     <title>mit_stempel</title>
     <g id="mit_stempel_Layer_1">
       <title>Layer 1</title>
       <g id="Graphic_10">
-        <rect x="278.82408" y="-169" width="366.72" height="575" stroke="#eaeaea" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <rect
+                    x="278.82408"
+                    y="-169"
+                    width="366.72"
+                    height="575"
+                    stroke="#eaeaea"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
       </g>
       <g id="Graphic_3">
         <text transform="translate(681.5 307)" fill="black">
-          <tspan font-family="Helvetica" font-size="19" font-weight="400" fill="black" x="0" y="19">Stempel</tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="19"
+                        font-weight="400"
+                        fill="black"
+                        x="0"
+                        y="19"
+                    >Stempel</tspan>
         </text>
       </g>
       <g id="Graphic_4">
         <text transform="translate(31.5 -109)" fill="black">
-          <tspan font-family="Helvetica" font-size="19" font-weight="400" fill="black" x="0" y="19">Das “Dokument”</tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="19"
+                        font-weight="400"
+                        fill="black"
+                        x="0"
+                        y="19"
+                    >Das “Dokument”</tspan>
         </text>
       </g>
       <g id="Graphic_5">
-        <text transform="translate(694.5 -101.5)" fill="black">
-          <tspan font-family="Helvetica" font-size="19" font-weight="400" fill="black" x="0" y="19">Eindeutige Dokumenten-ID</tspan>
+        <text transform="translate(694.5 -115)" fill="black">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="19"
+                        font-weight="400"
+                        fill="black"
+                        x="0"
+                        y="19"
+                    >Eindeutige Dokumenten-ID</tspan>
         </text>
       </g>
       <g id="Graphic_6">
         <text transform="translate(9.148926 315)" fill="black">
-          <tspan font-family="Helvetica" font-size="19" font-weight="400" fill="black" x="0" y="19">Metadaten des Dokuments:</tspan>
-          <tspan font-family="Helvetica" font-size="19" font-weight="400" fill="black" x="0" y="42">- Erstellungsdatum</tspan>
-          <tspan font-family="Helvetica" font-size="19" font-weight="400" fill="black" x="0" y="65">- Ersteller/Unterzeichner</tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="19"
+                        font-weight="400"
+                        fill="black"
+                        x="0"
+                        y="19"
+                    >Metadaten des Dokuments:</tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="19"
+                        font-weight="400"
+                        fill="black"
+                        x="0"
+                        y="42"
+                    >- Erstellungsdatum</tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="19"
+                        font-weight="400"
+                        fill="black"
+                        x="0"
+                        y="65"
+                    >- Ersteller/Unterzeichner</tspan>
         </text>
       </g>
       <g id="Line_7" filter="url(#Shadow)">
-        <line x1="684.5" y1="-88" x2="485.3998" y2="-88.92605" marker-end="url(#FilledArrow_Marker)" stroke="#003776" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+        <line
+                    x1="684.5"
+                    y1="-105"
+                    x2="485.3998"
+                    y2="-105"
+                    marker-end="url(#FilledArrow_Marker)"
+                    stroke="#003776"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="3"
+                />
       </g>
       <g id="Line_8" filter="url(#Shadow)">
-        <line x1="677.5" y1="317" x2="643.0758" y2="317" marker-end="url(#FilledArrow_Marker)" stroke="#003776" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+        <line
+                    x1="677.5"
+                    y1="317"
+                    x2="643.0758"
+                    y2="317"
+                    marker-end="url(#FilledArrow_Marker)"
+                    stroke="#003776"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="3"
+                />
       </g>
       <g id="Line_9" filter="url(#Shadow)">
-        <line x1="175.5" y1="-96.5" x2="262.24007" y2="-96.24581" marker-end="url(#FilledArrow_Marker)" stroke="#003776" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+        <line
+                    x1="175.5"
+                    y1="-96.5"
+                    x2="262.24007"
+                    y2="-96.24581"
+                    marker-end="url(#FilledArrow_Marker)"
+                    stroke="#003776"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="3"
+                />
       </g>
     </g>
   </g>

@@ -1,154 +1,459 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns="http://www.w3.org/2000/svg" xmlns:xl="http://www.w3.org/1999/xlink" version="1.1" viewBox="-26 155 563 611" width="282" height="305">
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+    "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns="http://www.w3.org/2000/svg"
+    xmlns:xl="http://www.w3.org/1999/xlink"
+    version="1.1"
+    viewBox="-26 155 563 611"
+    width="844"
+    height="916"
+>
   <defs>
-    <font-face font-family="Apple Color Emoji" font-size="60" units-per-em="1000" underline-position="-125.00021" underline-thickness="62.500104" slope="0" x-height="625.00104" cap-height="1000.0017" ascent="1000.0017" descent="-312.50052" font-weight="400">
+    <font-face
+            font-family="Apple Color Emoji"
+            font-size="60"
+            units-per-em="1000"
+            underline-position="-125.00021"
+            underline-thickness="62.500104"
+            slope="0"
+            x-height="625.00104"
+            cap-height="1000.0017"
+            ascent="1000.0017"
+            descent="-312.50052"
+            font-weight="400"
+        >
       <font-face-src>
-        <font-face-name name="AppleColorEmoji"/>
+        <font-face-name name="AppleColorEmoji" />
       </font-face-src>
     </font-face>
-    <font-face font-family="Apple Color Emoji" font-size="54" units-per-em="1000" underline-position="-125.00023" underline-thickness="62.500116" slope="0" x-height="625.00116" cap-height="1000.0019" ascent="1000.0019" descent="-312.50058" font-weight="400">
+    <font-face
+            font-family="Apple Color Emoji"
+            font-size="54"
+            units-per-em="1000"
+            underline-position="-125.00023"
+            underline-thickness="62.500116"
+            slope="0"
+            x-height="625.00116"
+            cap-height="1000.0019"
+            ascent="1000.0019"
+            descent="-312.50058"
+            font-weight="400"
+        >
       <font-face-src>
-        <font-face-name name="AppleColorEmoji"/>
+        <font-face-name name="AppleColorEmoji" />
       </font-face-src>
     </font-face>
-    <font-face font-family="Apple Color Emoji" font-size="36" units-per-em="1000" underline-position="-125.00035" underline-thickness="62.50017" slope="0" x-height="625.0017" cap-height="1000.0028" ascent="1000.0028" descent="-312.50087" font-weight="400">
+    <font-face
+            font-family="Apple Color Emoji"
+            font-size="36"
+            units-per-em="1000"
+            underline-position="-125.00035"
+            underline-thickness="62.50017"
+            slope="0"
+            x-height="625.0017"
+            cap-height="1000.0028"
+            ascent="1000.0028"
+            descent="-312.50087"
+            font-weight="400"
+        >
       <font-face-src>
-        <font-face-name name="AppleColorEmoji"/>
+        <font-face-name name="AppleColorEmoji" />
       </font-face-src>
     </font-face>
-    <font-face font-family="Apple Color Emoji" font-size="70" units-per-em="1000" underline-position="-125.00018" underline-thickness="62.50009" slope="0" x-height="625.0009" cap-height="1000.0014" ascent="1000.0014" descent="-312.50045" font-weight="400">
+    <font-face
+            font-family="Apple Color Emoji"
+            font-size="70"
+            units-per-em="1000"
+            underline-position="-125.00018"
+            underline-thickness="62.50009"
+            slope="0"
+            x-height="625.0009"
+            cap-height="1000.0014"
+            ascent="1000.0014"
+            descent="-312.50045"
+            font-weight="400"
+        >
       <font-face-src>
-        <font-face-name name="AppleColorEmoji"/>
+        <font-face-name name="AppleColorEmoji" />
       </font-face-src>
     </font-face>
-    <font-face font-family="Apple Color Emoji" font-size="80" units-per-em="1000" underline-position="-125.00016" underline-thickness="62.50008" slope="0" x-height="625.0008" cap-height="1000.0012" ascent="1000.0012" descent="-312.5004" font-weight="400">
+    <font-face
+            font-family="Apple Color Emoji"
+            font-size="80"
+            units-per-em="1000"
+            underline-position="-125.00016"
+            underline-thickness="62.50008"
+            slope="0"
+            x-height="625.0008"
+            cap-height="1000.0012"
+            ascent="1000.0012"
+            descent="-312.5004"
+            font-weight="400"
+        >
       <font-face-src>
-        <font-face-name name="AppleColorEmoji"/>
+        <font-face-name name="AppleColorEmoji" />
       </font-face-src>
     </font-face>
-    <marker orient="auto" overflow="visible" markerUnits="strokeWidth" id="FilledArrow_Marker" stroke-linejoin="miter" stroke-miterlimit="10" viewBox="-1 -3 7 6" markerWidth="7" markerHeight="6" color="black">
+    <marker
+            orient="auto"
+            overflow="visible"
+            markerUnits="strokeWidth"
+            id="FilledArrow_Marker"
+            stroke-linejoin="miter"
+            stroke-miterlimit="10"
+            viewBox="-1 -3 7 6"
+            markerWidth="7"
+            markerHeight="6"
+            color="black"
+        >
       <g>
-        <path d="M 4.8 0 L 0 -1.8 L 0 1.8 Z" fill="currentColor" stroke="currentColor" stroke-width="1"/>
+        <path
+                    d="M 4.8 0 L 0 -1.8 L 0 1.8 Z"
+                    fill="currentColor"
+                    stroke="currentColor"
+                    stroke-width="1"
+                />
       </g>
     </marker>
-    <font-face font-family="Helvetica Neue" font-size="24" panose-1="2 0 5 3 0 0 0 2 0 4" units-per-em="1000" underline-position="-100" underline-thickness="50" slope="0" x-height="517" cap-height="714" ascent="951.9958" descent="-212.99744" font-weight="400">
+    <font-face
+            font-family="Noto Sans Display"
+            font-size="24"
+            panose-1="2 0 5 3 0 0 0 2 0 4"
+            units-per-em="1000"
+            underline-position="-100"
+            underline-thickness="50"
+            slope="0"
+            x-height="517"
+            cap-height="714"
+            ascent="951.9958"
+            descent="-212.99744"
+            font-weight="400"
+        >
       <font-face-src>
-        <font-face-name name="HelveticaNeue"/>
+        <font-face-name name="HelveticaNeue" />
       </font-face-src>
     </font-face>
   </defs>
   <metadata> Produced by OmniGraffle 8.0\n2024-03-08 15:33:31 +0000</metadata>
-  <g id="lebenszyklus" stroke-dasharray="none" stroke="none" stroke-opacity="1" fill-opacity="1" fill="none">
+  <g
+        id="lebenszyklus"
+        stroke-dasharray="none"
+        stroke="none"
+        stroke-opacity="1"
+        fill-opacity="1"
+        fill="none"
+    >
     <title>lebenszyklus</title>
     <g id="lebenszyklus_Layer_1">
       <title>Layer 1</title>
       <g id="Graphic_17">
-        <rect x="260.45703" y="685.6413" width="72.04297" height="75.17934" fill="white"/>
+        <rect
+                    x="260.45703"
+                    y="685.6413"
+                    width="72.04297"
+                    height="75.17934"
+                    fill="white"
+                />
       </g>
       <g id="Graphic_16">
-        <rect x="78.75" y="505.12925" width="90" height="92" fill="white"/>
+        <rect x="78.75" y="505.12925" width="90" height="92" fill="white" />
       </g>
       <g id="Graphic_15">
-        <rect x="37" y="165.51206" width="310" height="92" fill="white"/>
+        <rect x="37" y="165.51206" width="310" height="92" fill="white" />
       </g>
       <g id="Graphic_3">
         <text transform="translate(399.5 514.5)" fill="black">
-          <tspan font-family="Apple Color Emoji" font-size="60" font-weight="400" fill="black" x="0" y="60">🕵️‍♂️</tspan>
+          <tspan
+                        font-family="Apple Color Emoji"
+                        font-size="60"
+                        font-weight="400"
+                        fill="black"
+                        x="0"
+                        y="60"
+                    >🕵️‍♂️</tspan>
         </text>
       </g>
       <g id="Graphic_4">
         <text transform="translate(87.5 528.5)" fill="black">
-          <tspan font-family="Apple Color Emoji" font-size="54" font-weight="400" fill="black" x="0" y="54">📑</tspan>
+          <tspan
+                        font-family="Apple Color Emoji"
+                        font-size="54"
+                        font-weight="400"
+                        fill="black"
+                        x="0"
+                        y="54"
+                    >📑</tspan>
         </text>
       </g>
       <g id="Graphic_8">
         <text transform="translate(313.69187 636.57) rotate(44)" fill="black">
-          <tspan font-family="Apple Color Emoji" font-size="36" font-weight="400" fill="black" x="0" y="36">📄</tspan>
+          <tspan
+                        font-family="Apple Color Emoji"
+                        font-size="36"
+                        font-weight="400"
+                        fill="black"
+                        x="0"
+                        y="36"
+                    >📄</tspan>
         </text>
       </g>
       <g id="Graphic_9">
         <text transform="translate(165.18574 170.51206)" fill="black">
-          <tspan font-family="Apple Color Emoji" font-size="60" font-weight="400" fill="black" x="0" y="60">📝</tspan>
+          <tspan
+                        font-family="Apple Color Emoji"
+                        font-size="60"
+                        font-weight="400"
+                        fill="black"
+                        x="0"
+                        y="60"
+                    >📝</tspan>
         </text>
       </g>
       <g id="Graphic_10">
         <text transform="translate(304.5 621)" fill="black">
-          <tspan font-family="Apple Color Emoji" font-size="36" font-weight="400" fill="black" x="0" y="36">📄</tspan>
+          <tspan
+                        font-family="Apple Color Emoji"
+                        font-size="36"
+                        font-weight="400"
+                        fill="black"
+                        x="0"
+                        y="36"
+                    >📄</tspan>
         </text>
       </g>
       <g id="Graphic_7">
         <text transform="translate(265.45703 686.32066)" fill="black">
-          <tspan font-family="Apple Color Emoji" font-size="60" font-weight="400" fill="black" x="0" y="60">🗑️</tspan>
+          <tspan
+                        font-family="Apple Color Emoji"
+                        font-size="60"
+                        font-weight="400"
+                        fill="black"
+                        x="0"
+                        y="60"
+                    >🗑️</tspan>
         </text>
       </g>
       <g id="Graphic_2">
         <text transform="translate(113.5 501)" fill="black">
-          <tspan font-family="Apple Color Emoji" font-size="54" font-weight="400" fill="black" x="0" y="54">🧐</tspan>
+          <tspan
+                        font-family="Apple Color Emoji"
+                        font-size="54"
+                        font-weight="400"
+                        fill="black"
+                        x="0"
+                        y="54"
+                    >🧐</tspan>
         </text>
       </g>
       <g id="Graphic_12">
         <text transform="translate(54.914445 160.51206)" fill="black">
-          <tspan font-family="Apple Color Emoji" font-size="70" font-weight="400" fill="black" x="0" y="70">📷</tspan>
+          <tspan
+                        font-family="Apple Color Emoji"
+                        font-size="70"
+                        font-weight="400"
+                        fill="black"
+                        x="0"
+                        y="70"
+                    >📷</tspan>
         </text>
       </g>
       <g id="Graphic_13">
         <text transform="translate(265.45703 170.51206)" fill="black">
-          <tspan font-family="Apple Color Emoji" font-size="70" font-weight="400" fill="black" x="0" y="70">💻</tspan>
+          <tspan
+                        font-family="Apple Color Emoji"
+                        font-size="70"
+                        font-weight="400"
+                        fill="black"
+                        x="0"
+                        y="70"
+                    >💻</tspan>
         </text>
       </g>
       <g id="Graphic_14">
         <text transform="translate(240.5 340)" fill="black">
-          <tspan font-family="Apple Color Emoji" font-size="80" font-weight="400" fill="black" x="0" y="80">🗃️</tspan>
+          <tspan
+                        font-family="Apple Color Emoji"
+                        font-size="80"
+                        font-weight="400"
+                        fill="black"
+                        x="0"
+                        y="80"
+                    >🗃️</tspan>
         </text>
       </g>
       <g id="Line_18">
-        <line x1="214.4932" y1="257.51206" x2="246.7168" y2="323.41127" marker-end="url(#FilledArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+        <line
+                    x1="214.4932"
+                    y1="257.51206"
+                    x2="246.7168"
+                    y2="323.41127"
+                    marker-end="url(#FilledArrow_Marker)"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                />
       </g>
       <g id="Line_19">
-        <path d="M 325.5 407.49396 C 343.49797 415.5429 363.6683 427.3287 379.5 444 C 396.178 461.56243 404.5435 480.8635 408.69375 496.8592" marker-end="url(#FilledArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+        <path
+                    d="M 325.5 407.49396 C 343.49797 415.5429 363.6683 427.3287 379.5 444 C 396.178 461.56243 404.5435 480.8635 408.69375 496.8592"
+                    marker-end="url(#FilledArrow_Marker)"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                />
       </g>
       <g id="Line_20">
-        <path d="M 394.5 539.55576 C 379.21926 548.22454 356.7684 565.2873 337.5 597.12925 C 322.6675 621.6407 312.8682 649.70856 306.58 673.13184" marker-end="url(#FilledArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+        <path
+                    d="M 394.5 539.55576 C 379.21926 548.22454 356.7684 565.2873 337.5 597.12925 C 322.6675 621.6407 312.8682 649.70856 306.58 673.13184"
+                    marker-end="url(#FilledArrow_Marker)"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                />
       </g>
       <g id="Line_21">
-        <path d="M 394.5 541.6345 C 370.5957 553.8609 324.90145 573.24935 269.7287 577 C 236.2248 579.2776 205.67814 575.35 181.28635 569.91794" marker-end="url(#FilledArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+        <path
+                    d="M 394.5 541.6345 C 370.5957 553.8609 324.90145 573.24935 269.7287 577 C 236.2248 579.2776 205.67814 575.35 181.28635 569.91794"
+                    marker-end="url(#FilledArrow_Marker)"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                />
       </g>
       <g id="Line_22">
-        <path d="M 121.79649 496 C 123.78471 480.3589 131.72414 455.21195 160.18574 434 C 178.5145 420.3399 201.84712 410.92535 223.07695 404.563" marker-end="url(#FilledArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+        <path
+                    d="M 121.79649 496 C 123.78471 480.3589 131.72414 455.21195 160.18574 434 C 178.5145 420.3399 201.84712 410.92535 223.07695 404.563"
+                    marker-end="url(#FilledArrow_Marker)"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                />
       </g>
       <g id="Graphic_23">
         <text transform="translate(-15.538263 256)" fill="black">
-          <tspan font-family="Helvetica Neue" font-size="24" font-weight="400" fill="black" x="17053026e-20" y="23">Dokumente erzeugen, übernehmen</tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="24"
+                        font-weight="400"
+                        fill="black"
+                        x="17053026e-20"
+                        y="23"
+                    >Dokumente erzeugen, übernehmen</tspan>
         </text>
       </g>
       <g id="Graphic_28">
         <text transform="translate(321.5 324.48794)" fill="black">
-          <tspan font-family="Helvetica Neue" font-size="24" font-weight="400" fill="black" x="9.336" y="23">Ablegen,</tspan>
-          <tspan font-family="Helvetica Neue" font-size="24" font-weight="400" fill="black" x="0" y="51.672"> zuordnen,</tspan>
-          <tspan font-family="Helvetica Neue" font-size="24" font-weight="400" fill="black" x="5.796" y="80.34399">indizieren</tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="24"
+                        font-weight="400"
+                        fill="black"
+                        x="9.336"
+                        y="23"
+                    >Ablegen,</tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="24"
+                        font-weight="400"
+                        fill="black"
+                        x="0"
+                        y="51.672"
+                    > zuordnen,</tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="24"
+                        font-weight="400"
+                        fill="black"
+                        x="5.796"
+                        y="80.34399"
+                    >indizieren</tspan>
         </text>
       </g>
       <g id="Graphic_29">
         <text transform="translate(437.156 591)" fill="black">
-          <tspan font-family="Helvetica Neue" font-size="24" font-weight="400" fill="black" x="3.336" y="23">Suchen, </tspan>
-          <tspan font-family="Helvetica Neue" font-size="24" font-weight="400" fill="black" x=".696" y="51.672">Retrieval</tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="24"
+                        font-weight="400"
+                        fill="black"
+                        x="3.336"
+                        y="23"
+                    >Suchen, </tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="24"
+                        font-weight="400"
+                        fill="black"
+                        x=".696"
+                        y="51.672"
+                    >Retrieval</tspan>
         </text>
       </g>
       <g id="Graphic_31">
         <text transform="translate(-20.94 473)" fill="black">
-          <tspan font-family="Helvetica Neue" font-size="24" font-weight="400" fill="black" x="26.652" y="23">Lesen, </tspan>
-          <tspan font-family="Helvetica Neue" font-size="24" font-weight="400" fill="black" x="3.336" y="51.672">auswerten, </tspan>
-          <tspan font-family="Helvetica Neue" font-size="24" font-weight="400" fill="black" x="24.66" y="80.34399">ändern</tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="24"
+                        font-weight="400"
+                        fill="black"
+                        x="26.652"
+                        y="23"
+                    >Lesen, </tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="24"
+                        font-weight="400"
+                        fill="black"
+                        x="3.336"
+                        y="51.672"
+                    >auswerten, </tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="24"
+                        font-weight="400"
+                        fill="black"
+                        x="24.66"
+                        y="80.34399"
+                    >ändern</tspan>
         </text>
       </g>
       <g id="Line_32">
-        <line x1="53" y1="257" x2="332.5" y2="257" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+        <line
+                    x1="53"
+                    y1="257"
+                    x2="332.5"
+                    y2="257"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                />
       </g>
       <g id="Graphic_35">
         <text transform="translate(157.5 673)" fill="black">
-          <tspan font-family="Helvetica Neue" font-size="24" font-weight="400" fill="black" x="6.876" y="23">Löschen,</tspan>
-          <tspan font-family="Helvetica Neue" font-size="24" font-weight="400" fill="black" x="8171241e-19" y="51.672">vernichten</tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="24"
+                        font-weight="400"
+                        fill="black"
+                        x="6.876"
+                        y="23"
+                    >Löschen,</tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="24"
+                        font-weight="400"
+                        fill="black"
+                        x="8171241e-19"
+                        y="51.672"
+                    >vernichten</tspan>
         </text>
       </g>
     </g>
