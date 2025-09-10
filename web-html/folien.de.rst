@@ -19,7 +19,7 @@ HTML(5)
 
 :Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
 :Kontakt: michael.eichberg@dhbw.de, Raum 149B
-:Version: 2.1.3
+:Version: 2.1.4
 
 .. supplemental::
 
@@ -737,7 +737,7 @@ HTML - logische Gruppierung von Text
 
     :Code: :html:`<code>` - für Code; für das Darstellen von Code-Beispielen wird :html:`code` häufig mit :html:`<pre>` kombiniert; die Sprache des Codes wird dann über ein :html:`class` Attribute spezifiziert (z. B. :html:`<pre><code class="language-java">...</code></pre>`)
 
-    :Variablen:    :html:`<var>` - für Variablen in mathematischen oder Programmierkontexten
+    :Variablen: :html:`<var>` - für Variablen in mathematischen oder Programmierkontexten
 
     :(Tastatur-)Eingaben: :html:`<kbd>` - für Tastatureingaben oder andere Benutzereingaben
 
@@ -755,7 +755,7 @@ HTML - logische Gruppierung von Text
 
         .. code:: html
 
-            Brot besteht aus <i>Mehl</i>.
+            In der Biologie gehört der Mensch zur Gattung <i>Homo</i>.
 
     :Text mit erhöhter Aufmerksamkeit: :html:`<b>` - Text, der erhöhte Aufmerksamkeit erfordert, aber nicht unbedingt betont werden muss; z. B. Schlüsselwörter in einem Artikel.
 
@@ -1460,7 +1460,7 @@ Referenzen
                     </header>
                     <main>
                         <section>
-                            <strong>Lebenslauf</strong>
+                            <h1>Lebenslauf</h1>
                             <address>
                                 Musterstraße 1<br>
                                 12345 Musterstadt
@@ -1531,7 +1531,7 @@ Referenzen
             <hr>
             <main>
                 <section>
-                    <strong>Lebenslauf</strong>
+                    <h1>Lebenslauf</h1>
 
                     <address>
                         Musterstraße 1<br>
@@ -1549,11 +1549,12 @@ Referenzen
                         </thead>
                         <tbody>
                             <tr>
-                                <td>1990</td><td><details>
+                                <td>1990</td>
+                                <td><details>
                                 <summary>Theodor Gymnasium</summary>
                                 Gegründet von Theodor von und zu Frankenburg
                                 im Jahr 1818</details>
-                                </summary></td>
+                                </td>
                             </tr>
                             <tr>
                                 <td>2000</td>
