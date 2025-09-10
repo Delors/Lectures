@@ -16,7 +16,7 @@ Klassische Sicherheitsprinzipien
 
 :Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
 :Kontakt: michael.eichberg@dhbw.de
-:Version: 1.2.2
+:Version: 1.2.3
 
 .. supplemental::
 
@@ -50,32 +50,37 @@ Klassische Sicherheitsprinzipien
 
         .. supplemental::
 
-            :Principle of Economy of Mechanism (aka Principle of Simplicity): dies fördert zum Beispiel die Korrektheit der Implementierung/Anwendung, da diese schneller verstanden wird und auch einfacher getestet werden kann. Weiterhin reduziert es die Angriffsfläche.
+            :Principle of Economy of Mechanism (aka Principle of Simplicity): Dies fördert zum Beispiel die Korrektheit der Implementierung/Anwendung, da diese schneller verstanden wird und auch einfacher getestet werden kann. Weiterhin reduziert es die Angriffsfläche.
 
     :Principle of Fail-Safe Defaults: Standardmäßig sollte der Zugriff auf Ressourcen verweigert werden.
 
-    :Principle of Complete Mediation: Zugriffsanfragen eines Subjekts auf ein Objekt werden jedes Mal vollständig auf ihre Zulässigkeit hin überprüft.
+    :Principle of Complete Mediation: Zugriffsanfragen eines Subjekts auf ein Objekt werden *jedes Mal* vollständig auf ihre Zulässigkeit hin überprüft.
+
+        .. remark:: 
+
+            Bei modernen Zero-Trust-Ansätzen gilt, dass jeder Zugriff erneut authentifiziert und autorisiert wird. Dies ist eine Umsetzung des *Principle of Complete Mediation*.
 
         .. supplemental::
 
             :Principle of Complete Mediation: Bei der Entwicklung einer Serveranwendung besagt das *Principle of Complete Mediation* somit, dass bei jeder Anfrage zu überprüfen ist, ob der Nutzer die entsprechenden Rechte besitzt.
 
+
+
     :Principle of Least Authority (aka POLA)/ Principle of Least Privilege: Jedes Programm und jeder Benutzer sollte nur die für seine Aufgabe unbedingt notwendigen Rechte besitzen.
 
-    :Principle of Separation of Privilege: Ein System sollte in mehrere POLA konforme Komponenten unterteilt sein. Sollte eine Komponente kompromittiert sein, dann sind die Möglichkeiten des Angreifers dennoch begrenzt.
+    :Principle of Separation of Privilege: Ein System sollte in mehrere POLA konforme Komponenten unterteilt sein. Sollte eine Komponente kompromittiert sein, dann sind die Möglichkeiten des Angreifers dennoch begrenzt. D. h. kritische Operationen sollten nur ausgeführt werden, wenn mehrere Bedingungen erfüllt sind.
 
         (Eng verwandt mit dem POLA.)
 
-
         .. supplemental::
 
-            Das *Principle of Separation of Privilege* wird dann eingehalten, wenn ein Angreifer, der eine Komponente kompromittiert hat, nicht die Rechte erhält, die notwendig sind, um das gesamte System zu kompromittieren. Zum Beispiel ist es für Überweisungen notwendig, diese auf zwei verschiedene Arten zu autorisieren.
+            :*Principle of Separation of Privilege*: Dieses Prinzip wird dann eingehalten, wenn ein Angreifer, der eine Komponente kompromittiert hat, nicht die Rechte erhält, die notwendig sind, um das gesamte System zu kompromittieren. Zum Beispiel ist es für Überweisungen notwendig, diese auf zwei verschiedene Arten zu autorisieren.
 
-            .. attention::
+                .. attention::
 
-                *Privilege Separation* (für Programme) sollte nicht mit dem hier beschriebenen Prinzip verwechselt werden. *Privilege Separation* liegt zum Beispiel dann vor, wenn ein Programm in zwei Teile aufgeteilt ist und ein Teil - zum Beispiel zum Zugriff auf Betriebssystemressourcen wie Sockets oder bestimmte Dateien - erhöhte Rechte benötigt als der Rest vom Programm. In diesem Fall erfolgt dann der Austausch zwischen den beiden Teilen über eine wohldefinierte, minimale Schnittstelle, die die Rechte des ersten Teils auf das notwendige Minimum beschränkt.
+                    *Privilege Separation* (für Programme) sollte nicht mit dem hier beschriebenen Prinzip verwechselt werden. *Privilege Separation* liegt zum Beispiel dann vor, wenn ein Programm in zwei Teile aufgeteilt ist und ein Teil - zum Beispiel zum Zugriff auf Betriebssystemressourcen wie Sockets oder bestimmte Dateien - erhöhte Rechte benötigt als der Rest vom Programm. In diesem Fall erfolgt dann der Austausch zwischen den beiden Teilen über eine wohldefinierte, minimale Schnittstelle, die die Rechte des ersten Teils auf das notwendige Minimum beschränkt.
 
-    :Principle of Least Common Mechanism: Die Sicherheitsmechanismen sollten über Nutzer (hier insbesondere Programme, die andere Programme nutzen) hinweg möglichst wenig Gemeinsamkeiten haben.
+    :Principle of Least Common Mechanism: Die Sicherheitsmechanismen sollten über Nutzer (hier insbesondere Programme, die andere Programme nutzen) hinweg möglichst wenig gemeinsam haben. 
 
         .. supplemental::
 
