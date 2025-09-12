@@ -1,5 +1,5 @@
 .. meta::
-    :version: genesis
+    :version: renaissance
     :lang: de
     :author: Michael Eichberg
     :keywords: "mixed-integer programming", "python"
@@ -10,7 +10,6 @@
 
 .. include:: ../docutils.defs
 
-
 .. |group_assignment_template.py| source:: code/group_assignment_template.py
             :path: relative
             :prefix: https://delors.github.io/
@@ -20,9 +19,8 @@
     :prefix: https://delors.github.io/
 
 
-.. class:: animated-symbol
 
-Lineare und Mixed-Integer Programmierung
+Lineare und Mixed-Integer Programmierung\ [#]_
 ======================================================
 
 .. rubric:: Eine allererste Einführung
@@ -31,11 +29,7 @@ Lineare und Mixed-Integer Programmierung
 :Kontakt: michael.eichberg@dhbw.de, Raum 149B
 :Version: 1.0.5
 
-.. container:: minor
-
-    :Quelle:
-
-       Introduction to Algorithms, 3rd Edition, Cormen, Leiserson, Rivest, Stein, MIT Press, 2009
+.. [#] Introduction to Algorithms, 3rd Edition, Cormen, Leiserson, Rivest, Stein, MIT Press, 2009
 
 .. supplemental::
 
@@ -62,7 +56,7 @@ Beispielszenario: Kostenoptimierung
 
 .. rubric:: Optimierung der Kosten für die Nahrungsmittelzusammensetzung
 
-.. container:: smaller
+.. container:: 
 
     Seien :math:`x_1` und :math:`x_2` die Menge an Nahrungsmitteln 1 und 2, die wir kaufen. :incremental:`Die Kosten für Nahrungsmittel 1 und 2 betragen 1 und 2 Euro pro Einheit.` :incremental:`Die täglichen Ernährungsbedürfnisse sind 10 Einheiten Protein und 20 Einheiten Fett.` :incremental:`Nahrungsmittel 1 enthält 2 Einheiten Protein und 3 Einheiten Fett pro Einheit. Nahrungsmittel 2 enthält 1 Einheit Protein und 4 Einheiten Fett pro Einheit.`
 
@@ -89,11 +83,11 @@ Beispielszenario: Kostenoptimierung
 Lineare Programmierung
 ------------------------
 
-.. admonition:: Definition
+.. definition::
 
     Lineare Programmierung: Optimierung von linearen Funktionen unter linearen Nebenbedingungen.
 
-.. container:: smaller
+.. container:: 
 
     Das Ziel ist die Optimierung (Maximierung/Minimierung) einer linearen Funktion :math:`f`:
 
@@ -112,13 +106,13 @@ Lineare Programmierung
 Lösen von linearen Optimierungsproblemen
 ------------------------------------------
 
-.. stack:: invisible
+.. deck:: 
 
-    .. layer::
+    .. card::
 
-        .. container:: two-columns
+        .. grid::
 
-            .. container:: column no-separator
+            .. cell::
 
                 .. rubric:: Standardform - „nur“ Verwendung von linearen Ungleichungen
 
@@ -140,23 +134,23 @@ Lösen von linearen Optimierungsproblemen
                               &   &   x_2 & \geq & 0
                         \end{array}
 
-            .. container:: column incremental
+            .. cell:: incremental
 
-                .. stack:: invisible
+                .. deck::
 
-                    .. layer::
+                    .. card::
 
                         .. image:: images/lp-constraints.svg
                             :align: center
                             :height: 925px
 
-                    .. layer:: incremental overlay
+                    .. card:: overlay
 
                         .. image:: images/lp-solution.svg
                             :align: center
                             :height: 925px
 
-    .. layer:: incremental
+    .. card::
 
         .. rubric:: Schlupfform (:eng:`Slack Form`) - „nur“ Verwendung von linearen Gleichungen
 
@@ -180,7 +174,7 @@ Lösen von linearen Optimierungsproblemen
                     0 & \leq & x_1, & x_2, & x_3, & x_4 , & x_5 \\
                     \end{array}
 
-        .. container:: incremental smaller
+        .. container:: incremental 
 
             Die Variablen :math:`x_3`, :math:`x_4` und :math:`x_5` sind die Schlupfvariablen. Sie messen die Differenz zwischen der linken und der rechten Seite der Ungleichungen und sind nicht Teil der Zielfunktion.
 
@@ -197,7 +191,7 @@ Lösen von linearen Optimierungsproblemen
     - nicht jedes lineare Optimierungsproblem hat eine (bzw. eine optimale) Lösung
     - Auch in der Schlupfform, werden die Anforderungen an die nicht-Negativität der Variablen als Ungleichungen beschrieben.
 
-    .. container:: minor smaller
+    .. container:: peripheral
 
         :Affine Unabhängigkeit:
 
@@ -206,7 +200,8 @@ Lösen von linearen Optimierungsproblemen
     Die Schlupfform ist für den Simplex-Algorithmus relevant.
 
 
-.. class:: integrated-exercise transition-scale
+
+.. class:: exercises transition-scale
 
 Übung\ [#]_
 --------------
@@ -252,7 +247,7 @@ Lösen von linearen Optimierungsproblemen
 
 
 
-.. class:: integrated-exercise transition-scale
+.. class:: exercises transition-scale
 
 Übung
 ------
@@ -317,6 +312,8 @@ Lösen von linearen Optimierungsproblemen
        2. in Bezug auf die Kanten und die Kapazitäten
        3. in Bezug auf die Kapazitätserhaltung
 
+
+
 .. class:: new-section transition-fade
 
 Simplex Algorithmus
@@ -326,7 +323,7 @@ Simplex Algorithmus
 Simplex Algorithmus - Einführung
 ---------------------------------
 
-.. class:: incremental list-with-explanations
+.. class:: incremental-list list-with-explanations
 
 - Der Simplex-Algorithmus ist ein Algorithmus zur Lösung von linearen Optimierungsproblemen.
 - Der Algorithmus wurde von George Dantzig entwickelt und 1947 veröffentlicht.
@@ -346,7 +343,7 @@ Simplex Algorithmus - Einführung
 Standardform
 ------------------------
 
-.. container:: scrollable
+.. story::
 
     Gegeben sein :math:`n` reelle Zahlen :math:`(c_1,...,c_n`); :math:`m` reelle Zahlen (:math:`b_1,...,b_m`); und eine :math:`m \times n` Matrix :math:`A = (a_{ij})` für :math:`i = 1,2,...m` und :math:`j = 1,2,...n`.
 
@@ -421,13 +418,13 @@ Standardform
     - :math:`x \geq 0` bedeutet, dass jede Komponente von :math:`x` nicht negativ sein darf.
 
 
-.. class:: integrated-exercise transition-move-to-top
+
+.. class:: exercises transition-move-to-top
 
 Übung
 -------
 
 .. exercise:: Überführen Sie das lineare Programm in Standardform.
-
 
     .. math::
 
@@ -488,12 +485,12 @@ Standardform
 Schlupfform (:eng:`Slack Form`)
 ----------------------------------
 
-.. container:: scrollable
+.. story::
 
     - Zum effizienten Lösung von linearen Programmen wird die Schlupfform verwendet.
     - Bei der Schlupfform werden alle Nebenbedingungen in Gleichungen umgewandelt - abgesehen von den Nichtnegativitätsbedingungen.
 
-      .. container:: box-shadow padding-0-5em rounded-corners smaller
+      .. container:: accentuate
 
         .. rubric:: Vorgehen
 
@@ -523,7 +520,7 @@ Schlupfform (:eng:`Slack Form`)
             \\end{equation}
             \\]
 
-    .. class:: incremental
+    .. class:: incremental-list
 
     - Somit stehen die Variablen :math:`x_1,...,x_n` für die ursprünglichen Variablen und die Variablen :math:`x_{n+1},...,x_{n+m}` für die Schlupfvariablen.
     - Auf der rechten Seite der Gleichung :math:`(2)` stehen die ursprünglichen Variablen. Nur diese Variablen sind (initial) Teil der Zielfunktion.
@@ -548,16 +545,16 @@ Schlupfform (:eng:`Slack Form`)
             x_{i} & = & b_i & - & \sum_{j \in N} a_{ij} \cdot x_j \quad \text{für } i \in B\\
         \end{array}
 
-
 .. supplemental::
 
     Diese Schlupfvariable (:math:`x_{n+1}`) misst die Differenz zwischen der linken und der rechten Seite der Ungleichung (1).
 
 
+
 Schlupfform - Beispiel
 ------------------------
 
-.. container:: smaller
+.. container::
 
     .. container::
 
@@ -590,7 +587,7 @@ Schlupfform - Beispiel
 
 
 
-.. class:: integrated-exercise transition-move-to-top
+.. class:: exercises transition-move-to-top
 
 Übung
 -------
@@ -599,7 +596,7 @@ Schlupfform - Beispiel
 
     Überführen Sie das 1. lineare Programm aus der vorhergehenden Übung in Schlupfform.
 
-    .. container:: minor
+    .. container:: peripheral
 
         Bauen Sie ggf. auf den Ergebnissen der vorhergehenden Aufgabe auf.
 
@@ -649,13 +646,13 @@ Schlupfform - Beispiel
 (Primaler) Simplex
 ------------------------
 
-.. container:: scrollable
+.. story::
 
     .. admonition:: Grundlegende Idee
 
         Wir lösen unser Optimierungsproblem durch gezielte algebraische Operationen, die die Zielfunktion maximieren.
 
-    .. class:: incremental list-with-explanations
+    .. class:: incremental-list list-with-explanations
 
     1. Wir wählen immer eine Variable, die in der Zielfunktion vorkommt und einen positiven Koeffizienten hat.
 
@@ -681,7 +678,7 @@ Schlupfform - Beispiel
 Simplex anwenden
 ------------------------
 
-.. container:: scrollable
+.. story::
 
     .. rubric:: Gegebenes lineares Programm in Schlupfform
 
@@ -696,7 +693,7 @@ Simplex anwenden
                             &x_6 & = & 36 & - & 4x_1 & - &  x_2 & - & 2x_3 \\
             \end{array}
 
-    .. class:: incremental
+    .. class:: incremental-list
 
     - Wir können die Zielfunktion maximieren, indem wir die Variable der Zielfunktion mit dem größten positiven Koeffizienten wählen: :math:`x_1`.
     - Wir prüfen welche Nebenbed. die Maximierung von :math:`x_1` am stärksten einschränkt:
@@ -772,7 +769,6 @@ Simplex Algorithmus
 
 .. code:: pascal
     :number-lines:
-    :class: slightly-more-smaller
 
     Algorithm Simplex(A,b,c):
         (N,B,A,b,c,v) := InitialisiereSimplex(A,b,c)
@@ -801,7 +797,7 @@ Simplex Algorithmus
 
 
 
-.. class:: integrated-exercise transition-move-to-top
+.. class:: exercises transition-move-to-top
 
 Übung
 --------
@@ -888,7 +884,7 @@ Simplex Algorithmus
 
         Somit ist die Lösung (eine Maximierung der Zielfunktion ist nicht mehr möglich!): :math:`x_1 = \frac{9}{2}`, :math:`x_2 = 3`, :math:`x_3 = \frac{1}{2}`, :math:`x_4 = 0`, :math:`x_5 = 0` und :math:`z = 270`.
 
-        .. container:: minor
+        .. container:: peripheral
 
             (Ein Einsetzen der Wert für :math:`x_1` und :math:`x_2` in die Originalzielfunktion bestätigt das Ergebnis (:math:`270`) und das Einsetzen bestätigt auch das Einhalten der Nebenbedingungen.)
 
@@ -905,11 +901,11 @@ Mixed-Integer-Programmierung (MIP)
 MIP: einige (oder alle) Variablen sind ganzzahlig
 ---------------------------------------------------------------------------------------------------
 
-.. container:: scrollable
+.. story::
 
-    .. container:: two-columns
+    .. grid::
 
-        .. container:: column no-separator
+        .. cell:: 
 
             **Zielfunktion (Maximiere)**
 
@@ -930,15 +926,15 @@ MIP: einige (oder alle) Variablen sind ganzzahlig
                     \end{array}
 
 
-        .. container:: column incremental
+        .. cell:: incremental
 
             .. image:: images/lp_optimum_is_integer_solution.svg
                 :align: center
                 :height: 900px
 
-    .. container:: two-columns incremental
+    .. grid:: incremental
 
-        .. container:: column no-separator
+        .. cell::
 
             **Zielfunktion (Maximiere)**
 
@@ -958,14 +954,11 @@ MIP: einige (oder alle) Variablen sind ganzzahlig
                           &   &   x_2 & \geq & 0 & \text{und ganzzahlig} \\
                     \end{array}
 
-
-        .. container:: column incremental
+        .. cell:: incremental
 
             .. image:: images/lp_optimum_is_no_integer_solution.svg
                 :align: center
                 :height: 900px
-
-
 
     .. hint::
         :class: incremental
@@ -984,13 +977,13 @@ MIP: einige (oder alle) Variablen sind ganzzahlig
 
 
 
-.. class:: no-title center-child-elements
+.. class:: no-title center-content
 
 Fokussierung auf Lösungsstrategien
 --------------------------------------------
 
 
-.. container:: dhbw-dark-gray-background white box-shadow padding-1em rounded-corners
+.. remark::
 
     Wir konzentrieren uns im Folgenden darauf für konkrete Probleme, ganzzahlige Programme zu entwickeln. Wir betrachten die zugrunde liegenden Algorithmen nicht.
 
@@ -1001,15 +994,15 @@ Binärvariablen oder ganzzahlige Variablen?
 
 .. rubric:: Sudokus lösen
 
-.. container:: two-columns
+.. grid::
 
-   .. container:: column no-separator
+   .. cell:: 
 
         .. image:: images/sudoku.svg
             :align: center
             :height: 400px
 
-   .. container:: column
+   .. cell:: 
 
         **Naiver Ansatz**
 
@@ -1058,9 +1051,9 @@ Problembeschreibung: SEND+MORE=MONEY\ [#]_
 Lösung des Rätsels: SEND+MORE=MONEY
 ----------------------------------------------------------
 
-.. stack::
+.. deck::
 
-    .. layer::
+    .. card::
 
         :Initiale Idee:
 
@@ -1080,7 +1073,7 @@ Lösung des Rätsels: SEND+MORE=MONEY
         :Ergebnis: Alle Variablen bekommen den Wert „0“ zugewiesen.
 
 
-    .. layer:: incremental
+    .. card::
 
         :Herausforderung:
             Wir müssen die Nebenbedingungen formulieren, die sicherstellen, dass die Variablen die Werte 0 bis 9 annehmen und dass keine Ziffer doppelt vorkommt.
@@ -1094,7 +1087,7 @@ Lösung des Rätsels: SEND+MORE=MONEY
         :Lösungsansatz (häufiger Ansatz bei „\ *Set-Partitioning-Problems*\ “):
             - Jeder Variablen ([S, E, N, D, M, O, R, Y]) werden jeweils 10 binäre Variablen zugewiesen, die den Wert 0 oder 1 annehmen, wenn die Variable den entsprechenden Wert hat.
 
-    .. layer:: incremental
+    .. card::
 
         .. rubric:: Nebenbedingungen
 
@@ -1116,12 +1109,12 @@ Lösung des Rätsels: SEND+MORE=MONEY
             \end{array}
 
 
-    .. layer:: incremental
+    .. card::
 
         .. rubric:: „Optimierungsziel“
 
         .. math::
-            :class: far-smaller incremental
+            :class: incremental font-size-80
 
             \begin{array}{r}
                 \displaystyle\sum_{i=0}^{9} i \cdot S_i  \times 1000 + \sum_{i=0}^{9} i \cdot E_i  \times 100 + \sum_{i=0}^{9} i \cdot N_i  \times 10 + \sum_{i=0}^{9} i \cdot D_i  \times 1 & + \\
@@ -1131,7 +1124,7 @@ Lösung des Rätsels: SEND+MORE=MONEY
 
 
 
-    .. layer:: incremental
+    .. card::
 
         Umsetzung in Python mit Hilfe von `PuLP <https://coin-or.github.io/pulp/>`
 
@@ -1152,7 +1145,7 @@ Lösung des Rätsels: SEND+MORE=MONEY
             :start-after: )
             :end-before: # Nebenbedingungen
 
-    .. layer:: incremental
+    .. card::
 
         .. rubric:: Nebenbedingungen
 
@@ -1163,7 +1156,7 @@ Lösung des Rätsels: SEND+MORE=MONEY
             :start-after: # Nebenbedingungen
             :end-before: # Ziel
 
-    .. layer:: incremental
+    .. card::
 
         .. rubric:: „hauptsächliche Nebenbedingung“
 
@@ -1174,7 +1167,7 @@ Lösung des Rätsels: SEND+MORE=MONEY
             :start-after: # Ziel
             :end-before: # Lösung
 
-    .. layer:: incremental
+    .. card::
 
         .. rubric:: Lösung berechnen lassen
 
@@ -1220,7 +1213,7 @@ Lösung des Rätsels: SEND+MORE=MONEY
 
 
 
-.. class:: integrated-exercise transition-move-to-top
+.. class:: exercises transition-move-to-top
 
 Übung
 --------------------------------------------------------
@@ -1252,7 +1245,7 @@ Lösung des Rätsels: SEND+MORE=MONEY
 
 
 
-.. class:: integrated-exercise transition-move-to-top
+.. class:: exercises transition-move-to-top
 
 Übung
 --------------------------------------------------------
