@@ -1,5 +1,5 @@
 .. meta::
-    :version: genesis
+    :version: renaissance
     :lang: de
     :author: Michael Eichberg
     :keywords: genetische Algorithmen, Python
@@ -24,7 +24,7 @@
 
 
 
-.. class:: animated-symbol
+.. class:: animated-logo
 
 Genetische Algorithmen
 ======================================================
@@ -32,12 +32,7 @@ Genetische Algorithmen
 :Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
 :Kontakt: michael.eichberg@dhbw.de, Raum 149B
 :Version: 1.0
-
-.. container:: minor
-
-    :Quelle:
-
-       Davic Kopec, Algorithmen in Python, Rheinwerk Computing
+:Quelle:  Davic Kopec, Algorithmen in Python, Rheinwerk Computing, 2023 (korrigierte Auflage)
 
 .. supplemental::
 
@@ -62,7 +57,7 @@ Einführung
 Genetische Algorithmen
 --------------------------------------------------------
 
-.. class:: incremental list-with-explanations
+.. class:: incremental-list list-with-explanations
 
 - werden eingesetzt, wenn traditionelle Algorithmen nicht geeignet sind oder keine offensichtlichen Algorithmen existieren
 
@@ -75,7 +70,7 @@ Genetische Algorithmen
 (Biologische) Grundlagen
 --------------------------------------------------------
 
-.. class:: incremental
+.. class:: incremental-list
 
 - Genetische Algorithmen basieren auf der Evolutionstheorie:
 
@@ -94,8 +89,6 @@ Genetische Algorithmen
   :`Gene`:peripheral:: :peripheral:`Eigenschaften eines Lösungskandidaten`
   :Fitness(-Funktion): Bewertung eines Chromosoms ( Lösungskandidaten)
 
-
-
 .. supplemental::
 
    D. h. auf der natürlichen Auslese und der Vererbung von Eigenschaften. Ein Individuum, das besser an die Umwelt angepasst ist, hat eine höhere Wahrscheinlichkeit, sich fortzupflanzen und seine Gene weiterzugeben. Schlechter angepasste Individuen sterben aus.
@@ -103,10 +96,11 @@ Genetische Algorithmen
    Klassisches Beispiel ist die Entwicklung von Resistenzen gegen Antibiotika bei Bakterien.
 
 
+
 Grundidee
 --------------------------------------------------------
 
-.. class:: incremental
+.. class:: incremental-list
 
 - ein genetischer Algorithmus durchläuft Generationen
 - In jeder Generation werden die Individuen/Chromosomen bewertet und die besser angepassten Individuen (solche die *fitter* sind) mit einer höheren Wahrscheinlichkeit zum Überleben und zur Fortpflanzung ausgewählt
@@ -114,7 +108,6 @@ Grundidee
 
   1. rekombiniert (:java:`crossover` von zwei Chromosomen) und
   2. mutiert (:java:`mutate`)
-
 
 .. warning::
     :class: incremental margin-top-1em
@@ -139,7 +132,6 @@ Basisklasse für Chromosomen
 .. include:: code/lib/chromosome.py
     :code: python
     :number-lines:
-    :class: far-smaller
     :start-after: # Base class for all chromosomes
 
 .. supplemental::
@@ -158,14 +150,14 @@ Ablauf von genetischen Algorithmen
 
 1. Erzeugen einer zufälligen Population
 
-.. class:: incremental margin-top-1em
+.. class:: incremental-list 
 
 2. Miss die *Fitness* der Individuen, wenn einer den Zielwert erreicht, beende den Algorithmus und gib das Individuum zurück
 3. Wähle einige Individuen aus, die sich fortpflanzen - bevorzuge die Fitteren mit einer höheren Wahrscheinlichkeit
 4. Kombiniere die ausgewählten Individuen, um neue Individuen zu erzeugen
 5. Mutiere einige Individuen, um die neue Generation zu vervollständigen
 
-.. class:: incremental margin-top-1em
+.. class:: incremental-list 
 
 6. Wiederhole die Schritte 2-5 für eine bestimmte Anzahl von Generationen
 
@@ -173,7 +165,7 @@ Ablauf von genetischen Algorithmen
 Parameter von genetischen Algorithmen
 --------------------------------------------------------
 
-.. class:: incremental
+.. class:: incremental-list
 
 - Größe der Population
 - Design der ersten Population (rein zufällig oder basierend auf einer Heuristik)
@@ -193,11 +185,11 @@ Selektionsstrategien von Chromosomen
 
 .. rubric:: Bestimmung der Chromosomen, die überleben und sich ggf. fortpflanzen.
 
-.. container:: scrollable
+.. story:: 
 
     .. rubric:: Auswahlstrategien
 
-    .. class:: incremental
+    .. class:: incremental-list
 
     :*Tournament Selection*:
 
@@ -206,11 +198,8 @@ Selektionsstrategien von Chromosomen
         .. include:: code/lib/genetic_algorithm.py
             :code: python
             :number-lines:
-            :class: slightly-more-smaller
             :start-after: # Choose num_participants at random and take the best 2
             :end-before: # type: ignore
-
-    .. class:: incremental
 
     :*Roulette Wheel Selection*:
 
@@ -219,15 +208,12 @@ Selektionsstrategien von Chromosomen
         .. include:: code/lib/genetic_algorithm.py
             :code: python
             :number-lines:
-            :class: slightly-more-smaller
             :start-after: # Note: will not work with negative fitness results
             :end-before: # Choose num_participants at random and take the best 2
 
     .. container:: incremental
 
         .. rubric:: Vorgehen
-
-        .. class:: incremental
 
         1. Für jedes gewählte Chromosomenpaar bestimme, ob diese rekombiniert werden sollen. Wenn ja, führe die Rekombination durch. Wenn nicht, kopiere die Chromosomen einfach in die neue Generation.
 
@@ -241,7 +227,6 @@ Basisklasse des genetischen Algorithmus
 .. include:: code/lib/genetic_algorithm.py
     :code: python
     :number-lines:
-    :class: slightly-more-smaller
     :start-after: from lib.chromosome import Chromosome
     :end-before:  -> None:
 
@@ -253,14 +238,13 @@ Hauptmethode des genetischen Algorithmus
 .. include:: code/lib/genetic_algorithm.py
     :code: python
     :number-lines:
-    :class: slightly-more-smaller
     :start-after: # and return the best individual found
-
-
 
 .. supplemental::
 
     :java:`fitness_key` ist eine Referenz auf die Methode, die die Fitness eines Chromosoms berechnet.
+
+
 
 Durchführung der Mutationen
 --------------------------------------------------------
@@ -268,7 +252,6 @@ Durchführung der Mutationen
 .. include:: code/lib/genetic_algorithm.py
     :code: python
     :number-lines: 94
-    :class: slightly-more-smaller
     :start-after: # With _mutation_chance probability mutate each individual
     :end-before: # Run the genetic algorithm for max_generations iterations
 
@@ -277,48 +260,39 @@ Durchführung der Mutationen
 Durchführung der Selektion und Vererbung
 --------------------------------------------------------
 
-.. stack:: invisible
+.. deck::
 
-    .. layer::
+    .. card::
 
         .. include:: code/lib/genetic_algorithm.py
             :code: python
             :number-lines: 69
-            :class: slightly-more-smaller
             :start-after: # Replace the population with a new generation of individuals
             :end-before: if self._selection_type == \
 
         .. include:: code/lib/genetic_algorithm.py
             :code: python
             :number-lines: 82
-            :class: slightly-more-smaller
             :start-after: self._pick_tournament(len(self._population) // 2)
             :end-before: # With _mutation_chance probability mutate each individual
 
-    .. layer:: incremental
+    .. card::
 
         .. include:: code/lib/genetic_algorithm.py
             :code: python
             :number-lines: 73
-            :class: slightly-more-smaller
             :start-after: while len(new_population) < len(self._population):
             :end-before: # Kreuze ggf. die Eltern
 
 
 
-.. class::  no-title center-child-elements
-
 Herausforderungen bei der Entwicklung genetischer Algorithmen
 ---------------------------------------------------------------
 
-.. container:: box-shadow rounded-corners padding-1em
+.. class:: incremental-list dhbw
 
-    Die **Herausforderung bei der Entwicklung von genetischen Algorithmen** ist somit zweigeteilt:
-
-    .. class:: incremental
-
-    1. eine passende Formulierung für das Problem zu entwickeln und
-    2. danach die Parameter so zu wählen, dass der Algorithmus in einer akzeptablen Zeit eine gute Lösung findet.
+1. eine passende Formulierung für das Problem zu entwickeln und
+2. danach die Parameter so zu wählen, dass der Algorithmus in einer akzeptablen Zeit eine gute Lösung findet.
 
 
 
@@ -352,9 +326,9 @@ SEND+MORE=MONEY\ [#]_
 SEND+MORE=MONEY - Umsetzung
 ----------------------------------------------------------
 
-.. stack::
+.. deck::
 
-    .. layer::
+    .. card::
 
         .. rubric:: Chromosomen ermöglichen Zuordnung von Buchstaben zu Ziffern
 
@@ -366,9 +340,9 @@ SEND+MORE=MONEY - Umsetzung
             :header: "Index: ", 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, " "
             :widths: 25, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10
             :width: 100%
-            :class: borderless
+            :align: center
 
-            "letters = \[", "O,", "M,", "Y,", "␣,", "␣,", "E,", "N,", "D,", "R,", "S", "]"
+            "letters = \[", "O", "M", "Y", "␣", "␣", "E", "N", "D", "R", "S", "]"
 
         .. container:: minor smaller line-above
 
@@ -385,19 +359,18 @@ SEND+MORE=MONEY - Umsetzung
 
             Somit kann durch die Verschiebung der Buchstaben in der Liste der assoziierte Wert geändert werden.
 
-    .. layer:: incremental
+    .. card:: 
 
         .. rubric:: Klasse für Chromosomen
 
         .. include:: code/send_more_money.py
             :code: python
             :number-lines:
-            :class: smaller
             :start-after: # class SendMoreMoney(Chromosome)
             :end-before: # The fitness function
 
 
-    .. layer:: incremental
+    .. card:: 
 
         .. rubric:: Erzeugen von Individuen bzw. Chromosomen
 
@@ -406,12 +379,11 @@ SEND+MORE=MONEY - Umsetzung
         .. include:: code/send_more_money.py
             :code: python
             :number-lines:
-            :class: smaller
             :start-after: # random_instance()
             :end-before: # crossover()
 
 
-    .. layer:: incremental
+    .. card::
 
         .. rubric:: Mutation eines Chromosoms
 
@@ -420,30 +392,27 @@ SEND+MORE=MONEY - Umsetzung
         .. include:: code/send_more_money.py
             :code: python
             :number-lines:
-            :class: smaller
             :start-after: # mutate()
             :end-before: # __str__()
 
-    .. layer:: incremental
+    .. card::
 
         .. rubric:: Vererbung
 
         **Idee**: pro Nachkommen sicherstellen, dass einige Buchstaben Indizes (d. h. Wertzuordnungen) von einem Elternteil und einige vom anderen Elternteil stammen.
 
-        .. container:: smaller
+        .. container:: 
 
             **Beispiel** (verkürzt):
 
-            .. container:: smaller
+            ::
 
-                ::
-
-                    Elternteil 1 = [a,b,c,d,e]  # d.h. ein Chromosom
-                    Elternteil 2 = [c,a,b,e,d]  # d.h. ein Chromosom
+                Elternteil 1 = [a,b,c,d,e]  # d.h. ein Chromosom
+                Elternteil 2 = [c,a,b,e,d]  # d.h. ein Chromosom
 
             gewählte Indizes seien: 0 und 2
 
-            .. container:: smaller
+            .. container::
 
                 ::
 
@@ -454,18 +423,17 @@ SEND+MORE=MONEY - Umsetzung
                                                 aber Position von "a" vom 1ten übernommen
                                                 (dadurch Anpassung der Pos. von "c" notw.)
 
-    .. layer:: incremental
+    .. card::
 
         .. rubric:: Vererbung - Implementierung
 
         .. include:: code/send_more_money.py
             :code: python
             :number-lines:
-            :class: slightly-more-smaller
             :start-after: # crossover()
             :end-before: # mutate()
 
-    .. layer:: incremental
+    .. card::
 
         .. rubric:: Fitness-Funktion
 
@@ -474,7 +442,6 @@ SEND+MORE=MONEY - Umsetzung
         .. container:: incremental
 
             .. math::
-                :class: smaller
 
                 \text{minimiere}(|money - (send + more)|)
 
@@ -484,40 +451,37 @@ SEND+MORE=MONEY - Umsetzung
             **Feststellung**: Das Ziel des generischen genetischen Algorithmus ist es, die Fitness-Funktion zu maximieren. Wir müssen somit unser Minimierungsproblem in ein Maximierungsproblem umwandeln:
 
             .. math::
-                :class: smaller
 
                 \text{maximiere}\left(\frac{1} { |money - (send + more)| + 1 }\right)\\
 
-        .. container:: incremental far-smaller
+        .. container:: incremental 
 
             Beispiel: Sei die Differenz :math:`1`, dann ist die Fitness :math:`1/2`; bei einer Differenz von :math:`0` ist die Fitness :math:`1` und somit maximal.
 
-    .. layer:: incremental
+    .. card::
 
         .. rubric:: Fitness-Funktion - Implementierung
 
         .. include:: code/send_more_money.py
             :code: python
             :number-lines:
-            :class: slightly-more-smaller
             :start-after: # fitness()
             :end-before: @classmethod
 
-    .. layer:: incremental
+    .. card::
 
         .. rubric:: Initialisierung
 
         .. include:: code/send_more_money.py
             :code: python
             :number-lines:
-            :class: slightly-more-smaller
             :start-after: if __name__ == "__main__":
 
-    .. layer:: incremental
+    .. card::
 
         .. rubric:: Exemplarische Ausführungen zeigt stochastische Natur
 
-        .. container:: far-far-smaller
+        .. container:: 
 
             *1. Lauf (237 Generationen)*
 
@@ -547,7 +511,7 @@ SEND+MORE=MONEY - Umsetzung
 
 
 
-.. class:: integrated-exercise transition-move-to-top
+.. class:: exercises transition-move-to-top
 
 Übung
 --------------------------------------------------------
@@ -558,7 +522,7 @@ SEND+MORE=MONEY - Umsetzung
 
     Im Template ist eine initiale Aufgabenstellung hinterlegt, die es zu lösen gilt: Verteilung von 16 Studierenden auf 4 Gruppen inkl. Bewertungsmatrix :peripheral:`(jeder Studierende hat jeden anderen mit Werten von 1 bis 10 bewertet)`.
 
-    .. container:: slightly-more-smaller rounded-corners box-shadow padding-1em
+    .. container::
 
         .. rubric:: Basis (Achten Sie auf die Verzeichnisse)
 
@@ -577,7 +541,6 @@ SEND+MORE=MONEY - Umsetzung
         .. include:: code/group_assignment.py
             :code: python
             :number-lines:
-            :class: smaller
 
 .. supplemental::
 
@@ -589,7 +552,7 @@ SEND+MORE=MONEY - Umsetzung
 
 
 
-.. class:: integrated-exercise transition-move-to-top
+.. class:: exercises transition-move-to-top
 
 Übung
 --------------------------------------------------------
@@ -599,12 +562,10 @@ SEND+MORE=MONEY - Umsetzung
     Passen Sie Ihren genetischen Algorithmus aus der vorherigen Übung so an, dass die Gruppen alle in etwa die gleiche Glücklichkeit aufweisen. D. h. eine Zuteilung, bei der die  Gruppenglücklichkeiten z. B. 92 + 91 + 73 + 89 = 345 sind, die aber größere Unterschiede zwischen den Gruppen hat, sollte vermieden werden. Eine Verteilung z. B. mit den Gruppenglücklichkeiten: 80, 84, 80, 80 = 324 sollte bevorzugt werden.
 
     .. hint::
-        :class: smaller
 
         Sie können den bisher errechneten Wert zum Beispiel dadurch anpassen, dass Sie von dem Wert die Summe der absoluten Abweichungen vom Durchschnitt abziehen. Ggf. ist es erforderlich den Wert auch noch zu skalieren, damit steigende Abweichungen stärker ins Gewicht fallen.
 
         Bedenken sie, dass sie ggf. den Threshold anpassen müssen.
-
 
     .. solution::
         :pwd: ist_das_glücklicher?
@@ -616,7 +577,6 @@ SEND+MORE=MONEY - Umsetzung
         .. include:: code/group_assignment_balanced.py
             :code: python
             :number-lines:
-            :class: smaller
             :start-after: # compute_fitness()
             :end-before: def fitness(self)
 
@@ -625,5 +585,4 @@ SEND+MORE=MONEY - Umsetzung
         .. include:: code/group_assignment_balanced.py
             :code: python
             :number-lines:
-            :class: smaller
             :start-after: if __name__ == "__main__":
