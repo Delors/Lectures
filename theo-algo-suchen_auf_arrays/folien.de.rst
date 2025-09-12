@@ -122,11 +122,13 @@ Effizientere Suche bei linearer Verteilung
     .. card::
 
         .. image:: images/lagrange/lin-1.svg
+            :width: 1700px
             :align: center
 
     .. card:: overlay
 
         .. image:: images/lagrange/lin-2.svg
+            :width: 1700px
             :align: center
 
 
@@ -167,21 +169,25 @@ Effizientere Suche bei exponentieller Verteilung
     .. card::
 
         .. image:: images/lagrange/expo-1.svg
+            :width: 1700px
             :align: center
 
     .. card::  overlay
 
         .. image:: images/lagrange/expo-2.svg
+            :width: 1700px
             :align: center
 
     .. card::  overlay
 
         .. image:: images/lagrange/expo-3.svg
+            :width: 1700px
             :align: center
 
     .. card::  overlay
 
         .. image:: images/lagrange/expo-4-quadratic-approx.svg
+            :width: 1700px
             :align: center
 
 
