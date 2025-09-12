@@ -72,7 +72,7 @@ Literatur
 
 - Bzgl. Dokumentenmanagement:
 
-  .. image:: images/dokumentenmanagement.jpg
+  .. image:: images/dokumentenmanagement.webp
         :class: trbl-box-shadow-dark
 
 - weitere bzgl. der IT sicherheitsrelevanten Aspekte: Verschlüsselungsverfahren und Signaturen
@@ -368,7 +368,7 @@ Struktur eines Dokumentes
 Dokumente annotieren
 --------------------------------
 
-.. image:: images/dokument_mit_anmerkungen.png
+.. image:: images/dokument_mit_anmerkungen.webp
     :class: trbl-box-shadow-dark
     :align: center
 
