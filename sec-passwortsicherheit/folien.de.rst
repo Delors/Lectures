@@ -1357,6 +1357,7 @@ Wörterbuchgenerierung - Evaluation von Werkzeugen
 
 .. image:: passwortwiederherstellung-evaluation.webp
     :alt: Evaluation verschiedener Ansätze für die Passwortevaluation
+    :height: 1000
     :align: center
 
 
