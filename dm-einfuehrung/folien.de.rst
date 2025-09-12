@@ -159,7 +159,7 @@ Digitalisierung - ein langwieriger nicht-aufzuhaltender Prozess...
 Digitalisierung - ein Prozess mit Stilblüten...
 -------------------------------------------------
 
-.. image:: images/sparkasse-verschickt-usb-sticks.2024-03-03.png
+.. image:: images/sparkasse-verschickt-usb-sticks.2024-03-03.webp
     :class: trbl-box-shadow-dark
     :align: center
 
