@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+    "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg
+    version="1.1"
+    xmlns="http://www.w3.org/2000/svg"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:xl="http://www.w3.org/1999/xlink"
+    viewBox="51 7 347 214"
+    width="1041"
+    height="642"
+>
+  <style>
+    @import url('/LectureDoc2/ext/fonts/ld-fonts.css');
+  </style>
+  <defs>
+    <filter id="Shadow" filterUnits="userSpaceOnUse" x="16.3" y="-14.4">
+      <feGaussianBlur in="SourceAlpha" result="blur" stdDeviation="1.308" />
+      <feOffset in="blur" result="offset" dx="0" dy="3" />
+      <feFlood flood-color="black" flood-opacity=".5" result="flood" />
+      <feComposite in="flood" in2="offset" operator="in" result="color" />
+      <feMerge>
+        <feMergeNode in="color" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+    <marker
+            orient="auto"
+            overflow="visible"
+            markerUnits="strokeWidth"
+            id="StickArrow_Marker"
+            stroke-linejoin="miter"
+            stroke-miterlimit="10"
+            viewBox="-1 -4 10 8"
+            markerWidth="10"
+            markerHeight="8"
+            color="black"
+        >
+      <g>
+        <path
+                    d="M 8 0 L 0 0 M 0 -3 L 8 0 L 0 3"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1"
+                />
+      </g>
+    </marker>
+  </defs>
+  <metadata> Produced by OmniGraffle 8.0\n2025-03-23 13:11:40 +0000</metadata>
+  <g
+        id="orchestrierte-saga"
+        stroke-dasharray="none"
+        stroke-opacity="1"
+        fill-opacity="1"
+        fill="none"
+        stroke="none"
+    >
+    <title>orchestrierte-saga</title>
+    <g id="orchestrierte-saga_Layer_1">
+      <title>Layer 1</title>
+      <g id="Graphic_78" filter="url(#Shadow)">
+        <path
+                    d="M 54.69043 40.5 L 89.69043 8 L 159.69043 8 L 194.69043 40.5 L 159.69043 73 L 89.69043 73 Z"
+                    fill="white"
+                />
+        <path
+                    d="M 54.69043 40.5 L 89.69043 8 L 159.69043 8 L 194.69043 40.5 L 159.69043 73 L 89.69043 73 Z"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
+        <text transform="translate(91.69043 21.5)" fill="black">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="14"
+                        font-weight="400"
+                        fill="black"
+                        x="1.052"
+                        y="15"
+                    >Warenver-</tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="14"
+                        font-weight="400"
+                        fill="black"
+                        x="7.73"
+                        y="34"
+                    >waltung</tspan>
+        </text>
+      </g>
+      <g id="Graphic_79" filter="url(#Shadow)">
+        <path
+                    d="M 253.69043 40.5 L 288.69043 8 L 358.69043 8 L 393.69043 40.5 L 358.69043 73 L 288.69043 73 Z"
+                    fill="white"
+                />
+        <path
+                    d="M 253.69043 40.5 L 288.69043 8 L 358.69043 8 L 393.69043 40.5 L 358.69043 73 L 288.69043 73 Z"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
+        <text transform="translate(290.69043 21.5)" fill="black">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="14"
+                        font-weight="400"
+                        fill="black"
+                        x="2.2"
+                        y="15"
+                    >Zahlungs-</tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="14"
+                        font-weight="400"
+                        fill="black"
+                        x="6.183"
+                        y="34"
+                    >Gateway</tspan>
+        </text>
+      </g>
+      <g id="Graphic_80" filter="url(#Shadow)">
+        <path
+                    d="M 253.69043 181.5 L 288.69043 149 L 358.69043 149 L 393.69043 181.5 L 358.69043 214 L 288.69043 214 Z"
+                    fill="white"
+                />
+        <path
+                    d="M 253.69043 181.5 L 288.69043 149 L 358.69043 149 L 393.69043 181.5 L 358.69043 214 L 288.69043 214 Z"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
+        <text transform="translate(290.69043 162.5)" fill="black">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="14"
+                        font-weight="400"
+                        fill="black"
+                        x="6.75"
+                        y="15"
+                    >Kunden-</tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="14"
+                        font-weight="400"
+                        fill="black"
+                        x="13.624"
+                        y="34"
+                    >bonus</tspan>
+        </text>
+      </g>
+      <g id="Graphic_81" filter="url(#Shadow)">
+        <path
+                    d="M 54.69043 181.5 L 89.69043 149 L 159.69043 149 L 194.69043 181.5 L 159.69043 214 L 89.69043 214 Z"
+                    fill="#e2e2e2"
+                />
+        <path
+                    d="M 54.69043 181.5 L 89.69043 149 L 159.69043 149 L 194.69043 181.5 L 159.69043 214 L 89.69043 214 Z"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
+        <text transform="translate(91.69043 153)" fill="black">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="14"
+                        font-weight="400"
+                        fill="black"
+                        x=".03"
+                        y="15"
+                    >Bestellung</tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="14"
+                        font-style="italic"
+                        font-weight="400"
+                        fill="black"
+                        x="6.715"
+                        y="34"
+                    >&lt;Orches-</tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="14"
+                        font-style="italic"
+                        font-weight="400"
+                        fill="black"
+                        x="5.021"
+                        y="53"
+                    >trierung&gt;</tspan>
+        </text>
+      </g>
+      <g id="Line_82">
+        <line
+                    x1="164.1776"
+                    y1="153.16667"
+                    x2="164.1776"
+                    y2="78.73333"
+                    marker-end="url(#StickArrow_Marker)"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
+      </g>
+      <g id="Line_83">
+        <line
+                    x1="85.20325"
+                    y1="153.16667"
+                    x2="85.20325"
+                    y2="78.73333"
+                    marker-end="url(#StickArrow_Marker)"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
+      </g>
+      <g id="Line_84">
+        <line
+                    x1="171.3571"
+                    y1="159.83333"
+                    x2="269.7536"
+                    y2="68.8864"
+                    marker-end="url(#StickArrow_Marker)"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
+      </g>
+      <g id="Line_85">
+        <line
+                    x1="194.69043"
+                    y1="181.5"
+                    x2="243.79043"
+                    y2="181.5"
+                    marker-end="url(#StickArrow_Marker)"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
+      </g>
+      <g id="Graphic_86">
+        <text transform="translate(73.96577 112.6576)" fill="black">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="12"
+                        font-weight="400"
+                        fill="black"
+                        x="0"
+                        y="11"
+                    >1. reserviere</tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="12"
+                        font-weight="400"
+                        fill="black"
+                        x="12.667969"
+                        y="25"
+                    >Produkt</tspan>
+        </text>
+      </g>
+      <g id="Graphic_87">
+        <text transform="translate(132.08466 82.69306)" fill="black">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="12"
+                        font-weight="400"
+                        fill="black"
+                        x="1.6669922"
+                        y="11"
+                    >4. sende </tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="12"
+                        font-weight="400"
+                        fill="black"
+                        x="2.6748047"
+                        y="25"
+                    >    Paket</tspan>
+        </text>
+      </g>
+      <g id="Graphic_88">
+        <text transform="translate(194.04575 167.5)" fill="black">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="12"
+                        font-weight="400"
+                        fill="black"
+                        x="0"
+                        y="11"
+                    >3. schreibe</tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="12"
+                        font-weight="400"
+                        fill="black"
+                        x="2.3291016"
+                        y="25"
+                    >Bonus gut</tspan>
+        </text>
+      </g>
+      <g id="Graphic_89">
+        <text transform="translate(225.38107 110.75)" fill="black">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="12"
+                        font-weight="400"
+                        fill="black"
+                        x="0"
+                        y="11"
+                    >2. buche ab</tspan>
+        </text>
+      </g>
+    </g>
+  </g>
+</svg>

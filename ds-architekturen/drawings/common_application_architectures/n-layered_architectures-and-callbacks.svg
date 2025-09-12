@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+    "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg
+    version="1.1"
+    xmlns="http://www.w3.org/2000/svg"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:xl="http://www.w3.org/1999/xlink"
+    viewBox="151 215 126 274"
+    width="378"
+    height="822"
+>
+  <style>
+    @import url('/LectureDoc2/ext/fonts/ld-fonts.css');
+  </style>
+  <defs>
+    <filter id="Shadow" filterUnits="userSpaceOnUse" x="138.4" y="187.6">
+      <feGaussianBlur in="SourceAlpha" result="blur" stdDeviation=".872" />
+      <feOffset in="blur" result="offset" dx="2" dy="2" />
+      <feFlood flood-color="black" flood-opacity=".5" result="flood" />
+      <feComposite in="flood" in2="offset" operator="in" />
+    </filter>
+    <marker
+            orient="auto"
+            overflow="visible"
+            markerUnits="strokeWidth"
+            id="FilledArrow_Marker"
+            stroke-linejoin="miter"
+            stroke-miterlimit="10"
+            viewBox="-1 -3 7 6"
+            markerWidth="7"
+            markerHeight="6"
+            color="black"
+        >
+      <g>
+        <path
+                    d="M 4.8 0 L 0 -1.8 L 0 1.8 Z"
+                    fill="currentColor"
+                    stroke="currentColor"
+                    stroke-width="1"
+                />
+      </g>
+    </marker>
+    <marker
+            orient="auto"
+            overflow="visible"
+            markerUnits="strokeWidth"
+            id="FilledBox_Marker"
+            stroke-linejoin="miter"
+            stroke-miterlimit="10"
+            viewBox="-5 -3 6 6"
+            markerWidth="6"
+            markerHeight="6"
+            color="black"
+        >
+      <g>
+        <rect
+                    x="-3.6"
+                    y="-1.8"
+                    width="3.6"
+                    height="3.6"
+                    fill="currentColor"
+                    stroke="currentColor"
+                    stroke-width="1"
+                />
+      </g>
+    </marker>
+  </defs>
+  <metadata> Produced by OmniGraffle 8.0\n2025-03-23 12:10:54 +0000</metadata>
+  <g
+        id="n-layered_architectures-and-callbacks"
+        stroke-dasharray="none"
+        stroke-opacity="1"
+        fill-opacity="1"
+        fill="none"
+        stroke="none"
+    >
+    <title>n-layered_architectures-and-callbacks</title>
+    <g id="n-layered_architectures-and-callbacks_Layer_1">
+      <title>Layer 1</title>
+      <g id="Graphic_2_shadow" filter="url(#Shadow)">
+        <path
+                    d="M 157 216 L 267 216 C 269.76142 216 272 218.23858 272 221 L 272 241 C 272 243.76142 269.76142 246 267 246 L 157 246 C 154.23858 246 152 243.76142 152 241 L 152 221 C 152 218.23858 154.23858 216 157 216 Z"
+                    fill="white"
+                />
+        <path
+                    d="M 157 216 L 267 216 C 269.76142 216 272 218.23858 272 221 L 272 241 C 272 243.76142 269.76142 246 267 246 L 157 246 C 154.23858 246 152 243.76142 152 241 L 152 221 C 152 218.23858 154.23858 216 157 216 Z"
+                    stroke="#a5a5a5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
+      </g>
+      <g id="Graphic_3_shadow" filter="url(#Shadow)">
+        <path
+                    d="M 157 272 L 267 272 C 269.76142 272 272 274.23858 272 277 L 272 297 C 272 299.76142 269.76142 302 267 302 L 157 302 C 154.23858 302 152 299.76142 152 297 L 152 277 C 152 274.23858 154.23858 272 157 272 Z"
+                    fill="white"
+                />
+        <path
+                    d="M 157 272 L 267 272 C 269.76142 272 272 274.23858 272 277 L 272 297 C 272 299.76142 269.76142 302 267 302 L 157 302 C 154.23858 302 152 299.76142 152 297 L 152 277 C 152 274.23858 154.23858 272 157 272 Z"
+                    stroke="#a5a5a5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
+      </g>
+      <g id="Graphic_4_shadow" filter="url(#Shadow)">
+        <path
+                    d="M 157 424 L 267 424 C 269.76142 424 272 426.2386 272 429 L 272 449 C 272 451.7614 269.76142 454 267 454 L 157 454 C 154.23858 454 152 451.7614 152 449 L 152 429 C 152 426.2386 154.23858 424 157 424 Z"
+                    fill="white"
+                />
+        <path
+                    d="M 157 424 L 267 424 C 269.76142 424 272 426.2386 272 429 L 272 449 C 272 451.7614 269.76142 454 267 454 L 157 454 C 154.23858 454 152 451.7614 152 449 L 152 429 C 152 426.2386 154.23858 424 157 424 Z"
+                    stroke="#a5a5a5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
+      </g>
+      <g id="Graphic_2">
+        <path
+                    d="M 157 216 L 267 216 C 269.76142 216 272 218.23858 272 221 L 272 241 C 272 243.76142 269.76142 246 267 246 L 157 246 C 154.23858 246 152 243.76142 152 241 L 152 221 C 152 218.23858 154.23858 216 157 216 Z"
+                    fill="white"
+                />
+        <path
+                    d="M 157 216 L 267 216 C 269.76142 216 272 218.23858 272 221 L 272 241 C 272 243.76142 269.76142 246 267 246 L 157 246 C 154.23858 246 152 243.76142 152 241 L 152 221 C 152 218.23858 154.23858 216 157 216 Z"
+                    stroke="#a5a5a5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
+        <text transform="translate(157 221.5)" fill="black">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="14"
+                        font-weight="400"
+                        fill="black"
+                        x="25.971"
+                        y="15"
+                        xml:space="preserve"
+                    >Schicht N</tspan>
+        </text>
+      </g>
+      <g id="Graphic_3">
+        <path
+                    d="M 157 272 L 267 272 C 269.76142 272 272 274.23858 272 277 L 272 297 C 272 299.76142 269.76142 302 267 302 L 157 302 C 154.23858 302 152 299.76142 152 297 L 152 277 C 152 274.23858 154.23858 272 157 272 Z"
+                    fill="white"
+                />
+        <path
+                    d="M 157 272 L 267 272 C 269.76142 272 272 274.23858 272 277 L 272 297 C 272 299.76142 269.76142 302 267 302 L 157 302 C 154.23858 302 152 299.76142 152 297 L 152 277 C 152 274.23858 154.23858 272 157 272 Z"
+                    stroke="#a5a5a5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
+        <text transform="translate(157 277.5)" fill="black">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="14"
+                        font-weight="400"
+                        fill="black"
+                        x="20.091"
+                        y="15"
+                        xml:space="preserve"
+                    >Schicht N-1</tspan>
+        </text>
+      </g>
+      <g id="Graphic_4">
+        <path
+                    d="M 157 424 L 267 424 C 269.76142 424 272 426.2386 272 429 L 272 449 C 272 451.7614 269.76142 454 267 454 L 157 454 C 154.23858 454 152 451.7614 152 449 L 152 429 C 152 426.2386 154.23858 424 157 424 Z"
+                    fill="white"
+                />
+        <path
+                    d="M 157 424 L 267 424 C 269.76142 424 272 426.2386 272 429 L 272 449 C 272 451.7614 269.76142 454 267 454 L 157 454 C 154.23858 454 152 451.7614 152 449 L 152 429 C 152 426.2386 154.23858 424 157 424 Z"
+                    stroke="#a5a5a5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
+        <text transform="translate(157 429.5)" fill="black">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="14"
+                        font-weight="400"
+                        fill="black"
+                        x="20.091"
+                        y="15"
+                        xml:space="preserve"
+                    >Schicht N-2</tspan>
+        </text>
+      </g>
+      <g id="Line_6">
+        <line
+                    x1="212"
+                    y1="254.2"
+                    x2="212"
+                    y2="259.1"
+                    marker-end="url(#FilledArrow_Marker)"
+                    marker-start="url(#FilledBox_Marker)"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                />
+      </g>
+      <g id="Line_7">
+        <line
+                    x1="172"
+                    y1="310.2"
+                    x2="172"
+                    y2="411.1"
+                    marker-end="url(#FilledArrow_Marker)"
+                    marker-start="url(#FilledBox_Marker)"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                />
+      </g>
+      <g id="Line_8">
+        <line
+                    x1="212"
+                    y1="462.2"
+                    x2="212"
+                    y2="475.1"
+                    marker-end="url(#FilledArrow_Marker)"
+                    marker-start="url(#FilledBox_Marker)"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                />
+      </g>
+      <g id="Line_20">
+        <line
+                    x1="232"
+                    y1="302"
+                    x2="232"
+                    y2="411.1"
+                    marker-end="url(#FilledArrow_Marker)"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                />
+      </g>
+      <g id="Line_21">
+        <line
+                    x1="252"
+                    y1="424"
+                    x2="252"
+                    y2="314.9"
+                    marker-end="url(#FilledArrow_Marker)"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                />
+      </g>
+      <g id="Graphic_22">
+        <text transform="translate(213 385.38) rotate(-90)" fill="black">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="14"
+                        font-weight="400"
+                        fill="black"
+                        x="0"
+                        y="15"
+                        xml:space="preserve"
+                    >Handle</tspan>
+        </text>
+      </g>
+      <g id="Graphic_24">
+        <text transform="translate(272 341) rotate(90)" fill="black">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="14"
+                        font-weight="400"
+                        fill="black"
+                        x="0"
+                        y="15"
+                        xml:space="preserve"
+                    >Callback</tspan>
+        </text>
+      </g>
+    </g>
+  </g>
+</svg>
