@@ -1,102 +1,276 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg version="1.1" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xl="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" viewBox="186.5 537 342.5 178.5" width="400" height="208">
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+    "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg
+    version="1.1"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:xl="http://www.w3.org/1999/xlink"
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="186.5 537 342.5 178.5"
+    width="1026"
+    height="534"
+>
   <defs>
     <linearGradient x1="0" x2="1" id="Gradient" gradientUnits="userSpaceOnUse">
-      <stop offset=".06608318" stop-color="#ec003f"/>
-      <stop offset=".5011474" stop-color="#969034"/>
-      <stop offset="1" stop-color="#00ff28"/>
+      <stop offset=".06608318" stop-color="#ec003f" />
+      <stop offset=".5011474" stop-color="#969034" />
+      <stop offset="1" stop-color="#00ff28" />
     </linearGradient>
-    <linearGradient id="Obj_Gradient" xl:href="#Gradient" gradientTransform="translate(325 582) rotate(90) scale(122.75)"/>
+    <linearGradient
+            id="Obj_Gradient"
+            xl:href="#Gradient"
+            gradientTransform="translate(325 582) rotate(90) scale(122.75)"
+        />
     <linearGradient x1="0" x2="1" id="Gradient_2" gradientUnits="userSpaceOnUse">
-      <stop offset="0" stop-color="#ebf5b2" stop-opacity="0"/>
-      <stop offset="1" stop-color="#0f3" stop-opacity=".7958396"/>
+      <stop offset="0" stop-color="#ebf5b2" stop-opacity="0" />
+      <stop offset="1" stop-color="#0f3" stop-opacity=".7958396" />
     </linearGradient>
-    <linearGradient id="Obj_Gradient_2" xl:href="#Gradient_2" gradientTransform="translate(325 635) rotate(90) scale(41)"/>
+    <linearGradient
+            id="Obj_Gradient_2"
+            xl:href="#Gradient_2"
+            gradientTransform="translate(325 635) rotate(90) scale(41)"
+        />
     <linearGradient x1="0" x2="1" id="Gradient_3" gradientUnits="userSpaceOnUse">
-      <stop offset=".013965578" stop-color="#0f3" stop-opacity=".8"/>
-      <stop offset="1" stop-color="#0f3"/>
+      <stop offset=".013965578" stop-color="#0f3" stop-opacity=".8" />
+      <stop offset="1" stop-color="#0f3" />
     </linearGradient>
-    <linearGradient id="Obj_Gradient_3" xl:href="#Gradient_3" gradientTransform="translate(325 676) rotate(90) scale(28)"/>
-    <marker orient="auto" overflow="visible" markerUnits="strokeWidth" id="FilledArrow_Marker" stroke-linejoin="miter" stroke-miterlimit="10" viewBox="-1 -4 10 8" markerWidth="10" markerHeight="8" color="black">
+    <linearGradient
+            id="Obj_Gradient_3"
+            xl:href="#Gradient_3"
+            gradientTransform="translate(325 676) rotate(90) scale(28)"
+        />
+    <marker
+            orient="auto"
+            overflow="visible"
+            markerUnits="strokeWidth"
+            id="FilledArrow_Marker"
+            stroke-linejoin="miter"
+            stroke-miterlimit="10"
+            viewBox="-1 -4 10 8"
+            markerWidth="10"
+            markerHeight="8"
+            color="black"
+        >
       <g>
-        <path d="M 8 0 L 0 -3 L 0 3 Z" fill="currentColor" stroke="currentColor" stroke-width="1"/>
+        <path
+                    d="M 8 0 L 0 -3 L 0 3 Z"
+                    fill="currentColor"
+                    stroke="currentColor"
+                    stroke-width="1"
+                />
       </g>
     </marker>
-    <font-face font-family="Helvetica" font-size="10" units-per-em="1000" underline-position="-75.68359" underline-thickness="49.316406" slope="0" x-height="522.9492" cap-height="717.28516" ascent="770.0195" descent="-229.98047" font-weight="400">
+    <font-face
+            font-family="Helvetica"
+            font-size="10"
+            units-per-em="1000"
+            underline-position="-75.68359"
+            underline-thickness="49.316406"
+            slope="0"
+            x-height="522.9492"
+            cap-height="717.28516"
+            ascent="770.0195"
+            descent="-229.98047"
+            font-weight="400"
+        >
       <font-face-src>
-        <font-face-name name="Helvetica"/>
+        <font-face-name name="Helvetica" />
       </font-face-src>
     </font-face>
   </defs>
   <metadata> Produced by OmniGraffle 8.0\n2023-11-14 10:38:40 +0000</metadata>
-  <g id="arbeitslastverteilung" stroke-opacity="1" stroke-dasharray="none" stroke="none" fill-opacity="1" fill="none">
+  <g
+        id="arbeitslastverteilung"
+        stroke-opacity="1"
+        stroke-dasharray="none"
+        stroke="none"
+        fill-opacity="1"
+        fill="none"
+    >
     <title>arbeitslastverteilung</title>
-    <rect fill="white" x="186.5" y="537" width="342.5" height="178.5"/>
+    <rect fill="white" x="186.5" y="537" width="342.5" height="178.5" />
     <g id="arbeitslastverteilung_Layer_1">
       <title>Layer 1</title>
       <g id="Graphic_9">
-        <path d="M 293 704.75 L 357 704.75 L 374 704.75 L 454 704.75 L 454 582 C 454 582 445.8316 621.0136 415.2 657.1725 C 399.5902 675.599 384.7759 687.6007 374 694.9405 L 374 582 C 374 582 365.8316 621.0136 335.2 657.1725 C 319.10156 676.1758 303.84918 688.3458 293 695.6162 L 293 582 C 293 582 284.83158 621.0136 254.2 657.1725 C 223.56842 693.3314 196 704.75 196 704.75 L 277 704.75 Z" fill="url(#Obj_Gradient)"/>
+        <path
+                    d="M 293 704.75 L 357 704.75 L 374 704.75 L 454 704.75 L 454 582 C 454 582 445.8316 621.0136 415.2 657.1725 C 399.5902 675.599 384.7759 687.6007 374 694.9405 L 374 582 C 374 582 365.8316 621.0136 335.2 657.1725 C 319.10156 676.1758 303.84918 688.3458 293 695.6162 L 293 582 C 293 582 284.83158 621.0136 254.2 657.1725 C 223.56842 693.3314 196 704.75 196 704.75 L 277 704.75 Z"
+                    fill="url(#Obj_Gradient)"
+                />
       </g>
       <g id="Graphic_10">
-        <rect x="196" y="635" width="258" height="41" fill="url(#Obj_Gradient_2)"/>
+        <rect x="196" y="635" width="258" height="41" fill="url(#Obj_Gradient_2)" />
       </g>
       <g id="Graphic_13">
-        <rect x="196" y="676" width="258" height="28" fill="url(#Obj_Gradient_3)"/>
+        <rect x="196" y="676" width="258" height="28" fill="url(#Obj_Gradient_3)" />
       </g>
       <g id="Line_14">
-        <line x1="196" y1="662" x2="481" y2="662" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <line
+                    x1="196"
+                    y1="662"
+                    x2="481"
+                    y2="662"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
       </g>
       <g id="Line_2">
-        <line x1="196" y1="715" x2="196" y2="568.9" marker-end="url(#FilledArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <line
+                    x1="196"
+                    y1="715"
+                    x2="196"
+                    y2="568.9"
+                    marker-end="url(#FilledArrow_Marker)"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
       </g>
       <g id="Line_5">
-        <line x1="187" y1="705" x2="482.1" y2="705" marker-end="url(#FilledArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <line
+                    x1="187"
+                    y1="705"
+                    x2="482.1"
+                    y2="705"
+                    marker-end="url(#FilledArrow_Marker)"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
       </g>
       <g id="Graphic_16">
         <text transform="translate(192 542)" fill="black">
-          <tspan font-family="Helvetica" font-size="10" font-weight="400" fill="black" x="14.657715" y="10">Arbeitslast</tspan>
+          <tspan
+                        font-family="Helvetica"
+                        font-size="10"
+                        font-weight="400"
+                        fill="black"
+                        x="14.657715"
+                        y="10"
+                    >Arbeitslast</tspan>
         </text>
       </g>
       <g id="Graphic_17">
         <text transform="translate(465 678)" fill="black">
-          <tspan font-family="Helvetica" font-size="10" font-weight="400" fill="black" x=".70458984" y="10">nachhaltig</tspan>
+          <tspan
+                        font-family="Helvetica"
+                        font-size="10"
+                        font-weight="400"
+                        fill="black"
+                        x=".70458984"
+                        y="10"
+                    >nachhaltig</tspan>
         </text>
       </g>
       <g id="Graphic_18">
         <text transform="translate(417 564)" fill="black">
-          <tspan font-family="Helvetica" font-size="10" font-weight="400" fill="black" x="19.655273" y="10">Release</tspan>
+          <tspan
+                        font-family="Helvetica"
+                        font-size="10"
+                        font-weight="400"
+                        fill="black"
+                        x="19.655273"
+                        y="10"
+                    >Release</tspan>
         </text>
       </g>
       <g id="Graphic_19">
         <text transform="translate(339 564)" fill="black">
-          <tspan font-family="Helvetica" font-size="10" font-weight="400" fill="black" x="31.0542" y="10">M2</tspan>
+          <tspan
+                        font-family="Helvetica"
+                        font-size="10"
+                        font-weight="400"
+                        fill="black"
+                        x="31.0542"
+                        y="10"
+                    >M2</tspan>
         </text>
       </g>
       <g id="Graphic_20">
         <text transform="translate(253 564)" fill="black">
-          <tspan font-family="Helvetica" font-size="10" font-weight="400" fill="black" x="31.0542" y="10">M1</tspan>
+          <tspan
+                        font-family="Helvetica"
+                        font-size="10"
+                        font-weight="400"
+                        fill="black"
+                        x="31.0542"
+                        y="10"
+                    >M1</tspan>
         </text>
       </g>
       <g id="Graphic_21">
         <text transform="translate(465 605)" fill="black">
-          <tspan font-family="Helvetica" font-size="10" font-weight="400" fill="black" x="12.938477" y="10">nicht</tspan>
-          <tspan font-family="Helvetica" font-size="10" font-weight="400" fill="black" x=".70458984" y="22">nachhaltig</tspan>
+          <tspan
+                        font-family="Helvetica"
+                        font-size="10"
+                        font-weight="400"
+                        fill="black"
+                        x="12.938477"
+                        y="10"
+                    >nicht</tspan>
+          <tspan
+                        font-family="Helvetica"
+                        font-size="10"
+                        font-weight="400"
+                        fill="black"
+                        x=".70458984"
+                        y="22"
+                    >nachhaltig</tspan>
         </text>
       </g>
       <g id="Graphic_22">
         <text transform="translate(477 698)" fill="black">
-          <tspan font-family="Helvetica" font-size="10" font-weight="400" fill="black" x="15.165039" y="10">Zeit</tspan>
+          <tspan
+                        font-family="Helvetica"
+                        font-size="10"
+                        font-weight="400"
+                        fill="black"
+                        x="15.165039"
+                        y="10"
+                    >Zeit</tspan>
         </text>
       </g>
       <g id="Line_23">
-        <line x1="293" y1="574" x2="293" y2="704" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4.0,4.0" stroke-width="1"/>
+        <line
+                    x1="293"
+                    y1="574"
+                    x2="293"
+                    y2="704"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-dasharray="4.0,4.0"
+                    stroke-width="1"
+                />
       </g>
       <g id="Line_24">
-        <line x1="374.5" y1="574" x2="374.5" y2="704" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4.0,4.0" stroke-width="1"/>
+        <line
+                    x1="374.5"
+                    y1="574"
+                    x2="374.5"
+                    y2="704"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-dasharray="4.0,4.0"
+                    stroke-width="1"
+                />
       </g>
       <g id="Line_25">
-        <line x1="454" y1="574" x2="454" y2="704" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4.0,4.0" stroke-width="1"/>
+        <line
+                    x1="454"
+                    y1="574"
+                    x2="454"
+                    y2="704"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-dasharray="4.0,4.0"
+                    stroke-width="1"
+                />
       </g>
     </g>
   </g>

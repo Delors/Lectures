@@ -1,438 +1,1130 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg version="1.1" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xl="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" viewBox="63.5 15 698.5 727.6304" width="360" height="375">
-  <defs>
-    <font-face font-family="Helvetica" font-size="16" panose-1="2 11 4 3 2 2 2 2 2 4" units-per-em="1000" underline-position="-75" underline-thickness="50" slope="0" x-height="524" cap-height="718" ascent="770.0043" descent="-229.99573" font-weight="300">
-      <font-face-src>
-        <font-face-name name="Helvetica-Light"/>
-      </font-face-src>
-    </font-face>
-    <font-face font-family="Helvetica" font-size="12" units-per-em="1000" underline-position="-75.68359" underline-thickness="49.316406" slope="0" x-height="522.9492" cap-height="717.28516" ascent="770.0195" descent="-229.98047" font-weight="400">
-      <font-face-src>
-        <font-face-name name="Helvetica"/>
-      </font-face-src>
-    </font-face>
-  </defs>
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+    "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg
+    version="1.1"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:xl="http://www.w3.org/1999/xlink"
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="63.5 15 698.5 727.6304"
+    width="1094"
+    height="1140"
+>
+    <style>
+    @import url('/LectureDoc2/ext/fonts/ld-fonts.css');
+  </style>
   <metadata> Produced by OmniGraffle 8.0\n2023-11-14 13:30:24 +0000</metadata>
-  <g id="software_quality_properties_iso_9126" stroke-opacity="1" stroke-dasharray="none" stroke="none" fill-opacity="1" fill="none">
+  <g
+        id="software_quality_properties_iso_9126"
+        stroke-opacity="1"
+        stroke-dasharray="none"
+        stroke="none"
+        fill-opacity="1"
+        fill="none"
+    >
     <title>software_quality_properties_iso_9126</title>
-    <rect fill="white" x="63.5" y="15" width="698.5" height="727.6304"/>
+    <rect fill="white" x="63.5" y="15" width="698.5" height="727.6304" />
     <g id="software_quality_properties_iso_9126_Layer_1">
       <title>Layer 1</title>
       <g id="Line_32">
-        <path d="M 635.5 512.36957 L 658.5 512.36957 L 665.5 512.36957" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <path
+                    d="M 635.5 512.36957 L 658.5 512.36957 L 665.5 512.36957"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
       </g>
       <g id="Line_35">
-        <line x1="605.5" y1="408.36957" x2="665.5" y2="408.36957" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <line
+                    x1="605.5"
+                    y1="408.36957"
+                    x2="665.5"
+                    y2="408.36957"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
       </g>
       <g id="Line_37">
-        <path d="M 635.5 336.36957 L 658.5 336.36957 L 665.5 336.36957" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <path
+                    d="M 635.5 336.36957 L 658.5 336.36957 L 665.5 336.36957"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
       </g>
       <g id="Line_38">
-        <path d="M 635.5 304.36957 L 658.5 304.36957 L 665.5 304.36957" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <path
+                    d="M 635.5 304.36957 L 658.5 304.36957 L 665.5 304.36957"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
       </g>
       <g id="Line_41">
-        <path d="M 635.5 192.36957 L 658.5 192.36957 L 665.5 192.36957" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <path
+                    d="M 635.5 192.36957 L 658.5 192.36957 L 665.5 192.36957"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
       </g>
       <g id="Line_44">
-        <path d="M 635.5 80.36957 L 658.5 80.36957 L 665.5 80.36957" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <path
+                    d="M 635.5 80.36957 L 658.5 80.36957 L 665.5 80.36957"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
       </g>
       <g id="Line_45">
-        <path d="M 635.5 48.369565 L 658.5 48.369565 L 665.5 48.369565" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <path
+                    d="M 635.5 48.369565 L 658.5 48.369565 L 665.5 48.369565"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
       </g>
       <g id="Line_49">
-        <path d="M 635.5 656.3696 L 658.5 656.3696 L 665.5 656.3696" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <path
+                    d="M 635.5 656.3696 L 658.5 656.3696 L 665.5 656.3696"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
       </g>
       <g id="Line_51">
-        <path d="M 185.0333 437.912 L 185.0333 665.5 L 341.5 665.5" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <path
+                    d="M 185.0333 437.912 L 185.0333 665.5 L 341.5 665.5"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
       </g>
       <g id="Line_52">
-        <path d="M 226.4044 437.7941 L 226.4044 521.5 L 341.5 521.5" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <path
+                    d="M 226.4044 437.7941 L 226.4044 521.5 L 341.5 521.5"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
       </g>
       <g id="Line_53">
-        <path d="M 275.9901 404.2657 L 308.9901 404.2657 L 308.9901 417.5 L 341.5 417.5" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <path
+                    d="M 275.9901 404.2657 L 308.9901 404.2657 L 308.9901 417.5 L 341.5 417.5"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
       </g>
       <g id="Line_54">
-        <path d="M 275.9936 356.0327 L 308.9936 356.0327 L 308.9936 345.5 L 341 345.5" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <path
+                    d="M 275.9936 356.0327 L 308.9936 356.0327 L 308.9936 345.5 L 341 345.5"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
       </g>
       <g id="Line_55">
-        <path d="M 218.1389 317.1857 L 218.1389 217.5 L 341.5 217.5" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <path
+                    d="M 218.1389 317.1857 L 218.1389 217.5 L 341.5 217.5"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
       </g>
       <g id="Line_56">
-        <path d="M 185.0333 317.088 L 185.0333 89.5 L 341.5 89.5" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <path
+                    d="M 185.0333 317.088 L 185.0333 89.5 L 341.5 89.5"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
       </g>
       <g id="Graphic_57">
-        <path d="M 69.5 317.5 L 269.5 317.5 C 272.8137 317.5 275.5 320.1863 275.5 323.5 L 275.5 431.5 C 275.5 434.8137 272.8137 437.5 269.5 437.5 L 69.5 437.5 C 66.18629 437.5 63.5 434.8137 63.5 431.5 L 63.5 323.5 C 63.5 320.1863 66.18629 317.5 69.5 317.5 Z" fill="#040205" fill-opacity=".0965032"/>
+        <path
+                    d="M 69.5 317.5 L 269.5 317.5 C 272.8137 317.5 275.5 320.1863 275.5 323.5 L 275.5 431.5 C 275.5 434.8137 272.8137 437.5 269.5 437.5 L 69.5 437.5 C 66.18629 437.5 63.5 434.8137 63.5 431.5 L 63.5 323.5 C 63.5 320.1863 66.18629 317.5 69.5 317.5 Z"
+                    fill="#040205"
+                    fill-opacity=".0965032"
+                />
       </g>
       <g id="Graphic_59">
         <text transform="translate(78.5 345.5)" fill="black">
-          <tspan font-family="Helvetica" font-size="16" font-weight="300" fill="black" x="0" y="15">Software</tspan>
-          <tspan font-family="Helvetica" font-size="16" font-weight="300" fill="black" x="0" y="34">Qualitätsmerkmale</tspan>
-          <tspan font-family="Helvetica" font-size="16" font-weight="300" fill="black" x="0" y="53">(angelehnt an ISO 9126)</tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="16"
+                        font-weight="300"
+                        fill="black"
+                        x="0"
+                        y="15"
+                    >Software</tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="16"
+                        font-weight="300"
+                        fill="black"
+                        x="0"
+                        y="34"
+                    >Qualitätsmerkmale</tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="16"
+                        font-weight="300"
+                        fill="black"
+                        x="0"
+                        y="53"
+                    >(angelehnt an ISO 9126)</tspan>
         </text>
       </g>
-      <g id="Graphic_60"/>
-      <g id="Graphic_61"/>
+      <g id="Graphic_60" />
+      <g id="Graphic_61" />
       <g id="Graphic_62">
-        <rect x="341.5" y="79.5" width="180" height="20" fill="#f9bab8"/>
+        <rect x="341.5" y="79.5" width="180" height="20" fill="#f9bab8" />
       </g>
       <g id="Graphic_63">
-        <rect x="341.5" y="79.5" width="180" height="20" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <rect
+                    x="341.5"
+                    y="79.5"
+                    width="180"
+                    height="20"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
       </g>
       <g id="Graphic_64">
         <text transform="translate(395.8135 83)" fill="black">
-          <tspan font-family="Helvetica" font-size="12" font-weight="400" fill="black" x="0" y="11">Funktionalität</tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="12"
+                        font-weight="400"
+                        fill="black"
+                        x="0"
+                        y="11"
+                    >Funktionalität</tspan>
         </text>
       </g>
       <g id="Graphic_65">
-        <rect x="581.5" y="15.5" width="180" height="20" fill="#f9bab8"/>
+        <rect x="581.5" y="15.5" width="180" height="20" fill="#f9bab8" />
       </g>
       <g id="Graphic_66">
-        <rect x="581.5" y="15.5" width="180" height="20" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <rect
+                    x="581.5"
+                    y="15.5"
+                    width="180"
+                    height="20"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
       </g>
       <g id="Graphic_67">
         <text transform="translate(691.457 18.869565)" fill="black">
-          <tspan font-family="Helvetica" font-size="12" font-weight="400" fill="black" x="0" y="11">Genauigkeit</tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="12"
+                        font-weight="400"
+                        fill="black"
+                        x="0"
+                        y="11"
+                    >Genauigkeit</tspan>
         </text>
       </g>
       <g id="Graphic_68">
-        <rect x="581.5" y="47.5" width="180" height="20" fill="#f9bab8"/>
+        <rect x="581.5" y="47.5" width="180" height="20" fill="#f9bab8" />
       </g>
       <g id="Graphic_69">
-        <rect x="581.5" y="47.5" width="180" height="20" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <rect
+                    x="581.5"
+                    y="47.5"
+                    width="180"
+                    height="20"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
       </g>
       <g id="Graphic_70">
         <text transform="translate(666.1094 50.869565)" fill="black">
-          <tspan font-family="Helvetica" font-size="12" font-weight="400" fill="black" x="0" y="11">Angemessenheit</tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="12"
+                        font-weight="400"
+                        fill="black"
+                        x="0"
+                        y="11"
+                    >Angemessenheit</tspan>
         </text>
       </g>
       <g id="Graphic_71">
-        <rect x="581.5" y="79.5" width="180" height="20" fill="#f9bab8"/>
+        <rect x="581.5" y="79.5" width="180" height="20" fill="#f9bab8" />
       </g>
       <g id="Graphic_72">
-        <rect x="581.5" y="79.5" width="180" height="20" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <rect
+                    x="581.5"
+                    y="79.5"
+                    width="180"
+                    height="20"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
       </g>
       <g id="Graphic_73">
         <text transform="translate(672.7832 82.86957)" fill="black">
-          <tspan font-family="Helvetica" font-size="12" font-weight="400" fill="black" x="0" y="11">Interoperabilität</tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="12"
+                        font-weight="400"
+                        fill="black"
+                        x="0"
+                        y="11"
+                    >Interoperabilität</tspan>
         </text>
       </g>
       <g id="Graphic_74">
-        <rect x="581.5" y="111.5" width="180" height="20" fill="#f9bab8"/>
+        <rect x="581.5" y="111.5" width="180" height="20" fill="#f9bab8" />
       </g>
       <g id="Graphic_75">
-        <rect x="581.5" y="111.5" width="180" height="20" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <rect
+                    x="581.5"
+                    y="111.5"
+                    width="180"
+                    height="20"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
       </g>
       <g id="Graphic_76">
         <text transform="translate(702.1387 114.86957)" fill="black">
-          <tspan font-family="Helvetica" font-size="12" font-weight="400" fill="black" x="0" y="11">Sicherheit</tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="12"
+                        font-weight="400"
+                        fill="black"
+                        x="0"
+                        y="11"
+                    >Sicherheit</tspan>
         </text>
       </g>
       <g id="Graphic_77">
-        <rect x="341.5" y="207.5" width="180" height="20" fill="#d6fdad"/>
+        <rect x="341.5" y="207.5" width="180" height="20" fill="#d6fdad" />
       </g>
       <g id="Graphic_78">
-        <rect x="341.5" y="207.5" width="180" height="20" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <rect
+                    x="341.5"
+                    y="207.5"
+                    width="180"
+                    height="20"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
       </g>
       <g id="Graphic_79">
         <text transform="translate(391.23633 210.5)" fill="black">
-          <tspan font-family="Helvetica" font-size="12" font-weight="400" fill="black" x="0" y="11">Zuverlässigkeit</tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="12"
+                        font-weight="400"
+                        fill="black"
+                        x="0"
+                        y="11"
+                    >Zuverlässigkeit</tspan>
         </text>
       </g>
       <g id="Graphic_80">
-        <rect x="581.5" y="159.06522" width="180" height="20" fill="#d6fdad"/>
+        <rect x="581.5" y="159.06522" width="180" height="20" fill="#d6fdad" />
       </g>
       <g id="Graphic_81">
-        <rect x="581.5" y="159.5" width="180" height="20" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <rect
+                    x="581.5"
+                    y="159.5"
+                    width="180"
+                    height="20"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
       </g>
-      <g id="Graphic_82"/>
+      <g id="Graphic_82" />
       <g id="Graphic_83">
-        <rect x="581.5" y="191.5" width="180" height="20" fill="#d6fdad"/>
+        <rect x="581.5" y="191.5" width="180" height="20" fill="#d6fdad" />
       </g>
       <g id="Graphic_84">
-        <rect x="581.5" y="191.5" width="180" height="20" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <rect
+                    x="581.5"
+                    y="191.5"
+                    width="180"
+                    height="20"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
       </g>
       <g id="Graphic_85">
         <text transform="translate(678.7949 194.86957)" fill="black">
-          <tspan font-family="Helvetica" font-size="12" font-weight="400" fill="black" x="0" y="11">Fehlertoleranz</tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="12"
+                        font-weight="400"
+                        fill="black"
+                        x="0"
+                        y="11"
+                    >Fehlertoleranz</tspan>
         </text>
       </g>
       <g id="Graphic_86">
-        <rect x="581.5" y="223.5" width="180" height="20" fill="#d6fdad"/>
+        <rect x="581.5" y="223.5" width="180" height="20" fill="#d6fdad" />
       </g>
       <g id="Graphic_87">
-        <rect x="581.5" y="223.5" width="180" height="20" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <rect
+                    x="581.5"
+                    y="223.5"
+                    width="180"
+                    height="20"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
       </g>
       <g id="Graphic_88">
         <text transform="translate(642.78906 226.86957)" fill="black">
-          <tspan font-family="Helvetica" font-size="12" font-weight="400" fill="black" x="0" y="11">Wiederherstellbarkeit</tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="12"
+                        font-weight="400"
+                        fill="black"
+                        x="0"
+                        y="11"
+                    >Wiederherstellbarkeit</tspan>
         </text>
       </g>
       <g id="Graphic_89">
-        <rect x="341.5" y="335.5" width="180" height="20" fill="#ffe"/>
+        <rect x="341.5" y="335.5" width="180" height="20" fill="#ffe" />
       </g>
       <g id="Graphic_90">
-        <rect x="341.5" y="335.5" width="180" height="20" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <rect
+                    x="341.5"
+                    y="335.5"
+                    width="180"
+                    height="20"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
       </g>
       <g id="Graphic_91">
         <text transform="translate(394.5615 339)" fill="black">
-          <tspan font-family="Helvetica" font-size="12" font-weight="400" fill="black" x="0" y="11">Benutzbarkeit</tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="12"
+                        font-weight="400"
+                        fill="black"
+                        x="0"
+                        y="11"
+                    >Benutzbarkeit</tspan>
         </text>
       </g>
       <g id="Graphic_92">
-        <rect x="581.5" y="271.5" width="180" height="20" fill="#ffe"/>
+        <rect x="581.5" y="271.5" width="180" height="20" fill="#ffe" />
       </g>
       <g id="Graphic_93">
-        <rect x="581.5" y="271.5" width="180" height="20" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <rect
+                    x="581.5"
+                    y="271.5"
+                    width="180"
+                    height="20"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
       </g>
       <g id="Graphic_94">
         <text transform="translate(671.11914 274.86957)" fill="black">
-          <tspan font-family="Helvetica" font-size="12" font-weight="400" fill="black" x="0" y="11">Verständlichkeit</tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="12"
+                        font-weight="400"
+                        fill="black"
+                        x="0"
+                        y="11"
+                    >Verständlichkeit</tspan>
         </text>
       </g>
       <g id="Graphic_95">
-        <rect x="581.5" y="303.5" width="180" height="20" fill="#ffe"/>
+        <rect x="581.5" y="303.5" width="180" height="20" fill="#ffe" />
       </g>
       <g id="Graphic_96">
-        <rect x="581.5" y="303.5" width="180" height="20" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <rect
+                    x="581.5"
+                    y="303.5"
+                    width="180"
+                    height="20"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
       </g>
       <g id="Graphic_97">
         <text transform="translate(691.46875 306.86957)" fill="black">
-          <tspan font-family="Helvetica" font-size="12" font-weight="400" fill="black" x="0" y="11">Erlenbarkeit</tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="12"
+                        font-weight="400"
+                        fill="black"
+                        x="0"
+                        y="11"
+                    >Erlenbarkeit</tspan>
         </text>
       </g>
       <g id="Graphic_98">
-        <rect x="581.5" y="335.5" width="180" height="20" fill="#ffe"/>
+        <rect x="581.5" y="335.5" width="180" height="20" fill="#ffe" />
       </g>
       <g id="Graphic_99">
-        <rect x="581.5" y="335.5" width="180" height="20" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <rect
+                    x="581.5"
+                    y="335.5"
+                    width="180"
+                    height="20"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
       </g>
       <g id="Graphic_100">
         <text transform="translate(682.1172 338.86957)" fill="black">
-          <tspan font-family="Helvetica" font-size="12" font-weight="400" fill="black" x="0" y="11">Bedienbarkeit</tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="12"
+                        font-weight="400"
+                        fill="black"
+                        x="0"
+                        y="11"
+                    >Bedienbarkeit</tspan>
         </text>
       </g>
       <g id="Graphic_101">
-        <rect x="581.5" y="367.5" width="180" height="20" fill="#ffe"/>
+        <rect x="581.5" y="367.5" width="180" height="20" fill="#ffe" />
       </g>
       <g id="Graphic_102">
-        <rect x="581.5" y="367.5" width="180" height="20" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <rect
+                    x="581.5"
+                    y="367.5"
+                    width="180"
+                    height="20"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
       </g>
       <g id="Graphic_103">
         <text transform="translate(696.1504 370.86957)" fill="black">
-          <tspan font-family="Helvetica" font-size="12" font-weight="400" fill="black" x="0" y="11">Attraktivität</tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="12"
+                        font-weight="400"
+                        fill="black"
+                        x="0"
+                        y="11"
+                    >Attraktivität</tspan>
         </text>
       </g>
       <g id="Graphic_104">
-        <rect x="341.5" y="407.5" width="180" height="20" fill="#d1e6ff"/>
+        <rect x="341.5" y="407.5" width="180" height="20" fill="#d1e6ff" />
       </g>
       <g id="Graphic_105">
-        <rect x="341.5" y="407.5" width="180" height="20" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <rect
+                    x="341.5"
+                    y="407.5"
+                    width="180"
+                    height="20"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
       </g>
       <g id="Graphic_106">
         <text transform="translate(408.8242 411)" fill="black">
-          <tspan font-family="Helvetica" font-size="12" font-weight="400" fill="black" x="0" y="11">Efﬁzienz</tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="12"
+                        font-weight="400"
+                        fill="black"
+                        x="0"
+                        y="11"
+                    >Efﬁzienz</tspan>
         </text>
       </g>
       <g id="Graphic_107">
-        <rect x="581.5" y="407.5" width="180" height="20" fill="#d1e6ff"/>
+        <rect x="581.5" y="407.5" width="180" height="20" fill="#d1e6ff" />
       </g>
       <g id="Graphic_108">
-        <rect x="581.5" y="407.5" width="180" height="20" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <rect
+                    x="581.5"
+                    y="407.5"
+                    width="180"
+                    height="20"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
       </g>
       <g id="Graphic_109">
         <text transform="translate(686.1309 410.86957)" fill="black">
-          <tspan font-family="Helvetica" font-size="12" font-weight="400" fill="black" x="0" y="11">Zeitverhalten</tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="12"
+                        font-weight="400"
+                        fill="black"
+                        x="0"
+                        y="11"
+                    >Zeitverhalten</tspan>
         </text>
       </g>
       <g id="Graphic_110">
-        <rect x="581.5" y="439.5" width="180" height="20" fill="#d1e6ff"/>
+        <rect x="581.5" y="439.5" width="180" height="20" fill="#d1e6ff" />
       </g>
       <g id="Graphic_111">
-        <rect x="581.5" y="439.5" width="180" height="20" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <rect
+                    x="581.5"
+                    y="439.5"
+                    width="180"
+                    height="20"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
       </g>
       <g id="Graphic_112">
         <text transform="translate(645.09766 442.86957)" fill="black">
-          <tspan font-family="Helvetica" font-size="12" font-weight="400" fill="black" x="0" y="11">Verbrauchsverhalten</tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="12"
+                        font-weight="400"
+                        fill="black"
+                        x="0"
+                        y="11"
+                    >Verbrauchsverhalten</tspan>
         </text>
       </g>
       <g id="Graphic_113">
-        <rect x="341.5" y="511.5" width="180" height="20" fill="#e5e5e5"/>
+        <rect x="341.5" y="511.5" width="180" height="20" fill="#e5e5e5" />
       </g>
       <g id="Graphic_114">
-        <rect x="341.5" y="511.5" width="180" height="20" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <rect
+                    x="341.5"
+                    y="511.5"
+                    width="180"
+                    height="20"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
       </g>
       <g id="Graphic_115">
         <text transform="translate(401.0459 515)" fill="black">
-          <tspan font-family="Helvetica" font-size="12" font-weight="400" fill="black" x="0" y="11">Wartbarkeit</tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="12"
+                        font-weight="400"
+                        fill="black"
+                        x="0"
+                        y="11"
+                    >Wartbarkeit</tspan>
         </text>
       </g>
       <g id="Graphic_116">
-        <rect x="581.5" y="479.5" width="180" height="20" fill="#e5e5e5"/>
+        <rect x="581.5" y="479.5" width="180" height="20" fill="#e5e5e5" />
       </g>
       <g id="Graphic_117">
-        <rect x="581.5" y="479.5" width="180" height="20" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <rect
+                    x="581.5"
+                    y="479.5"
+                    width="180"
+                    height="20"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
       </g>
       <g id="Graphic_118">
         <text transform="translate(670.1289 482.86957)" fill="black">
-          <tspan font-family="Helvetica" font-size="12" font-weight="400" fill="black" x="0" y="11">Analysierbarkeit</tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="12"
+                        font-weight="400"
+                        fill="black"
+                        x="0"
+                        y="11"
+                    >Analysierbarkeit</tspan>
         </text>
       </g>
       <g id="Graphic_119">
-        <rect x="581.5" y="511.5" width="180" height="20" fill="#e5e5e5"/>
+        <rect x="581.5" y="511.5" width="180" height="20" fill="#e5e5e5" />
       </g>
       <g id="Graphic_120">
-        <rect x="581.5" y="511.5" width="180" height="20" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <rect
+                    x="581.5"
+                    y="511.5"
+                    width="180"
+                    height="20"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
       </g>
       <g id="Graphic_121">
         <text transform="translate(687.4609 514.86957)" fill="black">
-          <tspan font-family="Helvetica" font-size="12" font-weight="400" fill="black" x="0" y="11">Änderbarkeit</tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="12"
+                        font-weight="400"
+                        fill="black"
+                        x="0"
+                        y="11"
+                    >Änderbarkeit</tspan>
         </text>
       </g>
       <g id="Graphic_122">
-        <rect x="581.5" y="546.13043" width="180" height="20" fill="#e5e5e5"/>
+        <rect x="581.5" y="546.13043" width="180" height="20" fill="#e5e5e5" />
       </g>
       <g id="Graphic_123">
-        <rect x="581.5" y="546.13043" width="180" height="20" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <rect
+                    x="581.5"
+                    y="546.13043"
+                    width="180"
+                    height="20"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
       </g>
       <g id="Graphic_124">
         <text transform="translate(709.4746 549.5)" fill="black">
-          <tspan font-family="Helvetica" font-size="12" font-weight="400" fill="black" x="0" y="11">Stabilität</tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="12"
+                        font-weight="400"
+                        fill="black"
+                        x="0"
+                        y="11"
+                    >Stabilität</tspan>
         </text>
       </g>
       <g id="Graphic_125">
-        <rect x="581.5" y="578.13043" width="180" height="20" fill="#e5e5e5"/>
+        <rect x="581.5" y="578.13043" width="180" height="20" fill="#e5e5e5" />
       </g>
       <g id="Graphic_126">
-        <rect x="581.5" y="578.13043" width="180" height="20" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <rect
+                    x="581.5"
+                    y="578.13043"
+                    width="180"
+                    height="20"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
       </g>
       <g id="Graphic_127">
         <text transform="translate(696.8096 581.5)" fill="black">
-          <tspan font-family="Helvetica" font-size="12" font-weight="400" fill="black" x="0" y="11">Testbarkeit</tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="12"
+                        font-weight="400"
+                        fill="black"
+                        x="0"
+                        y="11"
+                    >Testbarkeit</tspan>
         </text>
       </g>
       <g id="Graphic_128">
-        <rect x="341.5" y="655.5" width="180" height="20" fill="white"/>
+        <rect x="341.5" y="655.5" width="180" height="20" fill="white" />
       </g>
       <g id="Graphic_129">
-        <rect x="341.5" y="655.5" width="180" height="20" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <rect
+                    x="341.5"
+                    y="655.5"
+                    width="180"
+                    height="20"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
       </g>
       <g id="Graphic_130">
         <text transform="translate(403.15234 658.5)" fill="black">
-          <tspan font-family="Helvetica" font-size="12" font-weight="400" fill="black" x="0" y="11">Portabilität</tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="12"
+                        font-weight="400"
+                        fill="black"
+                        x="0"
+                        y="11"
+                    >Portabilität</tspan>
         </text>
       </g>
       <g id="Graphic_131">
-        <rect x="581.5" y="623.5" width="180" height="20" fill="white"/>
+        <rect x="581.5" y="623.5" width="180" height="20" fill="white" />
       </g>
       <g id="Graphic_132">
-        <rect x="581.5" y="623.5" width="180" height="20" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <rect
+                    x="581.5"
+                    y="623.5"
+                    width="180"
+                    height="20"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
       </g>
       <g id="Graphic_133">
         <text transform="translate(679.457 626.8696)" fill="black">
-          <tspan font-family="Helvetica" font-size="12" font-weight="400" fill="black" x="0" y="11">Anpassbarkeit</tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="12"
+                        font-weight="400"
+                        fill="black"
+                        x="0"
+                        y="11"
+                    >Anpassbarkeit</tspan>
         </text>
       </g>
       <g id="Graphic_134">
-        <rect x="581.5" y="655.5" width="180" height="20" fill="white"/>
+        <rect x="581.5" y="655.5" width="180" height="20" fill="white" />
       </g>
       <g id="Graphic_135">
-        <rect x="581.5" y="655.5" width="180" height="20" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <rect
+                    x="581.5"
+                    y="655.5"
+                    width="180"
+                    height="20"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
       </g>
       <g id="Graphic_136">
         <text transform="translate(674.7988 658.8696)" fill="black">
-          <tspan font-family="Helvetica" font-size="12" font-weight="400" fill="black" x="0" y="11">Installierbarkeit</tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="12"
+                        font-weight="400"
+                        fill="black"
+                        x="0"
+                        y="11"
+                    >Installierbarkeit</tspan>
         </text>
       </g>
       <g id="Graphic_137">
-        <rect x="581.5" y="690.1304" width="180" height="20" fill="white"/>
+        <rect x="581.5" y="690.1304" width="180" height="20" fill="white" />
       </g>
       <g id="Graphic_138">
-        <rect x="581.5" y="690.1304" width="180" height="20" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <rect
+                    x="581.5"
+                    y="690.1304"
+                    width="180"
+                    height="20"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
       </g>
       <g id="Graphic_139">
         <text transform="translate(696.8008 693.5)" fill="black">
-          <tspan font-family="Helvetica" font-size="12" font-weight="400" fill="black" x="0" y="11">Koexistenz</tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="12"
+                        font-weight="400"
+                        fill="black"
+                        x="0"
+                        y="11"
+                    >Koexistenz</tspan>
         </text>
       </g>
       <g id="Graphic_140">
-        <rect x="581.5" y="722.1304" width="180" height="20" fill="white"/>
+        <rect x="581.5" y="722.1304" width="180" height="20" fill="white" />
       </g>
       <g id="Graphic_141">
-        <rect x="581.5" y="722.1304" width="180" height="20" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <rect
+                    x="581.5"
+                    y="722.1304"
+                    width="180"
+                    height="20"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
       </g>
       <g id="Graphic_142">
         <text transform="translate(663.4492 725.5)" fill="black">
-          <tspan font-family="Helvetica" font-size="12" font-weight="400" fill="black" x="0" y="11">Austauschbarkeit</tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="12"
+                        font-weight="400"
+                        fill="black"
+                        x="0"
+                        y="11"
+                    >Austauschbarkeit</tspan>
         </text>
       </g>
       <g id="Graphic_143">
         <text transform="translate(726.8213 163.81522)" fill="black">
-          <tspan font-family="Helvetica" font-size="12" font-weight="400" fill="black" x="0" y="11">Reife</tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="12"
+                        font-weight="400"
+                        fill="black"
+                        x="0"
+                        y="11"
+                    >Reife</tspan>
         </text>
       </g>
       <g id="Line_144">
-        <path d="M 522 89.5 L 551.5 89.5 L 551.5 25.5 L 581.5 25.5" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <path
+                    d="M 522 89.5 L 551.5 89.5 L 551.5 25.5 L 581.5 25.5"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
       </g>
       <g id="Line_145">
-        <path d="M 521.5 89.5 L 551.5 89.5 L 551.5 57.5 L 581.5 57.5" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <path
+                    d="M 521.5 89.5 L 551.5 89.5 L 551.5 57.5 L 581.5 57.5"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
       </g>
       <g id="Line_146">
-        <line x1="521.5" y1="89.5" x2="581.5" y2="89.5" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <line
+                    x1="521.5"
+                    y1="89.5"
+                    x2="581.5"
+                    y2="89.5"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
       </g>
       <g id="Line_147">
-        <path d="M 521.5 89.5 L 551.5 89.5 L 551.5 121.5 L 581.5 121.5" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <path
+                    d="M 521.5 89.5 L 551.5 89.5 L 551.5 121.5 L 581.5 121.5"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
       </g>
       <g id="Line_148">
-        <path d="M 521.5 217.5 L 551.5 217.5 L 551.5 169.5 L 581.5 169.5" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <path
+                    d="M 521.5 217.5 L 551.5 217.5 L 551.5 169.5 L 581.5 169.5"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
       </g>
       <g id="Line_149">
-        <path d="M 521.5 217.5 L 551.5 217.5 L 551.5 201.5 L 581.5 201.5" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <path
+                    d="M 521.5 217.5 L 551.5 217.5 L 551.5 201.5 L 581.5 201.5"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
       </g>
       <g id="Line_150">
-        <path d="M 521.5 217.5 L 551.5 217.5 L 551.5 233.5 L 581.5 233.5" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <path
+                    d="M 521.5 217.5 L 551.5 217.5 L 551.5 233.5 L 581.5 233.5"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
       </g>
       <g id="Line_151">
-        <path d="M 521.5 345.5 L 551.5 345.5 L 551.5 281.5 L 581.5 281.5" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <path
+                    d="M 521.5 345.5 L 551.5 345.5 L 551.5 281.5 L 581.5 281.5"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
       </g>
       <g id="Line_152">
-        <path d="M 521.5 345.5 L 551.5 345.5 L 551.5 313.5 L 581.5 313.5" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <path
+                    d="M 521.5 345.5 L 551.5 345.5 L 551.5 313.5 L 581.5 313.5"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
       </g>
       <g id="Line_153">
-        <line x1="521.5" y1="345.5" x2="581.5" y2="345.5" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <line
+                    x1="521.5"
+                    y1="345.5"
+                    x2="581.5"
+                    y2="345.5"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
       </g>
       <g id="Line_154">
-        <path d="M 521.5 345.5 L 551.5 345.5 L 551.5 377.5 L 581.5 377.5" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <path
+                    d="M 521.5 345.5 L 551.5 345.5 L 551.5 377.5 L 581.5 377.5"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
       </g>
       <g id="Line_155">
-        <line x1="521.5" y1="417.5" x2="581.5" y2="417.5" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <line
+                    x1="521.5"
+                    y1="417.5"
+                    x2="581.5"
+                    y2="417.5"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
       </g>
       <g id="Line_156">
-        <path d="M 521.5 417.5 L 551.5 417.5 L 551.5 449.5 L 581.5 449.5" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <path
+                    d="M 521.5 417.5 L 551.5 417.5 L 551.5 449.5 L 581.5 449.5"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
       </g>
       <g id="Line_157">
-        <path d="M 521.5 521.5 L 551.5 521.5 L 551.5 489.5 L 581.5 489.5" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <path
+                    d="M 521.5 521.5 L 551.5 521.5 L 551.5 489.5 L 581.5 489.5"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
       </g>
       <g id="Line_158">
-        <line x1="521.5" y1="521.5" x2="581.5" y2="521.5" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <line
+                    x1="521.5"
+                    y1="521.5"
+                    x2="581.5"
+                    y2="521.5"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
       </g>
       <g id="Line_159">
-        <path d="M 521.5 521.5 L 551.5 521.5 L 551.5 556.13043 L 581.5 556.13043" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <path
+                    d="M 521.5 521.5 L 551.5 521.5 L 551.5 556.13043 L 581.5 556.13043"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
       </g>
       <g id="Line_160">
-        <path d="M 521.5 521.5 L 551.5 521.5 L 551.5 588.1304 L 581.5 588.1304" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <path
+                    d="M 521.5 521.5 L 551.5 521.5 L 551.5 588.1304 L 581.5 588.1304"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
       </g>
       <g id="Line_161">
-        <path d="M 521.5 665.5 L 551.5 665.5 L 551.5 633.5 L 581.5 633.5" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <path
+                    d="M 521.5 665.5 L 551.5 665.5 L 551.5 633.5 L 581.5 633.5"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
       </g>
       <g id="Line_162">
-        <line x1="521.5" y1="665.5" x2="581.5" y2="665.5" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <line
+                    x1="521.5"
+                    y1="665.5"
+                    x2="581.5"
+                    y2="665.5"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
       </g>
       <g id="Line_163">
-        <path d="M 521.5 665.5 L 551.5 665.5 L 551.5 700.1304 L 581.5 700.1304" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <path
+                    d="M 521.5 665.5 L 551.5 665.5 L 551.5 700.1304 L 581.5 700.1304"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
       </g>
       <g id="Line_165">
-        <path d="M 521.5 665.5 L 551.5 665.5 L 551.5 732.1304 L 581.5 732.1304" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <path
+                    d="M 521.5 665.5 L 551.5 665.5 L 551.5 732.1304 L 581.5 732.1304"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
       </g>
     </g>
   </g>

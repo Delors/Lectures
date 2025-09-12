@@ -1,130 +1,472 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" version="1.1" xmlns:xl="http://www.w3.org/1999/xlink" viewBox="0 0 546 212" width="400" height="155">
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+    "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg
+    xmlns="http://www.w3.org/2000/svg"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    version="1.1"
+    xmlns:xl="http://www.w3.org/1999/xlink"
+    viewBox="0 0 546 212"
+    width="1201"
+    height="508"
+>
+  <style>
+    @import url('/LectureDoc2/ext/fonts/ld-fonts.css');
+  </style>
   <defs>
-    <font-face font-family="Avenir Next" font-size="12" panose-1="2 11 5 3 2 2 2 2 2 4" units-per-em="1000" underline-position="-75" underline-thickness="50" slope="0" x-height="468" cap-height="708" ascent="1e3" descent="-365.9973" font-weight="400">
+    <font-face
+            font-family="Noto Sans Display"
+            font-size="12"
+            panose-1="2 11 5 3 2 2 2 2 2 4"
+            units-per-em="1000"
+            underline-position="-75"
+            underline-thickness="50"
+            slope="0"
+            x-height="468"
+            cap-height="708"
+            ascent="1e3"
+            descent="-365.9973"
+            font-weight="400"
+        >
       <font-face-src>
-        <font-face-name name="AvenirNext-Regular"/>
+        <font-face-name name="AvenirNext-Regular" />
       </font-face-src>
     </font-face>
   </defs>
   <metadata> Produced by OmniGraffle 8.0\n2023-11-14 09:28:49 +0000</metadata>
-  <g id="gantt_chart_1" stroke="none" fill-opacity="1" stroke-opacity="1" fill="none" stroke-dasharray="none">
+  <g
+        id="gantt_chart_1"
+        stroke="none"
+        fill-opacity="1"
+        stroke-opacity="1"
+        fill="none"
+        stroke-dasharray="none"
+    >
     <title>gantt_chart 1</title>
-    <rect fill="white" x="0" y="0" width="546" height="212"/>
+    <rect fill="white" x="0" y="0" width="546" height="212" />
     <g id="gantt_chart_1_Layer_1">
       <title>Layer 1</title>
       <g id="Line_21">
-        <line x1="436.7105" y1="164.01766" x2="460.72093" y2="153.60847" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <line
+                    x1="436.7105"
+                    y1="164.01766"
+                    x2="460.72093"
+                    y2="153.60847"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
       </g>
       <g id="Line_20">
-        <line x1="337.53976" y1="179.82355" x2="363.75176" y2="179.82355" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <line
+                    x1="337.53976"
+                    y1="179.82355"
+                    x2="363.75176"
+                    y2="179.82355"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
       </g>
       <g id="Line_19">
-        <line x1="326.92054" y1="156.99278" x2="374.37098" y2="115.13432" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <line
+                    x1="326.92054"
+                    y1="156.99278"
+                    x2="374.37098"
+                    y2="115.13432"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
       </g>
       <g id="Line_18">
-        <line x1="195.80676" y1="179.82355" x2="264.53976" y2="179.82355" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <line
+                    x1="195.80676"
+                    y1="179.82355"
+                    x2="264.53976"
+                    y2="179.82355"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
       </g>
       <g id="Line_17">
-        <line x1="258.01602" y1="61.0234" x2="272.4716" y2="86.0237" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <line
+                    x1="258.01602"
+                    y1="61.0234"
+                    x2="272.4716"
+                    y2="86.0237"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
       </g>
       <g id="Line_16">
-        <line x1="181.63376" y1="38.09055" x2="208.25586" y2="38.09055" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <line
+                    x1="181.63376"
+                    y1="38.09055"
+                    x2="208.25586"
+                    y2="38.09055"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
       </g>
       <g id="Line_15">
-        <line x1="80.70076" y1="130.69406" x2="122.88276" y2="157.05821" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <line
+                    x1="80.70076"
+                    y1="130.69406"
+                    x2="122.88276"
+                    y2="157.05821"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
       </g>
       <g id="Line_14">
-        <line x1="83.92126" y1="108.95655" x2="108.63376" y2="108.95655" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <line
+                    x1="83.92126"
+                    y1="108.95655"
+                    x2="108.63376"
+                    y2="108.95655"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
       </g>
       <g id="Line_13">
-        <line x1="78.34536" y1="85.7965" x2="113.22686" y2="60.88117" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <line
+                    x1="78.34536"
+                    y1="85.7965"
+                    x2="113.22686"
+                    y2="60.88117"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
       </g>
       <g id="Graphic_12">
-        <path d="M 17.92126 86.45655 L 73.92126 86.45655 C 78.33954 86.45655 81.92126 90.03827 81.92126 94.45655 L 81.92126 123.45655 C 81.92126 127.87483 78.33954 131.45655 73.92126 131.45655 L 17.92126 131.45655 C 13.502982 131.45655 9.92126 127.87483 9.92126 123.45655 L 9.92126 94.45655 C 9.92126 90.03827 13.502982 86.45655 17.92126 86.45655 Z" fill="#fff195"/>
-        <path d="M 17.92126 86.45655 L 73.92126 86.45655 C 78.33954 86.45655 81.92126 90.03827 81.92126 94.45655 L 81.92126 123.45655 C 81.92126 127.87483 78.33954 131.45655 73.92126 131.45655 L 17.92126 131.45655 C 13.502982 131.45655 9.92126 127.87483 9.92126 123.45655 L 9.92126 94.45655 C 9.92126 90.03827 13.502982 86.45655 17.92126 86.45655 Z" stroke="black" stroke-linecap="round" stroke-linejoin="bevel" stroke-width="4"/>
+        <path
+                    d="M 17.92126 86.45655 L 73.92126 86.45655 C 78.33954 86.45655 81.92126 90.03827 81.92126 94.45655 L 81.92126 123.45655 C 81.92126 127.87483 78.33954 131.45655 73.92126 131.45655 L 17.92126 131.45655 C 13.502982 131.45655 9.92126 127.87483 9.92126 123.45655 L 9.92126 94.45655 C 9.92126 90.03827 13.502982 86.45655 17.92126 86.45655 Z"
+                    fill="#fff195"
+                />
+        <path
+                    d="M 17.92126 86.45655 L 73.92126 86.45655 C 78.33954 86.45655 81.92126 90.03827 81.92126 94.45655 L 81.92126 123.45655 C 81.92126 127.87483 78.33954 131.45655 73.92126 131.45655 L 17.92126 131.45655 C 13.502982 131.45655 9.92126 127.87483 9.92126 123.45655 L 9.92126 94.45655 C 9.92126 90.03827 13.502982 86.45655 17.92126 86.45655 Z"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="bevel"
+                    stroke-width="4"
+                />
         <text transform="translate(14.92126 100.95655)" fill="black">
-          <tspan font-family="Avenir Next" font-size="12" font-weight="400" fill="black" x="18.448" y="12">Start</tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="12"
+                        font-weight="400"
+                        fill="black"
+                        x="18.448"
+                        y="12"
+                    >Start</tspan>
         </text>
       </g>
       <g id="Graphic_73">
-        <rect x="109.13376" y="15.590551" width="72" height="45" fill="white"/>
-        <rect x="109.13376" y="15.590551" width="72" height="45" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <rect x="109.13376" y="15.590551" width="72" height="45" fill="white" />
+        <rect
+                    x="109.13376"
+                    y="15.590551"
+                    width="72"
+                    height="45"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
         <text transform="translate(114.13376 22.090551)" fill="black">
-          <tspan font-family="Avenir Next" font-size="12" font-weight="400" fill="black" x="24.1" y="12">T1 </tspan>
-          <tspan font-family="Avenir Next" font-size="12" font-weight="400" fill="black" x="8.572" y="28">(8 Tage)</tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="12"
+                        font-weight="400"
+                        fill="black"
+                        x="24.1"
+                        y="12"
+                    >T1 </tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="12"
+                        font-weight="400"
+                        fill="black"
+                        x="8.572"
+                        y="28"
+                    >(8 Tage)</tspan>
         </text>
       </g>
       <g id="Graphic_3">
-        <rect x="109.13376" y="86.45655" width="72" height="45" fill="white"/>
-        <rect x="109.13376" y="86.45655" width="72" height="45" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <rect x="109.13376" y="86.45655" width="72" height="45" fill="white" />
+        <rect
+                    x="109.13376"
+                    y="86.45655"
+                    width="72"
+                    height="45"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
         <text transform="translate(114.13376 92.95655)" fill="black">
-          <tspan font-family="Avenir Next" font-size="12" font-weight="400" fill="black" x="24.1" y="12">T2 </tspan>
-          <tspan font-family="Avenir Next" font-size="12" font-weight="400" fill="black" x="5.092" y="28">(10 Tage)</tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="12"
+                        font-weight="400"
+                        fill="black"
+                        x="24.1"
+                        y="12"
+                    >T2 </tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="12"
+                        font-weight="400"
+                        fill="black"
+                        x="5.092"
+                        y="28"
+                    >(10 Tage)</tspan>
         </text>
       </g>
       <g id="Graphic_4">
-        <rect x="123.30676" y="157.32355" width="72" height="45" fill="white"/>
-        <rect x="123.30676" y="157.32355" width="72" height="45" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <rect x="123.30676" y="157.32355" width="72" height="45" fill="white" />
+        <rect
+                    x="123.30676"
+                    y="157.32355"
+                    width="72"
+                    height="45"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
         <text transform="translate(128.30676 163.82355)" fill="black">
-          <tspan font-family="Avenir Next" font-size="12" font-weight="400" fill="black" x="24.1" y="12">T3 </tspan>
-          <tspan font-family="Avenir Next" font-size="12" font-weight="400" fill="black" x="5.092" y="28">(15 Tage)</tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="12"
+                        font-weight="400"
+                        fill="black"
+                        x="24.1"
+                        y="12"
+                    >T3 </tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="12"
+                        font-weight="400"
+                        fill="black"
+                        x="5.092"
+                        y="28"
+                    >(15 Tage)</tspan>
         </text>
       </g>
       <g id="Graphic_5">
-        <rect x="249.73176" y="86.45655" width="72" height="45" fill="white"/>
-        <rect x="249.73176" y="86.45655" width="72" height="45" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <rect x="249.73176" y="86.45655" width="72" height="45" fill="white" />
+        <rect
+                    x="249.73176"
+                    y="86.45655"
+                    width="72"
+                    height="45"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
         <text transform="translate(254.73176 92.95655)" fill="black">
-          <tspan font-family="Avenir Next" font-size="12" font-weight="400" fill="black" x="24.1" y="12">T4 </tspan>
-          <tspan font-family="Avenir Next" font-size="12" font-weight="400" fill="black" x="8.572" y="28">(6 Tage)</tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="12"
+                        font-weight="400"
+                        fill="black"
+                        x="24.1"
+                        y="12"
+                    >T4 </tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="12"
+                        font-weight="400"
+                        fill="black"
+                        x="8.572"
+                        y="28"
+                    >(6 Tage)</tspan>
         </text>
       </g>
       <g id="Graphic_6">
-        <path d="M 216.75586 15.590551 L 272.75586 15.590551 C 277.17414 15.590551 280.75586 19.172273 280.75586 23.59055 L 280.75586 52.59055 C 280.75586 57.00883 277.17414 60.59055 272.75586 60.59055 L 216.75586 60.59055 C 212.33759 60.59055 208.75586 57.00883 208.75586 52.59055 L 208.75586 23.59055 C 208.75586 19.172273 212.33759 15.590551 216.75586 15.590551 Z" fill="#e9e9e9"/>
-        <path d="M 216.75586 15.590551 L 272.75586 15.590551 C 277.17414 15.590551 280.75586 19.172273 280.75586 23.59055 L 280.75586 52.59055 C 280.75586 57.00883 277.17414 60.59055 272.75586 60.59055 L 216.75586 60.59055 C 212.33759 60.59055 208.75586 57.00883 208.75586 52.59055 L 208.75586 23.59055 C 208.75586 19.172273 212.33759 15.590551 216.75586 15.590551 Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <path
+                    d="M 216.75586 15.590551 L 272.75586 15.590551 C 277.17414 15.590551 280.75586 19.172273 280.75586 23.59055 L 280.75586 52.59055 C 280.75586 57.00883 277.17414 60.59055 272.75586 60.59055 L 216.75586 60.59055 C 212.33759 60.59055 208.75586 57.00883 208.75586 52.59055 L 208.75586 23.59055 C 208.75586 19.172273 212.33759 15.590551 216.75586 15.590551 Z"
+                    fill="#e9e9e9"
+                />
+        <path
+                    d="M 216.75586 15.590551 L 272.75586 15.590551 C 277.17414 15.590551 280.75586 19.172273 280.75586 23.59055 L 280.75586 52.59055 C 280.75586 57.00883 277.17414 60.59055 272.75586 60.59055 L 216.75586 60.59055 C 212.33759 60.59055 208.75586 57.00883 208.75586 52.59055 L 208.75586 23.59055 C 208.75586 19.172273 212.33759 15.590551 216.75586 15.590551 Z"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
         <text transform="translate(213.75586 30.09055)" fill="black">
-          <tspan font-family="Avenir Next" font-size="12" font-weight="400" fill="black" x="22.204" y="12">M1</tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="12"
+                        font-weight="400"
+                        fill="black"
+                        x="22.204"
+                        y="12"
+                    >M1</tspan>
         </text>
       </g>
       <g id="Graphic_9">
-        <rect x="364.25176" y="69.80355" width="72" height="45" fill="white"/>
-        <rect x="364.25176" y="69.80355" width="72" height="45" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <rect x="364.25176" y="69.80355" width="72" height="45" fill="white" />
+        <rect
+                    x="364.25176"
+                    y="69.80355"
+                    width="72"
+                    height="45"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
         <text transform="translate(369.25176 76.30355)" fill="black">
-          <tspan font-family="Avenir Next" font-size="12" font-weight="400" fill="black" x="24.1" y="12">T5 </tspan>
-          <tspan font-family="Avenir Next" font-size="12" font-weight="400" fill="black" x="8.572" y="28">(3 Tage)</tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="12"
+                        font-weight="400"
+                        fill="black"
+                        x="24.1"
+                        y="12"
+                    >T5 </tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="12"
+                        font-weight="400"
+                        fill="black"
+                        x="8.572"
+                        y="28"
+                    >(3 Tage)</tspan>
         </text>
       </g>
       <g id="Graphic_10">
-        <rect x="364.25176" y="157.32355" width="72" height="45" fill="white"/>
-        <rect x="364.25176" y="157.32355" width="72" height="45" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <rect x="364.25176" y="157.32355" width="72" height="45" fill="white" />
+        <rect
+                    x="364.25176"
+                    y="157.32355"
+                    width="72"
+                    height="45"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
         <text transform="translate(369.25176 163.82355)" fill="black">
-          <tspan font-family="Avenir Next" font-size="12" font-weight="400" fill="black" x="24.1" y="12">T6 </tspan>
-          <tspan font-family="Avenir Next" font-size="12" font-weight="400" fill="black" x="8.572" y="28">(5 Tage)</tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="12"
+                        font-weight="400"
+                        fill="black"
+                        x="24.1"
+                        y="12"
+                    >T6 </tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="12"
+                        font-weight="400"
+                        fill="black"
+                        x="8.572"
+                        y="28"
+                    >(5 Tage)</tspan>
         </text>
       </g>
       <g id="Graphic_7">
-        <path d="M 273.03976 157.32355 L 329.03976 157.32355 C 333.45804 157.32355 337.03976 160.90527 337.03976 165.32355 L 337.03976 194.32355 C 337.03976 198.74183 333.45804 202.32355 329.03976 202.32355 L 273.03976 202.32355 C 268.62148 202.32355 265.03976 198.74183 265.03976 194.32355 L 265.03976 165.32355 C 265.03976 160.90527 268.62148 157.32355 273.03976 157.32355 Z" fill="#e9e9e9"/>
-        <path d="M 273.03976 157.32355 L 329.03976 157.32355 C 333.45804 157.32355 337.03976 160.90527 337.03976 165.32355 L 337.03976 194.32355 C 337.03976 198.74183 333.45804 202.32355 329.03976 202.32355 L 273.03976 202.32355 C 268.62148 202.32355 265.03976 198.74183 265.03976 194.32355 L 265.03976 165.32355 C 265.03976 160.90527 268.62148 157.32355 273.03976 157.32355 Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <path
+                    d="M 273.03976 157.32355 L 329.03976 157.32355 C 333.45804 157.32355 337.03976 160.90527 337.03976 165.32355 L 337.03976 194.32355 C 337.03976 198.74183 333.45804 202.32355 329.03976 202.32355 L 273.03976 202.32355 C 268.62148 202.32355 265.03976 198.74183 265.03976 194.32355 L 265.03976 165.32355 C 265.03976 160.90527 268.62148 157.32355 273.03976 157.32355 Z"
+                    fill="#e9e9e9"
+                />
+        <path
+                    d="M 273.03976 157.32355 L 329.03976 157.32355 C 333.45804 157.32355 337.03976 160.90527 337.03976 165.32355 L 337.03976 194.32355 C 337.03976 198.74183 333.45804 202.32355 329.03976 202.32355 L 273.03976 202.32355 C 268.62148 202.32355 265.03976 198.74183 265.03976 194.32355 L 265.03976 165.32355 C 265.03976 160.90527 268.62148 157.32355 273.03976 157.32355 Z"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
         <text transform="translate(270.03976 171.82355)" fill="black">
-          <tspan font-family="Avenir Next" font-size="12" font-weight="400" fill="black" x="22.204" y="12">M2</tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="12"
+                        font-weight="400"
+                        fill="black"
+                        x="22.204"
+                        y="12"
+                    >M2</tspan>
         </text>
       </g>
       <g id="Graphic_8">
-        <path d="M 471.33076 114.80355 L 525.33076 114.80355 C 530.3013 114.80355 534.33076 118.83299 534.33076 123.80355 L 534.33076 150.80355 C 534.33076 155.77411 530.3013 159.80355 525.33076 159.80355 L 471.33076 159.80355 C 466.3602 159.80355 462.33076 155.77411 462.33076 150.80355 L 462.33076 123.80355 C 462.33076 118.83299 466.3602 114.80355 471.33076 114.80355 Z" fill="#d6fdad"/>
-        <path d="M 471.33076 114.80355 L 525.33076 114.80355 C 530.3013 114.80355 534.33076 118.83299 534.33076 123.80355 L 534.33076 150.80355 C 534.33076 155.77411 530.3013 159.80355 525.33076 159.80355 L 471.33076 159.80355 C 466.3602 159.80355 462.33076 155.77411 462.33076 150.80355 L 462.33076 123.80355 C 462.33076 118.83299 466.3602 114.80355 471.33076 114.80355 Z" stroke="black" stroke-linecap="round" stroke-linejoin="bevel" stroke-width="4"/>
+        <path
+                    d="M 471.33076 114.80355 L 525.33076 114.80355 C 530.3013 114.80355 534.33076 118.83299 534.33076 123.80355 L 534.33076 150.80355 C 534.33076 155.77411 530.3013 159.80355 525.33076 159.80355 L 471.33076 159.80355 C 466.3602 159.80355 462.33076 155.77411 462.33076 150.80355 L 462.33076 123.80355 C 462.33076 118.83299 466.3602 114.80355 471.33076 114.80355 Z"
+                    fill="#d6fdad"
+                />
+        <path
+                    d="M 471.33076 114.80355 L 525.33076 114.80355 C 530.3013 114.80355 534.33076 118.83299 534.33076 123.80355 L 534.33076 150.80355 C 534.33076 155.77411 530.3013 159.80355 525.33076 159.80355 L 471.33076 159.80355 C 466.3602 159.80355 462.33076 155.77411 462.33076 150.80355 L 462.33076 123.80355 C 462.33076 118.83299 466.3602 114.80355 471.33076 114.80355 Z"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="bevel"
+                    stroke-width="4"
+                />
         <text transform="translate(467.33076 129.30355)" fill="black">
-          <tspan font-family="Avenir Next" font-size="12" font-weight="400" fill="black" x="9.73" y="12">Release</tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="12"
+                        font-weight="400"
+                        fill="black"
+                        x="9.73"
+                        y="12"
+                    >Release</tspan>
         </text>
       </g>
       <g id="Line_22">
-        <line x1="177.17127" y1="86.16673" x2="213.4689" y2="60.34648" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <line
+                    x1="177.17127"
+                    y1="86.16673"
+                    x2="213.4689"
+                    y2="60.34648"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
       </g>
       <g id="Line_23">
-        <line x1="290.69756" y1="131.94528" x2="296.07396" y2="156.83482" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <line
+                    x1="290.69756"
+                    y1="131.94528"
+                    x2="296.07396"
+                    y2="156.83482"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
       </g>
       <g id="Line_24">
-        <line x1="436.7062" y1="109.02936" x2="460.9609" y2="120.15774" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <line
+                    x1="436.7062"
+                    y1="109.02936"
+                    x2="460.9609"
+                    y2="120.15774"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
       </g>
     </g>
   </g>
