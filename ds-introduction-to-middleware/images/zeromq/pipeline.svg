@@ -1,133 +1,427 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xl="http://www.w3.org/1999/xlink" xmlns:dc="http://purl.org/dc/elements/1.1/" version="1.1" viewBox="101 149 469 458" width="469" height="458">
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+    "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg
+    xmlns="http://www.w3.org/2000/svg"
+    xmlns:xl="http://www.w3.org/1999/xlink"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    version="1.1"
+    viewBox="101 149 469 458"
+    width="469"
+    height="458"
+>
   <style>
-    @import url('/LectureDoc2/ext/fonts/ld-fonts.css'); 
+    @import url('/LectureDoc2/ext/fonts/ld-fonts.css');
   </style>
   <defs>
-    <marker orient="auto" overflow="visible" markerUnits="strokeWidth" id="FilledArrow_Marker" stroke-linejoin="miter" stroke-miterlimit="10" viewBox="-1 -3 7 6" markerWidth="7" markerHeight="6" color="#666">
+    <marker
+            orient="auto"
+            overflow="visible"
+            markerUnits="strokeWidth"
+            id="FilledArrow_Marker"
+            stroke-linejoin="miter"
+            stroke-miterlimit="10"
+            viewBox="-1 -3 7 6"
+            markerWidth="7"
+            markerHeight="6"
+            color="#666"
+        >
       <g>
-        <path d="M 4.8 0 L 0 -1.8 L 0 1.8 Z" fill="currentColor" stroke="currentColor" stroke-width="1"/>
+        <path
+                    d="M 4.8 0 L 0 -1.8 L 0 1.8 Z"
+                    fill="currentColor"
+                    stroke="currentColor"
+                    stroke-width="1"
+                />
       </g>
     </marker>
-    <marker orient="auto" overflow="visible" markerUnits="strokeWidth" id="StickArrow_Marker" stroke-linejoin="miter" stroke-miterlimit="10" viewBox="-1 -3 7 6" markerWidth="7" markerHeight="6" color="#666">
+    <marker
+            orient="auto"
+            overflow="visible"
+            markerUnits="strokeWidth"
+            id="StickArrow_Marker"
+            stroke-linejoin="miter"
+            stroke-miterlimit="10"
+            viewBox="-1 -3 7 6"
+            markerWidth="7"
+            markerHeight="6"
+            color="#666"
+        >
       <g>
-        <path d="M 4.8 0 L 0 0 M 0 -1.8 L 4.8 0 L 0 1.8" fill="none" stroke="currentColor" stroke-width="1"/>
+        <path
+                    d="M 4.8 0 L 0 0 M 0 -1.8 L 4.8 0 L 0 1.8"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1"
+                />
       </g>
     </marker>
   </defs>
   <metadata> Produced by OmniGraffle 8.0\n2025-03-05 15:48:20 +0000</metadata>
-  <g id="pipeline" fill-opacity="1" stroke-opacity="1" stroke="none" stroke-dasharray="none" fill="none">
+  <g
+        id="pipeline"
+        fill-opacity="1"
+        stroke-opacity="1"
+        stroke="none"
+        stroke-dasharray="none"
+        fill="none"
+    >
     <title>pipeline</title>
-    <rect fill="white" x="101" y="149" width="469" height="458"/>
+    <rect fill="white" x="101" y="149" width="469" height="458" />
     <g id="pipeline_Layer_1">
       <title>Layer 1</title>
       <g id="Graphic_54">
-        <path d="M 109.716 388.2824 L 297.716 388.2824 C 302.13428 388.2824 305.716 391.86413 305.716 396.2824 L 305.716 429.7824 C 305.716 434.2007 302.13428 437.7824 297.716 437.7824 L 109.716 437.7824 C 105.29772 437.7824 101.716 434.2007 101.716 429.7824 L 101.716 396.2824 C 101.716 391.86413 105.29772 388.2824 109.716 388.2824 Z" fill="white"/>
-        <path d="M 109.716 388.2824 L 297.716 388.2824 C 302.13428 388.2824 305.716 391.86413 305.716 396.2824 L 305.716 429.7824 C 305.716 434.2007 302.13428 437.7824 297.716 437.7824 L 109.716 437.7824 C 105.29772 437.7824 101.716 434.2007 101.716 429.7824 L 101.716 396.2824 C 101.716 391.86413 105.29772 388.2824 109.716 388.2824 Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <path
+                    d="M 109.716 388.2824 L 297.716 388.2824 C 302.13428 388.2824 305.716 391.86413 305.716 396.2824 L 305.716 429.7824 C 305.716 434.2007 302.13428 437.7824 297.716 437.7824 L 109.716 437.7824 C 105.29772 437.7824 101.716 434.2007 101.716 429.7824 L 101.716 396.2824 C 101.716 391.86413 105.29772 388.2824 109.716 388.2824 Z"
+                    fill="white"
+                />
+        <path
+                    d="M 109.716 388.2824 L 297.716 388.2824 C 302.13428 388.2824 305.716 391.86413 305.716 396.2824 L 305.716 429.7824 C 305.716 434.2007 302.13428 437.7824 297.716 437.7824 L 109.716 437.7824 C 105.29772 437.7824 101.716 434.2007 101.716 429.7824 L 101.716 396.2824 C 101.716 391.86413 105.29772 388.2824 109.716 388.2824 Z"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
         <text transform="translate(106.716 403.8084)" fill="black">
-          <tspan font-family="Helvetica Neue" font-size="16" font-weight="400" fill="black" x="45.592" y="15" xml:space="preserve">Socket: PUSH</tspan>
+          <tspan
+                        font-family="Helvetica Neue"
+                        font-size="16"
+                        font-weight="400"
+                        fill="black"
+                        x="45.592"
+                        y="15"
+                        xml:space="preserve"
+                    >Socket: PUSH</tspan>
         </text>
       </g>
       <g id="Graphic_55">
-        <path d="M 372.7539 388.2824 L 560.7539 388.2824 C 565.1722 388.2824 568.7539 391.86413 568.7539 396.2824 L 568.7539 429.7824 C 568.7539 434.2007 565.1722 437.7824 560.7539 437.7824 L 372.7539 437.7824 C 368.33563 437.7824 364.7539 434.2007 364.7539 429.7824 L 364.7539 396.2824 C 364.7539 391.86413 368.33563 388.2824 372.7539 388.2824 Z" fill="white"/>
-        <path d="M 372.7539 388.2824 L 560.7539 388.2824 C 565.1722 388.2824 568.7539 391.86413 568.7539 396.2824 L 568.7539 429.7824 C 568.7539 434.2007 565.1722 437.7824 560.7539 437.7824 L 372.7539 437.7824 C 368.33563 437.7824 364.7539 434.2007 364.7539 429.7824 L 364.7539 396.2824 C 364.7539 391.86413 368.33563 388.2824 372.7539 388.2824 Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <path
+                    d="M 372.7539 388.2824 L 560.7539 388.2824 C 565.1722 388.2824 568.7539 391.86413 568.7539 396.2824 L 568.7539 429.7824 C 568.7539 434.2007 565.1722 437.7824 560.7539 437.7824 L 372.7539 437.7824 C 368.33563 437.7824 364.7539 434.2007 364.7539 429.7824 L 364.7539 396.2824 C 364.7539 391.86413 368.33563 388.2824 372.7539 388.2824 Z"
+                    fill="white"
+                />
+        <path
+                    d="M 372.7539 388.2824 L 560.7539 388.2824 C 565.1722 388.2824 568.7539 391.86413 568.7539 396.2824 L 568.7539 429.7824 C 568.7539 434.2007 565.1722 437.7824 560.7539 437.7824 L 372.7539 437.7824 C 368.33563 437.7824 364.7539 434.2007 364.7539 429.7824 L 364.7539 396.2824 C 364.7539 391.86413 368.33563 388.2824 372.7539 388.2824 Z"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
         <text transform="translate(369.7539 403.8084)" fill="black">
-          <tspan font-family="Helvetica Neue" font-size="16" font-weight="400" fill="black" x="45.592" y="15" xml:space="preserve">Socket: PUSH</tspan>
+          <tspan
+                        font-family="Helvetica Neue"
+                        font-size="16"
+                        font-weight="400"
+                        fill="black"
+                        x="45.592"
+                        y="15"
+                        xml:space="preserve"
+                    >Socket: PUSH</tspan>
         </text>
       </g>
       <g id="Graphic_53">
-        <path d="M 234.66694 185.93672 L 422.66694 185.93672 C 427.0852 185.93672 430.66694 189.51844 430.66694 193.93672 L 430.66694 227.43672 C 430.66694 231.855 427.0852 235.43672 422.66694 235.43672 L 234.66694 235.43672 C 230.24866 235.43672 226.66694 231.855 226.66694 227.43672 L 226.66694 193.93672 C 226.66694 189.51844 230.24866 185.93672 234.66694 185.93672 Z" fill="white"/>
-        <path d="M 234.66694 185.93672 L 422.66694 185.93672 C 427.0852 185.93672 430.66694 189.51844 430.66694 193.93672 L 430.66694 227.43672 C 430.66694 231.855 427.0852 235.43672 422.66694 235.43672 L 234.66694 235.43672 C 230.24866 235.43672 226.66694 231.855 226.66694 227.43672 L 226.66694 193.93672 C 226.66694 189.51844 230.24866 185.93672 234.66694 185.93672 Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <path
+                    d="M 234.66694 185.93672 L 422.66694 185.93672 C 427.0852 185.93672 430.66694 189.51844 430.66694 193.93672 L 430.66694 227.43672 C 430.66694 231.855 427.0852 235.43672 422.66694 235.43672 L 234.66694 235.43672 C 230.24866 235.43672 226.66694 231.855 226.66694 227.43672 L 226.66694 193.93672 C 226.66694 189.51844 230.24866 185.93672 234.66694 185.93672 Z"
+                    fill="white"
+                />
+        <path
+                    d="M 234.66694 185.93672 L 422.66694 185.93672 C 427.0852 185.93672 430.66694 189.51844 430.66694 193.93672 L 430.66694 227.43672 C 430.66694 231.855 427.0852 235.43672 422.66694 235.43672 L 234.66694 235.43672 C 230.24866 235.43672 226.66694 231.855 226.66694 227.43672 L 226.66694 193.93672 C 226.66694 189.51844 230.24866 185.93672 234.66694 185.93672 Z"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
         <text transform="translate(231.66694 201.46272)" fill="black">
-          <tspan font-family="Helvetica Neue" font-size="16" font-weight="400" fill="black" x="45.592" y="15" xml:space="preserve">Socket: PUSH</tspan>
+          <tspan
+                        font-family="Helvetica Neue"
+                        font-size="16"
+                        font-weight="400"
+                        fill="black"
+                        x="45.592"
+                        y="15"
+                        xml:space="preserve"
+                    >Socket: PUSH</tspan>
         </text>
       </g>
       <g id="Graphic_52">
-        <path d="M 109.716 325 L 297.716 325 C 302.13428 325 305.716 328.58172 305.716 333 L 305.716 366.5 C 305.716 370.9183 302.13428 374.5 297.716 374.5 L 109.716 374.5 C 105.29772 374.5 101.716 370.9183 101.716 366.5 L 101.716 333 C 101.716 328.58172 105.29772 325 109.716 325 Z" fill="white"/>
-        <path d="M 109.716 325 L 297.716 325 C 302.13428 325 305.716 328.58172 305.716 333 L 305.716 366.5 C 305.716 370.9183 302.13428 374.5 297.716 374.5 L 109.716 374.5 C 105.29772 374.5 101.716 370.9183 101.716 366.5 L 101.716 333 C 101.716 328.58172 105.29772 325 109.716 325 Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <path
+                    d="M 109.716 325 L 297.716 325 C 302.13428 325 305.716 328.58172 305.716 333 L 305.716 366.5 C 305.716 370.9183 302.13428 374.5 297.716 374.5 L 109.716 374.5 C 105.29772 374.5 101.716 370.9183 101.716 366.5 L 101.716 333 C 101.716 328.58172 105.29772 325 109.716 325 Z"
+                    fill="white"
+                />
+        <path
+                    d="M 109.716 325 L 297.716 325 C 302.13428 325 305.716 328.58172 305.716 333 L 305.716 366.5 C 305.716 370.9183 302.13428 374.5 297.716 374.5 L 109.716 374.5 C 105.29772 374.5 101.716 370.9183 101.716 366.5 L 101.716 333 C 101.716 328.58172 105.29772 325 109.716 325 Z"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
         <text transform="translate(106.716 340.526)" fill="black">
-          <tspan font-family="Helvetica Neue" font-size="16" font-weight="400" fill="black" x="47.656" y="15" xml:space="preserve">Socket: PULL</tspan>
+          <tspan
+                        font-family="Helvetica Neue"
+                        font-size="16"
+                        font-weight="400"
+                        fill="black"
+                        x="47.656"
+                        y="15"
+                        xml:space="preserve"
+                    >Socket: PULL</tspan>
         </text>
       </g>
       <g id="Graphic_51">
-        <path d="M 372.7539 325 L 560.7539 325 C 565.1722 325 568.7539 328.58172 568.7539 333 L 568.7539 366.5 C 568.7539 370.9183 565.1722 374.5 560.7539 374.5 L 372.7539 374.5 C 368.33563 374.5 364.7539 370.9183 364.7539 366.5 L 364.7539 333 C 364.7539 328.58172 368.33563 325 372.7539 325 Z" fill="white"/>
-        <path d="M 372.7539 325 L 560.7539 325 C 565.1722 325 568.7539 328.58172 568.7539 333 L 568.7539 366.5 C 568.7539 370.9183 565.1722 374.5 560.7539 374.5 L 372.7539 374.5 C 368.33563 374.5 364.7539 370.9183 364.7539 366.5 L 364.7539 333 C 364.7539 328.58172 368.33563 325 372.7539 325 Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <path
+                    d="M 372.7539 325 L 560.7539 325 C 565.1722 325 568.7539 328.58172 568.7539 333 L 568.7539 366.5 C 568.7539 370.9183 565.1722 374.5 560.7539 374.5 L 372.7539 374.5 C 368.33563 374.5 364.7539 370.9183 364.7539 366.5 L 364.7539 333 C 364.7539 328.58172 368.33563 325 372.7539 325 Z"
+                    fill="white"
+                />
+        <path
+                    d="M 372.7539 325 L 560.7539 325 C 565.1722 325 568.7539 328.58172 568.7539 333 L 568.7539 366.5 C 568.7539 370.9183 565.1722 374.5 560.7539 374.5 L 372.7539 374.5 C 368.33563 374.5 364.7539 370.9183 364.7539 366.5 L 364.7539 333 C 364.7539 328.58172 368.33563 325 372.7539 325 Z"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
         <text transform="translate(369.7539 340.526)" fill="black">
-          <tspan font-family="Helvetica Neue" font-size="16" font-weight="400" fill="black" x="47.656" y="15" xml:space="preserve">Socket: PULL</tspan>
+          <tspan
+                        font-family="Helvetica Neue"
+                        font-size="16"
+                        font-weight="400"
+                        fill="black"
+                        x="47.656"
+                        y="15"
+                        xml:space="preserve"
+                    >Socket: PULL</tspan>
         </text>
       </g>
       <g id="Line_50">
-        <path d="M 254.716 325 L 254.716 286.97656 L 328.66694 286.97656 L 328.66694 248.33672" marker-end="url(#FilledArrow_Marker)" stroke="#666" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="2.0,8.0" stroke-width="2"/>
+        <path
+                    d="M 254.716 325 L 254.716 286.97656 L 328.66694 286.97656 L 328.66694 248.33672"
+                    marker-end="url(#FilledArrow_Marker)"
+                    stroke="#666"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-dasharray="2.0,8.0"
+                    stroke-width="2"
+                />
       </g>
       <g id="Line_49">
-        <path d="M 415.7539 325 L 415.7539 287.0039 L 328.66694 287.0039 L 328.66694 248.33672" marker-end="url(#FilledArrow_Marker)" stroke="#666" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="2.0,8.0" stroke-width="2"/>
+        <path
+                    d="M 415.7539 325 L 415.7539 287.0039 L 328.66694 287.0039 L 328.66694 248.33672"
+                    marker-end="url(#FilledArrow_Marker)"
+                    stroke="#666"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-dasharray="2.0,8.0"
+                    stroke-width="2"
+                />
       </g>
       <g id="Graphic_48">
         <text transform="translate(286.73094 293.63556)" fill="black">
-          <tspan font-family="Helvetica Neue" font-size="16" font-weight="400" fill="black" x="0" y="15" xml:space="preserve">1. connect()</tspan>
+          <tspan
+                        font-family="Helvetica Neue"
+                        font-size="16"
+                        font-weight="400"
+                        fill="black"
+                        x="0"
+                        y="15"
+                        xml:space="preserve"
+                    >1. connect()</tspan>
         </text>
       </g>
       <g id="Line_47">
-        <path d="M 277.66694 235.43672 L 277.66694 270.5 L 152.716 270.5 L 152.716 312.1" marker-end="url(#StickArrow_Marker)" stroke="#666" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+        <path
+                    d="M 277.66694 235.43672 L 277.66694 270.5 L 152.716 270.5 L 152.716 312.1"
+                    marker-end="url(#StickArrow_Marker)"
+                    stroke="#666"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                />
       </g>
       <g id="Line_46">
-        <path d="M 379.66694 235.43672 L 379.66694 271.5 L 517.7539 271.5 L 517.7539 312.1" marker-end="url(#StickArrow_Marker)" stroke="#666" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+        <path
+                    d="M 379.66694 235.43672 L 379.66694 271.5 L 517.7539 271.5 L 517.7539 312.1"
+                    marker-end="url(#StickArrow_Marker)"
+                    stroke="#666"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                />
       </g>
       <g id="Graphic_45">
-        <rect x="226.66694" y="150.34175" width="204" height="46.448" fill="white"/>
-        <rect x="226.66694" y="150.34175" width="204" height="46.448" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <rect x="226.66694" y="150.34175" width="204" height="46.448" fill="white" />
+        <rect
+                    x="226.66694"
+                    y="150.34175"
+                    width="204"
+                    height="46.448"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
         <text transform="translate(231.66694 164.34175)" fill="black">
-          <tspan font-family="Helvetica Neue" font-size="16" font-weight="400" fill="black" x="31.808" y="15" xml:space="preserve">Producer / Source</tspan>
+          <tspan
+                        font-family="Helvetica Neue"
+                        font-size="16"
+                        font-weight="400"
+                        fill="black"
+                        x="31.808"
+                        y="15"
+                        xml:space="preserve"
+                    >Producer / Source</tspan>
         </text>
       </g>
       <g id="Graphic_44">
-        <rect x="101.716" y="366.5" width="204" height="28.447998" fill="white"/>
-        <rect x="101.716" y="366.5" width="204" height="28.447998" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <rect x="101.716" y="366.5" width="204" height="28.447998" fill="white" />
+        <rect
+                    x="101.716"
+                    y="366.5"
+                    width="204"
+                    height="28.447998"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
         <text transform="translate(106.716 371.5)" fill="black">
-          <tspan font-family="Helvetica Neue" font-size="16" font-weight="400" fill="black" x="71.68" y="15" xml:space="preserve">Worker</tspan>
+          <tspan
+                        font-family="Helvetica Neue"
+                        font-size="16"
+                        font-weight="400"
+                        fill="black"
+                        x="71.68"
+                        y="15"
+                        xml:space="preserve"
+                    >Worker</tspan>
         </text>
       </g>
       <g id="Graphic_43">
-        <rect x="364.7539" y="366.5" width="204" height="28.447998" fill="white"/>
-        <rect x="364.7539" y="366.5" width="204" height="28.447998" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <rect x="364.7539" y="366.5" width="204" height="28.447998" fill="white" />
+        <rect
+                    x="364.7539"
+                    y="366.5"
+                    width="204"
+                    height="28.447998"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
         <text transform="translate(369.7539 371.5)" fill="black">
-          <tspan font-family="Helvetica Neue" font-size="16" font-weight="400" fill="black" x="71.68" y="15" xml:space="preserve">Worker</tspan>
+          <tspan
+                        font-family="Helvetica Neue"
+                        font-size="16"
+                        font-weight="400"
+                        fill="black"
+                        x="71.68"
+                        y="15"
+                        xml:space="preserve"
+                    >Worker</tspan>
         </text>
       </g>
       <g id="Graphic_42">
         <text transform="translate(158.22 251.18604)" fill="black">
-          <tspan font-family="Helvetica Neue" font-size="16" font-weight="400" fill="black" x="0" y="15" xml:space="preserve">n. send(task)</tspan>
+          <tspan
+                        font-family="Helvetica Neue"
+                        font-size="16"
+                        font-weight="400"
+                        fill="black"
+                        x="0"
+                        y="15"
+                        xml:space="preserve"
+                    >n. send(task)</tspan>
         </text>
       </g>
       <g id="Graphic_41">
         <text transform="translate(409.8223 252.18604)" fill="black">
-          <tspan font-family="Helvetica Neue" font-size="16" font-weight="400" fill="black" x="0" y="15" xml:space="preserve">m. send(task)</tspan>
+          <tspan
+                        font-family="Helvetica Neue"
+                        font-size="16"
+                        font-weight="400"
+                        fill="black"
+                        x="0"
+                        y="15"
+                        xml:space="preserve"
+                    >m. send(task)</tspan>
         </text>
       </g>
       <g id="Graphic_58">
-        <path d="M 242.5 518.0898 L 430.5 518.0898 C 434.9183 518.0898 438.5 521.6715 438.5 526.0898 L 438.5 559.5898 C 438.5 564.00806 434.9183 567.5898 430.5 567.5898 L 242.5 567.5898 C 238.08172 567.5898 234.5 564.00806 234.5 559.5898 L 234.5 526.0898 C 234.5 521.6715 238.08172 518.0898 242.5 518.0898 Z" fill="white"/>
-        <path d="M 242.5 518.0898 L 430.5 518.0898 C 434.9183 518.0898 438.5 521.6715 438.5 526.0898 L 438.5 559.5898 C 438.5 564.00806 434.9183 567.5898 430.5 567.5898 L 242.5 567.5898 C 238.08172 567.5898 234.5 564.00806 234.5 559.5898 L 234.5 526.0898 C 234.5 521.6715 238.08172 518.0898 242.5 518.0898 Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <path
+                    d="M 242.5 518.0898 L 430.5 518.0898 C 434.9183 518.0898 438.5 521.6715 438.5 526.0898 L 438.5 559.5898 C 438.5 564.00806 434.9183 567.5898 430.5 567.5898 L 242.5 567.5898 C 238.08172 567.5898 234.5 564.00806 234.5 559.5898 L 234.5 526.0898 C 234.5 521.6715 238.08172 518.0898 242.5 518.0898 Z"
+                    fill="white"
+                />
+        <path
+                    d="M 242.5 518.0898 L 430.5 518.0898 C 434.9183 518.0898 438.5 521.6715 438.5 526.0898 L 438.5 559.5898 C 438.5 564.00806 434.9183 567.5898 430.5 567.5898 L 242.5 567.5898 C 238.08172 567.5898 234.5 564.00806 234.5 559.5898 L 234.5 526.0898 C 234.5 521.6715 238.08172 518.0898 242.5 518.0898 Z"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
         <text transform="translate(239.5 533.6158)" fill="black">
-          <tspan font-family="Helvetica Neue" font-size="16" font-weight="400" fill="black" x="47.656" y="15" xml:space="preserve">Socket: PULL</tspan>
+          <tspan
+                        font-family="Helvetica Neue"
+                        font-size="16"
+                        font-weight="400"
+                        fill="black"
+                        x="47.656"
+                        y="15"
+                        xml:space="preserve"
+                    >Socket: PULL</tspan>
         </text>
       </g>
       <g id="Graphic_56">
-        <rect x="234.5" y="559.5898" width="204" height="46.448" fill="white"/>
-        <rect x="234.5" y="559.5898" width="204" height="46.448" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <rect x="234.5" y="559.5898" width="204" height="46.448" fill="white" />
+        <rect
+                    x="234.5"
+                    y="559.5898"
+                    width="204"
+                    height="46.448"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
         <text transform="translate(239.5 573.5898)" fill="black">
-          <tspan font-family="Helvetica Neue" font-size="16" font-weight="400" fill="black" x="37.28" y="15" xml:space="preserve">Consumer / Sink</tspan>
+          <tspan
+                        font-family="Helvetica Neue"
+                        font-size="16"
+                        font-weight="400"
+                        fill="black"
+                        x="37.28"
+                        y="15"
+                        xml:space="preserve"
+                    >Consumer / Sink</tspan>
         </text>
       </g>
       <g id="Line_59">
-        <path d="M 203.716 437.7824 L 203.716 477.9361 L 336.5 477.9361 L 336.5 505.1898" marker-end="url(#StickArrow_Marker)" stroke="#666" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+        <path
+                    d="M 203.716 437.7824 L 203.716 477.9361 L 336.5 477.9361 L 336.5 505.1898"
+                    marker-end="url(#StickArrow_Marker)"
+                    stroke="#666"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                />
       </g>
       <g id="Line_60">
-        <path d="M 466.7539 437.7824 L 466.7539 477.9361 L 336.5 477.9361 L 336.5 505.1898" marker-end="url(#StickArrow_Marker)" stroke="#666" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+        <path
+                    d="M 466.7539 437.7824 L 466.7539 477.9361 L 336.5 477.9361 L 336.5 505.1898"
+                    marker-end="url(#StickArrow_Marker)"
+                    stroke="#666"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                />
       </g>
       <g id="Graphic_62">
         <text transform="translate(302.868 442.7824)" fill="black">
-          <tspan font-family="Helvetica Neue" font-size="16" font-weight="400" fill="black" x="0" y="15" xml:space="preserve">Resultate</tspan>
+          <tspan
+                        font-family="Helvetica Neue"
+                        font-size="16"
+                        font-weight="400"
+                        fill="black"
+                        x="0"
+                        y="15"
+                        xml:space="preserve"
+                    >Resultate</tspan>
         </text>
       </g>
     </g>

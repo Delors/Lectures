@@ -529,14 +529,14 @@ Web Services - Standardization
 
   .. card::
 
-    .. image:: screenshots/ws_standards.png
-      :width: 30%
+    .. image:: screenshots/ws_standards.webp
+      :width: 600
       :align: right
 
   .. card:: overlay
 
-    .. image:: screenshots/ws_standards_w3c.png
-      :width: 50%
+    .. image:: screenshots/ws_standards_w3c.webp
+      :width: 900
       :align: left
 
 
