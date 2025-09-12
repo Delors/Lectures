@@ -1085,13 +1085,14 @@ NIS 2 - zentrale Einrichtungen
 .. image:: images/nis_2.svg
     :align: center
 
-.. legend::
-    :class: dd-margin-left-2em s-font-size-80
-
-    :CSIRT: Computer Security Incident Response Team
-    :Behörden für das Krisenmanagement: Sollte es mehr als eine geben, so wird eine explizit benannt, die für die Koordination und das  Management von *Cybersicherheitsvorfällen großen Ausmaßes und Krisen* zuständig ist
-
-
 .. supplemental::
 
     Ein zentraler Gedanke ist die Vernetzung der zuständigen Behörden sowohl auf nationaler als auch auf europäischer Ebene sicherzustellen.
+
+    .. legend::
+        :class: dd-margin-left-2em
+
+        :CSIRT: Computer Security Incident Response Team
+        :Behörden für das Krisenmanagement: Sollte es mehr als eine geben, so wird eine explizit benannt, die für die Koordination und das  Management von *Cybersicherheitsvorfällen großen Ausmaßes und Krisen* zuständig ist
+
+
