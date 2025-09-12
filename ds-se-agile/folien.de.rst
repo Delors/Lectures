@@ -1,5 +1,5 @@
 .. meta::
-    :version: genesis
+    :version: renaissance
     :author: Michael Eichberg
     :keywords: "Agile Entwicklung", "Verteilte Systeme", "DevOps"
     :description lang=de: Diskussion der Bedeutung der agilen Softwareentwicklung für verteilte Anwendungsarchitekturen
@@ -59,7 +59,7 @@ Agile Softwareentwicklung
 
 **Schlüsselaspekte mit Relevanz für Softwarearchitekturen**:
 
-.. class:: incremental list-with-explanations
+.. class:: incremental-list list-with-explanations
 
 - kleine Gruppen von Entwicklern (:shiny-green:`3`-:shiny-red:`10` Personen), die über alle notwendigen Kompetenzen verfügen (technische und geschäftliche)
 - inkrementelle Entwicklung
@@ -70,10 +70,10 @@ Agile Softwareentwicklung
   
   Die Entwicklung erfolgt iterativ und erlaubt explizit die Wiederholung von Softwareentwicklungstätigkeiten; die einzelnen Iterationen sind strukturiert entlang einer Serie von inkrementellen Schritten mit einer fixen Länge.  
 
-
 .. supplemental::
 
     Große Teams haben sich im Allgemeinen als nicht-effektiv erwiesen.
+
 
 
 Aspekte Agiler Prozessmodelle mit Bezug zu Softwarearchitekturen
@@ -92,7 +92,6 @@ Aspekte Agiler Prozessmodelle mit Bezug zu Softwarearchitekturen
   
 - Continuous Delivery (CD) (Continuous Deployment)
 
-
 .. supplemental::
 
     :YAGNI: You ain't gonna need it
@@ -102,6 +101,7 @@ Aspekte Agiler Prozessmodelle mit Bezug zu Softwarearchitekturen
     TDD erfordert modulare Softwarearchitekturen, die es erlauben einzelne Komponenten zu testen.
 
     Kurze Releasezyklen sind notwendig, um das Verständnis der Anforderungen bzw. Problemdomäne zu verbessern.  
+
 
 
 Anforderungsermittlung in agilen Prozessen
@@ -114,6 +114,7 @@ Anforderungsermittlung in agilen Prozessen
     Eine Bedingung oder Fähigkeit, die ein Benutzer benötigt, um ein Problem zu lösen oder ein Ziel zu erreichen.
 
     -- IEEE Standard Glossary of Software Engineering Terminology
+
 
 
 Anforderungsermittlung mittels Domain-driven Design (DDD) [Evans2004]_
@@ -130,14 +131,14 @@ Anforderungsermittlung mittels Domain-driven Design (DDD) [Evans2004]_
     
     Zur Erinnerung: *User Stories* beschreiben was erreicht werden soll und nicht wie. Das Ziel muss klar sein, aber der Weg nicht! (Ggf. können User Stories noch das warum adressieren.)
 
+
+
 Ausgewählte Konzepte des Domain-driven Design (DDD) [Evans2004]_
 ------------------------------------------------------------------------
 
 :Ubiquitäre Sprache (`Ubiquitous Language`:eng:): Die Sprache, welche in allen Bereichen der Softwareerstellung verwendet werden sollte (Fachlichkeit, Domänenmodell, Methoden, Klassen, …)
 :Aggregate: Repräsentation eines atomaren Konzeptes der DomäneEine Entität/transaktionale Einheit, die als einziges Zugriff auf die dahinterliegende, zusammengefassten Entitäten erlaubt.
 :Kontextgrenzen (`Bounded Context`:eng:): Repräsentation einer Organisationsgrenze
-
-
 
 .. supplemental::
 
@@ -151,13 +152,14 @@ Ausgewählte Konzepte des Domain-driven Design (DDD) [Evans2004]_
       Beschreiben die Grenzen jedes Kontexts in vielfältiger Hinsicht wie beispielsweise Teamzuordnung, Verwendungszweck, dahinter liegende Datenbankschemata. Somit wird klar, wo ein Kontext seine Gültigkeit verliert und potentiell ein anderer Kontext seinen Platz einnimmt.
 
 
+
 DevOps 
 --------------------- 
 
 Ergänzen bestehende agile Methoden.
 
 .. image:: images/dev-ops.svg
-    :width: 80%
+    :width: 1440px
     :align: center
 
 .. supplemental::
