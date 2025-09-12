@@ -1,105 +1,249 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg version="1.1" xmlns:xl="http://www.w3.org/1999/xlink" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns="http://www.w3.org/2000/svg" viewBox="29 139 910 714" width="910" height="714">
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+    "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg
+    version="1.1"
+    xmlns:xl="http://www.w3.org/1999/xlink"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="29 139 910 714"
+    width="1338"
+    height="1050"
+>
   <style>
-    @import url('/LectureDoc2/ext/fonts/ld-fonts.css'); 
+    @import url('/LectureDoc2/ext/fonts/ld-fonts.css');
   </style>
   <defs>
     <linearGradient x1="0" x2="1" id="Gradient" gradientUnits="userSpaceOnUse">
-      <stop offset=".16833588" stop-color="#cde95f"/>
-      <stop offset=".9336584" stop-color="#e7f4b5" stop-opacity=".5"/>
-      <stop offset="1" stop-color="white" stop-opacity="0"/>
+      <stop offset=".16833588" stop-color="#cde95f" />
+      <stop offset=".9336584" stop-color="#e7f4b5" stop-opacity=".5" />
+      <stop offset="1" stop-color="white" stop-opacity="0" />
     </linearGradient>
-    <linearGradient id="Obj_Gradient" xl:href="#Gradient" gradientTransform="translate(371.3703 473.1947) rotate(-133.44236) scale(198.91248)"/>
-    <linearGradient id="Obj_Gradient_2" xl:href="#Gradient" gradientTransform="translate(381.63724 410.4634) rotate(-133.44236) scale(228.7745)"/>
+    <linearGradient
+            id="Obj_Gradient"
+            xl:href="#Gradient"
+            gradientTransform="translate(371.3703 473.1947) rotate(-133.44236) scale(198.91248)"
+        />
+    <linearGradient
+            id="Obj_Gradient_2"
+            xl:href="#Gradient"
+            gradientTransform="translate(381.63724 410.4634) rotate(-133.44236) scale(228.7745)"
+        />
     <linearGradient x1="0" x2="1" id="Gradient_2" gradientUnits="userSpaceOnUse">
-      <stop offset=".16833588" stop-color="#e9e9e9"/>
-      <stop offset=".9336584" stop-color="#f5f5f5" stop-opacity=".5"/>
-      <stop offset="1" stop-color="white" stop-opacity="0"/>
+      <stop offset=".16833588" stop-color="#e9e9e9" />
+      <stop offset=".9336584" stop-color="#f5f5f5" stop-opacity=".5" />
+      <stop offset="1" stop-color="white" stop-opacity="0" />
     </linearGradient>
-    <linearGradient id="Obj_Gradient_3" xl:href="#Gradient_2" gradientTransform="translate(375.6243 407.12815) rotate(-133.44236) scale(211.28556)"/>
+    <linearGradient
+            id="Obj_Gradient_3"
+            xl:href="#Gradient_2"
+            gradientTransform="translate(375.6243 407.12815) rotate(-133.44236) scale(211.28556)"
+        />
     <linearGradient x1="0" x2="1" id="Gradient_3" gradientUnits="userSpaceOnUse">
-      <stop offset=".16833588" stop-color="#e7e9dd"/>
-      <stop offset=".9336584" stop-color="#f3f5ee" stop-opacity=".5"/>
-      <stop offset="1" stop-color="white" stop-opacity="0"/>
+      <stop offset=".16833588" stop-color="#e7e9dd" />
+      <stop offset=".9336584" stop-color="#f3f5ee" stop-opacity=".5" />
+      <stop offset="1" stop-color="white" stop-opacity="0" />
     </linearGradient>
-    <linearGradient id="Obj_Gradient_4" xl:href="#Gradient_3" gradientTransform="translate(370.4787 408.7408) rotate(-133.44236) scale(196.31916)"/>
+    <linearGradient
+            id="Obj_Gradient_4"
+            xl:href="#Gradient_3"
+            gradientTransform="translate(370.4787 408.7408) rotate(-133.44236) scale(196.31916)"
+        />
     <linearGradient x1="0" x2="1" id="Gradient_4" gradientUnits="userSpaceOnUse">
-      <stop offset="0" stop-color="white"/>
-      <stop offset=".08420465" stop-color="#a4a4a4"/>
-      <stop offset="1" stop-color="#333"/>
+      <stop offset="0" stop-color="white" />
+      <stop offset=".08420465" stop-color="#a4a4a4" />
+      <stop offset="1" stop-color="#333" />
     </linearGradient>
-    <linearGradient id="Obj_Gradient_5" xl:href="#Gradient_4" gradientTransform="translate(223.2558 274.29892) rotate(90) scale(6.12689)"/>
-    <linearGradient id="Obj_Gradient_6" xl:href="#Gradient_4" gradientTransform="translate(234.12835 274.29892) rotate(90) scale(6.12689)"/>
-    <linearGradient id="Obj_Gradient_7" xl:href="#Gradient_4" gradientTransform="translate(245.00088 274.29892) rotate(90) scale(6.12689)"/>
-    <font-face font-family="Noto Sans Display" font-size="10" units-per-em="1000" underline-position="-75.68359" underline-thickness="49.316406" slope="0" x-height="522.9492" cap-height="717.28516" ascent="770.0195" descent="-229.98047" font-weight="400">
+    <linearGradient
+            id="Obj_Gradient_5"
+            xl:href="#Gradient_4"
+            gradientTransform="translate(223.2558 274.29892) rotate(90) scale(6.12689)"
+        />
+    <linearGradient
+            id="Obj_Gradient_6"
+            xl:href="#Gradient_4"
+            gradientTransform="translate(234.12835 274.29892) rotate(90) scale(6.12689)"
+        />
+    <linearGradient
+            id="Obj_Gradient_7"
+            xl:href="#Gradient_4"
+            gradientTransform="translate(245.00088 274.29892) rotate(90) scale(6.12689)"
+        />
+    <font-face
+            font-family="Noto Sans Display"
+            font-size="10"
+            units-per-em="1000"
+            underline-position="-75.68359"
+            underline-thickness="49.316406"
+            slope="0"
+            x-height="522.9492"
+            cap-height="717.28516"
+            ascent="770.0195"
+            descent="-229.98047"
+            font-weight="400"
+        >
       <font-face-src>
-        <font-face-name name="Noto Sans Display"/>
+        <font-face-name name="Noto Sans Display" />
       </font-face-src>
     </font-face>
-    <font-face font-family="Noto Sans Display" font-size="16" units-per-em="1000" underline-position="-75.68359" underline-thickness="49.316406" slope="0" x-height="522.9492" cap-height="717.28516" ascent="770.0195" descent="-229.98047" font-weight="400">
+    <font-face
+            font-family="Noto Sans Display"
+            font-size="16"
+            units-per-em="1000"
+            underline-position="-75.68359"
+            underline-thickness="49.316406"
+            slope="0"
+            x-height="522.9492"
+            cap-height="717.28516"
+            ascent="770.0195"
+            descent="-229.98047"
+            font-weight="400"
+        >
       <font-face-src>
-        <font-face-name name="Noto Sans Display"/>
+        <font-face-name name="Noto Sans Display" />
       </font-face-src>
     </font-face>
-    <linearGradient id="Obj_Gradient_8" xl:href="#Gradient" gradientTransform="translate(371.3703 745.3947) rotate(-133.44236) scale(198.91248)"/>
-    <linearGradient id="Obj_Gradient_9" xl:href="#Gradient" gradientTransform="translate(381.63724 682.6634) rotate(-133.44236) scale(228.7745)"/>
-    <linearGradient id="Obj_Gradient_10" xl:href="#Gradient_2" gradientTransform="translate(375.6243 679.32816) rotate(-133.44236) scale(211.28556)"/>
-    <linearGradient id="Obj_Gradient_11" xl:href="#Gradient_3" gradientTransform="translate(370.4787 680.9408) rotate(-133.44236) scale(196.31916)"/>
-    <linearGradient id="Obj_Gradient_12" xl:href="#Gradient_4" gradientTransform="translate(223.2558 546.4989) rotate(90) scale(6.12689)"/>
-    <linearGradient id="Obj_Gradient_13" xl:href="#Gradient_4" gradientTransform="translate(234.12835 546.4989) rotate(90) scale(6.12689)"/>
-    <linearGradient id="Obj_Gradient_14" xl:href="#Gradient_4" gradientTransform="translate(245.00088 546.4989) rotate(90) scale(6.12689)"/>
+    <linearGradient
+            id="Obj_Gradient_8"
+            xl:href="#Gradient"
+            gradientTransform="translate(371.3703 745.3947) rotate(-133.44236) scale(198.91248)"
+        />
+    <linearGradient
+            id="Obj_Gradient_9"
+            xl:href="#Gradient"
+            gradientTransform="translate(381.63724 682.6634) rotate(-133.44236) scale(228.7745)"
+        />
+    <linearGradient
+            id="Obj_Gradient_10"
+            xl:href="#Gradient_2"
+            gradientTransform="translate(375.6243 679.32816) rotate(-133.44236) scale(211.28556)"
+        />
+    <linearGradient
+            id="Obj_Gradient_11"
+            xl:href="#Gradient_3"
+            gradientTransform="translate(370.4787 680.9408) rotate(-133.44236) scale(196.31916)"
+        />
+    <linearGradient
+            id="Obj_Gradient_12"
+            xl:href="#Gradient_4"
+            gradientTransform="translate(223.2558 546.4989) rotate(90) scale(6.12689)"
+        />
+    <linearGradient
+            id="Obj_Gradient_13"
+            xl:href="#Gradient_4"
+            gradientTransform="translate(234.12835 546.4989) rotate(90) scale(6.12689)"
+        />
+    <linearGradient
+            id="Obj_Gradient_14"
+            xl:href="#Gradient_4"
+            gradientTransform="translate(245.00088 546.4989) rotate(90) scale(6.12689)"
+        />
     <linearGradient x1="0" x2="1" id="Gradient_5" gradientUnits="userSpaceOnUse">
-      <stop offset=".16833588" stop-color="#ffe9dd"/>
-      <stop offset=".9336584" stop-color="#fff5ee" stop-opacity=".5"/>
-      <stop offset="1" stop-color="white" stop-opacity="0"/>
+      <stop offset=".16833588" stop-color="#ffe9dd" />
+      <stop offset=".9336584" stop-color="#fff5ee" stop-opacity=".5" />
+      <stop offset="1" stop-color="white" stop-opacity="0" />
     </linearGradient>
-    <linearGradient id="Obj_Gradient_15" xl:href="#Gradient_5" gradientTransform="translate(367.84428 683.8241) rotate(-133.44236) scale(187.78598)"/>
-    <linearGradient id="Obj_Gradient_16" xl:href="#Gradient_5" gradientTransform="translate(363.61184 591.4441) rotate(-133.44236) scale(79.56002)"/>
+    <linearGradient
+            id="Obj_Gradient_15"
+            xl:href="#Gradient_5"
+            gradientTransform="translate(367.84428 683.8241) rotate(-133.44236) scale(187.78598)"
+        />
+    <linearGradient
+            id="Obj_Gradient_16"
+            xl:href="#Gradient_5"
+            gradientTransform="translate(363.61184 591.4441) rotate(-133.44236) scale(79.56002)"
+        />
     <linearGradient x1="0" x2="1" id="Gradient_6" gradientUnits="userSpaceOnUse">
-      <stop offset=".1060121" stop-color="#029ed7"/>
-      <stop offset=".8529494" stop-color="#99d0eb" stop-opacity=".5"/>
-      <stop offset="1" stop-color="white" stop-opacity="0"/>
+      <stop offset=".1060121" stop-color="#029ed7" />
+      <stop offset=".8529494" stop-color="#99d0eb" stop-opacity=".5" />
+      <stop offset="1" stop-color="white" stop-opacity="0" />
     </linearGradient>
-    <linearGradient id="Obj_Gradient_17" xl:href="#Gradient_6" gradientTransform="translate(717.1694 404.0176) rotate(-32.658855) scale(227.05973)"/>
-    <linearGradient id="Obj_Gradient_18" xl:href="#Gradient_6" gradientTransform="translate(800.6694 404.0176) rotate(-32.658855) scale(227.05973)"/>
+    <linearGradient
+            id="Obj_Gradient_17"
+            xl:href="#Gradient_6"
+            gradientTransform="translate(717.1694 404.0176) rotate(-32.658855) scale(227.05973)"
+        />
+    <linearGradient
+            id="Obj_Gradient_18"
+            xl:href="#Gradient_6"
+            gradientTransform="translate(800.6694 404.0176) rotate(-32.658855) scale(227.05973)"
+        />
     <linearGradient x1="0" x2="1" id="Gradient_7" gradientUnits="userSpaceOnUse">
-      <stop offset=".16833588" stop-color="#029ed5"/>
-      <stop offset=".9336584" stop-color="#99d0eb" stop-opacity=".5"/>
-      <stop offset="1" stop-color="white" stop-opacity="0"/>
+      <stop offset=".16833588" stop-color="#029ed5" />
+      <stop offset=".9336584" stop-color="#99d0eb" stop-opacity=".5" />
+      <stop offset="1" stop-color="white" stop-opacity="0" />
     </linearGradient>
-    <linearGradient id="Obj_Gradient_19" xl:href="#Gradient_7" gradientTransform="translate(922.3833 269.56686) rotate(-133.44236) scale(197.44296)"/>
-    <marker orient="auto" overflow="visible" markerUnits="strokeWidth" id="FilledArrow_Marker" stroke-linejoin="miter" stroke-miterlimit="10" viewBox="-1 -3 7 6" markerWidth="7" markerHeight="6" color="#666">
+    <linearGradient
+            id="Obj_Gradient_19"
+            xl:href="#Gradient_7"
+            gradientTransform="translate(922.3833 269.56686) rotate(-133.44236) scale(197.44296)"
+        />
+    <marker
+            orient="auto"
+            overflow="visible"
+            markerUnits="strokeWidth"
+            id="FilledArrow_Marker"
+            stroke-linejoin="miter"
+            stroke-miterlimit="10"
+            viewBox="-1 -3 7 6"
+            markerWidth="7"
+            markerHeight="6"
+            color="#666"
+        >
       <g>
-        <path d="M 4.8 0 L 0 -1.8 L 0 1.8 Z" fill="currentColor" stroke="currentColor" stroke-width="1"/>
+        <path
+                    d="M 4.8 0 L 0 -1.8 L 0 1.8 Z"
+                    fill="currentColor"
+                    stroke="currentColor"
+                    stroke-width="1"
+                />
       </g>
     </marker>
     <linearGradient x1="0" x2="1" id="Gradient_8" gradientUnits="userSpaceOnUse">
-      <stop offset=".1060121" stop-color="#971e1e"/>
-      <stop offset=".8529494" stop-color="#ce9b9d" stop-opacity=".5"/>
-      <stop offset="1" stop-color="white" stop-opacity="0"/>
+      <stop offset=".1060121" stop-color="#971e1e" />
+      <stop offset=".8529494" stop-color="#ce9b9d" stop-opacity=".5" />
+      <stop offset="1" stop-color="white" stop-opacity="0" />
     </linearGradient>
-    <linearGradient id="Obj_Gradient_20" xl:href="#Gradient_8" gradientTransform="translate(717.2359 767.1213) rotate(-32.658855) scale(226.90174)"/>
-    <linearGradient id="Obj_Gradient_21" xl:href="#Gradient_8" gradientTransform="translate(800.7359 767.1213) rotate(-32.658855) scale(226.90174)"/>
+    <linearGradient
+            id="Obj_Gradient_20"
+            xl:href="#Gradient_8"
+            gradientTransform="translate(717.2359 767.1213) rotate(-32.658855) scale(226.90174)"
+        />
+    <linearGradient
+            id="Obj_Gradient_21"
+            xl:href="#Gradient_8"
+            gradientTransform="translate(800.7359 767.1213) rotate(-32.658855) scale(226.90174)"
+        />
     <linearGradient x1="0" x2="1" id="Gradient_9" gradientUnits="userSpaceOnUse">
-      <stop offset=".16833588" stop-color="#971e1e"/>
-      <stop offset=".9336584" stop-color="#ce9b9d" stop-opacity=".5"/>
-      <stop offset="1" stop-color="white" stop-opacity="0"/>
+      <stop offset=".16833588" stop-color="#971e1e" />
+      <stop offset=".9336584" stop-color="#ce9b9d" stop-opacity=".5" />
+      <stop offset="1" stop-color="white" stop-opacity="0" />
     </linearGradient>
-    <linearGradient id="Obj_Gradient_22" xl:href="#Gradient_9" gradientTransform="translate(922.423 632.68825) rotate(-133.44236) scale(197.55838)"/>
+    <linearGradient
+            id="Obj_Gradient_22"
+            xl:href="#Gradient_9"
+            gradientTransform="translate(922.423 632.68825) rotate(-133.44236) scale(197.55838)"
+        />
     <filter id="Shadow" filterUnits="userSpaceOnUse" x="-62" y="67.6">
-      <feGaussianBlur in="SourceAlpha" result="blur" stdDeviation="1.308"/>
-      <feOffset in="blur" result="offset" dx="0" dy="2"/>
-      <feFlood flood-color="black" flood-opacity=".5" result="flood"/>
-      <feComposite in="flood" in2="offset" operator="in" result="color"/>
+      <feGaussianBlur in="SourceAlpha" result="blur" stdDeviation="1.308" />
+      <feOffset in="blur" result="offset" dx="0" dy="2" />
+      <feFlood flood-color="black" flood-opacity=".5" result="flood" />
+      <feComposite in="flood" in2="offset" operator="in" result="color" />
       <feMerge>
-        <feMergeNode in="color"/>
-        <feMergeNode in="SourceGraphic"/>
+        <feMergeNode in="color" />
+        <feMergeNode in="SourceGraphic" />
       </feMerge>
     </filter>
   </defs>
   <metadata> Produced by OmniGraffle 8.0\n2024-01-05 13:34:14 +0000</metadata>
-  <g id="csrf-naive-case" stroke-opacity="1" stroke="none" fill-opacity="1" stroke-dasharray="none" fill="none">
+  <g
+        id="csrf-naive-case"
+        stroke-opacity="1"
+        stroke="none"
+        fill-opacity="1"
+        stroke-dasharray="none"
+        fill="none"
+    >
     <title>csrf-naive-case</title>
     <g id="csrf-naive-case_Layer_1">
       <title>Layer 1</title>
@@ -107,223 +251,750 @@
         <g id="Group_469">
           <g id="Group_478">
             <g id="Graphic_480">
-              <path d="M 172.98176 414.8453 L 432.98176 414.8453 L 380.98176 387.12043 L 224.98176 387.12043 Z" fill="url(#Obj_Gradient)"/>
-              <path d="M 172.98176 414.8453 L 432.98176 414.8453 L 380.98176 387.12043 L 224.98176 387.12043 Z" stroke="white" stroke-opacity=".4807276" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+              <path
+                                d="M 172.98176 414.8453 L 432.98176 414.8453 L 380.98176 387.12043 L 224.98176 387.12043 Z"
+                                fill="url(#Obj_Gradient)"
+                            />
+              <path
+                                d="M 172.98176 414.8453 L 432.98176 414.8453 L 380.98176 387.12043 L 224.98176 387.12043 Z"
+                                stroke="white"
+                                stroke-opacity=".4807276"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                stroke-width="2"
+                            />
             </g>
             <g id="Graphic_479">
-              <rect x="209.24012" y="258.6453" width="187.48327" height="137.53069" fill="url(#Obj_Gradient_2)"/>
-              <rect x="209.24012" y="258.6453" width="187.48327" height="137.53069" stroke="white" stroke-opacity=".4807276" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+              <rect
+                                x="209.24012"
+                                y="258.6453"
+                                width="187.48327"
+                                height="137.53069"
+                                fill="url(#Obj_Gradient_2)"
+                            />
+              <rect
+                                x="209.24012"
+                                y="258.6453"
+                                width="187.48327"
+                                height="137.53069"
+                                stroke="white"
+                                stroke-opacity=".4807276"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                stroke-width="2"
+                            />
             </g>
           </g>
           <g id="Group_470">
             <g id="Graphic_477">
-              <rect x="213.78617" y="269.3974" width="178.39117" height="122.05415" fill="url(#Obj_Gradient_3)"/>
-              <rect x="213.78617" y="269.3974" width="178.39117" height="122.05415" stroke="white" stroke-opacity=".4807276" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+              <rect
+                                x="213.78617"
+                                y="269.3974"
+                                width="178.39117"
+                                height="122.05415"
+                                fill="url(#Obj_Gradient_3)"
+                            />
+              <rect
+                                x="213.78617"
+                                y="269.3974"
+                                width="178.39117"
+                                height="122.05415"
+                                stroke="white"
+                                stroke-opacity=".4807276"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                stroke-width="2"
+                            />
             </g>
             <g id="Graphic_476">
-              <rect x="217.22902" y="283.48925" width="171.50547" height="107.96228" fill="url(#Obj_Gradient_4)"/>
-              <rect x="217.22902" y="283.48925" width="171.50547" height="107.96228" stroke="white" stroke-opacity=".4807276" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+              <rect
+                                x="217.22902"
+                                y="283.48925"
+                                width="171.50547"
+                                height="107.96228"
+                                fill="url(#Obj_Gradient_4)"
+                            />
+              <rect
+                                x="217.22902"
+                                y="283.48925"
+                                width="171.50547"
+                                height="107.96228"
+                                stroke="white"
+                                stroke-opacity=".4807276"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                stroke-width="1"
+                            />
             </g>
             <g id="Graphic_475">
-              <ellipse cx="223.2558" cy="277.36236" rx="3.50727468360258" ry="3.0634499544674" fill="url(#Obj_Gradient_5)"/>
-              <ellipse cx="223.2558" cy="277.36236" rx="3.50727468360258" ry="3.0634499544674" stroke="#a5a5a5" stroke-linecap="round" stroke-linejoin="round" stroke-width=".25"/>
+              <ellipse
+                                cx="223.2558"
+                                cy="277.36236"
+                                rx="3.50727468360258"
+                                ry="3.0634499544674"
+                                fill="url(#Obj_Gradient_5)"
+                            />
+              <ellipse
+                                cx="223.2558"
+                                cy="277.36236"
+                                rx="3.50727468360258"
+                                ry="3.0634499544674"
+                                stroke="#a5a5a5"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                stroke-width=".25"
+                            />
             </g>
             <g id="Graphic_474">
-              <ellipse cx="234.12835" cy="277.36236" rx="3.50727468360258" ry="3.0634499544674" fill="url(#Obj_Gradient_6)"/>
-              <ellipse cx="234.12835" cy="277.36236" rx="3.50727468360258" ry="3.0634499544674" stroke="#a5a5a5" stroke-linecap="round" stroke-linejoin="round" stroke-width=".25"/>
+              <ellipse
+                                cx="234.12835"
+                                cy="277.36236"
+                                rx="3.50727468360258"
+                                ry="3.0634499544674"
+                                fill="url(#Obj_Gradient_6)"
+                            />
+              <ellipse
+                                cx="234.12835"
+                                cy="277.36236"
+                                rx="3.50727468360258"
+                                ry="3.0634499544674"
+                                stroke="#a5a5a5"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                stroke-width=".25"
+                            />
             </g>
             <g id="Graphic_473">
-              <ellipse cx="245.00088" cy="277.36236" rx="3.50727468360258" ry="3.0634499544674" fill="url(#Obj_Gradient_7)"/>
-              <ellipse cx="245.00088" cy="277.36236" rx="3.50727468360258" ry="3.0634499544674" stroke="#a5a5a5" stroke-linecap="round" stroke-linejoin="round" stroke-width=".25"/>
+              <ellipse
+                                cx="245.00088"
+                                cy="277.36236"
+                                rx="3.50727468360258"
+                                ry="3.0634499544674"
+                                fill="url(#Obj_Gradient_7)"
+                            />
+              <ellipse
+                                cx="245.00088"
+                                cy="277.36236"
+                                rx="3.50727468360258"
+                                ry="3.0634499544674"
+                                stroke="#a5a5a5"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                stroke-width=".25"
+                            />
             </g>
           </g>
         </g>
         <g id="Graphic_468">
           <text transform="translate(220.93775 282.89077)" fill="#d0d0d0">
-            <tspan font-family="Noto Sans Display" font-size="10" font-weight="400" fill="#d0d0d0" x="0" y="10">www.xyz.com</tspan>
+            <tspan
+                            font-family="Noto Sans Display"
+                            font-size="10"
+                            font-weight="400"
+                            fill="#d0d0d0"
+                            x="0"
+                            y="10"
+                        >www.xyz.com</tspan>
           </text>
         </g>
       </g>
       <g id="Graphic_399">
         <text transform="translate(558 323)" fill="black">
-          <tspan font-family="Noto Sans Display" font-size="16" font-weight="400" fill="black" x="0" y="15">login</tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="16"
+                        font-weight="400"
+                        fill="black"
+                        x="0"
+                        y="15"
+                    >login</tspan>
         </text>
       </g>
       <g id="Graphic_403">
-        <circle cx="360" cy="449.8453" r="20.0000319580379" fill="#b50000" fill-opacity=".5162368"/>
+        <circle
+                    cx="360"
+                    cy="449.8453"
+                    r="20.0000319580379"
+                    fill="#b50000"
+                    fill-opacity=".5162368"
+                />
         <text transform="translate(349 440.3453)" fill="white">
-          <tspan font-family="Noto Sans Display" font-size="16" font-weight="400" fill="white" x="6.550781" y="15">2</tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="16"
+                        font-weight="400"
+                        fill="white"
+                        x="6.550781"
+                        y="15"
+                    >2</tspan>
         </text>
       </g>
       <g id="Graphic_404">
-        <circle cx="553" cy="618.6906" r="20.0000319580379" fill="#b50000" fill-opacity=".5162368"/>
+        <circle
+                    cx="553"
+                    cy="618.6906"
+                    r="20.0000319580379"
+                    fill="#b50000"
+                    fill-opacity=".5162368"
+                />
         <text transform="translate(542 609.1906)" fill="white">
-          <tspan font-family="Noto Sans Display" font-size="16" font-weight="400" fill="white" x="6.550781" y="15">3</tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="16"
+                        font-weight="400"
+                        fill="white"
+                        x="6.550781"
+                        y="15"
+                    >3</tspan>
         </text>
       </g>
       <g id="Group_421">
         <g id="Group_423">
           <g id="Group_431">
             <g id="Graphic_433">
-              <path d="M 172.98176 687.0453 L 432.98176 687.0453 L 380.98176 659.32044 L 224.98176 659.32044 Z" fill="url(#Obj_Gradient_8)"/>
-              <path d="M 172.98176 687.0453 L 432.98176 687.0453 L 380.98176 659.32044 L 224.98176 659.32044 Z" stroke="white" stroke-opacity=".4807276" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+              <path
+                                d="M 172.98176 687.0453 L 432.98176 687.0453 L 380.98176 659.32044 L 224.98176 659.32044 Z"
+                                fill="url(#Obj_Gradient_8)"
+                            />
+              <path
+                                d="M 172.98176 687.0453 L 432.98176 687.0453 L 380.98176 659.32044 L 224.98176 659.32044 Z"
+                                stroke="white"
+                                stroke-opacity=".4807276"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                stroke-width="2"
+                            />
             </g>
             <g id="Graphic_432">
-              <rect x="209.24012" y="530.8453" width="187.48327" height="137.53069" fill="url(#Obj_Gradient_9)"/>
-              <rect x="209.24012" y="530.8453" width="187.48327" height="137.53069" stroke="white" stroke-opacity=".4807276" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+              <rect
+                                x="209.24012"
+                                y="530.8453"
+                                width="187.48327"
+                                height="137.53069"
+                                fill="url(#Obj_Gradient_9)"
+                            />
+              <rect
+                                x="209.24012"
+                                y="530.8453"
+                                width="187.48327"
+                                height="137.53069"
+                                stroke="white"
+                                stroke-opacity=".4807276"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                stroke-width="2"
+                            />
             </g>
           </g>
           <g id="Group_424">
             <g id="Graphic_430">
-              <rect x="213.78617" y="541.5974" width="178.39117" height="122.05415" fill="url(#Obj_Gradient_10)"/>
-              <rect x="213.78617" y="541.5974" width="178.39117" height="122.05415" stroke="white" stroke-opacity=".4807276" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+              <rect
+                                x="213.78617"
+                                y="541.5974"
+                                width="178.39117"
+                                height="122.05415"
+                                fill="url(#Obj_Gradient_10)"
+                            />
+              <rect
+                                x="213.78617"
+                                y="541.5974"
+                                width="178.39117"
+                                height="122.05415"
+                                stroke="white"
+                                stroke-opacity=".4807276"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                stroke-width="2"
+                            />
             </g>
             <g id="Graphic_429">
-              <rect x="217.22902" y="555.68926" width="171.50547" height="107.96228" fill="url(#Obj_Gradient_11)"/>
-              <rect x="217.22902" y="555.68926" width="171.50547" height="107.96228" stroke="white" stroke-opacity=".4807276" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+              <rect
+                                x="217.22902"
+                                y="555.68926"
+                                width="171.50547"
+                                height="107.96228"
+                                fill="url(#Obj_Gradient_11)"
+                            />
+              <rect
+                                x="217.22902"
+                                y="555.68926"
+                                width="171.50547"
+                                height="107.96228"
+                                stroke="white"
+                                stroke-opacity=".4807276"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                stroke-width="1"
+                            />
             </g>
             <g id="Graphic_428">
-              <ellipse cx="223.2558" cy="549.5624" rx="3.50727468360258" ry="3.06344995446741" fill="url(#Obj_Gradient_12)"/>
-              <ellipse cx="223.2558" cy="549.5624" rx="3.50727468360258" ry="3.06344995446741" stroke="#a5a5a5" stroke-linecap="round" stroke-linejoin="round" stroke-width=".25"/>
+              <ellipse
+                                cx="223.2558"
+                                cy="549.5624"
+                                rx="3.50727468360258"
+                                ry="3.06344995446741"
+                                fill="url(#Obj_Gradient_12)"
+                            />
+              <ellipse
+                                cx="223.2558"
+                                cy="549.5624"
+                                rx="3.50727468360258"
+                                ry="3.06344995446741"
+                                stroke="#a5a5a5"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                stroke-width=".25"
+                            />
             </g>
             <g id="Graphic_427">
-              <ellipse cx="234.12835" cy="549.5624" rx="3.50727468360258" ry="3.06344995446741" fill="url(#Obj_Gradient_13)"/>
-              <ellipse cx="234.12835" cy="549.5624" rx="3.50727468360258" ry="3.06344995446741" stroke="#a5a5a5" stroke-linecap="round" stroke-linejoin="round" stroke-width=".25"/>
+              <ellipse
+                                cx="234.12835"
+                                cy="549.5624"
+                                rx="3.50727468360258"
+                                ry="3.06344995446741"
+                                fill="url(#Obj_Gradient_13)"
+                            />
+              <ellipse
+                                cx="234.12835"
+                                cy="549.5624"
+                                rx="3.50727468360258"
+                                ry="3.06344995446741"
+                                stroke="#a5a5a5"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                stroke-width=".25"
+                            />
             </g>
             <g id="Graphic_426">
-              <ellipse cx="245.00088" cy="549.5624" rx="3.50727468360258" ry="3.06344995446741" fill="url(#Obj_Gradient_14)"/>
-              <ellipse cx="245.00088" cy="549.5624" rx="3.50727468360258" ry="3.06344995446741" stroke="#a5a5a5" stroke-linecap="round" stroke-linejoin="round" stroke-width=".25"/>
+              <ellipse
+                                cx="245.00088"
+                                cy="549.5624"
+                                rx="3.50727468360258"
+                                ry="3.06344995446741"
+                                fill="url(#Obj_Gradient_14)"
+                            />
+              <ellipse
+                                cx="245.00088"
+                                cy="549.5624"
+                                rx="3.50727468360258"
+                                ry="3.06344995446741"
+                                stroke="#a5a5a5"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                stroke-width=".25"
+                            />
             </g>
             <g id="Graphic_425">
-              <rect x="217.41773" y="567.65155" width="171.72686" height="96" fill="url(#Obj_Gradient_15)"/>
-              <rect x="217.41773" y="567.65155" width="171.72686" height="96" stroke="white" stroke-opacity=".4807276" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+              <rect
+                                x="217.41773"
+                                y="567.65155"
+                                width="171.72686"
+                                height="96"
+                                fill="url(#Obj_Gradient_15)"
+                            />
+              <rect
+                                x="217.41773"
+                                y="567.65155"
+                                width="171.72686"
+                                height="96"
+                                stroke="white"
+                                stroke-opacity=".4807276"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                stroke-width="1"
+                            />
             </g>
             <g id="Graphic_435">
-              <rect x="283.78176" y="557.4707" width="104.95273" height="10.180822" fill="url(#Obj_Gradient_16)"/>
+              <rect
+                                x="283.78176"
+                                y="557.4707"
+                                width="104.95273"
+                                height="10.180822"
+                                fill="url(#Obj_Gradient_16)"
+                            />
             </g>
           </g>
         </g>
         <g id="Graphic_422">
           <text transform="translate(220.93775 555.0908)" fill="#d0d0d0">
-            <tspan font-family="Noto Sans Display" font-size="10" font-weight="400" fill="#d0d0d0" x="0" y="10">www.xyz.com</tspan>
+            <tspan
+                            font-family="Noto Sans Display"
+                            font-size="10"
+                            font-weight="400"
+                            fill="#d0d0d0"
+                            x="0"
+                            y="10"
+                        >www.xyz.com</tspan>
           </text>
         </g>
         <g id="Graphic_434">
           <text transform="translate(289.70554 555.0908)" fill="#666">
-            <tspan font-family="Noto Sans Display" font-size="10" font-weight="400" fill="#666" x="0" y="10">www.malicious.com</tspan>
+            <tspan
+                            font-family="Noto Sans Display"
+                            font-size="10"
+                            font-weight="400"
+                            fill="#666"
+                            x="0"
+                            y="10"
+                        >www.malicious.com</tspan>
           </text>
         </g>
       </g>
       <g id="Group_437">
         <g id="Graphic_440">
-          <path d="M 771 429.9011 L 771 197.50559 L 854.5 255.60447 L 854.5 488 Z" fill="url(#Obj_Gradient_17)"/>
-          <path d="M 771 429.9011 L 771 197.50559 L 854.5 255.60447 L 854.5 488 Z" stroke="white" stroke-opacity=".48790474" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+          <path
+                        d="M 771 429.9011 L 771 197.50559 L 854.5 255.60447 L 854.5 488 Z"
+                        fill="url(#Obj_Gradient_17)"
+                    />
+          <path
+                        d="M 771 429.9011 L 771 197.50559 L 854.5 255.60447 L 854.5 488 Z"
+                        stroke="white"
+                        stroke-opacity=".48790474"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                    />
         </g>
         <g id="Graphic_439">
-          <path d="M 938 429.9011 L 938 197.50559 L 854.5 255.60447 L 854.5 488 Z" fill="url(#Obj_Gradient_18)"/>
-          <path d="M 938 429.9011 L 938 197.50559 L 854.5 255.60447 L 854.5 488 Z" stroke="white" stroke-opacity=".48790474" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+          <path
+                        d="M 938 429.9011 L 938 197.50559 L 854.5 255.60447 L 854.5 488 Z"
+                        fill="url(#Obj_Gradient_18)"
+                    />
+          <path
+                        d="M 938 429.9011 L 938 197.50559 L 854.5 255.60447 L 854.5 488 Z"
+                        stroke="white"
+                        stroke-opacity=".48790474"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                    />
         </g>
         <g id="Graphic_438">
-          <path d="M 854.5 141 L 938 197.8885 L 854.5 254.777 L 771 197.8885 Z" fill="url(#Obj_Gradient_19)"/>
-          <path d="M 854.5 141 L 938 197.8885 L 854.5 254.777 L 771 197.8885 Z" stroke="white" stroke-opacity=".48790474" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+          <path
+                        d="M 854.5 141 L 938 197.8885 L 854.5 254.777 L 771 197.8885 Z"
+                        fill="url(#Obj_Gradient_19)"
+                    />
+          <path
+                        d="M 854.5 141 L 938 197.8885 L 854.5 254.777 L 771 197.8885 Z"
+                        stroke="white"
+                        stroke-opacity=".48790474"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                    />
         </g>
       </g>
       <g id="Graphic_436">
         <text transform="translate(816.543 175)" fill="white">
-          <tspan font-family="Noto Sans Display" font-size="16" font-weight="400" fill="white" x="0" y="15">Vulnerable</tspan>
-          <tspan font-family="Noto Sans Display" font-size="16" font-weight="400" fill="white" x="4.75" y="34">Webseite</tspan>
-          <tspan font-family="Noto Sans Display" font-size="16" font-weight="400" fill="white" x="5.0625" y="53">XYZ.com</tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="16"
+                        font-weight="400"
+                        fill="white"
+                        x="0"
+                        y="15"
+                    >Vulnerable</tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="16"
+                        font-weight="400"
+                        fill="white"
+                        x="4.75"
+                        y="34"
+                    >Webseite</tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="16"
+                        font-weight="400"
+                        fill="white"
+                        x="5.0625"
+                        y="53"
+                    >XYZ.com</tspan>
         </text>
       </g>
       <g id="Line_441">
-        <path d="M 388.7345 340.74533 C 477.48077 343.98464 615.7064 348.59237 707.3757 349.5423 C 727.2252 349.74797 743.6089 349.76886 757.10455 349.65187" marker-end="url(#FilledArrow_Marker)" stroke="#666" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+        <path
+                    d="M 388.7345 340.74533 C 477.48077 343.98464 615.7064 348.59237 707.3757 349.5423 C 727.2252 349.74797 743.6089 349.76886 757.10455 349.65187"
+                    marker-end="url(#FilledArrow_Marker)"
+                    stroke="#666"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                />
       </g>
       <g id="Group_447">
         <g id="Graphic_450">
-          <path d="M 771 792.9597 L 771 560.7984 L 854.5 618.8387 L 854.5 851 Z" fill="url(#Obj_Gradient_20)"/>
-          <path d="M 771 792.9597 L 771 560.7984 L 854.5 618.8387 L 854.5 851 Z" stroke="white" stroke-opacity=".4811747" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+          <path
+                        d="M 771 792.9597 L 771 560.7984 L 854.5 618.8387 L 854.5 851 Z"
+                        fill="url(#Obj_Gradient_20)"
+                    />
+          <path
+                        d="M 771 792.9597 L 771 560.7984 L 854.5 618.8387 L 854.5 851 Z"
+                        stroke="white"
+                        stroke-opacity=".4811747"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                    />
         </g>
         <g id="Graphic_449">
-          <path d="M 938 792.9597 L 938 560.7984 L 854.5 618.8387 L 854.5 851 Z" fill="url(#Obj_Gradient_21)"/>
-          <path d="M 938 792.9597 L 938 560.7984 L 854.5 618.8387 L 854.5 851 Z" stroke="white" stroke-opacity=".4811747" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+          <path
+                        d="M 938 792.9597 L 938 560.7984 L 854.5 618.8387 L 854.5 851 Z"
+                        fill="url(#Obj_Gradient_21)"
+                    />
+          <path
+                        d="M 938 792.9597 L 938 560.7984 L 854.5 618.8387 L 854.5 851 Z"
+                        stroke="white"
+                        stroke-opacity=".4811747"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                    />
         </g>
         <g id="Graphic_448">
-          <path d="M 854.5 504 L 938 560.968 L 854.5 617.936 L 771 560.968 Z" fill="url(#Obj_Gradient_22)"/>
-          <path d="M 854.5 504 L 938 560.968 L 854.5 617.936 L 771 560.968 Z" stroke="white" stroke-opacity=".4811747" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+          <path
+                        d="M 854.5 504 L 938 560.968 L 854.5 617.936 L 771 560.968 Z"
+                        fill="url(#Obj_Gradient_22)"
+                    />
+          <path
+                        d="M 854.5 504 L 938 560.968 L 854.5 617.936 L 771 560.968 Z"
+                        stroke="white"
+                        stroke-opacity=".4811747"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                    />
         </g>
       </g>
       <g id="Graphic_451">
         <text transform="translate(803.8203 548)" fill="white">
-          <tspan font-family="Noto Sans Display" font-size="16" font-weight="400" fill="white" x="18.21875" y="15">Angreifer</tspan>
-          <tspan font-family="Noto Sans Display" font-size="16" font-weight="400" fill="white" x="0" y="34">malicious.com</tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="16"
+                        font-weight="400"
+                        fill="white"
+                        x="18.21875"
+                        y="15"
+                    >Angreifer</tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="16"
+                        font-weight="400"
+                        fill="white"
+                        x="0"
+                        y="34"
+                    >malicious.com</tspan>
         </text>
       </g>
       <g id="Line_452">
-        <path d="M 775.3521 658.0453 C 775.3521 658.0453 668.2819 668.5179 534.457 652.8169 C 485.7823 647.10614 441.89317 638.90956 405.74767 630.7909" marker-end="url(#FilledArrow_Marker)" stroke="#666" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+        <path
+                    d="M 775.3521 658.0453 C 775.3521 658.0453 668.2819 668.5179 534.457 652.8169 C 485.7823 647.10614 441.89317 638.90956 405.74767 630.7909"
+                    marker-end="url(#FilledArrow_Marker)"
+                    stroke="#666"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                />
       </g>
       <g id="Line_453">
-        <path d="M 217.22902 387.15906 C 182.89415 411.86736 152.68592 442.4339 158.89085 470.7544 C 170.1398 522.0968 296.6398 545.85884 337.6744 552.2528" marker-end="url(#FilledArrow_Marker)" stroke="#666" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+        <path
+                    d="M 217.22902 387.15906 C 182.89415 411.86736 152.68592 442.4339 158.89085 470.7544 C 170.1398 522.0968 296.6398 545.85884 337.6744 552.2528"
+                    marker-end="url(#FilledArrow_Marker)"
+                    stroke="#666"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                />
       </g>
       <g id="Graphic_454">
-        <circle cx="535.5" cy="314.5" r="20.0000319580379" fill="#b50000" fill-opacity=".5162368"/>
+        <circle
+                    cx="535.5"
+                    cy="314.5"
+                    r="20.0000319580379"
+                    fill="#b50000"
+                    fill-opacity=".5162368"
+                />
         <text transform="translate(524.5 305)" fill="white">
-          <tspan font-family="Noto Sans Display" font-size="16" font-weight="400" fill="white" x="6.550781" y="15">1</tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="16"
+                        font-weight="400"
+                        fill="white"
+                        x="6.550781"
+                        y="15"
+                    >1</tspan>
         </text>
       </g>
       <g id="Graphic_455">
         <text transform="translate(177.98176 434.8453)" fill="black">
-          <tspan font-family="Noto Sans Display" font-size="16" font-weight="400" fill="black" x="0" y="15">während der Nutzer </tspan>
-          <tspan font-family="Noto Sans Display" font-size="16" font-weight="400" fill="black" x="0" y="34">eingeloggt ist öffnet er </tspan>
-          <tspan font-family="Noto Sans Display" font-size="16" font-weight="400" fill="black" x="0" y="53">die Seite des Angreifers</tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="16"
+                        font-weight="400"
+                        fill="black"
+                        x="0"
+                        y="15"
+                    >während der Nutzer </tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="16"
+                        font-weight="400"
+                        fill="black"
+                        x="0"
+                        y="34"
+                    >eingeloggt ist öffnet er </tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="16"
+                        font-weight="400"
+                        fill="black"
+                        x="0"
+                        y="53"
+                    >die Seite des Angreifers</tspan>
         </text>
       </g>
       <g id="Group_456">
         <g id="Graphic_458">
-          <path d="M 508.65885 658.0453 L 575.65885 658.0453 C 577.868 658.0453 579.65885 659.8362 579.65885 662.0453 L 579.65885 750.0453 C 579.65885 752.2545 577.868 754.0453 575.65885 754.0453 L 508.65885 754.0453 C 506.4497 754.0453 504.65885 752.2545 504.65885 750.0453 L 504.65885 662.0453 C 504.65885 659.8362 506.4497 658.0453 508.65885 658.0453 Z" fill="#dadada"/>
+          <path
+                        d="M 508.65885 658.0453 L 575.65885 658.0453 C 577.868 658.0453 579.65885 659.8362 579.65885 662.0453 L 579.65885 750.0453 C 579.65885 752.2545 577.868 754.0453 575.65885 754.0453 L 508.65885 754.0453 C 506.4497 754.0453 504.65885 752.2545 504.65885 750.0453 L 504.65885 662.0453 C 504.65885 659.8362 506.4497 658.0453 508.65885 658.0453 Z"
+                        fill="#dadada"
+                    />
         </g>
         <g id="Graphic_457" filter="url(#Shadow)">
-          <path d="M 508.65885 703.6908 L 575.65885 703.6908 C 577.868 703.6908 579.65885 705.4817 579.65885 707.6908 L 579.65885 712.6908 C 579.65885 714.9 577.868 716.6908 575.65885 716.6908 L 508.65885 716.6908 C 506.4497 716.6908 504.65885 714.9 504.65885 712.6908 L 504.65885 707.6908 C 504.65885 705.4817 506.4497 703.6908 508.65885 703.6908 Z" fill="red"/>
+          <path
+                        d="M 508.65885 703.6908 L 575.65885 703.6908 C 577.868 703.6908 579.65885 705.4817 579.65885 707.6908 L 579.65885 712.6908 C 579.65885 714.9 577.868 716.6908 575.65885 716.6908 L 508.65885 716.6908 C 506.4497 716.6908 504.65885 714.9 504.65885 712.6908 L 504.65885 707.6908 C 504.65885 705.4817 506.4497 703.6908 508.65885 703.6908 Z"
+                        fill="red"
+                    />
         </g>
       </g>
       <g id="Graphic_459">
         <text transform="translate(578 620)" fill="black">
-          <tspan font-family="Noto Sans Display" font-size="16" font-weight="400" fill="black" x="20.160156" y="15">die Webseite mit </tspan>
-          <tspan font-family="Noto Sans Display" font-size="16" font-weight="400" fill="black" x="2.2226562" y="34">dem Schadcode  wird </tspan>
-          <tspan font-family="Noto Sans Display" font-size="16" font-weight="400" fill="black" x="37.79297" y="53">ausgeliefert</tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="16"
+                        font-weight="400"
+                        fill="black"
+                        x="20.160156"
+                        y="15"
+                    >die Webseite mit </tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="16"
+                        font-weight="400"
+                        fill="black"
+                        x="2.2226562"
+                        y="34"
+                    >dem Schadcode  wird </tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="16"
+                        font-weight="400"
+                        fill="black"
+                        x="37.79297"
+                        y="53"
+                    >ausgeliefert</tspan>
         </text>
       </g>
       <g id="Line_460">
-        <path d="M 329.7323 598.6906 C 377.3261 586.92176 481.382 560.2871 584 528.0303 C 690.4287 494.57567 757.0428 467.1027 782.50315 456.0242" marker-end="url(#FilledArrow_Marker)" stroke="#666" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+        <path
+                    d="M 329.7323 598.6906 C 377.3261 586.92176 481.382 560.2871 584 528.0303 C 690.4287 494.57567 757.0428 467.1027 782.50315 456.0242"
+                    marker-end="url(#FilledArrow_Marker)"
+                    stroke="#666"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                />
       </g>
       <g id="Graphic_461">
-        <circle cx="490" cy="529.2424" r="20.0000319580379" fill="#b50000" fill-opacity=".5162368"/>
+        <circle
+                    cx="490"
+                    cy="529.2424"
+                    r="20.0000319580379"
+                    fill="#b50000"
+                    fill-opacity=".5162368"
+                />
         <text transform="translate(479 519.7424)" fill="white">
-          <tspan font-family="Noto Sans Display" font-size="16" font-weight="400" fill="white" x="6.550781" y="15">4</tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="16"
+                        font-weight="400"
+                        fill="white"
+                        x="6.550781"
+                        y="15"
+                    >4</tspan>
         </text>
       </g>
       <g id="Graphic_462" filter="url(#Shadow)">
-        <path d="M 519.5 512 L 586.5 512 C 588.70914 512 590.5 513.79086 590.5 516 L 590.5 521 C 590.5 523.20914 588.70914 525 586.5 525 L 519.5 525 C 517.29086 525 515.5 523.20914 515.5 521 L 515.5 516 C 515.5 513.79086 517.29086 512 519.5 512 Z" fill="#ff9e00"/>
+        <path
+                    d="M 519.5 512 L 586.5 512 C 588.70914 512 590.5 513.79086 590.5 516 L 590.5 521 C 590.5 523.20914 588.70914 525 586.5 525 L 519.5 525 C 517.29086 525 515.5 523.20914 515.5 521 L 515.5 516 C 515.5 513.79086 517.29086 512 519.5 512 Z"
+                    fill="#ff9e00"
+                />
       </g>
       <g id="Graphic_463">
         <text transform="translate(490.41406 434.8453)" fill="black">
-          <tspan font-family="Noto Sans Display" font-size="16" font-weight="400" fill="black" x="13.328125" y="15">die vom Angreifer </tspan>
-          <tspan font-family="Noto Sans Display" font-size="16" font-weight="400" fill="black" x="7.984375" y="34">vorbereitet Anfrage </tspan>
-          <tspan font-family="Noto Sans Display" font-size="16" font-weight="400" fill="black" x="0" y="53">wird im Namen von A</tspan>
-          <tspan font-family="Noto Sans Display" font-size="16" font-weight="400" fill="black" x="37.78125" y="72">ausgeführt</tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="16"
+                        font-weight="400"
+                        fill="black"
+                        x="13.328125"
+                        y="15"
+                    >die vom Angreifer </tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="16"
+                        font-weight="400"
+                        fill="black"
+                        x="7.984375"
+                        y="34"
+                    >vorbereitet Anfrage </tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="16"
+                        font-weight="400"
+                        fill="black"
+                        x="0"
+                        y="53"
+                    >wird im Namen von A</tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="16"
+                        font-weight="400"
+                        fill="black"
+                        x="37.78125"
+                        y="72"
+                    >ausgeführt</tspan>
         </text>
       </g>
       <g id="Graphic_464">
         <text transform="translate(297.64582 390.8453)" fill="white">
-          <tspan font-family="Noto Sans Display" font-size="16" font-weight="400" fill="white" x="0" y="15">A</tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="16"
+                        font-weight="400"
+                        fill="white"
+                        x="0"
+                        y="15"
+                    >A</tspan>
         </text>
       </g>
       <g id="Graphic_465">
         <text transform="translate(297.64582 663.0453)" fill="white">
-          <tspan font-family="Noto Sans Display" font-size="16" font-weight="400" fill="white" x="0" y="15">A</tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="16"
+                        font-weight="400"
+                        fill="white"
+                        x="0"
+                        y="15"
+                    >A</tspan>
         </text>
       </g>
       <g id="Graphic_482" filter="url(#Shadow)">
-        <path d="M 269.48176 598.6906 L 336.48176 598.6906 C 338.6909 598.6906 340.48176 600.4815 340.48176 602.6906 L 340.48176 607.6906 C 340.48176 609.8998 338.6909 611.6906 336.48176 611.6906 L 269.48176 611.6906 C 267.27262 611.6906 265.48176 609.8998 265.48176 607.6906 L 265.48176 602.6906 C 265.48176 600.4815 267.27262 598.6906 269.48176 598.6906 Z" fill="red"/>
+        <path
+                    d="M 269.48176 598.6906 L 336.48176 598.6906 C 338.6909 598.6906 340.48176 600.4815 340.48176 602.6906 L 340.48176 607.6906 C 340.48176 609.8998 338.6909 611.6906 336.48176 611.6906 L 269.48176 611.6906 C 267.27262 611.6906 265.48176 609.8998 265.48176 607.6906 L 265.48176 602.6906 C 265.48176 600.4815 267.27262 598.6906 269.48176 598.6906 Z"
+                    fill="red"
+                />
       </g>
     </g>
   </g>

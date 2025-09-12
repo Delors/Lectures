@@ -559,7 +559,7 @@ CWE-416: Use After Free - Triviales Beispiel
       logError("operation aborted before commit", ptr);
     }
 
-.. hint:: 
+.. hint::
 
     Ziel ist es im Allgemeinen eine Referenz auf einen interessanten Speicherbereich zu erhalten, der bereits freigegeben wurde und dann den Inhalt dieses Speicherbereichs auszulesen bzw. zu manipulieren, um die nächste Verwendung zu kontrollieren.
 
@@ -796,7 +796,7 @@ CWE-20: Improper Input Validation - zu verifizierende Werte und Eigenschaften
 -------------------------------------------------------------------------------
 
 .. story::
-    
+
   .. class:: incremental-list dd-margin-left-3em
 
   :Größen: Z. B. Länge, Häufigkeit, Preis, Rate, Anzahl der Vorgänge, Zeit usw.
@@ -813,14 +813,14 @@ CWE-20: Improper Input Validation - zu verifizierende Werte und Eigenschaften
 O'Reilly ist keine SQL Injection
 -------------------------------------------------------------------------------
 
-.. observation:: 
+.. observation::
 
     Ein Name wie ``O'Reily`` stellt ein Problem dar, wenn er in ein SQL Statement eingefügt wird, sollte jedoch von der Anwendung verarbeitet werden können und die Eingabevalidierung passieren.
 
-.. hint:: 
+.. hint::
     :class: incremental
 
-    Die Validierung muss immer in Hinblick auf den Kontext erfolgen. 
+    Die Validierung muss immer in Hinblick auf den Kontext erfolgen.
 
 
 
@@ -847,7 +847,7 @@ CWE-20: Improper Input Validation - Beispiel: Partielle Validierung in C
         ...
 
     .. warning::
-        :class: incremental 
+        :class: incremental
 
         Ein vergleichbares Problem ist auch in sicheren Programmiersprachen möglich.
 
@@ -1025,7 +1025,7 @@ CWE-22: Path Traversal - Beispiel: partielle Validierung
 CWE-22: Path Traversal - Beispiel: verwirrende Python API\ [#]_
 ----------------------------------------------------------------
 
-.. grid:: 
+.. grid::
 
     .. cell::
 
@@ -1114,7 +1114,7 @@ CWE-352: Cross-Site Request Forgery (CSRF) in 2023
 
     -- `CVE-2023-45128 <https://nvd.nist.gov/vuln/detail/CVE-2023-45128>`__ (übersetzt mit DeepL)
 
-.. remark:: 
+.. remark::
 
     Identifizierte Schwachstellen: *CWE-20* Improper Input Validation, *CWE-807* Reliance on Untrusted Inputs in a Security Decision, *CWE-565* Reliance on Cookies without Validation and Integrity Checking, **CWE-352** Cross-Site Request Forgery
 
@@ -1670,7 +1670,7 @@ Dump C /  C++
 .. image:: screenshots/dump_c_c++_2024_02_27.webp
     :alt: Dump C / C++
     :align: center
-    :class: retina
+    :class: screenshot
 
 
 .. class:: s-vertical-title
@@ -1681,7 +1681,6 @@ C++ is missjudged by the White House
 .. image:: screenshots/c++_creator_rebuts_white_house_warning-infoworld_2024_03_26.webp
     :alt: C++ is missjudged
     :align: center
-    :class: retina
 
 
 
@@ -1822,7 +1821,7 @@ OWASP
 
 .. note::
     :class: dd-margin-left-3em
-    
+
     **URL Encoding**
 
     :%20: Leerzeichen
