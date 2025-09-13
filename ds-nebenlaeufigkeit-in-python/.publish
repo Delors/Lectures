@@ -1,10 +1,10 @@
 folien.de.rst.html
 folien.de.rst.html.pdf
 
-images/threads/coroutines.svg
-images/threads/multiprocessing.svg
-images/threads/python-threads.svg
-images/threads/threads_classical.svg
-images/threads/threads_new.svg
-images/threads/threads.svg
-images/threads/python-thread-states.svg
+drawings/threads/coroutines.svg
+drawings/threads/multiprocessing.svg
+drawings/threads/python-threads.svg
+drawings/threads/threads_classical.svg
+drawings/threads/threads_new.svg
+drawings/threads/threads.svg
+drawings/threads/python-thread-states.svg

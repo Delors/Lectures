@@ -68,25 +68,25 @@ Prozesse vs. Threads vs. Coroutines in Python
 
   .. card::
 
-    .. image:: images/threads/multiprocessing.svg
+    .. image:: drawings/threads/multiprocessing.svg
       :alt: Multiprocessing in Python
       :align: center
 
   .. card:: overlay
 
-    .. image:: images/threads/threads_classical.svg
+    .. image:: drawings/threads/threads_classical.svg
       :alt: Klassisches Threading in Python
       :align: center
 
   .. card:: overlay
 
-    .. image:: images/threads/coroutines.svg
+    .. image:: drawings/threads/coroutines.svg
       :alt: Coroutines in Python
       :align: center
 
   .. card:: overlay
 
-    .. image:: images/threads/threads_new.svg
+    .. image:: drawings/threads/threads_new.svg
       :alt: Neues Multithreading in Python
       :align: center
 
@@ -113,7 +113,7 @@ Nebenläufigkeit in Python
 
   .. card::
 
-    .. image:: images/threads/python-threads.svg
+    .. image:: drawings/threads/python-threads.svg
       :alt: threading.Thread
       :align: center
 
@@ -155,7 +155,7 @@ Inter-``Thread``/``Process``- Koordination
 Python Thread States
 ----------------------------------------------------------------------
 
-.. image:: images/threads/python-thread-states.svg
+.. image:: drawings/threads/python-thread-states.svg
    :alt: Python Thread States
    :align: center
 

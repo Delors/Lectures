@@ -1,9 +1,9 @@
 folien.de.rst.html
 folien.de.rst.html.pdf
 
-images/threads/fibres.svg
-images/threads/java-thread-states.svg
-images/threads/java-threads.svg
-images/threads/monitor.svg
-images/threads/threads.svg
-images/threads/virtual_threads.svg
+drawings/threads/fibres.svg
+drawings/threads/java-thread-states.svg
+drawings/threads/java-threads.svg
+drawings/threads/monitor.svg
+drawings/threads/threads.svg
+drawings/threads/virtual_threads.svg

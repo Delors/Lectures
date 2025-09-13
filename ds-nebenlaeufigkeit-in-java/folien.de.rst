@@ -52,18 +52,18 @@ Prozesse vs. Threads
 
   .. card::
 
-    .. image:: images/threads/threads.svg
+    .. image:: drawings/threads/threads.svg
       :alt: Prozesse vs. Threads
       :align: center
 
   .. card:: overlay
 
-    .. image:: images/threads/fibres.svg
+    .. image:: drawings/threads/fibres.svg
       :align: center
 
   .. card:: overlay
 
-    .. image:: images/threads/virtual_threads.svg
+    .. image:: drawings/threads/virtual_threads.svg
       :align: center
 
 
@@ -83,7 +83,7 @@ Kommunikation und Synchronisation mit Hilfe von *Monitoren*
 
 Ein *Monitor* ist ein Objekt, bei dem die Methoden im wechselseitigen Ausschluss (engl. *mutual exclusion*) ausgeführt werden.
 
-.. image:: images/threads/monitor.svg
+.. image:: drawings/threads/monitor.svg
   :alt: Monitor
   :align: right
 
@@ -119,7 +119,7 @@ Kommunikation zwischen Threads mit Hilfe von Monitoren
 Nebenläufigkeit in Java
 --------------------------------------------------------------------------------
 
-.. image:: images/threads/java-threads.svg
+.. image:: drawings/threads/java-threads.svg
    :alt: java.lang.Thread
    :align: center
 
@@ -156,7 +156,7 @@ Inter-Thread-Kommunikation bzw. Koordination
 Java Thread States
 --------------------------------------------------------------------------------
 
-.. image:: images/threads/java-thread-states.svg
+.. image:: drawings/threads/java-thread-states.svg
    :alt: Java Thread States
    :align: center
 
