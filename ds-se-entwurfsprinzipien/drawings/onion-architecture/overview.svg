@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+    "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg
+    xmlns:xl="http://www.w3.org/1999/xlink"
+    version="1.1"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="50 20 635 577"
+width="1053"
+height="990.5999999999999"
+>
+<style>
+  @import url('/LectureDoc2/ext/fonts/ld-fonts.css');
+</style>
+<defs>
+    <radialGradient cx="0" cy="0" r="1" id="Gradient" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="white" />
+      <stop offset="1" stop-color="#e3e3e3" />
+    </radialGradient>
+    <radialGradient
+            id="Obj_Gradient"
+            xl:href="#Gradient"
+            gradientTransform="translate(645 533.7084) rotate(-90) scale(46.07972)"
+        />
+    <radialGradient
+            id="Obj_Gradient_2"
+            xl:href="#Gradient"
+            gradientTransform="translate(645 509.5672) rotate(-90) scale(28.934463)"
+        />
+    <marker
+            orient="auto"
+            overflow="visible"
+            markerUnits="strokeWidth"
+            id="FilledArrow_Marker"
+            stroke-linejoin="miter"
+            stroke-miterlimit="10"
+            viewBox="-1 -3 6 6"
+            markerWidth="6"
+            markerHeight="6"
+            color="#666"
+        >
+      <g>
+        <path
+                    d="M 3.2 0 L 0 -1.2 L 0 1.2 Z"
+                    fill="currentColor"
+                    stroke="currentColor"
+                    stroke-width="1"
+                />
+      </g>
+    </marker>
+  </defs>
+  <metadata> Produced by OmniGraffle 8.0\n2025-04-28 11:02:04 +0000</metadata>
+  <g
+        id="onion-architecture"
+        fill="none"
+        stroke="none"
+        stroke-dasharray="none"
+        stroke-opacity="1"
+        fill-opacity="1"
+    >
+    <title>onion-architecture</title>
+    <g id="onion-architecture_overview">
+      <title>overview</title>
+      <g id="Graphic_3">
+        <path
+                    d="M 592.00616 94.20702 C 715.9982 206.48268 715.9982 388.51732 592.00616 500.793 C 468.0148 613.0692 266.9852 613.0692 142.99384 500.793 C 19.00184 388.51732 19.00184 206.48268 142.99384 94.20702 C 266.9852 -18.0692 468.0148 -18.0692 592.00616 94.20702"
+                    fill="white"
+                />
+      </g>
+      <g id="Graphic_9">
+        <path
+                    d="M 584.45415 115.54583 C 477.06005 8.151207 302.93995 8.151207 195.54585 115.54583 C 88.1512 222.9399 88.1512 397.05996 195.54585 504.45403 C 302.93995 611.84866 477.06005 611.84866 584.45415 504.45403 C 691.8488 397.05996 691.8488 222.9399 584.45415 115.54583 M 531.4212 168.57877 C 609.5264 246.68355 609.5264 373.3163 531.4212 451.4211 C 453.3164 529.5263 326.6836 529.5263 248.5788 451.4211 C 170.4736 373.3163 170.4736 246.68355 248.5788 168.57877 C 326.6836 90.47359 453.3164 90.47359 531.4212 168.57877"
+                    fill="#be8282"
+                />
+      </g>
+      <g id="Graphic_6">
+        <path
+                    d="M 531.4212 168.5788 C 609.5264 246.6836 609.5264 373.3164 531.4212 451.4212 C 453.3164 529.5264 326.6836 529.5264 248.5788 451.4212 C 170.4736 373.3164 170.4736 246.6836 248.5788 168.5788 C 326.6836 90.4736 453.3164 90.4736 531.4212 168.5788"
+                    fill="#fdb654"
+                    fill-opacity=".463526"
+                />
+      </g>
+      <g id="Graphic_4">
+        <circle
+                    cx="390"
+                    cy="310"
+                    r="130.000207727246"
+                    fill="#fdb654"
+                    fill-opacity=".463526"
+                />
+      </g>
+      <g id="Graphic_5">
+        <circle
+                    cx="390"
+                    cy="310"
+                    r="65.0001038636233"
+                    fill="#fdb654"
+                    fill-opacity=".463526"
+                />
+        <text transform="translate(343 286)" fill="#666">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="18"
+                        font-weight="700"
+                        fill="#666"
+                        x="13.601"
+                        y="19"
+                        xml:space="preserve"
+                    >Domain </tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="18"
+                        font-weight="700"
+                        fill="#666"
+                        x="20.423"
+                        y="43"
+                        xml:space="preserve"
+                    >Model</tspan>
+        </text>
+      </g>
+      <g id="Graphic_10">
+        <text transform="translate(319.107 210)" fill="#666">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="18"
+                        font-weight="700"
+                        fill="#666"
+                        x="5684342e-20"
+                        y="19"
+                        xml:space="preserve"
+                    >Domain Services</tspan>
+        </text>
+      </g>
+      <g id="Graphic_11">
+        <text transform="translate(300.651 151.44)" fill="#666">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="18"
+                        font-weight="700"
+                        fill="#666"
+                        x="39790393e-20"
+                        y="19"
+                        xml:space="preserve"
+                    >Anwendungs Services</tspan>
+        </text>
+      </g>
+      <g id="Graphic_12">
+        <rect x="235" y="360" width="311.48" height="34" fill="#fe7100" />
+        <text transform="translate(240 365)" fill="white">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="18"
+                        font-weight="700"
+                        fill="white"
+                        x="74.582005"
+                        y="19"
+                        xml:space="preserve"
+                    >Anwendungskern</tspan>
+        </text>
+      </g>
+      <g id="Graphic_13">
+        <text transform="translate(385.711 60)" fill="white">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="18"
+                        font-weight="400"
+                        fill="white"
+                        x="15987212e-20"
+                        y="19"
+                        xml:space="preserve"
+                    >UI</tspan>
+        </text>
+      </g>
+      <g id="Graphic_14">
+        <text transform="translate(225.6347 490.10526) rotate(-135)" fill="white">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="18"
+                        font-weight="400"
+                        fill="white"
+                        x="0"
+                        y="19"
+                        xml:space="preserve"
+                    >Tests</tspan>
+        </text>
+      </g>
+      <g id="Graphic_15">
+        <text transform="translate(623.3879 411.39443) rotate(128)" fill="white">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="18"
+                        font-weight="400"
+                        fill="white"
+                        x="0"
+                        y="19"
+                        xml:space="preserve"
+                    >Infrastruktur</tspan>
+        </text>
+      </g>
+      <g id="Line_16">
+        <line
+                    x1="165"
+                    y1="150"
+                    x2="226.9833"
+                    y2="194.07702"
+                    stroke="white"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                />
+      </g>
+      <g id="Line_18">
+        <line
+                    x1="635"
+                    y1="180"
+                    x2="566.4594"
+                    y2="220"
+                    stroke="white"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                />
+      </g>
+      <g id="Line_19">
+        <line
+                    x1="385"
+                    y1="510"
+                    x2="385"
+                    y2="585.00014"
+                    stroke="white"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                />
+      </g>
+      <g id="Group_33">
+        <g id="Graphic_37">
+          <path
+                        d="M 620.1491 556.2563 C 619.35315 560.49576 621.74424 564.89986 627.32236 568.15015 C 637.08545 573.839 652.91454 573.839 662.6776 568.15015 C 668.25575 564.89986 670.64685 560.49576 669.8509 556.2563 L 670 556.2563 L 670 510.73374 L 669.9202 510.73374 C 670.483 506.6271 668.0688 502.408 662.67764 499.26666 C 652.91455 493.5778 637.08546 493.5778 627.32236 499.26666 C 621.9312 502.408 619.517 506.62713 620.0798 510.73374 L 620 510.73374 L 620 556.2563 Z"
+                        fill="url(#Obj_Gradient)"
+                    />
+          <path
+                        d="M 620.1491 556.2563 C 619.35315 560.49576 621.74424 564.89986 627.32236 568.15015 C 637.08545 573.839 652.91454 573.839 662.6776 568.15015 C 668.25575 564.89986 670.64685 560.49576 669.8509 556.2563 L 670 556.2563 L 670 510.73374 L 669.9202 510.73374 C 670.483 506.6271 668.0688 502.408 662.67764 499.26666 C 652.91455 493.5778 637.08546 493.5778 627.32236 499.26666 C 621.9312 502.408 619.517 506.62713 620.0798 510.73374 L 620 510.73374 L 620 556.2563 Z"
+                        stroke="#b4b4b4"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="1"
+                    />
+        </g>
+        <g id="Graphic_36">
+          <ellipse
+                        cx="645"
+                        cy="509.5672"
+                        rx="25.0000259094472"
+                        ry="14.5672410308915"
+                        fill="url(#Obj_Gradient_2)"
+                    />
+          <ellipse
+                        cx="645"
+                        cy="509.5672"
+                        rx="25.0000259094472"
+                        ry="14.5672410308915"
+                        stroke="#b4b4b4"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="1"
+                    />
+        </g>
+        <g id="Line_35">
+          <path
+                        d="M 620 524.59065 C 620 525.6996 620.97656 539.32726 645 539.32726 C 669.0234 539.32726 669.96945 525.9272 669.96945 525.103"
+                        stroke="#b4b4b4"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="1"
+                    />
+        </g>
+        <g id="Line_34">
+          <path
+                        d="M 620.03055 539.7835 C 620.03055 540.89243 621.0071 554.5201 645.0305 554.5201 C 669.05394 554.5201 670 541.12005 670 540.2958"
+                        stroke="#b4b4b4"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="1"
+                    />
+        </g>
+      </g>
+      <g id="Graphic_32">
+        <text transform="translate(633.3 530)" fill="#5e5e5e">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="18"
+                        font-weight="400"
+                        fill="#5e5e5e"
+                        x="7283063e-19"
+                        y="19"
+                        xml:space="preserve"
+                    >DB</tspan>
+        </text>
+      </g>
+      <g id="Line_38">
+        <line
+                    x1="612.28224"
+                    y1="475"
+                    x2="624.67334"
+                    y2="483.9409"
+                    marker-end="url(#FilledArrow_Marker)"
+                    stroke="#666"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="4"
+                />
+      </g>
+    </g>
+  </g>
+</svg>

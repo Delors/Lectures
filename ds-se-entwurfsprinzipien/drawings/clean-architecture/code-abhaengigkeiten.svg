@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+    "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg
+    xmlns:xl="http://www.w3.org/1999/xlink"
+    xmlns="http://www.w3.org/2000/svg"
+    version="1.1"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    viewBox="200 30 919 419"
+width="2157"
+height="1167"
+>
+<style>
+  @import url('/LectureDoc2/ext/fonts/ld-fonts.css');
+</style>
+<defs>
+    <marker
+            orient="auto"
+            overflow="visible"
+            markerUnits="strokeWidth"
+            id="FilledArrow_Marker"
+            stroke-linejoin="miter"
+            stroke-miterlimit="10"
+            viewBox="-1 -3 8 6"
+            markerWidth="8"
+            markerHeight="6"
+            color="#c71836"
+        >
+      <g>
+        <path
+                    d="M 5.3333317 0 L 0 -1.9999994 L 0 1.9999994 Z"
+                    fill="currentColor"
+                    stroke="currentColor"
+                    stroke-width="1"
+                />
+      </g>
+    </marker>
+  </defs>
+  <metadata> Produced by OmniGraffle 8.0\n2024-01-30 09:09:23 +0000</metadata>
+  <g
+        id="Canvas_1"
+        stroke-opacity="1"
+        stroke-dasharray="none"
+        fill="none"
+        stroke="none"
+        fill-opacity="1"
+    >
+    <title>architecture</title>
+    <g id="drawing-area_Master_layer">
+      <title>Master layer</title>
+      <g id="Graphic_2">
+        <rect x="905" y="405" width="10" height="10" fill="white" />
+      </g>
+    </g>
+    <g id="Canvas_1_code-dependencies">
+      <title>code-dependencies</title>
+      <g id="Line_87">
+        <line
+                    x1="700.3037"
+                    y1="395.6818"
+                    x2="796.2339"
+                    y2="395.121"
+                    marker-end="url(#FilledArrow_Marker)"
+                    stroke="#c71836"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="3"
+                />
+      </g>
+      <g id="Graphic_86">
+        <text transform="translate(699.0654 368.96973)" fill="#666">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="14"
+                        font-weight="400"
+                        fill="#666"
+                        x="0"
+                        y="14"
+                    >Codeabhängigkeit</tspan>
+        </text>
+      </g>
+      <g id="Line_90">
+        <line
+                    x1="385"
+                    y1="210"
+                    x2="412.82855"
+                    y2="210"
+                    marker-end="url(#FilledArrow_Marker)"
+                    stroke="#c71836"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="3"
+                />
+      </g>
+      <g id="Line_91">
+        <line
+                    x1="335"
+                    y1="195"
+                    x2="362.82855"
+                    y2="195"
+                    marker-end="url(#FilledArrow_Marker)"
+                    stroke="#c71836"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="3"
+                />
+      </g>
+      <g id="Line_92">
+        <line
+                    x1="288.3129"
+                    y1="180"
+                    x2="316.14145"
+                    y2="180"
+                    marker-end="url(#FilledArrow_Marker)"
+                    stroke="#c71836"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="3"
+                />
+      </g>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,355 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+    "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg
+    xmlns:xl="http://www.w3.org/1999/xlink"
+    version="1.1"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="84 9 422 132"
+width="1266"
+height="396"
+>
+<style>
+  @import url('/LectureDoc2/ext/fonts/ld-fonts.css');
+</style>
+<defs>
+    <marker
+            orient="auto"
+            overflow="visible"
+            markerUnits="strokeWidth"
+            id="FilledArrow_Marker"
+            stroke-linejoin="miter"
+            stroke-miterlimit="10"
+            viewBox="-1 -4 9 8"
+            markerWidth="9"
+            markerHeight="8"
+            color="black"
+        >
+      <g>
+        <path
+                    d="M 6.857141 0 L 0 -2.5714278 L 0 2.5714278 Z"
+                    fill="currentColor"
+                    stroke="currentColor"
+                    stroke-width="1"
+                />
+      </g>
+    </marker>
+  </defs>
+  <metadata> Produced by OmniGraffle 8.0\n2025-04-28 12:50:36 +0000</metadata>
+  <g
+        id="effective-segregation"
+        fill="none"
+        stroke="none"
+        stroke-dasharray="none"
+        stroke-opacity="1"
+        fill-opacity="1"
+    >
+    <title>effective-segregation</title>
+    <g id="effective-segregation_Layer_1">
+      <title>Layer 1</title>
+      <g id="Graphic_5">
+        <rect x="85" y="100" width="105" height="40" fill="#ec220e" />
+        <rect
+                    x="85"
+                    y="100"
+                    width="105"
+                    height="40"
+                    stroke="white"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
+        <text transform="translate(90 110.5)" fill="white">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="14"
+                        font-weight="700"
+                        fill="white"
+                        x="16.819"
+                        y="15"
+                        xml:space="preserve"
+                    >Webshop</tspan>
+        </text>
+      </g>
+      <g id="Graphic_3">
+        <rect x="409.574" y="100" width="95" height="40" fill="#68bc36" />
+        <rect
+                    x="409.574"
+                    y="100"
+                    width="95"
+                    height="40"
+                    stroke="white"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
+        <text transform="translate(414.574 110.5)" fill="black">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="14"
+                        font-weight="700"
+                        fill="black"
+                        x="13.163"
+                        y="15"
+                        xml:space="preserve"
+                    >Inventar</tspan>
+        </text>
+      </g>
+      <g id="Graphic_7">
+        <rect x="225" y="100" width="90" height="40" fill="#9ebc8d" />
+        <rect
+                    x="225"
+                    y="100"
+                    width="90"
+                    height="40"
+                    stroke="white"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
+        <text transform="translate(230 110.5)" fill="white">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="14"
+                        font-style="italic"
+                        font-weight="700"
+                        fill="white"
+                        x="12.581"
+                        y="15"
+                        xml:space="preserve"
+                    >Inventar</tspan>
+        </text>
+      </g>
+      <g id="Graphic_10">
+        <text transform="translate(289.574 100)" fill="white">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="14"
+                        font-weight="700"
+                        fill="white"
+                        x="0"
+                        y="15"
+                        xml:space="preserve"
+                    >&lt;I&gt;</tspan>
+        </text>
+      </g>
+      <g id="Line_11">
+        <line
+                    x1="190.5"
+                    y1="120"
+                    x2="207.48572"
+                    y2="120"
+                    marker-end="url(#FilledArrow_Marker)"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                />
+      </g>
+      <g id="Line_14">
+        <line
+                    x1="409.074"
+                    y1="120"
+                    x2="332.5143"
+                    y2="120"
+                    marker-end="url(#FilledArrow_Marker)"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                />
+      </g>
+      <g id="Graphic_15">
+        <text transform="translate(192.27657 123)" fill="#666">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="12"
+                        font-weight="400"
+                        fill="#666"
+                        x="0"
+                        y="13"
+                        xml:space="preserve"
+                    >nutzt</tspan>
+        </text>
+      </g>
+      <g id="Graphic_17">
+        <text transform="translate(320 123)" fill="#666">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="12"
+                        font-weight="400"
+                        fill="#666"
+                        x="27711167e-20"
+                        y="13"
+                        xml:space="preserve"
+                    >implementiert</tspan>
+        </text>
+      </g>
+      <g id="Graphic_20">
+        <rect x="85" y="10" width="105" height="40" fill="#ec220e" />
+        <rect
+                    x="85"
+                    y="10"
+                    width="105"
+                    height="40"
+                    stroke="white"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
+        <text transform="translate(90 20.5)" fill="white">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="14"
+                        font-weight="700"
+                        fill="white"
+                        x="4.387"
+                        y="15"
+                        xml:space="preserve"
+                    >CloudService</tspan>
+        </text>
+      </g>
+      <g id="Line_21">
+        <line
+                    x1="190.5"
+                    y1="30"
+                    x2="207.48572"
+                    y2="30"
+                    marker-end="url(#FilledArrow_Marker)"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                />
+      </g>
+      <g id="Graphic_23">
+        <rect x="225" y="10" width="90" height="40" fill="#fed782" />
+        <rect
+                    x="225"
+                    y="10"
+                    width="90"
+                    height="40"
+                    stroke="white"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
+        <text transform="translate(230 20.5)" fill="white">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="14"
+                        font-style="italic"
+                        font-weight="700"
+                        fill="white"
+                        x="14.373"
+                        y="15"
+                        xml:space="preserve"
+                    >Zahlung</tspan>
+        </text>
+      </g>
+      <g id="Graphic_24">
+        <rect x="409.574" y="10" width="95" height="40" fill="#feae00" />
+        <rect
+                    x="409.574"
+                    y="10"
+                    width="95"
+                    height="40"
+                    stroke="white"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
+        <text transform="translate(414.574 20.5)" fill="black">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="14"
+                        font-weight="700"
+                        fill="black"
+                        x="15.172"
+                        y="15"
+                        xml:space="preserve"
+                    >Zahlung</tspan>
+        </text>
+      </g>
+      <g id="Line_26">
+        <line
+                    x1="409.074"
+                    y1="30"
+                    x2="332.5143"
+                    y2="30"
+                    marker-end="url(#FilledArrow_Marker)"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                />
+      </g>
+      <g id="Graphic_25">
+        <text transform="translate(320 33)" fill="#666">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="12"
+                        font-weight="400"
+                        fill="#666"
+                        x="27711167e-20"
+                        y="13"
+                        xml:space="preserve"
+                    >implementiert</tspan>
+        </text>
+      </g>
+      <g id="Line_27">
+        <line
+                    x1="167.35805"
+                    y1="99.71906"
+                    x2="226.06745"
+                    y2="59.84098"
+                    marker-end="url(#FilledArrow_Marker)"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                />
+      </g>
+      <g id="Graphic_28">
+        <text transform="translate(192.27657 33)" fill="#666">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="12"
+                        font-weight="400"
+                        fill="#666"
+                        x="0"
+                        y="13"
+                        xml:space="preserve"
+                    >nutzt</tspan>
+        </text>
+      </g>
+      <g id="Graphic_29">
+        <text transform="translate(225 70)" fill="#666">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="12"
+                        font-weight="400"
+                        fill="#666"
+                        x="0"
+                        y="13"
+                        xml:space="preserve"
+                    >nutzt</tspan>
+        </text>
+      </g>
+      <g id="Graphic_30">
+        <text transform="translate(289.574 10)" fill="white">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="14"
+                        font-weight="700"
+                        fill="white"
+                        x="0"
+                        y="15"
+                        xml:space="preserve"
+                    >&lt;I&gt;</tspan>
+        </text>
+      </g>
+    </g>
+  </g>
+</svg>

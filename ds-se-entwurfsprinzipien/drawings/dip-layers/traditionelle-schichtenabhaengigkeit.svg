@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+    "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg
+    xmlns:xl="http://www.w3.org/1999/xlink"
+    version="1.1"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="18 9 295 147"
+    width="885"
+    height="441"
+>
+  <style>
+    @import url('/LectureDoc2/ext/fonts/ld-fonts.css');
+  </style>
+  <defs>
+    <filter id="Shadow" filterUnits="userSpaceOnUse" x="-11.5" y="-5.7">
+      <feGaussianBlur in="SourceAlpha" result="blur" stdDeviation="1.308" />
+      <feOffset in="blur" result="offset" dx="0" dy="2" />
+      <feFlood flood-color="black" flood-opacity=".5" result="flood" />
+      <feComposite in="flood" in2="offset" operator="in" />
+    </filter>
+    <marker
+            orient="auto"
+            overflow="visible"
+            markerUnits="strokeWidth"
+            id="StickArrow_Marker"
+            stroke-linejoin="miter"
+            stroke-miterlimit="10"
+            viewBox="-1 -4 10 8"
+            markerWidth="10"
+            markerHeight="8"
+            color="black"
+        >
+      <g>
+        <path
+                    d="M 8 0 L 0 0 M 0 -3 L 8 0 L 0 3"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1"
+                />
+      </g>
+    </marker>
+  </defs>
+  <metadata> Produced by OmniGraffle 8.0\n2025-04-28 10:20:29 +0000</metadata>
+  <g
+        id="traditionelle-schichtenabhaengigkeit"
+        fill="none"
+        stroke="none"
+        stroke-dasharray="none"
+        stroke-opacity="1"
+        fill-opacity="1"
+    >
+    <title>traditionelle-schichtenabhaengigkeit</title>
+    <g id="traditionelle-schichtenabhaengigkeit_Layer_1">
+      <title>Layer 1</title>
+      <g id="Graphic_1167_shadow" filter="url(#Shadow)">
+        <rect x="22.470473" y="11.338583" width="85.03937" height="45" fill="white" />
+        <rect
+                    x="22.470473"
+                    y="11.338583"
+                    width="85.03937"
+                    height="45"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
+      </g>
+      <g id="Graphic_1168_shadow" filter="url(#Shadow)">
+        <rect x="122.98032" y="60.16131" width="85.03937" height="45" fill="white" />
+        <rect
+                    x="122.98032"
+                    y="60.16131"
+                    width="85.03937"
+                    height="45"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
+      </g>
+      <g id="Graphic_1163_shadow" filter="url(#Shadow)">
+        <rect x="223.49016" y="105.44885" width="85.03937" height="45" fill="white" />
+        <rect
+                    x="223.49016"
+                    y="105.44885"
+                    width="85.03937"
+                    height="45"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
+      </g>
+      <g id="Line_1170">
+        <path
+                    d="M 208.01968 82.66131 L 266.00984 82.66131 L 266.00984 95.54885"
+                    marker-end="url(#StickArrow_Marker)"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
+      </g>
+      <g id="Line_1169">
+        <path
+                    d="M 107.50984 33.838583 L 165.5 33.838583 L 165.5 50.26131"
+                    marker-end="url(#StickArrow_Marker)"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
+      </g>
+      <g id="Graphic_1167">
+        <rect x="22.470473" y="11.338583" width="85.03937" height="45" fill="white" />
+        <rect
+                    x="22.470473"
+                    y="11.338583"
+                    width="85.03937"
+                    height="45"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
+        <text transform="translate(27.470473 24.338583)" fill="black">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="14"
+                        font-weight="400"
+                        fill="black"
+                        x=".7836838"
+                        y="15"
+                        xml:space="preserve"
+                    >Policy Layer</tspan>
+        </text>
+      </g>
+      <g id="Graphic_1168">
+        <rect x="122.98032" y="60.16131" width="85.03937" height="45" fill="white" />
+        <rect
+                    x="122.98032"
+                    y="60.16131"
+                    width="85.03937"
+                    height="45"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
+        <text transform="translate(127.98032 63.66131)" fill="black">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="14"
+                        font-weight="400"
+                        fill="black"
+                        x="1.6726838"
+                        y="15"
+                        xml:space="preserve"
+                    >Mechanism </tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="14"
+                        font-weight="400"
+                        fill="black"
+                        x="20.481684"
+                        y="34"
+                        xml:space="preserve"
+                    >Layer</tspan>
+        </text>
+      </g>
+      <g id="Graphic_1163">
+        <rect x="223.49016" y="105.44885" width="85.03937" height="45" fill="white" />
+        <rect
+                    x="223.49016"
+                    y="105.44885"
+                    width="85.03937"
+                    height="45"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
+        <text transform="translate(228.49016 118.44885)" fill="black">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="14"
+                        font-weight="400"
+                        fill="black"
+                        x=".57368384"
+                        y="15"
+                        xml:space="preserve"
+                    >Utility Layer</tspan>
+        </text>
+      </g>
+    </g>
+  </g>
+</svg>

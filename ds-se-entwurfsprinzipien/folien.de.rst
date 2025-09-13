@@ -21,7 +21,7 @@ Entwurfsprinzipien für Moderne Verteilte Anwendungen
 
 .. supplemental::
 
-  :Folien: 
+  :Folien:
 
       |html-source|
 
@@ -44,7 +44,7 @@ Entwurfsziele
 
 Die Entitäten (:light-gray:`Klassen`, :gray:`Module`, :gray:`Komponenten`, Services…) unseres Entwurfs können:
 
-.. class:: incremental-list list-with-explanations 
+.. class:: incremental-list list-with-explanations
 
 - unabhängig von einander von einem “kleinen” Team iterativ entwickelt werden
 
@@ -71,8 +71,8 @@ Design needs Principles!
 
 .. container:: gray
 
-  Oder welche Entität ist von wem, wann, warum und in welcher Weise abhängig? 
-  
+  Oder welche Entität ist von wem, wann, warum und in welcher Weise abhängig?
+
   Welche Entität soll mit welcher zusammen definiert werden?
 
   [Martin2017]_
@@ -88,7 +88,7 @@ Kopplung (:eng:`coupling`)
 ------------------------------------------------------------------------------------------
 
 .. container:: framed
-    
+
   Kopplung beschreibt die Stärke der Abhängigkeit zwischen verschiedenen Entitäten\ [#]_.
 
 .. container:: incremental
@@ -134,14 +134,14 @@ Niedrige statische Kopplung (:eng:`low (static) coupling`)
 - Eine niedrige Kopplung unterstützt den Entwurf von vergleichsweise unabhängigen und deswegen besser wiederverwendbaren Entitäten.
 - „generische“ Entitäten mit einer hohen Wiederverwendungswahrscheinlichkeit sollten eine geringe Kopplung aufweisen.
 
-.. image:: images/coupling/applied-isp.svg
+.. image:: drawings/coupling/applied-isp.svg
   :alt: The Interface Segregation Principle applied to a class diagram
   :align: center
   :class: incremental
-  
+
 .. supplemental::
 
-  Keine Kopplung ist (auch) nicht wünschenswert, da dies zu Entitäten führt, die alle Arbeit durchführen; weiterhin führt dies auch dazu, dass sich ggf. die Arbeit sehr viel schlechter aufteilen lässt und dann eine agile Entwicklung mit einem kleinen Team nicht mehr möglich ist. 
+  Keine Kopplung ist (auch) nicht wünschenswert, da dies zu Entitäten führt, die alle Arbeit durchführen; weiterhin führt dies auch dazu, dass sich ggf. die Arbeit sehr viel schlechter aufteilen lässt und dann eine agile Entwicklung mit einem kleinen Team nicht mehr möglich ist.
 
   Relevante Frage: Wer ist/sollte der Eigentümer der Schnittstellen sein? D. h. aus welcher Perspektive sollte die Schnittstelle entworfen werden?
 
@@ -150,17 +150,17 @@ Niedrige statische Kopplung (:eng:`low (static) coupling`)
 Niedrige vs. hohe dynamische Kopplung
 ------------------------------------------------------------------------------------------
 
-.. grid:: 
+.. grid::
 
   .. cell:: width-70
 
-    .. image:: images/coupling/message-based-coupling.svg
+    .. image:: drawings/coupling/message-based-coupling.svg
       :align: left
 
   .. cell:: width-30
-    
+
     Anforderung-Antwort (Synchron)
-    
+
     (:eng:`Request-response`)
 
 .. grid:: incremental
@@ -168,20 +168,20 @@ Niedrige vs. hohe dynamische Kopplung
   .. cell:: width-30
 
     PubSub (Asynchron)
-    
+
     (:eng:`Publisher-subscriber`)
 
   .. cell:: width-70
 
-    .. image:: images/coupling/pub-sub-coupling.svg
+    .. image:: drawings/coupling/pub-sub-coupling.svg
       :align: right
 
 .. supplemental::
 
   .. rubric:: Beobachtungen
 
-  Die Skalierbarkeit der ersten Lösung hängt direkt von der Performance von Zahlung und Inventarisierung ab. Für die Verfügbarkeit der Gesamtlösung gilt das Gleiche. 
-  
+  Die Skalierbarkeit der ersten Lösung hängt direkt von der Performance von Zahlung und Inventarisierung ab. Für die Verfügbarkeit der Gesamtlösung gilt das Gleiche.
+
   PubSub ist hier deutlich mächtiger; Nachteile von PubSub liegen im Bereich:
 
   - Indirektion
@@ -204,14 +204,14 @@ Ausgewählte Typen von Zusammenhalt:
 .. class:: list-with-explanations incremental-list
 
 - :green:`Funktionale Kohäsion`
-  
+
   Die Elemente realisieren eine logische Funktion.
 - …
 - :orange:`Logische bzw. technische Kohäsion`
-  
+
   Die Elemente stehen aus technischer Sicht in enger Beziehung.
 - :red:`Zufällig`
-  
+
   Es gibt keine relevante Beziehung zwischen den Elementen.
 
 .. supplemental::
@@ -222,15 +222,15 @@ Ausgewählte Typen von Zusammenhalt:
 
 
 
-Geringer Zusammenhalt (:eng:`Low Cohesion`) 
+Geringer Zusammenhalt (:eng:`Low Cohesion`)
 -----------------------------------------------------------------------
 
-Entitäten mit geringem Zusammenhalt sind nicht wünschenswert! 
+Entitäten mit geringem Zusammenhalt sind nicht wünschenswert!
 
 Sie sind:
 
 - schwer zu verstehen
-- schwer wiederzuverwenden 
+- schwer wiederzuverwenden
 - schwer zu warten und oft von Änderungen betroffen
 
 .. supplemental::
@@ -246,12 +246,12 @@ Alle Funktionalität und alle Daten sollten „natürlich“ zum Konzept gehöre
 
 
 
-.. class:: no-title center-content 
+.. class:: no-title center-content
 
 Konflikt: niedrige Kopplung ↔︎ hohe Kohäsion
 -----------------------------------------------------
 
-.. class:: columns font-size-200 
+.. class:: columns font-size-200
 
 - :green:`niedrige Kopplung`
 - ↔︎
@@ -265,8 +265,8 @@ Konflikt: niedrige Kopplung ↔︎ hohe Kohäsion
 
 .. class:: no-title transition-fade center-content
 
-Zusammenfassung 
---------------------------------------------- 
+Zusammenfassung
+---------------------------------------------
 
 .. summary::
 
@@ -277,12 +277,12 @@ Zusammenfassung
 Von Verantwortung und Zuständigkeit
 -------------------------------------
 
-.. question:: 
+.. question::
   :class: width-30 float-right
-  
+
   Wie verteilt man die Zuständigkeiten auf verschiedene Entitäten?
 
-- Der Verteilung von Zuständigkeiten ist die zentrale Tätigkeit während des Entwurfs. 
+- Der Verteilung von Zuständigkeiten ist die zentrale Tätigkeit während des Entwurfs.
 - Entwurfsmuster, Idiome und Prinzipien helfen dabei die Zuständigkeiten zu verteilen.
 - Bei der Verteilung von Zuständigkeiten gibt es eine große Bandbreite:
 
@@ -311,13 +311,13 @@ Leitgedanke bzgl. funktionaler Kohäsion
 Fasse die Dinge zusammen, die sich aus dem gleichen Grund und zur selben Zeit ändern.
 -------------------------------------------------------------------------------------------------
 
-.. image:: images/ccp-and-srp.svg
+.. image:: drawings/ccp-and-srp.svg
   :alt: Anwendung des Common Closure Principle und des Single Responsibility Principle
 
 .. supplemental::
 
   :Single Responsibility Principle (SRP): Ein Modul sollte nur einem einzigen Akteur gegenüber verantwortlich sein. D. h. es sollte nur eine wohldefinierte Gruppe von Akteuren geben, die eine Veränderung veranlassen/verlangen können. Code, von dem verschiedene Akteure abhängen, sollte aufgeteilt werden.
-  
+
   :Common Closure Principle (CCP): Fasse in Komponenten solche Klassen zusammen, die sich aus dem gleichen Grund und zur gleichen Zeit ändern. Z. B. weil sie die gleichen Stakeholder haben oder die gleichen rechtlichen Grundlagen haben.
 
   Die beiden Prinzipien sind eng miteinander verwandt. Das CCP ist ein Prinzip, das auf allen Abstraktionsgeraden angewendet werden kann. Das SRP ist - zumindest ursprünglich - ein Prinzip, das nur auf der Ebene von Klassen und Modulen angewendet wurde.
@@ -330,9 +330,9 @@ Dependency Inversion Principle (DIP)
 .. deck::
 
   .. card::
-    
+
     .. epigraph::
-      
+
       …all well-structured [object-oriented] architectures have clearly defined layers, with each layer providing some coherent set of services through a well-defined and controlled interface…
 
       -- Grady Booch
@@ -340,7 +340,7 @@ Dependency Inversion Principle (DIP)
   .. card::
 
     .. epigraph::
-      
+
       High-Level-Module sollten nicht von Low-Level-Modulen abhängen. Beide sollten von Abstraktionen abhängen.
 
       Abstraktionen sollten nicht von Details abhängen. Details sollten von Abstraktionen abhängen.
@@ -357,7 +357,7 @@ Dependency Inversion Principle (DIP)
 
   **Ein Klassendesign, dass das DIP verletzt:**
 
-  .. image:: images/dip-layers/traditionelle-schichtenabhaengigkeit.svg
+  .. image:: drawings/dip-layers/traditionelle-schichtenabhaengigkeit.svg
     :align: center
 
   **Die Einhaltung des DIP sollte auf allen Ebenen der Architektur sichergestellt werden.**
@@ -366,7 +366,7 @@ Dependency Inversion Principle (DIP)
 Dependency Inversion Principle
 -------------------------------------
 
-.. image:: images/dip-layers/dip-konforme-schichtenabhaengigkeit.svg
+.. image:: drawings/dip-layers/dip-konforme-schichtenabhaengigkeit.svg
   :align: center
 
 
@@ -401,17 +401,17 @@ Open-closed Principle (OCP)
 Open-closed Principle - Case Study\ [#]_
 ------------------------------------------
 
-.. image:: images/ocp-example/ocp-intended-subscriber_de.svg
+.. image:: drawings/ocp-example/ocp-intended-subscriber_de.svg
   :align: center
 
 .. question::
   :class: incremental
-  
+
   Ist dieses Design offen für Erweiterungen?
 
 .. supplemental::
 
-  In diesem Fall haben wir eine Architektur, die auf “Services” aufbaut welche lose gekoppelt sind und über Nachrichten kommunizieren. 
+  In diesem Fall haben wir eine Architektur, die auf “Services” aufbaut welche lose gekoppelt sind und über Nachrichten kommunizieren.
 
 .. [#] `Beispiel nach David Llobrega, 2019 <https://dzone.com/articles/the-open-closed-principle-at-an-architectural-leve>`_
 
@@ -422,7 +422,7 @@ Open-closed Principle - Case Study\ [#]_
 Open-closed Principle - Case Study
 -------------------------------------
 
-.. image:: images/ocp-example/ocp-two-subscribers_de.svg
+.. image:: drawings/ocp-example/ocp-two-subscribers_de.svg
   :align: center
 
 .. question::
@@ -432,10 +432,10 @@ Open-closed Principle - Case Study
 
 .. supplemental::
 
-  Das Problem ist, dass wir hier die Nachrichten - welche im Prinzip die Schnittstelle modellieren - relativ exakt an den Anforderungen des Services zur Bestimmung der Verfügbarkeit von Autos ausgerichtet haben. 
-  
+  Das Problem ist, dass wir hier die Nachrichten - welche im Prinzip die Schnittstelle modellieren - relativ exakt an den Anforderungen des Services zur Bestimmung der Verfügbarkeit von Autos ausgerichtet haben.
+
   Wie sähe in diesem Fall z. B. eine Erweiterung um einen Dienst für Kundenprämienberechnung aus?
-  
+
   Über die ``VereinbarungID`` bekommen wir Zugriff auf die Daten des Kunden aber dies fordert dann mehr als einen *Lookup* in einer Datenbank und ggf. auch das Einbinden mehrerer Dienste, was es zu vermeiden gilt, da die Kopplung unnötig ansteigen würde.
 
 
@@ -448,32 +448,32 @@ Open-closed Principle - Case Study
 .. deck::
 
   .. card::
-  
-    .. image:: images/ocp-example/ocp-multiple-subscribers_de.svg
+
+    .. image:: drawings/ocp-example/ocp-multiple-subscribers_de.svg
       :align: center
 
-  .. card:: overlay center-content 
+  .. card:: overlay center-content
 
-    .. question:: 
+    .. question::
       :class: width-75 backdrop-blur
-    
+
       Wie stellen wir fest welche Informationen in eine Nachricht gehören, um offen für *relevante* Erweiterungen zu sein?
 
 .. supplemental::
 
   Eine Antwort darauf liefern ggf. *Bounded-Context* aus dem *Domain-driven Design*
-  
-  Ein *Bounded Context* ist ein Gültigkeitsbereich eines Domänenmodells, einer `Ubiquitous Language <https://leanpub.com/ddd-referenz/read#ubiquitous-language>`_ und die Basis für die Organisation des Projekts.[...] 
-  
+
+  Ein *Bounded Context* ist ein Gültigkeitsbereich eines Domänenmodells, einer `Ubiquitous Language <https://leanpub.com/ddd-referenz/read#ubiquitous-language>`_ und die Basis für die Organisation des Projekts.[...]
+
     :red:`Eine Modellierung nach den Daten führt nicht zu sinnvollen Bounded Contexts, sondern eher zu komplexen Modellen. Wichtig ist, die Daten als Folge der Funktionalitäten zu modellieren.`
 
   Domain-driven Design behandelt Beziehungen zwischen *Bounded Contexts* im sogenannten *Strategic Design*.
-  
+
   https://www.heise.de/hintergrund/Domain-driven-Design-und-Bounded-Context-Eigentlich-ganz-einfach-oder-4634258.html?seite=all
 
 
 
-Liskov Substitution Principle (LSP) 
+Liskov Substitution Principle (LSP)
 -------------------------------------
 
 .. deck::
@@ -488,7 +488,7 @@ Liskov Substitution Principle (LSP)
 
   .. card::
 
-    **Moderne Interpretation** 
+    **Moderne Interpretation**
 
     Die Implementierungen von Schnittstellen müssen austauschbar sein.
 
@@ -501,25 +501,25 @@ Liskov Substitution Principle (LSP)
 Interface Segregation Principle & Common Reuse Principle
 ------------------------------------------------------------
 
-.. deck:: 
+.. deck::
 
   .. card::
 
-    .. image:: images/segregation/no-segregation.svg
+    .. image:: drawings/segregation/no-segregation.svg
       :align: center
 
     (Ausgangszustand)
 
   .. card::
 
-    .. image:: images/segregation/no-segregation-2nd-service.svg
+    .. image:: drawings/segregation/no-segregation-2nd-service.svg
       :align: center
 
     (Geplante Erweiterung)
 
   .. card::
 
-    .. image:: images/segregation/effective-segregation.svg
+    .. image:: drawings/segregation/effective-segregation.svg
       :align: center
 
     (Teilung der Schnittstelle)
@@ -548,8 +548,8 @@ Command-Query Separation (CQS)
 
     -- Bertrand Meyer, 1988
 
-.. remark:: 
-  :class: incremental 
+.. remark::
+  :class: incremental
 
   Auf der Ebene von nachrichten- bzw. ereignisgetriebenen Systemen wird CQS zum CQRS erweitert (Command-Query Responsibility Segregation).
 
@@ -559,17 +559,17 @@ Command-Query Separation (CQS)
 
 
 
-Traditionelle Interaktion mit Informationssystemen (CRUD) 
+Traditionelle Interaktion mit Informationssystemen (CRUD)
 -----------------------------------------------------------------------------
 
-.. grid:: 
+.. grid::
 
   .. cell:: width-60
 
-    .. image:: images/cqs_and_cqrs/crud.svg
+    .. image:: drawings/cqs_and_cqrs/crud.svg
 
     Darstellung nach `Martin Fowler <https://martinfowler.com/bliki/CQRS.html>`_.
-    
+
   .. cell:: width-40
 
     1. Modell liest von DB
@@ -578,7 +578,7 @@ Traditionelle Interaktion mit Informationssystemen (CRUD)
     4. Weiterleitung der Änderung
     5. Modell validiert
     6. Modell aktualisiert DB
- 
+
 .. supplemental::
 
   Darstellung einer Anwendung mit traditioneller Architektur.
@@ -589,14 +589,14 @@ Traditionelle Interaktion mit Informationssystemen (CRUD)
 Command-Query Responsibility Segregation Principle
 -----------------------------------------------------------------------------
 
-.. grid:: 
+.. grid::
 
   .. cell:: width-60
 
-    .. image:: images/cqs_and_cqrs/cqrs.svg
+    .. image:: drawings/cqs_and_cqrs/cqrs.svg
 
     Darstellung nach `Martin Fowler <https://martinfowler.com/bliki/CQRS.html>`_.
-    
+
   .. cell:: width-40
 
     1. Abfrage-Modell liest von DB
@@ -615,7 +615,7 @@ Command-Query Responsibility Segregation Principle
 Command-Query Responsibility Segregation Principle (CQRS)
 ------------------------------------------------------------------------------------------
 
-.. rubric:: Einsatzszenarien 
+.. rubric:: Einsatzszenarien
 
 .. class:: incremental-list
 
@@ -632,7 +632,7 @@ Command-Query Responsibility Segregation Principle (CQRS)
   -  Die Modelle können von unterschiedlichen Teams entwickelt werden (im Rahmen einzelner Services).
   - Unterschiedliche Skalierung bzgl. Abfragen und Kommandos ist möglich.
   - Passt sehr gut zu ereignisgetriebenen Programmiermodellen/Architekturen.
-    
+
     Erlaubt sehr einfache Unterstützung von *Event Sourcing*.
 
 
@@ -684,7 +684,7 @@ Ein einfacher RESTful Web Service mit Spring\ [#]_
 
 .. class:: center-child-elements
 
-\ 
+\
 ---
 
 .. container:: foundations faded-to-white
@@ -698,7 +698,7 @@ Ein einfacher RESTful Web Service mit Spring\ [#]_
 .. supplemental::
 
   Entscheidungen, die nicht am Anfang final getroffen werden sollten, da sie ggf. die Architektur dominieren:
-  
+
   - Frameworks
   - Datenbanken
   - Webserver
@@ -712,12 +712,12 @@ Ein einfacher RESTful Web Service mit Spring\ [#]_
 Traditionelle n-Schichten Architektur (Wiederholung)
 ---------------------------------------------------------------------------------
 
-.. image:: images/n-layer-architecture.svg
+.. image:: drawings/n-layer-architecture.svg
   :align: center
 
 .. supplemental::
 
-  Codeabhängigkeiten ergeben sich zum Beispiel beim Verwenden eines Object-relational Mappers (ORM). 
+  Codeabhängigkeiten ergeben sich zum Beispiel beim Verwenden eines Object-relational Mappers (ORM).
 
   Solch eine Architektur war Ende der 90er/Anfang der 2000er Standard und ist für einfache Programme auch heute noch akzeptabel, da diese häufig sehr schnell zu entwickeln sind und viel Erfahrung mit dieser Architektur vorhanden ist. Besser ist es jedoch gleich eine der folgenden Architekturen anzuwenden, um ggf. vorbereitet zu sein, wenn das System wächst.
 
@@ -729,18 +729,18 @@ Hexagonal Architecture (Ports & Adapters) [#]_
 .. deck::
 
   .. card::
-  
-    .. image:: images/hexagonal-architecture/overview.svg
+
+    .. image:: drawings/hexagonal-architecture/overview.svg
       :align: center
 
   .. card:: overlay
 
-    .. image:: images/hexagonal-architecture/control-flow-overlay.svg
+    .. image:: drawings/hexagonal-architecture/control-flow-overlay.svg
       :align: center
 
-  .. card:: overlay 
+  .. card:: overlay
 
-    .. image:: images/hexagonal-architecture/code-dependency-overlay.svg
+    .. image:: drawings/hexagonal-architecture/code-dependency-overlay.svg
       :align: center
 
 .. [#] `Alistair Cockburn, 2005 <https://alistair.cockburn.us/hexagonal-architecture/ und https://www.thoughtworks.com/insights/blog/architecture/demystify-software-architecture-patterns>`__
@@ -756,27 +756,27 @@ Hexagonal Architecture (Ports & Adapters) [#]_
 
   Die hexagonale Architektur wird von einigen als Ausgangsarchitektur für *Microservices* gesehen, da häufig einzelne Services nach diesem Architekturmuster implementiert werden.
 
-  .. epigraph:: 
+  .. epigraph::
 
     Meine Heransgehensweise für die Planung einer komplexen Geschäftsanwendung ist in der Regel eine Kombination aus Domain Driven Design, Microservices und hexagonaler Architektur: Einsatz von Strategic Design zur Planung von Core Domain, Sub Domains und Bounded Contexts. Aufteilung eines Bounded Contexts in einen oder mehrere Microservices. Ein Microservice kann ein oder mehrere Aggregates enthalten, aber auch den kompletten Bounded Context, sofern dieser nicht zu groß ist (und statt des gewünschten Microservices wieder ein Monolith entsteht).
 
     -- https://www.happycoders.eu/de/software-craftsmanship/hexagonale-architektur/
 
 
-  
+
 *Onion Architecture* [#]_
 ---------------------------------------------------------------------------------------
 
-.. deck:: 
+.. deck::
 
-  .. card:: 
-  
-    .. image:: images/onion-architecture/overview.svg
+  .. card::
+
+    .. image:: drawings/onion-architecture/overview.svg
       :align: center
 
   .. card::  overlay
 
-    .. image:: images/onion-architecture/code-dependencies-overlay.svg
+    .. image:: drawings/onion-architecture/code-dependencies-overlay.svg
       :align: center
 
 .. supplemental::
@@ -784,7 +784,7 @@ Hexagonal Architecture (Ports & Adapters) [#]_
   Schlüssellehren der *Onion Architecture* (Zwiebelarchitektur):
 
   - Die Anwendung ist rund um ein unabhängiges Objektmodel gebaut.
-  - Innere Schichten definieren Schnittstellen. 
+  - Innere Schichten definieren Schnittstellen.
   - Äußere Schichten implementieren Schnittstellen.
   - Die Richtung der Kopplung ist immer in Richtung zum Zentrum!
   - Der Anwendungskern (*Application Core*) kann immer ohne die Infrastruktur kompiliert und davon unabhängig ausgeführt werden.
@@ -799,29 +799,29 @@ Hexagonal Architecture (Ports & Adapters) [#]_
 .. deck::
 
   .. card::
-  
-    .. image:: images/clean-architecture/entities-ring.svg
-      
+
+    .. image:: drawings/clean-architecture/entities-ring.svg
+
   .. card:: overlay
 
-    .. image:: images/clean-architecture/use-cases-ring.svg
-      
+    .. image:: drawings/clean-architecture/use-cases-ring.svg
+
   .. card:: overlay
 
-      .. image:: images/clean-architecture/controllers-ring.svg
-      
+      .. image:: drawings/clean-architecture/controllers-ring.svg
+
   .. card:: overlay
 
-      .. image:: images/clean-architecture/web-ring.svg
-      
+      .. image:: drawings/clean-architecture/web-ring.svg
+
   .. card:: overlay
 
-      .. image:: images/clean-architecture/code-abhaengigkeiten.svg
-      
+      .. image:: drawings/clean-architecture/code-abhaengigkeiten.svg
+
   .. card:: overlay
 
-      .. image:: images/clean-architecture/legende.svg
-      
+      .. image:: drawings/clean-architecture/legende.svg
+
 .. supplemental::
 
   .. rubric:: Entities
@@ -831,9 +831,9 @@ Hexagonal Architecture (Ports & Adapters) [#]_
   - Objekte mit Methoden
   - Datastrukturen
   - Funktionen
-  - ... 
+  - ...
 
-  Entitäten sind „Dinge“, die sich nicht aufgrund externer (technischer) Änderungen ändern sollten. Zum Beispiel aufgrund von geänderten Sicherheitsanforderungen oder der verwendeten Datenbank. 
+  Entitäten sind „Dinge“, die sich nicht aufgrund externer (technischer) Änderungen ändern sollten. Zum Beispiel aufgrund von geänderten Sicherheitsanforderungen oder der verwendeten Datenbank.
 
   .. rubric:: Use Cases
 
@@ -845,7 +845,7 @@ Hexagonal Architecture (Ports & Adapters) [#]_
 
   In diesem Ring erfolgt zum Beispiel die Implementierung des MVC Patterns für eine GUI, oder das ORM Mapping.
 
-  .. rubric:: DBs, Web, Devices 
+  .. rubric:: DBs, Web, Devices
 
   In diesem Ring befinden sich die externen Details, in der Regel gibt es hier keinen oder nur minimalen *Glue Code*.
 
@@ -860,14 +860,14 @@ Hexagonal Architecture (Ports & Adapters) [#]_
 
 .. deck::
 
-  .. card:: 
+  .. card::
 
-    .. image:: images/clean-architecture/uml-overview.svg
+    .. image:: drawings/clean-architecture/uml-overview.svg
       :align: center
 
   .. card:: overlay
-      
-    .. image:: images/clean-architecture/uml-kontrollfluss.svg
+
+    .. image:: drawings/clean-architecture/uml-kontrollfluss.svg
       :align: center
 
 .. supplemental::

@@ -1,0 +1,723 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+    "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg
+    xmlns:xl="http://www.w3.org/1999/xlink"
+    version="1.1"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="6 5 720 293"
+width="2160"
+height="879"
+>
+<style>
+  @import url('/LectureDoc2/ext/fonts/ld-fonts.css');
+</style>
+<defs>
+    <filter id="Shadow" filterUnits="userSpaceOnUse" x="-66" y="-24.3">
+      <feGaussianBlur in="SourceAlpha" result="blur" stdDeviation="1.308" />
+      <feOffset in="blur" result="offset" dx="0" dy="2" />
+      <feFlood flood-color="black" flood-opacity=".5" result="flood" />
+      <feComposite in="flood" in2="offset" operator="in" />
+    </filter>
+    <filter id="Shadow_2" filterUnits="userSpaceOnUse" x="-66" y="-24.3">
+      <feGaussianBlur in="SourceAlpha" result="blur" stdDeviation="1.308" />
+      <feOffset in="blur" result="offset" dx="0" dy="3" />
+      <feFlood flood-color="black" flood-opacity=".5" result="flood" />
+      <feComposite in="flood" in2="offset" operator="in" result="color" />
+      <feMerge>
+        <feMergeNode in="color" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+    <filter id="Shadow_3" filterUnits="userSpaceOnUse" x="-66" y="-24.3">
+      <feGaussianBlur in="SourceAlpha" result="blur" stdDeviation="1.308" />
+      <feOffset in="blur" result="offset" dx="0" dy="2" />
+      <feFlood flood-color="black" flood-opacity=".5" result="flood" />
+      <feComposite in="flood" in2="offset" operator="in" result="color" />
+      <feMerge>
+        <feMergeNode in="color" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+    <filter id="Shadow_4" filterUnits="userSpaceOnUse" x="-66" y="-24.3">
+      <feGaussianBlur in="SourceAlpha" result="blur" stdDeviation=".34696323" />
+      <feOffset in="blur" result="offset" dx="0" dy="1" />
+      <feFlood flood-color="#929292" result="flood" />
+      <feComposite in="flood" in2="offset" operator="in" result="color" />
+      <feMerge>
+        <feMergeNode in="color" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+    <linearGradient x1="0" x2="1" id="Gradient" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="white" />
+      <stop offset=".5952381" stop-color="#ebebeb" />
+      <stop offset="1" stop-color="#ebebeb" />
+    </linearGradient>
+    <linearGradient
+            id="Obj_Gradient"
+            xl:href="#Gradient"
+            gradientTransform="translate(571.7938 246.069) rotate(90) scale(23)"
+        />
+    <filter id="Shadow_5" filterUnits="userSpaceOnUse" x="-66" y="-24.3">
+      <feGaussianBlur in="SourceAlpha" result="blur" stdDeviation="1.308" />
+      <feOffset in="blur" result="offset" dx="3" dy="3" />
+      <feFlood flood-color="black" flood-opacity=".5" result="flood" />
+      <feComposite in="flood" in2="offset" operator="in" result="color" />
+      <feMerge>
+        <feMergeNode in="color" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+    <marker
+            orient="auto"
+            overflow="visible"
+            markerUnits="strokeWidth"
+            id="StickArrow_Marker"
+            stroke-linejoin="miter"
+            stroke-miterlimit="10"
+            viewBox="-1 -4 10 8"
+            markerWidth="10"
+            markerHeight="8"
+            color="black"
+        >
+      <g>
+        <path
+                    d="M 8 0 L 0 0 M 0 -3 L 8 0 L 0 3"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1"
+                />
+      </g>
+    </marker>
+  </defs>
+  <metadata> Produced by OmniGraffle 8.0\n2025-04-28 13:18:28 +0000</metadata>
+  <g
+        id="cqrs_with_seperated_dbs"
+        fill="none"
+        stroke="none"
+        stroke-dasharray="none"
+        stroke-opacity="1"
+        fill-opacity="1"
+    >
+    <title>cqrs_with_seperated_dbs</title>
+    <g id="cqrs_with_seperated_dbs_Layer_1">
+      <title>Layer 1</title>
+      <g id="Graphic_37670_shadow" filter="url(#Shadow)">
+        <rect x="181.50005" y="80" width="54" height="18" fill="white" />
+        <rect
+                    x="181.50005"
+                    y="80"
+                    width="54"
+                    height="18"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
+      </g>
+      <g id="Graphic_37671_shadow" filter="url(#Shadow)">
+        <rect x="278.50005" y="80" width="54" height="18" fill="white" />
+        <rect
+                    x="278.50005"
+                    y="80"
+                    width="54"
+                    height="18"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
+      </g>
+      <g id="Graphic_37672_shadow" filter="url(#Shadow)">
+        <rect x="225.00572" y="120" width="54" height="18" fill="white" />
+        <rect
+                    x="225.00572"
+                    y="120"
+                    width="54"
+                    height="18"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
+      </g>
+      <g id="Graphic_37680_shadow" filter="url(#Shadow)">
+        <rect x="181.50005" y="207" width="54" height="18" fill="white" />
+        <rect
+                    x="181.50005"
+                    y="207"
+                    width="54"
+                    height="18"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
+      </g>
+      <g id="Graphic_37681_shadow" filter="url(#Shadow)">
+        <rect x="278.50005" y="207" width="54" height="18" fill="white" />
+        <rect
+                    x="278.50005"
+                    y="207"
+                    width="54"
+                    height="18"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
+      </g>
+      <g id="Graphic_37682_shadow" filter="url(#Shadow)">
+        <rect x="278.50005" y="244.431" width="54" height="18" fill="white" />
+        <rect
+                    x="278.50005"
+                    y="244.431"
+                    width="54"
+                    height="18"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
+      </g>
+      <g id="Graphic_37668">
+        <path
+                    d="M 530 225.2223 L 530 232.7777 L 492.9011 232.7777 L 492.9011 237 L 475.7557 229 L 492.9011 221 L 492.9011 225.2223 Z"
+                    fill="white"
+                />
+        <path
+                    d="M 530 225.2223 L 530 232.7777 L 492.9011 232.7777 L 492.9011 237 L 475.7557 229 L 492.9011 221 L 492.9011 225.2223 Z"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
+      </g>
+      <g id="Graphic_37690" filter="url(#Shadow_2)">
+        <path
+                    d="M 10.000025 268.96704 C 10.000008 268.9744 10 268.98176 10 268.98912 C 10.000001 274.6222 14.930392 280.25525 24.791172 284.55314 C 44.512634 293.14895 76.48742 293.14895 96.20888 284.55314 C 106.06966 280.25525 111.00005 274.6222 111.00005 268.98912 L 111.00003 268.96704 L 111.00003 210 L 10.000025 210 Z"
+                    fill="white"
+                />
+        <path
+                    d="M 10.000025 268.96704 C 10.000008 268.9744 10 268.98176 10 268.98912 C 10.000001 274.6222 14.930392 280.25525 24.791172 284.55314 C 44.512634 293.14895 76.48742 293.14895 96.20888 284.55314 C 106.06966 280.25525 111.00005 274.6222 111.00005 268.98912 L 111.00003 268.96704 L 111.00003 210 L 10.000025 210 Z"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
+        <text transform="translate(15 239.5)" fill="black">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="16"
+                        font-weight="400"
+                        fill="black"
+                        x="6.452027"
+                        y="17"
+                        xml:space="preserve"
+                    >Datenbank</tspan>
+        </text>
+      </g>
+      <g id="Graphic_37691">
+        <ellipse
+                    cx="60.5"
+                    cy="210"
+                    rx="50.5000806940458"
+                    ry="25.0000399475474"
+                    fill="white"
+                />
+        <ellipse
+                    cx="60.5"
+                    cy="210"
+                    rx="50.5000806940458"
+                    ry="25.0000399475474"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
+      </g>
+      <g id="Group_37651">
+        <g id="Graphic_37658" filter="url(#Shadow_3)">
+          <rect
+                        x="528.00005"
+                        y="22.069"
+                        width="193.9996"
+                        height="255.862"
+                        fill="white"
+                    />
+          <rect
+                        x="528.00005"
+                        y="22.069"
+                        width="193.9996"
+                        height="255.862"
+                        stroke="#aaa"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="1"
+                    />
+        </g>
+        <g id="Group_37655">
+          <g id="Graphic_37657">
+            <text transform="translate(613.83765 249.569)" fill="black">
+              <tspan
+                                font-family="Noto Sans Display"
+                                font-size="12"
+                                font-weight="400"
+                                fill="black"
+                                x="0"
+                                y="13"
+                                xml:space="preserve"
+                            >Abbruch</tspan>
+            </text>
+          </g>
+          <g id="Graphic_37656" filter="url(#Shadow_4)">
+            <path
+                            d="M 544.00005 246.069 L 599.5875 246.069 C 601.2444 246.069 602.5875 247.41215 602.5875 249.069 L 602.5875 266.069 C 602.5875 267.72585 601.2444 269.069 599.5875 269.069 L 544.00005 269.069 C 542.3432 269.069 541.00005 267.72585 541.00005 266.069 L 541.00005 249.069 C 541.00005 247.41215 542.3432 246.069 544.00005 246.069 Z"
+                            fill="url(#Obj_Gradient)"
+                        />
+            <path
+                            d="M 544.00005 246.069 L 599.5875 246.069 C 601.2444 246.069 602.5875 247.41215 602.5875 249.069 L 602.5875 266.069 C 602.5875 267.72585 601.2444 269.069 599.5875 269.069 L 544.00005 269.069 C 542.3432 269.069 541.00005 267.72585 541.00005 266.069 L 541.00005 249.069 C 541.00005 247.41215 542.3432 246.069 544.00005 246.069 Z"
+                            stroke="#929292"
+                            stroke-linecap="butt"
+                            stroke-linejoin="miter"
+                            stroke-width="1"
+                        />
+            <text transform="translate(546.00005 249.069)" fill="black">
+              <tspan
+                                font-family="Noto Sans Display"
+                                font-size="12"
+                                font-weight="700"
+                                fill="black"
+                                x="17.489737"
+                                y="13"
+                                xml:space="preserve"
+                            >OK</tspan>
+            </text>
+          </g>
+        </g>
+        <g id="Group_37652">
+          <g id="Graphic_37654">
+            <rect
+                            x="528.00045"
+                            y="22.069"
+                            width="193.9996"
+                            height="31.1383"
+                            fill="#f2f2f2"
+                        />
+            <rect
+                            x="528.00045"
+                            y="22.069"
+                            width="193.9996"
+                            height="31.1383"
+                            stroke="#aaa"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="1"
+                        />
+            <text transform="translate(533.00045 28.13815)" fill="#424242">
+              <tspan
+                                font-family="Noto Sans Display"
+                                font-size="14"
+                                font-weight="700"
+                                fill="#424242"
+                                x="4.4"
+                                y="15"
+                                xml:space="preserve"
+                            >Fenstertitel</tspan>
+            </text>
+          </g>
+        </g>
+      </g>
+      <g id="Graphic_37662" filter="url(#Shadow_5)">
+        <rect x="145.00005" y="10" width="301" height="276" fill="white" />
+        <rect
+                    x="145.00005"
+                    y="10"
+                    width="301"
+                    height="276"
+                    stroke="#b4b4b4"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
+        <text transform="translate(150.00005 15)" fill="black">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="16"
+                        font-weight="400"
+                        fill="black"
+                        x="0"
+                        y="17"
+                        xml:space="preserve"
+                    >Anwendung</tspan>
+        </text>
+      </g>
+      <g id="Graphic_37663">
+        <rect
+                    x="160.00005"
+                    y="46.931"
+                    width="194.99995"
+                    height="112.069"
+                    fill="#e2e2e2"
+                />
+        <rect
+                    x="160.00005"
+                    y="46.931"
+                    width="194.99995"
+                    height="112.069"
+                    stroke="#797979"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
+        <text transform="translate(165.00005 51.931)" fill="black">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="16"
+                        font-weight="400"
+                        fill="black"
+                        x="37.675977"
+                        y="17"
+                        xml:space="preserve"
+                    >Abfrage-Modell</tspan>
+        </text>
+      </g>
+      <g id="Graphic_37664">
+        <path
+                    d="M 411.00005 64 L 468.00005 64 C 472.41833 64 476.00005 67.58172 476.00005 72 L 476.00005 86 C 476.00005 90.41828 472.41833 94 468.00005 94 L 411.00005 94 C 406.58177 94 403.00005 90.41828 403.00005 86 L 403.00005 72 C 403.00005 67.58172 406.58177 64 411.00005 64 Z"
+                    fill="white"
+                />
+        <path
+                    d="M 411.00005 64 L 468.00005 64 C 472.41833 64 476.00005 67.58172 476.00005 72 L 476.00005 86 C 476.00005 90.41828 472.41833 94 468.00005 94 L 411.00005 94 C 406.58177 94 403.00005 90.41828 403.00005 86 L 403.00005 72 C 403.00005 67.58172 406.58177 64 411.00005 64 Z"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
+      </g>
+      <g id="Graphic_37665">
+        <path
+                    d="M 111.00005 112.77771 L 111.00005 105.22229 L 145.8547 105.22229 L 145.8547 101 L 163.00005 109 L 145.8547 117 L 145.8547 112.77771 Z"
+                    fill="white"
+                />
+        <path
+                    d="M 111.00005 112.77771 L 111.00005 105.22229 L 145.8547 105.22229 L 145.8547 101 L 163.00005 109 L 145.8547 117 L 145.8547 112.77771 Z"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
+      </g>
+      <g id="Graphic_37666">
+        <path
+                    d="M 160.00005 221.2223 L 160.00005 228.7777 L 125.1454 228.7777 L 125.1454 233 L 108.00005 225 L 125.1454 217 L 125.1454 221.2223 Z"
+                    fill="white"
+                />
+        <path
+                    d="M 160.00005 221.2223 L 160.00005 228.7777 L 125.1454 228.7777 L 125.1454 233 L 108.00005 225 L 125.1454 217 L 125.1454 221.2223 Z"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
+      </g>
+      <g id="Graphic_37667">
+        <path
+                    d="M 476.00005 82.77771 L 476.00005 75.22229 L 510.8547 75.22229 L 510.8547 71 L 528.00005 79 L 510.8547 87 L 510.8547 82.77771 Z"
+                    fill="white"
+                />
+        <path
+                    d="M 476.00005 82.77771 L 476.00005 75.22229 L 510.8547 75.22229 L 510.8547 71 L 528.00005 79 L 510.8547 87 L 510.8547 82.77771 Z"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
+      </g>
+      <g id="Line_37669">
+        <line
+                    x1="235.50005"
+                    y1="89"
+                    x2="268.60005"
+                    y2="89"
+                    marker-end="url(#StickArrow_Marker)"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
+      </g>
+      <g id="Graphic_37670">
+        <rect x="181.50005" y="80" width="54" height="18" fill="white" />
+        <rect
+                    x="181.50005"
+                    y="80"
+                    width="54"
+                    height="18"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
+      </g>
+      <g id="Graphic_37671">
+        <rect x="278.50005" y="80" width="54" height="18" fill="white" />
+        <rect
+                    x="278.50005"
+                    y="80"
+                    width="54"
+                    height="18"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
+      </g>
+      <g id="Graphic_37672">
+        <rect x="225.00572" y="120" width="54" height="18" fill="white" />
+        <rect
+                    x="225.00572"
+                    y="120"
+                    width="54"
+                    height="18"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
+      </g>
+      <g id="Line_37673">
+        <path
+                    d="M 279.5057 129 L 305.50005 129 L 305.50005 107.9"
+                    marker-end="url(#StickArrow_Marker)"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
+      </g>
+      <g id="Graphic_37674">
+        <path
+                    d="M 355 80.77771 L 355 73.22229 L 389.85464 73.22229 L 389.85464 69 L 407 77 L 389.85464 85 L 389.85464 80.77771 Z"
+                    fill="white"
+                />
+        <path
+                    d="M 355 80.77771 L 355 73.22229 L 389.85464 73.22229 L 389.85464 69 L 407 77 L 389.85464 85 L 389.85464 80.77771 Z"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
+      </g>
+      <g id="Graphic_37676">
+        <path
+                    d="M 411.00005 214 L 468.00005 214 C 472.41833 214 476.00005 217.58172 476.00005 222 L 476.00005 236 C 476.00005 240.41828 472.41833 244 468.00005 244 L 411.00005 244 C 406.58177 244 403.00005 240.41828 403.00005 236 L 403.00005 222 C 403.00005 217.58172 406.58177 214 411.00005 214 Z"
+                    fill="white"
+                />
+        <path
+                    d="M 411.00005 214 L 468.00005 214 C 472.41833 214 476.00005 217.58172 476.00005 222 L 476.00005 236 C 476.00005 240.41828 472.41833 244 468.00005 244 L 411.00005 244 C 406.58177 244 403.00005 240.41828 403.00005 236 L 403.00005 222 C 403.00005 217.58172 406.58177 214 411.00005 214 Z"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
+      </g>
+      <g id="Line_37677">
+        <path
+                    d="M 224.50572 129 L 208.50005 129 L 208.50005 107.9"
+                    marker-end="url(#StickArrow_Marker)"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
+      </g>
+      <g id="Graphic_37678">
+        <rect x="160.00005" y="176" width="194.99995" height="98.50001" fill="#e2e2e2" />
+        <rect
+                    x="160.00005"
+                    y="176"
+                    width="194.99995"
+                    height="98.50001"
+                    stroke="#797979"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
+        <text transform="translate(165.00005 181)" fill="black">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="16"
+                        font-weight="400"
+                        fill="black"
+                        x="24.395977"
+                        y="17"
+                        xml:space="preserve"
+                    >Kommando-Modell</tspan>
+        </text>
+      </g>
+      <g id="Line_37679">
+        <line
+                    x1="235.50005"
+                    y1="216"
+                    x2="268.60005"
+                    y2="216"
+                    marker-end="url(#StickArrow_Marker)"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
+      </g>
+      <g id="Graphic_37680">
+        <rect x="181.50005" y="207" width="54" height="18" fill="white" />
+        <rect
+                    x="181.50005"
+                    y="207"
+                    width="54"
+                    height="18"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
+      </g>
+      <g id="Graphic_37681">
+        <rect x="278.50005" y="207" width="54" height="18" fill="white" />
+        <rect
+                    x="278.50005"
+                    y="207"
+                    width="54"
+                    height="18"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
+      </g>
+      <g id="Graphic_37682">
+        <rect x="278.50005" y="244.431" width="54" height="18" fill="white" />
+        <rect
+                    x="278.50005"
+                    y="244.431"
+                    width="54"
+                    height="18"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
+      </g>
+      <g id="Line_37683">
+        <line
+                    x1="305.50005"
+                    y1="243.931"
+                    x2="305.50005"
+                    y2="234.9"
+                    marker-end="url(#StickArrow_Marker)"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
+      </g>
+      <g id="Graphic_37692">
+        <path
+                    d="M 64.277735 202 L 56.722315 202 L 56.722315 167.14536 L 52.500025 167.14536 L 60.500025 150 L 68.500025 167.14536 L 64.277735 167.14536 Z"
+                    fill="white"
+                />
+        <path
+                    d="M 64.277735 202 L 56.722315 202 L 56.722315 167.14536 L 52.500025 167.14536 L 60.500025 150 L 68.500025 167.14536 L 64.277735 167.14536 Z"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
+      </g>
+      <g id="Graphic_37689" filter="url(#Shadow_2)">
+        <path
+                    d="M 10.000025 129.59911 C 10.000008 129.60593 10 129.61274 10 129.61956 C 10.000001 134.83536 14.930392 140.05116 24.791172 144.03068 C 44.512634 151.98977 76.48742 151.98977 96.20888 144.03068 C 106.06966 140.05116 111.00005 134.83536 111.00005 129.61956 L 111.00003 129.59911 L 111.00003 75 L 10.000025 75 Z"
+                    fill="white"
+                />
+        <path
+                    d="M 10.000025 129.59911 C 10.000008 129.60593 10 129.61274 10 129.61956 C 10.000001 134.83536 14.930392 140.05116 24.791172 144.03068 C 44.512634 151.98977 76.48742 151.98977 96.20888 144.03068 C 106.06966 140.05116 111.00005 134.83536 111.00005 129.61956 L 111.00003 129.59911 L 111.00003 75 L 10.000025 75 Z"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
+        <text transform="translate(15 101.5)" fill="black">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="16"
+                        font-weight="400"
+                        fill="black"
+                        x="6.452027"
+                        y="17"
+                        xml:space="preserve"
+                    >Datenbank</tspan>
+        </text>
+      </g>
+      <g id="Graphic_37685">
+        <ellipse
+                    cx="60.5"
+                    cy="70"
+                    rx="50.5000806940458"
+                    ry="25.0000399475474"
+                    fill="white"
+                />
+        <ellipse
+                    cx="60.5"
+                    cy="70"
+                    rx="50.5000806940458"
+                    ry="25.0000399475474"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
+      </g>
+      <g id="Graphic_37698">
+        <path
+                    d="M 67 26.902824 L 67 32.097176 L 32.145355 32.097176 L 32.145355 35 L 15 29.5 L 32.145355 24 L 32.145355 26.902824 Z"
+                    fill="white"
+                />
+        <path
+                    d="M 67 26.902824 L 67 32.097176 L 32.145355 32.097176 L 32.145355 35 L 15 29.5 L 32.145355 24 L 32.145355 26.902824 Z"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
+      </g>
+      <g id="Graphic_37697">
+        <text transform="translate(14.925657 10)" fill="black">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="12"
+                        font-weight="400"
+                        fill="black"
+                        x="48316906e-20"
+                        y="13"
+                        xml:space="preserve"
+                    >Datenfluss</tspan>
+        </text>
+      </g>
+      <g id="Graphic_37675">
+        <path
+                    d="M 402.7557 225.2223 L 402.7557 232.7777 L 367.90107 232.7777 L 367.90107 237 L 350.7557 229 L 367.90107 221 L 367.90107 225.2223 Z"
+                    fill="white"
+                />
+        <path
+                    d="M 402.7557 225.2223 L 402.7557 232.7777 L 367.90107 232.7777 L 367.90107 237 L 350.7557 229 L 367.90107 221 L 367.90107 225.2223 Z"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
+      </g>
+    </g>
+  </g>
+</svg>
