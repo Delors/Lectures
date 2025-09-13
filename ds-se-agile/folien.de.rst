@@ -158,7 +158,7 @@ DevOps
 
 Ergänzen bestehende agile Methoden.
 
-.. image:: images/dev-ops.svg
+.. image:: drawings/dev-ops.svg
     :width: 1440px
     :align: center
 
