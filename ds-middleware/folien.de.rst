@@ -922,13 +922,13 @@ Web Services - Standardisierung
 
   .. card::
 
-    .. image:: screenshots/ws_standards.png
+    .. image:: screenshots/ws_standards.webp
       :width: 30%
       :align: right
 
   .. card:: overlay
 
-    .. image:: screenshots/ws_standards_w3c.png
+    .. image:: screenshots/ws_standards_w3c.webp
       :width: 50%
       :align: left
 

@@ -1,111 +1,355 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xl="http://www.w3.org/1999/xlink" xmlns:dc="http://purl.org/dc/elements/1.1/" version="1.1" viewBox="80 601 382 196" width="382" height="196">
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+    "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg
+    xmlns="http://www.w3.org/2000/svg"
+    xmlns:xl="http://www.w3.org/1999/xlink"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    version="1.1"
+    viewBox="80 601 382 196"
+    width="1146"
+    height="588"
+>
   <style>
-    @import url('/LectureDoc2/ext/fonts/ld-fonts.css'); 
+    @import url('/LectureDoc2/ext/fonts/ld-fonts.css');
   </style>
   <defs>
-    <marker orient="auto" overflow="visible" markerUnits="strokeWidth" id="FilledArrow_Marker" stroke-linejoin="miter" stroke-miterlimit="10" viewBox="-1 -4 10 8" markerWidth="10" markerHeight="8" color="black">
+    <marker
+            orient="auto"
+            overflow="visible"
+            markerUnits="strokeWidth"
+            id="FilledArrow_Marker"
+            stroke-linejoin="miter"
+            stroke-miterlimit="10"
+            viewBox="-1 -4 10 8"
+            markerWidth="10"
+            markerHeight="8"
+            color="black"
+        >
       <g>
-        <path d="M 8 0 L 0 -3 L 0 3 Z" fill="currentColor" stroke="currentColor" stroke-width="1"/>
+        <path
+                    d="M 8 0 L 0 -3 L 0 3 Z"
+                    fill="currentColor"
+                    stroke="currentColor"
+                    stroke-width="1"
+                />
       </g>
     </marker>
   </defs>
   <metadata> Produced by OmniGraffle 8.0\n2025-03-05 13:08:05 +0000</metadata>
-  <g id="asynchronous_rpc" fill-opacity="1" stroke-opacity="1" stroke="none" stroke-dasharray="none" fill="none">
+  <g
+        id="asynchronous_rpc"
+        fill-opacity="1"
+        stroke-opacity="1"
+        stroke="none"
+        stroke-dasharray="none"
+        fill="none"
+    >
     <title>asynchronous_rpc</title>
     <g id="asynchronous_rpc_Layer_1">
       <title>Layer 1</title>
       <g id="Line_51">
-        <line x1="130.20837" y1="623.6226" x2="456.19237" y2="623.6226" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="8.0,8.0" stroke-width="2"/>
+        <line
+                    x1="130.20837"
+                    y1="623.6226"
+                    x2="456.19237"
+                    y2="623.6226"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-dasharray="8.0,8.0"
+                    stroke-width="2"
+                />
       </g>
       <g id="Line_52">
-        <line x1="130.05824" y1="751.1814" x2="456.04224" y2="751.1814" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="8.0,8.0" stroke-width="2"/>
+        <line
+                    x1="130.05824"
+                    y1="751.1814"
+                    x2="456.04224"
+                    y2="751.1814"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-dasharray="8.0,8.0"
+                    stroke-width="2"
+                />
       </g>
       <g id="Graphic_53">
         <text transform="translate(85.03937 616.6226)" fill="black">
-          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="11723955e-20" y="15" xml:space="preserve">Client</tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="14"
+                        font-weight="400"
+                        fill="black"
+                        x="11723955e-20"
+                        y="15"
+                        xml:space="preserve"
+                    >Client</tspan>
         </text>
       </g>
       <g id="Graphic_54">
         <text transform="translate(82.79625 744.1824)" fill="black">
-          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="8739676e-19" y="15" xml:space="preserve">Server</tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="14"
+                        font-weight="400"
+                        fill="black"
+                        x="8739676e-19"
+                        y="15"
+                        xml:space="preserve"
+                    >Server</tspan>
         </text>
       </g>
       <g id="Line_55">
-        <path d="M 144.10797 623.6226 L 174.02637 623.6226 L 164.64366 623.6226" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="5"/>
+        <path
+                    d="M 144.10797 623.6226 L 174.02637 623.6226 L 164.64366 623.6226"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="5"
+                />
       </g>
       <g id="Line_56">
-        <line x1="215.09724" y1="751.1814" x2="286.36524" y2="751.1814" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="5"/>
+        <line
+                    x1="215.09724"
+                    y1="751.1814"
+                    x2="286.36524"
+                    y2="751.1814"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="5"
+                />
       </g>
       <g id="Line_57">
-        <path d="M 257.76737 623.6226 L 286.11437 623.6226 L 371.15337 623.6226" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="5"/>
+        <path
+                    d="M 257.76737 623.6226 L 286.11437 623.6226 L 371.15337 623.6226"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="5"
+                />
       </g>
       <g id="Line_58">
-        <line x1="174.02637" y1="623.6226" x2="212.06308" y2="741.7578" marker-end="url(#FilledArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <line
+                    x1="174.02637"
+                    y1="623.6226"
+                    x2="212.06308"
+                    y2="741.7578"
+                    marker-end="url(#FilledArrow_Marker)"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
       </g>
       <g id="Line_59">
-        <line x1="215.09724" y1="751.1814" x2="254.62674" y2="633.0112" marker-end="url(#FilledArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <line
+                    x1="215.09724"
+                    y1="751.1814"
+                    x2="254.62674"
+                    y2="633.0112"
+                    marker-end="url(#FilledArrow_Marker)"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
       </g>
       <g id="Graphic_60">
-        <rect x="154.69918" y="641.4347" width="57.53" height="23" fill="white"/>
+        <rect x="154.69918" y="641.4347" width="57.53" height="23" fill="white" />
         <text transform="translate(159.69918 643.4347)" fill="black">
-          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="0" y="15" xml:space="preserve">request</tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="14"
+                        font-weight="400"
+                        fill="black"
+                        x="0"
+                        y="15"
+                        xml:space="preserve"
+                    >request</tspan>
         </text>
       </g>
       <g id="Graphic_61">
-        <rect x="203.0785" y="664.3267" width="68.096" height="42" fill="white"/>
+        <rect x="203.0785" y="664.3267" width="68.096" height="42" fill="white" />
         <text transform="translate(203.0785 666.3267)" fill="black">
-          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="1.708" y="15" xml:space="preserve">akzeptiere </tspan>
-          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="10.283" y="34" xml:space="preserve">request</tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="14"
+                        font-weight="400"
+                        fill="black"
+                        x="1.708"
+                        y="15"
+                        xml:space="preserve"
+                    >akzeptiere </tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="14"
+                        font-weight="400"
+                        fill="black"
+                        x="10.283"
+                        y="34"
+                        xml:space="preserve"
+                    >request</tspan>
         </text>
       </g>
       <g id="Graphic_65">
         <text transform="translate(182.25197 602.2756)" fill="black">
-          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="0" y="15" xml:space="preserve">Warten auf</tspan>
-          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="4.221" y="34" xml:space="preserve">Annahme</tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="14"
+                        font-weight="400"
+                        fill="black"
+                        x="0"
+                        y="15"
+                        xml:space="preserve"
+                    >Warten auf</tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="14"
+                        font-weight="400"
+                        fill="black"
+                        x="4.221"
+                        y="34"
+                        xml:space="preserve"
+                    >Annahme</tspan>
         </text>
       </g>
       <g id="Graphic_66">
         <text transform="translate(206.41825 758.3544)" fill="black">
-          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="20.286" y="15" xml:space="preserve">Aufruf der </tspan>
-          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="5258016e-19" y="34" xml:space="preserve">lokalen Methode</tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="14"
+                        font-weight="400"
+                        fill="black"
+                        x="20.286"
+                        y="15"
+                        xml:space="preserve"
+                    >Aufruf der </tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="14"
+                        font-weight="400"
+                        fill="black"
+                        x="5258016e-19"
+                        y="34"
+                        xml:space="preserve"
+                    >lokalen Methode</tspan>
         </text>
       </g>
       <g id="Line_67">
-        <line x1="388.12942" y1="623.6226" x2="420.1294" y2="623.6226" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="5"/>
+        <line
+                    x1="388.12942"
+                    y1="623.6226"
+                    x2="420.1294"
+                    y2="623.6226"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="5"
+                />
       </g>
       <g id="Line_68">
-        <line x1="331" y1="751.1814" x2="368.1808" y2="633.0658" marker-end="url(#FilledArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <line
+                    x1="331"
+                    y1="751.1814"
+                    x2="368.1808"
+                    y2="633.0658"
+                    marker-end="url(#FilledArrow_Marker)"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
       </g>
       <g id="Graphic_69">
-        <rect x="300.53224" y="677.0393" width="94.392" height="42" fill="white"/>
+        <rect x="300.53224" y="677.0393" width="94.392" height="42" fill="white" />
         <text transform="translate(305.53224 679.0393)" fill="black">
-          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="11.718" y="15" xml:space="preserve">Rückgabe</tspan>
-          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="0" y="34" xml:space="preserve">der Ergenisse</tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="14"
+                        font-weight="400"
+                        fill="black"
+                        x="11.718"
+                        y="15"
+                        xml:space="preserve"
+                    >Rückgabe</tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="14"
+                        font-weight="400"
+                        fill="black"
+                        x="0"
+                        y="34"
+                        xml:space="preserve"
+                    >der Ergenisse</tspan>
         </text>
       </g>
       <g id="Line_70">
-        <line x1="385.32637" y1="623.6226" x2="423.92557" y2="741.7708" marker-end="url(#FilledArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <line
+                    x1="385.32637"
+                    y1="623.6226"
+                    x2="423.92557"
+                    y2="741.7708"
+                    marker-end="url(#FilledArrow_Marker)"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
       </g>
       <g id="Graphic_71">
-        <rect x="375.7133" y="713.4687" width="85.446" height="23" fill="white"/>
+        <rect x="375.7133" y="713.4687" width="85.446" height="23" fill="white" />
         <text transform="translate(380.7133 715.4687)" fill="black">
-          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="0" y="15" xml:space="preserve">Bestätigung</tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="14"
+                        font-weight="400"
+                        fill="black"
+                        x="0"
+                        y="15"
+                        xml:space="preserve"
+                    >Bestätigung</tspan>
         </text>
       </g>
       <g id="Graphic_72">
         <text transform="translate(333.77337 601.4496)" fill="black">
-          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="0" y="15" xml:space="preserve">Interrupt Client</tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="14"
+                        font-weight="400"
+                        fill="black"
+                        x="0"
+                        y="15"
+                        xml:space="preserve"
+                    >Interrupt Client</tspan>
         </text>
       </g>
       <g id="Graphic_74">
         <text transform="translate(411.0236 751.1811)" fill="black">
-          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="14210855e-21" y="15" xml:space="preserve">Zeit</tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="14"
+                        font-weight="400"
+                        fill="black"
+                        x="14210855e-21"
+                        y="15"
+                        xml:space="preserve"
+                    >Zeit</tspan>
         </text>
       </g>
       <g id="Line_73">
-        <line x1="439.3701" y1="761.3542" x2="443.64346" y2="761.3542" marker-end="url(#FilledArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <line
+                    x1="439.3701"
+                    y1="761.3542"
+                    x2="443.64346"
+                    y2="761.3542"
+                    marker-end="url(#FilledArrow_Marker)"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
       </g>
     </g>
   </g>
