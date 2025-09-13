@@ -1,162 +1,568 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xl="http://www.w3.org/1999/xlink" version="1.1" xmlns:dc="http://purl.org/dc/elements/1.1/" viewBox="13 355 359 317" width="359" height="317">
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+    "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg
+    xmlns="http://www.w3.org/2000/svg"
+    xmlns:xl="http://www.w3.org/1999/xlink"
+    version="1.1"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    viewBox="13 355 359 317"
+    width="1077"
+    height="951"
+>
   <style>
-    @import url('/LectureDoc2/ext/fonts/ld-fonts.css'); 
+    @import url('/LectureDoc2/ext/fonts/ld-fonts.css');
   </style>
   <defs>
-    <marker orient="auto" overflow="visible" markerUnits="strokeWidth" id="UMLInheritance_Marker" stroke-linejoin="miter" stroke-miterlimit="10" viewBox="-1 -6 10 12" markerWidth="10" markerHeight="12" color="#666">
+    <marker
+            orient="auto"
+            overflow="visible"
+            markerUnits="strokeWidth"
+            id="UMLInheritance_Marker"
+            stroke-linejoin="miter"
+            stroke-miterlimit="10"
+            viewBox="-1 -6 10 12"
+            markerWidth="10"
+            markerHeight="12"
+            color="#666"
+        >
       <g>
-        <path d="M 7.2 0 L 0 -4.2 L 0 4.2 Z" fill="none" stroke="currentColor" stroke-width="1"/>
+        <path
+                    d="M 7.2 0 L 0 -4.2 L 0 4.2 Z"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1"
+                />
       </g>
     </marker>
-    <marker orient="auto" overflow="visible" markerUnits="strokeWidth" id="StickArrow_Marker" stroke-linejoin="miter" stroke-miterlimit="10" viewBox="-1 -3 7 6" markerWidth="7" markerHeight="6" color="black">
+    <marker
+            orient="auto"
+            overflow="visible"
+            markerUnits="strokeWidth"
+            id="StickArrow_Marker"
+            stroke-linejoin="miter"
+            stroke-miterlimit="10"
+            viewBox="-1 -3 7 6"
+            markerWidth="7"
+            markerHeight="6"
+            color="black"
+        >
       <g>
-        <path d="M 4.8 0 L 0 0 M 0 -1.8 L 4.8 0 L 0 1.8" fill="none" stroke="currentColor" stroke-width="1"/>
+        <path
+                    d="M 4.8 0 L 0 0 M 0 -1.8 L 4.8 0 L 0 1.8"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1"
+                />
       </g>
     </marker>
     <filter id="Shadow" filterUnits="userSpaceOnUse" x="-22.9" y="323.3">
-      <feGaussianBlur in="SourceAlpha" result="blur" stdDeviation="1.308"/>
-      <feOffset in="blur" result="offset" dx="2" dy="2"/>
-      <feFlood flood-color="black" flood-opacity=".5" result="flood"/>
-      <feComposite in="flood" in2="offset" operator="in" result="color"/>
+      <feGaussianBlur in="SourceAlpha" result="blur" stdDeviation="1.308" />
+      <feOffset in="blur" result="offset" dx="2" dy="2" />
+      <feFlood flood-color="black" flood-opacity=".5" result="flood" />
+      <feComposite in="flood" in2="offset" operator="in" result="color" />
       <feMerge>
-        <feMergeNode in="color"/>
-        <feMergeNode in="SourceGraphic"/>
+        <feMergeNode in="color" />
+        <feMergeNode in="SourceGraphic" />
       </feMerge>
     </filter>
-    <marker orient="auto" overflow="visible" markerUnits="strokeWidth" id="FilledBall_Marker" stroke-linejoin="miter" stroke-miterlimit="10" viewBox="-1 -3 6 6" markerWidth="6" markerHeight="6" color="black">
+    <marker
+            orient="auto"
+            overflow="visible"
+            markerUnits="strokeWidth"
+            id="FilledBall_Marker"
+            stroke-linejoin="miter"
+            stroke-miterlimit="10"
+            viewBox="-1 -3 6 6"
+            markerWidth="6"
+            markerHeight="6"
+            color="black"
+        >
       <g>
-        <circle cx="1.7999992" cy="0" r="1.79999840920999" fill="currentColor" stroke="currentColor" stroke-width="1"/>
+        <circle
+                    cx="1.7999992"
+                    cy="0"
+                    r="1.79999840920999"
+                    fill="currentColor"
+                    stroke="currentColor"
+                    stroke-width="1"
+                />
       </g>
     </marker>
   </defs>
   <metadata> Produced by OmniGraffle 8.0\n2025-02-12 15:39:42 +0000</metadata>
-  <g id="java-threads" stroke-opacity="1" stroke="none" stroke-dasharray="none" fill="none" fill-opacity="1">
+  <g
+        id="java-threads"
+        stroke-opacity="1"
+        stroke="none"
+        stroke-dasharray="none"
+        fill="none"
+        fill-opacity="1"
+    >
     <title>java-threads</title>
     <g id="java-threads_Layer_1">
       <title>Layer 1</title>
       <g id="Group_9">
         <g id="Graphic_12">
           <title>Attributes</title>
-          <rect x="14" y="384.68146" width="187" height="14" stroke="#b9c0c1" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+          <rect
+                        x="14"
+                        y="384.68146"
+                        width="187"
+                        height="14"
+                        stroke="#b9c0c1"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                    />
           <text transform="translate(20 390.68146)" fill="#515556">
-            <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="#515556" x="0" y="15" xml:space="preserve"> </tspan>
+            <tspan
+                            font-family="Noto Sans Display"
+                            font-size="14"
+                            font-weight="400"
+                            fill="#515556"
+                            x="0"
+                            y="15"
+                            xml:space="preserve"
+                        > </tspan>
           </text>
         </g>
         <g id="Graphic_11">
           <title>Class Name</title>
-          <rect x="14" y="356.68146" width="187" height="28" stroke="#b9c0c1" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+          <rect
+                        x="14"
+                        y="356.68146"
+                        width="187"
+                        height="28"
+                        stroke="#b9c0c1"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                    />
           <text transform="translate(20 361.18146)" fill="#515556">
-            <tspan font-family="Noto Sans Display" font-size="14" font-weight="700" fill="#515556" x="64.162" y="15" xml:space="preserve">Thread</tspan>
+            <tspan
+                            font-family="Noto Sans Display"
+                            font-size="14"
+                            font-weight="700"
+                            fill="#515556"
+                            x="64.162"
+                            y="15"
+                            xml:space="preserve"
+                        >Thread</tspan>
           </text>
         </g>
         <g id="Graphic_10">
           <title>Operations</title>
-          <rect x="14" y="398.68146" width="187" height="168.23515" stroke="#b9c0c1" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+          <rect
+                        x="14"
+                        y="398.68146"
+                        width="187"
+                        height="168.23515"
+                        stroke="#b9c0c1"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                    />
           <text transform="translate(20 404.68146)" fill="#515556">
-            <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="#515556" x="0" y="15" xml:space="preserve">Thread(Runnable: r)  </tspan>
-            <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="#515556" x="0" y="38" xml:space="preserve">run()  </tspan>
-            <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="#515556" x="0" y="61" xml:space="preserve">start()  </tspan>
-            <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="#515556" x="0" y="84" xml:space="preserve">setDaemon(boolean)   </tspan>
-            <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="#515556" x="0" y="107" xml:space="preserve">Thread currentThread()  </tspan>
-            <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="#515556" x="0" y="130" xml:space="preserve">Thread.Builder ofVirtual()  </tspan>
-            <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="#515556" x="0" y="153" xml:space="preserve">Thread.Builder ofPlatform()  </tspan>
+            <tspan
+                            font-family="Noto Sans Display"
+                            font-size="14"
+                            font-weight="400"
+                            fill="#515556"
+                            x="0"
+                            y="15"
+                            xml:space="preserve"
+                        >Thread(Runnable: r)  </tspan>
+            <tspan
+                            font-family="Noto Sans Display"
+                            font-size="14"
+                            font-weight="400"
+                            fill="#515556"
+                            x="0"
+                            y="38"
+                            xml:space="preserve"
+                        >run()  </tspan>
+            <tspan
+                            font-family="Noto Sans Display"
+                            font-size="14"
+                            font-weight="400"
+                            fill="#515556"
+                            x="0"
+                            y="61"
+                            xml:space="preserve"
+                        >start()  </tspan>
+            <tspan
+                            font-family="Noto Sans Display"
+                            font-size="14"
+                            font-weight="400"
+                            fill="#515556"
+                            x="0"
+                            y="84"
+                            xml:space="preserve"
+                        >setDaemon(boolean)   </tspan>
+            <tspan
+                            font-family="Noto Sans Display"
+                            font-size="14"
+                            font-weight="400"
+                            fill="#515556"
+                            x="0"
+                            y="107"
+                            xml:space="preserve"
+                        >Thread currentThread()  </tspan>
+            <tspan
+                            font-family="Noto Sans Display"
+                            font-size="14"
+                            font-weight="400"
+                            fill="#515556"
+                            x="0"
+                            y="130"
+                            xml:space="preserve"
+                        >Thread.Builder ofVirtual()  </tspan>
+            <tspan
+                            font-family="Noto Sans Display"
+                            font-size="14"
+                            font-weight="400"
+                            fill="#515556"
+                            x="0"
+                            y="153"
+                            xml:space="preserve"
+                        >Thread.Builder ofPlatform()  </tspan>
           </text>
         </g>
       </g>
       <g id="Group_19">
         <g id="Graphic_22">
           <title>Attributes</title>
-          <rect x="23.294158" y="630.4166" width="98" height="14" stroke="#b9c0c1" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+          <rect
+                        x="23.294158"
+                        y="630.4166"
+                        width="98"
+                        height="14"
+                        stroke="#b9c0c1"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                    />
           <text transform="translate(29.294158 636.4166)" fill="#515556">
-            <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="#515556" x="0" y="15" xml:space="preserve"> </tspan>
+            <tspan
+                            font-family="Noto Sans Display"
+                            font-size="14"
+                            font-weight="400"
+                            fill="#515556"
+                            x="0"
+                            y="15"
+                            xml:space="preserve"
+                        > </tspan>
           </text>
         </g>
         <g id="Graphic_21">
           <title>Class Name</title>
-          <rect x="23.294158" y="602.4166" width="98" height="28" stroke="#b9c0c1" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+          <rect
+                        x="23.294158"
+                        y="602.4166"
+                        width="98"
+                        height="28"
+                        stroke="#b9c0c1"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                    />
           <text transform="translate(29.294158 606.9166)" fill="#515556">
-            <tspan font-family="Noto Sans Display" font-size="14" font-weight="700" fill="#515556" x="9.491" y="15" xml:space="preserve">MyThread</tspan>
+            <tspan
+                            font-family="Noto Sans Display"
+                            font-size="14"
+                            font-weight="700"
+                            fill="#515556"
+                            x="9.491"
+                            y="15"
+                            xml:space="preserve"
+                        >MyThread</tspan>
           </text>
         </g>
         <g id="Graphic_20">
           <title>Operations</title>
-          <rect x="23.294158" y="644.4166" width="98" height="26" stroke="#b9c0c1" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+          <rect
+                        x="23.294158"
+                        y="644.4166"
+                        width="98"
+                        height="26"
+                        stroke="#b9c0c1"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                    />
           <text transform="translate(29.294158 647.4166)" fill="#515556">
-            <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="#515556" x="0" y="15" xml:space="preserve">run()</tspan>
+            <tspan
+                            font-family="Noto Sans Display"
+                            font-size="14"
+                            font-weight="400"
+                            fill="#515556"
+                            x="0"
+                            y="15"
+                            xml:space="preserve"
+                        >run()</tspan>
           </text>
         </g>
       </g>
       <g id="Group_23">
         <g id="Graphic_26">
           <title>Attributes</title>
-          <rect x="272.6773" y="461.526" width="98" height="14" stroke="#b9c0c1" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+          <rect
+                        x="272.6773"
+                        y="461.526"
+                        width="98"
+                        height="14"
+                        stroke="#b9c0c1"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                    />
           <text transform="translate(278.6773 467.526)" fill="#515556">
-            <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="#515556" x="0" y="15" xml:space="preserve"> </tspan>
+            <tspan
+                            font-family="Noto Sans Display"
+                            font-size="14"
+                            font-weight="400"
+                            fill="#515556"
+                            x="0"
+                            y="15"
+                            xml:space="preserve"
+                        > </tspan>
           </text>
         </g>
         <g id="Graphic_25">
           <title>Class Name</title>
-          <rect x="272.6773" y="433.526" width="98" height="28" stroke="#b9c0c1" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+          <rect
+                        x="272.6773"
+                        y="433.526"
+                        width="98"
+                        height="28"
+                        stroke="#b9c0c1"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                    />
           <text transform="translate(278.6773 438.026)" fill="#515556">
-            <tspan font-family="Noto Sans Display" font-size="14" font-style="italic" font-weight="700" fill="#515556" x="13.11" y="15" xml:space="preserve">Runnable</tspan>
+            <tspan
+                            font-family="Noto Sans Display"
+                            font-size="14"
+                            font-style="italic"
+                            font-weight="700"
+                            fill="#515556"
+                            x="13.11"
+                            y="15"
+                            xml:space="preserve"
+                        >Runnable</tspan>
           </text>
         </g>
         <g id="Graphic_24">
           <title>Operations</title>
-          <rect x="272.6773" y="475.526" width="98" height="26" stroke="#b9c0c1" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+          <rect
+                        x="272.6773"
+                        y="475.526"
+                        width="98"
+                        height="26"
+                        stroke="#b9c0c1"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                    />
           <text transform="translate(278.6773 479.026)" fill="#515556">
-            <tspan font-family="Noto Sans Display" font-size="14" font-style="italic" font-weight="400" fill="#515556" x="0" y="15" xml:space="preserve">run()</tspan>
+            <tspan
+                            font-family="Noto Sans Display"
+                            font-size="14"
+                            font-style="italic"
+                            font-weight="400"
+                            fill="#515556"
+                            x="0"
+                            y="15"
+                            xml:space="preserve"
+                        >run()</tspan>
           </text>
         </g>
       </g>
       <g id="Group_27">
         <g id="Graphic_30">
           <title>Attributes</title>
-          <rect x="272.6773" y="630.4166" width="98" height="14" stroke="#b9c0c1" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+          <rect
+                        x="272.6773"
+                        y="630.4166"
+                        width="98"
+                        height="14"
+                        stroke="#b9c0c1"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                    />
           <text transform="translate(278.6773 636.4166)" fill="#515556">
-            <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="#515556" x="0" y="15" xml:space="preserve"> </tspan>
+            <tspan
+                            font-family="Noto Sans Display"
+                            font-size="14"
+                            font-weight="400"
+                            fill="#515556"
+                            x="0"
+                            y="15"
+                            xml:space="preserve"
+                        > </tspan>
           </text>
         </g>
         <g id="Graphic_29">
           <title>Class Name</title>
-          <rect x="272.6773" y="602.4166" width="98" height="28" stroke="#b9c0c1" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+          <rect
+                        x="272.6773"
+                        y="602.4166"
+                        width="98"
+                        height="28"
+                        stroke="#b9c0c1"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                    />
           <text transform="translate(278.6773 606.9166)" fill="#515556">
-            <tspan font-family="Noto Sans Display" font-size="14" font-weight="700" fill="#515556" x="1.042" y="15" xml:space="preserve">MyRunnable</tspan>
+            <tspan
+                            font-family="Noto Sans Display"
+                            font-size="14"
+                            font-weight="700"
+                            fill="#515556"
+                            x="1.042"
+                            y="15"
+                            xml:space="preserve"
+                        >MyRunnable</tspan>
           </text>
         </g>
         <g id="Graphic_28">
           <title>Operations</title>
-          <rect x="272.6773" y="644.4166" width="98" height="26" stroke="#b9c0c1" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+          <rect
+                        x="272.6773"
+                        y="644.4166"
+                        width="98"
+                        height="26"
+                        stroke="#b9c0c1"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                    />
           <text transform="translate(278.6773 647.4166)" fill="#515556">
-            <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="#515556" x="0" y="15" xml:space="preserve">run()</tspan>
+            <tspan
+                            font-family="Noto Sans Display"
+                            font-size="14"
+                            font-weight="400"
+                            fill="#515556"
+                            x="0"
+                            y="15"
+                            xml:space="preserve"
+                        >run()</tspan>
           </text>
         </g>
       </g>
       <g id="Line_35">
-        <line x1="71.79416" y1="602.4166" x2="71.79416" y2="583.8166" marker-end="url(#UMLInheritance_Marker)" stroke="#666" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+        <line
+                    x1="71.79416"
+                    y1="602.4166"
+                    x2="71.79416"
+                    y2="583.8166"
+                    marker-end="url(#UMLInheritance_Marker)"
+                    stroke="#666"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                />
       </g>
       <g id="Line_36">
-        <line x1="321.1773" y1="602.4166" x2="321.1773" y2="518.426" marker-end="url(#UMLInheritance_Marker)" stroke="#666" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+        <line
+                    x1="321.1773"
+                    y1="602.4166"
+                    x2="321.1773"
+                    y2="518.426"
+                    marker-end="url(#UMLInheritance_Marker)"
+                    stroke="#666"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                />
       </g>
       <g id="Line_37">
-        <line x1="201" y1="471.5" x2="259.7773" y2="471.5" marker-end="url(#StickArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="8.0,8.0" stroke-width="2"/>
+        <line
+                    x1="201"
+                    y1="471.5"
+                    x2="259.7773"
+                    y2="471.5"
+                    marker-end="url(#StickArrow_Marker)"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-dasharray="8.0,8.0"
+                    stroke-width="2"
+                />
       </g>
       <g id="Graphic_38" filter="url(#Shadow)">
-        <path d="M 260.3 592.7581 C 260.3 587.0743 258.74298 586.3711 247.36938 580.7461 L 247.24923 580.6879 C 235.81556 575.0041 235.69663 575.0041 223.9626 575.0041 C 208.33844 575.0041 137.7 575.0041 137.7 575.0041 L 137.7 635.0041 L 260.3 635.0041 L 260.3 592.7581 Z" fill="#a5a5a5"/>
-        <path d="M 260.3 592.7581 C 260.3 587.0743 258.74298 586.3711 247.36938 580.7461 L 247.24923 580.6879 C 235.81556 575.0041 235.69663 575.0041 223.9626 575.0041 C 208.33844 575.0041 137.7 575.0041 137.7 575.0041 L 137.7 635.0041 L 260.3 635.0041 L 260.3 592.7581 Z M 260.3 592.4653 C 260.3 587.0743 260.17985 587.0743 235.69663 587.0743 L 235.69663 587.0743 C 235.69663 575.0629 235.69663 575.0041 224.68102 575.0041" stroke="white" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <path
+                    d="M 260.3 592.7581 C 260.3 587.0743 258.74298 586.3711 247.36938 580.7461 L 247.24923 580.6879 C 235.81556 575.0041 235.69663 575.0041 223.9626 575.0041 C 208.33844 575.0041 137.7 575.0041 137.7 575.0041 L 137.7 635.0041 L 260.3 635.0041 L 260.3 592.7581 Z"
+                    fill="#a5a5a5"
+                />
+        <path
+                    d="M 260.3 592.7581 C 260.3 587.0743 258.74298 586.3711 247.36938 580.7461 L 247.24923 580.6879 C 235.81556 575.0041 235.69663 575.0041 223.9626 575.0041 C 208.33844 575.0041 137.7 575.0041 137.7 575.0041 L 137.7 635.0041 L 260.3 635.0041 L 260.3 592.7581 Z M 260.3 592.4653 C 260.3 587.0743 260.17985 587.0743 235.69663 587.0743 L 235.69663 587.0743 C 235.69663 575.0629 235.69663 575.0041 224.68102 575.0041"
+                    stroke="white"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
         <text transform="translate(142.7 576.5041)" fill="white">
-          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="white" x="0" y="15" xml:space="preserve">«method»</tspan>
-          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="white" x="0" y="34" xml:space="preserve">while(true)</tspan>
-          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="white" x="0" y="53" xml:space="preserve">   do_something();</tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="14"
+                        font-weight="400"
+                        fill="white"
+                        x="0"
+                        y="15"
+                        xml:space="preserve"
+                    >«method»</tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="14"
+                        font-weight="400"
+                        fill="white"
+                        x="0"
+                        y="34"
+                        xml:space="preserve"
+                    >while(true)</tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="14"
+                        font-weight="400"
+                        fill="white"
+                        x="0"
+                        y="53"
+                        xml:space="preserve"
+                    >   do_something();</tspan>
         </text>
       </g>
       <g id="Line_40">
-        <line x1="150.95" y1="635.0041" x2="72.02307" y2="653.9688" marker-end="url(#FilledBall_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="8.0,8.0" stroke-width="2"/>
+        <line
+                    x1="150.95"
+                    y1="635.0041"
+                    x2="72.02307"
+                    y2="653.9688"
+                    marker-end="url(#FilledBall_Marker)"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-dasharray="8.0,8.0"
+                    stroke-width="2"
+                />
       </g>
       <g id="Line_41">
-        <line x1="235.3125" y1="635.0041" x2="271.20632" y2="652.3214" marker-end="url(#FilledBall_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="8.0,8.0" stroke-width="2"/>
+        <line
+                    x1="235.3125"
+                    y1="635.0041"
+                    x2="271.20632"
+                    y2="652.3214"
+                    marker-end="url(#FilledBall_Marker)"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-dasharray="8.0,8.0"
+                    stroke-width="2"
+                />
       </g>
     </g>
   </g>
