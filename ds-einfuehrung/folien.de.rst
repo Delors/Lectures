@@ -52,7 +52,7 @@ Ein weitgefasster Überblick über verteilte Systeme.
 Terminologie verteilter Systeme
 ----------------------------------
 
-.. image:: images/modern_software_architecture-tag_cloud.png
+.. image:: images/modern_software_architecture-tag_cloud.webp
     :width: 100%
     :align: center
 
@@ -61,7 +61,7 @@ Terminologie verteilter Systeme
 Empfohlene Literatur
 ---------------------
 
-.. image:: screenshots/distributed-systems.net.png
+.. image:: screenshots/distributed-systems.net.webp
     :align: center
 
 .. supplemental::
@@ -78,7 +78,7 @@ Empfohlene Literatur
 Podcast: `SE-Radio <https://se-radio.net>`__
 -----------------------------------------------------------
 
-.. image:: screenshots/se-radio.net.png
+.. image:: screenshots/se-radio.net.webp
     :align: center
 
 
@@ -86,7 +86,7 @@ Podcast: `SE-Radio <https://se-radio.net>`__
 Podcast: `Thoughtworks Technology Podcast <https://www.thoughtworks.com/en-de/insights/podcasts/technology-podcasts>`__
 -------------------------------------------------------------------------------------------------------------------------------------
 
-.. image:: screenshots/thoughtworks-technology-podcast.png
+.. image:: screenshots/thoughtworks-technology-podcast.webp
     :align: center
     :class: trbl-shadow
 
@@ -104,7 +104,6 @@ Verteilt vs. Dezentralisiert
 .. image:: images/distributed-vs-decentralized.svg
     :align: center
     :width: 100%
-    :class: icon
 
 .. supplemental::
 
