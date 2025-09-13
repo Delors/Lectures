@@ -7,66 +7,13 @@
     xmlns:xl="http://www.w3.org/1999/xlink"
     xmlns:dc="http://purl.org/dc/elements/1.1/"
     viewBox="13 438 536 432"
-    width="412"
-    height="332"
+width="1236"
+height="996"
 >
 <style>
   @import url('/LectureDoc2/ext/fonts/ld-fonts.css');
 </style>
   <defs>
-    <font-face
-            font-family="Noto Sans Display"
-            font-size="16"
-            units-per-em="1000"
-            underline-position="-75.68359"
-            underline-thickness="49.316406"
-            slope="-750"
-            x-height="522.9492"
-            cap-height="717.28516"
-            ascent="770.0195"
-            descent="-229.98047"
-            font-style="italic"
-            font-weight="400"
-        >
-      <font-face-src>
-        <font-face-name name="Noto Sans Display-Oblique" />
-      </font-face-src>
-    </font-face>
-    <font-face
-            font-family="Noto Sans Display"
-            font-size="16"
-            units-per-em="1000"
-            underline-position="-75.68359"
-            underline-thickness="49.316406"
-            slope="0"
-            x-height="522.9492"
-            cap-height="717.28516"
-            ascent="770.0195"
-            descent="-229.98047"
-            font-weight="400"
-        >
-      <font-face-src>
-        <font-face-name name="Noto Sans Display" />
-      </font-face-src>
-    </font-face>
-    <font-face
-            font-family="Noto Sans Display Neue"
-            font-size="16"
-            panose-1="2 0 5 3 0 0 0 2 0 4"
-            units-per-em="1000"
-            underline-position="-100"
-            underline-thickness="50"
-            slope="0"
-            x-height="517"
-            cap-height="714"
-            ascent="951.9958"
-            descent="-212.99744"
-            font-weight="400"
-        >
-      <font-face-src>
-        <font-face-name name="Noto Sans DisplayNeue" />
-      </font-face-src>
-    </font-face>
     <marker
             orient="auto"
             overflow="visible"
@@ -213,7 +160,7 @@
                 />
         <text transform="translate(429 813.276)" fill="white">
           <tspan
-                        font-family="Noto Sans Display Neue"
+                        font-family="Noto Sans Display"
                         font-size="16"
                         font-weight="400"
                         fill="white"
