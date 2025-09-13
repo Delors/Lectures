@@ -6,9 +6,9 @@
     xmlns="http://www.w3.org/2000/svg"
     xmlns:xl="http://www.w3.org/1999/xlink"
     xmlns:dc="http://purl.org/dc/elements/1.1/"
-    viewBox="237 201 598 262"
-    width="598"
-    height="262"
+    viewBox="237 186 598 307"
+width="1794"
+height="921"
 >
   <style>
     @import url('/LectureDoc2/ext/fonts/ld-fonts.css');
@@ -38,16 +38,16 @@
   </defs>
   <metadata> Produced by OmniGraffle 8.0\n2024-02-28 12:30:50 +0000</metadata>
   <g
-        id="task"
+        id="solution"
         fill="none"
         fill-opacity="1"
         stroke-opacity="1"
         stroke-dasharray="none"
         stroke="none"
     >
-    <title>task</title>
-    <rect fill="white" x="237" y="201" width="598" height="262" />
-    <g id="task_Layer_1">
+    <title>solution</title>
+    <rect fill="white" x="237" y="186" width="598" height="307" />
+    <g id="solution_Layer_1">
       <title>Layer 1</title>
       <g id="Line_2">
         <line
@@ -445,6 +445,234 @@
                     stroke-linejoin="round"
                     stroke-width="1"
                 />
+      </g>
+      <g id="Graphic_38">
+        <text transform="translate(322 186.16089)" fill="black">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="16"
+                        font-weight="700"
+                        fill="black"
+                        x="31974423e-20"
+                        y="16"
+                    >2</tspan>
+        </text>
+      </g>
+      <g id="Graphic_39">
+        <text transform="translate(412.052 186.16089)" fill="black">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="16"
+                        font-weight="700"
+                        fill="black"
+                        x="31974423e-20"
+                        y="16"
+                    >4</tspan>
+        </text>
+      </g>
+      <g id="Graphic_40">
+        <text transform="translate(450 186.16089)" fill="black">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="16"
+                        font-weight="700"
+                        fill="black"
+                        x="31974423e-20"
+                        y="16"
+                    >5</tspan>
+        </text>
+      </g>
+      <g id="Graphic_41">
+        <text transform="translate(508.41 186.16089)" fill="black">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="16"
+                        font-weight="700"
+                        fill="black"
+                        x="31974423e-20"
+                        y="16"
+                    >6</tspan>
+        </text>
+      </g>
+      <g id="Graphic_42">
+        <text transform="translate(595.21875 186.16089)" fill="black">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="16"
+                        font-weight="700"
+                        fill="black"
+                        x="31974423e-20"
+                        y="16"
+                    >7</tspan>
+        </text>
+      </g>
+      <g id="Graphic_43">
+        <text transform="translate(652.328 186.16089)" fill="black">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="16"
+                        font-weight="700"
+                        fill="black"
+                        x="31974423e-20"
+                        y="16"
+                    >8</tspan>
+        </text>
+      </g>
+      <g id="Graphic_44">
+        <text transform="translate(732.5 186.16089)" fill="black">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="16"
+                        font-weight="700"
+                        fill="black"
+                        x="6394885e-19"
+                        y="16"
+                    >11</tspan>
+        </text>
+      </g>
+      <g id="Graphic_46">
+        <text transform="translate(321.6145 361.375)" fill="black">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="16"
+                        font-weight="700"
+                        fill="black"
+                        x="31974423e-20"
+                        y="16"
+                    >3</tspan>
+        </text>
+      </g>
+      <g id="Graphic_47">
+        <text transform="translate(382.848 361.0664)" fill="black">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="16"
+                        font-weight="700"
+                        fill="black"
+                        x="31974423e-20"
+                        y="16"
+                    >4</tspan>
+        </text>
+      </g>
+      <g id="Graphic_48">
+        <text transform="translate(471.51 361.375)" fill="black">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="16"
+                        font-weight="700"
+                        fill="black"
+                        x="31974423e-20"
+                        y="16"
+                    >5</tspan>
+        </text>
+      </g>
+      <g id="Graphic_49">
+        <text transform="translate(545.919 361.375)" fill="black">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="16"
+                        font-weight="700"
+                        fill="black"
+                        x="31974423e-20"
+                        y="16"
+                    >9</tspan>
+        </text>
+      </g>
+      <g id="Graphic_50">
+        <text transform="translate(610.552 361.375)" fill="black">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="16"
+                        font-weight="700"
+                        fill="black"
+                        x="6394885e-19"
+                        y="16"
+                    >10</tspan>
+        </text>
+      </g>
+      <g id="Graphic_51">
+        <text transform="translate(312.618 466.948)" fill="black">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="16"
+                        font-weight="700"
+                        fill="black"
+                        x="31974423e-20"
+                        y="16"
+                    >5</tspan>
+        </text>
+      </g>
+      <g id="Graphic_52">
+        <text transform="translate(367.621 466.948)" fill="black">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="16"
+                        font-weight="700"
+                        fill="black"
+                        x="31974423e-20"
+                        y="16"
+                    >6</tspan>
+        </text>
+      </g>
+      <g id="Graphic_53">
+        <text transform="translate(417.052 467.948)" fill="black">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="16"
+                        font-weight="700"
+                        fill="black"
+                        x="31974423e-20"
+                        y="16"
+                    >7</tspan>
+        </text>
+      </g>
+      <g id="Graphic_54">
+        <text transform="translate(511.082 466.948)" fill="black">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="16"
+                        font-weight="700"
+                        fill="black"
+                        x="31974423e-20"
+                        y="16"
+                    >8</tspan>
+        </text>
+      </g>
+      <g id="Graphic_55">
+        <text transform="translate(673.5 466.948)" fill="black">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="16"
+                        font-weight="700"
+                        fill="black"
+                        x="31974423e-20"
+                        y="16"
+                    >9</tspan>
+        </text>
+      </g>
+      <g id="Graphic_56">
+        <text transform="translate(727.5 466.948)" fill="black">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="16"
+                        font-weight="700"
+                        fill="black"
+                        x="6394885e-19"
+                        y="16"
+                    >10</tspan>
+        </text>
+      </g>
+      <g id="Graphic_57">
+        <text transform="translate(764.12 186.16089)" fill="black">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="16"
+                        font-weight="700"
+                        fill="black"
+                        x="6394885e-19"
+                        y="16"
+                    >12</tspan>
+        </text>
       </g>
     </g>
   </g>

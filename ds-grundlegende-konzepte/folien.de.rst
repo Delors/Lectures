@@ -291,7 +291,7 @@ Lamport-Uhren (*logical clocks*)
     (a) Versehen Sie alle Ereignisse mit den korrekten Zeitstempeln.
     (b) Geben Sie einen konsistenten Sicherungspunkt an, der Ereignis r enthält.
 
-    .. image:: images/lamport-exercise/task.svg
+    .. image:: drawings/lamport-exercise/task.svg
       :align: center
 
     .. solution::
@@ -299,7 +299,7 @@ Lamport-Uhren (*logical clocks*)
 
       (a)
 
-      .. image:: images/lamport-exercise/solution.svg
+      .. image:: drawings/lamport-exercise/solution.svg
           :align: center
           :class: box-shadow rounded-corners
 
@@ -405,7 +405,7 @@ In **verteilten** (*Datenbank-*)\ *Systemen* können nur zwei der drei folgenden
 
   .. grid::
 
-    .. image:: images/cap.svg
+    .. image:: drawings/cap.svg
       :align: center
 
   .. grid::  incremental

@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+    "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg
+    xmlns="http://www.w3.org/2000/svg"
+    xmlns:xl="http://www.w3.org/1999/xlink"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    version="1.1"
+    viewBox="91 109 369 382"
+    width="885"
+    height="915"
+>
+  <style>
+    @import url('/LectureDoc2/ext/fonts/ld-fonts.css');
+  </style>
+  <metadata> Produced by OmniGraffle 8.0\n2024-06-06 07:05:06 +0000</metadata>
+  <g
+        id="cap"
+        stroke="none"
+        stroke-dasharray="none"
+        fill-opacity="1"
+        fill="none"
+        stroke-opacity="1"
+    >
+    <title>cap</title>
+    <rect fill="white" x="91" y="109" width="369" height="382" />
+    <g id="cap_Layer_1">
+      <title>Layer 1</title>
+      <g id="Graphic_10">
+        <ellipse
+                    cx="261.75"
+                    cy="305"
+                    rx="67.7501082578534"
+                    ry="70.0001118531328"
+                    fill="red"
+                />
+        <ellipse
+                    cx="261.75"
+                    cy="305"
+                    rx="67.7501082578534"
+                    ry="70.0001118531328"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
+      </g>
+      <g id="Graphic_9">
+        <path
+                    d="M 311.75395 233.33498 C 319.5637 200.64931 310.71592 164.7946 285.21065 139.28945 C 246.15825 100.23685 182.84185 100.23685 143.78945 139.28945 C 104.73685 178.34185 104.73685 241.65825 143.78945 280.71065 C 149.03455 285.95577 154.71734 290.49643 160.72026 294.3326 C 146.11782 299.04237 132.38419 307.19465 120.78945 318.78945 C 81.73685 357.84185 81.73685 421.15825 120.78945 460.21065 C 159.84185 499.26325 223.15825 499.26325 262.21065 460.21065 C 280.3022 442.1192 290.01265 418.8204 291.34197 395.139 C 330.5744 431.23755 391.66006 430.26144 429.71065 392.21065 C 468.76325 353.15825 468.76325 289.84185 429.71065 250.78945 C 397.77233 218.85097 349.60504 213.0328 311.75394 233.33498 Z M 261.74615 298.16512 C 260.3547 303.98867 259.49203 309.9128 259.15813 315.8611 C 254.78306 311.8355 250.1362 308.27096 245.27984 305.1675 C 250.9228 303.34745 256.436 301.01333 261.74616 298.16512 Z"
+                    fill="white"
+                />
+        <path
+                    d="M 311.75395 233.33498 C 319.5637 200.64931 310.71592 164.7946 285.21065 139.28945 C 246.15825 100.23685 182.84185 100.23685 143.78945 139.28945 C 104.73685 178.34185 104.73685 241.65825 143.78945 280.71065 C 149.03455 285.95577 154.71734 290.49643 160.72026 294.3326 C 146.11782 299.04237 132.38419 307.19465 120.78945 318.78945 C 81.73685 357.84185 81.73685 421.15825 120.78945 460.21065 C 159.84185 499.26325 223.15825 499.26325 262.21065 460.21065 C 280.3022 442.1192 290.01265 418.8204 291.34197 395.139 C 330.5744 431.23755 391.66006 430.26144 429.71065 392.21065 C 468.76325 353.15825 468.76325 289.84185 429.71065 250.78945 C 397.77233 218.85097 349.60504 213.0328 311.75394 233.33498 Z M 261.74615 298.16512 C 260.3547 303.98867 259.49203 309.9128 259.15813 315.8611 C 254.78306 311.8355 250.1362 308.27096 245.27984 305.1675 C 250.9228 303.34745 256.436 301.01333 261.74616 298.16512 Z"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
+      </g>
+      <g id="Graphic_2">
+        <circle
+                    cx="214.5"
+                    cy="210"
+                    r="100.00015979019"
+                    fill="#01ff50"
+                    fill-opacity=".4964232"
+                />
+        <circle
+                    cx="214.5"
+                    cy="210"
+                    r="100.00015979019"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
+        <text transform="translate(139.5 184.5)" fill="black">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="24"
+                        font-weight="400"
+                        fill="black"
+                        x="9.638672"
+                        y="23"
+                        xml:space="preserve"
+                    >Consistency</tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="18"
+                        font-weight="400"
+                        fill="#a5a5a5"
+                        x="12.47461"
+                        y="47"
+                        xml:space="preserve"
+                    >(dt. Konsistenz)</tspan>
+        </text>
+      </g>
+      <g id="Graphic_4">
+        <circle
+                    cx="359"
+                    cy="320.5"
+                    r="100.00015979019"
+                    fill="#ffff7d"
+                    fill-opacity=".5014354"
+                />
+        <circle
+                    cx="359"
+                    cy="320.5"
+                    r="100.00015979019"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
+        <text transform="translate(284 295)" fill="black">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="24"
+                        font-weight="400"
+                        fill="black"
+                        x="18.521484"
+                        y="23"
+                        xml:space="preserve"
+                    >Availability</tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="18"
+                        font-weight="400"
+                        fill="#a5a5a5"
+                        x="3.4614258"
+                        y="47"
+                        xml:space="preserve"
+                    >(dt. Verfügbarkeit)</tspan>
+        </text>
+      </g>
+      <g id="Graphic_5">
+        <circle
+                    cx="191.5"
+                    cy="389.5"
+                    r="100.00015979019"
+                    fill="#4120ff"
+                    fill-opacity=".51113046"
+                />
+        <circle
+                    cx="191.5"
+                    cy="389.5"
+                    r="100.00015979019"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
+        <text transform="translate(116.5 338.5)" fill="black">
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="24"
+                        font-weight="400"
+                        fill="black"
+                        x="30.978516"
+                        y="23"
+                        xml:space="preserve"
+                    >Partition </tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="24"
+                        font-weight="400"
+                        fill="black"
+                        x="22.96875"
+                        y="52"
+                        xml:space="preserve"
+                    >Tolerance</tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="18"
+                        font-weight="400"
+                        fill="white"
+                        fill-opacity=".7319277"
+                        x="61.99658"
+                        y="76"
+                        xml:space="preserve"
+                    >(dt. </tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="18"
+                        font-weight="400"
+                        fill="white"
+                        fill-opacity=".7319277"
+                        x="2.4682617"
+                        y="98"
+                        xml:space="preserve"
+                    >Partitionstoleranz)</tspan>
+        </text>
+      </g>
+    </g>
+  </g>
+</svg>
