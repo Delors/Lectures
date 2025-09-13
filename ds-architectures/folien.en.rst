@@ -22,16 +22,16 @@ A first overview.
 
 .. supplemental::
 
-  :Slides: 
+  :Slides:
           |html-source|
 
           |pdf-source|
-          
+
   :Reporting issues:
 
           https://github.com/Delors/delors.github.io/issues
 
-.. container:: footer-left 
+.. container:: footer-left
 
     Selected slides are based on slides by Maarten van Steen ( *Distributed Systems*)
 
@@ -56,7 +56,7 @@ An architectural style is formulated in the form of
 - (interchangeable) components with clearly defined interfaces
 - the way in which the components are connected to each other
 - the data exchanged between the components
-- the way in which these components and connections are configured together to form a system System.  
+- the way in which these components and connections are configured together to form a system System.
 
 .. supplemental::
 
@@ -71,24 +71,24 @@ Layered Architectures
 .. class:: columns incremental-list
 
 - \
-  
-  .. image:: images/common_application_architectures/n-layered_architectures.svg
-       
-- \ 
-  
-  .. image:: images/common_application_architectures/n-layered_architectures-jump_over_layers.svg
-       
+
+  .. image:: drawings/common_application_architectures/n-layered_architectures.svg
+
 - \
- 
-  .. image:: images/common_application_architectures/n-layered_architectures-and-callbacks.svg
-       
-       
+
+  .. image:: drawings/common_application_architectures/n-layered_architectures-jump_over_layers.svg
+
+- \
+
+  .. image:: drawings/common_application_architectures/n-layered_architectures-and-callbacks.svg
+
+
 
 
 Example of a 3-tier Architecture
 --------------------------------------
 
-.. image:: images/common_application_architectures/3-layered-example.svg
+.. image:: drawings/common_application_architectures/3-layered-example.svg
    :align: center
 
 
@@ -96,7 +96,7 @@ Example of a 3-tier Architecture
 Traditional Architectures
 -------------------------
 
-.. image:: images/common_application_architectures/common_architectures.svg
+.. image:: drawings/common_application_architectures/common_architectures.svg
    :align: center
 
 
@@ -119,37 +119,37 @@ Traditional Architectures
 Dependencies between the components are realised using the *Publish and Subscribe* paradigm with the aim of loose coupling.
 
 .. deck::  incremental
- 
+
   .. card::
 
     **Taxonomy of coordination approaches with regard to communication and coordination:**
 
     .. csv-table::
       :class: highlight-row-on-hover
-      :widths: 12 40 40      
+      :widths: 12 40 40
       :stub-columns: 1
       :header-rows: 1
-      
+
       "", "Coupled in time", "Decoupled in time"
       Referentially coupled, "Direct Coordination", "Mailbox Coordination"
       Referentially decoupled, "Event-based Coordination", "Shared Data Space"
 
-  .. card:: 
-        
+  .. card::
+
     .. rubric:: Event-based Coordination
 
-    .. image:: images/pubsub/event-based.svg
+    .. image:: drawings/pubsub/event-based.svg
        :align: center
 
 
   .. card::
-        
+
     .. rubric:: *Shared Data Space*
 
-    .. image:: images/pubsub/shared-data-space.svg
+    .. image:: drawings/pubsub/shared-data-space.svg
        :align: center
 
-.. container:: incremental 
+.. container:: incremental
 
   *Event-based coordination* in combination with *shared data space* is often used to realise publish and subscribe architectures.
 
@@ -180,26 +180,26 @@ Dependencies between the components are realised using the *Publish and Subscrib
 Structure of cloud computing applications
 ---------------------------------------------
 
-.. image:: images/cloud.svg
-   :align: center 
+.. image:: drawings/cloud.svg
+   :align: center
 
 
-.. supplemental:: 
+.. supplemental::
 
 
   A distinction can be made between four layers:
 
   .. class:: list-with-explanations
 
-  - Hardware: processors, routers, power supply and cooling systems. 
-   
+  - Hardware: processors, routers, power supply and cooling systems.
+
     Normally completely transparent for customers.
   - Infrastructure: Use of virtualization techniques for the purpose of allocating and managing virtual storage and virtual servers.
-  - Platforms: Provides higher level abstractions for storage and the like. 
-   
+  - Platforms: Provides higher level abstractions for storage and the like.
+
     Example: The Amazon S3 storage system provides an API for (locally created) files that can be organized and stored in so-called buckets.
-  - Application: Actual applications, such as office suites (word processing programmes, spreadsheet programmes, presentation applications). 
-   
+  - Application: Actual applications, such as office suites (word processing programmes, spreadsheet programmes, presentation applications).
+
     Comparable to the suite of applications that are delivered with operating systems.
 
 
@@ -211,7 +211,7 @@ Microservices [Newman2021]_
 
 
 
-.. class:: no-title 
+.. class:: no-title
 
 Microservice with REST Interface
 -------------------------------------
@@ -222,12 +222,12 @@ Microservice with REST Interface
 
   A simple microservice that offers a REST interface and emits events.
 
-  .. container:: incremental question 
+  .. container:: incremental question
 
     Where are the challenges?
 
-- .. image:: images/microservices/base_example.svg
-  
+- .. image:: drawings/microservices/base_example.svg
+
 .. supplemental::
 
     A major challenge is the design of the interfaces. To achieve true independence, the interfaces must be very well defined. If the interfaces are not clearly defined or inadequate, this can lead to a lot of work and coordination between the teams, which is actually undesirable!
@@ -240,16 +240,16 @@ Key Concepts of Microservices
 .. class:: incremental-list list-with-explanations
 
 - can be deployed independently/are independently deployable
-  
+
   (... and are developed independently.)
 - model a business domain
-  
+
   (Often along a bounded context or an aggregate determined using DDDs.)
 - manage their own state
-  
+
   (I.e. they have no shared database.)
 - are small
-  
+
   (Small enough to be developed by (max.) one team.)
 
 - flexible in terms of scalability, robustness and the used technologies
@@ -263,13 +263,13 @@ Microservices and Conway's Law
 .. class:: columns incremental-list
 
 - .. rubric:: Traditional Layered Architectures
-       
-  .. image:: images/microservices/traditional-architecture-scope-of-change.svg
-       
+
+  .. image:: drawings/microservices/traditional-architecture-scope-of-change.svg
+
 - .. rubric:: Microservices Architectures
 
-  .. image:: images/microservices/microservices-architecture-scope-of-change.svg
-       
+  .. image:: drawings/microservices/microservices-architecture-scope-of-change.svg
+
 
 
 Microservices and Usage of Technologies
@@ -278,7 +278,7 @@ Microservices and Usage of Technologies
 Microservices are flexible with regard to the use of technology and enable the use of “the most suitable” technology.
 
 
-.. image:: images/microservices/technological-flexibility.svg
+.. image:: drawings/microservices/technological-flexibility.svg
    :align: center
 
 
@@ -291,15 +291,17 @@ Aktuelle Standardtechnologien
 .. deck::
 
   .. card::
-  
+
     .. image:: screenshots/tiobe_2012-04.webp
-       :align: center
+        :height: 969px
+        :align: center
 
     Quelle: TIOBE Programming Community Index - April 2012
 
   .. card::
 
     .. image:: screenshots/tiobe_2024-02.webp
+       :height: 969px
        :align: center
 
     Quelle: `TIOBE Programming Community Index - Feb. 2024 <https://www.tiobe.com/tiobe-index/>`__
@@ -311,7 +313,7 @@ Microservices and Scalability
 
 Well designed microservices can also be scaled very well.
 
-.. image:: images/microservices/scalability.svg
+.. image:: drawings/microservices/scalability.svg
    :align: center
 
 
@@ -319,23 +321,23 @@ Well designed microservices can also be scaled very well.
 Implementation of a long-lived transactions?
 -------------------------------------------------
 
-.. image:: images/sagas/transaction.svg
+.. image:: drawings/sagas/transaction.svg
 
 .. supplemental::
 
-  The implementation of transactions is one of the biggest challenges in the development of microservices. 
+  The implementation of transactions is one of the biggest challenges in the development of microservices.
 
 
 
 Using SAGAs for long-lived transactions
 ---------------------------------------------------------------
 
-.. image:: images/sagas/transaction-using-saga.svg
+.. image:: drawings/sagas/transaction-using-saga.svg
 
 .. supplemental::
 
-  A *saga* is a sequence of actions that are executed to implement a long-lived transaction. 
-  
+  A *saga* is a sequence of actions that are executed to implement a long-lived transaction.
+
   Sagas cannot guarantee atomicity. However, each system can guarantee atomicity (e.g. by using traditional database transactions).
 
   If the transaction needs to be aborted, a traditional *rollback* cannot be performed. The saga must then carry out the corresponding compensating transactions, which undo all previously successful actions.
@@ -344,7 +346,7 @@ Using SAGAs for long-lived transactions
 Minimize the probability of possible *rollbacks*
 --------------------------------------------------------------------------------
 
-.. image:: images/sagas/transaction-using-saga-with-less-rollbacks.svg
+.. image:: drawings/sagas/transaction-using-saga-with-less-rollbacks.svg
 
 .. supplemental::
 
@@ -355,20 +357,20 @@ Minimize the probability of possible *rollbacks*
 Long-lived transactions with orchestrated sagas
 --------------------------------------------------------
 
-.. image:: images/sagas/orchestrated-saga.svg
+.. image:: drawings/sagas/orchestrated-saga.svg
 
 .. supplemental::
 
-  The orchestrated saga is one way of implementing long-lived transactions. 
+  The orchestrated saga is one way of implementing long-lived transactions.
 
   .. class:: positive-list
-  
+
   - Conceptually simple
 
-  .. class:: negative-list list-with-explanations 
+  .. class:: negative-list list-with-explanations
 
-  - High degree of *domain coupling* 
-  
+  - High degree of *domain coupling*
+
     As this is essentially domain-driven coupling, this coupling is often acceptable. The coupling does not generate any technical debt.
   - High degree of *request-response* interactions
   - Risk that functionality that would be better accommodated in the individual services (or possibly new services) is moved to the ordering service.
@@ -378,7 +380,7 @@ Long-lived transactions with orchestrated sagas
 Long-lived transactions with choreographed sagas
 ----------------------------------------------------------
 
-.. image:: images/sagas/choreographed-saga.svg
+.. image:: drawings/sagas/choreographed-saga.svg
    :align: center
 
 .. supplemental::
@@ -391,32 +393,32 @@ Long-lived transactions with choreographed sagas
 
 .. deck::
 
-  .. card:: 
+  .. card::
 
     .. grid::
 
       .. cell::
-          
-        .. image:: images/dual-write/no-crash-no-problem.svg
-       
+
+        .. image:: drawings/dual-write/no-crash-no-problem.svg
+
       .. cell::
 
         Where could there be a problem?
 
         .. warning::
           :class: incremental
-          
-          Writing to two different systems (here: database and event-processing middleware) always requires a transactional context. 
-          
+
+          Writing to two different systems (here: database and event-processing middleware) always requires a transactional context.
+
           If this cannot be established, inconsistencies can occur (*dual-write problem*).
 
-  .. card:: 
+  .. card::
 
-    .. grid:: 
+    .. grid::
 
       .. cell::
- 
-        .. image:: images/dual-write/crash.svg
+
+        .. image:: drawings/dual-write/crash.svg
           :align: center
 
       .. cell::
@@ -424,18 +426,18 @@ Long-lived transactions with choreographed sagas
         .. rubric:: Solution Ideas
 
         .. class:: incremental-list negative-list
-        
+
         - 2PC is not an option in the context of microservices (too slow, too complex)
         - Changing the order of actions (1st *publish* then 2nd *update*) still leads to inconsistencies
         - notifying the event processing middleware (synchronously) - i. e. as part of the database update - is also not an option:
-        
+
           .. class:: negative-list
 
           - What happens if the middleware cannot be reached?
-          - What happens if the event cannot be processed? 
-  
+          - What happens if the event cannot be processed?
+
         .. container:: incremental assessment
-          
+
           Strict consistency cannot be achieved.
 
 
@@ -443,10 +445,10 @@ Long-lived transactions with choreographed sagas
 *Dual-write Problem* - Outbox Pattern
 -----------------------------------------
 
-.. image:: images/dual-write/outbox-pattern.svg
+.. image:: drawings/dual-write/outbox-pattern.svg
 
-.. supplemental:: 
-  
+.. supplemental::
+
   .. rubric:: *(a) Solution: Outbox Pattern*
 
   - The actions are (additionally) saved in an outbox table and then processed **asynchronously**.
