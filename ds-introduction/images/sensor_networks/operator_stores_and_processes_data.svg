@@ -1,132 +1,445 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg xmlns:dc="http://purl.org/dc/elements/1.1/" version="1.1" xmlns:xl="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" viewBox="167 27 447 241" width="447" height="241">
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+    "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    version="1.1"
+    xmlns:xl="http://www.w3.org/1999/xlink"
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="167 27 447 241"
+    width="1341"
+    height="723"
+>
   <style>
-    @import url('/LectureDoc2/ext/fonts/ld-fonts.css'); 
+    @import url('/LectureDoc2/ext/fonts/ld-fonts.css');
   </style>
   <defs>
     <filter id="Shadow" filterUnits="userSpaceOnUse" x="122.3" y="2.9">
-      <feGaussianBlur in="SourceAlpha" result="blur" stdDeviation="2.616"/>
-      <feOffset in="blur" result="offset" dx="0" dy="4"/>
-      <feFlood flood-color="black" flood-opacity=".5" result="flood"/>
-      <feComposite in="flood" in2="offset" operator="in" result="color"/>
+      <feGaussianBlur in="SourceAlpha" result="blur" stdDeviation="2.616" />
+      <feOffset in="blur" result="offset" dx="0" dy="4" />
+      <feFlood flood-color="black" flood-opacity=".5" result="flood" />
+      <feComposite in="flood" in2="offset" operator="in" result="color" />
       <feMerge>
-        <feMergeNode in="color"/>
-        <feMergeNode in="SourceGraphic"/>
+        <feMergeNode in="color" />
+        <feMergeNode in="SourceGraphic" />
       </feMerge>
     </filter>
     <linearGradient x1="0" x2="1" id="Gradient" gradientUnits="userSpaceOnUse">
-      <stop offset=".16833588" stop-color="#029ed5"/>
-      <stop offset=".9336584" stop-color="#99d0eb" stop-opacity=".5"/>
-      <stop offset="1" stop-color="white" stop-opacity="0"/>
+      <stop offset=".16833588" stop-color="#029ed5" />
+      <stop offset=".9336584" stop-color="#99d0eb" stop-opacity=".5" />
+      <stop offset="1" stop-color="white" stop-opacity="0" />
     </linearGradient>
-    <linearGradient id="Obj_Gradient" xl:href="#Gradient" gradientTransform="translate(234.06106 180.22773) rotate(-133.44236) scale(78.88976)"/>
-    <linearGradient id="Obj_Gradient_2" xl:href="#Gradient" gradientTransform="translate(188.2054 115.00192) rotate(46.55764) scale(54.484404)"/>
-    <linearGradient id="Obj_Gradient_3" xl:href="#Gradient" gradientTransform="translate(235.01508 181.00298) rotate(-133.44236) scale(78.88976)"/>
+    <linearGradient
+            id="Obj_Gradient"
+            xl:href="#Gradient"
+            gradientTransform="translate(234.06106 180.22773) rotate(-133.44236) scale(78.88976)"
+        />
+    <linearGradient
+            id="Obj_Gradient_2"
+            xl:href="#Gradient"
+            gradientTransform="translate(188.2054 115.00192) rotate(46.55764) scale(54.484404)"
+        />
+    <linearGradient
+            id="Obj_Gradient_3"
+            xl:href="#Gradient"
+            gradientTransform="translate(235.01508 181.00298) rotate(-133.44236) scale(78.88976)"
+        />
     <linearGradient x1="0" x2="1" id="Gradient_2" gradientUnits="userSpaceOnUse">
-      <stop offset=".16833588" stop-color="#029ed5"/>
-      <stop offset=".9336584" stop-color="#99d0eb" stop-opacity=".5"/>
-      <stop offset="1" stop-color="white" stop-opacity="0"/>
+      <stop offset=".16833588" stop-color="#029ed5" />
+      <stop offset=".9336584" stop-color="#99d0eb" stop-opacity=".5" />
+      <stop offset="1" stop-color="white" stop-opacity="0" />
     </linearGradient>
-    <linearGradient id="Obj_Gradient_4" xl:href="#Gradient_2" gradientTransform="translate(209.1536 146.938) rotate(-95.92573) scale(24.443472)"/>
-    <marker orient="auto" overflow="visible" markerUnits="strokeWidth" id="FilledArrow_Marker" stroke-linejoin="miter" stroke-miterlimit="10" viewBox="-1 -4 10 8" markerWidth="10" markerHeight="8" color="black">
+    <linearGradient
+            id="Obj_Gradient_4"
+            xl:href="#Gradient_2"
+            gradientTransform="translate(209.1536 146.938) rotate(-95.92573) scale(24.443472)"
+        />
+    <marker
+            orient="auto"
+            overflow="visible"
+            markerUnits="strokeWidth"
+            id="FilledArrow_Marker"
+            stroke-linejoin="miter"
+            stroke-miterlimit="10"
+            viewBox="-1 -4 10 8"
+            markerWidth="10"
+            markerHeight="8"
+            color="black"
+        >
       <g>
-        <path d="M 8 0 L 0 -3 L 0 3 Z" fill="currentColor" stroke="currentColor" stroke-width="1"/>
+        <path
+                    d="M 8 0 L 0 -3 L 0 3 Z"
+                    fill="currentColor"
+                    stroke="currentColor"
+                    stroke-width="1"
+                />
       </g>
     </marker>
   </defs>
   <metadata> Produced by OmniGraffle 8.0\n2025-02-10 12:47:30 +0000</metadata>
-  <g id="operator_stores_and_processes_data" stroke-opacity="1" stroke-dasharray="none" fill="none" fill-opacity="1" stroke="none">
+  <g
+        id="operator_stores_and_processes_data"
+        stroke-opacity="1"
+        stroke-dasharray="none"
+        fill="none"
+        fill-opacity="1"
+        stroke="none"
+    >
     <title>operator_stores_and_processes_data</title>
-    <rect fill="white" x="167" y="27" width="447" height="241"/>
+    <rect fill="white" x="167" y="27" width="447" height="241" />
     <g id="operator_stores_and_processes_data_Layer_1">
       <title>Layer 1</title>
       <g id="Graphic_631" filter="url(#Shadow)">
-        <path d="M 370.46064 155.8972 C 326.5 143.68514 344.0304 40.87967 414.15744 58.421285 C 420.6637 24.227068 502.212 29.777177 501.6789 58.421285 C 552.8122 21.785112 618.15745 94.83691 574.3274 131.47308 C 626.9213 149.23525 573.6637 244.9354 530.5 228.949 C 527.0456 255.59452 449.8819 264.91898 443.1091 228.949 C 399.41504 267.3632 308.30592 208.29923 370.46064 155.8972 Z" fill="#dadada"/>
-        <path d="M 370.46064 155.8972 C 326.5 143.68514 344.0304 40.87967 414.15744 58.421285 C 420.6637 24.227068 502.212 29.777177 501.6789 58.421285 C 552.8122 21.785112 618.15745 94.83691 574.3274 131.47308 C 626.9213 149.23525 573.6637 244.9354 530.5 228.949 C 527.0456 255.59452 449.8819 264.91898 443.1091 228.949 C 399.41504 267.3632 308.30592 208.29923 370.46064 155.8972 Z" stroke="#666" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <path
+                    d="M 370.46064 155.8972 C 326.5 143.68514 344.0304 40.87967 414.15744 58.421285 C 420.6637 24.227068 502.212 29.777177 501.6789 58.421285 C 552.8122 21.785112 618.15745 94.83691 574.3274 131.47308 C 626.9213 149.23525 573.6637 244.9354 530.5 228.949 C 527.0456 255.59452 449.8819 264.91898 443.1091 228.949 C 399.41504 267.3632 308.30592 208.29923 370.46064 155.8972 Z"
+                    fill="#dadada"
+                />
+        <path
+                    d="M 370.46064 155.8972 C 326.5 143.68514 344.0304 40.87967 414.15744 58.421285 C 420.6637 24.227068 502.212 29.777177 501.6789 58.421285 C 552.8122 21.785112 618.15745 94.83691 574.3274 131.47308 C 626.9213 149.23525 573.6637 244.9354 530.5 228.949 C 527.0456 255.59452 449.8819 264.91898 443.1091 228.949 C 399.41504 267.3632 308.30592 208.29923 370.46064 155.8972 Z"
+                    stroke="#666"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
       </g>
       <g id="Graphic_594">
-        <ellipse cx="385.226" cy="119.2353" rx="10.2260219993155" ry="9.50001518006802" fill="#a5a5a5"/>
-        <ellipse cx="385.226" cy="119.2353" rx="10.2260219993155" ry="9.50001518006802" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <ellipse
+                    cx="385.226"
+                    cy="119.2353"
+                    rx="10.2260219993155"
+                    ry="9.50001518006802"
+                    fill="#a5a5a5"
+                />
+        <ellipse
+                    cx="385.226"
+                    cy="119.2353"
+                    rx="10.2260219993155"
+                    ry="9.50001518006802"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
       </g>
       <g id="Graphic_597">
-        <ellipse cx="504.726" cy="141.47059" rx="10.2260219993155" ry="9.50001518006801" fill="#a5a5a5"/>
-        <ellipse cx="504.726" cy="141.47059" rx="10.2260219993155" ry="9.50001518006801" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <ellipse
+                    cx="504.726"
+                    cy="141.47059"
+                    rx="10.2260219993155"
+                    ry="9.50001518006801"
+                    fill="#a5a5a5"
+                />
+        <ellipse
+                    cx="504.726"
+                    cy="141.47059"
+                    rx="10.2260219993155"
+                    ry="9.50001518006801"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
       </g>
       <g id="Graphic_598">
-        <ellipse cx="444.5054" cy="133.0899" rx="10.2260219993155" ry="9.50001518006802" fill="#a5a5a5"/>
-        <ellipse cx="444.5054" cy="133.0899" rx="10.2260219993155" ry="9.50001518006802" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <ellipse
+                    cx="444.5054"
+                    cy="133.0899"
+                    rx="10.2260219993155"
+                    ry="9.50001518006802"
+                    fill="#a5a5a5"
+                />
+        <ellipse
+                    cx="444.5054"
+                    cy="133.0899"
+                    rx="10.2260219993155"
+                    ry="9.50001518006802"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
       </g>
       <g id="Graphic_603">
-        <ellipse cx="449.2647" cy="103.5" rx="10.2260219993155" ry="9.50001518006802" fill="#a5a5a5"/>
-        <ellipse cx="449.2647" cy="103.5" rx="10.2260219993155" ry="9.50001518006802" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <ellipse
+                    cx="449.2647"
+                    cy="103.5"
+                    rx="10.2260219993155"
+                    ry="9.50001518006802"
+                    fill="#a5a5a5"
+                />
+        <ellipse
+                    cx="449.2647"
+                    cy="103.5"
+                    rx="10.2260219993155"
+                    ry="9.50001518006802"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
       </g>
       <g id="Graphic_606">
-        <ellipse cx="531.678" cy="208.05366" rx="10.2260219993155" ry="9.500015180068" fill="#a5a5a5"/>
-        <ellipse cx="531.678" cy="208.05366" rx="10.2260219993155" ry="9.500015180068" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <ellipse
+                    cx="531.678"
+                    cy="208.05366"
+                    rx="10.2260219993155"
+                    ry="9.500015180068"
+                    fill="#a5a5a5"
+                />
+        <ellipse
+                    cx="531.678"
+                    cy="208.05366"
+                    rx="10.2260219993155"
+                    ry="9.500015180068"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
       </g>
       <g id="Graphic_605">
-        <ellipse cx="478.026" cy="185.72059" rx="10.2260219993155" ry="9.500015180068" fill="#a5a5a5"/>
-        <ellipse cx="478.026" cy="185.72059" rx="10.2260219993155" ry="9.500015180068" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <ellipse
+                    cx="478.026"
+                    cy="185.72059"
+                    rx="10.2260219993155"
+                    ry="9.500015180068"
+                    fill="#a5a5a5"
+                />
+        <ellipse
+                    cx="478.026"
+                    cy="185.72059"
+                    rx="10.2260219993155"
+                    ry="9.500015180068"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
       </g>
       <g id="Graphic_604">
-        <ellipse cx="511.226" cy="83.23529" rx="10.2260219993155" ry="9.50001518006802" fill="#a5a5a5"/>
-        <ellipse cx="511.226" cy="83.23529" rx="10.2260219993155" ry="9.50001518006802" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <ellipse
+                    cx="511.226"
+                    cy="83.23529"
+                    rx="10.2260219993155"
+                    ry="9.50001518006802"
+                    fill="#a5a5a5"
+                />
+        <ellipse
+                    cx="511.226"
+                    cy="83.23529"
+                    rx="10.2260219993155"
+                    ry="9.50001518006802"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
       </g>
       <g id="Graphic_626">
-        <ellipse cx="464.36034" cy="220.7647" rx="10.2260219993155" ry="9.500015180068" fill="#a5a5a5"/>
-        <ellipse cx="464.36034" cy="220.7647" rx="10.2260219993155" ry="9.500015180068" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <ellipse
+                    cx="464.36034"
+                    cy="220.7647"
+                    rx="10.2260219993155"
+                    ry="9.500015180068"
+                    fill="#a5a5a5"
+                />
+        <ellipse
+                    cx="464.36034"
+                    cy="220.7647"
+                    rx="10.2260219993155"
+                    ry="9.500015180068"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
       </g>
       <g id="Graphic_622">
-        <ellipse cx="407.226" cy="182.82353" rx="10.2260219993156" ry="9.500015180068" fill="#a5a5a5"/>
-        <ellipse cx="407.226" cy="182.82353" rx="10.2260219993156" ry="9.500015180068" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <ellipse
+                    cx="407.226"
+                    cy="182.82353"
+                    rx="10.2260219993156"
+                    ry="9.500015180068"
+                    fill="#a5a5a5"
+                />
+        <ellipse
+                    cx="407.226"
+                    cy="182.82353"
+                    rx="10.2260219993156"
+                    ry="9.500015180068"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
       </g>
       <g id="Graphic_627">
-        <path d="M 172.49534 109.7353 L 248.29534 109.7353 C 251.05676 109.7353 253.29534 111.97387 253.29534 114.7353 L 253.29534 190.22059 C 253.29534 192.98201 251.05676 195.22059 248.29534 195.22059 L 172.49534 195.22059 C 169.73392 195.22059 167.49534 192.98201 167.49534 190.22059 L 167.49534 114.7353 C 167.49534 111.97387 169.73392 109.7353 172.49534 109.7353 Z" fill="#a5a5a5"/>
+        <path
+                    d="M 172.49534 109.7353 L 248.29534 109.7353 C 251.05676 109.7353 253.29534 111.97387 253.29534 114.7353 L 253.29534 190.22059 C 253.29534 192.98201 251.05676 195.22059 248.29534 195.22059 L 172.49534 195.22059 C 169.73392 195.22059 167.49534 192.98201 167.49534 190.22059 L 167.49534 114.7353 C 167.49534 111.97387 169.73392 109.7353 172.49534 109.7353 Z"
+                    fill="#a5a5a5"
+                />
       </g>
       <g id="Group_431">
         <g id="Graphic_435">
-          <path d="M 236.86075 134.79466 C 236.8608 134.78594 236.8608 134.77722 236.86075 134.7685 L 236.86075 134.6324 L 236.85686 134.6324 C 236.73582 132.3326 233.8157 130.0441 228.0965 128.28923 C 216.41087 124.70359 197.46472 124.70359 185.77908 128.28923 C 180.05988 130.0441 177.13977 132.3326 177.01873 134.6324 L 177.01482 134.6324 L 177.01482 134.77237 C 177.0148 134.77851 177.0148 134.78465 177.01482 134.79079 L 177.01482 168.38545 C 177.0148 168.3916 177.0148 168.39773 177.01482 168.40387 L 177.01482 168.65336 L 177.02661 168.65336 C 177.23319 170.91616 180.15067 173.16 185.77908 174.887 C 197.46472 178.47265 216.41087 178.47265 228.0965 174.887 C 233.7249 173.16 236.6424 170.91616 236.84898 168.65336 L 236.86075 168.65336 L 236.86075 168.40774 C 236.8608 168.39902 236.8608 168.3903 236.86075 168.38158 Z" fill="url(#Obj_Gradient)"/>
-          <path d="M 236.86075 134.79466 C 236.8608 134.78594 236.8608 134.77722 236.86075 134.7685 L 236.86075 134.6324 L 236.85686 134.6324 C 236.73582 132.3326 233.8157 130.0441 228.0965 128.28923 C 216.41087 124.70359 197.46472 124.70359 185.77908 128.28923 C 180.05988 130.0441 177.13977 132.3326 177.01873 134.6324 L 177.01482 134.6324 L 177.01482 134.77237 C 177.0148 134.77851 177.0148 134.78465 177.01482 134.79079 L 177.01482 168.38545 C 177.0148 168.3916 177.0148 168.39773 177.01482 168.40387 L 177.01482 168.65336 L 177.02661 168.65336 C 177.23319 170.91616 180.15067 173.16 185.77908 174.887 C 197.46472 178.47265 216.41087 178.47265 228.0965 174.887 C 233.7249 173.16 236.6424 170.91616 236.84898 168.65336 L 236.86075 168.65336 L 236.86075 168.40774 C 236.8608 168.39902 236.8608 168.3903 236.86075 168.38158 Z" stroke="white" stroke-opacity=".48790474" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+          <path
+                        d="M 236.86075 134.79466 C 236.8608 134.78594 236.8608 134.77722 236.86075 134.7685 L 236.86075 134.6324 L 236.85686 134.6324 C 236.73582 132.3326 233.8157 130.0441 228.0965 128.28923 C 216.41087 124.70359 197.46472 124.70359 185.77908 128.28923 C 180.05988 130.0441 177.13977 132.3326 177.01873 134.6324 L 177.01482 134.6324 L 177.01482 134.77237 C 177.0148 134.77851 177.0148 134.78465 177.01482 134.79079 L 177.01482 168.38545 C 177.0148 168.3916 177.0148 168.39773 177.01482 168.40387 L 177.01482 168.65336 L 177.02661 168.65336 C 177.23319 170.91616 180.15067 173.16 185.77908 174.887 C 197.46472 178.47265 216.41087 178.47265 228.0965 174.887 C 233.7249 173.16 236.6424 170.91616 236.84898 168.65336 L 236.86075 168.65336 L 236.86075 168.40774 C 236.8608 168.39902 236.8608 168.3903 236.86075 168.38158 Z"
+                        fill="url(#Obj_Gradient)"
+                    />
+          <path
+                        d="M 236.86075 134.79466 C 236.8608 134.78594 236.8608 134.77722 236.86075 134.7685 L 236.86075 134.6324 L 236.85686 134.6324 C 236.73582 132.3326 233.8157 130.0441 228.0965 128.28923 C 216.41087 124.70359 197.46472 124.70359 185.77908 128.28923 C 180.05988 130.0441 177.13977 132.3326 177.01873 134.6324 L 177.01482 134.6324 L 177.01482 134.77237 C 177.0148 134.77851 177.0148 134.78465 177.01482 134.79079 L 177.01482 168.38545 C 177.0148 168.3916 177.0148 168.39773 177.01482 168.40387 L 177.01482 168.65336 L 177.02661 168.65336 C 177.23319 170.91616 180.15067 173.16 185.77908 174.887 C 197.46472 178.47265 216.41087 178.47265 228.0965 174.887 C 233.7249 173.16 236.6424 170.91616 236.84898 168.65336 L 236.86075 168.65336 L 236.86075 168.40774 C 236.8608 168.39902 236.8608 168.3903 236.86075 168.38158 Z"
+                        stroke="white"
+                        stroke-opacity=".48790474"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                    />
         </g>
         <g id="Graphic_434">
-          <ellipse cx="206.9378" cy="134.78157" rx="29.9230211370941" ry="9.18158742970464" fill="url(#Obj_Gradient_2)"/>
-          <ellipse cx="206.9378" cy="134.78157" rx="29.9230211370941" ry="9.18158742970464" stroke="white" stroke-opacity=".48790474" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+          <ellipse
+                        cx="206.9378"
+                        cy="134.78157"
+                        rx="29.9230211370941"
+                        ry="9.18158742970464"
+                        fill="url(#Obj_Gradient_2)"
+                    />
+          <ellipse
+                        cx="206.9378"
+                        cy="134.78157"
+                        rx="29.9230211370941"
+                        ry="9.18158742970464"
+                        stroke="white"
+                        stroke-opacity=".48790474"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                    />
         </g>
         <g id="Graphic_433">
-          <path d="M 237.81478 135.56991 C 237.81482 135.5612 237.81482 135.55247 237.81478 135.54375 L 237.81478 135.40765 L 237.81088 135.40765 C 237.68985 133.10786 234.76973 130.81936 229.05053 129.06449 C 217.3649 125.47885 198.41874 125.47885 186.7331 129.06449 C 181.0139 130.81936 178.0938 133.10786 177.97275 135.40765 L 177.96884 135.40765 L 177.96884 135.54762 C 177.96882 135.55376 177.96882 135.5599 177.96884 135.56604 L 177.96884 169.1607 C 177.96882 169.16684 177.96882 169.17298 177.96884 169.17912 L 177.96884 169.42861 L 177.98064 169.42861 C 178.1872 171.69141 181.1047 173.93525 186.7331 175.66226 C 198.41874 179.2479 217.3649 179.2479 229.05053 175.66226 C 234.67894 173.93525 237.59643 171.69141 237.803 169.42861 L 237.81478 169.42861 L 237.81478 169.183 C 237.81482 169.17427 237.81482 169.16555 237.81478 169.15684 Z" fill="url(#Obj_Gradient_3)"/>
-          <path d="M 237.81478 135.56991 C 237.81482 135.5612 237.81482 135.55247 237.81478 135.54375 L 237.81478 135.40765 L 237.81088 135.40765 C 237.68985 133.10786 234.76973 130.81936 229.05053 129.06449 C 217.3649 125.47885 198.41874 125.47885 186.7331 129.06449 C 181.0139 130.81936 178.0938 133.10786 177.97275 135.40765 L 177.96884 135.40765 L 177.96884 135.54762 C 177.96882 135.55376 177.96882 135.5599 177.96884 135.56604 L 177.96884 169.1607 C 177.96882 169.16684 177.96882 169.17298 177.96884 169.17912 L 177.96884 169.42861 L 177.98064 169.42861 C 178.1872 171.69141 181.1047 173.93525 186.7331 175.66226 C 198.41874 179.2479 217.3649 179.2479 229.05053 175.66226 C 234.67894 173.93525 237.59643 171.69141 237.803 169.42861 L 237.81478 169.42861 L 237.81478 169.183 C 237.81482 169.17427 237.81482 169.16555 237.81478 169.15684 Z" stroke="white" stroke-opacity=".48790474" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+          <path
+                        d="M 237.81478 135.56991 C 237.81482 135.5612 237.81482 135.55247 237.81478 135.54375 L 237.81478 135.40765 L 237.81088 135.40765 C 237.68985 133.10786 234.76973 130.81936 229.05053 129.06449 C 217.3649 125.47885 198.41874 125.47885 186.7331 129.06449 C 181.0139 130.81936 178.0938 133.10786 177.97275 135.40765 L 177.96884 135.40765 L 177.96884 135.54762 C 177.96882 135.55376 177.96882 135.5599 177.96884 135.56604 L 177.96884 169.1607 C 177.96882 169.16684 177.96882 169.17298 177.96884 169.17912 L 177.96884 169.42861 L 177.98064 169.42861 C 178.1872 171.69141 181.1047 173.93525 186.7331 175.66226 C 198.41874 179.2479 217.3649 179.2479 229.05053 175.66226 C 234.67894 173.93525 237.59643 171.69141 237.803 169.42861 L 237.81478 169.42861 L 237.81478 169.183 C 237.81482 169.17427 237.81482 169.16555 237.81478 169.15684 Z"
+                        fill="url(#Obj_Gradient_3)"
+                    />
+          <path
+                        d="M 237.81478 135.56991 C 237.81482 135.5612 237.81482 135.55247 237.81478 135.54375 L 237.81478 135.40765 L 237.81088 135.40765 C 237.68985 133.10786 234.76973 130.81936 229.05053 129.06449 C 217.3649 125.47885 198.41874 125.47885 186.7331 129.06449 C 181.0139 130.81936 178.0938 133.10786 177.97275 135.40765 L 177.96884 135.40765 L 177.96884 135.54762 C 177.96882 135.55376 177.96882 135.5599 177.96884 135.56604 L 177.96884 169.1607 C 177.96882 169.16684 177.96882 169.17298 177.96884 169.17912 L 177.96884 169.42861 L 177.98064 169.42861 C 178.1872 171.69141 181.1047 173.93525 186.7331 175.66226 C 198.41874 179.2479 217.3649 179.2479 229.05053 175.66226 C 234.67894 173.93525 237.59643 171.69141 237.803 169.42861 L 237.81478 169.42861 L 237.81478 169.183 C 237.81482 169.17427 237.81482 169.16555 237.81478 169.15684 Z"
+                        stroke="white"
+                        stroke-opacity=".48790474"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                    />
         </g>
         <g id="Graphic_432">
-          <ellipse cx="207.89183" cy="134.78157" rx="29.9230211370941" ry="9.18158742970464" fill="url(#Obj_Gradient_4)"/>
-          <ellipse cx="207.89183" cy="134.78157" rx="29.9230211370941" ry="9.18158742970464" stroke="white" stroke-opacity=".48790474" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+          <ellipse
+                        cx="207.89183"
+                        cy="134.78157"
+                        rx="29.9230211370941"
+                        ry="9.18158742970464"
+                        fill="url(#Obj_Gradient_4)"
+                    />
+          <ellipse
+                        cx="207.89183"
+                        cy="134.78157"
+                        rx="29.9230211370941"
+                        ry="9.18158742970464"
+                        stroke="white"
+                        stroke-opacity=".48790474"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                    />
         </g>
       </g>
       <g id="Graphic_632">
         <text transform="translate(178.7878 66.735294)" fill="black">
-          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="4689582e-19" y="15">Operator’s</tspan>
-          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="21.763" y="34">site</tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="14"
+                        font-weight="400"
+                        fill="black"
+                        x="4689582e-19"
+                        y="15"
+                    >Operator’s</tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="14"
+                        font-weight="400"
+                        fill="black"
+                        x="21.763"
+                        y="34"
+                    >site</tspan>
         </text>
       </g>
       <g id="Line_634">
-        <line x1="358.66667" y1="149.33333" x2="261.09478" y2="147.45524" marker-end="url(#FilledArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <line
+                    x1="358.66667"
+                    y1="149.33333"
+                    x2="261.09478"
+                    y2="147.45524"
+                    marker-end="url(#FilledArrow_Marker)"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
       </g>
       <g id="Line_636">
-        <path d="M 347.66204 101.33333 C 347.66204 101.33333 343.37856 127.35113 316.04942 140.49928 C 297.4101 149.46672 274.0286 149.57163 261.04396 148.7317" marker-end="url(#FilledArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <path
+                    d="M 347.66204 101.33333 C 347.66204 101.33333 343.37856 127.35113 316.04942 140.49928 C 297.4101 149.46672 274.0286 149.57163 261.04396 148.7317"
+                    marker-end="url(#FilledArrow_Marker)"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
       </g>
       <g id="Line_637">
-        <path d="M 362 164.66667 C 362 164.66667 341.7326 157.43696 310.34147 152.5069 C 290.3909 149.37362 271.9096 148.1056 261.08842 147.59753" marker-end="url(#FilledArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <path
+                    d="M 362 164.66667 C 362 164.66667 341.7326 157.43696 310.34147 152.5069 C 290.3909 149.37362 271.9096 148.1056 261.08842 147.59753"
+                    marker-end="url(#FilledArrow_Marker)"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
       </g>
       <g id="Graphic_638">
         <text transform="translate(244.81497 157.22059)" fill="black">
-          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="11.088357" y="15">Sensor data is </tspan>
-          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="16.716357" y="34">sent directly</tspan>
-          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="19.271357" y="53">to operator</tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="14"
+                        font-weight="400"
+                        fill="black"
+                        x="11.088357"
+                        y="15"
+                    >Sensor data is </tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="14"
+                        font-weight="400"
+                        fill="black"
+                        x="16.716357"
+                        y="34"
+                    >sent directly</tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="14"
+                        font-weight="400"
+                        fill="black"
+                        x="19.271357"
+                        y="53"
+                    >to operator</tspan>
         </text>
       </g>
       <g id="Graphic_639">
         <text transform="translate(485.0427 153.42723)" fill="black">
-          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="5258016e-19" y="15">Sensor  network</tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="14"
+                        font-weight="400"
+                        fill="black"
+                        x="5258016e-19"
+                        y="15"
+                    >Sensor  network</tspan>
         </text>
       </g>
     </g>

@@ -52,7 +52,7 @@ A broad overview of distributed systems!
 Basic Terminologioe of Distributed Systems
 -------------------------------------------
 
-.. image:: images/modern_software_architecture-tag_cloud.png
+.. image:: images/modern_software_architecture-tag_cloud.webp
     :width: 100%
     :align: center
 
@@ -61,7 +61,7 @@ Basic Terminologioe of Distributed Systems
 Recommended Literature
 -----------------------
 
-.. image:: screenshots/distributed-systems.net.png
+.. image:: screenshots/distributed-systems.net.webp
     :width: 75%
     :align: center
 
@@ -80,7 +80,7 @@ Recommended Literature
 Recommended Podcast: `SE-Radio <https://se-radio.net>`__
 -----------------------------------------------------------
 
-.. image:: screenshots/se-radio.net.png
+.. image:: screenshots/se-radio.net.webp
     :width: 75%
     :align: center
 
@@ -89,7 +89,7 @@ Recommended Podcast: `SE-Radio <https://se-radio.net>`__
 Recommended Podcast: `Thoughtworks Technology Podcast <https://www.thoughtworks.com/en-de/insights/podcasts/technology-podcasts>`__
 -------------------------------------------------------------------------------------------------------------------------------------
 
-.. image:: screenshots/thoughtworks-technology-podcast.png  
+.. image:: screenshots/thoughtworks-technology-podcast.webp  
     :width: 70%
     :align: center
     :class: trbl-shadow
