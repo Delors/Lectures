@@ -126,7 +126,7 @@ Conceptual process
 
   .. cell:: 
 
-    .. image:: images/http/http.svg
+    .. image:: drawings/http/http.svg
 
   .. cell::
 
@@ -264,7 +264,7 @@ Sockets in Java
 TCP Sockets
 --------------------------------------
 
-.. image:: images/http/tcp_sockets.svg
+.. image:: drawings/http/tcp_sockets.svg
     :align: center
 
 
