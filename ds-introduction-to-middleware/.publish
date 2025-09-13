@@ -1,16 +1,16 @@
 folien.en.rst.html
 folien.en.rst.html.pdf
 
-images/middleware.svg
-images/rpc_conceptual.svg
-images/middleware-conceptual.svg
-images/web_services-and-message_brokers.svg
-images/ws-protocol_stack.svg
-images/soap_message.svg
-images/genealogy-of-middleware.svg
-images/zeromq/client-server.svg
-images/zeromq/pipeline.svg
-images/zeromq/pub-sub.svg
-images/message-queueing.svg
+drawings/middleware.svg
+drawings/rpc_conceptual.svg
+drawings/middleware-conceptual.svg
+drawings/web_services-and-message_brokers.svg
+drawings/ws-protocol_stack.svg
+drawings/soap_message.svg
+drawings/genealogy-of-middleware.svg
+drawings/zeromq/client-server.svg
+drawings/zeromq/pipeline.svg
+drawings/zeromq/pub-sub.svg
+drawings/message-queueing.svg
 screenshots/ws_standards_w3c.webp
 screenshots/ws_standards.webp

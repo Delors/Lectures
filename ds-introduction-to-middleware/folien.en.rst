@@ -59,7 +59,7 @@ Middleware as a Programming Abstraction
 
     .. card::
 
-        .. image:: images/middleware.svg
+        .. image:: drawings/middleware.svg
             :align: center
             :alt: Positioning of Middleware
 
@@ -157,7 +157,7 @@ Middleware as Infrastructure
 Middleware - Conceptional (historic)\ [#]_
 -----------------------------------------------------
 
-.. image:: images/middleware-conceptual.svg
+.. image:: drawings/middleware-conceptual.svg
   :align: center
 
 .. [#] Based on: Alonso; Web services: Concepts, Architectures and Applications; Springer, 2004
@@ -223,7 +223,7 @@ RPCs Conceptual (synchronous Communication)
 
   .. cell:: width-40
 
-    .. image:: images/rpc_conceptual.svg
+    .. image:: drawings/rpc_conceptual.svg
 
 
 
@@ -375,7 +375,7 @@ Integration von Unternehmensanwendungen\ [#]_
 
 The problems of enabling cross-company point-to-point integration led to the development of the next generation of middleware technologies.
 
-.. image:: images/web_services-and-message_brokers.svg
+.. image:: drawings/web_services-and-message_brokers.svg
    :align: center
 
 .. [#] Based on *Web Services - Concepts, Architectures and Applications; Alonso et al.; Springer 2004*
@@ -401,7 +401,7 @@ Web Services
 Web Services - Protocol Stack
 --------------------------------
 
-.. image:: images/ws-protocol_stack.svg
+.. image:: drawings/ws-protocol_stack.svg
   :align: center
 
 
@@ -434,7 +434,7 @@ Structure of a SOAP message
 
   .. cell:: width-40
 
-    .. image:: images/soap_message.svg
+    .. image:: drawings/soap_message.svg
         :align: center
 
 
@@ -546,7 +546,7 @@ Web Services - Standardization
 Overview
 ---------------------
 
-.. image:: images/genealogy-of-middleware.svg
+.. image:: drawings/genealogy-of-middleware.svg
    :align: center
 
 
@@ -584,15 +584,15 @@ ZeroMQ - Messaging Patterns
 
 .. scrollable::
 
-    .. image:: images/zeromq/client-server.svg
+    .. image:: drawings/zeromq/client-server.svg
       :align: center
       :class: framed
 
-    .. image:: images/zeromq/pub-sub.svg
+    .. image:: drawings/zeromq/pub-sub.svg
       :align: center
       :class: framed
 
-    .. image:: images/zeromq/pipeline.svg
+    .. image:: drawings/zeromq/pipeline.svg
       :align: center
       :class: framed
 
@@ -749,7 +749,7 @@ MOM - Basic Interface
 MOM - Queue Managers
 ----------------------
 
-.. image:: images/message-queueing.svg
+.. image:: drawings/message-queueing.svg
     :align: center
     :alt: Interaction between Queue Managers
 
