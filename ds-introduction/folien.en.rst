@@ -52,7 +52,7 @@ A broad overview of distributed systems!
 Basic Terminologioe of Distributed Systems
 -------------------------------------------
 
-.. image:: images/modern_software_architecture-tag_cloud.webp
+.. image:: drawings/modern_software_architecture-tag_cloud.webp
     :width: 100%
     :align: center
 
@@ -106,7 +106,7 @@ Distributed Systems - Definition and Properties
 Distributed vs. Decentralized 
 -------------------------------------------------------------------
 
-.. image:: images/distributed-vs-decentralized.svg
+.. image:: drawings/distributed-vs-decentralized.svg
     :align: center
     :width: 100%
     :class: icon
@@ -549,7 +549,7 @@ Analysis of the Scalability of Centralized Systems
 
         A centralized service can be modelled as a simple queuing system:
 
-        .. image:: images/queuing-system.svg
+        .. image:: drawings/queuing-system.svg
             :align: center
 
         .. rubric:: Assumptions
@@ -578,7 +578,7 @@ Analysis of the Scalability of Centralized Systems
 
             .. cell::
 
-                .. figure:: images/number_of_requests_in_system.svg
+                .. figure:: drawings/number_of_requests_in_system.svg
                     :align: center
 
                     # Requests in process and in queue 
@@ -640,7 +640,7 @@ Analysis of the Scalability of Centralized Systems
 
             Representation of the average number of requests in the system depending on the utilization :math-i:`U`:
 
-            .. image:: images/average_number_of_requests_in_system.svg
+            .. image:: drawings/average_number_of_requests_in_system.svg
                 :align: center
 
 
@@ -661,7 +661,7 @@ Analysis of the Scalability of Centralized Systems
             
         - \ 
 
-          .. image:: images/response_time.svg
+          .. image:: drawings/response_time.svg
                 :alt: Response time w.r.t. utilization
                 
           .. class:: incremental-list
@@ -748,7 +748,7 @@ Approaches to achieve Scaling
 Shifting Calculations to Clients
 ------------------------------------------
 
-.. image:: images/moving-computations.svg
+.. image:: drawings/moving-computations.svg
     :align: center
 
 
@@ -794,12 +794,12 @@ Parallel Computing
   
 - Multiprocessor
 
-  .. image:: images/multiprocessor-vs-multicomputer/multiprocessor.svg
+  .. image:: drawings/multiprocessor-vs-multicomputer/multiprocessor.svg
             :align: center
 
 - Multicomputer
 
-  .. image:: images/multiprocessor-vs-multicomputer/multicomputer.svg
+  .. image:: drawings/multiprocessor-vs-multicomputer/multicomputer.svg
             :align: center
 
 .. supplemental::
@@ -840,7 +840,7 @@ Amdahl's law - Limits to Scalability
 
     .. card::
 
-        .. image:: images/amdahl.svg
+        .. image:: drawings/amdahl.svg
             :alt: Amdahls Law visualized
             :align: center
 
@@ -1037,7 +1037,7 @@ MapReduce - Visualization of an Example
 ----------------------------------------------------------
 
 
-.. image:: images/mapreduce.svg
+.. image:: drawings/mapreduce.svg
     :width: 100%
     :align: center
 
@@ -1093,7 +1093,7 @@ Cluster Computing
 
 A group of high-end systems connected via a LAN.
 
-.. image:: images/cluster-computing.svg
+.. image:: drawings/cluster-computing.svg
     :align: center
 
 .. supplemental::
@@ -1126,7 +1126,7 @@ Basic Architecture for Grid Computing
 
 .. class:: columns dd-margin-left-2em
 
-- .. image:: images/architecture-for-grid-computing.svg
+- .. image:: drawings/architecture-for-grid-computing.svg
 
 - .. class:: no-margin
 
@@ -1271,7 +1271,7 @@ Transactions at Business Process Level
 
     .. cell:: 
 
-        .. image:: images/transactions/transaction.svg
+        .. image:: drawings/transactions/transaction.svg
             :align: center
 
         .. container:: text-align-center margin-top-1em
@@ -1311,7 +1311,7 @@ Transactions at Business Process Level
 *Transaction Processing Monitor (TPM)*
 ---------------------------------------
 
-.. image:: images/transactions/tpm.svg
+.. image:: drawings/transactions/tpm.svg
     :align: center
 
 .. supplemental::
@@ -1335,7 +1335,7 @@ Transactions at Business Process Level
 
 Middleware enables communication between applications.
 
-.. image:: images/middleware.svg
+.. image:: drawings/middleware.svg
     :align: center
 
 .. supplemental::
@@ -1424,14 +1424,14 @@ Modern Distributed Systems
 *Mobile Cloud Computing*
 -------------------------------------------- 
 
-.. image:: images/mobile_computing/mobile_cloud_computing.svg
+.. image:: drawings/mobile_computing/mobile_cloud_computing.svg
     :align: center
 
 
 *Mobile Edge Computing*
 --------------------------------------------
 
-.. image:: images/mobile_computing/mobile_edge_computing.svg
+.. image:: drawings/mobile_computing/mobile_edge_computing.svg
     :align: center
 
 
@@ -1445,7 +1445,7 @@ The nodes to which sensors are attached:
 - simple (low memory / computing / communication capacity) 
 - often battery-operated (or even battery-free)
 
-.. image:: images/sensor_networks/operator_stores_and_processes_data.svg
+.. image:: drawings/sensor_networks/operator_stores_and_processes_data.svg
     :align: center
 
 
@@ -1453,7 +1453,7 @@ The nodes to which sensors are attached:
 *Sensor Networks* as Distributed Databases
 --------------------------------------------
 
-.. image:: images/sensor_networks/nodes_store_and_process_data.svg
+.. image:: drawings/sensor_networks/nodes_store_and_process_data.svg
     :align: center
 
 
@@ -1461,7 +1461,7 @@ The nodes to which sensors are attached:
 The *Cloud-Edge Continuum*
 --------------------------------
 
-.. image:: images/cloud_edge_continuum.svg
+.. image:: drawings/cloud_edge_continuum.svg
     :align: center
 
 
