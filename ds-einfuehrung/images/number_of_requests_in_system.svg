@@ -1,71 +1,120 @@
-<?xml version="1.0" encoding="utf-8" standalone="no"?>
-<!-- Generator: DataGraph - https://www.visualdatatools.com/DataGraph/index.html  --><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg width="350" height="225" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 350 225">
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<!-- Generator: DataGraph - https://www.visualdatatools.com/DataGraph/index.html  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+    "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg
+    width="1050"
+    height="675"
+    version="1.1"
+    xmlns="http://www.w3.org/2000/svg"
+    xmlns:xlink="http://www.w3.org/1999/xlink"
+    viewBox="0 0 350 225"
+>
   <style>
-    @import url('/LectureDoc2/ext/fonts/ld-fonts.css'); 
+    @import url('/LectureDoc2/ext/fonts/ld-fonts.css');
   </style>
 <g>
   <!-- Commands -->
   <g id="Commands">
     <!-- (1-(7/10))*(7/10)^x -->
     <g id="1_7_10_7_10_x">
-      <path d="M 36.5 143.5 L 45.8745 146.941 L 55.4967 150.258 L 65.3189 153.432 L 75.5145 156.514 L 86.0096 159.476 
-               L 96.8298 162.321 L 108.051 165.064 L 119.674 167.697 L 131.684 170.213 L 144.218 172.632 
-               L 157.303 174.952 L 170.903 177.159 L 185.154 179.268 L 200.127 181.278 L 215.811 183.18 
-               L 232.315 184.978 L 249.783 186.679 L 268.257 188.275 L 288.01 189.779 L 309.147 191.183 
+      <path
+                    d="M 36.5 143.5 L 45.8745 146.941 L 55.4967 150.258 L 65.3189 153.432 L 75.5145 156.514 L 86.0096 159.476
+               L 96.8298 162.321 L 108.051 165.064 L 119.674 167.697 L 131.684 170.213 L 144.218 172.632
+               L 157.303 174.952 L 170.903 177.159 L 185.154 179.268 L 200.127 181.278 L 215.811 183.18
+               L 232.315 184.978 L 249.783 186.679 L 268.257 188.275 L 288.01 189.779 L 309.147 191.183
                L 331.8 192.485 "
-        stroke="rgb(228,28,28)" stroke-dasharray="0.02,4,8,4" stroke-linecap="round" fill="none" stroke-width="2"/>
+                    stroke="rgb(228,28,28)"
+                    stroke-dasharray="0.02,4,8,4"
+                    stroke-linecap="round"
+                    fill="none"
+                    stroke-width="2"
+                />
     </g>
     <!-- (1-(4/10))*(4/10)^x -->
     <g id="1_4_10_4_10_x">
-      <path d="M 36.5 86.5 L 40.1693 93.4199 L 43.9031 100.03 L 47.6318 106.224 L 51.3965 112.091 L 55.2832 117.765 
-               L 59.1697 123.074 L 63.0608 128.049 L 67.0238 132.787 L 70.9403 137.165 L 74.9733 141.377 
-               L 79.1116 145.409 L 83.2659 149.18 L 87.5391 152.789 L 91.8548 156.177 L 96.2989 159.414 
-               L 100.891 162.511 L 105.637 165.467 L 110.553 168.286 L 115.587 170.938 L 120.858 173.481 
-               L 126.289 175.873 L 131.92 178.129 L 137.725 180.239 L 143.846 182.249 L 150.254 184.14 
-               L 157.024 185.925 L 164.086 187.58 L 171.615 189.138 L 179.698 190.602 L 188.301 191.953 
-               L 197.603 193.208 L 207.609 194.352 L 218.552 195.4 L 230.596 196.347 L 243.952 197.194 
+      <path
+                    d="M 36.5 86.5 L 40.1693 93.4199 L 43.9031 100.03 L 47.6318 106.224 L 51.3965 112.091 L 55.2832 117.765
+               L 59.1697 123.074 L 63.0608 128.049 L 67.0238 132.787 L 70.9403 137.165 L 74.9733 141.377
+               L 79.1116 145.409 L 83.2659 149.18 L 87.5391 152.789 L 91.8548 156.177 L 96.2989 159.414
+               L 100.891 162.511 L 105.637 165.467 L 110.553 168.286 L 115.587 170.938 L 120.858 173.481
+               L 126.289 175.873 L 131.92 178.129 L 137.725 180.239 L 143.846 182.249 L 150.254 184.14
+               L 157.024 185.925 L 164.086 187.58 L 171.615 189.138 L 179.698 190.602 L 188.301 191.953
+               L 197.603 193.208 L 207.609 194.352 L 218.552 195.4 L 230.596 196.347 L 243.952 197.194
                L 259.021 197.943 L 276.232 198.594 L 296.369 199.148 L 320.457 199.604 L 331.8 199.762 "
-        stroke="rgb(55,126,184)" stroke-dasharray="5,3" stroke-linecap="butt" fill="none" stroke-width="2"/>
+                    stroke="rgb(55,126,184)"
+                    stroke-dasharray="5,3"
+                    stroke-linecap="butt"
+                    fill="none"
+                    stroke-width="2"
+                />
     </g>
     <!-- (1-(1/10))*(1/10)^x -->
     <g id="1_1_10_1_10_x">
-      <path d="M 36.5 29.5 L 38.6987 44.8872 L 40.9111 58.9733 L 43.1679 72.029 L 45.4575 84.0442 L 47.7141 94.7863 
-               L 49.9713 104.54 L 52.2444 113.453 L 54.5092 121.51 L 56.786 128.858 L 59.049 135.484 
-               L 61.2848 141.429 L 63.587 146.982 L 65.825 151.88 L 68.1985 156.586 L 70.5359 160.774 
-               L 72.9107 164.621 L 75.2964 168.11 L 77.7557 171.352 L 80.2142 174.269 L 82.7527 176.975 
-               L 85.3211 179.428 L 88.0295 181.739 L 90.7469 183.803 L 93.6913 185.784 L 96.6483 187.536 
-               L 99.8218 189.186 L 103.141 190.687 L 106.693 192.074 L 110.627 193.382 L 114.78 194.543 
-               L 119.307 195.594 L 124.344 196.547 L 129.916 197.387 L 136.178 198.121 L 143.347 198.75 
-               L 151.813 199.283 L 161.945 199.712 L 174.816 200.046 L 192.272 200.285 L 219.073 200.432 
+      <path
+                    d="M 36.5 29.5 L 38.6987 44.8872 L 40.9111 58.9733 L 43.1679 72.029 L 45.4575 84.0442 L 47.7141 94.7863
+               L 49.9713 104.54 L 52.2444 113.453 L 54.5092 121.51 L 56.786 128.858 L 59.049 135.484
+               L 61.2848 141.429 L 63.587 146.982 L 65.825 151.88 L 68.1985 156.586 L 70.5359 160.774
+               L 72.9107 164.621 L 75.2964 168.11 L 77.7557 171.352 L 80.2142 174.269 L 82.7527 176.975
+               L 85.3211 179.428 L 88.0295 181.739 L 90.7469 183.803 L 93.6913 185.784 L 96.6483 187.536
+               L 99.8218 189.186 L 103.141 190.687 L 106.693 192.074 L 110.627 193.382 L 114.78 194.543
+               L 119.307 195.594 L 124.344 196.547 L 129.916 197.387 L 136.178 198.121 L 143.347 198.75
+               L 151.813 199.283 L 161.945 199.712 L 174.816 200.046 L 192.272 200.285 L 219.073 200.432
                L 274.603 200.494 L 331.8 200.499 "
-        stroke="rgb(77,175,74)" stroke-dasharray="0.02,3" stroke-linecap="round" fill="none" stroke-width="2"/>
+                    stroke="rgb(77,175,74)"
+                    stroke-dasharray="0.02,3"
+                    stroke-linecap="round"
+                    fill="none"
+                    stroke-width="2"
+                />
     </g>
     <!-- Legend -->
     <g id="Legend">
       <defs>
         <clipPath id="clipPath">
-          <rect x="196.3" y="16.5" width="129" height="53.118"/>
+          <rect x="196.3" y="16.5" width="129" height="53.118" />
         </clipPath>
       </defs>
       <g clip-path="url(#clipPath)">
-        <rect x="196.3" y="16.5" width="129" height="53.118" fill="white" stroke="none"/>
+        <rect
+                        x="196.3"
+                        y="16.5"
+                        width="129"
+                        height="53.118"
+                        fill="white"
+                        stroke="none"
+                    />
       </g>
-      <rect x="196.3" y="16.5" width="129" height="53.118" stroke="black" fill="none" stroke-width="0.5"/>
+      <rect
+                    x="196.3"
+                    y="16.5"
+                    width="129"
+                    height="53.118"
+                    stroke="black"
+                    fill="none"
+                    stroke-width="0.5"
+                />
       <defs>
         <clipPath id="clipPath2">
-          <rect x="196.3" y="16.5" width="129" height="53.118"/>
+          <rect x="196.3" y="16.5" width="129" height="53.118" />
         </clipPath>
       </defs>
       <g clip-path="url(#clipPath2)">
         <defs>
           <clipPath id="clipPath3">
-            <rect x="201.3" y="19.7688" width="16" height="13.8924"/>
+            <rect x="201.3" y="19.7688" width="16" height="13.8924" />
           </clipPath>
         </defs>
         <g clip-path="url(#clipPath3)">
-          <path d="M 201.3 26.5 L 217.3 26.5 "
-            stroke="rgb(228,28,28)" stroke-dasharray="0.02,4,8,4" stroke-dashoffset="0.02" stroke-linecap="round" fill="none" stroke-width="2"/>
+          <path
+                            d="M 201.3 26.5 L 217.3 26.5 "
+                            stroke="rgb(228,28,28)"
+                            stroke-dasharray="0.02,4,8,4"
+                            stroke-dashoffset="0.02"
+                            stroke-linecap="round"
+                            fill="none"
+                            stroke-width="2"
+                        />
         </g>
         <g font-family="NotoSansDisplay-Regular" font-size="12" fill="black">
           <text x="222.3" y="30.999">(1-(7/10))*(7/10)</text>
@@ -73,12 +122,19 @@
         </g>
         <defs>
           <clipPath id="clipPath4">
-            <rect x="201.3" y="36.1128" width="16" height="13.8924"/>
+            <rect x="201.3" y="36.1128" width="16" height="13.8924" />
           </clipPath>
         </defs>
         <g clip-path="url(#clipPath4)">
-          <path d="M 201.3 43.5 L 217.3 43.5 "
-            stroke="rgb(55,126,184)" stroke-dasharray="5,3" stroke-dashoffset="2.5" stroke-linecap="butt" fill="none" stroke-width="2"/>
+          <path
+                            d="M 201.3 43.5 L 217.3 43.5 "
+                            stroke="rgb(55,126,184)"
+                            stroke-dasharray="5,3"
+                            stroke-dashoffset="2.5"
+                            stroke-linecap="butt"
+                            fill="none"
+                            stroke-width="2"
+                        />
         </g>
         <g font-family="NotoSansDisplay-Regular" font-size="12" fill="black">
           <text x="222.3" y="47.343">(1-(4/10))*(4/10)</text>
@@ -86,12 +142,19 @@
         </g>
         <defs>
           <clipPath id="clipPath5">
-            <rect x="201.3" y="52.4568" width="16" height="13.8924"/>
+            <rect x="201.3" y="52.4568" width="16" height="13.8924" />
           </clipPath>
         </defs>
         <g clip-path="url(#clipPath5)">
-          <path d="M 201.3 59.5 L 217.3 59.5 "
-            stroke="rgb(77,175,74)" stroke-dasharray="0.02,3" stroke-dashoffset="1.07" stroke-linecap="round" fill="none" stroke-width="2"/>
+          <path
+                            d="M 201.3 59.5 L 217.3 59.5 "
+                            stroke="rgb(77,175,74)"
+                            stroke-dasharray="0.02,3"
+                            stroke-dashoffset="1.07"
+                            stroke-linecap="round"
+                            fill="none"
+                            stroke-width="2"
+                        />
         </g>
         <g font-family="NotoSansDisplay-Regular" font-size="12" fill="black">
           <text x="222.3" y="63.687">(1-(1/10))*(1/10)</text>
@@ -125,10 +188,14 @@
           <text x="5.932" y="15.498">1,0</text>
         </g>
       </g>
-      <path d="M 28.5 200.5 L 36.5 200.5 M 32.5 181.5 L 36.5 181.5 M 28.5 162.5 L 36.5 162.5 M 32.5 143.5 L 36.5 143.5 
-               M 28.5 124.5 L 36.5 124.5 M 32.5 105.5 L 36.5 105.5 M 28.5 86.5 L 36.5 86.5 M 32.5 67.5 L 36.5 67.5 
+      <path
+                    d="M 28.5 200.5 L 36.5 200.5 M 32.5 181.5 L 36.5 181.5 M 28.5 162.5 L 36.5 162.5 M 32.5 143.5 L 36.5 143.5
+               M 28.5 124.5 L 36.5 124.5 M 32.5 105.5 L 36.5 105.5 M 28.5 86.5 L 36.5 86.5 M 32.5 67.5 L 36.5 67.5
                M 28.5 48.5 L 36.5 48.5 M 32.5 29.5 L 36.5 29.5 M 28.5 10.5 L 36.5 10.5 "
-        stroke="black" fill="none" stroke-width="0.5"/>
+                    stroke="black"
+                    fill="none"
+                    stroke-width="0.5"
+                />
     </g>
     <!-- X Axis -->
     <g id="X_Axis">
@@ -152,27 +219,52 @@
           <text x="300.951" y="221.495">5</text>
         </g>
       </g>
-      <path d="M 36.5 208.5 L 36.5 200.5 M 90.1909 208.5 L 90.1909 200.5 M 143.882 208.5 L 143.882 200.5 
-               M 197.573 208.5 L 197.573 200.5 M 251.264 208.5 L 251.264 200.5 M 304.955 208.5 L 304.955 200.5 
-               M 63.3455 204.5 L 63.3455 200.5 M 117.036 204.5 L 117.036 200.5 M 170.727 204.5 L 170.727 200.5 
+      <path
+                    d="M 36.5 208.5 L 36.5 200.5 M 90.1909 208.5 L 90.1909 200.5 M 143.882 208.5 L 143.882 200.5
+               M 197.573 208.5 L 197.573 200.5 M 251.264 208.5 L 251.264 200.5 M 304.955 208.5 L 304.955 200.5
+               M 63.3455 204.5 L 63.3455 200.5 M 117.036 204.5 L 117.036 200.5 M 170.727 204.5 L 170.727 200.5
                M 224.418 204.5 L 224.418 200.5 M 278.109 204.5 L 278.109 200.5 M 331.8 204.5 L 331.8 200.5 "
-        stroke="black" fill="none" stroke-width="0.5"/>
+                    stroke="black"
+                    fill="none"
+                    stroke-width="0.5"
+                />
     </g>
-    <path d="M 331.8 200.5 L 331.8 10.5 L 36.5 10.5 L 36.5 200.5 L 331.8 200.5 z "
-      stroke="black" stroke-linecap="square" fill="none" stroke-width="0.5"/>
+    <path
+                d="M 331.8 200.5 L 331.8 10.5 L 36.5 10.5 L 36.5 200.5 L 331.8 200.5 z "
+                stroke="black"
+                stroke-linecap="square"
+                fill="none"
+                stroke-width="0.5"
+            />
   </g>
   <!-- Zoom -->
   <g id="Zoom">
     <!-- Connection -->
     <g id="Connection">
-      <path d="M 144.902 186.345 L 187.8 155.5 "
-        stroke="black" fill="none" stroke-width="0.5"/>
-      <path d="M 143.238 186.345 L 131.8 155.5 "
-        stroke="black" fill="none" stroke-width="0.5"/>
+      <path
+                    d="M 144.902 186.345 L 187.8 155.5 "
+                    stroke="black"
+                    fill="none"
+                    stroke-width="0.5"
+                />
+      <path
+                    d="M 143.238 186.345 L 131.8 155.5 "
+                    stroke="black"
+                    fill="none"
+                    stroke-width="0.5"
+                />
     </g>
     <!-- Source -->
     <g id="Source">
-      <rect x="143.238" y="168.371" width="1.66442" height="17.974" stroke="black" fill="none" stroke-width="0.5"/>
+      <rect
+                    x="143.238"
+                    y="168.371"
+                    width="1.66442"
+                    height="17.974"
+                    stroke="black"
+                    fill="none"
+                    stroke-width="0.5"
+                />
     </g>
     <!-- Destination -->
     <g id="Destination">
@@ -180,10 +272,22 @@
       <g id="Content" transform="translate(131,156)">>
         <!-- Commands -->
         <g id="Commands_2">
-          <path d="M 0.8 -103.316 L 56.8 -101.033 "
-            stroke="rgb(228,28,28)" stroke-dasharray="0.02,4,8,4" stroke-linecap="round" fill="none" stroke-width="2"/>
-          <path d="M 0.8 -32.2195 L 56.8 -28.3979 "
-            stroke="rgb(55,126,184)" stroke-dasharray="5,3" stroke-linecap="butt" fill="none" stroke-width="2"/>
+          <path
+                            d="M 0.8 -103.316 L 56.8 -101.033 "
+                            stroke="rgb(228,28,28)"
+                            stroke-dasharray="0.02,4,8,4"
+                            stroke-linecap="round"
+                            fill="none"
+                            stroke-width="2"
+                        />
+          <path
+                            d="M 0.8 -32.2195 L 56.8 -28.3979 "
+                            stroke="rgb(55,126,184)"
+                            stroke-dasharray="5,3"
+                            stroke-linecap="butt"
+                            fill="none"
+                            stroke-width="2"
+                        />
         </g>
         <g>
           <!-- Y Labels -->
@@ -204,18 +308,34 @@
               <text x="-35.592" y="-116.065">0,16</text>
             </g>
           </g>
-          <path d="M -7.2 -8.23256 L 0.8 -8.23256 M -3.2 -22.2918 L 0.8 -22.2918 M -7.2 -36.351 L 0.8 -36.351 
-                   M -3.2 -50.4101 L 0.8 -50.4101 M -7.2 -64.4693 L 0.8 -64.4693 M -3.2 -78.5285 L 0.8 -78.5285 
+          <path
+                            d="M -7.2 -8.23256 L 0.8 -8.23256 M -3.2 -22.2918 L 0.8 -22.2918 M -7.2 -36.351 L 0.8 -36.351
+                   M -3.2 -50.4101 L 0.8 -50.4101 M -7.2 -64.4693 L 0.8 -64.4693 M -3.2 -78.5285 L 0.8 -78.5285
                    M -7.2 -92.5877 L 0.8 -92.5877 M -3.2 -106.647 L 0.8 -106.647 M -7.2 -120.706 L 0.8 -120.706 "
-            stroke="black" fill="none" stroke-width="0.5"/>
+                            stroke="black"
+                            fill="none"
+                            stroke-width="0.5"
+                        />
           <g font-family="NotoSansDisplay-Regular" font-size="13" fill="black">
             <text x="18.7594" y="-143.356">2</text>
           </g>
-          <path d="M 4.4129 -133.5 L 4.4129 -137.5 M 22.4774 -133.5 L 22.4774 -141.5 M 40.5419 -133.5 L 40.5419 -137.5 "
-            stroke="black" fill="none" stroke-width="0.5"/>
+          <path
+                            d="M 4.4129 -133.5 L 4.4129 -137.5 M 22.4774 -133.5 L 22.4774 -141.5 M 40.5419 -133.5 L 40.5419 -137.5 "
+                            stroke="black"
+                            fill="none"
+                            stroke-width="0.5"
+                        />
         </g>
       </g>
-      <rect x="131.8" y="22.5" width="56" height="133" stroke="black" fill="none" stroke-width="0.5"/>
+      <rect
+                    x="131.8"
+                    y="22.5"
+                    width="56"
+                    height="133"
+                    stroke="black"
+                    fill="none"
+                    stroke-width="0.5"
+                />
     </g>
   </g>
 </g>

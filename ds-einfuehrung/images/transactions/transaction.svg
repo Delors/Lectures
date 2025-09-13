@@ -1,127 +1,451 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg xmlns:dc="http://purl.org/dc/elements/1.1/" version="1.1" xmlns:xl="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" viewBox="-30 -237 256 170" width="256" height="170">
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+    "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    version="1.1"
+    xmlns:xl="http://www.w3.org/1999/xlink"
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="-30 -237 256 170"
+    width="768"
+    height="510"
+>
   <style>
-    @import url('/LectureDoc2/ext/fonts/ld-fonts.css'); 
+    @import url('/LectureDoc2/ext/fonts/ld-fonts.css');
   </style>
   <defs>
     <linearGradient x1="0" x2="1" id="Gradient" gradientUnits="userSpaceOnUse">
-      <stop offset=".16833588" stop-color="#029ed5"/>
-      <stop offset=".9336584" stop-color="#99d0eb" stop-opacity=".5"/>
-      <stop offset="1" stop-color="white" stop-opacity="0"/>
+      <stop offset=".16833588" stop-color="#029ed5" />
+      <stop offset=".9336584" stop-color="#99d0eb" stop-opacity=".5" />
+      <stop offset="1" stop-color="white" stop-opacity="0" />
     </linearGradient>
-    <linearGradient id="Obj_Gradient" xl:href="#Gradient" gradientTransform="translate(47.26056 -103.40877) rotate(-133.44236) scale(78.85506)"/>
-    <linearGradient id="Obj_Gradient_2" xl:href="#Gradient" gradientTransform="translate(1.4210482 -168.60207) rotate(46.55764) scale(54.472144)"/>
-    <linearGradient id="Obj_Gradient_3" xl:href="#Gradient" gradientTransform="translate(48.214584 -102.63423) rotate(-133.44236) scale(78.85506)"/>
+    <linearGradient
+            id="Obj_Gradient"
+            xl:href="#Gradient"
+            gradientTransform="translate(47.26056 -103.40877) rotate(-133.44236) scale(78.85506)"
+        />
+    <linearGradient
+            id="Obj_Gradient_2"
+            xl:href="#Gradient"
+            gradientTransform="translate(1.4210482 -168.60207) rotate(46.55764) scale(54.472144)"
+        />
+    <linearGradient
+            id="Obj_Gradient_3"
+            xl:href="#Gradient"
+            gradientTransform="translate(48.214584 -102.63423) rotate(-133.44236) scale(78.85506)"
+        />
     <linearGradient x1="0" x2="1" id="Gradient_2" gradientUnits="userSpaceOnUse">
-      <stop offset=".16833588" stop-color="#029ed5"/>
-      <stop offset=".9336584" stop-color="#99d0eb" stop-opacity=".5"/>
-      <stop offset="1" stop-color="white" stop-opacity="0"/>
+      <stop offset=".16833588" stop-color="#029ed5" />
+      <stop offset=".9336584" stop-color="#99d0eb" stop-opacity=".5" />
+      <stop offset="1" stop-color="white" stop-opacity="0" />
     </linearGradient>
-    <linearGradient id="Obj_Gradient_4" xl:href="#Gradient_2" gradientTransform="translate(22.364158 -136.6788) rotate(-95.92573) scale(24.426677)"/>
-    <linearGradient id="Obj_Gradient_5" xl:href="#Gradient" gradientTransform="translate(190.02456 -103.40877) rotate(-133.44236) scale(78.85506)"/>
-    <linearGradient id="Obj_Gradient_6" xl:href="#Gradient" gradientTransform="translate(144.18505 -168.60207) rotate(46.55764) scale(54.472144)"/>
-    <linearGradient id="Obj_Gradient_7" xl:href="#Gradient" gradientTransform="translate(190.97858 -102.63423) rotate(-133.44236) scale(78.85506)"/>
-    <linearGradient id="Obj_Gradient_8" xl:href="#Gradient_2" gradientTransform="translate(165.12816 -136.6788) rotate(-95.92573) scale(24.426677)"/>
-    <marker orient="auto" overflow="visible" markerUnits="strokeWidth" id="NegativeControls_Marker" stroke-linejoin="miter" stroke-miterlimit="10" viewBox="-1 -4 2 8" markerWidth="2" markerHeight="8" color="black">
+    <linearGradient
+            id="Obj_Gradient_4"
+            xl:href="#Gradient_2"
+            gradientTransform="translate(22.364158 -136.6788) rotate(-95.92573) scale(24.426677)"
+        />
+    <linearGradient
+            id="Obj_Gradient_5"
+            xl:href="#Gradient"
+            gradientTransform="translate(190.02456 -103.40877) rotate(-133.44236) scale(78.85506)"
+        />
+    <linearGradient
+            id="Obj_Gradient_6"
+            xl:href="#Gradient"
+            gradientTransform="translate(144.18505 -168.60207) rotate(46.55764) scale(54.472144)"
+        />
+    <linearGradient
+            id="Obj_Gradient_7"
+            xl:href="#Gradient"
+            gradientTransform="translate(190.97858 -102.63423) rotate(-133.44236) scale(78.85506)"
+        />
+    <linearGradient
+            id="Obj_Gradient_8"
+            xl:href="#Gradient_2"
+            gradientTransform="translate(165.12816 -136.6788) rotate(-95.92573) scale(24.426677)"
+        />
+    <marker
+            orient="auto"
+            overflow="visible"
+            markerUnits="strokeWidth"
+            id="NegativeControls_Marker"
+            stroke-linejoin="miter"
+            stroke-miterlimit="10"
+            viewBox="-1 -4 2 8"
+            markerWidth="2"
+            markerHeight="8"
+            color="black"
+        >
       <g>
-        <line x1="0" y1="-2.4" x2="0" y2="2.4" fill="none" stroke="currentColor" stroke-width="1"/>
+        <line
+                    x1="0"
+                    y1="-2.4"
+                    x2="0"
+                    y2="2.4"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1"
+                />
       </g>
     </marker>
-    <marker orient="auto" overflow="visible" markerUnits="strokeWidth" id="NegativeControls_Marker_2" stroke-linejoin="miter" stroke-miterlimit="10" viewBox="-1 -4 2 8" markerWidth="2" markerHeight="8" color="black">
+    <marker
+            orient="auto"
+            overflow="visible"
+            markerUnits="strokeWidth"
+            id="NegativeControls_Marker_2"
+            stroke-linejoin="miter"
+            stroke-miterlimit="10"
+            viewBox="-1 -4 2 8"
+            markerWidth="2"
+            markerHeight="8"
+            color="black"
+        >
       <g>
-        <line x1="0" y1="2.4" x2="0" y2="-2.4" fill="none" stroke="currentColor" stroke-width="1"/>
+        <line
+                    x1="0"
+                    y1="2.4"
+                    x2="0"
+                    y2="-2.4"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1"
+                />
       </g>
     </marker>
-    <font-face font-family="Noto Sans Display" font-size="14" panose-1="2 11 5 2 4 5 4 2 2 4" units-per-em="1000" underline-position="-100" underline-thickness="50" slope="0" x-height="536" cap-height="714" ascent="1069.0002" descent="-292.99927" font-weight="400">
+    <font-face
+            font-family="Noto Sans Display"
+            font-size="14"
+            panose-1="2 11 5 2 4 5 4 2 2 4"
+            units-per-em="1000"
+            underline-position="-100"
+            underline-thickness="50"
+            slope="0"
+            x-height="536"
+            cap-height="714"
+            ascent="1069.0002"
+            descent="-292.99927"
+            font-weight="400"
+        >
       <font-face-src>
-        <font-face-name name="NotoSansDisplay-Regular"/>
+        <font-face-name name="NotoSansDisplay-Regular" />
       </font-face-src>
     </font-face>
   </defs>
   <metadata> Produced by OmniGraffle 8.0\n2025-02-10 13:01:17 +0000</metadata>
-  <g id="transaction" stroke-opacity="1" stroke-dasharray="none" fill="none" fill-opacity="1" stroke="none">
+  <g
+        id="transaction"
+        stroke-opacity="1"
+        stroke-dasharray="none"
+        fill="none"
+        fill-opacity="1"
+        stroke="none"
+    >
     <title>transaction</title>
-    <rect fill="white" x="-30" y="-237" width="256" height="170"/>
+    <rect fill="white" x="-30" y="-237" width="256" height="170" />
     <g id="transaction_Layer_1">
       <title>Layer 1</title>
       <g id="Group_431">
         <g id="Graphic_435">
-          <path d="M 50.07218 -148.8138 C 50.07222 -148.82251 50.07222 -148.83122 50.07218 -148.83993 L 50.07218 -148.9759 L 50.068286 -148.9759 C 49.94725 -151.27359 47.027135 -153.55998 41.307937 -155.31324 C 29.622298 -158.89559 10.676149 -158.89559 -1.0094907 -155.31324 C -6.728688 -153.55998 -9.648804 -151.27359 -9.76984 -148.9759 L -9.77375 -148.9759 L -9.77375 -148.83607 C -9.77377 -148.82993 -9.77377 -148.8238 -9.77375 -148.81766 L -9.77375 -115.2539 C -9.77377 -115.24776 -9.77377 -115.24163 -9.77375 -115.23549 L -9.77375 -114.98623 L -9.761959 -114.98623 C -9.555385 -112.72551 -6.637895 -110.48374 -1.0094907 -108.75832 C 10.676149 -105.17597 29.622298 -105.17597 41.307937 -108.75832 C 46.93634 -110.48374 49.85383 -112.72551 50.060406 -114.98623 L 50.07218 -114.98623 L 50.07218 -115.23163 C 50.07222 -115.24034 50.07222 -115.24905 50.07218 -115.25776 Z" fill="url(#Obj_Gradient)"/>
-          <path d="M 50.07218 -148.8138 C 50.07222 -148.82251 50.07222 -148.83122 50.07218 -148.83993 L 50.07218 -148.9759 L 50.068286 -148.9759 C 49.94725 -151.27359 47.027135 -153.55998 41.307937 -155.31324 C 29.622298 -158.89559 10.676149 -158.89559 -1.0094907 -155.31324 C -6.728688 -153.55998 -9.648804 -151.27359 -9.76984 -148.9759 L -9.77375 -148.9759 L -9.77375 -148.83607 C -9.77377 -148.82993 -9.77377 -148.8238 -9.77375 -148.81766 L -9.77375 -115.2539 C -9.77377 -115.24776 -9.77377 -115.24163 -9.77375 -115.23549 L -9.77375 -114.98623 L -9.761959 -114.98623 C -9.555385 -112.72551 -6.637895 -110.48374 -1.0094907 -108.75832 C 10.676149 -105.17597 29.622298 -105.17597 41.307937 -108.75832 C 46.93634 -110.48374 49.85383 -112.72551 50.060406 -114.98623 L 50.07218 -114.98623 L 50.07218 -115.23163 C 50.07222 -115.24034 50.07222 -115.24905 50.07218 -115.25776 Z" stroke="white" stroke-opacity=".48790474" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+          <path
+                        d="M 50.07218 -148.8138 C 50.07222 -148.82251 50.07222 -148.83122 50.07218 -148.83993 L 50.07218 -148.9759 L 50.068286 -148.9759 C 49.94725 -151.27359 47.027135 -153.55998 41.307937 -155.31324 C 29.622298 -158.89559 10.676149 -158.89559 -1.0094907 -155.31324 C -6.728688 -153.55998 -9.648804 -151.27359 -9.76984 -148.9759 L -9.77375 -148.9759 L -9.77375 -148.83607 C -9.77377 -148.82993 -9.77377 -148.8238 -9.77375 -148.81766 L -9.77375 -115.2539 C -9.77377 -115.24776 -9.77377 -115.24163 -9.77375 -115.23549 L -9.77375 -114.98623 L -9.761959 -114.98623 C -9.555385 -112.72551 -6.637895 -110.48374 -1.0094907 -108.75832 C 10.676149 -105.17597 29.622298 -105.17597 41.307937 -108.75832 C 46.93634 -110.48374 49.85383 -112.72551 50.060406 -114.98623 L 50.07218 -114.98623 L 50.07218 -115.23163 C 50.07222 -115.24034 50.07222 -115.24905 50.07218 -115.25776 Z"
+                        fill="url(#Obj_Gradient)"
+                    />
+          <path
+                        d="M 50.07218 -148.8138 C 50.07222 -148.82251 50.07222 -148.83122 50.07218 -148.83993 L 50.07218 -148.9759 L 50.068286 -148.9759 C 49.94725 -151.27359 47.027135 -153.55998 41.307937 -155.31324 C 29.622298 -158.89559 10.676149 -158.89559 -1.0094907 -155.31324 C -6.728688 -153.55998 -9.648804 -151.27359 -9.76984 -148.9759 L -9.77375 -148.9759 L -9.77375 -148.83607 C -9.77377 -148.82993 -9.77377 -148.8238 -9.77375 -148.81766 L -9.77375 -115.2539 C -9.77377 -115.24776 -9.77377 -115.24163 -9.77375 -115.23549 L -9.77375 -114.98623 L -9.761959 -114.98623 C -9.555385 -112.72551 -6.637895 -110.48374 -1.0094907 -108.75832 C 10.676149 -105.17597 29.622298 -105.17597 41.307937 -108.75832 C 46.93634 -110.48374 49.85383 -112.72551 50.060406 -114.98623 L 50.07218 -114.98623 L 50.07218 -115.23163 C 50.07222 -115.24034 50.07222 -115.24905 50.07218 -115.25776 Z"
+                        stroke="white"
+                        stroke-opacity=".48790474"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                    />
         </g>
         <g id="Graphic_434">
-          <ellipse cx="20.149238" cy="-148.82687" rx="29.9230211370941" ry="9.17314471993876" fill="url(#Obj_Gradient_2)"/>
-          <ellipse cx="20.149238" cy="-148.82687" rx="29.9230211370941" ry="9.17314471993876" stroke="white" stroke-opacity=".48790474" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+          <ellipse
+                        cx="20.149238"
+                        cy="-148.82687"
+                        rx="29.9230211370941"
+                        ry="9.17314471993876"
+                        fill="url(#Obj_Gradient_2)"
+                    />
+          <ellipse
+                        cx="20.149238"
+                        cy="-148.82687"
+                        rx="29.9230211370941"
+                        ry="9.17314471993876"
+                        stroke="white"
+                        stroke-opacity=".48790474"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                    />
         </g>
         <g id="Graphic_433">
-          <path d="M 51.026206 -148.03926 C 51.026246 -148.04797 51.026246 -148.05668 51.026206 -148.06539 L 51.026206 -148.20137 L 51.02231 -148.20137 C 50.901275 -150.49905 47.98116 -152.78544 42.26196 -154.5387 C 30.576322 -158.12105 11.630173 -158.12105 -.05546632 -154.5387 C -5.7746635 -152.78544 -8.69478 -150.49905 -8.815815 -148.20137 L -8.819726 -148.20137 L -8.819726 -148.06153 C -8.819746 -148.0554 -8.819746 -148.04926 -8.819726 -148.04312 L -8.819726 -114.47935 C -8.819746 -114.47322 -8.819746 -114.46708 -8.819726 -114.46095 L -8.819726 -114.21169 L -8.807935 -114.21169 C -8.60136 -111.95097 -5.683871 -109.7092 -.05546632 -107.98378 C 11.630173 -104.40143 30.576322 -104.40143 42.26196 -107.98378 C 47.890366 -109.7092 50.807856 -111.95097 51.01443 -114.21169 L 51.026206 -114.21169 L 51.026206 -114.45708 C 51.026246 -114.4658 51.026246 -114.47451 51.026206 -114.48322 Z" fill="url(#Obj_Gradient_3)"/>
-          <path d="M 51.026206 -148.03926 C 51.026246 -148.04797 51.026246 -148.05668 51.026206 -148.06539 L 51.026206 -148.20137 L 51.02231 -148.20137 C 50.901275 -150.49905 47.98116 -152.78544 42.26196 -154.5387 C 30.576322 -158.12105 11.630173 -158.12105 -.05546632 -154.5387 C -5.7746635 -152.78544 -8.69478 -150.49905 -8.815815 -148.20137 L -8.819726 -148.20137 L -8.819726 -148.06153 C -8.819746 -148.0554 -8.819746 -148.04926 -8.819726 -148.04312 L -8.819726 -114.47935 C -8.819746 -114.47322 -8.819746 -114.46708 -8.819726 -114.46095 L -8.819726 -114.21169 L -8.807935 -114.21169 C -8.60136 -111.95097 -5.683871 -109.7092 -.05546632 -107.98378 C 11.630173 -104.40143 30.576322 -104.40143 42.26196 -107.98378 C 47.890366 -109.7092 50.807856 -111.95097 51.01443 -114.21169 L 51.026206 -114.21169 L 51.026206 -114.45708 C 51.026246 -114.4658 51.026246 -114.47451 51.026206 -114.48322 Z" stroke="white" stroke-opacity=".48790474" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+          <path
+                        d="M 51.026206 -148.03926 C 51.026246 -148.04797 51.026246 -148.05668 51.026206 -148.06539 L 51.026206 -148.20137 L 51.02231 -148.20137 C 50.901275 -150.49905 47.98116 -152.78544 42.26196 -154.5387 C 30.576322 -158.12105 11.630173 -158.12105 -.05546632 -154.5387 C -5.7746635 -152.78544 -8.69478 -150.49905 -8.815815 -148.20137 L -8.819726 -148.20137 L -8.819726 -148.06153 C -8.819746 -148.0554 -8.819746 -148.04926 -8.819726 -148.04312 L -8.819726 -114.47935 C -8.819746 -114.47322 -8.819746 -114.46708 -8.819726 -114.46095 L -8.819726 -114.21169 L -8.807935 -114.21169 C -8.60136 -111.95097 -5.683871 -109.7092 -.05546632 -107.98378 C 11.630173 -104.40143 30.576322 -104.40143 42.26196 -107.98378 C 47.890366 -109.7092 50.807856 -111.95097 51.01443 -114.21169 L 51.026206 -114.21169 L 51.026206 -114.45708 C 51.026246 -114.4658 51.026246 -114.47451 51.026206 -114.48322 Z"
+                        fill="url(#Obj_Gradient_3)"
+                    />
+          <path
+                        d="M 51.026206 -148.03926 C 51.026246 -148.04797 51.026246 -148.05668 51.026206 -148.06539 L 51.026206 -148.20137 L 51.02231 -148.20137 C 50.901275 -150.49905 47.98116 -152.78544 42.26196 -154.5387 C 30.576322 -158.12105 11.630173 -158.12105 -.05546632 -154.5387 C -5.7746635 -152.78544 -8.69478 -150.49905 -8.815815 -148.20137 L -8.819726 -148.20137 L -8.819726 -148.06153 C -8.819746 -148.0554 -8.819746 -148.04926 -8.819726 -148.04312 L -8.819726 -114.47935 C -8.819746 -114.47322 -8.819746 -114.46708 -8.819726 -114.46095 L -8.819726 -114.21169 L -8.807935 -114.21169 C -8.60136 -111.95097 -5.683871 -109.7092 -.05546632 -107.98378 C 11.630173 -104.40143 30.576322 -104.40143 42.26196 -107.98378 C 47.890366 -109.7092 50.807856 -111.95097 51.01443 -114.21169 L 51.026206 -114.21169 L 51.026206 -114.45708 C 51.026246 -114.4658 51.026246 -114.47451 51.026206 -114.48322 Z"
+                        stroke="white"
+                        stroke-opacity=".48790474"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                    />
         </g>
         <g id="Graphic_432">
-          <ellipse cx="21.103263" cy="-148.82687" rx="29.9230211370941" ry="9.17314471993876" fill="url(#Obj_Gradient_4)"/>
-          <ellipse cx="21.103263" cy="-148.82687" rx="29.9230211370941" ry="9.17314471993876" stroke="white" stroke-opacity=".48790474" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+          <ellipse
+                        cx="21.103263"
+                        cy="-148.82687"
+                        rx="29.9230211370941"
+                        ry="9.17314471993876"
+                        fill="url(#Obj_Gradient_4)"
+                    />
+          <ellipse
+                        cx="21.103263"
+                        cy="-148.82687"
+                        rx="29.9230211370941"
+                        ry="9.17314471993876"
+                        stroke="white"
+                        stroke-opacity=".48790474"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                    />
         </g>
       </g>
       <g id="Group_477">
         <g id="Graphic_481">
-          <path d="M 192.83618 -148.8138 C 192.83622 -148.82251 192.83622 -148.83122 192.83618 -148.83993 L 192.83618 -148.9759 L 192.83229 -148.9759 C 192.71125 -151.27359 189.79114 -153.55998 184.07194 -155.31324 C 172.3863 -158.89559 153.44015 -158.89559 141.75451 -155.31324 C 136.03531 -153.55998 133.1152 -151.27359 132.99416 -148.9759 L 132.99025 -148.9759 L 132.99025 -148.83607 C 132.99023 -148.82993 132.99023 -148.8238 132.99025 -148.81766 L 132.99025 -115.2539 C 132.99023 -115.24776 132.99023 -115.24163 132.99025 -115.23549 L 132.99025 -114.98623 L 133.00204 -114.98623 C 133.20862 -112.72551 136.1261 -110.48374 141.75451 -108.75832 C 153.44015 -105.17597 172.3863 -105.17597 184.07194 -108.75832 C 189.70034 -110.48374 192.61783 -112.72551 192.8244 -114.98623 L 192.83618 -114.98623 L 192.83618 -115.23163 C 192.83622 -115.24034 192.83622 -115.24905 192.83618 -115.25776 Z" fill="url(#Obj_Gradient_5)"/>
-          <path d="M 192.83618 -148.8138 C 192.83622 -148.82251 192.83622 -148.83122 192.83618 -148.83993 L 192.83618 -148.9759 L 192.83229 -148.9759 C 192.71125 -151.27359 189.79114 -153.55998 184.07194 -155.31324 C 172.3863 -158.89559 153.44015 -158.89559 141.75451 -155.31324 C 136.03531 -153.55998 133.1152 -151.27359 132.99416 -148.9759 L 132.99025 -148.9759 L 132.99025 -148.83607 C 132.99023 -148.82993 132.99023 -148.8238 132.99025 -148.81766 L 132.99025 -115.2539 C 132.99023 -115.24776 132.99023 -115.24163 132.99025 -115.23549 L 132.99025 -114.98623 L 133.00204 -114.98623 C 133.20862 -112.72551 136.1261 -110.48374 141.75451 -108.75832 C 153.44015 -105.17597 172.3863 -105.17597 184.07194 -108.75832 C 189.70034 -110.48374 192.61783 -112.72551 192.8244 -114.98623 L 192.83618 -114.98623 L 192.83618 -115.23163 C 192.83622 -115.24034 192.83622 -115.24905 192.83618 -115.25776 Z" stroke="white" stroke-opacity=".48790474" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+          <path
+                        d="M 192.83618 -148.8138 C 192.83622 -148.82251 192.83622 -148.83122 192.83618 -148.83993 L 192.83618 -148.9759 L 192.83229 -148.9759 C 192.71125 -151.27359 189.79114 -153.55998 184.07194 -155.31324 C 172.3863 -158.89559 153.44015 -158.89559 141.75451 -155.31324 C 136.03531 -153.55998 133.1152 -151.27359 132.99416 -148.9759 L 132.99025 -148.9759 L 132.99025 -148.83607 C 132.99023 -148.82993 132.99023 -148.8238 132.99025 -148.81766 L 132.99025 -115.2539 C 132.99023 -115.24776 132.99023 -115.24163 132.99025 -115.23549 L 132.99025 -114.98623 L 133.00204 -114.98623 C 133.20862 -112.72551 136.1261 -110.48374 141.75451 -108.75832 C 153.44015 -105.17597 172.3863 -105.17597 184.07194 -108.75832 C 189.70034 -110.48374 192.61783 -112.72551 192.8244 -114.98623 L 192.83618 -114.98623 L 192.83618 -115.23163 C 192.83622 -115.24034 192.83622 -115.24905 192.83618 -115.25776 Z"
+                        fill="url(#Obj_Gradient_5)"
+                    />
+          <path
+                        d="M 192.83618 -148.8138 C 192.83622 -148.82251 192.83622 -148.83122 192.83618 -148.83993 L 192.83618 -148.9759 L 192.83229 -148.9759 C 192.71125 -151.27359 189.79114 -153.55998 184.07194 -155.31324 C 172.3863 -158.89559 153.44015 -158.89559 141.75451 -155.31324 C 136.03531 -153.55998 133.1152 -151.27359 132.99416 -148.9759 L 132.99025 -148.9759 L 132.99025 -148.83607 C 132.99023 -148.82993 132.99023 -148.8238 132.99025 -148.81766 L 132.99025 -115.2539 C 132.99023 -115.24776 132.99023 -115.24163 132.99025 -115.23549 L 132.99025 -114.98623 L 133.00204 -114.98623 C 133.20862 -112.72551 136.1261 -110.48374 141.75451 -108.75832 C 153.44015 -105.17597 172.3863 -105.17597 184.07194 -108.75832 C 189.70034 -110.48374 192.61783 -112.72551 192.8244 -114.98623 L 192.83618 -114.98623 L 192.83618 -115.23163 C 192.83622 -115.24034 192.83622 -115.24905 192.83618 -115.25776 Z"
+                        stroke="white"
+                        stroke-opacity=".48790474"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                    />
         </g>
         <g id="Graphic_480">
-          <ellipse cx="162.91324" cy="-148.82687" rx="29.9230211370941" ry="9.17314471993876" fill="url(#Obj_Gradient_6)"/>
-          <ellipse cx="162.91324" cy="-148.82687" rx="29.9230211370941" ry="9.17314471993876" stroke="white" stroke-opacity=".48790474" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+          <ellipse
+                        cx="162.91324"
+                        cy="-148.82687"
+                        rx="29.9230211370941"
+                        ry="9.17314471993876"
+                        fill="url(#Obj_Gradient_6)"
+                    />
+          <ellipse
+                        cx="162.91324"
+                        cy="-148.82687"
+                        rx="29.9230211370941"
+                        ry="9.17314471993876"
+                        stroke="white"
+                        stroke-opacity=".48790474"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                    />
         </g>
         <g id="Graphic_479">
-          <path d="M 193.7902 -148.03926 C 193.79025 -148.04797 193.79025 -148.05668 193.7902 -148.06539 L 193.7902 -148.20137 L 193.78631 -148.20137 C 193.66528 -150.49905 190.74516 -152.78544 185.02596 -154.5387 C 173.34032 -158.12105 154.39417 -158.12105 142.70853 -154.5387 C 136.98934 -152.78544 134.06922 -150.49905 133.94819 -148.20137 L 133.94428 -148.20137 L 133.94428 -148.06153 C 133.94426 -148.0554 133.94426 -148.04926 133.94428 -148.04312 L 133.94428 -114.47935 C 133.94426 -114.47322 133.94426 -114.46708 133.94428 -114.46095 L 133.94428 -114.21169 L 133.95607 -114.21169 C 134.16264 -111.95097 137.08013 -109.7092 142.70853 -107.98378 C 154.39417 -104.40143 173.34032 -104.40143 185.02596 -107.98378 C 190.65437 -109.7092 193.57186 -111.95097 193.77843 -114.21169 L 193.7902 -114.21169 L 193.7902 -114.45708 C 193.79025 -114.4658 193.79025 -114.47451 193.7902 -114.48322 Z" fill="url(#Obj_Gradient_7)"/>
-          <path d="M 193.7902 -148.03926 C 193.79025 -148.04797 193.79025 -148.05668 193.7902 -148.06539 L 193.7902 -148.20137 L 193.78631 -148.20137 C 193.66528 -150.49905 190.74516 -152.78544 185.02596 -154.5387 C 173.34032 -158.12105 154.39417 -158.12105 142.70853 -154.5387 C 136.98934 -152.78544 134.06922 -150.49905 133.94819 -148.20137 L 133.94428 -148.20137 L 133.94428 -148.06153 C 133.94426 -148.0554 133.94426 -148.04926 133.94428 -148.04312 L 133.94428 -114.47935 C 133.94426 -114.47322 133.94426 -114.46708 133.94428 -114.46095 L 133.94428 -114.21169 L 133.95607 -114.21169 C 134.16264 -111.95097 137.08013 -109.7092 142.70853 -107.98378 C 154.39417 -104.40143 173.34032 -104.40143 185.02596 -107.98378 C 190.65437 -109.7092 193.57186 -111.95097 193.77843 -114.21169 L 193.7902 -114.21169 L 193.7902 -114.45708 C 193.79025 -114.4658 193.79025 -114.47451 193.7902 -114.48322 Z" stroke="white" stroke-opacity=".48790474" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+          <path
+                        d="M 193.7902 -148.03926 C 193.79025 -148.04797 193.79025 -148.05668 193.7902 -148.06539 L 193.7902 -148.20137 L 193.78631 -148.20137 C 193.66528 -150.49905 190.74516 -152.78544 185.02596 -154.5387 C 173.34032 -158.12105 154.39417 -158.12105 142.70853 -154.5387 C 136.98934 -152.78544 134.06922 -150.49905 133.94819 -148.20137 L 133.94428 -148.20137 L 133.94428 -148.06153 C 133.94426 -148.0554 133.94426 -148.04926 133.94428 -148.04312 L 133.94428 -114.47935 C 133.94426 -114.47322 133.94426 -114.46708 133.94428 -114.46095 L 133.94428 -114.21169 L 133.95607 -114.21169 C 134.16264 -111.95097 137.08013 -109.7092 142.70853 -107.98378 C 154.39417 -104.40143 173.34032 -104.40143 185.02596 -107.98378 C 190.65437 -109.7092 193.57186 -111.95097 193.77843 -114.21169 L 193.7902 -114.21169 L 193.7902 -114.45708 C 193.79025 -114.4658 193.79025 -114.47451 193.7902 -114.48322 Z"
+                        fill="url(#Obj_Gradient_7)"
+                    />
+          <path
+                        d="M 193.7902 -148.03926 C 193.79025 -148.04797 193.79025 -148.05668 193.7902 -148.06539 L 193.7902 -148.20137 L 193.78631 -148.20137 C 193.66528 -150.49905 190.74516 -152.78544 185.02596 -154.5387 C 173.34032 -158.12105 154.39417 -158.12105 142.70853 -154.5387 C 136.98934 -152.78544 134.06922 -150.49905 133.94819 -148.20137 L 133.94428 -148.20137 L 133.94428 -148.06153 C 133.94426 -148.0554 133.94426 -148.04926 133.94428 -148.04312 L 133.94428 -114.47935 C 133.94426 -114.47322 133.94426 -114.46708 133.94428 -114.46095 L 133.94428 -114.21169 L 133.95607 -114.21169 C 134.16264 -111.95097 137.08013 -109.7092 142.70853 -107.98378 C 154.39417 -104.40143 173.34032 -104.40143 185.02596 -107.98378 C 190.65437 -109.7092 193.57186 -111.95097 193.77843 -114.21169 L 193.7902 -114.21169 L 193.7902 -114.45708 C 193.79025 -114.4658 193.79025 -114.47451 193.7902 -114.48322 Z"
+                        stroke="white"
+                        stroke-opacity=".48790474"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                    />
         </g>
         <g id="Graphic_478">
-          <ellipse cx="163.86726" cy="-148.82687" rx="29.9230211370941" ry="9.17314471993876" fill="url(#Obj_Gradient_8)"/>
-          <ellipse cx="163.86726" cy="-148.82687" rx="29.9230211370941" ry="9.17314471993876" stroke="white" stroke-opacity=".48790474" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+          <ellipse
+                        cx="163.86726"
+                        cy="-148.82687"
+                        rx="29.9230211370941"
+                        ry="9.17314471993876"
+                        fill="url(#Obj_Gradient_8)"
+                    />
+          <ellipse
+                        cx="163.86726"
+                        cy="-148.82687"
+                        rx="29.9230211370941"
+                        ry="9.17314471993876"
+                        stroke="white"
+                        stroke-opacity=".48790474"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                    />
         </g>
       </g>
       <g id="Graphic_482">
-        <text transform="translate(56.026234 -161.29702)" fill="black" fill-opacity=".4228163">
-          <tspan font-family="Noto Sans Display" font-size="12" font-weight="400" fill="black" fill-opacity=".4228163" x="24.198" y="13" xml:space="preserve">zwei </tspan>
-          <tspan font-family="Noto Sans Display" font-size="12" font-style="italic" font-weight="400" fill="black" fill-opacity=".4228163" x="1.974" y="30" xml:space="preserve">unabhängige</tspan>
-          <tspan font-family="Noto Sans Display" font-size="12" font-weight="400" fill="black" fill-opacity=".4228163" x="0" y="47" xml:space="preserve">Datenbanken</tspan>
+        <text
+                    transform="translate(56.026234 -161.29702)"
+                    fill="black"
+                    fill-opacity=".4228163"
+                >
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="12"
+                        font-weight="400"
+                        fill="black"
+                        fill-opacity=".4228163"
+                        x="24.198"
+                        y="13"
+                        xml:space="preserve"
+                    >zwei </tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="12"
+                        font-style="italic"
+                        font-weight="400"
+                        fill="black"
+                        fill-opacity=".4228163"
+                        x="1.974"
+                        y="30"
+                        xml:space="preserve"
+                    >unabhängige</tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="12"
+                        font-weight="400"
+                        fill="black"
+                        fill-opacity=".4228163"
+                        x="0"
+                        y="47"
+                        xml:space="preserve"
+                    >Datenbanken</tspan>
         </text>
       </g>
       <g id="Line_484">
-        <line x1="-8.72339" y1="-213.5" x2="190.59024" y2="-213.5" marker-end="url(#NegativeControls_Marker)" marker-start="url(#NegativeControls_Marker_2)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+        <line
+                    x1="-8.72339"
+                    y1="-213.5"
+                    x2="190.59024"
+                    y2="-213.5"
+                    marker-end="url(#NegativeControls_Marker)"
+                    marker-start="url(#NegativeControls_Marker_2)"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                />
       </g>
       <g id="Line_485">
-        <line x1="-8.72339" y1="-179" x2="47.826236" y2="-179" marker-end="url(#NegativeControls_Marker)" marker-start="url(#NegativeControls_Marker_2)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+        <line
+                    x1="-8.72339"
+                    y1="-179"
+                    x2="47.826236"
+                    y2="-179"
+                    marker-end="url(#NegativeControls_Marker)"
+                    marker-start="url(#NegativeControls_Marker_2)"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                />
       </g>
       <g id="Line_486">
-        <line x1="136.19024" y1="-179" x2="190.59024" y2="-179" marker-end="url(#NegativeControls_Marker)" marker-start="url(#NegativeControls_Marker_2)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+        <line
+                    x1="136.19024"
+                    y1="-179"
+                    x2="190.59024"
+                    y2="-179"
+                    marker-end="url(#NegativeControls_Marker)"
+                    marker-start="url(#NegativeControls_Marker_2)"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                />
       </g>
       <g id="Graphic_487">
         <text transform="translate(55.60824 -237)" fill="black">
-          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="0" y="15" xml:space="preserve">Transaktion</tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="14"
+                        font-weight="400"
+                        fill="black"
+                        x="0"
+                        y="15"
+                        xml:space="preserve"
+                    >Transaktion</tspan>
         </text>
       </g>
       <g id="Graphic_488">
         <text transform="translate(-29.598766 -105.29702)" fill="black">
-          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="3623768e-19" y="15" xml:space="preserve">Fluggesellschaft</tspan>
-          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="39.417" y="34" xml:space="preserve"> DB</tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="14"
+                        font-weight="400"
+                        fill="black"
+                        x="3623768e-19"
+                        y="15"
+                        xml:space="preserve"
+                    >Fluggesellschaft</tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="14"
+                        font-weight="400"
+                        fill="black"
+                        x="39.417"
+                        y="34"
+                        xml:space="preserve"
+                    > DB</tspan>
         </text>
       </g>
       <g id="Graphic_489">
         <text transform="translate(101.63624 -105.29702)" fill="black">
-          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="8100187e-19" y="15" xml:space="preserve">Hotelreservierungs-</tspan>
-          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="28.917" y="34" xml:space="preserve">system DB</tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="14"
+                        font-weight="400"
+                        fill="black"
+                        x="8100187e-19"
+                        y="15"
+                        xml:space="preserve"
+                    >Hotelreservierungs-</tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="14"
+                        font-weight="400"
+                        fill="black"
+                        x="28.917"
+                        y="34"
+                        xml:space="preserve"
+                    >system DB</tspan>
         </text>
       </g>
       <g id="Graphic_490">
         <text transform="translate(-25.216766 -208)" fill="black">
-          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="7531753e-19" y="15" xml:space="preserve">Teiltransaktion</tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="14"
+                        font-weight="400"
+                        fill="black"
+                        x="7531753e-19"
+                        y="15"
+                        xml:space="preserve"
+                    >Teiltransaktion</tspan>
         </text>
       </g>
       <g id="Graphic_491">
         <text transform="translate(117.54723 -208)" fill="black">
-          <tspan font-family="Noto Sans Display" font-size="14" font-weight="400" fill="black" x="7531753e-19" y="15" xml:space="preserve">Teiltransaktion</tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="14"
+                        font-weight="400"
+                        fill="black"
+                        x="7531753e-19"
+                        y="15"
+                        xml:space="preserve"
+                    >Teiltransaktion</tspan>
         </text>
       </g>
     </g>

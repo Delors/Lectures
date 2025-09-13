@@ -1,86 +1,294 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg xmlns:dc="http://purl.org/dc/elements/1.1/" version="1.1" xmlns:xl="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" viewBox="1 -15 604 291" width="604" height="291">
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+    "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    version="1.1"
+    xmlns:xl="http://www.w3.org/1999/xlink"
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="1 -15 604 291"
+    width="1812"
+    height="873"
+>
   <style>
-    @import url('/LectureDoc2/ext/fonts/ld-fonts.css'); 
+    @import url('/LectureDoc2/ext/fonts/ld-fonts.css');
   </style>
   <defs>
-    <marker orient="auto" overflow="visible" markerUnits="strokeWidth" id="FilledArrow_Marker" stroke-linejoin="miter" stroke-miterlimit="10" viewBox="-1 -4 10 8" markerWidth="10" markerHeight="8" color="black">
+    <marker
+            orient="auto"
+            overflow="visible"
+            markerUnits="strokeWidth"
+            id="FilledArrow_Marker"
+            stroke-linejoin="miter"
+            stroke-miterlimit="10"
+            viewBox="-1 -4 10 8"
+            markerWidth="10"
+            markerHeight="8"
+            color="black"
+        >
       <g>
-        <path d="M 8 0 L 0 -3 L 0 3 Z" fill="currentColor" stroke="currentColor" stroke-width="1"/>
+        <path
+                    d="M 8 0 L 0 -3 L 0 3 Z"
+                    fill="currentColor"
+                    stroke="currentColor"
+                    stroke-width="1"
+                />
       </g>
     </marker>
   </defs>
   <metadata> Produced by OmniGraffle 8.0\n2025-02-10 08:27:16 +0000</metadata>
-  <g id="continuum" stroke-opacity="1" stroke-dasharray="none" fill="none" fill-opacity="1" stroke="none">
+  <g
+        id="continuum"
+        stroke-opacity="1"
+        stroke-dasharray="none"
+        fill="none"
+        fill-opacity="1"
+        stroke="none"
+    >
     <title>continuum</title>
-    <rect fill="white" x="1" y="-15" width="604" height="291"/>
+    <rect fill="white" x="1" y="-15" width="604" height="291" />
     <g id="continuum_Layer_1">
       <title>Layer 1</title>
       <g id="Graphic_889">
         <text transform="translate(182.91519 -15)" fill="black">
-          <tspan font-family="Noto Sans Display" font-size="11" font-weight="400" fill="black" x="0" y="12">mehr</tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="11"
+                        font-weight="400"
+                        fill="black"
+                        x="0"
+                        y="12"
+                    >mehr</tspan>
         </text>
       </g>
       <g id="Graphic_891">
-        <path d="M 231.04102 6 L 359.75586 6 C 361.965 6 363.75586 7.790861 363.75586 10 L 363.75586 39 C 363.75586 41.20914 361.965 43 359.75586 43 L 231.04102 43 C 228.83188 43 227.04102 41.20914 227.04102 39 L 227.04102 10 C 227.04102 7.790861 228.83188 6 231.04102 6 Z" fill="#a5a5a5"/>
+        <path
+                    d="M 231.04102 6 L 359.75586 6 C 361.965 6 363.75586 7.790861 363.75586 10 L 363.75586 39 C 363.75586 41.20914 361.965 43 359.75586 43 L 231.04102 43 C 228.83188 43 227.04102 41.20914 227.04102 39 L 227.04102 10 C 227.04102 7.790861 228.83188 6 231.04102 6 Z"
+                    fill="#a5a5a5"
+                />
         <text transform="translate(247.04102 16)" fill="white">
-          <tspan font-family="Noto Sans Display" font-size="12" font-weight="400" fill="white" x="1.6954219" y="13">Cloud Computing</tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="12"
+                        font-weight="400"
+                        fill="white"
+                        x="1.6954219"
+                        y="13"
+                    >Cloud Computing</tspan>
         </text>
       </g>
       <g id="Graphic_897">
-        <path d="M 231.04102 114.75 L 359.75586 114.75 C 361.965 114.75 363.75586 116.54086 363.75586 118.75 L 363.75586 147.75 C 363.75586 149.95914 361.965 151.75 359.75586 151.75 L 231.04102 151.75 C 228.83188 151.75 227.04102 149.95914 227.04102 147.75 L 227.04102 118.75 C 227.04102 116.54086 228.83188 114.75 231.04102 114.75 Z" fill="#a5a5a5"/>
+        <path
+                    d="M 231.04102 114.75 L 359.75586 114.75 C 361.965 114.75 363.75586 116.54086 363.75586 118.75 L 363.75586 147.75 C 363.75586 149.95914 361.965 151.75 359.75586 151.75 L 231.04102 151.75 C 228.83188 151.75 227.04102 149.95914 227.04102 147.75 L 227.04102 118.75 C 227.04102 116.54086 228.83188 114.75 231.04102 114.75 Z"
+                    fill="#a5a5a5"
+                />
         <text transform="translate(247.04102 124.75)" fill="white">
-          <tspan font-family="Noto Sans Display" font-size="12" font-weight="400" fill="white" x="3.843422" y="13">Edge Computing</tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="12"
+                        font-weight="400"
+                        fill="white"
+                        x="3.843422"
+                        y="13"
+                    >Edge Computing</tspan>
         </text>
       </g>
       <g id="Graphic_898">
-        <path d="M 231.04102 208 L 359.75586 208 C 361.965 208 363.75586 209.79086 363.75586 212 L 363.75586 258 C 363.75586 260.20914 361.965 262 359.75586 262 L 231.04102 262 C 228.83188 262 227.04102 260.20914 227.04102 258 L 227.04102 212 C 227.04102 209.79086 228.83188 208 231.04102 208 Z" fill="#a5a5a5"/>
+        <path
+                    d="M 231.04102 208 L 359.75586 208 C 361.965 208 363.75586 209.79086 363.75586 212 L 363.75586 258 C 363.75586 260.20914 361.965 262 359.75586 262 L 231.04102 262 C 228.83188 262 227.04102 260.20914 227.04102 258 L 227.04102 212 C 227.04102 209.79086 228.83188 208 231.04102 208 Z"
+                    fill="#a5a5a5"
+                />
         <text transform="translate(247.04102 218)" fill="white">
-          <tspan font-family="Noto Sans Display" font-size="12" font-weight="400" fill="white" x="17.763422" y="13">Internet-of-</tspan>
-          <tspan font-family="Noto Sans Display" font-size="12" font-weight="400" fill="white" x="30.543422" y="30">Things</tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="12"
+                        font-weight="400"
+                        fill="white"
+                        x="17.763422"
+                        y="13"
+                    >Internet-of-</tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="12"
+                        font-weight="400"
+                        fill="white"
+                        x="30.543422"
+                        y="30"
+                    >Things</tspan>
         </text>
       </g>
       <g id="Line_899">
-        <line x1="195.55469" y1="261" x2="195.55469" y2="15.9" marker-end="url(#FilledArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <line
+                    x1="195.55469"
+                    y1="261"
+                    x2="195.55469"
+                    y2="15.9"
+                    marker-end="url(#FilledArrow_Marker)"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
       </g>
       <g id="Line_900">
-        <line x1="394.2422" y1="7" x2="394.2422" y2="252.1" marker-end="url(#FilledArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <line
+                    x1="394.2422"
+                    y1="7"
+                    x2="394.2422"
+                    y2="252.1"
+                    marker-end="url(#FilledArrow_Marker)"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                />
       </g>
       <g id="Graphic_901">
         <text transform="translate(381.6027 261)" fill="black">
-          <tspan font-family="Noto Sans Display" font-size="11" font-weight="400" fill="black" x="0" y="12">mehr</tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="11"
+                        font-weight="400"
+                        fill="black"
+                        x="0"
+                        y="12"
+                    >mehr</tspan>
         </text>
       </g>
       <g id="Graphic_902">
         <text transform="translate(374.9037 -15)" fill="black">
-          <tspan font-family="Noto Sans Display" font-size="11" font-weight="400" fill="black" x="0" y="12">weniger</tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="11"
+                        font-weight="400"
+                        fill="black"
+                        x="0"
+                        y="12"
+                    >weniger</tspan>
         </text>
       </g>
       <g id="Graphic_903">
         <text transform="translate(176.21619 261)" fill="black">
-          <tspan font-family="Noto Sans Display" font-size="11" font-weight="400" fill="black" x="0" y="12">weniger</tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="11"
+                        font-weight="400"
+                        fill="black"
+                        x="0"
+                        y="12"
+                    >weniger</tspan>
         </text>
       </g>
       <g id="Graphic_906">
         <text transform="translate(10.893187 79.9707)" fill="black">
-          <tspan font-family="Noto Sans Display" font-size="16" font-weight="400" fill="black" x="19895197e-19" y="17">Zuverlässige Verbindung </tspan>
-          <tspan font-family="Noto Sans Display" font-size="16" font-weight="400" fill="black" x="5.488" y="39">Langlebigkeit der Daten</tspan>
-          <tspan font-family="Noto Sans Display" font-size="16" font-weight="400" fill="black" x="49.92" y="61">Speicherkapazität</tspan>
-          <tspan font-family="Noto Sans Display" font-size="16" font-weight="400" fill="black" x="66.784" y="83">Rechenleistung</tspan>
-          <tspan font-family="Noto Sans Display" font-size="16" font-weight="400" fill="black" x="69.616" y="105">Zuverlässigkeit</tspan>
-          <tspan font-family="Noto Sans Display" font-size="16" font-weight="400" fill="black" x="129.328" y="127">Latenz</tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="16"
+                        font-weight="400"
+                        fill="black"
+                        x="19895197e-19"
+                        y="17"
+                    >Zuverlässige Verbindung </tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="16"
+                        font-weight="400"
+                        fill="black"
+                        x="5.488"
+                        y="39"
+                    >Langlebigkeit der Daten</tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="16"
+                        font-weight="400"
+                        fill="black"
+                        x="49.92"
+                        y="61"
+                    >Speicherkapazität</tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="16"
+                        font-weight="400"
+                        fill="black"
+                        x="66.784"
+                        y="83"
+                    >Rechenleistung</tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="16"
+                        font-weight="400"
+                        fill="black"
+                        x="69.616"
+                        y="105"
+                    >Zuverlässigkeit</tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="16"
+                        font-weight="400"
+                        fill="black"
+                        x="129.328"
+                        y="127"
+                    >Latenz</tspan>
         </text>
       </g>
       <g id="Graphic_909">
         <text transform="translate(403.6797 68.9707)" fill="black">
-          <tspan font-family="Noto Sans Display" font-size="16" font-weight="400" fill="black" x="0" y="17">Unterstützung von Mobilität</tspan>
-          <tspan font-family="Noto Sans Display" font-size="16" font-weight="400" fill="black" x="0" y="39">Geographische Verteilung</tspan>
-          <tspan font-family="Noto Sans Display" font-size="16" font-weight="400" fill="black" x="0" y="61">Standortbewusstsein</tspan>
-          <tspan font-family="Noto Sans Display" font-size="16" font-weight="400" fill="black" x="0" y="83">Antwortzeitverhalten</tspan>
-          <tspan font-family="Noto Sans Display" font-size="16" font-weight="400" fill="black" x="0" y="105">Kontextbewusstsein</tspan>
-          <tspan font-family="Noto Sans Display" font-size="16" font-weight="400" fill="black" x="0" y="127">Interaktivität</tspan>
-          <tspan font-family="Noto Sans Display" font-size="16" font-weight="400" fill="black" x="0" y="149">Geräte</tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="16"
+                        font-weight="400"
+                        fill="black"
+                        x="0"
+                        y="17"
+                    >Unterstützung von Mobilität</tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="16"
+                        font-weight="400"
+                        fill="black"
+                        x="0"
+                        y="39"
+                    >Geographische Verteilung</tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="16"
+                        font-weight="400"
+                        fill="black"
+                        x="0"
+                        y="61"
+                    >Standortbewusstsein</tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="16"
+                        font-weight="400"
+                        fill="black"
+                        x="0"
+                        y="83"
+                    >Antwortzeitverhalten</tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="16"
+                        font-weight="400"
+                        fill="black"
+                        x="0"
+                        y="105"
+                    >Kontextbewusstsein</tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="16"
+                        font-weight="400"
+                        fill="black"
+                        x="0"
+                        y="127"
+                    >Interaktivität</tspan>
+          <tspan
+                        font-family="Noto Sans Display"
+                        font-size="16"
+                        font-weight="400"
+                        fill="black"
+                        x="0"
+                        y="149"
+                    >Geräte</tspan>
         </text>
       </g>
     </g>
