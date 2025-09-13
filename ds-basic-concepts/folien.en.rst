@@ -294,7 +294,7 @@ Exercise
     (a) Provide all events with the correct timestamps.
     (b) Specify a consistent save point containing event r.
 
-    .. image:: images/lamport-exercise/task.svg
+    .. image:: drawings/lamport-exercise/task.svg
       :align: center
 
     .. solution::
@@ -302,7 +302,7 @@ Exercise
 
       (a)
 
-      .. image:: images/lamport-exercise/solution.svg
+      .. image:: drawings/lamport-exercise/solution.svg
           :align: center
           :class: box-shadow rounded-corners
 
@@ -407,7 +407,7 @@ In **distributed** (*database*)\ *systems*, only two of the following three prop
 
   .. grid:: 
 
-    .. image:: images/cap.svg
+    .. image:: drawings/cap.svg
       :align: center
 
   .. grid::  incremental 
