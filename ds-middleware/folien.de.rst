@@ -189,7 +189,7 @@ Middleware als Programmierabstraktion
 
     - Ein Baustein auf höherer Ebene als die vom Betriebssystem bereitgestellten APIs (z. B. Sockets)
 
-.. image:: images/middleware.svg
+.. image:: drawings/middleware.svg
     :align: center
 
 
@@ -283,7 +283,7 @@ Middleware - konzeptionelle (historisch)
 
     Darstellung nach: Alonso; Web services: Concepts, Architectures and Applications; Springer, 2004
 
-.. image:: images/historische-middleware-konzeptuell.svg
+.. image:: drawings/historische-middleware-konzeptuell.svg
   :align: center
 
 .. supplemental::
@@ -297,7 +297,7 @@ Middleware - konzeptionelle (historisch)
 Historische Entwicklung von Middleware
 ------------------------------------------
 
-.. image:: images/historic_middleware_technologies.svg
+.. image:: drawings/historic_middleware_technologies.svg
    :align: center
 
 
@@ -372,7 +372,7 @@ RPCs konzeptionell (synchrone Kommunikation)
 
   .. cell:: width-40
 
-    .. image:: images/rpc_konzeptionell.svg
+    .. image:: drawings/rpc_konzeptionell.svg
 
 
 
@@ -500,7 +500,7 @@ Asynchrones RPC
 
   .. cell::
 
-    .. image:: images/rpcs/synchronous_rpc.svg
+    .. image:: drawings/rpcs/synchronous_rpc.svg
 
 ----
 
@@ -512,7 +512,7 @@ Asynchrones RPC
 
   .. cell::
 
-    .. image:: images/rpcs/asynchronous_rpc.svg
+    .. image:: drawings/rpcs/asynchronous_rpc.svg
 
 .. supplemental::
 
@@ -575,7 +575,7 @@ Java RMI (Remote Method Invocation)
 Java RMI vs. RPC
 ------------------
 
-.. image:: images/rpc_vs_rmi.svg
+.. image:: drawings/rpc_vs_rmi.svg
    :align: center
 
 .. supplemental::
@@ -587,7 +587,7 @@ Java RMI vs. RPC
 Java RMI implementiert ein *Distributed Object Model*
 ------------------------------------------------------
 
-.. image:: images/java_rmi-distributed-object-model.svg
+.. image:: drawings/java_rmi-distributed-object-model.svg
    :align: center
 
 .. supplemental::
@@ -602,7 +602,7 @@ Java RMI implementiert ein *Distributed Object Model*
 Anatomie eine Java RMI Aufrufs
 ---------------------------------
 
-.. image:: images/rmi_anatomy/rmi_anatomy.svg
+.. image:: drawings/rmi_anatomy/rmi_anatomy.svg
     :align: center
 
 .. supplemental::
@@ -618,7 +618,7 @@ Anatomie eine Java RMI Aufrufs
 RMI Protocol Stack
 ----------------------
 
-.. image:: images/rmi_anatomy/rmi_protocol_stack.svg
+.. image:: drawings/rmi_anatomy/rmi_protocol_stack.svg
    :align: center
 
 .. supplemental::
@@ -737,7 +737,7 @@ Integration von Unternehmensanwendungen
 
 Die Probleme unternehmensübergreifende Punkt-zu-Punkt-Integration zu ermöglichen führten zur Entwicklung der nächsten Generation von Middleware-Technologien.
 
-.. image:: images/web_services-vs-message_brokers/message-brokers_and_adapters.svg
+.. image:: drawings/web_services-vs-message_brokers/message-brokers_and_adapters.svg
    :align: center
 
 .. container:: footer-left
@@ -766,7 +766,7 @@ Web Services
 Web Services - konzeptionell
 -----------------------------
 
-.. image:: images/web_services-vs-message_brokers/webservices_vision.svg
+.. image:: drawings/web_services-vs-message_brokers/webservices_vision.svg
    :align: center
 
 
@@ -775,7 +775,7 @@ Web Services - wesentliche Bestandteile
 ----------------------------------------
 
 
-.. image:: images/web_services-vs-message_brokers/komponenten.svg
+.. image:: drawings/web_services-vs-message_brokers/komponenten.svg
    :align: center
 
 .. supplemental::
@@ -793,7 +793,7 @@ Web Services - wesentliche Bestandteile
 Web Services - Protokoll Stack
 --------------------------------
 
-.. image:: images/ws-protocol_stack.svg
+.. image:: drawings/ws-protocol_stack.svg
   :align: center
 
 
@@ -829,7 +829,7 @@ Aufbau einer SOAP-Nachricht
 
   .. cell:: width-40
 
-    .. image:: images/soap_message.svg
+    .. image:: drawings/soap_message.svg
 
   .. cell:: width-60
 
@@ -939,7 +939,7 @@ Web Services - Standardisierung
 Überblick
 ---------------------
 
-.. image:: images/genealogy-of-middleware.svg
+.. image:: drawings/genealogy-of-middleware.svg
    :align: center
 
 
@@ -978,16 +978,16 @@ ZeroMQ - Messaging Patterns
 .. scrollable::
 
 
-    .. image:: images/zeromq/client-server.svg
+    .. image:: drawings/zeromq/client-server.svg
       :align: center
 
 
-    .. image:: images/zeromq/pub-sub.svg
+    .. image:: drawings/zeromq/pub-sub.svg
       :align: center
       :class: margin-top-2em
 
 
-    .. image:: images/zeromq/pipeline.svg
+    .. image:: drawings/zeromq/pipeline.svg
       :align: center
       :class: margin-top-2em
 
@@ -1160,7 +1160,7 @@ MOM - Grundlegendes Interface
 MOM - Queue Managers
 ----------------------
 
-.. image:: images/message-queueing.svg
+.. image:: drawings/message-queueing.svg
     :align: center
 
 .. supplemental::
