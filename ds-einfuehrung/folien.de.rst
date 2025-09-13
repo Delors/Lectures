@@ -52,7 +52,7 @@ Ein weitgefasster Überblick über verteilte Systeme.
 Terminologie verteilter Systeme
 ----------------------------------
 
-.. image:: images/modern_software_architecture-tag_cloud.webp
+.. image:: drawings/modern_software_architecture-tag_cloud.webp
     :width: 100%
     :align: center
 
@@ -101,7 +101,7 @@ Verteilte Systeme - Beschreibung und Eigenschaften
 Verteilt vs. Dezentralisiert
 -------------------------------------------------------------------
 
-.. image:: images/distributed-vs-decentralized.svg
+.. image:: drawings/distributed-vs-decentralized.svg
     :align: center
     :width: 100%
 
@@ -520,7 +520,7 @@ Formale Analyse der Skalierbarkeit zentralisierter Systeme
 
 Ein zentralisierter Dienst kann als einfaches Warteschlangensystem modelliert werden:
 
-.. image:: images/queuing-system.svg
+.. image:: drawings/queuing-system.svg
     :align: center
 
 .. rubric:: Annahmen
@@ -552,7 +552,7 @@ Formale Analyse der Skalierbarkeit zentralisierter Systeme
 
     .. cell::
 
-        .. figure:: images/number_of_requests_in_system.svg
+        .. figure:: drawings/number_of_requests_in_system.svg
             :align: center
 
             # Anfragen in Bearbeitung und in Warteschlange
@@ -619,7 +619,7 @@ Formale Analyse der Skalierbarkeit zentralisierter Systeme
 
     Darstellung der durchschnittlichen Anzahl an Anfragen im System in Abhängigkeit von der Auslastung :math:`U`:
 
-    .. image:: images/average_number_of_requests_in_system.svg
+    .. image:: drawings/average_number_of_requests_in_system.svg
         :align: center
 
 
@@ -639,7 +639,7 @@ Formale Analyse der Skalierbarkeit zentralisierter Systeme
 
 - \
 
-  .. image:: images/response_time.svg
+  .. image:: drawings/response_time.svg
         :alt: Antwortszeit in Abhängigkeit der Auslastung
 
 .. class:: incremental-list
@@ -720,7 +720,7 @@ Ansätze, um Skalierung zu erreichen
 Verlagerung von Berechnungen auf Clients
 ------------------------------------------
 
-.. image:: images/moving-computations.svg
+.. image:: drawings/moving-computations.svg
     :align: center
 
 
@@ -761,12 +761,12 @@ Paralleles Rechnen (:eng:`Parallel Computing`)
 
 - Multiprozessor
 
-  .. image:: images/multiprocessor-vs-multicomputer/multiprocessor.svg
+  .. image:: drawings/multiprocessor-vs-multicomputer/multiprocessor.svg
             :align: center
 
 - Multicomputer
 
-  .. image:: images/multiprocessor-vs-multicomputer/multicomputer.svg
+  .. image:: drawings/multiprocessor-vs-multicomputer/multicomputer.svg
             :align: center
 
 
@@ -808,7 +808,7 @@ Amdahls Gesetz - Grenzen der Skalierbarkeit
 
     .. card::
 
-        .. image:: images/amdahl.svg
+        .. image:: drawings/amdahl.svg
             :alt: Amdahls Gesetz visualisiert
             :align: center
 
@@ -982,7 +982,7 @@ MapReduce - Visualisierung und Beispiel
 ----------------------------------------------------------
 
 
-.. image:: images/mapreduce.svg
+.. image:: drawings/mapreduce.svg
     :width: 100%
     :align: center
 
@@ -1036,7 +1036,7 @@ Cluster Computing
 
 Eine Gruppe von „High-End-Systemen“, die über ein LAN verbunden sind.
 
-.. image:: images/cluster-computing.svg
+.. image:: drawings/cluster-computing.svg
     :align: center
 
 .. supplemental::
@@ -1081,7 +1081,7 @@ Grundlegende Architektur für Grid-Computing
 
     .. cell::
 
-        .. image:: images/architecture-for-grid-computing.svg
+        .. image:: drawings/architecture-for-grid-computing.svg
             :loading: embed
 
 
@@ -1220,7 +1220,7 @@ Transaktionen auf Geschäftsprozessebene
 
     .. cell::
 
-        .. image:: images/transactions/transaction.svg
+        .. image:: drawings/transactions/transaction.svg
             :align: center
 
         .. container:: text-align-center margin-top-1em
@@ -1260,7 +1260,7 @@ Transaktionen auf Geschäftsprozessebene
 
     Die für eine Transaktion benötigten Daten, sind oft verteilt über mehrere Server.
 
-.. image:: images/transactions/tpm.svg
+.. image:: drawings/transactions/tpm.svg
     :align: center
     :class: incremental
 
@@ -1282,7 +1282,7 @@ Transaktionen auf Geschäftsprozessebene
 
 Middleware ermöglicht Kommunikation zwischen den Anwendungen.
 
-.. image:: images/middleware.svg
+.. image:: drawings/middleware.svg
     :align: center
 
 .. supplemental::
@@ -1373,14 +1373,14 @@ Moderne verteilte Systeme
 *Mobile Cloud Computing*
 --------------------------------------------
 
-.. image:: images/mobile_computing/mobile_cloud_computing.svg
+.. image:: drawings/mobile_computing/mobile_cloud_computing.svg
     :align: center
 
 
 *Mobile Edge Computing*
 --------------------------------------------
 
-.. image:: images/mobile_computing/mobile_edge_computing.svg
+.. image:: drawings/mobile_computing/mobile_edge_computing.svg
     :align: center
 
 
@@ -1395,7 +1395,7 @@ Die Knoten, an denen Sensoren angebracht sind:
 - einfach (geringe Speicher- / Rechen- / Kommunikationskapazität)
 - oft batteriebetrieben (oder sogar batterielos)
 
-.. image:: images/sensor_networks/operator_stores_and_processes_data.svg
+.. image:: drawings/sensor_networks/operator_stores_and_processes_data.svg
     :align: center
 
 
@@ -1403,7 +1403,7 @@ Die Knoten, an denen Sensoren angebracht sind:
 *Sensor Networks* als verteilte Datenbanken
 --------------------------------------------
 
-.. image:: images/sensor_networks/nodes_store_and_process_data.svg
+.. image:: drawings/sensor_networks/nodes_store_and_process_data.svg
     :align: center
 
 
@@ -1411,7 +1411,7 @@ Die Knoten, an denen Sensoren angebracht sind:
 Das *Cloud-Edge Continuum*
 --------------------------------
 
-.. image:: images/cloud_edge_continuum.svg
+.. image:: drawings/cloud_edge_continuum.svg
     :align: center
 
 
