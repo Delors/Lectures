@@ -39,7 +39,7 @@ Eine allererste Einführung
 
 :Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
 :Kontakt: michael.eichberg@dhbw.de
-:Version: 1.1
+:Version: 1.1.1
 
 .. [#]
 
@@ -891,9 +891,17 @@ Ansätze der analytischen Softwarequalitätssicherung
 
         Für die folgenden Aufgabe sind keine Kenntnisse von HTML, JavaScript oder CSS notwendig. Wenn es Probleme gibt, dann beschreiben Sie das Problem der KI und lassen sich helfen!
 
-    .. exercise::
+    .. hint::
+        :class: incremental
 
-        Entwickeln Sie mittels Vibe-Coding eine einfache, aber vollständige Webanwendung, die nur Standard JavaScript, CSS und HTML verwendet. Es sollen keine Frameworks oder externe Bibliotheken für die Ausführung der Anwendung notwendig sein.
+        Es kann sehr hilfreich sein, den Code häufig in ein Repository einzuchecken, da sie bei Problemen somit immer auf einen vorherigen Stand zurückkehren können.
+
+
+    .. exercise:: Eine eigene Webanwendung bauen mittels Vibe-Coding
+
+        .. container:: incremental
+
+            Entwickeln Sie mittels Vibe-Coding eine einfache, aber vollständige Webanwendung, die nur Standard JavaScript, CSS und HTML verwendet. Es sollen keine Frameworks oder externe Bibliotheken für die Ausführung der Anwendung notwendig sein.
 
         .. supplemental::
 
@@ -921,8 +929,14 @@ Ansätze der analytischen Softwarequalitätssicherung
 
         3. Führen Sie Ihr Build-Skript aus und beheben Sie alle gefundenen Probleme.
         4. Finden Sie heraus, wie Sie Ihre Anwendung für den Einsatz optimieren könn(t)en und erweitern Sie das Build-Skript entsprechend.
+
+           Ein Ziel könnte die Minimierung des Ressourcenverbrauchs sein.
         5. Lassen Sie sich Testfälle generieren und führen Sie diese als Teil des Builds aus.
+
+           Beheben Sie ggf. gefundene Probleme.
         6. Hinterfragen Sie den generierten, lauffähigen Code. Lassen Sie sich ggf. von der KI beim Verständnis helfen und stellen Sie kritische Fragen.
+
+        7. [Bonus] Lassen Sie sich die Testabdeckung (Coverage) des JavaScript Codes ermitteln und versuchen Sie eine möglichst hohe Abdeckung zu erreichen.
 
         .. solution::
             :pwd: TicTacToe!

@@ -18,7 +18,7 @@ Einführung in die Zahlentheorie
 
 :Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
 :Kontakt: michael.eichberg@dhbw.de
-:Version: 1.1.4
+:Version: 1.1.5
 :Quelle: Im Wesentlichen *Cryptography and Network Security - Principles and Practice, 8th Edition, William Stallings*
 
 .. supplemental::
@@ -66,43 +66,44 @@ Teilbarkeit
 Eigenschaften der Teilbarkeit
 -------------------------------
 
-.. class:: incremental-list
+.. deck:: 
 
-- Wenn :math:`a|1`, dann gilt :math:`a = \pm 1`.
+    .. card::
 
-- Wenn :math:`a | b` und :math:`b|a`, dann gilt :math:`a = \pm b`.
+        .. class:: incremental-list
 
-- Jedes :math:`b \neq 0` teilt :math:`0`.
+        - Wenn :math:`a|1`, dann gilt :math:`a = \pm 1`.
 
-- Wenn :math:`a | b` und :math:`b|c`, dann :math:`a|c`.
+        - Wenn :math:`a | b` und :math:`b|a`, dann gilt :math:`a = \pm b`.
 
-  .. example::
-    :class: incremental
+        - Jedes :math:`b \neq 0` teilt :math:`0`.
 
-    Sei :math:`a = 11`, :math:`b = 66` und :math:`c = 198`, dann gilt:
+        - Wenn :math:`a | b` und :math:`b|c`, dann :math:`a|c`.
 
-    :math:`11|66` und :math:`66|198 \Rightarrow 11|198`
+        .. example::
+            :class: incremental
 
+            Sei :math:`a = 11`, :math:`b = 66` und :math:`c = 198`, dann gilt:
 
+            :math:`11|66` und :math:`66|198 \Rightarrow 11|198`
 
-Eigenschaften der Teilbarkeit
--------------------------------
+    .. card::
 
-Wenn :math:`b | g` und :math:`b|h`, dann :math:`b|(mg+nh)` für beliebige ganze Zahlen :math:`m` und :math:`n`.
+        Wenn :math:`b | g` und :math:`b|h`, dann :math:`b|(mg+nh)` für beliebige ganze Zahlen :math-i:`m` und :math-i:`n`.
 
-.. example::
-    :class: incremental:
+        .. example::
+            :class: incremental:
 
-    :math:`3 | 27` und :math:`3|33 \Rightarrow 3|(m \times 27 + n \times 33)`
+            :math-r:`3|27` und :math:`3|33 \Rightarrow 3|(m \times 27 + n \times 33)`
 
-.. proof::
-    :class: incremental
+        .. proof::
+            :class: incremental
 
-    Wenn :math:`b | g`, dann gilt für :math:`g`, dass :math:`g = b \times g_1` ist für eine beliebige ganze Zahl :math:`g_1`.
+            Wenn :math:`b | g`, dann gilt für :math-i:`g`, dass :math:`g = b \times g_1` ist für eine beliebige ganze Zahl :math:`g_1`.
 
-    Wenn :math:`b | h`, dann gilt für :math:`h`, dass :math:`h = b \times h_1` ist für eine beliebige ganze Zahl :math:`h_1`.
+            Wenn :math:`b | h`, dann gilt für :math-i:`h`, dass :math:`h = b \times h_1` ist für eine beliebige ganze Zahl :math:`h_1`.
 
-    Somit gilt: :math-i:`mg+nh = mb g_1 + n b h_1 = b \times (mg_1+nh_1)` und deshalb wird :math-i:`mg+nh` von :math-i:`b` geteilt.
+            Somit gilt: :math:`mg+nh = mb g_1 + n b h_1 = b \times (mg_1+nh_1)` und deshalb wird :math-i:`mg+nh` von :math-i:`b` geteilt.
 
 
 
@@ -674,44 +675,48 @@ Werfen wir zuerst einen Blick auf :math:`x \times a + y \times b` für einige :m
 .. hint::
     :class: incremental
 
-    Der GGT von :math:`42` und :math:`30`: :math:`6` erscheint in der Tabelle (:math:`x = -2` und :math:`y = 3`).
+    Der GGT von :math-r:`42` und :math-r:`30` ist :math-r:`6` und erscheint in der Tabelle (:math:`x = -2` und :math:`y = 3`).
 
 
 
-Erweiterter Euklidischer Algorithmus :raw-html:`<br>` Systematische Berechnung für ggt(710,310)
-------------------------------------------------------------------------------------------------------------------
+Erweiterter Euklidischer Algorithmus - Systematische Berechnung für :math:`ggt(710,310)`
+-------------------------------------------------------------------------------------------
 
-.. grid::
+.. deck::
 
-    .. cell:: width-50
+    .. card::
 
-        Klassischer Algorithmus:
+        .. grid::
 
-        .. image:: drawings/euclidean_algorithm/example.svg
+            .. cell:: width-50
 
-    .. cell:: width-50 incremental
+                Klassischer Algorithmus:
 
-        Umgestellt:
+                .. image:: drawings/euclidean_algorithm/example.svg
 
-        .. image:: drawings/euclidean_algorithm/example-umgestellt.svg
+            .. cell:: width-50 incremental
 
+                Umgestellt:
 
-.. supplemental::
-
-    Aufgrund der Umstellung z. B. von :math:`710 = 2 \times 310 + 90` nach :math:`90 = 710 - 2 \times 310` können wir dann im nächsten Schritt/der nächsten Formel die :math:`90` durch :math:`710 - 2 \times 310` ersetzen und werden dann :math:`310 - 3 \times(710 - 2 \times 310) = 40` erhalten.
-
-    D. h. betrachten wir :math:`710` als :math:`a` und :math:`310` als :math:`b`, erhalten wir durch die Umstellung eine Formel, die nur aus :math:`a`\ s und :math:`b`\ s zuzüglich zweiter Koeffizienten und dem Rest r besteht.
+                .. image:: drawings/euclidean_algorithm/example-umgestellt.svg
 
 
+        .. supplemental::
 
-Erweiterter Euklidischer Algorithmus - systematische Berechnung
--------------------------------------------------------------------
+            Aufgrund der Umstellung z. B. von :math:`710 = 2 \times 310 + 90` nach :math:`90 = 710 - 2 \times 310` können wir dann im nächsten Schritt/der nächsten Formel die :math:`90` durch :math:`710 - 2 \times 310` ersetzen und werden dann :math:`310 - 3 \times(710 - 2 \times 310) = 40` erhalten.
 
-.. image:: drawings/euclidean_algorithm/example-ausgerechnet.svg
-    :align: center
+            D. h. betrachten wir :math:`710` als :math:`a` und :math:`310` als :math:`b`, erhalten wir durch die Umstellung eine Formel, die nur aus :math:`a`\ s und :math:`b`\ s zuzüglich zweiter Koeffizienten und dem Rest r besteht.
 
 
-:math:`x = 7` und :math:`y = -16`
+    .. card::
+
+        .. image:: drawings/euclidean_algorithm/example-ausgerechnet.svg
+            :align: center
+
+
+        .. container:: incremental
+            
+            :math:`\Rightarrow x = 7` und :math:`y = -16`
 
 
 
@@ -797,7 +802,7 @@ Primzahlen
 
 .. class:: incremental-list
 
-   - Primzahlen haben als Teiler nur 1 und sich selbst.
+   - Primzahlen haben als Teiler nur :math-r:`1` und sich selbst.
    - Sie können nicht als Produkt von anderen Zahlen geschrieben werden.
    - Jede ganze Zahl :math:`a > 1` kann auf eindeutige Weise faktorisiert werden als: :math:`a=p_1^{a_1} \times p_2^{a_2} \times \ldots \times p_t^{a_t}` wobei :math:`p_1 < p_2 < \ldots < p_t` Primzahlen sind und wobei jedes :math:`a_i` eine positive ganze Zahl ist.
 
@@ -982,7 +987,7 @@ Miller-Rabin-Primzahltest
 
 
 
-Miller-Rabin Algorithmus
+Miller-Rabin-Algorithmus
 -------------------------
 
 .. code:: python
