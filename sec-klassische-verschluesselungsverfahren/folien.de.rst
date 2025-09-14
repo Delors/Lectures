@@ -17,7 +17,7 @@ Klassische Verschlüsselungsmethoden
 
 :Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
 :Kontakt: michael.eichberg@dhbw.de, Raum 149B
-:Version: 1.1.1
+:Version: 1.1.2
 :Quelle: Im Wesentlichen: *Cryptography and Network Security - Principles and Practice, 8th Edition, William Stallings*
 
 .. supplemental::
@@ -29,6 +29,12 @@ Klassische Verschlüsselungsmethoden
   :Fehler melden:
       https://github.com/Delors/delors.github.io/issues
 
+
+
+.. class:: new-section
+
+Einführung
+--------------------------------
 
 
 Definitionen
@@ -171,7 +177,6 @@ Kryptoanalyse und Brute-Force-Angriff
 
 
 
-
 Klassifizierung von Angriffen
 -------------------------------
 
@@ -247,7 +252,7 @@ Substitutionsverfahren
 
 
 
-.. class:: new-subsection transition-fade
+.. class:: new-section transition-fade
 
 Substitutions-Chiffren
 -------------------------
@@ -689,7 +694,7 @@ Schwierigkeiten von One-Time-Pads
 
 
 
-.. class:: new-subsection transition-fade
+.. class:: new-section transition-fade
 
 Transpositions-Chiffren
 -------------------------
@@ -811,7 +816,7 @@ Zeilenverschiebungs-Chiffre
 
 
 
-.. class:: new-subsection transition-fade
+.. class:: new-section transition-fade
 
 Steganografie
 -------------------------
@@ -928,6 +933,7 @@ Steganographie vs. Verschlüsselung
         2. Einen Klartextangriffe (:eng:`plaintext attack`).
 
 
+
 .. class:: exercises
 
 Übung
@@ -1037,7 +1043,6 @@ Steganographie vs. Verschlüsselung
                 s f u n
 
             Jetzt die 2. Spalte entsprechend einsetzten und prüfen wann ein gültiger Text herauskommt.
-
 
             ``P = crypto is just fun`` (Leerzeichen zur besseren Lesbarkeit hinzugefügt.)
 
