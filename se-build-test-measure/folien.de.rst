@@ -39,7 +39,7 @@ Eine allererste Einführung
 
 :Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
 :Kontakt: michael.eichberg@dhbw.de
-:Version: 1.1.1
+:Version: 1.1.2
 
 .. [#]
 
@@ -728,10 +728,12 @@ The Last Word
             :pwd: Uf!
 
             Ihr Testplan sollte alle Standardtestfälle abdecken. Zum Beispiel:
+
             - einfache und komplexe Ausdrücke mit allen möglichen Operatoren
             - Ausdrücke mit unterschiedlichen Operanden (negative Zahlen, Dezimalzahlen, sehr große Zahlen)
             - Ausdrücke mit Sonderfällen (z. B. Division durch Null)
             - Ausdrücke mit :java:`NaN` als Wert.
+            - Sie sollten die Reihenfolge der Verarbeitung der Operatoren testen (insbesondere für nicht kommutative Operatoren wie Subtraktion und Division).
 
             Ihr Testplan sollte weiterhin alle möglichen Fehlerfälle abdecken. Zum Beispiel:
 
