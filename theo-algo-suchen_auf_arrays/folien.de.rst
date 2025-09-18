@@ -1106,6 +1106,7 @@ Knuth-Morris-Pratt Verfahren - Grundlagen
     Teil einen Rand hat, beim Abgleich des Musters an einer späteren Stelle - basierend auf der Größe des Randes - weitermachen können. Wir müssen also nicht immer das ganze Muster von vorne anfangen zu vergleichen.
 
 
+
 .. class:: exercises transition-fade
 
 Übung
@@ -1272,6 +1273,7 @@ Gesucht wird ``ananas`` in ``saansanananas``
 .. remark::
 
     Dargestellt sind die Fälle, in denen ein Mismatch auftritt. ``i`` ist der Index des aktuellen Zeichen im Text, das mit dem Muster verglichen wird.
+
 
 
 .. class:: exercises transition-fade
