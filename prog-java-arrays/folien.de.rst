@@ -1,5 +1,5 @@
 .. meta::
-    :version: genesis
+    :version: renaissance
     :lang: de
     :author: Michael Eichberg
     :keywords: "Programmierung", "Java", "Arrays", "Software Development"
@@ -58,16 +58,16 @@ Deklaration von Feldern (:eng:`Arrays`)
 
 Eindimensionale Felder sind Datentypen, die es ermöglichen eine Liste mit einer fixen Anzahl von Werten gleichen Datentyps zu verwalten
 
-.. stack::
+.. deck::
 
-    .. layer::
+    .. card::
 
         .. container:: incremental
 
             - Die Tage der verschiedenen Monate können als ein Feld mit der Größe 12 abgelegt werden
 
-            .. admonition:: Hinweis
-                :class: note smaller
+            .. hint::
+                :class: float-right width-40 
 
                 Beim Programmieren beginnt der Index eines Feldes immer bei 0.
 
@@ -85,12 +85,12 @@ Eindimensionale Felder sind Datentypen, die es ermöglichen eine Liste mit einer
 
             :Syntax:   :java:`<Typ>[] <Bezeichner> oder <Typ> <Bezeichner>[]`
 
-    .. layer:: incremental
+    .. card::
 
         Deklaration eines Feldes    
 
         .. code:: java
-            :class: smaller copy-to-clipboard
+            :class:  copy-to-clipboard
 
             int[] daysPerMonth;
             
@@ -99,30 +99,30 @@ Eindimensionale Felder sind Datentypen, die es ermöglichen eine Liste mit einer
             Alternativ möglich, aber unüblich geworden: 
                 
             .. code:: java
-                :class: smaller copy-to-clipboard
+                :class:  copy-to-clipboard
 
                 int daysPerMonth[];
         
-    .. layer:: incremental
+    .. card::
 
         Initialisierung eines leeren Arrays:
 
         .. code:: java
-            :class: smaller copy-to-clipboard
+            :class:  copy-to-clipboard
 
             daysPerMonth = new int[12];
             // daysPerMonth ==> int[12] { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 }
             
         :Syntax: <Bezeichner> = new <Typ>[<Größe>]
 
-    .. layer:: incremental
+    .. card::
 
         .. container::    
 
             Initialisierung eines Arrays mit konkreten Werten:
 
             .. code:: java 
-                :class: smaller copy-to-clipboard
+                :class:  copy-to-clipboard
 
                 daysPerMonth = 
                     new int[]{31, 29, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
@@ -141,7 +141,7 @@ Eindimensionale Felder sind Datentypen, die es ermöglichen eine Liste mit einer
 
                 :Syntax: <Bezeichner> = {<Ausdruck> (, <Ausdruck>)* }
             
-    .. layer:: incremental
+    .. card::
 
         - Nach der Initialisierung lässt sich die Größe eines Feldes **nicht** mehr ändern.
 
@@ -150,7 +150,7 @@ Eindimensionale Felder sind Datentypen, die es ermöglichen eine Liste mit einer
             Die Länge eines Arrays kann mittels :java:`length` abgefragt werden:
 
             .. code:: java
-                :class: smaller copy-to-clipboard
+                :class: copy-to-clipboard
 
                 int numberOfMonths = daysPerMonth.length;
                 // numberOfMonths ==> 12
@@ -167,9 +167,9 @@ Zugriff auf die Elemente eines Feldes
 
 Auf einzelne Elemente eines Feldes kann mittels eines Indexes und dem Feldzugriff-Operator :java:`[]` lesend oder schreibend zugegriffen werden, z.B. mit :java:`a[1]`.
 
-.. stack::
+.. deck::
 
-    .. layer::
+    .. card::
 
         - Wertzuweisung eines Feldelementes: Verwendung des Feldzugriffoperators auf der linken Seite einer Zuweisung, z.B. :java:`a[1] = 1`;
         - Auslesen eines Feldelementes: „jegliche andere Verwendung des Feldzugriffoperators“.
@@ -179,30 +179,29 @@ Auf einzelne Elemente eines Feldes kann mittels eines Indexes und dem Feldzugrif
         - Verwendung eines ungültigen Indexes führt zu einer Ausnahme/einem Laufzeitfehler (:java:`ArrayIndexOutOfBoundsException`).
         
           .. code:: java
-            :class: far-smaller copy-to-clipboard
+            :class:  copy-to-clipboard
 
             daysPerMonth[13]
             ==> Exception java.lang.ArrayIndexOutOfBoundsException: 
                 Index 13 out of bounds for length 12
 
-    .. layer:: incremental
+    .. card::
 
         Beispiel: Lesender Zugriff auf ein Element eines Feldes
 
         .. code:: java
-            :class: smaller copy-to-clipboard
+            :class:  copy-to-clipboard
 
             int daysInFebruary = daysPerMonth[1]; // Index "1" => 2. Element 
             // daysInFebruary ==> 29
 
         :Syntax: <Bezeichner>[<Index>]
 
-    .. layer:: incremental
+    .. card::
 
         Beispiel: Schreibende und lesende Zugriffe
 
         .. code:: java
-            :class: smaller
 
             int daysPerMonth[] = new int[12]; // Deklaration
 		
@@ -214,12 +213,12 @@ Auf einzelne Elemente eines Feldes kann mittels eines Indexes und dem Feldzugrif
             
             System.out.println("daysPerMonth[1] = " + daysPerMonth[1]);
 
-    .. layer:: incremental
+    .. card::
 
         Häufig greift man auf Arrays mittels einer Schleife zu:
 
         .. code:: java
-            :class: smaller
+            
 
             for (int i = 0; i < daysPerMonth.length; i++) {
                 println("daysPerMonth[" + i + "] = " + daysPerMonth[i]);
@@ -230,7 +229,7 @@ Auf einzelne Elemente eines Feldes kann mittels eines Indexes und dem Feldzugrif
             Bzw. mit einer :java:`for-each`-Schleife, wenn der Index nicht benötigt wird:
 
             .. code:: java
-                :class: smaller
+                
 
                 for (int days : daysPerMonth) {
                     println("days = " + days);
@@ -245,7 +244,7 @@ Auf einzelne Elemente eines Feldes kann mittels eines Indexes und dem Feldzugrif
 
 
 
-.. class:: integrated-exercise
+.. class:: exercises
 
 Übung
 ------- 
@@ -264,7 +263,7 @@ Auf einzelne Elemente eines Feldes kann mittels eines Indexes und dem Feldzugrif
         .. include:: code/Wochentag.java
             :code: java
             :number-lines:
-            :class: far-smaller copy-to-clipboard
+            :class:  copy-to-clipboard
 
 
 
@@ -283,7 +282,7 @@ Eine Variable mit einem Feld-Datentyp speichert eine (virtuelle) Speicheradresse
 .. container:: incremental
 
     .. code:: java
-        :class: smaller copy-to-clipboard
+        :class:  copy-to-clipboard
 
         int[] a = {1, 2, 3};
         int[] b = a; // "b" referenziert das gleiche Feld wie "a".
@@ -300,13 +299,12 @@ Visualisierung von Referenzen auf Felder
 ------------------------------------------------
 
 .. code:: java
-        :class: smaller copy-to-clipboard
+        :class:  copy-to-clipboard
 
         int[] a = { 1, 2, 3, 4, 5, 6, 7 };
         int[] b = a;
 
 .. image:: images/Arrays.svg
-    :width: 100%
     :alt: Visualisierung von Referenzen auf Felder
 
 .. hint::
@@ -328,7 +326,7 @@ Referenzdatentypen und :java:`final`
 .. include:: code/IllegalAccess.java
     :code: java
     :number-lines:
-    :class: far-smaller copy-to-clipboard
+    :class:  copy-to-clipboard
 
 
 
@@ -342,7 +340,7 @@ Der Vergleich der Inhalte muss über den Vergleich der einzelnen Feldelemente er
 .. container:: incremental
 
     .. code:: java
-        :class: smaller copy-to-clipboard
+        :class:  copy-to-clipboard
 
         int[] a = {1, 2, 3};
         int[] b = {1, 2, 3};
@@ -366,7 +364,7 @@ Eine Kopie der Inhalte muss über das Erzeugen eines neuen Feldes und Kopie der 
 Beispiel mit :java:`<Array>.clone()`:
 
 .. code:: java
-    :class: far-smaller copy-to-clipboard
+    :class:  copy-to-clipboard
 
     jshell> final var clone = daysPerMonth.clone();
     // clone ==> int[12] { 31, 29, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31 }
@@ -390,20 +388,18 @@ Felder als Methodenparameter bzw. Rückgabewert
 
 Die Parameter und der Rückgabewert einer Methode können vom Typ eines Feldes sein. 
 
+.. deck:: incremental
 
-.. stack:: incremental
-
-    .. layer:: 
+    .. card:: 
 
         - Bei der Übergabe eines Feldes an eine Methode bzw. der Rückgabe eines Feldes wird eine Kopie der Referenz auf das Feld erzeugt. Es wird keine Kopie der Arrays als solches erzeugt. 
         - Änderungen an den Feldelementen innerhalb der Methode wirken sich auf das ursprüngliche Feld aus.
         - Der Rückgabewert kann direkt zur Initialisierung eines Feldes verwendet werden.
 
-
-    .. layer:: incremental
+    .. card::
 
         .. code:: java
-            :class: incremental far-smaller copy-to-clipboard
+            :class: copy-to-clipboard
 
             void incrementAll(int[] a) {
                 for (int i = 0; i < a.length; i++) { a[i]++; }
@@ -421,7 +417,7 @@ Die Parameter und der Rückgabewert einer Methode können vom Typ eines Feldes s
 
 
 
-.. class:: integrated-exercise
+.. class:: exercises
 
 Übung
 -------
@@ -439,12 +435,11 @@ Die Parameter und der Rückgabewert einer Methode können vom Typ eines Feldes s
 
         boolean startsWith(int[] a, int[] b);
 
-
     .. solution::
         :pwd: ArraysVergleichenAberSicher
 
         .. code:: java
-            :class: smaller copy-to-clipboard
+            :class:  copy-to-clipboard
 
             boolean startsWith(int[] a, int[] b) {
                 if (a == null) return true;
@@ -458,7 +453,8 @@ Die Parameter und der Rückgabewert einer Methode können vom Typ eines Feldes s
             }
 
 
-.. class:: integrated-exercise
+
+.. class:: exercises
 
 Übung
 -------
@@ -466,8 +462,8 @@ Die Parameter und der Rückgabewert einer Methode können vom Typ eines Feldes s
 .. exercise:: Skalarprodukt
 
     .. note:: 
-        :class: smaller
-
+        :class: width-40
+        
         Das Skalarprodukt ist die Summe der Produkte der Elemente an der gleichen Position in den beiden Arrays: ``a[0] * b[0] + a[1] * b[1] + ...``.
 
     Schreiben Sie eine Methode, die zwei gleich lange Arrays von :java:`int` Werten entgegennimmt und das Skalarprodukt der beiden Arrays berechnet. 
@@ -491,7 +487,7 @@ Die Parameter und der Rückgabewert einer Methode können vom Typ eines Feldes s
 
 
 
-.. class:: integrated-exercise
+.. class:: exercises
 
 Übung
 -------
@@ -504,16 +500,16 @@ Die Parameter und der Rückgabewert einer Methode können vom Typ eines Feldes s
     
     Nehmen Sie Ihr Programm zur Berechnung des BMIs und verwenden Sie Kommandozeilenargumente  als Parameter für Ihre :java:`bmi` Funktion. 
 
-    .. stack:: smaller
+    .. deck:: smaller
 
-        .. layer:: 
+        .. card:: 
 
             - Prüfen Sie ob die Anzahl der Parameter korrekt ist und geben Sie eine Fehlermeldung aus, wenn dies nicht der Fall ist. 
             - Faktorisieren Sie (ggf.) die Funktionalität zur Berechnung des BMI in zwei Methoden:
             
               Eine Methode, die Strings entgegennimmt und eine die :java:`double` Werte entgegennimmt. 
 
-        .. layer:: incremental
+        .. card::
 
             Beispielinteraktion:
     
@@ -522,7 +518,6 @@ Die Parameter und der Rückgabewert einer Methode können vom Typ eines Feldes s
                 Bisher: 
 
                 .. code:: zsh
-                    :class: far-smaller 
 
                     $ java --enable-preview BMIBerechnen.java                   
                     Bitte geben Sie Ihr Gewicht in Kilogramm und Ihre Größe in Mete an.
@@ -530,7 +525,6 @@ Die Parameter und der Rückgabewert einer Methode können vom Typ eines Feldes s
             Neu:
 
             .. code:: zsh
-                :class: far-smaller
 
                 $ java --enable-preview BMI.java 83.1 1.89
                 Ihr BMI beträgt: 23.26362643822961 - Normalgewicht
@@ -542,7 +536,7 @@ Die Parameter und der Rückgabewert einer Methode können vom Typ eines Feldes s
         .. include:: code/BMI.java
             :code: java
             :number-lines:
-            :class: smaller copy-to-clipboard663
+            :class:  copy-to-clipboard663
 
 .. supplemental::
 
@@ -560,31 +554,33 @@ Mehrdimensionale Felder
 Multidimensional Arrays
 ----------------------------------------------------------
 
-.. stack::
+.. deck::
 
-    .. layer::
+    .. card::
 
         Mehrdimensionale Felder sind Datentypen, die es ermöglichen ein Feld von Feldern (gleichen Datentyps) zu verwalten.
 
         Beispiel: Matrix für Umsätze pro Jahr (1. Dim.) und Monat (2. Dim.) bei 10 Jahren.
 
         .. code:: java
-            :class: far-far-smaller
+            :class: font-size-80 copy-to-clipboard 
 
             int[][] sales = new int[10][12]; 
 
         .. csv-table::
-            :header: Jahr, , Jan, Feb, Mär, Apr, Mai, Jun, Jul, Aug, Sep, Okt, Nov, Dez,
-            :class: far-far-smaller
+            :header: Jahr, , Jan, Feb, Mär, Apr, Mai, Jun, Jul, Aug, Sep, Okt, Nov, Dez, 
+            :stub-columns: 1
+            :class: font-size-75
             :width: 100%
             
-            :java:`sales[0]` =, [,  1000€, 2000€, 3000€, 4000€, 3000€, 2500€, 700€, 8000€, 2000€, 1000€, 1100€, 1250€, ] 
-            :java:`sales[1]` = , [,   1200€, 3200€, 3200€, 4500€, 2000€, 3000€, 900€, 8000€, 2900€, 1060€, 100€, 1300€ , ]
-            ...
-            :java:`sales[9]` = , [,  1000€, 2000€, 3000€, 350€, 300€, 500€, 600€, 600€, 900€, 1900€, 1000€, 2000€ , ]
+            :java:`sales[0]` =, [, 1000€, 2000€, 3000€, 4000€, 3000€, 2500€, 700€, 8000€, 2000€, 1000€, 1100€, 1250€, ]
+            :java:`sales[1]` = , [, 1200€, 3200€, 3200€, 4500€, 2000€, 3000€, 900€, 8000€, 2900€, 1060€, 100€, 1300€ , ]
+            ..., 
+            :java:`sales[9]` = , [, 1000€, 2000€, 3000€, 350€, 300€, 500€, 600€, 600€, 900€, 1900€, 1000€, 2000€ , ]
 
         .. csv-table::
-            :class: far-far-smaller fake-header-column
+            :class: font-size-75
+            :stub-columns: 1
             :header: Jahr, Jan, ..., Dez
             :width: 100%
 
@@ -593,7 +589,7 @@ Multidimensional Arrays
             :java:`sales[9] =`, :java:`sales[9][0]`, ...  , :java:`sales[9][9]`
 
 
-    .. layer:: incremental
+    .. card::
 
         Mehrdimensionale Felder werden durch den Datentyp gefolgt von mehreren Paaren von eckigen Klammern deklariert (ein Paar pro Dimension)
         
@@ -605,12 +601,11 @@ Multidimensional Arrays
                 :java:`<Typ> <Bezeichner> ([])+` :peripheral:`(unüblich)`
         
 
-    .. layer:: incremental
+    .. card::
 
         - direkte Initialisierung eines mehrdimensionalen Feldes:
 
           .. code:: java
-            :class: far-smaller
 
             int [][] a = {{1,2,3},{4,5,6,7}};
             // a ==> a ==> int[2][] { int[3] { 1, 2, 3 }, int[3] { 4, 5, 6, 7 } }
@@ -620,21 +615,21 @@ Multidimensional Arrays
           (Die Größe der einzelnen Dimensionen muss angegeben werden, kann unterschiedlich sein und kann auch Schritt-für-Schritt erfolgen.)
 
           .. code:: java
-            :class: far-smaller
+            
 
             int [][] a = new int[2][];
             a[0] = new int[3];
             a[1] = new int[5];
             // a ==> int[2][] { int[3] { 0, 0, 0 }, int[5] { 0, 0, 0, 0, 0 } }
 
-    .. layer:: incremental
+    .. card::
 
         Auf die einzelnen Dimensionen eines mehrdimensionalen Feldes kann mittels einer Folge von Feldzugriff-Operatoren :java:`[]`  mit Indizes zugegriffen werden.
 
         Der erste Feldzugriff-Operator liefert das Element der 1. Dimension, der zweite Feldzugriff-Operator liefert das Element der 2. Dimension, usw.
 
         .. code:: java
-            :class: far-smaller
+            
 
             int [][][] a = {{{1,2,3},{4,5,6,7}},{{8,9,10},{11,12,13,14}}};
 
@@ -642,15 +637,14 @@ Multidimensional Arrays
 
         :java:`var y = a[1][1]]` ``// ==>`` :incremental:`int[4] { 11, 12, 13, 14 }`
 
-    .. layer:: incremental
+    .. card::
 
         .. image:: images/MultiDimensionalArrays.svg
-            :width: 100%
             :alt: Visualisierung von mehrdimensionalen Feldern
 
 
 
-.. class:: integrated-exercise transition-scale
+.. class:: exercises transition-scale
 
 Übung
 -------
@@ -671,7 +665,7 @@ Multidimensional Arrays
         .. include:: code/MatrixMultiplikation.java
             :code: java
             :number-lines:
-            :class: far-smaller copy-to-clipboard
+            :class:  copy-to-clipboard
 
 .. [#] Matrixmultiplikation: Die Verrechnung erfolgt Zeile mal Spalte.
 
@@ -681,7 +675,7 @@ Multidimensional Arrays
     Beispiel für die :java:`main` Methode:
 
     .. code:: java
-        :class: far-smaller copy-to-clipboard
+        :class:  copy-to-clipboard
 
         void main() {
 
@@ -702,7 +696,7 @@ Multidimensional Arrays
         }   
 
 
-.. class:: integrated-exercise transition-scale
+.. class:: exercises transition-scale
 
 Übung
 -------
@@ -726,7 +720,7 @@ Multidimensional Arrays
             .. container:: column
 
                 .. math:: 
-                    :class: smaller
+                    
 
                     \left( \begin{matrix}
                         1 & 0 & 0 \\
@@ -735,7 +729,7 @@ Multidimensional Arrays
                     \end{matrix} \right)
 
     .. hint:: 
-        :class: far-smaller incremental
+        :class:  incremental
 
         Verwenden Sie Ihre Methoden zum Einlesen und zur Ausgabe von Matrizen aus der vorherigen Übung weiter.
 
@@ -745,7 +739,7 @@ Multidimensional Arrays
         .. include:: code/Sattelpunkte.java
             :code: java
             :number-lines:
-            :class: far-smaller copy-to-clipboard
+            :class:  copy-to-clipboard
 
 .. supplemental::
 
@@ -755,7 +749,7 @@ Multidimensional Arrays
 
 
 
-.. class:: integrated-exercise transition-scale
+.. class:: exercises transition-scale
 
 Übung
 -------
@@ -779,7 +773,7 @@ Multidimensional Arrays
         .. include:: code/sort
             :code: java
             :number-lines:
-            :class: far-smaller copy-to-clipboard
+            :class:  copy-to-clipboard
 
 .. supplemental::
 
@@ -811,14 +805,14 @@ Varargs-Methoden
 Methoden mit einer variablen Anzahl von Parametern (:java:`varargs`)
 ----------------------------------------------------------------------
 
-.. stack:: 
+.. deck:: 
 
-    .. layer::
+    .. card::
 
         .. rubric:: Beispiel
 
         .. code:: java
-            :class: far-smaller copy-to-clipboard
+            :class:  copy-to-clipboard
 
             void printAll(String separator, String... strings) {
                 for (int i = 0; i < strings.length; i++) {
@@ -832,7 +826,7 @@ Methoden mit einer variablen Anzahl von Parametern (:java:`varargs`)
             printAll(" + ", "2", "2", "3")
             // ==> 2 + 2 + 3
 
-    .. layer:: incremental
+    .. card::
 
         - Pro Methode kann es nur einen *varargs* Parameter geben und dies muss der letzte Parameter sein.
   
@@ -845,7 +839,7 @@ Methoden mit einer variablen Anzahl von Parametern (:java:`varargs`)
           *Best Practice: das varargs-Array sollte die Methode nicht verlassen*.
           
   
-    .. layer:: incremental
+    .. card::
 
         - Die Methode verhält sich wie eine Methode mit einem Array als Parameter.
   
@@ -854,7 +848,7 @@ Methoden mit einer variablen Anzahl von Parametern (:java:`varargs`)
                 ⇒ :peripheral:`D. h. die Methoden können auch mit einem Array aufgerufen werden und sind bezüglich der Signatur nicht unterscheidbar. Demzufolge ist es auch nicht möglich zwei entsprechende Methoden zu definieren:`
 
                 .. code:: java
-                    :class: far-smaller copy-to-clipboard
+                    :class:  copy-to-clipboard
                 
                     double sum(double... values) { ... }
 
@@ -874,7 +868,7 @@ Methoden mit einer variablen Anzahl von Parametern (:java:`varargs`)
 
         
 
-.. class:: integrated-exercise transition-move-left
+.. class:: exercises transition-move-left
 
 Übung
 -------
@@ -888,7 +882,7 @@ Methoden mit einer variablen Anzahl von Parametern (:java:`varargs`)
     Beispielinteraktion:
 
     .. code:: java
-        :class: far-smaller copy-to-clipboard
+        :class:  copy-to-clipboard
 
         jshell> var r = join(new int[]{1,2}, new int[]{3,4})
         r ==> int[4] { 1, 2, 3, 4 }
@@ -906,7 +900,7 @@ Methoden mit einer variablen Anzahl von Parametern (:java:`varargs`)
 
         .. code:: java
             :number-lines:
-            :class: far-smaller copy-to-clipboard 
+            :class:  copy-to-clipboard 
 
             /**
              * Verbindet eine beliebige Anzahl von Arrays zu einem neuen Array.

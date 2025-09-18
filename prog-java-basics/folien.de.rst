@@ -1,5 +1,5 @@
 .. meta::
-    :version: genesis
+    :version: renaissance
     :lang: de
     :author: Michael Eichberg
     :keywords: "Programmierung", "Java", "Variablen", "Methoden"
@@ -106,10 +106,11 @@ Ausführung von Java Skripten
   
   .. include:: code/HelloWorldScript
         :code: java
-        :class: far-smaller copy-to-clipboard
+        :class: copy-to-clipboard
 
 
-.. class:: integrated-exercise
+
+.. class:: exercises
 
 Übung - mein erstes Programm
 --------------------------------
@@ -131,7 +132,6 @@ Ausführung von Java Skripten
 .. supplemental::
 
     .. hint:: 
-        :class: far-smaller
 
         Vorgehensweise:
 
@@ -143,7 +143,7 @@ Ausführung von Java Skripten
 
 
 
-.. class:: integrated-exercise
+.. class:: exercises
 
 Übung - *Java Scripting*
 --------------------------------
@@ -219,9 +219,9 @@ Kommentare
 
 - Kommentare dienen der Dokumentation des Codes und helfen anderen Entwicklern den Code zu verstehen. 
 
-.. stack:: incremental
+.. deck:: incremental
 
-    .. layer:: 
+    .. card:: 
 
       - In Java unterscheiden wir folgende Arten von Kommentaren:
 
@@ -233,7 +233,7 @@ Kommentare
           Kommentare, die mit ``/**`` beginnen und mit ``*/`` enden, sind so genannte JavaDoc Kommentare und dienen der Erzeugung von Dokumentation.
         - [ab Java 23] Mehrzeilige Kommentare, bei der jede Zeile mit ``///`` beginnt, werden als Markdown basierte JavaDoc Kommentare interpretiert. 
 
-    .. layer:: incremental far-smaller
+    .. card:: far-smaller
 
         Beispiel (ab Java 1.0 - spezifische Tags und HTML)
 
@@ -253,7 +253,7 @@ Kommentare
                 else return n * fak(n-1);
             }
 
-    .. layer:: incremental far-smaller
+    .. card:: far-smaller
 
         Beispiel (ab Java 23 - spezifische Tags und Markdown)
 
@@ -272,7 +272,7 @@ Kommentare
                 else return n * fak(n-1);
             }
 
-    .. layer:: incremental far-smaller
+    .. card:: far-smaller
 
         Erzeugte Dokumentation (mit Java 23)
 
@@ -294,9 +294,9 @@ Kommentare
 Java Shell
 ------------------------------------------------
 
-.. stack::
+.. deck::
 
-    .. layer::
+    .. card::
 
         - Die Java Shell (``jshell``) ist ein interaktives Werkzeug, das es ermöglicht Java-Code (insbesondere kurze Snippets) direkt auszuführen.
         - Starten Sie die Java Shell mit dem Befehl ``jshell --enable-preview`` in der Konsole.
@@ -304,10 +304,9 @@ Java Shell
         - Sie beenden die Java Shell mit dem Befehl ``/exit``.
         - Die Java Shell eignet sich insbesondere für das Ausprobieren von Code-Schnipseln und das Testen von Methoden.
 
-    .. layer:: incremental  
+    .. card::  
 
         .. code:: Java
-            :class: far-smaller
 
             # jshell --enable-preview
 
@@ -325,7 +324,7 @@ Java Shell
 
 
 
-.. class:: integrated-exercise
+.. class:: exercises
 
 Übung - Java als Taschenrechner
 --------------------------------
@@ -376,20 +375,20 @@ Primitive Datentypen
 Arten und Verwendung von Datentypen
 -----------------------------------
 
-.. stack:: 
+.. deck:: 
 
-    .. layer::
+    .. card::
 
         Um die erlaubten Werte von Parametern, Variablen und Rückgabewerten genauer spezifizieren zu können, werden Datentypen verwendet. Java stellt hierzu (unter anderem) primitive Datentypen zur Verfügung.
 
 
-    .. layer:: incremental
+    .. card::
 
         Ein primitiver Datentyp ist z. B. :java:`int` (d. h. :eng:`integer` bzw. :ger:`Ganzzahl`).
 
         Dieser Datentyp legt fest, dass ein Wert eine Ganzzahl mit dem Wertebereich: :math:`[-2147483648, 2147483647]` ist.
 
-    .. layer:: incremental
+    .. card::
 
         .. csv-table::
             :header: "Art", "Datentyp", "Beispiel"
@@ -419,18 +418,17 @@ Ganzzahlige Datentypen - Hintergrund
 - Ganzzahlige Werte werden im Speicher als Binärzahlen gespeichert; d. h. als Folge von Nullen und Einsen.
 - Um verschieden große Werte zu speichern, stellen Programmiersprachen ganzzahlige Werte mit einer unterschiedlichen Zahl von Bits dar.
 
-.. stack::
+.. deck::
 
-    .. layer::
+    .. card::
 
         Zahlen werden immer mit 8 Bit (1 Byte), 16 Bit (2 Byte), 32 (4 Byte) oder 64 Bit (8 Byte) gespeichert. 
 
         .. hint:: 
-          :class: far-smaller
           
           In Java werden Zahlen immer vorzeichenbehaftet gespeichert. D. h. ein Bit wird für das Vorzeichen verwendet; auch wenn es nicht immer benötigt wird.
 
-    .. layer:: incremental
+    .. card::
 
         Umrechnung Binär-Dezimal
 
@@ -447,7 +445,7 @@ Ganzzahlige Datentypen - Hintergrund
             ..., ...
             :java:`1111 1111`, -1
 
-    .. layer:: incremental
+    .. card::
 
         .. csv-table::
             :header: Datentyp, "Genauigkeit (in Bit)", Wertebereich, Anzahl Werte
@@ -467,9 +465,9 @@ Ganzzahlige Datentypen - Hintergrund
 Gleitkommatypen - Hintergrund (Konzeptionell)
 ----------------------------------------------
 
-.. stack::
+.. deck::
 
-    .. layer::
+    .. card::
 
         Gleitkommazahlen werden in `Java nach Norm IEEE 754 (Seit Java 15 Version 2019) <https://docs.oracle.com/javase/specs/jls/se23/html/jls-4.html#jls-4.2.3>`__ durch die Mantisse :math:`m` und den Exponent :math:`e` dargestellt: :math:`z = m \times 2^e`.
 
@@ -495,7 +493,7 @@ Gleitkommatypen - Hintergrund (Konzeptionell)
                 
             :math:`7 \times 2^{0} = { 7 \over 1 } = 7`
 
-    .. layer:: incremental
+    .. card::
 
         .. csv-table::
             :header: Datentyp, Genauigkeit, Mantisse, Exponent, Wertebereich
@@ -560,7 +558,6 @@ Zeichen - Hintergrund
     - In Java ist die Länge (:java:`<String>.length()`) einer Zeichenkette (:eng:`String`) die Anzahl der benötigten :java:`char`\ s und entspricht somit nicht notwendigerweise der Anzahl der (sichtbaren) Zeichen.
 
     .. code:: java
-        :class: far-far-smaller
         :number-lines:
 
         jshell> var smiley = Character.toChars(0x1F60E)
@@ -622,7 +619,6 @@ Konvertierung von Datentypen
     - Beispiel für die verlustbehaftete implizite Konvertierung 
 
       .. code:: java
-        :class: far-far-smaller
 
         jshell> long l = Long.MAX_VALUE - 1;
         l ==> 9223372036854775806
@@ -710,9 +706,9 @@ Variablen und Konstanten
 Variablen - Übersicht
 --------------------------------------------
 
-.. stack:: 
+.. deck:: 
 
-    .. layer::
+    .. card::
 
         - Variablen stellen einen logischen Bezeichner für einen Wert eines bestimmten Datentyps dar.
         - Variablen müssen erst deklariert werden. Danach können sie weiter initialisiert werden, wenn der Standardwert nicht ausreicht.
@@ -729,13 +725,12 @@ Variablen - Übersicht
 
         - der Wert einer Variablen kann jederzeit geändert werden
 
-    .. layer:: incremental
+    .. card::
 
         *Beispieldeklaration und -initialisierung*
 
         .. include:: code/Variables.java
             :code: java
-            :class: far-smaller
 
 
 
@@ -743,22 +738,22 @@ Konstanten - Übersicht
 --------------------------------------------
 
 
-.. stack:: 
+.. deck:: 
 
-    .. layer::
+    .. card::
 
       - Konstanten sind Variablen, die nach der Initialisierung nicht mehr verändert werden können
       - Konstanten werden in Java mit dem Schlüsselwort :java:`final` deklariert
       - Es wird überprüft, dass keine weitere Zuweisung erfolgt
       - Konvention: Konstanten werden in Großbuchstaben geschrieben
 
-    .. layer:: incremental
+    .. card::
 
       *Beispieldeklaration und -initialisierung*
 
       .. include:: code/Constants.java
           :code: java
-          :class: far-smaller
+
 
 
 Bezeichner (:eng:`Identifier`) - Übersicht
@@ -789,7 +784,7 @@ Bezeichner (:eng:`Identifier`) - Übersicht
 
 
 
-.. class:: integrated-exercise
+.. class:: exercises
 
 Übung - Bezeichner
 --------------------------------
@@ -843,13 +838,12 @@ Welche der folgenden Bezeichner sind (a) ungültig, (b) gültig aber sollten den
         
                 
 
-.. class:: integrated-exercise
+.. class:: exercises
 
 Übung - Variablen und Konstanten
 --------------------------------
 
 .. exercise:: Grundlegende Datentypen 
-  :class: far-smaller
 
   - Deklarieren und initialisieren Sie eine Variable x mit dem Ganzzahlwert 42. 
   
@@ -879,7 +873,6 @@ Welche der folgenden Bezeichner sind (a) ungültig, (b) gültig aber sollten den
         keinen Typ angeben, wird der Typ :java:`int` verwendet.
 
         .. code:: Java
-            :class: far-smaller
  
             jshell> int i = 42
             i ==> 42
@@ -927,7 +920,6 @@ Welche der folgenden Bezeichner sind (a) ungültig, (b) gültig aber sollten den
 .. supplemental::
 
     .. hint::
-        :class: far-far-smaller
 
         Für diese Aufgabe können Sie sowohl die Java Shell verwenden als auch Ihren Code in eine Datei schreiben. Denken Sie in diesem Fall daran, dass der Code in einer Methode :java:`main` stehen muss (:java:`void main(){ <IHR CODE> }`).
 
@@ -963,7 +955,7 @@ Ausdrücke und Operatoren - Beispiele
 
 .. include:: code/Expressions.java
     :code: java
-    :class: far-smaller
+
 
 
 Operatoren und Operanden in der Mathematik
@@ -1085,9 +1077,9 @@ Verwendung der JShell
 Zweistellige Arithmetische Operatoren 
 ----------------------------------------------------------
 
-.. stack::
+.. deck::
 
-    .. layer:: 
+    .. card:: 
 
         .. csv-table::
             :header: Operator, Anwendung, Bedeutung
@@ -1099,13 +1091,12 @@ Zweistellige Arithmetische Operatoren
             ``/``, x / y, Quotient von x und y (Divisions-Operator)
             ``%``, x % y, Rest der ganzzahligen Division von x und y (Modulo-Operator)
 
-    .. layer:: incremental
+    .. card::
 
         JShell-Beispiel: `ArithmetischeOperatoren.jshell.java <./code/ArithmetischeOperatoren.jshell.java>`__
 
         .. include:: code/ArithmetischeOperatoren.jshell.java
             :code: java
-            :class: far-smaller margin-bottom-1em
             :number-lines:
             :start-line: 2
             :end-before: // Einstellige Operatoren
@@ -1128,9 +1119,9 @@ Zweistellige Arithmetische Operatoren
 Einstellige Arithmetische Operatoren 
 ----------------------------------------------------------
 
-.. stack::
+.. deck::
 
-    .. layer::
+    .. card::
 
         .. csv-table::
             :header: Operator, Anwendung, Bedeutung
@@ -1143,13 +1134,12 @@ Einstellige Arithmetische Operatoren
             (Präfix) ``--``, --x, Prä-dekrement: Gleichbedeutend mit :math:`\{ x_{neu}=x_{alt}-1; x_{neu} \}`
             ``--`` (Postfix), x--, Post-dekrement: Gleichbedeutend mit :math:`\{ x_{neu}=x_{alt}-1; x_{alt} \}`
 
-    .. layer:: incremental
+    .. card::
 
         JShell-Beispiel: `ArithmetischeOperatoren.jshell.java <./code/ArithmetischeOperatoren.jshell.java>`__
 
         .. include:: code/ArithmetischeOperatoren.jshell.java
             :code: java
-            :class: far-smaller margin-bottom-1em
             :number-lines:
             :start-line: 12
 
@@ -1164,9 +1154,9 @@ Einstellige Arithmetische Operatoren
 Zweistellige Vergleichsoperatoren
 ----------------------------------------------------------
 
-.. stack::
+.. deck::
 
-    .. layer::
+    .. card::
 
         .. csv-table::
             :header: Operator, Anwendung, Bedeutung
@@ -1180,13 +1170,12 @@ Zweistellige Vergleichsoperatoren
             ``>``, x > y, "Überprüft, ob der Wert von x **größer** dem Wert von y ist"
             ``>=``, x >= y, "Überprüft, ob der Wert von x **größer oder gleich** dem Wert von y ist"
 
-    .. layer:: incremental
+    .. card::
 
         JShell-Beispiel: `Vergleichsoperatoren.jshell.java <./code/Vergleichsoperatoren.jshell.java>`__
 
         .. include:: code/Vergleichsoperatoren.jshell.java
             :code: java
-            :class: far-smaller margin-bottom-1em
             :number-lines:
             :start-line: 2
 
@@ -1208,9 +1197,9 @@ Zweistellige Vergleichsoperatoren
 Ein- und zweistellige logische Operatoren
 ----------------------------------------------------------
 
-.. stack:: 
+.. deck:: 
 
-    .. layer:: 
+    .. card:: 
 
         .. csv-table::
             :header: Operator, Anwendung, Bedeutung
@@ -1224,7 +1213,7 @@ Ein- und zweistellige logische Operatoren
             ``||``, x || y, Bedingtes logisches ODER (OR Short-circuit Evaluation)
             ``^``, x ^ y, Logisches ENTWEDER-ODER (XOR :eng:`exclusive OR`)
 
-    .. layer:: incremental
+    .. card::
 
         .. rubric:: Wahrheitstabelle
 
@@ -1239,13 +1228,12 @@ Ein- und zweistellige logische Operatoren
             false, true, true, false, true, true
             false, false, true, false, false, false
 
-    .. layer:: incremental
+    .. card::
 
         JShell-Beispiel: `LogischeOperatoren.jshell.java <./code/LogischeOperatoren.jshell.java>`__
 
         .. include:: code/LogischeOperatoren.jshell.java
             :code: java
-            :class: far-smaller margin-bottom-1em
             :number-lines:
             :start-line: 2
 
@@ -1270,7 +1258,7 @@ Ein- und zweistellige logische Operatoren
     Mit anderen Worten bei ``&&`` und ``||`` wird der Ausdruck nur so weit ausgewertet, wie nötig ist, um das Ergebnis des Ausdrucks als Ganzes zu bestimmen. 
 
 
-.. class:: integrated-exercise transition-scale
+.. class:: exercises transition-scale
 
 Übung
 --------------------------------
@@ -1286,7 +1274,6 @@ Ein- und zweistellige logische Operatoren
         Denken Sie daran, dass Ihr Code in die ``main`` Methode gehört:
 
         .. code:: java
-            :class: far-smaller
 
             void main() {
                 // Ihr Code
@@ -1299,7 +1286,6 @@ Ein- und zweistellige logische Operatoren
 
         .. include:: code/NamenEinlesenUndVergleichen.java
             :code: java
-            :class: far-smaller
             :number-lines:
 
 
@@ -1308,9 +1294,9 @@ Ein- und zweistellige logische Operatoren
 Bedingungsoperator
 ----------------------------------------------------------
 
-.. stack::
+.. deck::
 
-    .. layer::
+    .. card::
 
         Der Bedingungsoperator:
 
@@ -1321,7 +1307,7 @@ Bedingungsoperator
 
         liefert in Abhängigkeit eines Ausdrucks ``c`` (der einen Wahrheitswert liefert) das Ergebnis des ersten Ausdrucks oder des zweiten Ausdrucks  zurück.
 
-    .. layer:: incremental
+    .. card::
 
         :math:`c\; ?\; a_{(c\,wahr)}\; :\; a_{(c\,falsch)}` 
 
@@ -1329,12 +1315,12 @@ Bedingungsoperator
 
         Von den beiden Ausdrücken wird *nur ein Ausdruck ausgewertet*.
 
-    .. layer:: incremental
+    .. card::
 
         **Beispiele**
 
         .. code:: java
-            :class: far-smaller 
+             
 
             int n = 0;
             n == 0 ? 1 : 2 
@@ -1344,7 +1330,7 @@ Bedingungsoperator
             Verschachtelung ist möglich aber *nicht*   empfehlenswert:
 
             .. code:: java
-                :class: far-smaller 
+                 
 
                 int alter = Integer.parseInt(readln("Wie alt sind Sie?"));
                 alter < 18 ? 
@@ -1358,9 +1344,9 @@ Bitoperatoren
 ----------------------------------------------------------
 
 
-.. stack::
+.. deck::
 
-    .. layer::
+    .. card::
 
         Bitoperatoren (``>>``, ``<<``, ...) arbeiten auf der binären Darstellung der numerischen, primitiven Datentypen für Ganzzahlen.
 
@@ -1368,7 +1354,7 @@ Bitoperatoren
 
         Bestimmte mathematische Operationen (z. B. Division durch :math:`2^x`) können durch Bitoperationen ersetzt werden, die effizienter sind (z. B. :java:`16 / 4 == 16 >> 2`).
 
-    .. layer:: incremental
+    .. card::
 
         .. csv-table::
             :header: Operator, Anwendung, Bedeutung
@@ -1383,12 +1369,12 @@ Bitoperatoren
             ``>>``, x >> y, Bits von x werden um y Positionen nach rechts verschoben und von links mit dem höchsten Bit aufgefüllt
             ``>>>``, x >>> y, Bits von x werden um y Positionen nach rechts verschoben und von links mit 0 aufgefüllt
 
-    .. layer:: incremental
+    .. card::
 
         Bits verschieben (:eng:`shiften`) um eine bestimmte Anzahl von Positionen:
 
         .. code:: java
-            :class: far-smaller
+            
 
             jshell> Integer.toBinaryString(Integer.MIN_VALUE)
             $1 ==> "10000000000000000000000000000000"
@@ -1399,12 +1385,12 @@ Bitoperatoren
             jshell> Integer.toBinaryString(Integer.MIN_VALUE >>> 31)
             $3 ==>                                "1"
 
-    .. layer:: incremental
+    .. card::
 
         Verschlüsselung mit XOR (`EncryptionWithXOR.jshell.java <./code/EncryptionWithXOR.jshell.java>`__):
 
         .. code:: java
-            :class: far-smaller
+            
 
             final var key = new java.util.Random().nextInt();   
             Integer.toBinaryString(key);             // ==> "1001101011000011100110101001110"
@@ -1417,7 +1403,7 @@ Bitoperatoren
             Integer.toBinaryString(encryptedIncome); // ==> "1001101011000011111100100100001"
 
         .. warning::
-            :class: far-smaller incremental
+            :class: incremental
 
             Die dargestellte Verschlüsselung mit XOR ist die Grundlage aller modernen Verschlüsselungsalgorithmen, aber es gibt sehr viel zu beachten, um eine sichere Verschlüsselung zu gewährleisten. 
 
@@ -1426,9 +1412,9 @@ Bitoperatoren
 Zuweisungs- und Verbundoperatoren
 ----------------------------------------------------------
 
-.. stack::
+.. deck::
 
-    .. layer::
+    .. card::
 
         Zuweisungs- und Verbundoperatoren weisen einer Variablen einen neuen Wert zu (z. B. :java:`int newAge = age + 1;`).
 
@@ -1438,12 +1424,12 @@ Zuweisungs- und Verbundoperatoren
 
         Das Ergebnis des kompletten Ausdruckes ist der zugewiesene Wert mit dem entsprechenden Datentyp. 
 
-    .. layer:: incremental
+    .. card::
 
         Standardbeispiele:
 
         .. code:: java
-            :class: far-smaller
+            
 
             jshell> int age = 1;
             age ==> 1
@@ -1459,7 +1445,7 @@ Zuweisungs- und Verbundoperatoren
             Folgendes wäre auch erlaubt, aber *nicht* empfehlenswert, da schwer(er) zu lesen:
 
             .. code:: java
-                :class: far-smaller
+                
 
                 jshell> var newAge = age = age + 1;
                 newAge ==> 4
@@ -1467,7 +1453,7 @@ Zuweisungs- und Verbundoperatoren
                 jshell> var newAge = age += 1;
                 newAge ==> 5
 
-    .. layer:: incremental
+    .. card::
 
         .. csv-table::
             :header: Operator, Bedeutung
@@ -1486,16 +1472,16 @@ Zuweisungs- und Verbundoperatoren
 String Konkatenation (Verbinden von Zeichenketten)
 ----------------------------------------------------------
 
-.. stack::
+.. deck::
 
-    .. layer::
+    .. card::
 
         Literale, Variablen, Konstanten vom Datentyp String werden durch den Konkatenationsoperator + zu einem neuen String-Wert verkettet.
 
-    .. layer:: incremental
+    .. card::
 
         .. code:: java
-            :class: far-smaller
+            
 
             jshell> final String name = "Max";
             name ==> "Max"
@@ -1510,9 +1496,9 @@ Implizite Typkonvertierung
 
 Bei Zuweisungen und arithmetischen Operationen werden die Datentypen von Operanden unter bestimmten Umständen implizit konvertiert.
 
-.. stack::
+.. deck::
 
-    .. layer::
+    .. card::
 
         .. class:: incremental list-with-explanations
 
@@ -1522,10 +1508,10 @@ Bei Zuweisungen und arithmetischen Operationen werden die Datentypen von Operand
   
           ⚠️ Die Typkonvertierung erfolgt unabhängig von den konkreten Werten der Operanden.
 
-    .. layer:: incremental
+    .. card::
         
         .. code:: java
-            :class: far-smaller
+            
 
             jshell> byte b = 13;
                     short s = Short.MAX_VALUE;
@@ -1535,30 +1521,30 @@ Bei Zuweisungen und arithmetischen Operationen werden die Datentypen von Operand
             s ==> 32767
             f ==> 32780.0
 
-    .. layer:: incremental
+    .. card::
         
         .. code:: java
-            :class: far-smaller
+            
 
             jshell> int r = Integer.MAX_VALUE + Integer.MAX_VALUE;
             r ==> -2
 
         .. warning::
-            :class: far-smaller incremental
+            :class: incremental
 
             Hier erfolgt keine Überlaufprüfung und demzufolge auch keine (implizite) Konvertierung (z. B. in Long).
 
         .. hint::
-            :class: far-smaller incremental
+            :class: incremental
 
             Bei der Addition von :java:`Integer.MAX_VALUE` und :java:`Integer.MAX_VALUE` wird der Wert :java:`-2` zurückgegeben, da der Wert :java:`Integer.MAX_VALUE + 1` den Wert :java:`Integer.MIN_VALUE` ergibt (wir haben einen Überlauf (:eng:`Overflow`)). 
 
             :java:`Integer.MAX_VALUE + Integer.MAX_VALUE` entspricht also :java:`Integer.MIN_VALUE + (Integer.MAX_VALUE - 1)`.
 
-    .. layer:: incremental
+    .. card::
 
         .. code:: java
-            :class: far-smaller
+            
 
             jshell> short s = Short.MAX_VALUE + Short.MAX_VALUE;
             |  Error:
@@ -1572,9 +1558,9 @@ Explizite Typkonvertierung
 
 Das Ergebnis eines Ausdruckes kann durch explizite Typkonvertierung in einen anderen primitiven Datentyp umgewandelt werden.
 
-.. stack::
+.. deck::
 
-    .. layer::
+    .. card::
 
         .. class:: incremental
 
@@ -1583,12 +1569,12 @@ Das Ergebnis eines Ausdruckes kann durch explizite Typkonvertierung in einen and
         - Nachkommastellen gehen bei der Konvertierung von Gleitkommazahlen in Ganzzahlen verloren
         - Bei Konvertierung von :java:`double` in :java:`float` kommt es ebenfalls zu einem Genauigkeitsverlust in der Darstellung (durch Abschneiden der Bits in Mantisse und Exponent)
 
-    .. layer:: incremental smaller
+    .. card:: smaller
 
         .. rubric:: Standardfälle
 
         .. code:: java
-            :class: far-smaller
+            
 
             jshell> int i = 42;
             i ==> 42
@@ -1601,7 +1587,7 @@ Das Ergebnis eines Ausdruckes kann durch explizite Typkonvertierung in einen and
             .. rubric:: Sonderfälle
 
             .. code:: java
-                :class: far-smaller
+                
 
                 jshell> (byte) 128 ;
                 $1 ==> -128
@@ -1622,7 +1608,7 @@ Unter-/Überschreitet das Ergebnis eines Ausdruckes den minimalen/maximalen Wert
 - Bei Fließkommazahlen werden die Konstanten: :java:`Float.NEGATIVE_INFINITY` und :java:`Float.POSITIVE_INFINITY` bzw. :java:`Double.NEGATIVE_INFINITY` und :java:`Double.POSITIVE_INFINITY` verwendet.
 
 .. code:: java
-    :class: far-smaller incremental
+    :class: incremental
 
     Integer.toBinaryString(Integer.MIN_VALUE) //    "10000000000000000000000000000000"
     Integer.toBinaryString(Integer.MIN_VALUE -1) // "01111111111111111111111111111111"
@@ -1636,7 +1622,7 @@ Unter-/Überschreitet das Ergebnis eines Ausdruckes den minimalen/maximalen Wert
     Bei Double erfolgt der Überlauf erst, wenn man eine Zahl auf :java:`Double.MAX_VALUE` addiert, die mind. 292 Stellen vor dem Komma hat.
 
     .. code:: java
-        :class: far-smaller
+        
     
         jshell> Double.MAX_VALUE + 1
         $0 ==> 1.7976931348623157E308
@@ -1715,43 +1701,43 @@ Beispiele zur Auswertungsreihenfolge
         *Initiale* Belegung der Variablen: :java:`int x = 4, y = 2, z = 3;`.
 
     .. code:: java
-        :class: far-smaller incremental
+        :class: incremental
         :number-lines: 1
 
         x + y * z / x 
 
     .. code:: java
-        :class: far-smaller incremental 
+        :class: incremental 
         :number-lines: 2
 
         ( x + - (float) y * 2 ) / x  ==  ( x + ( ( (float) -y ) * 2 ) )/ x 
 
     .. code:: java
-        :class: far-smaller incremental 
+        :class: incremental 
         :number-lines: 3
 
         x + ++y * z++ % x
 
     .. code:: java
-        :class: far-smaller incremental 
+        :class: incremental 
         :number-lines: 4
 
         x < 5 && --y <= 1 || z == 3
 
     .. code:: java
-        :class: far-smaller incremental
+        :class: incremental
         :number-lines: 5
 
         x << 2 * y >> 1
 
     .. code:: java
-        :class: far-smaller  incremental
+        :class: incremental
         :number-lines: 6
 
         z & 1 % 2 == 0
 
     .. code:: java
-        :class: far-smaller  incremental
+        :class: incremental
         :number-lines: 7
 
         (z & 1) % 2 == 0
@@ -1769,7 +1755,7 @@ Beispiele zur Auswertungsreihenfolge
 
 
 
-.. class:: integrated-exercise transition-scale
+.. class:: exercises transition-scale
 
 Übung
 --------    
@@ -1781,7 +1767,7 @@ Beispiele zur Auswertungsreihenfolge
     Beispielinteraktion:
 
     .. code:: text
-        :class: far-smaller
+        
     
         Bitte geben Sie die Sekunden ein: 3455
         0 Stunde(n), 57 Minute(n) und 35 Sekunde(n)
@@ -1791,7 +1777,6 @@ Beispiele zur Auswertungsreihenfolge
 
         .. include:: code/SekundenUmrechnen.java
             :code: java
-            :class: far-smaller
             :number-lines:
 
 .. supplemental::
@@ -1799,7 +1784,7 @@ Beispiele zur Auswertungsreihenfolge
     Denken Sie daran, dass Ihr Code in die ``main`` Methode gehört:
 
     .. code:: java
-        :class: far-smaller
+        
 
         void main() {
             // Ihr Code
@@ -1811,7 +1796,7 @@ Beispiele zur Auswertungsreihenfolge
 
 
 
-.. class:: integrated-exercise transition-scale
+.. class:: exercises transition-scale
 
 Übung
 --------    
@@ -1823,8 +1808,7 @@ Beispiele zur Auswertungsreihenfolge
     Beispielinteraktion:
 
     .. code:: text
-        :class: far-smaller
-    
+        
         Bitte geben Sie Ihr Gewicht in Kilogramm ein: 80
         Bitte geben Sie Ihre Größe in Metern ein: 1.80
         Ihr BMI beträgt 24.69
@@ -1837,7 +1821,6 @@ Beispiele zur Auswertungsreihenfolge
 
         .. include:: code/BmiBerechnen.java
             :code: java
-            :class: far-smaller
             :number-lines:
 
 
@@ -1874,7 +1857,7 @@ Eine Anweisung in einem Java-Programm stellt eine einzelne Vorschrift dar, die w
 - In Java-Programmen werden einzelne Anweisungen durch einen Semikolon :java:`;` voneinander getrennt.
 
   .. code:: java
-    :class: far-far-smaller copy-to-clipboard
+    :class: copy-to-clipboard
 
     void main() { 
         int a = 1; // Variablendeklaration und Initialisierung
@@ -1884,6 +1867,7 @@ Eine Anweisung in einem Java-Programm stellt eine einzelne Vorschrift dar, die w
 - Programme setzen sich aus einer Abfolge von Anweisungen zusammen.
 - Die einfachste Anweisung ist die leere Anweisung: :java:`;`.
 - Weitere Beispiele für Anweisungen sind Variablendeklarationen und Initialisierungen, Zuweisungsausdrücke, Schleifen, Methoden-Aufrufe.
+
 
 
 Blöcke
@@ -1896,7 +1880,7 @@ Ein Block in einem Java-Programm ist eine Folge von Anweisungen, die durch gesch
 - Blöcke werden **nicht** durch einen Semikolon beendet.
   
   .. code:: java
-    :class: far-far-smaller copy-to-clipboard
+    :class: copy-to-clipboard
 
     void main() {
         {   // Block von Anweisungen
@@ -1917,7 +1901,7 @@ Anweisungen und Blöcke - Beispiele
 ----------------------------------------------------------
 
 .. code:: java
-    :class: far-far-smaller copy-to-clipboard
+    :class: copy-to-clipboard
 
     // Deklaration und Initialisierung von Variablen
     int age = 18 + 1;
@@ -1960,20 +1944,18 @@ Die :java:`if`-Anweisung setzt sich zusammen aus dem Schlüsselwort :java:`if`, 
 
 :Syntax: :java:`if(<Ausdruck>) <Anweisung> bzw. <Block>`
 
-.. stack:: 
+.. deck:: 
 
-    .. layer:: 
+    .. card:: 
 
         .. include:: code/SimpleIf.java
             :code: java
-            :class: far-far-smaller
             :number-lines:
 
-    .. layer:: incremental
+    .. card::
 
         .. include:: code/NestedIf.java
             :code: java
-            :class: far-far-smaller
             :number-lines:
 
 .. supplemental::
@@ -1991,20 +1973,18 @@ Die :java:`if`-Anweisung setzt sich zusammen aus dem Schlüsselwort :java:`if`, 
 :java:`if`-:java:`else`-Anweisung
 ----------------------------------------------------------
 
-.. stack::
+.. deck::
 
-    .. layer:: 
+    .. card:: 
 
         .. include:: code/IfElse.java
             :code: java
-            :class: far-smaller
             :number-lines:
 
-    .. layer:: incremental
+    .. card::
 
         .. include:: code/IfElseReformatted.java
             :code: java
-            :class: far-smaller
             :number-lines:
 
 .. supplemental::
@@ -2021,7 +2001,7 @@ Die :java:`if`-Anweisung setzt sich zusammen aus dem Schlüsselwort :java:`if`, 
 
 
 
-.. class:: integrated-exercise transition-scale
+.. class:: exercises transition-scale
 
 Übung
 --------
@@ -2035,7 +2015,6 @@ Die :java:`if`-Anweisung setzt sich zusammen aus dem Schlüsselwort :java:`if`, 
 
         .. include:: code/BmiBerechnenMitIfElse.java
             :code: java
-            :class: far-smaller
             :number-lines:
 
 
@@ -2043,9 +2022,9 @@ Die :java:`if`-Anweisung setzt sich zusammen aus dem Schlüsselwort :java:`if`, 
 :java:`switch`-Anweisung/-Ausdruck (Grundlagen)
 ----------------------------------------------------------
 
-.. stack::
+.. deck::
 
-    .. layer:: 
+    .. card:: 
 
         Die :java:`switch`-Anweisung bzw. der :java:`switch`-Ausdruck setzt sich aus dem Schlüsselwort :java:`switch`, einem Prüf-Ausdruck in runden Klammern und einem oder mehreren :java:`case`-Blöcken zusammen.
 
@@ -2059,7 +2038,7 @@ Die :java:`if`-Anweisung setzt sich zusammen aus dem Schlüsselwort :java:`if`, 
 
             :Syntax: :java:`default: <Anweisungen>`
 
-    .. layer:: incremental
+    .. card::
 
         .. rubric::  :java:`case L :`
 
@@ -2071,29 +2050,26 @@ Die :java:`if`-Anweisung setzt sich zusammen aus dem Schlüsselwort :java:`if`, 
 
         Gibt es keine :java:`break`-Anweisung in einem :java:`case`-Block werden alle Anweisungen bis zum Ende der :java:`switch`-Anweisung ausgeführt.
 
-    .. layer:: incremental
+    .. card::
 
         .. include:: code/Switch.java
             :code: java
-            :class: far-smaller
             :number-lines:
 
-    .. layer:: incremental
+    .. card::
 
         .. include:: code/SwitchMultipleLabels.java
             :code: java
-            :class: far-smaller
             :number-lines:
             
-    .. layer:: incremental
+    .. card::
 
         .. include:: code/SwitchYieldExpression.java
             :code: java
-            :class: far-smaller
             :number-lines:
 
 
-    .. layer:: incremental
+    .. card::
 
         .. rubric:: :java:`case L ->`
 
@@ -2104,22 +2080,17 @@ Die :java:`if`-Anweisung setzt sich zusammen aus dem Schlüsselwort :java:`if`, 
         Bei dieser Variante gibt es kein *durchfallen* :eng:`Fall-Through-Effekt`, d. h. ein :java:`break` ist nicht zur Beendigung eines :java:`case`-Blocks zu verwenden!
 
 
-    .. layer:: incremental
+    .. card::
     
         .. include:: code/SwitchArrowMultipleLabels.java
             :code: java
-            :class: far-smaller
             :number-lines:
 
-    .. layer:: incremental
+    .. card::
 
         .. include:: code/SwitchArrowExpression.java
             :code: java
-            :class: far-smaller
             :number-lines:
-
-
-
 
 .. supplemental::
 
@@ -2136,23 +2107,22 @@ Die :java:`if`-Anweisung setzt sich zusammen aus dem Schlüsselwort :java:`if`, 
 :java:`switch`-Anweisung/-Ausdruck mit Musterabgleich und :java:`when` Bedingungen (seit Java 21)
 ---------------------------------------------------------------------------------------------------
 
-.. stack::
+.. deck::
 
-    .. layer::
+    .. card::
 
         Seit `Java 21 <https://openjdk.org/jeps/441>`__  werden auch :java:`case`-Label unterstützt, die Muster abgleichen (:eng:`match a pattern`), und die mit :java:`when`-Bedingungen kombiniert werden können.
 
         :Syntax: :java:`case <Pattern> when <Bedingung> -> <Ausdruck oder Block>`.
 
-    .. layer:: incremental
+    .. card::
 
         .. include:: code/SwitchAndWhen.java
             :code: java
-            :class: far-smaller
             :number-lines:
 
         .. exercise:: Erfolgreicher Musterabgleich?
-            :class: far-smaller
+            
 
             Bei welchem Name wäre ein erfolgreicher Musterabgleich in mehreren Fällen möglich? 
 
@@ -2180,7 +2150,7 @@ Effizienz von bedingten Anweisungen
 
         
 
-.. class:: transition-fade integrated-exercise
+.. class:: transition-fade exercises
 
 Übung
 --------
@@ -2193,7 +2163,6 @@ Effizienz von bedingten Anweisungen
     Beispielinteraktion:
 
     .. code:: text
-        :class: far-far-smaller
         
         # java --enable-preview Wochentag.java
         Welchen Monat haben wir (1-12)? 12
@@ -2209,12 +2178,11 @@ Effizienz von bedingten Anweisungen
 
         .. include:: code/Wochentag.java
             :code: java
-            :class: far-smaller
             :number-lines:
 
-    .. container:: bonus-task far-far-smaller margin-top-1em
+    .. container:: bonus-task 
 
-        Heimaufgabe: Erlauben Sie statt der Eingabe einer Zahl für den Wochentag auch die Eingabe des Wochentages als Text (z. B. "Montag", "Dienstag", ...).
+        Heimaufgabe: Erlauben Sie statt der Eingabe einer Zahl für den Wochentag auch die Eingabe des Wochentages als Text (z. B. „Montag“, „Dienstag“, ...).
 
 
 
@@ -2228,7 +2196,7 @@ Schleifen
 Schleifen
 ----------------------------------------------------------
 
-.. class:: incremental
+.. class:: incremental-list
 
 - Schleifen dienen dazu gleiche Anweisungen bzw. Blöcke mehrfach auszuführen
 - Schleifen zählen wie auch bedingte Anweisungen zu den Befehlen der Kontrollflußsteuerung
@@ -2240,12 +2208,12 @@ Schleifen
 :java:`for`-Schleife
 ----------------------------------------------------------
 
-.. stack::
+.. deck::
 
-    .. layer::
+    .. card::
 
         .. code:: java
-            :class: far-smaller copy-to-clipboard
+            :class: copy-to-clipboard
             :number-lines: 1
 
             int sum = 0;
@@ -2256,7 +2224,7 @@ Schleifen
                 System.out.println("sum="+sum);
             }
 
-    .. layer:: incremental
+    .. card::
 
         Die :java:`for`-Schleife setzt sich zusammen aus einer Initialisierungsliste (<Init>), einer Abbruchbedingung <Ausdruck>, einer Änderungsliste (<Update>) und einen Schleifenrumpf (<Anweisung> bzw. <Block>). Alle drei Teile sind optional.
 
@@ -2266,18 +2234,18 @@ Schleifen
         :Abbruchbedingung: wird vor jedem Schleifendurchlauf geprüft
         :Änderungsliste: wird nach einem Schleifendurchlauf ausgeführt
 
-    .. layer:: incremental
+    .. card::
 
         Sowohl die Initialisierungsliste als auch die Änderungsliste können mehrere Ausdrücke enthalten, die durch Kommas getrennt sind.
         
         Beispiel:
 
-        .. container:: two-columns
+        .. grid::
 
-            .. container:: column
+            .. cell::
 
                 .. code:: java
-                    :class: far-far-smaller copy-to-clipboard
+                    :class: copy-to-clipboard
                     :number-lines: 1
 
                     int sum=0;
@@ -2288,10 +2256,10 @@ Schleifen
                         System.out.println("sum="+sum);
                     }
 
-            .. container:: column
+            .. cell::
 
                 .. code:: java
-                        :class: far-far-smaller copy-to-clipboard
+                        :class: copy-to-clipboard
                         :number-lines: 1
 
                         int sum=0;
@@ -2302,14 +2270,12 @@ Schleifen
                             System.out.println("sum="+sum);
                         }
 
-
 .. supplemental::
 
     Gültiger Code:
 
     .. code:: java
-        :class: far-smaller
-
+        
         for(;;) { System.out.println("forever"); }
 
 
@@ -2318,7 +2284,7 @@ Schleifen
 ----------------------------------------------------------
 
 .. code:: java
-    :class: far-smaller copy-to-clipboard
+    :class: copy-to-clipboard
     :number-lines: 1
 
     int sum = 0;
@@ -2345,7 +2311,7 @@ Schleifen
 ----------------------------------------------------------
 
 .. code:: java
-    :class: far-smaller copy-to-clipboard
+    :class: copy-to-clipboard
     :number-lines: 1
 
     int sum=0;
@@ -2372,12 +2338,12 @@ Schleifen
 Kontrolle des Schleifenablaufs
 ----------------------------------------------------------
 
-.. stack::
+.. deck::
 
-    .. layer:: 
+    .. card:: 
 
         .. code:: java
-            :class: far-smaller copy-to-clipboard
+            :class: copy-to-clipboard
             :number-lines: 1
 
             int sum = 0;
@@ -2391,10 +2357,10 @@ Kontrolle des Schleifenablaufs
             }
             System.out.println("sum=" + sum);
 
-    .. layer:: incremental
+    .. card::
 
         .. code:: java
-            :class: far-smaller copy-to-clipboard
+            :class: copy-to-clipboard
             :number-lines: 1
 
             int sum = 0;
@@ -2408,10 +2374,10 @@ Kontrolle des Schleifenablaufs
             }
             System.out.println("sum=" + sum);
 
-    .. layer:: incremental
+    .. card::
 
         .. code:: java
-            :class: far-smaller copy-to-clipboard
+            :class: copy-to-clipboard
             :number-lines: 1
                 
             int sum = 0;
@@ -2431,7 +2397,7 @@ Kontrolle des Schleifenablaufs
             System.out.println("sum=" + sum);
 
 
-    .. layer:: incremental
+    .. card::
 
         - Mit den Anweisungen :java:`break`, :java:`break <Marke>`, :java:`continue` und :java:`continue <Marke>` kann die Abarbeitung einer Schleife beeinflusst werden.
 
@@ -2465,7 +2431,7 @@ Kontrolle des Schleifenablaufs
         4 0
 
 
-.. class:: integrated-exercise transition-scale
+.. class:: exercises transition-scale
 
 Übung
 --------
@@ -2482,7 +2448,6 @@ Kontrolle des Schleifenablaufs
     Beispielinteraktion:
 
     .. code:: bash
-        :class: far-smaller
 
         # java --enable-preview Primzahltest.java
         Geben Sie eine ganze positive Zahl ein? 97
@@ -2500,7 +2465,7 @@ Kontrolle des Schleifenablaufs
 
 
 
-.. class:: integrated-exercise transition-scale
+.. class:: exercises transition-scale
 
 Übung
 --------
@@ -2522,7 +2487,6 @@ Kontrolle des Schleifenablaufs
     Beispielinteraktion:
 
     .. code:: bash
-        :class: far-smaller
 
         # java --enable-preview Fibonacci.java
         Welche Fibonacci Zahl möchten Sie berechnen? 10
@@ -2537,7 +2501,7 @@ Kontrolle des Schleifenablaufs
 
 
 
-.. class:: integrated-exercise transition-scale
+.. class:: exercises transition-scale
 
 Übung
 --------
@@ -2551,14 +2515,13 @@ Kontrolle des Schleifenablaufs
         
         x_{n+1} = x_n - \frac{x_n^3 - n}{3 \times x_n^2}\qquad\qquad\text{ein mgl. Startwert:}\; x_0 = 1
 
-    .. stack:: 
+    .. deck:: 
 
-        .. layer::
+        .. card::
 
             Beispielinteraktion:
 
             .. code:: bash
-                :class: far-far-smaller
 
                 # java --enable-preview KubikwurzelMitSchleife.java  10:43:30
                 Geben Sie eine Zahl n ein deren Kubikwurzel w Sie berechnen wollen
@@ -2568,7 +2531,7 @@ Kontrolle des Schleifenablaufs
                 Das Ergebnis ist: 100.0
 
 
-        .. layer:: incremental
+        .. card::
 
             .. container:: minor far-smaller
 
@@ -2590,7 +2553,6 @@ Kontrolle des Schleifenablaufs
 
         .. include:: code/KubikwurzelMitSchleife.java
             :code: Java
-            :class: far-smaller
 
         Bei iterativen Algorithmen ist es fast immer möglich ein Abbruchkriterium über die Änderung zwischen zwei Schritten zu bestimmen. Unterschreitet die Änderung einen bestimmten Wert (z. B. :math:`0,000000000001`) , so kann bzw. könnte die Schleife je nach Anwendungszweck abgebrochen werden.
 
@@ -2611,9 +2573,9 @@ Methoden
 Methoden (in Java Scripts)
 ----------------------------------------------------------
 
-.. stack::
+.. deck::
 
-    .. layer::
+    .. card::
 
         .. class:: incremental list-with-explanations
 
@@ -2638,21 +2600,21 @@ Methoden (in Java Scripts)
 
         .. class:: incremental
 
-    .. layer:: incremental
+    .. card::
 
         - Wir haben bereits Methoden wie :java:`println(String)` und :java:`double Double.parseDouble(String)` kennengelernt.
         - Wenn wir :java:`void main() { ... }` verwenden, dann definieren wir eine Methode, die von der Java-Laufzeitumgebung beim Start aufgerufen wird. 
    
            Per Konvention ist festgelegt, dass diese Methode :java:`main` heisst.
 
-    .. layer:: incremental
+    .. card::
 
         **Beispiel**
         
         Deklaration einer Methode zum Berechnen des größten gemeinsamen Teilers (:java:`ggt`) zweier Zahlen.
 
         .. code:: java
-            :class: far-smaller copy-to-clipboard
+            :class: copy-to-clipboard
             :number-lines: 1
 
             int ggt(int z1, int z2) { // Algorithmus von Euklid
@@ -2752,9 +2714,9 @@ Rekursive Methoden - Beispiel
 Überladen von Methoden (:eng:`Overloading`)
 ----------------------------------------------------------
 
-.. stack::
+.. deck::
 
-    .. layer::
+    .. card::
 
         .. class:: incremental            
 
@@ -2775,10 +2737,10 @@ Rekursive Methoden - Beispiel
                 
                 Würden wir nur :java:`long Math.max(long, long)` definieren, dann würde bei einem Aufruf mit zwei :java:`int` Werten eine implizite Konvertierung erfolgen. Der Rückgabewert wäre dann ein :java:`long` Wert. In den meisten Fällen ist dies jedoch nicht der gewünschte Typ und es müsste explizit in :java:`int` zurück konvertiert werden. Dies würde den Code unnötig komplizieren und auch (geringfügige) Performanceeinbußen verursachen. Daher ist es sinnvoll die Methode :java:`int Math.max(int, int)` zu definieren.
 
-    .. layer:: incremental  
+    .. card::  
 
         .. code:: java
-            :class: far-smaller copy-to-clipboard
+            :class: copy-to-clipboard
 
             void print(int i) {
                 println("int: " + i);
@@ -2817,7 +2779,7 @@ Aufruf von Methoden aus anderen Klassen
 
 
 
-.. class:: transition-fade integrated-exercise
+.. class:: transition-fade exercises
 
 Übung
 --------
@@ -2841,16 +2803,14 @@ Aufruf von Methoden aus anderen Klassen
 
           .. include:: code/PrimzahltestInMethode.java
               :code: Java
-              :class: far-smaller
 
           **Kubikwurzel**
 
           .. include:: code/KubikwurzelInRekursiverMethode.java
               :code: Java
-              :class: far-smaller
 
 
-.. class:: transition-move-left integrated-exercise
+.. class:: transition-move-left exercises
 
 Übung
 --------
@@ -2865,7 +2825,7 @@ Aufruf von Methoden aus anderen Klassen
         Verwendung von :java:`long` ermöglicht es die Fakultät von Zahlen bis einschließlich 20 zu berechnen.
 
         .. code:: java
-            :class: far-smaller copy-to-clipboard
+            :class: copy-to-clipboard
 
             long fakultaet(long n) {
                 long fak = 1;
@@ -2877,7 +2837,7 @@ Aufruf von Methoden aus anderen Klassen
         Verwendung von :java:`double` ermöglicht es die Fakultät von Zahlen bis einschließlich 170 zu berechnen. Darüber hinaus wird :java:`Infinity` zurückgegeben.
 
         .. code:: java
-            :class: far-smaller copy-to-clipboard
+            :class: copy-to-clipboard
   
             double fakultaet(int n) {
                 double fak = 1;
@@ -2887,7 +2847,7 @@ Aufruf von Methoden aus anderen Klassen
             }
 
         
-.. class:: transition-move-left integrated-exercise
+.. class:: transition-move-left exercises
 
 Übung
 --------
@@ -2904,7 +2864,7 @@ Aufruf von Methoden aus anderen Klassen
         :pwd: FibonacciRRRekursiv
 
         .. code:: java
-            :class: far-smaller copy-to-clipboard
+            :class: copy-to-clipboard
 
             long fibonacci(int n) {
                 return switch (n) {
@@ -2962,14 +2922,14 @@ Einrückungen und Blöcke
 Einrückungen und Blöcke - Beispiele
 ----------------------------------------------------------
 
-.. stack:: 
+.. deck:: 
 
-    .. layer:: 
+    .. card:: 
 
         .. rubric:: Falsche Einrückung
 
         .. code:: java
-            :class: far-smaller copy-to-clipboard
+            :class: copy-to-clipboard
             
             int ggtNaiv(int z1, int z2){
                     int min = (z1>z2)?z2:z1; println("current min="+min);
@@ -2981,12 +2941,12 @@ Einrückungen und Blöcke - Beispiele
                 }
             }
 
-    .. layer:: incremental
+    .. card::
 
         .. rubric:: Korrekte Einrückung
 
         .. code:: java
-            :class: far-smaller copy-to-clipboard
+            :class: copy-to-clipboard
             
             int ggtNaiv(int z1, int z2) {
                 int min = (z1 > z2) ? z2 : z1;
@@ -3082,7 +3042,7 @@ Team und Projektspezifische Konventionen
 
 
 
-.. class:: integrated-exercise transition-scale
+.. class:: exercises transition-scale
 
 Übung
 --------
@@ -3113,7 +3073,7 @@ Das Einhalten fördert die Zusammenarbeit mit anderen Programmieren - *insbesond
 
 
 
-.. class:: integrated-exercise transition-fade
+.. class:: exercises transition-fade
 
 Übung
 --------
@@ -3139,7 +3099,6 @@ Das Einhalten fördert die Zusammenarbeit mit anderen Programmieren - *insbesond
         
         .. include:: code/TageSeitGeburt.java
             :code: Java
-            :class: far-smaller
             :number-lines: 1
 
 .. supplemental::
@@ -3161,9 +3120,9 @@ Assertions
 Java Assertions
 ----------------------------------------------------------
 
-.. stack:: 
+.. deck:: 
 
-    .. layer:: 
+    .. card:: 
 
         Assertions sind eine Möglichkeit, um sicherzustellen, dass bestimmte Bedingungen erfüllt sind.
 
@@ -3176,12 +3135,12 @@ Java Assertions
         Die Bedingung muss ein boolescher Ausdruck sein. Der Ausdruck ist optional und wird nur ausgewertet, wenn die Bedingung falsch ist. Normalerweise wird der Ausdruck verwendet, um eine Fehlermeldung zu erzeugen.
 
 
-    .. layer:: incremental
+    .. card::
 
         Beispiel: Funktion mit Assertion
 
         .. code:: java
-            :class: far-smaller copy-to-clipboard
+            :class: copy-to-clipboard
 
             
             /// Berechnet den GGT
@@ -3198,11 +3157,11 @@ Java Assertions
             }
 
         .. code:: java
-            :class: far-smaller incremental
+            :class: incremental
     
             ggt(-2,4) // ==>  Exception java.lang.AssertionError: z1 und z2 müssen >= 0 sein
 
-    .. layer:: incremental
+    .. card::
 
         Assertions sind gut geeignet zur Überprüfung von:
         
@@ -3210,7 +3169,7 @@ Java Assertions
         - Kontrollfluss-Varianten
         - Vorbedingungen, Nachbedingungen
   
-    .. layer:: incremental
+    .. card::
 
         .. warning:: 
 
@@ -3219,7 +3178,7 @@ Java Assertions
         Beispiel: Assertion mit Seiteneffekt
 
         .. code:: java
-            :class: far-smaller copy-to-clipboard
+            :class: copy-to-clipboard
 
             int ggt(int z1, int z2) {
                 // ⚠️ Seiteneffekt, der den Fehler (sogar) korrigiert... 
@@ -3230,7 +3189,7 @@ Java Assertions
             }
 
 
-    .. layer:: incremental
+    .. card::
 
         .. hint::
 
@@ -3238,7 +3197,7 @@ Java Assertions
             
         Assertions dienen der Identifikation von Programmierfehlern und sollten nicht für Bedingungen verwendet werden, die auf zu erwartende Fehler zurückzuführen sind. (Z. B. falsche Nutzereingaben oder Netzwerkfehler etc.)
 
-    .. layer:: incremental
+    .. card::
                 
         - Assertions werden in Java *nur bei expliziter Aktivierung überprüft*.
         - Um im Code zu prüfen, ob Assertions aktiviert sind, kann folgender (auf einem Seiteneffekt basierender) Code verwendet werden:
@@ -3267,7 +3226,7 @@ Java Assertions
 
 
 
-.. class:: integrated-exercise transition-scale
+.. class:: exercises transition-scale
 
 Übung
 --------    

@@ -1,5 +1,5 @@
 .. meta::
-    :version: genesis
+    :version: renaissance
     :lang: de
     :author: Michael Eichberg
     :keywords: "Programmierung", "Java", "Arrays"
@@ -11,6 +11,7 @@
 .. include:: ../docutils.defs
 
 
+
 Java Arrays - Klausurvorbereitung
 ===================================================================
 
@@ -20,7 +21,7 @@ Java Arrays - Klausurvorbereitung
 
 
 
-.. class:: integrated-exercise
+.. class:: exercises
 
 Aufgabe
 --------
@@ -44,7 +45,7 @@ Gegeben sind zwei Arrays von ganzen Zahlen (Typ :java:`long`). Schreiben Sie ein
 
 
 
-.. class:: integrated-exercise
+.. class:: exercises
 
 Aufgabe
 --------
@@ -76,7 +77,7 @@ ist benachbart, wenn es sich in der gleichen Zeile oder Spalte befindet und eine
 
 
 
-.. class:: integrated-exercise
+.. class:: exercises
 
 Aufgabe
 --------
