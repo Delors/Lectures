@@ -319,15 +319,17 @@ Zentrale Eigenschaften von Algorithmen
       - Zuweisungen
       - etc.
 
-    :Terminiertheit: Das Ergebnis liegt nach endlich vielen Schritten vor. :incremental:`(Dies bedeutet aber nicht, dass das Problem auch praktisch lösbar ist.)`
+    :Terminiertheit: Das Ergebnis liegt nach endlich vielen Schritten vor. 
+    
+        (Dies bedeutet aber nicht, dass das Problem auch praktisch lösbar ist.)
 
     :Komplexität:
 
       Zeit und Platzbedarf sind endlich und in einem gewissen Rahmen abschätzbar.
 
-      :peripheral::`Normalerweise versucht man den besten, schlechtesten und durchschnittlichen Fall zu bestimmen in Abhängigkeit von der Eingabegröße. (Insbesondere Thema des nächsten Semesters).`
+      :peripheral:`Normalerweise versucht man den besten, schlechtesten und durchschnittlichen Fall zu bestimmen in Abhängigkeit von der Eingabegröße. (Insbesondere Thema des nächsten Semesters).`
 
-      :peripheral::`Diese Angaben erfolgen unabhängig von einer konkreten Implementierung bzw. Verwendung einer bestimmten Programmiersprache oder Hardware.`
+      :peripheral:`Diese Angaben erfolgen unabhängig von einer konkreten Implementierung bzw. Verwendung einer bestimmten Programmiersprache oder Hardware.`
 
     :Determinismus: Jeder (Teil-)schritt führt bei gleichen Eingaben immer zu gleichen Ausgaben.
 

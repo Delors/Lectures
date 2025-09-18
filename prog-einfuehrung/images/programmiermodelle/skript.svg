@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+    "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg
+    xmlns="http://www.w3.org/2000/svg"
+    xmlns:xl="http://www.w3.org/1999/xlink"
+    version="1.1"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    viewBox="45 310 780 502"
+    width="780"
+    height="502"
+>
+  <defs>
+    <font-face
+            font-family="Helvetica"
+            font-size="18"
+            units-per-em="1000"
+            underline-position="-75.68359"
+            underline-thickness="49.316406"
+            slope="0"
+            x-height="532.22656"
+            cap-height="719.7266"
+            ascent="770.0195"
+            descent="-229.98047"
+            font-weight="700"
+        >
+      <font-face-src>
+        <font-face-name name="Helvetica-Bold" />
+      </font-face-src>
+    </font-face>
+    <font-face
+            font-family="Courier"
+            font-size="16"
+            units-per-em="1000"
+            underline-position="-178.22266"
+            underline-thickness="57.61719"
+            slope="0"
+            x-height="456.54297"
+            cap-height="586.91406"
+            ascent="753.90625"
+            descent="-246.09375"
+            font-weight="400"
+        >
+      <font-face-src>
+        <font-face-name name="Courier" />
+      </font-face-src>
+    </font-face>
+    <font-face
+            font-family="Helvetica"
+            font-size="16"
+            units-per-em="1000"
+            underline-position="-75.68359"
+            underline-thickness="49.316406"
+            slope="0"
+            x-height="522.9492"
+            cap-height="717.28516"
+            ascent="770.0195"
+            descent="-229.98047"
+            font-weight="400"
+        >
+      <font-face-src>
+        <font-face-name name="Helvetica" />
+      </font-face-src>
+    </font-face>
+    <font-face
+            font-family="Helvetica"
+            font-size="16"
+            units-per-em="1000"
+            underline-position="-75.68359"
+            underline-thickness="49.316406"
+            slope="0"
+            x-height="532.22656"
+            cap-height="719.7266"
+            ascent="770.0195"
+            descent="-229.98047"
+            font-weight="700"
+        >
+      <font-face-src>
+        <font-face-name name="Helvetica-Bold" />
+      </font-face-src>
+    </font-face>
+    <marker
+            orient="auto"
+            overflow="visible"
+            markerUnits="strokeWidth"
+            id="FilledArrow_Marker"
+            stroke-linejoin="miter"
+            stroke-miterlimit="10"
+            viewBox="-1 -3 7 6"
+            markerWidth="7"
+            markerHeight="6"
+            color="black"
+        >
+      <g>
+        <path
+                    d="M 4.8 0 L 0 -1.8 L 0 1.8 Z"
+                    fill="currentColor"
+                    stroke="currentColor"
+                    stroke-width="1"
+                />
+      </g>
+    </marker>
+  </defs>
+  <metadata> Produced by OmniGraffle 8.0\n2024-10-26 12:37:02 +0000</metadata>
+  <g
+        id="Canvas_1"
+        fill="none"
+        stroke-opacity="1"
+        fill-opacity="1"
+        stroke-dasharray="none"
+        stroke="none"
+    >
+    <title>Canvas 1</title>
+    <g id="Canvas_1_Skript">
+      <title>Skript</title>
+      <g id="Graphic_28">
+        <path
+                    d="M 111.23047 761.0234 L 815.34375 761.0234 C 819.762 761.0234 823.34375 764.6052 823.34375 769.0234 L 823.34375 803.5 C 823.34375 807.9183 819.762 811.5 815.34375 811.5 L 111.23047 811.5 C 106.81219 811.5 103.23047 807.9183 103.23047 803.5 L 103.23047 769.0234 C 103.23047 764.6052 106.81219 761.0234 111.23047 761.0234 Z"
+                    fill="#dadada"
+                />
+      </g>
+      <g id="Graphic_29">
+        <path
+                    d="M 111.23047 694.0234 L 240.23047 694.0234 C 244.64875 694.0234 248.23047 697.6052 248.23047 702.0234 L 248.23047 782.0234 C 248.23047 786.4417 244.64875 790.0234 240.23047 790.0234 L 111.23047 790.0234 C 106.81219 790.0234 103.23047 786.4417 103.23047 782.0234 L 103.23047 702.0234 C 103.23047 697.6052 106.81219 694.0234 111.23047 694.0234 Z"
+                    fill="#a5a5a5"
+                />
+      </g>
+      <g id="Graphic_2">
+        <text transform="translate(151.71094 319.08594)" fill="black">
+          <tspan
+                        font-family="Helvetica"
+                        font-size="18"
+                        font-weight="700"
+                        fill="black"
+                        x="0"
+                        y="18"
+                        xml:space="preserve"
+                    >Skript</tspan>
+        </text>
+      </g>
+      <g id="Graphic_7">
+        <text transform="translate(127.72266 472.9961)" fill="black">
+          <tspan
+                        font-family="Courier"
+                        font-size="16"
+                        font-weight="400"
+                        fill="black"
+                        x="4.800781"
+                        y="15"
+                        xml:space="preserve"
+                    >Datei mit</tspan>
+          <tspan
+                        font-family="Courier"
+                        font-size="16"
+                        font-weight="400"
+                        fill="black"
+                        x="0"
+                        y="34"
+                        xml:space="preserve"
+                    >Sourcecode</tspan>
+        </text>
+      </g>
+      <g id="Line_11">
+        <line
+                    x1="46.45703"
+                    y1="690.27734"
+                    x2="823.34375"
+                    y2="690.27734"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                />
+      </g>
+      <g id="Line_46">
+        <line
+                    x1="46.45703"
+                    y1="456.9629"
+                    x2="823.34375"
+                    y2="456.9629"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                />
+      </g>
+      <g id="Graphic_12">
+        <text transform="translate(51.45703 800.0156) rotate(-90)" fill="black">
+          <tspan
+                        font-family="Helvetica"
+                        font-size="16"
+                        font-weight="400"
+                        fill="black"
+                        x="0"
+                        y="15"
+                        xml:space="preserve"
+                    >Ausführungs-</tspan>
+          <tspan
+                        font-family="Helvetica"
+                        font-size="16"
+                        font-weight="400"
+                        fill="black"
+                        x="22.683594"
+                        y="34"
+                        xml:space="preserve"
+                    >schicht</tspan>
+        </text>
+      </g>
+      <g id="Graphic_35">
+        <text transform="translate(51.45703 435.1875) rotate(-90)" fill="black">
+          <tspan
+                        font-family="Helvetica"
+                        font-size="16"
+                        font-weight="400"
+                        fill="black"
+                        x="0"
+                        y="15"
+                        xml:space="preserve"
+                    >Werkzeuge</tspan>
+        </text>
+      </g>
+      <g id="Graphic_36">
+        <text transform="translate(51.45703 529.2422) rotate(-90)" fill="black">
+          <tspan
+                        font-family="Helvetica"
+                        font-size="16"
+                        font-weight="400"
+                        fill="black"
+                        x="0"
+                        y="15"
+                        xml:space="preserve"
+                    >Artefakt</tspan>
+        </text>
+      </g>
+      <g id="Graphic_37">
+        <text transform="translate(51.45703 341.08594) rotate(-90)" fill="black">
+          <tspan
+                        font-family="Helvetica"
+                        font-size="16"
+                        font-weight="400"
+                        fill="black"
+                        x="0"
+                        y="15"
+                        xml:space="preserve"
+                    >Typ</tspan>
+        </text>
+      </g>
+      <g id="Graphic_14">
+        <text transform="translate(446.3965 787.5)" fill="black">
+          <tspan
+                        font-family="Helvetica"
+                        font-size="16"
+                        font-weight="400"
+                        fill="black"
+                        x="0"
+                        y="15"
+                        xml:space="preserve"
+                    >CPU</tspan>
+        </text>
+      </g>
+      <g id="Graphic_21">
+        <text transform="translate(138.82422 704.8516)" fill="white">
+          <tspan
+                        font-family="Helvetica"
+                        font-size="16"
+                        font-weight="400"
+                        fill="white"
+                        x="0"
+                        y="15"
+                        xml:space="preserve"
+                    >Interpreter</tspan>
+        </text>
+      </g>
+      <g id="Graphic_27">
+        <text transform="translate(151.71094 354.54688)" fill="black">
+          <tspan
+                        font-family="Helvetica"
+                        font-size="16"
+                        font-weight="700"
+                        fill="black"
+                        x="0"
+                        y="15"
+                        xml:space="preserve"
+                    >java </tspan>
+          <tspan
+                        font-family="Helvetica"
+                        font-size="16"
+                        font-weight="400"
+                        fill="black"
+                        x="0"
+                        y="34"
+                        xml:space="preserve"
+                    >node </tspan>
+          <tspan
+                        font-family="Helvetica"
+                        font-size="16"
+                        font-weight="400"
+                        fill="black"
+                        x="0"
+                        y="53"
+                        xml:space="preserve"
+                    >python </tspan>
+          <tspan
+                        font-family="Helvetica"
+                        font-size="16"
+                        font-weight="400"
+                        fill="black"
+                        x="0"
+                        y="72"
+                        xml:space="preserve"
+                    >bash </tspan>
+          <tspan
+                        font-family="Helvetica"
+                        font-size="16"
+                        font-weight="400"
+                        fill="black"
+                        x="0"
+                        y="91"
+                        xml:space="preserve"
+                    >…</tspan>
+        </text>
+      </g>
+      <g id="Line_40">
+        <line
+                    x1="175.73047"
+                    y1="515.9961"
+                    x2="175.73047"
+                    y2="681.1234"
+                    marker-end="url(#FilledArrow_Marker)"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                />
+      </g>
+    </g>
+  </g>
+</svg>
