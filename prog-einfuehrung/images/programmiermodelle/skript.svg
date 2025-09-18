@@ -7,78 +7,13 @@
     version="1.1"
     xmlns:dc="http://purl.org/dc/elements/1.1/"
     viewBox="45 310 780 502"
-    width="780"
-    height="502"
+    width="1560"
+    height="1004"
 >
+  <style>
+    @import url('/LectureDoc2/ext/fonts/ld-fonts.css');
+  </style>
   <defs>
-    <font-face
-            font-family="Helvetica"
-            font-size="18"
-            units-per-em="1000"
-            underline-position="-75.68359"
-            underline-thickness="49.316406"
-            slope="0"
-            x-height="532.22656"
-            cap-height="719.7266"
-            ascent="770.0195"
-            descent="-229.98047"
-            font-weight="700"
-        >
-      <font-face-src>
-        <font-face-name name="Helvetica-Bold" />
-      </font-face-src>
-    </font-face>
-    <font-face
-            font-family="Courier"
-            font-size="16"
-            units-per-em="1000"
-            underline-position="-178.22266"
-            underline-thickness="57.61719"
-            slope="0"
-            x-height="456.54297"
-            cap-height="586.91406"
-            ascent="753.90625"
-            descent="-246.09375"
-            font-weight="400"
-        >
-      <font-face-src>
-        <font-face-name name="Courier" />
-      </font-face-src>
-    </font-face>
-    <font-face
-            font-family="Helvetica"
-            font-size="16"
-            units-per-em="1000"
-            underline-position="-75.68359"
-            underline-thickness="49.316406"
-            slope="0"
-            x-height="522.9492"
-            cap-height="717.28516"
-            ascent="770.0195"
-            descent="-229.98047"
-            font-weight="400"
-        >
-      <font-face-src>
-        <font-face-name name="Helvetica" />
-      </font-face-src>
-    </font-face>
-    <font-face
-            font-family="Helvetica"
-            font-size="16"
-            units-per-em="1000"
-            underline-position="-75.68359"
-            underline-thickness="49.316406"
-            slope="0"
-            x-height="532.22656"
-            cap-height="719.7266"
-            ascent="770.0195"
-            descent="-229.98047"
-            font-weight="700"
-        >
-      <font-face-src>
-        <font-face-name name="Helvetica-Bold" />
-      </font-face-src>
-    </font-face>
     <marker
             orient="auto"
             overflow="visible"
@@ -128,7 +63,7 @@
       <g id="Graphic_2">
         <text transform="translate(151.71094 319.08594)" fill="black">
           <tspan
-                        font-family="Helvetica"
+                        font-family="Noto Sans Display"
                         font-size="18"
                         font-weight="700"
                         fill="black"
@@ -141,7 +76,7 @@
       <g id="Graphic_7">
         <text transform="translate(127.72266 472.9961)" fill="black">
           <tspan
-                        font-family="Courier"
+                        font-family="Victor Mono"
                         font-size="16"
                         font-weight="400"
                         fill="black"
@@ -150,7 +85,7 @@
                         xml:space="preserve"
                     >Datei mit</tspan>
           <tspan
-                        font-family="Courier"
+                        font-family="Victor Mono"
                         font-size="16"
                         font-weight="400"
                         fill="black"
@@ -187,7 +122,7 @@
       <g id="Graphic_12">
         <text transform="translate(51.45703 800.0156) rotate(-90)" fill="black">
           <tspan
-                        font-family="Helvetica"
+                        font-family="Noto Sans Display"
                         font-size="16"
                         font-weight="400"
                         fill="black"
@@ -196,7 +131,7 @@
                         xml:space="preserve"
                     >Ausführungs-</tspan>
           <tspan
-                        font-family="Helvetica"
+                        font-family="Noto Sans Display"
                         font-size="16"
                         font-weight="400"
                         fill="black"
@@ -209,7 +144,7 @@
       <g id="Graphic_35">
         <text transform="translate(51.45703 435.1875) rotate(-90)" fill="black">
           <tspan
-                        font-family="Helvetica"
+                        font-family="Noto Sans Display"
                         font-size="16"
                         font-weight="400"
                         fill="black"
@@ -222,7 +157,7 @@
       <g id="Graphic_36">
         <text transform="translate(51.45703 529.2422) rotate(-90)" fill="black">
           <tspan
-                        font-family="Helvetica"
+                        font-family="Noto Sans Display"
                         font-size="16"
                         font-weight="400"
                         fill="black"
@@ -235,7 +170,7 @@
       <g id="Graphic_37">
         <text transform="translate(51.45703 341.08594) rotate(-90)" fill="black">
           <tspan
-                        font-family="Helvetica"
+                        font-family="Noto Sans Display"
                         font-size="16"
                         font-weight="400"
                         fill="black"
@@ -248,7 +183,7 @@
       <g id="Graphic_14">
         <text transform="translate(446.3965 787.5)" fill="black">
           <tspan
-                        font-family="Helvetica"
+                        font-family="Noto Sans Display"
                         font-size="16"
                         font-weight="400"
                         fill="black"
@@ -261,7 +196,7 @@
       <g id="Graphic_21">
         <text transform="translate(138.82422 704.8516)" fill="white">
           <tspan
-                        font-family="Helvetica"
+                        font-family="Noto Sans Display"
                         font-size="16"
                         font-weight="400"
                         fill="white"
@@ -274,7 +209,7 @@
       <g id="Graphic_27">
         <text transform="translate(151.71094 354.54688)" fill="black">
           <tspan
-                        font-family="Helvetica"
+                        font-family="Noto Sans Display"
                         font-size="16"
                         font-weight="700"
                         fill="black"
@@ -283,7 +218,7 @@
                         xml:space="preserve"
                     >java </tspan>
           <tspan
-                        font-family="Helvetica"
+                        font-family="Noto Sans Display"
                         font-size="16"
                         font-weight="400"
                         fill="black"
@@ -292,7 +227,7 @@
                         xml:space="preserve"
                     >node </tspan>
           <tspan
-                        font-family="Helvetica"
+                        font-family="Noto Sans Display"
                         font-size="16"
                         font-weight="400"
                         fill="black"
@@ -301,7 +236,7 @@
                         xml:space="preserve"
                     >python </tspan>
           <tspan
-                        font-family="Helvetica"
+                        font-family="Noto Sans Display"
                         font-size="16"
                         font-weight="400"
                         fill="black"
@@ -310,7 +245,7 @@
                         xml:space="preserve"
                     >bash </tspan>
           <tspan
-                        font-family="Helvetica"
+                        font-family="Noto Sans Display"
                         font-size="16"
                         font-weight="400"
                         fill="black"

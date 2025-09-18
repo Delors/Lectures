@@ -7,44 +7,13 @@
     xmlns:dc="http://purl.org/dc/elements/1.1/"
     xmlns:xl="http://www.w3.org/1999/xlink"
     viewBox="45 310 780 502"
-    width="780"
-    height="502"
+    width="1560"
+    height="1004"
 >
+  <style>
+    @import url('/LectureDoc2/ext/fonts/ld-fonts.css');
+  </style>
   <defs>
-    <font-face
-            font-family="Helvetica"
-            font-size="18"
-            units-per-em="1000"
-            underline-position="-75.68359"
-            underline-thickness="49.316406"
-            slope="0"
-            x-height="532.22656"
-            cap-height="719.7266"
-            ascent="770.0195"
-            descent="-229.98047"
-            font-weight="700"
-        >
-      <font-face-src>
-        <font-face-name name="Helvetica-Bold" />
-      </font-face-src>
-    </font-face>
-    <font-face
-            font-family="Courier"
-            font-size="16"
-            units-per-em="1000"
-            underline-position="-178.22266"
-            underline-thickness="57.61719"
-            slope="0"
-            x-height="456.54297"
-            cap-height="586.91406"
-            ascent="753.90625"
-            descent="-246.09375"
-            font-weight="400"
-        >
-      <font-face-src>
-        <font-face-name name="Courier" />
-      </font-face-src>
-    </font-face>
     <marker
             orient="auto"
             overflow="visible"
@@ -66,23 +35,6 @@
                 />
       </g>
     </marker>
-    <font-face
-            font-family="Helvetica"
-            font-size="16"
-            units-per-em="1000"
-            underline-position="-75.68359"
-            underline-thickness="49.316406"
-            slope="0"
-            x-height="522.9492"
-            cap-height="717.28516"
-            ascent="770.0195"
-            descent="-229.98047"
-            font-weight="400"
-        >
-      <font-face-src>
-        <font-face-name name="Helvetica" />
-      </font-face-src>
-    </font-face>
   </defs>
   <metadata> Produced by OmniGraffle 8.0\n2024-10-24 13:25:07 +0000</metadata>
   <g
@@ -105,7 +57,7 @@
       <g id="Graphic_119">
         <text transform="translate(487.2363 319.08594)" fill="black">
           <tspan
-                        font-family="Helvetica"
+                        font-family="Noto Sans Display"
                         font-size="18"
                         font-weight="700"
                         fill="black"
@@ -118,7 +70,7 @@
       <g id="Graphic_114">
         <text transform="translate(517.14844 472.9961)" fill="black">
           <tspan
-                        font-family="Courier"
+                        font-family="Victor Mono"
                         font-size="16"
                         font-weight="400"
                         fill="black"
@@ -127,7 +79,7 @@
                         xml:space="preserve"
                     >Dateien mit </tspan>
           <tspan
-                        font-family="Courier"
+                        font-family="Victor Mono"
                         font-size="16"
                         font-weight="400"
                         fill="black"
@@ -140,7 +92,7 @@
       <g id="Graphic_113">
         <text transform="translate(531.5508 766.0234)" fill="white">
           <tspan
-                        font-family="Courier"
+                        font-family="Victor Mono"
                         font-size="16"
                         font-weight="400"
                         fill="white"
@@ -168,7 +120,7 @@
       <g id="Graphic_90">
         <text transform="translate(580.1211 594.91406)" fill="black">
           <tspan
-                        font-family="Helvetica"
+                        font-family="Noto Sans Display"
                         font-size="16"
                         font-weight="400"
                         fill="black"

@@ -7,8 +7,8 @@
     xmlns:xl="http://www.w3.org/1999/xlink"
     xmlns:dc="http://purl.org/dc/elements/1.1/"
     viewBox="53.67678 239.3828 714.2755 86.34399"
-width="1428"
-height="172"
+    width="1428"
+    height="172"
 >
   <style>
     @import url('/LectureDoc2/ext/fonts/ld-fonts.css');
@@ -39,7 +39,7 @@ height="172"
                 />
         <text transform="translate(69.17678 254.8828)" fill="white">
           <tspan
-                        font-family="Helvetica Neue"
+                        font-family="Noto Sans Display"
                         font-size="16"
                         font-weight="400"
                         fill="white"
@@ -48,7 +48,7 @@ height="172"
                         xml:space="preserve"
                     >Lösungskonzept</tspan>
           <tspan
-                        font-family="Helvetica Neue"
+                        font-family="Noto Sans Display"
                         font-size="16"
                         font-weight="400"
                         fill="white"
@@ -72,7 +72,7 @@ height="172"
                 />
         <text transform="translate(312.25453 254.8828)" fill="white">
           <tspan
-                        font-family="Helvetica Neue"
+                        font-family="Noto Sans Display"
                         font-size="16"
                         font-weight="400"
                         fill="white"
@@ -102,7 +102,7 @@ height="172"
                 />
         <text transform="translate(543.5243 254.8828)" fill="white">
           <tspan
-                        font-family="Helvetica Neue"
+                        font-family="Noto Sans Display"
                         font-size="16"
                         font-weight="400"
                         fill="white"
@@ -111,7 +111,7 @@ height="172"
                         xml:space="preserve"
                     >Programm </tspan>
           <tspan
-                        font-family="Helvetica Neue"
+                        font-family="Noto Sans Display"
                         font-size="16"
                         font-weight="400"
                         fill="white"
@@ -120,7 +120,7 @@ height="172"
                         xml:space="preserve"
                     >in </tspan>
           <tspan
-                        font-family="Helvetica Neue"
+                        font-family="Noto Sans Display"
                         font-size="16"
                         font-weight="400"
                         fill="white"

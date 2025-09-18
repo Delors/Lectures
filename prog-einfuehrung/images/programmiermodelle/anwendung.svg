@@ -7,96 +7,13 @@
     xmlns:dc="http://purl.org/dc/elements/1.1/"
     xmlns:xl="http://www.w3.org/1999/xlink"
     viewBox="45 310 780 502"
-    width="780"
-    height="502"
+    width="1560"
+    height="1004"
 >
+  <style>
+    @import url('/LectureDoc2/ext/fonts/ld-fonts.css');
+  </style>
   <defs>
-    <font-face
-            font-family="Helvetica"
-            font-size="18"
-            units-per-em="1000"
-            underline-position="-75.68359"
-            underline-thickness="49.316406"
-            slope="0"
-            x-height="532.22656"
-            cap-height="719.7266"
-            ascent="770.0195"
-            descent="-229.98047"
-            font-weight="700"
-        >
-      <font-face-src>
-        <font-face-name name="Helvetica-Bold" />
-      </font-face-src>
-    </font-face>
-    <font-face
-            font-family="Courier"
-            font-size="16"
-            units-per-em="1000"
-            underline-position="-178.22266"
-            underline-thickness="57.61719"
-            slope="0"
-            x-height="456.54297"
-            cap-height="586.91406"
-            ascent="753.90625"
-            descent="-246.09375"
-            font-weight="400"
-        >
-      <font-face-src>
-        <font-face-name name="Courier" />
-      </font-face-src>
-    </font-face>
-    <font-face
-            font-family="Helvetica"
-            font-size="16"
-            units-per-em="1000"
-            underline-position="-75.68359"
-            underline-thickness="49.316406"
-            slope="0"
-            x-height="522.9492"
-            cap-height="717.28516"
-            ascent="770.0195"
-            descent="-229.98047"
-            font-weight="400"
-        >
-      <font-face-src>
-        <font-face-name name="Helvetica" />
-      </font-face-src>
-    </font-face>
-    <font-face
-            font-family="Helvetica"
-            font-size="16"
-            units-per-em="1000"
-            underline-position="-75.68359"
-            underline-thickness="49.316406"
-            slope="-750"
-            x-height="522.9492"
-            cap-height="717.28516"
-            ascent="770.0195"
-            descent="-229.98047"
-            font-style="italic"
-            font-weight="400"
-        >
-      <font-face-src>
-        <font-face-name name="Helvetica-Oblique" />
-      </font-face-src>
-    </font-face>
-    <font-face
-            font-family="Helvetica"
-            font-size="16"
-            units-per-em="1000"
-            underline-position="-75.68359"
-            underline-thickness="49.316406"
-            slope="0"
-            x-height="532.22656"
-            cap-height="719.7266"
-            ascent="770.0195"
-            descent="-229.98047"
-            font-weight="700"
-        >
-      <font-face-src>
-        <font-face-name name="Helvetica-Bold" />
-      </font-face-src>
-    </font-face>
     <marker
             orient="auto"
             overflow="visible"
@@ -153,7 +70,7 @@
       <g id="Graphic_80">
         <text transform="translate(302.28662 319.08594)" fill="black">
           <tspan
-                        font-family="Helvetica"
+                        font-family="Noto Sans Display"
                         font-size="18"
                         font-weight="700"
                         fill="black"
@@ -166,7 +83,7 @@
       <g id="Graphic_76">
         <text transform="translate(296.16797 472.9961)" fill="black">
           <tspan
-                        font-family="Courier"
+                        font-family="Victor Mono"
                         font-size="16"
                         font-weight="400"
                         fill="black"
@@ -175,7 +92,7 @@
                         xml:space="preserve"
                     >Dateien mit </tspan>
           <tspan
-                        font-family="Courier"
+                        font-family="Victor Mono"
                         font-size="16"
                         font-weight="400"
                         fill="black"
@@ -188,7 +105,7 @@
       <g id="Graphic_75">
         <text transform="translate(280.85156 576.77344)" fill="black">
           <tspan
-                        font-family="Helvetica"
+                        font-family="Noto Sans Display"
                         font-size="16"
                         font-weight="400"
                         fill="black"
@@ -197,7 +114,7 @@
                         xml:space="preserve"
                     >Zwischendarstellung</tspan>
           <tspan
-                        font-family="Helvetica"
+                        font-family="Noto Sans Display"
                         font-size="16"
                         font-style="italic"
                         font-weight="400"
@@ -207,7 +124,7 @@
                         xml:space="preserve"
                     >Intermediate </tspan>
           <tspan
-                        font-family="Helvetica"
+                        font-family="Noto Sans Display"
                         font-size="16"
                         font-style="italic"
                         font-weight="400"
@@ -221,7 +138,7 @@
       <g id="Graphic_65">
         <text transform="translate(291.73975 704.8516)" fill="white">
           <tspan
-                        font-family="Helvetica"
+                        font-family="Noto Sans Display"
                         font-size="16"
                         font-weight="400"
                         fill="white"
@@ -230,7 +147,7 @@
                         xml:space="preserve"
                     >Virtuelle </tspan>
           <tspan
-                        font-family="Helvetica"
+                        font-family="Noto Sans Display"
                         font-size="16"
                         font-weight="400"
                         fill="white"
@@ -243,7 +160,7 @@
       <g id="Graphic_61">
         <text transform="translate(333.7578 354.54688)" fill="black">
           <tspan
-                        font-family="Helvetica"
+                        font-family="Noto Sans Display"
                         font-size="16"
                         font-weight="700"
                         fill="black"
@@ -252,7 +169,7 @@
                         xml:space="preserve"
                     >javac</tspan>
           <tspan
-                        font-family="Helvetica"
+                        font-family="Noto Sans Display"
                         font-size="16"
                         font-weight="400"
                         fill="black"
@@ -307,7 +224,7 @@
       <g id="Graphic_52">
         <text transform="translate(358.2422 531.0293)" fill="black">
           <tspan
-                        font-family="Helvetica"
+                        font-family="Noto Sans Display"
                         font-size="16"
                         font-weight="400"
                         fill="black"
@@ -320,7 +237,7 @@
       <g id="Graphic_51">
         <text transform="translate(397.49805 647.27734)" fill="black">
           <tspan
-                        font-family="Helvetica"
+                        font-family="Noto Sans Display"
                         font-size="16"
                         font-weight="400"
                         fill="black"
@@ -329,7 +246,7 @@
                         xml:space="preserve"
                     >Just-in-time</tspan>
           <tspan
-                        font-family="Helvetica"
+                        font-family="Noto Sans Display"
                         font-size="16"
                         font-weight="400"
                         fill="black"
