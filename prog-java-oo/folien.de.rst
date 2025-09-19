@@ -1,5 +1,5 @@
 .. meta::
-    :version: genesis
+    :version: renaissance
     :lang: de
     :author: Michael Eichberg
     :keywords: "Programmierung", "Java", "Objektorientierung", "Software Development"
@@ -72,12 +72,13 @@ Was ist Objektorientierte Programmierung?
 Klassen
 --------------------
 
-.. container:: scrollable
+.. story::
 
     :Klasse: Ein Bauplan für Objekte, der beschreibt, welche Daten bzw. Attribute und Methoden ein Objekt haben kann.
 
     :Syntax:
             .. code:: java
+                :number-lines:
 
                 <Modifikator>* class <Klassenname> {
                   (<Attributdeklarationen>|<Methodendeklarationen>)*
@@ -92,7 +93,8 @@ Klassen
         .. rubric:: :java:`Auto` ist eine Klasse.
 
         .. code:: java
-            :class: far-smaller copy-to-clipboard
+            :number-lines:
+            :class: copy-to-clipboard
 
             class Auto {
                 // Attribute (gel. auch Felder (bzw. Fields) genannt)
@@ -105,12 +107,13 @@ Klassen
                 }
             }
 
-    .. container:: incremental margin-top-1em
+    .. container:: incremental
 
         .. rubric:: :java:`Button` (bei der Modellierung grafischer Benutzeroberflächen) ist eine Klasse.
 
         .. code:: java
-            :class: far-smaller copy-to-clipboard
+            :number-lines:
+            :class: copy-to-clipboard
 
             class Button {
                 private String text;
@@ -124,7 +127,8 @@ Klassen
         .. rubric:: :java:`BigDecimal` (zur Repräsentation von Dezimalzahlen mit „beliebiger“ Präzision) ist eine Klasse.
 
         .. code:: java
-            :class: far-smaller copy-to-clipboard
+            :number-lines:
+            :class: copy-to-clipboard
 
             class BigDecimal {
                 private int scale;
@@ -138,7 +142,8 @@ Klassen
         .. rubric:: :java:`File` (zum Zugriff auf Dateien) ist eine Klasse.
 
         .. code:: java
-            :class: far-smaller copy-to-clipboard
+            :number-lines:
+            :class: copy-to-clipboard
 
             class File {
                 private String name;
@@ -146,11 +151,11 @@ Klassen
                 void read() { ... }
             }
 
-    .. container:: incremental margin-top-1em box-shadow rounded-corners padding-1em margin-1em
+    .. container:: accentuate
 
         Klassen ermöglichen es uns über konkrete Objekte zu **abstrahieren**: Klassen sind eine Beschreibung vieler Objekte mit gleichen Eigenschaften und Verhalten.
 
-    .. container:: incremental margin-top-1em box-shadow rounded-corners padding-1em margin-1em
+    .. container:: accentuate
 
         Durch die Verwendung von Sichtbarkeiten (insbesondere :java:`private` und ggf. :java:`protected`) ist der Zugriff auf die Attribute und Methoden einer Klasse von außen kontrollierbar. Wir sprechen hier von **Kapselung**.
 
@@ -176,33 +181,28 @@ Sichtweisen:
 Objekterzeugung/Instanziierung einer Java Klasse
 --------------------------------------------------
 
-.. container:: scrollable
+.. story::
 
     Um ein Objekt zu erzeugen bzw. eine Klasse zu instanziiern, wird der :java:`new` Operator verwendet. Der :java:`new` Operator ...
 
-    .. class:: incremental
+    .. class:: incremental-list
 
     - reserviert den benötigten Speicher für die Attribute, und stellt sicher, dass alle Attribute mit dem Defaultwert initialisiert sind.
-
-    .. class:: incremental
 
     - ruft dann den *Konstruktor* der Klasse auf.
 
       Der Konstruktor ist eine spezielle Methode, die einmalig beim Erzeugen eines Objekts aufgerufen wird und der Initialisierung des Objekts dient.
 
-
-    .. class:: incremental
+    .. class:: incremental-list
 
     :Syntax: :java:`new <Klassenname>(<Parameter>)`
-
-    .. class:: incremental
 
     :Beispiel:
 
         `meinAuto` referenziert ein Objekt der Klasse `Auto`.
 
         .. code:: java
-            :class: far-smaller faded-to-white copy-to-clipboard
+            :class: fade-out copy-to-clipboard
 
             class Auto {
                 String marke;           // der Standardwert ist null
@@ -212,7 +212,7 @@ Objekterzeugung/Instanziierung einer Java Klasse
             }
 
         .. code:: java
-            :class: far-smaller copy-to-clipboard
+            :class: copy-to-clipboard
 
             var meinAuto = new Auto(); // Aufruf des impliziten Konstruktors
 
@@ -228,16 +228,17 @@ Objekterzeugung/Instanziierung einer Java Klasse
 Variablen, die auf Objekte verweisen
 --------------------------------------------------
 
-.. stack::
+.. deck::
 
-    .. layer::
+    .. card::
 
          :Beispiel:
 
             Deklaration und Initialisierung einer Objektvariablen.
 
             .. code:: java
-                :class: far-smaller faded-to-white copy-to-clipboard
+                :number-lines:
+                :class: fade-out copy-to-clipboard
 
                 class Rectangle {
                     int width;
@@ -247,18 +248,20 @@ Variablen, die auf Objekte verweisen
                 }
 
             .. code:: java
-                :class: far-smaller copy-to-clipboard
+                :number-lines:
+                :class: copy-to-clipboard
 
                 Rectangle a = new Rectangle();
 
             bzw.
 
             .. code:: java
-                :class: far-smaller copy-to-clipboard
+                :number-lines:
+                :class: copy-to-clipboard
 
                 var b = new Rectangle();
 
-    .. layer:: incremental
+    .. card::
 
         - Objektvariablen sind *Referenzvariablen* und werden durch den Klassennamen gefolgt von einem Variablennamen deklariert.
 
@@ -274,7 +277,7 @@ Variablen, die auf Objekte verweisen
         - Wie bei Arrays ist der Standardwert für Objektvariablen :java:`null` und bedeutet, dass diese Variable auf *kein* Objekt verweist.
 
 
-    .. layer:: incremental
+    .. card::
 
         - Der Typ der Variablen ist durch die Klasse bestimmt.
         - Der Name des Typs ist somit der Klassenname.
@@ -285,7 +288,8 @@ Variablen, die auf Objekte verweisen
         :Beispiel:
 
             .. code:: java
-                :class: far-smaller copy-to-clipboard
+                :number-lines:
+                :class: copy-to-clipboard
 
                 boolean compare(Rectangle a, Rectangle b) { } // Parameter
                 Person copy(Person a) { }                     // Rückgabetyp
@@ -298,21 +302,21 @@ Variablen, die auf Objekte verweisen
                 Rectangle[] rs = new Rectangle[]{new Rectangle(), new Rectangle()};
 
 
-    .. layer:: incremental
+    .. card::
 
         .. rubric:: Exemplarische Speicherbelegung
 
         .. code:: java
-            :class: far-smaller copy-to-clipboard
+            :number-lines:
+            :class: copy-to-clipboard
 
             Rectangle a = new Rectangle();
             Rectangle b = a;
 
         .. image:: images/objekte.svg
             :alt: Objekte im Speicher
-            :width: 100%
+            :width: 1800px
             :align: center
-            :class: margin-top-1em
 
 
 
@@ -323,7 +327,7 @@ Verweist keine Referenzvariable mehr auf ein Objekt im Speicher, dann wird es au
 
 Es ist insbesondere nicht notwendig, Referenzvariablen auf :java:`null` zu setzen.
 
-.. container:: incremental bold box-shadow rounded-corners padding-1em margin-1em dhbw-red-background white
+.. container:: accentuate
 
     Java unterstützt automatische *Garbage Collection*.
 
@@ -332,7 +336,7 @@ Es ist insbesondere nicht notwendig, Referenzvariablen auf :java:`null` zu setze
 Objekte und die Selbstreferenz `this`
 ------------------------------------------
 
-.. container:: scrollable
+.. story::
 
     :Objekt: Eine Instanz einer Klasse.
 
@@ -344,7 +348,8 @@ Objekte und die Selbstreferenz `this`
 
         .. include:: code/Auto.java
             :code: java
-            :class: far-smaller copy-to-clipboard
+            :number-lines:
+            :class: copy-to-clipboard
             :end-before: void main() {
 
 .. supplemental::
@@ -357,20 +362,21 @@ Objekte und die Selbstreferenz `this`
 Explizite Konstruktoren
 ---------------------------------------------------------
 
-.. stack::
+.. deck::
 
-    .. layer::
+    .. card::
 
         Ein Konstruktor hat immer den Namen der Klasse und kann Parameter enthalten. Ein Konstruktor hat keinen Rückgabewert.
 
         :Syntax: :java:`<Klassenname>(<Parameter>) { ... }`
 
-    .. layer:: incremental
+    .. card::
 
         :Beispiel:
 
             .. code:: java
-                :class: far-smaller copy-to-clipboard
+                :number-lines:
+                :class: copy-to-clipboard
 
                 class Auto {
                     String marke;           // der Standardwert ist null
@@ -385,18 +391,20 @@ Explizite Konstruktoren
                 }
 
             .. code:: java
-                :class: far-smaller incremental copy-to-clipboard
+                :number-lines:
+                :class: incremental copy-to-clipboard
 
                 var meinAuto = new Auto("BMW",0); // Aufruf des Konstruktors
 
-    .. layer:: incremental
+    .. card::
 
         Ein Konstruktor kann auch andere Konstruktoren der Klasse aufrufen.  Der „Methodenname“ der anderen Konstruktoren ist in diesem Fall :java:`this`.
 
         :Beispiel:
 
             .. code:: java
-                :class: far-smaller copy-to-clipboard
+                :number-lines:
+                :class: copy-to-clipboard
 
                 class Auto {
                     String marke;
@@ -412,11 +420,12 @@ Explizite Konstruktoren
                 }
 
             .. code:: java
-                :class: far-smaller incremental copy-to-clipboard
+                :number-lines:
+                :class: incremental copy-to-clipboard
 
                 void main() {  new Auto("VW", 0); }
 
-    .. layer:: incremental
+    .. card::
 
         .. attention::
 
@@ -429,12 +438,13 @@ Explizite Konstruktoren
 
             Erst seit Java 22 ist es überhaupt möglich, dass vor dem Aufruf eines anderen Konstruktors Code ausgeführt werden darf.
 
-    .. layer:: incremental
+    .. card::
 
         :Beispiel (seit Java 22):
 
             .. code:: java
-                :class: far-smaller copy-to-clipboard
+                :number-lines:
+                :class: copy-to-clipboard
 
                 class Auto {
                     String marke; int geschwindigkeit;
@@ -453,7 +463,7 @@ Explizite Konstruktoren
 
 
 
-    .. layer:: incremental
+    .. card::
 
         .. rubric:: Initialisierungsfolge
 
@@ -482,7 +492,8 @@ Auf sichtbare Attribute und Methoden eines beliebigen Objektes kann über den **
 
 
     .. code:: java
-        :class: far-smaller faded-to-white
+        :number-lines:
+        :class: fade-out
 
         class Auto {
             String marke;
@@ -491,7 +502,7 @@ Auf sichtbare Attribute und Methoden eines beliebigen Objektes kann über den **
         }
 
     .. code:: java
-        :class: far-smaller
+        :number-lines:
 
         var meinAuto = new Auto();
         meinAuto.marke = "BMW";
@@ -515,7 +526,8 @@ Kapselung (:eng:`Encapsulation`)\ [#]_
     - Kontrollierter Zugriff auf die Daten; fördert die Wartbarkeit
 
     .. code:: java
-        :class: far-smaller copy-to-clipboard
+        :number-lines:
+        :class: copy-to-clipboard
 
         class Auto {
             private int geschwindigkeit;
@@ -538,7 +550,7 @@ Kapselung (:eng:`Encapsulation`)\ [#]_
 
 
 
-.. class:: integrated-exercise transition-move-to-top
+.. class:: exercises transition-move-to-top
 
 Übung
 --------------------------------------------------
@@ -570,32 +582,32 @@ Kapselung (:eng:`Encapsulation`)\ [#]_
         .. include:: code/bibliothek_v1/Benutzer.java
             :code: java
             :number-lines:
-            :class: far-smaller copy-to-clipboard
+            :class: copy-to-clipboard
 
         .. rubric:: Bibliothek.java
 
         .. include:: code/bibliothek_v1/Bibliothek.java
             :code: java
             :number-lines:
-            :class: far-smaller copy-to-clipboard
+            :class: copy-to-clipboard
 
         .. rubric:: Buch.java
 
         .. include:: code/bibliothek_v1/Buch.java
             :code: java
             :number-lines:
-            :class: far-smaller copy-to-clipboard
+            :class: copy-to-clipboard
 
         .. rubric:: Exemplar.java
 
         .. include:: code/bibliothek_v1/Exemplar.java
             :code: java
             :number-lines:
-            :class: far-smaller copy-to-clipboard
+            :class: copy-to-clipboard
 
 
 
-.. class:: integrated-exercise transition-move-to-top
+.. class:: exercises transition-move-to-top
 
 Übung
 --------------------------------------------------
@@ -623,35 +635,35 @@ Kapselung (:eng:`Encapsulation`)\ [#]_
         .. include:: code/bibliothek_v2/Benutzer.java
             :code: java
             :number-lines:
-            :class: far-smaller copy-to-clipboard
+            :class: copy-to-clipboard
 
         .. rubric:: Bibliothek.java
 
         .. include:: code/bibliothek_v2/Bibliothek.java
             :code: java
             :number-lines:
-            :class: far-smaller copy-to-clipboard
+            :class: copy-to-clipboard
 
         .. rubric:: Buch.java
 
         .. include:: code/bibliothek_v2/Buch.java
             :code: java
             :number-lines:
-            :class: far-smaller copy-to-clipboard
+            :class: copy-to-clipboard
 
         .. rubric:: Exemplar.java
 
         .. include:: code/bibliothek_v2/Exemplar.java
             :code: java
             :number-lines:
-            :class: far-smaller copy-to-clipboard
+            :class: copy-to-clipboard
 
 .. supplemental::
 
     Fehlerbehandlung und Validierung der Eingaben sind *noch nicht* notwendig.
 
 
-.. class:: integrated-exercise transition-move-to-top
+.. class:: exercises transition-move-to-top
 
 Übung
 --------------------------------------------------
@@ -674,14 +686,12 @@ Kapselung (:eng:`Encapsulation`)\ [#]_
         .. include:: code/patientenakte_v1/Patient.java
             :code: java
             :number-lines:
-            :class: far-smaller
 
         .. rubric:: Main.java
 
         .. include:: code/patientenakte_v1/Main.java
             :code: java
             :number-lines:
-            :class: far-smaller
 
 .. supplemental::
 
@@ -689,7 +699,7 @@ Kapselung (:eng:`Encapsulation`)\ [#]_
 
 
 
-.. class:: integrated-exercise transition-move-to-top
+.. class:: exercises transition-move-to-top
 
 Übung
 --------------------------------------------------
@@ -712,14 +722,12 @@ Kapselung (:eng:`Encapsulation`)\ [#]_
         .. include:: code/patientenakte_v2/Patient.java
             :code: java
             :number-lines:
-            :class: far-smaller
 
         .. rubric:: Main.java
 
         .. include:: code/patientenakte_v2/Main.java
             :code: java
             :number-lines:
-            :class: far-smaller
 
 .. supplemental::
 
@@ -729,7 +737,7 @@ Kapselung (:eng:`Encapsulation`)\ [#]_
 
 
 
-.. class:: integrated-exercise transition-move-to-top
+.. class:: exercises transition-move-to-top
 
 Übung
 --------------------------------------------------
@@ -756,14 +764,12 @@ Kapselung (:eng:`Encapsulation`)\ [#]_
         .. include:: code/patientenakte_v3/Arzt.java
             :code: java
             :number-lines:
-            :class: far-smaller
 
         .. rubric:: Main.java
 
         .. include:: code/patientenakte_v3/Main.java
             :code: java
             :number-lines:
-            :class: far-smaller
 
 .. supplemental::
 
