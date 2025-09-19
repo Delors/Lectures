@@ -1,12 +1,12 @@
 .. meta::
-   :version: genesis
+   :version: renaissance
    :lang: de
    :author: Michael Eichberg
    :keywords: "Programmierung", "Java", "Objektorientierung"
    :description lang=de: Kontrollfragen zu Objektorientierter Programmierung in Java
    :id: lecture-prog-java-oo-kontrollfragen
    :first-slide: last-viewed
-   :exercises-master-password: WirklichSchwierig!
+   :master-password: WirklichSchwierig!
 
 .. include:: ../docutils.defs
 
@@ -21,16 +21,19 @@ Kontrollfragen: Objekt-orientierte Programmierung - Vererbung und Polymorphie
 
 
 
+.. class:: new-section
+
+Grundlagen
+------------
+
+
 Kontrollfragen
 ----------------
 
-.. container:: scrollable
-
-   .. class:: incremental long-list
-
-   1. \
+.. story::
 
       .. exercise:: Ober- und Unterklassen
+         :class: incremental
 
          1. :java:`class X extends Y { ... }` - Welches ist die Oberklasse und welches die Unterklasse?
          2. :java:`class Z extends Y { ... }` - Ist Z eine Unterklasse von X?
@@ -41,10 +44,8 @@ Kontrollfragen
             1. X ist die Unterklasse und Y die Oberklasse.
             2. Nein, Z ist keine Unterklasse von X.
 
-
-   2.
-
-       .. exercise:: Statischer und dynamischer Typ
+      .. exercise:: Statischer und dynamischer Typ
+         :class: incremental
 
          .. container:: two-columns
 
@@ -55,13 +56,13 @@ Kontrollfragen
             .. container:: column
 
                .. code:: java
-                  :class: smaller
+                  :number-lines:
 
                   class X extends Y { ... }
                   class Z extends Y { ... }
                   Y y = new X();
 
-         .. class:: incremental
+         .. class:: incremental-list
 
          1. Welches ist der statische und welches der dynamische Typ von :java:`y`?
          2. Kann ich :java:`y` auch mit einem Objekt vom Typ Z initialisieren?
@@ -80,9 +81,8 @@ Kontrollfragen
             5. Mit :java:`if (y instanceof X) { ... }`
             6. Es wird `false` von `instanceof` zurückgegeben.
 
-   3.
-
-       .. exercise:: Methoden
+      .. exercise:: Methoden
+         :class: incremental
 
          .. class:: incremental
 
@@ -102,9 +102,8 @@ Kontrollfragen
             4. Mit :java:`super.methodName()`.
             5. Jede Klasse erbt von der Klasse :java:`Object` insbesondere die Methode :java:`toString()`, :java:`equals(Object o)` und :java:`hashCode()`. Diese Methoden können in jeder Klasse überschrieben werden.
 
-   4.
-
-       .. exercise:: Überschriebene Methoden
+      .. exercise:: Überschriebene Methoden
+         :class: incremental
 
          .. container:: two-columns
 
@@ -115,7 +114,6 @@ Kontrollfragen
             .. container:: column width-75
 
                .. code:: java
-                  :class: smaller
 
                   class Y { void p(){println("Y.p");} }
                   class X extends Y { void p(){println("X.p");} }
@@ -124,7 +122,7 @@ Kontrollfragen
                      void m(){println("Z.m");} }
                   Y x = new X(); Y z = new Z();
 
-         .. class:: incremental
+         .. class:: incremental-list
 
          1. Was wird ausgegeben bei :java:`x.p();`?
          2. Was gibt :java:`x.p();` aus, wenn die Methode :java:`p` in der Klasse :java:`X` nicht überschrieben worden wäre?
@@ -139,14 +137,23 @@ Kontrollfragen
             3. Das ist direkt nicht möglich, da die Methode `m` in der Klasse `Z` definiert ist und nicht in der Klasse `Y`. Es ist also ein *Typecast* notwendig: `((Z) z).m()`.
             4. Es wird zur Laufzeit eine `ClassCastException` geworfen, da der dynamische Typ der Referenzvariable :java:`x` :java:`X` ist und die Methode :java:`m` nicht in der Klasse :java:`X` definiert ist.
 
+.. class:: new-section
 
-   5.
+Grundlagen
+------------
 
-       .. exercise:: Ausnahmen
+
+Ausnahmebehandlung
+----------------------
+
+.. story::
+
+      .. exercise:: Ausnahmen
+         :class: incremental
 
          (:eng:`Exceptions`)
 
-         .. class:: incremental
+         .. class:: incremental-list
 
          1. Welches ist die Superklasse aller Ausnahmen?
          2. Was ist der Unterschied zwischen *checked* und *unchecked* Ausnahmen?

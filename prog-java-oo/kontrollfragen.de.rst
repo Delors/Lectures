@@ -1,12 +1,12 @@
 .. meta::
-   :version: genesis
+   :version: renaissance
    :lang: de
    :author: Michael Eichberg
    :keywords: "Programmierung", "Java", "Objektorientierung"
    :description lang=de: Kontrollfragen zu einfacher objektorientierter Programmierung
    :id: lecture-prog-java-simple-oo-kontrollfragen
    :first-slide: last-viewed
-   :exercises-master-password: WirklichSchwierig!
+   :master-password: WirklichSchwierig!
     
 .. include:: ../docutils.defs
 
@@ -21,16 +21,20 @@ Kontrollfragen zu einfacher objektorientierter Programmierung
 
 
 
+.. class:: new-section
+
+Grundlagen
+------------
+
+
+
 Kontrollfragen
 ----------------
 
-.. container:: scrollable
-
-   .. class:: incremental long-list
-
-   1. \
+.. story::
    
       .. exercise:: Ist diese Aussage korrekt? 
+         :class: incremental
          
          In einer Java Datei können mehrere öffentlichen Klassen definiert werden. 
 
@@ -39,9 +43,8 @@ Kontrollfragen
 
             Nein - es kann nur eine öffentliche Klasse pro Datei geben. Es können aber mehrere nicht öffentliche Klassen definiert werden.
 
-   2. 
-
       .. exercise:: Ist die Aussage korrekt?
+         :class: incremental
          
          Der :java:`new` Operator initialisiert die Attribute eines Objekts mit den Standardwerten.
 
@@ -50,10 +53,8 @@ Kontrollfragen
 
             Ja - die Attribute werden mit den Standardwerten initialisiert.
 
-
-   3. 
-
       .. exercise:: Welche Aussage ist korrekt?
+         :class: incremental
 
          :java:`var cs = new Circle[10]`;
          
@@ -66,33 +67,31 @@ Kontrollfragen
 
             - nur die zweite Aussage ist korrekt.
 
-   4. 
-
       .. exercise:: Was passiert?
+         :class: incremental
       
          .. rubric:: Circle.java
 
          .. include:: code/circle/Circle.java
             :code: java
-            :class: far-smaller copy-to-clipboard
+            :class: copy-to-clipboard
 
          .. rubric:: Main.java
 
          .. include:: code/circle/Main.java
             :code: java
-            :class: far-smaller copy-to-clipboard
+            :class: copy-to-clipboard
 
          .. solution::
             :pwd: Alles-gut
 
             Es wird über die Methode :java:`create` ein neues Objekt vom Typ Circle erzeugt.
 
-   5. 
-   
       .. exercise:: Was wird ausgegeben?
+         :class: incremental
 
          .. code:: java
-            :class: far-far-smaller
+            :number-lines:
 
             var c1 = new Triangle();
             var c2 = new Triangle();
@@ -105,30 +104,28 @@ Kontrollfragen
 
             Es wird `false` und `true` ausgegeben.
 
-   6.
-
       .. exercise:: Was passiert/wie ist die Ausgabe?
+         :class: incremental
       
          .. rubric:: Circle.java
 
          .. include:: code/circle_memoization/Circle.java
             :code: java
-            :class: far-smaller copy-to-clipboard
+            :class: copy-to-clipboard
 
          .. rubric:: Main.java
 
          .. include:: code/circle_memoization/Main.java
             :code: java
-            :class: far-smaller copy-to-clipboard
+            :class: copy-to-clipboard
 
          .. solution::
             :pwd: Alles-gut
 
             Es wird über die Methode :java:`create` ein neues Objekt vom Typ Circle erzeugt, es sei denn es handelt sich um den Speziellen Kreis mit Radius 1. Deswegen ist die Ausgabe hier auch ``true``.
 
-   7.
-
       .. exercise:: Stimmt die folgende Aussage?
+         :class: incremental
 
          Ein Objekt wird dann aus dem Speicher entfernt, wenn kein Zeiger mehr auf das Objekt zeigt?
 
@@ -137,9 +134,21 @@ Kontrollfragen
 
             Ja, das ist korrekt.
 
-   8.
+
+.. class:: new-section
+
+
+Die Selbstreferenz :java:`this`
+--------------------------------
+
+
+Kontrollfragen
+----------------
+
+.. story::            
 
       .. exercise:: Welche Aussagen sind korrekt?
+         :class: incremental
 
          1. :java:`this` wird benötigt, um einen anderen Konstruktor aufzurufen.
          2. :java:`this` ist eine Referenz auf das aktuelle Objekt. 
@@ -150,9 +159,8 @@ Kontrollfragen
 
             In statischen Methoden ist :java:`this` nicht verfügbar - es gibt kein Objekt. 
     
-   9.
-
       .. exercise:: Welche der folgenden Verwendungen von this sind (ggf. in Konstruktoren und bei dem Vorhandensein entsprechender Attribute) korrekt?
+         :class: incremental
 
          1. :java:`this = new Circle();`
          2. :java:`this.radius = 10;`
