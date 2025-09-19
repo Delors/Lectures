@@ -6,7 +6,7 @@
    :description lang=de: Theoretische Informatik - Komplexität und Algorithmen - Kontrollfragen
    :id: lecture-theo-algo-komplexitaet-kontrollfragen
    :first-slide: last-viewed
-   :exercises-master-password: WirklichSchwierig!
+   :master-password: WirklichSchwierig!
    
 .. include:: ../docutils.defs
 

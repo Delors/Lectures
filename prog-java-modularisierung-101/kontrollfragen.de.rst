@@ -6,7 +6,7 @@
    :description lang=de: Kontrollfragen zu Java Arrays
    :id: lecture-prog-java-arrays-kontrollfragen
    :first-slide: last-viewed
-   :exercises-master-password: WirklichSchwierig!
+   :master-password: WirklichSchwierig!
     
 .. include:: ../docutils.defs
 
