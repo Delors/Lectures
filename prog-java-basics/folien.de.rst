@@ -17,7 +17,7 @@ Einführung in die Programmierung mit Java
 
 :Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
 :Kontakt: michael.eichberg@dhbw.de, Raum 149B
-:Version: 1.2
+:Version: 1.2.1
 
 .. container:: minor
 
@@ -59,6 +59,7 @@ Einführung
 ``HelloWorld.java``\ [#]_
 
 .. include:: code/HelloWorld.java
+    :number-lines:
     :code: java
 
 .. class:: incremental
@@ -81,6 +82,7 @@ Von der Konsole lesen
 ``HelloYou.java``\ [#]_
 
 .. include:: code/HelloYou.java
+    :number-lines:
     :code: java
 
 .. supplemental::
@@ -106,6 +108,7 @@ Ausführung von Java Skripten
   
   .. include:: code/HelloWorldScript
         :code: java
+        :number-lines:
         :class: copy-to-clipboard
 
 
@@ -127,6 +130,7 @@ Ausführung von Java Skripten
         :pwd: ProgrammierenGanzEinfach!
 
         .. include:: code/GutenMorgen.java
+            :number-lines:
             :code: java
 
 .. supplemental::
@@ -155,6 +159,7 @@ Ausführung von Java Skripten
     Beispielausführung auf der Kommandozeile:
 
     .. code:: bash
+        :number-lines:
 
         $ ./GutenMorgen
         Wie ist Dein Name? Michael
@@ -168,6 +173,7 @@ Ausführung von Java Skripten
         Es ist nur ein Shebang hinzuzufügen und die Rechte sind anzupassen:
 
         .. include:: code/GutenMorgen
+            :number-lines:
             :code: java
 
 
@@ -181,37 +187,26 @@ Einfache Prozedurale Programmierung mit Variablen, Konstanten, Literalen und Aus
 Prozedurale Elemente
 ---------------------------
 
-.. container:: scrollable
+.. story::
         
-    .. class:: incremental
+    .. class:: incremental-list
 
     :Kommentare: Dienen der Codedokumentation und werden vom Compiler ignoriert.
 
-    .. class:: incremental
+    :primitive Datentypen: Ganze Zahlen (:java:`byte`, :java:`int`, :java:`long`), Fließkommazahlen (:java:`float`, :java:`double`), Zeichen (:java:`char`, :java:`byte`), Wahrheitswerte (:java:`boolean`)
 
-    :primitive Datentypen: ganze Zahlen (byte, int, long), Fließkommazahlen (float, double), Zeichen (char, :peripheral:`byte`), Wahrheitswerte (boolean)
-
-    .. class:: incremental
-
-    :Literale: Konstante Wert (z.B. 42, 3.14, 'A', "Hello World!")
-
-    .. class:: incremental
+    :Literale: Konstante Wert (z.B. :java:`42`, :java:`3.14`, :java:`'A'`, :java:`"Hello World!"`, :java:`true`)
 
     :Zuweisungen: Speichern eines Wertes in einer Variable 
 
         (*Eine benannten Stelle im Speicher*)
 
-    .. class:: incremental
+    :Ausdrücke: Dienen der Berechnung von Werten mit Hilfe von Variablen, Literalen und Operatoren
 
-    :Ausdrücke: dienen der Berechnung von Werten mit Hilfe von Variablen, Literalen und Operatoren
-
-    .. class:: incremental
-
-    :Kontrollstrukturen: dienen der Ablaufsteuerung mit Hilfe von Schleifen (:java:`while`, :java:`do-while`, :java:`for`) und Verzweigungen (:java:`if`-:java:`else`, :java:`switch`-:java:`case`)
-
-    .. class:: incremental
+    :Kontrollstrukturen: Dienen der Ablaufsteuerung mit Hilfe von Schleifen (:java:`while`, :java:`do`-:java:`while`, :java:`for`) und Verzweigungen (:java:`if`-:java:`else`, :java:`switch`-:java:`case`)
 
     :Unterprogramme: Methoden (*Prozeduren* und *Funktionen*), die eine bestimmte Funktionalität wiederverwendbar bereitstellen
+
 
 
 Kommentare
@@ -225,7 +220,7 @@ Kommentare
 
       - In Java unterscheiden wir folgende Arten von Kommentaren:
 
-        .. class:: incremental list-with-explanations
+        .. class:: incremental-list list-with-explanations
 
         - Einzeilige Kommentare, die mit ``//`` beginnen und bis zum Ende der Zeile gehen.
         - Mehrzeilige Kommentare, die mit ``/*`` beginnen und mit ``*/`` enden.
@@ -233,11 +228,12 @@ Kommentare
           Kommentare, die mit ``/**`` beginnen und mit ``*/`` enden, sind so genannte JavaDoc Kommentare und dienen der Erzeugung von Dokumentation.
         - [ab Java 23] Mehrzeilige Kommentare, bei der jede Zeile mit ``///`` beginnt, werden als Markdown basierte JavaDoc Kommentare interpretiert. 
 
-    .. card:: far-smaller
+    .. card::
 
         Beispiel (ab Java 1.0 - spezifische Tags und HTML)
 
         .. code:: java
+            :number-lines:
 
             /**
              * Berechnet die Fakultät von n.
@@ -258,6 +254,7 @@ Kommentare
         Beispiel (ab Java 23 - spezifische Tags und Markdown)
 
         .. code:: java
+            :number-lines:
 
             /// Berechnet die Fakultät von n.
             ///
@@ -272,11 +269,11 @@ Kommentare
                 else return n * fak(n-1);
             }
 
-    .. card:: far-smaller
+    .. card::
 
         Erzeugte Dokumentation (mit Java 23)
 
-        .. image:: images/Fak_java23_javadoc.png
+        .. image:: images/Fak_java23_javadoc.webp
             :alt: Generierte Dokumentation für die Funktion fak(long n) 
             :height: 600px
             :align: center
@@ -307,6 +304,7 @@ Java Shell
     .. card::  
 
         .. code:: Java
+            :number-lines:
 
             # jshell --enable-preview
 
@@ -435,7 +433,7 @@ Ganzzahlige Datentypen - Hintergrund
         .. csv-table::
             :header: "Binär", "Dezimal"
             :align: center
-            :class: highlight-line-on-hover far-smaller
+            :class: highlight-row-on-hover far-smaller
 
             :java:`0000 0000`, +0
             :java:`0000 0001`, +1
@@ -543,11 +541,10 @@ Zeichen - Hintergrund
   Alle gängigen (westeuropäischen) Zeichen können mit einem :java:`char` dargestellt werden.
   
   .. warning::
-    :class: smaller
 
     Seit Java eingeführt wurde, wurde der Unicode Standard mehrfach weiterentwickelt und heute gibt es Zeichen, die bis zu 32 Bit benötigen. Diese können mit nur einem :java:`char` nicht dargestellt werden und benötigen ggf. zwei :java:`char`\ s.
 
-- Für Zeichenketten (z. B. ``"Hello World"``) existiert ein nicht-primitiver Datentyp :java:`String`.
+- Für Zeichenketten (z. B. :java:`"Hello World"`) existiert ein nicht-primitiver Datentyp :java:`String`.
 
 .. supplemental::
 
@@ -580,7 +577,7 @@ Zeichen - Hintergrund
 Wahrheitswerte (Boolesche) - Hintergrund
 --------------------------------------------
 
-.. class:: incremental list-with-explanations
+.. class:: incremental-list list-with-explanations
 
 - die Wahrheitswerte wahr (:java:`true`) und falsch (:java:`false`) werden in Java mit dem Datentyp :java:`boolean` dargestellt
 - häufigste (explizite) Verwendung ist das Speichern des Ergebnisses einer Bedingungsüberprüfung
@@ -588,12 +585,13 @@ Wahrheitswerte (Boolesche) - Hintergrund
   (Wahrheitswerte sind zentral für Bedingungsüberprüfungen und Schleifen, werden dort aber selten explizit gespeichert; z. B. beim Test von ``n`` auf 0 im Algorithmus für die Berechnung der Fakultät.)
 
 
+
 Konvertierung von Datentypen
 --------------------------------------------
 
-.. container:: scrollable
+.. story::
 
-    .. class:: incremental
+    .. class:: incremental-list
 
     - Die (meist verlustfreie,) implizite Konvertierung von Datentypen ist nur in eine Richtung möglich:
 
@@ -603,7 +601,7 @@ Konvertierung von Datentypen
 
       Beispiel: :java:`int` zu :java:`byte` (Wertebereich :math:`[-128,127]`)
 
-      .. container:: incremental minor
+      .. container:: incremental peripheral
 
         Bei der Konvertierung von :java:`int` zu :java:`byte` werden die höherwertigen Bits (9 bis 32) einfach abgeschnitten.
 
@@ -643,6 +641,7 @@ Konvertierung von Datentypen
 
 Literale
 ---------------------------
+
 
 
 Literale - Übersicht
@@ -713,11 +712,9 @@ Variablen - Übersicht
         - Variablen stellen einen logischen Bezeichner für einen Wert eines bestimmten Datentyps dar.
         - Variablen müssen erst deklariert werden. Danach können sie weiter initialisiert werden, wenn der Standardwert nicht ausreicht.
         
-            .. class:: incremental
+            .. class:: incremental-list
 
             :Deklaration: Variablennamen und Datentyp werden festgelegt
-
-            .. class:: incremental
 
             :Initialisierung (optional): Variablen werden mit einem bestimmten Wert versehen
         
@@ -730,6 +727,7 @@ Variablen - Übersicht
         *Beispieldeklaration und -initialisierung*
 
         .. include:: code/Variables.java
+            :number-lines:
             :code: java
 
 
@@ -749,17 +747,18 @@ Konstanten - Übersicht
 
     .. card::
 
-      *Beispieldeklaration und -initialisierung*
+        *Beispieldeklaration und -initialisierung*
 
-      .. include:: code/Constants.java
-          :code: java
+        .. include:: code/Constants.java
+            :number-lines: 
+            :code: java
 
 
 
 Bezeichner (:eng:`Identifier`) - Übersicht
 --------------------------------------------
 
-.. class:: incremental
+.. class:: incremental-list
 
 - Bezeichner sind Namen für Variablen, Konstanten, Methoden, Klassen, Interfaces, Enums, etc.
 - Erstes Zeichen: Buchstabe, Unterstrich (_) oder Dollarzeichen ($); 
@@ -768,7 +767,7 @@ Bezeichner (:eng:`Identifier`) - Übersicht
 - Schlüsselworte (z. B. :java:`var`, :java:`int`, etc.) dürfen nicht als Bezeichner verwendet werden
 - Konvention: 
   
-  .. class:: incremental smaller
+  .. class:: incremental-list
 
   - Variablen (z. B. :java:`aktuellerHerzschlag`) und Methoden (z. B. :java:`println`) verwenden *lowerCamelCase* 
     
@@ -791,15 +790,11 @@ Bezeichner (:eng:`Identifier`) - Übersicht
 
 Welche der folgenden Bezeichner sind (a) ungültig, (b) gültig aber sollten dennoch nicht verwendet werden oder (c) gültig und entsprechen den Konventionen?
 
-
 .. exercise:: Bezeichner
 
-    .. container:: three-columns far-smaller
+    .. class:: columns
 
-        .. container:: column
-
-
-            .. code:: Java
+    - .. code:: Java
                 :number-lines:
             
                 var 1a = ...
@@ -807,9 +802,7 @@ Welche der folgenden Bezeichner sind (a) ungültig, (b) gültig aber sollten den
                 var _1a = ...
                 var a1 = ...
 
-        .. container:: column
-
-            .. code:: Java
+    - .. code:: Java
                 :number-lines: 5
 
                 int i;
@@ -817,9 +810,7 @@ Welche der folgenden Bezeichner sind (a) ungültig, (b) gültig aber sollten den
                 float $$f;
                 final float E = ...;
 
-        .. container:: column
-
-            .. code:: Java
+    - .. code:: Java
                 :number-lines: 9
 
                 String Wohnort;
@@ -843,79 +834,82 @@ Welche der folgenden Bezeichner sind (a) ungültig, (b) gültig aber sollten den
 Übung - Variablen und Konstanten
 --------------------------------
 
-.. exercise:: Grundlegende Datentypen 
+.. story::
 
-  - Deklarieren und initialisieren Sie eine Variable x mit dem Ganzzahlwert 42. 
-  
-    - Welche Datentypen können Sie verwenden, wenn eine präzise Darstellung des Wertes notwendig ist? 
-    - Welcher Datentyp wird verwendet, wenn Sie keinen Typ angeben (d. h. wenn Sie :java:`var` schreiben bzw. anders ausgedrückt welchen Typ hat das Literal ``42``)? 
+    .. exercise:: Grundlegende Datentypen 
 
-  - Weisen Sie den Wert der Variable ``x`` einer Variable ``f`` vom Typ :java:`float` zu. 
-  - Ändern Sie den Wert der Variablen ``x``. Welche Auswirkungen hat das auf die Variable ``f`` vom Typ :java:`float`?
-  - Deklarieren und initialisieren Sie die Konstante π (Wert 3.14159265359).
-  - Deklarieren Sie eine Variable :java:`poem`. Die folgendes - von GitHub Copilot erzeugtes -  Gedicht enthält: 
+        .. class:: incremental-list
 
-    .. code:: 
-        :number-lines:
+        - Deklarieren und initialisieren Sie eine Variable x mit dem Ganzzahlwert 42. 
+        
+          - Welche Datentypen können Sie verwenden, wenn eine präzise Darstellung des Wertes notwendig ist? 
+          - Welcher Datentyp wird verwendet, wenn Sie keinen Typ angeben (d. h. wenn Sie :java:`var` schreiben bzw. anders ausgedrückt welchen Typ hat das Literal ``42``)? 
 
-        Roses are red,
-        Violets are blue,
-        Sugar is sweet,
-        And so are you.
+        - Weisen Sie den Wert der Variable ``x`` einer Variable ``f`` vom Typ :java:`float` zu. 
+        - Ändern Sie den Wert der Variablen ``x``. Welche Auswirkungen hat das auf die Variable ``f`` vom Typ :java:`float`?
+        - Deklarieren und initialisieren Sie die Konstante π (Wert 3.14159265359).
+        - Deklarieren Sie eine Variable :java:`poem`. Die folgendes - von GitHub Copilot erzeugtes -  Gedicht enthält: 
 
-    Achten Sie auf eine konsistente Einrückung/Formatierung des Gedichts.
+          .. code:: 
+                :number-lines:
+
+                Roses are red,
+                Violets are blue,
+                Sugar is sweet,
+                And so are you.
+
+          Achten Sie auf eine konsistente Einrückung/Formatierung des Gedichts.
+
+        .. solution::
+            :pwd: DatentypenKonstantenUndVariablen
+
+            Der Wert 42 kann von allen primitiven Datentypen präzise dargestellt werden. Wenn Sie 
+            keinen Typ angeben, wird der Typ :java:`int` verwendet.
+
+            .. code:: Java
     
+                jshell> int i = 42
+                i ==> 42
 
-  .. solution::
-        :pwd: DatentypenKonstantenUndVariablen
+                jshell> byte b = 42
+                b ==> 42
 
-        Der Wert 42 kann von allen primitiven Datentypen präzise dargestellt werden. Wenn Sie 
-        keinen Typ angeben, wird der Typ :java:`int` verwendet.
+                jshell> char c = 42
+                c ==> '*'
 
-        .. code:: Java
- 
-            jshell> int i = 42
-            i ==> 42
+                jshell> short s = 42
+                s ==> 42
 
-            jshell> byte b = 42
-            b ==> 42
+                jshell> long l = 42
+                l ==> 42
 
-            jshell> char c = 42
-            c ==> '*'
+                jshell> float f = 42
+                f ==> 42.0
 
-            jshell> short s = 42
-            s ==> 42
+                jshell> double d = 42
+                d ==> 42.0
 
-            jshell> long l = 42
-            l ==> 42
+                jshell> var v = 42
+                v ==> 42
 
-            jshell> float f = 42
-            f ==> 42.0
+                jshell> float vf = v
+                vf ==> 42.0
 
-            jshell> double d = 42
-            d ==> 42.0
+                jshell> v = 43 // Änderung von v
+                v ==> 43
 
-            jshell> var v = 42
-            v ==> 42
+                jshell> vf // hat keine Auswirkung auf vf, da vf eine Kopie von v ist
+                vf ==> 42.0
 
-            jshell> float vf = v
-            vf ==> 42.0
+                jshell> double PI = 3.14159265359d // π wäre auch ein gültiger, aber ungewöhnlicher Bezeichner 
+                d ==> 3.14159265359
 
-            jshell> v = 43 // Änderung von v
-            v ==> 43
-
-            jshell> vf // hat keine Auswirkung auf vf, da vf eine Kopie von v ist
-            vf ==> 42.0
-
-            jshell> double PI = 3.14159265359d // π wäre auch ein gültiger, aber ungewöhnlicher Bezeichner 
-            d ==> 3.14159265359
-
-            jshell> var poem = """
-            ...>         Roses are red,
-            ...>         Violets are blue,
-            ...>         Sugar is sweet,
-            ...>         And so are you."""
-            oem ==> "Roses are red,\nViolets are blue,\nSugar is sweet,\nAnd so are you."
+                jshell> var poem = """
+                ...>         Roses are red,
+                ...>         Violets are blue,
+                ...>         Sugar is sweet,
+                ...>         And so are you."""
+                oem ==> "Roses are red,\nViolets are blue,\nSugar is sweet,\nAnd so are you."
 
 .. supplemental::
 
@@ -937,7 +931,7 @@ Ausdrücke und Operatoren - Übersicht
 
 - Berechnungen erfolgen über Ausdrücke, die sich aus Variablen, Konstanten, Literalen, Methodenaufrufen und Operatoren zusammensetzen.
 
-.. class:: incremental list-with-explanations 
+.. class:: incremental-list list-with-explanations 
     
 - Jeder Ausdruck hat ein Ergebnis (d. h. Rückgabewert).
 
@@ -954,6 +948,7 @@ Ausdrücke und Operatoren - Beispiele
 --------------------------------------------
 
 .. include:: code/Expressions.java
+    :number-lines:
     :code: java
 
 
@@ -961,7 +956,7 @@ Ausdrücke und Operatoren - Beispiele
 Operatoren und Operanden in der Mathematik
 --------------------------------------------
 
-.. container:: smaller
+.. container::
 
     **Binäre/Zweistellige Operatoren** (:eng:`Binary Operators`)
 
@@ -974,7 +969,7 @@ Operatoren und Operanden in der Mathematik
         1 & + & 2  \\
         \end{matrix}
 
-.. container:: incremental smaller
+.. container:: incremental
 
     **Unäre/Einstellige Operatoren** (:eng:`Unary Operators`)
 
@@ -987,7 +982,6 @@ Operatoren und Operanden in der Mathematik
         - & ( 2 )  \\
         \end{matrix}
 
-
     *Fakultät*
 
     .. math::
@@ -998,12 +992,13 @@ Operatoren und Operanden in der Mathematik
         \end{matrix}
 
 
+
 Operatoren
 --------------------------------------------
 
 - Operatoren sind spezielle Zeichen, die auf Variablen, Konstanten und Literale angewendet werden, um Ausdrücke zu bilden.
 
-.. class:: incremental list-with-explanations
+.. class:: incremental-list list-with-explanations
 
 - Die Auswertungsreihenfolge wird durch die Priorität der Operatoren bestimmt. 
   
@@ -1020,7 +1015,7 @@ Operatoren
 Klassifikation der Operatoren
 --------------------------------------------
 
-.. class:: incremental list-with-explanations
+.. class:: incremental-list list-with-explanations
 
 - Arithmetische Operatoren (auf numerische Datentypen)
 - Vergleichsoperatoren 
@@ -1047,7 +1042,8 @@ Klassifikation der Operatoren
         |  "s" == 1
 
 
-.. class:: no-title center-child-elements transition-move-left
+
+.. class:: no-title center-content transition-move-left
 
 Verwendung der JShell
 --------------------------------------------
@@ -1056,7 +1052,7 @@ Verwendung der JShell
 
     Wenn Sie die folgenden Codeschnipsel (:eng:`Snippets`) in der Java Shell (``jshell``) ausführen möchten, dann müssen sie noch die Methoden :java:`println` und :java:`readln` definieren: :java:`void println(Object o) { System.out.println(o); }` und :java:`String readln(String s) { return System.console().readln(s); }`. 
 
-    .. container:: incremental smaller margin-top-1em
+    .. container:: incremental
 
         Alternativ können Sie den unten verlinkten Code direkt in die JShell laden:
 
@@ -1064,13 +1060,15 @@ Verwendung der JShell
 
             jshell --enable-preview <DATEINAME>
 
-    .. container:: incremental smaller margin-top-1em
+    .. container:: incremental
          
         Alternative können Sie ein Java Script schreiben (inkl. ``main`` Methode). In diesem Fall sind die beiden Methoden direkt verfügbar und müssen nicht extra deklariert werden.
 
-    .. container:: incremental smaller margin-top-1em
+    .. container:: incremental
 
         Ich empfehle Ihnen, die Beispiele händisch einzugeben, dann lernen Sie mehr!
+
+
 
 .. class:: transition-fade
 
@@ -1083,7 +1081,7 @@ Zweistellige Arithmetische Operatoren
 
         .. csv-table::
             :header: Operator, Anwendung, Bedeutung
-            :class: highlight-line-on-hover
+            :class: highlight-row-on-hover incremental-table-rows
 
             ``+``, x + y, Summe von x und y (Additions-Operator)
             ``-``, x - y, Differenz von x und y (Subtraktions-Operator)
@@ -1109,7 +1107,6 @@ Zweistellige Arithmetische Operatoren
 
                 8, 15, 1 (Ganzzahlarithmetik!), 2
 
-
 .. supplemental::
 
     Andere Sprachen (z. B. JavaScript oder Python) haben häufig noch ``**`` für die Potenzierung. Dies ist in Java über ``Math.pow`` möglich.
@@ -1125,7 +1122,7 @@ Einstellige Arithmetische Operatoren
 
         .. csv-table::
             :header: Operator, Anwendung, Bedeutung
-            :class: highlight-line-on-hover
+            :class: highlight-row-on-hover incremental-table-rows
 
             ``+``, +x, Positiver Wert von x
             ``-``, -x, Negativer Wert von x
@@ -1151,6 +1148,7 @@ Einstellige Arithmetische Operatoren
                 6, 6, -7
 
 
+
 Zweistellige Vergleichsoperatoren
 ----------------------------------------------------------
 
@@ -1161,7 +1159,7 @@ Zweistellige Vergleichsoperatoren
         .. csv-table::
             :header: Operator, Anwendung, Bedeutung
             :width: 100%
-            :class: highlight-line-on-hover
+            :class: highlight-row-on-hover incremental-table-rows
 
             ``==``, x == y, "Überprüft, ob die Werte von x und y **gleich** sind"
             ``!=``, x != y, "Überprüft, ob der Werte von x und y **ungleich** sind"
@@ -1204,7 +1202,7 @@ Ein- und zweistellige logische Operatoren
         .. csv-table::
             :header: Operator, Anwendung, Bedeutung
             :width: 100%
-            :class: highlight-line-on-hover
+            :class: highlight-row-on-hover incremental-table-rows
 
             ``!``, !x, Negation (Aus true wird false und umgekehrt)
             ``&``, x & y, Logisches UND (AND)
@@ -1218,11 +1216,10 @@ Ein- und zweistellige logische Operatoren
         .. rubric:: Wahrheitstabelle
 
         .. csv-table::
-            :header: 
+            :header: x, y, !x, "x & y oder x && y", "x | y oder x || y", x ^ y
             :width: 100%
-            :class: highlight-line-on-hover
-
-            x, y, !x, "x & y oder x && y", "x | y oder x || y", x ^ y
+            :class: highlight-row-on-hover incremental-table-rows
+            
             true, true, false, true, true, false
             true, false, false, false, true, true
             false, true, true, false, true, true
@@ -1258,6 +1255,7 @@ Ein- und zweistellige logische Operatoren
     Mit anderen Worten bei ``&&`` und ``||`` wird der Ausdruck nur so weit ausgewertet, wie nötig ist, um das Ergebnis des Ausdrucks als Ganzes zu bestimmen. 
 
 
+
 .. class:: exercises transition-scale
 
 Übung
@@ -1269,11 +1267,12 @@ Ein- und zweistellige logische Operatoren
 
     Zum  Konvertieren der eingelesenen Zeichenketten in Zahlen verwenden Sie die Methode :java:`Integer.parseInt(<EINGABE>)`. Sie können hier den eingelesen String direkt an die Methode übergeben oder vorher in einer Variable speichern.
     
-    .. container:: smaller
+    .. container:: 
 
         Denken Sie daran, dass Ihr Code in die ``main`` Methode gehört:
 
         .. code:: java
+            :number-lines:
 
             void main() {
                 // Ihr Code
@@ -1287,6 +1286,7 @@ Ein- und zweistellige logische Operatoren
         .. include:: code/NamenEinlesenUndVergleichen.java
             :code: java
             :number-lines:
+
 
 
 .. class:: transition-fade
@@ -1320,17 +1320,17 @@ Bedingungsoperator
         **Beispiele**
 
         .. code:: java
-             
+            :number-lines:
 
             int n = 0;
             n == 0 ? 1 : 2 
 
         .. container:: incremental
 
-            Verschachtelung ist möglich aber *nicht*   empfehlenswert:
+            Verschachtelung ist möglich aber *nicht* empfehlenswert:
 
             .. code:: java
-                 
+                :number-lines:
 
                 int alter = Integer.parseInt(readln("Wie alt sind Sie?"));
                 alter < 18 ? 
@@ -1340,17 +1340,17 @@ Bedingungsoperator
                         "senior"; 
 
 
+
 Bitoperatoren
 ----------------------------------------------------------
-
 
 .. deck::
 
     .. card::
 
-        Bitoperatoren (``>>``, ``<<``, ...) arbeiten auf der binären Darstellung der numerischen, primitiven Datentypen für Ganzzahlen.
+        Bitoperatoren (:java:`>>`, :java:`<<`, ...) arbeiten auf der binären Darstellung der numerischen, primitiven Datentypen für Ganzzahlen.
 
-        Bitoperationen werden häufig für spezielle Algorithmen verwendet, um die gleiche Operation auf mehreren Daten (den Bits) gleichzeitig anzuwenden (1 CPU Zyklus). Ein Beispiel ist das Ver-/Entschlüsseln von Daten (insbesondere mit ``XOR``).
+        Bitoperationen werden häufig für spezielle Algorithmen verwendet, um die gleiche Operation auf mehreren Daten (den Bits) gleichzeitig anzuwenden (1 CPU Zyklus). Ein Beispiel ist das Ver-/Entschlüsseln von Daten (insbesondere mit *XOR*).
 
         Bestimmte mathematische Operationen (z. B. Division durch :math:`2^x`) können durch Bitoperationen ersetzt werden, die effizienter sind (z. B. :java:`16 / 4 == 16 >> 2`).
 
@@ -1359,7 +1359,7 @@ Bitoperatoren
         .. csv-table::
             :header: Operator, Anwendung, Bedeutung
             :width: 100%
-            :class: highlight-line-on-hover
+            :class: highlight-row-on-hover incremental-table-rows
 
             ``~``, ~x, Bitweise-Negation
             ``&``, x & y, Bitweise UND
@@ -1374,7 +1374,7 @@ Bitoperatoren
         Bits verschieben (:eng:`shiften`) um eine bestimmte Anzahl von Positionen:
 
         .. code:: java
-            
+            :number-lines:
 
             jshell> Integer.toBinaryString(Integer.MIN_VALUE)
             $1 ==> "10000000000000000000000000000000"
@@ -1390,7 +1390,7 @@ Bitoperatoren
         Verschlüsselung mit XOR (`EncryptionWithXOR.jshell.java <./code/EncryptionWithXOR.jshell.java>`__):
 
         .. code:: java
-            
+            :number-lines:
 
             final var key = new java.util.Random().nextInt();   
             Integer.toBinaryString(key);             // ==> "1001101011000011100110101001110"
@@ -1429,7 +1429,7 @@ Zuweisungs- und Verbundoperatoren
         Standardbeispiele:
 
         .. code:: java
-            
+            :number-lines:            
 
             jshell> int age = 1;
             age ==> 1
@@ -1445,7 +1445,7 @@ Zuweisungs- und Verbundoperatoren
             Folgendes wäre auch erlaubt, aber *nicht* empfehlenswert, da schwer(er) zu lesen:
 
             .. code:: java
-                
+                :number-lines:
 
                 jshell> var newAge = age = age + 1;
                 newAge ==> 4
@@ -1458,7 +1458,7 @@ Zuweisungs- und Verbundoperatoren
         .. csv-table::
             :header: Operator, Bedeutung
             :width: 100%
-            :class: highlight-line-on-hover
+            :class: highlight-row-on-hover incremental-table-rows
 
             x = y, **Zuweisung des Wertes** von y an x
             x <Operator>= y, **Zuweisung des Wertes** von x <Operator> y an x
@@ -1481,7 +1481,7 @@ String Konkatenation (Verbinden von Zeichenketten)
     .. card::
 
         .. code:: java
-            
+            :number-lines:            
 
             jshell> final String name = "Max";
             name ==> "Max"
@@ -1500,7 +1500,7 @@ Bei Zuweisungen und arithmetischen Operationen werden die Datentypen von Operand
 
     .. card::
 
-        .. class:: incremental list-with-explanations
+        .. class:: incremental-list list-with-explanations
 
         - Bei arithmetischen Operationen erfolgt eine Konvertierung in den nächst größeren Datentyp der beteiligten Operanden bzgl. :java:`int`, :java:`long`, :java:`float`, :java:`double`.
         - Bei Operationen auf primitiven, ganzzahligen Datentypen wandelt der Compiler die beteiligten Operanden mindestens in :java:`int` um.
@@ -1511,7 +1511,7 @@ Bei Zuweisungen und arithmetischen Operationen werden die Datentypen von Operand
     .. card::
         
         .. code:: java
-            
+            :number-lines:
 
             jshell> byte b = 13;
                     short s = Short.MAX_VALUE;
@@ -1524,7 +1524,7 @@ Bei Zuweisungen und arithmetischen Operationen werden die Datentypen von Operand
     .. card::
         
         .. code:: java
-            
+            :number-lines:
 
             jshell> int r = Integer.MAX_VALUE + Integer.MAX_VALUE;
             r ==> -2
@@ -1562,19 +1562,19 @@ Das Ergebnis eines Ausdruckes kann durch explizite Typkonvertierung in einen and
 
     .. card::
 
-        .. class:: incremental
+        .. class:: incremental-list
 
         - Bei primitiven Datentypen erlaubt für numerische Datentypen.
         - Wird ein ganzzahliges Ergebnis in einen kleineren ganzzahligen Datentyp konvertiert, dann werden die führenden Bits abgeschnitten.
         - Nachkommastellen gehen bei der Konvertierung von Gleitkommazahlen in Ganzzahlen verloren
         - Bei Konvertierung von :java:`double` in :java:`float` kommt es ebenfalls zu einem Genauigkeitsverlust in der Darstellung (durch Abschneiden der Bits in Mantisse und Exponent)
 
-    .. card:: smaller
+    .. card:: 
 
         .. rubric:: Standardfälle
 
         .. code:: java
-            
+            :number-lines:   
 
             jshell> int i = 42;
             i ==> 42
@@ -1587,7 +1587,7 @@ Das Ergebnis eines Ausdruckes kann durch explizite Typkonvertierung in einen and
             .. rubric:: Sonderfälle
 
             .. code:: java
-                
+                :number-lines:
 
                 jshell> (byte) 128 ;
                 $1 ==> -128
@@ -1602,12 +1602,13 @@ Das Ergebnis eines Ausdruckes kann durch explizite Typkonvertierung in einen and
 
 Unter-/Überschreitet das Ergebnis eines Ausdruckes den minimalen/maximalen Wert des resultierenden Datentyps, erfolgt ein Unter-/Überlauf. (:eng:`Overflow`/:eng:`Underflow`)
 
-.. class:: incremental
+.. class:: incremental-list
 
 - Bei einem Unterlauf bzw. Überlauf werden bei Ganzzahlen die nicht mehr darstellbaren höheren Bits abgeschnitten.
 - Bei Fließkommazahlen werden die Konstanten: :java:`Float.NEGATIVE_INFINITY` und :java:`Float.POSITIVE_INFINITY` bzw. :java:`Double.NEGATIVE_INFINITY` und :java:`Double.POSITIVE_INFINITY` verwendet.
 
 .. code:: java
+    :number-lines:
     :class: incremental
 
     Integer.toBinaryString(Integer.MIN_VALUE) //    "10000000000000000000000000000000"
@@ -1622,7 +1623,7 @@ Unter-/Überschreitet das Ergebnis eines Ausdruckes den minimalen/maximalen Wert
     Bei Double erfolgt der Überlauf erst, wenn man eine Zahl auf :java:`Double.MAX_VALUE` addiert, die mind. 292 Stellen vor dem Komma hat.
 
     .. code:: java
-        
+        :number-lines:
     
         jshell> Double.MAX_VALUE + 1
         $0 ==> 1.7976931348623157E308
@@ -1652,24 +1653,24 @@ Auswertungsreihenfolge
 
 Die Auswertungsreihenfolge von komplexen Ausdrücken mit mehreren Operatoren wird durch die Priorität der Operatoren bestimmt.\ [#]_
 
-.. class:: incremental list-with-explanations
+.. class:: incremental-list list-with-explanations
 
 - Kommen in einem Ausdruck mehrere Operatoren mit gleicher Priorität vor, dann wird der Ausdruck von links nach rechts ausgewertet.
 - Ausnahmen sind die Verbund- und Zuweisungsoperatoren die von rechts nach links bewertet werden.
 - Klammern haben die höchste Priorität und erzwingen die Auswertung des Ausdrucks in den Klammern zuerst. Klammern dienen aber (insbesondere) auch der Strukturierung von Ausdrücken.
 
-
 .. [#] Die Regeln sind vergleichbar mit der Schulmathematik: Punkt-vor-Strich-Rechnung.
+
 
 
 Priorität der Operatoren
 ----------------------------------------------------------
 
-.. container:: scrollable
+.. story::
 
     .. csv-table::
         :header: Operatoren, Beschreibung, Priorität
-        :class: highlight-line-on-hover incremental far-smaller
+        :class: highlight-row-on-hover incremental-table-rows sticky-header 
         :width: 100%
         
         "=, +=, -=, ...", Zuweisungs- und Verbundoperatoren, 1 (niedrigste)
@@ -1701,45 +1702,15 @@ Beispiele zur Auswertungsreihenfolge
         *Initiale* Belegung der Variablen: :java:`int x = 4, y = 2, z = 3;`.
 
     .. code:: java
-        :class: incremental
+        :class: incremental-code
         :number-lines: 1
 
         x + y * z / x 
-
-    .. code:: java
-        :class: incremental 
-        :number-lines: 2
-
         ( x + - (float) y * 2 ) / x  ==  ( x + ( ( (float) -y ) * 2 ) )/ x 
-
-    .. code:: java
-        :class: incremental 
-        :number-lines: 3
-
         x + ++y * z++ % x
-
-    .. code:: java
-        :class: incremental 
-        :number-lines: 4
-
         x < 5 && --y <= 1 || z == 3
-
-    .. code:: java
-        :class: incremental
-        :number-lines: 5
-
         x << 2 * y >> 1
-
-    .. code:: java
-        :class: incremental
-        :number-lines: 6
-
         z & 1 % 2 == 0
-
-    .. code:: java
-        :class: incremental
-        :number-lines: 7
-
         (z & 1) % 2 == 0
 
     .. solution::
@@ -1768,7 +1739,6 @@ Beispiele zur Auswertungsreihenfolge
 
     .. code:: text
         
-    
         Bitte geben Sie die Sekunden ein: 3455
         0 Stunde(n), 57 Minute(n) und 35 Sekunde(n)
 
@@ -1784,7 +1754,7 @@ Beispiele zur Auswertungsreihenfolge
     Denken Sie daran, dass Ihr Code in die ``main`` Methode gehört:
 
     .. code:: java
-        
+        :number-lines:
 
         void main() {
             // Ihr Code
@@ -1830,7 +1800,7 @@ Beispiele zur Auswertungsreihenfolge
 Von Variablen, Konstanten, Literalen und Ausdrücken
 -------------------------------------------------------
 
-.. class:: incremental
+.. class:: incremental-list
 
 - Variablen sind Speicherorte, die einen Wert enthalten.
 - Konstanten sind unveränderliche Werte, die an einem Speicherort gespeichert sind.
@@ -1852,11 +1822,12 @@ Anweisungen
 
 Eine Anweisung in einem Java-Programm stellt eine einzelne Vorschrift dar, die während der Abarbeitung des Programms auszuführen ist.
 
-.. class:: incremental
+.. class:: incremental-list
 
 - In Java-Programmen werden einzelne Anweisungen durch einen Semikolon :java:`;` voneinander getrennt.
 
   .. code:: java
+    :number-lines:
     :class: copy-to-clipboard
 
     void main() { 
@@ -1875,11 +1846,12 @@ Blöcke
 
 Ein Block in einem Java-Programm ist eine Folge von Anweisungen, die durch geschweifte Klammern { ... } zusammengefasst werden.
 
-.. class:: incremental
+.. class:: incremental-list
 
 - Blöcke werden **nicht** durch einen Semikolon beendet.
   
   .. code:: java
+    :number-lines:
     :class: copy-to-clipboard
 
     void main() {
@@ -1901,6 +1873,7 @@ Anweisungen und Blöcke - Beispiele
 ----------------------------------------------------------
 
 .. code:: java
+    :number-lines:
     :class: copy-to-clipboard
 
     // Deklaration und Initialisierung von Variablen
@@ -1923,18 +1896,20 @@ Anweisungen und Blöcke - Beispiele
     /* println("vegi=" + vegi); =>  Error: cannot find symbol: variable vegi */
 
 
+
 Bedingte Anweisungen und Ausdrücke
 ----------------------------------------------------------
 
 Bedingte Anweisungen und Ausdrücke in einem Java-Programm dienen dazu Anweisungen bzw. Blöcke nur dann auszuführen wenn eine logische Bedingung eintrifft.
 
-.. class:: incremental
+.. class:: incremental-list
 
 - Bedingte Anweisungen und Ausdrücke zählen zu den Befehlen zur Ablaufsteuerung.
 
 - Bedingte Anweisungen und Ausdrücke können in Java-Programmen mittels :java:`if`-Anweisungen, :java:`if`-/:java:`else`-Anweisung und :java:`switch`-Anweisungen/-Ausdrücken umgesetzt werden.
 
 - Der Bedingungs-Operator (:java:`<Ausdruck> ? <Ausdruck> : <Ausdruck>`) stellt in bestimmten Fällen eine Alternative zu den bedingten Anweisungen dar.
+
 
 
 :java:`if`-Anweisung
@@ -2032,7 +2007,7 @@ Die :java:`if`-Anweisung setzt sich zusammen aus dem Schlüsselwort :java:`if`, 
 
         Im Gegensatz zur :java:`if`-\ :java:`else` Anweisung wird hier nur ein <Ausdruck> ausgewertet für den mehrere Alternativen (:java:`case`-Blöcke) angegeben werden können.
 
-        .. container:: margin-top-1em
+        .. container::
 
             Der :java:`default`-Zweig stellt eine Möglichkeit dar, die immer dann ausgeführt wird, wenn kein anderer :java:`case`-Block zutrifft 
 
@@ -2068,7 +2043,6 @@ Die :java:`if`-Anweisung setzt sich zusammen aus dem Schlüsselwort :java:`if`, 
             :code: java
             :number-lines:
 
-
     .. card::
 
         .. rubric:: :java:`case L ->`
@@ -2078,7 +2052,6 @@ Die :java:`if`-Anweisung setzt sich zusammen aus dem Schlüsselwort :java:`if`, 
         Auf der rechten Seite ist nur ein Ausdruck oder ein Block erlaubt - keine Anweisung. 
 
         Bei dieser Variante gibt es kein *durchfallen* :eng:`Fall-Through-Effekt`, d. h. ein :java:`break` ist nicht zur Beendigung eines :java:`case`-Blocks zu verwenden!
-
 
     .. card::
     
@@ -2123,7 +2096,6 @@ Die :java:`if`-Anweisung setzt sich zusammen aus dem Schlüsselwort :java:`if`, 
 
         .. exercise:: Erfolgreicher Musterabgleich?
             
-
             Bei welchem Name wäre ein erfolgreicher Musterabgleich in mehreren Fällen möglich? 
 
             .. solution:: 
@@ -2131,16 +2103,16 @@ Die :java:`if`-Anweisung setzt sich zusammen aus dem Schlüsselwort :java:`if`, 
 
                 Bei "Eva-Maria". 
 
-
 .. supplemental::
 
     Wir werden Pattern Matching später detailliert behandeln.
+
 
         
 Effizienz von bedingten Anweisungen
 ------------------------------------------
 
-.. class:: incremental
+.. class:: incremental-list
 
 - Bei :java:`if`-/\ :java:`else`-Anweisungen werden die Prüf-Ausdrücke sequentiell (in der angegebenen Reihenfolge) ausgewertet (ein Ausdruck pro Alternative).
 
@@ -2148,7 +2120,7 @@ Effizienz von bedingten Anweisungen
 
 - Daher benötigt die Auswertung einer :java:`switch`-Anweisung i. d. R. weniger Rechenschritte als eine äquivalente :java:`if`-/\ :java:`else`-Anweisung.
 
-        
+
 
 .. class:: transition-fade exercises
 
@@ -2297,7 +2269,7 @@ Schleifen
         ++i;
     }
 
-.. container:: incremental margin-top-1em
+.. container:: incremental 
 
     Die :java:`while`-Anweisung setzt sich zusammen aus einem ``<Ausdruck>`` als Abbruchbedingung und einen Schleifenrumpf (``<Anweisung>`` bzw. ``<Block>``).
 
@@ -2323,15 +2295,13 @@ Schleifen
         System.out.println("sum="+sum);
     } while(i < 10);
 
-.. container:: incremental
+.. class:: incremental list-with-explanations 
 
-    .. class:: list-with-explanations 
+- Die :java:`do`-:java:`while`-Schleife setzt sich zusammen aus einem Schleifenrumpf (<Anweisung> bzw. <Block>) und einem <Ausdruck> als Abbruchbedingung.
 
-    - Die :java:`do`-:java:`while`-Schleife setzt sich zusammen aus einem Schleifenrumpf (<Anweisung> bzw. <Block>) und einem <Ausdruck> als Abbruchbedingung.
+- Die Abbruchbedingung wird nach jedem Schleifendurchlauf geprüft.
 
-    - Die Abbruchbedingung wird nach jedem Schleifendurchlauf geprüft.
-
-        Im Gegensatz zur :java:`while`-Schleife wird der Schleifenrumpf mindestens einmal ausgeführt, bevor die Abbruchbedingung geprüft wird.
+    Im Gegensatz zur :java:`while`-Schleife wird der Schleifenrumpf mindestens einmal ausgeführt, bevor die Abbruchbedingung geprüft wird.
 
 
 
@@ -2413,6 +2383,7 @@ Kontrolle des Schleifenablaufs
     *Corner Cases*
 
     .. code:: java
+        :number-lines:
 
         jshell> farOuter: for (int j = 0 ; j < 5 ; j++) 
                     outer: for(int i = 0; i < 5; i++) { 
@@ -2431,6 +2402,7 @@ Kontrolle des Schleifenablaufs
         4 0
 
 
+
 .. class:: exercises transition-scale
 
 Übung
@@ -2440,7 +2412,7 @@ Kontrolle des Schleifenablaufs
 
     Verwenden Sie eine Schleife, um festzustellen ob eine Zahl eine Primzahl ist. Lesen Sie die Zahl von der Konsole ein. Geben Sie am Ende aus, ob die Zahl eine Primzahl ist oder nicht; geben Sie ggf. auch den kleinsten Teiler der Zahl aus.
     
-    .. container:: minor smaller
+    .. container:: peripheral
 
         - Schreiben Sie den Code für den Java Interpreter.
         - Es ist nicht erforderlich, dass der Algorithmus effizient ist.
@@ -2461,7 +2433,7 @@ Kontrolle des Schleifenablaufs
 
         .. include:: code/Primzahltest.java
             :code: Java
-            :class: smaller
+            :number-lines:
 
 
 
@@ -2479,7 +2451,6 @@ Kontrolle des Schleifenablaufs
     Die ersten 10 Fibonacci Zahlen: 
 
     .. csv-table::
-        :class: smaller
         :header: F0, F1, F2, F3, F4, F5, F6, F7, F8, F9, F10
 
         0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55
@@ -2497,7 +2468,7 @@ Kontrolle des Schleifenablaufs
 
         .. include:: code/Fibonacci.java
             :code: Java
-            :class: smaller
+            :number-lines:
 
 
 
@@ -2511,7 +2482,6 @@ Kontrolle des Schleifenablaufs
     Berechnen Sie die Kubikwurzel :math:`x` einer Zahl :math:`n` mit Hilfe einer Schleife. Nutzen Sie dazu das schnell konvergierende, iterative Verfahren von Newton-Raphson. 
     
     .. math:: 
-        :class: smaller
         
         x_{n+1} = x_n - \frac{x_n^3 - n}{3 \times x_n^2}\qquad\qquad\text{ein mgl. Startwert:}\; x_0 = 1
 
@@ -2533,7 +2503,7 @@ Kontrolle des Schleifenablaufs
 
         .. card::
 
-            .. container:: minor far-smaller
+            .. container:: peripheral
 
                 Stellen Sie sich die folgenden Fragen:
 
@@ -2553,6 +2523,7 @@ Kontrolle des Schleifenablaufs
 
         .. include:: code/KubikwurzelMitSchleife.java
             :code: Java
+            :number-lines:
 
         Bei iterativen Algorithmen ist es fast immer möglich ein Abbruchkriterium über die Änderung zwischen zwei Schritten zu bestimmen. Unterschreitet die Änderung einen bestimmten Wert (z. B. :math:`0,000000000001`) , so kann bzw. könnte die Schleife je nach Anwendungszweck abgebrochen werden.
 
@@ -2577,7 +2548,7 @@ Methoden (in Java Scripts)
 
     .. card::
 
-        .. class:: incremental list-with-explanations
+        .. class:: incremental-list list-with-explanations
 
         - Methoden in Java-Programmen dienen dazu die Anwendungslogik zu strukturieren und in wiederverwendbare *Unterprogramme* zu zerlegen.
 
@@ -2597,8 +2568,6 @@ Methoden (in Java Scripts)
                 <Rückgabetyp> <Methodenname> (<Parameterliste>){
                     <Methoden-Rumpf>
                 }
-
-        .. class:: incremental
 
     .. card::
 
@@ -2654,7 +2623,7 @@ Methodenparameter und Rückgabewerte
 Methodenaufruf
 ----------------------------------------------------------
 
-.. class:: incremental
+.. class:: incremental-list
 
 - Der Aufruf erfolgt durch die Angabe des Klassennamens, des Methodennamens und der aktuellen Parameterwerte.
 
@@ -2664,7 +2633,7 @@ Methodenaufruf
 
 - Der Datentyp des übergebenen Wertes muss in den Datentyp des formalen Parameters implizit konvertierbar sein. Andernfalls muss explizit konvertiert werden.
 
-.. class:: incremental list-with-explanations   
+.. class:: incremental-list list-with-explanations   
 
 - Von allen übergebenen Werten wird eine (ggf. flache) Kopie übergeben. 
 
@@ -2676,14 +2645,14 @@ Methodenaufruf
 Rekursive Methoden - Beispiel
 ----------------------------------------------------------
 
-.. container:: two-columns
+.. grid::
 
-    .. container:: column minor
+    .. cell:: peripheral
 
         Schleifen basierte Implementierung des Algorithmus von Euklid:
 
         .. code:: java
-            :class: smaller copy-to-clipboard
+            :class: copy-to-clipboard
             :number-lines: 1
 
             int ggt(int z1, int z2) { 
@@ -2696,7 +2665,7 @@ Rekursive Methoden - Beispiel
                 return z1; 
             }
 
-    .. container:: column 
+    .. cell::
 
         Elegante rekursive Implementierung des Algorithmus von Euklid:
 
@@ -2711,6 +2680,7 @@ Rekursive Methoden - Beispiel
             }
 
 
+
 Überladen von Methoden (:eng:`Overloading`)
 ----------------------------------------------------------
 
@@ -2718,7 +2688,7 @@ Rekursive Methoden - Beispiel
 
     .. card::
 
-        .. class:: incremental            
+        .. class:: incremental-list          
 
         - Eine überladene Methode ist eine Methode mit dem gleichen Namen wie eine andere Methode, aber mit einer unterschiedlichen Parameterliste. Folgende Unterschiede sind möglich:
 
@@ -2727,8 +2697,9 @@ Rekursive Methoden - Beispiel
         - :red:`Unterschiedliche Rückgabetypen sind in Java nicht ausreichend.`
         - Zum Beispiel gibt es in Java die Methode :java:`int Math.max(int, int)` und :java:`double Math.max(double, double)`.
         
-        .. exercise::  max(long, long)?
-            :class: smaller incremental
+        .. exercise:: max(long, long)?
+            :formatted-title: :java:`max(long, long)`?
+            :class: incremental
 
             Warum definiert Java auch noch die Methode :java:`long Math.max(long, long)` bzw. warum reicht es nicht aus nur :java:`long Math.max(long, long)` zu definieren und auf :java:`int Math.max(int, int)` zu verzichten?
 
@@ -2740,6 +2711,7 @@ Rekursive Methoden - Beispiel
     .. card::  
 
         .. code:: java
+            :number-lines: 1
             :class: copy-to-clipboard
 
             void print(int i) {
@@ -2762,7 +2734,7 @@ Rekursive Methoden - Beispiel
 Aufruf von Methoden aus anderen Klassen
 ----------------------------------------------------------
 
-.. class:: incremental
+.. class:: incremental-list
 
 - *Für den Moment* ist eine Klasse für uns eine Sammlung von Methoden und Konstanten, die inhaltlich in einem logischen Zusammenhang stehen.
 
@@ -2773,7 +2745,7 @@ Aufruf von Methoden aus anderen Klassen
 - Wir haben bereits entsprechende Beispiele gesehen, z. B. :java:`Double.parseDouble(String)` oder :java:`Integer.parseInt(String)`.
 
 .. hint::
-    :class: incremental far-smaller margin-top-2em
+    :class: incremental
 
     Auf diese Weise können nur statische Methoden aufgerufen werden. Die Details werden wir später beim Thema Klassen und Objekte behandeln.
 
@@ -2796,18 +2768,20 @@ Aufruf von Methoden aus anderen Klassen
 
     3) Wandeln Sie die Methode für die Berechnung der Kubikwurzel in eine rekursive Methode um.
 
-      .. solution::
+    .. solution::
           :pwd: MethodenDefinieren
 
           **Primzahltest**
 
           .. include:: code/PrimzahltestInMethode.java
-              :code: Java
+            :number-lines:
+            :code: Java
 
           **Kubikwurzel**
 
           .. include:: code/KubikwurzelInRekursiverMethode.java
-              :code: Java
+            :number-lines:
+            :code: Java
 
 
 .. class:: transition-move-left exercises
@@ -2825,6 +2799,7 @@ Aufruf von Methoden aus anderen Klassen
         Verwendung von :java:`long` ermöglicht es die Fakultät von Zahlen bis einschließlich 20 zu berechnen.
 
         .. code:: java
+            :number-lines:
             :class: copy-to-clipboard
 
             long fakultaet(long n) {
@@ -2837,6 +2812,7 @@ Aufruf von Methoden aus anderen Klassen
         Verwendung von :java:`double` ermöglicht es die Fakultät von Zahlen bis einschließlich 170 zu berechnen. Darüber hinaus wird :java:`Infinity` zurückgegeben.
 
         .. code:: java
+            :number-lines:
             :class: copy-to-clipboard
   
             double fakultaet(int n) {
@@ -2864,6 +2840,7 @@ Aufruf von Methoden aus anderen Klassen
         :pwd: FibonacciRRRekursiv
 
         .. code:: java
+            :number-lines:
             :class: copy-to-clipboard
 
             long fibonacci(int n) {
@@ -2885,7 +2862,7 @@ Von Codekonventionen und Lesbarkeit
 Lesbarer Java-Code
 ----------------------------------------------------------
 
-.. class:: incremental list-with-explanations
+.. class:: incremental-list list-with-explanations
 
 - Halten Sie sich an die `Java-Konventionen <https://www.oracle.com/java/technologies/javase/codeconventions-contents.html>`__.
   
@@ -2897,7 +2874,7 @@ Lesbarer Java-Code
 .. hint::
     :class: incremental 
     
-    .. container:: center-child-elements
+    .. container:: center-content
 
         Manuelles formatieren ist nicht sinnvoll. 
         
@@ -2929,6 +2906,7 @@ Einrückungen und Blöcke - Beispiele
         .. rubric:: Falsche Einrückung
 
         .. code:: java
+            :number-lines:
             :class: copy-to-clipboard
             
             int ggtNaiv(int z1, int z2){
@@ -2946,6 +2924,7 @@ Einrückungen und Blöcke - Beispiele
         .. rubric:: Korrekte Einrückung
 
         .. code:: java
+            :number-lines:
             :class: copy-to-clipboard
             
             int ggtNaiv(int z1, int z2) {
@@ -2963,7 +2942,7 @@ Einrückungen und Blöcke - Beispiele
 Klammern 
 ----------------------------------------------------------
 
-.. class:: list-with-explanations incremental
+.. class:: list-with-explanations incremental-list
 
 - Verwenden Sie Klammern um Blöcke, auch wenn sie nur eine Anweisung enthalten.
   
@@ -2972,7 +2951,7 @@ Klammern
 
 
 
-.. class:: no-title center-child-elements
+.. class:: no-title center-content
 
 Zeilenlängen
 ----------------------------------------------------------
@@ -2991,9 +2970,9 @@ Zeilenlängen
 Methoden und Kommentare
 ----------------------------------------------------------
 
-.. container:: scrollable 
+.. story::
         
-    .. class:: incremental list-with-explanations
+    .. class:: incremental-list list-with-explanations
 
     - Dokumentieren Sie Ihre Methoden und Klassen mit Javadoc-Kommentaren.
     - Dokumentieren Sie insbesondere die Vor- und Nachbedingungen von Methoden.
@@ -3024,12 +3003,13 @@ Methoden und Kommentare
     .. danach kommt es bei der Verwendung des :java:`int`-Datentyps zu einem Überlauf.
 
 
+
 Team und Projektspezifische Konventionen
 ----------------------------------------------------------
 
 - die Java-Konventionen sind allgemein gültig und sollten eingehalten werden, decken aber nicht alle Teile des Codes ab. 
 
-.. class:: incremental
+.. class:: incremental-list
 
 - In einem Team oder Projekt können spezifische Konventionen festgelegt werden, die über die allgemeinen Konventionen hinausgehen. Diese sollten dann **automatisiert überprüft und ggf. automatisch formatiert werden**.
 
@@ -3061,7 +3041,7 @@ Am Ende diskutieren wir Ihren Code/Ihre Kommentare.
 
 
 
-.. class:: center-child-elements
+.. class:: center-content
 
 Von Codekonventionen und Lesbarkeit - Zusammenfassung
 ----------------------------------------------------------
@@ -3080,13 +3060,13 @@ Das Einhalten fördert die Zusammenarbeit mit anderen Programmieren - *insbesond
 
 .. exercise:: Tage seit Geburt berechnen
 
-    .. container:: smaller
+    .. container:: 
 
         Schreiben Sie ein Programm, dass berechnet wie viele Tage ein Mensch bereits auf der Welt ist. Als Eingaben sollen das Geburtsdatum und das aktuelle Datum eingegeben werden. D. h. Sie fragen erst den Tag, dann den Monat und dann das Jahr der Geburt ab. Anschließend fragen Sie den aktuellen Tag, Monat und das Jahr ab. Geben Sie dann die Anzahl der Tage aus. 
         
         Verwenden Sie Methoden für sinnvolle Teilaufgaben. (Z. B. Ist ein Jahr ein Schaltjahr, Tage eines Jahres. Tag im Jahr (siehe vorhergehende Übung)).
 
-    .. container:: smaller box-shadow rounded-corners padding-0_5em
+    .. container:: accentuate
         
        .. rubric:: Anforderungen
     
@@ -3140,6 +3120,7 @@ Java Assertions
         Beispiel: Funktion mit Assertion
 
         .. code:: java
+            :number-lines:
             :class: copy-to-clipboard
 
             
@@ -3178,6 +3159,7 @@ Java Assertions
         Beispiel: Assertion mit Seiteneffekt
 
         .. code:: java
+            :number-lines:
             :class: copy-to-clipboard
 
             int ggt(int z1, int z2) {
@@ -3203,6 +3185,7 @@ Java Assertions
         - Um im Code zu prüfen, ob Assertions aktiviert sind, kann folgender (auf einem Seiteneffekt basierender) Code verwendet werden:
 
           .. code:: java
+            :number-lines:
             :class: copy-to-clipboard smaller
 
             var assertionsEnabled = false;
@@ -3239,6 +3222,7 @@ Java Assertions
         :pwd: ZweiOderEineAssertion?
 
         .. code:: java
+            :number-lines:
             :class: copy-to-clipboard
         
             long fak(long n){ // TODO mögliche Fehlerfälle abfangen

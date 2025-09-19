@@ -13,11 +13,14 @@
       }
       .light {
         color-scheme: light;
+        /*  We have to "reset" color and background otherwise the element would
+            inherit the computed colors from the body. */
         color: var(--color-fg);
         background: var(--color-bg);
       }
       .dark {
         color-scheme: dark;
+        /*  see above */
         color: var(--color-fg);
         background: var(--color-bg);
       }
