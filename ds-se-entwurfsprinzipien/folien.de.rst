@@ -687,7 +687,7 @@ Ein einfacher RESTful Web Service mit Spring\ [#]_
 \
 ---
 
-.. container:: foundations faded-to-white
+.. container:: foundations fade-out
 
   Die (technischen) Ziele einer guten Anwendungsarchitektur dienen der Minimierung des Aufwands, der notwendig ist, um das System zu entwickeln und zu warten bzw. weiterzuentwickeln.
 
