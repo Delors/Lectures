@@ -296,7 +296,7 @@ Je Gruppe:
 
 **Gesamt**: Iterationsplanung (d. h. Wahl der nächsten User Stories)
 
-.. container:: faded-to-white
+.. container:: fade-out
 
     .. rubric:: Teil 3
 
@@ -335,7 +335,7 @@ Je Gruppe:
 
 **Gesamt**: Iterationsplanung (d. h. Wahl der nächsten User Stories)
 
-.. container:: faded-to-white
+.. container:: fade-out
 
     .. rubric:: Teil 3
 
