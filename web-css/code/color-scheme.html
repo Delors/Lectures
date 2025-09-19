@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <style>
+      :root {
+        color-scheme: light dark;
+        --color-bg: light-dark(white, black);
+        --color-fg: light-dark(black, white);
+      }
+      body {
+        color: var(--color-fg);
+        background-color: var(--color-bg);
+      }
+      .light {
+        color-scheme: light;
+        color: var(--color-fg);
+        background: var(--color-bg);
+      }
+      .dark {
+        color-scheme: dark;
+        color: var(--color-fg);
+        background: var(--color-bg);
+      }
+    </style>
+  </head>
+  <body>
+    <div>This text is black in light mode and white in dark mode.</div>
+    <div class="light">
+      This text is black in light mode and white in dark mode.
+    </div>
+    <div class="dark">
+      This text is white in light mode and black in dark mode.
+    </div>
+  </body>
+</html>
