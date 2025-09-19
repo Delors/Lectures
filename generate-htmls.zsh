@@ -37,7 +37,7 @@ function update_html_if_necessary() {
             --strip-comments \
             --no-xml-declaration \
             --output "$html_file" \
-            --ld-path $path_prefix"LectureDoc2" \
+            --ld-path $path_prefix"LectureDoc2/src" \
             --ld-passwords "$html_file.passwords.json" \
             --link-stylesheet \
             $language_option
