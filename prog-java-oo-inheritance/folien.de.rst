@@ -1,5 +1,5 @@
 .. meta::
-    :version: genesis
+    :version: renaissance
     :lang: de
     :author: Michael Eichberg
     :keywords: "Programmierung", "Java", "Objektorientierung", "Vererbung", "Polymorphie"
@@ -49,18 +49,19 @@ Objektorientierte Programmierung mit Java - Vererbung und Polymorphie
 Generalisierung und Spezialisierung
 ------------------------------------------
 
-.. container:: scrollable
+.. story:: font-size-85
 
     .. rubric:: Implementierung einer Raumverwaltung
 
-    .. container:: two-columns smaller
+    .. grid:: 
 
-        .. container:: column
+        .. cell::
 
             .. rubric:: Ein Vorlesungsraum an der DHBW
 
             .. code:: java
-                :class: far-far-smaller copy-to-clipboard
+                :number-lines:
+                :class: copy-to-clipboard
 
                 public class Vorlesungsraum {
                     private int zustand; // 0: nutzbar, 
@@ -80,12 +81,13 @@ Generalisierung und Spezialisierung
                     public void reserviere()...
                 }
 
-        .. container:: column incremental
+        .. cell:: incremental
 
             .. rubric:: Eine Teeküche an der DHBW
 
             .. code:: java
-                :class: far-far-smaller copy-to-clipboard
+                :number-lines:
+                :class: copy-to-clipboard
 
                 public class Teekueche {
                     private int zustand; // 0: nutzbar, 
@@ -105,17 +107,17 @@ Generalisierung und Spezialisierung
                     public void setzeSchliessberechtigung()...
                 }
 
-    .. container:: incremental margin-top-1em
+    .. container:: incremental 
 
         .. rubric:: Identifikation der Gemeinsamkeiten und Modellierung einer allgemeinen Klasse
 
         .. image:: images/raumverwaltung.svg
             :alt: Raumverwaltung
-            :width: 80%
+            :width: 1440px
             :align: center
             :class: margin-top-1em
 
-    .. container:: incremental margin-top-1em
+    .. container:: incremental
 
         Klassen können durch eine **Vererbungshierachie** in *Oberklassen* (*Superklassen*) (hier: :java:`Raum`) und *Unterklassen* (Subklassen) (hier: :java:`Vorlesungsraum`, :java:`Buero`, :java:`Teekueche`, ...) eingeteilt werden.
 
@@ -129,23 +131,23 @@ Generalisierung und Spezialisierung
 Vererbung (:eng:`Inheritance`)
 --------------------------------------------------
 
-.. stack::
+.. deck::
 
-    .. layer:: 
+    .. card:: 
 
         :Definition: Erlaubt es, eine Klasse von einer anderen abzuleiten und deren Eigenschaften und Methoden zu erben.
         :Vorteile:
             - Wiederverwendbarkeit des Codes
             - Hierarchische Strukturierung
         
-    .. layer:: incremental
+    .. card::
 
         Klassen werden in Vererbungshierachien eingeteilt.
         
         :Syntax:
 
             .. code:: java
-                :class: far-smaller 
+                :number-lines:
 
                 public class <Subklassenname> 
                         extends <Superklassenname> { ...
@@ -156,7 +158,8 @@ Vererbung (:eng:`Inheritance`)
         :Beispiel:
 
             .. code:: java
-                :class: far-smaller copy-to-clipboard
+                :number-lines:
+                :class: copy-to-clipboard
 
                 class Auto {                            // Basisklasse
                     String marke;
@@ -169,17 +172,17 @@ Vererbung (:eng:`Inheritance`)
                         System.out.println("Das Elektroauto wird aufgeladen.");
                 }   }
 
-    .. layer:: incremental
+    .. card::
 
         - Eine Unter- bzw. Subklasse erbt alle Attribute und Methoden der Super- bzw. Oberklasse. 
       
-        .. class:: incremental
+        .. class:: incremental-list
 
         - Auf :java:`public` und :java:`protected` Attribute und Methoden der Superklassen kann direkt zugegriffen werden.
         - Auf :java:`private` Attribute und Methoden kann nicht zugegriffen werden (zBei Attributen ggf. nur über entsprechende :java:`get`- und :java:`set`-Methoden)
         - Zyklen in der Vererbungshierarchie sind nicht erlaubt
   
-    .. layer:: incremental
+    .. card::
 
         .. rubric:: Zugriff auf Methoden und Attribute von Superklassen
 
@@ -187,18 +190,18 @@ Vererbung (:eng:`Inheritance`)
 
         - Dies ist notwendig, wenn die Vaterklasse Attribute bzw. Methoden mit gleichem Namen enthält (ansonsten kann man :java:`super` auch weglassen).
         
-    .. layer:: incremental
+    .. card::
 
         .. rubric:: Verwendung von :java:`super` für Aufruf der Methode der Superklasse
 
         .. include:: code/super/Main.java
             :code: java
-            :class: far-smaller copy-to-clipboard
+            :class: copy-to-clipboard
             :number-lines:
             :end-before: void main() {
 
 
-    .. layer:: incremental
+    .. card::
 
         .. rubric:: Initialisierung von Superklassen
         
@@ -210,18 +213,18 @@ Vererbung (:eng:`Inheritance`)
 
         - Die Initialisierung startet immer bei der Superklasse und arbeitet sich dann rekursiv durch die Vererbungshierarchie nach unten.
 
-    .. layer:: incremental
+    .. card::
 
         .. rubric:: Verwendung von :java:`super` während der Initialisierung
 
         .. include:: code/Super.java
             :code: java
             :number-lines:
-            :class: far-smaller copy-to-clipboard
+            :class: copy-to-clipboard
             :end-before: void main()
 
 
-    .. layer:: incremental
+    .. card::
 
         .. rubric:: :java:`java.lang.Object`
 
@@ -232,11 +235,11 @@ Vererbung (:eng:`Inheritance`)
           .. include:: code/Super.java
             :code: java
             :number-lines:
-            :class: far-smaller copy-to-clipboard
+            :class: copy-to-clipboard
             :start-after: }   }
         - Die Methode :java:`getClass()` erlaubt den Zugriff auf die Klasse eines Objekts und ermöglicht :java:`Reflection`. :peripheral:`Thema für spätere Vorlesung(en).`
 
-    .. layer:: incremental
+    .. card::
 
         .. rubric:: Methoden überschreiben
 
@@ -245,7 +248,7 @@ Vererbung (:eng:`Inheritance`)
           
           D. h. Vorbedingungen können in der Subklassen entspannt und Nachbedingungen verschärft werden, aber nie umgekehrt.
 
-    .. layer:: incremental
+    .. card::
 
         .. rubric:: Einfach- vs. Mehrfachvererbung
 
@@ -253,7 +256,7 @@ Vererbung (:eng:`Inheritance`)
 
         :Mehrfachvererbung: Jede Klasse kann mehrere Superklassen in der Vererbungshierachie besitzen 
 
-        .. container:: box-shadow margin-top-1em rounded-corners padding-1em 
+        .. attention::
 
             Java unterstützt nur Einfachvererbung bei Klassen (und Mehrfachvererbung bei Schnittstellen).
 
@@ -262,9 +265,9 @@ Vererbung (:eng:`Inheritance`)
 Vererbung und Typkonvertierungen/-kompatibilität
 --------------------------------------------------
 
-.. stack::
+.. deck::
 
-    .. layer::
+    .. card::
 
         Im Folgenden gehen wir von der folgenden Vererbungshierarchie aus: 
 
@@ -275,7 +278,7 @@ Vererbung und Typkonvertierungen/-kompatibilität
             
         Alle Attribute und Klassen sein :java:`public`. 
 
-    .. layer:: incremental
+    .. card::
 
         .. rubric:: Statischer und Dynamischer Typ
 
@@ -288,7 +291,7 @@ Vererbung und Typkonvertierungen/-kompatibilität
         
           Beispiel: :java:`k = new Sparkonto(...); // Dynamischer Typ "Sparkonto“`
 
-    .. layer:: incremental
+    .. card::
 
         - Der dynamische Typ muss von einer (nicht echten) Unterklasse des statischen Typs sein (z. B. „Sparkonto“ als dynamischer und „Konto“ als statischer Typ.)
         - Über die Referenzvariable sind nur die sichtbaren Attribute und Methoden des statischen Typs ansprechbar.
@@ -300,11 +303,11 @@ Vererbung und Typkonvertierungen/-kompatibilität
 
             Der dynamische Typ bestimmt die Methode, die ausgeführt wird. 
             
-            .. container:: incremental far-smaller
+            .. container:: incremental
             
                 D. h. eine Methode, die in der Subklasse überschrieben wurde, wird auch dann ausgeführt, wenn die Referenzvariable den statischen Typ der Oberklasse hat.
 
-    .. layer:: incremental
+    .. card::
 
         .. rubric:: Implizite Typkonvertierung 
 
@@ -318,7 +321,7 @@ Vererbung und Typkonvertierungen/-kompatibilität
 
         - Die implizite Typkonvertierung ist sicher; es kann kein Fehler bei der Typkonvertierung entstehen.
 
-    .. layer:: incremental
+    .. card::
 
         .. rubric:: Explizite Typkonvertierung 
 
@@ -331,7 +334,7 @@ Vererbung und Typkonvertierungen/-kompatibilität
         - Das Objekt selbst wird bei einer expliziten Konvertierung nicht verändert!
         - Die Typkonvertierung ist nicht sicher; es kann ein Fehler bei der Typkonvertierung entstehen. Eine sogenannte *Typecast Exception* ist dann die Folge.
 
-    .. layer:: incremental
+    .. card::
 
         .. rubric:: Typkonvertierung - Details
 
@@ -342,7 +345,7 @@ Vererbung und Typkonvertierungen/-kompatibilität
           - Ein Objekt wird als Festgeldkonto angelegt und implizit in ein Konto konvertiert (d. h. der dynamische Typ ist Festgeldkonto). Eine explizite Konvertierung in ein Sparkonto ist möglich. 
           - Wird allerdings ein Objekt als Sparkonto angelegt, dann kann es nicht explizit in ein Tagesgeldkonto konvertiert werden.
 
-    .. layer:: incremental
+    .. card::
 
         .. rubric:: Typtest mit :java:`instanceof`
 
@@ -354,12 +357,13 @@ Vererbung und Typkonvertierungen/-kompatibilität
 
           Sollte :java:`k` null sein, dann ist das Ergebnis immer :java:`false`.
 
-    .. layer:: incremental
+    .. card::
 
         .. rubric:: Beispiele
 
         .. code:: java
-            :class: far-smaller copy-to-clipboard
+            :number-lines:
+            :class: copy-to-clipboard
 
                 Konto k1 = new Festgeld (1, "Matt", 100, 2.5, 36);
                 
@@ -385,9 +389,9 @@ Vererbung und Typkonvertierungen/-kompatibilität
 Polymorphie (Polymorphism)
 --------------------------------------------------
 
-.. stack:: 
+.. deck:: 
 
-    .. layer::
+    .. card::
 
         :Definition: Eine Referenzvariable mit einem statischen Typ kann auf Objekte mit unterschiedlichem dynamischen Typ verweisen.
         :Verwendung:
@@ -396,10 +400,11 @@ Polymorphie (Polymorphism)
           - Parameter und Rückgabewerte: Methoden können als Parameter Objekte einer beliebigen Subklasse übergeben bekommen bzw. zurückgeben.
           - ein Array kann Objekte jeder Subklasse enthalten (z. B. ein Array mit dem Datentyp :java:`Konto[]` kann alle Subklassen enthalten.)
         
-    .. layer:: incremental
+    .. card::
 
         .. code:: java
-            :class: far-smaller copy-to-clipboard
+            :number-lines:
+            :class: copy-to-clipboard
 
             Festgeld k1 = new Festgeld(1, "Matt", 100, 2.5, 36);
             Sparkonto k2 = new Sparkonto(1, "Michael", 100, 3);
@@ -410,12 +415,13 @@ Polymorphie (Polymorphism)
                 println(konten[i]);
             }
         
-    .. layer:: incremental
+    .. card::
 
         **Beispiel**: Methode `fahren` wird in verschiedenen Klassen unterschiedlich implementiert.
 
         .. code:: java
-            :class: far-smaller copy-to-clipboard
+            :number-lines:
+            :class: copy-to-clipboard
 
             class Auto {
                 void fahren() {
@@ -431,7 +437,7 @@ Polymorphie (Polymorphism)
         
         Wir sprechen hier vom überschreiben (:eng:`overriding`) von Methoden.
 
-    .. layer:: incremental
+    .. card::
 
         Methoden überschreiben: 
 
@@ -463,7 +469,7 @@ Zusammenfassung und Vorteile von Objekt-orientierter Programmierung\ [#]_
 
 
 
-.. class:: integrated-exercise transition-move-to-top
+.. class:: exercises transition-move-to-top
 
 Übung
 --------------------------------------------------
@@ -478,16 +484,15 @@ Zusammenfassung und Vorteile von Objekt-orientierter Programmierung\ [#]_
         .. include:: code/Tiere.java
             :code: java
             :number-lines:
-            :class: far-smaller
 
 
 
 Fehlerbehandlung (:eng:`Exceptions`, :ger:`Ausnahmen`) 
 --------------------------------------------------------
 
-.. stack::
+.. deck::
 
-    .. layer::
+    .. card::
 
         - Die Fehlerbehandlung in Java erfolgt mittels Exceptions.
         - Exceptions sind Objekte, die eine Fehlermeldung und den *Stacktrace* enthalten und erben direkt oder indirekt von :java:`Throwable`.
@@ -500,7 +505,7 @@ Fehlerbehandlung (:eng:`Exceptions`, :ger:`Ausnahmen`)
             - *Unchecked Exceptions* (Exceptions, die von :java:`java.lang.RuntimeException` erben) können im Code ignoriert werden; d. h. müssen nicht explizit beachtet werden. Sollten/müssen aber nicht.
 
 
-    .. layer:: incremental
+    .. card::
 
         .. rubric:: Exceptions Typhierearchie  
 
@@ -509,7 +514,7 @@ Fehlerbehandlung (:eng:`Exceptions`, :ger:`Ausnahmen`)
             :height: 750px
             :align: center
 
-    .. layer:: incremental
+    .. card::
 
         .. rubric:: Einige ausgewählte typische Exceptions
 
@@ -527,47 +532,47 @@ Fehlerbehandlung (:eng:`Exceptions`, :ger:`Ausnahmen`)
         - :java:`ParseException`: Fehler beim Parsen von Strings.
 
 
-    .. layer:: incremental
+    .. card::
 
         .. rubric:: Handling von *Unchecked Exceptions* (:java:`try ... catch (E e)`)
 
         .. include:: code/exceptions/Division.java 
             :code: java
             :number-lines:
-            :class: far-smaller copy-to-clipboard
+            :class: copy-to-clipboard
 
-    .. layer:: incremental
+    .. card::
 
         .. rubric:: Handling von *Checked Exceptions* (:java:`try ... catch (E e)`)
 
         .. include:: code/exceptions/Date.java
             :code: java
             :number-lines:
-            :class: far-smaller copy-to-clipboard
+            :class: copy-to-clipboard
 
-    .. layer:: incremental
+    .. card::
 
         .. rubric:: Identische Behandlung von mehreren Exceptions (:java:`... catch (A | B e`))
 
         .. include:: code/exceptions/DivisionV2.java
             :code: java
             :number-lines:
-            :class: far-smaller copy-to-clipboard
+            :class: copy-to-clipboard
 
         .. container:: minor incremental far-smaller
 
             Es wäre auch möglich gewesen die gemeinsame Superklasse zu nehmen (:java:`RuntimeException`). Dies würde jedoch dazu führen, dass man Ausnahmen fängt, die man gar nicht fangen will!
 
-    .. layer:: incremental
+    .. card::
 
         .. rubric:: Deklaration, dass eine *Checked Exceptions* geworfen werden könnte (:java:`throws`)
 
         .. include:: code/exceptions/DateV2.java
             :code: java
             :number-lines:
-            :class: far-smaller copy-to-clipboard
+            :class: copy-to-clipboard
 
-    .. layer:: incremental
+    .. card::
 
         .. rubric:: *Try-with-Resources* (:java:`try(var i = <Ressource>) { ... }`)
         
@@ -576,7 +581,7 @@ Fehlerbehandlung (:eng:`Exceptions`, :ger:`Ausnahmen`)
         .. include:: code/exceptions/Cat.java
             :code: java
             :number-lines:
-            :class: far-smaller copy-to-clipboard
+            :class: copy-to-clipboard
 
         Der explizite Exceptionhandler wird nach dem Schließen der Ressource aufgerufen.
 
@@ -588,7 +593,7 @@ Fehlerbehandlung (:eng:`Exceptions`, :ger:`Ausnahmen`)
 
 
 
-.. class:: integrated-exercise transition-move-to-top
+.. class:: exercises transition-move-to-top
 
 Übung
 --------------------------------------------------
@@ -609,16 +614,16 @@ Fehlerbehandlung (:eng:`Exceptions`, :ger:`Ausnahmen`)
         .. include:: code/math_with_exceptions/math/Functions.java
             :code: java
             :number-lines:
-            :class: far-smaller copy-to-clipboard
+            :class: copy-to-clipboard
 
         .. include:: code/math_with_exceptions/Main.java
             :code: java
             :number-lines:
-            :class: far-smaller copy-to-clipboard
+            :class: copy-to-clipboard
 
 
 
-.. class:: integrated-exercise transition-move-to-top
+.. class:: exercises transition-move-to-top
 
 Übung
 --------------------------------------------------
@@ -630,7 +635,6 @@ Fehlerbehandlung (:eng:`Exceptions`, :ger:`Ausnahmen`)
     Schreiben Sie eine :java:`main` Methode, die die Methode verwendet und sich um jegliche Fehlerbehandlung kümmert. D. h. die main Methode soll bei allen Fehlern eine *passende Fehlermeldung* ausgeben und das Programm sauber beenden. Verwenden Sie ggf. ein :java:`try-with-ressource` Statement.
 
     .. hint::
-        :class: far-smaller
 
         Studieren Sie die Dokumentation der Klasse :java:`String` in Hinblick auf Methoden, die es Ihnen einfacher machen zu erkennen ob eine Zeile gemäß obiger Definition leer ist.    
 
@@ -640,16 +644,16 @@ Fehlerbehandlung (:eng:`Exceptions`, :ger:`Ausnahmen`)
         .. include:: code/exceptions/WC.java
             :code: java
             :number-lines:
-            :class: far-smaller copy-to-clipboard
+            :class: copy-to-clipboard
 
 
 
 Abstrakte Klassen
 --------------------------------------------------
 
-.. stack::
+.. deck::
 
-    .. layer:: 
+    .. card:: 
 
         - Abstrakte Klassen deklarieren ein Grundgerüst einer Klasse von der keine Objekte erzeugt werden können.
 
@@ -659,12 +663,12 @@ Abstrakte Klassen
 
         - Nicht abstrakte Subklassen einer abstrakten Klasse müssen ALLE abstrakte Methoden der Vaterklasse implementieren.
 
-    .. layer:: incremental
+    .. card::
 
         :Beispiel: Eine `Form`-Klasse, die über verschiedene Unterklassen wie `Kreis`, `Quadrat` und `Dreieck` abstrahiert. Alle Formen bieten eine Möglichkeit zur Berechnung der Fläche.
 
         .. code:: java
-            :class: far-smaller copy-to-clipboard incremental
+            :class: copy-to-clipboard incremental
 
             public abstract class EinfacheForm {
                 protected double hoehe;
@@ -673,12 +677,12 @@ Abstrakte Klassen
                     return berechneFlaeche() * hoehe;
             }   }
 
-        .. container:: two-columns incremental margin-top-1em
+        .. grid::
 
-            .. container:: column no-separator
+            .. cell::
 
                 .. code:: java
-                    :class: far-smaller copy-to-clipboard
+                    :class: copy-to-clipboard
 
                     class Kreis extends EinfacheForm {
                         double r = 0.0;
@@ -686,10 +690,10 @@ Abstrakte Klassen
                             return Math.PI * r * r;
                     }   }
 
-            .. container:: column no-separator 
+            .. cell:: 
 
                 .. code:: java
-                    :class: far-smaller copy-to-clipboard
+                    :class: copy-to-clipboard
 
                     class Quadrat extends EinfacheForm {
                         double seite = 0.0;
@@ -697,7 +701,7 @@ Abstrakte Klassen
                             return seite * seite;
                     }   }
 
-    .. layer:: incremental
+    .. card::
 
         .. rubric:: Abstrakte Methoden
 
@@ -706,7 +710,7 @@ Abstrakte Klassen
         - Abstrakte Klassen können von anderen (auch nicht-abstrakten) Klassen erben.
         - Konkrete Subklassen müssen alle abstrakten Methoden implementieren.
             
-    .. layer:: incremental
+    .. card::
 
         .. rubric:: Statischer Typ
 
@@ -719,20 +723,21 @@ Abstrakte Klassen
 Finale Klassen und Methoden (der :java:`final` Modifikator)
 --------------------------------------------------------------
 
-.. stack::
+.. deck::
 
-    .. layer::
+    .. card::
 
       - Durch den Modifikator :java:`final` kann das Überschreiben von Methoden bzw. ganzen Klassen verhindert werden.
       - Methoden, die durch den Modifikator :java:`final` gekennzeichnet sind, können in Subklassen nicht überschrieben werden.
       - Von Klassen, die durch den Modifikator :java:`final` gekennzeichnet sind, können keine Subklassen abgeleitet werden
 
-    .. layer:: incremental
+    .. card::
 
         .. rubric:: Konto.java 
 
         .. code:: java
-            :class: far-smaller copy-to-clipboard
+            :number-lines:
+            :class: copy-to-clipboard
 
             
             public class Konto {
@@ -748,12 +753,13 @@ Finale Klassen und Methoden (der :java:`final` Modifikator)
                 }
             }
 
-    .. layer:: incremental
+    .. card::
 
         .. rubric:: Festgeldkonto.java 
 
         .. code:: java
-            :class: far-smaller copy-to-clipboard
+            :number-lines:
+            :class: copy-to-clipboard
             
             public final class Festgeldkonto extends Konto {
 	            private int laufzeit;
@@ -767,13 +773,12 @@ Finale Klassen und Methoden (der :java:`final` Modifikator)
 
 
 
-.. class:: integrated-exercise transition-move-to-top
+.. class:: exercises transition-move-to-top
 
 Übung
 --------------------------------------------------
 
 .. exercise:: Vererbung, Exceptions und Abstrakte Klassen
-    :class: far-far-smaller
 
     Wir möchten mathematische Ausdrücke repräsentieren, um darauf verschiedene Operationen auszuführen.
 
@@ -793,7 +798,7 @@ Finale Klassen und Methoden (der :java:`final` Modifikator)
         .. include:: code/terms/Main.java
             :code: java
             :number-lines:
-            :class: far-smaller copy-to-clipboard
+            :class: copy-to-clipboard
 
 
 .. supplemental::
@@ -801,7 +806,7 @@ Finale Klassen und Methoden (der :java:`final` Modifikator)
     Beispiele für die Verwendung:
 
     .. code:: java
-        :class: far-smaller copy-to-clipboard
+        :class: copy-to-clipboard
 
         System.out.println(
             new Division(
@@ -818,7 +823,7 @@ Finale Klassen und Methoden (der :java:`final` Modifikator)
 
 
     .. code:: java
-        :class: far-smaller copy-to-clipboard
+        :class: copy-to-clipboard
 
         System.out.println(
             new Plus(
@@ -836,9 +841,9 @@ Finale Klassen und Methoden (der :java:`final` Modifikator)
 Schnittstellen (Java :java:`interface`\ s)
 --------------------------------------------------------------
 
-.. stack::
+.. deck::
 
-    .. layer::
+    .. card::
 
         Schnittstellen (Interfaces) werden ähnlich wie Klassen deklariert, spezifizieren aber nur Methoden-Schnittstellen (abstrakte Methoden und :java:`default` Methoden) und öffentliche statische finale Attribute. 
 
@@ -852,7 +857,7 @@ Schnittstellen (Java :java:`interface`\ s)
                     // Methodendeklarationen und "default" Methoden
                 }
 
-    .. layer:: incremental
+    .. card::
 
         :Beispiele:
 
@@ -861,16 +866,16 @@ Schnittstellen (Java :java:`interface`\ s)
             .. include:: code/interfaces/Saeugetier.java
                 :code: java
                 :number-lines:
-                :class: far-smaller copy-to-clipboard
+                :class: copy-to-clipboard
 
             .. rubric:: Haustier.java
 
             .. include:: code/interfaces/Haustier.java
                 :code: java
                 :number-lines:
-                :class: far-smaller copy-to-clipboard
+                :class: copy-to-clipboard
     
-    .. layer:: incremental
+    .. card::
 
         :Details:
 
@@ -879,7 +884,7 @@ Schnittstellen (Java :java:`interface`\ s)
             - Die Angabe von :java:`public abstract` bei Methoden ist optional.
             - Die Angabe von :java:`public final static` bei Attributen ist optional.
   
-    .. layer:: incremental
+    .. card::
 
         .. rubric:: Implementierung von Schnittstellen
 
@@ -890,9 +895,9 @@ Schnittstellen (Java :java:`interface`\ s)
         .. include:: code/interfaces/Katze.java
             :code: java
             :number-lines:
-            :class: far-smaller copy-to-clipboard
+            :class: copy-to-clipboard
 
-    .. layer:: incremental
+    .. card::
 
         .. rubric:: Vererbung von Schnittstellen
 
@@ -912,9 +917,9 @@ Schnittstellen (Java :java:`interface`\ s)
             .. include:: code/interfaces/Carnivora.java
                 :code: java
                 :number-lines:
-                :class: far-smaller copy-to-clipboard
+                :class: copy-to-clipboard
 
-    .. layer:: incremental
+    .. card::
 
         **Statischer Typ**
 
@@ -931,11 +936,11 @@ Schnittstellen (Java :java:`interface`\ s)
         .. include:: code/conflicting_interfaces/Main.java
             :code: java
             :number-lines:
-            :class: far-smaller copy-to-clipboard
+            :class: copy-to-clipboard
 
 
 
-.. class:: integrated-exercise transition-move-to-top
+.. class:: exercises transition-move-to-top
 
 Übung
 --------------------------------------------------
@@ -954,14 +959,14 @@ Schnittstellen (Java :java:`interface`\ s)
         .. include:: code/terms/Comparable.java
             :code: java
             :number-lines:
-            :class: far-smaller copy-to-clipboard
+            :class: copy-to-clipboard
 
 .. supplemental::
 
     .. rubric:: Beispiel
 
     .. code:: java
-        :class: far-smaller copy-to-clipboard
+        :class: copy-to-clipboard
 
         System.out.println(
                 new Plus(new Number(1), new Number(2))
