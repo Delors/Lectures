@@ -1,5 +1,5 @@
 .. meta::
-    :version: genesis
+    :version: renaissance
     :lang: de
     :author: Michael Eichberg
     :keywords: "Modellierung", "UML", "Objektorientierung", "Software Development"
@@ -35,7 +35,7 @@ Einführung und erste Grundlagen der Modellierung mit UML
 UML (Unified Modeling Language)
 -----------------------------------------------------------------------
 
-.. class:: incremental list-with-explanations
+.. class:: incremental-list list-with-explanations
 
 - UML (Unified Modeling Language) ist eine standardisierte Modellierungssprache, die zur Beschreibung von Software-Systemen verwendet wird.
 - UML besteht aus verschiedenen Diagrammtypen, die unterschiedliche Aspekte eines Systems beschreiben.
@@ -43,7 +43,7 @@ UML (Unified Modeling Language)
 - :peripheral:`Die Hoffnungen/Erwartungen, die an UML Anfang der 2000er gestellt wurden, wurden nicht erfüllt. Seit 2017 ist die Version 2.5.1 aktuell.`
 
 .. warning::
-    :class: incremental far-smaller
+    :class: incremental 
 
     Wenn Sie UML verwenden, dann verwenden Sie die Notationen spezifikationskonform, da sonst der Sinn der Notation (vollständig) verloren geht oder es sogar zu Missverständnissen kommt.
 
@@ -57,7 +57,7 @@ Aktivitätsdiagramme
 Aktivitätsdiagramme - Einführung
 -----------------------------------------------------------------------
 
-.. container:: center-child-elements box-shadow rounded-corners padding-1em dhbw-red-background white
+.. container:: accentuate
 
     Zentraler Aspekt: Wie realisiert mein System ein bestimmtes Verhalten?
 
@@ -73,58 +73,58 @@ Aktivitätsdiagramme - Einführung
 Aktivitätsdiagramm für die Abwicklung einer Bestellung
 -----------------------------------------------------------------------
 
-.. stack::
+.. deck::
 
-    .. layer:: 
+    .. card:: 
 
         .. image:: images/uml-activity/start.svg
             :width: 1800px
             :align: center
 
-    .. layer:: incremental overlay
+    .. card:: overlay
 
         .. image:: images/uml-activity/bestellung_entgegennehmen.svg
             :width: 1800px
             :align: center
 
-    .. layer:: incremental overlay
+    .. card:: overlay
 
         .. image:: images/uml-activity/fork.svg
             :width: 1800px
             :align: center
 
-    .. layer:: incremental overlay
+    .. card:: overlay
 
         .. image:: images/uml-activity/bestellung_ausliefern_wie.svg
             :width: 1800px
             :align: center
 
-    .. layer:: incremental overlay
+    .. card:: overlay
 
         .. image:: images/uml-activity/liefertypen.svg
             :width: 1800px
             :align: center
 
 
-    .. layer:: incremental overlay
+    .. card:: overlay
 
         .. image:: images/uml-activity/zahlung_empfangen.svg
             :width: 1800px
             :align: center
 
-    .. layer:: incremental overlay
+    .. card:: overlay
 
         .. image:: images/uml-activity/ausgeliefert.svg
             :width: 1800px
             :align: center
 
-    .. layer:: incremental overlay
+    .. card:: overlay
 
         .. image:: images/uml-activity/join.svg
             :width: 1800px
             :align: center
 
-    .. layer:: incremental overlay
+    .. card:: overlay
 
         .. image:: images/uml-activity/bestellung_abschließen.svg
             :width: 1800px
@@ -143,11 +143,10 @@ Aktivitätsdiagramm für die Abwicklung einer Bestellung
     
 
 
-.. class:: integrated-exercise
+.. class:: exercises
 
 Übung
 -------------------
-
 
 .. exercise:: Modellieren Sie ein Aktivitätsdiagramm für die Berechnung der Fakultät
 
@@ -163,7 +162,7 @@ Aktivitätsdiagramm für die Abwicklung einer Bestellung
 
 
 
-.. class:: integrated-exercise
+.. class:: exercises
 
 Übung
 -------------------
@@ -193,20 +192,24 @@ Aktivitätsdiagramm für die Abwicklung einer Bestellung
 Klassendiagramme
 -----------------------------------------------------------------------
 
-.. container:: incremental center-child-elements
 
-    „Curtis' Gesetz: [...] Gute Entwürfe erfordern fundierte Anwendungskenntnisse.“
 
-    .. container:: far-far-smaller margin-top-1em minor
+.. class:: no-title center-content
+
+Curtis Gesetz
+---------------
+.. epigraph::
+
+    Curtis Gesetz: [...] Gute Entwürfe erfordern fundierte Anwendungskenntnisse.
     
-        **Albert Endres and Dieter Rombach**; *A Handbook of Software and Systems Engineering*; Addison Wesley 2003
+    -- **Albert Endres and Dieter Rombach**; *A Handbook of Software and Systems Engineering*; Addison Wesley 2003
 
 
 
 Klassen und Objekte
 -------------------
 
-.. container:: center-child-elements incremental rounded-corners padding-1em box-shadow dhbw-red-background white
+.. container:: accentuate
 
     Eine **Klasse** beschreibt *eine Gruppe von* **Objekten** mit:
 
@@ -287,41 +290,41 @@ Attribute
 Modellierung einer Party - Attribute 
 ---------------------------------------------------------
 
-.. stack:: invisible
+.. deck::
 
-    .. layer:: 
+    .. card:: 
 
         .. image:: images/uml-cd/klassen.svg
             :alt: Klassen
             :height: 1000px
             :align: center
 
-    .. layer:: overlay incremental
+    .. card:: overlay
 
         .. image:: images/uml-cd/attribute_einfach.svg
             :alt: Einfache Attribute
             :height: 1000px
             :align: center
 
-    .. layer:: overlay incremental
+    .. card:: overlay
 
         .. image:: images/uml-cd/attribute_mit_default.svg
             :height: 1000px
             :align: center    
 
-    .. layer:: overlay incremental
+    .. card:: overlay
 
         .. image:: images/uml-cd/attribute_mit_mengen.svg
             :height: 1000px
             :align: center            
 
-    .. layer:: overlay incremental
+    .. card:: overlay
 
         .. image:: images/uml-cd/attribute_keine.svg
             :height: 1000px
             :align: center            
     
-    .. layer:: overlay incremental
+    .. card:: overlay
 
         .. image:: images/uml-cd/attribute_abgeleitet.svg
             :height: 1000px
@@ -358,57 +361,57 @@ Modellierung einer Party - Attribute
 Modellierung einer Party - Operationen/Methoden 
 ---------------------------------------------------------
 
-.. stack:: invisible
+.. deck::
 
-    .. layer:: 
+    .. card:: 
 
         .. image:: images/uml-cd/klassen.svg
             :alt: Klassen
             :height: 1000px
             :align: center
 
-    .. layer:: overlay 
+    .. card:: overlay 
 
         .. image:: images/uml-cd/attribute_einfach.svg
             :alt: Einfache Attribute
             :height: 1000px
             :align: center
 
-    .. layer:: overlay 
+    .. card:: overlay 
 
         .. image:: images/uml-cd/attribute_mit_default.svg
             :height: 1000px
             :align: center    
 
-    .. layer:: overlay 
+    .. card:: overlay 
 
         .. image:: images/uml-cd/attribute_mit_mengen.svg
             :height: 1000px
             :align: center            
 
-    .. layer:: overlay 
+    .. card:: overlay 
 
         .. image:: images/uml-cd/attribute_keine.svg
             :height: 1000px
             :align: center            
     
-    .. layer:: overlay 
+    .. card:: overlay 
 
         .. image:: images/uml-cd/attribute_abgeleitet.svg
             :height: 1000px
             :align: center            
 
-    .. layer:: overlay incremental faded-to-white
+    .. card:: overlay fade-out
 
         :raw-html:`&nbsp;`
 
-    .. layer:: overlay incremental
+    .. card:: overlay
 
         .. image:: images/uml-cd/methoden_einfach.svg
             :height: 1000px
             :align: center  
 
-    .. layer:: overlay incremental
+    .. card:: overlay
 
         .. image:: images/uml-cd/methoden_mit_in_out.svg
             :height: 1000px
@@ -443,107 +446,107 @@ Modellierung einer Party - Operationen/Methoden
 Modellierung einer Party - Beziehungen 
 ---------------------------------------------------------
 
-.. stack:: invisible
+.. deck::
 
-    .. layer:: 
+    .. card:: 
 
         .. image:: images/uml-cd/klassen.svg
             :alt: Klassen
             :height: 1000px
             :align: center
 
-    .. layer:: overlay 
+    .. card:: overlay 
 
         .. image:: images/uml-cd/attribute_einfach.svg
             :alt: Einfache Attribute
             :height: 1000px
             :align: center
 
-    .. layer:: overlay 
+    .. card:: overlay 
 
         .. image:: images/uml-cd/attribute_mit_default.svg
             :height: 1000px
             :align: center    
 
-    .. layer:: overlay 
+    .. card:: overlay 
 
         .. image:: images/uml-cd/attribute_mit_mengen.svg
             :height: 1000px
             :align: center            
 
-    .. layer:: overlay 
+    .. card:: overlay 
 
         .. image:: images/uml-cd/attribute_keine.svg
             :height: 1000px
             :align: center            
     
-    .. layer:: overlay 
+    .. card:: overlay 
 
         .. image:: images/uml-cd/attribute_abgeleitet.svg
             :height: 1000px
             :align: center            
 
-    .. layer:: overlay 
+    .. card:: overlay 
 
         .. image:: images/uml-cd/methoden_einfach.svg
             :height: 1000px
             :align: center  
 
-    .. layer:: overlay
+    .. card:: overlay
 
         .. image:: images/uml-cd/methoden_mit_in_out.svg
             :height: 1000px
             :align: center  
 
-    .. layer:: overlay incremental
+    .. card:: overlay
 
         .. image:: images/uml-cd/assoziation_einfach.svg
             :height: 1000px
             :align: center  
 
-    .. layer:: overlay incremental
+    .. card:: overlay
 
         .. image:: images/uml-cd/assoziation_gerichtet.svg
             :height: 1000px
             :align: center  
 
-    .. layer:: overlay incremental
+    .. card:: overlay
 
         .. image:: images/uml-cd/assoziation_komposition.svg
             :height: 1000px
             :align: center  
 
-    .. layer:: overlay incremental
+    .. card:: overlay
 
         .. image:: images/uml-cd/assoziation_aggregation.svg
             :height: 1000px
             :align: center  
 
-    .. layer:: overlay incremental
+    .. card:: overlay
 
         .. image:: images/uml-cd/assoziation_keine-aggregation.svg
             :height: 1000px
             :align: center
 
-    .. layer:: overlay incremental
+    .. card:: overlay
 
         .. image:: images/uml-cd/assoziation_generalisierung.svg
             :height: 1000px
             :align: center  
 
-    .. layer:: overlay incremental
+    .. card:: overlay
 
         .. image:: images/uml-cd/benennung.svg
             :height: 1000px
             :align: center  
 
-    .. layer:: overlay incremental
+    .. card:: overlay
 
         .. image:: images/uml-cd/enumeration.svg
             :height: 1000px
             :align: center  
 
-    .. layer:: overlay incremental
+    .. card:: overlay
 
         .. image:: images/uml-cd/assoziationsklasse.svg
             :height: 1000px
@@ -614,7 +617,7 @@ Modellierungsfehler
    In Hinblick auf das Verhalten ist es falsch, dass ein Quadrat von einem Rechteck erbt. Ein Quadrat ist ein Spezialfall eines Rechtecks, bei dem die Seitenlängen gleich sind. Würden wir in unserem Code glauben, dass wir - zum Beispiel - die Breite eines Rechtecks verändern, da der Datentyp :java:`Rectangle` ist, sich hinter dem :java:`Rectangle` ein Objekt vom Typ :java:`Square` verbergen, dann würde sich auch die Höhe des :java:`Rectangle` verändern. Das ist nicht das Verhalten, das wir als Nutzer einer Instanz der Klasse erwarten würden.
 
 
-.. class:: integrated-exercise
+.. class:: exercises
 
 Übung
 -------------------
@@ -651,7 +654,7 @@ Modellierungsfehler
     Sie können die Modellierung auf Papier machen oder zum Beispiel eine (kostenlose) UML-Modellierungssoftware verwenden: z. B. https://app.diagrams.net.
 
 
-.. class:: integrated-exercise
+.. class:: exercises
 
 Übung
 -------------------
@@ -672,7 +675,7 @@ Modellierungsfehler
 
 
 
-.. class:: integrated-exercise
+.. class:: exercises
 
 Übung
 -------------------
@@ -685,13 +688,13 @@ Modellierungsfehler
 
     Welche Methoden machen auf Ausdrücken immer Sinn und würden Sie dann in Ihrer Modellierung definieren?
 
-
     .. solution::
         :pwd: ExprIstDieSuperklasse 
 
         Auch hier gibt es Variationsmöglichkeiten bei der Modellierung. Ein wesentlicher Aspekt, der sich in der Modellierung wiederspiegeln muss, ist, dass es sich um eine rekursive Datenstruktur handelt, die wir modellieren: ein bestimmter Ausdruck besteht aus einem (impliziten) Operator und einer Liste von Operanden, wobei die Operanden wieder Ausdrücken sein können. 
         
         :math:`{x^2 + y^2}` könnte repräsentiert werden als ein Ausdruck vom Typ Addition, der auf zwei Ausdrücke vom Typ Potenz verweist, die wiederum auf Variablen (:math:`x` und :math:`y`) verweisen und zwei konkrete Zahlen (:math:`2`). Im Allgemeinen könnte natürlich auch der Exponent ein Ausdruck sein, der wiederum auf andere Ausdrücke verweist.
+
 
 
 .. class:: new-section transition-move-to-top
@@ -704,30 +707,30 @@ Beispiel: Sequenzdiagram für ein Alarmsystem
 ---------------------------------------------------------
 
 
-.. stack:: invisible
+.. deck::
 
-    .. layer:: incremental
+    .. card::
 
         .. image:: images/uml-sd/objekte.svg
             :alt: Compartment
             :height: 1000px
             :align: center
 
-    .. layer:: overlay incremental
+    .. card:: overlay
 
         .. image:: images/uml-sd/aktivieren.svg
             :alt: Zustände
             :height: 1000px
             :align: center
 
-    .. layer:: overlay incremental
+    .. card:: overlay
 
         .. image:: images/uml-sd/alarm.svg
             :alt: Zustände
             :height: 1000px
             :align: center            
 
-    .. layer:: overlay incremental
+    .. card:: overlay
 
         .. image:: images/uml-sd/2nd_alarm.svg
             :alt: Zustände
@@ -751,7 +754,7 @@ Beispiel: Sequenzdiagram für ein Alarmsystem
         In vielen Diagrammen wird auf die Feinheiten bzgl. der korrekten Darstellung der Nachrichten wenig Wert gelegt. Sollte sie sich nicht sicher sein, dass der Ersteller bewusst synchrone und asynchrone Nachrichten unterschieden hat, dann sollten Sie davon ausgehen, dass es sich um synchrone Nachrichten handelt.
 
 
-.. class:: integrated-exercise transition-move-to-top
+.. class:: exercises transition-move-to-top
 
 Übung
 -------------------
@@ -786,51 +789,51 @@ Zustandsautomaten
 Beispiel: Zustandsautomat für einen Partyteilnehmer
 ---------------------------------------------------------
 
-.. stack:: invisible
+.. deck::
 
-    .. layer:: 
+    .. card:: 
 
         .. image:: images/uml-state/compartment.svg
             :alt: Compartment
             :height: 1000px
             :align: center
 
-    .. layer:: overlay incremental
+    .. card:: overlay
 
         .. image:: images/uml-state/states.svg
             :alt: Zustände
             :height: 1000px
             :align: center
 
-    .. layer:: overlay incremental
+    .. card:: overlay
 
         .. image:: images/uml-state/startstate.svg
             :alt: Startzustand
             :height: 1000px
             :align: center
 
-    .. layer:: overlay incremental
+    .. card:: overlay
 
         .. image:: images/uml-state/transition_to_feiert.svg
             :alt: Zustandsübergang zur "feiert"
             :height: 1000px
             :align: center
 
-    .. layer:: overlay incremental
+    .. card:: overlay
 
         .. image:: images/uml-state/check_state.svg
             :alt: Überprüfen des Zustands des Partyteilnehmers
             :height: 1000px
             :align: center
 
-    .. layer:: overlay incremental
+    .. card:: overlay
 
         .. image:: images/uml-state/end_state.svg
             :alt: Endzustände
             :height: 1000px
             :align: center
 
-    .. layer:: overlay incremental
+    .. card:: overlay
 
         .. image:: images/uml-state/events.svg
             :alt: Ereignisse
@@ -883,7 +886,7 @@ Beispiel: Zustandsautomat für einen Partyteilnehmer
 
 
 
-.. class:: integrated-exercise
+.. class:: exercises
 
 Übung
 -------------------
