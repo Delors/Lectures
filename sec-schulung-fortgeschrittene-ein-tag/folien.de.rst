@@ -3649,7 +3649,6 @@ Das Ziel der Konfiguration muss eine minimale angreifbare Oberfläche sein.
     Default:
 
     .. code:: sh
-        :class: far-smaller
 
         $ ls -al /bin/sh
         -rwxr-xr-x  1 root  wheel  101232 Oct  1 06:10 /bin/sh

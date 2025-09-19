@@ -588,7 +588,6 @@ Exponentielle Suche im sortierten (unbeschränkten) *Array*
 
 .. code:: pascal
     :number-lines:
-    :class: far-smaller
 
     Algorithm ExponentialSearch(A,needle)
         i = 1
@@ -1207,7 +1206,6 @@ Knuth-Morris-Pratt Verfahren
 
         .. code:: pascal
             :number-lines:
-            :class: far-smaller
 
             Algorithm KMP(text,needle)
                 n = length(text), m = length(needle)

@@ -442,7 +442,6 @@ Verwendung von *Sperren*\ [#]_
     .. cell:: width-50
 
       .. code:: python
-        :class: far-smaller
 
         lock = Lock()
         lock.acquire()
@@ -455,7 +454,6 @@ Verwendung von *Sperren*\ [#]_
     .. cell:: width-50 incremental
 
       .. code:: python
-        :class: far-smaller
 
         lock = Lock()
 
