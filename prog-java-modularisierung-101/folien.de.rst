@@ -553,7 +553,6 @@ Beispiel für die konkrete Anwendung
 .. rubric::  Verzeichnis mit der fachlichen Logik für mathematische Funktionen:
 
 .. code:: java
-    :class: far-smaller
 
     package de.dhbw.mannheim.calculator.math;
 
@@ -564,7 +563,6 @@ Beispiel für die konkrete Anwendung
 .. rubric:: Code mit der Logik für die Interaktion mit dem Benutzer:
 
 .. code:: java
-    :class: far-smaller
 
     package de.dhbw.mannheim.calculator;
 
