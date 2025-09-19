@@ -7,9 +7,10 @@ Falls es zu einem EADDRINUSE kommt
 Um die PID des Prozesses zu finden, die den Port (hier: Port 5000) nutzt:
 
 .. code:: bash
+    :number-lines:
    
-   $ lsof -i :5000
-   $ ls -e | grep <PID>
+    $ lsof -i :5000
+    $ ls -e | grep <PID>
 
 
 Senden von HTTP POST mit Hilfe von CURL
@@ -28,7 +29,7 @@ _________
 Response
 _________
 
-.. container:: scrollable
+.. scrollable::
 
     .. code:: json
         :number-lines:
