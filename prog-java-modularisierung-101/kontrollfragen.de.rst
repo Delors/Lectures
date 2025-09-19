@@ -1,5 +1,5 @@
 .. meta::
-   :version: genesis
+   :version: renaissance
    :lang: de
    :author: Michael Eichberg
    :keywords: "Programmierung", "Java", "Arrays"
@@ -21,25 +21,28 @@ Kontrollfragen zu Klassen, Packages und Imports
 
 
 
+.. class:: new-section
+
+Grundlagen
+------------
+
+
+
 Kontrollfragen
 ----------------
 
-.. container:: scrollable
+.. story::
 
-   .. class:: incremental long-list
-
-   1. \
-   
       .. exercise:: Welche Ziele werden bei der Modularisierung von Code verfolgt?
+         :class: incremental
 
          .. solution::
             :pwd: 4 Ziele
 
             Wiederverwendbarkeit, Kollaborative Entwicklung, Erweiterbarkeit, Wartbarkeit/Testbarkeit.
 
-   2. 
-
       .. exercise:: Sichtbarkeiten
+         :class: incremental
 
          Welche Sichtbarkeiten gibt es in Java und wie sind diese angeordnet?  
 
@@ -48,13 +51,10 @@ Kontrollfragen
 
             :java:`public`, :java:`protected`, *<package-private>*, :java:`private`
 
-
-   3. 
-
-      .. exercise:: Finden Sie den/die Fehler:
+      .. exercise:: Finden Sie den/die Fehler
+         :class: incremental
       
          .. code:: java
-            :class: far-far-smaller
 
             package math.dhbw.de;
             public class arrays {
@@ -74,13 +74,11 @@ Kontrollfragen
             - Die Klasse `Arrays` sollte groß geschrieben werden.
             - der Packaqename ist nicht in umgekehrter Reihenfolge des Domainnamens.
 
-   4. 
-
       .. exercise:: Imports 
+         :class: incremental
       
          .. code:: java
-            :class: far-far-smaller
-
+         
             package programmierung;
 
             public class TwoDimensionalArrays {
@@ -98,21 +96,27 @@ Kontrollfragen
             4. `import static programmierung.TwoDimensionalArrays.*;` // dann `clean(a);`
             5. `programmierung.TwoDimensionalArrays.clean(a);`
    
-   
 
-   5.
+
+.. class:: new-section
+
+Projektstruktur
+---------------
+
+
+Kontrollfragen
+----------------
+
+.. story::
 
       .. exercise:: Identifizieren Sie Fehler in der folgenden Projektkonfiguration:
 
-         .. image:: images/fehlerhafte_projekt_konfiguration.png
-            :height: 750px
+         .. figure:: images/fehlerhafte_projekt_konfiguration.webp
+            :height: 850px
             :alt: Fehlerhafte Projektkonfiguration
             :align: center
          
-         .. container:: text-align-center far-far-smaller minor
-
             ZED-Editor
-
 
          .. solution::
             :pwd: mehrere
