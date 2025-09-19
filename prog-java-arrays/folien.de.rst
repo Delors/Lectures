@@ -513,7 +513,7 @@ Die Parameter und der Rückgabewert einer Methode können vom Typ eines Feldes s
 
             Beispielinteraktion:
     
-            .. container:: faded-to-white
+            .. container:: fade-out
 
                 Bisher: 
 
