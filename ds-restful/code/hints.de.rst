@@ -19,7 +19,7 @@ Request
 _________
 
 .. code:: bash
-    :class: far-far-smaller
+    :number-lines:
 
     $ curl -X POST -H "Content-Type: application/json" \
       -d '{"user4": {"name": "Jango", "password": "luke", "job": "headhunter", "id": 4}}' \
@@ -31,7 +31,7 @@ _________
 .. container:: scrollable
 
     .. code:: json
-        :class: far-smaller
+        :number-lines:
 
         {
             "user1": {

@@ -59,7 +59,6 @@ Welche Skalierung haben gesuchte Daten sind im Array?
 - *Kardinale Größen* können modelliert werden für interpolierende Suche.
 
 .. hint::
-    :class: smaller
 
     Für unsere Betrachtung gehen wir im Folgenden davon aus, dass die Daten sortiert sind. Beim Vergleich der Algorithmen beschränken wir uns auf eine Betrachtung der Anzahl der Elementzugriffe.
 
@@ -546,7 +545,7 @@ Lineare interpolierende Suche
 
 .. code:: pascal
     :number-lines:
-    :class: far-smaller copy-to-clipboard
+    :class: copy-to-clipboard
 
     Algorithm linearInterpolatingSearch(A,needle)
         lower := 1               // index auf das kleinste Element
@@ -694,7 +693,6 @@ Exponentielle Suche im sortierten (unbeschränkten) *Array*
 
         .. include:: code/linear_interpolating_search.py
             :code: python
-            :class: smaller
             :number-lines:
 
 
@@ -731,21 +729,18 @@ Exponentielle Suche im sortierten (unbeschränkten) *Array*
 
         .. include:: code/exponential_search.py
             :code: python
-            :class: smaller
             :number-lines:
             :start-after: # binary_search(F, l, u, needle) -> int
             :end-before: # exponential_search(F, needle) -> int
 
         .. include:: code/exponential_search.py
             :code: python
-            :class: smaller
             :number-lines:
             :start-after: # exponential_search(F, needle) -> int
             :end-before: # eval
 
         .. include:: code/exponential_search.py
             :code: python
-            :class: smaller
             :number-lines:
             :start-after: # run_exponential_search
 
@@ -832,7 +827,6 @@ Strategien zur Anordnung - Diskussion
     .. csv-table::
         :header: x, MF-Regel, T-Regel, FC-Regel, "Häufigkeiten pro Wert"
         :align: center
-        :class: smaller
         :width: 90%
 
         1
@@ -876,7 +870,6 @@ Strategien zur Anordnung - Diskussion
     .. csv-table::
         :header: x, MF-Regel, T-Regel, FC-Regel, "Häufigkeiten"
         :align: center
-        :class: smaller
         :width: 90%
 
         5
@@ -941,7 +934,7 @@ Einfache Textsuche
 
         .. code:: pascal
             :number-lines:
-            :class: far-smaller copy-to-clipboard
+            :class: copy-to-clipboard
 
             Algorithmus NaiveTextSearch(text,needle)
                 n = length(text)
@@ -1128,7 +1121,6 @@ Knuth-Morris-Pratt Verfahren - Grundlagen
 
         .. csv-table::
             :header: ":math:`Präfixe \\setminus \\{ε\\}`", "Größter Rand", "Länge des Randes"
-            :class: smaller
 
             t, ε, 0
             tu, ε, 0
@@ -1143,7 +1135,6 @@ Knuth-Morris-Pratt Verfahren - Grundlagen
 
         .. csv-table::
             :header: ":math:`Präfixe \\setminus \\{ε\\}`", "Größter Rand", "Länge des Randes"
-            :class: smaller
 
             e, ε, 0
             ei, ε, 0
@@ -1158,7 +1149,6 @@ Knuth-Morris-Pratt Verfahren - Grundlagen
 
         .. csv-table::
             :header: ":math:`Präfixe \\setminus \\{ε\\}`", "Größter Rand", "Länge des Randes"
-            :class: smaller
 
             o, ε, 0
             ok, ε, 0
@@ -1173,7 +1163,6 @@ Knuth-Morris-Pratt Verfahren - Grundlagen
 
         .. csv-table::
             :header: ":math:`Präfixe \\setminus \\{ε\\}`", "Größter Rand", "Länge des Randes"
-            :class: smaller
 
             t, ε, 0
             tr, ε, 0
@@ -1195,7 +1184,7 @@ Knuth-Morris-Pratt Verfahren
 
         .. code:: pascal
             :number-lines:
-            :class: far-smaller copy-to-clipboard
+            :class: copy-to-clipboard
 
             Algorithm ComputePrefixFunction(needle)
                 m = length(needle)
@@ -1552,7 +1541,7 @@ Beispielanwendung: Bestimmung des Medians
 
 .. code:: pascal
     :number-lines:
-    :class: far-smaller copy-to-clipboard
+    :class: copy-to-clipboard
 
     Algorithm FindMedian(A) // A ist _nicht sortiert_
         n = length(A)
@@ -1579,7 +1568,6 @@ Beispielanwendung: Bestimmung des Medians
        .. csv-table::
             :header: "Array A", "k", "Lows", "Pivot", "Pivots Count", "Highs"
             :align: center
-            :class: smaller
 
             "[...]", <K>,  "[...]", <P>, "<#P>", "[...]"
 
@@ -1589,7 +1577,6 @@ Beispielanwendung: Bestimmung des Medians
         .. csv-table::
             :header: "Array A", "length(A)", "k", "Pivot", "lows", "highs", "pivotsCount"
             :align: center
-            :class: smaller
 
             "[23, 335, 2, 24, 566, 3, 233, 54, 42, 6, 667, 7, 5, 7, 7]", 15 , 7 , 7 , "[2, 3, 6, 5]", "[23, 335, 24, 566, 233, 54, 42, 667]", 3
             "[23, 335, 24, 566, 233, 54, 42, 667]", 8 , 0 , 667 , "[23, 335, 24, 566, 233, 54, 42]", "[]", 1

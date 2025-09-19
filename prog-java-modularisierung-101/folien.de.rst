@@ -618,18 +618,15 @@ Zusammenfassung
         .. include:: code/imports/math/Functions.java
             :code: java
             :number-lines: 
-            :class: smaller
 
         .. rubric:: Main.java
 
         .. include:: code/imports/Main.java
             :code: java
             :number-lines: 
-            :class: smaller
 
         .. rubric:: MainMitStaticImports.java
 
         .. include:: code/imports/MainMitStaticImports.java
             :code: java
             :number-lines: 
-            :class: smaller

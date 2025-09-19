@@ -535,7 +535,7 @@ DES: Beispiel
     .. rubric:: Beispiel - :math:`k_1`
 
     .. csv-table::
-        :class: far-smaller monospaced highlight-cell-on-hover
+        :class: monospaced highlight-cell-on-hover
         :align: center
         :header: Index, 1,2,3,4,5,6,7,8
 

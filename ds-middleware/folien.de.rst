@@ -1242,7 +1242,7 @@ MOM - Queue Managers
   .. rubric:: Einfacher TCP basierter SyslogServer in Java
 
   .. code:: java
-    :class: far-smaller copy-to-clipboard
+    :class: copy-to-clipboard
 
     import java.net.*;
     import java.io.*;
@@ -1275,7 +1275,7 @@ MOM - Queue Managers
   .. rubric:: Schablone für den Client in Java
 
   .. code:: java
-    :class: far-smaller copy-to-clipboard
+    :class: copy-to-clipboard
 
     import java.net.*;
     import java.io.*;

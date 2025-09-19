@@ -1095,7 +1095,7 @@ Lösung des Rätsels: SEND+MORE=MONEY
         - Keine Ziffer darf doppelt vorkommen
 
         .. math::
-            :class: smaller incremental
+            :class: incremental
 
             \begin{array}{cccccccl}
                 S_0 & + & S_1 & + & \ldots & + & S_9 & = & 1 \\
@@ -1133,7 +1133,7 @@ Lösung des Rätsels: SEND+MORE=MONEY
         .. include:: code/send_more_money.py
             :code: python
             :number-lines:
-            :class: far-smaller copy-to-clipboard
+            :class: copy-to-clipboard
             :end-before: VALS
 
         .. rubric:: Variablen
@@ -1141,7 +1141,7 @@ Lösung des Rätsels: SEND+MORE=MONEY
         .. include:: code/send_more_money.py
             :code: python
             :number-lines:
-            :class: far-smaller copy-to-clipboard
+            :class: copy-to-clipboard
             :start-after: )
             :end-before: # Nebenbedingungen
 
@@ -1152,7 +1152,7 @@ Lösung des Rätsels: SEND+MORE=MONEY
         .. include:: code/send_more_money.py
             :code: python
             :number-lines:
-            :class: far-smaller copy-to-clipboard
+            :class: copy-to-clipboard
             :start-after: # Nebenbedingungen
             :end-before: # Ziel
 
@@ -1163,7 +1163,7 @@ Lösung des Rätsels: SEND+MORE=MONEY
         .. include:: code/send_more_money.py
             :code: python
             :number-lines:
-            :class: far-smaller copy-to-clipboard
+            :class: copy-to-clipboard
             :start-after: # Ziel
             :end-before: # Lösung
 
@@ -1174,7 +1174,7 @@ Lösung des Rätsels: SEND+MORE=MONEY
         .. include:: code/send_more_money.py
             :code: python
             :number-lines:
-            :class: far-smaller copy-to-clipboard
+            :class: copy-to-clipboard
             :start-after: # Lösung berechnen
 
         .. rubric:: Ausgabe
@@ -1267,7 +1267,6 @@ Lösung des Rätsels: SEND+MORE=MONEY
         .. include:: code/group_assignment.py
             :code: python
             :number-lines:
-            :class: smaller
 
 .. exercise:: Alle Gruppen gleich glücklich machen
 

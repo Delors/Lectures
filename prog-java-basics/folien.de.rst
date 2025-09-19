@@ -349,7 +349,6 @@ Java Shell
     Zum Starten der JShell müssen Sie die Konsole (ein Terminal) öffnen und ``jshell`` eingeben. 
 
     .. hint:: 
-        :class: smaller
       
         - In Programmiersprachen wird generell die englische Schreibweise für Zahlen verwendet. D. h. Sie müssen das Dezimalkomma durch einen Punkt ersetzen.)
 
@@ -2670,7 +2669,7 @@ Rekursive Methoden - Beispiel
         Elegante rekursive Implementierung des Algorithmus von Euklid:
 
         .. code:: java
-            :class: smaller copy-to-clipboard
+            :class: copy-to-clipboard
             
             int ggt(int z1, int z2) {
                 if (z2 == 0)

@@ -1606,7 +1606,7 @@ Annahme: Schwachstellen mit einem CVSS Score :math:`\geq` 7 (d. h. mit einer B
   **Ausgenutzt wurden: 686**
 
 .. admonition:: Zusammenfassung
-    :class: smaller incremental
+    :class: incremental
 
     Die Strategie „Priorisierung von Schwachstellen mit einem bestimmten CVSS Score“ (hier :math:`\geq` 7) ist keine geeignete Strategie, da sie nicht alle relevanten  Schwachstellen erfasst (686 *False Negatives*) und - ganz insbesondere - zu viele Schwachstellen (76.858 *False Positives*) erfasst, die nicht ausgenutzt werden.
 
@@ -1649,7 +1649,7 @@ Annahme: Schwachstellen mit EPSS 10% und größer sind werden ausgenutzt werden.
   **Ausgenutzt wurden: 1.417**
 
 .. admonition:: Zusammenfassung
-    :class: smaller incremental
+    :class: incremental
 
     Die Strategie „Priorisierung von Schwachstellen mit einem EPSS von 10% und höher“ ist eine geeignete\ *re* Strategie, da sehr viele relevante Schwachstellen erfasst werden und - ganz insbesondere - die Anzahl der zu beachtenden Schwachstellen ganz massiv reduziert wird ohne die Gesamtqualität *zu stark* zu beeinflussen.
 

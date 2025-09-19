@@ -2100,7 +2100,6 @@ Anzeige des Inhalts, der nicht in die umgebende Box passt, kontrollieren
         *HTML*
 
         .. code:: html
-            :class: far-smaller
 
             <div class="container">
                 <div>1</div>

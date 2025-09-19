@@ -49,7 +49,6 @@ Dynamische Programmierung
       .. include:: code/min_coins_rek.py
          :code: python
          :number-lines:
-         :class: far-smaller
 
 .. exercise:: Minimale Anzahl an Münzen mit dynamischer Programmierung
    :class: incremental
@@ -62,7 +61,6 @@ Dynamische Programmierung
       .. include:: code/min_coins_dynamic_programming.py
          :code: python
          :number-lines:
-         :class: far-smaller
 
 
 

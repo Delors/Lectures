@@ -94,7 +94,6 @@ Schreiben Sie eine entsprechende Methode :java:`suche(...)`.
 Beispiel:
 
     .. code:: java
-        :class: far-smaller
 
         char text[] = {'a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p'};
         char zuSuchen[] = {'i','j','k','l'};

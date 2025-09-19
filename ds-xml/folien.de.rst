@@ -78,7 +78,6 @@ XML - Hintergrund
 
     .. code:: DTD
         :number-lines:
-        :class: far-smaller
 
         <!ELEMENT note (head,body)>
         <!ELEMENT head (#PCDATA)>
@@ -674,7 +673,6 @@ XPath - Pfadausdrücke
 - XPath-Ausdrücke müssen nicht bei der Wurzel starten:
 
   .. code:: xslt
-    :class: far-smaller
 
     modul/vorlesung
 
@@ -696,7 +694,6 @@ Resultat eines XPath-Ausdrucks
     Sei das folgende XML-Dokument gegeben:
 
     .. code:: xml
-        :class: far-smaller
 
         <modul>
             <vorlesung>Eins</vorlesung>
@@ -706,7 +703,6 @@ Resultat eines XPath-Ausdrucks
     Dann gibt der folgende Ausdruck zwei ``vorlesung``-Elemente zurück:
 
     .. code:: xslt
-        :class: far-smaller
 
         /modul/vorlesung
 
@@ -816,21 +812,18 @@ Namen und Namensräume
   - Alle Elemente, die in einem ``modul``-Element enthalten sind:
 
     .. code:: xslt
-        :class: far-smaller
 
         /modul/*
 
   - Alle Attribute eines ``vorlesung``-Elements:
 
     .. code:: xslt
-        :class: far-smaller
 
         /modul/vorlesung/@*
 
   - Verwendung von Namensräumen:
 
     .. code:: xslt
-        :class: far-smaller
 
         /dhbw:modul/dhbw:*
         /dhbw:modul/dhbw:vorlesung/@i:*
@@ -945,7 +938,6 @@ Selektion von Kindknoten
     :class: incremental
 
     .. code:: xslt
-        :class: far-smaller
 
         lehrveranstaltungen//vorlesung[@mhb='123']/..
 

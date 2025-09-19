@@ -745,7 +745,7 @@ Alles ist ein Objekt
    .. include:: code/Prototypes.js
       :code: javascript
       :number-lines:
-      :class: far-far-smaller scrollable copy-to-clipboard
+      :class: copy-to-clipboard
       :tab-width: 4
 
 
@@ -758,7 +758,7 @@ Praktische Verwendung von Prototypen basierter Vererbung
    .. include:: code/Array.prototype.js
       :code: javascript
       :number-lines:
-      :class:  copy-to-clipboard
+      :class: copy-to-clipboard
       :tab-width: 4
 
 
@@ -872,7 +872,6 @@ Authentifizierung mit JWT (und Express)
       Die initiale Authentifizierung, die im folgenden Beispiel über ein per get-Request übermittelten Benutzernamen und Passwort erfolgt, ist **nicht sicher**. In einer realen Anwendung sollte für die initiale Authentifizierung ein sicherer Mechanismus verwendet werden. Eine Möglichkeit wäre z. B. die Verwendung von DIGEST Authentication (nicht empfohlen bzw. nur für einfachste Fälle). Sinnvoll wäre Basic Authentication *in Verbindung mit HTTPS* oder zum Beispiel der Einsatz von OAuth.
 
    .. warning::
-      :class: far-smaller
 
       *Basic Authentication* ohne HTTPS ist nicht sicher!
 
@@ -883,7 +882,7 @@ Authentifizierung mit JWT (und Express)
    .. include:: code/authentication/server.mjs
       :code: javascript
       :number-lines:
-      :class: far-far-smaller copy-to-clipboard
+      :class: copy-to-clipboard
       :tab-width: 4
 
    **Client (JavaScript)**
@@ -891,7 +890,7 @@ Authentifizierung mit JWT (und Express)
    .. include:: code/authentication/admin.js
       :code: javascript
       :number-lines:
-      :class: far-far-smaller copy-to-clipboard
+      :class: copy-to-clipboard
       :tab-width: 4
 
 .. supplemental::
