@@ -1,7 +1,6 @@
 .. include:: ../docutils.defs
 
 .. meta::
-    :version: renaissance
     :author: Michael Eichberg
     :keywords: moderne Programmierkonzepte, Organisation
     :description lang=de: Einführung in moderne Programmierkonzepte
@@ -67,7 +66,7 @@ Wir werden drei verschiedene Programmiersprachen und Konzepte kennenlernen anhan
 
   (Algorithmen stehen hier nicht im Vordergrund, sondern die konkrete Implementierung der Datenstrukturen sowie die Bereitstellung einer fortgeschrittenen API.)
 - Implementierung einer einfachen eDSL (embedded Domain Specific Language)
-  
+
   .. zum Beispiel eine DSL für Domainenspezifische Berechnungen
 - Entwicklung eines einfachen parallelisierten RESTful Web-Services
 
@@ -106,8 +105,8 @@ Vorträge - Rahmenbedingungen
 .. deck::
 
   .. card::
-      
-    
+
+
 
     - Jedes Thema wird von genau einer Person vorgetragen; alle Studierenden müssen einmal vortragen.
     - Die Vorträge sind 25 Minuten lang.
@@ -121,7 +120,7 @@ Vorträge - Rahmenbedingungen
       D. h. für einen Vortrag werden bis zu 30 Punkte vergeben, die sich wie folgt ergeben:
 
       :max. 10 Punkte: persönliches Auftreten (:math:`V_i^P`)
-      :max. 20 Punkte: 
+      :max. 20 Punkte:
         Ausgestaltung des Vortrags (:math:`V_i^A`) mit folgender Verteilung: 50%  persönlicher Anteil und 50%  Gruppenanteil/-beitrag. Am Ende ergibt sich somit die persönliche Note für den Vortrag(enden) :math:`V_i` wie folgt:
 
         Pkt. pers. Auftreten :math:`+ \frac{1}{2} \cdot` Pkt. Ausgestaltung :math:`+ \sum_{i=1}^G \frac{(V_i-V_i^P) \cdot \frac{1}{2}}{G}`
@@ -130,7 +129,7 @@ Vorträge - Rahmenbedingungen
 
   .. card:: center-content
 
-    .. attention:: 
+    .. attention::
 
       Die Vorträge sind immer am Abend vor dem Vortrag in Moodle hochzuladen.  Sollte der Vortrag nicht hochgeladen sein, erfolgt ein Malus von 5 Punkten auf die Vortragsnote im Bereich persönliches Auftreten.
 
@@ -160,7 +159,7 @@ Vorträge - Rahmenbedingungen
 
 
 
-Programmierübung 
+Programmierübung
 ------------------------------------------
 
 .. story::
@@ -170,7 +169,7 @@ Programmierübung
   - Jede Gruppe erstellt eine kleine Programmierübung zu der von Ihr vorgestellten Programmiersprache.
   - Die Übung richtet sich an alle Studierenden der anderen Gruppen; die Übung wird von der Person vorgestellt und begleitet, die nicht an der Präsentation beteiligt war.
   - Die Übung hat benotungstechnisch sowohl einen Anteil bzgl. der Vortragsnote als auch einen reinen Gruppenanteil; der sich aus der Qualität der Übungsaufgabe und der zur Verfügung gestellten Umgebung ergibt.
-  - Die zu bearbeitende Aufgabe  sollte sich von den Studierenden innerhalb von ca. 45 Minuten bearbeiten lassen und in mehrere Schritte gegliedert sein. 
+  - Die zu bearbeitende Aufgabe  sollte sich von den Studierenden innerhalb von ca. 45 Minuten bearbeiten lassen und in mehrere Schritte gegliedert sein.
   - Bei der Ausgestaltung sind sie frei. Es steht Ihnen dabei frei ob  Sie zum Beispiel einen vorgefertigten Rahmen zur Verfügung stellen oder etwas "auf der grünen Wiese" entwickeln lassen. Auf jeden Fall sollte die Übung allen Teilnehmern einen allerersten Einblick in die Programmiersprache geben. Es ist also ggf. notwendig umfangreiche Hilfestellungen zu geben.
   - Die Übung sollte nur Kenntnisse von den in der Vorträgen vorgestellten Konzepten voraussetzen.
 
@@ -190,7 +189,7 @@ Einführung - 18. Feb 2025
 Pro Programmiersprache/Team:
 
 - [1 Stud. - 25min] Präsentation der grundlegenden Konzepte der Programmiersprachen anhand des Beispiels RPN (Reverse Polish Notation) Taschenrechner.
-- [1 Stud. - 25min] Präsentation des Ecosystems (Build-Prozess, Central Repository, und Testen) 
+- [1 Stud. - 25min] Präsentation des Ecosystems (Build-Prozess, Central Repository, und Testen)
 
 
 
@@ -226,13 +225,13 @@ Pro Programmiersprache/Team:
 
 Pro Programmiersprache/Team:
 
-- [1 Stud. - 25min] Präsentation fortgeschrittener Programmierkonzepte anhand einer einfachen eDSL (embedded Domain Specific Language) 
+- [1 Stud. - 25min] Präsentation fortgeschrittener Programmierkonzepte anhand einer einfachen eDSL (embedded Domain Specific Language)
 
-- [60 min] Übung zu Scala  
+- [60 min] Übung zu Scala
 
 
 
-6. Termin - 8. Apr 2025 
+6. Termin - 8. Apr 2025
 ---------------------------
 
 Pro Programmiersprache/Team:
@@ -243,7 +242,7 @@ Pro Programmiersprache/Team:
 
 
 
-Abschluss - 22. Apr 2025 
+Abschluss - 22. Apr 2025
 ----------------------------------
 
 Pro Programmiersprache/Team:
@@ -265,12 +264,12 @@ Finale Abgabe (pro Gruppe)
 
     .. epigraph::
 
-      Hiermit erklären wir ehrenwörtlich, dass wir die vorliegende Portfolio-Arbeit zur Vorlesung „Moderne Programmierkonzepte” bestehend aus Vorträgen sowie Programmcode selbstständig verfasst und keine anderen als die angegebenen Quellen und Hilfsmittel benutzt haben. 
+      Hiermit erklären wir ehrenwörtlich, dass wir die vorliegende Portfolio-Arbeit zur Vorlesung „Moderne Programmierkonzepte” bestehend aus Vorträgen sowie Programmcode selbstständig verfasst und keine anderen als die angegebenen Quellen und Hilfsmittel benutzt haben.
 
       -- Datum, Unterschriften
 
   - *alle Vorträge* (inkl. der Übungsaufgabe) sind als PDF-Datei abzugeben.
-  - *ein aufgeräumtes GIT Repository* (oder ggf. ein Link auf ein öffentliches Repository), in dem alle Quelltexte zu finden sind, inkl. einer README.md, die die Struktur des Repositories erläutert und auch genau erklärt wie die Beispiele gebaut werden können. 
+  - *ein aufgeräumtes GIT Repository* (oder ggf. ein Link auf ein öffentliches Repository), in dem alle Quelltexte zu finden sind, inkl. einer README.md, die die Struktur des Repositories erläutert und auch genau erklärt wie die Beispiele gebaut werden können.
 
     Als Teil des Build-Prozesses müssen auch die Tests ausgeführt werden. Diese müssen eine sehr gute Abdeckung aufweisen. Sie müssen die von Ihnen erreichte Testabdeckung dokumentieren und begründen, warum diese Abdeckung ausreichend ist und wo sie ggf. noch *sinnvolles* Verbesserungspotential sehen, dieses aber nicht umgesetzt haben.
 
@@ -293,12 +292,12 @@ Entwickeln Sie einen einfachen interaktiven Taschenrechner, der beliebig große 
 ----
 
 .. supplemental::
- 
+
   Bei RPN werden die Operanden auf den Stack gelegt und die Operatoren arbeiten auf den entsprechenden obersten Elementen des Stacks. D. h. die Eingabe erfolgt zum Beispiel in der Form `1 2 + 3 *` und das Ergebnis ist 9.
 
-.. story:: 
+.. story::
 
-  .. compound:: 
+  .. compound::
     :class: incremental
 
     .. rubric:: Zu unterstützende Operationen des Taschenrechners
@@ -306,19 +305,19 @@ Entwickeln Sie einen einfachen interaktiven Taschenrechner, der beliebig große 
     .. class:: list-with-explanations
 
     - `+` Addition, `-` Subtraktion, `*` Multiplikation, `/` Division, `^` Potenzierung, `sqrt` Wurzel, `log` Logarithmus (zur Basis 10), `!` Fakultät, `abs` Betrag, `++` alle Zahlen auf dem Stack addieren,  `**` alle Zahlen auf dem Stack multiplizieren.
-    - Ausgabe in Infix-Notation (d. h. mit Klammerung); Beispiel 
-    
+    - Ausgabe in Infix-Notation (d. h. mit Klammerung); Beispiel
+
       :math-r:`1 2 + 3 *` ist in Infix-Notation: :math-r:`(1 + 2) * 3`
 
     - Ausgaben als Latex-Formel; Beispiel:
-      
-      :RPN: :math-r:`1 2 / 2 sqrt 3 + *` 
-      :Latex: :latex:`\[\frac{1}{2} \cdot \sqrt{2} + 3\]` 
+
+      :RPN: :math-r:`1 2 / 2 sqrt 3 + *`
+      :Latex: :latex:`\[\frac{1}{2} \cdot \sqrt{2} + 3\]`
       :Latex (rendered): :math:`\frac{1}{2} \cdot \sqrt{2} + 3`
 
-  .. compound:: 
+  .. compound::
     :class: incremental
-        
+
     .. rubric:: Benutzung
 
     .. class:: list-with-explanations
@@ -328,7 +327,7 @@ Entwickeln Sie einen einfachen interaktiven Taschenrechner, der beliebig große 
 
       Für die Darstellung des Gesamtausdrucks in Infix-Notation/Latex müssen Sie sich die Historie speichern.
 
-  .. compound:: 
+  .. compound::
     :class: incremental
 
     .. rubric:: Sonstiges
@@ -342,8 +341,8 @@ Entwickeln Sie einen einfachen interaktiven Taschenrechner, der beliebig große 
 
 .. story:: dd-margin-left-6em
 
-  .. compound:: 
-    
+  .. compound::
+
     Entwickeln Sie folgende drei einfachen Datenstrukturen, um komplexe Werte wie zum Beispiel Zeichenketten (ugs. :java:`String`\ s) oder allgemeine :java:`Record`\ s zu speichern.
 
     - Liste
@@ -364,7 +363,7 @@ Entwickeln Sie einen einfachen interaktiven Taschenrechner, der beliebig große 
     - **Liste**
 
       :get(pos): Gibt das Element an der gegebenen Position zurück.
-      :add(elems): Fügt alle Elemente der Liste hinzu. 
+      :add(elems): Fügt alle Elemente der Liste hinzu.
       :insert(elem, pos): Einfügen eines Elements an der gegeben  Position.
       :remove(elem): Entfernt das erste Vorkommen des Elements aus einer nicht leeren Liste.
       :removeAt(pos): Entfernt das Element an der gegebenen Position.
@@ -376,7 +375,7 @@ Entwickeln Sie einen einfachen interaktiven Taschenrechner, der beliebig große 
     - **Stack**
 
       :push(elem): Fügt ein neues Element dem Stapel hinzu.
-      :pushAll(elems): Fügt alle Elemente dem Stapel hinzu. 
+      :pushAll(elems): Fügt alle Elemente dem Stapel hinzu.
 
         :peripheral:`Wenn möglich, dann nutzen Sie eine variadische Methode (*Varargs* in Java).`
       :pop(): Entfernt das zuletzt hinzugefügte Element.
@@ -385,7 +384,7 @@ Entwickeln Sie einen einfachen interaktiven Taschenrechner, der beliebig große 
       :isEmpty(): :java:`true` wenn der Stack leer ist sonst :java:`false`
       :isFull(): :java:`false` wenn der Stack leer ist sonst :java:`true`
 
-    - **Queue** 
+    - **Queue**
 
       :enqueue(elem): Fügt ein Element am Ende der Warteschlange ein.
       :dequeue(): Entfernt das erste/älteste Element der Warteschlange und gibt es zurück.
@@ -401,7 +400,7 @@ Entwickeln Sie einen einfachen interaktiven Taschenrechner, der beliebig große 
       :equals(other): Gibt :java:`true` zurück, wenn zwei Datenstrukturen des gleichen Typs die gleichen Werte (in gleicher Reihenfolge) enthalten; sonst :java:`false`.
       :toString(): eine Repräsentation als String haben (toString), die den Inhalt der Datenstruktur darstellt und die die programmatische Rekonstruktion der Datenstruktur ermöglicht bzw. erleichtert.
 
-  .. compound::  
+  .. compound::
     :class: incremental
 
     .. rubric:: allgemeine Anforderungen
@@ -412,10 +411,10 @@ Entwickeln Sie einen einfachen interaktiven Taschenrechner, der beliebig große 
     - Versuchen Sie Code-Duplikation zu vermeiden; wägen Sie dabei - in Abhängigkeit von der Möglichkeiten der Sprache - das Entwurfsprinzip: *Composition over Inheritance* mit möglichen Codeeinsparungen ab.
     - Entwickeln Sie hinreichende Tests für die geforderten Operationen.
     - Die Datenstrukturen sollen so entwickelt werden, dass eine Nutzung in anderen Projekten möglich ist.
-    - Versuchen Sie eine möglichst typsichere Implementierung zu realisieren. 
+    - Versuchen Sie eine möglichst typsichere Implementierung zu realisieren.
     - Ist es möglich - und wenn ja zu welchen Kosten - primitive Datentypen in Ihren Datenstrukturen zu speichern?
 
-      (Stichwort: Zero-Cost Abstractions.) 
+      (Stichwort: Zero-Cost Abstractions.)
 
     - *Fehlerbehandlung*: Fehler sollten (sprach-)angemessen behandelt werden.
 
@@ -426,7 +425,7 @@ Entwickeln Sie einen einfachen interaktiven Taschenrechner, der beliebig große 
 
 .. story:: dd-margin-left-6em
 
-  .. compound:: 
+  .. compound::
 
     Setzten Sie die Entwicklung der drei einfachen Datenstrukturen (Liste, Stack und Queue) fort mit dem Ziel, die grundlegenden Konzepte der funktionalen Programmierung zu demonstrieren. Diesbezüglich gilt, dass die Originaldatenstruktur unverändert bleibt und die Methoden ggf. neue Datenstrukturen anlegen.
 
@@ -436,29 +435,29 @@ Entwickeln Sie einen einfachen interaktiven Taschenrechner, der beliebig große 
 
     - :java:`forEach(f)`: :java:`f` wird auf alle Elemente angewendet.
     - :java:`filter(f)`: eine neue Datenstruktur wird angelegt, die alle Elemente enthält für die :java:`f` den Wert :java:`true` zurückgibt.
-    
-      Der Nutzer soll optional eine Zieldatenstruktur angeben können. 
+
+      Der Nutzer soll optional eine Zieldatenstruktur angeben können.
 
     - :java:`map(f)`: wendet die Funktion :java:`f` auf alle Elemente der Datenstruktur an und gibt eine neue Datenstruktur zurück. Dabei ist zu beachten, dass die ursprüngliche Datenstruktur unverändert bleibt und :java:`f` auch den Typ der Elemente ändern kann.
 
-      Der Nutzer soll optional eine Zieldatenstruktur angeben können. 
+      Der Nutzer soll optional eine Zieldatenstruktur angeben können.
 
-    - :java:`reduce(f)`: nutzt die binäre Funktion :java:`f`, um die Elemente der Datenstruktur auf einen einzigen Wert zu reduzieren. 
+    - :java:`reduce(f)`: nutzt die binäre Funktion :java:`f`, um die Elemente der Datenstruktur auf einen einzigen Wert zu reduzieren.
 
       Ein Beispiel für die Verwendung von :java:`reduce` wäre eine Liste von Zahlen und die Funktion :java:`f` ist die Addition, um die Summe zu berechnen.
-      
-      - Die Reihenfolge der Anwendung von :java:`f` ist nicht spezifiziert. 
-      - Der Zieldatentyp kann unterschiedlich vom Elementtyp sein. 
+
+      - Die Reihenfolge der Anwendung von :java:`f` ist nicht spezifiziert.
+      - Der Zieldatentyp kann unterschiedlich vom Elementtyp sein.
       - Ist die Datenstruktur leer, dann soll eine aussagekräftige Ausnahme geworfen werden.
-    - :java:`reduceLeft(f)`: nutzt die binäre Funktion :java:`f`, um die Elemente der Datenstruktur auf einen einzigen Wert zu reduzieren. 
-    
+    - :java:`reduceLeft(f)`: nutzt die binäre Funktion :java:`f`, um die Elemente der Datenstruktur auf einen einzigen Wert zu reduzieren.
+
       Ein Beispiel für die Verwendung von :java:`reduceLeft` wäre eine Liste von Zahlen und eine Funktion :java:`f` die einen String erzeugt, der die natürliche Reihenfolge der Element wiederspiegeln soll.
 
-      - Die Reihenfolge der Anwendung von :java:`f` erfolgt gemäß der natürlichen Reihenfolge der Datenstruktur. 
-      - Der Zieldatentyp kann unterschiedlich vom Elementtyp sein. 
+      - Die Reihenfolge der Anwendung von :java:`f` erfolgt gemäß der natürlichen Reihenfolge der Datenstruktur.
+      - Der Zieldatentyp kann unterschiedlich vom Elementtyp sein.
       - Ist die Datenstruktur leer, dann soll eine aussagekräftige Ausnahme geworfen werden.
 
-  
+
   .. class:: incremental
 
     .. rubric:: Anforderungen an die Datenstrukturen
@@ -475,7 +474,7 @@ Entwickeln Sie einen einfachen interaktiven Taschenrechner, der beliebig große 
     - Für die Funktionen :java:`map` und :java:`filter` soll es sowohl *lazy* als auch *eager* Versionen der Operationen geben und auch Verkettung (:java:`.map(...).filter(...).map(...)`) ermöglicht werden. Insbesondere für die *lazy* Varianten gilt, dass diese erst dann zur Evaluation der Operationen führen sollen, wenn das Ergebnis benötigt wird. (Zum Beispiel aufgrund eines Aufrufs von :java:`reduce`. Sie können ggf. auch gerne eine Methode (:java:`to`) hinzufügen, die die Datenstruktur explizit reifiziert.)
 
 
-  .. compound:: 
+  .. compound::
     :class: incremental
 
     .. rubric:: Hinweise zur Präsentation
@@ -490,8 +489,8 @@ Entwickeln Sie einen einfachen interaktiven Taschenrechner, der beliebig große 
 -----------------------------------------
 
 .. story:: dd-margin-left-6em
-    
-  Setzen Sie die Entwicklung der drei einfachen Datenstrukturen (Liste, Stack und Queue) fort mit dem Ziel, die grundlegenden Konzepte der nebenläufigen Programmierung zu demonstrieren. 
+
+  Setzen Sie die Entwicklung der drei einfachen Datenstrukturen (Liste, Stack und Queue) fort mit dem Ziel, die grundlegenden Konzepte der nebenläufigen Programmierung zu demonstrieren.
 
   Setzen Sie dabei für alle drei Datenstrukturen folgende Methoden um:
 
@@ -499,18 +498,18 @@ Entwickeln Sie einen einfachen interaktiven Taschenrechner, der beliebig große 
 
   - :java:`parallelMap(f)`: wendet die seiteneffektfreie Funktion :java:`f` auf alle Elemente der Datenstruktur an und gibt eine neue Datenstruktur zurück. Dabei ist zu beachten, dass die ursprüngliche Datenstruktur unverändert bleibt und :java:`f` auch den Typ der Elemente ändern kann.
 
-    - Die Reihenfolge der Anwendung von :java:`f` ist nicht spezifiziert. 
-    - Der Zieldatentyp kann unterschiedlich vom Elementtyp sein. 
+    - Die Reihenfolge der Anwendung von :java:`f` ist nicht spezifiziert.
+    - Der Zieldatentyp kann unterschiedlich vom Elementtyp sein.
 
-  - :java:`parallelReduce(f)`: nutzt die binäre, seiteneffektfreie Funktion :java:`f`, um die Elemente der Datenstruktur auf einen einzigen Wert zu reduzieren. 
+  - :java:`parallelReduce(f)`: nutzt die binäre, seiteneffektfreie Funktion :java:`f`, um die Elemente der Datenstruktur auf einen einzigen Wert zu reduzieren.
 
     Ein Beispiel für die Verwendung von :java:`parallelReduce` wäre eine Liste von Zahlen und die Funktion :java:`f` ist die Addition, um die Summe zu berechnen.
-    
-    - Die Reihenfolge der Anwendung von :java:`f` ist nicht spezifiziert. 
-    - Der Zieldatentyp kann unterschiedlich vom Elementtyp sein. 
+
+    - Die Reihenfolge der Anwendung von :java:`f` ist nicht spezifiziert.
+    - Der Zieldatentyp kann unterschiedlich vom Elementtyp sein.
     - Ist die Datenstruktur leer, dann soll eine aussagekräftige Ausnahme geworfen werden.
 
-  .. compound:: 
+  .. compound::
     :class: incremental
 
     .. rubric:: Anforderungen an die Datenstrukturen
@@ -519,7 +518,7 @@ Entwickeln Sie einen einfachen interaktiven Taschenrechner, der beliebig große 
     - Das Ziel ist es die Methoden mit möglichst wenig Code zu implementieren; d. h. versuchen Sie — soweit es Ihnen und in der Programmiersprache möglich ist — die Methoden nur einmal zu implementieren und dann für alle Datenstrukturen zu verwenden. Sollte dies signifikante Kosten (zur Laufzeit/beim Codeverständnis) verursachen, dann implementieren Sie die Methoden für jede Datenstruktur einzeln und dokumentieren/präsentieren Sie die Gründe für diese Entscheidung.
 
 
-  .. compound:: 
+  .. compound::
     :class: incremental
 
     .. rubric:: Hinweise zur Präsentation
@@ -539,20 +538,20 @@ Entwickeln Sie einen einfachen interaktiven Taschenrechner, der beliebig große 
 
   .. rubric:: Hintergrund
 
-  Ziel dieser Aufgabe ist es zu untersuchen bzw. darzustellen, inwieweit es möglich ist, in der jeweiligen Sprache eine sogenannte eDSL zu entwickeln. Das Ziel einer eDSL ist es, eine API bereitzustellen, die es ermöglicht, mit vertrauten Konzepten aus einer bestimmten Domäne/einem bestimmten Bereich zu arbeiten. 
-  
+  Ziel dieser Aufgabe ist es zu untersuchen bzw. darzustellen, inwieweit es möglich ist, in der jeweiligen Sprache eine sogenannte eDSL zu entwickeln. Das Ziel einer eDSL ist es, eine API bereitzustellen, die es ermöglicht, mit vertrauten Konzepten aus einer bestimmten Domäne/einem bestimmten Bereich zu arbeiten.
+
 
   .. remark::
     :class: incremental s-font-size-80
 
-    Die Fähigkeiten von Programmiersprachen unterscheiden sich diesbezüglich stark und hängen ganz insbesondere von der Flexibilität der (Syntax der) Sprache ab. So gibt es zum Beispiel moderne Sprachen, die es ermöglichen mal Klammern zu verwenden und mal Klammern wegzulassen bzw. Semikolons zu inferieren. Weiterhin ist eine sehr gute Typinferenz häufig hilfreich. Weiterhin gibt es Sprachen, die zum Beispiel quasi beliebige Operatoren (ggf. mit wohldefinierten Prioritäten) definieren lassen bzw. bei denen Methodennamen sich sehr frei aus dem Unicode Zeichensatz bedienen können. Darüber hinaus sind Konzepte wie Macros, Templates oder vergleichbares vorhanden, dass bei der Entwicklung hilfreich sein kann. 
+    Die Fähigkeiten von Programmiersprachen unterscheiden sich diesbezüglich stark und hängen ganz insbesondere von der Flexibilität der (Syntax der) Sprache ab. So gibt es zum Beispiel moderne Sprachen, die es ermöglichen mal Klammern zu verwenden und mal Klammern wegzulassen bzw. Semikolons zu inferieren. Weiterhin ist eine sehr gute Typinferenz häufig hilfreich. Weiterhin gibt es Sprachen, die zum Beispiel quasi beliebige Operatoren (ggf. mit wohldefinierten Prioritäten) definieren lassen bzw. bei denen Methodennamen sich sehr frei aus dem Unicode Zeichensatz bedienen können. Darüber hinaus sind Konzepte wie Macros, Templates oder vergleichbares vorhanden, dass bei der Entwicklung hilfreich sein kann.
 
   .. compound::
     :class: incremental
 
     .. rubric:: Aufgabenstellung - eDSL für Funktionen
 
-    Entwickeln Sie eine eDSL die es ermöglicht, mathematische Ausdrücke (z. B. :math:`f(x) = x + 1` , :math:`f(x) = x ^ 2 + 2 \cdot x - 3` oder :math:`f(x) = \sqrt{ \frac{1}{x}}`) direkt in der Programmiersprache so zu formulieren, dass diese dann für verschiedene Werte von :math:`x` ausgewertet werden können. Weiterhin wollen sie für einfache Ausdrücke die Ableitung (:math:`f'(x)`) berechnen können und diese dann als Latex-Formel ausgegeben. 
+    Entwickeln Sie eine eDSL die es ermöglicht, mathematische Ausdrücke (z. B. :math:`f(x) = x + 1` , :math:`f(x) = x ^ 2 + 2 \cdot x - 3` oder :math:`f(x) = \sqrt{ \frac{1}{x}}`) direkt in der Programmiersprache so zu formulieren, dass diese dann für verschiedene Werte von :math:`x` ausgewertet werden können. Weiterhin wollen sie für einfache Ausdrücke die Ableitung (:math:`f'(x)`) berechnen können und diese dann als Latex-Formel ausgegeben.
 
     .. attention::
       :class: incremental
@@ -566,7 +565,7 @@ Entwickeln Sie einen einfachen interaktiven Taschenrechner, der beliebig große 
 
     Entwickeln Sie eine eDSL, die es ermöglicht, einfache Vektorgrafiken zu beschreiben. Die eDSL soll es ermöglichen eine Zeichenfläche zu spezifizieren, um dann einfache geometrische Formen (z. B. Kreise, Rechtecke, Linien(, Text)) darauf zeichnen zu können. Es soll am Ende eine Methode geben, um eine Ausgabe im SVG-Format zu erhalten. Beim Entwurf der eDSL können Sie sich an den Möglichkeiten von SVG und der Syntax von SVG orientieren.
 
-  .. compound:: 
+  .. compound::
     :class: incremental
 
     .. rubric:: Hinweise zur Präsentation
@@ -605,8 +604,8 @@ Entwickeln Sie einen einfachen interaktiven Taschenrechner, der beliebig große 
 
     D. h. Ihre Aufgabe ist es alle Passwörter der Datei `Rockyou.txt <https://github.com/zacheller/rockyou>`__ einzulesen, zu transformieren und dann den MD5 Wert zu berechnen (in allen Sprachen gibt es dafür eine vorgefertigte Implementierung/ein Module/ein Package/..., welches es zu nutzen gilt). Sobald ein Passwort gefunden wurde, sollen Sie dieses ausgeben werden. Sobald alle drei gefunden wurden, sollen Sie die Suche abzubrechen.
 
-    .. supplemental:: 
-      
+    .. supplemental::
+
       Rockyou is in Kali Linux zu finden in: ``/usr/share/wordlists/rockyou.txt``.
 
   .. compound::

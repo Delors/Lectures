@@ -1,12 +1,11 @@
 .. meta::
-    :version: renaissance
     :author: Michael Eichberg
     :keywords: "Distributed Systems"
     :description lang=en: Introduction to Distributed Systems
     :id: lecture-ds-introduction
     :first-slide: last-viewed
     :master-password: WirklichSchwierig!
-    
+
 .. include:: ../docutils.defs
 
 
@@ -22,12 +21,12 @@ A broad overview of distributed systems!
 
 .. supplemental::
 
-  :Slides/Script: 
+  :Slides/Script:
 
       |html-source|
 
       |pdf-source|
-      
+
 
   :Reporting errors:
 
@@ -38,10 +37,10 @@ A broad overview of distributed systems!
 .. container:: footer-left incremental peripheral
 
     This slide set is based in parts on the following sources:
-    
+
     (a) Maarten van Steen (material related to his book on *Distributed Systems*)
 
-    (b) Henning Pagnia (based on his lecture *Verteilte Systeme*). 
+    (b) Henning Pagnia (based on his lecture *Verteilte Systeme*).
 
     All errors are my own.
 
@@ -72,7 +71,7 @@ Recommended Literature
     .. image:: screenshots/microservices.jpg
         :width: 70%
         :align: center
-        :class: trbl-shadow 
+        :class: trbl-shadow
 
 
 
@@ -89,11 +88,11 @@ Recommended Podcast: `SE-Radio <https://se-radio.net>`__
 Recommended Podcast: `Thoughtworks Technology Podcast <https://www.thoughtworks.com/en-de/insights/podcasts/technology-podcasts>`__
 -------------------------------------------------------------------------------------------------------------------------------------
 
-.. image:: screenshots/thoughtworks-technology-podcast.webp  
+.. image:: screenshots/thoughtworks-technology-podcast.webp
     :width: 70%
     :align: center
     :class: trbl-shadow
-    
+
 
 
 .. class:: new-section transition-fade
@@ -103,7 +102,7 @@ Distributed Systems - Definition and Properties
 
 
 
-Distributed vs. Decentralized 
+Distributed vs. Decentralized
 -------------------------------------------------------------------
 
 .. image:: drawings/distributed-vs-decentralized.svg
@@ -111,7 +110,7 @@ Distributed vs. Decentralized
     :width: 100%
     :class: icon
 
-.. supplemental:: 
+.. supplemental::
 
     .. admonition:: Zwei Ansichten zur Realisierung verteilter Systeme
 
@@ -128,46 +127,46 @@ Distributed vs. Decentralized
 Common misunderstandings regarding centralised systems
 --------------------------------------------------------
 
-.. class:: incremental-list 
+.. class:: incremental-list
 
 1. **Centralized solutions do not scale**
-         
-   A distinction must be made between logical and physical centralization. 
-   
+
+   A distinction must be made between logical and physical centralization.
+
    .. example::
 
       The *Domain Name System (DNS)*:
 
       .. class:: columns
 
-      - \ 
+      - \
 
         - logisch zentralisiert
         - physisch (massiv) verteilt
 
-      - \ 
+      - \
 
         - dezentralisiert über mehrere Organisationen
-  
+
 2. **Centralized solutions have a single point of failure**
 
-   Generally not true (e.g. DNS). 
-    
+   Generally not true (e.g. DNS).
+
    A single possible source of error is often...
 
    .. class:: columns
 
-   - \ 
+   - \
 
      - easier to manage
 
-   - \ 
+   - \
 
      - easier to make more robust
 
-.. supplemental:: 
-    
-    .. warning:: 
+.. supplemental::
+
+    .. warning::
 
         There are many, poorly founded misconceptions about, for example, scalability, fault tolerance or security. We need to develop skills that make it easy to understand distributed systems in order to avoid such misunderstandings.
 
@@ -197,7 +196,7 @@ Design-goals of Distributed Systems
 
 .. class:: incremental-list dhbw-list
 
-- `Shared Usage of Resources`_ 
+- `Shared Usage of Resources`_
 - `Distribution Transparency`_
 - `Openness`_
 - `Scalability`_
@@ -230,7 +229,7 @@ Distribution Transparency
 
 
 
-Definition 
+Definition
 ----------------------------------------------------------
 
 .. definition::
@@ -238,7 +237,7 @@ Definition
     .. rubric:: Distribution Transparency
 
     Transparency describes the property that a distributed system attempts to hide the fact that its processes and resources are physically distributed across multiple computers that may be separated by large(r) distances.
-    
+
 .. container:: incremental margin-top-2em
 
   The distribution transparency is realized by many different techniques of the so-called *middleware* - a layer between applications and operating systems.
@@ -248,7 +247,7 @@ Definition
 Aspects of Distribution Transparency
 ----------------------------------------------------------------------------
 
-.. csv-table:: 
+.. csv-table::
     :class: incremental-table-rows booktabs
     :stub-columns: 1
 
@@ -272,7 +271,7 @@ Degree of achievable Distribution Transparency
 
 .. observation::
 
-    Complete distribution transparency cannot be achieved. 
+    Complete distribution transparency cannot be achieved.
 
 .. container:: incremental
 
@@ -285,8 +284,8 @@ Degree of achievable Distribution Transparency
 - You cannot distinguish a slow computer from a failed computer.
 - You can never be sure that a server was actually performing an operation before it crashed.
 - "Complete transparency" costs performance and exposes the distribution of the system.
-  
-  - Keeping the replicas exactly on the same level as the master takes time 
+
+  - Keeping the replicas exactly on the same level as the master takes time
   - Write operations are immediately transferred to the hard drive for fault tolerance
 
 
@@ -297,18 +296,18 @@ Disclosing Distribution can bring Advantages
 
 .. class:: incremental-list list-with-explanations
 
-- Use of location-based services 
+- Use of location-based services
   (E. g. to enable finding friends nearby.)
 
 - When dealing with users in different time zones
-- When it is easier for a user to understand what is going on 
+- When it is easier for a user to understand what is going on
 
   (E.g. if a server does not respond for a long time, it can be reported as down).
 
 .. observation::
     :class: incremental
 
-    Distribution transparency is a noble goal, but often difficult to achieve and frequently not worth striving for. 
+    Distribution transparency is a noble goal, but often difficult to achieve and frequently not worth striving for.
 
 
 
@@ -319,19 +318,19 @@ Open Distributed Systems
 
 .. _openness:
 
-\ 
+\
 
 
 Open Distributed Systems
 ----------------------------------
 
-.. definition:: 
+.. definition::
 
-    An open distributed system offers components that can easily be used by other systems or integrated into other systems. 
-    
+    An open distributed system offers components that can easily be used by other systems or integrated into other systems.
+
     An open distributed system itself often consists of components that originate from elsewhere.
 
-.. container:: incremental 
+.. container:: incremental
 
     Open distributed systems must be able to interact with services of other (open) systems, regardless of the underlying environment:
 
@@ -339,11 +338,11 @@ Open Distributed Systems
 
     - they should implement well-defined interfaces correctly
     - they should be able to interact easily with other systems
-    - they should support the portability of applications 
+    - they should support the portability of applications
     - they should be easily extensible
 
 .. supplemental::
-    
+
     Authentication services are one example. They can be used by many different applications.
 
 
@@ -351,17 +350,17 @@ Open Distributed Systems
 Policies vs. Mechanisms
 ------------------------------------------------------------------------------
 
-.. supplemental:: 
+.. supplemental::
 
     :eng:`Policies vs. Mechanisms` ≘ :ger:`Vorgaben/Richtlinien vs. Umsetzungen`
-    
+
 .. rubric:: Policies when implementing openness
 
 .. class:: incremental-list
 
 - What level of consistency do we need for data in the client cache?
 - What operations do we allow downloaded code to perform?
-- Which QoS requirements do we adapt in the presence of fluctuating bandwidths?  
+- Which QoS requirements do we adapt in the presence of fluctuating bandwidths?
 - What level of secrecy do we need for communication?
 
 .. class:: incremental
@@ -372,7 +371,7 @@ Policies vs. Mechanisms
 
 - Enabling the (dynamic) setting of caching policies
 - Support of different trust levels for mobile code
-- Provisioning of adjustable QoS parameters per data stream 
+- Provisioning of adjustable QoS parameters per data stream
 - Provisioning of various encryption algorithms
 
 .. supplemental::
@@ -421,8 +420,8 @@ It is essentially about encrypting and decrypting data (:math-i:`X`) with the he
 
     .. card:: trbl-shadow padding-1em rounded-corners
 
-        :math-i:`E(K,X)` means that we **e**\ ncrypt the message :math-i:`X` with the key :math-i:`K`. 
-        
+        :math-i:`E(K,X)` means that we **e**\ ncrypt the message :math-i:`X` with the key :math-i:`K`.
+
         :math-i:`D(K,X)` denotes the inverse function that **d**\ ecrypts the data.
 
     .. card:: trbl-shadow padding-1em
@@ -432,13 +431,13 @@ It is essentially about encrypting and decrypting data (:math-i:`X`) with the he
         The encryption key is identical to the decryption key; the same key :math-i:`K` is used for both operations.
 
         :math-i:`X = D(K,E(K,X))`
-    
+
     .. card:: trbl-shadow padding-1em
 
         .. rubric:: Asymmetric Encryption
 
         We distinguish between private (:math-i:`PR`) and public keys (:math-i:`PU`) (:math-i:`PU` :math:`\neq` :math-i:`PR`). A private and a public key always form a pair. The private key must always be kept secret.
-        
+
         .. deck:: incremental
 
             .. card::
@@ -448,11 +447,11 @@ It is essentially about encrypting and decrypting data (:math-i:`X`) with the he
                 Alice sends a message to Bob using Bob's public key.
 
                 .. math::
-                    
+
                     Y = E(PU_{Bob},X) \\
                     X = D(PR_{Bob},Y)
 
-            .. card:: 
+            .. card::
 
                 **Signing Messages**
 
@@ -465,8 +464,8 @@ It is essentially about encrypting and decrypting data (:math-i:`X`) with the he
 
 
 
-Security - Secure Hashing 
-------------------------------------------------------- 
+Security - Secure Hashing
+-------------------------------------------------------
 
 A secure hash function :math-i:`Digest(X)` returns a character string of fixed length (:math-i:`H`).
 
@@ -482,12 +481,12 @@ A secure hash function :math-i:`Digest(X)` returns a character string of fixed l
     - Alice signs a message :math-i:`X` with her private key.
 
       .. math::
-        \text{Alice:} [E(PR_{\text{Alice}},H=Digest(X)),X] 
+        \text{Alice:} [E(PR_{\text{Alice}},H=Digest(X)),X]
 
     - Bob checks the message :math-i:`X` for authenticity:
 
       .. math::
-        
+
         \text{Bob:} D(PU_{\text{Alice}},H) \stackrel{?}{=} Digest(X)
 
 
@@ -506,19 +505,19 @@ Question
 
     If Alice sends Bob a message encrypted with Bob's public key, what security problem could arise?
 
-    .. solution:: 
+    .. solution::
         :pwd: MITM_arise
 
         Alice cannot be sure that her message will not be exchanged! Anyone who intercepts the message can discard the message and encrypt their own with Bob's public key. Depending on the third party's background knowledge, this message may also look as if it comes from Alice.
-        
-        Bob can therefore not be sure that the message is from Alice.  
+
+        Bob can therefore not be sure that the message is from Alice.
 
 
 
 .. class:: new-subsection transition-fade
 
 Scalability
----------------------- 
+----------------------
 
 
 Scalability in Distributed Systems
@@ -529,7 +528,7 @@ We can distinguish at least three types of scalability:
 .. class:: incremental-list
 
 - Number of users or processes (size scalability)
-- Maximum distance between nodes (geographical scalability) 
+- Maximum distance between nodes (geographical scalability)
 - Number of administrative domains (administrative scalability)
 
 .. supplemental::
@@ -558,16 +557,16 @@ Analysis of the Scalability of Centralized Systems
 
     .. card::
 
-        .. grid:: 
+        .. grid::
 
             .. cell::
 
-                - Arrival rate of requests: 
-                    
+                - Arrival rate of requests:
+
                   :math:`\lambda` *(requests per second)*
 
-                - Processing capacity of the service: 
-                        
+                - Processing capacity of the service:
+
                   :math:`\mu` *(requests per second)*
 
                   Proportion of time with :math-i:`x` requests in the system:
@@ -581,27 +580,27 @@ Analysis of the Scalability of Centralized Systems
                 .. figure:: drawings/number_of_requests_in_system.svg
                     :align: center
 
-                    # Requests in process and in queue 
-                    
+                    # Requests in process and in queue
+
                     For example, the proportion of time in which the computer is *idle* (i. e. :math:`p_0`) is : 90 %, 60 % and 30 %.
 
                     .. presenter-note::
-                    
+
                         :math:`p_0`; i. e. there are no/0 enquiries.
 
         .. presenter-note::
 
             The formula math:`p_x = \bigl(1 - \frac{\lambda}{\mu}\bigr)\bigl(\frac{\lambda}{\mu}\bigr)^x`  can be understood as follows: The probability that there are :math-i:`x` requests in the system decreases with the number of requests in the system. Therefore, :math:`\bigl(\frac{\lambda}{\mu}\bigr)^x` applies. Furthermore, we must model that there are "only" two requests (i. e. the system is otherwise "idle"). Therefore, we still have to multiply by :math:`p_0 = 1 - \frac{\lambda}{\mu}`.
 
-    .. card:: 
+    .. card::
 
         .. note::
-            
+
             :math-i:`x` = # Requests in Sys.
 
             .. math::
                 p_x  = \bigl(1 - \frac{\lambda}{\mu}\bigr)\bigl(\frac{\lambda}{\mu}\bigr)^x
-            
+
 
         :math-i:`U` is the proportion of time in which a service is utilized:
 
@@ -610,33 +609,33 @@ Analysis of the Scalability of Centralized Systems
             U = \sum_{x > 0} p_x = 1 - p_0 = \frac{\lambda}{\mu} \Rightarrow p_x = (1-U) U^x
 
         .. container:: incremental
-                
+
             Average number of requests:
 
             .. math::
 
                 \begin{matrix}
-                    \bar{N} & = & \sum_{x\geq 0} x \cdot p_x 
+                    \bar{N} & = & \sum_{x\geq 0} x \cdot p_x
                     = \sum_{x \geq 0} x \cdot (1-U)U^x \\
-                    & = & (1-U)\sum_{x\geq 0} x\cdot U^x  
+                    & = & (1-U)\sum_{x\geq 0} x\cdot U^x
                     = \frac{(1-U)U}{(1-U)^2} = \frac{U}{1-U}
                 \end{matrix}
 
         .. container:: incremental
 
             .. class:: columns left-aligned
-            
+
             - Average throughput:
             - .. math::
 
-                X = \underbrace{U \cdot \mu}_{\mbox{utilized}} + \underbrace{(1-U) \cdot 0}_{\mbox{unused}} = \frac{\lambda}{\mu} \cdot \mu = \lambda 
+                X = \underbrace{U \cdot \mu}_{\mbox{utilized}} + \underbrace{(1-U) \cdot 0}_{\mbox{unused}} = \frac{\lambda}{\mu} \cdot \mu = \lambda
 
         .. supplemental::
 
             For an `infinite geometric series <https://de.wikipedia.org/wiki/Geometrische_Reihe#Konvergenz_und_Wert_der_geometrischen_Reihe>`__ with the quotient :math-i:`U` applies:
 
             .. math::
-                \sum_{k\geq 0} k\cdot U^k  = \frac{U}{(1-U)^2} 
+                \sum_{k\geq 0} k\cdot U^k  = \frac{U}{(1-U)^2}
 
             Representation of the average number of requests in the system depending on the utilization :math-i:`U`:
 
@@ -644,32 +643,32 @@ Analysis of the Scalability of Centralized Systems
                 :align: center
 
 
-    .. card:: 
+    .. card::
 
         .. class:: columns
 
         - The response time is the total time taken to process a request
 
           .. math::
-            
+
             \begin{matrix}
                 R & = \frac{\bar{N}}{X} = \frac{S}{1-U} \\
-                & \Rightarrow \frac{R}{S} = \frac{1}{1-U} 
+                & \Rightarrow \frac{R}{S} = \frac{1}{1-U}
             \end{matrix}
 
-          with :math:`S = \frac{1}{\mu}` for the average service time. 
-            
-        - \ 
+          with :math:`S = \frac{1}{\mu}` for the average service time.
+
+        - \
 
           .. image:: drawings/response_time.svg
                 :alt: Response time w.r.t. utilization
-                
+
           .. class:: incremental-list
 
-        \ 
+        \
 
         - If :math-i:`U` is small, the response time is close to :math-r:`1`, i.e. a request is processed immediately.
-        - If :math-i:`U` increases to :math-r:`1`, the system comes to a standstill. 
+        - If :math-i:`U` increases to :math-r:`1`, the system comes to a standstill.
 
 
 
@@ -678,7 +677,7 @@ Problems of Geographical Scalability
 --------------------------------------------
 
 - Many distributed systems assume synchronous client-server interactions and this prevents a transition from LAN to WAN. Latency times can be prohibitive if the client has to wait a long time for a request.
-  
+
 .. class:: incremental
 
 - WAN connections are often unreliable by nature.
@@ -703,12 +702,12 @@ Problems of Administrative Scalability
 
     .. card::
 
-        .. rubric:: Exception 
+        .. rubric:: Exception
 
         Various peer-to-peer networks [#]_ where end users collaborate rather than administrative units:
 
-        - File sharing systems (e.g. based on BitTorrent) 
-        - Peer-to-peer telephony (early versions of Skype) 
+        - File sharing systems (e.g. based on BitTorrent)
+        - Peer-to-peer telephony (early versions of Skype)
 
         .. [#] Here, "peer" is to be understood as a network of equal computers.
 
@@ -724,13 +723,13 @@ Approaches to achieve Scaling
         **Hiding communication latencies** through:
 
         - Use of asynchronous communication
-        - Use of separate *handlers* for incoming responses 
+        - Use of separate *handlers* for incoming responses
 
         .. presenter-note::
 
             Here, we do not wait on the response, but continue with other tasks. When the response arrives, the corresponding handler is called and eventually executed.
 
-        .. observation:: 
+        .. observation::
             :class: incremental
 
             However, this model is not always applicable.
@@ -739,7 +738,7 @@ Approaches to achieve Scaling
 
         **Partitioning of data and calculations across multiple computers.**
 
-        - Relocation of calculations to clients 
+        - Relocation of calculations to clients
         - Decentralized naming services (e.g. DNS)
         - Decentralized information systems (e.g. WWW)
 
@@ -760,14 +759,14 @@ Scaling via Replication and Caching
 
 .. class:: incremental-list
 
-- replicated file servers and databases 
+- replicated file servers and databases
 - mirrored websites
-- Web caches (in browsers and proxies) 
+- Web caches (in browsers and proxies)
 - File caching (on server and client)
 
 
 
-Challenges of Replication 
+Challenges of Replication
 ---------------------------------------
 
 .. class:: incremental-list
@@ -775,7 +774,7 @@ Challenges of Replication
 - Multiple copies (cached or replicated) inevitably lead to inconsistencies. Changing one copy means that this copy differs from the others.
 - To achieve consistency, global synchronization is required for every change.
 
-  .. attention:: 
+  .. attention::
     :class: incremental
 
     Global synchronization rules out solutions on a large scale.
@@ -791,7 +790,7 @@ Parallel Computing
 ------------------------------------------------
 
 .. class:: columns
-  
+
 - Multiprocessor
 
   .. image:: drawings/multiprocessor-vs-multicomputer/multiprocessor.svg
@@ -825,16 +824,16 @@ Amdahl's law - Limits to Scalability
         - It models the expected acceleration (*speedup*) of a partially parallelized/parallelizable program relative to the non-parallelized variant.
 
 
-        .. definition:: 
+        .. definition::
             :class: encapsulate-floats
 
             .. note::
 
-                :math:`C` = Number of CPUs 
+                :math:`C` = Number of CPUs
 
                 :math:`P` = Degree of parallelization in percent
-                
-                :math:`S` = Speedup 
+
+                :math:`S` = Speedup
 
             :math:`S(C) = \frac{1}{(1-P) + \frac{P}{C}}`
 
@@ -849,34 +848,34 @@ Amdahl's law - Limits to Scalability
 Gustafson's Law - Limits to Scalability
 -----------------------------------------------------
 
-.. deck:: 
+.. deck::
 
-    .. card:: 
-                
+    .. card::
+
         .. class:: list-with-explanations
 
         - Solving problems with (very) large, structurally repetitive data sets in **fixed time**; the serial part of the programme is assumed to be constant.
 
-          .. example:: 
+          .. example::
             :class: margin-top-1em
-            
+
             Create the weather forecast for the day after tomorrow within the next 24 hours. To what extent can the precision of the forecast be improved by using more CPUs/computers?
 
-    .. card:: 
-                
-        .. container:: encapsulate-floats 
+    .. card::
 
-            .. note:: 
+        .. container:: encapsulate-floats
+
+            .. note::
                 :class: width-50 dd-margin-left-2em
 
-                :`C`:math::  Number of CPUs 
+                :`C`:math::  Number of CPUs
 
                 :`P`:math::  Degree of parallelisation as a function of the problem size :math-i:`n`
-                
-                :`S`:math::  Speedup 
 
-            - Beschleunigung (Speedup) eines parallelisierten Programms relativ zu der nicht-parallelisierten Variante: 
-            
+                :`S`:math::  Speedup
+
+            - Beschleunigung (Speedup) eines parallelisierten Programms relativ zu der nicht-parallelisierten Variante:
+
               :math-i:`S(C)` :math-r:`= 1 +` :math-i:`P(n) · (C-1)`
 
         .. example::
@@ -895,8 +894,8 @@ Exercise
 
     You are a pentester and you try to penetrate a system by attacking the passwords of the administrators. At the moment, you are using 2 graphics cards with 2048 compute units each. The serial part of the attack is 10 %. How high is the speedup you can expect, if you add two more comparable graphics cards with another 2048 compute units per GPU?
 
-    .. background:: 
-        
+    .. background::
+
         The attacks are highly parallelizable and effectively depend on the number of CUs. The graphics cards are able to accelerate the attacks effectively.
 
     .. solution:: Computation of the Speedup
@@ -914,7 +913,7 @@ Exercise
 
                 S(8192) / S(4096) \approx 1,999972874
 
-        .. remark:: 
+        .. remark::
 
             Computing with GPUs as such, i. e. with 2-GPUs vs. 4-GPUs, leads to a lower speedup, as the serial part of the attack is more important.
 
@@ -930,12 +929,12 @@ Dependability of Distributed Systems
 ------------------------------------------------------------
 
 .. admonition:: Dependencies
-    
+
     A **component**\ [#]_ provides **services** to its **clients**. For that, the component may in turn require services from other components and therefore the component is dependent on another component (:eng:`depend`).
 
 .. definition::
 
-    A component :math-i:`C` depends on :math:`C^*` if the correctness of the behavior of :math:`C` depends on the correctness of the behavior of :math:`C^*`.  
+    A component :math-i:`C` depends on :math:`C^*` if the correctness of the behavior of :math:`C` depends on the correctness of the behavior of :math:`C^*`.
 
 .. [#] Components are processes or channels.
 
@@ -958,14 +957,14 @@ Requirements on the Reliability of Distributed Systems
     Safety, Low probability of a catastrophic event.
     Maintainability, How easily can a failed system be recovered?
 
-.. supplemental:: 
+.. supplemental::
 
     .. attention::
 
         :eng:`Security` ≘ :ger:`Sicherheit`
-    
+
         :eng:`Safety` ≘ :ger:`Sicherheit`
-    
+
         Safety refers to the safety of people and property, while security refers to the security of data and information.
 
 
@@ -978,23 +977,23 @@ Reliability vs. Availability in Distributed Systems
 Conditional probability that :math-i:`C` worked correctly during :math:`[0,t)` if :math-i:`C` worked correctly at time :math-i:`T`  :math-r:`= 0`.
 
 
-.. compound:: 
+.. compound::
     :class: incremental
 
     .. rubric:: Traditional Metrics
 
     .. class:: incremental-list
 
-    - Mean Time to Failure (:math-r:`MTTF`): 
-  
-      The average time to failure of a component. 
+    - Mean Time to Failure (:math-r:`MTTF`):
 
-    - Mean Time to Repair (:math-r:`MTTR`): 
-  
+      The average time to failure of a component.
+
+    - Mean Time to Repair (:math-r:`MTTR`):
+
       The average time it takes to repair a component.
 
-    - Mean Time between Failures (:math-r:`MTBF`): 
-     
+    - Mean Time between Failures (:math-r:`MTBF`):
+
       :math-r:`MTTF + MTTR = MTBF`.
 
 
@@ -1023,11 +1022,11 @@ MapReduce - Programming model and Middleware for Parallel Computing
   - Scheduling and execution of the ``Map`` and ``Reduce`` functions on the computers of the cluster.
   - Error handling and communication between the computers.
 
-.. hint:: 
+.. hint::
     :class: incremental
 
     Not all kinds of computations can be performed with the help of MapReduce.
-    
+
 
 
 
@@ -1060,22 +1059,22 @@ Exercise
 
     (a) Determine the intact probability of a single computer.
     (b) A data set is replicated on three computers for reasons of fault tolerance. What is its average availability when we try to access it?
-    (c) On how many computers do you have to store this data set so that the average availability is 99.999%? 
+    (c) On how many computers do you have to store this data set so that the average availability is 99.999%?
     (d) For how many minutes per year (with 365 days) is it *not possible to read the data set*, when we have an average availability of 99.999%?
 
     .. solution:: Solution
         :pwd: still running?
 
-        (a) The availability of a single computer is :math-i:`p = 36h/48h = 0,75` 
+        (a) The availability of a single computer is :math-i:`p = 36h/48h = 0,75`
         (b) The average availability (with :math-i:`p = 0.75`) of the data is :math:`1 - (1 - p)^3 = 0,984375` when we have three computers; :math-i:`(1-p)` is the probability that the system fails.
         (c) (Recall: :math:`log_a(u^v) = v \cdot log_a(u)`).
-            
+
             The probability that they all fail at the same time must be less than or equal to the permitted unavailability:  :math:`(1-p)^x \leq (1-0,99999) \Leftrightarrow x \cdot log(1-p) \geq log(1-0,99999)`
 
             :math:`\Rightarrow x \geq log(1-0,99999)/log(1-p) \approx 8,3`
-            
-            The number of computers on which the data set must be replicated is 
-            
+
+            The number of computers on which the data set must be replicated is
+
             :math:`\lceil \frac{log(1-0,99999)}{log(1-p)} \rceil = 9`
         (d) In a year with 365 days, it is not possible to read the data :math-r:`(1 - 0.99999) · 365 · 24 · 60 = 5.256` minutes
 
@@ -1105,10 +1104,10 @@ A group of high-end systems connected via a LAN.
 Grid Computing
 -------------------
 
-Continuation of cluster computing. 
+Continuation of cluster computing.
 
-- Many heterogeneous nodes scattered over a wide area and across several organizations. 
-- The nodes are connected via the WAN. 
+- Many heterogeneous nodes scattered over a wide area and across several organizations.
+- The nodes are connected via the WAN.
 - Collaboration takes place within the framework of a virtual organization.
 
 .. supplemental::
@@ -1152,19 +1151,19 @@ Peer-to-Peer-Systems
 ----------------------
 
 :Vision: "The network is the computer." There is a database that is always accessible worldwide.
-:Idea: 
+:Idea:
    No dedicated clients and servers, each participant (peer) is both provider and customer.
 
    Self-organising, without a central infrastructure (coordinator, database, directory of participants).
 
    Each peer is autonomous and can be offline at any time, network addresses can change at will.
 
-:Main Application: 
+:Main Application:
    File-Sharing-Systems (in particular BitTorrent)
 
 .. supplemental::
 
-    The peak of classic peer-to-peer systems was in the 2000s. 
+    The peak of classic peer-to-peer systems was in the 2000s.
 
     .. class:: positive-list
 
@@ -1190,12 +1189,12 @@ Cloud-Computing
 
     - Public Cloud (z. B. Amazon EC2, Google Apps, Microsoft Azure, …)
     - Private Cloud
-    - Hybrid Cloud 
-     
+    - Hybrid Cloud
+
       (The private cloud is supplemented by a public cloud if required).
     - Virtual Private Cloud
 
-.. supplemental:: 
+.. supplemental::
 
     .. class:: positive-list
 
@@ -1204,14 +1203,14 @@ Cloud-Computing
     .. class:: negative-list
 
     - Problems of cloud computing: security and trust, loss of in-house expertise, handling of classified data.
-  
-      One way out could be `homomorphic encryption <https://de.wikipedia.org/wiki/Homomorphe_Verschlüsselung>`_, which makes it possible to perform calculations on encrypted data. 
+
+      One way out could be `homomorphic encryption <https://de.wikipedia.org/wiki/Homomorphe_Verschlüsselung>`_, which makes it possible to perform calculations on encrypted data.
 
 
 *Serverless Computing*
 ----------------------
 
-*Serverless Computing* enables developers to create applications faster, as they no longer have to worry about managing the Infrastructure.  
+*Serverless Computing* enables developers to create applications faster, as they no longer have to worry about managing the Infrastructure.
 
 .. class:: positive-list incremental
 
@@ -1221,14 +1220,14 @@ Cloud-Computing
 
   - Vendor-Lock-In
   - Cold-boot latency
-  
+
     Time until the first code is executed can be longer, as the serverless functions are only instantiated when required.
   - Debugging and Monitoring
 
     Traditional tools and methods can no longer be used.
   - Cost-transparency/-management
 
-    The costs of serverless computing are difficult to predict and control. 
+    The costs of serverless computing are difficult to predict and control.
 
 
 
@@ -1243,7 +1242,7 @@ Application Integration
 ---------------------------------
 
 .. container:: assessment
-    
+
     Typical enterprise applications in companies are networked applications and establishing interoperability between these applications is a major challenge.
 
 .. container:: incremental margin-top-1em
@@ -1260,16 +1259,16 @@ Application Integration
 
 .. supplemental::
 
-    A networked application is an application that runs on a server and makes its services available to remote clients. 
+    A networked application is an application that runs on a server and makes its services available to remote clients.
 
 
 
 Transactions at Business Process Level
 -----------------------------------------
 
-.. grid:: 
+.. grid::
 
-    .. cell:: 
+    .. cell::
 
         .. image:: drawings/transactions/transaction.svg
             :align: center
@@ -1293,7 +1292,7 @@ Transactions at Business Process Level
                     READ, "Reading data from (e.g.) a file or a table."
                     WRITE, "Writing data (e.g.) to a file or a table."
 
-            .. card:: 
+            .. card::
 
                 .. rubric:: ACID-Properties:
 
@@ -1302,7 +1301,7 @@ Transactions at Business Process Level
                 :Isolated: no mutual influence
                 :Durable: after a commit, the changes are permanent
 
-                
+
 
 
 
@@ -1318,16 +1317,16 @@ Transactions at Business Process Level
 
     .. observation::
 
-        The data required for a transaction is often distributed across several servers. 
+        The data required for a transaction is often distributed across several servers.
 
         A TPM is responsible for coordinating the execution of a transaction.
 
 .. supplemental::
 
-    When you implement microservices, the use of TPMs and 2PC for the purpose of coordinating business processes is often not the first choice. 
+    When you implement microservices, the use of TPMs and 2PC for the purpose of coordinating business processes is often not the first choice.
 
     Nevertheless, distributed transactions are an important part of distributed systems and Google, for example, has developed Spanner, a solution that enables transactions on a global scale (*Global Consistency*). (https://cloud.google.com/spanner?hl=en and https://www.youtube.com/watch?v=iKQhPwbzzxU).
-       
+
 
 
 *Middleware* and *Enterprise Application Integration (EAI)*
@@ -1351,7 +1350,7 @@ How can application integration be achieved?
 
 .. class:: incremental-list dd-margin-left-2em
 
-:File transfer: 
+:File transfer:
 
   Technically simple, but not flexible:
 
@@ -1370,7 +1369,7 @@ Modern Distributed Systems
 --------------------------------------------
 
 
-*Distributed Pervasive/Ubiquitous Systems* 
+*Distributed Pervasive/Ubiquitous Systems*
 ------------------------------------------------------------------------
 
 .. supplemental::
@@ -1397,7 +1396,7 @@ Modern Distributed Systems
 .. class:: incremental-list
 
 :Distribution: The devices are networked, distributed and accessible without barriers.
-:Interaction: The interaction between users and devices is highly unobtrusive. 
+:Interaction: The interaction between users and devices is highly unobtrusive.
 :Context awareness: the system knows the user's context in order to optimize the interaction.
 :Autonomy: The devices work autonomously, without human intervention, and manage themselves independently to a high degree.
 :Intelligence: The system as a whole can handle a wide range of dynamic actions and interactions.
@@ -1407,13 +1406,13 @@ Modern Distributed Systems
 *Mobile Computing* - Characterizing features
 --------------------------------------------
 
-.. class:: incremental-list 
+.. class:: incremental-list
 
 - A variety of different mobile devices (smartphones, tablets, GPS devices, remote controls, active ID cards).
 - Mobile means that the location of a device can change over time. This can, e. g., have an impact on local services or accessibility.
 - Maintaining stable communication can lead to serious problems.
-        
-.. observation:: 
+
+.. observation::
     :class: incremental margin-top-1em
 
     The current status is that mobile devices establish connections to stationary servers, making them in principle *clients* of cloud-based services.
@@ -1422,7 +1421,7 @@ Modern Distributed Systems
 
 
 *Mobile Cloud Computing*
--------------------------------------------- 
+--------------------------------------------
 
 .. image:: drawings/mobile_computing/mobile_cloud_computing.svg
     :align: center
@@ -1436,13 +1435,13 @@ Modern Distributed Systems
 
 
 
-*Sensor Networks* 
+*Sensor Networks*
 --------------------------------------------
 
 The nodes to which sensors are attached:
 
 - "many"
-- simple (low memory / computing / communication capacity) 
+- simple (low memory / computing / communication capacity)
 - often battery-operated (or even battery-free)
 
 .. image:: drawings/sensor_networks/operator_stores_and_processes_data.svg
@@ -1481,10 +1480,9 @@ Pitfalls in Developing Distributed Systems
 
     - The network is reliable
     - The network is secure
-    - The network is homogeneous 
-    - The topology does not change 
+    - The network is homogeneous
+    - The topology does not change
     - The latency is zero
     - The bandwidth is infinite
     - The transport costs are zero
     - There is only one administrator
-

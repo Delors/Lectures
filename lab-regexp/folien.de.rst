@@ -1,5 +1,4 @@
 .. meta::
-   :version: renaissance
    :author: Michael Eichberg
    :keywords: "Reguläre Ausdrücke"
    :description lang=de: Eine erste Einführung in reguläre Ausdrücke
@@ -11,7 +10,7 @@
 
 
 
-Reguläre Ausdrücke 
+Reguläre Ausdrücke
 =====================================================
 
 :Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
@@ -20,11 +19,11 @@ Reguläre Ausdrücke
 
 .. supplemental::
 
-  :Folien: 
+  :Folien:
       [HTML] |html-source|
 
       [PDF] |pdf-source|
-      
+
   :Fehler melden:
       https://github.com/Delors/delors.github.io/issues
 
@@ -57,10 +56,10 @@ Reguläre Ausdrücke - Zeichenklassen
       .. code:: bash
 
          echo -n "abc" | grep -E "a"
-      
+
       findet: ``a``
-    
-   .. card:: 
+
+   .. card::
 
       Der Punkt repräsentiert ein beliebiges Zeichen - außer den Zeilenumbruch.
 
@@ -70,9 +69,9 @@ Reguläre Ausdrücke - Zeichenklassen
 
       findet: ``ab``
 
-   .. card:: 
+   .. card::
 
-      Klassen von Zeichen können in eckigen Klammern angegeben werden "[]". 
+      Klassen von Zeichen können in eckigen Klammern angegeben werden "[]".
 
       .. code:: bash
 
@@ -88,31 +87,31 @@ Reguläre Ausdrücke - Zeichenklassen
 
       findet: ``a``, ``b``, ``x``, ``y``
 
-   .. card:: 
+   .. card::
 
       Welche Buchstaben genau durch eine Klasse repräsentiert werden hängt von den Spracheinstellungen ab!
 
       .. code:: bash
 
-         LANG=de_DE.UTF-8; echo "aä" | grep -Eo "[a-z]"       
+         LANG=de_DE.UTF-8; echo "aä" | grep -Eo "[a-z]"
 
       findet: ``a``, ``ä``
 
       aber
-      
+
       .. code:: bash
-   
-         LANG=C; echo "aä" | grep -Eo "[a-z]"       
 
-      findet „nur“: ``a`` 
+         LANG=C; echo "aä" | grep -Eo "[a-z]"
 
-   .. card:: 
+      findet „nur“: ``a``
+
+   .. card::
 
       Die Negation einer Klasse wird durch an ein ``^`` direkt am Anfang der Klasse erzwungen.
 
       .. code:: bash
-   
-         echo "abc123" | grep -Eo "[^a-z]"    
+
+         echo "abc123" | grep -Eo "[^a-z]"
 
       findet: ``1``, ``2``, ``3``
 
@@ -136,11 +135,11 @@ Reguläre Ausdrücke - Anker
 
 ``^``: Steht für den Anfang einer Zeile.
 
-``$``: steht für das Ende einer Zeile. 
+``$``: steht für das Ende einer Zeile.
 
 .. code:: bash
 
-   $ echo "abcabcabc" | grep -Eo "abc"  
+   $ echo "abcabcabc" | grep -Eo "abc"
    abc
    abc
    abc
@@ -152,7 +151,7 @@ Reguläre Ausdrücke - Anker
 
 
 Reguläre Ausdrücke - Quantifizierung
-------------------------------------- 
+-------------------------------------
 
 .. story::
 
@@ -164,11 +163,11 @@ Reguläre Ausdrücke - Quantifizierung
 
    .. code:: bash
 
-      $ echo "Sa--aa--aaaE" | grep -Eo "aa*"  
+      $ echo "Sa--aa--aaaE" | grep -Eo "aa*"
       a, aa, aaa
-      $ echo "Sa--aa--aaaE" | grep -Eo "aa+"  
+      $ echo "Sa--aa--aaaE" | grep -Eo "aa+"
       aa, aaa
-      $ echo "Sa--aa--aaaE" | grep -Eo "a?"   
+      $ echo "Sa--aa--aaaE" | grep -Eo "a?"
       a, a, a, a, a, a
 
    .. container:: incremental line-above
@@ -193,7 +192,7 @@ Reguläre Ausdrücke - Alternativen
 
 .. code:: bash
 
-   $ echo "HundMausAffe" | grep -Eo "Hund|Affe"  
+   $ echo "HundMausAffe" | grep -Eo "Hund|Affe"
    Hund
    Affe
 
@@ -221,25 +220,25 @@ Beispiel: der folgende Ausdruck findet Zeichenketten, die mit dem Zeichen aufhö
 
 .. code:: bash
 
-   $ echo "XaaaaX" | grep -Eo "^(.).*\1$" 
+   $ echo "XaaaaX" | grep -Eo "^(.).*\1$"
    XaaaaX
 
-   $ echo "XaaaaY" | grep -Eo "^(.).*\1$" 
+   $ echo "XaaaaY" | grep -Eo "^(.).*\1$"
 
 
 
 Reguläre Ausdrücke - Lookahead
 -------------------------------------------------
 
-``(?=...)``: ist ein positiver Lookahead und stellt sicher, dass ein bestimmtes Muster im Text folgt, ohne es selbst in das Ergebnis aufzunehmen. 
+``(?=...)``: ist ein positiver Lookahead und stellt sicher, dass ein bestimmtes Muster im Text folgt, ohne es selbst in das Ergebnis aufzunehmen.
 
-``(?!...)``: ist ein negativer Lookahead und stellt sicher, dass ein bestimmtes Muster im Text *nicht* folgt. 
+``(?!...)``: ist ein negativer Lookahead und stellt sicher, dass ein bestimmtes Muster im Text *nicht* folgt.
 
 .. code:: bash
 
    $ echo "HundKatzeHundMaus" | grep -Po 'Hund(?=Katze).{1,2}'
    HundKa
-                                                                                                   
+
    $ echo "HundKatzeHundMaus" | grep -Po 'Hund(?!Katze).{1,2}'
    HundMa
 
@@ -251,7 +250,7 @@ Fingerübungen
 ---------------
 
 .. exercise:: Schmetterling in Rockyou
-   
+
    Prüfen Sie ob der Begriff: schmetterling oder Schmetterling in der Datei ``rockyou.txt`` vorkommt.
 
    .. solution::
@@ -263,23 +262,23 @@ Fingerübungen
            grep -ni "schmetterling"
 
 .. exercise:: Wiederholungen von Zeichen in Passwörtern
-   
-   Finden Sie alle Passworte in denen ein Zeichen mind. 3 oder mehrmals wiederholt wird. z. B. "x0000!" oder "aaaabbbb".  
+
+   Finden Sie alle Passworte in denen ein Zeichen mind. 3 oder mehrmals wiederholt wird. z. B. "x0000!" oder "aaaabbbb".
 
    .. solution::
       :pwd: ganz_schoen_viele
 
       .. code:: bash
-         
-         $ grep -E "(.)\1{3,}" /usr/share/wordlists/rockyou.txt 
+
+         $ grep -E "(.)\1{3,}" /usr/share/wordlists/rockyou.txt
 
 .. exercise:: Wiederholungen von Sequenzen in Passwörtern
-   
+
    Finden Sie alle Passworte, in denen eine Sequenz mit mindestens 3 Zeichen wiederholt wird, z. B. „TestTest“` oder „1AffeIstAffe#“.
 
    .. solution::
       :pwd: Wiederholungen
 
       .. code:: bash
-         
-         $ grep -E "(.{3,}).*\1" /usr/share/wordlists/rockyou.txt 
+
+         $ grep -E "(.{3,}).*\1" /usr/share/wordlists/rockyou.txt

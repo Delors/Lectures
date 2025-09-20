@@ -1,5 +1,4 @@
 .. meta::
-    :version: renaissance
     :author: Michael Eichberg
     :keywords: "Web Services", REST, HTTP, JSON
     :description lang=de: Einführung in RESTful Web Services
@@ -20,12 +19,12 @@ Eine sehr kurze Einführung.
 
 :Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
 :Kontakt: michael.eichberg@dhbw.de
-:Version: 1.0 
+:Version: 1.0
 :Quelle: (teilweise) RESTful Web Services; Leonard Richardson & Sam Ruby; O'Reilly
 
 .. supplemental::
 
-  :Folien: 
+  :Folien:
 
       |html-source|
 
@@ -41,13 +40,13 @@ Was ist ein *Web Service* im Kontext von RESTful Web Services
 
 Traditionelle Sicht: Ein |WS| ist lediglich eine Webseite, die von einem Computer angefordert und verarbeitet werden kann.
 
-.. container:: incremental 
+.. container:: incremental
 
     Ein |WS| ist eine „Webseite“, die von einem *autonomen Programm* - im Gegensatz zu einem Webbrowser oder einem ähnlichen UI-Tool - konsumiert werden soll.
 
 .. supplemental::
 
-    .. image:: book-restful_web_services.webp 
+    .. image:: book-restful_web_services.webp
         :alt: RESTful Web Services
         :align: center
         :class: box-shadow
@@ -57,8 +56,8 @@ Traditionelle Sicht: Ein |WS| ist lediglich eine Webseite, die von einem Compute
 REST\ [#]_
 -----------
 
-- REST = Representational State Transfer 
-  
+- REST = Representational State Transfer
+
   (Im Wesentlichen eine Reihe von Entwurfsprinzipien zur Beurteilung von Architekturen; **ein Architekturstil**.)
 
 - Ressourcen werden durch einheitliche Ressourcenbezeichner (URIs) identifiziert
@@ -66,12 +65,12 @@ REST\ [#]_
 - Nachrichten sind selbstbeschreibend und zustandslos
 
 .. container:: peripheral incremental
-  
+
   Von untergeordneter Bedeutung:
 
   - Mehrere Repräsentationen werden akzeptiert oder gesendet
   - „Hypertext“ repräsentiert den Anwendungszustand
- 
+
 
 .. [#] REST wurde von Roy Fielding in seiner Dissertation beschrieben.
 
@@ -81,7 +80,7 @@ Eine mögliche Architektur für RESTful Web Services
 ----------------------------------------------------
 
 .. container:: foundations
-    
+
     **Resource-oriented Architecture (ROA)**
 
     - Informationen zur Methode werden in die HTTP-Methode aufgenommen.
@@ -90,7 +89,7 @@ Eine mögliche Architektur für RESTful Web Services
 
 .. rubric:: REST-Stil
 
-- Client-server 
+- Client-server
 - Zustandslos (:eng:`stateless`)
 - :peripheral:`Cached`
 - Uniforme Schnittstelle (HTTP Methoden)
@@ -105,9 +104,9 @@ RESTful Web Services - Grundlagen
 
 :HTTP: das zugrunde liegende zustandslose Transportprotokoll:
 
-    Wesentliche Methoden: 
+    Wesentliche Methoden:
 
-    :GET: seiteneffektfreie Abfragen von Informationen 
+    :GET: seiteneffektfreie Abfragen von Informationen
     :POST: Hinzufügen von neuen Informationen (ohne Angabe der Ziel URI)
     :PUT: idempotente Aktualisierung oder Neuerzeugung von Informationen an der gegebenen URI
     :DELETE: idempotentes Löschen von Informationen
@@ -117,16 +116,16 @@ RESTful Web Services - Grundlagen
 
 
 
-Zwei Arten von Zustand: (1) Anwendungs-/Sitzungszustand 
+Zwei Arten von Zustand: (1) Anwendungs-/Sitzungszustand
 ------------------------------------------------------------
 
 .. class:: peripheral
-    
+
     (:eng:`Application State / Session State`)
 
-- „Zustand“ bedeutet Anwendungs-/Sitzungsstatus 
+- „Zustand“ bedeutet Anwendungs-/Sitzungsstatus
 
-   Der Anwendungsstatus ist die Information, die notwendig ist, um den Kontext einer Interaktion zu verstehen 
+   Der Anwendungsstatus ist die Information, die notwendig ist, um den Kontext einer Interaktion zu verstehen
 
    :peripheral:`Autorisierungs- und Authentifizierungsinformationen sind Beispiele für den Anwendungsstatus.`
 
@@ -137,10 +136,10 @@ Zwei Arten von Zustand: (1) Anwendungs-/Sitzungszustand
 
 
 
-Zwei Arten von Zustand: (2) Ressourcenzustand 
+Zwei Arten von Zustand: (2) Ressourcenzustand
 -------------------------------------------------------------------------
 
-.. class:: peripheral 
+.. class:: peripheral
 
     (:eng:`Resource State`)
 
@@ -153,8 +152,8 @@ Zwei Arten von Zustand: (2) Ressourcenzustand
 Mehrere Repräsentationen
 -------------------------
 
-- Die meisten Ressourcen haben nur eine einzige Darstellung. 
-- REST kann jeden Medientyp unterstützen; JSON ist der Standard. 
+- Die meisten Ressourcen haben nur eine einzige Darstellung.
+- REST kann jeden Medientyp unterstützen; JSON ist der Standard.
 
   (HTTP unterstützt die Aushandlung von Inhalten.)
 
@@ -165,8 +164,8 @@ Mehrere Repräsentationen
 Einfache/Erste Tests auf RESTfulness
 --------------------------------------
 
-- Kann ich die URLs, an die ich POSTe, mit einem GET abrufen? 
-- Würde der Client merken, wenn der Server... 
+- Kann ich die URLs, an die ich POSTe, mit einem GET abrufen?
+- Würde der Client merken, wenn der Server...
 
   - an einem beliebigen Punkt zwischen den Anfragen neu gestartet wird
   - neu initialisiert wird, wenn der Client die nächste Anfrage stellt.
@@ -190,11 +189,11 @@ Ressourcenmodellierung
     **POST** dient dem Erzeugen einer neuen Ressource. Die Antwort sollte dann die URI der angelegten Ressource enthalten.
 
     **DELETE** löscht die angegebene Ressource.
-    
+
     Der Unterschied zwischen **PUT** und **POST** besteht darin, dass **PUT** idempotent ist: der einmalige oder mehrmalige Aufruf hat die gleiche Wirkung (d. h. keine Nebenwirkung), während aufeinanderfolgende identische **POST** Aufrufe zusätzliche Wirkungen haben können, wie z. B. die mehrmalige Übergabe eines Auftrags/das mehrmalige Anlegen einer Nachricht.
 
     Eine **PATCH**-Anfrage wird als ein Satz von Anweisungen zur Änderung einer Ressource betrachtet. Im Gegensatz dazu ist eine PUT-Anfrage eine vollständige Darstellung einer Ressource.
-    
+
 
 
 Beispielanwendung del.icio.us
@@ -202,7 +201,7 @@ Beispielanwendung del.icio.us
 
 .. supplemental::
 
-    :Quelle: https://www.peej.co.uk/articles/restfully-delicious.html    
+    :Quelle: https://www.peej.co.uk/articles/restfully-delicious.html
 
 **del.icio.us ermöglicht es:**
 
@@ -248,8 +247,8 @@ Beispielanwendung del.icio.us: Lesezeichen abfragen
 --------------------------------------------------------------
 
 :URL:	`http://del.icio.us/api/[username]/bookmarks/`
-:Methode:	GET	
-:Querystring:	
+:Methode:	GET
+:Querystring:
 
     tag=	Filtern nach Marker
 
@@ -261,11 +260,11 @@ Beispielanwendung del.icio.us: Lesezeichen abfragen
 
 :Rückgabewert:
 
-    200 OK & XML (delicious/bookmarks+xml)	
+    200 OK & XML (delicious/bookmarks+xml)
 
-    401 Unauthorized	
+    401 Unauthorized
 
-    404 Not Found	
+    404 Not Found
 
 
 Beispielanwendung del.icio.us: Lesezeichen abfragen - Beispielantwort
@@ -297,7 +296,7 @@ Beispielanwendung del.icio.us: Informationen bzgl. eines Lesezeichens
 
 :URL:	`http://del.icio.us/api/[username]/bookmarks/[hash]``
 :Methode:	`GET`
-:Rückgabewert:	
+:Rückgabewert:
     200 OK & XML (delicious/bookmark+xml)
 
     401 Unauthorized
@@ -330,14 +329,14 @@ Beispielanwendung del.icio.us: Abfrage der Anzahl der Lesezeichen
 ----------------------------------------------------------------------------
 
 :URL:	`http://del.icio.us/api/[username]/bookmarks/count`
-:Methode:	GET	
+:Methode:	GET
 :Abfrageparameter:	tag=	filter by tag
 :Rückgabewert:
-    200 OK & XML (delicious/bookmark+xml)	
+    200 OK & XML (delicious/bookmark+xml)
 
-    401 Unauthorized	
-	
-    404 Not Found	
+    401 Unauthorized
+
+    404 Not Found
 
 
 Beispielanwendung del.icio.us: Abfrage wann die letzte Änderung vorgenommen wurde
@@ -360,7 +359,7 @@ Beispielanwendung del.icio.us: Hinzufügen eines Lesezeichens
     201 Created & Location
 
     401 Unauthorized
-	
+
     415 Unsupported Media Type(if the send document is not valid)
 
 
@@ -389,7 +388,7 @@ Beispielanwendung del.icio.us: Aktualisierung eines Lesezeichens
 :URL:	`http://del.icio.us/api/[username]/bookmarks/[hash]``
 :Methode:	PUT
 :Anfragedokument:	XML (delicious/bookmark+xml)
-:Rückgabewert:	
+:Rückgabewert:
     201 Created & Location
 
     401 Unauthorized
@@ -406,11 +405,10 @@ Beispielanwendung del.icio.us: Löschen eines Lesezeichens
 :Methode:	DELETE
 :Rückgabewert:
     204 No Content
-	
+
     401 Unauthorized
-	
+
     404 Not Found
-    
+
 
 .. ideas: (JWT) Tokens in RESTful WebServices
-

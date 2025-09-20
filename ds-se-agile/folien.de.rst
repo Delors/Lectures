@@ -1,5 +1,4 @@
 .. meta::
-    :version: renaissance
     :author: Michael Eichberg
     :keywords: "Agile Entwicklung", "Verteilte Systeme", "DevOps"
     :description lang=de: Diskussion der Bedeutung der agilen Softwareentwicklung für verteilte Anwendungsarchitekturen
@@ -16,11 +15,11 @@ Agile Softwareentwicklung und Ihre Bedeutung für verteilte Anwendungsarchitektu
 
 :Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
 :Kontakt: michael.eichberg@dhbw.de
-:Version: 1.0 
+:Version: 1.0
 
 .. supplemental::
 
-  :Folien: 
+  :Folien:
 
       |html-source|
 
@@ -41,7 +40,7 @@ Agile Softwareentwicklung und Ihre Bedeutung für verteilte Anwendungsarchitektu
     - Funktionierende Software ist wichtiger als umfassende Dokumentationen
     - Zusammenarbeit mit dem Kunden ist wichtiger als Vertragsverhandlungen
     - **Reagieren auf Veränderung ist wichtiger als das Befolgen eines Plans**
- 
+
     Das heißt, obwohl wir die Werte auf der rechten Seite wichtig finden, schätzen wir die Werte auf der linken Seite höher ein.“
 
 .. supplemental::
@@ -63,12 +62,12 @@ Agile Softwareentwicklung
 
 - kleine Gruppen von Entwicklern (:shiny-green:`3`-:shiny-red:`10` Personen), die über alle notwendigen Kompetenzen verfügen (technische und geschäftliche)
 - inkrementelle Entwicklung
-  
+
   Jede ausgelieferte Version der Software ist nutzbar und implementiert relevante neue Aspekte für die Nutzer.
 
 - iterative Entwicklung
-  
-  Die Entwicklung erfolgt iterativ und erlaubt explizit die Wiederholung von Softwareentwicklungstätigkeiten; die einzelnen Iterationen sind strukturiert entlang einer Serie von inkrementellen Schritten mit einer fixen Länge.  
+
+  Die Entwicklung erfolgt iterativ und erlaubt explizit die Wiederholung von Softwareentwicklungstätigkeiten; die einzelnen Iterationen sind strukturiert entlang einer Serie von inkrementellen Schritten mit einer fixen Länge.
 
 .. supplemental::
 
@@ -85,11 +84,11 @@ Aspekte Agiler Prozessmodelle mit Bezug zu Softwarearchitekturen
   - Test-driven Development (TDD)
   - Continuous Integration (CI)
   - einfaches/schlichtes Design (*YAGNI*, *Once and only once*)
-  
+
 - SCRUM
 
   - “kurze” Sprints
-  
+
 - Continuous Delivery (CD) (Continuous Deployment)
 
 .. supplemental::
@@ -100,7 +99,7 @@ Aspekte Agiler Prozessmodelle mit Bezug zu Softwarearchitekturen
 
     TDD erfordert modulare Softwarearchitekturen, die es erlauben einzelne Komponenten zu testen.
 
-    Kurze Releasezyklen sind notwendig, um das Verständnis der Anforderungen bzw. Problemdomäne zu verbessern.  
+    Kurze Releasezyklen sind notwendig, um das Verständnis der Anforderungen bzw. Problemdomäne zu verbessern.
 
 
 
@@ -127,8 +126,8 @@ Anforderungsermittlung mittels Domain-driven Design (DDD) [Evans2004]_
 
 .. supplemental::
 
-    Häufig wird DDD in Kombination mit *User Stories* eingesetzt, um die Anforderungen zu ermitteln und zu dokumentieren. 
-    
+    Häufig wird DDD in Kombination mit *User Stories* eingesetzt, um die Anforderungen zu ermitteln und zu dokumentieren.
+
     Zur Erinnerung: *User Stories* beschreiben was erreicht werden soll und nicht wie. Das Ziel muss klar sein, aber der Weg nicht! (Ggf. können User Stories noch das warum adressieren.)
 
 
@@ -143,18 +142,18 @@ Ausgewählte Konzepte des Domain-driven Design (DDD) [Evans2004]_
 .. supplemental::
 
     - Aggregate (aggregates)
-  
-      - Zusammenfassungen von Entitäten und Wertobjekten und deren Assoziationen untereinander zu einer gemeinsamen transaktionalen Einheit. 
+
+      - Zusammenfassungen von Entitäten und Wertobjekten und deren Assoziationen untereinander zu einer gemeinsamen transaktionalen Einheit.
       - definieren genau eine Entität als einzigen Zugriff auf das gesamte Aggregat. Alle anderen Entitäten und Wertobjekte dürfen von außerhalb nicht statisch referenziert werden. Damit wird garantiert, dass alle Invarianten des Aggregats und der einzelnen Bestandteile des Aggregats sichergestellt werden können.
 
     - Kontextgrenzen (bounded context)
-      
+
       Beschreiben die Grenzen jedes Kontexts in vielfältiger Hinsicht wie beispielsweise Teamzuordnung, Verwendungszweck, dahinter liegende Datenbankschemata. Somit wird klar, wo ein Kontext seine Gültigkeit verliert und potentiell ein anderer Kontext seinen Platz einnimmt.
 
 
 
-DevOps 
---------------------- 
+DevOps
+---------------------
 
 Ergänzen bestehende agile Methoden.
 

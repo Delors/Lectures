@@ -1,5 +1,4 @@
-.. meta:: 
-    :version: renaissance
+.. meta::
     :author: Michael Eichberg
     :keywords: "Seminararbeiten", "Bewertungskriterien"
     :description lang=de: Seminararbeiten: Hinweise und Bewertungskriterien
@@ -18,15 +17,15 @@ Vorträge: Hinweise und Bewertungskriterien
 
 .. supplemental::
 
-    :Folien: 
-        
-        |html-source| 
+    :Folien:
+
+        |html-source|
 
         |pdf-source|
 
     :Fehler melden:
         https://github.com/Delors/delors.github.io/issues
-        
+
 
 .. class:: center-content no-title
 
@@ -35,8 +34,8 @@ Warnung
 
 .. warning::
 
-  Die hier angegebenen Informationen sind unverbindlich und insbesondere die Benotung weicht ggf. in einer konkreten Lehrveranstaltung von der hier dargestellten Aufteilung ab.  
-  
+  Die hier angegebenen Informationen sind unverbindlich und insbesondere die Benotung weicht ggf. in einer konkreten Lehrveranstaltung von der hier dargestellten Aufteilung ab.
+
   **Maßgeblich sind die Informationen, die Ihnen in der Vorlesung gegeben werden.**
 
 
@@ -48,7 +47,7 @@ Bewertungskriterien
 
 .. story::
 
-  .. class:: incremental-list dhbw list-with-explanations 
+  .. class:: incremental-list dhbw list-with-explanations
 
   1. Inhaltliche Qualität (≥ 50% der Gesamtnote)
 
@@ -56,14 +55,14 @@ Bewertungskriterien
 
      - Ist die Auswahl der Inhalte sinnvoll?
      - Sind die Inhalte zielgruppenspezifisch aufbereitet?
-    
+
        D. h. die Inhalte sollten von Ihren Kommilitonen verstanden werden können.
      - Sind die Inhalte für das Publikum nachvollziehbar?
 
        Häufig bietet es sich an vom Konkreten zum Abstrakten zu gehen. D. h. es ist häufig besser zuerst ein Beispiel zeigen und dann die allgemeine Regel.
      - Ist die Evaluation/Zusammenfassung (falls für den Vortag relevant) nachvollziehbar und beantwortet die ursprüngliche Fragestellung?
      - Einhaltung formaler Kriterien:
-    
+
        - Orthographie
        - konsistente Referenzen
        - Abbildungen und Tabellen haben ggf. passende Referenzen
@@ -71,11 +70,11 @@ Bewertungskriterien
   2. Persönliches Auftreten (~ 20% der Gesamtnote)
 
      - Wird Kontakt zum Publikum aufgebaut?
-    
+
        (Das Publikum besteht nicht nur aus dem Dozenten.)
      - Wiederholungen und Füllwörter vermeiden.
   3. Effektive Gestaltung der Präsentation (~ 30% der Gesamtnote)
-      
+
      Es kommt hierbei insbesondere darauf an, ob die Inhalte verständlich und nachvollziehbar präsentiert werden. Insbesondere ob Tabellen und Grafiken effektiv eingesetzt werden und „Textgräber“ vermieden werden.
 
      Auch Animationen sollten kein Selbstzweck sein, sondern die Inhalte unterstützen.
@@ -87,22 +86,22 @@ Bewertungskriterien
      - Grafiken sind aussagekräftig, vollständig erklärt und visuell ansprechend
      - die gezeigten Codeabschnitte haben als ganzes Relevanz; unnötiges wurde entfernt
   4. Zeitmanagement
-    
-     - Wird das vorgegebene Zeitfenster eingehalten? 
-    
-       Abweichungen von +/- 5% sind in der Regel akzeptabel. Bei Abweichungen zwischen 5% und 10% kommt es auf den sonstigen Verlauf des Vortrags an. 
-      
+
+     - Wird das vorgegebene Zeitfenster eingehalten?
+
+       Abweichungen von +/- 5% sind in der Regel akzeptabel. Bei Abweichungen zwischen 5% und 10% kommt es auf den sonstigen Verlauf des Vortrags an.
+
        .. warning::
-      
+
           Bei Abweichungen von mehr als 10% wird die Note um eine Stufe reduziert (-0,3); bei 20% wird abgebrochen (-1,0). Dieser Faktor wird auf die Gesamtnote angewendet und kann demzufolge kumulativ wirken, da vermutlich auch bestimmte Inhalte fehlen und dies sich weiter negativ auswirken kann.
      - Wird die Zeit sinnvoll auf die einzelnen Abschnitte verteilt?
 
-.. supplemental:: 
+.. supplemental::
 
    .. tip:: Präsentation von Code
 
-      Sollten Sie Code demonstrieren, der UIs baut, dann ist es häufig sinnvoll, wenn Sie erst kurz die Ziel UI zeigen und dann den Code, der diese UI erzeugt. Das Publikum kann sich dann besser vorstellen, was der Code macht. 
-      
+      Sollten Sie Code demonstrieren, der UIs baut, dann ist es häufig sinnvoll, wenn Sie erst kurz die Ziel UI zeigen und dann den Code, der diese UI erzeugt. Das Publikum kann sich dann besser vorstellen, was der Code macht.
+
       Das Gleiche gilt aber häufig auch für Algorithmen. Auch dort kann es hilfreich sein, das Ergebnis des Algorithmus zu zeigen und dann den Algorithmus zu erklären.
 
 
@@ -113,7 +112,7 @@ Häufige Fehler
 .. class:: incremental-list columns
 
 - **Text zu klein**
-   
+
   Bitte bedenken Sie, dass erst ab einer Textgröße von 20 Punkten der Text für die meisten Zuhörer gut lesbar wird.
 
   Insbesondere bei Codebeispielen sieht man häufig Code mit deutlich weniger als 20 Punkten.
@@ -133,7 +132,7 @@ Checkliste
 
   .. rubric:: Allgemeine Kriterien
 
-  .. class:: incremental-list 
+  .. class:: incremental-list
 
   :Struktur des Vortrags: War die Struktur einleuchtend und unter den gegebenen Umständen (Publikum, etc.) angemessen? War „jederzeit” klar wie der Vortrag strukturiert ist und in welchem Abschnitt man sich gerade befindet?
   :Logischer Aufbau: Haben die Folien logisch aufeinander aufgebaut oder gab es „Vorwärtsverweise”, bzw. wurden inhaltliche Fragen, die für ein Verständnis des Vortrags wichtig gewesen wären,  aufgeworfen und nicht beantwortet?"
@@ -150,7 +149,7 @@ Checkliste
 
   .. rubric:: Kriterien bzgl. des persönlichen Auftretens
 
-  .. class:: incremental-list 
+  .. class:: incremental-list
 
   :(Aus-)Sprache:  Gab es keine „Ähms”, kein Räuspern? War die Sprechgeschwindigkeit angemessen?
   :Redezeit: Wurde die vorgegebene Redezeit eingehalten bzw. musste die Präsentation abgebrochen werden? (+/- 10% ist OK - danach Abzug)

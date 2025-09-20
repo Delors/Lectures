@@ -1,5 +1,4 @@
 .. meta::
-    :version: renaissance
     :lang: de
     :author: Michael Eichberg
     :keywords: "Datenstrukturen", "Algorithmen"
@@ -7,7 +6,7 @@
     :id: lecture-theo-algo-ds-einfuehrung
     :first-slide: last-viewed
     :master-password: WirklichSchwierig!
-    
+
 .. include:: ../docutils.defs
 
 
@@ -21,16 +20,16 @@ Algorithmen und Datenstrukturen - eine Einführung
 
 .. container:: peripheral footer-left
 
-    :Quelle: 
+    :Quelle:
         Die Folien sind teilweise inspiriert von oder basierend auf:
-        
-        Lehrmaterial von Prof. Dr. Scherer und Prof. Dr. Baumgart 
+
+        Lehrmaterial von Prof. Dr. Scherer und Prof. Dr. Baumgart
 
 .. supplemental::
 
-    :Folien: 
-        
-        |html-source| 
+    :Folien:
+
+        |html-source|
 
         |pdf-source|
 
@@ -41,7 +40,7 @@ Algorithmen und Datenstrukturen - eine Einführung
 
 .. class:: new-section transition-move-to-top
 
-Einführung 
+Einführung
 --------------------------------------------------------
 
 
@@ -57,12 +56,12 @@ Was ist ein Algorithmus?
 
 .. deck::
 
-    .. card:: 
+    .. card::
 
         .. example::
             :class: incremental
 
-            .. class:: incremental-list 
+            .. class:: incremental-list
 
             - Berechnen / Arithmetik
             - Suchen
@@ -71,7 +70,7 @@ Was ist ein Algorithmus?
             - Simulieren
             - Visualisieren und Interagieren
 
-    .. card:: 
+    .. card::
 
         Die Spezifikation eines Algorithmus kann erfolgen...
 
@@ -93,19 +92,19 @@ Was ist eine Datenstruktur?
 
     Eine Datenstruktur beschreibt eine Möglichkeit...
 
-    .. class: incremental-list 
+    .. class: incremental-list
 
-    - Daten zu organisieren, 
-    - Daten zu verwalten und 
-    - Daten zu speichern, 
+    - Daten zu organisieren,
+    - Daten zu verwalten und
+    - Daten zu speichern,
     - um sie effizient zu nutzen.
 
 .. example::
     :class: incremental
 
-    .. class:: incremental-list 
+    .. class:: incremental-list
 
-    - *Primitive* 
+    - *Primitive*
     - Arrays
     - Listen
     - Bäume
@@ -126,8 +125,8 @@ Algorithmus: Beispiel
     Gegeben ein nicht-sortiertes Array X mit N Integer Elementen. Was ist das größte Element?
 
 .. deck:: incremental
-    
-    .. card:: 
+
+    .. card::
 
         .. rubric:: Algorithmus - natürlich sprachlich
 
@@ -140,10 +139,10 @@ Algorithmus: Beispiel
 
     .. card::
 
-        .. rubric:: |java-icon| Algorithmus 
+        .. rubric:: |java-icon| Algorithmus
 
         .. code:: java
-            :number-lines: 
+            :number-lines:
             :class: copy-to-clipboard
 
             public int max(int[] x) {
@@ -156,12 +155,12 @@ Algorithmus: Beispiel
                 return max;
             }
 
-    .. card::  
+    .. card::
 
-        .. rubric:: |python-icon| Algorithmus 
+        .. rubric:: |python-icon| Algorithmus
 
         .. code:: python
-            :number-lines: 
+            :number-lines:
             :class: copy-to-clipboard
 
             def max(x):
@@ -169,10 +168,10 @@ Algorithmus: Beispiel
                 for i in range(1, len(x)):
                     if x[i] > max:
                         max = x[i]
-                return max 
+                return max
 
     .. card::
-        
+
         .. rubric:: Analyse (aller drei Implementierungen)
 
         .. class:: incremental-list dd-margin-left-12em
@@ -222,9 +221,9 @@ Algorithmus: Beispiel
             }
 
 
-        .. rubric::  Boyer-Moore-Algorithmus 
+        .. rubric::  Boyer-Moore-Algorithmus
 
-        .. code:: java 
+        .. code:: java
             :number-lines:
             :class: copy-to-clipboard
 
@@ -246,11 +245,11 @@ Algorithmus: Beispiel
             }
 
         .. rubric::  Zeitkomplexität
-        
+
         Linear abhängig von der Anzahl der Elemente.
 
         .. rubric::  Speicherkomplexität
-            
+
         Es werden nur zwei Variablen benötigt, um den Zähler und den Kandidaten zu speichern. Daher ist der Speicherplatz konstant.
 
 
@@ -270,7 +269,7 @@ Array
 
     Ein Array ist eine Datenstruktur, die eine
     Sammlung von Elementen gleicher Größe in einem
-    :incremental:`kontinuierlichen,` 
+    :incremental:`kontinuierlichen,`
     :incremental:`d. h. zusammenhängenden Speicherbereich speichert.`
 
 .. example::
@@ -292,7 +291,7 @@ Array
         :number-lines:
         :class: copy-to-clipboard incremental
 
-        var myDoubleArray = new double[2] {1.0,-3};    
+        var myDoubleArray = new double[2] {1.0,-3};
 
 .. question::
     :class: incremental
@@ -301,7 +300,7 @@ Array
 
     - Wie groß ist der Speicherplatz, den ein Array mit N Elementen benötigt?
     - Wie schnell ist der Zugriff auf ein Element (n)?
-    
+
 
 
 
@@ -316,8 +315,8 @@ Dynamische Arrays
 
     .. class:: incremental-list list-with-explanations
 
-    - Ein dynamisches Array ist ein Array, das die Größe anpassen kann. 
-    
+    - Ein dynamisches Array ist ein Array, das die Größe anpassen kann.
+
       Typischwerweise wird ein neues Array mit doppelter Größe erstellt, wenn der Speicherplatz erschöpft ist. Die Elemente des alten Arrays werden dann in das neue Array kopiert.
     - dynamische Arrays werden basierend auf (statischen) Arrays implementiert
 
@@ -329,7 +328,7 @@ Dynamische Arrays
     - Wie schnell ist das Einfügen eines neuen Elements?
     - Wie schnell ist das Löschen eines Elements?
 
-    
+
 
 Verkettete Listen
 --------------------------------------------------------
@@ -338,7 +337,7 @@ Verkettete Listen
 .. definition::
 
     Eine verkettete Liste ist eine Datenstruktur, die eine
-    Sammlung von Elementen in Knoten speichert. 
+    Sammlung von Elementen in Knoten speichert.
 
     .. class:: incremental-list list-with-explanations
 
@@ -361,10 +360,10 @@ Verkettete Listen
     1. Implementieren Sie eine generische, doppelt verkettete Liste in Java.
 
        Orientieren Sie sich ggf. an der Implementierung für eine einfach verkettete Liste.
-    
+
     .. class:: list-with-sublists
 
-    2. Implementieren Sie die folgenden Methoden.  Bestimmen Sie das *worst-case* verhalten der Operationen (Laufzeit) in Abhängigkeit von der Anzahl der Elemente N, die bereits in der Liste gespeichert sind. 
+    2. Implementieren Sie die folgenden Methoden.  Bestimmen Sie das *worst-case* verhalten der Operationen (Laufzeit) in Abhängigkeit von der Anzahl der Elemente N, die bereits in der Liste gespeichert sind.
 
        - Einfügen eines neuen Wertes
        - Löschen eines Wertes
@@ -447,4 +446,3 @@ Verkettete Listen
                     }
                 }
             }
-                

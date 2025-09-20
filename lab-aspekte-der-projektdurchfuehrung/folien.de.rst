@@ -1,5 +1,4 @@
 .. meta::
-    :version: renaissance
     :author: Michael Eichberg
     :keywords: "Projekt"
     :description lang=de: Projektkonzeption und Projektrealisierung
@@ -19,11 +18,11 @@ Aspekte der Projektdurchführung
 
 .. supplemental::
 
-  :Folien: 
+  :Folien:
       [HTML] |html-source|
 
       [PDF] |pdf-source|
-      
+
   :Fehler melden:
       https://github.com/Delors/delors.github.io/issues
 
@@ -45,7 +44,7 @@ Aspekte, die im Rahmen der Durchführung des Lehrprojektes von besonderer Bedeut
 
 .. class:: new-section transition-move-left
 
-Risikomanagement 
+Risikomanagement
 ------------------------
 
 
@@ -53,9 +52,9 @@ Risikomanagement
 Kategorien von Risiken (hier)
 ------------------------------
 
-:Projektrisiken: 
+:Projektrisiken:
 
-    Risiken, die den Projektfortschritt/-plan betreffen. 
+    Risiken, die den Projektfortschritt/-plan betreffen.
 
     .. container:: small
 
@@ -65,8 +64,8 @@ Kategorien von Risiken (hier)
         - Ausfall der Server(-infrastruktur)/des GIT Server
         - ...
 
-:Produktrisiken: 
-    
+:Produktrisiken:
+
     Risiken, die die Qualität/Performance des Produktes betreffen.
 
     .. container:: small
@@ -76,7 +75,7 @@ Kategorien von Risiken (hier)
         - Anforderungen sind unvollständig, nicht-richtig erfasst oder ändern sich
         - Spezifikation verzögert
         - Eingesetzte Bibliotheken, Frameworks, etc. entsprechen nicht den Erwartungen
-        - ... 
+        - ...
 
 
 
@@ -86,7 +85,7 @@ Risikomanagementplan
 Erstellen Sie für Ihr Projekt ein Risikomanagementplan.
 d. h. betrachten Sie nur solche, die im Rahmen Ihres Projekts tatsächlich auftreten können.
 
-- Identifizieren und bewerten Sie mögliche Risiken 
+- Identifizieren und bewerten Sie mögliche Risiken
 - Beschreiben Sie für Risiken, die eine hohe Eintrittswahrscheinlichkeit haben, wie sie diesen Risiken begegnen; d. h. wie Ihre Strategie aussieht.
 
 
@@ -126,7 +125,7 @@ Beispielhafte Fragestellungen, die eine Anwendung als solches Betreffen
 - Datenschutzkonzept (Wo werden die Nachrichten gespeichert? Wer darf die Nachrichten einsehen? Umgang mit illegalen Inhalten?)
 - ...
 
-.. remark:: 
+.. remark::
   :class: incremental
 
   Einige Fragen können rein rechtlicher Natur sein. Andere haben jedoch konkrete Auswirkungen auf die Entwicklung oder den Betrieb.
@@ -145,7 +144,7 @@ Qualitätssicherung
 Effekte Mangelnder Qualitätssicherung\ [#]_
 ---------------------------------------------
 
-.. epigraph:: 
+.. epigraph::
 
   Auf Tausenden von Windows-Rechnern weltweit ist der Bluescreen of Death zu sehen. Neben Privatpersonen und Firmen sind auch Banken, Krankenhäuser und Flughäfen betroffen. Es entsteht ein Milliardenschaden. [...]
 
@@ -167,14 +166,14 @@ Effekte Mangelnder Qualitätssicherung\ [#]_
 Durchzuführende Qualitätssicherung
 -----------------------------------
 
-.. class:: incremental-list 
+.. class:: incremental-list
 
 - Auswahl von Qualitätszielen
-  
-  .. attention:: 
+
+  .. attention::
     :class: incremental
-  
-    Es ist Ihre Aufgabe die/das wirklich wichtigste QM Ziel zu identifizieren, und für dieses eine entsprechende Planung durchzuführen, die es Ihnen ermöglicht das Ziel im Rahmen des Projektes aus zu erreichen. Bedenken Sie die Projektdauer und Ihre Möglichkeiten. 
+
+    Es ist Ihre Aufgabe die/das wirklich wichtigste QM Ziel zu identifizieren, und für dieses eine entsprechende Planung durchzuführen, die es Ihnen ermöglicht das Ziel im Rahmen des Projektes aus zu erreichen. Bedenken Sie die Projektdauer und Ihre Möglichkeiten.
 
 - Qualitätsmaßnahmen leben (und dokumentieren)
 - Beleg und Präsentation der durchgeführten Qualitätsmaßnahmen
@@ -186,12 +185,12 @@ Beschreibung eines Qualitätsziels
 
 .. story::
 
-  .. csv-table:: 
+  .. csv-table::
       :header: "", "Qualitätsziel: Sichere Webanwendung"
       :class: annotated-text incremental-table-rows
 
       Projektspezifische Motivation, "Im Rahmen des Projektes … wird eine Webanwendung entwickelt, auf die über das Internet zugegriffen wird. Da diese Anwendung … personenbezogene Daten verarbeitet und potentiellen Angriffen ausgesetzt ist, ist ein wesentliches Qualitätsziel, dass die Anwendung keine Sicherheitslücken aufweist über die Angreifer Daten anderer Benutzer abgreifen können."
-      Umfang, "Im Rahmen dieses Projektes können wir jedoch nur gewährleisten, dass die Webanwendung keine „Standardlücken“ wie zum Beispiel SQL Injections aufweist. Um dieses Ziel zu erreichen, setzen wir die folgenden Tools/Prozesse: … ein." 
+      Umfang, "Im Rahmen dieses Projektes können wir jedoch nur gewährleisten, dass die Webanwendung keine „Standardlücken“ wie zum Beispiel SQL Injections aufweist. Um dieses Ziel zu erreichen, setzen wir die folgenden Tools/Prozesse: … ein."
       Durch wen/wann?, "Darüber hinaus wurde ein Entwickler benannt, der sich maßgeblich um das Thema „Sicherheit in Webanwendungen“ kümmert und …"
       Wie wird reagiert?, "Die automatisierte Analyse des Codes der Webanwendung erfolgt im Rahmen des  regelmäßigen „Nightly Builds“. Sollte ein Problem gefunden werden, so geht eine Mail an alle Entwickler und im Rahmen des nächsten (gruppeninternen) Meetings wird dann ein Entwickler bestimmt, der den Fehler beseitigt."
 
@@ -202,12 +201,12 @@ Qualitätssicherungsdokumentation am Projektende
 
 .. class:: incremental-list
 
-- Die Abgabe muss belegen, dass die beschriebenen Qualitätsmaßnahmen und Prozesse auch durchgeführt wurden. 
+- Die Abgabe muss belegen, dass die beschriebenen Qualitätsmaßnahmen und Prozesse auch durchgeführt wurden.
 - Es ist darauf zu achten, dass ...
 
   .. class:: incremental-list
-  
-  1. erkenntlich ist, dass der Prozess eingehalten wurde (d. h. wann und wie häufig etwas getan wurde) und auch, dass 
+
+  1. erkenntlich ist, dass der Prozess eingehalten wurde (d. h. wann und wie häufig etwas getan wurde) und auch, dass
   2. die Maßnahmen im beschriebenen Umfang durchgeführt wurden.
 
 
@@ -217,7 +216,7 @@ Qualitätssicherungsdokumentation am Projektende
 
 Wurden als QS Maßnahme automatisierte Tests geplant, so ist die vollständige Liste der Tests abzugeben und es ist zu belegen welche Teile des Codes getestet wurden. Weiterhin ist die Relation der Tests zu den User Stories zu zeigen.
 
-Dies kann insbesondere dadurch geschehen, dass ein Auszug eines Codeabdeckungstools gezeigt wird; z. B. aggregiert auf Klassen-/Dateiebene. 
+Dies kann insbesondere dadurch geschehen, dass ein Auszug eines Codeabdeckungstools gezeigt wird; z. B. aggregiert auf Klassen-/Dateiebene.
 
 Bitte halten Sie die Möglichkeit vor die Testsuite im Rahmen der Abschlusspräsentation zu zeigen.
 
@@ -226,7 +225,7 @@ Bitte halten Sie die Möglichkeit vor die Testsuite im Rahmen der Abschlusspräs
 (exemplarisch) Qualitätssicherungsdokumentation  - Benutzerstudie
 ----------------------------------------------------------------------------
 
-Die Abgabe soll zeigen wann diese Studie(n) von wem und mit welchen Probanden durchgeführt wurde und wie der genaue Ablauf war. 
+Die Abgabe soll zeigen wann diese Studie(n) von wem und mit welchen Probanden durchgeführt wurde und wie der genaue Ablauf war.
 
 Wurden den Probanden Aufgaben geben und diese danach gebeten einen Fragebogen auszufüllen? Fand ein (geschlossenes/offenes) Interview statt? Wurden die Probanden nur beobachtet?
 
@@ -237,20 +236,20 @@ Insbesondere ist kurz zu präsentieren, welche Ergebnisse aus der Benutzerstudie
 (exemplarisch) Qualitätssicherungsdokumentation  - Dokumentation des Quellcodes
 ----------------------------------------------------------------------------------------
 
-Ist eine Maßnahme, die versprochen wurde, dass der Code dokumentiert wurde, so ist hier ein Auszug des Codes zu zeigen. 
+Ist eine Maßnahme, die versprochen wurde, dass der Code dokumentiert wurde, so ist hier ein Auszug des Codes zu zeigen.
 
-Die gezeigten Dateien sollten repräsentativ für das Projekt sein. Die gewählten Dateien müssen weiterhin von herausgehobener Bedeutung für das Projekt sein. 
+Die gezeigten Dateien sollten repräsentativ für das Projekt sein. Die gewählten Dateien müssen weiterhin von herausgehobener Bedeutung für das Projekt sein.
 
 Der restliche Code sollte vorgehalten werden, falls im Rahmen der Präsentation Rückfragen kommen.
 
 
 
-(exemplarisch) Qualitätssicherungsdokumentation  - Code Reviews 
+(exemplarisch) Qualitätssicherungsdokumentation  - Code Reviews
 ---------------------------------------------------------------------
 
-Falls die geplante Maßnahme systematische Code Reviews waren, dann ist diesbezüglich die Checkliste zu zeigen, auf die die Reviewer zu achten hatten. 
+Falls die geplante Maßnahme systematische Code Reviews waren, dann ist diesbezüglich die Checkliste zu zeigen, auf die die Reviewer zu achten hatten.
 
-Weiterhin ist exemplarisch ein Stück Code zu zeigen, der den Prozess durchlaufen hat. 
+Weiterhin ist exemplarisch ein Stück Code zu zeigen, der den Prozess durchlaufen hat.
 
 Der weitere Code ist vorzuhalten, um ggf. im Rahmen der Präsentation die Effektivität der Maßnahme zu belegen. Sollten nicht alle Teile einem Review unterzogen worden sein, so ist dies im Vorfeld - ohne Aufforderung - im Rahmen der Präsentation zu erklären.
 
@@ -268,7 +267,7 @@ Automation des Build-Prozess
 
 .. admonition:: Ziel
   :class: text-align-center
- 
+
   :incremental:`Stabile Builds`
 
 .. container:: incremental
@@ -305,5 +304,3 @@ Automatisierbare Tätigkeiten
 - Überprüfung auf veraltete Bibliotheken und Werkzeuge
 - Generierung der Webseite
 - Veröffentlichung (zum Beispiel in einem Repository, auf einem Webserver, ...) und/oder Deployment
-
-
