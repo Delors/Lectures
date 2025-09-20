@@ -1,5 +1,4 @@
 .. meta::
-    :version: renaissance
     :lang: de
     :author: Michael Eichberg
     :keywords: "Programmierung", "Java", "Modularisierung", "Software Development"
@@ -7,7 +6,7 @@
     :id: lecture-prog-java-modularisierung-101
     :first-slide: last-viewed
     :master-password: WirklichSchwierig!
-    
+
 .. include:: ../docutils.defs
 
 
@@ -21,15 +20,15 @@ Grundlegende Modularisierung von einfachen Java Programmen
 
 .. supplemental::
 
-    :Folien: 
-        
-        |html-source| 
+    :Folien:
+
+        |html-source|
 
         |pdf-source|
 
     :Kontrollfragen:
 
-        .. source:: kontrollfragen.de.rst 
+        .. source:: kontrollfragen.de.rst
             :path: relative
             :prefix: https://delors.github.io/
             :suffix: .html
@@ -42,9 +41,9 @@ Grundlegende Modularisierung von einfachen Java Programmen
 Modularisierung\ [#]_
 -----------------------
 
-.. definition:: 
+.. definition::
 
-    .. rubric:: Modul 
+    .. rubric:: Modul
 
     .. epigraph::
 
@@ -59,7 +58,7 @@ Modularisierung\ [#]_
 Ziele bei der Modularisierung von Code
 ----------------------------------------
 
-.. class:: incremental-list 
+.. class:: incremental-list
 
 :Wiederverwendbarkeit: Durch Modularisierung kann Code einfacher wiederverwendet werden.
 
@@ -85,7 +84,7 @@ Modularisierungsebenen in Java
 
 .. supplemental::
 
-    Einzelnen Methoden erlauben zwar bereits eine Modularisierung des Codes, da diese aber für sich nicht wiederverwendbar sind (es ist nicht möglich eine Methode alleine in einer Datei zu speichern und in einem anderen Kontext zu nutzen), ist es notwendig, diese in Klassen zu organisieren. Klassen, welche in einzelnen Dateien gespeichert werden, erlauben dann eine Wiederverwendung des Codes. 
+    Einzelnen Methoden erlauben zwar bereits eine Modularisierung des Codes, da diese aber für sich nicht wiederverwendbar sind (es ist nicht möglich eine Methode alleine in einer Datei zu speichern und in einem anderen Kontext zu nutzen), ist es notwendig, diese in Klassen zu organisieren. Klassen, welche in einzelnen Dateien gespeichert werden, erlauben dann eine Wiederverwendung des Codes.
 
 
 
@@ -101,11 +100,11 @@ Grundlegende Konzepte und Mechanismen zur Modularisierung von Java Programmen
 .. class:: incremental-list
 
 :Klassen:
-  
+
   Klassen sind die Bausteine von Java Programmen und alles - bis auf einfachste Programme - ist in Klassen organisiert.
 
 :Packages:
-  
+
   Packages sind Sammlungen von verwandten Klassen und Schnittstellen.
 
 :`import`:java:\ s:
@@ -125,9 +124,9 @@ Grundlegende Konzepte und Mechanismen zur Modularisierung von Java Programmen
 Klassen in Java
 ----------------
 
-.. deck:: 
+.. deck::
 
-    .. card:: 
+    .. card::
 
         .. class:: incremental-list
 
@@ -145,8 +144,8 @@ Klassen in Java
 
     .. card::
 
-        Im einfachsten Fall sind die Klassen eines Java Programms alle im selben Verzeichnis gespeichert. 
-        
+        Im einfachsten Fall sind die Klassen eines Java Programms alle im selben Verzeichnis gespeichert.
+
         Dies erlaubt eine *direkte* Verwendung der Methoden der anderen Klassen durch Angabe des Klassennamens und des Methodennamens.  (Vergleichbar mit der Verwendung von :java:`Double.parseDouble` etc.)
 
     .. card::
@@ -158,7 +157,7 @@ Klassen in Java
             :class: copy-to-clipboard
 
             class MyMath {
-                static final int ANSWER_TO_EVERYTHING = 42; 
+                static final int ANSWER_TO_EVERYTHING = 42;
                 static double fibonacci(int n) { ... }
                 static double isPrim(int n) { ... }
             }
@@ -176,31 +175,31 @@ Klassen in Java
     .. card::
 
         :Syntax:
-            
+
             .. code:: java
                 :number-lines:
-                
-                class <KlassenName> { 
-                    <Attribute (gel. auch Felder genannt)>* 
-                    <Methoden>* 
+
+                class <KlassenName> {
+                    <Attribute (gel. auch Felder genannt)>*
+                    <Methoden>*
                 }
 
-        - Der ``Klassenname`` muss ein gültiger Bezeichner sein und mit dem Dateinamen (+ .java) übereinstimmen. 
-        
+        - Der ``Klassenname`` muss ein gültiger Bezeichner sein und mit dem Dateinamen (+ .java) übereinstimmen.
+
         - Klassennamen beginnen in Java - per Konvention - immer mit einem Großbuchstaben (:eng:`UpperCamelCase`).
 
 
 
 Interfaces in Java
-------------------- 
+-------------------
 
-- Seit Java 8 (in Verbindung mit weiteren Ergänzungen in Java 9) können auch :java:`interface`\ s zum Organisieren von Code verwendet werden. 
+- Seit Java 8 (in Verbindung mit weiteren Ergänzungen in Java 9) können auch :java:`interface`\ s zum Organisieren von Code verwendet werden.
 
 - \
 
   .. container:: smaller
 
-        Beispiel:      
+        Beispiel:
 
         .. rubric:: Datei: *MyMath.java*
 
@@ -209,7 +208,7 @@ Interfaces in Java
             :class: copy-to-clipboard
 
             interface MyMath {
-                static final int ANSWER_TO_EVERYTHING = 42; 
+                static final int ANSWER_TO_EVERYTHING = 42;
                 static double fibonacci(int n) { ... }
                 static double isPrim(int n) { ... }
             }
@@ -226,8 +225,8 @@ Interfaces in Java
 
 .. supplemental::
 
-    Die Verwendung von Interfaces zu *reinen Strukturierungszwecken* ist jedoch unüblich. 
-  
+    Die Verwendung von Interfaces zu *reinen Strukturierungszwecken* ist jedoch unüblich.
+
     Wir werden uns Interfaces in einer späteren Vorlesung genauer ansehen, wenn wir objekt-orientierte Programmierung in Java detaillierter besprechen.
 
 
@@ -240,7 +239,7 @@ Statische Methoden und statische Attribute von Klassen und Interfaces
 
 .. class:: incremental-list
 
-:Syntax: 
+:Syntax:
 
     :java:`static <returnType> <methodName>(<parameters>) { <body> }`
 
@@ -266,9 +265,9 @@ Statische Methoden und statische Attribute von Klassen und Interfaces
 
     .. container::
 
-        Nehmen Sie Ihren Code (Berechnung der Fibonacci-Zahlen, Fakultät und Kubikwurzel sowie den Primzahltest) und ordnen Sie diesen einer Klasse zu. Überlegen Sie sich diesbezüglich einen geeigneten Namen für die Klasse und speichern Sie die Klasse in einer entsprechenden Datei. In einer zweiten Datei (``Main.java``) schreiben Sie eine :java:`main`\ -Methode, die - basierenden auf Kommandozeilenparametern - die passenden Methoden der Klasse aufruft und die Ergebnisse auf der Konsole ausgibt. Die :java:`main` Methode soll dabei die grundlegende Fehlerbehandlung übernehmen, falls die Kommandozeilenargumente nicht passen. 
+        Nehmen Sie Ihren Code (Berechnung der Fibonacci-Zahlen, Fakultät und Kubikwurzel sowie den Primzahltest) und ordnen Sie diesen einer Klasse zu. Überlegen Sie sich diesbezüglich einen geeigneten Namen für die Klasse und speichern Sie die Klasse in einer entsprechenden Datei. In einer zweiten Datei (``Main.java``) schreiben Sie eine :java:`main`\ -Methode, die - basierenden auf Kommandozeilenparametern - die passenden Methoden der Klasse aufruft und die Ergebnisse auf der Konsole ausgibt. Die :java:`main` Methode soll dabei die grundlegende Fehlerbehandlung übernehmen, falls die Kommandozeilenargumente nicht passen.
 
-    .. example:: 
+    .. example::
 
         .. code:: bash
             :number-lines:
@@ -280,21 +279,21 @@ Statische Methoden und statische Attribute von Klassen und Interfaces
             [error] Ungültige Funktion: ack
 
     .. solution::
-        :pwd: code/Mathe.java    
+        :pwd: code/Mathe.java
 
         Hier: Functions.java
 
         .. include:: code/classes/Functions.java
             :code: java
-            :number-lines: 
-            
+            :number-lines:
+
 
         Main.java
 
         .. include:: code/classes/Main.java
             :code: java
-            :number-lines: 
-            
+            :number-lines:
+
 
 
 
@@ -306,17 +305,17 @@ Java Packages
 - Vergleichbar mit **Ordnern** für Dateien in einem Dateisystem.
 
 
-:Syntax & Semantik: 
+:Syntax & Semantik:
 
     :java:`package <packageName>;`
 
-    - Die Packagedeklaration steht am Anfang einer Java-Datei. 
-    
+    - Die Packagedeklaration steht am Anfang einer Java-Datei.
+
     - Per Konvention erfolgt die Benennung in umgekehrter Domain-Reihenfolge.
 
     - Der Packagename muss die Verzeichnisstruktur widerspiegeln.
-    
-.. container:: 
+
+.. container::
 
     .. example::
 
@@ -330,7 +329,7 @@ Java Packages
             :number-lines: 2
 
             class Klasse { ... }
-        
+
 
 
 
@@ -339,9 +338,9 @@ Imports in Java
 
 .. deck::
 
-    .. card:: 
+    .. card::
 
-        :`import`:java:\ s: 
+        :`import`:java:\ s:
             ermöglichen den Zugriff auf Klassen aus anderen Packages, ohne deren vollständigen Namen zu schreiben.
 
             :Syntax: :java:`import <packageName>.<className>;`
@@ -356,7 +355,7 @@ Imports in Java
 
         :`import static`:java:: ermöglicht den Import von statischen Methoden und Attributen. Danach kann ohne Angabe des Klassennamens auf die Methode bzw. das Attribut zugegriffen werden.
 
-        :Syntax: 
+        :Syntax:
             :java:`import static <packageName>.<className>.<methodName>;`
 
             :java:`import static <packageName>.<className>.<attribute>;`
@@ -365,21 +364,21 @@ Imports in Java
 
         :`import module`:java:: (Seit Java 23) ermöglicht den Import aller Klassen eine Moduls.
 
-        :Syntax: 
+        :Syntax:
             :java:`import modul <moduleName>;`
 
 
 Beispiele für Imports
 ----------------------
 
-.. deck:: 
+.. deck::
 
-    .. card:: 
+    .. card::
 
         Spezifischer Import einer Klasse:
 
         .. code:: java
-            :number-lines: 
+            :number-lines:
 
             import java.math.BigDecimal;
 
@@ -409,7 +408,7 @@ Beispiele für Imports
             }
 
     .. card::
-                
+
         Import einer Klassenmethode (statisch):
 
         .. code:: java
@@ -427,11 +426,11 @@ Beispiele für Imports
 
     .. card::
 
-        Import eines Klassenattributs (statisch): 
-        
+        Import eines Klassenattributs (statisch):
+
         .. code:: java
             :number-lines:
-        
+
             import static java.lang.System.out;
 
         .. code:: java
@@ -439,7 +438,7 @@ Beispiele für Imports
             :number-lines: 2
 
             ... {
-                out.println("Hello World!");    
+                out.println("Hello World!");
             }
 
     .. card::
@@ -447,7 +446,7 @@ Beispiele für Imports
         Import eines Java Modules (ab Java 23):
 
         .. code:: java
-            :number-lines:  
+            :number-lines:
 
             import module java.base;
 
@@ -456,13 +455,13 @@ Beispiele für Imports
             :number-lines: 2
 
             ... {
-                IO.println(BigDecimal.ONE);    
+                IO.println(BigDecimal.ONE);
             }
 
     .. card::
 
         .. rubric:: Hinweis
-    
+
         Ein Java-Skript importiert immer implizit:
 
         .. code:: java
@@ -496,12 +495,12 @@ Sichtbarkeiten und deren Verwendung
 .. deck::
 
     .. card::
-        
+
         .. rubric:: Abstraktes Beispiel:
 
         .. code:: java
             :number-lines:
-                
+
             public class PublicClass {
                 public int publicVar;        // Zugriff von überall
                 protected int protectedVar;  // Zugriff innerhalb des Packages und Subklassen
@@ -510,14 +509,14 @@ Sichtbarkeiten und deren Verwendung
             }
 
     .. card::
-        
+
         .. rubric:: Konkretes Beispiel:
 
         .. code:: java
             :number-lines:
-                
+
             public class MyMath {
-                public static int THE_ANSWER = 42;        
+                public static int THE_ANSWER = 42;
                 private static double cbrt(double x,double guess, int steps) { ... }
                 public static double cbrt(double x) { cbrt(x,1.0,1); }
             }
@@ -527,7 +526,7 @@ Sichtbarkeiten und deren Verwendung
             :number-lines:
 
             public interface MyMath {
-                static int THE_ANSWER = 42;        
+                static int THE_ANSWER = 42;
                 private static double cbrt(double x,double guess, int steps) { ... }
                 static double cbrt(double x) { cbrt(x,1.0,1); }
             }
@@ -537,7 +536,7 @@ Sichtbarkeiten und deren Verwendung
             Java interfaces kennen nur die Sichtbarkeiten :java:`public` und :java:`private`. Wenn keine Sichtbarkeit angegeben wird, ist die Methode bzw. das Attribut implizit :java:`public`.
 
     .. card::
-      
+
         .. rubric:: Anwendung in der Praxis
 
         - :java:`public`: Offene API, z. B. für Libraries.
@@ -608,23 +607,23 @@ Zusammenfassung
 
     Wie müssen Sie Ihren Code ändern, wenn Sie innerhalb der Datei ``Main.java`` direkt auf die Methoden zugreifen wollen ohne jedes mal den Klassennamen voranstellen zu müssen?
 
-    .. solution:: 
+    .. solution::
         :pwd: math/Funktion.java
 
         .. rubric:: math/Functions.java
 
         .. include:: code/imports/math/Functions.java
             :code: java
-            :number-lines: 
+            :number-lines:
 
         .. rubric:: Main.java
 
         .. include:: code/imports/Main.java
             :code: java
-            :number-lines: 
+            :number-lines:
 
         .. rubric:: MainMitStaticImports.java
 
         .. include:: code/imports/MainMitStaticImports.java
             :code: java
-            :number-lines: 
+            :number-lines:

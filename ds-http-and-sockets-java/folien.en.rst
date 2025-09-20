@@ -1,5 +1,4 @@
 .. meta::
-    :version: renaissance
     :author: Michael Eichberg
     :keywords: "HTTP", "Sockets"
     :description lang=de: HTTP und Socketprogrammierung
@@ -21,18 +20,18 @@ HTTP and Sockets (in Java)
 
 .. supplemental::
 
-  :Lecture Material: 
+  :Lecture Material:
       [HTML] |html-source|
 
       [PDF] |pdf-source|
-      
+
   :Reporting Errors:
       https://github.com/Delors/delors.github.io/issues
 
 .. container:: footer-left
 
     This set of slides is based on slides by Prof Dr Henning Pagnia.
-    
+
     All errors are my own.
 
 
@@ -79,7 +78,7 @@ TCP and UDP
   .. cell:: width-50
 
     .. rubric:: User Datagram Protocol (UDP), RFC 768
-    
+
     - connectionless communication
 
       - unreliable (⇒ no error control)
@@ -107,10 +106,10 @@ Hypertext Transfer Protocol (HTTP)
 HTTP
 --------------------------------------
 
-• `RFC 7230 <http://www.ietf.org/rfc/rfc7230.txt>`__ – 7235: HTTP/1.1 (updated in 2014; orig. 1999 RFC 2626) 
+• `RFC 7230 <http://www.ietf.org/rfc/rfc7230.txt>`__ – 7235: HTTP/1.1 (updated in 2014; orig. 1999 RFC 2626)
 • RFC 7540: HTTP/2 (standardized since May 2015)
 • Properties:
-  
+
   - Client / server (browser / web server)
   - based on TCP, usually port 80
   - Server (mostly) stateless
@@ -122,16 +121,16 @@ HTTP
 Conceptual process
 --------------------------------------
 
-.. grid:: 
+.. grid::
 
-  .. cell:: 
+  .. cell::
 
     .. image:: drawings/http/http.svg
 
   .. cell::
 
-    .. rubric:: HTTP-Kommandos 
-    
+    .. rubric:: HTTP-Kommandos
+
     ("Verbs")
 
     - HEAD
@@ -162,7 +161,7 @@ Structure of document identifiers  *Uniform Resource Locator (URL)*
 
     :``scheme``: Protocol (case-insensitive) (z. B. ``http``, ``https`` oder ``ftp``)
     :``host``: DNS-Name (or IP-address) of the server (case-insensitive)
-    :``port``: (optional) if empty, 80 in case of ``http`` and 443 in case of ``https`` 
+    :``port``: (optional) if empty, 80 in case of ``http`` and 443 in case of ``https``
     :``abs_path``: (optional) path-expression relative to the server-root (case-sensitive)
     :``?query``: (optional) direct parameter transfer (case-sensitive) (``?from=…&to=…``)
     :``#anchor``: (optional) jump label within the document
@@ -175,14 +174,14 @@ Structure of document identifiers  *Uniform Resource Locator (URL)*
     - either a URL (location) or a URN (name) (e. g. ``urn:isbn:1234567890``)
     - examples of URIs that are not URLs are *XML Namespace Iidentifiers*
 
-      .. code:: XML 
+      .. code:: XML
 
         <svg version="1.1" xmlns="http://www.w3.org/2000/svg">...</svg>
 
 .. supplemental::
 
   Quite frequently URIs take the shape of URLs and hence are often referred to as URLs thought they do not primarily identify locations but rather names.
-  
+
 
 
 The GET command
@@ -194,7 +193,7 @@ The GET command
 
     - Used to request HTML data from the server (request method).
     - Minimal request:
-    
+
       :Request:
 
         .. code:: http
@@ -205,7 +204,7 @@ The GET command
           Connection: close
           <Leerzeile (CRLF)>
 
-      :Options:     
+      :Options:
           - Clients can also send additional information about the request and itself.
           - Servers send the status of the request as well as information about itself and, if applicable, the requested HTML file.
 
@@ -235,7 +234,7 @@ The GET command
       Connection: close
       **CRLF**
       <!DOCTYPE html>
-      … 
+      …
       </html>**CRLF**
 
 
@@ -287,7 +286,7 @@ TCP Sockets
 
   import java.net.*;
   import java.io.*;
-  
+
   public class LowPortScanner {
     public static void main(String [] args) {
       String host = "localhost";
@@ -324,13 +323,13 @@ Exchange of Data
 
 
 
-(Nesting of streams) A simple Echo service 
+(Nesting of streams) A simple Echo service
 ------------------------------------------------------
 
-.. deck:: 
+.. deck::
 
   .. card::
-        
+
     .. code:: java
       :class: copy-to-clipboard
       :number-lines:
@@ -344,7 +343,7 @@ Exchange of Data
             String theLine = userIn.readLine();
             if (theLine.equals(".")) break;
             try (Socket s = new Socket("localhost"/*hostname*/, 7/*serverPort*/)) {
-              BufferedReader networkIn = 
+              BufferedReader networkIn =
                   new BufferedReader(new InputStreamReader(s.getInputStream()));
               PrintWriter networkOut = new PrintWriter(s.getOutputStream());
               networkOut.println(theLine);
@@ -352,7 +351,7 @@ Exchange of Data
               System.out.println(networkIn.readLine());
       } } } }
 
-  .. card:: 
+  .. card::
 
     .. code:: java
       :class: copy-to-clipboard
@@ -371,7 +370,7 @@ Exchange of Data
                 PrintWriter out = new PrintWriter(con.getOutputStream());
                 out.println(in.readLine()); out.flush() ;
               } catch (IOException e) { System.err.println(e); }
-            } 
+            }
           } catch (IOException e) { System.err.println(e); }
       } }
 
@@ -380,15 +379,15 @@ Exchange of Data
 UDP Sockets
 --------------------------------------
 
-.. grid:: 
+.. grid::
 
   .. cell:: width-50
 
     .. rubric:: At the client side
 
-    1. create :java:`DatagramSocket` 
-    2. create :java:`DatagramPacket`  
-    3. send :java:`DatagramPacket` 
+    1. create :java:`DatagramSocket`
+    2. create :java:`DatagramPacket`
+    3. send :java:`DatagramPacket`
     4. wait for response and process it, if needed
 
 
@@ -398,13 +397,13 @@ UDP Sockets
 
     1. create :java:`DatagramSocket` with a fixed port
     2. stard endless loop
-    3. prepare :java:`DatagramPacket` 
-    4. receive :java:`DatagramPacket` 
-    5. process :java:`DatagramPacket` 
+    3. prepare :java:`DatagramPacket`
+    4. receive :java:`DatagramPacket`
+    5. process :java:`DatagramPacket`
     6. create and send response if needed
 
 
-  
+
 UDP based Echo Server
 ------------------------------------------------------
 
@@ -424,7 +423,7 @@ UDP based Echo Server
             DatagramPacket dp = new DatagramPacket(buffer, buffer.length);
             server.receive(dp) ;
             String data = new String(dp.getData(),0,dp.getLength());
-            DatagramPacket dp2 = 
+            DatagramPacket dp2 =
               new DatagramPacket(data.getBytes(),
                 data.getBytes().length, dp.getAddress(), dp.getPort());
             server.send(dp2) ;
@@ -435,7 +434,7 @@ UDP based Echo Server
 
 .. class:: exercises transition-fade
 
-Exercise 
+Exercise
 ------------------------------------------------------
 
 .. exercise:: A simple HTTP-Client
@@ -458,14 +457,14 @@ Exercise
 
 
   .. solution::
-    :pwd: a-b-c 
+    :pwd: a-b-c
 
     (a):
 
     .. code:: java
       :class: copy-to-clipboard
       :number-lines:
-    
+
       import java.net.*;
       import java.io.*;
       public class HTTPClient {
@@ -475,7 +474,7 @@ Exercise
           String hostname = "www.michael-eichberg.de";
           String filename = "/index.html";
           try(Socket s = new Socket(hostname ,80) ;){
-            
+
             in = new BufferedReader(new InputStreamReader(s.getInputStream()));
             out = new PrintWriter(s.getOutputStream());
             out.print("GET " + url.getFile() + " HTTP/1.1\r\n");
@@ -487,7 +486,7 @@ Exercise
             while ((line = in.readLine()) != null){
               System.out.println (line);
             }
-            
+
           } catch(Exception e){e.printStackTrace();}
         }
       }
@@ -542,12 +541,12 @@ Exercise
           }
 
           /**
-           * Downloads a file from a given URL. 
+           * Downloads a file from a given URL.
            * (Example: "java HTTPGet.java http://www.google.de/index.html")
-           * 
+           *
            * @param args URL of the file to be downloaded. E.g.,
            *             "http://www.michael-eichberg.de/index.html".
-           *              
+           *
            */
           public static void main(String args[]) {
               try {
@@ -570,16 +569,16 @@ Exercise
 
 .. class:: exercises
 
-Exercise 
+Exercise
 ------------------------------------------------------
 
 .. exercise:: Log Aggregation
 
   Write a UDP-based Java program with which log messages can be displayed centrally on a server. The program should consist of several clients and a server. Each client reads an input line from the keyboard in the form of a string, which is then immediately sent to the server. The server waits on port 4999 and receives the messages from any client, which it then outputs immediately.
- 
-  .. solution:: 
+
+  .. solution::
     :pwd: Now with UDP.
-    
+
     .. code:: java
       :class: copy-to-clipboard
       :number-lines:
@@ -627,7 +626,7 @@ Exercise
           final String hostname = "localhost";
           try (final var socket = new DatagramSocket();) {
             InetAddress host = InetAddress.getByName(hostname);
-            BufferedReader userIn = 
+            BufferedReader userIn =
                 new BufferedReader(new InputStreamReader(System.in));
             System.out.println(
                 "[INFO] SyslogClient: type message to send or <CTRL + d> to exit.");
@@ -639,7 +638,7 @@ Exercise
               byte[] data = s.getBytes();
               if (data.length > MAX_PACKET_SIZE)
                 System.err.println("Message too large.");
-              DatagramPacket dp = 
+              DatagramPacket dp =
                   new DatagramPacket(data, data.length, host, DEFAULT_SERVER_PORT);
               socket.send(dp);
             } while (true);

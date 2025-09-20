@@ -1,5 +1,4 @@
 .. meta::
-    :version: renaissance
     :lang: de
     :author: Michael Eichberg
     :keywords: "Programmierung", "Java", "Objektorientierung", "Vererbung", "Polymorphie"
@@ -7,7 +6,7 @@
     :id: lecture-prog-oo-inheritance
     :first-slide: last-viewed
     :master-password: WirklichSchwierig!
-    
+
 .. include:: ../docutils.defs
 
 
@@ -21,15 +20,15 @@ Objekt-orientierte Programmierung - Vererbung und Polymorphie
 
 .. supplemental::
 
-    :Folien: 
-        
-        |html-source| 
+    :Folien:
+
+        |html-source|
 
         |pdf-source|
 
     :Kontrollfragen:
 
-        .. source:: kontrollfragen.de.rst 
+        .. source:: kontrollfragen.de.rst
             :path: relative
             :prefix: https://delors.github.io/
             :suffix: .html
@@ -53,7 +52,7 @@ Generalisierung und Spezialisierung
 
     .. rubric:: Implementierung einer Raumverwaltung
 
-    .. grid:: 
+    .. grid::
 
         .. cell::
 
@@ -64,16 +63,16 @@ Generalisierung und Spezialisierung
                 :class: copy-to-clipboard
 
                 public class Vorlesungsraum {
-                    private int zustand; // 0: nutzbar, 
+                    private int zustand; // 0: nutzbar,
                                          // 1: zu renovieren
                     private String gebaeude;
                     private int ebene;
                     private int raumNummer;
                     private int kapazitaet;
                     private boolean klimatisiert;
-                    private Ausstattung[] ausstattung;  
+                    private Ausstattung[] ausstattung;
 
-                    public void setzeZustand(int zustand)...    
+                    public void setzeZustand(int zustand)...
                     public void setzeEbene(int ebene)...
                     public void setzeRaum(int raumNr)...
                     public void generiereBeschreibung()...
@@ -90,7 +89,7 @@ Generalisierung und Spezialisierung
                 :class: copy-to-clipboard
 
                 public class Teekueche {
-                    private int zustand; // 0: nutzbar, 
+                    private int zustand; // 0: nutzbar,
                                          // 1: zu renovieren
                     private String gebaeude;
                     private int ebene;
@@ -99,7 +98,7 @@ Generalisierung und Spezialisierung
 
 
 
-                    public void setzeZustand(int zustand)...    
+                    public void setzeZustand(int zustand)...
                     public void setzeEbene(int ebene)...
                     public void setzeRaum(int raumNr)...
                     public void generiereBeschreibung()...
@@ -107,7 +106,7 @@ Generalisierung und Spezialisierung
                     public void setzeSchliessberechtigung()...
                 }
 
-    .. container:: incremental 
+    .. container:: incremental
 
         .. rubric:: Identifikation der Gemeinsamkeiten und Modellierung einer allgemeinen Klasse
 
@@ -133,23 +132,23 @@ Vererbung (:eng:`Inheritance`)
 
 .. deck::
 
-    .. card:: 
+    .. card::
 
         :Definition: Erlaubt es, eine Klasse von einer anderen abzuleiten und deren Eigenschaften und Methoden zu erben.
         :Vorteile:
             - Wiederverwendbarkeit des Codes
             - Hierarchische Strukturierung
-        
+
     .. card::
 
         Klassen werden in Vererbungshierachien eingeteilt.
-        
+
         :Syntax:
 
             .. code:: java
                 :number-lines:
 
-                public class <Subklassenname> 
+                public class <Subklassenname>
                         extends <Superklassenname> { ...
                 }
 
@@ -174,14 +173,14 @@ Vererbung (:eng:`Inheritance`)
 
     .. card::
 
-        - Eine Unter- bzw. Subklasse erbt alle Attribute und Methoden der Super- bzw. Oberklasse. 
-      
+        - Eine Unter- bzw. Subklasse erbt alle Attribute und Methoden der Super- bzw. Oberklasse.
+
         .. class:: incremental-list
 
         - Auf :java:`public` und :java:`protected` Attribute und Methoden der Superklassen kann direkt zugegriffen werden.
         - Auf :java:`private` Attribute und Methoden kann nicht zugegriffen werden (zBei Attributen ggf. nur über entsprechende :java:`get`- und :java:`set`-Methoden)
         - Zyklen in der Vererbungshierarchie sind nicht erlaubt
-  
+
     .. card::
 
         .. rubric:: Zugriff auf Methoden und Attribute von Superklassen
@@ -189,7 +188,7 @@ Vererbung (:eng:`Inheritance`)
         Mittels :java:`super` ist der direkte Zugriff auf die Attribute und Methoden der Superklasse (wenn diese :java:`protected` oder :java:`public` sind) möglich.
 
         - Dies ist notwendig, wenn die Vaterklasse Attribute bzw. Methoden mit gleichem Namen enthält (ansonsten kann man :java:`super` auch weglassen).
-        
+
     .. card::
 
         .. rubric:: Verwendung von :java:`super` für Aufruf der Methode der Superklasse
@@ -204,11 +203,11 @@ Vererbung (:eng:`Inheritance`)
     .. card::
 
         .. rubric:: Initialisierung von Superklassen
-        
+
         - Wird ein Objekt erzeugt (mittels :java:`new`), so wird automatisch auch Speicher für die Attribute der Superklasse reserviert und initialisiert.
 
         - Mittels eines :java:`super(...)` Aufrufs ist es möglich einen bestimmten Konstruktor der Superklasse (innerhalb des Konstruktors der Subklasse) aufzurufen.
-        
+
         - Ruft der Konstruktor nicht explizit einen Konstruktor mit :java:`super(...)` auf, dann wird der parameterlose Konstruktor :java:`super()` implizit aufgerufen, wenn keiner explizit definiert wurde.
 
         - Die Initialisierung startet immer bei der Superklasse und arbeitet sich dann rekursiv durch die Vererbungshierarchie nach unten.
@@ -245,7 +244,7 @@ Vererbung (:eng:`Inheritance`)
 
         - Eine Methode in einer Subklasse kann eine Methode in der Superklasse überschreiben.
         - :red:`Eine Methode, die eine Methode in der Superklasse überschreibt hat den Kontrakt der Superklasse immer einzuhalten!`
-          
+
           D. h. Vorbedingungen können in der Subklassen entspannt und Nachbedingungen verschärft werden, aber nie umgekehrt.
 
     .. card::
@@ -254,7 +253,7 @@ Vererbung (:eng:`Inheritance`)
 
         :Einfachvererbung: Jede Klasse kann nur eine Superklasse in der Vererbungshierachie besitzen
 
-        :Mehrfachvererbung: Jede Klasse kann mehrere Superklassen in der Vererbungshierachie besitzen 
+        :Mehrfachvererbung: Jede Klasse kann mehrere Superklassen in der Vererbungshierachie besitzen
 
         .. attention::
 
@@ -269,14 +268,14 @@ Vererbung und Typkonvertierungen/-kompatibilität
 
     .. card::
 
-        Im Folgenden gehen wir von der folgenden Vererbungshierarchie aus: 
+        Im Folgenden gehen wir von der folgenden Vererbungshierarchie aus:
 
         .. image:: images/konten.svg
             :alt: Konten
             :height: 750px
             :align: center
-            
-        Alle Attribute und Klassen sein :java:`public`. 
+
+        Alle Attribute und Klassen sein :java:`public`.
 
     .. card::
 
@@ -284,11 +283,11 @@ Vererbung und Typkonvertierungen/-kompatibilität
 
         - Eine Referenzvariable (für ein Objekt) hat einen statischen und einen dynamischen Typ.
         - Der statische Typ ist durch die Deklaration der Referenzvariablen gegeben.
-          
+
           Beispiel: :java:`Konto k; //Statischer Typ "Konto"`
 
         - Der dynamische Typ hängt vom konkreten Objekt ab; es ist der Typ der Klasse, von der das Objekt instanziiert wurde mittels :java:`new`.
-        
+
           Beispiel: :java:`k = new Sparkonto(...); // Dynamischer Typ "Sparkonto“`
 
     .. card::
@@ -301,34 +300,34 @@ Vererbung und Typkonvertierungen/-kompatibilität
         .. attention::
             :class: incremental
 
-            Der dynamische Typ bestimmt die Methode, die ausgeführt wird. 
-            
+            Der dynamische Typ bestimmt die Methode, die ausgeführt wird.
+
             .. container:: incremental
-            
+
                 D. h. eine Methode, die in der Subklasse überschrieben wurde, wird auch dann ausgeführt, wenn die Referenzvariable den statischen Typ der Oberklasse hat.
 
     .. card::
 
-        .. rubric:: Implizite Typkonvertierung 
+        .. rubric:: Implizite Typkonvertierung
 
         .. class:: list-with-explanations
 
         - Eine implizite Typkonvertierung (ohne cast-Operator) ist in der Vererbungshierarchie aufwärts möglich (Upcast).
-        
-          Beispiel: Ein Tagesgeldkonto kann immer in ein Sparkonto konvertiert werden. Nach der Konvertierung sind über die Referenzvariable nur noch Attribute und Methoden des statischen Typs Sparkonto „sichtbar“. 
-          
+
+          Beispiel: Ein Tagesgeldkonto kann immer in ein Sparkonto konvertiert werden. Nach der Konvertierung sind über die Referenzvariable nur noch Attribute und Methoden des statischen Typs Sparkonto „sichtbar“.
+
         - Das Objekt selbst wird bei einer impliziten Konvertierung nicht geändert, nur die sichtbaren Attribute und Methoden unterscheiden sich.
 
         - Die implizite Typkonvertierung ist sicher; es kann kein Fehler bei der Typkonvertierung entstehen.
 
     .. card::
 
-        .. rubric:: Explizite Typkonvertierung 
+        .. rubric:: Explizite Typkonvertierung
 
-        - Typkonvertierung in der Vererbungshierarchie abwärts (Downcast) ist nur durch explizite Typkonvertierung (mit cast-Operator) möglich 
-        
-          Beispiel - ein Konto kann „möglicherweise“ in ein Sparkonto konvertiert werden: 
-          
+        - Typkonvertierung in der Vererbungshierarchie abwärts (Downcast) ist nur durch explizite Typkonvertierung (mit cast-Operator) möglich
+
+          Beispiel - ein Konto kann „möglicherweise“ in ein Sparkonto konvertiert werden:
+
           :java:`Sparkonto sk = (Sparkonto) konto`;
         - Nach der Konvertierung sind über die Referenzvariable die Attribute und Methoden des statischen Typs Sparkonto „sichtbar“.
         - Das Objekt selbst wird bei einer expliziten Konvertierung nicht verändert!
@@ -339,10 +338,10 @@ Vererbung und Typkonvertierungen/-kompatibilität
         .. rubric:: Typkonvertierung - Details
 
         - Eine explizite Konvertierung eines Objektes ist nur dann möglich wenn der dynamische Typ des Objektes gleich der Ziel-Klasse ist bzw. der dynamische Typ des Objektes eine Subklasse der Ziel-Klasse ist.
-        
-          Beispiele: 
-          
-          - Ein Objekt wird als Festgeldkonto angelegt und implizit in ein Konto konvertiert (d. h. der dynamische Typ ist Festgeldkonto). Eine explizite Konvertierung in ein Sparkonto ist möglich. 
+
+          Beispiele:
+
+          - Ein Objekt wird als Festgeldkonto angelegt und implizit in ein Konto konvertiert (d. h. der dynamische Typ ist Festgeldkonto). Eine explizite Konvertierung in ein Sparkonto ist möglich.
           - Wird allerdings ein Objekt als Sparkonto angelegt, dann kann es nicht explizit in ein Tagesgeldkonto konvertiert werden.
 
     .. card::
@@ -350,7 +349,7 @@ Vererbung und Typkonvertierungen/-kompatibilität
         .. rubric:: Typtest mit :java:`instanceof`
 
         - Der :java:`instanceof`-Operator testet ob ein Objekt kompatibel zu einer Klasse ist (d. h. ob das Objekt in die Klasse konvertierbar ist). Der Operator gibt :java:`true` oder :java:`false` zurück:
-        
+
           :Syntax: :java:`<Objekt> instanceof <Klasse>`
 
           :Beispiel: :java:`k instanceof Sparkonto` testet ob das Objekt :java:`k` in ein Sparkonto explizit konvertiert werden kann. Hier nur möglich, wenn :java:`k` den dynamischen Typ Sparkonto, Festgeldkonto oder Tagesgeldkonto hat.
@@ -366,9 +365,9 @@ Vererbung und Typkonvertierungen/-kompatibilität
             :class: copy-to-clipboard
 
                 Konto k1 = new Festgeld (1, "Matt", 100, 2.5, 36);
-                
+
                 // Test der Typkompatibilität mit instanceof Festgeld
-                if(k1 instanceof Festgeld){    
+                if(k1 instanceof Festgeld){
                     // Explizite Konvertierung ist jetzt sicher:
                     Festgeld k2 = (Festgeld)k1;
                     System.out.println(k2);
@@ -389,7 +388,7 @@ Vererbung und Typkonvertierungen/-kompatibilität
 Polymorphie (Polymorphism)
 --------------------------------------------------
 
-.. deck:: 
+.. deck::
 
     .. card::
 
@@ -399,7 +398,7 @@ Polymorphie (Polymorphism)
           - Überschreiben von Methoden (:eng:`Runtime Polymorphism``)
           - Parameter und Rückgabewerte: Methoden können als Parameter Objekte einer beliebigen Subklasse übergeben bekommen bzw. zurückgeben.
           - ein Array kann Objekte jeder Subklasse enthalten (z. B. ein Array mit dem Datentyp :java:`Konto[]` kann alle Subklassen enthalten.)
-        
+
     .. card::
 
         .. code:: java
@@ -408,13 +407,13 @@ Polymorphie (Polymorphism)
 
             Festgeld k1 = new Festgeld(1, "Matt", 100, 2.5, 36);
             Sparkonto k2 = new Sparkonto(1, "Michael", 100, 3);
-            
+
             // Objekte mit unterschiedlichem dynamischen Typ in einem Array
             Konto[] konten = {k1, k2};
             for(int i=0; i<konten.length; ++i){
                 println(konten[i]);
             }
-        
+
     .. card::
 
         **Beispiel**: Methode `fahren` wird in verschiedenen Klassen unterschiedlich implementiert.
@@ -434,20 +433,20 @@ Polymorphie (Polymorphism)
                     System.out.println("Das Elektroauto fährt leise.");
                 }
             }
-        
+
         Wir sprechen hier vom überschreiben (:eng:`overriding`) von Methoden.
 
     .. card::
 
-        Methoden überschreiben: 
+        Methoden überschreiben:
 
         .. class:: list-with-explanations
 
-        - Deklaration einer Methode mit der gleichen Schnittstelle (Name, Rückgabetyp, Parameter) aber ggf. mit neuem Methodenrumpf. 
+        - Deklaration einer Methode mit der gleichen Schnittstelle (Name, Rückgabetyp, Parameter) aber ggf. mit neuem Methodenrumpf.
         - Eine Methode kann in einer Subklasse eine erhöhte Sichtbarkeit haben, aber keine verringerte!
-        - Methoden die :java:`final` sind können in Subklassen nicht überschrieben werden. 
-        - Methoden die :java:`private` sind, sind in Subklassen nicht sichtbar und können daher nicht überschrieben werden. 
-        
+        - Methoden die :java:`final` sind können in Subklassen nicht überschrieben werden.
+        - Methoden die :java:`private` sind, sind in Subklassen nicht sichtbar und können daher nicht überschrieben werden.
+
           Wenn die Subklasse eine Methode mit dem gleichen Namen und den gleichen Parametern definiert, dann handelt es sich um eine neue Methode und nicht um eine Überschreibung. Ob diese neue Methode auch (wieder) :java:`private` ist, ist nicht weiter von belang!
 
 
@@ -487,7 +486,7 @@ Zusammenfassung und Vorteile von Objekt-orientierter Programmierung\ [#]_
 
 
 
-Fehlerbehandlung (:eng:`Exceptions`, :ger:`Ausnahmen`) 
+Fehlerbehandlung (:eng:`Exceptions`, :ger:`Ausnahmen`)
 --------------------------------------------------------
 
 .. deck::
@@ -507,7 +506,7 @@ Fehlerbehandlung (:eng:`Exceptions`, :ger:`Ausnahmen`)
 
     .. card::
 
-        .. rubric:: Exceptions Typhierearchie  
+        .. rubric:: Exceptions Typhierearchie
 
         .. image:: images/exceptions.svg
             :alt: Exceptions
@@ -524,9 +523,9 @@ Fehlerbehandlung (:eng:`Exceptions`, :ger:`Ausnahmen`)
         - :java:`NullPointerException`: Ein Objekt wird verwendet, obwohl es :java:`null` ist.
         - :java:`ArrayIndexOutOfBoundsException`: Ein ungültiger Index wird verwendet.
         - :java:`IllegalArgumentException`: Ein ungültiges Argument wird übergeben.
-        
+
         **Checked Exceptions**:
-        
+
         - :java:`IOException`: Fehler beim Lesen oder Schreiben von Dateien.
         - :java:`FileNotFoundException`: Datei nicht gefunden.
         - :java:`ParseException`: Fehler beim Parsen von Strings.
@@ -536,7 +535,7 @@ Fehlerbehandlung (:eng:`Exceptions`, :ger:`Ausnahmen`)
 
         .. rubric:: Handling von *Unchecked Exceptions* (:java:`try ... catch (E e)`)
 
-        .. include:: code/exceptions/Division.java 
+        .. include:: code/exceptions/Division.java
             :code: java
             :number-lines:
             :class: copy-to-clipboard
@@ -575,7 +574,7 @@ Fehlerbehandlung (:eng:`Exceptions`, :ger:`Ausnahmen`)
     .. card::
 
         .. rubric:: *Try-with-Resources* (:java:`try(var i = <Ressource>) { ... }`)
-        
+
         Stellt sicher, dass eine Ressource (z. B. eine Datei) immer geschlossen wird, auch wenn eine Exception auftritt.
 
         .. include:: code/exceptions/Cat.java
@@ -600,8 +599,8 @@ Fehlerbehandlung (:eng:`Exceptions`, :ger:`Ausnahmen`)
 
 .. exercise:: Einfache Fehlerbehandlung
 
-    Erweiteren Sie Ihre Methoden zum Berechnen der Kubikwurzel und zur Berechnung der Fibonacci-Zahlen um Fehlerbehandlung. D. h. testen Sie die Parameter auf Gültigkeit und werfen Sie ggf. eine :java:`IllegalArgumentException`. 
-    
+    Erweiteren Sie Ihre Methoden zum Berechnen der Kubikwurzel und zur Berechnung der Fibonacci-Zahlen um Fehlerbehandlung. D. h. testen Sie die Parameter auf Gültigkeit und werfen Sie ggf. eine :java:`IllegalArgumentException`.
+
     Deklarieren Sie in der Methodensignatur, dass eine :java:`IllegalArgumentException` geworfen werden könnte.
 
     Bedenken Sie bei der Berechnung der Methode für die Kubikwurzel, dass Double Werte auch Spezialwerte wie :java:`Double.POSITIVE_INFINITY` und :java:`Double.NaN` haben können!
@@ -631,12 +630,12 @@ Fehlerbehandlung (:eng:`Exceptions`, :ger:`Ausnahmen`)
 .. exercise:: Nicht-leere Zeilen zählen
 
     Schreiben Sie eine Methode (:java:`countNonEmptyLines`), die die Anzahl der nicht-leeren Zeilen in einem Datenstrom zählt und zurückgibt. Eine Zeile wird als leer angesehen, wenn diese keine Zeichen oder nur Leerzeichen enthält. Verwenden Sie dazu die Klasse :java:`BufferedReader` und die Methode :java:`readLine()` (siehe Beispiel in den Folien). Die Methode soll sich nicht um  Fehlerbehandlung kümmern.
-    
+
     Schreiben Sie eine :java:`main` Methode, die die Methode verwendet und sich um jegliche Fehlerbehandlung kümmert. D. h. die main Methode soll bei allen Fehlern eine *passende Fehlermeldung* ausgeben und das Programm sauber beenden. Verwenden Sie ggf. ein :java:`try-with-ressource` Statement.
 
     .. hint::
 
-        Studieren Sie die Dokumentation der Klasse :java:`String` in Hinblick auf Methoden, die es Ihnen einfacher machen zu erkennen ob eine Zeile gemäß obiger Definition leer ist.    
+        Studieren Sie die Dokumentation der Klasse :java:`String` in Hinblick auf Methoden, die es Ihnen einfacher machen zu erkennen ob eine Zeile gemäß obiger Definition leer ist.
 
     .. solution::
         :pwd: ExceptionsGanzEinfach
@@ -653,7 +652,7 @@ Abstrakte Klassen
 
 .. deck::
 
-    .. card:: 
+    .. card::
 
         - Abstrakte Klassen deklarieren ein Grundgerüst einer Klasse von der keine Objekte erzeugt werden können.
 
@@ -690,7 +689,7 @@ Abstrakte Klassen
                             return Math.PI * r * r;
                     }   }
 
-            .. cell:: 
+            .. cell::
 
                 .. code:: java
                     :class: copy-to-clipboard
@@ -709,7 +708,7 @@ Abstrakte Klassen
         - Abstrakte Methoden können von nicht-abstrakten Methoden aufgerufen werden.
         - Abstrakte Klassen können von anderen (auch nicht-abstrakten) Klassen erben.
         - Konkrete Subklassen müssen alle abstrakten Methoden implementieren.
-            
+
     .. card::
 
         .. rubric:: Statischer Typ
@@ -733,21 +732,21 @@ Finale Klassen und Methoden (der :java:`final` Modifikator)
 
     .. card::
 
-        .. rubric:: Konto.java 
+        .. rubric:: Konto.java
 
         .. code:: java
             :number-lines:
             :class: copy-to-clipboard
 
-            
+
             public class Konto {
                 private String name;
                 protected double saldo;
-                        
+
                 public final double getSaldo(){
                     return saldo;
                 }
-                
+
                 public final void setSaldo(double saldo){
                     this.saldo = saldo;
                 }
@@ -755,12 +754,12 @@ Finale Klassen und Methoden (der :java:`final` Modifikator)
 
     .. card::
 
-        .. rubric:: Festgeldkonto.java 
+        .. rubric:: Festgeldkonto.java
 
         .. code:: java
             :number-lines:
             :class: copy-to-clipboard
-            
+
             public final class Festgeldkonto extends Konto {
 	            private int laufzeit;
                   //...
@@ -783,7 +782,7 @@ Finale Klassen und Methoden (der :java:`final` Modifikator)
     Wir möchten mathematische Ausdrücke repräsentieren, um darauf verschiedene Operationen auszuführen.
 
     Erstellen Sie eine abstrakte Klasse :java:`Term`, die eine Methode :java:`int evaluate()` deklariert. Die Methode :java:`evaluate` soll eine *Checked Exception* vom neu anzulegenden Typ :java:`MathException` werfen, wenn die Auswertung nicht möglich ist. Die abstrakte Klasse :java:`Term` hat ein privates Attribut mit der Priorität des Terms (als int Wert), welcher bei der Initialisierung gesetzt wird. Implementieren Sie eine passende finale Methode :java:`int getPriority()` in der abstrakten Klasse. Die Priorität eines Terms ist relevant, wenn man einen Ausdruck ausgeben möchte und die Klammern minimieren möchte.
-    
+
     Erstellen Sie dann die Klassen :java:`Number`, :java:`Plus` und :java:`Division`, die von :java:`Term` erben und ggf. Referenzen auf weitere Terme halten. :java:`Number` repräsentiert eine Zahl, :java:`Plus` eine Addition und :java:`Division` eine Division. Implementieren Sie die Methode :java:`int evaluate()` in den Subklassen. Legen Sie für jede Klasse einen passenden Konstruktor an. Werfen Sie ggf. eine :java:`MathException`, wenn die Auswertung nicht möglich ist.
 
     Implementieren Sie für jede konkrete Klasse eine Methode :java:`public String toString()`, die den Term als String zurückgibt und Klammerung durchführt *wenn notwendig*. Die Methode :java:`toString()` soll die Klammern so setzen, dass der Ausdruck korrekt ist. D. h. :java:`(1 + 2) * 3` soll als :java:`(1 + 2) * 3` und nicht als :java:`1 + 2 * 3` ausgegeben werden. Weiterhin soll eine Ausdruck wie :java:`1 + 2 + 3` als :java:`1 + 2 + 3` und nicht als :java:`1 + (2 + 3)` oder :java:`(1 + 2) + 3` ausgegeben werden.
@@ -810,11 +809,11 @@ Finale Klassen und Methoden (der :java:`final` Modifikator)
 
         System.out.println(
             new Division(
-                new Number(1), 
+                new Number(1),
                 new Plus(
-                    new Plus(new Number(1),new Number(2)), 
+                    new Plus(new Number(1),new Number(2)),
                     new Number(1))));
-    
+
     Ausgabe:
 
     ::
@@ -827,14 +826,14 @@ Finale Klassen und Methoden (der :java:`final` Modifikator)
 
         System.out.println(
             new Plus(
-                new Number(1), 
+                new Number(1),
                 new Division(new Number(2), new Number(1))));
-    
+
     Ausgabe:
 
     ::
 
-        1 + 2 / 1 
+        1 + 2 / 1
 
 
 
@@ -845,15 +844,15 @@ Schnittstellen (Java :java:`interface`\ s)
 
     .. card::
 
-        Schnittstellen (Interfaces) werden ähnlich wie Klassen deklariert, spezifizieren aber nur Methoden-Schnittstellen (abstrakte Methoden und :java:`default` Methoden) und öffentliche statische finale Attribute. 
+        Schnittstellen (Interfaces) werden ähnlich wie Klassen deklariert, spezifizieren aber nur Methoden-Schnittstellen (abstrakte Methoden und :java:`default` Methoden) und öffentliche statische finale Attribute.
 
         .. class:: incremental
 
         :Syntax:
             .. code:: java
-        
+
                 <public>? interface <Schnittstellenname>{
-                    // statische, finale Attribute 
+                    // statische, finale Attribute
                     // Methodendeklarationen und "default" Methoden
                 }
 
@@ -874,7 +873,7 @@ Schnittstellen (Java :java:`interface`\ s)
                 :code: java
                 :number-lines:
                 :class: copy-to-clipboard
-    
+
     .. card::
 
         :Details:
@@ -883,7 +882,7 @@ Schnittstellen (Java :java:`interface`\ s)
             - Schnittstellen können aber als statischer Typ eines Objektes verwendet werden.
             - Die Angabe von :java:`public abstract` bei Methoden ist optional.
             - Die Angabe von :java:`public final static` bei Attributen ist optional.
-  
+
     .. card::
 
         .. rubric:: Implementierung von Schnittstellen
@@ -907,7 +906,7 @@ Schnittstellen (Java :java:`interface`\ s)
 
             .. code:: java
 
-                interface <Schnittstelle> 
+                interface <Schnittstelle>
                     extends <Schnittstelle> (, <Schnittstelle>)* {
                     //...
                 }
@@ -986,7 +985,7 @@ Schnittstellen (Java :java:`interface`\ s)
 
     Ausgabe:
 
-    :: 
+    ::
 
         false
         true

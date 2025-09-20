@@ -1,15 +1,14 @@
 .. meta::
-    :version: renaissance
     :lang: de
     :author: Michael Eichberg
     :keywords: "Programmierung", "Java", "Domain Modeling", "Records"
-    :description lang=de: Java Generics 
+    :description lang=de: Java Generics
     :id: lecture-prog-java-domain-modeling-and-records
     :first-slide: last-viewed
     :master-password: WirklichSchwierig!
-    
+
 .. include:: ../docutils.defs
-    
+
 
 
 Domain Modeling sowie Java Records und Enums
@@ -23,9 +22,9 @@ Eine kurze Einführung, um das Entwickeln von kleinen Projekten zu erleichtern.
 
 .. supplemental::
 
-    :Folien: 
-        
-        |html-source| 
+    :Folien:
+
+        |html-source|
 
         |pdf-source|
 
@@ -34,14 +33,14 @@ Eine kurze Einführung, um das Entwickeln von kleinen Projekten zu erleichtern.
 
     :Kontrollfragen:
 
-        .. source:: kontrollfragen.de.rst 
+        .. source:: kontrollfragen.de.rst
             :path: relative
             :prefix: https://delors.github.io/
             :suffix: .html
 
 
 
-.. class:: new-section 
+.. class:: new-section
 
 Implementierung einer einfachen Domänenklasse
 ------------------------------------------------
@@ -52,9 +51,9 @@ Implementierung einer einfachen Domänenklasse
 
 
 
-.. class:: exercises 
+.. class:: exercises
 
-Übung 
+Übung
 ------------------------------------------------
 
 .. scrollable::
@@ -67,11 +66,11 @@ Implementierung einer einfachen Domänenklasse
         2. :java:`String vorname`
         3. :java:`String nachname`
 
-        sowie geeigneten Konstruktoren und allen passenden get- und set-Methoden. Setzen Sie *Encapsulation* um. 
+        sowie geeigneten Konstruktoren und allen passenden get- und set-Methoden. Setzen Sie *Encapsulation* um.
 
         2. Implementieren Sie weiterhin eine Methode :java:`public String toString()`, die den Eintrag in der Form "Vorname Nachname, Telefonnummer" zurückgibt.
 
-        3. Implementieren Sie eine Methode :java:`public boolean equals(Object obj)`, die zwei Einträge (d. h. zwei Objekte mit dem dynamischen Typ :java:`TelefonbuchEintrag`) als gleich betrachtet, wenn die Telefonnummern gleich sind. 
+        3. Implementieren Sie eine Methode :java:`public boolean equals(Object obj)`, die zwei Einträge (d. h. zwei Objekte mit dem dynamischen Typ :java:`TelefonbuchEintrag`) als gleich betrachtet, wenn die Telefonnummern gleich sind.
 
            Prüfen Sie - durch das Studium der Dokumentation der Methode :java:`java.lang.Object.equals()` - ob Sie die Methode korrekt implementiert haben.
 
@@ -89,7 +88,7 @@ Implementierung einer einfachen Domänenklasse
 
 
 .. class:: new-section transition-fade
-    
+
 (Domain) Modeling [Larman2001]_
 ------------------------------------------------
 
@@ -129,7 +128,7 @@ Das Domänenmodell
 .. class:: incremental-list list-with-explanations
 
 - Das Domänenmodell wird erstellt, um die Domäne in Konzepte oder Objekte in der realen Welt aufzuschlüsseln.
-- Das Modell sollte die Menge der konzeptionellen Klassen identifizieren. 
+- Das Modell sollte die Menge der konzeptionellen Klassen identifizieren.
 
   (Das Domänenmodell wird iterativ vervollständigt.)
 - *Es ist die Grundlage für den Entwurf der Software*.
@@ -172,26 +171,26 @@ Modellierungsaspekte
     .. class:: dhbw incremental-list
 
     1. \
-    
+
        .. question::
 
             Wann sollte ich etwas als Attribut oder als Klasse modellieren?
 
-       .. answer:: 
+       .. answer::
             :class: incremental
 
             *Faustregel*: Wenn wir uns ein Konzept X in der realen Welt nicht als Zahl, Datum oder Text vorstellen können, dann sollte X wahrscheinlich mit Hilfe einer Klasse modelliert werden und ist kein Attribut.
 
     2. \
 
-       Die Attribute in einem Domänenmodell sollten vorzugsweise „primitive“ Datentypen in Bezug auf die Domäne sein. 
+       Die Attribute in einem Domänenmodell sollten vorzugsweise „primitive“ Datentypen in Bezug auf die Domäne sein.
 
        Sehr häufige Datentypen sind: Booleans, Datum, Zahl, Zeichen, String, Adresse, Farbe, Telefonnummer,...
 
     3. \
 
        Erwägen Sie die Modellierung von Mengen als Klassen, um Einheiten zuordnen zu können.
-    
+
        .. example::
 
           Der Datentyp des Attributs „Betrag“ einer Zahlung sollte auch die Währung angeben.
@@ -220,12 +219,12 @@ Modellierungsaspekte
 
         .. image:: images/kassensystem.svg
             :alt: Kassensystem
-            
+
 
 
 
 .. class:: new-section
-    
+
 Java records\ [JEP395]_
 ------------------------------------------------
 
@@ -233,7 +232,7 @@ Java records\ [JEP395]_
 Java Records - Überblick
 ------------------------------------------------
 
-- Java Records sind eine spezielle Form von Klassen, die dazu dienen, unveränderliche Daten zu modellieren. 
+- Java Records sind eine spezielle Form von Klassen, die dazu dienen, unveränderliche Daten zu modellieren.
 - Java Records sind häufig hervorragend geeignet, um Klassen aus Domänenmodellen, die insbesondere der Datenhaltung dienen, zu modellieren.
 - Java Records sind seit Java 16 verfügbar.
 
@@ -244,7 +243,7 @@ Beispiel: Implementierung einer Klasse 2DPoint
 
 .. deck::
 
-    .. card:: 
+    .. card::
 
         .. rubric:: Traditioneller Ansatz
 
@@ -279,7 +278,7 @@ Beispiel: Implementierung einer Klasse 2DPoint
                     :number-lines: 17
                     :class: copy-to-clipboard
 
-                        public int hashCode() { 
+                        public int hashCode() {
                             return Objects.hash(x, y);
                         }
 
@@ -321,7 +320,7 @@ Verwendung von Java Records
         .. rubric:: Deklaration und Initialisierung
 
         .. code:: java
-            :number-lines: 
+            :number-lines:
 
             jshell> var x = p.x();var y = p.y()
             x ==> 1
@@ -335,7 +334,7 @@ Verwendung von Java Records
         .. rubric:: Verwendung
 
         .. code:: java
-            :number-lines: 
+            :number-lines:
 
             jshell> new Point(1,2).hashCode();
             33
@@ -391,7 +390,7 @@ Konstruktoren von Record Klassen
 
     (Ein Record hat nie einen parameterlosen Standardkonstruktor.)
 
-    .. class:: incremental-list 
+    .. class:: incremental-list
 
     - Ein Record kann weitere Konstruktoren haben, die jedoch den kanonischen Konstruktor aufrufen müssen.
 
@@ -403,7 +402,7 @@ Konstruktoren von Record Klassen
             :class: copy-to-clipboard
 
 
-            record Point(int x, int y) { 
+            record Point(int x, int y) {
                 public Point(int x) { this(x,x); }
             }
 
@@ -419,13 +418,13 @@ Konstruktoren von Record Klassen
 
             record Point(int x, int y) {
                 public Point {
-                    if (x < 0 || y < 0) 
+                    if (x < 0 || y < 0)
                         throw new IllegalArgumentException(
                             "Negative Koordinaten sind nicht erlaubt.");
                 }
             }
 
-    - \ 
+    - \
 
       .. container:: accentuate
 
@@ -440,14 +439,14 @@ Konstruktoren von Record Klassen
 
 
 .. exercise:: Ein einfacher TelefonbuchEintrag mit Java Records
-    
+
     Entwickeln Sie eine Klasse TelefonbuchEintrag mit den Attributen:
 
        1. :java:`int telefonnummer`
        2. :java:`String vorname`
        3. :java:`String nachname`
 
-    verwenden Sie dazu ein Java Record. Führen Sie ggf. eine Normalisierung der Attribute durch (löschen von Leerzeichen am Anfang und Ende). Validieren Sie die übergebenen Werte (Telefonummer muss (hier) größer 0 sein und die Namen müssen mind. einen Buchstaben enthalten. Instanziieren Sie drei Objekte und prüfen Sie, ob die Validierung korrekt funktioniert und die Vergleichbarkeit der Objekte korrekt implementiert ist. 
+    verwenden Sie dazu ein Java Record. Führen Sie ggf. eine Normalisierung der Attribute durch (löschen von Leerzeichen am Anfang und Ende). Validieren Sie die übergebenen Werte (Telefonummer muss (hier) größer 0 sein und die Namen müssen mind. einen Buchstaben enthalten. Instanziieren Sie drei Objekte und prüfen Sie, ob die Validierung korrekt funktioniert und die Vergleichbarkeit der Objekte korrekt implementiert ist.
 
     .. solution::
         :pwd: NixVielZuTun!
@@ -499,10 +498,10 @@ Modellierung von Aufzählungen mit Java Enums
             public enum Arbeitstag { MONTAG, DIENSTAG, MITTWOCH, DONNERSTAG, FREITAG }
 
         .. rubric:: Beispielverwendung (:java:`Arbeitstag w = Arbeitstag.FREITAG`)
-            
+
         .. code:: java
             :number-lines:
-            
+
             jshell> switch(w) {
                       case FREITAG -> System.out.println("gleich ist Wochenende");
                       default -> System.out.println("noch viel zu tun");
@@ -519,7 +518,7 @@ Modellierung von Aufzählungen mit Java Enums
 
 Java Enum Konstanten können eigene Eigenschaften haben
 -------------------------------------------------------
-        
+
 .. example::
 
     .. code:: java
@@ -572,7 +571,7 @@ Enum Konstanten können eigene Klassenbodies deklarieren
             :number-lines:
 
             jshell> double x = 2;
-            jshell> for(var op : Operation.values()) { 
+            jshell> for(var op : Operation.values()) {
                         System.out.println(op.name() + " " +op.eval(x,x));
                     }
             PLUS 4.0
@@ -587,7 +586,7 @@ Java :java:`enum`\ s - Technische Besonderheiten
 
 - Enums sind :java:`final` oder :java:`sealed` (falls es innere Klassen gibt)
 - geschachtelte Enums sind (implizit) :java:`static`
-- der Supertyp alle Enums ist :java:`java.lang.Enum` 
+- der Supertyp alle Enums ist :java:`java.lang.Enum`
 
   (:java:`extends` wird für Enums nicht unterstützt.)
 - Klonen von Enums (:java:`clone()`) ist nicht möglich.
@@ -602,8 +601,8 @@ Java :java:`enum`\ s - Technische Besonderheiten
 
 .. exercise:: Enum für Währungen
 
-    Deklarieren Sie eine Enum (:java:`Currency`) für Währungen (Euro, Pfund etc.). 
-    
+    Deklarieren Sie eine Enum (:java:`Currency`) für Währungen (Euro, Pfund etc.).
+
     Es soll möglich sein für eine Währung, das Währungssymbol zu erhalten.
 
     Für jede Währung soll es weiterhin möglich sein, die verfügbaren Stückelungen (:eng:`denominations`) zu erhalten.
@@ -612,7 +611,7 @@ Java :java:`enum`\ s - Technische Besonderheiten
 
     .. remark::
         :class: margin-top-1em
-        
+
         Falls Sie die Stückelungen in einem Array zwischenspeichern sollten, dann stellen Sie sicher, dass das Array nicht verändert werden kann, wenn der Nutzer die verfügbaren Stückelungen abfragt.
 
     .. solution::

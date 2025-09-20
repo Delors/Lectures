@@ -1,5 +1,4 @@
 .. meta::
-    :version: renaissance
     :author: Michael Eichberg
     :keywords: "HTTP", "Sockets"
     :description lang=de: HTTP und Socketprogrammierung
@@ -21,7 +20,7 @@ HTTP und Sockets in Python
 
 .. supplemental::
 
-  :Folien: 
+  :Folien:
 
       [HTML] |html-source|
 
@@ -30,17 +29,17 @@ HTTP und Sockets in Python
   :Fehler melden:
       https://github.com/Delors/delors.github.io/issues
 
-.. container:: footer-left tiny 
+.. container:: footer-left tiny
 
     Dieser Foliensatz basiert lose auf Folien von Prof. Dr. Henning Pagnia.
-    
+
     Alle Fehler sind meine eigenen.
 
 
 
 .. class:: repetition
 
-IP 
+IP
 --------------------------------------
 
 Die Vermittlungsschicht (Internet Layer)
@@ -56,7 +55,7 @@ Die Vermittlungsschicht (Internet Layer)
 
 
 
-.. class:: repetition 
+.. class:: repetition
 
 TCP und UDP
 --------------------------------------
@@ -80,7 +79,7 @@ TCP und UDP
   .. cell:: width-50
 
     .. rubric:: User Datagram Protocol (UDP), RFC 768
-    
+
     • verbindungslose Kommunikation
 
       - unzuverlässig ⇒ keine Fehlerkontrolle
@@ -110,10 +109,10 @@ Hypertext Transfer Protocol (HTTP)
 HTTP
 --------------------------------------
 
-• `RFC 7230 <http://www.ietf.org/rfc/rfc7230.txt>`__ – 7235: HTTP/1.1 (redigiert im Jahr 2014; urspr. 1999 RFC 2626) 
+• `RFC 7230 <http://www.ietf.org/rfc/rfc7230.txt>`__ – 7235: HTTP/1.1 (redigiert im Jahr 2014; urspr. 1999 RFC 2626)
 • RFC 7540: HTTP/2 (seit Mai 2015 standardisiert)
 • Eigenschaften:
-  
+
   - Client / Server (Browser / Web-Server)
   - basierend auf TCP, i. d. R. Port 80
   - Server (meist) zustandslos
@@ -131,12 +130,12 @@ Konzeptioneller Ablauf
   .. cell::
 
     .. image:: images/http/http.svg
-      
+
 
   .. cell::
 
-    .. rubric:: HTTP-Kommandos 
-    
+    .. rubric:: HTTP-Kommandos
+
     („Verben“)
 
     - HEAD
@@ -167,7 +166,7 @@ Aufbau der Dokumentenbezeichner *Uniform Resource Locator (URL)*
 
     :``scheme``: Protokoll (case-insensitive) (z. B. ``http``, ``https`` oder ``ftp``)
     :``host``: DNS-Name (oder IP-Adresse) des Servers (case-insensitive)
-    :``port``: (optional) falls leer, 80 bei ``http`` und 443 bei ``https`` 
+    :``port``: (optional) falls leer, 80 bei ``http`` und 443 bei ``https``
     :``abs_path``: (optional) Pfadausdruck relativ zum Server-Root (case-sensitive)
     :``?query``: (optional) direkte Parameterübergabe (case-sensitive) (``?from=…&to=…``)
     :``#anchor``: (optional) Sprungmarke innerhalb des Dokuments
@@ -180,7 +179,7 @@ Aufbau der Dokumentenbezeichner *Uniform Resource Locator (URL)*
     - entweder URL (Location) oder URN (Name) (z. B. ``urn:isbn:1234567890``)
     - Beispiele von URIs, die keine URL sind, sind *XML Namespace Iidentifiers*
 
-      .. code:: XML 
+      .. code:: XML
 
         <svg version="1.1" xmlns="http://www.w3.org/2000/svg">...</svg>
 
@@ -195,7 +194,7 @@ Das GET Kommando
 
     - Dient dem Anfordern von HTML-Daten vom Server (Request-Methode).
     - Minimale Anfrage:
-    
+
       :Anfrage:
 
         .. code:: http
@@ -206,13 +205,13 @@ Das GET Kommando
           Connection: close
           <Leerzeile (CRLF)>
 
-      :Optionen:     
+      :Optionen:
           - Client kann zusätzlich weitere Infos über die Anfrage sowie sich selbst senden.
           - Server sendet Status der Anfrage sowie Infos über sich selbst und ggf. die angeforderte HTML-Datei.
 
     - Fehlermeldungen werden ggf. vom Server ebenfalls als HTML-Daten verpackt und als Antwort gesendet.
 
-  .. card:: 
+  .. card::
 
     .. rubric:: Beispiel Anfrage des Clients
 
@@ -236,7 +235,7 @@ Das GET Kommando
       Connection: close
       **CRLF**
       <!DOCTYPE html>
-      … 
+      …
       </html>**CRLF**
 
 
@@ -279,7 +278,7 @@ TCP Sockets
 
 
 
-(Ein einfacher) Portscanner 
+(Ein einfacher) Portscanner
 --------------------------------------
 
 .. code:: python
@@ -317,19 +316,19 @@ Austausch von Daten
 .. class:: incremental list-with-explanations
 
 - Wir können blockierend auf Daten warten bzw. blockierend schreiben, indem wir :python:`recv` bzw. :python:`sendall` aufrufen. (Siehe nächstes Beispiel.)
-  
+
   Sollte die Verbindung abbrechen oder die Gegenseite nicht antworten, kann es „relativ lange dauern“, bis dieser Fehler erkannt bzw. gemeldet wird.
 - Wir können den Socket auch in den nicht-blockierenden Modus versetzen, indem wir :python:`setblocking(False)` aufrufen (ggf. sinnvoll).
 
 
-  
-Ein einfacher Echo-Dienst 
+
+Ein einfacher Echo-Dienst
 ------------------------------------------------------
 
-.. deck:: 
+.. deck::
 
   .. card::
-        
+
     .. code:: python
       :class: copy-to-clipboard
       :number-lines:
@@ -364,7 +363,7 @@ Ein einfacher Echo-Dienst
       def receive_all(conn, chunk_size=1024): # see previous example
 
       with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as server:
-        server.bind(("localhost", 5678)) # Bind to localhost on port 5678 
+        server.bind(("localhost", 5678)) # Bind to localhost on port 5678
         server.listen(1) # queue at most one connection at a time
         while True:
             conn, addr = server.accept()
@@ -379,12 +378,12 @@ Ein einfacher Echo-Dienst
   .. card::
 
     - Python erlaubt es Sockets zu Wrappen, um sie wie Dateien behandeln zu können.
-  
+
       :python:`<Socket>.makefile(mode="r?w?b?" [, encoding="utf-8"])` erzeugt ein Dateiobjekt, das (insbesondere) ``readline()`` und ``write()`` unterstützt. Dies kann insbesondere bei zeilenorientierter Kommunikation hilfreich sein.
     - Es können auch ganze Dateien über Sockets basierend  übertragen werden (:python:`<Socket>.sendfile(<File>)`).
 
     .. warning::
-      :class: incremental 
+      :class: incremental
 
       Einige Methoden sind nur auf spezifischen Betriebssystemen (meist Unix) verfügbar.
 
@@ -411,9 +410,9 @@ UDP Sockets
 
     .. class:: list-with-explanations
 
-    1. *Datagram-Socket* auf festem Port erzeugen 
-     
-     
+    1. *Datagram-Socket* auf festem Port erzeugen
+
+
        (Die Hostangabe bestimmt wer sich mit dem Socket verbinden darf; ``localhost`` bedeutet nur lokale Verbindungen sind erlaubt.)
     2. Endlosschleife beginnen
     3. *Datagram* empfangen (und verarbeiten)
@@ -431,7 +430,7 @@ UDP basierter Echo Server
   import socket
 
   HOST = "localhost"
-  PORT = 5678  
+  PORT = 5678
 
   with socket.socket(socket.AF_INET, socket.SOCK_DGRAM) as server:
       server.bind((HOST, PORT))
@@ -446,7 +445,7 @@ UDP basierter Echo Server
 
 .. class:: exercises transition-fade
 
-Übung 
+Übung
 ------------------------------------------------------
 
 .. exercise:: Ein einfacher HTTP-Client
@@ -466,14 +465,14 @@ UDP basierter Echo Server
       Kann Ihr Programm auch Bilddateien (z. B. "http://www.michael-eichberg.de/acm.svg") korrekt speichern? Falls nicht, prüfen Sie ob Sie Antwort des Servers richtig verarbeiten; analysieren Sie ggf. den Header und passen Sie Ihr Programm entsprechend an.
 
   .. solution::
-    :pwd: a-b-c 
+    :pwd: a-b-c
 
     Zu (a):
 
     .. code:: python
-      :class: copy-to-clipboard 
+      :class: copy-to-clipboard
       :number-lines:
-    
+
       #!/usr/bin/env python3
       import socket
 
@@ -492,17 +491,17 @@ UDP basierter Echo Server
           return data
 
       with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
-          s.connect((HOST, PORT))  
+          s.connect((HOST, PORT))
 
           s.sendall(the_request.encode())
           data = receive_all(s)
       print(data.decode())
- 
+
 
     Zu (b) und (c):
 
     .. code:: python
-      :class: copy-to-clipboard 
+      :class: copy-to-clipboard
       :number-lines:
 
       #!/usr/bin/env python3
@@ -535,7 +534,7 @@ UDP basierter Echo Server
           return data
 
       with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
-          s.connect((HOST, PORT))  
+          s.connect((HOST, PORT))
           s.sendall(the_request.encode())
           data = receive_all(s)
           headerEndIndex = data.index(b"\r\n\r\n")
@@ -543,7 +542,7 @@ UDP basierter Echo Server
           # print(header)
           contentType = next(filter(lambda h: h.strip().lower().startswith("content-type"),header.split("\r\n")))
           content = data[headerEndIndex+4:]
-          
+
           filename = FILE[1:]
           if "/"  in filename:
               os.makedirs(os.path.dirname(filename), exist_ok=True)
@@ -562,7 +561,7 @@ UDP basierter Echo Server
 
 .. class:: exercises
 
-Übung 
+Übung
 ------------------------------------------------------
 
 .. exercise:: Protokollaggregation
@@ -573,9 +572,9 @@ UDP basierter Echo Server
 
   Sie können den UDP basierten Echo Server als Vorlage für Ihren Server verwenden.
 
-  .. solution:: 
+  .. solution::
     :pwd: Nun mit UDP.
-    
+
     .. code:: python
       :class: copy-to-clipboard
       :number-lines:
@@ -584,7 +583,7 @@ UDP basierter Echo Server
       import socket
 
       HOST = "localhost"
-      PORT = 5678  
+      PORT = 5678
       MAX_PACKET_SIZE = 65507
 
       try:
@@ -610,12 +609,12 @@ UDP basierter Echo Server
       import socket
 
       HOST = "localhost"
-      PORT = 5678  
+      PORT = 5678
       MAX_PACKET_SIZE = 65507;
 
       with socket.socket(socket.AF_INET, socket.SOCK_DGRAM) as server:
           server.bind((HOST, PORT))
 
           while True:
-              data, addr = server.recvfrom(MAX_PACKET_SIZE)  
+              data, addr = server.recvfrom(MAX_PACKET_SIZE)
               print(f"[{addr}] {data}")

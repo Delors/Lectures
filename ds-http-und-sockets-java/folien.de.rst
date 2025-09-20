@@ -1,5 +1,4 @@
 .. meta::
-    :version: renaissance
     :author: Michael Eichberg
     :keywords: "HTTP", "Sockets"
     :description lang=de: HTTP und Socketprogrammierung
@@ -21,25 +20,25 @@ HTTP und Sockets (in Java)
 
 .. supplemental::
 
-  :Folien: 
+  :Folien:
       [HTML] |html-source|
 
       [PDF] |pdf-source|
-      
+
   :Fehler melden:
       https://github.com/Delors/delors.github.io/issues
 
-.. container:: footer-left tiny 
+.. container:: footer-left tiny
 
     Dieser Foliensatz basiert auf Folien von Prof. Dr. Henning Pagnia.
-    
+
     Alle Fehler sind meine eigenen.
 
 
 
 .. class:: repetition
 
-IP 
+IP
 --------------------------------------
 
 Die Vermittlungsschicht (Internet Layer)
@@ -57,7 +56,7 @@ Die Vermittlungsschicht (Internet Layer)
 
 .. class:: repetition
 
-TCP und UDP 
+TCP und UDP
 --------------------------------------
 
 .. grid::
@@ -79,7 +78,7 @@ TCP und UDP
   .. cell:: width-50
 
     .. rubric:: User Datagram Protocol (UDP), RFC 768
-    
+
     • verbindungslose Kommunikation
 
       - unzuverlässig ⇒ keine Fehlerkontrolle
@@ -109,10 +108,10 @@ Hypertext Transfer Protocol (HTTP)
 HTTP
 --------------------------------------
 
-• `RFC 7230 <http://www.ietf.org/rfc/rfc7230.txt>`__ – 7235: HTTP/1.1 (redigiert im Jahr 2014; urspr. 1999 RFC 2626) 
+• `RFC 7230 <http://www.ietf.org/rfc/rfc7230.txt>`__ – 7235: HTTP/1.1 (redigiert im Jahr 2014; urspr. 1999 RFC 2626)
 • RFC 7540: HTTP/2 (seit Mai 2015 standardisiert)
 • Eigenschaften:
-  
+
   - Client / Server (Browser / Web-Server)
   - basierend auf TCP, i. d. R. Port 80
   - Server (meist) zustandslos
@@ -124,16 +123,16 @@ HTTP
 Konzeptioneller Ablauf
 --------------------------------------
 
-.. grid:: 
+.. grid::
 
-  .. cell:: 
+  .. cell::
 
     .. image:: drawings/http/http.svg
 
   .. cell::
 
-    .. rubric:: HTTP-Kommandos 
-    
+    .. rubric:: HTTP-Kommandos
+
     („Verben“)
 
     - HEAD
@@ -164,12 +163,12 @@ Aufbau der Dokumentenbezeichner *Uniform Resource Locator (URL)*
 
     :``scheme``: Protokoll (case-insensitive) (z. B. ``http``, ``https`` oder ``ftp``)
     :``host``: DNS-Name (oder IP-Adresse) des Servers (case-insensitive)
-    :``port``: (optional) falls leer, 80 bei ``http`` und 443 bei ``https`` 
+    :``port``: (optional) falls leer, 80 bei ``http`` und 443 bei ``https``
     :``abs_path``: (optional) Pfadausdruck relativ zum Server-Root (case-sensitive)
     :``?query``: (optional) direkte Parameterübergabe (case-sensitive) (``?from=…&to=…``)
     :``#anchor``: (optional) Sprungmarke innerhalb des Dokuments
 
-  .. card:: 
+  .. card::
 
     Uniform Resource Identifier (URI) sind eine Verallgemeinerung von URLs.
 
@@ -177,7 +176,7 @@ Aufbau der Dokumentenbezeichner *Uniform Resource Locator (URL)*
     - entweder URL (Location) oder URN (Name) (z. B. ``urn:isbn:1234567890``)
     - Beispiele von URIs, die keine URL sind, sind *XML Namespace Iidentifiers*
 
-      .. code:: XML 
+      .. code:: XML
 
         <svg version="1.1" xmlns="http://www.w3.org/2000/svg">...</svg>
 
@@ -192,7 +191,7 @@ Das GET Kommando
 
     - Dient dem Anfordern von HTML-Daten vom Server (Request-Methode).
     - Minimale Anfrage:
-    
+
       :Anfrage:
 
         .. code:: http
@@ -203,7 +202,7 @@ Das GET Kommando
           Connection: close
           <Leerzeile (CRLF)>
 
-      :Optionen:     
+      :Optionen:
           - Client kann zusätzlich weitere Infos über die Anfrage sowie sich selbst senden.
           - Server sendet Status der Anfrage sowie Infos über sich selbst und ggf. die angeforderte HTML-Datei.
 
@@ -231,7 +230,7 @@ Das GET Kommando
       Connection: close
       **CRLF**
       <!DOCTYPE html>
-      … 
+      …
       </html>**CRLF**
 
 
@@ -285,7 +284,7 @@ TCP Sockets
 
   import java.net.*;
   import java.io.*;
-  
+
   public class LowPortScanner {
     public static void main(String [] args) {
       String host = "localhost";
@@ -324,13 +323,13 @@ Austausch von Daten
 
 
 
-(Schachtelung von Streams) Ein einfacher Echo-Dienst 
+(Schachtelung von Streams) Ein einfacher Echo-Dienst
 ------------------------------------------------------
 
-.. deck:: 
+.. deck::
 
   .. card::
-        
+
     .. code:: java
       :class: copy-to-clipboard
       :number-lines:
@@ -344,7 +343,7 @@ Austausch von Daten
             String theLine = userIn.readLine();
             if (theLine.equals(".")) break;
             try (Socket s = new Socket("localhost"/*hostname*/, 7/*serverPort*/)) {
-              BufferedReader networkIn = 
+              BufferedReader networkIn =
                   new BufferedReader(new InputStreamReader(s.getInputStream()));
               PrintWriter networkOut = new PrintWriter(s.getOutputStream());
               networkOut.println(theLine);
@@ -371,7 +370,7 @@ Austausch von Daten
                 PrintWriter out = new PrintWriter(con.getOutputStream());
                 out.println(in.readLine()); out.flush() ;
               } catch (IOException e) { System.err.println(e); }
-            } 
+            }
           } catch (IOException e) { System.err.println(e); }
       } }
 
@@ -380,14 +379,14 @@ Austausch von Daten
 UDP Sockets
 --------------------------------------
 
-.. grid:: 
+.. grid::
 
-  .. cell:: 
+  .. cell::
 
     .. rubric:: Clientseitig
 
     1. ``DatagramSocket`` erzeugen
-    2. ``DatagramPacket`` erzeugen 
+    2. ``DatagramPacket`` erzeugen
     3. ``DatagramPacket`` absenden
     4. ggf. Antwort empfangen und verarbeiten
 
@@ -404,11 +403,11 @@ UDP Sockets
     6. ggf. Antwort erstellen und absenden
 
 
-  
+
 UDP basierter Echo Server
 ------------------------------------------------------
 
-.. container:: 
+.. container::
 
   .. code:: java
     :class: copy-to-clipboard
@@ -426,7 +425,7 @@ UDP basierter Echo Server
               DatagramPacket dp = new DatagramPacket(buffer, buffer.length);
               server.receive(dp) ;
               String data = new String(dp.getData(),0,dp.getLength());
-              DatagramPacket dp2 = 
+              DatagramPacket dp2 =
                 new DatagramPacket(data.getBytes(),
                   data.getBytes().length, dp.getAddress(), dp.getPort());
               server.send(dp2) ;
@@ -437,7 +436,7 @@ UDP basierter Echo Server
 
 .. class:: exercises transition-fade
 
-Übung 
+Übung
 ------------------------------------------------------
 
 .. exercise:: Ein einfacher HTTP-Client
@@ -460,14 +459,14 @@ UDP basierter Echo Server
 
 
   .. solution::
-    :pwd: a-b-c 
+    :pwd: a-b-c
 
     Zu (a):
 
     .. code:: java
       :class: copy-to-clipboard
       :number-lines:
-    
+
       import java.net.*;
       import java.io.*;
       public class HTTPClient {
@@ -477,7 +476,7 @@ UDP basierter Echo Server
           String hostname = "www.michael-eichberg.de";
           String filename = "/index.html";
           try(Socket s = new Socket(hostname ,80) ;){
-            
+
             in = new BufferedReader(new InputStreamReader(s.getInputStream()));
             out = new PrintWriter(s.getOutputStream());
             out.print("GET " + url.getFile() + " HTTP/1.1\r\n");
@@ -489,7 +488,7 @@ UDP basierter Echo Server
             while ((line = in.readLine()) != null){
               System.out.println (line);
             }
-            
+
           } catch(Exception e){e.printStackTrace();}
         }
       }
@@ -544,12 +543,12 @@ UDP basierter Echo Server
           }
 
           /**
-           * Downloads a file from a given URL. 
+           * Downloads a file from a given URL.
            * (Example: "java HTTPGet.java http://www.google.de/index.html")
-           * 
+           *
            * @param args URL of the file to be downloaded. E.g.,
            *             "http://www.michael-eichberg.de/index.html".
-           *              
+           *
            */
           public static void main(String args[]) {
               try {
@@ -572,16 +571,16 @@ UDP basierter Echo Server
 
 .. class:: exercises
 
-Übung 
+Übung
 ------------------------------------------------------
 
 .. exercise:: Protokollaggregation
 
   Schreiben Sie ein UDP-basiertes Java-Programm, mit dem sich Protokoll-Meldungen auf einem Server zentral anzeigen lassen. Das Programm soll aus mehreren Clients und einem Server bestehen. Jeder Client liest von der Tastatur eine Eingabezeile in Form eines Strings ein, der dann sofort zum Server gesendet wird. Der Server wartet auf Port 4999 und empfängt die Meldungen beliebiger Clients, die er dann unmittelbar ausgibt.
 
-  .. solution:: 
+  .. solution::
     :pwd: Nun mit UDP.
-    
+
     .. code:: java
       :class: copy-to-clipboard
       :number-lines:
@@ -628,7 +627,7 @@ UDP basierter Echo Server
           final String hostname = "localhost";
           try (final var socket = new DatagramSocket();) {
             InetAddress host = InetAddress.getByName(hostname);
-            BufferedReader userIn = 
+            BufferedReader userIn =
                 new BufferedReader(new InputStreamReader(System.in));
             System.out.println(
                 "[INFO] SyslogClient: type message to send or <CTRL + d> to exit.");
@@ -640,7 +639,7 @@ UDP basierter Echo Server
               byte[] data = s.getBytes();
               if (data.length > MAX_PACKET_SIZE)
                 System.err.println("Message too large.");
-              DatagramPacket dp = 
+              DatagramPacket dp =
                   new DatagramPacket(data, data.length, host, DEFAULT_SERVER_PORT);
               socket.send(dp);
             } while (true);

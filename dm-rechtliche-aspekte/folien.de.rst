@@ -1,5 +1,4 @@
 .. meta::
-    :version: renaissance
     :author: Michael Eichberg
     :keywords: "Dokumentenmanagement"
     :description lang=de: "Ausgewählte rechtliche Aspekte des Dokumentenmanagements"
@@ -19,13 +18,13 @@ Rechtliche Anforderungen an das Dokumentenmanagement
 
 .. supplemental::
 
-  :Folien: 
+  :Folien:
       [HTML] |html-source|
 
       [PDF] |pdf-source|
   :Fehler melden:
       https://github.com/Delors/delors.github.io/issues
-    
+
 
 
 .. class:: repetition
@@ -34,10 +33,10 @@ Dokumente
 ----------
 
 - :peripheral:`Dokumente sind Träger von Daten, die Aufschluss über Handlungen, Abläufe und Produkte eines Unternehmens oder einen Institution geben.`
-- Dokumente dienen als Nachweis sowohl im Tagesgeschäft als auch bei Streitigkeiten. 
+- Dokumente dienen als Nachweis sowohl im Tagesgeschäft als auch bei Streitigkeiten.
 - Dokumente berühren eine Reihe von gesetzlichen Regelungen, Normen und Vorschriften.
 
-.. warning:: 
+.. warning::
     :class: incremental
 
     Dieser Foliensatz dient ausschließlich einer grundlegenden Orientierung. Für eine abschließende juristische Bewertung ist ggf. juristischer Rat einzuholen.
@@ -55,17 +54,17 @@ Rechtliche Grundlagen (Deutschland - 2023)
         :header: "gesetzliche Grundlagen, rechtliche Themen", AO, DSGVO, BDSG, BetrVG, BGB, GoB, GoBD, HGB, "eIDAS VDG", UrhG, ZPO
         :stub-columns: 1
 
-        "Ordnungsmäßigkeit, Integrität, Authentizität", X, X, X, , X, X, x, X, X, , 
-        Schutz vor Verlust (Datensicherheit), , X, X, , , , x, , , , 
+        "Ordnungsmäßigkeit, Integrität, Authentizität", X, X, X, , X, X, x, X, X, ,
+        Schutz vor Verlust (Datensicherheit), , X, X, , , , x, , , ,
         "Schutz vor unberechtigtem Zugriff
-        (Datenschutz)", , X, X, X, , , , , , , 
-        Ermittlung und Einhaltung der Aufbewahrungs-fristen, X, , , , X, , , X, , , 
-        Sicherstellung des gesetzlichen Zugriffs, X, , , , , , , X, , , 
+        (Datenschutz)", , X, X, X, , , , , , ,
+        Ermittlung und Einhaltung der Aufbewahrungs-fristen, X, , , , X, , , X, , ,
+        Sicherstellung des gesetzlichen Zugriffs, X, , , , , , , X, , ,
         "Sicherstellung der Beweiskraft vor
         Gericht", , , , , , , X, , X, , X
-        Beteiligungsrechte der Mitarbeiter, , , , X, , , , , , , 
+        Beteiligungsrechte der Mitarbeiter, , , , X, , , , , , ,
         "Schutz vor
-        Verletzung des Urheberrechts", , , , , , , , , , X, 
+        Verletzung des Urheberrechts", , , , , , , , , , X,
 
     .. container:: incremental
 
@@ -95,19 +94,19 @@ Rechtliche Grundlagen (Schweiz - 2023)
 
 .. story:: font-size-75
 
-  .. csv-table:: 
-    :class: incremental-table-rows 
+  .. csv-table::
+    :class: incremental-table-rows
     :widths: 20 10 10 10 10 10 10
     :header: "Gesetzliche Grundlagen/ rechtliche Themen", "DSG, VDSG", GeBüV, "MWSTG, MWSTGV", OR, UrhG, "ZertES, VZertES"
     :stub-columns: 1
 
     "Ordnungsmäßigkeit, Integrität, Authentizität", , X, X, X, , X
-    "Schutz vor Verlust 
-    (Datensicherung)", , X, , , , 
-    Schutz vor unberechtigtem Zugriff (Datenschutz), X, , , , , 
+    "Schutz vor Verlust
+    (Datensicherung)", , X, , , ,
+    Schutz vor unberechtigtem Zugriff (Datenschutz), X, , , , ,
     Ermittlung und Einhaltung der Aufbewahrungsfristen, , , , X, , X
-    Sicherstellung des gesetzlichen Zugriffs, , X, X, X, , 
-    Sicherstellung der Beweiskraft vor Gericht, , , , , , 
+    Sicherstellung des gesetzlichen Zugriffs, , X, X, X, ,
+    Sicherstellung der Beweiskraft vor Gericht, , , , , ,
 
 .. supplemental::
 
@@ -134,7 +133,7 @@ Allgemeine Grundsätze: Ordnungsmäßigkeit von Dokumenten
 
 .. class:: incremental
 
-- Es gibt keine branchen- und fachübergreifenden gesetzlichen Regelungen. 
+- Es gibt keine branchen- und fachübergreifenden gesetzlichen Regelungen.
 - Im Bereich des Handels und Steuerrechts gibt es detaillierte Vorgaben.
 
 
@@ -142,7 +141,7 @@ Allgemeine Grundsätze: Ordnungsmäßigkeit von Dokumenten
 Allgemeine Grundsätze: Integrität von Dokumenten
 -------------------------------------------------
 
-.. class:: incremental-list 
+.. class:: incremental-list
 
 - gilt als gewahrt, wenn Dokumente inhaltlich vollständig und unveränderlich erhalten sind.
 
@@ -154,7 +153,7 @@ Allgemeine Grundsätze: Integrität von Dokumenten
   - Kordel und Siegel bei notariellen Urkunden
   - Signatur jeder einzelnen Seite
   - den Nachweis über den unverfälschten Inhalt von nicht-elektronischen Dokumenten können ggf. nur kriminaltechnische Untersuchungen erbringen
-- Die Integrität von elektronischen Dokumenten kann durch Signaturen gewährleistet werden. 
+- Die Integrität von elektronischen Dokumenten kann durch Signaturen gewährleistet werden.
 
 
 
@@ -165,11 +164,11 @@ Allgemeine Grundsätze: Authentizität von Dokumenten
 
 - Nachweis des Ursprungs des Dokuments.
 - Bei originären Papierdokumenten, typischerweise durch handschriftliche Signatur auf dem Originaldokument.
-- Die Authentizität von elektronischen Dokumenten kann durch Signaturen gewährleistet werden. 
+- Die Authentizität von elektronischen Dokumenten kann durch Signaturen gewährleistet werden.
 
 
 
-Revisionssicherheit 
+Revisionssicherheit
 ---------------------
 
 .. epigraph::
@@ -187,10 +186,10 @@ Grundsätze ordnungsgemäßer Buchführung (GoB)
 - bzgl. Buchführung und Rechnungsstellung ergibt sich aus dem HGB:
 
   - Grundsatz der Richtigkeit und Willkürfreiheit
-  - Grundsatz der Klarheit und Übersichtlichkeit 
+  - Grundsatz der Klarheit und Übersichtlichkeit
   - :peripheral:`Grundsatz der Einzelbewertung`
-  - Grundsatz der Vollständigkeit 
-  - Grundsatz der Ordnungsmäßigkeit 
+  - Grundsatz der Vollständigkeit
+  - Grundsatz der Ordnungsmäßigkeit
   - Grundsatz der Sicherheit (Revisionssichere Aufbewahrung)
   - Belegprinzip
 
@@ -205,7 +204,7 @@ Grundsätze ordnungsgemäßer Buchführung (GoB)
 
 .. container:: incremental
 
-    Die Beweiskraft elektronisch signierter Dokumente ist in der ZPO geregelt. 
+    Die Beweiskraft elektronisch signierter Dokumente ist in der ZPO geregelt.
 
 
 
@@ -216,30 +215,30 @@ Elektronische Signaturen
 
   .. class:: incremental-list dd-margin-left-6em
 
-  :einfache elektronische Signatur: 
+  :einfache elektronische Signatur:
 
-    Die Daten sind keiner Person zugeordnet. 
+    Die Daten sind keiner Person zugeordnet.
 
-  :fortgeschrittene elektronische Signatur: 
+  :fortgeschrittene elektronische Signatur:
 
-    - ausschließlich einer best. Person zugeordnet. 
+    - ausschließlich einer best. Person zugeordnet.
     - ermöglicht die Identifizierung der Person.
-    - wird mit Mitteln erzeugt, die ausschließlich die Person unter alleiniger Kontrolle hat. 
+    - wird mit Mitteln erzeugt, die ausschließlich die Person unter alleiniger Kontrolle hat.
     - eine nachträgliche Veränderung der Daten kann erkannt werden.
 
-  :qualifizierte elektronische Signatur: 
+  :qualifizierte elektronische Signatur:
 
     - basiert auf einem qualifizierten Zertifikat für eine natürliche Person.
     - wird mit einem sicheren Signaturerstellungsgerät erzeugt.
 
-  :elektronisches Siegel: 
+  :elektronisches Siegel:
 
     Erfolgt mithilfe eines Zertifikats, dass auf den Namen einer Organisation ausgestellt wurde.
 
 .. supplemental::
 
   Die einfache elektronische Signatur ist die am wenigsten sichere Form der elektronischen Signatur.
-  
+
 
 
 Scannen von externen Dokumenten
@@ -248,7 +247,7 @@ Scannen von externen Dokumenten
 .. class:: incremental-list list-with-explanations
 
 - Externe Dokumente dürfen ersetzend gescannt werden.
-- Die Dokumente sind nach dem Stand der Technik zu scannen. 
+- Die Dokumente sind nach dem Stand der Technik zu scannen.
 
   (TR-ESOR 03125 bzw. TR-RESISCAN 03138)
 - Bei gescannten öffentlichen Urkunden gilt §371b ZPO; d. h. der Beweiswert bleibt erhalten wenn der Scan von einer öffentlichen Behörde oder einer mit öffentlichen Glauben versehen Personen durchgeführt wurde.
@@ -286,7 +285,7 @@ Datenschutz - Grundlagen
 :spezielle Regelungen:
 
   - Sozialdatenschutz
-  - Telekommunikations- und Telemediendatenschutz im TTDSG 
+  - Telekommunikations- und Telemediendatenschutz im TTDSG
   - ...
 
 
@@ -307,7 +306,7 @@ Stellen, die mit personenbezogenen Daten umgehen, müssen technische und organis
     - die Fähigkeit, die Verfügbarkeit der personenbezogenen Daten und den Zugang zu Ihnen bei einem Zwischenfall wiederherstellen zu können.
     - ein dokumentiertes Verfahren bezüglich der Wirksamkeit der technischen und organisatorischen Maßnahmen in Hinblick auf die Gewährleistung der Sicherheit der Verarbeitung.
 
-    .. remark:: 
+    .. remark::
       :class: incremental
 
       Es gilt der Grundsatz der Verhältnismäßigkeit.
@@ -317,14 +316,14 @@ Stellen, die mit personenbezogenen Daten umgehen, müssen technische und organis
 Datensicherheit von Dokumentenverwaltungs- und Archivierungslösungen
 --------------------------------------------------------------------------
 
-in folgenden Bereichen müssen Maßnahmen ergriffen werden: 
+in folgenden Bereichen müssen Maßnahmen ergriffen werden:
 
 .. class:: incremental-list
 
-- Personal 
+- Personal
 - Gebäudesicherheit
 - Organisation
-- Administration 
+- Administration
 - eingesetzte Werkzeuge
 
 
@@ -352,7 +351,7 @@ Anforderung an die Revisionssicherheit gemäß GoBD
 .. class:: incremental-list
 
 - das Verfahren zur Vergabe von Zugriffsberechtigungen muss dokumentiert und nachvollziehbar sein.
-- Zugriffsberechtigungen sind Personen bezogen zu vergeben. 
+- Zugriffsberechtigungen sind Personen bezogen zu vergeben.
 - Zugriffe sind zu protokollieren.
 - Bild und Datenträger müssen vor fremden Zugriff sicher aufbewahrt werden.
 - Sicherheitsmaßnahmen sind regelmäßig zu hinterfragen und auf einer Risikoanalyse basieren.
@@ -390,7 +389,7 @@ Rechte von Betroffenen gemäß DSGVO
 
   Dies umfasst ggf. personenbezogene Daten oder auch Daten bei denen der Besitz strafbar ist (z. B. KiPo oder verfassungsfeindliche Inhalte).
 
-- Systeme zur revisionssicheren Aufbewahrung müssen deswegen eine Option anbieten, Daten vor Ablauf der Aufbewahrungsfristen zu löschen. 
+- Systeme zur revisionssicheren Aufbewahrung müssen deswegen eine Option anbieten, Daten vor Ablauf der Aufbewahrungsfristen zu löschen.
 
   Dies muss unter erhöhten Sicherheitsanforderungen (Vier-Augen-Prinzip, erweiterte Protokollierung) geschehen; das Vorgehen muss dokumentiert sein.
 
@@ -430,7 +429,7 @@ Datenschutz beim Austausch von Daten mit den USA
 
   [...] Ob dieses hohe Datenschutzniveau und diese strengen Vorgaben für die US-Behörden auch unter der Präsidentschaft von Donald Trump noch gelten, hat das Gericht in seinem Urteil nicht geklärt. Es sei aber Sache der EU-Kommission, darauf ein Auge zu haben. [...]
 
-  -- `03.09.2025 - Tagesschau.de: EU-Gericht weist Klage gegen Abkommen mit den USA ab <https://www.tagesschau.de/ausland/europa/eu-datenschutz-urteil-100.html>`__ 
+  -- `03.09.2025 - Tagesschau.de: EU-Gericht weist Klage gegen Abkommen mit den USA ab <https://www.tagesschau.de/ausland/europa/eu-datenschutz-urteil-100.html>`__
 
 
 
@@ -445,7 +444,7 @@ Die Frist
 ------------
 
 .. definition::
-    
+
     Frist: ein bestimmter oder bestimmbarer Zeitraum.
 
 .. class:: incremental-list
@@ -489,7 +488,7 @@ Gesetzliche Aufbewahrungsfristen
 - Häufig nicht an konkrete Dokumententypen gebunden.
 - Aussagen zur Frist leiten sich ggf. aus Nachweispflichten ab.
 - Oft gibt es erhebliche Abgrenzungsschwierigkeiten zwischen den anzuwenden Vorschriften bzw. Gesetzen.
-  
+
   Z.B. § 257 HGB vs. §§ 140-147 AO; d. h. Aufbewahrungspflicht 6 oder 10 Jahre.
 
   Vgl. `IHK Konstanz - Aufbewahrungsfristen (Stand 2020) <https://www.ihk.de/konstanz/recht-und-steuern/steuer-und-finanzpolitik/finverwal/aufbewahrung-von-geschaeftsunterlagen-1672476#:~:text=Die%20Aufbewahrungsfrist%20für%20Bücher%20und,und%20Rechnungen%20beträgt%20zehn%20Jahre.>`__
@@ -503,11 +502,11 @@ Aufbewahrungspflichten Ermitteln
 
 .. class:: incremental-list
 
-- Einzelheiten zu der steuerrechtlichen Aufbewahrungspflicht werden in der Abgabenordnung (primär in § 147) geregelt. 
-- Jedoch ergeben sich steuerrechtliche Aufbewahrungspflichten auch durch „andere Gesetze“ (z. B. Steuergesetze wie das Umsatzsteuergesetz).  
+- Einzelheiten zu der steuerrechtlichen Aufbewahrungspflicht werden in der Abgabenordnung (primär in § 147) geregelt.
+- Jedoch ergeben sich steuerrechtliche Aufbewahrungspflichten auch durch „andere Gesetze“ (z. B. Steuergesetze wie das Umsatzsteuergesetz).
 
 - Bzgl. „andere Gesetze“:
-  
+
   .. epigraph::
 
     [... Gemeint] sind u. a. das HGB und **eine Vielzahl von Gesetzen und Verordnungen**, die für bestimmte Berufe oder Tätigkeiten Aufzeichnungs- und Buchführungspflichten vorschreiben. Beispielsweise müssen die Bewachungsbetriebe Auftragsbücher nach § 14 Abs. 2 Verordnung über das Bewachungsgewerbe i. V. m. § 34a Abs. 2 Nr. 3c Gewerbeordnung führen.
@@ -521,15 +520,15 @@ Fristfindung
 
 
 :dokumentenbezogen:
- 
+
   1. die Dokumententypen einer Einheit (z. B. Abteilung) werden ermittelt
   2. die Aufbewahrungsgründe werden festgestellt
-  3. Feststellung der betrieblichen und der (in)direkten gesetzlichen Aufbewahrungsfristen 
+  3. Feststellung der betrieblichen und der (in)direkten gesetzlichen Aufbewahrungsfristen
 
 .. class:: incremental
 
 :prozessbezogen:
-  
+
   1. Feststellung der Aufbewahrungsgründe pro Betrachtungseinheit
   2. Zuordnung der Dokumente zu den Aufbewahrungsgründen
   3. Feststellung der entsprechenden Dokumententypen
@@ -556,10 +555,10 @@ Sicherstellung des gesetzlichen Zugriffs
 
 - Innerhalb der Aufbewahrungsfrist muss der Zugriff auf die Dokumente innerhalb angemessener Zeit gewährleistet sein.
 - Eine Speicherung in der Cloud ist nicht grundsätzliche verboten; der Zugriff (durch Behörden etc.) muss jedoch gewährleistet sein.
-   
+
   (Dies kann die Verarbeitung in einem Rechenzentrum in der EU bzw. Deutschland erfordern und muss durch entsprechende Verträge abgesichert sein.)
 - Für steuerlich relevante Dokumente gelten besondere Anforderungen, die sich direkt aus der GoBD ergeben.
-  
+
   Dokumente, die nicht digital vorliegen, müssen nicht digitalisiert werden, um den Anforderungen der GoBD zu genügen; können jedoch digitalisiert werden, wenn eine Verfahrensdokumentation vorliegt.
 
 .. supplemental::
@@ -578,7 +577,7 @@ Arten des Datenzugriffs
 .. class:: incremental-list list-with-explanations
 
 1. unmittelbarer Zugriff auf die Daten
-   
+
    Dem Prüfer müssen die entsprechenden Hilfsmittel zur Verfügung gestellt werden, um die Daten zu prüfen.
 2. mittelbarer Zugriff auf die Daten
 
@@ -596,13 +595,13 @@ Sicherstellung der Beweiskraft vor Gericht
 
 - gem. ZPO sind insbesondere Urkunden als Beweismittel zulässig.
 - Beweisführung mittels elektronischer Dokumente erfolgt nach den Regeln des Augenscheinbeweises.
-  
+
   Bei E-Mails ist der Nachweis der Authentizität und Integrität ggf. problematisch.
 - E-Mails mit einer qualifizierten elektronischen Signatur haben die Beweiskraft einer Urkunde.
 - Bei der Verwendung von einfachen elektronischen Signaturen unterliegt die Beweiskraft der freien Beweiswürdigung durch das Gericht.
 
   Private elektronische Dokumente mit einer qualifizierten Signatur haben einen höheren Beweiswert als private Urkunden.
-- Qualifizierte Signaturen können z. B. mit dem neuen Personalausweis und einem Kartenleser erzeugt werden.  
+- Qualifizierte Signaturen können z. B. mit dem neuen Personalausweis und einem Kartenleser erzeugt werden.
 
 .. supplemental::
 
@@ -621,8 +620,8 @@ Zertifizierung von Systemen und Lösungen
 
 .. class:: incremental-list list-with-explanations
 
-- Prüfkriterien für Dokumentenmanagementlösungen (PK-DML) vom TÜV-IT und dem VOI. 
-  
+- Prüfkriterien für Dokumentenmanagementlösungen (PK-DML) vom TÜV-IT und dem VOI.
+
   Bewertung erfolgt nach internationalen ISO Standards.
 - Die Verwendung eines zertifizierten Dokumentenmanagementsystem entbindet den Anwender nicht von der funktionalen, technischen und betriebswirtschaftlichen Beurteilung des Produktes.
 -  Gesetzliche geforderte Zertifizierungen gibt es im Bereich Dokumentenmanagementsysteme nicht.
@@ -648,18 +647,18 @@ Typische Zertifizierungsgrundlagen
 .. class:: incremental-list
 
 - IEC/ISO 12119
-  
-  Allgemeine Anforderungen an Software in Hinblick auf 
 
-  (a) die Dokumentation und 
+  Allgemeine Anforderungen an Software in Hinblick auf
+
+  (a) die Dokumentation und
   (b) die Zuverlässigkeit und Funktionalität der Software.
 - IDW PS 880: „Softwaretestat“
-    
+
   Orientiert sich an gesetzlichen Grundlagen - insbesondere in Hinblick auf die Rechnungslegung.
 - RAL GZ 901: „Prospektprüfung“
-  
+
   Leistet das Produkt das Versprochene?
-  
+
 
 .. supplemental::
 

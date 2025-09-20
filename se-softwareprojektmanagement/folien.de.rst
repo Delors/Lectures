@@ -1,5 +1,4 @@
 .. meta::
-    :version: renaissance
     :author: Michael Eichberg
     :keywords: "Projekt"
     :description lang=de: Projektkonzeption und Projektrealisierung
@@ -19,9 +18,9 @@ Kurze Wiederholung von Aspekten des Softwareprojektmanagements
 
 .. supplemental::
 
-    :Folien: 
-        
-        |html-source| 
+    :Folien:
+
+        |html-source|
 
         |pdf-source|
 
@@ -41,13 +40,13 @@ Besonderheiten von Softwareprojekten
 --------------------------------------
 
 .. class:: incremental-list list-with-explanations
-    
+
 - Das Produkt ist nicht greifbar (:eng:`intangible`)
-- Die Projektmanager können den Fortschritt nicht (leicht) sehen. 
+- Die Projektmanager können den Fortschritt nicht (leicht) sehen.
 
   Sie müssen sich darauf verlassen, dass andere die zur Überprüfung des Fortschritts erforderliche Dokumentation erstellen bzw. funktionsfähige Software liefern.
 
-- Große Projekte sind oft "einmalige" Projekte. Das macht Schätzungen und Vorhersagen bzgl. der Entwicklungszeit und von Problemen (sehr) schwierig. 
+- Große Projekte sind oft "einmalige" Projekte. Das macht Schätzungen und Vorhersagen bzgl. der Entwicklungszeit und von Problemen (sehr) schwierig.
 
   Schnelle technologische Veränderungen machen auch frühere Erfahrungen überflüssig.
 
@@ -58,11 +57,11 @@ Standardtätigkeiten bei Softwareprojekten
 
 .. class:: incremental-list list-with-explanations
 
-- Antrags- bzw. Angebotserstellung 
+- Antrags- bzw. Angebotserstellung
 
   D. h. Software-Projektmanager müssen effektive kommunizieren können - sowohl mündlich als auch schriftlich.
 
-- Projektplanung und Terminplanung 
+- Projektplanung und Terminplanung
 - :peripheral:`Projektkostenkalkulation`
 - Projektüberwachung und -überprüfung
 - :peripheral:`Personalauswahl und -bewertung`
@@ -103,20 +102,20 @@ Bestandteile von Projektplänen
     .. cell:: width-50
 
        .. class:: incremental-list list-with-explanations
-       
+
        - Einführung
 
          Zielsetzung des Projekts und seine Beschränkungen (Zeit, Budget,...).
 
-       - Projektorganisation 
+       - Projektorganisation
 
          Organisation der Beteiligten und ihrer Rollen.
 
-       - Risikoanalyse 
-  
+       - Risikoanalyse
+
          Projektrisiken mit Eintrittswahrscheinlichkeiten und Strategien zur Risikominderung.
 
-       - Hardware- und Software-Ressourcenanforderungen 
+       - Hardware- und Software-Ressourcenanforderungen
 
          Die für die Durchführung des Projekts erforderliche Hardware und unterstützende Software.
 
@@ -124,15 +123,15 @@ Bestandteile von Projektplänen
 
         .. class:: incremental-list list-with-explanations
 
-        - Arbeitsaufteilung :eng:`work breakdown` 
-        
+        - Arbeitsaufteilung :eng:`work breakdown`
+
           Legt die Aufteilung des Projekts in Aktivitäten fest und nennt die Meilensteine und Leistungen, die mit jeder Aktivität verbunden sind.
 
         - Projektzeitplan
 
           Abhängigkeiten zwischen Aktivitäten, geschätzte Zeit, die zum Erreichen jedes Meilensteins benötigt wird, und die Zuordnung von Personen zu Aktivitäten.
 
-        - Überwachungs- und Berichterstattungsmechanismen 
+        - Überwachungs- und Berichterstattungsmechanismen
 
 
 
@@ -155,7 +154,7 @@ Projektzeitpläne
 Risikoanalyse
 -----------------
 
-.. image:: drawings/risikomanagementprozess.svg 
+.. image:: drawings/risikomanagementprozess.svg
     :alt: Der Risikomanagementprozess
     :align: center
 
@@ -175,9 +174,9 @@ Prinzipien der Agilen Softwareentwicklung
 - :peripheral:`Höchste Priorität ist es, den Kunden durch die frühzeitige und kontinuierliche Bereitstellung wertvoller Software zufrieden zu stellen.`
 - Wir liefern *häufig* funktionierende Software (z. B. alle zwei Wochen).
 - Funktionierende Software ist der wichtigste Maßstab für den Fortschritt.
-  
-  .. attention:: 
-  
+
+  .. attention::
+
     Wenn 30% der Funktionalität implementiert sind, sind 30% des Projekts abgeschlossen.
 
 - Kontinuierliches Augenmerk auf *technische Exzellenz und gutes Design* erhöht die Agilität.
@@ -190,7 +189,7 @@ Prinzipien der Agilen Softwareentwicklung
 Prinzipien der Agilen Softwareentwicklung
 --------------------------------------------
 
-.. class:: incremental-list 
+.. class:: incremental-list
 
 - In regelmäßigen Abständen reflektiert das Team, wie es effektiver werden kann, und passt sein Verhalten entsprechend an zwecks Prozessverbesserung.
 - Die besten Architekturen, Anforderungen und Entwürfe entstehen in selbstorganisierenden Teams.
@@ -205,16 +204,16 @@ Prinzipien der Agilen Softwareentwicklung
 
 - Agile Prozesse fördern eine nachhaltige Entwicklung; die Sponsoren, Entwickler und Benutzer sollten in der Lage sein, ein konstantes Tempo auf unbestimmte Zeit beizubehalten.
 
-  .. image:: drawings/nachhaltige_entwicklung.svg 
+  .. image:: drawings/nachhaltige_entwicklung.svg
      :alt: Nachhaltige Entwicklung
      :align: left
 
 
 
-(Noch relevante) Aspekte des *Unified Process* 
+(Noch relevante) Aspekte des *Unified Process*
 -------------------------------------------------
 
-.. class:: incremental-list 
+.. class:: incremental-list
 
 - Behandlung von Problemen mit hohem Risiko und hohem Wert in frühen Iterationen.
 - Kontinuierliche Einbindung der Benutzer für Bewertung, Feedback und Anforderungen.
@@ -241,8 +240,8 @@ Extreme Programming ist eine Sammlung von einfachen, von einander abhängigen Pr
 
 .. supplemental::
 
-    .. admonition:: Achtung vor Mehrdeutigkeit 
-        
+    .. admonition:: Achtung vor Mehrdeutigkeit
+
         Es ist immer darauf zu achten, dass das Geschriebene auch gleich verstanden wird.
 
         Die folgenden beiden Sätze sind Beispiele dafür, dass Sätze ganz leicht völlig verschieden verstanden werden können, wenn der Kontext nicht vollständig bekannt ist/anders angenommen wird oder wenn kleine Tippfehler passieren.
@@ -262,23 +261,23 @@ Ausführbare Software wird z. B. alle zwei Wochen geliefert (eine Iteration).
 
 .. class:: incremental-list
 
-- Die gelieferte Software kann, muss aber nicht in Produktion gehen. 
-- Iterationen sind zeitlich begrenzt. 
+- Die gelieferte Software kann, muss aber nicht in Produktion gehen.
+- Iterationen sind zeitlich begrenzt.
 - Terminverschiebungen sind illegal; wenn nicht alle für die Iteration geplanten Aufgaben erledigt werden können,  dann sind diese zu entfernen.
 
 
 
-Planung einer Iteration - Iterationsplan 
+Planung einer Iteration - Iterationsplan
 ------------------------------------------
 
-Zu Beginn jeder Iteration werden die User Stories oder auch Use Cases und ihre Prioritäten festgelegt. :peripheral:`Der Kunde wählt die Benutzergeschichten aus, die er umgesetzt haben möchte.` 
+Zu Beginn jeder Iteration werden die User Stories oder auch Use Cases und ihre Prioritäten festgelegt. :peripheral:`Der Kunde wählt die Benutzergeschichten aus, die er umgesetzt haben möchte.`
 
 .. class:: incremental-list list-with-explanations
 
-- Die User Stories werden in Tasks :ger:`Aufgaben (dt. unüblich)` aufgeteilt, deren Umsetzung zwischen 4 und 16 Stunden dauern sollte. 
+- Die User Stories werden in Tasks :ger:`Aufgaben (dt. unüblich)` aufgeteilt, deren Umsetzung zwischen 4 und 16 Stunden dauern sollte.
 - Die Anzahl der Geschichten wird durch das Budget begrenzt, das von den Entwicklern festgelegt wird.
 - Jeder Entwickler meldet sich für Aufgaben an.
-  
+
   Ein Entwickler kann eine beliebige Aufgabe wählen - auch wenn er kein Experte ist.
 
 - Die Reihenfolge der Stories innerhalb der Iteration ist eine technische Entscheidung.
@@ -293,7 +292,7 @@ Ende einer Iteration
 - Die Iteration endet zum festgelegten Datum (Timebox), auch wenn noch nicht alle Stories fertig sind.
 
 - Am Ende der Iteration:
-  
+
   - Die Schätzungen für alle Stories werden zusammengezählt und die Geschwindigkeit für diese Iteration wird berechnet.
   - Die geplante Geschwindigkeit für jede Iteration entspricht der gemessenen Geschwindigkeit der vorherigen Iteration.
 
@@ -317,9 +316,9 @@ Aufwandsabschätzung - Beispiel
 Schätzen Sie den Aufwand für die Implementierung der folgenden Funktionalität:
 
     Einlesen einer *Typed Properties*-Datei und Rückgabe einer Map, die die angegebenen und überprüften Eigenschaften enthält.
-    
+
     - Jede Zeile ist entweder leer, beginnt mit einem ``#``, wenn sie ein Kommentar ist, oder verwendet das folgende Muster: ``'['<TYPE>']'<KEY> '=' <VALUE>``
-      - Wenn beim Parsen einer Zeile ein Fehler auftritt, wird die Zeile ignoriert und das Parsen mit der nächsten Zeile fortgesetzt. 
+      - Wenn beim Parsen einer Zeile ein Fehler auftritt, wird die Zeile ignoriert und das Parsen mit der nächsten Zeile fortgesetzt.
     - Nach dem Parsen der gesamten Datei wird eine Map mit den geprüften Eigenschaften zurückgegeben; alle Zeilen, die nicht geparst werden können oder deren Prüfung fehlgeschlagen ist, werden ebenfalls zurückgegeben.
 
 
@@ -340,7 +339,7 @@ Eine (sehr) vollständige Sammlung von Testfällen erleichtert Refactorings und 
 
 
 
-Continuous Integration 
+Continuous Integration
 ------------------------------------------------------------------------
 
 (Der Begriff :ger:`Kontinuierliche Integration` wird üblicherweise nicht verwendet.)
@@ -352,13 +351,13 @@ Die Programmierer checken ihren Code ein und integrieren ihn mehrmals am Tag; es
 Initiale User Stories
 ---------------------
 
-.. note:: 
+.. note::
     :class: width-25
 
-    Die Schätzung des Aufwands ist hier in *Idealtagen*. 
+    Die Schätzung des Aufwands ist hier in *Idealtagen*.
 
 
-.. container:: index-card 
+.. container:: index-card
 
     Ein Tag
 
@@ -373,17 +372,17 @@ Initiale User Stories
 Initiale User Stories
 ---------------------
 
-.. note:: 
+.. note::
     :class: width-25
 
     Nicht implementierbar.
 
 
-.. container:: index-card 
+.. container:: index-card
 
     Einschränkung
 
-    | Das System zeigt keine Popups, 
+    | Das System zeigt keine Popups,
     | die als Werbepopups interpretiert werden könnten.
 
 
@@ -391,26 +390,26 @@ Initiale User Stories
 Initiale User Stories
 ---------------------
 
-.. note:: 
+.. note::
     :class: width-25
 
     Aufbrechen von Stories in Aufgaben.
 
-    
+
 .. container:: index-card
 
     Login-Story - zwei Tage
 
-    | Wenn ein Login erforderlich ist und die Seite den Nutzer 
-    | nicht als Mitglied identifizieren kann, dann wird der 
-    | Nutzer auf die Loginseite weitergeleitet. 
-    
-    | Diese fragt dann nach dem Nutzernamen und Passwort und 
+    | Wenn ein Login erforderlich ist und die Seite den Nutzer
+    | nicht als Mitglied identifizieren kann, dann wird der
+    | Nutzer auf die Loginseite weitergeleitet.
+
+    | Diese fragt dann nach dem Nutzernamen und Passwort und
     | erläutert den Loginprozess und die Philosophie der Seite.
 
-.. grid:: 
+.. grid::
 
-    .. cell:: 
+    .. cell::
 
       .. container:: index-card very-light-green-background
 
@@ -422,14 +421,14 @@ Initiale User Stories
 
           Andernfalls leite auf Loginseite um.
 
-    .. cell:: 
+    .. cell::
 
-      .. container:: index-card very-light-green-background 
+      .. container:: index-card very-light-green-background
 
           Login
 
-          Lese Daten von HTML input. 
-          
+          Lese Daten von HTML input.
+
           Prüfe ob der Nutzer in der Datenbank mit dem angegebenen Namen und Passwort hinterlegt ist. Falls nicht erfolgreiche umleiten auf Startseite mit entsprechender Fehlermeldung.
 
           Speichere Cookie.
@@ -476,7 +475,7 @@ Beispielaufzeichnung von User Stories
   .. csv-table::
       :class: annotated-text incremental-table-rows sticky-header
       :widths: 300 450 1200
-      
+
       "", **ID**, 2
       , Name, Admin-Login
       , Beschreibung, "Als Administrator*in muss ich mich am System mittels Benutzername und Passwort authentifizieren können, um Änderungen vornehmen zu können."
@@ -490,14 +489,14 @@ Beispielaufzeichnung von User Stories
 
 
 .. supplemental::
-    
+
     .. rubric:: User Stories
 
     **Format**
 
-    Ein bewährtes Format für User Stories ist: 
-    ``„Als <Benutzerrolle> will ich <das Ziel> [, so dass <Grund für das Ziel>]“``. 
-    
+    Ein bewährtes Format für User Stories ist:
+    ``„Als <Benutzerrolle> will ich <das Ziel> [, so dass <Grund für das Ziel>]“``.
+
     Wichtig ist, dass der Inhalt von jedem verstanden wird und jeder eine Vorstellung davon hat, was zu tun ist.
 
     **Erfassung**
@@ -506,7 +505,7 @@ Beispielaufzeichnung von User Stories
 
     **Aufteilung**
 
-    Die Aufteilung der User Story in Tasks liegt in der Verantwortung der Gruppe. 
+    Die Aufteilung der User Story in Tasks liegt in der Verantwortung der Gruppe.
 
     **Geschätzter Aufwand**
 
@@ -525,7 +524,7 @@ Qualitätssicherungskonzept
 Softwarequalitätsmerkmale
 ---------------------------
 
-.. image:: drawings/software_quality_properties_iso_9126.svg 
+.. image:: drawings/software_quality_properties_iso_9126.svg
     :alt: Softwarequalitätsmerkmale nach ISO 9126
     :align: center
 
@@ -552,7 +551,7 @@ Ausgewählte Qualitätsmerkmale
 
     :Zuverlässigkeit:
         Die Wahrscheinlichkeit des ausfallfreien Betriebs der (in diesem Kontext) Software über einen bestimmten Zeitraum bei einer definierten Betriebsweise.
-        
+
     :Verfügbarkeit:
         Eigenschaft zu einem gegebenen Zeitpunkt funktionstüchtig zu sein.
 
@@ -567,9 +566,9 @@ Auswahl des QS-Ziels
 .. class:: incremental-list
 
 - Wieso ist das Qualitätsziel für das Projekt von Bedeutung?
-- Welche anderen Qualitätsziele sind für das Projekt von Bedeutung? 
-- Ist dieses Qualitätsziel wichtiger als die anderen bzw. ist es das Wichtigste? Haben wir die wichtigsten Qualitätsziele identifiziert? 
-  
+- Welche anderen Qualitätsziele sind für das Projekt von Bedeutung?
+- Ist dieses Qualitätsziel wichtiger als die anderen bzw. ist es das Wichtigste? Haben wir die wichtigsten Qualitätsziele identifiziert?
+
   :peripheral:`Ggf. alle QS Ziele in Hinblick auf die Bedeutung für das Projekt bewerten und in Reihenfolge bringen.`
 
 
@@ -582,7 +581,7 @@ Planung und Durchführung von QS Maßnahmen
 - Welche QS-Maßnahmen können durchgeführt werden, die der Erreichung des QS-Ziels direkt dienlich sind?
 - Wer (Person oder IT-System) führt die Maßnahme durch?
 - Wann wird die Maßnahme durchgeführt? (Ist die Häufigkeit der Durchführung ausreichend, um das Qualitätsziel mit großer Sicherheit zu erreichen?)
-- Wie ist die Maßnahme ausgestaltet bzw. was wird getan? 
+- Wie ist die Maßnahme ausgestaltet bzw. was wird getan?
 - Wie kann *objektiv* festgestellt werden, dass das Qualitätsziel erreicht wurde
 - Welcher Maßstab kann anlegt werden, um die Ziel-Erreichung zu messen?
 
@@ -593,11 +592,10 @@ QS-Ziel Benutzerfreundlichkeit
 
 .. class:: incremental-list
 
-- Zur Sicherstellung der Benutzerfreundlichkeit sind häufig Benutzerstudien notwendig. 
+- Zur Sicherstellung der Benutzerfreundlichkeit sind häufig Benutzerstudien notwendig.
 - Objektive Maßstäbe sind z.B. die Anzahl der Fehler, die ein Benutzer macht, die Zeit, die ein Benutzer benötigt, um eine Aufgabe zu erledigen, oder die Anzahl der Aufgaben, die ein Benutzer in einer bestimmten Zeit erledigen kann.
 
 .. hint::
     :class: incremental
-    
-    Das ZEEB der DHBW bietet Kurse an zum Thema Entwurf von Fragebögen. Darüber hinaus gibt es ggf. Hardware wie zum Beispiel Eyetracker, die es ermöglichen einen tiefergehenden Eindruck zu gewinnen wie die Nutzer tatsächlich mit dem System interagieren.
 
+    Das ZEEB der DHBW bietet Kurse an zum Thema Entwurf von Fragebögen. Darüber hinaus gibt es ggf. Hardware wie zum Beispiel Eyetracker, die es ermöglichen einen tiefergehenden Eindruck zu gewinnen wie die Nutzer tatsächlich mit dem System interagieren.

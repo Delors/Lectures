@@ -1,5 +1,4 @@
 .. meta::
-    :version: renaissance
     :lang: de
     :author: Michael Eichberg
     :keywords: "Modellierung", "UML", "Objektorientierung", "Software Development"
@@ -7,7 +6,7 @@
     :id: lecture-prog-uml
     :first-slide: last-viewed
     :master-password: WirklichSchwierig!
-    
+
 .. include:: ../docutils.defs
 
 
@@ -21,9 +20,9 @@ Einführung und erste Grundlagen der Modellierung mit UML
 
 .. supplemental::
 
-    :Folien: 
-        
-        |html-source| 
+    :Folien:
+
+        |html-source|
 
         |pdf-source|
 
@@ -43,7 +42,7 @@ UML (Unified Modeling Language)
 - :peripheral:`Die Hoffnungen/Erwartungen, die an UML Anfang der 2000er gestellt wurden, wurden nicht erfüllt. Seit 2017 ist die Version 2.5.1 aktuell.`
 
 .. warning::
-    :class: incremental 
+    :class: incremental
 
     Wenn Sie UML verwenden, dann verwenden Sie die Notationen spezifikationskonform, da sonst der Sinn der Notation (vollständig) verloren geht oder es sogar zu Missverständnissen kommt.
 
@@ -75,7 +74,7 @@ Aktivitätsdiagramm für die Abwicklung einer Bestellung
 
 .. deck::
 
-    .. card:: 
+    .. card::
 
         .. image:: images/uml-activity/start.svg
             :width: 1800px
@@ -129,7 +128,7 @@ Aktivitätsdiagramm für die Abwicklung einer Bestellung
         .. image:: images/uml-activity/bestellung_abschließen.svg
             :width: 1800px
             :align: center
-        
+
 .. supplemental::
 
     Zentrale Elemente eines Aktivitätsdiagramms:
@@ -137,10 +136,10 @@ Aktivitätsdiagramm für die Abwicklung einer Bestellung
     - die Aktionen (abgerundete Rechtecke) steht für eine Operation, die im Rahmen des Ablaufs ausgeführt wird und in dem Kontext des Diagramms nicht weiter verfeinert wird.
     - der Startknoten (gefüllter Kreis); es kann mehrere Startknoten geben.
     - der Endknoten (gefüllter Kreis mit einem Rand) beendet die Aktivität
-    - Kanten (gerichtete Linien) verbinden die Elemente (Aktionen) und beschreiben den Ablauf. Kanten können mit Bedingungen (in eckigen Klammern) versehen werden. 
+    - Kanten (gerichtete Linien) verbinden die Elemente (Aktionen) und beschreiben den Ablauf. Kanten können mit Bedingungen (in eckigen Klammern) versehen werden.
     - Entscheidungen (Rauten) beschreiben, dass der Ablauf in Abhängigkeit von einer Bedingung unterschiedlich weitergeht. Dienen auch dazu mehrere alternative Pfade zusammenzuführen.
     - Parallelisierungs- und Synchronisierungspunkte (:eng:`Fork` und :eng:`Join`) (schwarze Balken) beschreiben, dass der Ablauf an dieser Stelle in mehrere Pfade aufgeteilt wird und später wieder zusammengeführt wird.
-    
+
 
 
 .. class:: exercises
@@ -168,13 +167,13 @@ Aktivitätsdiagramm für die Abwicklung einer Bestellung
 -------------------
 
 .. exercise:: Bearbeitung einer Bewerbung modellieren
-    
+
     Modellieren Sie die Bearbeitung einer Bewerbung aus Sicht eines Unternehmens mit Hilfe eines Aktivitätsdiagramms.
 
-    Bedenken Sie dabei Aspekte, wie die Prüfung der formalen Voraussetzungen, Prüfung durch die Fachabteilung, die Einladung zu einem Vorstellungsgespräch, die Absage oder die Annahme der Bewerbung. 
-    
+    Bedenken Sie dabei Aspekte, wie die Prüfung der formalen Voraussetzungen, Prüfung durch die Fachabteilung, die Einladung zu einem Vorstellungsgespräch, die Absage oder die Annahme der Bewerbung.
+
     Identifizieren Sie ggf. Möglichkeiten für eine parallele Verarbeitung.
-    
+
     .. solution::
         :pwd: Bewerbung
 
@@ -201,7 +200,7 @@ Curtis Gesetz
 .. epigraph::
 
     Curtis Gesetz: [...] Gute Entwürfe erfordern fundierte Anwendungskenntnisse.
-    
+
     -- **Albert Endres and Dieter Rombach**; *A Handbook of Software and Systems Engineering*; Addison Wesley 2003
 
 
@@ -215,14 +214,14 @@ Klassen und Objekte
 
     .. class:: incremental
 
-    (1) derselben Semantik, 
+    (1) derselben Semantik,
     (2) denselben Eigenschaften und
     (3) demselben Verhalten.
 
 .. container:: incremental margin-top-2em
 
-    D. h. eine Klasse definiert einen Typ. 
-    
+    D. h. eine Klasse definiert einen Typ.
+
     Konkrete Ausprägungen dieses Typs sind die Objekte.
 
 
@@ -240,7 +239,7 @@ Modellierung einer Party - Klassen\ [#]_
 
 .. supplemental::
 
-    Wir haben erst einmal nur die Klassen identifiziert/modelliert, die für Parties zentral sind. 
+    Wir haben erst einmal nur die Klassen identifiziert/modelliert, die für Parties zentral sind.
 
     Hierbei repräsentieren die Klassen verschiedene „Dinge“:
 
@@ -248,22 +247,22 @@ Modellierung einer Party - Klassen\ [#]_
     - Einen Gast, der an einer Party teilnimmt.
     - Ein Cocktail, welcher aus verschiedenen (konkreten) Zutaten besteht.
     - Ein Partyteilnehmer welcher eine Abstraktion für Gäste und Gastgeber darstellt.
-  
 
 
-Attribute 
+
+Attribute
 -------------------
 
 - Attribute sind logische Datenwerte eines Objekts und haben immer einen Datentyp.
 
 .. class:: list-with-explanations incremental
 
-- Die Attribute in einem Modell sollten vorzugsweise „primitive“ Datentypen sein. 
-  
- 
+- Die Attribute in einem Modell sollten vorzugsweise „primitive“ Datentypen sein.
 
-- Häufig macht es Sinn Mengen (x Liter, y Kilogramm, etc.) als Klassen zu modellieren, um Einheiten zuordnen zu können. 
-  
+
+
+- Häufig macht es Sinn Mengen (x Liter, y Kilogramm, etc.) als Klassen zu modellieren, um Einheiten zuordnen zu können.
+
   Z. B. sollte der Datentyp des Attributs „Betrag“ einer Zahlung die Währung angeben.
 
 .. class:: incremental
@@ -279,20 +278,20 @@ Attribute
 
 .. supplemental::
 
-    Sehr häufig betrachten wir als primitive Datentypen: Boolesche Werte (Boolean), Datumsangaben (:eng:`Date`), Zahlen (:eng:`Number`), Zeichen (:eng:`Character`), Strings, Adressen, Farben, Telefonnummern,... 
-    
+    Sehr häufig betrachten wir als primitive Datentypen: Boolesche Werte (Boolean), Datumsangaben (:eng:`Date`), Zahlen (:eng:`Number`), Zeichen (:eng:`Character`), Strings, Adressen, Farben, Telefonnummern,...
+
     Bitte bedenken Sie, dass wir auf Modellierungsebene nicht an technische Details gebunden sind.
 
 
 
 .. class:: transition-fade
 
-Modellierung einer Party - Attribute 
+Modellierung einer Party - Attribute
 ---------------------------------------------------------
 
 .. deck::
 
-    .. card:: 
+    .. card::
 
         .. image:: images/uml-cd/klassen.svg
             :alt: Klassen
@@ -310,25 +309,25 @@ Modellierung einer Party - Attribute
 
         .. image:: images/uml-cd/attribute_mit_default.svg
             :height: 1000px
-            :align: center    
+            :align: center
 
     .. card:: overlay
 
         .. image:: images/uml-cd/attribute_mit_mengen.svg
             :height: 1000px
-            :align: center            
+            :align: center
 
     .. card:: overlay
 
         .. image:: images/uml-cd/attribute_keine.svg
             :height: 1000px
-            :align: center            
-    
+            :align: center
+
     .. card:: overlay
 
         .. image:: images/uml-cd/attribute_abgeleitet.svg
             :height: 1000px
-            :align: center            
+            :align: center
 
 
 
@@ -339,13 +338,13 @@ Modellierung einer Party - Attribute
     :Syntax: [<Sichtbarkeit>] [ **/** ] <Attributname> [**:** <Datentyp>] [ **[** <Multiplizität> **\]** ] [ **=** <Defaultwert>]
 
     .. container:: smaller line-above
-            
+
         :Sichtbarkeiten:
 
           - **+** : public; d. h. alle Instanzen dürfen auf das Attribut zugreifen.
           - **-** : private; d. h. nur Instanzen der Klasse dürfen auf das Attribut zugreifen.
           - **#** : protected; d. h. nur Instanzen der Klasse und von Subklassen dürfen auf das Attribut zugreifen.
-          - **~** : package; d. h. nur Instanzen der Klasse und von Klassen im selben Package dürfen auf das Attribut zugreifen. 
+          - **~** : package; d. h. nur Instanzen der Klasse und von Klassen im selben Package dürfen auf das Attribut zugreifen.
           - Ist die Sichtbarkeit nicht explizit angegeben, so ist die typische Annahme **private**.
 
         :/: Bedeutet, dass das Attribut abgeleitet ist. Es kann aus anderen vorliegenden Daten jederzeit berechnet werden.
@@ -358,48 +357,48 @@ Modellierung einer Party - Attribute
 
 .. class:: transition-fade
 
-Modellierung einer Party - Operationen/Methoden 
+Modellierung einer Party - Operationen/Methoden
 ---------------------------------------------------------
 
 .. deck::
 
-    .. card:: 
+    .. card::
 
         .. image:: images/uml-cd/klassen.svg
             :alt: Klassen
             :height: 1000px
             :align: center
 
-    .. card:: overlay 
+    .. card:: overlay
 
         .. image:: images/uml-cd/attribute_einfach.svg
             :alt: Einfache Attribute
             :height: 1000px
             :align: center
 
-    .. card:: overlay 
+    .. card:: overlay
 
         .. image:: images/uml-cd/attribute_mit_default.svg
             :height: 1000px
-            :align: center    
+            :align: center
 
-    .. card:: overlay 
+    .. card:: overlay
 
         .. image:: images/uml-cd/attribute_mit_mengen.svg
             :height: 1000px
-            :align: center            
+            :align: center
 
-    .. card:: overlay 
+    .. card:: overlay
 
         .. image:: images/uml-cd/attribute_keine.svg
             :height: 1000px
-            :align: center            
-    
-    .. card:: overlay 
+            :align: center
+
+    .. card:: overlay
 
         .. image:: images/uml-cd/attribute_abgeleitet.svg
             :height: 1000px
-            :align: center            
+            :align: center
 
     .. card:: overlay fade-out
 
@@ -409,13 +408,13 @@ Modellierung einer Party - Operationen/Methoden
 
         .. image:: images/uml-cd/methoden_einfach.svg
             :height: 1000px
-            :align: center  
+            :align: center
 
     .. card:: overlay
 
         .. image:: images/uml-cd/methoden_mit_in_out.svg
             :height: 1000px
-            :align: center  
+            :align: center
 
 .. supplemental::
 
@@ -429,7 +428,7 @@ Modellierung einer Party - Operationen/Methoden
 
         :Sichtbarkeiten: (*wie bei Attributen*)
 
-        :Parameterliste: Die Liste der Parameter, die die Methode erwartet. 
+        :Parameterliste: Die Liste der Parameter, die die Methode erwartet.
 
             :Syntax: <Übergaberichtung> <Parametername> **:** <Datentyp> [ **[** <Multiplizität> **\]** ] [ **=** <Defaultwert>]
 
@@ -443,84 +442,84 @@ Modellierung einer Party - Operationen/Methoden
 
 .. class:: transition-fade
 
-Modellierung einer Party - Beziehungen 
+Modellierung einer Party - Beziehungen
 ---------------------------------------------------------
 
 .. deck::
 
-    .. card:: 
+    .. card::
 
         .. image:: images/uml-cd/klassen.svg
             :alt: Klassen
             :height: 1000px
             :align: center
 
-    .. card:: overlay 
+    .. card:: overlay
 
         .. image:: images/uml-cd/attribute_einfach.svg
             :alt: Einfache Attribute
             :height: 1000px
             :align: center
 
-    .. card:: overlay 
+    .. card:: overlay
 
         .. image:: images/uml-cd/attribute_mit_default.svg
             :height: 1000px
-            :align: center    
+            :align: center
 
-    .. card:: overlay 
+    .. card:: overlay
 
         .. image:: images/uml-cd/attribute_mit_mengen.svg
             :height: 1000px
-            :align: center            
+            :align: center
 
-    .. card:: overlay 
+    .. card:: overlay
 
         .. image:: images/uml-cd/attribute_keine.svg
             :height: 1000px
-            :align: center            
-    
-    .. card:: overlay 
+            :align: center
+
+    .. card:: overlay
 
         .. image:: images/uml-cd/attribute_abgeleitet.svg
             :height: 1000px
-            :align: center            
+            :align: center
 
-    .. card:: overlay 
+    .. card:: overlay
 
         .. image:: images/uml-cd/methoden_einfach.svg
             :height: 1000px
-            :align: center  
+            :align: center
 
     .. card:: overlay
 
         .. image:: images/uml-cd/methoden_mit_in_out.svg
             :height: 1000px
-            :align: center  
+            :align: center
 
     .. card:: overlay
 
         .. image:: images/uml-cd/assoziation_einfach.svg
             :height: 1000px
-            :align: center  
+            :align: center
 
     .. card:: overlay
 
         .. image:: images/uml-cd/assoziation_gerichtet.svg
             :height: 1000px
-            :align: center  
+            :align: center
 
     .. card:: overlay
 
         .. image:: images/uml-cd/assoziation_komposition.svg
             :height: 1000px
-            :align: center  
+            :align: center
 
     .. card:: overlay
 
         .. image:: images/uml-cd/assoziation_aggregation.svg
             :height: 1000px
-            :align: center  
+            :align: center
 
     .. card:: overlay
 
@@ -532,34 +531,34 @@ Modellierung einer Party - Beziehungen
 
         .. image:: images/uml-cd/assoziation_generalisierung.svg
             :height: 1000px
-            :align: center  
+            :align: center
 
     .. card:: overlay
 
         .. image:: images/uml-cd/benennung.svg
             :height: 1000px
-            :align: center  
+            :align: center
 
     .. card:: overlay
 
         .. image:: images/uml-cd/enumeration.svg
             :height: 1000px
-            :align: center  
+            :align: center
 
     .. card:: overlay
 
         .. image:: images/uml-cd/assoziationsklasse.svg
             :height: 1000px
-            :align: center  
+            :align: center
 
 .. supplemental::
 
-    Um zu beschreiben, wie Instanzen der Klassen miteinander in Verbindung stehen, unterscheiden wir folgende grundlegende Beziehungen:   
+    Um zu beschreiben, wie Instanzen der Klassen miteinander in Verbindung stehen, unterscheiden wir folgende grundlegende Beziehungen:
 
-    - **Assoziation**: Eine Assoziation beschreibt eine Beziehung zwischen zwei Klassen. Sie kann eine Richtung haben und eine Multiplizität. 
-  
+    - **Assoziation**: Eine Assoziation beschreibt eine Beziehung zwischen zwei Klassen. Sie kann eine Richtung haben und eine Multiplizität.
+
       Zwischen zwei Klassen können mehrere Assoziationen bestehen.
-      
+
       Eine Assoziation kann zyklisch sein.
 
       Am Ende einer Assoziation kann ein Name und eine Multiplizität stehen, die die Beziehung aus Sicht der Klasse am anderen Ende der Assoziation beschreiben.
@@ -570,24 +569,24 @@ Modellierung einer Party - Beziehungen
 
       - **Aggregation**: Eine Aggregation (:math:`\lozenge` „am Anfang“) ist eine spezielle Form der Assoziation, bei der eine Klasse eine andere Klasse besitzt.
 
-        Im Allgemeinen sind die Unterschiede zwischen Aggregation und Assoziation nicht eindeutig bzw. ausreichend definiert und es ist deswegen sinnvoll eine normale Assoziation zu wählen. 
+        Im Allgemeinen sind die Unterschiede zwischen Aggregation und Assoziation nicht eindeutig bzw. ausreichend definiert und es ist deswegen sinnvoll eine normale Assoziation zu wählen.
 
         Selbst einer der Autoren der UML Spezifikation hat bereits vor langer Zeit festgehalten:
 
         .. epigraph::
 
             In spite of the few semantics attached to aggregration, everbody thinks it is necessary (for differente reasons). Think of it as a modelling placebo.
-      
+
       - **Komposition**: Eine Komposition (:math:`\blacklozenge` „am Anfang“) ist eine spezielle Form der Aggregation, bei der die Lebensdauer des Besitzers die Lebensdauer des Besitzten bestimmt.
-    
+
           Im Beispiel ist modelliert, dass ein Cocktail aus mehreren Zutaten besteht. Weiterhin gilt, dass nach dem Genuss des Cocktails die Zutaten nicht mehr existieren.
 
-    - **Generalisierung**: Eine Klasse (:java:`Sub`) kann von einer anderen Klasse (:java:`Sup`) *erben* (:java:`Sub` :math:`\triangleright` :java:`Sup`). Die abgeleitete Klasse ist eine Spezialisierung der Basisklasse, die alle Attribute und Methoden der Basisklasse übernimmt und ggf. erweitert. 
-      
-      .. warning:: 
+    - **Generalisierung**: Eine Klasse (:java:`Sub`) kann von einer anderen Klasse (:java:`Sup`) *erben* (:java:`Sub` :math:`\triangleright` :java:`Sup`). Die abgeleitete Klasse ist eine Spezialisierung der Basisklasse, die alle Attribute und Methoden der Basisklasse übernimmt und ggf. erweitert.
 
-        Technisch ist es in den meisten Programmiersprachen möglich bestehendes Verhalten ggf. so zu verändern, dass es nicht mehr kompatibel ist mit dem Verhalten der Basisklasse. 
-        
+      .. warning::
+
+        Technisch ist es in den meisten Programmiersprachen möglich bestehendes Verhalten ggf. so zu verändern, dass es nicht mehr kompatibel ist mit dem Verhalten der Basisklasse.
+
         **Dies ist unter allen Umständen zu vermeiden, da es zu schwerwiegenden Fehlern führen kann.**
 
 
@@ -612,8 +611,8 @@ Modellierungsfehler
 
 .. supplemental::
 
-   Der schwerwiegende Modellierungsfehler, der in diesem Beispiel gemacht wurde, ist einfach. Es wurde bei der Modellierung vergessen, dass es bei der Programmierung ggf. nicht nur um mathematische Konzepte geht, sondern auch das Verhalten zu berücksichtigen ist. 
-   
+   Der schwerwiegende Modellierungsfehler, der in diesem Beispiel gemacht wurde, ist einfach. Es wurde bei der Modellierung vergessen, dass es bei der Programmierung ggf. nicht nur um mathematische Konzepte geht, sondern auch das Verhalten zu berücksichtigen ist.
+
    In Hinblick auf das Verhalten ist es falsch, dass ein Quadrat von einem Rechteck erbt. Ein Quadrat ist ein Spezialfall eines Rechtecks, bei dem die Seitenlängen gleich sind. Würden wir in unserem Code glauben, dass wir - zum Beispiel - die Breite eines Rechtecks verändern, da der Datentyp :java:`Rectangle` ist, sich hinter dem :java:`Rectangle` ein Objekt vom Typ :java:`Square` verbergen, dann würde sich auch die Höhe des :java:`Rectangle` verändern. Das ist nicht das Verhalten, das wir als Nutzer einer Instanz der Klasse erwarten würden.
 
 
@@ -625,7 +624,7 @@ Modellierungsfehler
 
 .. exercise:: Modellierung einer einfachen Bibliotheksverwaltung
 
-    Modellieren Sie eine einfache Bibliotheksverwaltung mit Hilfe eines Klassendiagramms. 
+    Modellieren Sie eine einfache Bibliotheksverwaltung mit Hilfe eines Klassendiagramms.
 
     - Es gibt Bücher, die von Autoren geschrieben werden.
     - Ein Buch kann in mehreren Exemplaren vorhanden sein.
@@ -633,14 +632,14 @@ Modellierungsfehler
     - Ein Autor hat einen Namen und ein Geburtsdatum.
     - Ein Exemplar hat eine eindeutige Nummer. Jedes Exemplar ist entweder ausgeliehen oder verfügbar.
     - Ein Ausleiher hat einen Namen und eine Adresse.
-    
+
     Modellieren Sie auch explizit die Beziehungen zwischen den Klassen - inkl. Multiplizitäten.
 
     .. solution::
         :pwd: Bibliotheksverwaltung
 
-        .. important:: 
-            
+        .. important::
+
             Es handelt sich nur um eine von vielen möglichen Modellierungen.
 
         .. image:: images/uml-cd-bib.svg
@@ -661,13 +660,13 @@ Modellierungsfehler
 
 .. exercise:: Modellierung eines einfachen Kursmanagementsystem
 
-    Im Folgenden wird ein Teil eines Kursmanagementsystems für Universitäten beschrieben. Setzen Sie das Modell in UML um. 
+    Im Folgenden wird ein Teil eines Kursmanagementsystems für Universitäten beschrieben. Setzen Sie das Modell in UML um.
 
     .. container:: smaller
 
-        - Eine Vorlesung hat immer einen Namen, eine Nummer und einen Raum. 
+        - Eine Vorlesung hat immer einen Namen, eine Nummer und einen Raum.
         - Manchmal hat eine Vorlesung auch Teilnehmer.
-        - Ein Dozent liest ggf. mehrere Vorlesungen. 
+        - Ein Dozent liest ggf. mehrere Vorlesungen.
         - Ein Student besucht in der Regel eine oder mehrere Vorlesungen.
         - Zu einer Vorlesung gibt es ggf. mehrere optionale Übungen.
         - Eine Prüfung kann entweder eine Klausur oder eine Portfolio-Prüfung sein. Letztere besteht aus einer Präsentation zu einem Thema und einer schriftlichen Ausarbeitung. Beide haben eine festgelegte Anzahl an Punkten. Die Endnote ergibt sich aus dem Durchschnitt der beiden Noten.
@@ -689,10 +688,10 @@ Modellierungsfehler
     Welche Methoden machen auf Ausdrücken immer Sinn und würden Sie dann in Ihrer Modellierung definieren?
 
     .. solution::
-        :pwd: ExprIstDieSuperklasse 
+        :pwd: ExprIstDieSuperklasse
 
-        Auch hier gibt es Variationsmöglichkeiten bei der Modellierung. Ein wesentlicher Aspekt, der sich in der Modellierung wiederspiegeln muss, ist, dass es sich um eine rekursive Datenstruktur handelt, die wir modellieren: ein bestimmter Ausdruck besteht aus einem (impliziten) Operator und einer Liste von Operanden, wobei die Operanden wieder Ausdrücken sein können. 
-        
+        Auch hier gibt es Variationsmöglichkeiten bei der Modellierung. Ein wesentlicher Aspekt, der sich in der Modellierung wiederspiegeln muss, ist, dass es sich um eine rekursive Datenstruktur handelt, die wir modellieren: ein bestimmter Ausdruck besteht aus einem (impliziten) Operator und einer Liste von Operanden, wobei die Operanden wieder Ausdrücken sein können.
+
         :math:`{x^2 + y^2}` könnte repräsentiert werden als ein Ausdruck vom Typ Addition, der auf zwei Ausdrücke vom Typ Potenz verweist, die wiederum auf Variablen (:math:`x` und :math:`y`) verweisen und zwei konkrete Zahlen (:math:`2`). Im Allgemeinen könnte natürlich auch der Exponent ein Ausdruck sein, der wiederum auf andere Ausdrücke verweist.
 
 
@@ -728,14 +727,14 @@ Beispiel: Sequenzdiagram für ein Alarmsystem
         .. image:: images/uml-sd/alarm.svg
             :alt: Zustände
             :height: 1000px
-            :align: center            
+            :align: center
 
     .. card:: overlay
 
         .. image:: images/uml-sd/2nd_alarm.svg
             :alt: Zustände
             :height: 1000px
-            :align: center            
+            :align: center
 
 
 .. supplemental::
@@ -764,10 +763,10 @@ Beispiel: Sequenzdiagram für ein Alarmsystem
     - Ein Gast bestellt einen Cocktail beim Barkeeper.
     - Der Barkeeper bereitet dann den Cocktail zu, indem er erst die Zutaten hinzufügt und danach diese fachgerecht mixt. Sobald er fertig ist, überreicht er den Cocktail an den Gast.
     - Da der Gast sehr durstig ist, trinkt er den Cocktail in einem Zug aus.
-  
+
     Hinweis: es gibt mehrere Möglichkeiten, wie das obige Szenario modelliert werden kann, da nicht alles explizit vorgegeben ist. Treffen Sie eine bewusste Entscheidung, wie Sie das Szenario modellieren.
 
-    .. solution:: 
+    .. solution::
         :pwd: Bestellung_Eines#Cocktails
 
         Ein mögliches Sequenzdiagramm für die Bestellung eines Cocktails. In diesem Fall darf der Gast zum Beispiel weiterfeiern, nachdem er den Cocktail bestellt hat. Er muss nicht auf die Fertigstellung des Cocktails warten.
@@ -777,7 +776,7 @@ Beispiel: Sequenzdiagram für ein Alarmsystem
             :width: 600px
             :align: center
 
-        
+
 
 
 .. class:: new-section transition-move-to-top
@@ -791,7 +790,7 @@ Beispiel: Zustandsautomat für einen Partyteilnehmer
 
 .. deck::
 
-    .. card:: 
+    .. card::
 
         .. image:: images/uml-state/compartment.svg
             :alt: Compartment
@@ -842,7 +841,7 @@ Beispiel: Zustandsautomat für einen Partyteilnehmer
 
 .. supplemental::
 
-    Ein Zustandsautomat beschreibt das Verhalten eines Objekts in Abhängigkeit von seinem Zustand. 
+    Ein Zustandsautomat beschreibt das Verhalten eines Objekts in Abhängigkeit von seinem Zustand.
 
     Ein Zustandsautomat besteht aus:
 
@@ -855,17 +854,17 @@ Beispiel: Zustandsautomat für einen Partyteilnehmer
 
         Es gibt mindestens zwei ausgehende Transitionen.
 
-        Dargestellt mit einer Raute (◊). 
+        Dargestellt mit einer Raute (◊).
 
-    :Terminator: 
-        Beendet (auch) einen Zustandsautomaten. 
-        
+    :Terminator:
+        Beendet (auch) einen Zustandsautomaten.
+
         Beendet die Lebensdauer des Zustandsautomaten. (In diesem Fall könnte man dies so interpretieren, dass der Partyteilnehmer die Party verlässt/rausgeworfen wird und wir uns auch nicht weiter für den Partyteilnehmer interessieren.)
 
         Dargestellt mit einem großen X.
-    
-    :Transitionen (Übergänge): 
-        Verbinden Zustände und Entscheidungen. 
+
+    :Transitionen (Übergänge):
+        Verbinden Zustände und Entscheidungen.
 
         :Syntax: Trigger [Guard] / Verhalten
 
@@ -875,8 +874,8 @@ Beispiel: Zustandsautomat für einen Partyteilnehmer
 
 
     - Zuständen und Übergängen dazwischen
-    - Ereignissen, die einen Übergang auslösen, 
-    - Aktionen (``entry``, ``exit``, ``do``), die ausgeführt werden, 
+    - Ereignissen, die einen Übergang auslösen,
+    - Aktionen (``entry``, ``exit``, ``do``), die ausgeführt werden,
     - Start- und Endzuständen.
     - Entscheidungsknoten
 
@@ -893,12 +892,12 @@ Beispiel: Zustandsautomat für einen Partyteilnehmer
 
 .. exercise:: Modellieren Sie den Zustandsautomaten für einen Zimmerventilator.
 
-    - Der Ventilator kann in drei Zuständen sein: „Aus“, „Stufe 1“, „Stufe 2“. 
-    - Der Endzustand ist der Zustand „Aus“. 
+    - Der Ventilator kann in drei Zuständen sein: „Aus“, „Stufe 1“, „Stufe 2“.
+    - Der Endzustand ist der Zustand „Aus“.
     - Zwischen Stufe 1 und Stufe 2 kann beliebig oft hin und her gewechselt werden.
     - In Stufe 1 dreht der Ventilator langsam, in Stufe 2 schnell.
-    
-    .. solution:: 
+
+    .. solution::
         :pwd: DerVentilatorDrehtNoch
 
         Modellierung eines Zimmerventilator mit zwei Zuständen für Stufe 1 und Stufe 2.

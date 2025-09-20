@@ -1,5 +1,4 @@
 .. meta::
-    :version: renaissance
     :author: Michael Eichberg
     :keywords: Projekt, Teambuilding
     :description lang=de: Teambuilding
@@ -7,7 +6,7 @@
     :first-slide: last-viewed
 
 .. include:: ../docutils.defs
-    
+
 
 
 Teambuilding im Projekt
@@ -19,11 +18,11 @@ Teambuilding im Projekt
 
 .. supplemental::
 
-  :Folien: 
+  :Folien:
       [HTML] |html-source|
 
       [PDF] |pdf-source|
-      
+
   :Fehler melden:
       https://github.com/Delors/delors.github.io/issues
 
@@ -35,25 +34,25 @@ Materialien für die Marshmallow-Challenge
 .. grid::
 
     .. cell:: width-70
-    
-        .. image:: images/tape.webp 
+
+        .. image:: images/tape.webp
             :alt: Tape
             :align: right
             :width: 275
 
-        .. image:: images/rope.webp 
+        .. image:: images/rope.webp
             :alt: Rope
             :align: center
             :width: 575
-            
+
         .. image:: images/marshmallow.webp
             :alt: Marshmallow
             :align: center
             :width: 250
 
     .. cell:: width-30
-    
-        .. image:: images/spaghetti.webp 
+
+        .. image:: images/spaghetti.webp
             :alt: Spaghetti
             :align: center
             :height: 1000
@@ -71,8 +70,8 @@ Marshmallow-Challenge
 
 - Es gewinnt die Gruppe, die das höchste Gebäude in 18min baut.
 
-.. remark:: 
-    :class: incremental 
+.. remark::
+    :class: incremental
 
     - Wer nach dem Ablauf der Zeit noch am Gebäude baut wird disqualifiziert.
 
@@ -83,7 +82,7 @@ Marshmallow-Challenge
     - Die Höhe wird gemessenen von der Unterkante der untersten Spaghetti bis zur Oberkante des Marshmallow.
 
 .. supplemental::
-    
+
     **Hintergrund**
 
     Die Marshmallow-Herausforderung dient dazu die Innovations- und Problemlösungsfähigkeiten des Teams zu entwickeln/zu verbessern und hilft auch die Zusammenarbeit und Kommunikation im Team zu verbessern.
@@ -99,7 +98,7 @@ Marshmallow-Challenge
 Ein mögliches Gebäude
 ------------------------
 
-.. image:: images/gebaeude.webp 
+.. image:: images/gebaeude.webp
     :alt: Ein mögliches Gebäude
     :align: center
     :width: 800px
