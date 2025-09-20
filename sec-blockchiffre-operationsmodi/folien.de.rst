@@ -1,5 +1,4 @@
 .. meta::
-    :version: renaissance
     :author: Michael Eichberg
     :keywords: Blockchiffren, Operationsmodi, ECB, CBC, CFB, OFB, CTR, XTS-AES
     :description lang=en: Block Cipher Operations

@@ -1,5 +1,4 @@
 .. meta::
-    :version: renaissance
     :author: Michael Eichberg
     :keywords: "IT Sicherheit", Passwortsicherheit
     :description lang=de: Sicherheit von Passwörtern

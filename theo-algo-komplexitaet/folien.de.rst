@@ -1,5 +1,4 @@
 .. meta::
-    :version: renaissance
     :lang: de
     :author: Michael Eichberg
     :keywords: "Komplexität", "Algorithmen"
@@ -1233,7 +1232,7 @@ Approximation von Laufzeiten
 
     Für die Approximation sei ein Rechner mit 4 GHz Taktrate angenommen und ein Rechenschritt soll einen Takt benötigen.
 
-    .. container:: 
+    .. container::
 
         Verwendete Abkürzungen:
 
@@ -2091,15 +2090,15 @@ Rekurrenzgleichung für rekursiv teilende Algorithmen
         - :math:`{n \over b}`: die Größe jedes rekursiven Unterproblems wobei  :math:`b` die Anzahl der Teile ist in die das Problem geteilt wird,
         - :math:`f(n)`: der Aufwand während der Ausführung (z. B. der Aufwand für das Teilen der Eingabedaten und das Zusammenführen der Teillösungen).
 
-    
+
       .. container:: incremental
-         
+
          .. math::
 
             T(n) = a \cdot T\left({n \over b}\right) + f(n)
 
 
-    .. container:: incremental 
+    .. container:: incremental
 
         In diesem Fall können drei Fälle unterschieden identifiziert werden:
 

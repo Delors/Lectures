@@ -1,5 +1,4 @@
 .. meta::
-    :version: renaissance
     :author: Michael Eichberg
     :keywords: "Projektkonzeption" und "Projektrealisierung"
     :description lang=de: Projektkonzeption und Projektrealisierung

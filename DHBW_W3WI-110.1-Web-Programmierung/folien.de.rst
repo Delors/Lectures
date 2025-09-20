@@ -1,5 +1,4 @@
 .. meta::
-    :version: renaissance
     :author: Michael Eichberg
     :keywords: "JavaScript", "CSS", "HTML"
     :description lang=de: Web Programmierung
@@ -132,8 +131,8 @@ Bewertung (max. 70 Punkte)
   :class: font-size-90
 
   :Responsiveness: max 5 Punkte (d. h. die Anwendung passt sich an verschiedene Bildschirmgrößen an, z.B. Desktop, Tablet, Smartphone)
-  :Internationalisierung: 
-  
+  :Internationalisierung:
+
     max 5 Punkte (d. h. Unterstützung von mind. 2 Sprachen wird geboten)
 
   :Cheatingpräventation: max 5 Punkte (d. h. Maßnahmen zur Verhinderung von Betrug, z.B. durch Validierung von Eingaben, Überprüfung von Spielständen)
@@ -153,10 +152,10 @@ Ablauf
 
     :8.10: Individuelle Hilfe bei der Entwicklung
 
-    :15.10.: 
-    
-          Code Präsentationen/Diskussion - HTML und CSS 
-          
+    :15.10.:
+
+          Code Präsentationen/Diskussion - HTML und CSS
+
           Pro Person 9-10 Minuten - Aufteilung ca. 50/50; max 40/60.
 
           Abgabe ist bereits eingerichtet (Deadline siehe Moodle!). Es kann ein Zip-Archiv und ggf. ein PDF hochgeladen werden.
@@ -169,8 +168,8 @@ Ablauf
 
             Bzgl. des CSS ist insbesondere die Strukturierung/Modularisierung darzustellen und wie ein konsistentes Layout (über Browserversionen hinweg) erreicht wurde. Darüber hinaus ist insbesondere der Code, der mit dem Layout in Verbindung steht (display, position, margin, padding etc. Eigenschaften) zu erläutern.
 
-    :22.10.: 
-          
+    :22.10.:
+
           Code Präsentationen/Diskussion - JavaScript
 
           Zur Darstellung des Kommunikationsflusses zwischen Client und Server dürfen gerne ergänzende Diagramme (insbesondere UML Sequenzdiagramme) verwendet werden.
@@ -198,7 +197,7 @@ Ablauf
 .. supplemental::
 
   .. attention::
-    
+
     Wenn Sie den Code aus Ihrem Editor heraus präsentieren, dann stellen Sie sicher, dass Ihr Theme einen guten Kontrast auf einem Projektor liefert und alles gut lesbar ist!
 
 
@@ -207,4 +206,3 @@ Einsatz von KI
 ------------------------------------------
 
 Der Einsatz von KI-Tools (z.B. ChatGPT, GitHub Copilot) ist erlaubt, solange die Spiele den Anforderungen entsprechen und :emph:`vollständig eigenständig` präsentiert werden können!
-

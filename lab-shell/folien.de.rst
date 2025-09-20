@@ -1,5 +1,4 @@
 .. meta::
-    :version: renaissance
     :author: Michael Eichberg
     :keywords: "Linux", Shell, "Kommandozeile", "Unix", "Bash", "Scripting", "Administration"
     :description lang=de: Einführung in die Linux Shell und Verwendung von Kommandozeilenwerkzeugen auf Linux Systemen

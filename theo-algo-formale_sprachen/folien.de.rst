@@ -1,7 +1,6 @@
 .. include:: ../docutils.defs
 
 .. meta::
-    :version: renaissance
     :lang: de
     :author: Michael Eichberg
     :keywords: Formale Sprachen, Gödelnummern, Chomsky Hierarchie, Alphabete, Sprachen, Abzählbarkeit
@@ -1514,7 +1513,7 @@ Englische Grammatik (Beispielhaft)
         .. container:: incremental
 
             .. math::
-                
+
 
                 \underbrace{ %
                 \underbrace{ %
@@ -1802,7 +1801,7 @@ Grammatiken für die vorhergehenden Beispiele
         .. container:: incremental
 
           .. math::
-          
+
             \begin{array}{rcl}
             G & = & (V ,T ,R,S) \\
             V & = & \{\text{Start},\text{A}\} \\
@@ -1818,7 +1817,7 @@ Grammatiken für die vorhergehenden Beispiele
         :math:`M_2 = \{0^n1^n |n ∈ \mathbb{N}\}= \{01,0011,000111,...\}= L(G )`:
 
         .. container:: incremental
-            
+
           .. math::
 
             \begin{array}{rcl}
@@ -1835,7 +1834,7 @@ Grammatiken für die vorhergehenden Beispiele
         :math:`M_1 = \{0^n1^n2^n |n ∈ \mathbb{N}\}= \{012,001122,000111222,...\}= L(G )`:
 
         .. container:: incremental
-            
+
           .. math::
 
             \begin{array}{rcl}
@@ -2405,7 +2404,7 @@ Zwei Grammatiken für Terme wie :math:`{\color{red}1+ 2 * 3} ∈ L(G1) = L(G2)`:
             \end{array}
 
       .. container:: incremental
-            
+
         .. math::
 
             \underbrace{%
@@ -2425,7 +2424,7 @@ Zwei Grammatiken für Terme wie :math:`{\color{red}1+ 2 * 3} ∈ L(G1) = L(G2)`:
             \end{array}
 
       .. container:: incremental
-            
+
         .. math::
 
             \underbrace{%

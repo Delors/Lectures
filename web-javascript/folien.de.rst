@@ -1,5 +1,4 @@
 .. meta::
-   :version: renaissance
    :author: Michael Eichberg
    :keywords: Web Programmierung, JavaScript, ECMAScript
    :description lang=de: Webprogrammierung mit JavaScript

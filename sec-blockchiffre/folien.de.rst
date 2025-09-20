@@ -1,5 +1,4 @@
 .. meta::
-    :version: renaissance
     :author: Michael Eichberg
     :keywords: Blockverschlüsselung, Blockchiffren, DES, Feistel
     :description lang=en: Block Ciphers

@@ -1,7 +1,6 @@
 .. include:: ../docutils.defs
 
 .. meta::
-    :version: renaissance
     :author: Michael Eichberg
     :keywords: "Organisation"
     :description lang=de: Organisatorisches bzgl. IT-Security
@@ -23,7 +22,7 @@ Veranstaltung
 --------------------------------------------
 
 :Umfang: 25 VL (Modul 50VL)
-:Inhalt: 
+:Inhalt:
 
     .. rubric:: Hauptthemen
 

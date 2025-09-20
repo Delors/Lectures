@@ -1,5 +1,4 @@
 .. meta::
-    :version: renaissance
     :author: Michael Eichberg
     :keywords: Distributed Systems, Lecture, Planning, Organization
     :description lang=de: Distributed Systems

@@ -1,5 +1,4 @@
 .. meta::
-    :version: renaissance
     :author: Michael Eichberg
     :keywords: IT Sicherheit, Verschlüsselung, Authentifizierung, Signaturen
     :description lang=de: Vertiefung IT Security - IT Schulung (1 Tag)

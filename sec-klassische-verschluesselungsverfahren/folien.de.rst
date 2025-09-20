@@ -1,5 +1,4 @@
 .. meta::
-    :version: renaissance
     :author: Michael Eichberg
     :keywords: Verschlüsselung, Vernam, Vigenère, Caesar, Hill, Playfair, Steganographie
     :description lang=en: Classical Encryption Techniques

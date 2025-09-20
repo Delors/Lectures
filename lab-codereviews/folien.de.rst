@@ -1,5 +1,4 @@
 .. meta::
-    :version: renaissance
     :author: Michael Eichberg
     :keywords: Code Review, HTML, CSS
     :description lang=de: Einführung in Code Reviews mit dem besonderen Schwerpunkt Webtechnologien (HTML, CSS und JavaScript)
@@ -135,8 +134,8 @@ Code Review von CSS
     - Werden Tools eingesetzt, um bei der Formatierung bzw. dem Linting zu helfen.
     - Wird modernes CSS verwendet?
 
-      (Dies gilt immer in Hinblick auf die Zielplattformen/Browserversionen.) 
-    
+      (Dies gilt immer in Hinblick auf die Zielplattformen/Browserversionen.)
+
 
 
 

@@ -1,5 +1,4 @@
 .. meta::
-    :version: renaissance
     :author: Michael Eichberg
     :keywords: "CWE", "OWASP"
     :description lang=de: Verteilte Systeme

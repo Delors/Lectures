@@ -1,5 +1,4 @@
 .. meta::
-    :version: renaissance
     :author: Michael Eichberg
     :keywords: Java, Concurrency
     :description lang=de: Nebenläufigkeit in Java

@@ -1,5 +1,4 @@
 .. meta::
-    :version: renaissance
     :author: Michael Eichberg
     :keywords: Nutzerauthentifizierung, Challenge-Response-Authentifizierung, Fiat-Shamir-Transformation
     :description lang=en: User Authentification

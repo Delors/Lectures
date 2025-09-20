@@ -1,5 +1,4 @@
 .. meta::
-    :version: renaissance
     :author: Michael Eichberg
     :keywords: "Authentifizierte Verschlüsselung", AES-GCM
     :description lang=en: Authenticated Encryption

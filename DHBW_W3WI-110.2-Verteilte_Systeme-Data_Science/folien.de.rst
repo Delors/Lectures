@@ -1,11 +1,10 @@
 .. meta::
-    :version: renaissance
     :author: Michael Eichberg
     :keywords: "Verteilte Systeme"
     :description lang=de: Verteilte Systeme
     :id: lecture-w3wi_110.2-verteilte_systeme_data_science
     :first-slide: last-viewed
-    
+
 .. include:: ../docutils.defs
 
 
@@ -25,7 +24,7 @@ Kerninhalte gem. MHB
 - Terminologie, Konzepte, Architekturen, Anforderungsprofile und Architekturmodelle für verteilte Systeme
 - Entwurfs- und Implementierungsansätze
 - Vergleich unterschiedlicher Middleware-Konzepte
-- Synchrone und asynchrone Kommunikation, entfernter Methodenaufruf 
+- Synchrone und asynchrone Kommunikation, entfernter Methodenaufruf
 - Asynchrone Kommunikation und Messaging-Systeme
 - Sicherheitsaspekte in verteilten Systemen
 
@@ -62,7 +61,7 @@ Vorträge - Themen (inkl. Einstiegslinks)
 ------------------------------------------
 
 - `Paxos <https://en.wikipedia.org/wiki/Paxos_(computer_science)>`__
-- `Raft Consensus Algorithm <https://raft.github.io>`__ 
+- `Raft Consensus Algorithm <https://raft.github.io>`__
 - `Gossip Protokoll <https://highscalability.com/gossip-protocol-explained/>`__
 - `gRPC <https://grpc.io>`__
 - `AMQP <https://en.wikipedia.org/wiki/Advanced_Message_Queuing_Protocol>`__

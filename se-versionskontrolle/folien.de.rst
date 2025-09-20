@@ -1,5 +1,4 @@
 .. meta::
-    :version: renaissance
     :author: Michael Eichberg
     :keywords: "Git", "Versionskontrolle"
     :description lang=de: Software Engineering - Versionskontrolle und Git

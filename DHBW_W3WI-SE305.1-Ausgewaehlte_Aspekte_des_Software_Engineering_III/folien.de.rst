@@ -1,5 +1,4 @@
 .. meta::
-    :version: renaissance
     :author: Michael Eichberg
     :keywords: "IT Sicherheit", "Ausgewählte Aspekte des Software Engineering III"
     :description lang=de: Einführung in ausgewählte Konzepte der IT Sicherheit

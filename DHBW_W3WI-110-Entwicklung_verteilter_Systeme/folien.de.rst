@@ -1,5 +1,4 @@
 .. meta::
-    :version: renaissance
     :author: Michael Eichberg
     :keywords: "Web-Engineering", "Verteilte Systeme"
     :description lang=de: Entwicklung verteilter Systeme

@@ -1,5 +1,4 @@
 .. meta::
-    :version: renaissance
     :author: Michael Eichberg
     :keywords: Public-key Cryptography
     :description lang=en: Public-Key Cryptography and RSA

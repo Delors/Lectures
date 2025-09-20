@@ -1,5 +1,4 @@
 .. meta::
-    :version: renaissance
     :author: Michael Eichberg
     :keywords: "IT Sicherheit", "Reverse Engineering"
     :description lang=de: Fortgeschrittene Angewandte IT Sicherheit

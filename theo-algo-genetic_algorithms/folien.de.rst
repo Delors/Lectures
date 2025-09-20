@@ -1,5 +1,4 @@
 .. meta::
-    :version: renaissance
     :lang: de
     :author: Michael Eichberg
     :keywords: genetische Algorithmen, Python
@@ -150,14 +149,14 @@ Ablauf von genetischen Algorithmen
 
 1. Erzeugen einer zufälligen Population
 
-.. class:: incremental-list 
+.. class:: incremental-list
 
 2. Miss die *Fitness* der Individuen, wenn einer den Zielwert erreicht, beende den Algorithmus und gib das Individuum zurück
 3. Wähle einige Individuen aus, die sich fortpflanzen - bevorzuge die Fitteren mit einer höheren Wahrscheinlichkeit
 4. Kombiniere die ausgewählten Individuen, um neue Individuen zu erzeugen
 5. Mutiere einige Individuen, um die neue Generation zu vervollständigen
 
-.. class:: incremental-list 
+.. class:: incremental-list
 
 6. Wiederhole die Schritte 2-5 für eine bestimmte Anzahl von Generationen
 
@@ -185,7 +184,7 @@ Selektionsstrategien von Chromosomen
 
 .. rubric:: Bestimmung der Chromosomen, die überleben und sich ggf. fortpflanzen.
 
-.. story:: 
+.. story::
 
     .. rubric:: Auswahlstrategien
 
@@ -359,7 +358,7 @@ SEND+MORE=MONEY - Umsetzung
 
             Somit kann durch die Verschiebung der Buchstaben in der Liste der assoziierte Wert geändert werden.
 
-    .. card:: 
+    .. card::
 
         .. rubric:: Klasse für Chromosomen
 
@@ -370,7 +369,7 @@ SEND+MORE=MONEY - Umsetzung
             :end-before: # The fitness function
 
 
-    .. card:: 
+    .. card::
 
         .. rubric:: Erzeugen von Individuen bzw. Chromosomen
 
@@ -401,7 +400,7 @@ SEND+MORE=MONEY - Umsetzung
 
         **Idee**: pro Nachkommen sicherstellen, dass einige Buchstaben Indizes (d. h. Wertzuordnungen) von einem Elternteil und einige vom anderen Elternteil stammen.
 
-        .. container:: 
+        .. container::
 
             **Beispiel** (verkürzt):
 
@@ -454,7 +453,7 @@ SEND+MORE=MONEY - Umsetzung
 
                 \text{maximiere}\left(\frac{1} { |money - (send + more)| + 1 }\right)\\
 
-        .. container:: incremental 
+        .. container:: incremental
 
             Beispiel: Sei die Differenz :math:`1`, dann ist die Fitness :math:`1/2`; bei einer Differenz von :math:`0` ist die Fitness :math:`1` und somit maximal.
 
@@ -481,7 +480,7 @@ SEND+MORE=MONEY - Umsetzung
 
         .. rubric:: Exemplarische Ausführungen zeigt stochastische Natur
 
-        .. container:: 
+        .. container::
 
             *1. Lauf (237 Generationen)*
 

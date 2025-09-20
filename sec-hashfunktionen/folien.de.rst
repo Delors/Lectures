@@ -1,5 +1,4 @@
 .. meta::
-    :version: renaissance
     :author: Michael Eichberg
     :keywords: Kryptografische Hash Funktionen, SHA
     :description lang=en: Cryptographic Hash Functions

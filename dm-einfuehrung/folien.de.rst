@@ -1,5 +1,4 @@
 .. meta::
-    :version: renaissance
     :author: Michael Eichberg
     :keywords: "Dokumenten Management"
     :description lang=de: "Einführung in das Dokumenten Management"

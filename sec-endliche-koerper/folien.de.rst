@@ -1,5 +1,4 @@
 .. meta::
-    :version: renaissance
     :author: Michael Eichberg
     :keywords: Gruppen, Ringe, Körper, Polynomarithmetik, endliche Körper
     :description lang=en: (Finite) Fields

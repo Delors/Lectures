@@ -1,5 +1,4 @@
 .. meta::
-    :version: renaissance
     :author: Michael Eichberg
     :keywords: "Organisation", "Grundlagen IT-Sicherheit und Datenschutz"
     :description lang=de: Organisation der Lehrveranstaltung Grundlagen IT-Sicherheit und Datenschutz

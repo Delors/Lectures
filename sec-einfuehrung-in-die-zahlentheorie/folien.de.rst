@@ -1,6 +1,5 @@
 
 .. meta::
-    :version: renaissance
     :author: Michael Eichberg
     :keywords: Zahlentheorie, Primzahlen, Teilbarkeit, Totientenfunktion, Euklidischer Algorithmus
     :description lang=en: Introduction to Number Theory
@@ -66,7 +65,7 @@ Teilbarkeit
 Eigenschaften der Teilbarkeit
 -------------------------------
 
-.. deck:: 
+.. deck::
 
     .. card::
 
@@ -715,7 +714,7 @@ Erweiterter Euklidischer Algorithmus - Systematische Berechnung für :math:`ggt(
 
 
         .. container:: incremental
-            
+
             :math:`\Rightarrow x = 7` und :math:`y = -16`
 
 

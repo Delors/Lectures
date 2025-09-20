@@ -1,5 +1,4 @@
 .. meta::
-    :version: renaissance
     :author: Michael Eichberg
     :keywords: "Verteilte Systeme"
     :description lang=de: Verteilte Systeme

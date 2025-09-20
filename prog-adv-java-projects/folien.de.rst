@@ -1,5 +1,4 @@
 .. meta::
-    :version: renaissance
     :lang: de
     :author: Michael Eichberg
     :keywords: "Projekt", "Java"
@@ -7,7 +6,7 @@
     :id: lecture-prog-adv-java-projekte
     :first-slide: last-viewed
     :master-password: WirklichSchwierig!
-    
+
 .. include:: ../docutils.defs
 
 .. |newton-code.zip| source:: code/newton-code.zip
@@ -26,24 +25,24 @@ Eine kurze Einführung
 
 .. supplemental::
 
-    :Folien: 
-        
-        |html-source| 
+    :Folien:
+
+        |html-source|
 
         |pdf-source|
 
     :Fehler melden:
         https://github.com/Delors/delors.github.io/issues
-     
+
     :Kontrollfragen:
 
-        .. source:: kontrollfragen.de.rst 
+        .. source:: kontrollfragen.de.rst
             :path: relative
             :prefix: https://delors.github.io/
             :suffix: .html
 
 
-.. class:: new-section 
+.. class:: new-section
 
 Java Projekte bauen
 ------------------------------------------------
@@ -63,14 +62,14 @@ Ziele
 3. **Paketieren** des Quellcodes (.jar oder .war Datei erzeugen inkl. *aller* Abhängigkeiten)
 4. **Dokumentation** erstellen
 5. **Reports** erstellen (z.B. Testabdeckung, Code-Qualität)
-6. ... und vieles mehr, dass dann aber häufig Projektabhängig ist.   
+6. ... und vieles mehr, dass dann aber häufig Projektabhängig ist.
 
 
 .. attention::
     :class: incremental
 
-    Ein wichtiges Meta-Ziel ist es, das Bauen der Software zu automatisieren und zu vereinfachen und *stabile Builds zu gewährleisten*. 
-    
+    Ein wichtiges Meta-Ziel ist es, das Bauen der Software zu automatisieren und zu vereinfachen und *stabile Builds zu gewährleisten*.
+
     .. container:: peripheral
 
         D. h. zwei Entwickler, die das selbe Projekt auf unterschiedlichen Rechnern mit initial ggf. unterschiedlichen Versionen installierter Werkzeuge und Bibliotheken bauen, sollten dennoch das selbe Ergebnis erhalten.
@@ -82,7 +81,7 @@ Etablierte Build-Tools
 
 .. class:: incremental-list
 
-- :obsolete:`Ant`\ [#]_  
+- :obsolete:`Ant`\ [#]_
 - **Maven**
 - Gradle
 - :peripheral:`sbt`
@@ -109,14 +108,14 @@ Konvention, die praktisch über alle Build-Tools und IDEs hinweg gilt\ [#]_:
 - Ressourcen im Verzeichnis ``src/main/resources``
 - Testressourcen im Verzeichnis ``src/test/resources``
 - Konfigurationen und andere Ressourcen im Verzeichnis ``src/main/resources``
-- gebaute Artefakte im Verzeichnis ``target`` 
+- gebaute Artefakte im Verzeichnis ``target``
 
 .. [#] Andere Sprachen verwenden häufig ähnliche Strukturen. (Selbstverständlich, wird ``java``  dann durch den Namen der entsprechenden Sprache ersetzt.)
 
 
 .. class:: new-section transition-move-to-top
 
-Maven 
+Maven
 -----------------------------------------------
 
 .. class:: section-subtitle
@@ -133,7 +132,7 @@ Maven ermöglicht es, den Rumpf für ein Java-Projekt mit einer einfachen Befehl
 .. code:: console
     :class: copy-to-clipboard
 
-    mvn archetype:generate \    
+    mvn archetype:generate \
         -DgroupId=com.mycompany.app \
         -DartifactId=my-app \
         -DarchetypeArtifactId=maven-archetype-quickstart \
@@ -178,7 +177,7 @@ Maven - Build Phasen
 
         :validate: überprüfen, ob das Projekt korrekt konfiguriert ist
         :compile: kompilieren des Quellcodes des Projekts
-        :test: testet den kompilierten Quellcode mit einem geeigneten Unit-Testing-Framework. 
+        :test: testet den kompilierten Quellcode mit einem geeigneten Unit-Testing-Framework.
         :package: den kompilierten Code in ein verteilbares Format, z. B. ein JAR, verpacken.
         :integration-test: Verarbeitet  das Paket und stellt es, wenn nötig, in einer Umgebung bereit, in der Integrationstests ausgeführt werden können.
         :deploy: bereitstellen in einer Integrations- oder Release-Umgebung
@@ -209,7 +208,7 @@ Beispiel Build-Konfiguration für ein Java Projekt
 
     .. class:: incremental
 
-    .. rubric:: TestCode (in ``src/test/java/<package>/<class>.java``) 
+    .. rubric:: TestCode (in ``src/test/java/<package>/<class>.java``)
 
     .. container:: incremental
 
@@ -220,7 +219,7 @@ Beispiel Build-Konfiguration für ein Java Projekt
         .. include:: code/hello/src/test/java/de/dhbw/HelloYouTest.java
             :code: java
             :number-lines: 10
-            :class: copy-to-clipboard 
+            :class: copy-to-clipboard
             :start-after: import java.io.PrintStream;
             :end-before: @BeforeEach
 
@@ -362,15 +361,15 @@ Projekt bauen und ausführen
 
 
 
-.. class:: exercises 
+.. class:: exercises
 
-Übung 
+Übung
 ------------------------------------------------
 
 .. scrollable::
 
     .. exercise:: Build-Konfiguration eines Java Projekts
-        
+
         (Falls Maven (``mvn``) noch nicht installiert ist, installieren Sie es.)
 
         - entpacken Sie das Projekt |newton-code.zip|.
@@ -383,7 +382,7 @@ Projekt bauen und ausführen
         - Schauen Sie sich die erzeugten Artefakte an.
         - Testen Sie ob Sie die Anwendung mit ``java -jar target/newton-1.0-SNAPSHOT.jar`` starten können.
 
-        .. rubric:: Weiterführende Aufgaben 
+        .. rubric:: Weiterführende Aufgaben
 
         (In diesem Fall ist es Ihrer Aufgabe zu recherchieren wie die Einbindung/Konfiguration zu erfolgen hat.)
 
@@ -402,9 +401,3 @@ Projekt bauen und ausführen
             .. include:: code/newton/pom.xml
                 :code: xml
                 :number-lines:
-
-
-
-        
-
-

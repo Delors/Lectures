@@ -1,5 +1,4 @@
 .. meta::
-    :version: renaissance
     :author: Michael Eichberg
     :keywords: "Dokumentenmanagement", Dokumentenindizierung, Dokumentenerfassung
     :description lang=de: "Dokumentenerfassung und -indizierung"

@@ -1,5 +1,4 @@
 .. meta::
-    :version: renaissance
     :author: Michael Eichberg
     :keywords: "Fortgeschrittene Informatik"
     :description lang=de: Verteilte Systeme und Web-Entwicklung

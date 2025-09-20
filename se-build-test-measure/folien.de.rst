@@ -1,5 +1,4 @@
 .. meta::
-    :version: renaissance
     :author: Michael Eichberg
     :keywords: "Testen", "Abdeckung", Metriken
     :description lang=de: Software Engineering - Testen und Metriken

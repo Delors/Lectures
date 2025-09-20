@@ -1,5 +1,4 @@
 .. meta::
-    :version: renaissance
     :author: Michael Eichberg
     :keywords: "Web Programmierung", "XML", "XPath"
     :description lang=de: XML, XPath

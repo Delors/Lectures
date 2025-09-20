@@ -1,5 +1,4 @@
 .. meta::
-    :version: renaissance 
     :author: Michael Eichberg
     :keywords: "Fortgeschrittene Systementwicklung", "verteilte Systeme"
     :description lang=de: Einführung in die Entwicklung verteilter Systeme
@@ -23,21 +22,21 @@ W3WI_AM302 - Fortgeschrittene Systementwicklung
 
 Inhalte 1. Semester
 ---------------------------------
-  
+
 - Entwicklung von verteilten Anwendungen - Grundlagen
 
   - Linux/Server Handhabung
   - Buildprozesse
   - Versionsverwaltung (?)
-  - Container (?)  
+  - Container (?)
   - Crashkrus JavaScript (?)
   - Authentifizierung in Webanwendungen (JSON Web Token, Cookies, Sessions) (?)
-  
+
 .. supplemental::
 
   Bereits bekannt sein sollte:
 
-  .. class:: list-with-explanations 
+  .. class:: list-with-explanations
 
   - Programmiersprache Go aus dem ersten Semester
   - Programmiersprache Java aus dem zweiten Semester
@@ -45,8 +44,8 @@ Inhalte 1. Semester
 
     *Was wird noch gelehrt?*
   - Datenbanken findet auch parallel statt.
-  - GitHub ist aus dem ersten Semester bekannt. 
-  
+  - GitHub ist aus dem ersten Semester bekannt.
+
     *Ist GIT als Versionskontrollsystem erklärt worden?*
 
 
@@ -55,10 +54,10 @@ Inhalte 1. Semester
 Inhalte 2. Semester
 ---------------------------------
 
-**Durchführung eines Entwicklungsprojekts in kleine(re)n Gruppen.** 
+**Durchführung eines Entwicklungsprojekts in kleine(re)n Gruppen.**
 
 
-Prüfungsleistung 
+Prüfungsleistung
 ------------------------------------------
 
 Prüfungsleistung: Portfolio (insgesamt 120 Punkte)
@@ -78,18 +77,18 @@ Ablauf
 
 .. deck::
 
-  .. card:: 
+  .. card::
 
     1. Semester 16 VL:
 
-       -  1. Sep 2025 
-       -  3. Sep 2025 
-       - 15. Sep 2025 
+       -  1. Sep 2025
+       -  3. Sep 2025
+       - 15. Sep 2025
        -  6. Okt 2025 (davon 20 Minuten Kurztest (und ggf. Kurzvorträge für Bonuspunkte))
 
-  .. card:: 
+  .. card::
     :class: fade-out
-  
+
     2. Semester: 39 VL
 
     - ...
@@ -129,12 +128,7 @@ Details erfolgen im nächsten Semester.
 Zur Verfügung gestellt wird
 ---------------------------------
 
-Zugriff auf einem Server, der aus dem UNI Netz (ggf. mittels VPN) erreichbar ist. 
+Zugriff auf einem Server, der aus dem UNI Netz (ggf. mittels VPN) erreichbar ist.
 Zugangsdaten stehen im Moodle.
 
 **Der Server wird nach dem ersten Semester vermutlich neu aufgesetzt.**
-
-
-
-
-

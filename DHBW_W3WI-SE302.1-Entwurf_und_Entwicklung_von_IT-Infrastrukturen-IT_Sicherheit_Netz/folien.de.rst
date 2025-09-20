@@ -1,7 +1,6 @@
 .. include:: ../docutils.defs
 
 .. meta::
-    :version: renaissance
     :author: Michael Eichberg
     :keywords: "Organisation"
     :description lang=de: Organisatorisches bzgl. IT Infrastrukturen

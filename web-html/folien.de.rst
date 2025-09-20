@@ -1,5 +1,4 @@
 .. meta::
-    :version: renaissance
     :author: Michael Eichberg
     :keywords: Web Programmierung, HTML
     :description lang=de: Einführung in HTML(5)
@@ -69,7 +68,7 @@ Ein einfaches HTML(5) Dokument
 .. code:: html
     :class: copy-to-clipboard
     :number-lines:
-    
+
     <!DOCTYPE html>
     <html lang="de">
         <head><title>Eine Webseite</title></head>
@@ -899,7 +898,7 @@ Drei Arten von Listen werden unterstützt, die beliebig verschachtelt werden kö
 
     - Geordnete Listen: :html:`<ol [reversed] [start=<NO>]>`
 
-      .. class:: columns 
+      .. class:: columns
 
       - .. code:: html
 

@@ -1,5 +1,4 @@
 .. meta::
-    :version: renaissance
     :author: Michael Eichberg
     :keywords: "Lamport Clock", "2PC"
     :description lang=de: Grundlegende Konzepte verteilter Systeme: Lamport-Uhren und 2PC

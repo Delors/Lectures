@@ -1,5 +1,4 @@
 .. meta::
-    :version: renaissance
     :author: Michael Eichberg
     :keywords: "Verteilte Anwendungen", "Modelle", "Architekturen", "Architekturelle Stile"
     :description lang=de: Architekturen von verteilten Anwendungen

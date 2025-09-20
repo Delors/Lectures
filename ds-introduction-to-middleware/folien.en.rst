@@ -1,5 +1,4 @@
 .. meta::
-    :version: renaissance
     :author: Michael Eichberg
     :keywords: Middleware, RPC, RMI, MoM
     :description lang=de: Einführung in Middleware (eng.)

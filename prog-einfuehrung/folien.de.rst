@@ -1,5 +1,4 @@
 .. meta::
-    :version: renaissance
     :lang: de
     :author: Michael Eichberg
     :keywords: "Programmierung", "Java", "Grundlagen", "Software Development"
@@ -287,8 +286,8 @@ Beispiel: Berechnung der Fakultät (rekursiv)
         .. rubric:: Java Programm bzw. Skript
 
         .. code:: Java
-            :number-lines: 
-            :class: copy-to-clipboard 
+            :number-lines:
+            :class: copy-to-clipboard
 
             long fak(long n){
               if (n == 0) return 1;
@@ -319,8 +318,8 @@ Zentrale Eigenschaften von Algorithmen
       - Zuweisungen
       - etc.
 
-    :Terminiertheit: Das Ergebnis liegt nach endlich vielen Schritten vor. 
-    
+    :Terminiertheit: Das Ergebnis liegt nach endlich vielen Schritten vor.
+
         (Dies bedeutet aber nicht, dass das Problem auch praktisch lösbar ist.)
 
     :Komplexität:
@@ -374,7 +373,7 @@ Beispiel: Berechnung bzw. Approximation von :math:`e`
         .. rubric:: `Java Programm bzw. Skript <code/e.java>`__
 
         .. code:: Java
-            :number-lines: 
+            :number-lines:
             :class: copy-to-clipboard
 
             BigDecimal e(int steps) {
@@ -488,8 +487,8 @@ Syntax und Semantik von formalen Sprachen
 
   definiert die Bedeutung der Sätze; wenn dies möglich ist. Nicht jeder syntaktisch korrekte Satz hat eine Bedeutung.
 
-  .. remark:: 
-    :class: incremental 
+  .. remark::
+    :class: incremental
 
     Häufig wird die Semantik „nur“ in einem Standard oder „sogar nur“ durch eine Implementierung festgelegt.
 
@@ -512,7 +511,7 @@ Formale Sprachen: Beispiel in einer *EBNF* Variante
 
         Tim schwimmt auf den Mond.
 
-    .. card:: 
+    .. card::
 
         **Syntaktisch ungültige Sätze**
 

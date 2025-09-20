@@ -1,5 +1,4 @@
 .. meta::
-    :version: renaissance
     :author: Michael Eichberg
     :keywords: "Distributed Applications", "Models", "Architectures", "Architectural Styles"
     :description lang=de: Architecture of distributed Applications

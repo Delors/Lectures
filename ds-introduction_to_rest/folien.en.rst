@@ -1,5 +1,4 @@
 .. meta::
-    :version: renaissance
     :author: Michael Eichberg
     :keywords: "Web Services", REST, HTTP, JSON
     :description lang=de: Einführung in RESTful Web Services
@@ -21,12 +20,12 @@ A brief introduction.
 
 :Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
 :Kontakt: michael.eichberg@dhbw.de
-:Version: 1.0 
+:Version: 1.0
 :Quelle: (teilweise) RESTful Web Services; Leonard Richardson & Sam Ruby; O'Reilly
 
 .. supplemental::
 
-  :Slides/Script: 
+  :Slides/Script:
 
       |html-source|
 
@@ -45,13 +44,13 @@ What is a *Web Service* in the context of RESTful Web Services?
 
 A |WS| is simply a web page that can be requested and processed by a computer.
 
-.. container:: incremental 
+.. container:: incremental
 
     A |WS| is a "web page" that is to be consumed by an *autonomous programme* - as opposed to a web browser or similar UI tool.
 
 .. supplemental::
 
-    .. image:: book-restful_web_services.webp 
+    .. image:: book-restful_web_services.webp
         :alt: RESTful Web Services
         :align: center
         :class: box-shadow
@@ -61,8 +60,8 @@ A |WS| is simply a web page that can be requested and processed by a computer.
 REST\ [#]_
 -----------
 
-- REST = Representational State Transfer 
-  
+- REST = Representational State Transfer
+
   (Essentially a set of design principles for judging architecture; **an architectural style**).
 
 - Resources are identified by uniform resource identifiers (URIs)
@@ -70,12 +69,12 @@ REST\ [#]_
 - Messages are self-describing and stateless
 
 .. container:: peripheral incremental
-  
+
   Of secondary importance:
 
   - Multiple representations are accepted or sent
   - "Hypertext" represents the application state
- 
+
 
 .. [#] REST was described by Roy Fielding in his dissertation.
 
@@ -85,18 +84,18 @@ A possible architecture for RESTful web services
 ----------------------------------------------------
 
 .. container:: foundations
-    
+
     **Resource-oriented Architecture (ROA)**
 
     - Information about the method is included in the HTTP method.
-    - Scoping information is included in the URI. 
-    
+    - Scoping information is included in the URI.
+
       (I. e. which data is affected.)
 
 
 .. rubric:: REST-Style
 
-- Client-server 
+- Client-server
 - stateless
 - :peripheral:`Cached`
 - Uniform Interface (HTTP Methods)
@@ -111,9 +110,9 @@ RESTful Web Services - Foundations
 
 :HTTP: the underlying stateless transport protocol:
 
-    Essential methods: 
+    Essential methods:
 
-    :GET: sideeffect-free requests for information 
+    :GET: sideeffect-free requests for information
     :POST: adding new information (without specifying the target URI)
     :PUT: idempotent update or creation of new information at the given URI
     :DELETE: idempotent deletion of information
@@ -134,7 +133,7 @@ Two Types of State
 
         - "State" refers to Application-/Session State
 
-          The application state is the information necessary to understand the context of an interaction 
+          The application state is the information necessary to understand the context of an interaction
 
         :peripheral:`Authorization and authentication information are examples of application state.`
 
@@ -144,7 +143,7 @@ Two Types of State
 
     .. card::
 
-        .. rubric:: Resource State 
+        .. rubric:: Resource State
 
         - The resource state is the type of state that the *S* in *REST* refers to.
 
@@ -154,8 +153,8 @@ Two Types of State
 Multiple representations
 -------------------------
 
-- Most resources only have a single representation. 
-- REST can support any media type; JSON is the standard. 
+- Most resources only have a single representation.
+- REST can support any media type; JSON is the standard.
 
   (HTTP supports content negotiation.)
 
@@ -166,8 +165,8 @@ Multiple representations
 Simple/first tests for RESTfulness
 --------------------------------------
 
-- Can I use a GET to retrieve the URLs I have POSTed to? 
-- Would the client notice if the server... 
+- Can I use a GET to retrieve the URLs I have POSTed to?
+- Would the client notice if the server...
 
   - is restarted at any point between requests
   - is reinitialized when the client makes the next request.
@@ -191,11 +190,11 @@ Resource modelling
     **POST** is used to create a new resource. The response should then contain the URI of the created resource.
 
     **DELETE** deletes the specified resource.
-    
+
     The difference between **PUT** and **POST** is that **PUT** is idempotent: a single or repeated calls have the same effect (i. e. a repeated call has no side effect), while successive identical **POST** calls can have additional effects, such as the repeated transfer of an order/the repeated creation of a message.
 
     A **PATCH** request is regarded as a set of instructions for changing a resource. In contrast, a PUT request is a complete representation of a resource.
-    
+
 
 
 Example Application del.icio.us
@@ -203,7 +202,7 @@ Example Application del.icio.us
 
 .. supplemental::
 
-    :Quelle: https://www.peej.co.uk/articles/restfully-delicious.html    
+    :Quelle: https://www.peej.co.uk/articles/restfully-delicious.html
 
 **del.icio.us enables us:**
 
@@ -250,8 +249,8 @@ Example Application del.icio.us: Query Bookmarks
 --------------------------------------------------------------
 
 :URL:	`http://del.icio.us/api/[username]/bookmarks/`
-:Method:	GET	
-:Querystring:	
+:Method:	GET
+:Querystring:
 
     tag =	Filter by tag
 
@@ -263,11 +262,11 @@ Example Application del.icio.us: Query Bookmarks
 
 :Return value:
 
-    200 OK & XML (delicious/bookmarks+xml)	
+    200 OK & XML (delicious/bookmarks+xml)
 
-    401 Unauthorized	
+    401 Unauthorized
 
-    404 Not Found	
+    404 Not Found
 
 
 
@@ -300,7 +299,7 @@ Example application del.icio.us: Information about a bookmark
 
 :URL:	`http://del.icio.us/api/[username]/bookmarks/[hash]``
 :Method:	`GET`
-:Return value:	
+:Return value:
     200 OK & XML (delicious/bookmark+xml)
 
     401 Unauthorized
@@ -334,14 +333,14 @@ Example application del.icio.us: Query the number of bookmarks
 ----------------------------------------------------------------------------
 
 :URL:	`http://del.icio.us/api/[username]/bookmarks/count`
-:Method:	GET	
+:Method:	GET
 :Query parameter:	tag =	Filter by tag
 :Return value:
-    200 OK & XML (delicious/bookmark+xml)	
+    200 OK & XML (delicious/bookmark+xml)
 
-    401 Unauthorized	
-	
-    404 Not Found	
+    401 Unauthorized
+
+    404 Not Found
 
 
 
@@ -366,7 +365,7 @@ Example application del.icio.us: Adding a bookmark
     201 Created & Location
 
     401 Unauthorized
-	
+
     415 Unsupported Media Type(if the send document is not valid)
 
 
@@ -397,7 +396,7 @@ Example application del.icio.us: Update a bookmark
 :URL:	`http://del.icio.us/api/[username]/bookmarks/[hash]``
 :Method:	PUT
 :Query document:	XML (delicious/bookmark+xml)
-:Return value:	
+:Return value:
     201 Created & Location
 
     401 Unauthorized
@@ -415,11 +414,10 @@ Example application del.icio.us: Delete a bookmark
 :Method:	DELETE
 :Return value:
     204 No Content
-	
+
     401 Unauthorized
-	
+
     404 Not Found
-    
+
 
 .. ideas: (JWT) Tokens in RESTful WebServices
-

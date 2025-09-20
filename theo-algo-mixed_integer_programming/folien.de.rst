@@ -1,5 +1,4 @@
 .. meta::
-    :version: renaissance
     :lang: de
     :author: Michael Eichberg
     :keywords: "mixed-integer programming", "python"
@@ -56,7 +55,7 @@ Beispielszenario: Kostenoptimierung
 
 .. rubric:: Optimierung der Kosten für die Nahrungsmittelzusammensetzung
 
-.. container:: 
+.. container::
 
     Seien :math:`x_1` und :math:`x_2` die Menge an Nahrungsmitteln 1 und 2, die wir kaufen. :incremental:`Die Kosten für Nahrungsmittel 1 und 2 betragen 1 und 2 Euro pro Einheit.` :incremental:`Die täglichen Ernährungsbedürfnisse sind 10 Einheiten Protein und 20 Einheiten Fett.` :incremental:`Nahrungsmittel 1 enthält 2 Einheiten Protein und 3 Einheiten Fett pro Einheit. Nahrungsmittel 2 enthält 1 Einheit Protein und 4 Einheiten Fett pro Einheit.`
 
@@ -87,7 +86,7 @@ Lineare Programmierung
 
     Lineare Programmierung: Optimierung von linearen Funktionen unter linearen Nebenbedingungen.
 
-.. container:: 
+.. container::
 
     Das Ziel ist die Optimierung (Maximierung/Minimierung) einer linearen Funktion :math:`f`:
 
@@ -106,7 +105,7 @@ Lineare Programmierung
 Lösen von linearen Optimierungsproblemen
 ------------------------------------------
 
-.. deck:: 
+.. deck::
 
     .. card::
 
@@ -174,7 +173,7 @@ Lösen von linearen Optimierungsproblemen
                     0 & \leq & x_1, & x_2, & x_3, & x_4 , & x_5 \\
                     \end{array}
 
-        .. container:: incremental 
+        .. container:: incremental
 
             Die Variablen :math:`x_3`, :math:`x_4` und :math:`x_5` sind die Schlupfvariablen. Sie messen die Differenz zwischen der linken und der rechten Seite der Ungleichungen und sind nicht Teil der Zielfunktion.
 
@@ -905,7 +904,7 @@ MIP: einige (oder alle) Variablen sind ganzzahlig
 
     .. grid::
 
-        .. cell:: 
+        .. cell::
 
             **Zielfunktion (Maximiere)**
 
@@ -996,13 +995,13 @@ Binärvariablen oder ganzzahlige Variablen?
 
 .. grid::
 
-   .. cell:: 
+   .. cell::
 
         .. image:: images/sudoku.svg
             :align: center
             :height: 400px
 
-   .. cell:: 
+   .. cell::
 
         **Naiver Ansatz**
 

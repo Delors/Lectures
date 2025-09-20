@@ -1,5 +1,4 @@
 .. meta::
-    :version: renaissance
     :author: Michael Eichberg
     :keywords: "IT Sicherheit", "Reverse Engineering"
     :description lang=de: Fortgeschrittene Angewandte IT Sicherheit
@@ -1094,5 +1093,3 @@ NIS 2 - zentrale Einrichtungen
 
         :CSIRT: Computer Security Incident Response Team
         :Behörden für das Krisenmanagement: Sollte es mehr als eine geben, so wird eine explizit benannt, die für die Koordination und das  Management von *Cybersicherheitsvorfällen großen Ausmaßes und Krisen* zuständig ist
-
-

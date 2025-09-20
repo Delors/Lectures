@@ -1,5 +1,4 @@
 .. meta::
-    :version: renaissance
     :id: lecture-security-aes
     :author: Michael Eichberg
     :keywords: AES

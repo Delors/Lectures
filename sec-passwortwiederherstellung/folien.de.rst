@@ -1,5 +1,4 @@
 .. meta::
-    :version: renaissance
     :author: Michael Eichberg
     :keywords: IT Sicherheit, Passwortwiederherstellung
     :description lang=de: Wiederherstellung von Passwörtern

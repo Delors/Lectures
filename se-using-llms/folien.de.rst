@@ -1,5 +1,4 @@
 .. meta::
-    :version: renaissance
     :author: Michael Eichberg
     :keywords: "LLMs", "Prompting"
     :description lang=de: Software Engineering - Code Generierung mit LLMs

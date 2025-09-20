@@ -1,5 +1,4 @@
 .. meta::
-    :version: renaissance
     :author: Michael Eichberg
     :keywords: "Verteilte Anwendungen", "Entwurfsprinzipien", "Architekturstile"
     :description lang=de: Diskussion von Entwurfsprinzipien für moderne verteilte Anwendungen
