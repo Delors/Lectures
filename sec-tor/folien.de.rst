@@ -553,6 +553,7 @@ Tor
         :pwd: VPNsundTOR
 
         Ein VPN ist ein Tunnel zwischen zwei Netzwerken. Tor ist ein Tunnel zwischen einem Client und einem Server.
+        
         - In beiden Fällen kennt der Ziel(webs)erver nicht die IP-Adresse des Clients.
         - Tor ist dezentralisiert und anonym. VPNs sind zentralisiert und nicht anonym; der VPN Anbieter kennt die IP-Adresse des Clients.
         - Tor ist sehr langsam; VPNs sind schnell(er).
