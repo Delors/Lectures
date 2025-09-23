@@ -24,7 +24,7 @@ Eine allererste Einführung
 
 :Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
 :Kontakt: michael.eichberg@dhbw.de
-:Version: 0.1
+:Version: 0.2
 
 .. supplemental::
 
@@ -2346,3 +2346,19 @@ Beispielhafte Verwendung von Claude Sonnet 4 Thinking
     - Das Build-Skript funktionierte erst nicht, da die Versionen nicht korrekt ermittelt wurden!
     - Der Code ist besser modularisiert in mehrere Methoden wodurch das Verständnis gefördert wird.
     - Es wurden Hilfsmethoden für anzunehmende gängige Fälle implementiert.
+
+
+
+
+Sicherheit und generierter Code
+--------------------------------
+
+.. epigraph:: 
+
+    **AI firm DeepSeek writes less-secure code for groups China disfavors**
+
+    The Chinese artificial intelligence engine DeepSeek often refuses to help programmers or gives them code with major security flaws when they say they are working for the banned spiritual movement Falun Gong or others considered sensitive by the Chinese government, new research shows.
+    
+    The findings,[...], underscore how politics shapes artificial intelligence efforts during a geopolitical race for technology prowess and influence.
+
+    -- `16.9.2025 - Washington Post <https://www.washingtonpost.com/technology/2025/09/16/deepseek-ai-security/>`__
