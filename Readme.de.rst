@@ -1,9 +1,8 @@
 .. meta::
-    :version: renaissance
     :author: Michael Eichberg
     :keywords: Lehrveranstaltungen, Foliensätze
     :description lang=de: Informationen über Lehrveranstaltungen und Foliensätze
-    :id: www.michael-eichberg/lectures/readme
+    :id: michael-eichberg/lectures/readme
 
 
 
@@ -20,6 +19,8 @@ Vorlesung "Einführung in die Programmierung I und II"
 -----------------------------------------------------
 
 Die grundlegende Idee hinter der folgenden Reihenfolge ist, dass die Studierenden zuerst die Grundlagen der Programmierung in Java lernen und sich dann (kurz) mit der objekt-orientierten Modellierung realer Systeme beschäftigen, bevor dann mit der objekt-orientierten Programmierung in Java begonnen wird.
+
+Aufgrund der Entwicklungen im Bereich Generative AI (z. B. Copilot, Claude, etc.) ist es sinnvoll auch auf diesen Bereich einzugehen, damit die Studierenden grundlegende Kompetenzen im Bereich Prompting erwerben.
 
 .. scrollable::
 
@@ -40,6 +41,10 @@ Die grundlegende Idee hinter der folgenden Reihenfolge ist, dass die Studierende
    13. Versionsverwaltung mit GIT (`<se-versionskontrolle/folien.de.rst.html>`__)
    14. Objekt-orientierte Programmierung in Java - Funktionale Programmierung (`<prog-adv-java-funktionale-programmierung/folien.de.rst.html>`__)
    15. Objekt-orientierte Programmierung in Java - Ein-/Ausgabe (`<prog-adv-java-ea/folien.de.rst.html>`__)
+
+   Ergänzend: 
+
+   Generative AI und Programmierung (`<se-using-llms/folien.de.rst.html>`__)
 
 
 
@@ -72,24 +77,37 @@ Vorlesung "Verteilte Systeme" / "Distributed Systems"
       Introduction to Distributed Systems (`<ds-introduction/folien.en.rst.html>`__)
    2. HTTP und Sockets in Java (`<ds-http-and-sockets-java/folien.de.rst.html>`__)
 
+      HTTP and Sockets in Java (`<ds-http-and-sockets-java/folien.en.rst.html>`__)
+
+
       Alternativ:
 
       HTTP und Sockets in Python (`<ds-http-and-sockets-python/folien.de.rst.html>`__)
    3. Nebenläufigkeit und Synchronisation (in Java) (`<ds-nebenlaeufigkeit-java/folien.de.rst.html>`__)
 
+      Concurrency and Synchronization (in Java) (`<ds-concurrency-in-java/folien.en.rst.html>`__)
+
       Alternativ:
 
       Nebenläufigkeit und Synchronisation (in Java) (`<ds-nebenlaeufigkeit-python/folien.de.rst.html>`__)
    4. Grundlegende Konzepte (`<ds-grundlegende-konzepte/folien.de.rst.html>`__)
-   5. Middleware (`<ds-middleware/folien.de.rst.html>`__)
+
+      Basic Concepts (`<ds-basic-concepts/folien.en.rst.html>`__)
+
+   5. Einführung in Middleware (`<ds-middleware/folien.de.rst.html>`__)
+
+      Introduction to Middleware (`<ds-introduction-to-middleware/folien.en.rst.html>`__)
    6. Architekturen von verteilten Systemen (`<ds-architekturen/folien.de.rst.html>`__)
 
+      Architectures of Distributed Systems (`<ds-architectures/folien.en.rst.html>`__)
 
    .. rubric:: Ergänzend
 
    - Zusammenspiel von agilen Methoden und Entwurf verteilter Systeme (`<ds-se-agile/folien.de.rst.html>`__)
    - Entwurfsprinzipien für verteilte Systeme (`<ds-se-entwurfsprinzipien/folien.de.rst.html>`__)
    - RESTful Web Services (`<ds-restful/folien.de.rst.html>`_)
+
+     Introduction to RESTful Web Services (`<ds-introduction_to_rest/folien.en.rst.html>`__) 
    - XML und XPath (`<ds-xml/folien.de.rst.html>`__)
 
 
@@ -146,6 +164,7 @@ Ausgewählte Themen der IT Sicherheit
 ------------------------------------------
 
 - TCP SSH Firewalls (`<sec-tcp-ssh-firewalls/folien.de.rst.html>`__)
+- TOR (`<sec-tor/folien.de.rst.html>`__)
 - CVSS-CVE-VEP (`<sec-cvss-cve-vep/folien.de.rst.html>`__)
 - CWE-OWASP (`<sec-cwe-owasp/folien.de.rst.html>`__)
 
