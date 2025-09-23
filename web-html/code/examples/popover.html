@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="de">
+  <body>
+    <button popovertarget="details">Show details</button>
+    
+    <div popover="manual" id="details">
+      <button popovertarget="details" popovertargetaction="close">x</button>
+
+      Here are some details
+
+      <button popovertarget="moredetails">Show more details</button>
+      <div popover id="moredetails">
+        <p>Here are some more details</p>
+        <p>Even more details</p>
+      </div>
+
+      <!-- as of Sept. 2025, hints don't work with Firefox
+      <button popovertarget="ahint">Show hint</button>
+      <div popover="hint" id="ahint">
+        <p>Here are some more details</p>
+        <p>Even more details</p>
+      </div>
+       -->
+    </div>
+  </body>
+</html>
