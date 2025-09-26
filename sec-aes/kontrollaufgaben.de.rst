@@ -120,3 +120,8 @@ Rechenübung
             = & 1001\, 1010b \\
             = & 9A \\
             \end{matrix}
+
+
+        .. hint::      
+
+          Selbstverständlich können Sie auch alle anderen Felder als Übung versuchen nachzuberechnen.
