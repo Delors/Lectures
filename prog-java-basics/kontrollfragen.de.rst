@@ -17,8 +17,15 @@ Einführung in die Programmierung mit Java - Wiederholung
 
 :Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
 :Kontakt: michael.eichberg@dhbw.de, Raum 149B
-:Version: 1.1
+:Version: 1.1.1
 
+
+
+
+.. class:: new-section
+   
+Grundlagen
+------------
 
 
 .. class:: exercises
@@ -26,7 +33,7 @@ Einführung in die Programmierung mit Java - Wiederholung
 Kontrollfragen
 ----------------
 
-.. deck:: numbered
+.. deck:: 
 
    .. card::
 
@@ -283,6 +290,21 @@ Kontrollfragen
 
             Den Gültigkeitsbereich einer Variable.
 
+
+
+.. class:: new-section
+
+Schleifen
+------------
+
+
+.. class:: exercises
+
+Kontrollfragen
+----------------
+
+.. deck::
+
    .. card::
 
        .. exercise:: Können while- und for-Schleifen ineinander umgewandelt werden?
@@ -457,6 +479,21 @@ Kontrollfragen
             Ausgabe:
 
             *<keine>*
+
+
+
+.. class:: new-section
+
+Funktionen
+------------
+
+
+.. class:: exercises
+
+Kontrollfragen
+----------------
+
+.. deck::
 
    .. card::
 

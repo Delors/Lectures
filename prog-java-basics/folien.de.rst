@@ -18,10 +18,9 @@ Einführung in die Programmierung mit Java
 :Kontakt: michael.eichberg@dhbw.de, Raum 149B
 :Version: 1.2.1
 
-.. container:: minor
+.. class:: sources
 
-    :Quelle:
-        Die Folien sind teilweise inspiriert von oder basierend auf Lehrmaterial von Prof. Dr. M. Matt bzw. Prof. C. Binning.
+:Quelle: Teilweise inspiriert von oder basierend auf Lehrmaterial von Prof. Dr. M. Matt bzw. Prof. C. Binning.
 
 .. Im Wesentlichen Foliensätze von Michael Matt: 03_Grundlagen_Teil1 und Teil2 und Formatierung.key
 
@@ -3039,8 +3038,6 @@ Am Ende diskutieren wir Ihren Code/Ihre Kommentare.
 
 
 
-.. class:: center-content
-
 Von Codekonventionen und Lesbarkeit - Zusammenfassung
 ----------------------------------------------------------
 
@@ -3053,10 +3050,10 @@ Das Einhalten fördert die Zusammenarbeit mit anderen Programmieren - *insbesond
 
 .. class:: exercises transition-fade
 
-Übung
---------
+Übung - Tage seit Geburt berechnen
+------------------------------------
 
-.. exercise:: Tage seit Geburt berechnen
+.. exercise:: 
 
     .. container::
 

@@ -12,7 +12,7 @@
 
 
 
-Interpreter, VMs und Compiler - Wiederholung
+Interpreter, VMs und Compiler - Kontrollfragen
 ===========================================================
 
 :Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
@@ -32,7 +32,7 @@ Kontrollfragen
 -------------------------------------
 
 
-.. deck:: numbered
+.. deck::
 
    .. card:: 
    
@@ -89,7 +89,7 @@ Kontrollfragen
 Kontrollfragen 
 -------------------------------------
 
-.. deck:: numbered
+.. deck::
 
    .. card::
 

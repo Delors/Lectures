@@ -16,7 +16,7 @@ Einführung in die Programmierung
 
 :Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
 :Kontakt: michael.eichberg@dhbw.de, Raum 149B
-:Version: 1.0.1
+:Version: 1.0.2
 
 .. supplemental::
 
@@ -45,7 +45,7 @@ Ziele
 
 - Einfache Programme (in Java) schreiben zu können
 - Grundlegende Werkzeuge für die Softwareentwicklung kennen lernen
-- Die Fähigkeit zum *Computational Thinking* (d. h. Denken wie ein Computer) zu erwerben
+- Die Fähigkeit zum *Computational Thinking* (d. h. zum algorithmischen Denken) zu erwerben
 - Die Fähigkeit zu erwerben komplexe Probleme mittels des Prinzips *divide et impera* (teile und herrsche) zu lösen
 - Ein paar grundlegende Begriffe der Softwareentwicklung kennen lernen
 
@@ -104,7 +104,6 @@ Der wirkliche Effekt von AI Coding Assistenten
 
     Code analysis firm sees no major benefits from AI dev tool when measuring key programming metrics, though others report incremental gains from coding copilots with emphasis on code review.
 
-
     Many developers say AI coding assistants make them more productive, but a recent study set forth to measure their output and found no significant gains. Use of GitHub Copilot also introduced 41% more bugs, according to the study from Uplevel, a company providing insights from coding and collaboration data.
 
     -- `September 2024, cio.com <https://www.cio.com/article/3540579/devs-gaining-little-if-anything-from-ai-coding-assistants.html>`__
@@ -118,9 +117,13 @@ AI Assistenten und Grundlagen der Programmierung
 .. class:: incremental-list
 
 - Verwenden Sie keine AI Assistenten, um die Konzepte einer Programmiersprache oder Bibliothek zu erlernen.
-- Später müssen Sie in der Lage sein, den Code, der von Assistenten generiert wurde, zu verstehen und zu validieren. Ohne ein tiefgreifendes Verständnis ist dies nicht möglich.
 - Die Aufgaben werden immer nur Dinge verlangen, die gelehrt wurden.
 - In der Klausur/Prüfung steht Ihnen auch kein AI Assistent zur Verfügung.
+
+.. attention:: 
+    :class: incremental
+
+    Später müssen Sie in der Lage sein, den Code, der von Assistenten generiert wurde, zu verstehen und zu validieren. Ohne ein tiefgreifendes Verständnis ist dies nicht möglich.
 
 
 
@@ -148,41 +151,37 @@ Programmiersprachen
 
     .. cell:: width-50
 
-        .. rubric:: `Tiobe Index <https://www.tiobe.com/tiobe-index/>`__ für August 2024
+        .. rubric:: `Tiobe Index <https://www.tiobe.com/tiobe-index/>`__ für September 2025
 
         .. csv-table::
             :header: Programmiersprache, Anteil
-            :class: highlight-line-on-hover
+            :class: highlight-row-on-hover
 
-            Python, 18.04%
-            C++, 10.04%
-            C, 9.17%
-            Java, 9.16%
-            C#, 6.39%
-            JavaScript, 3.91%
-            SQL, 2.21%
-            Visual Basic, 2.18%
-            Go, 2.03%
-            Fortran, 1.79%
+            Python, 25.98%
+            C++, 8.8%
+            C, 8.65%
+            Java, 8.35%
+            C#, 6.38%
+            JavaScript, 3.22%
+            Visual Basic, 2.84%
+            ..., ...
 
-    .. cell:: width-50
+    .. cell:: width-50 incremental
 
-        .. rubric:: `Pypl Index <https://pypl.github.io/PYPL.html>`__ für August 2024
+        .. rubric:: `Pypl Index <https://pypl.github.io/PYPL.html>`__ für September 2025
 
         .. csv-table::
             :header: Programmiersprache, Anteil
-            :class: highlight-line-on-hover
+            :class: highlight-row-on-hover
 
             Python, 29.6%
-            Java, 15.51%
-            JavaScript, 8.38%
-            C#, 6.7%
-            C/C++, 6.31%
-            R, 4.6%
-            PHP, 4.35%
-            TypeScript, 2.93%
-            Swift, 2.76%
-            Rust, 2.58%
+            Java, 14.72%
+            C/C++, 9.27%
+            JavaScript, 6.79%
+            R, 5.26%
+            C#, 4.81%
+            Objective-C, 4.17%
+            ..., ...
 
 
 
@@ -271,14 +270,15 @@ Beispiel: Berechnung der Fakultät (rekursiv)
             \end{aligned}
 
 
-        .. math::
-            :class: incremental
-
-            \text{fak}(n) =
-                \begin{cases}
-                    1 & \text{if } n = 0 \\
-                n \cdot \text{fak}(n-1) & \text{if } n > 0
-                \end{cases}
+        .. container:: incremental
+        
+            .. math::
+            
+                \text{fak}(n) =
+                    \begin{cases}
+                        1 & \text{if } n = 0 \\
+                        n \cdot \text{fak}(n-1) & \text{if } n > 0
+                    \end{cases}
 
 
     .. cell:: width-50 incremental
@@ -363,10 +363,11 @@ Beispiel: Berechnung bzw. Approximation von :math:`e`
             \end{aligned}
 
 
-        .. math::
-            :class: incremental
-
-            e = \sum_{i=0}^{\infty} \frac{1}{i!} = \frac{1}{0!} + \frac{1}{1!} + \frac{1}{2!} + \ldots
+        .. container:: incremental
+        
+            .. math::
+            
+                e = \sum_{i=0}^{\infty} \frac{1}{i!} = \frac{1}{0!} + \frac{1}{1!} + \frac{1}{2!} + \ldots
 
     .. cell:: width-50 incremental
 
@@ -428,7 +429,10 @@ Beispiel: Berechnung bzw. Approximation von :math:`e`
 (Programmier-)sprachen - Unterteilung
 ---------------------------------------
 
-:natürliche Sprachen: Dienen der Kommunikation zwischen Menschen und sind häufig mehrdeutig. In vielen Fällen ist die Bedeutung eines Satzes abhängig vom Kontext.
+:natürliche Sprachen: 
+
+    - Dienen der Kommunikation zwischen Menschen und sind häufig mehrdeutig. 
+    - In vielen Fällen ist die Bedeutung eines Satzes abhängig vom Kontext.
 
 .. class:: incremental
 
@@ -707,15 +711,15 @@ Voraussetzungen
 
 Zu installieren (für den Anfang):
 
-- (mind.) Java 23 JDK (Java Development Kit)
+- (mind.) Java 25 JDK (Java Development Kit)
 
-  https://adoptium.net/en-GB/temurin/releases/?version=23
+  https://adoptium.net/en-GB/temurin/releases/?version=25
 
   oder
 
   https://www.azul.com/downloads/?package=jdk#zulu
 
-  (Java 22 ist nicht ausreichend.)
+  (Java 22 oder älter ist nicht ausreichend.)
 - Visual Studio Code :peripheral:`inkl. Java Tools oder Eclipse Theia oder IntelliJ IDEA oder Eclipse`
 
   Ich verwende Visual Studio Code mit dem Java Extension Pack.

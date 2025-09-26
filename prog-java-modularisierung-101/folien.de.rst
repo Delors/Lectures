@@ -256,12 +256,13 @@ Statische Methoden und statische Attribute von Klassen und Interfaces
     Wenn Sie das :java:`static` Schlüsselwort vergessen, dann haben Sie Instanzmethoden und Instanzattribute. Diese können Sie nur nutzen, nachdem Sie basierend auf der Klasse ein Objekt instantiiert haben.
 
 
+
 .. class:: exercises
 
-Übung
-------
+Übung - Erste Refaktorisierung des Codes
+--------------------------------------------
 
-.. exercise:: Erste Refaktorisierung des Codes
+.. exercise:: 
 
     .. container::
 
