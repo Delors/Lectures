@@ -15,8 +15,12 @@ Erzeugung von Zufallsbits und Stromchiffren
 ===============================================
 
 :Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
-:Basierend auf: *Cryptography and Network Security - Principles and Practice, 8th Edition, William Stallings*
+:Kontakt: michael.eichberg@dhbw.de
 :Version: 2.4.2
+
+.. class:: sources
+
+:Quellen: *Cryptography and Network Security - Principles and Practice, 8th Edition, William Stallings*
 
 .. supplemental::
 
@@ -612,25 +616,32 @@ Entropie
 Quellen der Entropie
 ---------------------
 
-- Ein echter Zufallszahlengenerator (TRNG) verwendet eine nicht-deterministische Quelle zur Erzeugung von Zufälligkeit.
+.. deck::
 
-.. class:: incremental-list
+    .. card::
 
-- Die meisten funktionieren durch Messung unvorhersehbarer natürlicher Prozesse, wie z. B. Impulsdetektoren für ionisierende Strahlung, Gasentladungsröhren und undichte Kondensatoren.
-- Intel CPUs verwenden seit 2012 (Ivy Bridge) thermisches Rauschen als Quelle. Dies geschieht durch Verstärkung der an nicht angesteuerten Widerständen gemessenen Spannung.
+        - Ein echter Zufallszahlengenerator (TRNG) verwendet eine nicht-deterministische Quelle zur Erzeugung von Zufälligkeit.
 
-  Auslesen ist mit dem RDRAND Befehl möglich bzw. (neuer) mit dem RDSEED Befehl.
+        - Die meisten funktionieren durch Messung unvorhersehbarer natürlicher Prozesse, wie z. B. Impulsdetektoren für ionisierende Strahlung, Gasentladungsröhren und undichte Kondensatoren.
 
-- AMD und ARM CPUs bieten vergleichbare Funktionen. Auf aktuellen AMD CPUs dauert es ca. 2500 Clock Cycles für die Generierung eines 64 Bit Wertes.
+    .. card::
 
-.. supplemental::
+        - Intel CPUs verwenden seit 2012 (Ivy Bridge) thermisches Rauschen als Quelle. Dies geschieht durch Verstärkung der an nicht angesteuerten Widerständen gemessenen Spannung.
 
-    Die Befehle RDRAND und RDSEED erfüllen die Anforderungen von NIST SP 800-90A, FIPS 140-2, und ANSI X9.82.
+          Auslesen ist mit dem :asm:`RDRAND` Befehl möglich bzw. (neuer) mit dem :asm:`RDSEED` Befehl.
 
-.. attention::
-    :class: incremental
+        - AMD und ARM CPUs bieten vergleichbare Funktionen. Auf aktuellen AMD CPUs dauert es ca. 2500 Clock Cycles für die Generierung eines 64 Bit Wertes.
 
-    Es gibt *Vermutungen*, dass diese Funktionen absichtlich kompromitiert wurden. `FreeBSD <https://www.theregister.com/2013/12/09/freebsd_abandoning_hardware_randomness/>`_ hat 2013 die Verwendung wieder eingestellt. Linux nutzt diese nur ergänzend.
+        .. supplemental::
+
+            Die Befehle :asm:`RDRAND` und :asm:`RDSEED` erfüllen die Anforderungen von NIST SP 800-90A, FIPS 140-2, und ANSI X9.82.
+
+        .. attention::
+            :class: incremental
+
+            Es gibt *Vermutungen*, dass diese Funktionen absichtlich kompromitiert wurden.
+            
+            `FreeBSD <https://www.theregister.com/2013/12/09/freebsd_abandoning_hardware_randomness/>`_ hat 2013 die Verwendung wieder eingestellt. Linux nutzt diese nur ergänzend.
 
 
 
@@ -954,10 +965,8 @@ ChaCha Quarter Round
 
             c = c + d   = 0x77777777 + 0x01234567
                         = 0x789abcde
-
             b = b ^ c   = 0x01020304 ^ 0x789abcde
                         = 0x7998bfda
-
             b = b <<< 7 = 0x7998bfda <<< 7
                         = 0xcc5fed3c
 
