@@ -665,7 +665,7 @@ Vertausch von `InvShiftRows` und `InvSubBytes`
 
 .. observation::
 
-    Diese beiden Operationen sind kommutativ und soweit vertauschbar.
+    Diese beiden Operationen sind kommutativ und somit vertauschbar.
 
 
 
