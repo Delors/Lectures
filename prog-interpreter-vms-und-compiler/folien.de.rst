@@ -109,36 +109,38 @@ Compiler
 
         .. raw:: html
 
-            <svg width="70ch" height="5lh" version="1.1" xmlns="http://www.w3.org/2000/svg">
+            <div style="width:77ch; height:3lh;">
+            <svg viewBox="0 0 70 5" font-size="1" version="1.1" xmlns="http://www.w3.org/2000/svg">
 
                 <!-- Quellprogramm P1 -->
-                <rect x="0.1ch" y="0.1ch" rx="1ch" ry="1ch" width="16ch" height="2.5lh" />
-                <text x="1ch" y="1lh">Programm in</text>
-                <text x="1ch" y="2lh">der Sprache A</text>
-                <text class="subtext" x="1ch" y="4lh">Quellprogramm P1</text>
+                <rect x="0.1" y="0.1" rx="1" ry="1" width="16" height="2.5" />
+                <text x="1" y="1.1">Programm in</text>
+                <text x="1" y="2.2">der Sprache A</text>
+                <text class="subtext" x="1" y="4">Quellprogramm P1</text>
 
                 <g class="incremental">
                 <!-- Übersetzer -->
-                <line x1="16ch" y1="1.25lh" x2="20ch" y2="1.25lh" marker-end="url(#arrow)" />
-                <rect x="20ch" y="0.5lh" rx="1ch" ry="1ch"  width="12ch" height="1.5lh" />
-                <text x="21.35ch" y="1.6lh">Übersetzer</text>
+                <line x1="16" y1="1.25" x2="20" y2="1.25" marker-end="url(#arrow)" />
+                <rect x="20" y="0.5" rx="1" ry="1" width="12" height="1.5" />
+                <text x="21.35" y="1.7">Übersetzer</text>
                 </g>
 
                 <g class="incremental">
                 <!-- Zielprogramm P2 -->
-                <line x1="32ch" y1="1.25lh" x2="36ch" y2="1.25lh" marker-end="url(#arrow)" />
-                <rect x="36ch" y="0.1ch" width="16ch" rx="1ch" ry="1ch" height="2.5lh" />
-                <text x="37ch" y="1lh">Programm in</text>
-                <text x="37ch" y="2lh">der Sprache B</text>
-                <text class="subtext" x="37ch" y="4lh">Zielprogramm P2</text>
+                <line x1="32" y1="1.25" x2="36" y2="1.25" marker-end="url(#arrow)" />
+                <rect x="36" y="0.1" width="16" rx="1" ry="1" height="2.5" />
+                <text x="37" y="1.1">Programm in</text>
+                <text x="37" y="2.2">der Sprache B</text>
+                <text class="subtext" x="37" y="4">Zielprogramm P2</text>
                 </g>
 
                 <g class="incremental">
                     <!-- Ausführung -->
-                    <line x1="52ch" y1="1.25lh" x2="56ch" y2="1.25lh" marker-end="url(#arrow)" />
-                    <text x="57ch" y="1.6lh" style="font-style:italic">Ausführung</text>
+                    <line x1="52" y1="1.25" x2="56" y2="1.25" marker-end="url(#arrow)" />
+                    <text x="57" y="1.6" style="font-style:italic">Ausführung</text>
                 </g>
             </svg>
+            </div>
 
         .. legend::
 
@@ -188,63 +190,65 @@ Compiler - Übersetzung (Traditionell)
 .. raw:: html
     :class: center-content
 
-    <svg width="55ch" height="9lh" version="1.1" xmlns="http://www.w3.org/2000/svg">
+    <div style="width:75ch; height:5lh;">
+    <svg viewBox="0 0 55 9" font-size="1" version="1.1" xmlns="http://www.w3.org/2000/svg">
 
-        <text x="1ch" y="1lh" style="font-style: italic">N Sprachen</text>
-        <text x="40ch" y="1lh" style="font-style: italic">M Plattformen</text>
+        <text x="1" y="1" style="font-style: italic">N Sprachen</text>
+        <text x="40" y="1" style="font-style: italic">M Plattformen</text>
 
-        <text x="1ch" y= 2.5lh>Pascal</text>
+        <text x="1" y="2.5">Pascal</text>
         <g class="incremental">
-        <line x1="7ch" y1="2.15lh" x2="39ch" y2="2.25lh" marker-end="url(#arrow)" />
-        <line x1="7ch" y1="2.15lh" x2="39ch" y2="3.75lh" marker-end="url(#arrow)" />
-        <line x1="7ch" y1="2.15lh" x2="39ch" y2="5.25lh" marker-end="url(#arrow)" />
-        <line x1="7ch" y1="2.15lh" x2="39ch" y2="6.75lh" marker-end="url(#arrow)" />
-        <line x1="7ch" y1="2.15lh" x2="39ch" y2="8.25lh" marker-end="url(#arrow)" />
+        <line x1="7" y1="2.15" x2="39" y2="2.25" marker-end="url(#arrow)" />
+        <line x1="7" y1="2.15" x2="39" y2="3.75" marker-end="url(#arrow)" />
+        <line x1="7" y1="2.15" x2="39" y2="5.25" marker-end="url(#arrow)" />
+        <line x1="7" y1="2.15" x2="39" y2="6.75" marker-end="url(#arrow)" />
+        <line x1="7" y1="2.15" x2="39" y2="8.25" marker-end="url(#arrow)" />
         </g>
 
-        <text x="1ch" y= 4lh>C</text>
+        <text x="1" y="4">C</text>
         <g class="incremental">
-        <line x1="2.5ch" y1="3.65lh" x2="39ch" y2="2.25lh" marker-end="url(#arrow)" />
-        <line x1="2.5ch" y1="3.65lh" x2="39ch" y2="3.75lh" marker-end="url(#arrow)" />
-        <line x1="2.5ch" y1="3.65lh" x2="39ch" y2="5.25lh" marker-end="url(#arrow)" />
-        <line x1="2.5ch" y1="3.65lh" x2="39ch" y2="6.75lh" marker-end="url(#arrow)" />
-        <line x1="2.5ch" y1="3.65lh" x2="39ch" y2="8.25lh" marker-end="url(#arrow)" />
+        <line x1="2.5" y1="3.65" x2="39" y2="2.25" marker-end="url(#arrow)" />
+        <line x1="2.5" y1="3.65" x2="39" y2="3.75" marker-end="url(#arrow)" />
+        <line x1="2.5" y1="3.65" x2="39" y2="5.25" marker-end="url(#arrow)" />
+        <line x1="2.5" y1="3.65" x2="39" y2="6.75" marker-end="url(#arrow)" />
+        <line x1="2.5" y1="3.65" x2="39" y2="8.25" marker-end="url(#arrow)" />
         </g>
 
-        <text x="1ch" y= 5.5lh>C++</text>
+        <text x="1" y="5.5">C++</text>
         <g class="incremental">
-        <line x1="5ch" y1="5.15lh" x2="39ch" y2="2.25lh" marker-end="url(#arrow)" />
-        <line x1="5ch" y1="5.15lh" x2="39ch" y2="3.75lh" marker-end="url(#arrow)" />
-        <line x1="5ch" y1="5.15lh" x2="39ch" y2="5.25lh" marker-end="url(#arrow)" />
-        <line x1="5ch" y1="5.15lh" x2="39ch" y2="6.75lh" marker-end="url(#arrow)" />
-        <line x1="5ch" y1="5.15lh" x2="39ch" y2="8.25lh" marker-end="url(#arrow)" />
+        <line x1="5" y1="5.15" x2="39" y2="2.25" marker-end="url(#arrow)" />
+        <line x1="5" y1="5.15" x2="39" y2="3.75" marker-end="url(#arrow)" />
+        <line x1="5" y1="5.15" x2="39" y2="5.25" marker-end="url(#arrow)" />
+        <line x1="5" y1="5.15" x2="39" y2="6.75" marker-end="url(#arrow)" />
+        <line x1="5" y1="5.15" x2="39" y2="8.25" marker-end="url(#arrow)" />
         </g>
 
-        <text x="1ch" y= 7lh>Smalltalk</text>
+        <text x="1" y="7">Smalltalk</text>
         <g class="incremental">
-        <line x1="10ch" y1="6.65lh" x2="39ch" y2="2.25lh" marker-end="url(#arrow)" />
-        <line x1="10ch" y1="6.65lh" x2="39ch" y2="3.75lh" marker-end="url(#arrow)" />
-        <line x1="10ch" y1="6.65lh" x2="39ch" y2="5.25lh" marker-end="url(#arrow)" />
-        <line x1="10ch" y1="6.65lh" x2="39ch" y2="6.75lh" marker-end="url(#arrow)" />
-        <line x1="10ch" y1="6.65lh" x2="39ch" y2="8.25lh" marker-end="url(#arrow)" />
+        <line x1="10" y1="6.65" x2="39" y2="2.25" marker-end="url(#arrow)" />
+        <line x1="10" y1="6.65" x2="39" y2="3.75" marker-end="url(#arrow)" />
+        <line x1="10" y1="6.65" x2="39" y2="5.25" marker-end="url(#arrow)" />
+        <line x1="10" y1="6.65" x2="39" y2="6.75" marker-end="url(#arrow)" />
+        <line x1="10" y1="6.65" x2="39" y2="8.25" marker-end="url(#arrow)" />
         </g>
 
-        <text x="1ch" y= 8.5lh>...</text>
+        <text x="1" y="8.5">...</text>
         <g class="incremental">
-        <line x1="4ch" y1="8.25lh" x2="39ch" y2="2.25lh" marker-end="url(#arrow)" />
-        <line x1="4ch" y1="8.25lh" x2="39ch" y2="3.75lh" marker-end="url(#arrow)" />
-        <line x1="4ch" y1="8.25lh" x2="39ch" y2="5.25lh" marker-end="url(#arrow)" />
-        <line x1="4ch" y1="8.25lh" x2="39ch" y2="6.75lh" marker-end="url(#arrow)" />
-        <line x1="4ch" y1="8.25lh" x2="39ch" y2="8.25lh" marker-end="url(#arrow)" />
+        <line x1="4" y1="8.25" x2="39" y2="2.25" marker-end="url(#arrow)" />
+        <line x1="4" y1="8.25" x2="39" y2="3.75" marker-end="url(#arrow)" />
+        <line x1="4" y1="8.25" x2="39" y2="5.25" marker-end="url(#arrow)" />
+        <line x1="4" y1="8.25" x2="39" y2="6.75" marker-end="url(#arrow)" />
+        <line x1="4" y1="8.25" x2="39" y2="8.25" marker-end="url(#arrow)" />
         </g>
 
-        <text x="40ch" y= 2.5lh>Linux (ARM)</text>
-        <text x="40ch" y= 4lh>Apple (ARM)</text>
-        <text x="40ch" y= 5.5lh>Apple (Intel)</text>
-        <text x="40ch" y= 7lh>Windows (Intel)</text>
-        <text x="40ch" y= 8.5lh>...</text>
+        <text x="40" y= 2.5lh>Linux (ARM)</text>
+        <text x="40" y= 4lh>Apple (ARM)</text>
+        <text x="40" y= 5.5lh>Apple (Intel)</text>
+        <text x="40" y= 7lh>Windows (Intel)</text>
+        <text x="40" y= 8.5lh>...</text>
 
     </svg>
+    </div>
 
 .. container:: incremental
 
@@ -311,54 +315,55 @@ Virtuelle Maschinen
         .. raw:: html
             :class: center-content
 
-            <svg width="55ch" height="9lh" version="1.1" xmlns="http://www.w3.org/2000/svg">
-                <text x="1ch" y="1lh" style="font-style: italic">N Sprachen</text>
-                <text x="40ch" y="1lh" style="font-style: italic">M Plattformen</text>
+            <div style="width:72ch; height:14ch;">
+            <svg viewBox="0 0 50 10" font-size="1" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                <text x="1" y="1" style="font-style: italic">N Sprachen</text>
+                <text x="40" y="1" style="font-style: italic">M Plattformen</text>
 
-                <text x="20ch" y="4.5lh" style="font-style: italic">Virtuelle</text>
-                <text x="20ch" y="5.5lh" style="font-style: italic">Machine</text>
+                <text x="20" y="4.5" style="font-style: italic">Virtuelle</text>
+                <text x="20" y="5.5" style="font-style: italic">Machine</text>
 
-                <text x="1ch" y= 2.5lh>Pascal</text>
+                <text x="1" y="2.5">Pascal</text>
                 <g class="incremental">
-                    <line x1="7ch" y1="2.15lh" x2="19ch" y2="4.15lh" marker-end="url(#arrow)" />
-
+                    <line x1="7" y1="2.15" x2="19" y2="4.15" marker-end="url(#arrow)" />
                 </g>
 
-                <text x="1ch" y= 4lh>C</text>
+                <text x="1" y="4">C</text>
                 <g class="incremental">
-                    <line x1="2.5ch" y1="3.65lh" x2="19ch" y2="4.35lh" marker-end="url(#arrow)" />
+                    <line x1="2.5" y1="3.65" x2="19" y2="4.35" marker-end="url(#arrow)" />
                 </g>
 
-                <text x="1ch" y= 5.5lh>C++</text>
+                <text x="1" y="5.5">C++</text>
                 <g class="incremental">
-                    <line x1="4.5ch" y1="5.15lh" x2="19ch" y2="4.55lh" marker-end="url(#arrow)" />
+                    <line x1="4.5" y1="5.15" x2="19" y2="4.55" marker-end="url(#arrow)" />
                 </g>
 
-                <text x="1ch" y= 7lh>Smalltalk</text>
+                <text x="1" y="7">Smalltalk</text>
                 <g class="incremental">
-                    <line x1="10.5ch" y1="6.65lh" x2="19ch" y2="4.75lh" marker-end="url(#arrow)" />
+                    <line x1="10.5" y1="6.65" x2="19" y2="4.75" marker-end="url(#arrow)" />
                 </g>
 
-                <text x="1ch" y= 8.5lh>...</text>
+                <text x="1" y="8.5">...</text>
                 <g class="incremental">
-                    <line x1="5ch" y1="8.25lh" x2="19ch" y2="4.95lh" marker-end="url(#arrow)" />
+                    <line x1="5" y1="8.25" x2="19" y2="4.95" marker-end="url(#arrow)" />
                 </g>
 
                 <g class="incremental">
-                    <line x1="29ch" y1="4.95lh" x2="39ch" y2="8.25lh" marker-end="url(#arrow)" />
-                    <line x1="29ch" y1="4.15lh" x2="39ch" y2="2.15lh" marker-end="url(#arrow)" />
-                    <line x1="29ch" y1="4.35lh" x2="39ch" y2="3.65lh" marker-end="url(#arrow)" />
-                    <line x1="29ch" y1="4.55lh" x2="39ch" y2="5.15lh" marker-end="url(#arrow)" />
-                    <line x1="29ch" y1="4.75lh" x2="39ch" y2="6.65lh" marker-end="url(#arrow)" />
+                    <line x1="29" y1="4.95" x2="39" y2="8.25" marker-end="url(#arrow)" />
+                    <line x1="29" y1="4.15" x2="39" y2="2.15" marker-end="url(#arrow)" />
+                    <line x1="29" y1="4.35" x2="39" y2="3.65" marker-end="url(#arrow)" />
+                    <line x1="29" y1="4.55" x2="39" y2="5.15" marker-end="url(#arrow)" />
+                    <line x1="29" y1="4.75" x2="39" y2="6.65" marker-end="url(#arrow)" />
                 </g>
 
-                <text x="40ch" y= 2.5lh>Linux (ARM)</text>
-                <text x="40ch" y= 4lh>Apple (ARM)</text>
-                <text x="40ch" y= 5.5lh>Apple (Intel)</text>
-                <text x="40ch" y= 7lh>Windows (Intel)</text>
-                <text x="40ch" y= 8.5lh>...</text>
+                <text x="40" y="2.5">Linux (ARM)</text>
+                <text x="40" y="4">Apple (ARM)</text>
+                <text x="40" y="5.5">Apple (Intel)</text>
+                <text x="40" y="7">Windows (Intel)</text>
+                <text x="40" y="8.5">...</text>
 
             </svg>
+            </div>
 
     .. card::
 
@@ -466,13 +471,13 @@ Java-Übersetzung
 
         .. card::
 
-            .. rubric:: HelloWorld.java (im Package de.dhbw)
-
-            :peripheral:`Die Datei HelloWorld.java muss im Verzeichnis de/dhbw liegen!`
+            .. rubric:: HelloWorld.java (im Package de.dhbw)\ [#]_
 
             .. include:: code/de/dhbw/HelloWorld.java
                 :code: java
                 :number-lines:
+
+            .. [#] :peripheral:`Die Datei HelloWorld.java muss im Verzeichnis de/dhbw liegen!`
 
         .. card::
 
