@@ -16,19 +16,17 @@
 
 
 
-Advanced Encryption Standard (AES)\ [#]_
+Advanced Encryption Standard (AES)
 ===============================================
 
-:Dozent:  `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
-:Kontakt: michael.eichberg@dhbw.de
-:Version: 1.0.8
+:Dozent:    `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
+:Kontakt:   `michael.eichberg@dhbw.de`
+:Version:   1.0.9
 
-.. [#]
-        Basierend auf:
-
-        **William Stallings**, *Cryptography and Network Security - Principles and Practice*, 8th Edition, Pearson, 2023
-
-        `NIST FIPS PUB 197, "Advanced Encryption Standard (AES)" <https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.197.pdf>`_
+.. class:: sources
+    
+:Quellen:   - William Stallings, *Cryptography and Network Security - Principles and Practice*, 8th Edition, Pearson, 2023
+            - `NIST FIPS PUB 197, "Advanced Encryption Standard (AES)" <https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.197.pdf>`_
 
 .. supplemental::
 
@@ -497,7 +495,6 @@ AES *Round Constant* Berechnung
 
     :math:`r_{c_{6}}=20,r_{c_{7}}=40,r_{c_{8}}=80,r_{c_{9}}=1B = 0001 1011, r_{c_{10}}=36`
 
-
 .. supplemental::
 
     Die :math:`xtime` Funktion ist eine Multiplikation im endlichen Körper :math:`GF(2^8)` und ist die Polynommultiplikation mit dem Polynom :math:`x`.
@@ -694,40 +691,42 @@ Vertausch von *AddRoundKey* und *InvMixColumns*
 
 
 
-Aspekte der Umsetzung auf 8-bit Prozessoren
-----------------------------------------------
+.. TODO Löschen der Diskussion über 8-bit und 32-bit Prozessoren
 
-AES kann sehr effizient auf einem 8-Bit-Prozessor implementiert werden:
+.. Aspekte der Umsetzung auf 8-bit Prozessoren
+.. ----------------------------------------------
 
-:AddRoundKey: ist eine byteweise XOR-Operation.
-:ShiftRows: ist eine einfache Byte-Verschiebeoperation.
-:SubBytes: arbeitet auf Byte-Ebene und benötigt nur eine Tabelle von 256 Bytes.
-:MixColumns: erfordert eine Matrixmultiplikation im Körper :math:`GF(2^8)`, was bedeutet, dass alle Operationen mit Bytes durchgeführt werden.
+.. AES kann sehr effizient auf einem 8-Bit-Prozessor implementiert werden:
+
+.. :AddRoundKey: ist eine byteweise XOR-Operation.
+.. :ShiftRows: ist eine einfache Byte-Verschiebeoperation.
+.. :SubBytes: arbeitet auf Byte-Ebene und benötigt nur eine Tabelle von 256 Bytes.
+.. :MixColumns: erfordert eine Matrixmultiplikation im Körper :math:`GF(2^8)`, was bedeutet, dass alle Operationen mit Bytes durchgeführt werden.
 
 
 
-Aspekte der Umsetzung auf 32-bit Prozessoren
-------------------------------------------------
+.. Aspekte der Umsetzung auf 32-bit Prozessoren
+.. ------------------------------------------------
 
-AES kann effizient auf einem 32-Bit-Prozessor implementiert werden:
+.. AES kann effizient auf einem 32-Bit-Prozessor implementiert werden:
 
-- Die einzelnen Schritte können so umdefiniert werden, dass sie 32-Bit-Wörter verwenden.
-- Es ist möglich 4 Tabellen für die *MixColumns* Transformation mit je 256 Wörtern vorzuberechnen.
+.. - Die einzelnen Schritte können so umdefiniert werden, dass sie 32-Bit-Wörter verwenden.
+.. - Es ist möglich 4 Tabellen für die *MixColumns* Transformation mit je 256 Wörtern vorzuberechnen.
 
-  - Dann kann jede Spalte in jeder Runde mit 4 Tabellen-Lookups + 4 XORs berechnet werden.
-  - Die Kosten für die Speicherung der Tabellen belaufen sich auf „4Kb“.
+..  - Dann kann jede Spalte in jeder Runde mit 4 Tabellen-Lookups + 4 XORs berechnet werden.
+..  - Die Kosten für die Speicherung der Tabellen belaufen sich auf „4Kb“.
 
-- Die Entwickler glauben, dass die Möglichkeit einer effizienten Implementierung ein Schlüsselfaktor für die Wahl der AES-Chiffre zum neuen Standard war.
+.. - Die Entwickler glauben, dass die Möglichkeit einer effizienten Implementierung ein Schlüsselfaktor für die Wahl der AES-Chiffre zum neuen Standard war.
 
-.. supplemental::
+.. .. supplemental : :
 
-    .. image:: drawings/vorberechnung-von-mixcolumns.webp
-        :align: center
-        :alt: Vorberechnung von MixColumns
+..    .. image:: drawings/vorberechnung-von-mixcolumns.webp
+..        :align: center
+..        :alt: Vorberechnung von MixColumns
 
-.. presenter-note::
+.. .. presenter-note::
 
-    Link auf Diskussion der Tabellen: https://crypto.stackexchange.com/questions/19175/efficient-aes-use-of-t-tables
+..    Link auf Diskussion der Tabellen: https://crypto.stackexchange.com/questions/19175/efficient-aes-use-of-t-tables
 
 
 
