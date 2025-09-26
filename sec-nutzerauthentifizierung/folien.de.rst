@@ -100,7 +100,7 @@ Zero-Knowledge Protokolle
 
             .. grid::
 
-                .. cell:: width-60
+                .. cell:: width-70
 
                     .. class:: incremental-list
 
@@ -108,14 +108,16 @@ Zero-Knowledge Protokolle
                     - Sobald Peggy Bescheid gibt, dass Sie an der Tür angekommen ist, geht Victor zu Punkt B und sagt Peggy auf welchem Weg sie zurückkommen soll.
                     - Kommt sie auf dem falschen Weg zurück, dann kennt sie den Code der Tür (offensichtlich) nicht. Kommt sie auf dem richtigen Weg zurück, könnte es noch immer Zufall gewesen sein mit Wahrscheinlichkeit :math:`\frac{1}{2}`.
 
-                .. cell:: width-40
+                .. cell:: width-30
 
                     .. image:: images/zkp-geheimgang.svg
                         :align: center
 
                     .. container:: incremental
 
-                        Wird das Spiel jedoch :math-i:`n` mal gespielt und Peggy kommt immer auf dem richtigen Weg zurück, dann ist die Wahrscheinlichkeit, dass Peggy immer zufällig den richtigen Weg genommen hat :math:`\frac{1}{2^n}`.
+                        Bei n Spielen ist die Wahrscheinlichkeit, dass Peggy immer zufällig den korrekt Weg gewählt hat :math:`\frac{1}{2^n}`.
+
+                        .. Wenn wir :math-i:`n` mal spielen und Peggy kommt immer auf dem richtigen Weg zurück, dann ist die Wahrscheinlichkeit dafür, dass sie es immer zufällig korrekt getan hat :math:`\frac{1}{2^n}`.
 
     .. card::
 
@@ -169,7 +171,7 @@ Fiat-Shamir Protokoll
 
 .. class:: exercises
 
-Übung - klassisches Fiat-Shamir-Protokoll
+Übung: klassisches Fiat-Shamir-Protokoll
 -------------------------------------------
 
 .. exercise:: Beispiel: Fiat-Shamir-Protokoll mit kleinen Zahlen
