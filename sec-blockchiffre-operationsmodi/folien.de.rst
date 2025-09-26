@@ -22,7 +22,10 @@ Betriebsmodi bei Blockchiffren
 :Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
 :Kontakt: michael.eichberg@dhbw.de
 :Version: 1.3.2
-:Basierend auf: *Cryptography and Network Security - Principles and Practice, 8th Edition, William Stallings*
+
+.. class:: sources
+    
+:Quelle: *Cryptography and Network Security - Principles and Practice, 8th Edition, William Stallings*
 
 .. supplemental::
 
@@ -217,7 +220,6 @@ Cipher Block Chaining\ [#]_
 
 Blockchiffren, die als Stromchiffren verwendet werden können.
 ---------------------------------------------------------------
-
 
 
 

@@ -9,8 +9,6 @@
 
 .. include:: ../docutils.defs
 
-
-
 .. |Kontrollfragen| source:: kontrollfragen.de.rst
                     :path: relative
                     :prefix: https://delors.github.io/
@@ -24,7 +22,10 @@ Block Chiffre und der *Data Encryption Standard (DES)*
 :Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
 :Kontakt: michael.eichberg@dhbw.de
 :Version: 1.1.4
-:Basierend auf: *Cryptography and Network Security - Principles and Practice, 8th Edition, William Stallings*
+
+.. class:: sources
+    
+:Quelle: *Cryptography and Network Security - Principles and Practice, 8th Edition, William Stallings*
 
 .. supplemental::
 
