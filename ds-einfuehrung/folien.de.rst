@@ -13,11 +13,22 @@
 Einführung in verteilte Systeme
 ================================================
 
-Ein weitgefasster Überblick über verteilte Systeme.
-
 :Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
 :Kontakt: michael.eichberg@dhbw.de, Raum 149B
 :Version: 1.0.1
+
+.. class:: sources
+
+:Quellen: 
+
+    Zum Teil basierend auf Folien von:
+
+    (a) Maarten van Steen (Veröffentlicht zum Buch *Distributed Systems*)
+
+    (b) Henning Pagnia (basierend auf seiner Vorlesung *Verteilte Systeme*).
+
+    Alle Fehler sind meine eigenen.
+
 
 .. supplemental::
 
@@ -34,15 +45,6 @@ Ein weitgefasster Überblick über verteilte Systeme.
 
 
 
-.. container:: footer-left incremental peripheral
-
-    Dieser Foliensatz basiert in Teilen auf Folien von:
-
-    (a) Maarten van Steen (Veröffentlicht zum Buch *Distributed Systems*)
-
-    (b) Henning Pagnia (basierend auf seiner Vorlesung *Verteilte Systeme*).
-
-    Alle Fehler sind meine eigenen.
 
 
 
@@ -93,7 +95,7 @@ Podcast: `Thoughtworks Technology Podcast <https://www.thoughtworks.com/en-de/in
 
 .. class:: new-section transition-fade
 
-Verteilte Systeme - Beschreibung und Eigenschaften
+Verteilte Systeme: Beschreibung und Eigenschaften
 ------------------------------------------------------------
 
 
