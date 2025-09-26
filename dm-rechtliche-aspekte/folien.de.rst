@@ -14,7 +14,7 @@ Rechtliche Anforderungen an das Dokumentenmanagement
 
 :Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
 :Kontakt: michael.eichberg@dhbw.de, Raum 149B
-:Version: 1.1
+:Version: 1.1.1
 
 .. supplemental::
 
@@ -152,7 +152,7 @@ Allgemeine Grundsätze: Integrität von Dokumenten
   - Seitennummerierung mit Bezug zur Gesamtzahl der Seiten
   - Kordel und Siegel bei notariellen Urkunden
   - Signatur jeder einzelnen Seite
-  - den Nachweis über den unverfälschten Inhalt von nicht-elektronischen Dokumenten können ggf. nur kriminaltechnische Untersuchungen erbringen
+  - :peripheral:`den Nachweis über den unverfälschten Inhalt von nicht-elektronischen Dokumenten können ggf. nur kriminaltechnische Untersuchungen erbringen`
 - Die Integrität von elektronischen Dokumenten kann durch Signaturen gewährleistet werden.
 
 
@@ -173,7 +173,17 @@ Revisionssicherheit
 
 .. epigraph::
 
-    Revisionssicherheit bezieht sich rückblickend auf die Prüfbarkeit des eingesetzten Verfahrens der Aufbewahrung und somit nicht nur auf technische Komponenten, sondern auf die gesamte Lösung. Revisionssicherheit schließt sichere Abläufe, die Organisation des Unternehmens, die ordnungsgemäße Nutzung, den sicheren Betrieb und den Nachweis in einer Verfahrensdokumentation ein.
+    Revisionssicherheit bezieht sich rückblickend auf die Prüfbarkeit des eingesetzten Verfahrens der Aufbewahrung und somit nicht nur auf technische Komponenten, sondern auf die gesamte Lösung. Revisionssicherheit schließt 
+    
+    [A] sichere Abläufe, 
+
+    [B] die Organisation des Unternehmens,
+
+    [C] die ordnungsgemäße Nutzung, 
+
+    [D] den sicheren Betrieb und 
+
+    [E] den Nachweis in einer Verfahrensdokumentation ein.
 
     -- Verband Organisations- und Informationssysteme e.V. (VOI)
 
@@ -190,7 +200,7 @@ Grundsätze ordnungsgemäßer Buchführung (GoB)
   - :peripheral:`Grundsatz der Einzelbewertung`
   - Grundsatz der Vollständigkeit
   - Grundsatz der Ordnungsmäßigkeit
-  - Grundsatz der Sicherheit (Revisionssichere Aufbewahrung)
+  - Grundsatz der Sicherheit (revisionssichere Aufbewahrung)
   - Belegprinzip
 
 
@@ -200,7 +210,7 @@ Grundsätze ordnungsgemäßer Buchführung (GoB)
 
 .. container:: accentuate
 
-    Die elektronische Form wird mit der Schriftform im deutschen Recht gleichgestellt. Die gesetzliche Schriftform ist erfüllt, wenn elektronische Dokumente mit einer qualifizierten elektronischen Signatur versehen sind.
+    Die elektronische Form wird mit der Schriftform im deutschen Recht gleichgestellt. Die gesetzliche Schriftform ist erfüllt, wenn elektronische Dokumente mit einer **qualifizierten elektronischen Signatur** versehen sind.
 
 .. container:: incremental
 
@@ -275,7 +285,7 @@ Datenschutz - Grundlagen
 :für Unternehmen in Deutschland und Bundesbehörden:
 
   - Datenschutz-Grundverordnung (DSGVO)
-  - Bundesdatenschutz-gesetz (BDSG)
+  - Bundesdatenschutzgesetz (BDSG)
 
 :für öffentliche Stellen der Länder:
 
@@ -316,7 +326,7 @@ Stellen, die mit personenbezogenen Daten umgehen, müssen technische und organis
 Datensicherheit von Dokumentenverwaltungs- und Archivierungslösungen
 --------------------------------------------------------------------------
 
-in folgenden Bereichen müssen Maßnahmen ergriffen werden:
+In folgenden Bereichen müssen Maßnahmen ergriffen werden:
 
 .. class:: incremental-list
 
@@ -511,7 +521,7 @@ Aufbewahrungspflichten Ermitteln
 
     [... Gemeint] sind u. a. das HGB und **eine Vielzahl von Gesetzen und Verordnungen**, die für bestimmte Berufe oder Tätigkeiten Aufzeichnungs- und Buchführungspflichten vorschreiben. Beispielsweise müssen die Bewachungsbetriebe Auftragsbücher nach § 14 Abs. 2 Verordnung über das Bewachungsgewerbe i. V. m. § 34a Abs. 2 Nr. 3c Gewerbeordnung führen.
 
-    -- `IHK Hamburg (Abgerufen März 2024) <https://www.ihk.de/hamburg/produktmarken/beratung-service/recht-und-steuern/steuerrecht/abgabenrecht/aufbewahrungsfristen-geschaeftsunterlagen-1157174>`__
+    -- `Sept. 2025 (letzter Abruf) - IHK Hamburg  <https://www.ihk.de/hamburg/produktmarken/beratung-service/recht-und-steuern/steuerrecht/abgabenrecht/aufbewahrungsfristen-geschaeftsunterlagen-1157174>`__
 
 
 
