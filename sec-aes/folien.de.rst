@@ -79,23 +79,23 @@ Arithmetik endlicher Körper
 
 - Der Einfachheit halber — und aus Gründen der Implementierungseffizienz — möchten wir mit ganzen Zahlen arbeiten, die genau in eine bestimmte Anzahl von Bits passen, ohne dass Bitmuster verschwendet werden.
 
-  Ganze Zahlen im Bereich 0 bis :math:`2^n - 1`, die in ein n-Bit-Wort passen.
+  Ganze Zahlen im Bereich 0 bis 2ⁿ-1, die in ein n-Bit-Wort passen.
 
 - Wenn eine Operation des verwendeten Algorithmus die Division ist, dann müssen wir Arithmetik anwenden, die über einem (ggf. endlichen) Körper definiert ist.
 
   Division erfordert, dass jedes nicht-null-Element ein multiplikatives Inverses hat.
 
-- Wenn wir modulare Arithmetik auf die Menge der ganzen Zahlen :math:`Z_{2^n}` (mit :math:`n > 1`) anwenden, dann erhalten wir :red:`keinen` Körper!
+- Wenn wir modulare Arithmetik auf die Menge der ganzen Zahlen Z\ :sub:`2ⁿ` (mit n > 1) anwenden, dann erhalten wir :red:`keinen` Körper!
 
-  Zum Beispiel hat die ganze Zahl :math:`2` keine multiplikative Inverse in :math:`Z_{2^n}` (mit :math:`n > 1`), d. h. es gibt keine ganze Zahl :math:`b`, so dass :math:`2b\bmod 2^n = 1`
+  Zum Beispiel hat die ganze Zahl 2 keine multiplikative Inverse in Z\ :sub:`2ⁿ` (mit n > 1), d. h. es gibt keine ganze Zahl b, so dass 2b mod 2ⁿ = 1.
 
 .. class:: incremental
 
-- Ein endlicher Körper der :math:`2^n` Elemente enthält, wird als :math:`GF(2^n)` bezeichnet.
+- Ein endlicher Körper der 2ⁿ Elemente enthält, wird als GF(2ⁿ) bezeichnet.
 
   .. hint::
 
-    Jedes Polynom in :math:`GF(2^n)` kann durch eine n-Bit-Zahl dargestellt werden.
+    Jedes Polynom in GF(2ⁿ) kann durch eine n-Bit-Zahl dargestellt werden.
 
 
 
