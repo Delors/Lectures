@@ -22,16 +22,16 @@
 
 
 
-Eine erste Einführung in die Sicherheit von (verteilten) Systemen\ [#]_
+Eine erste Einführung in die Sicherheit von verteilten Systemen
 ========================================================================
 
 :Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
 :Kontakt: michael.eichberg@dhbw.de
-:Version: 1.3.6
+:Version: 1.3.7
 
-.. [#] Die Folien basieren unter anderem auf einem Foliensatz von Prof. Dr. Henning Pagnia.
+.. class:: sources
 
-    Alle Fehler sind meine eigenen.
+:Quellen: Folien von Prof. Dr. Henning Pagnia bzgl. Netzwerksicherheit
 
 .. supplemental::
 
@@ -847,7 +847,7 @@ HMAC-based one-time password (HOTP)\ [#]_
 
 .. class:: incremental
 
-- Zur Authentifizierung berechnen beide das Einmalpasswort (HOTP) und dann vergleicht der Server den Wert mit dem vom Client übermittelten Wert:
+- Zur Authentifizierung berechnen beide das Einmalpasswort (HOTP) und dann vergleicht der Server den Wert mit dem vom Client übermittelten Wert.
 
   Berechnung aus dem Schlüssel :math:`K` und dem Zähler :math:`C`:
 

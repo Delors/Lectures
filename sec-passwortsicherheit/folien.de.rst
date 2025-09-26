@@ -15,7 +15,7 @@ Passwortsicherheit
 
 :Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
 :Kontakt: michael.eichberg@dhbw.de
-:Version: 2.2.1
+:Version: 2.2.2
 
 .. supplemental::
 
@@ -83,8 +83,7 @@ Verwendung von Passworten
 
     Obwohl an vielen Stellen versucht wird Passwörter aus vielen Gründen zurück zu drängen, so ist die Verwendung noch allgegenwärtig und in machen Bereichen ist auch nicht unmittelbar eine Ablösung zu erkennen.
 
-    Biometrie ist zum Beispiel in machen Bereichen kein Ersatz für Passwörter und wird - wenn überhaupt - nur ergänzend genommen. So ist es zum Beispiel im deutschen Recht erlaubt/möglich einem Beschuldigten sein Smartphone bei Bedarf vor das Gesicht zu halten, um es zu entsperren (Stand 2023). Je nach Qualität des Fingerabdrucksensors können ggf. auch genommene Fingerabdrücke verwendet werden. Möchte der Beschuldigte jedoch das Passwort nicht freiwillig nennen, dann besteht keine direkte weitere Handhabe.
-
+    Biometrie ist zum Beispiel in machen Bereichen kein Ersatz für Passwörter und wird - wenn überhaupt - nur ergänzend genommen. So ist es zum Beispiel im deutschen Recht erlaubt/möglich einem Beschuldigten sein Smartphone bei Bedarf vor das Gesicht zu halten, um es zu entsperren (Stand 2025). Je nach Qualität des Fingerabdrucksensors können ggf. auch genommene Fingerabdrücke verwendet werden. Möchte der Beschuldigte jedoch das Passwort nicht freiwillig nennen, dann besteht keine direkte weitere Handhabe.
 
 
 
@@ -577,31 +576,33 @@ Berechnung der ersten Runde des PBKDF2-HMAC
 
 Bei einer Runde und passenden Blockgrößen ist das Ergebnis der PBKDF2 somit gleich mit der Berechnung des HMACs wenn der Salt um die Nummer des Blocks ``\x00\x00\x00\x01`` ergänzt wurde.
 
-**Implementierung in Python**
+.. story::
 
-.. code:: python
-    :class: copy-to-clipboard
-    :number-lines:
+    .. rubric:: Implementierung in Python
 
-    import hashlib
-    pwd = b"MyPassword"
-    stretched_pwd = pwd + (64-len(pwd)) * b"\x00"
+    .. code:: python
+        :class: copy-to-clipboard
+        :number-lines:
 
-    ikeypad = bytes(map(lambda x : x ^ 0x36 , stretched_pwd)) # xor with ipad
-    okeypad = bytes(map(lambda x : x ^ 0x5c , stretched_pwd)) # xor with opad
+        import hashlib
+        pwd = b"MyPassword"
+        stretched_pwd = pwd + (64-len(pwd)) * b"\x00"
+        ikeypad = bytes(map(lambda x : x ^ 0x36 , stretched_pwd)) # xor with ipad
+        okeypad = bytes(map(lambda x : x ^ 0x5c , stretched_pwd)) # xor with opad
 
-    hash1 = hashlib.sha256(ikeypad+b"JustASalt"+b"\x00\x00\x00\x01").digest()
-    hmac  = hashlib.sha256(okeypad+hash1).digest()
+        hash1 = hashlib.sha256(ikeypad+b"JustASalt"+b"\x00\x00\x00\x01").digest()
+        hmac  = hashlib.sha256(okeypad+hash1).digest()
 
 
-.. container:: incremental
+    .. container:: incremental
 
-    **Ergebnis**
+        .. rubric:: Ergebnis
 
-    .. code:: text
+        .. code:: text
+            :number-lines:
 
-        hmac = b'h\x88\xc2\xb6X\xb7\xcb\x9c\x90\xc2R\xf8\xb1\xf7\x10
-                 \xb2L\x8a\xba\xfb\x9e|\x16\x87\x87\x0e\xad\xa1\xe1:9\xca'
+            hmac = b'h\x88\xc2\xb6X\xb7\xcb\x9c\x90\xc2R\xf8\xb1\xf7\x10
+                    \xb2L\x8a\xba\xfb\x9e|\x16\x87\x87\x0e\xad\xa1\xe1:9\xca'
 
 
 .. supplemental::
@@ -747,10 +748,12 @@ Eine gute Quelle für das Studium von Passwörtern sind sogenannte *Leaks* oder 
 
         1234567890
 
-        123123
+        
 
     .. cell:: width-33 text-align-center
 
+        123123
+        
         abc123
 
         1234
@@ -767,11 +770,11 @@ Eine gute Quelle für das Studium von Passwörtern sind sogenannte *Leaks* oder 
 
         zaq12wsx
 
+    .. cell:: width-33 text-align-center
+
         dragon
 
         sunshine
-
-    .. cell:: width-33 text-align-center
 
         princess
 
@@ -787,11 +790,6 @@ Eine gute Quelle für das Studium von Passwörtern sind sogenannte *Leaks* oder 
 
         123321
 
-        qwertyuiop
-
-        superman
-
-        asdfghjkl
 
 .. supplemental::
 

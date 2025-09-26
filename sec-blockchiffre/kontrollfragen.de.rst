@@ -20,6 +20,7 @@ Kontrollfragen: Blockchiffren
 :Version: 1.0.1
 
 
+
 .. class:: new-section
 
 Blockchiffren - Allgemein
@@ -155,7 +156,6 @@ Kontrollfragen
             :pwd: genau umgekehrt, sie sein sollten
 
             Der Algorithmus kann unverändert verwendet werden, aber der "Keyschedule" muss invertiert werden!
-
 
 
 

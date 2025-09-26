@@ -17,13 +17,13 @@ Zufallszahlen und Stromchiffre - Kontrollaufgaben
 
 :Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
 :Kontakt: michael.eichberg@dhbw.de, Raum 149B
-:Version: 1.0
+:Version: 1.0.1
 
 
 
 .. class:: new-section
 
-Grundlagen
+Zufallszahlen
 ---------------------------------------
 
 
@@ -90,7 +90,6 @@ Fragen
            - **CTR (Counter Mode)**: Verschlüsselung eines Zählers erzeugt Pseudozufallsfolge.
            - **OFB (Output Feedback)** (und **CFB (Cipher Feedback)**): Rückkopplung des Ausgabestroms.
 
-
         8. Wie TRNG-Ausgabe konditionieren, wenn leicht verzerrt?
 
            - Zur Entzerrung bieten sich Hashfunktionen (z. B. SHA-2) oder Verschlüsselungsverfahren (z. B. AES-CTR) an.
@@ -101,6 +100,13 @@ Fragen
            Misst die mittlere Informationsmenge pro Symbol. D. h. die Untergrenze der Anzahl an Bits, die benötigt werden, um ein Symbol - für eine gegebene Nachricht bzw. Häufigkeitsverteilung - zu kodieren.
 
            D. h. sei :math-i:`S` die Menge der verwendeten Symbole in einer Nachricht, und ist :math-i:`b` die Anzahl an Bits, die benötigt werden für die Kodierung eines Symbol, dann ist die Entropie maximal wenn alle Symbole gleich wahrscheinlich sind und es gilt::math:`b = \log_2(|S|)`.
+
+
+
+.. class:: new-section
+
+Stromchiffre
+---------------------------------------
 
 
 

@@ -13,11 +13,15 @@
 
 
 Endliche Körper - Kontrollaufgaben
-================================================================================
+================================================================
 
 :Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
 :Kontakt: michael.eichberg@dhbw.de, Raum 149B
 :Version: 1.0.1
+
+.. remark::
+
+   Dies ist nicht primärer Inhalt der Kryptovorlesungen, muss jedoch für die Prüfungen ggf. beherrscht werden, um zum Beispiel AES verstehen zu können. 
 
 
 .. class:: new-section

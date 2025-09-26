@@ -17,7 +17,10 @@ Klassische Verschlüsselungsmethoden
 :Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
 :Kontakt: michael.eichberg@dhbw.de, Raum 149B
 :Version: 1.1.2
-:Quelle: Im Wesentlichen: *Cryptography and Network Security - Principles and Practice, 8th Edition, William Stallings*
+
+.. class:: sources
+
+:Quelle: *Cryptography and Network Security - Principles and Practice, 8th Edition, William Stallings*
 
 .. supplemental::
 

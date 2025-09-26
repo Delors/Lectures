@@ -18,7 +18,10 @@ Einführung in die Zahlentheorie
 :Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
 :Kontakt: michael.eichberg@dhbw.de
 :Version: 1.1.5
-:Quelle: Im Wesentlichen *Cryptography and Network Security - Principles and Practice, 8th Edition, William Stallings*
+
+.. class:: sources
+
+:Quelle: *Cryptography and Network Security - Principles and Practice, 8th Edition, William Stallings*
 
 .. supplemental::
 
@@ -1103,7 +1106,6 @@ Die eindeutige Lösung in :math:`Z_{10}` ist: :math:`8`.
     Man könnte auch folgendes Problem versuchen zu lösen: Wir haben :math:`x` Schokoladentafeln. Wenn wir diese fair auf zwei Personen verteilen, dann haben wir keinen Rest. Wenn wir diese jedoch auf 5 Personen aufteilen, dann haben wir 3 Tafeln übrig.  Wieviele Schokoladentafeln haben wir?
 
     (Zur Erinnerung: zwei Zahlen :math:`x` und :math:`y` sind relativ prim, wenn ihr größter gemeinsamer Teiler 1 ist.)
-
 
 
 
