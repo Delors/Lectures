@@ -1427,7 +1427,7 @@ Wörterbuchgenerierung - Evaluation von Werkzeugen
         6e609749618fa564c83d712f96706337f6a78ef9132c16bea215774c8c1382be
         9d394775682dde10d89eb667f1049312d76bfcfc030a33f2598b117eb30a3966
 
-    Verwenden Sie den bekannten Leak Rockyou.txt (z. B. zu finden auf https://github.com/brannondorsey/naive-hashcat/releases/download/data/rockyou.txt), um das Passwort zu finden.
+    Verwenden Sie den Leak Rockyou.txt (z. B. auf https://github.com/brannondorsey/naive-hashcat/releases/download/data/rockyou.txt), um das Passwort zu finden.
 
     .. important::
 
