@@ -17,7 +17,7 @@ Eine kurze Einführung/eine kurze Übersicht über JavaScript für erfahrene Pro
 
 :Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
 :Kontakt: michael.eichberg@dhbw.de, Raum 149B
-:Version: 2.1
+:Version: 2.1.1
 
 .. supplemental::
 
@@ -117,7 +117,7 @@ Reservierte Schlüsselworte
 
    Nicht (mehr) genutzte Schlüsselworte:
 
-   :javascript:`enum`, :javascript:`implements`, :javascript:`interface`, :javascript:`package`, :javascript:`private`, :javascript:`protected`, :javascript:`public`, :javascript:`with` (no longer)
+   :javascript:`enum`, :javascript:`implements`, :javascript:`interface`, :javascript:`package`, :javascript:`private`, :javascript:`protected`, :javascript:`public`, :javascript:`with` (nicht mehr verwendet)
 
 
 
@@ -172,6 +172,8 @@ ________________________________________________________________________________
 - ``process``
 - ``crypto``
 
+
+
 `Deklaration von Variablen <./code/Variables_const_let.mjs>`__ (:js:`const` und :js:`let`)
 --------------------------------------------------------------------------------------------
 
@@ -199,6 +201,24 @@ ________________________________________________________________________________
    Den entsprechenden Code der Module (log.mjs und später Queue.mjs) finden Sie auf:
 
    `https://github.com/Delors/delors.github.io/tree/main/web-javascript/code <https://github.com/Delors/delors.github.io/tree/main/web-javascript/code>`__
+
+
+
+`Variables (var) <./code/Variables_var.mjs>`__
+-----------------------------------------------------------------------------------------------
+
+.. attention::
+
+    Neuer Code sollte var nicht mehr verwenden!
+
+.. scrollable::
+
+   .. include:: code/Variables_var.mjs
+      :code: javascript
+      :number-lines:
+      :tab-width: 2
+      :start-line: 2
+      :end-before: done();
 
 
 
@@ -258,6 +278,7 @@ ________________________________________________________________________________
          console.log("Hello World");
 
 
+
 .. class:: exercises
 
 Übung - die JavaScript Konsole
@@ -265,7 +286,7 @@ ________________________________________________________________________________
 
 .. exercise:: Prototyping mit der JavaScript Konsole
 
-   Schreiben Sie ein kurzes JavaScript Programm, das programmatisch zum Ende des Dokuments scrollt.
+   Schreiben Sie ein kurzes JavaScript Snippet (in der Konsole des Browsers), das programmatisch zum Ende des Dokuments scrollt.
 
    .. container:: smaller
 
@@ -454,6 +475,8 @@ ________________________________________________________________________________
 
    Nutzen Sie keine :js:`if` oder :js:`switch` Anweisung, um die Operatoren zu unterscheiden. Nutzen Sie stattdessen ein Objekt. Sollte der Operator unbekannt sein, dann geben Sie eine entsprechende Fehlermeldung aus.
 
+   Nutzen Sie node.js als Test-/Ausführungsumgebung.
+
    Beispiel: :js:`eval([2,3,"+",4,"*"])` :math:`\Rightarrow` :js:`20`
 
    .. solution::
@@ -499,24 +522,6 @@ ________________________________________________________________________________
    - adding JavaScript to HTML files (in particular "defer" and "async" and type="module" )
    - adding major events DOMContentLoaded, onload, etc.
    -
-
-
-
-`Variables (var) <./code/Variables_var.mjs>`__
------------------------------------------------------------------------------------------------
-
-.. attention::
-
-    Neuer Code sollte var nicht mehr verwenden!
-
-.. scrollable::
-
-   .. include:: code/Variables_var.mjs
-      :code: javascript
-      :number-lines:
-      :tab-width: 2
-      :start-line: 2
-      :end-before: done();
 
 
 
@@ -579,36 +584,6 @@ ________________________________________________________________________________
         :tab-width: 2
         :end-before: class Queue {
 
-
-
-Grundlagen von ECMAScript Modulen
-------------------------------------------------
-
-.. scrollable::
-
-   `Queue.mjs <./code/Queue.mjs>`__ exportiert die Klasse Queue
-
-   .. include:: code/Queue.mjs
-      :code: javascript
-      :number-lines:
-      :class: code far-far-smaller copy-to-clipboard
-      :tab-width: 4
-
-   `log.mjs <./code/log.mjs>`__ verwendet (:js:`import`) die Klasse Queue und exportiert Funktionen zum Loggen
-
-   .. include:: code/log.mjs
-      :code: javascript
-      :number-lines:
-      :class: code far-far-smaller copy-to-clipboard
-      :tab-width: 4
-      :end-before: /**
-
-
-.. supplemental::
-
-   ECMAScript Module verwenden immer den *strict mode*.
-
-   Import Statements erlauben das selektierte importieren als auch das Umbenennen von importierten Elementen (z. B., :js:`import { Queue as Q } from "./Queue.mjs";`).
 
 
 
@@ -762,6 +737,38 @@ Praktische Verwendung von Prototypen basierter Vererbung
 
 
 
+Grundlagen von ECMAScript Modulen
+------------------------------------------------
+
+.. scrollable::
+
+   `Queue.mjs <./code/Queue.mjs>`__ exportiert die Klasse Queue
+
+   .. include:: code/Queue.mjs
+      :code: javascript
+      :number-lines:
+      :class: code far-far-smaller copy-to-clipboard
+      :tab-width: 4
+
+   `log.mjs <./code/log.mjs>`__ verwendet (:js:`import`) die Klasse Queue und exportiert Funktionen zum Loggen
+
+   .. include:: code/log.mjs
+      :code: javascript
+      :number-lines:
+      :class: code far-far-smaller copy-to-clipboard
+      :tab-width: 4
+      :end-before: /**
+
+
+.. supplemental::
+
+   ECMAScript Module verwenden immer den *strict mode*.
+
+   Import Statements erlauben das selektierte importieren als auch das Umbenennen von importierten Elementen (z. B., :js:`import { Queue as Q } from "./Queue.mjs";`).
+
+
+
+
 `DOM Manipulation <./code/DOM.html>`__
 ------------------------------------------------
 
@@ -857,6 +864,7 @@ Im Folgenden verwenden wir zur Client-/Server-Kommunikation insbesondere Websock
    Die Implementierung dient nur dazu die grundlegenden Konzepte zu verdeutlichen. Es fehlen **viele** Aspekte wie z. B., Sicherheit.
 
 
+
 .. TODO basic authentication and JSON Web Tokens (JWT)
 
 Authentifizierung mit JWT (und Express)
@@ -918,6 +926,8 @@ Referenzen
 - `HTML DOM API  <https://developer.mozilla.org/en-US/docs/Web/API/HTML_DOM_API>`__
 
 
+
+
 .. class:: new-section transition-scale
 
 Web Komponenten
@@ -937,6 +947,7 @@ Bei der Quizzy Komponenten handelt es sich um eine (ganz) einfache Client-Server
 .. warning::
 
     Es handelt sich nur um einen minimalen Prototyp, der lediglich der Demonstration von Webkomponenten und der Kommunikation selbiger mit Servern dient. Es existiert keinerlei Sicherheit!
+
 
 
 Quizzy - Server Code (server.js)
