@@ -17,7 +17,7 @@ Eine kurze Einführung/eine kurze Übersicht über JavaScript für erfahrene Pro
 
 :Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
 :Kontakt: michael.eichberg@dhbw.de, Raum 149B
-:Version: 2.1.1
+:Version: 2.1.2
 
 .. supplemental::
 
@@ -204,6 +204,9 @@ ________________________________________________________________________________
 
 
 
+
+.. class:: outdated
+
 `Variables (var) <./code/Variables_var.mjs>`__
 -----------------------------------------------------------------------------------------------
 
@@ -288,14 +291,12 @@ ________________________________________________________________________________
 
    Schreiben Sie ein kurzes JavaScript Snippet (in der Konsole des Browsers), das programmatisch zum Ende des Dokuments scrollt.
 
-   .. container:: smaller
+   .. hint:: 
 
-      Hinweise:
-
-      - das von :js:`document.body` referenziert HTML Element enthält den gesamten Inhalt des Dokuments
-      - die aktuellen Abmaße des Dokuments können Sie mit der Funktion :js:`window.getComputedStyle(<HTML Element>).height` ermitteln; geben Sie den Wert auf der Konsole aus bevor Sie das Dokument scrollen; was fällt Ihnen auf?
-      - um zu scrollen, können Sie :js:`window.scrollTo(x,y)` verwenden
-      - um den Integer Wert eines Wertes in Pixeln zu bestimmen, können Sie :js:`parseInt` verwenden.
+      - :js:`document.body` referenziert das HTML Body Element.
+      - Die aktuellen Abmaße des Dokuments können Sie mit der Funktion :js:`window.getComputedStyle(<HTML Element>).height` ermitteln; geben Sie den Wert auf der Konsole aus bevor Sie das Dokument scrollen; was fällt Ihnen auf?
+      - Um zu scrollen, können Sie :js:`window.scrollTo(x,y)` verwenden.
+      - Um den Integer Wert eines Wertes in Pixeln zu bestimmen, können Sie :js:`parseInt` verwenden.
 
         (Sei der String: :js:`"100px"`, dann liefert :js:`parseInt`, den Wert :js:`100`).
 
