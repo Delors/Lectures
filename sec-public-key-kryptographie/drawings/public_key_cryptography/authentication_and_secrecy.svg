@@ -1,686 +1,145 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
-    "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg
-    xmlns:xl="http://www.w3.org/1999/xlink"
-    xmlns:dc="http://purl.org/dc/elements/1.1/"
-    xmlns="http://www.w3.org/2000/svg"
-    version="1.1"
-    viewBox="-3 132 1201 440"
-    width="1801"
-    height="660"
->
-<style>
-  @import url('/LectureDoc2/ext/fonts/ld-fonts.css');
-</style>
-  <defs>
-    <filter id="Shadow" filterUnits="userSpaceOnUse" x="-123.1" y="88">
-      <feGaussianBlur in="SourceAlpha" result="blur" stdDeviation="1.308" />
-      <feOffset in="blur" result="offset" dx="0" dy="2" />
-      <feFlood flood-color="black" flood-opacity=".5" result="flood" />
-      <feComposite in="flood" in2="offset" operator="in" result="color" />
-      <feMerge>
-        <feMergeNode in="color" />
-        <feMergeNode in="SourceGraphic" />
-      </feMerge>
-    </filter>
-    <marker
-            orient="auto"
-            overflow="visible"
-            markerUnits="strokeWidth"
-            id="FilledArrow_Marker"
-            stroke-linejoin="miter"
-            stroke-miterlimit="10"
-            viewBox="-1 -3 6 6"
-            markerWidth="6"
-            markerHeight="6"
-            color="black"
-        >
-      <g>
-        <path
-                    d="M 3.7333333 0 L 0 -1.4 L 0 1.4 Z"
-                    fill="currentColor"
-                    stroke="currentColor"
-                    stroke-width="1"
-                />
-      </g>
-    </marker>
-  </defs>
-  <metadata> Produced by OmniGraffle 8.0\n2025-05-29 18:41:12 +0000</metadata>
-  <g
-        id="authentication_and_secrecy"
-        stroke="none"
-        stroke-opacity="1"
-        stroke-dasharray="none"
-        fill-opacity="1"
-        fill="none"
-    >
-    <title>authentication_and_secrecy</title>
-    <rect fill="white" x="-3" y="132" width="1201" height="440" />
-    <g id="authentication_and_secrecy_Layer_1">
-      <title>Layer 1</title>
-      <g id="Graphic_5" filter="url(#Shadow)">
-        <path
-                    d="M 29.46875 193 L 140.9375 193 C 145.35578 193 148.9375 196.58172 148.9375 201 L 148.9375 292.2 C 110.69688 279.8 59.709375 329.4 21.46875 304.6 L 21.46875 201 C 21.46875 196.58172 25.050472 193 29.46875 193 Z"
-                    fill="white"
-                />
-        <clipPath id="clip_path">
-          <path
-                        d="M 8 0 L 119.46875 0 C 123.88703 0 127.46875 3.581722 127.46875 8 L 127.46875 99.2 C 89.22812 86.8 38.240625 136.4 0 111.6 L 7105427e-21 8 C 7105427e-21 3.581722 3.581722 0 8 0 Z"
-                        fill="white"
-                    />
-        </clipPath>
-        <text
-                    clip-path="url(#clip_path)"
-                    transform="translate(26.46875 198)"
-                    fill="black"
-                >
-          <tspan
-                        font-family="Helvetica"
-                        font-size="26"
-                        font-weight="400"
-                        fill="black"
-                        x="0"
-                        y="25"
-                    >Nach-</tspan>
-          <tspan
-                        font-family="Helvetica"
-                        font-size="26"
-                        font-weight="400"
-                        fill="black"
-                        x="0"
-                        y="56"
-                    >richten-</tspan>
-          <tspan
-                        font-family="Helvetica"
-                        font-size="26"
-                        font-weight="400"
-                        fill="black"
-                        x="0"
-                        y="87"
-                    >quelle</tspan>
+<svg xmlns="http://www.w3.org/2000/svg" width="1801" height="660" viewBox="-3 132 1201 440">
+    <style>
+        @import url(/LectureDoc2/ext/fonts/ld-fonts.css);
+        text,tspan{
+          font-family:&quot;Noto Sans Display&quot;,&quot;Noto Sans&quot;,&quot;Helvetica Neue&quot;,Arial,sans-serif;
+          font-weight:300
+        }
+        .line{stroke:#000;stroke-width:3}
+        .arrow-line,.line,.outline-4{stroke-linecap:round;stroke-linejoin:round}
+        .arrow-line{stroke:#000;stroke-width:3;marker-end:url(#FilledArrow_Marker)}
+        .outline-4{stroke:#344463;stroke-width:4}
+    </style>
+    <defs>
+        <marker id="FilledArrow_Marker" stroke-linejoin="miter" stroke-miterlimit="10" color="#000" markerHeight="6" markerUnits="strokeWidth" markerWidth="6" orient="auto" overflow="visible" viewBox="-1 -3 6 6">
+            <path fill="currentColor" stroke="currentColor" d="M3.733 0 0-1.4v2.8Z"/>
+        </marker>
+        <filter id="Shadow" x="-123.1" y="88" filterUnits="userSpaceOnUse">
+            <feGaussianBlur in="SourceAlpha" result="blur" stdDeviation="1.308"/>
+            <feOffset dy="2" in="blur" result="offset"/>
+            <feFlood flood-color="#000" flood-opacity=".5" result="flood"/>
+            <feComposite in="flood" in2="offset" operator="in" result="color"/>
+            <feMerge>
+                <feMergeNode in="color"/>
+                <feMergeNode in="SourceGraphic"/>
+            </feMerge>
+        </filter>
+    </defs>
+    <g fill="none">
+        <path fill="#fff" d="M-3 132h1201v440H-3z"/>
+        <g filter="url(#Shadow)">
+            <path fill="#fff" d="M29.469 193h111.469a8 8 0 0 1 8 8v91.2c-38.241-12.4-89.229 37.2-127.47 12.4V201a8 8 0 0 1 8-8"/>
+            <clipPath id="clip_path">
+                <path fill="#fff" d="M8 0h111.469a8 8 0 0 1 8 8v91.2C89.229 86.8 38.24 136.4 0 111.6V8a8 8 0 0 1 8-8"/>
+            </clipPath>
+            <text fill="#000" clip-path="url(#clip_path)" transform="translate(26.469 198)">
+          <tspan x="0" y="25" font-size="26">Nach-</tspan>
+          <tspan x="0" y="56" font-size="26">richten-</tspan>
+          <tspan x="0" y="87" font-size="26">quelle</tspan>
         </text>
-      </g>
-      <g id="Graphic_7" filter="url(#Shadow)">
-        <path
-                    d="M 1071.5988 193 L 1178.5988 193 C 1183.0171 193 1186.5988 196.58172 1186.5988 201 L 1186.5988 292.2 C 1149.6988 279.8 1100.4988 329.4 1063.5988 304.6 L 1063.5988 201 C 1063.5988 196.58172 1067.1805 193 1071.5988 193 Z"
-                    fill="white"
-                />
-        <clipPath id="clip_path_2">
-          <path
-                        d="M 8 0 L 115 0 C 119.41828 0 123 3.581722 123 8 L 123 99.2 C 86.1 86.8 36.9 136.4 0 111.6 L 0 8 C 0 3.581722 3.581722 0 8 0 Z"
-                        fill="white"
-                    />
-        </clipPath>
-        <text
-                    clip-path="url(#clip_path_2)"
-                    transform="translate(1068.5988 198)"
-                    fill="black"
-                >
-          <tspan
-                        font-family="Helvetica"
-                        font-size="26"
-                        font-weight="400"
-                        fill="black"
-                        x="35.552734"
-                        y="25"
-                    >Ziel</tspan>
+        </g>
+        <g filter="url(#Shadow)">
+            <path fill="#fff" d="M1071.599 193h107a8 8 0 0 1 8 8v91.2c-36.9-12.4-86.1 37.2-123 12.4V201a8 8 0 0 1 8-8"/>
+            <clipPath id="clip_path_2">
+                <path fill="#fff" d="M8 0h107a8 8 0 0 1 8 8v91.2C86.1 86.8 36.9 136.4 0 111.6V8a8 8 0 0 1 8-8"/>
+            </clipPath>
+            <text fill="#000" clip-path="url(#clip_path_2)" transform="translate(1068.599 198)">
+          <tspan x="35.553" y="25" font-size="26">Ziel</tspan>
         </text>
-      </g>
-      <g id="Graphic_19">
-        <rect x="216.46875" y="185" width="123" height="132" fill="#ffc0c0" />
-        <rect
-                    x="216.46875"
-                    y="185"
-                    width="123"
-                    height="132"
-                    stroke="#344463"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="4"
-                />
-        <text transform="translate(221.46875 190)" fill="#344463">
-          <tspan
-                        font-family="Helvetica"
-                        font-size="22"
-                        font-weight="400"
-                        fill="#344463"
-                        x="0"
-                        y="21"
-                    >Verschlüs-</tspan>
-          <tspan
-                        font-family="Helvetica"
-                        font-size="22"
-                        font-weight="400"
-                        fill="#344463"
-                        x="0"
-                        y="47"
-                    >selungs-</tspan>
-          <tspan
-                        font-family="Helvetica"
-                        font-size="22"
-                        font-weight="400"
-                        fill="#344463"
-                        x="0"
-                        y="73"
-                    >alg.</tspan>
+        </g>
+        <path fill="#ffc0c0" d="M216.469 185h123v132h-123z"/>
+        <path d="M216.469 185h123v132h-123z" class="outline-4"/>
+        <text fill="#344463" transform="translate(221.469 190)">
+          <tspan x="0" y="21" font-size="22">Verschlüs-</tspan>
+          <tspan x="0" y="47" font-size="22">selungs-</tspan>
+          <tspan x="0" y="73" font-size="22">alg.</tspan>
         </text>
-      </g>
-      <g id="Graphic_22">
-        <text transform="translate(299 270.5)" fill="black">
-          <tspan
-                        font-family="Apple Color Emoji"
-                        font-size="28"
-                        font-weight="400"
-                        fill="black"
-                        x="0"
-                        y="28"
-                    >🔒</tspan>
+        <text fill="#000" transform="translate(299 270.5)">
+          <tspan x="0" y="28" font-family="Apple Color Emoji" font-size="28">🔒</tspan>
         </text>
-      </g>
-      <g id="Graphic_23">
-        <rect x="681" y="185" width="123" height="132" fill="#c0ffc0" />
-        <rect
-                    x="681"
-                    y="185"
-                    width="123"
-                    height="132"
-                    stroke="#344463"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="4"
-                />
-        <text transform="translate(686 190)" fill="#344463">
-          <tspan
-                        font-family="Helvetica"
-                        font-size="22"
-                        font-weight="400"
-                        fill="#344463"
-                        x="0"
-                        y="21"
-                    >Entschlüs-</tspan>
-          <tspan
-                        font-family="Helvetica"
-                        font-size="22"
-                        font-weight="400"
-                        fill="#344463"
-                        x="0"
-                        y="47"
-                    >selungs-</tspan>
-          <tspan
-                        font-family="Helvetica"
-                        font-size="22"
-                        font-weight="400"
-                        fill="#344463"
-                        x="0"
-                        y="73"
-                    >alg.</tspan>
+        <path fill="#c0ffc0" d="M681 185h123v132H681z"/>
+        <path d="M681 185h123v132H681z" class="outline-4"/>
+        <text fill="#344463" transform="translate(686 190)">
+          <tspan x="0" y="21" font-size="22">Entschlüs-</tspan>
+          <tspan x="0" y="47" font-size="22">selungs-</tspan>
+          <tspan x="0" y="73" font-size="22">alg.</tspan>
         </text>
-      </g>
-      <g id="Graphic_21">
-        <text transform="translate(768.4012 270.5)" fill="black">
-          <tspan
-                        font-family="Apple Color Emoji"
-                        font-size="28"
-                        font-weight="400"
-                        fill="black"
-                        x="0"
-                        y="28"
-                    >🔓</tspan>
+        <text fill="#000" transform="translate(768.401 270.5)">
+          <tspan x="0" y="28" font-family="Apple Color Emoji" font-size="28">🔓</tspan>
         </text>
-      </g>
-      <g id="Graphic_24">
-        <text transform="translate(136.96875 258)" fill="black">
-          <tspan
-                        font-family="Helvetica"
-                        font-size="28"
-                        font-style="italic"
-                        font-weight="400"
-                        fill="black"
-                        x="30.427734"
-                        y="28"
-                    >X</tspan>
+        <text fill="#000" transform="translate(136.969 258)">
+          <tspan x="30.428" y="28" font-size="28" font-style="italic">X</tspan>
         </text>
-      </g>
-      <g id="Graphic_33">
-        <path
-                    d="M 232.22455 466.511 L 381.22455 466.511 C 386.7474 466.511 391.22455 470.98816 391.22455 476.511 L 391.22455 561.511 C 391.22455 567.03386 386.7474 571.511 381.22455 571.511 L 232.22455 571.511 C 226.7017 571.511 222.22455 567.03386 222.22455 561.511 L 222.22455 476.511 C 222.22455 470.98816 226.7017 466.511 232.22455 466.511 Z"
-                    fill="#c0c0ff"
-                />
-        <text transform="translate(227.22455 487.511)" fill="black">
-          <tspan
-                        font-family="Helvetica"
-                        font-size="24"
-                        font-weight="400"
-                        fill="black"
-                        x="4.125"
-                        y="23"
-                    >Schlüsselpaar </tspan>
-          <tspan
-                        font-family="Helvetica"
-                        font-size="28"
-                        font-weight="400"
-                        fill="black"
-                        x="26.569336"
-                        y="57"
-                    >Quelle A</tspan>
+        <path fill="#c0c0ff" d="M232.225 466.511h149c5.522 0 10 4.477 10 10v85c0 5.523-4.478 10-10 10h-149c-5.523 0-10-4.477-10-10v-85c0-5.523 4.477-10 10-10"/>
+        <text fill="#000" transform="translate(227.225 487.511)">
+          <tspan x="13.125" y="20" font-size="22">Schlüsselpaar</tspan>
+          <tspan x="26.569" y="57" font-size="28">Quelle A</tspan>
         </text>
-      </g>
-      <g id="Line_44">
-        <line
-                    x1="302.38635"
-                    y1="466.511"
-                    x2="301.12364"
-                    y2="336.89925"
-                    marker-end="url(#FilledArrow_Marker)"
-                    stroke="black"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="3"
-                />
-      </g>
-      <g id="Line_54">
-        <path
-                    d="M 658 442.8242 L 469.56925 442.8242 L 468.96767 334.89975"
-                    marker-end="url(#FilledArrow_Marker)"
-                    stroke="black"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="3"
-                />
-      </g>
-      <g id="Graphic_62">
-        <text transform="translate(235.9214 145.41211)" fill="black">
-          <tspan
-                        font-family="Helvetica"
-                        font-size="24"
-                        font-weight="400"
-                        fill="black"
-                        x="0"
-                        y="23"
-                    >Quelle A</tspan>
+        <path d="m302.386 466.511-1.262-129.612" class="arrow-line"/>
+        <path d="M658 442.824H469.57l-.602-107.924" class="arrow-line"/>
+        <text fill="#000" transform="translate(235.921 145.412)">
+          <tspan x="0" y="23" font-size="24">Quelle A</tspan>
         </text>
-      </g>
-      <g id="Line_61">
-        <path
-                    d="M -1.3403172 183.82422 L -1.3403172 133.64844 L 550.1597 133.64844 L 550.1597 185"
-                    stroke="black"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="3"
-                />
-      </g>
-      <g id="Graphic_63">
-        <text transform="translate(396.22455 467.1436)" fill="black">
-          <tspan
-                        font-family="Helvetica"
-                        font-size="28"
-                        font-style="italic"
-                        font-weight="400"
-                        fill="black"
-                        x="0"
-                        y="28"
-                    >PU</tspan>
-          <tspan
-                        font-family="Helvetica"
-                        font-size="28"
-                        font-style="italic"
-                        font-weight="400"
-                        fill="black"
-                        y="41"
-                    >a</tspan>
+        <path d="M-1 185v-50h550V185" class="line"/>
+        <text fill="#000" transform="translate(396.225 467.144)" font-style="italic">
+          <tspan x="0" y="28" font-size="28" >PU</tspan><tspan y="38" font-size="24">a</tspan>
         </text>
-      </g>
-      <g id="Graphic_64">
-        <text transform="translate(244.2204 414.3242)" fill="black">
-          <tspan
-                        font-family="Helvetica"
-                        font-size="28"
-                        font-style="italic"
-                        font-weight="400"
-                        fill="black"
-                        x="0"
-                        y="28"
-                    >PR</tspan>
-          <tspan
-                        font-family="Helvetica"
-                        font-size="28"
-                        font-style="italic"
-                        font-weight="400"
-                        fill="black"
-                        y="41"
-                    >a</tspan>
+        <text fill="#000" transform="translate(244.22 414.324)" font-style="italic">
+          <tspan x="0" y="28" font-size="28" >PR</tspan><tspan y="38" font-size="24">a</tspan>
         </text>
-      </g>
-      <g id="Graphic_66">
-        <text transform="translate(901.4859 144.82422)" fill="black">
-          <tspan
-                        font-family="Helvetica"
-                        font-size="24"
-                        font-weight="400"
-                        fill="black"
-                        x="0"
-                        y="23"
-                    >Ziel B</tspan>
+        <text fill="#000" transform="translate(901.486 144.824)">
+          <tspan x="0" y="23" font-size="24">Ziel B</tspan>
         </text>
-      </g>
-      <g id="Line_65">
-        <path
-                    d="M 656.6597 185 L 656.6597 134.82422 L 1196.1597 134.82422 L 1196.1597 185"
-                    stroke="black"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="3"
-                />
-      </g>
-      <g id="Graphic_67">
-        <rect x="407" y="185" width="123" height="132" fill="#ffc0c0" />
-        <rect
-                    x="407"
-                    y="185"
-                    width="123"
-                    height="132"
-                    stroke="#344463"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="4"
-                />
-        <text transform="translate(412 190)" fill="#344463">
-          <tspan
-                        font-family="Helvetica"
-                        font-size="22"
-                        font-weight="400"
-                        fill="#344463"
-                        x="0"
-                        y="21"
-                    >Verschlüs-</tspan>
-          <tspan
-                        font-family="Helvetica"
-                        font-size="22"
-                        font-weight="400"
-                        fill="#344463"
-                        x="0"
-                        y="47"
-                    >selungs-</tspan>
-          <tspan
-                        font-family="Helvetica"
-                        font-size="22"
-                        font-weight="400"
-                        fill="#344463"
-                        x="0"
-                        y="73"
-                    >alg.</tspan>
+        <path d="M656 185v-50h540V185" class="line"/>
+        <path fill="#ffc0c0" d="M407 185h123v132H407z"/>
+        <path d="M407 185h123v132H407z" class="outline-4"/>
+        <text fill="#344463" transform="translate(412 190)">
+          <tspan x="0" y="21" font-size="22">Verschlüs-</tspan>
+          <tspan x="0" y="47" font-size="22">selungs-</tspan>
+          <tspan x="0" y="73" font-size="22">alg.</tspan>
         </text>
-      </g>
-      <g id="Graphic_68">
-        <text transform="translate(492.5 270.5)" fill="black">
-          <tspan
-                        font-family="Apple Color Emoji"
-                        font-size="28"
-                        font-weight="400"
-                        fill="black"
-                        x="0"
-                        y="28"
-                    >🔒</tspan>
+        <text fill="#000" transform="translate(492.5 270.5)">
+          <tspan x="0" y="28" font-family="Apple Color Emoji" font-size="28">🔒</tspan>
         </text>
-      </g>
-      <g id="Graphic_70">
-        <rect x="871" y="185" width="123" height="132" fill="#c0ffc0" />
-        <rect
-                    x="871"
-                    y="185"
-                    width="123"
-                    height="132"
-                    stroke="#344463"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="4"
-                />
-        <text transform="translate(876 190)" fill="#344463">
-          <tspan
-                        font-family="Helvetica"
-                        font-size="22"
-                        font-weight="400"
-                        fill="#344463"
-                        x="0"
-                        y="21"
-                    >Entschlüs-</tspan>
-          <tspan
-                        font-family="Helvetica"
-                        font-size="22"
-                        font-weight="400"
-                        fill="#344463"
-                        x="0"
-                        y="47"
-                    >selungs-</tspan>
-          <tspan
-                        font-family="Helvetica"
-                        font-size="22"
-                        font-weight="400"
-                        fill="#344463"
-                        x="0"
-                        y="73"
-                    >alg.</tspan>
+        <path fill="#c0ffc0" d="M871 185h123v132H871z"/>
+        <path d="M871 185h123v132H871z" class="outline-4"/>
+        <text fill="#344463" transform="translate(876 190)">
+          <tspan x="0" y="21" font-size="22">Entschlüs-</tspan>
+          <tspan x="0" y="47" font-size="22">selungs-</tspan>
+          <tspan x="0" y="73" font-size="22">alg.</tspan>
         </text>
-      </g>
-      <g id="Graphic_69">
-        <text transform="translate(958.4012 270.5)" fill="black">
-          <tspan
-                        font-family="Apple Color Emoji"
-                        font-size="28"
-                        font-weight="400"
-                        fill="black"
-                        x="0"
-                        y="28"
-                    >🔓</tspan>
+        <text fill="#000" transform="translate(958.401 270.5)">
+          <tspan x="0" y="28" font-family="Apple Color Emoji" font-size="28">🔓</tspan>
         </text>
-      </g>
-      <g id="Line_71">
-        <path
-                    d="M 391.22455 519.011 L 932.9545 519.011 L 932.6423 334.89998"
-                    marker-end="url(#FilledArrow_Marker)"
-                    stroke="black"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="3"
-                />
-      </g>
-      <g id="Graphic_72">
-        <path
-                    d="M 668 390.3242 L 817 390.3242 C 822.5228 390.3242 827 394.80137 827 400.3242 L 827 485.3242 C 827 490.84707 822.5228 495.3242 817 495.3242 L 668 495.3242 C 662.47715 495.3242 658 490.84707 658 485.3242 L 658 400.3242 C 658 394.80137 662.47715 390.3242 668 390.3242 Z"
-                    fill="#c0c0ff"
-                />
-        <text transform="translate(663 411.3242)" fill="black">
-          <tspan
-                        font-family="Helvetica"
-                        font-size="24"
-                        font-weight="400"
-                        fill="black"
-                        x="4.125"
-                        y="23"
-                    >Schlüsselpaar </tspan>
-          <tspan
-                        font-family="Helvetica"
-                        font-size="28"
-                        font-weight="400"
-                        fill="black"
-                        x="25.80371"
-                        y="57"
-                    >Quelle B</tspan>
+        <path d="M391.225 519.011h541.73l-.313-184.111" class="arrow-line"/>
+        <path fill="#c0c0ff" d="M668 390.324h149c5.523 0 10 4.477 10 10v85c0 5.523-4.477 10-10 10H668c-5.523 0-10-4.477-10-10v-85c0-5.523 4.477-10 10-10"/>
+        <text fill="#000" transform="translate(663 411.324)">
+          <tspan x="13.125" y="20" font-size="22">Schlüsselpaar</tspan>
+          <tspan x="25.804" y="57" font-size="28">Quelle B</tspan>
         </text>
-      </g>
-      <g id="Line_73">
-        <line
-                    x1="742.5"
-                    y1="390.3242"
-                    x2="742.5"
-                    y2="332.9"
-                    marker-end="url(#FilledArrow_Marker)"
-                    stroke="black"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="3"
-                />
-      </g>
-      <g id="Graphic_74">
-        <text transform="translate(585.4774 389.0914)" fill="black">
-          <tspan
-                        font-family="Helvetica"
-                        font-size="28"
-                        font-style="italic"
-                        font-weight="400"
-                        fill="black"
-                        x="0"
-                        y="28"
-                    >PU</tspan>
-          <tspan
-                        font-family="Helvetica"
-                        font-size="28"
-                        font-style="italic"
-                        font-weight="400"
-                        fill="black"
-                        y="41"
-                    >b</tspan>
+        <path d="M742.5 390.324V332.9" class="arrow-line"/>
+        <text fill="#000" transform="translate(585.477 389.091)">
+          <tspan x="0" y="28" font-size="28" font-style="italic">PU</tspan><tspan y="38" font-size="24" font-style="italic">b</tspan>
         </text>
-      </g>
-      <g id="Graphic_75">
-        <text transform="translate(755.1668 338.3242)" fill="black">
-          <tspan
-                        font-family="Helvetica"
-                        font-size="28"
-                        font-style="italic"
-                        font-weight="400"
-                        fill="black"
-                        x="0"
-                        y="28"
-                    >PR</tspan>
-          <tspan
-                        font-family="Helvetica"
-                        font-size="28"
-                        font-style="italic"
-                        font-weight="400"
-                        fill="black"
-                        y="41"
-                    >b</tspan>
+        <text fill="#000" transform="translate(755.167 338.324)">
+          <tspan x="0" y="28" font-size="28" font-style="italic">PR</tspan><tspan y="38" font-size="24" font-style="italic">b</tspan>
         </text>
-      </g>
-      <g id="Graphic_76">
-        <text transform="translate(322.46875 258)" fill="black">
-          <tspan
-                        font-family="Helvetica"
-                        font-size="28"
-                        font-style="italic"
-                        font-weight="400"
-                        fill="black"
-                        x="30.427734"
-                        y="28"
-                    >Y</tspan>
+        <text fill="#000" transform="translate(322.469 258)">
+          <tspan x="30.428" y="28" font-size="28" font-style="italic">Y</tspan>
         </text>
-      </g>
-      <g id="Graphic_77">
-        <text transform="translate(566.5025 258)" fill="black">
-          <tspan
-                        font-family="Helvetica"
-                        font-size="28"
-                        font-style="italic"
-                        font-weight="400"
-                        fill="black"
-                        x="31.213867"
-                        y="28"
-                    >Z</tspan>
+        <text fill="#000" transform="translate(566.503 258)">
+          <tspan x="31.214" y="28" font-size="28" font-style="italic">Z</tspan>
         </text>
-      </g>
-      <g id="Graphic_78">
-        <text transform="translate(796.6723 258)" fill="black">
-          <tspan
-                        font-family="Helvetica"
-                        font-size="28"
-                        font-style="italic"
-                        font-weight="400"
-                        fill="black"
-                        x="30.427734"
-                        y="28"
-                    >Y</tspan>
+        <text fill="#000" transform="translate(796.672 258)">
+          <tspan x="30.428" y="28" font-size="28" font-style="italic">Y</tspan>
         </text>
-      </g>
-      <g id="Graphic_79">
-        <text transform="translate(983.5 258)" fill="black">
-          <tspan
-                        font-family="Helvetica"
-                        font-size="28"
-                        font-style="italic"
-                        font-weight="400"
-                        fill="black"
-                        x="30.427734"
-                        y="28"
-                    >X</tspan>
+        <text fill="#000" transform="translate(983.5 258)">
+          <tspan x="30.428" y="28" font-size="28" font-style="italic">X</tspan>
         </text>
-      </g>
-      <g id="Line_80">
-        <line
-                    x1="148"
-                    y1="252"
-                    x2="200.56875"
-                    y2="252"
-                    marker-end="url(#FilledArrow_Marker)"
-                    stroke="black"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="3"
-                />
-      </g>
-      <g id="Line_81">
-        <line
-                    x1="339.5"
-                    y1="249.5"
-                    x2="392.06875"
-                    y2="249.5"
-                    marker-end="url(#FilledArrow_Marker)"
-                    stroke="black"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="3"
-                />
-      </g>
-      <g id="Line_82">
-        <line
-                    x1="532.5"
-                    y1="249.5"
-                    x2="665.1"
-                    y2="249.5"
-                    marker-end="url(#FilledArrow_Marker)"
-                    stroke="black"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="3"
-                />
-      </g>
-      <g id="Line_83">
-        <line
-                    x1="808.5"
-                    y1="250"
-                    x2="857.0688"
-                    y2="250"
-                    marker-end="url(#FilledArrow_Marker)"
-                    stroke="black"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="3"
-                />
-      </g>
-      <g id="Line_84">
-        <line
-                    x1="998"
-                    y1="250"
-                    x2="1047.6988"
-                    y2="250"
-                    marker-end="url(#FilledArrow_Marker)"
-                    stroke="black"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="3"
-                />
-      </g>
+        <path d="M148 252h52.569" class="arrow-line"/>
+        <path d="M339.5 249.5h52.569" class="arrow-line"/>
+        <path d="M532.5 249.5h132.6" class="arrow-line"/>
+        <path d="M808.5 250h48.569" class="arrow-line"/>
+        <path d="M998 250h49.699" class="arrow-line"/>
     </g>
-  </g>
 </svg>
