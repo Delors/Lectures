@@ -57,7 +57,7 @@ Themen
 - `Nutzerauthentifizierung <https://delors.github.io/sec-nutzerauthentifizierung/folien.de.rst.html>`__
 - `Authentifizierte Verschlüsselung <https://delors.github.io/sec-authentifizierte-verschluesselung/folien.de.rst.html>`__
 
-- `Public-Key Kryptografie <https://delors.github.io/sec-public-key-kryptographie/folien.de.rst.html>
+- `Public-Key Kryptografie <https://delors.github.io/sec-public-key-kryptographie/folien.de.rst.html>`__
 
 - Einführung in Cybersicherheit
 - Netzwerksicherheit 
