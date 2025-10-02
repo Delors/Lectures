@@ -18,13 +18,13 @@
     font-weight: 300;
     fill: black;
   }
-  line {                    marker-end: url(#FilledArrow_Marker);
-  stroke :black;
-  stroke-linecap: round;
-  stroke-linejoin: round;
-  stroke-width: 3;
+  line {                    
+    marker-end: url(#FilledArrow_Marker);
+    stroke :black;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-width: 3;
   }
-  
 </style>
 <defs>
     <filter id="Shadow" filterUnits="userSpaceOnUse" x="-8.7" y="-78.4">
@@ -71,8 +71,7 @@
         font-size="26"
     >
     <rect fill="white" x="83" y="-25" width="917" height="534" />
-    <g id="confidentiality_Layer_1">
-      <title>Layer 1</title>
+    <g id="confidentiality_Layer">
       <g id="Graphic_5" filter="url(#Shadow)">
         <path
                     d="M 106.72101 185 L 218.18976 185 C 222.60804 185 226.18976 188.58172 226.18976 193 L 226.18976 284.2 C 187.94914 271.8 136.96164 321.4 98.72101 296.6 L 98.72101 193 C 98.72101 188.58172 102.30274 185 106.72101 185 Z"
@@ -88,18 +87,9 @@
                     clip-path="url(#clip_path)"
                     transform="translate(103.72101 190)"
                 >
-          <tspan
-                        x="0"
-                        y="28"
-                    >Nach-</tspan>
-          <tspan
-                        x="0"
-                        y="64"
-                    >richten-</tspan>
-          <tspan
-                        x="0"
-                        y="100"
-                    >quelle</tspan>
+          <tspan                         x="0"                        y="28"                    >Nach-</tspan>
+          <tspan                        x="0"                        y="64"                    >richten-</tspan>
+          <tspan                        x="0"                        y="100"                    >quelle</tspan>
         </text>
       </g>
       <g id="Graphic_7" filter="url(#Shadow)">
@@ -167,29 +157,25 @@
                     stroke-linejoin="round"
                     stroke-width="4"
                 />
-        <text transform="translate(287.596 190)" fill="#344463">
+        <text transform="translate(287.596 190)" fill="#344463" font-size="22">
           <tspan
-                        font-size="22"
-                                               fill="#344463"
+                        
                         x="0"
                         y="24"
                     >Verschlüs-</tspan>
           <tspan
-                        font-size="22"
-                                               fill="#344463"
+                        
                         x="0"
                         y="54"
                     >selungs-</tspan>
           <tspan
-                        font-size="22"
-                                               fill="#344463"
                         x="0"
                         y="84"
                     >alg.</tspan>
         </text>
       </g>
       <g id="Graphic_22">
-        <text transform="translate(356.596 258)" fill="black">
+        <text transform="translate(356.596 258)">
           <tspan
                         font-family="Apple Color Emoji"
                         font-size="28"
@@ -210,29 +196,23 @@
                     stroke-linejoin="round"
                     stroke-width="4"
                 />
-        <text transform="translate(645.0708 190)" fill="#344463">
+        <text transform="translate(645.0708 190)" fill="#344463" font-size="22">
           <tspan
-                        font-size="22"
-                                               fill="#344463"
                         x="0"
                         y="24"
                     >Entschlüs-</tspan>
           <tspan
-                        font-size="22"
-                                               fill="#344463"
                         x="0"
                         y="54"
                     >selungs-</tspan>
           <tspan
-                        font-size="22"
-                                               fill="#344463"
                         x="0"
                         y="84"
                     >alg.</tspan>
         </text>
       </g>
       <g id="Graphic_21">
-        <text transform="translate(716.0708 258)" fill="black">
+        <text transform="translate(716.0708 258)">
           <tspan
                         font-family="Apple Color Emoji"
                         font-size="28"
@@ -242,7 +222,7 @@
         </text>
       </g>
       <g id="Graphic_24">
-        <text transform="translate(212.65851 257.5)" fill="black">
+        <text transform="translate(212.65851 257.5)">
           <tspan
                         font-size="28"
                         font-style="italic"
