@@ -711,13 +711,19 @@ Shannon Entropie
 
 - die Shannon Entropie ist ein Maß für die Zufälligkeit oder Unvorhersehbarkeit einer Bitfolge.
 
-- Entropie :math:`H = -\sum_{i=1}^{n} p_i \cdot \log_2(p_i)`; normalisiert auf [0,1]: :math:`H_{\text{norm}} = \frac{H_{\text{beobachtet}}}{H_{\text{max}}} =  \frac{H}{\log_2(\# \text{distinct symbols})}`
+- Entropie:
+
+  :math:`H = -\sum_{i=1}^{n} p_i \cdot \log_2(p_i)`
+  
+  normalisiert auf [0,1]: :math:`H_{\text{norm}} = \frac{H_{\text{beobachtet}}}{H_{\text{max}}} =  \frac{H}{\log_2(\# \text{distinct symbols})}`
 
   :math:`p_i` ist die empirische Wahrscheinlichkeit des Symbols :math-i:`i` berechnet als :math:`\frac{f_i}{n}` wobei :math:`f_i` die Häufigkeit des Symbols :math-i:`i` ist und :math:`n` die Gesamtanzahl der Symbole(/Länge der Daten) ist.
 
   .. example::
 
     Shannon-Entropie für ``Hello``:
+
+    .. class:: columns
 
     - ``H``: 1 → p(``H``) = 1/5
     - ``e``: 1 → p(``e``) = 1/5
@@ -764,7 +770,7 @@ Shannon Entropie
     .. solution::
         :pwd: ImmerZwischen0und1
 
-        Länge: :math-i:`n` = 18
+        Länge: :math-i:`n` = 18, Anzahl der verschiedenen Symbole: 9
 
         .. csv-table::
             :header: Symbol, Häufigkeit
