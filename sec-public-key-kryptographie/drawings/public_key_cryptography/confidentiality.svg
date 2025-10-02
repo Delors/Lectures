@@ -12,6 +12,19 @@
 >
 <style>
   @import url('/LectureDoc2/ext/fonts/ld-fonts.css');
+
+  text {
+    font-family: 'Noto Sans Display';
+    font-weight: 300;
+    fill: black;
+  }
+  line {                    marker-end: url(#FilledArrow_Marker);
+  stroke :black;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 3;
+  }
+  
 </style>
 <defs>
     <filter id="Shadow" filterUnits="userSpaceOnUse" x="-8.7" y="-78.4">
@@ -41,12 +54,13 @@
                     d="M 3.7333333 0 L 0 -1.4 L 0 1.4 Z"
                     fill="currentColor"
                     stroke="currentColor"
+                    stroke-linecap="butt"
+                    stroke-linejoin="butt"
                     stroke-width="1"
                 />
       </g>
     </marker>
   </defs>
-  <metadata> Produced by OmniGraffle 8.0\n2025-05-29 18:41:12 +0000</metadata>
   <g
         id="confidentiality"
         stroke="none"
@@ -54,8 +68,8 @@
         stroke-dasharray="none"
         fill-opacity="1"
         fill="none"
+        font-size="26"
     >
-    <title>confidentiality</title>
     <rect fill="white" x="83" y="-25" width="917" height="534" />
     <g id="confidentiality_Layer_1">
       <title>Layer 1</title>
@@ -73,29 +87,16 @@
         <text
                     clip-path="url(#clip_path)"
                     transform="translate(103.72101 190)"
-                    fill="black"
                 >
           <tspan
-                        font-family="Noto Sans Display"
-                        font-size="26"
-                        font-weight="400"
-                        fill="black"
                         x="0"
                         y="28"
                     >Nach-</tspan>
           <tspan
-                        font-family="Noto Sans Display"
-                        font-size="26"
-                        font-weight="400"
-                        fill="black"
                         x="0"
                         y="64"
                     >richten-</tspan>
           <tspan
-                        font-family="Noto Sans Display"
-                        font-size="26"
-                        font-weight="400"
-                        fill="black"
                         x="0"
                         y="100"
                     >quelle</tspan>
@@ -115,72 +116,41 @@
         <text
                     clip-path="url(#clip_path_2)"
                     transform="translate(867.0938 196.5)"
-                    fill="black"
                 >
           <tspan
-                        font-family="Noto Sans Display"
-                        font-size="26"
-                        font-weight="400"
-                        fill="black"
                         x="36.194"
                         y="28"
                     >Ziel</tspan>
         </text>
       </g>
       <g id="Graphic_16">
-        <text transform="translate(407.2385 259)" fill="black">
+        <text transform="translate(407.2385 259)">
           <tspan
-                        font-family="Noto Sans Display"
                         font-size="28"
                         font-style="italic"
-                        font-weight="400"
-                        fill="black"
                         x="14.57525"
                         y="30"
-                    >Y</tspan>
-          <tspan
-                        font-family="Noto Sans Display"
+                    >Y</tspan><tspan
                         font-size="28"
-                        font-weight="400"
-                        fill="black"
                         y="30"
-                    > = E(</tspan>
-          <tspan
-                        font-family="Noto Sans Display"
+                    > = E(</tspan><tspan
                         font-size="28"
                         font-style="italic"
-                        font-weight="400"
-                        fill="black"
                         y="30"
-                    >PU</tspan>
-          <tspan
-                        font-family="Noto Sans Display"
+                    >PU</tspan><tspan
+                        font-size="22"
+                        font-style="italic"
+                        y="37"
+                    >b</tspan><tspan
+                        font-size="28"
+                        y="30"
+                    >, </tspan><tspan
                         font-size="28"
                         font-style="italic"
-                        font-weight="400"
-                        fill="black"
-                        y="45"
-                    >b</tspan>
-          <tspan
-                        font-family="Noto Sans Display"
-                        font-size="28"
-                        font-weight="400"
-                        fill="black"
-                        y="30"
-                    >,</tspan>
-          <tspan
-                        font-family="Noto Sans Display"
-                        font-size="28"
-                        font-style="italic"
-                        font-weight="400"
-                        fill="black"
                         y="30"
                     >X</tspan>
           <tspan
-                        font-family="Noto Sans Display"
                         font-size="28"
-                        font-weight="400"
-                        fill="black"
                         y="30"
                     >)</tspan>
         </text>
@@ -199,26 +169,20 @@
                 />
         <text transform="translate(287.596 190)" fill="#344463">
           <tspan
-                        font-family="Noto Sans Display"
                         font-size="22"
-                        font-weight="400"
-                        fill="#344463"
+                                               fill="#344463"
                         x="0"
                         y="24"
                     >Verschlüs-</tspan>
           <tspan
-                        font-family="Noto Sans Display"
                         font-size="22"
-                        font-weight="400"
-                        fill="#344463"
+                                               fill="#344463"
                         x="0"
                         y="54"
                     >selungs-</tspan>
           <tspan
-                        font-family="Noto Sans Display"
                         font-size="22"
-                        font-weight="400"
-                        fill="#344463"
+                                               fill="#344463"
                         x="0"
                         y="84"
                     >alg.</tspan>
@@ -229,8 +193,6 @@
           <tspan
                         font-family="Apple Color Emoji"
                         font-size="28"
-                        font-weight="400"
-                        fill="black"
                         x="0"
                         y="28"
                     >🔒</tspan>
@@ -250,26 +212,20 @@
                 />
         <text transform="translate(645.0708 190)" fill="#344463">
           <tspan
-                        font-family="Noto Sans Display"
                         font-size="22"
-                        font-weight="400"
-                        fill="#344463"
+                                               fill="#344463"
                         x="0"
                         y="24"
                     >Entschlüs-</tspan>
           <tspan
-                        font-family="Noto Sans Display"
                         font-size="22"
-                        font-weight="400"
-                        fill="#344463"
+                                               fill="#344463"
                         x="0"
                         y="54"
                     >selungs-</tspan>
           <tspan
-                        font-family="Noto Sans Display"
                         font-size="22"
-                        font-weight="400"
-                        fill="#344463"
+                                               fill="#344463"
                         x="0"
                         y="84"
                     >alg.</tspan>
@@ -280,8 +236,6 @@
           <tspan
                         font-family="Apple Color Emoji"
                         font-size="28"
-                        font-weight="400"
-                        fill="black"
                         x="0"
                         y="28"
                     >🔓</tspan>
@@ -290,11 +244,8 @@
       <g id="Graphic_24">
         <text transform="translate(212.65851 257.5)" fill="black">
           <tspan
-                        font-family="Noto Sans Display"
                         font-size="28"
                         font-style="italic"
-                        font-weight="400"
-                        fill="black"
                         x="32.681625"
                         y="30"
                     >X</tspan>
@@ -303,75 +254,39 @@
       <g id="Graphic_25">
         <text transform="translate(758.3051 258)" fill="black">
           <tspan
-                        font-family="Noto Sans Display"
                         font-size="24"
                         font-style="italic"
-                        font-weight="400"
-                        fill="black"
                         x="43.242375"
                         y="26"
                     >X </tspan>
           <tspan
-                        font-family="Noto Sans Display"
                         font-size="24"
-                        font-weight="400"
-                        fill="black"
                         y="26"
                     >= </tspan>
           <tspan
-                        font-family="Noto Sans Display"
                         font-size="24"
-                        font-weight="400"
-                        fill="black"
-                        x="15.066375"
+                        x="14"
                         y="63"
-                    >D(</tspan>
-          <tspan
-                        font-family="Noto Sans Display"
+                    >D(</tspan><tspan
                         font-size="24"
                         font-style="italic"
-                        font-weight="400"
-                        fill="black"
                         y="63"
-                    >PR</tspan>
-          <tspan
-                        font-family="Noto Sans Display"
+                    >PR</tspan><tspan
+                        font-size="20"
+                        font-style="italic"
+                        y="70"
+                    >b</tspan><tspan
+                        font-size="24"
+                        y="63"
+                    >, </tspan><tspan
                         font-size="24"
                         font-style="italic"
-                        font-weight="400"
-                        fill="black"
-                        y="76"
-                    >b</tspan>
-          <tspan
-                        font-family="Noto Sans Display"
-                        font-size="24"
-                        font-weight="400"
-                        fill="black"
-                        y="63"
-                    >,</tspan>
-          <tspan
-                        font-family="Noto Sans Display"
-                        font-size="24"
-                        font-style="italic"
-                        font-weight="400"
-                        fill="black"
                         y="63"
                     >Y</tspan>
           <tspan
-                        font-family="Noto Sans Display"
                         font-size="24"
-                        font-weight="400"
-                        fill="black"
                         y="63"
                     >)</tspan>
-          <tspan
-                        font-family="Noto Sans Display"
-                        font-size="28"
-                        font-style="italic"
-                        font-weight="400"
-                        fill="black"
-                        y="63"
-                    > </tspan>
         </text>
       </g>
       <g id="Line_26">
@@ -380,11 +295,6 @@
                     y1="247"
                     x2="266.696"
                     y2="247"
-                    marker-end="url(#FilledArrow_Marker)"
-                    stroke="black"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="3"
                 />
       </g>
       <g id="Line_27">
@@ -393,11 +303,6 @@
                     y1="253"
                     x2="623.0423"
                     y2="253"
-                    marker-end="url(#FilledArrow_Marker)"
-                    stroke="black"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="3"
                 />
       </g>
       <g id="Line_28">
@@ -406,11 +311,6 @@
                     y1="253.5"
                     x2="846.1938"
                     y2="253.5"
-                    marker-end="url(#FilledArrow_Marker)"
-                    stroke="black"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="3"
                 />
       </g>
       <g id="Graphic_32">
@@ -420,18 +320,12 @@
                 />
         <text transform="translate(440.7656 -3)" fill="black">
           <tspan
-                        font-family="Noto Sans Display"
                         font-size="28"
-                        font-weight="400"
-                        fill="black"
                         x="33.902"
                         y="30"
                     >Krypto-</tspan>
           <tspan
-                        font-family="Noto Sans Display"
                         font-size="28"
-                        font-weight="400"
-                        fill="black"
                         x="17.942"
                         y="68"
                     >analytiker</tspan>
@@ -442,85 +336,60 @@
                     d="M 628.0473 403.5 L 777.0473 403.5 C 782.5702 403.5 787.0473 407.97715 787.0473 413.5 L 787.0473 498.5 C 787.0473 504.02285 782.5702 508.5 777.0473 508.5 L 628.0473 508.5 C 622.5245 508.5 618.0473 504.02285 618.0473 498.5 L 618.0473 413.5 C 618.0473 407.97715 622.5245 403.5 628.0473 403.5 Z"
                     fill="#c0c0ff"
                 />
-        <text transform="translate(623.0473 420.5)" fill="black">
+        <text transform="translate(623.0473 420.5)">
           <tspan
-                        font-family="Noto Sans Display"
                         font-size="24"
-                        font-weight="400"
-                        fill="black"
-                        x="6.348"
+                        x="10"
                         y="26"
                     >Schlüsselpaar </tspan>
           <tspan
-                        font-family="Noto Sans Display"
                         font-size="28"
-                        font-weight="400"
-                        fill="black"
                         x="39.292"
                         y="63"
                     >Quelle</tspan>
         </text>
       </g>
       <g id="Group_40">
-        <g id="Graphic_42">
-          <text transform="translate(675.31295 40.82422)" fill="black">
+        
+          <text transform="translate(675.31295 40.82422)">
             <tspan
-                            font-family="Noto Sans Display"
-                            font-size="28"
+                                font-size="28"
                             font-style="italic"
-                            font-weight="400"
-                            fill="black"
                             x="4.274375"
                             y="30"
-                        >PR</tspan>
-            <tspan
-                            font-family="Noto Sans Display"
-                            font-size="28"
+                        >PR</tspan><tspan
+                                font-size="22"
                             font-style="italic"
-                            font-weight="400"
-                            fill="black"
-                            y="45"
+                            y="37"
                         >b</tspan>
           </text>
-        </g>
-        <g id="Graphic_41">
-          <text transform="translate(675.31295 23.82422)" fill="black">
+        
+          <text transform="translate(675.31295 23.82422)">
             <tspan
-                            font-family="Noto Sans Display"
-                            font-size="28"
-                            font-weight="400"
-                            fill="black"
-                            x="19.702375"
+                                font-size="24"
+                            x="16"
                             y="30"
                         >^</tspan>
           </text>
-        </g>
+        
       </g>
       <g id="Group_37">
-        <g id="Graphic_39">
-          <text transform="translate(681.8308 -7.175781)" fill="black">
+        
+          <text transform="translate(681.8308 -7.175781)">
             <tspan
-                            font-family="Noto Sans Display"
-                            font-size="28"
-                            font-weight="400"
-                            fill="black"
+                                font-size="28"
                             x="3.216"
                             y="30"
                         >X</tspan>
           </text>
-        </g>
-        <g id="Graphic_38">
-          <text transform="translate(681.8308 -24.17578)" fill="black">
+          <text transform="translate(681.8308 -24.17578)">
             <tspan
-                            font-family="Noto Sans Display"
-                            font-size="28"
-                            font-weight="400"
-                            fill="black"
+                                font-size="24"
                             x="3.468"
                             y="30"
                         >^</tspan>
           </text>
-        </g>
+        
       </g>
       <g id="Line_43">
         <line
@@ -528,11 +397,6 @@
                     y1="253"
                     x2="476.2656"
                     y2="103.4"
-                    marker-end="url(#FilledArrow_Marker)"
-                    stroke="black"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="3"
                 />
       </g>
       <g id="Line_44">
@@ -551,11 +415,6 @@
                     y1="403.5"
                     x2="702.5473"
                     y2="332.9"
-                    marker-end="url(#FilledArrow_Marker)"
-                    stroke="black"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="3"
                 />
       </g>
       <g id="Line_56">
@@ -564,11 +423,6 @@
                     y1="11.824219"
                     x2="660.9308"
                     y2="11.824219"
-                    marker-end="url(#FilledArrow_Marker)"
-                    stroke="black"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="3"
                 />
       </g>
       <g id="Line_57">
@@ -577,11 +431,6 @@
                     y1="67.32422"
                     x2="654.41295"
                     y2="67.32422"
-                    marker-end="url(#FilledArrow_Marker)"
-                    stroke="black"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="3"
                 />
       </g>
       <g id="Line_58">
@@ -594,19 +443,14 @@
                     stroke-width="3"
                 />
       </g>
-      <g id="Graphic_62">
-        <text transform="translate(195.49746 125.32422)" fill="black">
+      <g id="Quelle">
+        <text transform="translate(195.49746 125.32422)">
           <tspan
-                        font-family="Noto Sans Display"
                         font-size="24"
-                        font-weight="400"
-                        fill="black"
                         x="0"
                         y="26"
                     >Quelle A</tspan>
         </text>
-      </g>
-      <g id="Line_61">
         <path
                     d="M 85.24915 166.32422 L 85.24915 117.32422 L 419.78595 117.32422 L 419.78595 166.5"
                     stroke="black"
@@ -616,60 +460,41 @@
                 />
       </g>
       <g id="Graphic_63">
-        <text transform="translate(478.38753 398.5996)" fill="black">
+        <text transform="translate(478.38753 398.5996)">
           <tspan
-                        font-family="Noto Sans Display"
                         font-size="28"
                         font-style="italic"
-                        font-weight="400"
-                        fill="black"
                         x="0"
                         y="30"
-                    >PU</tspan>
-          <tspan
-                        font-family="Noto Sans Display"
-                        font-size="28"
+                    >PU</tspan><tspan
+                        font-size="22"
                         font-style="italic"
-                        font-weight="400"
-                        fill="black"
-                        y="45"
+                        y="37"
                     >b</tspan>
         </text>
       </g>
       <g id="Graphic_64">
-        <text transform="translate(707.1108 346.54447)" fill="black">
+        <text transform="translate(707.1108 346.54447)">
           <tspan
-                        font-family="Noto Sans Display"
                         font-size="28"
                         font-style="italic"
-                        font-weight="400"
-                        fill="black"
                         x="0"
                         y="30"
-                    >PR</tspan>
-          <tspan
-                        font-family="Noto Sans Display"
-                        font-size="28"
+                    >PR</tspan><tspan
+                        font-size="22"
                         font-style="italic"
-                        font-weight="400"
-                        fill="black"
-                        y="45"
+                        y="37"
                     >b</tspan>
         </text>
       </g>
-      <g id="Graphic_66">
-        <text transform="translate(770.817 124.67578)" fill="black">
+      <g id="Ziel">
+        <text transform="translate(770.817 124.67578)">
           <tspan
-                        font-family="Noto Sans Display"
                         font-size="24"
-                        font-weight="400"
-                        fill="black"
                         x="24868996e-20"
                         y="26"
                     >Ziel B</tspan>
         </text>
-      </g>
-      <g id="Line_67">
         <path
                     d="M 623.35005 166.32422 L 623.35005 117.32422 L 998.3062 117.32422 L 998.3062 166.5"
                     stroke="black"
