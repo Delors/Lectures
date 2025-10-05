@@ -3,7 +3,8 @@
 
 <head>
     <script>
-        const ws = new WebSocket("ws://localhost:5557/admin");
+        const protocol = location.protocol === "https:" ? "wss:" : "ws:";
+        const ws = new WebSocket(`${protocol}//${location.host}/admin`);
 
         ws.onmessage = (event) => {
             const data = JSON.parse(event.data);

@@ -5,7 +5,8 @@
     <script>
         let ws = undefined
         try {
-            ws = new WebSocket("ws://localhost:5557/player");
+            const protocol = location.protocol === "https:" ? "wss:" : "ws:";
+            ws = new WebSocket(`${protocol}//${location.host}/player`);
         } catch (e) {
             alert("WebSocket connection failed: " + e);
             document.getElementById("main").innerText = "WebSocket connection failed. Please check the server.";
