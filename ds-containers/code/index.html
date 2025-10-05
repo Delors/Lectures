@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head><title>Docker Demo App</title></head>
+<body>
+    <h2>Willkommen zur Docker-Demo!</h2>
+    <p>Diese Anwendung läuft in einem Docker-Container.</p>
+    <p>Aktuelle-Zeit: <span id="time"></span></p>
+    <script>
+        document.getElementById('time').textContent =
+            new Date().toLocaleString();
+    </script>
+</body>
+</html>

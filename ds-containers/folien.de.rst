@@ -166,15 +166,18 @@ Traditionelle vs. Virtualisierte Architektur
             
             <rect class="app-box" width="3" height="2" x="11" y="8" rx="0.5"/>
             <text class="text-label" x="11.5" y="9.3" >App 3</text>
+
+            <rect class="host-box" width="17" height="2" x="3" y="16" rx="0.5"/>
+            <text class="text-label" x="3.5" y="17.3">Physische Hardware</text>
         </g>
         
         <!-- Virtualized Architecture -->
         <g class="incremental">
-            <text class="title-label" x="38" y="2">Virtualisierte Architektur</text>
+            <text class="title-label" x="33.5" y="2">Virtualisierte Architektur</text>
             
             <!-- Hypervisor -->
-            <rect class="host-box" width="12" height="3" x="32" y="4" rx="1"/>
-            <text class="text-label" x="35" y="5.8">Hypervisor</text>
+            <rect class="host-box" width="12" height="3" x="33" y="4" rx="0.5"/>
+            <text class="text-label" x="33.5" y="5.8">Hypervisor</text>
             
             <!-- VMs -->
             <rect class="vm-box" width="3.5" height="4" x="33" y="8" rx="0.5"/>
@@ -191,11 +194,11 @@ Traditionelle vs. Virtualisierte Architektur
             <text class="text-label" x="42.5" y="9.5" >VM 3</text>
             <rect class="app-box" width="2" height="1.5" x="42.5" y="10.5" rx="0.3"/>
             <text class="text-label" x="42.8" y="11.2" >OS</text>
+
+            <rect class="host-box" width="17" height="2" x="33" y="16" rx="0.5"/>
+            <text class="text-label" x="33.5" y="17.3">Physische Hardware</text>
         </g>
         
-        <!-- Hardware -->
-        <rect class="host-box" width="56" height="2" x="2" y="16" rx="1"/>
-        <text class="text-label" x="28" y="17.3">Physische Hardware</text>
         
         <!-- Arrows -->
         <g class="incremental">
@@ -220,9 +223,9 @@ Bare-Metal Virtualisierung
 
             .. card::
 
-                .. rubric:: Vorteile
+                .. rubric:: :green:`Vorteile`
 
-                .. class:: incremental-list
+                .. class:: incremental-list positive-list
 
                 - **Bessere Performance**: Kein Overhead durch Host-OS
                 - **Höhere Sicherheit**: Weniger Angriffsfläche
@@ -231,23 +234,23 @@ Bare-Metal Virtualisierung
 
             .. card::
 
-                .. rubric:: Nachteile
+                .. rubric:: :red:`Nachteile`
 
-                .. class:: incremental-list
+                .. class:: incremental-list negative-list
 
                 - **Komplexität**: Schwerer zu installieren und zu verwalten
-                - **Hardware-Abhängigkeit**: Spezielle Hardware-Unterstützung erforderlich
-                - **Kosten**: Lizenzkosten für Hypervisor-Software
+                - **Hardware-Abhängigkeit**: Hardware-Unterstützung erforderlich
+                - **Kosten**: ggf. Lizenzkosten für Hypervisor-Software
 
     .. card::
 
-    
         **Beispiele für Bare-Metal Hypervisoren:**
         
+        - Xen
         - VMware vSphere/ESXi
         - Microsoft Hyper-V (Server)
-        - Citrix XenServer
-        - Red Hat RHEV
+        - Citrix Hypervisor
+        - ...
 
 
 
@@ -264,20 +267,20 @@ Hosted Virtualisierung
 
             .. card::
 
-                .. rubric:: Vorteile
+                .. rubric:: :green:`Vorteile`
 
-                .. class:: incremental-list
+                .. class:: incremental-list positive-list
 
                 - **Einfache Installation**: Wie normale Software
-                - **Flexibilität**: Verschiedene Host-Betriebssysteme möglich
+                - **Flexibilität**: Verschiedene Host-Betriebssysteme möglich (ggf. über Hardwarearchitekturgrenzen hinweg)
                 - **Entwicklungsumgebung**: Ideal für Tests und Entwicklung
                 - **Benutzerfreundlich**: Grafische Oberflächen verfügbar
 
             .. card::
 
-                .. rubric:: Nachteile
+                .. rubric:: :red:`Nachteile`
 
-                .. class:: incremental-list
+                .. class:: incremental-list negative-list
 
                 - **Performance-Overhead**: Host-OS verbraucht Ressourcen
                 - **Sicherheitsrisiken**: Host-OS als zusätzliche Angriffsfläche
@@ -287,10 +290,13 @@ Hosted Virtualisierung
 
         **Beispiele für Hosted Hypervisoren:**
         
+        - Qemu (Open Source - kann Virtualisierung und Emulation)\ [#]_
         - VMware Workstation
         - Oracle VirtualBox
         - Parallels Desktop
-        - Microsoft Hyper-V (Desktop)
+        - ...
+
+.. [#] Qemu kann auch zusammen mit KVM betrieben werden.
 
 
 
@@ -306,17 +312,23 @@ Was sind Container?
 
 .. definition::
 
-    **Container** sind leichtgewichtige, portable Einheiten, die Anwendungen mit allen notwendigen Abhängigkeiten (Code, Runtime, Bibliotheken) verpacken.
+    **Container** sind leichtgewichtige, portable Einheiten, die Anwendungen zusammen mit allen notwendigen Abhängigkeiten (Code, Runtime, Bibliotheken) verpacken. Sie teilen sich den Kernel des Host-Betriebssystems, bieten aber isolierte Prozess- und Nutzerbereiche, wodurch Anwendungen unabhängig voneinander laufen können.
 
-.. observation::
+.. container:: incremental
 
-    Container teilen sich das Betriebssystem des Hosts und nutzen Kernel-Features wie:
-
-    .. class:: incremental-list
-
-    - **Namespaces**: Isolation von Prozessen, Netzwerk, Dateisystem
-    - **Control Groups (cgroups)**: Ressourcenbeschränkung
+    **Beispiele für die Isolierung (Linux)**
+    
+    - **Namespaces**: Isolation von Nutzern, Prozessen, Netzwerk, Dateisystem
+    - **Control Groups (cgroups)**: Ressourcenbeschränkung (CPU, Speicher, ...)
     - **Union File Systems**: Effiziente Speicherung von Layern
+
+.. supplemental::
+
+    .. rubric:: Beispiele für Container-Isolierung unter Linux
+
+    :Namespaces: Isolieren unterschiedliche Systemressourcen, sodass Prozesse in einem Container „ihre eigene Welt“ sehen: Jeder Container hat seine eigenen Benutzer- und Gruppen und sieht nur seine eigenen Prozesse. Prozesse aus anderen Containern oder dem Host sind unsichtbar. Container haben eigene Netzwerkschnittstellen, IP-Adressen und Ports und können z. B. auf Port 80 lauschen, ohne Host oder andere Container zu stören. Weiterhin hat jeder Container eine eigene Sicht auf das Dateisystem. Ein Container kann sein Root-Dateisystem haben, ohne den Host oder andere Container zu verändern.    
+    :Control Groups (cgroups): Regeln und beschränken Ressourcennutzung, um fairen Zugriff zu gewährleisten: Insbesondere CPU-Zeit, Speicherbenutzung und Netzwerk und I/O Limits.
+    :Union File Systems (UnionFS / OverlayFS): Ermöglichen effiziente, schichtweise Speicherung, da zum Beispiel das Basis-Image + Container-spezifische Änderungen als separate Layer gespeichert werden.
 
 
 
@@ -335,10 +347,10 @@ Container vs. Virtual Machines
             
             <!-- Apps -->
             <rect class="app-box" width="2.5" height="1.5" x="2" y="4" rx="0.3"/>
-            <text class="text-label" x="2.2" y="4.8" style="font-size: 8">App</text>
+            <text class="text-label" x="2.2" y="4.8">App</text>
             
             <rect class="app-box" width="2.5" height="1.5" x="5" y="4" rx="0.3"/>
-            <text class="text-label" x="5.2" y="4.8" style="font-size: 8">App</text>
+            <text class="text-label" x="5.2" y="4.8">App</text>
             
             <!-- Guest OS -->
             <rect class="vm-box" width="12" height="2" x="2" y="6" rx="0.5"/>
@@ -359,16 +371,16 @@ Container vs. Virtual Machines
             
             <!-- Apps -->
             <rect class="app-box" width="2.5" height="1.5" x="32" y="4" rx="0.3"/>
-            <text class="text-label" x="32.2" y="4.8" style="font-size: 8">App</text>
+            <text class="text-label" x="32.2" y="4.8">App</text>
             
             <rect class="app-box" width="2.5" height="1.5" x="35" y="4" rx="0.3"/>
-            <text class="text-label" x="35.2" y="4.8" style="font-size: 8">App</text>
+            <text class="text-label" x="35.2" y="4.8">App</text>
             
             <rect class="app-box" width="2.5" height="1.5" x="38" y="4" rx="0.3"/>
-            <text class="text-label" x="38.2" y="4.8" style="font-size: 8">App</text>
+            <text class="text-label" x="38.2" y="4.8">App</text>
             
             <rect class="app-box" width="2.5" height="1.5" x="41" y="4" rx="0.3"/>
-            <text class="text-label" x="41.2" y="4.8" style="font-size: 8">App</text>
+            <text class="text-label" x="41.2" y="4.8">App</text>
             
             <!-- Container Runtime -->
             <rect class="container-box" width="12" height="3" x="32" y="6" rx="0.5"/>
@@ -398,7 +410,7 @@ Container vs. Virtual Machines
 Vergleich: Container vs. VMs
 -----------------------------
 
-.. grid::
+.. grid:: dd-margin-left-2em
 
     .. cell::
 
@@ -406,35 +418,53 @@ Vergleich: Container vs. VMs
 
         .. class:: incremental-list
 
-        :Vorteile:
+        :`Vorteile`:green::
+
+            .. class:: positive-list
+
             - Vollständige Isolation
             - Verschiedene Betriebssysteme möglich
-            - Bewährte Technologie
             - Hohe Sicherheit
 
-        :Nachteile:
+        :`Nachteile`:red::
+
+            .. class:: negative-list
+
             - Hoher Ressourcenverbrauch
             - Langsame Startzeiten
             - Komplexe Verwaltung
             - Weniger portabel
 
-    .. cell:: incremental
+    .. cell:: 
 
         .. rubric:: Container
 
         .. class:: incremental-list
 
-        :Vorteile:
+        :`Vorteile`:green::
+
+            .. class:: positive-list
+
             - Schneller Start
             - Geringer Ressourcenverbrauch
             - Hohe Portabilität
             - Einfache Skalierung
 
-        :Nachteile:
+        :`Nachteile`:red::
+
+            .. class:: negative-list
+
             - Weniger Isolation
             - Gleiches Betriebssystem erforderlich
             - Sicherheitsrisiken bei Root-Zugriff
             - Abhängigkeit vom Host-OS
+
+
+
+.. class:: new-section
+
+Containerisierung mit Docker
+------------------------------
 
 
 
@@ -463,8 +493,8 @@ Docker - Container-Infrastruktur
 
         .. class:: incremental-list
 
-        - **Docker Daemon**: Hintergrundprozess
-        - **Docker Client**: Kommandozeilen-Tool
+        - **Docker Daemon**: Hintergrundprozess der Images lädt sowie Container verwaltet und steuert
+        - **Docker Client**: Kommandozeilen-Tool zum Interagieren mit dem Daemon.
         - **Docker Registry**: Speicher für Images
         - **Docker Hub**: Öffentliche Registry
 
@@ -523,9 +553,9 @@ Docker-Architektur
         
         <!-- Arrows -->
         <g class="incremental">
-            <line x1="10" y1="3" x2="12" y2="3" style="stroke: #666; stroke-width: 2" marker-end="url(#arrow-blue)"/>
-            <line x1="24" y1="3" x2="26" y2="3" style="stroke: #666; stroke-width: 2" marker-end="url(#arrow-blue)"/>
-            <line x1="26" y1="3" x2="24" y2="3" style="stroke: #666; stroke-width: 2" marker-end="url(#arrow-blue)"/>
+            <line x1="10" y1="3" x2="12" y2="3" style="stroke: #666; stroke-width: 0.1" marker-end="url(#arrow-blue)"/>
+            <line x1="24" y1="3" x2="26" y2="3" style="stroke: #666; stroke-width: 0.1" marker-end="url(#arrow-blue)"/>
+            <line x1="26" y1="3" x2="24" y2="3" style="stroke: #666; stroke-width: 0.1" marker-end="url(#arrow-blue)"/>
         </g>
     </svg>
     </div>
@@ -597,9 +627,9 @@ Was ist Container Orchestrierung?
 
 **Container Orchestrierung** ist die Automatisierung der Bereitstellung, Verwaltung, Skalierung und Vernetzung von Container-Anwendungen.
 
-.. observation::
+.. container:: framed incremental
 
-    Bei der Orchestrierung geht es um:
+    Gegenstand der Orchestrierung:
 
     .. class:: incremental-list
 
@@ -617,7 +647,7 @@ Container Orchestrierungs-Tools
 
 .. grid::
 
-    .. cell::
+    .. cell:: width-30
 
         .. rubric:: Kubernetes
 
@@ -629,7 +659,7 @@ Container Orchestrierungs-Tools
         - **Große Community**
         - **Komplexe Einrichtung**
 
-    .. cell:: incremental
+    .. cell:: width-30 incremental
 
         .. rubric:: Docker Swarm
 
@@ -641,7 +671,7 @@ Container Orchestrierungs-Tools
         - **Gut für kleinere Projekte**
         - **Einfache Verwaltung**
 
-    .. cell:: incremental
+    .. cell:: width-30 incremental
 
         .. rubric:: Apache Mesos
 
@@ -655,14 +685,16 @@ Container Orchestrierungs-Tools
 
 
 
-.. class:: exercises transition-fade
+.. class::  transition-fade
 
-Übung: Web-Anwendung mit Docker deployen
+Exemplarische Verwendung von Docker
 ------------------------------------------
 
-.. exercise:: Docker-basiertes Deployment einer Web-Anwendung
+.. story::
 
-    In dieser Übung werden Sie eine einfache Web-Anwendung mit Docker containerisieren und deployen.
+    .. rubric:: Docker-basiertes Deployment einer Web-Anwendung
+
+    Entwicklung und Deployment einer einfachen Web-Anwendung mit Docker.
 
     .. class:: incremental-list
 
@@ -671,319 +703,162 @@ Container Orchestrierungs-Tools
     3. **Dockerfile erstellen**
     4. **Docker-Image bauen**
     5. **Container starten und testen**
-    6. **Docker Compose für Multi-Container-Setup**
+    6. [**Docker Compose für Multi-Container-Setup**]
 
+    .. compound::
+        :class: incremental
 
+        .. rubric:: Schritt 1: Docker-Installation prüfen
 
-Schritt 1: Docker-Installation prüfen
---------------------------------------
+        .. code:: bash
+            :class: copy-to-clipboard
+            :number-lines:
 
-.. code:: bash
-    :number-lines:
+            # Docker-Version prüfen
+            docker --version
+            
+            # Docker-Status prüfen
+            docker info
+            
+            # Ersten Container testen
+            docker run hello-world
 
-    # Docker-Version prüfen
-    docker --version
-    
-    # Docker-Status prüfen
-    docker info
-    
-    # Ersten Container testen
-    docker run hello-world
+    .. compound::
+        :class: incremental
 
+        .. rubric:: Schritt 2: Web-Anwendung erstellen (``index.html``)
 
+        .. code:: html
+            :class: copy-to-clipboard
+            :number-lines:
 
-Schritt 2: Web-Anwendung erstellen
------------------------------------
-
-.. code:: html
-
-    <!DOCTYPE html>
-    <html>
-    <head>
-        <title>Docker Demo App</title>
-        <style>
-            body { font-family: Arial, sans-serif; margin: 40px; }
-            .container { max-width: 800px; margin: 0 auto; }
-            .header { background: #0066cc; color: white; padding: 20px; }
-            .content { padding: 20px; }
-        </style>
-    </head>
-    <body>
-        <div class="container">
-            <div class="header">
-                <h1>Docker Demo Application</h1>
-            </div>
-            <div class="content">
+            <!DOCTYPE html>
+            <html>
+            <head><title>Docker Demo App</title></head>
+            <body>
                 <h2>Willkommen zur Docker-Demo!</h2>
                 <p>Diese Anwendung läuft in einem Docker-Container.</p>
-                <p>Server-Zeit: <span id="time"></span></p>
+                <p>Aktuelle-Zeit: <span id="time"></span></p>
                 <script>
-                    document.getElementById('time').textContent = new Date().toLocaleString();
+                    document.getElementById('time').textContent = 
+                        new Date().toLocaleString();
                 </script>
-            </div>
-        </div>
-    </body>
-    </html>
+            </body>
+            </html>
 
+    .. compound::
+        :class: incremental
 
+        .. rubric:: Schritt 3: ``Dockerfile`` erstellen
 
-Schritt 3: Dockerfile erstellen
---------------------------------
+        .. code:: dockerfile
+            :class: copy-to-clipboard
+            :number-lines:
 
-.. code:: dockerfile
+            # Basis-Image verwenden (Alpine-Linux mit einem vorinstallierten nginx)
+            FROM nginx:alpine
+            
+            # Arbeitsverzeichnis setzen innerhalb des Containers
+            WORKDIR /usr/share/nginx/html
+            
+            # HTML-Datei kopieren (kopiert lokale Datei in den Container relativ zum WORKDIR)
+            COPY index.html .
+            
+            # Port 80 freigeben
+            EXPOSE 80
+            
+            # Nginx im Vordergrund starten (da sich sond der Docker-Container gleich beendet)
+            CMD ["nginx", "-g", "daemon off;"]
 
-    # Basis-Image verwenden
-    FROM nginx:alpine
-    
-    # Arbeitsverzeichnis setzen
-    WORKDIR /usr/share/nginx/html
-    
-    # HTML-Datei kopieren
-    COPY index.html .
-    
-    # Port 80 freigeben
-    EXPOSE 80
-    
-    # Nginx starten
-    CMD ["nginx", "-g", "daemon off;"]
+    .. compound::
+        :class: incremental
 
+        .. rubric:: Schritt 4: Docker-Image bauen
 
+        .. code:: bash
+            :class: copy-to-clipboard
+            :number-lines:
 
-Schritt 4: Docker-Image bauen
-------------------------------
+            # Image bauen mit dem Tag "webapp-demo"
+            docker build -t webapp-demo .
+            
+            # Images anzeigen
+            docker images
+            
+            # Image-Details anzeigen
+            docker inspect webapp-demo
 
-.. code:: bash
-    :number-lines:
+    .. compound::
+        :class: incremental
 
-    # Image bauen
-    docker build -t webapp-demo .
-    
-    # Images anzeigen
-    docker images
-    
-    # Image-Details anzeigen
-    docker inspect webapp-demo
+        .. rubric:: Schritt 5: Container starten und testen
 
+        .. code:: bash
+            :class: copy-to-clipboard
+            :number-lines:
 
+            # Container mit dem Namen "webapp-container" im Hintergrund (-d) starten
+            docker run -d -p 8080:80 --name webapp-container webapp-demo
+            
+            # Container-Status prüfen
+            docker ps
+            
+            # In Browser testen: http://localhost:8080
+            
+            # Container-Logs anzeigen
+            docker logs webapp-container
+            
+            # Container stoppen
+            docker stop webapp-container
+            
+            # Container (nicht Container-Image) löschen
+            docker rm webapp-container
 
-Schritt 5: Container starten und testen
-----------------------------------------
+    .. compound::
+        :class: incremental
 
-.. code:: bash
-    :number-lines:
+        .. rubric:: Schritt 6: Docker Compose für Multi-Container (``docker-compose.yml``)
 
-    # Container starten
-    docker run -d -p 8080:80 --name webapp-container webapp-demo
-    
-    # Container-Status prüfen
-    docker ps
-    
-    # In Browser testen: http://localhost:8080
-    
-    # Container-Logs anzeigen
-    docker logs webapp-container
-    
-    # Container stoppen
-    docker stop webapp-container
-    
-    # Container löschen
-    docker rm webapp-container
+        .. code:: yaml
+            :class: copy-to-clipboard
+            :number-lines:
 
+            version: '3.8'
+            services:
+            web:
+                build: .
+                ports: ["8080:80"]
+                depends_on: [db]
+                environment: [DB_HOST=db]
 
+            db:
+                image: postgres:13
+                environment: [POSTGRES_DB=demo, POSTGRES_USER=demo, POSTGRES_PASSWORD=demo123]
+                volumes: [postgres_data:/var/lib/postgresql/data] # persistent
 
-Schritt 6: Docker Compose für Multi-Container
-----------------------------------------------
+            volumes: {postgres_data:}
 
-.. code:: yaml
+    .. compound::
+        :class: incremental
 
-    version: '3.8'
-    
-    services:
-      web:
-        build: .
-        ports:
-          - "8080:80"
-        depends_on:
-          - db
-        environment:
-          - DB_HOST=db
-      
-      db:
-        image: postgres:13
-        environment:
-          - POSTGRES_DB=demo
-          - POSTGRES_USER=demo
-          - POSTGRES_PASSWORD=demo123
-        volumes:
-          - postgres_data:/var/lib/postgresql/data
-    
-    volumes:
-      postgres_data:
+        .. rubric:: Schritt 7: Anwendung (bestehend aus mehreren Containern) starten:
 
-.. code:: bash
-    :number-lines:
+        .. code:: bash
+            :class: copy-to-clipboard
+            :number-lines:
 
-    # Multi-Container-Setup starten
-    docker-compose up -d
-    
-    # Status prüfen
-    docker-compose ps
-    
-    # Logs anzeigen
-    docker-compose logs
-    
-    # Setup stoppen
-    docker-compose down
+            # Multi-Container-Setup starten
+            docker-compose up -d
+            
+            # Status prüfen
+            docker-compose ps
+            
+            # Logs anzeigen
+            docker-compose logs
+            
+            # Setup stoppen
+            docker-compose down
 
-
-
-Erweiterte Übung: Database-Integration
----------------------------------------
-
-.. story::
-
-    .. exercise:: Web-App mit Datenbank
-
-        Erweitern Sie die Web-Anwendung um eine Datenbank-Integration:
-
-        .. class:: incremental-list
-
-        1. **PostgreSQL-Container hinzufügen**
-        2. **Backend-API erstellen** (Python/Node.js)
-        3. **Datenbankverbindung konfigurieren**
-        4. **Multi-Container-Setup mit Docker Compose**
-        5. **Persistente Datenspeicherung**
-
-Backend-API (Python/Flask)
----------------------------
-
-.. code:: python
-
-    from flask import Flask, jsonify, request
-    import psycopg2
-    import os
-    
-    app = Flask(__name__)
-    
-    # Datenbankverbindung
-    def get_db_connection():
-        conn = psycopg2.connect(
-            host=os.environ.get('DB_HOST', 'localhost'),
-            database=os.environ.get('POSTGRES_DB', 'demo'),
-            user=os.environ.get('POSTGRES_USER', 'demo'),
-            password=os.environ.get('POSTGRES_PASSWORD', 'demo123')
-        )
-        return conn
-    
-    @app.route('/api/data', methods=['GET'])
-    def get_data():
-        conn = get_db_connection()
-        cur = conn.cursor()
-        cur.execute('SELECT * FROM items;')
-        items = cur.fetchall()
-        cur.close()
-        conn.close()
-        return jsonify(items)
-    
-    @app.route('/api/data', methods=['POST'])
-    def add_data():
-        data = request.get_json()
-        conn = get_db_connection()
-        cur = conn.cursor()
-        cur.execute('INSERT INTO items (name, description) VALUES (%s, %s);',
-                   (data['name'], data['description']))
-        conn.commit()
-        cur.close()
-        conn.close()
-        return jsonify({'status': 'success'})
-    
-    if __name__ == '__main__':
-        app.run(host='0.0.0.0', port=5000)
-
-Dockerfile für Backend
------------------------
-
-.. code:: dockerfile
-
-    FROM python:3.9-slim
-    
-    WORKDIR /app
-    
-    COPY requirements.txt .
-    RUN pip install -r requirements.txt
-    
-    COPY app.py .
-    
-    EXPOSE 5000
-    
-    CMD ["python", "app.py"]
-
-Requirements-Datei
-------------------
-
-.. code:: text
-
-    Flask==2.3.3
-    psycopg2-binary==2.9.7
-
-Erweiterte Docker Compose
---------------------------
-
-.. code:: yaml
-
-    version: '3.8'
-    
-    services:
-      web:
-        build: .
-        ports:
-          - "8080:80"
-        depends_on:
-          - api
-      
-      api:
-        build:
-          context: .
-          dockerfile: Dockerfile.backend
-        ports:
-          - "5000:5000"
-        depends_on:
-          - db
-        environment:
-          - DB_HOST=db
-          - POSTGRES_DB=demo
-          - POSTGRES_USER=demo
-          - POSTGRES_PASSWORD=demo123
-      
-      db:
-        image: postgres:13
-        environment:
-          - POSTGRES_DB=demo
-          - POSTGRES_USER=demo
-          - POSTGRES_PASSWORD=demo123
-        volumes:
-          - postgres_data:/var/lib/postgresql/data
-          - ./init.sql:/docker-entrypoint-initdb.d/init.sql
-    
-    volumes:
-      postgres_data:
-
-Datenbank-Initialisierung
---------------------------
-
-.. code:: sql
-
-    CREATE TABLE IF NOT EXISTS items (
-        id SERIAL PRIMARY KEY,
-        name VARCHAR(100) NOT NULL,
-        description TEXT,
-        created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
-    );
-    
-    INSERT INTO items (name, description) VALUES
-        ('Docker', 'Container-Platform'),
-        ('Kubernetes', 'Container-Orchestrierung'),
-        ('PostgreSQL', 'Datenbank-System');
 
 
 
@@ -992,15 +867,17 @@ Datenbank-Initialisierung
 Zusammenfassung
 ----------------
 
-.. summary::
 
-    .. class:: incremental-list
+Konzepte
+------------
 
-    - **Virtualisierung** ermöglicht effiziente Nutzung von Hardware-Ressourcen
-    - **Container** bieten leichtgewichtige Alternative zu VMs
-    - **Docker** ist der Standard für Container-Plattformen
-    - **Orchestrierung** automatisiert das Management von Container-Anwendungen
-    - **Multi-Container-Setups** ermöglichen komplexe Anwendungsarchitekturen
+.. class:: incremental-list
+
+- **Virtualisierung** ermöglicht effiziente Nutzung von Hardware-Ressourcen
+- **Container** bieten leichtgewichtige Alternative zu VMs
+- **Docker** ist der Standard für Container-Plattformen
+- **Orchestrierung** automatisiert das Management von Container-Anwendungen
+- **Multi-Container-Setups** ermöglichen komplexe Anwendungsarchitekturen
 
 
 
@@ -1015,7 +892,6 @@ Best Practices für Docker
 
         .. class:: incremental-list
 
-        - **Multi-Stage Builds** für kleinere Images
         - **Non-Root User** für Sicherheit
         - **Layer-Caching** optimieren
         - **Security Updates** regelmäßig durchführen
@@ -1037,17 +913,17 @@ Best Practices für Docker
 
         .. class:: incremental-list
 
-        - **Minimal Images** verwenden
+        - **Minimale Images** verwenden
         - **Secrets** nicht im Image speichern
         - **Network Policies** definieren
-        - **Regular Updates** durchführen
+        - **Regelmäßige Aktualisierungen** durchführen
 
 
 
 Ausblick
 ---------
 
-.. observation::
+.. container:: accentuate
 
     Die Container-Technologie entwickelt sich weiter:
 
@@ -1060,31 +936,76 @@ Ausblick
     - **Service Mesh** für Microservice-Kommunikation
 
 .. conclusion::
+    :class: incremental
 
     Container und Virtualisierung sind fundamentale Technologien für moderne Softwareentwicklung und -deployment. Die praktische Anwendung mit Docker bietet eine solide Grundlage für weiterführende Themen wie Kubernetes und Cloud-Native-Entwicklung.
 
 
+.. class:: exercises
+
+Übung: Erste Schritte
+------------------------
+
+.. exercise:: Webserver im Docker Container 
+    
+    *Loggen Sie sich auf dem Server ein* und versuchen Sie alle Schritte nachvollzuziehen, die notwendig sind, um einen Docker Image mit Nginx zu bauen und danach zu starten. Orientieren Sie sich an dem Beispiel aus den Vorlesungsfolien, aber nutzen Sie eine eigene ``index.html``.
+
+    .. attention::
+
+        Spezifzieren Sie beim Start des Containers ein Portmapping (z.B. ``8100:80``) passend zu den Ihnen zugeteilten Ports!
+
+    Stellen Sie sicher, dass Ihr Server läuft in dem Sie die Webseite aufrufen.
+
+    Verfolgen Sie das Log, um die Zugriffe auf Ihre Webseite zu sehen.    
+
 
 .. class:: exercises
 
-Übung
-------
+Übung: Node.js im Container
+-------------------------------
 
-.. story::
+.. exercise:: Node.js Server im Container laufen lassen
 
-    .. exercise:: Erweiterte Docker-Praxis
+    1. Kopieren Sie die Ressourcen (`player.html <code/nodejs-exercise/player.html>`__\ , `admin.html <code/nodejs-exercise/admin.html>`__\ , `game.js <code/nodejs-exercise/game.js>`__\ , `package.json <code/nodejs-exercise/package.json>`__) auf Ihren Server in ein neu angelegtes Verzeichnis
+    2. Erstellen Sie ein Dockerfile, dass `node.js <https://github.com/nodejs/docker-node/blob/main/README.md>`__ enthält und alle Ressourcen in das Docker-Image kopiert.
 
-        Erstellen Sie eine vollständige Anwendung mit Docker:
+    3. Passen Sie das Dockerfile so an, dass beim Bauen des Docker-Images die benötigten Bibliotheken mit installiert werden.
+       Sie müssen dafür den Befehl ``npm install --production`` während des Bauens mit Hilfe von ``RUN`` im Script ausführen.
+    4. Passen Sie den Kommandozeilenbefehl (``CMD``) so an, dass der Node Server passend gestartet wird. 
+    
+       .. attention::
+        
+            Die Anwendung läuft Standardmäßig auf Port 8800.
 
-        .. class:: incremental-list
+    .. solution:: 
+        :pwd: Docker!Rockt!
 
-        1. **Frontend** (React/Vue.js) containerisieren
-        2. **Backend-API** (Node.js/Python) erstellen
-        3. **Datenbank** (PostgreSQL/MongoDB) integrieren
-        4. **Reverse Proxy** (Nginx) konfigurieren
-        5. **Docker Compose** für gesamtes Setup
-        6. **Environment-spezifische Konfiguration**
+        .. code:: Dockerfile
+            :class: copy-to-clipboard
+            :number-lines:
 
-        .. solution::
+            # Basis-Image verwenden
+            # (Alpine-Linux mit einem vorinstallierten nginx.)
+            FROM node:24-alpine3.21
 
-            Eine mögliche Lösung finden Sie in der separaten Übungsdatei `docker-exercise-solution/`.
+            # Arbeitsverzeichnis setzen innerhalb des Containers
+            WORKDIR /usr/share/node
+
+            COPY package*.json ./
+            RUN npm install --production
+
+            COPY game.js .
+            COPY admin.html .
+            COPY player.html .
+
+            # Port 8800 freigeben
+            EXPOSE 8800
+
+            CMD ["node", "game.js"]
+
+
+        .. code:: bash
+
+            docker build -t quizzy .
+
+            docker run -d -p 8800:8800 --name quizzy-container quizzy

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script>
+        let ws = undefined
+        try {
+            const protocol = location.protocol === "https:" ? "wss:" : "ws:";
+            ws = new WebSocket(`${protocol}//${location.host}/player`);
+        } catch (e) {
+            alert("WebSocket connection failed: " + e);
+            document.getElementById("main").innerText = "WebSocket connection failed. Please check the server.";
+        }
+        ws.onmessage = (event) => {
+            const data = JSON.parse(event.data);
+            switch (data.type) {
+                case "question":
+                    console.log("Question: " + data.question);
+                    showQuestion(data);
+                    break;
+                case "results":
+                    const main = document.getElementById("main")
+                    main.innerText = "Results: " + event.data;
+                    break;
+                default:
+                    console.log("Unknown message: " + data);
+                    break;
+            }
+        };
+        ws.onclose = (event) => {
+            console.log("Connection closed: " + event);
+        }
+        ws.onerror = (event) => {
+            console.error("Error: " + event);
+        }
+
+        function showQuestion(data) {
+            const main = document.getElementById("main")
+            main.innerHTML = `<h1>Question</h1><p>${data.question}</p>`;
+
+            function createAnswerButton(answer) {
+                const button = document.createElement("button");
+                button.innerText = answer;
+                button.onclick = submitAnswer(answer);
+                return button;
+            }
+
+            for (answer of data.answers) {
+                main.appendChild(createAnswerButton(answer));
+            }
+        }
+
+        function submitAnswer(answer) {
+            return () => {
+                ws.send(JSON.stringify({
+                    "type": "answer",
+                    "answer": answer
+                }));
+                doWait();
+            }
+        }
+
+        function submitUsername() {
+            const name = document.getElementById("username").value;
+            ws.send(JSON.stringify({
+                "type": "registration",
+                "name": name
+            }));
+
+            doWait();
+        }
+
+        function doWait() {
+            const main = document.getElementById("main");
+            main.innerHTML = "Waiting for other players...";
+        }
+    </script>
+
+<body>
+
+    <main id="main">
+        <form>
+            <input type="text" id="username" placeholder="Username">
+            <button type="button" onclick="submitUsername();">Submit</button>
+        </form>
+    </main>
+</body>
+
+</html>
