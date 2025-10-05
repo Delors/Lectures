@@ -45,9 +45,6 @@ Einführung in verteilte Systeme
 
 
 
-
-
-
 .. class:: padding-none no-title transition-scale
 
 Terminologie verteilter Systeme
