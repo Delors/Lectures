@@ -140,7 +140,7 @@ Was ist Virtualisierung?
 
 
 
-Traditionelle vs. Virtualisierte Architektur
+Architekturunterschiede
 ----------------------------------------------
 
 .. raw:: html
@@ -151,24 +151,24 @@ Traditionelle vs. Virtualisierte Architektur
         
         <!-- Traditional Architecture -->
         <g class="incremental">
-            <text class="title-label" x="8" y="2">Traditionelle Architektur</text>
+            <text class="title-label" x="3.5" y="2">Traditionelle Architektur</text>
             
             <!-- Host OS -->
-            <rect class="host-box" width="12" height="3" x="2" y="4" rx="1"/>
-            <text class="text-label" x="5" y="5.8">Host OS</text>
+            <rect class="host-box" width="13" height="3" x="3" y="10.5" rx="0.5"/>
+            <text class="text-label" x="3.5" y="12.3">Host OS</text>
             
             <!-- Apps -->
-            <rect class="app-box" width="3" height="2" x="3" y="8" rx="0.5"/>
+            <rect class="app-box" width="3.5" height="2" x="3" y="8" rx="0.5"/>
             <text class="text-label" x="3.5" y="9.3" >App 1</text>
             
-            <rect class="app-box" width="3" height="2" x="7" y="8" rx="0.5"/>
+            <rect class="app-box" width="3.5" height="2" x="7" y="8" rx="0.5"/>
             <text class="text-label" x="7.5" y="9.3" >App 2</text>
             
-            <rect class="app-box" width="3" height="2" x="11" y="8" rx="0.5"/>
+            <rect class="app-box" width="3.5" height="2" x="11" y="8" rx="0.5"/>
             <text class="text-label" x="11.5" y="9.3" >App 3</text>
 
-            <rect class="host-box" width="17" height="2" x="3" y="16" rx="0.5"/>
-            <text class="text-label" x="3.5" y="17.3">Physische Hardware</text>
+            <rect class="host-box" width="13" height="2" x="3" y="14" rx="0.5"/>
+            <text class="text-label" x="3.5" y="15.3">Physische Hardware</text>
         </g>
         
         <!-- Virtualized Architecture -->
@@ -176,34 +176,34 @@ Traditionelle vs. Virtualisierte Architektur
             <text class="title-label" x="33.5" y="2">Virtualisierte Architektur</text>
             
             <!-- Hypervisor -->
-            <rect class="host-box" width="12" height="3" x="33" y="4" rx="0.5"/>
-            <text class="text-label" x="33.5" y="5.8">Hypervisor</text>
+            <rect class="host-box" width="13" height="3" x="33" y="10.5" rx="0.5"/>
+            <text class="text-label" x="33.5" y="12.3">Hypervisor</text>
             
             <!-- VMs -->
-            <rect class="vm-box" width="3.5" height="4" x="33" y="8" rx="0.5"/>
+            <rect class="vm-box" width="3.5" height="4" x="33" y="6" rx="0.5"/>
             <text class="text-label" x="33.5" y="9.5" >VM 1</text>
-            <rect class="app-box" width="2" height="1.5" x="33.5" y="10.5" rx="0.3"/>
-            <text class="text-label" x="33.8" y="11.2" >OS</text>
+            <rect class="app-box" width="2.5" height="1.5" x="33.5" y="6.5" rx="0.3"/>
+            <text class="text-label" x="33.8" y="7.5" >OS</text>
             
-            <rect class="vm-box" width="3.5" height="4" x="37.5" y="8" rx="0.5"/>
+            <rect class="vm-box" width="3.5" height="4" x="37.5" y="6" rx="0.5"/>
             <text class="text-label" x="38" y="9.5" >VM 2</text>
-            <rect class="app-box" width="2" height="1.5" x="38" y="10.5" rx="0.3"/>
-            <text class="text-label" x="38.3" y="11.2" >OS</text>
+            <rect class="app-box" width="2.5" height="1.5" x="38" y="6.5" rx="0.3"/>
+            <text class="text-label" x="38.3" y="7.5" >OS</text>
             
-            <rect class="vm-box" width="3.5" height="4" x="42" y="8" rx="0.5"/>
+            <rect class="vm-box" width="3.5" height="4" x="42" y="6" rx="0.5"/>
             <text class="text-label" x="42.5" y="9.5" >VM 3</text>
-            <rect class="app-box" width="2" height="1.5" x="42.5" y="10.5" rx="0.3"/>
-            <text class="text-label" x="42.8" y="11.2" >OS</text>
+            <rect class="app-box" width="2.5" height="1.5" x="42.5" y="6.5" rx="0.3"/>
+            <text class="text-label" x="42.8" y="7.5" >OS</text>
 
-            <rect class="host-box" width="17" height="2" x="33" y="16" rx="0.5"/>
-            <text class="text-label" x="33.5" y="17.3">Physische Hardware</text>
+            <rect class="host-box" width="13" height="2" x="33" y="14" rx="0.5"/>
+            <text class="text-label" x="33.5" y="15.3">Physische Hardware</text>
         </g>
         
         
         <!-- Arrows -->
         <g class="incremental">
-            <line x1="30" y1="10" x2="32" y2="10" style="stroke: #666; stroke-width: 0.1" marker-end="url(#arrow)"/>
-            <text class="text-label" x="30" y="9.5" >Virtualisierung</text>
+            <line x1="17" y1="10" x2="32" y2="10" style="stroke: #666; stroke-width: 0.1" marker-end="url(#arrow)"/>
+            <text class="text-label" x="20" y="9.5" >Virtualisierung</text>
         </g>
     </svg>
     </div>
@@ -967,11 +967,11 @@ Ausblick
 .. exercise:: Node.js Server im Container laufen lassen
 
     1. Kopieren Sie die Ressourcen (`player.html <code/nodejs-exercise/player.html>`__\ , `admin.html <code/nodejs-exercise/admin.html>`__\ , `game.js <code/nodejs-exercise/game.js>`__\ , `package.json <code/nodejs-exercise/package.json>`__) auf Ihren Server in ein neu angelegtes Verzeichnis
-    2. Erstellen Sie ein Dockerfile, dass `node.js <https://github.com/nodejs/docker-node/blob/main/README.md>`__ enthält und alle Ressourcen in das Docker-Image kopiert.
+    2. Erstellen Sie ein ``Dockerfile``, dass `node.js <https://github.com/nodejs/docker-node/blob/main/README.md>`__ enthält und alle Ressourcen in das Docker-Image kopiert.
 
-    3. Passen Sie das Dockerfile so an, dass beim Bauen des Docker-Images die benötigten Bibliotheken mit installiert werden.
-       Sie müssen dafür den Befehl ``npm install --production`` während des Bauens mit Hilfe von ``RUN`` im Script ausführen.
-    4. Passen Sie den Kommandozeilenbefehl (``CMD``) so an, dass der Node Server passend gestartet wird. 
+    3. Passen Sie das ``Dockerfile`` so an, dass beim Bauen des Docker-Images die benötigten Bibliotheken mit installiert werden.
+       Sie müssen dafür den Befehl ``npm install --production`` während des Bauens mit Hilfe von ``RUN`` im ``Dockerfile`` ausführen.
+    4. Passen Sie den Kommandozeilenbefehl (``CMD``) im ``Dockerfile`` so an, dass der Node Server passend gestartet wird. 
     
        .. attention::
         
