@@ -101,8 +101,9 @@ Vorlesung "Verteilte Systeme" / "Distributed Systems"
 
       Architectures of Distributed Systems (`<ds-architectures/folien.en.rst.html>`__)
 
-   .. rubric:: Ergänzend
+   .. rubric:: Ergänzend bzw. Vertiefend
 
+   - Virtualisierung und Container (`<ds-containers/folien.de.rst.html>`__)
    - Zusammenspiel von agilen Methoden und Entwurf verteilter Systeme (`<ds-se-agile/folien.de.rst.html>`__)
    - Entwurfsprinzipien für verteilte Systeme (`<ds-se-entwurfsprinzipien/folien.de.rst.html>`__)
    - RESTful Web Services (`<ds-restful/folien.de.rst.html>`_)
