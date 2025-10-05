@@ -7,12 +7,25 @@
     xmlns:xl="http://www.w3.org/1999/xlink"
     xmlns:dc="http://purl.org/dc/elements/1.1/"
     viewBox="59 509 768 477"
-    width="1536"
-    height="954"
+    width="1152"
+    height="715"
 >
-<style>
-  @import url('/LectureDoc2/ext/fonts/ld-fonts.css');
-</style>
+  <style>
+    @import url('/LectureDoc2/ext/fonts/ld-fonts.css');
+
+    text,tspan {
+        font-family: 'Noto Sans Display';
+        font-weight: 400;
+        fill: black;
+    }
+    line {
+        marker-end :url(#FilledArrow_Marker);
+        stroke: black;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width : 2;
+    }
+  </style>
   <defs>
     <filter id="Shadow" filterUnits="userSpaceOnUse" x="-17.8" y="461.3">
       <feGaussianBlur in="SourceAlpha" result="blur" stdDeviation="1.308" />
@@ -67,7 +80,6 @@
       </g>
     </marker>
   </defs>
-  <metadata> Produced by OmniGraffle 8.0\n2025-05-09 19:04:38 +0000</metadata>
   <g
         id="all_encrypted"
         stroke-dasharray="none"
@@ -75,11 +87,10 @@
         stroke-opacity="1"
         fill="none"
         fill-opacity="1"
+        font-size="24"
     >
-    <title>all_encrypted</title>
     <rect fill="white" x="59" y="509" width="768" height="477" />
     <g id="all_encrypted_Layer_1">
-      <title>Layer 1</title>
       <g id="Graphic_52">
         <path
                     d="M 323 600 L 332 600 C 336.41828 600 340 603.5817 340 608 L 340 662 C 340 666.4183 336.41828 670 332 670 L 323 670 C 318.58172 670 315 666.4183 315 662 L 315 608 C 315 603.5817 318.58172 600 323 600 Z"
@@ -107,15 +118,7 @@
                     stroke-width="1"
                 />
         <text transform="translate(60 528.5)" fill="black">
-          <tspan
-                        font-family="Noto Sans Display"
-                        font-size="24"
-                        font-weight="400"
-                        fill="black"
-                        x="89.728"
-                        y="26"
-                        xml:space="preserve"
-                    >M</tspan>
+          <tspan font-size="24" x="89.728" y="26" xml:space="preserve">M</tspan>
         </text>
       </g>
       <g id="Graphic_4">
@@ -131,29 +134,9 @@
                     stroke-width="1"
                 />
         <text transform="translate(320 726)" fill="black">
-          <tspan
-                        font-family="Noto Sans Display"
-                        font-size="24"
-                        font-weight="400"
-                        fill="black"
-                        x="35.316"
-                        y="26"
-                        xml:space="preserve"
-                    >E(K,[M</tspan>
-          <tspan
-                        font-family="Noto Sans Display"
-                        font-size="24"
-                        font-weight="400"
-                        fill="black"
-                        y="26"
-                    >‖</tspan>
-          <tspan
-                        font-family="Noto Sans Display"
-                        font-size="24"
-                        font-weight="400"
-                        fill="black"
-                        y="26"
-                    > H(M)])</tspan>
+          <tspan x="35.316" y="26" xml:space="preserve">E(K,[M</tspan>
+          <tspan y="26">‖</tspan>
+          <tspan y="26"> H(M)])</tspan>
         </text>
       </g>
       <g id="Graphic_30">
@@ -170,15 +153,7 @@
                     stroke-width="1"
                 />
         <text transform="translate(210 628.5)" fill="black">
-          <tspan
-                        font-family="Noto Sans Display"
-                        font-size="24"
-                        font-weight="400"
-                        fill="black"
-                        x="29.112"
-                        y="26"
-                        xml:space="preserve"
-                    >H</tspan>
+          <tspan x="29.112" y="26" xml:space="preserve">H</tspan>
         </text>
       </g>
       <g id="Graphic_31">
@@ -195,14 +170,7 @@
                     stroke-width="1"
                 />
         <text transform="translate(290 530)" fill="black">
-          <tspan
-                        font-family="Noto Sans Display"
-                        font-size="24"
-                        font-weight="400"
-                        fill="black"
-                        x="31.08"
-                        y="18"
-                    >‖</tspan>
+          <tspan x="31.08" y="18">‖</tspan>
         </text>
       </g>
       <g id="Graphic_32">
@@ -219,15 +187,7 @@
                     stroke-width="1"
                 />
         <text transform="translate(392.5 528.5)" fill="black">
-          <tspan
-                        font-family="Noto Sans Display"
-                        font-size="24"
-                        font-weight="400"
-                        fill="black"
-                        x="31.224"
-                        y="26"
-                        xml:space="preserve"
-                    >E</tspan>
+          <tspan x="31.224" y="26" xml:space="preserve">E</tspan>
         </text>
       </g>
       <g id="Line_33" filter="url(#Shadow)">
@@ -237,10 +197,6 @@
                     x2="277.1"
                     y2="545"
                     marker-end="url(#FilledArrow_Marker)"
-                    stroke="black"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
                 />
       </g>
       <g id="Line_34" filter="url(#Shadow)">
@@ -250,10 +206,6 @@
                     x2="379.6"
                     y2="545"
                     marker-end="url(#FilledArrow_Marker)"
-                    stroke="black"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
                 />
       </g>
       <g id="Line_35" filter="url(#Shadow)">
@@ -277,17 +229,7 @@
                 />
       </g>
       <g id="Line_37" filter="url(#Shadow)">
-        <line
-                    x1="430.4375"
-                    y1="580"
-                    x2="431.90126"
-                    y2="697.101"
-                    marker-end="url(#FilledArrow_Marker)"
-                    stroke="black"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                />
+        <line x1="430.4375" y1="580" x2="431.90126" y2="697.101" />
       </g>
       <g id="Graphic_38">
         <path
@@ -303,15 +245,7 @@
                     stroke-width="1"
                 />
         <text transform="translate(395 828.5)" fill="black">
-          <tspan
-                        font-family="Noto Sans Display"
-                        font-size="24"
-                        font-weight="400"
-                        fill="black"
-                        x="29.256"
-                        y="26"
-                        xml:space="preserve"
-                    >D</tspan>
+          <tspan x="29.256" y="26" xml:space="preserve">D</tspan>
         </text>
       </g>
       <g id="Graphic_39">
@@ -328,15 +262,7 @@
                     stroke-width="1"
                 />
         <text transform="translate(510 828.5)" fill="black">
-          <tspan
-                        font-family="Noto Sans Display"
-                        font-size="24"
-                        font-weight="400"
-                        fill="black"
-                        x="89.728"
-                        y="26"
-                        xml:space="preserve"
-                    >M</tspan>
+          <tspan x="89.728" y="26" xml:space="preserve">M</tspan>
         </text>
       </g>
       <g id="Graphic_40">
@@ -366,42 +292,14 @@
                     stroke-width="1"
                 />
         <text transform="translate(650 933.5)" fill="black">
-          <tspan
-                        font-family="Noto Sans Display"
-                        font-size="24"
-                        font-weight="400"
-                        fill="black"
-                        x="29.112"
-                        y="26"
-                        xml:space="preserve"
-                    >H</tspan>
+          <tspan x="29.112" y="26" xml:space="preserve">H</tspan>
         </text>
       </g>
       <g id="Line_42" filter="url(#Shadow)">
-        <line
-                    x1="432.5"
-                    y1="780"
-                    x2="432.5"
-                    y2="797.1"
-                    marker-end="url(#FilledArrow_Marker)"
-                    stroke="black"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                />
+        <line x1="432.5" y1="780" x2="432.5" y2="797.1" />
       </g>
       <g id="Line_43" filter="url(#Shadow)">
-        <line
-                    x1="470"
-                    y1="845"
-                    x2="497.1"
-                    y2="845"
-                    marker-end="url(#FilledArrow_Marker)"
-                    stroke="black"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                />
+        <line x1="470" y1="845" x2="497.1" y2="845" />
       </g>
       <g id="Line_44" filter="url(#Shadow)">
         <path
@@ -426,10 +324,7 @@
       <g id="Graphic_46">
         <text transform="translate(700 885)" fill="black">
           <tspan
-                        font-family="Noto Sans Display"
-                        font-size="24"
                         font-weight="700"
-                        fill="black"
                         x="4192202e-19"
                         y="26"
                         xml:space="preserve"
@@ -448,28 +343,12 @@
       </g>
       <g id="Graphic_48">
         <text transform="translate(500 595)" fill="#666">
-          <tspan
-                        font-family="Noto Sans Display"
-                        font-size="24"
-                        font-weight="400"
-                        fill="#666"
-                        x="4360956e-19"
-                        y="26"
-                        xml:space="preserve"
-                    >K</tspan>
+          <tspan fill="#666" x="4360956e-19" y="26" xml:space="preserve">K</tspan>
         </text>
       </g>
       <g id="Graphic_49">
         <text transform="translate(348.4839 900)" fill="#666">
-          <tspan
-                        font-family="Noto Sans Display"
-                        font-size="24"
-                        font-weight="400"
-                        fill="#666"
-                        x="4360956e-19"
-                        y="26"
-                        xml:space="preserve"
-                    >K</tspan>
+          <tspan fill="#666" x="4360956e-19" y="26" xml:space="preserve">K</tspan>
         </text>
       </g>
       <g id="Line_50">
@@ -480,9 +359,6 @@
                     y2="582.3754"
                     marker-end="url(#SharpArrow_Marker)"
                     stroke="#666"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
                 />
       </g>
       <g id="Line_51">
@@ -493,9 +369,6 @@
                     y2="883.9803"
                     marker-end="url(#SharpArrow_Marker)"
                     stroke="#666"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
                 />
       </g>
     </g>
