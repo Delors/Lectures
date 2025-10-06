@@ -346,61 +346,65 @@ Container vs. Virtual Machines
             <text class="title-label" x="8" y="2">Virtual Machine</text>
             
             <!-- Apps -->
-            <rect class="app-box" width="2.5" height="1.5" x="2" y="4" rx="0.3"/>
-            <text class="text-label" x="2.2" y="4.8">App</text>
+            <rect class="app-box" width="2.5" height="1.5" x="2" y="3" rx="0.3"/>
+            <text class="text-label" x="2.5" y="4">App</text>
             
-            <rect class="app-box" width="2.5" height="1.5" x="5" y="4" rx="0.3"/>
-            <text class="text-label" x="5.2" y="4.8">App</text>
+            <rect class="app-box" width="2.5" height="1.5" x="5" y="3" rx="0.3"/>
+            <text class="text-label" x="5.5" y="4">App</text>
             
             <!-- Guest OS -->
-            <rect class="vm-box" width="12" height="2" x="2" y="6" rx="0.5"/>
-            <text class="text-label" x="6" y="7.3">Guest OS</text>
+            <rect class="vm-box" width="12" height="2" x="2" y="5" rx="0.5"/>
+            <text class="text-label" x="2.5" y="6.3">Guest OS</text>
             
             <!-- Hypervisor -->
-            <rect class="host-box" width="12" height="2" x="2" y="9" rx="0.5"/>
-            <text class="text-label" x="6" y="10.3">Hypervisor</text>
+            <rect class="host-box" width="12" height="2" x="2" y="7.5" rx="0.5"/>
+            <text class="text-label" x="2.5" y="8.8">Hypervisor</text>
             
             <!-- Host OS -->
-            <rect class="host-box" width="12" height="2" x="2" y="12" rx="0.5"/>
-            <text class="text-label" x="6" y="13.3">Host OS</text>
+            <rect class="host-box" width="12" height="2" x="2" y="10" rx="0.5"/>
+            <text class="text-label" x="2.5" y="11.3">Host OS</text>
+
+            <!-- Hardware -->
+            <rect class="host-box" width="12" height="2" x="2" y="12.5" rx="0.5"/>
+            <text class="text-label" x="2.5" y="13.8">Physische Hardware</text>
         </g>
         
         <!-- Container Architecture -->
         <g class="incremental">
-            <text class="title-label" x="38" y="2">Container</text>
+            <text class="title-label" x="35" y="2">Container</text>
             
             <!-- Apps -->
-            <rect class="app-box" width="2.5" height="1.5" x="32" y="4" rx="0.3"/>
-            <text class="text-label" x="32.2" y="4.8">App</text>
+            <rect class="app-box" width="2.5" height="1.5" x="32" y="4.5" rx="0.3"/>
+            <text class="text-label" x="32.5" y="5.5">App</text>
             
-            <rect class="app-box" width="2.5" height="1.5" x="35" y="4" rx="0.3"/>
-            <text class="text-label" x="35.2" y="4.8">App</text>
+            <rect class="app-box" width="2.5" height="1.5" x="35" y="4.5" rx="0.3"/>
+            <text class="text-label" x="35.5" y="5.5">App</text>
             
-            <rect class="app-box" width="2.5" height="1.5" x="38" y="4" rx="0.3"/>
-            <text class="text-label" x="38.2" y="4.8">App</text>
+            <rect class="app-box" width="2.5" height="1.5" x="38" y="4.5" rx="0.3"/>
+            <text class="text-label" x="38.5" y="5.5">App</text>
             
-            <rect class="app-box" width="2.5" height="1.5" x="41" y="4" rx="0.3"/>
-            <text class="text-label" x="41.2" y="4.8">App</text>
+            <rect class="app-box" width="2.5" height="1.5" x="41" y="4.5" rx="0.3"/>
+            <text class="text-label" x="41.5" y="5.5">App</text>
             
             <!-- Container Runtime -->
-            <rect class="container-box" width="12" height="3" x="32" y="6" rx="0.5"/>
-            <text class="text-label" x="35" y="7.8">Container Runtime</text>
-            <text class="text-label" x="35" y="8.5" >(Docker, containerd)</text>
+            <rect class="container-box" width="12" height="3" x="32" y="6.5" rx="0.5"/>
+            <text class="text-label" x="32.5" y="7.8">Container Runtime</text>
+            <text class="text-label" x="32.5" y="8.8" >(Docker, containerd)</text>
             
             <!-- Host OS -->
             <rect class="host-box" width="12" height="2" x="32" y="10" rx="0.5"/>
-            <text class="text-label" x="36" y="11.3">Host OS</text>
+            <text class="text-label" x="32.5" y="11.3">Host OS</text>
+
+            <!-- Hardware -->
+            <rect class="host-box" width="12" height="2" x="32" y="12.5" rx="0.5"/>
+            <text class="text-label" x="32.5" y="13.8">Physische Hardware</text>
         </g>
-        
-        <!-- Hardware -->
-        <rect class="host-box" width="56" height="2" x="2" y="18" rx="1"/>
-        <text class="text-label" x="28" y="19.3">Physische Hardware</text>
         
         <!-- Resource Usage -->
         <g class="incremental">
-            <text class="title-label" x="2" y="22">Ressourcennutzung</text>
-            <text class="text-label" x="2" y="23.2" >VM: Vollständiges OS pro Instanz</text>
-            <text class="text-label" x="32" y="23.2" >Container: Geteiltes Host-OS</text>
+            <text class="title-label" x="2" y="16">Ressourcennutzung</text>
+            <text class="text-label" x="2" y="17.5" >VM: Vollständiges OS pro Instanz</text>
+            <text class="text-label" x="32" y="17.5" >Container: Geteiltes Host-OS</text>
         </g>
     </svg>
     </div>
@@ -511,51 +515,53 @@ Docker-Architektur
         
         <!-- Docker Client -->
         <g class="incremental">
-            <rect class="app-box" width="8" height="2" x="2" y="2" rx="0.5"/>
-            <text class="text-label" x="4.5" y="3.3">Docker Client</text>
-            <text class="text-label" x="4" y="3.8" >(CLI, API)</text>
+            <rect class="app-box" width="8" height="3.3" x="2" y="5.7" rx="0.5"/>
+            <text class="text-label" x="2.5" y="7">Docker Client</text>
+            <text class="text-label" x="2.5" y="8.3" >(CLI, API)</text>
         </g>
         
         <!-- Docker Daemon -->
         <g class="incremental">
-            <rect class="container-box" width="12" height="4" x="12" y="2" rx="0.5"/>
-            <text class="text-label" x="15" y="3.5">Docker Daemon</text>
-            <text class="text-label" x="14" y="4.2" >(Docker Engine)</text>
-            <text class="text-label" x="15" y="4.8" >- Images</text>
-            <text class="text-label" x="15" y="5.3" >- Containers</text>
+            <rect class="container-box" width="19" height="6" x="15" y="3" rx="0.5"/>
+            <text class="text-label" x="15.5" y="4.3">Docker Daemon</text>
+            <text class="text-label" x="15.5" y="5.7" >(Docker Engine)</text>
+            <text class="text-label" x="15.5" y="7" >- Images</text>
+            <text class="text-label" x="15.5" y="8.3" >- Containers</text>
         </g>
         
         <!-- Docker Registry -->
         <g class="incremental">
-            <rect class="vm-box" width="8" height="2" x="26" y="2" rx="0.5"/>
-            <text class="text-label" x="28.5" y="3.3">Docker Registry</text>
+            <rect class="vm-box" width="8" height="2" x="39" y="7" rx="0.5"/>
+            <text class="text-label" x="39.5" y="8.3">Docker Registry</text>
+        </g>
+
+                <!-- Containers -->
+        <g class="incremental">
+            <rect class="app-box" width="6" height="2" x="15" y="0.5" rx="0.3"/>
+            <text class="text-label" x="15.5" y="1.8" >Container 1</text>
+            
+            <rect class="app-box" width="6" height="2" x="21.5" y="0.5" rx="0.3"/>
+            <text class="text-label" x="22" y="1.8" >Container 2</text>
+            
+            <rect class="app-box" width="6" height="2" x="28" y="0.5" rx="0.3"/>
+            <text class="text-label" x="28.5" y="1.8" >Container 3</text>
         </g>
         
         <!-- Host OS -->
-        <rect class="host-box" width="46" height="2" x="2" y="8" rx="0.5"/>
-        <text class="text-label" x="23" y="9.3">Host Operating System</text>
+        <rect class="host-box" width="45" height="2" x="2" y="9.5" rx="0.5"/>
+        <text class="text-label" x="20" y="10.8">Host Operating System</text>
         
         <!-- Hardware -->
-        <rect class="host-box" width="46" height="2" x="2" y="11" rx="0.5"/>
-        <text class="text-label" x="23" y="12.3">Hardware</text>
+        <rect class="host-box" width="45" height="2" x="2" y="12" rx="0.5"/>
+        <text class="text-label" x="23" y="13.3">Hardware</text>
         
-        <!-- Containers -->
-        <g class="incremental">
-            <rect class="app-box" width="4" height="2" x="12" y="6" rx="0.3"/>
-            <text class="text-label" x="13" y="7.2" >Container 1</text>
-            
-            <rect class="app-box" width="4" height="2" x="17" y="6" rx="0.3"/>
-            <text class="text-label" x="18" y="7.2" >Container 2</text>
-            
-            <rect class="app-box" width="4" height="2" x="22" y="6" rx="0.3"/>
-            <text class="text-label" x="23" y="7.2" >Container 3</text>
-        </g>
+
         
         <!-- Arrows -->
         <g class="incremental">
-            <line x1="10" y1="3" x2="12" y2="3" style="stroke: #666; stroke-width: 0.1" marker-end="url(#arrow-blue)"/>
-            <line x1="24" y1="3" x2="26" y2="3" style="stroke: #666; stroke-width: 0.1" marker-end="url(#arrow-blue)"/>
-            <line x1="26" y1="3" x2="24" y2="3" style="stroke: #666; stroke-width: 0.1" marker-end="url(#arrow-blue)"/>
+            <line x1="10" y1="7.5" x2="15" y2="7.5" style="stroke: #666; stroke-width: 0.1" marker-end="url(#arrow-blue)"/>
+            <line x1="34" y1="7.5" x2="39" y2="7.5" style="stroke: #666; stroke-width: 0.1" marker-end="url(#arrow-blue)"/>
+            <line x1="39" y1="8.5" x2="34" y2="8.5" style="stroke: #666; stroke-width: 0.1" marker-end="url(#arrow-blue)"/>
         </g>
     </svg>
     </div>
