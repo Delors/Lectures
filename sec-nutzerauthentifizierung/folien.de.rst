@@ -72,11 +72,16 @@ Challenge-Response Authentifizierung
         .. question::
             :class: incremental
 
-            Wie bewerten Sie die Sicherheit (dieses Protokolls/Ansatzes)?
+            Wie bewerten Sie die Sicherheit genau dieses Protokolls/Ansatzes?
 
         .. presenter-note::
 
             Das Problem ist hierbei, dass das Passwort auf dem Server im Klartext gespeichert wird. Dies kann zu Sicherheitslücken führen, wenn der Server kompromittiert wird oder wenn der Serveradministrator unberechtigten Zugriff hat.
+
+            Ggf. gibt es auch die Möglichkeit für Replay-Attacken, wenn ein Angreifer die Kommunikation abhört und die Challenge-Response-Paare aufzeichnet und Bob "später" die gleiche Challenge wählen sollte. 
+
+            Es erfolgt keine Authentisierung von Bob gegenüber Alice. Ein einfacher Person-in-the-Middle-Angriff ist möglich.
+            
 
 
 Zero-Knowledge Protokolle
