@@ -973,7 +973,11 @@ Ausblick
 .. exercise:: Node.js Server im Container laufen lassen
 
     1. Kopieren Sie die Ressourcen (`player.html <code/nodejs-exercise/player.html>`__\ , `admin.html <code/nodejs-exercise/admin.html>`__\ , `game.js <code/nodejs-exercise/game.js>`__\ , `package.json <code/nodejs-exercise/package.json>`__) auf Ihren Server in ein neu angelegtes Verzeichnis
-    2. Erstellen Sie ein ``Dockerfile``, dass `node.js <https://github.com/nodejs/docker-node/blob/main/README.md>`__ enthält und alle Ressourcen in das Docker-Image kopiert.
+    2. Ihr Docker-Image soll `node.js <https://github.com/nodejs/docker-node/blob/main/README.md>`__ und alle Ressourcen enthalten.
+
+       .. supplemental::
+
+        D. h. Ihr ``Dockerfile`` muss eine Referenz auf ein entsprechendes Image mit node.js enhalten und die Ressource in das Dockerfile kopieren. 
 
     3. Passen Sie das ``Dockerfile`` so an, dass beim Bauen des Docker-Images die benötigten Bibliotheken mit installiert werden.
        Sie müssen dafür den Befehl ``npm install --production`` während des Bauens mit Hilfe von ``RUN`` im ``Dockerfile`` ausführen.
