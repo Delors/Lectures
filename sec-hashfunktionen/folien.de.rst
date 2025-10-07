@@ -913,6 +913,40 @@ MAC: `Poly 1305 <https://datatracker.ietf.org/doc/html/rfc8439#section-2.5>`__
 
                 clamped_r = r & 0x0ffffffc0ffffffc0ffffffc0fffffff # Zahlen
 
+        .. presenter-note::
+
+            .. rubric:: 🔐 Why clamping is important (security & math reasons) FROM CHATGPT - Verification Required!
+
+            Due to clamping only 108 bits of r are actually “free”.
+
+            This is crucial for both security and performance:
+            •	Reduces the risk of certain attacks (e.g., small subgroup attacks).
+            •	Improves performance by simplifying the math involved in the MAC computation.
+
+            1. Prevents overflow beyond the modulus
+                •	The computation happens modulo 2^{130} - 5.
+                •	By ensuring certain high bits of r are zero, we guarantee that intermediate multiplications never overflow too far beyond the modulus.
+                •	That makes modular reduction simpler and constant-time (no data-dependent timing behavior).
+
+            2. Eliminates small-subgroup attacks
+                •	Without clamping, some values of r could make the polynomial function non-injective modulo 2^{130} - 5, leading to collisions.
+                •	Clamping ensures r is in a “safe” range where the polynomial behaves like a good pseudorandom function.
+
+            3. Avoids bias in the modulo reduction
+                •	If r were allowed to use all 128 bits, certain multiplications could produce biased reductions (some values more likely than others).
+                •	Clamping constrains r to a range that ensures uniform randomness after modular reduction.
+
+            4. Simplifies constant-time arithmetic
+                •	By constraining r, modular operations become simple mask-based arithmetic, with no conditional reductions.
+
+            .. rubric:: ✅ Intuitive summary
+
+            “Trimming r to a safe range where math stays simple, fast, and secure.” It ensures:
+
+                •	No dangerous overflow
+                •	No weak r values
+                •	Constant-time modular arithmetic
+                •	Full 128-bit security of the MAC
 
     .. card::
 
