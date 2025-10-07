@@ -91,7 +91,6 @@
                         fill="black"
                         x="0"
                         y="11"
-                        xml:space="preserve"
                     >1024 Bits</tspan>
         </text>
       </g>
@@ -117,15 +116,12 @@
                         fill="black"
                         x="0"
                         y="15"
-                        xml:space="preserve"
-                    >M</tspan>
-          <tspan
+                    >M</tspan><tspan
                         font-family="Noto Sans Display"
                         font-size="11"
                         font-weight="400"
                         fill="black"
                         y="20"
-                        xml:space="preserve"
                     >i</tspan>
         </text>
       </g>

@@ -110,15 +110,12 @@
                         fill="black"
                         x="21.605225"
                         y="15"
-                        xml:space="preserve"
-                    >K</tspan>
-          <tspan
+                    >K</tspan><tspan
                         font-family="Noto Sans Display"
                         font-size="11"
                         font-weight="400"
                         fill="black"
                         y="20"
-                        xml:space="preserve"
                     >0</tspan>
         </text>
       </g>
@@ -142,15 +139,12 @@
                         fill="black"
                         x="21.605225"
                         y="15"
-                        xml:space="preserve"
-                    >K</tspan>
-          <tspan
+                    >K</tspan><tspan
                         font-family="Noto Sans Display"
                         font-size="11"
                         font-weight="400"
                         fill="black"
                         y="20"
-                        xml:space="preserve"
                     >1</tspan>
         </text>
       </g>
@@ -174,15 +168,12 @@
                         fill="black"
                         x="18.546387"
                         y="15"
-                        xml:space="preserve"
-                    >K</tspan>
-          <tspan
+                    >K</tspan><tspan
                         font-family="Noto Sans Display"
                         font-size="11"
                         font-weight="400"
                         fill="black"
                         y="20"
-                        xml:space="preserve"
                     >79</tspan>
         </text>
       </g>
@@ -242,7 +233,6 @@
                         fill="#ee2c61"
                         x="0"
                         y="11"
-                        xml:space="preserve"
                     >64 Bits</tspan>
         </text>
       </g>

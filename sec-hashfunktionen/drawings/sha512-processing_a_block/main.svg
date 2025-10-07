@@ -161,16 +161,15 @@
             gradientTransform="translate(280.1751 370.49237) rotate(-90) scale(24)"
         />
   </defs>
-  <metadata> Produced by OmniGraffle 8.0\n2024-10-20 08:15:39 +0000</metadata>
   <g
         id="overview"
+        font-family="Noto Sans Display"
         stroke-dasharray="none"
         fill-opacity="1"
         fill="none"
         stroke="none"
         stroke-opacity="1"
     >
-    <title>overview</title>
     <g id="overview_main">
       <title>main</title>
       <g id="Graphic_174">
@@ -187,21 +186,16 @@
                 />
         <text transform="translate(6.376953 96.34246)" fill="black">
           <tspan
-                        font-family="Noto Sans Display"
                         font-size="16"
                         font-weight="400"
                         fill="black"
                         x="263.11035"
                         y="15"
-                        xml:space="preserve"
-                    >H</tspan>
-          <tspan
-                        font-family="Noto Sans Display"
+                    >H</tspan><tspan
                         font-size="11"
                         font-weight="400"
                         fill="black"
                         y="20"
-                        xml:space="preserve"
                     >i-1</tspan>
         </text>
       </g>
@@ -220,13 +214,11 @@
                 />
         <text transform="translate(7.58193 183.51488)" fill="black">
           <tspan
-                        font-family="Noto Sans Display"
                         font-size="16"
                         font-weight="400"
                         fill="black"
                         x="244.45267"
                         y="15"
-                        xml:space="preserve"
                     >Runde 0</tspan>
         </text>
       </g>
@@ -245,13 +237,11 @@
                 />
         <text transform="translate(8 255.46926)" fill="black">
           <tspan
-                        font-family="Noto Sans Display"
                         font-size="16"
                         font-weight="400"
                         fill="black"
                         x="244.45267"
                         y="15"
-                        xml:space="preserve"
                     >Runde 1</tspan>
         </text>
       </g>
@@ -270,13 +260,11 @@
                 />
         <text transform="translate(6.9794415 389.94026)" fill="black">
           <tspan
-                        font-family="Noto Sans Display"
                         font-size="16"
                         font-weight="400"
                         fill="black"
                         x="240.00345"
                         y="15"
-                        xml:space="preserve"
                     >Runde 79</tspan>
         </text>
       </g>
@@ -295,13 +283,11 @@
                 />
         <text transform="translate(6.376953 121.84033)" fill="black">
           <tspan
-                        font-family="Noto Sans Display"
                         font-size="16"
                         font-weight="400"
                         fill="black"
                         x="25.55078"
                         y="15"
-                        xml:space="preserve"
                     >a</tspan>
         </text>
       </g>
@@ -319,14 +305,12 @@
                     fill-opacity=".14276637"
                 >
           <tspan
-                        font-family="Noto Sans Display"
                         font-size="16"
                         font-weight="400"
                         fill="black"
                         fill-opacity=".14276637"
                         x="25.55078"
                         y="15"
-                        xml:space="preserve"
                     >a</tspan>
         </text>
       </g>
@@ -340,14 +324,12 @@
                 />
         <text transform="translate(7.5 255.8903)" fill="black" fill-opacity=".14276637">
           <tspan
-                        font-family="Noto Sans Display"
                         font-size="16"
                         font-weight="400"
                         fill="black"
                         fill-opacity=".14276637"
                         x="25.55078"
                         y="15"
-                        xml:space="preserve"
                     >a</tspan>
         </text>
       </g>
@@ -365,14 +347,12 @@
                     fill-opacity=".14276637"
                 >
           <tspan
-                        font-family="Noto Sans Display"
                         font-size="16"
                         font-weight="400"
                         fill="black"
                         fill-opacity=".14276637"
                         x="25.55078"
                         y="15"
-                        xml:space="preserve"
                     >a</tspan>
         </text>
       </g>
@@ -405,13 +385,11 @@
                 />
         <text transform="translate(76.37695 121.84033)" fill="black">
           <tspan
-                        font-family="Noto Sans Display"
                         font-size="16"
                         font-weight="400"
                         fill="black"
                         x="25.55078"
                         y="15"
-                        xml:space="preserve"
                     >b</tspan>
         </text>
       </g>
@@ -429,14 +407,12 @@
                     fill-opacity=".14276637"
                 >
           <tspan
-                        font-family="Noto Sans Display"
                         font-size="16"
                         font-weight="400"
                         fill="black"
                         fill-opacity=".14276637"
                         x="25.55078"
                         y="15"
-                        xml:space="preserve"
                     >b</tspan>
         </text>
       </g>
@@ -454,14 +430,12 @@
                     fill-opacity=".14276637"
                 >
           <tspan
-                        font-family="Noto Sans Display"
                         font-size="16"
                         font-weight="400"
                         fill="black"
                         fill-opacity=".14276637"
                         x="25.55078"
                         y="15"
-                        xml:space="preserve"
                     >b</tspan>
         </text>
       </g>
@@ -479,14 +453,12 @@
                     fill-opacity=".14276637"
                 >
           <tspan
-                        font-family="Noto Sans Display"
                         font-size="16"
                         font-weight="400"
                         fill="black"
                         fill-opacity=".14276637"
                         x="25.55078"
                         y="15"
-                        xml:space="preserve"
                     >b</tspan>
         </text>
       </g>
@@ -519,13 +491,11 @@
                 />
         <text transform="translate(146.37695 121.84033)" fill="black">
           <tspan
-                        font-family="Noto Sans Display"
                         font-size="16"
                         font-weight="400"
                         fill="black"
                         x="26"
                         y="15"
-                        xml:space="preserve"
                     >c</tspan>
         </text>
       </g>
@@ -543,14 +513,12 @@
                     fill-opacity=".14276637"
                 >
           <tspan
-                        font-family="Noto Sans Display"
                         font-size="16"
                         font-weight="400"
                         fill="black"
                         fill-opacity=".14276637"
                         x="26"
                         y="15"
-                        xml:space="preserve"
                     >c</tspan>
         </text>
       </g>
@@ -568,14 +536,12 @@
                     fill-opacity=".14276637"
                 >
           <tspan
-                        font-family="Noto Sans Display"
                         font-size="16"
                         font-weight="400"
                         fill="black"
                         fill-opacity=".14276637"
                         x="26"
                         y="15"
-                        xml:space="preserve"
                     >c</tspan>
         </text>
       </g>
@@ -593,14 +559,12 @@
                     fill-opacity=".14276637"
                 >
           <tspan
-                        font-family="Noto Sans Display"
                         font-size="16"
                         font-weight="400"
                         fill="black"
                         fill-opacity=".14276637"
                         x="26"
                         y="15"
-                        xml:space="preserve"
                     >c</tspan>
         </text>
       </g>
@@ -633,13 +597,11 @@
                 />
         <text transform="translate(216.37695 121.84033)" fill="black">
           <tspan
-                        font-family="Noto Sans Display"
                         font-size="16"
                         font-weight="400"
                         fill="black"
                         x="25.55078"
                         y="15"
-                        xml:space="preserve"
                     >d</tspan>
         </text>
       </g>
@@ -657,14 +619,12 @@
                     fill-opacity=".14276637"
                 >
           <tspan
-                        font-family="Noto Sans Display"
                         font-size="16"
                         font-weight="400"
                         fill="black"
                         fill-opacity=".14276637"
                         x="25.55078"
                         y="15"
-                        xml:space="preserve"
                     >d</tspan>
         </text>
       </g>
@@ -682,14 +642,12 @@
                     fill-opacity=".14276637"
                 >
           <tspan
-                        font-family="Noto Sans Display"
                         font-size="16"
                         font-weight="400"
                         fill="black"
                         fill-opacity=".14276637"
                         x="25.55078"
                         y="15"
-                        xml:space="preserve"
                     >d</tspan>
         </text>
       </g>
@@ -707,14 +665,12 @@
                     fill-opacity=".14276637"
                 >
           <tspan
-                        font-family="Noto Sans Display"
                         font-size="16"
                         font-weight="400"
                         fill="black"
                         fill-opacity=".14276637"
                         x="25.55078"
                         y="15"
-                        xml:space="preserve"
                     >d</tspan>
         </text>
       </g>
@@ -747,13 +703,11 @@
                 />
         <text transform="translate(286.37695 121.84033)" fill="black">
           <tspan
-                        font-family="Noto Sans Display"
                         font-size="16"
                         font-weight="400"
                         fill="black"
                         x="25.55078"
                         y="15"
-                        xml:space="preserve"
                     >e</tspan>
         </text>
       </g>
@@ -771,14 +725,12 @@
                     fill-opacity=".14276637"
                 >
           <tspan
-                        font-family="Noto Sans Display"
                         font-size="16"
                         font-weight="400"
                         fill="black"
                         fill-opacity=".14276637"
                         x="25.55078"
                         y="15"
-                        xml:space="preserve"
                     >e</tspan>
         </text>
       </g>
@@ -796,14 +748,12 @@
                     fill-opacity=".14276637"
                 >
           <tspan
-                        font-family="Noto Sans Display"
                         font-size="16"
                         font-weight="400"
                         fill="black"
                         fill-opacity=".14276637"
                         x="25.55078"
                         y="15"
-                        xml:space="preserve"
                     >e</tspan>
         </text>
       </g>
@@ -821,14 +771,12 @@
                     fill-opacity=".14276637"
                 >
           <tspan
-                        font-family="Noto Sans Display"
                         font-size="16"
                         font-weight="400"
                         fill="black"
                         fill-opacity=".14276637"
                         x="25.55078"
                         y="15"
-                        xml:space="preserve"
                     >e</tspan>
         </text>
       </g>
@@ -861,13 +809,11 @@
                 />
         <text transform="translate(356.37695 121.84033)" fill="black">
           <tspan
-                        font-family="Noto Sans Display"
                         font-size="16"
                         font-weight="400"
                         fill="black"
                         x="27.777344"
                         y="15"
-                        xml:space="preserve"
                     >f</tspan>
         </text>
       </g>
@@ -885,14 +831,12 @@
                     fill-opacity=".14276637"
                 >
           <tspan
-                        font-family="Noto Sans Display"
                         font-size="16"
                         font-weight="400"
                         fill="black"
                         fill-opacity=".14276637"
                         x="27.777344"
                         y="15"
-                        xml:space="preserve"
                     >f</tspan>
         </text>
       </g>
@@ -910,14 +854,12 @@
                     fill-opacity=".14276637"
                 >
           <tspan
-                        font-family="Noto Sans Display"
                         font-size="16"
                         font-weight="400"
                         fill="black"
                         fill-opacity=".14276637"
                         x="27.777344"
                         y="15"
-                        xml:space="preserve"
                     >f</tspan>
         </text>
       </g>
@@ -935,14 +877,12 @@
                     fill-opacity=".14276637"
                 >
           <tspan
-                        font-family="Noto Sans Display"
                         font-size="16"
                         font-weight="400"
                         fill="black"
                         fill-opacity=".14276637"
                         x="27.777344"
                         y="15"
-                        xml:space="preserve"
                     >f</tspan>
         </text>
       </g>
@@ -975,13 +915,11 @@
                 />
         <text transform="translate(426.37695 121.84033)" fill="black">
           <tspan
-                        font-family="Noto Sans Display"
                         font-size="16"
                         font-weight="400"
                         fill="black"
                         x="25.55078"
                         y="15"
-                        xml:space="preserve"
                     >g</tspan>
         </text>
       </g>
@@ -999,14 +937,12 @@
                     fill-opacity=".14276637"
                 >
           <tspan
-                        font-family="Noto Sans Display"
                         font-size="16"
                         font-weight="400"
                         fill="black"
                         fill-opacity=".14276637"
                         x="25.55078"
                         y="15"
-                        xml:space="preserve"
                     >g</tspan>
         </text>
       </g>
@@ -1024,14 +960,12 @@
                     fill-opacity=".14276637"
                 >
           <tspan
-                        font-family="Noto Sans Display"
                         font-size="16"
                         font-weight="400"
                         fill="black"
                         fill-opacity=".14276637"
                         x="25.55078"
                         y="15"
-                        xml:space="preserve"
                     >g</tspan>
         </text>
       </g>
@@ -1049,14 +983,12 @@
                     fill-opacity=".14276637"
                 >
           <tspan
-                        font-family="Noto Sans Display"
                         font-size="16"
                         font-weight="400"
                         fill="black"
                         fill-opacity=".14276637"
                         x="25.55078"
                         y="15"
-                        xml:space="preserve"
                     >g</tspan>
         </text>
       </g>
@@ -1089,13 +1021,11 @@
                 />
         <text transform="translate(496.37695 121.84033)" fill="black">
           <tspan
-                        font-family="Noto Sans Display"
                         font-size="16"
                         font-weight="400"
                         fill="black"
                         x="25.55078"
                         y="15"
-                        xml:space="preserve"
                     >h</tspan>
         </text>
       </g>
@@ -1113,14 +1043,12 @@
                     fill-opacity=".14276637"
                 >
           <tspan
-                        font-family="Noto Sans Display"
                         font-size="16"
                         font-weight="400"
                         fill="black"
                         fill-opacity=".14276637"
                         x="25.55078"
                         y="15"
-                        xml:space="preserve"
                     >h</tspan>
         </text>
       </g>
@@ -1138,14 +1066,12 @@
                     fill-opacity=".14276637"
                 >
           <tspan
-                        font-family="Noto Sans Display"
                         font-size="16"
                         font-weight="400"
                         fill="black"
                         fill-opacity=".14276637"
                         x="25.55078"
                         y="15"
-                        xml:space="preserve"
                     >h</tspan>
         </text>
       </g>
@@ -1163,14 +1089,12 @@
                     fill-opacity=".14276637"
                 >
           <tspan
-                        font-family="Noto Sans Display"
                         font-size="16"
                         font-weight="400"
                         fill="black"
                         fill-opacity=".14276637"
                         x="25.55078"
                         y="15"
-                        xml:space="preserve"
                     >h</tspan>
         </text>
       </g>
@@ -1202,21 +1126,16 @@
                 />
         <text transform="translate(7 527.41126)" fill="black">
           <tspan
-                        font-family="Noto Sans Display"
                         font-size="16"
                         font-weight="400"
                         fill="black"
                         x="268.00073"
                         y="15"
-                        xml:space="preserve"
-                    >H</tspan>
-          <tspan
-                        font-family="Noto Sans Display"
+                    >H</tspan><tspan
                         font-size="11"
                         font-weight="400"
                         fill="black"
                         y="20"
-                        xml:space="preserve"
                     >i</tspan>
         </text>
       </g>
@@ -1237,13 +1156,11 @@
       <g id="Graphic_150">
         <text transform="translate(242.09676 67.55458)" fill="black">
           <tspan
-                        font-family="Noto Sans Display"
                         font-size="12"
                         font-weight="400"
                         fill="black"
                         x="0"
                         y="11"
-                        xml:space="preserve"
                     >512 Bits</tspan>
         </text>
       </g>
@@ -1264,13 +1181,11 @@
       <g id="Graphic_208">
         <text transform="translate(508.0342 100.34033)" fill="#ee2c61">
           <tspan
-                        font-family="Noto Sans Display"
                         font-size="12"
                         font-weight="400"
                         fill="#ee2c61"
                         x="0"
                         y="11"
-                        xml:space="preserve"
                     >64 Bits</tspan>
         </text>
       </g>

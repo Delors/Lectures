@@ -120,9 +120,9 @@
       </g>
     </marker>
   </defs>
-  <metadata> Produced by OmniGraffle 8.0\n2024-10-10 20:32:20 +0000</metadata>
   <g
         id="overview"
+        font-family="Noto Sans Display"
         fill="none"
         fill-opacity="1"
         stroke-opacity="1"
@@ -142,13 +142,11 @@
         <g id="Graphic_106">
           <text transform="translate(544.87815 346.6103)" fill="black">
             <tspan
-                            font-family="Noto Sans Display"
-                            font-size="22"
+                                font-size="22"
                             font-weight="400"
                             fill="black"
                             x="0"
                             y="21"
-                            xml:space="preserve"
                         >f</tspan>
           </text>
         </g>
@@ -220,21 +218,16 @@
                 />
         <text transform="translate(517.25 461.106)" fill="black">
           <tspan
-                        font-family="Noto Sans Display"
                         font-size="16"
                         font-weight="400"
                         fill="black"
                         x="20.750732"
                         y="15"
-                        xml:space="preserve"
-                    >H</tspan>
-          <tspan
-                        font-family="Noto Sans Display"
+                    >H</tspan><tspan
                         font-size="11"
                         font-weight="400"
                         fill="black"
                         y="20"
-                        xml:space="preserve"
                     >N</tspan>
         </text>
       </g>
@@ -252,34 +245,28 @@
                 />
         <text transform="translate(481.75 259.5353)" fill="black">
           <tspan
-                        font-family="Noto Sans Display"
                         font-size="16"
                         font-weight="400"
                         fill="black"
                         x="56.2771"
                         y="15"
-                        xml:space="preserve"
-                    >M</tspan>
-          <tspan
-                        font-family="Noto Sans Display"
+                    >M</tspan><tspan
                         font-size="11"
                         font-weight="400"
                         fill="black"
                         y="20"
-                        xml:space="preserve"
                     >n</tspan>
         </text>
       </g>
       <g id="Graphic_97">
         <text transform="translate(543.2624 411.38415)" fill="black">
           <tspan
-                        font-family="Noto Sans Display"
                         font-size="16"
                         font-weight="400"
                         fill="black"
                         x="0"
                         y="15"
-                        xml:space="preserve"
+
                     >+</tspan>
         </text>
       </g>
@@ -327,13 +314,12 @@
       <g id="Graphic_108">
         <text transform="translate(290.13505 66.55458)" fill="black">
           <tspan
-                        font-family="Noto Sans Display"
                         font-size="12"
                         font-weight="400"
                         fill="black"
                         x="0"
                         y="11"
-                        xml:space="preserve"
+
                     >N x 1024 Bits</tspan>
         </text>
       </g>

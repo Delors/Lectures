@@ -67,7 +67,6 @@
       </g>
     </marker>
   </defs>
-  <metadata> Produced by OmniGraffle 8.0\n2025-05-11 09:05:47 +0000</metadata>
   <g
         id="just_authentication"
         stroke-dasharray="none"
@@ -75,8 +74,8 @@
         stroke-opacity="1"
         fill="none"
         fill-opacity="1"
+        font-family="Noto Sans Display"
     >
-    <title>just_authentication</title>
     <g id="just_authentication_Layer_1">
       <title>Layer 1</title>
       <g id="Graphic_59">
@@ -107,13 +106,11 @@
                 />
         <text transform="translate(100 528.5)" fill="black">
           <tspan
-                        font-family="Noto Sans Display"
                         font-size="24"
                         font-weight="400"
                         fill="black"
                         x="89.728"
                         y="26"
-                        xml:space="preserve"
                     >M</tspan>
         </text>
       </g>
@@ -132,13 +129,11 @@
                 />
         <text transform="translate(225 628.5)" fill="black">
           <tspan
-                        font-family="Noto Sans Display"
                         font-size="24"
                         font-weight="400"
                         fill="black"
                         x="29.112"
                         y="26"
-                        xml:space="preserve"
                     >H</tspan>
         </text>
       </g>
@@ -157,13 +152,11 @@
                 />
         <text transform="translate(400 530)" fill="black">
           <tspan
-                        font-family="Noto Sans Display"
                         font-size="24"
                         font-weight="400"
                         fill="black"
                         x="31.08"
                         y="18"
-                        xml:space="preserve"
                     >‖</tspan>
         </text>
       </g>
@@ -236,13 +229,11 @@
       <g id="Graphic_46">
         <text transform="translate(845 580)" fill="black">
           <tspan
-                        font-family="Noto Sans Display"
                         font-size="24"
                         font-weight="700"
                         fill="black"
                         x="4192202e-19"
                         y="26"
-                        xml:space="preserve"
                     >Vergleiche</tspan>
         </text>
       </g>
@@ -284,13 +275,11 @@
                 />
         <text transform="translate(765 528.5)" fill="black">
           <tspan
-                        font-family="Noto Sans Display"
                         font-size="24"
                         font-weight="400"
                         fill="black"
                         x="29.256"
                         y="26"
-                        xml:space="preserve"
                     >D</tspan>
         </text>
       </g>
@@ -321,34 +310,28 @@
                 />
         <text transform="translate(330 628.5)" fill="black">
           <tspan
-                        font-family="Noto Sans Display"
                         font-size="24"
                         font-weight="400"
                         fill="black"
                         x="31.224"
                         y="26"
-                        xml:space="preserve"
                     >E</tspan>
         </text>
       </g>
       <g id="Graphic_76">
         <text transform="translate(870 495)" fill="#666">
           <tspan
-                        font-family="Noto Sans Display"
+                        
                         font-size="24"
                         font-weight="400"
                         fill="#666"
                         x="3907985e-19"
                         y="26"
-                        xml:space="preserve"
-                    >PU</tspan>
-          <tspan
-                        font-family="Noto Sans Display"
+                    >PU</tspan><tspan
                         font-size="16"
                         font-weight="400"
                         fill="#666"
                         y="34"
-                        xml:space="preserve"
                     >a</tspan>
         </text>
       </g>
@@ -380,13 +363,11 @@
                 />
         <text transform="translate(507.5 528.5)" fill="black">
           <tspan
-                        font-family="Noto Sans Display"
                         font-size="24"
                         font-weight="400"
                         fill="black"
                         x="89.728"
                         y="26"
-                        xml:space="preserve"
                     >M</tspan>
         </text>
       </g>
@@ -406,22 +387,17 @@
       <g id="Graphic_79">
         <text transform="translate(630 600)" fill="black">
           <tspan
-                        font-family="Noto Sans Display"
                         font-size="24"
                         font-weight="400"
                         fill="black"
                         x="0"
                         y="26"
-                    >E(PR</tspan>
-          <tspan
-                        font-family="Noto Sans Display"
+                    >E(PR</tspan><tspan
                         font-size="16"
                         font-weight="400"
                         fill="black"
                         y="34"
-                    >a</tspan>
-          <tspan
-                        font-family="Noto Sans Display"
+                    >a</tspan><tspan
                         font-size="24"
                         font-weight="400"
                         fill="black"
@@ -444,34 +420,27 @@
                 />
         <text transform="translate(765 628.5)" fill="black">
           <tspan
-                        font-family="Noto Sans Display"
                         font-size="24"
                         font-weight="400"
                         fill="black"
                         x="29.112"
                         y="26"
-                        xml:space="preserve"
                     >H</tspan>
         </text>
       </g>
       <g id="Graphic_82">
         <text transform="translate(300 695)" fill="#666">
           <tspan
-                        font-family="Noto Sans Display"
                         font-size="24"
                         font-weight="400"
                         fill="#666"
                         x="856204e-18"
                         y="26"
-                        xml:space="preserve"
-                    >PR</tspan>
-          <tspan
-                        font-family="Noto Sans Display"
+                    >PR</tspan><tspan
                         font-size="16"
                         font-weight="400"
                         fill="#666"
                         y="34"
-                        xml:space="preserve"
                     >a</tspan>
         </text>
       </g>

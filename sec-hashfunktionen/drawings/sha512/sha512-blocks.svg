@@ -120,16 +120,15 @@
       </g>
     </marker>
   </defs>
-  <metadata> Produced by OmniGraffle 8.0\n2024-10-10 20:40:02 +0000</metadata>
   <g
         id="overview"
+        font-family="Noto Sans Display"
         fill="none"
         fill-opacity="1"
         stroke-opacity="1"
         stroke="none"
         stroke-dasharray="none"
     >
-    <title>overview</title>
     <g id="overview_blocks">
       <title>blocks</title>
       <g id="Group_147">
@@ -142,14 +141,12 @@
         <g id="Graphic_148">
           <text transform="translate(212.25146 346.6103)" fill="black">
             <tspan
-                            font-family="Noto Sans Display"
-                            font-size="22"
+                                font-size="22"
                             font-weight="400"
                             fill="black"
                             x="0"
                             y="21"
-                            xml:space="preserve"
-                        >f</tspan>
+                            >f</tspan>
           </text>
         </g>
       </g>
@@ -163,14 +160,12 @@
         <g id="Graphic_145">
           <text transform="translate(69.63102 346.6103)" fill="black">
             <tspan
-                            font-family="Noto Sans Display"
-                            font-size="22"
+                                font-size="22"
                             font-weight="400"
                             fill="black"
                             x="0"
                             y="21"
-                            xml:space="preserve"
-                        >f</tspan>
+                            >f</tspan>
           </text>
         </g>
       </g>
@@ -314,21 +309,16 @@
                 />
         <text transform="translate(6.376953 259.5353)" fill="black">
           <tspan
-                        font-family="Noto Sans Display"
                         font-size="16"
                         font-weight="400"
                         fill="black"
                         x="56.2771"
                         y="15"
-                        xml:space="preserve"
-                    >M</tspan>
-          <tspan
-                        font-family="Noto Sans Display"
+                    >M</tspan><tspan
                         font-size="11"
                         font-weight="400"
                         fill="black"
                         y="20"
-                        xml:space="preserve"
                     >1</tspan>
         </text>
       </g>
@@ -346,21 +336,16 @@
                 />
         <text transform="translate(-69.95226 461.106)" fill="black">
           <tspan
-                        font-family="Noto Sans Display"
                         font-size="16"
                         font-weight="400"
                         fill="black"
                         x="4.988037"
                         y="15"
-                        xml:space="preserve"
-                    >IV = H</tspan>
-          <tspan
-                        font-family="Noto Sans Display"
+                    >IV = H</tspan><tspan
                         font-size="11"
                         font-weight="400"
                         fill="black"
                         y="20"
-                        xml:space="preserve"
                     >0</tspan>
         </text>
       </g>
@@ -378,21 +363,16 @@
                 />
         <text transform="translate(42.187174 461.106)" fill="black">
           <tspan
-                        font-family="Noto Sans Display"
                         font-size="16"
                         font-weight="400"
                         fill="black"
                         x="21.663818"
                         y="15"
-                        xml:space="preserve"
-                    >H</tspan>
-          <tspan
-                        font-family="Noto Sans Display"
+                    >H</tspan><tspan
                         font-size="11"
                         font-weight="400"
                         fill="black"
                         y="20"
-                        xml:space="preserve"
                     >1</tspan>
         </text>
       </g>
@@ -410,21 +390,16 @@
                 />
         <text transform="translate(184.62332 461.106)" fill="black">
           <tspan
-                        font-family="Noto Sans Display"
                         font-size="16"
                         font-weight="400"
                         fill="black"
                         x="21.663818"
                         y="15"
-                        xml:space="preserve"
-                    >H</tspan>
-          <tspan
-                        font-family="Noto Sans Display"
+                    >H</tspan><tspan
                         font-size="11"
                         font-weight="400"
                         fill="black"
                         y="20"
-                        xml:space="preserve"
                     >2</tspan>
         </text>
       </g>
@@ -442,47 +417,38 @@
                 />
         <text transform="translate(149.30762 259.5353)" fill="black">
           <tspan
-                        font-family="Noto Sans Display"
                         font-size="16"
                         font-weight="400"
                         fill="black"
                         x="56.2771"
                         y="15"
-                        xml:space="preserve"
-                    >M</tspan>
-          <tspan
-                        font-family="Noto Sans Display"
+                    >M</tspan><tspan
                         font-size="11"
                         font-weight="400"
                         fill="black"
                         y="20"
-                        xml:space="preserve"
                     >2</tspan>
         </text>
       </g>
       <g id="Graphic_125">
         <text transform="translate(68.0153 410.37)" fill="black">
           <tspan
-                        font-family="Noto Sans Display"
                         font-size="16"
                         font-weight="400"
                         fill="black"
                         x="0"
                         y="15"
-                        xml:space="preserve"
                     >+</tspan>
         </text>
       </g>
       <g id="Graphic_124">
         <text transform="translate(210.63574 411.38415)" fill="black">
           <tspan
-                        font-family="Noto Sans Display"
                         font-size="16"
                         font-weight="400"
                         fill="black"
                         x="0"
                         y="15"
-                        xml:space="preserve"
                     >+</tspan>
         </text>
       </g>
@@ -531,26 +497,22 @@
       <g id="Graphic_115">
         <text transform="translate(47.36035 215.86745)" fill="#0ea257">
           <tspan
-                        font-family="Noto Sans Display"
                         font-size="12"
                         font-weight="400"
                         fill="#0ea257"
                         x="0"
                         y="11"
-                        xml:space="preserve"
                     >1024 Bits</tspan>
         </text>
       </g>
       <g id="Graphic_114">
         <text transform="translate(-61.131944 507.13054)" fill="#ee2c61">
           <tspan
-                        font-family="Noto Sans Display"
                         font-size="12"
                         font-weight="400"
                         fill="#ee2c61"
                         x="0"
                         y="11"
-                        xml:space="preserve"
                     >512 Bits</tspan>
         </text>
       </g>

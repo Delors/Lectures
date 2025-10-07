@@ -13,7 +13,6 @@
 <style>
   @import url('/LectureDoc2/ext/fonts/ld-fonts.css');
 </style>
-  <metadata> Produced by OmniGraffle 8.0\n2025-06-29 20:22:02 +0000</metadata>
   <g
         id="geheimgang"
         fill="none"
@@ -21,10 +20,10 @@
         stroke="none"
         stroke-dasharray="none"
         stroke-opacity="1"
+        font-family="Noto Sans Display"      
+        font-weight="300"
     >
-    <title>geheimgang</title>
-    <g id="geheimgang_Layer_1">
-      <title>Layer 1</title>
+    <g id="geheimgang_Layer">
       <g id="Graphic_18">
         <path
                     d="M 411.26363 260 C 412.9863 266.69914 416.47036 273.03887 421.71576 278.28424 C 437.3367 293.90528 462.6633 293.90528 478.28424 278.28424 C 493.9053 262.66328 493.9053 237.33672 478.28424 221.71576 C 462.6633 206.09472 437.3367 206.09472 421.71576 221.71576 C 416.47036 226.96113 412.9863 233.30086 411.26363 240 L 380 240 L 370 240 L 360 240 L 360 290 L 380 290 L 380 260 Z M 464.1421 235.85788 C 471.95264 243.66836 471.95264 256.33164 464.1421 264.14212 C 456.33164 271.95264 443.66836 271.95264 435.8579 264.14212 C 428.04736 256.33164 428.04736 243.66836 435.8579 235.85788 C 443.66836 228.04736 456.33164 228.04736 464.1421 235.85788"
@@ -45,47 +44,38 @@
                     x2="490"
                     y2="250"
                     stroke="black"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
+                    stroke-linecap="butt"
+                    stroke-linejoin="butt"
                     stroke-width="4"
                 />
       </g>
       <g id="Graphic_4">
-        <text transform="translate(470 230)" fill="black">
+        <text transform="translate(468 230)" fill="black">
           <tspan
-                        font-family="Noto Sans Display"
                         font-size="14"
-                        font-weight="400"
                         fill="black"
                         x="0"
                         y="15"
-                        xml:space="preserve"
                     >Tür</tspan>
         </text>
       </g>
       <g id="Graphic_5">
         <text transform="translate(365.68786 270)" fill="black">
           <tspan
-                        font-family="Noto Sans Display"
                         font-size="14"
-                        font-weight="400"
                         fill="black"
                         x="0"
                         y="15"
-                        xml:space="preserve"
                     >A</tspan>
         </text>
       </g>
       <g id="Graphic_6">
         <text transform="translate(410 240.776)" fill="black">
           <tspan
-                        font-family="Noto Sans Display"
                         font-size="14"
-                        font-weight="400"
                         fill="black"
                         x=".709"
                         y="15"
-                        xml:space="preserve"
                     >B</tspan>
         </text>
       </g>
