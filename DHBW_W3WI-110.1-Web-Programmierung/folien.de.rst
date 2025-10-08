@@ -14,7 +14,7 @@ W3WI_110.2 - Web-Entwicklung
 
 :Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
 :Kontakt: michael.eichberg@dhbw.de, Raum 149B
-:Version: 24EG/EH
+:Version: 24EG/EH - Rev. 7.10.2025
 
 .. supplemental : :
   :Folien:
@@ -123,6 +123,8 @@ Bewertung (max. 70 Punkte)
 :Qualität des finalen Codes:   20 Punkte (max.)
 :Läuft das Spiel: 10 Punkte (max.)
 
+Bei den Codepräsentationen gilt folgendes: Es gibt max. 15 Punkte für Präsentation und Verteidigung des eigenen Codes und max. 5 Punkte für eine aktive Kommentierung des präsentierten Codes der anderen Studierenden. Für jede aktive Kommentierung gibt es einen Punkt. Dabei gilt eine aktive Kommentierung als gegeben, wenn eine qualifizierte Frage oder eine qualifizierte Anmerkung zum präsentierten Code gemacht wird. Die Anmerkung von Tippfehlern/*Einrückungsfehlern* oder ähnlichem gilt nicht als qualifizierte Anmerkung. 
+
 .. supplemental::
 
     `Kriterien für die Bewertung des Codes <../lab-codereviews/folien.de.rst.html>`__
@@ -154,9 +156,11 @@ Ablauf
 
     :15.10.:
 
-          Code Präsentationen/Diskussion - HTML und CSS
+          **Code Präsentationen - HTML und CSS**
 
-          Pro Person 9-10 Minuten - Aufteilung ca. 50/50; max 40/60.
+          Pro Person 10 Minuten - Aufteilung zwischen HTML und CSS ca. 50/50; max 40/60.
+
+          Danach Diskussion und Feedback (max 10-20 Minuten).
 
           Abgabe ist bereits eingerichtet (Deadline siehe Moodle!). Es kann ein Zip-Archiv und ggf. ein PDF hochgeladen werden.
 
@@ -166,11 +170,13 @@ Ablauf
 
             Es ist insbesondere darzustellen wie das Layout auf HTML Elementebene erstellt wurde (mit Tabellen, Canvas, DIVs,...) und warum dies eine geeignete Lösung für das Spiel ist.
 
+            Verwenden Sie ggf. Wireframes, um dies zu verdeutlichen. Stellen Sie dar, warum dies eine gute Lösung ist (z.B. Barrierefreiheit, semantische Strukturierung, ...).
+
             Bzgl. des CSS ist insbesondere die Strukturierung/Modularisierung darzustellen und wie ein konsistentes Layout (über Browserversionen hinweg) erreicht wurde. Darüber hinaus ist insbesondere der Code, der mit dem Layout in Verbindung steht (display, position, margin, padding etc. Eigenschaften) zu erläutern.
 
     :22.10.:
 
-          Code Präsentationen/Diskussion - JavaScript
+          **Code Präsentationen/Diskussion - JavaScript**
 
           Zur Darstellung des Kommunikationsflusses zwischen Client und Server dürfen gerne ergänzende Diagramme (insbesondere UML Sequenzdiagramme) verwendet werden.
 
@@ -182,7 +188,7 @@ Ablauf
 
             .. rubric:: Bewertungskriterien bei der JavaScript Präsentation
 
-            Es ist insbesondere darzustellen wie der Kommunikationsfluss zwischen Client und Server umgesetzt wurde. Hierbei ist insbesondere auf den Einsatz der verwendeten Technologien (z.B. WebSockets, Fetch API) einzugehen und wann welche Nachrichten ausgetauscht werden.
+            Es ist insbesondere darzustellen wie der Kommunikationsfluss zwischen Client und Server umgesetzt wurde. Hierbei ist insbesondere auf den Einsatz der verwendeten Technologien (z.B. WebSockets, Fetch API) einzugehen und wann welche Nachrichten ausgetauscht werden. Verwenden Sie Diagramme - am Besten in einer genormten Sprache wie UML - um dies zu verdeutlichen.
 
             Weiterhin bietet es sich ggf. an die Strukturierung darzustellen und - falls vorhanden - wie die Cheatingprävention umgesetzt wurde.
 
@@ -190,7 +196,7 @@ Ablauf
 
           Abgabe ist bereits eingerichtet (Deadline siehe Moodle!). Es kann nur ein Zip-Archiv hochgeladen werden.
 
-    :29.10.: Spielzeit - wir spielen alle Spiele an dem Tag - ca. 10 Minuten pro Spiel; ggf. inkl. einer kurzen Einführung in das Spiel.
+    :29.10.: **Spielzeit** - wir spielen alle Spiele an dem Tag - ca. 10-15 Minuten pro Spiel; jeder hat kurz in sein Spiel einzuführen.
 
           Stellen Sie sicher, dass Ihr Spiel in dieser Zeit vollständig spielbar ist!
 
