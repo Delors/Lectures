@@ -16,7 +16,7 @@ Einführung in die Programmierung mit Java
 
 :Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
 :Kontakt: michael.eichberg@dhbw.de, Raum 149B
-:Version: 1.2.1
+:Version: 1.3
 
 .. class:: sources
 
@@ -62,9 +62,9 @@ Einführung
 
 .. class:: incremental
 
-    Die Ausführung des Programms ist (in der Konsole/im Terminal) mit ``java --enable-preview HelloWorld.java`` möglich.
+    Die Ausführung des Programms ist (in der Konsole/im Terminal) mit ``java HelloWorld.java`` möglich.
 
-.. [#]  Die Datei ``HelloWorld.java`` kann `hier <https://delors.github.io/prog-java-basics/code/HelloWorld.java>`__ heruntergeladen werden und mit ``java --enable-preview HelloWorld.java`` ausgeführt werden.
+.. [#]  Die Datei ``HelloWorld.java`` kann `hier <https://delors.github.io/prog-java-basics/code/HelloWorld.java>`__ heruntergeladen werden. Java 25 ist notwendig!
 
 .. supplemental::
 
@@ -96,9 +96,9 @@ Ausführung von Java Skripten
 
 .. class:: list-with-explanations
 
-- Java Skripte können direkt mit ``java --enable-preview <Datei mit Sourcecode>`` ausgeführt werden.
+- Java Skripte können direkt mit ``java <Datei mit Sourcecode>`` ausgeführt werden.
 
-  Die Option ``--enable-preview`` ermöglicht die Verwendung der neuesten Features von Java, die sich in Zukunft aber ggf. noch ändern können.
+  Ggf. ist die Option ``--enable-preview`` notwendig; diese ermöglicht die Verwendung der neuesten, noch in der Entwicklung befindlichen, Features von Java.
 
 .. class:: incremental
 
@@ -191,19 +191,19 @@ Prozedurale Elemente
 
     :Kommentare: Dienen der Codedokumentation und werden vom Compiler ignoriert.
 
-    :primitive Datentypen: Ganze Zahlen (:java:`byte`, :java:`int`, :java:`long`), Fließkommazahlen (:java:`float`, :java:`double`), Zeichen (:java:`char`, :java:`byte`), Wahrheitswerte (:java:`boolean`)
+    :primitive Datentypen: Ganze Zahlen (:java:`byte`, :java:`int`, :java:`long`), Fließkommazahlen (:java:`float`, :java:`double`), Zeichen (:java:`char`, :java:`byte`) und Wahrheitswerte (:java:`boolean`).
 
-    :Literale: Konstante Wert (z.B. :java:`42`, :java:`3.14`, :java:`'A'`, :java:`"Hello World!"`, :java:`true`)
+    :Literale: Konstante Wert (z.B. :java:`42`, :java:`3.14`, :java:`'A'`, :java:`"Hello World!"`, :java:`true`).
 
-    :Zuweisungen: Speichern eines Wertes in einer Variable
+    :Zuweisungen: Speichern eines Wertes in einer Variable.
 
         (*Eine benannten Stelle im Speicher*)
 
-    :Ausdrücke: Dienen der Berechnung von Werten mit Hilfe von Variablen, Literalen und Operatoren
+    :Ausdrücke: Dienen der Berechnung von Werten mit Hilfe von Variablen, Literalen und Operatoren.
 
-    :Kontrollstrukturen: Dienen der Ablaufsteuerung mit Hilfe von Schleifen (:java:`while`, :java:`do`-:java:`while`, :java:`for`) und Verzweigungen (:java:`if`-:java:`else`, :java:`switch`-:java:`case`)
+    :Kontrollstrukturen: Dienen der Ablaufsteuerung mit Hilfe von Schleifen (:java:`while`, :java:`do`-:java:`while`, :java:`for`) und Verzweigungen (:java:`if`-:java:`else`, :java:`switch`-:java:`case`).
 
-    :Unterprogramme: Methoden (*Prozeduren* und *Funktionen*), die eine bestimmte Funktionalität wiederverwendbar bereitstellen
+    :Unterprogramme: Methoden (*Prozeduren* und *Funktionen*), die eine bestimmte Funktionalität wiederverwendbar bereitstellen.
 
 
 
@@ -220,11 +220,11 @@ Kommentare
 
         .. class:: incremental-list list-with-explanations
 
-        - Einzeilige Kommentare, die mit ``//`` beginnen und bis zum Ende der Zeile gehen.
-        - Mehrzeilige Kommentare, die mit ``/*`` beginnen und mit ``*/`` enden.
+        - Einzeilige Kommentare, die mit :java:`// beginnen und bis zum Ende der Zeile gehen.`
+        - Mehrzeilige Kommentare, die mit :java:`/* beginnen und mit */` enden.
 
-          Kommentare, die mit ``/**`` beginnen und mit ``*/`` enden, sind so genannte JavaDoc Kommentare und dienen der Erzeugung von Dokumentation.
-        - [ab Java 23] Mehrzeilige Kommentare, bei der jede Zeile mit ``///`` beginnt, werden als Markdown basierte JavaDoc Kommentare interpretiert.
+          Kommentare, die mit :java:`/**` beginnen und mit :java:`*/` enden, sind so genannte JavaDoc Kommentare und dienen der Erzeugung von Dokumentation.
+        - [ab Java 23] Mehrzeilige Kommentare, bei der jede Zeile mit :java:`///` beginnt, werden als Markdown basierte JavaDoc Kommentare interpretiert.
 
     .. card::
 
@@ -275,7 +275,7 @@ Kommentare
             :alt: Generierte Dokumentation für die Funktion fak(long n)
             :height: 600px
             :align: center
-            :class: box-shadow
+            :class: screenshot
 
 .. supplemental::
 
@@ -306,7 +306,7 @@ Java Shell
 
             # jshell --enable-preview
 
-            |  Welcome to JShell -- Version 23
+            |  Welcome to JShell -- Version 25
             |  For an introduction type: /help intro
 
             jshell> var x = "X";
@@ -381,23 +381,23 @@ Arten und Verwendung von Datentypen
 
         Ein primitiver Datentyp ist z. B. :java:`int` (d. h. :eng:`integer` bzw. :ger:`Ganzzahl`).
 
-        Dieser Datentyp legt fest, dass ein Wert eine Ganzzahl mit dem Wertebereich: :math:`[-2147483648, 2147483647]` ist.
+        Dieser Datentyp legt fest, dass ein Wert eine Ganzzahl mit dem Wertebereich: :java:`[-2147483648, 2147483647]` ist.
 
     .. card::
+
+        .. rubric:: Alle von Java unterstützten primitiven Datentypen
 
         .. csv-table::
             :header: "Art", "Datentyp", "Beispiel"
             :width: 100%
-            :class: highlight-cell-on-hover
+            :class: highlight-row-on-hover incremental-table-rows
 
             Ganzzahlen, ":java:`byte`, :java:`short`, :java:`int`, :java:`long`", :java:`123`
-            Fließkommazahlen, ":java:`float`, :java:`double`", :java:`1.23` oder :java:`3.141d`
+            "Fließkommazahlen
+            
+            :eng:`Floating-Point Numbers`", ":java:`float`, :java:`double`", :java:`1.23` oder :java:`3.141d`
             Zeichen, :java:`char`, :java:`'a'`
             Wahrheitswerte, :java:`boolean`, ":java:`true`"
-
-        .. container:: margin-bottom-1em smaller text-align-center
-
-            Alle von Java unterstützten primitiven Datentypen.
 
 .. supplemental::
 
@@ -445,16 +445,17 @@ Ganzzahlige Datentypen - Hintergrund
         .. csv-table::
             :header: Datentyp, "Genauigkeit (in Bit)", Wertebereich, Anzahl Werte
             :align: center
-            :class: highlight-cell-on-hover
+            :class: highlight-cell-on-hover incremental-table-rows
 
-            :java:`byte`, 8, -128 bis 127, :math:`2^8`
-            :java:`short`, 16, -32768 bis 32767, :math:`2^{16}`
-            :java:`int`, 32, -2147483648 bis 2147483647, :math:`2^{32}`
-            :java:`long`, 64, -922337022036854775808 bis 922337022036854775807, :math:`2^{64}`
+            :java:`byte`, 8, -128 bis 127, 2⁸
+            :java:`short`, 16, -32768 bis 32767, 2¹⁶
+            :java:`int`, 32, -2147483648 bis 2147483647, 2³²
+            :java:`long`, 64, -922337022036854775808 bis 922337022036854775807, 2⁶⁴
 
 .. supplemental::
 
     Die Größenwahl für ``long`` und ``int`` ist teilweise historisch bedingt. Auf gängigen Prozessoren sind jedoch 64 Bit und 32 Bit die natürlichen Größen für Ganzzahlen und können effizient verarbeitet werden.
+
 
 
 Gleitkommatypen - Hintergrund (Konzeptionell)
@@ -495,8 +496,8 @@ Gleitkommatypen - Hintergrund (Konzeptionell)
             :align: center
             :class: highlight-cell-on-hover smaller
 
-            :java:`float`, 32, 23, 8, ca. :math:`-3.4*10^{38}\; \text{bis}\; 3.4 \times 10^{38}`
-            :java:`double`, 64, 52, 11, ca. :math:`-1.8*10^{308}\; \text{bis}\; 1.8 \times 10^{308}`
+            :java:`float`, 32, 23, 8, "ca. -3,4·10³⁸ bis 3,4 · 10³⁸"
+            :java:`double`, 64, 52, 11, "ca. -1,8·10³⁰⁸ bis 1,8 · 10³⁰⁸"
 
 .. supplemental::
 
@@ -513,13 +514,13 @@ Gleitkommatypen - Verwendung
 
     Bei Berechnungen mit Gleitkommazahlen treten Rundungsfehler auf, da nicht alle Werte in beliebiger Genauigkeit dargestellt werden können
 
-    Beispiel: Der Wert ``0.123456789f`` (``float``) wird durch die Darstellung mit Mantisse und Exponent (:math:`m \times 2^e`) zu ``0.12345679``.
+    Beispiel: Der Wert :java:`0.123456789f` (:java:`float`) wird durch die Darstellung mit Mantisse und Exponent (:math:`m \times 2^e`) zu :java:`0.12345679`.
 
     .. container:: incremental
 
         **Gleitkommazahlen sind somit nicht für betriebswirtschaftliche Anwendungen geeignet.**
 
-    .. container:: incremental margin-top-1em
+    .. container:: incremental
 
         Gleitkommazahlen sind z. B. für wissenschaftliche Anwendungen geeignet.
 
@@ -533,7 +534,7 @@ Zeichen - Hintergrund
 --------------------------------------------
 
 - einzelne Zeichen (z. B. ':java:`a`\ ') werden in Java mit dem Datentyp :java:`char` dargestellt
-- ein :java:`char` ist (intern) eine vorzeichenlose Ganzzahl mit 16 Bit (d. h. eine Zahl im Bereich :math:`[0,65536]`), die den Unicode-Wert des Zeichens repräsentiert
+- ein :java:`char` ist (intern) eine vorzeichenlose Ganzzahl mit 16 Bit (d. h. eine Zahl im Bereich :java:`[0,65536]`), die den Unicode-Wert des Zeichens repräsentiert
 
   Alle gängigen (westeuropäischen) Zeichen können mit einem :java:`char` dargestellt werden.
 
@@ -596,7 +597,7 @@ Konvertierung von Datentypen
 
     - Konvertierungen in die andere Richtung sind immer explizit anzugeben, da es zu Informationsverlust kommen kann
 
-      Beispiel: :java:`int` zu :java:`byte` (Wertebereich :math:`[-128,127]`)
+      Beispiel: :java:`int` zu :java:`byte` (Wertebereich :java:`[-128,127]`)
 
       .. container:: incremental peripheral
 
@@ -644,12 +645,12 @@ Literale
 Literale - Übersicht
 --------------------------------------------
 
-Literale stellen konstante Werte eines bestimmten Datentyps dar:
+Literale stellen konstante Werte eines bestimmten Datentyps dar.
 
 .. csv-table::
-    :header: Datentyp, Literal (Beispiele)
+    :header: Datentyp, Literal in Java-Code (Beispiele)
     :align: left
-    :class: highlight-cell-on-hover smaller incremental
+    :class: highlight-cell-on-hover incremental-table-rows
 
     :java:`int`, :peripheral:`Dezimal:` 127 :peripheral:`; Hexadezimal:` 0xcafebabe\ [#]_ :peripheral:`; Oktal:` 010 :peripheral:`; Binär:` 0b1010
     :java:`long`, 123_456_789l oder 123456789L  :peripheral:`("_" dient nur der besseren Lesbarkeit)`
@@ -709,11 +710,11 @@ Variablen - Übersicht
         - Variablen stellen einen logischen Bezeichner für einen Wert eines bestimmten Datentyps dar.
         - Variablen müssen erst deklariert werden. Danach können sie weiter initialisiert werden, wenn der Standardwert nicht ausreicht.
 
-            .. class:: incremental-list
+          .. class:: incremental-list dd-margin-left-4em
 
-            :Deklaration: Variablennamen und Datentyp werden festgelegt
+          :Deklaration: Variablennamen und Datentyp werden festgelegt.
 
-            :Initialisierung (optional): Variablen werden mit einem bestimmten Wert versehen
+          :Initialisierung (optional): Variablen werden mit einem bestimmten Wert versehen.
 
         .. class:: incremental
 
@@ -726,6 +727,7 @@ Variablen - Übersicht
         .. include:: code/Variables.java
             :number-lines:
             :code: java
+            :class: incremental-code
 
 
 
@@ -837,18 +839,20 @@ Welche der folgenden Bezeichner sind (a) ungültig, (b) gültig aber sollten den
 
         .. class:: incremental-list
 
-        - Deklarieren und initialisieren Sie eine Variable x mit dem Ganzzahlwert 42.
+        - Deklarieren und initialisieren Sie eine Variable x mit dem Ganzzahlwert :java:`42`.
 
           - Welche Datentypen können Sie verwenden, wenn eine präzise Darstellung des Wertes notwendig ist?
-          - Welcher Datentyp wird verwendet, wenn Sie keinen Typ angeben (d. h. wenn Sie :java:`var` schreiben bzw. anders ausgedrückt welchen Typ hat das Literal ``42``)?
+          - Welcher Datentyp wird verwendet, wenn Sie keinen Typ angeben? 
+          
+            (D. h. wenn Sie :java:`var` schreiben bzw. anders gefragt welchen Typ hat das Literal :java:`42`?)
 
         - Weisen Sie den Wert der Variable ``x`` einer Variable ``f`` vom Typ :java:`float` zu.
         - Ändern Sie den Wert der Variablen ``x``. Welche Auswirkungen hat das auf die Variable ``f`` vom Typ :java:`float`?
-        - Deklarieren und initialisieren Sie die Konstante π (Wert 3.14159265359).
+        - Deklarieren und initialisieren Sie die Konstante π (Wert :java:`3.14159265359`).
         - Deklarieren Sie eine Variable :java:`poem`. Die folgendes - von GitHub Copilot erzeugtes -  Gedicht enthält:
 
-          .. code::
-                :number-lines:
+          .. code:: text
+                :class: copy-to-clipboard
 
                 Roses are red,
                 Violets are blue,
@@ -937,7 +941,7 @@ Ausdrücke und Operatoren - Übersicht
 - Einfache Ausdrücke sind Variablen, Konstanten, Literale und Methodenaufrufe.
 - Komplexe Ausdrücke werden aus einfachen Ausdrücken und Operatoren (z. B. +, -, \*, /, %, >, <, >=, \<=) zusammengesetzt
 - Ergebnisse von Ausdrücken können insbesondere Variablen zugewiesen werden (z.B. :java:`int newAge = age + 1` oder :java:`var isAdult = age >= 18`)
-- Ausdrücke, die einen Wahrheitswerte ergeben können zusätzlich in Bedingungen (z. B. :java:`if(age + 5 >= 18) ...`) verwendet werden.
+- Ausdrücke, die einen Wahrheitswerte ergeben, können zusätzlich in Bedingungen (z. B. :java:`if(age + 5 >= 18) ...`) verwendet werden.
 
 
 
@@ -947,6 +951,7 @@ Ausdrücke und Operatoren - Beispiele
 .. include:: code/Expressions.java
     :number-lines:
     :code: java
+    :class: copy-to-clipboard
 
 
 
@@ -1040,33 +1045,6 @@ Klassifikation der Operatoren
 
 
 
-.. class:: no-title center-content transition-move-left
-
-Verwendung der JShell
---------------------------------------------
-
-.. hint::
-
-    Wenn Sie die folgenden Codeschnipsel (:eng:`Snippets`) in der Java Shell (``jshell``) ausführen möchten, dann müssen sie noch die Methoden :java:`println` und :java:`readln` definieren: :java:`void println(Object o) { System.out.println(o); }` und :java:`String readln(String s) { return System.console().readln(s); }`.
-
-    .. container:: incremental
-
-        Alternativ können Sie den unten verlinkten Code direkt in die JShell laden:
-
-        .. code:: Shell
-
-            jshell --enable-preview <DATEINAME>
-
-    .. container:: incremental
-
-        Alternative können Sie ein Java Script schreiben (inkl. ``main`` Methode). In diesem Fall sind die beiden Methoden direkt verfügbar und müssen nicht extra deklariert werden.
-
-    .. container:: incremental
-
-        Ich empfehle Ihnen, die Beispiele händisch einzugeben, dann lernen Sie mehr!
-
-
-
 .. class:: transition-fade
 
 Zweistellige Arithmetische Operatoren
@@ -1095,7 +1073,6 @@ Zweistellige Arithmetische Operatoren
             :number-lines:
             :start-line: 2
             :end-before: // Einstellige Operatoren
-
 
         .. exercise:: Zweistellige Operatoren - welche Werte werden ausgegeben?
 
@@ -1275,8 +1252,6 @@ Ein- und zweistellige logische Operatoren
                 // Ihr Code
             }
 
-        Schreiben Sie ein vollständiges Java Script, dass Sie mit dem Java Interpreter (``java --enable-preview <JAVA-DATEI>``) ausführen können.
-
     .. solution::
         :pwd: NamenEinlesenUndVergleichen
 
@@ -1297,18 +1272,18 @@ Bedingungsoperator
 
         Der Bedingungsoperator:
 
-            |    <Bedingungsausdruck :math:`c`> ``?``
-            |        <auszuwertender Ausdruck :math:`a_{(c\,wahr)}` falls :math:`c` wahr >
-            |        :
-            |        <auszuwertender Ausdruck :math:`a_{(c\,falsch)}` falls :math:`c` falsch/unwahr>
+          |    <Bedingungsausdruck c> "?"
+          |        <auszuwertender Ausdruck a\ :sub:`(c wahr)` falls c wahr>
+          |        ":"
+          |        <auszuwertender Ausdruck a\ :sub:`(c falsch)`  falls c falsch/unwahr>
 
         liefert in Abhängigkeit eines Ausdrucks ``c`` (der einen Wahrheitswert liefert) das Ergebnis des ersten Ausdrucks oder des zweiten Ausdrucks  zurück.
 
     .. card::
 
-        :math:`c\; ?\; a_{(c\,wahr)}\; :\; a_{(c\,falsch)}`
+        |  c ? a\ :sub:`(c wahr)` : a\ :sub:`(c falsch)`
 
-        Beide Ausdrücke :math:`a_{(c\,wahr)}` und :math:`a_{(c\,falsch)}` müssen entweder numerische Werte oder boolean Werte oder Instanzen einer Klasse zurück liefern (d. h. Werte die implizit ineinander konvertiert werden dürfen)
+        Beide Ausdrücke a\ :sub:`(c wahr)` und a\ :sub:`(c falsch)` müssen entweder numerische Werte oder boolean Werte oder Instanzen einer Klasse zurück liefern (d. h. Werte die implizit ineinander konvertiert werden dürfen)
 
         Von den beiden Ausdrücken wird *nur ein Ausdruck ausgewertet*.
 
@@ -1329,7 +1304,7 @@ Bedingungsoperator
             .. code:: java
                 :number-lines:
 
-                int alter = Integer.parseInt(readln("Wie alt sind Sie?"));
+                int alter = Integer.parseInt(IO.readln("Wie alt sind Sie?"));
                 alter < 18 ?
                     "jugendlicher" :
                     alter < 65 ?
@@ -1349,7 +1324,7 @@ Bitoperatoren
 
         Bitoperationen werden häufig für spezielle Algorithmen verwendet, um die gleiche Operation auf mehreren Daten (den Bits) gleichzeitig anzuwenden (1 CPU Zyklus). Ein Beispiel ist das Ver-/Entschlüsseln von Daten (insbesondere mit *XOR*).
 
-        Bestimmte mathematische Operationen (z. B. Division durch :math:`2^x`) können durch Bitoperationen ersetzt werden, die effizienter sind (z. B. :java:`16 / 4 == 16 >> 2`).
+        Bestimmte mathematische Operationen (z. B. Division durch 2\ :sup:`x`) können durch Bitoperationen ersetzt werden, die effizienter sind (z. B. :java:`16 / 4 == 16 >> 2`).
 
     .. card::
 
@@ -1606,7 +1581,7 @@ Unter-/Überschreitet das Ergebnis eines Ausdruckes den minimalen/maximalen Wert
 
 .. code:: java
     :number-lines:
-    :class: incremental
+    :class: incremental copy-to-clipboard
 
     Integer.toBinaryString(Integer.MIN_VALUE) //    "10000000000000000000000000000000"
     Integer.toBinaryString(Integer.MIN_VALUE -1) // "01111111111111111111111111111111"
@@ -1829,7 +1804,7 @@ Eine Anweisung in einem Java-Programm stellt eine einzelne Vorschrift dar, die w
 
     void main() {
         int a = 1; // Variablendeklaration und Initialisierung
-        println("a = " + a); // Methodenaufruf (hier: println)
+        IO.println("a = " + a); // Methodenaufruf (hier: println)
     }
 
 - Programme setzen sich aus einer Abfolge von Anweisungen zusammen.
@@ -1854,7 +1829,7 @@ Ein Block in einem Java-Programm ist eine Folge von Anweisungen, die durch gesch
     void main() {
         {   // Block von Anweisungen
             int a = 1;
-            println("a = "+a);
+            IO.println("a = "+a);
         }
     }
 
@@ -1883,14 +1858,14 @@ Anweisungen und Blöcke - Beispiele
     {
         boolean vegi = true;
         gender = 'f';
-        System.out.println("vegi=" + vegi);
+        IO.println("vegi=" + vegi);
         {} // leerer Block
     }
 
     // Methodenaufruf
-    println("age=" + age);
-    println("gender=" + gender);
-    /* println("vegi=" + vegi); =>  Error: cannot find symbol: variable vegi */
+    IO.println("age=" + age);
+    IO.println("gender=" + gender);
+    /* IO.println("vegi=" + vegi); =>  Error: cannot find symbol: variable vegi */
 
 
 
@@ -1923,12 +1898,14 @@ Die :java:`if`-Anweisung setzt sich zusammen aus dem Schlüsselwort :java:`if`, 
         .. include:: code/SimpleIf.java
             :code: java
             :number-lines:
+            :class: copy-to-clipboard
 
     .. card::
 
         .. include:: code/NestedIf.java
             :code: java
             :number-lines:
+            :class: copy-to-clipboard
 
 .. supplemental::
 
@@ -1952,12 +1929,14 @@ Die :java:`if`-Anweisung setzt sich zusammen aus dem Schlüsselwort :java:`if`, 
         .. include:: code/IfElse.java
             :code: java
             :number-lines:
+            :class: copy-to-clipboard
 
     .. card::
 
         .. include:: code/IfElseReformatted.java
             :code: java
             :number-lines:
+            :class: copy-to-clipboard
 
 .. supplemental::
 
@@ -1988,6 +1967,7 @@ Die :java:`if`-Anweisung setzt sich zusammen aus dem Schlüsselwort :java:`if`, 
         .. include:: code/BmiBerechnenMitIfElse.java
             :code: java
             :number-lines:
+            :class: copy-to-clipboard
 
 
 
@@ -2027,18 +2007,21 @@ Die :java:`if`-Anweisung setzt sich zusammen aus dem Schlüsselwort :java:`if`, 
         .. include:: code/Switch.java
             :code: java
             :number-lines:
+            :class: copy-to-clipboard
 
     .. card::
 
         .. include:: code/SwitchMultipleLabels.java
             :code: java
             :number-lines:
+            :class: copy-to-clipboard
 
     .. card::
 
         .. include:: code/SwitchYieldExpression.java
             :code: java
             :number-lines:
+            :class: copy-to-clipboard
 
     .. card::
 
@@ -2048,19 +2031,21 @@ Die :java:`if`-Anweisung setzt sich zusammen aus dem Schlüsselwort :java:`if`, 
 
         Auf der rechten Seite ist nur ein Ausdruck oder ein Block erlaubt - keine Anweisung.
 
-        Bei dieser Variante gibt es kein *durchfallen* :eng:`Fall-Through-Effekt`, d. h. ein :java:`break` ist nicht zur Beendigung eines :java:`case`-Blocks zu verwenden!
+        Bei dieser Variante gibt es kein *durchfallen* (:eng:`Fall-Through`), d. h. ein :java:`break` ist nicht zur Beendigung eines :java:`case`-Blocks zu verwenden!
 
     .. card::
 
         .. include:: code/SwitchArrowMultipleLabels.java
             :code: java
             :number-lines:
+            :class: copy-to-clipboard
 
     .. card::
 
         .. include:: code/SwitchArrowExpression.java
             :code: java
             :number-lines:
+            :class: copy-to-clipboard
 
 .. supplemental::
 
@@ -2089,7 +2074,8 @@ Die :java:`if`-Anweisung setzt sich zusammen aus dem Schlüsselwort :java:`if`, 
 
         .. include:: code/SwitchAndWhen.java
             :code: java
-            :number-lines:
+            :number-lines: 
+            :class: copy-to-clipboard
 
         .. exercise:: Erfolgreicher Musterabgleich?
 
@@ -2126,21 +2112,24 @@ Effizienz von bedingten Anweisungen
 
 .. exercise:: Wochentag benennen
 
-    Berechnen Sie den Wochentag für ein gegebenes Datum.
-    Lesen Sie (a) den Tag des Monats, (b) den Monat, (c) ob das Jahr ein Schaltjahr ist und (d) den Wochentag des 1. Januars des Jahres von der Konsole ein. Benutzen Sie die :java:`switch` und/oder :java:`if`-Anweisungen und geben Sie den Wochentag des gegebenen Datums auf der Konsole aus.
+    Lesen Sie (a) den Tag des Monats, (b) den Monat, (c) ob das Jahr ein Schaltjahr ist und (d) den Wochentag des 1. Januars des Jahres ein. Benutzen Sie :java:`switch` und/oder :java:`if`-Anweisungen und geben Sie den Wochentag des gegebenen Datums aus.
 
-    Beispielinteraktion:
+    .. example::
 
-    .. code:: text
+        .. code:: text
 
-        # java --enable-preview Wochentag.java
-        Welchen Monat haben wir (1-12)? 12
-        Welchen Tag des Monats haben wir (1-28/29/30/31)? 24
-        Welcher Wochentag war der 1. Januar (0=Montag, 1=Dienstag, ..., 6=Sonntag)? 0
-        Ist das Jahr ein Schaltjahr (j/n)? j
-        > Tag im Jahr: 359
-        > Tag in der Woche: 2
-        > Der 24.12. ist ein Dienstag
+            # java Wochentag.java
+            Welchen Monat haben wir (1-12)? 12
+            Welchen Tag des Monats haben wir (1-28/29/30/31)? 24
+            Welcher Wochentag war der 1. Januar (0=Montag, 1=Dienstag, ..., 6=Sonntag)? 0
+            Ist das Jahr ein Schaltjahr (j/n)? j
+            > Tag im Jahr: 359
+            > Tag in der Woche: 2
+            > Der 24.12. ist ein Dienstag
+
+    .. container:: bonus-task
+
+        Heimaufgabe: Erlauben Sie statt der Eingabe einer Zahl für den Wochentag auch die Eingabe des Wochentages als Text (z. B. „Montag“, „Dienstag“, ...).
 
     .. solution::
         :pwd: Am241224IstDienstag
@@ -2149,10 +2138,7 @@ Effizienz von bedingten Anweisungen
             :code: java
             :number-lines:
 
-    .. container:: bonus-task
-
-        Heimaufgabe: Erlauben Sie statt der Eingabe einer Zahl für den Wochentag auch die Eingabe des Wochentages als Text (z. B. „Montag“, „Dienstag“, ...).
-
+    
 
 
 .. class:: new-section transition-move-to-top
@@ -2190,7 +2176,7 @@ Schleifen
             // for(<Init>; <Ausdruck>; <Update>) <Anweisung>
             for(int i = 0; i < 10 ; ++i ){
                 sum += i;
-                System.out.println("sum="+sum);
+                IO.println("sum="+sum);
             }
 
     .. card::
@@ -2219,10 +2205,9 @@ Schleifen
 
                     int sum=0;
 
-
                     for(int i = 0, j = 2; i < 10; ++i, j+=2 ){
                         sum +=j;
-                        System.out.println("sum="+sum);
+                        IO.println("sum="+sum);
                     }
 
             .. cell::
@@ -2236,7 +2221,7 @@ Schleifen
                         int j=2;
                         for(i++, j--; i < 10 ; ++i, j+=2 ){
                             sum +=j;
-                            System.out.println("sum="+sum);
+                            IO.println("sum="+sum);
                         }
 
 .. supplemental::
@@ -2245,7 +2230,7 @@ Schleifen
 
     .. code:: java
 
-        for(;;) { System.out.println("forever"); }
+        for(;;) { IO.println("forever"); }
 
 
 
@@ -2262,7 +2247,7 @@ Schleifen
     // while(<Ausdruck>) <Anweisung oder Block>
     while(i < 10){
         sum += i;
-        System.out.println("sum=" + sum);
+        IO.println("sum=" + sum);
         ++i;
     }
 
@@ -2289,7 +2274,7 @@ Schleifen
     // do <Anweisung> while (<Ausdruck>);
     do {
         sum += i++;
-        System.out.println("sum="+sum);
+        IO.println("sum="+sum);
     } while(i < 10);
 
 .. class:: incremental list-with-explanations
@@ -2320,9 +2305,9 @@ Kontrolle des Schleifenablaufs
                     break;
 
                 sum += i;
-                System.out.println("i=" + i);
+                IO.println("i=" + i);
             }
-            System.out.println("sum=" + sum);
+            IO.println("sum=" + sum);
 
     .. card::
 
@@ -2337,9 +2322,9 @@ Kontrolle des Schleifenablaufs
                     continue;
 
                 sum += i;
-                System.out.println("i=" + i);
+                IO.println("i=" + i);
             }
-            System.out.println("sum=" + sum);
+            IO.println("sum=" + sum);
 
     .. card::
 
@@ -2350,10 +2335,10 @@ Kontrolle des Schleifenablaufs
             int sum = 0;
 
             outer: for (int i = 0; i < 10; ++i) {
-                System.out.println("i=" + i);
+                IO.println("i=" + i);
 
                 for (int j = 0; j < i; ++j) {
-                    System.out.println("j=" + j);
+                    IO.println("j=" + j);
                     if ((j + 1) % 5 == 0)
                         break outer;
                     sum += j;
@@ -2361,7 +2346,7 @@ Kontrolle des Schleifenablaufs
 
                 sum += i;
             }
-            System.out.println("sum=" + sum);
+            IO.println("sum=" + sum);
 
 
     .. card::
@@ -2384,13 +2369,13 @@ Kontrolle des Schleifenablaufs
 
         jshell> farOuter: for (int j = 0 ; j < 5 ; j++)
                     outer: for(int i = 0; i < 5; i++) {
-                        System.out.println(j+" "+i); break farOuter;
+                        IO.println(j+" "+i); break farOuter;
                     }
         0 0
 
         jshell> farOuter: for (int j = 0 ; j < 5 ; j++)
                     outer: for(int i = 0; i < 5 ; i++) {
-                        System.out.println(j+" "+i); continue farOuter;
+                        IO.println(j+" "+i); continue farOuter;
                     }
         0 0
         1 0
@@ -2414,23 +2399,24 @@ Kontrolle des Schleifenablaufs
         - Schreiben Sie den Code für den Java Interpreter.
         - Es ist nicht erforderlich, dass der Algorithmus effizient ist.
 
-    Beispielinteraktion:
+    .. example::
+    
+        .. code:: bash
 
-    .. code:: bash
+            # java Primzahltest.java
+            Geben Sie eine ganze positive Zahl ein? 97
+            97 ist eine Primzahl
+            # java Primzahltest.java
+            Geben Sie eine ganze positive Zahl ein? 123
+            3 ist ein Teiler von 123
 
-        # java --enable-preview Primzahltest.java
-        Geben Sie eine ganze positive Zahl ein? 97
-        97 ist eine Primzahl
-        # java --enable-preview Primzahltest.java
-        Geben Sie eine ganze positive Zahl ein? 123
-        3 ist ein Teiler von 123
+        .. solution::
+            :pwd: NaivUndIneffizient
 
-    .. solution::
-        :pwd: NaivUndIneffizient
-
-        .. include:: code/Primzahltest.java
-            :code: Java
-            :number-lines:
+            .. include:: code/Primzahltest.java
+                :code: Java
+                :number-lines:
+                :class: copy-to-clipboard
 
 
 
@@ -2443,29 +2429,30 @@ Kontrolle des Schleifenablaufs
 
     Schreiben Sie ein Programm, das die n-te Fibonacci-Zahl berechnet und auf der Konsole ausgibt. Lesen Sie n von der Konsole ein.
 
-    Die Fibonacci-Zahlen sind definiert durch die Rekursionsformel :math:`F(n) = F(n-1) + F(n-2)` mit den Anfangswerten :math:`F(0) = 0` und :math:`F(1) = 1`.
+    Die Fibonacci-Zahlen sind definiert durch die Rekursionsformel F(n) = F(n-1) + F(n-2) mit den Anfangswerten F(0) = 0 und F(1) = 1.
 
     Die ersten 10 Fibonacci Zahlen:
 
     .. csv-table::
-        :header: F0, F1, F2, F3, F4, F5, F6, F7, F8, F9, F10
 
+        F(0), F(1), F(2), F(3), F(4), F(5), F(6), F(7), F(8), F(9), F(10)
         0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55
 
-    Beispielinteraktion:
+    .. example::
 
-    .. code:: bash
+        .. code:: bash
 
-        # java --enable-preview Fibonacci.java
-        Welche Fibonacci Zahl möchten Sie berechnen? 10
-        55
+            # java --enable-preview Fibonacci.java
+            Welche Fibonacci Zahl möchten Sie berechnen? 10
+            55
 
-    .. solution::
-        :pwd: FibonacciZahlen
+        .. solution::
+            :pwd: FibonacciZahlen
 
-        .. include:: code/Fibonacci.java
-            :code: Java
-            :number-lines:
+            .. include:: code/Fibonacci.java
+                :code: Java
+                :number-lines:
+                :class: copy-to-clipboard
 
 
 
@@ -2486,11 +2473,11 @@ Kontrolle des Schleifenablaufs
 
         .. card::
 
-            Beispielinteraktion:
+            .. example::
 
-            .. code:: bash
+              .. code:: bash
 
-                # java --enable-preview KubikwurzelMitSchleife.java  10:43:30
+                # java KubikwurzelMitSchleife.java  10:43:30
                 Geben Sie eine Zahl n ein deren Kubikwurzel w Sie berechnen wollen
                 (d.h. n = w*w*w): 1000000
                 Wie viele Schritte wollen Sie machen? 50
@@ -2521,6 +2508,7 @@ Kontrolle des Schleifenablaufs
         .. include:: code/KubikwurzelMitSchleife.java
             :code: Java
             :number-lines:
+            :class: copy-to-clipboard
 
         Bei iterativen Algorithmen ist es fast immer möglich ein Abbruchkriterium über die Änderung zwischen zwei Schritten zu bestimmen. Unterschreitet die Änderung einen bestimmten Wert (z. B. :math:`0,000000000001`) , so kann bzw. könnte die Schleife je nach Anwendungszweck abgebrochen werden.
 
@@ -2644,7 +2632,7 @@ Rekursive Methoden - Beispiel
 
 .. grid::
 
-    .. cell:: peripheral
+    .. cell:: fade-out
 
         Schleifen basierte Implementierung des Algorithmus von Euklid:
 
@@ -2668,6 +2656,7 @@ Rekursive Methoden - Beispiel
 
         .. code:: java
             :class: copy-to-clipboard
+            :number-lines:
 
             int ggt(int z1, int z2) {
                 if (z2 == 0)
@@ -2712,18 +2701,18 @@ Rekursive Methoden - Beispiel
             :class: copy-to-clipboard
 
             void print(int i) {
-                println("int: " + i);
+                IO.println("int: " + i);
             }
 
             void print(double d) {
-                println("double: " + d);
+                IO.println("double: " + d);
             }
 
             void main() {
                 int i = 1;
-                print(i);
+                IO.print(i);
                 float f = 1.0f;
-                print(f);
+                IO.print(f);
             }
 
 
@@ -2907,14 +2896,13 @@ Einrückungen und Blöcke - Beispiele
             :class: copy-to-clipboard
 
             int ggtNaiv(int z1, int z2){
-                    int min = (z1>z2)?z2:z1; println("current min="+min);
+                    int min = (z1>z2)?z2:z1; IO.println("current min="+min);
                 for(int ggt=min; ggt>1; --ggt){
                         if(z1%ggt==0 && z2%ggt==0)
                         return ggt;
                 }
             return 1;
                 }
-            }
 
     .. card::
 
@@ -2926,7 +2914,7 @@ Einrückungen und Blöcke - Beispiele
 
             int ggtNaiv(int z1, int z2) {
                 int min = (z1 > z2) ? z2 : z1;
-                println("current min=" + min);
+                IO.println("current min=" + min);
                 for (int ggt = min; ggt > 1; --ggt) {
                     if (z1 % ggt == 0 && z2 % ggt == 0)
                         return ggt;
@@ -3050,31 +3038,34 @@ Das Einhalten fördert die Zusammenarbeit mit anderen Programmieren - *insbesond
 
 .. class:: exercises transition-fade
 
-Übung - Tage seit Geburt berechnen
+Übung
 ------------------------------------
 
-.. exercise:: 
+.. scrollable::
 
-    .. container::
+    .. exercise:: Tage seit Geburt berechnen
 
-        Schreiben Sie ein Programm, dass berechnet wie viele Tage ein Mensch bereits auf der Welt ist. Als Eingaben sollen das Geburtsdatum und das aktuelle Datum eingegeben werden. D. h. Sie fragen erst den Tag, dann den Monat und dann das Jahr der Geburt ab. Anschließend fragen Sie den aktuellen Tag, Monat und das Jahr ab. Geben Sie dann die Anzahl der Tage aus.
+        .. container::
 
-        Verwenden Sie Methoden für sinnvolle Teilaufgaben. (Z. B. Ist ein Jahr ein Schaltjahr, Tage eines Jahres. Tag im Jahr (siehe vorhergehende Übung)).
+            Schreiben Sie ein Programm, dass berechnet wie viele Tage ein Mensch bereits auf der Welt ist. Als Eingaben sollen das Geburtsdatum und das aktuelle Datum eingegeben werden. D. h. Sie fragen erst den Tag, dann den Monat und dann das Jahr der Geburt ab. Anschließend fragen Sie den aktuellen Tag, Monat und das Jahr ab. Geben Sie dann die Anzahl der Tage aus.
 
-    .. container:: accentuate
+            Verwenden Sie Methoden für sinnvolle Teilaufgaben. (Z. B. Ist ein Jahr ein Schaltjahr, Tage eines Jahres. Tag im Jahr (siehe vorhergehende Übung)).
 
-       .. rubric:: Anforderungen
+        .. container:: accentuate
 
-       - Kommentieren Sie Ihre Methoden sinnvoll.
-       - Testen Sie Ihren Code mit verschiedenen Eingaben.
-       - Wenn Sie einen Fehler in der Eingabe finden, geben Sie eine Meldung aus und beenden Ihr Programm mit :java:`System.exit(1)`.
+            .. rubric:: Anforderungen
 
-    .. solution::
-        :pwd: UndSoAltIstManSchon
+            - Kommentieren Sie Ihre Methoden sinnvoll.
+            - Testen Sie Ihren Code mit verschiedenen Eingaben.
+            - Wenn Sie einen Fehler in der Eingabe finden, geben Sie eine Meldung aus und beenden Ihr Programm mit :java:`System.exit(1)`.
 
-        .. include:: code/TageSeitGeburt.java
-            :code: Java
-            :number-lines: 1
+        .. solution::
+            :pwd: UndSoAltIstManSchon
+
+            .. include:: code/TageSeitGeburt.java
+                :code: Java
+                :class: copy-to-clipboard
+                :number-lines: 1
 
 .. supplemental::
 
@@ -3082,7 +3073,7 @@ Das Einhalten fördert die Zusammenarbeit mit anderen Programmieren - *insbesond
 
     Ein normales Jahr aus 365 Tagen. Da die Zeit, die die Erde benötigt, um sich einmal um die Sonne zu drehen jedoch 365,2425 Tage beträgt, wird alle vier Jahre ein „Schaltjahr“ von 366 Tagen verwendet, um den durch drei normale (aber kurze) Jahre verursachten Fehler zu beseitigen. Jedes Jahr, das gleichmäßig durch 4 teilbar ist somit ein Schaltjahr: 1988, 1992 und 1996 sind beispielsweise Schaltjahre.
 
-    Um den kleinen entstehenden Fehler zu korrigieren, ist ein Jahr, das durch 100 teilbar ist (z. B. 1900), nur dann ein Schaltjahr ist, wenn es auch durch 400 teilbar ist.
+    Um den kleinen entstehenden Fehler zu korrigieren, ist ein Jahr, das durch 100 teilbar ist (z. B. 1900 und 2000), nur dann ein Schaltjahr ist, wenn es auch durch 400 teilbar ist (zuletzt z. B. 2000).
 
 
 
@@ -3090,6 +3081,7 @@ Das Einhalten fördert die Zusammenarbeit mit anderen Programmieren - *insbesond
 
 Assertions
 ----------------------------------------------------------
+
 
 
 Java Assertions
@@ -3196,7 +3188,7 @@ Java Assertions
             .. code:: bash
                 :class: copy-to-clipboard
 
-                jshell --enable-preview -R -ea
+                jshell -R -ea
 
 .. supplemental::
 

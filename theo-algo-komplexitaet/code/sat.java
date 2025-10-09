@@ -129,7 +129,7 @@ void main() {
             new Or(new Not(A), new Not(C)),
             new Or(C, D),
             new Or(new Not(C), new Not(D)));
-    println("Finding solutions for: " + expr.toString());
+    IO.println("Finding solutions for: " + expr.toString());
 
     Map<Var, Boolean> solution = new HashMap<>();
     solve(expr, vars, solution);
@@ -145,7 +145,7 @@ void solve(Expr expr, Stack<Var> vars, Map<Var, Boolean> solution) {
         if (!e.isPresent()) {
             solve(expr, vars, solution);
         } else if (e.get()) {
-            println("Solution found: " + solution);
+            IO.println("Solution found: " + solution);
         }
     }
     vars.push(var);

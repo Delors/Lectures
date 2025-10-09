@@ -1,3 +1,3 @@
 void main() {
-    println("Hello World!");
+    IO.println("Hello World!");
 }

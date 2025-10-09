@@ -17,7 +17,7 @@ void main(String []args){
         return;
     }
     try (var in = new BufferedReader(new FileReader(args[0]))) {
-        println(countNonEmptyLines(in));
+        IO.println(countNonEmptyLines(in));
     } catch (FileNotFoundException e) {
         err.println("Datei nicht gefunden: " + e.getMessage());
     } 

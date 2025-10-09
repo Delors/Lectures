@@ -6,5 +6,5 @@ int foo(){
 
 
 void main(){
-    println(foo());
+    IO.println(foo());
 }

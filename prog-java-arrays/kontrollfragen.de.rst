@@ -17,7 +17,7 @@ Java Arrays
 
 :Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
 :Kontakt: michael.eichberg@dhbw.de, Raum 149B
-:Version: 1.0
+:Version: 1.1
 
 
 
@@ -66,7 +66,7 @@ Kontrollfragen
 
             int[] a = new int[3];
             for (int i = 0; i < a.length; i++) {
-                System.out.println(a[i]);
+                IO.println(a[i]);
             }
 
          .. solution::
@@ -88,7 +88,7 @@ Kontrollfragen
 
             final int[] a = {2,6,12};
             for (int i = 0; i < a.length-1; i++) {
-                System.out.println(a[i]);
+                IO.println(a[i]);
             }
 
          .. solution::
@@ -114,7 +114,7 @@ Kontrollfragen
             for (int i = 2; i < a.length; i++) {
                 a[i] = i + a[i-1];
             }
-            System.out.println(a[9]);
+            IO.println(a[9]);
 
          .. solution::
             :pwd: 45_-was-sonst

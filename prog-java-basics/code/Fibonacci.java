@@ -1,9 +1,10 @@
+// Achtung: --enable-preview mit Java 25 Benötigt!
 // Naive Implementation zur Berechnung der Fibonacci-Zahlen
 void main() {
-    var n = Integer.parseInt(readln("Berechnung der n-ten Fibonacci-Zahl. Bitte n eingeben: "));
+    var n = Integer.parseInt(IO.readln("Berechnung der n-ten Fibonacci-Zahl. Bitte n eingeben: "));
     switch (n) {
-        case 0 -> { println("0"); }
-        case 1 -> { println("1"); }
+        case 0 -> { IO.println("0"); }
+        case 1 -> { IO.println("1"); }
         case _ when n > 1 -> {
             var a = 0l;
             var b = 1l;
@@ -13,10 +14,10 @@ void main() {
                 a = b;
                 b = c;
             }   
-            println(c);
+            IO.println(c);
         }
         default -> {
-            println("die Zahl muss größer gleich 0 sein");
+            IO.println("die Zahl muss größer gleich 0 sein");
         }
     }
 }

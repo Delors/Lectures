@@ -57,7 +57,7 @@ int dayInYear(int year, int month, int day) {
         case 0:
             break;
         default:
-            println("Fehler: Monat nicht bekannt");
+            IO.println("Fehler: Monat nicht bekannt");
             System.exit(-1);
             return -1; // effectively unreachable code
     }
@@ -75,34 +75,34 @@ void main() {
 
 
     final var birthYear = Integer.parseInt(
-            readln("In welchem Jahr sind Sie geboren? "));
+            IO.println("In welchem Jahr sind Sie geboren? "));
     final var birthMonth = Integer.parseInt(
-            readln("In welchem Monat sind Sie geboren (1-12)? "));
+            IO.println("In welchem Monat sind Sie geboren (1-12)? "));
     final var birtDayInMonth = Integer.parseInt(
-            readln("An welchem Tag des Monats sind Sie geboren (1-28/29/30/31)? "));
+            IO.println("An welchem Tag des Monats sind Sie geboren (1-28/29/30/31)? "));
 
     final var currentYear = Integer.parseInt(
-            readln("Welches Jahr haben wir? "));
+            IO.println("Welches Jahr haben wir? "));
     final var currentMonth = Integer.parseInt(
-            readln("Welchen Monat haben wir (1-12)? "));
+            IO.println("Welchen Monat haben wir (1-12)? "));
     final var currentDayInMonth = Integer.parseInt(
-            readln("Welchen Tag des Monats haben wir (1-28/29/30/31)? "));
+            IO.println("Welchen Tag des Monats haben wir (1-28/29/30/31)? "));
 
     if (currentYear < birthYear) {
-        println("Fehler: Das aktuelle Jahr ist kleiner als das Geburtsjahr.");
+        IO.println("Fehler: Das aktuelle Jahr ist kleiner als das Geburtsjahr.");
         System.exit(-1);
     }
     if (currentYear == birthYear && currentMonth < birthMonth) {
-        println("Fehler: Der aktuelle Monat ist kleiner als der Geburtsmonat.");
+        IO.println("Fehler: Der aktuelle Monat ist kleiner als der Geburtsmonat.");
         System.exit(-1);
     }
     if (currentYear == birthYear && currentMonth == birthMonth && currentDayInMonth < birtDayInMonth) {
-        println("Fehler: Der aktuelle Tag ist kleiner als der Geburtstag.");
+        IO.println("Fehler: Der aktuelle Tag ist kleiner als der Geburtstag.");
         System.exit(-1);
     }
 
     if (currentYear == birthYear) {
-        println("Sie haben " + (dayInYear(currentYear, currentMonth, currentDayInMonth)
+        IO.println("Sie haben " + (dayInYear(currentYear, currentMonth, currentDayInMonth)
                 - dayInYear(birthYear, birthMonth, birtDayInMonth)) + " Tage gelebt.");
     } else {
         var daysLived = dayInYear(currentYear, currentMonth, currentDayInMonth) +
@@ -110,6 +110,6 @@ void main() {
         for (int year = birthYear + 1; year < currentYear; year++) {
             daysLived += numberOfDays(year);
         }
-        println("Sie haben " + daysLived + " Tage gelebt.");
+        IO.println("Sie haben " + daysLived + " Tage gelebt.");
     }
 }

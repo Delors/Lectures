@@ -1,5 +1,5 @@
 void main() {
-    var name = readln("Wie ist Dein Name? ");
+    var name = IO.readln("Wie ist Dein Name? ");
     String nameAnalysis = switch (name) { 
         // Der erste Vergleich, der zutrifft, wird ausgeführt.
         case "Michael", "Tom", "Erik"               -> "m";
@@ -8,5 +8,5 @@ void main() {
         case _ when name.contains("-")              -> "Doppelname";
         default                                     -> "<unbekannt>";
     };
-    println("Namensanalyse = " + nameAnalysis);
+    IO.println("Namensanalyse = " + nameAnalysis);
 }

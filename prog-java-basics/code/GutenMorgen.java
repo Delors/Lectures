@@ -1,4 +1,4 @@
 void main() {
-    println("Hallo "+ readln("Wie ist Dein Name? ")+"!");
-    println(readln("Wo wohnst Du? ")+" ist wirklich schön!");
+    IO.println("Hallo "+ IO.readln("Wie ist Dein Name? ")+"!");
+    IO.println(IO.readln("Wo wohnst Du? ")+" ist wirklich schön!");
 }

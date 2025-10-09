@@ -1,5 +1,5 @@
 
-public class Fak_java23_javadoc {
+public class Fak_java25_javadoc {
 
     /// Berechnet die Fakultät von n.
     ///
@@ -13,7 +13,7 @@ public class Fak_java23_javadoc {
     }
 
     public static void main(String[] args) {
-        System.out.println(fak(5));
+        IO.println(fak(5));
     }
 
 }

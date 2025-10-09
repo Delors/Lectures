@@ -16,7 +16,7 @@ Java Arrays - Klausurvorbereitung
 
 :Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
 :Kontakt: michael.eichberg@dhbw.de, Raum 149B
-:Version: 1.0
+:Version: 1.0.1
 
 
 
@@ -90,7 +90,7 @@ der Text nicht vorkommt.
 
 Schreiben Sie eine entsprechende Methode :java:`suche(...)`.
 
-Beispiel:
+.. example::
 
     .. code:: java
 

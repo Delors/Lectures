@@ -16,5 +16,5 @@ class Professor extends Angestellter {
 
 
 void main() {
-    println("Mein Prof.: " + new Professor("Max Mustermann", "Informatik"));
+    IO.println("Mein Prof.: " + new Professor("Max Mustermann", "Informatik"));
 }

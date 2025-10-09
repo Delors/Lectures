@@ -27,7 +27,7 @@ void printSaddlePoints(int [][] b) { // VERIFY!!!!
                     continue cols;
                 }
             }
-            println("Sattelpunkt: " + "(" + i + "," + col[j] + ") = " + min);
+            IO.println("Sattelpunkt: " + "(" + i + "," + col[j] + ") = " + min);
         }
     }
 }
@@ -49,7 +49,7 @@ void printSaddlePoints2(int [][] b) {
             min = Math.min(min, b[i][j]);
         }
         // 2. prüfe ob das Minimum in der Zeile auch das Maximum der Spalte ist
-        println("Minimum in Zeile ["+i+"]: " + min);
+        IO.println("Minimum in Zeile ["+i+"]: " + min);
         int max = min;
         for (int j = 0; j < COLS; j++) {
             // 2.1. finde die relevanten Spalten
@@ -59,7 +59,7 @@ void printSaddlePoints2(int [][] b) {
                     max = Math.max(max, b[k][j]);
                 }
                 if (max == min) {
-                    println("Sattelpunkt: " + "(" + i + "," + j + ") = " + min);
+                    IO.println("Sattelpunkt: " + "(" + i + "," + j + ") = " + min);
                 }
             }
         }
@@ -69,14 +69,14 @@ void printSaddlePoints2(int [][] b) {
 void printToConsole(int [][] c) {
     //println(Arrays.deepToString(c));
     for (int i = 0; i < c.length; i++) {
-        println(Arrays.toString(c[i]));
+        IO.println(Arrays.toString(c[i]));
     }
 }
 
 int[][] initMatrix(int[][] a) {
     for (int i = 0; i < a.length; i++) {
         for (int j = 0; j < a[i].length; j++) {
-            a[i][j] = Integer.parseInt(readln("a[" + i + "][" + j + "] = "));
+            a[i][j] = Integer.parseInt(IO.readln("a[" + i + "][" + j + "] = "));
         }
     }
     return a;
@@ -92,12 +92,12 @@ void main() {
     printToConsole(a);
     */
 
-    int m = Integer.parseInt(readln("Anzahl der Zeilen von Matrix a: "));
-    int n = Integer.parseInt(readln("Anzahl der Spalten von Matrix a: "));
+    int m = Integer.parseInt(IO.readln("Anzahl der Zeilen von Matrix a: "));
+    int n = Integer.parseInt(IO.readln("Anzahl der Spalten von Matrix a: "));
 
     final int[][] a = initMatrix(new int[m][n]);
     printToConsole(a);
-    println("Sattelpunkte:");
+    IO.println("Sattelpunkte:");
     //printSaddlePoints(a);
     printSaddlePoints2(a);
 }

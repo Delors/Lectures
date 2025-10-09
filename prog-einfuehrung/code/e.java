@@ -24,5 +24,5 @@ BigDecimal e(int steps) {
 }
 
 void main() {
-    println(e(100));
+    IO.println(e(100));
 }

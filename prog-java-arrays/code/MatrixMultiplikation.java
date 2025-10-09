@@ -30,14 +30,14 @@ int[][] multiply(final int[][] a, final int[][] b) {
 void printToConsole(int [][] c) {
     //println(Arrays.deepToString(c));
     for (int i = 0; i < c.length; i++) {
-        println(Arrays.toString(c[i]));
+        IO.println(Arrays.toString(c[i]));
     }
 }
 
-int[][] initMatrix(int[][] a) {
+int[][] initMatrix(int[][] a,String name) {
     for (int i = 0; i < a.length; i++) {
         for (int j = 0; j < a[i].length; j++) {
-            a[i][j] = Integer.parseInt(readln("a[" + i + "][" + j + "] = "));
+            a[i][j] = Integer.parseInt(IO.readln(name+"[" + i + "][" + j + "] = "));
         }
     }
     return a;
@@ -62,12 +62,12 @@ void main() {
     printToConsole(c);
     */
 
-    int m = Integer.parseInt(readln("Anzahl der Zeilen von Matrix a: "));
-    int n = Integer.parseInt(readln("Anzahl der Spalten von Matrix a: "));
-    int o = Integer.parseInt(readln("Anzahl der Spalten von Matrix b: "));
+    int m = Integer.parseInt(IO.readln("Anzahl der Zeilen von Matrix a: "));
+    int n = Integer.parseInt(IO.readln("Anzahl der Spalten von Matrix a: "));
+    int o = Integer.parseInt(IO.readln("Anzahl der Spalten von Matrix b: "));
 
-    final int[][] a = initMatrix(new int[m][n]);
-    final int[][] b = initMatrix(new int[n][o]);
+    final int[][] a = initMatrix(new int[m][n],"a");
+    final int[][] b = initMatrix(new int[n][o],"b");
     final var c = multiply(a, b);
     printToConsole(c);
 }

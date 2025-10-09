@@ -7,10 +7,10 @@ long fibonacci(int n) {
 }
 
 void main() {
-    var n = Integer.parseInt(readln("Berechnung der n-ten Fibonacci-Zahl. Bitte n eingeben: "));
+    var n = Integer.parseInt(IO.readln("Berechnung der n-ten Fibonacci-Zahl. Bitte n eingeben: "));
     if (n >= 0) {
-        println(fibonacci(n));
+        IO.println(fibonacci(n));
     } else {
-        println("die Zahl muss größer gleich 0 sein");
+        IO.println("die Zahl muss größer gleich 0 sein");
     }
 }

@@ -22,7 +22,7 @@ boolean isPrim(int n) {
 }
 
 void main() {
-    final var n = Integer.parseInt(readln("Geben Sie eine ganze positive Zahl ein? "));
+    final var n = Integer.parseInt(IO.readln("Geben Sie eine ganze positive Zahl ein? "));
     if (isPrim(n)) {
         System.out.println(n + " ist eine Primzahl");
     } else {

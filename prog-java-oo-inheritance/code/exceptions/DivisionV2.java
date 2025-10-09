@@ -4,7 +4,7 @@ void main(String[] args) {
         int i = Integer.parseInt(args[0]);
         int j = Integer.parseInt(args[1]);
         try {
-            println(i / j);
+            IO.println(i / j);
         } catch (ArithmeticException e) {
             err.println("Division durch 0 nicht erlaubt.");
         }

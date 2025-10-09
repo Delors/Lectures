@@ -16,5 +16,5 @@ void main() throws Exception {
             new Patient("12/12/2024", "Anna Musterfrau", 130, 50)
     };
 
-    println("Durchschnittsgröße: " + berechneDurschnittsgroesse(patienten));
+    IO.println("Durchschnittsgröße: " + berechneDurschnittsgroesse(patienten));
 }

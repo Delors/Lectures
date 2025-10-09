@@ -9,5 +9,5 @@ void main() throws Exception {
     arzt.addPatient(new Patient("12/12/2024", "Erika Musterfrau", 160, 60));
     arzt.addPatient(new Patient("12/12/2024", "Anna Musterfrau", 130, 50));
 
-    println("Durchschnittsgröße: " + arzt.berechneDurschnittsgroesse());
+    IO.println("Durchschnittsgröße: " + arzt.berechneDurschnittsgroesse());
 }

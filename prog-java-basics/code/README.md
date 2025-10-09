@@ -1,5 +1,5 @@
-# Java 23 Required
+# Java 25 Required
 
-The following code snippets are tested with Java 23 and "--enable-preview".
+The following code snippets are tested with Java 25 and "--enable-preview".
 
-Some programs may work with earlier versions, but this is neither tested and also not a goal.
+Most will work without --enable-preview, but only a few programs will work with earlier versions!

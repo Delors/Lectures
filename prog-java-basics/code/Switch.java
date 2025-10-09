@@ -1,9 +1,9 @@
 void main() {
-    var month = Integer.parseInt(readln("Welchen Monat haben wir(1-12)? "));
+    var month = Integer.parseInt(IO.readln("Welchen Monat haben wir(1-12)? "));
     int days = 31;
     switch (month) { // vor Java 14!
         case 2:
-            if (readln("Schaltjahr (j/n)? ").charAt(0) == 'j') days = 29;
+            if (IO.readln("Schaltjahr (j/n)? ").charAt(0) == 'j') days = 29;
             else days = 28;
             break;
         case 4:
@@ -13,5 +13,5 @@ void main() {
             days = 30;
             break;
     }
-    println("Anzahl der Tage im Monat " + days);
+    IO.println("Anzahl der Tage im Monat " + days);
 }

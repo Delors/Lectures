@@ -4,6 +4,6 @@ public class Main {
     
     void main() {
         var katze = new Katze("Garfield");
-        println(katze.toString());
+        IO.println(katze.toString());
     }
 }

@@ -16,7 +16,7 @@ Verwendung von Feldern (:eng:`Arrays`) in Java
 
 :Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
 :Kontakt: michael.eichberg@dhbw.de, Raum 149B
-:Version: 1.2.1
+:Version: 1.3
 
 .. supplemental::
 
@@ -89,6 +89,7 @@ Eindimensionale Felder sind Datentypen, die es ermöglichen eine Liste mit einer
         Deklaration eines Feldes
 
         .. code:: java
+            :number-lines:
             :class:  copy-to-clipboard
 
             int[] daysPerMonth;
@@ -98,6 +99,7 @@ Eindimensionale Felder sind Datentypen, die es ermöglichen eine Liste mit einer
             Alternativ möglich, aber unüblich geworden:
 
             .. code:: java
+                :number-lines:
                 :class:  copy-to-clipboard
 
                 int daysPerMonth[];
@@ -107,6 +109,7 @@ Eindimensionale Felder sind Datentypen, die es ermöglichen eine Liste mit einer
         Initialisierung eines leeren Arrays:
 
         .. code:: java
+            :number-lines:
             :class:  copy-to-clipboard
 
             daysPerMonth = new int[12];
@@ -121,6 +124,7 @@ Eindimensionale Felder sind Datentypen, die es ermöglichen eine Liste mit einer
             Initialisierung eines Arrays mit konkreten Werten:
 
             .. code:: java
+                :number-lines:
                 :class:  copy-to-clipboard
 
                 daysPerMonth =
@@ -129,7 +133,8 @@ Eindimensionale Felder sind Datentypen, die es ermöglichen eine Liste mit einer
             bzw. ohne Verwendung von :java:`new`:
 
             .. code:: java
-                :class: incremental smaller copy-to-clipboard
+                :number-lines:
+                :class: incremental copy-to-clipboard
 
                 int [] daysPerMonth =
                     {31, 29, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
@@ -149,6 +154,7 @@ Eindimensionale Felder sind Datentypen, die es ermöglichen eine Liste mit einer
             Die Länge eines Arrays kann mittels :java:`length` abgefragt werden:
 
             .. code:: java
+                :number-lines:
                 :class: copy-to-clipboard
 
                 int numberOfMonths = daysPerMonth.length;
@@ -178,6 +184,7 @@ Auf einzelne Elemente eines Feldes kann mittels eines Indexes und dem Feldzugrif
         - Verwendung eines ungültigen Indexes führt zu einer Ausnahme/einem Laufzeitfehler (:java:`ArrayIndexOutOfBoundsException`).
 
           .. code:: java
+            :number-lines:
             :class:  copy-to-clipboard
 
             daysPerMonth[13]
@@ -189,6 +196,7 @@ Auf einzelne Elemente eines Feldes kann mittels eines Indexes und dem Feldzugrif
         Beispiel: Lesender Zugriff auf ein Element eines Feldes
 
         .. code:: java
+            :number-lines:
             :class:  copy-to-clipboard
 
             int daysInFebruary = daysPerMonth[1]; // Index "1" => 2. Element
@@ -201,6 +209,8 @@ Auf einzelne Elemente eines Feldes kann mittels eines Indexes und dem Feldzugrif
         Beispiel: Schreibende und lesende Zugriffe
 
         .. code:: java
+            :number-lines:
+            :class: copy-to-clipboard
 
             int daysPerMonth[] = new int[12]; // Deklaration
 
@@ -210,17 +220,18 @@ Auf einzelne Elemente eines Feldes kann mittels eines Indexes und dem Feldzugrif
             daysPerMonth[10] = 30;
             daysPerMonth[11] = 31;
 
-            System.out.println("daysPerMonth[1] = " + daysPerMonth[1]);
+            IO.println("daysPerMonth[1] = " + daysPerMonth[1]);
 
     .. card::
 
         Häufig greift man auf Arrays mittels einer Schleife zu:
 
         .. code:: java
-
+            :number-lines:
+            :class: copy-to-clipboard
 
             for (int i = 0; i < daysPerMonth.length; i++) {
-                println("daysPerMonth[" + i + "] = " + daysPerMonth[i]);
+                IO.println("daysPerMonth[" + i + "] = " + daysPerMonth[i]);
             }
 
         .. container:: incremental
@@ -228,10 +239,11 @@ Auf einzelne Elemente eines Feldes kann mittels eines Indexes und dem Feldzugrif
             Bzw. mit einer :java:`for-each`-Schleife, wenn der Index nicht benötigt wird:
 
             .. code:: java
-
+                :number-lines:
+                :class: copy-to-clipboard
 
                 for (int days : daysPerMonth) {
-                    println("days = " + days);
+                    IO.println("days = " + days);
                 }
 
 .. supplemental::
@@ -253,6 +265,7 @@ Auf einzelne Elemente eines Feldes kann mittels eines Indexes und dem Feldzugrif
     Nehmen Sie Ihr Programm zur Berechnung des Wochentags und ersetzen Sie die Logik zur Bestimmung des Namens eines Wochentags durch ein Feld mit den Namen der Wochentage:
 
     .. code:: java
+        :number-lines:
 
         String[] dayInWeekName = ...
 
@@ -281,6 +294,7 @@ Eine Variable mit einem Feld-Datentyp speichert eine (virtuelle) Speicheradresse
 .. container:: incremental
 
     .. code:: java
+        :number-lines:
         :class:  copy-to-clipboard
 
         int[] a = {1, 2, 3};
@@ -288,7 +302,7 @@ Eine Variable mit einem Feld-Datentyp speichert eine (virtuelle) Speicheradresse
                      // "b" ist nur eine Kopie des Zeigers auf das Feld.
                      // "b" ist keine Kopie des Feldes "a".
         b[0] = 4;
-        println(a[0]);
+        IO.println(a[0]);
         // ==> 4
 
 
@@ -298,10 +312,11 @@ Visualisierung von Referenzen auf Felder
 ------------------------------------------------
 
 .. code:: java
-        :class:  copy-to-clipboard
+    :number-lines:
+    :class:  copy-to-clipboard
 
-        int[] a = { 1, 2, 3, 4, 5, 6, 7 };
-        int[] b = a;
+    int[] a = { 1, 2, 3, 4, 5, 6, 7 };
+    int[] b = a;
 
 .. image:: images/Arrays.svg
     :alt: Visualisierung von Referenzen auf Felder
@@ -339,15 +354,16 @@ Der Vergleich der Inhalte muss über den Vergleich der einzelnen Feldelemente er
 .. container:: incremental
 
     .. code:: java
+        :number-lines:
         :class:  copy-to-clipboard
 
         int[] a = {1, 2, 3};
         int[] b = {1, 2, 3};
         int[] c = a;
 
-        println(a == b); // ==> false
-        println(a == c); // ==> true
-        println(Arrays.equals(a, b)); // ==> true
+        IO.println(a == b); // ==> false
+        IO.println(a == c); // ==> true
+        IO.println(Arrays.equals(a, b)); // ==> true
 
 
 .. supplemental::
@@ -363,6 +379,7 @@ Eine Kopie der Inhalte muss über das Erzeugen eines neuen Feldes und Kopie der 
 Beispiel mit :java:`<Array>.clone()`:
 
 .. code:: java
+    :number-lines:
     :class:  copy-to-clipboard
 
     jshell> final var clone = daysPerMonth.clone();
@@ -398,6 +415,7 @@ Die Parameter und der Rückgabewert einer Methode können vom Typ eines Feldes s
     .. card::
 
         .. code:: java
+            :number-lines:
             :class: copy-to-clipboard
 
             void incrementAll(int[] a) {
@@ -430,6 +448,7 @@ Die Parameter und der Rückgabewert einer Methode können vom Typ eines Feldes s
     Die Methode soll die folgende Signatur haben und auch alle Sonderfälle abdecken!
 
     .. code:: java
+        :number-lines:
         :class: copy-to-clipboard smaller
 
         boolean startsWith(int[] a, int[] b);
@@ -438,6 +457,7 @@ Die Parameter und der Rückgabewert einer Methode können vom Typ eines Feldes s
         :pwd: ArraysVergleichenAberSicher
 
         .. code:: java
+            :number-lines:
             :class:  copy-to-clipboard
 
             boolean startsWith(int[] a, int[] b) {
@@ -471,11 +491,12 @@ Die Parameter und der Rückgabewert einer Methode können vom Typ eines Feldes s
         :pwd: Mein Skalarprodukt
 
         .. code:: java
+            :number-lines:
             :class: copy-to-clipboard
 
             int scalarProduct(int[] a, int[] b) {
                 assert a != null; // requires "enableassertions" option
-                assert b != null; // e. g., "jshell --enable-preview -R -ea"
+                assert b != null; // e. g., "jshell -R -ea"
                 assert a.length == b.length;
                 int result = 0;
                 for (int i = 0; i < a.length; i++) {
@@ -510,22 +531,24 @@ Die Parameter und der Rückgabewert einer Methode können vom Typ eines Feldes s
 
         .. card::
 
-            Beispielinteraktion:
+            .. example::
 
-            .. container:: fade-out
+              .. container:: fade-out obsolete
 
                 Bisher:
 
                 .. code:: zsh
+                    :number-lines:
 
-                    $ java --enable-preview BMIBerechnen.java
+                    $ java BMIBerechnen.java
                     Bitte geben Sie Ihr Gewicht in Kilogramm und Ihre Größe in Mete an.
 
-            Neu:
+              Neu:
 
-            .. code:: zsh
+              .. code:: zsh
+                :number-lines:
 
-                $ java --enable-preview BMI.java 83.1 1.89
+                $ java BMI.java 83.1 1.89
                 Ihr BMI beträgt: 23.26362643822961 - Normalgewicht
 
 
@@ -562,7 +585,8 @@ Multidimensional Arrays
         Beispiel: Matrix für Umsätze pro Jahr (1. Dim.) und Monat (2. Dim.) bei 10 Jahren.
 
         .. code:: java
-            :class: font-size-80 copy-to-clipboard
+            :number-lines:
+            :class: copy-to-clipboard
 
             int[][] sales = new int[10][12];
 
@@ -605,6 +629,8 @@ Multidimensional Arrays
         - direkte Initialisierung eines mehrdimensionalen Feldes:
 
           .. code:: java
+            :number-lines:
+            :class: copy-to-clipboard
 
             int [][] a = {{1,2,3},{4,5,6,7}};
             // a ==> a ==> int[2][] { int[3] { 1, 2, 3 }, int[3] { 4, 5, 6, 7 } }
@@ -614,7 +640,8 @@ Multidimensional Arrays
           (Die Größe der einzelnen Dimensionen muss angegeben werden, kann unterschiedlich sein und kann auch Schritt-für-Schritt erfolgen.)
 
           .. code:: java
-
+            :number-lines:
+            :class: copy-to-clipboard
 
             int [][] a = new int[2][];
             a[0] = new int[3];
@@ -675,6 +702,7 @@ Multidimensional Arrays
 
     .. code:: java
         :class:  copy-to-clipboard
+        :number-lines:
 
         void main() {
 
@@ -703,23 +731,20 @@ Multidimensional Arrays
 .. exercise:: Sattelpunkte
 
     Schreiben Sie eine Methode :java:`printSaddlePoints` (:java:`void printSaddlePoints(int [][] m)`), die die Sattelpunkte einer :math:`n \times m` Matrix von :java:`int` Werten berechnet und auf der Konsole ausgibt.
-
     Die Sattelpunkte einer Matrix sind die Elemente der Matrix (n x m), die in Ihrer Zeile am kleinsten sind und in der Spalte am größten.
 
-    .. container:: smaller box-shadow rounded-corners padding-1em
+    .. example::
 
-        .. container:: two-columns
+        .. grid:: 
 
-            .. container:: column no-separator
+            .. cell::
 
-                Beispiel:
 
                 Die rechte Matrize hat zwei Sattelpunkte bei :math:`(0,1)` und :math:`(0,2)` jeweils mit dem Wert :math:`0`.
 
-            .. container:: column
+            .. cell::
 
                 .. math::
-
 
                     \left( \begin{matrix}
                         1 & 0 & 0 \\
@@ -730,7 +755,7 @@ Multidimensional Arrays
     .. hint::
         :class:  incremental
 
-        Verwenden Sie Ihre Methoden zum Einlesen und zur Ausgabe von Matrizen aus der vorherigen Übung weiter.
+        Verwenden Sie Ihre Methoden zum Einlesen und Ausgeben von Matrizen von vorher.
 
     .. solution::
         :pwd: SattelpunkteSindAuchNichtSchwer!
@@ -757,12 +782,13 @@ Multidimensional Arrays
 
     Lesen Sie ein Array von der Kommandozeile ein und sortieren Sie es numerisch. D. h. wandeln Sie die Zahlen in echte Zahlen um und sortieren Sie danach. Danach geben Sie das sortierte Array aus. Schreiben Sie ein Java Script.
 
-    Beispielinteraktion:
+    .. example::
 
-    .. code:: java
+        .. code:: java
+            :number-lines:
 
-        $ ./sort 3 2 1 4 5 6 7 8 9 10
-        [1, 2, 3, 4, 5, 6, 7, 8, 9, 10 ]
+            $ ./sort 3 2 1 4 5 6 7 8 9 10
+            [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 ]
 
     Studieren Sie die verfügbaren Methoden der Klasse :java:`Arrays` (https://docs.oracle.com/en/java/javase/23/docs/api/java.base/java/util/Arrays.html). Suchen Sie nach einer Methode zum sortieren von Arrays mit dem Datentyp :java:`int`. Suchen Sie weiterhin nach einer Methode, um das Array „vernünftig“ auszugeben.
 
@@ -811,6 +837,7 @@ Methoden mit einer variablen Anzahl von Parametern (:java:`varargs`)
         .. rubric:: Beispiel
 
         .. code:: java
+            :number-lines:
             :class:  copy-to-clipboard
 
             void printAll(String separator, String... strings) {
@@ -847,12 +874,14 @@ Methoden mit einer variablen Anzahl von Parametern (:java:`varargs`)
                 ⇒ :peripheral:`D. h. die Methoden können auch mit einem Array aufgerufen werden und sind bezüglich der Signatur nicht unterscheidbar. Demzufolge ist es auch nicht möglich zwei entsprechende Methoden zu definieren:`
 
                 .. code:: java
+                    :number-lines:
                     :class:  copy-to-clipboard
 
                     double sum(double... values) { ... }
 
                 .. code:: java
-                    :class: obsolete far-smaller
+                    :number-lines:
+                    :class: obsolete 
 
                     double sum(double[] values) { ... } // nicht möglich
 
@@ -861,9 +890,10 @@ Methoden mit einer variablen Anzahl von Parametern (:java:`varargs`)
                 ⇒ Die Methode kann mit :java:`null` als Wert aufgerufen werden. In diesem Fall wird kein Array erzeugt sondern :java:`null` übergeben.
 
                 .. code:: java
-                    :class:  far-smaller
+                    :number-lines:
+                    :class: copy-to-clipboard
 
-                    println(sum(null)); // ==> ???
+                    IO.println(sum(null)); // ==> ???
 
 
 
@@ -878,9 +908,10 @@ Methoden mit einer variablen Anzahl von Parametern (:java:`varargs`)
 
     Dokumentieren Sie die Methode ausführlich. Achten sie darauf alle Sonderfälle abzudecken.
 
-    Beispielinteraktion:
+    .. example::
 
-    .. code:: java
+      .. code:: java
+        :number-lines:
         :class:  copy-to-clipboard
 
         jshell> var r = join(new int[]{1,2}, new int[]{3,4})

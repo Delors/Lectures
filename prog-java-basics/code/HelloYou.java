@@ -1,3 +1,3 @@
 void main() {
-    println("Hello " + readln("What is your name? "));
+    IO.println("Hello " + IO.readln("What is your name? "));
 }

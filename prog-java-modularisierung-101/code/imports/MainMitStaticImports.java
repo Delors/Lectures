@@ -8,15 +8,15 @@ void main(String[] args) {
         switch (args[i]) {
             case "fibonacci" -> {
                 final var n = Integer.parseInt(args[i + 1]);
-                println("fiboncci(" + n + ") = " + fibonacci(n));
+                IO.println("fiboncci(" + n + ") = " + fibonacci(n));
             }
             case "isPrim" -> {
                 final var n = Integer.parseInt(args[i + 1]);
-                println("isPrim(" + n + ") = " + isPrim(n));
+                IO.println("isPrim(" + n + ") = " + isPrim(n));
             }
             case "cbrt" -> {
                 final var n = Double.parseDouble(args[i + 1]);
-                println(n + "^⅓ = " + cbrt(n));
+                IO.println(n + "^⅓ = " + cbrt(n));
             }
         }
     }

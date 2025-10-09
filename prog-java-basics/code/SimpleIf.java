@@ -1,10 +1,10 @@
 void main() {
-    var age = Integer.parseInt(readln("Wie alt sind Sie?"));
+    var age = Integer.parseInt(IO.readln("Wie alt sind Sie?"));
     boolean adult = false;
 
     if (age >= 18) { // if-Anweisung
         adult = true;
     }
 
-    println("adult=" + adult);
+    IO.println("adult=" + adult);
 }

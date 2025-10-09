@@ -16,7 +16,7 @@ Einführung in die Programmierung
 
 :Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
 :Kontakt: michael.eichberg@dhbw.de, Raum 149B
-:Version: 1.0.2
+:Version: 1.0.3
 
 .. supplemental::
 
@@ -93,6 +93,14 @@ Auswirkungen von generativer KI
 
     -- `August 2024, Heise <https://www.heise.de/news/Unternehmensberater-glauben-weiterhin-an-die-GenAI-Revolution-in-der-IT-Branche-9821979.html>`__
 
+.. supplemental::
+
+    .. rubric:: Citizen Developer
+
+    Ein Citizen Developer ist kein professioneller Programmierer im engeren Sinn. D. h., niemand der Code in einer echten Programmiersprache erstellt.
+    Es ist eine Person, die technisches Verständnis besitzt, um spezfische Anwendungen - insbesondere Geschäftsanwendungen - in einem wohl-definierten Umfeld selbst zu erstellen.
+    Dazu setzt er *mächtige* Werkzeuge ein, die Ihm die Arbeit der Codeerstellung abnehmen bzw. diese verstecken.
+
 
 
 Der wirkliche Effekt von AI Coding Assistenten
@@ -116,14 +124,18 @@ AI Assistenten und Grundlagen der Programmierung
 
 .. class:: incremental-list
 
-- Verwenden Sie keine AI Assistenten, um die Konzepte einer Programmiersprache oder Bibliothek zu erlernen.
+- Verwenden Sie keine AI Assistenten, um sich die Aufgaben lösen zu lassen. 
+
+  Sie lernen dadurch effektiv nichts!
 - Die Aufgaben werden immer nur Dinge verlangen, die gelehrt wurden.
 - In der Klausur/Prüfung steht Ihnen auch kein AI Assistent zur Verfügung.
 
 .. attention:: 
     :class: incremental
 
-    Später müssen Sie in der Lage sein, den Code, der von Assistenten generiert wurde, zu verstehen und zu validieren. Ohne ein tiefgreifendes Verständnis ist dies nicht möglich.
+    Später müssen Sie in der Lage sein, den Code, der von Assistenten generiert wurde, zu verstehen und zu validieren. 
+    
+    Ohne ein tiefgreifendes Verständnis ist dies nicht möglich.
 
 
 
@@ -135,7 +147,6 @@ Programmieren bezeichnet das Formulieren eines Lösungskonzeptes (Algorithmus) i
 .. image:: images/programmierung.svg
     :align: center
     :class: incremental
-
 
 .. hint::
     :class: incremental
@@ -238,12 +249,12 @@ Klassifizierung von Algorithmen
 -----------------------------------
 
 :Entscheidungsprobleme:
-    Für eine Eingabe eine bestimmte Eigenschaft feststellen
+    Für eine Eingabe eine bestimmte Eigenschaft feststellen.
 
     :Beispiel: Ist eine gegebene Zahl eine Primzahl?
 
 :Aufzählungsprobleme:
-    Alle Daten mit einer gegeben Eigenschaft aufzuzählen
+    Alle Daten mit einer gegeben Eigenschaft aufzuzählen.
 
     :Beispiel: Zähle alle Primzahlen kleiner als 100 auf!
 
@@ -259,16 +270,12 @@ Beispiel: Berechnung der Fakultät (rekursiv)
 
 .. grid::
 
-    .. cell:: width-50
+    .. cell:: width-50 dd-margin-left-4em
 
         .. rubric:: Mathematisch
 
-        .. math::
-            \begin{aligned}
-            \text{Input} &:  \text{natürliche Zahl (inkl. 0)} \\
-            \text{Output} &:  \text{natürliche Zahl}
-            \end{aligned}
-
+        :Input:  natürliche Zahl (inkl. 0)
+        :Output: natürliche Zahl
 
         .. container:: incremental
         
@@ -353,15 +360,11 @@ Beispiel: Berechnung bzw. Approximation von :math:`e`
 
 .. grid::
 
-    .. cell::
+    .. cell:: dd-margin-left-4em
 
         .. rubric:: Mathematisch (exakt)
 
-        .. math::
-            \begin{aligned}
-            \text{Output} &:  \text{reelle Zahl}
-            \end{aligned}
-
+        :Output: reelle Zahl
 
         .. container:: incremental
         
@@ -420,9 +423,11 @@ Beispiel: Berechnung bzw. Approximation von :math:`e`
 
 - Schreiben Sie in natürlicher Sprache einen Algorithmus, der eine beliebige natürliche Zahl testet ob diese eine Primzahl ist.
 
-    Achten Sie darauf, dass der Algorithmus die vorher diskutierten Eigenschaften selbiger erfüllt.
+  :blue:`Achten Sie darauf, dass der Algorithmus die vorher diskutierten Eigenschaften erfüllt.`
 
-- Beschreiben Sie die Komplexität Ihres Algorithmus.
+- Beschreiben Sie die Komplexität Ihres Algorithmus. D
+
+  :blue:`D. h. wieviel Ressourcen(z. B. Rechenschritte) sind in Abhängigkeit von der Eingabe notwendig?`
 
 
 
@@ -448,6 +453,8 @@ Beispiel: Berechnung bzw. Approximation von :math:`e`
 
 Einsatzbereiche verschiedener Programmiersprachen
 ----------------------------------------------------
+
+.. class:: incremental-list
 
 - Systemprogrammierung
 - Anwendungsprogrammierung / Web-Entwicklung
@@ -526,10 +533,11 @@ Formale Sprachen: Beispiel in einer *EBNF* Variante
 .. code:: ebnf
     :number-lines:
 
-    Satz = Subjekt Prädikat Objekt "."
+    Satz = Subjekt WS Prädikat WS Objekt "."
     Subjekt = "Tim" | "Sie"
     Prädikat = "geht" | "fährt" | "schwimmt" | "fliegt"
     Objekt = "nach Hause" | "in die Schule" | "auf den Mond"
+    WS = " "
 
 .. supplemental::
 
@@ -559,9 +567,10 @@ Die EBNF dient der Beschreibung kontext-freier Grammatiken.
 
 .. grid::
 
-    .. cell:: width-50
+    .. cell:: width-60
 
         .. csv-table::
+            :class: highlight-row-on-hover
             :header: Verwendung, Notation, Bedeutung
 
             Definition, =
@@ -574,7 +583,7 @@ Die EBNF dient der Beschreibung kontext-freier Grammatiken.
             Kommentar, \(* ... \*\)
             Terminalsymbol, \"Terminal\"
 
-    .. cell:: incremental
+    .. cell:: width-40 incremental
 
         .. rubric:: Beispiel
 
@@ -620,7 +629,7 @@ Die EBNF dient der Beschreibung kontext-freier Grammatiken.
         BinaryDigitsAndUnderscores = BinaryDigitOrUnderscore {BinaryDigitOrUnderscore}
         BinaryDigitOrUnderscore = BinaryDigit | "_"
 
-    Welche der folgenden Zahlen sind gültige Binärzahlen in Java?
+    Welche der folgenden Zahlen sind gültige Binärzahlen in Java? Falls nicht, warum?
 
     .. code:: java
 
@@ -663,14 +672,14 @@ Die EBNF dient der Beschreibung kontext-freier Grammatiken.
 
     Erweitern Sie die EBNF für mathematische Ausdrücke, um die Möglichkeit Zahlen beliebiger Länge anzugeben und auch Ausdrücke (mathematisch korrekt) zu klammern. D. h. Ihre erweiterte Grammatik soll folgende Ausdrücke zulassen:
 
-    .. math::
+    ``12+25``
 
-        12+25\\
-        13-4-(4+5)
+    ``13-4-(4+5)``
 
     .. rubric:: Bonus
 
-    Erweitern Sie die EBNF so, dass auch einfache Fließkommazahlen erlaubt sind (z. B. ``1,2`` oder ``0,999``). Achten Sie darauf, dass keine ungültigen Zahlen wie ``1,`` oder ``1,2,3`` erlaubt sind.
+    Erweitern Sie die EBNF so, dass auch einfache Fließkommazahlen erlaubt sind (z. B. „``1,2``“ oder „``0,999``“). 
+    Achten Sie darauf, dass keine ungültigen Zahlen wie „``1,``“ oder „``1,2,3``“ erlaubt sind.
 
     .. solution::
         :pwd: ebnf_fuer_ausdruck
@@ -711,7 +720,7 @@ Voraussetzungen
 
 Zu installieren (für den Anfang):
 
-- (mind.) Java 25 JDK (Java Development Kit)
+- Java 25 JDK (Java Development Kit)
 
   https://adoptium.net/en-GB/temurin/releases/?version=25
 
@@ -723,3 +732,7 @@ Zu installieren (für den Anfang):
 - Visual Studio Code :peripheral:`inkl. Java Tools oder Eclipse Theia oder IntelliJ IDEA oder Eclipse`
 
   Ich verwende Visual Studio Code mit dem Java Extension Pack.
+
+  .. attention:: 
+    
+    Deaktivieren bzw. deinstallieren Sie ggf. jegliche KI Assistenten, damit Ihnen die Aufgaben nicht direkt gelöst werden!

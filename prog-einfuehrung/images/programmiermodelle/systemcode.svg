@@ -36,7 +36,6 @@
       </g>
     </marker>
   </defs>
-  <metadata> Produced by OmniGraffle 8.0\n2024-10-24 13:25:07 +0000</metadata>
   <g
         id="Canvas_1"
         stroke-dasharray="none"
@@ -44,10 +43,9 @@
         fill-opacity="1"
         stroke-opacity="1"
         stroke="none"
+      font-family="Noto Sans Display"
     >
-    <title>Canvas 1</title>
-    <g id="Canvas_1_Systemcode">
-      <title>Systemcode</title>
+    <g id="Systemcode">
       <g id="Graphic_125">
         <path
                     d="M 510.2578 761.0234 L 639.2578 761.0234 C 643.6761 761.0234 647.2578 764.6052 647.2578 769.0234 L 647.2578 782.0234 C 647.2578 786.4417 643.6761 790.0234 639.2578 790.0234 L 510.2578 790.0234 C 505.83953 790.0234 502.2578 786.4417 502.2578 782.0234 L 502.2578 769.0234 C 502.2578 764.6052 505.83953 761.0234 510.2578 761.0234 Z"
@@ -65,6 +63,38 @@
                         y="18"
                         xml:space="preserve"
                     >System(naher) Code</tspan>
+        </text>
+      </g>
+      <g id="Graphic_61">
+        <text transform="translate(557.7578 354.54688)" fill="black">
+          <tspan
+                        font-size="16"
+                        font-weight="400"
+                        fill="black"
+                        x="0"
+                        y="15"
+                    >c</tspan>
+                    <tspan
+                    font-size="16"
+                    font-weight="400"
+                    fill="black"
+                    x="0"
+                    y="34"
+                >c++</tspan>                    
+                <tspan
+                font-size="16"
+                font-weight="400"
+                fill="black"
+                x="0"
+                y="53"
+            >Rust</tspan>
+            <tspan
+                        font-size="16"
+                        font-weight="400"
+                        fill="black"
+                        x="0"
+                        y="72"
+                    >...</tspan>
         </text>
       </g>
       <g id="Graphic_114">

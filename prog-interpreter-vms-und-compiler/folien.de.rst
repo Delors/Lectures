@@ -47,7 +47,7 @@ Von Compilern, Interpretern und virtuellen Maschinen
 
 :Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
 :Kontakt: michael.eichberg@dhbw.de, Raum 149B
-:Version: 1.0.1
+:Version: 1.0.2
 
 .. supplemental::
 
@@ -109,29 +109,32 @@ Compiler
 
         .. raw:: html
 
-            <div style="width:77ch; height:3lh;">
-            <svg viewBox="0 0 70 5" font-size="1" version="1.1" xmlns="http://www.w3.org/2000/svg">
+            <div style="width:1846px; height:142px;">
+            <svg viewBox="0 0 65 5" 
+                font-size="1" 
+                version="1.1" 
+                xmlns="http://www.w3.org/2000/svg">
 
                 <!-- Quellprogramm P1 -->
-                <rect x="0.1" y="0.1" rx="1" ry="1" width="16" height="2.5" />
-                <text x="1" y="1.1">Programm in</text>
-                <text x="1" y="2.2">der Sprache A</text>
-                <text class="subtext" x="1" y="4">Quellprogramm P1</text>
+                <rect x="0.1" y="0.1" rx=".5" ry=".5" width="16" height="2.75" />
+                <text x="1" y="1.2">Programm in</text>
+                <text x="1" y="2.5">der Sprache A</text>
+                <text class="subtext" x="1" y="4.5">Quellprogramm P1</text>
 
                 <g class="incremental">
                 <!-- Übersetzer -->
                 <line x1="16" y1="1.25" x2="20" y2="1.25" marker-end="url(#arrow)" />
-                <rect x="20" y="0.5" rx="1" ry="1" width="12" height="1.5" />
+                <rect x="20" y="0.5" rx=".5" ry=".5" width="12" height="1.5" />
                 <text x="21.35" y="1.7">Übersetzer</text>
                 </g>
 
                 <g class="incremental">
                 <!-- Zielprogramm P2 -->
                 <line x1="32" y1="1.25" x2="36" y2="1.25" marker-end="url(#arrow)" />
-                <rect x="36" y="0.1" width="16" rx="1" ry="1" height="2.5" />
-                <text x="37" y="1.1">Programm in</text>
-                <text x="37" y="2.2">der Sprache B</text>
-                <text class="subtext" x="37" y="4">Zielprogramm P2</text>
+                <rect x="36" y="0.1" width="16" rx="0.5" ry=".5" height="2.75" />
+                <text x="37" y="1.2">Programm in</text>
+                <text x="37" y="2.5">der Sprache B</text>
+                <text class="subtext" x="37" y="4.5">Zielprogramm P2</text>
                 </g>
 
                 <g class="incremental">
@@ -455,6 +458,7 @@ Java-Übersetzung
             .. include:: code/HelloWorld.java
                 :code: java
                 :number-lines:
+                :class: copy-to-clipboard
 
         .. card::
 
@@ -476,6 +480,7 @@ Java-Übersetzung
             .. include:: code/de/dhbw/HelloWorld.java
                 :code: java
                 :number-lines:
+                :class: copy-to-clipboard
 
             .. [#] :peripheral:`Die Datei HelloWorld.java muss im Verzeichnis de/dhbw liegen!`
 

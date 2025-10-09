@@ -17,8 +17,7 @@ Einführung in die Programmierung mit Java - Wiederholung
 
 :Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
 :Kontakt: michael.eichberg@dhbw.de, Raum 149B
-:Version: 1.1.1
-
+:Version: 1.2
 
 
 
@@ -26,6 +25,7 @@ Einführung in die Programmierung mit Java - Wiederholung
    
 Grundlagen
 ------------
+
 
 
 .. class:: exercises
@@ -340,7 +340,7 @@ Kontrollfragen
                     break;
                 }
             }
-            System.out.println(i);
+            IO.println(i);
 
          .. solution::
             :pwd: i ist 0
@@ -361,7 +361,7 @@ Kontrollfragen
                     break;
                 }
             }
-            System.out.println(i);
+            IO.println(i);
 
          .. solution::
             :pwd: i==5
@@ -380,7 +380,7 @@ Kontrollfragen
 
             int i = 10;
             for (; i < 10; i++) {
-               System.out.println(i);
+               IO.println(i);
             }
 
          .. solution::
@@ -401,7 +401,7 @@ Kontrollfragen
                 if (i % 2 == 0) {
                     continue;
                 }
-                System.out.println(i);
+                IO.println(i);
             }
 
          .. solution::
@@ -421,14 +421,14 @@ Kontrollfragen
             outer : for (; i < 10; i++) {
                 if (i % 2 == 0)
                     continue;
-                System.out.println(i);
+                IO.println(i);
                 for (int j = 1; j < 10; j++) {
                     if (j % 3 == 0)
                         continue outer;
-                    System.out.println(i + " " + j);
+                    IO.println(i + " " + j);
                 }
             }
-            System.out.println(i);
+            IO.println(i);
 
          .. solution::
             :pwd: 1__1_1-und_so_weiter
@@ -466,11 +466,11 @@ Kontrollfragen
                  i = 10;
                  continue outer;
                }
-               System.out.println(i);
+               IO.println(i);
                for (int j = 1; j < 10; j++) {
                   if (j % 3 != i % 5)
                      break;
-                  System.out.println(i + " " + j);
+                  IO.println(i + " " + j);
             }  }
 
          .. solution::
@@ -556,7 +556,7 @@ Kontrollfragen
                         @tailrec def f(n: Int,sum: Int): Int = { if(n == 0) sum else f(n-1,n+sum); }
 
                         @main def main(): Unit = {
-                                 println(f(100_000,0));
+                              println(f(100_000,0));
                         }
                   }
 
@@ -676,17 +676,17 @@ Kontrollfragen
 
             int width = 20;
             int height = 10;
-            for (int i = 0; i < width; i++) print("-");
-            println("");
+            for (int i = 0; i < width; i++) IO.print("-");
+            IO.println("");
             for (int i = 0; i < height - 2; i++) {
-                  print("|");
-                  for (int j = 0; j < width - 2; j++) print(" ");
-                  println("|");
+                  IO.print("|");
+                  for (int j = 0; j < width - 2; j++) IO.print(" ");
+                  IO.println("|");
             }
             for (int i = 0; i < width; i++) {
-                  print("-");
+                  IO.print("-");
             }
-            println("");
+            IO.println("");
 
          .. solution::
             :pwd: ein Rechteck

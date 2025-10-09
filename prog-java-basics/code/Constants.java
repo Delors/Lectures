@@ -8,7 +8,7 @@ void main() {
     final var WOHNORT = "Schönau";
     final var GESCHLECHT = 'd';
 
-    println(NAME + "(" + GESCHLECHT + "), " + " Jahre, aus " + WOHNORT);
+    IO.println(NAME + "(" + GESCHLECHT + "), " + " Jahre, aus " + WOHNORT);
 
     // name = "Berta"; // error: cannot assign a value to final variable name
 }

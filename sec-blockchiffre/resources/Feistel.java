@@ -54,7 +54,7 @@ byte[] encrypt(byte[] data) {
 void main() throws Exception {
     var data = "hello world!!!!!".getBytes("utf-8");
 
-    println("Encryption");
+    IO.println("Encryption");
     print("    ");
     printAsHex(data);
     data = encrypt(data);
@@ -64,7 +64,7 @@ void main() throws Exception {
     // So far we have no key schedule so we can simply
     // call the encrypt function again to decrypt the
     // message!
-    println("Decryption");
+    IO.println("Decryption");
     data = encrypt(data);
     print("    ");
     printAsHex(data);

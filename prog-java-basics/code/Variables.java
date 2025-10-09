@@ -12,5 +12,5 @@ void main() {
     var geschlecht = 'd';
 
     alter = 25; // späte Initialisierung
-    println(name + "(" + geschlecht + "), " + alter + " Jahre, aus " + wohnort);
+    IO.println(name + "(" + geschlecht + "), " + alter + " Jahre, aus " + wohnort);
 }

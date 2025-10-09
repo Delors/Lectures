@@ -1,8 +1,8 @@
 void main() {
-    final var n = Integer.parseInt(readln("Geben Sie eine ganze positive Zahl ein? "));
+    final var n = Integer.parseInt(IO.readln("Geben Sie eine ganze positive Zahl ein? "));
  
     if (n < 2) {
-        println("Keine Primzahl");
+        IO.println("Keine Primzahl");
         return;
     }
 

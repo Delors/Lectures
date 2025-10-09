@@ -1,4 +1,4 @@
-#!/usr/bin/java --source 23 --enable-preview -ea
+#!/usr/bin/java --source 25 -ea
 
 void main(String []args) {
     int[] is = new int[args.length];
@@ -6,5 +6,5 @@ void main(String []args) {
         is[i] = Integer.parseInt(args[i]);
     }
     Arrays.sort(is);
-    println(Arrays.toString(is));
+    IO.println(Arrays.toString(is));
 }

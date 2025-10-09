@@ -120,25 +120,25 @@ class Number extends Term {
 void main(String[] args) {
     try {
         final var t1 = new Plus(new Number(1), new Number(2));
-        println(t1.equal(null));
-        println(t1.equal(new Plus(new Number(1), new Number(2))));
-        println(
+        IO.println(t1.equal(null));
+        IO.println(t1.equal(new Plus(new Number(1), new Number(2))));
+        IO.println(
                 new Plus(new Number(2), new Number(1))
                         .equal(
                                 new Plus(new Number(1), new Number(2))));
 
-        println(new Division(new Number(1), new Division(new Number(2), new Number(1))));
-        println(new Division(
+        IO.println(new Division(new Number(1), new Division(new Number(2), new Number(1))));
+        IO.println(new Division(
             new Number(1), 
             new Plus(
                     new Plus(new Number(1), new Number(2)), 
                     new Number(1))));
 
         Term term1 = new Plus(new Number(1), new Division(new Number(2), new Number(1)));
-        println(term1 + " = " + term1.evaluate());
+        IO.println(term1 + " = " + term1.evaluate());
         Term term2 = new Plus(new Number(1), new Division(new Number(2), new Number(0)));
-        println(term2 + " = " + term2.evaluate());
+        IO.println(term2 + " = " + term2.evaluate());
     } catch (MathException e) {
-        println(e.getMessage());
+        IO.println(e.getMessage());
     }
 }

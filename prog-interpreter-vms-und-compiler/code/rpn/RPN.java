@@ -6,14 +6,14 @@ public class RPN {
 
     static void printAll(Stack<String> stack) {
         for (int i = 0; i < stack.size(); i++) {
-            System.out.print(stack.get(i) + " ");
+            IO.print(stack.get(i) + " ");
         }
-        System.out.println();
+        IO.println();
     }
 
     public static void main(String[] args) {
         if (args.length == 0) {
-            System.out.println("Usage: java RPN <expr>");
+            IO.println("Usage: java RPN <expr>");
             return;
         }
         // Main logic
@@ -34,7 +34,7 @@ public class RPN {
                     ops.push(Double.parseDouble(arg));
             }
         }
-        System.out.println(infix.peek() + " = " + ops.peek());
+        IO.println(infix.peek() + " = " + ops.peek());
 
         printAll(infix);
     }
