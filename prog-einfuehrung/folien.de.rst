@@ -16,7 +16,7 @@ Einführung in die Programmierung
 
 :Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
 :Kontakt: michael.eichberg@dhbw.de, Raum 149B
-:Version: 1.0.3
+:Version: 1.1.1
 
 .. supplemental::
 
@@ -152,6 +152,19 @@ Programmieren bezeichnet das Formulieren eines Lösungskonzeptes (Algorithmus) i
     :class: incremental
 
     Ohne Programmierkenntnisse ist es unmöglich zu beurteilen, wie komplex eine Aufgabenstellung ist.
+
+
+
+Grundlagen der Programmierung\ [#]_
+--------------------------------------
+
+.. class:: incremental-list dhbw
+
+#. Eine präzise Spezifikation von dem was wir wollen/benötigen.
+#. Die Verifikation, dass wir bekommen haben, was wir wollen.
+#. Die Fähigkeit in kleinen Schritten Fortschritt zu machen.
+
+.. [#] `Dave Farley, Modern Software Engineering, 9. Oktober 2025 <https://www.youtube.com/watch?v=CoGO6s7bS3A>`__
 
 
 
@@ -425,7 +438,7 @@ Beispiel: Berechnung bzw. Approximation von :math:`e`
 
   :blue:`Achten Sie darauf, dass der Algorithmus die vorher diskutierten Eigenschaften erfüllt.`
 
-- Beschreiben Sie die Komplexität Ihres Algorithmus. D
+- Beschreiben Sie die Komplexität Ihres Algorithmus.
 
   :blue:`D. h. wieviel Ressourcen(z. B. Rechenschritte) sind in Abhängigkeit von der Eingabe notwendig?`
 
@@ -728,7 +741,7 @@ Zu installieren (für den Anfang):
 
   https://www.azul.com/downloads/?package=jdk#zulu
 
-  (Java 22 oder älter ist nicht ausreichend.)
+  (Java 24 oder älter ist nicht ausreichend.)
 - Visual Studio Code :peripheral:`inkl. Java Tools oder Eclipse Theia oder IntelliJ IDEA oder Eclipse`
 
   Ich verwende Visual Studio Code mit dem Java Extension Pack.
