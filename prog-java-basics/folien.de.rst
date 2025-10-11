@@ -1070,8 +1070,9 @@ Zweistellige Arithmetische Operatoren
 
         .. include:: code/ArithmetischeOperatoren.jshell.java
             :code: java
+            :class: copy-to-clipboard
             :number-lines:
-            :start-line: 2
+            :start-line: 1
             :end-before: // Einstellige Operatoren
 
         .. exercise:: Zweistellige Operatoren - welche Werte werden ausgegeben?
@@ -1112,7 +1113,8 @@ Einstellige Arithmetische Operatoren
         .. include:: code/ArithmetischeOperatoren.jshell.java
             :code: java
             :number-lines:
-            :start-line: 12
+            :class: copy-to-clipboard
+            :start-line: 11
 
         .. exercise:: Einstellige Operatoren - welche Werte werden ausgegeben?
 
@@ -1149,7 +1151,8 @@ Zweistellige Vergleichsoperatoren
         .. include:: code/Vergleichsoperatoren.jshell.java
             :code: java
             :number-lines:
-            :start-line: 2
+            :class: copy-to-clipboard
+            :start-line: 1
 
         .. exercise:: Zweistellige Operatoren - welche Werte werden ausgegeben?
 
@@ -1206,7 +1209,7 @@ Ein- und zweistellige logische Operatoren
         .. include:: code/LogischeOperatoren.jshell.java
             :code: java
             :number-lines:
-            :start-line: 2
+            :class: copy-to-clipboard
 
         .. exercise:: Logische Operatoren - welche Werte werden ausgegeben?
 
