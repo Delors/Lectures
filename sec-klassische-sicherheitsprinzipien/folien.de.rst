@@ -79,7 +79,8 @@ Klassische Sicherheitsprinzipien
 
                     *Privilege Separation* (für Programme) sollte nicht mit dem hier beschriebenen Prinzip verwechselt werden. *Privilege Separation* liegt zum Beispiel dann vor, wenn ein Programm in zwei Teile aufgeteilt ist und ein Teil - zum Beispiel zum Zugriff auf Betriebssystemressourcen wie Sockets oder bestimmte Dateien - erhöhte Rechte benötigt als der Rest vom Programm. In diesem Fall erfolgt dann der Austausch zwischen den beiden Teilen über eine wohldefinierte, minimale Schnittstelle, die die Rechte des ersten Teils auf das notwendige Minimum beschränkt.
 
-    :Principle of Least Common Mechanism: Die Sicherheitsmechanismen sollten über Nutzer (hier insbesondere Programme, die andere Programme nutzen) hinweg möglichst wenig gemeinsam haben.
+    :Principle of Least Common Mechanism: Die Sicherheitsmechanismen sollten über Nutzer (
+         insbesondere aber auch Programme, die andere Programme nutzen) hinweg möglichst wenig gemeinsam haben.
 
         .. supplemental::
 
