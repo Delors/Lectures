@@ -76,19 +76,19 @@
                         font-size="22"
                         font-weight="400"
                         fill="black"
-                        x="3.993"
+                        x="18.993"
                         y="24"
                         xml:space="preserve"
-                    >Rundenschlüssel K(48 </tspan>
+                    >Rundenschlüssel K</tspan>
           <tspan
                         font-family="Noto Sans Display"
                         font-size="22"
                         font-weight="400"
                         fill="black"
-                        x="89.023"
-                        y="54"
+                        x="69.023"
+                        y="52"
                         xml:space="preserve"
-                    >bits)</tspan>
+                    >(48 bits)</tspan>
         </text>
       </g>
       <g id="Graphic_4">
@@ -164,8 +164,7 @@
                         x="100.2855"
                         y="24"
                         xml:space="preserve"
-                    >S</tspan>
-          <tspan
+                    >S</tspan><tspan
                         font-family="Noto Sans Display"
                         font-size="15"
                         font-weight="400"
@@ -189,8 +188,7 @@
                         x="100.2855"
                         y="24"
                         xml:space="preserve"
-                    >S</tspan>
-          <tspan
+                    >S</tspan><tspan
                         font-family="Noto Sans Display"
                         font-size="15"
                         font-weight="400"

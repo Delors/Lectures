@@ -311,33 +311,6 @@ Effizienzanforderungen an kryptografische Hashfunktionen
 
 
 
-Struktur eines sicheren Hash-Codes
-------------------------------------------------------------------------
-
-(Vorgeschlagen von Merkle.)
-
-.. image:: drawings/hash_functions/structure_of_secure_hash_codes.svg
-    :align: center
-
-.. class:: columns left-aligned dd-margin-left-3em
-
--       :IV: Initialer Wert (Algorithmus-abhängig)
-
-        :CV\ `i`:sub:: Verkettungsvariable
-
-        :Y\ `i`:sub:: i-er Eingabeblock
-
-        :f: Kompressionsfunktion
-
--       :n: Länge des Blocks
-
-        :L: Anzahl der Eingabeblöcke
-
-        :b: Länge des Eingabeblocks
-
-.. supplemental::
-
-    Diese Struktur liegt insbesondere den Hashfunktionen der SHA-2 Familie zugrunde.
 
 
 
@@ -435,6 +408,36 @@ Struktur eines sicheren Hash-Codes
 
 Hashverfahren
 ---------------------
+
+
+
+Struktur eines sicheren Hash-Codes
+------------------------------------------------------------------------
+
+(Vorgeschlagen von Merkle.)
+
+.. image:: drawings/hash_functions/structure_of_secure_hash_codes.svg
+    :align: center
+
+.. class:: columns left-aligned dd-margin-left-3em
+
+-       :IV: Initialer Wert (Algorithmus-abhängig)
+
+        :CV\ `i`:sub:: Verkettungsvariable
+
+        :Y\ `i`:sub:: i-er Eingabeblock
+
+        :f: Kompressionsfunktion
+
+-       :n: Länge des Blocks
+
+        :L: Anzahl der Eingabeblöcke
+
+        :b: Länge des Eingabeblocks
+
+.. supplemental::
+
+    Diese Struktur liegt insbesondere den Hashfunktionen der SHA-2 Familie zugrunde.
 
 
 

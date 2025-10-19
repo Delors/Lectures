@@ -16,7 +16,7 @@ Einführung in die Programmierung
 
 :Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
 :Kontakt: michael.eichberg@dhbw.de, Raum 149B
-:Version: 1.1.1
+:Version: 1.2
 
 .. supplemental::
 
@@ -25,6 +25,13 @@ Einführung in die Programmierung
         |html-source|
 
         |pdf-source|
+
+    :Kontrollfragen:
+
+        .. source:: kontrollfragen.de.rst
+            :path: relative
+            :prefix: https://delors.github.io/
+            :suffix: .html
 
     :Fehler melden:
         https://github.com/Delors/delors.github.io/issues

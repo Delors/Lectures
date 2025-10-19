@@ -78,7 +78,6 @@
                         fill="#0432ff"
                         x="6.552"
                         y="15"
-                        xml:space="preserve"
                     >Schlüssel</tspan>
         </text>
       </g>
@@ -96,15 +95,12 @@
                         fill="black"
                         x="51.781"
                         y="15"
-                        xml:space="preserve"
-                    >P</tspan>
-          <tspan
+                    >P</tspan><tspan
                         font-family="Noto Sans Display"
                         font-size="14"
                         font-weight="400"
                         fill="black"
-                        y="22"
-                        xml:space="preserve"
+                        y="20"
                     >j</tspan>
         </text>
       </g>
@@ -122,15 +118,12 @@
                         fill="black"
                         x="52.11"
                         y="15"
-                        xml:space="preserve"
-                    >T</tspan>
-          <tspan
+                    >T</tspan><tspan
                         font-family="Noto Sans Display"
                         font-size="14"
                         font-weight="400"
                         fill="black"
-                        y="22"
-                        xml:space="preserve"
+                        y="20"
                     >j</tspan>
         </text>
       </g>
@@ -184,7 +177,6 @@
                         fill="black"
                         x="6.981"
                         y="15"
-                        xml:space="preserve"
                     >Verschlüsselung</tspan>
         </text>
       </g>
@@ -253,7 +245,6 @@
                         fill="black"
                         x="15.416"
                         y="15"
-                        xml:space="preserve"
                     >Hashfunktion</tspan>
         </text>
       </g>
@@ -271,15 +262,12 @@
                         fill="black"
                         x="51.62"
                         y="15"
-                        xml:space="preserve"
-                    >C</tspan>
-          <tspan
+                    >C</tspan><tspan
                         font-family="Noto Sans Display"
                         font-size="14"
                         font-weight="400"
                         fill="black"
-                        y="22"
-                        xml:space="preserve"
+                        y="20"
                     >j</tspan>
         </text>
       </g>
@@ -341,22 +329,18 @@
                         fill="black"
                         x="0"
                         y="15"
-                        xml:space="preserve"
-                    >H(T</tspan>
-          <tspan
+                    >H(T</tspan><tspan
                         font-family="Noto Sans Display"
                         font-size="14"
                         font-weight="400"
                         fill="black"
-                        y="22"
-                    >j</tspan>
-          <tspan
+                        y="20"
+                    >j</tspan><tspan
                         font-family="Noto Sans Display"
                         font-size="14"
                         font-weight="400"
                         fill="black"
                         y="15"
-                        xml:space="preserve"
                     >)</tspan>
         </text>
       </g>

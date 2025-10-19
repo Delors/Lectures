@@ -895,7 +895,7 @@ Abzählbar (unendlich)
 Schlussfolgerungen aus der Überabzählbarkeit
 --------------------------------------------------------
 
-.. deck:: numbered
+.. deck::
 
     .. card::
 

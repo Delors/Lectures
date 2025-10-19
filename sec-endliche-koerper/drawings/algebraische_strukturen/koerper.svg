@@ -141,7 +141,7 @@
                         font-size="14"
                         font-weight="400"
                         fill="black"
-                        x="58.85213"
+                        x="50"
                         y="83"
                     >Elementen</tspan>
         </text>
@@ -214,8 +214,7 @@
                         fill="black"
                         x="0"
                         y="20"
-                    >p</tspan>
-          <tspan
+                    >p</tspan><tspan
                         font-family="Noto Sans Display"
                         font-size="14"
                         font-weight="400"

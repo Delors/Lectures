@@ -1,5 +1,4 @@
 .. meta::
-   :version: renaissance
    :lang: de
    :author: Michael Eichberg
    :keywords: Kontrollaufgaben, AES

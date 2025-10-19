@@ -1,5 +1,4 @@
 .. meta::
-   :version: renaissance
    :lang: de
    :author: Michael Eichberg
    :keywords: "Programmierung", "Java", "Domänenmodellierung", "Kontrollfragen"
@@ -34,7 +33,7 @@ Kontrollfragen
 -------------------------------------
 
 
-.. deck:: numbered
+.. deck::
 
    .. card:: 
    
@@ -82,7 +81,7 @@ Java :java:`record`\ s und :java:`enum`\ s
 Kontrollfragen 
 -------------------------------------
 
-.. deck:: numbered
+.. deck::
 
    .. card:: 
    
@@ -107,7 +106,6 @@ Kontrollfragen
             :pwd: RekordErben
 
             Nein, es ist nicht möglich von Java Records zu erben. Records sind final.
-
 
    .. card::
 

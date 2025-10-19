@@ -36,7 +36,6 @@
       </g>
     </marker>
   </defs>
-  <metadata> Produced by OmniGraffle 8.0\n2025-05-13 13:15:41 +0000</metadata>
   <g
         id="Canvas_1"
         stroke-dasharray="none"
@@ -44,49 +43,29 @@
         stroke-opacity="1"
         fill="none"
         fill-opacity="1"
+        font-family="Noto Sans Display"
+        font-size="28"
+        font-weight="300"
     >
-    <title>Canvas 1</title>
-    <g id="Canvas_1_Layer_1">
+    <g >
       <title>Layer 1</title>
       <g id="Graphic_13">
         <text transform="translate(31.5 170.75)" fill="black">
           <tspan
-                        font-family="Noto Sans Display"
-                        font-size="28"
-                        font-weight="400"
-                        fill="black"
                         x="8.371625"
                         y="30"
                     >Kryptografischer </tspan>
           <tspan
-                        font-family="Noto Sans Display"
-                        font-size="28"
-                        font-weight="400"
-                        fill="black"
                         x="41.346625"
                         y="68"
-                    >Bitstrom(</tspan>
-          <tspan
-                        font-family="Noto Sans Display"
-                        font-size="28"
+                    >Bitstrom(</tspan><tspan
                         font-style="italic"
-                        font-weight="400"
-                        fill="black"
                         y="68"
-                    >k</tspan>
-          <tspan
-                        font-family="Noto Sans Display"
+                    >k</tspan><tspan
                         font-size="22"
                         font-style="italic"
-                        font-weight="400"
-                        fill="black"
                         y="80"
-                    >i</tspan>
-          <tspan
-                        font-family="Noto Sans Display"
-                        font-size="28"
-                        font-weight="400"
-                        fill="black"
+                    >i</tspan><tspan
                         y="68"
                     >)</tspan>
         </text>
@@ -94,41 +73,21 @@
       <g id="Graphic_17">
         <text transform="translate(22 271.75)" fill="black">
           <tspan
-                        font-family="Noto Sans Display"
-                        font-size="28"
-                        font-weight="400"
-                        fill="black"
                         x="11.64725"
                         y="30"
                     >Klartext</tspan>
           <tspan
-                        font-family="Noto Sans Display"
-                        font-size="28"
-                        font-weight="400"
-                        fill="black"
                         x="41.59825"
                         y="68"
-                    >(</tspan>
-          <tspan
-                        font-family="Noto Sans Display"
+                    >(</tspan><tspan
                         font-size="28"
                         font-style="italic"
-                        font-weight="400"
-                        fill="black"
                         y="68"
-                    >p</tspan>
-          <tspan
-                        font-family="Noto Sans Display"
+                    >p</tspan><tspan
                         font-size="22"
                         font-style="italic"
-                        font-weight="400"
-                        fill="black"
                         y="80"
-                    >i</tspan>
-          <tspan
-                        font-family="Noto Sans Display"
-                        font-size="28"
-                        font-weight="400"
+                    >i</tspan><tspan
                         fill="black"
                         y="68"
                     >)</tspan>
@@ -150,42 +109,20 @@
       <g id="Graphic_33">
         <text transform="translate(380 271.75)" fill="black">
           <tspan
-                        font-family="Noto Sans Display"
-                        font-size="28"
-                        font-weight="400"
-                        fill="black"
                         x="13.73525"
                         y="30"
                     >Geheimtext</tspan>
           <tspan
-                        font-family="Noto Sans Display"
-                        font-size="28"
-                        font-weight="400"
-                        fill="black"
                         x="69.26425"
                         y="68"
-                    >(</tspan>
-          <tspan
-                        font-family="Noto Sans Display"
-                        font-size="28"
+                    >(</tspan><tspan
                         font-style="italic"
-                        font-weight="400"
-                        fill="black"
                         y="68"
-                    >c</tspan>
-          <tspan
-                        font-family="Noto Sans Display"
+                    >c</tspan><tspan
                         font-size="22"
                         font-style="italic"
-                        font-weight="400"
-                        fill="black"
                         y="80"
-                    >i</tspan>
-          <tspan
-                        font-family="Noto Sans Display"
-                        font-size="28"
-                        font-weight="400"
-                        fill="black"
+                    >i</tspan><tspan
                         y="68"
                     >)</tspan>
         </text>
@@ -193,42 +130,22 @@
       <g id="Graphic_34">
         <text transform="translate(790 271.75)" fill="black">
           <tspan
-                        font-family="Noto Sans Display"
-                        font-size="28"
-                        font-weight="400"
                         fill="black"
                         x="11.64725"
                         y="30"
                     >Klartext</tspan>
           <tspan
-                        font-family="Noto Sans Display"
-                        font-size="28"
-                        font-weight="400"
                         fill="black"
                         x="41.59825"
                         y="68"
-                    >(</tspan>
-          <tspan
-                        font-family="Noto Sans Display"
-                        font-size="28"
+                    >(</tspan><tspan
                         font-style="italic"
-                        font-weight="400"
-                        fill="black"
                         y="68"
-                    >p</tspan>
-          <tspan
-                        font-family="Noto Sans Display"
+                    >p</tspan><tspan
                         font-size="22"
                         font-style="italic"
-                        font-weight="400"
-                        fill="black"
                         y="80"
-                    >i</tspan>
-          <tspan
-                        font-family="Noto Sans Display"
-                        font-size="28"
-                        font-weight="400"
-                        fill="black"
+                    >i</tspan><tspan
                         y="68"
                     >)</tspan>
         </text>
@@ -260,42 +177,20 @@
       <g id="Graphic_59">
         <text transform="translate(442.5 170.75)" fill="black">
           <tspan
-                        font-family="Noto Sans Display"
-                        font-size="28"
-                        font-weight="400"
-                        fill="black"
                         x="8.371625"
                         y="30"
                     >Kryptografischer </tspan>
           <tspan
-                        font-family="Noto Sans Display"
-                        font-size="28"
-                        font-weight="400"
-                        fill="black"
                         x="40.599625"
                         y="68"
-                    >Bitstrom(</tspan>
-          <tspan
-                        font-family="Noto Sans Display"
-                        font-size="28"
+                    >Bitstrom(</tspan><tspan
                         font-style="italic"
-                        font-weight="400"
-                        fill="black"
                         y="68"
-                    >k</tspan>
-          <tspan
-                        font-family="Noto Sans Display"
-                        font-size="28"
+                    >k</tspan><tspan
                         font-style="italic"
-                        font-weight="400"
-                        fill="black"
+                        font-size="22"
                         y="83"
-                    >i</tspan>
-          <tspan
-                        font-family="Noto Sans Display"
-                        font-size="28"
-                        font-weight="400"
-                        fill="black"
+                    >i</tspan><tspan
                         y="68"
                     >)</tspan>
         </text>
@@ -307,25 +202,16 @@
                 />
         <text transform="translate(191.03125 21)" fill="#344463">
           <tspan
-                        font-family="Noto Sans Display"
-                        font-size="28"
-                        font-weight="400"
                         fill="#344463"
                         x="8.862"
                         y="30"
                     >Schlüssel-</tspan>
           <tspan
-                        font-family="Noto Sans Display"
-                        font-size="28"
-                        font-weight="400"
                         fill="#344463"
                         x="29.064"
                         y="68"
                     >strom-</tspan>
           <tspan
-                        font-family="Noto Sans Display"
-                        font-size="28"
-                        font-weight="400"
                         fill="#344463"
                         x="7.896"
                         y="106"
@@ -352,25 +238,16 @@
                 />
         <text transform="translate(601.03125 21)" fill="#344463">
           <tspan
-                        font-family="Noto Sans Display"
-                        font-size="28"
-                        font-weight="400"
                         fill="#344463"
                         x="8.862"
                         y="30"
                     >Schlüssel-</tspan>
           <tspan
-                        font-family="Noto Sans Display"
-                        font-size="28"
-                        font-weight="400"
                         fill="#344463"
                         x="29.064"
                         y="68"
                     >strom-</tspan>
           <tspan
-                        font-family="Noto Sans Display"
-                        font-size="28"
-                        font-weight="400"
                         fill="#344463"
                         x="7.896"
                         y="106"
@@ -432,10 +309,7 @@
       <g id="Graphic_69">
         <text transform="translate(243.34725 269)" fill="black">
           <tspan
-                        font-family="Noto Sans Display"
                         font-size="64"
-                        font-weight="400"
-                        fill="black"
                         x="0"
                         y="68"
                     >+</tspan>
@@ -444,10 +318,7 @@
       <g id="Graphic_70">
         <text transform="translate(653.84725 269)" fill="black">
           <tspan
-                        font-family="Noto Sans Display"
                         font-size="64"
-                        font-weight="400"
-                        fill="black"
                         x="0"
                         y="68"
                     >+</tspan>

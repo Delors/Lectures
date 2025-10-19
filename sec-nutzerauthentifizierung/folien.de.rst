@@ -238,3 +238,7 @@ Fiat-Shamir Protokoll
          Da in diesem Beispiel nur eine Runde durchgeführt wurde, kann Victor lediglich mit Wahrscheinlichkeit :math:`\frac{1}{2}` sicher sein, dass Peggy tatsächlich die Geheimzahl :math:`s` kennt.
 
          Erst durch die Wiederholung über viele Runden hinweg sinkt die Wahrscheinlichkeit eines erfolgreichen Betrugs exponentiell.
+
+
+
+.. TODO : Web: Basic Authentication, Bearer Tokens, JWT, OAuth2, Passkey, WebAuthn, FIDO2

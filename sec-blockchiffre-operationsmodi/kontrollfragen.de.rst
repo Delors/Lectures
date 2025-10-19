@@ -1,5 +1,4 @@
 .. meta::
-   :version: renaissance
    :lang: de
    :author: Michael Eichberg
    :keywords: Kontrollfragen, Operationsmodi, Blockchiffren
@@ -40,7 +39,7 @@ Betriebsmodi - Grundlagen
   1. Warum sind Betriebsmodi von Nöten? Begründen Sie mit einem Beispiel.
   2. Eignet sich CBC für die Verwendung einer Blockchiffre als Stromchiffre?
   3. Nennen Sie zwei *allg.* Verfahren für das Padding von Nachrichten und erklären Sie diese kurz.
-  4. Welche Kriterien können zur Bewertung eines Operationsmodis herangezogen werden?
+  4. Welche Kriterien können zur Bewertung eines Operationsmodus herangezogen werden?
   5. Verhalten sich alle Betriebsmodi bei Bitfehlern im Chiffretext - zum Beispiel aufgrund von Übertragungsfehlern - gleich?
 
      (D.h. wenn einzelne Bits des Chiffretexts gekippt sind.)

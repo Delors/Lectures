@@ -103,7 +103,6 @@
                         fill="black"
                         x="63.77"
                         y="15"
-                        xml:space="preserve"
                     >IV</tspan>
         </text>
       </g>
@@ -121,7 +120,6 @@
                         fill="black"
                         x="0"
                         y="15"
-                        xml:space="preserve"
                     >Nimm</tspan>
           <tspan
                         font-family="Noto Sans Display"
@@ -130,7 +128,6 @@
                         fill="black"
                         x="0"
                         y="34"
-                        xml:space="preserve"
                     >s Bits</tspan>
         </text>
       </g>
@@ -147,7 +144,6 @@
                         fill="black"
                         x="27.615"
                         y="15"
-                        xml:space="preserve"
                     >Verschlüsseln</tspan>
         </text>
       </g>
@@ -191,15 +187,12 @@
                         fill="black"
                         x="14.244"
                         y="15"
-                        xml:space="preserve"
-                    >P</tspan>
-          <tspan
+                    >P</tspan><tspan
                         font-family="Noto Sans Display"
                         font-size="14"
                         font-weight="400"
                         fill="black"
-                        y="22"
-                        xml:space="preserve"
+                        y="20"
                     >1</tspan>
         </text>
       </g>
@@ -217,15 +210,12 @@
                         fill="black"
                         x="14.083"
                         y="15"
-                        xml:space="preserve"
-                    >C</tspan>
-          <tspan
+                    >C</tspan><tspan
                         font-family="Noto Sans Display"
                         font-size="14"
                         font-weight="400"
                         fill="black"
-                        y="22"
-                        xml:space="preserve"
+                        y="20"
                     >1</tspan>
         </text>
       </g>
@@ -277,7 +267,6 @@
                         fill="black"
                         x="16.028"
                         y="15"
-                        xml:space="preserve"
                     >Verwerfe</tspan>
           <tspan
                         font-family="Noto Sans Display"
@@ -286,7 +275,6 @@
                         fill="black"
                         x="21.362"
                         y="34"
-                        xml:space="preserve"
                     >b-s Bits</tspan>
         </text>
       </g>
@@ -299,7 +287,6 @@
                         fill="black"
                         x="0"
                         y="15"
-                        xml:space="preserve"
                     >s Bits</tspan>
         </text>
       </g>
@@ -312,7 +299,6 @@
                         fill="black"
                         x="0"
                         y="15"
-                        xml:space="preserve"
                     >s Bits</tspan>
         </text>
       </g>
@@ -325,15 +311,12 @@
                         fill="black"
                         x="8295586e-19"
                         y="15"
-                        xml:space="preserve"
-                    >I</tspan>
-          <tspan
+                    >I</tspan><tspan
                         font-family="Noto Sans Display"
                         font-size="14"
                         font-weight="400"
                         fill="black"
-                        y="22"
-                        xml:space="preserve"
+                        y="20"
                     >1</tspan>
         </text>
       </g>
@@ -346,15 +329,12 @@
                         fill="black"
                         x="45119464e-20"
                         y="15"
-                        xml:space="preserve"
-                    >O</tspan>
-          <tspan
+                    >O</tspan><tspan
                         font-family="Noto Sans Display"
                         font-size="14"
                         font-weight="400"
                         fill="black"
-                        y="22"
-                        xml:space="preserve"
+                        y="20"
                     >1</tspan>
         </text>
       </g>
@@ -411,7 +391,6 @@
                         fill="black"
                         x="0"
                         y="15"
-                        xml:space="preserve"
                     >IV &lt;&lt; (b-s) Bits</tspan>
         </text>
       </g>
@@ -429,7 +408,6 @@
                         fill="black"
                         x="0"
                         y="15"
-                        xml:space="preserve"
                     >Nimm</tspan>
           <tspan
                         font-family="Noto Sans Display"
@@ -438,7 +416,6 @@
                         fill="black"
                         x="0"
                         y="34"
-                        xml:space="preserve"
                     >s Bits</tspan>
         </text>
       </g>
@@ -455,7 +432,6 @@
                         fill="black"
                         x="27.615"
                         y="15"
-                        xml:space="preserve"
                     >Verschlüsseln</tspan>
         </text>
       </g>
@@ -494,7 +470,6 @@
                         fill="#0432ff"
                         x="6.552"
                         y="15"
-                        xml:space="preserve"
                     >Schlüssel</tspan>
         </text>
       </g>
@@ -538,15 +513,12 @@
                         fill="black"
                         x="14.244"
                         y="15"
-                        xml:space="preserve"
-                    >P</tspan>
-          <tspan
+                    >P</tspan><tspan
                         font-family="Noto Sans Display"
                         font-size="14"
                         font-weight="400"
                         fill="black"
-                        y="22"
-                        xml:space="preserve"
+                        y="20"
                     >2</tspan>
         </text>
       </g>
@@ -564,15 +536,12 @@
                         fill="black"
                         x="14.083"
                         y="15"
-                        xml:space="preserve"
-                    >C</tspan>
-          <tspan
+                    >C</tspan><tspan
                         font-family="Noto Sans Display"
                         font-size="14"
                         font-weight="400"
                         fill="black"
-                        y="22"
-                        xml:space="preserve"
+                        y="20"
                     >2</tspan>
         </text>
       </g>
@@ -624,7 +593,6 @@
                         fill="black"
                         x="16.028"
                         y="15"
-                        xml:space="preserve"
                     >Verwerfe</tspan>
           <tspan
                         font-family="Noto Sans Display"
@@ -633,7 +601,6 @@
                         fill="black"
                         x="21.362"
                         y="34"
-                        xml:space="preserve"
                     >b-s Bits</tspan>
         </text>
       </g>
@@ -646,7 +613,6 @@
                         fill="black"
                         x="0"
                         y="15"
-                        xml:space="preserve"
                     >s Bits</tspan>
         </text>
       </g>
@@ -659,7 +625,6 @@
                         fill="black"
                         x="0"
                         y="15"
-                        xml:space="preserve"
                     >s Bits</tspan>
         </text>
       </g>
@@ -672,15 +637,12 @@
                         fill="black"
                         x="8295586e-19"
                         y="15"
-                        xml:space="preserve"
-                    >I</tspan>
-          <tspan
+                    >I</tspan><tspan
                         font-family="Noto Sans Display"
                         font-size="14"
                         font-weight="400"
                         fill="black"
-                        y="22"
-                        xml:space="preserve"
+                        y="20"
                     >2</tspan>
         </text>
       </g>
@@ -693,15 +655,12 @@
                         fill="black"
                         x="45119464e-20"
                         y="15"
-                        xml:space="preserve"
-                    >O</tspan>
-          <tspan
+                    >O</tspan><tspan
                         font-family="Noto Sans Display"
                         font-size="14"
                         font-weight="400"
                         fill="black"
-                        y="22"
-                        xml:space="preserve"
+                        y="20"
                     >2</tspan>
         </text>
       </g>
@@ -758,15 +717,12 @@
                         fill="black"
                         x="9.19677"
                         y="15"
-                        xml:space="preserve"
-                    >C</tspan>
-          <tspan
+                    >C</tspan><tspan
                         font-family="Noto Sans Display"
                         font-size="14"
                         font-weight="400"
                         fill="black"
-                        y="22"
-                        xml:space="preserve"
+                        y="20"
                     >1</tspan>
         </text>
       </g>

@@ -284,15 +284,15 @@ Feistel-Chiffre - Verschlüsselung und Entschlüsselung
         .. legend::
             :class: width-100
 
-            :math:`K_x` - Schlüssel der :math:`x`-ten Runde
+            K\ :sub:`x` - Schlüssel der x-ten Runde
 
-            :math:`L_{x-1}` - linke Hälfte des Eingabeblocks der :math:`x`-ten Runde
+            L\ :sub:`x-1` - linke Hälfte des Eingabeblocks der x-ten Runde
 
-            :math:`R_{x-1}` - rechte Hälfte des Eingabeblocks der :math:`x`-ten Runde
+            R\ :sub:`x-1` - rechte Hälfte des Eingabeblocks der x-ten Runde
 
-            :math:`F` - Rundenfunktion
+            F - Rundenfunktion
 
-            :math:`\oplus` - XOR-Operation
+            ⨁ - XOR-Operation
 
     .. cell:: width-60
 
@@ -325,9 +325,7 @@ Feistel Chiffre - Beispiel
 .. image:: drawings/feistel/example.svg
     :align: center
 
-.. container:: far-smaller
-
-    .. rubric:: Zur Erinnerung
+.. remember::
 
     ::
 
@@ -502,7 +500,7 @@ DES: Beispiel
 -------------
 
 .. csv-table::
-    :class: monospaced highlight-row-on-hover highlight-identical-cells-on-hover font-size-85
+    :class: compact monospaced highlight-row-on-hover highlight-identical-cells-on-hover font-size-85
     :align: center
     :header: Round, :math:`Ki`, :math:`Li`, :math:`Ri`
     :stub-columns: 1
@@ -549,7 +547,7 @@ Lawineneffekt in DES
 Kleine Änderung im Klartext (erster Wert +1)
 
 .. csv-table::
-    :class: font-size-80 monospaced highlight-row-on-hover
+    :class: font-size-80 monospaced compact highlight-row-on-hover
     :width: 100%
     :header: Round, , δ, , Round, , δ
 
@@ -589,7 +587,7 @@ Lawineneffekt in DES
 Kleine Änderung des Schlüssels: :monospaced:`0f1571c947d9e859` ➟ :monospaced:`1f1571c947d9e859`
 
 .. csv-table::
-    :class: font-size-80 monospaced highlight-row-on-hover
+    :class: font-size-80 monospaced compact highlight-row-on-hover
     :width: 100%
     :header: Round, , "δ", , Round, , δ
 
@@ -637,13 +635,13 @@ Erschöpfende Schlüsselsuche
 .. csv-table::
     :class: highlight-row-on-hover font-size-80 incremental-table-rows
     :align: center
-    :widths: 10 10 10 20 20
+    :widths: 10 9 12 18 18
     :header-rows: 1
     :width: 100%
 
     "Schlüsselgröße (bits)", Chiffre, "Anzahl der alternativen
     Schlüssel", "Zeit benötigt bei 10⁹ Entschlüsselungen/s", "Zeit benötigt bei 10¹³ Entschlüsselungen/s"
-    56, DES, "2⁵⁶ ≈ 7.2 ⨉⨉ 10¹⁶", 1.125 Jahre, 1 Stunde
+    56, DES, "2⁵⁶ ≈ 7.2 ⨉ 10¹⁶", 1.125 Jahre, 1 Stunde
     128, AES, "2¹²⁸ ≈ 3.4 ⨉ 10³⁸", "5.3 ⨉ 10²¹ Jahre", "5.3 ⨉ 10¹⁷ Jahre"
     168, Triple DES, "2¹⁶⁸ ≈ 3.7 ⨉ 10⁵⁰", "5.8 ⨉ 10³³ Jahre", 5.8 × 10²⁹ Jahre
     192, AES, "2¹⁹² ≈ 6.3 ⨉ 10⁵⁷", "2¹⁹¹ ns = 9.8 ⨉ 10⁴⁰ Jahre", "9.8 ⨉ 10³⁶ Jahre"

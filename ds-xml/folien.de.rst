@@ -1056,7 +1056,7 @@ XPath Support
 
 .. class:: exercises transition-scale
 
-Übung: XPath
+Übung
 ------------------------------------------------
 
 .. story::

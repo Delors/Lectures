@@ -1105,7 +1105,9 @@ Die eindeutige Lösung in :math:`Z_{10}` ist: :math:`8`.
 
     Man könnte auch folgendes Problem versuchen zu lösen: Wir haben :math:`x` Schokoladentafeln. Wenn wir diese fair auf zwei Personen verteilen, dann haben wir keinen Rest. Wenn wir diese jedoch auf 5 Personen aufteilen, dann haben wir 3 Tafeln übrig.  Wieviele Schokoladentafeln haben wir?
 
-    (Zur Erinnerung: zwei Zahlen :math:`x` und :math:`y` sind relativ prim, wenn ihr größter gemeinsamer Teiler 1 ist.)
+    .. remember:: 
+        
+        Zwei Zahlen :math:`x` und :math:`y` sind relativ prim, wenn ihr größter gemeinsamer Teiler 1 ist.
 
 
 
@@ -1128,9 +1130,7 @@ Chinesische Restsatz - Zusammenfassung
 Übung
 ---------------------------------
 
-1. \
-
-   .. exercise::
+.. exercise:: Modulo-Gesetze
 
     Berechne :math:`5^9\, mod\, 7` ohne die Zuhilfenahme eines Taschenrechners.
 
@@ -1153,9 +1153,7 @@ Chinesische Restsatz - Zusammenfassung
 
         :math:`= 6`
 
-2. \
-
-   .. exercise::
+.. exercise:: Relative Prime/Coprime
 
       Welche Zahlen sind relativ prim zu :math:`21`?
 
@@ -1166,9 +1164,7 @@ Chinesische Restsatz - Zusammenfassung
 
         (Zum Beispiel ist die :math:`6` nicht relativ prim zu :math:`21`, da :math:`ggt(6,21) = 3` gilt. Somit sind :math:`6` und :math:`21` nicht relativ prim.)
 
-3. \
-
-   .. exercise::
+.. exercise:: Euklidischer Algorithmus
 
       Berechne :math:`ggt(1037,768)` mit Hilfe des Euklidischen Algorithmus.
 
@@ -1189,9 +1185,7 @@ Chinesische Restsatz - Zusammenfassung
 
         *Ergebnis ist: 1*
 
-4. \
-
-   .. exercise::
+.. exercise:: Erweiterter Euklidischer Algorithmus
 
         Berechne :math:`ggt(42,16)` mit Hilfe des erweiterten Euklidischen Algorithmus. D. h. berechnen Sie auch :math-i:`x` und :math-i:`y`!
 
@@ -1218,9 +1212,7 @@ Chinesische Restsatz - Zusammenfassung
                 :math:`r_3 = 4`, :math:`q_3 = 1`, :math:`x_3 = 2`, :math:`y_3 = -5`
                 :math:`r_4 = 2`, :math:`q_4 = 1`, :math:`x_4 = -3`, :math:`y_4 = 8`
 
-
             x = -3 und y = 8
-
 
 
 .. class:: exercises
@@ -1228,9 +1220,7 @@ Chinesische Restsatz - Zusammenfassung
 Übung
 ---------------------------------
 
-1. \
-
-   .. exercise::
+.. exercise:: Eulers Totient Funktion
 
     Bestimme das Ergebnis von Euler's Totient Funktion :math:`\phi` für den Wert :math:`37` ohne das Ergebnis nachzuschlagen.
 
@@ -1239,9 +1229,7 @@ Chinesische Restsatz - Zusammenfassung
 
         Das Ergebnis ist 36, da 37 eine Primzahl ist und deswegen alle Zahlen von 1 bis 36 relativ prim zu 37 sind.
 
-2. \
-
-   .. exercise::
+.. exercise:: Satz von Fermat
 
      Überzeugen Sie sich davon, dass der (kleine) Satz von Fermat gilt. Zum Beispiel für die Zahlen: :math:`a = 9` und :math:`p = 7`.
 
@@ -1250,9 +1238,7 @@ Chinesische Restsatz - Zusammenfassung
 
         :math:`9^6\, mod\, 7 = 531441\, mod\, 7 = 1`
 
-3. \
-
-   .. exercise::
+.. exercise:: Satz von Euler
 
        Überzeugen Sie sich davon, dass der Satz von Euler gilt. Zum Beispiel für die Werte :math:`a=7` und :math:`n=9`.
 
@@ -1263,14 +1249,12 @@ Chinesische Restsatz - Zusammenfassung
 
             :math:`7^6\, mod\, 9 = 1`
 
-4. \
-
-   .. exercise::
+.. exercise:: Miller-Rabin Algorithmus
 
       Führen Sie den Miller-Rabin Algorithmus für :math:`n = 37` aus.
 
       .. solution::
-        :pwd: Wahrscheinlich prim
+        :pwd: wahrscheinlich prim
 
         ::
 
@@ -1287,14 +1271,19 @@ Chinesische Restsatz - Zusammenfassung
             2      0     18     31     36
             2      1     18     36      1
             _____________________________
-            Wahrscheinlich prim
+            wahrscheinlich prim
 
 
         `Jupyter Notebook mit Miller-Rabin Algorithm. <https://github.com/Delors/Lectures/blob/main/sec-einfuehrung-in-die-zahlentheorie/resources/miller-rabin-algorithm.ipynb>`__
 
-5. \
 
-   .. exercise::
+
+.. class:: exercises
+
+Übung
+---------------------------------
+
+.. exercise:: Chinesischer Restsatz
 
     In einer Tüte sind :math:`x` Gummibärchen. Wenn Sie diese auf 4 Personen verteilen, dann haben Sie einen Rest von 2, verteilen Sie diese auf 7 Personen, dann haben Sie einen Rest von 3. Wie viele Gummibärchen sind in der Tüte? Wenden Sie den chinesischen Restsatz an.
 

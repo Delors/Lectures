@@ -1,5 +1,4 @@
 .. meta::
-   :version: renaissance
    :lang: de
    :author: Michael Eichberg
    :keywords: Blockchiffren, Kontrollfragen
@@ -35,7 +34,7 @@ Kontrollfragen
 
 .. story::
 
-    .. exercise:: Wie unterscheidet sich eine Blockchiffre von einer Stromchiffere?
+    .. exercise:: Wie unterscheidet sich eine Blockchiffre von einer Stromchiffre?
 
         .. solution::
             :pwd: Bloecke...
@@ -133,7 +132,7 @@ Kontrollfragen
 
             Es bietet sich dann die Möglichkeit für bestimmte Angriffstechniken. Zum Beispiel differentielle Kryptoanalyse.
 
-    .. exercise:: Wenn wir nur eine Runde eine Feistelchiffre anwenden, sind dann bereits alle Daten zumindest rudimentär verschlüsselt?
+    .. exercise:: Wenn wir nur eine Runde einer Feistelchiffre anwenden, sind dann bereits alle Daten zumindest rudimentär verschlüsselt?
         :class: incremental
 
         .. solution::
@@ -149,7 +148,7 @@ Kontrollfragen
 
             Eine Feistelchiffre ist eine allg. Konstruktionsmethode. Es gibt keine konkreten Vorgaben.
 
-    .. exercise:: Was ist bei der Generierung des Unterschlüssel bei Ver- und Entschlüsseln zu beachten?
+    .. exercise:: Was ist bei der Generierung der Unterschlüssel beim Ver- und Entschlüsseln zu beachten?
         :class: incremental
 
         .. solution::
@@ -191,7 +190,7 @@ Kontrollfragen
        .. solution::
           :pwd: 2 von 3
 
-          DES basiert auf einem Feistel-Netzwerk mit 16 Runden. DES ist eine Blockchiffre und nicht immun gegen Brute-Force-Angriffe. DES wurde zwar nicht öffentlich entwickelt, aber der Algorithmus wurde veröffentlicht und deswegen wird das Kerckhoffs-Prinzip eingehalten.
+          DES basiert auf einem Feistel-Netzwerk mit 16 Runden. DES ist eine Blockchiffre und nicht immun gegen Brute-Force-Angriffe. DES wurde zwar nicht öffentlich entwickelt, aber der Algorithmus wurde veröffentlicht und deswegen wird das Kerckhoff-Prinzip eingehalten.
 
 
     .. exercise:: Was versteht man unter Triple-DES (3DES)?

@@ -51,7 +51,7 @@ Bewertungskriterien
 
   1. Inhaltliche Qualität (≥ 50% der Gesamtnote)
 
-     .. class:: incremental list-with-explanations
+     .. class:: incremental-list list-with-explanations
 
      - Ist die Auswahl der Inhalte sinnvoll?
      - Sind die Inhalte zielgruppenspezifisch aufbereitet?
@@ -98,7 +98,9 @@ Bewertungskriterien
 
 .. supplemental::
 
-   .. tip:: Präsentation von Code
+   .. tip:: 
+    
+      .. rubric:: Präsentation von Code
 
       Sollten Sie Code demonstrieren, der UIs baut, dann ist es häufig sinnvoll, wenn Sie erst kurz die Ziel UI zeigen und dann den Code, der diese UI erzeugt. Das Publikum kann sich dann besser vorstellen, was der Code macht.
 
@@ -109,7 +111,7 @@ Bewertungskriterien
 Häufige Fehler
 --------------
 
-.. class:: incremental-list columns
+.. class:: incremental-list column-list dhbw
 
 - **Text zu klein**
 
@@ -123,6 +125,7 @@ Häufige Fehler
 - **Kein Kontakt zum Publikum**
 
   Es ist wichtig, dass Sie Kontakt zum Publikum aufbauen.
+
 
 
 Checkliste

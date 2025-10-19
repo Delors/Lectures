@@ -1,5 +1,4 @@
 .. meta::
-   :version: renaissance
    :lang: de
    :author: Michael Eichberg
    :keywords: "Programmierung", "Java", "Variablen", "Methoden"
@@ -12,7 +11,7 @@
 
 
 
-Einführung in die Programmierung mit Java - Wiederholung
+Kontrollfragen: Einführung in die Programmierung mit Java
 ===========================================================
 
 :Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__

@@ -90,8 +90,7 @@
                         fill="black"
                         x="2.626625"
                         y="30"
-                    >k</tspan>
-          <tspan
+                    >k</tspan><tspan
                         font-family="Noto Sans Display"
                         font-size="22"
                         font-style="italic"
@@ -126,16 +125,14 @@
                         font-weight="400"
                         fill="black"
                         y="68"
-                    >p</tspan>
-          <tspan
+                    >p</tspan><tspan
                         font-family="Noto Sans Display"
                         font-size="22"
                         font-style="italic"
                         font-weight="400"
                         fill="black"
                         y="80"
-                    >i</tspan>
-          <tspan
+                    >i</tspan><tspan
                         font-family="Noto Sans Display"
                         font-size="28"
                         font-weight="400"
@@ -182,16 +179,14 @@
                         font-weight="400"
                         fill="black"
                         y="68"
-                    >c</tspan>
-          <tspan
+                    >c</tspan><tspan
                         font-family="Noto Sans Display"
                         font-size="22"
                         font-style="italic"
                         font-weight="400"
                         fill="black"
                         y="80"
-                    >i</tspan>
-          <tspan
+                    >i</tspan><tspan
                         font-family="Noto Sans Display"
                         font-size="28"
                         font-weight="400"
@@ -225,16 +220,14 @@
                         font-weight="400"
                         fill="black"
                         y="68"
-                    >p</tspan>
-          <tspan
+                    >p</tspan><tspan
                         font-family="Noto Sans Display"
                         font-size="22"
                         font-style="italic"
                         font-weight="400"
                         fill="black"
                         y="80"
-                    >i</tspan>
-          <tspan
+                    >i</tspan><tspan
                         font-family="Noto Sans Display"
                         font-size="28"
                         font-weight="400"
@@ -277,8 +270,7 @@
                         fill="black"
                         x="2.626625"
                         y="30"
-                    >k</tspan>
-          <tspan
+                    >k</tspan><tspan
                         font-family="Noto Sans Display"
                         font-size="22"
                         font-style="italic"

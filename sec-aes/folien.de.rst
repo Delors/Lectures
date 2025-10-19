@@ -520,7 +520,9 @@ AES Schlüsselexpansion - Beispiel (Runde 1)
 
         :math:`w[3] = (67,20,46,75)`
 
-.. container:: incremental-list list-with-sublists
+.. story:: 
+    
+  .. class:: incremental-list list-with-sublists
 
   - :math:`g(w[3])`:
 

@@ -15,7 +15,7 @@ TOR - The Onion Router
 
 :Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
 :Kontakt: michael.eichberg@dhbw.de
-:Version: 1.2
+:Version: 1.2.2
 
 .. supplemental::
 
@@ -26,6 +26,11 @@ TOR - The Onion Router
   :Fehler melden:
       https://github.com/Delors/delors.github.io/issues
 
+
+.. class:: new-section
+
+Grundlagen
+--------------------
 
 
 Tor (The Onion Router)
@@ -70,9 +75,16 @@ Tor - Verwendung
 
     Wir können unterscheiden zwischen:
 
-    :*Surface Web*: Das frei-verfügbare Internet.
+    :*Surface Web*: Das frei-verfügbare Internet. (Auch als *Clear Web* bezeichnet.)
     :*Deep Web*: Das Internet, das durch Zugriffsbeschränkungen nicht öffentlich zugänglich ist.
     :*Dark Web*: Das Internet, das nicht indiziert ist und nur über spezielle Software (z. B. Tor) erreichbar ist. Häufig - aber nicht ausschließlich - wird das Dark Web für illegale Aktivitäten genutzt und ist meist zusätzlich durch Zugriffsbeschränkungen geschützt.
+
+
+
+.. class:: new-section
+
+Sicherheit
+--------------------
 
 
 
@@ -291,7 +303,7 @@ Informationen über Tor Relays
     Pfade, die über die ganze Welt gehen verhindern, dass der ``Entry-`` und ``Exit-node`` beim gleichen Anbieter liegen.
 
     .. image:: images/tor-circuit.webp
-        :alt: Tor Circuit
+        :alt: Tor-Circuit
         :align: center
         :class: trbl-box-shadow-dark
 
@@ -313,7 +325,7 @@ Informationen über Tor Relays
 Tor Exit Nodes
 -----------------
 
-Die Anzahl der Exit nodes ist deutlich kleiner (2. Jan. 2024 - 1314 Einträge) als die Anzahl der Knoten. Dies liegt daran, dass die technischen Anforderungen höher sind (z. B. stabile IP Adressen) und insbesondere daran, dass die Betreiber der ``Exit nodes`` darauf vorbereitet sein müssen ggf. (zahlreiche) Anfragen von den Behörden zu bekommen. [#]_
+Die Anzahl der *Exit Nodes* ist deutlich kleiner (2. Jan. 2024 - 1314 Einträge) als die Anzahl der Knoten. Dies liegt daran, dass die technischen Anforderungen höher sind (z. B. stabile IP Adressen) und insbesondere daran, dass die Betreiber der *Exit nodes* darauf vorbereitet sein müssen ggf. (zahlreiche) Anfragen von den Behörden zu bekommen. [#]_
 
 .. image:: images/tor-german-exit-node.webp
     :alt: Deutscher Tor Exit Node von der TU Berlin
@@ -330,15 +342,15 @@ Die Anzahl der Exit nodes ist deutlich kleiner (2. Jan. 2024 - 1314 Einträge) a
 
 
 
-Tor Relays: ``Exit Policy``
+Tor Relays: *Exit Policy*
 -----------------------------
 
-Jeder ``Node`` legt in seiner ``Exit Policy`` genau fest welchen Datenverkehr weiterleiten möchte:
+Jeder *Node* legt in seiner *Exit Policy* genau fest welchen Datenverkehr weiterleiten möchte:
 
 - Es gibt offene Exit Nodes, die alle Anfragen weiterleiten.
 - Es gibt Knoten, die die Daten nur an weitere Tor-Knoten weiterleiten.
 - Es gibt Knoten, die nur bestimmte Dienste (z. B. HTTPs) weiterleiten.
-- Es gibt „private Exit Nodes“, die nur zu einem bestimmten Netz Verbindungen aufbauen.
+- Es gibt „*private Exit Nodes*“, die nur zu einem bestimmten Netz Verbindungen aufbauen.
 
 
 
@@ -394,34 +406,33 @@ Bedeutung von Bridge Nodes (hier: WebTunnel bridges)
 Onion Services/Hidden Services
 -----------------------------------
 
+.. class:: list-with-explanations
+
 - Server, die Anfragen nur aus dem Tor-Netzwerk annehmen, werden als *Onion Services* (bzw. *Hidden Services*) bezeichnet.
 - ``.onion`` ist eine *Pseudo*-Top-Level-Domain, die für Onion Services verwendet wird.
 - Onion Services können nur über das Tor-Netzwerk erreicht werden.
 
-  :peripheral:`Onion-Adresse der New-York-Times im Tor Netzwerk: https://nytimesn7cgmftshazwhfgzm37qxb44r64ytbb2dj3x62d2lljsciiyd.onion (Aus Deutschland faktisch nicht nutzbar.)`
+  `Onion-Adresse der EFF im Tor Netzwerk: https://www.iykpqm7jiradoeezzkhj7c4b33g4hbgfwelht2evxxeicbpjy44c7ead.onion\ <https://www.iykpqm7jiradoeezzkhj7c4b33g4hbgfwelht2evxxeicbpjy44c7ead.onion/>`__
+
+- Liste von öffentlichen Onion-Adressen: https://community.torproject.org/onion-services/#featured-onions
 
 
-
-Tor Browser
+Tor-Browser
 ---------------
 
 Standardanwendung für den Zugriff auf das Tor-Netzwerk.
 
 .. deck::
 
-    .. card:: clearfix
+    .. card::
 
         .. image:: images/tor-onion-service-nyt.webp
-            :alt: Tor Browser mit Ney-York-Times - 01.01.2024
+            :alt: Tor-Browser mit New-York-Times - 01.01.2024
             :align: left
-
-        .. container:: scriptsize
-
-            Ergebnis nach mehreren Minuten Wartezeit und zwei Versuchen überhaupt eine Verbindung aufzubauen.
 
     .. card::
 
-        **Sicherheitseinstellungen des Tor Browsers**
+        .. rubric:: Sicherheitseinstellungen des Tor-Browsers
 
         :Standard: alle Browserfunktionen sind aktiviert.
         :Sicherer: JavaScript ist auf Nicht-HTTPS-Seiten deaktiviert. Wenn JavaScript aktiviert ist, dann sind die Leistungsoptimierungen deaktiviert. Audio und Video (HTML5-Medien) sowie WebGL werden nur nach Mausklick abgespielt.
@@ -430,7 +441,7 @@ Standardanwendung für den Zugriff auf das Tor-Netzwerk.
 
 .. supplemental::
 
-    Das Tor-Netzwerk erlaubt ggf. das Setzen des ``Exit Nodes``, um zum Beispiel geografische Sperren zu umgehen. Entsprechende Dienstanbieter können dies jedoch leicht erkennen, da die Knoten des Tor Netzwerkes bekannt sind (https://check.torproject.org/torbulkexitlist) und verweigern dann den Zugriff.
+    Das Tor-Netzwerk erlaubt ggf. das Setzen des *Exit Nodes*, um zum Beispiel geografische Sperren zu umgehen. Entsprechende Dienstanbieter können dies jedoch leicht erkennen, da die Knoten des Tor Netzwerkes bekannt sind (https://check.torproject.org/torbulkexitlist) und verweigern dann den Zugriff.
 
 
 
@@ -438,13 +449,13 @@ Standardanwendung für den Zugriff auf das Tor-Netzwerk.
 Tor
 ----
 
-.. class:: positive-list incremental
+.. class:: positive-list incremental list-with-explanations
 
 - Schützt vor der Analyse des Datenverkehrs.
 
   Von `SecureDrop <https://securedrop.org/>`__ wird zum Beispiel für Whistleblower empfohlen sich mit dem SecureDrop Service über Tor zu verbinden und erst dann Dokumente hochzuladen.
 
-- Tor Browser schützt relativ effektiv vor Website-Fingerprinting.
+- Der Tor-Browser schützt relativ effektiv vor Website-Fingerprinting.
 
 .. class:: negative-list incremental
 
@@ -494,9 +505,7 @@ Tor
 Übung: Tor
 -----------
 
-- \
-
-  .. exercise:: Onion Services
+.. exercise:: Onion Services
 
     Ist es für *Onion Services* (.onion) notwendig auf HTTPS zu setzen oder reicht HTTP für eine sichere Kommunikation? Ist die Verwendung von HTTPS ggf. sogar problematisch?
 
@@ -509,7 +518,7 @@ Tor
 
         https://support.torproject.org/https/https-1/
 
-- .. exercise:: TOR und DNS Lookups
+.. exercise:: TOR und DNS Lookups
 
     Warum führt der Tor Browser keine DNS Lookups durch? Warum ist dies wichtig und wer kann/muss es stattdessen machen?
 
@@ -520,7 +529,7 @@ Tor
 
         Ein standardmäßiger DNS Lookup würde die Anonymität des Nutzers gefährden. Der Exit Node könnte den DNS Lookup mit dem Datenverkehr des Nutzers korrelieren und damit die Identität des Nutzers ermitteln.
 
-- .. exercise:: TOR abschalten?
+.. exercise:: TOR abschalten?
 
     Warum hätte das Abschalten von TOR auf kriminelle Aktivitäten im Internet vermutlich nur einen geringeren Einfluss?
 
@@ -536,18 +545,14 @@ Tor
 Übung: Tor
 -----------
 
-- \
-
-  .. exercise:: Wie vergleichen sich Proxies und Tor-Knoten?
+.. exercise:: Wie vergleichen sich Proxies und Tor-Knoten?
 
     .. solution::
         :pwd: ProxyVsTor
 
         Ein Proxy ist ein Server, der als Vermittler zwischen einem Client und einem Server fungiert. Ein Tor-Knoten ist ein Server, der als Vermittler zwischen einem Client und einem Server fungiert. Ein Tor-Knoten ist also ein Proxy, aber ein Proxy ist nicht unbedingt ein Tor-Knoten.
 
-- \
-
-  .. exercise:: Wie unterscheidet sich Tor von einem VPN?
+.. exercise:: Wie unterscheidet sich Tor von einem VPN?
 
     .. solution::
         :pwd: VPNsundTOR
@@ -560,9 +565,7 @@ Tor
         - Bei Tor ist dem *Exit Node* nicht bekannt wer der Client ist; bei VPNs ist dem VPN Anbieter bekannt wer der Client ist.
         - Tor erlaubt den Zugriff auf .onion Adressen; VPNs nicht.
 
-- \
-
-  .. exercise:: Tor über VPN oder VPN über TOR?
+.. exercise:: Tor über VPN oder VPN über TOR?
 
     Macht es Sinn ein VPN über Tor oder anders herum zu betreiben?
 
@@ -573,11 +576,9 @@ Tor
 
         Es macht meistens mehr Sinn Tor über ein VPN zu betreiben. In diesem Fall sieht kein TOR-Knoten die IP Adresse des Clients. Insbesondere garantiert diese Lösung die Annonymisierung, die das TOR Netzwerk bietet. Weiterhin weiss der VPN Anbieter nicht, dass der Client TOR benutzt.
 
-- \
+.. exercise:: Kontrolle über TOR Netzwerk?
 
-  .. exercise:: Kontrolle über TOR Netzwerk?
-
-    Was passiert, wenn eine Angreifer in der Lage ist :math:`50\% + 1` der ``Directory Authority`` Server zu kontrollieren?
+    Was passiert, wenn eine Angreifer in der Lage ist 50% + 1 der *Directory Authority Server* zu kontrollieren?
 
     .. solution::
         :pwd: Hell!

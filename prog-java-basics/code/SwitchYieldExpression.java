@@ -5,7 +5,8 @@ void main() {
         switch (month) { // Switch-Ausdruck
             case 2:
                 yield IO.readln("Schaltjahr (j/n)? ").charAt(0) == 'j' ? 29 : 28;
-            case 4, 6, 9, 11:
+            case 4:
+            case 6, 9, 11:
                 yield 30;
             default:
                 yield 31;

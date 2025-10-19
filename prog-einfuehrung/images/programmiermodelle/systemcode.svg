@@ -58,44 +58,20 @@
                         font-family="Noto Sans Display"
                         font-size="18"
                         font-weight="700"
-                        fill="black"
                         x="0"
                         y="18"
-                        xml:space="preserve"
                     >System(naher) Code</tspan>
         </text>
       </g>
-      <g id="Graphic_61">
-        <text transform="translate(557.7578 354.54688)" fill="black">
-          <tspan
-                        font-size="16"
-                        font-weight="400"
-                        fill="black"
-                        x="0"
-                        y="15"
-                    >c</tspan>
-                    <tspan
-                    font-size="16"
-                    font-weight="400"
-                    fill="black"
-                    x="0"
-                    y="34"
-                >c++</tspan>                    
-                <tspan
-                font-size="16"
-                font-weight="400"
-                fill="black"
-                x="0"
-                y="53"
-            >Rust</tspan>
-            <tspan
-                        font-size="16"
-                        font-weight="400"
-                        fill="black"
-                        x="0"
-                        y="72"
-                    >...</tspan>
+      <g id="languages">
+        <text transform="translate(557.7578 354.54688)" fill="black" font-size="16" font-weight="400">
+          <tspan x="0" y="15">c</tspan>
+          <tspan x="0" y="34">c++</tspan>
+          <tspan x="0" y="53">Rust</tspan>
+          <tspan x="0" y="72">...</tspan>
         </text>
+        <path d="M 565 355 L 550 355 L 550 432 L 565 432" stroke="#000" />
+        <path d="M 582 355 h 15 v 77 h -15" stroke="#000" />
       </g>
       <g id="Graphic_114">
         <text transform="translate(517.14844 472.9961)" fill="black">
@@ -103,19 +79,15 @@
                         font-family="Victor Mono"
                         font-size="16"
                         font-weight="400"
-                        fill="black"
                         x="4.800781"
                         y="15"
-                        xml:space="preserve"
                     >Dateien mit </tspan>
           <tspan
                         font-family="Victor Mono"
                         font-size="16"
                         font-weight="400"
-                        fill="black"
                         x="9.601562"
                         y="34"
-                        xml:space="preserve"
                     >Sourcecode</tspan>
         </text>
       </g>
@@ -125,10 +97,8 @@
                         font-family="Victor Mono"
                         font-size="16"
                         font-weight="400"
-                        fill="white"
                         x="0"
                         y="15"
-                        xml:space="preserve"
                     >Binärcode</tspan>
         </text>
       </g>
@@ -153,10 +123,8 @@
                         font-family="Noto Sans Display"
                         font-size="16"
                         font-weight="400"
-                        fill="black"
                         x="0"
                         y="15"
-                        xml:space="preserve"
                     >kompiliert</tspan>
         </text>
       </g>

@@ -488,7 +488,7 @@ Konvergenz von Folgen
 Eigenschaften von Folgen - Konvergenz
 ----------------------------------------
 
-.. admonition:: Definition
+.. definition::
 
     - Eine Folge (:math:`a_n`) ist konvergent zum Grenzwert :math:`a`, wenn es zu jeder Zahl :math:`ε > 0` ein :math:`N \in \mathbb{N}` gibt, so dass :math:`|a_n−a|<ε` für alle :math:`n > N` gilt.
 
@@ -545,7 +545,7 @@ Eigenschaften von Folgen - Beispiel für Konvergenz
 Konvergenz von Folgen - Rechenregeln
 -------------------------------------
 
-.. admonition:: Satz
+.. theorem::
 
     Die beiden Folgen (:math:`a_n`) und (:math:`b_n`) seien konvergent :math:`a_n →a`, :math:`b_n →b` und :math:`λ\in\mathbb{C}`, sowie :math:`p,q \in \mathbb{N}` . Dann gilt:
 
@@ -558,6 +558,7 @@ Konvergenz von Folgen - Rechenregeln
             lim_{n→∞} {a_n \over b_n} & = & {a \over b},\; \text{für}\; b ≠ 0, b_n ≠ 0 \\
             lim_{n→∞} a^{p/q}_n & = & a^{p/q} , \text{wenn}\; a^{p/q}\; \text{existiert} \\
         \end{array}
+
 
 
 Konvergenz von Folgen - wichtige Grenzwerte
@@ -743,7 +744,9 @@ Wir möchten :math:`f(x) = \frac{\ln(x)}{x^{2/3}}` für :math:`x \to \infty` unt
 
     Um eine Potenz aus einer Wurzel zu bekommen, hilft ggf. das Wurzelgesetz :math:`\sqrt{a} \cdot \sqrt{b} = \sqrt{a \cdot b}`.
 
-    Beispiel: :math:`\sqrt{x^4 + x^2} = \sqrt{x^4 (1 + 1/x ^2)} = \sqrt{x^4} \cdot \sqrt{(1 + 1/x ^2)} = x^2 \cdot \sqrt{(1 + 1/x ^2)}`.
+    .. example::
+        
+        :math:`\sqrt{x^4 + x^2} = \sqrt{x^4 (1 + 1/x ^2)} = \sqrt{x^4} \cdot \sqrt{(1 + 1/x ^2)} = x^2 \cdot \sqrt{(1 + 1/x ^2)}`.
 
 
 .. exercise:: Folge mit mehreren Termen
@@ -797,7 +800,7 @@ Landau-Notation
 Asymptotische Abschätzung
 --------------------------------------------------------
 
-.. admonition:: Definition
+.. definition::
 
     .. rubric:: Landau-Notation
 

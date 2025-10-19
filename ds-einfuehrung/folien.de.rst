@@ -568,8 +568,6 @@ Formale Analyse der Skalierbarkeit zentralisierter Systeme
 
 
 
-.. class:: smaller
-
 Formale Analyse der Skalierbarkeit zentralisierter Systeme
 ------------------------------------------------------------
 
@@ -596,7 +594,7 @@ Formale Analyse der Skalierbarkeit zentralisierter Systeme
 
         \bar{N} = \sum_{x\geq 0} x \cdot p_x
         = \sum_{x \geq 0} x \cdot (1-U)U^x
-        = (1-U)\sum_{x\geq 0} x\cdot U^x
+        = (1-U)\sum_{x\geq 0} x\cdot U^x \\
         = \frac{(1-U)U}{(1-U)^2} = \frac{U}{1-U}
 
 .. container:: incremental

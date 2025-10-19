@@ -1664,7 +1664,9 @@ Priorität der Operatoren
 
 
 
-Beispiele zur Auswertungsreihenfolge
+.. class:: exercises transition-scale
+
+Übung zur Auswertungsreihenfolge
 ----------------------------------------------------------
 
 
@@ -1672,7 +1674,9 @@ Beispiele zur Auswertungsreihenfolge
 
     .. container:: far-smaller
 
-        Sind die folgenden Ausdrücke (a) gültig und wie ist (b) ggf. das Ergebnis der folgenden Ausdrücke und (c) welchen Wert haben die Variablen nach der Auswertung (der neue Wert wird dann für den nachfolgenden Ausdruck verwendet)?
+        Sind die folgenden Ausdrücke (a) gültig und wie ist (b) ggf. das Ergebnis der folgenden Ausdrücke und (c) welchen Wert haben die Variablen nach der Auswertung? 
+        
+        (*Achtung: der neue Wert wird dann für den nachfolgenden Ausdruck verwendet*.)
 
         *Initiale* Belegung der Variablen: :java:`int x = 4, y = 2, z = 3;`.
 
@@ -1710,12 +1714,12 @@ Beispiele zur Auswertungsreihenfolge
 
     Schreiben Sie ein Java Script, dass die Anzahl von Sekunden in Stunden, Minuten und Sekunden umrechnet. Lesen Sie die Anzahl von Sekunden von der Konsole ein und geben Sie die Umrechnung auf der Konsole aus.
 
-    Beispielinteraktion:
+    .. example::
 
-    .. code:: text
+        .. code:: text
 
-        Bitte geben Sie die Sekunden ein: 3455
-        0 Stunde(n), 57 Minute(n) und 35 Sekunde(n)
+            Bitte geben Sie die Sekunden ein: 3455
+            0 Stunde(n), 57 Minute(n) und 35 Sekunde(n)
 
     .. solution::
         :pwd: SekundenUmrechnen
@@ -1746,13 +1750,15 @@ Beispiele zur Auswertungsreihenfolge
 Übung
 --------
 
-.. exercise:: Body-Mass-Index (BMI) berechnen mit Java Script
+.. exercise:: Body-Mass-Index (BMI) berechnen mit Java (Skript)
 
-    Lesen Sie das Gewicht in Kilogramm und die Größe in Metern von der Konsole ein und geben Sie den BMI auf der Konsole aus. Geben Sie auch aus, ob die Person Untergewicht (:java:`BMI < 18,5`), Normalgewicht oder Übergewicht (:java:`BMI >= 25`) hat. Falls die Person nicht das Normalgewicht hat, geben Sie auch an, wie viel Gewicht sie bis zum Normalgewicht zunehmen oder abnehmen muss. Berechnungsvorschrift: :math:`BMI = \frac{Gewicht}{Größe^2}`.
+    Lesen Sie das Gewicht in Kilogramm und die Größe in Metern von der Konsole ein und geben Sie den BMI auf der Konsole aus. Geben Sie auch aus, ob die Person Untergewicht (:java:`BMI < 18,5`), Normalgewicht oder Übergewicht (:java:`BMI >= 25`) hat. Falls die Person nicht das Normalgewicht hat, geben Sie auch an, wie viel Gewicht sie bis zum Normalgewicht zunehmen oder abnehmen muss. Berechnungsvorschrift: :math:`BMI = \frac{Gewicht}{Größe^2}`. 
+    
+    Benutzen Sie nur die Konstrukte, die Sie bisher gelernt haben!
 
-    Beispielinteraktion:
+    .. example::
 
-    .. code:: text
+      .. code:: text
 
         Bitte geben Sie Ihr Gewicht in Kilogramm ein: 80
         Bitte geben Sie Ihre Größe in Metern ein: 1.80
@@ -1770,7 +1776,9 @@ Beispiele zur Auswertungsreihenfolge
 
 
 
-.. class:: transition-fade
+
+
+.. class:: transition-fade summary
 
 Von Variablen, Konstanten, Literalen und Ausdrücken
 -------------------------------------------------------
@@ -1823,7 +1831,7 @@ Ein Block in einem Java-Programm ist eine Folge von Anweisungen, die durch gesch
 
 .. class:: incremental-list
 
-- Blöcke werden **nicht** durch einen Semikolon beendet.
+- Blöcke werden *nicht* durch einen Semikolon beendet.
 
   .. code:: java
     :number-lines:
@@ -1962,7 +1970,7 @@ Die :java:`if`-Anweisung setzt sich zusammen aus dem Schlüsselwort :java:`if`, 
 
 .. exercise:: Berechnung des BMI mit if-else Anweisung
 
-    Stellen Sie die vorherige Lösung zum Berechnen des BMI so um, dass Sie nur   :java:`if`-:java:`else`-Anweisungen verwenden.
+    Stellen Sie die vorherige Lösung zum Berechnen des BMI so um, dass Sie nur   :java:`if`-:java:`else`-Anweisungen verwenden und keinen Bedingungsoperator (:java:`? :`).
 
     .. solution::
         :pwd: BmiBerechnenMitIfElse!
@@ -1999,11 +2007,13 @@ Die :java:`if`-Anweisung setzt sich zusammen aus dem Schlüsselwort :java:`if`, 
 
         :Syntax: :java:`case <Literal>: <Anweisungen>`.
 
-        Ein :java:`case`\ -Block setzt sich zusammen aus dem Schlüsselwort :java:`case`, einem oder mehreren :java:`Literal`\ en (konstanter Ergebniswert) und einer Abfolge von Anweisungen.
+        - Ein :java:`case`\ -Block setzt sich zusammen aus dem Schlüsselwort :java:`case`, einem oder mehreren :java:`Literal`\ en (konstanter Ergebniswert) und einer Abfolge von Anweisungen.
 
-        Die Anweisung in einem :java:`case :`-Block werden bis zur folgenden :java:`break`-Anweisung ausgeführt (:eng:`fall-through`).
+        - Die Anweisung in einem :java:`case :`-Block werden bis zur folgenden :java:`break`-Anweisung ausgeführt (:eng:`fall-through`).
 
-        Gibt es keine :java:`break`-Anweisung in einem :java:`case`-Block werden alle Anweisungen bis zum Ende der :java:`switch`-Anweisung ausgeführt.
+        - Gibt es keine :java:`break`-Anweisung in einem :java:`case`-Block werden alle Anweisungen bis zum Ende der :java:`switch`-Anweisung ausgeführt.
+
+        - Für :java:`switch`-Ausdrücke ist am Ende eines :java:`case`-Blocks eine :java:`yield`-Anweisung erforderlich, die den Wert des :java:`case`-Blocks zurückliefert.
 
     .. card::
 
@@ -2032,9 +2042,9 @@ Die :java:`if`-Anweisung setzt sich zusammen aus dem Schlüsselwort :java:`if`, 
 
         :Syntax: :java:`case <Literal> -> <Ausdruck oder Block>`.
 
-        Auf der rechten Seite ist nur ein Ausdruck oder ein Block erlaubt - keine Anweisung.
+        - Auf der rechten Seite ist nur ein Ausdruck oder ein Block erlaubt - keine Anweisung.
 
-        Bei dieser Variante gibt es kein *durchfallen* (:eng:`Fall-Through`), d. h. ein :java:`break` ist nicht zur Beendigung eines :java:`case`-Blocks zu verwenden!
+        - Bei dieser Variante gibt es kein *durchfallen* (:eng:`Fall-Through`), d. h. ein :java:`break` ist nicht zur Beendigung eines :java:`case`-Blocks zu verwenden!
 
     .. card::
 
@@ -2056,9 +2066,9 @@ Die :java:`if`-Anweisung setzt sich zusammen aus dem Schlüsselwort :java:`if`, 
 
     :java:`case L ->` wird erst seit `Java 14 <https://openjdk.org/jeps/361>`__ unterstützt. Ein Mischen ist nicht möglich.
 
-    switch-Anweisung ≘ :eng:`switch-statement`
+    :java:`switch`-Anweisung ≘ :eng:`switch-statement`
 
-    switch-Ausdruck ≘ :eng:`switch-expression`
+    :java:`switch`-Ausdruck ≘ :eng:`switch-expression`
 
 
 
@@ -2102,7 +2112,7 @@ Effizienz von bedingten Anweisungen
 
 - Bei :java:`if`-/\ :java:`else`-Anweisungen werden die Prüf-Ausdrücke sequentiell (in der angegebenen Reihenfolge) ausgewertet (ein Ausdruck pro Alternative).
 
-- Bei :java:`switch`-Anweisungen/-Ausdrücken wird nur ein einziger Prüf-Ausdruck ausgewertet und die entsprechende(n) Alternative(n) direkt oder zumindest sehr effizient ausgeführt.
+- Bei (klassischen) :java:`switch`-Anweisungen/-Ausdrücken wird nur ein einziger Prüf-Ausdruck ausgewertet und die entsprechende(n) Alternative(n) direkt oder zumindest sehr effizient ausgeführt.
 
 - Daher benötigt die Auswertung einer :java:`switch`-Anweisung i. d. R. weniger Rechenschritte als eine äquivalente :java:`if`-/\ :java:`else`-Anweisung.
 
@@ -2132,7 +2142,7 @@ Effizienz von bedingten Anweisungen
 
     .. container:: bonus-task
 
-        Heimaufgabe: Erlauben Sie statt der Eingabe einer Zahl für den Wochentag auch die Eingabe des Wochentages als Text (z. B. „Montag“, „Dienstag“, ...).
+        Optional: Erlauben Sie statt der Eingabe einer Zahl für den Wochentag auch die Eingabe des Wochentages als Text (z. B. „Montag“, „Dienstag“, ...).
 
     .. solution::
         :pwd: Am241224IstDienstag
@@ -2177,7 +2187,7 @@ Schleifen
             int sum = 0;
 
             // for(<Init>; <Ausdruck>; <Update>) <Anweisung>
-            for(int i = 0; i < 10 ; ++i ){
+            for(int i = 0; i < 10 ; ++i){
                 sum += i;
                 IO.println("sum="+sum);
             }
@@ -2200,7 +2210,7 @@ Schleifen
 
         .. grid::
 
-            .. cell::
+            .. cell:: width-50
 
                 .. code:: java
                     :class: copy-to-clipboard
@@ -2208,21 +2218,22 @@ Schleifen
 
                     int sum=0;
 
-                    for(int i = 0, j = 2; i < 10; ++i, j+=2 ){
+
+                    for(int i=0, j=2; i < 10; ++i, j+=2){
                         sum +=j;
                         IO.println("sum="+sum);
                     }
 
-            .. cell::
+            .. cell:: width-50
 
                 .. code:: java
                         :class: copy-to-clipboard
                         :number-lines: 1
 
                         int sum=0;
-                        int i=0;
-                        int j=2;
-                        for(i++, j--; i < 10 ; ++i, j+=2 ){
+                        int i=-1;
+                        int j=3;
+                        for(i++, j--; i < 10 ; ++i, j+=2){
                             sum +=j;
                             IO.println("sum="+sum);
                         }
@@ -2361,7 +2372,7 @@ Kontrolle des Schleifenablaufs
         - Bei :java:`continue` wird die Ausführung des aktuellen Schleifendurchlaufs abgebrochen und zum nächsten Schleifendurchlauf gesprungen.
 
         - :java:`break <Marke>` bricht auch die Ausführung des aktuellen Schleifendurchlaufs ab und es wird zur Anweisung nach einem Schleifenrumpf der Schleife mit der gegebenen Marke gesprungen.
-        - Eine Marke setzt sich zusammen aus einem Java-Bezeichner und einem „:“ und kann vor einer Schleife bzw. einem Block stehen
+        - Eine Marke setzt sich zusammen aus einem Java-Bezeichner und einem „:“ und kann vor einer Schleife bzw. einem Block stehen.
 
 .. supplemental::
 
@@ -2501,7 +2512,7 @@ Kontrolle des Schleifenablaufs
 
                   (D. h. wie schnell konvergiert das Verfahren?)
 
-                - Können Sie die Kubikwurzel von 2.251.748.274.470.911 (:java:`2251748274470911`) berechnen?
+                - Können Sie die Kubikwurzel von 2.251.748.274.470.911 (:java:`2_251_748_274_470_911`) berechnen?
 
                 - Wie kann man feststellen ob eine gute Näherung an die Kubikwurzel vorliegt?
 
@@ -2529,7 +2540,7 @@ Methoden
 ----------------------------------------------------------
 
 
-Methoden (in Java Scripts)
+Methoden (in Java Skripts)
 ----------------------------------------------------------
 
 .. deck::
@@ -2635,7 +2646,7 @@ Rekursive Methoden - Beispiel
 
 .. grid::
 
-    .. cell:: fade-out
+    .. cell:: width-50 fade-out
 
         Schleifen basierte Implementierung des Algorithmus von Euklid:
 
@@ -2653,7 +2664,7 @@ Rekursive Methoden - Beispiel
                 return z1;
             }
 
-    .. cell::
+    .. cell:: width-50
 
         Elegante rekursive Implementierung des Algorithmus von Euklid:
 
@@ -2667,6 +2678,11 @@ Rekursive Methoden - Beispiel
                 else
                     return ggt(z2, z1 % z2);
             }
+
+        .. attention::
+            :class: incremental
+
+            In vielen Programmiersprachen (inkl. Java) ist die Rekursion in bestimmten, aber häufigen Fällen nicht so effizient wie Schleifen.
 
 
 
@@ -2892,7 +2908,7 @@ Einrückungen und Blöcke - Beispiele
 
     .. card::
 
-        .. rubric:: Falsche Einrückung
+        .. rubric:: Falsche Einrückung, fehlende Leerzeichen, fehlende Umbrüche
 
         .. code:: java
             :number-lines:
@@ -2909,7 +2925,7 @@ Einrückungen und Blöcke - Beispiele
 
     .. card::
 
-        .. rubric:: Korrekte Einrückung
+        .. rubric:: Korrekte Einrückung, Leerzeichen und Umbrüche
 
         .. code:: java
             :number-lines:
@@ -2945,9 +2961,8 @@ Zeilenlängen
 ----------------------------------------------------------
 
 .. warning::
-    :class: incremental
 
-    Zeilen, mit mehr als 80 bis 100 Zeichen erfordern beim Lesen häufig horizontales Scrollen und sind unter allen Umständen zu vermeiden!
+    Lange Zeilen, mit mehr als 80 bis 100 Zeichen, erfordern beim Lesen häufig horizontales Scrollen und sind unter allen Umständen zu vermeiden!
 
     .. class:: incremental
 
@@ -3035,7 +3050,7 @@ Von Codekonventionen und Lesbarkeit - Zusammenfassung
 
 Auf dem Weg zu einem professionellen Programmierer (egal welcher Sprache) ist es wichtig, neben den Sprachkonstrukten auch die geltenden Konventionen zu erlernen und einzuhalten. Diese sind je nach Sprache meist leicht unterschiedlich, aber in der Regel sehr ähnlich.
 
-Das Einhalten fördert die Zusammenarbeit mit anderen Programmieren - *insbesondere auch Ihrem zukünftigen Ich* - und erhöht die Lesbarkeit des Codes.
+Das Einhalten fördert die Zusammenarbeit mit anderen Programmierern - *insbesondere auch Ihrem zukünftigen Ich* - und erhöht die Lesbarkeit des Codes.
 
 
 

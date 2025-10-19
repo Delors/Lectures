@@ -1003,8 +1003,7 @@ Multiplikation in :math:`GF(2^n)`
 Übung
 ------
 
-.. exercise:: Polynomarithmetik im GF(2^5)
-   :formatted-title: Polynomarithmetik im :math:`GF(2^5)`
+.. exercise:: Polynomarithmetik im GF(2⁵)
 
    Gegeben sei :math:`GF(2^5)` mit dem irreduziblen Polynom :math:`p(x) = x^5 + x^2 + 1`
 
@@ -1038,13 +1037,12 @@ Multiplikation in :math:`GF(2^n)`
 Übung
 ----------------------------
 
-.. exercise:: Einfache Polynomarithmetik im GF(2^8)
-    :formatted-title: Einfache Polynomarithmetik im :math:`GF(2^8)`
+.. exercise:: Einfache Polynomarithmetik im GF(2⁸)
 
-    Nehmen wir an, dass 7 und 3 stellvertretend für die Bitmuster der Koeffizienten des Polynoms stehen.
+    Nehmen wir an, dass die Dezimalzahlen 7 und 3 stellvertretend für die Bitmuster der Koeffizienten des Polynoms stehen.
 
-    - Berechne: :math:`7d - 3d`
-    - Berechne: :math:`7d + 3d`
+    - Berechne: :math:`7_{10} - 3_{10}`
+    - Berechne: :math:`7_{10} + 3_{10}`
 
     .. solution::
         :pwd: 0x04
@@ -1057,8 +1055,7 @@ Multiplikation in :math:`GF(2^n)`
 
         Die Lösung ist in beiden Fällen: 4 (d. h. Addition und Subtraktion sind gleich; jeder Wert ist sein additiver Kehrwert).
 
-.. exercise:: Polynommultiplikation im GF(2^8)
-    :formatted-title: Polynommultiplikation im :math:`GF(2^8)`
+.. exercise:: Polynommultiplikation im GF(2⁸)
 
     .. class:: list-with-explanations
 
@@ -1075,9 +1072,9 @@ Multiplikation in :math:`GF(2^n)`
             0x46 = 0100 0110
 
             0x03 * 0x46 =      0x46 ⊕ (0x02 * 0x46) =
-                          0100 0110 ⊕   1000 1100   = 1100 1010
-                                                    = 202
-                                                    = 0xCA
+                          0100 0110 ⊕   1000 1100   = 1100 1010   (Binär)
+                                                    = 202         (Dezimal)
+                                                    = 0xCA        (Hexadezimal)
 
         .. math::
 

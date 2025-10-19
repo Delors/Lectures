@@ -119,7 +119,6 @@
                         fill="#0432ff"
                         x="1.085"
                         y="15"
-                        xml:space="preserve"
                     >Schlüssel </tspan>
           <tspan
                         font-family="Noto Sans Display"
@@ -127,7 +126,6 @@
                         font-weight="400"
                         fill="#0432ff"
                         y="22"
-                        xml:space="preserve"
                     >1</tspan>
         </text>
       </g>
@@ -145,15 +143,12 @@
                         fill="black"
                         x="46.781"
                         y="15"
-                        xml:space="preserve"
-                    >P</tspan>
-          <tspan
+                    >P</tspan><tspan
                         font-family="Noto Sans Display"
                         font-size="14"
                         font-weight="400"
                         fill="black"
-                        y="22"
-                        xml:space="preserve"
+                        y="20"
                     >j</tspan>
         </text>
       </g>
@@ -171,15 +166,12 @@
                         fill="black"
                         x="46.62"
                         y="15"
-                        xml:space="preserve"
-                    >C</tspan>
-          <tspan
+                    >C</tspan><tspan
                         font-family="Noto Sans Display"
                         font-size="14"
                         font-weight="400"
                         fill="black"
-                        y="22"
-                        xml:space="preserve"
+                        y="20"
                     >j</tspan>
         </text>
       </g>
@@ -197,7 +189,6 @@
                         fill="black"
                         x="50.778"
                         y="15"
-                        xml:space="preserve"
                     >i</tspan>
         </text>
       </g>
@@ -215,7 +206,6 @@
                         fill="black"
                         x="50.778"
                         y="15"
-                        xml:space="preserve"
                     >i</tspan>
         </text>
       </g>
@@ -306,7 +296,6 @@
                         fill="black"
                         x="40.992"
                         y="15"
-                        xml:space="preserve"
                     >AES </tspan>
           <tspan
                         font-family="Noto Sans Display"
@@ -315,7 +304,6 @@
                         fill="black"
                         x="1.981"
                         y="34"
-                        xml:space="preserve"
                     >Verschlüsselung </tspan>
         </text>
       </g>
@@ -332,7 +320,6 @@
                         fill="black"
                         x="40.992"
                         y="15"
-                        xml:space="preserve"
                     >AES </tspan>
           <tspan
                         font-family="Noto Sans Display"
@@ -341,7 +328,6 @@
                         fill="black"
                         x="2.121"
                         y="34"
-                        xml:space="preserve"
                     >Entschlüsselung </tspan>
         </text>
       </g>
@@ -462,7 +448,6 @@
                         fill="black"
                         x="40.992"
                         y="15"
-                        xml:space="preserve"
                     >AES </tspan>
           <tspan
                         font-family="Noto Sans Display"
@@ -471,7 +456,6 @@
                         fill="black"
                         x="1.981"
                         y="34"
-                        xml:space="preserve"
                     >Verschlüsselung</tspan>
         </text>
       </g>
@@ -488,7 +472,6 @@
                         fill="black"
                         x="40.992"
                         y="15"
-                        xml:space="preserve"
                     >AES </tspan>
           <tspan
                         font-family="Noto Sans Display"
@@ -497,7 +480,6 @@
                         fill="black"
                         x="1.981"
                         y="34"
-                        xml:space="preserve"
                     >Verschlüsselung</tspan>
         </text>
       </g>
@@ -515,15 +497,12 @@
                         fill="black"
                         x="46.62"
                         y="15"
-                        xml:space="preserve"
-                    >C</tspan>
-          <tspan
+                    >C</tspan><tspan
                         font-family="Noto Sans Display"
                         font-size="14"
                         font-weight="400"
                         fill="black"
-                        y="22"
-                        xml:space="preserve"
+                        y="20"
                     >j</tspan>
         </text>
       </g>
@@ -541,15 +520,12 @@
                         fill="black"
                         x="46.781"
                         y="15"
-                        xml:space="preserve"
-                    >P</tspan>
-          <tspan
+                    >P</tspan><tspan
                         font-family="Noto Sans Display"
                         font-size="14"
                         font-weight="400"
                         fill="black"
-                        y="22"
-                        xml:space="preserve"
+                        y="20"
                     >j</tspan>
         </text>
       </g>
@@ -639,7 +615,6 @@
                         font-weight="400"
                         fill="black"
                         x="0"
-                        xml:space="preserve"
                     >T</tspan>
         </text>
       </g>
@@ -651,7 +626,6 @@
                         font-weight="400"
                         fill="black"
                         x="0"
-                        xml:space="preserve"
                     >T</tspan>
         </text>
       </g>
@@ -812,7 +786,6 @@
                         fill="#ff9300"
                         x="2.793"
                         y="15"
-                        xml:space="preserve"
                     >Schlüssel</tspan>
           <tspan
                         font-family="Noto Sans Display"
@@ -820,7 +793,6 @@
                         font-weight="400"
                         fill="#ff9300"
                         y="22"
-                        xml:space="preserve"
                     >2</tspan>
         </text>
       </g>
@@ -833,7 +805,6 @@
                         fill="#ff9300"
                         x="2.793"
                         y="15"
-                        xml:space="preserve"
                     >Schlüssel</tspan>
           <tspan
                         font-family="Noto Sans Display"
@@ -841,7 +812,6 @@
                         font-weight="400"
                         fill="#ff9300"
                         y="22"
-                        xml:space="preserve"
                     >2</tspan>
         </text>
       </g>
@@ -880,15 +850,12 @@
                         fill="black"
                         x="0"
                         y="15"
-                        xml:space="preserve"
-                    >⍺</tspan>
-          <tspan
+                    >⍺</tspan><tspan
                         font-family="Noto Sans Display"
                         font-size="14"
                         font-weight="400"
                         fill="black"
-                        y="22"
-                        xml:space="preserve"
+                        y="20"
                     >j</tspan>
         </text>
       </g>
@@ -901,15 +868,12 @@
                         fill="black"
                         x="0"
                         y="15"
-                        xml:space="preserve"
-                    >⍺</tspan>
-          <tspan
+                    >⍺</tspan><tspan
                         font-family="Noto Sans Display"
                         font-size="14"
                         font-weight="400"
                         fill="black"
-                        y="22"
-                        xml:space="preserve"
+                        y="20"
                     >j</tspan>
         </text>
       </g>
@@ -974,7 +938,6 @@
                         fill="#008f00"
                         x="5968559e-19"
                         y="15"
-                        xml:space="preserve"
                     >PP</tspan>
         </text>
       </g>
@@ -987,7 +950,6 @@
                         fill="#008f00"
                         x="5968559e-19"
                         y="15"
-                        xml:space="preserve"
                     >PP</tspan>
         </text>
       </g>
@@ -1000,7 +962,6 @@
                         fill="#941100"
                         x="9023893e-19"
                         y="15"
-                        xml:space="preserve"
                     >CC</tspan>
         </text>
       </g>
@@ -1013,7 +974,6 @@
                         fill="#941100"
                         x="9023893e-19"
                         y="15"
-                        xml:space="preserve"
                     >CC</tspan>
         </text>
       </g>

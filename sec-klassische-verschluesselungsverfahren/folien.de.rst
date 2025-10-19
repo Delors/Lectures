@@ -16,7 +16,7 @@ Klassische Verschlüsselungsmethoden
 
 :Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
 :Kontakt: michael.eichberg@dhbw.de, Raum 149B
-:Version: 1.1.2
+:Version: 1.1.4
 
 .. class:: sources
 
@@ -191,14 +191,14 @@ Klassifizierung von Angriffen
 
         Ciphertext Only, "- Verschlüsselungsalgorithmus und Chiffretext"
         Known Plaintext, "- Verschlüsselungsalgorithmus und Chiffretext
-        - ein oder mehrere Klartext-Chiffretext-Paare, die mit dem geheimen Schlüssel verschlüsselt wurden"
+        - *ein oder mehrere Klartext-Chiffretext-Paare, die mit dem geheimen Schlüssel verschlüsselt wurden*"
         Chosen Plaintext, "- Verschlüsselungsalgorithmus und Chiffretext
-        - Klartextnachricht, die vom Kryptoanalytiker gewählt wurde, zusammen mit dem zugehörigen Chiffretext, der mit dem geheimen Schlüssel verschlüsselt wurde."
+        - *Klartextnachricht, die vom Kryptoanalytiker gewählt wurde, zusammen mit dem zugehörigen Chiffretext, der mit dem geheimen Schlüssel verschlüsselt wurde.*"
         Chosen Ciphertext, "- Verschlüsselungsalgorithmus und Chiffretext
-        - Chiffretext, der vom Kryptoanalytiker gewählt wurde, zusammen mit dem zugehörigen entschlüsselten Klartext, der mit dem geheimen Schlüssel entschlüsselt wurde."
+        - *Chiffretext, der vom Kryptoanalytiker gewählt wurde, zusammen mit dem zugehörigen entschlüsselten Klartext, der mit dem geheimen Schlüssel entschlüsselt wurde.*"
         Chosen Text, "- Verschlüsselungsalgorithmus und Chiffretext
-        - vom Kryptoanalytiker gewählte Klartextnachricht, zusammen mit dem zugehörigen Chiffretext, der mit dem geheimen Schlüssel verschlüsselt wurde.
-        - vom Kryptoanalytiker gewählter Chiffretext zusammen mit dem entsprechenden entschlüsselten Klartext, der mit dem geheimen Schlüssel erzeugt wurde."
+        - *vom Kryptoanalytiker gewählte Klartextnachricht, zusammen mit dem zugehörigen Chiffretext, der mit dem geheimen Schlüssel verschlüsselt wurde.*
+        - *vom Kryptoanalytiker gewählter Chiffretext zusammen mit dem entsprechenden entschlüsselten Klartext, der mit dem geheimen Schlüssel erzeugt wurde.*"
 
 .. supplemental::
 
@@ -261,26 +261,25 @@ Substitutions-Chiffren
 
 
 
-Cäsar Chiffre
+Cäsar-Chiffre
 -------------
 
 - Einfachste und früheste bekannte Verwendung einer Substitutions-Chiffre; verwendet von Julius Cäsar.
-- Dabei wird jeder Buchstabe des Alphabets durch einen Buchstaben ersetzt, der drei Stellen weiter hinten im Alphabet steht.
-- Am Ende des Alphabets wird wieder am Anfang begonnen. Somit folgt auf den Buchstabe Z der Buchstabe A.
 
-    ::
+.. container:: incremental
 
-        unverschlüsselt:    meet me after the toga party
+    - Dabei wird jeder Buchstabe des Alphabets durch einen Buchstaben ersetzt, der drei Stellen weiter hinten im Alphabet steht.
+    - Am Ende des Alphabets wird wieder am Anfang begonnen. Somit folgt auf den Buchstabe Z der Buchstabe A.
 
-    .. class:: incremental
+      :unverschlüsselt:    ``meet me after the toga party``
 
-    ::
+      .. class:: incremental
 
-        verschlüsselt:      PHHW PH DIWHU WKH WRJD SDUWB
-
+      :verschlüsselt:      ``PHHW PH DIWHU WKH WRJD SDUWB``
 
 
-Cäsar-Chiffre - historische Verwendung
+
+Cäsar-Chiffre: historische Verwendung
 ----------------------------------------------------
 
 Die Transformation kann wie folgt ausgedrückt werden:
@@ -293,113 +292,113 @@ Die Transformation kann wie folgt ausgedrückt werden:
 
     D E F G H I J K L M N O P Q R S T U V W X Y Z A B C
 
-Mathematisch, wenn wir jedem Buchstaben einen Wert zuweisen:
+.. container:: incremental
 
-.. csv-table::
-    :delim: space
-    :width: 100%
-    :class: compact table-data-monospaced text-align-center highlight-cell-on-hover
-    :header: a b c d e f g h i j k l m n o p q r s t u v w x y z
+    Mathematisch, wenn wir jedem Buchstaben einen Wert zuweisen:
 
-    0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25
+    .. csv-table::
+        :delim: space
+        :width: 100%
+        :class: compact table-data-monospaced text-align-center highlight-cell-on-hover
+        :header: a b c d e f g h i j k l m n o p q r s t u v w x y z
 
-Der Algorithmus zur Verschlüsselung ist dann (:math:`p` ist der Wert des zu verschlüsselnden Buchstabens):
+        0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25
 
-.. math::
-    Y = E(3, p) = (p + 3)\bmod 26
+    Der Algorithmus zur Verschlüsselung ist dann (p ist der Wert des zu verschlüsselnden Buchstabens):
+
+        Y = E(3,p) = (p + 3) mod 26
 
 
 
 Verallgemeinerter Cäsar-Chiffre-Algorithmus
 ------------------------------------------------
 
-Eine Verschiebung kann beliebig groß sein (:math:`k`), so dass der allgemeine Cäsar-Algorithmus lautet:
+Eine Verschiebung kann beliebig groß sein (k), so dass der allgemeine Cäsar-Algorithmus lautet:
 
-.. math::
+    Y = E(k,p) = (p + k) mod 26
 
-    Y = E(k, p)= (p + k)\; mod\; 26
+Wobei k einen Wert im Bereich von 1 bis 25 annimmt; der Entschlüsselungsalgorithmus ist einfach:
 
-Wobei :math:`k` einen Wert im Bereich von 1 bis 25 annimmt; der Entschlüsselungsalgorithmus ist einfach:
-
-.. math::
-
-    p = D(k,C) = (Y - k)\; mod\; 26
+    p = D(k,C) = (Y - k) mod 26
 
 
 
 Brute-Force-Kryptoanalyse der Cäsar-Chiffre
 ------------------------------------------------------
 
-
 .. csv-table::
     :delim: space
-    :class: highlight-row-on-hover
+    :class: highlight-row-on-hover compact table-data-monospaced booktabs
     :align: center
-    :header: Key PHHW PH DIWHU WKH WRJD SDUWB
     :stub-columns: 1
 
-    1 OGGV OG CHVGT VJG VQIC RCTVA
-    2 NFFU NF BGUFS UIF UPHB QBSUZ
-    3 MEET ME AFTER THE TOGA PARTY
-    4 LDDS LD ZESDQ SGD SNFZ OZQSX
-    5 KCCR KC YDRCP RFC RMEY NYPRW
-    6 JBBQ JB XCQBO QEB QLDX MXOQV
-    7 IAAP IA WBPAN PDA PKCW LWNPU
-    8 HZZO HZ VAOZM OCZ OJBV KVMOT
-    9 GYYN GY UZNYL NBY NIAU JULNS
-    10 FXXM FX TYMXK MAX MHZT ITKMR
-    11 EWWL EW SXLWJ LZW LGYS HSJLQ
-    12 DVVK DV RWKVI KYV KFXR GRIKP
-    13 CUUJ CU QVJUH JXU JEWQ FQHJO
-    ... ... ... ... ... ... ...
-    25 QIIX QI EJXIV XLI XSKE TEVXC
+    **Key** PHHW PH DIWHU WKH WRJD SDUWB (Ciphertext) 
+    1 OGGV OG CHVGT VJG VQIC RCTVA " "
+    2 NFFU NF BGUFS UIF UPHB QBSUZ " "
+    3 MEET ME AFTER THE TOGA PARTY " "
+    4 LDDS LD ZESDQ SGD SNFZ OZQSX " "
+    5 KCCR KC YDRCP RFC RMEY NYPRW " "
+    6 JBBQ JB XCQBO QEB QLDX MXOQV " "
+    7 IAAP IA WBPAN PDA PKCW LWNPU " "
+    8 HZZO HZ VAOZM OCZ OJBV KVMOT " "
+    9 GYYN GY UZNYL NBY NIAU JULNS " "
+    10 FXXM FX TYMXK MAX MHZT ITKMR " "
+    11 EWWL EW SXLWJ LZW LGYS HSJLQ " "
+    12 DVVK DV RWKVI KYV KFXR GRIKP " "
+    13 CUUJ CU QVJUH JXU JEWQ FQHJO " "
+    ... ..\.. \.. ..\... ... .\... ..\... " "
+    25 QIIX QI EJXIV XLI XSKE TEVXC " "
 
 
 
 Brute-Force-Kryptoanalyse (z. B. der Caesar-Chiffre)
 -----------------------------------------------------
 
-.. story::
+.. deck::
 
-    Die Entschlüsselung ist komplizierter, wenn der Klartext bereits eine sehr hohe Entropie aufweist, wie z. B. im Falle einer komprimierten ZIP Datei:
+    .. card::
 
-    .. csv-table::
-        :delim: space
-        :class: compact table-data-monospaced highlight-row-on-hover booktabs font-size-75
-        :width: 100%
+        Die Entschlüsselung ist komplizierter, wenn der Klartext bereits eine sehr hohe Entropie aufweist, wie z. B. im Falle einer komprimierten ZIP Datei:
 
-        00000000: 504b 0304 1400 0000 0800 afb1 4257 1da9  PK..........BW..
-        00000010: b0b9 4b00 0000 4f04 0000 0800 1c00 6465  ..K...O.......de
-        00000020: 6d6f 2e74 7874 5554 0900 036a 241b 65a4  mo.txtUT...j$.e.
-        00000030: a9c0 6575 780b 0001 04f8 0100 0004 1400  ..eux...........
-        00000040: 0000 edcc db09 8030 0c05 d07f a7c8 049d  .......0........
-        00000050: a28b c4f6 6203 e983 18d0 6e2f ee91 ffc3  ....b.....n/....
-        00000060: c928 b697 cb1c 2437 f569 a032 fb52 29ec  .(....$7.i.2.R).
-        00000070: a8f4 340c f206 5aca 321c afff 8cd5 c075  ..4...Z.2......u
-        00000080: d3c5 762a d291 2389 2492 48d2 0750 4b01  ..v*..#.$.H..PK.
-        00000090: 021e 0314 0000 0008 00af b142 571d a9b0  ...........BW...
-        000000a0: b94b 0000 004f 0400 0008 0018 0000 0000  .K...O..........
-        000000b0: 0001 0000 00ff 8100 0000 0064 656d 6f2e  ...........demo.
-        000000c0: 7478 7455 5405 0003 6a24 1b65 7578 0b00  txtUT...j$.eux..
-        000000d0: 0104 f801 0000 0414 0000 0050 4b05 0600  ...........PK...
-        000000e0: 0000 0001 0001 004e 0000 008d 0000 0000  .......N........
-        000000f0: 00
+        .. csv-table::
+            :delim: space
+            :class: compact table-data-monospaced highlight-row-on-hover booktabs font-size-85
+            :width: 100%
 
-    .. question::
-        :class: incremental
+            00000000: 504b 0304 1400 0000 0800 afb1 4257 1da9  PK..........BW..
+            00000010: b0b9 4b00 0000 4f04 0000 0800 1c00 6465  ..K...O.......de
+            00000020: 6d6f 2e74 7874 5554 0900 036a 241b 65a4  mo.txtUT...j$.e.
+            00000030: a9c0 6575 780b 0001 04f8 0100 0004 1400  ..eux...........
+            00000040: 0000 edcc db09 8030 0c05 d07f a7c8 049d  .......0........
+            00000050: a28b c4f6 6203 e983 18d0 6e2f ee91 ffc3  ....b.....n/....
+            00000060: c928 b697 cb1c 2437 f569 a032 fb52 29ec  .(....$7.i.2.R).
+            00000070: a8f4 340c f206 5aca 321c afff 8cd5 c075  ..4...Z.2......u
+            00000080: d3c5 762a d291 2389 2492 48d2 0750 4b01  ..v*..#.$.H..PK.
+            00000090: 021e 0314 0000 0008 00af b142 571d a9b0  ...........BW...
+            000000a0: b94b 0000 004f 0400 0008 0018 0000 0000  .K...O..........
+            000000b0: 0001 0000 00ff 8100 0000 0064 656d 6f2e  ...........demo.
+            000000c0: 7478 7455 5405 0003 6a24 1b65 7578 0b00  txtUT...j$.eux..
+            000000d0: 0104 f801 0000 0414 0000 0050 4b05 0600  ...........PK...
+            000000e0: 0000 0001 0001 004e 0000 008d 0000 0000  .......N........
+            000000f0: 00
 
-        Wie kann man - wenn man weiss, dass es sich um eine ZIP Datei handelt - die Caesar-Chiffre knacken?
+    .. card:: s-overlay center-content 
+
+        .. question::
+            :class: backdrop-blur
+
+            Wie kann man - wenn man weiss, dass es sich um eine ZIP Datei handelt - die Caesar-Chiffre knacken?
 
 
 
 Monoalphabetische Chiffren
 --------------------------
 
-- Eine Permutation einer endlichen Menge von Elementen :math:`S` ist eine geordnete Folge aller Elemente von :math:`S`, wobei jedes Element genau einmal vorkommt.
+- Eine Permutation einer endlichen Menge von Elementen S ist eine geordnete Folge aller Elemente von S, wobei jedes Element genau einmal vorkommt.
 
 .. class:: incremental
 
-- Wenn die „Chiffre“-Zeile (siehe Cäsar-Chiffre) eine beliebige Permutation der 26 alphabetischen Zeichen sein kann, dann gibt es :math:`26!` oder mehr als :math:`4 \times 10^{26}` mögliche Schlüssel.
+- Wenn die „Chiffre“-Zeile (siehe Cäsar-Chiffre) eine beliebige Permutation der 26 alphabetischen Zeichen sein kann, dann gibt es 26! (*26 Fakultät*) oder mehr als 4 · 10²⁶ mögliche Schlüssel.
 
   - Dies ist um 10 Größenordnungen größer als der Schlüsselraum für DES!
   - Der Ansatz wird als monoalphabetische Substitutions-Chiffre bezeichnet, da pro Nachricht ein einziges Chiffre-Alphabet verwendet wird.
@@ -481,7 +480,7 @@ Playfair Verschlüsselung
 Die Verschlüsselung wird für jedes Buchstabenpaar des Klartextes durchgeführt.
 
 .. compound::
-    :class: width-30 float-right
+    :class: width-25 float-right
 
     .. csv-table::
         :delim: space
@@ -496,10 +495,10 @@ Die Verschlüsselung wird für jedes Buchstabenpaar des Klartextes durchgeführt
 
 .. class:: incremental-list
 
-1. Wenn beide Buchstaben gleich sind (oder nur ein Buchstabe übrig ist), fügen Sie ein "X" hinter dem ersten Buchstaben ein. Verschlüsseln Sie das neue Paar und fahren Sie fort. (Z. B. würde statt "ballon" "ba lx lo nX" verschlüsselt werden.)
+1. Wenn beide Buchstaben gleich sind (oder nur ein Buchstabe übrig ist), fügen Sie ein "X" hinter dem ersten Buchstaben ein. Verschlüsseln Sie das neue Paar und fahren Sie fort. (Z. B. würde statt "ballon" "ba lX lo nX" verschlüsselt werden.)
 2. Wenn die Buchstaben in der gleichen Zeile stehen, ersetzen Sie sie durch die Buchstaben unmittelbar rechts davon (ggf. umbrechen). (Z. B. wird `ar` als `RM` verschlüsselt.)
 3. Tauchen die Buchstaben in derselben Spalte auf, so sind sie durch die unmittelbar darunter liegenden Buchstaben zu ersetzen (ggf. umbrechen). (Z. B. wird "mu" als "CM" verschlüsselt.)
-4. Befinden sich die Buchstaben nicht in derselben Zeile oder Spalte, so werden sie durch die Buchstaben in derselben Zeile bzw. in dem anderen Paar von Ecken des durch das ursprüngliche Paar definierten Rechtecks ersetzt. (Z. B. wird `hs` als `BP` und `ea` als `IM` verschlüsselt.)
+4. Befinden sich die Buchstaben nicht in derselben Zeile oder Spalte, so werden sie durch die Buchstaben in derselben Zeile bzw. in dem anderen Paar von Ecken des durch das ursprüngliche Paar definierten Rechtecks ersetzt (z. B. `hs` → `BP`; `ea` → `IM`).
 
 
 
@@ -548,7 +547,7 @@ Vigenère-Tableau
 
 .. grid::
 
-    .. cell:: width-30
+    .. cell:: width-25
 
         .. rubric:: Aufbau des Vigenère-Tableaus
 
@@ -556,18 +555,17 @@ Vigenère-Tableau
         - 1\ . Spalte: Schlüsselbuchstabe
         - Tableau: Verschlüsselter Buchstabe
 
-        .. container:: incremental
+        .. example:: 
+            :class: incremental s-font-size-90
 
-            **Beispiel**
+            Sei der Schlüssel ``D`` und der Klartextbuch- stabe ``b``, dann ist der Chiffretextbuchstabe ``E``.
 
-            Nehmen wir an, der Schlüssel ist "D" und der Klartextbuchstabe sei "b". Dann ist der Chiffretextbuchstabe "E".
-
-    .. cell:: width-70
+    .. cell:: width-75
 
         .. csv-table::
             :delim: space
             :align: right
-            :class: font-size-70 ultra-compact highlight-on-hover monospaced text-align-center
+            :class: font-size-75 ultra-compact highlight-on-hover monospaced text-align-center
 
             / **a** **b** **c** **d** **e** **f** **g** **h** **i** **j** **k** **l** **m** **n** **o** **p** **q** **r** **s** **t** **u** **v** **w** **x** **y** **z**
             **A** A B C D E F G H I J K L M N O P Q R S T U V W X Y Z
@@ -608,13 +606,11 @@ Beispiel einer Vigenère-Verschüsselung
 .. example::
     :class: incremental
 
-    Wenn das Schlüsselwort ``deceptive`` ist, wird die Nachricht „We are discovered save yourself“ wie folgt verschlüsselt:
+    Wenn das Schlüsselwort ``deceptive`` ist, wird die Nachricht: ``We are discovered save yourself``, wie folgt verschlüsselt:
 
-    ::
-
-        Schlüssel:  DECEPTIVEDECEPTIVEDECEPTIVE
-        Klartext:   wearediscoveredsaveyourself
-        Geheimtext: ZICVTWQNGRZGVTWAVZHCQYGLMGJ
+    :Schlüssel:  ``DECEPTIVEDECEPTIVEDECEPTIVE``
+    :Klartext:   ``wearediscoveredsaveyourself``
+    :Geheimtext: ``ZICVTWQNGRZGVTWAVZHCQYGLMGJ``
 
 
 
@@ -625,21 +621,12 @@ Ein Schlüsselwort wird mit dem Klartext selbst verkettet, um einen laufenden Sc
 
 .. example::
     :class: incremental
+    
+    :Schlüssel:  ``DECEPTIVEwearediscoveredsav``
+    :Klartext:   ``wearediscoveredsaveyourself``
+    :Geheimtext: ``ZICVTWQNGKZEIIGASXSTSLVVWLA``
 
-    .. csv-table::
-        :stub-columns: 1
-        :align: center
-
-        Schlüssel, "
-
-        .. container:: monospaced
-
-          DECEPTIVE\ *wearediscoveredsav*
-        "
-        Klartext, ":monospaced:`wearediscoveredsaveyourself`"
-        Geheimtext, ":monospaced:`ZICVTWQNGKZEIIGASXSTSLVVWLA`"
-
-.. class:: incremental
+.. container:: incremental
 
     Auch dieses Verfahren ist anfällig für eine Kryptoanalyse, da der Schlüssel und der Klartext die gleiche Häufigkeitsverteilung der Buchstaben aufweisen und eine statistische Technik angewendet werden kann.
 
@@ -779,33 +766,36 @@ Skytale
 Zeilenverschiebungs-Chiffre
 ---------------------------------------------------------------
 
-- Ist eine komplexere Transposition.
-- Schreiben Sie die Nachricht zeilenweise in ein Rechteck mit wohldefinierter Breite und lesen Sie die Nachricht spaltenweise ab, aber vertauschen Sie die Reihenfolge der Spalten.
-- Die Reihenfolge der Spalten ist dann der Schlüssel.
+.. story::
 
-.. example::
-    :class: incremental
 
-    .. rubric:: Verschlüsselung von *attack postpone until two am*
+    - Ist eine komplexere Transposition.
+    - Vorgehen: Schreiben Sie die Nachricht zeilenweise in ein Rechteck mit wohldefinierter Breite und lesen Sie die Nachricht spaltenweise ab, aber vertauschen Sie die Reihenfolge der Spalten.
+    - Die Reihenfolge der Spalten ist dann der Schlüssel.
 
-    .. container::
+    .. example:: Verschlüsselung von ``attack postpone until two am``
+        :class: incremental
 
-        ::
+        :Schlüssel: ``4312567``
+        :Klartext:  
+                    .. container:: monospaced
 
-            Schlüssel:  4312567
-            Klartext:   attackp
+                        attackp
+
                         ostpone
+                        
                         duntilt
+
                         woamxyz
 
-            Geheimtext: TTNA APTM TSUO AODW COIX KNLY PETZ
-            (Spalte:    3--- 4--- 2--- 1--- 5--- 6--- 7---)
+        :Geheimtext: ``TTNA APTM TSUO AODW COIX KNLY PETZ``
+        :Spalte:    ``3--- 4--- 2--- 1--- 5--- 6--- 7---``
 
 .. supplemental::
 
    Zeilenverschiebungs-Chiffre ≘ :eng:`Row Transposition Cipher`
 
-   Wenn der Schlüssel 4312567 ist, dann wird:
+   Wenn der Schlüssel ``4312567`` ist, dann wird:
 
    - die erste Spalte wird als die *vierte* (4),
    - die zweite Spalte als die *dritte* (3),
@@ -860,21 +850,21 @@ Text-basierte Steganografie
 Auswahl anderer Steganographie-Techniken
 ------------------------------------------
 
-.. class:: incremental-list list-with-explanations
+.. class:: incremental-list
 
-- **Zeichenmarkierung**
+:Zeichenmarkierung:
 
   Ausgewählte Buchstaben eines gedruckten oder maschinengeschriebenen Textes werden mit Bleistift überstrichen. Die Markierungen sind nur sichtbar, wenn das Papier schräg in helles Licht gehalten wird.
 
-- **Unsichtbare Tinte**
+:Unsichtbare Tinte:
 
   Es gibt eine Reihe von Substanzen, die zum Schreiben verwendet werden können, aber keine sichtbaren Spuren hinterlassen, solange das Papier nicht erhitzt oder mit einer chemischen Substanz behandelt wird.
 
-- **Nadelstiche**
+:Nadelstiche:
 
   Kleine Nadelstiche auf ausgewählten Buchstaben sind normalerweise nicht sichtbar, es sei denn, das Papier wird vor ein Licht gehalten.
 
-- **Sehr helle Tinte**
+:Sehr helle Tinte:
 
   Druckerhersteller drucken winzige Punktmuster in sehr hellen Farben auf die Seiten. Dies erlaubt es Dokumente zu dem Drucker zurückzuverfolgen, auf dem sie gedruckt wurden.
 
@@ -970,6 +960,14 @@ Steganographie vs. Verschlüsselung
 
         d. h. der zweite Buchstabe des Plaintexts hat den Index 5 in der verschlüsselten Nachricht.
 
+        Die Konstruktion der Rail-fence erfolgt in dem man eine Railfence mit der Tiefe 3 und der Länge 13 erstellt und in die "leere Railfence" die Indizes einträgt.
+
+        ::
+
+           ⋅   ⋅   ⋅   ⋅
+            ⋅ ⋅ ⋅ ⋅ ⋅ ⋅
+             ⋅   ⋅   ⋅
+
         ::
 
             g   e   s   t
@@ -998,13 +996,12 @@ Steganographie vs. Verschlüsselung
 
 
 
-
 .. class:: exercises
 
 Übung
 --------
 
-.. exercise::  Zeilenverschiebungs-Chiffre
+.. exercise:: Zeilenverschiebungs-Chiffre
 
     Sie haben die folgende Nachricht erhalten:
 

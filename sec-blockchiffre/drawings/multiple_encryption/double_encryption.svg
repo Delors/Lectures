@@ -59,7 +59,6 @@
                         fill="black"
                         x="12.412"
                         y="30"
-                        xml:space="preserve"
                     >P</tspan>
         </text>
       </g>
@@ -73,7 +72,6 @@
                         fill="black"
                         x="32.681625"
                         y="30"
-                        xml:space="preserve"
                     >X</tspan>
         </text>
       </g>
@@ -90,7 +88,6 @@
                         fill="black"
                         x="69.882"
                         y="30"
-                        xml:space="preserve"
                     >D</tspan>
         </text>
       </g>
@@ -107,7 +104,6 @@
                         fill="black"
                         x="72.178"
                         y="30"
-                        xml:space="preserve"
                     >E</tspan>
         </text>
       </g>
@@ -137,7 +133,6 @@
                         fill="black"
                         x="72.178"
                         y="30"
-                        xml:space="preserve"
                     >E</tspan>
         </text>
       </g>
@@ -154,7 +149,6 @@
                         fill="black"
                         x="69.882"
                         y="30"
-                        xml:space="preserve"
                     >D</tspan>
         </text>
       </g>
@@ -181,7 +175,6 @@
                         fill="black"
                         x="32.681625"
                         y="30"
-                        xml:space="preserve"
                     >X</tspan>
         </text>
       </g>
@@ -195,7 +188,6 @@
                         fill="black"
                         x="12.412"
                         y="30"
-                        xml:space="preserve"
                     >P</tspan>
         </text>
       </g>
@@ -209,7 +201,6 @@
                         fill="black"
                         x="12.174"
                         y="30"
-                        xml:space="preserve"
                     >C</tspan>
         </text>
       </g>
@@ -223,7 +214,6 @@
                         fill="black"
                         x="12.174"
                         y="30"
-                        xml:space="preserve"
                     >C</tspan>
         </text>
       </g>
@@ -236,7 +226,6 @@
                         fill="black"
                         x="34.962"
                         y="30"
-                        xml:space="preserve"
                     >Verschlüsselung</tspan>
         </text>
       </g>
@@ -249,7 +238,6 @@
                         fill="black"
                         x="35.242"
                         y="30"
-                        xml:space="preserve"
                     >Entschlüsselung</tspan>
         </text>
       </g>
@@ -263,16 +251,13 @@
                         fill="black"
                         x="7.4995"
                         y="30"
-                        xml:space="preserve"
-                    >K</tspan>
-          <tspan
+                    >K</tspan><tspan
                         font-family="Noto Sans Display"
                         font-size="19"
                         font-style="italic"
                         font-weight="400"
                         fill="black"
                         y="40"
-                        xml:space="preserve"
                     >1</tspan>
         </text>
       </g>
@@ -286,16 +271,13 @@
                         fill="black"
                         x="7.4995"
                         y="30"
-                        xml:space="preserve"
-                    >K</tspan>
-          <tspan
+                    >K</tspan><tspan
                         font-family="Noto Sans Display"
                         font-size="19"
                         font-style="italic"
                         font-weight="400"
                         fill="black"
                         y="40"
-                        xml:space="preserve"
                     >2</tspan>
         </text>
       </g>

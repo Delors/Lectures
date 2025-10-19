@@ -120,13 +120,12 @@
                         x="51.62"
                         y="15"
                         xml:space="preserve"
-                    >C</tspan>
-          <tspan
+                    >C</tspan><tspan
                         font-family="Noto Sans Display"
                         font-size="14"
                         font-weight="400"
                         fill="black"
-                        y="22"
+                        y="20"
                         xml:space="preserve"
                     >j</tspan>
         </text>
@@ -146,13 +145,12 @@
                         x="52.11"
                         y="15"
                         xml:space="preserve"
-                    >T</tspan>
-          <tspan
+                    >T</tspan><tspan
                         font-family="Noto Sans Display"
                         font-size="14"
                         font-weight="400"
                         fill="black"
-                        y="22"
+                        y="20"
                         xml:space="preserve"
                     >j</tspan>
         </text>
@@ -282,13 +280,12 @@
                         x="51.781"
                         y="15"
                         xml:space="preserve"
-                    >P</tspan>
-          <tspan
+                    >P</tspan><tspan
                         font-family="Noto Sans Display"
                         font-size="14"
                         font-weight="400"
                         fill="black"
-                        y="22"
+                        y="20"
                         xml:space="preserve"
                     >j</tspan>
         </text>
@@ -352,15 +349,13 @@
                         x="0"
                         y="15"
                         xml:space="preserve"
-                    >H(T</tspan>
-          <tspan
+                    >H(T</tspan><tspan
                         font-family="Noto Sans Display"
                         font-size="14"
                         font-weight="400"
                         fill="black"
-                        y="22"
-                    >j</tspan>
-          <tspan
+                        y="20"
+                    >j</tspan><tspan
                         font-family="Noto Sans Display"
                         font-size="14"
                         font-weight="400"

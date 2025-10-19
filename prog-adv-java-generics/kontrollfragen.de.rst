@@ -1,5 +1,4 @@
 .. meta::
-   :version: renaissance
    :lang: de
    :author: Michael Eichberg
    :keywords: "Programmierung", "Java", "Generics", "Kontrollfragen"
@@ -31,7 +30,7 @@ Datenstrukturen
 Kontrollfragen
 -------------------------------------
 
-.. deck:: numbered
+.. deck::
 
    .. card::
 
@@ -76,7 +75,7 @@ Generics
 Kontrollfragen
 -------------------------------------
 
-.. deck:: numbered
+.. deck::
 
    .. card::
 

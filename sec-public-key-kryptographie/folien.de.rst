@@ -915,7 +915,7 @@ Zusammenfassung - Hashes, Macs und digitale Signaturen
             n = p * q
             phi_n = (p - 1) * (q - 1)
             e = 65537
-            d = inverse(e, phi_n)
+            d = inverse(e, phi_n) # = 1017754829158121
             print("d=", d)
             # c = square_and_multiply(m,e, n)
             c = 70789294130501

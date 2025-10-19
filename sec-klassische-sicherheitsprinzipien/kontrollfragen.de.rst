@@ -1,5 +1,4 @@
 .. meta::
-   :version: renaissance
    :lang: de
    :author: Michael Eichberg
    :keywords: "Sicherheitsprinzipien, Kontrollfragen"
@@ -14,8 +13,6 @@
 
 Klassische Sicherheitsprinzipien - Kontrollfragen
 ================================================================================
-
------
 
 :Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
 :Kontakt: michael.eichberg@dhbw.de, Raum 149B
@@ -74,7 +71,6 @@ Umsetzung von Prinzipien
 ----------------
 
 .. exercise:: FUSE - File System in User Space
-        :class: incremental
 
         Welche Sicherheitsprinzipien werden mittels FUSE umgesetzt?
 

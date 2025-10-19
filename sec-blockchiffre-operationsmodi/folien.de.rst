@@ -392,15 +392,18 @@ Die Anforderungen an die Verschlüsselung gespeicherter Daten, die auch als *dat
 
 Die IEEE Norm P1619 wurde in Hinblick auf folgende Eigenschaften entwickelt:
 
-.. class:: incremental-list
+.. story::
 
-- Der Chiffretext ist für einen Angreifer frei verfügbar.
-- Das Datenlayout wird auf dem Speichermedium und beim Transport nicht verändert.
-- Der Zugriff auf die Daten erfolgt in Blöcken fester Größe und unabhängig voneinander.
-- Die Verschlüsselung erfolgt in 16-Byte-Blöcken, die unabhängig voneinander sind.
-- Es werden keine weiteren Metadaten verwendet, außer der Position der Datenblöcke innerhalb des gesamten Datensatzes.
-- Derselbe Klartext wird an verschiedenen Stellen in verschiedene Chiffretexte verschlüsselt, aber immer in denselben Chiffretext, wenn er wieder an dieselbe Stelle geschrieben wird.
-- Ein standardkonformes Gerät kann für die Entschlüsselung von Daten konstruiert werden, die von einem anderen standardkonformen Gerät verschlüsselt wurden.
+    .. class:: incremental-list
+
+    - Der Chiffretext ist für einen Angreifer frei verfügbar.
+    - Das Datenlayout wird auf dem Speichermedium und beim Transport nicht verändert.
+    - Der Zugriff auf die Daten erfolgt in Blöcken fester Größe und unabhängig voneinander.
+    - Die Verschlüsselung erfolgt in 16-Byte-Blöcken, die unabhängig voneinander sind.
+    - Es werden keine weiteren Metadaten verwendet, außer der Position der Datenblöcke innerhalb des gesamten Datensatzes.
+    - Derselbe Klartext wird an verschiedenen Stellen in verschiedene Chiffretexte verschlüsselt, aber immer in denselben Chiffretext, wenn er wieder an dieselbe Stelle geschrieben wird.
+    - Ein standardkonformes Gerät kann für die Entschlüsselung von Daten konstruiert werden, die von einem anderen standardkonformen Gerät verschlüsselt wurden.
+
 
 
 XTS-AES Operation auf einem Block
@@ -503,7 +506,7 @@ XTS-AES Operation auf einem Block
 
         und somit den anderen Plaintext berechnen. Dies ist immer dann gefährlich, wenn man einen Plaintext haben sollte oder zumindest vorhersehen kann, wie dies zum Beispiel bei Protokollen der Fall ist!
 
-        Sollte der Angreifer in der Lage sein eine Choosen-Plaintext Attacke durchzuführen, dann kann er ggf. eine Nachricht so erstellen, dass der Schlüsselstrom abgeleitet werden kann. Dies würde dann die Entschlüsselung aller Nachrichten erlauben, die das selbe Paar bestehend aus Schlüssel und Nonce verwenden habent.
+        Sollte der Angreifer in der Lage sein eine Choosen-Plaintext Attacke durchzuführen, dann kann er ggf. eine Nachricht so erstellen, dass der Schlüsselstrom abgeleitet werden kann. Dies würde dann die Entschlüsselung aller Nachrichten erlauben, die das selbe Paar bestehend aus Schlüssel und Nonce verwenden haben.
 
 .. exercise:: ECB identifizieren
 
