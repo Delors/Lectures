@@ -1760,12 +1760,12 @@ Priorität der Operatoren
 
       .. code:: text
 
-        Bitte geben Sie Ihr Gewicht in Kilogramm ein: 80
-        Bitte geben Sie Ihre Größe in Metern ein: 1.80
-        Ihr BMI beträgt 24.69
+        Bitte geben Sie Ihr Gewicht in kg ein: 85
+        Bitte geben Sie Ihre Größe in m ein: 1.80
+        Ihr BMI beträgt: 26.234567901234566
         Untergewicht: nein
         Normalgewicht: nein
-        Übergewicht: 5.897499999999994 kg bis Normalgewicht
+        Übergewicht: -4.0 kg bis Normalgewicht
 
     .. solution::
         :pwd: BmiBerechnen
