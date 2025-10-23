@@ -109,7 +109,7 @@ Einfache nicht-generische Datenstrukturen
             - :java:`void remove(int index)`: Entfernt das Element an der Stelle :java:`index` oder wirft eine :java:`IndexOutOfBoundsException`, wenn der Index ungültig ist
             - :java:`void clear()`: Entfernt alle Elemente
 
-            Nutzen Sie als zugrunde liegende Datenstruktur ein Array. D. h. speichern Sie die Elemente in einem Array und vergrößern Sie das Array, wenn es voll ist. Wenn das Array zu groß ist, verkleinern Sie es. Eine Vergrößerung soll das Array verdoppeln aber um nicht mehr als 1000 Elemente. Eine Verkleinerung soll das Array halbieren, wenn weniger als ein Viertel des Arrays belegt ist. Die Mindestgröße des Arrays soll 16 Elemente betragen.
+            Nutzen Sie als zugrunde liegende Datenstruktur ein Array. D. h. speichern Sie die Elemente in einem Array und vergrößern Sie das Array, wenn es voll ist. Wenn das Array zu groß ist, verkleinern Sie es. Eine Vergrößerung soll das Array verdoppeln aber um nicht mehr als 1000 Elemente. Eine Verkleinerung soll das Array halbieren, wenn weniger als ein Viertel des Arrays belegt ist. Die Mindestgröße des Arrays soll 16 Elemente betragen.
 
             Nutzen Sie :java:`java.lang.System.arraycopy(...)` zum Vergrößern/Verkleinern des zugrunde liegenden Arrays.
 
@@ -725,7 +725,7 @@ Die Implementation von *Iterator*\ s ist ein Beispiel für die Umsetzung des *De
 
 .. exercise:: Iterables
 
-    Implementieren Sie das Interface :java:`java.lang.Iterable` für Ihre Klasse :java:`Pair`. D. h. schreiben Sie eine Methode :java:`java.util.Iterator iterator()`, die einen Iterator für die Elemente des Paares zurückgibt.
+    Implementieren Sie das Interface :java:`java.lang.Iterable` für Ihre Klasse :java:`Pair`. D. h. schreiben Sie eine Methode :java:`java.util.Iterator iterator()`, die einen Iterator für die Elemente des Paares zurückgibt.
 
     Dazu ist es erforderlich, dass Sie eine Klasse :java:`PairIterator` implementieren, die das Interface :java:`java.util.Iterator` implementiert. Diese Klasse führt dann die eigentliche Iteration durch. Die Erzeugung der Instanz von :java:`PairIterator` erfolgt in der Methode :java:`iterator()`.
 

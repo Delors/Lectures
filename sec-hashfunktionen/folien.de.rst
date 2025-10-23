@@ -331,7 +331,7 @@ Effizienzanforderungen an kryptografische Hashfunktionen
     .. solution::
         :pwd: alles nichts
 
-        Erste Beobachtung: die Funktion ist linear. D. h., Hash(M₁ ⨁ M₂) = Hash(M₁) ⨁ Hash(M₂).
+        Erste Beobachtung: die Funktion ist linear. D. h., Hash(M₁ ⨁ M₂) = Hash(M₁) ⨁ Hash(M₂).
 
         Sei: M = B₁ || B₂ || ... || Bₙ
 

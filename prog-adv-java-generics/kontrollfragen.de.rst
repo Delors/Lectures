@@ -93,7 +93,7 @@ Kontrollfragen
          .. solution::
             :pwd: DiAmOnD
 
-            Der Diamond Operator ``<>`` wird verwendet, um den Typ eines Generics zu inferieren. D. h. es ist nicht notwendig, den Typ explizit anzugeben, wenn dieser für den Compiler aus dem Kontext ersichtlich ist.
+            Der Diamond Operator ``<>`` wird verwendet, um den Typ eines Generics zu inferieren. D. h. es ist nicht notwendig, den Typ explizit anzugeben, wenn dieser für den Compiler aus dem Kontext ersichtlich ist.
 
 
    .. card::
@@ -153,7 +153,7 @@ Kontrollfragen
          .. solution::
             :pwd: LiStQuEs
 
-            :java:`List<?>` ist eine Liste von unbekannten Typen, während :java:`List<Object>` eine Liste von Objekten ist. D. h. in einer :java:`List<?>` können keine Werte gespeichert werden, während in einer :java:`List<Object>` beliebige Objekte gespeichert werden können.
+            :java:`List<?>` ist eine Liste von unbekannten Typen, während :java:`List<Object>` eine Liste von Objekten ist. D. h. in einer :java:`List<?>` können keine Werte gespeichert werden, während in einer :java:`List<Object>` beliebige Objekte gespeichert werden können.
 
    .. card::
 
@@ -200,7 +200,7 @@ Kontrollfragen
          .. solution::
             :pwd: AutoAutoAutoBoxing
 
-            Auto-Boxing ist die automatische Konvertierung von primitiven Datentypen in ihre Wrapper-Klassen und umgekehrt. D. h. es ist nicht notwendig, explizit zwischen primitiven Datentypen und ihren Wrapper-Klassen zu konvertieren.
+            Auto-Boxing ist die automatische Konvertierung von primitiven Datentypen in ihre Wrapper-Klassen und umgekehrt. D. h. es ist nicht notwendig, explizit zwischen primitiven Datentypen und ihren Wrapper-Klassen zu konvertieren.
 
    .. card::
 

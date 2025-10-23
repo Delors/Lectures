@@ -734,7 +734,7 @@ Shannon Entropie
 
   .. supplemental::
 
-    :math:`H_{\text{max}}` ist die Anzahl der Bits, die benötigt werden, um alle möglichen Symbole eindeutig zu kodieren. Für ein Alphabet mit :math:`k` Symbolen ist :math:`H_{\text{max}} = \log_2(k)`. D. h. für ein Alphabet mit 8 verschiedenen Symbole ist :math:`H_{\text{max}} = \log_2(8) = 3`.
+    :math:`H_{\text{max}}` ist die Anzahl der Bits, die benötigt werden, um alle möglichen Symbole eindeutig zu kodieren. Für ein Alphabet mit :math:`k` Symbolen ist :math:`H_{\text{max}} = \log_2(k)`. D. h. für ein Alphabet mit 8 verschiedenen Symbole ist :math:`H_{\text{max}} = \log_2(8) = 3`.
 
     Der Shannon-Entropie liegt die Frage zugrunde, wie viele Bits im Mittel nötig sind, um die Ausgaben einer Informationsquelle effizient zu kodieren. Sie hängt von der Wahrscheinlichkeitsverteilung der Symbole ab und bildet ein theoretisches Minimum für die mittlere Codewortlänge verlustfreier Kodierungen.
 

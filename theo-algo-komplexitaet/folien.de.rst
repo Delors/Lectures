@@ -2007,7 +2007,7 @@ Rucksackproblem - Vergleich
 
     Die Wortlänge eines Problems bezeichnet hier die Anzahl der Bits, die benötigt werden, um die Eingabe eines Problems darzustellen. Sie ist ein Maß dafür, wie groß oder komplex die Darstellung der Eingabedaten ist.
 
-    Die iterative Variante mit dynamischer Programmierung hat eine Laufzeit von :math:`O(m⋅n)` wobei :math:`n` hier die Kapazität in Gewichtseinheiten ist, nicht die Wortlänge. Wenn :math:`n` exponentiell groß ist, wird der Algorithmus ineffizient, da die Eingabegröße :math:`⌈log_2	N⌉` viel kleiner ist als :math:`N` selbst. (D. h. wenn die Kapazität 10 ist, dann brauchen wir 4 Bits, um die Kapazität darzustellen, wenn die Kapazität jedoch 1000 (100 mal größer) ist, dann brauchen wir 10 Bits (d. h. nur 2,5 mal so viele Bits.)
+    Die iterative Variante mit dynamischer Programmierung hat eine Laufzeit von :math:`O(m⋅n)` wobei :math:`n` hier die Kapazität in Gewichtseinheiten ist, nicht die Wortlänge. Wenn :math:`n` exponentiell groß ist, wird der Algorithmus ineffizient, da die Eingabegröße :math:`⌈log_2	N⌉` viel kleiner ist als :math:`N` selbst. (D. h. wenn die Kapazität 10 ist, dann brauchen wir 4 Bits, um die Kapazität darzustellen, wenn die Kapazität jedoch 1000 (100 mal größer) ist, dann brauchen wir 10 Bits (d. h. nur 2,5 mal so viele Bits.)
 
 
 

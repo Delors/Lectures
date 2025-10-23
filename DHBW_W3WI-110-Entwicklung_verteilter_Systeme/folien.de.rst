@@ -80,7 +80,7 @@ Gruppenarbeit = Gruppennote
 Projekt/Programmieraufgabe
 ------------------------------------------
 
-Entwicklung eines Kollaborationstools als wiederverwendbare Webkomponenten. D. h. jedes Team entwickelt *ein* eigenes Tool.
+Entwicklung eines Kollaborationstools als wiederverwendbare Webkomponenten. D. h. jedes Team entwickelt *ein* eigenes Tool.
 
 .. TODO Anforderungen präzisieren - insbesondere an die Webkomponente!
 

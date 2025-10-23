@@ -69,7 +69,7 @@ Klassenraumübung
         .. solution::
             :pwd: MTTC
 
-            Die mittlere Zeit, die benötigt wird, um einen Cyberangriff einzudämmen. D. h. die Zeit, die benötigt wird, um zu verhindern, dass sich der Angriff weiter ausbreitet.
+            Die mittlere Zeit, die benötigt wird, um einen Cyberangriff einzudämmen. D. h. die Zeit, die benötigt wird, um zu verhindern, dass sich der Angriff weiter ausbreitet.
             MTTC = MTTD (Detect) + MTTI (Identify) + MTTR (Respond)
 
     .. exercise:: Benennen Sie Arten/Kategorien von Angriffen?

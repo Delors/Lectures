@@ -104,7 +104,7 @@ Einhaltung formaler Kriterien (bei Seminararbeiten 20%)
       Abschnitte, die länger sind, sind in der Regel zu lang und führen zu einer Abwertung.
 
   - Werden Aufzählungen und Nummerierungen konsistent und sinnvoll eingesetzt. Sind diese auch entsprechend ausgearbeitet oder nur als unstrukturierter Fließtext vorhanden?
-  - Sind ausreichende Zusammenfassungen im Text vorhanden? D. h. Tabellen und Aufzählungen, die das besprochene kompakt darstellen.
+  - Sind ausreichende Zusammenfassungen im Text vorhanden? D. h. Tabellen und Aufzählungen, die das besprochene kompakt darstellen.
 
 
 
