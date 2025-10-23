@@ -16,7 +16,7 @@ Cybersecurity - Kontrollfragen
 
 :Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
 :Kontakt: michael.eichberg@dhbw.de, Raum 149B
-:Version: 1.0.1
+:Version: 1.1
 
 
 .. class:: new-section
@@ -32,7 +32,6 @@ Klassenraumübung
 ------------------
 
 .. story::
-
 
     Die folgenden Fragen sind *exemplarisch* für Fragen wie sie in einer Prüfung vorkommen könnten.
 
@@ -131,6 +130,21 @@ Klassenraumübung
 
             Sie sollen Sicherheitsspezialisten einen Anreiz geben Lücken (zuerst) dem Hersteller zu melden.
 
+    .. exercise:: Ist immer ein Timing-Angriff möglich bei nicht-konstantem Zeitverhalten?
+        :class: incremental
+        
+        Sie haben folgende Situation: Ein Client übermittelt das Passwort in gehashter Form (:math:`H_1`) an den Server. Der Server hasht den Hash noch einmal in Verbindung mit einem Salt :math:`H_2 = \text{hash}(H_1 \parallel SALT)`. Danach vergleicht er den berechneten Wert :math:`H_2` mit dem äquivalent konstruierten, gespeicherten Hash :math:`H_{2_{\text{gespeichert}}}`. Ist in diesem Szenario eine Timing-Angriff möglich?
+
+        .. solution::
+            :pwd: NeinKeinTimingAngriff
+
+            **Nein.**
+
+            Unter diesen Annahmen kann der Angreifer nicht systematisch :math:`H_1` so verändern, dass H2 sich schrittweise einem Ziel‑:math:`H_2` nähert. Weil :math:`H_{\text{server}}(H_1\!\parallel\!\text{salt})` sich (für den Angreifer ohne Salt) wie eine zufällige Abbildung verhält, haben kleine, gezielte Änderungen an :math:`H_1` keine kontrollierbare, deterministische Wirkung auf Präfixe von :math:`H_2`. Ein Versuch, über Timing‑Signale ein immer längeres gemeinsames Präfix von :math:`H_2` zu erzwingen, erfordert im Erwartungsfall exponentiell viele Versuche (die Erfolgswahrscheinlichkeit für ein zusätzliches korrekte Byte ist :math:`2^{-8}` pro Byte), also praktisch nicht machbar.
+
+            .. attention::
+
+                Praktische Umsetzung sollten jedoch immer gegen Timing-Angriffe gehärtet werden!
 
 
 .. class:: new-section
