@@ -30,7 +30,7 @@ Versionskontrolle und Git
 Kontrollfragen 
 -------------------------------------
 
-.. deck:: numbered
+.. deck:: 
 
    .. card:: 
    

@@ -70,7 +70,7 @@ Einführung
 
     Die Datei enthält ein einfaches Java-Programm, das den Text ``Hello World!`` auf der Konsole ausgibt.
 
-    In der ersten Zeile wird die Methode :java:`main` definiert. Diese ist die Einstiegsmethode in das Programm. Der Text ``Hello World!`` wird mit der *Methode* :java:`println` auf der Konsole ausgegeben. Die Methoden :java:`print`, und :java:`println` sind in Java Skripten immer verfügbar (bei Verwendung von ``--enable-preview`` (Java 23)) und geben den übergebenen Text auf der Konsole aus. Die Methode :java:`print` tut dies ohne und die Methode :java:`println`  mit Zeilenumbruch (``\\n``) am Ende.
+    In der ersten Zeile wird die Methode :java:`main` definiert. Diese ist die Einstiegsmethode in das Programm. Der Text ``Hello World!`` wird mit der *Methode* :java:`println` auf der Konsole ausgegeben. Die Methoden :java:`print`, und :java:`println` sind in Java-Skripten immer verfügbar (bei Verwendung von ``--enable-preview`` (Java 23)) und geben den übergebenen Text auf der Konsole aus. Die Methode :java:`print` tut dies ohne und die Methode :java:`println`  mit Zeilenumbruch (``\\n``) am Ende.
 
 
 
@@ -85,24 +85,24 @@ Von der Konsole lesen
 
 .. supplemental::
 
-    Mit Hilfe von ``readln`` können Sie von der Konsole lesen. In Java Skripten ist ``readln`` immer verfügbar. Das Programm gibt den Text ``Hello`` gefolgt von dem eingegebenen Text aus. Die Methode ``readln`` gibt erst den übergebenen String aus und liest dann eine Zeile von der Konsole ein. Der eingelesene Text wird dann an das Wort "Hello " angehängt (mittels des "+" Operators) und als ganzes zurückgegeben.
+    Mit Hilfe von ``readln`` können Sie von der Konsole lesen. In Java-Skripten ist ``readln`` immer verfügbar. Das Programm gibt den Text ``Hello`` gefolgt von dem eingegebenen Text aus. Die Methode ``readln`` gibt erst den übergebenen String aus und liest dann eine Zeile von der Konsole ein. Der eingelesene Text wird dann an das Wort "Hello " angehängt (mittels des "+" Operators) und als ganzes zurückgegeben.
 
 .. [#] `HelloYou.java <https://delors.github.io/prog-java-basics/code/HelloYou.java>`__
 
 
 
-Ausführung von Java Skripten
+Ausführung von Java-Skripten
 --------------------------------------------
 
 .. class:: list-with-explanations
 
-- Java Skripte können direkt mit ``java <Datei mit Sourcecode>`` ausgeführt werden.
+- Java-Skripte können direkt mit ``java <Datei mit Sourcecode>`` ausgeführt werden.
 
   Ggf. ist die Option ``--enable-preview`` notwendig; diese ermöglicht die Verwendung der neuesten, noch in der Entwicklung befindlichen, Features von Java.
 
 .. class:: incremental
 
-- Java Skripte können aber auch direkt ausgeführt werden, wenn sie ein Shebang (``#!``) in der ersten Zeile enthalten, die Datei nicht mit *.java* endet und die Dateirechte (ausführbar) entsprechend gesetzt sind (Auf Unixoiden: ``-rwxr-xr-x`` ... `HelloWorldScript <https://delors.github.io/prog-java-basics/code/HelloWorldScript>`__):
+- Java-Skripte können aber auch direkt ausgeführt werden, wenn sie ein Shebang (``#!``) in der ersten Zeile enthalten, die Datei nicht mit *.java* endet und die Dateirechte (ausführbar) entsprechend gesetzt sind (Auf Unixoiden: ``-rwxr-xr-x`` ... `HelloWorldScript <https://delors.github.io/prog-java-basics/code/HelloWorldScript>`__):
 
   .. include:: code/HelloWorldScript
         :code: java
@@ -147,10 +147,10 @@ Ausführung von Java Skripten
 
 .. class:: exercises
 
-Übung - *Java Scripting*
+Übung
 --------------------------------
 
-.. exercise:: Java Scripting
+.. exercise:: Java-Skripte
 
     Zur Ausführung der vorhergehenden Programme mussten Sie immer den Java Interpreter starten und das Programm ausführen. Stellen Sie Ihr letztes Programm so um, dass eine direkte Ausführung - wenn Java korrekt installiert ist - möglich ist.
 
@@ -1712,7 +1712,7 @@ Priorität der Operatoren
 
 .. exercise:: Umrechnung von Sekunden
 
-    Schreiben Sie ein Java Script, dass die Anzahl von Sekunden in Stunden, Minuten und Sekunden umrechnet. Lesen Sie die Anzahl von Sekunden von der Konsole ein und geben Sie die Umrechnung auf der Konsole aus.
+    Schreiben Sie ein Java-Skript, dass die Anzahl von Sekunden in Stunden, Minuten und Sekunden umrechnet. Lesen Sie die Anzahl von Sekunden von der Konsole ein und geben Sie die Umrechnung auf der Konsole aus.
 
     .. example::
 
@@ -1741,7 +1741,7 @@ Priorität der Operatoren
 
     Denken Sie daran, dass Sie einen Zeichenkette (``String``) in eine Zahl umwandeln können, indem Sie die Methode :java:`Double.parseDouble(<String>)` für Fließkommazahlen verwenden oder :java:`Integer.parseInt(<String>)` für Ganzzahlen.
 
-    Schreiben Sie ein vollständiges Java Script, dass Sie mit dem Java Interpreter (``java --enable-preview <JAVA-DATEI>``) ausführen können.
+    Schreiben Sie ein vollständiges Java-Skript, dass Sie mit dem Java Interpreter (``java --enable-preview <JAVA-DATEI>``) ausführen können.
 
 
 
@@ -2540,7 +2540,7 @@ Methoden
 ----------------------------------------------------------
 
 
-Methoden (in Java Skripts)
+Methoden (in Java-Skripts)
 ----------------------------------------------------------
 
 .. deck::
@@ -2682,7 +2682,7 @@ Rekursive Methoden - Beispiel
         .. attention::
             :class: incremental
 
-            In vielen Programmiersprachen (inkl. Java) ist die Rekursion in bestimmten, aber häufigen Fällen nicht so effizient wie Schleifen.
+            In vielen Programmiersprachen (inkl. Java) ist die Rekursion in _bestimmten_ - aber häufigen - Fällen nicht so effizient wie Schleifen.
 
 
 

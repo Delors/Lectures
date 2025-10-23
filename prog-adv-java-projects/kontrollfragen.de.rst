@@ -31,7 +31,7 @@ Kontrollfragen
 -------------------------------------
 
 
-.. deck:: numbered
+.. deck::
 
    .. card:: 
    

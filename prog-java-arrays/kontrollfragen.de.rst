@@ -25,7 +25,7 @@ Java Arrays
 Kontrollfragen
 ----------------
 
-.. deck:: numbered
+.. deck:: 
 
    .. card::
 

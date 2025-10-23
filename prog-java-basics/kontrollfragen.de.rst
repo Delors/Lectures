@@ -344,7 +344,7 @@ Kontrollfragen
          .. solution::
             :pwd: i ist 0
 
-            Die Ausgabe ist ``0``. (Die Variable ``i`` in der Schleife ist eine andere Variable als die Variable ``i``, die vor der Schleife deklariert wurde. Achtung: in einem Java Skript würde dies zu einem Fehler führen.)
+            Die Ausgabe ist ``0``. (Die Variable ``i`` in der Schleife ist eine andere Variable als die Variable ``i``, die vor der Schleife deklariert wurde. Achtung: in einem Java-Skript würde dies zu einem Fehler führen.)
 
    .. card::
 

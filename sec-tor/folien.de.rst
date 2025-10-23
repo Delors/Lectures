@@ -585,6 +585,4 @@ Tor
 
         "Hell breaks loose." Er kann zum Beispiel auf die Entry und Exitnodes verweisen, die er kontrolliert. Damit kann er den Datenverkehr entschlüsseln. Er kann auf die Onion Services verweisen, die er kontrolliert. Damit kann er die Identität der Nutzer der Onion Services ermitteln.
 
-
-.. IDEAs/TODOs/FIXMEs
-   add a discussion about alle the keys used by tor and how they are initialized!
+.. IDEAs/TODOs/FIXMEs Add a discussion about all the keys used by tor and how they are initialized!

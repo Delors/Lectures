@@ -55,7 +55,7 @@ Eindimensionale Felder (:eng:`Arrays`)
 Deklaration von Feldern (:eng:`Arrays`)
 -------------------------------------------
 
-Eindimensionale Felder sind Datentypen, die es ermöglichen eine Liste mit einer fixen Anzahl von Werten gleichen Datentyps zu verwalten
+Eindimensionale Felder sind Datentypen, die es ermöglichen eine Liste mit einer fixen Anzahl von Werten gleichen Datentyps zu verwalten.
 
 .. deck::
 
@@ -347,7 +347,7 @@ Referenzdatentypen und :java:`final`
 Vergleich von Feldern (:eng:`Arrays`)
 --------------------------------------------
 
-Der Vergleich zweier Feldvariablen mit dem :java:`==` bzw. :java:`!=` Operator vergleicht nicht den Inhalt der Felder, sondern die virtuelle Speicheradresse (ähnlich bei Strings).
+Der Vergleich zweier Feldvariablen mit dem :java:`==` (~ ``==``) bzw. :java:`!=` (~ ``!=``) Operator vergleicht nicht den Inhalt der Felder, sondern die virtuelle Speicheradresse (ähnlich bei Strings).
 
 Der Vergleich der Inhalte muss über den Vergleich der einzelnen Feldelemente erfolgen bzw. über Hilfsmethoden wie z.B. :java:`Arrays.equals(...)`.
 
@@ -443,7 +443,7 @@ Die Parameter und der Rückgabewert einer Methode können vom Typ eines Feldes s
 
     Schreiben Sie eine Methode, die prüft ob ein Array von :java:`int` Werten, mit dem Beginn eines anderen Arrays von :java:`int`-Werten übereinstimmt. Vergleichen Sie die Elemente der beiden Arrays mit Hilfe des :java:`==` bzw. :java:`!=` Operators.
 
-    D. h. die Methode soll :java:`true` zurückgeben, wenn *alle Elemente* des ersten Arrays (``a``) mit den ersten Elementen des zweiten Arrays ``b`` übereinstimmen. Das Array ``b`` kann mehr Elemente enthalten als das Array ``a``.
+    D. h. die Methode soll :java:`true` zurückgeben, wenn *alle Elemente* des ersten Arrays (``a``) mit den ersten Elementen des zweiten Arrays ``b`` übereinstimmen. Das Array ``b`` kann mehr Elemente enthalten als das Array ``a`` und diese werden ignoriert.
 
     Die Methode soll die folgende Signatur haben und auch alle Sonderfälle abdecken!
 
@@ -780,7 +780,7 @@ Multidimensional Arrays
 
 .. exercise:: java.util.Arrays
 
-    Lesen Sie ein Array von der Kommandozeile ein und sortieren Sie es numerisch. D. h. wandeln Sie die Zahlen in echte Zahlen um und sortieren Sie danach. Danach geben Sie das sortierte Array aus. Schreiben Sie ein Java Script.
+    Lesen Sie ein Array von der Kommandozeile ein und sortieren Sie es numerisch. D. h. wandeln Sie die Zahlen in echte Zahlen um und sortieren Sie danach. Danach geben Sie das sortierte Array aus. Schreiben Sie ein Java-Skript.
 
     .. example::
 
@@ -806,13 +806,13 @@ Multidimensional Arrays
 
         (Für Mac und Linux Nutzer!)
 
-        Denken Sie daran, dass die erste Zeile eines echten Java Skripts mit einem Shebang anfangen muss und der Dateiname des Skripts nicht mit :java:`.java` enden darf. Denken Sie auch daran, dass das Skript ausführbar sein muss (z. B. Rechte 755).
+        Denken Sie daran, dass die erste Zeile eines echten Java-Skripts mit einem Shebang anfangen muss und der Dateiname des Skripts nicht mit :java:`.java` enden darf. Denken Sie auch daran, dass das Skript ausführbar sein muss (z. B. Rechte 755).
 
         Alternativ schreiben Sie eine Java Datei mit der entsprechenden Logik und führen Sie diese mit :java:`java` aus.
 
     .. important::
 
-        Die *erste Zeile* eines *echten* Java Skripts:
+        Die *erste Zeile* eines *echten* Java-Skripts:
 
         .. code:: java
 

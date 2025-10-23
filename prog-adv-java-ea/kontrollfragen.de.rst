@@ -30,7 +30,7 @@ Klassisches IO
 Kontrollfragen 
 -------------------------------------
 
-.. deck:: numbered
+.. deck:: 
 
    .. card:: 
 

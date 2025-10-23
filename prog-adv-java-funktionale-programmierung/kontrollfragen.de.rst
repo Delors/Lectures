@@ -30,7 +30,7 @@ Funktionale Programmierung
 Kontrollfragen 
 -------------------------------------
 
-.. deck:: numbered
+.. deck:: 
 
    .. card:: 
 
@@ -70,7 +70,7 @@ Funktionale Programmierung in Java
 Kontrollfragen 
 -------------------------------------
 
-.. deck:: numbered
+.. deck:: 
 
    .. card:: 
 

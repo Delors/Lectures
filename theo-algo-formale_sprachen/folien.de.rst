@@ -576,7 +576,7 @@ Abzählbar (unendlich)
                 .. card::
 
                     .. list-table::
-                        :class: s-font-size-70 align-content-in-data-cells-top
+                        :class: s-font-size-70 table-data-align-top
                         :stub-columns: 1
                         :header-rows: 1
                         :width: 100%
@@ -796,7 +796,7 @@ Abzählbar (unendlich)
                     Sei :math:`Σ = \{e,i,rn,st\}` mit Aufzählung :math:`m_1 = e`, :math:`m_2 = i`, :math:`m_3 = rn` und :math:`m_4 = st`, dann haben die folgenden Wörter diese Gödelnummern:
 
                     .. list-table::
-                        :class: s-font-size-70 align-content-in-data-cells-top
+                        :class: s-font-size-70 table-data-align-top
                         :stub-columns: 1
                         :header-rows: 1
                         :width: 100%

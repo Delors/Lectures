@@ -857,7 +857,7 @@ Triple-DES mit drei Schlüsseln
 
     Wenn man die obige Implementierung anpasst und testet, wird sofort deutlich, dass die Verwendung einer ungeeigneten f-Funktion zu keinerlei Sicherheit führt und dass der Entwurf einer solchen Funktion nicht trivial ist. Außerdem ist es notwendig, alle möglichen Extremfälle zu berücksichtigen.
 
-    Eine Java Implementierung (d. h. ein Java Script) (ohne Keyschedule) ist hier zu finden: `Feistel.java <https://github.com/Delors/delors.github.io/blob/main/sec-blockchiffre/resources/Feistel.java>`__
+    Eine Java Implementierung (d. h. ein Java-Skript) (ohne Keyschedule) ist hier zu finden: `Feistel.java <https://github.com/Delors/delors.github.io/blob/main/sec-blockchiffre/resources/Feistel.java>`__
 
     Folgender Prompt kann ggf. genutzt werden, um eine passende Implementierung in einer anderen Sprache (z. B. Java, Scala, Python, C, JavaScript ...) zu erhalten:
 
