@@ -804,7 +804,9 @@ Primzahlen
 
 .. class:: incremental-list
 
-   - Primzahlen haben als Teiler nur :math-r:`1` und sich selbst.
+   - Primzahlen haben als Teiler nur :math-r:`1` und sich selbst wobei 1 nicht als Primzahl gilt.
+
+     (D.h. Primzahlen haben genau zwei verschiedene positive ganze Teiler.)
    - Sie können nicht als Produkt von anderen Zahlen geschrieben werden.
    - Jede ganze Zahl :math:`a > 1` kann auf eindeutige Weise faktorisiert werden als: :math:`a=p_1^{a_1} \times p_2^{a_2} \times \ldots \times p_t^{a_t}` wobei :math:`p_1 < p_2 < \ldots < p_t` Primzahlen sind und wobei jedes :math:`a_i` eine positive ganze Zahl ist.
 
