@@ -6,9 +6,9 @@
     xmlns:xl="http://www.w3.org/1999/xlink"
     xmlns:dc="http://purl.org/dc/elements/1.1/"
     xmlns="http://www.w3.org/2000/svg"
-    viewBox="29 139 910 714"
-    width="1338"
-    height="1050"
+    viewBox="150 200 790 581"
+    width="1241"
+    height="913"
 >
   <style>
     @import url('/LectureDoc2/ext/fonts/ld-fonts.css');
@@ -69,40 +69,6 @@
             xl:href="#Gradient_4"
             gradientTransform="translate(245.00088 274.29892) rotate(90) scale(6.12689)"
         />
-    <font-face
-            font-family="Noto Sans Display"
-            font-size="10"
-            units-per-em="1000"
-            underline-position="-75.68359"
-            underline-thickness="49.316406"
-            slope="0"
-            x-height="522.9492"
-            cap-height="717.28516"
-            ascent="770.0195"
-            descent="-229.98047"
-            font-weight="400"
-        >
-      <font-face-src>
-        <font-face-name name="Noto Sans Display" />
-      </font-face-src>
-    </font-face>
-    <font-face
-            font-family="Noto Sans Display"
-            font-size="16"
-            units-per-em="1000"
-            underline-position="-75.68359"
-            underline-thickness="49.316406"
-            slope="0"
-            x-height="522.9492"
-            cap-height="717.28516"
-            ascent="770.0195"
-            descent="-229.98047"
-            font-weight="400"
-        >
-      <font-face-src>
-        <font-face-name name="Noto Sans Display" />
-      </font-face-src>
-    </font-face>
     <linearGradient
             id="Obj_Gradient_8"
             xl:href="#Gradient"
@@ -235,7 +201,6 @@
       </feMerge>
     </filter>
   </defs>
-  <metadata> Produced by OmniGraffle 8.0\n2024-01-05 13:34:14 +0000</metadata>
   <g
         id="csrf-naive-case"
         stroke-opacity="1"
@@ -243,10 +208,11 @@
         fill-opacity="1"
         stroke-dasharray="none"
         fill="none"
+        font-family="Noto Sans Display"
+        font-size="16"
+        font-weight="400"
     >
-    <title>csrf-naive-case</title>
     <g id="csrf-naive-case_Layer_1">
-      <title>Layer 1</title>
       <g id="Group_466">
         <g id="Group_469">
           <g id="Group_478">
@@ -388,10 +354,7 @@
         <g id="Graphic_468">
           <text transform="translate(220.93775 282.89077)" fill="#d0d0d0">
             <tspan
-                            font-family="Noto Sans Display"
                             font-size="10"
-                            font-weight="400"
-                            fill="#d0d0d0"
                             x="0"
                             y="10"
                         >www.xyz.com</tspan>
@@ -401,10 +364,6 @@
       <g id="Graphic_399">
         <text transform="translate(558 323)" fill="black">
           <tspan
-                        font-family="Noto Sans Display"
-                        font-size="16"
-                        font-weight="400"
-                        fill="black"
                         x="0"
                         y="15"
                     >login</tspan>
@@ -420,10 +379,6 @@
                 />
         <text transform="translate(349 440.3453)" fill="white">
           <tspan
-                        font-family="Noto Sans Display"
-                        font-size="16"
-                        font-weight="400"
-                        fill="white"
                         x="6.550781"
                         y="15"
                     >2</tspan>
@@ -439,10 +394,6 @@
                 />
         <text transform="translate(542 609.1906)" fill="white">
           <tspan
-                        font-family="Noto Sans Display"
-                        font-size="16"
-                        font-weight="400"
-                        fill="white"
                         x="6.550781"
                         y="15"
                     >3</tspan>
@@ -618,10 +569,7 @@
         <g id="Graphic_422">
           <text transform="translate(220.93775 555.0908)" fill="#d0d0d0">
             <tspan
-                            font-family="Noto Sans Display"
                             font-size="10"
-                            font-weight="400"
-                            fill="#d0d0d0"
                             x="0"
                             y="10"
                         >www.xyz.com</tspan>
@@ -630,10 +578,7 @@
         <g id="Graphic_434">
           <text transform="translate(289.70554 555.0908)" fill="#666">
             <tspan
-                            font-family="Noto Sans Display"
                             font-size="10"
-                            font-weight="400"
-                            fill="#666"
                             x="0"
                             y="10"
                         >www.malicious.com</tspan>
@@ -643,11 +588,11 @@
       <g id="Group_437">
         <g id="Graphic_440">
           <path
-                        d="M 771 429.9011 L 771 197.50559 L 854.5 255.60447 L 854.5 488 Z"
+                        d="M 771 429.9011 L 771 257.50559 L 854.5 315.60447 L 854.5 488 Z"
                         fill="url(#Obj_Gradient_17)"
                     />
           <path
-                        d="M 771 429.9011 L 771 197.50559 L 854.5 255.60447 L 854.5 488 Z"
+                        d="M 771 429.9011 L 771 257.50559 L 854.5 315.60447 L 854.5 488 Z"
                         stroke="white"
                         stroke-opacity=".48790474"
                         stroke-linecap="round"
@@ -657,11 +602,11 @@
         </g>
         <g id="Graphic_439">
           <path
-                        d="M 938 429.9011 L 938 197.50559 L 854.5 255.60447 L 854.5 488 Z"
+                        d="M 938 429.9011 L 938 257.50559 L 854.5 315.60447 L 854.5 488 Z"
                         fill="url(#Obj_Gradient_18)"
                     />
           <path
-                        d="M 938 429.9011 L 938 197.50559 L 854.5 255.60447 L 854.5 488 Z"
+                        d="M 938 429.9011 L 938 257.50559 L 854.5 315.60447 L 854.5 488 Z"
                         stroke="white"
                         stroke-opacity=".48790474"
                         stroke-linecap="round"
@@ -671,11 +616,11 @@
         </g>
         <g id="Graphic_438">
           <path
-                        d="M 854.5 141 L 938 197.8885 L 854.5 254.777 L 771 197.8885 Z"
+                        d="M 854.5 201 L 938 257.8885 L 854.5 314.777 L 771 257.8885 Z"
                         fill="url(#Obj_Gradient_19)"
                     />
           <path
-                        d="M 854.5 141 L 938 197.8885 L 854.5 254.777 L 771 197.8885 Z"
+                        d="M 854.5 201 L 938 257.8885 L 854.5 314.777 L 771 257.8885 Z"
                         stroke="white"
                         stroke-opacity=".48790474"
                         stroke-linecap="round"
@@ -684,31 +629,19 @@
                     />
         </g>
       </g>
-      <g id="Graphic_436">
-        <text transform="translate(816.543 175)" fill="white">
+      <g id="Graphic_436" >
+        <text transform="translate(816.543 235)" fill="white">
           <tspan
-                        font-family="Noto Sans Display"
-                        font-size="16"
-                        font-weight="400"
-                        fill="white"
                         x="0"
-                        y="15"
+                        y="14"
                     >Vulnerable</tspan>
           <tspan
-                        font-family="Noto Sans Display"
-                        font-size="16"
-                        font-weight="400"
-                        fill="white"
                         x="4.75"
-                        y="34"
+                        y="33"
                     >Webseite</tspan>
-          <tspan
-                        font-family="Noto Sans Display"
-                        font-size="16"
-                        font-weight="400"
-                        fill="white"
+          <tspan                        
                         x="5.0625"
-                        y="53"
+                        y="52"
                     >XYZ.com</tspan>
         </text>
       </g>
@@ -725,11 +658,11 @@
       <g id="Group_447">
         <g id="Graphic_450">
           <path
-                        d="M 771 792.9597 L 771 560.7984 L 854.5 618.8387 L 854.5 851 Z"
+                        d="M 771 722.9597 L 771 560.7984 L 854.5 618.8387 L 854.5 781 Z"
                         fill="url(#Obj_Gradient_20)"
                     />
           <path
-                        d="M 771 792.9597 L 771 560.7984 L 854.5 618.8387 L 854.5 851 Z"
+                        d="M 771 722.9597 L 771 560.7984 L 854.5 618.8387 L 854.5 781 Z"
                         stroke="white"
                         stroke-opacity=".4811747"
                         stroke-linecap="round"
@@ -739,11 +672,11 @@
         </g>
         <g id="Graphic_449">
           <path
-                        d="M 938 792.9597 L 938 560.7984 L 854.5 618.8387 L 854.5 851 Z"
+                        d="M 938 722.9597 L 938 560.7984 L 854.5 618.8387 L 854.5 781 Z"
                         fill="url(#Obj_Gradient_21)"
                     />
           <path
-                        d="M 938 792.9597 L 938 560.7984 L 854.5 618.8387 L 854.5 851 Z"
+                        d="M 938 722.9597 L 938 560.7984 L 854.5 618.8387 L 854.5 781 Z"
                         stroke="white"
                         stroke-opacity=".4811747"
                         stroke-linecap="round"
@@ -769,20 +702,12 @@
       <g id="Graphic_451">
         <text transform="translate(803.8203 548)" fill="white">
           <tspan
-                        font-family="Noto Sans Display"
-                        font-size="16"
-                        font-weight="400"
-                        fill="white"
                         x="18.21875"
-                        y="15"
+                        y="7"
                     >Angreifer</tspan>
           <tspan
-                        font-family="Noto Sans Display"
-                        font-size="16"
-                        font-weight="400"
-                        fill="white"
                         x="0"
-                        y="34"
+                        y="26"
                     >malicious.com</tspan>
         </text>
       </g>
@@ -816,9 +741,6 @@
                 />
         <text transform="translate(524.5 305)" fill="white">
           <tspan
-                        font-family="Noto Sans Display"
-                        font-size="16"
-                        font-weight="400"
                         fill="white"
                         x="6.550781"
                         y="15"
@@ -828,25 +750,16 @@
       <g id="Graphic_455">
         <text transform="translate(177.98176 434.8453)" fill="black">
           <tspan
-                        font-family="Noto Sans Display"
-                        font-size="16"
-                        font-weight="400"
                         fill="black"
                         x="0"
                         y="15"
                     >während der Nutzer </tspan>
           <tspan
-                        font-family="Noto Sans Display"
-                        font-size="16"
-                        font-weight="400"
                         fill="black"
                         x="0"
                         y="34"
                     >eingeloggt ist öffnet er </tspan>
           <tspan
-                        font-family="Noto Sans Display"
-                        font-size="16"
-                        font-weight="400"
                         fill="black"
                         x="0"
                         y="53"
@@ -870,26 +783,14 @@
       <g id="Graphic_459">
         <text transform="translate(578 620)" fill="black">
           <tspan
-                        font-family="Noto Sans Display"
-                        font-size="16"
-                        font-weight="400"
-                        fill="black"
                         x="20.160156"
                         y="15"
                     >die Webseite mit </tspan>
           <tspan
-                        font-family="Noto Sans Display"
-                        font-size="16"
-                        font-weight="400"
-                        fill="black"
                         x="2.2226562"
                         y="34"
-                    >dem Schadcode  wird </tspan>
+                    >dem Schadcode wird </tspan>
           <tspan
-                        font-family="Noto Sans Display"
-                        font-size="16"
-                        font-weight="400"
-                        fill="black"
                         x="37.79297"
                         y="53"
                     >ausgeliefert</tspan>
@@ -915,9 +816,6 @@
                 />
         <text transform="translate(479 519.7424)" fill="white">
           <tspan
-                        font-family="Noto Sans Display"
-                        font-size="16"
-                        font-weight="400"
                         fill="white"
                         x="6.550781"
                         y="15"
@@ -933,33 +831,21 @@
       <g id="Graphic_463">
         <text transform="translate(490.41406 434.8453)" fill="black">
           <tspan
-                        font-family="Noto Sans Display"
-                        font-size="16"
-                        font-weight="400"
                         fill="black"
                         x="13.328125"
                         y="15"
                     >die vom Angreifer </tspan>
           <tspan
-                        font-family="Noto Sans Display"
-                        font-size="16"
-                        font-weight="400"
                         fill="black"
                         x="7.984375"
                         y="34"
                     >vorbereitet Anfrage </tspan>
           <tspan
-                        font-family="Noto Sans Display"
-                        font-size="16"
-                        font-weight="400"
                         fill="black"
                         x="0"
                         y="53"
                     >wird im Namen von A</tspan>
           <tspan
-                        font-family="Noto Sans Display"
-                        font-size="16"
-                        font-weight="400"
                         fill="black"
                         x="37.78125"
                         y="72"
@@ -969,9 +855,6 @@
       <g id="Graphic_464">
         <text transform="translate(297.64582 390.8453)" fill="white">
           <tspan
-                        font-family="Noto Sans Display"
-                        font-size="16"
-                        font-weight="400"
                         fill="white"
                         x="0"
                         y="15"
@@ -981,9 +864,6 @@
       <g id="Graphic_465">
         <text transform="translate(297.64582 663.0453)" fill="white">
           <tspan
-                        font-family="Noto Sans Display"
-                        font-size="16"
-                        font-weight="400"
                         fill="white"
                         x="0"
                         y="15"

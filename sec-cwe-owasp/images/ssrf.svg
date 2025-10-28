@@ -94,40 +94,6 @@
             xl:href="#Gradient_6"
             gradientTransform="translate(116.01912 129.29892) rotate(90) scale(6.12689)"
         />
-    <font-face
-            font-family="Noto Sans Display"
-            font-size="10"
-            units-per-em="1000"
-            underline-position="-75.68359"
-            underline-thickness="49.316406"
-            slope="0"
-            x-height="522.9492"
-            cap-height="717.28516"
-            ascent="770.0195"
-            descent="-229.98047"
-            font-weight="400"
-        >
-      <font-face-src>
-        <font-face-name name="Noto Sans Display" />
-      </font-face-src>
-    </font-face>
-    <font-face
-            font-family="Noto Sans Display"
-            font-size="16"
-            units-per-em="1000"
-            underline-position="-75.68359"
-            underline-thickness="49.316406"
-            slope="0"
-            x-height="522.9492"
-            cap-height="717.28516"
-            ascent="770.0195"
-            descent="-229.98047"
-            font-weight="400"
-        >
-      <font-face-src>
-        <font-face-name name="Noto Sans Display" />
-      </font-face-src>
-    </font-face>
     <linearGradient x1="0" x2="1" id="Gradient_7" gradientUnits="userSpaceOnUse">
       <stop offset=".1060121" stop-color="#029ed7" />
       <stop offset=".8529494" stop-color="#99d0eb" stop-opacity=".5" />
@@ -235,25 +201,7 @@
             xl:href="#Gradient_11"
             gradientTransform="translate(1131.3222 399.5172) rotate(-133.44236) scale(140.54811)"
         />
-    <font-face
-            font-family="Noto Sans Display"
-            font-size="16"
-            units-per-em="1000"
-            underline-position="-75.68359"
-            underline-thickness="49.316406"
-            slope="0"
-            x-height="532.22656"
-            cap-height="719.7266"
-            ascent="770.0195"
-            descent="-229.98047"
-            font-weight="700"
-        >
-      <font-face-src>
-        <font-face-name name="Noto Sans Display-Bold" />
-      </font-face-src>
-    </font-face>
   </defs>
-  <metadata> Produced by OmniGraffle 8.0\n2024-01-18 17:20:32 +0000</metadata>
   <g
         id="ssrf"
         stroke-dasharray="none"
@@ -261,6 +209,9 @@
         stroke-opacity="1"
         fill="none"
         fill-opacity="1"
+        font-family="Noto Sans Display"      
+        font-size="16"
+        font-weight="400"
     >
     <title>ssrf</title>
     <g id="ssrf_Layer_1">
@@ -450,7 +401,6 @@
         <g id="Graphic_468">
           <text transform="translate(91.956 137.89077)" fill="#d0d0d0">
             <tspan
-                            font-family="Noto Sans Display"
                             font-size="10"
                             font-weight="400"
                             fill="#d0d0d0"
@@ -470,9 +420,7 @@
                 />
         <text transform="translate(870 216.65469)" fill="white">
           <tspan
-                        font-family="Noto Sans Display"
-                        font-size="16"
-                        font-weight="400"
+
                         fill="white"
                         x="6.550781"
                         y="15"
@@ -526,25 +474,16 @@
       <g id="Graphic_436">
         <text transform="translate(695.043 98.15493)" fill="white">
           <tspan
-                        font-family="Noto Sans Display"
-                        font-size="16"
-                        font-weight="400"
                         fill="white"
                         x="0"
                         y="15"
                     >Vulnerable</tspan>
           <tspan
-                        font-family="Noto Sans Display"
-                        font-size="16"
-                        font-weight="400"
                         fill="white"
                         x="4.75"
                         y="34"
                     >Webseite</tspan>
           <tspan
-                        font-family="Noto Sans Display"
-                        font-size="16"
-                        font-weight="400"
                         fill="white"
                         x="5.0625"
                         y="53"
@@ -564,9 +503,6 @@
       <g id="Graphic_451">
         <text transform="translate(1031.8398 108)" fill="white">
           <tspan
-                        font-family="Noto Sans Display"
-                        font-size="16"
-                        font-weight="400"
                         fill="white"
                         x="0"
                         y="15"
@@ -607,9 +543,6 @@
                 />
         <text transform="translate(274.48176 182.2453)" fill="white">
           <tspan
-                        font-family="Noto Sans Display"
-                        font-size="16"
-                        font-weight="400"
                         fill="white"
                         x="6.550781"
                         y="15"
@@ -619,9 +552,6 @@
       <g id="Graphic_455">
         <text transform="translate(303 125.84531)" fill="#666">
           <tspan
-                        font-family="Noto Sans Display"
-                        font-size="16"
-                        font-weight="400"
                         fill="#666"
                         x="0"
                         y="15"
@@ -648,9 +578,6 @@
                 />
         <text transform="translate(722 280.3453)" fill="white">
           <tspan
-                        font-family="Noto Sans Display"
-                        font-size="16"
-                        font-weight="400"
                         fill="white"
                         x="6.550781"
                         y="15"
@@ -660,9 +587,6 @@
       <g id="Graphic_464">
         <text transform="translate(222 251)" fill="white">
           <tspan
-                        font-family="Noto Sans Display"
-                        font-size="16"
-                        font-weight="400"
                         fill="white"
                         x="0"
                         y="15"
@@ -722,10 +646,6 @@
       <g id="Graphic_491">
         <text transform="translate(1031.8398 137)" fill="white">
           <tspan
-                        font-family="Noto Sans Display"
-                        font-size="16"
-                        font-weight="400"
-                        fill="white"
                         x="0"
                         y="15"
                     >192.168.20.43</tspan>
@@ -734,10 +654,6 @@
       <g id="Graphic_504">
         <text transform="translate(1031.8398 345.81977)" fill="white">
           <tspan
-                        font-family="Noto Sans Display"
-                        font-size="16"
-                        font-weight="400"
-                        fill="white"
                         x="0"
                         y="15"
                     >192.168.20.99</tspan>
@@ -746,9 +662,6 @@
       <g id="Graphic_505">
         <text transform="translate(858.3409 112.55469) rotate(-90)" fill="black">
           <tspan
-                        font-family="Noto Sans Display"
-                        font-size="16"
-                        font-weight="400"
                         fill="black"
                         x="0"
                         y="15"
@@ -771,9 +684,6 @@
       <g id="Graphic_507">
         <text transform="translate(815.4844 130.22535)" fill="#666">
           <tspan
-                        font-family="Noto Sans Display"
-                        font-size="16"
-                        font-weight="400"
                         fill="#666"
                         x="0"
                         y="15"
@@ -793,7 +703,6 @@
       <g id="Graphic_509">
         <text transform="translate(296.52344 211.15469)" fill="#b1001c">
           <tspan
-                        font-family="Noto Sans Display"
                         font-size="16"
                         font-weight="700"
                         fill="#b1001c"
@@ -815,7 +724,6 @@
       <g id="Graphic_511">
         <text transform="translate(858.3409 252.25)" fill="#b1001c">
           <tspan
-                        font-family="Noto Sans Display"
                         font-size="16"
                         font-weight="700"
                         fill="#b1001c"
@@ -841,17 +749,11 @@
       <g id="Graphic_513">
         <text transform="translate(1029.6445 392)" fill="white">
           <tspan
-                        font-family="Noto Sans Display"
-                        font-size="16"
-                        font-weight="400"
                         fill="white"
                         x="0"
                         y="15"
                     >Interner Server</tspan>
           <tspan
-                        font-family="Noto Sans Display"
-                        font-size="16"
-                        font-weight="400"
                         fill="white"
                         x="9.042969"
                         y="34"
