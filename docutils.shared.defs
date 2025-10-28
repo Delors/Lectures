@@ -68,8 +68,14 @@
 .. role:: xml(code)
    :language: xml
 
+.. role:: php(code)
+   :language: php
+
 .. role:: html(code)
    :language: html
+
+.. role:: http(code)
+   :language: http
 
 .. role:: asm(code)
    :language: nasm
