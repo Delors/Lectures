@@ -1,8 +1,8 @@
 void main() {
     final var n = Integer.parseInt(IO.readln("Geben Sie eine ganze positive Zahl ein? "));
  
-    if (n < 2) {
-        IO.println("Keine Primzahl");
+    if (n < 2) { // eine Primzahl hat (genau) zwei verschiedene positive Teiler
+        IO.println("Keine Primzahl"); 
         return;
     }
 
