@@ -476,6 +476,16 @@ Cybersicherheit ist das Geschäftsrisiko Nr. 1
 
         -- 2 Juli 2025 - `Summary provided by ACM; Full article: Guardian <https://www.theguardian.com/business/2025/jun/30/uk-businesses-hit-by-cyber-attack-last-year-report>`__
 
+    .. epigraph::
+
+        **Experten: Cyberangriff auf Jaguar ist teuerster in britischer Geschichte**
+
+        Wochenlang stand die Produktion von Jaguar Land Rover still. Das hatte nicht nur auf den britischen Autobauer erhebliche Auswirkungen.
+
+        Die Einbußen durch den wochenlangen erzwungenen Produktionsstopp belaufen sich demnach auf geschätzte 1,9 Milliarden Pfund (knapp 2,2 Milliarden Euro). Die Schätzung schließe den Schaden für Zulieferer und Händler mit ein, hieß es in einer Mitteilung des Cyber Monitoring Centre, einer unabhängigen Expertengruppe. Demnach waren mehr als 5000 Organisationen von dem Cyberangriff betroffen.
+
+        -- `23.10.2025 - Heise Security<https://www.heise.de/news/Experten-Cyberangriff-auf-Jaguar-ist-teuerster-in-britischer-Geschichte-10811032.html>`__
+
 
 
 Wichtige Kennzahlen bzgl. Cybersecurity-Vorfällen\ [#]_
