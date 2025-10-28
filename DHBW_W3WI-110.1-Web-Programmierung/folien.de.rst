@@ -141,6 +141,7 @@ Bei den Codepräsentationen gilt folgendes: Es gibt max. 15 Punkte für Präsent
 
     Bitte **dokumentieren Sie dies ggf. sehr deutlich** im Code!
 
+  .. TODO Die Bonuspunkte sind viel zu großzügig bemessen. Überarbeiten!
 
 
 Ablauf
