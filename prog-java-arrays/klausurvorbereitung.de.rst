@@ -3,7 +3,7 @@
     :author: Michael Eichberg
     :keywords: "Programmierung", "Java", "Arrays"
     :description lang=de: Fragen und Aufgaben zur Klausurvorbereitung bzgl. Java Arrays
-    :id: lecture-prog-java-arrays-kontrollfragen
+    :id: lecture-prog-java-arrays-klausurvorbereitung
     :first-slide: last-viewed
     :master-password: WirklichSchwierig!
 
