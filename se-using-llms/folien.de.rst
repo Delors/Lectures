@@ -1365,7 +1365,7 @@ Beispielhafte Verwendung von Claude Sonnet 4 Thinking
     .. compound::
         :class: llm-chat-user
 
-        Bitte generiere mir ein Java-Kommandozeilenprogramm zur Berechung der Quadratwurzel unter Verwendung der Newtown-Raphson-Methode. Die Anforderungen sind:
+        Bitte generiere mir ein Java-Kommandozeilenprogramm zur Berechung der Quadratwurzel unter Verwendung der Newton-Raphson-Methode. Die Anforderungen sind:
 
         - Es soll möglich sein die gewünschte Anzahl an Nachkommastellen anzugeben.
         - Die Methode zur Berechnung der Quadratwurzel soll auch aus anderem Code heraus aufrufbar sein.
