@@ -299,7 +299,7 @@ IT-Security Forschung
 
                 [...] The RAMBO attack achieves data transfer rates of up to 1,000 bits per second (bps) [at a distance of up to 7 meters], equating to 128 bytes per second, or 0.125 KB/s.
 
-            --September 2024 - `Bleepingcomputer  <https://www.bleepingcomputer.com/news/security/new-rambo-attack-steals-data-using-ram-in-air-gapped-computers/>`__
+            --September 2024 - `Bleepingcomputer <https://www.bleepingcomputer.com/news/security/new-rambo-attack-steals-data-using-ram-in-air-gapped-computers/>`__
 
 
         .. supplemental::
@@ -484,7 +484,7 @@ Cybersicherheit ist das Geschäftsrisiko Nr. 1
 
         Die Einbußen durch den wochenlangen erzwungenen Produktionsstopp belaufen sich demnach auf geschätzte 1,9 Milliarden Pfund (knapp 2,2 Milliarden Euro). Die Schätzung schließe den Schaden für Zulieferer und Händler mit ein, hieß es in einer Mitteilung des Cyber Monitoring Centre, einer unabhängigen Expertengruppe. Demnach waren mehr als 5000 Organisationen von dem Cyberangriff betroffen.
 
-        -- `23.10.2025 - Heise Security<https://www.heise.de/news/Experten-Cyberangriff-auf-Jaguar-ist-teuerster-in-britischer-Geschichte-10811032.html>`__
+        -- `23.10.2025 - Heise Security <https://www.heise.de/news/Experten-Cyberangriff-auf-Jaguar-ist-teuerster-in-britischer-Geschichte-10811032.html>`__
 
 
 
@@ -883,7 +883,6 @@ Ausgewählte Social-Engineering Angriffe
 
             Slopsquatting ist (Stand Anfang 2025) deswegen möglich, da LLMs beim Generieren von Code häufiger auf nicht-existierende Pakete verweisen und diese im generierten Code importieren. Welche Paket importiert werden ist pro LLM relativ stabil aber über LLM-Grenzen hinweg sehr unterschiedlich.
 
-
     :*Noch zu benennen*:
 
         *Wie an den letzten Einträgen zu erkennen ist, darf diese Liste nicht als abschließend betrachtet werden! Neue Technologien (insbesondere KI) werden (vermutlich) zu neuen Angriffen führen.*
@@ -960,7 +959,7 @@ Ergänzende Quellen
 
 - `Passwort - Der Podcast von heise security <https://www.heise.de/thema/Passwort_Podcast>`__
 
-- `Nachgehackt – Der IT-Security Podcast <https://nachgehacktpodcast.podigee.io>`__
+- `Nachgehackt - Der IT-Security Podcast <https://nachgehacktpodcast.podigee.io>`__
 
 - `Spiegel Vulkan Files <https://www.spiegel.de/thema/vulkanfiles/>`__
 
@@ -1029,7 +1028,7 @@ NIS 2 - Berichtspflichten
 ----------------------------
 
 - Wesentliche und wichtige Einrichtungen müssen unverzüglich (*in jeden Fall aber innerhalb von 24 Stunden*) über jeden Sicherheitsvorfall unterrichten, der erhebliche Auswirkungen auf die Erbringung ihrer Dienste hat
--   Ein Sicherheitsvorfall gilt als erheblich, wenn
+- Ein Sicherheitsvorfall gilt als erheblich, wenn
 
     .. class:: incremental
 
@@ -1043,7 +1042,6 @@ Von NIS2 betroffene öff. und priv. Einrichtungen\ [#]_
 -----------------------------------------------------------------
 
     Folgende Organisation mit mehr als 50 Mitarbeitern und einem Umsatz von mehr als 10 Millionen Euro müssen die NIS-2-Richtlinie einhalten (obligatorisch).
-
 
 .. class:: columns incremental-list
 
@@ -1103,6 +1101,5 @@ NIS 2 - zentrale Einrichtungen
 
         :CSIRT: Computer Security Incident Response Team
         :Behörden für das Krisenmanagement: Sollte es mehr als eine geben, so wird eine explizit benannt, die für die Koordination und das  Management von *Cybersicherheitsvorfällen großen Ausmaßes und Krisen* zuständig ist
-
 
 .. TODO Add discussion about the EU Cyber Resilience Act (e.g. https://www.bsi.bund.de/EN/Themen/Unternehmen-und-Organisationen/Informationen-und-Empfehlungen/Cyber_Resilience_Act/cyber_resilience_act_node.html#:~:text=The%20Cyber%20Resilience%20Act%20is,and%20will%20be%20implemented%20gradually.)
