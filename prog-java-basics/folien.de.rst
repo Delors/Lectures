@@ -39,6 +39,11 @@ Einführung in die Programmierung mit Java
             :prefix: https://delors.github.io/
             :suffix: .html
 
+    :Übungsaufgaben:
+
+        `klausurvorbereitung.de.rst.html <klausurvorbereitung.de.rst.html>`__
+
+
     :Fehler melden:
         https://github.com/Delors/delors.github.io/issues
 
@@ -3048,7 +3053,7 @@ Von Codekonventionen und Lesbarkeit - Zusammenfassung
 ----------------------------------------------------------
 
 
-Auf dem Weg zu einem professionellen Programmierer (egal welcher Sprache) ist es wichtig, neben den Sprachkonstrukten auch die geltenden Konventionen zu erlernen und einzuhalten. Diese sind je nach Sprache meist leicht unterschiedlich, aber in der Regel sehr ähnlich.
+Auf dem Weg zu einem professionellen Programmierer (egal in welcher Sprache) ist es wichtig, neben den Sprachkonstrukten auch die geltenden Konventionen zu erlernen und einzuhalten. Diese sind je nach Sprache meist leicht unterschiedlich, aber in der Regel sehr ähnlich.
 
 Das Einhalten fördert die Zusammenarbeit mit anderen Programmierern - *insbesondere auch Ihrem zukünftigen Ich* - und erhöht die Lesbarkeit des Codes.
 
