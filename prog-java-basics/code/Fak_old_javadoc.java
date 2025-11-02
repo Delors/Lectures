@@ -1,4 +1,5 @@
-Fak_old_javadoct die Fakultät von n.
+/** 
+ * Berechnet die Fakultät von n.
  * 
  * @param n die Zahl, von der die Fakultät berechnet werden soll; (0 <= n <= 20).
  * @return die Fakultät von n. 
