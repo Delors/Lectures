@@ -1,4 +1,4 @@
-#!/usr/bin/java --source 25 -ea
+#!/usr/bin/java --source 25
 
 void main(String []args) {
     int[] is = new int[args.length];
