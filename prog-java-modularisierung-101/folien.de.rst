@@ -16,7 +16,7 @@ Grundlegende Modularisierung von einfachen Java Programmen
 
 :Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
 :Kontakt: michael.eichberg@dhbw.de, Raum 149B
-:Version: 1.0.1
+:Version: 1.0.2
 
 .. supplemental::
 
@@ -37,6 +37,11 @@ Grundlegende Modularisierung von einfachen Java Programmen
         https://github.com/Delors/delors.github.io/issues
 
 
+.. class:: new-section
+
+Grundlagen der Modularisierung
+-------------------------------
+
 
 Modularisierung\ [#]_
 -----------------------
@@ -51,7 +56,7 @@ Modularisierung\ [#]_
 
         -- wikipedia.org `Modul (Software) <https://de.wikipedia.org/wiki/Modul_(Software)>`__
 
-.. [#] Java unterstützt neben Klassen und Packages seit Java 9 auch Module als primäres Sprachkonstrukt. In dieser Vorlesung werden wir uns jedoch auf die grundlegende Modularisierung mit Hilfe von Klassen und Packages von Java Programmen beschränken.
+.. [#] Java unterstützt neben Klassen und Packages seit Java 9 auch Module als primäres Sprachkonstrukt. In dieser Vorlesung werden wir uns jedoch im Wesentlichen auf die grundlegende Modularisierung mit Hilfe von Klassen und Packages von Java Programmen beschränken.
 
 
 
@@ -74,6 +79,16 @@ Ziele bei der Modularisierung von Code
 
 
 
+.. class:: new-section
+    
+Modularisierung in Java
+-------------------------------
+
+.. container:: section-subtitle
+
+    Einführung in Java: Imports, Packages und Sichtbarkeiten
+
+
 Modularisierungsebenen in Java
 -------------------------------
 
@@ -86,12 +101,6 @@ Modularisierungsebenen in Java
 
     Einzelnen Methoden erlauben zwar bereits eine Modularisierung des Codes, da diese aber für sich nicht wiederverwendbar sind (es ist nicht möglich eine Methode alleine in einer Datei zu speichern und in einem anderen Kontext zu nutzen), ist es notwendig, diese in Klassen zu organisieren. Klassen, welche in einzelnen Dateien gespeichert werden, erlauben dann eine Wiederverwendung des Codes.
 
-
-
-.. class:: new-subsection
-
-Einführung in Java: Imports, Packages und Sichtbarkeiten
----------------------------------------------------------
 
 
 Grundlegende Konzepte und Mechanismen zur Modularisierung von Java Programmen
@@ -139,7 +148,7 @@ Klassen in Java
 
         .. warning::
 
-            Die Hauptfunktion einer Klasse in Java ist es als Schablone für Objekte, die eine gemeinsame Struktur und Verhalten haben, zu dienen. Dies werden wir aber erst später in der Vorlesung besprechen. Für den Moment nutzen wir Klassen zur Strukturierung bzw. Modularisierung des Codes.
+            Die Hauptfunktion einer Klasse in Java ist es als Schablone für Objekte zu dienen, die eine gemeinsame Struktur und Verhalten haben. Dies werden wir aber erst später in der Vorlesung besprechen. Für den Moment nutzen wir Klassen „nur“ zur Strukturierung bzw. Modularisierung des Codes.
 
 
     .. card::
@@ -262,18 +271,22 @@ Statische Methoden und statische Attribute von Klassen und Interfaces
 Übung - Erste Refaktorisierung des Codes
 --------------------------------------------
 
-.. exercise:: 
+.. exercise:: Aufteilung in Klassen
 
     .. container::
 
-        Nehmen Sie Ihren Code (Berechnung der Fibonacci-Zahlen, Fakultät und Kubikwurzel sowie den Primzahltest) und ordnen Sie diesen einer Klasse zu. Überlegen Sie sich diesbezüglich einen geeigneten Namen für die Klasse und speichern Sie die Klasse in einer entsprechenden Datei. In einer zweiten Datei (``Main.java``) schreiben Sie eine :java:`main`\ -Methode, die - basierenden auf Kommandozeilenparametern - die passenden Methoden der Klasse aufruft und die Ergebnisse auf der Konsole ausgibt. Die :java:`main` Methode soll dabei die grundlegende Fehlerbehandlung übernehmen, falls die Kommandozeilenargumente nicht passen.
+        Nehmen Sie Ihren Code (Berechnung der Fibonacci-Zahlen, Fakultät, Kubikwurzel und Primzahltest) und ordnen Sie diesen einer Klasse zu. Überlegen Sie sich einen geeigneten Namen für die Klasse und speichern Sie die Klasse in einer entsprechenden Datei. In einer zweiten Datei (``Main.java``) schreiben Sie eine :java:`main`\ -Methode, die - basierenden auf Kommandozeilenparametern - die passenden Methoden der Klasse aufruft und die Ergebnisse auf der Konsole ausgibt. Die :java:`main` Methode soll dabei die grundlegende Fehlerbehandlung übernehmen, falls die Kommandozeilenargumente nicht passen.
+
+    .. supplemental::
+
+        Denken Sie daran, dass die Methoden und Attribute der Klasse statisch (:java:`static`) sein müssen, damit Sie diese ohne Instanziierung eines Objekts der Klasse aufrufen können.
 
     .. example::
 
         .. code:: bash
             :number-lines:
 
-            $ java --enable-preview Main.java cbrt 1000 isPrim 97 fibonacci 30 ack 1
+            $ java Main.java cbrt 1000 isPrim 97 fibonacci 30 ack 1
             1000.0^⅓ = 10.0
             isPrim(97) = true
             fiboncci(30) = 832040
@@ -463,13 +476,12 @@ Beispiele für Imports
 
         .. rubric:: Hinweis
 
-        Ein Java-Skript importiert immer implizit:
+        Ein Java-Skript/die JShell importiert immer implizit:
 
         .. code:: java
             :number-lines:
 
             import module java.base;
-            import static java.io.IO.*;
 
         Wenn Sie in der JShell also auch :java:`println` und :java:`readln` direkt verwenden wollen, dann müssen Sie lediglich :java:`import static java.io.IO.*;` hinzufügen.
 
