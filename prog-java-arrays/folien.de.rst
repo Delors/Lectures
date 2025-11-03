@@ -16,7 +16,7 @@ Verwendung von Feldern (:eng:`Arrays`) in Java
 
 :Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
 :Kontakt: michael.eichberg@dhbw.de, Raum 149B
-:Version: 1.3.1
+:Version: 1.3.2
 
 .. supplemental::
 
@@ -607,9 +607,9 @@ Multidimensional Arrays
             :header: Jahr, Jan, ..., Dez
             :width: 100%
 
-            :java:`sales[0] =`, :java:`sales[0][0]`, ...  , :java:`sales[0][9]`
+            :java:`sales[0] =`, :java:`sales[0][0]`, ...  , :java:`sales[0][11]`
             ... ,... , ..., ...
-            :java:`sales[9] =`, :java:`sales[9][0]`, ...  , :java:`sales[9][9]`
+            :java:`sales[9] =`, :java:`sales[9][0]`, ...  , :java:`sales[9][11]`
 
 
     .. card::
@@ -633,7 +633,7 @@ Multidimensional Arrays
             :class: copy-to-clipboard
 
             int [][] a = {{1,2,3},{4,5,6,7}};
-            // a ==> a ==> int[2][] { int[3] { 1, 2, 3 }, int[3] { 4, 5, 6, 7 } }
+            // a ==> a ==> int[2][] { int[3] { 1, 2, 3 }, int[4] { 4, 5, 6, 7 } }
 
         - Initialisierung mittels :java:`new`-Operator:
 
@@ -656,12 +656,11 @@ Multidimensional Arrays
 
         .. code:: java
 
-
             int [][][] a = {{{1,2,3},{4,5,6,7}},{{8,9,10},{11,12,13,14}}};
 
         :java:`var x = a[0]` ``// ==>`` :incremental:`int[2][] { int[3] { 1, 2, 3 }, int[4] { 4, 5, 6, 7 } }`
 
-        :java:`var y = a[1][1]]` ``// ==>`` :incremental:`int[4] { 11, 12, 13, 14 }`
+        :java:`var y = a[1][1]` ``// ==>`` :incremental:`int[4] { 11, 12, 13, 14 }`
 
     .. card::
 
@@ -691,7 +690,7 @@ Multidimensional Arrays
         .. include:: code/MatrixMultiplikation.java
             :code: java
             :number-lines:
-            :class:  copy-to-clipboard
+            :class: copy-to-clipboard
 
 .. [#] Matrixmultiplikation: Die Verrechnung erfolgt Zeile mal Spalte.
 
@@ -701,7 +700,7 @@ Multidimensional Arrays
     Beispiel für die :java:`main` Methode:
 
     .. code:: java
-        :class:  copy-to-clipboard
+        :class: copy-to-clipboard
         :number-lines:
 
         void main() {
@@ -767,7 +766,7 @@ Multidimensional Arrays
 
 .. supplemental::
 
-    Verwenden Sie Methoden aus der vorherigen Übung wieder (zum Beispiel zum Einlesen einer Matrize bzw. zur Ausgabe.)
+    Verwenden Sie Methoden aus der vorherigen Übung wieder (zum Beispiel zum Einlesen einer Matrize bzw. zur Ausgabe).
 
 
 
