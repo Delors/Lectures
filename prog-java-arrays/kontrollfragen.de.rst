@@ -16,7 +16,7 @@ Java Arrays
 
 :Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
 :Kontakt: michael.eichberg@dhbw.de, Raum 149B
-:Version: 1.1
+:Version: 1.1.1
 
 
 
@@ -37,23 +37,36 @@ Kontrollfragen
 
             int[] a;
             int b[];
+            int[] b[];
             int c[] = new int[10];
+            var f = new float[][]{null,null};
             var d = new int[10];
             final double[] e = {1.0d, 1, 1l};
+            var e = new int[][10];
 
          .. solution::
             :pwd: int_und_so
 
-            Wir kennen die primitiven Datentypen :java:`byte`, :java:`short`, :java:`int`, :java:`long`, :java:`float`, :java:`double`, :java:`boolean`, :java:`char`.
+            1. ja
+            2. ja
+            3. ja (die Syntax ist ungewöhnlich, aber korrekt)
+            4. ja            
+            5. ja
+            6. ja
+            7. ja
+            8. nein (Syntaxfehler!)
+            
 
    .. card::
 
       .. exercise:: Wie kann man über die Elemente in einem Array iterieren?
 
          .. solution::
-            :pwd: es gibt zwei Wege
+            :pwd: es gibt mehrere Wege
 
-            For und For-each Schleifen.
+            Im Wesentlichen mit Schleifen: z.B: For und For-each Schleifen, aber auch (do-)While Schleifen. 
+
+            Weiterhin ist es möglich mit einer (rekursiven) Methode zu iterieren.
 
    .. card::
 
