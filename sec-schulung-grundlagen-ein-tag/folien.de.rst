@@ -93,6 +93,16 @@ Nachrichten aus der Welt der IT-Sicherheit
 
         .. epigraph::
 
+            **Ransomware Profits Drop as Victims Stop Paying Hackers**
+
+            A report from cyber incident response firm Coveware found that the share of ransomware victims making payments has fallen from 28% in the first quarter of 2024 to a record low of 23% in the third quarter of 2025. Data exfiltration is the main objective for most ransomware groups, accounting for more than 76% of attacks during the most recent quarter. Coveware found the payment rate dropped to an all-time low of 19% for attacks that steal but do not encrypt data.
+
+            -- October 27, 2025  `BleepingComputer; Bill Toulas <https://maestro.acm.org/trk/click?ref=z16l2snue3_2-31cbe_0x345fd7x075134>`__ - (Summary provided by ACM Technews)
+
+    .. card::
+
+        .. epigraph::
+
             **Crypto-Hackers Steal $2.2bn as North Koreans Dominate**
 
             Threat actors stole $2.2bn from cryptocurrency platforms in 2024, with the majority (61%) of illicit funds attributed to North Korean hackers, according to Chainalysis. [...]
