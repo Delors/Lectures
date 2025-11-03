@@ -16,7 +16,7 @@ Verwendung von Feldern (:eng:`Arrays`) in Java
 
 :Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
 :Kontakt: michael.eichberg@dhbw.de, Raum 149B
-:Version: 1.3
+:Version: 1.3.1
 
 .. supplemental::
 
@@ -593,7 +593,7 @@ Multidimensional Arrays
         .. csv-table::
             :header: Jahr, , Jan, Feb, Mär, Apr, Mai, Jun, Jul, Aug, Sep, Okt, Nov, Dez,
             :stub-columns: 1
-            :class: font-size-75
+            :class: font-size-75 compact table-data-align-center
             :width: 100%
 
             :java:`sales[0]` =, [, 1000€, 2000€, 3000€, 4000€, 3000€, 2500€, 700€, 8000€, 2000€, 1000€, 1100€, 1250€, ]
@@ -602,7 +602,7 @@ Multidimensional Arrays
             :java:`sales[9]` = , [, 1000€, 2000€, 3000€, 350€, 300€, 500€, 600€, 600€, 900€, 1900€, 1000€, 2000€ , ]
 
         .. csv-table::
-            :class: font-size-75
+            :class: font-size-75 compact table-data-align-center
             :stub-columns: 1
             :header: Jahr, Jan, ..., Dez
             :width: 100%
