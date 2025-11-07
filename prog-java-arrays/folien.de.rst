@@ -16,7 +16,7 @@ Verwendung von Feldern (:eng:`Arrays`) in Java
 
 :Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
 :Kontakt: michael.eichberg@dhbw.de, Raum 149B
-:Version: 1.3.2
+:Version: 1.3.3
 
 .. supplemental::
 
@@ -789,7 +789,7 @@ Multidimensional Arrays
             $ ./sort 3 2 1 4 5 6 7 8 9 10
             [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 ]
 
-    Studieren Sie die verfügbaren Methoden der Klasse :java:`Arrays` (https://docs.oracle.com/en/java/javase/23/docs/api/java.base/java/util/Arrays.html). Suchen Sie nach einer Methode zum sortieren von Arrays mit dem Datentyp :java:`int`. Suchen Sie weiterhin nach einer Methode, um das Array „vernünftig“ auszugeben.
+    Studieren Sie die verfügbaren Methoden der Klasse :java:`Arrays` (https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/Arrays.html). Suchen Sie nach einer Methode zum Sortieren von Arrays mit dem Datentyp :java:`int`. Suchen Sie weiterhin nach einer Methode, um das Array „vernünftig“ auszugeben.
 
     .. solution::
         :pwd: SortierenUndAusgebenMitEchtemScript
@@ -815,7 +815,7 @@ Multidimensional Arrays
 
         .. code:: java
 
-            #!/usr/bin/env java --source 23 --enable-preview -ea
+            #!/usr/bin/env java --source 25 -ea
 
 
 
