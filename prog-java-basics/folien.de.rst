@@ -75,7 +75,7 @@ Einführung
 
     Die Datei enthält ein einfaches Java-Programm, das den Text ``Hello World!`` auf der Konsole ausgibt.
 
-    In der ersten Zeile wird die Methode :java:`main` definiert. Diese ist die Einstiegsmethode in das Programm. Der Text ``Hello World!`` wird mit der *Methode* :java:`println` auf der Konsole ausgegeben. Die Methoden :java:`print`, und :java:`println` sind in Java-Skripten immer verfügbar (bei Verwendung von ``--enable-preview`` (Java 23)) und geben den übergebenen Text auf der Konsole aus. Die Methode :java:`print` tut dies ohne und die Methode :java:`println`  mit Zeilenumbruch (``\\n``) am Ende.
+    In der ersten Zeile wird die Methode :java:`main` definiert. Diese ist die Einstiegsmethode in das Programm. Der Text ``Hello World!`` wird mit der *Methode* :java:`println` auf der Konsole ausgegeben. :java:`IO.print(...)`, und :java:`IO.println(...)` sind in Java-Skripten immer verfügbar und geben den übergebenen Text auf der Konsole aus. Die Methode :java:`print` tut dies ohne und die Methode :java:`println`  mit Zeilenumbruch (``\\n``) am Ende.
 
 
 
@@ -107,7 +107,7 @@ Ausführung von Java-Skripten
 
 .. class:: incremental
 
-- Java-Skripte können aber auch direkt ausgeführt werden, wenn sie ein Shebang (``#!``) in der ersten Zeile enthalten, die Datei nicht mit *.java* endet und die Dateirechte (ausführbar) entsprechend gesetzt sind (Auf Unixoiden: ``-rwxr-xr-x`` ... `HelloWorldScript <https://delors.github.io/prog-java-basics/code/HelloWorldScript>`__):
+- Java-Skripte können auf Unixoiden Betriebssystemen (insbesondere Linux, MacOS, BSD) auch direkt ausgeführt werden, wenn sie ein Shebang (``#!``) in der ersten Zeile enthalten, die Datei *nicht* mit ``.java`` endet und die Dateirechte (ausführbar) entsprechend gesetzt sind (Auf Unixoiden: ``-rwxr-xr-x`` ... `HelloWorldScript <https://delors.github.io/prog-java-basics/code/HelloWorldScript>`__):
 
   .. include:: code/HelloWorldScript
         :code: java
