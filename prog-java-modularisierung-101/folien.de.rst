@@ -168,7 +168,7 @@ Klassen in Java
             class MyMath {
                 static final int ANSWER_TO_EVERYTHING = 42;
                 static double fibonacci(int n) { ... }
-                static double isPrim(int n) { ... }
+                static boolean isPrim(int n) { ... }
             }
 
         .. rubric:: Datei: *Main.java*
@@ -206,7 +206,7 @@ Interfaces in Java
 
 - \
 
-  .. container:: smaller
+  .. container::
 
         Beispiel:
 
@@ -219,7 +219,7 @@ Interfaces in Java
             interface MyMath {
                 static final int ANSWER_TO_EVERYTHING = 42;
                 static double fibonacci(int n) { ... }
-                static double isPrim(int n) { ... }
+                static boolean isPrim(int n) { ... }
             }
 
         .. rubric:: Datei: *Main.java*
