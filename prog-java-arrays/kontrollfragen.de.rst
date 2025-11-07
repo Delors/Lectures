@@ -11,12 +11,12 @@
 
 
 
-Java Arrays
+Java Arrays - Kontrollfragen
 ===================================
 
 :Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
 :Kontakt: michael.eichberg@dhbw.de, Raum 149B
-:Version: 1.1.1
+:Version: 1.1.2
 
 
 
@@ -162,7 +162,8 @@ Kontrollfragen
             :class: copy-to-clipboard
             :number-lines:
 
-            for (int i = 1; i <= a.length; i++) {
+            int[] a = new int[Integer.parseInt(IO.readln("Dimension: "))];
+            for (int i = 0; i < a.length; i++) {
                 a[i] = i;
             }
 
