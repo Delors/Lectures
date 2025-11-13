@@ -178,7 +178,7 @@ Klassen in Java
             :class: copy-to-clipboard
 
             void main() {
-                    println(MyMath.fibonacci(10));
+                IO.println(MyMath.fibonacci(10));
             }
 
     .. card::
@@ -229,7 +229,7 @@ Interfaces in Java
             :class: copy-to-clipboard
 
             void main() {
-                println(MyMath.fibonacci(10));
+                IO.println(MyMath.fibonacci(10));
             }
 
 .. supplemental::
