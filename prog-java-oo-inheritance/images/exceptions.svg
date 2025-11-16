@@ -1,0 +1,396 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+    "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    version="1.1"
+    xmlns="http://www.w3.org/2000/svg"
+    xmlns:xl="http://www.w3.org/1999/xlink"
+    viewBox="-320 157 457 371"
+    width="457"
+    height="371"
+>
+<style>
+  @import url('/LectureDoc2/ext/fonts/ld-fonts.css');
+</style>
+<defs>
+    <filter id="Shadow" filterUnits="userSpaceOnUse" x="-365.7" y="119.9">
+      <feOffset in="SourceAlpha" result="offset" dx="0" dy="2" />
+      <feFlood flood-color="#919191" flood-opacity=".25" result="flood" />
+      <feComposite in="flood" in2="offset" operator="in" result="color" />
+      <feMerge>
+        <feMergeNode in="color" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+    <marker
+            orient="auto"
+            overflow="visible"
+            markerUnits="strokeWidth"
+            id="UMLInheritance_Marker"
+            stroke-linejoin="miter"
+            stroke-miterlimit="10"
+            viewBox="-1 -8 13 16"
+            markerWidth="13"
+            markerHeight="16"
+            color="black"
+        >
+      <g>
+        <path
+                    d="M 10.8 0 L 0 -6.3 L 0 6.3 Z"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1"
+                />
+      </g>
+    </marker>
+  </defs>
+  <metadata> Produced by OmniGraffle 8.0\n2024-11-28 20:22:38 +0000</metadata>
+  <g
+        id="Canvas_1"
+        stroke="none"
+        fill="none"
+        fill-opacity="1"
+        stroke-dasharray="none"
+        stroke-opacity="1"
+    >
+    <title>Canvas 1</title>
+    <rect fill="white" x="-320" y="157" width="457" height="371" />
+    <g id="Canvas_1_Layer_1">
+      <title>Layer 1</title>
+      <g id="Group_27">
+        <title>Superclass and Subclass Relationship</title>
+        <g id="Graphic_30" filter="url(#Shadow)">
+          <title>Superclass</title>
+          <rect
+                        x="-157.11719"
+                        y="158.54688"
+                        width="130"
+                        height="36"
+                        fill="#68bc36"
+                    />
+          <rect
+                        x="-157.11719"
+                        y="158.54688"
+                        width="130"
+                        height="36"
+                        stroke="#b9c0c1"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                    />
+          <text transform="translate(-151.11719 168.54688)" fill="white">
+            <tspan
+                            font-family="Helvetica"
+                            font-size="13"
+                            font-weight="700"
+                            fill="white"
+                            x="26.496826"
+                            y="13"
+                            xml:space="preserve"
+                        >Throwable</tspan>
+          </text>
+        </g>
+        <g id="Graphic_29" filter="url(#Shadow)">
+          <title>Subclass</title>
+          <rect
+                        x="-319.3828"
+                        y="248.67188"
+                        width="130"
+                        height="36"
+                        fill="#a9142f"
+                    />
+          <text transform="translate(-313.3828 258.67188)" fill="white">
+            <tspan
+                            font-family="Helvetica"
+                            font-size="13"
+                            font-weight="700"
+                            fill="white"
+                            x="43.10547"
+                            y="13"
+                            xml:space="preserve"
+                        >Error</tspan>
+          </text>
+        </g>
+        <g id="Graphic_31" filter="url(#Shadow)">
+          <title>Subclass</title>
+          <rect
+                        x="-157.11719"
+                        y="249.5703"
+                        width="130"
+                        height="36"
+                        fill="#68bc36"
+                    />
+          <rect
+                        x="-157.11719"
+                        y="249.5703"
+                        width="130"
+                        height="36"
+                        stroke="#b9c0c1"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                    />
+          <text transform="translate(-151.11719 259.5703)" fill="white">
+            <tspan
+                            font-family="Helvetica"
+                            font-size="13"
+                            font-weight="700"
+                            fill="white"
+                            x="27.937744"
+                            y="13"
+                            xml:space="preserve"
+                        >Exception</tspan>
+          </text>
+        </g>
+        <g id="Graphic_32" filter="url(#Shadow)">
+          <title>Subclass</title>
+          <rect
+                        x="-157.11719"
+                        y="340.59375"
+                        width="130"
+                        height="36"
+                        fill="#a9142f"
+                    />
+          <text transform="translate(-151.11719 350.59375)" fill="white">
+            <tspan
+                            font-family="Helvetica"
+                            font-size="13"
+                            font-weight="700"
+                            fill="white"
+                            x="1.9377441"
+                            y="13"
+                            xml:space="preserve"
+                        >RuntimeException</tspan>
+          </text>
+        </g>
+        <g id="Graphic_34" filter="url(#Shadow)">
+          <title>Subclass</title>
+          <rect
+                        x="5.1484375"
+                        y="342.4922"
+                        width="130"
+                        height="36"
+                        fill="#68bc36"
+                    />
+          <rect
+                        x="5.1484375"
+                        y="342.4922"
+                        width="130"
+                        height="36"
+                        stroke="#b9c0c1"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                    />
+          <text transform="translate(11.148438 352.4922)" fill="white">
+            <tspan
+                            font-family="Helvetica"
+                            font-size="13"
+                            font-weight="700"
+                            fill="white"
+                            x="52.5"
+                            y="13"
+                            xml:space="preserve"
+                        >…</tspan>
+          </text>
+        </g>
+        <g id="Graphic_45" filter="url(#Shadow)">
+          <title>Subclass</title>
+          <rect
+                        x="5.1484375"
+                        y="249.5703"
+                        width="130"
+                        height="36"
+                        fill="#68bc36"
+                    />
+          <rect
+                        x="5.1484375"
+                        y="249.5703"
+                        width="130"
+                        height="36"
+                        stroke="#b9c0c1"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                    />
+          <text transform="translate(11.148438 259.5703)" fill="white">
+            <tspan
+                            font-family="Helvetica"
+                            font-size="13"
+                            font-weight="700"
+                            fill="white"
+                            x="52.5"
+                            y="13"
+                            xml:space="preserve"
+                        >…</tspan>
+          </text>
+        </g>
+        <g id="Graphic_35" filter="url(#Shadow)">
+          <title>Subclass</title>
+          <rect
+                        x="-157.11719"
+                        y="431.6172"
+                        width="130"
+                        height="36"
+                        fill="#a9142f"
+                    />
+          <text transform="translate(-151.11719 441.6172)" fill="white">
+            <tspan
+                            font-family="Helvetica"
+                            font-size="13"
+                            font-weight="700"
+                            fill="white"
+                            x="52.5"
+                            y="13"
+                            xml:space="preserve"
+                        >…</tspan>
+          </text>
+        </g>
+        <g id="Graphic_33" filter="url(#Shadow)">
+          <title>Subclass</title>
+          <rect
+                        x="-319.3828"
+                        y="340.59375"
+                        width="130"
+                        height="36"
+                        fill="#a9142f"
+                    />
+          <text transform="translate(-313.3828 350.59375)" fill="white">
+            <tspan
+                            font-family="Helvetica"
+                            font-size="13"
+                            font-weight="700"
+                            fill="white"
+                            x="50.69409"
+                            y="13"
+                            xml:space="preserve"
+                        >….</tspan>
+          </text>
+        </g>
+      </g>
+      <g id="Line_36">
+        <line
+                    x1="-92.11719"
+                    y1="248.5703"
+                    x2="-92.11719"
+                    y2="219.64688"
+                    marker-end="url(#UMLInheritance_Marker)"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                />
+      </g>
+      <g id="Line_38">
+        <path
+                    d="M -254.3828 248.67188 L -254.3828 237.23438 C -254.3828 235.02524 -252.59195 233.23438 -250.3828 233.23438 L -96.11719 233.23438 C -93.90805 233.23438 -92.11719 231.44351 -92.11719 229.23438 L -92.11719 218.64688"
+                    marker-end="url(#UMLInheritance_Marker)"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                />
+      </g>
+      <g id="Line_39">
+        <line
+                    x1="-92.11719"
+                    y1="431.6172"
+                    x2="-92.11719"
+                    y2="400.69375"
+                    marker-end="url(#UMLInheritance_Marker)"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                />
+      </g>
+      <g id="Line_42">
+        <line
+                    x1="-92.11719"
+                    y1="340.59375"
+                    x2="-92.11719"
+                    y2="310.6703"
+                    marker-end="url(#UMLInheritance_Marker)"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                />
+      </g>
+      <g id="Line_40">
+        <line
+                    x1="-254.3828"
+                    y1="340.59375"
+                    x2="-254.3828"
+                    y2="308.77188"
+                    marker-end="url(#UMLInheritance_Marker)"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                />
+      </g>
+      <g id="Line_37">
+        <path
+                    d="M 70.14844 341.4922 L 70.14844 325.6992 C 70.14844 323.49008 68.35758 321.6992 66.14844 321.6992 L -88.11719 321.6992 C -90.32633 321.6992 -92.11719 319.90836 -92.11719 317.6992 L -92.11719 309.6703"
+                    marker-end="url(#UMLInheritance_Marker)"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                />
+      </g>
+      <g id="Line_46">
+        <path
+                    d="M 70.14844 249.5703 L 70.14844 238.03906 C 70.14844 235.82992 68.35758 234.03906 66.14844 234.03906 L -88.11719 234.03906 C -90.32633 234.03906 -92.11719 232.2482 -92.11719 230.03906 L -92.11719 218.64688"
+                    marker-end="url(#UMLInheritance_Marker)"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                />
+      </g>
+      <g id="Graphic_43">
+        <rect
+                    x="-71.73647"
+                    y="498.5039"
+                    width="172.75781"
+                    height="29"
+                    fill="#68bc36"
+                />
+        <text transform="translate(-66.73647 503.5039)" fill="white">
+          <tspan
+                        font-family="Helvetica"
+                        font-size="16"
+                        font-weight="400"
+                        fill="white"
+                        x="8.449219"
+                        y="15"
+                        xml:space="preserve"
+                    >Checked Exceptions</tspan>
+        </text>
+      </g>
+      <g id="Graphic_44">
+        <rect
+                    x="-285.756"
+                    y="498.5039"
+                    width="172.75781"
+                    height="29"
+                    fill="#a9142f"
+                />
+        <text transform="translate(-280.756 503.5039)" fill="white">
+          <tspan
+                        font-family="Helvetica"
+                        font-size="16"
+                        font-weight="400"
+                        fill="white"
+                        x="0"
+                        y="15"
+                        xml:space="preserve"
+                    >Unchecked Exceptions</tspan>
+        </text>
+      </g>
+    </g>
+  </g>
+</svg>

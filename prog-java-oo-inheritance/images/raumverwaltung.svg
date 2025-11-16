@@ -1,0 +1,355 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+    "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    version="1.1"
+    xmlns="http://www.w3.org/2000/svg"
+    xmlns:xl="http://www.w3.org/1999/xlink"
+    viewBox="73 133 539 287"
+    width="539"
+    height="287"
+>
+<style>
+  @import url('/LectureDoc2/ext/fonts/ld-fonts.css');
+</style>
+<defs>
+    <marker
+            orient="auto"
+            overflow="visible"
+            markerUnits="strokeWidth"
+            id="UMLInheritance_Marker"
+            stroke-linejoin="miter"
+            stroke-miterlimit="10"
+            viewBox="-1 -8 13 16"
+            markerWidth="13"
+            markerHeight="16"
+            color="black"
+        >
+      <g>
+        <path
+                    d="M 10.8 0 L 0 -6.3 L 0 6.3 Z"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1"
+                />
+      </g>
+    </marker>
+  </defs>
+  <g
+        id="Canvas_1"
+        stroke="none"
+        fill="none"
+        fill-opacity="1"
+        stroke-dasharray="none"
+        stroke-opacity="1"
+    >
+    <title>Canvas 1</title>
+    <rect fill="white" x="73" y="133" width="539" height="287" />
+    <g id="Canvas_1_Layer_1">
+      <title>Layer 1</title>
+      <g id="Group_2">
+        <title>Class with Attributes</title>
+        <g id="Graphic_4">
+          <title>Attributes</title>
+          <rect
+                        x="282.9043"
+                        y="158.62035"
+                        width="155.71484"
+                        height="97.68825"
+                        stroke="#b9c0c1"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                    />
+          <text transform="translate(288.9043 164.62035)" fill="#515556">
+            <tspan
+                            font-family="Helvetica"
+                            font-size="13"
+                            font-weight="400"
+                            fill="#515556"
+                            x="0"
+                            y="13"
+                            xml:space="preserve"
+                        >int zustand</tspan>
+          </text>
+        </g>
+        <g id="Graphic_3">
+          <title>Class Name</title>
+          <rect
+                        x="282.9043"
+                        y="134.32422"
+                        width="155.71484"
+                        height="24.296127"
+                        stroke="#b9c0c1"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                    />
+          <text transform="translate(288.9043 138.47228)" fill="#515556">
+            <tspan
+                            font-family="Helvetica"
+                            font-size="13"
+                            font-weight="700"
+                            fill="#515556"
+                            x="53.79834"
+                            y="13"
+                            xml:space="preserve"
+                        >Raum</tspan>
+          </text>
+        </g>
+      </g>
+      <g id="Group_5">
+        <title>Class with Attributes</title>
+        <g id="Graphic_7">
+          <title>Attributes</title>
+          <rect
+                        x="74.90625"
+                        y="349.6133"
+                        width="166.28125"
+                        height="68.577225"
+                        stroke="#b9c0c1"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                    />
+          <text transform="translate(80.90625 355.6133)" fill="#515556">
+            <tspan
+                            font-family="Helvetica"
+                            font-size="13"
+                            font-weight="400"
+                            fill="#515556"
+                            x="0"
+                            y="13"
+                            xml:space="preserve"
+                        >int kapazitaet</tspan>
+          </text>
+        </g>
+        <g id="Graphic_6">
+          <title>Class Name</title>
+          <rect
+                        x="74.90625"
+                        y="325.6133"
+                        width="166.28125"
+                        height="24"
+                        stroke="#b9c0c1"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                    />
+          <text transform="translate(80.90625 329.6133)" fill="#515556">
+            <tspan
+                            font-family="Helvetica"
+                            font-size="13"
+                            font-weight="700"
+                            fill="#515556"
+                            x="26.327637"
+                            y="13"
+                            xml:space="preserve"
+                        >Vorlesungsraum</tspan>
+          </text>
+        </g>
+      </g>
+      <g id="Group_8">
+        <title>Class with Attributes</title>
+        <g id="Graphic_11">
+          <title>String MItarbeiterer</title>
+          <rect
+                        x="480.33594"
+                        y="349.6133"
+                        width="130"
+                        height="24"
+                        stroke="#b9c0c1"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                    />
+          <text transform="translate(486.33594 353.6133)" fill="#515556">
+            <tspan
+                            font-family="Helvetica"
+                            font-size="13"
+                            font-weight="400"
+                            fill="#515556"
+                            x="0"
+                            y="13"
+                            xml:space="preserve"
+                        >String mitarbeiter</tspan>
+          </text>
+        </g>
+        <g id="Graphic_9">
+          <title>Class Name</title>
+          <rect
+                        x="480.33594"
+                        y="325.6133"
+                        width="130"
+                        height="24"
+                        stroke="#b9c0c1"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                    />
+          <text transform="translate(486.33594 329.6133)" fill="#515556">
+            <tspan
+                            font-family="Helvetica"
+                            font-size="13"
+                            font-weight="700"
+                            fill="#515556"
+                            x="43.83545"
+                            y="13"
+                            xml:space="preserve"
+                        >Büro</tspan>
+          </text>
+        </g>
+      </g>
+      <g id="Group_12">
+        <title>Class with Attributes</title>
+        <g id="Graphic_14">
+          <title>Attributes</title>
+          <rect
+                        x="280.52344"
+                        y="349.84245"
+                        width="160.47656"
+                        height="31.54427"
+                        stroke="#b9c0c1"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                    />
+          <text transform="translate(286.52344 357.6146)" fill="#515556">
+            <tspan
+                            font-family="Helvetica"
+                            font-size="13"
+                            font-weight="400"
+                            fill="#515556"
+                            x="6.2993164"
+                            y="13"
+                            xml:space="preserve"
+                        >Kuechgeraete[] geraete</tspan>
+          </text>
+        </g>
+        <g id="Graphic_13">
+          <title>Class Name</title>
+          <rect
+                        x="280.52344"
+                        y="325.6133"
+                        width="160.47656"
+                        height="24.229168"
+                        stroke="#b9c0c1"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                    />
+          <text transform="translate(286.52344 329.72787)" fill="#515556">
+            <tspan
+                            font-family="Helvetica"
+                            font-size="13"
+                            font-weight="700"
+                            fill="#515556"
+                            x="44.7312"
+                            y="13"
+                            xml:space="preserve"
+                        >Teeküche</tspan>
+          </text>
+        </g>
+      </g>
+      <g id="Line_15">
+        <path
+                    d="M 158.04688 324.6133 L 158.04688 294.96094 C 158.04688 292.7518 159.83774 290.96094 162.04688 290.96094 L 356.7617 290.96094 C 358.97086 290.96094 360.7617 289.17008 360.7617 286.96094 L 360.7617 281.4086"
+                    marker-end="url(#UMLInheritance_Marker)"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                />
+      </g>
+      <g id="Line_16">
+        <line
+                    x1="360.7617"
+                    y1="324.6133"
+                    x2="360.7617"
+                    y2="281.4086"
+                    marker-end="url(#UMLInheritance_Marker)"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                />
+      </g>
+      <g id="Line_17">
+        <path
+                    d="M 545.33594 324.6133 L 545.33594 294.96094 C 545.33594 292.7518 543.5451 290.96094 541.33594 290.96094 L 364.7617 290.96094 C 362.5526 290.96094 360.7617 289.17008 360.7617 286.96094 L 360.7617 281.4086"
+                    marker-end="url(#UMLInheritance_Marker)"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                />
+      </g>
+      <g id="Graphic_18">
+        <text transform="translate(287.9043 232)" fill="#515556">
+          <tspan
+                        font-family="Helvetica"
+                        font-size="13"
+                        font-weight="400"
+                        fill="#515556"
+                        x="0"
+                        y="13"
+                        xml:space="preserve"
+                    >int raumNummer</tspan>
+        </text>
+      </g>
+      <g id="Graphic_19">
+        <text transform="translate(287.9043 186)" fill="#515556">
+          <tspan
+                        font-family="Helvetica"
+                        font-size="13"
+                        font-weight="400"
+                        fill="#515556"
+                        x="0"
+                        y="13"
+                        xml:space="preserve"
+                    >String gebaeude</tspan>
+        </text>
+      </g>
+      <g id="Graphic_20">
+        <text transform="translate(287.9043 209.16406)" fill="#515556">
+          <tspan
+                        font-family="Helvetica"
+                        font-size="13"
+                        font-weight="400"
+                        fill="#515556"
+                        x="0"
+                        y="13"
+                        xml:space="preserve"
+                    >int ebene</tspan>
+        </text>
+      </g>
+      <g id="Graphic_21">
+        <text transform="translate(79.90625 397.1905)" fill="#515556">
+          <tspan
+                        font-family="Helvetica"
+                        font-size="13"
+                        font-weight="400"
+                        fill="#515556"
+                        x="0"
+                        y="13"
+                        xml:space="preserve"
+                    >Ausstattung[] ausstattung</tspan>
+        </text>
+      </g>
+      <g id="Graphic_22">
+        <text transform="translate(79.90625 377.1905)" fill="#515556">
+          <tspan
+                        font-family="Helvetica"
+                        font-size="13"
+                        font-weight="400"
+                        fill="#515556"
+                        x="0"
+                        y="13"
+                        xml:space="preserve"
+                    >boolean klimatisiert</tspan>
+        </text>
+      </g>
+    </g>
+  </g>
+</svg>
