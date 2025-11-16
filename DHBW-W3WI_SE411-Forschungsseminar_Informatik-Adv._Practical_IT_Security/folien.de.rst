@@ -9,15 +9,13 @@
 
 
 
-Forschungsseminar Informatik / Advanced Practical IT Security
-=================================================================
+*W3WI_SE411* - Forschungsseminar Informatik / Advanced Practical IT Security
+==============================================================================
 
 :Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
 :Kontakt: michael.eichberg@dhbw-mannheim.de, Raum 149B
-:Version: 22SEA (2. Semester)
-:Modul: *W3WI_SE411*
 :Unterlagen: Moodle
-
+:Version: 23SEB
 
 
 Teaser
@@ -37,24 +35,25 @@ Teaser
 
       .. hint::
 
-        Für diese Veranstaltung sind Grundkenntnisse in Linux hilfreich aber nicht notwendig. Notwendig ist aber Interesse an tiefergehenden technischen Details.
+        Für diese Veranstaltung sind Grundkenntnisse in Linux/Unix/MacOS hilfreich aber nicht notwendig. Notwendig ist aber Interesse an tiefergehenden technischen Details.
 
 
 
 Grober Ablauf
 --------------
 
-- 1. Semester: 6 Termine; (50% der Note)
-- 2. Semester  5 Termine; (50% der Note)
+- 1. Semester: 6 Termine; (50% der Endnote)
+- 2. Semester  X Termine; (50% der Endnote)
 
-.. container:: incremental margin-top-1em
+.. container:: incremental
 
   .. rubric:: Genereller Ablauf
 
   1. Einführung in ein für die IT-Sicherheit relevantes Thema in Hinblick auf praktische Anwendung
-  2. Aufgaben, die jeder für sich lösen muss/soll
-  3. Abgabe, die genau beschreibt wie Sie die Aufgabe gelöst haben. Darüber sammeln Sie Teilnoten, die am Ende verrechnet werden. D. h. es gibt Teilnoten pro Aufgabe. Die Punkte sind zwischen den Aufgaben nicht untereinander vergleichbar.
-  4. Jeder muss präsentieren.
+  2. Präsentationen zur Vertiefung
+  3. Aufgaben für die entsprechende Fragestellung
+  4. Abgabe, die genau beschreibt wie Sie die Aufgabe gelöst haben. Darüber sammeln Sie Teilnoten, die am Ende verrechnet werden. D. h. es gibt Teilnoten pro Aufgabe. Die Punkte sind zwischen den Aufgaben nicht untereinander vergleichbar.
+  5. Jeder muss präsentieren.
 
 
 
@@ -76,8 +75,6 @@ Inhalte
 
 
 
-.. class:: fade-out
-
 Was passiert wann im 1. Semester...
 --------------------------------------
 
@@ -85,50 +82,51 @@ Was passiert wann im 1. Semester...
 
   .. container::
 
-    :26. Aug 2024:
+    :19. Nov. 2025:
       .. rubric:: Einführung & Passwortwiederherstellung (Teil 1)
 
       (Ggf. Linux Shell und Reguläre Ausdrücke.)
 
-    :9. Sep 2024:
+    :24. November 2025 (Online):
 
-      .. rubric:: Passwortwiederherstellung (Teil 2)
+        (*Optional* - Unterstützung bei der Erstellung der Präsentationen)
 
-      Ausgabe der Übung - Notenanteil: 15%
+        BBB: https://bbb.dhbw.de/mannheim/eic-mn5-hvh-7qd
 
-  .. container:: line-above incremental
+  .. container:: incremental
 
-    :23. Sep 2024:
+    :01. Dezember 2025:
 
-      .. rubric:: Einführung in Reverse Engineering (und Netzwerkanalyse)
+        - Präsentationen zum Thema Password Recovery
 
-      Ausgabe der Übung - Notenanteil: 20%
+        .. rubric:: Passwortwiederherstellung (Teil 2)
 
-  .. container:: line-above incremental dhbw-gray
+        - Einführung in Reverse Engineering (und Netzwerkanalyse)
+        - Ausgabe der Übung bzgl. Password Recovery
 
-    :7. Oct 2024:
+  .. container:: incremental
 
-      Online (*Optional* - Unterstützung bei der Bearbeitung der Aufgaben)
+    :15. Dezember 2025:
+
+        Präsentationen zum Thema Reverse Engineering
+
+        Ausgabe der Übung
+
+  .. container:: incremental
+
+    :12. Januar 2026 (Online):
+
+      (*Optional* - Unterstützung bei der Bearbeitung der Aufgaben)
 
       BBB: https://bbb.dhbw.de/mannheim/eic-mn5-hvh-7qd
 
-  .. container:: line-above incremental dhbw-gray
+  .. container:: incremental
 
-    :21. Oct 2024: Online (*Optional* - Unterstützung bei der Bearbeitung der Aufgaben)
-
-      BBB: https://bbb.dhbw.de/mannheim/eic-mn5-hvh-7qd
-
-  .. container:: line-above  incremental
-
-    :28. Okt. 2024:
+    :26. Januar 2026:
 
       **Abgabe der Lösungen für alle Aufgaben als PDF Dokument (Moodle)**
 
       *(Ich werde am 29. zuteilen wer welchen Teil präsentiert; bitte schauen Sie in Moodle. Sollten Sie am 30. Okt. bis 22:00 Uhr weder eine Nachricht in Moodle noch eine E-Mail von mir erhalten haben, dann melden Sie sich bitte umgehend bei mir.)*
-
-  .. container:: line-above  incremental
-
-    :4. Nov 2024:
 
       .. rubric:: Abschlusspräsentationen
 
@@ -143,6 +141,9 @@ Was passiert wann im 1. Semester...
 
 
 
+
+.. class:: fade-out
+
 Was passiert wann im 2. Semester...
 --------------------------------------
 
@@ -150,7 +151,7 @@ Was passiert wann im 2. Semester...
 
   .. compound::
 
-    .. rubric:: 19. Feb 2025
+    .. rubric:: XXXX 2026
 
     - Ausgabe der Themen zur Bearbeitung
     - Kurze Einführung in das Thema Pentesting.
@@ -158,7 +159,7 @@ Was passiert wann im 2. Semester...
   .. compound::
     :class: incremental
 
-    .. rubric:: 24. Feb 2025
+    .. rubric:: YYYY 2026
 
     **Bearbeitung der Themen** mit dem Ziel „Hands-on“; bei Bedarf stehe ich für Rückfragen *online* zur Verfügung: https://bbb.dhbw.de/mannheim/eic-mn5-hvh-7qd.
 
@@ -166,7 +167,7 @@ Was passiert wann im 2. Semester...
   .. compound::
     :class: incremental
 
-    .. rubric:: 12. Mar 2025
+    .. rubric:: YYYY 2026
 
     - Halten der Präsentationen - Notenanteil: 20%
     - Vergabe der Aufgabe für das Pentesting
@@ -179,7 +180,7 @@ Was passiert wann im 2. Semester...
   .. compound::
     :class: incremental
 
-    .. rubric:: 31. Mar 2025
+    .. rubric:: YYYY 2026
 
     **Durchführung des Pentesting**; bei Bedarf stehe ich für Rückfragen *online* zur Verfügung: https://bbb.dhbw.de/mannheim/eic-mn5-hvh-7qd.
 
@@ -187,7 +188,7 @@ Was passiert wann im 2. Semester...
   .. compound::
     :class: incremental
 
-    .. rubric:: 23. Apr 2025
+    .. rubric:: YYYY 2026
 
     Vorstellung der mittels Pentesting gefundenen Lücken - Notenanteil: 20%
 
