@@ -16,7 +16,7 @@ Projektkonzeption und -realisierung
 
 :Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
 :Kontakt: michael.eichberg@dhbw-mannheim.de, Raum 149B
-:Version: WWI-22SEA
+:Version: WWI-23SEB
 
 
 
@@ -33,7 +33,7 @@ Einführung
 
    1. Teaser des Projekts
    2. Vorstellung des Ablaufs der Projektkonzeption und -realisierung
-   3. Zusammenfinden in 2 Teams
+   3. Zusammenfinden in 3 Teams
    4. Kurze Wiederholung von relevanten Themen
 
 2. Start der Projektkonzeption
@@ -60,13 +60,15 @@ Entwicklung eines AppStores für Apps zum Deployment auf OpenStack.
 .. HINWEIS: Gruppenbenotung -> Einzelbenotung nur auf explizitem Wunsch hin
 
 
-.. class:: transition-move-to-top
-
 Beispielanwendungen
 -----------------------
 
-.. class:: incremental-list
+.. story::
 
+    .. class:: incremental-list list-with-explanations
+
+    - Eine einfache VM mit NodeJS für Studierende bzw. Gruppen von Studierenden
+      (ggf. inkl. Quotas und Porteinschränkungen)
     - VMs für Pentesting Zwecke:
        - VMs die als Angriffsziele dienen
        - VMs mit Angriffswerkzeugen
@@ -78,8 +80,11 @@ Beispielanwendungen
     - Eine OpenStack Umgebung für Lehrveranstaltungen im Bereich Cloud Computing
     - Ein Kubernetes Cluster für das Deployment von Microservices
     - Ein Kubernetes Cluster für KI Anwendungen
-    - Eine vorkonfigurierte Entwicklungsumgebung für die Programmierung in Java (z. B. Eclipse Theia)
-    - Projektmanagementsoftware (z. B. OpenProject)...
+    - Eine vorkonfigurierte Entwicklungsumgebung für die Programmierung
+      (z.B. in Java mit Eclipse Theia)
+    - Projektmanagementsoftware (z. B. OpenProject)
+    - ...
+
 
 
 .. class:: transition-move-to-top
@@ -89,44 +94,88 @@ Anforderungen bzw. Herausforderungen
 
 .. story::
 
+    .. rubric:: Funktionale Anforderungen an den AppStore
+
     .. class:: incremental-list
 
-    - Es soll sowohl sowohl vorgefertigte Anwendungen (bzw. Anwendungstemplates)  geben, die einfach deployt werden können, als auch möglich sein dem App Store eigene (private) Anwendungen hinzuzufügen.
-    - beim Deployment von Anwendungen werden die notwendigen Konfigurationsschritte möglichst automatisiert durchgeführt:
+        - Es soll sowohl sowohl vorgefertigte Anwendungen (bzw. Anwendungstemplates)  geben, die einfach deployt werden können, als auch möglich sein dem App Store eigene (private) Anwendungen hinzuzufügen.
+        - beim Deployment von Anwendungen werden die notwendigen Konfigurationsschritte möglichst automatisiert durchgeführt:
 
-      - Anlegen der entsprechenden Anzahl an VMS
-      - Anlegen von Nutzeraccounts bzw. Gruppenaccounts (ggf. basierend auf CSV Dateien, manuell oder von einem LDAP Server); alternativ Konfiguration von SSH Keys
-      - Einrichten von Netzwerkkonfigurationen (ggf. inkl. Erzeugung von Zertifikaten)
-      - Konfiguration von DNS...
+          - Anlegen der entsprechenden Anzahl an VMS
+          - Anlegen von Nutzeraccounts bzw. Gruppenaccounts (ggf. basierend auf CSV Dateien, manuell oder von einem LDAP Server); alternativ Konfiguration von SSH Keys
+          - Einrichten von Netzwerkkonfigurationen (ggf. inkl. Erzeugung von Zertifikaten)
+          - Konfiguration von DNS...
 
-    - Es ist dem Dozenten ggf. möglich (einzelne) Anwendungen neu zu starten bzw. neu zu konfigurieren (z. B. wenn Anwendungen nicht mehr reagieren weil zum Beispiel im Rahmen des Pentesting die ZielVMs abgestürzt sind).
-    - Anwendungen können in unterschiedlichen Versionen vorliegen.
-    - Anwendungen können einfach aktualisiert werden. (Z. B. können die Anwendungen in einem GIT liegen und ein Dozent bzw. Administrator kann darüber Aktualisierungen durchführen.)
-    - jedem Dozenten sind nur begrenzte Ressourcen zur Verfügung gestellt (z. B. nur 10 VMs). Es kann ggf. sinnvoll sein, mehrere Instanzen einer Anwendung in einer VM zu deployen.
+        - Es ist dem Dozenten ggf. möglich (einzelne) Anwendungen neu zu starten bzw. neu zu konfigurieren (z. B. wenn Anwendungen nicht mehr reagieren weil zum Beispiel im Rahmen des Pentesting die ZielVMs abgestürzt sind).
+        - Anwendungen können in unterschiedlichen Versionen vorliegen.
+        - Anwendungen können einfach aktualisiert werden. (Z. B. können die Anwendungen in einem GIT liegen und ein Dozent bzw. Administrator kann darüber Aktualisierungen durchführen.)
+        - jedem Dozenten sind nur begrenzte Ressourcen zur Verfügung gestellt (z. B. nur 10 VMs). Es kann ggf. sinnvoll sein, mehrere Instanzen einer Anwendung in einer VM zu deployen.
+
+    .. class:: incremental
+
+    .. rubric:: Nicht-funktionale Anforderungen
+
+    .. class:: incremental-list list-with-explanations
+
+        - Der App-Store ist eine eigenständige Webanwendung, der die öffentlichen Schnittstellen von OpenStack verwendet
+
+          (D.h. er ist kein Plug-in.)
+        - Der Technologiestack sollte überschaubar sein, damit das Projekt ggf. später weiterentwickelt/übernommen werden kann.
+
+          (Dies ist Lizenz und Ergebnisabhängig.)
+
+          .. supplemental::
+
+            Jedes Team ist frei in der Wahl der Softwarelizenz. Sie können sich auch entscheiden Ihr Projekt unter keine explizite Lizenz zu stellen.
+
+            Eine weitere Übernahme des Projekts ist natürlich nur dann möglich, wenn Sie eine entsprechende Open-Source Lizenz wählen (Informationen finden Sie z.B. auf: https://www.linux-magazin.de/ausgaben/2025/04/software-lizenzen-teil-1/ oder auf https://www.computerweekly.com/de/definition/Softwarelizenz bzw. auf https://opensource.org/).
+
+            **Die Benotung des Projekts ist unabhängig von der Lizenzfrage.**
+
+        - Wartbarkeit und Qualität sind primäre Ziele.
 
     .. hint::
         :class: incremental
 
-        Die genauen Features bzw. Anforderungen legen wir gemeinsam in den folgenden Wochen im Rahmen von *Requirements Workshops* fest. Die oben genannten Anforderungen dienen nur als Leitfaden.
+        Die genauen Features bzw. Anforderungen legen wir gemeinsam in den folgenden Wochen im Rahmen von *Requirements Workshops* fest.
+
+        Die oben genannten Anforderungen stellen nur den groben Rahmen dar.
 
 
 
-.. class:: transition-move-to-top fade-out
+.. class:: transition-move-to-top
 
 Möglicherweise relevante Technologien
 ----------------------------------------
 
-Sowohl für die Entwicklung des App Stores, als auch der Anwendungen:
+Sowohl für die Entwicklung des App Stores, als auch der Anwendungen (ggf. als Inspiration):
 
 .. note::
-    :class: width-50
 
-    Abgesehen von OpenStack sind Sie frei in der Wahl der Technologien.
+    Abgesehen von OpenStack als Deploymentziel sind Sie frei in der Wahl der Technologien.
 
-- Kubernetes
-- FluxCD (GitLab)
-- HELM Charts
-- Open Component Model
+.. story::
+
+    .. class:: incremental-list
+
+    - Kubernetes
+    - FluxCD
+
+      .. epigraph::
+
+        Flux is a tool for keeping Kubernetes clusters in sync with sources of configuration, and automating updates to configuration when there is new code to deploy.
+
+    - HELM Charts
+
+      .. epigraph::
+
+        Charts describe even the most complex apps, provide repeatable application installation, and serve as a single point of authority.
+
+    - Open Component Model
+
+      .. epigraph::
+
+        The Open Component Model (OCM) is your one-stop open-source Software Bill of Delivery (SBoD) for packaging, signing, transporting and deploying your artifacts – preserving end-to-end security, integrity and provenance.
 
 
 
@@ -145,16 +194,20 @@ Benotungsgrundlage
 
 - **Projektrealisierung**
 
-  Gegen Ende dieses Semesters Zwischenpräsentation (20% der Projektnote). Die Präsentation kann stellvertretend gehalten werden. D. h. nicht jeder muss präsentieren.
+  Gegen Ende dieses Semesters Zwischenpräsentation (20% der Projektnote).
 
-  Am Ende des nächsten Semesters ist das Produkt als solches vorzuführen und abzugeben (50% der Projektnote). Weiterhin ist die Dokumentation der QS Maßnahmen (10% der Projektnote) abzugeben und eine Webseite und ein Produktvideo (20% der Projektnote) zu erstellen.
-
-
+  Am Ende des nächsten Semesters ist das Produkt als solches vorzuführen und abzugeben (60% der Projektnote). Weiterhin ist die Dokumentation (10%) abzugeben und eine Webseite und ein Produktvideo (10% der Projektnote) zu erstellen.
 
 
-.. class:: fade-out
 
-1. Projektkonzeption - 26.08.2024
+.. class:: new-section
+
+Projektkonzeption
+--------------------------
+
+
+
+1. Projektkonzeption - 19.11.2025
 ----------------------------------------------------------
 
 .. rubric:: Teil 1
@@ -183,7 +236,7 @@ Geteiltest `Kanboard <http://141.72.12.83/kanboard-1.2.39>`__
 
 .. class:: fade-out
 
-1. Projektkonzeption - 02.09.2024 [Optional - Online]
+1. Projektkonzeption - 24.11.2025 [Optional - Online]
 -------------------------------------------------------------------------------------------------
 
 :BBB: https://bbb.dhbw.de/mannheim/eic-mn5-hvh-7qd
@@ -200,7 +253,7 @@ Je Gruppe:
 
 .. class:: fade-out
 
-3. Projektkonzeption - 09.09.2024
+3. Projektkonzeption - 01.12.2025
 ----------------------------------
 
 .. rubric:: Teil 1 - „informelle“ Präsentation und Vorführung
@@ -222,9 +275,7 @@ Je Gruppe:
 
 
 
-.. class:: fade-out
-
-4. Projektkonzeption - 16.09.2024 [Optional - Online]
+4. Projektkonzeption - 08.12.2025 [Optional - Online]
 -------------------------------------------------------------------------------------------------
 
 :BBB: https://bbb.dhbw.de/mannheim/eic-mn5-hvh-7qd
@@ -238,9 +289,7 @@ Je Gruppe:
 
 
 
-.. class:: fade-out
-
-5. Projektkonzeption - 23.09.2024
+5. Projektkonzeption - 15.12.2025
 --------------------------------------------
 
 .. rubric:: Teil 1 - Abschluss der Konzeptionsphase
@@ -278,9 +327,13 @@ Je Gruppe:
 
 
 
-.. class:: transition-fade fade-out
+.. class:: new-section transition-fade
 
-1. Projektrealisierung - 30.09.2024
+Projektrealisierung
+-----------------------
+
+
+1. Projektrealisierung - 23.12.2025
 ---------------------------------------------
 
 .. rubric:: Teil 1
@@ -303,10 +356,9 @@ Je Gruppe:
 
 
 
-.. class:: fade-out
 
-2. Projektrealisierung - 07.10.2024 [Optional - Online]
--------------------------------------------------------------------------------------------------
+2. Projektrealisierung - 12.01.2026 [Optional - Online: 13:15Uhr bis 15:15Uhr und 16:45Uhr bis 18:45Uhr]
+----------------------------------------------------------------------------------------------------------
 
 :BBB: https://bbb.dhbw.de/mannheim/eic-mn5-hvh-7qd
 
@@ -317,9 +369,7 @@ Je Gruppe:
 
 
 
-.. class:: fade-out
-
-3. Projektrealisierung - 14.10.2024
+3. Projektrealisierung - 14.01.2026
 -------------------------------------------
 
 .. rubric:: Teil 1
@@ -342,9 +392,8 @@ Je Gruppe:
 
 
 
-.. class:: fade-out
 
-4. Projektrealisierung - 21.10.2024 [Optional - Online]
+4. Projektrealisierung - 19.01.2026 [Optional - Online]
 -------------------------------------------------------------------------------------------------
 
 :BBB: https://bbb.dhbw.de/mannheim/eic-mn5-hvh-7qd
@@ -359,7 +408,7 @@ Je Gruppe:
 
 .. class:: fade-out
 
-5. Projektrealisierung - 28.10.2024
+5. Projektrealisierung - 28.01.2026
 --------------------------------------------
 
 **Je Gruppe**: Zwischenpräsentation (ca. 45 - 60 Minuten je Gruppe inkl. Diskussion/Rückfragen)
@@ -385,30 +434,31 @@ Je Gruppe:
 
 
 
-.. class:: new-section transition-scale
+.. class:: new-section transition-scale fade-out
 
 Projektrealisierung Teil 2
 --------------------------------------------
 
 
 
-.. class:: transition-fade
+.. class:: fade-out
 
-6. Projektrealisierung - 18. Feb. 2025
+6. Projektrealisierung - DD. MMMM 2026
 --------------------------------------------
 
 - Noten Zwischenpräsentation
 - Überblick über den weiteren Ablauf
 - nächste Schritte / User Stories auswählen
 
-  (Kanboard: http://141.72.12.83/kanboard-1.2.39/)
-
 .. container:: accentuate
 
   Start der ersten Iteration
 
 
-7. Projektrealisierung - 24. Feb 2025
+
+.. class:: fade-out
+
+7. Projektrealisierung - DD. MMMM 2026
 --------------------------------------------
 
 .. container:: exclamation-mark
@@ -419,7 +469,9 @@ Projektrealisierung Teil 2
 
 
 
-8. Projektrealisierung - 11. März 2025
+.. class:: fade-out
+
+8. Projektrealisierung - DD. MMMM 2026
 --------------------------------------------
 
 - Präsentation des aktuellen Projektfortschritts (ca. 8 Minuten pro Gruppe)
@@ -437,7 +489,10 @@ Projektrealisierung Teil 2
   Start der zweiten Iteration
 
 
-9. Projektrealisierung - 17. März 2025
+
+.. class:: fade-out
+
+9. Projektrealisierung - DD. MMMM 2026
 --------------------------------------------
 
 .. container:: exclamation-mark
@@ -448,7 +503,9 @@ Projektrealisierung Teil 2
 
 
 
-10. Projektrealisierung - 25. März 2025
+.. class:: fade-out
+
+10. Projektrealisierung - DD. MMMM 2026
 --------------------------------------------
 
 - Präsentation des aktuellen Projektfortschritts (ca. 8 Minuten pro Gruppe)
@@ -467,7 +524,9 @@ Projektrealisierung Teil 2
 
 
 
-11. Projektrealisierung - 31. März 2025
+.. class:: fade-out
+
+11. Projektrealisierung - DD. MMMM 2026
 --------------------------------------------
 
 .. container:: exclamation-mark
@@ -476,7 +535,9 @@ Projektrealisierung Teil 2
 
 
 
-12. Projektrealisierung - 8. Apr 2025
+.. class:: fade-out
+
+12. Projektrealisierung - DD. MMMM 2026
 --------------------------------------------
 
 - Festlegen der abzuschließenden User Stories
@@ -521,7 +582,9 @@ Projektrealisierung Teil 2
 
 
 
-Projektabschluss - 22. Apr 2025
+.. class:: fade-out
+
+Projektabschluss - DD. MMMM 2026
 -----------------------------------------
 
 .. class:: list-with-explanations
