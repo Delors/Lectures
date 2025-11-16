@@ -14,40 +14,6 @@
   @import url('/LectureDoc2/ext/fonts/ld-fonts.css');
 </style>
 <defs>
-    <font-face
-            font-family="Helvetica"
-            font-size="13"
-            units-per-em="1000"
-            underline-position="-75.68359"
-            underline-thickness="49.316406"
-            slope="0"
-            x-height="522.9492"
-            cap-height="717.28516"
-            ascent="770.0195"
-            descent="-229.98047"
-            font-weight="400"
-        >
-      <font-face-src>
-        <font-face-name name="Helvetica" />
-      </font-face-src>
-    </font-face>
-    <font-face
-            font-family="Helvetica"
-            font-size="13"
-            units-per-em="1000"
-            underline-position="-75.68359"
-            underline-thickness="49.316406"
-            slope="0"
-            x-height="532.22656"
-            cap-height="719.7266"
-            ascent="770.0195"
-            descent="-229.98047"
-            font-weight="700"
-        >
-      <font-face-src>
-        <font-face-name name="Helvetica-Bold" />
-      </font-face-src>
-    </font-face>
     <marker
             orient="auto"
             overflow="visible"
@@ -70,7 +36,6 @@
       </g>
     </marker>
   </defs>
-  <metadata> Produced by OmniGraffle 8.0\n2024-11-28 16:06:23 +0000</metadata>
   <g
         id="Canvas_1"
         stroke="none"
@@ -79,7 +44,6 @@
         stroke-dasharray="none"
         stroke-opacity="1"
     >
-    <title>Canvas 1</title>
     <rect fill="white" x="139" y="127" width="492" height="367" />
     <g id="Canvas_1_Layer_1">
       <title>Layer 1</title>
@@ -99,7 +63,7 @@
                     />
           <text transform="translate(288.9043 189.14974)" fill="#515556">
             <tspan
-                            font-family="Helvetica"
+                            font-family="Noto Sans Display"
                             font-size="13"
                             font-weight="400"
                             fill="#515556"
@@ -123,7 +87,7 @@
                     />
           <text transform="translate(288.9043 166.07487)" fill="#515556">
             <tspan
-                            font-family="Helvetica"
+                            font-family="Noto Sans Display"
                             font-size="13"
                             font-weight="700"
                             fill="#515556"
@@ -150,7 +114,7 @@
                     />
           <text transform="translate(146.16016 355.6133)" fill="#515556">
             <tspan
-                            font-family="Helvetica"
+                            font-family="Noto Sans Display"
                             font-size="13"
                             font-weight="400"
                             fill="#515556"
@@ -174,7 +138,7 @@
                     />
           <text transform="translate(146.16016 329.6133)" fill="#515556">
             <tspan
-                            font-family="Helvetica"
+                            font-family="Noto Sans Display"
                             font-size="13"
                             font-weight="700"
                             fill="#515556"
@@ -201,7 +165,7 @@
                     />
           <text transform="translate(505.84766 472.5586)" fill="#515556">
             <tspan
-                            font-family="Helvetica"
+                            font-family="Noto Sans Display"
                             font-size="13"
                             font-weight="400"
                             fill="#515556"
@@ -225,7 +189,7 @@
                     />
           <text transform="translate(505.84766 448.5586)" fill="#515556">
             <tspan
-                            font-family="Helvetica"
+                            font-family="Noto Sans Display"
                             font-size="13"
                             font-weight="700"
                             fill="#515556"
@@ -252,7 +216,7 @@
                     />
           <text transform="translate(334.71094 472.5586)" fill="#515556">
             <tspan
-                            font-family="Helvetica"
+                            font-family="Noto Sans Display"
                             font-size="13"
                             font-weight="400"
                             fill="#515556"
@@ -276,7 +240,7 @@
                     />
           <text transform="translate(334.71094 448.5586)" fill="#515556">
             <tspan
-                            font-family="Helvetica"
+                            font-family="Noto Sans Display"
                             font-size="13"
                             font-weight="700"
                             fill="#515556"
@@ -303,7 +267,7 @@
                     />
           <text transform="translate(388.26953 357.6133)" fill="#515556">
             <tspan
-                            font-family="Helvetica"
+                            font-family="Noto Sans Display"
                             font-size="13"
                             font-weight="400"
                             fill="#515556"
@@ -327,7 +291,7 @@
                     />
           <text transform="translate(388.26953 329.6133)" fill="#515556">
             <tspan
-                            font-family="Helvetica"
+                            font-family="Noto Sans Display"
                             font-size="13"
                             font-weight="700"
                             fill="#515556"
@@ -381,7 +345,7 @@
       <g id="Graphic_19">
         <text transform="translate(287.9043 211.96094)" fill="#515556">
           <tspan
-                        font-family="Helvetica"
+                        font-family="Noto Sans Display"
                         font-size="13"
                         font-weight="400"
                         fill="#515556"
@@ -394,7 +358,7 @@
       <g id="Graphic_20">
         <text transform="translate(287.9043 235.125)" fill="#515556">
           <tspan
-                        font-family="Helvetica"
+                        font-family="Noto Sans Display"
                         font-size="13"
                         font-weight="400"
                         fill="#515556"

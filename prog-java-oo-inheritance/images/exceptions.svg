@@ -81,7 +81,7 @@
                     />
           <text transform="translate(-151.11719 168.54688)" fill="white">
             <tspan
-                            font-family="Helvetica"
+                            font-family="Noto Sans Display"
                             font-size="13"
                             font-weight="700"
                             fill="white"
@@ -102,7 +102,7 @@
                     />
           <text transform="translate(-313.3828 258.67188)" fill="white">
             <tspan
-                            font-family="Helvetica"
+                            font-family="Noto Sans Display"
                             font-size="13"
                             font-weight="700"
                             fill="white"
@@ -133,7 +133,7 @@
                     />
           <text transform="translate(-151.11719 259.5703)" fill="white">
             <tspan
-                            font-family="Helvetica"
+                            font-family="Noto Sans Display"
                             font-size="13"
                             font-weight="700"
                             fill="white"
@@ -154,7 +154,7 @@
                     />
           <text transform="translate(-151.11719 350.59375)" fill="white">
             <tspan
-                            font-family="Helvetica"
+                            font-family="Noto Sans Display"
                             font-size="13"
                             font-weight="700"
                             fill="white"
@@ -185,7 +185,7 @@
                     />
           <text transform="translate(11.148438 352.4922)" fill="white">
             <tspan
-                            font-family="Helvetica"
+                            font-family="Noto Sans Display"
                             font-size="13"
                             font-weight="700"
                             fill="white"
@@ -216,7 +216,7 @@
                     />
           <text transform="translate(11.148438 259.5703)" fill="white">
             <tspan
-                            font-family="Helvetica"
+                            font-family="Noto Sans Display"
                             font-size="13"
                             font-weight="700"
                             fill="white"
@@ -237,7 +237,7 @@
                     />
           <text transform="translate(-151.11719 441.6172)" fill="white">
             <tspan
-                            font-family="Helvetica"
+                            font-family="Noto Sans Display"
                             font-size="13"
                             font-weight="700"
                             fill="white"
@@ -258,7 +258,7 @@
                     />
           <text transform="translate(-313.3828 350.59375)" fill="white">
             <tspan
-                            font-family="Helvetica"
+                            font-family="Noto Sans Display"
                             font-size="13"
                             font-weight="700"
                             fill="white"
@@ -361,7 +361,7 @@
                 />
         <text transform="translate(-66.73647 503.5039)" fill="white">
           <tspan
-                        font-family="Helvetica"
+                        font-family="Noto Sans Display"
                         font-size="16"
                         font-weight="400"
                         fill="white"
@@ -381,7 +381,7 @@
                 />
         <text transform="translate(-280.756 503.5039)" fill="white">
           <tspan
-                        font-family="Helvetica"
+                        font-family="Noto Sans Display"
                         font-size="16"
                         font-weight="400"
                         fill="white"
