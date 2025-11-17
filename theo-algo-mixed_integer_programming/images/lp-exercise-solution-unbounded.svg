@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!-- Generator: DataGraph - https://www.visualdatatools.com/DataGraph/index.html  --><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="640" height="329" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g>
+  <!-- Commands -->
+  <g id="Commands">
+    <!-- Function -->
+    <g id="Function">
+      <defs>
+        <clipPath id="clipPath">
+          <rect x="64.5" y="12.5" width="554.7" height="260"/>
+        </clipPath>
+      </defs>
+      <g clip-path="url(#clipPath)">
+        <path d="M 64.5 272.5 L 619.2 272.5 L 619.2 45 L 64.5 305 "
+          fill="rgb(152,169,234)" stroke="none"/>
+      </g>
+    </g>
+    <!-- -x_1 -2x_2 ≤ -2 ≘ x_2 ≥ 1-x_1/2 -->
+    <g id="x_1_2x_2_2_x_2_1_x_1_2">
+      <defs>
+        <clipPath id="clipPath2">
+          <rect x="64.5" y="12.5" width="554.7" height="260"/>
+        </clipPath>
+      </defs>
+      <g clip-path="url(#clipPath2)">
+        <path d="M 64.5 272.5 L 619.2 272.5 L 619.2 305 L 64.5 240 "
+          fill="white" stroke="none"/>
+      </g>
+      <path d="M 64.5 240 L 341.85 272.5 "
+        stroke="black" stroke-dasharray="0.03,4.8,9.6,4.8" stroke-linecap="round" fill="none" stroke-width="3"/>
+    </g>
+    <!-- -2x_1 + x_2 ≤ -1 ≘ x_2 ≤ -1 + 2x_1 -->
+    <g id="2x_1_x_2_1_x_2_1_2x_1">
+      <path d="M 133.837 272.5 L 619.2 45 "
+        stroke="rgb(228,28,28)" stroke-dasharray="9.6,6" stroke-linecap="butt" fill="none" stroke-width="3"/>
+    </g>
+    <!-- Legend -->
+    <g id="Legend">
+      <defs>
+        <clipPath id="clipPath3">
+          <rect x="79.2" y="21.5" width="262" height="43.2"/>
+        </clipPath>
+      </defs>
+      <g clip-path="url(#clipPath3)">
+        <rect x="79.2" y="21.5" width="262" height="43.2" fill="white" stroke="none"/>
+      </g>
+      <g>
+        <defs>
+          <clipPath id="clipPath4">
+            <rect x="85.2" y="25.34" width="19" height="16.32"/>
+          </clipPath>
+        </defs>
+        <g clip-path="url(#clipPath4)">
+          <g>
+            <path d="M 85.2 41.66 L 104.2 41.66 L 104.2 33.5 L 85.2 33.5 L 85.2 33.5 "
+              fill="white" stroke="none"/>
+            <path d="M 85.2 33.5 L 104.2 33.5 "
+              stroke="black" stroke-dasharray="0.03,4.8,9.6,4.8" stroke-dashoffset="0.13" stroke-linecap="round" fill="none" stroke-width="3"/>
+          </g>
+        </g>
+        <g font-family="Helvetica" font-size="16" fill="black">
+          <text x="110.2" y="39.2383">-x</text>
+          <text x="123.528" y="42.5852" font-size="12">1</text>
+          <text x="134.647" y="39.2383">-2x</text>
+          <text x="156.874" y="42.5852" font-size="12">2</text>
+          <text x="167.993" y="39.2383">≤ -2 ≘ x</text>
+          <text x="221.759" y="42.5852" font-size="12">2</text>
+          <text x="232.878" y="39.2383">≥ 1-x</text>
+          <text x="268.331" y="42.5852" font-size="12">1</text>
+          <text x="275.005" y="39.2383">/2</text>
+        </g>
+        <defs>
+          <clipPath id="clipPath5">
+            <rect x="85.2" y="44.54" width="19" height="16.32"/>
+          </clipPath>
+        </defs>
+        <g clip-path="url(#clipPath5)">
+          <path d="M 85.2 52.5 L 104.2 52.5 "
+            stroke="rgb(228,28,28)" stroke-dasharray="9.6,6" stroke-dashoffset="10.9" stroke-linecap="butt" fill="none" stroke-width="3"/>
+        </g>
+        <g font-family="Helvetica" font-size="16" fill="black">
+          <text x="110.2" y="58.4383">-2x</text>
+          <text x="132.427" y="61.7852" font-size="12">1</text>
+          <text x="143.546" y="58.4383">+ x</text>
+          <text x="165.335" y="61.7852" font-size="12">2</text>
+          <text x="176.454" y="58.4383">≤ -1 ≘ x</text>
+          <text x="230.22" y="61.7852" font-size="12">2</text>
+          <text x="241.339" y="58.4383">≤ -1 + 2x</text>
+          <text x="303.925" y="61.7852" font-size="12">1</text>
+        </g>
+      </g>
+    </g>
+    <!-- No name -->
+    <g id="No_name">
+      <g font-family="Helvetica" font-size="16" fill="white">
+        <text x="452.5" y="200.62">gültige Lösungen</text>
+      </g>
+    </g>
+  </g>
+  <!-- Foreground -->
+  <g id="Foreground">
+    <!-- Y Axis -->
+    <g id="Y_Axis">
+      <g transform="translate(18.525,142.5) rotate(-90) translate(-18.525,-142.5)" font-family="Helvetica" font-size="16" fill="black">
+        <text x="11.1881" y="142.5">x</text>
+        <text x="19.1881" y="145.847" font-size="12">2</text>
+      </g>
+      <!-- Y Labels -->
+      <g id="Y_Labels">
+        <g font-family="Helvetica" font-size="16" fill="black">
+          <text x="44.4016" y="278.238">0</text>
+        </g>
+        <g font-family="Helvetica" font-size="16" fill="black">
+          <text x="44.4016" y="213.238">2</text>
+        </g>
+        <g font-family="Helvetica" font-size="16" fill="black">
+          <text x="44.4016" y="148.238">4</text>
+        </g>
+        <g font-family="Helvetica" font-size="16" fill="black">
+          <text x="44.4016" y="83.2383">6</text>
+        </g>
+        <g font-family="Helvetica" font-size="16" fill="black">
+          <text x="44.4016" y="18.2383">8</text>
+        </g>
+      </g>
+      <path d="M 56.5 272.5 L 64.5 272.5 M 60.5 240 L 64.5 240 M 56.5 207.5 L 64.5 207.5 M 60.5 175 L 64.5 175 
+               M 56.5 142.5 L 64.5 142.5 M 60.5 110 L 64.5 110 M 56.5 77.5 L 64.5 77.5 M 60.5 45 L 64.5 45 
+               M 56.5 12.5 L 64.5 12.5 "
+        stroke="black" fill="none" stroke-width="0.5"/>
+    </g>
+    <!-- X Axis -->
+    <g id="X_Axis">
+      <g font-family="Helvetica" font-size="16" fill="black">
+        <text x="334.663" y="320">x</text>
+        <text x="342.663" y="323.347" font-size="12">1</text>
+      </g>
+      <g>
+        <g font-family="Helvetica" font-size="16" fill="black">
+          <text x="60.0508" y="295.42">0</text>
+        </g>
+        <g font-family="Helvetica" font-size="16" fill="black">
+          <text x="122.716" y="295.42">0,5</text>
+        </g>
+        <g font-family="Helvetica" font-size="16" fill="black">
+          <text x="192.054" y="295.42">1,0</text>
+        </g>
+        <g font-family="Helvetica" font-size="16" fill="black">
+          <text x="261.391" y="295.42">1,5</text>
+        </g>
+        <g font-family="Helvetica" font-size="16" fill="black">
+          <text x="330.729" y="295.42">2,0</text>
+        </g>
+        <g font-family="Helvetica" font-size="16" fill="black">
+          <text x="400.066" y="295.42">2,5</text>
+        </g>
+        <g font-family="Helvetica" font-size="16" fill="black">
+          <text x="469.404" y="295.42">3,0</text>
+        </g>
+        <g font-family="Helvetica" font-size="16" fill="black">
+          <text x="538.741" y="295.42">3,5</text>
+        </g>
+        <g font-family="Helvetica" font-size="16" fill="black">
+          <text x="608.079" y="295.42">4,0</text>
+        </g>
+      </g>
+      <path d="M 64.5 280.5 L 64.5 272.5 M 133.837 280.5 L 133.837 272.5 M 203.175 280.5 L 203.175 272.5 
+               M 272.512 280.5 L 272.512 272.5 M 341.85 280.5 L 341.85 272.5 M 411.187 280.5 L 411.187 272.5 
+               M 480.525 280.5 L 480.525 272.5 M 549.862 280.5 L 549.862 272.5 M 619.2 280.5 L 619.2 272.5 
+               M 78.3675 276.5 L 78.3675 272.5 M 92.235 276.5 L 92.235 272.5 M 106.102 276.5 L 106.102 272.5 
+               M 119.97 276.5 L 119.97 272.5 M 147.705 276.5 L 147.705 272.5 M 161.572 276.5 L 161.572 272.5 
+               M 175.44 276.5 L 175.44 272.5 M 189.308 276.5 L 189.308 272.5 M 217.042 276.5 L 217.042 272.5 
+               M 230.91 276.5 L 230.91 272.5 M 244.777 276.5 L 244.777 272.5 M 258.645 276.5 L 258.645 272.5 
+               M 286.38 276.5 L 286.38 272.5 M 300.247 276.5 L 300.247 272.5 M 314.115 276.5 L 314.115 272.5 
+               M 327.982 276.5 L 327.982 272.5 M 355.717 276.5 L 355.717 272.5 M 369.585 276.5 L 369.585 272.5 
+               M 383.452 276.5 L 383.452 272.5 M 397.32 276.5 L 397.32 272.5 M 425.055 276.5 L 425.055 272.5 
+               M 438.922 276.5 L 438.922 272.5 M 452.79 276.5 L 452.79 272.5 M 466.657 276.5 L 466.657 272.5 
+               M 494.392 276.5 L 494.392 272.5 M 508.26 276.5 L 508.26 272.5 M 522.127 276.5 L 522.127 272.5 
+               M 535.995 276.5 L 535.995 272.5 M 563.73 276.5 L 563.73 272.5 M 577.597 276.5 L 577.597 272.5 
+               M 591.465 276.5 L 591.465 272.5 M 605.332 276.5 L 605.332 272.5 "
+        stroke="black" fill="none" stroke-width="0.5"/>
+    </g>
+    <path d="M 619.2 272.5 L 619.2 12.5 L 64.5 12.5 L 64.5 272.5 L 619.2 272.5 z "
+      stroke="black" stroke-linecap="square" fill="none" stroke-width="0.5"/>
+  </g>
+</g>
+</svg>

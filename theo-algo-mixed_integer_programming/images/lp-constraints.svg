@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!-- Generator: DataGraph - https://www.visualdatatools.com/DataGraph/index.html  --><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="432" height="576" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g>
+  <!-- Commands -->
+  <g id="Commands">
+    <!-- -8+4x -->
+    <g id="8_4x">
+      <path d="M 177.833 521.5 L 324.5 11.5 "
+        stroke="black" fill="none" stroke-width="0.5"/>
+    </g>
+    <!-- 1+(5/2)*x -->
+    <g id="1_5_2_x">
+      <path d="M 60.5 470.5 L 271.7 11.5 "
+        stroke="black" fill="none" stroke-width="2"/>
+    </g>
+    <!-- 10- 2x -->
+    <g id="10_2x">
+      <defs>
+        <clipPath id="clipPath">
+          <rect x="60.5" y="11.5" width="352" height="510"/>
+        </clipPath>
+      </defs>
+      <g clip-path="url(#clipPath)">
+        <path d="M 177.833 521.5 L 412.5 521.5 L 412.5 623.5 L 177.833 215.5 "
+          fill="rgb(198,223,255)" opacity="0.5" stroke="none"/>
+      </g>
+      <path d="M 177.833 215.5 L 353.833 521.5 "
+        stroke="black" fill="none" stroke-width="0.25"/>
+    </g>
+    <!-- -8+4x -->
+    <g id="8_4x_2">
+      <defs>
+        <clipPath id="clipPath2">
+          <rect x="60.5" y="11.5" width="352" height="510"/>
+        </clipPath>
+      </defs>
+      <g clip-path="url(#clipPath2)">
+        <path d="M 60.5 521.5 L 412.5 521.5 L 412.5 -294.5 L 60.5 929.5 "
+          fill="white" stroke="none"/>
+      </g>
+      <path d="M 177.833 521.5 L 324.5 11.5 "
+        stroke="black" fill="none" stroke-width="2"/>
+    </g>
+    <!-- 1+(5/2)*x -->
+    <g id="1_5_2_x_2">
+      <defs>
+        <clipPath id="clipPath3">
+          <rect x="60.5" y="11.5" width="352" height="510"/>
+        </clipPath>
+      </defs>
+      <g clip-path="url(#clipPath3)">
+        <path d="M 60.5 521.5 L 177.833 521.5 L 177.833 215.5 L 60.5 470.5 "
+          fill="rgb(198,223,255)" opacity="0.5" stroke="none"/>
+      </g>
+      <path d="M 60.5 470.5 L 177.833 215.5 "
+        stroke="black" fill="none" stroke-width="0.25"/>
+    </g>
+    <!-- 10- 2x -->
+    <g id="10_2x_2">
+      <path d="M 60.5 11.5 L 353.833 521.5 "
+        stroke="black" fill="none" stroke-width="2"/>
+    </g>
+    <!-- No name -->
+    <g id="No_name">
+      <g font-family="Helvetica" font-size="15" fill="black">
+        <text x="285.5" y="159.487">4x</text>
+        <text x="301.342" y="162.625" font-size="11">1</text>
+        <text x="307.46" y="159.487">-x</text>
+        <text x="319.955" y="162.625" font-size="11">2</text>
+        <text x="330.24" y="159.487">≤ 8</text>
+      </g>
+    </g>
+    <!-- No name -->
+    <g id="No_name_2">
+      <g font-family="Helvetica" font-size="15" fill="black">
+        <text x="181.5" y="36.4871">5x</text>
+        <text x="197.342" y="39.6248" font-size="11">1</text>
+        <text x="203.46" y="36.4871">-2x</text>
+        <text x="224.297" y="39.6248" font-size="11">2</text>
+        <text x="234.583" y="36.4871">≥ -2</text>
+      </g>
+    </g>
+    <!-- No name -->
+    <g id="No_name_3">
+      <g font-family="Helvetica" font-size="15" fill="black">
+        <text x="257.5" y="510.487">2x</text>
+        <text x="273.342" y="513.625" font-size="11">1</text>
+        <text x="279.46" y="510.487">+x</text>
+        <text x="295.72" y="513.625" font-size="11">2</text>
+        <text x="306.005" y="510.487">≤ 10</text>
+      </g>
+    </g>
+    <!-- No name -->
+    <g id="No_name_4">
+      <g>
+        <g font-family="Helvetica" font-size="12" fill="rgb(55,126,184)">
+          <text x="99.5" y="415.09">Nebenbedingungen </text>
+        </g>
+        <g font-family="Helvetica" font-size="12" fill="rgb(55,126,184)">
+          <text x="99.5" y="429.49">eingehalten</text>
+        </g>
+      </g>
+    </g>
+  </g>
+  <!-- Foreground -->
+  <g id="Foreground">
+    <!-- Y Axis -->
+    <g id="Y_Axis">
+      <g transform="translate(16.8984,266.5) rotate(-90) translate(-16.8984,-266.5)" font-family="Helvetica" font-size="15" fill="black">
+        <text x="10.0896" y="266.5">x</text>
+        <text x="17.5896" y="269.638" font-size="11">2</text>
+      </g>
+      <!-- Y Labels -->
+      <g id="Y_Labels">
+        <g font-family="Helvetica" font-size="15" fill="black">
+          <text x="41.1577" y="526.88">0</text>
+        </g>
+        <g font-family="Helvetica" font-size="15" fill="black">
+          <text x="41.1577" y="475.88">1</text>
+        </g>
+        <g font-family="Helvetica" font-size="15" fill="black">
+          <text x="41.1577" y="424.88">2</text>
+        </g>
+        <g font-family="Helvetica" font-size="15" fill="black">
+          <text x="41.1577" y="373.88">3</text>
+        </g>
+        <g font-family="Helvetica" font-size="15" fill="black">
+          <text x="41.1577" y="322.88">4</text>
+        </g>
+        <g font-family="Helvetica" font-size="15" fill="black">
+          <text x="41.1577" y="271.88">5</text>
+        </g>
+        <g font-family="Helvetica" font-size="15" fill="black">
+          <text x="41.1577" y="220.88">6</text>
+        </g>
+        <g font-family="Helvetica" font-size="15" fill="black">
+          <text x="41.1577" y="169.88">7</text>
+        </g>
+        <g font-family="Helvetica" font-size="15" fill="black">
+          <text x="41.1577" y="118.88">8</text>
+        </g>
+        <g font-family="Helvetica" font-size="15" fill="black">
+          <text x="41.1577" y="67.8796">9</text>
+        </g>
+        <g font-family="Helvetica" font-size="15" fill="black">
+          <text x="32.8154" y="16.8796">10</text>
+        </g>
+      </g>
+      <path d="M 52.5 521.5 L 60.5 521.5 M 56.5 496 L 60.5 496 M 52.5 470.5 L 60.5 470.5 M 56.5 445 L 60.5 445 
+               M 52.5 419.5 L 60.5 419.5 M 56.5 394 L 60.5 394 M 52.5 368.5 L 60.5 368.5 M 56.5 343 L 60.5 343 
+               M 52.5 317.5 L 60.5 317.5 M 56.5 292 L 60.5 292 M 52.5 266.5 L 60.5 266.5 M 56.5 241 L 60.5 241 
+               M 52.5 215.5 L 60.5 215.5 M 56.5 190 L 60.5 190 M 52.5 164.5 L 60.5 164.5 M 56.5 139 L 60.5 139 
+               M 52.5 113.5 L 60.5 113.5 M 56.5 88 L 60.5 88 M 52.5 62.5 L 60.5 62.5 M 56.5 37 L 60.5 37 
+               M 52.5 11.5 L 60.5 11.5 "
+        stroke="black" fill="none" stroke-width="0.5"/>
+    </g>
+    <!-- X Axis -->
+    <g id="X_Axis">
+      <g font-family="Helvetica" font-size="15" fill="black">
+        <text x="230.191" y="566">x</text>
+        <text x="237.691" y="569.138" font-size="11">1</text>
+      </g>
+      <g>
+        <g font-family="Helvetica" font-size="15" fill="black">
+          <text x="56.3289" y="543.487">0</text>
+        </g>
+        <g font-family="Helvetica" font-size="15" fill="black">
+          <text x="114.996" y="543.487">1</text>
+        </g>
+        <g font-family="Helvetica" font-size="15" fill="black">
+          <text x="173.662" y="543.487">2</text>
+        </g>
+        <g font-family="Helvetica" font-size="15" fill="black">
+          <text x="232.329" y="543.487">3</text>
+        </g>
+        <g font-family="Helvetica" font-size="15" fill="black">
+          <text x="290.996" y="543.487">4</text>
+        </g>
+        <g font-family="Helvetica" font-size="15" fill="black">
+          <text x="349.662" y="543.487">5</text>
+        </g>
+        <g font-family="Helvetica" font-size="15" fill="black">
+          <text x="408.329" y="543.487">6</text>
+        </g>
+      </g>
+      <path d="M 60.5 529.5 L 60.5 521.5 M 119.167 529.5 L 119.167 521.5 M 177.833 529.5 L 177.833 521.5 
+               M 236.5 529.5 L 236.5 521.5 M 295.167 529.5 L 295.167 521.5 M 353.833 529.5 L 353.833 521.5 
+               M 412.5 529.5 L 412.5 521.5 M 89.8333 525.5 L 89.8333 521.5 M 148.5 525.5 L 148.5 521.5 
+               M 207.167 525.5 L 207.167 521.5 M 265.833 525.5 L 265.833 521.5 M 324.5 525.5 L 324.5 521.5 
+               M 383.167 525.5 L 383.167 521.5 "
+        stroke="black" fill="none" stroke-width="0.5"/>
+    </g>
+    <path d="M 412.5 521.5 L 412.5 11.5 L 60.5 11.5 L 60.5 521.5 L 412.5 521.5 z "
+      stroke="black" stroke-linecap="square" fill="none" stroke-width="0.5"/>
+  </g>
+</g>
+</svg>
