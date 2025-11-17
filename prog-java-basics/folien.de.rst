@@ -1773,9 +1773,9 @@ Priorität der Operatoren
         Übergewicht: -4.0 kg bis Normalgewicht
 
     .. solution::
-        :pwd: BmiBerechnen
+        :pwd: BMIRichtigBerechnen
 
-        .. include:: code/BmiBerechnen.java
+        .. include:: code/BMIBerechnen.java
             :code: java
             :number-lines:
 
