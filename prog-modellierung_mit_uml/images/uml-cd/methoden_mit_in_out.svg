@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xl="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="262 75 886 573" width="886" height="573">
+  <defs>
+    <font-face font-family="Helvetica Neue" font-size="14" panose-1="2 0 5 3 0 0 0 2 0 4" units-per-em="1000" underline-position="-100" underline-thickness="50" slope="0" x-height="517" cap-height="714" ascent="951.9958" descent="-212.99744" font-weight="400">
+      <font-face-src>
+        <font-face-name name="HelveticaNeue"/>
+      </font-face-src>
+    </font-face>
+  </defs>
+  <metadata> Produced by OmniGraffle 8.0\n2024-11-21 15:36:24 +0000</metadata>
+  <g id="party" stroke-opacity="1" fill-opacity="1" stroke="none" stroke-dasharray="none" fill="none">
+    <title>party</title>
+    <g id="party_methoden_mit_in_out">
+      <title>methoden_mit_in_out</title>
+      <g id="Graphic_206">
+        <rect x="262.7129" y="359.5664" width="190.29297" height="52.203125" fill="white"/>
+        <rect x="262.7129" y="359.5664" width="190.29297" height="52.203125" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(267.7129 369.47197)" fill="black">
+          <tspan font-family="Helvetica Neue" font-size="14" font-weight="400" fill="black" x="0" y="13" xml:space="preserve">flirten()</tspan>
+        </text>
+      </g>
+      <g id="Graphic_205">
+        <rect x="559.5" y="586.2383" width="190.29297" height="60.59375" fill="white"/>
+        <rect x="559.5" y="586.2383" width="190.29297" height="60.59375" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(564.5 592.33916)" fill="black">
+          <tspan font-family="Helvetica Neue" font-size="14" font-weight="400" fill="black" x="0" y="13" xml:space="preserve">raeumeAuf()</tspan>
+        </text>
+      </g>
+      <g id="Graphic_204">
+        <rect x="861.3105" y="554.2383" width="285.3789" height="32" fill="white"/>
+        <rect x="861.3105" y="554.2383" width="285.3789" height="32" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(866.3105 562.0423)" fill="black">
+          <tspan font-family="Helvetica Neue" font-size="14" font-weight="400" fill="black" x="0" y="13" xml:space="preserve">+ mixe(in z : Zutat [1..*], out c : Cocktail)</tspan>
+        </text>
+      </g>
+      <g id="Graphic_284">
+        <text transform="translate(267.7129 390.37753)" fill="black">
+          <tspan font-family="Helvetica Neue" font-size="14" font-weight="400" fill="black" x="0" y="13" xml:space="preserve">~trinken(in c : Cocktail)</tspan>
+        </text>
+      </g>
+      <g id="Graphic_285">
+        <text transform="translate(564.5 625.44)" fill="black">
+          <tspan font-family="Helvetica Neue" font-size="14" font-weight="400" fill="black" x="0" y="13" xml:space="preserve">begruesse(in g : Gast</tspan>
+        </text>
+      </g>
+      <g id="Graphic_286">
+        <text transform="translate(564.5 609.44)" fill="black">
+          <tspan font-family="Helvetica Neue" font-size="14" font-weight="400" fill="black" x="0" y="13" xml:space="preserve">verabschiede(in g : Gast)</tspan>
+        </text>
+      </g>
+    </g>
+  </g>
+</svg>

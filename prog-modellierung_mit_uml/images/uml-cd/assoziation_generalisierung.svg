@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xl="http://www.w3.org/1999/xlink" version="1.1" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns="http://www.w3.org/2000/svg" viewBox="262 75 886 573" width="886" height="573">
+  <defs>
+    <marker orient="auto" overflow="visible" markerUnits="strokeWidth" id="UMLInheritance_Marker" stroke-linejoin="miter" stroke-miterlimit="10" viewBox="-12 -8 13 16" markerWidth="13" markerHeight="16" color="black">
+      <g>
+        <path d="M -10.8 0 L 0 6.3 L 0 -6.3 Z" fill="none" stroke="currentColor" stroke-width="1"/>
+      </g>
+    </marker>
+  </defs>
+  <metadata> Produced by OmniGraffle 8.0\n2024-10-27 13:15:43 +0000</metadata>
+  <g id="party" stroke="none" stroke-dasharray="none" fill="none" fill-opacity="1" stroke-opacity="1">
+    <title>party</title>
+    <g id="party_assoziation_generalisierung">
+      <title>assoziation_generalisierung</title>
+      <g id="Line_248">
+        <line x1="361" y1="435.6" x2="361" y2="523.2383" marker-start="url(#UMLInheritance_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+      <g id="Line_247">
+        <path d="M 415 436.1 L 415 491.2383 L 655.918 491.2383 L 655.918 523.2383" marker-start="url(#UMLInheritance_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+    </g>
+  </g>
+</svg>

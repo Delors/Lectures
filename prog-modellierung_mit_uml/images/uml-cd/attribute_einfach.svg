@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xl="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="262 75 886 573" width="886" height="573">
+  <defs>
+    <font-face font-family="Helvetica Neue" font-size="14" panose-1="2 0 5 3 0 0 0 2 0 4" units-per-em="1000" underline-position="-100" underline-thickness="50" slope="0" x-height="517" cap-height="714" ascent="951.9958" descent="-212.99744" font-weight="400">
+      <font-face-src>
+        <font-face-name name="HelveticaNeue"/>
+      </font-face-src>
+    </font-face>
+  </defs>
+  <metadata> Produced by OmniGraffle 8.0\n2024-11-21 15:34:27 +0000</metadata>
+  <g id="party" stroke-opacity="1" fill-opacity="1" stroke="none" stroke-dasharray="none" fill="none">
+    <title>party</title>
+    <g id="party_attribute_einfach">
+      <title>attribute_einfach</title>
+      <g id="Graphic_67">
+        <rect x="559.5" y="108.32422" width="121.58203" height="60.59375" fill="white"/>
+        <rect x="559.5" y="108.32422" width="121.58203" height="60.59375" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(564.5 113.32422)" fill="black">
+          <tspan font-family="Helvetica Neue" font-size="14" font-weight="400" fill="black" x="0" y="13" xml:space="preserve">+ anlass: String</tspan>
+        </text>
+      </g>
+      <g id="Graphic_66">
+        <rect x="925.3301" y="122" width="159.61328" height="46.91797" fill="white"/>
+        <rect x="925.3301" y="122" width="159.61328" height="46.91797" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(930.3301 129.26299)" fill="black">
+          <tspan font-family="Helvetica Neue" font-size="14" font-weight="400" fill="black" x="0" y="13" xml:space="preserve">+ name : String</tspan>
+        </text>
+      </g>
+      <g id="Graphic_178">
+        <rect x="861.3105" y="522.2383" width="285.3789" height="32" fill="white"/>
+        <rect x="861.3105" y="522.2383" width="285.3789" height="32" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(866.3105 530.0423)" fill="black">
+          <tspan font-family="Helvetica Neue" font-size="14" font-weight="400" fill="black" x="0" y="13" xml:space="preserve">+ name : String</tspan>
+        </text>
+      </g>
+      <g id="Graphic_281">
+        <text transform="translate(564.5 149.39107)" fill="black">
+          <tspan font-family="Helvetica Neue" font-size="14" font-weight="400" fill="black" x="0" y="13" xml:space="preserve">+ termin : Date</tspan>
+        </text>
+      </g>
+      <g id="Graphic_282">
+        <text transform="translate(564.5 131.11947)" fill="black">
+          <tspan font-family="Helvetica Neue" font-size="14" font-weight="400" fill="black" x="0" y="13" xml:space="preserve">+ motto: String</tspan>
+        </text>
+      </g>
+      <g id="Graphic_283">
+        <text transform="translate(930.3301 147.52597)" fill="black">
+          <tspan font-family="Helvetica Neue" font-size="14" font-weight="400" fill="black" x="0" y="13" xml:space="preserve">+ alkoholgehalt : Float</tspan>
+        </text>
+      </g>
+    </g>
+  </g>
+</svg>

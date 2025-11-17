@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xl="http://www.w3.org/1999/xlink" xmlns:dc="http://purl.org/dc/elements/1.1/" version="1.1" viewBox="262 75 886 573" width="886" height="573">
+  <defs>
+    <font-face font-family="Helvetica Neue" font-size="14" panose-1="2 0 5 3 0 0 0 2 0 4" units-per-em="1000" underline-position="-100" underline-thickness="50" slope="0" x-height="517" cap-height="714" ascent="951.9958" descent="-212.99744" font-weight="400">
+      <font-face-src>
+        <font-face-name name="HelveticaNeue"/>
+      </font-face-src>
+    </font-face>
+    <font-face font-family="Hiragino Sans" font-size="14" panose-1="2 11 3 0 0 0 0 0 0 0" units-per-em="1000" underline-position="-75" underline-thickness="50" slope="0" x-height="545" cap-height="766" ascent="880.0018" descent="-120.00024" font-weight="300">
+      <font-face-src>
+        <font-face-name name="HiraginoSans-W3"/>
+      </font-face-src>
+    </font-face>
+  </defs>
+  <metadata> Produced by OmniGraffle 8.0\n2024-10-27 14:30:46 +0000</metadata>
+  <g id="party" stroke-dasharray="none" stroke-opacity="1" stroke="none" fill-opacity="1" fill="none">
+    <title>party</title>
+    <g id="party_benennung">
+      <title>benennung</title>
+      <g id="Graphic_254">
+        <text transform="translate(295.18744 213.2252)" fill="black">
+          <tspan font-family="Helvetica Neue" font-size="14" font-weight="400" fill="black" x="0" y="13" xml:space="preserve">besucher</tspan>
+        </text>
+      </g>
+      <g id="Graphic_255">
+        <text transform="translate(1010.6367 423.2337)" fill="black">
+          <tspan font-family="Helvetica Neue" font-size="14" font-weight="400" fill="black" x="0" y="13" xml:space="preserve">produkt</tspan>
+        </text>
+      </g>
+      <g id="Graphic_256">
+        <text transform="translate(1008.0467 468.8463)" fill="black">
+          <tspan font-family="Helvetica Neue" font-size="14" font-weight="400" fill="black" x="0" y="13" xml:space="preserve">produzent</tspan>
+        </text>
+      </g>
+      <g id="Graphic_257">
+        <text transform="translate(922.8806 447.19267)" fill="black">
+          <tspan font-family="Helvetica Neue" font-size="14" font-weight="400" fill="black" x="0" y="13" xml:space="preserve">Produktion</tspan>
+        </text>
+      </g>
+      <g id="Graphic_258">
+        <text transform="translate(929.2734 591)" fill="black">
+          <tspan font-family="Helvetica Neue" font-size="14" font-weight="400" fill="black" x="14921397e-20" y="13" xml:space="preserve">angesteller</tspan>
+        </text>
+      </g>
+      <g id="Graphic_259">
+        <text transform="translate(754.793 626.1406)" fill="black">
+          <tspan font-family="Helvetica Neue" font-size="14" font-weight="400" fill="black" x="0" y="13" xml:space="preserve">boss</tspan>
+        </text>
+      </g>
+      <g id="Graphic_260">
+        <text transform="translate(441.6094 568)" fill="black">
+          <tspan font-family="Helvetica Neue" font-size="14" font-weight="400" fill="black" x="0" y="13" xml:space="preserve">1..*</tspan>
+        </text>
+      </g>
+      <g id="Graphic_264">
+        <text transform="translate(366 214.7252)" fill="black">
+          <tspan font-family="Helvetica Neue" font-size="14" font-weight="400" fill="black" x="0" y="13" xml:space="preserve">*</tspan>
+        </text>
+      </g>
+      <g id="Graphic_263">
+        <text transform="translate(980.1407 424.53906)" fill="black">
+          <tspan font-family="Helvetica Neue" font-size="14" font-weight="400" fill="black" x="0" y="13" xml:space="preserve">1..*</tspan>
+        </text>
+      </g>
+      <g id="Graphic_261">
+        <text transform="translate(754.793 599.7486)" fill="black">
+          <tspan font-family="Helvetica Neue" font-size="14" font-weight="400" fill="black" x="0" y="13" xml:space="preserve">1</tspan>
+        </text>
+      </g>
+      <g id="Graphic_262">
+        <text transform="translate(989.6694 468.8463)" fill="black">
+          <tspan font-family="Helvetica Neue" font-size="14" font-weight="400" fill="black" x="0" y="13" xml:space="preserve">1</tspan>
+        </text>
+      </g>
+      <g id="Graphic_266">
+        <text transform="translate(462.6359 536)" fill="black">
+          <tspan font-family="Hiragino Sans" font-size="14" font-weight="300" fill="black" x="0" y="13" xml:space="preserve">◀</tspan>
+          <tspan font-family="Helvetica Neue" font-size="14" font-weight="400" fill="black" y="13" xml:space="preserve"> feiert_mit</tspan>
+        </text>
+      </g>
+    </g>
+  </g>
+</svg>

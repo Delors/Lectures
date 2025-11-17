@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xl="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" version="1.1" viewBox="279 137 809 467" width="809" height="467">
+  <defs>
+    <font-face font-family="Helvetica Neue" font-size="14" panose-1="2 0 5 3 0 0 0 2 0 4" units-per-em="1000" underline-position="-100" underline-thickness="50" slope="0" x-height="517" cap-height="714" ascent="951.9958" descent="-212.99744" font-weight="400">
+      <font-face-src>
+        <font-face-name name="HelveticaNeue"/>
+      </font-face-src>
+    </font-face>
+  </defs>
+  <metadata> Produced by OmniGraffle 8.0\n2024-11-01 11:49:43 +0000</metadata>
+  <g id="partyteilnehmer" fill="none" fill-opacity="1" stroke-dasharray="none" stroke-opacity="1" stroke="none">
+    <title>partyteilnehmer</title>
+    <g id="partyteilnehmer_events">
+      <title>events</title>
+      <g id="Graphic_465">
+        <text transform="translate(502.74397 276.9628)" fill="black">
+          <tspan font-family="Helvetica Neue" font-size="14" font-weight="400" fill="black" x="0" y="13" xml:space="preserve">entry/ Cocktail anbieten</tspan>
+        </text>
+      </g>
+      <g id="Graphic_460">
+        <text transform="translate(521.48223 437.22324)" fill="black">
+          <tspan font-family="Helvetica Neue" font-size="14" font-weight="400" fill="black" x="0" y="13" xml:space="preserve">do/ Spass haben</tspan>
+        </text>
+      </g>
+      <g id="Graphic_459">
+        <text transform="translate(933.9679 437.22324)" fill="black">
+          <tspan font-family="Helvetica Neue" font-size="14" font-weight="400" fill="black" x="5684342e-20" y="13" xml:space="preserve">entry/ Taxi rufen</tspan>
+        </text>
+      </g>
+      <g id="Line_445">
+        <line x1="666.80585" y1="265.84505" x2="482.7406" y2="265.84505" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Line_444">
+        <line x1="513.9822" y1="425" x2="635.5465" y2="425" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Line_443">
+        <line x1="905" y1="425" x2="1064.6133" y2="425" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+    </g>
+  </g>
+</svg>

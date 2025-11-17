@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xl="http://www.w3.org/1999/xlink" version="1.1" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns="http://www.w3.org/2000/svg" viewBox="262 75 886 573" width="886" height="573">
+  <defs>
+    <font-face font-family="Helvetica Neue" font-size="16" panose-1="2 0 8 3 0 0 0 9 0 4" units-per-em="1000" underline-position="-100" underline-thickness="50" slope="0" x-height="517" cap-height="714" ascent="975.0061" descent="-216.99524" font-weight="700">
+      <font-face-src>
+        <font-face-name name="HelveticaNeue-Bold"/>
+      </font-face-src>
+    </font-face>
+    <font-face font-family="Helvetica Neue" font-size="14" panose-1="2 0 5 3 0 0 0 2 0 4" units-per-em="1000" underline-position="-100" underline-thickness="50" slope="0" x-height="517" cap-height="714" ascent="951.9958" descent="-212.99744" font-weight="400">
+      <font-face-src>
+        <font-face-name name="HelveticaNeue"/>
+      </font-face-src>
+    </font-face>
+    <marker orient="auto" overflow="visible" markerUnits="strokeWidth" id="StickArrow_Marker" stroke-linejoin="miter" stroke-miterlimit="10" viewBox="-1 -4 10 8" markerWidth="10" markerHeight="8" color="black">
+      <g>
+        <path d="M 7.2 0 L 0 0 M 0 -2.7 L 7.2 0 L 0 2.7" fill="none" stroke="currentColor" stroke-width="1"/>
+      </g>
+    </marker>
+    <marker orient="auto" overflow="visible" markerUnits="strokeWidth" id="FilledDiamond_Marker" stroke-linejoin="miter" stroke-miterlimit="10" viewBox="-9 -4 10 8" markerWidth="10" markerHeight="8" color="black">
+      <g>
+        <path d="M -7.2 0 L -3.6 2.7 L 0 0 L -3.6 -2.7 Z" fill="currentColor" stroke="currentColor" stroke-width="1"/>
+      </g>
+    </marker>
+    <marker orient="auto" overflow="visible" markerUnits="strokeWidth" id="Diamond_Marker" stroke-linejoin="miter" stroke-miterlimit="10" viewBox="-9 -4 10 8" markerWidth="10" markerHeight="8" color="black">
+      <g>
+        <path d="M -7.2 0 L -3.6 2.7 L 0 0 L -3.6 -2.7 Z" fill="none" stroke="currentColor" stroke-width="1"/>
+      </g>
+    </marker>
+    <marker orient="auto" overflow="visible" markerUnits="strokeWidth" id="UMLInheritance_Marker" stroke-linejoin="miter" stroke-miterlimit="10" viewBox="-12 -8 13 16" markerWidth="13" markerHeight="16" color="black">
+      <g>
+        <path d="M -10.8 0 L 0 6.3 L 0 -6.3 Z" fill="none" stroke="currentColor" stroke-width="1"/>
+      </g>
+    </marker>
+  </defs>
+  <metadata> Produced by OmniGraffle 8.0\n2024-10-27 12:51:26 +0000</metadata>
+  <g id="party" stroke="none" stroke-dasharray="none" fill="none" fill-opacity="1" stroke-opacity="1">
+    <title>party</title>
+    <g id="party_klassen">
+      <title>klassen</title>
+      <g id="Graphic_77">
+        <rect x="279.10938" y="523.2383" width="157.5" height="32" fill="white"/>
+        <rect x="279.10938" y="523.2383" width="157.5" height="32" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(284.10938 529.5062)" fill="black">
+          <tspan font-family="Helvetica Neue" font-size="16" font-weight="700" fill="black" x="55.974" y="16" xml:space="preserve">Gast</tspan>
+        </text>
+      </g>
+      <g id="Graphic_76">
+        <rect x="262.7129" y="235.1172" width="190.29297" height="32" fill="white"/>
+        <rect x="262.7129" y="235.1172" width="190.29297" height="32" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(267.7129 241.38513)" fill="black">
+          <tspan font-family="Helvetica Neue" font-size="16" font-weight="700" fill="black" x="29.570484" y="16" xml:space="preserve">Partyteilnehmer</tspan>
+        </text>
+      </g>
+      <g id="Graphic_75">
+        <rect x="559.5" y="76.32422" width="121.58203" height="32" fill="white"/>
+        <rect x="559.5" y="76.32422" width="121.58203" height="32" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(564.5 82.59216)" fill="black">
+          <tspan font-family="Helvetica Neue" font-size="16" font-weight="700" fill="black" x="35.783016" y="16" xml:space="preserve">Party</tspan>
+        </text>
+      </g>
+      <g id="Graphic_74">
+        <rect x="944.3457" y="90" width="121.58203" height="32" fill="white"/>
+        <rect x="944.3457" y="90" width="121.58203" height="32" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(949.3457 96.26794)" fill="black">
+          <tspan font-family="Helvetica Neue" font-size="16" font-weight="700" fill="black" x="35.639016" y="16" xml:space="preserve">Zutat</tspan>
+        </text>
+      </g>
+      <g id="Graphic_73">
+        <rect x="924.2734" y="340.6211" width="161.72656" height="32" fill="white"/>
+        <rect x="924.2734" y="340.6211" width="161.72656" height="32" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(929.2734 346.88904)" fill="black">
+          <tspan font-family="Helvetica Neue" font-size="16" font-weight="700" fill="black" x="44.32728" y="16" xml:space="preserve">Cocktail</tspan>
+        </text>
+      </g>
+      <g id="Graphic_72">
+        <rect x="861.3105" y="490.2383" width="285.3789" height="32" fill="white"/>
+        <rect x="861.3105" y="490.2383" width="285.3789" height="32" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(866.3105 496.5062)" fill="black">
+          <tspan font-family="Helvetica Neue" font-size="16" font-weight="700" fill="black" x="103.04145" y="16" xml:space="preserve">Barmixer</tspan>
+        </text>
+      </g>
+      <g id="Graphic_71">
+        <rect x="559.5" y="522.46875" width="190.29297" height="32" fill="white"/>
+        <rect x="559.5" y="522.46875" width="190.29297" height="32" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(564.5 528.7367)" fill="black">
+          <tspan font-family="Helvetica Neue" font-size="16" font-weight="700" fill="black" x="50.298484" y="16" xml:space="preserve">Gastgeber</tspan>
+        </text>
+      </g>
+    </g>
+    <g id="party_attribute_einfach">
+      <title>attribute_einfach</title>
+      <g id="Graphic_67">
+        <rect x="559.5" y="108.32422" width="121.58203" height="60.59375" fill="white"/>
+        <rect x="559.5" y="108.32422" width="121.58203" height="60.59375" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(564.5 114.0331)" fill="black">
+          <tspan font-family="Helvetica Neue" font-size="14" font-weight="400" fill="black" x="0" y="13" xml:space="preserve">+ anlass: String</tspan>
+          <tspan font-family="Helvetica Neue" font-size="14" font-weight="400" fill="black" x="0" y="29.392" xml:space="preserve">+ motto: String</tspan>
+          <tspan font-family="Helvetica Neue" font-size="14" font-weight="400" fill="black" x="0" y="45.783997" xml:space="preserve">+ termin : Date</tspan>
+        </text>
+      </g>
+      <g id="Graphic_66">
+        <rect x="944.3457" y="122" width="121.58203" height="46.91797" fill="white"/>
+        <rect x="944.3457" y="122" width="121.58203" height="46.91797" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(949.3457 129.06699)" fill="black">
+          <tspan font-family="Helvetica Neue" font-size="14" font-weight="400" fill="black" x="0" y="13" xml:space="preserve">+ name : String</tspan>
+          <tspan font-family="Helvetica Neue" font-size="14" font-weight="400" fill="black" x="0" y="29.392" xml:space="preserve">+ menge : Float</tspan>
+        </text>
+      </g>
+      <g id="Graphic_178">
+        <rect x="861.3105" y="522.2383" width="285.3789" height="32" fill="white"/>
+        <rect x="861.3105" y="522.2383" width="285.3789" height="32" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(866.3105 530.0423)" fill="black">
+          <tspan font-family="Helvetica Neue" font-size="14" font-weight="400" fill="black" x="0" y="13" xml:space="preserve">+ name : String</tspan>
+        </text>
+      </g>
+    </g>
+    <g id="party_attribute_mit_default">
+      <title>attribute_mit_default</title>
+      <g id="Graphic_96">
+        <rect x="559.5" y="554.2383" width="190.29297" height="32" fill="white"/>
+        <rect x="559.5" y="554.2383" width="190.29297" height="32" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(564.5 562.0423)" fill="black">
+          <tspan font-family="Helvetica Neue" font-size="14" font-weight="400" fill="black" x="0" y="13" xml:space="preserve">gestresst : Boolean = true</tspan>
+        </text>
+      </g>
+    </g>
+    <g id="party_attribute_mit_mengen">
+      <title>attribute_mit_mengen</title>
+      <g id="Graphic_112">
+        <rect x="924.2734" y="372.6211" width="161.72656" height="46.91797" fill="white"/>
+        <rect x="924.2734" y="372.6211" width="161.72656" height="46.91797" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(929.2734 379.6881)" fill="black">
+          <tspan font-family="Helvetica Neue" font-size="14" font-weight="400" fill="black" x="0" y="13" xml:space="preserve">+ name : String</tspan>
+          <tspan font-family="Helvetica Neue" font-size="14" font-weight="400" fill="black" x="0" y="29.392" xml:space="preserve">+ zutaten : Zutat [1..*]</tspan>
+        </text>
+      </g>
+    </g>
+    <g id="party_attribute_abgeleitet">
+      <title>attribute_abgeleitet</title>
+      <g id="Graphic_135">
+        <rect x="262.7129" y="267.6172" width="190.29297" height="91.44922" fill="white"/>
+        <rect x="262.7129" y="267.6172" width="190.29297" height="91.44922" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(267.7129 272.3618)" fill="black">
+          <tspan font-family="Helvetica Neue" font-size="14" font-weight="400" fill="black" x="0" y="13" xml:space="preserve">name : String</tspan>
+          <tspan font-family="Helvetica Neue" font-size="14" font-weight="400" fill="black" x="0" y="29.392" xml:space="preserve">geburtsdatum : Date</tspan>
+          <tspan font-family="Helvetica Neue" font-size="14" font-weight="400" fill="black" x="0" y="45.783997" xml:space="preserve">begeistert : Begeisterung</tspan>
+          <tspan font-family="Helvetica Neue" font-size="14" font-weight="400" fill="black" x="0" y="62.175995" xml:space="preserve">intus: Cocktail [1.. *] </tspan>
+          <tspan font-family="Helvetica Neue" font-size="14" font-weight="400" fill="black" x="0" y="78.56799" xml:space="preserve">/betrunken : Boolean = false</tspan>
+        </text>
+      </g>
+    </g>
+    <g id="party_attribute_keine">
+      <title>attribute_keine</title>
+      <g id="Graphic_157">
+        <rect x="279.10938" y="555.2383" width="157.5" height="32" fill="white"/>
+        <rect x="279.10938" y="555.2383" width="157.5" height="32" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+    </g>
+    <g id="party_assoziation_einfach">
+      <title>assoziation_einfach</title>
+      <g id="Line_161">
+        <line x1="1004.6367" y1="491.2383" x2="1004.6367" y2="419.53906" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+      <g id="Line_160">
+        <path d="M 1003.5 586 L 1003.5 621.1406 L 749.793 621.1406" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+    </g>
+    <g id="party_methoden_einfach">
+      <title>methoden_einfach</title>
+      <g id="Graphic_190">
+        <rect x="279.10938" y="587.2383" width="157.5" height="32" fill="white"/>
+        <rect x="279.10938" y="587.2383" width="157.5" height="32" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(284.10938 595.0423)" fill="black">
+          <tspan font-family="Helvetica Neue" font-size="14" font-weight="400" fill="black" x="0" y="13" xml:space="preserve">feiere()</tspan>
+        </text>
+      </g>
+      <g id="Graphic_189">
+        <rect x="559.5" y="168.91797" width="121.58203" height="32" fill="white"/>
+        <rect x="559.5" y="168.91797" width="121.58203" height="32" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(564.5 176.72197)" fill="black">
+          <tspan font-family="Helvetica Neue" font-size="14" font-weight="400" fill="black" x="0" y="13" xml:space="preserve">abbrechen()</tspan>
+        </text>
+      </g>
+    </g>
+    <g id="party_methoden_mit_in_out">
+      <title>methoden_mit_in_out</title>
+      <g id="Graphic_206">
+        <rect x="262.7129" y="359.5664" width="190.29297" height="52.203125" fill="white"/>
+        <rect x="262.7129" y="359.5664" width="190.29297" height="52.203125" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(267.7129 369.27597)" fill="black">
+          <tspan font-family="Helvetica Neue" font-size="14" font-weight="400" fill="black" x="0" y="13" xml:space="preserve">flirten()</tspan>
+          <tspan font-family="Helvetica Neue" font-size="14" font-weight="400" fill="black" x="0" y="29.392" xml:space="preserve">~trinken(in c : Cocktail)</tspan>
+        </text>
+      </g>
+      <g id="Graphic_205">
+        <rect x="559.5" y="586.2383" width="190.29297" height="60.59375" fill="white"/>
+        <rect x="559.5" y="586.2383" width="190.29297" height="60.59375" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(564.5 591.94716)" fill="black">
+          <tspan font-family="Helvetica Neue" font-size="14" font-weight="400" fill="black" x="0" y="13" xml:space="preserve">raeumeAuf()</tspan>
+          <tspan font-family="Helvetica Neue" font-size="14" font-weight="400" fill="black" x="0" y="29.392" xml:space="preserve">verabschiede(in g : Gast)</tspan>
+          <tspan font-family="Helvetica Neue" font-size="14" font-weight="400" fill="black" x="0" y="45.783997" xml:space="preserve">begruesse(in g : Gast</tspan>
+        </text>
+      </g>
+      <g id="Graphic_204">
+        <rect x="861.3105" y="554.2383" width="285.3789" height="32" fill="white"/>
+        <rect x="861.3105" y="554.2383" width="285.3789" height="32" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(866.3105 562.0423)" fill="black">
+          <tspan font-family="Helvetica Neue" font-size="14" font-weight="400" fill="black" x="0" y="13" xml:space="preserve">+ mixe(in z : Zutat [1..*], out c : Cocktail)</tspan>
+        </text>
+      </g>
+    </g>
+    <g id="party_assoziation_gerichtet">
+      <title>assoziation_gerichtet</title>
+      <g id="Line_219">
+        <line x1="559" y1="563" x2="454.3094" y2="563" marker-end="url(#StickArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+    </g>
+    <g id="party_assoziation_komposition">
+      <title>assoziation_komposition</title>
+      <g id="Line_238">
+        <line x1="1003.5" y1="324.2211" x2="1003.5" y2="168.91797" marker-start="url(#FilledDiamond_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+    </g>
+    <g id="party_assoziation_aggregation">
+      <title>assoziation_aggregation</title>
+      <g id="Line_246">
+        <path d="M 544.1 135 L 358.27344 135 L 358.27344 236.1172" marker-start="url(#Diamond_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+    </g>
+    <g id="party_assoziation_generalisierung">
+      <title>assoziation_generalisierung</title>
+      <g id="Line_248">
+        <line x1="361" y1="435.6" x2="361" y2="523.2383" marker-start="url(#UMLInheritance_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+      <g id="Line_247">
+        <path d="M 415 436.1 L 415 491.2383 L 655.918 491.2383 L 655.918 523.2383" marker-start="url(#UMLInheritance_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xl="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:dc="http://purl.org/dc/elements/1.1/" viewBox="297 255 858 278" width="858" height="278">
+  <defs>
+    <font-face font-family="Helvetica Neue" font-size="16" panose-1="2 0 5 3 0 0 0 2 0 4" units-per-em="1000" underline-position="-100" underline-thickness="50" slope="0" x-height="517" cap-height="714" ascent="951.9958" descent="-212.99744" font-weight="400">
+      <font-face-src>
+        <font-face-name name="HelveticaNeue"/>
+      </font-face-src>
+    </font-face>
+    <marker orient="auto" overflow="visible" markerUnits="strokeWidth" id="StickArrow_Marker" stroke-linejoin="miter" stroke-miterlimit="10" viewBox="-1 -4 10 8" markerWidth="10" markerHeight="8" color="black">
+      <g>
+        <path d="M 7.2 0 L 0 0 M 0 -2.7 L 7.2 0 L 0 2.7" fill="none" stroke="currentColor" stroke-width="1"/>
+      </g>
+    </marker>
+  </defs>
+  <metadata> Produced by OmniGraffle 8.0\n2024-11-07 10:08:07 +0000</metadata>
+  <g id="partyteilnehmer" stroke="none" stroke-opacity="1" fill-opacity="1" fill="none" stroke-dasharray="none">
+    <title>partyteilnehmer</title>
+    <g id="partyteilnehmer_bestellung_abschließen">
+      <title>bestellung_abschließen</title>
+      <g id="Graphic_675">
+        <path d="M 993.6577 309.3534 L 1070.5 309.3534 C 1077.1274 309.3534 1082.5 314.72597 1082.5 321.3534 L 1082.5 354.3534 C 1082.5 360.9808 1077.1274 366.3534 1070.5 366.3534 L 993.6577 366.3534 C 987.0303 366.3534 981.6577 360.9808 981.6577 354.3534 L 981.6577 321.3534 C 981.6577 314.72597 987.0303 309.3534 993.6577 309.3534 Z" fill="white"/>
+        <path d="M 993.6577 309.3534 L 1070.5 309.3534 C 1077.1274 309.3534 1082.5 314.72597 1082.5 321.3534 L 1082.5 354.3534 C 1082.5 360.9808 1077.1274 366.3534 1070.5 366.3534 L 993.6577 366.3534 C 987.0303 366.3534 981.6577 360.9808 981.6577 354.3534 L 981.6577 321.3534 C 981.6577 314.72597 987.0303 309.3534 993.6577 309.3534 Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(986.6577 319.4054)" fill="black">
+          <tspan font-family="Helvetica Neue" font-size="16" font-weight="400" fill="black" x="7.789131" y="15" xml:space="preserve">Bestellung </tspan>
+          <tspan font-family="Helvetica Neue" font-size="16" font-weight="400" fill="black" x="2.597131" y="33.448" xml:space="preserve">abschließen</tspan>
+        </text>
+      </g>
+      <g id="Group_661">
+        <title>Group</title>
+        <g id="Graphic_663">
+          <circle cx="1132.9412" cy="337.93033" r="16.0000255664304" fill="black"/>
+          <circle cx="1132.9412" cy="337.93033" r="16.0000255664304" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        </g>
+        <g id="Graphic_662">
+          <circle cx="1132.9412" cy="337.93033" r="21.0000335559398" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        </g>
+      </g>
+      <g id="Line_660">
+        <line x1="1082.5" y1="337.93033" x2="1094.2412" y2="337.93033" marker-end="url(#StickArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+      <g id="Line_659">
+        <line x1="952.2165" y1="337.3534" x2="963.9577" y2="337.3534" marker-end="url(#StickArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+    </g>
+  </g>
+</svg>

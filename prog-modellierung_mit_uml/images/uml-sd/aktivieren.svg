@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xl="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" version="1.1" viewBox="391 275 606 372" width="606" height="372">
+  <defs>
+    <marker orient="auto" overflow="visible" markerUnits="strokeWidth" id="FilledArrow_Marker" stroke-linejoin="miter" stroke-miterlimit="10" viewBox="-1 -6 14 12" markerWidth="14" markerHeight="12" color="black">
+      <g>
+        <path d="M 12 0 L 0 -4.5 L 0 4.5 Z" fill="currentColor" stroke="currentColor" stroke-width="1"/>
+      </g>
+    </marker>
+    <marker orient="auto" overflow="visible" markerUnits="strokeWidth" id="StickArrow_Marker" stroke-linejoin="miter" stroke-miterlimit="10" viewBox="-1 -6 14 12" markerWidth="14" markerHeight="12" color="black">
+      <g>
+        <path d="M 12 0 L 0 0 M 0 -4.5 L 12 0 L 0 4.5" fill="none" stroke="currentColor" stroke-width="1"/>
+      </g>
+    </marker>
+    <font-face font-family="Helvetica Neue" font-size="14" panose-1="2 0 5 3 0 0 0 2 0 4" units-per-em="1000" underline-position="-100" underline-thickness="50" slope="0" x-height="517" cap-height="714" ascent="951.9958" descent="-212.99744" font-weight="400">
+      <font-face-src>
+        <font-face-name name="HelveticaNeue"/>
+      </font-face-src>
+    </font-face>
+  </defs>
+  <metadata> Produced by OmniGraffle 8.0\n2024-11-01 15:33:21 +0000</metadata>
+  <g id="partyteilnehmer" fill="none" fill-opacity="1" stroke-dasharray="none" stroke-opacity="1" stroke="none">
+    <title>partyteilnehmer</title>
+    <g id="partyteilnehmer_aktivieren">
+      <title>aktivieren</title>
+      <g id="Graphic_556">
+        <rect x="450.8369" y="343.35476" width="17" height="70.5" fill="white"/>
+        <rect x="450.8369" y="343.35476" width="17" height="70.5" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_555">
+        <rect x="616.1569" y="343.35476" width="17" height="70.5" fill="white"/>
+        <rect x="616.1569" y="343.35476" width="17" height="70.5" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_552">
+        <rect x="781.477" y="355.5584" width="17" height="34.441613" fill="white"/>
+        <rect x="781.477" y="355.5584" width="17" height="34.441613" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Line_547">
+        <line x1="456.50357" y1="343.35476" x2="605.0903" y2="343.35476" marker-end="url(#FilledArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Line_545">
+        <line x1="633.1569" y1="355.5584" x2="767.077" y2="355.5584" marker-end="url(#FilledArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Line_541">
+        <line x1="616.0357" y1="413.4375" x2="482.23684" y2="413.80715" marker-end="url(#StickArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="8.0,5.0" stroke-width="1"/>
+      </g>
+      <g id="Line_540">
+        <line x1="780.5075" y1="390.3125" x2="646.0875" y2="390.3125" marker-end="url(#StickArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="8.0,5.0" stroke-width="1"/>
+      </g>
+      <g id="Graphic_532">
+        <text transform="translate(512.1769 327.32617)" fill="black">
+          <tspan font-family="Helvetica Neue" font-size="14" font-weight="400" fill="black" x="0" y="13" xml:space="preserve">aktivieren</tspan>
+        </text>
+      </g>
+      <g id="Graphic_531">
+        <text transform="translate(512.1769 397.59424)" fill="black">
+          <tspan font-family="Helvetica Neue" font-size="14" font-weight="400" fill="black" x="0" y="13" xml:space="preserve">aktivieren</tspan>
+        </text>
+      </g>
+      <g id="Graphic_530">
+        <text transform="translate(677.49695 339.29736)" fill="black">
+          <tspan font-family="Helvetica Neue" font-size="14" font-weight="400" fill="black" x="0" y="13" xml:space="preserve">aktivieren</tspan>
+        </text>
+      </g>
+      <g id="Graphic_529">
+        <text transform="translate(677.49695 374.51025)" fill="black">
+          <tspan font-family="Helvetica Neue" font-size="14" font-weight="400" fill="black" x="0" y="13" xml:space="preserve">aktivieren</tspan>
+        </text>
+      </g>
+    </g>
+  </g>
+</svg>

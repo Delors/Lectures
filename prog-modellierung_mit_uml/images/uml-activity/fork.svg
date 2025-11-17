@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xl="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:dc="http://purl.org/dc/elements/1.1/" viewBox="297 255 858 278" width="858" height="278">
+  <defs>
+    <font-face font-family="Helvetica Neue" font-size="16" panose-1="2 0 5 3 0 0 0 2 0 4" units-per-em="1000" underline-position="-100" underline-thickness="50" slope="0" x-height="517" cap-height="714" ascent="951.9958" descent="-212.99744" font-weight="400">
+      <font-face-src>
+        <font-face-name name="HelveticaNeue"/>
+      </font-face-src>
+    </font-face>
+    <marker orient="auto" overflow="visible" markerUnits="strokeWidth" id="StickArrow_Marker" stroke-linejoin="miter" stroke-miterlimit="10" viewBox="-1 -4 10 8" markerWidth="10" markerHeight="8" color="black">
+      <g>
+        <path d="M 7.2 0 L 0 0 M 0 -2.7 L 7.2 0 L 0 2.7" fill="none" stroke="currentColor" stroke-width="1"/>
+      </g>
+    </marker>
+  </defs>
+  <metadata> Produced by OmniGraffle 8.0\n2024-11-07 10:05:51 +0000</metadata>
+  <g id="partyteilnehmer" stroke="none" stroke-opacity="1" fill-opacity="1" fill="none" stroke-dasharray="none">
+    <title>partyteilnehmer</title>
+    <g id="partyteilnehmer_fork">
+      <title>fork</title>
+      <g id="Graphic_547">
+        <path d="M 515.26856 408.20144 L 583.96626 408.20144 C 590.5937 408.20144 595.96626 413.574 595.96626 420.20144 L 595.96626 453.20144 C 595.96626 459.82885 590.5937 465.20144 583.96626 465.20144 L 515.26856 465.20144 C 508.64114 465.20144 503.26856 459.82885 503.26856 453.20144 L 503.26856 420.20144 C 503.26856 413.574 508.64114 408.20144 515.26856 408.20144 Z" fill="white"/>
+        <path d="M 515.26856 408.20144 L 583.96626 408.20144 C 590.5937 408.20144 595.96626 413.574 595.96626 420.20144 L 595.96626 453.20144 C 595.96626 459.82885 590.5937 465.20144 583.96626 465.20144 L 515.26856 465.20144 C 508.64114 465.20144 503.26856 459.82885 503.26856 453.20144 L 503.26856 420.20144 C 503.26856 413.574 508.64114 408.20144 515.26856 408.20144 Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(508.26856 418.25344)" fill="black">
+          <tspan font-family="Helvetica Neue" font-size="16" font-weight="400" fill="black" x="3.716854" y="15" xml:space="preserve">Bestellung </tspan>
+          <tspan font-family="Helvetica Neue" font-size="16" font-weight="400" fill="black" x="6.836854" y="33.448" xml:space="preserve">ausliefern</tspan>
+        </text>
+      </g>
+      <g id="Graphic_542">
+        <path d="M 515.26856 255.93572 L 583.96626 255.93572 C 590.5937 255.93572 595.96626 261.3083 595.96626 267.93572 L 595.96626 300.93572 C 595.96626 307.56314 590.5937 312.93572 583.96626 312.93572 L 515.26856 312.93572 C 508.64114 312.93572 503.26856 307.56314 503.26856 300.93572 L 503.26856 267.93572 C 503.26856 261.3083 508.64114 255.93572 515.26856 255.93572 Z" fill="white"/>
+        <path d="M 515.26856 255.93572 L 583.96626 255.93572 C 590.5937 255.93572 595.96626 261.3083 595.96626 267.93572 L 595.96626 300.93572 C 595.96626 307.56314 590.5937 312.93572 583.96626 312.93572 L 515.26856 312.93572 C 508.64114 312.93572 503.26856 307.56314 503.26856 300.93572 L 503.26856 267.93572 C 503.26856 261.3083 508.64114 255.93572 515.26856 255.93572 Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(508.26856 265.98773)" fill="black">
+          <tspan font-family="Helvetica Neue" font-size="16" font-weight="400" fill="black" x="4.892854" y="15" xml:space="preserve">Rechnung </tspan>
+          <tspan font-family="Helvetica Neue" font-size="16" font-weight="400" fill="black" x="4.156854" y="33.448" xml:space="preserve">versenden</tspan>
+        </text>
+      </g>
+      <g id="Line_540">
+        <line x1="448.28533" y1="342.99437" x2="453.3" y2="342.99437" marker-end="url(#StickArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+      <g id="Line_539">
+        <line x1="477" y1="303.91577" x2="489.86045" y2="291.05533" marker-end="url(#StickArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+      <g id="Line_530">
+        <line x1="477" y1="383.81634" x2="493.92544" y2="400.7418" marker-end="url(#StickArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+      <g id="Graphic_520">
+        <rect x="471" y="294.74437" width="6" height="97.5" fill="black"/>
+        <rect x="471" y="294.74437" width="6" height="97.5" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+    </g>
+  </g>
+</svg>

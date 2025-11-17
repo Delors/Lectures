@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xl="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" version="1.1" viewBox="279 137 809 467" width="809" height="467">
+  <defs>
+    <font-face font-family="Helvetica Neue" font-size="14" panose-1="2 0 5 3 0 0 0 2 0 4" units-per-em="1000" underline-position="-100" underline-thickness="50" slope="0" x-height="517" cap-height="714" ascent="951.9958" descent="-212.99744" font-weight="400">
+      <font-face-src>
+        <font-face-name name="HelveticaNeue"/>
+      </font-face-src>
+    </font-face>
+    <marker orient="auto" overflow="visible" markerUnits="strokeWidth" id="StickArrow_Marker" stroke-linejoin="miter" stroke-miterlimit="10" viewBox="-1 -4 10 8" markerWidth="10" markerHeight="8" color="black">
+      <g>
+        <path d="M 7.2 0 L 0 0 M 0 -2.7 L 7.2 0 L 0 2.7" fill="none" stroke="currentColor" stroke-width="1"/>
+      </g>
+    </marker>
+  </defs>
+  <metadata> Produced by OmniGraffle 8.0\n2024-11-01 11:49:23 +0000</metadata>
+  <g id="partyteilnehmer" fill="none" fill-opacity="1" stroke-dasharray="none" stroke-opacity="1" stroke="none">
+    <title>partyteilnehmer</title>
+    <g id="partyteilnehmer_check_state">
+      <title>check_state</title>
+      <g id="Graphic_407">
+        <circle cx="355.3418" cy="202.26172" r="16.0000255664304" fill="black"/>
+        <circle cx="355.3418" cy="202.26172" r="16.0000255664304" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_402">
+        <text transform="translate(808.3749 413.72324)" fill="black">
+          <tspan font-family="Helvetica Neue" font-size="14" font-weight="400" fill="black" x="24.255" y="13" xml:space="preserve">[ist </tspan>
+          <tspan font-family="Helvetica Neue" font-size="14" font-weight="400" fill="black" x="0" y="29.392" xml:space="preserve">betrunken]</tspan>
+        </text>
+      </g>
+      <g id="Graphic_401">
+        <text transform="translate(630.9909 487.4081)" fill="black">
+          <tspan font-family="Helvetica Neue" font-size="14" font-weight="400" fill="black" x="831335e-18" y="13" xml:space="preserve">[nicht betrunken]</tspan>
+        </text>
+      </g>
+      <g id="Graphic_400">
+        <text transform="translate(638.6841 414.9637)" fill="black">
+          <tspan font-family="Helvetica Neue" font-size="14" font-weight="400" fill="black" x="8.939" y="13" xml:space="preserve">nach 30min/ </tspan>
+          <tspan font-family="Helvetica Neue" font-size="14" font-weight="400" fill="black" x="0" y="29.392" xml:space="preserve">Zustand prüfen</tspan>
+        </text>
+      </g>
+      <g id="Graphic_390">
+        <path d="M 778.6249 409.9637 L 803.3749 430.9637 L 778.6249 451.9637 L 753.8749 430.9637 Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Line_389">
+        <line x1="635.5465" y1="430.9637" x2="736.1749" y2="430.9637" marker-end="url(#StickArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+      <g id="Line_388">
+        <line x1="803.3749" y1="430.9637" x2="887.3" y2="430.9637" marker-end="url(#StickArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+      <g id="Line_387">
+        <path d="M 778.6249 451.9637 L 778.6249 508.28703 L 575.5 508.28703 L 575.5 476.31523" marker-end="url(#StickArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xl="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:dc="http://purl.org/dc/elements/1.1/" viewBox="0 0 273 145" width="273" height="145">
+  <defs>
+    <filter id="Shadow" filterUnits="userSpaceOnUse" x="-27.3" y="-14.5">
+      <feGaussianBlur in="SourceAlpha" result="blur" stdDeviation="1.308"/>
+      <feOffset in="blur" result="offset" dx="0" dy="2"/>
+      <feFlood flood-color="black" flood-opacity=".5" result="flood"/>
+      <feComposite in="flood" in2="offset" operator="in"/>
+    </filter>
+    <font-face font-family="Helvetica" font-size="12" units-per-em="1000" underline-position="-75.68359" underline-thickness="49.316406" slope="0" x-height="522.9492" cap-height="717.28516" ascent="770.0195" descent="-229.98047" font-weight="400">
+      <font-face-src>
+        <font-face-name name="Helvetica"/>
+      </font-face-src>
+    </font-face>
+    <font-face font-family="Helvetica" font-size="12" units-per-em="1000" underline-position="-75.68359" underline-thickness="49.316406" slope="0" x-height="532.22656" cap-height="719.7266" ascent="770.0195" descent="-229.98047" font-weight="700">
+      <font-face-src>
+        <font-face-name name="Helvetica-Bold"/>
+      </font-face-src>
+    </font-face>
+    <marker orient="auto" overflow="visible" markerUnits="strokeWidth" id="UMLInheritance_Marker" stroke-linejoin="miter" stroke-miterlimit="10" viewBox="-1 -8 14 16" markerWidth="14" markerHeight="16" color="black">
+      <g>
+        <path d="M 12 0 L 0 -7 L 0 7 Z" fill="none" stroke="currentColor" stroke-width="1"/>
+      </g>
+    </marker>
+    <marker orient="auto" overflow="visible" markerUnits="strokeWidth" id="StickArrow_Marker" stroke-linejoin="miter" stroke-miterlimit="10" viewBox="-1 -4 10 8" markerWidth="10" markerHeight="8" color="black">
+      <g>
+        <path d="M 8 0 L 0 0 M 0 -3 L 8 0 L 0 3" fill="none" stroke="currentColor" stroke-width="1"/>
+      </g>
+    </marker>
+  </defs>
+  <metadata> Produced by OmniGraffle 8.0\n2024-01-30 12:41:49 +0000</metadata>
+  <g id="srp-rectangle-square" stroke-opacity="1" stroke-dasharray="none" fill="none" stroke="none" fill-opacity="1">
+    <title>srp-rectangle-square</title>
+    <g id="srp-rectangle-square_Layer_1">
+      <title>Layer 1</title>
+      <g id="Graphic_34_shadow" filter="url(#Shadow)">
+        <rect x="175.5" y="8" width="90" height="14" fill="white"/>
+        <rect x="175.5" y="8" width="90" height="14" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_35_shadow" filter="url(#Shadow)">
+        <rect x="175.5" y="22" width="90" height="29.328003" fill="white"/>
+        <rect x="175.5" y="22" width="90" height="29.328003" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_37_shadow" filter="url(#Shadow)">
+        <rect x="175.5" y="92" width="90" height="14" fill="white"/>
+        <rect x="175.5" y="92" width="90" height="14" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_38_shadow" filter="url(#Shadow)">
+        <rect x="175.5" y="106" width="90" height="29.328003" fill="white"/>
+        <rect x="175.5" y="106" width="90" height="29.328003" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_8_shadow" filter="url(#Shadow)">
+        <rect x="7.5" y="11.664001" width="90" height="36" fill="white"/>
+        <rect x="7.5" y="11.664001" width="90" height="36" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Group_33">
+        <g id="Graphic_35">
+          <rect x="175.5" y="22" width="90" height="29.328003" fill="white"/>
+          <rect x="175.5" y="22" width="90" height="29.328003" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+          <text transform="translate(180.5 22)" fill="black">
+            <tspan font-family="Helvetica" font-size="12" font-weight="400" fill="black" x="0" y="11">+setWidth(…)</tspan>
+            <tspan font-family="Helvetica" font-size="12" font-weight="400" fill="black" x="0" y="25">+setHeight(…)</tspan>
+          </text>
+        </g>
+        <g id="Graphic_34">
+          <rect x="175.5" y="8" width="90" height="14" fill="white"/>
+          <rect x="175.5" y="8" width="90" height="14" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+          <text transform="translate(180.5 8)" fill="black">
+            <tspan font-family="Helvetica" font-size="12" font-weight="700" fill="black" x="11.324219" y="11">Rectangle</tspan>
+          </text>
+        </g>
+      </g>
+      <g id="Group_36">
+        <g id="Graphic_38">
+          <rect x="175.5" y="106" width="90" height="29.328003" fill="white"/>
+          <rect x="175.5" y="106" width="90" height="29.328003" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+          <text transform="translate(180.5 106)" fill="black">
+            <tspan font-family="Helvetica" font-size="12" font-weight="400" fill="black" x="0" y="11">+setWidth(…)</tspan>
+            <tspan font-family="Helvetica" font-size="12" font-weight="400" fill="black" x="0" y="25">+setHeight(…)</tspan>
+          </text>
+        </g>
+        <g id="Graphic_37">
+          <rect x="175.5" y="92" width="90" height="14" fill="white"/>
+          <rect x="175.5" y="92" width="90" height="14" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+          <text transform="translate(180.5 92)" fill="black">
+            <tspan font-family="Helvetica" font-size="12" font-weight="700" fill="black" x="19.65918" y="11">Square</tspan>
+          </text>
+        </g>
+      </g>
+      <g id="Line_27">
+        <line x1="220.5" y1="92" x2="220.5" y2="64.828" marker-end="url(#UMLInheritance_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_8">
+        <rect x="7.5" y="11.664001" width="90" height="36" fill="white"/>
+        <rect x="7.5" y="11.664001" width="90" height="36" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(12.5 22.664001)" fill="black">
+          <tspan font-family="Helvetica" font-size="12" font-weight="700" fill="black" x="26.658203" y="11">User</tspan>
+        </text>
+      </g>
+      <g id="Line_39">
+        <line x1="97.5" y1="29.664" x2="165.6" y2="29.664" marker-end="url(#StickArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+    </g>
+  </g>
+</svg>

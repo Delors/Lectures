@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xl="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" version="1.1" viewBox="279 137 809 467" width="809" height="467">
+  <defs>
+    <font-face font-family="Helvetica Neue" font-size="16" panose-1="2 0 8 3 0 0 0 9 0 4" units-per-em="1000" underline-position="-100" underline-thickness="50" slope="0" x-height="517" cap-height="714" ascent="975.0061" descent="-216.99524" font-weight="700">
+      <font-face-src>
+        <font-face-name name="HelveticaNeue-Bold"/>
+      </font-face-src>
+    </font-face>
+  </defs>
+  <metadata> Produced by OmniGraffle 8.0\n2024-11-01 11:48:48 +0000</metadata>
+  <g id="partyteilnehmer" fill="none" fill-opacity="1" stroke-dasharray="none" stroke-opacity="1" stroke="none">
+    <title>partyteilnehmer</title>
+    <g id="partyteilnehmer_states">
+      <title>states</title>
+      <g id="Graphic_291">
+        <path d="M 525.9822 401.61523 L 623.56425 401.61523 C 630.1917 401.61523 635.56425 406.9878 635.56425 413.61523 L 635.56425 446.61523 C 635.56425 453.24265 630.1917 458.61523 623.56425 458.61523 L 525.9822 458.61523 C 519.3548 458.61523 513.9822 453.24265 513.9822 446.61523 L 513.9822 413.61523 C 513.9822 406.9878 519.3548 401.61523 525.9822 401.61523 Z" fill="white"/>
+        <path d="M 525.9822 401.61523 L 623.56425 401.61523 C 630.1917 401.61523 635.56425 406.9878 635.56425 413.61523 L 635.56425 446.61523 C 635.56425 453.24265 630.1917 458.61523 623.56425 458.61523 L 525.9822 458.61523 C 519.3548 458.61523 513.9822 453.24265 513.9822 446.61523 L 513.9822 413.61523 C 513.9822 406.9878 519.3548 401.61523 525.9822 401.61523 Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(518.9822 406.61523)" fill="black">
+          <tspan font-family="Helvetica Neue" font-size="16" font-weight="700" fill="black" x="35.951016" y="16" xml:space="preserve">feiert</tspan>
+        </text>
+      </g>
+      <g id="Graphic_290">
+        <path d="M 306.55078 254.18684 L 404.1328 254.18684 C 410.76023 254.18684 416.1328 259.55943 416.1328 266.18684 L 416.1328 274.18684 C 416.1328 280.81426 410.76023 286.18684 404.1328 286.18684 L 306.55078 286.18684 C 299.92336 286.18684 294.55078 280.81426 294.55078 274.18684 L 294.55078 266.18684 C 294.55078 259.55943 299.92336 254.18684 306.55078 254.18684 Z" fill="white"/>
+        <path d="M 306.55078 254.18684 L 404.1328 254.18684 C 410.76023 254.18684 416.1328 259.55943 416.1328 266.18684 L 416.1328 274.18684 C 416.1328 280.81426 410.76023 286.18684 404.1328 286.18684 L 306.55078 286.18684 C 299.92336 286.18684 294.55078 280.81426 294.55078 274.18684 L 294.55078 266.18684 C 294.55078 259.55943 299.92336 254.18684 306.55078 254.18684 Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(299.55078 259.18684)" fill="black">
+          <tspan font-family="Helvetica Neue" font-size="16" font-weight="700" fill="black" x="14.031016" y="16" xml:space="preserve">eingeladen</tspan>
+        </text>
+      </g>
+      <g id="Graphic_289">
+        <path d="M 917 401.61523 L 1052.6133 401.61523 C 1059.2407 401.61523 1064.6133 406.9878 1064.6133 413.61523 L 1064.6133 446.61523 C 1064.6133 453.24265 1059.2407 458.61523 1052.6133 458.61523 L 917 458.61523 C 910.3726 458.61523 905 453.24265 905 446.61523 L 905 413.61523 C 905 406.9878 910.3726 401.61523 917 401.61523 Z" fill="white"/>
+        <path d="M 917 401.61523 L 1052.6133 401.61523 C 1059.2407 401.61523 1064.6133 406.9878 1064.6133 413.61523 L 1064.6133 446.61523 C 1064.6133 453.24265 1059.2407 458.61523 1052.6133 458.61523 L 917 458.61523 C 910.3726 458.61523 905 453.24265 905 446.61523 L 905 413.61523 C 905 406.9878 910.3726 401.61523 917 401.61523 Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(910 406.61523)" fill="black">
+          <tspan font-family="Helvetica Neue" font-size="16" font-weight="700" fill="black" x="35.98264" y="16" xml:space="preserve">betrunken</tspan>
+        </text>
+      </g>
+      <g id="Graphic_288">
+        <path d="M 494.5447 241.3548 L 655.00175 241.3548 C 661.6292 241.3548 667.00175 246.7274 667.00175 253.3548 L 667.00175 286.3548 C 667.00175 292.98223 661.6292 298.3548 655.00175 298.3548 L 494.5447 298.3548 C 487.9173 298.3548 482.5447 292.98223 482.5447 286.3548 L 482.5447 253.3548 C 482.5447 246.7274 487.9173 241.3548 494.5447 241.3548 Z" fill="white"/>
+        <path d="M 494.5447 241.3548 L 655.00175 241.3548 C 661.6292 241.3548 667.00175 246.7274 667.00175 253.3548 L 667.00175 286.3548 C 667.00175 292.98223 661.6292 298.3548 655.00175 298.3548 L 494.5447 298.3548 C 487.9173 298.3548 482.5447 292.98223 482.5447 286.3548 L 482.5447 253.3548 C 482.5447 246.7274 487.9173 241.3548 494.5447 241.3548 Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(487.5447 246.3548)" fill="black">
+          <tspan font-family="Helvetica Neue" font-size="16" font-weight="700" fill="black" x="38.644516" y="16" xml:space="preserve">wird begrüßt</tspan>
+        </text>
+      </g>
+    </g>
+  </g>
+</svg>

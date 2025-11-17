@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xl="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:dc="http://purl.org/dc/elements/1.1/" viewBox="297 255 858 278" width="858" height="278">
+  <defs>
+    <font-face font-family="Helvetica Neue" font-size="16" panose-1="2 0 5 3 0 0 0 2 0 4" units-per-em="1000" underline-position="-100" underline-thickness="50" slope="0" x-height="517" cap-height="714" ascent="951.9958" descent="-212.99744" font-weight="400">
+      <font-face-src>
+        <font-face-name name="HelveticaNeue"/>
+      </font-face-src>
+    </font-face>
+    <marker orient="auto" overflow="visible" markerUnits="strokeWidth" id="StickArrow_Marker" stroke-linejoin="miter" stroke-miterlimit="10" viewBox="-1 -4 10 8" markerWidth="10" markerHeight="8" color="black">
+      <g>
+        <path d="M 7.2 0 L 0 0 M 0 -2.7 L 7.2 0 L 0 2.7" fill="none" stroke="currentColor" stroke-width="1"/>
+      </g>
+    </marker>
+    <font-face font-family="Helvetica Neue" font-size="14" panose-1="2 0 5 3 0 0 0 2 0 4" units-per-em="1000" underline-position="-100" underline-thickness="50" slope="0" x-height="517" cap-height="714" ascent="951.9958" descent="-212.99744" font-weight="400">
+      <font-face-src>
+        <font-face-name name="HelveticaNeue"/>
+      </font-face-src>
+    </font-face>
+  </defs>
+  <metadata> Produced by OmniGraffle 8.0\n2024-11-07 10:06:17 +0000</metadata>
+  <g id="partyteilnehmer" stroke="none" stroke-opacity="1" fill-opacity="1" fill="none" stroke-dasharray="none">
+    <title>partyteilnehmer</title>
+    <g id="partyteilnehmer_liefertypen">
+      <title>liefertypen</title>
+      <g id="Graphic_597">
+        <path d="M 740.9979 351.3673 L 809.6956 351.3673 C 816.323 351.3673 821.6956 356.7399 821.6956 363.3673 L 821.6956 396.3673 C 821.6956 402.9947 816.323 408.3673 809.6956 408.3673 L 740.9979 408.3673 C 734.3704 408.3673 728.99786 402.9947 728.99786 396.3673 L 728.99786 363.3673 C 728.99786 356.7399 734.3704 351.3673 740.9979 351.3673 Z" fill="white"/>
+        <path d="M 740.9979 351.3673 L 809.6956 351.3673 C 816.323 351.3673 821.6956 356.7399 821.6956 363.3673 L 821.6956 396.3673 C 821.6956 402.9947 816.323 408.3673 809.6956 408.3673 L 740.9979 408.3673 C 734.3704 408.3673 728.99786 402.9947 728.99786 396.3673 L 728.99786 363.3673 C 728.99786 356.7399 734.3704 351.3673 740.9979 351.3673 Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(733.9979 361.4193)" fill="black">
+          <tspan font-family="Helvetica Neue" font-size="16" font-weight="400" fill="black" x=".6048541" y="15" xml:space="preserve">Übernacht-</tspan>
+          <tspan font-family="Helvetica Neue" font-size="16" font-weight="400" fill="black" x="10.684854" y="33.448" xml:space="preserve">lieferung</tspan>
+        </text>
+      </g>
+      <g id="Graphic_596">
+        <path d="M 740.9979 474.63103 L 809.6956 474.63103 C 816.323 474.63103 821.6956 480.0036 821.6956 486.63103 L 821.6956 519.631 C 821.6956 526.25845 816.323 531.631 809.6956 531.631 L 740.9979 531.631 C 734.3704 531.631 728.99786 526.25845 728.99786 519.631 L 728.99786 486.63103 C 728.99786 480.0036 734.3704 474.63103 740.9979 474.63103 Z" fill="white"/>
+        <path d="M 740.9979 474.63103 L 809.6956 474.63103 C 816.323 474.63103 821.6956 480.0036 821.6956 486.63103 L 821.6956 519.631 C 821.6956 526.25845 816.323 531.631 809.6956 531.631 L 740.9979 531.631 C 734.3704 531.631 728.99786 526.25845 728.99786 519.631 L 728.99786 486.63103 C 728.99786 480.0036 734.3704 474.63103 740.9979 474.63103 Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(733.9979 484.68303)" fill="black">
+          <tspan font-family="Helvetica Neue" font-size="16" font-weight="400" fill="black" x="12.604854" y="15" xml:space="preserve">reguläre </tspan>
+          <tspan font-family="Helvetica Neue" font-size="16" font-weight="400" fill="black" x="8.012854" y="33.448" xml:space="preserve">Lieferung</tspan>
+        </text>
+      </g>
+      <g id="Line_591">
+        <path d="M 658.4889 414.01515 L 658.4889 379.16667 L 711.29786 379.16667" marker-end="url(#StickArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+      <g id="Line_590">
+        <path d="M 658.4889 457.19697 L 658.3034 496.77734 L 658.3034 504.16667 L 711.29786 504.16667" marker-end="url(#StickArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+      <g id="Graphic_585">
+        <text transform="translate(668.3673 479.63103)" fill="black">
+          <tspan font-family="Helvetica Neue" font-size="14" font-weight="400" fill="black" x="31974423e-20" y="13" xml:space="preserve">[else]</tspan>
+        </text>
+      </g>
+      <g id="Graphic_584">
+        <text transform="translate(653.1148 338.64684)" fill="black">
+          <tspan font-family="Helvetica Neue" font-size="14" font-weight="400" fill="black" x="1.568" y="13" xml:space="preserve">[Prioritäts-</tspan>
+          <tspan font-family="Helvetica Neue" font-size="14" font-weight="400" fill="black" x="0" y="29.392" xml:space="preserve">bestellung]</tspan>
+        </text>
+      </g>
+    </g>
+  </g>
+</svg>

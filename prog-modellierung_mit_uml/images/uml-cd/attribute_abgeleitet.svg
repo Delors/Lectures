@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xl="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="262 75 886 573" width="886" height="573">
+  <defs>
+    <font-face font-family="Helvetica Neue" font-size="14" panose-1="2 0 5 3 0 0 0 2 0 4" units-per-em="1000" underline-position="-100" underline-thickness="50" slope="0" x-height="517" cap-height="714" ascent="951.9958" descent="-212.99744" font-weight="400">
+      <font-face-src>
+        <font-face-name name="HelveticaNeue"/>
+      </font-face-src>
+    </font-face>
+  </defs>
+  <metadata> Produced by OmniGraffle 8.0\n2024-11-21 15:32:40 +0000</metadata>
+  <g id="party" stroke-opacity="1" fill-opacity="1" stroke="none" stroke-dasharray="none" fill="none">
+    <title>party</title>
+    <g id="party_attribute_abgeleitet">
+      <title>attribute_abgeleitet</title>
+      <g id="Graphic_135">
+        <rect x="262.7129" y="267.6172" width="190.29297" height="91.44922" fill="white"/>
+        <rect x="262.7129" y="267.6172" width="190.29297" height="91.44922" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(267.7129 272.6172)" fill="black">
+          <tspan font-family="Helvetica Neue" font-size="14" font-weight="400" fill="black" x="0" y="13" xml:space="preserve">name : String</tspan>
+        </text>
+      </g>
+      <g id="Graphic_277">
+        <text transform="translate(267.7129 340.72813)" fill="black">
+          <tspan font-family="Helvetica Neue" font-size="14" font-weight="400" fill="black" x="0" y="13" xml:space="preserve">/betrunken : Boolean = false</tspan>
+        </text>
+      </g>
+      <g id="Graphic_278">
+        <text transform="translate(267.7129 288.4975)" fill="black">
+          <tspan font-family="Helvetica Neue" font-size="14" font-weight="400" fill="black" x="0" y="13" xml:space="preserve">geburtsdatum : Date</tspan>
+        </text>
+      </g>
+      <g id="Graphic_279">
+        <text transform="translate(267.7129 306.08084)" fill="black">
+          <tspan font-family="Helvetica Neue" font-size="14" font-weight="400" fill="black" x="0" y="13" xml:space="preserve">begeistert : Begeisterung</tspan>
+        </text>
+      </g>
+      <g id="Graphic_280">
+        <text transform="translate(267.9929 323.45916)" fill="black">
+          <tspan font-family="Helvetica Neue" font-size="14" font-weight="400" fill="black" x="0" y="13" xml:space="preserve">intus: Cocktail [1.. *] </tspan>
+        </text>
+      </g>
+    </g>
+  </g>
+</svg>

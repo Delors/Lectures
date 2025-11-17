@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xl="http://www.w3.org/1999/xlink" xmlns:dc="http://purl.org/dc/elements/1.1/" version="1.1" viewBox="262 75 886 573" width="886" height="573">
+  <defs>
+    <font-face font-family="Helvetica Neue" font-size="16" panose-1="2 0 8 3 0 0 0 9 0 4" units-per-em="1000" underline-position="-100" underline-thickness="50" slope="0" x-height="517" cap-height="714" ascent="975.0061" descent="-216.99524" font-weight="700">
+      <font-face-src>
+        <font-face-name name="HelveticaNeue-Bold"/>
+      </font-face-src>
+    </font-face>
+  </defs>
+  <metadata> Produced by OmniGraffle 8.0\n2024-11-01 10:07:25 +0000</metadata>
+  <g id="party" stroke-dasharray="none" stroke-opacity="1" stroke="none" fill-opacity="1" fill="none">
+    <title>party</title>
+    <g id="party_klassen">
+      <title>klassen</title>
+      <g id="Graphic_77">
+        <rect x="279.10938" y="523.2383" width="157.5" height="32" fill="white"/>
+        <rect x="279.10938" y="523.2383" width="157.5" height="32" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(284.10938 529.5062)" fill="black">
+          <tspan font-family="Helvetica Neue" font-size="16" font-weight="700" fill="black" x="55.974" y="16" xml:space="preserve">Gast</tspan>
+        </text>
+      </g>
+      <g id="Graphic_76">
+        <rect x="262.7129" y="235.1172" width="190.29297" height="32" fill="white"/>
+        <rect x="262.7129" y="235.1172" width="190.29297" height="32" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(267.7129 241.38513)" fill="black">
+          <tspan font-family="Helvetica Neue" font-size="16" font-weight="700" fill="black" x="29.570484" y="16" xml:space="preserve">Partyteilnehmer</tspan>
+        </text>
+      </g>
+      <g id="Graphic_75">
+        <rect x="559.5" y="76.32422" width="121.58203" height="32" fill="white"/>
+        <rect x="559.5" y="76.32422" width="121.58203" height="32" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(564.5 82.59216)" fill="black">
+          <tspan font-family="Helvetica Neue" font-size="16" font-weight="700" fill="black" x="35.783016" y="16" xml:space="preserve">Party</tspan>
+        </text>
+      </g>
+      <g id="Graphic_74">
+        <rect x="925.3301" y="90" width="159.61328" height="32" fill="white"/>
+        <rect x="925.3301" y="90" width="159.61328" height="32" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(930.3301 96.26794)" fill="black">
+          <tspan font-family="Helvetica Neue" font-size="16" font-weight="700" fill="black" x="54.65464" y="16" xml:space="preserve">Zutat</tspan>
+        </text>
+      </g>
+      <g id="Graphic_73">
+        <rect x="924.2734" y="340.6211" width="161.72656" height="32" fill="white"/>
+        <rect x="924.2734" y="340.6211" width="161.72656" height="32" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(929.2734 346.88904)" fill="black">
+          <tspan font-family="Helvetica Neue" font-size="16" font-weight="700" fill="black" x="44.32728" y="16" xml:space="preserve">Cocktail</tspan>
+        </text>
+      </g>
+      <g id="Graphic_72">
+        <rect x="861.3105" y="490.2383" width="285.3789" height="32" fill="white"/>
+        <rect x="861.3105" y="490.2383" width="285.3789" height="32" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(866.3105 496.5062)" fill="black">
+          <tspan font-family="Helvetica Neue" font-size="16" font-weight="700" fill="black" x="99.60945" y="16" xml:space="preserve">Bartender</tspan>
+        </text>
+      </g>
+      <g id="Graphic_71">
+        <rect x="559.5" y="522.46875" width="190.29297" height="32" fill="white"/>
+        <rect x="559.5" y="522.46875" width="190.29297" height="32" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(564.5 528.7367)" fill="black">
+          <tspan font-family="Helvetica Neue" font-size="16" font-weight="700" fill="black" x="50.298484" y="16" xml:space="preserve">Gastgeber</tspan>
+        </text>
+      </g>
+    </g>
+  </g>
+</svg>

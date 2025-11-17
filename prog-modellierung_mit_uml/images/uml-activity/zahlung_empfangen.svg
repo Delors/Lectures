@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xl="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:dc="http://purl.org/dc/elements/1.1/" viewBox="297 255 858 278" width="858" height="278">
+  <defs>
+    <font-face font-family="Helvetica Neue" font-size="16" panose-1="2 0 5 3 0 0 0 2 0 4" units-per-em="1000" underline-position="-100" underline-thickness="50" slope="0" x-height="517" cap-height="714" ascent="951.9958" descent="-212.99744" font-weight="400">
+      <font-face-src>
+        <font-face-name name="HelveticaNeue"/>
+      </font-face-src>
+    </font-face>
+    <marker orient="auto" overflow="visible" markerUnits="strokeWidth" id="StickArrow_Marker" stroke-linejoin="miter" stroke-miterlimit="10" viewBox="-1 -4 10 8" markerWidth="10" markerHeight="8" color="black">
+      <g>
+        <path d="M 7.2 0 L 0 0 M 0 -2.7 L 7.2 0 L 0 2.7" fill="none" stroke="currentColor" stroke-width="1"/>
+      </g>
+    </marker>
+  </defs>
+  <metadata> Produced by OmniGraffle 8.0\n2024-11-07 10:07:13 +0000</metadata>
+  <g id="partyteilnehmer" stroke="none" stroke-opacity="1" fill-opacity="1" fill="none" stroke-dasharray="none">
+    <title>partyteilnehmer</title>
+    <g id="partyteilnehmer_zahlung_empfangen">
+      <title>zahlung_empfangen</title>
+      <g id="Graphic_634">
+        <path d="M 716.871 255.93572 L 786.129 255.93572 C 792.7564 255.93572 798.129 261.3083 798.129 267.93572 L 798.129 300.93572 C 798.129 307.56314 792.7564 312.93572 786.129 312.93572 L 716.871 312.93572 C 710.2436 312.93572 704.871 307.56314 704.871 300.93572 L 704.871 267.93572 C 704.871 261.3083 710.2436 255.93572 716.871 255.93572 Z" fill="white"/>
+        <path d="M 716.871 255.93572 L 786.129 255.93572 C 792.7564 255.93572 798.129 261.3083 798.129 267.93572 L 798.129 300.93572 C 798.129 307.56314 792.7564 312.93572 786.129 312.93572 L 716.871 312.93572 C 710.2436 312.93572 704.871 307.56314 704.871 300.93572 L 704.871 267.93572 C 704.871 261.3083 710.2436 255.93572 716.871 255.93572 Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(709.871 265.98773)" fill="black">
+          <tspan font-family="Helvetica Neue" font-size="16" font-weight="400" fill="black" x="12.733002" y="15" xml:space="preserve">Zahlung </tspan>
+          <tspan font-family="Helvetica Neue" font-size="16" font-weight="400" fill="black" x="1.3170016" y="33.448" xml:space="preserve">empfangen</tspan>
+        </text>
+      </g>
+      <g id="Line_633">
+        <line x1="596.8586" y1="283.93572" x2="688.0633" y2="283.93572" marker-end="url(#StickArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+    </g>
+  </g>
+</svg>
