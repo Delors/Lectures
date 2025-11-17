@@ -549,19 +549,16 @@ Ausgewählte Angriffe, Angriffsmethoden und Bedrohungsszenarien
 
 .. class:: incremental-list
 
-- Backdoors (:ger:`Hintertüren`)
+- *Backdoors* (:ger:`Hintertüren`)
 - (Distributed-)Denial-of-service Angriffe
 - Direct-access Angriffe (d. h. physischer Angriff auf das System)
-- Eavesdropping (:ger:`Abhören`)
+- *Eavesdropping* (:ger:`Abhören`)
 - Malware
 - Person-in-the-middle Angriffe
 - Privilege escalation (unterschieden werden: horizontale und vertikale)
-- Side-Channel attacks (:ger:`Seitenkanalangriffe`)
+- *Side-channel attacks* (:ger:`Seitenkanalangriffe`)
 - Spoofing (z. B. IP-Spoofing) (:ger:`Vortäuschen`)
-- Social engineering (z. B. Phishing)
-
-.. class:: incremental-list
-
+- Social-Engineering (z. B. Phishing)
 - Advanced Persistent Threats (APT)
 - *Store-now, Decrypt-later* (:ger:`Speichere jetzt, Entschlüssele später`)
 
@@ -713,7 +710,7 @@ Eigenschaften von Social-Engineering Angriffe
 
 - **sind häufig die Ursache für erfolgreiche Angriffe**
 
-  (Der Hacker Kevin Mitnick war praktisch immer aufgrund von Social Engineering erfolgreich.)
+  (Der Hacker Kevin Mitnick war praktisch immer aufgrund von Social-Engineering erfolgreich.)
 - stellen die größte Bedrohung für die Sicherheit von IT-Systemen dar
 - es wird angenommen, dass die betroffenen Personen es in vielen Fällen nicht merken
 
@@ -829,6 +826,9 @@ Ausgewählte Social-Engineering Angriffe
 
             Credential Harvesting war insbesondere in der Anfangszeit von Github und Bitbucket verbreitet. Es wurden häufig Zugangsdaten und Zertifikate in öffentlichen Repositories gefunden, da die Nutzer diese im Quellcode hinterlegt hatten oder sogar als Ressourcen direkt eingebunden hatten.
 
+    :Doxing:
+
+        Sammeln und Veröffentlichen von privaten Informationen über eine Person, um diese zu belästigen oder zu erpressen.
 
     :Hoax:
         Eine bewusste Falschmeldung, die Menschen dazu veranlasst etwas falsches zu glauben.
