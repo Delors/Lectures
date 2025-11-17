@@ -5,9 +5,9 @@
 # It also processes all .publish files in the current directory and copies the
 # files listed in them to the specified target directory (see below).
 
-#target_directory="/Users/Michael/Sites/delors.github.io/" # must end with "/"!
+target_directory="/Users/Michael/Sites/delors.github.io/" # must end with "/"!
 wd=$(pwd)
-target_directory="/home/michael/Teaching/Lectures-Webpage/"
+#target_directory="/home/michael/Teaching/Lectures-Webpage/"
 
 # Use the following lines to enable/disable debug output:
 # set -x
