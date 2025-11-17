@@ -60,7 +60,7 @@ Implementierung einer einfachen Domänenklasse
 
     .. exercise:: Implementieren einer Klasse für einfache Telefonbucheinträge
 
-        1. Entwickeln Sie eine Klasse :java:`TelefonbuchEintrag` mit den Attributen:
+        1. Entwickeln Sie eine Klasse :java:`Telefonbucheintrag` mit den Attributen:
 
         1. :java:`Integer telefonnummer`
         2. :java:`String vorname`
@@ -70,18 +70,18 @@ Implementierung einer einfachen Domänenklasse
 
         2. Implementieren Sie weiterhin eine Methode :java:`public String toString()`, die den Eintrag in der Form "Vorname Nachname, Telefonnummer" zurückgibt.
 
-        3. Implementieren Sie eine Methode :java:`public boolean equals(Object obj)`, die zwei Einträge (d. h. zwei Objekte mit dem dynamischen Typ :java:`TelefonbuchEintrag`) als gleich betrachtet, wenn die Telefonnummern gleich sind.
+        3. Implementieren Sie eine Methode :java:`public boolean equals(Object obj)`, die zwei Einträge (d. h. zwei Objekte mit dem dynamischen Typ :java:`Telefonbucheintrag`) als gleich betrachtet, wenn die Telefonnummern gleich sind.
 
            Prüfen Sie - durch das Studium der Dokumentation der Methode :java:`java.lang.Object.equals()` - ob Sie die Methode korrekt implementiert haben.
 
         4. Implementieren Sie eine Methode :java:`public int hashCode()`, die einen :java:`int` Wert zurückgibt und einen Eintrag halbwegs sinnvoll repräsentiert. Prüfen Sie ob Ihre Implementierung dem Kontrakt der Methode :java:`java.lang.Object.hashCode()` entspricht.
 
-        5. Schreiben Sie ein Methode, die drei :java:`TelefonbuchEintrag`-Objekte erzeugt. Zwei davon sollen die gleichen Inhalte haben. Prüfen Sie dann, ob die Methoden :java:`equals()` und :java:`hashCode()` korrekt implementiert sind.
+        5. Schreiben Sie ein Methode, die drei :java:`Telefonbucheintrag`-Objekte erzeugt. Zwei davon sollen die gleichen Inhalte haben. Prüfen Sie dann, ob die Methoden :java:`equals()` und :java:`hashCode()` korrekt implementiert sind.
 
         .. solution::
             :pwd: VielZuTun!
 
-            .. include:: code/TelefonbuchEintrag.java
+            .. include:: code/Telefonbucheintrag.java
                 :code: java
                 :number-lines:
 
@@ -438,9 +438,9 @@ Konstruktoren von Record Klassen
 ------------------------------------------------
 
 
-.. exercise:: Ein einfacher TelefonbuchEintrag mit Java Records
+.. exercise:: Ein einfacher Telefonbucheintrag mit Java Records
 
-    Entwickeln Sie eine Klasse TelefonbuchEintrag mit den Attributen:
+    Entwickeln Sie eine Klasse Telefonbucheintrag mit den Attributen:
 
        1. :java:`int telefonnummer`
        2. :java:`String vorname`
@@ -455,8 +455,8 @@ Konstruktoren von Record Klassen
             :number-lines:
             :class: copy-to-clipboard
 
-            public record TelefonbuchEintrag(int telefonnummer, String vorname, String nachname) {
-                public TelefonbuchEintrag {
+            public record Telefonbucheintrag(int telefonnummer, String vorname, String nachname) {
+                public Telefonbucheintrag {
                     if (telefonnummer <= 0)
                         throw new IllegalArgumentException("Telefonnummer muss größer 0 sein.");
                     if (vorname == null || nachname == null)
