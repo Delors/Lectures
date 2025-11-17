@@ -16,7 +16,7 @@ Einführung in die Objekt-orientierte Programmierung
 
 :Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
 :Kontakt: michael.eichberg@dhbw.de, Raum 149B
-:Version: 1.1.1
+:Version: 1.1.3
 
 .. supplemental::
 
@@ -87,7 +87,9 @@ Klassen
 
     **Beispiele:**
 
-    .. container:: incremental
+    .. deck:: incremental
+
+      .. card::
 
         .. rubric:: :java:`Auto` ist eine Klasse.
 
@@ -106,7 +108,7 @@ Klassen
                 }
             }
 
-    .. container:: incremental
+      .. card::
 
         .. rubric:: :java:`Button` (bei der Modellierung grafischer Benutzeroberflächen) ist eine Klasse.
 
@@ -121,7 +123,7 @@ Klassen
                 void registerListener() { ... }
             }
 
-    .. container:: incremental margin-top-1em
+      .. card:: 
 
         .. rubric:: :java:`BigDecimal` (zur Repräsentation von Dezimalzahlen mit „beliebiger“ Präzision) ist eine Klasse.
 
@@ -136,7 +138,7 @@ Klassen
             }
 
 
-    .. container:: incremental margin-top-1em
+      .. card::
 
         .. rubric:: :java:`File` (zum Zugriff auf Dateien) ist eine Klasse.
 
@@ -150,15 +152,19 @@ Klassen
                 void read() { ... }
             }
 
-    .. container:: accentuate
+      .. card:: 
+        
+        .. container:: accentuate
 
-        Klassen ermöglichen es uns über konkrete Objekte zu **abstrahieren**: Klassen sind eine Beschreibung vieler Objekte mit gleichen Eigenschaften und Verhalten.
+            Klassen ermöglichen es uns über konkrete Objekte zu **abstrahieren**: Klassen sind eine Beschreibung vieler Objekte mit gleichen Eigenschaften und Verhalten.
 
-    .. container:: accentuate
+      .. card:: 
+        
+        .. container:: accentuate
 
-        Durch die Verwendung von Sichtbarkeiten (insbesondere :java:`private` und ggf. :java:`protected`) ist der Zugriff auf die Attribute und Methoden einer Klasse von außen kontrollierbar. Wir sprechen hier von **Kapselung**.
+            Durch die Verwendung von Sichtbarkeiten (insbesondere :java:`private` und ggf. :java:`protected`) ist der Zugriff auf die Attribute und Methoden einer Klasse von außen kontrollierbar. Wir sprechen hier von **Kapselung**.
 
-        :peripheral:`Die privaten Daten eines Objekts (und ggf. einiger Methoden) sind also geschützt und können nur über die Methoden der Klasse manipuliert werden. Dabei können alle Objekte einer Klasse auf die Attribute eines anderen Objektes derselben Klasse zugreifen.`
+            :peripheral:`Die privaten Daten eines Objekts (und ggf. einiger Methoden) sind also geschützt und können nur über die Methoden der Klasse manipuliert werden. Dabei können alle Objekte einer Klasse auf die Attribute eines anderen Objektes derselben Klasse zugreifen.`
 
 
 .. supplemental::
@@ -196,9 +202,11 @@ Objekterzeugung/Instanziierung einer Java Klasse
 
     :Syntax: :java:`new <Klassenname>(<Parameter>)`
 
-    :Beispiel:
+    .. class:: incremental
 
-        `meinAuto` referenziert ein Objekt der Klasse `Auto`.
+    .. example::
+
+        :java:`meinAuto` referenziert ein Objekt der Klasse :java:`Auto`.
 
         .. code:: java
             :class: fade-out copy-to-clipboard
@@ -231,7 +239,7 @@ Variablen, die auf Objekte verweisen
 
     .. card::
 
-         :Beispiel:
+         .. example::
 
             Deklaration und Initialisierung einer Objektvariablen.
 
@@ -284,7 +292,7 @@ Variablen, die auf Objekte verweisen
 
         .. class:: incremental
 
-        :Beispiel:
+        .. example::
 
             .. code:: java
                 :number-lines:
@@ -343,7 +351,7 @@ Objekte und die Selbstreferenz `this`
 
     .. class:: incremental
 
-    :Beispiel:
+    .. example::
 
         .. include:: code/Auto.java
             :code: java
@@ -369,9 +377,8 @@ Explizite Konstruktoren
 
         :Syntax: :java:`<Klassenname>(<Parameter>) { ... }`
 
-    .. card::
-
-        :Beispiel:
+        .. example::
+            :class: incremental
 
             .. code:: java
                 :number-lines:
@@ -385,7 +392,7 @@ Explizite Konstruktoren
                         // ⚠️ "this." ist notwendig,
                         //   zur Unterscheidung von Parameter und Attribut
                         this.marke = marke;
-                        this.geschwindigkeit = geschwindigkeit;notwendig!
+                        this.geschwindigkeit = geschwindigkeit; 
                     }
                 }
 
@@ -399,7 +406,7 @@ Explizite Konstruktoren
 
         Ein Konstruktor kann auch andere Konstruktoren der Klasse aufrufen.  Der „Methodenname“ der anderen Konstruktoren ist in diesem Fall :java:`this`.
 
-        :Beispiel:
+        .. example::
 
             .. code:: java
                 :number-lines:
@@ -439,7 +446,7 @@ Explizite Konstruktoren
 
     .. card::
 
-        :Beispiel (seit Java 22):
+        .. example:: (seit Java 22)
 
             .. code:: java
                 :number-lines:
@@ -457,10 +464,6 @@ Explizite Konstruktoren
                         this(marke); // Aufruf des anderen Konstruktors
                     }
                 }
-
-
-
-
 
     .. card::
 
@@ -485,10 +488,9 @@ Auf sichtbare Attribute und Methoden eines beliebigen Objektes kann über den **
 
 :Syntax: :java:`<Objektinstanz>.<Attribut/Methode>`
 
-:Beispiel:
+.. example::
 
     `meinAuto` referenziert ein Objekt der Klasse `Auto`.
-
 
     .. code:: java
         :number-lines:
@@ -512,19 +514,23 @@ Auf sichtbare Attribute und Methoden eines beliebigen Objektes kann über den **
 Kapselung (:eng:`Encapsulation`)\ [#]_
 --------------------------------------------------
 
+.. class:: dd-margin-left-4em
+
 :Ziel:
    Daten eines Objekts vor direktem Zugriff von außen schützen.
 
    Best Practice: Zugriff auf Daten erfolgt über öffentliche **Getter** (Methoden, die mit :java:`get` anfangen) und **Setter** (Methoden, die mit :java:`set` anfangen). Alle Attribute (außer Konstanten) sollten **privat** sein.
 
-.. class:: incremental
+.. class:: dd-margin-left-4em incremental
 
 :Vorteile:
 
     - Schutz der Datenintegrität
     - Kontrollierter Zugriff auf die Daten; fördert die Wartbarkeit
 
-    .. code:: java
+    .. example::
+
+      .. code:: java
         :number-lines:
         :class: copy-to-clipboard
 
@@ -617,7 +623,7 @@ Kapselung (:eng:`Encapsulation`)\ [#]_
 
       .. class:: dd-margin-left-8em
 
-      :Buch: :java:`addExemplar(Exemplar ex, int nr)`, um ein Exemplar hinzuzufügen
+      :Buch: :java:`addExemplar(Exemplar ex)`, um ein Exemplar hinzuzufügen
       :Exemplar: :java:`verleihe(Benutzer b)`, um ein Buch auszuleihen
       :Biblitohek: :java:`addBenutzer(Benutzer b)`, :java:`addBuch(Buch b)`
       :Alle Klassen: :java:`print()`, um alle Attribute auf der Kommandozeile auszugeben
