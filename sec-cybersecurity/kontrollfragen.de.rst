@@ -86,7 +86,7 @@ Klassenraumübung
             - Privilege escalation (unterschieden werden: horizontale und vertikale)
             - Side-Channel attacks (Seitenkanalangriffe)
             - Spoofing (z. B. IP-Spoofing) (Vortäuschen)
-            - Social engineering (z. B. Phishing)
+            - Social-Engineering (z. B. Phishing)
             - Advanced Persistent Threats (APT)
             - Store-now, Decrypt-later (Speichere jetzt, Entschlüssele später)
 
