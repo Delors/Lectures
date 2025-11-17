@@ -664,7 +664,7 @@ Szenario 5: Kombination von Wörterbuch mit eigenem Regelsatz
 
 Wir greifen einen sogennanten langsamen Hash an und können deswegen nur wenige Passworte gezielt testen.
 
-Aufgrund von Social Engineering/Ermittlungen wissen wir, dass die Person häufig kurze Worte (max 4 Buchstaben nimmt) diese aber oft verdoppelt und häufig die Worte mit einem Großbuchstaben anfangen lässt.
+Aufgrund von Social-Engineering/Ermittlungen wissen wir, dass die Person häufig kurze Worte (max 4 Buchstaben nimmt) diese aber oft verdoppelt und häufig die Worte mit einem Großbuchstaben anfangen lässt.
 
 **Angriff**
 
@@ -749,7 +749,7 @@ Szenario 6: Kartesiche Produkt von zwei Wörterbüchern
 
 **Ausgangssituation**
 
-Aufgrund von Social Engineering/Ermittlungen wissen wir, dass die Person sehr gerne zwischen deutschen Großstädten pendelt. Nachdem andere Versuche nicht zum Erfolge geführt habe, wollen wir jetzt Passworte der Art: "BerlinHamburg" testen.
+Aufgrund von Social-Engineering/Ermittlungen wissen wir, dass die Person sehr gerne zwischen deutschen Großstädten pendelt. Nachdem andere Versuche nicht zum Erfolge geführt habe, wollen wir jetzt Passworte der Art: "BerlinHamburg" testen.
 
 **Angriff**
 
