@@ -673,7 +673,7 @@ Skytale
 - Vor mehr als 2500 Jahren (vermutlich) von den Spartanern entwickelt.
 - Die Verschlüsselung erfolgte mit einen (Holz-)Stab mit einem bestimmten Durchmesser („Schlüssel“) (Skytale).
 
-.. image:: images/skytale.svg
+.. image:: images/Skytale.svg
     :alt: Skytale
     :align: right
 

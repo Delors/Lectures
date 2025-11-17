@@ -505,7 +505,7 @@ Verwendung von Hashes in Python
 
         .. rubric:: Lösung
 
-        .. include:: code/student.py
+        .. include:: code/Student.py
             :number-lines:
             :code: python
             :class: copy-to-clipboard
