@@ -605,7 +605,7 @@ Modellierungsfehler
 
 .. image:: images/srp.svg
     :alt: Quadrat erbt von Rechteck
-    :width: 800px
+    :width: 1000px
     :align: center
     :class: incremental margin-top-2em
 
@@ -614,6 +614,26 @@ Modellierungsfehler
    Der schwerwiegende Modellierungsfehler, der in diesem Beispiel gemacht wurde, ist einfach. Es wurde bei der Modellierung vergessen, dass es bei der Programmierung ggf. nicht nur um mathematische Konzepte geht, sondern auch das Verhalten zu berücksichtigen ist.
 
    In Hinblick auf das Verhalten ist es falsch, dass ein Quadrat von einem Rechteck erbt. Ein Quadrat ist ein Spezialfall eines Rechtecks, bei dem die Seitenlängen gleich sind. Würden wir in unserem Code glauben, dass wir - zum Beispiel - die Breite eines Rechtecks verändern, da der Datentyp :java:`Rectangle` ist, sich hinter dem :java:`Rectangle` ein Objekt vom Typ :java:`Square` verbergen, dann würde sich auch die Höhe des :java:`Rectangle` verändern. Das ist nicht das Verhalten, das wir als Nutzer einer Instanz der Klasse erwarten würden.
+
+
+.. class:: exercises
+
+Klassenraumübung
+-------------------
+
+.. exercise:: Modellierung einer Reise
+
+    - Eine Reise hat einen Start- und einen Zielort sowie ein Start- und ein Enddatum.
+    - Eine Reise kann aus mehreren Teilreisen bestehen.
+    - Eine Teilreise hat einen Start- und einen Zielort sowie ein Start- und ein Enddatum.
+    - Eine Teilreise kann mit verschiedenen Verkehrsmitteln durchgeführt werden: Flugzeug, Zug, Auto oder Schiff.
+    - Jedes Verkehrsmittel hat spezifische Eigenschaften (z. B. Flugnummer für Flugzeuge, Kennzeichen für Autos, etc.).
+    - Eine Reise kann von mehreren Reisenden unternommen werden.
+
+    .. class : : mermaid
+        : :
+            Dies ist ein Test.
+
 
 
 .. class:: exercises
@@ -644,13 +664,13 @@ Modellierungsfehler
 
         .. image:: images/uml-cd-bib.svg
             :alt: Klassendiagramm für eine Bibliotheksverwaltung
-            :width: 600px
             :align: center
 
 
 .. supplemental::
 
-    Sie können die Modellierung auf Papier machen oder zum Beispiel eine (kostenlose) UML-Modellierungssoftware verwenden: z. B. https://app.diagrams.net.
+    Sie können die Modellierung auf Papier machen oder zum Beispiel eine (kostenlose) UML-Modellierungssoftware verwenden: z. B. https://app.diagrams.net. Alternativ kann auch `Mermaid <https://mermaid.js.org>`__ verwendet werden, um die Diagramme deklarativ zu beschreiben.
+
 
 
 .. class:: exercises
@@ -658,9 +678,9 @@ Modellierungsfehler
 Übung
 -------------------
 
-.. exercise:: Modellierung eines einfachen Kursmanagementsystem
+.. exercise:: Modellierung eines einfachen Kursmanagementsystem für Universitäten
 
-    Im Folgenden wird ein Teil eines Kursmanagementsystems für Universitäten beschrieben. Setzen Sie das Modell in UML um.
+    Erstellen Sie ein passendes UML-Diagramm.
 
     .. container:: smaller
 
@@ -683,7 +703,7 @@ Modellierungsfehler
 
     Ihre Aufgabe ist es mathematische Ausdrücke in UML zu modellieren. Zum Beispiel einen Ausdruck wie: :math:`(a + b) \cdot c` oder auch eine Ausdruck wie :math:`\frac{a}{b}` oder auch :math:`\sqrt{a^2 + b^2}`.
 
-    Beachten Sie bei Ihrer Modellierung, dass Sie beliebig komplexe Ausdrücke modellieren können. Die grundlegenden Operationen sollten: Addition, Subtraktion, Multiplikation, Division, Potenzierung, Wurzelziehen und den Logarithmus zur einer beliebigen Basis umfassen (:math:`\log_bx`); das unäre Minus soll auch unterstützt werden (:math:`-x`). Darüber hinaus sollen beliebig viele benannte Variablen (x,y,...) und Konstanten (Zahlen) in den Ausdrücken verwendet werden können.
+    Beachten Sie bei Ihrer Modellierung, dass Sie beliebig komplexe Ausdrücke modellieren können. Die grundlegenden Operationen sollten: Addition, Subtraktion, Multiplikation, Division, Potenzierung, Wurzelziehen und den Logarithmus zur einer beliebigen Basis umfassen (:math:`\log_bx`); das unäre Minus soll auch unterstützt werden (:math:`-x`). Darüber hinaus sollen beliebig viele benannte Variablen (:math:`x`,:math:`y`,...) und Konstanten (Zahlen) in den Ausdrücken verwendet werden können.
 
     Welche Methoden machen auf Ausdrücken immer Sinn und würden Sie dann in Ihrer Modellierung definieren?
 
