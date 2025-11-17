@@ -1440,6 +1440,17 @@ Wörterbuchgenerierung - Evaluation von Werkzeugen
     .. solution::
         :pwd: RockyouPasswOErter
 
+        .. rubric:: Nicht-parallelisiertes/naives ZSH Script
+
+        .. include:: exercise/crack.zsh
+            :code: zsh
+            :number-lines:
+            :class: copy-to-clipboard
+
+        .. rubric:: Passwortliste
+
+        `Liste mit Beispielpasswörtern <exercise/passwords.txt>`__
+
         .. rubric:: Hashes und Passwörter
 
         ::
@@ -1448,13 +1459,6 @@ Wörterbuchgenerierung - Evaluation von Werkzeugen
             748224afd4d37f9c3cae97bf2d38068a2ca0fabfa2f751a391bd2ac958df5403: 13021994sunshine
             6e609749618fa564c83d712f96706337f6a78ef9132c16bea215774c8c1382be: #1badboy
             9d394775682dde10d89eb667f1049312d76bfcfc030a33f2598b117eb30a3966: xCvBnM,
-
-        .. rubric:: Nicht-parallelisiertes/naives ZSH Script
-
-        .. include:: exercise/crack.zsh
-            :code: zsh
-            :number-lines:
-            :class: copy-to-clipboard
 
 
 
