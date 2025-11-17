@@ -406,7 +406,7 @@ Ausgewählte Angriffe, Angriffsmethoden und Bedrohungsszenarien
 - Privilege escalation (unterschieden werden: horizontale und vertikale)
 - Side-Channel attacks (:ger:`Seitenkanalangriffe`)
 - Spoofing (z. B. IP-Spoofing) (:ger:`Vortäuschen`)
-- Social engineering (z. B. Phishing)
+- Social-Engineering (z. B. Phishing)
 
 .. class:: incremental-list
 
@@ -561,7 +561,7 @@ Eigenschaften von Social-Engineering Angriffe
 
 - **sind häufig die Ursache für erfolgreiche Angriffe**
 
-  (Der Hacker Kevin Mitnick war praktisch immer aufgrund von Social Engineering erfolgreich.)
+  (Der Hacker Kevin Mitnick war praktisch immer aufgrund von Social-Engineering erfolgreich.)
 - stellen die größte Bedrohung für die Sicherheit von IT-Systemen dar
 - es wird angenommen, dass die betroffenen Personen es in vielen Fällen nicht merken
 
