@@ -21,8 +21,6 @@
 
 
 
-.. class:: animated-symbol
-
 IT Sicherheit - Vertiefung
 =====================================================
 
@@ -54,7 +52,7 @@ Themen  der Grundlagenschulung
 
 - Cybersecurity
 - Schutzziele der IT Sicherheit
-- Social Engineering Angriffe
+- Social-Engineering Angriffe
 - NIS 2 (ganz kurz)
 - CVSS/CVE/KVE
 - Schwachstellenmanagement

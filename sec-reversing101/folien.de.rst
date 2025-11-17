@@ -120,7 +120,7 @@ Bootrom Lücke
 
   *Entstandener Schaden*: vermutlich gering, da (gerade noch) keine offiziellen Releases (von Debian, Ubuntu, etc.) betroffen waren.
 
-  Dem Angriff ging ein sehr langer Social Engineering Angriff voraus, weswegen mit höherer Wahrscheinlichkeit ein „State-sponsored Actor“ dahintersteckt.
+  Dem Angriff ging ein sehr langer Social-Engineering Angriff voraus, weswegen mit höherer Wahrscheinlichkeit ein „State-sponsored Actor“ dahintersteckt.
 
 
 .. [#] `InnoQ  Podcast <https://www.innoq.com/de/podcast/030-xz-open-ssh-backdoor/transcript/>`__
