@@ -15,7 +15,7 @@ Passwortsicherheit
 
 :Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
 :Kontakt: michael.eichberg@dhbw.de
-:Version: 2.2.2
+:Version: 2.2.3
 
 .. supplemental::
 
@@ -293,7 +293,6 @@ Wie ist die Qualität der folgenden Passwörter zu bewerten in Hinblick darauf, 
 8. ``MuenchenHamburg2023!!!!``
 9. ``hjA223dn4fw"üäKßß k`≤-~ajsdk``
 10. ``Baum Lampe Haus Steak Eis Berg``
-11. ``password123``
 
 
 
@@ -342,7 +341,7 @@ Hashraten in MH/s auf aktueller Hardware
     :class: incremental-table-rows booktabs
     :width: 100%
     :widths: 5, 20, 10, 10, 10, 10, 10
-    :header: **Hashcat Mode (Hashcat 6.2.6)**, **Hash**, **RTX 1080Ti (250 W)**, "**RTX 2080TI (260 W)**", "**RTX 3090 (350 W)**", "**RTX 4090 (450 W)**", "**RTX 5090 (575 W)**"
+    :header: **Hashcat 6.2.6. Mode**, **Hash**, **RTX 1080Ti (250 W)**, "**RTX 2080TI (260 W)**", "**RTX 3090 (350 W)**", "**RTX 4090 (450 W)**", "**RTX 5090 (575 W)**"
 
     25700, Murmur, , , , "643700.0 (643 GH/s)", "819500.0 (819 GH/s)"
     23, Skype, 21330.1 , 27843.1 , 37300.7 , 84654.8, 116900.0
