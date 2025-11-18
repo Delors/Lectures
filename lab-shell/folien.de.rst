@@ -250,7 +250,7 @@ In unixoiden Betriebssystemen gibt es für Kommandozeilentools Insbesondere die 
 
     Manpages exisitieren für praktisch alle Kommandozeilenwerkzeuge.
 
-    Die schnelle Hilfe ist insbesondere bei „neueren“ Programmen nicht immer über :console:`--help` verfügbar.
+    Nicht bei allen Programmen erhält man über über :console:`--help` eine erste Hilfe.
 
     Je nach Anwendung kann das Starten der Anwendung ohne Parameter dazu führen, dass das Programm auf Eingaben wartet (z. B. :console:`cat`).
 
@@ -489,7 +489,7 @@ Umleitung von ``stdin`` in Dateien
 
     .. remark::
 
-        Der ``\`` wird dazu verwendet, lange Shellkommandos über mehrere Zeilen schreiben zu können. Die # leitet ein "End-of-line Comment" ein.
+        Der ``\`` am Zeilenende wird dazu verwendet, lange Shellkommandos über mehrere Zeilen schreiben zu können; # leitet ein "End-of-line Comment" ein.
 
 
 
@@ -823,7 +823,7 @@ Base64 kodierte Werte bestehen nur noch aus gültigen ASCII Zeichen und können 
 
 .. container:: incremental
 
-    **Anwendungsfall**: In vielen Fällen können gehashte Passworte nicht roh (d. h. als Binärdaten) gespeichert werden sondern müssen `Base64 <https://datatracker.ietf.org/doc/html/rfc4648#section-4>`__ (oder vergleichbar) kodiert werden.
+    **Anwendungsfall**: In vielen Fällen können gehashte Passworte nicht roh (d. h. als Binärdaten) gespeichert werden, sondern müssen `Base64 <https://datatracker.ietf.org/doc/html/rfc4648#section-4>`__ (oder vergleichbar) kodiert werden.
 
     .. code:: bash
         :number-lines:
@@ -857,13 +857,12 @@ grep
     .. code:: bash
         :number-lines:
 
-        $ echo "Test123\nmichael@dhbw.de\n345test@dhbw.de\nEnde__" \
+        $ echo "Test123\nmichael@dhbw.de\n345Test@dhbw.de\nEnde__" \
           | grep -Eo "[a-zA-Z]{3,}" | sort -u
         Ende
         Test
         dhbw
         michael
-        test
 
 
 
@@ -875,27 +874,28 @@ sed - Stromeditor
 - Standardform: ``Funktion[Agrumente]``
 - Substitutionen: ``s/Regulärer Ausdruck/Ersatz/[Kennzeichen]``; das Kennzeichen "``g``" z. B. bewirkt, dass jedes Vorkommen ersetzt wird; sonst nur das erste Vorkommen.
 
-.. container:: incremental
+.. deck:: incremental
 
-    **Anwendungsfall**: Löschen des ersten Sonderzeichens in einer Zeile.
+    .. card::
 
-    .. code:: bash
-        :number-lines:
+        **Anwendungsfall**: Löschen des ersten Sonderzeichens in einer Zeile.
 
-        $ echo 'ab_cd!_ef?' | sed -E  's/[^a-zA-Z0-9]//'
-        abcd!_ef?
+        .. code:: bash
+            :number-lines:
 
+            $ echo 'ab_cd!_ef?' | sed -E  's/[^a-zA-Z0-9]//'
+            abcd!_ef?
 
-.. container:: incremental
+    .. card::
 
-    **Anwendungsfall**: Analyse der Struktur eines Leaks durch das Abbilden **aller** Buchstaben auf die Repräsentanten: ``l``\ (lower) ``u``\ (upper) ``d``\ (digits) ``s``\ (special).
+        **Anwendungsfall**: Analyse der Struktur eines Leaks durch das Abbilden **aller** Buchstaben auf die Repräsentanten: ``l``\ (lower) ``u``\ (upper) ``d``\ (digits) ``s``\ (special).
 
-    .. code:: bash
-        :number-lines:
+        .. code:: bash
+            :number-lines:
 
-        $ echo 'aB_c1d!_ef?' |
-          sed -E -e's/[a-z]/l/g' -e's/[A-Z]/u/g' -e's/[0-9]/d/g' -e 's/[^lud]/s/g'
-        lusldlsslls
+            $ echo 'aB_c1d!_ef?' |
+            sed -E -e's/[a-z]/l/g' -e's/[A-Z]/u/g' -e's/[0-9]/d/g' -e 's/[^lud]/s/g'
+            lusldlsslls
 
 .. supplemental::
 
