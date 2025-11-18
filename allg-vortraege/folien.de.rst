@@ -8,12 +8,13 @@
 .. include:: ../docutils.defs
 
 
+
 Vorträge: Hinweise und Bewertungskriterien
 ===================================================
 
 :Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
 :Kontakt: michael.eichberg@dhbw.de, Raum 149B
-:Version: 1.0
+:Version: 1.1
 
 .. supplemental::
 
@@ -82,9 +83,11 @@ Bewertungskriterien
      Details bzw. weitere Aspekte:
 
      - präzise Formulierungen
-     - alles gesagte ist dem Ziel der Arbeit dienlich, keine inhaltlichen Ausschweifungen zu Themen, die dem Ziel nicht dienlich sind, beziehungsweise wo es nicht ersichtlich ist
+     - alles Gesagte ist dem Ziel der Arbeit dienlich, keine inhaltlichen Ausschweifungen zu Themen, die dem Ziel nicht dienlich sind, beziehungsweise wo es nicht ersichtlich ist
      - Grafiken sind aussagekräftig, vollständig erklärt und visuell ansprechend
      - die gezeigten Codeabschnitte haben als ganzes Relevanz; unnötiges wurde entfernt
+     - gibt es ein Titelblatt auf dem der vollständige Name des Vortragenden, der Titel des Vortrags, das Datum und ggf. der Anlass angegeben ist
+     - Kurzvorträge sollten auf explizite Zusammenfassungen und Inhaltsverzeichnisse verzichten
   4. Zeitmanagement
 
      - Wird das vorgegebene Zeitfenster eingehalten?
