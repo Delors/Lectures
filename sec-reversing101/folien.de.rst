@@ -15,7 +15,7 @@ Reverse Engineering 101
 
 :Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
 :Kontakt: michael.eichberg@dhbw.de
-:Version: 1.0.1
+:Version: 1.0.2
 
 .. supplemental::
 
@@ -163,14 +163,15 @@ Gegeben sei eine App zum Ver- und Entschlüsseln von Dateien sowie ein paar vers
 
        - Die ausführbare Datei ggf. mit ``file`` (oder sogar mit ``binwalk``) überprüfen (z. B. wie wurde die Datei kompiliert und für welches Betriebssystem und Architektur)
 
-        Beispiel:
+         .. example::
 
-        .. code:: bash
+            .. code:: bash
+                :number-lines:
 
-            $ file /usr/bin/openssl
-            /usr/bin/openssl: Mach-O universal binary with 2 archi...
-            /usr/bin/openssl (for architecture x86_64):	Mach-O 64-bit
-            /usr/bin/openssl (for architecture arm64e):	Mach-O 64-bit
+                $ file /usr/bin/openssl
+                /usr/bin/openssl: Mach-O universal binary with 2 archi...
+                /usr/bin/openssl (for architecture x86_64):	Mach-O 64-bit
+                /usr/bin/openssl (for architecture arm64e):	Mach-O 64-bit
 
     .. card::
 
@@ -301,13 +302,28 @@ Kommandozeilenwerkzeuge (exemplarisch):
 Decompiler
 -------------
 
-Überführt (maschinenlesbarem) Binärcode *bestmöglich* in Hochsprache (meist C ähnlich oder Java). Eine *kleine* Auswahl von verfügbaren Werkzeugen:
+Überführt (maschinenlesbarem) Binärcode *bestmöglich* in Hochsprache (meist C ähnlich oder Java). 
 
-- Hex-Rays IDAPro (kommerziell)
-- `Ghidra <https://ghidra-sre.org/>`__ (unterstützt fast jede Platform; die Ergebnisse sind sehr unterschiedlich.)
-- JadX (Androids ``.dex`` Format)
-- CFR (Java ``.class`` Dateien)
-- IntelliJ
+
+.. deck::
+
+    .. card::
+
+        Eine *kleine* Auswahl von verfügbaren Werkzeugen:
+
+        - Hex-Rays IDAPro (kommerziell)
+        - `Ghidra <https://ghidra-sre.org/>`__ (unterstützt fast jede Platform; die Ergebnisse sind sehr unterschiedlich.)
+        - JadX (Androids ``.dex`` Format)
+        - CFR (Java ``.class`` Dateien)
+        - IntelliJ
+
+    .. card::
+
+        .. hint::
+
+            Decompiler sind generell sehr hilfreich, aber gleichzeitig auch sehr fehlerbehaftet. Vieles, dass im Binärcode möglich ist, hat auf der Ebene des Sourcecodes keine Entsprechung.
+
+            Zum Beispiel unterstützt Java Bytecode beliebige Sprünge. Solche Code wird aber durch normale Programme, die z. B. in Java, Kotlin, Scala oder Clojure geschrieben wurden, nicht erzeugt. Decompiler kommen deswegen mit solchem Code in der Regel nicht (gut) zurecht.
 
 .. supplemental::
 
@@ -316,13 +332,6 @@ Decompiler
     Die Ergebnisse sind für Analysezwecke zwar häufig ausreichend gut – von funktionierendem Code jedoch ggf. (sehr) weit entfernt.
 
     `decompiler.com <https://decompiler.com>`__ unterstützt eine große Anzahl ausführbaren Dateien.
-
-.. hint::
-    :class: incremental
-
-    Decompiler sind generell sehr hilfreich, aber gleichzeitig auch sehr fehlerbehaftet. Vieles, dass im Binärcode möglich ist, hat auf der Ebene des Sourcecodes keine Entsprechung.
-
-    Zum Beispiel unterstützt Java Bytecode beliebige Sprünge. Solche Code wird aber durch normale Programme, die z. B. in Java, Kotlin, Scala oder Clojure geschrieben wurden, nicht erzeugt. Decompiler kommen mit solchem Code in der Regel nicht (gut) zurecht.
 
 
 
@@ -406,21 +415,21 @@ Obfuscation → für Menschen unverständlich Code
     - Techniken, die dazu dienen das Reverse Engineering zu erschweren.
     - Häufig eingesetzt ...
 
-    .. class:: incremental-list
+      .. class:: incremental-list
 
-    -  von Malware
-    -  Adware (im Kontext von Android ein häufig beobachtetes Phänomen)
-    -  zum Schutz geistigen Eigentums
-    -  für DRM / Durchsetzung von Kopierrechten
-    -  zur Prävention von „Cheating“ (insbesondere im Umfeld von Online Games)
-    -  Wenn das Programm als Source Code vertrieben wird bzw. vertrieben werden muss (JavaScript)
+        -  von Malware
+        -  Adware (im Kontext von Android ein häufig beobachtetes Phänomen)
+        -  zum Schutz geistigen Eigentums
+        -  für DRM / Durchsetzung von Kopierrechten
+        -  zur Prävention von „Cheating“ (insbesondere im Umfeld von Online Games)
+        -  Wenn das Programm als Source Code vertrieben wird bzw. vertrieben werden muss (JavaScript)
 
     - Arbeiten auf Quellcode oder Maschinencode Ebene
     - Grenze zwischen *Code Minimization*, *Code Optimization* und *Code Obfuscation* ist fließend.
     - Mögliche Werkzeuge (ohne Wertung der Qualität/Effektivität):
 
-    - [Java] Proguard / Dexguard
-    - [C/C++] `Star Force <https://www.star-force.com/products/starforce-crypto/>`__
+      - [Java] Proguard / Dexguard
+      - [C/C++] `Star Force <https://www.star-force.com/products/starforce-crypto/>`__
 
 .. supplemental::
 
@@ -507,11 +516,9 @@ Verschlüsselung von Bytecode und Java Class Loader
 - ``ClassLoader`` stehen in einer Hierarchie.
 - ``ClassLoader`` können genutzt werden, um:
 
-  - ein Programm dynamisch zu erweitern (Plug-ins
+  - ein Programm dynamisch zu erweitern (Plug-ins)
   - um Klassen zu laden, die zur Laufzeit generiert wurden
   - um den Bytecode zu manipulieren, bevor er von der JVM ausgeführt wird.
-
-
 
 
 
