@@ -1980,7 +1980,7 @@ Die :java:`if`-Anweisung setzt sich zusammen aus dem Schlüsselwort :java:`if`, 
     .. solution::
         :pwd: BmiBerechnenMitIfElse!
 
-        .. include:: code/BmiBerechnenMitIfElse.java
+        .. include:: code/BMIBerechnenMitIfElse.java
             :code: java
             :number-lines:
             :class: copy-to-clipboard

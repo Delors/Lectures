@@ -16,7 +16,7 @@ Projektkonzeption und -realisierung
 
 :Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
 :Kontakt: michael.eichberg@dhbw-mannheim.de, Raum 149B
-:Version: WWI-23SEB
+:Version: 23SEB
 
 
 
@@ -57,6 +57,37 @@ Entwicklung eines AppStores für Apps zum Deployment auf OpenStack.
 
 
 
+Erster Prototyp der Gruppe Deploo
+----------------------------------
+
+.. deck::
+
+    .. card:: center-content
+  
+        .. image:: screenshots-deploo/Dashboard.webp
+            :class: screenshot 
+            :height: 980px
+        
+    .. card:: center-content
+  
+        .. image:: screenshots-deploo/Courses.webp
+            :class: screenshot 
+            :height: 980px
+  
+    .. card:: center-content
+  
+        .. image:: screenshots-deploo/Templates.webp
+            :class: screenshot 
+            :height: 980px
+          
+    .. card:: center-content
+  
+        .. image:: screenshots-deploo/OpenstackConfig.webp
+            :class: screenshot 
+            :height: 980px
+
+
+
 .. HINWEIS: Gruppenbenotung -> Einzelbenotung nur auf explizitem Wunsch hin
 
 
@@ -83,6 +114,7 @@ Beispielanwendungen
     - Eine vorkonfigurierte Entwicklungsumgebung für die Programmierung
       (z.B. in Java mit Eclipse Theia)
     - Projektmanagementsoftware (z. B. OpenProject)
+    - Ein Datenbankserver mit passenden Accounts (z. B. MySQL, PostgreSQL)
     - ...
 
 
@@ -99,17 +131,18 @@ Anforderungen bzw. Herausforderungen
     .. class:: incremental-list
 
         - Es soll sowohl sowohl vorgefertigte Anwendungen (bzw. Anwendungstemplates)  geben, die einfach deployt werden können, als auch möglich sein dem App Store eigene (private) Anwendungen hinzuzufügen.
-        - beim Deployment von Anwendungen werden die notwendigen Konfigurationsschritte möglichst automatisiert durchgeführt:
+        - Beim Deployment von Anwendungen werden die notwendigen Konfigurationsschritte (möglichst)automatisiert durchgeführt:
 
           - Anlegen der entsprechenden Anzahl an VMS
           - Anlegen von Nutzeraccounts bzw. Gruppenaccounts (ggf. basierend auf CSV Dateien, manuell oder von einem LDAP Server); alternativ Konfiguration von SSH Keys
           - Einrichten von Netzwerkkonfigurationen (ggf. inkl. Erzeugung von Zertifikaten)
-          - Konfiguration von DNS...
+          - Konfiguration von DNS.
+          - ...
 
         - Es ist dem Dozenten ggf. möglich (einzelne) Anwendungen neu zu starten bzw. neu zu konfigurieren (z. B. wenn Anwendungen nicht mehr reagieren weil zum Beispiel im Rahmen des Pentesting die ZielVMs abgestürzt sind).
         - Anwendungen können in unterschiedlichen Versionen vorliegen.
-        - Anwendungen können einfach aktualisiert werden. (Z. B. können die Anwendungen in einem GIT liegen und ein Dozent bzw. Administrator kann darüber Aktualisierungen durchführen.)
-        - jedem Dozenten sind nur begrenzte Ressourcen zur Verfügung gestellt (z. B. nur 10 VMs). Es kann ggf. sinnvoll sein, mehrere Instanzen einer Anwendung in einer VM zu deployen.
+        - Anwendungen können einfach aktualisiert werden (z. B. können die Anwendungen in einem GIT liegen und ein Dozent bzw. Administrator kann darüber Aktualisierungen durchführen).
+        - Jedem Dozenten sind nur begrenzte Ressourcen zur Verfügung gestellt (z. B. nur 10 VMs). Es kann ggf. sinnvoll sein, mehrere Instanzen einer Anwendung in einer VM zu deployen.
 
     .. class:: incremental
 
@@ -117,7 +150,7 @@ Anforderungen bzw. Herausforderungen
 
     .. class:: incremental-list list-with-explanations
 
-        - Der App-Store ist eine eigenständige Webanwendung, der die öffentlichen Schnittstellen von OpenStack verwendet
+        - Der App-Store ist eine eigenständige Webanwendung, der die öffentlichen Schnittstellen von OpenStack verwendet.
 
           (D.h. er ist kein Plug-in.)
         - Der Technologiestack sollte überschaubar sein, damit das Projekt ggf. später weiterentwickelt/übernommen werden kann.
@@ -139,7 +172,7 @@ Anforderungen bzw. Herausforderungen
 
         Die genauen Features bzw. Anforderungen legen wir gemeinsam in den folgenden Wochen im Rahmen von *Requirements Workshops* fest.
 
-        Die oben genannten Anforderungen stellen nur den groben Rahmen dar.
+        Die oben genannten Anforderungen stellen nur den initialen, groben Rahmen dar.
 
 
 
@@ -148,16 +181,19 @@ Anforderungen bzw. Herausforderungen
 Möglicherweise relevante Technologien
 ----------------------------------------
 
+.. note:: 
+  :class: width-55
+
+  Abgesehen von OpenStack als Deploymentziel sind Sie frei in der Wahl der Technologien.
+
 Sowohl für die Entwicklung des App Stores, als auch der Anwendungen (ggf. als Inspiration):
 
-.. note::
-
-    Abgesehen von OpenStack als Deploymentziel sind Sie frei in der Wahl der Technologien.
 
 .. story::
 
     .. class:: incremental-list
 
+    - Docker
     - Kubernetes
     - FluxCD
 
@@ -184,20 +220,41 @@ Sowohl für die Entwicklung des App Stores, als auch der Anwendungen (ggf. als I
 Benotungsgrundlage
 --------------------
 
-- **Projektkonzeption**
+.. deck::
 
-  **Kleingruppenpräsentationen (und Dokumentation) mit insgesamt 50 Punkten.**
+  .. card::
+  
+    .. rubric:: Projektkonzeption
 
-  Aus jeder Gruppe muss jeder in etwa gleich lang präsentieren.
+    Abgaben:
+    
+    - Präsentationen [#]_
+    - Dokumentation mit insgesamt 50 Punkten.
 
-.. class:: incremental
+    .. [#] `Vorträge: Hinweise und Bewertungskriterien <https://delors.github.io/allg-vortraege/folien.de.rst.html?ld-slide-no=1>`__
 
-- **Projektrealisierung**
+  .. card::
 
-  Gegen Ende dieses Semesters Zwischenpräsentation (20% der Projektnote).
+    .. rubric:: Projektrealisierung
 
-  Am Ende des nächsten Semesters ist das Produkt als solches vorzuführen und abzugeben (60% der Projektnote). Weiterhin ist die Dokumentation (10%) abzugeben und eine Webseite und ein Produktvideo (10% der Projektnote) zu erstellen.
+    Abgaben:
+    
+    - gegen Ende dieses Semesters Zwischenpräsentation (15% der Projektnote).
+    - am Ende des nächsten Semesters/des Projekts ist das Produkt als solches vorzuführen und abzugeben (60% der Projektnote). 
+    - die qualitätsgesicherte Nutzer- (4%) und Entwicklerdokumentation (8%) abzugeben
+    - ein kurzes Tutorialvideo (3%)
+    - ein Video für Entwickler, dass die Struktur des Projekts und den Code erklärt und insbesondere auch als Grundlage für die Bewertung der Softwarequalität dient (5%).
+    - ein selbstbezogener Reflexionsbericht (5%)
 
+  .. card::
+
+    .. important::
+      
+      Jedes Team bzw. Teammitglied muss genau protokollieren wer an welchem Teil des Projekts wie viel Arbeit investiert hat. Dies ist notwendig, um am Ende des Projekts eine individuelle Benotung zu ermöglichen. Hierfür werden die Protokolle herangezogen. Stellen Sie sicher, dass jeder im Team in etwa gleich viel Arbeit an entsprechend bewerteten Teilen des Projekts investiert hat.
+      
+      Sollten Sie als Team bewertet werden wollen, so ist dies auch möglich, dann brauche ich jedoch von jedem Teammitglied eine entsprechende individuelle EMail (kein CC!), dass die Benotung auf Teamebene gewünscht ist. In diesem Fall entfällt die individuelle Protokollierung der Arbeitszeiten. 
+      
+      **Der Reflexionsbericht ist jedoch immer individuell zu verfassen und wird immer individuell benotet.**
 
 
 .. class:: new-section
@@ -210,82 +267,94 @@ Projektkonzeption
 1. Projektkonzeption - 19.11.2025
 ----------------------------------------------------------
 
-.. rubric:: Teil 1
-
-- Einführung
+.. rubric:: Teil 1 - Einführung
 
 - `Kurze Wiederholung von Aspekten des Softwareprojektmanagements <https://delors.github.io/se-softwareprojektmanagement/folien.de.rst.html?ld-slide-no=1>`__
 
 - `Aspekte der Projektdurchführung <https://delors.github.io/lab-aspekte-der-projektdurchfuehrung/folien.de.rst.html?ld-slide-no=1>`__
 
+.. rubric:: Teil 2 - Requirements Workshop zur Erhebung der User Stories
 
-.. rubric:: Teil 2 - *Requirements Workshop* zur Erhebung der User Stories
+**Je Gruppe**: ca. 60 Minuten, um User Stories zu erfassen.
 
-Geteiltest `Kanboard <http://141.72.12.83/kanboard-1.2.39>`__
+.. rubric:: Teil 3 - User Story Diskussion
 
-.. Nutzer: admin
-   Passwort: Kanboard!Admin
+**Je Gruppe**: Darstellung und Diskussion der User Stories
 
-**Je Gruppe**: ca. 60 Minuten, um User Stories zu erfassen
+.. attention::
 
-.. rubric:: Teil 3
-
-**Gesamt**: zusammenführen, verfeinern und priorisieren der User Stories
+  Es wird erwartet, dass alle Gruppen basierend auf den Erkenntnissen ggf. Ihre User Stories anpassen/erweitern.
 
 
 
-.. class:: fade-out
-
-1. Projektkonzeption - 24.11.2025 [Optional - Online]
+2. Projektkonzeption - 24.11.2025 [Online]
 -------------------------------------------------------------------------------------------------
 
-:BBB: https://bbb.dhbw.de/mannheim/eic-mn5-hvh-7qd
+Gruppenindividuelle Unterstützung bei der Ausarbeitung der initialen Architektur und des Technologiestacks. Beantwortung von Rückfragen.
+
+:BBB: https://bbb.dhbw.de/rooms/eic-dx8-r7g-ioa/ (Optional)
 
 Je Gruppe:
 
 - Vertraut machen mit dem Technologiestack
-- **Prototyping / Entwicklung eines Spike**
-- Ausarbeitung der initialen Präsentation\ [#]_
-
-.. [#] `(WIP) Vorträge: Hinweise und Bewertungskriterien <https://delors.github.io/allg-vortraege/folien.de.rst.html?ld-slide-no=1>`__
+- Prototyping / Entwicklung eines Spike
+- Ausarbeitung der initialen Präsentation und der Abgabe.
 
 
-
-.. class:: fade-out
 
 3. Projektkonzeption - 01.12.2025
 ----------------------------------
 
-.. rubric:: Teil 1 - „informelle“ Präsentation und Vorführung
+.. scrollable::
 
-(*Je Gruppe max. 45 Minuten inkl. Diskussion/Rückfragen*)
+  .. rubric:: Teil 1 - Präsentation und Vorführung
 
-- [Vorführung] einer "lokalen" OpenStack Umgebung
-- [Präsentation] Architektur
-- [Präsentation] UI Konzept für den App Store
-- [Präsentation] Build-Prozess und CI/CD-Pipeline (für App Store und Anwendungen)
-- [Präsentation] Erfasste nicht-funktionale Anforderungen
-- [Präsentation] Geplante Qualitätsmaßnahmen
+  (*Je Gruppe max. 45 Minuten*)
 
-.. rubric:: Teil 2 - Verfeinerung der User Stories
+  **Vorführung**
 
-**Je Gruppe**: Verfeinerung der User Stories
+  - lokale OpenStack Umgebung
 
-**Gesamt**: Zusammenführung der User Stories
+  **Präsentation**
+
+  .. class:: dd-margin-left-3em
+
+  :Bewertete Bestandteile:
+
+    - [**3 Punkte**] Projektorganisation: Teamname, Teamaufteilung, Zuständigkeiten, Kommunikationswege, Meetingstruktur, Stakeholdermanagement, Hardware-Ressourcen, ...
+    - [**2 Punkte**] gewählte Lizenz(en): für das Endprodukt und die Apps gewählte Lizenz(en) mit Begründung
+    - [**4 Punkte**] Risikomanagement: d. h. identifizierte Risiken und Maßnahmen zur Risikominimierung/-vermeidung
+
+  :Unbewertet Bestandteile:
+
+    - initiale Architektur inkl. Technologiestack für Apps und App Store
+    - UI Konzept für den App Store
+    - Build-Prozess und CI/CD-Pipeline (für App Store und Anwendungen)
+    - Erfasste (nicht-)funktionale Anforderungen
+    - Geplante Qualitätsmaßnahmen
+
+  **Abgaben**
+
+    Es ist ein Dokument (PDF) abzugeben, dass die obigen bewerteten Punkte abdeckt. Ein Abgabe nur der Präsentation ist nicht ausreichend. Geben Sie die Präsentation und das Dokument bis zum 1.12.2025, 7:00Uhr über Moodle ab.
+
+    Aus dem Dokument muss der Teamname und der Hauptansprechpartner für die Projektleitung/Administratoren klar ersichtlich sein. Diese Person muss garantieren, dass sie - sobald Sie die offizielle OpenStack Umgebung nutzen im zweiten Teil des Projekts - auch für Rückfragen zur Verfügung steht. Die Reaktionszeit auf Mails ist max. 24 Stunden an Werktagen.
+
+  .. rubric:: Teil 2 - gemeinsame Verfeinerung der User Stories
 
 
 
-4. Projektkonzeption - 08.12.2025 [Optional - Online]
+4. Projektkonzeption - 08.12.2025 [Online]
 -------------------------------------------------------------------------------------------------
 
-:BBB: https://bbb.dhbw.de/mannheim/eic-mn5-hvh-7qd
+Gruppenindividuelle Unterstützung und Beantwortung von Rückfragen.
+
+:BBB: https://bbb.dhbw.de/rooms/eic-dx8-r7g-ioa/ (Optional)
 
 Je Gruppe:
 
-- Schätzung der User Stories
-- Ausarbeitung von Akzeptanzkriterien für die User Stories
 - Verfeinerung der initialen Architektur
-- Ausarbeitung der Abschlusspräsentation
+- Fortsetzen des Prototypings 
+- Ausarbeitung der Abschlusspräsentation und der Endabgabe.
 
 
 
@@ -294,36 +363,35 @@ Je Gruppe:
 
 .. rubric:: Teil 1 - Abschluss der Konzeptionsphase
 
-**Je Gruppe**: Abschlusspräsentation (max. 60 Minuten inkl. Diskussion/Rückfragen)
+(Je Gruppe max. 45 Minuten inkl. Diskussion/Rückfragen.)
+
+    
+*(Sie können die Reihenfolge der folgenden Punkte bei der Präsentation anpassen.)*
+
+- [4P] Präsentation der Technologien des (aktuellen) Technologiestacks
+- [6P] Architektur des App-Stores mit Hilfe von Standardkonformen UML Diagrammen
+- [4P] UI Konzept (z. B. Wireframes oder Mockups)
+
+- [2P] Build-Prozess und CI/CD-Pipeline für App Store
+- [2P] Build-Prozess und CI/CD-Pipeline für Apps
+
+- [8P] Qualitätsmaßnahmen: Welche sind wann und warum geplant. Wie sieht die konkrete Ausgestaltung aus.
+
+- [3P] nicht-funktionale Anforderungen
+- [8P] funktionale Anforderungen (vollständige User Stories inkl. Akzeptanzkriterien)
+
+Abgaben
+
+- Präsentation (PDF)
+- Vollständige Dokumentation (PDF)
+- Dokumentierte Zeitaufwände
+- [2P] Pro Person: Reflexionsbericht (PDF)
+
 
 .. rubric:: Teil 2 - Übergang zum Projekt
 
-**Je Gruppe**: Ressourcenplanung für nächste Iteration
+**Je Gruppe**: Planung und Präsentation der nächsten Schritte
 
-**Gesamt**: Iterationsplanung: Wahl der ersten User Stories
-
-
-.. supplemental::
-
-    .. admonition:: Notenrelevante Präsentationen (je Gruppe max 50 Punkte)
-
-        - [1P] Projektorganisation (Projektname, Zuständigkeiten)
-        - [1P] gewählte Lizenz(en)
-
-        *(Sie können die Reihenfolge der folgenden Punkte bei der Präsentation anpassen.)*
-
-        - [4P] identifizierte Risiken und Maßnahmen zur Risikominimierung/-vermeidung
-        - [6P] Präsentation der Technologien des (aktuellen) Technologiestacks
-        - [8P] Architektur mit Hilfe von UML Diagrammen
-        - [4P] UI Konzept (z. B. Wireframes oder Mockups)
-        - [3P] nicht-funktionale Anforderungen
-
-        - [3P] Build-Prozess und CI/CD-Pipeline
-
-        - [10P] Qualitätsmaßnahmen: Welche sind wann und warum geplant. Wie sieht die konkrete Ausgestaltung aus.
-
-        - [8P] Akzeptanzkriterien für die User Stories
-        - [2P] Schätzung der User Stories
 
 
 
@@ -331,6 +399,10 @@ Je Gruppe:
 
 Projektrealisierung
 -----------------------
+
+.. attention::
+
+  Alle folgenden Informationen sind vorläufig und können sich noch ändern.
 
 
 1. Projektrealisierung - 23.12.2025
@@ -360,7 +432,7 @@ Projektrealisierung
 2. Projektrealisierung - 12.01.2026 [Optional - Online: 13:15Uhr bis 15:15Uhr und 16:45Uhr bis 18:45Uhr]
 ----------------------------------------------------------------------------------------------------------
 
-:BBB: https://bbb.dhbw.de/mannheim/eic-mn5-hvh-7qd
+:BBB: https://bbb.dhbw.de/rooms/eic-dx8-r7g-ioa/
 
 **Je Gruppe**:
 
@@ -396,7 +468,7 @@ Projektrealisierung
 4. Projektrealisierung - 19.01.2026 [Optional - Online]
 -------------------------------------------------------------------------------------------------
 
-:BBB: https://bbb.dhbw.de/mannheim/eic-mn5-hvh-7qd
+:BBB: https://bbb.dhbw.de/rooms/eic-dx8-r7g-ioa/
 
 **Je Gruppe**:
 
@@ -463,7 +535,7 @@ Projektrealisierung Teil 2
 
 .. container:: exclamation-mark
 
-  Online: https://bbb.dhbw.de/mannheim/eic-mn5-hvh-7qd
+  Online: https://bbb.dhbw.de/rooms/eic-dx8-r7g-ioa/
 
 - Diskussion von Rückfragen
 
