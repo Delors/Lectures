@@ -279,7 +279,7 @@ Teamaufteilung
 
 :red:`Diese Aufteilung muss dokumentiert und gelebt werden. Ein Rollenwechsel ist nur in Ausnahmefällen und mit Absprache möglich.`
 
-Darüber hinaus sind im Verlauf des Projekts folgende Aufgaben frei zu verteilen:
+Darüber hinaus sind im Verlauf des Projekts mind. folgende Aufgaben frei zu verteilen:
 
 - Projektmanagement
 - Infrastrukturmanagement
@@ -330,7 +330,7 @@ Je Gruppe:
 
 - Vertraut machen mit dem Technologiestack
 - Prototyping / Entwicklung eines Spike
-- Ausarbeitung der initialen Präsentation und der Abgabe.
+- Ausarbeitung der initialen Präsentation und der Abgabe
 
 
 
@@ -391,7 +391,7 @@ Je Gruppe:
 
 - Verfeinerung der initialen Architektur
 - Fortsetzen des Prototypings 
-- Ausarbeitung der Abschlusspräsentation und der Endabgabe.
+- Ausarbeitung der Abschlusspräsentation und der Endabgabe
 
 
 
@@ -406,30 +406,31 @@ Je Gruppe:
 
   **Vorführung**
 
-  - [1P] Aktueller Prototyp des App Stores
+  - [**1P**] Aktueller Prototyp des App Stores
 
   **Präsentation**
 
   *(Sie können die Reihenfolge der folgenden Punkte bei der Präsentation anpassen.)*
 
-  - [4P] Präsentation der Technologien des (aktuellen) Technologiestacks
-  - [6P] Architektur des App-Stores (insbesondere mit Hilfe von Standardkonformen UML Diagrammen)
-  - [4P] UI Konzept (z. B. Wireframes oder Mockups)
+  - [**4P**] Präsentation der Technologien des (aktuellen) Technologiestacks inkl. Begründung der Notwendigkeit/Sinnhaftigkeit
+  - [**4P**] Architektur des App-Stores (insbesondere mit Hilfe von Standardkonformen UML Diagrammen)
+  - [**4P**] UI Konzept (z. B. Wireframes oder Mockups)
+  - [**2P**] Entwicklungsmodell für die Apps
 
-  - [2P] Build-Prozess und CI/CD-Pipeline für App Store
-  - [2P] Build-Prozess und CI/CD-Pipeline für Apps
+  - [**2P**] Build-Prozess und CI/CD-Pipeline für App Store
+  - [**2P**] Build-Prozess und CI/CD-Pipeline für Apps
 
-  - [8P] Qualitätsmaßnahmen: Welche sind wann und warum geplant. Wie sieht die konkrete Ausgestaltung aus.
+  - [**8P**] Qualitätsmaßnahmen: Welche sind wann und warum geplant. Wie sieht die konkrete Ausgestaltung aus.
 
-  - [4P] nicht-funktionale Anforderungen
-  - [8P] funktionale Anforderungen (vollständige User Stories inkl. Akzeptanzkriterien)
+  - [**4P**] nicht-funktionale Anforderungen
+  - [**8P**] funktionale Anforderungen (vollständige User Stories inkl. Akzeptanzkriterien)
 
   **Abgaben** (zum 15.12.2025, 7:00Uhr über Moodle)
 
   - Präsentation (PDF)
   - Vollständige Dokumentation (PDF)
   - Dokumentierte Zeitaufwände (PDF)
-  - [2P - pro Person]: Reflexionsbericht mit max. 2 Seiten (PDF): Was lieft gut, was lief schlecht, was sollte im weiteren Verlauf beachtet werden, was habe ich persönlich gelernt, wie werde ich zu einem erfolgreichen Projekt beitragen.
+  - [**2P** je Person]: Reflexionsbericht mit max. 2 Seiten (PDF): Was lieft gut, was lief schlecht, was sollte im weiteren Verlauf beachtet werden, was habe ich persönlich gelernt, wie werde ich zu einem erfolgreichen Projekt beitragen.
 
   .. rubric:: Teil 2 - Übergang zum Projekt
 
