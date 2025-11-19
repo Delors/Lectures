@@ -163,7 +163,7 @@ Anforderungen bzw. Herausforderungen
 
             Eine weitere Übernahme des Projekts ist natürlich nur dann möglich, wenn Sie eine entsprechende Open-Source Lizenz wählen (Informationen finden Sie z.B. auf: https://www.linux-magazin.de/ausgaben/2025/04/software-lizenzen-teil-1/ oder auf https://www.computerweekly.com/de/definition/Softwarelizenz bzw. auf https://opensource.org/).
 
-            **Die Benotung des Projekts ist unabhängig von der Lizenzfrage.**
+            **Die Benotung des Projekts ist unabhängig von der gewählten Lizenz.**
 
         - Wartbarkeit und Qualität sind primäre Ziele.
 
@@ -228,8 +228,9 @@ Benotungsgrundlage
 
     Abgaben:
     
-    - Präsentationen [#]_
-    - Dokumentation mit insgesamt 50 Punkten.
+    - [**1P**] Produktvorführung 
+    - [**47P**] Dokumentationen und Präsentationen [#]_
+    - [**2P** je Person] Selbstbezogener Reflexionsbericht
 
     .. [#] `Vorträge: Hinweise und Bewertungskriterien <https://delors.github.io/allg-vortraege/folien.de.rst.html?ld-slide-no=1>`__
 
@@ -239,25 +240,56 @@ Benotungsgrundlage
 
     Abgaben:
     
-    - gegen Ende dieses Semesters Zwischenpräsentation (15% der Projektnote).
-    - am Ende des nächsten Semesters/des Projekts ist das Produkt als solches vorzuführen und abzugeben (60% der Projektnote). 
-    - die qualitätsgesicherte Nutzer- (4%) und Entwicklerdokumentation (8%) abzugeben
-    - ein kurzes Tutorialvideo (3%)
-    - ein Video für Entwickler, dass die Struktur des Projekts und den Code erklärt und insbesondere auch als Grundlage für die Bewertung der Softwarequalität dient (5%).
-    - ein selbstbezogener Reflexionsbericht (5%)
+    - [**18P**] Zwischenpräsentation und aktualisierte Dokumentation (am Ende des ersten Semesters)
+    - [**78P**] das Produkt (am Ende des nächsten Semesters/des Projekts ist das Produkt als solches vorzuführen und abzugeben)
+    - [**4P**] die qualitätsgesicherte Nutzerdokumentation
+    - [**7P**] die qualitätsgesicherte Entwicklerdokumentation
+    - [**4P**] ein Tutorialvideo
+    - [**5P**] Entwicklervideo (Erklärung der Struktur des Projekts und des Code und insbesondere auch als Grundlage für die Bewertung der Softwarequalität dient)
+    - [**4P** je Person] Selbstbezogener Reflexionsbericht
+
+  .. card::
+
+    .. warning::
+
+      Nicht realistische Planungen bzw. Aussagen, zum Beispiel in Hinblick auf die Qualitätsmaßnahmen oder die Risiken, führen zu Abzügen bei der Benotung.
+
+      Ihre Planung muss die Rahmenbedingungen des Projekts berücksichtigen (z. B. verfügbare Zeit, verfügbare Ressourcen, Vorkenntnisse der Teammitglieder, ...) und realistisch durchführbar sein.
 
   .. card::
 
     .. important::
       
-      Jedes Team bzw. Teammitglied muss genau protokollieren wer an welchem Teil des Projekts wie viel Arbeit investiert hat. Dies ist notwendig, um am Ende des Projekts eine individuelle Benotung zu ermöglichen. Hierfür werden die Protokolle herangezogen. Stellen Sie sicher, dass jeder im Team in etwa gleich viel Arbeit an entsprechend bewerteten Teilen des Projekts investiert hat.
+      Jedes Team bzw. Teammitglied muss protokollieren *an welchem Teil des Projekts wer wie viel zum Ergebnis beigetragen hat*. Dies ist notwendig, um am Ende des Projekts eine individuelle Benotung zu ermöglichen, wenn dies erforderlich ist. Hierfür werden die Protokolle herangezogen. Stellen Sie sicher, dass jeder im Team in etwa gleich viel Arbeit an entsprechend bewerteten Teilen des Projekts investiert hat bzw. investieren konnte.
       
-      Sollten Sie als Team bewertet werden wollen, so ist dies auch möglich, dann brauche ich jedoch von jedem Teammitglied eine entsprechende individuelle EMail (kein CC!), dass die Benotung auf Teamebene gewünscht ist. In diesem Fall entfällt die individuelle Protokollierung der Arbeitszeiten. 
+      Sollten Sie als Team bewertet werden wollen, so ist dies auch möglich, dann brauche ich jedoch von jedem Teammitglied eine entsprechende individuelle Email (kein CC!), dass die Benotung auf Teamebene gewünscht ist. Ich brauche dann pro Veranstaltung (Projektkonzeption und Projektrealisierung) eine Mail. Die individuelle Protokollierung der Arbeitszeiten ist jedoch weiterhin erforderlich.
       
-      **Der Reflexionsbericht ist jedoch immer individuell zu verfassen und wird immer individuell benotet.**
+      *Der Reflexionsbericht ist jedoch immer individuell zu verfassen und wird immer individuell benotet.*
 
 
-.. class:: new-section
+
+Teamaufteilung
+---------------------
+
+3 Gruppen mit je 8 Studierenden mit folgender Aufteilung:
+
+- 2 Entwickler für Apps
+- 3 Entwickler für den App Store (Frontend)
+- 3 Entwickler für den App Store (Backend)
+
+:red:`Diese Aufteilung muss dokumentiert und gelebt werden. Ein Rollenwechsel ist nur in Ausnahmefällen und mit Absprache möglich.`
+
+Darüber hinaus sind im Verlauf des Projekts folgende Aufgaben frei zu verteilen:
+
+- Projektmanagement
+- Infrastrukturmanagement
+- Qualitätsmanagement: Buildautomation, Testmanagement, Testautomatisierung, Codequalität, UX 
+- Dokumentation: Architektur, Entwicklerdokumentation, Nutzerdokumentation
+
+
+
+
+.. class:: new-section transition-scale
 
 Projektkonzeption
 --------------------------
@@ -313,7 +345,7 @@ Je Gruppe:
 
   **Vorführung**
 
-  - lokale OpenStack Umgebung
+  - Lokale OpenStack Umgebung
 
   **Präsentation**
 
@@ -321,9 +353,9 @@ Je Gruppe:
 
   :Bewertete Bestandteile:
 
-    - [**3 Punkte**] Projektorganisation: Teamname, Teamaufteilung, Zuständigkeiten, Kommunikationswege, Meetingstruktur, Stakeholdermanagement, Hardware-Ressourcen, ...
-    - [**2 Punkte**] gewählte Lizenz(en): für das Endprodukt und die Apps gewählte Lizenz(en) mit Begründung
-    - [**4 Punkte**] Risikomanagement: d. h. identifizierte Risiken und Maßnahmen zur Risikominimierung/-vermeidung
+    - [**3P**] Projektorganisation: Teamname, Teamaufteilung, Zuständigkeiten, Kommunikationswege, Meetingstruktur, Stakeholdermanagement, Hardware-Ressourcen, ...
+    - [**2P**] gewählte Lizenz(en): für das Endprodukt und die Apps gewählte Lizenz(en) mit Begründung
+    - [**4P**] Risikomanagement: d. h. identifizierte Risiken und Maßnahmen zur Risikominimierung/-vermeidung
 
   :Unbewertet Bestandteile:
 
@@ -333,11 +365,16 @@ Je Gruppe:
     - Erfasste (nicht-)funktionale Anforderungen
     - Geplante Qualitätsmaßnahmen
 
-  **Abgaben**
+  **Abgaben** (zum 1.12.2025, 7:00Uhr über Moodle)
 
-    Es ist ein Dokument (PDF) abzugeben, dass die obigen bewerteten Punkte abdeckt. Ein Abgabe nur der Präsentation ist nicht ausreichend. Geben Sie die Präsentation und das Dokument bis zum 1.12.2025, 7:00Uhr über Moodle ab.
+  .. class:: list-with-explanations
+
+  - Es ist ein Dokument (PDF) abzugeben, dass *die obigen bewerteten Punkte abdeckt*. 
 
     Aus dem Dokument muss der Teamname und der Hauptansprechpartner für die Projektleitung/Administratoren klar ersichtlich sein. Diese Person muss garantieren, dass sie - sobald Sie die offizielle OpenStack Umgebung nutzen im zweiten Teil des Projekts - auch für Rückfragen zur Verfügung steht. Die Reaktionszeit auf Mails ist max. 24 Stunden an Werktagen.
+  - Die Präsentation (PDF) 
+
+  Die Anzahl der erreichten Punkte ergibt sich aus der Präsentation und dem Dokument zusammen.
 
   .. rubric:: Teil 2 - gemeinsame Verfeinerung der User Stories
 
@@ -361,41 +398,46 @@ Je Gruppe:
 5. Projektkonzeption - 15.12.2025
 --------------------------------------------
 
-.. rubric:: Teil 1 - Abschluss der Konzeptionsphase
+.. scrollable::
 
-(Je Gruppe max. 45 Minuten inkl. Diskussion/Rückfragen.)
+  .. rubric:: Teil 1 - Abschluss der Konzeptionsphase
 
-    
-*(Sie können die Reihenfolge der folgenden Punkte bei der Präsentation anpassen.)*
+  (Je Gruppe max. 45 Minuten zzgl. Diskussion/Rückfragen.)
 
-- [4P] Präsentation der Technologien des (aktuellen) Technologiestacks
-- [6P] Architektur des App-Stores mit Hilfe von Standardkonformen UML Diagrammen
-- [4P] UI Konzept (z. B. Wireframes oder Mockups)
+  **Vorführung**
 
-- [2P] Build-Prozess und CI/CD-Pipeline für App Store
-- [2P] Build-Prozess und CI/CD-Pipeline für Apps
+  - [1P] Aktueller Prototyp des App Stores
 
-- [8P] Qualitätsmaßnahmen: Welche sind wann und warum geplant. Wie sieht die konkrete Ausgestaltung aus.
+  **Präsentation**
 
-- [3P] nicht-funktionale Anforderungen
-- [8P] funktionale Anforderungen (vollständige User Stories inkl. Akzeptanzkriterien)
+  *(Sie können die Reihenfolge der folgenden Punkte bei der Präsentation anpassen.)*
 
-Abgaben
+  - [4P] Präsentation der Technologien des (aktuellen) Technologiestacks
+  - [6P] Architektur des App-Stores (insbesondere mit Hilfe von Standardkonformen UML Diagrammen)
+  - [4P] UI Konzept (z. B. Wireframes oder Mockups)
 
-- Präsentation (PDF)
-- Vollständige Dokumentation (PDF)
-- Dokumentierte Zeitaufwände
-- [2P] Pro Person: Reflexionsbericht (PDF)
+  - [2P] Build-Prozess und CI/CD-Pipeline für App Store
+  - [2P] Build-Prozess und CI/CD-Pipeline für Apps
+
+  - [8P] Qualitätsmaßnahmen: Welche sind wann und warum geplant. Wie sieht die konkrete Ausgestaltung aus.
+
+  - [4P] nicht-funktionale Anforderungen
+  - [8P] funktionale Anforderungen (vollständige User Stories inkl. Akzeptanzkriterien)
+
+  **Abgaben** (zum 15.12.2025, 7:00Uhr über Moodle)
+
+  - Präsentation (PDF)
+  - Vollständige Dokumentation (PDF)
+  - Dokumentierte Zeitaufwände (PDF)
+  - [2P - pro Person]: Reflexionsbericht mit max. 2 Seiten (PDF): Was lieft gut, was lief schlecht, was sollte im weiteren Verlauf beachtet werden, was habe ich persönlich gelernt, wie werde ich zu einem erfolgreichen Projekt beitragen.
+
+  .. rubric:: Teil 2 - Übergang zum Projekt
+
+  **Je Gruppe**: Planung und Präsentation der nächsten Schritte
 
 
-.. rubric:: Teil 2 - Übergang zum Projekt
 
-**Je Gruppe**: Planung und Präsentation der nächsten Schritte
-
-
-
-
-.. class:: new-section transition-fade
+.. class:: new-section transition-scale
 
 Projektrealisierung
 -----------------------
