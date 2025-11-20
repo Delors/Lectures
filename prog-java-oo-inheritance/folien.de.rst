@@ -16,7 +16,7 @@ Objekt-orientierte Programmierung - Vererbung und Polymorphie
 
 :Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
 :Kontakt: michael.eichberg@dhbw.de, Raum 149B
-:Version: 1.0.1
+:Version: 1.0.2
 
 .. supplemental::
 
@@ -48,11 +48,11 @@ Objektorientierte Programmierung mit Java - Vererbung und Polymorphie
 Generalisierung und Spezialisierung
 ------------------------------------------
 
-.. story:: font-size-85
+.. story:: 
 
     .. rubric:: Implementierung einer Raumverwaltung
 
-    .. grid::
+    .. grid:: font-size-85
 
         .. cell::
 
@@ -130,13 +130,17 @@ Generalisierung und Spezialisierung
 Vererbung (:eng:`Inheritance`)
 --------------------------------------------------
 
-.. deck::
+.. deck:: dd-margin-left-3em
 
     .. card::
 
-        :Definition: Erlaubt es, eine Klasse von einer anderen abzuleiten und deren Eigenschaften und Methoden zu erben.
+        .. definition:: 
+            
+            Erlaubt es, eine Klasse von einer anderen abzuleiten und deren Eigenschaften und Methoden zu erben.
+
         :Vorteile:
-            - Wiederverwendbarkeit des Codes
+            - Wiederverwendbarkeit des Codes / keine Code-Duplikation
+            - Erweiterbarkeit
             - Hierarchische Strukturierung
 
     .. card::
@@ -148,7 +152,7 @@ Vererbung (:eng:`Inheritance`)
             .. code:: java
                 :number-lines:
 
-                public class <Subklassenname>
+                class <Subklassenname>
                         extends <Superklassenname> { ...
                 }
 
@@ -175,10 +179,12 @@ Vererbung (:eng:`Inheritance`)
 
         - Eine Unter- bzw. Subklasse erbt alle Attribute und Methoden der Super- bzw. Oberklasse.
 
-        .. class:: incremental-list
+        .. class:: incremental-list list-with-explanations
 
         - Auf :java:`public` und :java:`protected` Attribute und Methoden der Superklassen kann direkt zugegriffen werden.
-        - Auf :java:`private` Attribute und Methoden kann nicht zugegriffen werden (zBei Attributen ggf. nur über entsprechende :java:`get`- und :java:`set`-Methoden)
+        - Auf :java:`private` Attribute und Methoden kann nicht zugegriffen werden 
+        
+          (Bei Attributen häufig indirekt nur über entsprechende öffentliche (:java:`public`) :java:`get`- und :java:`set`-Methoden, welche auch als *Getter* und *Setter* bezeichnet werden.)
         - Zyklen in der Vererbungshierarchie sind nicht erlaubt
 
     .. card::
@@ -187,7 +193,7 @@ Vererbung (:eng:`Inheritance`)
 
         Mittels :java:`super` ist der direkte Zugriff auf die Attribute und Methoden der Superklasse (wenn diese :java:`protected` oder :java:`public` sind) möglich.
 
-        - Dies ist notwendig, wenn die Vaterklasse Attribute bzw. Methoden mit gleichem Namen enthält (ansonsten kann man :java:`super` auch weglassen).
+        - Dies ist notwendig, wenn die Elternklasse Attribute bzw. Methoden mit gleichem Namen enthält (ansonsten kann man :java:`super` auch weglassen).
 
     .. card::
 
@@ -242,10 +248,12 @@ Vererbung (:eng:`Inheritance`)
 
         .. rubric:: Methoden überschreiben
 
-        - Eine Methode in einer Subklasse kann eine Methode in der Superklasse überschreiben.
-        - :red:`Eine Methode, die eine Methode in der Superklasse überschreibt hat den Kontrakt der Superklasse immer einzuhalten!`
+        .. class:: list-with-explanations incremental-list
 
-          D. h. Vorbedingungen können in der Subklassen entspannt und Nachbedingungen verschärft werden, aber nie umgekehrt.
+        - Eine Methode in einer Subklasse kann eine Methode in der Superklasse überschreiben.
+        - :red:`Eine Methode, die eine Methode in der Superklasse überschreibt, hat den Kontrakt der Superklasse immer einzuhalten!`
+
+          D. h. Vorbedingungen können in der Subklassen „entspannt“ und Nachbedingungen „verschärft“ werden, aber nie umgekehrt.
 
     .. card::
 
@@ -257,14 +265,16 @@ Vererbung (:eng:`Inheritance`)
 
         .. attention::
 
-            Java unterstützt nur Einfachvererbung bei Klassen (und Mehrfachvererbung bei Schnittstellen).
+            Java unterstützt nur Einfachvererbung bei Klassen.
+            
+            Mehrfachvererbung wird nur bei Schnittstellen (:java:`interface`) unterstützt. Hier spricht man jedoch in der Regel davon, dass eine Klasse mehrere Schnittstellen *implementiert* und nicht von Mehrfachvererbung.
 
 
 
 Vererbung und Typkonvertierungen/-kompatibilität
 --------------------------------------------------
 
-.. deck::
+.. deck:: dd-margin-left-3em
 
     .. card::
 
@@ -326,9 +336,12 @@ Vererbung und Typkonvertierungen/-kompatibilität
 
         - Typkonvertierung in der Vererbungshierarchie abwärts (Downcast) ist nur durch explizite Typkonvertierung (mit cast-Operator) möglich
 
-          Beispiel - ein Konto kann „möglicherweise“ in ein Sparkonto konvertiert werden:
+          .. example:: 
+            
+            Ein Konto kann „möglicherweise“ in ein Sparkonto konvertiert werden:
 
-          :java:`Sparkonto sk = (Sparkonto) konto`;
+            :java:`Sparkonto sk = (Sparkonto) konto`;
+
         - Nach der Konvertierung sind über die Referenzvariable die Attribute und Methoden des statischen Typs Sparkonto „sichtbar“.
         - Das Objekt selbst wird bei einer expliziten Konvertierung nicht verändert!
         - Die Typkonvertierung ist nicht sicher; es kann ein Fehler bei der Typkonvertierung entstehen. Eine sogenannte *Typecast Exception* ist dann die Folge.
@@ -354,7 +367,7 @@ Vererbung und Typkonvertierungen/-kompatibilität
 
           :Beispiel: :java:`k instanceof Sparkonto` testet ob das Objekt :java:`k` in ein Sparkonto explizit konvertiert werden kann. Hier nur möglich, wenn :java:`k` den dynamischen Typ Sparkonto, Festgeldkonto oder Tagesgeldkonto hat.
 
-          Sollte :java:`k` null sein, dann ist das Ergebnis immer :java:`false`.
+          Sollte :java:`k` :java:`null` sein, dann ist das Ergebnis immer :java:`false`.
 
     .. card::
 
@@ -388,11 +401,14 @@ Vererbung und Typkonvertierungen/-kompatibilität
 Polymorphie (Polymorphism)
 --------------------------------------------------
 
-.. deck::
+.. deck:: dd-margin-left-3em
 
     .. card::
 
-        :Definition: Eine Referenzvariable mit einem statischen Typ kann auf Objekte mit unterschiedlichem dynamischen Typ verweisen.
+        .. definition:: 
+            
+            Eine Referenzvariable mit einem statischen Typ kann auf Objekte mit unterschiedlichem dynamischen Typ verweisen.
+
         :Verwendung:
 
           - Überschreiben von Methoden (:eng:`Runtime Polymorphism``)
@@ -401,49 +417,55 @@ Polymorphie (Polymorphism)
 
     .. card::
 
-        .. code:: java
-            :number-lines:
-            :class: copy-to-clipboard
+        .. example::
 
-            Festgeld k1 = new Festgeld(1, "Matt", 100, 2.5, 36);
-            Sparkonto k2 = new Sparkonto(1, "Michael", 100, 3);
+            Arrays und Polymorphie:
 
-            // Objekte mit unterschiedlichem dynamischen Typ in einem Array
-            Konto[] konten = {k1, k2};
-            for(int i=0; i<konten.length; ++i){
-                println(konten[i]);
-            }
+            .. code:: java
+                :number-lines:
+                :class: copy-to-clipboard
+
+                Festgeld k1 = new Festgeld(1, "Matt", 100, 2.5, 36);
+                Sparkonto k2 = new Sparkonto(1, "Michael", 100, 3);
+
+                // Objekte mit unterschiedlichem dynamischen Typ in einem Array
+                Konto[] konten = {k1, k2};
+                for(int i = 0; i < konten.length; ++i){
+                    println(konten[i]);
+                }
 
     .. card::
 
-        **Beispiel**: Methode `fahren` wird in verschiedenen Klassen unterschiedlich implementiert.
+        .. example:: 
+            
+            Methode :java:`fahren` wird in verschiedenen Klassen unterschiedlich implementiert:
 
-        .. code:: java
-            :number-lines:
-            :class: copy-to-clipboard
+            .. code:: java
+                :number-lines:
+                :class: copy-to-clipboard
 
-            class Auto {
-                void fahren() {
-                    System.out.println("Das Auto fährt.");
+                class Auto {
+                    void fahren() {
+                        System.out.println("Das Auto fährt.");
+                    }
                 }
-            }
 
-            class Elektroauto extends Auto {
-                void fahren() { // Überschreiben der Methode
-                    System.out.println("Das Elektroauto fährt leise.");
+                class Elektroauto extends Auto {
+                    void fahren() { // Überschreiben der Methode
+                        System.out.println("Das Elektroauto fährt leise.");
+                    }
                 }
-            }
 
-        Wir sprechen hier vom überschreiben (:eng:`overriding`) von Methoden.
+            Wir sprechen hier vom überschreiben (:eng:`overriding`) von Methoden.
 
     .. card::
 
         Methoden überschreiben:
 
-        .. class:: list-with-explanations
+        .. class:: incremental-list list-with-explanations
 
         - Deklaration einer Methode mit der gleichen Schnittstelle (Name, Rückgabetyp, Parameter) aber ggf. mit neuem Methodenrumpf.
-        - Eine Methode kann in einer Subklasse eine erhöhte Sichtbarkeit haben, aber keine verringerte!
+        - Eine Methode kann in einer Subklasse eine erhöhte Sichtbarkeit haben, aber keine einschränkendere!
         - Methoden die :java:`final` sind können in Subklassen nicht überschrieben werden.
         - Methoden die :java:`private` sind, sind in Subklassen nicht sichtbar und können daher nicht überschrieben werden.
 
@@ -458,6 +480,8 @@ Polymorphie (Polymorphism)
 
 Zusammenfassung und Vorteile von Objekt-orientierter Programmierung\ [#]_
 --------------------------------------------------------------------------
+
+.. class:: dd-margin-left-3em incremental-list
 
 :Kapselung: Schützt die Daten und kontrolliert den Zugriff.
 :Abstraktion: Vereinfacht die Komplexität des Codes.
@@ -486,6 +510,12 @@ Zusammenfassung und Vorteile von Objekt-orientierter Programmierung\ [#]_
 
 
 
+.. class:: new-section
+
+Fehlerbehandlung in Java
+----------------------------------------------------------
+
+
 Fehlerbehandlung (:eng:`Exceptions`, :ger:`Ausnahmen`)
 --------------------------------------------------------
 
@@ -493,15 +523,16 @@ Fehlerbehandlung (:eng:`Exceptions`, :ger:`Ausnahmen`)
 
     .. card::
 
+        .. class:: list-with-sublists
+
         - Die Fehlerbehandlung in Java erfolgt mittels Exceptions.
-        - Exceptions sind Objekte, die eine Fehlermeldung und den *Stacktrace* enthalten und erben direkt oder indirekt von :java:`Throwable`.
+        - Exceptions sind Objekte, die eine Fehlermeldung und den *Stacktrace* enthalten.
+        - Exceptions erben direkt oder indirekt von :java:`Throwable`.
         - Exceptions können geworfen (mit :java:`throw`) und gefangen (mit :java:`try` und :java:`catch`) werden.
         - Exceptions können *checked* oder *unchecked* sein:
 
-          .. container:: smaller
-
-            - *Checked Exceptions* (Klassen, die von :java:`Throwable` erben aber nicht von :java:`RuntimeException` oder :java:`Error` ) müssen gefangen oder deklariert werden.
-            - *Unchecked Exceptions* (Exceptions, die von :java:`java.lang.RuntimeException` erben) können im Code ignoriert werden; d. h. müssen nicht explizit beachtet werden. Sollten/müssen aber nicht.
+          - *Checked Exceptions* (Klassen, die von :java:`Throwable` erben aber nicht von :java:`RuntimeException` oder :java:`Error` ) müssen gefangen oder deklariert werden.
+          - *Unchecked Exceptions* (Exceptions, die von :java:`java.lang.RuntimeException` erben) können im Code ignoriert werden; d. h. müssen nicht explizit beachtet werden. Sollten/müssen aber nicht.
 
 
     .. card::
@@ -631,7 +662,7 @@ Fehlerbehandlung (:eng:`Exceptions`, :ger:`Ausnahmen`)
 
     Schreiben Sie eine Methode (:java:`countNonEmptyLines`), die die Anzahl der nicht-leeren Zeilen in einem Datenstrom zählt und zurückgibt. Eine Zeile wird als leer angesehen, wenn diese keine Zeichen oder nur Leerzeichen enthält. Verwenden Sie dazu die Klasse :java:`BufferedReader` und die Methode :java:`readLine()` (siehe Beispiel in den Folien). Die Methode soll sich nicht um  Fehlerbehandlung kümmern.
 
-    Schreiben Sie eine :java:`main` Methode, die die Methode verwendet und sich um jegliche Fehlerbehandlung kümmert. D. h. die main Methode soll bei allen Fehlern eine *passende Fehlermeldung* ausgeben und das Programm sauber beenden. Verwenden Sie ggf. ein :java:`try-with-ressource` Statement.
+    Schreiben Sie eine :java:`main` Methode, die die Methode verwendet und sich um jegliche Fehlerbehandlung kümmert. D. h. die :java:`main` Methode soll bei allen Fehlern eine *passende Fehlermeldung* ausgeben und das Programm sauber beenden. Verwenden Sie ggf. ein :java:`try-with-ressource` Statement.
 
     .. hint::
 
@@ -647,6 +678,12 @@ Fehlerbehandlung (:eng:`Exceptions`, :ger:`Ausnahmen`)
 
 
 
+.. class:: new-section
+
+Abstrake Klassen und finale Klassen/Methoden
+----------------------------------------------------------
+
+
 Abstrakte Klassen
 --------------------------------------------------
 
@@ -654,55 +691,64 @@ Abstrakte Klassen
 
     .. card::
 
+        .. class:: incremental-list
+
         - Abstrakte Klassen deklarieren ein Grundgerüst einer Klasse von der keine Objekte erzeugt werden können.
 
         - Abstrakte Klassen können abstrakte Methoden enthalten, die nur die Schnittstelle einer Methode definieren, aber auch implementierte Methoden.
 
         - Abstrakte Klassen und abstrakte Methoden werden durch den Modifizierer :java:`abstract` gekennzeichnet.
 
-        - Nicht abstrakte Subklassen einer abstrakten Klasse müssen ALLE abstrakte Methoden der Vaterklasse implementieren.
+        - Nicht abstrakte Subklassen einer abstrakten Klasse müssen *alle* abstrakten Methoden der Elternklasse implementieren.
 
     .. card::
 
-        :Beispiel: Eine `Form`-Klasse, die über verschiedene Unterklassen wie `Kreis`, `Quadrat` und `Dreieck` abstrahiert. Alle Formen bieten eine Möglichkeit zur Berechnung der Fläche.
+        .. example::
 
-        .. code:: java
-            :class: copy-to-clipboard incremental
+            Eine `Form`-Klasse, die über verschiedene Unterklassen wie `Kreis`, `Quadrat` und `Dreieck` abstrahiert. Alle Formen bieten eine Möglichkeit zur Berechnung der Fläche.
 
-            public abstract class EinfacheForm {
-                protected double hoehe;
-                abstract double berechneFlaeche();
-                double berechneVolumen() {
-                    return berechneFlaeche() * hoehe;
-            }   }
+            .. code:: java
+                :class: copy-to-clipboard incremental
+                :number-lines:
 
-        .. grid::
+                public abstract class EinfacheForm {
+                    protected double hoehe;
+                    abstract double berechneFlaeche();
+                    double berechneVolumen() {
+                        return berechneFlaeche() * hoehe;
+                }   }
 
-            .. cell::
+            .. grid::
 
-                .. code:: java
-                    :class: copy-to-clipboard
+                .. cell::
 
-                    class Kreis extends EinfacheForm {
-                        double r = 0.0;
-                        double berechneFlaeche() {
-                            return Math.PI * r * r;
-                    }   }
+                    .. code:: java
+                        :class: copy-to-clipboard
+                        :number-lines:
 
-            .. cell::
+                        class Kreis extends EinfacheForm {
+                            double r = 0.0;
+                            double berechneFlaeche() {
+                                return Math.PI * r * r;
+                        }   }
 
-                .. code:: java
-                    :class: copy-to-clipboard
+                .. cell::
 
-                    class Quadrat extends EinfacheForm {
-                        double seite = 0.0;
-                        double berechneFlaeche() {
-                            return seite * seite;
-                    }   }
+                    .. code:: java
+                        :class: copy-to-clipboard
+                        :number-lines:
+
+                        class Quadrat extends EinfacheForm {
+                            double seite = 0.0;
+                            double berechneFlaeche() {
+                                return seite * seite;
+                        }   }
 
     .. card::
 
-        .. rubric:: Abstrakte Methoden
+        .. rubric:: Abstrakte Methoden (:java:`abstract`)
+
+        .. class:: incremental-list
 
         - Abstrakte Methoden, dürfen nicht :java:`private`, :java:`final` oder :java:`static` sein.
         - Abstrakte Methoden können von nicht-abstrakten Methoden aufgerufen werden.
@@ -777,70 +823,83 @@ Finale Klassen und Methoden (der :java:`final` Modifikator)
 Übung
 --------------------------------------------------
 
-.. exercise:: Vererbung, Exceptions und Abstrakte Klassen
+.. scrollable::
 
-    Wir möchten mathematische Ausdrücke repräsentieren, um darauf verschiedene Operationen auszuführen.
+    .. exercise:: Vererbung, Exceptions und Abstrakte Klassen
 
-    Erstellen Sie eine abstrakte Klasse :java:`Term`, die eine Methode :java:`int evaluate()` deklariert. Die Methode :java:`evaluate` soll eine *Checked Exception* vom neu anzulegenden Typ :java:`MathException` werfen, wenn die Auswertung nicht möglich ist. Die abstrakte Klasse :java:`Term` hat ein privates Attribut mit der Priorität des Terms (als int Wert), welcher bei der Initialisierung gesetzt wird. Implementieren Sie eine passende finale Methode :java:`int getPriority()` in der abstrakten Klasse. Die Priorität eines Terms ist relevant, wenn man einen Ausdruck ausgeben möchte und die Klammern minimieren möchte.
+        Wir möchten mathematische Ausdrücke repräsentieren, um darauf verschiedene Operationen auszuführen.
 
-    Erstellen Sie dann die Klassen :java:`Number`, :java:`Plus` und :java:`Division`, die von :java:`Term` erben und ggf. Referenzen auf weitere Terme halten. :java:`Number` repräsentiert eine Zahl, :java:`Plus` eine Addition und :java:`Division` eine Division. Implementieren Sie die Methode :java:`int evaluate()` in den Subklassen. Legen Sie für jede Klasse einen passenden Konstruktor an. Werfen Sie ggf. eine :java:`MathException`, wenn die Auswertung nicht möglich ist.
+        Erstellen Sie eine abstrakte Klasse :java:`Term`, die eine Methode :java:`int evaluate()` deklariert. Die Methode :java:`evaluate` soll eine *Checked Exception* vom neu anzulegenden Typ :java:`MathException` werfen, wenn die Auswertung nicht möglich ist. Die abstrakte Klasse :java:`Term` hat ein privates Attribut mit der Priorität des Terms (als :java:`int` Wert), welcher bei der Initialisierung gesetzt wird. Implementieren Sie eine passende finale Methode :java:`int getPriority()` in der abstrakten Klasse. Die Priorität eines Terms ist relevant, wenn man einen Ausdruck ausgeben möchte und die Klammern minimieren möchte.
 
-    Implementieren Sie für jede konkrete Klasse eine Methode :java:`public String toString()`, die den Term als String zurückgibt und Klammerung durchführt *wenn notwendig*. Die Methode :java:`toString()` soll die Klammern so setzen, dass der Ausdruck korrekt ist. D. h. :java:`(1 + 2) * 3` soll als :java:`(1 + 2) * 3` und nicht als :java:`1 + 2 * 3` ausgegeben werden. Weiterhin soll eine Ausdruck wie :java:`1 + 2 + 3` als :java:`1 + 2 + 3` und nicht als :java:`1 + (2 + 3)` oder :java:`(1 + 2) + 3` ausgegeben werden.
+        Erstellen Sie dann die Klassen :java:`Number`, :java:`Plus` und :java:`Division`, die von :java:`Term` erben und ggf. Referenzen auf weitere Terme halten. :java:`Number` repräsentiert eine Zahl, :java:`Plus` eine Addition und :java:`Division` eine Division. Implementieren Sie die Methode :java:`int evaluate()` in den Subklassen. Legen Sie für jede Klasse einen passenden Konstruktor an. Werfen Sie ggf. eine :java:`MathException`, wenn die Auswertung nicht möglich ist.
 
-    Schreiben Sie eine :java:`main` Methode und testen Sie mit verschiedenen Termen die Auswertung und die Ausgabe.
+        Implementieren Sie für jede konkrete Klasse eine Methode :java:`public String toString()`, die den Term als :java:`String` zurückgibt und Klammerung durchführt *wenn notwendig*. Die Methode :java:`toString()` soll die Klammern so setzen, dass der Ausdruck korrekt ist. D. h. :java:`(1 + 2) * 3` soll als :java:`(1 + 2) * 3` und nicht als :java:`1 + 2 * 3` ausgegeben werden. Weiterhin soll eine Ausdruck wie :java:`1 + 2 + 3` als :java:`1 + 2 + 3` und nicht als :java:`1 + (2 + 3)` oder :java:`(1 + 2) + 3` ausgegeben werden.
 
-    Achten Sie darauf, dass im Falle einer Exception eine passende Fehlermeldung ausgegeben wird.
+        Schreiben Sie eine :java:`main` Methode und testen Sie mit verschiedenen Termen die Auswertung und die Ausgabe.
 
-    .. solution::
-        :pwd: AbstraktUndKonkreteKlassen
+        Achten Sie darauf, dass im Falle einer Exception eine passende Fehlermeldung ausgegeben wird.
 
-        .. include:: code/terms/Main.java
-            :code: java
-            :number-lines:
-            :class: copy-to-clipboard
+        .. supplemental::
+
+            .. rubric:: Beispiele für die Verwendung
+
+            .. example::
+                    
+                .. code:: java
+                    :number-lines:
+                    :class: copy-to-clipboard
+
+                    System.out.println(
+                        new Division(
+                            new Number(1),
+                            new Plus(
+                                new Plus(new Number(1),new Number(2)),
+                                new Number(1))));
+
+                Ausgabe:
+
+                ::
+
+                    1 / (1 + 2 + 1)
+
+            .. example::
+
+                .. code:: java
+                    :number-lines:
+                    :class: copy-to-clipboard
+
+                    System.out.println(
+                        new Plus(
+                            new Number(1),
+                            new Division(new Number(2), new Number(1))));
+
+                Ausgabe:
+
+                ::
+
+                    1 + 2 / 1
+
+        .. solution::
+            :pwd: AbstraktUndKonkreteKlassen
+
+            .. include:: code/terms/Main.java
+                :code: Java
+                :number-lines:
+                :class: copy-to-clipboard
 
 
-.. supplemental::
 
-    Beispiele für die Verwendung:
+.. class:: new-section
 
-    .. code:: java
-        :class: copy-to-clipboard
-
-        System.out.println(
-            new Division(
-                new Number(1),
-                new Plus(
-                    new Plus(new Number(1),new Number(2)),
-                    new Number(1))));
-
-    Ausgabe:
-
-    ::
-
-        1 / (1 + 2 + 1)
-
-
-    .. code:: java
-        :class: copy-to-clipboard
-
-        System.out.println(
-            new Plus(
-                new Number(1),
-                new Division(new Number(2), new Number(1))));
-
-    Ausgabe:
-
-    ::
-
-        1 + 2 / 1
+Definition und Verwendung von Schnittstellen in Java
+----------------------------------------------------------
 
 
 
-Schnittstellen (Java :java:`interface`\ s)
+Java :java:`interface`\ s
 --------------------------------------------------------------
 
-.. deck::
+.. deck:: dd-margin-left-3em
 
     .. card::
 
@@ -858,7 +917,7 @@ Schnittstellen (Java :java:`interface`\ s)
 
     .. card::
 
-        :Beispiele:
+        .. example::
 
             .. rubric:: Saeugetier.java
 
@@ -900,7 +959,7 @@ Schnittstellen (Java :java:`interface`\ s)
 
         .. rubric:: Vererbung von Schnittstellen
 
-        Eine Schnittstelle kann von einer oder mehrerer Schnittstelle erben.
+        Eine Schnittstelle kann von einer oder mehrerer Schnittstellen erben.
 
         :Syntax:
 
@@ -911,7 +970,10 @@ Schnittstellen (Java :java:`interface`\ s)
                     //...
                 }
 
-        :Beispiel: Schnittstellenvererbung
+        .. example:: 
+            :class: incremental
+
+            Schnittstellenvererbung
 
             .. include:: code/interfaces/Carnivora.java
                 :code: java
@@ -952,41 +1014,43 @@ Schnittstellen (Java :java:`interface`\ s)
 
     Die abstrakten Klasse :java:`Term` soll die Schnittstelle implementieren. Die Implementierungen der Methoden müssen natürlich in den Subklassen erfolgen.
 
+    
+    .. supplemental::
+
+        .. rubric:: Beispiel
+
+        .. code:: java
+            :number-lines:
+            :class: copy-to-clipboard
+
+            System.out.println(
+                    new Plus(new Number(1), new Number(2))
+                .equal(
+                    null));
+            System.out.println(
+                    new Plus(new Number(1), new Number(2))
+                .equal(
+                    new Plus(new Number(1), new Number(2)))
+            );
+            System.out.println(
+                    new Plus(new Number(2), new Number(1))
+                .equal(
+                    new Plus(new Number(1), new Number(2)))
+            );
+
+        Ausgabe:
+
+        ::
+
+            false
+            true
+            true
+
+
     .. solution::
-        :pwd: ThatsIt
+        :pwd: Alles ist Comparable
 
         .. include:: code/terms/Comparable.java
             :code: java
             :number-lines:
             :class: copy-to-clipboard
-
-.. supplemental::
-
-    .. rubric:: Beispiel
-
-    .. code:: java
-        :class: copy-to-clipboard
-
-        System.out.println(
-                new Plus(new Number(1), new Number(2))
-            .equal(
-                null
-            ));
-        System.out.println(
-                new Plus(new Number(1), new Number(2))
-            .equal(
-                new Plus(new Number(1), new Number(2)))
-        );
-        System.out.println(
-                new Plus(new Number(2), new Number(1))
-            .equal(
-                new Plus(new Number(1), new Number(2)))
-        );
-
-    Ausgabe:
-
-    ::
-
-        false
-        true
-        true

@@ -16,7 +16,7 @@ Kontrollfragen zu einfacher objektorientierter Programmierung
 
 :Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
 :Kontakt: michael.eichberg@dhbw.de, Raum 149B
-:Version: 1.0
+:Version: 1.1
 
 
 
@@ -26,6 +26,8 @@ Grundlagen
 ------------
 
 
+
+.. class:: exercises
 
 Kontrollfragen
 ----------------
@@ -55,7 +57,10 @@ Kontrollfragen
       .. exercise:: Welche Aussage ist korrekt?
          :class: incremental
 
-         :java:`var cs = new Circle[10]`;
+         .. code:: java
+            :number-lines:
+
+            var cs = new Circle[10];
          
          1. Die Anweisung definiert eine Referenzvariable vom Typ :java:`Circle`.
          2. Die Anweisung erzeugt ein Array mit 10 Elementen vom Typ :java:`Circle`.
@@ -64,21 +69,24 @@ Kontrollfragen
          .. solution::
             :pwd: nur-2-stimmt
 
-            - nur die zweite Aussage ist korrekt.
+            Nur die zweite Aussage ist korrekt. (Die Referenzvariable :java:`cs` hat den Typ :java:`Circle[]` und es wird ein Array mit 10 Elementen vom Typ :java:`Circle` erzeugt. Die Elemente des Arrays sind aber noch nicht initialisiert (d.h. sie zeigen auf :java:`null`).
 
-      .. exercise:: Was passiert?
+      .. exercise:: Was passiert wenn main ausgeführt wird?
+         :formatted-title: Was passiert wenn :java:`main` ausgeführt wird?
          :class: incremental
       
          .. rubric:: Circle.java
 
          .. include:: code/circle/Circle.java
             :code: java
+            :number-lines:
             :class: copy-to-clipboard
 
          .. rubric:: Main.java
 
          .. include:: code/circle/Main.java
             :code: java
+            :number-lines:
             :class: copy-to-clipboard
 
          .. solution::
@@ -95,13 +103,13 @@ Kontrollfragen
             var c1 = new Triangle();
             var c2 = new Triangle();
             var c3 = c2; 
-            println(c1 == c2); 
-            println(c2 == c3);
+            IO.println(c1 == c2); 
+            IO.println(c2 == c3);
 
          .. solution::
             :pwd: false-true
 
-            Es wird `false` und `true` ausgegeben.
+            Es wird :java:`false` und :java:`true` ausgegeben.
 
       .. exercise:: Was passiert/wie ist die Ausgabe?
          :class: incremental
@@ -110,12 +118,14 @@ Kontrollfragen
 
          .. include:: code/circle_memoization/Circle.java
             :code: java
+            :number-lines:
             :class: copy-to-clipboard
 
          .. rubric:: Main.java
 
          .. include:: code/circle_memoization/Main.java
             :code: java
+            :number-lines:
             :class: copy-to-clipboard
 
          .. solution::
@@ -134,12 +144,15 @@ Kontrollfragen
             Ja, das ist korrekt.
 
 
-.. class:: new-section
 
+.. class:: new-section
 
 Die Selbstreferenz :java:`this`
 --------------------------------
 
+
+
+.. class:: exercises
 
 Kontrollfragen
 ----------------
@@ -159,6 +172,7 @@ Kontrollfragen
             In statischen Methoden ist :java:`this` nicht verfügbar - es gibt kein Objekt. 
     
       .. exercise:: Welche der folgenden Verwendungen von this sind (ggf. in Konstruktoren und bei dem Vorhandensein entsprechender Attribute) korrekt?
+         :formatted-title: Welche der folgenden Verwendungen von :java:`this` sind (ggf. in Konstruktoren und bei dem Vorhandensein entsprechender Attribute) korrekt?
          :class: incremental
 
          1. :java:`this = new Circle();`

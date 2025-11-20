@@ -43,14 +43,12 @@
         fill-opacity="1"
         stroke-dasharray="none"
         stroke-opacity="1"
+        font-family="Noto Sans Display"
     >
     <rect fill="white" x="139" y="127" width="492" height="367" />
     <g id="Canvas_1_Layer_1">
-      <title>Layer 1</title>
       <g id="Group_2">
-        <title>Class with Attributes</title>
         <g id="Graphic_4">
-          <title>Attributes</title>
           <rect
                         x="282.9043"
                         y="183.14974"
@@ -63,13 +61,10 @@
                     />
           <text transform="translate(288.9043 189.14974)" fill="#515556">
             <tspan
-                            font-family="Noto Sans Display"
                             font-size="13"
                             font-weight="400"
-                            fill="#515556"
                             x="0"
                             y="13"
-                            xml:space="preserve"
                         >nummer: int </tspan>
           </text>
         </g>
@@ -87,13 +82,10 @@
                     />
           <text transform="translate(288.9043 166.07487)" fill="#515556">
             <tspan
-                            font-family="Noto Sans Display"
                             font-size="13"
                             font-weight="700"
-                            fill="#515556"
                             x="40.22998"
                             y="13"
-                            xml:space="preserve"
                         >Konto</tspan>
           </text>
         </g>
@@ -114,18 +106,14 @@
                     />
           <text transform="translate(146.16016 355.6133)" fill="#515556">
             <tspan
-                            font-family="Noto Sans Display"
                             font-size="13"
                             font-weight="400"
-                            fill="#515556"
                             x="0"
                             y="13"
-                            xml:space="preserve"
                         >dispozins: double</tspan>
           </text>
         </g>
         <g id="Graphic_6">
-          <title>Class Name</title>
           <rect
                         x="140.16016"
                         y="325.6133"
@@ -138,21 +126,16 @@
                     />
           <text transform="translate(146.16016 329.6133)" fill="#515556">
             <tspan
-                            font-family="Noto Sans Display"
                             font-size="13"
                             font-weight="700"
-                            fill="#515556"
                             x="27.947266"
                             y="13"
-                            xml:space="preserve"
                         >Girokonto</tspan>
           </text>
         </g>
       </g>
       <g id="Group_8">
-        <title>Class with Attributes</title>
         <g id="Graphic_11">
-          <title>String MItarbeiterer</title>
           <rect
                         x="499.84766"
                         y="468.5586"
@@ -165,18 +148,14 @@
                     />
           <text transform="translate(505.84766 472.5586)" fill="#515556">
             <tspan
-                            font-family="Noto Sans Display"
                             font-size="13"
                             font-weight="400"
-                            fill="#515556"
                             x="0"
                             y="13"
-                            xml:space="preserve"
                         >lauzeit: int</tspan>
           </text>
         </g>
         <g id="Graphic_9">
-          <title>Class Name</title>
           <rect
                         x="499.84766"
                         y="444.5586"
@@ -189,13 +168,11 @@
                     />
           <text transform="translate(505.84766 448.5586)" fill="#515556">
             <tspan
-                            font-family="Noto Sans Display"
                             font-size="13"
                             font-weight="700"
                             fill="#515556"
                             x="32.273193"
                             y="13"
-                            xml:space="preserve"
                         >Festgeld</tspan>
           </text>
         </g>
@@ -216,18 +193,14 @@
                     />
           <text transform="translate(334.71094 472.5586)" fill="#515556">
             <tspan
-                            font-family="Noto Sans Display"
                             font-size="13"
                             font-weight="400"
-                            fill="#515556"
                             x="0"
                             y="13"
-                            xml:space="preserve"
                         >…</tspan>
           </text>
         </g>
         <g id="Graphic_24">
-          <title>Class Name</title>
           <rect
                         x="328.71094"
                         y="444.5586"
@@ -240,21 +213,17 @@
                     />
           <text transform="translate(334.71094 448.5586)" fill="#515556">
             <tspan
-                            font-family="Noto Sans Display"
                             font-size="13"
                             font-weight="700"
                             fill="#515556"
                             x="27.331543"
                             y="13"
-                            xml:space="preserve"
                         >Tagesgeld</tspan>
           </text>
         </g>
       </g>
       <g id="Group_12">
-        <title>Class with Attributes</title>
         <g id="Graphic_14">
-          <title>Attributes</title>
           <rect
                         x="382.26953"
                         y="349.6133"
@@ -267,18 +236,14 @@
                     />
           <text transform="translate(388.26953 357.6133)" fill="#515556">
             <tspan
-                            font-family="Noto Sans Display"
                             font-size="13"
                             font-weight="400"
-                            fill="#515556"
                             x="26.90381"
                             y="13"
-                            xml:space="preserve"
                         >sparzins: double</tspan>
           </text>
         </g>
         <g id="Graphic_13">
-          <title>Class Name</title>
           <rect
                         x="382.26953"
                         y="325.6133"
@@ -291,13 +256,10 @@
                     />
           <text transform="translate(388.26953 329.6133)" fill="#515556">
             <tspan
-                            font-family="Noto Sans Display"
                             font-size="13"
                             font-weight="700"
-                            fill="#515556"
                             x="42.096924"
                             y="13"
-                            xml:space="preserve"
                         >Sparkonto</tspan>
           </text>
         </g>
@@ -345,26 +307,20 @@
       <g id="Graphic_19">
         <text transform="translate(287.9043 211.96094)" fill="#515556">
           <tspan
-                        font-family="Noto Sans Display"
                         font-size="13"
                         font-weight="400"
-                        fill="#515556"
                         x="0"
                         y="13"
-                        xml:space="preserve"
                     >name: String</tspan>
         </text>
       </g>
       <g id="Graphic_20">
         <text transform="translate(287.9043 235.125)" fill="#515556">
           <tspan
-                        font-family="Noto Sans Display"
                         font-size="13"
                         font-weight="400"
-                        fill="#515556"
                         x="0"
                         y="13"
-                        xml:space="preserve"
                     >saldo: BigDecimal</tspan>
         </text>
       </g>

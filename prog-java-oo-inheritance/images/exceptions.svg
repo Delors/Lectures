@@ -14,15 +14,6 @@
   @import url('/LectureDoc2/ext/fonts/ld-fonts.css');
 </style>
 <defs>
-    <filter id="Shadow" filterUnits="userSpaceOnUse" x="-365.7" y="119.9">
-      <feOffset in="SourceAlpha" result="offset" dx="0" dy="2" />
-      <feFlood flood-color="#919191" flood-opacity=".25" result="flood" />
-      <feComposite in="flood" in2="offset" operator="in" result="color" />
-      <feMerge>
-        <feMergeNode in="color" />
-        <feMergeNode in="SourceGraphic" />
-      </feMerge>
-    </filter>
     <marker
             orient="auto"
             overflow="visible"
@@ -45,7 +36,6 @@
       </g>
     </marker>
   </defs>
-  <metadata> Produced by OmniGraffle 8.0\n2024-11-28 20:22:38 +0000</metadata>
   <g
         id="Canvas_1"
         stroke="none"
@@ -54,14 +44,10 @@
         stroke-dasharray="none"
         stroke-opacity="1"
     >
-    <title>Canvas 1</title>
     <rect fill="white" x="-320" y="157" width="457" height="371" />
     <g id="Canvas_1_Layer_1">
-      <title>Layer 1</title>
       <g id="Group_27">
-        <title>Superclass and Subclass Relationship</title>
-        <g id="Graphic_30" filter="url(#Shadow)">
-          <title>Superclass</title>
+        <g id="Graphic_30">
           <rect
                         x="-157.11719"
                         y="158.54688"
@@ -69,30 +55,18 @@
                         height="36"
                         fill="#68bc36"
                     />
-          <rect
-                        x="-157.11719"
-                        y="158.54688"
-                        width="130"
-                        height="36"
-                        stroke="#b9c0c1"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="2"
-                    />
           <text transform="translate(-151.11719 168.54688)" fill="white">
             <tspan
                             font-family="Noto Sans Display"
                             font-size="13"
-                            font-weight="700"
+                            font-weight="400"
                             fill="white"
                             x="26.496826"
                             y="13"
-                            xml:space="preserve"
                         >Throwable</tspan>
           </text>
         </g>
-        <g id="Graphic_29" filter="url(#Shadow)">
-          <title>Subclass</title>
+        <g id="Graphic_29">
           <rect
                         x="-319.3828"
                         y="248.67188"
@@ -104,16 +78,14 @@
             <tspan
                             font-family="Noto Sans Display"
                             font-size="13"
-                            font-weight="700"
+                            font-weight="400"
                             fill="white"
                             x="43.10547"
                             y="13"
-                            xml:space="preserve"
                         >Error</tspan>
           </text>
         </g>
-        <g id="Graphic_31" filter="url(#Shadow)">
-          <title>Subclass</title>
+        <g id="Graphic_31">
           <rect
                         x="-157.11719"
                         y="249.5703"
@@ -121,30 +93,18 @@
                         height="36"
                         fill="#68bc36"
                     />
-          <rect
-                        x="-157.11719"
-                        y="249.5703"
-                        width="130"
-                        height="36"
-                        stroke="#b9c0c1"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="2"
-                    />
           <text transform="translate(-151.11719 259.5703)" fill="white">
             <tspan
                             font-family="Noto Sans Display"
                             font-size="13"
-                            font-weight="700"
+                            font-weight="400"
                             fill="white"
                             x="27.937744"
                             y="13"
-                            xml:space="preserve"
                         >Exception</tspan>
           </text>
         </g>
-        <g id="Graphic_32" filter="url(#Shadow)">
-          <title>Subclass</title>
+        <g id="Graphic_32">
           <rect
                         x="-157.11719"
                         y="340.59375"
@@ -156,15 +116,14 @@
             <tspan
                             font-family="Noto Sans Display"
                             font-size="13"
-                            font-weight="700"
+                            font-weight="400"
                             fill="white"
                             x="1.9377441"
                             y="13"
-                            xml:space="preserve"
                         >RuntimeException</tspan>
           </text>
         </g>
-        <g id="Graphic_34" filter="url(#Shadow)">
+        <g id="Graphic_34">
           <title>Subclass</title>
           <rect
                         x="5.1484375"
@@ -172,30 +131,18 @@
                         width="130"
                         height="36"
                         fill="#68bc36"
-                    />
-          <rect
-                        x="5.1484375"
-                        y="342.4922"
-                        width="130"
-                        height="36"
-                        stroke="#b9c0c1"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="2"
                     />
           <text transform="translate(11.148438 352.4922)" fill="white">
             <tspan
                             font-family="Noto Sans Display"
                             font-size="13"
-                            font-weight="700"
-                            fill="white"
+                            font-weight="400"
                             x="52.5"
                             y="13"
-                            xml:space="preserve"
                         >…</tspan>
           </text>
         </g>
-        <g id="Graphic_45" filter="url(#Shadow)">
+        <g id="Graphic_45">
           <title>Subclass</title>
           <rect
                         x="5.1484375"
@@ -204,30 +151,17 @@
                         height="36"
                         fill="#68bc36"
                     />
-          <rect
-                        x="5.1484375"
-                        y="249.5703"
-                        width="130"
-                        height="36"
-                        stroke="#b9c0c1"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="2"
-                    />
           <text transform="translate(11.148438 259.5703)" fill="white">
             <tspan
                             font-family="Noto Sans Display"
                             font-size="13"
-                            font-weight="700"
-                            fill="white"
+                            font-weight="400"
                             x="52.5"
                             y="13"
-                            xml:space="preserve"
                         >…</tspan>
           </text>
         </g>
-        <g id="Graphic_35" filter="url(#Shadow)">
-          <title>Subclass</title>
+        <g id="Graphic_35">
           <rect
                         x="-157.11719"
                         y="431.6172"
@@ -239,16 +173,13 @@
             <tspan
                             font-family="Noto Sans Display"
                             font-size="13"
-                            font-weight="700"
-                            fill="white"
+                            font-weight="400"
                             x="52.5"
                             y="13"
-                            xml:space="preserve"
                         >…</tspan>
           </text>
         </g>
-        <g id="Graphic_33" filter="url(#Shadow)">
-          <title>Subclass</title>
+        <g id="Graphic_33">
           <rect
                         x="-319.3828"
                         y="340.59375"
@@ -260,11 +191,9 @@
             <tspan
                             font-family="Noto Sans Display"
                             font-size="13"
-                            font-weight="700"
-                            fill="white"
+                            font-weight="400"
                             x="50.69409"
                             y="13"
-                            xml:space="preserve"
                         >….</tspan>
           </text>
         </g>
@@ -274,7 +203,7 @@
                     x1="-92.11719"
                     y1="248.5703"
                     x2="-92.11719"
-                    y2="219.64688"
+                    y2="218"
                     marker-end="url(#UMLInheritance_Marker)"
                     stroke="black"
                     stroke-linecap="round"
@@ -284,7 +213,7 @@
       </g>
       <g id="Line_38">
         <path
-                    d="M -254.3828 248.67188 L -254.3828 237.23438 C -254.3828 235.02524 -252.59195 233.23438 -250.3828 233.23438 L -96.11719 233.23438 C -93.90805 233.23438 -92.11719 231.44351 -92.11719 229.23438 L -92.11719 218.64688"
+                    d="M -254.3828 248.67188 L -254.3828 237.23438 C -254.3828 235.02524 -252.59195 233.23438 -250.3828 233.23438 L -96.11719 233.23438 C -93.90805 233.23438 -92.11719 231.44351 -92.11719 229.23438 L -92.11719 218"
                     marker-end="url(#UMLInheritance_Marker)"
                     stroke="black"
                     stroke-linecap="round"
@@ -310,7 +239,7 @@
                     x1="-92.11719"
                     y1="340.59375"
                     x2="-92.11719"
-                    y2="310.6703"
+                    y2="309.6703"
                     marker-end="url(#UMLInheritance_Marker)"
                     stroke="black"
                     stroke-linecap="round"
@@ -343,7 +272,7 @@
       </g>
       <g id="Line_46">
         <path
-                    d="M 70.14844 249.5703 L 70.14844 238.03906 C 70.14844 235.82992 68.35758 234.03906 66.14844 234.03906 L -88.11719 234.03906 C -90.32633 234.03906 -92.11719 232.2482 -92.11719 230.03906 L -92.11719 218.64688"
+                    d="M 70.14844 248.67188 L 70.14844 237.23438 C 70.14844 235.02524 68.35758 233.23438 66.14844 233.23438 L -88.11719 233.23438 C -90.32633 233.23438 -92.11719 233.23438 -92.11719 229.23438 L -92.11719 218"
                     marker-end="url(#UMLInheritance_Marker)"
                     stroke="black"
                     stroke-linecap="round"
@@ -362,10 +291,10 @@
         <text transform="translate(-66.73647 503.5039)" fill="white">
           <tspan
                         font-family="Noto Sans Display"
-                        font-size="16"
+                        font-size="15"
                         font-weight="400"
                         fill="white"
-                        x="8.449219"
+                        x="15"
                         y="15"
                         xml:space="preserve"
                     >Checked Exceptions</tspan>
@@ -382,10 +311,9 @@
         <text transform="translate(-280.756 503.5039)" fill="white">
           <tspan
                         font-family="Noto Sans Display"
-                        font-size="16"
+                        font-size="15"
                         font-weight="400"
-                        fill="white"
-                        x="0"
+                        x="7"
                         y="15"
                         xml:space="preserve"
                     >Unchecked Exceptions</tspan>

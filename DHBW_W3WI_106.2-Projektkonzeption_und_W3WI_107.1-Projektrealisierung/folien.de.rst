@@ -301,10 +301,6 @@ Projektkonzeption
 
 .. rubric:: Teil 1 - Einführung
 
-- `Kurze Wiederholung von Aspekten des Softwareprojektmanagements <https://delors.github.io/se-softwareprojektmanagement/folien.de.rst.html?ld-slide-no=1>`__
-
-- `Aspekte der Projektdurchführung <https://delors.github.io/lab-aspekte-der-projektdurchfuehrung/folien.de.rst.html?ld-slide-no=1>`__
-
 .. rubric:: Teil 2 - Requirements Workshop zur Erhebung der User Stories
 
 **Je Gruppe**: ca. 60 Minuten, um User Stories zu erfassen.
@@ -322,9 +318,13 @@ Projektkonzeption
 2. Projektkonzeption - 24.11.2025 [Online]
 -------------------------------------------------------------------------------------------------
 
-Gruppenindividuelle Unterstützung bei der Ausarbeitung der initialen Architektur und des Technologiestacks. Beantwortung von Rückfragen.
+:BBB: https://bbb.dhbw.de/rooms/eic-dx8-r7g-ioa/ 
 
-:BBB: https://bbb.dhbw.de/rooms/eic-dx8-r7g-ioa/ (Optional)
+- `Kurze Wiederholung von Aspekten des Softwareprojektmanagements <https://delors.github.io/se-softwareprojektmanagement/folien.de.rst.html?ld-slide-no=1>`__
+
+- `Aspekte der Projektdurchführung <https://delors.github.io/lab-aspekte-der-projektdurchfuehrung/folien.de.rst.html?ld-slide-no=1>`__
+
+Gruppenindividuelle Unterstützung bei der Ausarbeitung der initialen Architektur und des Technologiestacks. Beantwortung von Rückfragen.
 
 Je Gruppe:
 
@@ -371,7 +371,7 @@ Je Gruppe:
 
   - Es ist ein Dokument (PDF) abzugeben, dass *die obigen bewerteten Punkte abdeckt*. 
 
-    Aus dem Dokument muss der Teamname und der Hauptansprechpartner für die Projektleitung/Administratoren klar ersichtlich sein. Diese Person muss garantieren, dass sie - sobald Sie die offizielle OpenStack Umgebung nutzen im zweiten Teil des Projekts - auch für Rückfragen zur Verfügung steht. Die Reaktionszeit auf Mails ist max. 24 Stunden an Werktagen.
+    Aus dem Dokument muss der Teamname und der Hauptansprechpartner für die Projektleitung/Administratoren klar ersichtlich sein. Diese Person muss garantieren, dass sie - sobald Sie die offizielle OpenStack Umgebung nutzen im zweiten Teil des Projekts - auch für Rückfragen zur Verfügung steht. Die Reaktionszeit auf Mails sollte max. 24 Stunden an Werktagen betragen.
   - Die Präsentation (PDF) 
 
   Die Anzahl der erreichten Punkte ergibt sich aus der Präsentation und dem Dokument zusammen.
@@ -425,7 +425,7 @@ Je Gruppe:
   - [**4P**] nicht-funktionale Anforderungen
   - [**8P**] funktionale Anforderungen (vollständige User Stories inkl. Akzeptanzkriterien)
 
-  **Abgaben** (zum 15.12.2025, 7:00Uhr über Moodle)
+  **Abgaben** (:red:`zum 15.12.2025, 7:00Uhr über Moodle`)
 
   - Präsentation (PDF)
   - Vollständige Dokumentation (PDF)
@@ -440,119 +440,129 @@ Je Gruppe:
 
 .. class:: new-section transition-scale
 
-Projektrealisierung
------------------------
-
-.. attention::
-
-  Alle folgenden Informationen sind vorläufig und können sich noch ändern.
-
-
-1. Projektrealisierung - 23.12.2025
+Projektrealisierung - Teil 1 (1. Semester)
 ---------------------------------------------
 
-.. rubric:: Teil 1
-
-**Je Gruppe**:
-
-- Präsentation des aktuellen Projektfortschritts (Umgesetzte User Stories; geplanter und tatsächlicher Aufwand; Entwicklung der Story Points)
-- ggf. Präsentation von unerwarteten Problemen und deren Lösung
-- Präsentation der Ressourcenplanung (zur Verfügung stehende Arbeitszeit pro Person) für nächste Iteration
-
-.. rubric:: Teil 2
-
-**Gesamt**: Iterationsplanung (d. h. Wahl der nächsten User Stories)
-
-.. container:: fade-out
-
-    .. rubric:: Teil 3
-
-    **Je Gruppe (für sich/im Nachgang)**: Aktualisierung der Schätzung der User Stories
 
 
-
-
-2. Projektrealisierung - 12.01.2026 [Optional - Online: 13:15Uhr bis 15:15Uhr und 16:45Uhr bis 18:45Uhr]
-----------------------------------------------------------------------------------------------------------
+1. Projektrealisierung - 18.12.2025 (Online)
+---------------------------------------------
 
 :BBB: https://bbb.dhbw.de/rooms/eic-dx8-r7g-ioa/
 
-**Je Gruppe**:
+- Jede Gruppe:
+  
+  - Kurze Vorstellung des Standes (erledigte User Stories, nächste User Stories)
+  - kurze Vorführung des Entwicklungsstandes
 
-- Entwicklung der Anwendung (d. h. der gewählten User Stories)
-- Durchführung der QS
+- Ggf. (gruppenindividuelle) Unterstützung bei der Projektrealisierung und Beantwortung von Rückfragen.
+
+
+
+2. Projektrealisierung - 12.01.2026 (Online: 13:15 Uhr bis 15:15 Uhr und 16:45 Uhr bis 18:45 Uhr)
+---------------------------------------------------------------------------------------------------
+
+:BBB: https://bbb.dhbw.de/rooms/eic-dx8-r7g-ioa/
+
+- Jede Gruppe: 
+
+  - kurze Vorführung des Entwicklungsstandes
+  - Kurze Vorstellung des Standes (erledigte User Stories, nächste User Stories, Build-Prozess, QS-Stand)
+
+- Ggf. (gruppenindividuelle) Unterstützung bei der Projektrealisierung und Beantwortung von Rückfragen.
 
 
 
 3. Projektrealisierung - 14.01.2026
 -------------------------------------------
 
-.. rubric:: Teil 1
+- Jede Gruppe:
 
-**Je Gruppe**:
+  .. class:: list-with-explanations
 
-- Präsentation des aktuellen Projektfortschritts (Umgesetzte User Stories; geplanter und tatsächlicher Aufwand; Entwicklung der Story Points)
-- ggf. Präsentation von unerwarteten Problemen und deren Lösung
-- Präsentation der Ressourcenplanung (zur Verfügung stehende Arbeitszeit pro Person) für nächste Iteration
+  - Präsentation des aktuellen Projektfortschritts 
+  
+    (Umgesetzte User Stories; geplanter und tatsächlicher Aufwand; Entwicklung der Story Points)
+  - ggf. Präsentation von unerwarteten Problemen und deren Lösung
 
-.. rubric:: Teil 2
+  - Präsentation der Ressourcenplanung (zur Verfügung stehende Arbeitszeit pro Person) für nächste Iteration
 
-**Gesamt**: Iterationsplanung (d. h. Wahl der nächsten User Stories)
+- Besprechen der nächsten Anforderungen/User Stories.
 
-.. container:: fade-out
+- Jede Gruppe:
 
-    .. rubric:: Teil 3
-
-    **Je Gruppe (für sich/im Nachgang)**: Aktualisierung der Schätzung der User Stories
-
-
+  - Aktualisierung und Schätzung des Backlogs
+  - Mitteilung der Ziele für die nächste Iteration
 
 
-4. Projektrealisierung - 19.01.2026 [Optional - Online]
+
+
+4. Projektrealisierung - 19.01.2026 (Online)
 -------------------------------------------------------------------------------------------------
 
 :BBB: https://bbb.dhbw.de/rooms/eic-dx8-r7g-ioa/
 
-**Je Gruppe**:
+- Jede Gruppe: 
 
-- Entwicklung der Anwendung (d. h. der gewählten User Stories)
-- Durchführung der QS
-- Vorbereitung der Zwischenpräsentation
+  - kurze Vorführung des Entwicklungsstandes
+  - Kurze Vorstellung des Standes (erledigte User Stories, nächste User Stories, Build-Prozess, QS-Stand)
+
+- Anforderungen an die Zwischenpräsentation klären.
+- Ggf. (gruppenindividuelle) Unterstützung bei der Projektrealisierung und Beantwortung von Rückfragen.
 
 
-
-.. class:: fade-out
 
 5. Projektrealisierung - 28.01.2026
 --------------------------------------------
 
-**Je Gruppe**: Zwischenpräsentation (ca. 45 - 60 Minuten je Gruppe inkl. Diskussion/Rückfragen)
+.. scrollable::
 
-.. supplemental::
+  .. rubric:: Abschluss der ersten Projektrealisierungsphase
 
-    .. admonition:: Notenrelevante Bestandteile (20% der endgültigen Projektnote)
+  Zwischenpräsentation je Gruppe ca. 45 Minuten inkl. Diskussion/Rückfragen. 18 von 120 Punkten der Endnote ergeben sich aus der Zwischenpräsentation in Verbindung mit den abzugebenden Dokumenten.
 
-        - [8P] [Vorführung] aktueller Projektstand
+  **Vorführung**
 
-          Hier ist eine Livedemo des aktuellen Projektstandes notwendig. Es sollte klar ersichtlich sein, welche Funktionalitäten bereits umgesetzt wurden und welche noch nicht.
+  - [**2P**] Aktueller Prototyp des App Stores
+  - [**2P**] Prototypen zweier Apps (inkl. Darstellung des (zukünftigen) Deploymentprozesses; d.h. es muss noch kein Deployment über den App Store erfolgen.)
 
-        - [5P] [Präsentation] aktuell implementierte Architektur
+  **Präsentation**
 
-          Eine Darstellung der *Architektur* unter Verwendung der UML ist notwendig.  Ggf. ist auch eine Darstellung des Datenbankschemas notwendig.
+  - [**2P**] Aktueller Stand der statischen und dynamischen Architektur des App-Stores: Dies sollte im Wesentlichen über Abbildungen erfolgen und kann ggf. auch die Darstellung eines Datenbankschemas beinhalten.
+  - [**2P**] Technologiestack des App-Stores und der Apps.
+  - [**1P**] Build-Prozess: Es sollen alle Schritte dargelegt werden; inkl. Konfiguration und Zielen. Es muss klar ersichtlich sein, welche Schritte manuell und welche automatisiert durchgeführt werden. Für manuelle Schritte ist ggf. zu begründen warum diese nicht automatisiert wurden bzw. werden können. 
+  - [**1P**] Stand der QS: Es ist insbesondere der Prozess darzustellen, wie auf Probleme (zum Beispiel beim Merge, Tests, ...) reagiert wird.
+  - [**8P**] Backlog: d.h. erledigte User Stories, noch offene User Stories, Schätzung der Story Points, Entwicklung der Velocity während des Projekts.
 
-        - [4P] [Präsentation] Stand der QS
+  **Abgaben** (:red:`zum 26.01.2026, 12:00Uhr über Moodle`)
 
-          Eine präzise Darstellung der bisher durchgeführten QS-Maßnahmen und der Ergebnisse ist notwendig.
-        - [3P] [Präsentation] Build-Prozess (und CI/CD-Pipeline)
+  - Aktualisierte Projektdokumentation (PDF)
 
-          Es sollen alle Schritte genau dargelegt werden. Inkl. Konfiguration und Zielen. Sollten Standardkonfigurationen (zum Beispiel für Codeformatierung) verwendet werden, so ist ein Verweis darauf ausreichend. Es muss klar ersichtlich sein, welche Schritte manuell und welche automatisiert durchgeführt werden. Für manuelle Schritte ist ggf. zu begründen warum diese nicht automatisiert werden können. Insbesondere ist der Prozess darzustellen, wie auf Probleme (zum Beispiel beim Merge, Tests, ...) reagiert wird.
+    Dies umfasst ggf. auch die Teile, die im Rahmen der Projektkonzeption abgegeben wurden. Weiterhin sind folgende Punkte abzudecken:
+
+    - QS Maßnahmen (d.h. wer macht was wann und warum?)
+    - Architektur
+    - Technologiestack
+    - (vorläufige) Installations- und Konfigurationsanleitung
+    
+  - Backlog: mit erledigten und offenen User Stories inkl. Akzeptanzkriterien, Story Points und Entwicklung der Velocity
+
+            
+  **Abgaben** (:red:`zum 28.01.2026, 7:00Uhr über Moodle`)
+
+  - Präsentation (PDF)
+  - dokumentierte Aufwände (PDF)
 
 
 
 .. class:: new-section transition-scale fade-out
 
-Projektrealisierung Teil 2
+Projektrealisierung - Teil 2 (2. Semester)
 --------------------------------------------
+
+.. attention::
+
+  Die folgenden Informationen werden zum Beginn des 2. Semester aktualisiert. Sie sind aktuell als Platzhalter zu verstehen.
 
 
 

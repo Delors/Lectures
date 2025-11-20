@@ -16,7 +16,7 @@ Kontrollfragen: Objekt-orientierte Programmierung - Vererbung und Polymorphie
 
 :Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
 :Kontakt: michael.eichberg@dhbw.de, Raum 149B
-:Version: 1.0.1
+:Version: 1.0.2
 
 
 
@@ -26,16 +26,26 @@ Grundlagen
 ------------
 
 
+
+.. class:: exercises
+
 Kontrollfragen
 ----------------
 
-.. story::
+.. deck::
+
+   .. card::
 
       .. exercise:: Ober- und Unterklassen
-         :class: incremental
 
-         1. :java:`class X extends Y { ... }` - Welches ist die Oberklasse und welches die Unterklasse?
-         2. :java:`class Z extends Y { ... }` - Ist Z eine Unterklasse von X?
+         .. class:: incremental-list
+
+         1. :java:`class X extends Y { ... }` 
+         
+            Welches ist die Oberklasse und welches die Unterklasse?
+         2. :java:`class Z extends Y { ... }`
+         
+            Ist :java:`Z` eine Unterklasse von :java:`X`?
 
          .. solution::
             :pwd: Super, Unter
@@ -43,16 +53,17 @@ Kontrollfragen
             1. X ist die Unterklasse und Y die Oberklasse.
             2. Nein, Z ist keine Unterklasse von X.
 
+   .. card::
+
       .. exercise:: Statischer und dynamischer Typ
-         :class: incremental
 
-         .. container:: two-columns
+         .. grid::
 
-            .. container:: column no-separator
+            .. cell:: width-25
 
                Gegeben sei folgender Code:
 
-            .. container:: column
+            .. cell:: width-75
 
                .. code:: java
                   :number-lines:
@@ -64,7 +75,7 @@ Kontrollfragen
          .. class:: incremental-list
 
          1. Welches ist der statische und welches der dynamische Typ von :java:`y`?
-         2. Kann ich :java:`y` auch mit einem Objekt vom Typ Z initialisieren?
+         2. Kann ich :java:`y` auch mit einem Objekt vom Typ :java:`Z` initialisieren?
          3. Kann ich einer Referenzvariablen :java:`Z z;` ein Objekt vom Typ :java:`X` zuweisen?
          4. Kann ich einer Referenzvariablen :java:`Z z;` ein Objekt vom Typ :java:`Y` zuweisen?
          5. Wie teste ich, wenn ich eine Referenzvariable :java:`Y y;` habe, ob das Objekt, auf das :java:`y` zeigt, vom Typ :java:`X` ist?
@@ -80,10 +91,11 @@ Kontrollfragen
             5. Mit :java:`if (y instanceof X) { ... }`
             6. Es wird `false` von `instanceof` zurückgegeben.
 
-      .. exercise:: Methoden
-         :class: incremental
+   .. card::
 
-         .. class:: incremental
+      .. exercise:: Methoden
+
+         .. class:: incremental-list
 
          1. Wann kann ich Methoden in einer Subklasse überschreiben?
          2. Was ist der Unterschied zwischen *Method Overloading* und *Method Overriding*?
@@ -101,24 +113,26 @@ Kontrollfragen
             4. Mit :java:`super.methodName()`.
             5. Jede Klasse erbt von der Klasse :java:`Object` insbesondere die Methode :java:`toString()`, :java:`equals(Object o)` und :java:`hashCode()`. Diese Methoden können in jeder Klasse überschrieben werden.
 
+   .. card::
+
       .. exercise:: Überschriebene Methoden
-         :class: incremental
+      
+         .. grid::
 
-         .. container:: two-columns
-
-            .. container:: no-separator
+            .. cell:: width-25
 
                Gegeben sei folgender Code:
 
-            .. container:: column width-75
+            .. cell:: width-75
 
                .. code:: java
+                  :number-lines:
 
-                  class Y { void p(){println("Y.p");} }
-                  class X extends Y { void p(){println("X.p");} }
+                  class Y { void p(){IO.println("Y.p");} }
+                  class X extends Y { void p(){IO.println("X.p");} }
                   class Z extends Y {
-                     void p(){println("Z.p");}
-                     void m(){println("Z.m");} }
+                     void p(){IO.println("Z.p");}
+                     void m(){IO.println("Z.m");} }
                   Y x = new X(); Y z = new Z();
 
          .. class:: incremental-list
@@ -136,20 +150,23 @@ Kontrollfragen
             3. Das ist direkt nicht möglich, da die Methode `m` in der Klasse `Z` definiert ist und nicht in der Klasse `Y`. Es ist also ein *Typecast* notwendig: `((Z) z).m()`.
             4. Es wird zur Laufzeit eine `ClassCastException` geworfen, da der dynamische Typ der Referenzvariable :java:`x` :java:`X` ist und die Methode :java:`m` nicht in der Klasse :java:`X` definiert ist.
 
+
+
 .. class:: new-section
 
-Grundlagen
-------------
-
-
 Ausnahmebehandlung
+--------------------
+
+
+Kontrollfragen
 ----------------------
 
-.. story::
+.. deck::
+
+   .. card::
 
       .. exercise:: Ausnahmen
-         :class: incremental
-
+         
          (:eng:`Exceptions`)
 
          .. class:: incremental-list
@@ -159,7 +176,7 @@ Ausnahmebehandlung
          3. Wie fange ich eine Ausnahme?
          4. Was muss ich machen, wenn ich eine *checked Exception* nicht fangen will?
          5. Was ist ein :java:`catch` Block.
-         6. Warum sollte ich :java:`Error`\ s nicht fangen?`
+         6. Warum sollte ich :java:`Error`\ s nicht fangen?
 
          .. solution::
             :pwd: Fehler-hier-und-Fehler-da

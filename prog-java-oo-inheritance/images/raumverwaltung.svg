@@ -43,14 +43,13 @@
         fill-opacity="1"
         stroke-dasharray="none"
         stroke-opacity="1"
+        font-family="Noto Sans Display"
+        font-weight="400"       
     >
     <rect fill="white" x="73" y="133" width="539" height="287" />
     <g id="Canvas_1_Layer_1">
-      <title>Layer 1</title>
       <g id="Group_2">
-        <title>Class with Attributes</title>
         <g id="Graphic_4">
-          <title>Attributes</title>
           <rect
                         x="282.9043"
                         y="158.62035"
@@ -63,18 +62,14 @@
                     />
           <text transform="translate(288.9043 164.62035)" fill="#515556">
             <tspan
-                            font-family="Noto Sans Display"
                             font-size="13"
-                            font-weight="400"
                             fill="#515556"
                             x="0"
                             y="13"
-                            xml:space="preserve"
                         >int zustand</tspan>
           </text>
         </g>
         <g id="Graphic_3">
-          <title>Class Name</title>
           <rect
                         x="282.9043"
                         y="134.32422"
@@ -87,21 +82,17 @@
                     />
           <text transform="translate(288.9043 138.47228)" fill="#515556">
             <tspan
-                            font-family="Noto Sans Display"
                             font-size="13"
                             font-weight="700"
                             fill="#515556"
                             x="53.79834"
                             y="13"
-                            xml:space="preserve"
                         >Raum</tspan>
           </text>
         </g>
       </g>
       <g id="Group_5">
-        <title>Class with Attributes</title>
         <g id="Graphic_7">
-          <title>Attributes</title>
           <rect
                         x="74.90625"
                         y="349.6133"
@@ -114,18 +105,14 @@
                     />
           <text transform="translate(80.90625 355.6133)" fill="#515556">
             <tspan
-                            font-family="Noto Sans Display"
                             font-size="13"
-                            font-weight="400"
                             fill="#515556"
                             x="0"
                             y="13"
-                            xml:space="preserve"
                         >int kapazitaet</tspan>
           </text>
         </g>
         <g id="Graphic_6">
-          <title>Class Name</title>
           <rect
                         x="74.90625"
                         y="325.6133"
@@ -138,21 +125,17 @@
                     />
           <text transform="translate(80.90625 329.6133)" fill="#515556">
             <tspan
-                            font-family="Noto Sans Display"
                             font-size="13"
                             font-weight="700"
                             fill="#515556"
                             x="26.327637"
                             y="13"
-                            xml:space="preserve"
                         >Vorlesungsraum</tspan>
           </text>
         </g>
       </g>
       <g id="Group_8">
-        <title>Class with Attributes</title>
         <g id="Graphic_11">
-          <title>String MItarbeiterer</title>
           <rect
                         x="480.33594"
                         y="349.6133"
@@ -165,18 +148,14 @@
                     />
           <text transform="translate(486.33594 353.6133)" fill="#515556">
             <tspan
-                            font-family="Noto Sans Display"
                             font-size="13"
-                            font-weight="400"
                             fill="#515556"
                             x="0"
                             y="13"
-                            xml:space="preserve"
                         >String mitarbeiter</tspan>
           </text>
         </g>
         <g id="Graphic_9">
-          <title>Class Name</title>
           <rect
                         x="480.33594"
                         y="325.6133"
@@ -189,21 +168,17 @@
                     />
           <text transform="translate(486.33594 329.6133)" fill="#515556">
             <tspan
-                            font-family="Noto Sans Display"
                             font-size="13"
                             font-weight="700"
                             fill="#515556"
                             x="43.83545"
                             y="13"
-                            xml:space="preserve"
                         >Büro</tspan>
           </text>
         </g>
       </g>
       <g id="Group_12">
-        <title>Class with Attributes</title>
         <g id="Graphic_14">
-          <title>Attributes</title>
           <rect
                         x="280.52344"
                         y="349.84245"
@@ -216,18 +191,13 @@
                     />
           <text transform="translate(286.52344 357.6146)" fill="#515556">
             <tspan
-                            font-family="Noto Sans Display"
                             font-size="13"
-                            font-weight="400"
-                            fill="#515556"
                             x="6.2993164"
                             y="13"
-                            xml:space="preserve"
                         >Kuechgeraete[] geraete</tspan>
           </text>
         </g>
         <g id="Graphic_13">
-          <title>Class Name</title>
           <rect
                         x="280.52344"
                         y="325.6133"
@@ -240,13 +210,10 @@
                     />
           <text transform="translate(286.52344 329.72787)" fill="#515556">
             <tspan
-                            font-family="Noto Sans Display"
                             font-size="13"
                             font-weight="700"
-                            fill="#515556"
                             x="44.7312"
                             y="13"
-                            xml:space="preserve"
                         >Teeküche</tspan>
           </text>
         </g>
@@ -287,65 +254,45 @@
       <g id="Graphic_18">
         <text transform="translate(287.9043 232)" fill="#515556">
           <tspan
-                        font-family="Noto Sans Display"
                         font-size="13"
-                        font-weight="400"
-                        fill="#515556"
                         x="0"
                         y="13"
-                        xml:space="preserve"
                     >int raumNummer</tspan>
         </text>
       </g>
       <g id="Graphic_19">
         <text transform="translate(287.9043 186)" fill="#515556">
           <tspan
-                        font-family="Noto Sans Display"
                         font-size="13"
-                        font-weight="400"
-                        fill="#515556"
                         x="0"
                         y="13"
-                        xml:space="preserve"
                     >String gebaeude</tspan>
         </text>
       </g>
       <g id="Graphic_20">
         <text transform="translate(287.9043 209.16406)" fill="#515556">
           <tspan
-                        font-family="Noto Sans Display"
                         font-size="13"
-                        font-weight="400"
-                        fill="#515556"
                         x="0"
                         y="13"
-                        xml:space="preserve"
                     >int ebene</tspan>
         </text>
       </g>
       <g id="Graphic_21">
         <text transform="translate(79.90625 397.1905)" fill="#515556">
           <tspan
-                        font-family="Noto Sans Display"
                         font-size="13"
-                        font-weight="400"
-                        fill="#515556"
                         x="0"
                         y="13"
-                        xml:space="preserve"
                     >Ausstattung[] ausstattung</tspan>
         </text>
       </g>
       <g id="Graphic_22">
         <text transform="translate(79.90625 377.1905)" fill="#515556">
           <tspan
-                        font-family="Noto Sans Display"
                         font-size="13"
-                        font-weight="400"
-                        fill="#515556"
                         x="0"
                         y="13"
-                        xml:space="preserve"
                     >boolean klimatisiert</tspan>
         </text>
       </g>

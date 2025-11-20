@@ -1,7 +1,5 @@
 import static java.lang.System.err;
 
-import java.io.IO;
-
 int countNonEmptyLines(BufferedReader r) throws IOException {
     int count = 0;
     String line;

@@ -37,6 +37,7 @@ Einführung in die Objekt-orientierte Programmierung
         https://github.com/Delors/delors.github.io/issues
 
 
+
 .. class:: new-section transition-move-to-top
 
 Objekt-orientierte Programmierung mit Java
@@ -47,7 +48,9 @@ Objekt-orientierte Programmierung mit Java
 Was ist Objektorientierte Programmierung?
 ------------------------------------------
 
-:Definition: Objektorientierte Programmierung (OOP) ist ein Programmierparadigma, das auf den Konzepten von Klassen und **Objekten** basiert, die Daten und Funktionen kapseln.
+.. definition:: 
+    
+    Objektorientierte Programmierung (OOP) ist ein Programmierparadigma, das auf den Konzepten von Klassen und **Objekten** basiert, die Daten und Funktionen kapseln.
 
 .. class:: incremental
 
