@@ -15,9 +15,15 @@
 Eine erste Einführung in die Sicherheit von verteilten Systemen
 ==========================================================================
 
+.. container:: section-subtitle
+
+    Dieser Foliensatz wurde am 20.November 2025 aufgeteilt in drei separate Foliensätze. Dieser Foliensatz dient nur noch als Übersicht und Verweis auf die neuen Foliensätze.
+
 :Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
 :Kontakt: michael.eichberg@dhbw.de
-:Version: 20.November 2025 (Letzte Version vor Aufspaltung in mehrere Module: 1.3.7)
+:Version: Final 
+
+    Letzte Version vor Aufspaltung: 1.3.7
 
 
 
