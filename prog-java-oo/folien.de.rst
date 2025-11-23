@@ -16,7 +16,7 @@ Einführung in die Objekt-orientierte Programmierung
 
 :Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
 :Kontakt: michael.eichberg@dhbw.de, Raum 149B
-:Version: 1.1.3
+:Version: 1.1.4
 
 .. supplemental::
 
@@ -662,6 +662,13 @@ Kapselung (:eng:`Encapsulation`)\ [#]_
         .. rubric:: Exemplar.java
 
         .. include:: code/bibliothek_v2/Exemplar.java
+            :code: java
+            :number-lines:
+            :class: copy-to-clipboard
+
+        .. rubric:: Main.java
+
+        .. include:: code/bibliothek_v2/Main.java
             :code: java
             :number-lines:
             :class: copy-to-clipboard
