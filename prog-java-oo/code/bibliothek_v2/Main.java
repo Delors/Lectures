@@ -1,8 +1,5 @@
-
 void main(){
     // Test ob alles funktioniert
-    
-    
     
     var bib = new Bibliothek("Coblitzallee","DHBW Mannheim");
     
