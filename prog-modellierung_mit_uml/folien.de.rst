@@ -16,7 +16,7 @@ Einführung und erste Grundlagen der Modellierung mit UML
 
 :Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
 :Kontakt: michael.eichberg@dhbw.de, Raum 149B
-:Version: 1.1
+:Version: 1.1.1
 
 .. supplemental::
 
@@ -703,17 +703,69 @@ Klassenraumübung
 
     Ihre Aufgabe ist es mathematische Ausdrücke in UML zu modellieren. Zum Beispiel einen Ausdruck wie: :math:`(a + b) \cdot c` oder auch eine Ausdruck wie :math:`\frac{a}{b}` oder auch :math:`\sqrt{a^2 + b^2}`.
 
-    Beachten Sie bei Ihrer Modellierung, dass Sie beliebig komplexe Ausdrücke modellieren können. Die grundlegenden Operationen sollten: Addition, Subtraktion, Multiplikation, Division, Potenzierung, Wurzelziehen und den Logarithmus zur einer beliebigen Basis umfassen (:math:`\log_bx`); das unäre Minus soll auch unterstützt werden (:math:`-x`). Darüber hinaus sollen beliebig viele benannte Variablen (:math:`x`,:math:`y`,...) und Konstanten (Zahlen) in den Ausdrücken verwendet werden können.
+    Beachten Sie bei Ihrer Modellierung, dass Sie beliebig komplexe Ausdrücke modellieren können. Die grundlegenden Operationen sollten: Addition, Subtraktion, Multiplikation, Division, Potenzierung, Wurzelziehen und den Logarithmus zur einer beliebigen Basis umfassen (:math:`\log_bx`); das unäre Minus soll auch unterstützt werden (:math:`-x`). Darüber hinaus sollen beliebig viele benannte Variablen (:math:`x`, :math:`y`\,...) und Konstanten (Zahlen) in den Ausdrücken verwendet werden können.
 
     Welche Methoden machen auf Ausdrücken immer Sinn und würden Sie dann in Ihrer Modellierung definieren?
 
     .. solution::
         :pwd: ExprIstDieSuperklasse
 
-        Auch hier gibt es Variationsmöglichkeiten bei der Modellierung. Ein wesentlicher Aspekt, der sich in der Modellierung wiederspiegeln muss, ist, dass es sich um eine rekursive Datenstruktur handelt, die wir modellieren: ein bestimmter Ausdruck besteht aus einem (impliziten) Operator und einer Liste von Operanden, wobei die Operanden wieder Ausdrücken sein können.
+        Auch hier gibt es Variationsmöglichkeiten bei der Modellierung. Ein wesentlicher Aspekt, der sich in der Modellierung wiederspiegeln muss, ist, dass es sich um eine rekursive Datenstruktur handelt, die wir modellieren: ein bestimmter Ausdruck besteht aus einem (impliziten) Operator und einer Liste von Operanden, wobei die Operanden wieder Ausdrücke sein können.
 
         :math:`{x^2 + y^2}` könnte repräsentiert werden als ein Ausdruck vom Typ Addition, der auf zwei Ausdrücke vom Typ Potenz verweist, die wiederum auf Variablen (:math:`x` und :math:`y`) verweisen und zwei konkrete Zahlen (:math:`2`). Im Allgemeinen könnte natürlich auch der Exponent ein Ausdruck sein, der wiederum auf andere Ausdrücke verweist.
 
+        
+        .. image:: images/uml-cd-math_expressions.svg
+            :width: 1800px
+            :height: 1362px
+            :align: center
+ 
+
+        .. code:: text
+
+            classDiagram
+                BinaryOperator <|-- Plus
+                BinaryOperator <|-- Minus
+                BinaryOperator <|-- Division
+                Operator <|-- BinaryOperator
+                Operator <|-- UnaryOperator
+                UnaryOperator <|-- Sqrt
+                class Operator {
+                    +getOperator() String
+                }
+                Term <|-- Operator
+                Term <|-- PrimitiveTerm
+                PrimitiveTerm <|-- Value
+                PrimitiveTerm <|-- Variable
+                class Variable {
+                    name: String
+                }
+                class Term {
+                    +evaluate() double
+                    +toString() String
+                    +priority() int
+                }
+                class BinaryOperator {
+                    left: Term
+                    right: Term
+                    
+                }
+                class UnaryOperator {
+                    term : Term
+                }
+                class Plus{
+                    
+                }
+                class Value {
+                    value: BigDecimal
+                }
+            
+            
+    
+    
+    
+    
+    
 
 
 .. class:: new-section transition-move-to-top
