@@ -714,12 +714,14 @@ Klassenraumübung
 
         :math:`{x^2 + y^2}` könnte repräsentiert werden als ein Ausdruck vom Typ Addition, der auf zwei Ausdrücke vom Typ Potenz verweist, die wiederum auf Variablen (:math:`x` und :math:`y`) verweisen und zwei konkrete Zahlen (:math:`2`). Im Allgemeinen könnte natürlich auch der Exponent ein Ausdruck sein, der wiederum auf andere Ausdrücke verweist.
 
+        .. rubric:: Auszug einer möglichen Lösung
         
         .. image:: images/uml-cd-math_expressions.svg
             :width: 1800px
             :height: 1362px
             :align: center
- 
+
+        **Mermaid-Quelltext der obigen Abbildung**
 
         .. code:: text
 
@@ -763,11 +765,6 @@ Klassenraumübung
             
     
     
-    
-    
-    
-
-
 .. class:: new-section transition-move-to-top
 
 Sequenzdiagramme
