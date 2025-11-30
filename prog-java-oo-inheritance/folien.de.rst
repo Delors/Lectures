@@ -16,7 +16,7 @@ Objekt-orientierte Programmierung - Vererbung und Polymorphie
 
 :Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
 :Kontakt: michael.eichberg@dhbw.de, Raum 149B
-:Version: 1.0.2
+:Version: 1.0.4
 
 .. supplemental::
 
@@ -29,6 +29,13 @@ Objekt-orientierte Programmierung - Vererbung und Polymorphie
     :Kontrollfragen:
 
         .. source:: kontrollfragen.de.rst
+            :path: relative
+            :prefix: https://delors.github.io/
+            :suffix: .html
+
+    :Fehlermeldungen verstehen:
+
+        .. source:: fehlermeldungen_verstehen.de.rst
             :path: relative
             :prefix: https://delors.github.io/
             :suffix: .html
@@ -1010,7 +1017,7 @@ Java :java:`interface`\ s
 
     Erweitern Sie die Lösung der vorhergehenden Übung wie folgt.
 
-    Definieren Sie eine Schnittstelle :java:`Comparable`, die eine Methode :java:`boolean equal(Term t)` deklariert. Implementierungen der Methode sollen den aktuellen Term vergleichen mit dem Übergebenen und :java:`true` zurückgeben, wenn der aktuelle Term (:java:`this`) identisch zum übergebenen Term (:java:`t`) ist. Beachten Sie die das Kommutativgesetz beim Vergleich; d. h. :java:`a + b` ist gleich :java:`b + a`.
+    Definieren Sie eine Schnittstelle :java:`Comparable`, die eine Methode :java:`boolean equal(Term t)` deklariert. Implementierungen der Methode sollen den aktuellen Term vergleichen mit dem Übergebenen und :java:`true` zurückgeben, wenn der aktuelle Term (:java:`this`) identisch zum übergebenen Term (:java:`t`) ist. Beachten Sie das Kommutativgesetz beim Vergleich; d. h. :java:`a + b` ist gleich :java:`b + a`.
 
     Die abstrakten Klasse :java:`Term` soll die Schnittstelle implementieren. Die Implementierungen der Methoden müssen natürlich in den Subklassen erfolgen.
 
@@ -1054,3 +1061,59 @@ Java :java:`interface`\ s
             :code: java
             :number-lines:
             :class: copy-to-clipboard
+
+
+.. class:: exercises transition-move-to-top
+
+Übung
+--------------------------------------------------
+
+.. scrollable::
+
+    .. exercise:: Modellierung einer Autoteile-Hierarchie
+
+        Ein Kfz-Ersatzteilhändler möchte sein Warenwirtschaftssystem um eine objektorientierte Verwaltung von Autoteilen erweitern.
+
+        1. Erstellen Sie eine Klasse :java:`Autoteil`, die die gemeinsamen Attribute und Methoden aller Autoteile definiert. Jedes Autoteil hat eine eindeutige :java:`Teilenummer` (als :java:`String`) und eine :java:`Bezeichnung` (als :java:`String`). Implementieren Sie einen passenden Konstruktor und entsprechende Getter. Achten Sie auf sauberer Kapselung. 
+    
+        2. Es wurde entschieden als primäre Dimension bei der objektorientierten Modellierung die Unterscheidung der Autoteile nach Fahrzeugbaugruppen zu wählen. Diesbezüglich soll zwischen den Teilen, die zum Antrieb, und denen, die zum Fahrwerk gehören, unterschieden werden. Zur Bauteilgruppe des Fahrwerks gehören insbesondere auch die :java:`Reifen`. Reifen sollen immer einen Reifenluftdruck und eine maximale Laufleistung besitzen. Bilden Sie diese Beziehungen durch eine Vererbungshierarchie ab. Achten Sie auch auf eine angemessene Bezeichnung der Klassen.
+
+        3. Orthogonal zur Vererbungshierarchie sollen die Autoteile nach der Sicherheitsrelevanz und der Einstufung als Verschleißteil unterschieden werden. Erweitern Sie Ihre Klassenhierarchie durch passende Schnittstellen. Verschleißteile sind insbesondere :java:`Reifen`. Für Verschleißteile soll die Anzahl der Kilometer, die das Teil mindestens halten sollte, abfragbar sein. Bei sicherheitsrelevanten Teilen soll die Information über die zugrundeliegende Norm abrufbar sein.
+
+        .. solution::
+            :pwd: AutoteileModellierung
+
+            .. include:: code/autoteile/Autoteil.java
+                :code: java
+                :number-lines:
+                :class: copy-to-clipboard
+
+            .. include:: code/autoteile/Fahrwerksbauteil.java
+                :code: java
+                :number-lines:
+                :class: copy-to-clipboard
+
+            .. include:: code/autoteile/Reifen.java
+                :code: java
+                :number-lines:
+                :class: copy-to-clipboard
+
+            .. include:: code/autoteile/Antriebsteil.java
+                :code: java
+                :number-lines:
+                :class: copy-to-clipboard
+
+            .. include:: code/autoteile/Sicherheitsinformation.java
+                :code: java
+                :number-lines:
+                :class: copy-to-clipboard
+
+            .. include:: code/autoteile/Verschleißteil.java
+                :code: java
+                :number-lines:
+                :class: copy-to-clipboard
+
+            .. include:: code/autoteile/Demo.java
+                :code: java
+                :number-lines:
+                :class: copy-to-clipboard

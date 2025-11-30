@@ -5,7 +5,7 @@ class MathException extends Exception { // checked exception
 }
 
 interface Comparable {
-    boolean equal(Term o);
+    boolean isEqual(Term o);
 }
 
 abstract class Term implements Comparable {
@@ -38,11 +38,11 @@ class Plus extends Term {
         return term1.evaluate() + term2.evaluate();
     }
 
-    public boolean equal(Term o) {
+    public boolean isEqual(Term o) {
         if (o instanceof Plus) {
             Plus p = (Plus) o;
-            return term1.equal(p.term1) && term2.equal(p.term2) ||
-                    term2.equal(p.term1) && term1.equal(p.term2);
+            return term1.isEqual(p.term1) && term2.isEqual(p.term2) ||
+                    term2.isEqual(p.term1) && term1.isEqual(p.term2);
         }
         return false;
     }
@@ -69,10 +69,10 @@ class Division extends Term {
         return term1.evaluate() / term2.evaluate();
     }
 
-    public boolean equal(Term o) {
+    public boolean isEqual(Term o) {
         if (o instanceof Division) {
             Division d = (Division) o;
-            return this.term1.equal(d.term1) && term2.equal(d.term2);
+            return this.term1.isEqual(d.term1) && term2.isEqual(d.term2);
         }
         return false;
     }
@@ -103,7 +103,7 @@ class Number extends Term {
         return value;
     }
 
-    public boolean equal(Term o) {
+    public boolean isEqual(Term o) {
         return o instanceof Number && value == ((Number) o).value;
         //if (o instanceof Number) {
         //    Number n = (Number) o;
@@ -120,11 +120,11 @@ class Number extends Term {
 void main(String[] args) {
     try {
         final var t1 = new Plus(new Number(1), new Number(2));
-        IO.println(t1.equal(null));
-        IO.println(t1.equal(new Plus(new Number(1), new Number(2))));
+        IO.println(t1.isEqual(null));
+        IO.println(t1.isEqual(new Plus(new Number(1), new Number(2))));
         IO.println(
                 new Plus(new Number(2), new Number(1))
-                        .equal(
+                        .isEqual(
                                 new Plus(new Number(1), new Number(2))));
 
         IO.println(new Division(new Number(1), new Division(new Number(2), new Number(1))));

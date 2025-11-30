@@ -15,7 +15,7 @@
 :Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
 :Kontakt: michael.eichberg@dhbw-mannheim.de, Raum 149B
 :Unterlagen: Moodle
-:Version: 23SEB
+:Version: 23SEB (Rev 2025-11-27)
 
 
 
@@ -74,6 +74,13 @@ Inhalte
 2. Semester
 
    Pentesting von Webanwendungen
+
+
+
+.. class:: new-section
+
+Erstes Semester: Passwortwiederherstellung und Reverse Engineering
+----------------------------------------------------------------------
 
 
 
@@ -254,12 +261,19 @@ Themenvergabe
 
 
 
+Übungsaufgaben
+--------------------
+
+#. `Passwortwiederherstellung - Aufgaben <passwort_wiederherstellung.de.rst.html>`__
+
+#. `Reverse Engineering - Aufgaben <reverse_engineering.de.rst.html>`__
+
 
 
 .. class:: new-section
 
-2. Semester: Pentesting von Webanwendungen
----------------------------------------------
+Zweites Semester: Pentesting von Webanwendungen
+--------------------------------------------------
 
 .. container:: section-subtitle
 
