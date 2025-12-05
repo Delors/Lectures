@@ -91,43 +91,6 @@ Bootrom Lücke
 
 
 
-
-.. class:: smaller-slide-title
-
-`CVE-2024-3094 <https://nvd.nist.gov/vuln/detail/CVE-2024-3094>`__ - ``liblzma`` Backdoor in OpenSSH\ [#]_\ [#]_
--------------------------------------------------------------------------------------------------------------------------------------------------
-
-.. class:: incremental-list column-list dhbw list-with-details
-
-- Ziel
-
-  Das Verhalten von SSH bei der Authentifikation so zu verändern, dass es dem Angreifer Zugang zum System erlaubt.
-
-  Zur Absicherung der Backdoor ist diese über ein Zertifikat abgesichert.
-
-- Wie verbreitet?
-
-  Die Bibliothek ``liblzma`` wurde so angepasst, dass diese eine Backdoor in SSH einbaut.
-
-  Der Schadcode ist nur in den Tarballs zu finden - nicht im SourceCode im GIT. Der eigentliche Schadcode wurde versteckt in *Testfixtures*.
-
-  Der Code wurde so entworfen, dass bekannte Werkzeuge (*Valgrind*) keine Probleme erkennen.
-
-  Die Bibliothek wurde nur in bestimmten Situationen von OpenSSH verwendet.
-- Bewertung
-
-  *CVSS Base Score*: 10.0 (kritisch)
-
-  *Entstandener Schaden*: vermutlich gering, da (gerade noch) keine offiziellen Releases (von Debian, Ubuntu, etc.) betroffen waren.
-
-  Dem Angriff ging ein sehr langer Social-Engineering Angriff voraus, weswegen mit höherer Wahrscheinlichkeit ein „State-sponsored Actor“ dahintersteckt.
-
-
-.. [#] `InnoQ  Podcast <https://www.innoq.com/de/podcast/030-xz-open-ssh-backdoor/transcript/>`__
-.. [#] `SSH Blob <https://www.ssh.com/blog/a-recap-of-the-openssh-and-xz-liblzma-incident#:~:text=The%20harsh%20fact%20is%20that,by%20one%20of%20its%20maintainers>`__
-
-
-
 Backdoor in 16 D-Link Routern\ [#]_
 --------------------------------------
 
