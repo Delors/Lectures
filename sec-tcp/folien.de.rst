@@ -692,7 +692,19 @@ Distributed-Denial-of-Service-Angriffe (DDoS)
 
             -- `03.09.2025 - Heise.de: Überlastungsattacke erreicht 11,5 TBit pro Sekunde <https://www.heise.de/news/Ueberlastungsattacke-erreicht-11-5-TBit-pro-Sekunde-10630141.html>`__
 
+    .. card::
 
+        .. epigraph::
+
+            **Microsoft Mitigates Record 15.72 Tbps DDoS Attack Driven by AISURU Botnet**
+
+            Microsoft on Monday disclosed that it automatically detected and neutralized a distributed denial-of-service (DDoS) attack targeting a single endpoint in Australia that measured 15.72 terabits per second (Tbps) and nearly 3.64 billion packets per second (pps).
+
+            The tech giant said it was the largest DDoS attack ever observed in the cloud, and that it originated from a TurboMirai-class Internet of Things (IoT) botnet known as AISURU. It's currently not known who was targeted by the attack.
+
+            "The attack involved extremely high-rate UDP floods targeting a specific public IP address, launched from over 500,000 source IPs across various regions," Microsoft's Sean Whalen said. [...]
+
+            -- Nov 18, 2025 `The Hacker News <https://thehackernews.com/2025/11/microsoft-mitigates-record-572-tbps.html>`__
 
 Distributed Denial-of-Service Angriffe - Beispiele
 ---------------------------------------------------
