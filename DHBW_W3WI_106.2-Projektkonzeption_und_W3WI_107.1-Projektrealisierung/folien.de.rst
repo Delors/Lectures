@@ -16,7 +16,7 @@ Projektkonzeption und -realisierung
 
 :Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
 :Kontakt: michael.eichberg@dhbw-mannheim.de, Raum 149B
-:Version: 23SEB
+:Version: 23SEB - Rev. 5.12.2025
 
 
 
@@ -284,8 +284,7 @@ Darüber hinaus sind im Verlauf des Projekts mind. folgende Aufgaben frei zu ver
 - Projektmanagement
 - Infrastrukturmanagement
 - Qualitätsmanagement: Buildautomation, Testmanagement, Testautomatisierung, Codequalität, UX 
-- Dokumentation: Architektur, Entwicklerdokumentation, Nutzerdokumentation
-
+- Dokumentation: `Architektur <https://www.youtube.com/watch?v=3Gc5pN9sGzw>`__, Entwicklerdokumentation, Nutzerdokumentation
 
 
 
@@ -331,6 +330,12 @@ Je Gruppe:
 - Vertraut machen mit dem Technologiestack
 - Prototyping / Entwicklung eines Spike
 - Ausarbeitung der initialen Präsentation und der Abgabe
+
+.. supplemental::
+
+  Ein gute Video zum Thema Architekturdiagramme ist hier zu finden:
+  
+  `Visualising software architecture with the C4 model <https://www.youtube.com/watch?v=3Gc5pN9sGzw>`__
 
 
 
