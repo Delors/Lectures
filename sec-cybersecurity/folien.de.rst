@@ -547,26 +547,48 @@ Angriffe auf die Schutzziele der IT-Sicherheit
 Ausgewählte Angriffe, Angriffsmethoden und Bedrohungsszenarien
 ----------------------------------------------------------------
 
-.. class:: incremental-list
+.. grid::
 
-- *Backdoors* (:ger:`Hintertüren`)
-- (Distributed-)Denial-of-service Angriffe
-- Direct-access Angriffe (d. h. physischer Angriff auf das System)
-- *Eavesdropping* (:ger:`Abhören`)
-- Malware
-- Person-in-the-middle Angriffe
-- Privilege escalation (unterschieden werden: horizontale und vertikale)
-- *Side-channel attacks* (:ger:`Seitenkanalangriffe`)
-- Spoofing (z. B. IP-Spoofing) (:ger:`Vortäuschen`)
-- Social-Engineering (z. B. Phishing)
-- Advanced Persistent Threats (APT)
-- *Store-now, Decrypt-later* (:ger:`Speichere jetzt, Entschlüssele später`)
+    .. cell:: width-50
+
+        .. class:: incremental-list
+
+        - Backdoors (:ger:`Hintertüren`)
+        - (Distributed-)Denial-of-service Angriffe
+        - Direct-access Angriffe (d. h. physischer Angriff auf das System)
+        - Eavesdropping (:ger:`Abhören`)
+        - Malware
+        - Ransomware
+        - Person-in-the-middle Angriffe
+        - Social-Engineering (z. B. Phishing)
+
+    .. cell:: width-50
+
+        .. class:: incremental-list
+
+        - Privilege escalation (horizontal bzw. vertikal)
+        - Side-channel attacks (:ger:`Seitenkanalangriffe`)
+        - Spoofing (z. B. IP-Spoofing) (:ger:`Vortäuschen`)
+        - Advanced Persistent Threats (APT)
+        - Store-now, Decrypt-later (:ger:`Speichere jetzt, Entschlüssele später`)
 
 .. supplemental::
 
     :Vertikale Privilege Escalation: Der Angreifer erhält Zugriff auf höhere Rechte, die er vorher nicht hatte.
     :Horizontale Privilege Escalation: Der Angreifer erhält Zugriff auf die Rechte einer anderen Person, die er vorher nicht hatte.
     :APT: Der Begriff *Advanced Persistent Threat* (≘ „fortgeschrittene, andauernde Bedrohung“) bezeichnet gezielte Cyberangriffe durch professionelle Gruppen (häufig *state sponsored*). Es werden in der Regel langfristige Ziele verfolgt. Diese dienen zum Beispiel der Spionage oder der Vorbereitung auf einen Cyberkrieg. Häufige Ziele sind Regierungen und Unternehmen sowie Organisationen, die über kritische Daten verfügen. Insbesondere in der Anfangsphase gehen die Angreifer sehr vorsichtig vor, um nicht entdeckt zu werden. Danach unterscheidet sich das Vorgehen je nach Zielsetzung. Häufig wird versucht den Zugriff auf das Zielsystem langfristig zu erhalten, um so an weitere Informationen zu gelangen.
+
+
+.. supplemental:
+  Arten von Ransomware:
+  - Locker
+  - Krypto
+  - Scareware
+  - Erpressungssoftware
+  - Wiper-Malware
+  - Doppelte Erpressung / Double Extortion Ransomware (es werden nicht nur Daten verschlüsselt, sondern auch gestohlen und mit Veröffentlichung gedroht - dies dient der Sicherstellung des Lösegelds)
+  - Dreifache Erpressung / Triple Extortion Ransomware (zusätzlich zur doppelten Erpressung werden weitere Systeme des Opfers angegriffen (DDoS, Angriff(e) auf Kunden, um den Druck zu erhöhen)
+  - *Ransomware als Dienstleistung (RaaS)*
 
 
 
