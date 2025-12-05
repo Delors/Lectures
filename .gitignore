@@ -12,7 +12,6 @@ node_modules
 __pycache__
 
 # Content we never share publicly
-exercise
 TODO
 TODO.txt
 Temp*
