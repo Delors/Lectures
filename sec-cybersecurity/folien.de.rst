@@ -914,18 +914,31 @@ Cybersicherheit stärken
 Bug-Bounty-Programme
 -------------------------------------------------------------
 
-.. epigraph::
+.. deck::
 
-    **Microsoft to offer hackers millions in Zero Day Quest event**
+    .. card::
 
-    Microsoft on Tuesday unveiled Zero Day Quest, a bug bounty event offering up to $4 million in rewards to security researchers.
+        .. epigraph::
 
-    "At the end of the day, we recognize that when it comes to security, it's fundamentally a team sport," Microsoft CEO Satya Nadella said during his Tuesday keynote. "And that's why we want to partner, and we're partnering broadly with the security community."
+            **Microsoft to offer hackers millions in Zero Day Quest event**
 
-    [...] Zero Day Quest is the "largest of its kind" and will offer a potential $4 million in awards for research into cloud and AI, which he described as "high-impact areas."
+            Microsoft on Tuesday unveiled Zero Day Quest, a bug bounty event offering up to $4 million in rewards to security researchers.
 
-    -- 19.11.2024 `Techtarget <https://www.techtarget.com/searchsecurity/news/366616078/Microsoft-to-offer-hackers-millions-in-Zero-Day-Quest-event>`__
+            "At the end of the day, we recognize that when it comes to security, it's fundamentally a team sport," Microsoft CEO Satya Nadella said during his Tuesday keynote. "And that's why we want to partner, and we're partnering broadly with the security community."
 
+            [...] Zero Day Quest is the "largest of its kind" and will offer a potential $4 million in awards for research into cloud and AI, which he described as "high-impact areas."
+
+            -- 19.11.2024 `Techtarget <https://www.techtarget.com/searchsecurity/news/366616078/Microsoft-to-offer-hackers-millions-in-Zero-Day-Quest-event>`__
+
+    .. card::
+
+        .. epigraph::
+
+            **Apple Security Bounty**
+
+            Rewards reaching $2 million for exploit chains similar to those used in sophisticated, real-world attacks. And with bonuses, potential maximum rewards of over $5M.
+
+            -- Last Visited 5. Dezember 2025 `Apple Security Research <https://security.apple.com/bounty/>`__
 
 .. supplemental::
 
