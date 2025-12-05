@@ -144,6 +144,10 @@ Gegeben sei eine App zum Ver- und Entschlüsseln von Dateien sowie ein paar vers
             :alt: Hexeditor mit Dateninterpretation
             :align: center
 
+        .. supplemental::
+
+            In diesem Falle wurde Hex Fiend (Mac) verwendet. Es erlaubt durch die Anlage von Templates eine einfache Interpretation von Daten.
+
     .. card::
 
         .. caution::
@@ -265,7 +269,7 @@ Kommandozeilenwerkzeuge (exemplarisch):
 Decompiler
 -------------
 
-Überführt (maschinenlesbarem) Binärcode *bestmöglich* in Hochsprache (meist C ähnlich oder Java). 
+Überführt (maschinenlesbarem) Binärcode *bestmöglich* in Hochsprache (meist C ähnlich oder Java).
 
 
 .. deck::
@@ -459,6 +463,7 @@ Obfuscation - Techniken (Auszug)
    Das Verschleiern von Strings kann insbesondere das Reversen von Binärcode erschweren, da ein Angreifer häufig „nur“ an einer ganz bestimmten Funktionalität interessiert ist und dann Strings ggf. einen sehr guten Einstiegspunkt für die weitergehende Analyse bieten.
 
    Stellen Sie sich eine komplexe Java Anwendung vor, in der alle Namen von Klassen, Methoden und Attributen durch einzelne oder kurze Sequenzen von Buchstaben ersetzt wurden und sie suchen danach wie von der Anwendung Passworte verarbeitet werden. Handelt es sich um eine GUI Anwendung, dann wäre zum Beispiel die Suche nach Text, der in den Dialogen vorkommt (z. B. ``"Password"``) z. B. ein sehr guter Einstiegspunkt.
+
 
 
 .. class:: new-subsection
@@ -807,26 +812,34 @@ Live Exercise
 
 :Programm: `Simplesecure++ <./exercise/simplesecurepp/simplesecurepp-0.0.1.jar>`__
 :Datei: `42.enc <./exercise/simplesecurepp/42.enc>`__
-:Hinweise: `Hints.pdf <./exercise/reversing_aufgaben.pdf>`__
 
 .. exercise:: Reversing SimpleSecure++
 
-    .. container
-        .. rubric:: Programm
-        .. source::
-            :path: dir
-            :prefix: https://delors.github.io/
-            :suffix: /exercise/simplesecurepp/simplesecurepp-0.0.1.jar
-        .. rubric:: Verschlüsselte Datei
-        .. source::
-            :path: dir
-            :prefix: https://delors.github.io/
-            :suffix: /exercise/simplesecurepp/42.enc
+    Ihnen liegt eine verschlüsselte Datei vor (42.enc), die mit dem Program simplesecurepp verschlüsselt wurde. Informationen zum verwendeten Passwort liegen nicht vor. Es ist jedoch davon auszugehen, dass das Passwort sicher ist. Ziel ist die Entschlüsselung der Datei. Analysieren Sie die Anwendung, um einen möglichen Ansatzpunkt zu finden, um die Daten erfolgreich zu entschlüsseln.Sollten Sie Code schreiben in Hinblick auf einen Bruce Force, dann sollten Sie diesen ggf. auch parallelisieren, um möglichst schnell zum Ergebnis zu gelangen.
 
     .. solution::
         :pwd: This passworD is wirklich impossible TO crack
 
-        Beobachtungen:
+        .. rubric:: High-level Analyse der App
+
+        .. code:: bash
+
+            [√] ~/ # echo "Test" | java -jar simplesecurepp-0.0.1.jar test encrypt | xxd
+                00000000: 8454 8b01 bd78 0bf2 7821 c589 3c03 6c8b  .T...x..x!..<.l.
+                00000010: 408f e6                                  @..
+            [√] ~/ # echo "Test" | java -jar simplesecurepp-0.0.1.jar tester encrypt | xxd
+                00000000: 953c 9775 bc9b 7272 921a 51b3 e9cb 1628  .<.u..rr..Q....(
+                00000010: e0f4 70                                  ..p
+            [√] ~/ # echo "Test" | java -jar simplesecurepp-0.0.1.jar tester encrypt | xxd
+                00000000: 953c 9775 bc9b 7272 921a 51b3 e9cb 1628  .<.u..rr..Q....(
+                00000010: e0f4 70                                  ..p
+            [√] ~/ # echo "Fest" | java -jar simplesecurepp-0.0.1.jar tester encrypt | xxd
+                00000000: 953c 9775 bc9b 7272 921a 51b3 e9cb 0428  .<.u..rr..Q....(
+                00000010: e0f4 70                                  ..p
+            [√] ~/Desktop/RE # echo "Test" | \
+                java -jar simplesecurepp-0.0.1.jar te encrypt | \
+                java -jar simplesecurepp-0.0.1.jar tt decrypt
+                invalid password
 
         - die Datei ist größer als die unverschlüsselte Datei
         - wenn ich die selbe Datei zweimal hintereinander mit dem selben Passwort verschlüssele, dann sind die Dateien identisch (es scheint keinen "Zufall/Seed" zu geben)
@@ -834,95 +847,116 @@ Live Exercise
         - wenn ich zwei verschiedene Dateien mit dem selben Passwort verschlüssele, dann sind die Anfänge gleich; die Anfänge unterscheiden sich aber, wenn ich das Passwort ändere
         - es scheint keine Blockchiffre zu sein
 
-        - [Nach der Analyse des Codes]
+        .. rubric:: Code Analyse
+
+        - Unzip der Datei
+        - Decompilierung der Datei (zum Beispiel mit `Java Decompilers <https://www.decompiler.com/jar/a86e1912fcb144a791a951a35f752ce8/Main.java>`__)
+        - Prompt to find security vulnerability: @Main.java](file:/de/dhbw/simplesecurepp/Main.java) Where are security weaknesses?
+
+          *Most models will correctly identify that the usage of Adler32 is a/the weakness.*
+
+          (Zum Beispiel getestet mit LMStudio und Qwen3Coder 30b - 4Bit Quant.)
+        - Prompt to write basic attack code.
+
+          Let's create a script in pyhton that decrypts a given file by simply testing all possible seeds and finding the seed that successfully decrypts the magic constant.
+
+          (Zum Beispiel getestet mit Claude Haiku 4.5.)
+        - Der Seed ist: 3270449778
+
+        .. rubric:: Angriffscode (Python - AI generiert)
+
+        .. code:: python
+            :class: copy-to-clipboard
+
+            ....
+
+        .. rubric:: Angriffscode (Java + parallelisiert - selber entwickelt)
+
+        Aufwand: ca. 3 Minuten auf einem Macbook Pro mit M2 Max.
 
         .. code:: java
-            :class: copy-to-clipboard smaller
 
+            /*
+             * A JAVA SCRIPT to bruteforce the seed.
+             *
+             * (I.e. use: "cat <Encrypted File> | java FindSeed.java".)
+             */
+
+            import java.nio.charset.Charset;
+            import java.security.NoSuchAlgorithmException;
+            import java.security.SecureRandom;
+
+            private final static byte[] CC = "simplesecurepp"
+                    .getBytes(Charset.forName("ascii"));
+            private final static long ADLER32_MAX = ((long) Integer.MAX_VALUE) * 2;
+
+            /**
+            * Reads in an encrypted file from stdin and tries to find the seed that
+            * was used for the SecureRandom generator. Given the seed, it is then
+            * possible to easily decrypt the stream.
+            *
+            * If we are not lucky, it may take several hours on a multi-core machine.
+            */
+            public static void main(String[] args) throws Exception {
                 /*
-                * INTENDED TO BE RUN AS A JAVA SCRIPT.
-                * (I.e. use: "java FindSeed.java".)
+                * We don't need the password, because as soon as we have identified the
+                * seed everything is Ok and we can efficiently check if the seed is ok.
                 */
+                var encryptedCC = System.in.readNBytes(CC.length);
+                var availableProcessors = Runtime.getRuntime().availableProcessors();
+                System.out.println(
+                    "Trying to find the seed for decryption using " +
+                    availableProcessors +
+                    " processors.");
 
-                import java.math.BigInteger;
-                import java.nio.charset.Charset;
-                import java.security.NoSuchAlgorithmException;
-                import java.security.SecureRandom;
-                import java.util.Arrays;
+                for (int p = 0; p < availableProcessors; p++) {
+                    final var fp = p;
+                    var t = new Thread() {
 
-                public class FindSeed {
+                        final byte[] decryptedHeader = new byte[CC.length];
 
-                    private final static byte[] CC = "simplesecurepp"
-                            .getBytes(Charset.forName("ascii"));
-                    private final static long ADLER32_MAX = ((long) Integer.MAX_VALUE) * 2;
+                        public void run() {
+                            final var START_TIME = System.currentTimeMillis();
+                            final long SEG_SIZE = ADLER32_MAX / availableProcessors;
+                            final long START = fp * SEG_SIZE;
+                            final long END = (fp + 1) * SEG_SIZE;
+                            for (long s = START; s < END; s++) {
 
-                    /**
-                    * Reads in an encrypted file from stdin and tries to find the seed that
-                    * was used for the SecureRandom generator. Given the seed, it is then
-                    * possible to easily decrypt the stream.
-                    *
-                    * If we are not lucky, it may take several hours on a multi-core machine.
-                    */
-                    public static void main(String[] args) throws Exception {
-                        /*
-                        * We don't need the password, because as soon as we have identified the
-                        * seed everything is Ok and we can efficiently check if the seed is ok.
-                        */
-                        var encryptedCC = System.in.readNBytes(CC.length);
-                        var availableProcessors = Runtime.getRuntime().availableProcessors();
-                        System.out.println(
-                            "Trying to find the seed for decryption using " +
-                            availableProcessors +
-                            " processors.");
-
-                        for (int p = 0; p < availableProcessors; p++) {
-                            final var fp = p;
-                            var t = new Thread() {
-
-                                final byte[] decryptedHeader = new byte[CC.length];
-
-                                public void run() {
-                                    final var START_TIME = System.currentTimeMillis();
-                                    final long SEG_SIZE = ADLER32_MAX / availableProcessors;
-                                    final long START = fp * SEG_SIZE;
-                                    final long END = (fp + 1) * SEG_SIZE;
-                                    for (long s = START; s < END; s++) {
-
-                                        SecureRandom secureRandom;
-                                        try {
-                                            secureRandom = SecureRandom.getInstance("SHA1PRNG");
-                                        } catch (NoSuchAlgorithmException e) {
-                                            throw new RuntimeException(e);
-                                        }
-                                        secureRandom.setSeed(BigInteger.valueOf(s).toByteArray());
-
-                                        for (int i = 0; i < CC.length; i++) {
-                                            decryptedHeader[i] = (byte) (
-                                                encryptedCC[i] ^ secureRandom.nextInt()
-                                            );
-                                        }
-                                        if (Arrays.equals(CC, decryptedHeader)) {
-                                            System.out.println("The seed: " + s);
-                                            System.exit(1);
-                                        }
-
-                                        if (s % 5000000 == 0) {
-                                            var speed =
-                                                (s - START) /
-                                                    (System.currentTimeMillis() - START_TIME);
-                                            System.out.println(
-                                                    "[" + fp + "] Tested " +
-                                                    100l * (s - START) / SEG_SIZE +
-                                                    "% (" + speed + "H/ms): "
-                                                            + START + "=>" + s);
-                                        }
-                                    }
+                                SecureRandom secureRandom;
+                                try {
+                                    secureRandom = SecureRandom.getInstance("SHA1PRNG");
+                                } catch (NoSuchAlgorithmException e) {
+                                    throw new RuntimeException(e);
                                 }
-                            };
-                            t.start();
+                                secureRandom.setSeed(BigInteger.valueOf(s).toByteArray());
+
+                                for (int i = 0; i < CC.length; i++) {
+                                    decryptedHeader[i] = (byte) (
+                                        encryptedCC[i] ^ secureRandom.nextInt()
+                                    );
+                                }
+                                if (Arrays.equals(CC, decryptedHeader)) {
+                                    System.out.println("The seed: " + s);
+                                    System.exit(1);
+                                }
+
+                                if (s % 5000000 == 0) {
+                                    var speed =
+                                        (s - START) /
+                                            (System.currentTimeMillis() - START_TIME);
+                                    System.out.println(
+                                            "[" + fp + "] Tested " +
+                                            100l * (s - START) / SEG_SIZE +
+                                            "% (" + speed + "H/ms): "
+                                                    + START + "=>" + s);
+                                }
+                            }
                         }
-                    }
+                    };
+                    t.start();
                 }
+            }
+
 
 
 
@@ -945,11 +979,29 @@ Reverse Engineering Übung
             -in Poem.txt -out Poem.enc
 
 :Datei: `Poem.enc <./exercise/securepp/Poem.enc>`__
-:Hinweise: `Hints.pdf <./exercise/reversing_aufgaben.pdf>`__
 
 .. exercise:: Reversing Secure++
 
     Entschlüsseln Sie die Datei Poem.enc, die mit Secure++ verschlüsselt wurde.
+
+    .. supplemental::
+
+        Sie können zum Beispiel das Programm über ein Shellscript oder ein anderes Java Programm ansprechen, um zu versuchen das Passwort zu Bruteforcen.
+
+        Alternativ oder ergänzend können Sie versuchen mittels Reverse Engineering herauszufinden wie die Verschlüsselung implementiert wurde und ob sich daraus effizientere/andere Möglichkeiten ergeben.
+
+        Selbstverständlich können Sie versuchen die Entschlüsselung ggf. auch in (z. B.) Python nachbauen.
+
+        Die Password-Policy, die dem Passwort zugrunde liegt ist die folgende:
+
+        - mind. 16 Zeichen
+        - mind. 4 Ziffern
+        - mind. 2 Großbuchstaben
+        - mind. 2 Kleinbuchstaben
+        - mind. 4 verschiedene Sonderzeichen aus dem Zeichensatz: -!$?#@
+        - Es dürfen nicht alle Sonderzeichen hintereinander vorkommen; d. h. es muss mindestens zwei Blöcke von Sonderzeichen geben; ein Block kann ein oder mehrere Sonderzeichen enthalten.
+
+        Darüber hinaus sei Ihnen bekannt, dass die Person in seinen Passworten sehr gerne  die Namen der Orte verwendet, die er bereits bereist hat. Ihnen sei außerdem bekannt, dass die Person zwischen einer großen Anzahl von Großstädten in Westeuropa unterwegs war. Darüber hinaus trennt er die Namen der Städte in bekannten Passwörtern häufig mit “.”, “_" oder “-“. Weiterhin sei Ihnen bekannt, dass er oft das Datum bzw. Jahr verwendet an denen er die Städte in den letzten Jahren besucht hat. Ansonsten verhält er sich augenscheinlich recht typisch was das Anfügen von Zahlen und Sonderzeichen betrifft. Beides ist in bestehenden Passwörtern am häufigsten in entsprechenden Blöcken am Ende zu finden.
 
     .. solution::
         :pwd: 5ZeilenInPython;
@@ -987,5 +1039,6 @@ Reverse Engineering Übung
                 aes = AES.new(dek,AES.MODE_CTR,nonce=nonce)
                 print(aes.decrypt(encryptedData))
 
+        (Alternativ) Das Passwort ist: Berlin-Hamburg2023!$?#
 
 .. TODO add discussion how to use FRIDA to hook into the Java program SecureRandom class and extract the seed.
