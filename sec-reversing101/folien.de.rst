@@ -856,19 +856,15 @@ Live Exercise
           *Most models will correctly identify that the usage of Adler32 is a/the weakness.*
 
           (Zum Beispiel getestet mit LMStudio und Qwen3Coder 30b - 4Bit Quant.)
-        - Prompt to write basic attack code.
+        - Prompt um den grundlegenden Code für einen Angriff zu erstellen.
 
-          Let's create a script in pyhton that decrypts a given file by simply testing all possible seeds and finding the seed that successfully decrypts the magic constant.
+          Let's create a script in Java that decrypts a given file by simply testing all possible seeds and finding the seed that successfully decrypts the magic constant.
 
-          (Zum Beispiel getestet mit Claude Haiku 4.5.)
+          .. attention::
+
+            Bei der Generierung einer Python Version war der Code zwar ausführbar aber nicht korrekt.
+            
         - Der Seed ist: 3270449778
-
-        .. rubric:: Angriffscode (Python - AI generiert)
-
-        .. code:: python
-            :class: copy-to-clipboard
-
-            ....
 
         .. rubric:: Angriffscode (Java + parallelisiert - selber entwickelt)
 

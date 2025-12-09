@@ -261,13 +261,12 @@ Themenvergabe
 
 
 
-Übungsaufgaben
+Bewertete Abgaben
 --------------------
 
-#. `Passwortwiederherstellung - Aufgaben <passwort_wiederherstellung.de.rst.html>`__
+#. `Passwortwiederherstellung - Aufgaben <https://delors.github.io/DHBW-W3WI_SE411-Forschungsseminar_Informatik-Adv._Practical_IT_Security/passwort_wiederherstellung.de.rst.html>`__
 
-#. `Reverse Engineering - Aufgaben <reverse_engineering.de.rst.html>`__
-
+#. `Reverse Engineering - Aufgaben <https://delors.github.io/DHBW-W3WI_SE411-Forschungsseminar_Informatik-Adv._Practical_IT_Security/reverse_engineering.de.rst.html>`__
 
 
 .. class:: new-section
