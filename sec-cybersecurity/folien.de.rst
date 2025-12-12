@@ -399,6 +399,15 @@ IT-Security Vorfälle
 
                             Anzeige in VS Code 1.107.0
 
+                    .. card::
+
+                        .. figure:: code/2025-12-Gen.txt.Zen.webp
+                            :class: screenshot
+                            :align: center
+
+                            Anzeige in Zen 0.216.1
+
+
 
 IT-Security Forschung
 ----------------------------------------------------
