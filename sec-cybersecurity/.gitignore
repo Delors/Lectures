@@ -2,3 +2,4 @@ external/*
 !external/*.md
 
 code/CopyAndPasteAttack.sh
+code/*.png

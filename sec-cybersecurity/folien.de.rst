@@ -15,7 +15,7 @@ Cybersecurity
 
 :Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
 :Kontakt: michael.eichberg@dhbw.de
-:Version: 2.10
+:Version: 2.11
 
 .. supplemental::
 
@@ -107,6 +107,42 @@ IT-Security Vorfälle
             [...] The attackers have held data hostage and offered a key for access in return for the $8 million ransom, said PT Telkom Indonesia’s director of network & IT solutions, Herlan Wijanarko, without giving further details. Wijanarko said the company, in collaboration with authorities at home and abroad, is investigating and trying to break the encryption that made data inaccessible. [...]
 
             -- June 25th, 2024 - `AP News <https://apnews.com/article/indonesia-ransomware-attack-national-data-center-213c14c6cc69d7b66815e58478f64cee>`__
+
+        .. exercise:: Ransomware Angriffe und Backups
+            :class: incremental
+
+            Was ist bei der Erstellung von Backups zu beachten, um sich gegen Ransomware Angriffe zu schützen? Warum ist dies wichtig?
+
+            .. solution::
+                :pwd: air-gapped-backups
+
+                Bei der Erstellung zu beachten;
+
+                .. class:: list-with-explanations
+
+                - 3-2-1(+1)-Regel einhalten: mind. drei Kopien, zwei unterschiedliche Medien, eine Offsite‑Kopie, eine zusätzliche Offline-/immutable Kopie.
+                - Offline-/Air‑Gapped-/Immutable‑Backups verwenden (z. B. Band, Objektspeicher mit WORM/Object Lock).
+
+                  Ransomware darf Backups nicht erreichen können.
+                - Backup-Infrastruktur vom normalen Netz trennen (separates Admin‑Netz/‑Domain, restriktive Firewalls, kein direkter User‑Zugriff).
+                - Getrennte, gehärtete Backup‑Konten mit Least Privilege und MFA verwenden; keine Wiederverwendung von Domain‑Admin‑Konten.
+                - Produktivsysteme dürfen Backends nicht als normales, beschreibbares Dateisystem mounten, sondern nur Daten *in* das Backup schreiben.
+                - Backup-Server und -Software regelmäßig patchen und absichern; Management-Interfaces nicht direkt aus dem Internet erreichbar machen.
+                - RPO/RTO definieren und Backup‑/Snapshot‑Frequenz sowie Aufbewahrungszeiten daran ausrichten.
+
+                  **RPO** (*Recovery Point Objective*) beschreibt den maximal tolerierten Datenverlust in Zeit. Bei einer RPO von 4 Stunden wird ein maximaler Verlust von 4 Stunden akzeptiert.
+
+                  **RTO** (*Recovery Time Objective*) beschreibt die maximal tolerierte Ausfallzeit eines Systems/Services. Bei einer RTO von 2 Stunden muss spätestens 2 Stunden nach einem Ausfall das System wieder produktiv laufen.
+                - Backups verschlüsseln, Schlüssel getrennt und sicher (ggf. offline) verwalten. 
+
+                  (Wenn die Schlüssel kompromittiert/verschlüsselt sind, nützt das beste Backup nichts.)
+                - Regelmäßig Wiederherstellungstests durchführen (inkl. kompletter System- und Datenbank‑Restores).
+                - Einen Wiederanlaufplan/Playbook für Ransomware-Fälle definieren (Reihenfolge der Restores, saubere Netze, erneute Infektion verhindern).
+
+            Zu bedenken:
+
+            - Ransomware kann ggf. auch Backup-Systeme angreifen.
+            - Ransomware kann erst mit Zeitverzögerung aktiv werden.
 
     .. card::
 
@@ -248,6 +284,121 @@ IT-Security Vorfälle
             -- July 24th, 2025 - `BleepingComputer <https://www.bleepingcomputer.com/news/security/hacker-sneaks-infostealer-malware-into-early-access-steam-game/>`__
 
 
+    .. card::
+
+        **Supply-Chain-Angriff**
+
+        .. epigraph::
+
+            **GlassWorm: First Self-Propagating Worm Using Invisible Code Hits OpenVSX Marketplace**
+
+            A month after Shai Hulud became the first self-propagating worm in the npm ecosystem, we just discovered the world's first worm targeting VS Code extensions on OpenVSX marketplace [*and also VS Code Marketplace later on*].
+
+            But GlassWorm isn't just another supply chain attack. It's using stealth techniques we've never seen before in the wild - invisible Unicode characters that make malicious code literally disappear from code editors. [...]
+
+            -- October 18th, 2025 - `Koi Research <https://www.koi.ai/blog/glassworm-first-self-propagating-worm-using-invisible-code-hits-openvsx-marketplace>`__
+
+        .. remark::
+
+            Glassworm ist - Stand Dez. 2025 - bereits in mind. `3 Wellen <https://www.techzine.eu/news/security/136912/glassworm-malware-reappears-within-vs-code-ecosystem/>`__ aufgetaucht.
+
+    .. card::
+
+        .. rubric:: Glassworm erklärt
+
+        .. deck::
+
+            .. card::
+
+                **Idee**
+
+                .. class:: incremental-list
+
+                - GlassWorm nutzt Besonderheiten von Unicode, um bösartigen Code in VS Code Extensions zu verstecken in dem Sinne, dass der Code für Menschen unsichtbar ist.
+                - Dieser Code wird durch einen kleinen Lader in echten Code umgewandelt und ausgeführt.
+
+            .. card::
+
+                **Hintergrund**
+
+                .. class:: incremental-list
+
+                - Im `Unicode Standard <https://www.unicode.org/charts/PDF/UFE00.pdf>`__ sind im Bereich ``FE00–FE0F`` die Variation Selectors definiert.
+                - Diese Zeichen verändern die Darstellung des vorhergehenden Zeichens.
+                - In den meisten Schriftarten haben diese Zeichen keine sichtbare Auswirkung.
+                - In den meisten Code-Editoren (Stand 2025) werden diese Zeichen ignoriert; insbesondere auch dann, wenn keine gültige Verwendung vorliegt.
+
+                .. supplemental::
+
+                    Es gibt in Unicode auch explizit definierte `unsichtbare Zeichen <https://invisible-characters.com/>`__, z. B. ZERO WIDTH NON-JOINER (U+200C), die sich ggf. auch für Angriffe eignen.
+
+            .. card::
+
+                **Beispiel**
+
+                .. deck::
+
+                    .. card::
+
+
+                        Generierung einer Textdatei „mit unsichtbarem Text“:
+
+                        .. include:: code/Gen.java
+                            :code: java
+                            :number-lines:
+                            :class: copy-to-clipboard
+
+                        Ausführung von Gen.java:
+
+                        .. code:: console
+                            :number-lines:
+                            
+                            $ java Gen.java > invisible.txt
+                            
+                    .. card::
+
+                        Hexansicht der generierten Datei (z. B. mit :console:`xxd invisible.txt`):
+
+                        ::
+
+                            00000000: e280 8c2e 0a20 efb8 802e 0a20 efb8 812e  ..... ..... ....
+                            00000010: 0aef b881 efb8 822e 0aef b881 efb8 82ef  ................
+                            00000020: b883 efb8 84ef b885 efb8 86ef b887 efb8  ................
+                            00000030: 882e 0a6c efb8 8128 efb8 8222 efb8 8321  ...l...(..."...!
+                            00000040: efb8 8422 efb8 8529 efb8 863b efb8 872e  ..."...)...;....
+                            00000050: 0a    
+
+                        .. attention::
+
+                            Wir verwenden hier UTF-8 Encoding.
+
+                            Zum Beispiel ist das Unicode-Zeichen ``ZERO WIDTH NON-JOINER (U+200C)`` in UTF-8 Kodierung :code:`e2 80 8c`. (Siehe auch: `UTF-8 Wikipedia <https://en.wikipedia.org/wiki/UTF-8#Description>`__)
+
+                    .. card::
+
+                        .. figure:: code/2025-12-Gen.txt.MacOS_Terminal.webp
+                            :alt: Generierter Text auf der Konsole
+                            :class: screenshot
+                            :align: center
+                        
+                            Anzeige im MacOS 26.1 Terminal 
+
+                    .. card::
+
+                        .. figure:: code/2025-12-Gen.txt.CotEditor.webp
+                            :class: screenshot
+                            :align: center
+
+                            Anzeige im CotEditor 6.1.2
+
+                    .. card::
+
+                        .. figure:: code/2025-12-Gen.txt.VSCode.webp
+                            :class: screenshot
+                            :align: center
+
+                            Anzeige in VS Code 1.107.0
+
 
 IT-Security Forschung
 ----------------------------------------------------
@@ -349,8 +500,6 @@ IT-Security Forschung
             Rowhammer is a method of attempting to corrupt memory by repeatedly "hammering" rows of memory cells with a burst of read or write operations. The repeat operations can create electrical interference between rows of memory cells, potentially disrupting operations.[...]
 
             -- July 13th, 2025 - `The Register <https://www.theregister.com/2025/07/13/infosec_in_brief/>`__
-
-
 
 
 
@@ -551,22 +700,26 @@ Ausgewählte Angriffe, Angriffsmethoden und Bedrohungsszenarien
 
     .. cell:: width-50
 
-        .. class:: incremental-list
+        .. class:: incremental-list list-with-explanations
 
         - Backdoors (:ger:`Hintertüren`)
         - (Distributed-)Denial-of-service Angriffe
-        - Direct-access Angriffe (d. h. physischer Angriff auf das System)
+        - Direct-access Angriffe 
+        
+          Physischer Angriff auf das System.
         - Eavesdropping (:ger:`Abhören`)
-        - Malware
-        - Ransomware
+        - `Malware`_
+        - `Ransomware`_
         - Person-in-the-middle Angriffe
-        - Social-Engineering (z. B. Phishing)
+        - `Social-Engineering Angriffe`_
 
     .. cell:: width-50
 
-        .. class:: incremental-list
+        .. class:: incremental-list list-with-explanations
 
-        - Privilege escalation (horizontal bzw. vertikal)
+        - Privilege escalation 
+        
+          Unterschieden wird: horizontal bzw. vertikal.
         - Side-channel attacks (:ger:`Seitenkanalangriffe`)
         - Spoofing (z. B. IP-Spoofing) (:ger:`Vortäuschen`)
         - Advanced Persistent Threats (APT)
@@ -577,18 +730,6 @@ Ausgewählte Angriffe, Angriffsmethoden und Bedrohungsszenarien
     :Vertikale Privilege Escalation: Der Angreifer erhält Zugriff auf höhere Rechte, die er vorher nicht hatte.
     :Horizontale Privilege Escalation: Der Angreifer erhält Zugriff auf die Rechte einer anderen Person, die er vorher nicht hatte.
     :APT: Der Begriff *Advanced Persistent Threat* (≘ „fortgeschrittene, andauernde Bedrohung“) bezeichnet gezielte Cyberangriffe durch professionelle Gruppen (häufig *state sponsored*). Es werden in der Regel langfristige Ziele verfolgt. Diese dienen zum Beispiel der Spionage oder der Vorbereitung auf einen Cyberkrieg. Häufige Ziele sind Regierungen und Unternehmen sowie Organisationen, die über kritische Daten verfügen. Insbesondere in der Anfangsphase gehen die Angreifer sehr vorsichtig vor, um nicht entdeckt zu werden. Danach unterscheidet sich das Vorgehen je nach Zielsetzung. Häufig wird versucht den Zugriff auf das Zielsystem langfristig zu erhalten, um so an weitere Informationen zu gelangen.
-
-
-.. supplemental:
-  Arten von Ransomware:
-  - Locker
-  - Krypto
-  - Scareware
-  - Erpressungssoftware
-  - Wiper-Malware
-  - Doppelte Erpressung / Double Extortion Ransomware (es werden nicht nur Daten verschlüsselt, sondern auch gestohlen und mit Veröffentlichung gedroht - dies dient der Sicherstellung des Lösegelds)
-  - Dreifache Erpressung / Triple Extortion Ransomware (zusätzlich zur doppelten Erpressung werden weitere Systeme des Opfers angegriffen (DDoS, Angriff(e) auf Kunden, um den Druck zu erhöhen)
-  - *Ransomware als Dienstleistung (RaaS)*
 
 
 
@@ -697,6 +838,101 @@ Neben den primären Schutzzielen, gibt es eine Reihe weiterer kontextabhängiger
     Ein Akteur kann seine Handlungen nicht abstreiten.
 :Pseudo-/Anonymisierung: Eine Person kann nicht (mehr) identifiziert werden.
 :Authentizität (`Authenticity`:eng:): Ist eine Information echt bzw. vertrauenswürdig?
+
+
+
+Malware
+-----------------------------
+
+Malware (:eng:`Malicious Software`) wird nach Verbreitungsweise und Verhalten klassifiziert:
+
+.. class:: incremental-list s-only
+
+- **Viren** (:eng:`Viruses`
+- **Würmer** (:eng:`Worms`)
+- **Trojaner** (:eng:`Trojan Horses`)
+- **Rootkits**
+- **Spyware**
+- `Ransomware`_
+- **Wipers**
+- :gray:`Adware` 
+
+.. supplemental::
+
+  .. class:: list-with-explanations
+
+  - **Viren** (:eng:`Viruses`)
+
+    Schadcode, der sich an bestehende Dateien anhängt und sich durch Benutzeraktionen verbreitet. Benötigt ein Wirtsprogramm und wird beim Ausführen der infizierten Datei aktiv.
+
+  - **Würmer** (:eng:`Worms`)
+
+    Eigenständige Programme, die sich selbstständig über Netzwerke verbreiten, ohne Benutzerinteraktion. Nutzen Sicherheitslücken zur automatischen Replikation.
+
+  - **Trojaner** (:eng:`Trojan Horses`)
+
+    Schadsoftware, die als nützliches oder harmloses Programm getarnt ist und vom Nutzer installiert wird. Öffnet oft Hintertüren (:eng:`Backdoors`) für weitere Angriffe.
+
+  - **Rootkits**
+
+    Malware, die sich tief im System versteckt (oft auf Kernel-Ebene), mit dem Ziel nicht erkannt zu werden und dauerhaften, versteckten Zugriff zu ermöglichen.
+
+  - **Spyware**
+
+    Malware, die heimlich Informationen sammelt und an Angreifer sendet (z. B. Tastatureingaben, Browserdaten, Anmeldeinformationen, persönliche Daten).
+
+  - `Ransomware`_
+
+  - **Wipers**
+
+    Destruktive Malware, die Daten unwiederbringlich löscht oder zerstört - manchmal getarnt als Ransomware, aber ohne Wiederherstellungsmöglichkeit.
+
+  .. remark::
+
+    - *Adware* - keine Malware im engeren Sinne obwohl in der Regel (auch) nicht erwünscht. Da Adware in der Regel keine (zu) schädlichen Funktionen ausführt und bewusst installiert wird, ist diese nicht illegal und wird nicht als Malware klassifiziert.
+
+
+Ransomware
+-----------------------------
+
+Es können verschiedene Arten bzw. Angriffstypen unterschieden werden:
+
+.. class:: incremental-list s-only
+
+- Locker/Screen Locker
+- Krypto
+- Scareware
+- Doxware/Leakware
+- Doppelte Erpressung (:eng:`Double Extortion Ransomware`)
+- Dreifache Erpressung (:eng:`Triple Extortion Ransomware`) 
+- *Ransomware as a Service (RaaS)*
+
+.. supplemental::
+        
+    .. class:: list-with-explanations
+
+    - Locker/Screen Locker
+
+        Die Nutzer werden aus dem System ausgesperrt.
+    - Krypto
+
+        Verschlüsselung der Daten auf dem System. 
+    - Scareware
+
+        Fake Software - zeigt zum Beispiel Warnungen vor einem Virus - die den Nutzer dazu bringen sollen Geld zu zahlen.
+
+    - Doxware/Leakware
+
+        Drohung zur Veröffentlichung sensibler Daten, wenn kein Lösegeld gezahlt wird.
+    - Doppelte Erpressung (:eng:`Double Extortion Ransomware`)
+    
+        Es werden nicht nur Daten verschlüsselt, sondern auch gestohlen und mit Veröffentlichung gedroht. (Kombination aus Krypto- und Doxware.)
+    - Dreifache Erpressung (:eng:`Triple Extortion Ransomware`) 
+    
+        Zusätzlich zur doppelten Erpressung werden weitere Systeme des Opfers angegriffen (z. B. mittels DDoS), oder auch den Angestellten gedroht oder gedroht Geschäftspartner anzugreifen/zu informieren.)
+    - *Ransomware as a Service (RaaS)*
+
+        Kriminelle können Ransomware mieten ohne eigene technische Expertise.
 
 
 
@@ -829,8 +1065,6 @@ Ausgewählte Social-Engineering Angriffe
         (`heise.de - Aug. 2025 - Vishing: So gelingt der Angriff per Telefon selbst auf Großunternehmen <https://www.heise.de/hintergrund/Vishing-So-gelingt-der-Angriff-per-Telefon-selbst-auf-Grossunternehmen-10625451.html>`__)
 
         (Z. B. `Anrufe von Europol <https://www.europol.europa.eu/publications-events/publications/vishing-calls>`__)
-
-
 
     :Quishing/QR phishing:
 
@@ -1173,4 +1407,3 @@ NIS 2 - zentrale Einrichtungen
 
 .. TODO Add discussion about the EU Cyber Resilience Act (e.g. https://www.bsi.bund.de/EN/Themen/Unternehmen-und-Organisationen/Informationen-und-Empfehlungen/Cyber_Resilience_Act/cyber_resilience_act_node.html#:~:text=The%20Cyber%20Resilience%20Act%20is,and%20will%20be%20implemented%20gradually.)
 
-.. TODO Add discussion about the different Malware types: Worm, Virus, Trojan Horse, Spyware, Adware, Rootkit, Keylogger....
