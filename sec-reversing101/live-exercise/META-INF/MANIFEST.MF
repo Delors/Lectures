@@ -1,0 +1,4 @@
+Manifest-Version: 1.0
+Created-By: 21.0.1 (Eclipse Adoptium)
+Main-Class: de.dhbw.simplesecurepp.Main
+
