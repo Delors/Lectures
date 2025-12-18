@@ -16,7 +16,7 @@ Projektkonzeption und -realisierung
 
 :Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
 :Kontakt: michael.eichberg@dhbw-mannheim.de, Raum 149B
-:Version: 23SEB - Rev. 5.12.2025
+:Version: 23SEB - Rev. 18.12.2025
 
 
 
@@ -435,7 +435,7 @@ Je Gruppe:
   - Präsentation (PDF)
   - Vollständige Dokumentation (PDF)
   - Dokumentierte Zeitaufwände (PDF)
-  - [**2P** je Person]: Reflexionsbericht mit max. 2 Seiten (PDF): Was lieft gut, was lief schlecht, was sollte im weiteren Verlauf beachtet werden, was habe ich persönlich gelernt, wie werde ich zu einem erfolgreichen Projekt beitragen.
+  - [**2P** je Person]: Reflexionsbericht mit max. 2 Seiten (PDF): Was lieft gut, was lief schlecht, was sollte im weiteren Verlauf beachtet werden, was habe ich persönlich gelernt, wie werde ich zukünftig versuchen den Projekterfolg sicherzustellen. Geben Sie auf dem Reflexionsbericht bitte auch den Namen der Gruppe und Ihre wesentliche Rolle(n) im Projekt an. 
 
   .. rubric:: Teil 2 - Übergang zum Projekt
 
@@ -529,15 +529,25 @@ Projektrealisierung - Teil 1 (1. Semester)
   **Vorführung**
 
   - [**2P**] Aktueller Prototyp des App Stores
-  - [**2P**] Prototypen zweier Apps (inkl. Darstellung des (zukünftigen) Deploymentprozesses; d.h. es muss noch kein Deployment über den App Store erfolgen.)
+  - [**2P**] Prototypen zweier Apps inkl. Deployment auf OpenStack
 
   **Präsentation**
 
-  - [**2P**] Aktueller Stand der statischen und dynamischen Architektur des App-Stores: Dies sollte im Wesentlichen über Abbildungen erfolgen und kann ggf. auch die Darstellung eines Datenbankschemas beinhalten.
+  .. class:: list-with-explanations
+
+  - [**2P**] Aktueller Stand der statischen und dynamischen Architektur des App-Stores 
+
+    Dies sollte im Wesentlichen über Abbildungen erfolgen und kann ggf. auch die Darstellung eines Datenbankschemas beinhalten. (Dies sollte im Wesentlichen auf die Architektur aus der Konzeptionsphase aufbauen und diese weiter verfeinern.
   - [**2P**] Technologiestack des App-Stores und der Apps.
-  - [**1P**] Build-Prozess: Es sollen alle Schritte dargelegt werden; inkl. Konfiguration und Zielen. Es muss klar ersichtlich sein, welche Schritte manuell und welche automatisiert durchgeführt werden. Für manuelle Schritte ist ggf. zu begründen warum diese nicht automatisiert wurden bzw. werden können. 
-  - [**1P**] Stand der QS: Es ist insbesondere der Prozess darzustellen, wie auf Probleme (zum Beispiel beim Merge, Tests, ...) reagiert wird.
-  - [**8P**] Backlog: d.h. erledigte User Stories, noch offene User Stories, Schätzung der Story Points, Entwicklung der Velocity während des Projekts.
+  - [**1P**] Build-Prozess
+  
+    Es sollen alle Schritte dargelegt werden; inkl. Konfiguration und Zielen. Es muss klar ersichtlich sein, welche Schritte manuell und welche automatisiert durchgeführt werden. Für manuelle Schritte ist ggf. zu begründen warum diese nicht automatisiert wurden bzw. werden können.
+  - [**1P**] Stand der QS
+  
+    Es ist insbesondere der Prozess darzustellen, wie auf Probleme (zum Beispiel beim Merge, Tests, ...) reagiert wird.
+  - [**8P**] Backlog
+  
+    D. h. erledigte User Stories, noch offene User Stories, Schätzung der Story Points, Entwicklung der Velocity während des Projekts.
 
   **Abgaben** (:red:`zum 26.01.2026, 12:00Uhr über Moodle`)
 
@@ -688,9 +698,13 @@ Projektrealisierung - Teil 2 (2. Semester)
 
     - Sourcecode	**25**
     - Build-Prozess	**5**
-    - Dokumentation: Architektur	**10** (*4 Punkte* davon ergeben sich aus der Abschlusspräsentation.)
-    - Documentation: Installation und Konfiguration	**5** (*2 Punkte* davon ergeben sich aus der Abschlusspräsentation.)
-    - Reflexionsbericht	**5** (*pro Person*)
+    - Dokumentation: Architektur	**10** 
+
+      (Achtung: die Dokumentation **muss explizit gegengezeichnet werden**. D.h. es muss klar ersichtlich sein wer die Dokumentation geschrieben hat und wer sie gegengezeichnet hat (Review); die Person dürfen sich nicht überschneiden.)
+    - Dokumentation: Installation und Konfiguration	**5** 
+
+      (Achtung: die Dokumentation **muss explizit gegengezeichnet werden**. D.h. es muss klar ersichtlich sein wer die Dokumentation geschrieben hat und wer sie gegengezeichnet hat (Review); die Person dürfen sich nicht überschneiden.)
+    - Reflexionsbericht	**5** (*pro Person*) (Ausgestaltung analog zur Projektkonzeption)
 
 
   :QS:

@@ -16,7 +16,7 @@ W3WI_SE305.1 - Ausgewählte Aspekte des Software Engineering III
 
 :Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
 :Kontakt: michael.eichberg@dhbw.de, Raum 149B
-:Version: 22SEA
+:Version: 23SEB
 
 
 
@@ -33,17 +33,17 @@ Prüfungsleistung
 
 
 
-Themen
+Themen (Voraussichtlich)
 ---------------------------------------
 
 5 Termine - voraussichtliche Themen:
 
 - `Cybersecurity <https://delors.github.io/sec-cybersecurity/folien.de.rst.html>`__
 - `Klassische Sicherheitsprinzipien <https://delors.github.io/sec-klassische-sicherheitsprinzipien/folien.de.rst.html>`__
+- `Einmalpasswortsysteme <https://delors.github.io/sec-nutzerauthentifizierung/folien.de.rst.html#slide-7>`__
 
-- `Schwachstellen - Bewertung und Handhabung <https://delors.github.io/sec-cvss-cve-vep/folien.de.rst.html>`__
-
-- `Netzwerksicherheit <https://delors.github.io/sec-tcp-ssh-firewalls/folien.de.rst.html>`__
+- `SSH <https://delors.github.io/sec-ssh/folien.de.rst.html>`__
+- `Firewalls <https://delors.github.io/sec-firewalls/folien.de.rst.html>`__
 - `Das TOR Netzwerk <https://delors.github.io/sec-tor/folien.de.rst.html>`__
+- `Schwachstellen - Bewertung und Handhabung <https://delors.github.io/sec-cvss-cve-vep/folien.de.rst.html>`__
 - `CWEs und OWASP <https://delors.github.io/sec-cwe-owasp/folien.de.rst.html>`__
-- ...
