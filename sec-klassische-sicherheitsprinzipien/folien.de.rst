@@ -15,7 +15,7 @@ Klassische Sicherheitsprinzipien
 
 :Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
 :Kontakt: michael.eichberg@dhbw.de
-:Version: 1.2.4
+:Version: 1.2.5
 
 .. supplemental::
 
@@ -35,11 +35,18 @@ Klassische Sicherheitsprinzipien
         https://github.com/Delors/delors.github.io/issues
 
 
+.. class:: new-section
 
 Klassische Sicherheitsprinzipien
 -----------------------------------------------
 
-(Jerome Saltzer and Michael Schroeder, 1975)
+.. container:: section-subtitle
+
+    Jerome Saltzer and Michael Schroeder, 1975
+
+
+Überblick
+-----------------
 
 .. story::
 
@@ -49,7 +56,18 @@ Klassische Sicherheitsprinzipien
 
         .. supplemental::
 
-            :Principle of Economy of Mechanism (aka Principle of Simplicity): Dies fördert zum Beispiel die Korrektheit der Implementierung/Anwendung, da diese schneller verstanden wird und auch einfacher getestet werden kann. Weiterhin reduziert es die Angriffsfläche.
+            :Principle of Economy of Mechanism (aka Principle of Simplicity):  fördert zum Beispiel die Korrektheit der Implementierung/Anwendung, da diese schneller verstanden wird und auch einfacher getestet werden kann. Weiterhin reduziert es die Angriffsfläche.
+
+                Beispiele:
+
+                - das Unix Datei-Rechte System
+                - Mailbox Kommunikation zwischen Systemen und Komponenten
+                - ...
+
+        .. presenter-note::
+
+            Vereinfacht: Je weniger Regeln, Zustände und Sonderfälle ein Sicherheitsmechanismus hat, desto sicherer ist er.
+
 
     :Principle of Fail-Safe Defaults: Standardmäßig sollte der Zugriff auf Ressourcen verweigert werden.
 
@@ -67,9 +85,9 @@ Klassische Sicherheitsprinzipien
 
     :Principle of Least Authority (aka POLA)/ Principle of Least Privilege: Jedes Programm und jeder Benutzer sollte nur die für seine Aufgabe unbedingt notwendigen Rechte besitzen.
 
-    :Principle of Separation of Privilege: Ein System sollte in mehrere POLA konforme Komponenten unterteilt sein. Sollte eine Komponente kompromittiert sein, dann sind die Möglichkeiten des Angreifers dennoch begrenzt. D. h. kritische Operationen sollten nur ausgeführt werden, wenn mehrere Bedingungen erfüllt sind.
+    :Principle of Separation of Privilege: Ein System sollte in mehrere POLA konforme Komponenten unterteilt sein. Sollte eine Komponente kompromittiert sein, dann sind die Möglichkeiten des Angreifers dennoch begrenzt. D. h. kritische Operationen sollten nur ausgeführt werden, wenn mehrere *unabhängige* Bedingungen erfüllt sind.
 
-        (Eng verwandt mit dem POLA.)
+        (Eng verwandt mit dem bzw. ergänzend zum POLA.)
 
         .. supplemental::
 
@@ -79,13 +97,12 @@ Klassische Sicherheitsprinzipien
 
                     *Privilege Separation* (für Programme) sollte nicht mit dem hier beschriebenen Prinzip verwechselt werden. *Privilege Separation* liegt zum Beispiel dann vor, wenn ein Programm in zwei Teile aufgeteilt ist und ein Teil - zum Beispiel zum Zugriff auf Betriebssystemressourcen wie Sockets oder bestimmte Dateien - erhöhte Rechte benötigt als der Rest vom Programm. In diesem Fall erfolgt dann der Austausch zwischen den beiden Teilen über eine wohldefinierte, minimale Schnittstelle, die die Rechte des ersten Teils auf das notwendige Minimum beschränkt.
 
-    :Principle of Least Common Mechanism: Die Sicherheitsmechanismen sollten über Nutzer (
-         insbesondere aber auch Programme, die andere Programme nutzen) hinweg möglichst wenig gemeinsam haben.
+    :Principle of Least Common Mechanism: Die Sicherheitsmechanismen sollten über Nutzer (insbesondere aber auch Programme, die andere Programme nutzen) hinweg möglichst wenig gemeinsam haben.
 
         .. supplemental::
 
             **Beispiel - Principle of Least Common Mechanism**
-            (~ :ger:`Grundsatz des kleinsten gemeinsamen Mechanismus``)
+            (~ :ger:`Grundsatz des kleinsten gemeinsamen Mechanismus`)
 
             Das Prinzip besagt zum Beispiel, dass die Mechanismen, die von mehreren Benutzern verwendet werden oder von dem mehrere Nutzer abhängen, minimiert werden sollten.
 
@@ -100,7 +117,7 @@ Klassische Sicherheitsprinzipien
     :Principle of Open Design: Das Prinzip besagt, dass die Sicherheit eines Mechanismus nicht von der Geheimhaltung seines Designs oder seiner Implementierung abhängen sollte.
 
     (Vgl. Kerckhoffs Prinzip: Die Sicherheit eines Kryptosystems sollte nur von der Geheimhaltung des Schlüssels abhängen.)
-    
+
     :Principle of Psychological Acceptability: Die Sicherheitsmechanismen sollten einfach zu verstehen und zu benutzen sein.
 
     :Principle of Isolation: Die Sicherheitsmechanismen sollten so entworfen sein, dass Fehler in einem Teil des Systems nicht die Sicherheit des gesamten Systems gefährden; d. h. die einzelnen Komponenten sollten möglichst unabhängig voneinander sein und nur über wohldefinierte  Schnittstellen miteinander kommunizieren und entsprechende Sicherheitsüberprüfungen durchführen.

@@ -3,3 +3,9 @@ external/*
 
 code/CopyAndPasteAttack.sh
 code/*.png
+
+topdf.js
+package.json
+package-lock.json
+pnpm-lock.yaml
+TEST*

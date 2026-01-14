@@ -15,7 +15,7 @@ Cybersecurity
 
 :Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
 :Kontakt: michael.eichberg@dhbw.de
-:Version: 2.11
+:Version: 2.12.3
 
 .. supplemental::
 
@@ -48,7 +48,7 @@ Was ist Cybersecurity?
 
             **Cybersecurity is the practice of protecting systems, networks, and programs from digital attacks**. These cyberattacks are usually aimed at accessing, changing, or destroying sensitive information; extorting money from users via ransomware; or interrupting normal business processes.
 
-            -- July 4th, 2024 - `Cisco <https://www.cisco.com/c/en/us/products/security/what-is-cybersecurity.html>`__
+            -- `Cisco <https://www.cisco.com/c/en/us/products/security/what-is-cybersecurity.html>`__ [Last accessed: July 4th, 2024]
 
     .. card::
 
@@ -56,7 +56,7 @@ Was ist Cybersecurity?
 
             [...] The security precautions related to computer information and access address four major threats: **(1) theft of data**, such as that of military secrets from government computers; **(2) vandalism**, including the destruction of data by a computer virus; **(3) fraud**, such as employees at a bank channeling funds into their own accounts; and **(4) invasion of privacy**, such as the illegal accessing of protected personal financial or medical data from a large database. [...]
 
-            -- July 4th, 2024 - `Britannica <https://www.britannica.com/technology/computer-security>`__
+            -- `Britannica <https://www.britannica.com/technology/computer-security>`__ [Last accessed: July 4th, 2024]
 
     .. card::
 
@@ -72,13 +72,28 @@ Was ist Cybersecurity?
 
     .. card::
 
-        Das Ziel der IT-Sicherheit ist es Systeme vor:
+        Das Ziel der IT-Sicherheit ist der Schutz von Systemen vor:
 
         - Ausfall
         - Missbrauch
         - Sabotage
         - Spionage
-        - Betrug und Diebstahl zu schützen
+        - Manipulation
+        - Diebstahl
+
+        .. supplemental::
+
+            Ein einfacher Überlastungsangriff (Denial of Service) hat normalerweise das Ziel für einen **Ausfall** zu sorgen.
+
+            Ein Beispiel für **Missbrauch** ist ein Bankangestellter, der Kundendaten verwendet, um sich selbst zu bereichern.
+
+            Bei **Sabotage** kann man zum Beispiel an Stuxnet denken, das iranische Atomanlagen angegriffen hat, um diese physisch zu beschädigen.
+
+            **Spionage** umfasst das unbefugte Auslesen von Informationen. Dies kann durch die Ausnutzung von Kameras oder Mikrofonen erfolgen, aber auch durch die Ausspähung von Daten in Datenbanken oder das Mitschneiden unverschlüsselter Netzwerkverbindungen.
+
+            **Manipulation** umfasst zum Beispiel das Verändern von Daten in Datenbanken oder auf Speichermedien oder das Abfangen und Verändern von Netzwerkverkehr. Zum Beispiel wenn ein Student in ein Prüfungsverwaltungssystem eingreift, um seine Noten zu ändern.
+
+            Im Rahmen von Wirtschaftsspionage werden häufig **Diebstähle** von geistigem Eigentum (z. B. Quellcode, Designs, Patente) durchgeführt.
 
 
 
@@ -106,12 +121,19 @@ IT-Security Vorfälle
 
             [...] The attackers have held data hostage and offered a key for access in return for the $8 million ransom, said PT Telkom Indonesia’s director of network & IT solutions, Herlan Wijanarko, without giving further details. Wijanarko said the company, in collaboration with authorities at home and abroad, is investigating and trying to break the encryption that made data inaccessible. [...]
 
-            -- June 25th, 2024 - `AP News <https://apnews.com/article/indonesia-ransomware-attack-national-data-center-213c14c6cc69d7b66815e58478f64cee>`__
+            -- `June 25th, 2024; AP News <https://apnews.com/article/indonesia-ransomware-attack-national-data-center-213c14c6cc69d7b66815e58478f64cee>`__
+
+    .. card::
 
         .. exercise:: Ransomware Angriffe und Backups
-            :class: incremental
 
             Was ist bei der Erstellung von Backups zu beachten, um sich gegen Ransomware Angriffe zu schützen? Warum ist dies wichtig?
+
+            .. remark::
+                :class: incremental
+
+                - Ransomware kann ggf. auch Backup-Systeme angreifen.
+                - Ransomware kann erst mit Zeitverzögerung aktiv werden.
 
             .. solution::
                 :pwd: air-gapped-backups
@@ -133,16 +155,13 @@ IT-Security Vorfälle
                   **RPO** (*Recovery Point Objective*) beschreibt den maximal tolerierten Datenverlust in Zeit. Bei einer RPO von 4 Stunden wird ein maximaler Verlust von 4 Stunden akzeptiert.
 
                   **RTO** (*Recovery Time Objective*) beschreibt die maximal tolerierte Ausfallzeit eines Systems/Services. Bei einer RTO von 2 Stunden muss spätestens 2 Stunden nach einem Ausfall das System wieder produktiv laufen.
-                - Backups verschlüsseln, Schlüssel getrennt und sicher (ggf. offline) verwalten. 
+                - Backups verschlüsseln, Schlüssel getrennt und sicher (ggf. offline) verwalten.
 
                   (Wenn die Schlüssel kompromittiert/verschlüsselt sind, nützt das beste Backup nichts.)
                 - Regelmäßig Wiederherstellungstests durchführen (inkl. kompletter System- und Datenbank‑Restores).
                 - Einen Wiederanlaufplan/Playbook für Ransomware-Fälle definieren (Reihenfolge der Restores, saubere Netze, erneute Infektion verhindern).
 
-            Zu bedenken:
 
-            - Ransomware kann ggf. auch Backup-Systeme angreifen.
-            - Ransomware kann erst mit Zeitverzögerung aktiv werden.
 
     .. card::
 
@@ -154,7 +173,7 @@ IT-Security Vorfälle
 
             […] The government could then provide those businesses with advice and support, including notifying them if any such payment would risk breaking the law by sending money to sanctioned cybercriminal groups, many of whom are based in Russia. […]
 
-            -- July, 22nd, 2025 - `The Guardian <https://www.theguardian.com/technology/2025/jul/22/uk-government-to-ban-public-bodies-from-paying-ransoms-to-hackers>`__
+            -- `July 22nd, 2025; The Guardian <https://www.theguardian.com/technology/2025/jul/22/uk-government-to-ban-public-bodies-from-paying-ransoms-to-hackers>`__
 
 
     .. card::
@@ -171,7 +190,7 @@ IT-Security Vorfälle
 
             Some of these events appear to be linked to North Korean IT workers, who have been increasingly infiltrating crypto and Web3 companies, and compromising their networks, operations, and integrity.
 
-            -- `19.12.2024 - Infosecurity Magazine <https://www.infosecurity-magazine.com/news/cryptohackers-steal-22bn-north/>`__
+            -- `Dec. 19th, 2024; Infosecurity Magazine <https://www.infosecurity-magazine.com/news/cryptohackers-steal-22bn-north/>`__
 
     .. card::
 
@@ -183,19 +202,32 @@ IT-Security Vorfälle
 
             [...], the cybersecurity company Dragos published a report with details about a new malware dubbed FrostyGoop, which the company says is designed to target industrial control systems [...]
 
-            -- Juli 2024 - `Techcrunch <https://techcrunch.com/2024/07/23/hackers-shut-down-heating-in-ukrainian-city-with-malware-researchers-say/?guccounter=1>`__
+            -- `July 23rd, 2024; Techcrunch <https://techcrunch.com/2024/07/23/hackers-shut-down-heating-in-ukrainian-city-with-malware-researchers-say/?guccounter=1>`__
 
     .. card::
 
-        .. epigraph::
+        .. deck::
 
-            **US government tells officials, politicians to ditch regular calls and texts**
+            .. card::
+                .. epigraph::
 
-            The U.S. government [CISA] is urging senior government officials and politicians to ditch phone calls and text messages following intrusions at major American telecommunications companies blamed on Chinese hackers. [...]
+                    **US government tells officials, politicians to ditch regular calls and texts**
 
-            The first recommendation: "Use only end-to-end encrypted communications." [...]
+                    The U.S. government [CISA] is urging senior government officials and politicians to ditch phone calls and text messages following intrusions at major American telecommunications companies blamed on Chinese hackers. [...]
 
-            --18.12.2024 - `Reuters <https://www.reuters.com/world/us/us-cyber-watchdog-tells-senior-officials-immediately-adopt-end-to-end-encryption-2024-12-18/>`__
+                    The first recommendation: "Use only end-to-end encrypted communications." [...]
+
+                    -- `Dec. 18th, 2024; Reuters <https://www.reuters.com/world/us/us-cyber-watchdog-tells-senior-officials-immediately-adopt-end-to-end-encryption-2024-12-18/>`__
+
+            .. card:: s-only overlay center-content s-font-size-1200 opacity-10
+                :not-incremental:
+
+                    📱
+
+            .. card:: s-only overlay center-content s-font-size-1200 opacity-10
+                :not-incremental:
+
+                    🚫
 
     .. card::
 
@@ -215,31 +247,7 @@ IT-Security Vorfälle
 
                 “Perplexity always prevents any collection of sensitive information. It was the most private assistant we found in our study.”
 
-            -- April 24th, 2025 - `AP News <https://apnews.com/article/space-weapons-trump-satellites-russia-0fdd31a1e3d350a54823e8a3d228fc17>`__
-
-    .. card::
-
-        .. epigraph::
-
-            **Big Help or Big Brother? UC Davis Study Reveals Alarming Browser Tracking**
-
-            [...] GenAI browser assistants use large language models to make browsing easier and more personalized, and act as your ride-along as you surf the web. [...] these assistants can pose a significant threat to user privacy. [They]  often collect personal and sensitive information and share that information with both first-party servers and third-party trackers [...] one GenAI browser extension,  collected form inputs as well. While filling out a form on the IRS website, [teh extension] exfiltrated the social security number that was provided in the form field.
-
-            -- August 13th, 2025 - `UC Davis <https://engineering.ucdavis.edu/news/big-help-or-big-brother-uc-davis-study-reveals-alarming-browser-tracking>`__
-
-
-    .. card::
-
-        .. epigraph::
-
-            **Chameleon Channels: Measuring YouTube Accounts Repurposed for Deception and Profit**
-
-            [...] We explore this problem of repurposed channels, whereby a channel changes its identity and contents. [...] By observing YouTube channels (re)sold over these 6~months, we find that a substantial number (37%) are used to disseminate potentially harmful content, often without facing any penalty. Even more surprisingly, these channels seem to gain rather than lose subscribers. [...]
-
-            We confirm that these repurposed channels share several characteristics with sold channels -- mainly, the fact that they had a significantly high presence of potentially problematic content. Across repurposed channels, we find channels that became disinformation channels, as well as channels that link to web pages with financial scams.
-
-            -- July 21st, 2025 - `arXiv <https://arxiv.org/abs/2507.16045>`__
-
+            -- `April 24th, 2025; AP News <https://apnews.com/article/space-weapons-trump-satellites-russia-0fdd31a1e3d350a54823e8a3d228fc17>`__
 
     .. card::
 
@@ -253,18 +261,18 @@ IT-Security Vorfälle
 
             [...] The NNSA breach, exploited zero-day vulnerabilities in Microsoft SharePoint servers. Three Chinese threat groups Linen Typhoon, Violet Typhoon, and Storm-2603 were identified as the primary actors [...].
 
-            -- https://cybersecuritynews.com/cia-intelligence-website-compromised/
+            -- `July 28th, 2025; Cyber Security News <https://cybersecuritynews.com/cia-intelligence-website-compromised/>`__
 
 
     .. card::
 
         .. epigraph::
 
-            **Trump administration to spend $1 billion on ‘offensive’ hacking operations**
+            **Trump administration to spend $1 billion on offensive hacking operations**
 
-            [...] Offensive cyber operations can describe a wide range of targeted hacks against U.S. adversaries, which include the use of zero-day exploits — unknown flaws in software that give their operators the ability to hack into a target’s device — or the deployment of spyware, which can be used to steal data from a person. [...]
+            [...] Offensive cyber operations can describe a wide range of targeted hacks against U.S. adversaries, which include the use of zero-day exploits [...] — or the deployment of spyware, which can be used to steal data from a person. [...]
 
-            -- July 14th, 2025 - `TechCrunch <https://techcrunch.com/2025/07/14/trump-administration-to-spend-1-billion-on-offensive-hacking-operations/>`__
+            -- `July 14th, 2025; TechCrunch <https://techcrunch.com/2025/07/14/trump-administration-to-spend-1-billion-on-offensive-hacking-operations/>`__
 
 
     .. card::
@@ -281,12 +289,10 @@ IT-Security Vorfälle
 
             :red:`[...] This is the third case of malware slipping into Steam this year. [...]`
 
-            -- July 24th, 2025 - `BleepingComputer <https://www.bleepingcomputer.com/news/security/hacker-sneaks-infostealer-malware-into-early-access-steam-game/>`__
+            -- `July 24th, 2025; BleepingComputer <https://www.bleepingcomputer.com/news/security/hacker-sneaks-infostealer-malware-into-early-access-steam-game/>`__
 
 
     .. card::
-
-        **Supply-Chain-Angriff**
 
         .. epigraph::
 
@@ -294,118 +300,125 @@ IT-Security Vorfälle
 
             A month after Shai Hulud became the first self-propagating worm in the npm ecosystem, we just discovered the world's first worm targeting VS Code extensions on OpenVSX marketplace [*and also VS Code Marketplace later on*].
 
-            But GlassWorm isn't just another supply chain attack. It's using stealth techniques we've never seen before in the wild - invisible Unicode characters that make malicious code literally disappear from code editors. [...]
+            But GlassWorm isn't just another supply chain attack. It's using :gray:`stealth techniques` we've never seen before in the wild - invisible Unicode characters that make malicious code literally disappear from code editors. [...]
 
-            -- October 18th, 2025 - `Koi Research <https://www.koi.ai/blog/glassworm-first-self-propagating-worm-using-invisible-code-hits-openvsx-marketplace>`__
+            -- `October 18th, 2025; Koi Research <https://www.koi.ai/blog/glassworm-first-self-propagating-worm-using-invisible-code-hits-openvsx-marketplace>`__
 
         .. remark::
 
             Glassworm ist - Stand Dez. 2025 - bereits in mind. `3 Wellen <https://www.techzine.eu/news/security/136912/glassworm-malware-reappears-within-vs-code-ecosystem/>`__ aufgetaucht.
 
+        .. supplemental::
+
+            Bei GlassWorm handelt es sich um einen klassischen         **Supply-Chain-Angriff**.
+
+
+
+Wie versteckt Glassworm seinen Code?
+-----------------------------------------------------------------
+
+.. deck::
+
     .. card::
 
-        .. rubric:: Glassworm erklärt
+        **Idee**
+
+        .. class:: incremental-list
+
+        - GlassWorm nutzt Besonderheiten von Unicode, um bösartigen Code in VS Code Extensions in dem Sinne zu verstecken, dass der Code für Menschen unsichtbar ist.
+        - Dieser Code wird durch einen kleinen Lader in echten Code umgewandelt und ausgeführt.
+
+    .. card::
+
+        **Hintergrund**
+
+        .. class:: incremental-list
+
+        - Im `Unicode Standard <https://www.unicode.org/charts/PDF/UFE00.pdf>`__ sind im Bereich ``FE00–FE0F`` die Variation Selectors definiert.
+        - Diese Zeichen verändern die Darstellung des vorhergehenden Zeichens.
+        - In den meisten Schriftarten haben diese Zeichen keine sichtbare Auswirkung.
+        - In den meisten Code-Editoren (Stand 2025) werden diese Zeichen ignoriert; insbesondere auch dann, wenn keine gültige Verwendung vorliegt.
+
+        .. supplemental::
+
+            Es gibt in Unicode auch explizit definierte `unsichtbare Zeichen <https://invisible-characters.com/>`__, z. B. ZERO WIDTH NON-JOINER (U+200C), die sich ggf. auch für Angriffe eignen.
+
+    .. card::
+
+        **Beispiel**
 
         .. deck::
 
             .. card::
 
-                **Idee**
 
-                .. class:: incremental-list
+                Generierung einer Textdatei „mit unsichtbarem Text“ (>Java 25):
 
-                - GlassWorm nutzt Besonderheiten von Unicode, um bösartigen Code in VS Code Extensions zu verstecken in dem Sinne, dass der Code für Menschen unsichtbar ist.
-                - Dieser Code wird durch einen kleinen Lader in echten Code umgewandelt und ausgeführt.
+                .. include:: code/Gen.java
+                    :code: java
+                    :number-lines:
+                    :class: copy-to-clipboard
 
-            .. card::
+                Ausführung von ``Gen.java`` (Voraussetzung: die Konsole verwendet UTF-8 oder ein anderes Unicode-kompatibles Encoding):
 
-                **Hintergrund**
+                .. code:: console
+                    :number-lines:
 
-                .. class:: incremental-list
-
-                - Im `Unicode Standard <https://www.unicode.org/charts/PDF/UFE00.pdf>`__ sind im Bereich ``FE00–FE0F`` die Variation Selectors definiert.
-                - Diese Zeichen verändern die Darstellung des vorhergehenden Zeichens.
-                - In den meisten Schriftarten haben diese Zeichen keine sichtbare Auswirkung.
-                - In den meisten Code-Editoren (Stand 2025) werden diese Zeichen ignoriert; insbesondere auch dann, wenn keine gültige Verwendung vorliegt.
-
-                .. supplemental::
-
-                    Es gibt in Unicode auch explizit definierte `unsichtbare Zeichen <https://invisible-characters.com/>`__, z. B. ZERO WIDTH NON-JOINER (U+200C), die sich ggf. auch für Angriffe eignen.
+                    $ java Gen.java > invisible.txt
 
             .. card::
 
-                **Beispiel**
+                Hexansicht der generierten Datei (z. B. mit :console:`xxd invisible.txt`):
 
-                .. deck::
+                ::
 
-                    .. card::
+                    00000000: e280 8c2e 0a20 efb8 802e 0a20 efb8 812e  ..... ..... ....
+                    00000010: 0aef b881 efb8 822e 0aef b881 efb8 82ef  ................
+                    00000020: b883 efb8 84ef b885 efb8 86ef b887 efb8  ................
+                    00000030: 882e 0a6c efb8 8128 efb8 8222 efb8 8321  ...l...(..."...!
+                    00000040: efb8 8422 efb8 8529 efb8 863b efb8 872e  ..."...)...;....
+                    00000050: 0a
 
+                .. attention::
 
-                        Generierung einer Textdatei „mit unsichtbarem Text“:
+                    Wir verwenden hier UTF-8 Encoding.
 
-                        .. include:: code/Gen.java
-                            :code: java
-                            :number-lines:
-                            :class: copy-to-clipboard
+                    Zum Beispiel ist das Unicode-Zeichen ``ZERO WIDTH NON-JOINER (U+200C)`` in UTF-8 Kodierung :code:`e2 80 8c`. (Siehe auch: `UTF-8 Wikipedia <https://en.wikipedia.org/wiki/UTF-8#Description>`__)
 
-                        Ausführung von Gen.java:
+                    (Der Punkt im Text(.) hat den Wert ``2e`` und der Zeilenumbruch hat den Wert ``0a``.)
 
-                        .. code:: console
-                            :number-lines:
-                            
-                            $ java Gen.java > invisible.txt
-                            
-                    .. card::
+            .. card::
 
-                        Hexansicht der generierten Datei (z. B. mit :console:`xxd invisible.txt`):
+                .. figure:: code/2025-12-Gen.txt.MacOS_Terminal.webp
+                    :alt: Generierter Text auf der Konsole
+                    :class: screenshot
+                    :align: center
 
-                        ::
+                    Anzeige im MacOS 26.1 Terminal
 
-                            00000000: e280 8c2e 0a20 efb8 802e 0a20 efb8 812e  ..... ..... ....
-                            00000010: 0aef b881 efb8 822e 0aef b881 efb8 82ef  ................
-                            00000020: b883 efb8 84ef b885 efb8 86ef b887 efb8  ................
-                            00000030: 882e 0a6c efb8 8128 efb8 8222 efb8 8321  ...l...(..."...!
-                            00000040: efb8 8422 efb8 8529 efb8 863b efb8 872e  ..."...)...;....
-                            00000050: 0a    
+            .. card::
 
-                        .. attention::
+                .. figure:: code/2025-12-Gen.txt.CotEditor.webp
+                    :class: screenshot
+                    :align: center
 
-                            Wir verwenden hier UTF-8 Encoding.
+                    Anzeige im CotEditor 6.1.2
 
-                            Zum Beispiel ist das Unicode-Zeichen ``ZERO WIDTH NON-JOINER (U+200C)`` in UTF-8 Kodierung :code:`e2 80 8c`. (Siehe auch: `UTF-8 Wikipedia <https://en.wikipedia.org/wiki/UTF-8#Description>`__)
+            .. card::
 
-                    .. card::
+                .. figure:: code/2025-12-Gen.txt.VSCode.webp
+                    :class: screenshot
+                    :align: center
 
-                        .. figure:: code/2025-12-Gen.txt.MacOS_Terminal.webp
-                            :alt: Generierter Text auf der Konsole
-                            :class: screenshot
-                            :align: center
-                        
-                            Anzeige im MacOS 26.1 Terminal 
+                    Anzeige in VS Code 1.107.0
 
-                    .. card::
+            .. card::
 
-                        .. figure:: code/2025-12-Gen.txt.CotEditor.webp
-                            :class: screenshot
-                            :align: center
+                .. figure:: code/2025-12-Gen.txt.Zen.webp
+                    :class: screenshot
+                    :align: center
 
-                            Anzeige im CotEditor 6.1.2
-
-                    .. card::
-
-                        .. figure:: code/2025-12-Gen.txt.VSCode.webp
-                            :class: screenshot
-                            :align: center
-
-                            Anzeige in VS Code 1.107.0
-
-                    .. card::
-
-                        .. figure:: code/2025-12-Gen.txt.Zen.webp
-                            :class: screenshot
-                            :align: center
-
-                            Anzeige in Zen 0.216.1
+                    Anzeige in Zen 0.216.1
 
 
 
@@ -431,7 +444,7 @@ IT-Security Forschung
 
             [...] but a large number of the vendors that were potentially exposed to this were informed about it, and they did whatever they believed they should do. [...]
 
-            -- August, 18th, 2025 - `Dark Reading <https://www.darkreading.com/vulnerabilities-threats/internet-wide-vulnerability-giant-ddos-attacks>`__
+            -- `August 18th, 2025; Dark Reading <https://www.darkreading.com/vulnerabilities-threats/internet-wide-vulnerability-giant-ddos-attacks>`__
 
     .. card::
 
@@ -441,7 +454,7 @@ IT-Security Forschung
 
             Relatively inexpensive hardware can be used to hack the Shimano Di2 wireless gear-shifting systems used by cyclists [...]. They tested the eavesdrop-and-replay attack with a $1,500 USRP software-defined radio, an antenna, and a laptop but said the setup could be miniaturized. Attackers could spoof signals from up to 30 feet away, causing the target bike to shift gears unexpectedly or lock into the wrong gear.
 
-            --August 2024 - `summary provided by ACM <https://technews.acm.org/archives.cfm?fo=2024-08-aug/aug-16-2024.html>`__; `full article: Wired <https://www.wired.com/story/shimano-wireless-bicycle-shifter-jamming-replay-attacks/>`__
+            -- `August 16th, 2024; summary provided by ACM <https://technews.acm.org/archives.cfm?fo=2024-08-aug/aug-16-2024.html>`__; `August 14th, 2024; full article: Wired <https://www.wired.com/story/shimano-wireless-bicycle-shifter-jamming-replay-attacks/>`__
 
     .. card::
 
@@ -459,7 +472,7 @@ IT-Security Forschung
 
                 [...] The RAMBO attack achieves data transfer rates of up to 1,000 bits per second (bps) [at a distance of up to 7 meters], equating to 128 bytes per second, or 0.125 KB/s.
 
-            --September 2024 - `Bleepingcomputer <https://www.bleepingcomputer.com/news/security/new-rambo-attack-steals-data-using-ram-in-air-gapped-computers/>`__
+            -- `September 7th, 2024; Bleepingcomputer <https://www.bleepingcomputer.com/news/security/new-rambo-attack-steals-data-using-ram-in-air-gapped-computers/>`__
 
 
         .. supplemental::
@@ -483,7 +496,7 @@ IT-Security Forschung
 
             [...] The attack setup for SnailLoad. A victim downloads data from an attacker's HTTP server while it watches a video on a video-sharing platform, e.g., YouTube. Due to the network bottleneck on the victim's side, the attacker can infer the transmitted amount of data by measuring the packet round trip time. The round trip time traces are unique per video and can be used to classify the video watched by the victim. [...]
 
-            -- 28.6.2024 Snailload: `Paper <https://www.snailload.com/snailload.pdf>`__, `Web <https://www.snailload.com>`__
+            -- June 28th 6, 2024; Snailload `Paper <https://www.snailload.com/snailload.pdf>`__, `Web <https://www.snailload.com>`__
 
     .. card::
 
@@ -495,7 +508,7 @@ IT-Security Forschung
 
             Malware in the air-gap and audio-gap computers generates crafted pixel patterns that produce noise in the frequency range of 0 - 22 kHz," Dr. Mordechai Guri, the head of the Offensive Cyber Research Lab in the Department of Software and Information Systems Engineering at the Ben Gurion University of the Negev in Israel, said in a newly published paper. [...]
 
-            -- Sept. 10th, 2024 - `The Hacker News <https://thehackernews.com/2024/09/new-pixhell-attack-exploits-screen.html>`__
+            -- `Sept. 10th, 2024; The Hacker News <https://thehackernews.com/2024/09/new-pixhell-attack-exploits-screen.html>`__
 
     .. card::
 
@@ -508,14 +521,40 @@ IT-Security Forschung
 
             Rowhammer is a method of attempting to corrupt memory by repeatedly "hammering" rows of memory cells with a burst of read or write operations. The repeat operations can create electrical interference between rows of memory cells, potentially disrupting operations.[...]
 
-            -- July 13th, 2025 - `The Register <https://www.theregister.com/2025/07/13/infosec_in_brief/>`__
+            -- `July 13th, 2025; The Register <https://www.theregister.com/2025/07/13/infosec_in_brief/>`__
 
 
+
+Missbrauch von Vertrauen in IT-Systeme
+-------------------------------------------------------------
+
+.. deck::
+
+    .. card::
+
+        .. epigraph::
+
+            **Big Help or Big Brother? UC Davis Study Reveals Alarming Browser Tracking**
+
+            [...] GenAI browser assistants use large language models to make browsing easier and more personalized, and act as your ride-along as you surf the web. [...] these assistants can pose a significant threat to user privacy. [They] often collect personal and sensitive information and share that information with both first-party servers and third-party trackers [...] one GenAI browser extension,  collected form inputs as well. While filling out a form on the IRS website, [the extension] exfiltrated the social security number that was provided in the form field.
+
+            -- `August 13th, 2025; UC Davis <https://engineering.ucdavis.edu/news/big-help-or-big-brother-uc-davis-study-reveals-alarming-browser-tracking>`__
+
+    .. card::
+
+        .. epigraph::
+
+            **Chameleon Channels: Measuring YouTube Accounts Repurposed for Deception and Profit**
+
+            [...] We explore this problem of repurposed channels, whereby a channel changes its identity and contents. [...] By observing YouTube channels (re)sold over these 6 months, we find that a substantial number (37%) are used to disseminate potentially harmful content, often without facing any penalty. Even more surprisingly, these channels seem to gain rather than lose subscribers. [...]
+
+            We confirm that these repurposed channels share several characteristics with sold channels -- mainly, the fact that they had a significantly high presence of potentially problematic content. Across repurposed channels, we find channels that became disinformation channels, as well as channels that link to web pages with financial scams.
+
+            -- `July 21st, 2025; arXiv <https://arxiv.org/abs/2507.16045>`__
 
 
 Kampf gegen Cyberkriminalität
------------------------------------------------------------------------------------------
-
+------------------------------------
 .. deck::
 
     .. card::
@@ -528,7 +567,7 @@ Kampf gegen Cyberkriminalität
 
             [...] Mit einem Gesamtwert von 135 Millionen US-Dollar besteht laut Interpol mehr als die Hälfte davon aus beschlagnahmten Fiat-Währungen wie US-Dollar, Euro oder Yen. Weitere zwei Millionen Dollar liegen in Form von Kryptowährungen vor. Hinzu kommen andere Vermögenswerte wie etwa Immobilien, Luxusfahrzeuge, teurer Schmuck und andere hochwertige Gegenstände und Sammlungen im Gesamtwert von 120 Millionen US-Dollar. [...]
 
-            --29. Juni 2024 - `Golem.de <https://www.golem.de/news/fast-4-000-verhaftungen-interpol-gelingt-grosser-schlag-gegen-onlinebetrug-2406-186568.html>`__
+            -- `3.12.2024; Golem.de <https://www.golem.de/news/fast-4-000-verhaftungen-interpol-gelingt-grosser-schlag-gegen-onlinebetrug-2406-186568.html>`__
 
     .. card::
 
@@ -540,7 +579,7 @@ Kampf gegen Cyberkriminalität
 
             Dass Geräte ab Werk mit Schadsoftware ausgeliefert werden, ist gerade im unteren Preissegment keine Seltenheit. Sicherheitsforscher deckten erst im vergangenen Jahr eine Malware-Kampagne auf, bei der vor allem billige Android-Geräte wie Smartphones, Tablets und TV-Boxen aus China vor ihrer Auslieferung an Endkunden mit einer Schadsoftware ausgestattet worden waren.
 
-            -- 3.12.2024 - `Golem.de: CEO verhaftet <https://www.golem.de/news/ceo-verhaftet-satellitenreceiver-jahrelang-mit-ddos-funktion-ausgeliefert-2412-191354.html>`__
+            -- `3.12.2024; Golem.de: CEO verhaftet <https://www.golem.de/news/ceo-verhaftet-satellitenreceiver-jahrelang-mit-ddos-funktion-ausgeliefert-2412-191354.html>`__
 
 
     .. card::
@@ -555,7 +594,7 @@ Kampf gegen Cyberkriminalität
 
             The State Department said Thursday it is offering an up to $5 million reward for information about the conspirators and others associated with the two “North Korean front companies.”
 
-            -- 12.12.2024 - `CNBC <https://www.cnbc.com/2024/12/12/north-koreans-charged-identity-theft-extortion-conspiracy-doj.html>`__
+            -- `Dec. 12th, 2024; CNBC <https://www.cnbc.com/2024/12/12/north-koreans-charged-identity-theft-extortion-conspiracy-doj.html>`__
 
 
     .. card::
@@ -566,7 +605,7 @@ Kampf gegen Cyberkriminalität
 
             [...] Nguyen Hoang Thach of STARLabs SG used a single integer overflow to exploit #VMware ESXi - a first in Pwn2Own history. He earns $150,000 [...]
 
-            -- May 17, 2025 - `Davey Winder <https://www.forbes.com/sites/daveywinder/2025/05/17/vmware-hacked-as-150000-zero-day-exploit-dropped/>`__
+            -- `May 17th, 2025; Davey Winder <https://www.forbes.com/sites/daveywinder/2025/05/17/vmware-hacked-as-150000-zero-day-exploit-dropped/>`__
 
     .. card::
 
@@ -586,7 +625,7 @@ Kampf gegen Cyberkriminalität
 
             [...]
 
-            -- August 24th, 2025 - `BleepingComputer <https://www.bleepingcomputer.com/news/security/cisa-open-sources-thorium-platform-for-malware-forensic-analysis/>`__
+            -- `August 24th, 2025; BleepingComputer <https://www.bleepingcomputer.com/news/security/cisa-open-sources-thorium-platform-for-malware-forensic-analysis/>`__
 
 
     .. card::
@@ -601,7 +640,7 @@ Kampf gegen Cyberkriminalität
 
             The operation disrupted a global attack infrastructure [...].
 
-            -- July 16th, 2025 - `HelpNet Security <https://www.helpnetsecurity.com/2025/07/16/pro-russian-cybercrime-crackdown-noname05716/>`__
+            -- `July 16th, 2025; HelpNet Security <https://www.helpnetsecurity.com/2025/07/16/pro-russian-cybercrime-crackdown-noname05716/>`__
 
 
 .. class:: new-section
@@ -616,38 +655,48 @@ Cybersicherheit ist das Geschäftsrisiko Nr. 1
 
 .. deck::
 
-    .. epigraph::
+    .. card::
 
-        **Cybervorfälle wie Ransomware-Angriffe, Datenschutzverletzungen und IT-Unterbrechungen sind laut dem Allianz Risk Barometer im Jahr 2024 die größte Sorge für Unternehmen weltweit.** An zweiter Stelle steht die eng miteinander verknüpfte Gefahr der Betriebsunterbrechung. [...]
+        .. epigraph::
 
-        Cybervorfälle (36% der Gesamteinsätze) sind zum dritten Mal in Folge das weltweit gefürchtetste Risiko [...]. Eine Datenschutzverletzung wird von den Befragten des Allianz Risk Barometers (59%) als die besorgniserregendste Cyberbedrohung angesehen, gefolgt von Angriffen auf kritische Infrastrukturen und physische Vermögenswerte (53%). [...]
+            **Cybervorfälle wie Ransomware-Angriffe, Datenschutzverletzungen und IT-Unterbrechungen sind laut dem Allianz Risk Barometer im Jahr 2024 die größte Sorge für Unternehmen weltweit.** An zweiter Stelle steht die eng miteinander verknüpfte Gefahr der Betriebsunterbrechung. [...]
 
-        Cyberkriminelle suchen vermehrt nach Möglichkeiten, neue Technologien wie generative künstliche Intelligenz (KI) zu nutzen, um Angriffe zu automatisieren und zu beschleunigen und so effektivere Malware und Phishing zu schaffen. [...]
+            Cybervorfälle (36% der Gesamteinsätze) sind zum dritten Mal in Folge das weltweit gefürchtetste Risiko [...]. Eine Datenschutzverletzung wird von den Befragten des Allianz Risk Barometers (59%) als die besorgniserregendste Cyberbedrohung angesehen, gefolgt von Angriffen auf kritische Infrastrukturen und physische Vermögenswerte (53%). [...]
 
-        -- Jan. 24 - `Allianz Risk Barometer 2024 <https://www.allianz-trade.de/wissen/wirtschafts-news/allianz-risk-barometer-2024-geschaeftsrisiken.html?utm_source=google&utm_medium=cpc&utm_campaign=[generic][mm][de][de][leadgen][trade_credit_insurance][e][p][b][p-max]-eh_wkv_p-max&_bt=&_bk=&_bm=&_bn=x&_bg=&gad_source=1&gbraid=0AAAAAC_uaZo7sk9ZvZrwUYEuUPFQbJoY1&gclid=Cj0KCQiAvP-6BhDyARIsAJ3uv7aL2d0IlFz61--XDPzi50sJUl5JjeneJlk3ehYu3pTYgkyDz0C0_cMaAtzKEALw_wcB>`__
+            Cyberkriminelle suchen vermehrt nach Möglichkeiten, neue Technologien wie generative künstliche Intelligenz (KI) zu nutzen, um Angriffe zu automatisieren und zu beschleunigen und so effektivere Malware und Phishing zu schaffen. [...]
 
-    .. epigraph::
+            -- `24.01.2024; Allianz Risk Barometer 2024 <https://www.allianz-trade.de/wissen/wirtschafts-news/allianz-risk-barometer-2024-geschaeftsrisiken.html?utm_source=google&utm_medium=cpc&utm_campaign=[generic][mm][de][de][leadgen][trade_credit_insurance][e][p][b][p-max]-eh_wkv_p-max&_bt=&_bk=&_bm=&_bn=x&_bg=&gad_source=1&gbraid=0AAAAAC_uaZo7sk9ZvZrwUYEuUPFQbJoY1&gclid=Cj0KCQiAvP-6BhDyARIsAJ3uv7aL2d0IlFz61--XDPzi50sJUl5JjeneJlk3ehYu3pTYgkyDz0C0_cMaAtzKEALw_wcB>`__
 
-        More Than 25% of U.K. Businesses Hit by Cyberattack in Last Year
+    .. card::
 
-        A survey by the U.K.’s Royal Institution of Chartered Surveyors found an increase in the share of U.K. businesses experiencing a cyberattack in the last year from 16% in 2024 to around 27%. Nearly three-quarters (73%) of respondents to the survey expect a cybersecurity incident to impact their operations in the next one to two years. Risk areas identified by the survey include building management systems, CCTV networks, Internet of Things devices, access control systems, and other operational technologies.
+        .. epigraph::
 
-        -- 2 Juli 2025 - `Summary provided by ACM; Full article: Guardian <https://www.theguardian.com/business/2025/jun/30/uk-businesses-hit-by-cyber-attack-last-year-report>`__
+            More Than 25% of U.K. Businesses Hit by Cyberattack in Last Year
 
-    .. epigraph::
+            A survey by the U.K.’s Royal Institution of Chartered Surveyors found an increase in the share of U.K. businesses experiencing a cyberattack in the last year from 16% in 2024 to around 27%. Nearly three-quarters (73%) of respondents to the survey expect a cybersecurity incident to impact their operations in the next one to two years. Risk areas identified by the survey include building management systems, CCTV networks, Internet of Things devices, access control systems, and other operational technologies.
 
-        **Experten: Cyberangriff auf Jaguar ist teuerster in britischer Geschichte**
+            -- `July 2nd, 2025; Summary provided by ACM; Full article: Guardian <https://www.theguardian.com/business/2025/jun/30/uk-businesses-hit-by-cyber-attack-last-year-report>`__
 
-        Wochenlang stand die Produktion von Jaguar Land Rover still. Das hatte nicht nur auf den britischen Autobauer erhebliche Auswirkungen.
+    .. card::
 
-        Die Einbußen durch den wochenlangen erzwungenen Produktionsstopp belaufen sich demnach auf geschätzte 1,9 Milliarden Pfund (knapp 2,2 Milliarden Euro). Die Schätzung schließe den Schaden für Zulieferer und Händler mit ein, hieß es in einer Mitteilung des Cyber Monitoring Centre, einer unabhängigen Expertengruppe. Demnach waren mehr als 5000 Organisationen von dem Cyberangriff betroffen.
+        .. epigraph::
 
-        -- `23.10.2025 - Heise Security <https://www.heise.de/news/Experten-Cyberangriff-auf-Jaguar-ist-teuerster-in-britischer-Geschichte-10811032.html>`__
+            **Experten: Cyberangriff auf Jaguar ist teuerster in britischer Geschichte**
+
+            Wochenlang stand die Produktion von Jaguar Land Rover still. Das hatte nicht nur auf den britischen Autobauer erhebliche Auswirkungen.
+
+            Die Einbußen durch den wochenlangen erzwungenen Produktionsstopp belaufen sich demnach auf geschätzte 1,9 Milliarden Pfund (knapp 2,2 Milliarden Euro). Die Schätzung schließe den Schaden für Zulieferer und Händler mit ein, hieß es in einer Mitteilung des Cyber Monitoring Centre, einer unabhängigen Expertengruppe. Demnach waren mehr als 5000 Organisationen von dem Cyberangriff betroffen.
+
+            -- `23.10.2025 - Heise Security <https://www.heise.de/news/Experten-Cyberangriff-auf-Jaguar-ist-teuerster-in-britischer-Geschichte-10811032.html>`__
 
 
 
 Wichtige Kennzahlen bzgl. Cybersecurity-Vorfällen\ [#]_
------------------------------------------------------------------
+-------------------------------------------------------------
+
+.. supplemental::
+
+    .. [#] Die Begriffe (MTTI, etc.) sind nicht einheitlich definiert und ggf. ist es sinnvoll zu klären welcher Zeitraum genau gemeint ist.
 
 .. story::
 
@@ -672,7 +721,6 @@ Wichtige Kennzahlen bzgl. Cybersecurity-Vorfällen\ [#]_
 
         Dies kann zum Beispiel auch die Zeit umfassen, die benötigt wird um etwaige Backups einzuspielen oder ggf. Firmware Patches einzuspielen.
 
-.. [#] Die Begriffe sind nicht einheitlich definiert und ggf. ist es sinnvoll zu klären welcher Zeitraum genau gemeint ist.
 
 .. supplemental::
 
@@ -713,12 +761,11 @@ Ausgewählte Angriffe, Angriffsmethoden und Bedrohungsszenarien
 
         - Backdoors (:ger:`Hintertüren`)
         - (Distributed-)Denial-of-service Angriffe
-        - Direct-access Angriffe 
-        
+        - Direct-access Angriffe
+
           Physischer Angriff auf das System.
         - Eavesdropping (:ger:`Abhören`)
         - `Malware`_
-        - `Ransomware`_
         - Person-in-the-middle Angriffe
         - `Social-Engineering Angriffe`_
 
@@ -726,8 +773,8 @@ Ausgewählte Angriffe, Angriffsmethoden und Bedrohungsszenarien
 
         .. class:: incremental-list list-with-explanations
 
-        - Privilege escalation 
-        
+        - Privilege escalation
+
           Unterschieden wird: horizontal bzw. vertikal.
         - Side-channel attacks (:ger:`Seitenkanalangriffe`)
         - Spoofing (z. B. IP-Spoofing) (:ger:`Vortäuschen`)
@@ -857,14 +904,14 @@ Malware (:eng:`Malicious Software`) wird nach Verbreitungsweise und Verhalten kl
 
 .. class:: incremental-list s-only
 
-- **Viren** (:eng:`Viruses`
-- **Würmer** (:eng:`Worms`)
-- **Trojaner** (:eng:`Trojan Horses`)
-- **Rootkits**
-- **Spyware**
+- Viren (:eng:`Viruses`
+- Würmer (:eng:`Worms`)
+- Trojaner (:eng:`Trojan Horses`)
+- Rootkits
+- Spyware
 - `Ransomware`_
-- **Wipers**
-- :gray:`Adware` 
+- Wipers
+- :gray:`Adware`
 
 .. supplemental::
 
@@ -890,8 +937,6 @@ Malware (:eng:`Malicious Software`) wird nach Verbreitungsweise und Verhalten kl
 
     Malware, die heimlich Informationen sammelt und an Angreifer sendet (z. B. Tastatureingaben, Browserdaten, Anmeldeinformationen, persönliche Daten).
 
-  - `Ransomware`_
-
   - **Wipers**
 
     Destruktive Malware, die Daten unwiederbringlich löscht oder zerstört - manchmal getarnt als Ransomware, aber ohne Wiederherstellungsmöglichkeit.
@@ -913,11 +958,11 @@ Es können verschiedene Arten bzw. Angriffstypen unterschieden werden:
 - Scareware
 - Doxware/Leakware
 - Doppelte Erpressung (:eng:`Double Extortion Ransomware`)
-- Dreifache Erpressung (:eng:`Triple Extortion Ransomware`) 
+- Dreifache Erpressung (:eng:`Triple Extortion Ransomware`)
 - *Ransomware as a Service (RaaS)*
 
 .. supplemental::
-        
+
     .. class:: list-with-explanations
 
     - Locker/Screen Locker
@@ -925,7 +970,7 @@ Es können verschiedene Arten bzw. Angriffstypen unterschieden werden:
         Die Nutzer werden aus dem System ausgesperrt.
     - Krypto
 
-        Verschlüsselung der Daten auf dem System. 
+        Verschlüsselung der Daten auf dem System.
     - Scareware
 
         Fake Software - zeigt zum Beispiel Warnungen vor einem Virus - die den Nutzer dazu bringen sollen Geld zu zahlen.
@@ -934,10 +979,10 @@ Es können verschiedene Arten bzw. Angriffstypen unterschieden werden:
 
         Drohung zur Veröffentlichung sensibler Daten, wenn kein Lösegeld gezahlt wird.
     - Doppelte Erpressung (:eng:`Double Extortion Ransomware`)
-    
+
         Es werden nicht nur Daten verschlüsselt, sondern auch gestohlen und mit Veröffentlichung gedroht. (Kombination aus Krypto- und Doxware.)
-    - Dreifache Erpressung (:eng:`Triple Extortion Ransomware`) 
-    
+    - Dreifache Erpressung (:eng:`Triple Extortion Ransomware`)
+
         Zusätzlich zur doppelten Erpressung werden weitere Systeme des Opfers angegriffen (z. B. mittels DDoS), oder auch den Angestellten gedroht oder gedroht Geschäftspartner anzugreifen/zu informieren.)
     - *Ransomware as a Service (RaaS)*
 
@@ -1004,7 +1049,7 @@ Eigenschaften von Social-Engineering Angriffe
 
     With one question, an executive at Ferrari stopped an effort to use deepfake technology to scam the company. CEO Benedetto Vigna (pictured) was impersonated on a call by deepfake software that, using a convincing imitation of Vigna's southern Italian accent, said he needed to discuss something confidential that required an unspecified currency-hedge transaction to be carried out. The executive started to have suspicions and asked, for identification purposes, the title of the book Vigna had recently recommended to him. With that, the call ended.
 
-    -- Juli, 2024 - Zusammenfassung: `ACM <https://technews.acm.org/archives.cfm?fo=2024-07-jul/jul-29-2024.html>`__\ ; Original: `‘I Need to Identify You': How One Question Saved Ferrari From a Deepfake Scam - Bloomberg <https://www.bloomberg.com/news/articles/2024-07-26/ferrari-narrowly-dodges-deepfake-scam-simulating-deal-hungry-ceo>`__
+    -- `July 29th, 2024; Summary provided by ACM <https://technews.acm.org/archives.cfm?fo=2024-07-jul/jul-29-2024.html>`__\ ; `July 26th, 2024; Original: ‘I Need to Identify You': How One Question Saved Ferrari From a Deepfake Scam - Bloomberg <https://www.bloomberg.com/news/articles/2024-07-26/ferrari-narrowly-dodges-deepfake-scam-simulating-deal-hungry-ceo>`__
 
 
 
@@ -1043,7 +1088,7 @@ Eigenschaften von Social-Engineering Angriffe
 
 
 
-Ausgewählte Social-Engineering Angriffe
+Social-Engineering Angriffe mit direktem IT-Security Bezug
 -------------------------------------------------------------
 
 .. story::
@@ -1059,9 +1104,9 @@ Ausgewählte Social-Engineering Angriffe
         .. supplemental::
 
             .. image:: images/phishing-mail-fake-fedex.webp
+                :width: 900px
                 :alt: Typische „FedEx“ Phishing Email
                 :align: center
-
 
     :Smishing:
 
@@ -1071,7 +1116,7 @@ Ausgewählte Social-Engineering Angriffe
 
         Phishing mit Hilfe von Telefonanrufen.
 
-        (`heise.de - Aug. 2025 - Vishing: So gelingt der Angriff per Telefon selbst auf Großunternehmen <https://www.heise.de/hintergrund/Vishing-So-gelingt-der-Angriff-per-Telefon-selbst-auf-Grossunternehmen-10625451.html>`__)
+        (`August 2025; heise.de - Vishing: So gelingt der Angriff per Telefon selbst auf Großunternehmen <https://www.heise.de/hintergrund/Vishing-So-gelingt-der-Angriff-per-Telefon-selbst-auf-Grossunternehmen-10625451.html>`__)
 
         (Z. B. `Anrufe von Europol <https://www.europol.europa.eu/publications-events/publications/vishing-calls>`__)
 
@@ -1085,7 +1130,7 @@ Ausgewählte Social-Engineering Angriffe
 
     :Whaling:
 
-        Phishing, dass sich gegen hochrangige und sehr ausgewählte Personen richtet (z. B. den CEO eines Unternehmens).
+        Spezialisierte Variante des *Spear-Phishing*, dass sich gegen hochrangige und sehr ausgewählte Personen richtet (z. B. den CEO eines Unternehmens).
 
     :Pharming:
 
@@ -1103,12 +1148,6 @@ Ausgewählte Social-Engineering Angriffe
 
         Beobachten von Personen, die sich an einem Computer anmelden, um das Passwort zu erfahren oder die sensitive Informationen auf dem Schreibtisch liegen haben.
 
-    :Tailgating:
-
-        Ein Angreifer nutzt die Zugangsberechtigung einer Person, um sich Zugang zu einem Gebäude zu verschaffen ohne dass die Person dies bemerkt oder gar zustimmt.
-
-        Dies kann z. B. durch Zugangsschleusen verhindert werden, die immer nur einer Person den Zugang gewähren.
-
     :Identity Fraud:
 
         Identitätsdiebstahl. Der Angreifer gibt sich als jemand anderes aus, um an Informationen zu gelangen oder um eine Straftat zu begehen.
@@ -1124,26 +1163,6 @@ Ausgewählte Social-Engineering Angriffe
         .. supplemental::
 
             Credential Harvesting war insbesondere in der Anfangszeit von Github und Bitbucket verbreitet. Es wurden häufig Zugangsdaten und Zertifikate in öffentlichen Repositories gefunden, da die Nutzer diese im Quellcode hinterlegt hatten oder sogar als Ressourcen direkt eingebunden hatten.
-
-    :Doxing:
-
-        Sammeln und Veröffentlichen von privaten Informationen über eine Person, um diese zu belästigen oder zu erpressen.
-
-    :Hoax:
-        Eine bewusste Falschmeldung, die Menschen dazu veranlasst etwas falsches zu glauben.
-
-        .. supplemental::
-
-            Ein Beispiel eines nicht-harmlosen Streichs (Hoax) ist die Falschmeldung vom 1. April 2003, dass Bill Gates gestorben sei. Diese Falschmeldung wurde von vielen Menschen geglaubt und hatte relevanten Einfluss auf den Aktienmarkt.
-
-    :Impersonation oder Pretexting:
-        Vorgabe einer falschen Identität (z. B. als Mitarbeiter des IT-Supports); d. h. der Angreifer gibt sich persönlich als jemand anderes aus, um an Informationen zu gelangen und nutzt dafür keine elektronischen Hilfsmittel.
-
-    :Eavesdropping:
-        Abhören von Gesprächen, um an relevante Informationen zu gelangen.
-
-    :Eliciting Information:
-        Der Angreifer versucht durch geschicktes Fragen an Informationen zu gelangen, die für einen Angriff nützlich sein könnten.
 
     :Baiting (`Ködern`:ger:):
         Der Angreifer bietet etwas an, um an Informationen zu gelangen (z. B. ein USB-Stick mit einem Virus, der sich beim Einstecken des USB-Sticks auf dem Rechner installiert.)
@@ -1176,15 +1195,61 @@ Ausgewählte Social-Engineering Angriffe
         Angreifer registrieren alte Domains, die von Firmen (temporär genutzt) wurden, in der Hoffnung, dass es noch (relevanten) Datenverkehr mit diesen Domains gibt, da möglicherweise nicht aller Code/alle Konfigurationen entsprechend umgestellt wurden. Zum Beispiel auch im Zusammenhang mit Subdomains bei Diensten wie AWS oder GitHub.
 
     :Slopsquatting:
-        Implementation von Sofwarepaketen/-bibliotheken, die es (bisher) *nicht* gibt, die jedoch von bestimmten LLMs häufig im generierten Code eingebunden werden. Die Pakete werden dann implementiert inkl. von den Nutzern ungewünschter Funktionalität.
+        Implementation von Sofwarepaketen/-bibliotheken, die es (bisher) *nicht* gibt, die jedoch von bestimmten LLMs häufig systematisch halluziniert werden und im generierten Code eingebunden werden. Die Pakete werden dann implementiert inkl. von den Nutzern ungewünschter Funktionalität.
 
         .. supplemental::
 
             Slopsquatting ist (Stand Anfang 2025) deswegen möglich, da LLMs beim Generieren von Code häufiger auf nicht-existierende Pakete verweisen und diese im generierten Code importieren. Welche Paket importiert werden ist pro LLM relativ stabil aber über LLM-Grenzen hinweg sehr unterschiedlich.
 
-    :*Noch zu benennen*:
 
-        *Wie an den letzten Einträgen zu erkennen ist, darf diese Liste nicht als abschließend betrachtet werden! Neue Technologien (insbesondere KI) werden (vermutlich) zu neuen Angriffen führen.*
+
+Allgemeine Social-Engineering Angriffe
+-------------------------------------------------------------
+
+.. story::
+
+    .. class:: incremental-list
+
+    :Tailgating:
+
+        Ein Angreifer nutzt die Zugangsberechtigung einer Person, um sich Zugang zu einem Gebäude zu verschaffen ohne dass die Person dies bemerkt oder gar zustimmt.
+
+        Dies kann z. B. durch Zugangsschleusen verhindert werden, die immer nur einer Person den Zugang gewähren.
+
+    :Doxing:
+
+        Sammeln und veröffentlichen von privaten Informationen über eine Person, um diese zu belästigen oder zu erpressen.
+
+    :Hoax:
+        Eine bewusste Falschmeldung, die Menschen dazu veranlasst etwas falsches zu glauben.
+
+        .. supplemental::
+
+            Ein Beispiel eines nicht-harmlosen Streichs (Hoax) ist die Falschmeldung vom 1. April 2003, dass Bill Gates gestorben sei. Diese Falschmeldung wurde von vielen Menschen geglaubt und hatte relevanten Einfluss auf den Aktienmarkt.
+
+    :Impersonation oder Pretexting:
+        Vorgabe einer falschen Identität (z. B. als Mitarbeiter des IT-Supports); d. h. der Angreifer gibt sich persönlich als jemand anderes aus, um an Informationen zu gelangen und nutzt dafür keine elektronischen Hilfsmittel.
+
+        .. class:: subtext
+
+            (Impersonation ≘ :ger:`Identitätsbetrug`, Pretexting ≘ :ger:`vortäuschen`)
+
+    :Eavesdropping:
+        Abhören von Gesprächen, um an relevante Informationen zu gelangen.
+
+    :Eliciting Information:
+        Der Angreifer versucht durch geschicktes Fragen an Informationen zu gelangen, die für einen Angriff nützlich sein könnten.
+
+
+
+Social-Engineering Angriffe - Quo Vadis
+-------------------------------------------------------------
+
+:*Noch zu benennen*:
+
+    *Die Liste der Social-Engineering Angriffe darf nicht als abschließend betrachtet werden!*
+
+    Neue Technologien (insbesondere KI) haben bereits zu neuen Angriffen geführt und werden vermutlich weitere Angriffe ermöglichen.
 
 
 
@@ -1227,7 +1292,7 @@ Bug-Bounty-Programme
 
             [...] Zero Day Quest is the "largest of its kind" and will offer a potential $4 million in awards for research into cloud and AI, which he described as "high-impact areas."
 
-            -- 19.11.2024 `Techtarget <https://www.techtarget.com/searchsecurity/news/366616078/Microsoft-to-offer-hackers-millions-in-Zero-Day-Quest-event>`__
+            -- `Nov. 19th, 2024; Techtarget <https://www.techtarget.com/searchsecurity/news/366616078/Microsoft-to-offer-hackers-millions-in-Zero-Day-Quest-event>`__
 
     .. card::
 
@@ -1237,7 +1302,7 @@ Bug-Bounty-Programme
 
             Rewards reaching $2 million for exploit chains similar to those used in sophisticated, real-world attacks. And with bonuses, potential maximum rewards of over $5M.
 
-            -- Last Visited 5. Dezember 2025 `Apple Security Research <https://security.apple.com/bounty/>`__
+            -- `Apple Security Research <https://security.apple.com/bounty/>`__ [Last Visited Dec. 5th, 2025]
 
 .. supplemental::
 
@@ -1258,7 +1323,24 @@ Post-Quantum Cryptography (PQC) Einführen
 
     :incremental:`[...] The transition should also consider cryptoagility, allowing to ensure a more resilient transition to PQC[...]`
 
-    -- 27.11.2024 `Securing Tomorrow, Today: Transitioning to PQC <https://www.bsi.bund.de/SharedDocs/Downloads/EN/BSI/Crypto/PQC-joint-statement.pdf?__blob=publicationFile&v=3>`__
+    -- `Nov. 27,2024; Securing Tomorrow, Today: Transitioning to PQC <https://www.bsi.bund.de/SharedDocs/Downloads/EN/BSI/Crypto/PQC-joint-statement.pdf?__blob=publicationFile&v=3>`__
+
+
+
+
+Quantencomputer - Bedrohungsbewertung
+-------------------------------------------------------------
+
+.. rubric:: [Bewertung der Bedrohung durch Quantencomputer]
+
+.. epigraph::
+
+    [...] preparing for the quantum threat should be considered an integral aspect of cybersecurity risk management. In an attempt to quantify the risk, the 2023 issue of the Quantum Threat Timeline conducted a survey among 37 international leading experts from academia and industry. Out of these, 17 estimated the risk that a CRQC appears within a 10-year timeframe higher than 5%. Moreover, 10 of these respondents even indicated a likelihood of about 50% or more.
+
+    :incremental:`[...] To ensure an acceptable level of readiness, we recommend that these should be protected against "store now, decrypt later" attacks as soon as possible, latest by the end of 2030.`
+
+    -- `Nov. 27, 2024; Securing Tomorrow, Today: Transitioning to PQC <https://www.bsi.bund.de/SharedDocs/Downloads/EN/BSI/Crypto/PQC-joint-statement.pdf?__blob=publicationFile&v=3>`__
+
 
 
 
@@ -1279,23 +1361,6 @@ Ergänzende Quellen
 
 
 
-.. class:: center-content
-
-Quantencomputer - Bedrohungsbewertung
--------------------------------------------------------------
-
-.. rubric:: [Bewertung der Bedrohung durch Quantencomputer]
-
-.. epigraph::
-
-    [...] preparing for the quantum threat should be considered an integral aspect of cybersecurity risk management. In an attempt to quantify the risk, the 2023 issue of the Quantum Threat Timeline conducted a survey among 37 international leading experts from academia and industry. Out of these, 17 estimated the risk that a CRQC appears within a 10-year timeframe higher than 5%. Moreover, 10 of these respondents even indicated a likelihood of about 50% or more.
-
-    :incremental:`[...] To ensure an acceptable level of readiness, we recommend that these should be protected against "store now, decrypt later" attacks as soon as possible, latest by the end of 2030.`
-
-    -- 27.11.2024 `Securing Tomorrow, Today: Transitioning to PQC <https://www.bsi.bund.de/SharedDocs/Downloads/EN/BSI/Crypto/PQC-joint-statement.pdf?__blob=publicationFile&v=3>`__
-
-
-
 .. class:: new-subsection transition-scale
 
 Die NIS 2 Richtlinie
@@ -1310,17 +1375,19 @@ Die NIS 2 Richtlinie
 NIS 2 Richtlinie (:eng:`NIS 2 Directive`)
 -------------------------------------------------------------
 
-.. class:: incremental-list list-with-explanations
+.. story::
 
-- Die NIS2-Richtlinie ist die zweite EU-Richtlinie zur Netz- und Informationssicherheit (NIS) in der EU.
-- *seit 17. Oktober 2024 müss(t)en alle nationalstaaten entsprechende Regelungen in nationales Recht umgesetzt haben und ab 18. Oktober 2024 anwenden*
-- Das Hauptziel ist die Verbesserung der Widerstandsfähigkeit gegen Cyberkriminalität und die Verbesserung des europäischen und nationalen Cybersecurity-Managements.
+    .. class:: incremental-list list-with-explanations
 
-    Die neue NIS-2-Richtlinie zielt darauf ab, die Widerstandsfähigkeit und Reaktionsfähigkeit des öffentlichen und privaten Sektors zu verbessern. Der Schwerpunkt der Richtlinie liegt auf der Bekämpfung der Cyberkriminalität.
+    - Die NIS2-Richtlinie ist die zweite EU-Richtlinie zur Netz- und Informationssicherheit (NIS) in der EU.
+    - *seit 17. Oktober 2024 hätten alle nationalstaaten entsprechende Regelungen in nationales Recht umgesetzt haben sollen und ab 18. Oktober 2024 anwenden sollen*; Deutschland hat dies im Nov. 2025 getan.
+    - Das Hauptziel ist die Verbesserung der Widerstandsfähigkeit gegen Cyberkriminalität und die Verbesserung des europäischen und nationalen Cybersecurity-Managements.
 
--  Die NIS-2-Richtlinie gilt für Organisationen, inkl. Unternehmen und Zulieferer, die durch Erbringung wesentlicher oder wichtiger Dienstleistungen eine entscheidende Rolle für die Aufrechterhaltung der europäischen Wirtschaft und Gesellschaft spielen.
+      Die neue NIS-2-Richtlinie zielt darauf ab, die Widerstandsfähigkeit und Reaktionsfähigkeit des öffentlichen und privaten Sektors zu verbessern. Der Schwerpunkt der Richtlinie liegt auf der Bekämpfung der Cyberkriminalität.
 
-- Die Führungskräfte von betroffenen Einrichtungen sind für die Überwachung der Umsetzung der NIS-2-Richtlinie verantwortlich und können für Verstöße gegen die NIS-2-Richtlinie haftbar gemacht werden (Artikel 20).
+    -  Die NIS-2-Richtlinie gilt für Organisationen, inkl. Unternehmen und Zulieferer, die durch Erbringung wesentlicher oder wichtiger Dienstleistungen eine entscheidende Rolle für die Aufrechterhaltung der europäischen Wirtschaft und Gesellschaft spielen.
+
+    - Die Führungskräfte von betroffenen Einrichtungen sind für die Überwachung der Umsetzung der NIS-2-Richtlinie verantwortlich und können für Verstöße gegen die NIS-2-Richtlinie haftbar gemacht werden (Artikel 20).
 
 .. supplemental::
 
@@ -1328,9 +1395,9 @@ NIS 2 Richtlinie (:eng:`NIS 2 Directive`)
 
         **Artikel 20, Governance**
 
-        (1)   Die Mitgliedstaaten stellen sicher, dass die Leitungsorgane wesentlicher und wichtiger Einrichtungen die von diesen Einrichtungen zur Einhaltung von Artikel 21 ergriffenen Risikomanagementmaßnahmen im Bereich der Cybersicherheit billigen, ihre Umsetzung überwachen und für Verstöße gegen diesen Artikel durch die betreffenden Einrichtungen verantwortlich gemacht werden können. [...]
+        (1) Die Mitgliedstaaten stellen sicher, dass die Leitungsorgane wesentlicher und wichtiger Einrichtungen die von diesen Einrichtungen zur Einhaltung von Artikel 21 ergriffenen Risikomanagementmaßnahmen im Bereich der Cybersicherheit billigen, ihre Umsetzung überwachen und für Verstöße gegen diesen Artikel durch die betreffenden Einrichtungen verantwortlich gemacht werden können. [...]
 
-        (2)   Die Mitgliedstaaten stellen sicher, dass die Mitglieder der Leitungsorgane wesentlicher und wichtiger Einrichtungen an Schulungen teilnehmen müssen, und fordern wesentliche und wichtige Einrichtungen auf, allen Mitarbeitern regelmäßig entsprechende Schulungen anzubieten, um ausreichende Kenntnisse und Fähigkeiten zur Erkennung und Bewertung von Risiken sowie Managementpraktiken im Bereich der Cybersicherheit und deren Auswirkungen auf die von der Einrichtung erbrachten Dienste zu erwerben.
+        (2) Die Mitgliedstaaten stellen sicher, dass die Mitglieder der Leitungsorgane wesentlicher und wichtiger Einrichtungen an Schulungen teilnehmen müssen, und fordern wesentliche und wichtige Einrichtungen auf, allen Mitarbeitern regelmäßig entsprechende Schulungen anzubieten, um ausreichende Kenntnisse und Fähigkeiten zur Erkennung und Bewertung von Risiken sowie Managementpraktiken im Bereich der Cybersicherheit und deren Auswirkungen auf die von der Einrichtung erbrachten Dienste zu erwerben.
 
         -- NIS 2 - KAPITEL IV `RISIKOMANAGEMENTMAẞNAHMEN UND BERICHTSPFLICHTEN IM BEREICH DER CYBERSICHERHEIT <https://eur-lex.europa.eu/legal-content/DE/TXT/HTML/?uri=CELEX:32022L2555#d1e3310-80-1>`__
 
@@ -1351,7 +1418,7 @@ NIS 2 - Berichtspflichten
 
 
 Von NIS2 betroffene öff. und priv. Einrichtungen\ [#]_
------------------------------------------------------------------
+--------------------------------------------------------------
 
     Folgende Organisation mit mehr als 50 Mitarbeitern und einem Umsatz von mehr als 10 Millionen Euro müssen die NIS-2-Richtlinie einhalten (obligatorisch).
 
@@ -1415,4 +1482,3 @@ NIS 2 - zentrale Einrichtungen
         :Behörden für das Krisenmanagement: Sollte es mehr als eine geben, so wird eine explizit benannt, die für die Koordination und das  Management von *Cybersicherheitsvorfällen großen Ausmaßes und Krisen* zuständig ist
 
 .. TODO Add discussion about the EU Cyber Resilience Act (e.g. https://www.bsi.bund.de/EN/Themen/Unternehmen-und-Organisationen/Informationen-und-Empfehlungen/Cyber_Resilience_Act/cyber_resilience_act_node.html#:~:text=The%20Cyber%20Resilience%20Act%20is,and%20will%20be%20implemented%20gradually.)
-

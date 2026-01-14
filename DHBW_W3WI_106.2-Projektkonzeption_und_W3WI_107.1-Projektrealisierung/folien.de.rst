@@ -16,7 +16,7 @@ Projektkonzeption und -realisierung
 
 :Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
 :Kontakt: michael.eichberg@dhbw-mannheim.de, Raum 149B
-:Version: 23SEB - Rev. 18.12.2025
+:Version: 23SEB - Rev. 13.12.2025
 
 
 
@@ -524,12 +524,13 @@ Projektrealisierung - Teil 1 (1. Semester)
 
   .. rubric:: Abschluss der ersten Projektrealisierungsphase
 
-  Zwischenpräsentation je Gruppe ca. 45 Minuten inkl. Diskussion/Rückfragen. 18 von 120 Punkten der Endnote ergeben sich aus der Zwischenpräsentation in Verbindung mit den abzugebenden Dokumenten.
+  - Zwischenpräsentation je Gruppe ca. 45 Minuten inkl. Diskussion/Rückfragen. 
+  - 18 von 100 Punkten der Endnote ergeben sich aus der Zwischenpräsentation in Verbindung mit den abzugebenden Dokumenten. Bitte denken Sie daran alle relevanten Links in die Dokumentation aufzunehmen. Bitte denken Sie auch daran, dass Dokument mit Seitenzahlen zu versehen und ein Inhaltsverzeichnis zu erstellen. In diesem Rahmen sollten Sie auch sicherstellen, dass alle Abschnitte nummeriert sind.
 
   **Vorführung**
 
   - [**2P**] Aktueller Prototyp des App Stores
-  - [**2P**] Prototypen zweier Apps inkl. Deployment auf OpenStack
+  - [**2P**] Prototypen zweier Apps inkl. Deployment auf OpenStack; d.h. es sollen zwei unterschiedliche Anwendungen deployed werden können. Welche Anwendungen dies sind, können Sie selbst entscheiden. Es reichen für diesen Punkt auch einfache Anwendungen wie zum Beispiel ein Ubuntu mit einem festen Nutzeraccount und/oder ein Windows mit einem festen Nutzeraccount. 
 
   **Präsentation**
 
@@ -537,36 +538,53 @@ Projektrealisierung - Teil 1 (1. Semester)
 
   - [**2P**] Aktueller Stand der statischen und dynamischen Architektur des App-Stores 
 
-    Dies sollte im Wesentlichen über Abbildungen erfolgen und kann ggf. auch die Darstellung eines Datenbankschemas beinhalten. (Dies sollte im Wesentlichen auf die Architektur aus der Konzeptionsphase aufbauen und diese weiter verfeinern.
-  - [**2P**] Technologiestack des App-Stores und der Apps.
+    Dies sollte im Wesentlichen über Abbildungen erfolgen und kann ggf. auch die Darstellung eines Datenbankschemas beinhalten. 
+    
+    (Die Darstellungen sollten im Wesentlichen auf der Architektur aus der Konzeptionsphase aufbauen und diese weiter verfeinern.)
+  - [**1P**] aktualisierter Technologiestack des App-Stores und der Apps. Im Rahmen der Präsentation ist es ggf. ausreichend zu sagen, dass sich nichts geändert hat oder auf Änderungen hinzuweisen. Die begleitende Dokumentation sollte ggf. einfach angepasst werden. D. h. Sie können im Wesentlichen die Dokumentation aus der Konzeptionsphase übernehmen und ggf. anpassen. 
   - [**1P**] Build-Prozess
   
     Es sollen alle Schritte dargelegt werden; inkl. Konfiguration und Zielen. Es muss klar ersichtlich sein, welche Schritte manuell und welche automatisiert durchgeführt werden. Für manuelle Schritte ist ggf. zu begründen warum diese nicht automatisiert wurden bzw. werden können.
+
+    Benennen Sie ggf. die genauen Standards, die sie durchsetzen. Ggf. können Sie einen Anhang erstellen aus dem die genauen Konfigurationen hervorgehen.
   - [**1P**] Stand der QS
   
-    Es ist insbesondere der Prozess darzustellen, wie auf Probleme (zum Beispiel beim Merge, Tests, ...) reagiert wird.
+    Stellen Sie die von Ihnen als relevant identifizierten QS Ziele dar. Stellen Sie *für das wichtigste QS Ziel* dar, wie dieses erreicht werden soll. Für dieses ist insbesondere der vollständige Prozess darzustellen. Sie können diesbezüglich auf den Ergebnissen der Konzeptionsphase aufbauen. Vergessen Sie jedoch nicht den Prozess klar und vollständig darzustellen. Es muss ersichtlich sein, dass der Prozess realistisch durchführbar ist und dann auch ausreichend ist um das Qualitätsziel zu erreichen. 
+
+    .. remark::
+    
+      Den Prozess für dieses QS Ziel müssen Sie leben und am Ende des Projekts auch nachweisen. 
+      
+      Ich empfehle dringend, dass Sie mich bzgl. der Nachweise frühzeitig im nächsten Semester kontaktieren, damit Sie wissen was ich als Nachweis akzeptiere.
   - [**8P**] Backlog
   
-    D. h. erledigte User Stories, noch offene User Stories, Schätzung der Story Points, Entwicklung der Velocity während des Projekts.
+    D. h. erledigte User Stories, noch offene User Stories, neue User Stories, Schätzung der Story Points, Entwicklung der Velocity während des Projekts. Im wesentliche eine Fortschreibung der User Stories aus der Konzeptionsphase.
 
   **Abgaben** (:red:`zum 26.01.2026, 12:00Uhr über Moodle`)
 
   - Aktualisierte Projektdokumentation (PDF)
 
-    Dies umfasst ggf. auch die Teile, die im Rahmen der Projektkonzeption abgegeben wurden. Weiterhin sind folgende Punkte abzudecken:
+    Dies umfasst ggf. auch die Teile, die im Rahmen der Projektkonzeption abgegeben wurden. Insbesondere sind folgende Punkte zu aktualisieren:
 
-    - QS Maßnahmen (d.h. wer macht was wann und warum?)
+    - Dokumentation für die relevanten QS-Ziele und QS Maßnahmen (d.h. wer macht was wann und warum und wie kann die Erreichung des Qualitätsziel sichergestellt werden?)
+      
+      .. attention::
+
+        Für alles was Sie hier Versprechen müssen Sie am Projektende auch entsprechende Nachweise vorlegen können (z. B. Testberichte, Code-Analysen, Reviews, ...).
     - Architektur
     - Technologiestack
     - (vorläufige) Installations- und Konfigurationsanleitung
     
-  - Backlog: mit erledigten und offenen User Stories inkl. Akzeptanzkriterien, Story Points und Entwicklung der Velocity
+    - aktualisiertes Backlog mit erledigten und offenen User Stories. inkl. Akzeptanzkriterien.  Geben Sie auch die Story Points an und die Entwicklung der Velocity bzw. (alternativ) wieviel Zeit Sie für die Umsetzung geschätzt hatten und dann effektiv benötigt haben.
 
             
   **Abgaben** (:red:`zum 28.01.2026, 7:00Uhr über Moodle`)
 
   - Präsentation (PDF)
   - dokumentierte Aufwände (PDF)
+
+
+
 
 
 
@@ -708,10 +726,9 @@ Projektrealisierung - Teil 2 (2. Semester)
 
 
   :QS:
-    **∑ 10**
+    **∑ 8**
 
-    - QS Maßnahmen - Beschreibung	**5**
-    - QS Maßnahmen - Durchführung	**5**
+    - QS Maßnahmen - Beleg der Durchführung
 
   :Produktvideo:
     **∑ 20**
