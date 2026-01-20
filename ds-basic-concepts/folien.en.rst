@@ -436,9 +436,6 @@ In **distributed** (*database*)\ *systems*, only two of the following three prop
 
 
 
-.. ideas: Leader Election Algo., Gossip Protocol, RAFT Protocol, Paxos, AMQP
-
-
 
 .. class:: exercises transition-move-to-top
 
@@ -468,3 +465,15 @@ Exercise
     If the coordinator fails after it has made the decision and noted it in the log file, or if a network partition occurs at this point, the log can only be continued after the coordinator has rebooted. The log is blocked until then.
     - If one of the participants already knows the coordinator's decision, it can forward it to the other participants on request.
     - If a participant has responded with ABORT, they can also reset the transaction without the coordinator and inform the other participants of this on request.
+
+
+
+.. ideas: 
+  Leader Election Algo., 
+  Gossip Protocol, 
+  RAFT Protocol, 
+  Paxos, 
+  AMQP
+  OAuth 2.0
+  OpenID Connect ("Legacy" SAML)
+
