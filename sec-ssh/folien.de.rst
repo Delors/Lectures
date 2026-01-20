@@ -15,7 +15,7 @@ Secure Shell (SSH)
 
 :Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
 :Kontakt: michael.eichberg@dhbw.de
-:Version: 1.3.7
+:Version: 1.4
 
 .. class:: sources
 
@@ -37,7 +37,7 @@ Secure Shell (SSH)
 
 **Verschlüsselte Verbindung**
 
-SSH ermöglicht die sichere Fernanmeldung von einem Computer bei einem anderen (typischerweise über TCP über Port 22). Es bietet mehrere Optionen für eine starke Authentifizierung und schützt die Sicherheit und Integrität der Kommunikation durch starke Verschlüsselung
+SSH ermöglicht die sichere Fernanmeldung von einem Computer bei einem anderen (typischerweise über TCP über Port 22). Es bietet mehrere Optionen für eine starke Authentifizierung und schützt die Sicherheit und Integrität der Kommunikation durch starke Verschlüsselung.
 
 .. compound::
     :class: incremental
@@ -93,6 +93,23 @@ Secure Shell (SSH) - Protokoll
 
 
 
+Secure Shell (SSH) - Authentifizierung mittels Passwort
+------------------------------------------------------------
+
+
+.. scrollable::
+
+    .. figure:: external/SSH-sequence-password.svg
+        :alt: SSH Protokoll
+        :width: 1850px
+        :align: center
+
+        `CC 4.0 <https://creativecommons.org/licenses/by/4.0/deed.en>`__ - `Aleksey Valov - 29 February 2016 <https://commons.wikimedia.org/wiki/File:SSH-sequence-password.svg>`__
+    
+        The font was changed to "Noto Sans Display" for better compatibility.
+    
+
+
 Secure Shell (SSH) - Verbindungsaufbau - Beispiel
 ------------------------------------------------------------
 
@@ -144,6 +161,50 @@ Secure Shell (SSH) - Verbindungsaufbau - Beispiel
         debug1: Sending environment.
         debug1: Sending env LANG = en_US.UTF-8
 
+
+Secure Shell - `Unterstützte Transport-Verschlüsselungsverfahren <https://www.openssh.org/specs.html>`__
+--------------------------------------------------------------------------------------------------------------
+
+**OpenSSH_10.2p1**
+
+.. scrollable::
+
+    .. csv-table::
+        :header: "Cipher Name", "Status", "Beschreibung"
+        :class: sticky-header
+
+        3des-cbc         , DEPRECATED,           three-key 3DES in CBC mode
+        aes256-cbc       , LEGACY,          "AES in CBC mode, with a 256-bit key"
+        aes192-cbc       , LEGACY,          AES with a 192-bit key
+        aes128-cbc       , LEGACY,       AES with a 128-bit key
+        aes128-ctr      , RECOMMENDED,       AES in CTR mode with a 128-bit key
+        aes192-ctr      , RECOMMENDED,      AES in CTR mode with a 192-bit key
+        aes256-ctr      , RECOMMENDED,     AES in CTR mode with a 256-bit key
+        aes128-gcm@openssh.com      , RECOMMENDED,      "AES in Galois/Counter Mode (GCM) with a 128-bit key"
+        aes256-gcm@openssh.com          , RECOMMENDED,      "AES in Galois/Counter Mode (GCM) with a 256-bit key"
+        chacha20-poly1305@openssh.com  , RECOMMENDED,       "ChaCha20 stream cipher with Poly1305 MAC"
+
+    .. container:: legend
+
+        :DEPRECATED: Unterstützt, aber standardmäßig deaktiviert.
+        :LEGACY: Unterstützt für Rückwärtskompatibilität, aber nicht empfohlen.
+        :RECOMMENDED: Empfohlen für den Einsatz.
+
+
+.. supplemental::
+
+    **Anmerkung** 
+    
+    CBC-Modi sind anfällig für bestimmte Angriffe (z. B. Padding-Oracle-Angriffe) und werden insbesondere für Rückwärtskompatibilität unterstützt. 
+
+    **Algorithmen unterstützt von älteren OpenSSH-Versionen**
+
+    - blowfish-cbc , Blowfish in CBC mode
+    - twofish256-cbc , Twofish in CBC mode,with a 256-bit key
+    - serpent256-cbc   , Serpent in CBC mode, with a 256-bit key
+    - arcfour          , the ARCFOUR stream cipher with a 128-bit key
+    - idea-cbc         , IDEA in CBC mode
+    - cast128-cbc      , CAST-128 in CBC mode
 
 
 Secure Shell (SSH) - Risiken durch mangelnde Schlüsselverwaltung
@@ -219,3 +280,11 @@ Schwachstellen in SSH
 
 
 
+SSH und Quantencomputer
+-------------------------------
+
+.. epigraph::
+
+    [...] ssh(1): add a warning when the connection negotiates a non-post quantum key agreement algorithm.
+
+    -- `OpenSSH 10.1 Release Notes <https://www.openssh.org/releasenotes.html>`__
