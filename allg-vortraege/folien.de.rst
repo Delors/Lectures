@@ -14,7 +14,7 @@ Vorträge: Hinweise und Bewertungskriterien
 
 :Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
 :Kontakt: michael.eichberg@dhbw.de, Raum 149B
-:Version: 1.2
+:Version: 2.0
 
 .. supplemental::
 
@@ -75,6 +75,11 @@ Bewertungskriterien
 
        (Das Publikum besteht nicht nur aus dem Dozenten.)
      - Wiederholungen und Füllwörter vermeiden.
+     - Klare und deutliche Aussprache.
+     - Angemessene Sprechgeschwindigkeit.
+     - Selbstsicheres Auftreten; d. h. zum Publikum gewandt stehen und nicht dauerhaft auf den Bildschirm oder die Wand schauen.
+     - Sicherer Umgang mit den Folien; d. h. nicht ablesen, sondern die Folien als Stütze verwenden.
+     - Sicherer Umgang mit den technischen Hilfsmitteln (Laptop, Beamer, Fernbedienung, ggf. Mikrofon).
   3. Effektive Gestaltung der Präsentation (~ 30% der Gesamtnote)
 
      Es kommt hierbei insbesondere darauf an, ob die Inhalte verständlich und nachvollziehbar präsentiert werden. Insbesondere ob Tabellen und Grafiken effektiv eingesetzt werden und „Textgräber“ vermieden werden.
@@ -97,14 +102,14 @@ Bewertungskriterien
 
        .. warning::
 
-          Bei Abweichungen von mehr als 10% wird die Note um eine Stufe reduziert (-0,3); bei 20% wird abgebrochen (-1,0). Dieser Faktor wird auf die Gesamtnote angewendet und kann demzufolge kumulativ wirken, da vermutlich auch bestimmte Inhalte fehlen und dies sich weiter negativ auswirken kann.
+          Bei Abweichungen von mehr als 10% wird die Note um 0,2 verschlechtert; bei 20% wird abgebrochen und die Note um 0,5 verschlechtert. Dieser Faktor wird auf die Gesamtnote angewendet.
      - Wird die Zeit sinnvoll auf die einzelnen Abschnitte verteilt?
 
   5. Fehlender oder falscher Einsatz von KI
 
      Die Verfügbarkeit von KI-Werkzeugen (wie z. B. ChatGPT, Gemini, Claude oder auch von lokalen Modellen) erlaubt es Ihnen schnell und einfach Folien und Präsentationen zu erstellen. Deswegen kommt der inhaltlichen Qualität eine besondere Bedeutung zu. 
      
-     Es gilt, dass **Aussagen, die faktisch falsch, unsinnig oder überflüssig sind, direkt zu Punktabzug führen**. 
+     Es gilt, dass **Aussagen, die faktisch falsch, unsinnig oder überflüssig sind, zu einer Abwertung führen**. 
      
      Inhalte, die bereits *Bestandteil von Vorlesungen oder Allgemeinwissen sind, dürfen nicht wiederholt werden, sondern führen ebenfalls zu Punktabzug.* *Zusammenhangslose Aussagen, die nicht durch Quellen oder eigene Experimente belegt werden können, führen ebenfalls zu Punktabzug.* 
      
@@ -143,8 +148,8 @@ Häufige Fehler
 
 
 
-Checkliste
-------------
+Zusammenfassung
+-----------------------------------------
 
 .. story::
 
@@ -175,3 +180,81 @@ Checkliste
   :Auftreten:   Kontakt zum Publikum hergestellt (nicht auf das Notebook geschaut, nicht auf die Wand geschaut)?
   :Interaktion: War die Interaktion mit dem Fragenden freundlich und zuvorkommend - wurde auf den Fragenden eingegangen.   Wurden Fragen inhaltlich korrekt und umfassend beantwortet, oder wurden „andere” - d.h. nicht gestellte - Fragen beantwortet.
   :Vertrautheit mit der Präsentation: Wurden alle Folien in der Vortragszeit hinreichend dargestellt oder mussten Folien (z.B. aufgrund von Zeitmangel) übersprungen werden?
+
+
+
+.. class:: new-section
+
+Checklisten
+------------------
+
+
+
+.. class:: exercises
+
+Gestaltung der Präsentation
+--------------------------- 
+
+.. story::
+
+  .. rubric:: Anforderungen an die Foliengestaltung
+
+  .. csv-table::
+    :header: "Aspekt", "Erledigt"
+    :widths: 85, 15
+    :width: 100%
+    :class: sticky-header incremental-table-rows dhbw
+
+    "Ein Titelblatt ist vorhanden mit: Name(n), Titel, Datum", ""
+    "Jede Folie hat eine Foliennummer.", ""
+    "Wird der Vortrag von mehreren Personen gehalten, sind die Namen aller Vortragenden auf dem Titelblatt angegeben und auf jeder Folie steht der Name des Vortragenden.", ""
+    "Die kleinste Fontgröße für Text und Code ist 20px.", ""
+    "Die kleinste Fontgröße in einer Grafik ist 16px.", ""
+    "Vordergrund- und Hintergrundfarben bieten `ausreichend Kontrast <https://webaim.org/resources/linkcontrastchecker/>`__ (vgl. `WCAG <https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum>`__) und sind auch auf dem Beamer sichtbar.", ""
+    "Die Animationen und visuellen Effekte unterstützen den Inhalt (kein Selbstzweck).", ""
+    "Farben sind nicht der einzige Mechanismus um eine Information zu transportieren (zusätzliche Symbole/Muster bei Diagrammen).", ""
+    "Codebeispiele, die mehr als drei Zeilen haben, sind nummeriert.", ""
+    "Code ist mit Syntax-Highlighting dargestellt.", ""
+    "Code wird als regulärer (skalierbarer) Text (kein Bild) dargestellt.", ""
+    "Grafiken und Tabellen basierend auf externen Quellen haben Nachweise und Copyrightangaben am Erscheinungsort (Verweis auf Quellenverzeichnis ist ggf. ausreichend).", ""
+    "Bei Zitaten ist die Quelle direkt auf der Folie angegeben (nicht nur im Literaturverzeichnis).", ""
+    "Es gibt keine Vorwärtsverweise.", ""
+    
+  .. class:: incremental
+
+  .. rubric:: Inhaltliche Aspekte der Foliengestaltung
+
+  .. csv-table::
+    :header: "Aspekt", "Erledigt"
+    :widths: 85, 15
+    :width: 100%
+    :class: sticky-header incremental-table-rows dhbw
+
+    "Jede Folie hat eine Aussage/ein Kernthema.", ""
+    "*Alle* Inhalte auf der Folie können von dem Vortragenden erklärt werden.", ""
+    "Alle Aussagen (Bulletpoints) sind faktisch korrekt und sinnvoll.", ""
+    "Alle Aussagen sind belegt durch Quellen oder durch eigene Ergebnisse.", ""
+    "Es gibt keine Präsentation von Inhalten, die im Rahmen der Vorlesung oder vorhergehenden Vorlesungen behandelt wurden.", ""
+    "Es gibt keine Präsentation von Inhalten, die vorhergehende Vorträge behandelt haben; Sprechen Sie sich ggf. bei Bedarf untereinander ab.", ""
+    "Es gibt keine überflüssigen oder redundanten Aussagen.", ""
+    "Für Folien, die nur aus Text bestehen, wurde geprüft ob eine Grafik/Tabelle den Inhalt besser vermitteln könnte.", ""
+    "Es gibt keine Grafiken, die nur der Optik dienen.", ""
+    "Grafiken sind aussagekräftig, werden vollständig erklärt werden und haben eine Legende, wenn die Notation keine Standardnotation ist.", ""
+    "Komplexe Grafiken werden schrittweise aufgebaut (Animationen).", ""
+    "Alle verwendeten Symbole und Icons sind semantisch verständlich und unterstützen das Verständnis.",""
+    "Codebeispiele sind auf *strikt* notwendige Abschnitte reduziert.", ""
+    "Das Design ist konsistent über alle Folien hinweg: Insbesondere werden gleiche Farben für gleiche Dinge verwendet, die Schriftarten sind konsistent, das Layout ist konsistent; Grafiken nutzen die gleiche visuelle Sprache.", ""
+    "Kurzvorträge (bis 10 Minuten) präsentieren keine Agenda/Inhaltsverzeichnis.","" 
+    "Kurzvorträge (bis 10 Minuten) haben nur dann eine Zusammenfassung, wenn diese neue Erkenntnisse bringt.", ""
+    "Die Präsentation wurde (mittels KI) auf Tippfehler überprüft.", ""
+    "Die Präsentation wurde (mittels KI) auf Aussagen, die unnötig, faktisch falsch oder irreführend sind, überprüft.", ""
+
+  .. grid:: incremental margin-top-4em
+    
+    .. cell:: width-40 
+
+      Verifiziert am: ______________________
+
+    .. cell:: width-60 
+    
+      Unterschrift: ___________________________________________
