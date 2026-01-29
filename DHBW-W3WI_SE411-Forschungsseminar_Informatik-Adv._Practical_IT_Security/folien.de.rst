@@ -280,6 +280,27 @@ Zweites Semester: Pentesting von Webanwendungen
 
 
 
+.. class:: no-title
+
+Bewertungskriterien
+-------------------------
+
+.. attention:: 
+
+  Aufgrund des massiven Einsatzes von KI sind die Bewertungskriterien für alle Abgaben (Präsentationen, Dokumentationen) verschärft worden. 
+
+  - Jede Aussage, die faktisch falsch ist, führt unmittelbar zu Punktabzug am Ende (und wird nicht ignoriert werden).
+  - Jede Aussage, die blödsinnig ist, führt zu Punktabzug.
+  - Jede Aussage, die überflüssig ist (*„Blah Blah“*) und nicht dem Thema der Aufgabe/Präsentation dient, führt zu Punktabzug.
+  - Unnötige Aussagen, die bekannte Inhalte (zum Beispiel aus dieser oder anderen Vorlesungen) wiederholen, führen zu Punktabzug.
+  - Jede Aussage, die nicht durch eine Quelle oder durch eigene Experimente belegt werden kann, führt zu Punktabzug.
+  - Qualifizierende Attribute („schneller“, „besser“, „schwerer“ ...) müssen durch konkrete Metriken belegt bzw. definiert werden, ansonsten führen sie zu Punktabzug.
+
+
+  
+
+
+
 .. class:: fade-out
 
 Ablauf
