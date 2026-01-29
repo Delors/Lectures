@@ -74,7 +74,7 @@ Best Practices
 .. compound::
     :class: incremental
 
-    .. rubric:: für Autoren
+    .. rubric:: für die Autoren des Codes
 
     * Reviews nicht persönlich nehmen
     * Nachfragen ggf. als Hinweis verstehen für Dokumentationsmängel
@@ -109,7 +109,7 @@ Code Review von CSS
     .. class:: incremental-list list-with-explanations
 
     - keine Redundanzen, keine unnötigen Style Definitionen.
-    - Konsistente Schreibweise von ....
+    - Konsistente Schreibweise von:
 
       .. class:: incremental-list
 
@@ -128,7 +128,7 @@ Code Review von CSS
       (Z. B. keine Verwendung von :css:`!important`.)
     - Sind die Selektoren effizient?
     - Sind komplizierte Selektoren - falls notwendig - dokumentiert/begründet/nachhvollziehbar?
-    - Konsistente Vorgehensweise in Hinblick auf (z. B.) Responsiveness (z. B. konsistente Verwendung von Größen (rem, rem,...) oder das Farbschema.
+    - Konsistente Vorgehensweise in Hinblick auf (z. B.) Responsiveness (z. B. konsistente Verwendung von Größen (em, rem,...) oder das Farbschema.
     - Einfachheit des Layouts?
     - Gibt es ein klares Vorgehen (Mobile-first or Desktop-first)?
     - Werden Tools eingesetzt, um bei der Formatierung bzw. dem Linting zu helfen.
@@ -166,7 +166,7 @@ Code Reviews von HTML
 
     - Accessibility?
 
-      Nutzt der Code nur :html:`<span>` und :html:`<div>`, oder semantisches HTML?
+      wird primär semantisches HTML genutzt? (D. h. beschränkt sich die Nutzung von :html:`<span>` und :html:`<div>` auf die optische Gestaltung?)
 
       Werden ARIA Tags sinnvoll verwendet?
 
@@ -225,7 +225,7 @@ Code Reviews von JavaScript
     - Wird auf tief verschachtelte Logik verzichtet?
     - Werden Funktionen und Methoden klein und fokussiert gehalten (Single Responsibility)?
     - Werden teure Manipulationen (des DOMs) auf das notwendige Minimum beschränkt?
-    - Werden Eingaben validiert (auf Client und **Server** Seite)?
+    - Werden Eingaben validiert (auf Client und **Server** Seite, falls es sich um Serverseitigen JavaScript Code handelt)?
     - Werden sensible Daten (Passwörter, API-Keys) nicht im Client-Code hartcodiert?
     - Werden keine sensiblen Daten geloggt?
     - Ist das Logging von Fehlern (Error) sinnvoll und enthält genug Kontextinformationen?
@@ -235,7 +235,7 @@ Code Reviews von JavaScript
     - Wird nur minimaler globaler Zustand verwendet?
     - Ist die Verwendung von Bibliotheken/Dependencies gerechtfertigt und aktuell?
     - Gibt es überflüssige oder ungenutzte Abhängigkeiten?
-    - Ist die (Inline-)Dokumentation ausreichend und korrekt.
-    - Sind die TODOs, FIXMEs verständlich und umsetzbar?
+    - Ist die (Inline-)Dokumentation ausreichend und korrekt?
+    - Sind die TODOs und FIXMEs verständlich und umsetzbar?
     - Werden Browser-Kompatibilitätsanforderungen erfüllt?
     - Bei verteilten Anwendungen: ist die Aufteilung der Logik nachvollziehbar und sinnvoll (zum Beispiel auch aus Sicht von Cheatingmöglichkeiten)
