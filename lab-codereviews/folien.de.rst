@@ -15,7 +15,7 @@ Code Reviews
 
 :Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
 :Kontakt: michael.eichberg@dhbw.de
-:Version: 0.2
+:Version: 0.3
 
 .. supplemental::
 
@@ -210,19 +210,33 @@ Code Reviews von JavaScript
     - Wird null/undefined korrekt behandelt?
     - Wird modernes JavaScript verwendet (z. B. Klassen, :javascript:`const` und :javascript:`let` anstatt von `var`, Destrukturierung, Spread und Rest Operator etc.)?
     - Wird :javascript:`eval()` nicht verwendet?
-    - Werden asynchrone Funktionen richtige verwendet?
+    - Werden asynchrone Funktionen richtig verwendet?
+    - Werden Promises korrekt behandelt (keine fehlenden .catch() oder try-catch bei async/await)?
+    - Gibt es potenzielle Nebenläufigkeitsprobleme bei asynchronen Operationen?   
+    - Werden Event Listener korrekt registriert und wieder entfernt (Memory Leaks)?
     - Ist der Kontrollfluss verständlich?
 
       (Nachfragen deuten auf Probleme bzgl. der Verständlichkeit hin.)
+    - Ist der Datenfluss nachvollziehbar?
+
+      (Insbesondere bei der Verwendung von globalem Zustand oder über Modulgrenzen hinweg.)
+    - Wird die Architektur eingehalten?
     - Ist der Code modularisiert?
     - Wird auf tief verschachtelte Logik verzichtet?
+    - Werden Funktionen und Methoden klein und fokussiert gehalten (Single Responsibility)?
+    - Werden teure Manipulationen (des DOMs) auf das notwendige Minimum beschränkt?
     - Werden teure Manipulationen (des DOMs) auf das notwendige Minimum beschränkt?
     - Werden Eingaben validiert (auf Client und **Server** Seite)?
+    - Werden sensible Daten (Passwörter, API-Keys) nicht im Client-Code hartcodiert?
+    - Werden keine sensiblen Daten geloggt?
     - Ist das Logging von Fehlern (Error) sinnvoll und enthält genug Kontextinformationen?
     - Gibt es Testfälle? Falls ja, sind diese ausreichend?
 
       (Codeabdeckung ist hier *nur* ein erster Indikator.)
     - Wird nur minimaler globaler Zustand verwendet?
+    - Ist die Verwendung von Bibliotheken/Dependencies gerechtfertigt und aktuell?
+    - Gibt es überflüssige oder ungenutzte Abhängigkeiten?
     - Ist die (Inline-)Dokumentation ausreichend und korrekt.
     - Sind die TODOs, FIXMEs verständlich und umsetzbar?
+    - Werden Browser-Kompatibilitätsanforderungen erfüllt?
     - Bei verteilten Anwendungen: ist die Aufteilung der Logik nachvollziehbar und sinnvoll (zum Beispiel auch aus Sicht von Cheatingmöglichkeiten)
