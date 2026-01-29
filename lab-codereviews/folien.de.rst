@@ -47,7 +47,7 @@ Was sind Code Reviews
 
             Bei einem Code Review geben Entwickler Feedback zu (fremden) Code; typischerweise vor einem Merge.
 
-            Code Reviews helfen dabei Fehler frühzeitig zu finden, die Qualtiät des Codes zu verbessern und sicherzustellen, dass alle Teammitglieder mit dem Code vertraut sind und verstehen wie der Code funktioniert.
+            Code Reviews helfen dabei Fehler frühzeitig zu finden, die Qualität des Codes zu verbessern und sicherzustellen, dass alle Teammitglieder mit dem Code vertraut sind und verstehen wie der Code funktioniert.
 
     .. card::
 
@@ -152,7 +152,7 @@ Code Reviews von HTML
 
       .. attention::
 
-        Folgende Aspekte (Auszug) sollten automatisiert geprüpft werden:
+        Folgende Aspekte (Auszug) sollten automatisiert geprüft werden:
 
         Sind IDs einmalig, sind alle Element korrekt geschlossen, ist die Baumstruktur korrekt.
 
@@ -162,7 +162,7 @@ Code Reviews von HTML
 
     - Ist die Struktur einfach nachvollziehbar oder übermäßig komplex?
 
-      (Z. B. gibt es eine hohe Anzahl and verschachtelten DIVs oder gibt es eine sinnvolle Strukturierung der Überschriften?).
+      (Z. B. gibt es eine hohe Anzahl an verschachtelten DIVs oder gibt es eine sinnvolle Strukturierung der Überschriften?).
 
     - Accessibility?
 
@@ -172,7 +172,7 @@ Code Reviews von HTML
 
       Haben Bilder ein :html:`alt` Attribut?
 
-    - Keine Verwendung von inlines styles?
+    - Keine Verwendung von inline Styles?
 
     - Keine Verwendung von inline JavaScript?
 
@@ -224,7 +224,6 @@ Code Reviews von JavaScript
     - Ist der Code modularisiert?
     - Wird auf tief verschachtelte Logik verzichtet?
     - Werden Funktionen und Methoden klein und fokussiert gehalten (Single Responsibility)?
-    - Werden teure Manipulationen (des DOMs) auf das notwendige Minimum beschränkt?
     - Werden teure Manipulationen (des DOMs) auf das notwendige Minimum beschränkt?
     - Werden Eingaben validiert (auf Client und **Server** Seite)?
     - Werden sensible Daten (Passwörter, API-Keys) nicht im Client-Code hartcodiert?
