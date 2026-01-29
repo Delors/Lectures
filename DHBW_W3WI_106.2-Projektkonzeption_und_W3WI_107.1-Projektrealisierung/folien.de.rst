@@ -16,7 +16,13 @@ Projektkonzeption und -realisierung
 
 :Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
 :Kontakt: michael.eichberg@dhbw-mannheim.de, Raum 149B
-:Version: 23SEB - Rev. 13.12.2025
+:Version: 23SEB - Rev. 27.01.2026
+
+.. supplemental::
+
+  .. rubric:: Errata
+
+  :27.01.2026: Im Rahmen der Zwischenpräsentation gibt es nur 17 Punkte statt 18 Punkte für die Endnote. (Die Bewertungskriterien bleiben unverändert; die Bewertung der Teilleistungen ändert sich nicht; es handelt sich *nur* um eine Korrektur der Summe.)
 
 
 
@@ -525,7 +531,7 @@ Projektrealisierung - Teil 1 (1. Semester)
   .. rubric:: Abschluss der ersten Projektrealisierungsphase
 
   - Zwischenpräsentation je Gruppe ca. 45 Minuten inkl. Diskussion/Rückfragen. 
-  - 18 von 100 Punkten der Endnote ergeben sich aus der Zwischenpräsentation in Verbindung mit den abzugebenden Dokumenten. Bitte denken Sie daran alle relevanten Links in die Dokumentation aufzunehmen. Bitte denken Sie auch daran, dass Dokument mit Seitenzahlen zu versehen und ein Inhaltsverzeichnis zu erstellen. In diesem Rahmen sollten Sie auch sicherstellen, dass alle Abschnitte nummeriert sind.
+  - 17 von 100 Punkten der Endnote ergeben sich aus der Zwischenpräsentation in Verbindung mit den abzugebenden Dokumenten. Bitte denken Sie daran alle relevanten Links in die Dokumentation aufzunehmen. Bitte denken Sie auch daran, dass Dokument mit Seitenzahlen zu versehen und ein Inhaltsverzeichnis zu erstellen. In diesem Rahmen sollten Sie auch sicherstellen, dass alle Abschnitte nummeriert sind.
 
   **Vorführung**
 
@@ -596,6 +602,21 @@ Projektrealisierung - Teil 2 (2. Semester)
 .. attention::
 
   Die folgenden Informationen werden zum Beginn des 2. Semester aktualisiert. Sie sind aktuell als Platzhalter zu verstehen.
+
+
+Geänderte Bewertungskriterien
+-------------------------------
+
+.. attention:: 
+
+  Aufgrund des massiven Einsatzes von KI im Rahmen der Bearbeitung von Aufgaben und der Erstellung von Präsentationen sind die Bewertungskriterien verschärft worden.
+
+  Folgendes gilt für alle Abgaben (Präsentationen, Dokumentationen):
+
+  - Jedes Aussage, die faktisch falsch ist, führt unmittelbar zu Punktabzug am Ende (und wird nicht ignoriert werden).
+  - Jede Aussage, die blödsinnig ist, führt zu Punktabzug.
+  - Jedes Aussage, die überflüssig ist ("Blah Blah") und nicht dem Thema der Aufgabe/Präsentation dient, führt zu Punktabzug.
+  - Qualifizierende Attribute („schneller“, „besser“, „effizienter“, „leichter“, „schwerer“ ...) müssen durch konkrete Metriken belegt bzw. definiert werden, ansonsten führen sie zu Punktabzug.
 
 
 
