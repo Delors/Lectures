@@ -45,16 +45,16 @@ Was sind Code Reviews
 
         .. definition::
 
-            Bei einem Code Review geben Entwickler Feedback zu (fremden) Code; typischerweise vor einem Merge.
+          Bei einem Code Review geben Entwickler Feedback zu (fremdem) Code; typischerweise vor einem Merge.
 
-            Code Reviews helfen dabei Fehler frühzeitig zu finden, die Qualität des Codes zu verbessern und sicherzustellen, dass alle Teammitglieder mit dem Code vertraut sind und verstehen wie der Code funktioniert.
+          Code Reviews helfen dabei, Fehler frühzeitig zu finden, die Qualität des Codes zu verbessern und sicherzustellen, dass alle Teammitglieder mit dem Code vertraut sind und verstehen, wie der Code funktioniert.
 
     .. card::
 
         .. rubric:: Zweck von Code Reviews
 
         - Qualitätssicherung
-        - Frühzeitiger Fehlererkennung
+        - Frühzeitige Fehlererkennung
         - Wissensverbreitung (im Team)
 
 
@@ -95,7 +95,7 @@ Voraussetzung für Code Reviews
 .. attention::
     :class: incremental
 
-    Es macht nur Sinn Code Reviews für Code durchzuführen, der grundlegenden Qualitätsstandards genügt.
+  Es ergibt nur Sinn, Code Reviews für Code durchzuführen, der grundlegenden Qualitätsstandards genügt.
 
 
 
@@ -108,29 +108,29 @@ Code Review von CSS
 
     .. class:: incremental-list list-with-explanations
 
-    - keine Redundanzen, keine unnötigen Style Definitionen.
+    - keine Redundanzen, keine unnötigen Style-Definitionen.
     - Konsistente Schreibweise von:
 
       .. class:: incremental-list
 
-      - CSS Variablen
+      - CSS-Variablen
       - Klassennamen
       - IDs
 
-    - Sind die Namen (CSS Variablen, Klassennamen und IDs) verständlich und sprechend?
+    - Sind die Namen (CSS-Variablen, Klassennamen und IDs) verständlich und sprechend?
 
       :red:`(Korrektes Deutsch oder Englisch!)`
-    - Werden CSS Variablen sinnvoll verwendet? (Z.B. um ein leicht anpassbares Design zu ermöglichen?)
-    - Werden CSS Layer verwendet, um die Styles zu organisieren und die Wartbarkeit zu erhöhen (Stichwort: Modularisierung)?
-    - Wird CSS Nesting verwendet, um die Struktur der Styles zu verdeutlichen?
+    - Werden CSS-Variablen sinnvoll verwendet? (Z. B. um ein leicht anpassbares Design zu ermöglichen?)
+    - Werden CSS-Layer verwendet, um die Styles zu organisieren und die Wartbarkeit zu erhöhen (Stichwort: Modularisierung)?
+    - Wird CSS-Nesting verwendet, um die Struktur der Styles zu verdeutlichen?
     - *Einfachheit und Korrektheit von* Selektoren
 
       (Z. B. keine Verwendung von :css:`!important`.)
     - Sind die Selektoren effizient?
-    - Sind komplizierte Selektoren - falls notwendig - dokumentiert/begründet/nachhvollziehbar?
-    - Konsistente Vorgehensweise in Hinblick auf (z. B.) Responsiveness (z. B. konsistente Verwendung von Größen (em, rem,...) oder das Farbschema.
+    - Sind komplizierte Selektoren - falls notwendig - dokumentiert/begründet/nachvollziehbar?
+    - Konsistente Vorgehensweise in Hinblick auf (z. B.) Responsiveness (z. B. konsistente Verwendung von Größen (em, rem, ...) oder das Farbschema).
     - Einfachheit des Layouts?
-    - Gibt es ein klares Vorgehen (Mobile-first or Desktop-first)?
+    - Gibt es ein klares Vorgehen (Mobile-first oder Desktop-first)?
     - Werden Tools eingesetzt, um bei der Formatierung bzw. dem Linting zu helfen.
     - Wird modernes CSS verwendet?
 
@@ -148,13 +148,13 @@ Code Reviews von HTML
 
     .. class:: incremental-list
 
-    - Ist der HTML Code korrekt?
+    - Ist der HTML-Code korrekt?
 
       .. attention::
 
         Folgende Aspekte (Auszug) sollten automatisiert geprüft werden:
 
-        Sind IDs einmalig, sind alle Element korrekt geschlossen, ist die Baumstruktur korrekt.
+        Sind IDs einmalig, sind alle Elemente korrekt geschlossen, ist die Baumstruktur korrekt.
 
     - Benennung von Klassen und IDs:
 
@@ -166,25 +166,25 @@ Code Reviews von HTML
 
     - Accessibility?
 
-      wird primär semantisches HTML genutzt? (D. h. beschränkt sich die Nutzung von :html:`<span>` und :html:`<div>` auf die optische Gestaltung?)
+      Wird primär semantisches HTML genutzt? (D. h. beschränkt sich die Nutzung von :html:`<span>` und :html:`<div>` auf die optische Gestaltung?)
 
-      Werden ARIA Tags sinnvoll verwendet?
+      Werden ARIA-Tags sinnvoll verwendet?
 
-      Haben Bilder ein :html:`alt` Attribut?
+      Haben Bilder ein :html:`alt`-Attribut?
 
-    - Keine Verwendung von inline Styles?
+    - Keine Verwendung von Inline-Styles?
 
     - Keine Verwendung von inline JavaScript?
 
     - Keine Verwendung von :html:`<br>` für Formatierungszwecke.
 
-    - Konsistente Verwendung von tags?
+    - Konsistente Verwendung von Tags?
 
       (Z. B. ist Code immer in :html:`<pre><code>...</code></pre>`?)
 
-    - Werden Eingaben in Eingabefelder geprüft?
+    - Werden Eingaben in Eingabefeldern geprüft?
 
-    - Werden :html:`meta` Tags für die Spezifikation des Viewports sowie weiterer Metainformationen verwendet?
+    - Werden :html:`meta`-Tags für die Spezifikation des Viewports sowie weiterer Metainformationen verwendet?
 
     - Werden übermäßig große Bilder/Icons vermieden?
 
@@ -201,19 +201,19 @@ Code Reviews von JavaScript
 
     .. class:: incremental-list
 
-    - Macht der Code was er vorgibt zu tun?
+    - Macht der Code, was er vorgibt zu tun?
 
-      (D. h. sind Variablen, Klassen, Methoden, ... -namen korrekt und sinnvoll?)
+      (D. h. sind Variablen, Klassen, Methoden, ...-Namen korrekt und sinnvoll?)
     - Werden Sonderfälle und Fehlerzustände behandelt?
     - Ist die Fehlerbehandlung konsistent und für den Endnutzer nachvollziehbar?
     - Werden keine Fehler „verschluckt“?
     - Wird null/undefined korrekt behandelt?
-    - Wird modernes JavaScript verwendet (z. B. Klassen, :javascript:`const` und :javascript:`let` anstatt von `var`, Destrukturierung, Spread und Rest Operator etc.)?
+    - Wird modernes JavaScript verwendet (z. B. Klassen, :javascript:`const` und :javascript:`let` anstatt von `var`, Destrukturierung, Spread und Rest-Operator etc.)?
     - Wird :javascript:`eval()` nicht verwendet?
     - Werden asynchrone Funktionen richtig verwendet?
-    - Werden Promises korrekt behandelt (keine fehlenden .catch() oder try-catch bei async/await)?
-    - Gibt es potenzielle Nebenläufigkeitsprobleme bei asynchronen Operationen?   
-    - Werden Event Listener korrekt registriert und wieder entfernt (Memory Leaks)?
+    - Werden Promises korrekt behandelt (keine fehlenden .catch() oder try/catch bei async/await)?
+    - Gibt es potenzielle Nebenläufigkeitsprobleme bei asynchronen Operationen?
+    - Werden Event-Listener korrekt registriert und wieder entfernt (Memory Leaks)?
     - Ist der Kontrollfluss verständlich?
 
       (Nachfragen deuten auf Probleme bzgl. der Verständlichkeit hin.)
@@ -225,7 +225,7 @@ Code Reviews von JavaScript
     - Wird auf tief verschachtelte Logik verzichtet?
     - Werden Funktionen und Methoden klein und fokussiert gehalten (Single Responsibility)?
     - Werden teure Manipulationen (des DOMs) auf das notwendige Minimum beschränkt?
-    - Werden Eingaben validiert (auf Client und **Server** Seite, falls es sich um Serverseitigen JavaScript Code handelt)?
+    - Werden Eingaben validiert (auf Client- und **Server**-Seite, falls es sich um serverseitigen JavaScript-Code handelt)?
     - Werden sensible Daten (Passwörter, API-Keys) nicht im Client-Code hartcodiert?
     - Werden keine sensiblen Daten geloggt?
     - Ist das Logging von Fehlern (Error) sinnvoll und enthält genug Kontextinformationen?
@@ -238,4 +238,4 @@ Code Reviews von JavaScript
     - Ist die (Inline-)Dokumentation ausreichend und korrekt?
     - Sind die TODOs und FIXMEs verständlich und umsetzbar?
     - Werden Browser-Kompatibilitätsanforderungen erfüllt?
-    - Bei verteilten Anwendungen: ist die Aufteilung der Logik nachvollziehbar und sinnvoll (zum Beispiel auch aus Sicht von Cheatingmöglichkeiten)
+    - Bei verteilten Anwendungen: ist die Aufteilung der Logik nachvollziehbar und sinnvoll (zum Beispiel auch aus Sicht von Cheating-Möglichkeiten)
