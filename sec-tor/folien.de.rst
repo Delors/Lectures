@@ -15,7 +15,7 @@ TOR - The Onion Router
 
 :Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
 :Kontakt: michael.eichberg@dhbw.de
-:Version: 1.2.2
+:Version: 1.3
 
 .. supplemental::
 
@@ -27,10 +27,12 @@ TOR - The Onion Router
       https://github.com/Delors/delors.github.io/issues
 
 
+
 .. class:: new-section
 
 Grundlagen
 --------------------
+
 
 
 Tor (The Onion Router)
@@ -403,18 +405,77 @@ Bedeutung von Bridge Nodes (hier: WebTunnel bridges)
 
 
 
-Onion Services/Hidden Services
------------------------------------
+Onion Services/Hidden Services\ [#]_
+-------------------------------------
 
-.. class:: list-with-explanations
+.. deck::
 
-- Server, die Anfragen nur aus dem Tor-Netzwerk annehmen, werden als *Onion Services* (bzw. *Hidden Services*) bezeichnet.
-- ``.onion`` ist eine *Pseudo*-Top-Level-Domain, die für Onion Services verwendet wird.
-- Onion Services können nur über das Tor-Netzwerk erreicht werden.
+    .. card:: 
 
-  `Onion-Adresse der EFF im Tor Netzwerk: https://www.iykpqm7jiradoeezzkhj7c4b33g4hbgfwelht2evxxeicbpjy44c7ead.onion\ <https://www.iykpqm7jiradoeezzkhj7c4b33g4hbgfwelht2evxxeicbpjy44c7ead.onion/>`__
+        .. class:: incremental-list list-with-explanations
 
-- Liste von öffentlichen Onion-Adressen: https://community.torproject.org/onion-services/#featured-onions
+        - Server, die Anfragen nur aus dem Tor-Netzwerk annehmen, werden als *Onion Services* (bzw. *Hidden Services*) bezeichnet.
+        - ``.onion`` ist eine *Pseudo*-Top-Level-Domain, die für Onion Services verwendet wird.
+        - Die Adresse eines Onion Services basiert auf dem öffentlichen Schlüssel des Servers.
+
+          Beispiel: Die Onion-Adresse ``https://duckduckgogg42xjoc72x3sjasowoarfbgcmvfimaftt6twagswzczad.onion/`` gehört zu DuckDuckGo. Der öffentliche Schlüssel ist somit: ``duckduckgogg42xjoc72x3sjasowoarfbgcmvfimaftt6twagswzczad``.
+
+        - Onion Services können nur über das Tor-Netzwerk erreicht werden.
+
+        - Liste von öffentlichen Onion-Adressen: https://community.torproject.org/onion-services/#featured-onions
+
+          .. supplemental::
+
+            Onion-Adresse der EFF im Tor Netzwerk (Tor-Browser notwendig): `https://www.iykpqm7jiradoeezzkhj7c4b33g4hbgfwelht2evxxeicbpjy44c7ead.onion\ <https://www.iykpqm7jiradoeezzkhj7c4b33g4hbgfwelht2evxxeicbpjy44c7ead.onion/>`__
+
+        - Sicher vor Person-in-the-Middle-Angriffen zwischen Client und Onion Service 
+        
+          .. supplemental::
+
+            Normalerweise sind Person-in-the-Middle-Angriffe gegen HTTPS abgesicherte Verbindungen nicht möglich; so genannte State-sponsored Actors können jedoch in bestimmten Szenarien die Infrastruktur (*Certificate Authorities* (CAs)) zur Zertifikatsausstellung und Validierung kompromittieren und damit solche Angriffe durchführen. Bei Onion Services ist dies nicht in gleicher Weise möglich, da die Adresse des Onion Services auf dem öffentlichen Schlüssel basiert.
+
+
+    .. card::
+
+        .. added Jan 27, 2026:
+
+        **Funktionsweise von Onion Services (Registrierung von Onion Services)**
+
+        .. class:: incremental-list list-with-explanations
+
+        1. Der Onion Service generiert ein Schlüsselpaar (privat/öffentlich) und erstellt daraus seine Onion-Adresse.
+        2. Der Onion Service veröffentlicht seinen öffentlichen Schlüssel und einige *Introduction Points* (3 Stück) im Tor-Netzwerk. 
+        
+           *Introduction Points* sind Tor-Knoten, die als Vermittler für Verbindungsanfragen dienen. Die Verbindungen zwischen dem Onion Service und den *Introduction Points* sind langlebig und werden im Directory des Tor-Netzwerks veröffentlicht.
+
+           .. supplemental::
+
+              Die Verbindungen zwischen Onion Service und *Introduction Point* gehen über das Tor-Netzwerk (drei Hops) und sind deshalb anonymisiert.
+
+
+    .. card::
+
+        .. added Jan 27, 2026:
+
+        **Funktionsweise von Onion Services (Verbindung zu Onion Services)**
+
+        .. class:: incremental-list list-with-explanations
+
+        3. Ein Client, der eine Verbindung zum Onion Service herstellen möchte, nutzt den öffentlichen Schlüssel des Onion Services und schlägt im Directory die Introduction Points nach und wählt einen *Rendezvous Point* aus (einen Tor-Knoten).
+        4. Der Client sendet eine Nachricht an den Onion Service über einen *Introduction Point*, in der er den ausgewählten *Rendezvous Point* angibt.
+        5. Der Onion Service sendet eine Nachricht an den *Rendezvous Point*, um die Verbindung mit dem Client herzustellen.
+        6. Der Client und der Onion Service kommunizieren.
+
+    .. card::
+
+        .. added Jan 27, 2026:
+
+        **Sicherheit von Onion Services**
+
+        - Die Trennung von Introduction Points und Rendezvous Points sorgt dafür, dass  der *Introduction Point* keine langlaufende Traffic-Analyse durchführen kann, um den Onion Service zu identifizieren.
+
+.. [#] `How Onion Services Work <https://community.torproject.org/onion-services/overview/>`__
+
 
 
 Tor-Browser
