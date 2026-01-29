@@ -14,7 +14,7 @@ Projekt-, Bachelor- und Seminararbeiten: Hinweise und Bewertungskriterien
 
 :Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
 :Kontakt: michael.eichberg@dhbw.de, Raum 149B
-:Version: 1.2
+:Version: 1.3
 
 .. supplemental::
 
@@ -44,6 +44,30 @@ Bewertungskriterien
   Die folgende Liste an Kriterien ist nicht abschließend! Bei einer konkreten Arbeit können noch weitere Kriterien auftauchen, die hier noch nicht beschrieben sind. Weiterhin sind manche Kriterien nicht immer relevant. Zum Beispiel ist im Rahmen von Seminararbeiten häufig keine besondere Evaluation zu erwarten.
 
   Dieses Dokument wird unregelmäßig aktualisiert.
+
+
+
+Bewertung von Abgaben Zeitalter von KI
+-----------------------------------------
+
+.. attention:: 
+
+  Die allgegenwärtige Verfügbarkeit von KI erlaubt die Anpassung der Bewertungskriterien für alle Formen von Abgaben:
+
+  - Jedes Aussage, die faktisch falsch ist, führt unmittelbar zu Punktabzug.
+  - Jede Aussage, die in sich widersprüchlich ist, führt zu Punktabzug.
+  - Jedes Aussage, die überflüssig ist ("Blah Blah") und nicht dem Thema der Aufgabe/Präsentation dient, führt zu Punktabzug.
+  - Unnötige Aussagen, die bekannte Inhalte (zum Beispiel aus dieser oder anderen Vorlesungen) wiederholen, führen zu Punktabzug.
+  - Jede Aussage, die nicht durch eine Quelle oder durch eigene Experimente belegt werden kann, führt zu Punktabzug.
+  - Qualifizierende Attribute („schneller“, „besser“, „schwerer“ ...) müssen durch konkrete Metriken belegt bzw. definiert werden, ansonsten führen sie zu Punktabzug.
+
+.. supplemental::
+
+  Der Einsatz von KI-Werkzeugen (z. B. ChatGPT, Gemini, GitHub Copilot, Claude etc.) ist grundsätzlich erlaubt und wird auch zur Überprüfung der obigen Kriterien empfohlen.
+
+  .. hint:: 
+
+    Die Auswirkung auf die Bewertung ist abhängig vom Kontext.
 
 
 
