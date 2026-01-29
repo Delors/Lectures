@@ -14,7 +14,7 @@ Vorträge: Hinweise und Bewertungskriterien
 
 :Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
 :Kontakt: michael.eichberg@dhbw.de, Raum 149B
-:Version: 1.1
+:Version: 1.2
 
 .. supplemental::
 
@@ -26,6 +26,7 @@ Vorträge: Hinweise und Bewertungskriterien
 
     :Fehler melden:
         https://github.com/Delors/delors.github.io/issues
+
 
 
 .. class:: center-content no-title
@@ -60,8 +61,8 @@ Bewertungskriterien
        D. h. die Inhalte sollten von Ihren Kommilitonen verstanden werden können.
      - Sind die Inhalte für das Publikum nachvollziehbar?
 
-       Häufig bietet es sich an vom Konkreten zum Abstrakten zu gehen. D. h. es ist häufig besser zuerst ein Beispiel zeigen und dann die allgemeine Regel.
-     - Ist die Evaluation/Zusammenfassung (falls für den Vortag relevant) nachvollziehbar und beantwortet die ursprüngliche Fragestellung?
+       Häufig bietet es sich an vom Konkreten zum Abstrakten zu gehen. D. h. es ist häufig besser zuerst ein Beispiel zu zeigen und dann die allgemeine Regel.
+     - Ist die Evaluation/Zusammenfassung (falls für den Vortrag relevant) nachvollziehbar und beantwortet die ursprüngliche Fragestellung?
      - Einhaltung formaler Kriterien:
 
        - Orthographie
@@ -83,9 +84,9 @@ Bewertungskriterien
      Details bzw. weitere Aspekte:
 
      - präzise Formulierungen
-     - alles Gesagte ist dem Ziel der Arbeit dienlich, keine inhaltlichen Ausschweifungen zu Themen, die dem Ziel nicht dienlich sind, beziehungsweise wo es nicht ersichtlich ist
+     - Alles Gesagte ist dem Ziel der Arbeit dienlich, keine inhaltlichen Ausschweifungen zu Themen, die dem Ziel nicht dienlich sind, beziehungsweise wo es nicht ersichtlich ist
      - Grafiken sind aussagekräftig, vollständig erklärt und visuell ansprechend
-     - die gezeigten Codeabschnitte haben als ganzes Relevanz; unnötiges wurde entfernt
+     - die gezeigten Codeabschnitte haben als Ganzes Relevanz; Unnötiges wurde entfernt
      - gibt es ein Titelblatt auf dem der vollständige Name des Vortragenden, der Titel des Vortrags, das Datum und ggf. der Anlass angegeben ist
      - Kurzvorträge sollten auf explizite Zusammenfassungen und Inhaltsverzeichnisse verzichten
   4. Zeitmanagement
@@ -98,6 +99,17 @@ Bewertungskriterien
 
           Bei Abweichungen von mehr als 10% wird die Note um eine Stufe reduziert (-0,3); bei 20% wird abgebrochen (-1,0). Dieser Faktor wird auf die Gesamtnote angewendet und kann demzufolge kumulativ wirken, da vermutlich auch bestimmte Inhalte fehlen und dies sich weiter negativ auswirken kann.
      - Wird die Zeit sinnvoll auf die einzelnen Abschnitte verteilt?
+
+  5. Fehlender oder falscher Einsatz von KI
+
+     Die Verfügbarkeit von KI-Werkzeugen (wie z. B. ChatGPT, Gemini, Claude oder auch von lokalen Modellen) erlaubt es Ihnen schnell und einfach Folien und Präsentationen zu erstellen. Deswegen kommt der inhaltlichen Qualität eine besondere Bedeutung zu. 
+     
+     Es gilt, dass **Aussagen, die faktisch falsch, unsinnig oder überflüssig sind, direkt zu Punktabzug führen**. 
+     
+     Inhalte, die bereits *Bestandteil von Vorlesungen oder Allgemeinwissen sind, dürfen nicht wiederholt werden, sondern führen ebenfalls zu Punktabzug.* *Zusammenhangslose Aussagen, die nicht durch Quellen oder eigene Experimente belegt werden können, führen ebenfalls zu Punktabzug.* 
+     
+     Qualifizierende Attribute („schneller“, „besser“, „schwerer“ ...) müssen durch konkrete Metriken belegt bzw. definiert werden, ansonsten führen sie zu Punktabzug.
+
 
 .. supplemental::
 
@@ -145,7 +157,7 @@ Checkliste
   :Aussagekraft: Hatte jede Folie eine wohldefinierte Botschaft?  War für jede Folie klar welchen Beitrag diese Folie leistet bzw. welchen Beitrag die Inhalte auf der Folie in Hinblick auf die Gesamtpräsentation leisten?
   :Präsentation des Inhalts: Wurden die geplanten Inhalte verständlich und ohne zusätzliche Fragen aufzuwerfen dargestellt. Hat die Präsentation ein „rundes Bild” ergeben oder wurden (mit Hinblick auf das Kernthema) irrelevante Inhalte vermittelt?
   :Verständlichkeit des Inhalts der Präsentation: War die Präsentation (jederzeit) für das Zielpublikum verständlich, d.h. wurden keine unnötigen Fachbegriffe verwendet, wurden Begriffe / relevante Konzepte hinreichend eingeführt?
-  :Visualisierungen / Grafiken": Wurden aussagekräftige, dem Verständnis hilfreiche Visualisierungen verwendet?
+  :Visualisierungen / Grafiken: Wurden aussagekräftige, dem Verständnis hilfreiche Visualisierungen verwendet?
   :Foliendesign: Wurden Animationen und ähnliche Effekte „sinnvoll” eingesetzt? Wurden Fonts und Farben vernünftig verwendet.
   :Sorgfalt: War die Präsentation frei von Tippfehlern und waren Grafiken, Quelltext, etc. konsistent formatiert?
   :Zusammenfassung: Gab es eine und hat diese kurz und prägnant die wichtigsten Aussagen dargestellt?
@@ -160,6 +172,6 @@ Checkliste
   :(Aus-)Sprache:  Gab es keine „Ähms”, kein Räuspern? War die Sprechgeschwindigkeit angemessen?
   :Redezeit: Wurde die vorgegebene Redezeit eingehalten bzw. musste die Präsentation abgebrochen werden? (+/- 10% ist OK - danach Abzug)
   :Vortragsstil: Wurde der Vortrag flüssig vorgetragen oder kam der / die Vortragende ins Stocken (d.h. er / sie kannte die Folien nicht)? Wurden Grafiken vollumfänglich und auch verständlich erklärt oder wurden Teile einfach unerklärt gelassen?
-  :Auftreten:   Kontakt zum Publikation hergestellt (nicht auf das Notebook geschaut, nicht auf die Wand geschaut)?
+  :Auftreten:   Kontakt zum Publikum hergestellt (nicht auf das Notebook geschaut, nicht auf die Wand geschaut)?
   :Interaktion: War die Interaktion mit dem Fragenden freundlich und zuvorkommend - wurde auf den Fragenden eingegangen.   Wurden Fragen inhaltlich korrekt und umfassend beantwortet, oder wurden „andere” - d.h. nicht gestellte - Fragen beantwortet.
   :Vertrautheit mit der Präsentation: Wurden alle Folien in der Vortragszeit hinreichend dargestellt oder mussten Folien (z.B. aufgrund von Zeitmangel) übersprungen werden?
