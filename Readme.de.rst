@@ -53,17 +53,19 @@ Vorlesung "Theoretische Informatik" bzw. "Algorithmen und Datenstrukturen"
 
 .. scrollable::
 
-   1. Einführung in die Komplexität von Algorithmen (`<theo-algo-komplexitaet/folien.de.rst.html>`__)
+   #. Einführung in die Komplexität von Algorithmen (`<theo-algo-komplexitaet/folien.de.rst.html>`__)
 
-   2. Suchen auf Arrays (`<theo-algo-suchen_auf_arrays/folien.de.rst.html>`__)
+   #. Suchen auf Arrays (`<theo-algo-suchen_auf_arrays/folien.de.rst.html>`__)
 
-   3. Genetische Algorithmen (`<theo-algo-genetic_algorithms/folien.de.rst.html>`__)
+   #. Genetische Algorithmen (`<theo-algo-genetic_algorithms/folien.de.rst.html>`__)
 
-   4. Lineare und Mixed-Integer Programmierung (`<theo-algo-mixed_integer_programming/folien.de.rst.html>`__)
+   #. Lineare und Mixed-Integer Programmierung (`<theo-algo-mixed_integer_programming/folien.de.rst.html>`__)
 
-   5. Hashing und Hashmaps (`<theo-algo-hashing/folien.de.rst.html>`__)
+   #. Hashing und Hashmaps (`<theo-algo-hashing/folien.de.rst.html>`__)
 
-   6. Formale Sprachen (`<theo-algo-formale_sprachen/folien.de.rst.html>`__)
+   #. Backtracking (`<theo-algo-backtracking/folien.de.rst.html>`__)
+
+   #. Formale Sprachen (`<theo-algo-formale_sprachen/folien.de.rst.html>`__)
 
 
 
