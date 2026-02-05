@@ -171,7 +171,7 @@ Sichtweisen auf verteilte Systeme
 Entwurfsziele verteilter Systeme
 ----------------------------------
 
-.. class:: incremental-list dhbw-list
+.. class:: incremental-list
 
 - `gemeinsame Nutzung von Ressourcen`_
 - `Verteilungstransparenz`_ (:eng:`Distribution Transparency`)
