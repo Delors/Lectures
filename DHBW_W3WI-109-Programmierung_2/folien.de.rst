@@ -14,7 +14,7 @@ W3WI_109 - Programmierung II
 
 :Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
 :Kontakt: michael.eichberg@dhbw.de, Raum 149B
-:Version: 24EG/EH
+:Version: 25EG
 
 
 
@@ -52,7 +52,7 @@ Inhalte gem. MHB
 
         :Nebenläufigkeit: Grundlagen der nebenläufigen Programmierung, Synchronisation von Threads, Deadlocks
 
-        .. rubric:: Inhalte, die wir nicht behandeln werden
+        .. rubric:: Inhalte, die wir nicht behandeln werden, da dies überholt sind
 
         :GUI Programmierung:
 
@@ -71,18 +71,19 @@ Modul
 
 
 
-Bonuspunkte
-------------------------------------------
+.. obsolete (hat sich nicht bewährt)
+    Bonuspunkte
+    ------------------------------------------
 
-- Es wird eine Lernstandskontrolle (d. h. kurzer Test) in der Mitte des Semesters geben, die *Bonuspunkte* für die Klausur bringen kann.
-- Es wird *vielleicht* ergänzend Übungsaufgaben geben, deren Lösungen bzw. Präsentation Bonuspunkte für die Klausur bringen können.
-  *Die Lernstandskontrolle kann (insbesondere) auch Inhalte der Programmierung 1 abfragen bzw. beinhalten.*
-- Wer am Tage der Lernstandskontrolle krank ist, kann im Rahmen eines kurzen Gesprächs (zu einem zu vereinbarenden Termin) ggf. die Punkte erwerben.
-- Die Klausur wird so entworfen sein/bewertet werden, dass ohne Bonus eine 1,0 zeitlich erreichbar ist.
+    - Es wird eine Lernstandskontrolle (d. h. kurzer Test) in der Mitte des Semesters geben, die *Bonuspunkte* für die Klausur bringen kann.
+    - Es wird *vielleicht* ergänzend Übungsaufgaben geben, deren Lösungen bzw. Präsentation Bonuspunkte für die Klausur bringen können.
+    *Die Lernstandskontrolle kann (insbesondere) auch Inhalte der Programmierung 1 abfragen bzw. beinhalten.*
+    - Wer am Tage der Lernstandskontrolle krank ist, kann im Rahmen eines kurzen Gesprächs (zu einem zu vereinbarenden Termin) ggf. die Punkte erwerben.
+    - Die Klausur wird so entworfen sein/bewertet werden, dass ohne Bonus eine 1,0 zeitlich erreichbar ist.
 
-.. remark::
+    .. remark::
 
-    Der Gesamtbonus wird jedoch die Anzahl der Punkte, die für einen kompletten Notenschritt (2.0 -> 1.0) notwendig sein werden, nicht überschreiten.
+        Der Gesamtbonus wird jedoch die Anzahl der Punkte, die für einen kompletten Notenschritt (2.0 -> 1.0) notwendig sein werden, nicht überschreiten.
 
 
 
