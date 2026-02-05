@@ -66,8 +66,8 @@ Examination - Portfolio
 
 .. class:: dhbw
 
-1. Presentations - max. 25 points
-2. Programming Exercise - max. 25 points
+1. Presentations
+2. Programming Exercise 
 
 
 
@@ -92,7 +92,7 @@ Presentations - Submissions
 
 .. attention::
 
-  The presentations are to be uploaded to Moodle 36 hours before the agreed date.
+  You have to upload your presentation to Moodle 36 hours before you give the presentation.
 
 .. attention::
   :class: incremental
@@ -103,14 +103,16 @@ Presentations - Submissions
 
 
 
-
-
 Presentations - Available Topics
 ------------------------------------------
 
-.. story:: dd-margin-left-2em
+.. story:: 
 
-    .. class:: incremental-list
+    .. hint::
+
+        Students giving presentations belonging to the same block have to coordinate with each other to avoid any overlap. If you need a specific topic to be covered by another student but are not sure whether it will be presented sufficiently, create a backup slide for your presentation that covers this topic as well and mark it as a backup slide. This backup slide will not be counted towards the time limit.
+
+    .. class:: incremental-list dd-margin-left-2em
 
     :Virtualization and Virtualization Platforms:
 
@@ -254,6 +256,8 @@ Topic Assignment
 
 .. scrollable:: 
 
+  The presentations need to be given in the order listed below.
+
   .. list-table::
     :header-rows: 1
     :widths: 57 18 25
@@ -339,17 +343,83 @@ Topic Assignment
       -
 
 
-Presentations - Grading
+
+Moderator Assignment
 ------------------------------------------
 
+.. grid::
+    
+    .. cell:: width-50
 
-Programming Task
------------------
+      .. csv-table::
+          :header: Topic Id, Moderator Id
+          :width: 100%
+          :widths: 50 50
+          :class: compact dhbw
+          :stub-columns: 1
+
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,  
+          9,
+          10, 
+          11,
+          12,
+          13,
+
+
+    .. cell:: width-50
+
+      .. csv-table::
+          :header: Topic Id, Moderator Id
+          :width: 100%
+          :widths: 50 50
+          :class: compact dhbw
+          :stub-columns: 1
+
+          14,
+          15,
+          16,
+          17,
+          18,  
+          19,
+          20, 
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+
+
+
+Presentations - Grading (max 25 Points)
+------------------------------------------
+
+- Presentation (max 20 Points)
+- Checklist (max 1 Point)
+- Moderation (max 4 Points)
+
+  A Moderator has three main tasks:
+
+  1. :peripheral:`(Introduce the speaker) and` *motivate the topic*.
+  2. Keep track of time and *give time warnings to the presenter* (2 minutes left, time is up); abort the presentation if necessary (-1 minute).
+  3. Lead a short Q&A session (2-3 questions) after the presentation; if there are no questions from the audience, *the moderator should have two to three questions*.
+
+
+
+
+Programming Task (max 25 Points)
+----------------------------------
 
 .. container:: accentuate
 
     See Moodle April 7th for task description and grading details.
-
 
 
 
@@ -360,23 +430,24 @@ Lecture - Schedule
 :3. Mar 2026: Lecture
 
 :17. Mar 2026: Lecture
+    Assignment of moderators to presentation topics
 
 :7. Apr 2026: 
-    Presentations (7 or 8 students)
+    Presentations (~8 students)
 
     Programming Task Explanation 
 
     Lecture
 
 :20. Apr 2026 (5VL): 
-    Presentations (8 students) 
+    Presentations (~8 students) 
 
     Lecture
 
 :24. Apr 2026 (5VL): 
-    Presentations (8 students) 
+    Presentations (~8 students) 
 
     Lecture
 
 :8. May 2026 (Event): 
-    Programming Task Submission Deadline
+    Programming Task Submission Deadline (see Moodle for details)
