@@ -15,7 +15,7 @@
 :Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
 :Kontakt: michael.eichberg@dhbw-mannheim.de, Raum 149B
 :Unterlagen: Moodle
-:Version: 23SEB (Rev 2025-11-27)
+:Version: 23SEB (Rev 2026-01-30)
 
 
 
@@ -46,7 +46,7 @@ Grober Ablauf
 --------------
 
 - 1. Semester: 6 Termine; (50% der Endnote)
-- 2. Semester: X Termine; (50% der Endnote)
+- 2. Semester: 5 Termine; (50% der Endnote)
 
 .. container:: incremental
 
@@ -77,12 +77,13 @@ Inhalte
 
 
 
-.. class:: new-section
+.. class:: new-section fade-out
 
 Erstes Semester: Passwortwiederherstellung und Reverse Engineering
 ----------------------------------------------------------------------
 
 
+.. class:: fade-out
 
 Was passiert wann im 1. Semester...
 --------------------------------------
@@ -145,6 +146,8 @@ Was passiert wann im 1. Semester...
 
 
 
+.. class:: fade-out
+
 Notenzusammenstellung - 1. Semester 
 -------------------------------------
 
@@ -159,6 +162,8 @@ Notenzusammenstellung - 1. Semester
    "Lösungspräsentationen (5 Minuten pro Person)", "5%"
 
 
+
+.. class:: fade-out
 
 Fachpräsentationen
 --------------------
@@ -234,6 +239,9 @@ Fachpräsentationen
       (2 Personen)
 
 
+
+.. class:: fade-out
+
 Themenvergabe
 --------------------
 
@@ -261,6 +269,8 @@ Themenvergabe
 
 
 
+.. class:: fade-out
+
 Bewertete Abgaben
 --------------------
 
@@ -269,14 +279,11 @@ Bewertete Abgaben
 #. `Reverse Engineering - Aufgaben <https://delors.github.io/DHBW-W3WI_SE411-Forschungsseminar_Informatik-Adv._Practical_IT_Security/reverse_engineering.de.rst.html>`__
 
 
+
 .. class:: new-section
 
 Zweites Semester: Pentesting von Webanwendungen
 --------------------------------------------------
-
-.. container:: section-subtitle
-
-  Die folgenden Informationen sind vorläufig und können/werden sich bis zum Start des 2. Semesters ändern.
 
 
 
@@ -287,7 +294,7 @@ Bewertungskriterien
 
 .. attention:: 
 
-  Aufgrund des massiven Einsatzes von KI sind die Bewertungskriterien für alle Abgaben (Präsentationen, Dokumentationen) verschärft worden. 
+  Geänderte Bewertungskriterien für alle Formen von Abgaben (Präsentationen, Dokumentationen):
 
   - Jede Aussage, die faktisch falsch ist, führt unmittelbar zu Punktabzug am Ende (und wird nicht ignoriert werden).
   - Jede Aussage, die blödsinnig ist, führt zu Punktabzug.
@@ -298,11 +305,6 @@ Bewertungskriterien
 
 
   
-
-
-
-.. class:: fade-out
-
 Ablauf
 --------------------------------------
 
@@ -310,65 +312,71 @@ Ablauf
 
   .. compound::
 
-    .. rubric:: XXXX 2026
+    .. rubric:: 20.05.2026
 
     - Ausgabe der Themen zur Bearbeitung
-    - Kurze Einführung in das Thema Pentesting.
+    - Kurze Einführung in das Thema Pentesting
 
   .. compound::
     :class: incremental
 
-    .. rubric:: YYYY 2026
+    .. rubric:: 01.06.2026
 
-    **Bearbeitung der Themen** mit dem Ziel „Hands-on“; bei Bedarf stehe ich für Rückfragen *online* zur Verfügung.
-
+    - Bearbeitung der Themen mit dem Ziel „Hands-on“
+    - Ich stehe für Rückfragen *online* (https://bbb.dhbw.de/rooms/eic-uue-f52-6xb/join) zur Verfügung
 
   .. compound::
     :class: incremental
 
-    .. rubric:: YYYY 2026
+    .. rubric:: 05.06.2026 (Ereignis)
+
+    - Abgabe der Vorträge (Details siehe Moodle)
+
+  .. compound::
+    :class: incremental
+
+    .. rubric:: 08.06.2026
 
     - Halten der Präsentationen
     - Vergabe der Aufgabe für das Pentesting
+      
+  .. compound::
+    :class: incremental
 
-    .. attention::
-      :class: margin-bottom-1em
+    .. rubric:: 15.06.2026
 
-      Die Vorträge müssen am Abend vorher hochgeladen sein.
+    - Durchführung des Pentesting
+    - Ich stehe für Rückfragen *online* (https://bbb.dhbw.de/rooms/eic-uue-f52-6xb/join) zur Verfügung
 
   .. compound::
     :class: incremental
 
-    .. rubric:: YYYY 2026
+    .. rubric:: 30.06.2026 (Ereignis)
 
-    **Durchführung des Pentesting**; bei Bedarf stehe ich für Rückfragen *online* zur Verfügung.
-
-
-  .. compound::
-    :class: incremental
-
-    .. rubric:: YYYY 2026
-
-    Vorstellung der mittels Pentesting gefundenen Lücken - Notenanteil: 20%
-
-    .. attention::
-      :class: margin-bottom-1em
-
-      Die Vorträge müssen am Abend vorher hochgeladen sein.
+    - Abgabe der Vorträge (Details siehe Moodle)
 
   .. compound::
     :class: incremental
 
-    .. rubric:: Ende des Semesters
+    .. rubric:: 02.07.2026
 
-    Abgabe der Dokumentation der Ergebnisse des Pentesting inkl. Bewertung als PDF Dokument (Moodle) - Notenanteil: 10%
+    - Vorstellung der mittels Pentesting gefundenen Lücken
+
+  .. compound::
+    :class: incremental
+
+    .. rubric:: 24.07.2026 (Ereignis)
+
+    - Abgabe der Dokumentation der Ergebnisse des Pentesting (Moodle)
 
 
 
-.. class:: fade-out
+Vortragsthemen - TODO 
+-----------------------
 
-Vortragsthemen
---------------------
+**Dauer pro Person: 10 Minuten**
+
+
 
 .. class:: list-with-explanations smaller
 
@@ -389,21 +397,16 @@ Vortragsthemen
 - Shodan und recon ng
 
 
-**Dauer pro Person: XX Minuten**
+
 
 .. weiteres Thema:  https://www.openvas.org/index-de.html
                     https://sqlmap.org
-                    `Sonarqube (Community Edition) <https://www.sonarsource.com/products/sonarqube/downloads/>`__ (1 Person)
-                    (Code quality tool.)
                     - `Nikto <https://cirt.net/Nikto2>`__ (1 Person)
                    (Web server scanner.)
-                    - `Nmap (und ncat) <https://nmap.org/>`__  (1 Person)
-                   (Network discovery and security auditing.)
                    - `Scapy <https://scapy.net/>`__ (1 Person)
                   (Interactive packet manipulation library)
 
 
-.. class:: fade-out
 
 Bewertungskriterien
 -------------------------------------------
@@ -412,34 +415,26 @@ Bewertungskriterien
 
   .. card::
 
-    .. rubric:: Für die Präsentationen
+    .. rubric:: Für die Präsentation Ihres Fachvortrags
 
-    - Vermittelt die Präsentation einen guten ersten Einblick in das Tool (Fähigkeiten und Grenzen)
-    - Qualität der (Live-)Demonstration (und ggf. des Backups)
-
-      (ggf. ist das Aufsetzen einer (kleinen) virtuellen Maschine sinnvoll/notwendig.)
-    - Reduktion auf das Wesentliche
-    - Qualität der Beantwortung von Fragen
-    - Persönliches Auftreten
-    - Einhaltung der Dauer der Präsentation
-
-    Notenanteil: 20% (max. 20 Punkte von 100 Punkten)
+    - `Hinweise für Präsentationen <../allg-vortraege/folien.de.rst.html>`__
+    - Notenanteil: 20% von der Gesamtnote
 
   .. card::
 
-    .. rubric:: für das Pentesting
+    .. rubric:: Für die Präsentation der Pentesting-Ergenbnisse
 
+    - `Hinweise für Präsentationen <../allg-vortraege/folien.de.rst.html>`__
     - Anzahl der gefundenen Schwachstellen
-    - Qualität der Präsentation der Schwachstellen
     - Beantwortung von Fragen
 
-    Notenanteil: 25% (max. 25 Punkte von 100 Punkten)
+    Notenanteil: 20% von der Gesamtnote
 
   .. card::
 
     .. rubric:: für die Dokumentation
 
-    - Qualität der Dokumentation (leserlich, strukturiert, frei von Tippfehlern, ...)
-    - Ist die Einschätzung der Lücken nachvollziehbar
+    - `Hinweise für Ausarbeitungen <../allg-ausarbeitungen/folien.de.rst.html>`__
+    - Ist die Bewertung der Lücken nachvollziehbar
 
-    Notenanteil: 5% (max 5. Punkte von 100 Punkten)
+    Notenanteil: 10% von der Gesamtnote
