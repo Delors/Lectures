@@ -8,7 +8,6 @@ def timeit(f):
      print("It took: " + str((end-start)))
      return r
 
-
 def bestWertIterativ(n):
     best = [0] * (n + 1)  # best[i] = bester Wert für Traglast i
     for i in range(len(gW)):
