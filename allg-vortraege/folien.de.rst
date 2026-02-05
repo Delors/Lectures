@@ -131,20 +131,20 @@ Bewertungskriterien
 Häufige Fehler
 --------------
 
-.. class:: incremental-list column-list dhbw
+.. class:: incremental-list dhbw
 
 - **Text zu klein**
 
-  Bitte bedenken Sie, dass erst ab einer Textgröße von 20 Punkten der Text für die meisten Zuhörer gut lesbar wird.
+  Bitte bedenken Sie, dass erst ab einer Textgröße von 20 Punkten der Text für die meisten Zuhörer gut lesbar ist.
 
   Insbesondere bei Codebeispielen sieht man häufig Code mit deutlich weniger als 20 Punkten.
-- **Dunkle Vordergrundfarben auf dunklem Hintergrund**
+- **Fehlender Kontrast**
 
-  Auf Monitoren mag dies gut aussehen; auf Beamern ist dies für die meisten Zuhörer (sehr) schwer zu lesen.
+  Auf Monitoren mögen dunkle Vordergrundfarben auf dunklem Hintergrund gut aussehen; auf Beamern ist dies für das Publikum häufig (sehr) schwer zu lesen.
 
-- **Kein Kontakt zum Publikum**
+- **Kein Publikumskontakt**
 
-  Es ist wichtig, dass Sie Kontakt zum Publikum aufbauen.
+  Es ist wichtig, dass Sie Kontakt zum Publikum aufbauen, ihm zugewandt sind und Blickkontakt herstellen.
 
 
 
@@ -205,19 +205,20 @@ Gestaltung der Präsentation
     :width: 100%
     :class: sticky-header incremental-table-rows dhbw
 
-    "Ein Titelblatt ist vorhanden mit: Name(n), Titel, Datum", ""
+    "Ein Titelblatt ist vorhanden mit: Name(n), Titel, Datum.", ""
     "Jede Folie hat eine Foliennummer.", ""
-    "Wird der Vortrag von mehreren Personen gehalten, sind die Namen aller Vortragenden auf dem Titelblatt angegeben und auf jeder Folie steht der Name des Vortragenden.", ""
-    "Die kleinste Fontgröße für Text und Code ist 20px.", ""
+    "Wird der Vortrag von mehreren Personen gehalten, sind die Namen aller Vortragenden auf dem Titelblatt angegeben und auf jeder Folie steht der Name der/des aktuell Vortragenden.", ""
+    "Die kleinste Fontgröße für regulären Text und Code ist 20px.", ""
+    "Die kleinste Fontgröße für Referenzen ist 14px.", ""
     "Die kleinste Fontgröße in einer Grafik ist 16px.", ""
     "Vordergrund- und Hintergrundfarben bieten `ausreichend Kontrast <https://webaim.org/resources/linkcontrastchecker/>`__ (vgl. `WCAG <https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum>`__) und sind auch auf dem Beamer sichtbar.", ""
     "Die Animationen und visuellen Effekte unterstützen den Inhalt (kein Selbstzweck).", ""
-    "Farben sind nicht der einzige Mechanismus um eine Information zu transportieren (zusätzliche Symbole/Muster bei Diagrammen).", ""
+    "Farben sind nicht der einzige Mechanismus, um eine Information zu transportieren (zusätzliche Symbole/Muster bei Diagrammen).", ""
     "Codebeispiele, die mehr als drei Zeilen haben, sind nummeriert.", ""
     "Code ist mit Syntax-Highlighting dargestellt.", ""
-    "Code wird als regulärer (skalierbarer) Text (kein Bild) dargestellt.", ""
+    "Code wird als regulärer (skalierbarer) Text (kein Bild/Screenshot) dargestellt.", ""
     "Grafiken und Tabellen basierend auf externen Quellen haben Nachweise und Copyrightangaben am Erscheinungsort (Verweis auf Quellenverzeichnis ist ggf. ausreichend).", ""
-    "Bei Zitaten ist die Quelle direkt auf der Folie angegeben (nicht nur im Literaturverzeichnis).", ""
+    "Bei (wörtlichen) Zitaten ist die vollständige Quelle direkt auf der Folie angegeben (nicht nur im Literaturverzeichnis).", ""
     "Es gibt keine Vorwärtsverweise.", ""
     
   .. class:: incremental
@@ -232,21 +233,21 @@ Gestaltung der Präsentation
 
     "Jede Folie hat eine Aussage/ein Kernthema.", ""
     "*Alle* Inhalte auf der Folie können von dem Vortragenden erklärt werden.", ""
-    "Alle Aussagen (Bulletpoints) sind faktisch korrekt und sinnvoll.", ""
+    "Alle Aussagen sind faktisch korrekt und sinnvoll.", ""
     "Alle Aussagen sind belegt durch Quellen oder durch eigene Ergebnisse.", ""
-    "Es gibt keine Präsentation von Inhalten, die im Rahmen der Vorlesung oder vorhergehenden Vorlesungen behandelt wurden.", ""
-    "Es gibt keine Präsentation von Inhalten, die vorhergehende Vorträge behandelt haben; Sprechen Sie sich ggf. bei Bedarf untereinander ab.", ""
+    "Es gibt keine Präsentation von Inhalten, die im Rahmen der Vorlesung oder von vorhergehenden Vorlesungen in früheren Semestern behandelt wurden.", ""
+    "Es gibt keine Präsentation von Inhalten, die vorhergehende Vorträge behandelt haben; sprechen Sie sich ggf. bei Bedarf untereinander ab.", ""
     "Es gibt keine überflüssigen oder redundanten Aussagen.", ""
     "Für Folien, die nur aus Text bestehen, wurde geprüft ob eine Grafik/Tabelle den Inhalt besser vermitteln könnte.", ""
-    "Es gibt keine Grafiken, die nur der Optik dienen.", ""
-    "Grafiken sind aussagekräftig, werden vollständig erklärt werden und haben eine Legende, wenn die Notation keine Standardnotation ist.", ""
-    "Komplexe Grafiken werden schrittweise aufgebaut (Animationen).", ""
-    "Alle verwendeten Symbole und Icons sind semantisch verständlich und unterstützen das Verständnis.",""
+    "Es gibt keine Grafiken/Bilder/Icons/Darstellungen, die nur der Optik dienen.", ""
+    "Grafiken bzw. Abbildungen sind aussagekräftig, werden vollständig erklärt werden und haben eine Legende, wenn die Notation keine Standardnotation ist.", ""
+    "Komplexe Grafiken werden schrittweise aufgebaut (sinnvolle Animationen).", ""
+    "Alle verwendeten Symbole und Icons sind semantisch unmittelbar verständlich und unterstützen das Verständnis.",""
     "Codebeispiele sind auf *strikt* notwendige Abschnitte reduziert.", ""
     "Das Design ist konsistent über alle Folien hinweg: Insbesondere werden gleiche Farben für gleiche Dinge verwendet, die Schriftarten sind konsistent, das Layout ist konsistent; Grafiken nutzen die gleiche visuelle Sprache.", ""
-    "Kurzvorträge (bis 10 Minuten) präsentieren keine Agenda/Inhaltsverzeichnis.","" 
+    "Kurzvorträge (bis 10 Minuten) präsentieren keine Agenda/Inhaltsverzeichnis; auch längere Vorträge, die dem zu erwartenden Ablauf folgen, sollten auf eine Agenda/Inhaltsverzeichnis verzichten.","" 
     "Kurzvorträge (bis 10 Minuten) haben nur dann eine Zusammenfassung, wenn diese neue Erkenntnisse bringt.", ""
-    "Die Präsentation wurde (mittels KI) auf Tippfehler überprüft.", ""
+    "Die Präsentation wurde (mittels KI) auf Probleme mit der Rechtschreibung und dem Stil überprüft.", ""
     "Die Präsentation wurde (mittels KI) auf Aussagen, die unnötig, faktisch falsch oder irreführend sind, überprüft.", ""
 
   .. grid:: incremental margin-top-4em
