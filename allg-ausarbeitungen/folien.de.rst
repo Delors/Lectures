@@ -76,7 +76,7 @@ Inhaltliche Qualität (bei Seminararbeiten 50 %)
 
 .. story::
 
-  .. class:: incremental-list dhbw
+  .. class:: incremental-list
 
   - Das Thema wird im Rahmen der Möglichkeiten umfassend untersucht. Die Tiefe der Darstellung ist konsistent und schlüssig. Die Arbeit verliert sich nicht in irrelevanten Details.
   - Die Darstellung der Grundlagen ist ausreichend, so dass Studierende im gleichen Semester die Arbeit ohne externe Lektüre verstehen können.
@@ -105,7 +105,7 @@ Einhaltung formaler Kriterien (bei Seminararbeiten 20%)
 
 .. story::
 
-  .. class:: incremental-list  dhbw
+  .. class:: incremental-list
 
   - Ist die Orthographie ausreichend? Eine *sehr geringe Anzahl* an Tippfehlern beziehungsweise Rechtschreibfehler führt zu keiner Abwertung. Sollten sich jedoch auf jeder Seite mehr als ein Fehler oder mehrere Fehler auf einer Seite befinden, dann führt dies zu einer Abwertung.
   - Sind alle Referenzen konsistent.
@@ -137,7 +137,7 @@ Qualität der Präsentation/der textuellen Ausarbeitung (bei Seminararbeiten 30%
 
 .. story::
 
-  .. class:: incremental-list  dhbw
+  .. class:: incremental-list
 
   - Präzise Formulierungen
   - Alles Gesagte ist dem Ziel der Arbeit dienlich, es gibt keine inhaltlichen Ausschweifungen zu Randaspekten, die dem Ziel nur bedingt oder gar nicht dienlich sind, beziehungsweise wo es nicht ersichtlich ist. Es ist unmittelbar ersichtlich warum ein bestimmter Aspekt behandelt wird.
