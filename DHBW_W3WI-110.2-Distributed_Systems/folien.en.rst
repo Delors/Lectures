@@ -16,7 +16,7 @@ W3WI_110.2 - Distributed Systems
 
 :Lecturer: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
 :Contact: michael.eichberg@dhbw.de, Raum 149B
-:Version: 2.0 (WWI23SCB)
+:Version: 2.0 (24SCA und 24EG/EH)
 
 
 
@@ -40,16 +40,10 @@ Previous Knowledge
 .. class:: incremental-list
 
 - Who is familiar with Java?
-
-  :peripheral:`Most`
 - Who is familiar with Python?
-  :peripheral:`Basically none`
 - Who is familiar with JavaScript/Typescript?
-  :peripheral:`Not really discussed as part of the Web Engineering lecture.`
 - Who knows what a RESTful API is?
-  :peripheral:`Some knowledge.`
 - Who has ever logged in to a server via SSH?
-  :peripheral:`No real experience.`
 - Who has ever done any administration of a Linux server?
 - Who is familiar with Unix/Linux/Mac OS command line tools?
 - Who has done any development outside of university projects?
@@ -63,26 +57,21 @@ Examination - Portfolio
 
     .. class:: list-with-explanations
 
-    - the module has 55 lecture hours
+    - the module *Developing Distributed Systems* has 55 lecture hours
     - the lecture *Distributed Systems* has 22 lecture hours
 
-      ⇒ Distributed Systems will contribute up to **50** points to the final grade for the module. (Please, don't do the math.)
+      ⇒ Distributed Systems will contribute up to **50** points (out of 120) to the final grade for the module. (Please, don't do the math.)
 
 .. rubric:: 2 Parts
 
 .. class:: dhbw
 
-1. Presentations - max. 15 points
-2. Programming Exercise - max. 35 points
-
-.. attention::
-  :class: incremental
-
-  Students who present together should not be in the same team for the programming exercise.
+1. Presentations - max. 25 points
+2. Programming Exercise - max. 25 points
 
 
 
-Presentations - General Conditions\ [#]_
+Presentations - General Conditions
 ------------------------------------------
 
 .. class:: incremental-list list-with-explanations
@@ -90,84 +79,304 @@ Presentations - General Conditions\ [#]_
 - Each person should present for 10 Minutes sharp!
 - The presentations should deal in particular with the core content of the lecture and *be of a conceptual nature*.
 
-  This means that, after briefly presenting the overall purpose of the framework/technology/protocol, the architecture/the details must be presented. That is, how errors are dealt with, which services are offered, which guarantees/security aspects are implemented, how scalability is achieved, etc.
+  This means, after briefly presenting the overall purpose of the framework/technology/protocol, the architecture/the details must be presented. I. e., how errors are dealt with, which services are offered, which guarantees/security aspects are implemented, how scalability is achieved, etc.
 
   No promotional presentations!
-- Presentations should be in English.
-- The speakers should not rotate several times during the presentation. I.e. the first speaker presents first, then the second, and so on. This is necessary for the grading.
+- Presentations have to be in English.
+- The speakers should not rotate several times during the presentation. I. e. the first speaker presents first, then the second, and so on. This is necessary for the grading.
+
+
+
+Presentations - Submissions
+------------------------------------------
+
+.. attention::
+
+  The presentations are to be uploaded to Moodle 36 hours before the agreed date.
 
 .. attention::
   :class: incremental
 
-  The presentations are to be uploaded to Moodle the evening before the agreed date.
+  `Further Requirements and Checklist (in Ger.) <https://delors.github.io/allg-vortraege/folien.de.rst.html#slide-3>`__
 
-.. [#] `Further Recommendations (in Ger.) <https://delors.github.io/allg-vortraege/folien.de.rst.html#slide-3>`_
+  The checklist hast to be signed and uploaded together with the presentation. (As a second PDF file.)
+
+
+
 
 
 Presentations - Available Topics
 ------------------------------------------
 
-.. story:: dd-margin-left-4em
-
-    .. rubric:: 26.6.
+.. story:: dd-margin-left-2em
 
     .. class:: incremental-list
 
-    :Virtualization and Virtualization Platforms [7P]:
+    :Virtualization and Virtualization Platforms:
 
-        The goal of this presentation is to give an overview of the diﬀerent virtualization technologies and to explain the     commonalities and diﬀerences between them.
+        .. class:: list-with-sublists show-list-item-content-on-hover
 
-        It is also possible to demonstrate some of the diﬀerences using concrete products.
+        1. Introduction to Virtualization & Use Cases
 
-        Some keywords: Containers (e. g., Docker, Linux), Firecracker, Hypervisors (KVM, Xen, Hyper-V), Docker Swarm, Kubernetes, Proxmox, Open Stack
+           - What is virtualization? Historical context and motivation
+           - Different types/levels of virtualization
+           - Key use cases: server consolidation, cloud computing, development/testing, isolation
+           - Benefits and trade-offs
 
-        :red:`The Students giving this presentation are not allowed to work in one team.`
+        2. Hypervisors - Architecture & Types
 
-    :Web-App Security  [3P]:
+           - What is a hypervisor?
+           - Type 1 (bare-metal) vs Type 2 (hosted) - architectural differences
+           - Full virtualization vs paravirtualization approaches
+           - Examples and when to use each type
 
-        Web application security: CORS (Cross-Origin Resource Sharing), SOP (Same-Origin Policy),  CORP / COOP / COEP (Cross-Origin Resource/Opener/Embedder Policies), CSP (Content Security Policy)
+        3. Virtual Machines - Implementation & Management
+
+           - VM structure and components (virtual hardware, guest OS)
+           - VM lifecycle: creation, running, pause/resume, snapshots
+           - VM migration (live migration concepts)
+           - Resource allocation and isolation
+
+        4. Containers & OS-level Virtualization
+
+           - Container concept and how it differs from VMs
+           - Namespaces and cgroups (conceptual)
+           - Container images and layering
+           - Use cases and comparison with VMs
+
+        5. Memory Virtualization
+
+           - The address translation problem (guest virtual → guest physical → host physical)
+           - Shadow page tables approach
+           - Hardware-assisted virtualization (EPT/NPT)
+           - Memory management techniques (overcommitment, ballooning)
+
+        6. Network & I/O Virtualization
+
+           - Challenges of virtualizing network and I/O devices
+           - Emulated vs paravirtualized devices
+           - SR-IOV (Single Root I/O Virtualization) and device passthrough
+           - Virtual NICs and network bridges
+           - Virtual switches and network isolation
+           - Storage virtualization (virtual disks, formats)
+
+    :Network Protocols:
+
+        7. QUIC :peripheral:`(only available when we have ≥ 21 students)`
+        8. HTTP/3
+        9. BitTorrent Protocol :peripheral:`(only available when we have ≥ 25 students)`
+
+    :Modern RPC:
+
+        10. Protobuf
+        11. Google RPC
+
+
+    :Web-App Security:
+
+        12. SOP (Same-Origin Policy), CORS (Cross-Origin Resource Sharing) (Foundations)
+        13. CORP / COOP / COEP (Cross-Origin Resource/Opener/Embedder Policies) :peripheral:`(only available when we have ≥ 23 students)`
+        14. CSP (Content Security Policy) and SRI (Subresource Integrity)
 
         Introduction and concrete examples how they are used/specified and help prevent attacks.
 
-    :Monitoring & Debugging Distributed Systems [1P]:
+    :Monitoring & Debugging Distributed Systems:
 
-        Open Telemetry and Log Aggregation
+        15. Log Aggregation with a particular focus on correlation of log entries
 
-    :Network Protocols [3P]:
+    :Leader Election: 
 
-        - HTTP/3 and QUIC [2P]
-        - BitTorrent [1P]: Usage and Protocol
+        16. Bully Algorithm and/or Ring Algorithm
 
-    .. class:: incremental
+    :Quorum Systems: 
+        
+        17. Majority voting (i. e., quorum-distributed computing)        
+        
+    :Consensus Algorithms and Fault Tolerance:
 
-    .. rubric:: 11.7.
+        .. class:: list-with-sublists show-list-item-content-on-hover
 
-    .. class:: incremental-list
+        18. Consensus Fundamentals & Problem Definition
 
-    :Consensus Algorithms [4p]:
+            - What is consensus and why is it hard in distributed systems?
+            - The FLP impossibility result (conceptual understanding)
+            - Fault models: crash faults vs Byzantine faults
+            - Safety vs liveness properties
+            - Real-world motivation: replicated state machines, distributed databases
 
-        - Paxos [2P]
-        - RAFT [2P]
+        19. (Practical) Byzantine Fault Tolerance
 
-    :Eventual Consistency [2P]: Gossip Protokoll
+            - When do we need BFT?
+            - Modern developments
+          
+              .. presenter-note::
+                
+                Tendermint, HotStuff
 
-    :Leader Election [1P]: Bully Algorithm and/or Ring Algorithm
+            - Real-world usage
 
-    :gRPC [2P]: Google RPC/Protobuf; a comparison with alternative is also possible.
+        20. Paxos Family
 
-    :Fault Tolerance [2P]: (Practical) Byzantine Fault Tolerance
+            - Basic Paxos algorithm (conceptual overview, roles: proposers, acceptors, learners)
+            - Why Paxos is correct but complex
+            - Multi-Paxos for practical systems
+            - Real-world usage
+          
+              .. presenter-note::
+          
+                [VERIFY!:] Google Chubby, Apache ZooKeeper foundations
 
-    :Quorum Systems [1]: in particular majority voting (i. e., quorum -distributed computing)
+        21. Raft - Understandable Consensus
 
-    :Distributed File Systems [2P]: for example GFS, HDFS and Ceph
+            - Motivation
+            - Leader election, log replication, safety
+            - How Raft differs from Paxos (design philosophy)
+            - Real-world usage
+          
+              .. presenter-note::
+                
+                etcd, Consul, CockroachDB
+
+    :Eventual Consistency: 
+    
+        22. Eventual Consistency and Gossip Protocol
+        23. CRDTs (Conflict-free Replicated Data Types) :peripheral:`(only available when we have ≥ 22 students)`
+
+    :Distributed File Systems: 
+
+        24. Ceph
+        25. HDFS :peripheral:`(only available when we have ≥ 24 students)`
 
 
 
-.. class:: center-content
+Topic Assignment
+------------------------------------------
 
-Portfolio Task
+.. scrollable:: 
+
+  .. list-table::
+    :header-rows: 1
+    :widths: 57 18 25
+    :class: dhbw compact sticky-header
+
+    * - Topic
+      - Constraint
+      - Student Name
+    * - \1. Introduction to Virtualization & Use Cases
+      - 
+      - 
+    * - \2. Hypervisors - Architecture & Types
+      - 
+      - 
+    * - \3. Virtual Machines 
+      - 
+      - 
+    * - \4. Containers & OS-level Virtualization
+      - 
+      - 
+    * - \5. Memory Virtualization
+      - 
+      - 
+    * - \6. Network & I/O Virtualization
+      - 
+      - 
+    * - \7. QUIC
+      - ≥ 21 students
+      - 
+    * - \8. HTTP/3
+      - 
+      - 
+    * - \9. BitTorrent Protocol
+      - ≥ 25 students
+      - 
+    * - \10. Protobuf
+      - 
+      - 
+    * - \11. Google RPC
+      - 
+      - 
+    * - \12. SOP, CORS (Foundations)
+      - 
+      - 
+    * - \13. CORP / COOP / COEP
+      - ≥ 23 students
+      - 
+    * - \14. CSP and SRI
+      - 
+      - 
+    * - \15. Log Aggregation
+      - 
+      - 
+    * - \16. Leader Election (Bully/Ring Algorithm)
+      - 
+      - 
+    * - \17. Quorum Systems (Majority Voting)
+      - 
+      - 
+    * - \18. Consensus Fundamentals & Problem Definition
+      - 
+      - 
+    * - \19. Byzantine Fault Tolerance (PBFT)
+      - 
+      - 
+    * - \20. Paxos Family
+      - 
+      - 
+    * - \21. Raft - Understandable Consensus
+      - 
+      - 
+    * - \22. Eventual Consistency and Gossip Protocol
+      - 
+      - 
+    * - \23. CRDTs
+      - ≥ 22 students
+      - 
+    * - \24. Ceph
+      - 
+      - 
+    * - \25. HDFS
+      - ≥ 24 students
+      -
+
+
+Presentations - Grading
+------------------------------------------
+
+
+Programming Task
 -----------------
 
 .. container:: accentuate
 
-    See Moodle for task description.
+    See Moodle April 7th for task description and grading details.
+
+
+
+
+
+Lecture - Schedule
+------------------------------------------
+
+:3. Mar 2026: Lecture
+
+:17. Mar 2026: Lecture
+
+:7. Apr 2026: 
+    Presentations (7 or 8 students)
+
+    Programming Task Explanation 
+
+    Lecture
+
+:20. Apr 2026 (5VL): 
+    Presentations (8 students) 
+
+    Lecture
+
+:24. Apr 2026 (5VL): 
+    Presentations (8 students) 
+
+    Lecture
+
+:8. May 2026 (Event): 
+    Programming Task Submission Deadline
