@@ -16,14 +16,14 @@ Projektkonzeption und -realisierung
 
 :Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
 :Kontakt: michael.eichberg@dhbw-mannheim.de, Raum 149B
-:Version: 23SEB - Rev. 27.01.2026
+:Version: 23SEB - Rev. 30.01.2026
 
 .. supplemental::
 
   .. rubric:: Errata
 
   :27.01.2026: Im Rahmen der Zwischenpräsentation gibt es nur 17 Punkte statt 18 Punkte für die Endnote. (Die Bewertungskriterien bleiben unverändert; die Bewertung der Teilleistungen ändert sich nicht; es handelt sich *nur* um eine Korrektur der Summe.)
-
+  :30.01.2026: Anpassungen für das 2. Semester vorgenommen.
 
 
 .. class:: transition-fade
@@ -294,12 +294,13 @@ Darüber hinaus sind im Verlauf des Projekts mind. folgende Aufgaben frei zu ver
 
 
 
-.. class:: new-section transition-scale
+.. class:: new-section transition-scale fade-out
 
 Projektkonzeption
 --------------------------
 
 
+.. class:: fade-out
 
 1. Projektkonzeption - 19.11.2025
 ----------------------------------------------------------
@@ -319,6 +320,8 @@ Projektkonzeption
   Es wird erwartet, dass alle Gruppen basierend auf den Erkenntnissen ggf. Ihre User Stories anpassen/erweitern.
 
 
+
+.. class:: fade-out
 
 2. Projektkonzeption - 24.11.2025 [Online]
 -------------------------------------------------------------------------------------------------
@@ -344,6 +347,8 @@ Je Gruppe:
   `Visualising software architecture with the C4 model <https://www.youtube.com/watch?v=3Gc5pN9sGzw>`__
 
 
+
+.. class:: fade-out
 
 3. Projektkonzeption - 01.12.2025
 ----------------------------------
@@ -390,6 +395,7 @@ Je Gruppe:
   .. rubric:: Teil 2 - gemeinsame Verfeinerung der User Stories
 
 
+.. class:: fade-out
 
 4. Projektkonzeption - 08.12.2025 [Online]
 -------------------------------------------------------------------------------------------------
@@ -405,6 +411,8 @@ Je Gruppe:
 - Ausarbeitung der Abschlusspräsentation und der Endabgabe
 
 
+
+.. class:: fade-out
 
 5. Projektkonzeption - 15.12.2025
 --------------------------------------------
@@ -449,12 +457,14 @@ Je Gruppe:
 
 
 
-.. class:: new-section transition-scale
+.. class:: new-section transition-scale fade-out
 
 Projektrealisierung - Teil 1 (1. Semester)
 ---------------------------------------------
 
 
+
+.. class:: fade-out
 
 1. Projektrealisierung - 18.12.2025 (Online)
 ---------------------------------------------
@@ -469,6 +479,7 @@ Projektrealisierung - Teil 1 (1. Semester)
 - Ggf. (gruppenindividuelle) Unterstützung bei der Projektrealisierung und Beantwortung von Rückfragen.
 
 
+.. class:: fade-out
 
 2. Projektrealisierung - 12.01.2026 (Online: 13:15 Uhr bis 15:15 Uhr und 16:45 Uhr bis 18:45 Uhr)
 ---------------------------------------------------------------------------------------------------
@@ -483,6 +494,7 @@ Projektrealisierung - Teil 1 (1. Semester)
 - Ggf. (gruppenindividuelle) Unterstützung bei der Projektrealisierung und Beantwortung von Rückfragen.
 
 
+.. class:: fade-out
 
 3. Projektrealisierung - 14.01.2026
 -------------------------------------------
@@ -506,7 +518,7 @@ Projektrealisierung - Teil 1 (1. Semester)
   - Mitteilung der Ziele für die nächste Iteration
 
 
-
+.. class:: fade-out
 
 4. Projektrealisierung - 19.01.2026 (Online)
 -------------------------------------------------------------------------------------------------
@@ -522,6 +534,8 @@ Projektrealisierung - Teil 1 (1. Semester)
 - Ggf. (gruppenindividuelle) Unterstützung bei der Projektrealisierung und Beantwortung von Rückfragen.
 
 
+
+.. class:: fade-out
 
 5. Projektrealisierung - 28.01.2026
 --------------------------------------------
@@ -594,14 +608,11 @@ Projektrealisierung - Teil 1 (1. Semester)
 
 
 
-.. class:: new-section transition-scale fade-out
+.. class:: new-section transition-scale 
 
 Projektrealisierung - Teil 2 (2. Semester)
 --------------------------------------------
 
-.. attention::
-
-  Die folgenden Informationen werden zum Beginn des 2. Semester aktualisiert. Sie sind aktuell als Platzhalter zu verstehen.
 
 
 Geänderte Bewertungskriterien
@@ -609,20 +620,16 @@ Geänderte Bewertungskriterien
 
 .. attention:: 
 
-  Aufgrund des massiven Einsatzes von KI im Rahmen der Bearbeitung von Aufgaben und der Erstellung von Präsentationen sind die Bewertungskriterien verschärft worden.
-
   Folgendes gilt für alle Abgaben (Präsentationen, Dokumentationen):
 
   - Jedes Aussage, die faktisch falsch ist, führt unmittelbar zu Punktabzug am Ende (und wird nicht ignoriert werden).
-  - Jede Aussage, die blödsinnig ist, führt zu Punktabzug.
+  - Jede Aussage, die in-sich blödsinnig ist, führt zu Punktabzug.
   - Jedes Aussage, die überflüssig ist ("Blah Blah") und nicht dem Thema der Aufgabe/Präsentation dient, führt zu Punktabzug.
   - Qualifizierende Attribute („schneller“, „besser“, „effizienter“, „leichter“, „schwerer“ ...) müssen durch konkrete Metriken belegt bzw. definiert werden, ansonsten führen sie zu Punktabzug.
 
 
 
-.. class:: fade-out
-
-6. Projektrealisierung - DD. MMMM 2026
+6. Projektrealisierung - 13.05.2026
 --------------------------------------------
 
 - Noten Zwischenpräsentation
@@ -635,31 +642,29 @@ Geänderte Bewertungskriterien
 
 
 
-.. class:: fade-out
-
-7. Projektrealisierung - DD. MMMM 2026
+7. Projektrealisierung - 18.05.2026
 --------------------------------------------
 
 .. container:: exclamation-mark
 
-  Online: https://bbb.dhbw.de/rooms/eic-dx8-r7g-ioa/
+  Online: https://bbb.dhbw.de/rooms/eic-uue-f52-6xb/join
 
 - Diskussion von Rückfragen
 
 
 
-.. class:: fade-out
 
-8. Projektrealisierung - DD. MMMM 2026
+8. Projektrealisierung - 29.05.2026
 --------------------------------------------
+.. container:: accentuate
 
-- Präsentation des aktuellen Projektfortschritts (ca. 8 Minuten pro Gruppe)
+  Ende der ersten Iteration
+
+- Präsentation des aktuellen Projektfortschritts
 
   - Stand bzgl. User Stories
-  - Stand bzgl. QS
-  - Stand bzgl. Build-Prozess
   - Herausforderungen
-  - ggf. Live Demo
+  - Live Demo
 
 - Iterationsplanung (Wahl der nächsten User Stories)
 
@@ -669,29 +674,27 @@ Geänderte Bewertungskriterien
 
 
 
-.. class:: fade-out
-
-9. Projektrealisierung - DD. MMMM 2026
+9. Projektrealisierung - 01.06.2026
 --------------------------------------------
 
 .. container:: exclamation-mark
 
-  Online: https://bbb.dhbw.de/mannheim/eic-mn5-hvh-7qd
+  Online: https://bbb.dhbw.de/rooms/eic-uue-f52-6xb/join
 
 - Diskussion von Rückfragen
 
 
 
-.. class:: fade-out
-
-10. Projektrealisierung - DD. MMMM 2026
+10. Projektrealisierung - 10.06.2026
 --------------------------------------------
 
-- Präsentation des aktuellen Projektfortschritts (ca. 8 Minuten pro Gruppe)
+.. container:: accentuate
+
+  Ende der zweiten Iteration
+
+- Präsentation des aktuellen Projektfortschritts
 
   - Stand bzgl. User Stories
-  - Stand bzgl. QS
-  - Stand bzgl. Build-Prozess
   - Herausforderungen
   - ggf. Live Demo
 
@@ -703,87 +706,95 @@ Geänderte Bewertungskriterien
 
 
 
-.. class:: fade-out
 
-11. Projektrealisierung - DD. MMMM 2026
+11. Projektrealisierung - 15.06.2026
 --------------------------------------------
 
 .. container:: exclamation-mark
 
-  Online: https://bbb.dhbw.de/mannheim/eic-mn5-hvh-7qd
+  Online: https://bbb.dhbw.de/rooms/eic-uue-f52-6xb/join
+
+- Diskussion von Rückfragen
+- Besprechung der Anforderungen an die Abschlusspräsentation
+- Besprechung der Endabgaben und der Bewertungskriterien für die Abschlusspräsentation
 
 
 
-.. class:: fade-out
 
-12. Projektrealisierung - DD. MMMM 2026
+12. Projektrealisierung - 30.06.2026
 --------------------------------------------
 
+.. container:: accentuate
+
+  Ende der dritten Iteration
+
+- Abschlusspräsentation: je Gruppe ca. 45 Minuten inkl. Diskussion/Rückfragen. 
+
+  **Vorführung**
+
+  .. attention::
+
+    Es wird erwartet, dass der App Store und die Apps Release Candidate Status haben. Im Rahmen der Vorführung gefundene kleinere Fehler/Ungereimtheiten können aber in der letzten Iteration noch behoben werden und führen dann auch nicht zu Punktabzug. Gravierende Fehler, die die Nutzung des App Stores oder der Apps verhindern, führen jedoch zu Punktabzug. Auch sollte die Menge der Apps und die Ausgestaltung der Apps Release Candidate Status haben.  
+
+  - [**12P**] Aktueller Stand des App Stores:
+
+    - Deployment von Apps auf OpenStack
+    - Registrierung und Aktualisierung von Apps 
+    - Verwaltung von Apps durch den Administrator
+
+  - [**12P**] Alle App Templates inkl. Deployment auf OpenStack
+
+
 - Festlegen der abzuschließenden User Stories
-- Besprechung der Endabgaben und der Bewertungskriterien
-- Diskussion der Anforderungen an die Abschlusspräsentation
-
-.. story::
-
-  .. rubric:: Notenrelevante Bestandteile
-
-  .. class:: incremental-list
-
-  :`Zwischenpräsentation`:obsolete::
-      ∑ 20 (erledigt)
-
-  :Projekt:
-    **∑ 50**
-
-    - Sourcecode	**25**
-    - Build-Prozess	**5**
-    - Dokumentation: Architektur	**10** 
-
-      (Achtung: die Dokumentation **muss explizit gegengezeichnet werden**. D.h. es muss klar ersichtlich sein wer die Dokumentation geschrieben hat und wer sie gegengezeichnet hat (Review); die Person dürfen sich nicht überschneiden.)
-    - Dokumentation: Installation und Konfiguration	**5** 
-
-      (Achtung: die Dokumentation **muss explizit gegengezeichnet werden**. D.h. es muss klar ersichtlich sein wer die Dokumentation geschrieben hat und wer sie gegengezeichnet hat (Review); die Person dürfen sich nicht überschneiden.)
-    - Reflexionsbericht	**5** (*pro Person*) (Ausgestaltung analog zur Projektkonzeption)
+- Besprechung der Endabgaben
 
 
-  :QS:
-    **∑ 8**
-
-    - QS Maßnahmen - Beleg der Durchführung
-
-  :Produktvideo:
-    **∑ 20**
-
-    - Produktvideo - Inhalt	**15**
-    - Produktvideo - (technische) Qualität	**5**
-
-
-  .. container:: accentuate incremental
+.. container:: accentuate incremental
 
     Start der vierten Iteration
 
 
 
-.. class:: fade-out
-
-Projektabschluss - DD. MMMM 2026
+Projektabschluss - 25.07.2026 (Ereignis)
 -----------------------------------------
 
-.. class:: list-with-explanations
+- finale Einreichung aller Dokumente über Moodle 
 
-- Abschlusspräsentationen (Pro Gruppe 30 Minuten + Fragen)
 
-  - ca. 15 Minuten Präsentation der Architektur und der Installation und Konfiguration
-  - ca. 15 Minuten *Live Demo* des Produkts
-- Diskussion des Standes dieser Iteration und ggf. Anpassung des Scopes.
+.. container:: accentuate 
 
-.. container:: accentuate incremental margin-bottom-1em
+    Damit endet das Projekt.
+  
 
-  Die finale Einreichung aller Dokumente etc. erfolgt über Moodle am Ende des Semesters (d. h. am Sonntag nach der letzten Klausur.)
 
-  :peripheral:`Videos sind per Downloadlink zur Verfügung zu stellen. Die Auflösung sollte dabei (1600-1920) x (1080-1200) auf keinen Fall überschreiten.`
+Einzureichende Dokumente - pro Team
+------------------------------------
 
-.. attention::
-  :class: incremental
+.. story::
 
-  Dies markiert das Endes der vierten Iteration!
+  .. class:: incremental-list
+
+    - [**20P**] Sourcecode
+    - [**2P**] Build-Prozess und CI/CD Pipeline
+    - [**8P**] Dokumentation der Architektur
+
+      (Achtung: die Dokumentation **muss explizit gegengezeichnet werden**. D.h. es muss klar ersichtlich sein wer die Dokumentation geschrieben hat und wer sie gegengezeichnet hat (Review); die Person dürfen sich nicht überschneiden.)
+    - [**3P**] Dokumentation: Installation und Konfiguration	
+
+      (Achtung: die Dokumentation **muss explizit gegengezeichnet werden**. D.h. es muss klar ersichtlich sein wer die Dokumentation geschrieben hat und wer sie gegengezeichnet hat (Review); die Person darf nicht aus dem Backend Team sein.)
+    - [**5P**] Dokumentation: Entwicklung eines neuen App Templates	
+
+      (Achtung: die Dokumentation **muss explizit gegengezeichnet werden**. D.h. es muss klar ersichtlich sein wer die Dokumentation geschrieben hat und wer sie gegengezeichnet hat (Review); die Person darf nicht aus dem entsprechenden Subteam sein.)  
+    - [**8P**] QS Maßnahmen - Beleg der Durchführung
+    - [**8P**] Video mit Code Walkthrough
+    
+      :peripheral:`Die Auflösung sollte dabei (1600-1920) x (1080-1200) auf keinen Fall überschreiten. Kodieren Sie das Video in einem gängigen Format (z.B. MP4 mit H.264 Codec) und achten Sie auf eine gute Video- und Audioqualität.`
+
+      - Video: Inhalt	*6P*
+      - Video: (technische) Qualität	*2P*
+
+
+Einzureichende Dokumente - pro Person
+--------------------------------------
+
+- [**5P**] Reflexionsbericht: Ausgestaltung analog zur Projektkonzeption; jedoch muss ein ganz klarer Bezug zum Projekt, ihrer Rolle bzw. ihren Rollen im Team und Ihren persönlichen Erkenntnissen für zukünftige Projekte hergestellt werden. Generischer Text (z.B. "Ich habe gelernt, dass es wichtig ist effektiv zu kommunizieren.") führt unmittelbar zu einer Abwertung. Es ist erforderlich konkrete Beispiele aus dem Projekt zu nennen und zu erläutern und ggf. auch zu belegen.
