@@ -17,7 +17,7 @@ A broad overview of distributed systems!
 
 :Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
 :Kontakt: michael.eichberg@dhbw.de, Raum 149B
-:Version: 1.0.1
+:Version: 1.0.2
 
 .. supplemental::
 
@@ -124,6 +124,19 @@ Distributed vs. Decentralized
 
 
 
+Distributed Systems - Definition
+-------------------------------------------------------------
+
+.. epigraph::
+
+  A distributed system is one in which the failure of a computer
+  you didn't even know existed can render your own computer
+  unusable.
+
+  -- `May 28, 1987 - Leslie Lamport <https://lamport.azurewebsites.net/pubs/distributed-system.txt>`__
+
+
+
 Common misunderstandings regarding centralised systems
 --------------------------------------------------------
 
@@ -194,7 +207,7 @@ Perspectives on Distributed Systems
 Design-goals of Distributed Systems
 ------------------------------------
 
-.. class:: incremental-list dhbw-list
+.. class:: incremental-list
 
 - `Shared Usage of Resources`_
 - `Distribution Transparency`_
