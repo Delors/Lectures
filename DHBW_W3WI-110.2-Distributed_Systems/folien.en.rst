@@ -106,17 +106,19 @@ Presentations - Submissions
 Presentations - Available Topics
 ------------------------------------------
 
-.. story:: 
+.. deck:: 
+
+  .. card::
 
     .. hint::
 
         Students giving presentations belonging to the same block have to coordinate with each other to avoid any overlap. If you need a specific topic to be covered by another student but are not sure whether it will be presented sufficiently, create a backup slide for your presentation that covers this topic as well and mark it as a backup slide. This backup slide will not be counted towards the time limit.
 
-    .. class:: incremental-list dd-margin-left-2em
+  .. card:: 
 
-    :Virtualization and Virtualization Platforms:
+        .. rubric:: Virtualization and Virtualization Platforms
 
-        .. class:: list-with-sublists show-list-item-content-on-hover
+        .. class:: dhbw list-with-sublists show-list-item-content-on-hover font-size-90
 
         1. Introduction to Virtualization & Use Cases
 
@@ -160,45 +162,69 @@ Presentations - Available Topics
            - SR-IOV (Single Root I/O Virtualization) and device passthrough
            - Virtual NICs and network bridges
            - Virtual switches and network isolation
-           - Storage virtualization (virtual disks, formats)
 
-    :Network Protocols:
+  .. card:: 
 
-        7. QUIC :peripheral:`(only available when we have ≥ 21 students)`
-        8. HTTP/3
-        9. BitTorrent Protocol :peripheral:`(only available when we have ≥ 25 students)`
+        .. rubric:: Network Protocols
 
-    :Modern RPC:
+        .. class:: dhbw font-size-90
 
-        10. Protobuf
-        11. Google RPC
+        1. QUIC :peripheral:`(only available when we have ≥ 21 students)`
+        2. HTTP/3
+        3. BitTorrent Protocol :peripheral:`(only available when we have ≥ 25 students)`
 
+  .. card:: 
 
-    :Web-App Security:
+        .. rubric:: Modern RPC
 
-        12. SOP (Same-Origin Policy), CORS (Cross-Origin Resource Sharing) (Foundations)
-        13. CORP / COOP / COEP (Cross-Origin Resource/Opener/Embedder Policies) :peripheral:`(only available when we have ≥ 23 students)`
-        14. CSP (Content Security Policy) and SRI (Subresource Integrity)
+        .. class:: dhbw font-size-90
+
+        1.  Protobuf
+        2.  Google RPC
+
+  .. card:: 
+
+        .. rubric:: Web-App Security
+
+        .. class:: dhbw font-size-90
+
+        1.  SOP (Same-Origin Policy), CORS (Cross-Origin Resource Sharing) (Foundations)
+        2.  CORP / COOP / COEP (Cross-Origin Resource/Opener/Embedder Policies) :peripheral:`(only available when we have ≥ 23 students)`
+        3.  CSP (Content Security Policy) and SRI (Subresource Integrity)
 
         Introduction and concrete examples how they are used/specified and help prevent attacks.
 
-    :Monitoring & Debugging Distributed Systems:
+  .. card:: 
 
-        15. Log Aggregation with a particular focus on correlation of log entries
+        .. rubric:: Monitoring & Debugging Distributed Systems
 
-    :Leader Election: 
+        .. class:: dhbw font-size-90
 
-        16. Bully Algorithm and/or Ring Algorithm
+        1.  Log Aggregation with a particular focus on correlation of log entries
 
-    :Quorum Systems: 
+  .. card:: 
+
+        .. rubric:: Leader Election
+
+        .. class:: dhbw font-size-90
+
+        1.  Bully Algorithm and/or Ring Algorithm
+
+  .. card::
+
+        .. rubric:: Quorum Systems
         
-        17. Majority voting (i. e., quorum-distributed computing)        
-        
-    :Consensus Algorithms and Fault Tolerance:
+        .. class:: dhbw font-size-90       
 
-        .. class:: list-with-sublists show-list-item-content-on-hover
+        1.  Majority voting (i. e., quorum-distributed computing)        
 
-        18. Consensus Fundamentals & Problem Definition
+  .. card::
+
+        .. rubric:: Consensus Algorithms and Fault Tolerance
+
+        .. class:: dhbw list-with-sublists show-list-item-content-on-hover font-size-90       
+
+        1.  Consensus Fundamentals & Problem Definition
 
             - What is consensus and why is it hard in distributed systems?
             - The FLP impossibility result (conceptual understanding)
@@ -206,7 +232,7 @@ Presentations - Available Topics
             - Safety vs liveness properties
             - Real-world motivation: replicated state machines, distributed databases
 
-        19. (Practical) Byzantine Fault Tolerance
+        2.  (Practical) Byzantine Fault Tolerance
 
             - When do we need BFT?
             - Modern developments
@@ -217,7 +243,7 @@ Presentations - Available Topics
 
             - Real-world usage
 
-        20. Paxos Family
+        3.  Paxos Family
 
             - Basic Paxos algorithm (conceptual overview, roles: proposers, acceptors, learners)
             - Why Paxos is correct but complex
@@ -228,7 +254,7 @@ Presentations - Available Topics
           
                 [VERIFY!:] Google Chubby, Apache ZooKeeper foundations
 
-        21. Raft - Understandable Consensus
+        4.  Raft - Understandable Consensus
 
             - Motivation
             - Leader election, log replication, safety
@@ -238,16 +264,24 @@ Presentations - Available Topics
               .. presenter-note::
                 
                 etcd, Consul, CockroachDB
+  
+  .. card:: 
 
-    :Eventual Consistency: 
+        .. rubric:: Eventual Consistency
     
-        22. Eventual Consistency and Gossip Protocol
-        23. CRDTs (Conflict-free Replicated Data Types) :peripheral:`(only available when we have ≥ 22 students)`
+        .. class:: dhbw font-size-90       
 
-    :Distributed File Systems: 
+        1.  Eventual Consistency and Gossip Protocol
+        2.  CRDTs (Conflict-free Replicated Data Types) :peripheral:`(only available when we have ≥ 22 students)`
 
-        24. Ceph
-        25. HDFS :peripheral:`(only available when we have ≥ 24 students)`
+  .. card:: 
+
+        .. rubric:: Distributed File Systems
+
+        .. class:: dhbw font-size-90       
+
+        1.  Ceph
+        2.  HDFS :peripheral:`(only available when we have ≥ 24 students)`
 
 
 
@@ -266,31 +300,31 @@ Topic Assignment
     * - Topic
       - Constraint
       - Student Name
-    * - \1. Introduction to Virtualization & Use Cases
+    * - \01. Introduction to Virtualization & Use Cases
       - 
       - 
-    * - \2. Hypervisors - Architecture & Types
+    * - \02. Hypervisors - Architecture & Types
       - 
       - 
-    * - \3. Virtual Machines 
+    * - \03. Virtual Machines 
       - 
       - 
-    * - \4. Containers & OS-level Virtualization
+    * - \04. Containers & OS-level Virtualization
       - 
       - 
-    * - \5. Memory Virtualization
+    * - \05. Memory Virtualization
       - 
       - 
-    * - \6. Network & I/O Virtualization
+    * - \06. Network & I/O Virtualization
       - 
       - 
-    * - \7. QUIC
+    * - \07. QUIC
       - ≥ 21 students
       - 
-    * - \8. HTTP/3
+    * - \08. HTTP/3
       - 
       - 
-    * - \9. BitTorrent Protocol
+    * - \09. BitTorrent Protocol
       - ≥ 25 students
       - 
     * - \10. Protobuf
@@ -400,6 +434,8 @@ Moderator Assignment
 
 Presentations - Grading (max 25 Points)
 ------------------------------------------
+
+.. class:: list-with-explanations incremental-list
 
 - Presentation (max 20 Points)
 - Checklist (max 1 Point)
