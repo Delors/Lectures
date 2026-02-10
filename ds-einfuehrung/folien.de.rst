@@ -1123,7 +1123,7 @@ Peer-to-Peer-Systeme
 Cloud-Computing
 ------------------
 
-.. admonition:: Definition
+.. definition:: 
 
    Cloud-Computing bezeichnet die Bereitstellung von Rechenleistung, Speicher und Anwendungen als Dienstleistung. Es ist die  Weiterentwicklung des Grid-Computing.
 

@@ -1190,7 +1190,7 @@ Peer-to-Peer-Systems
 Cloud-Computing
 ------------------
 
-.. admonition:: Definition
+.. definition:: 
 
    Cloud computing refers to the provision of computing power, storage and applications as a service. It is the continuation of grid computing.
 

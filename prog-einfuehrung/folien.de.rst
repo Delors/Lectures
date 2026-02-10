@@ -253,7 +253,7 @@ Programmiersprachen und -paradigmen
 Was ist ein Algorithmus?
 ----------------------------------
 
-.. admonition:: Definition
+.. definition:: 
 
     Ein Algorithmus ist eine exakte, endliche Vorschrift zur schrittweisen Lösung eines (lösbaren) Problems.
 

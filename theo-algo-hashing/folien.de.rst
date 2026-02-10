@@ -163,7 +163,7 @@ Hashfunktionen
 
     .. card::
 
-        .. admonition:: Definition
+        .. definition::
 
             Eine Hashfunktion :math:`h : M →\mathbb{Z}_n` bildet eine Menge :math:`M` mit :math:`|M|≥|\mathbb{Z}_n|` auf die Zahlen :math:`0,...,n−1` ab.
 
@@ -920,7 +920,7 @@ Belegung von Hashtabellen
 
 Die Belegung von Hashtabellen ist für die Effizienz entscheidend.
 
-.. admonition:: Definition
+.. definition:: 
 
     Ein Array :math:`A` der Kapazität :math:`n` mit einer Hashfunktion :math:`h_n` wird :math:`Hashtabelle(A,h_n)` genannt.
 
@@ -964,7 +964,7 @@ Verkettete Hashtabellen
 Offene Adressierung
 -------------------------------
 
-.. admonition:: Definition
+.. definition:: 
 
     Soll der :math:`Hashtabelle(A,h_n)` mit einem Array :math:`A` ein Datensatz mit Schlüssel :math:`k` hinzugefügt werden soll, so erfolgt dies in :math:`A[h_n(k)]`, wenn dieser Eintrag noch nicht belegt ist. Ansonsten werden  :math:`i= 1,...,n−1` weitere Positionen :math:`A[g_n(k,i)]` geprüft.
 

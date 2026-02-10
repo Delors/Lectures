@@ -986,7 +986,7 @@ Knuth-Morris-Pratt Verfahren - Grundlagen
 
         Das Verfahren von Knuth-Morris-Pratt vermeidet unnötige Vergleiche, da es zunächst die Suchwortteile auf den größten Rand, also das größte Prefix, das auch Postfix ist, untersucht.
 
-        .. admonition:: Definition: Präfix, Postfix und Rand
+        .. definition:: : Präfix, Postfix und Rand
             :class: incremental
 
             Für ein Wort :math:`w = (w_1,...,w_n)` sind die Präfixe :math:`p^{(k)} = (w_1,...,w_k )` und die Postfixe :math:`q^{(k)} = (w_{n−k+1},...,w_{n})` für :math:`0 ≤k ≤n`.
