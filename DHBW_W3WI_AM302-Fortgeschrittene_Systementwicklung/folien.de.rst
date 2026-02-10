@@ -87,32 +87,32 @@ Ablauf
 
     1. Semester 16 VL:
 
-    -  1. Sep 2025
-    -  3. Sep 2025
-    - 15. Sep 2025
-    -  6. Okt 2025 (20 Minuten Kurztest)
+    - \01. Sep 2025
+    - \03. Sep 2025
+    - \15. Sep 2025
+    - \06. Okt 2025 (20 Minuten Kurztest)
 
   .. card::
 
-    2. Semester: 39 VL
+    1. Semester: 39 VL
 
     .. grid::
 
       .. cell:: width-50
 
-        - 18. Feb 2026 von 09:30 bis 12:45 (4VL)
-        - 25. Feb 2026 von 09:30 bis 12:45 (4VL)
-        - 4. März 2026 von 09:30 bis 12:4 (4VL)
-        - 11. März 2026 von 09:30 bis 12:45 (4VL)
-        - 18. März 2026 von 09:30 bis 12:45 (4VL)
+        - \18. Feb 2026 von 09:30 bis 12:45 (4VL)
+        - \25. Feb 2026 von 09:30 bis 12:45 (4VL)
+        - \04. März 2026 von 09:30 bis 12:4 (4VL)
+        - \11. März 2026 von 09:30 bis 12:45 (4VL)
+        - \18. März 2026 von 09:30 bis 12:45 (4VL)
     
       .. cell:: width-50
     
-        - 25. März 2026 von 09:30 bis 12:45 (4VL)
-        - 1. April 2026 von 09:30 bis 12:45 (4VL)
-        - 8. April 2026 von 09:30 bis 12:45 (4VL)
-        - 15. April 2026 von 09:30 bis 12:45 (4VL)
-        - 22. April 2026 von 09:30 bis 12:00 (3VL)
+        - \25. März 2026 von 09:30 bis 12:45 (4VL)
+        - \01. April 2026 von 09:30 bis 12:45 (4VL)
+        - \08. April 2026 von 09:30 bis 12:45 (4VL)
+        - \15. April 2026 von 09:30 bis 12:45 (4VL)
+        - \22. April 2026 von 09:30 bis 12:00 (3VL)
 
 
 
