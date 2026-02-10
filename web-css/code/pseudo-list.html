@@ -1,0 +1,56 @@
+<html>
+    <head>
+    <style>
+        aside {
+
+
+            > p:first-child{
+                position: relative;
+                display: block;
+                
+                &[content] {
+                    padding-left: 2em;
+                
+                    &::before {
+                        content: attr(content);
+
+                        height: 100%;
+                        width: 2em;
+
+                        display: inline-block;
+                        position: absolute;
+                        left: 0;
+                        
+                        box-sizing: border-box;
+                        background-color: lightcoral;
+                        text-align: center;
+                    }
+                }
+                background-color: lightblue;
+            }
+
+            background-color: aliceblue;
+        }
+
+    </style>
+    </head>
+    <body>
+        <aside style="width: 200px;">
+            <p class="title" content="#">First item</p>
+            <p>Second item</p>
+            <p>Third item</p>
+        </aside>
+
+        <aside style="width: 200px;">
+            <p class="title">First item with a very long title that spans multiple lines...</p>
+            <p>Second item</p>
+            <p>Third item</p>
+        </aside>
+
+        <aside style="width: 200px;">
+            <p class="title" content="X.">First item with a very long title that spans multiple lines...</p>
+            <p>Second item</p>
+            <p>Third item</p>
+        </aside>
+        </body> 
+</html>
