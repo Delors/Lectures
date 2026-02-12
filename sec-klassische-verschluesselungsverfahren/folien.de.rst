@@ -16,7 +16,7 @@ Klassische Verschlüsselungsmethoden
 
 :Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
 :Kontakt: michael.eichberg@dhbw.de, Raum 149B
-:Version: 1.1.4
+:Version: 1.1.5
 
 .. class:: sources
 
@@ -39,54 +39,49 @@ Einführung
 --------------------------------
 
 
-Definitionen
--------------
+Zentrale Begriffe
+-------------------
 
-.. class:: incremental-list
+.. story::
 
-:Klartext:
-    :eng:`Plaintext`
+    .. definition:: Klartext (:eng:`Plaintext`)
+        
+        Die Originalnachricht, die verschlüsselt werden soll.
 
-    Die Originalnachricht, die verschlüsselt werden soll.
+    .. definition:: Geheimtext oder Chiffretext (:eng:`Ciphertext`)
+        :class: incremental
 
-:Geheimtext oder Chiffretext oder `Kryptogramm`:peripheral::
-    :eng:`Ciphertext`
+        Die kodierte/verschlüsselte Nachricht.
 
-    Die kodierte/verschlüsselte Nachricht.
+        :peripheral:`(Im Deutschen gelegentlich auch Kryptogramm genannt.)`` 
 
-:Verschlüsselung:
-    :eng:`Encryption`
+    .. definition:: Verschlüsselung (:eng:`Encryption`)
+        :class: incremental
 
-    Der Prozess der Umwandlung von Klartext in Geheimtext.
+        Der Prozess der Umwandlung von Klartext in Geheimtext.
 
-:Entschlüsselung:
-    :eng:`Decryption`
+    .. definition:: Entschlüsselung (:eng:`Decryption`)
+        :class: incremental
 
-    Der Prozess der Wiederherstellung des Klartextes aus dem Geheimtext.
-
+        Der Prozess der Wiederherstellung des Klartextes aus dem Geheimtext.
 
 
-Definitionen
---------------
+    .. definition:: Kryptographie (:eng:`Cryptography`)
+        :class: incremental
+        
+        Das Studiengebiet der Verschlüsselungsschemata.
 
-.. class:: incremental-list
+    .. definition:: Kryptoanalyse (:eng:`Cryptanalysis`)
+        :class: incremental
 
-:Kryptographie:
-    :eng:`Cryptography`
+        Methoden und Techniken, die zur Gewinnung von Informationen aus einer verschlüsselten Nachricht dienen.
 
-    Das Studiengebiet der Verschlüsselungsschemata.
+        Analyse von kryptographischen Verfahren.
 
-:Kryptoanalyse:
-    :eng:`Cryptanalysis`
+    .. definition:: Kryptologie (:eng:`Cryptology`)
+        :class: incremental
 
-    Methoden und Techniken, die zur Gewinnung von Informationen aus einer verschlüsselten Nachricht dienen.
-
-    Analyse von kryptographischen Verfahren.
-
-:Kryptologie:
-    :eng:`Cryptology`
-
-    Die Bereiche Kryptographie und Kryptoanalyse.
+        Die Bereiche Kryptographie und Kryptoanalyse.
 
 
 
@@ -97,6 +92,7 @@ Vereinfachtes Modell der symmetrischen Verschlüsselung
 .. image:: drawings/symmetrische_verschluesselung/simplified_model.svg
     :alt: Vereinfachtes Modell der symmetrischen Verschlüsselung
     :align: center
+    :class: light-image
 
 
 
@@ -124,6 +120,7 @@ Modell eines symmetrischen Kryptosystems
 .. image:: drawings/symmetrische_verschluesselung/model.svg
     :alt: Modell eines symmetrischen Kryptosystems
     :align: center
+    :class: light-image
 
 
 
@@ -133,11 +130,11 @@ Kryptografische Systeme können entlang dreier unabhängiger Dimensionen charakt
 .. note::
     :class: width-30
 
-    Eine Permutation ist eine Folge von Vertauschungen (:eng:`Transposition`).
+    Eine Permutation ist eine Folge von Vertauschungen.
 
 .. class:: incremental-list
 
-1. Die Art der Operationen, die zur Umwandlung von Klartext in Chiffretext verwendet werden.
+1. Die Art der Operation, die zur Umwandlung von Klartext in Chiffretext verwendet wird:
 
    .. class:: incremental-list
 
@@ -148,8 +145,8 @@ Kryptografische Systeme können entlang dreier unabhängiger Dimensionen charakt
 
    .. class:: incremental-list
 
-   Symmetrisch: Ein-Schlüssel-, **Secret-Key**-, konventionelle Verschlüsselung
-   Asymmetrisch: Zwei-Schlüssel- oder **Public-Key**-Verschlüsselung
+   :Symmetrisch: Ein-Schlüssel bzw. **Secret-Key**- (*konventionelle Verschlüsselung*)
+   :Asymmetrisch: Zwei-Schlüssel bzw. **Public-Key**-Verschlüsselung
 
 3. Die Art und Weise, in der der Klartext verarbeitet wird:
 
@@ -186,7 +183,8 @@ Klassifizierung von Angriffen
 
     .. csv-table::
         :header: Art des Angriffs, dem Kryptoanalytiker bekannt
-        :class: incremental-table-rows sticky-header
+        :class: incremental-table-rows sticky-header dhbw
+        :widths: 1 4
         :stub-columns: 1
 
         Ciphertext Only, "- Verschlüsselungsalgorithmus und Chiffretext"
@@ -211,13 +209,13 @@ Sicherheit von Verschlüsselungsschemata
 
 .. container::
 
-   *Bedingungslos Sicher* (:eng:`Unconditionally Secure`)
+   .. rubric:: Bedingungslos Sicher (:eng:`Unconditionally Secure`)
 
    - Unabhängig davon wie viel Zeit ein Gegner hat, ist es ihm unmöglich, den Geheimtext zu entschlüsseln, weil die erforderlichen Informationen nicht vorhanden sind.
 
 .. container:: incremental
 
-    *Rechnerisch Sicher* (:eng:`Computationally Secure`)
+    .. rubric:: Rechnerisch Sicher (:eng:`Computationally Secure`)
 
     - Die Kosten für das Brechen der Chiffre übersteigen den Wert der verschlüsselten Informationen.
     - Die zum Knacken der Chiffre benötigte Zeit übersteigt die Lebensdauer der Informationen.
@@ -242,15 +240,11 @@ Brute-Force Angriff
 
   .. question::
 
-      Was bedeuted somit *bis eine verständliche Übersetzung des Chiffriertextes in Klartext erreicht wird*? Wenn der Klartext zum Beispiel ein Bild, ein Video oder ein Computerprogramm ist?
+      Was bedeuted somit *bis eine verständliche Übersetzung des Chiffriertextes in Klartext erreicht wird*? 
+      
+      :incremental:`Wie können Sie feststellen ob Sie erfolgreich entschlüsselt haben, wenn der Klartext zum Beispiel ein Bild, ein Video oder ein Computerprogramm ist?``
 
-
-Substitutionsverfahren
-----------------------
-
-- Bei der Substitution werden die Buchstaben des Klartextes durch andere Buchstaben oder durch Zahlen oder Symbole ersetzt.
-
-- Wenn der Klartext als eine Folge von Bits betrachtet wird, beinhaltet die Substitution das Ersetzen von Bitmustern des Klartextes durch Bitmuster des Geheimtextes.
+      :incremental:`Wie können Sie feststellen, ob Sie erfolgreich entschlüsselt haben, wenn die Datei zweifach (d. h. mit zwei verschiedenen Schlüsseln) verschlüsselt wurde?`
 
 
 
@@ -258,6 +252,16 @@ Substitutionsverfahren
 
 Substitutions-Chiffren
 -------------------------
+
+
+
+Substitutionsverfahren - Allgemeine Vorgehensweise
+-----------------------------------------------------
+
+- Bei der Substitution werden die Buchstaben des Klartextes durch andere Buchstaben oder durch Zahlen oder Symbole ersetzt.
+
+- Wenn der Klartext als eine Folge von Bits betrachtet wird, beinhaltet die Substitution das Ersetzen von Bitmustern des Klartextes durch Bitmuster des Geheimtextes.
+
 
 
 
@@ -282,7 +286,7 @@ Cäsar-Chiffre
 Cäsar-Chiffre: historische Verwendung
 ----------------------------------------------------
 
-Die Transformation kann wie folgt ausgedrückt werden:
+Die Transformation kann mit folgender Tabelle ausgedrückt werden:
 
 .. csv-table::
     :delim: space
@@ -304,7 +308,7 @@ Die Transformation kann wie folgt ausgedrückt werden:
 
         0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25
 
-    Der Algorithmus zur Verschlüsselung ist dann (p ist der Wert des zu verschlüsselnden Buchstabens):
+    Der Algorithmus zur Verschlüsselung ist dann (p sei der Wert des zu verschlüsselnden Buchstabens):
 
         Y = E(3,p) = (p + 3) mod 26
 
@@ -319,7 +323,7 @@ Eine Verschiebung kann beliebig groß sein (k), so dass der allgemeine Cäsar-Al
 
 Wobei k einen Wert im Bereich von 1 bis 25 annimmt; der Entschlüsselungsalgorithmus ist einfach:
 
-    p = D(k,C) = (Y - k) mod 26
+    p = D(k,Y) = (Y - k) mod 26
 
 
 
@@ -333,21 +337,21 @@ Brute-Force-Kryptoanalyse der Cäsar-Chiffre
     :stub-columns: 1
 
     **Key** PHHW PH DIWHU WKH WRJD SDUWB (Ciphertext) 
-    1 OGGV OG CHVGT VJG VQIC RCTVA " "
-    2 NFFU NF BGUFS UIF UPHB QBSUZ " "
-    3 MEET ME AFTER THE TOGA PARTY " "
-    4 LDDS LD ZESDQ SGD SNFZ OZQSX " "
-    5 KCCR KC YDRCP RFC RMEY NYPRW " "
-    6 JBBQ JB XCQBO QEB QLDX MXOQV " "
-    7 IAAP IA WBPAN PDA PKCW LWNPU " "
-    8 HZZO HZ VAOZM OCZ OJBV KVMOT " "
-    9 GYYN GY UZNYL NBY NIAU JULNS " "
-    10 FXXM FX TYMXK MAX MHZT ITKMR " "
-    11 EWWL EW SXLWJ LZW LGYS HSJLQ " "
-    12 DVVK DV RWKVI KYV KFXR GRIKP " "
-    13 CUUJ CU QVJUH JXU JEWQ FQHJO " "
+    1 oggv og chvgt vjg vqic rctva " "
+    2 nffu nf bgufs uif uphb qbsuz " "
+    3 meet me after the toga party " "
+    4 ldds ld zesdq sgd snfz ozqsx " "
+    5 kccr kc ydrcp rfc rmey nyprw " "
+    6 jbbq jb xcqbo qeb qldx mxoqv " "
+    7 iaap ia wbpan pda pkcw lwnpu " "
+    8 hzzo hz vaozm ocz ojbv kvmot " "
+    9 gyyn gy uznyl nby niau julns " "
+    10 fxxm fx tymxk max mhzt itkmr " "
+    11 ewwl ew sxlwj lzw lgys hsjlq " "
+    12 dvvk dv rwkvi kyv kfxr grikp " "
+    13 cuuj cu qvjuh jxu jewq fqhjo " "
     ... ..\.. \.. ..\... ... .\... ..\... " "
-    25 QIIX QI EJXIV XLI XSKE TEVXC " "
+    25 qiix qi ejxiv xli xske tevxc " "
 
 
 
@@ -400,19 +404,20 @@ Monoalphabetische Chiffren
 
 - Wenn die „Chiffre“-Zeile (siehe Cäsar-Chiffre) eine beliebige Permutation der 26 alphabetischen Zeichen sein kann, dann gibt es 26! (*26 Fakultät*) oder mehr als 4 · 10²⁶ mögliche Schlüssel.
 
-  - Dies ist um 10 Größenordnungen größer als der Schlüsselraum für DES!
+  - Dies ist um 10 Größenordnungen größer als der Schlüsselraum des Verschlüsselungsalgorithmus DES!
   - Der Ansatz wird als monoalphabetische Substitutions-Chiffre bezeichnet, da pro Nachricht ein einziges Chiffre-Alphabet verwendet wird.
 
 
 
-Häufigkeit der englischen Buchstaben [#]_
+Häufigkeit der englischen Buchstaben
 -------------------------------------------
 
-.. image:: drawings/english_letter_frequency.svg
+.. figure:: drawings/english_letter_frequency.svg
     :align: center
     :alt: Häufigkeit der englischen Buchstaben (alphabetisch)
+    :class: light-image
 
-.. [#] Analyse des Concise Oxford Dictionary (9th edition, 1995) ⸺ `https://www.nd.edu <https://www3.nd.edu/~busiforc/handouts/cryptography/letterfrequencies.html>`__
+    Analyse des Concise Oxford Dictionary (9th edition, 1995) ⸺ `https://www.nd.edu <https://www3.nd.edu/~busiforc/handouts/cryptography/letterfrequencies.html>`__
 
 
 
@@ -495,10 +500,10 @@ Die Verschlüsselung wird für jedes Buchstabenpaar des Klartextes durchgeführt
 
 .. class:: incremental-list
 
-1. Wenn beide Buchstaben gleich sind (oder nur ein Buchstabe übrig ist), fügen Sie ein "X" hinter dem ersten Buchstaben ein. Verschlüsseln Sie das neue Paar und fahren Sie fort. (Z. B. würde statt "ballon" "ba lX lo nX" verschlüsselt werden.)
-2. Wenn die Buchstaben in der gleichen Zeile stehen, ersetzen Sie sie durch die Buchstaben unmittelbar rechts davon (ggf. umbrechen). (Z. B. wird `ar` als `RM` verschlüsselt.)
-3. Tauchen die Buchstaben in derselben Spalte auf, so sind sie durch die unmittelbar darunter liegenden Buchstaben zu ersetzen (ggf. umbrechen). (Z. B. wird "mu" als "CM" verschlüsselt.)
-4. Befinden sich die Buchstaben nicht in derselben Zeile oder Spalte, so werden sie durch die Buchstaben in derselben Zeile bzw. in dem anderen Paar von Ecken des durch das ursprüngliche Paar definierten Rechtecks ersetzt (z. B. `hs` → `BP`; `ea` → `IM`).
+1. Wenn beide Buchstaben gleich sind (oder nur ein Buchstabe übrig ist), fügen Sie ein ``X`` hinter dem ersten Buchstaben ein. Verschlüsseln Sie das neue Paar und fahren Sie fort (z. B. würde ``ballon`` als ``ba lX lo nX`` verschlüsselt werden).
+2. Wenn die Buchstaben in der gleichen Zeile stehen, ersetzen Sie sie durch die Buchstaben unmittelbar rechts davon (ggf. umbrechen) (z. B. wird ``ar`` als ``RM`` verschlüsselt).
+3. Tauchen die Buchstaben in derselben Spalte auf, so sind sie durch die unmittelbar darunter liegenden Buchstaben zu ersetzen (ggf. umbrechen) (z. B. wird ``mu`` als ``CM`` verschlüsselt).
+4. Befinden sich die Buchstaben nicht in derselben Zeile oder Spalte, so werden sie durch die Buchstaben in derselben Zeile bzw. in dem anderen Paar von Ecken des durch das ursprüngliche Paar definierten Rechtecks ersetzt (z. B. ``hs`` → ``BP``; ``ea`` → ``IM``).
 
 
 
@@ -564,7 +569,6 @@ Vigenère-Tableau
 
         .. csv-table::
             :delim: space
-            :align: right
             :class: font-size-75 ultra-compact highlight-on-hover monospaced text-align-center
 
             / **a** **b** **c** **d** **e** **f** **g** **h** **i** **j** **k** **l** **m** **n** **o** **p** **q** **r** **s** **t** **u** **v** **w** **x** **y** **z**
@@ -638,6 +642,7 @@ Vernam Chiffre
 .. image:: drawings/vernam_cipher.svg
     :alt: Vernam Cipher
     :align: center
+    :class: light-image
 
 
 
@@ -671,7 +676,7 @@ Schwierigkeiten von One-Time-Pads
 
   1. Es gibt das praktische Problem der Herstellung großer Mengen von Zufallsschlüsseln.
 
-     Jedes stark genutzte System könnte regelmäßig Millionen von zufälligen Zeichen benötigen.
+     Jedes stark genutzte System würde regelmäßig Millionen von zufälligen Zeichen benötigen.
 
   2. Ein „gigantisches“ Schlüsselverteilungsproblem
 
@@ -742,10 +747,10 @@ Rail Fence Chiffre
 
     ::
 
-      -     -       1 ⇒ v          2 ⇒ o
-       -   - -        3 ⇒ e      4 ⇒ o  5 ⇒ d
-        - -             6 ⇒ r  7 ⇒ g
-         -                8 ⇒ y
+      -     -       1 ⇒ v            2 ⇒ o
+       -   - -         3 ⇒ e      4 ⇒ o   5 ⇒ d
+        - -               6 ⇒ r  7 ⇒ g
+         -                    8 ⇒ y
 
     Plaintext = very good
 
@@ -793,18 +798,20 @@ Zeilenverschiebungs-Chiffre
 
 .. supplemental::
 
-   Zeilenverschiebungs-Chiffre ≘ :eng:`Row Transposition Cipher`
+    - Zeilenverschiebungs-Chiffre ≘ :eng:`Row Transposition Cipher`
 
-   Wenn der Schlüssel ``4312567`` ist, dann wird:
+    - Wenn der Schlüssel ``4312567`` ist, dann wird:
 
-   - die erste Spalte wird als die *vierte* (4),
-   - die zweite Spalte als die *dritte* (3),
-   - die dritte Spalte als die *erste* (1),
-   - ...
+      - die erste Spalte wird als die *vierte* (``4``),
+      - die zweite Spalte als die *dritte* (``3``),
+      - die dritte Spalte als die *erste* (``1``),
+      - ...
 
-   geschrieben
+      geschrieben
 
-   Beim Entschlüsseln ergibt sich die Anzahl der Reihen trivial aus der Länge der Nachricht (:math:`28` Zeichen) und der Länge des Schlüssels (:math:`7` Zeichen); :math:`28/7 = 4` .
+    - Beim Entschlüsseln ergibt sich die Anzahl der Reihen trivial aus der Länge der Nachricht (28 Zeichen) und der Länge des Schlüssels (7 Zeichen); 28/7 = 4.
+
+    - ``xyz`` am Ende der Nachricht sind nur Platzhalter (*Padding*), um die letzte Zeile zu füllen, damit die Nachricht in ein Rechteck passt. Sie werden bei der Entschlüsselung einfach ignoriert. 
 
 
 
@@ -888,7 +895,7 @@ Steganographie vs. Verschlüsselung
 
   .. class:: incremental-list positive-list
 
-  - Sie kann von Parteien eingesetzt werden, die etwas zu verlieren haben, wenn die Tatsache ihrer geheimen Kommunikation (nicht unbedingt der Inhalt) entdeckt wird.
+  - Sie kann von Parteien eingesetzt werden, die etwas zu verlieren haben, wenn allein die Tatsache ihrer geheimen Kommunikation (unabhängig vom Inhalt) entdeckt wird.
   - Verschlüsselung kennzeichnet den Verkehr als wichtig oder geheim oder kann den Sender oder Empfänger als jemanden identifizieren, der etwas zu verbergen hat.
 
 
