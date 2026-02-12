@@ -72,7 +72,7 @@ Literatur
 - Bzgl. Dokumentenmanagement:
 
   .. image:: images/dokumentenmanagement.webp
-        :class: trbl-box-shadow-dark
+        :class: trbl-shadow
 
 - weitere bzgl. der IT sicherheitsrelevanten Aspekte: Verschlüsselungsverfahren und Signaturen
 
@@ -118,7 +118,7 @@ Digitalisierung - ein langwieriger Prozess...
 
 .. figure:: images/floppydisk.com.2024-01.webp
     :align: center
-    :class: trbl-box-shadow-dark
+    :class: trbl-shadow
 
     Jan. 2024
 
@@ -159,7 +159,7 @@ Digitalisierung - ein Prozess mit Stilblüten...
 -------------------------------------------------
 
 .. image:: images/sparkasse-verschickt-usb-sticks.2024-03-03.webp
-    :class: trbl-box-shadow-dark
+    :class: trbl-shadow
     :align: center
 
 
@@ -368,7 +368,7 @@ Dokumente annotieren
 --------------------------------
 
 .. image:: images/dokument_mit_anmerkungen.webp
-    :class: trbl-box-shadow-dark
+    :class: trbl-shadow
     :align: center
 
 
@@ -648,9 +648,9 @@ Löschen von Dokumenten
 Archivierung (von Dokumenten)
 -----------------------------------------------
 
-.. definition::
+.. definition:: Archiv
 
-    :Archiv: Ein realer oder elektronischer Ort, in dem Dokumente, die zur laufenden Aufgabenerfüllung nicht mehr benötigt werden, erfasst, ausgewertet und zugänglich gemacht werden.
+    Ein realer oder elektronischer Ort, in dem Dokumente, die zur laufenden Aufgabenerfüllung nicht mehr benötigt werden, erfasst, ausgewertet und zugänglich gemacht werden.
 
 
 
