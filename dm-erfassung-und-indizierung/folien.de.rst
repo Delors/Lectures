@@ -80,7 +80,7 @@ Integration mit Office-Anwendungen
 .. image:: screenshots/elo-office-ms-word-integration-2024-02-05.webp
     :width: 1800px
     :align: center
-    :class: trbl-box-shadow-dark
+    :class: trbl-shadow
 
 
 
@@ -90,7 +90,7 @@ Speichern von Dokumenten aus Anwendungen (hier Word)
 .. image:: screenshots/elo-office-ms-word-speichern-in-archiv-2024-02-05.webp
     :width: 1800px
     :align: center
-    :class: trbl-box-shadow-dark
+    :class: trbl-shadow
 
 
 
@@ -184,7 +184,7 @@ Unterstützung für Workflowdefinitionen in ECM Systemen - z. B. `DocuWare <ht
 
 .. image:: screenshots/docuware-workflow-manager-2024-02.webp
     :align: center
-    :class: trbl-box-shadow-dark
+    :class: trbl-shadow
 
 .. supplemental::
 
@@ -298,7 +298,7 @@ Scanprofile (hier in Elo Office)
 .. image:: screenshots/elo-office-scanprofil-2024-02-05.webp
     :width: 1800px
     :align: center
-    :class: trbl-box-shadow-dark
+    :class: trbl-shadow
 
 
 
@@ -308,7 +308,7 @@ Vordefiniertes Scanprofile (hier in Elo Office)
 .. image:: screenshots/elo-office-vordefiniertes-scanprofil-2024-02-05.webp
     :width: 1800px
     :align: center
-    :class: trbl-box-shadow-dark
+    :class: trbl-shadow
 
 .. supplemental::
 
@@ -479,7 +479,7 @@ Barcodes und QR-Codes
       .. image:: screenshots/lohnsteuer-mit-qr-code.webp
         :width: 1000px
         :align: center
-        :class: trbl-box-shadow-dark
+        :class: trbl-shadow
 
 
 
