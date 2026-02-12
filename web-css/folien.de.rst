@@ -147,7 +147,6 @@ Eine CSS-Datei besteht aus Regeln, die aus einem Selektor und einer oder mehrere
         .. rubric:: Resultat
 
         .. module:: embedded-iframe
-            :class: br-shadow
 
             <iframe width="100%"
                     srcdoc='
@@ -166,7 +165,8 @@ Eine CSS-Datei besteht aus Regeln, die aus einem Selektor und einer oder mehrere
                     </style>
                     <h1>Überschrift</h1>
                     <p contenteditable>Paragraph<strong> in sehr wichtig!</strong>.</p>
-                </body>' >
+                </body>
+            '>
                 iframes are not supported
             </iframe>
 
@@ -285,7 +285,6 @@ Selektoren
         *Resultat*
 
         .. module:: embedded-iframe
-            :class: br-shadow
 
             <iframe width="100%"
                     srcdoc='
@@ -369,7 +368,6 @@ Selektoren
         *Resultat*
 
         .. module:: embedded-iframe
-            :class: br-shadow
 
             <iframe width="100%"
                     srcdoc='
@@ -463,7 +461,6 @@ Kombinatoren - Beispiele
         *Spielwiese*
 
         .. module:: embedded-iframe
-            :class: br-shadow
 
             <iframe width="100%"
                     srcdoc='
@@ -582,7 +579,7 @@ Kombinatoren - Beispiele
                 Zur Erinnerung: Pseudo-class Selektoren selektieren das Element, auf das sie sich beziehen.
 
         .. module:: embedded-iframe
-            :class: br-shadow incremental#1
+            :class: incremental#1
 
             <iframe
                     width="100%"
@@ -644,7 +641,6 @@ Kombinatoren - Beispiele
         *Spielwiese*
 
         .. module:: embedded-iframe
-            :class: br-shadow
 
             <iframe width="100%"
                     srcdoc='
@@ -693,7 +689,7 @@ Kombinatoren - Beispiele
 
     .. grid::
 
-        .. cell:: width-40
+        .. cell:: width-45
 
             **Gegeben sei**
 
@@ -717,13 +713,13 @@ Kombinatoren - Beispiele
                   </aside>
                 </div>
 
-        .. cell:: width-60
+        .. cell:: width-55
 
             **Aufgaben**
 
             1. Schreiben Sie einen CSS Selektor, um den ersten Buchstaben des ersten Wortes eines jeden Listenelements (:css:`:first-letter`) in Kleinbuchstaben darzustellen mit :css:`text-transform: lowercase`.
             2. Schreiben Sie einen CSS Selektor, um jeder zweiten Zeile der Liste eine andere Hintergrundfarbe zu geben mit :css:`background-color: plum`.
-            3. Selektieren Sie die Überschrift eines Blocks(:html:`<div>`\ s) mit der Klasse :html:`slide` wenn diese das erst Kind ist und geben Sie ihr zum Beispiel die Schriftfarbe rot mit :css:`color: red`.
+            3. Selektieren Sie die Überschrift eines Blocks (:html:`<div>`\ s) mit der Klasse :html:`slide` wenn diese das erst Kind ist und geben Sie ihr die Schriftfarbe rot mit :css:`color: red`.
 
         .. solution::
             :pwd: 1C2S3S
@@ -810,7 +806,6 @@ Spezifität von Selektoren
                 *Spielwiese*
 
                 .. module:: embedded-iframe
-                    :class: br-shadow
 
                     <iframe width=100%
                             srcdoc='
@@ -884,14 +879,14 @@ Spezifität von Selektoren
         **Chrome 135** - falsche Darstellung in den Entwicklertools - Farbe von "*error message*" ist im Browser rot, wird in den Entwicklertools aber als blau angezeigt.
 
         .. image:: screenshots/important-chrome-135.webp
-            :class: trbl-box-shadow-dark
+            :class: screenshot
 
     .. card::
 
         **Firefox 138** - korrekte Darstellung in den Entwicklertools - Farbe von "*error message*" ist im Browser rot und wird in den Entwicklertools auch als rot angezeigt.
 
         .. image:: screenshots/important-firefox-138.webp
-            :class: trbl-box-shadow-dark
+            :class: screenshot
 
     .. card::
 
@@ -936,7 +931,7 @@ Spezifität von Selektoren
 
     .. rubric::  Vollständiges Beispiel bzgl. :css:`!important`
 
-    .. include:: code/important.html
+    .. include:: code/css-important.html
         :code: html
         :class: copy-to-clipboard
         :number-lines:
@@ -996,7 +991,6 @@ Block und Inline Elemente - Beispiel
         .. rubric:: Visualisierung
 
         .. module:: embedded-iframe
-            :class: br-shadow
 
             <iframe width="100%"
                     srcdoc='
@@ -1123,7 +1117,6 @@ Sollte eine Deklaration möglicherweise nicht unterstützt werden, es jedoch ein
         *Spielwiese*
 
         .. module:: embedded-iframe
-            :class: br-shadow
 
             <iframe width="100%" srcdoc='
                 <html>
@@ -1250,7 +1243,6 @@ Erlauben das Gruppieren von Selektoren innerhalb eines (komplexen) Selektors.
         *Spielwiese*
 
         .. module:: embedded-iframe
-            :class: br-shadow
 
             <iframe width="100%" srcdoc='
                 <html>
@@ -1633,7 +1625,7 @@ Nesting - Beispiel
             .. container:: center-content
 
                 .. image:: code/1st-exercise/screenshot-ausgangssituation.webp
-                    :class: trbl-box-shadow-dark border-rounded
+                    :class: screenshot
 
             :Code (HTML): `exercise-template.html <code/1st-exercise/exercise-template.html>`__
             :Hintergrundbild: `image.webp <code/1st-exercise/image.webp>`__
@@ -1648,7 +1640,7 @@ Nesting - Beispiel
             .. container:: center-content
 
                 .. image:: code/1st-exercise/screenshot-final.webp
-                    :class: trbl-box-shadow-dark border-rounded
+                    :class: screenshot
 
         .. card::
 
@@ -1790,8 +1782,7 @@ Nesting - Beispiel
                     autoplay
                     loop
                     muted
-                    preload="metadata"
-                    class="trbl-shadow-dark">
+                    preload="metadata">
                     <source src="code/2nd-exercise/index.mov" type="video/mp4">
                     Your browser does not support the video tag.
                 </video>
@@ -2053,7 +2044,6 @@ Anzeige des Inhalts, der nicht in die umgebende Box passt, kontrollieren
         *Spielwiese*
 
         .. module:: embedded-iframe
-            :class: br-shadow
 
             <iframe width="100%"
                     srcdoc='
@@ -2189,7 +2179,6 @@ Elemente können mit  :css:`float`  aus dem normalen Fluss genommen werden:
         *Spielwiese*
 
         .. module:: embedded-iframe
-            :class: br-shadow
 
             <iframe width="100%" srcdoc='
                 <html>
@@ -2258,7 +2247,6 @@ Positioning -  :css:`relative`  und  :css:`absolute`
         *Spielwiese*
 
         .. module:: embedded-iframe
-            :class: br-shadow
 
             <iframe width="100%" srcdoc='
                 <html>
@@ -2344,7 +2332,6 @@ Positioning -  :css:`fixed`  und  :css:`sticky`
         *Spielwiese*
 
         .. module:: embedded-iframe
-            :class: br-shadow
 
             <iframe width="100%" height="10lh" style="height: 10lh;" srcdoc='
                 <html>
@@ -2693,8 +2680,7 @@ Bauen Sie Unterstützung für den Dark und Light Mode nach.\ [#]_
         autoplay
         loop
         muted
-        preload="metadata"
-        style="box-shadow: var(--trbl-shadow)">
+        preload="metadata">
         <source src="code/3rd-exercise/dark-light.mov" type="video/mp4">
         Your browser does not support the video tag.
     </video>
@@ -2909,8 +2895,7 @@ Bauen Sie Unterstützung für den Dark und Light Mode nach.\ [#]_
         autoplay
         loop
         muted
-        preload="metadata"
-        class="trbl-shadow">
+        preload="metadata">
         <source src="code/simple-layout-480p.mov" type="video/mp4">
         Your browser does not support the video tag.
     </video>

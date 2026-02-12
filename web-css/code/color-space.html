@@ -1,0 +1,101 @@
+<html>
+  <head>
+    <style>
+      :root {
+        color-scheme: light dark;
+        --color-bg: light-dark(white, black);
+        --color-fg: light-dark(black, white);
+      }
+      body {
+        color: var(--color-fg);
+        background-color: var(--color-bg);
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+      }
+      .grid {
+        display: flex;
+        gap: 0.5em;
+        justify-content: center;
+      }
+      .cell {
+        width: 200px;
+        height: 200px;
+      }
+      figure {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+
+        figcaption {
+          width: 200px;
+          text-align: center;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="grid">
+      <figure>
+        <div
+          class="cell"
+          style="background-color: color(display-p3 0 1 0)"
+        ></div>
+        <figcaption>
+          This is bright green displayed in the Display P3 color space.
+        </figcaption>
+      </figure>
+
+      <figure>
+        <div class="cell" style="background-color: #00ff00"></div>
+        <figcaption>
+          This is bright green displayed in the sRGB color space.
+        </figcaption>
+      </figure>
+    </div>
+    <div class="grid">
+      <figure>
+        <div
+          class="cell"
+          style="background-color: color(display-p3 1 0 0)"
+        ></div>
+        <figcaption>
+          This is bright red displayed in the Display P3 color space.
+        </figcaption>
+      </figure>
+
+      <figure>
+        <div class="cell" style="background-color: #ff0000"></div>
+        <figcaption>
+          This is bright red displayed in the sRGB color space.
+        </figcaption>
+      </figure>
+    </div>
+
+    <div class="grid">
+      <figure>
+        <div
+          class="cell"
+          style="background-color: color(display-p3 0 0 1)"
+        ></div>
+        <figcaption>
+          This is bright blue (<code>display-p3 0 0 1</code>) displayed in the
+          Display P3 color space.
+        </figcaption>
+      </figure>
+
+      <figure>
+        <div class="cell" style="background-color: #0000ff"></div>
+        <figcaption>
+          This is bright blue (<code>#0000ff</code>) displayed in the sRGB color
+          space.
+        </figcaption>
+      </figure>
+    </div>
+  </body>
+</html>

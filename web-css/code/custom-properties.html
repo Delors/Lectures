@@ -1,0 +1,57 @@
+<html>
+    <head>
+        <style>
+        @property --color-bg {
+            syntax: '<color>';
+            inherits: false;
+            initial-value: lightcoral;
+        }
+        @property --color-fg {
+            syntax: '<color>';
+            inherits: true;
+            initial-value: darkblue;
+        }
+
+        :root {
+            --rel-color-bg: var(--color-bg);
+            --rel-color-fg: var(--color-fg);
+        }
+
+        body {
+            color: var(--color-fg);
+            background-color: var(--color-bg);
+        }
+        div {
+            --color-bg: lightgreen;
+            --color-fg: darkred;
+
+            background-color: var(--color-fg);
+            color: var(--color-bg);
+
+            span {
+                background-color: var(--color-bg);
+                color: var(--color-fg);
+            }
+
+            p {
+                background-color: var(--rel-color-bg);
+                color: var(--rel-color-fg);
+            }
+        }
+        span {
+            background-color: var(--rel-color-fg);
+            color: var(--rel-color-bg);
+        }
+        </style>
+    </head>
+    <body style="font-size: 64px">
+        <h1 style="font-size: 24px">Custom Properties with @property!</h1>
+
+        Some <span>text</span> with the default colors.
+        <div style="padding: 1em">
+            This is some <span>text (with the bg color of the body, because the overridden color is not inherited)</span>.
+
+            <p>This is a paragraph with seemingly relative colors; however --rel-color-bg and --rel-color-fg are based on the computed values and not on the var definitions.</p>
+        </div>
+    </body>
+    </html>

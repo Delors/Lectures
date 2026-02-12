@@ -13,11 +13,14 @@
 
         /* Grid Item */
         .card {
-
+            /*
             grid-column: 1 / 2;
             grid-row: 1 / 2;
+            */
+            grid-column: 1 ;
+            grid-row: 1;
 
-            background-color: rgba(100, 100, 100, 0.897);
+            background-color: rgba(100, 100, 100, 0.5);
             padding: 10px;
             text-align: center;
         }
@@ -25,12 +28,13 @@
 </head>
 
 <body>
+    Demonstrates how to stack elements on top of each other using CSS Grid. The two "cards" are placed in the same grid cell, which causes them to overlap. The second card is hidden using "visibility: hidden", but it still occupies space in the layout, which is why the first card is not completely covered by the second card.
 
     <div class="stack">
         <div class="card">
             Dies ist ein Test.
         </div>
-        <div class="card" style="visibility: hidden;">
+        <div class="card" style="visibility: visible;">
             2. Test.
             <p>
                 Dies ist ein weiterer Test.
