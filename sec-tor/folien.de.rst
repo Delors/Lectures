@@ -252,7 +252,7 @@ Tor Relays in Deutschland
 .. image:: images/tor-metrics-relays.webp
    :alt: Tor Relays gelistet von Tor Metrics Jan. 2024
    :align: center
-   :class: trbl-box-shadow-dark
+   :class: trbl-shadow
 
 .. supplemental::
 
@@ -275,7 +275,7 @@ Informationen über Tor Relays
 .. image:: images/tor-relay-snorlax.webp
         :alt: Tor Relay Snorlax
         :align: right
-        :class: trbl-box-shadow-dark
+        :class: trbl-shadow
 
 .. container:: incremental width-40 float-left
 
@@ -307,7 +307,7 @@ Informationen über Tor Relays
     .. image:: images/tor-circuit.webp
         :alt: Tor-Circuit
         :align: center
-        :class: trbl-box-shadow-dark
+        :class: trbl-shadow
 
     **Jan. 2024 - zu vermeidende Hoster**:
 

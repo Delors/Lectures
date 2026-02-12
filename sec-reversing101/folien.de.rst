@@ -321,7 +321,7 @@ JD Decompiler
         .. image:: pictures/jd.webp
             :alt: The JD Decompiler (Java)
 
-    .. cell:: width-55 incremental framed trbl-shadow-dark
+    .. cell:: width-55 incremental framed trbl-shadow
 
         .. figure:: pictures/jd-excerpt.webp
 
