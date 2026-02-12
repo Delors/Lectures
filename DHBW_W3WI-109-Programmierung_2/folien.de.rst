@@ -36,23 +36,27 @@ Inhalte gem. MHB
 
         .. rubric:: Inhalte, auf die wir uns konzentrieren werden
 
-        .. container::  dd-margin-left-12em
+        .. class::  dd-margin-left-9em
 
-            :Fortgeschrittene objektorientierte Konzepte: Generische Interfaces und Klassen. Ereignisbehandlung. Funktionale Programmierung
-            :Fortgeschrittene Programmiermethodik: Ein- und Ausgabe über Streams. Funktionale Programmierkonzepte.
+        :Fortgeschrittene objektorientierte Konzepte: Generische Interfaces und Klassen. Ereignisbehandlung. Funktionale Programmierung
+        :Fortgeschrittene Programmiermethodik: Ein- und Ausgabe über Streams. Funktionale Programmierkonzepte.
 
-            :Algorithmen: Beschreibung und Analyse. Suchverfahren, Sortierverfahren, Teile-und-Herrsche-Paradigma, Backtracking-Algorithmen.
-            :Datentypen: elementare, strukturierte, objektorientierte und generische Datentypen.
-            :Datenstrukturen: lineare Listen mit Feldstruktur, einfach und doppelt verkettete Listen, Bäume, Stapel und Schlangen mit ihren Grundoperationen für Einfügen, Löschen etc.
-            :Abstrakte Datentypen: *Collection*\ s und *Iterator*\ s.
+        :Algorithmen: Beschreibung und Analyse, Such- und Sortierverfahren, Teile-und-Herrsche-Paradigma
+        :Datentypen: insb. objektorientierte und generische Datentypen.
+        :Datenstrukturen: einfach und doppelt verkettete Listen, Bäume, Stapel und Schlangen mit ihren Grundoperationen
+        :Abstrakte Datentypen: *Collection*\ s und *Iterator*\ s.
 
     .. card::
 
         .. rubric:: Inhalte, die wir erst später (in einem anderen Semester/Kurs) behandeln werden
 
+        .. class::  dd-margin-left-9em
+
         :Nebenläufigkeit: Grundlagen der nebenläufigen Programmierung, Synchronisation von Threads, Deadlocks
 
-        .. rubric:: Inhalte, die wir nicht behandeln werden, da dies überholt sind
+        .. rubric:: Inhalte, die wir nicht behandeln werden, da diese überholt sind
+
+        .. class::  dd-margin-left-9em
 
         :GUI Programmierung:
 
