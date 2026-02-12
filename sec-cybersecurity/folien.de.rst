@@ -967,26 +967,26 @@ Es können verschiedene Arten bzw. Angriffstypen unterschieden werden:
 
     - Locker/Screen Locker
 
-        Die Nutzer werden aus dem System ausgesperrt.
+      Die Nutzer werden aus dem System ausgesperrt.
     - Krypto
 
-        Verschlüsselung der Daten auf dem System.
+      Verschlüsselung der Daten auf dem System.
     - Scareware
 
-        Fake Software - zeigt zum Beispiel Warnungen vor einem Virus - die den Nutzer dazu bringen sollen Geld zu zahlen.
+      Fake Software - zeigt zum Beispiel Warnungen vor einem Virus - die den Nutzer dazu bringen sollen Geld zu zahlen.
 
     - Doxware/Leakware
 
-        Drohung zur Veröffentlichung sensibler Daten, wenn kein Lösegeld gezahlt wird.
+      Drohung zur Veröffentlichung sensibler Daten, wenn kein Lösegeld gezahlt wird.
     - Doppelte Erpressung (:eng:`Double Extortion Ransomware`)
 
-        Es werden nicht nur Daten verschlüsselt, sondern auch gestohlen und mit Veröffentlichung gedroht. (Kombination aus Krypto- und Doxware.)
+      Es werden nicht nur Daten verschlüsselt, sondern auch gestohlen und mit Veröffentlichung gedroht. (Kombination aus Krypto- und Doxware.)
     - Dreifache Erpressung (:eng:`Triple Extortion Ransomware`)
 
-        Zusätzlich zur doppelten Erpressung werden weitere Systeme des Opfers angegriffen (z. B. mittels DDoS), oder auch den Angestellten gedroht oder gedroht Geschäftspartner anzugreifen/zu informieren.)
+      Zusätzlich zur doppelten Erpressung werden weitere Systeme des Opfers angegriffen (z. B. mittels DDoS), oder auch den Angestellten gedroht oder gedroht Geschäftspartner anzugreifen/zu informieren.)
     - *Ransomware as a Service (RaaS)*
 
-        Kriminelle können Ransomware mieten ohne eigene technische Expertise.
+      Kriminelle können Ransomware mieten ohne eigene technische Expertise.
 
 
 
