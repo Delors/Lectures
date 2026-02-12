@@ -80,35 +80,161 @@ Gruppenarbeit = Gruppennote
 Projekt/Programmieraufgabe
 ------------------------------------------
 
-Entwicklung eines Kollaborationstools als wiederverwendbare Webkomponenten. D. h. jedes Team entwickelt *ein* eigenes Tool.
 
-.. TODO Anforderungen präzisieren - insbesondere an die Webkomponente!
 
-.. story::
+.. rubric:: Projektübersicht
 
-    .. compound::
-        :class: incremental
+Entwickeln Sie ein webbasiertes, responsives Familien-Dashboard, das als zentrale Informationsplattform für Familienmitglieder dient. Die Anwendung soll verschiedene konfigurierbare Widgets bereitstellen und durch ein Rollenkonzept unterschiedliche Zugriffsrechte ermöglichen - ggf. auf Widget-Level.
 
-        Beispiele:
 
-        - ein einfacher Chat
-        - ein einfaches interaktives Whiteboard
-        - ein Tool für ad-hoc Abstimmungen (zum Beispiel: wer hat die Hausaufgaben gemacht?)
-        - ein Tool für Umfragen
-        - ein Tool für Brainstorming/Mindmaps
-        - ein Tool für einfache Teameinteilungen
-        - ein Tool für die Erstellung von WordClouds
-        - ...
 
-    .. compound::
-        :class: incremental
+Anwendungsbeispiele
+---------------------------------
 
-        Idee ist immer, dass die Tools ohne explizite Anmeldung funktionieren. Es gibt keine Benutzerverwaltung. Die Anmeldung erfolgt über einen Link, der den Teilnehmern - zum Beispiel im Rahmen einer Vorlesung - zur Verfügung gestellt wird.
+.. deck::
 
-    .. compound::
-        :class: incremental
 
-        Es gibt eine *Adminoberfläche*, die es Admins - für diese Nutzer gibt es eine rudimentäre Verwaltung, die aber auch aus einer einfache Konfigurationsdatei bestehen kann - ermöglicht neue Räume zu erzeugen und die Teilnehmer zu verwalten. Der Admin kann IP Adressen (temporär) sperren.
+  .. card::
+
+    .. class:: incremental-list
+
+    - Sie möchten - z. B. in der Küche - ein Dashboard auf einem Tablet anzeigen lassen, das den Familienkalender, die Schulpläne der Kinder, den Wochenplan für das Au Pair, das Wetter und eine To-Do-Liste anzeigt.
+    - Sie möchten, dass alle Familienmitglieder gegenseitig lesenden Zugriff auf den/die Kalender der Familienmitglieder haben; die Kalender werden ggf. in externen Diensten (Google Calendar, Apple Calendar etc.) geführt.
+    - Sie möchten den Schulplan der Kinder als Widget auf dem Dashboard anzeigen lassen
+    - Ein Au-Pair soll lesenden Zugriff auf ihren/seinen Wochenplan haben, aber keine administrativen Rechte besitzen.
+    - Die To-Do-Liste kann von allen Familienmitgliedern bearbeitet werden.
+    - ...
+
+  .. card::
+
+        .. raw:: html
+
+            <style>
+                #example-dashboard {
+                    overflow: hidden;    
+                    box-shadow: var(--trbl-shadow);
+                    width: fit-content;
+                    border-radius: var(--small-border-radius);
+                    margin: var(--default-box-margin);
+                    iframe {
+                        border: none;
+                        
+                        
+                    }
+                }
+            </style>
+            <div id="example-dashboard">
+                <iframe src="dashboard-prototype.html" width="600px" height="800px" frameborder="0"></iframe>
+            </div>
+
+        .. container:: caption
+
+          Beispiel eines Familien-Dashboards erzeugt mit Claude Code.
+
+
+
+Anforderungen
+---------------------------------
+
+.. scrollable::
+
+  .. rubric:: Funktionale Anforderungen
+
+  **Widget-System**
+
+  - Implementierung eines modularen Widget-Systems mit mindestens 3 der folgenden Widgets:
+
+    - Stundenplan (für Kinder und Au-Pairs) (MUSS)
+    - Gemeinsamer Terminkalender (ggf. als Integration externer Kalenderdienste)
+    - Wetteranzeige (mit Standortauswahl)
+    - To-Do-Liste
+    - Notizen/Pinnwand
+
+  - Widgets sollen hinzugefügt, entfernt und auf dem Dashboard positioniert werden können
+  - Jedes Widget muss individuell konfigurierbar sein (z.B. Datenquelle, Darstellungsoptionen)
+
+  **Rollenkonzept**
+
+  :Familien-Administrator-Rolle: Volle Konfigurations- und Verwaltungsrechte
+
+    - Widgets hinzufügen/entfernen/konfigurieren
+    - Benutzer verwalten und Rollen zuweisen
+
+      (D. h. Registrierung und Authentifizierung von Nutzern durchführen und Nutzer zu Familiengruppen zuweisen.)
+    - Widget-Berechtigungen festlegen
+
+  :Nutzer-Rolle: Eingeschränkte Rechte
+
+    - Dashboard ansehen und sein persönliches Layout anpassen
+    - Zugriff nur auf freigegebene Widgets
+    - Interaktion mit Widget-Inhalten (z.B. Termine einsehen, nicht aber Dashboard umgestalten)
+
+  :System-Administrator-Rolle: Verwaltung der Anwendung als solches
+
+    - Benutzer- und Familiengruppenverwaltung
+    - Systemweite Einstellungen und Wartung
+
+  .. rubric:: Nicht-funktionale Anforderungen
+
+  - Responsive Design
+
+    - Optimierte Darstellung für Desktop, Tablet und Smartphone
+    - Touch-optimierte Bedienung für mobile Endgeräte
+
+  - Verteilte Architektur
+
+    - Klare Trennung von Frontend und Backend
+    - RESTful API für die Kommunikation
+    - Zustandsverwaltung (State Management) im Frontend
+    - Datenpersistenz im Backend
+
+  - Erweiterbarkeit
+
+    - Modulare Architektur ermöglicht einfaches Hinzufügen neuer Widgets
+    - Klar definierte Schnittstellen zwischen Komponenten
+    - Plugin-Architektur für Widget-Entwicklung wäre wünschenswert
+
+  - Technische Anforderungen
+
+    Entwickeln Sie eine verteilte Anwendung mit folgender Architektur:
+
+    - Frontend als Single Page Application (SPA) ggf. unter Einsatz von responsive UI-Frameworks (z.B. Bootstrap, Tailwind CSS)
+    - Backend mit RESTful API; der Technologiestack ist frei wählbar (z.B. Node.js/Express, Python/Flask, Java/Spring Boot)
+    - Datenbank zur Persistierung (z.B. PostgreSQL, MongoDB, MySQL)
+
+  - Architektur-Dokumentation
+
+    - Erstellen Sie Architekturdiagramme (z.B. mit C4-Modell)
+    - Dokumentieren Sie Design-Entscheidungen
+    - Begründen Sie die Wahl von Technologien und Architekturmustern
+
+  - Datenintegration
+
+    - Integration mindestens einer externen API (z.B. Wetter-API)
+    - Synchronisation von Kalenderdaten
+    - Optional: Import/Export von Daten
+
+  .. remark:: 
+    
+    .. rubric:: Einsatz von KI-Tools
+
+    Nutzung von KI-Assistenten (z.B. GitHub Copilot, ChatGPT, Claude Code oder OpenCode) zur Code-Generierung ist erlaubt. 
+
+    KI kann zur Unterstützung der folgenden Aufgaben eingesetzt werden:
+
+    - Boilerplate-Code generieren
+    - Code-Optimierung und Refactoring
+    - Debugging und Fehleranalyse
+    - Erstellung von Tests
+    - Dokumentation
+
+    *Pflichten bei KI-Nutzung*
+
+    - Jedes Teammitglied muss jeden Teil der Anwendung erklären können
+    - Die Architektur und Design-Entscheidungen müssen vom Team begründet werden
+    - Der Technologiestack muss vom Team begründet werden
+    - Im Projektbericht: Dokumentation, wo und wie, welche KI eingesetzt wurde
+    - Reflexion über Vor- und Nachteile des KI-Einsatzes im Projekt
 
 
 
