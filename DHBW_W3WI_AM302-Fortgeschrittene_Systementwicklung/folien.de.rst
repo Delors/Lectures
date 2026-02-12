@@ -15,7 +15,7 @@ W3WI_AM302 - Fortgeschrittene Systementwicklung
 
 :Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
 :Kontakt: michael.eichberg@dhbw.de, Raum 149B
-:Version: 24AMA - Feb. 2026
+:Version: 24AMA - 12. Februar 2026 
 
 
 
@@ -85,7 +85,7 @@ Ablauf
 
   .. card::
 
-    1. Semester 16 VL:
+    1. Semester: 16 VL
 
     - \01. Sep 2025
     - \03. Sep 2025
@@ -119,156 +119,539 @@ Ablauf
 Aufgabenstellung 2. Semester
 ---------------------------------
 
-.. rubric:: Projektübersicht
+Gegenstand der Portfolioaufgabe ist die Entwicklung eines verteilten Web-Spiels für mehrere Spieler.  
 
-Entwickeln Sie ein webbasiertes, responsives Familien-Dashboard, das als zentrale Informationsplattform für Familienmitglieder dient. Die Anwendung soll verschiedene konfigurierbare Widgets bereitstellen und durch ein Rollenkonzept unterschiedliche Zugriffsrechte ermöglichen - ggf. auf Widget-Level.
+Folgende Anforderungen sind zu erfüllen:
+
+.. story::
+
+  .. class:: incremental-list
+
+  - Ihr Projekt muss am Ende spielbar sein in dem Sinne, dass alle Kursteilnehmer die Möglichkeit haben gleichzeitig zu spielen; ggf. in mehreren Kleingruppen gegeneinander.
+  - Das Spiel muss rundenbasiert sein.
+
+    .. supplemental::
+
+          .. attention::
+
+              Echtzeitspiele sind aufgrund der damit verbundenen Komplexität ausgeschlossen.
+
+  - Sie können sich - müssen aber nicht - von klassischen Brettspielen oder Kartenspielen inspirieren lassen. Es können aber auch neue Spiele entwickelt werden. 
+
+    D. h. Die Wahl des Spieles ist weitgehend frei. :emph:`Poker und Uno sind jedoch ausgeschlossen`; triviale Spiele (z. B. Hangman oder Tic-Tac-Toe) sind auch ausgeschlossen. Darüber hinaus darf kein Spiel zweimal entwickelt werden. *Sprechen Sie sich daher frühzeitig mit Ihren Kommilitonen ab, um Überschneidungen zu vermeiden.*
+
+  - Die Entwicklung erfolgt in Gruppen von 3 Personen und muss immer einen Webclient und eine Serverkomponente umfassen.
+
+  - Die eingesetzten Technologien sind auf JavaScript, CSS und HTML sowie ggf. Python oder Java für die Serverseite beschränkt. Ich empfehle einen JavaScript/TypeScript Einsatz auf beiden Seiten. Frameworks (z. B. Express.js und Socket.IO), um ggf. die Kommunikation zwischen Web-Client und Server zu vereinfachen, dürfen eingesetzt werden.
+
+  - Die Webanwendung muss responsive sein und braucht nur auf den neuesten Browsern laufen: Safari, Chrome und Firefox. Die neuesten Web-Technologien sollen verwendet werden. Responsive bedeutet hier, dass die Anwendung mindestens auf Tablets und Desktop-Computern spielbar sein muss.
+
+  - Das Spiel sollte Cheat-Prevention Mechanismen enthalten, damit es nicht möglich ist, durch Manipulation der Webanwendung zu betrügen.
+
+  - Ein komplexes Rollen-/Sicherheitsmodell ist nicht erforderlich. Es muss jedoch möglich sein, dass Spieler sich mit einem Benutzernamen anmelden und dass die Spieler während des Spiels identifizierbar sind.
+
+  - Bewertet wird die Qualität der Software, die Qualität der Dokumentation, die Qualität der Präsentationen und die Einhaltung der Anforderungen. 
 
 
 
-Anwendungsbeispiele
+Projektergebnisse (Grobübersicht)
 ---------------------------------
 
-- Sie möchten - z. B. in der Küche - ein Dashboard auf einem Tablet anzeigen lassen, das den Familienkalender, die Schulpläne der Kinder, den Wochenplan für das Au Pair, das Wetter und eine To-Do-Liste anzeigt.
-- Sie möchten, dass alle Familienmitglieder gegenseitig lesenden Zugriff auf den/die Kalender der Familienmitglieder haben; die Kalender werden ggf. in externen Diensten (Google Calendar, Apple Calendar etc.) geführt
-- Sie möchten den Schulplan der Kinder als Widget auf dem Dashboard anzeigen lassen
-- Ein Au-Pair soll lesenden Zugriff auf ihren/seinen Wochenplan haben, aber keine administrativen Rechte besitzen
-- Die To-Do-Liste kann von allen Familienmitgliedern bearbeitet werden
-- ...
-
-
-
-Anforderungen
----------------------------------
-
-.. scrollable::
-
-  .. rubric:: Funktionale Anforderungen
-
-  **Widget-System**
-
-  - Implementierung eines modularen Widget-Systems mit mindestens 3 der folgenden Widgets:
-
-    - Stundenplan (für Kinder und Au-Pairs) (MUSS)
-    - Gemeinsamer Terminkalender (ggf. als Integration externer Kalenderdienste)
-    - Wetteranzeige (mit Standortauswahl)
-    - To-Do-Liste
-    - Notizen/Pinnwand
-
-  - Widgets sollen hinzugefügt, entfernt und auf dem Dashboard positioniert werden können
-  - Jedes Widget muss individuell konfigurierbar sein (z.B. Datenquelle, Darstellungsoptionen)
-
-  **Rollenkonzept**
-
-  :Familien-Administrator-Rolle: Volle Konfigurations- und Verwaltungsrechte
-
-    - Widgets hinzufügen/entfernen/konfigurieren
-    - Benutzer verwalten und Rollen zuweisen
-
-      (D. h. Registrierung und Authentifizierung von Nutzern durchführen und Nutzer zu Familiengruppen zuweisen.)
-    - Widget-Berechtigungen festlegen
-
-  :Nutzer-Rolle: Eingeschränkte Rechte
-
-    - Dashboard ansehen und sein persönliches Layout anpassen
-    - Zugriff nur auf freigegebene Widgets
-    - Interaktion mit Widget-Inhalten (z.B. Termine einsehen, nicht aber Dashboard umgestalten)
-
-  :System-Administrator-Rolle: Verwaltung der Anwendung als solches
-
-    - Benutzer- und Familiengruppenverwaltung
-    - Systemweite Einstellungen und Wartung
-
-  .. rubric:: Nicht-funktionale Anforderungen
-
-  - Responsive Design
-
-    - Optimierte Darstellung für Desktop, Tablet und Smartphone
-    - Touch-optimierte Bedienung für mobile Endgeräte
-
-  - Verteilte Architektur
-
-    - Klare Trennung von Frontend und Backend
-    - RESTful API für die Kommunikation
-    - Zustandsverwaltung (State Management) im Frontend
-    - Datenpersistenz im Backend
-
-  - Erweiterbarkeit
-
-    - Modulare Architektur ermöglicht einfaches Hinzufügen neuer Widgets
-    - Klar definierte Schnittstellen zwischen Komponenten
-    - Plugin-Architektur für Widget-Entwicklung wäre wünschenswert
-
-  - Technische Anforderungen
-
-    Entwickeln Sie eine verteilte Anwendung mit folgender Architektur:
-
-    - Frontend als Single Page Application (SPA) ggf. unter Einsatz von responsive UI-Frameworks (z.B. Bootstrap, Tailwind CSS)
-    - Backend mit RESTful API; der Technologiestack ist frei wählbar (z.B. Node.js/Express, Python/Flask, Java/Spring Boot)
-    - Datenbank zur Persistierung (z.B. PostgreSQL, MongoDB, MySQL)
-
-  - Architektur-Dokumentation
-
-    - Erstellen Sie Architekturdiagramme (z.B. mit C4-Modell)
-    - Dokumentieren Sie Design-Entscheidungen
-    - Begründen Sie die Wahl von Technologien und Architekturmustern
-
-  - Datenintegration
-
-    - Integration mindestens einer externen API (z.B. Wetter-API)
-    - Synchronisation von Kalenderdaten
-    - Optional: Import/Export von Daten
-
-  .. remark:: 
-    
-    .. rubric:: Einsatz von KI-Tools
-
-    Nutzung von KI-Assistenten (z.B. GitHub Copilot, ChatGPT, Claude Code oder OpenCode) zur Code-Generierung ist erlaubt. 
-
-    KI kann zur Unterstützung der folgenden Aufgaben eingesetzt werden:
-
-    - Boilerplate-Code generieren
-    - Code-Optimierung und Refactoring
-    - Debugging und Fehleranalyse
-    - Erstellung von Tests
-    - Dokumentation
-
-    *Pflichten bei KI-Nutzung*
-
-    - Jedes Teammitglied muss jeden Teil der Anwendung erklären können
-    - Die Architektur und Design-Entscheidungen müssen vom Team begründet werden
-    - Der Technologiestack muss vom Team begründet werden
-    - Im Projektbericht: Dokumentation, wo und wie, welche KI eingesetzt wurde
-    - Reflexion über Vor- und Nachteile des KI-Einsatzes im Projekt
-
-
-
-Projektergebnisse (abzugeben)
----------------------------------
-  
-1. Code und Anwendung
+#. Die gehaltenen Präsentationen (sowohl bzgl. des Projekts als auch die fachlichen Präsentationen) inkl. unterschriebener und abgearbeiteter Checkliste
+#. Die Code Reviews
+#. Code und Anwendung
 
    - Lauffähige Webanwendung mit allen Kernfunktionen
-   - README mit Installationsanleitung
+   - README mit Bau- und Installationsanleitung
+   - API-Spezifikation bzw. Dokumentation der Schnittstellen zwischen Client und Server
 
-2. Architektur- und Entwicklerdokumentation
-
-  - System-Architektur mit Diagrammen
-  - Datenmodell
-  - REST API-Spezifikation
-  - Begründung der Technologiewahl
-
-3. Dokument bzgl. KI-Einsatz: Wo wurde welche KI wie eingesetzt. Wie war Ihre Erfahrung.
-4. Dokument, das dokumentiert welche Team-Mitglieder welche Teile bearbeitet haben und mit welchem Anteil. **Wenn Sie als Team bewertet werden möchten, dann teilen Sie mir dies bitte mit und vermerken es explizit in dem Dokument.** 
-5. Die gehaltenen Präsentationen und Code Reviews sind abzugeben.
-
+#. Dokument, das dokumentiert welche Team-Mitglieder welche Teile bearbeitet haben und mit welchem Anteil. **Wenn Sie als Team bewertet werden möchten, dann teilen Sie mir dies bitte mit und vermerken es explizit in dem Dokument.** 
+#. Dokument bzgl. KI-Einsatz: Wo wurde welche KI wie eingesetzt. Wie war Ihre Erfahrung.
 
 
 
 Zur Verfügung gestellt wird
 ---------------------------------
 
-Zugriff auf einem Server, der aus dem UNI Netz (ggf. mittels VPN) erreichbar ist.
-Zugangsdaten stehen im Moodle.
+Zugriff auf einem Server, der aus dem UNI Netz (ggf. mittels VPN) erreichbar ist. Gruppenzugänge werden noch eingerichtet.
+
+
+
+
+Vortragsthemen
+---------------------------------
+
+.. class:: incremental-list
+
+- Alle Vorträge behandeln Themen, die für das Projekt direkt relevant sind. 
+- Die Vorschläge zu den konkreten Inhalten der Vorträge sind als Anregung zu verstehen und kleinere Abweichungen sind ggf. möglich. 
+- Führen Sie immer in das Thema ein und geben Sie auch praktische Beispiele, damit die Relevanz für die Projektarbeit klar wird. D. h. die Vorträge sollen einen hohen „Hands-on“-Anteil haben.
+- :emph:`Sprechen Sie sich ggf. untereinander ab, damit die Vorträge nicht inhaltlich überlappen.`
+- Beachten Sie die Hinweise zur `Vortragsgestaltung <../allg-vortraege/folien.de.rst.html>`__.
+- Bitte beachten Sie die Zeitvorgaben. 
+- .. attention::
+
+     Vorträge sind bis 6 Uhr Morgens am jeweiligen Vortragstag als PDF-Datei in Moodle hochzuladen. 
+  
+
+
+
+Vortragsthemen - Frontend-Entwicklung
+--------------------------------------
+
+.. deck::
+
+  .. card::
+
+    **CSS Grid Layout für Spieloberflächen**
+
+    :Personen: 1 Person
+    :Dauer: 10 Minuten
+
+    *Inhalte:*
+
+    - CSS Grid Grundlagen und Terminologie
+    - Responsive Spielfelder mit Grid
+    - Praktische Beispiele: Kartenspiele, Brettspiele
+    - Grid vs. Flexbox: Wann was verwenden?
+
+  .. card::
+
+    **CSS Animationen und Transitionen für Spiele**
+
+    :Personen: 2 Personen
+    :Dauer: 20 Minuten
+
+    .. grid::
+
+      .. cell:: width-50
+
+        *CSS Transitions:*
+
+        - Grundlagen von Transitions
+        - Animierte Spielelemente (Kartenbewegungen, Figurenbewegungen)
+        - Performance-Aspekte
+        - Best Practices für flüssige Animationen
+
+      .. cell:: width-50 
+
+        *CSS Keyframe Animations:*
+
+        - @keyframes Syntax
+        - Animation Timing Functions
+        - Komplexe Animationsabläufe
+        - Beispiele: Würfelwurf, Kartenausteilen
+
+  .. card::
+
+    **CSS Custom Properties und Design Systems**
+
+    :Personen: 1 Person
+    :Dauer: 10 Minuten
+
+    *Inhalte:* 
+
+    - CSS Variablen und CSS Properties (:css:`@property`) Grundlagen
+    - Scope und Vererbung
+    - Performance-Überlegungen
+    - Design Tokens und konsistente Gestaltung
+
+  .. card::
+
+    **Responsive Design für Spiele**
+
+    :Personen: 1 Person
+    :Dauer: 10 Minuten
+
+    *Inhalte:* 
+
+    - Mobile-First vs. Desktop-First
+    - Media Queries für verschiedene Geräte
+    - Viewport-Units und Container Queries
+    - Touch vs. Maus-Interaktion
+    - Responsive Spielfelder und UI-Elemente
+
+  .. card::
+
+    **CSS Theming und Farbsysteme** 
+
+    :Personen: 1-2 Personen
+    :Dauer: 10-20 Minuten
+
+    .. grid::
+
+      .. cell:: width-50
+
+        *Moderne Color Spaces:*
+
+        - sRGB, Display P3, Lab, LCH
+        - color-mix() Funktion
+        - color-contrast() / contrast-color()
+        - Barrierefreiheit bei Farbwahl
+
+      .. cell:: width-50
+
+        *Light/Dark Themes:*
+
+        - light-dark() Funktion
+        - color-scheme Property
+        - Theme-Switcher implementieren
+        - CSS Custom Properties für Themes
+
+  .. card::
+
+    **Moderne UI-Komponenten mit HTML/CSS**
+
+    :Personen: 1 Person
+    :Dauer: 10 Minuten
+
+    *Inhalte:*
+
+    - Dialog/Modal für Spielregeln und Einstellungen
+    - Custom Buttons und Controls (:html:`<button>`, etc.)
+    - Tooltips und Notifications (:html:`popover`, etc.)
+    - Loading States und Progress Bars
+
+
+
+Vortragsthemen - JavaScript für interaktive Spiele
+--------------------------------------------------------------------------------
+
+.. deck::
+  
+  .. card::
+
+    **Grundlagen von modernem JavaScript (ES6+)**
+
+    :Personen: 2 Personen
+    :Dauer: 20 Minuten
+
+    .. grid::
+
+      .. cell:: width-50
+
+        *ES6+ Grundlegende Features:*
+
+        - Arrow Functions
+        - Destructuring
+        - Spread/Rest Operator
+        - Default Parameters
+
+      .. cell:: width-50
+
+        *ES6+Erweiterte Features:*
+
+        - Template Literals
+        - Promises und async/await
+        - Modules (import/export)
+        - Array-Methoden (map, filter, reduce)
+
+  .. card::
+    
+      **JavaScript Event Handling für Spiele**
+
+      :Personen: 1 Person
+      :Dauer: 10 Minuten
+
+      *Inhalte:*
+
+      - Event Delegation
+      - Keyboard Events für Spiele
+      - Touch Events für Mobile
+      - Event-Loop und Performance
+
+  .. card::
+
+      **DOM-Manipulation und Virtual DOM Konzepte**
+
+      :Personen: 1 Person
+      :Dauer: 10 Minuten
+
+      *Inhalte:*
+
+      - Effiziente DOM-Updates
+      - DocumentFragment
+      - Template-Element
+      - Shadow DOM Grundlagen
+      - Performance-Best-Practices
+
+  .. card::
+    
+      **JavaScript State Management**
+
+      :Personen: 1 Person
+      :Dauer: 10 Minuten
+
+      *Inhalte:*
+
+      - Lokales State Management
+      - State-Patterns für Spiele
+      - Immutability
+      - State Synchronisation Client/Server
+      - Observer Pattern
+      
+  .. card::
+
+      **JavaScript Error Handling und Debugging**
+
+      :Personen: 1 Person
+      :Dauer: 10 Minuten
+
+      *Inhalte:*
+
+      - try/catch Best Practices
+      - Browser DevTools für Debugging
+      - Error Boundaries
+      - Logging-Strategien
+
+  .. card::
+
+    **Browser Storage APIs**
+
+    :Personen: 1 Person
+    :Dauer: 10 Minuten
+
+    *Inhalte:*
+
+    - LocalStorage vs. SessionStorage
+    - IndexedDB Grundlagen
+    - Speichern von Spielständen
+    - Cache API
+    - Privacy-Aspekte
+
+
+
+Vortragsthemen - Client-Server-Kommunikation
+--------------------------------------------------------------------------------
+
+.. deck::
+
+  .. card::
+
+    **API Design**
+
+    :Personen: 1 Person
+    :Dauer: 10 Minuten
+
+    *Inhalte:*
+
+    - HTTP Methoden (GET, POST)
+    - Status Codes
+    - URL-Design für Spiel-APIs
+    - Request/Response Format (JSON)
+    - API-Dokumentation
+
+  .. card::
+
+    **Fetch API und AJAX**
+
+    :Personen: 1 Person
+    :Dauer: 10 Minuten
+
+    *Inhalte:*
+
+    - Fetch API Grundlagen
+    - Promises und async/await mit Fetch
+    - Request/Response Handling
+    - Error Handling
+    - CORS-Problematik
+
+
+  .. card::
+  
+    **WebSockets Grundlagen**
+
+    :Personen: 1 Person
+    :Dauer: 10 Minuten
+
+    *Inhalte:*
+
+    - WebSocket Protokoll
+    - Native WebSocket API
+    - Connection Lifecycle
+    - Heartbeats und Reconnection
+    - Wann WebSockets vs. HTTP
+
+  .. card::
+
+    **Socket.IO für Bidirektionale Echtzeitkommunikation**
+
+    :Personen: 2 Personen
+    :Dauer: 20 Minuten
+
+    .. grid::
+
+      .. cell:: width-50  
+
+        *Socket.IO Basics*
+
+        - Installation und Setup
+        - Events und Rooms
+        - Namespaces
+        - Broadcasting
+        - Verbindungsmanagement
+
+      .. cell:: width-50  
+
+          *Socket.IO für Multiplayer-Spiele*
+
+          - Spieler-Räume verwalten
+          - Turn-based Game Logic
+          - Synchronisation von Spielzuständen
+          - Latenz-Handling
+          - Reconnection-Strategien
+
+    .. remark::
+
+      Diese Talks sollten sich insbesondere auf die Verwendung von Socket.IO für die Entwicklung von Multiplayer-Spielen konzentrieren. 
+
+  .. card::
+    
+    **Express.js Grundlagen**
+
+    :Personen: 2 Person
+    :Dauer: 20 Minuten
+
+    .. grid::
+
+      .. cell:: width-50  
+
+        *Express.js Basics*
+
+        - Routing
+        - Middleware-Konzept
+        - Request/Response Handling
+        - Static File Serving
+        - Errorhandling
+  
+      .. cell:: width-50
+
+        *Express.js für Spiele-Backend*
+
+        - Body Parsing
+        - CORS-Konfiguration
+        - API-Struktur
+        - Integration mit Socket.IO
+
+    .. remark::
+
+      Diese Talks sollten sich insbesondere auf die Verwendung von Express.js für die Entwicklung von Multiplayer-Spielen konzentrieren. Es sollten konkrete Beispiele gegeben werden
+
+  .. card::
+
+    **API-Testing und Dokumentation**
+
+    :Personen: 1 Person
+    :Dauer: 10 Minuten
+
+    *Inhalte:*
+
+    - Postman/Thunder Client
+    - Unit Tests für APIs
+    - Automatisierte Tests
+    - Mock-Server/-Daten
+
+
+
+Vortragsthemen - Sicherheit
+--------------------------------------------------------------------------------
+
+.. deck::
+
+  .. card::
+
+    **Cheat Prevention**
+
+    :Personen: 1 Person
+    :Dauer: 10 Minuten
+
+    *Inhalte:*
+
+    - Häufige Cheat-Vektoren in Web-Spielen
+    - Server-Authority Prinzip
+    - Client-Side Validation vs. Server-Side Validation
+    - Input Sanitization
+    - Rate Limiting
+    
+
+
+Vortragsthemen - Software-Architektur
+--------------------------------------------------------------------------------
+
+.. deck::
+
+  .. card::
+
+    **Software-Architektur für verteilte Anwendungen**
+
+    :Personen: 1 Person
+    :Dauer: 10 Minuten
+
+    *Inhalte:*
+
+    - Client-Server Architektur
+    - MVC/MVVM Patterns
+    - Separation of Concerns
+    - Modulare Struktur
+    - Code-Organisation
+
+
+
+Vortragsthemen - Softwareengineering Praktiken
+------------------------------------------------------
+
+.. deck::
+
+  .. card::
+
+    **Testing für Web-Anwendungen**
+
+    :Personen: 1 Person
+    :Dauer: 10 Minuten
+
+    *Inhalte:*
+
+    - Unit Testing (Jest, Vitest)
+    - Integration Testing
+    - E2E Testing Grundlagen
+    - Mocking und Stubs
+
+  .. card::
+
+    **Build-Tools und Bundling**  
+
+    :Personen: 1 Person
+    :Dauer: 10 Minuten
+
+    *Inhalte:*
+
+    - Vite/Webpack Grundlagen
+    - Module Bundling
+    - Code Splitting
+    - Minification und Optimization
+    - Development vs. Production Builds
+  
+
+
+Vortragsthemen - Barrierefreiheit
+------------------------------------------------------------------
+
+.. deck::
+
+  .. card::
+
+    **Accessibility (a11y) für Spiele**
+
+    :Personen: 1 Person
+    :Dauer: 10 Minuten
+
+    *Inhalte:*
+
+    - WCAG Grundlagen
+    - ARIA Roles und Attributes
+    - Keyboard Navigation
+    - Screen Reader Support
+    - Color Contrast und Lesbarkeit
 
 
 
@@ -278,57 +661,72 @@ Ablauf 2. Semester (Wann passiert was?)
 ---------------------------------------
 
 
-18. Feb 2026 von 09:30 bis 12:45 (4VL)
+\18. Feb 2026 von 09:30 bis 12:45 (4VL)
 -----------------------------------------
 
-- Themenvergabe
-- Festlegung der Themen, die behandelt werden sollten ((Advanced) JavaScript, RESTful Architectures, verteilte Systeme, Passwortsicherheit, Grundlagen der Kryptographie, Authentifizierung, Frontend-Entwicklung etc.)
+- Besprechung der Projektaufgabe
+- Besprechung des Ablaufs des Semesters
+- Vortragsthemenvergabe
+- Aufteilung der Teams
 
 
 
-25. Feb 2026 von 09:30 bis 12:45 (4VL)
+\25. Feb 2026 von 09:30 bis 12:45 (4VL)
 -----------------------------------------
 
-- Präsentation von ausgewählten Themen, die für die Entwicklung der Anwendung relevant sind
-- Beantwortung von Fragen
+- Elevator Pitch des Spielkonzepts  
+- Vorträge
+- Beantwortung von Fragen/Teamindividuelle Beratung
 
 
 
-4. März 2026 von 09:30 bis 12:4 (4VL)
+\4. März 2026 von 09:30 bis 12:4 (4VL)
 -----------------------------------------
 
-- Präsentation von ausgewählten Themen, die für die Entwicklung der Anwendung relevant sind
-- Beantwortung von Fragen
+- Vorträge
+- Beantwortung von Fragen/Teamindividuelle Beratung
 
 
 
-11. März 2026 von 09:30 bis 12:45 (4VL)
+\11. März 2026 von 09:30 bis 12:45 (4VL)
 -----------------------------------------
 
-- jedes Team: Präsentation des Technologiestacks und der grundlegenden Architektur (Level 1 und 2 (ggf. Level 3) des C4-Modells) Dauer: 20 Minuten pro Team
+- Vorträge
+- Beantwortung von Fragen/Teamindividuelle Beratung
 
 
 
-18. März 2026 von 09:30 bis 12:45 (4VL)
+\18. März 2026 von 09:30 bis 12:45 (4VL)
 -----------------------------------------
 
-- Präsentation von ausgewählten Themen, die für die Entwicklung der Anwendung relevant sind
-- Teamindividuelle Beratung
+- Vorträge
+- Präsentation des Spielkonzepts (pro Team ca. 10 Minuten)
+
+  D.h. Fake Screenshots, Mockups, Storyboard, etc. - alles ist erlaubt, um die Idee zu vermitteln. Es muss jedoch klar werden, um was für ein Spiel es sich handelt, wie es gespielt wird, in welcher Weise die Spieler miteinander interagieren, etc.
+- Beantwortung von Fragen/Teamindividuelle Beratung
 
 
 
-25. März 2026 von 09:30 bis 12:45 (4VL)
+\25. März 2026 von 09:30 bis 12:45 (4VL)
 -----------------------------------------
+
+.. class:: list-with-explanations
 
 - Vorführung des aktuellen Stands der Anwendung durch jedes Team (ca. 10 Minuten pro Team)
+  
+  (Keine explizite Abgabe erforderlich.)
 - Feedbackrunde und Fragen
 
 
-1. April 2026 von 09:30 bis 12:45 (4VL)
+\1. April 2026 von 09:30 bis 12:45 (4VL)
 -----------------------------------------
+
+.. class:: list-with-explanations
 
 - Einführung in strukturierte Code Reviews
 - Jede Gruppe erhält eine Einführung in den Code zweier anderer Teams (je Partnerteam ca. 45 Minuten)
+  
+  (Den Gruppen, die die Code Reviews durchführen, wird Zugriff auf den Code eingerichtet.)
 - Jede Gruppe präsentiert informell ihre allerersten Erkenntnisse/Eindrücke aus dem Code Review (ca. 2-3 Minuten pro  Review)
 
   (Die Sessions von jeweils 45 Minuten dienen dazu, dass Sie den Code der anderen Teams kennenlernen und sich auf das Code Review vorbereiten können; die eigentlichen Code Reviews finden außerhalb der Vorlesungszeit statt.)
@@ -351,10 +749,10 @@ Ablauf 2. Semester (Wann passiert was?)
 
 
 
-7. April: 7:00 (Ereignis)
+\8. April: 7:00 (Ereignis)
 --------------------------
 
-- Abgabe der dokumentierten Code-Review Ergebnisse 
+- Abgabe der dokumentierten Code-Review Ergebnisse an die Teams und „an mich“
 - Abgabe der Präsentationen zu den Code Reviews
 - Abgabe über Moodle als 4 PDF-Dateien mit folgenden Namensschema:
 
@@ -364,7 +762,7 @@ Ablauf 2. Semester (Wann passiert was?)
   (X,Y und Z sind durch die jeweiligen Teambezeichner zu ersetzen.)
 
 
-8. April 2026 von 09:30 bis 12:45 (4VL)
+\8. April 2026 von 09:30 bis 12:45 (4VL)
 -----------------------------------------
 
 - Präsentation der Ergebnisse des Code Reviews
@@ -373,33 +771,109 @@ Ablauf 2. Semester (Wann passiert was?)
 
 
 
-15. April 2026 von 09:30 bis 12:45 (4VL) **Online**
+\15. April 2026 von 09:30 bis 12:45 (4VL) **Online**
 ----------------------------------------------------
 
 - Finale Besprechung der Anforderungen an die Abgaben
 - Teamindividuelle Beratung 
 
 
-21. April 2026 7:00 (Ereignis)
+
+\21. April 2026 7:00 (Ereignis)
 -----------------------------------------
 - Abgabe aller Projektergebnisse über Moodle 
 
 
-22. April 2026 von 09:30 bis 12:00 (3VL)
+
+\22. April 2026 von 09:30 bis 12:00 (3VL)
 -----------------------------------------
  
-Jedes Team: Livevorführung der fertigen Anwendung. Dauer ca. 15 Minuten pro Team. Es müssen insbesondere folgende Abläufe gezeigt werden:
+- Spielzeit 
 
-- Registrierung und Anmeldung von Nutzern am System
-- Anlegen und Konfigurieren von Widgets durch den Familien-Administrator
-- Zuweisung von Rollen
-- Persönliche Konfiguration des Dashboards durch einen Nutzer
+  Dauer ca. 15 Minuten pro Team.
+
+
+
+Aufteilung der Vortragsthemen
+-----------------------------------------
+
+.. scrollable::
+
+  .. csv-table::
+    :header: ID, Titel, Datum
+    :class: dhbw sticky-header
+    :width: 100%
+    
+    1, CSS Grid Layout für Spieloberflächen, 25. Februar  
+    2, CSS Animationen und Transitionen für Spiele, 25. Februar  
+    3, CSS Custom Properties und Design Systems, 25. Februar
+    4, Responsive Design für Spiele, 25. Februar
+    5, Moderne Color Spaces, 25. Februar
+    6, Light/Dark Themes, 25. Februar
+    7, Moderne UI-Komponenten mit HTML/CSS, 25. Februar
+    8, ES6+ Grundlegende Features, 4. März  
+    9, ES6+ Erweiterte Features, 4. März  
+    10, JavaScript Event Handling für Spiele, 4. März  
+    11, DOM-Manipulation und Virtual DOM Konzepte, 4. März 
+    12, JavaScript State Management, 4. März 
+    13, Browser Storage APIs, 4. März 
+    14, API Design, 4. März 
+    15, Fetch API und AJAX, 4. März 
+    16, JavaScript Error Handling und Debugging, 11. März 
+    17, WebSockets Grundlagen, 11. März 
+    18, Socket.IO für Bidirektionale Echtzeitkommunikation, 11. März 
+    19, Express.js Grundlagen, 11. März 
+    20, API-Testing und Dokumentation, 11. März 
+    21, Cheat Prevention, 11. März 
+    22, :peripheral:`[Software-Architektur für verteilte Anwendungen]`, 11. März 
+    23, Testing für Web-Anwendungen, 18. März 
+    24, Build-Tools und Bundling, 18. März 
+    25, :peripheral:`[Accessibility (a11y) für Spiele]`, 18. März
 
 
 
 Teams
 -----------------------------------------
 
-- die Teamgröße beträgt 4 Studierende
+- die Teamgröße beträgt 3 Studierende
 - die Aufteilung der Aufgaben im Team erfolgt selbstorganisiert, muss aber dokumentiert werden
-- Eine grobe Aufteilung entlang der Dimensionen: Frontend, Backend und Widget-Entwicklung ist naheliegend, aber nicht zwingend erforderlich; auf jeden Fall muss *jedes* Teammitglied in der Lage sein die dynamische und statische Architektur zu erklären.
+- Eine grobe Aufteilung entlang der Dimensionen: Frontend, Backend und querschneidende Belange ist naheliegend, aber nicht zwingend erforderlich; auf jeden Fall muss *jedes* Teammitglied in der Lage sein jeden Teil der Anwendung zu verstehen und bei Bedarf zu bearbeiten.
+
+
+
+Bewertung
+-----------------------------------------
+
+.. story::
+
+  .. class:: list-with-sublist incremental-list
+
+  - **[20P] Vorträge**
+    
+    - [19P] Inhaltliche Qualität, Verständlichkeit, optische Präsentation, Persönliches Auftreten
+    - [ 1P] Abgabe der Checkliste (als PDF) unterschrieben und abgearbeitet
+
+  - **[20P] Code Reviews**
+    
+    Pro Code Review (insgesamt 2 pro Team) werden folgende Kriterien bewertet:
+
+    - [ 1P] Kurzpräsentation des ersten Eindrucks 
+    - [ 6P] Qualität der Code Reviews
+    - [ 3P] Qualität der Präsentation der Code Reviews
+  - **[56P] Spiel**
+    
+    - [ 5P] Präsentation des Spielkonzepts (Fake Screenshots, Mockups, Storyboard, etc.)
+    - [ 3P] Vorführung des aktuellen Stands der Anwendung (d. h. es gibt eine erste (in Teilen spielbare) Version des Spiels)
+    - [12P] Es ist direkt spielbar, d.h. es können mehrere Spieler gleichzeitig spielen und es kommt zu keinen Fehlern, die das Spielen einiger oder aller verhindern
+    - [ 4P] Cheat-Prevention Mechanismus ist implementiert und dokumentiert (in README)
+    - [ 3P] Die Anwendung ist responsive und unterstützt grundlegendes Theming
+    - [ 3P] Die Anwendung lässt sich auch über Handys/Tablets spielen (Touch-fähig)
+    - [ 9P] Code-Qualität Backend (z. B. Lesbarkeit, Modularität, etc.)
+    - [ 9P] Code-Qualität Frontend (s. O.)
+    - [ 3P] Qualität des Build- und Deploymentprozesses (z. B. Automatisierung, etc.)
+    - [ 3P] README mit Bau- und Installationsanleitung
+    - [ 2P] HTTP API-Spezifikation bzw. Schnittstellendokumentation (in README)
+  - **[ 4P] Organisation**
+  
+    - [ 2P] Dokumentation des KI Einsatzes und Reflexion darüber
+    - [ 2P] Dokumentation der Teamarbeit, d. h. wer hat welchen Anteil an der Entwicklung welcher Teile der Anwendung
