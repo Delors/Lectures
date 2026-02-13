@@ -15,7 +15,7 @@ W3WI_110 - Entwicklung verteilter Systeme
 
 :Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
 :Kontakt: michael.eichberg@dhbw.de, Raum 149B
-:Version: 23SEB (SoSe 2025 - 1. Rev.)
+:Version: 24SEA - Februar 2026
 
 
 
@@ -54,8 +54,9 @@ Prüfungsleistung - Portfolio
 - das Modul hat 55 VL
 - Verteilte Systeme hat 22VL, Web-Programmierung hat 33 VL
 
-Zwei Bestandteile:
+Mehrere Bestandteile:
 
+#. Kurztest ???
 1. (**30** von 120 Punkten) - Vorträge  (Hinweise zur Präsentationen: https://delors.github.io/allg-vortraege/folien.de.rst.html)
 
    :red:`Die Präsentationen müssen am Abend vorher im Moodle hochgeladen werden!`
@@ -64,25 +65,28 @@ Zwei Bestandteile:
    1. Projekt (Funktionsumfang, Code, Dokumentation, etc.)
    2. Abschlusspräsentation / Vorführung
    3. Code Reviews
+  
+  TODODODODOD
 
 
-Gruppenarbeit = Gruppennote
+
+Gruppennote bei Wunsch
 ------------------------------
 
 .. container:: exclamation-mark
 
-    Das Projekt ist als Gruppenarbeit ausgelegt und alle Gruppenmitglieder erhalten für den Projekteil die gleiche Note.
+    Das Projekt ist als Gruppenarbeit ausgelegt und alle Gruppenmitglieder können die gleiche Punktzahl erhalten, wenn dies gewünscht ist. 
 
-    Sollte eine individuelle Benoten gewünscht sein, dann ist dies **vor Abgabe des Projekts** explizit zu kommunizieren, damit das weitere Vorgehen besprochen werden kann.
+    .. important:: 
+      
+      Es ist in jedem Fall zu Protokollieren, wer an welchen Teilen wie mitgewirkt hat. Dieses Protokoll muss am Ende eingereicht werden. Ohne dieses Protokoll erfolgt keine Bewertung!
+
+      Das Protokoll wird jedoch nur zur Wertung herangezogen, wenn keine Gruppenbenotung gewünscht ist oder es Unstimmigkeiten gibt.
 
 
 
 Projekt/Programmieraufgabe
 ------------------------------------------
-
-
-
-.. rubric:: Projektübersicht
 
 Entwickeln Sie ein webbasiertes, responsives Familien-Dashboard, das als zentrale Informationsplattform für Familienmitglieder dient. Die Anwendung soll verschiedene konfigurierbare Widgets bereitstellen und durch ein Rollenkonzept unterschiedliche Zugriffsrechte ermöglichen - ggf. auf Widget-Level.
 
@@ -250,10 +254,11 @@ Bewertungskriterien für das Projekt
 
     Code Reviews, max. 10
     Abschlusspräsentation, max. 05
-    Vorführung, max. 10
+    Vorführung, max. 20
     Funktionsumfang, max. 15
-    Dokumentation (Entwickler und Benutzer), max. 05
-    "Qualität des Codes und der Tests (HTML, CSS und JavaScript)\ [#]_", max. 40
+    Dokumentation (Entwickler und Benutzer), max. 9
+    Technische Qualität des Videos, max. 1    
+    "Qualität des Codes und der Tests (HTML, CSS und JavaScript)\ [#]_", max. 25
     Qualität des Buildprozesses\ [#]_ , max. 05
 
 Es ist ein Dokument einzureichen aus dem hervorgeht:
@@ -271,17 +276,32 @@ Ablauf - W3WI-110 - Entwicklung verteilter Systeme 23SEB
 
 .. story::
 
+    .. rubric:: 1. Block
+
     .. class:: incremental-list list-with-sublists
 
-    - Scheduled: 16. May 2025 at 13:15 to 17:30, CEST
-    - Scheduled: 19. May 2025 at 13:15 to 17:30, CEST
-    - Scheduled: 22. May 2025 at 13:15 to 17:30, CEST
-    - Scheduled: 6. Jun 2025 at 13:15 to 17:30, CEST
+    - 20. Feb 2026 at 13:00 to 17:00
+    - 27. Feb 2026 at 13:00 to 17:00
+    - 6. Mar 2026 at 13:00 to 17:00
+    - 13. Mar 2026 at 13:00 to 17:00
+    - 20. Mar 2026 at 13:00 to 17:00
+    - 27. Mar 2026 at 13:00 to 17:00
+   
 
-      Kurzpräsentation der Projekte (kein Code - Powerpoint ist ausreichend; 5 Minuten pro Team). Kein unmittelbare Bewertung - dient "lediglich" zur Steuerung.
+    .. class:: incremental 
 
-    - Scheduled: 13. Jun 2025 at 13:15 to 17:30, CEST
-    - Scheduled: 16. Jun 2025 at 13:15 to 17:30, CEST
+    .. rubric:: 2. Block  
+
+    .. class:: incremental-list list-with-sublists
+
+    - 10. Apr 2026 at 13:00 to 17:00
+    - 14. Apr 2026 at 13:00 to 17:00
+    - 17. Apr 2026 at 13:00 to 17:00
+    - 20. Apr 2026 at 13:30 to 17:30
+    - 24. Apr 2026 at 13:00 to 17:00
+
+
+
 
       - **Grundlagen der Virtualisierung** (Terminologie: z.B. Bare Metal Virtualisierung, Hypervisor Level..; Sicherheitsmodelle ggf. von CPU an.)- 2 Stud.
       - **Virtualization Platforms** (Proxmox und Openstack) - 2 Stud.
@@ -327,6 +347,7 @@ Ablauf - W3WI-110 - Entwicklung verteilter Systeme 23SEB
       .. TODO Anforderungen präzisieren!
 
       Die Projektabgabe ist am 9.7.2025 um 23:59 Uhr.
+
 
 
 Code Reviews - 4.7.2025
