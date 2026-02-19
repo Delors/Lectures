@@ -51,29 +51,391 @@ Ausgewählte Inhalte gem. MHB - Verteilte Systeme
 Prüfungsleistung - Portfolio
 ------------------------------------------
 
-- das Modul hat 55 VL
-- Verteilte Systeme hat 22VL, Web-Programmierung hat 33 VL
-
-Mehrere Bestandteile:
-
-#. Kurztest ???
-1. (**30** von 120 Punkten) - Vorträge  (Hinweise zur Präsentationen: https://delors.github.io/allg-vortraege/folien.de.rst.html)
-
-   :red:`Die Präsentationen müssen am Abend vorher im Moodle hochgeladen werden!`
-2. (**90** von 120 Punkten) - Projekt bzw. Programmieraufgabe in Teams von 4 Personen
-
-   1. Projekt (Funktionsumfang, Code, Dokumentation, etc.)
-   2. Abschlusspräsentation / Vorführung
-   3. Code Reviews
+- das Modul hat 55 VL:
   
-  TODODODODOD
+  - Verteilte Systeme hat 22VL
+  - Web-Programmierung hat 33 VL
+
+.. compound::
+  :class: incremental
+
+  - Mehrere Bestandteile:
+
+    - Projekt
+    - Code Reviews
+    - Vorträge
 
 
 
-Gruppennote bei Wunsch
-------------------------------
+Vorträge - Themen
+------------------------------------------
 
-.. container:: exclamation-mark
+.. deck:: font-size-90
+
+  .. card::
+
+    .. important::
+
+        Studierende, die Präsentationen innerhalb desselben Blocks halten, müssen sich untereinander abstimmen, um Überschneidungen zu vermeiden und auch sicherstellen, dass der/die vorherige Person die Themen, die für die Präsentation vorausgesetzt werden, auch ausreichend behandelt werden.
+    
+    .. important:: 
+        :class: incremental
+
+        Wenn Sie bestimmtes Wissen voraussetzen, das von einer anderen Studentin oder einem anderen Studenten behandelt werden soll(te), Sie sich aber nicht sicher sind, ob es ausreichend präsentiert wurde, erstellen Sie ggf. eine Backup-Folie, die dieses Thema ebenfalls abdeckt. Kennzeichnen Sie die Folie explizit als Backup-Folie mit einem Hinweis in welchem inhaltlichen Block das Thema hätte behandelt werden sollen. Diese Backup-Folie wird dann nicht auf das Zeitlimit angerechnet.
+
+  .. card:: 
+
+        .. rubric:: *Virtualization* und *Virtualization Platforms*
+
+        .. class:: dhbw list-with-sublists show-list-item-content-on-hover 
+
+        1. Introduction to Virtualization & Use Cases
+
+           - Was ist Virtualization? Historischer Kontext und Motivation
+           - Unterschiedliche Typen/Ebenen der Virtualization
+           - Zentrale Use Cases: Server Consolidation, Cloud Computing, Development/Testing, Isolation
+           - Vorteile und Trade-offs
+
+        2. Hypervisors – Architecture & Types
+
+           - Was ist ein Hypervisor?
+           - Type 1 (bare-metal) vs. Type 2 (hosted) – architektonische Unterschiede
+           - Full Virtualization vs. Paravirtualization
+           - Beispiele und wann welcher Typ eingesetzt wird
+
+        3. Virtual Machines – Implementation & Management
+
+           - VM-Struktur und Komponenten (virtuelle Hardware, Guest OS)
+           - VM-Lifecycle: Erstellung, Running, Pause/Resume, Snapshots
+           - VM-Migration (Konzepte der Live Migration)
+           - Resource Allocation und Isolation
+
+        4. Containers & OS-level Virtualization
+
+           - Container-Konzept und Unterschiede zu VMs
+           - Namespaces und cgroups (konzeptionell)
+           - Container Images und Layering
+           - Use Cases und Vergleich mit VMs
+
+        5. Memory Virtualization
+
+           - Das Address-Translation-Problem (guest virtual → guest physical → host physical)
+           - Shadow Page Tables
+           - Hardware-assisted Virtualization (EPT/NPT)
+           - Memory-Management-Techniken (Overcommitment, Ballooning)
+
+        6. Network & I/O Virtualization
+
+           - Herausforderungen bei der Virtualisierung von Network- und I/O-Geräten
+           - Emulated vs. Paravirtualized Devices
+           - SR-IOV (Single Root I/O Virtualization) und Device Passthrough
+           - Virtuelle NICs und Network Bridges
+           - Virtuelle Switches und Network Isolation
+
+  .. card:: 
+
+        .. rubric:: Network Protocols
+
+        .. class:: dhbw 
+
+        7. QUIC :peripheral:`(nur verfügbar, wenn wir ≥ 21 Studierende haben)`
+        8. HTTP/3
+        9. BitTorrent Protocol :peripheral:`(nur verfügbar, wenn wir ≥ 25 Studierende haben)`
+
+  .. card:: 
+
+        .. rubric:: Modern RPC
+
+        .. class:: dhbw 
+
+        10.  Protobuf
+        11.  Google RPC
+
+  .. card:: 
+
+        .. rubric:: Web-App Security
+
+        .. class:: dhbw 
+
+        12.  SOP (Same-Origin Policy), CORS (Cross-Origin Resource Sharing) (Grundlagen)
+        13.  CORP / COOP / COEP (Cross-Origin Resource/Opener/Embedder Policies) :peripheral:`(nur verfügbar, wenn wir ≥ 23 Studierende haben)`
+        14.  CSP (Content Security Policy) und SRI (Subresource Integrity)
+
+        Einführung und konkrete Beispiele, wie diese Mechanismen eingesetzt/spezifiziert werden und dabei helfen, Angriffe zu verhindern.
+
+  .. card:: 
+
+        .. rubric:: Monitoring & Debugging Distributed Systems
+
+        .. class:: dhbw
+
+        15.  Log Aggregation mit besonderem Fokus auf der Korrelation von Log-Einträgen
+
+  .. card:: 
+
+        .. rubric:: Leader Election
+
+        .. class:: dhbw
+
+        16.  Bully Algorithm und/oder Ring Algorithm
+
+  .. card::
+
+        .. rubric:: Quorum Systems
+        
+        .. class:: dhbw
+
+        17.  Majority Voting (d. h. quorum-basiertes verteiltes Rechnen)        
+
+  .. card::
+
+        .. rubric:: Consensus Algorithms and Fault Tolerance
+
+        .. class:: dhbw list-with-sublists show-list-item-content-on-hover
+
+        18. Consensus Fundamentals & Problem Definition
+
+            - Was ist Consensus und warum ist er in verteilten Systemen schwierig?
+            - Das FLP-Impossibility-Result (konzeptionelles Verständnis)
+            - Fehlermodelle: Crash Faults vs. Byzantine Faults
+            - Safety- vs. Liveness-Eigenschaften
+            - Motivation aus der Praxis: Replicated State Machines, Distributed Databases
+
+        19. (Practical) Byzantine Fault Tolerance
+
+            - Wann benötigen wir BFT?
+            - Moderne Entwicklungen
+          
+              .. presenter-note::
+                
+                Tendermint, HotStuff
+
+            - Einsatz in realen Systemen
+
+        20. Paxos Family
+
+            - Grundlegender Paxos-Algorithmus (konzeptioneller Überblick, Rollen: Proposers, Acceptors, Learners)
+            - Warum Paxos korrekt, aber komplex ist
+            - Multi-Paxos für praktische Systeme
+            - Einsatz in realen Systemen
+          
+              .. presenter-note::
+          
+                [VERIFY!:] Google Chubby, Apache ZooKeeper Foundations
+
+        21. Raft – Understandable Consensus
+
+            - Motivation
+            - Leader Election, Log Replication, Safety
+            - Unterschiede zwischen Raft und Paxos (Design-Philosophie)
+            - Einsatz in realen Systemen
+          
+              .. presenter-note::
+                
+                etcd, Consul, CockroachDB
+  
+  .. card:: 
+
+        .. rubric:: Eventual Consistency
+    
+        .. class:: dhbw 
+
+        22.  Eventual Consistency und Gossip Protocol
+        23.  CRDTs (Conflict-free Replicated Data Types) :peripheral:`(nur verfügbar, wenn wir ≥ 22 Studierende haben)`
+
+  .. card:: 
+
+        .. rubric:: Distributed File Systems
+
+        .. class:: dhbw
+
+        24.  Ceph
+        25.  HDFS :peripheral:`(nur verfügbar, wenn wir ≥ 24 Studierende haben)`
+
+
+
+
+  .. card::
+
+    .. hint::
+
+        Students giving presentations belonging to the same block have to coordinate with each other to avoid any overlap. If you need a specific topic to be covered by another student but are not sure whether it will be presented sufficiently, create a backup slide for your presentation that covers this topic as well and mark it as a backup slide. This backup slide will not be counted towards the time limit.
+
+  .. card:: 
+
+        .. rubric:: Virtualization and Virtualization Platforms
+
+        .. class:: dhbw list-with-sublists show-list-item-content-on-hover font-size-90
+
+        1. Introduction to Virtualization & Use Cases
+
+           - What is virtualization? Historical context and motivation
+           - Different types/levels of virtualization
+           - Key use cases: server consolidation, cloud computing, development/testing, isolation
+           - Benefits and trade-offs
+
+        2. Hypervisors - Architecture & Types
+
+           - What is a hypervisor?
+           - Type 1 (bare-metal) vs Type 2 (hosted) - architectural differences
+           - Full virtualization vs paravirtualization approaches
+           - Examples and when to use each type
+
+        3. Virtual Machines - Implementation & Management
+
+           - VM structure and components (virtual hardware, guest OS)
+           - VM lifecycle: creation, running, pause/resume, snapshots
+           - VM migration (live migration concepts)
+           - Resource allocation and isolation
+
+        4. Containers & OS-level Virtualization
+
+           - Container concept and how it differs from VMs
+           - Namespaces and cgroups (conceptual)
+           - Container images and layering
+           - Use cases and comparison with VMs
+
+        5. Memory Virtualization
+
+           - The address translation problem (guest virtual → guest physical → host physical)
+           - Shadow page tables approach
+           - Hardware-assisted virtualization (EPT/NPT)
+           - Memory management techniques (overcommitment, ballooning)
+
+        6. Network & I/O Virtualization
+
+           - Challenges of virtualizing network and I/O devices
+           - Emulated vs paravirtualized devices
+           - SR-IOV (Single Root I/O Virtualization) and device passthrough
+           - Virtual NICs and network bridges
+           - Virtual switches and network isolation
+
+  .. card:: 
+
+        .. rubric:: Network Protocols
+
+        .. class:: dhbw font-size-90
+
+        1. QUIC :peripheral:`(only available when we have ≥ 21 students)`
+        2. HTTP/3
+        3. BitTorrent Protocol :peripheral:`(only available when we have ≥ 25 students)`
+
+  .. card:: 
+
+        .. rubric:: Modern RPC
+
+        .. class:: dhbw font-size-90
+
+        1.  Protobuf
+        2.  Google RPC
+
+  .. card:: 
+
+        .. rubric:: Web-App Security
+
+        .. class:: dhbw font-size-90
+
+        1.  SOP (Same-Origin Policy), CORS (Cross-Origin Resource Sharing) (Foundations)
+        2.  CORP / COOP / COEP (Cross-Origin Resource/Opener/Embedder Policies) :peripheral:`(only available when we have ≥ 23 students)`
+        3.  CSP (Content Security Policy) and SRI (Subresource Integrity)
+
+        Introduction and concrete examples how they are used/specified and help prevent attacks.
+
+  .. card:: 
+
+        .. rubric:: Monitoring & Debugging Distributed Systems
+
+        .. class:: dhbw font-size-90
+
+        1.  Log Aggregation with a particular focus on correlation of log entries
+
+  .. card:: 
+
+        .. rubric:: Leader Election
+
+        .. class:: dhbw font-size-90
+
+        1.  Bully Algorithm and/or Ring Algorithm
+
+  .. card::
+
+        .. rubric:: Quorum Systems
+        
+        .. class:: dhbw font-size-90       
+
+        1.  Majority voting (i. e., quorum-distributed computing)        
+
+  .. card::
+
+        .. rubric:: Consensus Algorithms and Fault Tolerance
+
+        .. class:: dhbw list-with-sublists show-list-item-content-on-hover font-size-90       
+
+        1.  Consensus Fundamentals & Problem Definition
+
+            - What is consensus and why is it hard in distributed systems?
+            - The FLP impossibility result (conceptual understanding)
+            - Fault models: crash faults vs Byzantine faults
+            - Safety vs liveness properties
+            - Real-world motivation: replicated state machines, distributed databases
+
+        2.  (Practical) Byzantine Fault Tolerance
+
+            - When do we need BFT?
+            - Modern developments
+          
+              .. presenter-note::
+                
+                Tendermint, HotStuff
+
+            - Real-world usage
+
+        3.  Paxos Family
+
+            - Basic Paxos algorithm (conceptual overview, roles: proposers, acceptors, learners)
+            - Why Paxos is correct but complex
+            - Multi-Paxos for practical systems
+            - Real-world usage
+          
+              .. presenter-note::
+          
+                [VERIFY!:] Google Chubby, Apache ZooKeeper foundations
+
+        4.  Raft - Understandable Consensus
+
+            - Motivation
+            - Leader election, log replication, safety
+            - How Raft differs from Paxos (design philosophy)
+            - Real-world usage
+          
+              .. presenter-note::
+                
+                etcd, Consul, CockroachDB
+  
+  .. card:: 
+
+        .. rubric:: Eventual Consistency
+    
+        .. class:: dhbw font-size-90       
+
+        1.  Eventual Consistency and Gossip Protocol
+        2.  CRDTs (Conflict-free Replicated Data Types) :peripheral:`(only available when we have ≥ 22 students)`
+
+  .. card:: 
+
+        .. rubric:: Distributed File Systems
+
+        .. class:: dhbw font-size-90       
+
+        1.  Ceph
+        2.  HDFS :peripheral:`(only available when we have ≥ 24 students)`
+
+
+
+Gruppennote für Projekt bei Wunsch
+-----------------------------------
+
+.. container:: accentuate
 
     Das Projekt ist als Gruppenarbeit ausgelegt und alle Gruppenmitglieder können die gleiche Punktzahl erhalten, wenn dies gewünscht ist. 
 
