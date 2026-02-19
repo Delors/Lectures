@@ -988,7 +988,7 @@ Steganographie vs. Verschlüsselung
     Verschlüsseln Sie "i love crypto" mit dem Schlüssel/der Tiefe 3.
 
     .. solution::
-        :pwd: ILOVECRYPTO
+        :pwd: IEPLVCYTORO
 
         ::
 
@@ -1023,7 +1023,7 @@ Steganographie vs. Verschlüsselung
     (b) Bestimmen Sie den richtigen Schlüssel und entschlüsseln Sie den Text?
 
     .. solution:: Enschlüsselungsmöglichkeiten
-        :pwd: FuenfMGL
+        :pwd: cryptoisjustfun
 
         (a) 5: 24153, 42153, 41253, 41523, 41532
 
