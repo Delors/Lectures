@@ -26,6 +26,11 @@ Rechtliche Anforderungen an das Dokumentenmanagement
       https://github.com/Delors/delors.github.io/issues
 
 
+.. [#] Dieser Foliensatz basiert auf dem Buch von Herrn Klaus Götzer.
+
+   Dokumenten-Management von *Klaus Götzer, Patrick Maué, und Ulrich Emmert*, dpunkt.verlag, 2023.
+
+
 
 .. class:: repetition
 
