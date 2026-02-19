@@ -37,8 +37,10 @@
 
 .. role:: emph
 .. role:: obsolete
-.. role:: peripheral
 .. role:: monospaced
+.. role:: peripheral
+.. role:: fade-out
+
 
 .. role:: kbd
 
