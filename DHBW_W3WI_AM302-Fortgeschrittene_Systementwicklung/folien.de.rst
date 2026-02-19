@@ -15,11 +15,11 @@ W3WI_AM302 - Fortgeschrittene Systementwicklung
 
 :Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
 :Kontakt: michael.eichberg@dhbw.de, Raum 149B
-:Version: 24AMA - 12. Februar 2026 
+:Version: 24AMA - 18. Februar 2026 
 
+ 
 
-
-.. class:: transition-fade
+.. class:: transition-fade fade-out
 
 Inhalte 1. Semester
 ---------------------------------
@@ -56,12 +56,13 @@ Inhalte 2. Semester
 Durchführung eines Entwicklungsprojekts in kleine(re)n Gruppen.
 
 
+
 Prüfungsleistung
 ------------------------------------------
 
 Prüfungsleistung: Portfolio (insgesamt 120 Punkte)
 
-:1. Semester: Kurztest mit 20 Minuten **mit 20 Punkten**
+:`1. Semester`:fade-out:: :fade-out:`Kurztest mit 20 Minuten mit 20 Punkten`
 :2. Semester: Vorträge, Code Reviews, Ausarbeitungen, Projekt **mit 100 Punkten** 
 
 
@@ -83,9 +84,9 @@ Ablauf
 
 .. deck::
 
-  .. card::
+  .. card:: fade-out
 
-    1. Semester: 16 VL
+    \1. Semester: 16 VL
 
     - \01. Sep 2025
     - \03. Sep 2025
@@ -94,7 +95,7 @@ Ablauf
 
   .. card::
 
-    1. Semester: 39 VL
+    \2. Semester: 39 VL
 
     .. grid::
 
@@ -127,7 +128,7 @@ Folgende Anforderungen sind zu erfüllen:
 
   .. class:: incremental-list
 
-  - Ihr Projekt muss am Ende spielbar sein in dem Sinne, dass alle Kursteilnehmer die Möglichkeit haben gleichzeitig zu spielen; ggf. in mehreren Kleingruppen gegeneinander.
+  - Ihr Projekt muss am Ende spielbar sein in dem Sinne, dass alle Kursteilnehmer die Möglichkeit haben gleichzeitig zu spielen; ggf. in mehreren Kleingruppen.
   - Das Spiel muss rundenbasiert sein.
 
     .. supplemental::
@@ -138,7 +139,9 @@ Folgende Anforderungen sind zu erfüllen:
 
   - Sie können sich - müssen aber nicht - von klassischen Brettspielen oder Kartenspielen inspirieren lassen. Es können aber auch neue Spiele entwickelt werden. 
 
-    D. h. Die Wahl des Spieles ist weitgehend frei. :emph:`Poker und Uno sind jedoch ausgeschlossen`; triviale Spiele (z. B. Hangman oder Tic-Tac-Toe) sind auch ausgeschlossen. Darüber hinaus darf kein Spiel zweimal entwickelt werden. *Sprechen Sie sich daher frühzeitig mit Ihren Kommilitonen ab, um Überschneidungen zu vermeiden.*
+    D. h. Die Wahl des Spieles ist weitgehend frei. :emph:`Poker und Uno sind jedoch ausgeschlossen`; triviale Spiele (z. B. Hangman oder Tic-Tac-Toe) sind auch ausgeschlossen. Darüber hinaus darf kein Spiel zweimal entwickelt werden.
+    
+    :emph:`Sprechen Sie sich frühzeitig mit Ihren Kommilitonen ab, um Überschneidungen zu vermeiden.`
 
   - Die Entwicklung erfolgt in Gruppen von 3 Personen und muss immer einen Webclient und eine Serverkomponente umfassen.
 
@@ -165,7 +168,12 @@ Projektergebnisse (Grobübersicht)
    - README mit Bau- und Installationsanleitung
    - API-Spezifikation bzw. Dokumentation der Schnittstellen zwischen Client und Server
 
-#. Dokument, das dokumentiert welche Team-Mitglieder welche Teile bearbeitet haben und mit welchem Anteil. **Wenn Sie als Team bewertet werden möchten, dann teilen Sie mir dies bitte mit und vermerken es explizit in dem Dokument.** 
+#. Dokument, das dokumentiert welche Team-Mitglieder welche Teile bearbeitet haben und mit welchem Anteil.
+
+   .. attention:: 
+    
+      Wenn Sie als Team bewertet werden möchten, dann teilen Sie mir dies bitte mit und vermerken es explizit in dem Dokument.
+
 #. Dokument bzgl. KI-Einsatz: Wo wurde welche KI wie eingesetzt. Wie war Ihre Erfahrung.
 
 
@@ -187,7 +195,7 @@ Vortragsthemen
 - Die Vorschläge zu den konkreten Inhalten der Vorträge sind als Anregung zu verstehen und kleinere Abweichungen sind ggf. möglich. 
 - Führen Sie immer in das Thema ein und geben Sie auch praktische Beispiele, damit die Relevanz für die Projektarbeit klar wird. D. h. die Vorträge sollen einen hohen „Hands-on“-Anteil haben.
 - :emph:`Sprechen Sie sich ggf. untereinander ab, damit die Vorträge nicht inhaltlich überlappen.`
-- Beachten Sie die Hinweise zur `Vortragsgestaltung <../allg-vortraege/folien.de.rst.html>`__.
+- Beachten Sie die Hinweise zur `Vortragsgestaltung <https://delors.github.io/allg-vortraege/folien.de.rst.html#slide-1>`__.
 - Bitte beachten Sie die Zeitvorgaben. 
 - .. attention::
 
@@ -308,9 +316,9 @@ Vortragsthemen - Frontend-Entwicklung
     *Inhalte:*
 
     - Dialog/Modal für Spielregeln und Einstellungen
-    - Custom Buttons und Controls (:html:`<button>`, etc.)
-    - Tooltips und Notifications (:html:`popover`, etc.)
-    - Loading States und Progress Bars
+    - *Custom Buttons* und *Controls* (:html:`<button>`, etc.)
+    - Tooltips und *Notifications* (:html:`popover`, etc.)
+    - *Loading States* und *Progress Bars*
 
 
 
@@ -414,7 +422,7 @@ Vortragsthemen - JavaScript für interaktive Spiele
     *Inhalte:*
 
     - LocalStorage vs. SessionStorage
-    - IndexedDB Grundlagen
+    - [IndexedDB Grundlagen]
     - Speichern von Spielständen
     - Cache API
     - Privacy-Aspekte
@@ -535,7 +543,7 @@ Vortragsthemen - Client-Server-Kommunikation
 
     .. remark::
 
-      Diese Talks sollten sich insbesondere auf die Verwendung von Express.js für die Entwicklung von Multiplayer-Spielen konzentrieren. Es sollten konkrete Beispiele gegeben werden
+      Diese Talks sollten sich insbesondere auf die Verwendung von Express.js für die Entwicklung von Multiplayer-Spielen konzentrieren. 
 
   .. card::
 
@@ -699,6 +707,8 @@ Ablauf 2. Semester (Wann passiert was?)
 \18. März 2026 von 09:30 bis 12:45 (4VL)
 -----------------------------------------
 
+.. class:: list-with-explanations
+
 - Vorträge
 - Präsentation des Spielkonzepts (pro Team ca. 10 Minuten)
 
@@ -765,9 +775,10 @@ Ablauf 2. Semester (Wann passiert was?)
 \8. April 2026 von 09:30 bis 12:45 (4VL)
 -----------------------------------------
 
-- Präsentation der Ergebnisse des Code Reviews
+- Präsentation der Ergebnisse des Code Reviews 
 
-  10 Minuten pro Code Review; d.h. 20 Minuten pro Team. 
+  Max. 10 Minuten pro Code Review; d.h. 20 Minuten pro Team. 
+  Fokussierung auf die Highlights der Code Reviews; d. h. Stellen mit Verbesserungspotential und solche, die Sie für Ihr Projekt besonders relevant finden.
 
 
 
@@ -832,15 +843,6 @@ Aufteilung der Vortragsthemen
 
 
 
-Teams
------------------------------------------
-
-- die Teamgröße beträgt 3 Studierende
-- die Aufteilung der Aufgaben im Team erfolgt selbstorganisiert, muss aber dokumentiert werden
-- Eine grobe Aufteilung entlang der Dimensionen: Frontend, Backend und querschneidende Belange ist naheliegend, aber nicht zwingend erforderlich; auf jeden Fall muss *jedes* Teammitglied in der Lage sein jeden Teil der Anwendung zu verstehen und bei Bedarf zu bearbeiten.
-
-
-
 Bewertung
 -----------------------------------------
 
@@ -860,7 +862,7 @@ Bewertung
     - [ 1P] Kurzpräsentation des ersten Eindrucks 
     - [ 6P] Qualität der Code Reviews
     - [ 3P] Qualität der Präsentation der Code Reviews
-  - **[56P] Spiel**
+  - **[58P] Spiel**
     
     - [ 5P] Präsentation des Spielkonzepts (Fake Screenshots, Mockups, Storyboard, etc.)
     - [ 3P] Vorführung des aktuellen Stands der Anwendung (d. h. es gibt eine erste (in Teilen spielbare) Version des Spiels)
@@ -868,12 +870,37 @@ Bewertung
     - [ 4P] Cheat-Prevention Mechanismus ist implementiert und dokumentiert (in README)
     - [ 3P] Die Anwendung ist responsive und unterstützt grundlegendes Theming
     - [ 3P] Die Anwendung lässt sich auch über Handys/Tablets spielen (Touch-fähig)
-    - [ 9P] Code-Qualität Backend (z. B. Lesbarkeit, Modularität, etc.)
-    - [ 9P] Code-Qualität Frontend (s. O.)
+    - [ 10P] Code-Qualität Backend (z. B. Lesbarkeit, Modularität, etc.)
+    - [ 10P] Code-Qualität Frontend (s. O.)
     - [ 3P] Qualität des Build- und Deploymentprozesses (z. B. Automatisierung, etc.)
     - [ 3P] README mit Bau- und Installationsanleitung
     - [ 2P] HTTP API-Spezifikation bzw. Schnittstellendokumentation (in README)
-  - **[ 4P] Organisation**
+  - **[ 2P] Organisation**
   
-    - [ 2P] Dokumentation des KI Einsatzes und Reflexion darüber
-    - [ 2P] Dokumentation der Teamarbeit, d. h. wer hat welchen Anteil an der Entwicklung welcher Teile der Anwendung
+    - [ 1P] Dokumentation des KI Einsatzes und Reflexion darüber
+    - [ 1P] Dokumentation der Teamarbeit, d. h. wer hat welchen Anteil an der Entwicklung welcher Teile der Anwendung
+  
+    .. important::
+
+      Ohne die Abgabe dieser Dokumente erfolgt keine Bewertung.
+
+
+
+Teams
+-----------------------------------------
+
+.. scrollable::
+
+  - die Teamgröße beträgt 3 Studierende
+  - die Aufteilung der Aufgaben im Team erfolgt selbstorganisiert, muss aber dokumentiert werden
+  - Eine grobe Aufteilung entlang der Dimensionen: Frontend, Backend und querschneidende Belange ist naheliegend, aber nicht zwingend erforderlich; auf jeden Fall muss *jedes* Teammitglied in der Lage sein jeden Teil der Anwendung zu verstehen und bei Bedarf zu bearbeiten.
+
+  .. module:: group-assignment
+    :class: accentuate
+    :scope: slide
+    
+    {
+        "defaultNumberOfStudents": 23,
+        "defaultGroupSize": 3,
+        "defaultPreferSmallerGroups": true
+    }
