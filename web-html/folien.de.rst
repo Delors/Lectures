@@ -9,6 +9,7 @@
 .. include:: ../docutils.defs
 
 
+
 .. class:: animated-logo
 
 HTML(5)
@@ -93,7 +94,7 @@ HTML\ [#]_ - Historie
 ------------------------------------------------
 
 .. module:: timeline
-    :class: align-center
+    :class: align-center light-image
 
     {
         "class" : "HTML-Timeline",
