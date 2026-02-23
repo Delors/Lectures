@@ -6,8 +6,8 @@
     xmlns="http://www.w3.org/2000/svg"
     xmlns:dc="http://purl.org/dc/elements/1.1/"
     version="1.1"
-    viewBox="109 91 609 85"
-    width="1827"
+    viewBox="109 91 589 85"
+    width="1767"
     height="255"
 >
   <style>
@@ -65,7 +65,6 @@
       </g>
     </marker>
   </defs>
-  <metadata> Produced by OmniGraffle 8.0\n2025-02-20 10:48:54 +0000</metadata>
   <g
         id="object_literals_and_the_prototype_chain_with_update"
         stroke-opacity="1"
@@ -74,7 +73,6 @@
         stroke="none"
         fill-opacity="1"
     >
-    <title>object_literals_and_the_prototype_chain_with_update</title>
     <g id="object_literals_and_the_prototype_chain_with_update_Layer_1">
       <title>Layer 1</title>
       <g id="Graphic_19_shadow" filter="url(#Shadow)">
@@ -392,13 +390,11 @@
         </text>
       </g>
       <g id="Graphic_21">
-        <text transform="translate(595.2043 119.55905)" fill="black">
+        <text transform="translate(575 119)" fill="black">
           <tspan
                         font-family="Victor Mono"
                         font-size="14"
                         font-weight="400"
-                        fill="black"
-                        x="8242296e-19"
                         y="14"
                         xml:space="preserve"
                     >Object.prototype</tspan>
@@ -558,9 +554,9 @@
       <g id="Line_49">
         <line
                     x1="548.0816"
-                    y1="127.7021"
-                    x2="585.30544"
-                    y2="128.2627"
+                    y1="128"
+                    x2="565"
+                    y2="128"
                     marker-end="url(#StickArrow_Marker)"
                     marker-start="url(#FilledBall_Marker)"
                     stroke="black"
