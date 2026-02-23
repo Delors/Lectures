@@ -637,6 +637,7 @@ Alles ist ein Objekt
 
       .. image:: images/prototype_chain/object_literals_and_the_prototype_chain.svg
          :align: center
+         :class: light-image
 
    .. card::
 
@@ -653,6 +654,7 @@ Alles ist ein Objekt
 
       .. image:: images/prototype_chain/object_literals_and_the_prototype_chain_with_update.svg
          :align: center
+         :class: light-image
 
       .. code:: javascript
          :number-lines: 5
@@ -690,10 +692,11 @@ Alles ist ein Objekt
 
    .. card::
 
-      .. container:: scale-on-hover
+      .. container:: scale-on-hover 
 
             .. image:: images/prototype_chain/pseudoclassical_Inheritance.svg
                :align: center
+               :class: light-image
 
       .. rubric:: Objektabhängigkeiten
 
