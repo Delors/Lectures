@@ -964,6 +964,7 @@ MapReduce - Programmiermodell und Middleware für paralleles Rechnen
   - Partitionierung der Eingabedaten und Verteilung selbiger auf die Rechner des Clusters
   - Einplanung und Ausführung der “Map”- und “Reduce”- Funktionen auf den Rechnern des Clusters
   - Behandlung von Fehlern und die Kommunikation zwischen den Rechnern
+- Ein kanonisches Beispiel ist die Berechnung eines invertierten Indexes.
 
 .. hint::
     :class: incremental
@@ -972,21 +973,17 @@ MapReduce - Programmiermodell und Middleware für paralleles Rechnen
 
 
 
-.. class:: smaller-slide-title
+..  MapReduce - Visualisierung und Beispiel
+    ----------------------------------------------------------
+    .. image:: drawings/mapreduce.svg
+        :width: 100%
+        :align: center
 
-MapReduce - Visualisierung und Beispiel
-----------------------------------------------------------
+    .. supplemental::
 
+        Hier ist es die Berechnung der Häufigkeit von Wörtern in einem sehr großen Datensatz.
 
-.. image:: drawings/mapreduce.svg
-    :width: 100%
-    :align: center
-
-.. supplemental::
-
-    Hier ist es die Berechnung der Häufigkeit von Wörtern in einem sehr großen Datensatz.
-
-    Ein weiteres kanonisches Beispiel ist die Berechnung eines invertierten Indexes.
+        Ein weiteres kanonisches Beispiel ist die Berechnung eines invertierten Indexes.
 
 
 
