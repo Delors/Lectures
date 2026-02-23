@@ -15,7 +15,7 @@ Einführung in verteilte Systeme
 
 :Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
 :Kontakt: michael.eichberg@dhbw.de, Raum 149B
-:Version: 1.0.1
+:Version: 1.0.2
 
 .. class:: sources
 
@@ -207,18 +207,18 @@ Verteilungstransparenz
 (:eng:`Distribution Transparency`)
 
 
+
 Definition
 ----------------------------------------------------------
 
-.. definition::
-
-    .. rubric:: Verteilungstransparenz
+.. definition:: Verteilungstransparenz
 
     Transparenz beschreibt die Eigenschaft, dass ein verteiltes System versucht, die Tatsache zu verbergen, dass seine Prozesse und Ressourcen physisch auf mehrere Computer verteilt sind, die möglicherweise durch große Entfernungen voneinander getrennt sind.
 
-.. container:: incremental margin-top-2em
+.. compound:: 
+    :class: incremental 
 
-  Die Verteilungstransparenz wird durch viele verschiedene Techniken von der so genannten *Middleware* realisiert - einer Schicht zwischen Anwendungen und Betriebssystemen.
+    Die Verteilungstransparenz wird durch viele verschiedene Techniken von der so genannten *Middleware* realisiert - einer Schicht zwischen Anwendungen und Betriebssystemen.
 
 
 
@@ -296,7 +296,7 @@ Offene verteilte Systeme
 Offene verteilte Systeme
 ----------------------------------
 
-.. definition::
+.. container:: accentuate
 
     Ein offenes verteiltes System bietet Komponenten an, die leicht von anderen Systemen verwendet oder in andere Systeme integriert werden können.
 
@@ -887,7 +887,7 @@ Verlässlichkeit verteilter Systeme
 
     Eine **Komponente**\ [#]_ stellt ihren **Clients** **Dienste** zur Verfügung. Dafür kann die Komponente jedoch wiederum Dienste von anderen Komponenten benötigen und somit ist eine Komponente  von einer anderen Komponente abhängig (:eng:`depend`).
 
-.. definition::
+.. definition:: Abhängigkeit von Komponenten
 
     Eine Komponente :math:`C` hängt von :math:`C^*` ab, wenn die Korrektheit des Verhaltens von :math:`C` von der Korrektheit des Verhaltens von :math:`C^*` abhängt.
 
@@ -905,13 +905,12 @@ Anforderungen an die Verlässlichkeit verteilter Systeme
     "Verfügbarkeit", "Das System ist nutzbar."
     "Zuverlässigkeit", "Kontinuität der korrekten Leistungserbringung."
     "Sicherheit
-    (:eng:`Safety`\ [#]_)", "Niedrige Wahrscheinlichkeit für ein katastrophales Ereignis"
+    (:eng:`Safety`\ [#]_)", "Niedrige Wahrscheinlichkeit für ein katastrophales Ereignis."
     "Wartbarkeit", "Wie leicht kann ein fehlgeschlagenes System wiederhergestellt werden?"
 
 .. [#] :eng:`Safety` und :eng:`Security` werden beide im Deutschen gleich mit Sicherheit übersetzt und sind daher leicht zu verwechseln. :eng:`Safety` bezieht sich auf die Sicherheit von Personen und Sachen, während :eng:`Security` sich auf die Sicherheit von Daten und Informationen bezieht.
 
 
-.. class:: smaller-slide-title smaller
 
 Zuverlässigkeit (:eng:`Reliability`) vs. Verfügbarkeit (:eng:`Availability`) in verteilten Systemen
 ----------------------------------------------------------------------------------------------------
@@ -1120,11 +1119,11 @@ Peer-to-Peer-Systeme
 Cloud-Computing
 ------------------
 
-.. definition:: 
+.. definition:: Cloud-Computing
 
-   Cloud-Computing bezeichnet die Bereitstellung von Rechenleistung, Speicher und Anwendungen als Dienstleistung. Es ist die  Weiterentwicklung des Grid-Computing.
+    Die Bereitstellung von Rechenleistung, Speicher und Anwendungen als Dienstleistung. Es ist die  Weiterentwicklung des Grid-Computing.
 
-.. container:: incremental margin-top-1em
+.. container:: incremental
 
     .. rubric:: Varianten
 
