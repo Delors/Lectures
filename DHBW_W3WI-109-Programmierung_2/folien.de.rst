@@ -30,7 +30,7 @@ Inhalte gem. MHB
         :Klassenbibliotheken: API-Dokumentationen und ihre Nutzung.
         :Software Entwicklung: Aufsetzen eines Projekts, Versionsverwaltung und Testen
 
-            :peripheral:`(Im Wesentlichen behandelt in der Veranstaltung: Methoden der Softwareentwicklung; hier nur soweit wie es für das Verständnis der Programmierung II notwendig ist.)`
+            :peripheral:`Beide Themen werden im Wesentlichen behandelt in der Veranstaltung: Methoden der Softwareentwicklung. Wir werden diese Themen hier nur insoweit behandeln, wie es für das Verständnis der Programmierung II notwendig ist.)`
 
     .. card::
 
@@ -69,7 +69,7 @@ Inhalte gem. MHB
 Modul
 ------------------------------------------
 
-- das Modul hat 60 VL
+- Umfang: 60 VL
 - Selbststudium: 90 Stunden
 - Prüfung: Klausur mit einem Umfang von 120 Minuten und 120 Punkten
 
