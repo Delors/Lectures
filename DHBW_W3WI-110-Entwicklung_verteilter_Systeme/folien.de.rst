@@ -25,7 +25,7 @@ Ausgewählte Inhalte gem. MHB - Web-Programmierung
 .. rubric:: Kerninhalte
 
 - HTML, CSS, JavaScript als clientseitige Web-Technologien und aktuelle APIs (z.B. HTML5 und verwandte Technologien)
-- Übertragungsprotokolle und APIs zwischen Client und Server (z.B. HTTP, HTTPS, WebSockets, XMLHttpRequest, Fetch API)
+- Übertragungsprotokolle und APIs zwischen Client und Server (z. B. HTTP, HTTPS, WebSockets, XMLHttpRequest, Fetch API)
 - Kommunikation zwischen einzelnen Komponenten Web-basierter Anwendungen
 - Optimierung von Webseiten für verschiedene Zielsysteme
 
@@ -51,48 +51,506 @@ Ausgewählte Inhalte gem. MHB - Verteilte Systeme
 Prüfungsleistung - Portfolio
 ------------------------------------------
 
-- das Modul hat 55 VL:
+- das Modul hat 55 VL (mit einem Workload von 150 Stunden insgesamt)
   
   - Verteilte Systeme hat 22VL
-  - Web-Programmierung hat 33 VL
+  - Web-Programmierung hat 33VL
 
 .. compound::
   :class: incremental
 
   - Mehrere Bestandteile:
 
-    - Projekt
-    - Code Reviews
-    - Vorträge
+    - Projekt (max. 80 Punkte)
+    - 2 Kurzvorträge (max. 40 Punkte)
 
 
 
-Vorträge - Themen
+.. class:: new-section
+
+Vorträge
+------------------------------------------
+
+
+
+Vorträge - Themen (Web-Programmierung)
+------------------------------------------
+
+.. deck::
+
+  .. card::
+
+    .. class:: incremental-list list-with-explanations
+
+    - Die folgenden Vorträge behandeln Themen, die für das Projekt direkt relevant sind. 
+    - Die Vorschläge zu den konkreten Inhalten der Vorträge sind als Anregung zu verstehen. 
+    
+      Es ist ggf. weder möglich noch sinnvoll alle möglichen Themen abzudecken und kleinere Abweichungen sind ggf. möglich. Es ist Ihre Aufgabe einen in sich geschlossenen Vortrag zu gestalten, der die Grundlagen des Themas vermittelt und die Relevanz für die Projektarbeit klar macht. 
+
+    - Führen Sie immer in das Thema ein und geben Sie auch praktische Beispiele, damit die Relevanz für die Projektarbeit klar wird. D. h. die Vorträge sollen einen hohen „Hands-on“-Anteil haben.
+    - :emph:`Sprechen Sie sich untereinander ab, damit die Vorträge nicht inhaltlich überlappen.`
+
+  .. card::
+
+    **CSS Grid Layout**
+
+    :Personen: 1 Person
+    :Dauer: 10 Minuten
+
+    *Inhalte:*
+
+    - CSS Grid Grundlagen und Terminologie
+    - Responsive Layouts mit Grid
+    - Grid vs. Flexbox: Wann was verwenden?
+
+  .. card::
+
+    **CSS Custom Properties und Design Systems**
+
+    :Personen: 1 Person
+    :Dauer: 10 Minuten
+
+    *Inhalte:* 
+
+    - CSS Variablen und CSS Properties (:css:`@property`) Grundlagen
+    - Scope und Vererbung
+    - Performance-Überlegungen
+    - Design Tokens und konsistente Gestaltung
+
+  .. card::
+
+    **CSS Animationen und Transitionen**
+
+    :Personen: 1 Person
+    :Dauer: 10 Minuten
+
+    *Inhalte:*
+
+    - Grundlagen von Transitions
+    - Animierte Elemente
+    - Best Practices für flüssige Animationen
+    - @keyframes Syntax
+    - Animation Timing Functions
+    - Komplexe Animationsabläufe
+
+  .. card::
+
+    **Responsive Designe**
+
+    :Personen: 1 Person
+    :Dauer: 10 Minuten
+
+    *Inhalte:* 
+
+    - Mobile-First vs. Desktop-First
+    - Media Queries für verschiedene Geräte
+    - Viewport-Units und Container Queries
+    - Touch vs. Maus-Interaktion
+
+  .. card::
+
+    **CSS Theming und Farbsysteme** 
+
+    :Personen: 2 Personen
+    :Dauer: 20 Minuten
+
+    .. grid::
+
+      .. cell:: width-50
+
+        *Moderne Color Spaces:*
+
+        - sRGB, Display P3, Lab, LCH
+        - color-mix() Funktion
+        - color-contrast() / contrast-color()
+        - Barrierefreiheit bei Farbwahl
+
+      .. cell:: width-50
+
+        *Light/Dark Themes:*
+
+        - light-dark() Funktion
+        - color-scheme Property
+        - Theme-Switcher implementieren
+        - CSS Custom Properties für Themes
+
+  .. card::
+
+    **Moderne UI-Komponenten mit HTML/CSS**
+
+    :Personen: 1 Person
+    :Dauer: 10 Minuten
+
+    *Inhalte:*
+
+    - Dialog/Modal für Einstellungen
+    - *Custom Buttons* und *Controls* (:html:`<button>`, etc.)
+    - Tooltips und *Notifications* (:html:`popover`, etc.)
+    - *Loading States* und *Progress Bars*
+  
+  .. card::
+
+    **Form Validation & User Input Handling**
+
+    :Personen: 1 Person
+    :Dauer: 10 Minuten
+
+    *Inhalte:*
+
+    - Native HTML5 Validation (required, pattern, etc.)
+    - Custom Validation mit JavaScript
+    - Constraint Validation API
+    - User Feedback (Fehlermeldungen, visuelle Hinweise)
+    - Input-Sanitization für Sicherheit
+    - Best Practices für Formulare
+    
+  .. card::
+
+    **Grundlagen von modernem JavaScript (ES6+)**
+
+    :Personen: 2 Personen
+    :Dauer: 20 Minuten
+
+    .. grid::
+
+      .. cell:: width-50
+
+        *ES6+ Grundlegende Features:*
+
+        - Arrow Functions
+        - Destructuring
+        - Spread/Rest Operator
+        - Default Parameters
+
+      .. cell:: width-50
+
+        *ES6+Erweiterte Features:*
+
+        - Template Literals
+        - Promises und async/await
+        - Modules (import/export)
+        - Array-Methoden (map, filter, reduce)
+
+  .. card::
+    
+      **JavaScript Event Handling**
+
+      :Personen: 1 Person
+      :Dauer: 10 Minuten
+
+      *Inhalte:*
+
+      - Event Delegation
+      - Keyboard Events
+      - Touch Events für Mobile
+      - **Event-Loop und Performance**
+
+  .. card::
+
+      **DOM-Manipulation und Virtual DOM Konzepte**
+
+      :Personen: 1 Person
+      :Dauer: 10 Minuten
+
+      *Inhalte:*
+
+      - Effiziente DOM-Updates
+      - DocumentFragment
+      - Template-Element
+      - Shadow DOM Grundlagen
+      - Performance-Best-Practices
+
+  .. card::
+    
+      **JavaScript State Management**
+
+      :Personen: 1 Person
+      :Dauer: 10 Minuten
+
+      *Inhalte:*
+
+      - Lokales State Management
+      - Immutability
+      - State Synchronisation Client/Server
+      - Observer Pattern
+      
+  .. card::
+
+      **JavaScript Error Handling und Debugging**
+
+      :Personen: 1 Person
+      :Dauer: 10 Minuten
+
+      *Inhalte:*
+
+      - try/catch Best Practices
+      - Browser DevTools für Debugging
+      - Error Boundaries
+      - Logging-Strategien
+
+  .. card::
+
+    **Browser Storage APIs**
+
+    :Personen: 1 Person
+    :Dauer: 10 Minuten
+
+    *Inhalte:*
+
+    - LocalStorage vs. SessionStorage
+    - [IndexedDB Grundlagen]
+    - Privacy-Aspekte
+
+  .. card::
+
+    **API Design**
+
+    :Personen: 1 Person
+    :Dauer: 10 Minuten
+
+    *Inhalte:*
+
+    - HTTP Methoden (GET, POST, PUT, DELETE)
+    - Status Codes
+    - Request/Response Format (JSON)
+    - API-Dokumentation
+
+  .. card::
+
+    **Drag & Drop API**
+
+    :Personen: 1 Person
+    :Dauer: 10 Minuten
+
+    - Native Drag & Drop Events
+    - Aufgaben zwischen Listen verschieben
+    - Kalendereinträge verschieben
+    - Touch-Kompatibilität
+    - Visuelle Feedback-Gestaltung
+
+  .. card::
+
+    **Fetch API**
+
+    :Personen: 1 Person
+    :Dauer: 10 Minuten
+
+    *Inhalte:*
+
+    - Fetch API Grundlagen
+    - Promises und async/await mit Fetch
+    - Request/Response Handling
+    - Error Handling
+    - CORS-Problematik
+
+  .. card::
+
+    **Web Security Grundlagen**
+
+    :Personen: 1 Person
+    :Dauer: 10 Minuten
+
+    *Inhalte:*
+
+    - XSS (Cross-Site Scripting) Prevention
+    - CSRF Protection
+    - Input Validation und Sanitization
+    - Content Security Policy (CSP)
+    - Sichere Authentication (JWT, Sessions)
+    - HTTPS und sichere Verbindungen
+
+  .. card::
+  
+    **WebSockets Grundlagen**
+
+    :Personen: 1 Person
+    :Dauer: 10 Minuten
+
+    *Inhalte:*
+
+    - WebSocket Protokoll
+    - Native WebSocket API
+    - Connection Lifecycle
+    - Heartbeats und Reconnection
+    - Wann WebSockets vs. HTTP
+
+  .. card::
+
+    **Socket.IO**
+
+    :Personen: 1 Person
+    :Dauer: 10 Minuten
+
+    *Socket.IO Basics*
+
+    - Installation und Setup
+    - Events und Rooms
+    - Namespaces
+    - Broadcasting
+    - Verbindungsmanagement
+
+  .. card::
+    
+    **Express.js Grundlagen**
+
+    :Personen: 1 Person
+    :Dauer: 10 Minuten
+
+    *Express.js Basics*
+
+    - Routing
+    - Middleware-Konzept
+    - Request/Response Handling
+    - Static File Serving
+    - Errorhandling
+
+
+  .. card::
+
+    **API-Testing und Dokumentation**
+
+    :Personen: 1 Person
+    :Dauer: 10 Minuten
+
+    *Inhalte:*
+
+    - Postman/Thunder Client
+    - Unit Tests für APIs
+    - Automatisierte Tests
+    - Mock-Server/-Daten
+
+  .. card::
+
+    **Software-Architektur für verteilte Anwendungen**
+
+    :Personen: 1 Person
+    :Dauer: 10 Minuten
+
+    *Inhalte:*
+
+    - Client-Server Architektur
+    - MVC/MVVM Patterns
+    - Separation of Concerns
+    - Modulare Struktur
+    - Code-Organisation
+
+  .. card::
+
+    **Testing für Web-Anwendungen**
+
+    :Personen: 1 Person
+    :Dauer: 10 Minuten
+
+    *Inhalte:*
+
+    - Unit Testing (Jest, Vitest)
+    - Integration Testing
+    - E2E Testing Grundlagen
+    - Mocking und Stubs
+
+  .. card::
+
+    **Build-Tools und Bundling**  
+
+    :Personen: 1 Person
+    :Dauer: 10 Minuten
+
+    *Inhalte:*
+
+    - Vite/Webpack Grundlagen
+    - Module Bundling
+    - Code Splitting
+    - Minification und Optimization
+    - Development vs. Production Builds
+  
+  .. card::
+
+    **Accessibility (a11y) für Spiele**
+
+    :Personen: 1 Person
+    :Dauer: 10 Minuten
+
+    *Inhalte:*
+
+    - WCAG Grundlagen
+    - ARIA Roles und Attributes
+    - Keyboard Navigation
+    - Screen Reader Support
+    - Color Contrast und Lesbarkeit
+
+
+
+Aufteilung der Vortragsthemen
+-----------------------------------------
+
+.. scrollable::
+
+  .. csv-table::
+    :header: ID, Titel
+    :class: dhbw sticky-header
+    :width: 100%
+    
+    1, CSS Grid Layout
+    2, CSS Custom Properties und Design Systems
+    3, CSS Animationen und Transitionen 
+    4, Responsive Design
+    5, Moderne Color Spaces
+    6, Light/Dark Themes
+    7, Moderne UI-Komponenten mit HTML/CSS
+    8, Form validation
+    9, Accessibility (a11y) 
+    10, ES6+ Grundlegende Features
+    11, ES6+ Erweiterte Features
+    12, JavaScript Event Handling 
+    13, DOM-Manipulation und Virtual DOM Konzepte
+    14, JavaScript State Management
+    15, Browser Storage APIs
+    16, :obsolete:`API Design`
+    17, Drag & Drop API
+    18, Fetch API 
+    19, JavaScript Error Handling und Debugging
+    20, Web Security Grundlagen
+    21, WebSockets Grundlagen
+    22, Socket.IO
+    23, Express.js Grundlagen
+    24, Build-Tools und Bundling
+    25, :obsolete:`API-Testing und Dokumentation`
+    26, Software-Architektur für verteilte Anwendungen
+    27, Testing für Web-Anwendungen
+
+
+
+Vorträge - Themen (Verteilte Systeme)
 ------------------------------------------
 
 .. deck:: font-size-90
 
   .. card::
 
+    - Die folgenden Vorträge sollen alle konzeptioneller Natur sein und das grundlegende Verständnis für die jeweiligen Themen vermitteln. 
+      
+    - Es wird nicht erwartet, dass Sie tief in die technischen Details gehen oder komplexe Implementierungen präsentieren. 
+
     .. important::
 
         Studierende, die Präsentationen innerhalb desselben Blocks halten, müssen sich untereinander abstimmen, um Überschneidungen zu vermeiden und auch sicherstellen, dass der/die vorherige Person die Themen, die für die Präsentation vorausgesetzt werden, auch ausreichend behandelt werden.
     
-    .. important:: 
-        :class: incremental
+  .. card::
 
-        Wenn Sie bestimmtes Wissen voraussetzen, das von einer anderen Studentin oder einem anderen Studenten behandelt werden soll(te), Sie sich aber nicht sicher sind, ob es ausreichend präsentiert wurde, erstellen Sie ggf. eine Backup-Folie, die dieses Thema ebenfalls abdeckt. Kennzeichnen Sie die Folie explizit als Backup-Folie mit einem Hinweis in welchem inhaltlichen Block das Thema hätte behandelt werden sollen. Diese Backup-Folie wird dann nicht auf das Zeitlimit angerechnet.
+    .. important:: 
+
+        Wenn Sie bestimmtes Wissen voraussetzen, das von einer anderen Studentin oder einem anderen Studenten behandelt werden soll(te), Sie sich aber nicht sicher sind, ob es ausreichend präsentiert wurde, erstellen Sie ggf. eine Backup-Folie, die das Thema abdeckt. Kennzeichnen Sie die Folie explizit als Backup-Folie mit einem Hinweis in welchem inhaltlichen Block das Thema hätte behandelt werden sollen. Diese Backup-Folie wird dann nicht auf das Zeitlimit angerechnet.
 
   .. card:: 
 
-        .. rubric:: *Virtualization* und *Virtualization Platforms*
+        .. rubric:: Virtualisierung und Virtualisierungsplatformen 
 
         .. class:: dhbw list-with-sublists show-list-item-content-on-hover 
 
-        1. Introduction to Virtualization & Use Cases
+        1. Einführung in Virtualisierung & Use Cases
 
-           - Was ist Virtualization? Historischer Kontext und Motivation
-           - Unterschiedliche Typen/Ebenen der Virtualization
+           - Was ist Virtualisierung? Historischer Kontext und Motivation
+           - Unterschiedliche Typen/Ebenen der Virtualisierung
            - Zentrale Use Cases: Server Consolidation, Cloud Computing, Development/Testing, Isolation
            - Vorteile und Trade-offs
 
@@ -254,196 +712,95 @@ Vorträge - Themen
 
 
 
+Themenvergabe
+------------------------------------------
 
-  .. card::
+.. scrollable:: 
 
-    .. hint::
+  Die Präsentationen müssen in der unten aufgeführten Reihenfolge gehalten werden.
 
-        Students giving presentations belonging to the same block have to coordinate with each other to avoid any overlap. If you need a specific topic to be covered by another student but are not sure whether it will be presented sufficiently, create a backup slide for your presentation that covers this topic as well and mark it as a backup slide. This backup slide will not be counted towards the time limit.
+  .. list-table::
+    :header-rows: 1
+    :widths: 57 25
+    :width: 100%
+    :class: dhbw sticky-header
 
-  .. card:: 
+    * - Thema
+      - Nebenbedingung
+    * - \01. Einführung in Virtualisierung & Use Cases
+      - 
+    * - \02. Hypervisors - Architecture & Types
+      - 
+    * - \03. Virtual Machines 
+      - 
+    * - \04. Containers & OS-level Virtualization
+      - 
+    * - \05. Memory Virtualization
+      - 
+    * - \06. Network & I/O Virtualization
+      - 
+    * - \07. QUIC
+      - ≥ 21 students
+    * - \08. HTTP/3
+      - 
+    * - \09. BitTorrent Protocol
+      - ≥ 25 students
+    * - \10. Protobuf
+      - 
+    * - \11. Google RPC
+      - 
+    * - \12. SOP, CORS (Foundations)
+      - 
+    * - \13. CORP / COOP / COEP
+      - ≥ 23 students
+    * - \14. CSP and SRI
+      - 
+    * - \15. Log Aggregation
+      - 
+    * - \16. Leader Election (Bully/Ring Algorithm)
+      - 
+    * - \17. Quorum Systems (Majority Voting)
+      - 
+    * - \18. Consensus Fundamentals & Problem Definition
+      - 
+    * - \19. Byzantine Fault Tolerance (PBFT)
+      - 
+    * - \20. Paxos Family
+      - 
+    * - \21. Raft - Understandable Consensus
+      - 
+    * - \22. Eventual Consistency and Gossip Protocol
+      - 
+    * - \23. CRDTs
+      - ≥ 22 students
+    * - \24. Ceph
+      - 
+    * - \25. HDFS
+      - ≥ 24 students
 
-        .. rubric:: Virtualization and Virtualization Platforms
 
-        .. class:: dhbw list-with-sublists show-list-item-content-on-hover font-size-90
 
-        1. Introduction to Virtualization & Use Cases
+Vorträge - Bewertung (jeweils pro Vortrag)
+------------------------------------------
 
-           - What is virtualization? Historical context and motivation
-           - Different types/levels of virtualization
-           - Key use cases: server consolidation, cloud computing, development/testing, isolation
-           - Benefits and trade-offs
+- 19 Punkte für die eigentliche Präsentation
+- 1 Punkte für die Abgabe der unterschriebenen und abgearbeiteten Checkliste
 
-        2. Hypervisors - Architecture & Types
-
-           - What is a hypervisor?
-           - Type 1 (bare-metal) vs Type 2 (hosted) - architectural differences
-           - Full virtualization vs paravirtualization approaches
-           - Examples and when to use each type
-
-        3. Virtual Machines - Implementation & Management
-
-           - VM structure and components (virtual hardware, guest OS)
-           - VM lifecycle: creation, running, pause/resume, snapshots
-           - VM migration (live migration concepts)
-           - Resource allocation and isolation
-
-        4. Containers & OS-level Virtualization
-
-           - Container concept and how it differs from VMs
-           - Namespaces and cgroups (conceptual)
-           - Container images and layering
-           - Use cases and comparison with VMs
-
-        5. Memory Virtualization
-
-           - The address translation problem (guest virtual → guest physical → host physical)
-           - Shadow page tables approach
-           - Hardware-assisted virtualization (EPT/NPT)
-           - Memory management techniques (overcommitment, ballooning)
-
-        6. Network & I/O Virtualization
-
-           - Challenges of virtualizing network and I/O devices
-           - Emulated vs paravirtualized devices
-           - SR-IOV (Single Root I/O Virtualization) and device passthrough
-           - Virtual NICs and network bridges
-           - Virtual switches and network isolation
-
-  .. card:: 
-
-        .. rubric:: Network Protocols
-
-        .. class:: dhbw font-size-90
-
-        1. QUIC :peripheral:`(only available when we have ≥ 21 students)`
-        2. HTTP/3
-        3. BitTorrent Protocol :peripheral:`(only available when we have ≥ 25 students)`
-
-  .. card:: 
-
-        .. rubric:: Modern RPC
-
-        .. class:: dhbw font-size-90
-
-        1.  Protobuf
-        2.  Google RPC
-
-  .. card:: 
-
-        .. rubric:: Web-App Security
-
-        .. class:: dhbw font-size-90
-
-        1.  SOP (Same-Origin Policy), CORS (Cross-Origin Resource Sharing) (Foundations)
-        2.  CORP / COOP / COEP (Cross-Origin Resource/Opener/Embedder Policies) :peripheral:`(only available when we have ≥ 23 students)`
-        3.  CSP (Content Security Policy) and SRI (Subresource Integrity)
-
-        Introduction and concrete examples how they are used/specified and help prevent attacks.
-
-  .. card:: 
-
-        .. rubric:: Monitoring & Debugging Distributed Systems
-
-        .. class:: dhbw font-size-90
-
-        1.  Log Aggregation with a particular focus on correlation of log entries
-
-  .. card:: 
-
-        .. rubric:: Leader Election
-
-        .. class:: dhbw font-size-90
-
-        1.  Bully Algorithm and/or Ring Algorithm
-
-  .. card::
-
-        .. rubric:: Quorum Systems
-        
-        .. class:: dhbw font-size-90       
-
-        1.  Majority voting (i. e., quorum-distributed computing)        
-
-  .. card::
-
-        .. rubric:: Consensus Algorithms and Fault Tolerance
-
-        .. class:: dhbw list-with-sublists show-list-item-content-on-hover font-size-90       
-
-        1.  Consensus Fundamentals & Problem Definition
-
-            - What is consensus and why is it hard in distributed systems?
-            - The FLP impossibility result (conceptual understanding)
-            - Fault models: crash faults vs Byzantine faults
-            - Safety vs liveness properties
-            - Real-world motivation: replicated state machines, distributed databases
-
-        2.  (Practical) Byzantine Fault Tolerance
-
-            - When do we need BFT?
-            - Modern developments
-          
-              .. presenter-note::
-                
-                Tendermint, HotStuff
-
-            - Real-world usage
-
-        3.  Paxos Family
-
-            - Basic Paxos algorithm (conceptual overview, roles: proposers, acceptors, learners)
-            - Why Paxos is correct but complex
-            - Multi-Paxos for practical systems
-            - Real-world usage
-          
-              .. presenter-note::
-          
-                [VERIFY!:] Google Chubby, Apache ZooKeeper foundations
-
-        4.  Raft - Understandable Consensus
-
-            - Motivation
-            - Leader election, log replication, safety
-            - How Raft differs from Paxos (design philosophy)
-            - Real-world usage
-          
-              .. presenter-note::
-                
-                etcd, Consul, CockroachDB
+- :emph:`Sprechen Sie sich ggf. untereinander ab, damit sich die Vorträge nicht inhaltlich überlappen.`
+- Hinweise zur `Vortragsgestaltung und Checkliste <https://delors.github.io/allg-vortraege/folien.de.rst.html#slide-1>`__.
   
-  .. card:: 
+.. important::
 
-        .. rubric:: Eventual Consistency
-    
-        .. class:: dhbw font-size-90       
-
-        1.  Eventual Consistency and Gossip Protocol
-        2.  CRDTs (Conflict-free Replicated Data Types) :peripheral:`(only available when we have ≥ 22 students)`
-
-  .. card:: 
-
-        .. rubric:: Distributed File Systems
-
-        .. class:: dhbw font-size-90       
-
-        1.  Ceph
-        2.  HDFS :peripheral:`(only available when we have ≥ 24 students)`
+  - Die Präsentation ist an dem Tag, an dem sie gehalten werden soll bis spätesten 7:00 Uhr in Moodle hochzuladen. 
+  - Die Präsentation muss als PDF hochgeladen werden.
+  - Die Checkliste muss als PDF hochgeladen werden.
+  
 
 
+.. class:: new-section
 
-Gruppennote für Projekt bei Wunsch
------------------------------------
-
-.. container:: accentuate
-
-    Das Projekt ist als Gruppenarbeit ausgelegt und alle Gruppenmitglieder können die gleiche Punktzahl erhalten, wenn dies gewünscht ist. 
-
-    .. important:: 
-      
-      Es ist in jedem Fall zu Protokollieren, wer an welchen Teilen wie mitgewirkt hat. Dieses Protokoll muss am Ende eingereicht werden. Ohne dieses Protokoll erfolgt keine Bewertung!
-
-      Das Protokoll wird jedoch nur zur Wertung herangezogen, wenn keine Gruppenbenotung gewünscht ist oder es Unstimmigkeiten gibt.
+Portfolioaufgabe
+-----------------
 
 
 
@@ -474,6 +831,7 @@ Anwendungsbeispiele
   .. card::
 
         .. raw:: html
+          :class: center-content
 
             <style>
                 #example-dashboard {
@@ -493,9 +851,9 @@ Anwendungsbeispiele
                 <iframe src="dashboard-prototype.html" width="600px" height="800px" frameborder="0"></iframe>
             </div>
 
-        .. container:: caption
+        .. container:: caption center-content
 
-          Beispiel eines Familien-Dashboards erzeugt mit Claude Code.
+          Beispiel eines Familien-Dashboards erzeugt mit Claude Code (Sonnet 4.5).
 
 
 
@@ -508,6 +866,8 @@ Anforderungen
 
   **Widget-System**
 
+  .. class:: list-with-sublists list-with-explanations
+
   - Implementierung eines modularen Widget-Systems mit mindestens 3 der folgenden Widgets:
 
     - Stundenplan (für Kinder und Au-Pairs) (MUSS)
@@ -517,7 +877,9 @@ Anforderungen
     - Notizen/Pinnwand
 
   - Widgets sollen hinzugefügt, entfernt und auf dem Dashboard positioniert werden können
-  - Jedes Widget muss individuell konfigurierbar sein (z.B. Datenquelle, Darstellungsoptionen)
+  - Jedes Widget muss individuell konfigurierbar sein 
+  
+    (z.B. Datenquelle, Darstellungsoptionen)
 
   **Rollenkonzept**
 
@@ -559,6 +921,7 @@ Anforderungen
     - Modulare Architektur ermöglicht einfaches Hinzufügen neuer Widgets
     - Klar definierte Schnittstellen zwischen Komponenten
     - Plugin-Architektur für Widget-Entwicklung wäre wünschenswert
+    - Widgets sollten Web-Komponenten oder Micro-Frontends (ggf. basierend auf Web-Komponenten) sein, um Wiederverwendbarkeit zu fördern
 
   - Technische Anforderungen
 
@@ -607,118 +970,128 @@ Anforderungen
 Bewertungskriterien für das Projekt
 ------------------------------------------------
 
-.. csv-table::
-    :width: 100%
-    :widths: 80 20
-    :stub-columns: 1
-    :class: table-data-align-right table-header-align-left
-    :header: Kategorie, max. 90 Punkte
+.. deck::
 
-    Code Reviews, max. 10
-    Abschlusspräsentation, max. 05
-    Vorführung, max. 20
-    Funktionsumfang, max. 15
-    Dokumentation (Entwickler und Benutzer), max. 9
-    Technische Qualität des Videos, max. 1    
-    "Qualität des Codes und der Tests (HTML, CSS und JavaScript)\ [#]_", max. 25
-    Qualität des Buildprozesses\ [#]_ , max. 05
+  .. card::
 
-Es ist ein Dokument einzureichen aus dem hervorgeht:
+    .. csv-table::
+        :width: 100%
+        :widths: 80 20
+        :stub-columns: 1
+        :class: table-data-align-right table-header-align-left dhbw
+        :header: Kategorie, max. 80 Punkte
 
-1. welche KI Tools wofür eingesetzt wurden. (*Fehlanzeige erforderlich!*)
-2. wer an welchem Teil mitgewirkt hat. (*Ohne dieses Dokument erfolgt keine Bewertung.*)
+        Architekturpräsentation, max. 05
+        Code Review, max. 10
+        Abschlusspräsentation, max. 05
+        Vorführung, max. 05
+        Funktionsumfang, max. 15
+        Dokumentation (Entwickler und Benutzer), max. 09
+        Technische Qualität des Videos, max. 01    
+        "Qualität des Codes (HTML, CSS und JavaScript)\ [#]_", max. 25
+        Qualität des Buildprozesses\ [#]_ , max. 05
 
-.. [#] Es ist neben dem Code auch ein kurzes Video 10 bis max. 15 Minuten einzureichen, dass in die Struktur und die Codebasis einführt. Dieses Video geht in die Benotung ein! Bitte nur im Notfall über Moodle bereitstellen.
-.. [#] Werden Tests ausgeführt und wird am Ende ein Container gebaut?
+    .. [#] Es ist neben dem Code auch ein kurzes Video 10 bis max. 15 Minuten einzureichen, dass in die Struktur und die Codebasis einführt. Dieses Video geht in die Benotung ein! Bitte nur im Notfall über Moodle bereitstellen.
+    .. [#] Wird am Ende ein/mehrere Container gebaut?
+
+  .. card:: 
+
+    .. important::
+
+      Es ist ein Dokument einzureichen aus dem hervorgeht:
+
+      1. welche KI Tools wofür eingesetzt wurden. (*Fehlanzeige erforderlich!*)
+      2. wer an welchem Teil mitgewirkt hat. (*Ohne dieses Dokument erfolgt keine Bewertung.*)
 
 
 
-Ablauf - W3WI-110 - Entwicklung verteilter Systeme 23SEB
+Projekt - Hinweise
+------------------------------------------
+
+- Ich werde Ihnen Konten auf einem Server bereitstellen, auf dem Sie Ihre Projekte hosten können. 
+- Das Projekt muss ein Buildscript enthalten, dass es erlaubt das Projekt auf einem standard Ubuntu Server mit einem einzigen Kommando zu bauen.
+- Es ist gewünscht, dass Sie Ihr Projekt mit einer expliziten Lizenz veröffentlichen, damit es ggf. auch über die Veranstaltung hinaus von anderen genutzt werden kann.
+
+
+
+Gruppennote für Projekt bei Wunsch
+-----------------------------------
+
+.. container:: accentuate
+
+    Das Projekt ist als Gruppenarbeit ausgelegt und alle Gruppenmitglieder können die gleiche Punktzahl erhalten, wenn dies gewünscht ist. 
+
+    .. important:: 
+      
+      Es ist in jedem Fall zu Protokollieren, wer an welchen Teilen wie mitgewirkt hat. Dieses Protokoll muss am Ende eingereicht werden. Ohne dieses Protokoll erfolgt keine Bewertung!
+
+      Das Protokoll wird jedoch nur zur Wertung herangezogen, wenn keine Gruppenbenotung gewünscht ist oder es Unstimmigkeiten gibt.
+
+
+
+
+Gruppenaufteilung
+-----------------------------------
+
+.. scrollable::
+
+  Das Projekt wird von Gruppen mit 4 Studierenden bearbeitet. (Sollte es nicht aufgehen, dann können auch Gruppen mit 3 oder 5 Studierenden gebildet werden.)
+
+  .. module:: group-assignment
+      :class: accentuate
+      :scope: slide
+      
+      {
+          "defaultNumberOfStudents": 25,
+          "defaultGroupSize": 4,
+          "defaultPreferSmallerGroups": false
+      }
+
+
+
+Ablauf - W3WI-110 - Entwicklung verteilter Systeme 24SEA
 ---------------------------------------------------------
 
 .. story::
 
-    .. rubric:: 1. Block
+  .. rubric:: Block 1
 
-    .. class:: incremental-list list-with-sublists
+  .. class:: incremental-1
 
-    - 20. Feb 2026 at 13:00 to 17:00
-    - 27. Feb 2026 at 13:00 to 17:00
-    - 6. Mar 2026 at 13:00 to 17:00
-    - 13. Mar 2026 at 13:00 to 17:00
-    - 20. Mar 2026 at 13:00 to 17:00
-    - 27. Mar 2026 at 13:00 to 17:00
-   
+  - \20. Feb 2026 von 13:00 bis 17:00 - Themenvergabe und Vorlesung 
+  - \27. Feb 2026 von 13:00 bis 17:00 - Vorlesung
+  - \06. Mar 2026 von 13:00 bis 17:00 - Vorträge (Web) 1. - 12. 
+  - \13. Mar 2026 von 13:00 bis 17:00 - Vorträge (Web) 13. - 25.
+  - \20. Mar 2026 von 13:00 bis 17:00 - Vorträge (Verteilte) 1. - 12.
+  - \27. Mar 2026 von 13:00 bis 17:00 - Vorträge (Verteilte) 13. - 25.
 
-    .. class:: incremental 
+  .. class:: incremental-2
 
-    .. rubric:: 2. Block  
+  .. rubric:: Block 2
 
-    .. class:: incremental-list list-with-sublists
+  .. class:: incremental-2
 
-    - 10. Apr 2026 at 13:00 to 17:00
-    - 14. Apr 2026 at 13:00 to 17:00
-    - 17. Apr 2026 at 13:00 to 17:00
-    - 20. Apr 2026 at 13:30 to 17:30
-    - 24. Apr 2026 at 13:00 to 17:00
-
-
-
-
-      - **Grundlagen der Virtualisierung** (Terminologie: z.B. Bare Metal Virtualisierung, Hypervisor Level..; Sicherheitsmodelle ggf. von CPU an.)- 2 Stud.
-      - **Virtualization Platforms** (Proxmox und Openstack) - 2 Stud.
-      - **Container Technologies** (Docker, Firecracker, Linux Containers (LXC)) - 2 Stud.
-      - **Container Orchestrators** (Kubernetes, Docker Swarm) - 2 Stud.
-
-    - Scheduled: 24. Jun 2025 at 13:15 to 17:30, CEST
-
-      .. class:: list-with-explanations
-
-      - **Web- and Distributed Application Testing** (Diskussion und Präsentation von Werkzeugen für das Frontend- und Backend Testing) - 4 Stud.
-
-        (Jeder Studierende soll sich sein eigenes Thema suchen! D. h. es werden danch im Prinzip vier Einzelvorträge gehalten.)
-      - **gRPC** `🔗 <https://grpc.io>`__ und **gRPC-web** `🔗 <https://github.com/grpc/grpc-web>`__
-        - 2 Stud.
-      - **Apache Thrift** `🔗 <https://thrift.apache.org/>`__ - 2 Stud.
-
-    - Scheduled: 30. Jun 2025 at 13:15 to 17:30, CEST
-
-      - **Grundlagen von outdoor/indoor Positionierungssystemen** (GPS) - 1 Stud.
-      - **Distributed Hash Tables** - 1 Stud.
-      - **Paxos** `🔗 <https://en.wikipedia.org/wiki/Paxos_(computer_science)>`__
-        - 2 Stud.
-      - **Raft Consensus Algorithm** `🔗 <https://raft.github.io>`__
-        - 2 Stud.
-      - **Gossip Protokoll** `🔗 <https://highscalability.com/gossip-protocol-explained/>`__
-        - 2 Stud.
-
-    - Scheduled: 4. Jul 2025 at 13:15 to 17:30, CEST
-
-      Gegenseitige Code Reviews und Präsentation der Ergebnisse der Code-Reviews.
-
-      (Jedes Team führt ein Review durch (45 Minuten) und wird auch einmal reviewed. Danach erstellen alle Teams einen Bericht über das Projekt, dass sie reviewed haben. Dafür stehen ca. 45 Minuten zur Verfügung. Die Berichte werden danach präsentiert (ca. 10 Minuten). Die Präsentation und die Berichte werden als Teil der Gruppenleistung bewertet.)
-
-    - Scheduled: 7. Jul 2025 at 13:15 to 17:30, CEST
-
-      Gruppenindividuelle Betreuung bei Fragen und Problemen bzgl. des Projekts.
-
-    - Scheduled: 11. Jul 2025 at 13:15 to 17:30, CEST
-
-      Abschlusspräsentationen (Vorstellung des Tools und Vorstellung wie die Komponenten genutzt werden kann - d. h. Code zeige) und Vorführung der Projekte.
-
-      .. TODO Anforderungen präzisieren!
-
-      Die Projektabgabe ist am 9.7.2025 um 23:59 Uhr.
+  - \10. Apr 2026 von 13:00 bis 17:00 - Präsentation des aktuellen Projektstands - insbesondere der grundlegenden Architektur (15 Minuten pro Gruppe)
+  - \14. Apr 2026 von 13:00 bis 17:00 - Code Reviews - allg. Einführung (ca. 45 Minuten); Zuteilung der Reviews; gegenseitige Einführung in den Code (2 * 45 Minutenb )
+  - \17. Apr 2026 von 13:00 bis 17:00 - Code Reviews - Präsentation der Ergebnisse
+  - \20. Apr 2026 von 13:30 bis 17:30 **ONLINE** - Besprechung der finalen Abgaben; gruppenindividuelle Betreuung
+  - *\23. Apr 2026 7:00 Uhr (Ereignis)* - Abgabe der Projektergebnisse (inkl. aller Dokumente, Videos, etc.) in Moodle
+  - \24. Apr 2026 von 13:00 bis 17:00 - Präsentation und Vorführung der Projekte
 
 
 
-Code Reviews - 4.7.2025
+Code Reviews
 ----------------------------
 
-1. Durchführung eines Code Reviews (Frontend, Backend, Buildscripte, Projektstruktur, Dokumentation,...) eines anderen Projektes (2 * 45 Minuten)
+:14. Apr 2026:
 
-   Die Code Reviews erfolgen in zwei Runden, damit jede Gruppe ein Review bekommmt; die Gruppen sollten sich aufteilen, damit alle Teile reviewt werden!
+  - jede Gruppe führt ein Code Review eines anderen Projektes durch 
 
+    (D. h. jede Gruppe führt eine andere Gruppe in ihr Projekt ein, damit die Reviewer die Codebasis verstehen und dann einen Bericht mit konstruktiven Vorschlägen erstellen können - dies geschieht im Nachgang. Die Zuteilung wird am 14. Apr 2026 bekannt gegeben.)
+
+  - alle Teile sollen einem Review unterzogen werden: Frontend, Backend, Buildscripte, Projektstruktur, Dokumentation, ...
+:16. Apr 2026 - 17:00: Abgabe der Code Review Berichte und Präsentation in Moodle; Übermittlung der Berichte an die jeweiligen Gruppen.
+:17. Apr 2026: Die *wichtigsten Ergebnisse werden präsentiert*; es können ggf. auch Erkenntnisse für das eigene Projekts dargestellt werden.
 
    .. presenter-note::
 
@@ -740,39 +1113,3 @@ Code Reviews - 4.7.2025
             5, 2
             6, 3
 
-3. Erstellung eines Reports, der konstruktive Vorschläge enthält (30-45 Minuten).
-
-4. Präsentation der Reports
-
-.. supplemental::
-
-    - Gruppe 1:	Planning Poker
-        Nico Wrede,
-        Max Meinel,
-        Okan Sönmez,
-        Johannes Kling
-    - Gruppe 2:	CoCreate
-        Ramona Korten,
-        Monika Pjano,
-        Paulina Klaus,
-        Lisa Molter
-    - Gruppe 3:	Chat App
-        Jonas Stammer,
-        Felix Erhard,
-        Luca Bäck,
-        Raphael Plett
-    - Gruppe 4:	Chat App
-        Iven Stahl,
-        Christian Zweigert,
-        Ibrahim Tikce,
-        Nils Teschke
-    - Gruppe 5:	Tool für Umfragen
-        Jonathan Wieder,
-        Mika Jun,
-        Leon Priemer,
-        Sergio Meli
-    - Gruppe 6:	Planning Poker
-        Tom Weber,
-        Tarnbir Singh,
-        Jan Müller,
-        Dilmand Sado
