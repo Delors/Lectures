@@ -18,7 +18,7 @@ Eine kurze Einführung, um das Entwickeln von kleinen Projekten zu erleichtern.
 
 :Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
 :Kontakt: michael.eichberg@dhbw.de, Raum 149B
-:Version: 1.0.1
+:Version: 1.0.2
 
 .. supplemental::
 
@@ -45,7 +45,7 @@ Eine kurze Einführung, um das Entwickeln von kleinen Projekten zu erleichtern.
 Implementierung einer einfachen Domänenklasse
 ------------------------------------------------
 
-.. container:: peripheral
+.. container:: section-subtitle
 
     Wiederholung etablierter Konzepte
 
@@ -66,15 +66,15 @@ Implementierung einer einfachen Domänenklasse
         2. :java:`String vorname`
         3. :java:`String nachname`
 
-        sowie geeigneten Konstruktoren und allen passenden get- und set-Methoden. Setzen Sie *Encapsulation* um.
+        sowie geeigneten Konstruktoren und allen passenden *get*- und *set*-Methoden. Setzen Sie strikte *Encapsulation* um.
 
-        2. Implementieren Sie weiterhin eine Methode :java:`public String toString()`, die den Eintrag in der Form "Vorname Nachname, Telefonnummer" zurückgibt.
+        2. Implementieren Sie weiterhin eine Methode :java:`public String toString()`, die den Eintrag in der Form „Vorname Nachname, Telefonnummer“ zurückgibt.
 
         3. Implementieren Sie eine Methode :java:`public boolean equals(Object obj)`, die zwei Einträge (d. h. zwei Objekte mit dem dynamischen Typ :java:`Telefonbucheintrag`) als gleich betrachtet, wenn die Telefonnummern gleich sind.
 
-           Prüfen Sie - durch das Studium der Dokumentation der Methode :java:`java.lang.Object.equals()` - ob Sie die Methode korrekt implementiert haben.
+           Prüfen Sie - durch das Studium der `Dokumentation <https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/Object.html#equals(java.lang.Object)>`__ der Methode :java:`java.lang.Object.equals()` - ob Sie die Methode korrekt implementiert haben.
 
-        4. Implementieren Sie eine Methode :java:`public int hashCode()`, die einen :java:`int` Wert zurückgibt und einen Eintrag halbwegs sinnvoll repräsentiert. Prüfen Sie ob Ihre Implementierung dem Kontrakt der Methode :java:`java.lang.Object.hashCode()` entspricht.
+        4. Implementieren Sie eine Methode :java:`public int hashCode()`, die einen :java:`int` Wert zurückgibt und einen Eintrag halbwegs sinnvoll repräsentiert. Prüfen Sie ob Ihre Implementierung dem `Kontrakt <https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/Object.html#hashCode()>`__ der Methode :java:`java.lang.Object.hashCode()` entspricht.
 
         5. Schreiben Sie ein Methode, die drei :java:`Telefonbucheintrag`-Objekte erzeugt. Zwei davon sollen die gleichen Inhalte haben. Prüfen Sie dann, ob die Methoden :java:`equals()` und :java:`hashCode()` korrekt implementiert sind.
 
@@ -118,7 +118,7 @@ Curtis' Gesetz
 
     -- [EndresRombach2003]_
 
-.. [#] Sinngemäß: “Ein guter Entwurf benötigt ein tiefgreifendes Verständnis des Einsatzgebiets der zu entwickelnden Software.”
+.. [#] Sinngemäß: „Ein guter Entwurf benötigt ein tiefgreifendes Verständnis des Einsatzgebiets der zu entwickelnden Software.“
 
 
 
@@ -238,8 +238,8 @@ Java Records - Überblick
 
 
 
-Beispiel: Implementierung einer Klasse 2DPoint
-------------------------------------------------
+Beispiel: Implementierung einer Klasse :java:`Point`
+-------------------------------------------------------
 
 .. deck::
 
@@ -424,11 +424,7 @@ Konstruktoren von Record Klassen
                 }
             }
 
-    - \
-
-      .. container:: accentuate
-
-        Der primäre Zweck von zusätzlichen Konstruktoren ist es, die Validierung oder Normalisierung der Attribute zu ermöglichen.
+    - Der primäre Zweck von zusätzlichen Konstruktoren ist es, die Validierung oder Normalisierung der Attribute zu ermöglichen.
 
 
 
@@ -485,7 +481,7 @@ Modellierung von Aufzählungen mit Java Enums
 
     .. card::
 
-        Eine Enum-Deklaration spezifiziert eine neue Enum-Klasse, eine eingeschränkte Art von Klasse, die eine kleine Menge von benannten Klasseninstanzen definiert.
+        Eine :java:`enum`-Deklaration spezifiziert eine neue Enum-Klasse, eine eingeschränkte Art von Klasse, die eine kleine Menge von benannten Klasseninstanzen definiert.
 
     .. card::
 
