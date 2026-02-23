@@ -42,9 +42,9 @@ Kontrollfragen
          .. solution:: 
             :pwd: DieDomäne 
 
-            - Kommunikationsgrundlage (ifizieren)
+            - Kommunikationsgrundlage
             - vertieftem Verständnis der Domäne
-            - Identifikation der relevanten KonzepteVokabular ident
+            - Identifikation der relevanten Konzepte/Vokabular identifizieren
             - Strukturierung der Konzepte
             - Definition der Beziehungen zwischen den Konzepten
             - Definition der Attribute der Konzepte
@@ -56,7 +56,7 @@ Kontrollfragen
          .. solution:: 
             :pwd: AttributOderKlasse
 
-            Die Attribute in einem Domänenmodell sollten vorzugsweise „primitive“ Datentypen in Bezug auf die Domäne sein. Sehr häufige Datentypen sind: Booleans, Datum, Zahl, Zeichen, String, Adresse, Farbe, Telefonnummer,..
+            Die Attribute in einem Domänenmodell sollten vorzugsweise „(konzeptionell) primitive“ Datentypen in Bezug auf die Domäne sein. Sehr häufige Datentypen sind: Booleans, Datum, Zahl, Zeichen, String, Adresse, Farbe, Telefonnummer,..
 
    .. card::
 
@@ -71,7 +71,7 @@ Kontrollfragen
 
 .. class:: new-section transition-scale
 
-Java :java:`record`\ s und :java:`enum`\ s
+Java :java:`record`\ s
 ---------------------------------------------
 
 
@@ -93,7 +93,7 @@ Kontrollfragen
 
             Ein :java:`record` ist eine spezielle Klasse, die unveränderliche Daten speichert.
 
-      .. exercise:: Von welcher Klassen erben alle Records?
+      .. exercise:: Von welcher Klasse erben alle Records?
          
          .. solution:: 
             :pwd: RekordErben
@@ -138,6 +138,21 @@ Kontrollfragen
 
             Der kanonische Konstruktor ist der Konstruktor, der die Parameter der Klasse als Parameter hat und die Werte initialisiert.
 
+
+
+.. class:: new-section transition-scale
+
+Java :java:`enum`\ s
+---------------------------------------------
+
+
+
+.. class:: exercises
+
+Kontrollfragen 
+-------------------------------------
+
+.. deck::
 
 
    .. card::
