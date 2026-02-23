@@ -17,7 +17,7 @@ Java Generics
 
 :Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
 :Kontakt: michael.eichberg@dhbw.de, Raum 149B
-:Version: 1.0.1
+:Version: 1.0.2
 
 .. supplemental::
 
@@ -193,6 +193,7 @@ Zusammenfassung
 - wir haben gesehen, dass die Verwendung von Datenstrukturen, die nichts über den Typ der gespeicherten Elemente wissen, zu Problemen führen kann (Fehler zur Laufzeit und nicht zur Compilezeit). Weiterhin sind viele explizite Typumwandlungen notwendig, die den Code unübersichtlich machen.
 
 
+
 .. class:: new-section transition-scale
 
 Generics - erste Einführung
@@ -220,7 +221,7 @@ Generics - Motivation
 
             - Zusätzlich wollen wir einen spezifischen Elementtyp garantiert haben.
 
-              Angenommen, wir nutzen eine Collection nur für Person Instanzen, dann wollen wir auch Person Objekte verwenden können und nicht immer mit "Object" arbeiten müssen.
+              Angenommen, wir nutzen eine Collection nur für ``Person`` Instanzen, dann wollen wir auch ``Person`` Objekte verwenden können und nicht immer mit ``Object`` arbeiten müssen.
 
     .. card::
 
@@ -347,7 +348,7 @@ Generics: Instanziierung
 
     Nutzen Sie dann die entsprechenden Typen :java:`U` und :java:`V` für die entsprechenden Attribute der Klasse und ggf. auch für Methodenparameter/-rückgabewerte und lokale Variablen.
 
-    Passen Sie auch die main Methode entsprechend an.
+    Passen Sie auch die :java:`main` Methode entsprechend an.
 
     .. solution::
         :pwd: UV-Pair-VU
@@ -399,7 +400,7 @@ Wrapper-Klassen und Auto(un)boxing
         - wir unterscheiden Werte und Referenzen
         - primitive Datentypen sind keine Referenztypen
 
-            Sie werden nicht von Object abgeleitet und besitzen keine Methoden.
+          Sie werden nicht von Object abgeleitet und besitzen keine Methoden.
 
     .. observation::
         :class: incremental
@@ -411,37 +412,45 @@ Wrapper-Klassen und Auto(un)boxing
 
         Wenn primitive Werte an Stellen verwendet werden, die eigentlich Objekte verlangen (z. B. Collections), dann werden automatisch die jeweiligen passenden Wrapperklassen verwendet; d. h. die primitiven Datentypen werden in Objekte umgewandelt und entsprechend behandelt:
 
-            ::
+        .. code:: java
 
-                int -> java.lang.Integer
-                float -> java.lang.Float
-                double -> java.lang.Double
-                char -> java.lang.Character
+                int     -> java.lang.Integer
+                float   -> java.lang.Float
+                double  -> java.lang.Double
+                char    -> java.lang.Character
                 boolean -> java.lang.Boolean
-                byte -> java.lang.Byte
-                short -> java.lang.Short
-                long -> java.lang.Long
+                byte    -> java.lang.Byte
+                short   -> java.lang.Short
+                long    -> java.lang.Long
 
-        .. warning::
-            :class: incremental margin-top-0-5em
+    .. warning::
+        :class: incremental
 
-            Dieses so genannten *Autoboxing* hat jedoch ggf. erhebliche Laufzeitkosten und sollte daher vermieden werden.
+        Dieses so genannten *Autoboxing* hat jedoch ggf. erhebliche Laufzeitkosten und sollte daher vermieden werden.
 
 
 
 Grundlegende Klassen des Collections Frameworks
 ------------------------------------------------
 
-.. image:: images/collections/collections.svg
-    :alt: Collections Framework - Übersicht
-    :align: right
+.. container:: scale-on-hover 
+
+    .. image:: images/collections/collections.svg
+        :alt: Collections Framework - Übersicht
+        :class: light-image
+
 
 .. class:: list-with-sublists
 
 - Das Hauptinterface ist :java:`java.util.Collection`
 
   - es definiert grundlegende Methoden für Sammlungen von Objekten.
-  - es definiert keine Restriktionen / Garantien bezüglich Duplikate / Ordnung / Sortierung, usw.
+  - es definiert keine Restriktionen / Garantien bezüglich:
+  
+    - Duplikate
+    - Ordnung
+    - Sortierung
+    - usw.
 
 - :java:`List` (hat die Implementierungen :java:`ArrayList`, :java:`LinkedList`, …)
 
@@ -459,10 +468,13 @@ Grundlegende Klassen des Collections Frameworks
   - Ein Set, aber geordnet bzgl. einer spezifischen Vergleichsstrategie.
 
 
+
 .. class:: new-subsection
 
 Collections für einen Typ von Werten
 ------------------------------------------------
+
+
 
 .. class:: no-title center-content
 
@@ -588,9 +600,11 @@ Im folgenden wird der Typ „K“ für den Typ des Schlüssels und der Typ "V" f
 
 .. story::
 
-    .. image:: images/collections/maps.svg
-        :alt: Collections Framework - Maps
-        :align: right
+    .. container:: scale-on-hover 
+
+        .. image:: images/collections/maps.svg
+            :alt: Collections Framework - Maps
+            :class: light-image
 
     Wenn Objekte nicht über einen numerischen Index, sondern über einen Schlüssel (einzigartiger, aber sonst zufälliger Wert) auffindbar sein sollen, z.B. eine Telefonnummer mit „Nachname + Vorname“.
 
@@ -711,6 +725,7 @@ Die Implementation von *Iterator*\ s ist ein Beispiel für die Umsetzung des *De
 .. image:: images/iterator.svg
     :alt: Iterator Design Pattern
     :align: center
+    :class: light-image
 
 .. supplemental::
 
@@ -1010,10 +1025,10 @@ Generische Methoden
 Statische Typisierung
 ------------------------------------------------
 
-- Statische Typsysteme sind (noch immer) Gegenstand der Forschung
-- Java-ähnliche Typsysteme sind begrenzt, aber im Allgemeinen können Typsysteme sehr mächtig und ausdrucksstark sein - aber auch sehr kompliziert
-- Manche Programmierer sehen statische Typsysteme als eine Begrenzung ihrer Freiheit (*„ich weiß, was ich tue“*)
-- Andere Programmierer denken, dass statische Typsysteme nicht nur viele Fehler erkennen, sondern auch eine gute Struktur im Code erzwingen (*„erst denken, dann schreiben“*)
+- Statische Typsysteme sind (noch immer) Gegenstand der Forschung.
+- Java-ähnliche Typsysteme sind begrenzt, aber im Allgemeinen können Typsysteme sehr mächtig und ausdrucksstark sein - aber auch sehr kompliziert.
+- Manche Programmierer sehen statische Typsysteme als eine Begrenzung ihrer Freiheit (*„ich weiß, was ich tue“*).
+- Andere Programmierer denken, dass statische Typsysteme nicht nur viele Fehler erkennen, sondern auch eine gute Struktur im Code erzwingen (*„erst denken, dann schreiben“*).
 - In der Praxis zeigt sich, dass fast alle großen Projekte auf statische Typsysteme setzen.
 
 
