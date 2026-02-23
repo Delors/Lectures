@@ -296,6 +296,16 @@ IT-Security Vorfälle
 
         .. epigraph::
 
+            **Google says attackers used 100,000+ prompts to try to clone AI chatbot Gemini**
+
+            Google says [...] Gemini has been inundated by “commercially motivated” actors who are trying to clone it by repeatedly prompting it [...] — including one campaign that prompted Gemini more than 100,000 times. [These] “distillation attacks,” [should] get a chatbot to reveal its inner workings. Google described the activity as “model extraction,” in which would-be copycats probe the system for the patterns and logic that make it work. [...]
+
+            -- `Feb. 12,2026 - NBC News <https://www.nbcnews.com/tech/security/google-gemini-hit-100000-prompts-cloning-attempt-rcna258657>`__
+
+    .. card::
+
+        .. epigraph::
+
             **GlassWorm: First Self-Propagating Worm Using Invisible Code Hits OpenVSX Marketplace**
 
             A month after Shai Hulud became the first self-propagating worm in the npm ecosystem, we just discovered the world's first worm targeting VS Code extensions on OpenVSX marketplace [*and also VS Code Marketplace later on*].
@@ -641,6 +651,7 @@ Kampf gegen Cyberkriminalität
             The operation disrupted a global attack infrastructure [...].
 
             -- `July 16th, 2025; HelpNet Security <https://www.helpnetsecurity.com/2025/07/16/pro-russian-cybercrime-crackdown-noname05716/>`__
+
 
 
 .. class:: new-section
@@ -1035,6 +1046,14 @@ Eigenschaften von Social-Engineering Angriffe
     .. rubric:: Beispiel eines fortgeschrittenen Social-Engineering Angriffs
 
     Ein vom Angreifer bewusst eingefädeltes Bewerbungsgespräch für eine Position als Administrator könnte zum Beispiel dazu genutzt werden, um Informationen über das Zielsystem zu erhalten, die für einen Angriff nützlich sind (z. B. welche Software wird eingesetzt, wie sieht die Architektur aus, ...). In diesem Fall ist davon auszugehen, dass ein Bewerber zum Beispiel durch ein Headhunter eine gutes Angebot gemacht wird und er dann im Rahmen des Gesprächs gebeten wird eine Sicherheitsarchitektur darzustellen, die er einführen würde. Es ist dann davon auszugehen, dass er auf seine bisherige Erfahrung zurückgreift und diese darstellt und er somit die Architektur des Zielsystems offenlegt.
+
+    .. epigraph::
+
+        **Fake job recruiters hide malware in developer coding challenges**
+
+        [Summary provided by `ACM TechNews Feb. 18, 2026 <https://technews.acm.org/archives.cfm?fo=2026-02-feb/feb-18-2026.html>`__:] Researchers at software supply-chain security firm ReversingLabs said North Korean hacking group *Lazarus* has rolled out a new version of its fake recruiter campaign, developing fake blockchain and crypto-trading companies and posting job offers on LinkedIn, Facebook, Reddit, and other platforms. The job offers target Python and JavaScript developers, who are asked to run, debug, and improve a given project to showcase their skills. The goal is to make them run the code, which installs and executes a remote access trojan on their computers.
+
+        -- `Feb. 13, 2026 - Bleepingcomuter <https://www.bleepingcomputer.com/news/security/fake-job-recruiters-hide-malware-in-developer-coding-challenges/>`__
 
     .. rubric:: Neue Gefahren
 
