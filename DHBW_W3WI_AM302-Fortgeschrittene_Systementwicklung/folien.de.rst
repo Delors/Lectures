@@ -745,17 +745,36 @@ Ablauf 2. Semester (Wann passiert was?)
 
 .. presenter-note::
 
-  Code Reviews
+  .. grid::
 
-  .. csv-table::
+    .. cell:: width-50
 
-    Team, "Reviewt Teams", "Wird reviewt von"
-    A, "B, C", "E, F"
-    B, "C, D", "A, F"
-    C, "D, E", "A, B"
-    D, "E, F", "B, C"
-    E, "F, A", "C, D"
-    F, "A, B", "D, E"
+      Code Reviews bei 6 Gruppen
+
+      .. csv-table::
+        :header: Team, "Reviewt Teams", "Wird reviewt von"
+
+        A, "B, C", "E, F"
+        B, "C, D", "A, F"
+        C, "D, E", "A, B"
+        D, "E, F", "B, C"
+        E, "F, A", "C, D"
+        F, "A, B", "D, E"
+
+    .. cell:: width-50
+
+      Code Reviews bei 7 Gruppen
+
+      .. csv-table::
+        :header: Team, "Reviewt Teams", "Wird reviewt von"
+
+        A, "B, C", "D, E"
+        B, "C, D", "E, F"
+        C, "D, E", "F, G"
+        D, "E, F", "A, G"
+        E, "F, G", "A, B"
+        F, "G, A", "B, C"
+        G, "A, B", "C, D"
 
 
 
