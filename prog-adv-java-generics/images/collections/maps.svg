@@ -33,7 +33,7 @@
           <rect x="385.5664" y="539" width="130" height="39.54553" fill="white"/>
           <rect x="385.5664" y="539" width="130" height="39.54553" stroke="#b9c0c1" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
           <text transform="translate(391.5664 549)" fill="#515556">
-            <tspan font-family="Victor Mono" font-size="14" font-style="italic" font-weight="700" fill="#515556" x="47.545455" y="14" xml:space="preserve">Map</tspan>
+            <tspan font-family="Noto Sans Display" font-size="14" font-style="italic" font-weight="700" fill="#515556" x="47.545455" y="14" xml:space="preserve">Map</tspan>
           </text>
         </g>
         <g id="Graphic_10" filter="url(#Shadow)">
@@ -41,7 +41,7 @@
           <rect x="385.5664" y="618.1953" width="130" height="39.54553" fill="white"/>
           <rect x="385.5664" y="618.1953" width="130" height="39.54553" stroke="#b9c0c1" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
           <text transform="translate(391.5664 628.1953)" fill="#515556">
-            <tspan font-family="Victor Mono" font-size="14" font-style="italic" font-weight="700" fill="#515556" x="24.636364" y="14" xml:space="preserve">SortedMap</tspan>
+            <tspan font-family="Noto Sans Display" font-size="14" font-style="italic" font-weight="700" fill="#515556" x="24.636364" y="14" xml:space="preserve">SortedMap</tspan>
           </text>
         </g>
         <g id="Line_11">
