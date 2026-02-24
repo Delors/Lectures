@@ -565,10 +565,12 @@ Thread Priorities
 Best Practices
 -----------------------------------------------------------
 
-.. class:: important incremental-list
+.. important::
 
-- :java:`synchronized` code should be kept as short as possible.
-- Nested monitor calls should be avoided as the outer lock is not released when the inner monitor is waiting. This can easily lead to a deadlock occurring.
+  .. class:: incremental-list
+
+  - :java:`synchronized` code should be kept as short as possible.
+  - Nested monitor calls should be avoided as the outer lock is not released when the inner monitor is waiting. This can easily lead to a deadlock occurring.
 
 
 
