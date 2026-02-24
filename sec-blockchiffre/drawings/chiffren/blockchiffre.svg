@@ -1,15 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no" ?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
     "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<!-- Default Fontsize: 28px -->
 <svg
     xmlns="http://www.w3.org/2000/svg"
     version="1.1"
     xmlns:xl="http://www.w3.org/1999/xlink"
     xmlns:dc="http://purl.org/dc/elements/1.1/"
     viewBox="-1 5 883 350"
-    width="883"
-    height="350"
+    width="1135"
+    height="450"
 >
 <style>
   @import url('/LectureDoc2/ext/fonts/ld-fonts.css');
@@ -89,7 +88,6 @@
       </g>
     </marker>
   </defs>
-  <metadata> Produced by OmniGraffle 8.0\n2025-05-13 15:32:17 +0000</metadata>
   <g
         id="blockchiffre"
         stroke-dasharray="none"
@@ -97,10 +95,12 @@
         stroke-opacity="1"
         fill="none"
         fill-opacity="1"
+        font-family="Noto Sans Display"
+        font-size="28"
+        font-weight="400"
     >
     <title>blockchiffre</title>
     <g id="blockchiffre_Layer_1">
-      <title>Layer 1</title>
       <g id="Graphic_71">
         <path
                     d="M 276.5 130.22571 L 411.03125 130.22571 C 419.3155 130.22571 426.03125 136.94144 426.03125 145.2257 L 426.03125 202.2257 C 426.03125 210.50998 419.3155 217.2257 411.03125 217.2257 L 276.5 217.2257 C 268.21573 217.2257 261.5 210.50998 261.5 202.2257 L 261.5 145.2257 C 261.5 136.94144 268.21573 130.22571 276.5 130.22571 Z"
@@ -117,22 +117,8 @@
                     transform="translate(266.5 135.7257)"
                     fill="#344463"
                 >
-          <tspan
-                        font-family="Noto Sans Display"
-                        font-size="28"
-                        font-weight="400"
-                        fill="#344463"
-                        x="13.635625"
-                        y="30"
-                    >Verschlüs-</tspan>
-          <tspan
-                        font-family="Noto Sans Display"
-                        font-size="28"
-                        font-weight="400"
-                        fill="#344463"
-                        x="6.761625"
-                        y="68"
-                    >selungsalg.</tspan>
+          <tspan x="13.635625" y="30">Verschlüs-</tspan>
+          <tspan x="6.761625" y="68">selungsalg.</tspan>
         </text>
       </g>
       <g id="Graphic_17" filter="url(#Shadow)">
@@ -148,14 +134,7 @@
                     stroke-width="1"
                 />
         <text transform="translate(713.5 265.2257)" fill="black">
-          <tspan
-                        font-family="Noto Sans Display"
-                        font-size="28"
-                        font-weight="400"
-                        fill="black"
-                        x="28.881625"
-                        y="30"
-                    >Klartext</tspan>
+          <tspan x="28.881625" y="30">Klartext</tspan>
         </text>
       </g>
       <g id="Graphic_33" filter="url(#Shadow)">
@@ -171,14 +150,7 @@
                     stroke-width="1"
                 />
         <text transform="translate(266.5 265.2257)" fill="black">
-          <tspan
-                        font-family="Noto Sans Display"
-                        font-size="28"
-                        font-weight="400"
-                        fill="black"
-                        x="4.969625"
-                        y="30"
-                    >Geheimtext</tspan>
+          <tspan x="4.969625" y="30">Geheimtext</tspan>
         </text>
       </g>
       <g id="Line_65">
@@ -232,56 +204,16 @@
       </g>
       <g id="Graphic_74">
         <text transform="translate(60 156.5)" fill="black">
-          <tspan
-                        font-family="Noto Sans Display"
-                        font-size="28"
-                        font-weight="400"
-                        fill="black"
-                        x="7.357625"
-                        y="30"
-                    >Schlüssel(</tspan>
-          <tspan
-                        font-family="Noto Sans Display"
-                        font-size="28"
-                        font-style="italic"
-                        font-weight="400"
-                        fill="black"
-                        y="30"
-                    >K</tspan>
-          <tspan
-                        font-family="Noto Sans Display"
-                        font-size="28"
-                        font-weight="400"
-                        fill="black"
-                        y="30"
-                    >)</tspan>
+          <tspan x="7.357625" y="30">Schlüssel(</tspan>
+          <tspan font-style="italic" y="30">K</tspan>
+          <tspan y="30">)</tspan>
         </text>
       </g>
       <g id="Graphic_75">
         <text transform="translate(497.5 156.5)" fill="black">
-          <tspan
-                        font-family="Noto Sans Display"
-                        font-size="28"
-                        font-weight="400"
-                        fill="black"
-                        x="7.357625"
-                        y="30"
-                    >Schlüssel(</tspan>
-          <tspan
-                        font-family="Noto Sans Display"
-                        font-size="28"
-                        font-style="italic"
-                        font-weight="400"
-                        fill="black"
-                        y="30"
-                    >K</tspan>
-          <tspan
-                        font-family="Noto Sans Display"
-                        font-size="28"
-                        font-weight="400"
-                        fill="black"
-                        y="30"
-                    >)</tspan>
+          <tspan x="7.357625" y="30">Schlüssel(</tspan>
+          <tspan font-style="italic" y="30">K</tspan>
+          <tspan y="30">)</tspan>
         </text>
       </g>
       <g id="Line_76">
@@ -323,14 +255,7 @@
                     stroke-width="1"
                 />
         <text transform="translate(266.5 48.22571)" fill="black">
-          <tspan
-                        font-family="Noto Sans Display"
-                        font-size="28"
-                        font-weight="400"
-                        fill="black"
-                        x="28.881625"
-                        y="30"
-                    >Klartext</tspan>
+          <tspan x="28.881625" y="30">Klartext</tspan>
         </text>
       </g>
       <g id="Graphic_79" filter="url(#Shadow)">
@@ -346,14 +271,7 @@
                     stroke-width="1"
                 />
         <text transform="translate(713.5 48.22571)" fill="black">
-          <tspan
-                        font-family="Noto Sans Display"
-                        font-size="28"
-                        font-weight="400"
-                        fill="black"
-                        x="4.969625"
-                        y="30"
-                    >Geheimtext</tspan>
+          <tspan x="4.969625" y="30">Geheimtext</tspan>
         </text>
       </g>
       <g id="Graphic_83">
@@ -372,22 +290,8 @@
                     transform="translate(713.5 135.7257)"
                     fill="#344463"
                 >
-          <tspan
-                        font-family="Noto Sans Display"
-                        font-size="28"
-                        font-weight="400"
-                        fill="#344463"
-                        x="13.915625"
-                        y="30"
-                    >Entschlüs-</tspan>
-          <tspan
-                        font-family="Noto Sans Display"
-                        font-size="28"
-                        font-weight="400"
-                        fill="#344463"
-                        x="6.761625"
-                        y="68"
-                    >selungsalg. </tspan>
+          <tspan x="13.915625" y="30">Entschlüs-</tspan>
+          <tspan x="6.761625" y="68">selungsalg. </tspan>
         </text>
       </g>
       <g id="Line_84">
@@ -405,14 +309,7 @@
       </g>
       <g id="Graphic_85">
         <text transform="translate(298.5 319.2257)" fill="#797979">
-          <tspan
-                        font-family="Noto Sans Display"
-                        font-size="23"
-                        font-weight="400"
-                        fill="#797979"
-                        x="17.148125"
-                        y="25"
-                    >b bits</tspan>
+          <tspan x="17.148125" y="25">b bits</tspan>
         </text>
       </g>
       <g id="Line_86">
@@ -431,14 +328,7 @@
       </g>
       <g id="Graphic_87">
         <text transform="translate(745.5 319.2257)" fill="#797979">
-          <tspan
-                        font-family="Noto Sans Display"
-                        font-size="23"
-                        font-weight="400"
-                        fill="#797979"
-                        x="17.148125"
-                        y="25"
-                    >b bits</tspan>
+          <tspan x="17.148125" y="25">b bits</tspan>
         </text>
       </g>
       <g id="Line_88">
@@ -457,14 +347,7 @@
       </g>
       <g id="Graphic_89">
         <text transform="translate(745.5 5)" fill="#797979">
-          <tspan
-                        font-family="Noto Sans Display"
-                        font-size="23"
-                        font-weight="400"
-                        fill="#797979"
-                        x="17.148125"
-                        y="25"
-                    >b bits</tspan>
+          <tspan x="17.148125" y="25">b bits</tspan>
         </text>
       </g>
       <g id="Line_90">
@@ -483,14 +366,7 @@
       </g>
       <g id="Graphic_91">
         <text transform="translate(298.5 5)" fill="#797979">
-          <tspan
-                        font-family="Noto Sans Display"
-                        font-size="23"
-                        font-weight="400"
-                        fill="#797979"
-                        x="17.148125"
-                        y="25"
-                    >b bits</tspan>
+          <tspan x="17.148125" y="25">b bits</tspan>
         </text>
       </g>
       <g id="Line_92">
@@ -509,14 +385,7 @@
       </g>
       <g id="Graphic_93">
         <text transform="translate(8 285.2257) rotate(-90)" fill="black">
-          <tspan
-                        font-family="Noto Sans Display"
-                        font-size="28"
-                        font-weight="400"
-                        fill="black"
-                        x="36.28"
-                        y="30"
-                    >Blockchiffre</tspan>
+          <tspan x="36.28" y="30">Blockchiffre</tspan>
         </text>
       </g>
       <g id="Line_94">

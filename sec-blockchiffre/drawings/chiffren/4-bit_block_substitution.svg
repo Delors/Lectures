@@ -8,8 +8,8 @@
     xmlns:xl="http://www.w3.org/1999/xlink"
     xmlns:dc="http://purl.org/dc/elements/1.1/"
     viewBox="17 24 756 518"
-    width="1134"
-    height="772"
+    width="1360"
+    height="932"
 >
 <style>
   @import url('/LectureDoc2/ext/fonts/ld-fonts.css');
@@ -37,7 +37,6 @@
       </g>
     </marker>
   </defs>
-  <metadata> Produced by OmniGraffle 8.0\n2025-05-13 15:32:17 +0000</metadata>
   <g
         id="4-bit_block_substitution"
         stroke-dasharray="none"
@@ -45,6 +44,9 @@
         stroke-opacity="1"
         fill="none"
         fill-opacity="1"
+    font-family="Noto Sans Display"
+    font-size="20"
+    font-weight="400"               
     >
     <title>4-bit_block_substitution</title>
     <rect fill="white" x="17" y="24" width="756" height="518" />
@@ -65,9 +67,6 @@
       <g id="Graphic_96">
         <text transform="translate(40.535694 92.1875)" fill="black">
           <tspan
-                        font-family="Noto Sans Display"
-                        font-size="20"
-                        font-weight="400"
                         fill="black"
                         x="8002488e-19"
                         y="21"
@@ -77,10 +76,6 @@
       <g id="Graphic_97">
         <text transform="translate(83.10865 92.1875)" fill="black">
           <tspan
-                        font-family="Noto Sans Display"
-                        font-size="20"
-                        font-weight="400"
-                        fill="black"
                         x="8002488e-19"
                         y="21"
                     >1</tspan>
@@ -89,10 +84,6 @@
       <g id="Graphic_98">
         <text transform="translate(125.6816 92.1875)" fill="black">
           <tspan
-                        font-family="Noto Sans Display"
-                        font-size="20"
-                        font-weight="400"
-                        fill="black"
                         x="8002488e-19"
                         y="21"
                     >2</tspan>
@@ -101,10 +92,6 @@
       <g id="Graphic_99">
         <text transform="translate(168.25456 92.1875)" fill="black">
           <tspan
-                        font-family="Noto Sans Display"
-                        font-size="20"
-                        font-weight="400"
-                        fill="black"
                         x="8002488e-19"
                         y="21"
                     >3</tspan>
@@ -113,10 +100,6 @@
       <g id="Graphic_100">
         <text transform="translate(210.8275 92.1875)" fill="black">
           <tspan
-                        font-family="Noto Sans Display"
-                        font-size="20"
-                        font-weight="400"
-                        fill="black"
                         x="8002488e-19"
                         y="21"
                     >4</tspan>
@@ -125,10 +108,6 @@
       <g id="Graphic_101">
         <text transform="translate(253.40046 92.1875)" fill="black">
           <tspan
-                        font-family="Noto Sans Display"
-                        font-size="20"
-                        font-weight="400"
-                        fill="black"
                         x="8002488e-19"
                         y="21"
                     >5</tspan>
@@ -137,10 +116,6 @@
       <g id="Graphic_102">
         <text transform="translate(295.9734 92.1875)" fill="black">
           <tspan
-                        font-family="Noto Sans Display"
-                        font-size="20"
-                        font-weight="400"
-                        fill="black"
                         x="8002488e-19"
                         y="21"
                     >6</tspan>
@@ -149,10 +124,6 @@
       <g id="Graphic_103">
         <text transform="translate(338.54637 92.1875)" fill="black">
           <tspan
-                        font-family="Noto Sans Display"
-                        font-size="20"
-                        font-weight="400"
-                        fill="black"
                         x="8002488e-19"
                         y="21"
                     >7</tspan>
@@ -161,10 +132,6 @@
       <g id="Graphic_104">
         <text transform="translate(381.11932 92.1875)" fill="black">
           <tspan
-                        font-family="Noto Sans Display"
-                        font-size="20"
-                        font-weight="400"
-                        fill="black"
                         x="8002488e-19"
                         y="21"
                     >8</tspan>
@@ -173,10 +140,6 @@
       <g id="Graphic_105">
         <text transform="translate(423.6923 92.1875)" fill="black">
           <tspan
-                        font-family="Noto Sans Display"
-                        font-size="20"
-                        font-weight="400"
-                        fill="black"
                         x="8002488e-19"
                         y="21"
                     >9</tspan>
@@ -185,10 +148,6 @@
       <g id="Graphic_106">
         <text transform="translate(465.39523 92.1875)" fill="black">
           <tspan
-                        font-family="Noto Sans Display"
-                        font-size="20"
-                        font-weight="400"
-                        fill="black"
                         x="0"
                         y="21"
                     >10</tspan>
@@ -197,10 +156,6 @@
       <g id="Graphic_107">
         <text transform="translate(516.9682 92.1875)" fill="black">
           <tspan
-                        font-family="Noto Sans Display"
-                        font-size="20"
-                        font-weight="400"
-                        fill="black"
                         x="0"
                         y="21"
                     >11</tspan>
@@ -209,10 +164,6 @@
       <g id="Graphic_108">
         <text transform="translate(568.54114 92.1875)" fill="black">
           <tspan
-                        font-family="Noto Sans Display"
-                        font-size="20"
-                        font-weight="400"
-                        fill="black"
                         x="0"
                         y="21"
                     >12</tspan>
@@ -221,10 +172,6 @@
       <g id="Graphic_109">
         <text transform="translate(620.1141 92.1875)" fill="black">
           <tspan
-                        font-family="Noto Sans Display"
-                        font-size="20"
-                        font-weight="400"
-                        fill="black"
                         x="0"
                         y="21"
                     >13</tspan>
@@ -233,10 +180,6 @@
       <g id="Graphic_110">
         <text transform="translate(671.68705 92.1875)" fill="black">
           <tspan
-                        font-family="Noto Sans Display"
-                        font-size="20"
-                        font-weight="400"
-                        fill="black"
                         x="0"
                         y="21"
                     >14</tspan>
@@ -245,10 +188,6 @@
       <g id="Graphic_111">
         <text transform="translate(723.26 92.1875)" fill="black">
           <tspan
-                        font-family="Noto Sans Display"
-                        font-size="20"
-                        font-weight="400"
-                        fill="black"
                         x="0"
                         y="21"
                     >15</tspan>
@@ -263,10 +202,6 @@
       <g id="Graphic_115">
         <text transform="translate(43.332847 445.90625)" fill="black">
           <tspan
-                        font-family="Noto Sans Display"
-                        font-size="20"
-                        font-weight="400"
-                        fill="black"
                         x="8002488e-19"
                         y="21"
                     >0</tspan>
@@ -275,10 +210,6 @@
       <g id="Graphic_116">
         <text transform="translate(85.9058 445.90625)" fill="black">
           <tspan
-                        font-family="Noto Sans Display"
-                        font-size="20"
-                        font-weight="400"
-                        fill="black"
                         x="8002488e-19"
                         y="21"
                     >1</tspan>
@@ -287,10 +218,6 @@
       <g id="Graphic_117">
         <text transform="translate(128.47875 445.90625)" fill="black">
           <tspan
-                        font-family="Noto Sans Display"
-                        font-size="20"
-                        font-weight="400"
-                        fill="black"
                         x="8002488e-19"
                         y="21"
                     >2</tspan>
@@ -299,10 +226,6 @@
       <g id="Graphic_118">
         <text transform="translate(171.0517 445.90625)" fill="black">
           <tspan
-                        font-family="Noto Sans Display"
-                        font-size="20"
-                        font-weight="400"
-                        fill="black"
                         x="8002488e-19"
                         y="21"
                     >3</tspan>
@@ -311,10 +234,6 @@
       <g id="Graphic_119">
         <text transform="translate(213.62466 445.90625)" fill="black">
           <tspan
-                        font-family="Noto Sans Display"
-                        font-size="20"
-                        font-weight="400"
-                        fill="black"
                         x="8002488e-19"
                         y="21"
                     >4</tspan>
@@ -323,10 +242,6 @@
       <g id="Graphic_120">
         <text transform="translate(256.19762 445.90625)" fill="black">
           <tspan
-                        font-family="Noto Sans Display"
-                        font-size="20"
-                        font-weight="400"
-                        fill="black"
                         x="8002488e-19"
                         y="21"
                     >5</tspan>
@@ -335,10 +250,6 @@
       <g id="Graphic_121">
         <text transform="translate(298.77057 445.90625)" fill="black">
           <tspan
-                        font-family="Noto Sans Display"
-                        font-size="20"
-                        font-weight="400"
-                        fill="black"
                         x="8002488e-19"
                         y="21"
                     >6</tspan>
@@ -347,10 +258,6 @@
       <g id="Graphic_122">
         <text transform="translate(341.34352 445.90625)" fill="black">
           <tspan
-                        font-family="Noto Sans Display"
-                        font-size="20"
-                        font-weight="400"
-                        fill="black"
                         x="8002488e-19"
                         y="21"
                     >7</tspan>
@@ -359,10 +266,6 @@
       <g id="Graphic_123">
         <text transform="translate(383.91648 445.90625)" fill="black">
           <tspan
-                        font-family="Noto Sans Display"
-                        font-size="20"
-                        font-weight="400"
-                        fill="black"
                         x="8002488e-19"
                         y="21"
                     >8</tspan>
@@ -371,10 +274,6 @@
       <g id="Graphic_124">
         <text transform="translate(426.48943 445.90625)" fill="black">
           <tspan
-                        font-family="Noto Sans Display"
-                        font-size="20"
-                        font-weight="400"
-                        fill="black"
                         x="8002488e-19"
                         y="21"
                     >9</tspan>
@@ -383,10 +282,6 @@
       <g id="Graphic_125">
         <text transform="translate(468.1924 445.90625)" fill="black">
           <tspan
-                        font-family="Noto Sans Display"
-                        font-size="20"
-                        font-weight="400"
-                        fill="black"
                         x="0"
                         y="21"
                     >10</tspan>
@@ -395,10 +290,6 @@
       <g id="Graphic_126">
         <text transform="translate(519.76534 445.90625)" fill="black">
           <tspan
-                        font-family="Noto Sans Display"
-                        font-size="20"
-                        font-weight="400"
-                        fill="black"
                         x="0"
                         y="21"
                     >11</tspan>
@@ -407,10 +298,6 @@
       <g id="Graphic_127">
         <text transform="translate(571.3383 445.90625)" fill="black">
           <tspan
-                        font-family="Noto Sans Display"
-                        font-size="20"
-                        font-weight="400"
-                        fill="black"
                         x="0"
                         y="21"
                     >12</tspan>
@@ -419,10 +306,6 @@
       <g id="Graphic_128">
         <text transform="translate(622.91125 445.90625)" fill="black">
           <tspan
-                        font-family="Noto Sans Display"
-                        font-size="20"
-                        font-weight="400"
-                        fill="black"
                         x="0"
                         y="21"
                     >13</tspan>
@@ -431,10 +314,6 @@
       <g id="Graphic_129">
         <text transform="translate(674.4842 445.90625)" fill="black">
           <tspan
-                        font-family="Noto Sans Display"
-                        font-size="20"
-                        font-weight="400"
-                        fill="black"
                         x="0"
                         y="21"
                     >14</tspan>
@@ -443,10 +322,6 @@
       <g id="Graphic_130">
         <text transform="translate(726.05715 445.90625)" fill="black">
           <tspan
-                        font-family="Noto Sans Display"
-                        font-size="20"
-                        font-weight="400"
-                        fill="black"
                         x="0"
                         y="21"
                     >15</tspan>
@@ -639,10 +514,6 @@
       <g id="Graphic_156">
         <text transform="translate(330.66648 24.240479)" fill="black">
           <tspan
-                        font-family="Noto Sans Display"
-                        font-size="20"
-                        font-weight="400"
-                        fill="black"
                         x="7958079e-19"
                         y="21"
                     >4-Bit Eingabe</tspan>
@@ -651,10 +522,6 @@
       <g id="Graphic_157">
         <text transform="translate(324.94648 515)" fill="black">
           <tspan
-                        font-family="Noto Sans Display"
-                        font-size="20"
-                        font-weight="400"
-                        fill="black"
                         x="0"
                         y="21"
                     >4-Bit Ausgabe</tspan>
