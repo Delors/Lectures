@@ -30,13 +30,14 @@ async function login() {
   jwt = responseJSON.token;
   console.log("Received JWT: " + jwt);
 
-  document.getElementById("login-dialog").close();
+  const d = document;
+  d.getElementById("login-dialog").close();
 
-  document
+  d
     .getElementsByTagName("main")[0]
-    .replaceChildren(document.getElementById("logged-in").content.cloneNode(true));
-  document.getElementById("enter-question-dialog").showModal();
-  document.getElementById("send-question").addEventListener("click", sendQuestion);
+    .replaceChildren(d.getElementById("logged-in").content.cloneNode(true));
+  d.getElementById("enter-question-dialog").showModal();
+  d.getElementById("send-question").addEventListener("click", sendQuestion);
 }
 
 async function sendQuestion() {

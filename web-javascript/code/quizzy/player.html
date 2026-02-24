@@ -9,7 +9,8 @@
             ws = new WebSocket(`${protocol}//${location.host}/player`);
         } catch (e) {
             alert("WebSocket connection failed: " + e);
-            document.getElementById("main").innerText = "WebSocket connection failed. Please check the server.";
+            const m = "WebSocket connection failed. Please check the server.";
+            document.getElementById("main").innerText = m;
         }
         ws.onmessage = (event) => {
             const data = JSON.parse(event.data);

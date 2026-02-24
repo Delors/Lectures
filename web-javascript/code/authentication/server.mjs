@@ -75,7 +75,8 @@ app.get("/admin/login", function (req, res) {
 app.post("/admin/question", verifyToken, function (req, res) {
   const userIndex = req.userIndex;
   const question = req.body;
-  console.log("Received question: " + question + " from user: " + users[userIndex].name);
+  const m = `The user: ${users[userIndex].name} asked: ${question} `;
+  console.log(m);
 
   res.status(200).send("Question stored. Preliminary answer: 42.");
 });

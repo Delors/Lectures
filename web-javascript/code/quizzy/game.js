@@ -19,7 +19,8 @@ function sendCurrentPlayers() {
             .filter(player => player.name)
             .map(player => { return { "id": player.id, "name": player.name } })
         console.log("Sending current players: " + JSON.stringify(allPlayers));
-        adminWS.send(JSON.stringify({ "type": "players", "players": allPlayers }));
+        const m = JSON.stringify({ "type": "players", "players": allPlayers });
+        adminWS.send(m);
     }
 }
 
@@ -120,7 +121,7 @@ app.ws('/player', function (ws, request) {
 
 app.ws('/admin', function (ws, req) {
     adminWS = ws;
-    sendCurrentPlayers(); // when admin registers her/himself, send current players
+    sendCurrentPlayers(); // on admin registration send current players
     ws.onmessage = function (event) {
         message = JSON.parse(event.data);
         switch (message.type) {
