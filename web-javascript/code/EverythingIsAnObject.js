@@ -23,7 +23,9 @@ const counterExpr = function () {
 
 const counterArrow = () => {
     console.log(this);
-    console.log(this === globalThis);
+    console.log(this === globalThis); // depends on the execution context: 
+                                      // Browser (non-strict):  true 
+                                      // Node.js:               false
     this.count = this.count ? this.count + 1 : 1;
     return this.count;
 };
