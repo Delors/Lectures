@@ -923,3 +923,34 @@ Teams
         "defaultGroupSize": 3,
         "defaultPreferSmallerGroups": true
     }
+
+
+Teamzuteilung
+-----------------------------------------
+
+.. csv-table::
+  :header: Vorname, Nachname, Team
+
+  Sally, Sarpong, vier-tastischen
+  Tim, Schwall, TwoAndAHalfMan
+  Dreni, Aliji, RDR3
+  Josef, Touma, PowerRanger
+  Nathanael, Wüst, NJE
+  David, Bergfeld, RDR3
+  Pavels, Luciks, Die3Musketiere
+  Elina, Wiese, TwoAndAHalfMan
+  Jannis, Pfeifer, NJE
+  Finn, Wagnitz, NJE
+  Issa, Gassama, vier-tastischen
+  Louis, Labitzke, RDR3
+  Nikola, Rehak, PowerRanger
+  Dario, Danielis, Die3Musketiere
+  Linda, Yuan, vier-tastischen
+  Benedikt, Geitner, vier-tastischen
+  Nils, Hillinger, Die3Musketiere
+  Louis, Poller, LogiBlock
+  Esra, Memis, LogiBlock
+  Nicolas, Müller, Die3Musketiere
+  Maximilian, Haßler, PowerRanger
+  Niko, Guba, PowerRanger
+  Marvin, Blank, TwoAndAHalfMan
