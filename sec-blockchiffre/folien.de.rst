@@ -21,10 +21,10 @@ Block Chiffre und der *Data Encryption Standard (DES)*
 
 :Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
 :Kontakt: michael.eichberg@dhbw.de
-:Version: 1.1.4
+:Version: 1.1.5
 
 .. class:: sources
-    
+
 :Quelle: *Cryptography and Network Security - Principles and Practice, 8th Edition, William Stallings*
 
 .. supplemental::
@@ -35,8 +35,7 @@ Block Chiffre und der *Data Encryption Standard (DES)*
 
     :Kontrollfragen: |Kontrollfragen|
 
-  :Fehler melden:
-      https://github.com/Delors/delors.github.io/issues
+    :Fehler melden: https://github.com/Delors/delors.github.io/issues
 
 
 
@@ -95,10 +94,11 @@ Stromchiffre vs. Blockchiffre
 
 .. image:: drawings/chiffren/stromchiffre.svg
     :align: left
+    :class: light-image
 
 .. image:: drawings/chiffren/blockchiffre.svg
     :align: right
-    :class: incremental
+    :class: light-image incremental
 
 
 
@@ -107,6 +107,7 @@ Allgemeine n-Bit-n-Bit-Blocksubstitution (n = 4)
 
 .. image:: drawings/chiffren/4-bit_block_substitution.svg
     :align: center
+    :class: light-image
 
 .. supplemental::
 
@@ -206,17 +207,13 @@ Feistel-Chiffre
 
 Feistel schlug die Verwendung einer Chiffre vor, bei der sich Substitutionen und Permutationen abwechseln.
 
-.. definition::
+.. definition:: Substitutionen
     :class: incremental
-
-    .. rubric:: Substitutionen
 
     Jedes Klartextelement oder jede Gruppe von Elementen wird eindeutig durch ein entsprechendes Chiffretextelement oder eine entsprechende Gruppe von Elementen ersetzt.
 
-.. definition::
+.. definition:: Permutation
     :class: incremental
-
-    .. rubric:: Permutation
 
     Bei einer Permutation werden keine Elemente hinzugefügt, gelöscht oder ersetzt, sondern die Reihenfolge, in der die Elemente in einer Folge erscheinen, wird geändert.
 
@@ -298,6 +295,7 @@ Feistel-Chiffre - Verschlüsselung und Entschlüsselung
 
         .. image:: drawings/feistel/design.svg
             :align: center
+            :class: light-image
 
 .. supplemental::
 
@@ -309,13 +307,15 @@ Feistel-Chiffre - Verschlüsselung und Entschlüsselung
 
     .. image:: drawings/feistel/one_round_and_swap.svg
         :align: center
+        :class: light-image
 
     Wird der Swap am Ende nicht durchgeführt, würde die Entschlüsselung nicht funktionieren, wie am folgenden Beispiel mit nur einer Runde zu sehen ist:
 
     .. image:: drawings/feistel/one_round_no_swap.svg
         :align: center
+        :class: light-image
 
-    Ein alternatives Design wäre es beim Verschlüsseln auf den finalen Tausch zu verzichten und stattdessen beim Entschlüsseln initial einen Tausch durchzuführen — zusätzlich zum finalen Tausch. Dieses Design wird jedoch nicht verwendet, da es die Implementierung komplizierter macht.
+    Ein alternatives Design wäre es, beim Verschlüsseln auf den finalen Tausch zu verzichten und stattdessen beim Entschlüsseln initial einen Tausch durchzuführen — zusätzlich zum finalen Tausch. Dieses Design wird jedoch nicht verwendet, da es die Implementierung komplizierter macht.
 
 
 
@@ -324,6 +324,7 @@ Feistel Chiffre - Beispiel
 
 .. image:: drawings/feistel/example.svg
     :align: center
+    :class: light-image
 
 .. remember::
 
@@ -395,6 +396,7 @@ DES: Design
 
 .. image:: drawings/des/design.svg
     :align: center
+    :class: light-image
 
 .. supplemental::
 
@@ -471,6 +473,7 @@ DES: Rundenfunktion („F“)
 
 .. image:: drawings/des/round_function.svg
     :align: left
+    :class: light-image
 
 .. supplemental::
 
@@ -547,7 +550,7 @@ Lawineneffekt in DES
 Kleine Änderung im Klartext (erster Wert +1)
 
 .. csv-table::
-    :class: font-size-80 monospaced compact highlight-row-on-hover
+    :class: font-size-75 monospaced compact highlight-row-on-hover
     :width: 100%
     :header: Round, , δ, , Round, , δ
 
@@ -587,7 +590,7 @@ Lawineneffekt in DES
 Kleine Änderung des Schlüssels: :monospaced:`0f1571c947d9e859` ➟ :monospaced:`1f1571c947d9e859`
 
 .. csv-table::
-    :class: font-size-80 monospaced compact highlight-row-on-hover
+    :class: font-size-75 monospaced compact highlight-row-on-hover
     :width: 100%
     :header: Round, , "δ", , Round, , δ
 
@@ -633,7 +636,7 @@ Erschöpfende Schlüsselsuche
         10⁹ = eine Milliarde; 10¹³ = 10 Billionen; 10⁶⁰ = 1 Dezillion
 
 .. csv-table::
-    :class: highlight-row-on-hover font-size-80 incremental-table-rows
+    :class: highlight-row-on-hover font-size-80 incremental-table-rows dhbw
     :align: center
     :widths: 10 9 12 18 18
     :header-rows: 1
@@ -674,24 +677,24 @@ Entwurfsprinzipien für Blockchiffren - Anzahl der Runden
 
 
 
-Entwurfsprinzipien für Blockchiffren - Funktion F
------------------------------------------------------
+Entwurfsprinzipien für Blockchiffren - Funktion ``F``
+-------------------------------------------------------
 
 .. class:: incremental-list
 
-- Das Herzstück einer Feistel-Blockchiffre ist die Funktion F.
-- Je nichtlinearer F ist, desto schwieriger wird jede Art von Kryptoanalyse sein.
+- Das Herzstück einer Feistel-Blockchiffre ist die Funktion ``F``.
+- Je nichtlinearer ``F`` ist, desto schwieriger wird jede Art von Kryptoanalyse sein.
 - Der Algorithmus sollte einen großen Lawineneffekt (:eng:`Avalanche-Property`) haben.
 
-.. admonition:: Strict Avalanche Criterion (SAC)
+.. definition:: Strict Avalanche Criterion (SAC)
     :class: incremental
 
-    Besagt, dass sich jedes Ausgangsbit j einer S-Box mit der Wahrscheinlichkeit 1/2 ändern sollte, wenn ein einzelnes Eingangsbit i invertiert wird und dies für alle Paare i,j gelten muss.
+    Besagt, dass sich jedes Ausgangsbit ``j`` einer S-Box mit der Wahrscheinlichkeit 1/2 ändern sollte, wenn ein einzelnes Eingangsbit ``i`` invertiert wird und dies für alle Paare ``i``, ``j`` gelten muss.
 
-.. admonition:: Bit Independence Criterion (BIC)
+.. definition:: Bit Independence Criterion (BIC)
     :class: incremental
 
-    Besagt, dass sich die Ausgangsbits j und k unabhängig voneinander ändern sollten, wenn ein einzelnes Eingangsbit i invertiert wird und dies für alle i, j und k gelten muss.
+    Besagt, dass sich die Ausgangsbits ``j`` und ``k`` unabhängig voneinander ändern sollten, wenn ein einzelnes Eingangsbit ``i`` invertiert wird und dies für alle ``i``, ``j`` und ``k`` gelten muss.
 
 .. class:: incremental
 
@@ -723,6 +726,7 @@ Doppelte Verschlüsselung
 .. image::
     drawings/multiple_encryption/double_encryption.svg
     :align: center
+    :class: light-image
 
 
 
@@ -778,6 +782,7 @@ Dreifache Verschlüsselung
 
 .. image:: drawings/multiple_encryption/triple_encryption.svg
     :align: center
+    :class: light-image
 
 
 
