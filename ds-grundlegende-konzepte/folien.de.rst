@@ -16,7 +16,7 @@ Grundlegende Konzepte verteilter Systeme
 
 :Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
 :Kontakt: michael.eichberg@dhbw.de
-:Version: 1.0.2
+:Version: 1.0.3
 
 .. supplemental::
 
@@ -28,6 +28,7 @@ Grundlegende Konzepte verteilter Systeme
   :Fehler melden:
 
       https://github.com/Delors/delors.github.io/issues
+
 
 
 .. class:: center-content
@@ -78,12 +79,6 @@ Verteilte Systeme: Reale vs. logische Zeit
 
   .. card::
 
-    .. rubric:: Logische Zeit
-
-    Die logische Zeit ermöglicht es uns, eine wohldefinierte Reihenfolge zwischen Ereignissen (vgl. :eng:`happened before` Relation) zu bestimmen. *Häufig* ist dies für verteilte Systeme ausreichend.
-
-  .. card::
-
     .. rubric:: Reale Zeit
 
     :Sonnensekunde: bezieht sich auf die Zeitspanne zwischen aufeinanderfolgenden Sonnenhöchstständen.
@@ -93,12 +88,20 @@ Verteilte Systeme: Reale vs. logische Zeit
     :Atomzeitsekunde:
       Bezugspunkt ist die Schwingungsdauer eines Cäsium-133-Atoms.
 
-      TAI (Temps Atomique International): Durchschnittszeit der Atomuhren von über 60 Instituten weltweit (z. B. Braunschweig), ermittelt vom BIH (Bureau International de l’Heure) in Paris
+      TAI (Temps Atomique International): Durchschnittszeit der Atomuhren von über 60 Instituten weltweit (z. B. Braunschweig), ermittelt vom BIH (Bureau International de l’Heure) in Paris.
 
     .. class:: incremental
 
     :UTC (Universal Coordinated Time):
       Basiert auf TAI; aktuell ist noch das Einfügen gelegentlicher Schaltsekunden zur Anpassung an den Sonnentag erforderlich. Ab 2035 wird die Schaltsekunde voraussichtlich abgeschafft.
+
+  .. card::
+
+    .. rubric:: Logische Zeit
+
+    Die logische Zeit ermöglicht es uns, eine wohldefinierte Reihenfolge zwischen Ereignissen (vgl. :eng:`happened before` Relation) zu bestimmen. *Häufig* ist dies für verteilte Systeme ausreichend.
+
+
 
 
 
@@ -121,7 +124,7 @@ Uhrensynchronisation nach Christian
 :peripheral:`(Probabilistic Clock Synchronisation, 1989)`
 
 - Voraussetzung: zentraler Zeitserver mit UTC.
-- Clients fragen periodisch nach und korrigieren um halbe Antwortzeit
+- Clients fragen periodisch nach und korrigieren um halbe Antwortzeit.
 - Client-Uhren werden niemals zurückgesetzt sondern ggf. nur verlangsamt bzw. beschleunigt.
 
 
@@ -206,7 +209,7 @@ Beispiel zur Berechnung des Gangunterschieds
 
   Sei die Latenz 5 ms und die Bearbeitungszeit 2 ms.
 
-  Weiterhin sei :math:`T_1 = 110` und :math:`T_2 = 100`. D. h. der Client geht vor.
+  Weiterhin sei :math:`T_1 = 110` und :math:`T_2 = 100`. D. h. der Client geht offensichtlich vor.
 
 .. container:: incremental margin-top-2em
 
@@ -214,7 +217,7 @@ Beispiel zur Berechnung des Gangunterschieds
 
   :math:`T_3 = 102` und
 
-  :math:`T_4 = 110+(2 \times 5) +2 =  122`.
+  :math:`T_4 = 110+(2 \times 5) +2 = 122`.
 
 .. container:: incremental margin-top-2em
 
@@ -252,9 +255,9 @@ Lamport-Uhren (*logical clocks*)
 
 .. rubric:: Vorgehensweise
 
-- vor *write* und *send*: erhöhen der lokalen Zeit :math:`T_{local} = T_{local} + 1`
-- *send* immer inklusive Zeitstempel: :math:`T_{msg} = T_{local}`
-- vor *receive*: :math:`T_{local} = max(T_{msg}, T_{local}) + 1`
+:vor *write* und *send*: erhöhen der lokalen Zeit T\ `local`:sub: = T\ `local`:sub: + 1  
+:*send* immer inklusive Zeitstempel: T\ `msg`:sub: = T\ `local`:sub: 
+:vor *receive*: T\ `local`:sub: = max(T\ `local`:sub:,T\ `local`:sub:) + 1 
 
 .. container:: incremental
 
@@ -292,6 +295,7 @@ Lamport-Uhren (*logical clocks*)
 
     .. image:: drawings/lamport-exercise/task.svg
       :align: center
+      :class: light-image
 
     .. solution::
       :pwd: ReplikationVoraus.
@@ -300,7 +304,7 @@ Lamport-Uhren (*logical clocks*)
 
       .. image:: drawings/lamport-exercise/solution.svg
           :align: center
-          :class: box-shadow rounded-corners
+          :class: light-image
 
       (b)
 
@@ -338,7 +342,7 @@ Verteilte Transaktionen
         Abort_Transaction();
     } }
 
-.. container:: framed incremental
+.. container:: accentuate incremental
 
   Wir brauchen ein *Atomic Commit Protocol*.
 
@@ -402,12 +406,7 @@ In **verteilten** (*Datenbank-*)\ *Systemen* können nur zwei der drei folgenden
 
 .. grid::
 
-  .. grid::
-
-    .. image:: drawings/cap.svg
-      :align: center
-
-  .. grid::  incremental
+  .. cell:: incremental
 
     .. class:: list-with-explanations
 
@@ -421,6 +420,11 @@ In **verteilten** (*Datenbank-*)\ *Systemen* können nur zwei der drei folgenden
 
       (Das System funktioniert auch bei Netzwerkpartitionierungen; d.h. Knoten können nicht mehr miteinander kommunizieren.)
 
+  .. cell:: 
+
+    .. image:: drawings/cap.svg
+      :align: center
+      :class: light-image
 
 .. [#] 2000 Brewer(Vermutung), 2002 Gilbert und Lynch(Beweis)
 
