@@ -558,10 +558,12 @@ Thread Prioritäten
 Best Practices
 -----------------------------------------------------------
 
-.. class:: important incremental-list
+.. important::
 
-- :java:`synchronized` Code sollte so kurz wie möglich gehalten werden.
-- Verschachtelte Monitoraufrufe sollten vermieden werden, da die äußere Sperre nicht freigegeben wird, wenn der innere Monitor wartet. Dies kann leicht zum Auftreten eines Deadlocks führen.
+  .. class:: incremental-list
+
+  - :java:`synchronized` Code sollte so kurz wie möglich gehalten werden.
+  - Verschachtelte Monitoraufrufe sollten vermieden werden, da die äußere Sperre nicht freigegeben wird, wenn der innere Monitor wartet. Dies kann leicht zum Auftreten eines Deadlocks führen.
 
 
 

@@ -33,7 +33,7 @@ Aspekte der Projektdurchführung
 
 Aspekte, die im Rahmen der Durchführung des Lehrprojektes von besonderer Bedeutung sind:
 
-.. class:: important pop-out-list-item-on-hover
+.. class:: pop-out-list-item-on-hover
 
 - `Risikomanagement`_
 - `Architektur`_
