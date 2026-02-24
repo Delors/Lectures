@@ -1,6 +1,6 @@
 .. meta::
     :author: Michael Eichberg
-    :keywords: Zufälligkeit, Stromchiffre
+    :keywords: Zufälligkeit, Stromchiffre, ChaCha20
     :description lang=en: Random Bit Generation and Stream Ciphers
     :description lang=de: Zufallszahlengenerierung und Stromchiffren
     :id: lecture-security-stromchiffren
@@ -16,7 +16,7 @@ Erzeugung von Zufallsbits und Stromchiffren
 
 :Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
 :Kontakt: michael.eichberg@dhbw.de
-:Version: 2.4.2
+:Version: 2.4.3
 
 .. class:: sources
 
@@ -640,7 +640,7 @@ Quellen der Entropie
             :class: incremental
 
             Es gibt *Vermutungen*, dass diese Funktionen absichtlich kompromitiert wurden.
-            
+
             `FreeBSD <https://www.theregister.com/2013/12/09/freebsd_abandoning_hardware_randomness/>`_ hat 2013 die Verwendung wieder eingestellt. Linux nutzt diese nur ergänzend.
 
 
@@ -714,7 +714,7 @@ Shannon Entropie
 - Entropie:
 
   :math:`H = -\sum_{i=1}^{n} p_i \cdot \log_2(p_i)`
-  
+
   normalisiert auf [0,1]: :math:`H_{\text{norm}} = \frac{H_{\text{beobachtet}}}{H_{\text{max}}} =  \frac{H}{\log_2(\# \text{distinct symbols})}`
 
   :math:`p_i` ist die empirische Wahrscheinlichkeit des Symbols :math-i:`i` berechnet als :math:`\frac{f_i}{n}` wobei :math:`f_i` die Häufigkeit des Symbols :math-i:`i` ist und :math:`n` die Gesamtanzahl der Symbole(/Länge der Daten) ist.
@@ -1281,7 +1281,7 @@ Die ChaCha20 Blockfunktion
 
         Die grundlegenden Operationen der CHACHA Chiffre sind die Quater-Round Operationen, die alle gleich aufgebaut sind und aus einer Addition modulo 2³², einem XOR und einer Bit-Rotation bestehen. Zum Beispiel: :code:`a += b; d ^= a; d <<<= 16;`.
 
-        Die Addition modulo 2³² ist nicht linear (mod 2³²) und deswegen schwer rückrechenbar (Beispiel mit mod 2⁴: 1010 + 0110 = 0000 aber auch 1000 + 1000 = 0000 etc. und somit nicht-linear) . Sie dient der Konfusion.
+        Die Addition modulo 2³² ist nicht linear über GF(2), da die Carry-Bits (Ein Carry-Bit ist ein Übertrag, der entsteht, wenn bei der Addition zweier Bits „1 + 1“ gerechnet wird. Dieses zusätzliche Bit beeinflusst das nächsthöhere Bit und sorgt dafür, dass sich Änderungen in einem Bit auf andere Bits auswirken.) zu Bitabhängigkeiten führen. Sie dient der Konfusion. (Beispiel mit mod 2⁴: 1010 + 0110 = 0000 aber auch 1000 + 1000 = 0000 etc. und somit nicht-linear).
 
         XOR ist im Prinzip eine lineare Operation, die in Kombination mit der modularen Addition (Schritt davor) auch zur Diffusion beiträgt. Die Kombination mit der vorhergehenden Operation ist hier entscheidend und somit trägt das XOR sowohl zur Konfusion als auch Diffusion bei.
 
