@@ -10,7 +10,7 @@ lib/timeline/timeline.css
 
 
 code/Variables_const_let.mjs
-code/Datatypes.js
+code/Datatypes.mjs
 code/Functions_basics.js
 code/ComparingValues.mjs
 code/LoopsAndConditions.mjs
