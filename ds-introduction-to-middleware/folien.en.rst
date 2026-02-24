@@ -18,7 +18,7 @@ A Brief Introduction to Middleware
 
   :Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
   :Kontakt: michael.eichberg@dhbw.de, Raum 149B
-  :Version: 1.0
+  :Version: 1.0.1
 
 .. supplemental::
 
@@ -38,12 +38,12 @@ Middleware - Basics
 
 
 
-Was ist Middleware?
+What is Middleware?
 -----------------------
 
-.. definition::
+.. definition:: Middleware
 
-    Middleware is a class of software technologies that serve two purposes,
+    A class of software technologies that serve two purposes:
 
     (I) reduce the complexity and
 
@@ -61,6 +61,7 @@ Middleware as a Programming Abstraction
         .. image:: drawings/middleware.svg
             :align: center
             :alt: Positioning of Middleware
+            :class: light-image
 
     .. card::
 
@@ -153,14 +154,14 @@ Middleware as Infrastructure
 
 
 
-Middleware - Conceptional (historic)\ [#]_
+Middleware - Conceptual Overview (historic)\ [#]_
 -----------------------------------------------------
 
 .. image:: drawings/middleware-conceptual.svg
   :align: center
+  :class: light-image
 
 .. [#] Based on: Alonso; Web services: Concepts, Architectures and Applications; Springer, 2004
-
 
 .. supplemental::
 
@@ -205,6 +206,7 @@ Remote Procedure Call (RPC)
     - Bridging the conceptual gap between calling local functionality via procedures and calling remote functionality via sockets.
 
 
+
 RPCs Conceptual (synchronous Communication)
 ------------------------------------------------
 
@@ -223,6 +225,7 @@ RPCs Conceptual (synchronous Communication)
   .. cell:: width-40
 
     .. image:: drawings/rpc_conceptual.svg
+      :class: light-image
 
 
 
@@ -276,7 +279,7 @@ RPCs - Key Issues and Challenges
 High-level View at RPC
 ---------------------------
 
-.. container:: framed
+.. observation::
 
     For programmers, a "remote" procedure call looks and works almost identically to a "local" procedure call - this is how transparency is achieved.
 
@@ -369,13 +372,14 @@ Classic Web Services and SOAP
 ----------------------------------
 
 
-Integration von Unternehmensanwendungen\ [#]_
+Integration of Business Applications\ [#]_
 -----------------------------------------------
 
 The problems of enabling cross-company point-to-point integration led to the development of the next generation of middleware technologies.
 
 .. image:: drawings/web_services-and-message_brokers.svg
    :align: center
+   :class: light-image
 
 .. [#] Based on *Web Services - Concepts, Architectures and Applications; Alonso et al.; Springer 2004*
 
@@ -402,6 +406,7 @@ Web Services - Protocol Stack
 
 .. image:: drawings/ws-protocol_stack.svg
   :align: center
+  :class: light-image
 
 
 
@@ -435,7 +440,7 @@ Structure of a SOAP message
 
     .. image:: drawings/soap_message.svg
         :align: center
-
+        :class: light-image
 
   .. cell:: width-60 dd-margin-left-2em
 
@@ -471,6 +476,7 @@ Example of a SOAP-Message
     </SOAP-ENV:Body>
 
   </SOAP-ENV:Envelope>
+
 
 
 Example of a SOAP-Request
@@ -531,12 +537,14 @@ Web Services - Standardization
     .. image:: screenshots/ws_standards.webp
       :width: 600
       :align: right
+      :class: light-image
 
   .. card:: overlay
 
     .. image:: screenshots/ws_standards_w3c.webp
       :width: 900
       :align: left
+      :class: light-image
 
 
 
@@ -547,6 +555,7 @@ Overview
 
 .. image:: drawings/genealogy-of-middleware.svg
    :align: center
+   :class: light-image
 
 
 
@@ -585,15 +594,15 @@ ZeroMQ - Messaging Patterns
 
     .. image:: drawings/zeromq/client-server.svg
       :align: center
-      :class: framed
+      :class: light-image
 
     .. image:: drawings/zeromq/pub-sub.svg
       :align: center
-      :class: framed
+      :class: light-image
 
     .. image:: drawings/zeromq/pipeline.svg
       :align: center
-      :class: framed
+      :class: light-image
 
 .. supplemental::
 
@@ -735,8 +744,9 @@ MOM - Basic Interface
 --------------------------------
 
 .. csv-table::
-   :header: "Operation", "Beschreibung"
+   :header: "Operation", "Description"
    :class: highlight-row-on-hover booktabs
+   :widths: 15, 85
 
    PUT, "Places a message in a specific queue."
    GET, "Blocks at a specific queue until a message is available. Removes the first message."
@@ -751,6 +761,7 @@ MOM - Queue Managers
 .. image:: drawings/message-queueing.svg
     :align: center
     :alt: Interaction between Queue Managers
+    :class: light-image
 
 .. supplemental::
 
