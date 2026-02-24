@@ -7,7 +7,7 @@
             function makeScriptsEditable() {
                 const scripts = document.getElementsByTagName("script");
                 for (const scriptElement of scripts) {
-                    scriptElement.contentEditable = false;
+                    scriptElement.contentEditable = true;
                     const style = scriptElement.style;
                     style.display = "block";
                     style.fontFamily = "menlo, monospaced";
@@ -32,10 +32,10 @@
         </button>
 
         <script>
-            const demoElement = document.getElementById("demo");
-            const style = demoElement.style;
-            demoElement.addEventListener("mouseover", () => (style.color = "green"));
-            demoElement.addEventListener("mouseout", () => (style.color = "unset"));
+            const e = document.getElementById("demo");
+            const style = e.style;
+            e.addEventListener("mouseover", () => (style.color = "green"));
+            e.addEventListener("mouseout", () => (style.color = "unset"));
         </script>
 
         <p>Position der Mouse: <span id="position"></span></p>

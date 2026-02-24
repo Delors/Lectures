@@ -36,7 +36,7 @@ Historie
 ------------------------------------------------
 
 .. module:: timeline
-   :class: s-font-size-90 align-center
+   :class: s-font-size-90 d-font-size-80 align-center light-image
 
    {
     "class" : "JavaScript-Timeline",
@@ -115,9 +115,9 @@ Reservierte Schlüsselworte
 .. remark::
    :class: incremental
 
-   Nicht (mehr) genutzte Schlüsselworte:
-
-   :javascript:`enum`, :javascript:`implements`, :javascript:`interface`, :javascript:`package`, :javascript:`private`, :javascript:`protected`, :javascript:`public`, :javascript:`with` (nicht mehr verwendet)
+   Nicht genutzte Schlüsselworte: :javascript:`enum`, :javascript:`implements`, :javascript:`interface`, :javascript:`package`, :javascript:`private`, :javascript:`protected`, :javascript:`public`
+   
+   Nicht mehr verwendet: :javascript:`with` 
 
 
 
@@ -177,9 +177,7 @@ ________________________________________________________________________________
 `Deklaration von Variablen <./code/Variables_const_let.mjs>`__ (:js:`const` und :js:`let`)
 --------------------------------------------------------------------------------------------
 
-.. scrollable::
-
-   .. include:: code/Variables_const_let.mjs
+.. include:: code/Variables_const_let.mjs
       :code: javascript
       :start-line: 2
       :end-before: done();
@@ -190,18 +188,21 @@ ________________________________________________________________________________
 
    Um diesen und den Code auf den folgenden Folien ggf. mit Hilfe von Node.js auszuführen, muss am Anfang der Datei:
 
-      :js:`import { ilog, log, done } from "./log.mjs";`
+   .. code:: javascript
+      :class: copy-to-clipboard
+
+      import { ilog, log, done } from "./log.mjs";
 
    und am Ende der Datei:
 
-     :js:`done();`
+   .. code:: javascript
+      :class: copy-to-clipboard
+
+      done();
 
    hinzugefügt werden.
 
-   Den entsprechenden Code der Module (log.mjs und später Queue.mjs) finden Sie auf:
-
-   `https://github.com/Delors/delors.github.io/tree/main/web-javascript/code <https://github.com/Delors/delors.github.io/tree/main/web-javascript/code>`__
-
+   Hier finden Sie den entsprechenden Code der Module (`log.mjs <code/log.mjs>`__ und später `Queue.mjs <code/Queue.mjs>`__) finden Sie auf:
 
 
 
@@ -230,10 +231,12 @@ ________________________________________________________________________________
 
 .. scrollable::
 
-   .. include:: code/Datatypes.js
+   .. include:: code/Datatypes.mjs
       :code: javascript
       :number-lines:
       :tab-width: 2
+      :start-line: 2
+      :end-before: done();
 
 
 
@@ -305,7 +308,8 @@ ________________________________________________________________________________
 
       .. code:: javascript
 
-         const h = window.getComputedStyle(document.body).height
+         const h = window.getComputedStyle(document.body).height;
+         console.log("Height of the document: ", h); // h includes "px"
          window.scrollTo(0,parseInt(h));
 
 
@@ -338,7 +342,7 @@ ________________________________________________________________________________
       :start-line: 2
       :end-before: done();
       :number-lines:
-      :class: code far-far-smaller copy-to-clipboard
+      :class: copy-to-clipboard
       :tab-width: 4
 
 
@@ -357,9 +361,8 @@ ________________________________________________________________________________
       :code: javascript
       :start-line: 2
       :number-lines:
-      :class: code far-far-smaller copy-to-clipboard
+      :class: copy-to-clipboard
       :tab-width: 4
-
 
 .. supplemental::
 
@@ -376,7 +379,7 @@ ________________________________________________________________________________
 
    Implementieren Sie eine Funktion, die ein Array übergeben bekommt und ein neues Array zurückgibt in dem jedes n-te Element nicht vorkommt.
 
-   Beispiel: :js:`removeNthElement([1,2,3,4,5,6,7], 2)` :math:`\Rightarrow` :js:`[1,3,5,7]`
+   Beispiel: :js:`removeNthElement([1,2,3,4,5,6,7], 2)` ⇒ :js:`[1,3,5,7]`
 
    - Schreiben Sie Ihren Code in eine JavaScript Datei und führen Sie diese mit Hilfe von Node.js aus.
 
@@ -515,8 +518,6 @@ ________________________________________________________________________________
             eval([2,3,"+",4,"*"])
             eval([2,3,"+",4,"%"])
 
-
-
 .. TODO ALLES ÜBERARBEITEN!!!!!!!!!!!!
 
 .. TODO:
@@ -543,17 +544,15 @@ ________________________________________________________________________________
 `JSON <./code/JSON.js>`__ (JavaScript Object Notation)
 ----------------------------------------------------------
 
-.. scrollable::
-
-   .. include:: code/JSON.js
-      :code: javascript
-      :number-lines:
-      :tab-width: 2
+.. include:: code/JSON.js
+   :code: javascript
+   :number-lines:
+   :tab-width: 2
 
 
 .. supplemental::
 
-   JSON requires that keys must be strings and strings must be enclosed in double quotes.
+   JSON verlangt, dass Schlüssel Strings sein müssen und Strings in doppelten Anführungszeichen eingeschlossen werden müssen.
 
 
 
@@ -587,14 +586,12 @@ ________________________________________________________________________________
 
 
 
-
 Alles ist ein Objekt
 ------------------------------------------------
 
 - :js:`this` ist ein "zusätzlicher" Parameter, dessen Wert von der aufrufenden Form abhängt
 - :js:`this` ermöglicht den Methoden den Zugriff auf ihr Objekt
 - :js:`this` wird zum Zeitpunkt des Aufrufs gebunden (außer bei Arrow-Funktionen, da erfolgt die Bindung zum Zeitpunkt der Definition und es wird das this aus dem umgebenden Context geerbt.)
-
 
 .. scrollable::
 
@@ -754,7 +751,7 @@ Grundlagen von ECMAScript Modulen
       :class: code far-far-smaller copy-to-clipboard
       :tab-width: 4
 
-   `log.mjs <./code/log.mjs>`__ verwendet (:js:`import`) die Klasse Queue und exportiert Funktionen zum Loggen
+   `log.mjs <./code/log.mjs>`__ verwendet die Klasse Queue (:js:`import`) und exportiert Funktionen (:js:`export`) zum Loggen
 
    .. include:: code/log.mjs
       :code: javascript
@@ -886,7 +883,7 @@ Authentifizierung mit JWT (und Express)
 
       *Basic Authentication* ohne HTTPS ist nicht sicher!
 
-      D.h. *Basic Authentication* ist genauso unsicher wie die hier gezeigte Lösung für die initiale Authentifizierung.
+      D. h. *Basic Authentication* ist genauso unsicher wie die hier gezeigte Lösung für die initiale Authentifizierung.
 
    **Server**
 

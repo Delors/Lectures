@@ -16,7 +16,7 @@ try {
   const obj = {};
   obj = { a: 1 };
 } catch ({ name, message }) {
-  console.error(message);
+  console.error(name, message);
 } finally {
   console.log("object access finished");
 }
