@@ -3,11 +3,16 @@
     :keywords: Verschlüsselung, Vernam, Vigenère, Caesar, Hill, Playfair, Steganographie
     :description lang=en: Classical Encryption Techniques
     :description lang=de: Klassische Verschlüsselungsmethoden
-    :id: lecture-security-klassische-verschluesselungsverfahren
+    :id: vorlesung-it-sicherheit-klassische-verschluesselungsverfahren
     :first-slide: last-viewed
     :master-password: WirklichSchwierig!
 
 .. include:: ../docutils.defs
+
+.. |Kontrollfragen| source:: kontrollfragen.de.rst
+                    :path: relative
+                    :prefix: https://delors.github.io/
+                    :suffix: .html
 
 
 
@@ -16,7 +21,7 @@ Klassische Verschlüsselungsmethoden
 
 :Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
 :Kontakt: michael.eichberg@dhbw.de, Raum 149B
-:Version: 1.1.5
+:Version: 1.1.5.1
 
 .. class:: sources
 
@@ -24,11 +29,14 @@ Klassische Verschlüsselungsmethoden
 
 .. supplemental::
 
-  :Folien:
+    :Folien:
       [HTML] |html-source|
 
       [PDF] |pdf-source|
-  :Fehler melden:
+
+    :Kontrollfragen: |Kontrollfragen|
+
+    :Fehler melden:
       https://github.com/Delors/delors.github.io/issues
 
 
