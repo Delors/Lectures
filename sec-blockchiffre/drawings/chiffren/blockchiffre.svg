@@ -189,6 +189,11 @@
                     stroke-width="3"
                 />
       </g>
+      <g id="Graphic_33">
+        <text transform="translate(500 30)" fill="black">
+          <tspan y="30">Geheimtext</tspan>
+        </text>
+      </g>
       <g id="Line_68">
         <line
                     x1="790.7656"
@@ -204,16 +209,12 @@
       </g>
       <g id="Graphic_74">
         <text transform="translate(60 156.5)" fill="black">
-          <tspan x="7.357625" y="30">Schlüssel(</tspan>
-          <tspan font-style="italic" y="30">K</tspan>
-          <tspan y="30">)</tspan>
+          <tspan x="7.357625" y="30">Schlüssel(</tspan><tspan font-style="italic" y="30">K</tspan><tspan y="30">)</tspan>
         </text>
       </g>
       <g id="Graphic_75">
         <text transform="translate(497.5 156.5)" fill="black">
-          <tspan x="7.357625" y="30">Schlüssel(</tspan>
-          <tspan font-style="italic" y="30">K</tspan>
-          <tspan y="30">)</tspan>
+          <tspan x="7.357625" y="30">Schlüssel(</tspan><tspan font-style="italic" y="30">K</tspan><tspan y="30">)</tspan>
         </text>
       </g>
       <g id="Line_76">

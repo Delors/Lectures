@@ -36,7 +36,6 @@
       </g>
     </marker>
   </defs>
-  <metadata> Produced by OmniGraffle 8.0\n2025-05-13 15:32:17 +0000</metadata>
   <g
         id="stromchiffre"
         stroke-dasharray="none"
@@ -48,7 +47,7 @@
         font-size="28"
         font-weight="400"
     >
-    <title>stromchiffre</title>
+    <title>Stromchiffre</title>
     <g id="stromchiffre_Layer_1">
       <title>Layer 1</title>
       <g id="Graphic_73">
@@ -81,8 +80,7 @@
       <g id="Graphic_17">
         <text transform="translate(4.5202736 258.5)" fill="black">
           <tspan x="6.64725" y="30">Klartext</tspan>
-          <tspan x="36.59825" y="68">(</tspan>
-          <tspan font-style="italic" y="68">p</tspan><tspan
+          <tspan x="36.59825" y="68">(</tspan><tspan font-style="italic" y="68">p</tspan><tspan
                         font-size="22"
                         font-style="italic"
                         y="80"
@@ -103,10 +101,9 @@
                 />
       </g>
       <g id="Graphic_33">
-        <text transform="translate(353.47973 257.5)" fill="black">
+        <text transform="translate(353.47973 264)" fill="black">
           <tspan x="13.73525" y="30">Geheimtext</tspan>
-          <tspan x="69.26425" y="68">(</tspan>
-          <tspan font-style="italic" y="68">c</tspan><tspan
+          <tspan x="69.26425" y="68">(</tspan><tspan font-style="italic" y="68">c</tspan><tspan
                         font-size="22"
                         font-style="italic"
                         y="80"
@@ -116,8 +113,7 @@
       <g id="Graphic_34">
         <text transform="translate(756.5 258.5)" fill="black">
           <tspan x="11.64725" y="30">Klartext</tspan>
-          <tspan x="41.59825" y="68">(</tspan>
-          <tspan font-style="italic" y="68">p</tspan><tspan
+          <tspan x="41.59825" y="68">(</tspan><tspan font-style="italic" y="68">p</tspan><tspan
                         font-size="22"
                         font-style="italic"
                         y="80"
@@ -207,22 +203,9 @@
         <line
                     x1="264.5309"
                     y1="301.35157"
-                    x2="332.5799"
-                    y2="301.0204"
-                    marker-end="url(#FilledArrow_Marker)"
-                    stroke="black"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="3"
-                />
-      </g>
-      <g id="Line_67">
-        <line
-                    x1="530.5422"
-                    y1="300.9451"
-                    x2="597.6318"
-                    y2="301.27313"
-                    marker-end="url(#FilledArrow_Marker)"
+          x2="597.6318"
+          y2="301.27313"
+            marker-end="url(#FilledArrow_Marker)"
                     stroke="black"
                     stroke-linecap="round"
                     stroke-linejoin="round"
@@ -253,17 +236,13 @@
         </text>
       </g>
       <g id="Graphic_74">
-        <text transform="translate(-59.234375 88)" fill="black">
-          <tspan x="7.357625" y="30">Schlüssel(</tspan>
-          <tspan font-style="italic" y="30">K</tspan>
-          <tspan y="30">)</tspan>
+        <text transform="translate(-59.234375 88)" fill="black" >
+          <tspan x="7.357625" y="30">Schlüssel(</tspan><tspan font-style="italic" y="30">K</tspan><tspan y="30">)</tspan>
         </text>
       </g>
       <g id="Graphic_75">
         <text transform="translate(353 88)" fill="black">
-          <tspan x="7.357625" y="30">Schlüssel(</tspan>
-          <tspan font-style="italic" y="30">K</tspan>
-          <tspan y="30">)</tspan>
+          <tspan x="7.357625" y="30">Schlüssel(</tspan><tspan font-style="italic" y="30">K</tspan><tspan y="30">)</tspan>
         </text>
       </g>
       <g id="Line_76">
