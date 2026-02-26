@@ -15,7 +15,7 @@ Einführung in verteilte Systeme
 
 :Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
 :Kontakt: michael.eichberg@dhbw.de, Raum 149B
-:Version: 1.0.2
+:Version: 1.0.2.1
 
 .. class:: sources
 
@@ -60,6 +60,7 @@ Empfohlene Literatur
 ---------------------
 
 .. image:: screenshots/distributed-systems.net.webp
+    :class: screenshot
     :align: center
 
 .. supplemental::
@@ -68,7 +69,7 @@ Empfohlene Literatur
 
     .. image:: screenshots/microservices.jpg
         :align: center
-        :class: trbl-shadow
+        :class: screenshot
 
 
 
@@ -77,6 +78,7 @@ Podcast: `SE-Radio <https://se-radio.net>`__
 -----------------------------------------------------------
 
 .. image:: screenshots/se-radio.net.webp
+    :class: screenshot
     :align: center
 
 
@@ -86,7 +88,7 @@ Podcast: `Thoughtworks Technology Podcast <https://www.thoughtworks.com/en-de/in
 
 .. image:: screenshots/thoughtworks-technology-podcast.webp
     :align: center
-    :class: trbl-shadow
+    :class: screenshot
 
 
 
@@ -102,6 +104,7 @@ Verteilt vs. Dezentralisiert
 .. image:: drawings/distributed-vs-decentralized.svg
     :align: center
     :width: 100%
+    :class: light-image
 
 .. supplemental::
 
@@ -520,6 +523,7 @@ Ein zentralisierter Dienst kann als einfaches Warteschlangensystem modelliert we
 
 .. image:: drawings/queuing-system.svg
     :align: center
+    :class: light-image
 
 .. rubric:: Annahmen
 
@@ -552,6 +556,7 @@ Formale Analyse der Skalierbarkeit zentralisierter Systeme
 
         .. figure:: drawings/number_of_requests_in_system.svg
             :align: center
+            :class: light-image
 
             # Anfragen in Bearbeitung und in Warteschlange
 
@@ -617,6 +622,7 @@ Formale Analyse der Skalierbarkeit zentralisierter Systeme
 
     .. image:: drawings/average_number_of_requests_in_system.svg
         :align: center
+        :class: light-image
 
 
 
@@ -629,7 +635,9 @@ Formale Analyse der Skalierbarkeit zentralisierter Systeme
 
   .. math::
 
-    R = \frac{\bar{N}}{X} = \frac{S}{1-U} \Rightarrow \frac{R}{S} = \frac{1}{1-U}
+    R = \frac{\bar{N}}{X} = \frac{S}{1-U} \\
+    
+    \Rightarrow \frac{R}{S} = \frac{1}{1-U}
 
   mit :math:`S = \frac{1}{\mu}` für die durchschnittliche Servicezeit.
 
@@ -637,6 +645,7 @@ Formale Analyse der Skalierbarkeit zentralisierter Systeme
 
   .. image:: drawings/response_time.svg
         :alt: Antwortszeit in Abhängigkeit der Auslastung
+        :class: light-image
 
 .. class:: incremental-list
 
@@ -718,6 +727,7 @@ Verlagerung von Berechnungen auf Clients
 
 .. image:: drawings/moving-computations.svg
     :align: center
+    :class: light-image
 
 
 
@@ -758,12 +768,14 @@ Paralleles Rechnen (:eng:`Parallel Computing`)
 - Multiprozessor
 
   .. image:: drawings/multiprocessor-vs-multicomputer/multiprocessor.svg
-            :align: center
+    :align: center
+    :class: light-image
 
 - Multicomputer
 
   .. image:: drawings/multiprocessor-vs-multicomputer/multicomputer.svg
-            :align: center
+    :align: center
+    :class: light-image
 
 
 .. supplemental::
@@ -807,6 +819,7 @@ Amdahls Gesetz - Grenzen der Skalierbarkeit
         .. image:: drawings/amdahl.svg
             :alt: Amdahls Gesetz visualisiert
             :align: center
+            :class: light-image
 
 
 
@@ -1029,6 +1042,7 @@ Cluster Computing
 Eine Gruppe von „High-End-Systemen“, die über ein LAN verbunden sind.
 
 .. image:: drawings/cluster-computing.svg
+    :class: light-image
     :align: center
 
 .. supplemental::
@@ -1061,24 +1075,13 @@ Weiterführung des Cluster Computing.
 Grundlegende Architektur für Grid-Computing
 ---------------------------------------------
 
-.. grid::
+.. image:: drawings/architecture-for-grid-computing.svg
+    :loading: embed
+    :class: light-image float-right
 
-    .. cell::
-
-        .. class:: no-margin
-
-        :Anwendungen: Enthält tatsächliche Grid-Anwendungen in einer einzelnen Organisation.
-        :Collective Layer: Verwaltet den Zugriff auf mehrere Ressourcen: Auffindung, Einplanung und Replikation.
-        :Konnektivitätsschicht: Kommunikations- / Transaktions- /Authentifizierungsprotokolle, z. B. für die Übertragung von Daten zwischen Ressourcen.
-
-    .. cell::
-
-        .. image:: drawings/architecture-for-grid-computing.svg
-            :loading: embed
-
-
-.. class:: no-margin
-
+:Anwendungen: Enthält tatsächliche Grid-Anwendungen in einer einzelnen Organisation.
+:Collective Layer: Verwaltet den Zugriff auf mehrere Ressourcen: Auffindung, Einplanung und Replikation.
+:Konnektivitätsschicht: Kommunikations- / Transaktions- /Authentifizierungsprotokolle, z. B. für die Übertragung von Daten zwischen Ressourcen.
 :Ressourcenschicht: Verwaltet eine Ressource, z. B. Erstellen von Prozessen oder Lesen von Daten.
 :Fabric Layer: Bietet Schnittstellen zu lokalen Ressourcen (zur Abfrage von Status und Fähigkeiten, Sperren usw.)
 
@@ -1149,6 +1152,7 @@ Cloud-Computing
       Ein Ausweg könnte `Hommomorphe Verschlüsselung <https://de.wikipedia.org/wiki/Homomorphe_Verschlüsselung>`_ sein, die es ermöglicht, Berechnungen auf verschlüsselten Daten durchzuführen.
 
 
+
 *Serverless Computing*
 ----------------------
 
@@ -1213,6 +1217,7 @@ Transaktionen auf Geschäftsprozessebene
     .. cell::
 
         .. image:: drawings/transactions/transaction.svg
+            :class: light-image
             :align: center
 
         .. container:: text-align-center margin-top-1em
@@ -1227,6 +1232,7 @@ Transaktionen auf Geschäftsprozessebene
 
                 .. csv-table::
                     :header: "Primitiv", "Beschreibung"
+                    :widths: 40, 60
 
                     BEGINN DER TRANSAKTION, Zeigt den Beginn einer Transaktion an.
                     ENDE DER TRANSAKTION, Beendigung der Transaktion mit dem Versuch eines COMMIT.
@@ -1254,7 +1260,7 @@ Transaktionen auf Geschäftsprozessebene
 
 .. image:: drawings/transactions/tpm.svg
     :align: center
-    :class: incremental
+    :class: light-image incremental
 
 .. container:: incremental smaller
 
@@ -1276,6 +1282,7 @@ Middleware ermöglicht Kommunikation zwischen den Anwendungen.
 
 .. image:: drawings/middleware.svg
     :align: center
+    :class: light-image
 
 .. supplemental::
 
@@ -1367,6 +1374,7 @@ Moderne verteilte Systeme
 
 .. image:: drawings/mobile_computing/mobile_cloud_computing.svg
     :align: center
+    :class: light-image
 
 
 *Mobile Edge Computing*
@@ -1374,6 +1382,7 @@ Moderne verteilte Systeme
 
 .. image:: drawings/mobile_computing/mobile_edge_computing.svg
     :align: center
+    :class: light-image
 
 
 
@@ -1389,6 +1398,7 @@ Die Knoten, an denen Sensoren angebracht sind:
 
 .. image:: drawings/sensor_networks/operator_stores_and_processes_data.svg
     :align: center
+    :class: light-image
 
 
 
@@ -1397,6 +1407,7 @@ Die Knoten, an denen Sensoren angebracht sind:
 
 .. image:: drawings/sensor_networks/nodes_store_and_process_data.svg
     :align: center
+    :class: light-image
 
 
 
@@ -1405,6 +1416,7 @@ Das *Cloud-Edge Continuum*
 
 .. image:: drawings/cloud_edge_continuum.svg
     :align: center
+    :class: light-image
 
 
 Fallstricke bei der Entwicklung verteilter Systeme
