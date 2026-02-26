@@ -15,7 +15,7 @@ W3WI_110 - Entwicklung verteilter Systeme
 
 :Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
 :Kontakt: michael.eichberg@dhbw.de, Raum 149B
-:Version: 24SEA - Februar 2026
+:Version: 24SEA - 26. Februar 2026
 
 
 
@@ -1046,6 +1046,38 @@ Gruppenaufteilung
           "defaultGroupSize": 4,
           "defaultPreferSmallerGroups": false
       }
+
+  .. csv-table::
+    :header: Vorname, Nachname, Gruppe
+    :width: 100%
+    :widths: 40 40 20
+    :class: dhbw sticky-header
+
+    Kevin , Becker , 1
+    Lea , Dennhardt , 1
+    Katrin , Seeberg , 1
+    Daniel , Brecht , 1
+    Jonas , Thaddey , 1
+    Leonie , Berens , 2
+    Lorenzo , Negri , 2
+    Luis , Heider , 2
+    Till , Burdorf , 2
+    Thi , Duong , 3
+    Nico , Becker , 3
+    Christina , Schulz , 3
+    Erik , Breuer , 3
+    Ajun , Anpalakan , 4
+    Andre , Maxinger , 4
+    Max , Rommel , 4
+    Sebastian , Rudolph , 4
+    Jessica , Limmer , 5
+    Michelle , Ingerl , 5
+    Erel , Acmi , 5
+    Lukas , Gröning , 5
+    Wanisa , Nassery , 6
+    Adrian , Polzer , 6
+    Jannis , Voß , 6
+    Victor , Hacker , 6
 
 
 
