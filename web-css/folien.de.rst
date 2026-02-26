@@ -16,7 +16,7 @@ Cascading Style Sheets (CSS)
 
 :Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
 :Kontakt: michael.eichberg@dhbw.de, Raum 149B
-:Version: 1.5.2
+:Version: 1.5.3
 
 .. supplemental::
 
@@ -2640,6 +2640,23 @@ Dark and Light Mode
 
     .. card::
 
+        Für einfaches Theming kann auch die CSS-Funktion :css:`light-dark()` verwenden. Dies erfordert, dass das :css:`color-scheme` explizit angegeben wird.
+
+        Zum Beispiel:
+        
+        .. code:: css
+            :number-lines:
+            
+            :root {
+                color-scheme: light dark;
+            }
+            body {
+                background-color: light-dark(white, black);
+                color: light-dark(black, white);
+            }
+
+    .. card::
+
         (Eine) Vorgehensweise: Definition des Farbschemas über *Custom Properties*
 
         .. code:: css
@@ -3429,11 +3446,6 @@ Ausgewählte vererbte CSS Eigenschaften
 
 
 
-
-
-
-
-
 .. class:: transition-fade
 
 Nicht Behandelte Themen (Auszug)
@@ -3450,7 +3462,7 @@ Nicht Behandelte Themen (Auszug)
 - (mehr) CSS Tricks
 - Dokumente mit alternativen Flussrichtungen (rechts nach links / oben nach unten)
 - CSS bzgl. Printing
-- ...
+- CSS Color Spaces (Einige `Hintergrundinformationen <https://ericportis.com/posts/2024/okay-color-spaces/>`__, `OKLCH <https://oklch.com/#0.5408,0.0839,187.28,100>`__) ...
 
 .. supplemental::
 

@@ -1,0 +1,23 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Light and Dark Mode</title>
+    <style>
+      :root {
+        color-scheme: light dark;
+      }
+      body {
+        background-color: light-dark(white, black);
+        color: light-dark(rgb(94, 85, 85), rgb(245, 253, 202));
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Light and Dark Mode</h1>
+    <p>
+      This page demonstrates the use of the CSS color-scheme property to support
+      both light and dark modes.
+    </p>
+    <p>Try switching your system theme to see the effect!</p>
+  </body>
+</html>
