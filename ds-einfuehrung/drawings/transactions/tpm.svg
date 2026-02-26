@@ -7,8 +7,8 @@
     xmlns:xl="http://www.w3.org/1999/xlink"
     xmlns="http://www.w3.org/2000/svg"
     viewBox="-360 -50 541 297"
-    width="1623"
-    height="891"
+    width="1487"
+    height="816"
 >
   <style>
     @import url('/LectureDoc2/ext/fonts/ld-fonts.css');
@@ -104,24 +104,6 @@
             xl:href="#Gradient"
             gradientTransform="translate(98.41053 -9.485378) rotate(-133.44236) scale(68.80537)"
         />
-    <font-face
-            font-family="Noto Sans Display"
-            font-size="14"
-            panose-1="2 11 5 2 4 5 4 2 2 4"
-            units-per-em="1000"
-            underline-position="-100"
-            underline-thickness="50"
-            slope="0"
-            x-height="536"
-            cap-height="714"
-            ascent="1069.0002"
-            descent="-292.99927"
-            font-weight="400"
-        >
-      <font-face-src>
-        <font-face-name name="NotoSansDisplay-Regular" />
-      </font-face-src>
-    </font-face>
     <linearGradient
             id="Obj_Gradient_16"
             xl:href="#Gradient_3"
@@ -214,7 +196,6 @@
       </g>
     </marker>
   </defs>
-  <metadata> Produced by OmniGraffle 8.0\n2025-02-09 19:16:33 +0000</metadata>
   <g
         id="tpm"
         stroke-opacity="1"
@@ -223,10 +204,8 @@
         fill-opacity="1"
         stroke="none"
     >
-    <title>tpm</title>
-    <rect fill="white" x="-360" y="-50" width="541" height="297" />
+    <title>TPM</title>
     <g id="tpm_Layer_1">
-      <title>Layer 1</title>
       <g id="Group_563">
         <g id="Graphic_549">
           <ellipse
