@@ -21,7 +21,7 @@ Block Chiffre und der *Data Encryption Standard (DES)*
 
 :Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
 :Kontakt: michael.eichberg@dhbw.de
-:Version: 1.1.5
+:Version: 1.1.7
 
 .. class:: sources
 
@@ -44,24 +44,24 @@ Block Chiffre und der *Data Encryption Standard (DES)*
 Stromchiffre
 --------------
 
-
 - Verschlüsselt einen digitalen Datenstrom ein Bit oder ein Byte nach dem anderen.
 
   Beispiele: Autokeyed Vigenère-Chiffre und Vernam-Chiffre.
 
 .. story::
 
-    .. class:: incremental-list
+    .. admonition:: Variante: One-Time-Pad
+        :class: incremental
 
-    - Im Idealfall wird (würde) ein One-Time-Pad verwendet werden. Der Schlüsselstrom wäre genauso lang wie der Bitstrom des Klartextes.
+        - Im Idealfall würde ein One-Time-Pad verwendet werden. Der Schlüsselstrom wäre genauso lang wie der Bitstrom des Klartextes.
 
-      .. container:: incremental
+        .. container:: incremental
 
             - Wenn der kryptografische Schlüsselstrom zufällig ist, kann diese Chiffre auf keine andere Weise als durch die Beschaffung des Schlüsselstroms geknackt werden.
             - Der Schlüsselstrom muss beiden Nutzern im Voraus über einen unabhängigen und sicheren Kanal zur Verfügung gestellt werden.
             - Dies führt zu unüberwindbaren logistischen Problemen, wenn der vorgesehene Datenverkehr sehr groß ist.
 
-      .. container:: incremental
+        .. container:: incremental
 
             .. rubric:: Beispielimplementierung in Python
 
@@ -71,9 +71,15 @@ Stromchiffre
                 def vernam(plaintext: bytes, key: bytes) -> bytes:
                     return bytes([p ^ k for p, k in zip(plaintext, key)])
 
-    - Aus praktischen Gründen muss der Bitstromgenerator als algorithmisches Verfahren implementiert werden, damit der kryptografische Bitstrom von beiden Benutzern erzeugt werden kann.
-    - Es muss rechnerisch praktisch unmöglich sein, zukünftige Teile des Bitstroms auf der Grundlage früherer Teile des Bitstroms vorherzusagen.
-    - Die beiden Benutzer müssen nur den erzeugenden Schlüssel sicher miteinander teilen, damit jeder den Schlüsselstrom erzeugen kann.
+    .. admonition:: Variante: Bitstromgenerator
+        :class: incremental
+
+        - Aus praktischen Gründen muss der Bitstromgenerator als algorithmisches Verfahren implementiert werden, damit der kryptografische Bitstrom von beiden Benutzern erzeugt werden kann.
+        - Es muss rechnerisch praktisch unmöglich sein, zukünftige Teile des Bitstroms auf der Grundlage früherer Teile des Bitstroms vorherzusagen.
+        - Die beiden Benutzer müssen nur den erzeugenden Schlüssel sicher miteinander teilen, damit jeder den Schlüsselstrom erzeugen kann.
+        - .. hint::
+
+              Im Folgenden meinen wir mit *Stromchiffre* immer die Variante mit einem Bitstromgenerator.
 
 
 
@@ -85,7 +91,13 @@ Blockchiffre
 - Ein Klartextblock wird als Ganzes behandelt und verwendet, um einen gleich langen Chiffretextblock zu erzeugen.
 - In der Regel wird eine Blockgröße von 64 (8 Byte) oder 128 Bit (16 Byte) verwendet.
 - Wie bei einer Stromchiffre *teilen sich die beiden Benutzer einen symmetrischen Chiffrierschlüssel*.
-- Viele netzbasierte Anwendungen, die auf symmetrische Verschlüsselung setzen, verwenden Blockchiffren.
+- Viele netzbasierte als auch klassische Anwendungen (z. B. Verschlüsselung von Dateien oder ganzen Partitionen), die auf symmetrische Verschlüsselung setzen, verwenden Blockchiffren. 
+
+.. supplemental::
+
+    .. important:: 
+     
+        Im Rahmen der Verschlüsselung von Daten, die über ein Netzwerk übertragen werden, kommt es häufig sowohl zum Einsatz von asymmetrischer Verschlüsselung als auch von symmetrischer Verschlüsselung, wobei die symmetrische Verschlüsselung für die eigentliche Kommunikation verwendet wird und die asymmetrische Verschlüsselung nur während des Verbindungsaufbaus – zum Aushandeln eines gemeinsamen Schlüssels für die symmetrische Verschlüsselung – zum Einsatz kommt.
 
 
 
@@ -111,7 +123,7 @@ Allgemeine n-Bit-n-Bit-Blocksubstitution (n = 4)
 
 .. supplemental::
 
-    Mittels 4 Bit können :math:`16` verschiedene Werte dargestellt werden (:math:`[0,15]`). Je nach Wert der Eingabe wird ein anderer Wert ausgegeben. Die Zuordnung ist der Grafik zu entnehmen.
+    Mittels 4 Bit können 16 verschiedene Werte dargestellt werden ([0,15]). Je nach Wert der Eingabe wird ein anderer Wert ausgegeben. Die Zuordnung ist der Grafik zu entnehmen.
 
 
 
@@ -224,7 +236,12 @@ Feistel-Chiffre - Hintergrund
 
 - Hierbei handelt es sich um eine praktische Anwendung eines Vorschlags von Claude Shannon zur Entwicklung einer Chiffre, bei der sich *Konfusions- und Diffusionsfunktionen* abwechseln.
 
-- Dieser Aufbau wird von vielen bedeutenden (Twofish, Blowfish, Serpent, Mars) - im Einsatz befindlichen - symmetrischen Blockchiffren verwendet.
+- Dieser Aufbau wird von vielen bedeutenden (Twofish, Blowfish, Mars) symmetrischen Blockchiffren – die in spezifischen Anwendungsfällen noch anzutreffen sind – verwendet.
+- Mars und Twofish wurden Finalisten für die Auswahl des Advanced Encryption Standard (AES) ausgewählt und vom NIST als hoch-sicher eingestuft.
+ 
+  .. supplemental::
+
+    Der ausgewählte Algorithmus für AES ist jedoch Rijndael. Dieser wurde „nur“ als hinreichend sicher eingestuft. 
 
 .. container:: incremental
 
@@ -503,10 +520,9 @@ DES: Beispiel
 -------------
 
 .. csv-table::
-    :class: compact monospaced highlight-row-on-hover highlight-identical-cells-on-hover font-size-85
+    :class: compact table-data-monospaced highlight-row-on-hover highlight-identical-cells-on-hover font-size-85
     :align: center
-    :header: Round, :math:`Ki`, :math:`Li`, :math:`Ri`
-    :stub-columns: 1
+    :header: Round, K\ :sub:`i`, L\ :sub:`i`, R\ :sub:`i`
 
     IP, , 5a005a00, 3cf03c0f
     1, 1e030f03080d2930, 3cf03c0f, bad22845
@@ -531,9 +547,9 @@ DES: Beispiel
 
     DES-Unterschlüssel werden als acht 6-Bit-Werte im Hexadezimalformat angezeigt.
 
-    Der Höchstwert für einen Wert von :math:`k_i` ist somit :math:`2^6-1=63=0x3F`.
+    Der Höchstwert für einen Werte eines Unterschlüssel von K\ :sub:`i` ist somit 2⁶-1=63=0x3F.
 
-    .. rubric:: Beispiel - :math:`k_1`
+    .. rubric:: Beispiel - K\ :sub:`1`
 
     .. csv-table::
         :class: monospaced highlight-cell-on-hover
@@ -547,80 +563,85 @@ DES: Beispiel
 Lawineneffekt in DES
 ---------------------------------------------------
 
-Kleine Änderung im Klartext (erster Wert +1)
+.. deck::
 
-.. csv-table::
-    :class: font-size-75 monospaced compact highlight-row-on-hover
-    :width: 100%
-    :header: Round, , δ, , Round, , δ
+    .. card::
 
-    , "02468aceeca86420
-    12468aceeca86420", 1, , 9, "c11bfc09887fbc6c
-    996911532eed7d94", 32
-    1, "3cf03c0fbad22845
-    3cf03c0fbad32845", 1, , 10, "887fbc6c60017e8b
-    2eed7d94d0f23094", 34
-    2, "bad2284599e9b723
-    bad3284539a9b7a3", 5, , 11, "600f7e8bf596506e
-    d0f23094455da9c4", 37
-    3, "99e9b7230bae3b9e
-    39a9b7a3171cb8b3", 18, , 12, "1596506e738538b8
-    455da9c47f6e3cf3", 31
-    4, "Obae3b9e42415649
-    171cb8b3ccaca55e", 34, , 13, "738538b8c6a62c4e
-    7f6e3cf34bc1a8d9", 29
-    5, "4241564918b3fa41
-    ccaca55ed16c3653", 37, , 14, "c6a62c4e56b0bd75
-    4bc1a8d91e07d409", 33
-    6, "18b3fa419616fe23
-    d16c3653cf402c68", 33, , 15, "56b0bd7575e8fd81
-    1e07d4091ce2e6dc", 31
-    7, "9616fe2367117cf2
-    cf402c682b2cefbc", 32, , 16, "75e8fd8625896490
-    1ce2e6dc365e5f59", 32
-    8, "67117cf2c11bfc09
-    2b2cefbc99191153", 33, , IP-1, "da02ce3a89ecac3b
-    057cde97d7683f2a", 32
+        .. rubric::  Kleine Änderung im Klartext 
+            
+        Beim Start ist der rechte Klartextblock, verglichen mit dem linken Klartextblock nur um ein Bit unterschiedlich. Änderung des ersten Wertes: :monospaced:`0` ➟ :monospaced:`1`.
 
+        .. csv-table::
+            :class: font-size-75 table-data-monospaced compact highlight-row-on-hover
+            :width: 100%
+            :header: Round, , δ, , Round, , δ
 
+            , "02468aceeca86420
+            12468aceeca86420", 1, , 9, "c11bfc09887fbc6c
+            996911532eed7d94", 32
+            1, "3cf03c0fbad22845
+            3cf03c0fbad32845", 1, , 10, "887fbc6c60017e8b
+            2eed7d94d0f23094", 34
+            2, "bad2284599e9b723
+            bad3284539a9b7a3", 5, , 11, "600f7e8bf596506e
+            d0f23094455da9c4", 37
+            3, "99e9b7230bae3b9e
+            39a9b7a3171cb8b3", 18, , 12, "1596506e738538b8
+            455da9c47f6e3cf3", 31
+            4, "Obae3b9e42415649
+            171cb8b3ccaca55e", 34, , 13, "738538b8c6a62c4e
+            7f6e3cf34bc1a8d9", 29
+            5, "4241564918b3fa41
+            ccaca55ed16c3653", 37, , 14, "c6a62c4e56b0bd75
+            4bc1a8d91e07d409", 33
+            6, "18b3fa419616fe23
+            d16c3653cf402c68", 33, , 15, "56b0bd7575e8fd81
+            1e07d4091ce2e6dc", 31
+            7, "9616fe2367117cf2
+            cf402c682b2cefbc", 32, , 16, "75e8fd8625896490
+            1ce2e6dc365e5f59", 32
+            8, "67117cf2c11bfc09
+            2b2cefbc99191153", 33, , IP-1, "da02ce3a89ecac3b
+            057cde97d7683f2a", 32
 
-Lawineneffekt in DES
------------------------------------
+    .. card::
 
-Kleine Änderung des Schlüssels: :monospaced:`0f1571c947d9e859` ➟ :monospaced:`1f1571c947d9e859`
+        .. rubric:: Kleine Änderung des Schlüssels
+            
+        Beim Start sind beide Klartextblöcke gleich. Es wird jedoch der Schlüssel um 1 Bit geändert: :monospaced:`0f1571c947d9e859` ➟ :monospaced:`1f1571c947d9e859`
 
-.. csv-table::
-    :class: font-size-75 monospaced compact highlight-row-on-hover
-    :width: 100%
-    :header: Round, , "δ", , Round, , δ
+        .. csv-table::
+            :class: font-size-75 table-data-monospaced compact highlight-row-on-hover
+            :width: 100%
+            :header: Round, , "δ", , Round, , δ
 
-    , "02468aceeca86420
-    02468aceeca86420", 0, , 9, "c11bfe09887fbe6c
-    548f1de471f64dfd", 34
-    1, "3cf03c0fbad22845
-    3cf03c0f9ad628c5", 3, , 10, "8876be6c60067e8b
-    71664dfd4279876c", 36
-    2, "bad2284599e9b723
-    9ad628c59939136b", 11, , 11, "60017e8bf596506e
-    4279876c399fdc0d", 32
-    3, "99e9b7230bae3b9e
-    9939136676806767", 25, , 12, "f596506e738538b8
-    399fde0d6d208dbb", 28
-    4, "Obae3b9e42415649
-    768067b75a8807c5", 29, , 13, "738538b8c6a62c4e
-    6d208dbbb9bdeeaa", 33
-    5, "4241564918b3fa41
-    5a8807c5488bde94", 26, , 14, "c6a62c4e56b0bd75
-    b9bdeeaad2c3a56f", 30
-    6, "18b3fa419616fe23
-    488dbe94aba7fe53", 26, , 15, "56b0bd7575e8fd8f
-    d2c3a5612765c1fb", 33
-    7, "9616fe2367117cf2
-    aba7fe53177d21e4", 27, , 16, "75e8fd8f25896490
-    2765c1fb01263dc4", 30
-    8, "67117cf2c11bfc09
-    177d21e4548f1de4", 32, , IP-1, "da02ce3a89ecac3b
-    ee92b50606b6260b", 30
+            , "02468aceeca86420
+            02468aceeca86420", 0, , 9, "c11bfe09887fbe6c
+            548f1de471f64dfd", 34
+            1, "3cf03c0fbad22845
+            3cf03c0f9ad628c5", 3, , 10, "8876be6c60067e8b
+            71664dfd4279876c", 36
+            2, "bad2284599e9b723
+            9ad628c59939136b", 11, , 11, "60017e8bf596506e
+            4279876c399fdc0d", 32
+            3, "99e9b7230bae3b9e
+            9939136676806767", 25, , 12, "f596506e738538b8
+            399fde0d6d208dbb", 28
+            4, "Obae3b9e42415649
+            768067b75a8807c5", 29, , 13, "738538b8c6a62c4e
+            6d208dbbb9bdeeaa", 33
+            5, "4241564918b3fa41
+            5a8807c5488bde94", 26, , 14, "c6a62c4e56b0bd75
+            b9bdeeaad2c3a56f", 30
+            6, "18b3fa419616fe23
+            488dbe94aba7fe53", 26, , 15, "56b0bd7575e8fd8f
+            d2c3a5612765c1fb", 33
+            7, "9616fe2367117cf2
+            aba7fe53177d21e4", 27, , 16, "75e8fd8f25896490
+            2765c1fb01263dc4", 30
+            8, "67117cf2c11bfc09
+            177d21e4548f1de4", 32, , IP-1, "da02ce3a89ecac3b
+            ee92b50606b6260b", 30
 
 
 
@@ -676,25 +697,24 @@ Entwurfsprinzipien für Blockchiffren - Anzahl der Runden
 
 
 
-
-Entwurfsprinzipien für Blockchiffren - Funktion ``F``
+Entwurfsprinzipien für Blockchiffren - Funktion F
 -------------------------------------------------------
 
 .. class:: incremental-list
 
-- Das Herzstück einer Feistel-Blockchiffre ist die Funktion ``F``.
-- Je nichtlinearer ``F`` ist, desto schwieriger wird jede Art von Kryptoanalyse sein.
+- Das Herzstück einer Feistel-Blockchiffre ist die Funktion F.
+- Je nichtlinearer F ist, desto schwieriger wird jede Art von Kryptoanalyse sein.
 - Der Algorithmus sollte einen großen Lawineneffekt (:eng:`Avalanche-Property`) haben.
 
 .. definition:: Strict Avalanche Criterion (SAC)
     :class: incremental
 
-    Besagt, dass sich jedes Ausgangsbit ``j`` einer S-Box mit der Wahrscheinlichkeit 1/2 ändern sollte, wenn ein einzelnes Eingangsbit ``i`` invertiert wird und dies für alle Paare ``i``, ``j`` gelten muss.
+    Besagt, dass sich jedes Ausgangsbit j einer S-Box mit der Wahrscheinlichkeit 1/2 ändern sollte, wenn ein einzelnes Eingangsbit i invertiert wird und dies für alle Paare i, j gelten muss.
 
 .. definition:: Bit Independence Criterion (BIC)
     :class: incremental
 
-    Besagt, dass sich die Ausgangsbits ``j`` und ``k`` unabhängig voneinander ändern sollten, wenn ein einzelnes Eingangsbit ``i`` invertiert wird und dies für alle ``i``, ``j`` und ``k`` gelten muss.
+    Besagt, dass sich die Ausgangsbits j und k unabhängig voneinander ändern sollten, wenn ein einzelnes Eingangsbit i invertiert wird und dies für alle i, j und k gelten muss.
 
 .. class:: incremental
 
@@ -741,11 +761,11 @@ Doppelte Verschlüsselung
 
             :math:`E(K_2,E(K_1,P)) = E(K_3,P)` ist nicht gültig.
 
-            D. h. die zweifache Anwendung von DES führt zu einer Abbildung, die nicht äquivalent zu einer einfachen DES-Verschlüsselung ist.
+            D. h. die zweifache Anwendung von DES führt zu einer Abbildung, die im Allgemeinen nicht äquivalent zu einer einfachen DES-Verschlüsselung ist.
 
             .. supplemental::
 
-                Es gilt, dass es keinen Schlüssel :math:`DES_{K^{1-2}} = DES_{K^1} \circ DES_{K^2}` gibt. Weiterhin gilt, dass die Teilmenge der durch DES erzeugbaren Permutationen extrem klein ist und nicht abgeschlossen unter Komposition.
+                D. h. für ein Paar :math:`K_1, K_2` existiert nicht notwendigerweise ein :math:`K`, sodass :math:`DES_{K} = DES_{K_1} \circ DES_{K_2}` gilt. Die Teilmenge der durch DES erzeugbaren Permutationen ist verschwindend klein (aufgrund der Schlüsselgröße nur :math:`2^{56}` von :math:`64!` möglichen) und nicht abgeschlossen unter Komposition.
 
     .. card::
 
@@ -771,7 +791,7 @@ Doppelte Verschlüsselung
 
             Die zweifache Anwendung einer Blockchiffre ist nicht sinnvoll!
 
-            Das Ergebnis ist, dass ein bekannter Klartextangriff gegen Doppel-DES mit einem Aufwand in der Größenordnung von :math:`2^{56}` *im Durchschnitt* erfolgreich ist, verglichen mit *durchschnittlich* :math:`2^{55}` für einen einfachen DES.
+            Das Ergebnis ist, dass ein bekannter Klartextangriff gegen Doppel-DES mit einem Aufwand in der Größenordnung von 2⁵⁶ *im Durchschnitt* erfolgreich ist, verglichen mit *durchschnittlich* 2⁵⁵ für einen einfachen DES.
 
 
 
