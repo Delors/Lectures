@@ -18,7 +18,7 @@ Eine kurze Einführung, um das Entwickeln von kleinen Projekten zu erleichtern.
 
 :Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
 :Kontakt: michael.eichberg@dhbw.de, Raum 149B
-:Version: 1.0.2
+:Version: 1.0.2.1
 
 .. supplemental::
 
@@ -62,9 +62,9 @@ Implementierung einer einfachen Domänenklasse
 
         1. Entwickeln Sie eine Klasse :java:`Telefonbucheintrag` mit den Attributen:
 
-        1. :java:`Integer telefonnummer`
-        2. :java:`String vorname`
-        3. :java:`String nachname`
+           1. :java:`Integer telefonnummer`
+           2. :java:`String vorname`
+           3. :java:`String nachname`
 
         sowie geeigneten Konstruktoren und allen passenden *get*- und *set*-Methoden. Setzen Sie strikte *Encapsulation* um.
 
@@ -161,6 +161,7 @@ Erstellen eines Domänenmodells
     :class: incremental
 
     Verwenden Sie das Vokabular der Domäne; z. B. sollte ein Modell für eine Bibliothek Namen wie „Ausleiher“ anstelle von „Kunde“ verwenden.
+
 
 
 Modellierungsaspekte
