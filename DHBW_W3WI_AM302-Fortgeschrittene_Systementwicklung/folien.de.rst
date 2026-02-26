@@ -943,14 +943,14 @@ Teamzuteilung
   Finn, Wagnitz, NJE
   Issa, Gassama, vier-tastischen
   Louis, Labitzke, RDR3
-  Nikola, Rehak, PowerRanger
+  Nikola, Rehak, Die3Musketiere
   Dario, Danielis, Die3Musketiere
   Linda, Yuan, vier-tastischen
   Benedikt, Geitner, vier-tastischen
   Nils, Hillinger, Die3Musketiere
   Louis, Poller, LogiBlock
   Esra, Memis, LogiBlock
-  Nicolas, Müller, Die3Musketiere
+  Nicolas, Müller, LogiBlock
   Maximilian, Haßler, PowerRanger
   Niko, Guba, PowerRanger
   Marvin, Blank, TwoAndAHalfMan
