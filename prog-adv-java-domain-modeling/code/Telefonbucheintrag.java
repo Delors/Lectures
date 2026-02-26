@@ -52,7 +52,8 @@ public class Telefonbucheintrag {
             return false;
         }
         Telefonbucheintrag other = (Telefonbucheintrag) obj;
-        return vorname.equals(other.vorname) && nachname.equals(other.nachname) && telefonnummer.equals(other.telefonnummer);
+        // return vorname.equals(other.vorname) && nachname.equals(other.nachname) && telefonnummer.equals(other.telefonnummer);
+        return telefonnummer.equals(other.telefonnummer);
     }
 
     @Override
