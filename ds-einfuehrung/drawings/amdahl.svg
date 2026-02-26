@@ -13,7 +13,9 @@
   <style>
     @import url('/LectureDoc2/ext/fonts/ld-fonts.css');
   </style>
-<g>
+<g 
+    font-family="Noto Sans Display"
+    font-size="13">
   <!-- Commands -->
   <g id="Commands">
     <!-- Legend -->
@@ -54,7 +56,7 @@
                             stroke-width="2"
                         />
         </g>
-        <g font-family="NotoSansDisplay-Regular" font-size="14" fill="black">
+        <g fill="black">
           <text x="220.8" y="36.021">
             1/((1-0.5)+(0.5/x)) (50% können parallelisiert werden)
           </text>
@@ -75,7 +77,7 @@
                             stroke-width="2"
                         />
         </g>
-        <g font-family="NotoSansDisplay-Regular" font-size="14" fill="black">
+        <g fill="black">
           <text x="220.8" y="52.821">
             1/((1-0.99)+(0.99/x)) (99% können parallelisiert werden)
           </text>
@@ -96,7 +98,7 @@
                             stroke-width="2"
                         />
         </g>
-        <g font-family="NotoSansDisplay-Regular" font-size="14" fill="black">
+        <g fill="black"> 
           <text x="220.8" y="69.621">
             1/((1-0.90)+(0.90/x)) (90% können parallelisiert werden)
           </text>
@@ -105,7 +107,7 @@
     </g>
     <!-- x=1;y=1 -->
     <g id="x_1_y_1">
-      <g font-family="NotoSansDisplay-Regular" font-size="14" fill="black">
+      <g fill="black">
         <text x="336.707" y="215.625">x=1;y=1</text>
       </g>
       <g>
@@ -179,36 +181,34 @@
     <g id="Y_Axis">
       <g
                     transform="translate(16.2719,157.5) rotate(-90) translate(-16.2719,-157.5)"
-                    font-family="NotoSansDisplay-Regular"
-                    font-size="14"
                     fill="black"
                 >
         <text x="-11.7555" y="157.5">Speedup</text>
       </g>
       <!-- Y Labels -->
       <g id="Y_Labels">
-        <g font-family="NotoSansDisplay-Regular" font-size="14" fill="black">
+        <g fill="black">
           <text x="38.9139" y="309.521">0</text>
         </g>
-        <g font-family="NotoSansDisplay-Regular" font-size="14" fill="black">
+        <g fill="black">
           <text x="38.9139" y="270.321">2</text>
         </g>
-        <g font-family="NotoSansDisplay-Regular" font-size="14" fill="black">
+        <g fill="black">
           <text x="38.9139" y="231.121">4</text>
         </g>
-        <g font-family="NotoSansDisplay-Regular" font-size="14" fill="black">
+        <g fill="black">
           <text x="38.9139" y="191.921">6</text>
         </g>
-        <g font-family="NotoSansDisplay-Regular" font-size="14" fill="black">
+        <g fill="black">
           <text x="38.9139" y="152.721">8</text>
         </g>
-        <g font-family="NotoSansDisplay-Regular" font-size="14" fill="black">
+        <g fill="black">
           <text x="31.1277" y="113.521">10</text>
         </g>
-        <g font-family="NotoSansDisplay-Regular" font-size="14" fill="black">
+        <g fill="black">
           <text x="31.1277" y="74.321">12</text>
         </g>
-        <g font-family="NotoSansDisplay-Regular" font-size="14" fill="black">
+        <g fill="black">
           <text x="31.1277" y="35.121">14</text>
         </g>
       </g>
@@ -224,41 +224,41 @@
     </g>
     <!-- X Axis -->
     <g id="X_Axis">
-      <g font-family="NotoSansDisplay-Regular" font-size="14" fill="black">
+      <g fill="black">
         <text x="268.642" y="342">Anzahl an CPUs</text>
       </g>
       <g>
-        <g font-family="NotoSansDisplay-Regular" font-size="14" fill="black">
+        <g fill="black">
           <text x="53.6069" y="325.555">0</text>
         </g>
-        <g font-family="NotoSansDisplay-Regular" font-size="14" fill="black">
+        <g fill="black">
           <text x="102.144" y="325.555">10</text>
         </g>
-        <g font-family="NotoSansDisplay-Regular" font-size="14" fill="black">
+        <g fill="black">
           <text x="154.574" y="325.555">20</text>
         </g>
-        <g font-family="NotoSansDisplay-Regular" font-size="14" fill="black">
+        <g fill="black">
           <text x="207.004" y="325.555">30</text>
         </g>
-        <g font-family="NotoSansDisplay-Regular" font-size="14" fill="black">
+        <g fill="black">
           <text x="259.434" y="325.555">40</text>
         </g>
-        <g font-family="NotoSansDisplay-Regular" font-size="14" fill="black">
+        <g fill="black">
           <text x="311.864" y="325.555">50</text>
         </g>
-        <g font-family="NotoSansDisplay-Regular" font-size="14" fill="black">
+        <g fill="black">
           <text x="364.294" y="325.555">60</text>
         </g>
-        <g font-family="NotoSansDisplay-Regular" font-size="14" fill="black">
+        <g fill="black">
           <text x="416.724" y="325.555">70</text>
         </g>
-        <g font-family="NotoSansDisplay-Regular" font-size="14" fill="black">
+        <g fill="black">
           <text x="469.154" y="325.555">80</text>
         </g>
-        <g font-family="NotoSansDisplay-Regular" font-size="14" fill="black">
+        <g fill="black">
           <text x="521.584" y="325.555">90</text>
         </g>
-        <g font-family="NotoSansDisplay-Regular" font-size="14" fill="black">
+        <g fill="black">
           <text x="570.121" y="325.555">100</text>
         </g>
       </g>
@@ -371,13 +371,13 @@
         <g>
           <!-- Y Labels -->
           <g id="Y_Labels_2">
-            <g font-family="NotoSansDisplay-Regular" font-size="13" fill="black">
+            <g font-size="12" fill="black">
               <text x="322.1" y="3.68476">0</text>
             </g>
-            <g font-family="NotoSansDisplay-Regular" font-size="13" fill="black">
+            <g font-size="12" fill="black">
               <text x="322.1" y="-36.1146">1</text>
             </g>
-            <g font-family="NotoSansDisplay-Regular" font-size="13" fill="black">
+            <g font-size="12" fill="black">
               <text x="322.1" y="-75.9139">2</text>
             </g>
           </g>
@@ -389,19 +389,19 @@
                             stroke-width="0.5"
                         />
           <g>
-            <g font-family="NotoSansDisplay-Regular" font-size="13" fill="black">
+            <g font-size="12" fill="black">
               <text x="0.5" y="-129.365">0</text>
             </g>
-            <g font-family="NotoSansDisplay-Regular" font-size="13" fill="black">
+            <g font-size="12" fill="black">
               <text x="60.5568" y="-129.365">2</text>
             </g>
-            <g font-family="NotoSansDisplay-Regular" font-size="13" fill="black">
+            <g font-size="12" fill="black">
               <text x="124.549" y="-129.365">4</text>
             </g>
-            <g font-family="NotoSansDisplay-Regular" font-size="13" fill="black">
+            <g font-size="12" fill="black">
               <text x="188.54" y="-129.365">6</text>
             </g>
-            <g font-family="NotoSansDisplay-Regular" font-size="13" fill="black">
+            <g font-size="12" fill="black">
               <text x="252.532" y="-129.365">8</text>
             </g>
           </g>
