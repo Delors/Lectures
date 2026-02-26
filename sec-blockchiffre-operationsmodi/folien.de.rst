@@ -21,7 +21,7 @@ Betriebsmodi bei Blockchiffren
 
 :Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
 :Kontakt: michael.eichberg@dhbw.de
-:Version: 1.3.2
+:Version: 1.3.3
 
 .. class:: sources
     
@@ -60,39 +60,6 @@ Betriebsmodi
 
 
 
-Betriebsmodi - Übersicht
-------------------------------
-
-.. story::
-
-    .. csv-table::
-        :class: highlight-row-on-hover incremental-table-rows sticky-header
-        :width: 100%
-        :widths: 20 40 40
-        :header: Modus, Beschreibung, Typische Anwendung
-
-        **Electronic Codebook (ECB)**, Jeder Block von Klartextbits wird unabhängig voneinander mit demselben Schlüssel verschlüsselt., "
-        • Sichere Übertragung einzelner Werte (z. B. eines Verschlüsselungsschlüssels)
-        "
-        **Cipher Block Chaining (CBC)**, Die Eingabe für den Verschlüsselungsalgorithmus ist die XOR-Verknüpfung des nächsten Klartextblocks mit dem vorangegangenen Chiffretextblock., "
-        - Universelle blockorientierte Übertragung
-        - Authentifizierung
-        "
-        **Cipher Feedback (CFB)**, "Die Eingabe wird *Bit für Bit* verarbeitet.
-        Der vorhergehende Chiffretext wird als Eingabe für den Verschlüsselungsalgorithmus verwendet, um eine pseudozufällige Ausgabe zu erzeugen, die mit dem Klartext XOR-verknüpft wird, um die nächste Einheit des Chiffretextes zu erzeugen.", "
-        - Allgemeine stromorientierte Übertragung
-        - Authentifizierung
-        "
-        **Output Feedback (OFB)**, "Ähnlich wie CFB, mit dem Unterschied, dass die Eingabe für den Verschlüsselungsalgorithmus die vorangegangene Verschlüsselungsausgabe ist, und volle Blöcke verwendet werden.", "
-        • Stromorientierte Übertragung über verrauschte Kanäle (z. B. Satellitenkommunikation)
-        "
-        "**Counter (CTR**)", "Jeder Klartextblock wird mit einem verschlüsselten Zähler XOR-verknüpft. Der Zähler wird für jeden nachfolgenden Block erhöht.", "
-        - Blockorientierte Übertragung für allgemeine Zwecke
-        - Nützlich für Hochgeschwindigkeitsanforderungen
-        "
-
-
-
 .. class:: new-section transition-fade
 
 Grundlegende Blockchiffren
@@ -105,10 +72,11 @@ Electronic Codebook\ [#]_
 
 .. image:: opensource-drawings/ecb_encryption.svg
     :align: center
+    :class: light-image
 
 .. image:: opensource-drawings/ecb_decryption.svg
     :align: center
-    :class: incremental
+    :class: light-image
 
 .. [#] Bilder von: `White Timberwolf <https://commons.wikimedia.org/wiki/User:WhiteTimberwolf>`__
 
@@ -117,55 +85,69 @@ Electronic Codebook\ [#]_
 Padding-Modi in Blockchiffren
 -------------------------------------
 
-.. story::
+.. deck::
 
-    .. remark::
+    .. card::
 
-        Bei Blockchiffren (z. B. AES mit 128 Bit = 16 Byte Blockgröße) muss die zu verschlüsselnde Nachricht eine exakte Vielfache der Blockgröße sein. Ist das nicht der Fall, wird Padding verwendet, um die Nachricht auf ein vielfaches der Blockgröße zu bringen.
+        .. remark::
 
-    .. rubric:: Ausgewählte Modi
+            Bei Blockchiffren (z. B. AES mit 128 Bit = 16 Byte Blockgröße) muss die zu verschlüsselnde Nachricht eine exakte Vielfache der Blockgröße sein. Ist das nicht der Fall, wird Padding verwendet, um die Nachricht auf ein vielfaches der Blockgröße zu bringen.
 
-    .. class:: incremental-list
+    .. card::
 
-    - PKCS#7
+        .. rubric:: PKCS#7
 
-      Füllt den restlichen Block mit Bytes, deren Wert gleich der Anzahl hinzugefügter Bytes ist.
+        Füllt den restlichen Block mit Bytes, deren Wert gleich der Anzahl hinzugefügter Bytes ist.
 
-      .. example::
+        .. example::
 
-        - Nachricht mit 13 Byte → 3 Bytes Padding → ``03 03 03``
-        - Nachricht mit Blocklänge (z. B. 16 Byte) → ein kompletter zusätzlicher Block mit 16 × ``0x10``
+            - Nachricht mit 13 Byte → 3 Bytes Padding → ``03 03 03``
+            - Nachricht mit Blocklänge (z. B. 16 Byte) → ein kompletter zusätzlicher Block mit 16 × ``0x10``
 
-    - ANSI X.923
+    .. card::
 
-      Auffüllen mit ``0x00``, außer dem letzten Byte, das die Anzahl Padding-Bytes angibt.
+        .. rubric:: ANSI X.923
 
-    - ISO/IEC 7816-4
+        Auffüllen mit ``0x00``, außer dem letzten Byte, das die Anzahl Padding-Bytes angibt.
 
-      Beginnt mit ``0x80``, gefolgt von Nullen.
+    .. card::
 
-    - Zero Padding
+        .. rubric:: ISO/IEC 7816-4
 
-      .. attention::
+        Beginnt mit ``0x80``, gefolgt von Nullen.
 
-        Füllt mit Nullen (``0x00``). Funktioniert **nur**, wenn die Nachricht nie mit `0x00` endet, sonst ist Entschlüsselung mehrdeutig!
+    .. card::
 
-    .. compound::
-        :class: incremental
+        .. rubric:: Zero Padding
+
+        Füllt mit Nullen (``0x00``) auf.
+
+        .. attention::
+            :class: incremental
+
+            Funktioniert *nur*, wenn die Nachricht nie mit ``0x00`` endet, sonst ist Entschlüsselung mehrdeutig!
+
+    .. card::
 
         .. rubric:: Verhalten bei voller Blockgröße - Zusammenfassung
 
         Angenommen, die Nachricht ist exakt 16 Byte lang (z. B. `"1234567890ABCDEF"`), so ergibt sich:
 
+        .. class:: table-data-monospaced font-size-90
+
         =================  ======================================================
         **Padding-Modus**   **Erweiterte Nachricht (hex)**
-        PKCS#7              `... 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10`
-        ANSI X.923          `... 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 10`
-        ISO/IEC 7816-4      `... 80 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00`
-        Zero Padding        `... 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00`
+        =================  ======================================================
+        PKCS#7              ... 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10
+        ANSI X.923          ... 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 10
+        ISO/IEC 7816-4      ... 80 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+        Zero Padding        ... 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
         =================  ======================================================
 
-        Hinweis: Bei allen Modi wird bei Nachrichten mit dem x-fachen der Blocklänge ein **zusätzlicher** Padding-Block hinzugefügt, um bei der Entschlüsselung korrekt erkennen zu können, ob Padding entfernt werden muss.
+        .. hint:: 
+            :class: incremental
+            
+            Bei allen Modi wird bei Nachrichten mit dem x-fachen der Blocklänge ein **zusätzlicher** Padding-Block hinzugefügt, um bei der Entschlüsselung korrekt erkennen zu können, ob Padding entfernt werden muss.
 
 
 
@@ -207,10 +189,11 @@ Cipher Block Chaining\ [#]_
 
 .. image:: opensource-drawings/cbc_encryption.svg
     :align: center
+    :class: light-image
 
 .. image:: opensource-drawings/cbc_decryption.svg
     :align: center
-    :class: incremental
+    :class: light-image incremental
 
 .. [#] Bilder von: `White Timberwolf <https://commons.wikimedia.org/wiki/User:WhiteTimberwolf>`__
 
@@ -239,8 +222,8 @@ Konvertierung von Blockchiffren in Stromchiffre
 
 Bei AES, DES oder jeder anderen Blockchiffre erfolgt die Verschlüsselung immer Block-für-Block mit Blockgrößen von b Bits:
 
-- Im Fall von (3)DES: :math:`b=64`
-- Im Fall von AES: :math:`b=128`
+- Im Fall von (3)DES: b = 64
+- Im Fall von AES: b = 128
 
 
 
@@ -250,10 +233,11 @@ Bei AES, DES oder jeder anderen Blockchiffre erfolgt die Verschlüsselung immer 
 
 .. image:: opensource-drawings/cfb_encryption.svg
     :align: center
+    :class: light-image
 
 .. image:: opensource-drawings/cfb_decryption.svg
     :align: center
-    :class: incremental
+    :class: light-image incremental
 
 .. [#] Bilder von: `White Timberwolf <https://commons.wikimedia.org/wiki/User:WhiteTimberwolf>`__
 
@@ -264,6 +248,7 @@ Bei AES, DES oder jeder anderen Blockchiffre erfolgt die Verschlüsselung immer 
 
 .. image:: drawings/operationsmodi/cfb_s_bits.svg
     :align: center
+    :class: light-image 
 
 
 
@@ -272,10 +257,11 @@ Bei AES, DES oder jeder anderen Blockchiffre erfolgt die Verschlüsselung immer 
 
 .. image:: opensource-drawings/ofb_encryption.svg
     :align: center
+    :class: light-image
 
 .. image:: opensource-drawings/ofb_decryption.svg
     :align: center
-    :class: incremental
+    :class: light-image incremental
 
 .. [#] Bilder von: `White Timberwolf <https://commons.wikimedia.org/wiki/User:WhiteTimberwolf>`__
 
@@ -287,11 +273,12 @@ Bei AES, DES oder jeder anderen Blockchiffre erfolgt die Verschlüsselung immer 
 -----------------
 
 .. image:: opensource-drawings/ctr_encryption.svg
+    :class: light-image
     :align: center
 
 .. image:: opensource-drawings/ctr_decryption.svg
     :align: center
-    :class: incremental
+    :class: light-image incremental
 
 .. [#] Bilder von: `White Timberwolf <https://commons.wikimedia.org/wiki/User:WhiteTimberwolf>`__
 
@@ -311,14 +298,47 @@ Bei AES, DES oder jeder anderen Blockchiffre erfolgt die Verschlüsselung immer 
 
 
 
+.. (Feb. 26 - entfernt, da es zu detailliert ist.)
+.. Rückkopplungseigenschaften\ [#]_  der Betriebsmodi
+   -------------------------------------------------------------------------------
 
-Rückkopplungseigenschaften\ [#]_  der Betriebsmodi
--------------------------------------------------------------------------------
-
-.. image:: drawings/operationsmodi/feedback_characteristics.svg
+  .. image:: drawings/operationsmodi/feedback_characteristics.svg
     :align: center
 
-.. [#] (:eng:`Feedback Characteristics`)
+  .. [#] (:eng:`Feedback Characteristics`)
+
+
+
+Betriebsmodi - Übersicht
+------------------------------
+
+.. story::
+
+    .. csv-table::
+        :class: highlight-row-on-hover incremental-table-rows sticky-header
+        :width: 100%
+        :widths: 20 40 40
+        :header: Modus, Beschreibung, Typische Anwendung
+
+        **Electronic Codebook (ECB)**, Jeder Block von Klartextbits wird unabhängig voneinander mit demselben Schlüssel verschlüsselt., "
+        • Sichere Übertragung einzelner Werte (z. B. eines Verschlüsselungsschlüssels)
+        "
+        **Cipher Block Chaining (CBC)**, Die Eingabe für den Verschlüsselungsalgorithmus ist die XOR-Verknüpfung des nächsten Klartextblocks mit dem vorangegangenen Chiffretextblock., "
+        - Universelle blockorientierte Übertragung
+        - Authentifizierung
+        "
+        **Cipher Feedback (CFB)**, "Die Eingabe wird *Bit für Bit* verarbeitet.
+        Der vorhergehende Chiffretext wird als Eingabe für den Verschlüsselungsalgorithmus verwendet, um eine pseudozufällige Ausgabe zu erzeugen, die mit dem Klartext XOR-verknüpft wird, um die nächste Einheit des Chiffretextes zu erzeugen.", "
+        - Allgemeine stromorientierte Übertragung
+        - Authentifizierung
+        "
+        **Output Feedback (OFB)**, "Ähnlich wie CFB, mit dem Unterschied, dass die Eingabe für den Verschlüsselungsalgorithmus die vorangegangene Verschlüsselungsausgabe ist, und volle Blöcke verwendet werden.", "
+        • Stromorientierte Übertragung über verrauschte Kanäle (z. B. Satellitenkommunikation)
+        "
+        "**Counter (CTR**)", "Jeder Klartextblock wird mit einem verschlüsselten Zähler XOR-verknüpft. Der Zähler wird für jeden nachfolgenden Block erhöht.", "
+        - Blockorientierte Übertragung für allgemeine Zwecke
+        - Nützlich für Hochgeschwindigkeitsanforderungen
+        "
 
 
 
@@ -371,9 +391,9 @@ Modus ist auch ein IEEE-Standard, IEEE Std 1619-2007
 *Tweakable* Blockchiffren - grundlegende Struktur
 -----------------------------------------------------
 
-.. deck::
+.. deck:: light-image
 
-    .. card::
+    .. card:: 
 
         .. image:: drawings/operationsmodi/tweakable_block_cipher-encryption.svg
             :align: center
@@ -410,13 +430,14 @@ XTS-AES Operation auf einem Block
 ------------------------------------
 
 .. image:: drawings/operationsmodi/xts_aes.svg
+    :class: light-image
     :align: center
 
 .. supplemental::
 
     .. hint::
 
-        Dargestellt ist der Fall, dass alle zu verschlüsselnden (Klartext-)Blöcke eine Größe von 128 Bit haben. Sollt der letzte Block nicht eine Größe von 128 Bit haben, dann kommt "Cipher Text Stealing" zum Einsatz.
+        Dargestellt ist der Fall, dass alle zu verschlüsselnden (Klartext-)Blöcke eine Größe von 128 Bit haben. Sollt der letzte Block nicht eine Größe von 128 Bit haben, dann kommt „Cipher Text Stealing“ zum Einsatz.
 
     - Schlüssel: es gilt: :math:`Schlüssel = Schlüssel_1\, ||\, Schlüssel_2`
     - P\ :sub:`j`: Der j-te Block des Klartexts. Alle Blöcke haben eine Länge von 128 bits. Eine (Klartext)dateneinheit – in der Regel ein Festplattensektor – besteht aus einer Folge von Klartextblöcken.
@@ -537,16 +558,15 @@ XTS-AES Operation auf einem Block
 Übung
 ---------------------
 
-.. story::
+.. scrollable::
 
     .. exercise:: OFB-Modus
 
         Verwenden Sie den OFB-Modus in Kombination mit einer Caesar-Chiffre, bei der die *Blockgröße* ein Zeichen sei.
 
-        Der Schlüssel ist die Anzahl der Zeichen, um die Sie ein Zeichen verschieben wollen - wie zuvor. Der IV ist ein Zeichen. Damit Sie ein XOR durchführen können, ordnen wir jedem Zeichen einen Wert zu und erweitern das Alphabet um die Ziffern 1 bis 3, "!", "?" und das "_". Auf diese Weise ist es immer möglich, ein sinnvolles Zeichen auszugeben.
+        Der Schlüssel ist die Anzahl der Zeichen, um die Sie ein Zeichen verschieben wollen - wie zuvor. Der IV ist ein Zeichen. Damit Sie ein XOR durchführen können, ordnen wir jedem Zeichen einen Wert zu und erweitern das Alphabet um die folgenden 6 Zeichen: { 1, 2, 3, !, ?, _ }. Auf diese Weise ist es immer möglich, ein sinnvolles Zeichen auszugeben.
 
         .. compound::
-            :class: incremental
 
             Daraus ergibt sich die folgende Kodierung:
 
@@ -555,6 +575,8 @@ XTS-AES Operation auf einem Block
                 .. cell:: width-30
 
                     .. csv-table::
+                        :stub-columns: 1
+                        :class: table-data-monospaced 
                         :header: Idx., Zeichen, Binär
 
                         0, A, 00000
@@ -572,6 +594,8 @@ XTS-AES Operation auf einem Block
                 .. cell:: width-30
 
                     .. csv-table::
+                        :stub-columns: 1
+                        :class: table-data-monospaced 
                         :header: Idx., Zeichen, Binär
 
                         11, L, 01011
@@ -589,6 +613,8 @@ XTS-AES Operation auf einem Block
                 .. cell:: width-30
 
                     .. csv-table::
+                        :stub-columns: 1
+                        :class: table-data-monospaced 
                         :header: Idx., Zeichen, Binär
 
                         22, W, 10110
@@ -604,8 +630,7 @@ XTS-AES Operation auf einem Block
 
             - Verschlüsseln Sie nun die Nachricht "hello" (k = 3 und IV = !) mit dieser Chiffre.
             - Entschlüsseln Sie nun die Nachricht "OCEBL_RLI1MELOA". Der IV ist A und der Schlüssel ist 3.
-
-            Welchen Effekt hat die Anwendung des OFB-Modus auf die Nachrichten?
+            - Welchen Effekt hat die Anwendung des OFB-Modus auf die Nachrichten?
 
         .. solution::
             :pwd: Caesar_ofb
