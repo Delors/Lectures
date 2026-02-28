@@ -16,7 +16,7 @@ Kontrollfragen: Blockchiffren
 
 :Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
 :Kontakt: michael.eichberg@dhbw.de, Raum 149B
-:Version: 1.1.0
+:Version: 1.2.0
 
 
 
@@ -47,7 +47,7 @@ Kontrollfragen
         .. solution::
             :pwd: Bloecke...
 
-            Eine Blockchiffre verarbeitet im Allgemeinen Daten in Blöcken zu (typischerweise) 8 oder 16 Byte (64-128Bit); Stromchiffre Byte für Byte.
+            Eine Blockchiffre verarbeitet im Allgemeinen Daten in Blöcken zu (typischerweise) 8 oder 16 Byte (d. h. 64 oder 128Bit); Stromchiffre Byte für Byte.
 
     .. exercise:: Sind Blockchiffren Stromchiffren technisch überlegen?
         :class: incremental
@@ -117,7 +117,6 @@ Kontrollfragen
             :pwd: selbeAlgo
 
             Damit derselbe Algo verwendet werden kann für die Verschlüsselung und Entschlüsselung.
-
 
     .. exercise:: Welche Anforderung muss die Rundenfunktion F erfüllen?
         :class: incremental
@@ -210,4 +209,4 @@ Kontrollfragen
         .. solution::
             :pwd: Diffusion...
 
-            Die Initiale Permutation (IP) dient der Umordnung der Bits des Klartexts vor den Rundenoperationen. Sie erhöht die Diffusion, ist jedoch kryptographisch nicht entscheidend.
+            Die IP ordnet Bits um, hat aber keinen kryptographischen Nutzen, da sie fest, öffentlich bekannt und schlüsselunabhängig ist. Sie ist ein historisches Implementierungsartefakt.

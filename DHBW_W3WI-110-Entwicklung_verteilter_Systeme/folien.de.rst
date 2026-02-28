@@ -1093,7 +1093,7 @@ Ablauf - W3WI-110 - Entwicklung verteilter Systeme 24SEA
   - \20. Feb 2026 von 13:00 bis 17:00 - Themenvergabe und Vorlesung 
   - \27. Feb 2026 von 13:00 bis 17:00 - Vorlesung
   - \06. Mar 2026 von 13:00 bis 17:00 - Vorträge (Web) 1. - 12. 
-  - \13. Mar 2026 von 13:00 bis 17:00 - Vorträge (Web) 13. - 25.
+  - \10. Mar 2026 von 13:00 bis 17:00 - Vorträge (Web) 13. - 27.
   - \20. Mar 2026 von 13:00 bis 17:00 - Vorträge (Verteilte) 1. - 12.
   - \27. Mar 2026 von 13:00 bis 17:00 - Vorträge (Verteilte) 13. - 25.
 
