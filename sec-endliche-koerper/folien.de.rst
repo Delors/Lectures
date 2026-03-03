@@ -251,12 +251,12 @@ Eigenschaften von Gruppen, Ringen und Körpern
 
 
 
-
 Unterteilung von Körpern
 -----------------------------
 
 .. image:: drawings/algebraische_strukturen/koerper.svg
     :alt: Klassifikation von Körpern
+    :class: light-image
     :align: center
 
 
@@ -506,6 +506,7 @@ Die Behandlung von Polynomen
 
 .. image:: drawings/algebraische_strukturen/polynom_f(x).svg
     :alt: Die Behandlung von Polynomen
+    :class: light-image
     :align: center
 
 .. supplemental::
