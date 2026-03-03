@@ -17,7 +17,7 @@ A broad overview of distributed systems!
 
 :Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
 :Kontakt: michael.eichberg@dhbw.de, Raum 149B
-:Version: 1.0.2
+:Version: 1.0.3
 
 .. supplemental::
 
@@ -61,7 +61,7 @@ Recommended Literature
 -----------------------
 
 .. image:: screenshots/distributed-systems.net.webp
-    :width: 75%
+    :class: screenshot
     :align: center
 
 .. supplemental::
@@ -69,9 +69,8 @@ Recommended Literature
     Supplemental material for interested students:
 
     .. image:: screenshots/microservices.jpg
-        :width: 70%
         :align: center
-        :class: trbl-shadow
+        :class: screenshot
 
 
 
@@ -80,8 +79,8 @@ Recommended Podcast: `SE-Radio <https://se-radio.net>`__
 -----------------------------------------------------------
 
 .. image:: screenshots/se-radio.net.webp
-    :width: 75%
     :align: center
+    :class: screenshot
 
 
 
@@ -89,9 +88,8 @@ Recommended Podcast: `Thoughtworks Technology Podcast <https://www.thoughtworks.
 -------------------------------------------------------------------------------------------------------------------------------------
 
 .. image:: screenshots/thoughtworks-technology-podcast.webp
-    :width: 70%
     :align: center
-    :class: trbl-shadow
+    :class: screenshot
 
 
 
@@ -108,11 +106,11 @@ Distributed vs. Decentralized
 .. image:: drawings/distributed-vs-decentralized.svg
     :align: center
     :width: 100%
-    :class: icon
+    :class: light-image
 
 .. supplemental::
 
-    .. admonition:: Zwei Ansichten zur Realisierung verteilter Systeme
+    .. admonition:: Two views on the implementation of distributed systems
 
         - **Integrative view**: Connection of existing (locally) networked computer systems to form a larger system.
         - **Expansive view**: an existing networked computer system is expanded to include additional computers.
@@ -276,7 +274,7 @@ Aspects of Distribution Transparency
 
 .. supplemental::
 
-    Datendarstellung: Big-Endian vs. Little-Endian; ASCII vs. Iso-Latin 8859-1 vs. UTF-8
+    Representation of Information: Big-Endian vs. Little-Endian; ASCII vs. Iso-Latin 8859-1 vs. UTF-8
 
 
 Degree of achievable Distribution Transparency
@@ -563,6 +561,7 @@ Analysis of the Scalability of Centralized Systems
 
         .. image:: drawings/queuing-system.svg
             :align: center
+            :class: light-image
 
         .. rubric:: Assumptions
 
@@ -654,6 +653,7 @@ Analysis of the Scalability of Centralized Systems
 
             .. image:: drawings/average_number_of_requests_in_system.svg
                 :align: center
+                :class: light-image
 
 
     .. card::
@@ -674,7 +674,8 @@ Analysis of the Scalability of Centralized Systems
         - \
 
           .. image:: drawings/response_time.svg
-                :alt: Response time w.r.t. utilization
+                :alt: Response Time w.r.t. Utilization
+                :class: light-image
 
           .. class:: incremental-list
 
@@ -762,6 +763,7 @@ Shifting Calculations to Clients
 
 .. image:: drawings/moving-computations.svg
     :align: center
+    :class: light-image
 
 
 
@@ -808,11 +810,13 @@ Parallel Computing
 
   .. image:: drawings/multiprocessor-vs-multicomputer/multiprocessor.svg
             :align: center
+            :class: light-image
 
 - Multicomputer
 
   .. image:: drawings/multiprocessor-vs-multicomputer/multicomputer.svg
             :align: center
+            :class: light-image
 
 .. supplemental::
 
@@ -855,6 +859,7 @@ Amdahl's law - Limits to Scalability
         .. image:: drawings/amdahl.svg
             :alt: Amdahls Law visualized
             :align: center
+            :class: light-image
 
 
 
@@ -1042,22 +1047,18 @@ MapReduce - Programming model and Middleware for Parallel Computing
 
 
 
+.. MapReduce - Visualization of an Example [removed March 2 2026] 
+   ----------------------------------------------------------
 
-.. class:: smaller-slide-title
+    .. image:: drawings/mapreduce.svg
+        :width: 100%
+        :align: center
 
-MapReduce - Visualization of an Example
-----------------------------------------------------------
+    .. supplemental::
 
+        Here it is the calculation of the frequency of words in a very large data set.
 
-.. image:: drawings/mapreduce.svg
-    :width: 100%
-    :align: center
-
-.. supplemental::
-
-    Here it is the calculation of the frequency of words in a very large data set.
-
-    Another canonical example is the calculation of an inverted index. I. e., the mapping of words to the documents/webpages in which they occur.
+        Another canonical example is the calculation of an inverted index. I. e., the mapping of words to the documents/webpages in which they occur.
 
 
 
@@ -1107,6 +1108,7 @@ A group of high-end systems connected via a LAN.
 
 .. image:: drawings/cluster-computing.svg
     :align: center
+    :class: light-image
 
 .. supplemental::
 
@@ -1139,6 +1141,7 @@ Basic Architecture for Grid Computing
 .. class:: columns dd-margin-left-2em
 
 - .. image:: drawings/architecture-for-grid-computing.svg
+      :class: light-image
 
 - .. class:: no-margin
 
@@ -1285,6 +1288,7 @@ Transactions at Business Process Level
 
         .. image:: drawings/transactions/transaction.svg
             :align: center
+            :class: light-image
 
         .. container:: text-align-center margin-top-1em
 
@@ -1316,15 +1320,12 @@ Transactions at Business Process Level
 
 
 
-
-
-.. class:: smaller
-
 *Transaction Processing Monitor (TPM)*
 ---------------------------------------
 
 .. image:: drawings/transactions/tpm.svg
     :align: center
+    :class: light-image
 
 .. supplemental::
 
@@ -1349,6 +1350,7 @@ Middleware enables communication between applications.
 
 .. image:: drawings/middleware.svg
     :align: center
+    :class: light-image
 
 .. supplemental::
 
@@ -1438,6 +1440,7 @@ Modern Distributed Systems
 
 .. image:: drawings/mobile_computing/mobile_cloud_computing.svg
     :align: center
+    :class: light-image
 
 
 *Mobile Edge Computing*
@@ -1445,6 +1448,7 @@ Modern Distributed Systems
 
 .. image:: drawings/mobile_computing/mobile_edge_computing.svg
     :align: center
+    :class: light-image
 
 
 
@@ -1459,6 +1463,7 @@ The nodes to which sensors are attached:
 
 .. image:: drawings/sensor_networks/operator_stores_and_processes_data.svg
     :align: center
+    :class: light-image
 
 
 
@@ -1467,6 +1472,7 @@ The nodes to which sensors are attached:
 
 .. image:: drawings/sensor_networks/nodes_store_and_process_data.svg
     :align: center
+    :class: light-image
 
 
 
@@ -1475,6 +1481,7 @@ The *Cloud-Edge Continuum*
 
 .. image:: drawings/cloud_edge_continuum.svg
     :align: center
+    :class: light-image
 
 
 
