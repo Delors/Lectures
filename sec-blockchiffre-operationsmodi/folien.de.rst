@@ -315,7 +315,7 @@ Betriebsmodi - Übersicht
 .. story::
 
     .. csv-table::
-        :class: highlight-row-on-hover incremental-table-rows sticky-header
+        :class: incremental-table-rows sticky-header dhbw
         :width: 100%
         :widths: 20 40 40
         :header: Modus, Beschreibung, Typische Anwendung
