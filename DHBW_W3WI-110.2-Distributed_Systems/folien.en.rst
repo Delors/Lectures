@@ -76,12 +76,12 @@ Presentations - General Conditions
 
 .. class:: incremental-list list-with-explanations
 
-- Each person should present for 10 Minutes sharp!
+- Each person should present for 12 Minutes sharp!
 - The presentations should deal in particular with the core content of the lecture and *be of a conceptual nature*.
 
   This means, after briefly presenting the overall purpose of the framework/technology/protocol, the architecture/the details must be presented. I. e., how errors are dealt with, which services are offered, which guarantees/security aspects are implemented, how scalability is achieved, etc.
 
-  No promotional presentations!
+  No promotional presentations and no extended motivation presentations! Focus on the topic at hand.
 - Presentations have to be in English.
 - The speakers should not rotate several times during the presentation. I. e. the first speaker presents first, then the second, and so on. This is necessary for the grading.
 
@@ -92,7 +92,7 @@ Presentations - Submissions
 
 .. attention::
 
-  You have to upload your presentation to Moodle 36 hours before you give the presentation.
+  You have to upload your presentation to Moodle up until 7 o'clock on the day of your presentation. 
 
 .. attention::
   :class: incremental
@@ -345,7 +345,7 @@ Topic Assignment
     * - \15. Log Aggregation
       - 
       - 
-    * - \16. Leader Election (Bully/Ring Algorithm)
+    * - \16. Leader Election:  (a) Bully, (b) Ring Algorithm
       - 
       - 
     * - \17. Quorum Systems (Majority Voting)
@@ -386,49 +386,49 @@ Moderator Assignment
     .. cell:: width-50
 
       .. csv-table::
-          :header: Topic Id, Moderator Id
+          :header: Topic Id, Moderated by Student with Topic Id
           :width: 100%
           :widths: 50 50
           :class: compact dhbw
           :stub-columns: 1
 
-          1,
-          2,
-          3,
-          4,
-          5,
-          6,
-          7,
-          8,  
-          9,
-          10, 
-          11,
-          12,
-          13,
+          1, 7
+          2, 8
+          3, 10
+          4, 11
+          5, /
+          6, 12
+          7, 1
+          8, 2 
+          9, /
+          10, 3
+          11, 4
+          12, 6
+          13, /
 
 
     .. cell:: width-50
 
       .. csv-table::
-          :header: Topic Id, Moderator Id
+          :header: Topic Id, Moderated by Student with Topic Id
           :width: 100%
           :widths: 50 50
           :class: compact dhbw
           :stub-columns: 1
 
-          14,
-          15,
-          16,
-          17,
-          18,  
-          19,
-          20, 
-          21,
-          22,
-          23,
-          24,
-          25,
-          26,
+          14, 15
+          15, 16a
+          16, 18
+          17, 19
+          18, 16b 
+          19, 23
+          20, 24
+          21, 14
+          22, 17
+          23, 20 
+          24, 21
+          25, /
+          
 
 
 
@@ -437,16 +437,15 @@ Presentations - Grading (max 25 Points)
 
 .. class:: list-with-explanations incremental-list
 
-- Presentation (max 20 Points)
+- Presentation (max 22 Points)
 - Checklist (max 1 Point)
-- Moderation (max 4 Points)
+- Moderation (max 2 Points)
 
   A Moderator has three main tasks:
 
   1. :peripheral:`(Introduce the speaker) and` *motivate the topic*.
   2. Keep track of time and *give time warnings to the presenter* (2 minutes left, time is up); abort the presentation if necessary (-1 minute).
   3. Lead a short Q&A session (2-3 questions) after the presentation; if there are no questions from the audience, *the moderator should have two to three questions*.
-
 
 
 
@@ -463,27 +462,52 @@ Programming Task (max 25 Points)
 Lecture - Schedule
 ------------------------------------------
 
-:3. Mar 2026: Lecture
+.. scrollable::
 
-:17. Mar 2026: Lecture
-    Assignment of moderators to presentation topics
+  :3. Mar 2026: Lecture
 
-:7. Apr 2026: 
-    Presentations (~8 students)
+  :17. Mar 2026: Lecture
+      Assignment of moderators to presentation topics (see above)
 
-    Programming Task Explanation 
+  :7. Apr 2026: 
+      - Presentations:
+      
+        - \01. Introduction to Virtualization & Use Cases
+        - \02. Hypervisors - Architecture & Types
+        - \03. Virtual Machines 
+        - \04. Containers & OS-level Virtualization
+        - \06. Network & I/O Virtualization
+        - \07. QUIC
 
-    Lecture
+      - Programming Task Explanation 
 
-:20. Apr 2026 (5VL): 
-    Presentations (~8 students) 
+      - Lecture
 
-    Lecture
+  :20. Apr 2026 (5VL): 
+      - Presentations (8 students) 
 
-:24. Apr 2026 (5VL): 
-    Presentations (~8 students) 
+        - \08. HTTP/3
+        - \10. Protobuf
+        - \11. Google RPC
+        - \12. SOP, CORS (Foundations)
+        - \14. CSP and SRI
+        - \15. Log Aggregation
+        - \16. Leader Election:  (a) Bully, (b) Ring Algorithm
 
-    Lecture
+      - Lecture
 
-:8. May 2026 (Event): 
-    Programming Task Submission Deadline (see Moodle for details)
+  :24. Apr 2026 (5VL): 
+      - Presentations (8 students) 
+      - - \17. Quorum Systems (Majority Voting)
+      - - \18. Consensus Fundamentals & Problem Definition
+      - - \19. Byzantine Fault Tolerance (PBFT)
+      - - \20. Paxos Family
+      - - \21. Raft - Understandable Consensus
+      - - \22. Eventual Consistency and Gossip Protocol
+      - - \23. CRDTs
+      - - \24. Ceph
+
+      - Lecture
+
+  :8. May 2026 (Event): 
+      - Programming Task Submission Deadline (see Moodle for details)
