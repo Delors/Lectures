@@ -17,7 +17,7 @@ Einführung in die Zahlentheorie
 
 :Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
 :Kontakt: michael.eichberg@dhbw.de
-:Version: 1.1.5
+:Version: 1.2.0
 
 .. class:: sources
 
@@ -121,7 +121,7 @@ die der folgenden Beziehung gehorchen: :math:`a = qn + r; \quad 0 \leq r < n,\qu
 
 .. image:: drawings/division_algorithm/division_algorithm.svg
     :alt: Die Beziehung a=qn+r
-    :class: incremental
+    :class: light-image incremental 
     :align: center
 
 
@@ -133,6 +133,7 @@ Teilungsalgorithmus für negative :math:`a`
 .. image:: drawings/division_algorithm/division_algorithm_for_negative_a.svg
     :alt: The relationship a=qn+r for negative a
     :align: center
+    :class: light-image
 
 .. example::
     :class: incremental
@@ -216,6 +217,7 @@ Berechnung des GGT (:math:`ggt(a,b)`) mit Hilfe des euklidischen Algorithmus
 -------------------------------------------------------------------------------
 
 .. image:: drawings/euclidean_algorithm/algorithm.svg
+    :class: light-image 
     :align: center
 
 
@@ -224,6 +226,7 @@ Beispiel für die Berechnung des GGT (:math:`ggt(710,310)`) mit Hilfe des euklid
 --------------------------------------------------------------------------------------------------------
 
 .. image:: drawings/euclidean_algorithm/example.svg
+    :class: light-image 
 
 
 
@@ -695,12 +698,14 @@ Erweiterter Euklidischer Algorithmus - Systematische Berechnung für :math:`ggt(
                 Klassischer Algorithmus:
 
                 .. image:: drawings/euclidean_algorithm/example.svg
+                    :class: light-image
 
             .. cell:: width-50 incremental
 
                 Umgestellt:
 
                 .. image:: drawings/euclidean_algorithm/example-umgestellt.svg
+                    :class: light-image
 
 
         .. supplemental::
@@ -713,6 +718,7 @@ Erweiterter Euklidischer Algorithmus - Systematische Berechnung für :math:`ggt(
     .. card::
 
         .. image:: drawings/euclidean_algorithm/example-ausgerechnet.svg
+            :class: light-image
             :align: center
 
 
@@ -1029,6 +1035,8 @@ Deterministische Primzahltests
 
 
 
+.. class:: hide-slide since_03.02.2026
+
 Chinesischer Restsatz
 ---------------------------------------------------------------
 
@@ -1057,7 +1065,9 @@ Chinesischer Restsatz
 
 
 
-Chinesischer Restsatz - Beispiel in :math:`Z_{10}`
+.. class:: hide-slide since_03.02.2026
+
+Chinesischer Restsatz - Beispiel in :math:`Z_{10}` 
 -------------------------------------------------------------
 
 Nehmen wir an, dass die (*relativ prim/koprimalen*) Faktoren einer Zahl :math:`x`:
@@ -1077,7 +1087,6 @@ Da :math:`x\bmod 2 = 0` ist muss :math:`x` eine gerade Zahl sein; außerdem ist 
 .. class:: incremental
 
 Die eindeutige Lösung in :math:`Z_{10}` ist: :math:`8`.
-
 
 .. container:: incremental
 
@@ -1113,7 +1122,7 @@ Die eindeutige Lösung in :math:`Z_{10}` ist: :math:`8`.
 
 
 
-.. class:: center-content
+.. class:: center-content hide-slide since_03.02.2026
 
 Chinesische Restsatz - Zusammenfassung
 -----------------------------------------
@@ -1280,7 +1289,7 @@ Chinesische Restsatz - Zusammenfassung
 
 
 
-.. class:: exercises
+.. class:: exercises hide-slide since_03.02.2026
 
 Übung
 ---------------------------------
@@ -1294,23 +1303,23 @@ Chinesische Restsatz - Zusammenfassung
 
         1. [Modellierung des Problems]
 
-           :math:`x \equiv 2 \pmod{4}` und :math:`x \equiv 3 \pmod{7}`
+        :math:`x \equiv 2 \pmod{4}` und :math:`x \equiv 3 \pmod{7}`
         2. [Bestimme :math:`x_1` und :math:`x_2`]
 
-           Sei :math:`a_1 = 2`, :math:`m_1 = 4`, :math:`a_2 = 3`, :math:`m_2 = 7`
+        Sei :math:`a_1 = 2`, :math:`m_1 = 4`, :math:`a_2 = 3`, :math:`m_2 = 7`
 
-           (Zur Erinnerung: :math:`m_2 \times x_1 \equiv 1 \pmod{m_1}` und :math:`m_1 \times x_2 \equiv 1 \pmod{m_2}`)
+        (Zur Erinnerung: :math:`m_2 \times x_1 \equiv 1 \pmod{m_1}` und :math:`m_1 \times x_2 \equiv 1 \pmod{m_2}`)
 
-           Somit:
+        Somit:
 
-           :math:`(m_1 = 4) \times x_2 \equiv 1 \pmod{(m_2 = 7})` bzw.
+        :math:`(m_1 = 4) \times x_2 \equiv 1 \pmod{(m_2 = 7})` bzw.
 
-           :math:`(m_2 = 7) \times x_1 \equiv 1 \pmod{(m_1 = 4})`
+        :math:`(m_2 = 7) \times x_1 \equiv 1 \pmod{(m_1 = 4})`
 
-           d. h.:
+        d. h.:
 
-           :math:`x_1 = 3` und :math:`x_2 = 2`
+        :math:`x_1 = 3` und :math:`x_2 = 2`
 
         3. [Berechne]
 
-           :math:`x = 2 \times 7 \times 3 + 3 \times 4 \times 2 = 66`
+        :math:`x = 2 \times 7 \times 3 + 3 \times 4 \times 2 = 66`
