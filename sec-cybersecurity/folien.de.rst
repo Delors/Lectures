@@ -15,7 +15,7 @@ Cybersecurity
 
 :Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
 :Kontakt: michael.eichberg@dhbw.de
-:Version: 2.12.3
+:Version: 2.12.4
 
 .. supplemental::
 
@@ -803,8 +803,10 @@ Ausgewählte Angriffe, Angriffsmethoden und Bedrohungsszenarien
 Schutzziele der IT-Sicherheit: CIA-Triade
 --------------------------------------------
 
-.. raw:: html
-    :class: center-content
+.. container:: light-image 
+
+  .. raw:: html
+    :class: center-content 
 
     <style>
     .cia-triangle {
@@ -817,6 +819,8 @@ Schutzziele der IT-Sicherheit: CIA-Triade
 
         * {
             position: absolute;
+            color: black ;
+            background-color: white;
         }
 
         .bottom-left {
@@ -876,12 +880,14 @@ Schutzziele der IT-Sicherheit: CIA-Triade
     }
     </style>
 
+    <div style="width: 25ch; height: 28ch;">
     <div class="cia-triangle incremental">
         <div class="bottom-left"></div>
         <div class="bottom-right"></div>
         <p class="availability">Availability</p>
         <div class="left incremental"><p class="confidentiality">Confidentiality</p></div>
         <div class="right incremental"><p class="integrity">Integrity</p></div>
+    </div>
     </div>
 
 .. supplemental::
@@ -1426,13 +1432,13 @@ NIS 2 - Berichtspflichten
 ----------------------------
 
 - Wesentliche und wichtige Einrichtungen müssen unverzüglich (*in jeden Fall aber innerhalb von 24 Stunden*) über jeden Sicherheitsvorfall unterrichten, der erhebliche Auswirkungen auf die Erbringung ihrer Dienste hat
-- Ein Sicherheitsvorfall gilt als erheblich, wenn
+- Ein Sicherheitsvorfall gilt als erheblich, wenn:
 
-    .. class:: incremental
+  .. class:: incremental
 
-    a) er schwerwiegende Betriebsstörungen der Dienste oder finanzielle Verluste für die betreffende Einrichtung verursacht hat oder verursachen kann;
+        a) er schwerwiegende Betriebsstörungen der Dienste oder finanzielle Verluste für die betreffende Einrichtung verursacht hat oder verursachen kann;
 
-    b) er andere natürliche oder juristische Personen durch erhebliche materielle oder immaterielle Schäden beeinträchtigt hat oder beeinträchtigen kann.
+        b) er andere natürliche oder juristische Personen durch erhebliche materielle oder immaterielle Schäden beeinträchtigt hat oder beeinträchtigen kann.
 
 
 
@@ -1489,6 +1495,7 @@ NIS 2 - zentrale Einrichtungen
 
 .. image:: images/nis_2.svg
     :align: center
+    :class: light-image
 
 .. supplemental::
 
