@@ -15,7 +15,7 @@ W3WI_110 - Entwicklung verteilter Systeme
 
 :Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
 :Kontakt: michael.eichberg@dhbw.de, Raum 149B
-:Version: 24SEA - 26. Februar 2026
+:Version: 24SEA - 3. März 2026
 
 
 
@@ -52,7 +52,7 @@ Prüfungsleistung - Portfolio
 ------------------------------------------
 
 - das Modul hat 55 VL (mit einem Workload von 150 Stunden insgesamt)
-  
+
   - Verteilte Systeme hat 22VL
   - Web-Programmierung hat 33VL
 
@@ -82,10 +82,10 @@ Vorträge - Themen (Web-Programmierung)
 
     .. class:: incremental-list list-with-explanations
 
-    - Die folgenden Vorträge behandeln Themen, die für das Projekt direkt relevant sind. 
-    - Die Vorschläge zu den konkreten Inhalten der Vorträge sind als Anregung zu verstehen. 
-    
-      Es ist ggf. weder möglich noch sinnvoll alle möglichen Themen abzudecken und kleinere Abweichungen sind ggf. möglich. Es ist Ihre Aufgabe einen in sich geschlossenen Vortrag zu gestalten, der die Grundlagen des Themas vermittelt und die Relevanz für die Projektarbeit klar macht. 
+    - Die folgenden Vorträge behandeln Themen, die für das Projekt direkt relevant sind.
+    - Die Vorschläge zu den konkreten Inhalten der Vorträge sind als Anregung zu verstehen.
+
+      Es ist ggf. weder möglich noch sinnvoll alle möglichen Themen abzudecken und kleinere Abweichungen sind ggf. möglich. Es ist Ihre Aufgabe einen in sich geschlossenen Vortrag zu gestalten, der die Grundlagen des Themas vermittelt und die Relevanz für die Projektarbeit klar macht.
 
     - Führen Sie immer in das Thema ein und geben Sie auch praktische Beispiele, damit die Relevanz für die Projektarbeit klar wird. D. h. die Vorträge sollen einen hohen „Hands-on“-Anteil haben.
     - :emph:`Sprechen Sie sich untereinander ab, damit die Vorträge nicht inhaltlich überlappen.`
@@ -110,7 +110,7 @@ Vorträge - Themen (Web-Programmierung)
     :Personen: 1 Person
     :Dauer: 10 Minuten
 
-    *Inhalte:* 
+    *Inhalte:*
 
     - CSS Variablen und CSS Properties (:css:`@property`) Grundlagen
     - Scope und Vererbung
@@ -140,7 +140,7 @@ Vorträge - Themen (Web-Programmierung)
     :Personen: 1 Person
     :Dauer: 10 Minuten
 
-    *Inhalte:* 
+    *Inhalte:*
 
     - Mobile-First vs. Desktop-First
     - Media Queries für verschiedene Geräte
@@ -149,7 +149,7 @@ Vorträge - Themen (Web-Programmierung)
 
   .. card::
 
-    **CSS Theming und Farbsysteme** 
+    **CSS Theming und Farbsysteme**
 
     :Personen: 2 Personen
     :Dauer: 20 Minuten
@@ -187,7 +187,7 @@ Vorträge - Themen (Web-Programmierung)
     - *Custom Buttons* und *Controls* (:html:`<button>`, etc.)
     - Tooltips und *Notifications* (:html:`popover`, etc.)
     - *Loading States* und *Progress Bars*
-  
+
   .. card::
 
     **Form Validation & User Input Handling**
@@ -203,7 +203,7 @@ Vorträge - Themen (Web-Programmierung)
     - User Feedback (Fehlermeldungen, visuelle Hinweise)
     - Input-Sanitization für Sicherheit
     - Best Practices für Formulare
-    
+
   .. card::
 
     **Grundlagen von modernem JavaScript (ES6+)**
@@ -232,7 +232,7 @@ Vorträge - Themen (Web-Programmierung)
         - Array-Methoden (map, filter, reduce)
 
   .. card::
-    
+
       **JavaScript Event Handling**
 
       :Personen: 1 Person
@@ -261,7 +261,7 @@ Vorträge - Themen (Web-Programmierung)
       - Performance-Best-Practices
 
   .. card::
-    
+
       **JavaScript State Management**
 
       :Personen: 1 Person
@@ -273,7 +273,7 @@ Vorträge - Themen (Web-Programmierung)
       - Immutability
       - State Synchronisation Client/Server
       - Observer Pattern
-      
+
   .. card::
 
       **JavaScript Error Handling und Debugging**
@@ -360,7 +360,7 @@ Vorträge - Themen (Web-Programmierung)
     - HTTPS und sichere Verbindungen
 
   .. card::
-  
+
     **WebSockets Grundlagen**
 
     :Personen: 1 Person
@@ -390,7 +390,7 @@ Vorträge - Themen (Web-Programmierung)
     - Verbindungsmanagement
 
   .. card::
-    
+
     **Express.js Grundlagen**
 
     :Personen: 1 Person
@@ -450,7 +450,7 @@ Vorträge - Themen (Web-Programmierung)
 
   .. card::
 
-    **Build-Tools und Bundling**  
+    **Build-Tools und Bundling**
 
     :Personen: 1 Person
     :Dauer: 10 Minuten
@@ -462,7 +462,7 @@ Vorträge - Themen (Web-Programmierung)
     - Code Splitting
     - Minification und Optimization
     - Development vs. Production Builds
-  
+
   .. card::
 
     **Accessibility (a11y) für Spiele**
@@ -489,25 +489,25 @@ Aufteilung der Vortragsthemen
     :header: ID, Titel
     :class: dhbw sticky-header
     :width: 100%
-    
+
     1, CSS Grid Layout
     2, CSS Custom Properties und Design Systems
-    3, CSS Animationen und Transitionen 
+    3, CSS Animationen und Transitionen
     4, Responsive Design
     5, Moderne Color Spaces
     6, Light/Dark Themes
     7, Moderne UI-Komponenten mit HTML/CSS
     8, Form validation
-    9, Accessibility (a11y) 
+    9, Accessibility (a11y)
     10, ES6+ Grundlegende Features
     11, ES6+ Erweiterte Features
-    12, JavaScript Event Handling 
+    12, JavaScript Event Handling
     13, DOM-Manipulation und Virtual DOM Konzepte
     14, JavaScript State Management
     15, Browser Storage APIs
     16, :obsolete:`API Design`
     17, Drag & Drop API
-    18, Fetch API 
+    18, Fetch API
     19, JavaScript Error Handling und Debugging
     20, Web Security Grundlagen
     21, WebSockets Grundlagen
@@ -527,25 +527,25 @@ Vorträge - Themen (Verteilte Systeme)
 
   .. card::
 
-    - Die folgenden Vorträge sollen alle konzeptioneller Natur sein und das grundlegende Verständnis für die jeweiligen Themen vermitteln. 
-      
-    - Es wird nicht erwartet, dass Sie tief in die technischen Details gehen oder komplexe Implementierungen präsentieren. 
+    - Die folgenden Vorträge sollen alle konzeptioneller Natur sein und das grundlegende Verständnis für die jeweiligen Themen vermitteln.
+
+    - Es wird nicht erwartet, dass Sie tief in die technischen Details gehen oder komplexe Implementierungen präsentieren.
 
     .. important::
 
         Studierende, die Präsentationen innerhalb desselben Blocks halten, müssen sich untereinander abstimmen, um Überschneidungen zu vermeiden und auch sicherstellen, dass der/die vorherige Person die Themen, die für die Präsentation vorausgesetzt werden, auch ausreichend behandelt werden.
-    
+
   .. card::
 
-    .. important:: 
+    .. important::
 
         Wenn Sie bestimmtes Wissen voraussetzen, das von einer anderen Studentin oder einem anderen Studenten behandelt werden soll(te), Sie sich aber nicht sicher sind, ob es ausreichend präsentiert wurde, erstellen Sie ggf. eine Backup-Folie, die das Thema abdeckt. Kennzeichnen Sie die Folie explizit als Backup-Folie mit einem Hinweis in welchem inhaltlichen Block das Thema hätte behandelt werden sollen. Diese Backup-Folie wird dann nicht auf das Zeitlimit angerechnet.
 
-  .. card:: 
+  .. card::
 
-        .. rubric:: Virtualisierung und Virtualisierungsplatformen 
+        .. rubric:: Virtualisierung und Virtualisierungsplatformen
 
-        .. class:: dhbw list-with-sublists show-list-item-content-on-hover 
+        .. class:: dhbw list-with-sublists show-list-item-content-on-hover
 
         1. Einführung in Virtualisierung & Use Cases
 
@@ -590,30 +590,30 @@ Vorträge - Themen (Verteilte Systeme)
            - Virtuelle NICs und Network Bridges
            - Virtuelle Switches und Network Isolation
 
-  .. card:: 
+  .. card::
 
         .. rubric:: Network Protocols
 
-        .. class:: dhbw 
+        .. class:: dhbw
 
         7. QUIC :peripheral:`(nur verfügbar, wenn wir ≥ 21 Studierende haben)`
         8. HTTP/3
         9. BitTorrent Protocol :peripheral:`(nur verfügbar, wenn wir ≥ 25 Studierende haben)`
 
-  .. card:: 
+  .. card::
 
         .. rubric:: Modern RPC
 
-        .. class:: dhbw 
+        .. class:: dhbw
 
         10.  Protobuf
         11.  Google RPC
 
-  .. card:: 
+  .. card::
 
         .. rubric:: Web-App Security
 
-        .. class:: dhbw 
+        .. class:: dhbw
 
         12.  SOP (Same-Origin Policy), CORS (Cross-Origin Resource Sharing) (Grundlagen)
         13.  CORP / COOP / COEP (Cross-Origin Resource/Opener/Embedder Policies) :peripheral:`(nur verfügbar, wenn wir ≥ 23 Studierende haben)`
@@ -621,7 +621,7 @@ Vorträge - Themen (Verteilte Systeme)
 
         Einführung und konkrete Beispiele, wie diese Mechanismen eingesetzt/spezifiziert werden und dabei helfen, Angriffe zu verhindern.
 
-  .. card:: 
+  .. card::
 
         .. rubric:: Monitoring & Debugging Distributed Systems
 
@@ -629,7 +629,7 @@ Vorträge - Themen (Verteilte Systeme)
 
         15.  Log Aggregation mit besonderem Fokus auf der Korrelation von Log-Einträgen
 
-  .. card:: 
+  .. card::
 
         .. rubric:: Leader Election
 
@@ -640,10 +640,10 @@ Vorträge - Themen (Verteilte Systeme)
   .. card::
 
         .. rubric:: Quorum Systems
-        
+
         .. class:: dhbw
 
-        17.  Majority Voting (d. h. quorum-basiertes verteiltes Rechnen)        
+        17.  Majority Voting (d. h. quorum-basiertes verteiltes Rechnen)
 
   .. card::
 
@@ -663,9 +663,9 @@ Vorträge - Themen (Verteilte Systeme)
 
             - Wann benötigen wir BFT?
             - Moderne Entwicklungen
-          
+
               .. presenter-note::
-                
+
                 Tendermint, HotStuff
 
             - Einsatz in realen Systemen
@@ -676,9 +676,9 @@ Vorträge - Themen (Verteilte Systeme)
             - Warum Paxos korrekt, aber komplex ist
             - Multi-Paxos für praktische Systeme
             - Einsatz in realen Systemen
-          
+
               .. presenter-note::
-          
+
                 [VERIFY!:] Google Chubby, Apache ZooKeeper Foundations
 
         21. Raft – Understandable Consensus
@@ -687,21 +687,21 @@ Vorträge - Themen (Verteilte Systeme)
             - Leader Election, Log Replication, Safety
             - Unterschiede zwischen Raft und Paxos (Design-Philosophie)
             - Einsatz in realen Systemen
-          
+
               .. presenter-note::
-                
+
                 etcd, Consul, CockroachDB
-  
-  .. card:: 
+
+  .. card::
 
         .. rubric:: Eventual Consistency
-    
-        .. class:: dhbw 
+
+        .. class:: dhbw
 
         22.  Eventual Consistency und Gossip Protocol
         23.  CRDTs (Conflict-free Replicated Data Types) :peripheral:`(nur verfügbar, wenn wir ≥ 22 Studierende haben)`
 
-  .. card:: 
+  .. card::
 
         .. rubric:: Distributed File Systems
 
@@ -715,7 +715,7 @@ Vorträge - Themen (Verteilte Systeme)
 Themenvergabe
 ------------------------------------------
 
-.. scrollable:: 
+.. scrollable::
 
   Die Präsentationen müssen in der unten aufgeführten Reihenfolge gehalten werden.
 
@@ -728,53 +728,53 @@ Themenvergabe
     * - Thema
       - Nebenbedingung
     * - \01. Einführung in Virtualisierung & Use Cases
-      - 
+      -
     * - \02. Hypervisors - Architecture & Types
-      - 
-    * - \03. Virtual Machines 
-      - 
+      -
+    * - \03. Virtual Machines
+      -
     * - \04. Containers & OS-level Virtualization
-      - 
+      -
     * - \05. Memory Virtualization
-      - 
+      -
     * - \06. Network & I/O Virtualization
-      - 
+      -
     * - \07. QUIC
       - ≥ 21 students
     * - \08. HTTP/3
-      - 
+      -
     * - \09. BitTorrent Protocol
       - ≥ 25 students
     * - \10. Protobuf
-      - 
+      -
     * - \11. Google RPC
-      - 
+      -
     * - \12. SOP, CORS (Foundations)
-      - 
+      -
     * - \13. CORP / COOP / COEP
       - ≥ 23 students
     * - \14. CSP and SRI
-      - 
+      -
     * - \15. Log Aggregation
-      - 
+      -
     * - \16. Leader Election (Bully/Ring Algorithm)
-      - 
+      -
     * - \17. Quorum Systems (Majority Voting)
-      - 
+      -
     * - \18. Consensus Fundamentals & Problem Definition
-      - 
+      -
     * - \19. Byzantine Fault Tolerance (PBFT)
-      - 
+      -
     * - \20. Paxos Family
-      - 
+      -
     * - \21. Raft - Understandable Consensus
-      - 
+      -
     * - \22. Eventual Consistency and Gossip Protocol
-      - 
+      -
     * - \23. CRDTs
       - ≥ 22 students
     * - \24. Ceph
-      - 
+      -
     * - \25. HDFS
       - ≥ 24 students
 
@@ -788,13 +788,13 @@ Vorträge - Bewertung (jeweils pro Vortrag)
 
 - :emph:`Sprechen Sie sich ggf. untereinander ab, damit sich die Vorträge nicht inhaltlich überlappen.`
 - Hinweise zur `Vortragsgestaltung und Checkliste <https://delors.github.io/allg-vortraege/folien.de.rst.html#slide-1>`__.
-  
+
 .. important::
 
-  - Die Präsentation ist an dem Tag, an dem sie gehalten werden soll bis spätesten 7:00 Uhr in Moodle hochzuladen. 
+  - Die Präsentation ist an dem Tag, an dem sie gehalten werden soll bis spätesten 7:00 Uhr in Moodle hochzuladen.
   - Die Präsentation muss als PDF hochgeladen werden.
   - Die Checkliste muss als PDF hochgeladen werden.
-  
+
 
 
 .. class:: new-section
@@ -835,15 +835,15 @@ Anwendungsbeispiele
 
             <style>
                 #example-dashboard {
-                    overflow: hidden;    
+                    overflow: hidden;
                     box-shadow: var(--trbl-shadow);
                     width: fit-content;
                     border-radius: var(--small-border-radius);
                     margin: var(--default-box-margin);
                     iframe {
                         border: none;
-                        
-                        
+
+
                     }
                 }
             </style>
@@ -877,8 +877,8 @@ Anforderungen
     - Notizen/Pinnwand
 
   - Widgets sollen hinzugefügt, entfernt und auf dem Dashboard positioniert werden können
-  - Jedes Widget muss individuell konfigurierbar sein 
-  
+  - Jedes Widget muss individuell konfigurierbar sein
+
     (z.B. Datenquelle, Darstellungsoptionen)
 
   **Rollenkonzept**
@@ -943,11 +943,11 @@ Anforderungen
     - Synchronisation von Kalenderdaten
     - Optional: Import/Export von Daten
 
-  .. remark:: 
-    
+  .. remark::
+
     .. rubric:: Einsatz von KI-Tools
 
-    Nutzung von KI-Assistenten (z.B. GitHub Copilot, ChatGPT, Claude Code oder OpenCode) zur Code-Generierung ist erlaubt. 
+    Nutzung von KI-Assistenten (z.B. GitHub Copilot, ChatGPT, Claude Code oder OpenCode) zur Code-Generierung ist erlaubt.
 
     KI kann zur Unterstützung der folgenden Aufgaben eingesetzt werden:
 
@@ -987,14 +987,14 @@ Bewertungskriterien für das Projekt
         Vorführung, max. 05
         Funktionsumfang, max. 15
         Dokumentation (Entwickler und Benutzer), max. 09
-        Technische Qualität des Videos, max. 01    
+        Technische Qualität des Videos, max. 01
         "Qualität des Codes (HTML, CSS und JavaScript)\ [#]_", max. 25
         Qualität des Buildprozesses\ [#]_ , max. 05
 
     .. [#] Es ist neben dem Code auch ein kurzes Video 10 bis max. 15 Minuten einzureichen, dass in die Struktur und die Codebasis einführt. Dieses Video geht in die Benotung ein! Bitte nur im Notfall über Moodle bereitstellen.
     .. [#] Wird am Ende ein/mehrere Container gebaut?
 
-  .. card:: 
+  .. card::
 
     .. important::
 
@@ -1008,7 +1008,7 @@ Bewertungskriterien für das Projekt
 Projekt - Hinweise
 ------------------------------------------
 
-- Ich werde Ihnen Konten auf einem Server bereitstellen, auf dem Sie Ihre Projekte hosten können. 
+- Ich werde Ihnen Konten auf einem Server bereitstellen, auf dem Sie Ihre Projekte hosten können.
 - Das Projekt muss ein Buildscript enthalten, dass es erlaubt das Projekt auf einem standard Ubuntu Server mit einem einzigen Kommando zu bauen.
 - Es ist gewünscht, dass Sie Ihr Projekt mit einer expliziten Lizenz veröffentlichen, damit es ggf. auch über die Veranstaltung hinaus von anderen genutzt werden kann.
 
@@ -1019,10 +1019,10 @@ Gruppennote für Projekt bei Wunsch
 
 .. container:: accentuate
 
-    Das Projekt ist als Gruppenarbeit ausgelegt und alle Gruppenmitglieder können die gleiche Punktzahl erhalten, wenn dies gewünscht ist. 
+    Das Projekt ist als Gruppenarbeit ausgelegt und alle Gruppenmitglieder können die gleiche Punktzahl erhalten, wenn dies gewünscht ist.
 
-    .. important:: 
-      
+    .. important::
+
       Es ist in jedem Fall zu Protokollieren, wer an welchen Teilen wie mitgewirkt hat. Dieses Protokoll muss am Ende eingereicht werden. Ohne dieses Protokoll erfolgt keine Bewertung!
 
       Das Protokoll wird jedoch nur zur Wertung herangezogen, wenn keine Gruppenbenotung gewünscht ist oder es Unstimmigkeiten gibt.
@@ -1040,7 +1040,7 @@ Gruppenaufteilung
   .. module:: group-assignment
       :class: accentuate
       :scope: slide
-      
+
       {
           "defaultNumberOfStudents": 25,
           "defaultGroupSize": 4,
@@ -1090,9 +1090,9 @@ Ablauf - W3WI-110 - Entwicklung verteilter Systeme 24SEA
 
   .. class:: incremental-1
 
-  - \20. Feb 2026 von 13:00 bis 17:00 - Themenvergabe und Vorlesung 
+  - \20. Feb 2026 von 13:00 bis 17:00 - Themenvergabe und Vorlesung
   - \27. Feb 2026 von 13:00 bis 17:00 - Vorlesung
-  - \06. Mar 2026 von 13:00 bis 17:00 - Vorträge (Web) 1. - 12. 
+  - \06. Mar 2026 von 13:00 bis 17:00 - Vorträge (Web) 1. - 12.
   - \10. Mar 2026 von 13:00 bis 17:00 - Vorträge (Web) 13. - 27.
   - \20. Mar 2026 von 13:00 bis 17:00 - Vorträge (Verteilte) 1. - 12.
   - \27. Mar 2026 von 13:00 bis 17:00 - Vorträge (Verteilte) 13. - 25.
@@ -1106,7 +1106,7 @@ Ablauf - W3WI-110 - Entwicklung verteilter Systeme 24SEA
   - \10. Apr 2026 von 13:00 bis 17:00 - Präsentation des aktuellen Projektstands - insbesondere der grundlegenden Architektur (15 Minuten pro Gruppe)
   - \14. Apr 2026 von 13:00 bis 17:00 - Code Reviews - allg. Einführung (ca. 45 Minuten); Zuteilung der Reviews; gegenseitige Einführung in den Code (2 * 45 Minutenb )
   - \17. Apr 2026 von 13:00 bis 17:00 - Code Reviews - Präsentation der Ergebnisse
-  - \20. Apr 2026 von 13:30 bis 17:30 **ONLINE** - Besprechung der finalen Abgaben; gruppenindividuelle Betreuung
+  - \20. Apr 2026 von 14:00 bis 18:00 **ONLINE** - Besprechung der finalen Abgaben; gruppenindividuelle Betreuung
   - *\23. Apr 2026 7:00 Uhr (Ereignis)* - Abgabe der Projektergebnisse (inkl. aller Dokumente, Videos, etc.) in Moodle
   - \24. Apr 2026 von 13:00 bis 17:00 - Präsentation und Vorführung der Projekte
 
@@ -1117,7 +1117,7 @@ Code Reviews
 
 :14. Apr 2026:
 
-  - jede Gruppe führt ein Code Review eines anderen Projektes durch 
+  - jede Gruppe führt ein Code Review eines anderen Projektes durch
 
     (D. h. jede Gruppe führt eine andere Gruppe in ihr Projekt ein, damit die Reviewer die Codebasis verstehen und dann einen Bericht mit konstruktiven Vorschlägen erstellen können - dies geschieht im Nachgang. Die Zuteilung wird am 14. Apr 2026 bekannt gegeben.)
 
@@ -1144,4 +1144,3 @@ Code Reviews
             4, 1
             5, 2
             6, 3
-
