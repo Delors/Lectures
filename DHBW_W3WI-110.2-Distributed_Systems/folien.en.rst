@@ -458,7 +458,6 @@ Programming Task (max 25 Points)
 
 
 
-
 Lecture - Schedule
 ------------------------------------------
 
@@ -498,14 +497,15 @@ Lecture - Schedule
 
   :24. Apr 2026 (5VL): 
       - Presentations (8 students) 
-      - - \17. Quorum Systems (Majority Voting)
-      - - \18. Consensus Fundamentals & Problem Definition
-      - - \19. Byzantine Fault Tolerance (PBFT)
-      - - \20. Paxos Family
-      - - \21. Raft - Understandable Consensus
-      - - \22. Eventual Consistency and Gossip Protocol
-      - - \23. CRDTs
-      - - \24. Ceph
+      
+        - \17. Quorum Systems (Majority Voting)
+        - \18. Consensus Fundamentals & Problem Definition
+        - \19. Byzantine Fault Tolerance (PBFT)
+        - \20. Paxos Family
+        - \21. Raft - Understandable Consensus
+        - \22. Eventual Consistency and Gossip Protocol
+        - \23. CRDTs
+        - \24. Ceph
 
       - Lecture
 
