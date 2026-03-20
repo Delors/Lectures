@@ -16,7 +16,7 @@ Algorithmen und Datenstrukturen - eine Einführung
 
 :Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
 :Kontakt: michael.eichberg@dhbw.de, Raum 149B
-:Version: 1.1
+:Version: 1.2
 
 .. container:: peripheral footer-left
 
@@ -350,7 +350,38 @@ Verkettete Listen
 
 .. class:: exercises
 
-Übung
+Übung - Verkette Listen
+---------------------------
+
+.. exercise:: Einfach verkettete Liste
+
+    1. Modellieren Sie die Klassen und Ihre Beziehungen mit Hilfe eines UML Klassendiagramms.
+
+    2. Implementieren Sie eine generische, einfach verkettete Liste in Java.
+
+       .. class:: list-with-expanations
+
+       - Implementieren Sie die Klasse für die Knoten als innere Klasse, der Klasse :java:`LinkedList`.
+       - Implementieren Sie folgende Methoden: :java:`isEmpty()`, :java:`prepend(..)`, :java:`head()` und :java:`deleteHead()`.
+       - Achten Sie darauf, dass Ihr Programm immer aussagekräftige Ausnahmen wirft.
+       - Implementieren Sie die notwendigen Interfaces, um eine foreach Schleife nutzen zu können, um über die Liste zu iterieren.
+
+
+    .. solution::
+        :pwd: 15MinutenSolltenReichen
+
+        .. image:: drawings/LinkedList.svg
+            :class: light-image
+
+        .. include:: code/LinkedList.java
+            :code: Java
+            :number-lines:
+            :class: copy-to-clipboard
+
+
+.. class:: exercises
+
+Übung - Verkette Listen
 --------------------------------------------------------
 
 .. exercise:: Doppelt verkettete Liste

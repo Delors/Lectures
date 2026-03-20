@@ -66,7 +66,7 @@ Architektur von Java I/O
   - Verstecken Details über die Implementierung / Funktionsweise der einzelnen I/O-Geräte vor dem Java Programmierer
 
     (D. h. ob die Eingabe zum Beispiel eine Tastatur, Datei, anderes Programm, Netz, Hauptspeicher, … ist.)
-  - Stellen Java-Programmen einheitliche Schnittstellen zum Lesen bzw. Schreiben von Daten zur Verfügung.
+  - Stellen Java-Programmen einheitliche Schnittstellen zum Lesen bzw. Schreiben von Daten zur Verfügung
 
 
 
@@ -136,26 +136,33 @@ Klassifizierung von Datenströmen
 Hierarchie der Zeichenströme für I/O
 ------------------------------------------
 
+.. container:: scale-on-hover
+
+    .. image:: images/readers_and_writers/legend.svg
+        :class: light-image
+
 .. deck::
 
     .. card::
 
         .. image:: images/readers_and_writers/readers.svg
+            :class: light-image
 
     .. card::
 
         .. image:: images/readers_and_writers/writers.svg
+            :class: light-image
 
     .. card::
 
         .. image:: images/input_and_output/input.svg
+            :class: light-image
 
     .. card::
 
         .. image:: images/input_and_output/output.svg
+            :class: light-image
 
-.. image:: images/readers_and_writers/legend.svg
-    :align: right
 
 
 

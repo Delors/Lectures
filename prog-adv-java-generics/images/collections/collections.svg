@@ -7,22 +7,13 @@
     xmlns:dc="http://purl.org/dc/elements/1.1/"
     version="1.1"
     viewBox="211 445 306 216"
-    width="306"
-    height="216"
+    width="367"
+    height="259"
 >
   <style>
     @import url('/LectureDoc2/ext/fonts/ld-fonts.css');
   </style>
   <defs>
-    <filter id="Shadow" filterUnits="userSpaceOnUse" x="180.4" y="423.4">
-      <feOffset in="SourceAlpha" result="offset" dx="0" dy="2" />
-      <feFlood flood-color="#919191" flood-opacity=".25" result="flood" />
-      <feComposite in="flood" in2="offset" operator="in" result="color" />
-      <feMerge>
-        <feMergeNode in="color" />
-        <feMergeNode in="SourceGraphic" />
-      </feMerge>
-    </filter>
     <marker
             orient="auto"
             overflow="visible"
@@ -56,10 +47,10 @@
         font-style="italic"
         font-family="Noto Sans Display"
     >
-    <rect fill="white" x="211" y="445" width="306" height="216" />
+
     <g id="Canvas_1_Layer_1">
       <g id="Group_5">
-        <g id="Graphic_8" filter="url(#Shadow)">
+        <g id="Graphic_8">
           <rect x="212.72266" y="446" width="130" height="39.54553" fill="white" />
           <rect
                         x="212.72266"
@@ -75,7 +66,7 @@
             <tspan x="20.818182" y="14" xml:space="preserve">Collection</tspan>
           </text>
         </g>
-        <g id="Graphic_7" filter="url(#Shadow)">
+        <g id="Graphic_7">
           <rect x="212.72266" y="536" width="130" height="39.54553" fill="white" />
           <rect
                         x="212.72266"
@@ -91,7 +82,7 @@
             <tspan x="43.727273" y="14" xml:space="preserve">List</tspan>
           </text>
         </g>
-        <g id="Graphic_9" filter="url(#Shadow)">
+        <g id="Graphic_9">
           <rect x="385.5664" y="539" width="130" height="39.54553" fill="white" />
           <rect
                         x="385.5664"
@@ -107,7 +98,7 @@
             <tspan x="47.545455" y="14" xml:space="preserve">Set</tspan>
           </text>
         </g>
-        <g id="Graphic_10" filter="url(#Shadow)">
+        <g id="Graphic_10">
           <rect x="385.5664" y="618.1953" width="130" height="39.54553" fill="white" />
           <rect
                         x="385.5664"

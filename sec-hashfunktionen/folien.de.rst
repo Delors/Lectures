@@ -16,7 +16,7 @@ Kryptografische Hash Funktionen
 
 :Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
 :Kontakt: michael.eichberg@dhbw.de
-:Version: 2.3.2
+:Version: 2.3.3 [Themed]
 
 .. class:: sources
 
@@ -138,6 +138,7 @@ Beziehung zwischen den Sicherheitsanforderungen an Hashfunktionen
 .. image:: drawings/hash_functions/properties.svg
     :alt: Beziehung zwischen den Eigenschaften von Hashfunktionen
     :align: center
+    :class: light-image
 
 .. supplemental::
 
@@ -159,6 +160,7 @@ Nachrichtenauthentifizierung - vereinfacht
 
         .. figure:: drawings/digests/all_encrypted.svg
             :align: center
+            :class: light-image
 
             Garantiert Authentizität und Vertraulichkeit.
 
@@ -166,6 +168,7 @@ Nachrichtenauthentifizierung - vereinfacht
 
         .. figure:: drawings/digests/hash_encrypted.svg
             :align: center
+            :class: light-image
 
             Garantiert Authentizität, benötigt aber sowohl Hashing als auch Verschlüsselung.
 
@@ -173,6 +176,7 @@ Nachrichtenauthentifizierung - vereinfacht
 
         .. figure:: drawings/digests/secret_appended.svg
             :align: center
+            :class: light-image
 
             Garantiert Authentizität und es wird nur ein Hashalgorithmus benötigt; anfällig für bestimmte Angriffe - insbesondere gegen Angriffe mit Längenerweiterung bei Hashverfahren basierend auf Merkle-Damgard Konstruktionen.
 
@@ -180,6 +184,7 @@ Nachrichtenauthentifizierung - vereinfacht
 
         .. figure:: drawings/digests/secret_encrypted.svg
             :align: center
+            :class: light-image
 
             Garantiert Authentizität und Vertraulichkeit.
 
@@ -232,6 +237,7 @@ Digitale Signaturen - vereinfacht
 
         .. figure:: drawings/signatures/just_authentication.svg
             :align: center
+            :class: light-image
 
             Authentizität und Nichtabstreitbarkeit
 
@@ -239,6 +245,7 @@ Digitale Signaturen - vereinfacht
 
         .. figure:: drawings/signatures/authentication_and_encryption.svg
             :align: center
+            :class: light-image
 
             Authentizität, Vertraulichkeit und Nichtabstreitbarkeit
 
@@ -418,6 +425,7 @@ Struktur eines sicheren Hash-Codes
 
 .. image:: drawings/hash_functions/structure_of_secure_hash_codes.svg
     :align: center
+    :class: light-image
 
 .. class:: columns left-aligned dd-margin-left-3em
 
@@ -509,7 +517,7 @@ Die SHA-Familie (Secure Hash Algorithms)
 `SHA 512 - Übersicht <https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.180-4.pdf>`__
 --------------------------------------------------------------------------------------
 
-.. deck::
+.. deck:: light-image
 
     .. card::
 
@@ -563,7 +571,7 @@ Die SHA-Familie (Secure Hash Algorithms)
 SHA-512 Verarbeitung eines 1024-Bit-Blocks
 ------------------------------------------------------------
 
-.. deck::
+.. deck:: light-image
 
     .. card::
 
@@ -779,7 +787,7 @@ HMAC (Hash-based Message Authentication Code)
 - Auch als *keyed-hash message authentication code* bezeichnet.
 - Konstruktion:
 
-  .. container:: framed
+  .. container:: accentuate
 
     .. math::
 
@@ -823,11 +831,12 @@ HMAC Berechnung visualisiert
 .. image:: drawings/hmac/hmac_i_o_key_derivation.svg
         :alt: Schlüsselableitung für den inneren und äußeren Schlüssel K'
         :align: left
+        :class: light-image
 
 .. image:: drawings/hmac/hmac_message_hashing.svg
         :alt: Schlüsselableitung für den inneren und äußeren Schlüssel K'
         :align: right
-        :class: incremental
+        :class: light-image incremental
 
 .. supplemental::
 
@@ -901,6 +910,7 @@ MAC: `Poly 1305 <https://datatracker.ietf.org/doc/html/rfc8439#section-2.5>`__
         .. image:: drawings/poly1305.svg
            :alt: Poly 1305 - Verwendung des Schlüssels
            :align: center
+           :class: light-image
 
         .. container:: align-center
 

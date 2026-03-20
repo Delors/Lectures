@@ -10,61 +10,10 @@
     width="1323"
     height="984"
 >
+  <style>
+    @import url('/LectureDoc2/ext/fonts/ld-fonts.css');
+  </style>
   <defs>
-    <font-face
-            font-family="Noto Sans Display"
-            font-size="16"
-            panose-1="2 11 5 2 4 5 4 2 2 4"
-            units-per-em="1000"
-            underline-position="-100"
-            underline-thickness="50"
-            slope="0"
-            x-height="536"
-            cap-height="714"
-            ascent="1069.0002"
-            descent="-292.99927"
-            font-weight="400"
-        >
-      <font-face-src>
-        <font-face-name name="NotoSansDisplay-Regular" />
-      </font-face-src>
-    </font-face>
-    <font-face
-            font-family="Noto Sans Display"
-            font-size="12"
-            panose-1="2 11 5 2 4 5 4 2 2 4"
-            units-per-em="1000"
-            underline-position="-100"
-            underline-thickness="50"
-            slope="0"
-            x-height="536"
-            cap-height="714"
-            ascent="1069.0002"
-            descent="-292.99927"
-            font-weight="400"
-        >
-      <font-face-src>
-        <font-face-name name="NotoSansDisplay-Regular" />
-      </font-face-src>
-    </font-face>
-    <font-face
-            font-family="Noto Sans Display"
-            font-size="14"
-            panose-1="2 11 5 2 4 5 4 2 2 4"
-            units-per-em="1000"
-            underline-position="-100"
-            underline-thickness="50"
-            slope="0"
-            x-height="536"
-            cap-height="714"
-            ascent="1069.0002"
-            descent="-292.99927"
-            font-weight="400"
-        >
-      <font-face-src>
-        <font-face-name name="NotoSansDisplay-Regular" />
-      </font-face-src>
-    </font-face>
     <marker
             orient="auto"
             overflow="visible"

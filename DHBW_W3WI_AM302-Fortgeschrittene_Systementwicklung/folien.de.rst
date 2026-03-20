@@ -15,7 +15,7 @@ W3WI_AM302 - Fortgeschrittene Systementwicklung
 
 :Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
 :Kontakt: michael.eichberg@dhbw.de, Raum 149B
-:Version: 24AMA - 18. Februar 2026 
+:Version: 24AMA - 4. März 2026 
 
  
 
@@ -709,7 +709,6 @@ Ablauf 2. Semester (Wann passiert was?)
 
 .. class:: list-with-explanations
 
-- Vorträge
 - Präsentation des Spielkonzepts (pro Team ca. 10 Minuten)
 
   D.h. Fake Screenshots, Mockups, Storyboard, etc. - alles ist erlaubt, um die Idee zu vermitteln. Es muss jedoch klar werden, um was für ein Spiel es sich handelt, wie es gespielt wird, in welcher Weise die Spieler miteinander interagieren, etc.
@@ -856,9 +855,9 @@ Aufteilung der Vortragsthemen
     20, API-Testing und Dokumentation, 11. März 
     21, Cheat Prevention, 11. März 
     22, :peripheral:`[Software-Architektur für verteilte Anwendungen]`, 11. März 
-    23, Testing für Web-Anwendungen, 18. März 
-    24, Build-Tools und Bundling, 18. März 
-    25, :peripheral:`[Accessibility (a11y) für Spiele]`, 18. März
+    23, Testing für Web-Anwendungen, 11. März 
+    24, Build-Tools und Bundling, 11. März 
+    25, :peripheral:`[Accessibility (a11y) für Spiele]`, 11. März
 
 
 

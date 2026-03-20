@@ -9,7 +9,7 @@
     :svg-style:
         g.graph {
             circle{
-                fill: black;
+                fill: var(--current-fg-color);
                 stroke-width: 0.2;
 
                 &.red { fill: red;}
@@ -34,18 +34,18 @@
             path,
             line {
                 fill: none;
-                stroke:darkgray;
+                stroke: light-dark(darkgray, lightgray);
                 stroke-width:0.2;
 
                 &.irrelevant-edge {  stroke: red; }
             }
             text {
-                fill: black;
-                font-family: var(--theme-code-font-family);
+                fill: var(--current-fg-color);
+                font-family: var(--code-font-family);
                 font-weight: bold;
 
                 &.edge-label {
-                    fill: darkorange;
+                    fill: light-dark(darkorange,orange);
                     font-weight: normal;
                     font-size: 60%;
                 }
@@ -53,21 +53,24 @@
         }
         g.tree {
             circle {
-                fill: darkgray;
+                fill: light-dark(darkgray, silver);
                 filter: drop-shadow( 2 2 4 rgb(0, 0, 0));
                 &.visited-node {
-                    fill: lightgray;
+                    fill: light-dark(lightgray,darkgray);
                     stroke: blue;
                     stroke-width: 0.3;
                 }
             }
             line {
-                stroke:darkgray;
+                stroke: color-mix(
+                    in lch,
+                    var(--current-fg-color) 80%,
+                    var(--current-bg-color));
                 stroke-width:0.2;
             }
             text {
-                fill: black;
-                font-family: var(--theme-code-font-family);
+                fill: var(--current-fg-color);
+                font-family: var(--code-font-family);
                 font-weight: bold;
             }
             line, path {
@@ -88,7 +91,7 @@
             markerWidth="6"
             markerHeight="6"
             orient="auto-start-reverse">
-            <path class="arrow-head" d="M 0 0 L 2 1 L 0 2 z" />
+            <path class="arrow-head" d="M 0 0 L 2 1 L 0 2 z" fill="context-stroke" />
         </marker>
         <marker
             id="small-arrow"
@@ -99,7 +102,7 @@
             markerWidth="4"
             markerHeight="4"
             orient="auto-start-reverse">
-            <path class="arrow-head" d="M 0 0 L 2 1 L 0 2 z" />
+            <path class="arrow-head" d="M 0 0 L 2 1 L 0 2 z" fill="context-stroke"/>
         </marker>
 
 
@@ -172,7 +175,7 @@ Gerichteter Graph - Beispiel
 .. raw:: html
     :class: center-content
 
-    <div    style="width: 48ch; height: 28ch; container-type:size;">
+    <div    style="width: 48ch; height: 28ch">
     <svg    viewBox="0 0 24 14"
             font-size="2"
             version="1.1" xmlns="http://www.w3.org/2000/svg">
@@ -280,9 +283,10 @@ Gewichteter Graph
 
 .. definition::
 
-    Bei einem gewichteten Graphen :math:`G = (V, E)` besitzt jede Kante :math:`(vi, vj)` eine Attributierung :math:`w(v_i, v_j)`.
+    Bei einem gewichteten Graphen :math:`G = (V, E)` besitzt jede Kante :math:`(v_i, v_j)` eine Attributierung :math:`w(v_i, v_j)`.
 
 .. remark::
+    :class: incremental
 
     • Sowohl gerichtete als auch ungerichtete Graphen können gewichtet sein
     • Die Funktion :math:`w` hat als Wertebereich oft :math:`\mathbb{N}, \mathbb{Z}` oder :math:`\mathbb{R}`
@@ -296,7 +300,7 @@ Gewichteter Graph - Beispiel
 .. raw:: html
     :class: center-content
 
-    <div    style="width: 48ch; height: 28ch; container-type:size;">
+    <div    style="width: 48ch; height: 28ch">
     <svg    viewBox="0 0 24 14"
             font-size="2"
             version="1.1" xmlns="http://www.w3.org/2000/svg">
@@ -367,9 +371,9 @@ Markierter (gewichteter) Graph - Beispiel
 -----------------------------------------
 
 .. raw:: html
-    :class: text-align-center
+    :class: center-content
 
-    <div    style="width: 48ch; height: 28ch; container-type:size;">
+    <div    style="width: 48ch; height: 28ch">
     <svg    viewBox="0 0 24 14"
             font-size="2"
             version="1.1" xmlns="http://www.w3.org/2000/svg">
@@ -456,9 +460,9 @@ Implementierung von Graphen
     .. cell:: width-40
 
         .. raw:: html
-            :class: text-align-center
+            :class: center-content
 
-            <div    style="width: 24ch; height: 14ch; container-type:size;">
+            <div    style="width: 24ch; height: 14ch">
             <svg    viewBox="0 0 24 14"
                     font-size="2"
                     version="1.1" xmlns="http://www.w3.org/2000/svg">
@@ -515,6 +519,8 @@ Implementierung von Graphen
                         Es gibt eine Knotenliste :math:`L_0`, die alle Knoten aus :math:`V` enthält.
 
                         Jedem Element :math:`v_i (i ∈ { v_1, . . . , v_n })` der Knotenliste :math:`L_0` ist eine weitere Knotenliste :math:`L_i` zugeordnet, die die Endknoten der Kanten aus :math:`E` enthält, die von :math:`v_i` ausgehen
+
+                        .. container:: accentuate
 
                           Wir speichern einen Graphen somit als Liste von Listen.
 
@@ -710,9 +716,9 @@ Breite-zuerst-Suche - Beispiel
 -------------------------------
 
 .. raw:: html
-    :class: text-align-center
+    :class: center-content
 
-    <div    style="width: 48ch; height: 28ch; container-type:size;">
+    <div    style="width: 48ch; height: 28ch">
     <svg    viewBox="0 0 24 14"
             font-size="2"
             version="1.1" xmlns="http://www.w3.org/2000/svg">
@@ -959,7 +965,7 @@ Tiefe-zuerst-Suche - Beispiel
         </svg>
         </div>
 
-    Führen Sie sowohl eine Tiefe- als auch Breite-zuerst-Suche ausgehend von dem Knoten 4 als auch Knoten 5 durch. Sollte es mehrere Möglichkeiten geben, dann wählen Sie zuerst den Knoten mit der kleineren Nummer!
+    Führen Sie sowohl eine Tiefe- als auch Breite-zuerst-Suche ausgehend von Knoten 4 als auch Knoten 5 durch. Sollte es mehrere Möglichkeiten geben, dann wählen Sie zuerst den Knoten mit der kleineren Nummer!
 
     .. solution::
         :pwd: Graphen!
@@ -1040,7 +1046,7 @@ Bäume - Schlüsselbegriffe
 
             .. raw:: html
 
-                <div    style="width: 21ch; height: 22ch; container-type:size;">
+                <div    style="width: 21ch; height: 22ch">
                 <svg    viewBox="0 0 21 22"
                         version="1.1" xmlns="http://www.w3.org/2000/svg"
                         font-size="2">
@@ -1161,19 +1167,19 @@ Bäume - Schlüsselbegriffe
 
             .. card::
 
-                Binärbaum
+                .. definition:: Binärbaum
 
-                .. definition::
-
-                    Ein Binärbaum ist ein Baum, bei dem jeder Knoten höchstens zwei Kinder hat.
+                    Ein Baum, bei dem jeder Knoten höchstens zwei Kinder hat.
 
             .. card::
 
-                Binärer Suchbaum
+                .. definition:: Binärer Suchbaum
 
-                .. definition::
+                    Ein Binärbaum, bei dem für jeden Knoten gilt: Alle Schlüssel in den linken Unterbaum sind kleiner und alle Schlüssel in den rechten Unterbaum sind größer.
 
-                    Ein binärer Suchbaum ist ein Binärbaum, bei dem für jeden Knoten alle Schlüssel in den linken Unterbäumen kleiner sind und alle Schlüssel in den rechten Unterbäumen größer sind.
+                    Beide Unterbäume sind wiederum binäre Suchbäume (rekursive Definition).
+
+                Optional kann jeder Knoten neben dem Schlüssel auch weitere Nutzdaten speichern.
 
                 .. example::
 
@@ -1218,7 +1224,7 @@ Traversierung von Bäumen
 
                     .. raw:: html
 
-                        <div    style="width: 48ch; height: 22ch; container-type:size;">
+                        <div    style="width: 48ch; height: 22ch">
                         <svg    font-size="2"
                                 viewBox="0 0 48 22" version="1.1" xmlns="http://www.w3.org/2000/svg">
 
@@ -1334,7 +1340,7 @@ Traversierung von Bäumen
 
                     .. raw:: html
 
-                        <div    style="width: 48ch; height: 22ch; container-type:size;">
+                        <div    style="width: 48ch; height: 22ch;">
                         <svg    font-size="2" viewBox="0 0 48 22"
                                 version="1.1" xmlns="http://www.w3.org/2000/svg">
                             <g class="tree">
@@ -1444,7 +1450,7 @@ Traversierung von Bäumen
 
     .. card::
 
-        .. rubric:: Postorder Traversierung (:eng:`Postorder Traversal`)
+        .. rubric:: Postorder-Traversierung (:eng:`Postorder Traversal`)
 
         .. grid::
 
@@ -1454,11 +1460,11 @@ Traversierung von Bäumen
 
                     .. raw:: html
 
-                        <div    style="width: 48ch; height: 22ch; container-type:size;">
-                        <svg    font-size="2"
+                        <div    style="width: 48ch; height: 22ch;">
+                        <svg    id="svg-postorder-traversierung"
+                                font-size="2"
                                 viewBox="0 0 48 22" version="1.1" xmlns="http://www.w3.org/2000/svg">
-
-                            <g class="tree">
+                            <g class="tree"  style="color: black">
                                 <g>
                                 <circle cx="8" cy="1" r="0.5" />
                                 <text x="8.75" y="1.55">2</text>
@@ -1613,6 +1619,25 @@ Traversierung von Bäumen
                 .. definition::
 
                     Eine Postorder-Traversierung eines Baumes beginnt mit den linken Unterbaum und besucht dann den rechten Unterbaum, bevor der (Wurzel-)knoten besucht wird.
+
+
+Suche in einem binären Suchbaum (BST)
+-----------------------------------------
+
+**Ziel:** Finde Schlüssel ``x``
+
+.. class:: incremental-list
+
+1. Setze den aktuellen Knoten ``n`` auf den Wurzelknoten des Baums.
+2. Falls der aktuelle Knoten ``n`` „leer“ ist, dann ist ``x`` nicht enthalten im im Baum.
+3. Falls ``x == key(n)``: Der Schlüssel wurde gefunden.
+4. Falls ``x < key(n)``: Setze ``n`` auf den Wurzelknoten des linken Unterbaums.
+5. Sonst: Setze ``n`` auf den Wurzelknoten des rechten  Unterbaums.
+6. Gehe zu Schritt 2.
+
+.. container:: accentuate incremental
+
+    **Laufzeit:** proportional zur Höhe ``h`` des Baums, also ``O(h)``.
 
 
 

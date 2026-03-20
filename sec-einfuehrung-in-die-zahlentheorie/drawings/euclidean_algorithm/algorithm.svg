@@ -36,7 +36,6 @@
       </g>
     </marker>
   </defs>
-  <metadata> Produced by OmniGraffle 8.0\n2025-05-12 20:09:17 +0000</metadata>
   <g
         id="algorithm"
         stroke-dasharray="none"
@@ -44,6 +43,9 @@
         stroke-opacity="1"
         fill="none"
         fill-opacity="1"
+        font-family="Noto Sans Display"
+        font-size="14"
+        font-weight="400"
     >
     <title>algorithm</title>
     <g id="algorithm_Layer_1">
@@ -67,66 +69,26 @@
                     stroke-width="1"
                 />
         <text transform="translate(42.99213 169)" fill="white">
-          <tspan
-                        font-family="Noto Sans Display"
-                        font-size="14"
-                        font-weight="400"
-                        fill="white"
-                        x="5.4969996"
-                        y="15"
-                        xml:space="preserve"
-                    >Start</tspan>
+          <tspan x="5.4969996" y="15">Start</tspan>
         </text>
       </g>
       <g id="Graphic_72">
         <path d="M 167 146 L 222 178.5 L 167 211 L 112 178.5 Z" fill="#ffa35f" />
         <text transform="translate(131.85 168.35)" fill="black">
-          <tspan
-                        font-family="Noto Sans Display"
-                        font-size="14"
-                        font-weight="400"
-                        fill="black"
-                        x="21.305"
-                        y="15"
-                        xml:space="preserve"
-                    >a &gt; b</tspan>
+          <tspan x="21.305" y="15">a &gt; b</tspan>
         </text>
       </g>
       <g id="Graphic_73">
         <rect x="112" y="240" width="110" height="65" fill="#7e90b4" />
         <text transform="translate(117 263)" fill="white">
-          <tspan
-                        font-family="Noto Sans Display"
-                        font-size="14"
-                        font-weight="400"
-                        fill="white"
-                        x=".517"
-                        y="15"
-                        xml:space="preserve"
-                    >tausche a und b</tspan>
+          <tspan x=".517" y="15">tausche a und b</tspan>
         </text>
       </g>
       <g id="Graphic_74">
         <rect x="258.24935" y="146" width="110" height="65" fill="#7e90b4" />
         <text transform="translate(263.24935 159.5)" fill="white">
-          <tspan
-                        font-family="Noto Sans Display"
-                        font-size="14"
-                        font-weight="400"
-                        fill="white"
-                        x="4.024"
-                        y="15"
-                        xml:space="preserve"
-                    >teile a durch b, </tspan>
-          <tspan
-                        font-family="Noto Sans Display"
-                        font-size="14"
-                        font-weight="400"
-                        fill="white"
-                        x="9.596"
-                        y="34"
-                        xml:space="preserve"
-                    >der Rest sei r</tspan>
+          <tspan x="4.024" y="15">teile a durch b, </tspan>
+          <tspan x="9.596" y="34">der Rest sei r</tspan>
         </text>
       </g>
       <g id="Graphic_75">
@@ -135,75 +97,27 @@
                     fill="#ffa35f"
                 />
         <text transform="translate(413.8609 168.35)" fill="black">
-          <tspan
-                        font-family="Noto Sans Display"
-                        font-size="14"
-                        font-weight="400"
-                        fill="black"
-                        x="22.579"
-                        y="15"
-                        xml:space="preserve"
-                    >r &gt; 0</tspan>
+          <tspan x="22.579" y="15">r &gt; 0</tspan>
         </text>
       </g>
       <g id="Graphic_76">
         <rect x="395.01092" y="52" width="110" height="65" fill="#7e90b4" />
         <text transform="translate(400.01092 75)" fill="white">
-          <tspan
-                        font-family="Noto Sans Display"
-                        font-size="14"
-                        font-weight="400"
-                        fill="white"
-                        x="4.206"
-                        y="15"
-                        xml:space="preserve"
-                    >ersetze a mit b</tspan>
+          <tspan x="4.206" y="15">ersetze a mit b</tspan>
         </text>
       </g>
       <g id="Graphic_77">
         <rect x="258.24935" y="52" width="110" height="65" fill="#7e90b4" />
         <text transform="translate(263.24935 75)" fill="white">
-          <tspan
-                        font-family="Noto Sans Display"
-                        font-size="14"
-                        font-weight="400"
-                        fill="white"
-                        x="5.186"
-                        y="15"
-                        xml:space="preserve"
-                    >ersetze b mit r</tspan>
+          <tspan x="5.186" y="15">ersetze b mit r</tspan>
         </text>
       </g>
       <g id="Graphic_78">
         <rect x="395.01092" y="240" width="110" height="65" fill="#7e90b4" />
         <text transform="translate(400.01092 244)" fill="white">
-          <tspan
-                        font-family="Noto Sans Display"
-                        font-size="14"
-                        font-weight="400"
-                        fill="white"
-                        x="3.303"
-                        y="15"
-                        xml:space="preserve"
-                    >der GGT ist der </tspan>
-          <tspan
-                        font-family="Noto Sans Display"
-                        font-size="14"
-                        font-weight="400"
-                        fill="white"
-                        x="3.009"
-                        y="34"
-                        xml:space="preserve"
-                    >finale Wert von </tspan>
-          <tspan
-                        font-family="Noto Sans Display"
-                        font-size="14"
-                        font-weight="400"
-                        fill="white"
-                        x="45.947"
-                        y="53"
-                        xml:space="preserve"
-                    >b</tspan>
+          <tspan x="3.303" y="15">der GGT ist der </tspan>
+          <tspan x="3.009" y="34">finale Wert von </tspan>
+          <tspan x="45.947" y="53">b</tspan>
         </text>
       </g>
       <g id="Graphic_79">
@@ -225,15 +139,7 @@
                     stroke-width="1"
                 />
         <text transform="translate(539.85 263)" fill="white">
-          <tspan
-                        font-family="Noto Sans Display"
-                        font-size="14"
-                        font-weight="400"
-                        fill="white"
-                        x="4.8739996"
-                        y="15"
-                        xml:space="preserve"
-                    >Ende</tspan>
+          <tspan x="4.8739996" y="15">Ende</tspan>
         </text>
       </g>
       <g id="Line_80">
@@ -365,54 +271,22 @@
       </g>
       <g id="Graphic_91">
         <text transform="translate(221.76335 156)" fill="black">
-          <tspan
-                        font-family="Noto Sans Display"
-                        font-size="14"
-                        font-weight="400"
-                        fill="black"
-                        x="3907985e-19"
-                        y="15"
-                        xml:space="preserve"
-                    >wahr</tspan>
+          <tspan x="3907985e-19" y="15">wahr</tspan>
         </text>
       </g>
       <g id="Graphic_92">
         <text transform="translate(174.84126 214)" fill="black">
-          <tspan
-                        font-family="Noto Sans Display"
-                        font-size="14"
-                        font-weight="400"
-                        fill="black"
-                        x="2309264e-19"
-                        y="15"
-                        xml:space="preserve"
-                    >falsch</tspan>
+          <tspan x="2309264e-19" y="15">falsch</tspan>
         </text>
       </g>
       <g id="Graphic_93">
         <text transform="translate(456 214)" fill="black">
-          <tspan
-                        font-family="Noto Sans Display"
-                        font-size="14"
-                        font-weight="400"
-                        fill="black"
-                        x="2309264e-19"
-                        y="15"
-                        xml:space="preserve"
-                    >falsch</tspan>
+          <tspan x="2309264e-19" y="15">falsch</tspan>
         </text>
       </g>
       <g id="Graphic_94">
         <text transform="translate(456 122)" fill="black">
-          <tspan
-                        font-family="Noto Sans Display"
-                        font-size="14"
-                        font-weight="400"
-                        fill="black"
-                        x="3907985e-19"
-                        y="15"
-                        xml:space="preserve"
-                    >wahr</tspan>
+          <tspan x="3907985e-19" y="15">wahr</tspan>
         </text>
       </g>
     </g>

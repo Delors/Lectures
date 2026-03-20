@@ -10,12 +10,14 @@
 
 
 
+.. TODO OWASP Top Ten für LLM Anwendungen
+
 Cybersecurity
 =====================================================
 
 :Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
 :Kontakt: michael.eichberg@dhbw.de
-:Version: 2.12.4
+:Version: 2.13
 
 .. supplemental::
 
@@ -108,7 +110,7 @@ Vorfälle, Forschung und Kampf gegen Cyberkriminalität
 
 
 
-IT-Security Vorfälle
+IT-Security Vorfälle - Ransomware
 -------------------------------------------------------------
 
 .. deck::
@@ -122,6 +124,29 @@ IT-Security Vorfälle
             [...] The attackers have held data hostage and offered a key for access in return for the $8 million ransom, said PT Telkom Indonesia’s director of network & IT solutions, Herlan Wijanarko, without giving further details. Wijanarko said the company, in collaboration with authorities at home and abroad, is investigating and trying to break the encryption that made data inaccessible. [...]
 
             -- `June 25th, 2024; AP News <https://apnews.com/article/indonesia-ransomware-attack-national-data-center-213c14c6cc69d7b66815e58478f64cee>`__
+
+    .. card::
+
+        .. epigraph::
+
+            **UK government to ban public bodies from paying ransoms to hackers**
+
+            The UK government is planning to ban public bodies from paying ransoms to computer hackers, and private companies will be required to inform authorities if they plan to cave into cash demands.
+
+            […] The government could then provide those businesses with advice and support, including notifying them if any such payment would risk breaking the law by sending money to sanctioned cybercriminal groups, many of whom are based in Russia. […]
+
+            -- `July 22nd, 2025; The Guardian <https://www.theguardian.com/technology/2025/jul/22/uk-government-to-ban-public-bodies-from-paying-ransoms-to-hackers>`__
+
+
+    .. card::
+
+        .. epigraph::
+
+            **Total Ransomware Payments Stagnate for Second Consecutive Year, While Attacks Escalate**
+
+            [...] Ransomware payments stagnated despite record attacks claimed. Total on-chain ransomware payments fell by approximately 8% to $820 million in 2025, even as claimed attacks rose 50%. [...]
+
+            -- `Feb. 26, 2026; Chainanalysis <Total Ransomware Payments Stagnate for Second Consecutive Year, While Attacks Escalate>`__
 
     .. card::
 
@@ -163,18 +188,10 @@ IT-Security Vorfälle
 
 
 
-    .. card::
+IT-Security Vorfälle - Sonstige
+-------------------------------------------------------------
 
-        .. epigraph::
-
-            **UK government to ban public bodies from paying ransoms to hackers**
-
-            The UK government is planning to ban public bodies from paying ransoms to computer hackers, and private companies will be required to inform authorities if they plan to cave into cash demands.
-
-            […] The government could then provide those businesses with advice and support, including notifying them if any such payment would risk breaking the law by sending money to sanctioned cybercriminal groups, many of whom are based in Russia. […]
-
-            -- `July 22nd, 2025; The Guardian <https://www.theguardian.com/technology/2025/jul/22/uk-government-to-ban-public-bodies-from-paying-ransoms-to-hackers>`__
-
+.. deck::
 
     .. card::
 
@@ -209,6 +226,7 @@ IT-Security Vorfälle
         .. deck::
 
             .. card::
+
                 .. epigraph::
 
                     **US government tells officials, politicians to ditch regular calls and texts**
@@ -301,6 +319,22 @@ IT-Security Vorfälle
             Google says [...] Gemini has been inundated by “commercially motivated” actors who are trying to clone it by repeatedly prompting it [...] — including one campaign that prompted Gemini more than 100,000 times. [These] “distillation attacks,” [should] get a chatbot to reveal its inner workings. Google described the activity as “model extraction,” in which would-be copycats probe the system for the patterns and logic that make it work. [...]
 
             -- `Feb. 12,2026 - NBC News <https://www.nbcnews.com/tech/security/google-gemini-hit-100000-prompts-cloning-attempt-rcna258657>`__
+
+    .. card::
+
+        .. epigraph::
+
+            **Cybercrime has skyrocketed 245% since the start of the Iran war**
+
+
+            Cybercrime has skyrocketed since the start of the Iran war, according to Akamai, which reports a 245 percent increase in everything from credential harvesting attempts to automated reconnaissance traffic aimed at banks and other critical businesses. [...] As Akamai notes, "geopolitically motivated hacktivists are using proxy services in countries like Russia and China as a source for billions of designed-for-abuse connection attempts." [...]
+
+
+
+
+            -- `Jessica Lyons; March 16, 2026 - The Register<https://www.theregister.com/2026/03/16/cybercrime_iran_war_245_percent_rise/>`__
+
+
 
     .. card::
 
@@ -803,10 +837,10 @@ Ausgewählte Angriffe, Angriffsmethoden und Bedrohungsszenarien
 Schutzziele der IT-Sicherheit: CIA-Triade
 --------------------------------------------
 
-.. container:: light-image 
+.. container:: light-image
 
   .. raw:: html
-    :class: center-content 
+    :class: center-content
 
     <style>
     .cia-triangle {
@@ -1293,6 +1327,15 @@ Social-Engineering Angriffe - Quo Vadis
 
 
 
+.. class : : new-section transition-scale
+
+    OWASP Top 10 für LLM-Applikationen
+    -------------------------------------
+
+    .. https://genai.owasp.org/03be7cfe-ee5a-48b7-b878-2fc44df99940
+
+
+
 .. class:: new-section transition-fade
 
 Cybersicherheit stärken
@@ -1356,15 +1399,29 @@ Post-Quantum Cryptography (PQC) Einführen
 Quantencomputer - Bedrohungsbewertung
 -------------------------------------------------------------
 
-.. rubric:: [Bewertung der Bedrohung durch Quantencomputer]
+.. deck::
 
-.. epigraph::
+    .. card::
 
-    [...] preparing for the quantum threat should be considered an integral aspect of cybersecurity risk management. In an attempt to quantify the risk, the 2023 issue of the Quantum Threat Timeline conducted a survey among 37 international leading experts from academia and industry. Out of these, 17 estimated the risk that a CRQC appears within a 10-year timeframe higher than 5%. Moreover, 10 of these respondents even indicated a likelihood of about 50% or more.
+        .. epigraph::
 
-    :incremental:`[...] To ensure an acceptable level of readiness, we recommend that these should be protected against "store now, decrypt later" attacks as soon as possible, latest by the end of 2030.`
+            [...] preparing for the quantum threat should be considered an integral aspect of cybersecurity risk management. In an attempt to quantify the risk, the 2023 issue of the Quantum Threat Timeline conducted a survey among 37 international leading experts from academia and industry. Out of these, 17 estimated the risk that a CRQC appears within a 10-year timeframe higher than 5%. Moreover, 10 of these respondents even indicated a likelihood of about 50% or more.
 
-    -- `Nov. 27, 2024; Securing Tomorrow, Today: Transitioning to PQC <https://www.bsi.bund.de/SharedDocs/Downloads/EN/BSI/Crypto/PQC-joint-statement.pdf?__blob=publicationFile&v=3>`__
+            :incremental:`[...] To ensure an acceptable level of readiness, we recommend that these should be protected against "store now, decrypt later" attacks as soon as possible, latest by the end of 2030.`
+
+            -- `Nov. 27, 2024; Securing Tomorrow, Today: Transitioning to PQC <https://www.bsi.bund.de/SharedDocs/Downloads/EN/BSI/Crypto/PQC-joint-statement.pdf?__blob=publicationFile&v=3>`__
+
+
+    .. card::
+
+        .. epigraph::
+
+            [...] the JVG algorithm completely upends existing time projections. The Advanced Quantum Technologies Institute (AQTI) announced March 2, 2026, “The JVG algorithm requires thousand-fold less quantum computer resources, such as qubits and quantum gates. **Research extrapolations suggest** it will *require less than 5,000 qubits to break encryption methods used in RSA and ECC*.”\ [#]_
+
+            -- `March 3, 2026; Securityweek: Quantum Decryption of RSA Is Much Closer Than Expected <https://www.securityweek.com/quantum-decryption-of-rsa-is-much-closer-than-expected/>`__ bzw.
+            `Feb. 13 2026; Jesse Van Griensven Thé, Victor Oliveira Santos, Bahram Gharabaghi; A Novel Hybrid Quantum Circuit for Integer Factorization: End-to-End Evaluation in Simulation and Real Quantum Hardware <https://doi.org/10.20944/preprints202510.1649.v3>`__
+
+        .. [#] Markup wurde nachträglich hinzugefügt. :red:`Die zugrundeliegende Forschung hat (Stand März 2026) bisher kein Peer-Review-Verfahren durchlaufen.`
 
 
 

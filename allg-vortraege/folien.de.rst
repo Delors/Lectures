@@ -107,19 +107,19 @@ Bewertungskriterien
 
   5. Fehlender oder falscher Einsatz von KI
 
-     Die Verfügbarkeit von KI-Werkzeugen (wie z. B. ChatGPT, Gemini, Claude oder auch von lokalen Modellen) erlaubt es Ihnen schnell und einfach Folien und Präsentationen zu erstellen. Deswegen kommt der inhaltlichen Qualität eine besondere Bedeutung zu. 
-     
-     Es gilt, dass :emph:`Aussagen, die faktisch falsch, unsinnig oder überflüssig sind, zu einer Abwertung führen`. 
-     
-     Inhalte, die bereits *Bestandteil von Vorlesungen oder Allgemeinwissen sind, dürfen nicht wiederholt werden, sondern führen ebenfalls zu Punktabzug.* *Zusammenhangslose Aussagen, die nicht durch Quellen oder eigene Experimente belegt werden können, führen ebenfalls zu Abzügen* 
-     
+     Die Verfügbarkeit von KI-Werkzeugen (wie z. B. ChatGPT, Gemini, Claude oder auch von lokalen Modellen) erlaubt es Ihnen schnell und einfach Folien und Präsentationen zu erstellen. Deswegen kommt der inhaltlichen Qualität eine besondere Bedeutung zu.
+
+     Es gilt, dass :emph:`Aussagen, die faktisch falsch, unsinnig oder überflüssig sind, zu einer Abwertung führen`.
+
+     Inhalte, die bereits *Bestandteil von Vorlesungen oder Allgemeinwissen sind, dürfen nicht wiederholt werden, sondern führen ebenfalls zu Punktabzug.* *Zusammenhangslose Aussagen, die nicht durch Quellen oder eigene Experimente belegt werden können, führen ebenfalls zu Abzügen*
+
      Qualifizierende Attribute („schneller“, „besser“, „schwerer“ ...) müssen durch konkrete Metriken belegt bzw. definiert werden, ansonsten führen sie zu Punktabzug.
 
 
 .. supplemental::
 
-   .. tip:: 
-    
+   .. tip::
+
       .. rubric:: Präsentation von Code
 
       Sollten Sie Code demonstrieren, der UIs baut, dann ist es häufig sinnvoll, wenn Sie erst kurz die Ziel UI zeigen und dann den Code, der diese UI erzeugt. Das Publikum kann sich dann besser vorstellen, was der Code macht.
@@ -165,7 +165,7 @@ Zusammenfassung
   :Visualisierungen / Grafiken: Wurden aussagekräftige, dem Verständnis hilfreiche Visualisierungen verwendet?
   :Foliendesign: Wurden Animationen und ähnliche Effekte „sinnvoll” eingesetzt? Wurden Fonts und Farben vernünftig verwendet.
   :Sorgfalt: War die Präsentation frei von Tippfehlern und waren Grafiken, Quelltext, etc. konsistent formatiert?
-  :Zusammenfassung: 
+  :Zusammenfassung:
     Gab es eine und hat diese kurz und prägnant die wichtigsten Aussagen dargestellt?
 
     :peripheral:`(Hier ist nicht eine Zusammenfassung des Vortrags am Ende gemeint, sondern ggf. eine Zusammenfassung der wichtigsten Inhalte/Erkenntnisse am Ende eines Abschnitts.)`
@@ -196,7 +196,7 @@ Checklisten
 .. class:: exercises
 
 Gestaltung der Präsentation
---------------------------- 
+---------------------------
 
 .. story::
 
@@ -224,7 +224,7 @@ Gestaltung der Präsentation
     "Grafiken und Tabellen basierend auf externen Quellen haben Nachweise und Copyrightangaben am Erscheinungsort (Verweis auf Quellenverzeichnis ist ggf. ausreichend).", ""
     "Bei (wörtlichen) Zitaten ist die vollständige Quelle direkt auf der Folie angegeben (nicht nur im Literaturverzeichnis).", ""
     "Es gibt keine Vorwärtsverweise.", ""
-    
+
   .. class:: incremental
 
   .. rubric:: Inhaltliche Aspekte der Foliengestaltung
@@ -250,17 +250,22 @@ Gestaltung der Präsentation
     "Alle verwendeten Symbole und Icons sind semantisch unmittelbar verständlich und unterstützen das Verständnis.",""
     "Codebeispiele sind auf *strikt* notwendige Abschnitte reduziert.", ""
     "Das Design ist konsistent über alle Folien hinweg: Insbesondere werden gleiche Farben für gleiche Dinge verwendet, die Schriftarten sind konsistent, das Layout ist konsistent; Grafiken nutzen die gleiche visuelle Sprache.", ""
-    "Kurzvorträge (bis 10 Minuten) präsentieren keine Agenda/Inhaltsverzeichnis; auch längere Vorträge, die dem zu erwartenden Ablauf folgen, sollten auf eine Agenda/Inhaltsverzeichnis verzichten.","" 
+    "Kurzvorträge (bis 10 Minuten) präsentieren keine Agenda/Inhaltsverzeichnis; auch längere Vorträge, die dem zu erwartenden Ablauf folgen, sollten auf eine Agenda/Inhaltsverzeichnis verzichten.",""
     "Kurzvorträge (bis 10 Minuten) haben nur dann eine Zusammenfassung, wenn diese neue Erkenntnisse bringt.", ""
     "Die Präsentation wurde (mittels KI) auf Probleme mit der Rechtschreibung und dem Stil überprüft.", ""
     "Die Präsentation wurde (mittels KI) auf Aussagen, die unnötig, faktisch falsch oder irreführend sind, überprüft.", ""
 
+  .. hint::
+    :class: incremental
+
+    Sollten Sie im Rahmen der Präsentation Code in einem Editor oder vergleichbarem zeigen (z. B. Dev-Tools eines Browsers), dann sind die oben genannten Anforderungen auch einzuhalten.
+
   .. grid:: incremental margin-top-4em
-    
-    .. cell:: width-40 
+
+    .. cell:: width-40
 
       Verifiziert am: ______________________
 
-    .. cell:: width-60 
-    
+    .. cell:: width-60
+
       Unterschrift: ___________________________________________

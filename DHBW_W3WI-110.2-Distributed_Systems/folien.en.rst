@@ -16,7 +16,7 @@ W3WI_110.2 - Distributed Systems
 
 :Lecturer: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
 :Contact: michael.eichberg@dhbw.de, Raum 149B
-:Version: 2.0 (24SCA und 24EG/EH)
+:Version: 4 (24SCA und 24EG/EH)
 
 
 
@@ -67,7 +67,7 @@ Examination - Portfolio
 .. class:: dhbw
 
 1. Presentations
-2. Programming Exercise 
+2. Programming Exercise
 
 
 
@@ -92,7 +92,7 @@ Presentations - Submissions
 
 .. attention::
 
-  You have to upload your presentation to Moodle up until 7 o'clock on the day of your presentation. 
+  You have to upload your presentation to Moodle up until 7 o'clock on the day of your presentation.
 
 .. attention::
   :class: incremental
@@ -106,7 +106,7 @@ Presentations - Submissions
 Presentations - Available Topics
 ------------------------------------------
 
-.. deck:: 
+.. deck::
 
   .. card::
 
@@ -114,7 +114,7 @@ Presentations - Available Topics
 
         Students giving presentations belonging to the same block have to coordinate with each other to avoid any overlap. If you need a specific topic to be covered by another student but are not sure whether it will be presented sufficiently, create a backup slide for your presentation that covers this topic as well and mark it as a backup slide. This backup slide will not be counted towards the time limit.
 
-  .. card:: 
+  .. card::
 
         .. rubric:: Virtualization and Virtualization Platforms
 
@@ -163,7 +163,7 @@ Presentations - Available Topics
            - Virtual NICs and network bridges
            - Virtual switches and network isolation
 
-  .. card:: 
+  .. card::
 
         .. rubric:: Network Protocols
 
@@ -173,7 +173,7 @@ Presentations - Available Topics
         2. HTTP/3
         3. BitTorrent Protocol :peripheral:`(only available when we have ≥ 25 students)`
 
-  .. card:: 
+  .. card::
 
         .. rubric:: Modern RPC
 
@@ -182,7 +182,7 @@ Presentations - Available Topics
         1.  Protobuf
         2.  Google RPC
 
-  .. card:: 
+  .. card::
 
         .. rubric:: Web-App Security
 
@@ -194,7 +194,7 @@ Presentations - Available Topics
 
         Introduction and concrete examples how they are used/specified and help prevent attacks.
 
-  .. card:: 
+  .. card::
 
         .. rubric:: Monitoring & Debugging Distributed Systems
 
@@ -202,7 +202,7 @@ Presentations - Available Topics
 
         1.  Log Aggregation with a particular focus on correlation of log entries
 
-  .. card:: 
+  .. card::
 
         .. rubric:: Leader Election
 
@@ -213,16 +213,16 @@ Presentations - Available Topics
   .. card::
 
         .. rubric:: Quorum Systems
-        
-        .. class:: dhbw font-size-90       
 
-        1.  Majority voting (i. e., quorum-distributed computing)        
+        .. class:: dhbw font-size-90
+
+        1.  Majority voting (i. e., quorum-distributed computing)
 
   .. card::
 
         .. rubric:: Consensus Algorithms and Fault Tolerance
 
-        .. class:: dhbw list-with-sublists show-list-item-content-on-hover font-size-90       
+        .. class:: dhbw list-with-sublists show-list-item-content-on-hover font-size-90
 
         1.  Consensus Fundamentals & Problem Definition
 
@@ -236,9 +236,9 @@ Presentations - Available Topics
 
             - When do we need BFT?
             - Modern developments
-          
+
               .. presenter-note::
-                
+
                 Tendermint, HotStuff
 
             - Real-world usage
@@ -249,9 +249,9 @@ Presentations - Available Topics
             - Why Paxos is correct but complex
             - Multi-Paxos for practical systems
             - Real-world usage
-          
+
               .. presenter-note::
-          
+
                 [VERIFY!:] Google Chubby, Apache ZooKeeper foundations
 
         4.  Raft - Understandable Consensus
@@ -260,25 +260,25 @@ Presentations - Available Topics
             - Leader election, log replication, safety
             - How Raft differs from Paxos (design philosophy)
             - Real-world usage
-          
+
               .. presenter-note::
-                
+
                 etcd, Consul, CockroachDB
-  
-  .. card:: 
+
+  .. card::
 
         .. rubric:: Eventual Consistency
-    
-        .. class:: dhbw font-size-90       
+
+        .. class:: dhbw font-size-90
 
         1.  Eventual Consistency and Gossip Protocol
         2.  CRDTs (Conflict-free Replicated Data Types) :peripheral:`(only available when we have ≥ 22 students)`
 
-  .. card:: 
+  .. card::
 
         .. rubric:: Distributed File Systems
 
-        .. class:: dhbw font-size-90       
+        .. class:: dhbw font-size-90
 
         1.  Ceph
         2.  HDFS :peripheral:`(only available when we have ≥ 24 students)`
@@ -288,7 +288,7 @@ Presentations - Available Topics
 Topic Assignment
 ------------------------------------------
 
-.. scrollable:: 
+.. scrollable::
 
   The presentations need to be given in the order listed below.
 
@@ -301,77 +301,77 @@ Topic Assignment
       - Constraint
       - Student Name
     * - \01. Introduction to Virtualization & Use Cases
-      - 
-      - 
+      -
+      -
     * - \02. Hypervisors - Architecture & Types
-      - 
-      - 
-    * - \03. Virtual Machines 
-      - 
-      - 
+      -
+      -
+    * - \03. Virtual Machines
+      -
+      -
     * - \04. Containers & OS-level Virtualization
-      - 
-      - 
+      -
+      -
     * - \05. Memory Virtualization
-      - 
-      - 
+      -
+      -
     * - \06. Network & I/O Virtualization
-      - 
-      - 
+      -
+      -
     * - \07. QUIC
       - ≥ 21 students
-      - 
+      -
     * - \08. HTTP/3
-      - 
-      - 
+      -
+      -
     * - \09. BitTorrent Protocol
       - ≥ 25 students
-      - 
+      -
     * - \10. Protobuf
-      - 
-      - 
+      -
+      -
     * - \11. Google RPC
-      - 
-      - 
+      -
+      -
     * - \12. SOP, CORS (Foundations)
-      - 
-      - 
+      -
+      -
     * - \13. CORP / COOP / COEP
       - ≥ 23 students
-      - 
+      -
     * - \14. CSP and SRI
-      - 
-      - 
+      -
+      -
     * - \15. Log Aggregation
-      - 
-      - 
+      -
+      -
     * - \16. Leader Election:  (a) Bully, (b) Ring Algorithm
-      - 
-      - 
+      -
+      -
     * - \17. Quorum Systems (Majority Voting)
-      - 
-      - 
+      -
+      -
     * - \18. Consensus Fundamentals & Problem Definition
-      - 
-      - 
+      -
+      -
     * - \19. Byzantine Fault Tolerance (PBFT)
-      - 
-      - 
+      -
+      -
     * - \20. Paxos Family
-      - 
-      - 
+      -
+      -
     * - \21. Raft - Understandable Consensus
-      - 
-      - 
+      -
+      -
     * - \22. Eventual Consistency and Gossip Protocol
-      - 
-      - 
+      -
+      -
     * - \23. CRDTs
       - ≥ 22 students
-      - 
+      -
     * - \24. Ceph
-      - 
-      - 
+      -
+      -
     * - \25. HDFS
       - ≥ 24 students
       -
@@ -382,7 +382,7 @@ Moderator Assignment
 ------------------------------------------
 
 .. grid::
-    
+
     .. cell:: width-50
 
       .. csv-table::
@@ -399,7 +399,7 @@ Moderator Assignment
           5, /
           6, 12
           7, 1
-          8, 2 
+          8, 2
           9, /
           10, 3
           11, 4
@@ -420,15 +420,15 @@ Moderator Assignment
           15, 16a
           16, 18
           17, 19
-          18, 16b 
+          18, 16b
           19, 23
           20, 24
           21, 14
           22, 17
-          23, 20 
+          23, 20
           24, 21
           25, /
-          
+
 
 
 
@@ -452,9 +452,14 @@ Presentations - Grading (max 25 Points)
 Programming Task (max 25 Points)
 ----------------------------------
 
-.. container:: accentuate
+- Carried out in Groups of two students
+- Grading will be done during an examination interview (15 Minutes per Group):
 
-    See Moodle April 7th for task description and grading details.
+    #. Demonstration of your project (~5 Minutes)
+    #. Answering specific questions related to your implementation / adapting your code to a new scenario
+- see Moodle for Task description
+
+
 
 
 
@@ -468,22 +473,22 @@ Lecture - Schedule
   :17. Mar 2026: Lecture
       Assignment of moderators to presentation topics (see above)
 
-  :7. Apr 2026: 
+  :7. Apr 2026:
       - Presentations:
-      
+
         - \01. Introduction to Virtualization & Use Cases
         - \02. Hypervisors - Architecture & Types
-        - \03. Virtual Machines 
+        - \03. Virtual Machines
         - \04. Containers & OS-level Virtualization
         - \06. Network & I/O Virtualization
         - \07. QUIC
 
-      - Programming Task Explanation 
+      - Programming Task Explanation
 
       - Lecture
 
-  :20. Apr 2026 (5VL): 
-      - Presentations (8 students) 
+  :21. Apr 2026 (5VL):
+      - Presentations (8 students)
 
         - \08. HTTP/3
         - \10. Protobuf
@@ -495,9 +500,9 @@ Lecture - Schedule
 
       - Lecture
 
-  :24. Apr 2026 (5VL): 
-      - Presentations (8 students) 
-      
+  :24. Apr 2026 (5VL):
+      - Presentations (8 students)
+
         - \17. Quorum Systems (Majority Voting)
         - \18. Consensus Fundamentals & Problem Definition
         - \19. Byzantine Fault Tolerance (PBFT)
@@ -509,5 +514,5 @@ Lecture - Schedule
 
       - Lecture
 
-  :8. May 2026 (Event): 
+  :8. May 2026 (Event):
       - Programming Task Submission Deadline (see Moodle for details)

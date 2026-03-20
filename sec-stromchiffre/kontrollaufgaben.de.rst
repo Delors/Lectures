@@ -59,7 +59,7 @@ Fragen
            - vorwärtsgerichtete Unvorhersagbarkeit
            - rückwärtsgerichtete Unvorhersagbarkeit
 
-           D.h. auch wenn einige Zufallszahlen bekannt sind, kann man nicht vorhersagen, welche Zufallszahlen als nächste kommen bzw. welche Zufallszahlen als vorherige waren.
+           D.h. auch wenn einige Zufallszahlen bekannt sind, kann man nicht vorhersagen, welche Zufallszahlen als nächste kommen bzw. welche Zufallszahlen die Vorherigen waren.
 
         3. Beschreiben Sie Maurer's Test auf Zufälligkeit.
 
@@ -81,7 +81,7 @@ Fragen
         6. Welche grundsätzlichen Möglichkeiten gibt es, Pseudozufallszahlen zu erzeugen?
 
            - **Klassische Verfahren**: z. B. lineare Kongruenzgeneratoren.
-           - **Kryptographische PRNGs**: auf Basis sicherer Verfahren wie AES oder Hashfunktionen.
+           - **Kryptographische PRNGs/PRFs**: auf Basis sicherer Verfahren wie AES oder Hashfunktionen.
            - **Kombination mit Entropiequellen**
 
         7. Geeignete Betriebsmodi für Pseudozufallszahlen aus Blockchiffren

@@ -21,7 +21,7 @@ Eine kurze Einführung
 
 :Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
 :Kontakt: michael.eichberg@dhbw.de, Raum 149B
-:Version: 1.0.2
+:Version: 1.0.3 [Themed]
 
 .. supplemental::
 
@@ -175,23 +175,24 @@ Maven - Build Phasen
 
         .. rubric:: die wichtigsten Phasen des Standardlebenszyklus
 
-        :validate: überprüfen, ob das Projekt korrekt konfiguriert ist
-        :compile: kompilieren des Quellcodes des Projekts
-        :test: testet den kompilierten Quellcode mit einem geeigneten Unit-Testing-Framework.
-        :package: den kompilierten Code in ein verteilbares Format, z. B. ein JAR, verpacken.
-        :integration-test: Verarbeitet  das Paket und stellt es, wenn nötig, in einer Umgebung bereit, in der Integrationstests ausgeführt werden können.
-        :deploy: bereitstellen in einer Integrations- oder Release-Umgebung
+        :``validate``: überprüfen, ob das Projekt korrekt konfiguriert ist
+        :``compile``: kompilieren des Quellcodes des Projekts
+        :``test``: testet den kompilierten Quellcode mit einem geeigneten Unit-Testing-Framework.
+        :``package``: den kompilierten Code in ein verteilbares Format, z. B. ein JAR, verpacken.
+        :``integration-test``: Verarbeitet  das Paket und stellt es, wenn nötig, in einer Umgebung bereit, in der Integrationstests ausgeführt werden können.
+        :``deploy``: bereitstellen in einer Integrations- oder Release-Umgebung
 
     .. card::
 
         .. rubric:: Spezialisierte Lebenszyklen (mit eigenen Phasen)
 
-        :clean: bereinigt Artefakte, die von früheren Builds erzeugt wurden.
+        :``clean``: bereinigt Artefakte, die von früheren Builds erzeugt wurden.
 
             Phasen: ``pre-clean``, ``clean``, ``post-clean``
-        :site: generiert eine Site-Dokumentation für dieses Projekt
+        :``site``: generiert eine Site-Dokumentation für dieses Projekt
 
             Phasen: ``pre-site``, ``site``, ``post-site``, ``site-deploy``
+
 
 
 Beispiel Build-Konfiguration für ein Java Projekt
@@ -374,7 +375,7 @@ Projekt bauen und ausführen
 
         - entpacken Sie das Projekt |newton-code.zip|.
         - legen Sie eine ``pom.xml`` Datei an, um das Projekt zu bauen.
-        - Konfigurieren Sie eine Abhängigkeit zu JUnit 5.12 und konfigurieren Sie das ``surefire`` Plugin, um die Tests auszuführen.
+        - Konfigurieren Sie eine Abhängigkeit zu JUnit 5.14.3 und konfigurieren Sie das ``surefire`` Plugin, um die Tests auszuführen.
         - Nutzen Sie :console:`mvn test`, um die Tests auszuführen.
         - Konfigurieren Sie das ``maven-jar-plugin``, um ein ausführbares JAR zu erzeugen. Vergessen sie nicht die ``mainClass`` zu konfigurieren.
         - Nutzen Sie :console:`mvn package`, um das Projekt zu bauen.

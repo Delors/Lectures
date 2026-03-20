@@ -29,7 +29,7 @@ public class Node<T extends Comparable<T>> {
     }
 
     public void insert(T value) {
-        if (value.compareTo(data) <= 0) {
+        if (data.compareTo(value) > 0) {
             if (left == null) {
                 left = new Node<>(value);
             } else {
@@ -96,6 +96,7 @@ public class Node<T extends Comparable<T>> {
         var root = new Node<Integer>(10);
         root.insert(5);
         root.insert(15);
+        root.insert(8);
         root.insert(8);
         root.insert(3);
         root.insert(7);

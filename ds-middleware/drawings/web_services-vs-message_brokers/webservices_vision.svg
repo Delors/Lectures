@@ -6,10 +6,13 @@
     xmlns:xl="http://www.w3.org/1999/xlink"
     xmlns:dc="http://purl.org/dc/elements/1.1/"
     version="1.1"
-    viewBox="124 125 631 347"
-    width="1893"
-    height="1041"
+    viewBox="136 125 608 343"
+    width="1824"
+    height="1029"
 >
+  <style>
+    @import url('/LectureDoc2/ext/fonts/ld-fonts.css');
+  </style>
   <defs>
     <filter id="Shadow" filterUnits="userSpaceOnUse" x="60.9" y="90.3">
       <feGaussianBlur in="SourceAlpha" result="blur" stdDeviation="1.308" />
@@ -69,60 +72,7 @@
         <feMergeNode in="SourceGraphic" />
       </feMerge>
     </filter>
-    <font-face
-            font-family="Noto Sans Display"
-            font-size="12"
-            panose-1="2 11 5 2 4 5 4 2 2 4"
-            units-per-em="1000"
-            underline-position="-100"
-            underline-thickness="50"
-            slope="0"
-            x-height="536"
-            cap-height="714"
-            ascent="1069.0002"
-            descent="-292.99927"
-            font-weight="400"
-        >
-      <font-face-src>
-        <font-face-name name="NotoSansDisplay-Regular" />
-      </font-face-src>
-    </font-face>
-    <font-face
-            font-family="Noto Sans Display"
-            font-size="13"
-            panose-1="2 11 5 2 4 5 4 2 2 4"
-            units-per-em="1000"
-            underline-position="-99.99084"
-            underline-thickness="49.98779"
-            slope="0"
-            x-height="546"
-            cap-height="714"
-            ascent="1069.0002"
-            descent="-292.99927"
-            font-weight="700"
-        >
-      <font-face-src>
-        <font-face-name name="NotoSansDisplay-Regular_Bold" />
-      </font-face-src>
-    </font-face>
-    <font-face
-            font-family="Noto Sans Display"
-            font-size="13"
-            panose-1="2 11 5 2 4 5 4 2 2 4"
-            units-per-em="1000"
-            underline-position="-100"
-            underline-thickness="50"
-            slope="0"
-            x-height="536"
-            cap-height="714"
-            ascent="1069.0002"
-            descent="-292.99927"
-            font-weight="400"
-        >
-      <font-face-src>
-        <font-face-name name="NotoSansDisplay-Regular" />
-      </font-face-src>
-    </font-face>
+
     <marker
             orient="auto"
             overflow="visible"
@@ -166,7 +116,6 @@
       </g>
     </marker>
   </defs>
-  <metadata> Produced by OmniGraffle 8.0\n2025-03-05 13:49:02 +0000</metadata>
   <g
         id="webservices_vision"
         fill-opacity="1"
@@ -174,8 +123,11 @@
         stroke="none"
         stroke-dasharray="none"
         fill="none"
+        font-family="Noto Sans Display"
+        font-size="12"
+        font-weight="400"
     >
-    <title>webservices_vision</title>
+    <title>Webservices Vision</title>
     <g id="webservices_vision_Layer_1">
       <title>Layer 1</title>
       <g id="Graphic_7_shadow" filter="url(#Shadow)">
@@ -336,51 +288,11 @@
                     stroke-width="1"
                 />
         <text transform="translate(162.40999 301.67885)" fill="#666">
-          <tspan
-                        font-family="Noto Sans Display"
-                        font-size="12"
-                        font-weight="400"
-                        fill="#666"
-                        x="3.2"
-                        y="13"
-                        xml:space="preserve"
-                    >Interaktionen auf der </tspan>
-          <tspan
-                        font-family="Noto Sans Display"
-                        font-size="12"
-                        font-weight="400"
-                        fill="#666"
-                        x="3.2"
-                        y="30"
-                        xml:space="preserve"
-                    >Grundlage von Protokollen, </tspan>
-          <tspan
-                        font-family="Noto Sans Display"
-                        font-size="12"
-                        font-weight="400"
-                        fill="#666"
-                        x="3.2"
-                        y="47"
-                        xml:space="preserve"
-                    >die für Peer-to-Peer- und </tspan>
-          <tspan
-                        font-family="Noto Sans Display"
-                        font-size="12"
-                        font-weight="400"
-                        fill="#666"
-                        x="3.2"
-                        y="64"
-                        xml:space="preserve"
-                    >B2B-Umgebungen neu </tspan>
-          <tspan
-                        font-family="Noto Sans Display"
-                        font-size="12"
-                        font-weight="400"
-                        fill="#666"
-                        x="3.2"
-                        y="81"
-                        xml:space="preserve"
-                    >gestaltet wurden</tspan>
+          <tspan x="3.2" y="13">Interaktionen auf der </tspan>
+          <tspan x="3.2" y="30">Grundlage von Protokollen, </tspan>
+          <tspan x="3.2" y="47">die für Peer-to-Peer- und </tspan>
+          <tspan x="3.2" y="64">B2B-Umgebungen neu </tspan>
+          <tspan x="3.2" y="81">gestaltet wurden</tspan>
         </text>
       </g>
       <g id="Graphic_5" filter="url(#Shadow_2)">
@@ -396,42 +308,10 @@
                     stroke-width="1"
                 />
         <text transform="translate(268.58263 383.07536)" fill="#666">
-          <tspan
-                        font-family="Noto Sans Display"
-                        font-size="12"
-                        font-weight="400"
-                        fill="#666"
-                        x="3.2"
-                        y="13"
-                        xml:space="preserve"
-                    >interne Funktionen, die </tspan>
-          <tspan
-                        font-family="Noto Sans Display"
-                        font-size="12"
-                        font-weight="400"
-                        fill="#666"
-                        x="3.2"
-                        y="30"
-                        xml:space="preserve"
-                    >als Dienst zur </tspan>
-          <tspan
-                        font-family="Noto Sans Display"
-                        font-size="12"
-                        font-weight="400"
-                        fill="#666"
-                        x="3.2"
-                        y="47"
-                        xml:space="preserve"
-                    >Verfügung gestellt </tspan>
-          <tspan
-                        font-family="Noto Sans Display"
-                        font-size="12"
-                        font-weight="400"
-                        fill="#666"
-                        x="3.2"
-                        y="64"
-                        xml:space="preserve"
-                    >werden </tspan>
+          <tspan x="3.2" y="13">interne Funktionen, die </tspan>
+          <tspan x="3.2" y="30">als Dienst zur </tspan>
+          <tspan x="3.2" y="47">Verfügung gestellt </tspan>
+          <tspan x="3.2" y="64">werden </tspan>
         </text>
       </g>
       <g id="Graphic_7">
@@ -456,7 +336,6 @@
                         fill="black"
                         x="7283063e-19"
                         y="14"
-                        xml:space="preserve"
                     >Anbieter</tspan>
         </text>
       </g>
@@ -469,7 +348,6 @@
                         fill="black"
                         x="2344791e-19"
                         y="14"
-                        xml:space="preserve"
                     >Kunde</tspan>
         </text>
       </g>
@@ -482,7 +360,6 @@
                         fill="black"
                         x="0"
                         y="14"
-                        xml:space="preserve"
                     >Warenhaus</tspan>
         </text>
       </g>
@@ -519,7 +396,6 @@
                         fill="black"
                         x="5.4754006"
                         y="14"
-                        xml:space="preserve"
                     >Web Service</tspan>
         </text>
       </g>
@@ -543,7 +419,6 @@
                         fill="black"
                         x="19.4634"
                         y="14"
-                        xml:space="preserve"
                     >interne </tspan>
           <tspan
                         font-family="Noto Sans Display"
@@ -552,7 +427,6 @@
                         fill="black"
                         x="3.0899006"
                         y="32"
-                        xml:space="preserve"
                     >Infrastruktur</tspan>
         </text>
       </g>
@@ -576,7 +450,6 @@
                         fill="black"
                         x="5.4754006"
                         y="14"
-                        xml:space="preserve"
                     >Web Service</tspan>
         </text>
       </g>
@@ -619,7 +492,6 @@
                         fill="black"
                         x="5.8979006"
                         y="14"
-                        xml:space="preserve"
                     >Web service</tspan>
         </text>
       </g>
@@ -643,7 +515,6 @@
                         fill="black"
                         x="19.4634"
                         y="14"
-                        xml:space="preserve"
                     >interne </tspan>
           <tspan
                         font-family="Noto Sans Display"
@@ -652,7 +523,6 @@
                         fill="black"
                         x="3.0899006"
                         y="32"
-                        xml:space="preserve"
                     >Infrastruktur</tspan>
         </text>
       </g>
@@ -676,7 +546,6 @@
                         fill="black"
                         x="19.4634"
                         y="14"
-                        xml:space="preserve"
                     >interne </tspan>
           <tspan
                         font-family="Noto Sans Display"
@@ -685,7 +554,6 @@
                         fill="black"
                         x="3.0899006"
                         y="32"
-                        xml:space="preserve"
                     >Infrastruktur</tspan>
         </text>
       </g>
@@ -766,69 +634,13 @@
                     stroke-width="1"
                 />
         <text transform="translate(546.37795 153.05905)" fill="#666">
-          <tspan
-                        font-family="Noto Sans Display"
-                        font-size="12"
-                        font-weight="400"
-                        fill="#666"
-                        x="3.2"
-                        y="13"
-                        xml:space="preserve"
-                    >standardisierte Sprachen und </tspan>
-          <tspan
-                        font-family="Noto Sans Display"
-                        font-size="12"
-                        font-weight="400"
-                        fill="#666"
-                        x="3.2"
-                        y="30"
-                        xml:space="preserve"
-                    >Protokolle, wodurch viele </tspan>
-          <tspan
-                        font-family="Noto Sans Display"
-                        font-size="12"
-                        font-weight="400"
-                        fill="#666"
-                        x="3.2"
-                        y="47"
-                        xml:space="preserve"
-                    >verschiedene Middleware-</tspan>
-          <tspan
-                        font-family="Noto Sans Display"
-                        font-size="12"
-                        font-weight="400"
-                        fill="#666"
-                        x="3.2"
-                        y="64"
-                        xml:space="preserve"
-                    >Infrastrukturen überflüssig </tspan>
-          <tspan
-                        font-family="Noto Sans Display"
-                        font-size="12"
-                        font-weight="400"
-                        fill="#666"
-                        x="3.2"
-                        y="81"
-                        xml:space="preserve"
-                    >werden (es wird nur die </tspan>
-          <tspan
-                        font-family="Noto Sans Display"
-                        font-size="12"
-                        font-weight="400"
-                        fill="#666"
-                        x="3.2"
-                        y="98"
-                        xml:space="preserve"
-                    >Middleware für Webdienste </tspan>
-          <tspan
-                        font-family="Noto Sans Display"
-                        font-size="12"
-                        font-weight="400"
-                        fill="#666"
-                        x="3.2"
-                        y="115"
-                        xml:space="preserve"
-                    >benötigt)</tspan>
+          <tspan x="3.2" y="13">standardisierte Sprachen und </tspan>
+          <tspan x="3.2" y="30">Protokolle, wodurch viele </tspan>
+          <tspan x="3.2" y="47">verschiedene Middleware-</tspan>
+          <tspan x="3.2" y="64">Infrastrukturen überflüssig </tspan>
+          <tspan x="3.2" y="81">werden (es wird nur die </tspan>
+          <tspan x="3.2" y="98">Middleware für Webdienste </tspan>
+          <tspan x="3.2" y="115">benötigt)</tspan>
         </text>
       </g>
       <g id="Line_26">
@@ -868,21 +680,9 @@
                 />
       </g>
       <g id="Graphic_29">
-        <path
-                    d="M 146.63578 207.776 L 322.0172 207.776 C 324.22632 207.776 326.0172 209.56686 326.0172 211.776 L 326.0172 221.776 C 326.0172 223.98514 324.22632 225.776 322.0172 225.776 L 146.63578 225.776 C 144.42664 225.776 142.63578 223.98514 142.63578 221.776 L 142.63578 211.776 C 142.63578 209.56686 144.42664 207.776 146.63578 207.776 Z"
-                    fill="white"
-                    fill-opacity=".78"
-                />
+
         <text transform="translate(142.63578 207.776)" fill="#ff7c00">
-          <tspan
-                        font-family="Noto Sans Display"
-                        font-size="13"
-                        font-weight="400"
-                        fill="#ff7c00"
-                        x="3.2"
-                        y="14"
-                        xml:space="preserve"
-                    >interne Beschaffungsanfragen</tspan>
+          <tspan font-size="13" x="3.2" y="14">interne Beschaffungsanfragen</tspan>
         </text>
       </g>
     </g>

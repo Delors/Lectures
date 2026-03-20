@@ -255,9 +255,9 @@ Lamport-Uhren (*logical clocks*)
 
 .. rubric:: Vorgehensweise
 
-:vor *write* und *send*: erhöhen der lokalen Zeit T\ `local`:sub: = T\ `local`:sub: + 1  
-:*send* immer inklusive Zeitstempel: T\ `msg`:sub: = T\ `local`:sub: 
-:vor *receive*: T\ `local`:sub: = max(T\ `local`:sub:,T\ `local`:sub:) + 1 
+:vor *write* und *send*: erhöhen der lokalen Zeit T\ `local`:sub: = T\ `local`:sub: + 1
+:*send* immer inklusive Zeitstempel: T\ `msg`:sub: = T\ `local`:sub:
+:vor *receive*: T\ `local`:sub: = max(T\ `local`:sub:,T\ `local`:sub:) + 1
 
 .. container:: incremental
 
@@ -420,7 +420,7 @@ In **verteilten** (*Datenbank-*)\ *Systemen* können nur zwei der drei folgenden
 
       (Das System funktioniert auch bei Netzwerkpartitionierungen; d.h. Knoten können nicht mehr miteinander kommunizieren.)
 
-  .. cell:: 
+  .. cell::
 
     .. image:: drawings/cap.svg
       :align: center

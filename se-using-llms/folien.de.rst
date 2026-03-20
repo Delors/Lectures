@@ -17,14 +17,14 @@
 
 
 
-Software Engineering - Code Generierung mit LLMs\ [#]_
+AI Assisted Software Engineering\ [#]_
 ===================================================================
 
 Eine allererste Einführung
 
 :Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
 :Kontakt: michael.eichberg@dhbw.de
-:Version: 0.2
+:Version: 0.2.1 (WIP)
 
 .. supplemental::
 
@@ -36,6 +36,80 @@ Eine allererste Einführung
       https://github.com/Delors/delors.github.io/issues
 
 .. [#] Erstellt unter Zuhilfenahme von ChatGPT
+
+
+
+
+Entwicklung von Entwicklerunterstützung in Hinblick auf die Entwicklung
+------------------------------------------------------------------------
+
+.. TODO Make it a timeline
+
+    Assembler
+    Prozedurale Programmierung
+    Typsysteme
+    Objekt-orientierte/funktionale Programmierung
+    Verbesserter Toolsupport:
+        - Syntax Highlighting
+        -
+        - Semantik Highlighting
+        - Inline Help
+        - Stackoverflow
+        - Smart Code Completion in the Editor
+        - LLM based code completion
+        - ChatGPT
+        - Agentic Coding
+
+    .. question::
+
+        War diese Entwicklung notwendig?
+
+        .. answer::
+
+            Ja - die heutigen Systeme mit Ihrer inherenten Komplexität hätten gar nicht in Maschinensprache programmiert werden können.
+
+
+
+.. class:: transition-fade
+
+Was ist *Vibe Coding*?
+-------------------------
+
+.. definition:: Vibe Coding
+    :class: incremental
+
+    .. epigraph::
+
+        Entwicklung einer Softwarelösung, für deren Softwarequalität ich - als Entwickler - keine Garantie übernehme.
+
+    .. epigraph::
+
+        Entwicklung einer Software für ein einmaligen Anwendungszweck.
+
+.. question::
+
+    Ist *Vibe Coding* Software Engineering?
+
+.. answer::
+
+    Nein. Wenn ich Code Vibe Code und keinen systematischen Prozess durchlaufen habe, um die kurz- und auch langfristige Qualität zu sichern, dann kann dies nicht als Software Engineering bezeichnet werden.
+
+.. question::
+
+    Wann funktioniert Vibe Coding?
+
+.. answer::
+
+    Wenn der Prompt sich auf die Dinge bezieht, die das LLM kennt. Beispiel: Erstelle mir eine Webapp zum Spielen von Schach. Wenn ich mir aber ein neues Spielkonzept überlegt habe, dass es so vorher noch nie gab, dann benötige ich eine Spezifikation und schon sind wir im Bereich Software Engineering.
+
+
+
+Empfohlener Podcast
+
+https://se-radio.net/2026/03/se-radio-711-scott-hanselman-on-ai-assisted-development-tools/
+
+
+
 
 
 
@@ -2353,12 +2427,20 @@ Beispielhafte Verwendung von Claude Sonnet 4 Thinking
 Sicherheit und generierter Code
 --------------------------------
 
-.. epigraph:: 
+.. epigraph::
 
     **AI firm DeepSeek writes less-secure code for groups China disfavors**
 
     The Chinese artificial intelligence engine DeepSeek often refuses to help programmers or gives them code with major security flaws when they say they are working for the banned spiritual movement Falun Gong or others considered sensitive by the Chinese government, new research shows.
-    
+
     The findings,[...], underscore how politics shapes artificial intelligence efforts during a geopolitical race for technology prowess and influence.
 
     -- `16.9.2025 - Washington Post <https://www.washingtonpost.com/technology/2025/09/16/deepseek-ai-security/>`__
+
+
+
+
+TODO `The Ralph Loop <https://ghuntley.com/loop/>`__
+-------------------------------------------------------
+
+Idee: baue Deinen eigenen Agenten--- wiederhole eine Tätigkeit solange bis ein verifizierbares Ziel erreicht wird...

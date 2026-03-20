@@ -16,7 +16,7 @@ Basic Concepts of Distributed Systems
 
 :Lecturer: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
 :Contact: michael.eichberg@dhbw.de
-:Version: 1.0.1
+:Version: 1.0.1.1
 
 .. supplemental::
 
@@ -295,6 +295,7 @@ Exercise
 
     .. image:: drawings/lamport-exercise/task.svg
       :align: center
+      :class: light-image
 
     .. solution::
       :pwd: ReplicationIncoming.
@@ -303,7 +304,7 @@ Exercise
 
       .. image:: drawings/lamport-exercise/solution.svg
           :align: center
-          :class: box-shadow rounded-corners
+          :class: light-image
 
       (b)
 
@@ -341,7 +342,7 @@ Distributed transactions
         Abort_Transaction();
     } }
 
-.. container:: framed incremental
+.. container:: accentuate incremental
 
   We need an *Atomic Commit Protocol*.
 
@@ -404,12 +405,13 @@ In **distributed** (*database*)\ *systems*, only two of the following three prop
 
 .. grid::
 
-  .. grid::
+  .. grid:: width-50
 
     .. image:: drawings/cap.svg
       :align: center
+      :class: light-image
 
-  .. grid::  incremental
+  .. grid:: width-50 incremental
 
     .. class:: list-with-explanations
 
@@ -468,12 +470,11 @@ Exercise
 
 
 
-.. ideas: 
-  Leader Election Algo., 
-  Gossip Protocol, 
-  RAFT Protocol, 
-  Paxos, 
+.. ideas:
+  Leader Election Algo.,
+  Gossip Protocol,
+  RAFT Protocol,
+  Paxos,
   AMQP
   OAuth 2.0
   OpenID Connect ("Legacy" SAML)
-

@@ -17,7 +17,7 @@ Java Generics
 
 :Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
 :Kontakt: michael.eichberg@dhbw.de, Raum 149B
-:Version: 1.0.2
+:Version: 1.0.4.1
 
 .. supplemental::
 
@@ -160,7 +160,7 @@ Einfache nicht-generische Datenstrukturen
            .. code:: console
                 :number-lines:
 
-                $ java --enable-preview RPN 1 2 "+" 3 "*"
+                $ java RPN 1 2 "+" 3 "*"
                 9.0
 
            Nutzen Sie Ihre Klasse :java:`Stack` zum Zwischenspeichern der Operanden.
@@ -168,7 +168,12 @@ Einfache nicht-generische Datenstrukturen
         3. Wenn Sie sich den Code des RPN ansehen - wo sehen Sie insbesondere Verbesserungspotential?
 
         .. solution::
-            :pwd: WeiterGehtEs
+            :pwd: WeiterGehtEsTeil2
+
+            .. include:: code/ds/Stack.java
+                :code: java
+                :class: copy-to-clipboard
+                :number-lines:
 
             .. include:: code/RPN.java
                 :code: java
@@ -254,7 +259,7 @@ Generics - Beispiel: RPN Calculator mit verschiedenen :java:`Stack`\ s
 
         .. supplemental::
 
-            In diesem Beispiel würden wir insbesondere gerne auf die Casts (2 Mal in Zeile 5 und 2 man in Zeile 8) verzichten wollen. Dies Casts sind nicht nur unschön, sondern können auch (in komplexeren Fällen) zu Laufzeitfehlern führen.
+            In diesem Beispiel würden wir insbesondere gerne auf die Casts (2- mal in Zeile 5 und 2-mal in Zeile 8) verzichten wollen. Dies Casts sind nicht nur unschön, sondern können auch (in komplexeren Fällen) zu Laufzeitfehlern führen.
 
     .. card::
 
@@ -433,7 +438,7 @@ Wrapper-Klassen und Auto(un)boxing
 Grundlegende Klassen des Collections Frameworks
 ------------------------------------------------
 
-.. container:: scale-on-hover 
+.. container:: scale-on-hover
 
     .. image:: images/collections/collections.svg
         :alt: Collections Framework - Übersicht
@@ -446,7 +451,7 @@ Grundlegende Klassen des Collections Frameworks
 
   - es definiert grundlegende Methoden für Sammlungen von Objekten.
   - es definiert keine Restriktionen / Garantien bezüglich:
-  
+
     - Duplikate
     - Ordnung
     - Sortierung
@@ -600,7 +605,7 @@ Im folgenden wird der Typ „K“ für den Typ des Schlüssels und der Typ "V" f
 
 .. story::
 
-    .. container:: scale-on-hover 
+    .. container:: scale-on-hover
 
         .. image:: images/collections/maps.svg
             :alt: Collections Framework - Maps
@@ -633,7 +638,7 @@ Im folgenden wird der Typ „K“ für den Typ des Schlüssels und der Typ "V" f
 
         :java:`java.util.HashMap`
 
-        Erlaubt Zugriff auf Elemente durch einen berechneten Schlüssel, z.B. „Nachname + Vorname“ Schlüssel wird in numerischen Index (Hashwert\ [#]_) konvertiert und für effizienten Zugriff genutzt.
+        Erlaubt Zugriff auf Elemente durch einen berechneten Schlüssel, z. B. wird ein Schlüssel bestend aus „Nachname + Vorname“ in einen numerischen Index (Hashwert\ [#]_) konvertiert und für effizienten Zugriff genutzt.
 
         .. [#] Hashing diskutieren wir später detailliert.
 
@@ -740,22 +745,32 @@ Die Implementation von *Iterator*\ s ist ein Beispiel für die Umsetzung des *De
 
 .. exercise:: Iterables
 
-    Implementieren Sie das Interface :java:`java.lang.Iterable` für Ihre Klasse :java:`Pair`. D. h. schreiben Sie eine Methode :java:`java.util.Iterator iterator()`, die einen Iterator für die Elemente des Paares zurückgibt.
+    1. Implementieren Sie das Interface :java:`java.lang.Iterable` für Ihre ursprüngliche Klasse :java:`Pair`. D. h. schreiben Sie eine Methode :java:`java.util.Iterator iterator()`, die einen Iterator für die Elemente des Paares zurückgibt.
 
-    Dazu ist es erforderlich, dass Sie eine Klasse :java:`PairIterator` implementieren, die das Interface :java:`java.util.Iterator` implementiert. Diese Klasse führt dann die eigentliche Iteration durch. Die Erzeugung der Instanz von :java:`PairIterator` erfolgt in der Methode :java:`iterator()`.
+       Dazu ist es erforderlich, dass Sie eine Klasse :java:`PairIterator` implementieren, die das Interface :java:`java.util.Iterator` implementiert. Diese Klasse führt dann die eigentliche Iteration durch. Die Erzeugung der Instanz von :java:`PairIterator` erfolgt in der Methode :java:`iterator()`.
 
-    .. hint::
+       .. hint::
 
-        Die Klasse :java:`PairIterator` benötigt einen Konstruktur, der eine Referenz auf das Pair bekommt, über das iteriert werden soll.
-
+          Die Klasse :java:`PairIterator` benötigt einen Konstruktur, der eine Referenz auf das Pair bekommt, über das iteriert werden soll.
+    2. Implementieren Sie einen generischen :java:`record` :java:`Pair<T>`, der einen Typparameter :java:`T` definiert, der über beide Werte abstrahiert. Dieser :java:`record` soll :java:`Iterable` so implementieren, dass die Werte bei der Iteration vom Typ :java:`T` sind.
 
     .. solution::
         :pwd: It$It-Iterable
+
+        .. rubric:: Lösung ohne generische Typparameter
 
         .. include:: code/IterablePair.java
             :code: java
             :class: copy-to-clipboard
             :number-lines:
+
+        .. rubric:: Moderne Lösung
+
+        .. include:: code/IterableGenericPair.java
+            :code: java
+            :class: copy-to-clipboard
+            :number-lines:
+
 
 
 
@@ -903,16 +918,17 @@ Beschränkte Wildcards
                     :class: copy-to-clipboard
 
                     abstract class Shape {
-                    abstract void draw(Canvas c);
+                      abstract void draw(Canvas c);
                     }
                     class Circle extends Shape {
-                    void draw(Canvas c) { /*...*/ }
+                      void draw(Canvas c) { /*...*/ }
                     }
                     class Rectangle extends Shape {
-                    void draw(Canvas c) { /*...*/ }
+                      void draw(Canvas c) { /*...*/ }
                     }
+
                     class Canvas {
-                    void draw(Shape s) {
+                      void draw(Shape s) {
                         s.draw(this);
                     } }
 
@@ -1016,6 +1032,18 @@ Generische Methoden
 
                 /*Tuple2<String> ts =*/ new Tuple2<Integer>(1,2).map(e -> "value: " + e)
 
+        .. supplemental::
+
+            .. code:: java
+                :number-lines:
+
+                public interface Function<T,R> {
+
+                    R apply(T t);
+
+                    /* ... und einige Defaultmethoden. */
+                }
+
 
 
 
@@ -1043,27 +1071,29 @@ Statische Typisierung
 
     .. class:: list-with-details
 
-    1.  Fügen Sie Ihrer generischen Klasse :java:`Pair` eine Methode :java:`addToMap(...)` hinzu, die die Elemente des Pairs in einer :java:`java.util.Map` speichert. D. h. der erste Wert eines Pairs wird als Schlüssel und der Zweite als Value verwendet.
+    1.  Fügen Sie Ihrer generischen Klasse :java:`Pair<U,V>` eine Methode :java:`addToMap(...)` hinzu, die die Elemente des Pairs in einer :java:`java.util.Map` speichert (siehe Beispiel). D. h. der erste Wert eines Pairs wird als Schlüssel und der Zweite als Value verwendet. Die Methode muss auch Maps von Supertypen von :java:`U` und :java:`V` akzeptieren.
 
-        Achten Sie darauf, dass die Methode auch Maps von Supertypen von :java:`U` und :java:`V` akzeptiert. D. h. es sollte folgendes Szenario unterstützt werden:
+        .. example::
 
-        .. code:: java
-            :number-lines:
-            :class: copy-to-clipboard
+            .. code:: java
+                :number-lines:
+                :class: copy-to-clipboard
 
-            Pair<Integer,Integer> p = new Pair<>(1, 2);
-            java.util.Map<Object,Integer> map = new java.util.HashMap<>();
-            p.addToMap(map); // D.h. dem Key "1" ist nur der Wert "2" zugewiesen.
+                Pair<Integer,Integer> p = new Pair<>(1, 2);
+                java.util.Map<Object,Integer> map = new java.util.HashMap<>();
+                p.addToMap(map); // D.h. dem Key "1" ist nur der Wert "2" zugewiesen.
 
     2.  Schreiben Sie eine Methode die die Werte eine :java:`Pair`\ s aktualisiert basierend auf den Werten eines anderen Paares. Achten Sie darauf, dass die Methode auch mit Subtypen von :java:`U` und :java:`V` arbeitet.
 
-        .. code:: java
-            :number-lines:
-            :class: copy-to-clipboard
+        .. example::
 
-            Pair<Integer,Integer> pIntegers = new Pair<>(1, 2);
-            Pair<Object,Object> pObjects = new Pair<>("a",new Object());
-            pObjects.update(pIntegers);
+            .. code:: java
+                :number-lines:
+                :class: copy-to-clipboard
+
+                Pair<Integer,Integer> pIntegers = new Pair<>(1, 2);
+                Pair<Object,Object> pObjects = new Pair<>("a",new Object());
+                pObjects.update(pIntegers);
 
     .. solution::
         :pwd: DasWarenGenerics

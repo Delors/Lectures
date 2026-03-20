@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+    "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:xl="http://www.w3.org/1999/xlink"
+    xmlns="http://www.w3.org/2000/svg"
+    version="1.1"
+    viewBox="130.91016 104.60156 358.8125 188.17044"
+    width="358"
+    height="188"
+>
+  <style>
+    @import url('/LectureDoc2/ext/fonts/ld-fonts.css');
+  </style>
+  <defs>
+    <marker
+            orient="auto"
+            overflow="visible"
+            markerUnits="strokeWidth"
+            id="FilledArrow_Marker"
+            stroke-linejoin="miter"
+            stroke-miterlimit="10"
+            viewBox="-1 -4 10 8"
+            markerWidth="10"
+            markerHeight="8"
+            color="black"
+        >
+      <g>
+        <path
+                    d="M 8 0 L 0 -3 L 0 3 Z"
+                    fill="currentColor"
+                    stroke="currentColor"
+                    stroke-width="1"
+                />
+      </g>
+    </marker>
+  </defs>
+
+  <g
+        fill="none"
+        fill-opacity="1"
+        stroke="none"
+        stroke-opacity="1"
+        stroke-dasharray="none"
+        font-family="Noto Sans Display"
+        font-size="13"
+        font-weight="400"
+    >
+      <g id="Group_2">
+        <title>Class with Attributes, Operations, and Template Parameter</title>
+        <g id="Group_4">
+          <g id="Graphic_7">
+            <title>Attributes</title>
+            <rect
+                        x="131.91016"
+                        y="171.16785"
+                        width="130"
+                        height="22.433712"
+                        stroke="#b9c0c1"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                    />
+            <text transform="translate(137.91016 177.16785)" fill="#515556">
+              <tspan x="0" y="14">  </tspan>
+            </text>
+          </g>
+          <g id="Graphic_6">
+            <title>Class Name</title>
+            <rect
+                        x="131.91016"
+                        y="123.61071"
+                        width="130"
+                        height="47.55714"
+                        stroke="#b9c0c1"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                    />
+            <text transform="translate(137.91016 138.38928)" fill="#515556">
+              <tspan font-weight="700" x="26.76" y="14">LinkedList</tspan>
+            </text>
+          </g>
+          <g id="Graphic_5">
+            <title>Operations</title>
+            <rect
+                        x="131.91016"
+                        y="193.60156"
+                        width="130"
+                        height="93.63138"
+                        stroke="#b9c0c1"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                    />
+            <text transform="translate(137.91016 199.60156)" fill="#515556">
+              <tspan x="0" y="14">T head();</tspan>
+              <tspan x="0" y="36">void deleteHead();</tspan>
+              <tspan x="0" y="58">boolean isEmpty();</tspan>
+              <tspan x="0" y="80">void preprend(T t);</tspan>
+            </text>
+          </g>
+        </g>
+        <g id="Graphic_3">
+          <title>Template Parameter</title>
+          <rect
+                    x="246.91016"
+                    y="105.60156"
+                    width="35.210937"
+                    height="33.5"
+                    fill="white"
+                />
+          <path
+                    d="M 246.91016 105.60156 L 282.1211 105.60156 L 282.1211 139.10156 L 246.91016 139.10156 Z"
+                    stroke="#b9c0c1"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-dasharray="8.0,8.0"
+                    stroke-width="2"
+                />
+          <text transform="translate(252.91016 113.35156)" fill="#515556">
+            <tspan
+                        font-family="Noto Sans Display"
+                        font-size="13"
+                        font-weight="400"
+                        fill="#515556"
+                        x="8.199469"
+                        y="14"
+                    >T</tspan>
+          </text>
+        </g>
+      </g>
+      <g id="Group_12">
+        <title>Class with Attributes, Operations, and Template Parameter</title>
+        <g id="Group_14">
+          <g id="Graphic_17">
+            <title>Attributes</title>
+            <rect
+                        x="333.72266"
+                        y="215.772"
+                        width="130"
+                        height="52"
+                        stroke="#b9c0c1"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                    />
+            <text transform="translate(339.72266 221.772)" fill="#515556">
+              <tspan x="0" y="14">T value;</tspan>
+              <tspan x="0" y="36">Node&lt;T&gt; next;</tspan>
+            </text>
+          </g>
+          <g id="Graphic_16">
+            <title>Class Name</title>
+            <rect
+                        x="333.72266"
+                        y="189.772"
+                        width="130"
+                        height="26"
+                        stroke="#b9c0c1"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                    />
+            <text transform="translate(339.72266 193.772)" fill="#515556">
+              <tspan font-weight="700" x="42.5355" y="14">Node</tspan>
+            </text>
+          </g>
+          <g id="Graphic_15">
+            <title>Operations</title>
+            <rect
+                        x="333.72266"
+                        y="267.772"
+                        width="130"
+                        height="24"
+                        stroke="#b9c0c1"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                    />
+          </g>
+        </g>
+        <g id="Graphic_13">
+          <title>Template Parameter</title>
+          <rect x="448.72266" y="174.772" width="40" height="30" fill="white" />
+          <path
+                    d="M 448.72266 174.772 L 488.72266 174.772 L 488.72266 204.772 L 448.72266 204.772 Z"
+                    stroke="#b9c0c1"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-dasharray="8.0,8.0"
+                    stroke-width="2"
+                />
+          <text transform="translate(454.72266 180.772)" fill="#515556">
+            <tspan x="10.594" y="14">T</tspan>
+          </text>
+        </g>
+      </g>
+      <g id="Line_18">
+        <line
+                x1="262.91016"
+                y1="240.8603"
+                x2="322.82288"
+                y2="241.2625"
+                marker-end="url(#FilledArrow_Marker)"
+                stroke="black"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="1"
+            />
+      </g>
+      <g id="Graphic_20">
+        <text transform="translate(282.31675 222.272)" fill="black">
+          <tspan x="0" y="14">root</tspan>
+        </text>
+      </g>
+  </g>
+</svg>

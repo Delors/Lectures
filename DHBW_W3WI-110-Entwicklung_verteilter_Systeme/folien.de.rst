@@ -465,7 +465,7 @@ Vorträge - Themen (Web-Programmierung)
 
   .. card::
 
-    **Accessibility (a11y) für Spiele**
+    **Accessibility (a11y)**
 
     :Personen: 1 Person
     :Dauer: 10 Minuten

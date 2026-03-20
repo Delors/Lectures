@@ -17,7 +17,7 @@ Java - Funktionale Programmierung
 
 :Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
 :Kontakt: michael.eichberg@dhbw.de, Raum 149B
-:Version: 1.0.2
+:Version: 1.0.3 [Themed]
 
 .. class:: block-footer
 
@@ -108,7 +108,7 @@ Lambdas
 
             Ein Ausdruck, dessen Wert eine Funktion ist.
 
-            Solche Ausdrücke sind sehr nützlich, mussten in Java bisher aber mit anonymen inneren Klassen emuliert werden.
+            Solche Ausdrücke sind sehr nützlich, mussten in Java aber vor Version 8 mit anonymen inneren Klassen emuliert werden.
 
     .. card::
 
@@ -199,7 +199,7 @@ Lambdas
 
             .. card::
 
-                **Instanzen von inneren Klassen können immer Object zugewiesen werden:**
+                **Instanzen von inneren Klassen können immer Variablen vom Typ** :java:`java.lang.Object` **zugewiesen werden:**
 
                 .. code:: java
                     :number-lines:
@@ -526,10 +526,10 @@ Verkettete Listen
 
 Eine verkettete Liste ist eine alternative Implementierungstechnik, die flexibler ist als ein Array und dynamisch wachsen kann. Jedes Element in einer verketteten Liste enthält eine Referenz auf das nächste Element in der Liste.
 
-
 .. image:: images/chainedlist.svg
     :alt: Verkettete Liste
     :align: center
+    :class: light-image
 
 
 .. class:: exercises

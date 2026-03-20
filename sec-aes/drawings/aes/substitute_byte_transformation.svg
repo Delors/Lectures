@@ -36,7 +36,6 @@
       </g>
     </marker>
   </defs>
-  <metadata> Produced by OmniGraffle 8.0\n2025-05-20 07:24:55 +0000</metadata>
   <g
         id="substitute_byte_transformation"
         stroke-dasharray="none"
@@ -44,11 +43,13 @@
         fill-opacity="1"
         fill="none"
         stroke="none"
+        font-family="Noto Sans Display"
+        font-size="20"
+        font-weight="400"
     >
     <title>substitute_byte_transformation</title>
     <rect fill="white" x="191" y="862" width="777" height="453" />
     <g id="substitute_byte_transformation_Layer_1">
-      <title>Layer 1</title>
       <g id="Group_35">
         <g id="Graphic_18">
           <rect
@@ -10622,19 +10623,8 @@
         </g>
         <g id="Graphic_251">
           <text transform="translate(236.13258 1198.8134)" fill="white">
-            <tspan
-                            font-family="Noto Sans Display"
-                            font-size="20"
-                            font-weight="400"
-                            fill="white"
-                            x="13.425478"
-                            y="21"
-                        >S</tspan>
-            <tspan
-                            font-family="Noto Sans Display"
+            <tspan font-size="20" x="13.425478" y="21">S</tspan><tspan
                             font-size="13"
-                            font-weight="400"
-                            fill="white"
                             y="28"
                         >1,1</tspan>
           </text>
@@ -10681,76 +10671,32 @@
         </g>
         <g id="Graphic_840">
           <text transform="translate(196.13258 1158.8134)" fill="black">
-            <tspan
-                            font-family="Noto Sans Display"
-                            font-size="20"
-                            font-weight="400"
-                            fill="black"
-                            x="13.425478"
-                            y="21"
-                        >S</tspan>
-            <tspan
-                            font-family="Noto Sans Display"
+            <tspan font-size="20" x="13.425478" y="21">S</tspan><tspan
                             font-size="13"
-                            font-weight="400"
-                            fill="black"
                             y="28"
                         >0,0</tspan>
           </text>
         </g>
         <g id="Graphic_841">
           <text transform="translate(316.13258 1278.8134)" fill="black">
-            <tspan
-                            font-family="Noto Sans Display"
-                            font-size="20"
-                            font-weight="400"
-                            fill="black"
-                            x="13.425478"
-                            y="21"
-                        >S</tspan>
-            <tspan
-                            font-family="Noto Sans Display"
+            <tspan font-size="20" x="13.425478" y="21">S</tspan><tspan
                             font-size="13"
-                            font-weight="400"
-                            fill="black"
                             y="28"
                         >3,3</tspan>
           </text>
         </g>
         <g id="Graphic_842">
           <text transform="translate(196.13258 1278.8134)" fill="black">
-            <tspan
-                            font-family="Noto Sans Display"
-                            font-size="20"
-                            font-weight="400"
-                            fill="black"
-                            x="13.425478"
-                            y="21"
-                        >S</tspan>
-            <tspan
-                            font-family="Noto Sans Display"
+            <tspan font-size="20" x="13.425478" y="21">S</tspan><tspan
                             font-size="13"
-                            font-weight="400"
-                            fill="black"
                             y="28"
                         >3,0</tspan>
           </text>
         </g>
         <g id="Graphic_843">
           <text transform="translate(316.13258 1158.8134)" fill="black">
-            <tspan
-                            font-family="Noto Sans Display"
-                            font-size="20"
-                            font-weight="400"
-                            fill="black"
-                            x="13.425478"
-                            y="21"
-                        >S</tspan>
-            <tspan
-                            font-family="Noto Sans Display"
+            <tspan font-size="20" x="13.425478" y="21">S</tspan><tspan
                             font-size="13"
-                            font-weight="400"
-                            fill="black"
                             y="28"
                         >0,3</tspan>
           </text>
@@ -11084,19 +11030,8 @@
         </g>
         <g id="Graphic_858">
           <text transform="translate(827.9701 1198.8134)" fill="white">
-            <tspan
-                            font-family="Noto Sans Display"
-                            font-size="20"
-                            font-weight="400"
-                            fill="white"
-                            x="11.285478"
-                            y="21"
-                        >S&apos;</tspan>
-            <tspan
-                            font-family="Noto Sans Display"
+            <tspan font-size="20" x="11.285478" y="21">S&apos;</tspan><tspan
                             font-size="13"
-                            font-weight="400"
-                            fill="white"
                             y="28"
                         >1,1</tspan>
           </text>
@@ -11143,76 +11078,32 @@
         </g>
         <g id="Graphic_855">
           <text transform="translate(787.9701 1158.8134)" fill="black">
-            <tspan
-                            font-family="Noto Sans Display"
-                            font-size="20"
-                            font-weight="400"
-                            fill="black"
-                            x="11.285478"
-                            y="21"
-                        >S&apos;</tspan>
-            <tspan
-                            font-family="Noto Sans Display"
+            <tspan font-size="20" x="11.285478" y="21">S&apos;</tspan><tspan
                             font-size="13"
-                            font-weight="400"
-                            fill="black"
                             y="28"
                         >0,0</tspan>
           </text>
         </g>
         <g id="Graphic_854">
           <text transform="translate(907.9701 1278.8134)" fill="black">
-            <tspan
-                            font-family="Noto Sans Display"
-                            font-size="20"
-                            font-weight="400"
-                            fill="black"
-                            x="11.285478"
-                            y="21"
-                        >S&apos;</tspan>
-            <tspan
-                            font-family="Noto Sans Display"
+            <tspan font-size="20" x="11.285478" y="21">S&apos;</tspan><tspan
                             font-size="13"
-                            font-weight="400"
-                            fill="black"
                             y="28"
                         >3,3</tspan>
           </text>
         </g>
         <g id="Graphic_853">
           <text transform="translate(787.9701 1278.8134)" fill="black">
-            <tspan
-                            font-family="Noto Sans Display"
-                            font-size="20"
-                            font-weight="400"
-                            fill="black"
-                            x="11.285478"
-                            y="21"
-                        >S&apos;</tspan>
-            <tspan
-                            font-family="Noto Sans Display"
+            <tspan font-size="20" x="11.285478" y="21">S&apos;</tspan><tspan
                             font-size="13"
-                            font-weight="400"
-                            fill="black"
                             y="28"
                         >3,0</tspan>
           </text>
         </g>
         <g id="Graphic_852">
           <text transform="translate(907.9701 1158.8134)" fill="black">
-            <tspan
-                            font-family="Noto Sans Display"
-                            font-size="20"
-                            font-weight="400"
-                            fill="black"
-                            x="11.285478"
-                            y="21"
-                        >S&apos;</tspan>
-            <tspan
-                            font-family="Noto Sans Display"
+            <tspan font-size="20" x="11.285478" y="21">S&apos;</tspan><tspan
                             font-size="13"
-                            font-weight="400"
-                            fill="black"
                             y="28"
                         >0,3</tspan>
           </text>
@@ -11291,45 +11182,25 @@
                 />
       </g>
       <g id="Graphic_876">
-        <text transform="translate(256.6881 1047.052)" fill="black">
-          <tspan
-                        font-family="Noto Sans Display"
-                        font-size="20"
-                        font-weight="400"
-                        fill="black"
-                        x="119.50396"
-                        y="21"
-                    >X </tspan>
-          <tspan
-                        font-family="Noto Sans Display"
-                        font-size="20"
-                        font-weight="400"
-                        fill="black"
-                        x="18.253965"
-                        y="48"
-                        xml:space="preserve"
-                    >(linken vier Bits von S    )</tspan>
+        <text transform="translate(256.6881 1047)" fill="black">
+          <tspan x="119.50396" y="21">X </tspan>
+          <tspan x="18.253965" y="45">(linken vier Bits von S</tspan><tspan
+                        x="224.253965"
+                        y="45"
+                    >)</tspan>
         </text>
       </g>
       <g id="Graphic_877">
         <text transform="translate(305.06344 868)" fill="black">
+          <tspan x="108.71688" y="21">y</tspan>
           <tspan
-                        font-family="Noto Sans Display"
-                        font-size="20"
-                        font-weight="400"
-                        fill="black"
-                        x="108.71688"
-                        y="21"
-                    >y</tspan>
-          <tspan
-                        font-family="Noto Sans Display"
                         font-size="17"
-                        font-weight="400"
-                        fill="black"
                         x="14.710385"
                         y="45"
-                        xml:space="preserve"
-                    >(rechten vier Bits von S     )</tspan>
+                    >(rechten vier Bits von S</tspan><tspan
+                        x="206.253965"
+                        y="45"
+                    >)</tspan>
         </text>
       </g>
       <g id="Line_878">
@@ -11343,27 +11214,13 @@
                 />
       </g>
       <g id="Graphic_879">
-        <text transform="translate(465 1086.1305)" fill="black">
-          <tspan
-                        font-family="Noto Sans Display"
-                        font-size="12"
-                        font-weight="400"
-                        fill="black"
-                        x="756728e-18"
-                        y="13"
-                    >1,1</tspan>
+        <text transform="translate(465 1083)" fill="black">
+          <tspan font-size="12" x="756728e-18" y="13">1,1</tspan>
         </text>
       </g>
       <g id="Graphic_881">
         <text transform="translate(495 904)" fill="black">
-          <tspan
-                        font-family="Noto Sans Display"
-                        font-size="12"
-                        font-weight="400"
-                        fill="black"
-                        x="756728e-18"
-                        y="13"
-                    >1,1</tspan>
+          <tspan font-size="12" x="756728e-18" y="13">1,1</tspan>
         </text>
       </g>
     </g>

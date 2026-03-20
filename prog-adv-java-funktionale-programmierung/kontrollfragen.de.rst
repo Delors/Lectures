@@ -6,7 +6,7 @@
    :id: lecture-prog-java-funktionale-programmierung-kontrollfragen
    :first-slide: last-viewed
    :master-password: WirklichSchwierig!
-    
+
 .. include:: ../docutils.defs
 
 
@@ -16,7 +16,7 @@ Funktionale Programmierung (mit Java)
 
 :Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
 :Kontakt: michael.eichberg@dhbw.de, Raum 149B
-:Version: 1.1
+:Version: 1.2 [Themed]
 
 
 .. class:: new-section transition-scale
@@ -27,12 +27,12 @@ Funktionale Programmierung
 
 .. class:: exercises
 
-Kontrollfragen 
+Kontrollfragen
 -------------------------------------
 
-.. deck:: 
+.. deck::
 
-   .. card:: 
+   .. card::
 
       .. exercise:: Was sind Funktionen höherer Ordnung?
 
@@ -67,34 +67,34 @@ Funktionale Programmierung in Java
 
 .. class:: exercises
 
-Kontrollfragen 
+Kontrollfragen
 -------------------------------------
 
-.. deck:: 
+.. deck::
 
-   .. card:: 
+   .. card::
 
       .. exercise:: Eigenschaften von Functional Interfaces
          :formatted-title: Eigenschaften von *Functional Interfaces*
-         
+
          Nennen Sie eine wesentliche Eigenschaft von *Functional Interfaces*. Geben Sie ein Beispiel für ein funktionales Interface in Java an.
-         
+
          .. solution::
             :pwd: FunctionalInterfaces
 
             Functional Interfaces sind Interfaces, die genau eine abstrakte Methode enthalten. Sie können mit Lambda-Ausdrücken implementiert werden.
 
             Ein Beispiel für ein funktionales Interface in Java ist:
-            
-            - :java:`java.util.function.Function<T, R>` oder auch 
-            - :java:`java.util.function.Consumer<T>` oder 
+
+            - :java:`java.util.function.Function<T, R>` oder auch
+            - :java:`java.util.function.Consumer<T>` oder
             - :java:`java.util.function.Supplier<T>` oder
             - ...
 
-   .. card:: 
+   .. card::
 
       .. exercise:: Nennen Sie mind. drei Möglichkeiten ein funktionales Interface zu implementieren.
-         
+
          .. solution::
             :pwd: FunctionalInterfaces
 
@@ -106,20 +106,27 @@ Kontrollfragen
    .. card::
 
       .. exercise:: Was ist eine Methoden-Referenz? Worauf kann eine Methoden-Referenz verweisen? Beschreiben Sie das allgemeine Muster.
-         
+
          .. solution::
             :pwd: MethodReference
 
             Eine Method-Referenz ist eine verkürzte Form eines Lambda-Ausdrucks, die auf eine Methode verweist. Sie wird verwendet, um den Code lesbarer zu machen.
-            Sie hat die Form :java:`ClassName::methodName` bei statischen Methoden, :java:`ClassName::new` bei Konstrukturen oder :java:`instance::methodName` bei Instanzmethoden und kann anstelle eines Lambda-Ausdrucks verwendet werden, wenn der Lambda-Ausdruck nur eine Methode aufruft.
-            Beispiel: 
+            Sie hat die Form:
 
-            .. code:: java
-            
-               List<String> names = Arrays.asList("Alice", "Bob", "Charlie");
-               names.forEach(System.out::println);
-            
-   
+            - :java:`ClassName::methodName` bei statischen Methoden,
+            - :java:`ClassName::new` bei Konstrukturen oder
+            - :java:`instance::methodName` bei Instanzmethoden und kann anstelle eines Lambda-Ausdrucks verwendet werden, wenn der Lambda-Ausdruck nur eine Methode aufruft.
+
+            .. example::
+
+                .. code:: java
+                    :class: copy-to-clipboard
+                    :number-lines:
+
+                    List<String> names = Arrays.asList("Alice", "Bob", "Charlie");
+                    names.forEach(System.out::println);
+
+
 
 .. class:: exercises
 
@@ -127,24 +134,26 @@ Lambda-Ausdrücke
 -------------------------------------
 
 .. exercise:: Typkompatibilität von Lambda-Ausdrücken
-   
+
    Die Methode :java:`forEach` hat die folgende Signatur:
 
    .. code:: java
-   
-      void forEach(Consumer<? super T> action);
+        :class: copy-to-clipboard
+
+        void forEach(Consumer<? super T> action);
 
    Weiterhin sei gegeben:
 
    .. code:: java
-   
-      List<String> names = Arrays.asList("Alice", "Bob", "Charlie");
+        :class: copy-to-clipboard
+
+        List<String> names = Arrays.asList("Alice", "Bob", "Charlie");
 
 
    .. deck:: numbered
 
       .. card::
-   
+
          Welche der folgenden Lambda-Ausdrücke kann ich an :java:`forEach` übergeben?
 
          1. :java:`names.forEach(name -> System.out.println(name));`
@@ -159,9 +168,9 @@ Lambda-Ausdrücke
          5. :java:`Consumer<String> cs = name -> System.out.println(name);`
          6. :java:`Consumer<Object> co = name -> System.out.println(name);`
          7. :java:`Consumer<CharSequence> ccs = name -> System.out.println(name); // Hint String extends CharSequence`
-         
 
-   .. solution:: 
+
+   .. solution::
       :pwd: LambdaTypen
 
       1. Ja, der Lambda-Ausdruck ist kompatibel mit :java:`Consumer<String>`.
@@ -179,7 +188,7 @@ Lambda-Ausdrücke
 
 Streams
 -------------------------------------
-      
+
 .. exercise:: Was ist ein Stream?
 
    .. solution::
@@ -197,7 +206,7 @@ Streams
       - :java:`LongStream`
       - :java:`DoubleStream`
       - :java:`Stream<T>`
-      
+
 .. exercise:: Wie sieht die grundlegende Verwendung von Streams aus?
    :class: incremental
 
@@ -240,7 +249,7 @@ Queue / Warteschlange
 .. deck::
 
    .. card::
-      
+
       .. exercise:: Warteschlangen verstehen
 
          1. Benennen Sie die essentiellen Eigenschaften einer Warteschlange.
@@ -248,7 +257,7 @@ Queue / Warteschlange
 
          .. solution::
             :pwd: Queue
-         
+
             Eigenschaften:
 
             - FIFO (First In First Out)
@@ -262,12 +271,12 @@ Queue / Warteschlange
 
    .. card::
 
-      .. exercise:: Erstellen Sie ein UML Klassendiagramm für verkettete Listen
+      .. exercise:: Erstellen Sie ein UML Klassendiagramm für doppelt verkettete Listen
 
          .. solution::
             :pwd: UMLChainedList
-         
-            .. image:: images/chainedlist.svg
-               :alt: UML Klassendiagramm
-               :align: center
 
+            .. image:: images/chainedlist.svg
+               :alt: UML Klassendiagramm für doppelt verkette Listen
+               :align: center
+               :class: light-image

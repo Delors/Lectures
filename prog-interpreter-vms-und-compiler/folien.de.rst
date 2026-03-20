@@ -8,7 +8,7 @@
     :master-password: WirklichSchwierig!
     :svg-style:
         rect {
-            fill: white;
+            fill: light-dark(white,black);
             stroke: blue;
             stroke-width: 0.2ch;
             filter: drop-shadow( 2px 2px 4px rgba(0, 0, 0, .7));
@@ -18,12 +18,17 @@
             stroke-width:0.2ch;
         }
         text {
-            fill: black;
-            font-family: var(--theme-code-font-family);
+            fill: light-dark(black,white);
+            font-family: var(--code-font-family);
             font-size: 0.75lh;
         }
         .subtext {
-            fill: var(--dark-gray);
+            fill: var(--gray);
+        }
+        marker {
+            path {
+                fill: var(--current-fg-color);
+            }
         }
     :svg-defs:
         <marker
@@ -35,7 +40,7 @@
         markerWidth="7"
         markerHeight="7"
         orient="auto-start-reverse">
-            <path class="arrow-head" d="M 0 0 L 2 1 L 0 2 z" />
+            <path class="arrow-head" d="M 0 0 L 2 1 L 0 2 z" fill="context-stroke"/>
         </marker>
 
 .. include:: ../docutils.defs
@@ -47,7 +52,7 @@ Von Compilern, Interpretern und virtuellen Maschinen
 
 :Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
 :Kontakt: michael.eichberg@dhbw.de, Raum 149B
-:Version: 1.0.2
+:Version: 1.0.2.2 [Themed]
 
 .. supplemental::
 
@@ -109,38 +114,38 @@ Compiler
 
         .. raw:: html
 
-            <div style="width:1846px; height:142px;">
-            <svg viewBox="0 0 65 5" 
-                font-size="1" 
-                version="1.1" 
+            <div style="width:70ch; height:8.4ch;">
+            <svg viewBox="0 0 50 6"
+                font-size="1"
+                version="1.1"
                 xmlns="http://www.w3.org/2000/svg">
 
                 <!-- Quellprogramm P1 -->
-                <rect x="0.1" y="0.1" rx=".5" ry=".5" width="16" height="2.75" />
+                <rect x="0.1" y="0.1" rx=".5" ry=".5" width="11" height="2.75" />
                 <text x="1" y="1.2">Programm in</text>
                 <text x="1" y="2.5">der Sprache A</text>
                 <text class="subtext" x="1" y="4.5">Quellprogramm P1</text>
 
                 <g class="incremental">
                 <!-- Übersetzer -->
-                <line x1="16" y1="1.25" x2="20" y2="1.25" marker-end="url(#arrow)" />
-                <rect x="20" y="0.5" rx=".5" ry=".5" width="12" height="1.5" />
-                <text x="21.35" y="1.7">Übersetzer</text>
+                <line x1="11" y1="1.25" x2="15" y2="1.25" marker-end="url(#arrow)" />
+                <rect x="15" y="0.5" rx=".5" ry=".5" width="8" height="1.5" />
+                <text x="16.35" y="1.7">Übersetzer</text>
                 </g>
 
                 <g class="incremental">
                 <!-- Zielprogramm P2 -->
-                <line x1="32" y1="1.25" x2="36" y2="1.25" marker-end="url(#arrow)" />
-                <rect x="36" y="0.1" width="16" rx="0.5" ry=".5" height="2.75" />
-                <text x="37" y="1.2">Programm in</text>
-                <text x="37" y="2.5">der Sprache B</text>
-                <text class="subtext" x="37" y="4.5">Zielprogramm P2</text>
+                <line x1="23" y1="1.25" x2="36" y2="1.25" marker-end="url(#arrow)" />
+                <rect x="27" y="0.1" width="11" rx="0.5" ry=".5" height="2.75" />
+                <text x="28.35" y="1.2">Programm in</text>
+                <text x="28.35" y="2.5">der Sprache B</text>
+                <text class="subtext" x="28.35" y="4.5">Zielprogramm P2</text>
                 </g>
 
                 <g class="incremental">
                     <!-- Ausführung -->
-                    <line x1="52" y1="1.25" x2="56" y2="1.25" marker-end="url(#arrow)" />
-                    <text x="57" y="1.6" style="font-style:italic">Ausführung</text>
+                    <line x1="38" y1="1.25" x2="43" y2="1.25" marker-end="url(#arrow)" />
+                    <text x="43" y="1.6" style="font-style:italic">Ausführung</text>
                 </g>
             </svg>
             </div>
@@ -156,14 +161,23 @@ Compiler
 
     .. card::
 
+        .. container:: float-right width-50
+
+            .. figure:: images/hopper.jpeg
+                :alt: Konteradmiral Grace Hopper
+                :align: center
+                :class: trbl-shadow border-rounded
+
+                Fotograf: Lynn Gilbert, 1978; Lizenz: Creative Commons `Attribution-Share Alike 4.0 International <https://creativecommons.org/licenses/by-sa/4.0/deed.en>`__
+
         Mutmaßlich erfunden von Konteradmiral Grace Murray Hopper (1906–1992)
 
-        Nach eigener Aussage hat sie den Compiler aus Faulheit erfunden, und weil sie hoffte, dass "Programmierer wieder Mathematiker werden" könnten.
+        Nach eigener Aussage hat sie den Compiler aus Faulheit erfunden, und weil sie hoffte, dass „Programmierer wieder Mathematiker werden“ könnten.
+
 
 
 Compiler - Übersetzungsphasen
 ------------------------------------------------
-
 
 .. class:: incremental-list
 
@@ -196,59 +210,59 @@ Compiler - Übersetzung (Traditionell)
     <div style="width:75ch; height:5lh;">
     <svg viewBox="0 0 55 9" font-size="1" version="1.1" xmlns="http://www.w3.org/2000/svg">
 
-        <text x="1" y="1" style="font-style: italic">N Sprachen</text>
-        <text x="40" y="1" style="font-style: italic">M Plattformen</text>
+        <text x="1" y="1" style="font-style: italic; font-weight: bold">N Sprachen</text>
+        <text x="40" y="1" style="font-style: italic; font-weight: bold">M Plattformen</text>
 
         <text x="1" y="2.5">Pascal</text>
         <g class="incremental">
-        <line x1="7" y1="2.15" x2="39" y2="2.25" marker-end="url(#arrow)" />
-        <line x1="7" y1="2.15" x2="39" y2="3.75" marker-end="url(#arrow)" />
-        <line x1="7" y1="2.15" x2="39" y2="5.25" marker-end="url(#arrow)" />
-        <line x1="7" y1="2.15" x2="39" y2="6.75" marker-end="url(#arrow)" />
-        <line x1="7" y1="2.15" x2="39" y2="8.25" marker-end="url(#arrow)" />
+        <line x1="4.5" y1="2.15" x2="39" y2="2.25" marker-end="url(#arrow)" />
+        <line x1="4.5" y1="2.15" x2="39" y2="3.75" marker-end="url(#arrow)" />
+        <line x1="4.5" y1="2.15" x2="39" y2="5.25" marker-end="url(#arrow)" />
+        <line x1="4.5" y1="2.15" x2="39" y2="6.75" marker-end="url(#arrow)" />
+        <line x1="4.5" y1="2.15" x2="39" y2="8.25" marker-end="url(#arrow)" />
         </g>
 
         <text x="1" y="4">C</text>
         <g class="incremental">
-        <line x1="2.5" y1="3.65" x2="39" y2="2.25" marker-end="url(#arrow)" />
-        <line x1="2.5" y1="3.65" x2="39" y2="3.75" marker-end="url(#arrow)" />
-        <line x1="2.5" y1="3.65" x2="39" y2="5.25" marker-end="url(#arrow)" />
-        <line x1="2.5" y1="3.65" x2="39" y2="6.75" marker-end="url(#arrow)" />
-        <line x1="2.5" y1="3.65" x2="39" y2="8.25" marker-end="url(#arrow)" />
+        <line x1="2" y1="3.65" x2="39" y2="2.25" marker-end="url(#arrow)" />
+        <line x1="2" y1="3.65" x2="39" y2="3.75" marker-end="url(#arrow)" />
+        <line x1="2" y1="3.65" x2="39" y2="5.25" marker-end="url(#arrow)" />
+        <line x1="2" y1="3.65" x2="39" y2="6.75" marker-end="url(#arrow)" />
+        <line x1="2" y1="3.65" x2="39" y2="8.25" marker-end="url(#arrow)" />
         </g>
 
         <text x="1" y="5.5">C++</text>
         <g class="incremental">
-        <line x1="5" y1="5.15" x2="39" y2="2.25" marker-end="url(#arrow)" />
-        <line x1="5" y1="5.15" x2="39" y2="3.75" marker-end="url(#arrow)" />
-        <line x1="5" y1="5.15" x2="39" y2="5.25" marker-end="url(#arrow)" />
-        <line x1="5" y1="5.15" x2="39" y2="6.75" marker-end="url(#arrow)" />
-        <line x1="5" y1="5.15" x2="39" y2="8.25" marker-end="url(#arrow)" />
+        <line x1="3.5" y1="5.15" x2="39" y2="2.25" marker-end="url(#arrow)" />
+        <line x1="3.5" y1="5.15" x2="39" y2="3.75" marker-end="url(#arrow)" />
+        <line x1="3.5" y1="5.15" x2="39" y2="5.25" marker-end="url(#arrow)" />
+        <line x1="3.5" y1="5.15" x2="39" y2="6.75" marker-end="url(#arrow)" />
+        <line x1="3.5" y1="5.15" x2="39" y2="8.25" marker-end="url(#arrow)" />
         </g>
 
         <text x="1" y="7">Smalltalk</text>
         <g class="incremental">
-        <line x1="10" y1="6.65" x2="39" y2="2.25" marker-end="url(#arrow)" />
-        <line x1="10" y1="6.65" x2="39" y2="3.75" marker-end="url(#arrow)" />
-        <line x1="10" y1="6.65" x2="39" y2="5.25" marker-end="url(#arrow)" />
-        <line x1="10" y1="6.65" x2="39" y2="6.75" marker-end="url(#arrow)" />
-        <line x1="10" y1="6.65" x2="39" y2="8.25" marker-end="url(#arrow)" />
+        <line x1="6.5" y1="6.65" x2="39" y2="2.25" marker-end="url(#arrow)" />
+        <line x1="6.5" y1="6.65" x2="39" y2="3.75" marker-end="url(#arrow)" />
+        <line x1="6.5" y1="6.65" x2="39" y2="5.25" marker-end="url(#arrow)" />
+        <line x1="6.5" y1="6.65" x2="39" y2="6.75" marker-end="url(#arrow)" />
+        <line x1="6.5" y1="6.65" x2="39" y2="8.25" marker-end="url(#arrow)" />
         </g>
 
         <text x="1" y="8.5">...</text>
         <g class="incremental">
-        <line x1="4" y1="8.25" x2="39" y2="2.25" marker-end="url(#arrow)" />
-        <line x1="4" y1="8.25" x2="39" y2="3.75" marker-end="url(#arrow)" />
-        <line x1="4" y1="8.25" x2="39" y2="5.25" marker-end="url(#arrow)" />
-        <line x1="4" y1="8.25" x2="39" y2="6.75" marker-end="url(#arrow)" />
-        <line x1="4" y1="8.25" x2="39" y2="8.25" marker-end="url(#arrow)" />
+        <line x1="3" y1="8.25" x2="39" y2="2.25" marker-end="url(#arrow)" />
+        <line x1="3" y1="8.25" x2="39" y2="3.75" marker-end="url(#arrow)" />
+        <line x1="3" y1="8.25" x2="39" y2="5.25" marker-end="url(#arrow)" />
+        <line x1="3" y1="8.25" x2="39" y2="6.75" marker-end="url(#arrow)" />
+        <line x1="3" y1="8.25" x2="39" y2="8.25" marker-end="url(#arrow)" />
         </g>
 
-        <text x="40" y= 2.5lh>Linux (ARM)</text>
-        <text x="40" y= 4lh>Apple (ARM)</text>
-        <text x="40" y= 5.5lh>Apple (Intel)</text>
-        <text x="40" y= 7lh>Windows (Intel)</text>
-        <text x="40" y= 8.5lh>...</text>
+        <text x="40" y=2.5>Linux (ARM)</text>
+        <text x="40" y=4>Apple (ARM)</text>
+        <text x="40" y=5.5>Apple (Intel)</text>
+        <text x="40" y=7>Windows (Intel)</text>
+        <text x="40" y=8.5>...</text>
 
     </svg>
     </div>
@@ -320,15 +334,15 @@ Virtuelle Maschinen
 
             <div style="width:72ch; height:14ch;">
             <svg viewBox="0 0 50 10" font-size="1" version="1.1" xmlns="http://www.w3.org/2000/svg">
-                <text x="1" y="1" style="font-style: italic">N Sprachen</text>
-                <text x="40" y="1" style="font-style: italic">M Plattformen</text>
+                <text x="1" y="1" style="font-style: italic; font-weight:bold;">N Sprachen</text>
+                <text x="40" y="1" style="font-style: italic; font-weight:bold;">M Plattformen</text>
 
-                <text x="20" y="4.5" style="font-style: italic">Virtuelle</text>
-                <text x="20" y="5.5" style="font-style: italic">Machine</text>
+                <text x="20" y="4.5" style="font-style: italic; font-weight:bold;">Virtuelle</text>
+                <text x="20" y="5.5" style="font-style: italic; font-weight:bold;">Machine</text>
 
                 <text x="1" y="2.5">Pascal</text>
                 <g class="incremental">
-                    <line x1="7" y1="2.15" x2="19" y2="4.15" marker-end="url(#arrow)" />
+                    <line x1="6" y1="2.15" x2="19" y2="4.15" marker-end="url(#arrow)" />
                 </g>
 
                 <text x="1" y="4">C</text>
@@ -343,7 +357,7 @@ Virtuelle Maschinen
 
                 <text x="1" y="7">Smalltalk</text>
                 <g class="incremental">
-                    <line x1="10.5" y1="6.65" x2="19" y2="4.75" marker-end="url(#arrow)" />
+                    <line x1="7.5" y1="6.65" x2="19" y2="4.75" marker-end="url(#arrow)" />
                 </g>
 
                 <text x="1" y="8.5">...</text>
@@ -352,11 +366,11 @@ Virtuelle Maschinen
                 </g>
 
                 <g class="incremental">
-                    <line x1="29" y1="4.95" x2="39" y2="8.25" marker-end="url(#arrow)" />
-                    <line x1="29" y1="4.15" x2="39" y2="2.15" marker-end="url(#arrow)" />
-                    <line x1="29" y1="4.35" x2="39" y2="3.65" marker-end="url(#arrow)" />
-                    <line x1="29" y1="4.55" x2="39" y2="5.15" marker-end="url(#arrow)" />
-                    <line x1="29" y1="4.75" x2="39" y2="6.65" marker-end="url(#arrow)" />
+                    <line x1="26" y1="4.95" x2="39" y2="8.25" marker-end="url(#arrow)" />
+                    <line x1="26" y1="4.15" x2="39" y2="2.15" marker-end="url(#arrow)" />
+                    <line x1="26" y1="4.35" x2="39" y2="3.65" marker-end="url(#arrow)" />
+                    <line x1="26" y1="4.55" x2="39" y2="5.15" marker-end="url(#arrow)" />
+                    <line x1="26" y1="4.75" x2="39" y2="6.65" marker-end="url(#arrow)" />
                 </g>
 
                 <text x="40" y="2.5">Linux (ARM)</text>
@@ -436,7 +450,12 @@ Java-Laufzeitumgebung
     .. attention::
         :class: incremental
 
-        Die Sicherheit, die der Bytecode-Verifier und Java als solches bietet - ist nicht ausreichend, um die Sicherheit des Systems zu gewährleisten. Führen Sie Java Programme, denen Sie nicht vertrauen, niemals aus.
+        Die Sicherheit, die der Bytecode-Verifier und Java als solches bietet - ist nicht ausreichend, um die Sicherheit des Systems zu gewährleisten.
+
+    .. warning::
+        :class: incremental
+
+        Führen Sie (Java) Programme oder auch Bibliotheken (Stichwort: *Supply-Chain Attacken*), denen Sie nicht vertrauen, niemals aus. Überzeugen Sie sich, dass die Bibliotheken, die sie verwenden legitim sind.
 
 
 
@@ -444,7 +463,7 @@ Java-Übersetzung
 ------------------------------------------------
 
 - Die Eingabe für :console:`javac` sind ein oder mehrere Java-Dateien, die jeweils die eine oder mehrere Klassendefinitionen enthalten.
-- Eine derartige Datei nennt man eine Übersetzungseinheit
+- Eine derartige Datei nennt man eine Übersetzungseinheit.
 - Die Ausgabe ist pro Klasse X genau eine Datei X.class, die den Bytecode der Klasse enthält.
 
 .. example::
@@ -482,7 +501,7 @@ Java-Übersetzung
                 :number-lines:
                 :class: copy-to-clipboard
 
-            .. [#] :peripheral:`Die Datei HelloWorld.java muss im Verzeichnis de/dhbw liegen!`
+            .. [#] :peripheral:`Zur Erinnerung: Die Datei HelloWorld.java muss im Verzeichnis de/dhbw liegen!`
 
         .. card::
 

@@ -20,7 +20,7 @@ Endliche Körper - Kontrollaufgaben
 
 .. remark::
 
-   Dies ist nicht primärer Inhalt der Kryptovorlesungen, muss jedoch für die Prüfungen ggf. beherrscht werden, um zum Beispiel AES verstehen zu können. 
+   Dies ist nicht primärer Inhalt der Kryptovorlesungen, muss jedoch für die Prüfungen ggf. beherrscht werden, um zum Beispiel AES verstehen zu können.
 
 
 .. class:: new-section
@@ -37,7 +37,7 @@ Klassenraumübung
 
 .. exercise:: Polynomarithmetik im endlichen Körper GF(2⁷)
 
-    Gegen sei das irreduzible Polynom: :math:`x^7 + x + 1`. Berechnen Sie jeweils das Ergebnis:
+    Gegeben sei das irreduzible Polynom: :math:`x^7 + x + 1`. Berechnen Sie jeweils das Ergebnis:
 
     1. Addition: :math:`(x^3 + x + 1)  + (x^4 + x)`
     2. Multiplikation: :math:`(x^3 + x + 1) \times (x^2 + 1)`
@@ -69,6 +69,6 @@ Klassenraumübung
                2. :math:`x^7 \bmod (x^7 + x + 1) = 1\times(x + 1) = x + 1`.
                3. Verrechnung aller Ergebnisse:
 
-                  :math:`(x^9 + x^7 + x^6 + x^5 + x^4 + x^3 \equiv (x^3 + x^2) + (x + 1) + x^6 + x^5 + x^4 + x^3`
+                  :math:`x^9 + x^7 + x^6 + x^5 + x^4 + x^3 \equiv ((x^3 + x^2) + (x + 1) + x^6 + x^5 + x^4 + x^3) \bmod (x^7 + x + 1)`
 
                   :math:`= x^6 + x^5 + x^4 + x^2 + x + 1`

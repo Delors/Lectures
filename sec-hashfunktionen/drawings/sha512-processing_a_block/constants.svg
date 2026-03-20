@@ -6,9 +6,9 @@
     version="1.1"
     xmlns:dc="http://purl.org/dc/elements/1.1/"
     xmlns:xl="http://www.w3.org/1999/xlink"
-    viewBox="-198 92 871 465"
-    width="1840"
-    height="982"
+    viewBox="-180 92 871 465"
+    width="1829"
+    height="976"
 >
 <style>
   @import url('/LectureDoc2/ext/fonts/ld-fonts.css');
@@ -78,7 +78,6 @@
       </g>
     </marker>
   </defs>
-  <metadata> Produced by OmniGraffle 8.0\n2024-10-11 08:59:02 +0000</metadata>
   <g
         id="overview"
         fill="none"
@@ -193,9 +192,9 @@
       </g>
       <g id="Line_333">
         <line
-                    x1="601.5763"
+                    x1="601"
                     y1="398.5982"
-                    x2="575.6146"
+                    x2="592"
                     y2="398.5982"
                     marker-end="url(#FilledArrow_Marker)"
                     stroke="#666"
@@ -206,7 +205,7 @@
       </g>
       <g id="Line_332">
         <path
-                    d="M 601.5763 265.65926 L 599.5791 265.65926 L 575.4819 265.65926"
+                    d="M 601 265.65926 L 592 265.65926"
                     marker-end="url(#FilledArrow_Marker)"
                     stroke="#666"
                     stroke-linecap="round"
@@ -216,7 +215,7 @@
       </g>
       <g id="Line_331">
         <path
-                    d="M 601.5763 193.70488 L 599.27786 193.70488 L 574.87944 193.70488"
+                    d="M 601 193.70488 L 592 193.70488"
                     marker-end="url(#FilledArrow_Marker)"
                     stroke="#666"
                     stroke-linecap="round"

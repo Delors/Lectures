@@ -7,8 +7,8 @@
     xmlns:dc="http://purl.org/dc/elements/1.1/"
     version="1.1"
     viewBox="-198 92 871 465"
-    width="1840"
-    height="982"
+    width="1829"
+    height="976"
 >
 <style>
   @import url('/LectureDoc2/ext/fonts/ld-fonts.css');
@@ -490,13 +490,7 @@
                     stroke-width="1"
                 />
         <text transform="translate(146.37695 121.84033)" fill="black">
-          <tspan
-                        font-size="16"
-                        font-weight="400"
-                        fill="black"
-                        x="26"
-                        y="15"
-                    >c</tspan>
+          <tspan font-size="16" font-weight="400" fill="black" x="26" y="15">c</tspan>
         </text>
       </g>
       <g id="Graphic_253">

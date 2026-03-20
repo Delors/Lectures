@@ -206,7 +206,7 @@ Ausgewählte Typen von Zusammenhalt:
 
   Die Elemente realisieren eine logische Funktion.
 - …
-- :orange:`Logische bzw. technische Kohäsion`
+- :shiny-red:`Logische bzw. technische Kohäsion`
 
   Die Elemente stehen aus technischer Sicht in enger Beziehung.
 - :red:`Zufällig`

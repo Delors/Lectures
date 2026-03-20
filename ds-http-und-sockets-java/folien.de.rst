@@ -153,7 +153,7 @@ Protokolldefinition
 
 Aufbau der Dokumentenbezeichner *Uniform Resource Locator (URL)*
 
-.. container:: text-align-center rounded-corners dhbw-light-gray-background
+.. container:: accentuate
 
   ``scheme://host[:port][abs_path[?query][#anchor]]``
 

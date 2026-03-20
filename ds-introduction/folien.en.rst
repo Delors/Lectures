@@ -17,7 +17,7 @@ A broad overview of distributed systems!
 
 :Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
 :Kontakt: michael.eichberg@dhbw.de, Raum 149B
-:Version: 1.0.3
+:Version: 1.1
 
 .. supplemental::
 
@@ -591,6 +591,7 @@ Analysis of the Scalability of Centralized Systems
 
                 .. figure:: drawings/number_of_requests_in_system.svg
                     :align: center
+                    :class: light-image
 
                     # Requests in process and in queue
 
@@ -1047,7 +1048,7 @@ MapReduce - Programming model and Middleware for Parallel Computing
 
 
 
-.. MapReduce - Visualization of an Example [removed March 2 2026] 
+.. MapReduce - Visualization of an Example [removed March 2 2026]
    ----------------------------------------------------------
 
     .. image:: drawings/mapreduce.svg
@@ -1193,34 +1194,56 @@ Peer-to-Peer-Systems
 Cloud-Computing
 ------------------
 
-.. definition:: 
+.. definition::
 
    Cloud computing refers to the provision of computing power, storage and applications as a service. It is the continuation of grid computing.
 
-.. container:: incremental margin-top-1em
+.. deck::
 
-    .. rubric:: Variants
+    .. card::
 
-    .. class:: list-with-explanations
+        .. rubric:: Variants
 
-    - Public Cloud (z. B. Amazon EC2, Google Apps, Microsoft Azure, …)
-    - Private Cloud
-    - Hybrid Cloud
+        .. class:: list-with-explanations
 
-      (The private cloud is supplemented by a public cloud if required).
-    - Virtual Private Cloud
+        - Public Cloud (z. B. Amazon EC2, Google Apps, Microsoft Azure, …)
+        - Private Cloud
+        - Hybrid Cloud
 
-.. supplemental::
+          (The private cloud is supplemented by a public cloud if required).
+        - Virtual Private Cloud
 
-    .. class:: positive-list
+    .. card::
 
-    - Advantages of cloud computing: costs, up-to-dateness of data and services, no in-house infrastructure required, support for mobile participants
+        .. class:: positive-list
 
-    .. class:: negative-list
+        - Advantages of cloud computing:
 
-    - Problems of cloud computing: security and trust, loss of in-house expertise, handling of classified data.
+          - costs,
+          - up-to-dateness of data and services,
+          - no in-house infrastructure required,
+          - support for mobile participants
 
-      One way out could be `homomorphic encryption <https://de.wikipedia.org/wiki/Homomorphe_Verschlüsselung>`_, which makes it possible to perform calculations on encrypted data.
+        .. class:: negative-list
+
+        - Problems of cloud computing:
+
+          - **security and trust**,
+          - loss of in-house expertise,
+          - *handling of classified data*.
+
+    .. card::
+
+        One way to solve the trust problem could be `homomorphic encryption <https://de.wikipedia.org/wiki/Homomorphe_Verschlüsselung>`_, which makes it possible to perform calculations on encrypted data.
+
+        .. class:: incremental
+
+        .. epigraph::
+
+            [Fully homomorphic encryption, or FHE] can take thousands—even tens of thousands—of times longer to compute on today’s CPUs and GPUs than simply working with the decrypted data. [...]  Intel demonstrated [...] Heracles, which sped up FHE computing tasks as much as 5,000-fold compared to a top-of the-line Intel server CPU.
+
+            -- `March 10, 2026, Samuel K. Moore, Intel Demos Chip to Compute With Encrypted Data, IEEE <https://spectrum.ieee.org/fhe-intel>`__
+
 
 
 *Serverless Computing*
@@ -1306,8 +1329,8 @@ Transactions at Business Process Level
                     BEGIN OF TRANSACTION, Indicates the start of a transaction.
                     END OF TRANSACTION, Completes the transaction with an attempt to COMMIT.
                     ROLLBACK OF TRANSACTION, terminate the transaction and restore the old status.
-                    READ, "Reading data from (e.g.) a file or a table."
-                    WRITE, "Writing data (e.g.) to a file or a table."
+                    READ, "Reading data from (e. g.) a file or a table."
+                    WRITE, "Writing data (e. g.) to a file or a table."
 
             .. card::
 

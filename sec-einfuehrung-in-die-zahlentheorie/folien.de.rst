@@ -17,7 +17,7 @@ Einführung in die Zahlentheorie
 
 :Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
 :Kontakt: michael.eichberg@dhbw.de
-:Version: 1.2.0
+:Version: 1.3.0
 
 .. class:: sources
 
@@ -48,20 +48,20 @@ Teilbarkeit
 
 .. class:: incremental-list
 
-- Ein :math:`b` ungleich Null teilt :math:`a` wenn :math:`a = mb` für ein beliebiges :math:`m` und :math:`a`, :math:`b` und :math:`m` ganze Zahlen sind.
+- Ein :math-i:`b` ungleich Null teilt :math-i:`a` wenn :math-i:`a = mb` für ein beliebiges :math-i:`m` und :math-i:`a`, :math-i:`b` und :math-i:`m` ganze Zahlen sind.
 
-- :math:`b` teilt :math:`a` wenn es keinen Rest bei der Division gibt.
+- :math-i:`b` teilt :math-i:`a` wenn es keinen Rest bei der Division gibt.
 
-- Die Notation :math:`b|a` bedeutet, dass :math:`b`  :math:`a` teilt.
+- Die Notation :math-i:`b`:math-r:`|`:math-i:`a` bedeutet, dass :math-i:`b`  :math-i:`a` teilt.
 
-- Wenn :math:`b|a` gilt, dann sagen wir auch, dass :math:`b` ein Teiler von :math:`a` ist.
+- Wenn :math-i:`b`:math-r:`|`:math-i:`a` gilt, dann sagen wir auch, dass :math-i:`b` ein Teiler von :math-i:`a` ist.
 
 .. example::
     :class: incremental
 
-    Die positiven Teiler von :math:`24` sind: :math:`1`, :math:`2`, :math:`3`, :math:`4`, :math:`6`, :math:`8`, :math:`12` und :math:`24`.
+    Die positiven Teiler von :math-r:`24` sind: :math-r:`1`, :math-r:`2`, :math-r:`3`, :math-r:`4`, :math-r:`6`, :math-r:`8`, :math-r:`12` und :math-r:`24`.
 
-    Weitere Beispiele: :math:`13 | 182`; :math:`-5 | 30`; :math:`17 | 289`; :math:`-3 | 33`; :math:`17 | 0`.
+    Weitere Beispiele: :math-r:`13|182`; :math-r:`-5|30`; :math-r:`17|289`; :math-r:`-3|33`; :math-r:`17|0`.
 
 
 
@@ -101,9 +101,9 @@ Eigenschaften der Teilbarkeit
         .. proof::
             :class: incremental
 
-            Wenn :math:`b | g`, dann gilt für :math-i:`g`, dass :math:`g = b \times g_1` ist für eine beliebige ganze Zahl :math:`g_1`.
+            Wenn :math:`b | g`, dann gibt es eine ganze Zahl :math:`g_1`, so dass :math:`g = b \times g_1`.
 
-            Wenn :math:`b | h`, dann gilt für :math-i:`h`, dass :math:`h = b \times h_1` ist für eine beliebige ganze Zahl :math:`h_1`.
+            Wenn :math:`b | h`, dann gibt es eine ganze Zahl :math:`h_1`, so dass :math:`h = b \times h_1`.
 
             Somit gilt: :math:`mg+nh = mb g_1 + n b h_1 = b \times (mg_1+nh_1)` und deshalb wird :math-i:`mg+nh` von :math-i:`b` geteilt.
 
@@ -121,7 +121,7 @@ die der folgenden Beziehung gehorchen: :math:`a = qn + r; \quad 0 \leq r < n,\qu
 
 .. image:: drawings/division_algorithm/division_algorithm.svg
     :alt: Die Beziehung a=qn+r
-    :class: light-image incremental 
+    :class: light-image incremental
     :align: center
 
 
@@ -172,7 +172,7 @@ Größter Gemeinsamer Teiler (:ab:`GGT`)
 - Die **positive** ganze Zahl :math:`c` wird als GGT von :math:`a` und :math:`b` bezeichnet, wenn:
 
   - :math:`c` ein Teiler von :math:`a` und :math:`b` ist
-  - jeder Teiler von :math:`a` und :math:`b` ein Teiler von :math:`c` ist
+  - jeder gemeinsame Teiler von :math:`a` und :math:`b` ist auch ein Teiler von :math:`c`
 
 
 
@@ -186,15 +186,15 @@ Alternative Definition des :ab:`GGT`
 .. example::
     :class: incremental
 
-    :math:`ggt(60,24) =`
+    :math-i:`ggt`:math-r:`(60,24) =`
 
     .. class:: incremental
 
-        :math:`ggt(60, -24) =`
+        :math-i:`ggt`:math-r:`(60, -24) =`
 
     .. class:: incremental
 
-        :math:`12`
+        :math-r:`12`
 
 
 
@@ -203,30 +203,30 @@ Alternative Definition des :ab:`GGT`
 
 .. observation::
 
-    Zwei ganze Zahlen :math:`a` und :math:`b` sind relativ prim, wenn ihr einziger gemeinsamer positiver ganzzahliger Faktor 1 ist.
+    Zwei ganze Zahlen :math-i:`a` und :math-i:`b` sind relativ prim, wenn ihr einziger gemeinsamer positiver ganzzahliger Faktor :math-r:`1` ist.
 
     .. container:: text-align-center
 
         :math:`\Leftrightarrow`
 
-    :math:`a` und :math:`b` sind relativ prim wenn :math:`ggt(a,b)=1`
+    :math-i:`a` und :math-i:`b` sind relativ prim wenn :math:`ggt(a,b)=1`
 
 
 
-Berechnung des GGT (:math:`ggt(a,b)`) mit Hilfe des euklidischen Algorithmus
+Berechnung des GGT (:math-i:`ggt(a,b)`) mit Hilfe des euklidischen Algorithmus
 -------------------------------------------------------------------------------
 
 .. image:: drawings/euclidean_algorithm/algorithm.svg
-    :class: light-image 
+    :class: light-image
     :align: center
 
 
 
-Beispiel für die Berechnung des GGT (:math:`ggt(710,310)`) mit Hilfe des euklidischen Algorithmus
---------------------------------------------------------------------------------------------------------
+Beispiel für die Berechnung des GGT (:math-i:`ggt`:math-r:`(710,310)`) mit Hilfe des euklidischen Algorithmus
+--------------------------------------------------------------------------------------------------------------------
 
 .. image:: drawings/euclidean_algorithm/example.svg
-    :class: light-image 
+    :class: light-image
 
 
 
@@ -238,6 +238,7 @@ Euklidischer Algorithmus
 .. csv-table::
     :header: "Schritt", "Dividend", "Divisor", "Quotient", "Rest"
     :width: 100%
+    :stub-columns: 1
     :class: highlight-identical-cells-on-hover table-data-align-right incremental-table-rows
 
     1, 1.160.718.174, 316.258.250, 3, 211.943.424
@@ -264,9 +265,9 @@ Modulare Arithmetik
 Der Modulus
 -----------
 
-Wenn :math:`a` eine ganze Zahl und :math:`n` eine positive ganze Zahl ist, dann definieren wir :math:`a \bmod n` als  Rest der Division von :math:`a` durch :math:`n`. Die ganze Zahl :math:`n` wird als Modulus bezeichnet.
+Wenn :math-i:`a` eine ganze Zahl und :math-i:`n` eine positive ganze Zahl ist, dann definieren wir :math:`a \bmod n` als  Rest der Division von :math-i:`a` durch :math-i:`n`. Die ganze Zahl :math-i:`n` wird als Modulus bezeichnet.
 
-Somit gilt für jede ganze Zahl :math:`a`:
+Somit gilt für jede ganze Zahl :math-i:`a`:
 
 .. math::
 
@@ -286,7 +287,7 @@ Somit gilt für jede ganze Zahl :math:`a`:
 Modulare Arithmetik (*kongruent modulo* :math:`n`)
 ----------------------------------------------------
 
-- Zwei ganze Zahlen :math:`a` und :math:`b` werden als *kongruent modulo* :math:`n` bezeichnet, wenn :math:`(a \bmod n) = (b \bmod n)`
+- Zwei ganze Zahlen :math-i:`a` und :math-i:`b` werden als *kongruent modulo* :math:`n` bezeichnet, wenn :math:`(a \bmod n) = (b \bmod n)`
 
 - Wir verwenden die Schreibweise :math:`a \equiv b\pmod{n}`.
 
@@ -329,17 +330,19 @@ Eigenschaften der Kongruenz
 :math:`a \equiv b \pmod{n}` wenn :math:`n|(a-b)` — Erklärt
 ----------------------------------------------------------------------
 
-Wenn :math:`n|(a - b)`, dann gilt :math:`(a - b) = kn` für ein :math:`k`
+Wenn :math:`n|(a - b)`, dann existiert ein :math:`k` für das gilt :math:`(a - b) = kn`.
 
 - Wir können also schreiben :math:`a=b+kn`.
 
-- Deshalb gilt :math:`(a \bmod n) = ((b + kn)\bmod n) =`
+- Deshalb gilt:
+
+  :math:`(a \bmod n) = ((b + kn)\bmod n) =`
 
   Rest wenn :math:`b + kn` geteilt wird durch :math:`n` :math:`=`
 
   .. presenter-note::
 
-    :math:`kn` ist notwendigerweise ein vielfaches von :math:`n`, da :math:`k` ganzzahlig ist und somit gilt, dass :math:`kn \bmod n = 0`. Mit anderen Worten :math:`(b+kn)\bmod n = b \bmod n` oder :math:`b+kn \equiv b \pmod{n}`.
+    :math-i:`kn` ist notwendigerweise ein vielfaches von :math-i:`n`, da :math-i:`k` ganzzahlig ist und somit gilt, dass :math:`kn \bmod n = 0`. Mit anderen Worten :math:`(b+kn)\bmod n = b \bmod n` oder :math:`b+kn \equiv b \pmod{n}`.
 
   Rest wenn :math:`b` geteilt wird durch :math:`n` :math:`=`
 
@@ -348,21 +351,19 @@ Wenn :math:`n|(a - b)`, dann gilt :math:`(a - b) = kn` für ein :math:`k`
 .. example::
   :class: incremental
 
-  :math:`23 \equiv 8\pmod{5}`, da :math:`23 - 8 = 15 = 5 \times 3`
+  :math-r:`23 ≡ 8 (mod 5)`, da :math-r:`23 - 8 = 15 = 5 × 3`
 
   .. class:: incremental
 
-  :math:`-11 \equiv 5\pmod{8}`, da :math:`-11 - 5 = -16 = 8 \times -2`
-
-  .. \qquad 5 \equiv -11\pmod{8}, 5 - (-11) = 8 \times 2
+  :math-r:`-11 ≡ 5 (mod 8)`, da :math-r:`-11 - 5 = -16 = 8 × -2`
 
   .. class:: incremental
 
-  :math:`81 \equiv 0 \pmod{27}`, da :math:`81 - 0 = 81 = 27 \times 3`
+  :math-r:`81 ≡ 0 (mod 27)`, da :math-r:`81 - 0 = 81 = 27 × 3`
 
 .. supplemental::
 
-    Im zweiten Schritt haben wir :math:`\bmod n` angewendet.
+    Im zweiten Schritt haben wir :math-r:`mod n` angewendet.
 
 
 
@@ -382,11 +383,11 @@ Eigenschaften der modularen Arithmetik
 
 Definiere :math:`(a \bmod n) = r_a` und :math:`(b \bmod n) = r_b`.
 
-Dann können wir:
+Dann existieren :math:`j,k \in \mathbb{Z}` mit
 
-- :math:`a = r_a + jn` für eine ganze Zahl :math:`j` und
+- :math:`a = r_a + jn`
 
-- :math:`b = r_b + kn` für eine ganze Zahl :math:`k` schreiben.
+- :math:`b = r_b + kn`
 
 Dann gilt:
 
@@ -593,7 +594,7 @@ Euklidischer Algorithmus - neu betrachtet
 
 .. theorem::
 
-    Für beliebige ganze Zahlen :math:`a` und :math:`b` mit :math:`a \geq b \geq 0`,
+    Für beliebige ganze Zahlen :math-i:`a` und :math-i:`b` mit :math:`a \geq b \geq 0`,
 
     .. math::
         ggt(a,b) = ggt(b, a \bmod b)
@@ -637,18 +638,18 @@ Euklidischer Algorithmus - neu betrachtet
     In der gegebenen Formulierung ist der Algorithmus endrekursiv (:eng:`tail recursive`).
 
 
+
 Erweiterter Euklidischer Algorithmus
 --------------------------------------
 
 - Erforderlich für Berechnungen im Bereich der endlichen Körper und Verschlüsselungsalgorithmen wie RSA.
-- Für zwei ganze Zahlen :math:`a` und :math:`b` berechnet der erweiterte euklidische Algorithmus den GGT :math:`d`, aber auch zwei zusätzliche ganze Zahlen :math:`x` und :math:`y`, die die folgende Gleichung erfüllen:
+- Für zwei ganze Zahlen :math-i:`a` und :math-i:`b` berechnet der erweiterte euklidische Algorithmus den GGT :math-i:`d`, aber auch zwei zusätzliche ganze Zahlen :math-i:`x` und :math-i:`y`, die die folgende Gleichung erfüllen:
 
-.. math::
-    x \times a + y \times b = d = ggt(a,b)
+  :math-i:`x × a + y × b = d = ggt(a,b)`
 
 .. supplemental::
 
-    Notwendigerweise haben :math:`x` und :math:`y` gegensätzliche Vorzeichen, da sonst :math:`(x \times a + y \times b) > a\; ( > b )` gelten würde und somit nicht den GGT darstellen könnte.
+    Notwendigerweise haben :math-i:`x` und :math-i:`y` gegensätzliche Vorzeichen, da sonst :math:`(x \times a + y \times b) > a\; ( > b )` gelten würde und somit nicht den GGT darstellen könnte.
 
     Der erweiterte euklidische Algorithmus kann auf jeden Ring angewandt werden, in welchem eine Division mit kleinstem Rest durchgeführt werden kann. Ein Beispiel ist der Polynomring in einer Variablen mit rationalen oder reellen Koeffizienten wie sie bei der Verschlüsselung angewandt werden. Wir werden dies später wieder aufgreifen.
 
@@ -659,11 +660,11 @@ Erweiterter Euklidischer Algorithmus
 :math:`ggt(a=42,b=30)` mit erweitertem Euklidischen Algorithmus
 ------------------------------------------------------------------------------
 
-Werfen wir zuerst einen Blick auf :math:`x \times a + y \times b` für einige :math:`x` und :math:`y`:
+Werfen wir zuerst einen Blick auf :math-i:`x × a + y × b` für einige :math-i:`x` und :math-i:`y`:
 
 .. csv-table::
     :width: 100%
-    :class: monospaced highlight-on-hover text-align-right
+    :class: table-data-monospaced highlight-on-hover text-align-right
     :align: center
     :header: :math:`_у \\ ^x`, -3, -2, -1, 0, 1, 2, 3
     :stub-columns: 1
@@ -680,7 +681,7 @@ Werfen wir zuerst einen Blick auf :math:`x \times a + y \times b` für einige :m
 .. hint::
     :class: incremental
 
-    Der GGT von :math-r:`42` und :math-r:`30` ist :math-r:`6` und erscheint in der Tabelle (:math:`x = -2` und :math:`y = 3`).
+    Der GGT von :math-r:`42` und :math-r:`30` ist :math-r:`6` und erscheint in der Tabelle (:math-i:`x` :math-r:`= -2` und :math-i:`y` :math-r:`= 3`).
 
 
 
@@ -724,14 +725,14 @@ Erweiterter Euklidischer Algorithmus - Systematische Berechnung für :math:`ggt(
 
         .. container:: incremental
 
-            :math:`\Rightarrow x = 7` und :math:`y = -16`
+            :math-i:`⇒ x` :math-r:`= 7` und :math-i:`y` :math-r:`= -16`
 
 
 
 Erweiterter Euklidischer Algorithmus - Formeln
 ----------------------------------------------------
 
-Wir nehmen an, dass wir bei jedem Schritt :math:`i` die ganzen Zahlen :math:`x_i` und :math:`y_i` finden können, die folgende Bedingung erfüllen: :math:`r_i = ax_i + by_i`.
+Wir nehmen an, dass wir bei jedem Schritt :math-i:`i` die ganzen Zahlen :math:`x_i` und :math:`y_i` finden können, die folgende Bedingung erfüllen: :math:`r_i = ax_i + by_i`.
 
 .. math::
 
@@ -810,9 +811,9 @@ Primzahlen
 
 .. class:: incremental-list
 
-   - Primzahlen haben als Teiler nur :math-r:`1` und sich selbst wobei 1 nicht als Primzahl gilt.
+   - Primzahlen haben als Teiler nur :math-r:`1` und sich selbst wobei :math-r:`1` nicht als Primzahl gilt.
 
-     (D.h. Primzahlen haben genau zwei verschiedene positive ganze Teiler.)
+
    - Sie können nicht als Produkt von anderen Zahlen geschrieben werden.
    - Jede ganze Zahl :math:`a > 1` kann auf eindeutige Weise faktorisiert werden als: :math:`a=p_1^{a_1} \times p_2^{a_2} \times \ldots \times p_t^{a_t}` wobei :math:`p_1 < p_2 < \ldots < p_t` Primzahlen sind und wobei jedes :math:`a_i` eine positive ganze Zahl ist.
 
@@ -826,37 +827,39 @@ Primzahlen
 
         .. container:: inline-block
 
-            :math:`15 =`
+            :math-r:`15 =`
 
         .. container:: incremental inline-block
 
-            :math:`2^0 \times 3^1 \times 5^1`
+            :math-r:`2⁰ × 3¹ × 5¹`
 
     .. container:: incremental
 
         .. container:: inline-block
 
-            :math:`50 =`
+            :math-r:`50 =`
 
         .. container:: incremental inline-block
 
-            :math:`2^1 \times 3^0 \times 5^2`
+            :math-r:`2¹ × 3⁰ × 5²`
 
     .. container:: incremental
 
         .. container:: inline-block
 
-            :math:`60 =`
+            :math-r:`60 =`
 
         .. container:: incremental inline-block
 
-            :math:`2^2 \times 3^1 \times 5^1`
+            :math-r:`2² × 3¹ × 5¹`
 
 .. supplemental::
 
    Primzahlen spielen in der Zahlentheorie eine zentrale Rolle. Wir betrachten sie hier aber nur insoweit es für das Verständnis der Kryptographie notwendig ist.
 
    Die Zerlegung zu bestimmen geschieht dadurch, dass man die Zahl durch die kleinste Primzahl (2) solange teilt, bis dies nicht mehr ohne Rest möglich ist, die Potenz ergibt sich dann aus der Anzahl der erfolgreichen Teilungen. Danach fährt man mit der nächsten Primzahl fort (3, 5, 7, ...) bis die Zahl zerlegt wurde.
+
+   :peripheral:`(Primzahlen haben genau zwei verschiedene positive ganze Teiler.)`
 
 
 
@@ -870,7 +873,7 @@ Fermats (kleines) Theorem
 
 Besagt folgendes:
 
-- Wenn :math:`p` eine Primzahl und :math:`a` eine positive ganze Zahl ist, die nicht durch :math:`p` teilbar ist (d.h. :math:`p\nmid a`), dann gilt :math:`a^{p-1} \equiv 1 (mod\;p)`
+- Wenn :math-i:`p` eine Primzahl und :math-i:`a` eine positive ganze Zahl ist, die nicht durch :math-i:`p` teilbar ist (d.h. :math:`p\nmid a`), dann gilt :math:`a^{p-1} \equiv 1 (mod\;p)`
 
 .. class:: incremental
 
@@ -990,12 +993,15 @@ Miller-Rabin-Primzahltest
 
 - Viele kryptografische Algorithmen erfordern eine oder mehrere sehr große Primzahlen nach dem Zufallsprinzip.
 - Der Miller-Rabin-Primzahltest ist ein probabilistischer Primzahltest, der schnell und einfach ist.
+- Er basiert auf Fermat's kleinem Theorem.
 
-- Hintergrund: Jede positive ungerade ganze Zahl :math:`n \geq 3` kann ausgedrückt werden als:
+.. - Hintergrund: Jede positive ungerade ganze Zahl :math:`n \geq 3` kann ausgedrückt werden als:
 
   :math:`n-1 = 2^kq \qquad mit\; k > 0, q\; ungerade`
 
 
+
+.. class:: hide-slide since_2026_03_05
 
 Miller-Rabin-Algorithmus
 -------------------------
@@ -1067,7 +1073,7 @@ Chinesischer Restsatz
 
 .. class:: hide-slide since_03.02.2026
 
-Chinesischer Restsatz - Beispiel in :math:`Z_{10}` 
+Chinesischer Restsatz - Beispiel in :math:`Z_{10}`
 -------------------------------------------------------------
 
 Nehmen wir an, dass die (*relativ prim/koprimalen*) Faktoren einer Zahl :math:`x`:
@@ -1116,8 +1122,8 @@ Die eindeutige Lösung in :math:`Z_{10}` ist: :math:`8`.
 
     Man könnte auch folgendes Problem versuchen zu lösen: Wir haben :math:`x` Schokoladentafeln. Wenn wir diese fair auf zwei Personen verteilen, dann haben wir keinen Rest. Wenn wir diese jedoch auf 5 Personen aufteilen, dann haben wir 3 Tafeln übrig.  Wieviele Schokoladentafeln haben wir?
 
-    .. remember:: 
-        
+    .. remember::
+
         Zwei Zahlen :math:`x` und :math:`y` sind relativ prim, wenn ihr größter gemeinsamer Teiler 1 ist.
 
 
@@ -1260,7 +1266,7 @@ Chinesische Restsatz - Zusammenfassung
 
             :math:`7^6\, mod\, 9 = 1`
 
-.. exercise:: Miller-Rabin Algorithmus
+.. exercise : : Miller-Rabin Algorithmus
 
       Führen Sie den Miller-Rabin Algorithmus für :math:`n = 37` aus.
 

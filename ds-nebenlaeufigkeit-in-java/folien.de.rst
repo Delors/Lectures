@@ -18,7 +18,7 @@ Nebenläufigkeit in Java
 
 :Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
 :Kontakt: michael.eichberg@dhbw.de
-:Version: 1.0.1
+:Version: 1.0.1.1
 
 .. supplemental::
 
@@ -47,7 +47,7 @@ Nebenläufigkeit
 Prozesse vs. Threads
 --------------------------------------------------------
 
-.. deck::
+.. deck:: light-image
 
   .. card::
 
@@ -85,6 +85,7 @@ Ein *Monitor* ist ein Objekt, bei dem die Methoden im wechselseitigen Ausschluss
 .. image:: drawings/threads/monitor.svg
   :alt: Monitor
   :align: right
+  :class: light-image
 
 
 Bedingungs-Synchronisation
@@ -121,6 +122,7 @@ Nebenläufigkeit in Java
 .. image:: drawings/threads/java-threads.svg
    :alt: java.lang.Thread
    :align: center
+   :class: light-image
 
 .. supplemental::
 
@@ -158,6 +160,7 @@ Java Thread States
 .. image:: drawings/threads/java-thread-states.svg
    :alt: Java Thread States
    :align: center
+   :class: light-image
 
 
 
@@ -616,8 +619,8 @@ Damit eine Klasse thread-sicher ist, muss sie sich in einer single-threaded Umge
     - Unabhängig vom *Scheduling* oder der Verschachtelung der Ausführung dieser Threads durch die Laufzeitumgebung,
     - Ohne zusätzliche Synchronisierung auf Seiten des aufrufenden Codes.
 
-
-    .. container:: incremental framed
+    .. assessment::
+        :class: incremental
 
         Dies hat zur Folge, dass Operationen auf einem thread-sicheren Objekt für alle Threads so erscheinen als ob die Operationen in einer festen, global konsistenten Reihenfolge erfolgen würden.
 

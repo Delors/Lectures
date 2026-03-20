@@ -13,7 +13,7 @@
         }
         text {
             fill: black;
-            font-family: var(--theme-code-font-family);
+            font-family: var(--code-font-family);
         }
     :svg-defs:
         <marker

@@ -16,7 +16,7 @@ Concurrency in Java
 
 :Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
 :Kontakt: michael.eichberg@dhbw.de
-:Version: 1.0.1
+:Version: 1.0.3 [Themed]
 
 .. supplemental::
 
@@ -45,7 +45,7 @@ Concurrency
 Processes vs. threads
 --------------------------------------------------------
 
-.. deck::
+.. deck:: light-image
 
   .. card::
 
@@ -75,14 +75,102 @@ Processes vs. threads
 
 
 
+Uncontrolled Parallelization
+-----------------------------
+
+.. include:: code/BrokenCounter.java
+    :code: java
+    :number-lines:
+    :class: incremental-code copy-to-clipboard
+
+.. question::
+    :class: incremental
+
+    What value will the :java:`counter` have when both threads have ended?
+
+    .. presenter-note::
+
+        .. answer::
+            :class: incremental
+
+            The value is generally unpredictable, but it will typically be less than 200,000 when the threads are scheduled preemptively/when increments are interleaved.
+            :incremental:`I.e. even if the system has a single core, the value is still unpredictable!`
+
+
+
+.. class:: repetition
+
+Fundamental Problems in Concurrent Programming
+-----------------------------------------------
+
+Concurrent access to shared mutable state introduces three classes of problems:
+
+.. class:: incremental-list
+
+:Race Condition: *Read / modify / write* of a variable is non-atomic.
+
+:Visibility: Reading of *stale values across threads*.
+
+:Ordering: *Instructions do not execute in source order*.
+
+
+.. summary::
+    :class: incremental
+
+    All three problems share the same root cause:
+
+    **Unsynchronised access to shared mutable state**.
+
+.. supplemental::
+
+    A **Race Condition** can happen, because a compound operation such as :java:`counter++` consists of three separate steps (read, increment, write). When the scheduler preempts a thread between any two of these steps, another thread can operate on a stale value — an increment is silently lost.
+
+    Reading of *stale values across threads* is likely because modern CPUs (since the 1990s) cache values in registers or L1/L2 caches. A write by thread A may never reach main memory before thread B reads the same variable — thread B therefore operates on an arbitrarily old value.
+
+    Both the compiler (in case of Java the Just-In-Time Compiler not the frontend compiler) and the CPU may reorder instructions for optimisation. What *looks sequential in source code may execute in a completely different order at runtime*. This can make partially constructed objects visible to other threads.
+
+    .. hint::
+
+        A **monitor** eliminates all three — mutual exclusion prevents races, and the *happens-before* guarantee provided by Java's memory model ensures both visibility and ordering, as we will discuss next.
+
+        .. remark::
+
+            In Java "happens-before" does not mean "immediately visible across all cores at the instant of the write". It means: **if you observe the write, you observe everything that preceded it.**
+
+
+
+.. class:: exercises
+
+Review Question
+-------------------
+
+.. exercise::
+
+    Would it make a difference if we only loop at most 60 times and the type of the variable is the primitive type :java:`byte`?
+
+    .. include:: code/ByteBrokenCounter.java
+        :code: java
+        :number-lines:
+        :class: copy-to-clipboard
+
+    .. presenter-note::
+
+        .. answer::
+            :class: incremental
+
+            Yes, we still have a read/modify/write sequence! However, given that the loop is so short it becomes increasingly unlikely that we will have an interruption between a read and write. In a practical experiment nearly half a million runs were necessary to observe a value other than 120.
+
+
+
 Communication and synchronization with the help of *monitors*
 -------------------------------------------------------------------
 
-A *monitor* is an object in which the methods are executed in mutual exclusion (*mutual exclusion*).
+A *monitor* is an object in which the methods are executed in *mutual exclusion*.
 
 .. image:: images/threads/monitor.svg
   :alt: Monitor
   :align: right
+  :class: light-image
 
 
 .. rubric:: Condition synchronization
@@ -120,6 +208,7 @@ Concurrency in Java
 .. image:: images/threads/java-threads.svg
    :alt: java.lang.Thread
    :align: center
+   :class: light-image
 
 .. supplemental::
 
@@ -140,6 +229,7 @@ Concurrency in Java
     When all user threads are terminated, the daemon threads are terminated by the JVM and the main programme is terminated.
 
     The method :java:`setDaemon` must be called before the thread is started.
+  - The :java:`Thread.stop()` method was removed in Java 26, after being deprecated in Java 1.2 (December 1998).
 
 
 
@@ -157,6 +247,7 @@ Java Thread States
 .. image:: images/threads/java-thread-states.svg
    :alt: Java Thread States
    :align: center
+   :class: light-image
 
 
 
@@ -200,12 +291,13 @@ Example: synchronized method
   .. card::
 
     .. code:: java
-      :class: copy-to-clipboard
-      :number-lines:
+        :class: copy-to-clipboard
+        :number-lines:
 
         public class SharedLong {
 
-          private long theData; // reading and writing longs is not atomic
+          private long theData; // reading (or writing) a single
+                                // non-volatile long is not atomic
 
           public SharedLong(long initialValue) {
             theData = initialValue;
@@ -440,7 +532,116 @@ Example: Synchronisation with *condition variables*
 
 
 
-.. class:: new-section
+Java's :java:`volatile` Keyword — Lightweight Visibility Guarantee
+----------------------------------------------------------------------
+
+.. deck::
+
+    .. card::
+
+        .. class:: incremental-list
+
+        - Declaring a field :java:`volatile` guarantees *visibility*: every write is immediately flushed to main memory; every read fetches the current value from main memory.
+        - It also guarantees *ordering*: a write *happens-before* every subsequent read of the same variable.
+
+        .. attention::
+            :class: incremental
+
+            Usage of :java:`volatile` does **not** guarantee **atomicity**: compound operations such as :java:`counter++` (read / modify / write) are still unsafe.
+
+        .. supplemental::
+
+            Behind the scenes, :java:`volatile` inserts *memory barriers* that prevent both the Just-In-Time-Compiler (JIT Compiler) and the CPU from reordering instructions across the barrier.
+
+            Hence, :java:`volatile` eliminates only two of the three fundamental problems: visibility and ordering. To eliminate all three a *monitor* (:java:`synchronized`) or an atomic type (e.g. :java:`AtomicInteger`) is required.
+
+    .. card::
+
+        .. rubric:: Rule of thumb
+
+        .. container:: accentuate
+
+            :java:`volatile` is sufficient when *exactly one thread writes* and one or more threads only read — with no read/modify/write involved.
+
+    .. card::
+
+        .. rubric:: Using :java:`volatile` — the Stop-Flag Pattern
+
+        .. deck::
+
+            .. card::
+
+                .. rubric:: *Insufficiently* Synchronized Example
+
+                .. code:: java
+                    :number-lines:
+                    :class: copy-to-clipboard
+
+                    boolean running = true;             // shared variable
+
+                    void main() throws InterruptedException {
+                        var worker = new Thread(() -> {
+                            while (running) {           // read
+                            }
+                        });
+                        worker.start();
+                        Thread.sleep(1000);
+                        running = false;                 // write
+                    }
+
+            .. card::
+
+                .. rubric:: Correctly Synchronized Example
+
+                .. code:: java
+                    :number-lines:
+                    :class: copy-to-clipboard
+
+                    volatile boolean running = true;    // evey read/write hits main memory
+
+                    void main() throws InterruptedException {
+                        var worker = new Thread(() -> {
+                            while (running) {           // read from main memory
+                            }
+                        });
+                        worker.start();
+                        Thread.sleep(1000);
+                        running = false;                // write to main memory
+                    }
+
+                .. summary::
+                    :class: incremental
+
+                    :java:`volatile` is correct here because only the *main thread writes* and only the *worker thread reads* — no compound operation is involved.
+
+                .. supplemental::
+
+                    Without :java:`volatile`, the JIT compiler is free to hoist the :java:`running`
+                    read out of the loop — it has no evidence that another thread will ever
+                    change it.  The worker may therefore spin forever even after the flag is set
+                    to :java:`false`.
+
+                    Note that ``volatile`` does *not* guarantee *when* the worker reacts to the flag change — it only guarantees
+                    that the write will eventually (and typically immediately) be seen.
+
+
+
+.. class:: exercises
+
+Review Question
+----------------
+
+.. exercise:: volatile int counter?
+    :formatted-title: Why is :java:`volatile int counter` still broken for the counting example, even though :java:`volatile boolean running` is correct for the stop-flag?
+
+    .. solution::
+        :pwd: Read_Modify_Write
+
+        Because :java:`counter++` is a *read / modify / write* sequence — three steps that must be atomic as a unit.  :java:`volatile` only guarantees that each individual read or write hits main memory; it cannot make the compound operation atomic.
+
+
+
+.. class:: new-section transition-scale
 
 Advanced synchronisation mechanisms, primitives and concepts.
 --------------------------------------------------------------------------------
@@ -545,6 +746,22 @@ A *BoundedBuffer*, for example, traditionally has two condition variables: *Buff
 
 
 
+.. class:: exercises
+
+Review Question
+--------------------------
+
+.. exercise:: Replacing *volatile boolean running* with *AtomicBoolean running*
+    :formatted-title: Would replacing :java:`volatile boolean running` with :java:`AtomicBoolean running` in the Stop-Flag Pattern example be correct? Would it be necessary?
+
+    .. solution::
+        :pwd: YesAndNO
+
+        :Correct: yes — :java:`AtomicBoolean` also provides visibility.
+        :Necessary: no — because only one thread writes the flag, :java:`volatile` is sufficient and simpler. :java:`AtomicBoolean` would only be needed if multiple threads could set or toggle the flag concurrently.
+
+
+
 Thread Priorities
 --------------------------------------------------------------------------------
 
@@ -619,7 +836,8 @@ For a class to be thread-safe, it must behave correctly in a single-threaded env
     - Independent of *scheduling* or the interleaving of the execution of these threads by the runtime environment,
     - Without additional synchronisation on the part of the calling code.
 
-    .. container:: framed incremental
+    .. assessment::
+        :class: incremental
 
         As a result, operations on a thread-safe object appear to all threads as if the operations were performed in a fixed, globally consistent order.
 

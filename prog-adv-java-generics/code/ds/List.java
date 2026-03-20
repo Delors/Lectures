@@ -28,7 +28,7 @@ public class List {
 
     public void add(Object element) {
         if (count == elements.length) {
-            Object[] newElements = new Object[Math.min(elements.length * 2,1000)];
+            Object[] newElements = new Object[Math.min(elements.length * 2,elements.length + 1000)];
             System.arraycopy(elements, 0, newElements, 0, elements.length);
             elements = newElements;
         }
@@ -63,7 +63,7 @@ public class List {
 
     public void remove(int index) {
         if (index < 0 || index >= count) {
-            throw new IndexOutOfBoundsException();
+            throw new IndexOutOfBoundsException("Index: " + index + ", Size: " + count);
         }
 
         if (count < elements.length/4 && elements.length > 16) {

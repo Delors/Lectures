@@ -18,7 +18,7 @@ Middleware
 
   :Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
   :Kontakt: michael.eichberg@dhbw.de, Raum 149B
-  :Version: 1.0.2
+  :Version: 1.0.2.1
 
 .. supplemental::
 
@@ -190,6 +190,7 @@ Middleware als Programmierabstraktion
 
 .. image:: drawings/middleware.svg
     :align: center
+    :class: light-image
 
 
 
@@ -275,15 +276,14 @@ Middleware unterstützt zusätzliche Funktionen die die Entwicklung, Wartung und
 
 
 
-Middleware - konzeptionelle (historisch)
+Middleware - konzeptionelle (historisch)\ [#]_
 -----------------------------------------------------
 
-.. container:: footer-left
-
-    Darstellung nach: Alonso; Web services: Concepts, Architectures and Applications; Springer, 2004
+.. [#] Darstellung nach: Alonso; Web services: Concepts, Architectures and Applications; Springer, 2004
 
 .. image:: drawings/historische-middleware-konzeptuell.svg
   :align: center
+  :class: light-image
 
 .. supplemental::
 
@@ -298,6 +298,7 @@ Historische Entwicklung von Middleware
 
 .. image:: drawings/historic_middleware_technologies.svg
    :align: center
+   :class: light-image
 
 
 
@@ -372,6 +373,7 @@ RPCs konzeptionell (synchrone Kommunikation)
   .. cell:: width-40
 
     .. image:: drawings/rpc_konzeptionell.svg
+        :class: light-image
 
 
 
@@ -427,7 +429,7 @@ RPCs - zentrale Fragestellungen und Herausforderungen
 High-level View auf RPC
 ---------------------------
 
-.. container:: framed
+.. remark::
 
   Für Programmierer sieht ein „entfernter“ Prozeduraufruf fast identisch aus wie ein „lokaler“ Prozeduraufruf und funktioniert auch so - auf diese Weise wird Transparenz erreicht.
 
@@ -500,6 +502,7 @@ Asynchrones RPC
   .. cell::
 
     .. image:: drawings/rpcs/synchronous_rpc.svg
+        :class: light-image
 
 ----
 
@@ -512,10 +515,11 @@ Asynchrones RPC
   .. cell::
 
     .. image:: drawings/rpcs/asynchronous_rpc.svg
+        :class: light-image
 
 .. supplemental::
 
-  Ein normaler Aufruf mittels ``XMLHTTPRequest`` (JavaScript) ist auch immer asynchron.
+  Ein normaler Aufruf mittels :js:`XMLHTTPRequest` oder :js:`fetch` (JavaScript) ist auch immer asynchron.
 
 
 
@@ -559,7 +563,7 @@ Java Remote Method Invocation (RMI)
 Java RMI (Remote Method Invocation)
 -------------------------------------
 
-.. container:: framed
+.. container:: accentuate
 
   Ermöglicht es einem Objekt, das in einer Java Virtual Machine (VM) läuft, Methoden eines Objekts aufzurufen, das in einer anderen Java VM läuft.
 
@@ -576,6 +580,7 @@ Java RMI vs. RPC
 
 .. image:: drawings/rpc_vs_rmi.svg
    :align: center
+   :class: light-image
 
 .. supplemental::
 
@@ -588,6 +593,7 @@ Java RMI implementiert ein *Distributed Object Model*
 
 .. image:: drawings/java_rmi-distributed-object-model.svg
    :align: center
+   :class: light-image
 
 .. supplemental::
 
@@ -603,6 +609,7 @@ Anatomie eine Java RMI Aufrufs
 
 .. image:: drawings/rmi_anatomy/rmi_anatomy.svg
     :align: center
+    :class: light-image
 
 .. supplemental::
 
@@ -619,6 +626,7 @@ RMI Protocol Stack
 
 .. image:: drawings/rmi_anatomy/rmi_protocol_stack.svg
    :align: center
+   :class: light-image
 
 .. supplemental::
 
@@ -738,6 +746,7 @@ Die Probleme unternehmensübergreifende Punkt-zu-Punkt-Integration zu ermöglich
 
 .. image:: drawings/web_services-vs-message_brokers/message-brokers_and_adapters.svg
    :align: center
+   :class: light-image
 
 .. container:: footer-left
 
@@ -767,6 +776,7 @@ Web Services - konzeptionell
 
 .. image:: drawings/web_services-vs-message_brokers/webservices_vision.svg
    :align: center
+   :class: light-image
 
 
 
@@ -776,6 +786,7 @@ Web Services - wesentliche Bestandteile
 
 .. image:: drawings/web_services-vs-message_brokers/komponenten.svg
    :align: center
+   :class: light-image
 
 .. supplemental::
 
@@ -794,6 +805,7 @@ Web Services - Protokoll Stack
 
 .. image:: drawings/ws-protocol_stack.svg
   :align: center
+  :class: light-image
 
 
 
@@ -829,6 +841,7 @@ Aufbau einer SOAP-Nachricht
   .. cell:: width-40
 
     .. image:: drawings/soap_message.svg
+        :class: light-image
 
   .. cell:: width-60
 
@@ -917,7 +930,7 @@ Beispiel einer SOAP-Antwort
 Web Services - Standardisierung
 --------------------------------
 
-.. deck::
+.. deck:: light-image
 
   .. card::
 
@@ -940,6 +953,7 @@ Web Services - Standardisierung
 
 .. image:: drawings/genealogy-of-middleware.svg
    :align: center
+   :class: light-image
 
 
 
@@ -979,16 +993,17 @@ ZeroMQ - Messaging Patterns
 
     .. image:: drawings/zeromq/client-server.svg
       :align: center
+      :class: light-image
 
 
     .. image:: drawings/zeromq/pub-sub.svg
       :align: center
-      :class: margin-top-2em
+      :class: light-image
 
 
     .. image:: drawings/zeromq/pipeline.svg
       :align: center
-      :class: margin-top-2em
+      :class: light-image
 
 .. supplemental::
 
@@ -1147,7 +1162,8 @@ MOM - Grundlegendes Interface
 
 .. csv-table::
    :header: "Operation", "Beschreibung"
-   :class: highlight-row-on-hover booktabs
+   :class: highlight-row-on-hover booktabs dhbw
+   :widths: 1 5
 
    PUT, "Legt eine Nachricht in eine bestimmte Warteschlange."
    GET, "Blockiert an einer bestimmten Warteschlange bis eine Nachricht verfügbar ist. Entfernt die erste Nachricht."
@@ -1161,6 +1177,7 @@ MOM - Queue Managers
 
 .. image:: drawings/message-queueing.svg
     :align: center
+    :class: light-image
 
 .. supplemental::
 

@@ -6,9 +6,9 @@
     xmlns:xl="http://www.w3.org/1999/xlink"
     xmlns:dc="http://purl.org/dc/elements/1.1/"
     version="1.1"
-    viewBox="80 601 382 196"
+    viewBox="80 601 382 178"
     width="1146"
-    height="588"
+    height="536"
 >
   <style>
     @import url('/LectureDoc2/ext/fonts/ld-fonts.css');
@@ -36,7 +36,6 @@
       </g>
     </marker>
   </defs>
-  <metadata> Produced by OmniGraffle 8.0\n2025-03-05 13:08:05 +0000</metadata>
   <g
         id="asynchronous_rpc"
         fill-opacity="1"
@@ -44,10 +43,12 @@
         stroke="none"
         stroke-dasharray="none"
         fill="none"
+        font-family="Noto Sans Display"
+        font-size="14"
+        font-weight="400"
     >
-    <title>asynchronous_rpc</title>
+    <title>Asynchronous RPC</title>
     <g id="asynchronous_rpc_Layer_1">
-      <title>Layer 1</title>
       <g id="Line_51">
         <line
                     x1="130.20837"
@@ -76,28 +77,12 @@
       </g>
       <g id="Graphic_53">
         <text transform="translate(85.03937 616.6226)" fill="black">
-          <tspan
-                        font-family="Noto Sans Display"
-                        font-size="14"
-                        font-weight="400"
-                        fill="black"
-                        x="11723955e-20"
-                        y="15"
-                        xml:space="preserve"
-                    >Client</tspan>
+          <tspan x="11723955e-20" y="15">Client</tspan>
         </text>
       </g>
       <g id="Graphic_54">
         <text transform="translate(82.79625 744.1824)" fill="black">
-          <tspan
-                        font-family="Noto Sans Display"
-                        font-size="14"
-                        font-weight="400"
-                        fill="black"
-                        x="8739676e-19"
-                        y="15"
-                        xml:space="preserve"
-                    >Server</tspan>
+          <tspan x="8739676e-19" y="15">Server</tspan>
         </text>
       </g>
       <g id="Line_55">
@@ -159,82 +144,25 @@
       <g id="Graphic_60">
         <rect x="154.69918" y="641.4347" width="57.53" height="23" fill="white" />
         <text transform="translate(159.69918 643.4347)" fill="black">
-          <tspan
-                        font-family="Noto Sans Display"
-                        font-size="14"
-                        font-weight="400"
-                        fill="black"
-                        x="0"
-                        y="15"
-                        xml:space="preserve"
-                    >request</tspan>
+          <tspan x="0" y="15">request</tspan>
         </text>
       </g>
       <g id="Graphic_61">
         <rect x="203.0785" y="664.3267" width="68.096" height="42" fill="white" />
         <text transform="translate(203.0785 666.3267)" fill="black">
-          <tspan
-                        font-family="Noto Sans Display"
-                        font-size="14"
-                        font-weight="400"
-                        fill="black"
-                        x="1.708"
-                        y="15"
-                        xml:space="preserve"
-                    >akzeptiere </tspan>
-          <tspan
-                        font-family="Noto Sans Display"
-                        font-size="14"
-                        font-weight="400"
-                        fill="black"
-                        x="10.283"
-                        y="34"
-                        xml:space="preserve"
-                    >request</tspan>
+          <tspan x="1.708" y="15">akzeptiere </tspan>
+          <tspan x="10.283" y="34">request</tspan>
         </text>
       </g>
       <g id="Graphic_65">
         <text transform="translate(182.25197 602.2756)" fill="black">
-          <tspan
-                        font-family="Noto Sans Display"
-                        font-size="14"
-                        font-weight="400"
-                        fill="black"
-                        x="0"
-                        y="15"
-                        xml:space="preserve"
-                    >Warten auf</tspan>
-          <tspan
-                        font-family="Noto Sans Display"
-                        font-size="14"
-                        font-weight="400"
-                        fill="black"
-                        x="4.221"
-                        y="34"
-                        xml:space="preserve"
-                    >Annahme</tspan>
+          <tspan x="0" y="15">Warten auf</tspan>
+          <tspan x="4.221" y="34">Annahme</tspan>
         </text>
       </g>
       <g id="Graphic_66">
-        <text transform="translate(206.41825 758.3544)" fill="black">
-          <tspan
-                        font-family="Noto Sans Display"
-                        font-size="14"
-                        font-weight="400"
-                        fill="black"
-                        x="20.286"
-                        y="15"
-                        xml:space="preserve"
-                    >Aufruf der </tspan>
-          <tspan
-                        font-family="Noto Sans Display"
-                        font-size="14"
-                        font-weight="400"
-                        fill="black"
-                        x="5258016e-19"
-                        y="34"
-                        xml:space="preserve"
-                    >lokalen Methode</tspan>
+        <text transform="translate(140 758.3544)" fill="black">
+          <tspan x="20.286" y="15">Aufruf der lokalen Methode</tspan>
         </text>
       </g>
       <g id="Line_67">
@@ -265,24 +193,8 @@
       <g id="Graphic_69">
         <rect x="300.53224" y="677.0393" width="94.392" height="42" fill="white" />
         <text transform="translate(305.53224 679.0393)" fill="black">
-          <tspan
-                        font-family="Noto Sans Display"
-                        font-size="14"
-                        font-weight="400"
-                        fill="black"
-                        x="11.718"
-                        y="15"
-                        xml:space="preserve"
-                    >Rückgabe</tspan>
-          <tspan
-                        font-family="Noto Sans Display"
-                        font-size="14"
-                        font-weight="400"
-                        fill="black"
-                        x="0"
-                        y="34"
-                        xml:space="preserve"
-                    >der Ergenisse</tspan>
+          <tspan x="11.718" y="15">Rückgabe</tspan>
+          <tspan x="0" y="34">der Ergenisse</tspan>
         </text>
       </g>
       <g id="Line_70">
@@ -301,41 +213,17 @@
       <g id="Graphic_71">
         <rect x="375.7133" y="713.4687" width="85.446" height="23" fill="white" />
         <text transform="translate(380.7133 715.4687)" fill="black">
-          <tspan
-                        font-family="Noto Sans Display"
-                        font-size="14"
-                        font-weight="400"
-                        fill="black"
-                        x="0"
-                        y="15"
-                        xml:space="preserve"
-                    >Bestätigung</tspan>
+          <tspan x="0" y="15">Bestätigung</tspan>
         </text>
       </g>
       <g id="Graphic_72">
         <text transform="translate(333.77337 601.4496)" fill="black">
-          <tspan
-                        font-family="Noto Sans Display"
-                        font-size="14"
-                        font-weight="400"
-                        fill="black"
-                        x="0"
-                        y="15"
-                        xml:space="preserve"
-                    >Interrupt Client</tspan>
+          <tspan x="0" y="15">Interrupt Client</tspan>
         </text>
       </g>
       <g id="Graphic_74">
         <text transform="translate(411.0236 751.1811)" fill="black">
-          <tspan
-                        font-family="Noto Sans Display"
-                        font-size="14"
-                        font-weight="400"
-                        fill="black"
-                        x="14210855e-21"
-                        y="15"
-                        xml:space="preserve"
-                    >Zeit</tspan>
+          <tspan x="14210855e-21" y="15">Zeit</tspan>
         </text>
       </g>
       <g id="Line_73">

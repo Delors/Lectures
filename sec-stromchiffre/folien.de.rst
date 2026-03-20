@@ -6,6 +6,20 @@
     :id: lecture-security-stromchiffren
     :first-slide: last-viewed
     :master-password: WirklichSchwierig!
+    :svg-style:
+        rect { stroke : gray; }
+        g.transition {
+            line { stroke: var(--current-fg-color); }
+            text { fill: var(--current-fg-color); }
+        }
+        marker path {
+            fill : var(--current-fg-color);
+        }
+    :svg-defs:
+        <marker id="arrow" markerWidth="10" markerHeight="10" refX="5" refY="3" orient="auto" markerUnits="strokeWidth">
+            <path d="M0,0 L0,6 L9,3 z" fill="gray"/>
+        </marker>
+
 
 .. include:: ../docutils.defs
 
@@ -16,7 +30,7 @@ Erzeugung von Zufallsbits und Stromchiffren
 
 :Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
 :Kontakt: michael.eichberg@dhbw.de
-:Version: 2.4.3
+:Version: 2.5.1
 
 .. class:: sources
 
@@ -47,8 +61,8 @@ Erzeugung und Zufälligkeit von Zufallszahlen
 
 
 
-Zufallszahlen
--------------------------------
+Zufallszahlen - Verwendung und Anforderungen
+----------------------------------------------
 
 - Eine Reihe von Sicherheitsalgorithmen und -protokollen, die auf Kryptographie basieren, verwenden binäre Zufallszahlen:
 
@@ -96,6 +110,7 @@ Visualisierung von Zufallszahlengeneratoren\ [#]_
         .. image:: drawings/stream_ciphers/distribution_3d_expected.svg
             :alt: Erwartete Verteilung der Werte im 3D-Raum
             :align: center
+            :class: light-image
 
     .. cell:: width-50 incremental
 
@@ -104,6 +119,7 @@ Visualisierung von Zufallszahlengeneratoren\ [#]_
         .. image:: drawings/stream_ciphers/distribution_3d_bad_lcg.svg
             :alt: Schlechte Verteilung der Werte im 3D-Raum
             :align: center
+            :class: light-image
 
 
 .. supplemental::
@@ -121,8 +137,12 @@ Unvorhersehbarkeit
 
 - Bei *echten* Zufallsfolgen ist jede Zahl statistisch unabhängig von den anderen Zahlen in der Folge und daher unvorhersehbar.
 
-  - Echte Zufallszahlen(-generatoren) haben Grenzen; insbesondere die Ineffizienz selbiger ist eine Herausforderung, so dass es häufiger vorkommt, dass Algorithmen implementiert werden, die scheinbar zufällige Zahlenfolgen erzeugen.
+  - Echte Zufallszahlen(-generatoren) haben Grenzen; insbesondere die Ineffizienz selbiger ist eine Herausforderung, so dass oft Algorithmen implementiert werden, die scheinbar zufällige Zahlenfolgen erzeugen.
   - Es muss darauf geachtet werden, dass ein Gegner nicht in der Lage ist, zukünftige Elemente der Folge auf der Grundlage früherer Elemente vorherzusagen.
+
+.. supplemental::
+
+    Einfache Zufallszahlengeneratoren erfüllen die Eigenschaft der Unvorhersehbarkeit oft nicht.
 
 
 
@@ -144,6 +164,7 @@ Zufalls- und Pseudozufallszahlengeneratoren
 .. image:: drawings/stream_ciphers/rng_and_prng.svg
     :alt: RNGs
     :align: center
+    :class: light-image
 
 :TRNG: Echter Zufallszahlengenerator (:eng:`True Random Number Generator`)
 :PRNG: Pseudozufallszahlengenerator (:eng:`Pseudorandom Number Generator`)
@@ -180,27 +201,40 @@ Pseudozufallszahlengenerator (PRNG) und Pseudozufallsfunktion (PRF)
 
             *Pseudozufallszahlengenerator*
 
+            .. class:: list-with-explanations incremental-list
+
             - Ein Algorithmus, der zur Erzeugung einer nicht in der Länge beschränkten Bitfolge verwendet wird.
-            - Die Verwendung eines solchen Bitstroms als Eingabe für eine symmetrische Stromchiffre ist eine häufige Anwendung.
+            - Die Eingabe ist ein fester Wert (*Seed*); mithilfe eines deterministischen Algorithmus wird eine Folge von Ausgabebits erzeugt.
+
+              Häufig wird der Seed von einem TRNG erzeugt.
+            - Ein solcher Bitstrom kann als Eingabe für eine symmetrische Stromchiffre dienen.
+            - :red:`Ein Angreifer, der den Algorithmus und den Seed kennt, kann den gesamten Bitstrom reproduzieren`.
 
         .. cell:: width-50 incremental
 
             *Pseudorandom function (PRF)*
 
+            .. class:: incremental-list
+
+            - Eine PRF ist formal eine Familie von Funktionen:
+
+              .. math::
+
+                \{F_k:\{0,1\}^n→\{0,1\}^m\}_{k∈\{0,1\}^λ}
+
+              Der Schlüssel :math-i:`k` wählt eine konkrete Funktion aus dieser Familie aus. :math:`\lambda` bestimmt das Sicherheitsniveau; insbesondere die Länge des Schlüssels. In der Praxis häufig 128 Bit oder größer.
             - Wird verwendet, um eine pseudozufällige Bitfolge *mit einer bestimmten Länge* zu erzeugen.
-            - Beispiele sind symmetrische Verschlüsselungsschlüssel und Nonces.
+            - PRFs dienen z. B. der Ableitung von symmetrischen Schlüsseln und Nonces.
+
+            .. supplemental::
+
+                Eine konkrete PRF wäre zum Beispiel eine Blockchiffre wie AES.
 
     .. card::
 
-        .. class:: incremental-list list-with-explanations
+        .. remark::
 
-        - Nimmt als Eingabe einen festen Wert, den so genannten *Seed*, und erzeugt mithilfe eines deterministischen Algorithmus eine Folge von Ausgabebits.
-
-          Häufig wird der Seed von einem TRNG erzeugt.
-
-        - Der Ausgangsbitstrom wird ausschließlich durch den oder die Eingabewerte bestimmt, so dass :red:`ein Angreifer, der den Algorithmus und den Seed kennt, den gesamten Bitstrom reproduzieren kann`.
-
-        - Abgesehen von der Anzahl der erzeugten Bits gibt es keinen Unterschied zwischen einem PRNG und einer PRF.
+            PRF und PRNG sind unter gleichen kryptographischen Annahmen gleichwertig mächtig, unterscheiden sich aber bzgl. der  Anwendungsgebiete.
 
 .. supplemental::
 
@@ -208,38 +242,45 @@ Pseudozufallszahlengenerator (PRNG) und Pseudozufallsfunktion (PRF)
 
 
 
-PRNG-Anforderungen
--------------------
+Anforderungen an PRFs und PRNGs
+---------------------------------
 
 .. class:: incremental-list
 
-- Die grundlegende Anforderung bei der Verwendung eines PRNG oder PRF für eine kryptografische Anwendung ist, dass **ein Gegner, der den Seed nicht kennt, nicht in der Lage ist, die pseudozufällige Zeichenfolge zu bestimmen**.
+- Die grundlegende Anforderung bei der Verwendung eines PRNG oder PRF für eine kryptografische Anwendung ist, dass **ein Gegner, der den Seed/Schlüssel nicht kennt, nicht in der Lage ist, die pseudozufällige Bitfolge zu bestimmen**.
 - Die Forderung nach Geheimhaltung der Ausgabe eines PRNG oder PRF führt zu spezifischen Anforderungen in den Bereichen:
 
   - Zufälligkeit
   - Unvorhersehbarkeit
-  - Merkmale des Seeds
+  - Merkmale des Seeds/Schlüssels
 
 
 
 Zufälligkeit
 --------------
 
-- Der erzeugte Bitstrom muss zufällig erscheinen, obwohl er deterministisch ist:
+Der erzeugte Bitstrom muss zufällig erscheinen, obwohl er deterministisch ist:
 
-  .. class:: incremental-list
+.. attention::
+    :class: incremental
 
-  - Es gibt keinen einzigen Test, mit dem festgestellt werden kann, ob ein PRNG Zahlen erzeugt, die die Eigenschaft der Zufälligkeit aufweisen
-  - Wenn der PRNG auf der Grundlage mehrerer Tests Zufälligkeit aufweist, kann davon ausgegangen werden, dass er die Anforderung der Zufälligkeit erfüllt.
+    Es gibt keinen einzigen Test, mit dem „abschließend“ festgestellt werden kann, ob eine PRF/ein PRNG Zahlen erzeugt, die die Eigenschaft der Zufälligkeit aufweisen.
+
+.. container:: incremental
+
+    Wenn der PRNG auf der Grundlage mehrerer Tests Zufälligkeit aufweist, kann davon ausgegangen werden, dass er die Anforderung der Zufälligkeit erfüllt.
 
     .. container:: accentuate
 
-        NIST SP 800-22 legt fest, dass die Tests auf drei Merkmale ausgerichtet sein sollten:
+        `NIST SP 800-22 Rev. 1a <https://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication800-22r1a.pdf>`__ legt fest, dass die Tests auf drei Merkmale ausgerichtet sein sollten:
 
         (1) gleichmäßige Verteilung,
         (2) Skalierbarkeit,
         (3) Konsistenz
 
+        .. supplemental::
+
+            Skalierbarkeit bedeutet hier, dass ein Test, der auf eine Folge angewandt werden kann, auch auf eine beliebige Teilfolgen anwendar ist.
 
 
 Tests auf Zufälligkeit
@@ -287,7 +328,7 @@ Unvorhersehbarkeit
 
            - Es sollte nicht möglich sein, den Seed aus der Kenntnis der erzeugten Werte zu bestimmen.
            - Es sollte keine Korrelation zwischen einem Seed und einem aus diesem Seed generierten Wert erkennbar sein.
-           - Jedes Element der Sequenz sollte wie das Ergebnis eines unabhängigen Zufallsereignisses erscheinen, dessen Wahrscheinlichkeit 1/2 ist.
+           - Jedes Element der Sequenz sollte wie das Ergebnis eines unabhängigen Zufallsereignisses erscheinen, dessen Wahrscheinlichkeit ½ ist.
 
     .. card:: center-child-elements
 
@@ -307,6 +348,7 @@ Anforderungen an den Seed
 .. image:: drawings/stream_ciphers/generation_of_seed_input.svg
     :alt: Generierung von Seeds
     :align: center
+    :class: light-image
 
 
 
@@ -323,7 +365,7 @@ Algorithmen lassen sich in zwei Kategorien einteilen:
 
 2. **Algorithmen, die auf bestehenden kryptographischen Algorithmen basieren**.
 
-   Sie bewirken eine Zufallsverteilung der Eingabedaten.
+   Sie nutzen die kryptographischen Eigenschaften bestehender Algorithmen (Diffusion, Konfusion), um pseudozufällige Ausgaben zu erzeugen.
 
    .. container:: incremental
 
@@ -335,8 +377,8 @@ Algorithmen lassen sich in zwei Kategorien einteilen:
 
 
 
-Primitive Zufallszahlengeneratoren: Lineare Kongruenzgeneratoren
-------------------------------------------------------------------
+Einfache - *nicht-kryptographische* - Zufallszahlengeneratoren: Lineare Kongruenzgeneratoren
+-----------------------------------------------------------------------------------------------------
 
 Ein erstmals von Lehmer vorgeschlagener Algorithmus, der mit vier Zahlen parametrisiert ist:
 
@@ -360,9 +402,17 @@ Die Folge von Zufallszahlen :math:`\lbrace{X_n}\rbrace` erhält man durch die fo
 
 .. supplemental::
 
+    Durch die richtige Wahl von m, a und c kann ggf. garantiert werden, dass die länge der Periode tatsächlich m ist; bei unvorsichtiger Wahl ist dies im Allgemeinen nicht der Fall.
+
+    Das Hull-Dobell-Theorem ist die Grundlage für die Wahl der richtigen Parameter. Es müssen alle folgenden Bedingungen gelten:
+
+    1. :math:`gcd(c,m)=1`; d. h. :math:`c` und :math:`m` sind teilerfremd
+    2. Für jeden Primteiler :math:`p` von :math:`m` gilt: :math:`p∣(a−1)`
+    3. Falls :math:`4∣m`, dann auch :math:`4∣(a−1)`.
+
     .. warning::
 
-        Lineare Kongruenzgeneratoren sind einfach zu implementieren und erfordern nur wenig Speicherplatz. Sie sind jedoch nicht für kryptografische Anwendungen geeignet, da sie eine viel zu kurze Periode haben und leicht zu brechen sind.
+        Lineare Kongruenzgeneratoren sind nicht für kryptografische Anwendungen geeignet, da sie leicht vorhersagbar sind: Aus wenigen Ausgabewerten lassen sich die Parameter vollständig rekonstruieren.
 
     Im Bereich der Simulation können sie jedoch nützlich sein.
 
@@ -389,6 +439,7 @@ Blum Blum Shub Block Diagram
 .. image::  drawings/stream_ciphers/blum_blum_shub.svg
     :alt: Blum Blum Shub Block Diagram
     :align: center
+    :class: light-image
 
 :math-i:`n` ist das Produkt von zwei (sehr großen) Primzahlen :math-i:`p` und :math-i:`q`: :math:`n = p \times q`.
 
@@ -435,22 +486,19 @@ Zwei Ansätze, die eine Blockchiffre zum Aufbau eines PNRG verwenden, haben weit
 
 .. grid::
 
-    .. cell:: width-50
-
-        .. container:: incremental-1
+    .. cell:: width-50 incremental
 
             .. image:: drawings/stream_ciphers/prng-ctr-mode.svg
                 :alt: PRNG CTR Mode
                 :align: center
-                :class: incremental-1
+                :class: light-image
 
-    .. cell:: width-50
-
-        .. container:: incremental#2
+    .. cell:: width-50 incremental
 
             .. image:: drawings/stream_ciphers/prng-ofb-mode.svg
                 :alt: PRNG OFB Mode
                 :align: center
+                :class: light-image
 
 .. supplemental::
 
@@ -495,6 +543,7 @@ Zwei Ansätze, die eine Blockchiffre zum Aufbau eines PNRG verwenden, haben weit
         lcg(1234,8,8,4096,100)
         lcg(1234,4,8,4096,100)
         lcg(1234,8,4,1111111111111111111l,100)
+        lcg(1234,a=25214903917,c=11,m=2**48) # m = 2^{48}
 
     .. solution::
         :pwd: Jupyter...!
@@ -679,7 +728,7 @@ Vergleich von PRNGs und TRNGs
 Konditionierung
 ----------------
 
-Ein TRNG kann eine Ausgabe erzeugen, die in irgendeiner Weise verzerrt ist (z. B. gibt es mehr Einsen als Nullen oder umgekehrt)
+Ein TRNG kann eine Ausgabe erzeugen, die in irgendeiner Weise verzerrt ist (z. B. gibt es mehr Einsen als Nullen oder umgekehrt).
 
 .. deck::  incremental
 
@@ -823,6 +872,7 @@ Allgemeine Struktur einer typischen Stromchiffre
 .. image:: drawings/stream_ciphers/typical_stream_cipher.svg
     :alt:  Typical Stream Cipher
     :align: center
+    :class: light-image
 
 .. grid::
 
@@ -936,6 +986,8 @@ ChaCha Quarter Round
 
         Grundlegende Operationen in ChaCha20.
 
+        (:code:`a,b,c,d` bezeichnen 4 Werte der Zustandsmatrix.)
+
         1. :code:`a += b; d ^= a; d <<<= 16;`
         2. :code:`c += d; b ^= c; b <<<= 12;`
         3. :code:`a += b; d ^= a; d <<<=  8;`
@@ -982,9 +1034,9 @@ ChaCha Quarter Round
 
     .. code:: python
 
-        0x7998bfda = 0b01111001100110001011111111011010
-        0b0111100_1100110001011111111011010 <<< 7 =  0b1100110001011111111011010_0111100
-        0b1100110001011111111011010_0111100 = 0xcc5fed3c
+        0x7998bfda = 0b0111 1001 1001 1000 1011 1111 1101 1010
+                     0b0111 1001 1001 1000 1011 1111 1101 1010 <<< 7 =
+                     0b1100 1100 0101 1111 1110 1101 0011 1100       = 0xcc5fed3c
 
     ChaCha20-Poly1305 - d. h. ChaCha20 mit zusätzlicher Authentifizierung (Poly 1305) - wird unter anderem von IPsec, SSH, TLS 1.2, DTLS 1.2, TLS 1.3, WireGuard, S/MIME 4.0, und OTRv4[22].
 
@@ -1144,43 +1196,52 @@ Die ChaCha20 Blockfunktion
                 .. raw:: html
                     :class: center-content
 
-                    <div style="width: 42ch; height: 40ch"; container-type:size;">
+                    <div style="width: 42ch; height: 40ch">
                     <svg viewBox="190 50 420 400" xmlns="http://www.w3.org/2000/svg" font-size="16">
                     <!-- Eingabeblock -->
-                    <rect x="200" y="60" width="400" height="80" fill="#f0f8ff" stroke="#000" />
+                    <g>
+                    <rect x="200" y="60" width="400" height="80" fill="#f0f8ff"  />
                     <text x="220" y="90" font-weight="bold">Initialer Zustand (State) (512 Bit):</text>
                     <text x="220" y="115">[Const | Key | Block Counter = i | Nonce]</text>
+                    </g>
 
                     <!-- Pfeil zu 20 Runden -->
-                    <line x1="400" y1="140" x2="400" y2="176" stroke="#000" marker-end="url(#arrow)" />
+                    <g class="transition">
+                    <line x1="400" y1="140" x2="400" y2="176" marker-end="url(#arrow)" />
                     <text x="410" y="165" font-style="italic">20 Runden (Mix)</text>
+                    </g>
 
                     <!-- Rundenblock -->
-                    <rect x="200" y="180" width="400" height="80" fill="#e6ffe6" stroke="#000" />
+                    <g>
+                    <rect x="200" y="180" width="400" height="80" fill="#e6ffe6" />
                     <text x="220" y="210">W = ChaCha20_Rounds(State)</text>
                     <text x="220" y="235">(Wird intern verwürfelt)</text>
+                    </g>
 
                     <!-- Pfeil zu Addition -->
-                    <line x1="400" y1="260" x2="400" y2="296" stroke="#000" marker-end="url(#arrow)" />
+                    <g class="transition">
+                    <line x1="400" y1="260" x2="400" y2="296"  marker-end="url(#arrow)" />
                     <text x="410" y="285" font-style="italic">+ initialer Zustand Block i</text>
+                    </g>
 
                     <!-- Addition -->
-                    <rect x="200" y="300" width="400" height="60" fill="#fffbe6" stroke="#000" />
+                    <g>
+                    <rect x="200" y="300" width="400" height="60" fill="#fffbe6"  />
                     <text x="220" y="335">Keystream Block</text>
+                    </g>
 
                     <!-- Klartext XOR -->
-                    <line x1="400" y1="360" x2="400" y2="396" stroke="#000" marker-end="url(#arrow)" />
+                    <g class="transition">
+                    <line x1="400" y1="360" x2="400" y2="396" marker-end="url(#arrow)" />
                     <text x="410" y="385" font-style="italic">⊕ Klartext</text>
+                    </g>
 
-                    <rect x="200" y="400" width="400" height="40" fill="#ffe6e6" stroke="#000" />
+                    <g>
+                    <rect x="200" y="400" width="400" height="40" fill="#ffe6e6" />
                     <text x="250" y="425">Chiffretext = Klartext ⊕ Keystream</text>
+                    </g>
 
-                    <!-- Definitions -->
-                    <defs>
-                        <marker id="arrow" markerWidth="10" markerHeight="10" refX="5" refY="3" orient="auto" markerUnits="strokeWidth">
-                        <path d="M0,0 L0,6 L9,3 z" fill="#000" />
-                        </marker>
-                    </defs>
+
                     </svg>
                     </div>
 
@@ -1212,85 +1273,85 @@ Die ChaCha20 Blockfunktion
 
 .. exercise:: CHA CHA verstehen
 
-    - Welchem Zweck dient die Nonce? Bzw. warum reicht ein Schlüssel alleine nicht?
+    #. Welchem Zweck dient die Nonce? Bzw. warum reicht ein Schlüssel alleine nicht?
 
-    - Muss die Nonce geheim gehalten werden?
+    #. Muss die Nonce geheim gehalten werden?
 
-    - Wenn die Nonce wiederverwendet wird, welche Information kann der Angreifer in welchen Situationen ableiten?
+    #. Wenn die Nonce wiederverwendet wird, welche Information kann der Angreifer in welchen Situationen ableiten?
 
-    - Wie viele Nachrichten kann man mit einem Schlüssel verschlüsseln?
+    #. Wie viele Nachrichten kann man mit einem Schlüssel verschlüsseln?
 
-    - Welche Vor-/Nachteil hat es, wenn man den Blockzähler auf 64 Bit erhöht und die Nonce auf 64 Bit verringert?
+    #. Welche Vor-/Nachteil hat es, wenn man den Blockzähler auf 64 Bit erhöht und die Nonce auf 64 Bit verringert?
 
-      Wie ist der Zusammenhang zum Geburtstagsparadoxon?
+       Wie ist der Zusammenhang zum Geburtstagsparadoxon?
 
-      .. supplemental::
+       .. supplemental::
 
-        .. rubric:: Geburtstagsparadoxon
+            .. rubric:: Geburtstagsparadoxon
 
-        Wie groß ist die Wahrscheinlichkeit, dass bei zufälliger Auswahl von k Werten aus einer Menge mit N möglichen Werten mindestens zwei identisch sind.
+            Wie groß ist die Wahrscheinlichkeit, dass bei zufälliger Auswahl von k Werten aus einer Menge mit N möglichen Werten mindestens zwei identisch sind.
 
-        Bei großen N kann die Abschätzung wie folgt erfolgen: Bei k ≈ √N besteht ≈ 50 % Kollisionswahrscheinlichkeit.
+            Bei großen N kann die Abschätzung wie folgt erfolgen: Bei k ≈ √N besteht ≈ 50 % Kollisionswahrscheinlichkeit.
 
-        .. example::
+            .. example::
 
-            In einer Gruppe von nur 23 Personen liegt die Wahrscheinlichkeit, dass mindestens zwei am gleichen Tag Geburtstag haben, bei über 50 % (präzise berechnet; nicht überschlägig).
+                In einer Gruppe von nur 23 Personen liegt die Wahrscheinlichkeit, dass mindestens zwei am gleichen Tag Geburtstag haben, bei über 50 % (präzise berechnet; nicht überschlägig).
 
-    - Welche Operationen dienen (a) der Konfusion und (b) der Diffusion? Wie wird der Lawineneffekt erreicht?
+    #. Welche Operationen dienen (a) der Konfusion und (b) der Diffusion? Wie wird der Lawineneffekt erreicht?
 
-      .. supplemental::
+       .. supplemental::
 
-        .. repetition::
+            .. repetition::
 
-            :Konfusion: Erschwert die Beziehung zwischen Schlüssel und Chiffretext (→ „Schlüsselversteckung“)
+                :Konfusion: Erschwert die Beziehung zwischen Schlüssel und Chiffretext (→ „Schlüsselversteckung“)
 
-            :Diffusion: Verteilt den Einfluss eines einzelnen Eingabebits über viele Ausgabebits (→ „Durchmischung”)
+                :Diffusion: Verteilt den Einfluss eines einzelnen Eingabebits über viele Ausgabebits (→ „Durchmischung”)
 
-    - Kann CHACHA20 parallelisiert werden?
+    #. Kann CHACHA20 parallelisiert werden?
 
     .. solution::
         :pwd: zum????
 
-        Die Nonce dient dazu, mehrere Nachrichten mit demselben Schlüssel sicher zu verschlüsseln, ohne dabei denselben Schlüsselstrom zu erzeugen.
+        #. Die Nonce dient dazu, mehrere Nachrichten mit demselben Schlüssel sicher zu verschlüsseln, ohne dabei denselben Schlüsselstrom zu erzeugen.
 
-        Die Nonce muss nicht geheim gehalten werden.
+        #. Die Nonce muss nicht geheim gehalten werden.
 
-        Würden wir mehrere Nachrichten mit derselben Nonce verschlüsseln, dann könnten wir direkt P1 ⊕ P2 berechnen und Rückschlüsse auf die Nachricht erhalten:
+        #. Würden wir mehrere Nachrichten mit derselben Nonce verschlüsseln, dann könnten wir direkt P1 ⊕ P2 berechnen und Rückschlüsse auf die Nachricht erhalten:
 
-        ::
+           ::
 
-            C1 = P1 ⊕ Z
-            C2 = P2 ⊕ Z
-            ⇒ C1 ⊕ C2 = P1 ⊕ P2
+                C1 = P1 ⊕ Z
+                C2 = P2 ⊕ Z
+                ⇒ C1 ⊕ C2 = P1 ⊕ P2
 
-        Beispiele:
+           Beispiele:
 
-        - Sei P1 ⊕ P2 = 0, dann wurde zweimal die selbe Nachricht versendet.
-        - Sind Teile von P1 bekannt (zum Beispiel aufgrund der Verwendung eines bekannten Protokolls), dann kann man daraus direkt die entsprechenden Abschnitte von P2 rekonstruieren.
+           - Sei P1 ⊕ P2 = 0, dann wurde zweimal die selbe Nachricht versendet.
+           - Sind Teile von P1 bekannt (zum Beispiel aufgrund der Verwendung eines bekannten Protokolls), dann kann man daraus direkt die entsprechenden Abschnitte von P2 rekonstruieren.
 
-        Da die Nonce 2⁹⁶ Bit hat, kann man entsprechend viele Nachrichten mit dem selben Schlüssel verschlüsseln.
+        #. Da die Nonce 2⁹⁶ Bit hat, kann man entsprechend viele Nachrichten mit dem selben Schlüssel verschlüsseln.
 
 
-        **64-64-Bit Design**
+        #. **64-64-Bit Design**
 
-        :Vorteile: Praktisch unbegrenzte Nachrichtenlänge; ggf. relevante wenn man sehr große Datenströme über längere Zeiträume kontinuierlich verschlüsseln will.
+           :Vorteile: Praktisch unbegrenzte Nachrichtenlänge; ggf. relevante wenn man sehr große Datenströme über längere Zeiträume kontinuierlich verschlüsseln will.
 
-        :Nachteile: Anzahl der Nonces ist kleiner, wodurch die Wahrscheinlichkeit der Wiederverwendung steigt; d.h. ab der Verwendung von 2³² Nonces ist die Wahrscheinlichkeit ≥ 50% (cf. Geburtstagsparadoxon)
+           :Nachteile: Anzahl der Nonces ist kleiner, wodurch die Wahrscheinlichkeit der Wiederverwendung steigt; d.h. ab der Verwendung von 2³² Nonces ist die Wahrscheinlichkeit ≥ 50% (cf. Geburtstagsparadoxon)
 
-        **Konfusion und Diffusion**
+        #. **Konfusion und Diffusion**
 
-        Die grundlegenden Operationen der CHACHA Chiffre sind die Quater-Round Operationen, die alle gleich aufgebaut sind und aus einer Addition modulo 2³², einem XOR und einer Bit-Rotation bestehen. Zum Beispiel: :code:`a += b; d ^= a; d <<<= 16;`.
+           Die grundlegenden Operationen der CHACHA Chiffre sind die Quater-Round Operationen, die alle gleich aufgebaut sind und aus einer Addition modulo 2³², einem XOR und einer Bit-Rotation bestehen. Zum Beispiel: :code:`a += b; d ^= a; d <<<= 16;`.
 
-        Die Addition modulo 2³² ist nicht linear über GF(2), da die Carry-Bits (Ein Carry-Bit ist ein Übertrag, der entsteht, wenn bei der Addition zweier Bits „1 + 1“ gerechnet wird. Dieses zusätzliche Bit beeinflusst das nächsthöhere Bit und sorgt dafür, dass sich Änderungen in einem Bit auf andere Bits auswirken.) zu Bitabhängigkeiten führen. Sie dient der Konfusion. (Beispiel mit mod 2⁴: 1010 + 0110 = 0000 aber auch 1000 + 1000 = 0000 etc. und somit nicht-linear).
+           Die Addition modulo 2³² ist nicht linear über GF(2), da die Carry-Bits (Ein Carry-Bit ist ein Übertrag, der entsteht, wenn bei der Addition zweier Bits „1 + 1“ gerechnet wird. Dieses zusätzliche Bit beeinflusst das nächsthöhere Bit und sorgt dafür, dass sich Änderungen in einem Bit auf andere Bits auswirken.) zu Bitabhängigkeiten führen. Sie dient der Konfusion. (Beispiel mit mod 2⁴: 1010 + 0110 = 0000 aber auch 1000 + 1000 = 0000 etc. und somit nicht-linear).
 
-        XOR ist im Prinzip eine lineare Operation, die in Kombination mit der modularen Addition (Schritt davor) auch zur Diffusion beiträgt. Die Kombination mit der vorhergehenden Operation ist hier entscheidend und somit trägt das XOR sowohl zur Konfusion als auch Diffusion bei.
+           XOR ist im Prinzip eine lineare Operation, die in Kombination mit der modularen Addition (Schritt davor) auch zur Diffusion beiträgt. Die Kombination mit der vorhergehenden Operation ist hier entscheidend und somit trägt das XOR sowohl zur Konfusion als auch Diffusion bei.
 
-        Die Bit-Rotation dient der Diffusion. Dadurch haben Änderungen an einem Eingabebit Auswirkungen auf viele Ausgabebits. Dies sorgt für den Lawineneffekt.
+           Die Bit-Rotation dient der Diffusion. Dadurch haben Änderungen an einem Eingabebit Auswirkungen auf viele Ausgabebits. Dies sorgt für den Lawineneffekt.
 
-        .. important::
+           .. important::
 
-            Die Kombination aus Addition (modulo :math-i:`X`) und XOR ist eine gängige Methode in kryptographischen Algorithmen, um Diffusion und Konfusion zu erzielen.
+                Die Kombination aus Addition (modulo :math-i:`X`) und XOR ist eine gängige Methode in kryptographischen Algorithmen, um Diffusion und Konfusion zu erzielen.
 
-        **Parallelisierung**
+        #. **Parallelisierung**
 
-        Die Parallelisierung von CHACHA(20) ist inhärent möglich. Der Keystream wird in Blöcken berechnet, die jeweils von 2 Konstanten: Nonce und Schlüssel sowie dem Blockzähler abhängen. Der (End-)Zustand des vorherigen Blocks hat keine direkte Auswirkung auf den nachfolgendne Block.
+           Die Parallelisierung von CHACHA(20) ist inhärent möglich. Der Keystream wird in Blöcken berechnet, die jeweils von 2 Konstanten: Nonce und Schlüssel sowie dem Blockzähler abhängen. Der (End-)Zustand des vorherigen Blocks hat keine direkte Auswirkung auf den nachfolgendne Block.

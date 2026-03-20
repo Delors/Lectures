@@ -719,8 +719,8 @@ Arithmetik in :math:`GF(2^3)`\ [#]_
             :stub-columns: 2
             :header-rows: 2
 
-            " ", " ", *000*, *001*, *010*, *011*, *100*, *101*, *110*, *111*
-            " ", ":math:`+`", *0*, *1*, *2*, *3*, *4*, *5*, *6*, *7*
+            "Binär", " ", *000*, *001*, *010*, *011*, *100*, *101*, *110*, *111*
+            " ", ":math-i:`+`", *0*, *1*, *2*, *3*, *4*, *5*, *6*, *7*
             *000*,  *0*, :red:`0`, 1, 2, 3, 4, 5, 6, 7
             *001*,  *1*, 1, :red:`0`, 3, 2, 5, 4, 7, 6
             *010*,  *2*, 2, 3, :red:`0`, 1, 6, 7, 4, 5
@@ -745,8 +745,8 @@ Arithmetik in :math:`GF(2^3)`\ [#]_
             :stub-columns: 2
             :header-rows: 2
 
-            " ", " ", *000*, *001*, *010*, *011*, *100*, *101*, *110*, *111*
-            " ", ":math:`\times`", *0*, *1*, *2*, *3*, *4*, *5*, *6*, *7*
+            "Binär", " ", *000*, *001*, *010*, *011*, *100*, *101*, *110*, *111*
+            " ", ":math-r:`×`", *0*, *1*, *2*, *3*, *4*, *5*, *6*, *7*
             *000*,  *0*, 0, 0, 0, 0, 0, 0, 0, 0
             *001*,  *1*, 0, :red:`1`, 2, 3, 4, 5, 6, 7
             *010*,  *2*, 0, 2, 4, 6, 3, :red:`1`, 7, 5
@@ -809,6 +809,7 @@ Um den endlichen Körper :math:`GF(2^3)` zu konstruieren, müssen wir ein irredu
     Die 8 Polynome sind die möglichen "Reste" bei der Division von Polynomen über :math:`GF(2^3)` mit :math:`x^3 + x + 1`.
 
     Jedes Polynom vom Grad :math-r:`3`; insbesondere auch das Polynom :math:`x^3`, könnte durch unser Polynom geteilt werden.
+
 
 
 Polynomarithmetik im :math-i:`GF(2³)` Modulo :math-i:`(x³ + x + 1)`
@@ -883,7 +884,7 @@ Multiplikation in :math:`GF(2^n)`
 
     Beobachtung: :math:`x^8\;mod\; m(x) = [m(x)-x^8] = x^4 +x^3 +x +1`
 
-    Es folgt, dass die Multiplikation mit :math:`x` (d. h., :math:`0000\,0010`) als 1-Bit-Linksverschiebung gefolgt von einer bedingten bitweisen XOR-Operation mit :math:`0001\,1011` implementiert werden kann:
+    Es folgt, dass die Multiplikation mit :math:`x` (d. h., :math:`0000\,0010`) als 1-Bit-Linksverschiebung gefolgt von einer bedingten bitweisen XOR-Operation mit :math:`0001\,1011` implementiert werden kann, wobei :math:`b_0 ... b_7` die Koeffizienten des Polynoms sind:
 
     .. math::
         x \times f(x) =

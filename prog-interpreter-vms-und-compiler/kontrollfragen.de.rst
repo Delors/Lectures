@@ -6,7 +6,7 @@
    :id: lecture-prog-interpreter-vms-und-kontrollfragen
    :first-slide: last-viewed
    :master-password: WirklichSchwierig!
-    
+
 .. include:: ../docutils.defs
 
 
@@ -16,7 +16,7 @@ Interpreter, VMs und Compiler - Kontrollfragen
 
 :Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
 :Kontakt: michael.eichberg@dhbw.de, Raum 149B
-:Version: 1.1
+:Version: 1.1 [Themed]
 
 
 .. class:: new-section transition-scale
@@ -27,14 +27,14 @@ VMs, Interpreter und Compiler
 
 .. class:: exercises
 
-Kontrollfragen 
+Kontrollfragen
 -------------------------------------
 
 
 .. deck::
 
-   .. card:: 
-   
+   .. card::
+
       .. exercise:: Was ist ein Interpreter? Welche Vor-/Nachteile haben diese gegenüber anderen Formen der Programmausführung?
 
          .. solution::
@@ -53,9 +53,9 @@ Kontrollfragen
             2. Syntaxanalyse
             3. Semantische Analyse
             4. Codegenerierung
-   
 
-      
+
+
    .. card::
 
       .. exercise:: Was ist ein VM und wie unterscheidet sich eine VM von einem Interpreter?
@@ -68,7 +68,7 @@ Kontrollfragen
    .. card::
 
       .. exercise:: Nennen Sie einen Vorteil einer VM in Hinblick auf die Unterstützung von mehreren Programmiersprachen.
-         
+
          .. solution::
             :pwd: EinfachWenigerAufwand
 
@@ -85,7 +85,7 @@ Kontrollfragen
 
 .. class:: exercises
 
-Kontrollfragen 
+Kontrollfragen
 -------------------------------------
 
 .. deck::
@@ -93,9 +93,9 @@ Kontrollfragen
    .. card::
 
       .. exercise:: Was ist javac?
-         :formatted-title: Was ist ``javac``? 
+         :formatted-title: Was ist ``javac``?
 
-         .. solution:: 
+         .. solution::
             :pwd: JaVaCCCC
 
             ``javac`` ist der Java-Compiler, der Java-Quellcode in Bytecode übersetzt.
@@ -105,7 +105,7 @@ Kontrollfragen
       .. exercise:: Was sind .class Dateien?
          :formatted-title: Was sind ``.class`` Dateien?
 
-         .. solution:: 
+         .. solution::
             :pwd: JaVaCErg
 
             Eine ``.class`` Datei enthält den Bytecode einer Java-Klasse. Class-Dateien sind das Ergebnis der Kompilierung von Java Sourcecode mit Hilfe von ``javac``. Dieser Bytecode wird von der JVM ausgeführt.
@@ -113,9 +113,9 @@ Kontrollfragen
    .. card::
 
       .. exercise:: Wie viele öffentliche (public) Klassen können in eine Java-Datei (.java) geschrieben werden?
-         :formatted-title: Wie viele öffentliche (:java:`public`) Klassen können in einer Java-Datei (:java:`.java`) definiert sein? 
+         :formatted-title: Wie viele öffentliche (:java:`public`) Klassen können in einer Java-Datei (:java:`.java`) definiert sein?
 
-         .. solution:: 
+         .. solution::
             :pwd: JaVaCCCC
 
             Eine Sourcedatei darf maximal eine öffentlichen Klasse enthalten. Die Datei muss den Namen der öffentlichen Klasse tragen.

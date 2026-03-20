@@ -462,23 +462,13 @@
                         fill="black"
                         x=".3496991"
                         y="15"
-                        xml:space="preserve"
-                    >„ein</tspan>
+                    >„ein“</tspan>
           <tspan
                         font-family="Noto Sans Display"
                         font-size="14"
                         font-weight="400"
                         fill="black"
                         y="15"
-                        xml:space="preserve"
-                    >‟</tspan>
-          <tspan
-                        font-family="Noto Sans Display"
-                        font-size="14"
-                        font-weight="400"
-                        fill="black"
-                        y="15"
-                        xml:space="preserve"
                     > Objekt</tspan>
         </text>
       </g>

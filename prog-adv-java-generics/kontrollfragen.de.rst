@@ -16,7 +16,7 @@ Java Generics - Wiederholung
 
 :Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
 :Kontakt: michael.eichberg@dhbw.de, Raum 149B
-:Version: 1.1
+:Version: 1.1.1.1 [Themed]
 
 
 .. class:: new-section
@@ -84,7 +84,7 @@ Kontrollfragen
          .. solution::
             :pwd: GeNeRIcs
 
-            Generics ermöglichen es, Typen zu parametrisieren. Dadurch kann der gleiche Code für unterschiedliche Typen typsicher wiederverwendet werden. D. h. es kann zu Laufzeit keine ClassCastException geben.
+            Generics ermöglichen es, Typen zu parametrisieren. Dadurch kann der gleiche Code für unterschiedliche Typen typsicher wiederverwendet werden. D. h. es kann zur Laufzeit keine :java:`ClassCastException` geben.
 
    .. card::
 
@@ -93,7 +93,7 @@ Kontrollfragen
          .. solution::
             :pwd: DiAmOnD
 
-            Der Diamond Operator ``<>`` wird verwendet, um den Typ eines Generics zu inferieren. D. h. es ist nicht notwendig, den Typ explizit anzugeben, wenn dieser für den Compiler aus dem Kontext ersichtlich ist.
+            Der Diamond Operator :java:`<>` wird verwendet, um den Typ eines Generics zu inferieren. D. h. es ist nicht notwendig, den Typ explizit anzugeben, wenn dieser für den Compiler aus dem Kontext ersichtlich ist.
 
 
    .. card::
@@ -142,7 +142,7 @@ Kontrollfragen
          .. solution::
             :pwd: RaWtYpEs
 
-            Raw-Types sind Generics ohne Typangabe. Sie sollten vermieden werden, da sie zu Laufzeit :java:`ClassCastException`\ s verursachen können.
+            Raw-Types sind Generics ohne Typangabe. Sie sollten vermieden werden, da sie zur Laufzeit :java:`ClassCastException`\ s verursachen können.
 
 
    .. card::
@@ -181,6 +181,10 @@ Kontrollfragen
             ArrayList<Integer>      list6 = new ArrayList<Object>();
             List<Integer>           list7 = new ArrayList<Object>();
 
+        .. solution::
+                :pwd: Einige...
+
+                list1, list2, list5
 
    .. card::
 
@@ -250,6 +254,6 @@ Kontrollfragen
             :pwd: AdvGenericMethodsT
 
             1. Die Methode :java:`swap` vertauscht die Elemente an den Positionen :java:`i` und :java:`j` in der Liste :java:`list`.
-            2. Die Methode :java:`sort` sortiert eine Liste :java:`list` von Objekten, die das Interface :java:`Comparable` implementieren. Damit wir in der Implementierung der Methode auf die Elemente der Liste zugreifen können und diese miteinander vergleichen können, ist es notwendig, dass die Elemente der Liste das Interface :java:`Comparable` implementieren.
-            3. Die Methode :java:`sort` sortiert eine Liste :java:`list` von Objekten, die das Interface :java:`Comparable` implementieren. Da der konkrete Typ der Elemente der Liste nicht bekannt ist, ist es jedoch nicht möglich, die Elemente aus der Liste zu nehmen und wieder in der Liste zu speichern ohne auf Typsicherheit zu verzichten.
+            2. Die Methode :java:`sort` sortiert eine Liste :java:`list` von Objekten, die das Interface :java:`Comparable` implementieren. Damit wir in der Implementierung der Methode auf die Elemente der Liste zugreifen können und diese miteinander vergleichen können, ist es notwendig, dass die Elemente der Liste das Interface :java:`Comparable` implementieren. Hierbei steht: :java:`<T extends Comparable<T>>` für einen Typ :java:`T`, der mit sich selbst verglichen werden kann.
+            3. Die Methode :java:`sort` sortiert eine Liste :java:`list` von Objekten, die das Interface :java:`Comparable` implementieren. Da der konkrete Typ der Elemente der Liste nicht bekannt ist, ist es jedoch nicht möglich, die Elemente aus der Liste zu nehmen und wieder in der Liste zu speichern ohne auf explizite Typsicherheit zu verzichten. Das Java Typsystem ist nicht in der Lage den Fall auszudrücken, dass ein Element, das aus einer Liste mit einer *Upper Bound* entnommen wurde (mit welchem konkreten Typ auch immer), notwendigerweise auch wieder in der Liste gespeichert werden kann. In diesen Fällen ist eine explizite Modellierung notwendig. Weiterhin wird Comparable als Raw-Type verwendet, was zu weiteren Warnungen führen wird. Die vorhergehende Methode ist insbesondere aus Implementierungssicht zu bevorzugen; aus Nutzersicht ist der Unterschied praktisch nicht relevant.
             4. Die Methode :java:`copy` kopiert die Elemente der Liste :java:`source` in die Liste :java:`destination`. Da die Liste :java:`destination` Elemente vom Typ :java:`T` oder von einem Supertyp von :java:`T` enthalten kann, ist es möglich, die Elemente der Liste :java:`source` in die Liste :java:`destination` zu kopieren.

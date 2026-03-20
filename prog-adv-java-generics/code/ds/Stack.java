@@ -9,18 +9,20 @@ public class Stack extends List {
     }
 
     public Object pop() {
-        if (size() == 0) {
+        int size = size();
+        if (size == 0) {
             throw new NoSuchElementException();
         }
-        Object element = get(size() - 1);
-        remove(size() - 1);
+        Object element = get(size - 1);
+        remove(size - 1);
         return element;
     }
 
     public Object peek() {
-        if (size() == 0) {
+        int size = size();
+        if (size == 0) {
             throw new NoSuchElementException();
         }
-        return get(size() - 1);
+        return get(size - 1);
     }
 }

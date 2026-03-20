@@ -21,10 +21,10 @@ Advanced Encryption Standard (AES)
 
 :Dozent:    `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
 :Kontakt:   `michael.eichberg@dhbw.de`
-:Version:   1.0.9
+:Version:   1.0.9.2
 
 .. class:: sources
-    
+
 :Quellen:   - William Stallings, *Cryptography and Network Security - Principles and Practice*, 8th Edition, Pearson, 2023
             - `NIST FIPS PUB 197, "Advanced Encryption Standard (AES)" <https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.197.pdf>`_
 
@@ -132,6 +132,7 @@ AES Verschlüsselungsprozess
 .. image:: drawings/aes/encryption_process.svg
     :alt: AES Verschlüsselungsprozess
     :align: center
+    :class: light-image
 
 
 
@@ -166,18 +167,19 @@ AES - Ver-/Entschlüsselungsprozess (Key Size 128bits ⇒ 10 Runden)
 .. image:: drawings/aes/encryption_and_decryption_process.svg
     :alt: AES Encryption and Decryption Process
     :align: center
+    :class: light-image
 
 
 
 AES Detaillierter Aufbau
---------------------------
+------------------------------------------
 
 .. story::
 
     .. class:: incremental-list
 
     - Verarbeitet in jeder Runde den gesamten Datenblock als eine einzige Matrix unter Verwendung von Substitutionen und Permutationen.
-    - Der als Eingabe bereitgestellte Schlüssel - bei 128 Bit Schlüsselgröße -  wird in ein Array von vierundvierzig 32-Bit-Wörtern expandiert (:math:`w[i]`).
+    - Der als Eingabe bereitgestellte Schlüssel - bei 128 Bit Schlüsselgröße -  wird in ein Array von vierundvierzig 32-Bit-Wörtern expandiert (:math:`w[i]`). (D. h. bei 10 Runden.)
     - Die Chiffre beginnt und endet mit der *AddRoundKey*-Operation.
     - Man kann sich die Chiffre als abwechselnde Operationen zwischen
 
@@ -208,6 +210,7 @@ AES *Substitute Byte* Transformation
 .. image:: drawings/aes/substitute_byte_transformation.svg
     :align: center
     :alt: AES substitute byte tansformation
+    :class: light-image
 
 
 
@@ -300,6 +303,7 @@ S-Box Design Grundlagen
 .. image:: drawings/aes/shift_row_transformation.svg
     :alt: Shift Row Transformation
     :align: center
+    :class: light-image
 
 
 
@@ -324,6 +328,7 @@ S-Box Design Grundlagen
 .. image:: drawings/aes/mix_column_transformation.svg
     :alt: Mix Column Transformation
     :align: center
+    :class: light-image
 
 
 
@@ -333,6 +338,7 @@ S-Box Design Grundlagen
 .. image:: drawings/aes/inv_mix_column_transformation.svg
     :alt: Inverse Mix Column Transformation
     :align: center
+    :class: light-image
 
 
 
@@ -439,6 +445,7 @@ Eingabe für eine einzelne AES-Verschlüsselungsrunde
 .. image::  drawings/aes/input_for_a_single_aes_round.svg
     :alt: Eingabe für eine einzelne AES-Verschlüsselungsrunde
     :align: center
+    :class: light-image
 
 
 
@@ -461,6 +468,7 @@ AES Schlüsselexpansion - Visualisiert
 .. image:: drawings/aes/key_expansion.svg
     :alt: AES Schlüsselexpansion
     :align: center
+    :class: light-image
 
 
 
@@ -520,8 +528,8 @@ AES Schlüsselexpansion - Beispiel (Runde 1)
 
         :math:`w[3] = (67,20,46,75)`
 
-.. story:: 
-    
+.. story::
+
   .. class:: incremental-list list-with-sublists
 
   - :math:`g(w[3])`:
@@ -690,6 +698,7 @@ Vertausch von *AddRoundKey* und *InvMixColumns*
 
 .. image:: drawings/aes/equivalent_inverse_cipher.svg
     :align: center
+    :class: light-image
 
 
 
