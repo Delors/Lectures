@@ -17,7 +17,7 @@ Cybersecurity
 
 :Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
 :Kontakt: michael.eichberg@dhbw.de
-:Version: 2.13
+:Version: 2.14
 
 .. supplemental::
 
@@ -329,10 +329,7 @@ IT-Security Vorfälle - Sonstige
 
             Cybercrime has skyrocketed since the start of the Iran war, according to Akamai, which reports a 245 percent increase in everything from credential harvesting attempts to automated reconnaissance traffic aimed at banks and other critical businesses. [...] As Akamai notes, "geopolitically motivated hacktivists are using proxy services in countries like Russia and China as a source for billions of designed-for-abuse connection attempts." [...]
 
-
-
-
-            -- `Jessica Lyons; March 16, 2026 - The Register<https://www.theregister.com/2026/03/16/cybercrime_iran_war_245_percent_rise/>`__
+            -- `Jessica Lyons; March 16, 2026 - The Register <https://www.theregister.com/2026/03/16/cybercrime_iran_war_245_percent_rise/>`__
 
 
 
@@ -1113,7 +1110,7 @@ Eigenschaften von Social-Engineering Angriffe
 
 
 
-`CVE-2024-3094 <https://nvd.nist.gov/vuln/detail/CVE-2024-3094>`__ - ``liblzma`` Backdoor in OpenSSH\ [#]_\ [#]_
+`CVE-2024-3094 <https://nvd.nist.gov/vuln/detail/CVE-2024-3094>`__ - ``liblzma`` Backdoor in OpenSSH\ [InnoQ]_\ [SSH]_
 -------------------------------------------------------------------------------------------------------------------------------------------------
 
 .. class:: incremental-list column-list dhbw list-with-details
@@ -1141,8 +1138,8 @@ Eigenschaften von Social-Engineering Angriffe
 
   **Dem Angriff ging ein sehr langer Social-Engineering Angriff voraus**, weswegen mit höherer Wahrscheinlichkeit ein „State-sponsored Actor“ dahintersteckt.
 
-.. [#] `InnoQ  Podcast <https://www.innoq.com/de/podcast/030-xz-open-ssh-backdoor/transcript/>`__
-.. [#] `SSH Blob <https://www.ssh.com/blog/a-recap-of-the-openssh-and-xz-liblzma-incident#:~:text=The%20harsh%20fact%20is%20that,by%20one%20of%20its%20maintainers>`__
+.. [InnoQ] `InnoQ  Podcast <https://www.innoq.com/de/podcast/030-xz-open-ssh-backdoor/transcript/>`__
+.. [SSH] `SSH Blob <https://www.ssh.com/blog/a-recap-of-the-openssh-and-xz-liblzma-incident#:~:text=The%20harsh%20fact%20is%20that,by%20one%20of%20its%20maintainers>`__
 
 
 
@@ -1423,6 +1420,19 @@ Quantencomputer - Bedrohungsbewertung
 
         .. [#] Markup wurde nachträglich hinzugefügt. :red:`Die zugrundeliegende Forschung hat (Stand März 2026) bisher kein Peer-Review-Verfahren durchlaufen.`
 
+    .. card::
+
+        .. epigraph::
+
+            **Is RSA Safe? New Study Argues Quantum Computers Face A Hard Ceiling**
+
+            A PNAS study proposes Rational Quantum Mechanics, [...] The research estimates a practical upper bound of roughly 200 to 1,000 fully usable qubits, beyond which quantum computers would lose their expected exponential advantage. [... and hence, RSA would remain safe.]
+
+            -- `Matt Swayne; March 19, 2026 - Quantum Insider <https://thequantuminsider.com/2026/03/19/is-rsa-safe-new-study-argues-quantum-computers-face-a-hard-ceiling/>`__
+
+        .. attention::
+
+            Die zugrunde liegende Forschungsarbeit wurde zwar einem Peer-Review unterzogen, aber einige relevante Fragen sind noch nicht beantwortet. **Es ist keine sinnvolle Sicherheitsstrategie darauf zu setzten, dass RSA vielleicht doch sicher bleibt!**
 
 
 
