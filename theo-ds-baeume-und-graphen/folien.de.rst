@@ -81,6 +81,14 @@
                 }
             }
         }
+        g.heap{
+            .lvl0-cell { fill: #fdb99a; stroke: #c05a30; stroke-width: 0.15; }
+            .lvl1-cell { fill: #a9c8f5; stroke: #1e67b0; stroke-width: 0.15; }
+            .lvl2-cell { fill: #98dab4; stroke: #1a7a4a; stroke-width: 0.15; }
+            .lvl0-brk  { stroke: #c05a30; fill: none; stroke-width: 0.25; stroke-linecap: round; }
+            .lvl1-brk  { stroke: #1e67b0; fill: none; stroke-width: 0.25; stroke-linecap: round; }
+            .lvl2-brk  { stroke: #1a7a4a; fill: none; stroke-width: 0.25; stroke-linecap: round; }
+        }
     :svg-defs:
         <marker
             id="arrow"
@@ -104,18 +112,23 @@
             orient="auto-start-reverse">
             <path class="arrow-head" d="M 0 0 L 2 1 L 0 2 z" fill="context-stroke"/>
         </marker>
+        <marker id="dotted-arrow" viewBox="0 0 6 6" refX="5" refY="3"
+                markerWidth="4" markerHeight="4" orient="auto">
+            <path d="M0,0.5 L5,3 L0,5.5" fill="none"
+                stroke="#b8860b" stroke-width="1.2"/>
+        </marker>
 
 
 .. include:: ../docutils.defs
 
 
 
-Datenstrukturen - Bäume und Graphen
+Datenstrukturen: Bäume, Graphen und Heaps
 ====================================================
 
 :Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
 :Kontakt: michael.eichberg@dhbw.de, Raum 149B
-:Version: 1.1
+:Version: 2.0.1
 
 .. container:: peripheral footer-left
 
@@ -975,10 +988,10 @@ Tiefe-zuerst-Suche - Beispiel
         ::
 
             4 -> 1 -> 2 (Ende)
+                   -> 3 (Ende)
                    -> 5 (Ende)
-                -> 3 (Ende)
 
-        .. rubric:: Breite-zuerst-Suche von 5 aus.
+        .. rubric:: Breite-zuerst-Suche von 4 aus.
 
         ::
 
@@ -992,7 +1005,7 @@ Tiefe-zuerst-Suche - Beispiel
         ::
 
             5 -> 4 -> 1 -> 2 (Ende)
-                   -> 3 (Ende)
+                        -> 3 (Ende)
 
         .. rubric:: Breite-zuerst-Suche von 5 aus.
 
@@ -1108,47 +1121,55 @@ Bäume - Schlüsselbegriffe
 
             .. card::
 
-                Elternknoten (:eng:`Parent`)
+                .. rubric:: Elternknoten (:eng:`Parent`)
 
                 Ein Elternknoten ist ein Knoten, der einen oder mehrere Kinder hat.
 
                 .. example::
 
-                    2 ist der Elternknoten von 7
+                    2 ist der Elternknoten von 7.
+
+                    4 ist der Elternknoten von 3.
+
+                    …
 
             .. card::
 
-                Kindknoten (:eng:`Child(ren)`)
+                .. rubric:: Kindknoten (:eng:`Child(ren)`)
 
                 Kindknoten sind Knoten, die einen Elternknoten haben.
 
                 .. example::
 
-                    1 und 7 sind Kindknoten von 2
+                    1 und 7 sind Kindknoten von 2.
+
+                    5 ist Kindknoten von 6.
+
+                    …
 
             .. card::
 
-                Wurzel (:eng:`Root`)
+                .. rubric:: Wurzel (:eng:`Root`)
 
                 Der Wurzelknoten ist der einzige Knoten, der keinen Elternknoten hat.
 
                 .. example::
 
-                    2 ist die Wurzel/der Wurzelknoten
+                    2 ist die Wurzel/der Wurzelknoten.
 
             .. card::
 
-                Blattknoten (:eng:`Leaf`)
+                .. rubric:: Blattknoten (:eng:`Leaf`)
 
                 Ein Blattknoten ist ein Knoten, der keine Kinder hat.
 
                 .. example::
 
-                    8, 3, 5 sind Blattknoten
+                    1, 8, 3, 5 sind Blattknoten.
 
             .. card::
 
-                Innerer Knoten (:eng:`Inner Node`)
+                .. rubric:: Innerer Knoten (:eng:`Inner Node`)
 
                 Ein Knoten, der kein Blattknoten ist, ist ein innerer Knoten.
 
@@ -1159,9 +1180,13 @@ Bäume - Schlüsselbegriffe
 
             .. card::
 
+                .. rubric:: Höhe eines Baumes (:eng:`Height`)
+
                 Die Höhe eines Baumes ist die Länge des längsten Pfades vom Wurzelknoten zu einem Blattknoten.
 
             .. card::
+
+                .. rubric:: Tiefe eines Knotens (:eng:`Depth`)
 
                 Die Tiefe eines Knotens :math:`p` ist die Länge des Pfades vom Wurzelknoten zu :math:`p`.
 
@@ -1621,6 +1646,7 @@ Traversierung von Bäumen
                     Eine Postorder-Traversierung eines Baumes beginnt mit den linken Unterbaum und besucht dann den rechten Unterbaum, bevor der (Wurzel-)knoten besucht wird.
 
 
+
 Suche in einem binären Suchbaum (BST)
 -----------------------------------------
 
@@ -1629,7 +1655,7 @@ Suche in einem binären Suchbaum (BST)
 .. class:: incremental-list
 
 1. Setze den aktuellen Knoten ``n`` auf den Wurzelknoten des Baums.
-2. Falls der aktuelle Knoten ``n`` „leer“ ist, dann ist ``x`` nicht enthalten im im Baum.
+2. Falls der aktuelle Knoten ``n`` „leer“ ist, dann ist ``x`` nicht enthalten im Baum.
 3. Falls ``x == key(n)``: Der Schlüssel wurde gefunden.
 4. Falls ``x < key(n)``: Setze ``n`` auf den Wurzelknoten des linken Unterbaums.
 5. Sonst: Setze ``n`` auf den Wurzelknoten des rechten  Unterbaums.
@@ -1735,25 +1761,38 @@ Implementierung eines binären Suchbaums (BST)
             }
 
             public void delete(Key key) {
-                /* root = */ delete(root, key);
+                root = delete(root, key);
             }
 
             private Node delete(Node x, Key key) {
-                if (x == null)     return null;
+                if (x == null) return null;
                 int cmp = key.compareTo(x.key);
-                if (cmp < 0)       x.left = delete(x.left, key);
-                else if (cmp > 0)  x.right = delete(x.right, key);
+                if (cmp < 0) x.left = delete(x.left, key);
+                else if (cmp > 0) x.right = delete(x.right, key);
                 else {
-                        if (x.right == null)     return x.left;
-                        if (x.left == null)      return x.right;
+                    if (x.right == null) return x.left;
+                    if (x.left == null) return x.right;
 
-                        Node t = x;
-                        x = min(t.right);
-                        x.right = deleteMin(t.right);
-                        x.left = t.left;
+                    // Update the current node with the minimum value from the
+                    // right subtree
+                    Node m = min(x.right);
+                    x.key = m.key;
+                    x.val = m.val;
+                    // Remove the minimum node from the right subtree
+                    if (x.right == m) {
+                        x.right = m.right;
+                    } else {
+                        deleteMinNode(x.right, m);
+                    }
                 }
                 x.count = size(x.left) + size(x.right) + 1;
                 return x;
+            }
+
+            private void deleteMinNode(Node x, Node m) {
+                assert x != m;
+                if (x.left == m) x.left = m.right;
+                else deleteMinNode(x.left, m);
             }
         }
 
@@ -1761,8 +1800,8 @@ Implementierung eines binären Suchbaums (BST)
 
 .. class:: exercises
 
-Übung
-----------------
+Übung - Binäre Suchbäume
+------------------------------
 
 .. exercise:: Optimale Einfügereihenfolge
 
@@ -1775,25 +1814,19 @@ Implementierung eines binären Suchbaums (BST)
 
 .. exercise:: Minimum bestimmen
 
-    Implementieren Sie die Methode :java:`min` (:java:`public Node min() {...}`) als rekursive Methode.
+    Implementieren Sie in BST.java die Methode :java:`public Value min() {...}`, die den Wert mit dem kleinsten Schlüssel zurück gibt, als rekursive Methode.
 
     .. solution::
         :pwd: rek-min!
 
         .. code:: Java
 
-            public Node min() {
-                if (root == null)
-                    return null;
-                else
-                    return min(root);
+            public Value min() {
+                return root == null ? null : min(root).val;
             }
 
             private Node min(Node x) {
-                if (x.left == null)
-                    return x;
-                else
-                    return min(x.left);
+                return x.left == null ? x : min(x.left);
             }
 
             /* Min nicht-rekursiv
@@ -1808,6 +1841,11 @@ Implementierung eines binären Suchbaums (BST)
             */
 
 
+
+.. class:: exercises
+
+Übung - Traversierung von binären Suchbäumen
+----------------------------------------------
 
 .. exercise:: Rückgabe in absteigender Reihenfolge
 
@@ -1838,3 +1876,949 @@ Implementierung eines binären Suchbaums (BST)
                 q.add(x.key);
                 descending(x.left, q);
             }
+
+
+
+.. class:: new-section transition-move-left
+
+Prioritätswarteschlangen
+------------------------
+
+.. class:: section-subtitle
+
+    :ger:`Vorrangwarteschlange` / :eng:`Priority Queue`
+
+
+
+Prioritätswarteschlangen - Überblick
+--------------------------------------
+
+.. class:: incremental-list
+
+- Eine häufige Anforderung ist, dass wir Datensätze mit Schlüsseln der Reihe nach verarbeiten möchten. :incremental:`Wobei der Schlüssel den Prioritätswert für die Reihenfolge der Verarbeitung repräsentiert.` :incremental:`Die Verarbeitungsreihenfolge erfolgt dann von der größten zu der kleinsten Priorität oder umgekehrt.`
+- Anwendungsbeispiele:
+
+  - Job-Scheduling (Schlüssel repräsentieren die Priorität)
+  - Heapsort
+  - Huffman-Codierung
+
+
+
+Prioritätswarteschlangen - Abstrakte Definition
+-----------------------------------------------
+
+Standardoperationen:
+
+.. class:: incremental-list
+
+- erzeugen (einer leeren Prioritätswarteschlange)
+- einfügen eines neuen Elements mit einer bestimmten Priorität
+- abfragen des Elements mit der höchsten Priorität
+
+  (oder ggf. der niedrigsten Priorität je nach Typ der Warteschlange)
+- entfernen des Elements mit der höchsten Priorität
+
+  (oder ggf. der niedrigsten Priorität je nach Typ der Warteschlange)
+
+
+.. remark::
+    :class: incremental
+
+    Eine *Prioritätswarteschlange* (*Priority Queue*) ist somit eine Verallgemeinerung von Stacks und Queues. Beides lässt sich mit Hilfe von Prioritätswarteschlangen implementieren, wenn man als Schlüssel den Einfügezeitpunkt verwendet.
+
+
+
+Prioritätswarteschlangen - Implementierung
+------------------------------------------
+
+Verschiedene Implementierungen sind denkbar:
+
+- basierend auf einer (unsortierten) Liste
+- basierend auf einem sortierten Array
+- basierend auf einem Heap (als nächstes)
+
+.. hint::
+
+    Jede Implementierung hat andere Abwägungen und Einsatzszenarien.
+
+    Die Verwendung eines Heaps ist jedoch effizient für viele Anwendungen, da das Einfügen und das Entfernen des höchsten Elements in :math-i:`O(log n)` Zeit erfolgen.
+
+
+
+Heap
+-----------
+
+.. class:: incremental-list
+
+- Binärbaum, bei dem das Elternelement immer größer oder gleich seinen Kindern ist (Max-Heap).
+
+  (Bei Min-Heaps ist das Elternelement immer kleiner oder gleich seinen Kindern.)
+- basierend auf einem fast *vollständigen* Binärbaum (alle Ebenen bis auf die letzte sind vollständig besetzt)
+- aus effizienzgründen in einem Array gespeichert
+
+  (Von einem Element :code:`i` aus kann auf das Elternelement bzw. die Kinder über die Index-Formel: :code:`parent = (i-1)/2` und :code:`children = 2i+1, 2i+2` zugegriffen werden.)
+
+
+
+Heap - Visualisierung (Min-Heap)
+-----------------------------------------------------
+
+.. raw:: html
+
+    <div style="width: 48ch; height: 18ch;">
+    <svg    font-size="2" viewBox="0 0 48 18"
+            version="1.1" xmlns="http://www.w3.org/2000/svg">
+        <g class="tree heap">
+            <g>
+                <circle cx="12" cy="2" r="0.5" style="fill: #fdb99a;"/>
+                <text x="12.75" y="2.75">1</text>
+            </g>
+
+            <g>
+                <circle cx="6" cy="9" r="0.5" style="fill: #a9c8f5;"/>
+                <line x1="6" y1="9" x2="12" y2="2" />
+                <text x="4.25" y="9.5">3</text>
+            </g>
+
+            <g>
+                <circle cx="18" cy="9" r="0.5" style="fill: #a9c8f5;"/>
+                <line x1="18" y1="9" x2="12" y2="2" />
+                <text x="18.75" y="9.5">2</text>
+            </g>
+
+            <g>
+                <circle cx="3" cy="16" r="0.5" style="fill: #98dab4;"/>
+                <line x1="3" y1="16" x2="6" y2="9" />
+                <text x="1.25" y="16.5">5</text>
+            </g>
+
+            <g>
+                <circle cx="9" cy="16" r="0.5" style="fill: #98dab4;"/>
+                <line x1="9" y1="16" x2="6" y2="9" />
+                <text x="9.75" y="16.5">4</text>
+            </g>
+
+            <g>
+                <circle cx="15" cy="16" r="0.5" style="fill: #98dab4;"/>
+                <line x1="15" y1="16" x2="18" y2="9" />
+                <text x="13.25" y="16.5">8</text>
+            </g>
+
+            <g>
+                <circle cx="21" cy="16" r="0.5" style="fill: #98dab4;"/>
+                <line x1="21" y1="16" x2="18" y2="9" />
+                <text x="21.75" y="16.5">6</text>
+            </g>
+
+            <g class="incremental">
+                <text x="23" y="2.75">Array = [</text>
+                <circle class="visited-node" cx="12" cy="2" r="0.5" style="fill: #fdb99a;"/>
+                <text x="33" y="2.75">1,</text>
+            </g>
+
+            <g class="incremental">
+                <circle class="visited-node" cx="6" cy="9" r="0.5" style="fill: #a9c8f5;"/>
+                <text x="35" y="2.75">3,</text>
+            </g>
+
+            <g class="incremental">
+                <circle class="visited-node" cx="18" cy="9" r="0.5" style="fill: #a9c8f5;"/>
+                <text x="37" y="2.75">2,</text>
+            </g>
+
+            <g class="incremental">
+                <circle class="visited-node" cx="3" cy="16" r="0.5" style="fill: #98dab4;"/>
+                <text x="39" y="2.75">5,</text>
+            </g>
+
+            <g class="incremental">
+                <circle class="visited-node" cx="9" cy="16" r="0.5" style="fill: #98dab4;"/>
+                <text x="41" y="2.75">4,</text>
+            </g>
+
+            <g class="incremental">
+                <circle class="visited-node" cx="15" cy="16" r="0.5" style="fill: #98dab4;"/>
+                <text x="43" y="2.75">8,</text>
+            </g>
+
+            <g class="incremental">
+                <circle class="visited-node" cx="21" cy="16" r="0.5" style="fill: #98dab4;"/>
+                <text x="45" y="2.75">6]</text>
+            </g>
+
+
+            <g class="incremental" transform="translate(23.5 -18)">
+            <!-- Index-Labels -->
+            <g font-size="1.5" text-anchor="middle" fill="currentColor">
+                <text x="4.25"  y="23.4">0</text>
+                <text x="7.25"  y="23.4">1</text>
+                <text x="10.25" y="23.4">2</text>
+                <text x="13.25" y="23.4">3</text>
+                <text x="16.25" y="23.4">4</text>
+                <text x="19.25" y="23.4">5</text>
+                <text x="22.25" y="23.4">6</text>
+            </g>
+
+            <!-- Array-Zellen -->
+            <g font-size="1.8" text-anchor="middle" fill="currentColor">
+                <rect class="lvl0-cell" x="3"  y="24" width="2.5" height="2" />
+                <text x="4.25"  y="25.6">1</text>
+
+                <rect class="lvl1-cell" x="6"  y="24" width="2.5" height="2" />
+                <text x="7.25"  y="25.6">3</text>
+                <rect class="lvl1-cell" x="9"  y="24" width="2.5" height="2" />
+                <text x="10.25" y="25.6">2</text>
+
+                <rect class="lvl2-cell" x="12" y="24" width="2.5" height="2" />
+                <text x="13.25" y="25.6">5</text>
+                <rect class="lvl2-cell" x="15" y="24" width="2.5" height="2" />
+                <text x="16.25" y="25.6">4</text>
+                <rect class="lvl2-cell" x="18" y="24" width="2.5" height="2" />
+                <text x="19.25" y="25.6">8</text>
+                <rect class="lvl2-cell" x="21" y="24" width="2.5" height="2" />
+                <text x="22.25" y="25.6">6</text>
+            </g>
+
+            <!-- Ebenen-Klammern -->
+            <g font-size="1.5" >
+                <text x="0.25" y="28.2" text-anchor="middle">Ebene:</text>
+                <polyline class="lvl0-brk" points="5.5,26.3 5.5,26.8 3,26.8 3,26.3"/>
+                <text x="4.25" y="28.2" text-anchor="middle">0</text>
+
+                <polyline class="lvl1-brk" points="11.5,26.3 11.5,26.8 6,26.8 6,26.3"/>
+                <text x="8.75" y="28.2" text-anchor="middle">1</text>
+
+                <polyline class="lvl2-brk" points="23.5,26.3 23.5,26.8 12,26.8 12,26.3"/>
+                <text x="17.75" y="28.2" text-anchor="middle">2</text>
+            </g>
+            </g>
+        </g>
+    </svg>
+    </div>
+
+.. remark::
+
+    Die Standardoperationen für Prioritätswarteschlangen sind auf Heaps in :math-i:`O(log n)` Zeit möglich - mit Ausnahme der Abfrage des höchsten Elements, die in :math-i:`O(1)` Zeit möglich ist.
+
+
+
+Einfügen eines neuen Elements
+------------------------------
+
+.. rubric:: Psudocode Implementierung
+
+.. code:: pascal
+    :number-lines:
+    :class: line-numbers-padded no-margin copy-to-clipboard
+
+    // heap - Array, dass die Heap-Eigenschaft erfüllt/den Heap repräsentiert
+    // n - Anzahl der Elemente im Heap
+    // key - der neue Schlüssel
+    procedure insert(<in/out> heap, <in/out> n, <in> key):
+
+.. code:: pascal
+    :number-lines: 5
+    :class: copy-to-clipboard incremental-code
+
+        heap[n] ← key   // Element ans Ende anhängen
+        i ← n           // Index des aktuell betrachteten Elements
+        n ← n + 1       // Aktualisierung der Anzahl der Elemente
+
+        // up-heap: solange Elternelement kleiner als eingefügtes Element
+        while i > 0 and heap[(i-1)/2] < heap[i]:
+            swap(heap[(i-1)/2], heap[i])
+            i ← (i-1)/2
+
+
+
+Heap - Entfernen des höchsten Elements (Wert: 1)
+--------------------------------------------------
+
+.. deck::
+
+    .. card::
+
+        .. raw:: html
+
+            <div style="width: 48ch; height: 18ch;">
+            <svg    font-size="2" viewBox="0 0 48 18"
+                    version="1.1" xmlns="http://www.w3.org/2000/svg">
+                <style>
+                    .lvl0-cell{fill:#fdb99a;stroke:#c05a30;stroke-width:0.15}
+                    .lvl1-cell{fill:#a9c8f5;stroke:#1e67b0;stroke-width:0.15}
+                    .lvl2-cell{fill:#98dab4;stroke:#1a7a4a;stroke-width:0.15}
+                    .lvl0-brk{stroke:#c05a30;fill:none;stroke-width:0.25;stroke-linecap:round}
+                    .lvl1-brk{stroke:#1e67b0;fill:none;stroke-width:0.25;stroke-linecap:round}
+                    .lvl2-brk{stroke:#1a7a4a;fill:none;stroke-width:0.25;stroke-linecap:round}
+                </style>
+                <g class="tree heap">
+                    <g>
+                        <circle cx="12" cy="2" r="0.6"
+                                style="fill:#ff7070;stroke:#cc0000;stroke-width:0.2"/>
+                        <text x="12.75" y="2.75">1</text>
+                    </g>
+                    <g>
+                        <circle cx="6" cy="9" r="0.5" style="fill:#a9c8f5"/>
+                        <line x1="6" y1="9" x2="12" y2="2"/>
+                        <text x="4.25" y="9.5">3</text>
+                    </g>
+                    <g>
+                        <circle cx="18" cy="9" r="0.5" style="fill:#a9c8f5"/>
+                        <line x1="18" y1="9" x2="12" y2="2"/>
+                        <text x="18.75" y="9.5">2</text>
+                    </g>
+                    <g>
+                        <circle cx="3" cy="16" r="0.5" style="fill:#98dab4"/>
+                        <line x1="3" y1="16" x2="6" y2="9"/>
+                        <text x="1.25" y="16.5">5</text>
+                    </g>
+                    <g>
+                        <circle cx="9" cy="16" r="0.5" style="fill:#98dab4"/>
+                        <line x1="9" y1="16" x2="6" y2="9"/>
+                        <text x="9.75" y="16.5">4</text>
+                    </g>
+                    <g>
+                        <circle cx="15" cy="16" r="0.5" style="fill:#98dab4"/>
+                        <line x1="15" y1="16" x2="18" y2="9"/>
+                        <text x="13.25" y="16.5">8</text>
+                    </g>
+                    <g>
+                        <circle cx="21" cy="16" r="0.6"
+                                style="fill:#ffe066;stroke:#b8860b;stroke-width:0.2"/>
+                        <line x1="21" y1="16" x2="18" y2="9"/>
+                        <text x="21.75" y="16.5">6</text>
+                    </g>
+                    <!-- Pfeil: letztes Element → Wurzel -->
+                    <path d="M20.7,15.4 C16,9.5 14,5.5 12.4,2.9"
+                        fill="none" stroke="#b8860b" stroke-width="0.22"
+                        stroke-dasharray="0.6,0.35" marker-end="url(#dotted-arrow)"/>
+                    <!-- Array -->
+                    <g transform="translate(23.5,-18)">
+                        <g font-size="1.5" text-anchor="middle" fill="currentColor">
+                            <text x="4.25"  y="23.4">0</text>
+                            <text x="7.25"  y="23.4">1</text>
+                            <text x="10.25" y="23.4">2</text>
+                            <text x="13.25" y="23.4">3</text>
+                            <text x="16.25" y="23.4">4</text>
+                            <text x="19.25" y="23.4">5</text>
+                            <text x="22.25" y="23.4">6</text>
+                        </g>
+                        <g font-size="1.8" text-anchor="middle" fill="currentColor">
+                            <rect x="3" y="24" width="2.5" height="2"
+                                style="fill:#ff7070;stroke:#cc0000;stroke-width:0.15"/>
+                            <text x="4.25"  y="25.6">1</text>
+                            <rect class="lvl1-cell" x="6"  y="24" width="2.5" height="2"/>
+                            <text x="7.25"  y="25.6">3</text>
+                            <rect class="lvl1-cell" x="9"  y="24" width="2.5" height="2"/>
+                            <text x="10.25" y="25.6">2</text>
+                            <rect class="lvl2-cell" x="12" y="24" width="2.5" height="2"/>
+                            <text x="13.25" y="25.6">5</text>
+                            <rect class="lvl2-cell" x="15" y="24" width="2.5" height="2"/>
+                            <text x="16.25" y="25.6">4</text>
+                            <rect class="lvl2-cell" x="18" y="24" width="2.5" height="2"/>
+                            <text x="19.25" y="25.6">8</text>
+                            <rect x="21" y="24" width="2.5" height="2"
+                                style="fill:#ffe066;stroke:#b8860b;stroke-width:0.15"/>
+                            <text x="22.25" y="25.6">6</text>
+                        </g>
+                        <g font-size="1.5">
+                            <text x="0.25" y="28.2" text-anchor="middle">Ebene:</text>
+                            <polyline class="lvl0-brk" points="5.5,26.3 5.5,26.8 3,26.8 3,26.3"/>
+                            <text x="4.25"  y="28.2" text-anchor="middle">0</text>
+                            <polyline class="lvl1-brk" points="11.5,26.3 11.5,26.8 6,26.8 6,26.3"/>
+                            <text x="8.75"  y="28.2" text-anchor="middle">1</text>
+                            <polyline class="lvl2-brk" points="23.5,26.3 23.5,26.8 12,26.8 12,26.3"/>
+                            <text x="17.75" y="28.2" text-anchor="middle">2</text>
+                        </g>
+                    </g>
+                </g>
+            </svg>
+            </div>
+
+        Schritt 1:
+
+        - Minimum entfernen.
+        - Letztes Element (6) wird zur neuen Wurzel.
+
+    .. card::
+
+        .. raw:: html
+
+            <div style="width: 48ch; height: 18ch;">
+            <svg    font-size="2" viewBox="0 0 48 18"
+                    version="1.1" xmlns="http://www.w3.org/2000/svg">
+                <style>
+                    .lvl0-cell{fill:#fdb99a;stroke:#c05a30;stroke-width:0.15}
+                    .lvl1-cell{fill:#a9c8f5;stroke:#1e67b0;stroke-width:0.15}
+                    .lvl2-cell{fill:#98dab4;stroke:#1a7a4a;stroke-width:0.15}
+                    .lvl0-brk{stroke:#c05a30;fill:none;stroke-width:0.25;stroke-linecap:round}
+                    .lvl1-brk{stroke:#1e67b0;fill:none;stroke-width:0.25;stroke-linecap:round}
+                    .lvl2-brk{stroke:#1a7a4a;fill:none;stroke-width:0.25;stroke-linecap:round}
+                </style>
+                <g class="tree heap">
+                    <!-- Wurzel = 6 (verletzt Heap-Eigenschaft) -->
+                    <g>
+                        <circle cx="12" cy="2" r="0.6"
+                                style="fill:#ffa040;stroke:#cc6600;stroke-width:0.2"/>
+                        <text x="12.75" y="2.75">6</text>
+                    </g>
+                    <g>
+                        <circle cx="6" cy="9" r="0.5" style="fill:#a9c8f5"/>
+                        <line x1="6" y1="9" x2="12" y2="2"/>
+                        <text x="4.25" y="9.5">3</text>
+                    </g>
+                    <g>
+                        <circle cx="18" cy="9" r="0.5" style="fill:#a9c8f5"/>
+                        <line x1="18" y1="9" x2="12" y2="2"/>
+                        <text x="18.75" y="9.5">2</text>
+                    </g>
+                    <g>
+                        <circle cx="3" cy="16" r="0.5" style="fill:#98dab4"/>
+                        <line x1="3" y1="16" x2="6" y2="9"/>
+                        <text x="1.25" y="16.5">5</text>
+                    </g>
+                    <g>
+                        <circle cx="9" cy="16" r="0.5" style="fill:#98dab4"/>
+                        <line x1="9" y1="16" x2="6" y2="9"/>
+                        <text x="9.75" y="16.5">4</text>
+                    </g>
+                    <g>
+                        <circle cx="15" cy="16" r="0.5" style="fill:#98dab4"/>
+                        <line x1="15" y1="16" x2="18" y2="9"/>
+                        <text x="13.25" y="16.5">8</text>
+                    </g>
+                    <!-- Array -->
+                    <g transform="translate(23.5,-18)">
+                        <g font-size="1.5" text-anchor="middle" fill="currentColor">
+                            <text x="4.25"  y="23.4">0</text>
+                            <text x="7.25"  y="23.4">1</text>
+                            <text x="10.25" y="23.4">2</text>
+                            <text x="13.25" y="23.4">3</text>
+                            <text x="16.25" y="23.4">4</text>
+                            <text x="19.25" y="23.4">5</text>
+                            <text x="22.25" y="23.4">6</text>
+                        </g>
+                        <g font-size="1.8" text-anchor="middle" fill="currentColor">
+                            <rect x="3" y="24" width="2.5" height="2"
+                                style="fill:#ffa040;stroke:#cc6600;stroke-width:0.15"/>
+                            <text x="4.25"  y="25.6">6</text>
+                            <rect class="lvl1-cell" x="6"  y="24" width="2.5" height="2"/>
+                            <text x="7.25"  y="25.6">3</text>
+                            <rect class="lvl1-cell" x="9"  y="24" width="2.5" height="2"/>
+                            <text x="10.25" y="25.6">2</text>
+                            <rect class="lvl2-cell" x="12" y="24" width="2.5" height="2"/>
+                            <text x="13.25" y="25.6">5</text>
+                            <rect class="lvl2-cell" x="15" y="24" width="2.5" height="2"/>
+                            <text x="16.25" y="25.6">4</text>
+                            <rect class="lvl2-cell" x="18" y="24" width="2.5" height="2"/>
+                            <text x="19.25" y="25.6">8</text>
+                            <!-- Leerer Slot -->
+                            <rect x="21" y="24" width="2.5" height="2"
+                                style="fill:#d8d8d8;stroke:#a0a0a0;stroke-width:0.15"/>
+                            <text x="22.25" y="25.6" style="fill:#a0a0a0">×</text>
+                        </g>
+                        <g font-size="1.5">
+                            <text x="0.25" y="28.2" text-anchor="middle">Ebene:</text>
+                            <polyline class="lvl0-brk" points="5.5,26.3 5.5,26.8 3,26.8 3,26.3"/>
+                            <text x="4.25"  y="28.2" text-anchor="middle">0</text>
+                            <polyline class="lvl1-brk" points="11.5,26.3 11.5,26.8 6,26.8 6,26.3"/>
+                            <text x="8.75"  y="28.2" text-anchor="middle">1</text>
+                            <polyline class="lvl2-brk" points="20.5,26.3 20.5,26.8 12,26.8 12,26.3"/>
+                            <text x="16.25" y="28.2" text-anchor="middle">2</text>
+                        </g>
+                    </g>
+                </g>
+            </svg>
+            </div>
+
+        Schritt 2:
+
+        - n = 6 (letzter Slot frei).
+        - Heap-Eigenschaft verletzt (6 > 3 und 6 > 2).
+
+    .. card::
+
+        .. raw:: html
+
+            <div style="width: 48ch; height: 18ch;">
+            <svg    font-size="2" viewBox="0 0 48 18"
+                    version="1.1" xmlns="http://www.w3.org/2000/svg">
+                <style>
+                    .lvl0-cell{fill:#fdb99a;stroke:#c05a30;stroke-width:0.15}
+                    .lvl1-cell{fill:#a9c8f5;stroke:#1e67b0;stroke-width:0.15}
+                    .lvl2-cell{fill:#98dab4;stroke:#1a7a4a;stroke-width:0.15}
+                    .lvl0-brk{stroke:#c05a30;fill:none;stroke-width:0.25;stroke-linecap:round}
+                    .lvl1-brk{stroke:#1e67b0;fill:none;stroke-width:0.25;stroke-linecap:round}
+                    .lvl2-brk{stroke:#1a7a4a;fill:none;stroke-width:0.25;stroke-linecap:round}
+                </style>
+                <g class="tree heap">
+                    <!-- Neue Wurzel = 2 (grün = Heap-Eigenschaft erfüllt) -->
+                    <g>
+                        <circle cx="12" cy="2" r="0.6"
+                                style="fill:#90dd90;stroke:#2a8a2a;stroke-width:0.2"/>
+                        <text x="12.75" y="2.75">2</text>
+                    </g>
+                    <g>
+                        <circle cx="6" cy="9" r="0.5" style="fill:#a9c8f5"/>
+                        <line x1="6" y1="9" x2="12" y2="2"/>
+                        <text x="4.25" y="9.5">3</text>
+                    </g>
+                    <!-- 6 nach down-heap hierher verschoben (orange) -->
+                    <g>
+                        <circle cx="18" cy="9" r="0.6"
+                                style="fill:#ffd090;stroke:#c07020;stroke-width:0.2"/>
+                        <line x1="18" y1="9" x2="12" y2="2"/>
+                        <text x="18.75" y="9.5">6</text>
+                    </g>
+                    <g>
+                        <circle cx="3" cy="16" r="0.5" style="fill:#98dab4"/>
+                        <line x1="3" y1="16" x2="6" y2="9"/>
+                        <text x="1.25" y="16.5">5</text>
+                    </g>
+                    <g>
+                        <circle cx="9" cy="16" r="0.5" style="fill:#98dab4"/>
+                        <line x1="9" y1="16" x2="6" y2="9"/>
+                        <text x="9.75" y="16.5">4</text>
+                    </g>
+                    <g>
+                        <circle cx="15" cy="16" r="0.5" style="fill:#98dab4"/>
+                        <line x1="15" y1="16" x2="18" y2="9"/>
+                        <text x="13.25" y="16.5">8</text>
+                    </g>
+                    <!-- Array -->
+                    <g transform="translate(23.5,-18)">
+                        <g font-size="1.5" text-anchor="middle" fill="currentColor">
+                            <text x="4.25"  y="23.4">0</text>
+                            <text x="7.25"  y="23.4">1</text>
+                            <text x="10.25" y="23.4">2</text>
+                            <text x="13.25" y="23.4">3</text>
+                            <text x="16.25" y="23.4">4</text>
+                            <text x="19.25" y="23.4">5</text>
+                        </g>
+                        <g font-size="1.8" text-anchor="middle" fill="currentColor">
+                            <rect x="3" y="24" width="2.5" height="2"
+                                style="fill:#90dd90;stroke:#2a8a2a;stroke-width:0.15"/>
+                            <text x="4.25"  y="25.6">2</text>
+                            <rect class="lvl1-cell" x="6"  y="24" width="2.5" height="2"/>
+                            <text x="7.25"  y="25.6">3</text>
+                            <rect x="9" y="24" width="2.5" height="2"
+                                style="fill:#ffd090;stroke:#c07020;stroke-width:0.15"/>
+                            <text x="10.25" y="25.6">6</text>
+                            <rect class="lvl2-cell" x="12" y="24" width="2.5" height="2"/>
+                            <text x="13.25" y="25.6">5</text>
+                            <rect class="lvl2-cell" x="15" y="24" width="2.5" height="2"/>
+                            <text x="16.25" y="25.6">4</text>
+                            <rect class="lvl2-cell" x="18" y="24" width="2.5" height="2"/>
+                            <text x="19.25" y="25.6">8</text>
+                        </g>
+                        <g font-size="1.5">
+                            <text x="0.25" y="28.2" text-anchor="middle">Ebene:</text>
+                            <polyline class="lvl0-brk" points="5.5,26.3 5.5,26.8 3,26.8 3,26.3"/>
+                            <text x="4.25"  y="28.2" text-anchor="middle">0</text>
+                            <polyline class="lvl1-brk" points="11.5,26.3 11.5,26.8 6,26.8 6,26.3"/>
+                            <text x="8.75"  y="28.2" text-anchor="middle">1</text>
+                            <polyline class="lvl2-brk" points="20.5,26.3 20.5,26.8 12,26.8 12,26.3"/>
+                            <text x="16.25" y="28.2" text-anchor="middle">2</text>
+                        </g>
+                    </g>
+                </g>
+            </svg>
+            </div>
+
+        Schritt 3: Down-heap.
+
+        - Tausch 6 ↔ 2 (Index 0↔2).
+        - 6 ≤ 8: kein weiterer Tausch.
+        - Heap wiederhergestellt.
+
+
+    .. presenter-note::
+
+        Diskussion/Vorführung was passiert wenn der nächste Wert entfernt wird.
+
+
+
+.. class:: transition-fade
+
+Heap - Entfernen des höchsten Elements (Wert: 2)
+--------------------------------------------------
+
+.. deck::
+
+    .. card::
+
+        .. raw:: html
+
+            <div style="width: 48ch; height: 18ch;">
+            <svg    font-size="2" viewBox="0 0 48 18"
+                    version="1.1" xmlns="http://www.w3.org/2000/svg">
+                <style>
+                    .lvl0-cell{fill:#fdb99a;stroke:#c05a30;stroke-width:0.15}
+                    .lvl1-cell{fill:#a9c8f5;stroke:#1e67b0;stroke-width:0.15}
+                    .lvl2-cell{fill:#98dab4;stroke:#1a7a4a;stroke-width:0.15}
+                    .lvl0-brk{stroke:#c05a30;fill:none;stroke-width:0.25;stroke-linecap:round}
+                    .lvl1-brk{stroke:#1e67b0;fill:none;stroke-width:0.25;stroke-linecap:round}
+                    .lvl2-brk{stroke:#1a7a4a;fill:none;stroke-width:0.25;stroke-linecap:round}
+                </style>
+                <g class="tree heap">
+                    <g>
+                        <circle cx="12" cy="2" r="0.6"
+                                style="fill:#ff7070;stroke:#cc0000;stroke-width:0.2"/>
+                        <text x="12.75" y="2.75">2</text>
+                    </g>
+                    <g>
+                        <circle cx="6" cy="9" r="0.5" style="fill:#a9c8f5"/>
+                        <line x1="6" y1="9" x2="12" y2="2"/>
+                        <text x="4.25" y="9.5">3</text>
+                    </g>
+                    <g>
+                        <circle cx="18" cy="9" r="0.5" style="fill:#a9c8f5"/>
+                        <line x1="18" y1="9" x2="12" y2="2"/>
+                        <text x="18.75" y="9.5">6</text>
+                    </g>
+                    <g>
+                        <circle cx="3" cy="16" r="0.5" style="fill:#98dab4"/>
+                        <line x1="3" y1="16" x2="6" y2="9"/>
+                        <text x="1.25" y="16.5">5</text>
+                    </g>
+                    <g>
+                        <circle cx="9" cy="16" r="0.5" style="fill:#98dab4"/>
+                        <line x1="9" y1="16" x2="6" y2="9"/>
+                        <text x="9.75" y="16.5">4</text>
+                    </g>
+                    <g>
+                        <circle cx="15" cy="16" r="0.6"
+                                style="fill:#ffe066;stroke:#b8860b;stroke-width:0.2"/>
+                        <line x1="15" y1="16" x2="18" y2="9"/>
+                        <text x="15.75" y="16.5">8</text>
+                    </g>
+                    <path d="M14.7,15.4 C14,10 13.5,6 12.4,2.9"
+                        fill="none" stroke="#b8860b" stroke-width="0.22"
+                        stroke-dasharray="0.6,0.35" marker-end="url(#dotted-arrow)"/>
+
+                    <g transform="translate(23.5,-18)">
+                        <g font-size="1.5" text-anchor="middle" fill="currentColor">
+                            <text x="4.25"  y="23.4">0</text>
+                            <text x="7.25"  y="23.4">1</text>
+                            <text x="10.25" y="23.4">2</text>
+                            <text x="13.25" y="23.4">3</text>
+                            <text x="16.25" y="23.4">4</text>
+                            <text x="19.25" y="23.4">5</text>
+                        </g>
+                        <g font-size="1.8" text-anchor="middle" fill="currentColor">
+                            <rect x="3" y="24" width="2.5" height="2"
+                                style="fill:#ff7070;stroke:#cc0000;stroke-width:0.15"/>
+                            <text x="4.25"  y="25.6">2</text>
+                            <rect class="lvl1-cell" x="6"  y="24" width="2.5" height="2"/>
+                            <text x="7.25"  y="25.6">3</text>
+                            <rect class="lvl1-cell" x="9"  y="24" width="2.5" height="2"/>
+                            <text x="10.25" y="25.6">6</text>
+                            <rect class="lvl2-cell" x="12" y="24" width="2.5" height="2"/>
+                            <text x="13.25" y="25.6">5</text>
+                            <rect class="lvl2-cell" x="15" y="24" width="2.5" height="2"/>
+                            <text x="16.25" y="25.6">4</text>
+                            <rect x="18" y="24" width="2.5" height="2"
+                                style="fill:#ffe066;stroke:#b8860b;stroke-width:0.15"/>
+                            <text x="19.25" y="25.6">8</text>
+                        </g>
+                        <g font-size="1.5">
+                            <text x="0.25" y="28.2" text-anchor="middle">Ebene:</text>
+                            <polyline class="lvl0-brk" points="5.5,26.3 5.5,26.8 3,26.8 3,26.3"/>
+                            <text x="4.25"  y="28.2" text-anchor="middle">0</text>
+                            <polyline class="lvl1-brk" points="11.5,26.3 11.5,26.8 6,26.8 6,26.3"/>
+                            <text x="8.75"  y="28.2" text-anchor="middle">1</text>
+                            <polyline class="lvl2-brk" points="20.5,26.3 20.5,26.8 12,26.8 12,26.3"/>
+                            <text x="16.25" y="28.2" text-anchor="middle">2</text>
+                        </g>
+                    </g>
+                </g>
+            </svg>
+            </div>
+
+
+        Schritt 1:
+
+        - Minimum (2) entfernen.
+        - Letztes Element (8) wird neue Wurzel.
+
+    .. card::
+
+        .. raw:: html
+
+            <div style="width: 48ch; height: 18ch;">
+            <svg    font-size="2" viewBox="0 0 48 18"
+                    version="1.1" xmlns="http://www.w3.org/2000/svg">
+                <style>
+                    .lvl0-cell{fill:#fdb99a;stroke:#c05a30;stroke-width:0.15}
+                    .lvl1-cell{fill:#a9c8f5;stroke:#1e67b0;stroke-width:0.15}
+                    .lvl2-cell{fill:#98dab4;stroke:#1a7a4a;stroke-width:0.15}
+                    .lvl0-brk{stroke:#c05a30;fill:none;stroke-width:0.25;stroke-linecap:round}
+                    .lvl1-brk{stroke:#1e67b0;fill:none;stroke-width:0.25;stroke-linecap:round}
+                    .lvl2-brk{stroke:#1a7a4a;fill:none;stroke-width:0.25;stroke-linecap:round}
+                </style>
+                <g class="tree heap">
+                    <g>
+                        <circle cx="12" cy="2" r="0.6"
+                                style="fill:#ffa040;stroke:#cc6600;stroke-width:0.2"/>
+                        <text x="12.75" y="2.75">8</text>
+                    </g>
+                    <g>
+                        <circle cx="6" cy="9" r="0.5" style="fill:#a9c8f5"/>
+                        <line x1="6" y1="9" x2="12" y2="2"/>
+                        <text x="4.25" y="9.5">3</text>
+                    </g>
+                    <g>
+                        <circle cx="18" cy="9" r="0.5" style="fill:#a9c8f5"/>
+                        <line x1="18" y1="9" x2="12" y2="2"/>
+                        <text x="18.75" y="9.5">6</text>
+                    </g>
+                    <g>
+                        <circle cx="3" cy="16" r="0.5" style="fill:#98dab4"/>
+                        <line x1="3" y1="16" x2="6" y2="9"/>
+                        <text x="1.25" y="16.5">5</text>
+                    </g>
+                    <g>
+                        <circle cx="9" cy="16" r="0.5" style="fill:#98dab4"/>
+                        <line x1="9" y1="16" x2="6" y2="9"/>
+                        <text x="9.75" y="16.5">4</text>
+                    </g>
+                    <g transform="translate(23.5,-18)">
+                        <g font-size="1.5" text-anchor="middle" fill="currentColor">
+                            <text x="4.25"  y="23.4">0</text>
+                            <text x="7.25"  y="23.4">1</text>
+                            <text x="10.25" y="23.4">2</text>
+                            <text x="13.25" y="23.4">3</text>
+                            <text x="16.25" y="23.4">4</text>
+                        </g>
+                        <g font-size="1.8" text-anchor="middle" fill="currentColor">
+                            <rect x="3" y="24" width="2.5" height="2"
+                                style="fill:#ffa040;stroke:#cc6600;stroke-width:0.15"/>
+                            <text x="4.25"  y="25.6">8</text>
+                            <rect class="lvl1-cell" x="6"  y="24" width="2.5" height="2"/>
+                            <text x="7.25"  y="25.6">3</text>
+                            <rect class="lvl1-cell" x="9"  y="24" width="2.5" height="2"/>
+                            <text x="10.25" y="25.6">6</text>
+                            <rect class="lvl2-cell" x="12" y="24" width="2.5" height="2"/>
+                            <text x="13.25" y="25.6">5</text>
+                            <rect class="lvl2-cell" x="15" y="24" width="2.5" height="2"/>
+                            <text x="16.25" y="25.6">4</text>
+                        </g>
+                        <g font-size="1.5">
+                            <text x="0.25" y="28.2" text-anchor="middle">Ebene:</text>
+                            <polyline class="lvl0-brk" points="5.5,26.3 5.5,26.8 3,26.8 3,26.3"/>
+                            <text x="4.25"  y="28.2" text-anchor="middle">0</text>
+                            <polyline class="lvl1-brk" points="11.5,26.3 11.5,26.8 6,26.8 6,26.3"/>
+                            <text x="8.75"  y="28.2" text-anchor="middle">1</text>
+                            <polyline class="lvl2-brk" points="17.5,26.3 17.5,26.8 12,26.8 12,26.3"/>
+                            <text x="14.75" y="28.2" text-anchor="middle">2</text>
+                        </g>
+                    </g>
+                </g>
+            </svg>
+            </div>
+
+        Schritt 2:
+
+        - n = 5. Wurzel = 8.
+        - Verletzt: 8 > 3 und 8 > 6.
+
+    .. card::
+
+        .. raw:: html
+
+            <div style="width: 48ch; height: 18ch;">
+            <svg    font-size="2" viewBox="0 0 48 18"
+                    version="1.1" xmlns="http://www.w3.org/2000/svg">
+                <style>
+                    .lvl0-cell{fill:#fdb99a;stroke:#c05a30;stroke-width:0.15}
+                    .lvl1-cell{fill:#a9c8f5;stroke:#1e67b0;stroke-width:0.15}
+                    .lvl2-cell{fill:#98dab4;stroke:#1a7a4a;stroke-width:0.15}
+                    .lvl0-brk{stroke:#c05a30;fill:none;stroke-width:0.25;stroke-linecap:round}
+                    .lvl1-brk{stroke:#1e67b0;fill:none;stroke-width:0.25;stroke-linecap:round}
+                    .lvl2-brk{stroke:#1a7a4a;fill:none;stroke-width:0.25;stroke-linecap:round}
+                </style>
+                <g class="tree heap">
+                    <g>
+                        <circle cx="12" cy="2" r="0.5" style="fill:#fdb99a"/>
+                        <text x="12.75" y="2.75">3</text>
+                    </g>
+                    <g>
+                        <circle cx="6" cy="9" r="0.6"
+                                style="fill:#ffa040;stroke:#cc6600;stroke-width:0.2"/>
+                        <line x1="6" y1="9" x2="12" y2="2"/>
+                        <text x="4.25" y="9.5">8</text>
+                    </g>
+                    <g>
+                        <circle cx="18" cy="9" r="0.5" style="fill:#a9c8f5"/>
+                        <line x1="18" y1="9" x2="12" y2="2"/>
+                        <text x="18.75" y="9.5">6</text>
+                    </g>
+                    <g>
+                        <circle cx="3" cy="16" r="0.5" style="fill:#98dab4"/>
+                        <line x1="3" y1="16" x2="6" y2="9"/>
+                        <text x="1.25" y="16.5">5</text>
+                    </g>
+                    <g>
+                        <circle cx="9" cy="16" r="0.5" style="fill:#98dab4"/>
+                        <line x1="9" y1="16" x2="6" y2="9"/>
+                        <text x="9.75" y="16.5">4</text>
+                    </g>
+                    <g transform="translate(23.5,-18)">
+                        <g font-size="1.5" text-anchor="middle" fill="currentColor">
+                            <text x="4.25"  y="23.4">0</text>
+                            <text x="7.25"  y="23.4">1</text>
+                            <text x="10.25" y="23.4">2</text>
+                            <text x="13.25" y="23.4">3</text>
+                            <text x="16.25" y="23.4">4</text>
+                        </g>
+                        <g font-size="1.8" text-anchor="middle" fill="currentColor">
+                            <rect class="lvl0-cell" x="3" y="24" width="2.5" height="2"/>
+                            <text x="4.25"  y="25.6">3</text>
+                            <rect x="6" y="24" width="2.5" height="2"
+                                style="fill:#ffa040;stroke:#cc6600;stroke-width:0.15"/>
+                            <text x="7.25"  y="25.6">8</text>
+                            <rect class="lvl1-cell" x="9"  y="24" width="2.5" height="2"/>
+                            <text x="10.25" y="25.6">6</text>
+                            <rect class="lvl2-cell" x="12" y="24" width="2.5" height="2"/>
+                            <text x="13.25" y="25.6">5</text>
+                            <rect class="lvl2-cell" x="15" y="24" width="2.5" height="2"/>
+                            <text x="16.25" y="25.6">4</text>
+                        </g>
+                        <g font-size="1.5">
+                            <text x="0.25" y="28.2" text-anchor="middle">Ebene:</text>
+                            <polyline class="lvl0-brk" points="5.5,26.3 5.5,26.8 3,26.8 3,26.3"/>
+                            <text x="4.25"  y="28.2" text-anchor="middle">0</text>
+                            <polyline class="lvl1-brk" points="11.5,26.3 11.5,26.8 6,26.8 6,26.3"/>
+                            <text x="8.75"  y="28.2" text-anchor="middle">1</text>
+                            <polyline class="lvl2-brk" points="17.5,26.3 17.5,26.8 12,26.8 12,26.3"/>
+                            <text x="14.75" y="28.2" text-anchor="middle">2</text>
+                        </g>
+                    </g>
+                </g>
+            </svg>
+            </div>
+
+        Schritt 3: Down-heap.
+
+        - Tausche 8↔3 (Index 0↔1).
+        - 8 bei Index 1, Kinder: 5 (Index 3), 4 (Index 4).
+        - 8 > 4 → weiterer Tausch.
+
+        .. hint::
+            :class: incremental
+
+            Ein Tausch von 8 mit 5 hätte die Heapeigenschaft verletzt, da 5 > 4. Es muss immer das Minimum (bei Max-Heaps das Maximum) der Kinder mit dem Elternknoten getauscht werden.
+
+    .. card::
+
+        .. raw:: html
+
+            <div style="width: 48ch; height: 18ch;">
+            <svg    font-size="2" viewBox="0 0 48 18"
+                    version="1.1" xmlns="http://www.w3.org/2000/svg">
+                <style>
+                    .lvl0-cell{fill:#fdb99a;stroke:#c05a30;stroke-width:0.15}
+                    .lvl1-cell{fill:#a9c8f5;stroke:#1e67b0;stroke-width:0.15}
+                    .lvl2-cell{fill:#98dab4;stroke:#1a7a4a;stroke-width:0.15}
+                    .lvl0-brk{stroke:#c05a30;fill:none;stroke-width:0.25;stroke-linecap:round}
+                    .lvl1-brk{stroke:#1e67b0;fill:none;stroke-width:0.25;stroke-linecap:round}
+                    .lvl2-brk{stroke:#1a7a4a;fill:none;stroke-width:0.25;stroke-linecap:round}
+                </style>
+                <g class="tree heap">
+                    <g>
+                        <circle cx="12" cy="2" r="0.5" style="fill:#fdb99a"/>
+                        <text x="12.75" y="2.75">3</text>
+                    </g>
+                    <g>
+                        <circle cx="6" cy="9" r="0.6"
+                                style="fill:#90dd90;stroke:#2a8a2a;stroke-width:0.2"/>
+                        <line x1="6" y1="9" x2="12" y2="2"/>
+                        <text x="4.25" y="9.5">4</text>
+                    </g>
+                    <g>
+                        <circle cx="18" cy="9" r="0.5" style="fill:#a9c8f5"/>
+                        <line x1="18" y1="9" x2="12" y2="2"/>
+                        <text x="18.75" y="9.5">6</text>
+                    </g>
+                    <g>
+                        <circle cx="3" cy="16" r="0.5" style="fill:#98dab4"/>
+                        <line x1="3" y1="16" x2="6" y2="9"/>
+                        <text x="1.25" y="16.5">5</text>
+                    </g>
+                    <g>
+                        <circle cx="9" cy="16" r="0.6"
+                                style="fill:#ffd090;stroke:#c07020;stroke-width:0.2"/>
+                        <line x1="9" y1="16" x2="6" y2="9"/>
+                        <text x="9.75" y="16.5">8</text>
+                    </g>
+
+                    <g transform="translate(23.5,-18)">
+                        <g font-size="1.5" text-anchor="middle" fill="currentColor">
+                            <text x="4.25"  y="23.4">0</text>
+                            <text x="7.25"  y="23.4">1</text>
+                            <text x="10.25" y="23.4">2</text>
+                            <text x="13.25" y="23.4">3</text>
+                            <text x="16.25" y="23.4">4</text>
+                        </g>
+                        <g font-size="1.8" text-anchor="middle" fill="currentColor">
+                            <rect class="lvl0-cell" x="3" y="24" width="2.5" height="2"/>
+                            <text x="4.25"  y="25.6">3</text>
+                            <rect x="6" y="24" width="2.5" height="2"
+                                style="fill:#90dd90;stroke:#2a8a2a;stroke-width:0.15"/>
+                            <text x="7.25"  y="25.6">4</text>
+                            <rect class="lvl1-cell" x="9"  y="24" width="2.5" height="2"/>
+                            <text x="10.25" y="25.6">6</text>
+                            <rect class="lvl2-cell" x="12" y="24" width="2.5" height="2"/>
+                            <text x="13.25" y="25.6">5</text>
+                            <rect x="15" y="24" width="2.5" height="2"
+                                style="fill:#ffd090;stroke:#c07020;stroke-width:0.15"/>
+                            <text x="16.25" y="25.6">8</text>
+                        </g>
+                        <g font-size="1.5">
+                            <text x="0.25" y="28.2" text-anchor="middle">Ebene:</text>
+                            <polyline class="lvl0-brk" points="5.5,26.3 5.5,26.8 3,26.8 3,26.3"/>
+                            <text x="4.25"  y="28.2" text-anchor="middle">0</text>
+                            <polyline class="lvl1-brk" points="11.5,26.3 11.5,26.8 6,26.8 6,26.3"/>
+                            <text x="8.75"  y="28.2" text-anchor="middle">1</text>
+                            <polyline class="lvl2-brk" points="17.5,26.3 17.5,26.8 12,26.8 12,26.3"/>
+                            <text x="14.75" y="28.2" text-anchor="middle">2</text>
+                        </g>
+                    </g>
+                </g>
+            </svg>
+            </div>
+
+        Schritt 4: Down-heap.
+
+        - Tausche 8↔4 (Index 1↔4).
+        - 8 ist Blatt (Index 4).
+        - Der Heap ist wiederhergestellt.
+
+
+.. class:: exercises
+
+Übung - Heap
+----------------
+
+.. scrollable::
+
+    .. exercise:: Basismethoden von Heaps
+
+        Implementieren Sie einen Heap. Nehmen Sie das folgende Template als Ausgangsbasis:
+
+        #. Implementieren Sie zuerst die Methoden ``insert`` und ``isEmpty/nonEmpty``. Fügen Sie Ihrer Implementierung eine Möglichkeit hinzu den internen Zustand für Debugzwecke auszugeben.
+        #. Überlegen Sie sich noch einmal genau welche Schritte Sie in Ihrer Implementierung durchführen müssen, um ein Element zu entfernen (⇒ ``remove``). Danch implementieren Sie die Methode ``remove``.
+        #. Testen Sie Ihre Implementierung.
+
+        .. include:: code/HeapTemplate.java
+            :code: java
+            :number-lines:
+            :class: copy-to-clipboard
+
+        .. solution::
+            :pwd: HeapsSindHaufen
+
+            .. include:: code/Heap.java
+                :code: java
+                :number-lines:
+                :class: copy-to-clipboard
