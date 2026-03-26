@@ -16,7 +16,7 @@ W3WI_110.2 - Distributed Systems
 
 :Lecturer: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
 :Contact: michael.eichberg@dhbw.de, Raum 149B
-:Version: 4 (24SCA und 24EG/EH)
+:Version: 5 (24SCA und 24EG/EH)
 
 
 
@@ -514,5 +514,19 @@ Lecture - Schedule
 
       - Lecture
 
-  :8. May 2026 (Event):
+  :26. April 2026, 07:00 (7:00 a.m.):
       - Programming Task Submission Deadline (see Moodle for details)
+
+  :27. April 2026:
+
+        .. class:: list-with-explanations
+
+        - Oral Examination (Programming Task)
+
+          **Duration: 15 minutes**
+
+          During the oral examination, you will be asked to present, demonstrate, and explain your solution.
+
+          The examination will focus on your solution to the programming task and the concepts directly related to it. It will not cover unrelated topics.
+
+          You are required to bring your own notebook computer with a functioning IDE, all source code, and precompiled binaries. Your solution must be fully operational and ready to run on your device.
