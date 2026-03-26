@@ -388,7 +388,7 @@ Verkettete Listen
 
     .. class:: list-with-explanations
 
-    1. Implementieren Sie eine generische, doppelt verkettete Liste in Java.
+    1. Implementieren Sie eine generische, doppelt verkettete Liste in Java. Der generische Typparameter sei :java:`T`.
 
        Orientieren Sie sich ggf. an der Implementierung für eine einfach verkettete Liste.
 
@@ -396,10 +396,11 @@ Verkettete Listen
 
     2. Implementieren Sie die folgenden Methoden.  Bestimmen Sie das *worst-case* verhalten der Operationen (Laufzeit) in Abhängigkeit von der Anzahl der Elemente N, die bereits in der Liste gespeichert sind.
 
-       - Einfügen eines neuen Wertes
-       - Löschen eines Wertes
+       - Einfügen eines neuen Wertes (am Ende der Liste; d. h. ``append``)
+       - Einfügen eines neuen Wertes (am Anfang der Liste; d. h. ``prepend``)
+       - Löschen eines Wertes (d. h. :java:`remove(T value)`)
        - Überprüfen ob ein Wert vorhanden ist
-       - eine Funktion (forEachReverse), um von hinten nach vorne durch die Liste zu iterieren
+       - eine Funktion (:java:`forEachReverse`), um von hinten nach vorne durch die Liste zu iterieren
 
     .. solution::
         :pwd: DoppeltHaeltBesser
@@ -423,7 +424,7 @@ Verkettete Listen
                 }
 
                 // Aufwand: Konstant
-                public void insert(T data) {
+                public void append(T data) {
                     Node newNode = new Node(data);
                     if (head == null) {
                         head = newNode;
@@ -435,8 +436,21 @@ Verkettete Listen
                     }
                 }
 
+                // Aufwand: Konstant
+                public void prepend(T data) {
+                    Node newNode = new Node(data);
+                    if (head == null) {
+                        head = newNode;
+                        tail = newNode;
+                    } else {
+                        newNode.next = head;
+                        head.prev = newNode;
+                        head = newNode;
+                    }
+                }
+
                 // Aufwand: Linear
-                public void delete(T data) {
+                public void remove(T data) {
                     Node current = head;
                     while (current != null) {
                         if (current.data.equals(data)) {
