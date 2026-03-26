@@ -1112,6 +1112,39 @@ Ablauf - W3WI-110 - Entwicklung verteilter Systeme 24SEA
 
 
 
+Architekturpräsentation
+------------------------------
+
+.. story::
+
+    .. remember::
+
+        Pro Gruppe max. 15 Minuten ; max. 5 Punkte
+
+    .. class:: list-with-sublists incremental-list
+
+    - dokumentieren Sie die wesentlichen architekturellen Aspekte Ihres Projekts sowohl in Hinblick auf die *statische Struktur* als auch in Hinblick auf das *dynamische Verhalten*:
+
+      .. class:: list-with-explanations
+
+      - aus der Dokumentation soll hervorgehen in welcher Weise Widgets eingebunden werden und was zu tun ist, um neue Widgets zu integrieren; diesbezüglich soll auch der Informationsfluss zwischen den verschiedenen Komponenten ersichtlich werden.
+
+      - die Dokumentation kann mit Hilfe von UML oder dem `C4 Modell <https://c4model.com/>`_ erstellt werden; letzteres wird zumindest für die statische Struktur empfohlen; ggf. können UML Sequenzdiagramme für das dynamische Verhalten verwendet werden.
+
+        Fokussieren Sie sich auf die architekturellen Aspekte (d. h. die Schichten: *Software System* und *Container* (ggf. *Component*)  im C4 Modell)
+    - präsentieren Sie den Technologiestack; d. h. welche Frameworks und Libraries Sie auf Client- und Serverseite zur Laufzeit einsezten
+    - präsentieren Sie kurz Ihr Buildscript d. h. wie Sie die Anwendung bauen und testen.
+
+      Es sollte unmittelbar ersichtlich sein, welche Schritte beim Bauen alles ausgeführt werden und welche Tools dafür verwendet werden.
+    - geben Sie einen Einblick in Ihre Teststrategie und -ziele.
+
+    .. remark::
+        :class: incremental
+
+        Die Dokumentation kann/sollte dann auch Eingang in die Abschlussdokumentation finden - natürlich ggf. aktualisiert.
+
+
+
 Code Reviews
 ----------------------------
 
