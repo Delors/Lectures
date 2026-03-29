@@ -64,6 +64,9 @@
 .. role:: c(code)
    :language: c
 
+.. role:: scala(code)
+   :language: scala
+
 .. role:: java(code)
    :language: java
 
@@ -94,5 +97,3 @@
 
 .. role:: math-r
 .. role:: math-i
-
-
