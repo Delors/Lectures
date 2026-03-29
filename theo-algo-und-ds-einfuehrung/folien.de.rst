@@ -16,7 +16,7 @@ Algorithmen und Datenstrukturen - eine Einführung
 
 :Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
 :Kontakt: michael.eichberg@dhbw.de, Raum 149B
-:Version: 1.2
+:Version: 1.2.1.1
 
 .. container:: peripheral footer-left
 
@@ -35,6 +35,13 @@ Algorithmen und Datenstrukturen - eine Einführung
 
     :Fehler melden:
         https://github.com/Delors/delors.github.io/issues
+
+    :Kontrollfragen:
+
+        .. source:: kontrollfragen.de.rst
+            :path: relative
+            :prefix: https://delors.github.io/
+            :suffix: .html
 
 
 
@@ -491,3 +498,13 @@ Verkettete Listen
                     }
                 }
             }
+
+
+
+Warteschlangen (Queues)
+-------------------------
+
+.. class:: incremental-list
+
+- Queues realisieren das Konzept einer Warteschlange bei der die Elemente, die zuerst hinzugefügt wurden, auch zuerst wieder entfernt werden (FiFo).
+- Eine Implementierungsstrategie für Queues ist die Verwendung einer verketteten Liste.
