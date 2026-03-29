@@ -7,8 +7,8 @@
     :suffix: .html.pdf
 
 .. |python-icon| image:: /LectureDoc2/ext/icons/python-logo-only.svg
-                    :height: 1em
+                    :height: 0.75em
                     :class: icon
 .. |java-icon| image:: /LectureDoc2/ext/icons/duke.svg
-                    :height: 1em
+                    :height: 0.75em
                     :class: icon
