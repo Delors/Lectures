@@ -6,6 +6,18 @@
     :id: lecture-prog-adv-java-projekte
     :first-slide: last-viewed
     :master-password: WirklichSchwierig!
+    :svg-defs:
+        <marker
+            id="phase-arrow"
+            viewBox="0 0 2 2"
+            refX="2"
+            refY="1"
+            markerUnits="strokeWidth"
+            markerWidth="4"
+            markerHeight="4"
+            orient="auto">
+            <path d="M 0 0 L 2 1 L 0 2 z" fill="context-stroke"/>
+        </marker>
 
 .. include:: ../docutils.defs
 
@@ -96,6 +108,7 @@ Etablierte Build-Tools
 .. [#] Wurde in der Anfangsphase häufig verwendet. Heute nicht mehr.
 
 
+
 Projektstruktur
 ------------------------------------------------
 
@@ -111,6 +124,164 @@ Konvention, die praktisch über alle Build-Tools und IDEs hinweg gilt\ [#]_:
 - gebaute Artefakte im Verzeichnis ``target``
 
 .. [#] Andere Sprachen verwenden häufig ähnliche Strukturen. (Selbstverständlich, wird ``java``  dann durch den Namen der entsprechenden Sprache ersetzt.)
+
+
+
+.. class:: new-section transition-move-to-top
+
+Grundlagen des Testens mit JUnit (Jupiter)
+-----------------------------------------------
+
+
+
+JUnit - Einführung
+------------------------------------------------
+
+.. class:: incremental-list
+
+- JUnit ist das Standard-Test-Framework für Java.
+- Für das Schreiben von einfachen Tests ist das Modul *JUnit Jupiter* zu verwenden.
+- Tests liegen (per Konvention) in ``src/test/java`` und werden *nicht* mit der Anwendung ausgeliefert.
+
+
+
+Aufbau einer Testklasse
+------------------------------------------------
+
+.. story::
+
+    .. code:: java
+        :number-lines:
+
+        import org.junit.jupiter.api.Test;
+        import static org.junit.jupiter.api.Assertions.*;
+
+        class CalculatorTest { // Konvention: <Klasse>Test
+
+            @Test void testAddition() {
+                Calculator r = new Calculator();
+                assertEquals(5, r.addiere(2, 3));
+            }
+
+            @Test void testDivisionDurchNull() {
+                Calculator r = new Calculator();
+                assertThrows(
+                    ArithmeticException.class,
+                    () -> r.dividiere(1, 0)
+                );
+        }   }
+
+    .. attention::
+        :class: incremental
+
+        Testklassen, die mit dem Namen ``Test`` enden, werden von Buildtools automatisch erkannt. Es handelt sich um eine fest etablierte und weit verbreitete Konvention.
+
+.. supplemental::
+
+    - Jede mit :java:`@Test` annotierte Methode ist ein Testfall.
+    - Testmethoden müssen :java:`void` zurückgeben und dürfen keine Parameter haben.
+    - Es wird für **jeden** Testfall ein **neues** Objekt der Testklasse erzeugt; Tests sind daher voneinander isoliert.
+
+
+
+Die wichtigsten Assertions
+------------------------------------------------
+
+Alle Methoden befinden sich in :java:`org.junit.jupiter.api.Assertions`:
+
+.. csv-table::
+    :class: highlight-on-hover incremental-table-rows
+    :header: "Methode", "Prüft"
+    :widths: 45 55
+
+    ":java:`assertEquals(expected, actual)`", ":java:`expected.equals(actual)`"
+    ":java:`assertNotEquals(a, b)`", ":java:`!a.equals(b)`"
+    ":java:`assertTrue(condition)`", ":java:`condition == true`"
+    ":java:`assertFalse(condition)`", ":java:`condition == false`"
+    ":java:`assertNull(object)`", ":java:`object == null`"
+    ":java:`assertNotNull(object)`", ":java:`object != null`"
+    ":java:`assertThrows(Exc.class, () -> …)`", "Lambda wirft erwartete Exception"
+    ":java:`assertArrayEquals(exp, act)`", "Arrays elementweise gleich"
+
+.. class:: incremental
+
+.. hint::
+
+    Jede Assertion akzeptiert als *letzten* Parameter eine optionale Fehlermeldung (:java:`String`), die bei einem Fehlschlag ausgegeben wird:
+
+    .. code:: java
+        :class: copy-to-clipboard
+
+        assertEquals(5, r.addiere(2, 3), "2+3 sollte 5 sein");
+
+
+
+Setup und Teardown
+------------------------------------------------
+
+
+.. code:: java
+    :number-lines:
+
+    import org.junit.jupiter.api.*;
+    import static org.junit.jupiter.api.Assertions.*;
+
+    class ListTest {
+
+        private List list;
+
+        @BeforeEach   // vor JEDEM einzelnen Test
+        void setUp() {          list = new List();                          }
+
+        @AfterEach    // nach JEDEM einzelnen Test
+        void tearDown() {       /* z.B. Ressourcen freigeben */             }
+
+        @Test
+        void testIsEmpty() {    assertTrue(list.isEmpty());                 }
+
+        @Test
+        void testAddElement() { list.add(42); assertEquals(1, list.size()); }
+    }
+
+.. supplemental::
+
+    :java:`@BeforeEach` und :java:`@AfterEach` werden vor bzw. nach *jedem* Testfall ausgeführt und eignen sich ideal, um einen definierten Ausgangszustand herzustellen.
+
+    Daneben gibt es :java:`@BeforeAll` und :java:`@AfterAll` (müssen :java:`static` sein), die nur *einmal* pro Testklasse aufgerufen werden.
+
+
+
+Typische Vorgehensweise beim Testen
+------------------------------------------------
+
+.. container:: accentuate
+
+    .. rubric:: Arrange – Act – Assert (AAA-Muster)
+
+    .. class:: incremental-list
+
+    1. **Arrange** – Testdaten und Objekte vorbereiten.
+    2. **Act** – Die zu testende Methode aufrufen.
+    3. **Assert** – Das Ergebnis mit dem erwarteten Wert vergleichen.
+
+.. code:: java
+    :class: incremental
+    :number-lines:
+
+    @Test
+    void testAbsoluterBetrag() {
+        /* Arrange:*/ int eingabe = -7;
+        /* Act:    */ int ergebnis = Math.abs(eingabe);
+        /* Assert: */ assertEquals(7, ergebnis);
+    }
+
+.. hint::
+    :class: incremental
+
+    **Ein** Test sollte genau **einen** Aspekt prüfen. Besser mehrere kleine Tests als ein großer.
+
+
+
 
 
 .. class:: new-section transition-move-to-top
@@ -192,6 +363,159 @@ Maven - Build Phasen
         :``site``: generiert eine Site-Dokumentation für dieses Projekt
 
             Phasen: ``pre-site``, ``site``, ``post-site``, ``site-deploy``
+
+
+
+
+
+Maven Lebenszyklen und Phasen - Übersicht
+------------------------------------------------
+
+.. raw:: html
+    :class: center-content
+
+    <div style="width: 60ch; height: 26ch;">
+    <svg    viewBox="0 0 62 26"
+            font-size="1.5"
+            version="1.1" xmlns="http://www.w3.org/2000/svg">
+
+        <!-- Lifecycle Titles -->
+        <g  font-weight="bold"
+            font-size="120%"
+            text-anchor="middle"
+            fill="currentColor">
+            <text x="10" y="2">clean</text>
+            <text x="31" y="2">default</text>
+            <text x="52" y="2">site</text>
+        </g>
+
+        <!-- Clean Lifecycle -->
+        <g class="incremental">
+            <rect x="2" y="3.5" width="16" height="2.2" rx="0.8"
+                  fill="#fdb99a" stroke="#c05a30" stroke-width="0.15"/>
+            <text x="10" y="5.0" text-anchor="middle"
+                  font-family="monospace" fill="currentColor">pre-clean</text>
+
+            <line x1="10" y1="5.7" x2="10" y2="7.0"
+                  stroke="#c05a30" stroke-width="0.2"
+                  marker-end="url(#phase-arrow)"/>
+
+            <rect x="2" y="7.0" width="16" height="2.2" rx="0.8"
+                  fill="#fdb99a" stroke="#c05a30" stroke-width="0.15"/>
+            <text x="10" y="8.5" text-anchor="middle"
+                  font-family="monospace" fill="currentColor">clean</text>
+
+            <line x1="10" y1="9.2" x2="10" y2="10.5"
+                  stroke="#c05a30" stroke-width="0.2"
+                  marker-end="url(#phase-arrow)"/>
+
+            <rect x="2" y="10.5" width="16" height="2.2" rx="0.8"
+                  fill="#fdb99a" stroke="#c05a30" stroke-width="0.15"/>
+            <text x="10" y="12.0" text-anchor="middle"
+                  font-family="monospace" fill="currentColor">post-clean</text>
+        </g>
+
+        <!-- Default Lifecycle -->
+        <g class="incremental">
+            <rect x="23" y="3.5" width="16" height="2.2" rx="0.8"
+                  fill="#a9c8f5" stroke="#1e67b0" stroke-width="0.15"/>
+            <text x="31" y="5.0" text-anchor="middle"
+                  font-family="monospace" fill="currentColor">validate</text>
+
+            <!-- omitted phases (generate-sources, process-sources, ...) -->
+            <line x1="31" y1="5.7" x2="31" y2="6.1"
+                  stroke="#1e67b0" stroke-width="0.15"/>
+            <text x="31" y="6.9" text-anchor="middle"
+                  fill="currentColor" opacity="0.45" font-size="110%">⋮</text>
+            <line x1="31" y1="7.2" x2="31" y2="7.7"
+                  stroke="#1e67b0" stroke-width="0.15"/>
+
+            <rect x="23" y="7.7" width="16" height="2.2" rx="0.8"
+                  fill="#a9c8f5" stroke="#1e67b0" stroke-width="0.15"/>
+            <text x="31" y="9.2" text-anchor="middle"
+                  font-family="monospace" fill="currentColor">compile</text>
+
+            <line x1="31" y1="9.9" x2="31" y2="11.2"
+                  stroke="#1e67b0" stroke-width="0.2"
+                  marker-end="url(#phase-arrow)"/>
+
+            <rect x="23" y="11.2" width="16" height="2.2" rx="0.8"
+                  fill="#a9c8f5" stroke="#1e67b0" stroke-width="0.15"/>
+            <text x="31" y="12.7" text-anchor="middle"
+                  font-family="monospace" fill="currentColor">test</text>
+
+            <line x1="31" y1="13.4" x2="31" y2="14.7"
+                  stroke="#1e67b0" stroke-width="0.2"
+                  marker-end="url(#phase-arrow)"/>
+
+            <rect x="23" y="14.7" width="16" height="2.2" rx="0.8"
+                  fill="#a9c8f5" stroke="#1e67b0" stroke-width="0.15"/>
+            <text x="31" y="16.2" text-anchor="middle"
+                  font-family="monospace" fill="currentColor">package</text>
+
+            <line x1="31" y1="16.9" x2="31" y2="18.2"
+                  stroke="#1e67b0" stroke-width="0.2"
+                  marker-end="url(#phase-arrow)"/>
+
+            <rect x="23" y="18.2" width="16" height="2.2" rx="0.8"
+                  fill="#a9c8f5" stroke="#1e67b0" stroke-width="0.15"/>
+            <text x="31" y="19.7" text-anchor="middle"
+                  font-family="monospace" font-size="90%"
+                  fill="currentColor">integration-test</text>
+
+            <!-- omitted phases (verify, install) -->
+            <line x1="31" y1="20.4" x2="31" y2="20.8"
+                  stroke="#1e67b0" stroke-width="0.15"/>
+            <text x="31" y="21.6" text-anchor="middle"
+                  fill="currentColor" opacity="0.45" font-size="110%">⋮</text>
+            <line x1="31" y1="21.9" x2="31" y2="22.4"
+                  stroke="#1e67b0" stroke-width="0.15"/>
+
+            <rect x="23" y="22.4" width="16" height="2.2" rx="0.8"
+                  fill="#a9c8f5" stroke="#1e67b0" stroke-width="0.15"/>
+            <text x="31" y="23.9" text-anchor="middle"
+                  font-family="monospace" fill="currentColor">deploy</text>
+        </g>
+
+        <!-- Site Lifecycle -->
+        <g class="incremental">
+            <rect x="44" y="3.5" width="16" height="2.2" rx="0.8"
+                  fill="#98dab4" stroke="#1a7a4a" stroke-width="0.15"/>
+            <text x="52" y="5.0" text-anchor="middle"
+                  font-family="monospace" fill="currentColor">pre-site</text>
+
+            <line x1="52" y1="5.7" x2="52" y2="7.0"
+                  stroke="#1a7a4a" stroke-width="0.2"
+                  marker-end="url(#phase-arrow)"/>
+
+            <rect x="44" y="7.0" width="16" height="2.2" rx="0.8"
+                  fill="#98dab4" stroke="#1a7a4a" stroke-width="0.15"/>
+            <text x="52" y="8.5" text-anchor="middle"
+                  font-family="monospace" fill="currentColor">site</text>
+
+            <line x1="52" y1="9.2" x2="52" y2="10.5"
+                  stroke="#1a7a4a" stroke-width="0.2"
+                  marker-end="url(#phase-arrow)"/>
+
+            <rect x="44" y="10.5" width="16" height="2.2" rx="0.8"
+                  fill="#98dab4" stroke="#1a7a4a" stroke-width="0.15"/>
+            <text x="52" y="12.0" text-anchor="middle"
+                  font-family="monospace" fill="currentColor">post-site</text>
+
+            <line x1="52" y1="12.7" x2="52" y2="14.0"
+                  stroke="#1a7a4a" stroke-width="0.2"
+                  marker-end="url(#phase-arrow)"/>
+
+            <rect x="44" y="14.0" width="16" height="2.2" rx="0.8"
+                  fill="#98dab4" stroke="#1a7a4a" stroke-width="0.15"/>
+            <text x="52" y="15.5" text-anchor="middle"
+                  font-family="monospace" fill="currentColor">site-deploy</text>
+        </g>
+    </svg>
+    </div>
+
+
+
 
 
 
@@ -344,7 +668,7 @@ Beispiel Build-Konfiguration für ein Java Projekt
 Projekt bauen und ausführen
 ------------------------------------------------
 
-.. rubric:: Projekt bauen
+.. rubric:: Projekt bauen (inkl. ``compile`` und ``test``)
 
 .. code:: console
     :class: copy-to-clipboard
@@ -397,7 +721,7 @@ Projekt bauen und ausführen
         - Binden Sie ein Maven-Plugin ein, dass automatisch die JavaDoc erstellt und in einem Report darstellt.
 
         .. solution::
-            :pwd: MAVENFORJAVA
+            :pwd: MAVENFORJAVA25
 
             .. include:: code/newton/pom.xml
                 :code: xml
