@@ -6,7 +6,7 @@ class Heap<T extends Comparable<T>> {
     private int size;
 
     @SuppressWarnings("unchecked")
-    public Heap(Class componentType, int capacity) {
+    public Heap(Class<T> componentType, int capacity) {
         heap = (T[]) Array.newInstance(componentType, capacity);
         size = 0;
     }
@@ -29,7 +29,7 @@ class Heap<T extends Comparable<T>> {
 
 void main() {
     Heap<String> heap = new Heap<>(String.class, 5);
-    heap.insertAll("Dies", "ist", "ein", "Test", ".");
+    heap.insertAll("dies", "ist", "ein", "wichtiger", "test");
     while (heap.nonEmpty()) {
         String s = heap.remove();
         IO.println(s);

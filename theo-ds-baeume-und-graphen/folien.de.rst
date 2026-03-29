@@ -128,7 +128,7 @@ Datenstrukturen: Bäume, Graphen und Heaps
 
 :Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
 :Kontakt: michael.eichberg@dhbw.de, Raum 149B
-:Version: 2.0.1
+:Version: 2.1
 
 .. container:: peripheral footer-left
 
@@ -148,6 +148,12 @@ Datenstrukturen: Bäume, Graphen und Heaps
     :Fehler melden:
         https://github.com/Delors/delors.github.io/issues
 
+    :Kontrollfragen:
+
+        .. source:: kontrollfragen.de.rst
+            :path: relative
+            :prefix: https://delors.github.io/
+            :suffix: .html
 
 
 .. class:: new-section transition-move-to-top
@@ -1956,7 +1962,7 @@ Heap
 - basierend auf einem fast *vollständigen* Binärbaum (alle Ebenen bis auf die letzte sind vollständig besetzt)
 - aus effizienzgründen in einem Array gespeichert
 
-  (Von einem Element :code:`i` aus kann auf das Elternelement bzw. die Kinder über die Index-Formel: :code:`parent = (i-1)/2` und :code:`children = 2i+1, 2i+2` zugegriffen werden.)
+  (Von einem Element :code:`i` aus kann auf das Elternelement bzw. die Kinder über die Index-Formel: :code:`parent = (i-1)/2` und :code:`children = 2i+1, 2i+2` zugegriffen werden, wenn der Wurzelknoten im Array an Position :code:`0`  (d. h. Index 0) gespeichert ist.)
 
 
 
@@ -2112,6 +2118,7 @@ Einfügen eines neuen Elements
     :class: line-numbers-padded no-margin copy-to-clipboard
 
     // heap - Array, dass die Heap-Eigenschaft erfüllt/den Heap repräsentiert
+    //        (Das Wurzelelement ist im Array an Position 0 gespeichert.)
     // n - Anzahl der Elemente im Heap
     // key - der neue Schlüssel
     procedure insert(<in/out> heap, <in/out> n, <in> key):
@@ -2804,10 +2811,14 @@ Heap - Entfernen des höchsten Elements (Wert: 2)
 
     .. exercise:: Basismethoden von Heaps
 
-        Implementieren Sie einen Heap. Nehmen Sie das folgende Template als Ausgangsbasis:
+        Implementieren Sie einen Min-Heap. Nehmen Sie das folgende Template als Ausgangsbasis:
+
+        .. class:: list-with-explanations
 
         #. Implementieren Sie zuerst die Methoden ``insert`` und ``isEmpty/nonEmpty``. Fügen Sie Ihrer Implementierung eine Möglichkeit hinzu den internen Zustand für Debugzwecke auszugeben.
-        #. Überlegen Sie sich noch einmal genau welche Schritte Sie in Ihrer Implementierung durchführen müssen, um ein Element zu entfernen (⇒ ``remove``). Danch implementieren Sie die Methode ``remove``.
+
+           (Gehen Sie davon aus, dass die Kapazität des Arrays nie überschritten wird.)
+        #. Überlegen Sie sich noch einmal genau welche Schritte Sie in Ihrer Implementierung durchführen müssen, um ein Element zu entfernen (⇒ ``remove``). Danach implementieren Sie die Methode ``remove``.
         #. Testen Sie Ihre Implementierung.
 
         .. include:: code/HeapTemplate.java
@@ -2822,3 +2833,46 @@ Heap - Entfernen des höchsten Elements (Wert: 2)
                 :code: java
                 :number-lines:
                 :class: copy-to-clipboard
+
+
+
+.. class:: exercises
+
+Übung - Heap zum Sortieren
+--------------------------------------
+
+.. scrollable::
+
+    .. exercise:: Sortierte Liste
+
+        Implementieren Sie eine generische, statische Methode ``sort`` auf Ihrer Heapklasse aus der vorhergehenden Übung. Die methode ``sort`` soll eine passende typisierte ``java.util.Collection`` übernehmen und diese als sortierte Liste zurückgeben.
+
+        *Achten Sie auf die korrekte Verwendung der generischen Typparameter.* Beachten Sie, dass Sie für den Aufruf des Heap-Konstruktors den :java:`elementType` angeben müssen. Weiterhin soll es möglich sein, dass der Typ der Elemente der übergebenen Collection ein Subtype des :java:`elementTypes` ist.
+
+        Nutzen Sie die folgende :java:`main` Methode, um Ihre Implementierung zu testen. Nehmen Sie keine Änderungen an dieser Methode vor.
+
+        .. code:: java
+            :number-lines:
+            :class: copy-to-clipboard
+
+            public static void main(String[] args) {
+                var sorted = Heap.sort(Integer.class, List.of(3, 5, 6, 2, 4, 5, 1, 2, 4));
+                IO.println(sorted);
+
+                List<java.sql.Date> dates = List.of(
+                    new java.sql.Date(24234234234234l),
+                    new java.sql.Date(10948093483l)
+                );
+                var sortedDates = Heap.<java.util.Date>sort(java.util.Date.class, dates);
+                IO.println(sortedDates);
+            }
+
+        .. solution::
+            :pwd: HeapWithSort
+
+            .. include:: code/HeapWithSort.java
+                :code: java
+                :number-lines:
+                :class: copy-to-clipboard
+                :start-after: // sort: Start
+                :end-before: // sort: End

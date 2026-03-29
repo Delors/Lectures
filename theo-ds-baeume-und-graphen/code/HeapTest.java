@@ -1,4 +1,3 @@
-import org.junit.jupiter.api.*;
 import static org.junit.jupiter.api.Assertions.*;
 
 import java.util.ArrayList;
@@ -6,6 +5,7 @@ import java.util.Collections;
 import java.util.List;
 import java.util.NoSuchElementException;
 import java.util.Random;
+import org.junit.jupiter.api.*;
 
 class HeapTest {
 
@@ -184,7 +184,7 @@ class HeapTest {
         @Test
         void drainingHeapFullyProducesSortedOutput() {
             Heap<Integer> heap = new Heap<>(Integer.class, 20);
-            int[] input = {15, 3, 9, 1, 12, 7, 20, 5, 11, 2};
+            int[] input = { 15, 3, 9, 1, 12, 7, 20, 5, 11, 2 };
             for (int v : input) heap.insert(v);
 
             List<Integer> result = new ArrayList<>();
@@ -258,14 +258,14 @@ class HeapTest {
 
             heap.insert(10);
             heap.insert(5);
-            assertEquals(5, heap.remove());  // min is 5
+            assertEquals(5, heap.remove()); // min is 5
 
             heap.insert(3);
             heap.insert(7);
-            assertEquals(3, heap.remove());  // min is 3
+            assertEquals(3, heap.remove()); // min is 3
 
             heap.insert(1);
-            assertEquals(1, heap.remove());  // min is 1, over 7 and 10
+            assertEquals(1, heap.remove()); // min is 1, over 7 and 10
 
             assertEquals(7, heap.remove());
             assertEquals(10, heap.remove());
@@ -372,7 +372,7 @@ class HeapTest {
         @Test
         void heapWithFifteenElements_fullBinaryTree() {
             Heap<Integer> heap = new Heap<>(Integer.class, 15);
-            int[] shuffled = {11, 3, 14, 7, 1, 9, 15, 5, 13, 2, 10, 6, 12, 4, 8};
+            int[] shuffled = { 11, 3, 14, 7, 1, 9, 15, 5, 13, 2, 10, 6, 12, 4, 8 };
             for (int v : shuffled) heap.insert(v);
 
             List<Integer> result = drainToList(heap);
@@ -511,9 +511,13 @@ class HeapTest {
 
             List<Integer> result = drainToList(heap);
             for (int i = 1; i < result.size(); i++) {
-                assertTrue(result.get(i - 1) <= result.get(i),
-                        "Expected non-decreasing order but got " +
-                                result.get(i - 1) + " before " + result.get(i));
+                assertTrue(
+                    result.get(i - 1) <= result.get(i),
+                    "Expected non-decreasing order but got " +
+                        result.get(i - 1) +
+                        " before " +
+                        result.get(i)
+                );
             }
             assertEquals(10, result.size());
             assertEquals(-10, result.get(0));
@@ -552,8 +556,16 @@ class HeapTest {
                 // Remove 1 element — should be the minimum
                 int removed = heap.remove();
                 int expectedMin = contents.remove(0);
-                assertEquals(expectedMin, removed,
-                        "Round " + round + ": expected min " + expectedMin + " but got " + removed);
+                assertEquals(
+                    expectedMin,
+                    removed,
+                    "Round " +
+                        round +
+                        ": expected min " +
+                        expectedMin +
+                        " but got " +
+                        removed
+                );
             }
 
             // Drain remaining
@@ -574,8 +586,13 @@ class HeapTest {
             int count = 0;
             while (heap.nonEmpty()) {
                 int current = heap.remove();
-                assertTrue(current >= prev,
-                        "Non-decreasing order violated: " + prev + " was followed by " + current);
+                assertTrue(
+                    current >= prev,
+                    "Non-decreasing order violated: " +
+                        prev +
+                        " was followed by " +
+                        current
+                );
                 prev = current;
                 count++;
             }

@@ -9,7 +9,7 @@ class Heap<T extends Comparable<T>> {
     private int size;
 
     @SuppressWarnings("unchecked")
-    public Heap(Class componentType, int capacity) {
+    public Heap(Class<T> componentType, int capacity) {
         heap = (T[]) Array.newInstance(componentType, capacity);
         size = 0;
     }
@@ -40,7 +40,7 @@ class Heap<T extends Comparable<T>> {
     public T remove() {
         if (size == 0) throw new NoSuchElementException();
 
-        T next = heap[0];
+        final T next = heap[0];
         T v = heap[--size];
         heap[size] = null; // avoid memory leak
         heap[0] = v;
@@ -59,7 +59,8 @@ class Heap<T extends Comparable<T>> {
 
     public static void main(String[] args) {
         Heap<String> heap = new Heap<>(String.class, 5);
-        heap.insertAll("a", "d", "f", "b", "c");
+        //heap.insertAll("a", "d", "f", "b", "c");
+        heap.insertAll("dies", "ist", "ein", "wichtiger", "test");
 
         while (heap.nonEmpty()) {
             String s = heap.remove();
