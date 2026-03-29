@@ -1,25 +1,50 @@
-<?xml version="1.0" encoding="utf-8" standalone="no"?>
-<!-- Generator: DataGraph - https://www.visualdatatools.com/DataGraph/index.html  --><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg width="556" height="334" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 834.5 501">
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<!-- Generator: DataGraph - https://www.visualdatatools.com/DataGraph/index.html  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+    "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg
+    width="556"
+    height="334"
+    version="1.1"
+    xmlns="http://www.w3.org/2000/svg"
+    xmlns:xlink="http://www.w3.org/1999/xlink"
+    viewBox="0 0 834.5 501"
+>
+  <style>
+    @import url('/LectureDoc2/ext/fonts/ld-fonts.css');
+  </style>
 <g>
   <!-- Background -->
   <g id="Background">
     <defs>
       <clipPath id="clipPath">
-        <rect x="107.5" y="27.5" width="703.6" height="412"/>
+        <rect x="107.5" y="27.5" width="703.6" height="412" />
       </clipPath>
     </defs>
     <!-- Grid -->
     <g id="Grid" clip-path="url(#clipPath)">
       <g>
-        <path d="M 201.313 439.5 L 201.313 27.5 M 295.127 439.5 L 295.127 27.5 M 388.94 439.5 L 388.94 27.5 
-                 M 482.753 439.5 L 482.753 27.5 M 576.567 439.5 L 576.567 27.5 M 670.38 439.5 L 670.38 27.5 
+        <path
+                        d="M 201.313 439.5 L 201.313 27.5 M 295.127 439.5 L 295.127 27.5 M 388.94 439.5 L 388.94 27.5
+                 M 482.753 439.5 L 482.753 27.5 M 576.567 439.5 L 576.567 27.5 M 670.38 439.5 L 670.38 27.5
                  M 764.193 439.5 L 764.193 27.5 "
-          stroke="black" stroke-dasharray="0.00997506,3.99002" stroke-linecap="round" fill="none" stroke-width="0.5"/>
-        <path d="M 154.407 439.5 L 154.407 27.5 M 248.22 439.5 L 248.22 27.5 M 342.033 439.5 L 342.033 27.5 
-                 M 435.847 439.5 L 435.847 27.5 M 529.66 439.5 L 529.66 27.5 M 623.473 439.5 L 623.473 27.5 
+                        stroke="black"
+                        stroke-dasharray="0.00997506,3.99002"
+                        stroke-linecap="round"
+                        fill="none"
+                        stroke-width="0.5"
+                    />
+        <path
+                        d="M 154.407 439.5 L 154.407 27.5 M 248.22 439.5 L 248.22 27.5 M 342.033 439.5 L 342.033 27.5
+                 M 435.847 439.5 L 435.847 27.5 M 529.66 439.5 L 529.66 27.5 M 623.473 439.5 L 623.473 27.5
                  M 717.287 439.5 L 717.287 27.5 "
-          stroke="black" stroke-dasharray="0.00976072,1.95214" stroke-dashoffset="0.00488036" stroke-linecap="round" fill="none" stroke-width="0.5"/>
+                        stroke="black"
+                        stroke-dasharray="0.00976072,1.95214"
+                        stroke-dashoffset="0.00488036"
+                        stroke-linecap="round"
+                        fill="none"
+                        stroke-width="0.5"
+                    />
       </g>
     </g>
   </g>
@@ -27,43 +52,66 @@
   <g id="Commands">
     <!-- 2x (Approximation) -->
     <g id="2x_Approximation">
-      <path d="M 107.5 439.5 L 811.1 27.5 "
-        stroke="rgb(55,126,184)" fill="none" stroke-width="3"/>
+      <path
+                    d="M 107.5 439.5 L 811.1 27.5 "
+                    stroke="rgb(55,126,184)"
+                    fill="none"
+                    stroke-width="3"
+                />
     </g>
     <!-- Legend -->
     <g id="Legend">
       <defs>
         <clipPath id="clipPath2">
-          <rect x="114.6" y="33" width="544" height="70.2"/>
+          <rect x="114.6" y="33" width="544" height="70.2" />
         </clipPath>
       </defs>
       <g clip-path="url(#clipPath2)">
-        <rect x="114.6" y="33" width="544" height="70.2" fill="white" stroke="none"/>
+        <rect x="114.6" y="33" width="544" height="70.2" fill="white" stroke="none" />
       </g>
-      <rect x="114.6" y="33" width="544" height="70.2" stroke="black" fill="none" stroke-width="0.5"/>
+      <rect
+                    x="114.6"
+                    y="33"
+                    width="544"
+                    height="70.2"
+                    stroke="black"
+                    fill="none"
+                    stroke-width="0.5"
+                />
       <defs>
         <clipPath id="clipPath3">
-          <rect x="114.6" y="33" width="544" height="70.2"/>
+          <rect x="114.6" y="33" width="544" height="70.2" />
         </clipPath>
       </defs>
       <g clip-path="url(#clipPath3)">
         <defs>
           <clipPath id="clipPath4">
-            <rect x="121.6" y="58.92" width="22" height="18.36"/>
+            <rect x="121.6" y="58.92" width="22" height="18.36" />
           </clipPath>
         </defs>
         <g clip-path="url(#clipPath4)">
-          <path d="M 121.6 68.5 L 143.6 68.5 "
-            stroke="rgb(55,126,184)" fill="none" stroke-width="3"/>
+          <path
+                            d="M 121.6 68.5 L 143.6 68.5 "
+                            stroke="rgb(55,126,184)"
+                            fill="none"
+                            stroke-width="3"
+                        />
         </g>
         <g font-family="Noto Sans Display" font-size="18" fill="black">
           <text x="150.6" y="74.5556">2x (Approximation)</text>
         </g>
         <g>
-          <path d="M 128 94 L 137 94 L 137 85 L 128 85 L 128 94 z "
-            fill="rgb(166,206,227)" stroke="none"/>
-          <path d="M 128 94 L 137 94 L 137 85 L 128 85 L 128 94 z "
-            stroke="black" fill="none" stroke-width="2"/>
+          <path
+                            d="M 128 94 L 137 94 L 137 85 L 128 85 L 128 94 z "
+                            fill="rgb(166,206,227)"
+                            stroke="none"
+                        />
+          <path
+                            d="M 128 94 L 137 94 L 137 85 L 128 85 L 128 94 z "
+                            stroke="black"
+                            fill="none"
+                            stroke-width="2"
+                        />
         </g>
         <g font-family="Noto Sans Display" font-size="18" fill="black">
           <g font-style="italic">
@@ -80,34 +128,83 @@
     <!-- {\it "einige Werte des aufsteigend sortierten Arrays a[0]...a[150]"} -->
     <g id="it_einige_Werte_des_aufsteigend_sortierten_Arrays_a_0_a_150">
       <g>
-        <path d="M 149.907 416.533 L 158.907 416.533 L 158.907 407.533 L 149.907 407.533 L 149.907 416.533 z "
-          fill="rgb(166,206,227)" stroke="none"/>
-        <path d="M 149.907 416.533 L 158.907 416.533 L 158.907 407.533 L 149.907 407.533 L 149.907 416.533 z "
-          stroke="black" fill="none" stroke-width="2"/>
-        <path d="M 243.72 376.02 L 252.72 376.02 L 252.72 367.02 L 243.72 367.02 L 243.72 376.02 z "
-          fill="rgb(166,206,227)" stroke="none"/>
-        <path d="M 243.72 376.02 L 252.72 376.02 L 252.72 367.02 L 243.72 367.02 L 243.72 376.02 z "
-          stroke="black" fill="none" stroke-width="2"/>
-        <path d="M 337.533 324.245 L 346.533 324.245 L 346.533 315.245 L 337.533 315.245 L 337.533 324.245 z "
-          fill="rgb(166,206,227)" stroke="none"/>
-        <path d="M 337.533 324.245 L 346.533 324.245 L 346.533 315.245 L 337.533 315.245 L 337.533 324.245 z "
-          stroke="black" fill="none" stroke-width="2"/>
-        <path d="M 431.347 236.215 L 440.347 236.215 L 440.347 227.215 L 431.347 227.215 L 431.347 236.215 z "
-          fill="rgb(166,206,227)" stroke="none"/>
-        <path d="M 431.347 236.215 L 440.347 236.215 L 440.347 227.215 L 431.347 227.215 L 431.347 236.215 z "
-          stroke="black" fill="none" stroke-width="2"/>
-        <path d="M 525.16 210.671 L 534.16 210.671 L 534.16 201.671 L 525.16 201.671 L 525.16 210.671 z "
-          fill="rgb(166,206,227)" stroke="none"/>
-        <path d="M 525.16 210.671 L 534.16 210.671 L 534.16 201.671 L 525.16 201.671 L 525.16 210.671 z "
-          stroke="black" fill="none" stroke-width="2"/>
-        <path d="M 618.973 141.867 L 627.973 141.867 L 627.973 132.867 L 618.973 132.867 L 618.973 141.867 z "
-          fill="rgb(166,206,227)" stroke="none"/>
-        <path d="M 618.973 141.867 L 627.973 141.867 L 627.973 132.867 L 618.973 132.867 L 618.973 141.867 z "
-          stroke="black" fill="none" stroke-width="2"/>
-        <path d="M 712.787 99.0187 L 721.787 99.0187 L 721.787 90.0187 L 712.787 90.0187 L 712.787 99.0187 z "
-          fill="rgb(166,206,227)" stroke="none"/>
-        <path d="M 712.787 99.0187 L 721.787 99.0187 L 721.787 90.0187 L 712.787 90.0187 L 712.787 99.0187 z "
-          stroke="black" fill="none" stroke-width="2"/>
+        <path
+                        d="M 149.907 416.533 L 158.907 416.533 L 158.907 407.533 L 149.907 407.533 L 149.907 416.533 z "
+                        fill="rgb(166,206,227)"
+                        stroke="none"
+                    />
+        <path
+                        d="M 149.907 416.533 L 158.907 416.533 L 158.907 407.533 L 149.907 407.533 L 149.907 416.533 z "
+                        stroke="black"
+                        fill="none"
+                        stroke-width="2"
+                    />
+        <path
+                        d="M 243.72 376.02 L 252.72 376.02 L 252.72 367.02 L 243.72 367.02 L 243.72 376.02 z "
+                        fill="rgb(166,206,227)"
+                        stroke="none"
+                    />
+        <path
+                        d="M 243.72 376.02 L 252.72 376.02 L 252.72 367.02 L 243.72 367.02 L 243.72 376.02 z "
+                        stroke="black"
+                        fill="none"
+                        stroke-width="2"
+                    />
+        <path
+                        d="M 337.533 324.245 L 346.533 324.245 L 346.533 315.245 L 337.533 315.245 L 337.533 324.245 z "
+                        fill="rgb(166,206,227)"
+                        stroke="none"
+                    />
+        <path
+                        d="M 337.533 324.245 L 346.533 324.245 L 346.533 315.245 L 337.533 315.245 L 337.533 324.245 z "
+                        stroke="black"
+                        fill="none"
+                        stroke-width="2"
+                    />
+        <path
+                        d="M 431.347 236.215 L 440.347 236.215 L 440.347 227.215 L 431.347 227.215 L 431.347 236.215 z "
+                        fill="rgb(166,206,227)"
+                        stroke="none"
+                    />
+        <path
+                        d="M 431.347 236.215 L 440.347 236.215 L 440.347 227.215 L 431.347 227.215 L 431.347 236.215 z "
+                        stroke="black"
+                        fill="none"
+                        stroke-width="2"
+                    />
+        <path
+                        d="M 525.16 210.671 L 534.16 210.671 L 534.16 201.671 L 525.16 201.671 L 525.16 210.671 z "
+                        fill="rgb(166,206,227)"
+                        stroke="none"
+                    />
+        <path
+                        d="M 525.16 210.671 L 534.16 210.671 L 534.16 201.671 L 525.16 201.671 L 525.16 210.671 z "
+                        stroke="black"
+                        fill="none"
+                        stroke-width="2"
+                    />
+        <path
+                        d="M 618.973 141.867 L 627.973 141.867 L 627.973 132.867 L 618.973 132.867 L 618.973 141.867 z "
+                        fill="rgb(166,206,227)"
+                        stroke="none"
+                    />
+        <path
+                        d="M 618.973 141.867 L 627.973 141.867 L 627.973 132.867 L 618.973 132.867 L 618.973 141.867 z "
+                        stroke="black"
+                        fill="none"
+                        stroke-width="2"
+                    />
+        <path
+                        d="M 712.787 99.0187 L 721.787 99.0187 L 721.787 90.0187 L 712.787 90.0187 L 712.787 99.0187 z "
+                        fill="rgb(166,206,227)"
+                        stroke="none"
+                    />
+        <path
+                        d="M 712.787 99.0187 L 721.787 99.0187 L 721.787 90.0187 L 712.787 90.0187 L 712.787 99.0187 z "
+                        stroke="black"
+                        fill="none"
+                        stroke-width="2"
+                    />
       </g>
       <g>
         <g font-family="Noto Sans Display" font-size="18" fill="black">
@@ -138,7 +235,12 @@
   <g id="Foreground">
     <!-- Y Axis -->
     <g id="Y_Axis">
-      <g transform="translate(20.7781,233.5) rotate(-90) translate(-20.7781,-233.5)" font-family="Noto Sans Display" font-size="18" fill="black">
+      <g
+                    transform="translate(20.7781,233.5) rotate(-90) translate(-20.7781,-233.5)"
+                    font-family="Noto Sans Display"
+                    font-size="18"
+                    fill="black"
+                >
         <text x="7.7835" y="233.5">f(x)</text>
       </g>
       <!-- Y Labels -->
@@ -165,18 +267,22 @@
           <text x="65.8678" y="33.9556">300</text>
         </g>
       </g>
-      <path d="M 99.5 439.5 L 107.5 439.5 M 103.5 425.767 L 107.5 425.767 M 103.5 412.033 L 107.5 412.033 
-               M 103.5 398.3 L 107.5 398.3 M 103.5 384.567 L 107.5 384.567 M 99.5 370.833 L 107.5 370.833 
-               M 103.5 357.1 L 107.5 357.1 M 103.5 343.367 L 107.5 343.367 M 103.5 329.633 L 107.5 329.633 
-               M 103.5 315.9 L 107.5 315.9 M 99.5 302.167 L 107.5 302.167 M 103.5 288.433 L 107.5 288.433 
-               M 103.5 274.7 L 107.5 274.7 M 103.5 260.967 L 107.5 260.967 M 103.5 247.233 L 107.5 247.233 
-               M 99.5 233.5 L 107.5 233.5 M 103.5 219.767 L 107.5 219.767 M 103.5 206.033 L 107.5 206.033 
-               M 103.5 192.3 L 107.5 192.3 M 103.5 178.567 L 107.5 178.567 M 99.5 164.833 L 107.5 164.833 
-               M 103.5 151.1 L 107.5 151.1 M 103.5 137.367 L 107.5 137.367 M 103.5 123.633 L 107.5 123.633 
-               M 103.5 109.9 L 107.5 109.9 M 99.5 96.1667 L 107.5 96.1667 M 103.5 82.4333 L 107.5 82.4333 
-               M 103.5 68.7 L 107.5 68.7 M 103.5 54.9667 L 107.5 54.9667 M 103.5 41.2333 L 107.5 41.2333 
+      <path
+                    d="M 99.5 439.5 L 107.5 439.5 M 103.5 425.767 L 107.5 425.767 M 103.5 412.033 L 107.5 412.033
+               M 103.5 398.3 L 107.5 398.3 M 103.5 384.567 L 107.5 384.567 M 99.5 370.833 L 107.5 370.833
+               M 103.5 357.1 L 107.5 357.1 M 103.5 343.367 L 107.5 343.367 M 103.5 329.633 L 107.5 329.633
+               M 103.5 315.9 L 107.5 315.9 M 99.5 302.167 L 107.5 302.167 M 103.5 288.433 L 107.5 288.433
+               M 103.5 274.7 L 107.5 274.7 M 103.5 260.967 L 107.5 260.967 M 103.5 247.233 L 107.5 247.233
+               M 99.5 233.5 L 107.5 233.5 M 103.5 219.767 L 107.5 219.767 M 103.5 206.033 L 107.5 206.033
+               M 103.5 192.3 L 107.5 192.3 M 103.5 178.567 L 107.5 178.567 M 99.5 164.833 L 107.5 164.833
+               M 103.5 151.1 L 107.5 151.1 M 103.5 137.367 L 107.5 137.367 M 103.5 123.633 L 107.5 123.633
+               M 103.5 109.9 L 107.5 109.9 M 99.5 96.1667 L 107.5 96.1667 M 103.5 82.4333 L 107.5 82.4333
+               M 103.5 68.7 L 107.5 68.7 M 103.5 54.9667 L 107.5 54.9667 M 103.5 41.2333 L 107.5 41.2333
                M 99.5 27.5 L 107.5 27.5 "
-        stroke="black" fill="none" stroke-width="0.5"/>
+                    stroke="black"
+                    fill="none"
+                    stroke-width="0.5"
+                />
     </g>
     <!-- X Axis -->
     <g id="X_Axis">
@@ -209,21 +315,34 @@
           <text x="749.177" y="464.284">140</text>
         </g>
       </g>
-      <path d="M 107.5 447.5 L 107.5 439.5 M 201.313 447.5 L 201.313 439.5 M 295.127 447.5 L 295.127 439.5 
-               M 388.94 447.5 L 388.94 439.5 M 482.753 447.5 L 482.753 439.5 M 576.567 447.5 L 576.567 439.5 
-               M 670.38 447.5 L 670.38 439.5 M 764.193 447.5 L 764.193 439.5 M 154.407 443.5 L 154.407 439.5 
-               M 248.22 443.5 L 248.22 439.5 M 342.033 443.5 L 342.033 439.5 M 435.847 443.5 L 435.847 439.5 
-               M 529.66 443.5 L 529.66 439.5 M 623.473 443.5 L 623.473 439.5 M 717.287 443.5 L 717.287 439.5 
+      <path
+                    d="M 107.5 447.5 L 107.5 439.5 M 201.313 447.5 L 201.313 439.5 M 295.127 447.5 L 295.127 439.5
+               M 388.94 447.5 L 388.94 439.5 M 482.753 447.5 L 482.753 439.5 M 576.567 447.5 L 576.567 439.5
+               M 670.38 447.5 L 670.38 439.5 M 764.193 447.5 L 764.193 439.5 M 154.407 443.5 L 154.407 439.5
+               M 248.22 443.5 L 248.22 439.5 M 342.033 443.5 L 342.033 439.5 M 435.847 443.5 L 435.847 439.5
+               M 529.66 443.5 L 529.66 439.5 M 623.473 443.5 L 623.473 439.5 M 717.287 443.5 L 717.287 439.5
                M 811.1 443.5 L 811.1 439.5 "
-        stroke="black" fill="none" stroke-width="0.5"/>
+                    stroke="black"
+                    fill="none"
+                    stroke-width="0.5"
+                />
     </g>
     <g font-family="Noto Sans Display" font-size="18" fill="black">
       <g font-weight="bold">
-        <text x="326.304" y="20.7781" font-family="Helvetica-Bold">Approximation von Funktionen</text>
+        <text
+                        x="326.304"
+                        y="20.7781"
+                        font-family="Helvetica-Bold"
+                    >Approximation von Funktionen</text>
       </g>
     </g>
-    <path d="M 811.1 439.5 L 811.1 27.5 L 107.5 27.5 L 107.5 439.5 L 811.1 439.5 z "
-      stroke="black" stroke-linecap="square" fill="none" stroke-width="0.5"/>
+    <path
+                d="M 811.1 439.5 L 811.1 27.5 L 107.5 27.5 L 107.5 439.5 L 811.1 439.5 z "
+                stroke="black"
+                stroke-linecap="square"
+                fill="none"
+                stroke-width="0.5"
+            />
   </g>
 </g>
 </svg>
