@@ -17,7 +17,7 @@ Java - Funktionale Programmierung
 
 :Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
 :Kontakt: michael.eichberg@dhbw.de, Raum 149B
-:Version: 1.0.3 [Themed]
+:Version: 2.0 [Themed]
 
 .. class:: block-footer
 
@@ -192,14 +192,16 @@ Lambdas
         .. attention::
 
 
-            Bis Java 7 ist :java:`java.lang.Object` der Basistyp aller Referenztypen.
-            Der Typ eines Lambdas ist jedoch der Typ eines funktionalen Interfaces, das nur eine Methode hat und dieser Typ muss explizit angegeben werden.
+            :java:`java.lang.Object` ist zwar der Basistyp aller Referenztypen,
+            der Typ eines Lambdas ist jedoch der Typ eines funktionalen Interfaces und dieser Typ muss explizit angegeben werden. Andernfalls wäre der Compiler nicht in der Lage  den Typ aus dem Kontext zu ermitteln.
+
+            Funktionale Interfaces deklarieren genau eine abstrakte Methode. Für viele Standardfälle sind Interfaces in :java:`java.util.function` vordefiniert.
 
         .. deck::
 
             .. card::
 
-                **Instanzen von inneren Klassen können immer Variablen vom Typ** :java:`java.lang.Object` **zugewiesen werden:**
+                **Instanzen von anonymen inneren Klassen können immer Variablen vom Typ** :java:`java.lang.Object` **zugewiesen werden:**
 
                 .. code:: java
                     :number-lines:
@@ -237,11 +239,12 @@ Lambdas
 
     .. card::
 
-        .. rubric:: Funktionale Interfaces
+        .. rubric:: Selbstdefinierte funktionale Interfaces
 
         :Functional Interface / SAM-Interface (Single Abstract Method Interface):
-            Ein Functional Interface ist ein Interface das genau eine Methode enthält (die natürlich abstrakt ist) optional kann die Annotation :java:`@FunctionalInterface` hinzugefügt werden.
+            Ein *Functional Interface* ist ein Interface das genau eine abstrakte Methode enthält.
 
+            Um die intendierte Verwendung explizit zu machen, kann optional  die Annotation :java:`@FunctionalInterface` hinzugefügt werden. In diesem Fall wird durch den Compiler auch die Einhaltung der Anforderungen an funktionale Interfaces überprüft.
 
         .. example::
             :class: incremental
@@ -457,7 +460,7 @@ Erweiterungen der Collection API
 
 .. exercise:: Erste Implementierung von Funktionen höherer Ordnung
 
-    Schreiben Sie eine Klasse :java:`Tuple2<T>`; d. h. eine Variante von :java:`Pair` bei der beide Werte vom gleichen Typ :java:`T` sein müssen. Die Klasse soll Methoden haben, um die beiden Werte zu setzen und zu lesen und weiterhin um folgende Methoden ergänzt werden:
+    Schreiben Sie eine Klasse :java:`Tuple2<T>`; d. h. eine Variante von :java:`Pair` bei der beide Werte vom gleichen Typ :java:`T` sein müssen. Die Klasse soll Methoden haben, um die beiden Werte zu setzen und zu lesen. Weiterhin soll die Klasse um folgende Methoden ergänzt werden:
 
     - :java:`void forEach(Consumer<...> action)`: Führt die Aktion für jedes Element in der :java:`Queue` aus.
     - :java:`void replaceAll(UnaryOperator<...> operator)`: Ersetzt alle Elemente in der :java:`Queue` durch das Ergebnis der Anwendung des Operators auf das Element.
@@ -504,6 +507,9 @@ Erweiterungen der Collection API
             :number-lines:
 
 
+
+.. class:: repetition
+
 Warteschlangen
 ------------------------------------------------
 
@@ -517,12 +523,14 @@ Zentrale Methoden einer Warteschlange :java:`Queue<T>` sind:
 
 
 
+.. class:: repetition
+
 Verkettete Listen
 ------------------------------------------------
 
-.. remark::
+.. remember::
 
-    Bisher haben wir Arrays verwendet, um Listen zu speichern. Arrays haben jedoch den Nachteil, dass sie eine feste Größe haben und nicht effizient vergrößert werden können.
+    Die Verwendung eines Arrays, um Listen zu speichern, hat den Nachteil, dass sie eine feste Größe haben und nicht effizient vergrößert werden können.
 
 Eine verkettete Liste ist eine alternative Implementierungstechnik, die flexibler ist als ein Array und dynamisch wachsen kann. Jedes Element in einer verketteten Liste enthält eine Referenz auf das nächste Element in der Liste.
 
@@ -530,6 +538,16 @@ Eine verkettete Liste ist eine alternative Implementierungstechnik, die flexible
     :alt: Verkettete Liste
     :align: center
     :class: light-image
+
+.. supplemental::
+
+    .. rubric:: Wann sollte welche Implementierung für eine Liste verwendet werden?
+
+    Sind die minimale und die maximale Größe einer Liste sehr gut abschätzbar, und liegen diese beiden Werte *hinreichend* nah beieinander, dann ist die Verwendung eines Arrays allein aus speichertechnischer Sicht effizienter als eine verkettete Liste, da der Overhead pro Element geringer ist. Weiterhin ist der Zugriff auf die Elemente effizienter.
+
+    Sollten jedoch auch Operationen wie Einfügen oder Löschen *häufig* vorkommen - insbesondere wenn diese nicht am Ende der Liste vorgenommen werden -  ist eine detaillierte Analyse notwendig. Im Zweifelsfall ist meist eine Arraylist die bessere Wahl, da die Cache-Effizienz ggf. besser ist und auch der wahlfreie Zugriff auf die Elemente effizienter ist.
+
+
 
 
 .. class:: exercises
@@ -606,17 +624,6 @@ Zusammenfassung
 - Es sind sowohl Referenzen auf statische Methoden als auch Instanzmethoden und sogar Konstruktoren möglich.
 - Currying wird nicht direkt unterstützt, aber durch die Verwendung von Funktionskomposition und partieller Anwendung kann es simuliert werden.
 
-.. compound::
-    :class: incremental
-
-    .. rubric:: Warteschlangen
-
-    .. class:: incremental-list
-
-    - Queues realisieren das Konzept einer Warteschlange bei der die Elemente, die zuerst hinzugefügt wurden, auch zuerst wieder entfernt werden (FiFo).
-    - Eine Implementierungsstrategie für Queues ist die Verwendung einer verketteten Liste.
-
-
 
 
 .. class:: new-section transition-fade
@@ -624,6 +631,48 @@ Zusammenfassung
 Java Streams
 ------------------------------------------------
 
+
+Aktuelle Herausforderungen
+------------------------------------------------
+
+.. deck::
+
+    .. card::
+
+        **Verarbeitung von**:
+
+        .. class:: list-with-sublists incremental-list
+
+        - großen Datenmengen
+
+          .. class:: incremental-list
+
+          - die nicht (ohne weiteres) in den Speicher passen oder
+          - bei denen es keinen Sinn macht diese vorab vollständig in den Speicher zu laden, da immer nur ein kleiner Abschnitt analysiert werden muss
+        - Daten, die kontinuierlich verarbeitet werden müssen
+
+    .. card::
+
+        .. example::
+            :class: incremental
+
+            - HTTP Request/Response Handling (Audio/Video Streaming)
+            - Verarbeitung von AI Streaming Responses
+            - Ver-/Entschlüsselung von großen Datenmengen
+            - Verarbeitung große Logdateien
+            - Kontinuierliche Verarbeitung von Daten
+            - Verarbeitung von Ereignissen (Event)
+            - Echtzeitdatenverarbeitung von kontinuierlichen Daten von (IoT) Sensoren, Finanzdaten/-transaktionen
+            - Aufbereitung großer Wörterbücher (z.B. für Passwortwiederherstellung)
+
+    .. card::
+
+        - Parallele Verarbeitung und effiziente Nutzung von modernen CPU-Architekturen
+
+        .. supplemental::
+
+            Insbesondere die korrekte Nutzung ist häufig schwierig und hier ist die Verwendung von transparent parallelisierten Streams sehr hilfreich.
+            (Z. B. mit Java Parallel Streams oder :scala:`.par` in Scala ist eine transparente Parallelisierung möglich.)
 
 
 Streams - Einführung
