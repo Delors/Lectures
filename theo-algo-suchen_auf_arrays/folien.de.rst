@@ -16,7 +16,7 @@ Suchen auf Arrays
 
 :Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
 :Kontakt: michael.eichberg@dhbw.de, Raum 149B
-:Version: 1.1.4
+:Version: 1.1.5 [Themed]
 
 .. container:: peripheral
 
@@ -63,7 +63,7 @@ Welche Skalierung haben gesuchte Daten sind im Array?
 
 .. supplemental::
 
-    - Ein Beispiel für eine *nominal* skalierte Datenmenge wäre die Menge der Farben. Es gibt keine natürliche Ordnung der Farben, und es gibt auch keinen natürlichen Zahlenbegriff, der die Farben beschreibt. Ein weiteres Beispiel ist eine Liste von Wohnorten.4
+    - Ein Beispiel für eine *nominal* skalierte Datenmenge wäre die Menge der Farben. Es gibt keine natürliche Ordnung der Farben, und es gibt auch keinen natürlichen Zahlenbegriff, der die Farben beschreibt. Ein weiteres Beispiel ist eine Liste von Wohnorten.
     - Ein Beispiel für eine *ordinale* skalierte Datenmenge wäre die Menge der Kleidergrößen (S,M,L,XL,...). Es gibt eine natürliche Ordnung der Kleidergrößen, aber es gibt keinen natürlichen Zahlenbegriff, der die Kleidergrößen beschreibt. Ein weiteres Beispiel ist die Bewertung von Filmen auf einer Skala von 1 bis 5 Sternen.
 
 
@@ -74,8 +74,11 @@ Lineare Suche
 .. code:: pascal
     :number-lines:
 
-    Algorithm linearSearch(A,n,needle)
-        for i= 1,...,n do
+    // A        1-indiziertes Array, das durchsucht wird
+    // n        Größe des Arrays
+    // needle   der zu suchende Wert
+    function LinearSearch(A,n,needle)
+        for i := 1,...,n do
             if A[i] == needle then
                 return i
         return nil
@@ -92,18 +95,20 @@ Binäre Suche
 .. code:: pascal
     :number-lines:
 
-    Algorithm binarySearch(A,l,u,needle)
-        upper = u
-        lower = l
+    // A        aufsteigend sortiertes Array, das durchsucht wird
+    // l        untere Grenze (Index im Array)
+    // u        obere Grenze  (Index im Array: untere Grenze <= obere Grenze)
+    // needle   der zu suchende Wert
+    function BinarySearch(A,l,u,needle)
+        upper := u
+        lower := l
         repeat
-            pos = round((upper+lower)/2)
-            value = A[pos]
-            if value == needle then
-                return pos
-            else if value > needle then
-                upper = pos−1
-            else
-                lower = pos + 1
+            pos     := floor((upper + lower) / 2)
+            value   := A[pos]
+            if      value == needle then return pos
+            else if value > needle  then
+                    upper := pos − 1
+            else    lower := pos + 1
         until upper < lower
         return nil
 
@@ -122,12 +127,14 @@ Effizientere Suche bei linearer Verteilung
         .. image:: images/lagrange/lin-1.svg
             :width: 1700px
             :align: center
+            :class: light-image
 
     .. card:: overlay
 
         .. image:: images/lagrange/lin-2.svg
             :width: 1700px
             :align: center
+            :class: light-image
 
 
 .. supplemental::
@@ -154,7 +161,7 @@ Effizientere Suche bei linearer Verteilung
         ..., ...
         i = 130,251.2
 
-    Wenn man jetzt exemplarisch die Paare: :math:`(i = 10, a[i] = 20.0)`, und :math:`(i = 110, a[i] = 220)` betrachtet, dann kann man zu dem Schluss kommen, dass die Funktion :math:`f(x) = 2.0\cdot x` eine Approximation der Verteilung der Werte ist. Würde man also nach dem Wert :math:`a[i] = y = 170` suchen wollen, dann wäre es gut als erstes den Wert von ``a[85]`` zu überprüfen, :math:`170 = 2\cdot x \rightarrow \frac{170} {2} = 85 = i`.
+    Wenn man jetzt exemplarisch die Paare: :math:`(i = 10, a[i] = 20.0)`, und :math:`(i = 110, a[i] = 220)` betrachtet, dann kann man zu dem Schluss kommen, dass die Funktion :math:`f(x) = 2.0\cdot x` eine Approximation der Verteilung der Werte ist. Würde man also nach dem Wert :math:`a[i] = y = 170` suchen wollen, dann wäre es gut als erstes den Wert von :math-r:`a[85]` zu überprüfen, :math:`170 = 2\cdot x \rightarrow \frac{170} {2} = 85 = i`.
 
 
 
@@ -169,24 +176,28 @@ Effizientere Suche bei exponentieller Verteilung
         .. image:: images/lagrange/expo-1.svg
             :width: 1700px
             :align: center
+            :class: light-image
 
     .. card::  overlay
 
         .. image:: images/lagrange/expo-2.svg
             :width: 1700px
             :align: center
+            :class: light-image
 
     .. card::  overlay
 
         .. image:: images/lagrange/expo-3.svg
             :width: 1700px
             :align: center
+            :class: light-image
 
     .. card::  overlay
 
         .. image:: images/lagrange/expo-4-quadratic-approx.svg
             :width: 1700px
             :align: center
+            :class: light-image
 
 
 .. supplemental::
@@ -220,7 +231,7 @@ Effizientere Suche bei exponentieller Verteilung
 
     Würde man eine quadratische Approximation mit Hilfe von Lagrange durchführen, zum Beispiel mit den Werten :math:`(i = 20, a[i] = 5.0)`, :math:`(i = 90, a[i] = 110)` , und :math:`(i = 130, a[i] = 794)`. Dann wäre der Fehler zwischen der realen Verteilung und der angenommen deutlich geringer, da die quadratische Funktion die Werte besser approximiert.
 
-    In diesem Fall Fall wäre die Funktion: :math:`p(x) = \frac{39}{275}x^2 - \frac{141}{10}x + \frac{2533}{11}`
+    In diesem Fall Fall wäre die Funktion: :math:`p(x) = \frac{39}{275}x^2 - \frac{141}{10}x + \frac{2533}{11}`.
     In diesem Fall können wir die Position des Wertes 650 im Array besser abschätzen (durch die Aufstellung der Umkehrfunktion und dann einsetzen von 650): :math:`\approx 123`.
 
     .. warning::
@@ -276,6 +287,17 @@ Interpolation mit Lagrange-Polynomen
 
                 l_i(x) = \prod_{\substack{j= 1 \\ j \neq i}}^{n} \frac{x - x_j}{x_i - x_j}
 
+        .. supplemental::
+
+            .. remark::
+
+                .. rubric:: Warum ist diese Konstruktion korrekt? (Intuition)
+
+                Man kann beobachten, dass für einen gegebenen Punkt :math:`(x_i,y_i)` nur das Lagrange-Basispolynom :math:`L_i`  an der Stelle :math:`x_i` nicht zu 0 wird, da :math:`x_i` kein Faktor im Produkt von :math:`L_i` ist; oder anders ausgedrückt: einer der Faktoren :math:`(x_i−x_k)` im Produkt der anderen Basispolynome wird garantiert zu :math-r:`0`, d. h. es gilt :math:`L_j(x_i)=0`  für alle :math:`j≠i`.
+
+                Das Lagrange-Basispolynom :math:`L_i` für den Punkt :math:`(x_i,y_i)` ist weiterhin so konstruiert, dass es zu eins evaluiert, womit die Multiplikation mit :math:`y_i` notwendigerweise den gewünschten Zielwert ergibt. Alle anderen Summanden sind :math-r:`0`.
+
+
     .. card::
 
         Sind :math:`n` Tupel :math:`(x_n ,y_n ) ∈ \mathbb{R}^2` reeller Zahlen gegeben mit :math:`x_l \neq x_m` für :math:`l  \neq m`.
@@ -288,7 +310,7 @@ Interpolation mit Lagrange-Polynomen
 
             Gegeben sein die zwei Punkte: :math:`(x_1, y_1) = (1, 2)` und :math:`(x_2, y_2) = (3, 4)`.
 
-            Das Lagrange-Polynom :math:`p(x)` wäre dann:
+            Das Lagrange-Polynom :math:`p(x)` ist dann:
 
             1. .. math::
 
@@ -458,7 +480,7 @@ Interpolierende Suche - lineare Approximation
         .. note::
             :class: width-30 s-font-size-80
 
-            Wir möchten die Position des Wertes 50 im Array abschätzen! Deswegen sind im linearen Modell die Paare :math:`(x_1,y1) = (30,20)` und :math:`(x_2,y_2) = (120,40)` zu wählen. D. h. die Indizes sind unsere y-Werte.
+            Wir möchten die Position des Wertes :math-r:`50` im Array abschätzen! Deswegen sind im linearen Modell die Paare :math:`(x_1,y1) = (30,20)` und :math:`(x_2,y_2) = (120,40)` zu wählen. D. h. die Indizes sind unsere y-Werte.
 
         :Lösung: Das Lagrangepolynom :math:`p(x)` mit :math:`p(30) = 20` und :math:`p(120) = 40` lautet:
 
@@ -468,7 +490,7 @@ Interpolierende Suche - lineare Approximation
 
             .. container:: incremental
 
-                Für den gesuchten Wert ``50`` ergibt sich als zu untersuchende Position:
+                Für den gesuchten Wert :math-r:`50` ergibt sich als zu untersuchende Position:
 
                 .. math::
 
@@ -490,7 +512,7 @@ Interpolierende Suche - lineare Approximation
 
 
 
-Interpolierende Suche - quadratische Approxi.
+Interpolierende Suche - quadratische Approximation
 --------------------------------------------------------
 
 .. example::
@@ -498,11 +520,11 @@ Interpolierende Suche - quadratische Approxi.
 
     :Gegeben: Vom Array :java:`a` sei bekannt: :java:`a[1] = 0`, :java:`a[20] = 30` und :java:`a[40] = 120`.
 
-    :Frage: Ist der Wert ``50`` im Array enthalten?
+    :Frage: Ist der Wert :math-r:`50` im Array enthalten?
 
     .. container:: incremental
 
-        :Lösung: :math:`p(x)` mit :math:`p(0) = 1`,  :math:`p(30) = 20` und :math:`p(120) = 40` lautet:
+        :Lösung: :math-r:`p(x)` mit :math-r:`p(0) = 1`,  :math-r:`p(30) = 20` und :math-r:`p(120) = 40` lautet:
 
         .. math::
 
@@ -514,7 +536,7 @@ Interpolierende Suche - quadratische Approxi.
 
         .. container:: incremental
 
-            Für den gesuchten Wert ``50`` ergibt sich als zu untersuchende Position:
+            Für den gesuchten Wert :math-r:`50` ergibt sich als zu untersuchende Position:
 
             .. math::
 
@@ -530,6 +552,8 @@ Interpolierende Suche - Vergleich
     .. card::
 
         .. image:: images/lagrange/comparison.svg
+            :width: 1700px
+            :class: light-image
             :align: center
 
     .. card::
@@ -546,35 +570,39 @@ Lineare interpolierende Suche
     :number-lines:
     :class: copy-to-clipboard
 
-    Algorithm linearInterpolatingSearch(A,needle)
-        lower := 1               // index auf das kleinste Element
-        upper := length(A)       // index auf das größte Element
-        vL := A[lower]
+    // A        durchsuchtes, 1-indiziertes, aufsteigend sortiertes Array
+    // needle   der Wert, der gesucht wird
+    function linearInterpolatingSearch(A,needle)
+        lower   := 1               // index auf das kleinste Element
+        upper   := length(A)       // index auf das größte Element
+        vL      := A[lower]
         if vL == needle then return lower
-        vU := A[upper]
+        vU      := A[upper]
         if vU == needle then return upper
         while upper > lower do
-            pos := round(lower·(needle−vU)/(vL−vU) +
-                         upper·(needle−vL)/(vU−vL))
-            pos := max(lower + 1, min(upper - 1, pos))
-            value := A[pos]
+            pos     := round(lower·(needle−vU)/(vL−vU) +
+                             upper·(needle−vL)/(vU−vL))
+            pos     := max(lower + 1, min(upper - 1, pos))
+            value   := A[pos]
             if value == needle then return pos
             else if value < needle then
-                lower := max(pos, lower+1), vL = A[lower]
-            else
-                upper := min(pos, upper-1), vU = A[upper]
+                    lower := max(pos, lower+1), vL := A[lower]
+            else    upper := min(pos, upper-1), vU := A[upper]
         return nil
 
 
 .. supplemental::
 
-    Die Korrektur von :java:`pos` in Zeile 11 (:java:`pos := max(lower + 1, min(upper - 1, pos))`) stellt sicher, dass :java:`pos` immer strikt zwischen :java:`lower` und :java:`upper` liegt. Dies ist insbesondere deswegen notwendig, weil die Interpolation nicht immer exakt ist. Stellen Sie sich zum Beispiel vor, dass die Daten polynomiell skaliert sind und sie (in Unkenntnis der echten Verteilung) die lineare Interpolationssuche verwenden. In diesem Fall kann es zu folgender Situation kommen:
+    Die Korrektur von :java:`pos` in Zeile 11 (:java:`pos := max(lower + 1, min(upper - 1, pos))`) stellt sicher, dass :java:`pos` immer zwischen :java:`lower` und :java:`upper` liegt. Dies ist insbesondere deswegen notwendig, weil die Interpolation nicht immer exakt ist. Stellen Sie sich zum Beispiel vor, dass die Daten polynomiell skaliert sind und sie (in Unkenntnis der echten Verteilung) die lineare Interpolationssuche verwenden. In diesem Fall kann es zu folgender Situation kommen:
 
     Die Werte im Array seien: [0, 4, 16, 36, 64, 100, 144, 196] (zu Grunde liegt die Funktion :math:`4x^2`) und Sie suchen nach dem Wert 194.
 
     Im ersten Schritt würde die lineare Interpolationssuche den Wert 194 auf Position 7 schätzen, was nutzlos wäre, aber erst einmal kein Problem verursachen würde. Da der Wert 194 aber nicht im Array enthalten ist, würde die Suche den Wert für die obere Grenze um eins korrigieren. Jetzt würde die lineare Interpolation aber mit den Werten des Arrays an Stelle 0 und 6 erfolgen (A[0]  = 0 und A[6] = 144). Das Ergebnis wäre die 2. Funktion (blau) und der Wert 194 würde auf Position 8 geschätzt, was außerhalb des Arrays liegt.
 
     .. image:: images/lagrange/expo-index_error_case.svg
+        :width: 1500px
+        :class: light-image
+
 
     Folgen die Werte im Array einer logarithmisch Verteilung, dann würde die umgekehrte Situation eintreten, d. h. es könnte am unteren Ende des Arrays zu einem ähnlichen Problem kommen, da dann die Werte oberhalb der geraden liegen würden.
 
@@ -586,18 +614,21 @@ Exponentielle Suche im sortierten (unbeschränkten) *Array*
 -----------------------------------------------------------
 
 .. code:: pascal
+    :class: copy-to-clipboard
     :number-lines:
 
-    Algorithm ExponentialSearch(A,needle)
-        i = 1
-        while A[i] < needle do
-            i = i * 2
-        return BinarySearch(A,floor(i/2) + 1,i,needle)
+    // A        durchsuchtes, 1-indiziertes, aufsteigend sortiertes Array
+    // needle   der Wert, der gesucht wird
+    function ExponentialSearch(A,needle)
+        i := 1
+        while i <= length(A) and A[i] < needle do
+            i := i * 2
+        return BinarySearch(A, floor(i/2) + 1, min(i, length(A)), needle)
 
 
 .. supplemental::
 
-    Die Idee ist erst mit einer exponentiellen Schrittweite zu springen, um dann mit einer binären Suche den Wert zu finden. Die Laufzeit ist :math:`O(\log(i))` wobei :math:`i` die Position des gesuchten Wertes ist. Die Laufzeit ist also :math:`O(\log(n))`.
+    Die Idee ist erst mit einer exponentiellen Schrittweite zu springen, um dann mit einer binären Suche den Wert zu finden. Die Laufzeit ist :math:`O(\log(i))` wobei :math-r:`i` die Position des gesuchten Wertes ist. Die Laufzeit ist also :math:`O(\log(n))`.
 
 
 
@@ -612,7 +643,7 @@ Exponentielle Suche im sortierten (unbeschränkten) *Array*
 
     :math:`A[1] = -27,\; A[15] = 13,\; A[29] = 29`
 
-    Gesucht wird der potentielle Index des Wertes ``5``. Welcher Index ``i`` sollte als nächstes untersucht werden bei binärer, linearer oder quadratisch interpolierender Suche?
+    Gesucht wird der potentielle Index des Wertes :math-r:`5`. Welcher Index :math-r:`i` sollte als nächstes untersucht werden bei binärer, linearer oder quadratisch interpolierender Suche?
 
     .. solution::
         :pwd: wer_sucht_der_sucht
@@ -639,7 +670,7 @@ Exponentielle Suche im sortierten (unbeschränkten) *Array*
 
     :math:`A[1] = -13,\; A[7] = -4,\; A[13] = 11`
 
-    Gesucht wird der potentielle Index des Wertes ``-1``. Welcher Index ``i`` sollte als nächstes untersucht werden bei binärer, linearer oder quadratisch interpolierender Suche?
+    Gesucht wird der potentielle Index des Wertes :math-r:`-1`. Welcher Index :math-r:`i` sollte als nächstes untersucht werden bei binärer, linearer oder quadratisch interpolierender Suche?
 
     .. solution::
         :pwd: wer_sucht_der_findet_vielleicht
@@ -676,9 +707,9 @@ Exponentielle Suche im sortierten (unbeschränkten) *Array*
     .. code:: python
         :class: copy-to-clipboard
 
-        A = [1, 3, 5, 7, 9, 11, 13, 15] # linear verteilt (2x-1)
+        A = [1, 3, 5, 7, 9, 11, 13, 15]        # linear verteilt (2x-1)
 
-        B = [0, 7, 13, 22, 27, 32, 44, 49] # approx. linear verteilt (approx. 7x)
+        B = [0, 7, 13, 22, 27, 32, 44, 49]     # approx. 7x linear verteilt
 
         C = [0, 2, 16, 54, 128, 250, 432, 686] # quadratisch verteilt (4x^2)
 
@@ -689,9 +720,20 @@ Exponentielle Suche im sortierten (unbeschränkten) *Array*
 
         Für Array A sind maximal 3 Schritte notwendig, für Array B sind auch maximal 3 Schritte und für Array C maximal 5 Schritte.
 
+
+        .. rubric:: |java-icon| Lösung
+
+        .. include:: code/LineareInterpolierendeSuche.java
+                :code: java
+                :number-lines:
+                :class: copy-to-clipboard
+
+        .. rubric:: |python-icon| Lösung
+
         .. include:: code/linear_interpolating_search.py
-            :code: python
-            :number-lines:
+                :code: python
+                :number-lines:
+                :class: copy-to-clipboard
 
 
 .. class:: exercises
@@ -701,18 +743,51 @@ Exponentielle Suche im sortierten (unbeschränkten) *Array*
 
 .. exercise:: Exponentiell Interpolierende Suche
 
-    Implementieren Sie den Algorithmus für die exponentiell interpolierende Suche in einer Programmiersprache Ihrer Wahl. (Ggf. müssen Sie noch die passende binäre Suche implementieren).
+    #. Implementieren Sie den Algorithmus für die exponentiell interpolierende Suche in einer Programmiersprache Ihrer Wahl. (Ggf. müssen Sie noch die passende binäre Suche implementieren). Implementieren Sie die Suche basierend auf einer Funktion und nicht über einem Array.
 
-    Gegeben sei die folgende Funktion, die als Generator fungiert. (:math:`x` sei eine natürliche Zahl).
+    #. Gegeben sei die folgende Funktion, die als Generator fungiert. (:math:`x` sei eine natürliche Zahl).
 
-    .. math::
+       .. math::
 
-        f(x) = \text{round}\left(\frac{1}{1+e^{-x}} \cdot 100\,000\,000 \right)
+            f(x) = \text{round}\left(\frac{1}{1+e^{-x}} \cdot 100\,000\,000 \right)
 
-    Testen Sie ob :math:`99999996` ein Wert der Funktion ist und geben Sie den Index (:math:`x`) zurück.
+       Testen Sie ob :math-r:`99999996` ein Wert der Funktion ist und geben Sie den Index (:math:`x`) zurück.
 
+    #. Wann macht es Sinn die exponentiell interpolierende Suche zu verwenden?
 
-    Wann macht es Sinn die exponentiell interpolierende Suche zu verwenden?
+    .. supplemental::
+
+        .. rubric:: |java-icon| Hinweise zur Implementierung
+
+        In Java können Sie die Funktion als :java:`java.util.function.DoubleUnaryOperator` implementieren. Der Aufruf erfolgt dann zum Beispiel mit Hilfe einer Lambda-Funktion.
+
+        Es kann hilfreich sein alle statischen Methoden und Konstanten der :java:`Math`-Klasse über einen static import zu verwenden.
+
+        Die exemplarische Verwendung ist wie folgt:
+
+        .. code:: java
+            :number-lines:
+            :class: copy-to-clipboard
+
+            void main() {
+                try {
+                    IO.println(
+                        "Wert 64 hat Index: " + binarySearch((double x) -> 4 * x + 3, 0, 100, 64)+ "."
+                    );
+                } catch (NoSuchElementException e) {
+                    IO.println("Wert 64 nicht gefunden.");
+                }
+                IO.println(binarySearch((double x) -> (4 * x + 3), 0, 100, 43));
+
+                try {
+                    IO.println(
+                        "Wert 99999996 hat Index: " +
+                            exponentialSearch((double x) -> TODO, 99999996 )
+                    );
+                } catch (NoSuchElementException e) {
+                    IO.println("Wert 99999996  nicht gefunden.");
+                }
+            }
 
     .. solution::
         :pwd: sonst_ist_er_nicht_wirklich besser
@@ -724,6 +799,10 @@ Exponentielle Suche im sortierten (unbeschränkten) *Array*
         2. Insbesondere dann, wenn die gesuchten Werte am unteren Rande sind.
 
            Zum Beispiel ist die Suche nach einem Wert nahe am unteren Rand in einem Array mit zehntausenden von Werten schneller als eine reine binäre Suche!
+
+        .. rubric:: |java-icon| Lösung
+
+        .. rubric:: |python-icon| Lösung
 
         .. include:: code/exponential_search.py
             :code: python
@@ -773,9 +852,9 @@ Strategien zur Anordnung
 
     .. card::
 
-        .. definition::
+        .. definition:: FC-Regel
 
-            Ein Array A ist gemäß **frequency count** oder **FC-Regel** sortiert, wenn für alle Werte gilt, dass :math:`c(A[k]) \geq c(A[j])` wenn :math:`k <j` und :math:`c(x)` die realisierte Häufigkeit des Wertes :math:`x` darstellt.
+            Ein Array A ist gemäß *frequency count* (FC-Regel) sortiert, wenn für alle Werte gilt, dass :math:`c(A[k]) \geq c(A[j])` wenn :math:`k <j` und :math:`c(x)` die realisierte Häufigkeit des Wertes :math:`x` darstellt.
 
         .. hint::
             :class: incremental
@@ -784,15 +863,15 @@ Strategien zur Anordnung
 
     .. card::
 
-        .. definition::
+        .. definition:: MF-Regel
 
-            Ein Array A ist gemäß **move to front** oder nach der **MF-Regel** sortiert, wenn bei Auftritt eines Wertes :math:`A[k]` in der Folge mit der ersten Position :math:`A[1]` oder :math:`A[0]` vertauscht wird, sollte der Wert noch nicht an der ersten Stelle stehen.
+            Ein Array A ist gemäß *move to front* (MF-Regel) sortiert, wenn bei Auftritt eines Wertes :math:`A[k]` in der Folge mit der ersten Position :math:`A[1]` oder :math:`A[0]` vertauscht wird, sollte der Wert noch nicht an der ersten Stelle stehen.
 
     .. card::
 
-        .. definition::
+        .. definition:: T-Regel
 
-            Ein Array A ist gemäß **transpose** oder nach der **T-Regel** sortiert, wenn bei Auftritt eines Wertes :math:`A[k]` in der Folge mit der Position davor :math:`A[k-1]` vertauscht wird, sollte der Wert noch nicht an der ersten Stelle stehen.
+            Ein Array A ist gemäß *transpose* (T-Regel) sortiert, wenn bei Auftritt eines Wertes :math:`A[k]` in der Folge mit der Position davor :math:`A[k-1]` vertauscht wird, sollte der Wert noch nicht an der ersten Stelle stehen.
 
 
 
