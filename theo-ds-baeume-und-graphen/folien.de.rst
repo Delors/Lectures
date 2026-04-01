@@ -128,7 +128,7 @@ Datenstrukturen: Bäume, Graphen und Heaps
 
 :Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
 :Kontakt: michael.eichberg@dhbw.de, Raum 149B
-:Version: 2.1
+:Version: 2.1.0.1
 
 .. container:: peripheral footer-left
 
@@ -2115,7 +2115,8 @@ Einfügen eines neuen Elements
 
 .. code:: pascal
     :number-lines:
-    :class: line-numbers-padded no-margin copy-to-clipboard
+    :line-number-digits: 2
+    :class: head no-margin copy-to-clipboard
 
     // heap - Array, dass die Heap-Eigenschaft erfüllt/den Heap repräsentiert
     //        (Das Wurzelelement ist im Array an Position 0 gespeichert.)
@@ -2125,7 +2126,7 @@ Einfügen eines neuen Elements
 
 .. code:: pascal
     :number-lines: 5
-    :class: copy-to-clipboard incremental-code
+    :class: tail copy-to-clipboard incremental-code
 
         heap[n] ← key   // Element ans Ende anhängen
         i ← n           // Index des aktuell betrachteten Elements
