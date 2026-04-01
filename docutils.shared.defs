@@ -85,6 +85,9 @@
 .. role:: asm(code)
    :language: nasm
 
+.. role:: rst(code)
+   :language: rst
+
 .. role:: raw-html(raw)
    :format: html
 
