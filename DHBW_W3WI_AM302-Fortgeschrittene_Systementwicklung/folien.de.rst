@@ -15,9 +15,9 @@ W3WI_AM302 - Fortgeschrittene Systementwicklung
 
 :Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
 :Kontakt: michael.eichberg@dhbw.de, Raum 149B
-:Version: 24AMA - 4. März 2026 
+:Version: 24AMA - 1. April 2026
 
- 
+
 
 .. class:: transition-fade fade-out
 
@@ -29,7 +29,7 @@ Inhalte 1. Semester
   - Linux/Server Handhabung
   - Buildprozesse
   - Versionsverwaltung
-  - Container 
+  - Container
 
 .. supplemental::
 
@@ -63,7 +63,7 @@ Prüfungsleistung
 Prüfungsleistung: Portfolio (insgesamt 120 Punkte)
 
 :`1. Semester`:fade-out:: :fade-out:`Kurztest mit 20 Minuten mit 20 Punkten`
-:2. Semester: Vorträge, Code Reviews, Ausarbeitungen, Projekt **mit 100 Punkten** 
+:2. Semester: Vorträge, Code Reviews, Ausarbeitungen, Projekt **mit 100 Punkten**
 
 
 
@@ -106,9 +106,9 @@ Ablauf
         - \04. März 2026 von 09:30 bis 12:4 (4VL)
         - \11. März 2026 von 09:30 bis 12:45 (4VL)
         - \18. März 2026 von 09:30 bis 12:45 (4VL)
-    
+
       .. cell:: width-50
-    
+
         - \25. März 2026 von 09:30 bis 12:45 (4VL)
         - \01. April 2026 von 09:30 bis 12:45 (4VL)
         - \08. April 2026 von 09:30 bis 12:45 (4VL)
@@ -120,7 +120,7 @@ Ablauf
 Aufgabenstellung 2. Semester
 ---------------------------------
 
-Gegenstand der Portfolioaufgabe ist die Entwicklung eines verteilten Web-Spiels für mehrere Spieler.  
+Gegenstand der Portfolioaufgabe ist die Entwicklung eines verteilten Web-Spiels für mehrere Spieler.
 
 Folgende Anforderungen sind zu erfüllen:
 
@@ -137,10 +137,10 @@ Folgende Anforderungen sind zu erfüllen:
 
               Echtzeitspiele sind aufgrund der damit verbundenen Komplexität ausgeschlossen.
 
-  - Sie können sich - müssen aber nicht - von klassischen Brettspielen oder Kartenspielen inspirieren lassen. Es können aber auch neue Spiele entwickelt werden. 
+  - Sie können sich - müssen aber nicht - von klassischen Brettspielen oder Kartenspielen inspirieren lassen. Es können aber auch neue Spiele entwickelt werden.
 
     D. h. Die Wahl des Spieles ist weitgehend frei. :emph:`Poker und Uno sind jedoch ausgeschlossen`; triviale Spiele (z. B. Hangman oder Tic-Tac-Toe) sind auch ausgeschlossen. Darüber hinaus darf kein Spiel zweimal entwickelt werden.
-    
+
     :emph:`Sprechen Sie sich frühzeitig mit Ihren Kommilitonen ab, um Überschneidungen zu vermeiden.`
 
   - Die Entwicklung erfolgt in Gruppen von 3 Personen und muss immer einen Webclient und eine Serverkomponente umfassen.
@@ -153,7 +153,7 @@ Folgende Anforderungen sind zu erfüllen:
 
   - Ein komplexes Rollen-/Sicherheitsmodell ist nicht erforderlich. Es muss jedoch möglich sein, dass Spieler sich mit einem Benutzernamen anmelden und dass die Spieler während des Spiels identifizierbar sind.
 
-  - Bewertet wird die Qualität der Software, die Qualität der Dokumentation, die Qualität der Präsentationen und die Einhaltung der Anforderungen. 
+  - Bewertet wird die Qualität der Software, die Qualität der Dokumentation, die Qualität der Präsentationen und die Einhaltung der Anforderungen.
 
 
 
@@ -170,8 +170,8 @@ Projektergebnisse (Grobübersicht)
 
 #. Dokument, das dokumentiert welche Team-Mitglieder welche Teile bearbeitet haben und mit welchem Anteil.
 
-   .. attention:: 
-    
+   .. attention::
+
       Wenn Sie als Team bewertet werden möchten, dann teilen Sie mir dies bitte mit und vermerken es explizit in dem Dokument.
 
 #. Dokument bzgl. KI-Einsatz: Wo wurde welche KI wie eingesetzt. Wie war Ihre Erfahrung.
@@ -191,16 +191,16 @@ Vortragsthemen
 
 .. class:: incremental-list
 
-- Alle Vorträge behandeln Themen, die für das Projekt direkt relevant sind. 
-- Die Vorschläge zu den konkreten Inhalten der Vorträge sind als Anregung zu verstehen und kleinere Abweichungen sind ggf. möglich. 
+- Alle Vorträge behandeln Themen, die für das Projekt direkt relevant sind.
+- Die Vorschläge zu den konkreten Inhalten der Vorträge sind als Anregung zu verstehen und kleinere Abweichungen sind ggf. möglich.
 - Führen Sie immer in das Thema ein und geben Sie auch praktische Beispiele, damit die Relevanz für die Projektarbeit klar wird. D. h. die Vorträge sollen einen hohen „Hands-on“-Anteil haben.
 - :emph:`Sprechen Sie sich ggf. untereinander ab, damit die Vorträge nicht inhaltlich überlappen.`
 - Beachten Sie die Hinweise zur `Vortragsgestaltung <https://delors.github.io/allg-vortraege/folien.de.rst.html#slide-1>`__.
-- Bitte beachten Sie die Zeitvorgaben. 
+- Bitte beachten Sie die Zeitvorgaben.
 - .. attention::
 
-     Vorträge sind bis 6 Uhr Morgens am jeweiligen Vortragstag als PDF-Datei in Moodle hochzuladen. 
-  
+     Vorträge sind bis 6 Uhr Morgens am jeweiligen Vortragstag als PDF-Datei in Moodle hochzuladen.
+
 
 
 
@@ -241,7 +241,7 @@ Vortragsthemen - Frontend-Entwicklung
         - Performance-Aspekte
         - Best Practices für flüssige Animationen
 
-      .. cell:: width-50 
+      .. cell:: width-50
 
         *CSS Keyframe Animations:*
 
@@ -257,7 +257,7 @@ Vortragsthemen - Frontend-Entwicklung
     :Personen: 1 Person
     :Dauer: 10 Minuten
 
-    *Inhalte:* 
+    *Inhalte:*
 
     - CSS Variablen und CSS Properties (:css:`@property`) Grundlagen
     - Scope und Vererbung
@@ -271,7 +271,7 @@ Vortragsthemen - Frontend-Entwicklung
     :Personen: 1 Person
     :Dauer: 10 Minuten
 
-    *Inhalte:* 
+    *Inhalte:*
 
     - Mobile-First vs. Desktop-First
     - Media Queries für verschiedene Geräte
@@ -281,7 +281,7 @@ Vortragsthemen - Frontend-Entwicklung
 
   .. card::
 
-    **CSS Theming und Farbsysteme** 
+    **CSS Theming und Farbsysteme**
 
     :Personen: 1-2 Personen
     :Dauer: 10-20 Minuten
@@ -326,7 +326,7 @@ Vortragsthemen - JavaScript für interaktive Spiele
 --------------------------------------------------------------------------------
 
 .. deck::
-  
+
   .. card::
 
     **Grundlagen von modernem JavaScript (ES6+)**
@@ -355,7 +355,7 @@ Vortragsthemen - JavaScript für interaktive Spiele
         - Array-Methoden (map, filter, reduce)
 
   .. card::
-    
+
       **JavaScript Event Handling für Spiele**
 
       :Personen: 1 Person
@@ -384,7 +384,7 @@ Vortragsthemen - JavaScript für interaktive Spiele
       - Performance-Best-Practices
 
   .. card::
-    
+
       **JavaScript State Management**
 
       :Personen: 1 Person
@@ -397,7 +397,7 @@ Vortragsthemen - JavaScript für interaktive Spiele
       - Immutability
       - State Synchronisation Client/Server
       - Observer Pattern
-      
+
   .. card::
 
       **JavaScript Error Handling und Debugging**
@@ -466,7 +466,7 @@ Vortragsthemen - Client-Server-Kommunikation
 
 
   .. card::
-  
+
     **WebSockets Grundlagen**
 
     :Personen: 1 Person
@@ -489,7 +489,7 @@ Vortragsthemen - Client-Server-Kommunikation
 
     .. grid::
 
-      .. cell:: width-50  
+      .. cell:: width-50
 
         *Socket.IO Basics*
 
@@ -499,7 +499,7 @@ Vortragsthemen - Client-Server-Kommunikation
         - Broadcasting
         - Verbindungsmanagement
 
-      .. cell:: width-50  
+      .. cell:: width-50
 
           *Socket.IO für Multiplayer-Spiele*
 
@@ -511,10 +511,10 @@ Vortragsthemen - Client-Server-Kommunikation
 
     .. remark::
 
-      Diese Talks sollten sich insbesondere auf die Verwendung von Socket.IO für die Entwicklung von Multiplayer-Spielen konzentrieren. 
+      Diese Talks sollten sich insbesondere auf die Verwendung von Socket.IO für die Entwicklung von Multiplayer-Spielen konzentrieren.
 
   .. card::
-    
+
     **Express.js Grundlagen**
 
     :Personen: 2 Person
@@ -522,7 +522,7 @@ Vortragsthemen - Client-Server-Kommunikation
 
     .. grid::
 
-      .. cell:: width-50  
+      .. cell:: width-50
 
         *Express.js Basics*
 
@@ -531,7 +531,7 @@ Vortragsthemen - Client-Server-Kommunikation
         - Request/Response Handling
         - Static File Serving
         - Errorhandling
-  
+
       .. cell:: width-50
 
         *Express.js für Spiele-Backend*
@@ -543,7 +543,7 @@ Vortragsthemen - Client-Server-Kommunikation
 
     .. remark::
 
-      Diese Talks sollten sich insbesondere auf die Verwendung von Express.js für die Entwicklung von Multiplayer-Spielen konzentrieren. 
+      Diese Talks sollten sich insbesondere auf die Verwendung von Express.js für die Entwicklung von Multiplayer-Spielen konzentrieren.
 
   .. card::
 
@@ -580,7 +580,7 @@ Vortragsthemen - Sicherheit
     - Client-Side Validation vs. Server-Side Validation
     - Input Sanitization
     - Rate Limiting
-    
+
 
 
 Vortragsthemen - Software-Architektur
@@ -626,7 +626,7 @@ Vortragsthemen - Softwareengineering Praktiken
 
   .. card::
 
-    **Build-Tools und Bundling**  
+    **Build-Tools und Bundling**
 
     :Personen: 1 Person
     :Dauer: 10 Minuten
@@ -638,7 +638,7 @@ Vortragsthemen - Softwareengineering Praktiken
     - Code Splitting
     - Minification und Optimization
     - Development vs. Production Builds
-  
+
 
 
 Vortragsthemen - Barrierefreiheit
@@ -682,7 +682,7 @@ Ablauf 2. Semester (Wann passiert was?)
 \25. Feb 2026 von 09:30 bis 12:45 (4VL)
 -----------------------------------------
 
-- Elevator Pitch des Spielkonzepts  
+- Elevator Pitch des Spielkonzepts
 - Vorträge
 - Beantwortung von Fragen/Teamindividuelle Beratung
 
@@ -722,7 +722,7 @@ Ablauf 2. Semester (Wann passiert was?)
 .. class:: list-with-explanations
 
 - Vorführung des aktuellen Stands der Anwendung durch jedes Team (ca. 10 Minuten pro Team)
-  
+
   (Keine explizite Abgabe erforderlich.)
 - Feedbackrunde und Fragen
 
@@ -733,16 +733,18 @@ Ablauf 2. Semester (Wann passiert was?)
 .. class:: list-with-explanations
 
 - Einführung in strukturierte Code Reviews
-- Jede Gruppe erhält eine Einführung in den Code zweier anderer Teams (je Partnerteam ca. 45 Minuten)
-  
+- Jede Gruppe erhält eine Einführung in den Code eines anderen Teams (je Partnerteam ca. 45 Minuten)
+
   (Den Gruppen, die die Code Reviews durchführen, wird Zugriff auf den Code eingerichtet.)
 - Jede Gruppe präsentiert informell ihre allerersten Erkenntnisse/Eindrücke aus dem Code Review (ca. 2-3 Minuten pro  Review)
 
-  (Die Sessions von jeweils 45 Minuten dienen dazu, dass Sie den Code der anderen Teams kennenlernen und sich auf das Code Review vorbereiten können; die eigentlichen Code Reviews finden außerhalb der Vorlesungszeit statt.)
+  (Die Sessions von jeweils 45 Minuten dienen dazu, dass Sie den Code des anderen Teams kennenlernen und sich auf das Code Review vorbereiten können; das eigentliche Code Review findet außerhalb der Vorlesungszeit statt.)
 
 - Ich stehe für allg. und gruppenspezifische Fragen zur Verfügung.
 
 .. presenter-note::
+
+   **Nur gültig wenn, mehrere gegenseitige Reviews stattfinden!**
 
   .. grid::
 
@@ -767,35 +769,39 @@ Ablauf 2. Semester (Wann passiert was?)
       .. csv-table::
         :header: Team, "Reviewt Teams", "Wird reviewt von"
 
-        A, "B, C", "D, E"
+        A, "B, C", "F, G"
         B, "C, D", "E, F"
-        C, "D, E", "F, G"
-        D, "E, F", "A, G"
-        E, "F, G", "A, B"
-        F, "G, A", "B, C"
-        G, "A, B", "C, D"
+        C, "D, E", "A, B"
+        D, "E, F", "B, C"
+        E, "F, G", "C, D"
+        F, "G, A", "D, E"
+        G, "A, B", "E, F"
 
 
 
 \8. April: 7:00 (Ereignis)
 --------------------------
 
-- Abgabe der dokumentierten Code-Review Ergebnisse an die Teams und „an mich“
-- Abgabe der Präsentationen zu den Code Reviews
-- Abgabe über Moodle als 4 PDF-Dateien mit folgenden Namensschema:
+- Abgabe der dokumentierten Code-Review Ergebnisse an das entsprechende Team und „an mich“
+- Abgabe der Präsentationen zu dem Code Review
+- Abgabe über Moodle als 2 PDF-Dateien mit folgenden Namensschema:
 
   - CodeReviewDokumentation_TeamX_TeamY.pdf (Code Review von Team X für Team Y)
   - CodeReviewPräsentation_TeamX_TeamZ.pdf (Code Review von Team X für Team Z)
 
   (X,Y und Z sind durch die jeweiligen Teambezeichner zu ersetzen.)
 
+  .. attention::
+
+     Schreiben Sie auf die Präsentation und auch in die Dokumentation alle Namen der Reviewer. Dies ist vor dem Hintergrund der Aufspaltung der Gruppen dringend erforderlich!
+
 
 \8. April 2026 von 09:30 bis 12:45 (4VL)
 -----------------------------------------
 
-- Präsentation der Ergebnisse des Code Reviews 
+- Präsentation der Ergebnisse des Code Reviews
 
-  Max. 10 Minuten pro Code Review; d.h. 20 Minuten pro Team. 
+  Ca. 10 bis 20 Minuten pro Code Review
   Fokussierung auf die Highlights der Code Reviews; d. h. Stellen mit Verbesserungspotential und solche, die Sie für Ihr Projekt besonders relevant finden.
 
 
@@ -804,20 +810,20 @@ Ablauf 2. Semester (Wann passiert was?)
 ----------------------------------------------------
 
 - Finale Besprechung der Anforderungen an die Abgaben
-- Teamindividuelle Beratung 
+- Teamindividuelle Beratung
 
 
 
 \21. April 2026 7:00 (Ereignis)
 -----------------------------------------
-- Abgabe aller Projektergebnisse über Moodle 
+- Abgabe aller Projektergebnisse über Moodle
 
 
 
 \22. April 2026 von 09:30 bis 12:00 (3VL)
 -----------------------------------------
- 
-- Spielzeit 
+
+- Spielzeit
 
   Dauer ca. 15 Minuten pro Team.
 
@@ -832,31 +838,31 @@ Aufteilung der Vortragsthemen
     :header: ID, Titel, Datum
     :class: dhbw sticky-header
     :width: 100%
-    
-    1, CSS Grid Layout für Spieloberflächen, 25. Februar  
-    2, CSS Animationen und Transitionen für Spiele, 25. Februar  
+
+    1, CSS Grid Layout für Spieloberflächen, 25. Februar
+    2, CSS Animationen und Transitionen für Spiele, 25. Februar
     3, CSS Custom Properties und Design Systems, 25. Februar
     4, Responsive Design für Spiele, 25. Februar
     5, Moderne Color Spaces, 25. Februar
     6, Light/Dark Themes, 25. Februar
     7, Moderne UI-Komponenten mit HTML/CSS, 25. Februar
-    8, ES6+ Grundlegende Features, 4. März  
-    9, ES6+ Erweiterte Features, 4. März  
-    10, JavaScript Event Handling für Spiele, 4. März  
-    11, DOM-Manipulation und Virtual DOM Konzepte, 4. März 
-    12, JavaScript State Management, 4. März 
-    13, Browser Storage APIs, 4. März 
-    14, API Design, 4. März 
-    15, Fetch API und AJAX, 4. März 
-    16, JavaScript Error Handling und Debugging, 11. März 
-    17, WebSockets Grundlagen, 11. März 
-    18, Socket.IO für Bidirektionale Echtzeitkommunikation, 11. März 
-    19, Express.js Grundlagen, 11. März 
-    20, API-Testing und Dokumentation, 11. März 
-    21, Cheat Prevention, 11. März 
-    22, :peripheral:`[Software-Architektur für verteilte Anwendungen]`, 11. März 
-    23, Testing für Web-Anwendungen, 11. März 
-    24, Build-Tools und Bundling, 11. März 
+    8, ES6+ Grundlegende Features, 4. März
+    9, ES6+ Erweiterte Features, 4. März
+    10, JavaScript Event Handling für Spiele, 4. März
+    11, DOM-Manipulation und Virtual DOM Konzepte, 4. März
+    12, JavaScript State Management, 4. März
+    13, Browser Storage APIs, 4. März
+    14, API Design, 4. März
+    15, Fetch API und AJAX, 4. März
+    16, JavaScript Error Handling und Debugging, 11. März
+    17, WebSockets Grundlagen, 11. März
+    18, Socket.IO für Bidirektionale Echtzeitkommunikation, 11. März
+    19, Express.js Grundlagen, 11. März
+    20, API-Testing und Dokumentation, 11. März
+    21, Cheat Prevention, 11. März
+    22, :peripheral:`[Software-Architektur für verteilte Anwendungen]`, 11. März
+    23, Testing für Web-Anwendungen, 11. März
+    24, Build-Tools und Bundling, 11. März
     25, :peripheral:`[Accessibility (a11y) für Spiele]`, 11. März
 
 
@@ -869,19 +875,19 @@ Bewertung
   .. class:: list-with-sublist incremental-list
 
   - **[20P] Vorträge**
-    
+
     - [19P] Inhaltliche Qualität, Verständlichkeit, optische Präsentation, Persönliches Auftreten
     - [ 1P] Abgabe der Checkliste (als PDF) unterschrieben und abgearbeitet
 
   - **[20P] Code Reviews**
-    
-    Pro Code Review (insgesamt 2 pro Team) werden folgende Kriterien bewertet:
 
-    - [ 1P] Kurzpräsentation des ersten Eindrucks 
-    - [ 6P] Qualität der Code Reviews
-    - [ 3P] Qualität der Präsentation der Code Reviews
+    Pro durchgeführtes Code Review werden folgende Kriterien bewertet:
+
+    - [ 1P] Kurzpräsentation des ersten Eindrucks
+    - [ 14P] Qualität der Code Reviews
+    - [ 5P] Qualität der Präsentation der Code Reviews
   - **[58P] Spiel**
-    
+
     - [ 5P] Präsentation des Spielkonzepts (Fake Screenshots, Mockups, Storyboard, etc.)
     - [ 3P] Vorführung des aktuellen Stands der Anwendung (d. h. es gibt eine erste (in Teilen spielbare) Version des Spiels)
     - [12P] Es ist direkt spielbar, d.h. es können mehrere Spieler gleichzeitig spielen und es kommt zu keinen Fehlern, die das Spielen einiger oder aller verhindern
@@ -894,10 +900,10 @@ Bewertung
     - [ 3P] README mit Bau- und Installationsanleitung
     - [ 2P] HTTP API-Spezifikation bzw. Schnittstellendokumentation (in README)
   - **[ 2P] Organisation**
-  
+
     - [ 1P] Dokumentation des KI Einsatzes und Reflexion darüber
     - [ 1P] Dokumentation der Teamarbeit, d. h. wer hat welchen Anteil an der Entwicklung welcher Teile der Anwendung
-  
+
     .. important::
 
       Ohne die Abgabe dieser Dokumente erfolgt keine Bewertung.
@@ -916,7 +922,7 @@ Teams
   .. module:: group-assignment
     :class: accentuate
     :scope: slide
-    
+
     {
         "defaultNumberOfStudents": 23,
         "defaultGroupSize": 3,
