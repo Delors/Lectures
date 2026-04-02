@@ -743,7 +743,7 @@ Exponentielle Suche im sortierten (unbeschränkten) *Array*
 
 .. exercise:: Exponentiell Interpolierende Suche
 
-    #. Implementieren Sie den Algorithmus für die exponentiell interpolierende Suche in einer Programmiersprache Ihrer Wahl. (Ggf. müssen Sie noch die passende binäre Suche implementieren). Implementieren Sie die Suche basierend auf einer Funktion und nicht über einem Array.
+    #. Implementieren Sie den Algorithmus für die exponentiell interpolierende Suche in einer Programmiersprache Ihrer Wahl. (Ggf. müssen Sie noch die passende binäre Suche implementieren). Implementieren Sie die Suche basierend auf einer Funktion und nicht über einem Array. Die Funktion kann zum Beispiel eine mathematische Funktion sein, oder eine einfache Funktion die auf einem Array operiert.
 
     #. Gegeben sei die folgende Funktion, die als Generator fungiert. (:math:`x` sei eine natürliche Zahl).
 
@@ -759,7 +759,7 @@ Exponentielle Suche im sortierten (unbeschränkten) *Array*
 
         .. rubric:: |java-icon| Hinweise zur Implementierung
 
-        In Java können Sie die Funktion als :java:`java.util.function.DoubleUnaryOperator` implementieren. Der Aufruf erfolgt dann zum Beispiel mit Hilfe einer Lambda-Funktion.
+        In Java kann die zu übergebene Funktion den Typ :java:`java.util.function.DoubleUnaryOperator` haben. Beim Aufruf kann man dann zum Beispiel eine entsprechende Lambda-Funktion angeben werden, die für einen double Wert einen anderen double Wert zurückgibt.
 
         Es kann hilfreich sein alle statischen Methoden und Konstanten der :java:`Math`-Klasse über einen static import zu verwenden.
 
