@@ -16,7 +16,7 @@ Komplexität und Algorithmen
 
 :Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
 :Kontakt: michael.eichberg@dhbw.de, Raum 149B
-:Version: 2.0.3
+:Version: 2.0.4
 
 .. container:: peripheral
 
@@ -194,7 +194,7 @@ Beispiel: Berechnung der Fibonacci-Zahlen (rekursiv)
 
     .. card::
 
-        :math:`F(n)` als stehende Formel:
+        Berechnung von :math:`F(n)` über stehende Formel:
 
         .. math::
 
@@ -203,10 +203,11 @@ Beispiel: Berechnung der Fibonacci-Zahlen (rekursiv)
 
     .. card::
 
-        .. rubric:: Aufrufbaum
+        .. rubric:: Aufrufbaum, bei Berechnung mittels Rekursion
 
         .. image:: images/fib.svg
             :align: center
+            :class: light-image
 
 
 
@@ -397,6 +398,7 @@ Folgen und Laufzeiten
 
     .. image:: images/hanoi.svg
         :align: center
+        :class: light-image
 
     .. container:: text-align-center peripheral
 
@@ -737,7 +739,7 @@ Wir möchten :math:`f(x) = \frac{\ln(x)}{x^{2/3}}` für :math:`x \to \infty` unt
     Um eine Potenz aus einer Wurzel zu bekommen, hilft ggf. das Wurzelgesetz :math:`\sqrt{a} \cdot \sqrt{b} = \sqrt{a \cdot b}`.
 
     .. example::
-        
+
         :math:`\sqrt{x^4 + x^2} = \sqrt{x^4 (1 + 1/x ^2)} = \sqrt{x^4} \cdot \sqrt{(1 + 1/x ^2)} = x^2 \cdot \sqrt{(1 + 1/x ^2)}`.
 
 
@@ -852,9 +854,10 @@ Verstehen von Aufwandsklassen
 
 .. image:: images/aufwandsklassen.svg
     :align: center
+    :class: light-image
 
-.. remark::
-    :class: s-font-size-80
+
+.. supplemental::
 
     Häufige Vergleichsfunktionen sind zum Beispiel Monome wie :math:`n^k` für :math:`k ∈ \mathbb{N}_0`.
 
@@ -1036,7 +1039,7 @@ Aufwand - Übersicht
 
 .. image:: images/aufwand.svg
     :align: center
-
+    :class: light-image
 
 
 
@@ -1325,9 +1328,11 @@ Beispiel Primzahltest: Analyse mit elementaren Kosten
 
 .. supplemental::
 
-    Beachte, dass in keinem Falle alle Instruktionen ausgeführt werden.
-
     .. hint::
+
+        Beachte, dass in keinem Falle alle Instruktionen ausgeführt werden. Insbesondere wird Zeile 5 im schlechtesten Falle nicht ausgeführt und deswegen sind es "7 + " Schritte.
+
+    .. remark::
 
         Dies ist kein effizienter Algorithmus zum Feststellen ob eine Zahl Primzahl ist. Dieser Algorithmus ist nur zu Demonstrationszwecken gedacht.
 
@@ -1357,6 +1362,7 @@ Insertion-Sort: Analyse mit abstrahierten Kosten
     .. card::
 
         .. raw:: html
+            :class: light-image
 
             <style>
                 #insertion-sort-visualization {
@@ -1386,6 +1392,7 @@ Insertion-Sort: Analyse mit abstrahierten Kosten
 
             - .. image:: images/insertion_sort.svg
                     :alt: Visualisierung des Insertion-Sort-Algorithmus
+                    :class: light-image
 
             - .. code:: python
                     :number-lines:
@@ -1412,13 +1419,13 @@ Beispiel Insertion-Sort: Detailanalyse
         :header: "", "Algorithmus: Insertion-Sort(A, n) [Pseudocode - Index startet bei 1]", "Zeit", "Anzahl"
         :widths: 3, 80, 10, 25
 
-        1:, ``for i = 2...n do``, "c1", :math:`n`
-        2:,   ``key = A[i]``, c2, :math:`n-1`
-        3:,   ``j = i - 1``,                          c3   ,   :math:`n−1`
-        4:,   ``while j > 0 and A[j] > key do``,     c4  ,    :math:`\sum_{i=2}^n t_i`
-        5:,     ``A[j + 1] = A[j]``,              c5  ,    :math:`\sum_{i=2}^n (t_i−1)`
-        6:,     ``j = j - 1``,                      c6   ,  :math:`\sum_{i=2}^n (t_i−1)`
-        7:,   ``A[j + 1] = key``,                   c7 ,     :math:`n−1`
+        1:, ``for i = 2...n do``, "c₁ ", :math:`n`
+        2:,   ``key = A[i]``, c₂, :math:`n-1`
+        3:,   ``j = i - 1``,                          c₃   ,   :math:`n−1`
+        4:,   ``while j > 0 and A[j] > key do``,     c₄  ,    :math:`\sum_{i=2}^n t_i`
+        5:,     ``A[j + 1] = A[j]``,              c₅  ,    :math:`\sum_{i=2}^n (t_i−1)`
+        6:,     ``j = j - 1``,                      c₆   ,  :math:`\sum_{i=2}^n (t_i−1)`
+        7:,   ``A[j + 1] = key``,                   c₇ ,     :math:`n−1`
 
     - :math:`c_x` sind die konstanten Kosten für die jeweilige Operation. Wir abstrahieren diese als :math:`c = max(c_1,...c_7)`.
     - :math:`t_i` ist die Anzahl der Schritte, die für das Einsortieren der :math:`i`-ten Karte benötigt wird. Dies hängt davon ab, wie die Liste vorliegt.
@@ -1494,9 +1501,13 @@ Beispiel Insertion-Sort: Detailanalyse
 
 .. supplemental::
 
-    .. hint::
+    .. remark::
 
         In Zeile 1 ist die Anzahl :math:`n`, da :math:`n-1` mal hochgezählt wird und dann noch ein Test erfolgt, der fehlschlägt und die Schleife beendet.
+
+    .. observation::
+
+        Die maximale Anzahl der Schritte der inneren Schleife hängt direkt davon ab wie die liste sortiert ist **und wie weit wir insgesamt schon gekommen sind**. D. h. im ersten Schleifendurchlauf (i =2) wird die innere Schleife maximal :math:`1` mal durchlaufen, im zweiten :math:`2` mal, usw.. Deswegen muss hier die Summenformel für die Anzahl der Gesamtschritte verwendet werden.
 
 
 
@@ -1579,10 +1590,10 @@ In Hinblick auf den Zeitaufwand gilt:
             :number-lines:
             :class: margin-top-1em
 
-            Algorithmus Power(x,n)
-                r = 1
-                for i = 1...n do
-                    r = r * x
+            function Power(x,n)
+                r := 1
+                for i := 1...n do
+                    r := r * x
                 return r
 
         .. solution::
@@ -1591,10 +1602,10 @@ In Hinblick auf den Zeitaufwand gilt:
             .. code:: pascal
                 :number-lines:
 
-                Algorithmus Power(x,n)      # Anzahl der Rechenschritte
-                    r = 1                   # 1
-                    for i = 1...n do        # n + 1
-                        r = r * x           # n
+                function Power(x,n)         # Anzahl der Rechenschritte
+                    r := 1                  # 1
+                    for i := 1...n do       # n + 1
+                        r := r * x          # n
                     return r                # 1
 
             Sei c ein konstanter Faktor, der gleich dem größten Faktor ist, der von einem Rechenschritt benötigt wird.
@@ -1628,15 +1639,15 @@ In Hinblick auf den Zeitaufwand gilt:
     .. code:: pascal
         :number-lines:
 
-        Algorithmus BinPower(x,n)
-            r = 1
+        function BinPower(x,n)
+            r := 1
             while n > 0 do
                 if n mod 2 == 1 then
-                    r = r * x
-                    n = (n-1)/2
+                    r := r * x
+                    n := (n-1)/2
                 else
-                    n = n/2
-                x = x * x
+                    n := n/2
+                x := x * x
             return r
 
     .. solution::
@@ -1647,15 +1658,15 @@ In Hinblick auf den Zeitaufwand gilt:
         .. code:: pascal
             :number-lines:
 
-            Algorithmus BinPower(x,n)       # Anzahl der Rechenschritte
-                r = 1                       # 1
+            function BinPower(x,n)          # Anzahl der Rechenschritte
+                r := 1                      # 1
                 while n > 0 do              # 1 + (max i für das gilt t_i = 1)
                     if n mod 2 == 1 then    # max i für das gilt t_i = 1 (# der Vergleiche)
-                        r = r * x           # Summe aller t_i; d.h. Anzahl der 1-Bits in n
-                        n = (n-1)/2         # Summe aller t_i
+                        r := r * x          # Summe aller t_i; d.h. Anzahl der 1-Bits in n
+                        n := (n-1)/2        # Summe aller t_i
                     else
-                        n = n/2             # Summe aller (1-t_i); d.h. Anzahl der „relevanten“ 0-Bits in n
-                    x = x *x                # max i für das gilt t_i = 1
+                        n := n/2            # Summe aller (1-t_i); d.h. Anzahl der „relevanten“ 0-Bits in n
+                    x := x * x              # max i für das gilt t_i = 1
                 return r                    # 1
 
         Sei c ein konstanter Faktor, der gleich dem größten Faktor ist, der von einem Rechenschritt benötigt wird.
@@ -1692,6 +1703,7 @@ In Hinblick auf den Zeitaufwand gilt:
     .. card::
 
         .. raw:: html
+            :class: light-image
 
             <style>
                 #bubble-sort-visualization {
@@ -2097,8 +2109,6 @@ Rekurrenzgleichung für rekursiv teilende Algorithmen
 
         In diesem Fall können drei Fälle unterschieden identifiziert werden:
 
-        .. class:: incremental-list
-
         1. Ist der Aufwand :math:`f(n)` vernachlässigbar gegenüber dem Aufwand der weiteren Aufrufe, so ist ein rein durch die Rekursion bestimmtes Verhalten zu erwarten.
         2. Entspricht der Aufwand :math:`f (n)` genau dem Aufwand der weiteren Aufrufe, so vervielfältigt sich der Aufwand gegenüber dem 1. Fall, bleibt aber in der gleichen Größenordnung.
         3.  Ist der Aufwand :math:`f (n)` größer als der Aufwand der verbleibenden Aufrufe, so wird der Aufwand asymptotisch von :math:`f (n)` dominiert.
@@ -2320,6 +2330,7 @@ Master-Theorem: Zusammenfassung
         .. rubric:: Mergesort (Visualisierung)
 
         .. raw:: html
+            :class: light-image
 
             <style>
                 #merge-sort-visualization {
@@ -2367,5 +2378,3 @@ Master-Theorem: Zusammenfassung
                 .. math::
 
                     T(n) = \Theta(n \cdot \log n)
-
-
