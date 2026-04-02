@@ -21,8 +21,6 @@
 
 .. include:: ../docutils.defs
 
-.. |newton-code.zip| source:: code/newton-code.zip
-    :path: relative
 
 
 
@@ -33,7 +31,7 @@ Eine kurze Einführung
 
 :Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
 :Kontakt: michael.eichberg@dhbw.de, Raum 149B
-:Version: 1.0.3 [Themed]
+:Version: 1.0.5 [Themed]
 
 .. supplemental::
 
@@ -695,9 +693,11 @@ Projekt bauen und ausführen
 
     .. exercise:: Build-Konfiguration eines Java Projekts
 
+        .. rubric:: Basisaufgaben
+
         (Falls Maven (``mvn``) noch nicht installiert ist, installieren Sie es.)
 
-        - entpacken Sie das Projekt |newton-code.zip|.
+        - entpacken Sie das Projekt `newton-code.zip <code/newton/newton-1.0-sources.zip>`__.
         - legen Sie eine ``pom.xml`` Datei an, um das Projekt zu bauen.
         - Konfigurieren Sie eine Abhängigkeit zu JUnit 5.14.3 und konfigurieren Sie das ``surefire`` Plugin, um die Tests auszuführen.
         - Nutzen Sie :console:`mvn test`, um die Tests auszuführen.
@@ -705,11 +705,15 @@ Projekt bauen und ausführen
         - Nutzen Sie :console:`mvn package`, um das Projekt zu bauen.
         - Nutzen Sie :console:`mvn site`, um eine Dokumentation des Projekts zu erstellen.
         - Schauen Sie sich die erzeugten Artefakte an.
-        - Testen Sie ob Sie die Anwendung mit ``java -jar target/newton-1.0-SNAPSHOT.jar`` starten können.
+        - Testen Sie ob Sie die Anwendung mit:
+
+          ``java -jar target/newton-1.0-SNAPSHOT.jar``
+
+          starten können.
 
         .. rubric:: Weiterführende Aufgaben
 
-        (In diesem Fall ist es Ihrer Aufgabe zu recherchieren wie die Einbindung/Konfiguration zu erfolgen hat.)
+        (In diesem Fall ist es Ihrer Aufgabe zu recherchieren wie die Einbindung/Konfiguration zu erfolgen hat. Stellen Sie sicher, dass Sie JUnit 5.14.3 nutzen; die Verwendung von KI Tools ist - außer für die Tests - gestattet.)
 
         - Binden Sie Checkstyle in Ihre Projekt ein. D. h. wenn Sie die :console:`mvn site` ausführen, dann soll automatisch ein Report in Hinblick auf die Einhaltung der Checkstyle-Regeln erstellt werden.
 
@@ -722,6 +726,13 @@ Projekt bauen und ausführen
 
         .. solution::
             :pwd: MAVENFORJAVA25
+
+            Um alles zu kompilieren, die Tests auszuführen und JaCoCo auszuführen - inkl. Report, sollten Sie folgenden Befehl auf der Kommandozeile ausführen:
+
+            .. code:: console
+
+                mvn clean compile test site
+
 
             .. include:: code/newton/pom.xml
                 :code: xml
