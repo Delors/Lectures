@@ -16,7 +16,7 @@ Hashing und Hashmaps
 
 :Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
 :Kontakt: michael.eichberg@dhbw.de, Raum 149B
-:Version: 2.0.1
+:Version: 2.0.2 [Themed]
 
 .. container:: peripheral
 
@@ -46,9 +46,9 @@ Einführung
 Suchen in einer Liste
 --------------------------------------------------------
 
-.. container:: s-font-size-70 highlight-cell-on-hover
+.. container:: s-font-size-80
 
-    .. class:: incremental-table-rows
+    .. class:: incremental-table-rows highlight-cell-on-hover
 
     +-----------------------------------------+----------+----------+---------+-------------------------+-----------+---------+---------------------------------+
     | Implementation                          | Garantie                      | Durchschnittlicher Fall                       | Operationen auf den Schlüsseln  |
@@ -79,11 +79,11 @@ Hashing - Grundidee
 --------------------------------------------------------
 
 .. image:: images/Hashkollision.svg
-    :class: opaque
+    :class: light-image
     :alt: Hashmap
     :align: right
 
-.. deck::
+.. deck:: d-no-clear
 
     .. card:: d-no-clear
 
@@ -156,14 +156,21 @@ Berechnung der Hash-Funktion
 
 
 
+
+.. class:: new-section transition-move-to-top
+
 Hashfunktionen
+--------------------------------------------------------
+
+
+Grundlegende - Hashfunktionen
 --------------------------------------------------------
 
 .. deck::
 
     .. card::
 
-        .. definition::
+        .. definition:: Hashfunktion
 
             Eine Hashfunktion :math:`h : M →\mathbb{Z}_n` bildet eine Menge :math:`M` mit :math:`|M|≥|\mathbb{Z}_n|` auf die Zahlen :math:`0,...,n−1` ab.
 
@@ -185,11 +192,11 @@ Hashfunktionen
 
         .. class:: incremental
 
-        - **Hashes für Datenstrukturen** *müssen sehr effizient* sein.
-        - Für **Hashes, welche verwendet werden im Rahmen von Verschlüsselung und Signaturen,**
+        - *Hashes für Datenstrukturen* *müssen sehr effizient* sein.
+        - Für *Hashes, welche verwendet werden im Rahmen von Verschlüsselung und Signaturen,*
           muss es schwer sein:
 
-          - ein Urbild zu finden (d. h. von Y auf X zu schließen)
+          - ein Urbild zu finden (d. h. von :math:`Y` auf :math:`X` zu schließen)
           - zwei kollidierende Werte zu finden.
 
           .. supplemental::
@@ -197,7 +204,7 @@ Hashfunktionen
              MD5 ist seit 2008 und SHA1 seit 2017 „geknackt“.
 
           - kryptographische Hashes *sollten effizient berechenbar* sein.
-        - **Hashes für Passwortspeicherung** müssen die selben Anf. erfüllen wie Hashes für Signaturen und Verschlüsselungszwecke, dürfen aber *nicht effizient berechenbar* sein.
+        - *Hashes für Passwortspeicherung* müssen die selben Anf. erfüllen wie Hashes für Signaturen und Verschlüsselungszwecke, dürfen aber *nicht effizient berechenbar* sein.
 
         .. important::
             :class: incremental
@@ -242,9 +249,10 @@ Hashfunktionen
                 **Zeichenketten**
 
                 .. note::
+                    :class: width-25
 
                     .. csv-table::
-                        :header: char, unicode
+                        :header: Zeichen, Unicode Wert
 
                         'a', 97
                         'b', 98
@@ -268,6 +276,110 @@ Hashfunktionen
                     // hash(['c','a','l','l']) = // ≘ hash("call")
                     //    99 · 31·31·31 + 97 · 31·31 + 108 · 31 + 108 =
                     //    108 + 31 · ( 108 + 31 · (97 + 31 · (99)))
+
+
+
+Gängige Ansätze für Hashfunktionen
+--------------------------------------------------------
+
+.. deck::
+
+    .. card::
+
+        :Modulo-Hashfunktion:
+
+            Sei :math:`n` möglichst eine Primzahl:
+
+            :math:`h^{mod}_n(x) = x\; mod\; n`
+
+        **Bewertung**
+
+        - einfach zu berechnen/sehr effizient
+        - surjektiv
+        - gleichverteilt
+        - wenn :math:`n` keine Primzahl ist, dann kann es (leicht) passieren, dass bestimmte (Teil-)daten weniger oder keinen Einfluss auf den Hashwert haben:
+
+          .. class:: incremental
+
+          - :math:`x \cdot 10^3 \mod 40 = 0`
+          - :math:`x \cdot 10^3 \mod 42 \in \{0,2,4,...,40\}` Anm.: :math:`ggt(42,1000) = 2`
+          - :math:`x \cdot 10^3 \mod 41 \in \{0,1,2,3,...,40\}` Anm.: :math:`ggt(41,1000) = 1`
+
+    .. card::
+
+        :Multiplikations-Hashfunktion:
+
+            Sei :math:`c` fest, oft :math:`c = {\sqrt{5}−1 \over 2} \approx 0,6180339887498949`:
+
+            .. presenter-note::
+
+                c ist eine irrationale Zahl.
+
+            :math:`h^{mul}_n (x) = ⌊n·(c·x −⌊c·x⌋)⌋`
+
+        **Bewertung**
+
+        .. class:: list-with-explanations
+
+        - nicht beweisbar surjektiv
+        - nur asymptotisch gleichverteilt
+        - Das verwendete :math:`c` sollte eine gute Durchmischung der Key-Bits fördern.
+
+          Andere irrationale Zahlen sind ggf. auch sinnvoll/möglich.
+
+        - Berechnung benötigt eine effiziente Fließkomma-Verarbeitung
+
+
+
+.. class:: exercises
+
+Übung
+--------------------------------------------------------
+
+.. exercise:: Hashwerte berechnen I
+
+    Berechnen Sie:
+
+    1. :math:`h^{mod}_{257}(1 000)`
+    2. :math:`h^{mul}_{257}(1 000)`
+
+    .. solution::
+        :pwd: zweiWerte
+
+        .. rubric:: Lösung
+
+        **Python-Implementierung**
+
+        .. code:: python
+            :class: copy-to-clipboard
+
+            import math
+
+            c = ((5 ** 0.5) - 1) / 2
+            def h(x,n) :
+                return  math.floor(n * (c * x - math.floor(c*x)))
+
+        **Als mathematischer Ausdruck**
+
+        1. :math:`h^{mod}_{257}(1 000) = 1 000 \mod 257 = 229`
+        2. :math:`h^{mul}_{257}(1 000) = ⌊257·(0,6180339887498949·1000 −⌊0,6180339887498949·1 000⌋)⌋ = 8`
+
+.. exercise:: Hashwerte berechnen II
+
+    Berechnen Sie:
+
+    1. :math:`h^{mod}_{263}(10 000)`
+    2. :math:`h^{mul}_{263}(10 000)`
+
+    .. solution::
+        :pwd: WiederZweiWerte+
+
+        .. rubric:: Lösung
+
+        **Als mathematischer Ausdruck**
+
+        1. :math:`h^{mod}_{263}(10 000) = 10 000 \mod 263 = 6`
+        2. :math:`h^{mul}_{263}(10 000) = ⌊263·(0,6180339887498949·10 000 −⌊0,6180339887498949·10 000⌋)⌋ = 89`
 
 
 
@@ -568,6 +680,18 @@ Verwendung von Hashes in Java
                 public int hashCode() { return java.util.Objects.hash(name, age); }
             }
 
+        .. supplemental::
+
+            .. hint::
+
+                In einem realen Project würden wir ein :java:`record` statt einer Klasse verwenden; die Implementierung wäre praktisch identisch und würde automatisch generiert werden.
+
+                .. code:: java
+                    :class: copy-to-clipboard
+                    :number-lines:
+
+                    record Person(String name, int age) {}
+
     .. card::
 
         .. rubric:: Verwendung der Klasse :java:`Person`
@@ -716,9 +840,9 @@ Verwendung von Hashes in Java
 
     Die Klasse :java:`Student` (Nutzen Sie hier kein :java:`record`) soll:
 
-    - die Attribute/Properties ``name`` und ``matriculationNumber`` haben.
+    - Die Attribute/Properties :java:`name` und :java:`matriculationNumber` haben.
 
-    - die Methoden ``equals`` und ``hashCode`` sinnvoll/korrekt definieren
+    - Die Methoden :java:`equals(Object)` und :java:`hashCode()` sinnvoll/korrekt definieren.
 
     Aufgaben:
 
@@ -780,117 +904,6 @@ Verwendung von Hashes in Java
 
 
 
-.. class:: new-section transition-move-to-top
-
-Hashfunktionen
---------------------------------------------------------
-
-
-
-Gängige Ansätze für Hashfunktionen
---------------------------------------------------------
-
-.. deck::
-
-    .. card::
-
-        :Modulo-Hashfunktion:
-
-            Sei :math:`n` möglichst eine Primzahl:
-
-            :math:`h^{mod}_n(x) = x\; mod\; n`
-
-        **Bewertung**
-
-        - einfach zu berechnen/sehr effizient
-        - surjektiv
-        - gleichverteilt
-        - wenn :math:`n` keine Primzahl ist, dann kann es (leicht) passieren, dass bestimmte (Teil-)daten weniger oder keinen Einfluss auf den Hashwert haben:
-
-          .. class:: incremental
-
-          - :math:`x \cdot 10^3 \mod 40 = 0`
-          - :math:`x \cdot 10^3 \mod 42 \in \{0,2,4,...,40\}` Anm.: :math:`ggt(42,1000) = 2`
-          - :math:`x \cdot 10^3 \mod 41 \in \{0,1,2,3,...,40\}` Anm.: :math:`ggt(41,1000) = 1`
-
-    .. card::
-
-        :Multiplikations-Hashfunktion:
-
-            Sei :math:`c` fest, oft :math:`c = {\sqrt{5}−1 \over 2} \approx 0,6180339887498949`:
-
-            .. presenter-note::
-
-                c ist eine irrationale Zahl.
-
-            :math:`h^{mul}_n (x) = ⌊n·(c·x −⌊c·x⌋)⌋`
-
-        **Bewertung**
-
-        .. class:: list-with-explanations
-
-        - nicht beweisbar surjektiv
-        - nur asymptotisch gleichverteilt
-        - Das verwendete :math:`c` sollte eine gute Durchmischung der Key-Bits fördern.
-
-          Andere irrationale Zahlen sind ggf. auch sinnvoll/möglich.
-
-        - Berechnung benötigt eine effiziente Fließkomma-Verarbeitung
-
-
-
-.. class:: exercises
-
-Übung
---------------------------------------------------------
-
-.. exercise:: Hashwerte berechnen I
-
-    Berechnen Sie:
-
-    1. :math:`h^{mod}_{257}(1 000)`
-    2. :math:`h^{mul}_{257}(1 000)`
-
-    .. solution::
-        :pwd: zweiWerte
-
-        .. rubric:: Lösung
-
-        **Python-Implementierung**
-
-        .. code:: python
-            :class: copy-to-clipboard
-
-            import math
-
-            c = ((5 ** 0.5) - 1) / 2
-            def h(x,n) :
-                return  math.floor(n * (c * x - math.floor(c*x)))
-
-        **Als mathematischer Ausdruck**
-
-        1. :math:`h^{mod}_{257}(1 000) = 1 000 \mod 257 = 229`
-        2. :math:`h^{mul}_{257}(1 000) = ⌊257·(0,6180339887498949·1000 −⌊0,6180339887498949·1 000⌋)⌋ = 8`
-
-.. exercise:: Hashwerte berechnen II
-
-    Berechnen Sie:
-
-    1. :math:`h^{mod}_{263}(10 000)`
-    2. :math:`h^{mul}_{263}(10 000)`
-
-    .. solution::
-        :pwd: WiederZweiWerte+
-
-        .. rubric:: Lösung
-
-        **Als mathematischer Ausdruck**
-
-        1. :math:`h^{mod}_{263}(10 000) = 10 000 \mod 263 = 6`
-        2. :math:`h^{mul}_{263}(10 000) = ⌊263·(0,6180339887498949·10 000 −⌊0,6180339887498949·10 000⌋)⌋ = 89`
-
-
-
 
 .. class:: new-section transition-move-to-top
 
@@ -920,7 +933,7 @@ Belegung von Hashtabellen
 
 Die Belegung von Hashtabellen ist für die Effizienz entscheidend.
 
-.. definition:: 
+.. definition::
 
     Ein Array :math:`A` der Kapazität :math:`n` mit einer Hashfunktion :math:`h_n` wird :math:`Hashtabelle(A,h_n)` genannt.
 
@@ -939,6 +952,7 @@ Verkettete Hashtabellen
         .. image:: images/hashtables/direkte_verkettung.svg
                     :alt: Hashtabelle mit direkter Verkettung
                     :align: center
+                    :class: light-image
 
         .. supplemental::
 
@@ -951,9 +965,9 @@ Verkettete Hashtabellen
         .. image:: images/hashtables/separate_verkettung.svg
                     :alt: Hashtabelle mit separater Verkettung
                     :align: center
+                    :class: light-image
 
         .. supplemental::
-
 
             Die *separate Verkettung* von Überläufern verwendet eine :math:`Hashtabelle(A,h_n)`, bei der das Array :math:`A` aus Knoten einer einfach verketteten Liste besteht, dessen Wert :math:`nil` ist, wenn unter dem Hashwert noch nichts gespeichert wurde.
 
@@ -964,7 +978,7 @@ Verkettete Hashtabellen
 Offene Adressierung
 -------------------------------
 
-.. definition:: 
+.. definition::
 
     Soll der :math:`Hashtabelle(A,h_n)` mit einem Array :math:`A` ein Datensatz mit Schlüssel :math:`k` hinzugefügt werden soll, so erfolgt dies in :math:`A[h_n(k)]`, wenn dieser Eintrag noch nicht belegt ist. Ansonsten werden  :math:`i= 1,...,n−1` weitere Positionen :math:`A[g_n(k,i)]` geprüft.
 
@@ -1012,6 +1026,7 @@ Beispiel Offene Adressierung (Hashing: :math:`x\; mod\; 7`)
         .. image:: images/open_addressing/linear_probing.svg
                     :alt: Offene Adressierung mit linearem Sondieren
                     :align: right
+                    :class: light-image
 
         **Lineare Sondierung**
 
@@ -1022,6 +1037,7 @@ Beispiel Offene Adressierung (Hashing: :math:`x\; mod\; 7`)
         .. image:: images/open_addressing/double_hashing.svg
                     :alt: Offene Adressierung mit doppeltem Hashing
                     :align: right
+                    :class: light-image
 
         **Doppeltes-Hashing**
 
@@ -1032,6 +1048,7 @@ Beispiel Offene Adressierung (Hashing: :math:`x\; mod\; 7`)
         .. image:: images/open_addressing/quadratic_probing.svg
                     :alt: Offene Adressierung mit quadratischem Sondieren
                     :align: right
+                    :class: light-image
 
         **Quadratische Sondierung**
 
