@@ -1,14 +1,14 @@
 package ds.generic;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertTrue;
-import static org.junit.jupiter.api.Assertions.assertEquals;
+
+import java.util.Optional;
 import org.junit.jupiter.api.Test;
-import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.AfterEach;
 
 public class QueueTest {
-    
+
     // TESTS
 
     @Test
@@ -24,7 +24,7 @@ public class QueueTest {
         Queue<Integer> queue = Queue.empty();
         queue.enqueue(1);
         queue.enqueue(2);
-        assertEquals(1, queue.dequeue());
+        assertEquals(Optional.of(1), queue.dequeue());
         assertEquals(1, queue.size());
     }
 

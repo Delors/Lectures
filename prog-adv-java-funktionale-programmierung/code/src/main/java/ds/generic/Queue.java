@@ -1,13 +1,13 @@
 package ds.generic;
 
-import java.util.function.UnaryOperator;
+import java.util.Optional;
 import java.util.function.Consumer;
 import java.util.function.Function;
+import java.util.function.UnaryOperator;
 
 public interface Queue<T> {
-    
     void enqueue(T item);
-    T dequeue();
+    Optional<T> dequeue();
     boolean isEmpty();
     int size();
 
@@ -15,11 +15,13 @@ public interface Queue<T> {
     void replaceAll(UnaryOperator<T> operator);
     void forEach(Consumer<T> operator);
 
-    static class TheQueue<T> implements Queue<T>{
-        
+    static class TheQueue<T> implements Queue<T> {
+
         class QueueElement {
+
             private T t;
             private QueueElement next;
+
             QueueElement(T t) {
                 this.t = t;
             }
@@ -35,7 +37,7 @@ public interface Queue<T> {
 
         @Override
         public void enqueue(T t) {
-            if(first == null) {
+            if (first == null) {
                 first = new QueueElement(t);
                 last = first;
                 return;
@@ -44,13 +46,13 @@ public interface Queue<T> {
         }
 
         @Override
-        public T dequeue() {
+        public Optional<T> dequeue() {
             if (first == null) {
-                throw new IllegalStateException("Queue is empty");
+                return Optional.empty();
             }
             T t = first.t;
             first = first.next;
-            return t;
+            return Optional.of(t);
         }
 
         @Override
@@ -103,7 +105,6 @@ public interface Queue<T> {
             sb.append(")");
             return sb.toString();
         }
-
     }
 
     static <T> Queue<T> empty() {

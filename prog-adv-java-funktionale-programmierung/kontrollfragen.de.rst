@@ -184,41 +184,6 @@ Lambda-Ausdrücke
 
 
 
-.. class:: exercises
-
-Streams
--------------------------------------
-
-.. exercise:: Was ist ein Stream?
-
-   .. solution::
-      :pwd: Stream
-
-      Ein Stream ist eine Abstraktion, die eine Sequenz von Elementen beschreibt, die verarbeitet werden können. Streams unterstützen eine Vielzahl von Operationen wie Filterung, Mapping und Reduzierung.
-
-.. exercise:: Welche Typen von Streams gibt es?
-   :class: incremental
-
-   .. solution::
-      :pwd: StreamTypen
-
-      - :java:`IntStream`
-      - :java:`LongStream`
-      - :java:`DoubleStream`
-      - :java:`Stream<T>`
-
-.. exercise:: Wie sieht die grundlegende Verwendung von Streams aus?
-   :class: incremental
-
-   .. solution::
-      :pwd: StreamVerwendung
-
-      1. Erstellen eines Streams
-      2. Anwenden von Zwischenoperationen (Verarbeitungs-/Transformationsschritte) (z.B. :java:`filter`, :java:`map`)
-      3. Anwenden einer Terminaloperation (z.B. :java:`collect`, :java:`forEach`)
-
-
-
 .. class:: new-section transition-move-to-top
 
 Datenstrukturen
@@ -238,45 +203,3 @@ Optional
       :pwd: OptIonal
 
       Der Datentyp :java:`Optional` dient dazu, den Umgang mit Nullwerten zu erleichtern und die Möglichkeit darzustellen, dass ein Wert vorhanden sein kann oder nicht. Er hilft, :java:`NullPointerException`\ s zu vermeiden.
-
-
-
-.. class:: exercises
-
-Queue / Warteschlange
--------------------------------------
-
-.. deck::
-
-   .. card::
-
-      .. exercise:: Warteschlangen verstehen
-
-         1. Benennen Sie die essentiellen Eigenschaften einer Warteschlange.
-         2. Welche Implementierungsstrategien gibt es für Warteschlangen? Erklären Sie diese kurz.
-
-         .. solution::
-            :pwd: Queue
-
-            Eigenschaften:
-
-            - FIFO (First In First Out)
-            - Elemente werden in der Reihenfolge verarbeitet, in der sie hinzugefügt wurden.
-            - Es gibt zwei Hauptoperationen: :java:`enqueue` (zum Hinzufügen eines Elements) und :java:`dequeue` (zum Entfernen des ältesten Elements).
-
-            Als Implementierungsstrategie gibt es:
-
-            - Array-basierte Implementierung (in der *Regel* ineffizient)
-            - Verkettete Liste (in der *Regel* effizient(er))
-
-   .. card::
-
-      .. exercise:: Erstellen Sie ein UML Klassendiagramm für doppelt verkettete Listen
-
-         .. solution::
-            :pwd: UMLChainedList
-
-            .. image:: images/chainedlist.svg
-               :alt: UML Klassendiagramm für doppelt verkette Listen
-               :align: center
-               :class: light-image
