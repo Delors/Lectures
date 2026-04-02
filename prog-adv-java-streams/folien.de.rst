@@ -43,10 +43,94 @@ Java - Streams
 
 
 
-.. class:: Glossary
+.. class:: global-information
 
-Funktionale Programmierung in Java
---------------------------------------------
+[λ] Glossar - Funktionale Programmierung in Java
+--------------------------------------------------
+
+.. scrollable::
+
+  .. list-table::
+    :header-rows: 1
+    :widths: 25 35 40
+    :width: 100%
+
+    * - Konzept
+      - Beschreibung
+      - Beispiel
+    * - Lambda-Ausdruck
+      - Eine anonyme Funktion, die als Wert übergeben werden kann. Syntax:
+
+        - :java:`(Parameter) -> Ausdruck`
+
+        - :java:`(Parameter) -> { Anweisungen; }`
+      - :java:`(x, y) -> x + y`
+
+        :java:`x -> x * x`
+
+        :java:`() -> 42`
+
+         :java:`(a, b) -> { int sum = a + b; return sum * 2; }`
+    * - Methoden-Referenz
+      - Kurzschreibweise für Lambdas, die lediglich eine bestehende Methode aufrufen. Varianten:
+
+        - statisch: :java:`Klasse::methode`
+        - auf Instanz: :java:`objekt::methode`
+        - auf Typ: :java:`Klasse::instanzMethode`
+        - Konstruktor: :java:`Klasse::new`
+      - :java:`Integer::parseInt`
+
+        :java:`System.out::println`
+
+        :java:`String::length`
+
+        :java:`ArrayList::new`
+    * - Funktionales Interface
+      - Ein Interface mit genau **einer** abstrakten Methode (SAM — *Single Abstract Method*). Kann mit :java:`@FunctionalInterface` annotiert werden und ermöglicht die Verwendung von Lambda-Ausdrücken.
+      - .. code:: java
+
+            @FunctionalInterface
+            interface MyFunc {
+                int apply(int a, int b);
+            }
+    * - :java:`Predicate<T>`
+      - Funktionales Interface: Prüft eine Bedingung auf einem Wert und gibt :java:`boolean` zurück.
+      - :java:`Predicate<Integer> isEven = x -> x % 2 == 0;`
+    * - :java:`Function<T,R>`
+      - Funktionales Interface: Bildet einen Wert vom Typ :java:`T` auf einen Wert vom Typ :java:`R` ab.
+      - :java:`Function<String,Integer> len = String::length;`
+    * - :java:`Consumer<T>`
+      - Funktionales Interface: Konsumiert einen Wert, gibt nichts zurück (:java:`void`).
+      - :java:`Consumer<String> printer = System.out::println;`
+    * - :java:`Supplier<T>`
+      - Funktionales Interface: Liefert einen Wert ohne Eingabe.
+      - :java:`Supplier<Double> random = Math::random;`
+    * - :java:`BinaryOperator<T>`
+      - Funktionales Interface: Verknüpft zwei Werte desselben Typs zu einem Ergebnis.
+      - :java:`BinaryOperator<String> wrap = (a, b) -> b + a + b;`
+    * - :java:`Comparator<T>`
+      - Funktionales Interface für den Vergleich von zwei Objekten; gibt einen :java:`int`-Wert zurück.
+      - :java:`Comparator<String> byLen = (a, b) -> a.length() - b.length();`
+
+        :java:`Comparator.comparing(String::length)`
+    * - Funktionen höherer Ordnung
+      - Funktionen, die andere Funktionen als Parameter nehmen oder als Ergebnis zurückgeben. Grundlage aller Stream-Operationen.
+      - :java:`stream.filter(x -> x > 0)` :java:`.map(x -> x * 2)`
+    * - Closure
+      - Ein Lambda-Ausdruck, der auf Variablen aus dem umgebenden Kontext zugreift. Diese Variablen müssen :java:`final` oder *effektiv final* sein.
+      - .. code:: java
+
+            final int factor = 10;
+            Stream.of(3,4,3).
+                map(x -> x * factor).
+                toList();
+    * - :java:`Optional<T>`
+      - Ein Container, der einen Wert enthalten kann oder leer ist. Ersetzt die Verwendung von :java:`null`.
+      - :java:`Optional.of(42)`
+
+        :java:`Optional.empty()`
+
+
 
 
 
@@ -59,11 +143,11 @@ Funktionale Programmierung in Java
 
     .. card::
 
-        **Verarbeitung von**:
+        **Bei der Datenverarbeitung von**:
 
         .. class:: list-with-sublists incremental-list
 
-        - großen Datenmengen
+        - großen Datenmengen,
 
           .. class:: incremental-list
 
@@ -73,23 +157,259 @@ Funktionale Programmierung in Java
 
     .. card::
 
-        .. example::
-            :class: incremental
-
-            .. rubric:: Konkrete Szenarien
+        .. example:: Konkrete Szenarien der Datenverarbeitung
 
             - HTTP Request/Response Handling (Audio/Video Streaming)
-            - Verarbeitung von AI Streaming Responses
             - Ver-/Entschlüsselung von großen Datenmengen
-            - Verarbeitung große Logdateien
-            - Kontinuierliche Verarbeitung von Daten
+            - kontinuierliche/echtzeit Verarbeitung von allg. Daten (z. B. Finanzdaten/-transaktionen) oder (IoT) Sensoren
             - Verarbeitung von Ereignissen (Event)
-            - Echtzeitdatenverarbeitung von kontinuierlichen Daten von (IoT) Sensoren, Finanzdaten/-transaktionen
             - Aufbereitung großer Wörterbücher (z.B. für Passwortwiederherstellung)
+            - Verarbeitung von AI Streaming Responses
+            - Verarbeitung große Logdateien
 
     .. card::
 
         - Parallele Verarbeitung und effiziente Nutzung von modernen CPU-Architekturen
+
+        .. deck:: center-content
+
+            .. card::
+
+                .. raw:: html
+
+                        <div style="width:71.5ch; height: 38.4ch">
+                        <svg viewBox="2 0 110 58"
+                            font-size="1.5"
+                            version="1.1" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="2" y="0" rx="1" width="108" height="58" fill="white" />
+                        <text x="60.0" y="3.5" text-anchor="middle"
+                                font-size="2" font-weight="bold" fill="#333">AMD EPYC Server CPUs — Entwicklung 2017–2026</text>
+                        <rect x="18" y="5" width="84" height="43"
+                                fill="#FAFAFA" stroke="#ccc" stroke-width="0.12"/>
+
+                        <line x1="18" y1="48.00" x2="102" y2="48.00" stroke="#e0e0e0" stroke-width="0.08" stroke-dasharray="0.3,0.6"/>
+                        <line x1="18" y1="40.83" x2="102" y2="40.83" stroke="#e0e0e0" stroke-width="0.08" stroke-dasharray="0.3,0.6"/>
+                        <line x1="18" y1="33.67" x2="102" y2="33.67" stroke="#e0e0e0" stroke-width="0.08" stroke-dasharray="0.3,0.6"/>
+                        <line x1="18" y1="26.50" x2="102" y2="26.50" stroke="#e0e0e0" stroke-width="0.08" stroke-dasharray="0.3,0.6"/>
+                        <line x1="18" y1="19.33" x2="102" y2="19.33" stroke="#e0e0e0" stroke-width="0.08" stroke-dasharray="0.3,0.6"/>
+                        <line x1="18" y1="12.17" x2="102" y2="12.17" stroke="#e0e0e0" stroke-width="0.08" stroke-dasharray="0.3,0.6"/>
+                        <line x1="18" y1="5.00" x2="102" y2="5.00" stroke="#e0e0e0" stroke-width="0.08" stroke-dasharray="0.3,0.6"/>
+
+                        <line x1="21.53" y1="5" x2="21.53" y2="48" stroke="lightgray" stroke-width="0.12" stroke-dasharray="0.5,0.5"/>
+                        <line x1="21.53" y1="48" x2="21.53" y2="48.8" stroke="gray" stroke-width="0.12"/>
+                        <line x1="39.88" y1="5" x2="39.88" y2="48" stroke="lightgray" stroke-width="0.12" stroke-dasharray="0.5,0.5"/>
+                        <line x1="39.88" y1="48" x2="39.88" y2="48.8" stroke="gray" stroke-width="0.12"/>
+                        <line x1="53.29" y1="5" x2="53.29" y2="48" stroke="lightgray" stroke-width="0.12" stroke-dasharray="0.5,0.5"/>
+                        <line x1="53.29" y1="48" x2="53.29" y2="48.8" stroke="gray" stroke-width="0.12"/>
+                        <line x1="67.41" y1="5" x2="67.41" y2="48" stroke="lightgray" stroke-width="0.12" stroke-dasharray="0.5,0.5"/>
+                        <line x1="67.41" y1="48" x2="67.41" y2="48.8" stroke="gray" stroke-width="0.12"/>
+                        <line x1="72.35" y1="5" x2="72.35" y2="48" stroke="lightgray" stroke-width="0.12" stroke-dasharray="0.5,0.5"/>
+                        <line x1="72.35" y1="48" x2="72.35" y2="48.8" stroke="gray" stroke-width="0.12"/>
+                        <line x1="83.65" y1="5" x2="83.65" y2="48" stroke="lightgray" stroke-width="0.12" stroke-dasharray="0.5,0.5"/>
+                        <line x1="83.65" y1="48" x2="83.65" y2="48.8" stroke="gray" stroke-width="0.12"/>
+                        <line x1="83.65" y1="5" x2="83.65" y2="48" stroke="lightgray" stroke-width="0.12" stroke-dasharray="0.5,0.5"/>
+                        <line x1="83.65" y1="48" x2="83.65" y2="48.8" stroke="gray" stroke-width="0.12"/>
+                        <line x1="100.59" y1="5" x2="100.59" y2="48" stroke="lightgray" stroke-width="0.12" stroke-dasharray="0.5,0.5"/>
+                        <line x1="100.59" y1="48" x2="100.59" y2="48.8" stroke="gray" stroke-width="0.12"/>
+                        <line x1="83.65" y1="48.8" x2="81.65" y2="49.7" stroke="gray" stroke-width="0.08"/>
+                        <line x1="83.65" y1="48.8" x2="85.65" y2="49.7" stroke="gray" stroke-width="0.08"/>
+                        <text x="21.53" y="50.8" text-anchor="middle" font-size="1.5" font-weight="bold" fill="black">Naples</text>
+                        <text x="21.53" y="52.6" text-anchor="middle" font-size="1.2" fill="black">7601</text>
+                        <text x="21.53" y="54.2" text-anchor="middle" font-size="1.1" fill="gray">06.2017</text>
+                        <text x="39.88" y="50.8" text-anchor="middle" font-size="1.5" font-weight="bold" fill="black">Rome</text>
+                        <text x="39.88" y="52.6" text-anchor="middle" font-size="1.2" fill="black">7742</text>
+                        <text x="39.88" y="54.2" text-anchor="middle" font-size="1.1" fill="gray">08.2019</text>
+                        <text x="53.29" y="50.8" text-anchor="middle" font-size="1.5" font-weight="bold" fill="black">Milan</text>
+                        <text x="53.29" y="52.6" text-anchor="middle" font-size="1.2" fill="black">7763</text>
+                        <text x="53.29" y="54.2" text-anchor="middle" font-size="1.1" fill="gray">03.2021</text>
+                        <text x="67.41" y="50.8" text-anchor="middle" font-size="1.5" font-weight="bold" fill="black">Genoa</text>
+                        <text x="67.41" y="52.6" text-anchor="middle" font-size="1.2" fill="black">9654</text>
+                        <text x="67.41" y="54.2" text-anchor="middle" font-size="1.1" fill="gray">11.2022</text>
+                        <g transform="translate(2,0)">
+                        <text x="72.35" y="50.8" text-anchor="middle" font-size="1.5" font-weight="bold" fill="#666666">Bergamo</text>
+                        <text x="72.35" y="52.6" text-anchor="middle" font-size="1.2" fill="black">9754</text>
+                        <text x="72.35" y="54.2" text-anchor="middle" font-size="1.1" fill="gray">06.2023</text>
+                        </g>
+                        <g transform="translate(2,0)">
+                            <text x="79.15" y="50.8" text-anchor="middle" font-size="1.5" font-weight="bold" fill="black">Turin</text>
+                            <text x="79.15" y="52.6" text-anchor="middle" font-size="1.2" fill="black">9755</text>
+                            <text x="79.15" y="54.2" text-anchor="middle" font-size="1.1" fill="gray">10.2024</text>
+                        </g>
+                        <g>
+                        <text x="88.15" y="50.8" text-anchor="middle" font-size="1.5" font-weight="bold" fill="#666666">Turin Dense</text>
+                        <text x="88.15" y="52.6" text-anchor="middle" font-size="1.2" fill="#666666">9965</text>
+                        <text x="88.15" y="54.2" text-anchor="middle" font-size="1.1" fill="gray">10.2024</text>
+                        </g>
+                        <text x="100.59" y="50.8" text-anchor="middle" font-size="1.5" font-weight="bold" fill="black">Venice</text>
+                        <text x="100.59" y="54.2" text-anchor="middle" font-size="1.1" fill="gray">10.2026</text>
+
+                        <text x="20" y="3.8" text-anchor="end" font-size="1.4" font-weight="bold" fill="#0066CC">Perf/Core</text>
+                        <line x1="17.4" y1="48.00" x2="18" y2="48.00" stroke="#0066CC" stroke-width="0.12"/>
+                        <text x="17" y="48.45" text-anchor="end" font-size="1.2" fill="#0066CC">0</text>
+                        <line x1="17.4" y1="40.83" x2="18" y2="40.83" stroke="#0066CC" stroke-width="0.12"/>
+                        <text x="17" y="41.28" text-anchor="end" font-size="1.2" fill="#0066CC">2</text>
+                        <line x1="17.4" y1="33.67" x2="18" y2="33.67" stroke="#0066CC" stroke-width="0.12"/>
+                        <text x="17" y="34.12" text-anchor="end" font-size="1.2" fill="#0066CC">4</text>
+                        <line x1="17.4" y1="26.50" x2="18" y2="26.50" stroke="#0066CC" stroke-width="0.12"/>
+                        <text x="17" y="26.95" text-anchor="end" font-size="1.2" fill="#0066CC">6</text>
+                        <line x1="17.4" y1="19.33" x2="18" y2="19.33" stroke="#0066CC" stroke-width="0.12"/>
+                        <text x="17" y="19.78" text-anchor="end" font-size="1.2" fill="#0066CC">8</text>
+                        <line x1="17.4" y1="12.17" x2="18" y2="12.17" stroke="#0066CC" stroke-width="0.12"/>
+                        <text x="17" y="12.62" text-anchor="end" font-size="1.2" fill="#0066CC">10</text>
+                        <line x1="17.4" y1="5.00" x2="18" y2="5.00" stroke="#0066CC" stroke-width="0.12"/>
+                        <text x="17" y="5.45" text-anchor="end" font-size="1.2" fill="#0066CC">12</text>
+
+                        <!-- Perf/Core: gestrichelte Linie -->
+                        <polyline points="21.53,32.10 39.88,28.91 53.29,23.59 67.41,14.48 83.65,8.53"
+                                    fill="none" stroke="#0066CC" stroke-width="0.35"
+                                    stroke-dasharray="1.5,0.8" stroke-linecap="round"/>
+                        <polyline points="72.35,20.54 83.65,17.58"
+                                    fill="none" stroke="#0088FF" stroke-width="0.35"
+                                    stroke-dasharray="1.5,0.8" stroke-linecap="round"/>
+                        <circle cx="21.53" cy="32.10" r="0.55" fill="#0066CC"/>
+                        <text x="21.53" y="31.00" text-anchor="middle" font-size="1.1" font-weight="bold" fill="#0066CC">4.4</text>
+                        <circle cx="39.88" cy="28.91" r="0.55" fill="#0066CC"/>
+                        <text x="39.88" y="27.81" text-anchor="middle" font-size="1.1" font-weight="bold" fill="#0066CC">5.3</text>
+                        <circle cx="53.29" cy="23.59" r="0.55" fill="#0066CC"/>
+                        <text x="53.29" y="22.49" text-anchor="middle" font-size="1.1" font-weight="bold" fill="#0066CC">6.8</text>
+                        <circle cx="67.41" cy="14.48" r="0.55" fill="#0066CC"/>
+                        <text x="67.41" y="13.38" text-anchor="middle" font-size="1.1" font-weight="bold" fill="#0066CC">9.4</text>
+                        <circle cx="72.35" cy="20.54" r="0.55" fill="#0088FF"/>
+                        <text x="72.35" y="19.44" text-anchor="middle" font-size="1.1" font-weight="bold" fill="#0088FF">7.7</text>
+                        <circle cx="83.65" cy="8.53" r="0.55" fill="#0066CC"/>
+                        <text x="83.65" y="7.43" text-anchor="middle" font-size="1.1" font-weight="bold" fill="#0066CC">11.0</text>
+                        <circle cx="83.65" cy="17.58" r="0.55" fill="#0088FF"/>
+                        <text x="85.45" y="18.08" text-anchor="middle" font-size="1.1" font-weight="bold" fill="#0088FF">8.5</text>
+
+                        <!-- Legende -->
+                        <g transform="translate(0,-8)">
+                        <line x1="20" y1="64.5" x2="26" y2="64.5"
+                                stroke="#0066CC" stroke-width="0.35" stroke-dasharray="1.5,0.8"/>
+                        <circle cx="23" cy="64.5" r="0.45" fill="#0066CC"/>
+                        <text x="27" y="65" font-size="1.2" fill="#0066CC">SPECint 2017/Cores</text>
+                        </g>
+                        </svg>
+                        </div>
+
+
+            .. card:: overlay
+
+                .. raw:: html
+
+                        <div style="width:71.5ch; height: 38.4ch">
+                        <svg viewBox="2 0 110 58"
+                            font-size="1.5"
+                            version="1.1" xmlns="http://www.w3.org/2000/svg">
+
+                        <text x="13" y="3.8" text-anchor="end" font-size="1.4" font-weight="bold" fill="#CC3300">SPECint Rate</text>
+                        <line x1="17.4" y1="48.00" x2="18" y2="48.00" stroke="#CC3300" stroke-width="0.12"/>
+                        <text x="10.2" y="48.45" text-anchor="end" font-size="1.2" fill="#CC3300">0</text>
+                        <line x1="17.4" y1="40.83" x2="18" y2="40.83" stroke="#CC3300" stroke-width="0.12"/>
+                        <text x="10.2" y="41.28" text-anchor="end" font-size="1.2" fill="#CC3300">300</text>
+                        <line x1="17.4" y1="33.67" x2="18" y2="33.67" stroke="#CC3300" stroke-width="0.12"/>
+                        <text x="10.2" y="34.12" text-anchor="end" font-size="1.2" fill="#CC3300">600</text>
+                        <line x1="17.4" y1="26.50" x2="18" y2="26.50" stroke="#CC3300" stroke-width="0.12"/>
+                        <text x="10.2" y="26.95" text-anchor="end" font-size="1.2" fill="#CC3300">900</text>
+                        <line x1="17.4" y1="19.33" x2="18" y2="19.33" stroke="#CC3300" stroke-width="0.12"/>
+                        <text x="10.2" y="19.78" text-anchor="end" font-size="1.2" fill="#CC3300">1200</text>
+                        <line x1="17.4" y1="12.17" x2="18" y2="12.17" stroke="#CC3300" stroke-width="0.12"/>
+                        <text x="10.2" y="12.62" text-anchor="end" font-size="1.2" fill="#CC3300">1500</text>
+                        <line x1="17.4" y1="5.00" x2="18" y2="5.00" stroke="#CC3300" stroke-width="0.12"/>
+                        <text x="10.2" y="5.45" text-anchor="end" font-size="1.2" fill="#CC3300">1800</text>
+
+                        <!-- SPECint Rate: gepunktete Linie -->
+                        <polyline points="21.53,44.61 39.88,39.85 53.29,37.58 67.41,26.55 83.65,14.32"
+                                    fill="none" stroke="#CC3300" stroke-width="0.35"
+                                    stroke-dasharray="0.3,0.6" stroke-linecap="round"/>
+                        <polyline points="72.35,24.56 83.65,9.06"
+                                    fill="none" stroke="#FF4400" stroke-width="0.35"
+                                    stroke-dasharray="0.3,0.6" stroke-linecap="round"/>
+                        <circle cx="21.53" cy="44.61" r="0.55" fill="#CC3300"/>
+                        <text x="21.53" y="46.51" text-anchor="middle" font-size="1.1" font-weight="bold" fill="#CC3300">142</text>
+                        <circle cx="39.88" cy="39.85" r="0.55" fill="#CC3300"/>
+                        <text x="39.88" y="38.75" text-anchor="middle" font-size="1.1" font-weight="bold" fill="#CC3300">341</text>
+                        <circle cx="53.29" cy="37.58" r="0.55" fill="#CC3300"/>
+                        <text x="53.29" y="39.48" text-anchor="middle" font-size="1.1" font-weight="bold" fill="#CC3300">436</text>
+                        <circle cx="67.41" cy="26.55" r="0.55" fill="#CC3300"/>
+                        <text x="67.41" y="25.45" text-anchor="middle" font-size="1.1" font-weight="bold" fill="#CC3300">898</text>
+                        <circle cx="72.35" cy="24.56" r="0.55" fill="#FF4400"/>
+                        <text x="74.35" y="24.9" text-anchor="middle" font-size="1.1" font-weight="bold" fill="#FF4400">981</text>
+                        <circle cx="83.65" cy="14.32" r="0.55" fill="#CC3300"/>
+                        <text x="81.5" y="14.58" text-anchor="middle" font-size="1.1" font-weight="bold" fill="#CC3300">1410</text>
+                        <circle cx="83.65" cy="9.06" r="0.55" fill="#FF4400"/>
+                        <text x="85.75" y="9.41" text-anchor="middle" font-size="1.1" font-weight="bold" fill="#FF4400">1630</text>
+
+                        <!-- Legende -->
+                        <g transform="translate(25,-10)">
+                        <line x1="20" y1="66.5" x2="26" y2="66.5"
+                                stroke="#CC3300" stroke-width="0.35" stroke-dasharray="0.3,0.6"/>
+                        <circle cx="23" cy="66.5" r="0.45" fill="#CC3300"/>
+                        <text x="27" y="67" font-size="1.2" fill="#CC3300">SPECint 2017 Rate Baseline</text>
+                        </g>
+                        </svg>
+                        </div>
+
+            .. card:: overlay
+
+                .. raw:: html
+
+                        <div style="width:71.5ch; height: 38.4ch">
+                        <svg viewBox="2 0 110 58"
+                            font-size="1.5"
+                            version="1.1" xmlns="http://www.w3.org/2000/svg">
+
+                        <text x="101" y="3.8" text-anchor="start" font-size="1.4" font-weight="bold" fill="#9900CC">#Cores</text>
+                        <line x1="102" y1="48.00" x2="102.6" y2="48.00" stroke="#9900CC" stroke-width="0.12"/>
+                        <text x="103" y="48.45" text-anchor="start" font-size="1.2" fill="#9900CC">0</text>
+                        <line x1="102" y1="42.62" x2="102.6" y2="42.62" stroke="#9900CC" stroke-width="0.12"/>
+                        <text x="103" y="43.08" text-anchor="start" font-size="1.2" fill="#9900CC">32</text>
+                        <line x1="102" y1="37.25" x2="102.6" y2="37.25" stroke="#9900CC" stroke-width="0.12"/>
+                        <text x="103" y="37.70" text-anchor="start" font-size="1.2" fill="#9900CC">64</text>
+                        <line x1="102" y1="31.88" x2="102.6" y2="31.88" stroke="#9900CC" stroke-width="0.12"/>
+                        <text x="103" y="32.33" text-anchor="start" font-size="1.2" fill="#9900CC">96</text>
+                        <line x1="102" y1="26.50" x2="102.6" y2="26.50" stroke="#9900CC" stroke-width="0.12"/>
+                        <text x="103" y="26.95" text-anchor="start" font-size="1.2" fill="#9900CC">128</text>
+                        <line x1="102" y1="21.12" x2="102.6" y2="21.12" stroke="#9900CC" stroke-width="0.12"/>
+                        <text x="103" y="21.57" text-anchor="start" font-size="1.2" fill="#9900CC">160</text>
+                        <line x1="102" y1="15.75" x2="102.6" y2="15.75" stroke="#9900CC" stroke-width="0.12"/>
+                        <text x="103" y="16.20" text-anchor="start" font-size="1.2" fill="#9900CC">192</text>
+                        <line x1="102" y1="10.38" x2="102.6" y2="10.38" stroke="#9900CC" stroke-width="0.12"/>
+                        <text x="103" y="10.82" text-anchor="start" font-size="1.2" fill="#9900CC">224</text>
+                        <line x1="102" y1="5.00" x2="102.6" y2="5.00" stroke="#9900CC" stroke-width="0.12"/>
+                        <text x="103" y="5.45" text-anchor="start" font-size="1.2" fill="#9900CC">256</text>
+
+                        <!-- #Cores: Strich-Punkt-Linie -->
+                        <polyline points="21.53,42.62 39.88,37.25 53.29,37.25 67.41,31.88 72.35,26.50 83.65,26.50 83.65,15.75 100.59,5.00"
+                                    fill="none" stroke="#9900CC" stroke-width="0.35"
+                                    stroke-dasharray="2,0.4,0.3,0.4" stroke-linecap="round"/>
+                        <circle cx="21.53" cy="42.62" r="0.55" fill="#9900CC"/>
+                        <text x="21.53" y="41.52" text-anchor="middle" font-size="1.1" font-weight="bold" fill="#9900CC">32</text>
+                        <circle cx="39.88" cy="37.25" r="0.55" fill="#9900CC"/>
+                        <text x="39.88" y="36.15" text-anchor="middle" font-size="1.1" font-weight="bold" fill="#9900CC">64</text>
+                        <circle cx="53.29" cy="37.25" r="0.55" fill="#9900CC"/>
+                        <text x="53.29" y="36.15" text-anchor="middle" font-size="1.1" font-weight="bold" fill="#9900CC">64</text>
+                        <circle cx="67.41" cy="31.88" r="0.55" fill="#9900CC"/>
+                        <text x="67.41" y="30.77" text-anchor="middle" font-size="1.1" font-weight="bold" fill="#9900CC">96</text>
+                        <circle cx="72.35" cy="26.50" r="0.55" fill="#9900CC"/>
+                        <text x="72.35" y="28.40" text-anchor="middle" font-size="1.1" font-weight="bold" fill="#9900CC">128</text>
+                        <circle cx="83.65" cy="26.50" r="0.55" fill="#9900CC"/>
+                        <text x="83.65" y="28.40" text-anchor="middle" font-size="1.1" font-weight="bold" fill="#9900CC">128</text>
+                        <circle cx="83.65" cy="15.75" r="0.55" fill="#9900CC"/>
+                        <text x="85.5" y="16.2" text-anchor="middle" font-size="1.1" font-weight="bold" fill="#9900CC">192</text>
+                        <circle cx="100.59" cy="5.00" r="0.55" fill="#9900CC"/>
+
+                        <!-- Legende -->
+                        <g transform="translate(20,-8)">
+                        <line x1="55" y1="64.5" x2="61" y2="64.5"
+                                stroke="#9900CC" stroke-width="0.35" stroke-dasharray="2,0.4,0.3,0.4"/>
+                        <circle cx="58" cy="64.5" r="0.45" fill="#9900CC"/>
+                        <text x="62" y="65" font-size="1.2" fill="#9900CC">#Cores</text>
+                        </svg>
+                        </g>
+                        </div>
+
+
+
 
         .. supplemental::
 
@@ -116,7 +436,6 @@ Java I/O Streams vs. Java Stream API
         :stub-columns: 1
         :width: 100%
         :widths: 20 40 40
-        :class: incremental
 
         * -
           - Java I/O Streams
