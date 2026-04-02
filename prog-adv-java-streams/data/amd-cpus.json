@@ -1,0 +1,80 @@
+{
+    "legend": "AMD's EPYC series of Server CPUs",
+    "sources": [
+        "AMD Epyc Naples - Turin CPU information (2017-2024): Wikipedia  https://en.wikipedia.org/wiki/Epyc",
+        "AMD Epyc Venice (2026-2027) - TechPowerUp https://www.techpowerup.com/344788/amd-zen-6-epyc-venice-introduces-a-radical-package-redesign",
+        "Performance data Spec CPU 2017 Integer Rates - https://www.spec.org/cgi-bin/osgresults"
+    ],
+    "cpus": [
+        {
+            "name": "Naples",
+            "architecture": "Zen",
+            "model": "7601",
+            "cores": 32,
+            "release_date": "06.2017",
+            "spec_baseline": 142,
+            "spec_url": "https://www.spec.org/cpu2017/results/res2018q2/cpu2017-20180426-05034.html"
+        },
+        {
+            "name": "Rome",
+            "architecture": "Zen 2",
+            "model": "7742",
+            "cores": 64,
+            "release_date": "08.2019",
+            "spec_baseline": 341,
+            "spec_url": "https://www.spec.org/cpu2017/results/res2019q4/cpu2017-20191210-20388.html"
+        },
+        {
+            "name": "Milan",
+            "architecture": "Zen 3",
+            "model": "7763",
+            "cores": 64,
+            "release_date": "03.2021",
+            "spec_baseline": 436,
+            "spec_url": "https://www.spec.org/cpu2017/results/res2021q4/cpu2017-20211121-30151.html"
+        },
+        {
+            "name": "Genoa",
+            "architecture": "Zen 4",
+            "model": "9654",
+            "cores": 96,
+            "release_date": "11.2022",
+            "spec_baseline": 898,
+            "spec_url": "https://www.spec.org/cpu2017/results/res2022q4/cpu2017-20221024-32602.html"
+        },
+        {
+            "name": "Bergamo",
+            "architecture": "Zen 4c",
+            "model": "9754",
+            "cores": 128,
+            "release_date": "06.2023",
+            "spec_baseline": 981,
+            "spec_url": "https://www.spec.org/cpu2017/results/res2023q2/cpu2017-20230522-36613.html"
+        },
+        {
+            "name": "Turin",
+            "architecture": "Zen 5",
+            "model": "9755",
+            "cores": 128,
+            "release_date": "10.2024",
+            "spec_baseline": 1410,
+            "spec_url": "https://www.spec.org/cpu2017/results/res2025q4/cpu2017-20250922-49713.html"
+        },
+        {
+            "name": "Turin Dense",
+            "architecture": "Zen 5c",
+            "model": "9965",
+            "cores": 192,
+            "release_date": "10.2024",
+            "spec_baseline": 1630,
+
+            "spec_url": "https://www.spec.org/cpu2017/results/res2025q3/cpu2017-20250728-49211.html"
+        },
+        {
+            "name": "Venice",
+            "architecture": "Zen 6",
+            "cores": 256,
+            "release_date": "10.2026 (?)"
+        }
+    ]
+}
