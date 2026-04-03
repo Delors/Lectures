@@ -11,6 +11,94 @@
 .. include:: ../docutils.defs
 
 
+.. global-information::
+    :title: Glossar - Funktionale Programmierung in Java
+    :symbol: λ
+
+    .. scrollable::
+
+      .. list-table::
+        :header-rows: 1
+        :widths: 25 35 40
+        :width: 100%
+
+        *   -   Konzept
+            -   Beschreibung
+            -   Beispiel
+        *   -   Lambda-Ausdruck
+            -   Eine anonyme Funktion, die als Wert übergeben werden kann. Syntax:
+
+                -   :java:`(Parameter) -> Ausdruck`
+
+                -   :java:`(Parameter) -> { Anweisungen; }`
+            -   :java:`(x, y) -> x + y`
+
+                :java:`x -> x * x`
+
+                :java:`() -> 42`
+
+                :java:`(a, b) -> { int sum = a + b; return sum * 2; }`
+        *   -   Methoden-Referenz
+            -   Kurzschreibweise für Lambdas, die lediglich eine bestehende Methode aufrufen. Varianten:
+
+                - statisch: :java:`Klasse::methode`
+                - auf Instanz: :java:`objekt::methode`
+                - auf Typ: :java:`Klasse::instanzMethode`
+                - Konstruktor: :java:`Klasse::new`
+            -   :java:`Integer::parseInt`
+
+                :java:`System.out::println`
+
+                :java:`String::length`
+
+                :java:`ArrayList::new`
+        *   -   Funktionales Interface
+            -   Ein Interface mit genau **einer** abstrakten Methode (SAM — *Single Abstract Method*). Kann mit :java:`@FunctionalInterface` annotiert werden und ermöglicht die Verwendung von Lambda-Ausdrücken.
+            -   .. code:: java
+
+                    @FunctionalInterface
+                    interface MyFunc {
+                        int apply(int a, int b);
+                    }
+        *   -   :java:`Predicate<T>`
+            -   Funktionales Interface: Prüft eine Bedingung auf einem Wert und gibt :java:`boolean` zurück.
+            -   :java:`Predicate<Integer> isEven = x -> x % 2 == 0;`
+        *   -   :java:`Function<T,R>`
+            -   Funktionales Interface: Bildet einen Wert vom Typ :java:`T` auf einen Wert vom Typ :java:`R` ab.
+            -   :java:`Function<String,Integer> len = String::length;`
+        *   -   :java:`Consumer<T>`
+            -   Funktionales Interface: Konsumiert einen Wert, gibt nichts zurück (:java:`void`).
+            -   :java:`Consumer<String> printer = System.out::println;`
+        *   -   :java:`Supplier<T>`
+            -   Funktionales Interface: Liefert einen Wert ohne Eingabe.
+            -   :java:`Supplier<Double> random = Math::random;`
+        *   -   :java:`BinaryOperator<T>`
+            -   Funktionales Interface: Verknüpft zwei Werte desselben Typs zu einem Ergebnis.
+            -   :java:`BinaryOperator<String> wrap = (a, b) -> b + a + b;`
+        *   -   :java:`Comparator<T>`
+            -   Funktionales Interface für den Vergleich von zwei Objekten; gibt einen :java:`int`-Wert zurück.
+            -   :java:`Comparator<String> byLen = (a, b) -> a.length() - b.length();`
+
+                :java:`Comparator.comparing(String::length)`
+        *   -   Funktionen höherer Ordnung
+            -   Funktionen, die andere Funktionen als Parameter nehmen oder als Ergebnis zurückgeben. Grundlage aller Stream-Operationen.
+            -   :java:`stream.filter(x -> x > 0)` :java:`.map(x -> x * 2)`
+        *   -   Closure
+            -   Ein Lambda-Ausdruck, der auf Variablen aus dem umgebenden Kontext zugreift. Diese Variablen müssen :java:`final` oder *effektiv final* sein.
+            -   .. code:: java
+
+                    final int factor = 10;
+                    Stream.of(3,4,3).
+                        map(x -> x * factor).
+                        toList();
+        *   -   :java:`Optional<T>`
+            -   Ein Container, der einen Wert enthalten kann oder leer ist. Ersetzt die Verwendung von :java:`null`.
+            -   :java:`Optional.of(42)`
+
+                :java:`Optional.empty()`
+
+
+
 
 Java - Streams
 ===========================================================
@@ -18,10 +106,6 @@ Java - Streams
 :Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
 :Kontakt: michael.eichberg@dhbw.de, Raum 149B
 :Version: 2.0 [Themed]
-
-.. class:: block-footer
-
-    Teile der Folien sind inspiriert von: `Th. Letschert - Funktionale Programmierung in Java. <https://homepages.thm.de/~hg51/Veranstaltungen/A_D/Folien/java-8-kurzeinfuehrung.pdf>`__
 
 .. supplemental::
 
@@ -40,97 +124,6 @@ Java - Streams
 
     :Fehler melden:
         https://github.com/Delors/delors.github.io/issues
-
-
-
-.. class:: global-information
-
-[λ] Glossar - Funktionale Programmierung in Java
---------------------------------------------------
-
-.. scrollable::
-
-  .. list-table::
-    :header-rows: 1
-    :widths: 25 35 40
-    :width: 100%
-
-    * - Konzept
-      - Beschreibung
-      - Beispiel
-    * - Lambda-Ausdruck
-      - Eine anonyme Funktion, die als Wert übergeben werden kann. Syntax:
-
-        - :java:`(Parameter) -> Ausdruck`
-
-        - :java:`(Parameter) -> { Anweisungen; }`
-      - :java:`(x, y) -> x + y`
-
-        :java:`x -> x * x`
-
-        :java:`() -> 42`
-
-         :java:`(a, b) -> { int sum = a + b; return sum * 2; }`
-    * - Methoden-Referenz
-      - Kurzschreibweise für Lambdas, die lediglich eine bestehende Methode aufrufen. Varianten:
-
-        - statisch: :java:`Klasse::methode`
-        - auf Instanz: :java:`objekt::methode`
-        - auf Typ: :java:`Klasse::instanzMethode`
-        - Konstruktor: :java:`Klasse::new`
-      - :java:`Integer::parseInt`
-
-        :java:`System.out::println`
-
-        :java:`String::length`
-
-        :java:`ArrayList::new`
-    * - Funktionales Interface
-      - Ein Interface mit genau **einer** abstrakten Methode (SAM — *Single Abstract Method*). Kann mit :java:`@FunctionalInterface` annotiert werden und ermöglicht die Verwendung von Lambda-Ausdrücken.
-      - .. code:: java
-
-            @FunctionalInterface
-            interface MyFunc {
-                int apply(int a, int b);
-            }
-    * - :java:`Predicate<T>`
-      - Funktionales Interface: Prüft eine Bedingung auf einem Wert und gibt :java:`boolean` zurück.
-      - :java:`Predicate<Integer> isEven = x -> x % 2 == 0;`
-    * - :java:`Function<T,R>`
-      - Funktionales Interface: Bildet einen Wert vom Typ :java:`T` auf einen Wert vom Typ :java:`R` ab.
-      - :java:`Function<String,Integer> len = String::length;`
-    * - :java:`Consumer<T>`
-      - Funktionales Interface: Konsumiert einen Wert, gibt nichts zurück (:java:`void`).
-      - :java:`Consumer<String> printer = System.out::println;`
-    * - :java:`Supplier<T>`
-      - Funktionales Interface: Liefert einen Wert ohne Eingabe.
-      - :java:`Supplier<Double> random = Math::random;`
-    * - :java:`BinaryOperator<T>`
-      - Funktionales Interface: Verknüpft zwei Werte desselben Typs zu einem Ergebnis.
-      - :java:`BinaryOperator<String> wrap = (a, b) -> b + a + b;`
-    * - :java:`Comparator<T>`
-      - Funktionales Interface für den Vergleich von zwei Objekten; gibt einen :java:`int`-Wert zurück.
-      - :java:`Comparator<String> byLen = (a, b) -> a.length() - b.length();`
-
-        :java:`Comparator.comparing(String::length)`
-    * - Funktionen höherer Ordnung
-      - Funktionen, die andere Funktionen als Parameter nehmen oder als Ergebnis zurückgeben. Grundlage aller Stream-Operationen.
-      - :java:`stream.filter(x -> x > 0)` :java:`.map(x -> x * 2)`
-    * - Closure
-      - Ein Lambda-Ausdruck, der auf Variablen aus dem umgebenden Kontext zugreift. Diese Variablen müssen :java:`final` oder *effektiv final* sein.
-      - .. code:: java
-
-            final int factor = 10;
-            Stream.of(3,4,3).
-                map(x -> x * factor).
-                toList();
-    * - :java:`Optional<T>`
-      - Ein Container, der einen Wert enthalten kann oder leer ist. Ersetzt die Verwendung von :java:`null`.
-      - :java:`Optional.of(42)`
-
-        :java:`Optional.empty()`
-
-
 
 
 
@@ -171,7 +164,7 @@ Java - Streams
 
         - Parallele Verarbeitung und effiziente Nutzung von modernen CPU-Architekturen
 
-        .. deck:: center-content
+        .. deck:: center-content incremental
 
             .. card::
 
@@ -286,7 +279,7 @@ Java - Streams
                         <line x1="20" y1="64.5" x2="26" y2="64.5"
                                 stroke="#0066CC" stroke-width="0.35" stroke-dasharray="1.5,0.8"/>
                         <circle cx="23" cy="64.5" r="0.45" fill="#0066CC"/>
-                        <text x="27" y="65" font-size="1.2" fill="#0066CC">SPECint 2017/Cores</text>
+                        <text x="27" y="65" font-size="1.2" fill="#0066CC">SPECint 2017 (Baseline)/#Cores</text>
                         </g>
                         </svg>
                         </div>
@@ -340,11 +333,11 @@ Java - Streams
                         <text x="85.75" y="9.41" text-anchor="middle" font-size="1.1" font-weight="bold" fill="#FF4400">1630</text>
 
                         <!-- Legende -->
-                        <g transform="translate(25,-10)">
-                        <line x1="20" y1="66.5" x2="26" y2="66.5"
-                                stroke="#CC3300" stroke-width="0.35" stroke-dasharray="0.3,0.6"/>
-                        <circle cx="23" cy="66.5" r="0.45" fill="#CC3300"/>
-                        <text x="27" y="67" font-size="1.2" fill="#CC3300">SPECint 2017 Rate Baseline</text>
+                        <g transform="translate(30,-10)">
+                            <line x1="20" y1="66.5" x2="26" y2="66.5"
+                                    stroke="#CC3300" stroke-width="0.35" stroke-dasharray="0.3,0.6"/>
+                            <circle cx="23" cy="66.5" r="0.45" fill="#CC3300"/>
+                            <text x="27" y="67" font-size="1.2" fill="#CC3300">SPECint 2017 (Baseline)</text>
                         </g>
                         </svg>
                         </div>
@@ -408,9 +401,6 @@ Java - Streams
                         </g>
                         </div>
 
-
-
-
         .. supplemental::
 
             Insbesondere die korrekte Nutzung ist häufig schwierig und hier ist die Verwendung von transparent parallelisierten Streams sehr hilfreich.
@@ -418,7 +408,76 @@ Java - Streams
 
     .. card::
 
-        - Entwicklung von Software nahe am Domänenmodell, um die korrekte Implementierung zu unterstützen. Das Ziel sollte eine möglichst geringe Repräsentationslücke (:eng:`Low representational gap`) zwischen Code und Domänenmodell sein.
+        - Entwicklung von Software nahe am Domänenmodell, um die korrekte Implementierung zu unterstützen.
+
+          .. deck::
+
+            .. card::
+
+                .. remark::
+
+                    Das Ziel sollte (immer) eine möglichst geringe Repräsentationslücke (:eng:`Low representational gap`) zwischen Code und Domänenmodell sein.
+
+            .. card::
+
+                .. scrollable::
+                    :height: 14lh
+
+
+                    .. example:: Finden der besten Studierenden
+
+                        *„Nimm alle Studierenden, filtere diejenigen heraus, die bereits ein Stipendium haben, gruppiere die verbleibenden nach Studiengang, wähle pro Studiengang den mit der besten Durchschnittsnote, und erstelle daraus eine nach Note sortierte Empfehlungsliste."*
+
+                        .. class:: incremental
+
+                        .. rubric:: Setup
+
+                        .. code:: java
+                            :number-lines:
+                            :line-number-digits: 2
+                            :class: incremental
+
+                            record Student(boolean hatStipendium, String studiengang, double schnitt){};
+
+                            List<Student> alleStudierenden =
+                                List.of(new Student(false, "Informatik", 1.3),  ...)
+
+                        .. class:: incremental
+
+                        .. rubric:: Klassische Implementierung der Geschäftslogik
+
+                        .. code:: java
+                            :number-lines: 1
+                            :class: incremental
+
+                            // Schritt 1: Studierende ohne Stipendium sammeln
+                            List<Student> ohneStipendium = new ArrayList<>();
+                            for (Student s : alleStudierenden) {
+                                if (!s.hatStipendium()) {
+                                    ohneStipendium.add(s);
+                                }
+                            }
+                            // Schritt 2: Nach Studiengang gruppieren
+                            Map<String, List<Student>> nachStudiengang = new HashMap<>();
+                            for (Student s : ohneStipendium) {
+                                nachStudiengang
+                                    .computeIfAbsent(s.studiengang(), k -> new ArrayList<>())
+                                    .add(s);
+                            }
+                            // Schritt 3: Pro Gruppe den Besten finden
+                            List<Student> empfehlungen = new ArrayList<>();
+                            for (var eintrag : nachStudiengang.entrySet()) {
+                                Student bester = null;
+                                for (Student s : eintrag.getValue()) {
+                                    if (bester == null || s.schnitt() < bester.schnitt()) {
+                                        bester = s;
+                                    }
+                                }
+                                if (bester != null) {
+                                    empfehlungen.add(bester);
+                                }
+                            }
+
 
 
 
@@ -450,7 +509,6 @@ Java I/O Streams vs. Java Stream API
           - Imperativ
           - Funktional/Deklarativ
 
-
 .. supplemental::
 
     :Imperativ Programmierung:
@@ -475,37 +533,41 @@ Java I/O Streams vs. Java Stream API
 
 
 
-
 Streams - Einführung
 ------------------------------------------------
 
-.. class:: incremental-list
+.. deck::
 
-:Pragmatische Sicht: Streams\ [#]_ sind umgeformte Sammlungen\ :incremental:`, die durch die Umformung für funktional-orientiere Massen-Operationen geeignet sind.`
-:Konzeptionelle Sicht: Streams erlauben die „korrekte, lesbare (domänennahe)“ Verarbeitung von Daten mit Hilfe von Konzepten und Ideen aus der funktionalen und deklarativen Programmierung.
+    .. card::
 
-.. example::
-    :class: incremental
+        .. class:: incremental-list
 
-    .. code:: java
-        :number-lines:
-        :class: copy-to-clipboard
+        :Pragmatische Sicht: Streams\ [#]_ sind umgeformte Sammlungen\ :incremental:`, die durch die Umformung für funktional-orientiere Massen-Operationen geeignet sind.`
+        :Konzeptionelle Sicht: Streams erlauben die „korrekte, lesbare (domänennahe)“ Verarbeitung von Daten mit Hilfe von Konzepten und Ideen aus der funktionalen und deklarativen Programmierung.
 
-        import java.util.Arrays;
-        import java.util.List;
-        import java.util.stream.Collectors;
+    .. card::
 
-        List<Integer> l = Arrays.asList(1, 2, 3, 4, 5, 6, 7, 8, 9);
-        List<Integer> ll = l
-            .stream()                       // list → stream
-            .filter(x -> x % 2 == 0)        // filter list with predicate
-            .map(x -> 10 * x)               // map each element to a new one
-            .collect(Collectors.toList());  // back to a list
-        ll.forEach(x -> System.out.println(x));
+        .. example::
 
-    .. container:: incremental
+            .. code:: java
+                :number-lines:
+                :class: copy-to-clipboard
 
-        *Ausgabe:* :console:`20 40 60 80`
+                import java.util.Arrays;
+                import java.util.List;
+                import java.util.stream.Collectors;
+
+                List<Integer> l = Arrays.asList(1, 2, 3, 4, 5, 6, 7, 8, 9);
+                List<Integer> ll = l
+                    .stream()                       // list → stream
+                    .filter(x -> x % 2 == 0)        // filter list with predicate
+                    .map(x -> 10 * x)               // map each element to a new one
+                    .collect(Collectors.toList());  // back to a list
+                ll.forEach(x -> System.out.println(x));
+
+            .. container:: incremental
+
+                *Ausgabe:* :console:`20 40 60 80`
 
 .. [#] `Th. Letschert <https://homepages.thm.de/~hg51/Veranstaltungen/A_D/Folien/java-8-kurzeinfuehrung.pdf>`__
 
@@ -601,6 +663,11 @@ Streams API - kurze Historie
 
 
 
+Streams - Grundlegendes Konzept
+---------------------------------
+
+Erzeugen - Verarbeiten - Terminale Operation
+
 
 
 Streams mit primitiven Daten und Objekten
@@ -613,7 +680,7 @@ Streams mit primitiven Daten und Objekten
   - :java:`LongStream`
   - :java:`DoubleStream`
 
-  Dies Streams mit primitiven Daten arbeiten in vielen Fällen effizienter jedoch sind manche Operationen nur auf :java:`Object`\ -Streams erlaubt. „Primitive“ Streams können mit der Methode :java:`boxed` in :java:`Object`\ -Streams umgewandelt werden.
+  Diese Streams mit primitiven Daten arbeiten in vielen Fällen effizienter jedoch sind manche Operationen nur auf :java:`Object`\ -Streams erlaubt. „Primitive“ Streams können mit der Methode :java:`boxed` in :java:`Object`\ -Streams umgewandelt werden.
 
 .. example::
     :class: incremental
@@ -1244,42 +1311,6 @@ Streams - fortgeschrittene Konzepte
 
 
 
-
-Java :java:`Optional`\ s
-------------------------------------------------
-
-Instanzen der Klasse :java:`java.util.Optional<T>` (bzw. :java:`java.util.OptionalInt` etc.) **repräsentieren Werte die vorhanden sind oder
-auch nicht**.
-
-Insbesondere :java:`java.util.Optional<T>` kann/sollte anstelle von :java:`null` verwendet werden, in Fällen in denen unter bestimmten Umständen kein sinnvoller Wert angegeben werden kann.
-
-.. deck::
-
-    .. card::
-
-        .. remark::
-
-            Es gibt moderne Programmiersprachen, die auf :java:`null` komplett verzichten und stattdessen immer auf ``Optionals`` oder ähnliche Konstrukte setzen.
-
-    .. card::
-
-        .. example::
-
-            .. code:: java
-                :number-lines:
-                :class: copy-to-clipboard
-
-                static Optional<Integer> min(int[] a ) {
-                    if(a == null || a.length == 0)
-                        return Optional.empty();
-
-                    int min = a[0];
-                    for(int x: a) { if (x < min) { min = x; } }
-                    return Optional.of(min);
-                }
-
-
-
 .. class:: exercises
 
 Übung - Streams Grundlagen
@@ -1408,9 +1439,6 @@ Insbesondere :java:`java.util.Optional<T>` kann/sollte anstelle von :java:`null`
 
             Depending on the number of cores in your machine, the parallel version should be faster than the sequential version.
 
-
-
-
 Herausforderungen gelöst?
 -------------------------
 
@@ -1418,6 +1446,58 @@ Herausforderungen gelöst?
 
 
 
+
+Benutzerdefinierte Zwischenoperationen\ [#]_:  aka *Stream Gatherers*
+------------------------------------------------------------------------
+
+
+.. [#] In der JavaDoc/Spec als *Custom Intermediate Operations* bezeichnet.
+
+
+
+
+Herausforderungen gelöst?
+-------------------------
+
+.. rubric:: *Custom Intermediate Operation/Custom Gatherer*
+
+.. code:: java
+    :number-lines:
+
+    static <T, K> Gatherer<T, ?, T> perGroup(
+            Function<T, K> grouping, Comparator<T> comparator) {
+
+        return Gatherer.ofSequential(
+            HashMap<K, T>::new,
+            (map, element, downstream) -> {
+                map.merge(grouping.apply(element), element,
+                    BinaryOperator.minBy(comparator));
+                return true;
+            },
+            (map, downstream) -> map.values().forEach(downstream::push)
+        );
+    }
+
+.. code:: java
+    :number-lines:
+
+    List<Student> empfehlungen = alleStudierenden.stream()
+        .filter(not(Student::hatStipendium))
+        .gather(perGroup(Student::studiengang, comparingDouble(Student::schnitt)))
+        .sorted(comparingDouble(Student::schnitt))
+        .toList();
+
+.. supplemental::
+
+    .. rubric:: benötigte Imports
+
+    .. code:: java
+        :number-lines:
+
+        import static java.util.Comparator.comparingDouble;
+        import static java.util.function.Predicate.not;
+        import static java.util.stream.Collectors.groupingBy;
+        import static java.util.stream.Collectors.minBy;
 
 
 
