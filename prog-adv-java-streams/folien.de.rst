@@ -1439,11 +1439,44 @@ Streams - fortgeschrittene Konzepte
 
             Depending on the number of cores in your machine, the parallel version should be faster than the sequential version.
 
-Herausforderungen gelöst?
--------------------------
 
-- Streams unterstützen die korrekte Verarbeitung von (Massen-)Daten durch die Anwendung von funktionalen und deklarativen Konzepten mit dem Ziel einer möglichst geringe Repräsentationslücke (:eng:`Low representational gap`).
 
+Herausforderung *Low-representational Gap* gelöst?
+---------------------------------------------------
+
+.. rubric:: Lösung mit standard *Stream* Primitiven (Java 8 - Java 24)
+
+.. code:: java
+    :number-lines:
+
+    List<Student> empfehlungenS = alleStudierenden.stream()
+        .filter(not(Student::hatStipendium))
+        .collect(groupingBy(Student::studiengang,
+                            minBy(comparingDouble(Student::schnitt))))
+        .values().stream()
+        .flatMap(Optional::stream)
+        .sorted(comparingDouble(Student::schnitt))
+        .toList();
+
+.. supplemental::
+
+    .. rubric:: benötigte Imports
+
+    .. code:: java
+        :number-lines:
+
+        import static java.util.Comparator.comparingDouble;
+        import static java.util.function.Predicate.not;
+        import static java.util.stream.Collectors.groupingBy;
+        import static java.util.stream.Collectors.minBy;
+
+.. assessment::
+    :class: incremental
+
+    Deutlich näher an der Geschäftslogik, aber technische Artefakte scheinen noch durch:
+
+    - Um die gewünschte Gruppierung zu erhalten, werden die besten Studierenden in einer Zwischendatenstruktur (*Map*) aufgesammelt (:java:`collect(...)`). Diese muss - um eine Stream-orientierte Weiterverarbeitung zu ermöglichen - wieder in ein Stream verwandelt werden, der über den *Values* der *Map* operiert (:java:`values().stream()`.
+    - Da wir in eine *Map* aufgesammelt hatten, haben wir nun einen *Stream of Streams* und deswegen muss eine :java:`flatMap(...)` Operation durchgeführt werden, um einen einfachen *Stream* zu erhalten.
 
 
 
@@ -1464,14 +1497,12 @@ Herausforderungen gelöst?
 .. code:: java
     :number-lines:
 
-    static <T, K> Gatherer<T, ?, T> perGroup(
-            Function<T, K> grouping, Comparator<T> comparator) {
-
+    static <T, K> Gatherer<T, ?, T> reducePerGroup(
+            Function<T, K> grouping, BinaryOperator<T> reducer) {
         return Gatherer.ofSequential(
             HashMap<K, T>::new,
             (map, element, downstream) -> {
-                map.merge(grouping.apply(element), element,
-                    BinaryOperator.minBy(comparator));
+                map.merge(grouping.apply(element), element, reducer);
                 return true;
             },
             (map, downstream) -> map.values().forEach(downstream::push)
@@ -1481,9 +1512,9 @@ Herausforderungen gelöst?
 .. code:: java
     :number-lines:
 
-    List<Student> empfehlungen = alleStudierenden.stream()
+    List<Student> empfehlungenG = alleStudierenden.stream()
         .filter(not(Student::hatStipendium))
-        .gather(perGroup(Student::studiengang, comparingDouble(Student::schnitt)))
+        .gather(reducePerGroup(Student::studiengang, BinaryOperator.minBy(comparingDouble(Student::schnitt))))
         .sorted(comparingDouble(Student::schnitt))
         .toList();
 
@@ -1499,6 +1530,17 @@ Herausforderungen gelöst?
         import static java.util.stream.Collectors.groupingBy;
         import static java.util.stream.Collectors.minBy;
 
+
+
+
+.. class:: no-title transition-scale-in
+
+Zusammenfassung
+----------------
+
+.. summary::
+
+    Streams unterstützen die korrekte Verarbeitung von (Massen-)Daten durch die Anwendung von funktionalen und deklarativen Konzepten mit dem Ziel einer möglichst geringe Repräsentationslücke (:eng:`Low representational gap`).
 
 
 
