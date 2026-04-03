@@ -1,21 +1,6 @@
 // TO BE RUN IN THE JSHELL
 //
 //
-static <T, K> Gatherer<T, ?, T> perGroup(
-        Function<T, K> gruppierung, Comparator<T> vergleich) {
-
-    return Gatherer.ofSequential(
-        HashMap<K, T>::new,
-        (map, element, downstream) -> {
-            map.merge(gruppierung.apply(element), element,
-                BinaryOperator.minBy(vergleich));
-            return true;
-        },
-        (map, downstream) -> map.values().forEach(downstream::push)
-    );
-}
-
-
 record Student(boolean hatStipendium, String studiengang, double schnitt){};
 
 List<Student> alleStudierenden = List.of(
@@ -51,16 +36,6 @@ List<Student> alleStudierenden = List.of(
     new Student(false, "Physik",          2.8)
 );
 
-import static java.util.Comparator.comparingDouble;
-import static java.util.function.Predicate.not;
-import static java.util.stream.Collectors.groupingBy;
-import static java.util.stream.Collectors.minBy;
-
-List<Student> empfehlungen = alleStudierenden.stream()
-    .filter(not(Student::hatStipendium))
-    .gather(perGroup(Student::studiengang, comparingDouble(Student::schnitt)))
-    .sorted(comparingDouble(Student::schnitt))
-    .toList();
 
 ////////// IMPERATIVER CODE
 
@@ -81,7 +56,7 @@ for (Student s : ohneStipendium) {
 }
 
 // Schritt 3: Pro Gruppe den Besten finden
-List<Student> empfehlungen = new ArrayList<>();
+List<Student> empfehlungenI = new ArrayList<>();
 for (var eintrag : nachStudiengang.entrySet()) {
     Student bester = null;
     for (Student s : eintrag.getValue()) {
@@ -90,9 +65,55 @@ for (var eintrag : nachStudiengang.entrySet()) {
         }
     }
     if (bester != null) {
-        empfehlungen.add(bester);
+        empfehlungenI.add(bester);
     }
 }
 
 // Schritt 4: Sortieren
-empfehlungen.sort(Comparator.comparingDouble(Student::getSchnitt));
+empfehlungenI.sort(Comparator.comparingDouble(Student::schnitt));
+
+// Ausgabe
+empfehlungenI.forEach(System.out::println);
+
+
+////////// STREAM-BASIERTER CODE
+
+// JAVA 8-24
+//
+import static java.util.Comparator.comparingDouble;
+import static java.util.function.Predicate.not;
+import static java.util.stream.Collectors.groupingBy;
+import static java.util.stream.Collectors.minBy;
+
+List<Student> empfehlungenS = alleStudierenden.stream()
+    .filter(not(Student::hatStipendium))
+    .collect(groupingBy(Student::studiengang,
+                        minBy(comparingDouble(Student::schnitt))))
+    .values().stream()
+    .flatMap(Optional::stream)
+    .sorted(comparingDouble(Student::schnitt))
+    .toList();
+
+empfehlungenS.forEach(IO::println);
+
+// JAVA 25+
+
+static <T, K> Gatherer<T, ?, T> reducePerGroup(
+        Function<T, K> grouping, BinaryOperator<T> reducer) {
+    return Gatherer.ofSequential(
+        HashMap<K, T>::new,
+        (map, element, downstream) -> {
+            map.merge(grouping.apply(element), element, reducer);
+            return true;
+        },
+        (map, downstream) -> map.values().forEach(downstream::push)
+    );
+}
+
+List<Student> empfehlungenG = alleStudierenden.stream()
+    .filter(not(Student::hatStipendium))
+    .gather(reducePerGroup(Student::studiengang, BinaryOperator.minBy(comparingDouble(Student::schnitt))))
+    .sorted(comparingDouble(Student::schnitt))
+    .toList();
+
+empfehlungenG.forEach(IO::println);
