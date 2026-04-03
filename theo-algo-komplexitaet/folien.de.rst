@@ -355,28 +355,20 @@ Im Allgemeinen werden Laufzeiten oder Aufwände in Abhängigkeit von einer Einga
 
     Eine Folge (:math:`a_n`) ist eine Abbildung, die jedem :math:`n \in \mathbb{N}` ein :math:`a_n` zuweist.
 
-.. class:: incremental-list
+.. example:: Definition über Folgenglieder
+    :class: incremental
 
-- .. class:: columns
+    (:math:`a_n`) : :math:`a_1 = 2, a_2 = 3, a_3 = 7, a_4 = 11, ...`
 
-    * Definition über Folgenglieder
-    * .. example::
+.. example:: Rekursive Definition
+    :class: incremental
 
-            (:math:`a_n`) : :math:`a_1 = 2, a_2 = 3, a_3 = 7, a_4 = 11, ...`
+    (:math:`c_n`) : :math:`c_1 = 1, c_2 = 1, c_{n+2} = c_n + c_{n+1}` für :math:`n \in \mathbb(N)`
 
-- .. class:: columns
+.. example:: Explizite Definition
+    :class: incremental
 
-    - Rekursive Definition
-    - .. example::
-
-        (:math:`c_n`) : :math:`c_1 = 1, c_2 = 1, c_{n+2} = c_n + c_{n+1}` für :math:`n \in \mathbb(N)`
-
-- .. class:: columns
-
-    - Explizite Definition
-    - .. example::
-
-        (:math:`b_n`) : :math:`b_n = n^2` für :math:`n \in \mathbb{N}`
+    (:math:`b_n`) : :math:`b_n = n^2` für :math:`n \in \mathbb{N}`
 
 .. supplemental::
 
@@ -2097,13 +2089,11 @@ Rekurrenzgleichung für rekursiv teilende Algorithmen
         - :math:`{n \over b}`: die Größe jedes rekursiven Unterproblems wobei  :math:`b` die Anzahl der Teile ist in die das Problem geteilt wird,
         - :math:`f(n)`: der Aufwand während der Ausführung (z. B. der Aufwand für das Teilen der Eingabedaten und das Zusammenführen der Teillösungen).
 
-
       .. container:: incremental
 
          .. math::
 
             T(n) = a \cdot T\left({n \over b}\right) + f(n)
-
 
     .. container:: incremental
 
