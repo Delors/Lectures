@@ -418,7 +418,8 @@ Moderator Assignment
 
           14, 15
           15, 16a
-          16, 18
+          16a, 18
+          16b, 22
           17, 19
           18, 16b
           19, 23
@@ -428,7 +429,6 @@ Moderator Assignment
           23, 20
           24, 21
           25, /
-
 
 
 
@@ -457,9 +457,26 @@ Programming Task (max 25 Points)
 
     #. Demonstration of your project (~5 Minutes)
     #. Answering specific questions related to your implementation / adapting your code to a new scenario
-- see Moodle for Task description
+- Download here: `2026-04-06-Messaging-Project.zip <2026-04-06-Messaging-Project.zip>`__
 
 
+
+.. class:: s-only
+
+Programming Task - Group Assignment
+-------------------------------------
+
+.. scrollable::
+
+    .. module:: group-assignment
+        :class: accentuate
+        :scope: slide
+
+        {
+            "defaultNumberOfStudents": 22,
+            "defaultGroupSize": 2,
+            "defaultPreferSmallerGroups": false
+        }
 
 
 
@@ -515,7 +532,15 @@ Lecture - Schedule
       - Lecture
 
   :26. April 2026, 07:00 (7:00 a.m.):
-      - Programming Task Submission Deadline (see Moodle for details)
+      - Programming Task Submission Deadline
+
+        Upload:
+
+        - the JAR files as described in the task description
+        - a ZIP file with the source code
+        - a PDF file which explicitly states who worked on which part and which (optionally!) states whether you want to be graded as a group or individually w.r.t the submitted code. The oral exam is always graded individually.
+
+
 
   :27. April 2026:
 
