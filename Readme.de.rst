@@ -24,25 +24,26 @@ Aufgrund der Entwicklungen im Bereich Generative AI (z. B. Copilot, Claude, etc
 
 .. scrollable::
 
-   1. Einführung in die Programmierung (`<prog-einfuehrung/folien.de.rst.html>`__)
-   2. Grundlagen der Programmierung in Java (`<prog-java-basics/folien.de.rst.html>`__)
-   3. Verwendung von Arrays in Java (`<prog-java-arrays/folien.de.rst.html>`__)
-   4. Modularisierung von einfachen Java Programming (`<prog-java-modularisierung-101/folien.de.rst.html>`__)
+   #. Einführung in die Programmierung (`<prog-einfuehrung/folien.de.rst.html>`__)
+   #. Grundlagen der Programmierung in Java (`<prog-java-basics/folien.de.rst.html>`__)
+   #. Verwendung von Arrays in Java (`<prog-java-arrays/folien.de.rst.html>`__)
+   #. Modularisierung von einfachen Java Programming (`<prog-java-modularisierung-101/folien.de.rst.html>`__)
 
       Es wird lediglich diskutiert, wie Methoden in Klassen organisiert werden können und wie man diese aus anderen Klassen heraus aufrufen kann.
-   5. Einführung in die Modellierung mit UML (`<prog-modellierung_mit_uml/folien.de.rst.html>`__)
-   6. Objekt-orientierte Programmierung in Java - Einführung (`<prog-java-oo/folien.de.rst.html>`__)
-   7. Objekt-orientierte Programmierung in Java - Vererbung und Polymorphie (`<prog-java-oo-inheritance/folien.de.rst.html>`__)
-   8. Objekt-orientierte Programmierung in Java - Domain Modeling, Java Records und Java Enums (`<prog-adv-java-domain-modeling/folien.de.rst.html>`__)
-   9. Objekt-orientierte Programmierung in Java - Generics (`<prog-adv-java-generics/folien.de.rst.html>`__)
-   10. Compiler und Interpreter (`<prog-interpreter-vms-und-compiler/folien.de.rst.html>`__)
-   11. Softwareprojekte bauen, testen und vermessen (`<se-build-test-measure/folien.de.rst.html>`__)
-   12. Java Projekte mit Maven aufsetzen (`<prog-adv-java-projects/folien.de.rst.html>`__)
-   13. Versionsverwaltung mit GIT (`<se-versionskontrolle/folien.de.rst.html>`__)
-   14. Objekt-orientierte Programmierung in Java - Funktionale Programmierung (`<prog-adv-java-funktionale-programmierung/folien.de.rst.html>`__)
-   15. Objekt-orientierte Programmierung in Java - Ein-/Ausgabe (`<prog-adv-java-ea/folien.de.rst.html>`__)
+   #. Einführung in die Modellierung mit UML (`<prog-modellierung_mit_uml/folien.de.rst.html>`__)
+   #. Objekt-orientierte Programmierung in Java - Einführung (`<prog-java-oo/folien.de.rst.html>`__)
+   #. Objekt-orientierte Programmierung in Java - Vererbung und Polymorphie (`<prog-java-oo-inheritance/folien.de.rst.html>`__)
+   #. Objekt-orientierte Programmierung in Java - Domain Modeling, Java Records und Java Enums (`<prog-adv-java-domain-modeling/folien.de.rst.html>`__)
+   #. Objekt-orientierte Programmierung in Java - Generics (`<prog-adv-java-generics/folien.de.rst.html>`__)
+   #. Compiler und Interpreter (`<prog-interpreter-vms-und-compiler/folien.de.rst.html>`__)
+   #. Softwareprojekte bauen, testen und vermessen (`<se-build-test-measure/folien.de.rst.html>`__)
+   #. Java Projekte mit Maven aufsetzen (`<prog-adv-java-projects/folien.de.rst.html>`__)
+   #. Versionsverwaltung mit GIT (`<se-versionskontrolle/folien.de.rst.html>`__)
+   #. Objekt-orientierte Programmierung in Java - Funktionale Programmierung (`<prog-adv-java-funktionale-programmierung/folien.de.rst.html>`__)
+   #. Objekt-orientierte Programmierung in Java - Streams (`<prog-adv-java-streams/folien.de.rst.html>`__)
+   #. Objekt-orientierte Programmierung in Java - Ein-/Ausgabe (`<prog-adv-java-ea/folien.de.rst.html>`__)
 
-   Ergänzend: 
+   Ergänzend:
 
    Generative AI und Programmierung (`<se-using-llms/folien.de.rst.html>`__)
 
@@ -110,7 +111,7 @@ Vorlesung "Verteilte Systeme" / "Distributed Systems"
    - Entwurfsprinzipien für verteilte Systeme (`<ds-se-entwurfsprinzipien/folien.de.rst.html>`__)
    - RESTful Web Services (`<ds-restful/folien.de.rst.html>`_)
 
-     Introduction to RESTful Web Services (`<ds-introduction_to_rest/folien.en.rst.html>`__) 
+     Introduction to RESTful Web Services (`<ds-introduction_to_rest/folien.en.rst.html>`__)
    - XML und XPath (`<ds-xml/folien.de.rst.html>`__)
 
 
@@ -173,12 +174,12 @@ Ausgewählte Themen der IT Sicherheit
 
 
 
-Vorlesung "Dokumentenmanagement"
----------------------------------------------------------------
+..  Vorlesung "Dokumentenmanagement"
+    ---------------------------------------------------------------
 
-1. Einführung in das Dokumentenmanagement (`<dm-einfuehrung/folien.de.rst.html>`__)
-2. Erfassung und Indizierung von Dokumenten (`<dm-erfassung-und-indizierung/folien.de.rst.html>`__)
-3. Dokumentenmanagement und rechtliche Aspekte (`<dm-rechtliche-aspekte/folien.de.rst.html>`__)
+    1. Einführung in das Dokumentenmanagement (`<dm-einfuehrung/folien.de.rst.html>`__)
+    2. Erfassung und Indizierung von Dokumenten (`<dm-erfassung-und-indizierung/folien.de.rst.html>`__)
+    3. Dokumentenmanagement und rechtliche Aspekte (`<dm-rechtliche-aspekte/folien.de.rst.html>`__)
 
 
 
