@@ -7,19 +7,62 @@
     :first-slide: last-viewed
     :master-password: WirklichSchwierig!
     :theme: colored
+    :svg-defs:
+        <marker id="pipe-arrow" viewBox="0 0 6 6" refX="5.5" refY="3"
+                markerWidth="5" markerHeight="5" orient="auto">
+            <path d="M0,0.5 L5,3 L0,5.5" fill="none"
+                stroke="currentColor" stroke-width="1.2"/>
+        </marker>
+        <marker id="impl-arrow" viewBox="0 0 6 6" refX="5.5" refY="3"
+                markerWidth="5" markerHeight="5" orient="auto">
+            <path d="M0,0.5 L5,3 L0,5.5" fill="none"
+                stroke="currentColor" stroke-width="1.2"/>
+        </marker>
+
 
 .. include:: ../docutils.defs
 
 
-.. global-information::
-    :title: Glossar - Funktionale Programmierung in Java
-    :symbol: λ
 
-    .. scrollable::
+Java - Streams
+===========================================================
+
+:Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
+:Kontakt: michael.eichberg@dhbw.de, Raum 149B
+:Version: 2.0 [Themed]
+
+.. supplemental::
+
+    :Folien:
+
+        |html-source|
+
+        |pdf-source|
+
+    :Kontrollfragen:
+
+        .. source:: kontrollfragen.de.rst
+            :path: relative
+            :prefix: https://delors.github.io/
+            :suffix: .html
+
+    :Fehler melden:
+        https://github.com/Delors/delors.github.io/issues
+
+    :Quellen: Die Folien wurden insbesondere basierend auf der offiziellen Java Dokumentation (JavaDoc 24 und JEPs), sowie basierend auf der Scala (2.13 bzw. 3) Documentation erstellt. Die Folien bzgl. der konkreten *Java Streams API (Deepdive)* basieren auf Folien von `Th. Letschert <https://homepages.thm.de/~hg51/Veranstaltungen/A_D/Folien/java-8-kurzeinfuehrung.pdf>`__
+
+    :KI Verwendung:
+
+        Bei der Erstellung der Folien wurden KI Assistenten unterstützend eingesetzt. Dies erfolgte insbesondere, um effizient Grafiken zu generieren, die sich leicht in die Folien integrieren lassen, oder um sich Übersichtstabellen generieren zu lassen. Weiterhin wurde KI zur allgemeinen Qualitätssicherung eingesetzt. Alle Inhalte, die in diesem Rahmen von der KI (zusäztlich) vorgeschlagen wurden, wurden überprüft.
+
+        Es wurde **keine** KI verwendet für den Aufbau, die Struktur und insbesondere die Auswahl der grundlegenden Inhalte.
+
+.. global-information:: Funktionale Programmierung in Java
+    :symbol: Funktionale Prog. in Java
 
       .. list-table::
         :header-rows: 1
-        :widths: 25 35 40
+        :widths: 20 35 40
         :width: 100%
 
         *   -   Konzept
@@ -37,7 +80,7 @@
 
                 :java:`() -> 42`
 
-                :java:`(a, b) -> { int sum = a + b; return sum * 2; }`
+                :java:`(a, b) -> { int s = a + b; return s * 2; }`
         *   -   Methoden-Referenz
             -   Kurzschreibweise für Lambdas, die lediglich eine bestehende Methode aufrufen. Varianten:
 
@@ -99,33 +142,10 @@
 
 
 
+.. class:: new-section transition-fade
 
-Java - Streams
-===========================================================
-
-:Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
-:Kontakt: michael.eichberg@dhbw.de, Raum 149B
-:Version: 2.0 [Themed]
-
-.. supplemental::
-
-    :Folien:
-
-        |html-source|
-
-        |pdf-source|
-
-    :Kontrollfragen:
-
-        .. source:: kontrollfragen.de.rst
-            :path: relative
-            :prefix: https://delors.github.io/
-            :suffix: .html
-
-    :Fehler melden:
-        https://github.com/Delors/delors.github.io/issues
-
-
+Motivation
+-----------------------------------------------
 
 
 
@@ -208,33 +228,34 @@ Java - Streams
                         <line x1="83.65" y1="48.8" x2="85.65" y2="49.7" stroke="gray" stroke-width="0.08"/>
                         <text x="21.53" y="50.8" text-anchor="middle" font-size="1.5" font-weight="bold" fill="black">Naples</text>
                         <text x="21.53" y="52.6" text-anchor="middle" font-size="1.2" fill="black">7601</text>
-                        <text x="21.53" y="54.2" text-anchor="middle" font-size="1.1" fill="gray">06.2017</text>
+                        <text x="21.53" y="54.2" text-anchor="middle" font-size="1.2" fill="gray">06.2017</text>
                         <text x="39.88" y="50.8" text-anchor="middle" font-size="1.5" font-weight="bold" fill="black">Rome</text>
                         <text x="39.88" y="52.6" text-anchor="middle" font-size="1.2" fill="black">7742</text>
-                        <text x="39.88" y="54.2" text-anchor="middle" font-size="1.1" fill="gray">08.2019</text>
+                        <text x="39.88" y="54.2" text-anchor="middle" font-size="1.2" fill="gray">08.2019</text>
                         <text x="53.29" y="50.8" text-anchor="middle" font-size="1.5" font-weight="bold" fill="black">Milan</text>
                         <text x="53.29" y="52.6" text-anchor="middle" font-size="1.2" fill="black">7763</text>
-                        <text x="53.29" y="54.2" text-anchor="middle" font-size="1.1" fill="gray">03.2021</text>
+                        <text x="53.29" y="54.2" text-anchor="middle" font-size="1.2" fill="gray">03.2021</text>
                         <text x="67.41" y="50.8" text-anchor="middle" font-size="1.5" font-weight="bold" fill="black">Genoa</text>
                         <text x="67.41" y="52.6" text-anchor="middle" font-size="1.2" fill="black">9654</text>
-                        <text x="67.41" y="54.2" text-anchor="middle" font-size="1.1" fill="gray">11.2022</text>
+                        <text x="67.41" y="54.2" text-anchor="middle" font-size="1.2" fill="gray">11.2022</text>
                         <g transform="translate(2,0)">
                         <text x="72.35" y="50.8" text-anchor="middle" font-size="1.5" font-weight="bold" fill="#666666">Bergamo</text>
                         <text x="72.35" y="52.6" text-anchor="middle" font-size="1.2" fill="black">9754</text>
-                        <text x="72.35" y="54.2" text-anchor="middle" font-size="1.1" fill="gray">06.2023</text>
+                        <text x="72.35" y="54.2" text-anchor="middle" font-size="1.2" fill="gray">06.2023</text>
                         </g>
                         <g transform="translate(2,0)">
                             <text x="79.15" y="50.8" text-anchor="middle" font-size="1.5" font-weight="bold" fill="black">Turin</text>
                             <text x="79.15" y="52.6" text-anchor="middle" font-size="1.2" fill="black">9755</text>
-                            <text x="79.15" y="54.2" text-anchor="middle" font-size="1.1" fill="gray">10.2024</text>
+                            <text x="79.15" y="54.2" text-anchor="middle" font-size="1.2" fill="gray">10.2024</text>
                         </g>
                         <g>
                         <text x="88.15" y="50.8" text-anchor="middle" font-size="1.5" font-weight="bold" fill="#666666">Turin Dense</text>
                         <text x="88.15" y="52.6" text-anchor="middle" font-size="1.2" fill="#666666">9965</text>
-                        <text x="88.15" y="54.2" text-anchor="middle" font-size="1.1" fill="gray">10.2024</text>
+                        <text x="88.15" y="54.2" text-anchor="middle" font-size="1.2" fill="gray">10.2024</text>
                         </g>
-                        <text x="100.59" y="50.8" text-anchor="middle" font-size="1.5" font-weight="bold" fill="black">Venice</text>
-                        <text x="100.59" y="54.2" text-anchor="middle" font-size="1.1" fill="gray">10.2026</text>
+                        <text x="100.59" y="50.8" text-anchor="middle" font-size="1.5" font-weight="bold" fill="#AD7733">Venice</text>
+                        <text x="100.59" y="52.6" text-anchor="middle" font-size="1.2" fill="gray">Voraussichtlich</text>
+                        <text x="100.59" y="54.2" text-anchor="middle" font-size="1.2" fill="gray">10.2026</text>
 
                         <text x="20" y="3.8" text-anchor="end" font-size="1.4" font-weight="bold" fill="#0066CC">Perf/Core</text>
                         <line x1="17.4" y1="48.00" x2="18" y2="48.00" stroke="#0066CC" stroke-width="0.12"/>
@@ -403,8 +424,8 @@ Java - Streams
 
         .. supplemental::
 
-            Insbesondere die korrekte Nutzung ist häufig schwierig und hier ist die Verwendung von transparent parallelisierten Streams sehr hilfreich.
-            (Z. B. mit Java Parallel Streams oder :scala:`.par` in Scala ist eine transparente Parallelisierung möglich.)
+            Insbesondere die korrekte und effiziente Nutzung mehrere Threads ist häufig schwierig. Die Verwendung von (soweit möglich) „transparent“ parallelisierten Streams ist dabei sehr hilfreich.
+            (Z. B. mit Java Parallel Streams oder :scala:`.par` in Scala ist eine weitgehend transparente Parallelisierung möglich.)
 
     .. card::
 
@@ -423,61 +444,72 @@ Java - Streams
                 .. scrollable::
                     :height: 14lh
 
-
                     .. example:: Finden der besten Studierenden
 
-                        *„Nimm alle Studierenden, filtere diejenigen heraus, die bereits ein Stipendium haben, gruppiere die verbleibenden nach Studiengang, wähle pro Studiengang den mit der besten Durchschnittsnote, und erstelle daraus eine nach Note sortierte Empfehlungsliste."*
+                        .. global-information:: Studierende Auswählen - Beispiel
+                            :symbol: Beispiel: Studierendenauswahl
+                            :type: slide
+                            :embed:
 
-                        .. class:: incremental
+                            .. class:: dd-margin-left-6em
 
-                        .. rubric:: Setup
+                            :Eingabe: (Flache) Liste von allen Studierenden
+                            :Ausgabe: (Flache) Liste von förderungswürdigen Studierenden
+                            :Logik: *„Nimm alle Studierenden, filtere diejenigen heraus, die bereits ein Stipendium haben, gruppiere die verbleibenden nach Studiengang, wähle pro Studiengang den mit der besten Durchschnittsnote, und erstelle daraus eine nach Note sortierte Empfehlungsliste."*
 
-                        .. code:: java
-                            :number-lines:
-                            :line-number-digits: 2
-                            :class: incremental
+                        .. container:: incremental
 
-                            record Student(boolean hatStipendium, String studiengang, double schnitt){};
+                            .. rubric:: Setup
 
-                            List<Student> alleStudierenden =
-                                List.of(new Student(false, "Informatik", 1.3),  ...)
+                            .. code:: java
+                                :number-lines:
+                                :line-number-digits: 2
 
-                        .. class:: incremental
+                                record Student(boolean hatStipendium, String studiengang, double schnitt){};
 
-                        .. rubric:: Klassische Implementierung der Geschäftslogik
+                                List<Student> alleStudierenden =
+                                    List.of(new Student(false, "Informatik", 1.3),  ...)
 
-                        .. code:: java
-                            :number-lines: 1
-                            :class: incremental
+                            .. rubric:: Klassische Implementierung der Geschäftslogik
 
-                            // Schritt 1: Studierende ohne Stipendium sammeln
-                            List<Student> ohneStipendium = new ArrayList<>();
-                            for (Student s : alleStudierenden) {
-                                if (!s.hatStipendium()) {
-                                    ohneStipendium.add(s);
-                                }
-                            }
-                            // Schritt 2: Nach Studiengang gruppieren
-                            Map<String, List<Student>> nachStudiengang = new HashMap<>();
-                            for (Student s : ohneStipendium) {
-                                nachStudiengang
-                                    .computeIfAbsent(s.studiengang(), k -> new ArrayList<>())
-                                    .add(s);
-                            }
-                            // Schritt 3: Pro Gruppe den Besten finden
-                            List<Student> empfehlungen = new ArrayList<>();
-                            for (var eintrag : nachStudiengang.entrySet()) {
-                                Student bester = null;
-                                for (Student s : eintrag.getValue()) {
-                                    if (bester == null || s.schnitt() < bester.schnitt()) {
-                                        bester = s;
+                            .. code:: java
+                                :number-lines: 1
+                                :class: incremental
+
+                                // Schritt 1: Studierende ohne Stipendium sammeln
+                                List<Student> ohneStipendium = new ArrayList<>();
+                                for (Student s : alleStudierenden) {
+                                    if (!s.hatStipendium()) {
+                                        ohneStipendium.add(s);
                                     }
                                 }
-                                if (bester != null) {
-                                    empfehlungen.add(bester);
+                                // Schritt 2: Nach Studiengang gruppieren
+                                Map<String, List<Student>> nachStudiengang = new HashMap<>();
+                                for (Student s : ohneStipendium) {
+                                    nachStudiengang
+                                        .computeIfAbsent(s.studiengang(), k -> new ArrayList<>())
+                                        .add(s);
                                 }
-                            }
+                                // Schritt 3: Pro Gruppe den Besten finden
+                                List<Student> empfehlungen = new ArrayList<>();
+                                for (var eintrag : nachStudiengang.entrySet()) {
+                                    Student bester = null;
+                                    for (Student s : eintrag.getValue()) {
+                                        if (bester == null || s.schnitt() < bester.schnitt()) {
+                                            bester = s;
+                                        }
+                                    }
+                                    if (bester != null) {
+                                        empfehlungen.add(bester);
+                                    }
+                                }
 
+
+
+.. class:: new-section transition-scale
+
+Zentrale Konzepte von (Java) Streams
+--------------------------------------------------
 
 
 
@@ -488,7 +520,7 @@ Java I/O Streams vs. Java Stream API
 
 .. attention::
 
-    Im Folgenden betrachten wir die Java Stream API und nicht Java I/O Streams.
+    Im Folgenden betrachten wir die **Java Stream API** und nicht **Java I/O Streams**.
 
     .. list-table::
         :header-rows: 1
@@ -533,36 +565,44 @@ Java I/O Streams vs. Java Stream API
 
 
 
-Streams - Einführung
+Streams - Einführung am Beispiel
 ------------------------------------------------
 
 .. deck::
 
     .. card::
 
-        .. class:: incremental-list
+        .. class:: incremental-list dd-margin-left-4em
 
-        :Pragmatische Sicht: Streams\ [#]_ sind umgeformte Sammlungen\ :incremental:`, die durch die Umformung für funktional-orientiere Massen-Operationen geeignet sind.`
-        :Konzeptionelle Sicht: Streams erlauben die „korrekte, lesbare (domänennahe)“ Verarbeitung von Daten mit Hilfe von Konzepten und Ideen aus der funktionalen und deklarativen Programmierung.
+        :Pragmatische Sicht: Streams\ [#]_ sind umgeformte Sammlungen\ :incremental:`, die durch die Umformung für funktional-orientierte Massen-Operationen geeignet sind.`
+        :Konzeptionelle Sicht: Streams erlauben die „korrekte, effiziente, lesbare (domänennahe)“ Verarbeitung von Daten mit Hilfe von Konzepten und Ideen aus der funktionalen und deklarativen Programmierung.
 
     .. card::
 
         .. example::
 
+            .. supplemental::
+                :embed-in-document-flow:
+
+                *Benötigte Imports (nicht in der JShell)*
+
+                .. code:: java
+                    :class: copy-to-clipboard
+
+                    import java.util.Arrays;
+                    import java.util.List;
+                    import java.util.stream.Collectors;
+
             .. code:: java
                 :number-lines:
                 :class: copy-to-clipboard
 
-                import java.util.Arrays;
-                import java.util.List;
-                import java.util.stream.Collectors;
-
-                List<Integer> l = Arrays.asList(1, 2, 3, 4, 5, 6, 7, 8, 9);
+                List<Integer> l  = Arrays.asList(1, 2, 3, 4, 5, 6, 7, 8, 9);
                 List<Integer> ll = l
                     .stream()                       // list → stream
                     .filter(x -> x % 2 == 0)        // filter list with predicate
                     .map(x -> 10 * x)               // map each element to a new one
-                    .collect(Collectors.toList());  // back to a list
+                    .collect(Collectors.toList());  // back to a list (alt. toList())
                 ll.forEach(x -> System.out.println(x));
 
             .. container:: incremental
@@ -573,91 +613,220 @@ Streams - Einführung
 
 
 
-
-
-
-
-
-Streams API - kurze Historie
-------------------------------
-
-- die Streams API wurde mit Java 1.8 eingeführt und wird seit dem ständig `weiterentwickelt <https://javapro.io/2025/11/13/java-streams-evolution-from-java-8-to-today/>`__.
-
-
+Streams API - Evolution
+--------------------------------
 
 .. story::
 
     .. raw:: html
         :class: center-content
 
-        <div    style="width: 48ch; height: 128ch;">
-        <svg    viewBox="0 0 24 128"
-                font-size="2"
-                version="1.1" xmlns="http://www.w3.org/2000/svg">
-            <!-- the previous style is reused!-->
-            <g class="graph">
-                <g>
-                <circle cx="8" cy="1" r="0.5" />
-                <text x="7.5" y="3.25">A</text>
-                </g>
+        <div style="width:71ch; height: 90.47ch">
+        <svg viewBox="6 0 62 79"
+            xmlns="http://www.w3.org/2000/svg">
 
-                <g class="incremental">
-                <circle cx="1" cy="6" r="0.5" />
-                <line x1="1.35" y1="5.65" x2="7.65" y2="1.35" />
-                <text x="0.5" y="8.25">B</text>
-                </g>
+        <!-- ═══ Timeline backbone ═══ -->
+        <line x1="40" y1="2" x2="40" y2="6"
+                stroke="light-dark(#bbb, #555)" stroke-width="0.25" stroke-dasharray="0.5 0.25"/>
+        <line x1="40" y1="6" x2="40" y2="69"
+                stroke="light-dark(#bbb, #555)" stroke-width="0.25" />
+        <line x1="40" y1="69" x2="40" y2="78"
+                stroke="light-dark(#bbb, #555)" stroke-width="0.25" stroke-dasharray="0.5 0.25"/>
 
-                <g class="incremental">
-                <circle cx="15" cy="6" r="0.5" />
-                <line x1="14.65" y1="5.65" x2="8.35" y2="1.35"/>
-                <text x="15.75" y="6.75">C</text>
-                </g>
+        <!-- ═══════════════════════════════════════════════════
+            Java 8 — März 2014  (LEFT)
+            ═══════════════════════════════════════════════════ -->
+        <g>
+            <circle cx="40" cy="6" r="1"
+                    fill="light-dark(#b91c1c, #f87171)" />
+            <line x1="39" y1="6" x2="32" y2="6"
+                stroke="light-dark(#b91c1c, #f87171)" stroke-width="0.2" />
+            <text x="31" y="5" text-anchor="end"
+                font-size="2.2" font-weight="bold"
+                fill="light-dark(#b91c1c, #f87171)">Java 8</text>
+            <text x="31" y="7" text-anchor="end"
+                font-size="1.1"
+                fill="light-dark(#888, #999)">März 2014 (LTS bis 2030)</text>
+            <text x="31" y="9.2" text-anchor="end"
+                font-size="1.1" fill="currentColor">
+                <tspan x="31" dy="0" font-weight="600">Initiale Stream API (java.util.stream)</tspan>
+                <tspan x="31" dy="1.6" font-weight="500" font-style="italic">Intermediate Ops.: </tspan><tspan>filter, map, flatMap, sorted, ...</tspan>
+                <tspan x="31" dy="1.6"  font-weight="500" font-style="italic">Terminal Ops.: </tspan><tspan>collect, reduce, forEach, count, ...</tspan>
+                <tspan x="31" dy="1.6">Collector-Interface — erweiterbarer Endpunkt</tspan>
+                <tspan x="31" dy="1.6">Parallele Streams via .parallelStream()</tspan>
+            </text>
+        </g>
 
-                <g class="incremental">
-                <circle cx="8" cy="11" r="0.5" />
-                <line x1="8.35" y1="10.65" x2="14.5" y2="6" />
-                <path d="M 8 10.5 C 5 6.5, 2.5 12, 7.5 11" />
-                <text x="7.5" y="13.25">D</text>
-                </g>
 
-                <g class="incremental">
-                <circle cx="22" cy="11" r="0.5" />
-                <line x1="21.5" y1="11" x2="8.5" y2="11" />
-                <path d="M 22 10.5 C 22 5.5, 16 1, 8.5 1" />
-                <text x="21.5" y="13.25">E</text>
-                </g>
+        <!-- ═══════════════════════════════════════════════════
+            Java 9 — Sep. 2017  (RIGHT)
+            ═══════════════════════════════════════════════════ -->
+        <g class="incremental" transform="translate(0, -4)">
 
-                <g class="incremental" transform="translate(0,20)">
-                <circle cx="22" cy="11" r="0.5" />
-                <line x1="21.5" y1="11" x2="8.5" y2="11" />
-                <path d="M 22 10.5 C 22 5.5, 16 1, 8.5 1" />
-                <text x="21.5" y="13.25">E</text>
-                </g>
-                <g class="incremental" transform="translate(0,40)">
-                <circle cx="22" cy="11" r="0.5" />
-                <line x1="21.5" y1="11" x2="8.5" y2="11" />
-                <path d="M 22 10.5 C 22 5.5, 16 1, 8.5 1" />
-                <text x="21.5" y="13.25">E</text>
-                </g>
-                <g class="incremental" transform="translate(0,60)">
-                <circle cx="22" cy="11" r="0.5" />
-                <line x1="21.5" y1="11" x2="8.5" y2="11" />
-                <path d="M 22 10.5 C 22 5.5, 16 1, 8.5 1" />
-                <text x="21.5" y="13.25">E</text>
-                </g>
-                <g class="incremental" transform="translate(0,80)">
-                <circle cx="22" cy="11" r="0.5" />
-                <line x1="21.5" y1="11" x2="8.5" y2="11" />
-                <path d="M 22 10.5 C 22 5.5, 16 1, 8.5 1" />
-                <text x="21.5" y="13.25">E</text>
-                </g>
-                <g class="incremental" transform="translate(0,100)">
-                <circle cx="22" cy="11" r="0.5" />
-                <line x1="21.5" y1="11" x2="8.5" y2="11" />
-                <path d="M 22 10.5 C 22 5.5, 16 1, 8.5 1" />
-                <text x="21.5" y="13.25">E</text>
-                </g>
-            </g>
+            <!-- Java 9 -->
+            <circle cx="40" cy="22" r="0.6"
+                    fill="light-dark(#2563eb, #60a5fa)" />
+            <line x1="41" y1="22" x2="48" y2="22"
+                stroke="light-dark(#2563eb, #60a5fa)" stroke-width="0.2" />
+            <text x="49" y="21" text-anchor="start"
+                font-size="2.2" font-weight="bold"
+                fill="light-dark(#2563eb, #60a5fa)">Java 9</text>
+            <text x="49" y="23" text-anchor="start"
+                font-size="1.1"
+                fill="light-dark(#888, #999)">Sep. 2017</text>
+            <text x="49" y="25.2" text-anchor="start"
+                font-size="1.1" fill="currentColor">
+            <tspan x="49" dy="0">takeWhile / dropWhile</tspan>
+            <tspan x="49" dy="1.6">Stream.iterate(seed, hasNext, next)</tspan>
+            <tspan x="49" dy="1.6">Stream.ofNullable, Optional.stream()</tspan>
+            <tspan x="49" dy="1.6">Collectors.filtering / flatMapping</tspan>
+            </text>
+        </g>
+
+        <!-- ═══════════════════════════════════════════════════
+            Java 10 — März 2018  (LEFT)
+            ═══════════════════════════════════════════════════ -->
+        <g class="incremental" transform="translate(0, -10)">
+            <circle cx="40" cy="36" r="0.6"
+                    fill="light-dark(#2563eb, #60a5fa)" />
+            <line x1="39.4" y1="36" x2="32" y2="36"
+                stroke="light-dark(#2563eb, #60a5fa)" stroke-width="0.15" />
+            <text x="31" y="35" text-anchor="end"
+                font-size="2" font-weight="bold"
+                fill="light-dark(#2563eb, #60a5fa)">Java 10</text>
+            <text x="31" y="37" text-anchor="end"
+                font-size="1.1"
+                fill="light-dark(#888, #999)">März 2018</text>
+            <text x="31" y="39" text-anchor="end"
+                font-size="1.1" fill="currentColor">
+            <tspan x="31" dy="0">Collectors.toUnmodifiable{List,Set,Map}</tspan>
+            </text>
+        </g>
+
+        <!-- ═══════════════════════════════════════════════════
+            Java 12 — März 2019  (RIGHT)
+            ═══════════════════════════════════════════════════ -->
+        <g class="incremental" transform="translate(0,-10)">
+            <circle cx="40" cy="44" r="0.6"
+                    fill="light-dark(#2563eb, #60a5fa)" />
+            <line x1="40.6" y1="44" x2="48" y2="44"
+                stroke="light-dark(#2563eb, #60a5fa)" stroke-width="0.15" />
+            <text x="49" y="43" text-anchor="start"
+                font-size="2" font-weight="bold"
+                fill="light-dark(#2563eb, #60a5fa)">Java 12</text>
+            <text x="49" y="45" text-anchor="start"
+                font-size="1.1"
+                fill="light-dark(#888, #999)">März 2019</text>
+            <text x="49" y="47" text-anchor="start"
+                font-size="1.1" fill="currentColor">
+            <tspan x="49" dy="0">Collectors.teeing (zwei Collector parallel)</tspan>
+            </text>
+        </g>
+
+        <!-- ═══════════════════════════════════════════════════
+            Java 16 — März 2021  (LEFT)
+            ═══════════════════════════════════════════════════ -->
+        <g class="incremental" transform="translate(0,-12)">
+            <circle cx="40" cy="53" r="0.6"
+                    fill="light-dark(#2563eb, #60a5fa)" />
+            <line x1="39.3" y1="53" x2="32" y2="53"
+                stroke="light-dark(#2563eb, #60a5fa)" stroke-width="0.15" />
+            <text x="31" y="52" text-anchor="end"
+                font-size="2" font-weight="bold"
+                fill="light-dark(#2563eb, #60a5fa)">Java 16</text>
+            <text x="31" y="54" text-anchor="end"
+                font-size="1.1"
+                fill="light-dark(#888, #999)">März 2021</text>
+            <text x="31" y="56" text-anchor="end"
+                font-size="1.1" fill="currentColor">
+            <tspan x="31" dy="0">Stream.toList() als Ergänzung zu collect(toList())</tspan>
+            <tspan x="31" dy="1.6">mapMulti — imperative Alternative zu flatMap</tspan>
+            </text>
+
+
+            <!-- Epoche: Inkrementelle Verbesserungen -->
+            <line x1="38" y1="30" x2="38" y2="53"
+                stroke="light-dark(#2563eb, #60a5fa)" stroke-width="0.1"
+                stroke-dasharray="0.4,0.3" opacity="0.5" />
+            <text x="37" y="41.5" text-anchor="middle"
+                font-size="1" fill="light-dark(#2563eb, #60a5fa)"
+                transform="rotate(-90, 37, 41.5)" opacity="0.6">Inkrementelle Ergänzungen</text>
+        </g>
+
+        <!-- ═══════════════════════════════════════════════════
+            Java 22 — März 2024  (RIGHT)  — Gatherers Era
+            ═══════════════════════════════════════════════════ -->
+        <g class="incremental" transform="translate(0,-14)">
+
+            <!-- Java 22 -->
+            <circle cx="40" cy="65" r="0.6"
+                    fill="light-dark(#15803d, #4ade80)" />
+            <line x1="40.7" y1="65" x2="48" y2="65"
+                stroke="light-dark(#15803d, #4ade80)" stroke-width="0.15" />
+            <text x="49" y="64" text-anchor="start"
+                font-size="2" font-weight="bold"
+                fill="light-dark(#15803d, #4ade80)">Java 22</text>
+            <text x="49" y="66" text-anchor="start"
+                font-size="1.1"
+                fill="light-dark(#888, #999)">März 2024</text>
+            <text x="49" y="68" text-anchor="start"
+                font-size="1.1" fill="currentColor">
+            <tspan x="49" dy="0">JEP 461: Stream Gatherers (Preview)</tspan>
+            <tspan x="49" dy="1.6" font-weight="500">Erweiterbare </tspan><tspan font-style="italic" font-weight="500">Intermediate Operations</tspan>
+            </text>
+        </g>
+
+        <!-- ═══════════════════════════════════════════════════
+            Java 23 — Sep. 2024  (LEFT)
+            ═══════════════════════════════════════════════════ -->
+        <g class="incremental" transform="translate(0,-16)">
+            <circle cx="40" cy="76" r="0.6"
+                    fill="light-dark(#15803d, #4ade80)" />
+            <line x1="39.4" y1="76" x2="32" y2="76"
+                stroke="light-dark(#15803d, #4ade80)" stroke-width="0.15" />
+            <text x="31" y="75" text-anchor="end"
+                font-size="2" font-weight="bold"
+                fill="light-dark(#15803d, #4ade80)">Java 23</text>
+            <text x="31" y="77" text-anchor="end"
+                font-size="1.1"
+                fill="light-dark(#888, #999)">Sep. 2024</text>
+            <text x="31" y="79" text-anchor="end"
+                font-size="1.1" fill="currentColor">
+            <tspan x="31" dy="0">JEP 473: Gatherers (2nd Preview, ohne Änd.)</tspan>
+            </text>
+        </g>
+
+        <!-- ═══════════════════════════════════════════════════
+            Java 24 — März 2025  (RIGHT)  — Finale
+            ═══════════════════════════════════════════════════ -->
+        <g class="incremental" transform="translate(0,-18)">
+            <circle cx="40" cy="87" r="1"
+                    fill="light-dark(#15803d, #4ade80)" />
+            <line x1="41" y1="87" x2="48" y2="87"
+                stroke="light-dark(#15803d, #4ade80)" stroke-width="0.2" />
+            <text x="49" y="86" text-anchor="start"
+                font-size="2.2" font-weight="bold"
+                fill="light-dark(#15803d, #4ade80)">Java 24</text>
+            <text x="49" y="88" text-anchor="start"
+                font-size="1.1"
+                fill="light-dark(#888, #999)">März 2025</text>
+            <text x="49" y="90.2" text-anchor="start"
+                font-size="1.1" fill="currentColor">
+            <tspan x="49" dy="0" font-weight="bold">JEP 485: Gatherers — finalisiert</tspan>
+            <tspan x="49" dy="1.6">Gatherer&lt;T,A,R&gt; + Stream.gather(...)</tspan>
+            <tspan x="49" dy="1.6">Built-in: fold, scan, windowFixed,</tspan>
+            <tspan x="49" dy="1.6">    windowSliding, mapConcurrent</tspan>
+            </text>
+
+            <!-- Epoche: Gatherers -->
+            <line x1="42" y1="69" x2="42" y2="87"
+                stroke="light-dark(#15803d, #4ade80)" stroke-width="0.1"
+                stroke-dasharray="0.4,0.3" opacity="0.5" />
+            <text x="43" y="76" text-anchor="start"
+                font-size="1" fill="light-dark(#15803d, #4ade80)"
+                writing-mode="tb" opacity="0.6">Gatherers-Ära</text>
+
+        </g>
         </svg>
         </div>
 
@@ -666,7 +835,442 @@ Streams API - kurze Historie
 Streams - Grundlegendes Konzept
 ---------------------------------
 
-Erzeugen - Verarbeiten - Terminale Operation
+.. raw:: html
+    :class: center-content height-100
+
+    <div style="width:71ch; height: 28.4ch">
+    <svg viewBox="0 7 72.5 29"
+        xmlns="http://www.w3.org/2000/svg">
+
+    <!-- ═══════════════════════════════════════════════════
+        Schritt 1: Quelle  (sofort sichtbar)
+        ═══════════════════════════════════════════════════ -->
+    <g>
+        <!-- Source-Box -->
+        <rect x="1" y="11" width="13" height="8" rx="0.8"
+            fill="light-dark(#f3f4f6, #374151)"
+            stroke="light-dark(#6b7280, #9ca3af)" stroke-width="0.2"/>
+        <text x="7.5" y="13.4" text-anchor="middle"
+            font-size="1.6" font-weight="bold" fill="currentColor">Quelle</text>
+        <text x="7.5" y="14.75" text-anchor="middle"
+            font-size="0.95"  fill="light-dark(#fc6a03, #dfa172)">(read-only)</text>
+        <text x="7.5" y="16.6" text-anchor="middle"
+            font-size="1.05" fill="light-dark(#6b7280, #9ca3af)">
+            <tspan x="7.5" dy="0">Collection, Array,</tspan>
+            <tspan x="7.5" dy="1.4">Stream.of(...), ...</tspan>
+        </text>
+
+        <!-- .stream() Pfeil -->
+        <line x1="14" y1="15" x2="19.5" y2="15"
+            stroke="currentColor" stroke-width="0.2"
+            marker-end="url(#pipe-arrow)"/>
+        <text x="16.75" y="13.8" text-anchor="middle"
+            font-size="0.95" fill="light-dark(#6b7280, #9ca3af)"
+            font-style="italic">.stream()</text>
+    </g>
+
+    <!-- ═══════════════════════════════════════════════════
+        Schritt 2: Intermediate Operations
+        ═══════════════════════════════════════════════════ -->
+    <g class="incremental">
+        <!-- Hintergrund-Klammer für die Kette -->
+        <rect x="19.5" y="8" width="28.5" height="14" rx="0.6"
+            fill="light-dark(#eff6ff, #1e3a5f)"
+            stroke="light-dark(#2563eb, #60a5fa)" stroke-width="0.12"
+            stroke-dasharray="0.5,0.3" opacity="0.5"/>
+        <text x="34" y="9.6" text-anchor="middle"
+            font-size="1" fill="light-dark(#2563eb, #60a5fa)"
+            opacity="0.7">0..n Intermediate Operations (lazy)</text>
+
+        <!-- Op 1: filter -->
+        <g transform="translate(2.5,0)">
+        <rect x="21" y="12" width="8.5" height="6" rx="0.6"
+            fill="light-dark(#dbeafe, #1e40af)"
+            stroke="light-dark(#2563eb, #60a5fa)" stroke-width="0.18"/>
+        <text x="25.25" y="14.8" text-anchor="middle"
+            font-size="1.2" font-weight="bold" font-style="italic"
+            fill="light-dark(#1e40af, #93c5fd)">Built-in Op</text>
+        <text x="25.25" y="16.6" text-anchor="middle"
+            font-size="0.85"
+             fill="light-dark(#3b82f6, #93c5fd)">map, sorted, ...</text>
+        </g>
+
+        <!-- Verbindungspfeil -->
+        <line x1="32" y1="15" x2="35.5" y2="15"
+            stroke="light-dark(#2563eb, #60a5fa)" stroke-width="0.18"
+            marker-end="url(#pipe-arrow)"/>
+
+        <!-- Op 2: gather (custom!) -->
+        <g transform="translate(2.5,0)">
+        <rect x="33" y="12" width="8.5" height="6" rx="0.6"
+            fill="light-dark(#dcfce7, #14532d)"
+            stroke="light-dark(#15803d, #4ade80)" stroke-width="0.18"/>
+        <text x="37.25" y="14.8" text-anchor="middle"
+            font-size="1.2" font-weight="bold" font-style="italic"
+            fill="light-dark(#15803d, #4ade80)">Custom Op</text>
+        <text x="37.25" y="11.5" text-anchor="middle"
+            font-size="1"
+            fill="light-dark(#15803d, #4ade80)">≥Java 24</text>
+        <text x="37.25" y="16.6" text-anchor="middle"
+            font-size="0.85"
+            fill="light-dark(#16a34a, #86efac)">gather</text>
+        </g>
+
+        <!-- „..." -->
+        <text x="21.5" y="16" text-anchor="middle"
+            font-size="2.5" fill="light-dark(#93c5fd, #60a5fa)"
+            font-weight="bold">···</text>
+        <text x="46" y="16" text-anchor="middle"
+            font-size="2.5" fill="light-dark(#93c5fd, #60a5fa)"
+            font-weight="bold">···</text>
+
+        <path d="M 46 15.5 L 46 20 L 21.5 20 L 21.5 15.5"
+            fill="none"
+            stroke="light-dark(#2563eb, #60a5fa)" stroke-width="0.2"
+            stroke-dasharray="0.4,0.3"
+            marker-end="url(#pipe-arrow)"/>
+    </g>
+
+    <!-- ═══════════════════════════════════════════════════
+        Schritt 3: Terminal Operation
+        ═══════════════════════════════════════════════════ -->
+    <g class="incremental" transform="translate(-5.5,0)">
+        <!-- Pfeil zur Terminal Op -->
+        <line x1="53.5" y1="15" x2="56.5" y2="15"
+            stroke="currentColor" stroke-width="0.2"
+            marker-end="url(#pipe-arrow)"/>
+
+        <!-- Terminal-Box -->
+        <rect x="56.5" y="11" width="13" height="8" rx="0.8"
+            fill="light-dark(#fef2f2, #4c1d1d)"
+            stroke="light-dark(#b91c1c, #f87171)" stroke-width="0.22"/>
+        <text x="63" y="14.2" text-anchor="middle"
+            font-size="1.4" font-weight="bold" font-style="italic"
+            fill="light-dark(#b91c1c, #f87171)">Terminal Op</text>
+        <text x="63" y="16.6" text-anchor="middle"
+            font-size="1.0" fill="light-dark(#ef4444, #fca5a5)">
+        <tspan x="63" dy="0">collect, toList,</tspan>
+        <tspan x="63" dy="1.4">forEach, reduce, ...</tspan>
+        </text>
+    </g>
+
+    <!-- ═══════════════════════════════════════════════════
+        Schritt 4: Ergebnis + Erklärung
+        ═══════════════════════════════════════════════════ -->
+    <g class="incremental"  transform="translate(-5.5,0)">
+        <!-- Pfeil zum Ergebnis -->
+        <line x1="69.5" y1="15" x2="72" y2="15"
+            stroke="currentColor" stroke-width="0.2"
+            marker-end="url(#pipe-arrow)"/>
+
+        <!-- Ergebnis -->
+        <rect x="72" y="12" width="5.5" height="6" rx="0.6"
+            fill="light-dark(#f5f3ff, #3b0764)"
+            stroke="light-dark(#7c3aed, #a78bfa)" stroke-width="0.18"/>
+        <text x="74.75" y="15.35" text-anchor="middle"
+            font-size="1.2" font-weight="bold"
+            fill="light-dark(#7c3aed, #a78bfa)">Ergebnis</text>
+
+        <!-- Annotationen unterhalb -->
+        <g font-size="1.5" transform="translate(0,-1.5)">
+        <text x="13.5" y="26" text-anchor="middle"
+            fill="light-dark(#6b7280, #9ca3af)">
+            <tspan x="13.5" font-weight="bold" fill="currentColor">Erzeugen</tspan>
+            <tspan x="13.5" dy="2">Erstellt einen Stream</tspan>
+            <tspan x="13.5" dy="1.75">aus einer Datenquelle.</tspan>
+            <tspan x="13.5" dy="1.75">Keine Daten fließen</tspan>
+            <tspan x="13.5" dy="1.75">bis zur Terminal Op.</tspan>
+        </text>
+        <text x="40" y="26" text-anchor="middle"
+            fill="light-dark(#6b7280, #9ca3af)">
+            <tspan x="40" font-weight="bold" fill="currentColor">Transformieren</tspan>
+            <tspan x="40" dy="2">Verkettete Operationen.</tspan>
+            <tspan x="40" dy="1.75">Jede liefert neuen Stream.</tspan>
+            <tspan x="40" dy="1.75">Lazy — erst bei Terminal</tspan>
+            <tspan x="40" dy="1.75">Op ausgewertet.</tspan>
+        </text>
+        <text x="63" y="26" text-anchor="middle"
+            fill="light-dark(#6b7280, #9ca3af)">
+            <tspan x="63" font-weight="bold" fill="currentColor">Konsumieren</tspan>
+            <tspan x="63" dy="2">Löst die Auswertung</tspan>
+            <tspan x="63" dy="1.75">der gesamten Pipeline</tspan>
+            <tspan x="63" dy="1.75">aus und produziert</tspan>
+            <tspan x="63" dy="1.75">das Ergebnis.</tspan>
+        </text>
+        </g>
+    </g>
+
+    </svg>
+    </div>
+
+.. supplemental::
+    :embed-in-document-flow:
+
+    Es ist möglich als terminale Operation einen :java:`Iterator` bzw. :java:`Spliterator` zu erzeugen. In diesen beiden Fällen erfolgt die Evaluation der Pipeline nicht vollständig (d.h. nicht *eager* sondern *lazy*). Es wird somit nur so viel ausgewertet, wie für die Erzeugung des :java:`Iterator`\ /\ :java:`Spliterator` notwendig ist. Das hat zur Folge, dass die Elemente des Streams erst dann verarbeitet werden, wenn sie tatsächlich über den :java:`Iterator`\ /\ :java:`Spliterator` angefordert werden.
+
+    Die Verwendung dieser beiden Methoden führt zu einem Bruch des deklarativen Pipeline-Modells, der in den allermeisten Fällen vermieden werden kann. Häufig nur noch im Zusammenhang mit Legacy-APIs relevant, die mit :java:`Iterator`\ /\ :java:`Spliterator` arbeiten.
+
+
+
+Eigenschaften von *Intermediate Operations*
+----------------------------------------------
+
+.. story::
+
+  .. raw:: html
+    :class: center-content
+
+    <div style="width:71ch; height: 74.55ch">
+    <svg viewBox="0 4 40 42"
+     xmlns="http://www.w3.org/2000/svg">
+
+        <!-- ═══════════════════════════════════════════════════
+            Schritt 1: Stateless vs. Stateful
+            ═══════════════════════════════════════════════════ -->
+        <g>
+            <text x="22" y="2.5" text-anchor="middle"
+                font-size="1.5" font-weight="bold"
+                fill="currentColor"></text>
+
+            <!-- Stateless -->
+            <rect x="1" y="5" width="16" height="5" rx="0.6"
+                fill="light-dark(#dbeafe, #1e3a5f)"
+                stroke="light-dark(#2563eb, #60a5fa)" stroke-width="0.2"/>
+            <text x="9" y="7.2" text-anchor="middle"
+                font-size="1.4" font-weight="bold"
+                fill="light-dark(#1e40af, #93c5fd)">Stateless</text>
+
+            <!-- Stateful -->
+            <rect x="23" y="5" width="16" height="5" rx="0.6"
+                fill="light-dark(#fef2f2, #4c1d1d)"
+                stroke="light-dark(#b91c1c, #f87171)" stroke-width="0.2"/>
+            <text x="31" y="7.2" text-anchor="middle"
+                font-size="1.4" font-weight="bold"
+                fill="light-dark(#b91c1c, #f87171)">Stateful</text>
+
+            <!-- vs. -->
+            <line x1="17" y1="7.5" x2="23" y2="7.5"
+                stroke="light-dark(#d1d5db, #4b5563)" stroke-width="0.1"
+                stroke-dasharray="0.3,0.2"/>
+            <text x="20" y="6.8" text-anchor="middle"
+                font-size="0.9" fill="light-dark(#9ca3af, #6b7280)"
+                font-style="italic">vs.</text>
+
+            <!-- Beispiele -->
+            <text x="9" y="9" text-anchor="middle"
+                font-size="0.85" fill="light-dark(#6b7280, #9ca3af)">z. B. filter</text>
+            <text x="31" y="9" text-anchor="middle"
+                font-size="0.85" fill="light-dark(#6b7280, #9ca3af)">z. B. sorted</text>
+        </g>
+
+        <!-- ═══════════════════════════════════════════════════
+            Schritt 2: Konsequenzen Stateless
+            ═══════════════════════════════════════════════════ -->
+        <g class="incremental">
+            <line x1="9" y1="10" x2="9" y2="12"
+                stroke="light-dark(#2563eb, #60a5fa)" stroke-width="0.18"
+                marker-end="url(#impl-arrow)"/>
+            <text x="10" y="11.15" text-anchor="start"
+                font-size="0.8" fill="light-dark(#93c5fd, #60a5fa)"
+                font-style="italic">⇒ impliziert</text>
+
+            <rect x="1" y="12" width="16" height="4" rx="0.5"
+                fill="light-dark(#eff6ff, #172554)"
+                stroke="light-dark(#93c5fd, #1e40af)" stroke-width="0.12"/>
+            <text x="9" y="13.5" text-anchor="middle"
+                font-size="1.0" fill="light-dark(#1e40af, #93c5fd)">Konstanter
+                <tspan x="9" dy="1.75">Speicherbedarf</tspan>
+                </text>
+
+            <line x1="9" y1="16" x2="9" y2="18"
+                stroke="light-dark(#2563eb, #60a5fa)" stroke-width="0.18"
+                marker-end="url(#impl-arrow)"/>
+
+            <rect x="1" y="18" width="16" height="4" rx="0.5"
+                fill="light-dark(#eff6ff, #172554)"
+                stroke="light-dark(#93c5fd, #1e40af)" stroke-width="0.12"/>
+            <text x="9" y="19.5" text-anchor="middle"
+                font-size="1.0" fill="light-dark(#1e40af, #93c5fd)">Trivial
+                <tspan x="9" dy="1.75">parallelisierbar<tspan></text>
+        </g>
+
+        <!-- ═══════════════════════════════════════════════════
+            Schritt 3: Konsequenzen Stateful
+            ═══════════════════════════════════════════════════ -->
+        <g class="incremental">
+            <line x1="31" y1="10" x2="31" y2="12"
+                stroke="light-dark(#b91c1c, #f87171)" stroke-width="0.18"
+                marker-end="url(#impl-arrow)"/>
+            <text x="30" y="11.15" text-anchor="end"
+                font-size="0.8" fill="light-dark(#fca5a5, #f87171)"
+                font-style="italic">⇒ möglich</text>
+
+            <rect x="23" y="12" width="16" height="4" rx="0.5"
+                fill="light-dark(#fef2f2, #371717)"
+                stroke="light-dark(#fca5a5, #991b1b)" stroke-width="0.12"/>
+            <text x="31" y="13.5" text-anchor="middle"
+                font-size="1.0" fill="light-dark(#991b1b, #fca5a5)">Speicher bis O(n)</text>
+            <text x="31" y="15" text-anchor="middle"
+                font-size="0.8" fill="light-dark(#6b7280, #9ca3af)">(aber nicht zwingend)</text>
+
+            <line x1="31" y1="16" x2="31" y2="18"
+                stroke="light-dark(#b91c1c, #f87171)" stroke-width="0.18"
+                marker-end="url(#impl-arrow)"/>
+
+            <rect x="23" y="18" width="16" height="4" rx="0.5"
+                fill="light-dark(#fef2f2, #371717)"
+                stroke="light-dark(#fca5a5, #991b1b)" stroke-width="0.12"/>
+            <text x="31" y="19.5" text-anchor="middle"
+                font-size="1.0" fill="light-dark(#991b1b, #fca5a5)">Parallelisierung
+                <tspan x="31" dy="1.75">eingeschränkt</tspan></text>
+        </g>
+
+        <g transform="translate(0,-7)">
+        <!-- ═══════════════════════════════════════════════════
+            Schritt 4: Short-circuiting
+            ═══════════════════════════════════════════════════ -->
+        <g class="incremental">
+            <line x1="3" y1="31" x2="37" y2="31"
+                stroke="light-dark(#e5e7eb, #374151)" stroke-width="0.08"/>
+            <text x="20" y="33" text-anchor="middle"
+                font-size="0.8" fill="light-dark(#9ca3af, #6b7280)"
+                font-style="italic">unabhängig von Stateless/Stateful</text>
+
+            <rect x="1" y="35" width="12" height="5" rx="0.6"
+                fill="light-dark(#fefce8, #422006)"
+                stroke="light-dark(#ca8a04, #facc15)" stroke-width="0.18"/>
+            <text x="7" y="37" text-anchor="middle"
+                font-size="1.1" font-weight="bold"
+                fill="light-dark(#854d0e, #facc15)">Short-circuiting</text>
+            <text x="7" y="39.2" text-anchor="middle"
+                font-size="0.8" fill="light-dark(#a16207, #fde047)">(vorzeitig abbrechend)</text>
+
+            <line x1="13" y1="37.5" x2="27" y2="37.5"
+                stroke="light-dark(#ca8a04, #facc15)" stroke-width="0.18"
+                marker-end="url(#impl-arrow)"/>
+
+            <rect x="27" y="35" width="12" height="5" rx="0.5"
+                fill="light-dark(#fefce8, #422006)"
+                stroke="light-dark(#fde68a, #92400e)" stroke-width="0.12"/>
+            <text x="33" y="37" text-anchor="middle"
+                font-size="0.95" fill="light-dark(#854d0e, #facc15)">kann unendliche</text>
+            <text x="33" y="38.5" text-anchor="middle"
+                font-size="0.95" fill="light-dark(#854d0e, #facc15)">Streams beenden</text>
+
+            <!-- Beispiele -->
+            <text x="20" y="34.75" text-anchor="middle"
+                font-size="0.85" fill="light-dark(#6b7280, #9ca3af)">
+                Beispiele:
+                <tspan x="20" dy="2.25" font-weight="bold" fill="light-dark(#16a34a, #4ade80)">Ja: </tspan>takeWhile
+                <tspan x="20" dy="1.5" font-weight="bold" fill="light-dark(#dc2626, #f87171)">Nein: </tspan>sorted
+            </text>
+        </g>
+
+        <!-- ═══════════════════════════════════════════════════
+            Schritt 5: Encounter Order
+            ═══════════════════════════════════════════════════ -->
+        <g class="incremental" transform="translate(0,-4)">
+            <rect x="1" y="47" width="12" height="5" rx="0.6"
+                fill="light-dark(#f0fdf4, #052e16)"
+                stroke="light-dark(#15803d, #4ade80)" stroke-width="0.18"/>
+            <text x="7" y="49" text-anchor="middle"
+                font-size="1.1" font-weight="bold"
+                fill="light-dark(#15803d, #4ade80)">Encounter Order</text>
+            <text x="7" y="51.2" text-anchor="middle"
+                font-size="0.8" fill="light-dark(#16a34a, #86efac)">(Elementreihenfolge)</text>
+
+            <line x1="13" y1="49.5" x2="27" y2="49.5"
+                stroke="light-dark(#15803d, #4ade80)" stroke-width="0.18"
+                marker-end="url(#impl-arrow)"/>
+
+            <rect x="27" y="47" width="12" height="5" rx="0.5"
+                fill="light-dark(#f0fdf4, #052e16)"
+                stroke="light-dark(#86efac, #14532d)" stroke-width="0.12"/>
+            <text x="33" y="49.25" text-anchor="middle"
+                font-size="0.95" fill="light-dark(#15803d, #4ade80)">Beeinflusst Overhead</text>
+            <text x="33" y="50.75" text-anchor="middle"
+                font-size="0.95" fill="light-dark(#15803d, #4ade80)">bei Parallelisierung</text>
+
+            <!-- Beispiele -->
+            <g transform="translate(11,-6.65)">
+            <text x="9" y="54.2" text-anchor="middle"
+                font-size="0.85" fill="light-dark(#6b7280, #9ca3af)">
+            <tspan font-weight="bold" fill="light-dark(#2563eb, #60a5fa)">Erhält:</tspan>
+            filter</text>
+            <text x="9" y="55.7" text-anchor="middle"
+                font-size="0.85" fill="light-dark(#6b7280, #9ca3af)">
+            <tspan font-weight="bold" fill="light-dark(#ca8a04, #facc15)">Stellt her:</tspan>
+            sorted</text>
+            <text x="9" y="57.2" text-anchor="middle"
+                font-size="0.85" fill="light-dark(#6b7280, #9ca3af)">
+            <tspan font-weight="bold" fill="light-dark(#dc2626, #f87171)">Entfernt:</tspan>
+            unordered</text>
+            </g>
+        </g>
+        </g>
+
+        </svg>
+        </div>
+
+
+
+.. supplemental::
+
+    :Stateless Ops(`zustandslose Operationen`:ger:): Transformieren die Elemente jeweils völlig unabhängig von allen anderen.
+    :Stateful Ops(`zustandsbehaftete Operationen`:ger:): Transformieren die Elemente abhängig von anderen.
+
+
+
+
+
+
+Überblick über die wichtigsten Operationen und Ihre Eigenschaften
+--------------------------------------------------------------------
+
+.. deck::
+
+    .. card::
+
+        .. csv-table::
+            :header: "Operation", "Stateless / Stateful", "Speicherbedarf", "Parallelisierbar", "Short-circuiting"
+            :widths: 14, 14, 16, 14, 14
+            :stub-columns: 1
+            :width: 100%
+            :class: dhbw highlight-row-on-hover
+
+            "``filter``",       "Stateless", "Konstant",              "Trivial",        "Nein"
+            "``map``",          "Stateless", "Konstant",              "Trivial",        "Nein"
+            "``flatMap``",      "Stateless", "Konstant",              "Trivial",        "Nein"
+            "``mapMulti``",     "Stateless", "Konstant",              "Trivial",        "Nein"
+            "``peek``",         "Stateless", "Konstant",              "Trivial",        "Nein"
+            "``sorted``",       "Stateful",  "O(n)",                  "Eingeschränkt",  "Nein"
+            "``distinct``",     "Stateful",  "O(n)",                  "Eingeschränkt",  "Nein"
+            "``limit``",        "Stateful",  "Konstant",              "Eingeschränkt",  "Ja"
+            "``skip``",         "Stateful",  "Konstant",              "Eingeschränkt",  "Nein"
+            "``takeWhile``",    "Stateful",  "Konstant",              "Eingeschränkt",  "Ja"
+            "``dropWhile``",    "Stateful",  "Konstant",              "Eingeschränkt",  "Nein"
+            "``gather``",       "Konfigurierbar", "Konfigurierbar",   "Konfigurierbar", "Konfigurierbar"
+
+    .. card:: s-overlay backdrop-blur center-content
+
+        .. warning::
+
+            Seiteneffekte in Funktionen, die an Stream-Operationen übergeben werden, sind grundsätzlich zu vermeiden. Wird ein Stream parallelisiert und eine übergebene Funktion (z. B. an die :java:`peek` Methode) hat dennoch Seiteneffekte, so muss diese Thread-sicher sein.
+
+
+        .. supplemental::
+
+            `Java Stream API <https://docs.oracle.com/en/java/javase/26/docs/api/java.base/java/util/stream/package-summary.html>`__
+
+
+
+
+
+
+.. class:: new-section transition-fade
+
+Java Streams API - Deep Dive
+---------------------------------------
 
 
 
@@ -805,31 +1409,6 @@ Verwendung von Streams
 ------------------------------------------------
 
 .. deck::
-
-    .. card::
-
-        Streams werden typischerweise in einer Pipeline-artigen Struktur genutzt:
-
-        .. class:: incremental-list
-
-        1. Erzeugung
-        2. Folge von Verarbeitungs-/Transformationsschritten
-        3. Abschluss mit einer terminalen Operation
-
-    .. card::
-
-        .. rubric:: Verarbeitungsoperationen
-
-        Verarbeitungs-Operationen transformieren die Elemente eines Streams. Man unterscheidet:
-
-        .. class:: incremental-list list-with-explanations
-
-        - zustandslose Operationen
-
-          Transformieren die Elemente jeweils völlig unabhängig von allen anderen.
-        - zustandsbehaftete Operationen
-
-          Transformieren die Elemente abhängig von anderen.
 
     .. card::
 
@@ -1441,26 +2020,22 @@ Streams - fortgeschrittene Konzepte
 
 
 
+.. class:: new-subsection transition-move-to-top
+
+Bewertung der Fähigkeiten der Standardoperationen von Java Streams
+--------------------------------------------------------------------
+
+
+
 Herausforderung *Low-representational Gap* gelöst?
 ---------------------------------------------------
 
-.. rubric:: Lösung mit standard *Stream* Primitiven (Java 8 - Java 24)
-
-.. code:: java
-    :number-lines:
-
-    List<Student> empfehlungenS = alleStudierenden.stream()
-        .filter(not(Student::hatStipendium))
-        .collect(groupingBy(Student::studiengang,
-                            minBy(comparingDouble(Student::schnitt))))
-        .values().stream()
-        .flatMap(Optional::stream)
-        .sorted(comparingDouble(Student::schnitt))
-        .toList();
+.. rubric:: Lösung mit standard *Stream* Primitiven (≤ Java 24)
 
 .. supplemental::
+    :embed-in-document-flow:
 
-    .. rubric:: benötigte Imports
+    *Benötigte Imports*
 
     .. code:: java
         :number-lines:
@@ -1470,22 +2045,57 @@ Herausforderung *Low-representational Gap* gelöst?
         import static java.util.stream.Collectors.groupingBy;
         import static java.util.stream.Collectors.minBy;
 
+*Geschäftslogik*
+
+.. code:: java
+    :number-lines:
+
+    List<Student> empfehlungenS = alleStudierenden.stream()
+        .filter(not(Student::hatStipendium))
+        .collect(groupingBy(Student::studiengang,
+                            minBy(comparingDouble(Student::schnitt))))
+        .values().stream().flatMap(Optional::stream)
+        .sorted(comparingDouble(Student::schnitt))
+        .toList();
+
 .. assessment::
     :class: incremental
 
-    Deutlich näher an der Geschäftslogik, aber technische Artefakte scheinen noch durch:
+    Wir sind näher an der Geschäftslogik, aber technische Artefakte scheinen noch durch!
 
-    - Um die gewünschte Gruppierung zu erhalten, werden die besten Studierenden in einer Zwischendatenstruktur (*Map*) aufgesammelt (:java:`collect(...)`). Diese muss - um eine Stream-orientierte Weiterverarbeitung zu ermöglichen - wieder in ein Stream verwandelt werden, der über den *Values* der *Map* operiert (:java:`values().stream()`.
-    - Da wir in eine *Map* aufgesammelt hatten, haben wir nun einen *Stream of Streams* und deswegen muss eine :java:`flatMap(...)` Operation durchgeführt werden, um einen einfachen *Stream* zu erhalten.
+    .. deck:: incremental
+
+        .. card::
+
+            - Um die gewünschte Gruppierung zu erhalten, werden die besten Studierenden in einer Zwischendatenstruktur (*Map*) aufgesammelt (:java:`collect(...)`). Diese muss - um eine Stream-orientierte Weiterverarbeitung zu ermöglichen - wieder in einen Stream verwandelt werden, der über den *Values* der *Map* operiert (:java:`values().stream()`).
+
+        .. card::
+
+            - Da wir in eine *Map* aufgesammelt hatten, haben wir einen *Stream of Optionals*;  :java:`minBy(...)` liefert ein :java:`Optional`. Somit müssen wir die :java:`Optional`\ s im :java:`Stream<Optional<Student>>` über :java:`flatMap(Optional::stream)` entpacken.
 
 
 
-Benutzerdefinierte Zwischenoperationen\ [#]_:  aka *Stream Gatherers*
+
+
+.. class:: new-subsection transition-fade
+
+Benutzerdefinierte Zwischenoperationent aka *Stream Gatherers*
 ------------------------------------------------------------------------
 
 
-.. [#] In der JavaDoc/Spec als *Custom Intermediate Operations* bezeichnet.
+.. supplemental::
 
+    Im Folgenden verwenden wir die Begriffe *Custom Intermediate Operations* und *Stream Gatherers* faktisch synonym.
+
+
+TODODODODODO
+
+
+
+.. class:: new-subsection transition-move-to-top
+
+Bewertung der Fähigkeiten von Java Streams
+--------------------------------------------------------------------
 
 
 
@@ -1496,9 +2106,10 @@ Herausforderungen gelöst?
 
 .. code:: java
     :number-lines:
+    :class: copy-to-clipboard
 
     static <T, K> Gatherer<T, ?, T> reducePerGroup(
-            Function<T, K> grouping, BinaryOperator<T> reducer) {
+                Function<T, K> grouping, BinaryOperator<T> reducer) {
         return Gatherer.ofSequential(
             HashMap<K, T>::new,
             (map, element, downstream) -> {
@@ -1506,15 +2117,18 @@ Herausforderungen gelöst?
                 return true;
             },
             (map, downstream) -> map.values().forEach(downstream::push)
-        );
-    }
+        ); }
 
 .. code:: java
     :number-lines:
+    :line-number-digits: 2
+    :class: copy-to-clipboard incremental
 
     List<Student> empfehlungenG = alleStudierenden.stream()
         .filter(not(Student::hatStipendium))
-        .gather(reducePerGroup(Student::studiengang, BinaryOperator.minBy(comparingDouble(Student::schnitt))))
+        .gather(reducePerGroup(
+                    Student::studiengang,
+                    BinaryOperator.minBy(comparingDouble(Student::schnitt))))
         .sorted(comparingDouble(Student::schnitt))
         .toList();
 
@@ -1532,18 +2146,122 @@ Herausforderungen gelöst?
 
 
 
+.. class:: new-section transition-fade
 
-.. class:: no-title transition-scale-in
-
-Zusammenfassung
-----------------
-
-.. summary::
-
-    Streams unterstützen die korrekte Verarbeitung von (Massen-)Daten durch die Anwendung von funktionalen und deklarativen Konzepten mit dem Ziel einer möglichst geringe Repräsentationslücke (:eng:`Low representational gap`).
+Parallelisierung
+----------------------
 
 
+Effizienz von Parallelisierung
+-------------------------------
 
+.. epigraph::
+
+    Als allgemeine Faustregel gilt, dass Geschwindigkeitssteigerungen in der Regel dann spürbar sind, wenn die Sammlung groß ist, typischerweise mehrere tausend Elemente umfasst.\ [#]_
+
+    -- `Aleksandar Prokopec, Heather Miller - Parallel Collections <https://docs.scala-lang.org/overviews/parallel-collections/overview.html>`__
+
+.. [#] Übersetzung aus dem Englischen mit Hilfe von DeepL.
+
+
+
+.. class:: new-section transition-flip
+
+Java Streams - abschließende Betrachtung
+-----------------------------------------
+
+.. class:: section-subtitle
+
+    (Java) Streams unterstützen die effiziente, korrekte Verarbeitung von (Massen-)Daten durch die Anwendung von funktionalen und deklarativen Konzepten mit dem Ziel einer möglichst geringen Repräsentationslücke (:eng:`Low representational gap`).
+
+
+
+.. class:: new-section transition-flip
 
 Vergleich von Java's Stream-API mit Scala's Stream-API
 ------------------------------------------------------
+
+
+
+Java Streams vs. Scala Collections — Konzeptioneller Vergleich
+----------------------------------------------------------------
+
+.. csv-table::
+    :header: "", "Java Streams", "Scala Collections"
+    :widths: 12, 20, 20
+    :class: incremental-table-rows dhbw
+
+    "**Pipeline-Modell**",       "Deklarativ, verkettet",                  "Deklarativ, verkettet"
+    "**Funktionen als Parameter**", "Lambdas, Method References",          "Funktionsliterale, Platzhalter ``_``"
+    "**Quelle unveränderlich**", "Ja",                                     "Ja"
+    "**Streams = Collections?**","Nein — separates Konzept, explizites ``.stream()`` / ``.toList()``", "Ja — Operationen direkt auf Collections"
+    "**Auswertung**",           "Lazy (erst bei Terminal Op)",             "Eager (sofort); ``LazyList`` als Opt-in"
+    "**Erweiterbarkeit**",      "Collectors seit Java 8, Gatherers seit Java 24", '*„Nicht nötig“* — umfangreiche Standardbibliothek'
+    "**Parallelisierung**",     "Tief integriert (``.parallelStream()``)", "Separate Bibliothek (``.par``) seit Scala 2.13"
+
+.. supplemental::
+
+    Scala verfolgt einen anderen Designansatz: Collections *sind* die Pipeline. Es gibt keine Trennung zwischen Datenstruktur und Transformations-API. Das macht den Einstieg einfacher und den Code kürzer, bedeutet aber auch, dass Laziness explizit gewählt werden muss.
+
+    Javas Trennung in Collection und Stream ist verboseer, ermöglicht dafür aber Lazy Evaluation als Standard und eine tief integrierte Parallelisierung.
+
+
+
+Java Streams vs. Scala Collections — Codebeispiel
+----------------------------------------------------
+
+.. grid::
+
+    .. cell:: width-50
+
+        .. rubric:: Java (mit Gatherer)
+
+        .. code:: java
+            :number-lines:
+
+            alleStudierenden.stream()
+              .filter(not(Student::hatStipendium))
+              .gather(reducePerGroup(
+                  Student::studiengang,
+                  BinaryOperator.minBy(
+                    comparingDouble(
+                      Student::schnitt))))
+              .sorted(comparingDouble(
+                  Student::schnitt))
+              .toList();
+
+    .. cell:: width-50
+
+        .. rubric:: Scala
+
+        .. code:: scala
+            :number-lines:
+
+            alleStudierenden
+              .filterNot(_.hatStipendium)
+              .groupBy(_.studiengang)
+              .values
+              .map(_.minBy(_.schnitt))
+              .toList
+              .sortBy(_.schnitt)
+
+.. assessment::
+    :class: incremental
+
+    .. deck:: incremental
+
+        .. card::
+
+            **Syntaktisches Rauschen:** Java erfordert ``.stream()`` / ``.toList()`` als Rahmen, Typnamen in Method References (``Student::schnitt``) und Wrapper wie ``comparingDouble``. Scala's ``_``-Platzhalter und die direkte Arbeit auf Collections eliminieren diesen Overhead.
+
+        .. card::
+
+            **Gruppierung:** In Scala ist ``groupBy`` eine normale Collection-Methode — kein Pipeline-Bruch, kein Collector. Java brauchte für denselben Effekt zunächst den ``collect``/``Collector``-Umweg und seit Java 24 die ``Gatherer``-API.
+
+        .. card::
+
+            **Vergleich und Reduktion:** ``_.minBy(_.schnitt)`` in Scala vs. ``BinaryOperator.minBy(comparingDouble(Student::schnitt))`` in Java — die explizite Typmaschinerie des Java-Typsystems ist hier deutlich sichtbar.
+
+        .. card::
+
+            **Lazy vs. Eager:** Scalas Code wird sofort ausgewertet — ``groupBy`` erzeugt *sofort* eine ``Map``. Javas Pipeline hingegen ist vollständig lazy; erst ``.toList()`` löst die Berechnung aus. Für große Datenmengen kann das ein relevanter Unterschied sein.
