@@ -1,3 +1,4 @@
+/* Ausreichend für das Beispiel, aber nicht idomatischer Code:
 class Student {
     constructor(hatStipendium, studiengang, schnitt) {
         this.hatStipendium = hatStipendium;
@@ -6,6 +7,27 @@ class Student {
     }
     toString() {
         return `Student(${this.hatStipendium}, "${this.studiengang}", ${this.schnitt})`;
+    }
+}
+*/
+
+class Student {
+    #hatStipendium;
+    #studiengang;
+    #schnitt;
+
+    constructor(hatStipendium, studiengang, schnitt) {
+        this.#hatStipendium = hatStipendium;
+        this.#studiengang = studiengang;
+        this.#schnitt = schnitt;
+    }
+
+    get hatStipendium() { return this.#hatStipendium; }
+    get studiengang()   { return this.#studiengang; }
+    get schnitt()       { return this.#schnitt; }
+
+    toString() {
+        return `Student(${this.#hatStipendium}, "${this.#studiengang}", ${this.#schnitt})`;
     }
 }
 
