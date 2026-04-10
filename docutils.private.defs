@@ -12,3 +12,13 @@
 .. |java-icon| image:: /LectureDoc2/ext/icons/duke.svg
                     :height: 0.75em
                     :class: icon
+.. |scala-icon| image:: /LectureDoc2/ext/icons/scala.svg
+                    :height: 1em
+                    :class: icon
+
+.. |javascript-icon| image:: /LectureDoc2/ext/icons/js.svg
+                    :height: 1em
+                    :class: icon
+.. |rust-icon| image:: /LectureDoc2/ext/icons/rust.svg
+                    :height: 1em
+                    :class: icon
