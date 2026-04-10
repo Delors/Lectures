@@ -29,7 +29,7 @@ Java - Streams
 
 :Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
 :Kontakt: michael.eichberg@dhbw.de, Raum 149B
-:Version: 2.0 [Themed]
+:Version: 2.0
 
 .. supplemental::
 
@@ -49,16 +49,21 @@ Java - Streams
     :Fehler melden:
         https://github.com/Delors/delors.github.io/issues
 
-    :Quellen: Die Folien wurden insbesondere basierend auf der offiziellen Java Dokumentation (JavaDoc 24 und JEPs), sowie basierend auf der Scala (2.13 bzw. 3) Documentation erstellt. Die Folien bzgl. der konkreten *Java Streams API (Deepdive)* basieren auf Folien von `Th. Letschert <https://homepages.thm.de/~hg51/Veranstaltungen/A_D/Folien/java-8-kurzeinfuehrung.pdf>`__
+    :Quellen:
+
+        #. `Dokumentation des JDK <https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/stream/package-summary.html>`__
+        #. Dokumentation der Scala (2.13 bzw. 3) Standardbibliothek
+        #. `Das Rust Buch <https://doc.rust-lang.org/book/ch13-02-iterators.html>`__
+        #.  `Th. Letschert <https://homepages.thm.de/~hg51/Veranstaltungen/A_D/Folien/java-8-kurzeinfuehrung.pdf>`__  bzgl. der konkreten *Java Streams API (Deepdive)*
 
     :KI Verwendung:
 
-        Bei der Erstellung der Folien wurden KI Assistenten unterstützend eingesetzt. Dies erfolgte insbesondere, um effizient Grafiken zu generieren, die sich leicht in die Folien integrieren lassen, oder um sich Übersichtstabellen generieren zu lassen. Weiterhin wurde KI zur allgemeinen Qualitätssicherung eingesetzt. Alle Inhalte, die in diesem Rahmen von der KI (zusäztlich) vorgeschlagen wurden, wurden überprüft.
+        Bei der Erstellung der Folien wurden KI Assistenten unterstützend eingesetzt. Dies erfolgte insbesondere, um effizient die Grafiken (d. h. die SVG Dateien)  zu generieren, oder um sich Übersichtstabellen generieren zu lassen. Weiterhin wurde KI zur allgemeinen Qualitätssicherung eingesetzt. Alle Inhalte, die ggf. auf KI Vorschläge zurückzuführen sind, wurden explizit validiert.
 
-        Es wurde **keine** KI verwendet für den Aufbau, die Struktur und insbesondere die Auswahl der grundlegenden Inhalte.
+        *KI wurde nicht verwendet* für den Aufbau, die Struktur und die Auswahl der grundlegenden Inhalte.
 
 .. global-information:: Funktionale Programmierung in Java
-    :symbol: Funktionale Prog. in Java
+      :symbol: Funktionale Prog. in Java
 
       .. list-table::
         :header-rows: 1
@@ -82,7 +87,7 @@ Java - Streams
 
                 :java:`(a, b) -> { int s = a + b; return s * 2; }`
         *   -   Methoden-Referenz
-            -   Kurzschreibweise für Lambdas, die lediglich eine bestehende Methode aufrufen. Varianten:
+            -   Kurzschreibweise für Lambdas, die eine bestehende Methode aufrufen. Varianten:
 
                 - statisch: :java:`Klasse::methode`
                 - auf Instanz: :java:`objekt::methode`
@@ -96,7 +101,7 @@ Java - Streams
 
                 :java:`ArrayList::new`
         *   -   Funktionales Interface
-            -   Ein Interface mit genau **einer** abstrakten Methode (SAM — *Single Abstract Method*). Kann mit :java:`@FunctionalInterface` annotiert werden und ermöglicht die Verwendung von Lambda-Ausdrücken.
+            -   Ein Interface mit genau *einer* abstrakten Methode; ermöglicht die Verwendung von Lambda-Ausdrücken.
             -   .. code:: java
 
                     @FunctionalInterface
@@ -116,13 +121,16 @@ Java - Streams
             -   Funktionales Interface: Liefert einen Wert ohne Eingabe.
             -   :java:`Supplier<Double> random = Math::random;`
         *   -   :java:`BinaryOperator<T>`
-            -   Funktionales Interface: Verknüpft zwei Werte desselben Typs zu einem Ergebnis.
+            -   Funktionales Interface: Verknüpft zwei Werte desselben Typs zu einem Ergebnis des entsprechenden Typs.
             -   :java:`BinaryOperator<String> wrap = (a, b) -> b + a + b;`
         *   -   :java:`Comparator<T>`
             -   Funktionales Interface für den Vergleich von zwei Objekten; gibt einen :java:`int`-Wert zurück.
-            -   :java:`Comparator<String> byLen = (a, b) -> a.length() - b.length();`
+            -   .. code:: java
 
-                :java:`Comparator.comparing(String::length)`
+                    Comparator<String> byLen =
+                        (a, b) -> a.length() - b.length();
+                    Comparator.comparing(String::length)
+
         *   -   Funktionen höherer Ordnung
             -   Funktionen, die andere Funktionen als Parameter nehmen oder als Ergebnis zurückgeben. Grundlage aller Stream-Operationen.
             -   :java:`stream.filter(x -> x > 0)` :java:`.map(x -> x * 2)`
@@ -149,23 +157,21 @@ Motivation
 
 
 
-(Aktuelle) Herausforderungen
-------------------------------------------------
+(Aktuelle) Herausforderungen bei der Datenverarbeitung
+-------------------------------------------------------
 
 .. deck::
 
     .. card::
 
-        **Bei der Datenverarbeitung von**:
-
         .. class:: list-with-sublists incremental-list
 
-        - großen Datenmengen,
+        - große Datenmengen,
 
           .. class:: incremental-list
 
           - die nicht (ohne weiteres) in den Speicher passen oder
-          - bei denen es keinen Sinn macht diese vorab vollständig in den Speicher zu laden, da immer nur ein kleiner Abschnitt analysiert werden muss
+          - bei denen es keinen Sinn macht diese vorab vollständig in den Speicher zu laden, da immer nur ein kleiner Abschnitt verarbeitet werden muss
         - Daten, die kontinuierlich verarbeitet werden müssen
 
     .. card::
@@ -174,9 +180,9 @@ Motivation
 
             - HTTP Request/Response Handling (Audio/Video Streaming)
             - Ver-/Entschlüsselung von großen Datenmengen
-            - kontinuierliche/echtzeit Verarbeitung von allg. Daten (z. B. Finanzdaten/-transaktionen) oder (IoT) Sensoren
+            - kontinuierliche Verarbeitung von allg. Daten (z. B. Finanzdaten/-transaktionen) oder von (IoT) Sensoren
             - Verarbeitung von Ereignissen (Event)
-            - Aufbereitung großer Wörterbücher (z.B. für Passwortwiederherstellung)
+            - Aufbereitung großer Wörterbücher (z. B. für Passwortwiederherstellung)
             - Verarbeitung von AI Streaming Responses
             - Verarbeitung große Logdateien
 
@@ -305,7 +311,6 @@ Motivation
                         </svg>
                         </div>
 
-
             .. card:: overlay
 
                 .. raw:: html
@@ -424,14 +429,14 @@ Motivation
 
         .. supplemental::
 
-            Insbesondere die korrekte und effiziente Nutzung mehrere Threads ist häufig schwierig. Die Verwendung von (soweit möglich) „transparent“ parallelisierten Streams ist dabei sehr hilfreich.
+            Insbesondere die korrekte und effiziente Nutzung mehrere Threads (d. h. von nebenläufiger Programmierung) ist im Allgemeinen schwierig. Die Verwendung von (soweit möglich) „transparenter“ Parallelisierung ist dabei sehr hilfreich.
             (Z. B. mit Java Parallel Streams oder :scala:`.par` in Scala ist eine weitgehend transparente Parallelisierung möglich.)
 
     .. card::
 
-        - Entwicklung von Software nahe am Domänenmodell, um die korrekte Implementierung zu unterstützen.
+        - Entwicklung von Software nahe am Domänenmodell, um eine korrekte, leicht wartbare und erweiterbare Implementierung zu unterstützen.
 
-          .. deck::
+          .. deck:: incremental
 
             .. card::
 
@@ -454,8 +459,13 @@ Motivation
                             .. class:: dd-margin-left-6em
 
                             :Eingabe: (Flache) Liste von allen Studierenden
-                            :Ausgabe: (Flache) Liste von förderungswürdigen Studierenden
-                            :Logik: *„Nimm alle Studierenden, filtere diejenigen heraus, die bereits ein Stipendium haben, gruppiere die verbleibenden nach Studiengang, wähle pro Studiengang den mit der besten Durchschnittsnote, und erstelle daraus eine nach Note sortierte Empfehlungsliste."*
+                            :Ausgabe: (Flache) sortierte Liste von förderungswürdigen Studierenden nach Förderwürdigkeit
+                            :Logik:
+
+                                #. filtere aus allen Studierenden diejenigen heraus, die bereits ein Stipendium haben,
+                                #. gruppiere die verbleibenden nach Studiengang,
+                                #. wähle pro Studiengang den mit der besten Durchschnittsnote, und
+                                #. erstelle daraus eine nach Note sortierte Empfehlungsliste.
 
                         .. container:: incremental
 
@@ -466,22 +476,17 @@ Motivation
                                 :line-number-digits: 2
 
                                 record Student(boolean hatStipendium, String studiengang, double schnitt){};
-
-                                List<Student> alleStudierenden =
-                                    List.of(new Student(false, "Informatik", 1.3),  ...)
+                                List<Student> alleStudierenden = List.of(new Student(false, "Inf.", 1.3), ...);
 
                             .. rubric:: Klassische Implementierung der Geschäftslogik
 
                             .. code:: java
-                                :number-lines: 1
-                                :class: incremental
+                                :number-lines: 3
 
                                 // Schritt 1: Studierende ohne Stipendium sammeln
                                 List<Student> ohneStipendium = new ArrayList<>();
                                 for (Student s : alleStudierenden) {
-                                    if (!s.hatStipendium()) {
-                                        ohneStipendium.add(s);
-                                    }
+                                    if (!s.hatStipendium()) { ohneStipendium.add(s); }
                                 }
                                 // Schritt 2: Nach Studiengang gruppieren
                                 Map<String, List<Student>> nachStudiengang = new HashMap<>();
@@ -495,14 +500,14 @@ Motivation
                                 for (var eintrag : nachStudiengang.entrySet()) {
                                     Student bester = null;
                                     for (Student s : eintrag.getValue()) {
-                                        if (bester == null || s.schnitt() < bester.schnitt()) {
-                                            bester = s;
-                                        }
+                                        if (bester == null || s.schnitt() < bester.schnitt()) { bester = s; }
                                     }
                                     if (bester != null) {
                                         empfehlungen.add(bester);
                                     }
                                 }
+                                // Schritt 4: Empfehlungen nach Note sortieren
+                                empfehlungen.sort(Comparator.comparingDouble(Student::schnitt));
 
 
 
@@ -541,19 +546,19 @@ Java I/O Streams vs. Java Stream API
           - Imperativ
           - Funktional/Deklarativ
 
-.. supplemental::
+.. supplemental:: dd-margin-left-4em
 
     :Imperativ Programmierung:
 
         Das Vorgehen wird detailliert durch konkrete Anweisungen beschrieben, die genau vorgeben welche einzelnen Schritte von dem Computer ausgeführt werden sollen, um das Ziel zu erreichen.
 
-        Viele gängige *general-purpose* Programmiersprachen (C, C++, Rust, Java, Go, JavaScript, Python) sind im Kern imperative Programmiersprachen.
+        Viele gängige *general-purpose* Programmiersprachen (C, C++, Rust, Java, Go, JavaScript, Python) sind im Kern imperative Programmiersprachen bzw. erlauben einen imperativen Programmierstil.
 
     :Deklarative Programmierung:
 
         Das Ziel ist es auszudrücken *was* erreicht werden soll, ohne das *wie* genau anzugeben.
 
-        (Prominentes Beispiel für eine deklarative Programmiersprache: SQL als Datenbankabfragesprache.)
+        (Ein sehr prominentes Beispiel für eine deklarative Programmiersprache ist die Datenbankabfragesprache SQL.)
 
     .. remark::
 
@@ -574,7 +579,7 @@ Streams - Einführung am Beispiel
 
         .. class:: incremental-list dd-margin-left-4em
 
-        :Pragmatische Sicht: Streams\ [#]_ sind umgeformte Sammlungen\ :incremental:`, die durch die Umformung für funktional-orientierte Massen-Operationen geeignet sind.`
+        :Pragmatische Sicht: Streams sind umgeformte Sammlungen (:eng:`Collections`)\ :incremental:`, die durch die Umformung für funktional-orientierte Massen-Operationen geeignet sind.`\ [#]_
         :Konzeptionelle Sicht: Streams erlauben die „korrekte, effiziente, lesbare (domänennahe)“ Verarbeitung von Daten mit Hilfe von Konzepten und Ideen aus der funktionalen und deklarativen Programmierung.
 
     .. card::
@@ -599,10 +604,10 @@ Streams - Einführung am Beispiel
 
                 List<Integer> l  = Arrays.asList(1, 2, 3, 4, 5, 6, 7, 8, 9);
                 List<Integer> ll = l
-                    .stream()                       // list → stream
-                    .filter(x -> x % 2 == 0)        // filter list with predicate
-                    .map(x -> 10 * x)               // map each element to a new one
-                    .collect(Collectors.toList());  // back to a list (alt. toList())
+                    .stream()                       // Umwandlung: list → stream
+                    .filter(x -> x % 2 == 0)        // Filterung mit Hilfe eines Prädikats
+                    .map(x -> 10 * x)               // Bilde jedes Element auf das Zehnfache ab
+                    .collect(Collectors.toList());  // Aufsammeln der Ergebnisse (alt. toList())
                 ll.forEach(x -> System.out.println(x));
 
             .. container:: incremental
@@ -610,225 +615,6 @@ Streams - Einführung am Beispiel
                 *Ausgabe:* :console:`20 40 60 80`
 
 .. [#] `Th. Letschert <https://homepages.thm.de/~hg51/Veranstaltungen/A_D/Folien/java-8-kurzeinfuehrung.pdf>`__
-
-
-
-Streams API - Evolution
---------------------------------
-
-.. story::
-
-    .. raw:: html
-        :class: center-content
-
-        <div style="width:71ch; height: 90.47ch">
-        <svg viewBox="6 0 62 79"
-            xmlns="http://www.w3.org/2000/svg">
-
-        <!-- ═══ Timeline backbone ═══ -->
-        <line x1="40" y1="2" x2="40" y2="6"
-                stroke="light-dark(#bbb, #555)" stroke-width="0.25" stroke-dasharray="0.5 0.25"/>
-        <line x1="40" y1="6" x2="40" y2="69"
-                stroke="light-dark(#bbb, #555)" stroke-width="0.25" />
-        <line x1="40" y1="69" x2="40" y2="78"
-                stroke="light-dark(#bbb, #555)" stroke-width="0.25" stroke-dasharray="0.5 0.25"/>
-
-        <!-- ═══════════════════════════════════════════════════
-            Java 8 — März 2014  (LEFT)
-            ═══════════════════════════════════════════════════ -->
-        <g>
-            <circle cx="40" cy="6" r="1"
-                    fill="light-dark(#b91c1c, #f87171)" />
-            <line x1="39" y1="6" x2="32" y2="6"
-                stroke="light-dark(#b91c1c, #f87171)" stroke-width="0.2" />
-            <text x="31" y="5" text-anchor="end"
-                font-size="2.2" font-weight="bold"
-                fill="light-dark(#b91c1c, #f87171)">Java 8</text>
-            <text x="31" y="7" text-anchor="end"
-                font-size="1.1"
-                fill="light-dark(#888, #999)">März 2014 (LTS bis 2030)</text>
-            <text x="31" y="9.2" text-anchor="end"
-                font-size="1.1" fill="currentColor">
-                <tspan x="31" dy="0" font-weight="600">Initiale Stream API (java.util.stream)</tspan>
-                <tspan x="31" dy="1.6" font-weight="500" font-style="italic">Intermediate Ops.: </tspan><tspan>filter, map, flatMap, sorted, ...</tspan>
-                <tspan x="31" dy="1.6"  font-weight="500" font-style="italic">Terminal Ops.: </tspan><tspan>collect, reduce, forEach, count, ...</tspan>
-                <tspan x="31" dy="1.6">Collector-Interface — erweiterbarer Endpunkt</tspan>
-                <tspan x="31" dy="1.6">Parallele Streams via .parallelStream()</tspan>
-            </text>
-        </g>
-
-
-        <!-- ═══════════════════════════════════════════════════
-            Java 9 — Sep. 2017  (RIGHT)
-            ═══════════════════════════════════════════════════ -->
-        <g class="incremental" transform="translate(0, -4)">
-
-            <!-- Java 9 -->
-            <circle cx="40" cy="22" r="0.6"
-                    fill="light-dark(#2563eb, #60a5fa)" />
-            <line x1="41" y1="22" x2="48" y2="22"
-                stroke="light-dark(#2563eb, #60a5fa)" stroke-width="0.2" />
-            <text x="49" y="21" text-anchor="start"
-                font-size="2.2" font-weight="bold"
-                fill="light-dark(#2563eb, #60a5fa)">Java 9</text>
-            <text x="49" y="23" text-anchor="start"
-                font-size="1.1"
-                fill="light-dark(#888, #999)">Sep. 2017</text>
-            <text x="49" y="25.2" text-anchor="start"
-                font-size="1.1" fill="currentColor">
-            <tspan x="49" dy="0">takeWhile / dropWhile</tspan>
-            <tspan x="49" dy="1.6">Stream.iterate(seed, hasNext, next)</tspan>
-            <tspan x="49" dy="1.6">Stream.ofNullable, Optional.stream()</tspan>
-            <tspan x="49" dy="1.6">Collectors.filtering / flatMapping</tspan>
-            </text>
-        </g>
-
-        <!-- ═══════════════════════════════════════════════════
-            Java 10 — März 2018  (LEFT)
-            ═══════════════════════════════════════════════════ -->
-        <g class="incremental" transform="translate(0, -10)">
-            <circle cx="40" cy="36" r="0.6"
-                    fill="light-dark(#2563eb, #60a5fa)" />
-            <line x1="39.4" y1="36" x2="32" y2="36"
-                stroke="light-dark(#2563eb, #60a5fa)" stroke-width="0.15" />
-            <text x="31" y="35" text-anchor="end"
-                font-size="2" font-weight="bold"
-                fill="light-dark(#2563eb, #60a5fa)">Java 10</text>
-            <text x="31" y="37" text-anchor="end"
-                font-size="1.1"
-                fill="light-dark(#888, #999)">März 2018</text>
-            <text x="31" y="39" text-anchor="end"
-                font-size="1.1" fill="currentColor">
-            <tspan x="31" dy="0">Collectors.toUnmodifiable{List,Set,Map}</tspan>
-            </text>
-        </g>
-
-        <!-- ═══════════════════════════════════════════════════
-            Java 12 — März 2019  (RIGHT)
-            ═══════════════════════════════════════════════════ -->
-        <g class="incremental" transform="translate(0,-10)">
-            <circle cx="40" cy="44" r="0.6"
-                    fill="light-dark(#2563eb, #60a5fa)" />
-            <line x1="40.6" y1="44" x2="48" y2="44"
-                stroke="light-dark(#2563eb, #60a5fa)" stroke-width="0.15" />
-            <text x="49" y="43" text-anchor="start"
-                font-size="2" font-weight="bold"
-                fill="light-dark(#2563eb, #60a5fa)">Java 12</text>
-            <text x="49" y="45" text-anchor="start"
-                font-size="1.1"
-                fill="light-dark(#888, #999)">März 2019</text>
-            <text x="49" y="47" text-anchor="start"
-                font-size="1.1" fill="currentColor">
-            <tspan x="49" dy="0">Collectors.teeing (zwei Collector parallel)</tspan>
-            </text>
-        </g>
-
-        <!-- ═══════════════════════════════════════════════════
-            Java 16 — März 2021  (LEFT)
-            ═══════════════════════════════════════════════════ -->
-        <g class="incremental" transform="translate(0,-12)">
-            <circle cx="40" cy="53" r="0.6"
-                    fill="light-dark(#2563eb, #60a5fa)" />
-            <line x1="39.3" y1="53" x2="32" y2="53"
-                stroke="light-dark(#2563eb, #60a5fa)" stroke-width="0.15" />
-            <text x="31" y="52" text-anchor="end"
-                font-size="2" font-weight="bold"
-                fill="light-dark(#2563eb, #60a5fa)">Java 16</text>
-            <text x="31" y="54" text-anchor="end"
-                font-size="1.1"
-                fill="light-dark(#888, #999)">März 2021</text>
-            <text x="31" y="56" text-anchor="end"
-                font-size="1.1" fill="currentColor">
-            <tspan x="31" dy="0">Stream.toList() als Ergänzung zu collect(toList())</tspan>
-            <tspan x="31" dy="1.6">mapMulti — imperative Alternative zu flatMap</tspan>
-            </text>
-
-
-            <!-- Epoche: Inkrementelle Verbesserungen -->
-            <line x1="38" y1="30" x2="38" y2="53"
-                stroke="light-dark(#2563eb, #60a5fa)" stroke-width="0.1"
-                stroke-dasharray="0.4,0.3" opacity="0.5" />
-            <text x="37" y="41.5" text-anchor="middle"
-                font-size="1" fill="light-dark(#2563eb, #60a5fa)"
-                transform="rotate(-90, 37, 41.5)" opacity="0.6">Inkrementelle Ergänzungen</text>
-        </g>
-
-        <!-- ═══════════════════════════════════════════════════
-            Java 22 — März 2024  (RIGHT)  — Gatherers Era
-            ═══════════════════════════════════════════════════ -->
-        <g class="incremental" transform="translate(0,-14)">
-
-            <!-- Java 22 -->
-            <circle cx="40" cy="65" r="0.6"
-                    fill="light-dark(#15803d, #4ade80)" />
-            <line x1="40.7" y1="65" x2="48" y2="65"
-                stroke="light-dark(#15803d, #4ade80)" stroke-width="0.15" />
-            <text x="49" y="64" text-anchor="start"
-                font-size="2" font-weight="bold"
-                fill="light-dark(#15803d, #4ade80)">Java 22</text>
-            <text x="49" y="66" text-anchor="start"
-                font-size="1.1"
-                fill="light-dark(#888, #999)">März 2024</text>
-            <text x="49" y="68" text-anchor="start"
-                font-size="1.1" fill="currentColor">
-            <tspan x="49" dy="0">JEP 461: Stream Gatherers (Preview)</tspan>
-            <tspan x="49" dy="1.6" font-weight="500">Erweiterbare </tspan><tspan font-style="italic" font-weight="500">Intermediate Operations</tspan>
-            </text>
-        </g>
-
-        <!-- ═══════════════════════════════════════════════════
-            Java 23 — Sep. 2024  (LEFT)
-            ═══════════════════════════════════════════════════ -->
-        <g class="incremental" transform="translate(0,-16)">
-            <circle cx="40" cy="76" r="0.6"
-                    fill="light-dark(#15803d, #4ade80)" />
-            <line x1="39.4" y1="76" x2="32" y2="76"
-                stroke="light-dark(#15803d, #4ade80)" stroke-width="0.15" />
-            <text x="31" y="75" text-anchor="end"
-                font-size="2" font-weight="bold"
-                fill="light-dark(#15803d, #4ade80)">Java 23</text>
-            <text x="31" y="77" text-anchor="end"
-                font-size="1.1"
-                fill="light-dark(#888, #999)">Sep. 2024</text>
-            <text x="31" y="79" text-anchor="end"
-                font-size="1.1" fill="currentColor">
-            <tspan x="31" dy="0">JEP 473: Gatherers (2nd Preview, ohne Änd.)</tspan>
-            </text>
-        </g>
-
-        <!-- ═══════════════════════════════════════════════════
-            Java 24 — März 2025  (RIGHT)  — Finale
-            ═══════════════════════════════════════════════════ -->
-        <g class="incremental" transform="translate(0,-18)">
-            <circle cx="40" cy="87" r="1"
-                    fill="light-dark(#15803d, #4ade80)" />
-            <line x1="41" y1="87" x2="48" y2="87"
-                stroke="light-dark(#15803d, #4ade80)" stroke-width="0.2" />
-            <text x="49" y="86" text-anchor="start"
-                font-size="2.2" font-weight="bold"
-                fill="light-dark(#15803d, #4ade80)">Java 24</text>
-            <text x="49" y="88" text-anchor="start"
-                font-size="1.1"
-                fill="light-dark(#888, #999)">März 2025</text>
-            <text x="49" y="90.2" text-anchor="start"
-                font-size="1.1" fill="currentColor">
-            <tspan x="49" dy="0" font-weight="bold">JEP 485: Gatherers — finalisiert</tspan>
-            <tspan x="49" dy="1.6">Gatherer&lt;T,A,R&gt; + Stream.gather(...)</tspan>
-            <tspan x="49" dy="1.6">Built-in: fold, scan, windowFixed,</tspan>
-            <tspan x="49" dy="1.6">    windowSliding, mapConcurrent</tspan>
-            </text>
-
-            <!-- Epoche: Gatherers -->
-            <line x1="42" y1="69" x2="42" y2="87"
-                stroke="light-dark(#15803d, #4ade80)" stroke-width="0.1"
-                stroke-dasharray="0.4,0.3" opacity="0.5" />
-            <text x="43" y="76" text-anchor="start"
-                font-size="1" fill="light-dark(#15803d, #4ade80)"
-                writing-mode="tb" opacity="0.6">Gatherers-Ära</text>
-
-        </g>
-        </svg>
-        </div>
 
 
 
@@ -967,9 +753,12 @@ Streams - Grundlegendes Konzept
         <rect x="72" y="12" width="5.5" height="6" rx="0.6"
             fill="light-dark(#f5f3ff, #3b0764)"
             stroke="light-dark(#7c3aed, #a78bfa)" stroke-width="0.18"/>
-        <text x="74.75" y="15.35" text-anchor="middle"
+        <text x="74.75" y="14.35" text-anchor="middle"
             font-size="1.2" font-weight="bold"
             fill="light-dark(#7c3aed, #a78bfa)">Ergebnis</text>
+        <text x="74.75" y="16.35" text-anchor="middle"
+            font-size="1.2" font-weight="bold"
+            fill="light-dark(#7c3aed, #a78bfa)">/ Effekt</text>
 
         <!-- Annotationen unterhalb -->
         <g font-size="1.5" transform="translate(0,-1.5)">
@@ -984,9 +773,9 @@ Streams - Grundlegendes Konzept
         <text x="40" y="26" text-anchor="middle"
             fill="light-dark(#6b7280, #9ca3af)">
             <tspan x="40" font-weight="bold" fill="currentColor">Transformieren</tspan>
-            <tspan x="40" dy="2">Verkettete Operationen.</tspan>
-            <tspan x="40" dy="1.75">Jede liefert neuen Stream.</tspan>
-            <tspan x="40" dy="1.75">Lazy — erst bei Terminal</tspan>
+            <tspan x="40" dy="2">Verkettete Operationen;</tspan>
+            <tspan x="40" dy="1.75">jede liefert neuen Stream.</tspan>
+            <tspan x="40" dy="1.75">Lazy: erst bei Terminal</tspan>
             <tspan x="40" dy="1.75">Op ausgewertet.</tspan>
         </text>
         <text x="63" y="26" text-anchor="middle"
@@ -995,7 +784,7 @@ Streams - Grundlegendes Konzept
             <tspan x="63" dy="2">Löst die Auswertung</tspan>
             <tspan x="63" dy="1.75">der gesamten Pipeline</tspan>
             <tspan x="63" dy="1.75">aus und produziert</tspan>
-            <tspan x="63" dy="1.75">das Ergebnis.</tspan>
+            <tspan x="63" dy="1.75">das Ergebnis/den Effekt.</tspan>
         </text>
         </g>
     </g>
@@ -1009,6 +798,225 @@ Streams - Grundlegendes Konzept
     Es ist möglich als terminale Operation einen :java:`Iterator` bzw. :java:`Spliterator` zu erzeugen. In diesen beiden Fällen erfolgt die Evaluation der Pipeline nicht vollständig (d.h. nicht *eager* sondern *lazy*). Es wird somit nur so viel ausgewertet, wie für die Erzeugung des :java:`Iterator`\ /\ :java:`Spliterator` notwendig ist. Das hat zur Folge, dass die Elemente des Streams erst dann verarbeitet werden, wenn sie tatsächlich über den :java:`Iterator`\ /\ :java:`Spliterator` angefordert werden.
 
     Die Verwendung dieser beiden Methoden führt zu einem Bruch des deklarativen Pipeline-Modells, der in den allermeisten Fällen vermieden werden kann. Häufig nur noch im Zusammenhang mit Legacy-APIs relevant, die mit :java:`Iterator`\ /\ :java:`Spliterator` arbeiten.
+
+
+
+Java Stream API - Evolution
+--------------------------------
+
+.. story::
+
+    .. raw:: html
+        :class: center-content
+
+        <div style="width:71ch; height: 90.47ch">
+        <svg viewBox="6 0 62 79"
+            xmlns="http://www.w3.org/2000/svg">
+
+        <!-- ═══ Timeline backbone ═══ -->
+        <line x1="40" y1="2" x2="40" y2="6"
+                stroke="light-dark(#bbb, #555)" stroke-width="0.25" stroke-dasharray="0.5 0.25"/>
+        <line x1="40" y1="6" x2="40" y2="69"
+                stroke="light-dark(#bbb, #555)" stroke-width="0.25" />
+        <line x1="40" y1="69" x2="40" y2="78"
+                stroke="light-dark(#bbb, #555)" stroke-width="0.25" stroke-dasharray="0.5 0.25"/>
+
+        <!-- ═══════════════════════════════════════════════════
+            Java 8 — März 2014  (LEFT)
+            ═══════════════════════════════════════════════════ -->
+        <g>
+            <circle cx="40" cy="6" r="1"
+                    fill="light-dark(#b91c1c, #f87171)" />
+            <line x1="39" y1="6" x2="32" y2="6"
+                stroke="light-dark(#b91c1c, #f87171)" stroke-width="0.2" />
+            <text x="31" y="5" text-anchor="end"
+                font-size="2.2" font-weight="bold"
+                fill="light-dark(#b91c1c, #f87171)">Java 8</text>
+            <text x="31" y="7" text-anchor="end"
+                font-size="1.1"
+                fill="light-dark(#888, #999)">März 2014 (LTS bis 2030)</text>
+            <text x="31" y="9.2" text-anchor="end"
+                font-size="1.1" fill="currentColor">
+                <tspan x="31" dy="0" font-weight="600">Initiale Stream API (java.util.stream)</tspan>
+                <tspan x="31" dy="1.6" font-weight="500" font-style="italic">Intermediate Ops.: </tspan><tspan>filter, map, flatMap, sorted, ...</tspan>
+                <tspan x="31" dy="1.6"  font-weight="500" font-style="italic">Terminal Ops.: </tspan><tspan>collect, reduce, forEach, count, ...</tspan>
+                <tspan x="31" dy="1.6">Collector-Interface — erweiterbarer Endpunkt</tspan>
+                <tspan x="31" dy="1.6">Parallele Streams via .parallelStream()</tspan>
+            </text>
+        </g>
+
+
+        <!-- ═══════════════════════════════════════════════════
+            Java 9 — Sep. 2017  (RIGHT)
+            ═══════════════════════════════════════════════════ -->
+        <g class="incremental" transform="translate(0, -4)">
+
+            <!-- Java 9 -->
+            <circle cx="40" cy="22" r="0.6"
+                    fill="light-dark(#2563eb, #60a5fa)" />
+            <line x1="41" y1="22" x2="48" y2="22"
+                stroke="light-dark(#2563eb, #60a5fa)" stroke-width="0.2" />
+            <text x="49" y="21" text-anchor="start"
+                font-size="2.2" font-weight="bold"
+                fill="light-dark(#2563eb, #60a5fa)">Java 9</text>
+            <text x="49" y="23" text-anchor="start"
+                font-size="1.1"
+                fill="light-dark(#888, #999)">Sep. 2017</text>
+            <text x="49" y="25.2" text-anchor="start"
+                font-size="1.1" fill="currentColor">
+            <tspan x="49" dy="0">takeWhile / dropWhile</tspan>
+            <tspan x="49" dy="1.6">Stream.iterate(seed, hasNext, next)</tspan>
+            <tspan x="49" dy="1.6">Stream.ofNullable, Optional.stream()</tspan>
+            <tspan x="49" dy="1.6">Collectors.filtering / flatMapping</tspan>
+            </text>
+        </g>
+
+        <!-- ═══════════════════════════════════════════════════
+            Java 10 — März 2018  (LEFT)
+            ═══════════════════════════════════════════════════ -->
+        <g class="incremental" transform="translate(0, -10)">
+            <circle cx="40" cy="36" r="0.6"
+                    fill="light-dark(#2563eb, #60a5fa)" />
+            <line x1="39.4" y1="36" x2="32" y2="36"
+                stroke="light-dark(#2563eb, #60a5fa)" stroke-width="0.15" />
+            <text x="31" y="35" text-anchor="end"
+                font-size="2" font-weight="bold"
+                fill="light-dark(#2563eb, #60a5fa)">Java 10</text>
+            <text x="31" y="37" text-anchor="end"
+                font-size="1.1"
+                fill="light-dark(#888, #999)">März 2018</text>
+            <text x="31" y="39" text-anchor="end"
+                font-size="1.1" fill="currentColor">
+            <tspan x="31" dy="0">Collectors.toUnmodifiable{List,Set,Map}</tspan>
+            </text>
+        </g>
+
+        <!-- ═══════════════════════════════════════════════════
+            Java 12 — März 2019  (RIGHT)
+            ═══════════════════════════════════════════════════ -->
+        <g class="incremental" transform="translate(0,-10)">
+            <circle cx="40" cy="44" r="0.6"
+                    fill="light-dark(#2563eb, #60a5fa)" />
+            <line x1="40.6" y1="44" x2="48" y2="44"
+                stroke="light-dark(#2563eb, #60a5fa)" stroke-width="0.15" />
+            <text x="49" y="43" text-anchor="start"
+                font-size="2" font-weight="bold"
+                fill="light-dark(#2563eb, #60a5fa)">Java 12</text>
+            <text x="49" y="45" text-anchor="start"
+                font-size="1.1"
+                fill="light-dark(#888, #999)">März 2019</text>
+            <text x="49" y="47" text-anchor="start"
+                font-size="1.1" fill="currentColor">
+            <tspan x="49" dy="0">Collectors.teeing (zwei Collector parallel)</tspan>
+            </text>
+        </g>
+
+        <!-- ═══════════════════════════════════════════════════
+            Java 16 — März 2021  (LEFT)
+            ═══════════════════════════════════════════════════ -->
+        <g class="incremental" transform="translate(0,-12)">
+            <circle cx="40" cy="53" r="0.6"
+                    fill="light-dark(#2563eb, #60a5fa)" />
+            <line x1="39.3" y1="53" x2="32" y2="53"
+                stroke="light-dark(#2563eb, #60a5fa)" stroke-width="0.15" />
+            <text x="31" y="52" text-anchor="end"
+                font-size="2" font-weight="bold"
+                fill="light-dark(#2563eb, #60a5fa)">Java 16</text>
+            <text x="31" y="54" text-anchor="end"
+                font-size="1.1"
+                fill="light-dark(#888, #999)">März 2021</text>
+            <text x="31" y="56" text-anchor="end"
+                font-size="1.1" fill="currentColor">
+            <tspan x="31" dy="0">Stream.toList() als Ergänzung zu collect(toList())</tspan>
+            <tspan x="31" dy="1.6">Stream.mapMulti — imperative Alternative zu flatMap</tspan>
+            </text>
+
+
+            <!-- Epoche: Inkrementelle Verbesserungen -->
+            <line x1="38" y1="30" x2="38" y2="53"
+                stroke="light-dark(#2563eb, #60a5fa)" stroke-width="0.1"
+                stroke-dasharray="0.4,0.3" opacity="0.5" />
+            <text x="37" y="41.5" text-anchor="middle"
+                font-size="1" fill="light-dark(#2563eb, #60a5fa)"
+                transform="rotate(-90, 37, 41.5)" opacity="0.6">Inkrementelle Ergänzungen</text>
+        </g>
+
+        <!-- ═══════════════════════════════════════════════════
+            Java 22 — März 2024  (RIGHT)  — Gatherers Era
+            ═══════════════════════════════════════════════════ -->
+        <g class="incremental" transform="translate(0,-14)">
+
+            <!-- Java 22 -->
+            <circle cx="40" cy="65" r="0.6"
+                    fill="light-dark(#15803d, #4ade80)" />
+            <line x1="40.7" y1="65" x2="48" y2="65"
+                stroke="light-dark(#15803d, #4ade80)" stroke-width="0.15" />
+            <text x="49" y="64" text-anchor="start"
+                font-size="2" font-weight="bold"
+                fill="light-dark(#15803d, #4ade80)">Java 22</text>
+            <text x="49" y="66" text-anchor="start"
+                font-size="1.1"
+                fill="light-dark(#888, #999)">März 2024</text>
+            <text x="49" y="68" text-anchor="start"
+                font-size="1.1" fill="currentColor">
+            <tspan x="49" dy="0">JEP 461: Stream Gatherers (Preview)</tspan>
+            <tspan x="49" dy="1.6" font-weight="500">Erweiterbare </tspan><tspan font-style="italic" font-weight="500">Intermediate Operations</tspan>
+            </text>
+        </g>
+
+        <!-- ═══════════════════════════════════════════════════
+            Java 23 — Sep. 2024  (LEFT)
+            ═══════════════════════════════════════════════════ -->
+        <g class="incremental" transform="translate(0,-16)">
+            <circle cx="40" cy="76" r="0.6"
+                    fill="light-dark(#15803d, #4ade80)" />
+            <line x1="39.4" y1="76" x2="32" y2="76"
+                stroke="light-dark(#15803d, #4ade80)" stroke-width="0.15" />
+            <text x="31" y="75" text-anchor="end"
+                font-size="2" font-weight="bold"
+                fill="light-dark(#15803d, #4ade80)">Java 23</text>
+            <text x="31" y="77" text-anchor="end"
+                font-size="1.1"
+                fill="light-dark(#888, #999)">Sep. 2024</text>
+            <text x="31" y="79" text-anchor="end"
+                font-size="1.1" fill="currentColor">
+            <tspan x="31" dy="0">JEP 473: Gatherers (2nd Preview, ohne Änd.)</tspan>
+            </text>
+        </g>
+
+        <!-- ═══════════════════════════════════════════════════
+            Java 24 — März 2025  (RIGHT)  — Finale
+            ═══════════════════════════════════════════════════ -->
+        <g class="incremental" transform="translate(0,-18)">
+            <circle cx="40" cy="87" r="1"
+                    fill="light-dark(#15803d, #4ade80)" />
+            <line x1="41" y1="87" x2="48" y2="87"
+                stroke="light-dark(#15803d, #4ade80)" stroke-width="0.2" />
+            <text x="49" y="86" text-anchor="start"
+                font-size="2.2" font-weight="bold"
+                fill="light-dark(#15803d, #4ade80)">Java 24</text>
+            <text x="49" y="88" text-anchor="start"
+                font-size="1.1"
+                fill="light-dark(#888, #999)">März 2025</text>
+            <text x="49" y="90.2" text-anchor="start"
+                font-size="1.1" fill="currentColor">
+            <tspan x="49" dy="0" font-weight="bold">JEP 485: Gatherers — finalisiert</tspan>
+            <tspan x="49" dy="1.6">Gatherer&lt;T,A,R&gt; + Stream.gather(...)</tspan>
+            <tspan x="49" dy="1.6">Built-in: fold, scan, windowFixed,</tspan>
+            <tspan x="49" dy="1.6">    windowSliding, mapConcurrent</tspan>
+            </text>
+
+            <!-- Epoche: Gatherers -->
+            <line x1="42" y1="69" x2="42" y2="87"
+                stroke="light-dark(#15803d, #4ade80)" stroke-width="0.1"
+                stroke-dasharray="0.4,0.3" opacity="0.5" />
+            <text x="43" y="76" text-anchor="start"
+                font-size="1" fill="light-dark(#15803d, #4ade80)"
+                writing-mode="tb" opacity="0.6">Gatherers-Ära</text>
+
+        </g>
+        </svg>
+        </div>
 
 
 
@@ -1134,7 +1142,7 @@ Eigenschaften von *Intermediate Operations*
                 stroke="light-dark(#e5e7eb, #374151)" stroke-width="0.08"/>
             <text x="20" y="33" text-anchor="middle"
                 font-size="0.8" fill="light-dark(#9ca3af, #6b7280)"
-                font-style="italic">unabhängig von Stateless/Stateful</text>
+                font-style="italic">Weitere Dimensionen</text>
 
             <rect x="1" y="35" width="12" height="5" rx="0.6"
                 fill="light-dark(#fefce8, #422006)"
@@ -1212,19 +1220,33 @@ Eigenschaften von *Intermediate Operations*
         </svg>
         </div>
 
-
-
-.. supplemental::
+.. supplemental:: dd-margin-left-4em
 
     :Stateless Ops(`zustandslose Operationen`:ger:): Transformieren die Elemente jeweils völlig unabhängig von allen anderen.
     :Stateful Ops(`zustandsbehaftete Operationen`:ger:): Transformieren die Elemente abhängig von anderen.
 
+    .. hint::
+
+        Es kann interessant sein, einen Stream explizit als :java:`unordered()` zu markieren, da dann ggf. weitere Optimierungen bei der Auswertung möglich sind.
+
+
+
+Stream-Operationen mit Seiteneffekten
+---------------------------------------------
+
+.. warning::
+
+    Seiteneffekte in Funktionen, die an Stream-Operationen übergeben werden, sind grundsätzlich zu vermeiden. Wird ein Stream parallelisiert und eine übergebene Funktion (z. B. an die :java:`peek` Methode) hat dennoch Seiteneffekte, so muss diese Thread-sicher sein.
+
+
+.. supplemental::
+
+    `Java Stream API <https://docs.oracle.com/en/java/javase/26/docs/api/java.base/java/util/stream/package-summary.html>`__
 
 
 
 
-
-Überblick über die wichtigsten Operationen und Ihre Eigenschaften
+Überblick über wichtige Operationen und ihre Eigenschaften
 --------------------------------------------------------------------
 
 .. deck::
@@ -1238,29 +1260,18 @@ Eigenschaften von *Intermediate Operations*
             :width: 100%
             :class: dhbw highlight-row-on-hover
 
-            "``filter``",       "Stateless", "Konstant",              "Trivial",        "Nein"
-            "``map``",          "Stateless", "Konstant",              "Trivial",        "Nein"
-            "``flatMap``",      "Stateless", "Konstant",              "Trivial",        "Nein"
-            "``mapMulti``",     "Stateless", "Konstant",              "Trivial",        "Nein"
-            "``peek``",         "Stateless", "Konstant",              "Trivial",        "Nein"
-            "``sorted``",       "Stateful",  "O(n)",                  "Eingeschränkt",  "Nein"
-            "``distinct``",     "Stateful",  "O(n)",                  "Eingeschränkt",  "Nein"
-            "``limit``",        "Stateful",  "Konstant",              "Eingeschränkt",  "Ja"
-            "``skip``",         "Stateful",  "Konstant",              "Eingeschränkt",  "Nein"
-            "``takeWhile``",    "Stateful",  "Konstant",              "Eingeschränkt",  "Ja"
-            "``dropWhile``",    "Stateful",  "Konstant",              "Eingeschränkt",  "Nein"
-            "``gather``",       "Konfigurierbar", "Konfigurierbar",   "Konfigurierbar", "Konfigurierbar"
-
-    .. card:: s-overlay backdrop-blur center-content
-
-        .. warning::
-
-            Seiteneffekte in Funktionen, die an Stream-Operationen übergeben werden, sind grundsätzlich zu vermeiden. Wird ein Stream parallelisiert und eine übergebene Funktion (z. B. an die :java:`peek` Methode) hat dennoch Seiteneffekte, so muss diese Thread-sicher sein.
-
-
-        .. supplemental::
-
-            `Java Stream API <https://docs.oracle.com/en/java/javase/26/docs/api/java.base/java/util/stream/package-summary.html>`__
+            "``filter``", "Stateless", "Konstant", "Trivial", "Nein"
+            "``map``", "Stateless", "Konstant", "Trivial", "Nein"
+            "``flatMap``", "Stateless", "Konstant", "Trivial", "Nein"
+            "``mapMulti``", "Stateless", "Konstant", "Trivial", "Nein"
+            "``peek``", "Stateless", "Konstant", "Trivial", "Nein"
+            "``sorted``", "Stateful", "O(n)", "Eingeschränkt", "Nein"
+            "``distinct``", "Stateful", "O(n)", "Eingeschränkt", "Nein"
+            "``limit``", "Stateful", "Konstant", "Eingeschränkt", "Ja"
+            "``skip``", "Stateful", "Konstant", "Eingeschränkt", "Nein"
+            "``takeWhile``", "Stateful", "Konstant", "Eingeschränkt", "Ja"
+            "``dropWhile``", "Stateful", "Konstant", "Eingeschränkt", "Nein"
+            "``gather``", "Konfigurierbar", "Konfigurierbar", "Konfigurierbar", "Konfigurierbar"
 
 
 
@@ -1284,7 +1295,7 @@ Streams mit primitiven Daten und Objekten
   - :java:`LongStream`
   - :java:`DoubleStream`
 
-  Diese Streams mit primitiven Daten arbeiten in vielen Fällen effizienter jedoch sind manche Operationen nur auf :java:`Object`\ -Streams erlaubt. „Primitive“ Streams können mit der Methode :java:`boxed` in :java:`Object`\ -Streams umgewandelt werden.
+  Diese Streams mit primitiven Daten arbeiten in vielen Fällen effizienter -  jedoch sind manche Operationen nur auf :java:`Object`\ -Streams erlaubt. „Primitive“ Streams können mit der Methode :java:`boxed` in :java:`Object`\ -Streams des entsprechenden Wrapper-Typs umgewandelt werden.
 
 .. example::
     :class: incremental
@@ -1310,7 +1321,7 @@ Erzeugung von Streams
         - Die Klasse :java:`java.util.Arrays` hat mehrere überladene statische stream-Methoden, mit denen Arrays in Ströme umgewandelt werden können.
         - Die Streams können Objekte oder primitive Daten enthalten.
 
-        .. example::
+          .. example::
             :class: incremental
 
             .. code:: java
@@ -1335,7 +1346,6 @@ Erzeugung von Streams
 
             .. card::
 
-
                 - Mit :java:`of` werden die übergebenen Wert in einen Stream gepackt.
                 - Mit :java:`iterate` und :java:`generate` hat man eine einfache Möglichkeit unendliche Ströme zu erzeugen.
 
@@ -1352,25 +1362,25 @@ Erzeugung von Streams
                         Stream<Integer> is1a = Stream.of(1,2,3,4,5,6,7,8,9,0);
 
                     .. code:: java
-                        :number-lines: 2
+                        :number-lines: 3
                         :class: copy-to-clipboard incremental
 
                         // int-Stream 1, 2, ... 9, 0
                         IntStream is1b = IntStream.of(1,2,3,4,5,6,7,8,9,0);
 
                     .. code:: java
-                        :number-lines: 3
+                        :number-lines: 5
                         :class: copy-to-clipboard incremental
 
                         // (infinite) Stream 1, 2, ...
-                        Stream<Integer> is2 = Stream.iterate(1, ((x) -> x+1));
+                        Stream<Integer> is2 = Stream.iterate(1, (x) -> x+1);
 
                     .. code:: java
-                        :number-lines: 4
+                        :number-lines: 7
                         :class: copy-to-clipboard incremental
 
                         int[] z = new int[]{1};
-                        Stream<Integer> is3 = Stream.generate((() -> z[0]++)); // (infinite) Stream 1, 2, ...
+                        Stream<Integer> is3 = Stream.generate(() -> z[0]++); // (infinite) Stream 1,2,...
 
     .. card::
 
@@ -1517,7 +1527,7 @@ Verwendung von Streams
 
     .. card::
 
-        .. rubric:: Verarbeitungsoperationen
+        .. rubric:: Terminale Operationen
 
         Eine terminale Operation hat im Gegensatz zu den Verarbeitungsoperationen *keinen Stream* als
         Ergebnis.
@@ -1564,9 +1574,9 @@ Verwendung von Streams
 
                         Stream.of(9, 0, 3, 1, 7, 3, 4, 7, 2, 8, 5, 0, 6, 2)
                             .distinct()
-                            .sorted( (i,j) -> i-j )
+                            .sorted((i,j) -> i-j)
                             .limit(3)
-                            .forEach( System.out::println );
+                            .forEach(System.out::println);
 
             .. card::
 
@@ -1580,14 +1590,12 @@ Verwendung von Streams
 
                         int[] a = IntStream.range(1, 3).toArray();
 
-                        Object[] a = Stream.of("1", "2", "3").map( Integer::parseInt )
-                                .toArray();
+                        Object[] a = Stream.of("1", "2", "3").map( Integer::parseInt ).toArray();
 
-                        Integer[] a = (Integer[]) Stream.of(1, 2, 3)
-                                .toArray();
+                        Integer[] a = (Integer[]) Stream.of(1, 2, 3).toArray();
 
                         String[] a = Stream.of(1, 2, 3).map( (i) -> i.toString() )
-                                .toArray( String[]::new ); // using generator
+                                            .toArray( String[]::new ); // using generator
 
             .. card::
 
@@ -1595,11 +1603,11 @@ Verwendung von Streams
 
                     .. rubric:: Terminale Operationen mit Kollektions-Ergebnis
 
-                    - Die Methode :java:`collect` erzeugt eine Kollektion aus den Elementen des Streams.
-                    - :java:`IntStream` und andere Streams mit primitiven Daten haben keine entsprechende Operation.
-                    - Das Argument von :java:`collect` ist ein :java:`java.util.stream.Collector`. Die Erzeugung einer Kollektion ist damit Sonderfall einer aggregierenden Operation.
-                    - Für die Erzeugung einer Kollektion verwendet man typischerweise einen vordefinierten :java:`Collector` aus der Klasse :java:`java.util.stream.Collectors`.
-                    - Einfache Kollektionserzeuger in Collectors sind:
+                    -   Die Methode :java:`collect` erzeugt eine Kollektion aus den Elementen des Streams.
+                    -   :java:`IntStream` und andere Streams mit primitiven Daten haben keine entsprechende Operation.
+                    -   Das Argument von :java:`collect` ist ein :java:`java.util.stream.Collector`. Die Erzeugung einer Kollektion ist damit Sonderfall einer aggregierenden Operation.
+                    -   Für die Erzeugung einer Kollektion verwendet man typischerweise einen vordefinierten :java:`Collector` aus der Klasse :java:`java.util.stream.Collectors`.
+                    -   Einfache Kollektionserzeuger in Collectors sind:
 
                         - :java:`toList()`
                         - :java:`toSet()`
@@ -1623,10 +1631,10 @@ Verwendung von Streams
                                         .collect( Collectors.toList() );
 
                                 Set<String> s1 = (Set<String>) Stream.of("1", "2", "3")
-                                        .collect( Collectors.toSet());
+                                        .collect( Collectors.toSet() );
 
                                 Set<String> s2 = (Set<String>) Stream.of("1", "2", "3")
-                                        .collect( Collectors.toCollection( HashSet::new) );
+                                        .collect( Collectors.toCollection( HashSet::new ) );
 
                         .. card::
 
@@ -1699,7 +1707,7 @@ Verwendung von Streams
 
             .. card::
 
-                Das Interface :java:`Stream` bzw. die Interfaces für Ströme primitiver Daten (:java:`IntStream`, etc.) bieten einige **einfache aggregierende Funktionen für Standardoperationen** auf allen Elementen des Stroms.
+                Das Interface :java:`Stream` bzw. die Interfaces für Ströme primitiver Daten (:java:`IntStream`, etc.) bieten einige **aggregierende Funktionen für Standardoperationen** auf allen Elementen des Stroms.
 
                 .. example::
                     :class: incremental
@@ -1716,7 +1724,7 @@ Verwendung von Streams
 
             .. card::
 
-                Das Interface Stream bieten einige einfache **aggregierende Funktionen für den Test aller Elemente des Stroms** mit einem übergebenen Prädikat.
+                Das Interface :java:`Stream` bieten einige **aggregierende Funktionen für den Test aller Elemente des Stroms** mit einem übergebenen Prädikat.
 
                 .. example::
                     :class: incremental
@@ -1760,7 +1768,7 @@ Verwendung von Streams
 
             .. card::
 
-                Das Interface Stream bietet die Funktion
+                Das Interface :java:`Stream` bietet die Funktion
 
                     :java:`Optional<T> reduce(BinaryOperator<T> accumulator)`
 
@@ -1831,7 +1839,7 @@ Verwendung von Streams
 
 
 
-Streams - fortgeschrittene Konzepte
+Streams - fortgeschrittenere Konzepte
 ------------------------------------------------
 
 .. deck::
@@ -1858,6 +1866,7 @@ Streams - fortgeschrittene Konzepte
             }
 
         .. code:: java
+            :line-number-digits: 2
             :number-lines: 13
             :class: incremental
 
@@ -1867,11 +1876,11 @@ Streams - fortgeschrittene Konzepte
 
         .. supplemental::
 
-            Die Interfacedefintion (:java:`BaseStream<T, S extends BaseStream<T,S>>`) ist eine Anwendung des CRTP; d. h. des *Curiously Recurring Template Pattern*\s. Bei diesem Idiom haben wir eine Klasse :java:`X`, die von einer  generischen Klasse oder einem generischen Interface :java:`S` abgeleitet wird, wobei die ableitende Klasse :java:`X` sich selber als Typparameter verwendet. Dies erlaubt die Definition einer Fluent-API, bei der Methoden, die in der Basisklasse definiert sind, den abgeleiteten Typ zurückgeben.
+            Die Interfacedefintion (:java:`BaseStream<T, S extends BaseStream<T,S>>`) ist eine Anwendung des  des *Curiously Recurring Template Pattern*\s (*CRTP*). Bei diesem Idiom haben wir eine Klasse :java:`X`, die von einer  generischen Klasse oder einem generischen Interface :java:`S` abgeleitet wird, wobei die ableitende Klasse :java:`X` sich selber als Typparameter verwendet. Dies erlaubt die Definition einer Fluent-API, bei der Methoden, die in der Basisklasse definiert sind, den abgeleiteten Typ zurückgeben.
 
     .. card::
 
-        .. rubric:: Erzeugen von eigenen Streams mittels `StreamSupport <https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/stream/StreamSupport.html>`__
+        .. rubric:: Erzeugen von eigenen Streams mittels `StreamSupport <https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/stream/StreamSupport.html>`__
 
         Die Implementierung des Interfaces :java:`Stream<T>` ist ggf. sehr aufwändig. Alternativ kann die Klasse :java:`StreamSupport` verwendet werden, um auf einem :java:`Spliterator` basierende Streams zu erzeugen.
 
@@ -1892,8 +1901,8 @@ Streams - fortgeschrittene Konzepte
 
 .. class:: exercises
 
-Übung - Streams Grundlagen
-----------------------------
+Übung - Streams - erste Schritte
+--------------------------------
 
 .. exercise:: Streams und Lambda Ausdrücke
 
@@ -1901,34 +1910,48 @@ Streams - fortgeschrittene Konzepte
         :number-lines:
         :class: copy-to-clipboard
 
-        void main() {
-            List<String> names = Arrays.asList("Alice", "Bob", "Charlie", "Diana", "Eve");
-            List<Integer> grades = Arrays.asList(85, 42, 91, 67, 55);
+        List<String> namen = Arrays.asList("Alice", "Bob", "Charlie", "Diana", "Eve");
+        List<Integer> punkte = Arrays.asList(85, 42, 91, 67, 55);
 
-            // TODO 1: Using a lambda, filter the grades list to only keep grades >= 60
-            // and print the passing grades.
-            // Hint: Use stream(), filter(), and forEach().
+    .. class:: list-with-explanations
 
+    #.  Filtere mit einem Lambda die Liste :java:`punkte`, sodass nur Noten >= 60 übrig bleiben, und gib die bestandenen Noten aus.
 
-            // TODO 2: Create a Predicate<Integer> lambda called `isExcellent`
-            // that returns true if a grade is 90 or above. Then print all excellent grades.
+        Hinweis: Verwende :java:`stream()`, :java:`filter()` und :java:`forEach()`.
+    #.  Erstelle ein :java:`Predicate<Integer>`-Lambda namens :java:`isExcellent`, das :java:`true` zurückgibt bei 90 oder mehr Punkten. Gib dann alle ausgezeichneten Noten aus.
+    #.  Erstelle eine :java:`Function<Integer, String>`-Lambda namens :java:`toLetterGrade`, das die Punkte in einen Buchstaben umwandelt: 90+  → "A"; 80-89  → "B";  70-79  → "C"; 60-69 → "D" unter 60 → "F"; gib dann die Punkte zusammen mit der Note aus.
+    #.  Berechne mit einem Lambda den Durchschnitt aller Noten und gib diese aus.
 
+        Hinweis: Verwende :java:`stream()` und :java:`mapToInt()`.
 
-            // TODO 3: Create a Function<Integer, String> lambda called `toLetterGrade`
-            // that converts a numeric grade to a letter:
-            //   90+  → "A"; 75+  → "B" ;  60+  → "C"; below 60 → "F"
-            // Then print each grade alongside its letter grade.
+    .. solution::
+        :pwd: that_was_easy...
 
+        .. code:: java
 
-            // TODO 4: Using a lambda, calculate and print the average of all grades.
-            // Hint: Use stream() and mapToInt().
-        }
+            List<Integer> punkte = Arrays.asList(85, 42, 91, 67, 55);
 
+            punkte.stream().filter(x -> x>= 60).forEach(IO::println)
+
+            Predicate<Integer> isExcellent = (i) -> i >= 90;
+            punkte.stream().filter(isExcellent).forEach(IO::println)
+
+            Function<Integer,String> toLetterGrade =
+                (i) -> switch(i/10) {
+                            case 9 -> "A";
+                            case 8 ->"B";
+                            case 7 -> "C";
+                            case 6 -> "D";
+                            default -> "F"; }
+            punkte.stream().collect(Collectors.toUnmodifiableMap(Function.identity(), toLetterGrade))
+            // Resultat: {91=A, 67=D, 55=F, 85=B, 42=F}
+
+            punkte.stream().mapToInt(Integer::new).average()
 
 .. class:: exercises
 
-Übung
---------
+Übung - Streams
+-----------------------------------
 
 .. exercise:: Java Streams
 
@@ -1938,12 +1961,421 @@ Streams - fortgeschrittene Konzepte
 
     1. Schreiben Sie eine Methode :java:`int sumOfSquares(int[] a)` die die Elemente des Arrays quadriert und dann die Summe berechnet.
 
-    2. Schreiben Sie eine Methode :java:`int sumOfSquaresEven(int[] a)` die die Elemente des Arrays quadriert, und dann die Summe berechnet für alle Elemente die gerade sind.
+    2. Schreiben Sie eine Methode :java:`int sumOfSquaresEven(int[] a)` die die Summe der quadrierten Elemente bildet, für die das Ergebenis der Quadrierung gerade ist.
 
     3. Schreiben Sie eine Methode, die eine Liste von Strings (:java:`List<String>`) in eine flache Liste von Zeichen (:java:`List<Integer>`) umwandelt.
 
-    4. Schreiben Sie eine Methode, die die Zahlen von :java:`1` bis :java:`Integer.MAX_VALUE` addiert. Nutzen Sie :java:`IntStream.range()` um die Zahlen zu iterieren. Messen Sie die Ausführungsdauer für die *sequentielle* und *parallele* Ausführung (siehe Anhang für eine entsprechende Methode zur Zeitmessung.)
+    .. solution::
+        :pwd: QuadrierteStreams
 
+        1.  Lösung
+
+            .. code:: java
+                :number-lines:
+                :class: copy-to-clipboard
+
+                Arrays.stream(new int[]{1,2,3}).reduce(0,(x,y) -> x + y*y);
+                Arrays.stream(new int[]{1,2,3}).map(x -> x * x).reduce(0, (x,y) -> x + y);
+                Arrays.stream(new int[]{1,2,3}).map(x -> x * x).sum()
+
+        2.  Lösung
+
+            .. code:: java
+                :number-lines:
+                :class: copy-to-clipboard
+
+                Arrays.stream(new int[]{1,2,3,4})
+                    .map(x -> x * x)
+                    .filter(x -> x % 2 == 0 )
+                    .reduce(0, (x,y) -> x + y)
+
+        3.  Lösung
+
+            .. code:: java
+                :number-lines:
+                :class: copy-to-clipboard
+
+                //var s = Stream.of("Hello", "World")
+                var s = List.of("Hello", "World").stream()
+                //Stream<Integer> sc =  s.flatMap((String x) -> x.chars().boxed())
+                var l = s.flatMap((String x) -> x.chars().boxed()).collect(Collectors.toList())
+
+
+
+.. class:: new-section transition-move-to-top
+
+Bewertung der Fähigkeiten der Standardoperationen von Java Streams
+--------------------------------------------------------------------
+
+
+
+Herausforderung *Low-representational Gap* gelöst?
+---------------------------------------------------
+
+.. rubric:: Lösung mit standard *Stream* Primitiven (≤ Java 24)
+
+.. supplemental::
+    :embed-in-document-flow:
+
+    *Benötigte Imports*
+
+    .. code:: java
+        :number-lines:
+        :class: copy-to-clipboard
+
+        import static java.util.Comparator.comparingDouble;
+        import static java.util.function.Predicate.not;
+        import static java.util.stream.Collectors.groupingBy;
+        import static java.util.stream.Collectors.minBy;
+
+*Geschäftslogik*
+
+.. code:: java
+    :number-lines:
+    :class: copy-to-clipboard
+
+    List<Student> empfehlungenS = alleStudierenden.stream()
+        .filter(not(Student::hatStipendium))
+        .collect(groupingBy(Student::studiengang,
+                            minBy(comparingDouble(Student::schnitt))))
+        .values().stream().flatMap(Optional::stream)
+        .sorted(comparingDouble(Student::schnitt))
+        .toList();
+
+.. supplemental::
+    :embed-in-document-flow:
+
+    .. assessment::
+
+        Wir sind näher an der Geschäftslogik, aber technische Artefakte scheinen noch durch!
+
+        - Um die gewünschte Gruppierung zu erhalten, werden die besten Studierenden in einer Zwischendatenstruktur (*Map*) aufgesammelt (:java:`collect(...)`). Diese muss - um eine Stream-orientierte Weiterverarbeitung zu ermöglichen - wieder in einen Stream verwandelt werden, der über den *Values* der *Map* operiert (:java:`values().stream()`).
+
+         - Da wir in eine *Map* aufgesammelt hatten, haben wir einen *Stream of Optionals*;  :java:`minBy(...)` liefert ein :java:`Optional`. Somit müssen wir die :java:`Optional`\ s im :java:`Stream<Optional<Student>>` über :java:`flatMap(Optional::stream)` entpacken.
+
+
+
+
+
+.. class:: new-subsection transition-fade
+
+Benutzerdefinierte Zwischenoperationen aka *Stream Gatherers*
+------------------------------------------------------------------------
+
+.. supplemental::
+
+    Im Folgenden verwenden wir die Begriffe *Custom Intermediate Operations* und *Stream Gatherers* faktisch synonym.
+
+
+
+Welches Problem wollen wir lösen?
+------------------------------------
+
+.. code:: java
+    :number-lines:
+    :class: head fade-out no-margin
+
+    List<Student> empfehlungenS = alleStudierenden.stream()
+        .filter(not(Student::hatStipendium))
+
+.. code:: java
+    :number-lines: 3
+    :class: snippet no-margin
+
+        .collect(groupingBy(Student::studiengang,
+                            minBy(comparingDouble(Student::schnitt))))
+        .values().stream().flatMap(Optional::stream)
+
+.. code:: java
+    :number-lines: 6
+    :class: tail fade-out
+
+        .sorted(comparingDouble(Student::schnitt))
+        .toList();
+
+.. compound::
+    :class: accentuate incremental
+
+    Um (hier) den Bruch in der Pipeline zu vermeiden, benötigen wir eine passende *Intermediate Operation*, die von der Standardbibliothek nicht zur Verfügung gestellt wird.
+
+
+
+Stream Gatherers
+------------------
+
+Gatherers erlauben die Definition von benutzerdefinierten *Intermediate Operations*.
+
+:java:`Gatherer<T, A, R>` bestehen aus vier Komponenten:
+
+.. class:: incremental-list
+
+:`initializer`:java:: Erzeugt den privaten, ggf. veränderlichen Zustand (Typ ``A``).
+:`integrator`:java:: Verarbeitet jedes Eingabeelement (``T``) und kann beliebig viele Ausgabeelemente (``R``) *downstream* senden."
+:`combiner`:java:: Vereinigt Zustände bei paralleler Ausführung *(optional)*.
+:`finisher`:java:: Wird nach dem letzten Element aufgerufen; kann finale Elemente *downstream* senden *(optional)*.
+
+.. class:: incremental-list
+
+- Damit lassen sich *zustandsbehaftete*, *short-circuiting* und *m:n*-Transformationen als wiederverwendbare, komponierbare, parallelisierbare Bausteine definieren.
+
+- Eingebunden über: :java:`stream.gather(myGatherer)`
+
+
+
+Ausgewählte Standard Stream Gatherers
+---------------------------------------
+
+.. deck::
+
+    .. card::
+
+        .. rubric:: :java:`Gatherers.scan(...)`
+
+        Der aktuelle Zustand wird basierend auf dem aktuellen Element aktualisiert. Der initiale Zustand kann explizit angegeben werden.
+
+        .. code:: java
+            :number-lines:
+            :class: copy-to-clipboard
+
+            Stream<Integer> numbers = Stream.of(1, 2, 3, 4);
+            List<Integer> resultList =
+                    numbers.gather(Gatherers.scan(() -> 0, Integer::sum)).toList();
+            // resultList => List.of(1, 3, 6, 10)
+
+    .. card::
+
+        .. rubric:: :java:`Gatherers.windowFixed(...)`
+
+        Der Stream wird in Blöcke fester Größe aufgeteilt und diese werden dann *downstream* weitergereicht.
+
+        .. code:: java
+            :number-lines:
+            :class: copy-to-clipboard
+
+            Map<String,String> nameToPoints = Stream.of("A","90+","B","80+")
+                    .gather(Gatherers.windowFixed(2))
+                    .collect(Collectors.toMap((l) -> l.get(0),(l) -> l.get(1)));
+            // nameToPoints => {A=90+, B=80+}
+
+
+
+*Custom Intermediate Operation*: :java:`reducePerGroup()`
+----------------------------------------------------------
+
+.. code:: java
+    :number-lines:
+    :class: copy-to-clipboard
+
+    static <T, K> Gatherer<T, ?, T> reducePerGroup(
+                Function<T, K> grouping, BinaryOperator<T> reducer) {
+
+        return Gatherer.ofSequential(
+            /*initializer:*/ HashMap<K, T>::new,
+            /*integrator: */ (map, element, downstream) -> {
+                map.merge(grouping.apply(element), element, reducer);
+                return true;
+            },
+            /*finalizer: */ (map, downstream) -> map.values().forEach(downstream::push)
+        );
+    }
+
+.. supplemental::
+    :embed-in-document-flow:
+
+    Aufgrund der Verwendung von :java:`Gatherer.ofSequential(...)` müssen wir keinen :java:`Combiner` angeben; Parallelisierung wird aber auch nicht unterstützt.
+
+.. assessment::
+    :class: incremental
+
+    Obwohl es sich um einen spezialisierten *Custom Gatherer* handelt, der die Gruppierung nur intern durchführt und nicht explizit downstream verfügbar macht, ist es dennoch sehr gut vorstellbar, dass dieser wiederverwendet werden kann.
+
+
+
+Übung
+----------
+
+TODO
+
+
+
+.. class:: new-section transition-move-to-top
+
+Bewertung der Fähigkeiten von Java Streams
+--------------------------------------------------------------------
+
+
+
+Herausforderungen gelöst?
+-------------------------
+
+.. rubric:: Lösung mit :java:`reducePerGroup` *Gatherer*
+
+.. supplemental::
+    :embed-in-document-flow:
+
+    .. code:: java
+        :number-lines:
+        :class: copy-to-clipboard
+
+        import static java.util.Comparator.comparingDouble;
+        import static java.util.function.Predicate.not;
+        import static java.util.stream.Collectors.groupingBy;
+        import static java.util.stream.Collectors.minBy;
+
+.. code:: java
+    :number-lines:
+    :line-number-digits: 2
+    :class: copy-to-clipboard
+
+    List<Student> empfehlungenG = alleStudierenden.stream()
+        .filter(not(Student::hatStipendium))
+        .gather(reducePerGroup(
+                    Student::studiengang,
+                    BinaryOperator.minBy(comparingDouble(Student::schnitt))))
+        .sorted(comparingDouble(Student::schnitt))
+        .toList();
+
+
+.. supplemental::
+    :embed-in-document-flow:
+
+    .. assessment::
+
+        Die Umsetzung in Java ist noch einmal näher an der Geschäftslogik, aber der Code ist noch nicht parallelisiert und enthält noch immer einiges and syntaktischem Rauschen.
+
+
+
+.. class:: new-section transition-fade
+
+Parallelisierung von Streams
+------------------------------
+
+
+Effizienz von Parallelisierung
+-------------------------------
+
+.. epigraph::
+
+    Als allgemeine Faustregel gilt, dass Geschwindigkeitssteigerungen in der Regel dann spürbar sind, wenn die Sammlung groß ist, typischerweise mehrere tausend Elemente umfasst.\ [#]_
+
+    -- `Aleksandar Prokopec, Heather Miller - Parallel Collections <https://docs.scala-lang.org/overviews/parallel-collections/overview.html>`__
+
+.. [#] Übersetzung aus dem Englischen von DeepL.
+
+
+
+Korrektheit bei Parallelisierung
+----------------------------------
+
+.. deck::
+
+    .. card::
+
+
+        .. question::
+
+            Welches Ergebnis erwarten wir:
+
+            .. code:: java
+                :class: copy-to-clipboard
+
+                Arrays.stream(new int[]{1,2,3}).reduce(0,(x,y) -> x + y*y);
+                                                         // x ist das aktuelle Zwischenergebnis und
+                                                         // y ist der nächste Wert aus der Liste
+
+        .. answer::
+            :class: incremental
+
+            14
+
+    .. card::
+
+        .. question::
+
+            Welches Ergebnis erwarten wir:
+
+            .. code:: java
+                :class: copy-to-clipboard
+
+                Arrays.stream(new int[]{1,2,3}).parallel().reduce(0,(x,y) -> x + y*y);
+
+        .. answer::
+            :class: incremental
+
+            7226?\ [#]_
+
+        .. [#] Das Ergebnis hängt von einigen Faktoren hab und kann variieren, ist aber wahrscheinlich nicht 14.
+
+    .. card::
+
+        .. rubric:: Ausgangscode
+
+        .. code:: java
+            :class: copy-to-clipboard
+            :number-lines:
+
+            IntBinaryOperator f = (x,y) -> x + y*y;
+            Arrays.stream(new int[]{1,2,3}).parallel().reduce(0,f);
+
+        .. deck::
+
+            .. card::
+
+                .. rubric:: Erklärung
+
+                .. class:: incremental-list
+
+                1. Die Parallelisierung\ [#]_ hat (hier) dazu geführt, dass für jeden  Wert der Liste zuerst eine Reduktion mit dem Basiswert :java:`0` durchführt wurde; d. h. es wurde erst: :java:`f(0,1)=1`, :java:`f(0,2)=4` und :java:`f(0,3)=9` berechnet.
+                2. Danach wurden die Zwischenergebnisse verrechnet. D. h. es wurde (hier) :java:`f(f(0,2),f(0,3))=f(4,9)=85` berechnet und dann das Zwischenergebnis mit dem Zwischenergebnis von :java:`f(0,1)` verrechnet: :java:`f(f(0,1),f(f(0,2),f(0,3)))=f(1,85)=7226`
+
+                .. [#] Im ersten Schritt wurde der Stream aufgeteilt, um die Berechnungen für jeden Teilstream parallel ausführen zu können.
+
+            .. card:: overlay center-content backdrop-blur
+
+                .. warning::
+
+                    Die übergebene reduktionsfunktion ``f`` verletzt die von der Stream API gestellten Bedingungen (Assoziativität).
+
+            .. card::
+
+                **1. Lösung** *mit Mutable Reduction* (:java:`collect(...)`)
+
+                .. code:: java
+                    :class: copy-to-clipboard
+
+                    Arrays.stream(new int[]{1,2,3})
+                            .parallel()
+                            .collect(
+                                    () -> new AtomicInteger(),
+                                    (a,y) -> a.addAndGet(y*y),
+                                    (a,v) -> a.addAndGet(v.get()));
+
+            .. card::
+
+                **2. Lösung** effizienter mit :java:`map(...)` und Reduktion über :java:`sum()`
+
+                .. code:: java
+                    :class: copy-to-clipboard
+
+                    Arrays.stream(new int[]{1,2,3})
+                            .parallel()
+                            .map(x -> x * x)
+                            .sum();
+
+
+
+.. class:: exercises
+
+Übung - Streams - Parallelisierung
+-----------------------------------
+
+.. exercise:: Java Streams
+
+    .. remark::
+
+        Verwenden Sie ausschließlich Streams und Lambda-Ausdrücke.
+
+    Schreiben Sie eine Methode, die die Zahlen von :java:`1` bis :java:`Integer.MAX_VALUE` addiert. Nutzen Sie :java:`IntStream.range()`, um die Zahlen zu iterieren. Messen Sie die Ausführungsdauer für die *sequentielle* und *parallele* Ausführung (siehe Anhang für eine entsprechende Methode zur Zeitmessung.)
 
     .. supplemental::
 
@@ -1969,42 +2401,9 @@ Streams - fortgeschrittene Konzepte
             time(() -> System.out.println(sumOfSquares(new int[]{1,2,3,4,5,6,7,8,9,0})));
 
     .. solution::
-        :pwd: QuadrierteStreams
+        :pwd: in+Parallel
 
-        1. Lösung
-
-        .. code:: java
-            :number-lines:
-            :class: copy-to-clipboard
-
-            var s = Arrays.stream(new int[]{1,2,3})
-            s.map(x -> x * x).reduce(0, (x,y) -> x + y)
-            // s.map(x -> x * x).sum()
-
-        2. Lösung
-
-        .. code:: java
-            :number-lines:
-            :class: copy-to-clipboard
-
-            var s = Arrays.stream(new int[]{1,2,3,4})
-            s
-                .map(x -> x * x)
-                .filter(x -> x % 2 == 0 )
-                .reduce(0, (x,y) -> x + y)
-
-        3. Lösung
-
-        .. code:: java
-            :number-lines:
-            :class: copy-to-clipboard
-
-            //var s = Stream.of("Hello", "World")
-            var s = List.of("Hello", "World").stream()
-            //Stream<Integer> sc =  s.flatMap((String x) -> x.chars().boxed())
-            var l = s.flatMap((String x) -> x.chars().boxed()).collect(Collectors.toList())
-
-        4. Lösung
+        **Lösung**
 
         .. code:: java
             :number-lines:
@@ -2016,194 +2415,31 @@ Streams - fortgeschrittene Konzepte
             // parallel
             time (() -> IntStream.range(1,Integer.MAX_VALUE).parallel().map(x -> x -1).reduce(0, (x,y) -> x + y));
 
-            Depending on the number of cores in your machine, the parallel version should be faster than the sequential version.
-
-
-
-.. class:: new-subsection transition-move-to-top
-
-Bewertung der Fähigkeiten der Standardoperationen von Java Streams
---------------------------------------------------------------------
-
-
-
-Herausforderung *Low-representational Gap* gelöst?
----------------------------------------------------
-
-.. rubric:: Lösung mit standard *Stream* Primitiven (≤ Java 24)
-
-.. supplemental::
-    :embed-in-document-flow:
-
-    *Benötigte Imports*
-
-    .. code:: java
-        :number-lines:
-
-        import static java.util.Comparator.comparingDouble;
-        import static java.util.function.Predicate.not;
-        import static java.util.stream.Collectors.groupingBy;
-        import static java.util.stream.Collectors.minBy;
-
-*Geschäftslogik*
-
-.. code:: java
-    :number-lines:
-
-    List<Student> empfehlungenS = alleStudierenden.stream()
-        .filter(not(Student::hatStipendium))
-        .collect(groupingBy(Student::studiengang,
-                            minBy(comparingDouble(Student::schnitt))))
-        .values().stream().flatMap(Optional::stream)
-        .sorted(comparingDouble(Student::schnitt))
-        .toList();
-
-.. assessment::
-    :class: incremental
-
-    Wir sind näher an der Geschäftslogik, aber technische Artefakte scheinen noch durch!
-
-    .. deck:: incremental
-
-        .. card::
-
-            - Um die gewünschte Gruppierung zu erhalten, werden die besten Studierenden in einer Zwischendatenstruktur (*Map*) aufgesammelt (:java:`collect(...)`). Diese muss - um eine Stream-orientierte Weiterverarbeitung zu ermöglichen - wieder in einen Stream verwandelt werden, der über den *Values* der *Map* operiert (:java:`values().stream()`).
-
-        .. card::
-
-            - Da wir in eine *Map* aufgesammelt hatten, haben wir einen *Stream of Optionals*;  :java:`minBy(...)` liefert ein :java:`Optional`. Somit müssen wir die :java:`Optional`\ s im :java:`Stream<Optional<Student>>` über :java:`flatMap(Optional::stream)` entpacken.
-
-
-
-
-
-.. class:: new-subsection transition-fade
-
-Benutzerdefinierte Zwischenoperationent aka *Stream Gatherers*
-------------------------------------------------------------------------
-
-
-.. supplemental::
-
-    Im Folgenden verwenden wir die Begriffe *Custom Intermediate Operations* und *Stream Gatherers* faktisch synonym.
-
-
-TODODODODODO
-
-
-
-.. class:: new-subsection transition-move-to-top
-
-Bewertung der Fähigkeiten von Java Streams
---------------------------------------------------------------------
-
-
-
-Herausforderungen gelöst?
--------------------------
-
-.. rubric:: *Custom Intermediate Operation/Custom Gatherer*
-
-.. code:: java
-    :number-lines:
-    :class: copy-to-clipboard
-
-    static <T, K> Gatherer<T, ?, T> reducePerGroup(
-                Function<T, K> grouping, BinaryOperator<T> reducer) {
-        return Gatherer.ofSequential(
-            HashMap<K, T>::new,
-            (map, element, downstream) -> {
-                map.merge(grouping.apply(element), element, reducer);
-                return true;
-            },
-            (map, downstream) -> map.values().forEach(downstream::push)
-        ); }
-
-.. code:: java
-    :number-lines:
-    :line-number-digits: 2
-    :class: copy-to-clipboard incremental
-
-    List<Student> empfehlungenG = alleStudierenden.stream()
-        .filter(not(Student::hatStipendium))
-        .gather(reducePerGroup(
-                    Student::studiengang,
-                    BinaryOperator.minBy(comparingDouble(Student::schnitt))))
-        .sorted(comparingDouble(Student::schnitt))
-        .toList();
-
-.. supplemental::
-
-    .. rubric:: benötigte Imports
-
-    .. code:: java
-        :number-lines:
-
-        import static java.util.Comparator.comparingDouble;
-        import static java.util.function.Predicate.not;
-        import static java.util.stream.Collectors.groupingBy;
-        import static java.util.stream.Collectors.minBy;
+        In Abhängigkeit von Ihrer CPU (d. h. der Anzahl an echten Kernen) sollte eine Beschleunigung bei der Parallelisierung zu beobachten sein.
 
 
 
 .. class:: new-section transition-fade
 
-Parallelisierung
-----------------------
-
-
-Effizienz von Parallelisierung
--------------------------------
-
-.. epigraph::
-
-    Als allgemeine Faustregel gilt, dass Geschwindigkeitssteigerungen in der Regel dann spürbar sind, wenn die Sammlung groß ist, typischerweise mehrere tausend Elemente umfasst.\ [#]_
-
-    -- `Aleksandar Prokopec, Heather Miller - Parallel Collections <https://docs.scala-lang.org/overviews/parallel-collections/overview.html>`__
-
-.. [#] Übersetzung aus dem Englischen mit Hilfe von DeepL.
-
-
-
-.. class:: new-section transition-flip
-
 Java Streams - abschließende Betrachtung
 -----------------------------------------
 
-.. class:: section-subtitle
 
-    (Java) Streams unterstützen die effiziente, korrekte Verarbeitung von (Massen-)Daten durch die Anwendung von funktionalen und deklarativen Konzepten mit dem Ziel einer möglichst geringen Repräsentationslücke (:eng:`Low representational gap`).
+Bewertung
+----------
+
+- (Java) Streams unterstützen die Verarbeitung von (Massen-)Daten durch die Anwendung von funktionalen und deklarativen Konzepten.
+
+- Dies ermöglicht eine Umsetzung von fachlichen Konzepten in Java Code mit einer geringeren Repräsentationslücke (:eng:`Low representational gap`).
+
+- Eine effiziente - weitgehend - transparente Parallelisierung ist möglich.
 
 
 
 .. class:: new-section transition-flip
 
-Vergleich von Java's Stream-API mit Scala's Stream-API
-------------------------------------------------------
-
-
-
-Java Streams vs. Scala Collections — Konzeptioneller Vergleich
-----------------------------------------------------------------
-
-.. csv-table::
-    :header: "", "Java Streams", "Scala Collections"
-    :widths: 12, 20, 20
-    :class: incremental-table-rows dhbw
-
-    "**Pipeline-Modell**",       "Deklarativ, verkettet",                  "Deklarativ, verkettet"
-    "**Funktionen als Parameter**", "Lambdas, Method References",          "Funktionsliterale, Platzhalter ``_``"
-    "**Quelle unveränderlich**", "Ja",                                     "Ja"
-    "**Streams = Collections?**","Nein — separates Konzept, explizites ``.stream()`` / ``.toList()``", "Ja — Operationen direkt auf Collections"
-    "**Auswertung**",           "Lazy (erst bei Terminal Op)",             "Eager (sofort); ``LazyList`` als Opt-in"
-    "**Erweiterbarkeit**",      "Collectors seit Java 8, Gatherers seit Java 24", '*„Nicht nötig“* — umfangreiche Standardbibliothek'
-    "**Parallelisierung**",     "Tief integriert (``.parallelStream()``)", "Separate Bibliothek (``.par``) seit Scala 2.13"
-
-.. supplemental::
-
-    Scala verfolgt einen anderen Designansatz: Collections *sind* die Pipeline. Es gibt keine Trennung zwischen Datenstruktur und Transformations-API. Das macht den Einstieg einfacher und den Code kürzer, bedeutet aber auch, dass Laziness explizit gewählt werden muss.
-
-    Javas Trennung in Collection und Stream ist verboseer, ermöglicht dafür aber Lazy Evaluation als Standard und eine tief integrierte Parallelisierung.
+Vergleich von Java's Stream-API mit Stream APIs anderer Sprachen
+-----------------------------------------------------------------
 
 
 
@@ -2214,7 +2450,7 @@ Java Streams vs. Scala Collections — Codebeispiel
 
     .. cell:: width-50
 
-        .. rubric:: Java (mit Gatherer)
+        .. rubric:: |java-icon| Java (mit Gatherer)
 
         .. code:: java
             :number-lines:
@@ -2232,7 +2468,7 @@ Java Streams vs. Scala Collections — Codebeispiel
 
     .. cell:: width-50
 
-        .. rubric:: Scala
+        .. rubric:: |scala-icon| Scala
 
         .. code:: scala
             :number-lines:
@@ -2242,26 +2478,276 @@ Java Streams vs. Scala Collections — Codebeispiel
               .groupBy(_.studiengang)
               .values
               .map(_.minBy(_.schnitt))
+                // => Iterable[Student]
+
               .toList
               .sortBy(_.schnitt)
 
-.. assessment::
-    :class: incremental
+.. supplemental::
+    :embed-in-document-flow:
 
-    .. deck:: incremental
+    .. assessment::
+        :class: dd-margin-left-3em
 
-        .. card::
+        :Syntaktisches Rauschen: Java erfordert :java:`.stream()` / :java:`.toList()` als Rahmen, Typnamen in Method References (:java:`Student::schnitt`) und Wrapper wie ``comparingDouble``. Scala's ``_``-Platzhalter und die direkte Arbeit auf Collections eliminieren diesen Overhead.
 
-            **Syntaktisches Rauschen:** Java erfordert ``.stream()`` / ``.toList()`` als Rahmen, Typnamen in Method References (``Student::schnitt``) und Wrapper wie ``comparingDouble``. Scala's ``_``-Platzhalter und die direkte Arbeit auf Collections eliminieren diesen Overhead.
+        :Gruppierung: In Scala ist ``groupBy`` eine normale Collection-Methode — kein Pipeline-Bruch, kein Collector. Java brauchte für denselben Effekt zunächst den ``collect``/``Collector``-Umweg und seit Java 24 die ``Gatherer``-API.
 
-        .. card::
+        :Vergleich und Reduktion: :scala:`_.minBy(_.schnitt)` in Scala vs. :java:`BinaryOperator.minBy(comparingDouble(Student::schnitt))` in Java — die explizite Typmaschinerie des Java-Typsystems ist hier deutlich sichtbar.
 
-            **Gruppierung:** In Scala ist ``groupBy`` eine normale Collection-Methode — kein Pipeline-Bruch, kein Collector. Java brauchte für denselben Effekt zunächst den ``collect``/``Collector``-Umweg und seit Java 24 die ``Gatherer``-API.
+        :Lazy vs. Eager: Scalas Code wird sofort ausgewertet — :scala:`groupBy` erzeugt *sofort* eine :scala:`Map`. Javas Pipeline hingegen ist vollständig lazy; erst :java:`.toList()` löst die Berechnung aus. Für große Datenmengen kann das ein relevanter Unterschied sein.
 
-        .. card::
+.. supplemental::
 
-            **Vergleich und Reduktion:** ``_.minBy(_.schnitt)`` in Scala vs. ``BinaryOperator.minBy(comparingDouble(Student::schnitt))`` in Java — die explizite Typmaschinerie des Java-Typsystems ist hier deutlich sichtbar.
+    .. rubric:: Vollständiger Scala Code
 
-        .. card::
+    Der folgende Code kann direkt in der Scala REPL ausgeführt werden.
 
-            **Lazy vs. Eager:** Scalas Code wird sofort ausgewertet — ``groupBy`` erzeugt *sofort* eine ``Map``. Javas Pipeline hingegen ist vollständig lazy; erst ``.toList()`` löst die Berechnung aus. Für große Datenmengen kann das ein relevanter Unterschied sein.
+    .. include:: code/Students.scala
+        :code: scala
+        :number-lines:
+        :class: copy-to-clipboard
+
+
+
+Java Streams vs. Scala Collections — Konzeptioneller Vergleich
+----------------------------------------------------------------
+
+.. csv-table::
+    :header: "", "Java Streams", "Scala Collections"
+    :stub-columns: 1
+    :widths: 12, 20, 20
+    :class: dhbw incremental-table-rows sticky-header
+
+    "Pipeline-Modell", "deklarativ, verkettet", "deklarativ, verkettet"
+    "Funktionen als Parameter", "Lambdas, Method References", "Funktionsliterale, Platzhalter ``_``"
+    "Quelle unverändert", "Ja", "Ja"
+    "Streams = Collections?","Nein — separates Konzept, explizites :java:`.stream()`/:java:`.toList()`", "Ja — Operationen direkt auf Collections"
+    "Auswertung", "Lazy (erst bei Terminal Op)", "Eager (sofort); :scala:`LazyList` als Opt-in"
+    "Erweiterbarkeit", "via Collectors und Gatherers", "umfangreiche Standardbibliothek; ggf. *Extension Methods* (Scala 3)"
+    "Parallelisierung", "Tief integriert (:java:`.parallelStream()`)", "Separate Bibliothek (:scala:`.par`) seit Scala 2.13/3"
+
+.. supplemental::
+
+    Scala verfolgt einen anderen Designansatz: Collections *sind* die Pipeline. Es gibt keine Trennung zwischen Datenstruktur und Transformations-API. Das macht den Einstieg einfacher und den Code kürzer, bedeutet aber auch, dass Laziness explizit gewählt werden muss.
+
+    Javas Trennung in Collection und Stream führt zu syntaktisch komplexerem Code (:eng:`verbose`), ermöglicht dafür aber *Lazy Evaluation* als Standard und eine tief integrierte Parallelisierung.
+
+
+
+Java Streams vs. JavaScript Arrays — Codebeispiel
+----------------------------------------------------
+
+.. grid::
+
+    .. cell:: width-50
+
+        .. rubric:: |java-icon| Java (mit Gatherer)
+
+        .. code:: java
+            :number-lines:
+
+            alleStudierenden.stream()
+              .filter(not(Student::hatStipendium))
+              .gather(reducePerGroup(
+                  Student::studiengang,
+                  BinaryOperator.minBy(
+                    comparingDouble(
+                      Student::schnitt))))
+
+              .sorted(comparingDouble(
+                  Student::schnitt))
+              .toList();
+
+    .. cell:: width-50
+
+        .. rubric:: |javascript-icon| JavaScript
+
+        .. code:: javascript
+            :number-lines:
+
+            Object.values(
+                Object.groupBy(
+                  alleStudierenden.
+                    filter(s => !s.hatStipendium),
+                  s => s.studiengang) ).
+              map(gruppe =>
+                gruppe.reduce((a, b) =>
+                  a.schnitt < b.schnitt ? a : b)).
+              toSorted((a, b) =>
+                a.schnitt - b.schnitt);
+
+.. supplemental::
+    :embed-in-document-flow:
+
+    .. assessment::
+        :class: dd-margin-left-3em
+
+        :*Pipeline-Bruch* durch `Object.groupBy`:js:: Die Gruppierung ist in JavaScript eine statische Funktion, keine Methode auf Arrays. Der Datenfluss muss *um* das Array herumgeschrieben werden statt linear verkettet zu bleiben. In Java vor Gatherers bestand dasselbe Problem; seit Java 24 ist die Pipeline durchgängig.
+
+        :JavaScript hat kein ``minBy``: Die Vergleichslogik muss manuell im Reducer formuliert werden (:js:`a.schnitt < b.schnitt ? a : b`). Das ist weniger deklarativ als Javas :java:`BinaryOperator.minBy(comparingDouble(...))`.
+
+        :Arrow Functions vs. Method References: :js:`s => !s.hatStipendium` vs. :java:`not(Student::hatStipendium)` — JavaScript kürzer, aber ohne Typsicherheit.
+
+        :Eager Evaluation: Jede JavaScript-Operation erzeugt ein vollständiges Zwischenarray. :js:`filter` kopiert alle passenden Elemente in ein neues Array, bevor :js:`Object.groupBy` überhaupt beginnt. Javas Pipeline verarbeitet jedes Element einmal durch alle Stufen — ohne Zwischenspeicherung.
+
+.. supplemental::
+
+    .. rubric:: Vollständiger JavaScript Code
+
+    Der folgende Code kann direkt in einer aktuellen Version von Node.js ausgeführt werden.
+
+    .. include:: code/Students.js
+        :code: javascript
+        :number-lines:
+        :class: copy-to-clipboard
+
+
+
+Java Streams vs. JavaScript Arrays — Konzeptioneller Vergleich
+----------------------------------------------------------------
+
+.. story::
+
+    .. csv-table::
+        :header: "", "Java Streams", "JavaScript Arrays"
+        :stub-columns: 1
+        :widths: 12, 20, 20
+        :class: dhbw sticky-header incremental-table-rows
+
+        "Pipeline-Modell", "deklarativ, verkettet", "deklarativ, verkettet"
+        "Funktionen als Parameter", "Lambdas, Method References", "Arrow Functions"
+        "Quelle unverändert", "Ja", "Ja (Achtung: :js:`sort()` mutiert!)"
+        "Streams = Collections?", "Nein — separates Konzept", "Ja — Operationen direkt auf :js:`Array`"
+        "Auswertung", "Lazy (erst bei Terminal Op)", "Eager (Zwischenarrays bei jedem Schritt)"
+        "Erweiterbarkeit", "via Collectors und Gatherers", "*„Keine“*\ [#]_ — fester API-Satz"
+        "Parallelisierung", "integriert (:java:`.parallelStream()`)", "Nein -  Single-threaded"
+        "Unendliche Sequenzen", "Ja (z. B. :java:`Stream.iterate`)", "Nein - Generatoren nicht in Array-API integriert"
+        "Typsicherheit", "Compile-time", "Keine — Fehler erst zur Laufzeit"
+
+.. supplemental::
+
+    JavaScripts Array-Methoden wie :js:`filter`, :js:`map` und :js:`reduce` sind dem Stream-Modell oberflächlich sehr ähnlich. Der entscheidende Unterschied liegt in der Auswertungsstrategie: jede Array-Operation erzeugt sofort ein vollständiges Zwischenarray. Bei :js:`array.filter(...).map(...)` werden während der Auswertung *zwei* neue Arrays erzeugt. Javas Lazy-Pipeline *fusioniert* die Schritte und erzeugt keine Zwischenergebnisse.
+
+    Ein weiterer fundamentaler Unterschied: :js:`Array.prototype.sort()` mutiert das Array in-place — ein Bruch mit dem ansonsten funktionalen Charakter der Array-API. Erst seit ES2023 gibt es mit :js:`toSorted()` eine nicht-mutierende Alternative.
+
+.. [#] Eine Erweiterung über :js:`Array.prototyp` ist möglich aber nicht empfehlenswert.
+
+
+
+Java Streams vs. Rust Iteratoren — Codebeispiel
+--------------------------------------------------
+
+.. grid::
+
+    .. cell:: width-50
+
+        .. rubric:: |java-icon| Java (mit Gatherer)
+
+        .. code:: java
+            :number-lines:
+
+            .. = alleStudierenden.stream()
+              .filter(not(Student::hatStipendium))
+              .gather(reducePerGroup(
+                  Student::studiengang,
+                  BinaryOperator.minBy(
+                    comparingDouble(
+                      Student::schnitt))))
+              .sorted(comparingDouble(
+                  Student::schnitt))
+              .toList();
+
+    .. cell:: width-50
+
+        .. rubric:: |rust-icon| Rust (mit itertools)
+
+        .. code:: rust
+            :number-lines:
+
+            .. = alle_studierenden.iter()
+              .filter(|s| !s.hat_stipendium)
+              .into_group_map_by(
+                  |s| &s.studiengang)
+              .into_values()
+              .map(|g| g.into_iter()
+                .min_by(|a, b|
+                  a.schnitt.total_cmp(&b.schnitt))
+                .unwrap())
+              .sorted_by(|a, b|
+                a.schnitt.total_cmp(&b.schnitt))
+              .collect::<Vec<_>>();
+
+        .. supplemental::
+
+            In Rust ist :rust:`&` der Referenzoperator. D. h. in Zeile 2 wird eine Referenz auf den String für den Studiengang übergeben. Die Zielmethode kann diese Referenz lesen, aber nicht verändern.
+
+            .. rubric:: Vollständiges Beispiel in Rust
+
+            .. include:: code/Students.rs
+                :code: rust
+                :class: copy-to-clipboard
+
+            Zum Ausführen des Codes kann `Play Rust-Lang.org <https://play.rust-lang.org/?version=stable&mode=debug&edition=2024&gist=9c8cc9e32e4c4473dd84728ee3e86ff3>`__ verwendet werden.
+
+.. supplemental::
+    :embed-in-document-flow:
+
+    .. assessment::
+        :class: dd-margin-left-3em
+
+        :Zero-Costs: Rusts Pipeline kompiliert zu praktisch dem selben Maschinencode wie eine handgeschriebene :rust:`for`-Schleife — keine Heap-Allokationen, keine virtuellen Dispatches. Javas Pipeline erzeugt Overhead, der vom JIT-Compiler erst zur Laufzeit *teilweise* optimiert wird.
+
+        :Expliziter Float-Vergleich: Rust erzwingt :rust:`total_cmp` statt eines einfachen :rust:`<`-Vergleichs, weil Gleitkommazahlen :rust:`NaN` enthalten können. Java's :java:`comparingDouble(...)` behandelt :java:`NaN` stillschweigend; ein potenziell versteckter Bug.
+
+        :Ownership vs. Runtime-Schutz: :rust:`into_iter()` in Rust *konsumiert* die Gruppe — ein erneuter Zugriff ist ein Compile-Fehler. Javas Stream wirft erst zur Laufzeit eine :java:`IllegalStateException` bei Mehrfachnutzung.
+
+        :Erweiterbarkeit: Rust benötigt kein Gatherer-Konzept. Einen neuen Iterator zu bauen erfordert nur die Implementierung von :rust:`next()` — alle ~75 Adapter-Methoden (:rust:`filter`, :rust:`map`, :rust:`take_while`, ...) stehen dann automatisch zur Verfügung. Das ``itertools``-Crate erweitert dies nahtlos über Rusts Trait-System.
+
+        :Parallelisierung: In Java genügt :java:`.parallelStream()`; in Rust ersetzt man :rust:`iter()` durch :rust:`par_iter()` (via ``rayon``-Crate). Der entscheidende Unterschied: Rusts Ownership-System garantiert *zur Compile-Zeit*, dass keine Data Races entstehen. Javas Fork/Join-Pool kann das nicht. Aber der beobachtete Fehler im Java Beispiel - wenn eine Operation den Kontrakt nicht einhält - könnte so auch in Rust auftreten, da dies auf einen logischen Fehler zurückzuführen war und nicht auf eine Race Condition.
+
+
+
+Java Streams vs. Rust Iteratoren — Konzeptioneller Vergleich
+----------------------------------------------------------------
+
+.. story::
+
+    .. csv-table::
+        :header: "", "Java Streams", "Rust Iteratoren"
+        :stub-columns: 1
+        :widths: 12, 20, 20
+        :class: dhbw sticky-header incremental-table-rows
+
+        "Pipeline-Modell", "deklarativ, verkettet", "deklarativ, verkettet"
+        "Funktionen als Parameter", "Lambdas, Method References", "Closures (``|x| ...``)"
+        "Quelle unverändert", "Ja", "Ja"
+        "Verhalten bei Mehrfachnutzung eines Streams", ":java:`IllegalStateException` zur Laufzeit", "Compile-Fehler bei Mehrfachnutzung — Ownership"
+        "Streams = Collections?", "Nein — separates Konzept", "Nein — ``iter()`` erzeugt Iterator über Collection"
+        "Auswertung", "Lazy (erst bei Terminal Op)", "Lazy (erst bei ``collect``, ``sum``, ``for_each``, ...)"
+        "Performance-Overhead", "JVM + GC + JIT (zur Laufzeit)", "Null — Zero-Cost Abstractions (zur Compile-Zeit)"
+        "Erweiterbarkeit", "Collectors und Gatherers", "Nur ``next()`` implementieren — ~75 Methoden gratis"
+        "Parallelisierung", "Tief integriert (``.parallelStream()``)", "Über ``rayon``-Crate (``.par_iter()``)"
+        "Fehlerbehandlung", "``Optional`` (umgehbar via ``get()``)", "``Option`` / ``Result`` (vom Compiler erzwungen)"
+        "Typsicherheit", "Compile-time (Generics mit Type Erasure)", "Compile-time (Generics, Monomorphisierung)"
+
+.. supplemental::
+
+    Rusts Iterator-Modell ist Javas Streams oberflächlich sehr ähnlich: beide sind lazy, beide unterscheiden zwischen Intermediate- und Terminal-Operationen, beide unterstützen ``filter``, ``map``, ``flat_map``, ``collect`` etc. Der fundamentale Unterschied liegt tiefer:
+
+    :Zero-Cost Abstractions: Rusts Compiler (via LLVM) optimiert Iterator-Pipelines zu exakt demselben Maschinencode wie handgeschriebene ``for``-Schleifen — keine Zwischenstrukturen, keine Heap-Allokationen, keine virtuellen Methodenaufrufe. In Java erzeugt die Stream-Pipeline dagegen Overhead durch Objekt-Allokationen, virtuelle Dispatches und GC-Zyklen, der erst durch den JIT-Compiler *teilweise* kompensiert wird.
+
+    :Ownership: Javas Schutz gegen Mehrfachnutzung eines Streams greift erst zur Laufzeit (``IllegalStateException``). Rusts Ownership-System verhindert denselben Fehler bereits zur Compile-Zeit — der Code kompiliert schlicht nicht.
+
+    :Parallelisierung: Java bietet mit ``.parallelStream()`` / ``.parallel()`` eine in die Standardbibliothek integrierte Lösung. Rust lagert dies in das ``rayon``-Crate aus — dort genügt es, ``iter()`` durch ``par_iter()`` zu ersetzen. Beide Ansätze sind ergonomisch ähnlich, aber Rusts Ownership-System garantiert zur Compile-Zeit, dass keine Data Races entstehen können. Javas Fork/Join-Pool bietet diese Garantie nicht.
+
+
+
+.. class:: new-section transition-flip
+
+Fragen?
+------------------
+
+.. class:: section-subtitle
+
+    Ein erster Einblick in die Java Stream API und Stream(-like) APIs anderer Sprachen!
