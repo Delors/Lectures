@@ -18,7 +18,7 @@ A Brief Introduction to Middleware
 
   :Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
   :Kontakt: michael.eichberg@dhbw.de, Raum 149B
-  :Version: 1.0.1
+  :Version: 1.0.1.1
 
 .. supplemental::
 
@@ -606,7 +606,7 @@ ZeroMQ - Messaging Patterns
 
 .. supplemental::
 
-    :*Client-Server*: Enables the "usual" communication between a client and a server. However, buffering may take place if the server is not available.
+    :*Client-Server*: Enables the "usual" communication between a client and a server. However, buffering may take place if the server is not available. Use ``DEALER`` and ``ROUTER`` sockets to support asynchronous communication.
 
     :*Publish-Subscribe*: Allows clients to subscribe to a specific topic and then receive all messages published on that topic. A message with a specific topic is sent to all registered clients.
 
