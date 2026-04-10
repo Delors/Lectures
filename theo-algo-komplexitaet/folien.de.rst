@@ -16,7 +16,7 @@ Komplexität und Algorithmen
 
 :Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
 :Kontakt: michael.eichberg@dhbw.de, Raum 149B
-:Version: 2.0.4
+:Version: 2.0.4.1
 
 .. container:: peripheral
 
@@ -134,7 +134,7 @@ Entwurf von Algorithmen: Dynamische Programmierung
     .. solution::
         :pwd: das ist einfach gewesen
 
-        Je nach Rechner und Laufzeitumgebung dürfte zwischen fib(35) und fib(45) die Grenze liegen, wenn man innerhalb von 10 Sekunden bleiben möchte.
+        Je nach Rechner und Laufzeitumgebung dürfte zwischen fib(40) und fib(50) die Grenze liegen, wenn man innerhalb von 10 Sekunden bleiben möchte.
 
         .. rubric:: |python-icon| Lösung in Python:
 
@@ -150,9 +150,7 @@ Entwurf von Algorithmen: Dynamische Programmierung
                  else :
                      return fib(n-1) + fib(n-2)
 
-        .. rubric:: |java-icon| Lösung in Java >23
-
-        (Ggf. mit --enable-preview zu starten!)
+        .. rubric:: |java-icon| Lösung (Java >25)
 
         .. code:: Java
             :number-lines:
@@ -833,11 +831,15 @@ Alternative Schreibweisen
 
     D. h. ab einem Wert :math:`n_0` liegt die Funktion :math:`f` unter dem :math:`c_0`-fachen der Funktion :math:`g`.
 
-    Beispiel: :math:`f(n) = 4n + 7 ∈ O(n)`
+    .. example::
 
-    :math:`4n + 7 ≤ c_0· n ⇔ n· (4− c_0) ≤ −7`
+        Wir möchten zeigen, dass :math:`f(n) = 4n + 7` element von :math:`O(n)` ist; d. h. :math:`f(n) \in O(n)`.
 
-    Wähle (exemplarisch): :math:`c_0 = 5` und :math:`n_0 = 7` sowie :math:`g(n) = n`.
+        Wir wählen (exemplarisch): :math:`g(n) = n`. Dann müssen wir zeigen, dass:
+
+        :math:`4n + 7 ≤ c_0· n ⇔ n· (4− c_0) ≤ −7`
+
+        Für (exemplarisch): :math:`c_0 = 5` und :math:`n_0 = 7` ist die Ungleichung immer erfüllt.
 
 
 
