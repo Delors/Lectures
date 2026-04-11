@@ -631,8 +631,8 @@ Streams - Grundlegendes Konzept
 .. raw:: html
     :class: center-content height-100
 
-    <div style="width:71ch; height: 28.4ch">
-    <svg viewBox="0 7 72.5 29"
+    <div style="width:71ch; height: 33.35ch">
+    <svg viewBox="0 5 66 31"
         xmlns="http://www.w3.org/2000/svg">
 
     <!-- ═══════════════════════════════════════════════════
@@ -646,7 +646,7 @@ Streams - Grundlegendes Konzept
         <text x="7.5" y="13.4" text-anchor="middle"
             font-size="1.6" font-weight="bold" fill="currentColor">Quelle</text>
         <text x="7.5" y="14.75" text-anchor="middle"
-            font-size="0.95"  fill="light-dark(#fc6a03, #dfa172)">(read-only)</text>
+            font-size="0.95"  fill="light-dark(#fc6a03, #dfa172)">(read-only & read-once)</text>
         <text x="7.5" y="16.6" text-anchor="middle"
             font-size="1.05" fill="light-dark(#6b7280, #9ca3af)">
             <tspan x="7.5" dy="0">Collection, Array,</tspan>
@@ -667,57 +667,57 @@ Streams - Grundlegendes Konzept
         ═══════════════════════════════════════════════════ -->
     <g class="incremental">
         <!-- Hintergrund-Klammer für die Kette -->
-        <rect x="19.5" y="8" width="28.5" height="14" rx="0.6"
+        <rect x="19.5" y="6" width="16" height="17" rx="0.6"
             fill="light-dark(#eff6ff, #1e3a5f)"
             stroke="light-dark(#2563eb, #60a5fa)" stroke-width="0.12"
             stroke-dasharray="0.5,0.3" opacity="0.5"/>
-        <text x="34" y="9.6" text-anchor="middle"
+        <text x="27.5" y="7.6" text-anchor="middle"
             font-size="1" fill="light-dark(#2563eb, #60a5fa)"
             opacity="0.7">0..n Intermediate Operations (lazy)</text>
 
         <!-- Op 1: filter -->
-        <g transform="translate(2.5,0)">
-        <rect x="21" y="12" width="8.5" height="6" rx="0.6"
-            fill="light-dark(#dbeafe, #1e40af)"
-            stroke="light-dark(#2563eb, #60a5fa)" stroke-width="0.18"/>
-        <text x="25.25" y="14.8" text-anchor="middle"
-            font-size="1.2" font-weight="bold" font-style="italic"
-            fill="light-dark(#1e40af, #93c5fd)">Built-in Op</text>
-        <text x="25.25" y="16.6" text-anchor="middle"
-            font-size="0.85"
-             fill="light-dark(#3b82f6, #93c5fd)">map, sorted, ...</text>
+        <g transform="translate(2.5,-3.75)">
+            <rect x="21" y="12" width="8.5" height="6" rx="0.6"
+                fill="light-dark(#dbeafe, #1e40af)"
+                stroke="light-dark(#2563eb, #60a5fa)" stroke-width="0.18"/>
+            <text x="25.25" y="14.8" text-anchor="middle"
+                font-size="1.2" font-weight="bold" font-style="italic"
+                fill="light-dark(#1e40af, #93c5fd)">Built-in Op</text>
+            <text x="25.25" y="16.6" text-anchor="middle"
+                font-size="0.85"
+                fill="light-dark(#3b82f6, #93c5fd)">map, sorted, ...</text>
         </g>
 
         <!-- Verbindungspfeil -->
-        <line x1="32" y1="15" x2="35.5" y2="15"
+        <line x1="23.5" y1="15" x2="32" y2="15"
             stroke="light-dark(#2563eb, #60a5fa)" stroke-width="0.18"
             marker-end="url(#pipe-arrow)"/>
 
         <!-- Op 2: gather (custom!) -->
-        <g transform="translate(2.5,0)">
-        <rect x="33" y="12" width="8.5" height="6" rx="0.6"
-            fill="light-dark(#dcfce7, #14532d)"
-            stroke="light-dark(#15803d, #4ade80)" stroke-width="0.18"/>
-        <text x="37.25" y="14.8" text-anchor="middle"
-            font-size="1.2" font-weight="bold" font-style="italic"
-            fill="light-dark(#15803d, #4ade80)">Custom Op</text>
-        <text x="37.25" y="11.5" text-anchor="middle"
-            font-size="1"
-            fill="light-dark(#15803d, #4ade80)">≥Java 24</text>
-        <text x="37.25" y="16.6" text-anchor="middle"
-            font-size="0.85"
-            fill="light-dark(#16a34a, #86efac)">gather</text>
+        <g transform="translate(2.5,3.75)">
+            <rect x="21" y="12" width="8.5" height="6" rx="0.6"
+                fill="light-dark(#dcfce7, #14532d)"
+                stroke="light-dark(#15803d, #4ade80)" stroke-width="0.18"/>
+            <text x="25.25" y="14.8" text-anchor="middle"
+                font-size="1.2" font-weight="bold" font-style="italic"
+                fill="light-dark(#15803d, #4ade80)">Custom Op</text>
+            <text x="25.25" y="13.25" text-anchor="middle"
+                font-size="0.9"
+                fill="light-dark(#15803d, #4ade80)">≥Java 24</text>
+            <text x="25.25" y="16.6" text-anchor="middle"
+                font-size="0.85"
+                fill="light-dark(#16a34a, #86efac)">gather</text>
         </g>
 
         <!-- „..." -->
         <text x="21.5" y="16" text-anchor="middle"
             font-size="2.5" fill="light-dark(#93c5fd, #60a5fa)"
             font-weight="bold">···</text>
-        <text x="46" y="16" text-anchor="middle"
+        <text x="33.5" y="16" text-anchor="middle"
             font-size="2.5" fill="light-dark(#93c5fd, #60a5fa)"
             font-weight="bold">···</text>
 
-        <path d="M 46 15.5 L 46 20 L 21.5 20 L 21.5 15.5"
+        <path d="M 33.5 15.5 L 33.5 22.5 L 21.5 22.5 L 21.5 15.5"
             fill="none"
             stroke="light-dark(#2563eb, #60a5fa)" stroke-width="0.2"
             stroke-dasharray="0.4,0.3"
@@ -727,71 +727,75 @@ Streams - Grundlegendes Konzept
     <!-- ═══════════════════════════════════════════════════
         Schritt 3: Terminal Operation
         ═══════════════════════════════════════════════════ -->
-    <g class="incremental" transform="translate(-5.5,0)">
+    <g class="incremental">
         <!-- Pfeil zur Terminal Op -->
-        <line x1="53.5" y1="15" x2="56.5" y2="15"
+        <line x1="35.5" y1="15" x2="41" y2="15"
             stroke="currentColor" stroke-width="0.2"
             marker-end="url(#pipe-arrow)"/>
 
         <!-- Terminal-Box -->
-        <rect x="56.5" y="11" width="13" height="8" rx="0.8"
+        <rect x="41" y="11" width="13" height="8" rx="0.8"
             fill="light-dark(#fef2f2, #4c1d1d)"
             stroke="light-dark(#b91c1c, #f87171)" stroke-width="0.22"/>
-        <text x="63" y="14.2" text-anchor="middle"
+        <text x="47.5" y="14.2" text-anchor="middle"
             font-size="1.4" font-weight="bold" font-style="italic"
             fill="light-dark(#b91c1c, #f87171)">Terminal Op</text>
-        <text x="63" y="16.6" text-anchor="middle"
+        <text x="47.5" y="16.6" text-anchor="middle"
             font-size="1.0" fill="light-dark(#ef4444, #fca5a5)">
-        <tspan x="63" dy="0">collect, toList,</tspan>
-        <tspan x="63" dy="1.4">forEach, reduce, ...</tspan>
+        <tspan x="47.5" dy="0">collect, toList,</tspan>
+        <tspan x="47.5" dy="1.4">forEach, reduce, ...</tspan>
         </text>
     </g>
 
     <!-- ═══════════════════════════════════════════════════
-        Schritt 4: Ergebnis + Erklärung
+        Schritt 4: Ergebnis
         ═══════════════════════════════════════════════════ -->
-    <g class="incremental"  transform="translate(-5.5,0)">
+    <g class="incremental">
         <!-- Pfeil zum Ergebnis -->
-        <line x1="69.5" y1="15" x2="72" y2="15"
+        <line x1="54" y1="15" x2="59.5" y2="15"
             stroke="currentColor" stroke-width="0.2"
             marker-end="url(#pipe-arrow)"/>
-
         <!-- Ergebnis -->
-        <rect x="72" y="12" width="5.5" height="6" rx="0.6"
+        <rect x="59.5" y="12" width="5.5" height="6" rx="0.6"
             fill="light-dark(#f5f3ff, #3b0764)"
             stroke="light-dark(#7c3aed, #a78bfa)" stroke-width="0.18"/>
-        <text x="74.75" y="14.35" text-anchor="middle"
+        <text x="62.25" y="14.35" text-anchor="middle"
             font-size="1.2" font-weight="bold"
             fill="light-dark(#7c3aed, #a78bfa)">Ergebnis</text>
-        <text x="74.75" y="16.35" text-anchor="middle"
+        <text x="62.25" y="16.35" text-anchor="middle"
             font-size="1.2" font-weight="bold"
             fill="light-dark(#7c3aed, #a78bfa)">/ Effekt</text>
+    </g>
 
+    <!-- ═══════════════════════════════════════════════════
+        Schritt 5: Erklärung
+        ═══════════════════════════════════════════════════ -->
+    <g class="incremental">
         <!-- Annotationen unterhalb -->
-        <g font-size="1.5" transform="translate(0,-1.5)">
-        <text x="13.5" y="26" text-anchor="middle"
+        <g font-size="1.5">
+        <text y="27.5" text-anchor="middle"
             fill="light-dark(#6b7280, #9ca3af)">
-            <tspan x="13.5" font-weight="bold" fill="currentColor">Erzeugen</tspan>
-            <tspan x="13.5" dy="2">Erstellt einen Stream</tspan>
-            <tspan x="13.5" dy="1.75">aus einer Datenquelle.</tspan>
-            <tspan x="13.5" dy="1.75">Keine Daten fließen</tspan>
-            <tspan x="13.5" dy="1.75">bis zur Terminal Op.</tspan>
+            <tspan x="7.5" font-weight="bold" fill="currentColor">Erzeugen</tspan>
+            <tspan x="7.5" dy="2">Erstellt einen Stream</tspan>
+            <tspan x="7.5" dy="1.75">aus einer Datenquelle.</tspan>
+            <tspan x="7.5" dy="1.75">Keine Daten fließen</tspan>
+            <tspan x="7.5" dy="1.75">bis zur Terminal Op.</tspan>
         </text>
-        <text x="40" y="26" text-anchor="middle"
+        <text y="27.5" text-anchor="middle"
             fill="light-dark(#6b7280, #9ca3af)">
-            <tspan x="40" font-weight="bold" fill="currentColor">Transformieren</tspan>
-            <tspan x="40" dy="2">Verkettete Operationen;</tspan>
-            <tspan x="40" dy="1.75">jede liefert neuen Stream.</tspan>
-            <tspan x="40" dy="1.75">Lazy: erst bei Terminal</tspan>
-            <tspan x="40" dy="1.75">Op ausgewertet.</tspan>
+            <tspan x="27.5" font-weight="bold" fill="currentColor">Transformieren</tspan>
+            <tspan x="27.5" dy="2">Verkettete Operationen;</tspan>
+            <tspan x="27.5" dy="1.75">jede liefert neuen Stream.</tspan>
+            <tspan x="27.5" dy="1.75">Lazy: erst bei Terminal</tspan>
+            <tspan x="27.5" dy="1.75">Op ausgewertet.</tspan>
         </text>
-        <text x="63" y="26" text-anchor="middle"
+        <text y="27.5" text-anchor="middle"
             fill="light-dark(#6b7280, #9ca3af)">
-            <tspan x="63" font-weight="bold" fill="currentColor">Konsumieren</tspan>
-            <tspan x="63" dy="2">Löst die Auswertung</tspan>
-            <tspan x="63" dy="1.75">der gesamten Pipeline</tspan>
-            <tspan x="63" dy="1.75">aus und produziert</tspan>
-            <tspan x="63" dy="1.75">das Ergebnis/den Effekt.</tspan>
+            <tspan x="47.5" font-weight="bold" fill="currentColor">Konsumieren</tspan>
+            <tspan x="47.5" dy="2">Löst die Auswertung</tspan>
+            <tspan x="47.5" dy="1.75">der gesamten Pipeline</tspan>
+            <tspan x="47.5" dy="1.75">aus und produziert</tspan>
+            <tspan x="47.5" dy="1.75">das Ergebnis/den Effekt.</tspan>
         </text>
         </g>
     </g>
@@ -802,9 +806,7 @@ Streams - Grundlegendes Konzept
 .. supplemental::
     :embed-in-document-flow:
 
-    Es ist möglich als terminale Operation einen :java:`Iterator` bzw. :java:`Spliterator` zu erzeugen. In diesen beiden Fällen erfolgt die Evaluation der Pipeline nicht unmittelbar durch die terminale Operation (d. h. nicht *eager* sondern *lazy*). Das hat zur Folge, dass die Elemente des Streams erst dann verarbeitet werden, wenn sie tatsächlich über den :java:`Iterator`\ /\ :java:`Spliterator` angefordert werden.
-
-    Die Verwendung dieser beiden Methoden (:java:`<BaseStream>.iterator()`/:java:`<BaseStream>.spliterator()`) führt zu einem Bruch des deklarativen Pipeline-Modells, der in den allermeisten Fällen vermieden werden kann. Häufig nur noch im Zusammenhang mit Legacy-APIs relevant, die mit :java:`Iterator`\ /\ :java:`Spliterator` arbeiten.
+    Es ist möglich als terminale Operation einen :java:`Iterator` bzw. :java:`Spliterator` zu erzeugen. In diesen beiden Fällen erfolgt die Evaluation der Pipeline nicht unmittelbar durch die terminale Operation (d. h. nicht *eager* sondern *lazy*). Das hat zur Folge, dass die Elemente des Streams erst dann verarbeitet werden, wenn sie tatsächlich über den :java:`Iterator`\ /\ :java:`Spliterator` angefordert werden. Die Verwendung dieser beiden Methoden (:java:`<BaseStream>.iterator()`/:java:`<BaseStream>.spliterator()`) führt zu einem Bruch des deklarativen Pipeline-Modells, der in den allermeisten Fällen vermieden werden kann. Häufig nur noch im Zusammenhang mit Legacy-APIs relevant, die mit :java:`Iterator`\ /\ :java:`Spliterator` arbeiten.
 
 
 
@@ -845,10 +847,10 @@ Java Stream API - Evolution
             <text x="31" y="9.2" text-anchor="end"
                 font-size="1.1" fill="currentColor">
                 <tspan x="31" dy="0" font-weight="600">Initiale Stream API (java.util.stream)</tspan>
-                <tspan x="31" dy="1.6" font-weight="500" font-style="italic">Intermediate Ops.: </tspan><tspan>filter, map, flatMap, sorted, ...</tspan>
-                <tspan x="31" dy="1.6"  font-weight="500" font-style="italic">Terminal Ops.: </tspan><tspan>collect, reduce, forEach, count, ...</tspan>
-                <tspan x="31" dy="1.6">Collector-Interface — erweiterbarer Endpunkt</tspan>
-                <tspan x="31" dy="1.6">Parallele Streams via .parallelStream()</tspan>
+                <tspan x="31" dy="1.6" font-weight="500" font-style="italic">Intermediate Ops: </tspan><tspan>filter, map, flatMap, sorted, ...</tspan>
+                <tspan x="31" dy="1.6"  font-weight="500" font-style="italic">Terminal Ops: </tspan><tspan>reduce, forEach, count, ..., </tspan>
+                <tspan x="31" dy="1.6" fill="light-dark(#791010, #E8A1A1)">collect(Collector)</tspan>
+                <tspan x="31" dy="1.6" font-weight="500" font-style="italic">Parallele Streams: </tspan><tspan>parallelStream()</tspan>
             </text>
         </g>
 
@@ -871,10 +873,10 @@ Java Stream API - Evolution
                 fill="light-dark(#888, #999)">Sep. 2017</text>
             <text x="49" y="25.2" text-anchor="start"
                 font-size="1.1" fill="currentColor">
-            <tspan x="49" dy="0">takeWhile / dropWhile</tspan>
-            <tspan x="49" dy="1.6">Stream.iterate(seed, hasNext, next)</tspan>
+            <tspan x="49" dy="0">Stream.iterate(seed, hasNext, next)</tspan>
             <tspan x="49" dy="1.6">Stream.ofNullable, Optional.stream()</tspan>
-            <tspan x="49" dy="1.6">Collectors.filtering / flatMapping</tspan>
+            <tspan x="49" dy="1.6">takeWhile, dropWhile</tspan>
+            <tspan x="49" dy="1.6">Collectors.{filtering, flatMapping}</tspan>
             </text>
         </g>
 
@@ -894,7 +896,7 @@ Java Stream API - Evolution
                 fill="light-dark(#888, #999)">März 2018</text>
             <text x="31" y="39" text-anchor="end"
                 font-size="1.1" fill="currentColor">
-            <tspan x="31" dy="0">Collectors.toUnmodifiable{List,Set,Map}</tspan>
+            <tspan x="31" dy="0">Collectors.toUnmodifiable{List, Set, Map}</tspan>
             </text>
         </g>
 
@@ -934,10 +936,9 @@ Java Stream API - Evolution
                 fill="light-dark(#888, #999)">März 2021</text>
             <text x="31" y="56" text-anchor="end"
                 font-size="1.1" fill="currentColor">
-            <tspan x="31" dy="0">Stream.toList() als Ergänzung zu collect(toList())</tspan>
-            <tspan x="31" dy="1.6">Stream.mapMulti — imperative Alternative zu flatMap</tspan>
+            <tspan x="31" dy="0">toList (als Ergänzung zu collect(toList()))</tspan>
+            <tspan x="31" dy="1.6">mapMulti (als Alternative zu flatMap)</tspan>
             </text>
-
 
             <!-- Epoche: Inkrementelle Verbesserungen -->
             <line x1="38" y1="30" x2="38" y2="53"
@@ -967,7 +968,7 @@ Java Stream API - Evolution
             <text x="49" y="68" text-anchor="start"
                 font-size="1.1" fill="currentColor">
             <tspan x="49" dy="0">JEP 461: Stream Gatherers (Preview)</tspan>
-            <tspan x="49" dy="1.6" font-weight="500">Erweiterbare </tspan><tspan font-style="italic" font-weight="500">Intermediate Operations</tspan>
+            <tspan x="49" dy="1.6" font-style="italic" font-weight="500">Custom Intermediate Ops: </tspan><tspan>via gather</tspan>
             </text>
         </g>
 
@@ -1007,7 +1008,7 @@ Java Stream API - Evolution
                 fill="light-dark(#888, #999)">März 2025</text>
             <text x="49" y="90.2" text-anchor="start"
                 font-size="1.1" fill="currentColor">
-            <tspan x="49" dy="0" font-weight="bold">JEP 485: Gatherers — finalisiert</tspan>
+            <tspan x="49" dy="0" font-weight="bold">JEP 485: Gatherers</tspan>
             <tspan x="49" dy="1.6">Gatherer&lt;T,A,R&gt; + Stream.gather(...)</tspan>
             <tspan x="49" dy="1.6">Built-in: fold, scan, windowFixed,</tspan>
             <tspan x="49" dy="1.6">    windowSliding, mapConcurrent</tspan>
@@ -1024,6 +1025,13 @@ Java Stream API - Evolution
         </g>
         </svg>
         </div>
+
+    .. supplemental::
+
+        :java:`Stream.mapMulti(...)` ist eine imperative Variante von flatMap und ggf. auch schneller, wenn die Zielliste immer/meistens klein ist [`JavaDoc <https://docs.oracle.com/en/java/javase/26/docs/api/java.base/java/util/stream/Stream.html#mapMulti(java.util.function.BiConsumer)>`__].
+
+
+
 
 
 
@@ -1231,25 +1239,29 @@ Eigenschaften von *Intermediate Operations*
 
     :Stateless Ops(`zustandslose Operationen`:ger:): Transformieren die Elemente jeweils völlig unabhängig von allen anderen.
     :Stateful Ops(`zustandsbehaftete Operationen`:ger:): Transformieren die Elemente abhängig von anderen.
+    :Encounter-Order:
 
-    .. hint::
+        Die *Encounter Order* hängt typischerweise an der Quelle. Zum Beispiel ist ein Stream über die Elemente einer Liste *Ordered* während er für Sets *unordered* ist. Sollte ein Stream über die Elemente eines Sets allerdings sortiert werden (:java:`sorted()`), dann ist dieser ab diesem Zeitpunkt ordered.
 
-        Es kann interessant sein, einen Stream explizit als :java:`unordered()` zu markieren, da dann ggf. weitere Optimierungen bei der Auswertung möglich sind.
+        .. hint::
+
+            Es kann interessant sein, einen Stream explizit als :java:`unordered()` zu markieren, da dann ggf. weitere Optimierungen bei der Auswertung möglich sind.
 
 
 
 Stream-Operationen mit Seiteneffekten
 ---------------------------------------------
 
-.. warning::
+.. container:: height-100 center-content
 
-    Seiteneffekte in Funktionen, die an Stream-Operationen übergeben werden, sind grundsätzlich zu vermeiden. Wird ein Stream parallelisiert und eine übergebene Funktion (z. B. an die :java:`peek` Methode) hat dennoch Seiteneffekte, so muss diese Thread-sicher sein.
+    .. warning::
+
+        Seiteneffekte in Funktionen, die an Stream-Operationen übergeben werden, sind grundsätzlich zu vermeiden. Wird ein Stream parallelisiert und eine übergebene Funktion (z. B. an die :java:`peek` Methode) hat dennoch Seiteneffekte, so muss diese Thread-sicher sein.
 
 
 .. supplemental::
 
     `Java Stream API <https://docs.oracle.com/en/java/javase/26/docs/api/java.base/java/util/stream/package-summary.html>`__
-
 
 
 
@@ -1278,7 +1290,7 @@ Stream-Operationen mit Seiteneffekten
             "``skip``", "Stateful", "Konstant", "Eingeschränkt", "Nein"
             "``takeWhile``", "Stateful", "Konstant", "Eingeschränkt", "Ja"
             "``dropWhile``", "Stateful", "Konstant", "Eingeschränkt", "Nein"
-            "``gather``", "Konfigurierbar", "Konfigurierbar", "Konfigurierbar", "Konfigurierbar"
+            "``gather``", :orange-themed:`Op. abhängig`, ":orange-themed:`Op. abhängig`", ":orange-themed:`Op. abhängig`", ":orange-themed:`Op. abhängig`"
 
 
 
@@ -1303,17 +1315,20 @@ Streams mit primitiven Daten und Objekten
   - :java:`LongStream`
   - :java:`DoubleStream`
 
-  Diese Streams mit primitiven Daten arbeiten in vielen Fällen effizienter -  jedoch sind manche Operationen nur auf :java:`Object`\ -Streams erlaubt. „Primitive“ Streams können mit der Methode :java:`boxed` in :java:`Object`\ -Streams des entsprechenden Wrapper-Typs umgewandelt werden.
+  .. supplemental::
+    :embed-in-document-flow:
+
+    Diese Streams mit primitiven Daten arbeiten in vielen Fällen effizienter -  jedoch sind manche Operationen nur auf :java:`Object`\ -Streams erlaubt. „Primitive“ Streams können mit der Methode :java:`boxed()` in :java:`Object`\ -Streams des entsprechenden Wrapper-Typs umgewandelt werden.
 
 .. example::
     :class: incremental
 
     .. code:: java
-        :number-lines:
+        :line-number-digits: 1
         :class: copy-to-clipboard
 
         IntStream isPrim = IntStream.range(1, 10);
-        Stream<Integer> isObj = isPrim.boxed();
+        Stream<Integer> isObj = isPrim.boxed();     // Umwandlung in Boxed Stream
 
 
 
@@ -1326,7 +1341,7 @@ Erzeugung von Streams
 
         .. rubric:: Statische Methoden in :java:`Arrays`
 
-        - Die Klasse :java:`java.util.Arrays` hat mehrere überladene statische stream-Methoden, mit denen Arrays in Ströme umgewandelt werden können.
+        - Die Klasse :java:`java.util.Arrays` hat mehrere überladene statische :java:`stream(...)`-Methoden, mit denen Arrays in Ströme umgewandelt werden können.
         - Die Streams können Objekte oder primitive Daten enthalten.
 
           .. example::
@@ -1334,6 +1349,7 @@ Erzeugung von Streams
 
             .. code:: java
                 :number-lines:
+                :line-number-digits: 1
                 :class: copy-to-clipboard
 
                 // Stream of primitive data:
@@ -1354,8 +1370,8 @@ Erzeugung von Streams
 
             .. card::
 
-                - Mit :java:`of` werden die übergebenen Wert in einen Stream gepackt.
-                - Mit :java:`iterate` und :java:`generate` hat man eine einfache Möglichkeit unendliche Ströme zu erzeugen.
+                - Mit :java:`of(...)` werden die übergebenen Wert in einen Stream gepackt.
+                - Mit :java:`iterate(...)` und :java:`generate(...)` hat man eine einfache Möglichkeit unendliche, sequentielle Ströme zu erzeugen.
 
             .. card::
 
@@ -1364,6 +1380,7 @@ Erzeugung von Streams
 
                     .. code:: java
                         :number-lines:
+                        :line-number-digits: 1
                         :class: copy-to-clipboard
 
                         // Object-Stream 1, 2 ... 9, 0:
@@ -1371,6 +1388,7 @@ Erzeugung von Streams
 
                     .. code:: java
                         :number-lines: 3
+                        :line-number-digits: 1
                         :class: copy-to-clipboard incremental
 
                         // int-Stream 1, 2, ... 9, 0
@@ -1378,6 +1396,7 @@ Erzeugung von Streams
 
                     .. code:: java
                         :number-lines: 5
+                        :line-number-digits: 1
                         :class: copy-to-clipboard incremental
 
                         // (infinite) Stream 1, 2, ...
@@ -1385,6 +1404,7 @@ Erzeugung von Streams
 
                     .. code:: java
                         :number-lines: 7
+                        :line-number-digits: 1
                         :class: copy-to-clipboard incremental
 
                         int[] z = new int[]{1};
@@ -1394,13 +1414,14 @@ Erzeugung von Streams
 
         .. rubric:: Statische range-Methoden in :java:`IntStream` und :java:`LongStream`
 
-        Die Interfaces :java:`java.util.stream.IntStream` und :java:`java.util.stream.LongStream` enthalten jeweils zwei statische :java:`range`-Methoden mit denen Streams erzeugt werden können.
+        Die Interfaces :java:`java.util.stream.IntStream` und :java:`java.util.stream.LongStream` enthalten jeweils :java:`range(...)` und :java:`rangeClose(...)`-Methoden mit denen Streams erzeugt werden können.
 
         .. example::
             :class: incremental
 
             .. code:: java
                 :number-lines:
+                :line-number-digits: 1
                 :class: copy-to-clipboard
 
                 IntStream isPrimA = IntStream.range(1, 10); // 1,2, .. 9
@@ -1417,6 +1438,7 @@ Erzeugung von Streams
 
             .. code:: java
                 :number-lines:
+                :line-number-digits: 1
                 :class: copy-to-clipboard
 
                 Stream<Integer> is = Arrays.asList(1,2,3,4,5,6,7,8,9,0).stream();
@@ -1439,9 +1461,21 @@ Verwendung von Streams
 
                 .. class:: incremental-list
 
-                - :java:`map(Function<? super T,? extends R> mapper)`: Transformiert jedes Element in ein anderes.
-                - :java:`filter(Predicate<? super T> predicate)`: Filtert Elemente heraus.
-                - :java:`flatMap(Function<? super T,? extends Stream<? extends R>> mapper)`: Transformiert jedes Element in einen Stream und fügt die Streams zusammen.
+                - :java:`map(Function<? super T,? extends R> mapper)`:
+
+                  Transformiert jedes Element in ein anderes.
+                - :java:`filter(Predicate<? super T> predicate)`:
+
+                  Filtert Elemente heraus.
+                - :java:`<R> flatMap(Function<? super T,? extends Stream<? extends R>> mapper)`:
+
+                  Transformiert jedes Element in einen Stream und fügt die Streams zusammen.
+                - :java:`<R> mapMulti(BiConsumer<? super T,? super Consumer<? super R>> mapper)`:
+
+                  Imperative Variante von :java:`flatMap`.
+                - :java:`peek(Consumer<? super T> action)`:
+
+                  Führt eine Aktion für jedes Element aus, ohne den Stream zu verändern.
 
             .. card::
 
@@ -1449,6 +1483,7 @@ Verwendung von Streams
 
                     .. code:: java
                         :number-lines:
+                        :line-number-digits: 2
                         :class: copy-to-clipboard
 
                         import java.util.List;
@@ -1460,7 +1495,7 @@ Verwendung von Streams
                             .peek(i -> System.out.print(i+ " "))
                             .map(i -> 10 * i)
                             .boxed()
-                            .collect(Collectors.toList());
+                            .toList();
                         System.out.println(is);
 
                     .. container:: incremental
@@ -1473,6 +1508,7 @@ Verwendung von Streams
 
                     .. code:: java
                         :number-lines:
+                        :line-number-digits: 2
                         :class: copy-to-clipboard
 
 
@@ -1487,7 +1523,7 @@ Verwendung von Streams
 
                         List<Integer> is = Stream.of(0, 1, 2)
                             .flatMap(i -> range(10 * i, 10 * i + 10))
-                            .collect(Collectors.toList());
+                            .toList();
 
 
                     .. container:: incremental
@@ -1505,7 +1541,7 @@ Verwendung von Streams
                 .. class:: incremental-list
 
                 - :java:`distinct()`: Entfernt Duplikate.
-                - :java:`sorted()`: Sortiert die Elemente.
+                - :java:`sorted()`: Sortiert die Elemente gemäß ihrer natürlichen Ordnung (:java:`T extends Comparable<T>`).
                 - :java:`sorted(Comparator<? super T> comparator)`: Sortiert die Elemente mit einem gegebenen Comparator.
                 - :java:`limit(long maxSize)`: Begrenzt die Anzahl der Elemente.
                 - :java:`skip(long n)`: Überspringt die ersten n Elemente.
@@ -1516,18 +1552,19 @@ Verwendung von Streams
 
                     .. code:: java
                         :number-lines:
+                        :line-number-digits: 2
                         :class: copy-to-clipboard
 
-                            import java.util.List;
-                            import java.util.stream.Collectors;
-                            import java.util.stream.Stream;
+                        import java.util.List;
+                        import java.util.stream.Collectors;
+                        import java.util.stream.Stream;
 
-                            List<Integer> lst = Stream.of(9, 0, 3, 1, 7, 3, 4, 7, 2, 8, 5, 0, 6, 2)
-                                .distinct()
-                                .sorted((i, j) -> i - j)
-                                .skip(1)
-                                .limit(3)
-                                .collect(Collectors.toList());
+                        List<Integer> lst = Stream.of(9, 0, 3, 1, 7, 3, 4, 7, 2, 8, 5, 0, 6, 2)
+                            .distinct()
+                            .sorted((i, j) -> i - j)
+                            .skip(1)
+                            .limit(3)
+                            .toList();
 
                     .. container:: incremental
 
@@ -1572,11 +1609,10 @@ Verwendung von Streams
 
             .. card::
 
-                .. example::
-
-                    .. rubric:: :java:`forEach`
+                .. example:: :java:`forEach`
 
                     .. code:: java
+                        :line-number-digits: 1
                         :number-lines:
                         :class: copy-to-clipboard
 
@@ -1588,12 +1624,11 @@ Verwendung von Streams
 
             .. card::
 
-                .. example::
-
-                    .. rubric:: :java:`toArray`
+                .. example:: :java:`toArray`
 
                     .. code:: java
                         :number-lines:
+                        :line-number-digits: 1
                         :class: copy-to-clipboard
 
                         int[] a = IntStream.range(1, 3).toArray();
@@ -1621,9 +1656,7 @@ Verwendung von Streams
                         - :java:`toSet()`
                         - :java:`toCollection(Supplier<C> collectionFactory)`
 
-                .. example::
-
-                    .. rubric:: :java:`collect`
+                .. example:: :java:`collect`
 
                     .. deck::
 
@@ -1631,6 +1664,7 @@ Verwendung von Streams
 
                             .. code:: java
                                 :number-lines:
+                                :line-number-digits: 2
                                 :class: copy-to-clipboard
 
                                 List<Integer> l1 = Stream.of(1, 2, 3).collect( Collectors.toList() );
@@ -1648,6 +1682,7 @@ Verwendung von Streams
 
                             .. code:: java
                                 :number-lines:
+                                :line-number-digits: 1
                                 :class: copy-to-clipboard
 
                                 // Generating a map from a stream of strings
@@ -1655,7 +1690,7 @@ Verwendung von Streams
                                 Map<String, Integer> m = Stream.of("1", "2", "3")
                                         .collect(
                                             Collectors.toMap(
-                                                (s) -> s,
+                                                Function.identity(), // (s) -> s
                                                 Integer::parseInt
                                             )
                                         );
@@ -1674,9 +1709,7 @@ Verwendung von Streams
 
             .. card::
 
-                .. example::
-
-                    .. rubric:: :java:`collect(groupingBy)`
+                .. example:: :java:`collect(groupingBy)`
 
                     .. supplemental::
 
@@ -1684,6 +1717,7 @@ Verwendung von Streams
 
                         .. code:: java
                             :number-lines:
+                            :line-number-digits: 1
                             :class: copy-to-clipboard
 
                             import static java.util.stream.Collectors.groupingBy;
@@ -1692,6 +1726,7 @@ Verwendung von Streams
 
                     .. code:: java
                         :number-lines:
+                        :line-number-digits: 1
                         :class: copy-to-clipboard
 
                         Map<Integer, List<Integer>> groupedByMod3 = Stream.of(1, 2, 3, 4, 5, 6 ,7 ,8, 9)
@@ -1699,14 +1734,15 @@ Verwendung von Streams
 
                     .. container:: incremental
 
-                        *Ausgabe:* :console:`groupedByMod3 = {0=[3, 6, 9], 1=[1, 4, 7], 2=[2, 5,8]}`
+                        *Ausgabe:* :console:`groupedByMod3 = {0=[3, 6, 9], 1=[1, 4, 7], 2=[2, 5, 8]}`
 
                     .. code:: java
                         :number-lines:
+                        :line-number-digits: 1
                         :class: copy-to-clipboard incremental
 
-                        Map<Integer, List<String>> groupedByLength = Stream.of(
-                                    "one", "two", "three", "four", "five", "six", "seven", "eight")
+                        Map<Integer, List<String>> groupedByLength =
+                            Stream.of("one", "two", "three", "four", "five", "six", "seven", "eight")
                                 .collect( groupingBy( (s) -> s.length() ) );
 
                     .. container:: incremental
@@ -1722,6 +1758,7 @@ Verwendung von Streams
 
                     .. code:: java
                         :number-lines:
+                        :line-number-digits: 1
                         :class: copy-to-clipboard
 
                         long count = Stream.of(1, 2, 3, 4, 5, 6, 7, 8, 9).count();
@@ -1739,6 +1776,7 @@ Verwendung von Streams
 
                     .. code:: java
                         :number-lines:
+                        :line-number-digits: 1
                         :class: copy-to-clipboard
 
                         boolean anyEven = Stream.of(1, 2, 3, 4, 5, 6, 7, 8, 9)
@@ -1764,6 +1802,7 @@ Verwendung von Streams
 
                     .. code:: java
                         :number-lines:
+                        :line-number-digits: 1
                         :class: copy-to-clipboard
 
                         Optional<Integer> firstEven = Stream.of(1, 2, 3, 4, 5, 6, 7, 8, 9)
@@ -1788,12 +1827,11 @@ Verwendung von Streams
 
             .. card::
 
-                .. example::
-
-                    .. rubric:: :java:`reduce`
+                .. example:: :java:`reduce`
 
                     .. code:: java
                         :number-lines:
+                        :line-number-digits: 1
                         :class: copy-to-clipboard
 
                         Optional<Integer> sumOfAll = Stream.of(1, 2, 3, 4, 5).reduce( (a, x) -> a+x );
@@ -1804,6 +1842,7 @@ Verwendung von Streams
 
                     .. code:: java
                         :number-lines:
+                        :line-number-digits: 1
                         :class: copy-to-clipboard incremental
 
                         Optional<Integer> subOfAll = Stream.of(1, 2, 3, 4, 5).reduce( (a, x) -> a-x );
@@ -1814,6 +1853,7 @@ Verwendung von Streams
 
                     .. code:: java
                         :number-lines:
+                        :line-number-digits: 1
                         :class: copy-to-clipboard incremental
 
                         int sumOfAllPlus100 = Stream.of(1, 2, 3, 4, 5)
@@ -1829,13 +1869,12 @@ Verwendung von Streams
 
                     :java:`static Collector<CharSequence,?,String> joining(CharSequence delimiter)`
 
-                .. example::
+                .. example:: :java:`collect(joining(...))`
                     :class: incremental
-
-                    .. rubric:: :java:`reduce`
 
                     .. code:: java
                         :number-lines:
+                        :line-number-digits: 1
                         :class: copy-to-clipboard
 
                         String concat = Stream.of("one", "two", "three")
@@ -1859,6 +1898,7 @@ Streams - fortgeschrittenere Konzepte
         Parallele und sequentielle Streams.
 
         .. code:: java
+            :line-number-digits: 2
             :number-lines:
 
             package java.util.stream;
@@ -1894,6 +1934,7 @@ Streams - fortgeschrittenere Konzepte
 
         .. code:: java
             :number-lines:
+            :line-number-digits: 1
 
             package java.util.stream;
 
@@ -1918,7 +1959,6 @@ Streams - fortgeschrittenere Konzepte
         :number-lines:
         :class: copy-to-clipboard
 
-        List<String> namen = Arrays.asList("Alice", "Bob", "Charlie", "Diana", "Eve");
         List<Integer> punkte = Arrays.asList(85, 42, 91, 67, 55);
 
     .. class:: list-with-explanations
@@ -1955,6 +1995,8 @@ Streams - fortgeschrittenere Konzepte
             // Resultat: {91=A, 67=D, 55=F, 85=B, 42=F}
 
             punkte.stream().mapToInt(Integer::new).average()
+
+
 
 .. class:: exercises
 
@@ -2020,14 +2062,15 @@ Bewertung der Fähigkeiten der Standardoperationen von Java Streams
 Herausforderung *Low-representational Gap* gelöst?
 ---------------------------------------------------
 
-.. rubric:: Lösung mit standard *Stream* Primitiven (≤ Java 24)
+.. rubric:: Lösung mit standard *Stream* Operationen
 
-.. supplemental::
+.. supplemental:: d-only
     :embed-in-document-flow:
 
     *Benötigte Imports*
 
     .. code:: java
+        :line-number-digits: 1
         :number-lines:
         :class: copy-to-clipboard
 
@@ -2040,15 +2083,17 @@ Herausforderung *Low-representational Gap* gelöst?
 
 .. code:: java
     :number-lines:
+    :line-number-digits: 1
     :class: copy-to-clipboard
 
-    List<Student> empfehlungenS = alleStudierenden.stream()
-        .filter(not(Student::hatStipendium))
-        .collect(groupingBy(Student::studiengang,
-                            minBy(comparingDouble(Student::schnitt))))
-        .values().stream().flatMap(Optional::stream)
-        .sorted(comparingDouble(Student::schnitt))
-        .toList();
+    List<Student> empfehlungenS =
+        alleStudierenden.stream()
+            .filter(not(Student::hatStipendium))
+            .collect(groupingBy(Student::studiengang,
+                                minBy(comparingDouble(Student::schnitt))))
+            .values().stream().flatMap(Optional::stream)
+            .sorted(comparingDouble(Student::schnitt))
+            .toList();
 
 .. supplemental::
     :embed-in-document-flow:
@@ -2059,7 +2104,7 @@ Herausforderung *Low-representational Gap* gelöst?
 
         - Um die gewünschte Gruppierung zu erhalten, werden die besten Studierenden in einer Zwischendatenstruktur (*Map*) aufgesammelt (:java:`collect(...)`). Diese muss - um eine Stream-orientierte Weiterverarbeitung zu ermöglichen - wieder in einen Stream verwandelt werden, der über den *Values* der *Map* operiert (:java:`values().stream()`).
 
-         - Da wir in eine *Map* aufgesammelt hatten, haben wir einen *Stream of Optionals*;  :java:`minBy(...)` liefert ein :java:`Optional`. Somit müssen wir die :java:`Optional`\ s im :java:`Stream<Optional<Student>>` über :java:`flatMap(Optional::stream)` entpacken.
+        - Da wir in eine *Map* aufgesammelt hatten, haben wir einen *Stream of Optionals*;  :java:`minBy(...)` liefert ein :java:`Optional`. Somit müssen wir die :java:`Optional`\ s im :java:`Stream<Optional<Student>>` über :java:`flatMap(Optional::stream)` entpacken.
 
 
 
@@ -2079,12 +2124,14 @@ Welches Problem wollen wir lösen?
 
 .. code:: java
     :number-lines:
+    :line-number-digits: 1
     :class: head fade-out-strong no-margin
 
     List<Student> empfehlungenS = alleStudierenden.stream()
         .filter(not(Student::hatStipendium))
 
 .. code:: java
+    :line-number-digits: 1
     :number-lines: 3
     :class: snippet no-margin
 
@@ -2093,6 +2140,7 @@ Welches Problem wollen wir lösen?
         .values().stream().flatMap(Optional::stream)
 
 .. code:: java
+    :line-number-digits: 1
     :number-lines: 6
     :class: tail fade-out-strong
 
@@ -2103,6 +2151,28 @@ Welches Problem wollen wir lösen?
     :class: accentuate incremental
 
     Um (hier) den Bruch in der Pipeline (Stream → List → Stream) zu vermeiden, benötigen wir eine passende *Intermediate Operation*, die von der Standardbibliothek nicht zur Verfügung gestellt wird.
+
+
+
+Stream Gatherers (JDK 24+)
+---------------------------
+
+Gatherers erlauben die Definition von benutzerdefinierten *Intermediate Operations*.
+
+:java:`Gatherer<T, A, R>` bestehen aus vier Komponenten:
+
+.. class:: incremental-list
+
+:`initializer`:java:: Erzeugt den privaten, Gatherer-internen, ggf. veränderlichen Zustand (Typ :java:`A`).
+:`integrator`:java:: Verarbeitet jedes Eingabeelement (:java:`T`) und kann beliebig viele Ausgabeelemente (:java:`R`) *downstream* senden.
+:`combiner`:java:: Vereinigt Zustände bei paralleler Ausführung *(optional)*.
+:`finisher`:java:: Wird nach dem letzten Element aufgerufen; kann finale Elemente *downstream* senden *(optional)*.
+
+.. class:: incremental-list
+
+- Damit lassen sich *zustandsbehaftete*, *short-circuiting* und *m:n*-Transformationen als wiederverwendbare, komponierbare, parallelisierbare Bausteine definieren.
+
+- Eingebunden über: :java:`stream.gather(myGatherer)`
 
 
 
@@ -2119,6 +2189,7 @@ Ausgewählte Standard Stream Gatherers
 
         .. code:: java
             :number-lines:
+            :line-number-digits: 1
             :class: copy-to-clipboard
 
             Stream<Integer> numbers = Stream.of(1, 2, 3, 4);
@@ -2134,34 +2205,14 @@ Ausgewählte Standard Stream Gatherers
 
         .. code:: java
             :number-lines:
+            :line-number-digits: 1
             :class: copy-to-clipboard
 
-            Map<String,String> nameToPoints = Stream.of("A","90+","B","80+")
+            Map<String,String> nameToPoints =
+                Stream.of("A","90+","B","80+")
                     .gather(Gatherers.windowFixed(2))
                     .collect(Collectors.toMap((l) -> l.get(0),(l) -> l.get(1)));
             // nameToPoints => {A=90+, B=80+}
-
-
-
-Stream Gatherers (JDK 24+)
----------------------------
-
-Gatherers erlauben die Definition von benutzerdefinierten *Intermediate Operations*.
-
-:java:`Gatherer<T, A, R>` bestehen aus vier Komponenten:
-
-.. class:: incremental-list
-
-:`initializer`:java:: Erzeugt den privaten, ggf. veränderlichen Zustand (Typ ``A``).
-:`integrator`:java:: Verarbeitet jedes Eingabeelement (``T``) und kann beliebig viele Ausgabeelemente (``R``) *downstream* senden."
-:`combiner`:java:: Vereinigt Zustände bei paralleler Ausführung *(optional)*.
-:`finisher`:java:: Wird nach dem letzten Element aufgerufen; kann finale Elemente *downstream* senden *(optional)*.
-
-.. class:: incremental-list
-
-- Damit lassen sich *zustandsbehaftete*, *short-circuiting* und *m:n*-Transformationen als wiederverwendbare, komponierbare, parallelisierbare Bausteine definieren.
-
-- Eingebunden über: :java:`stream.gather(myGatherer)`
 
 
 
@@ -2169,9 +2220,9 @@ Gatherers erlauben die Definition von benutzerdefinierten *Intermediate Operatio
 ----------------------------------------------------------
 
 .. code:: java
-    :line-number-digits: 1
+    :line-number-digits: 2
     :number-lines:
-    :class: copy-to-clipboard
+    :class: head no-margin incremental-code
 
     static <T, K> Gatherer<T, ?, T> reducePerGroup(
                 Function<T, K> grouping, BinaryOperator<T> reducer) {
@@ -2180,8 +2231,14 @@ Gatherers erlauben die Definition von benutzerdefinierten *Intermediate Operatio
             /*initializer:*/ HashMap<K, T>::new,
             /*integrator: */ (map, element, downstream) -> {
                 map.merge(grouping.apply(element), element, reducer);
-                return true;
+                return true; // <= we will consume more elements
             },
+
+.. code:: java
+    :line-number-digits: 2
+    :number-lines: 10
+    :class: tail incremental
+
             /*finalizer: */ (map, downstream) -> map.values().forEach(downstream::push)
         );
     }
@@ -2191,56 +2248,16 @@ Gatherers erlauben die Definition von benutzerdefinierten *Intermediate Operatio
 
     Aufgrund der Verwendung von :java:`Gatherer.ofSequential(...)` müssen wir keinen :java:`Combiner` angeben; Parallelisierung wird aber auch nicht unterstützt.
 
-.. assessment::
-    :class: incremental
 
-    Obwohl es sich um einen spezialisierten *Custom Gatherer* handelt, der die Gruppierung nur intern durchführt und nicht explizit downstream verfügbar macht, ist es dennoch sehr gut vorstellbar, dass dieser wiederverwendet werden kann.
+.. supplemental::
+    :embed-in-document-flow:
 
+    .. assessment::
+        :class: incremental
 
-
-Übung
-----------
-
-.. exercise:: Fakultät für 1 bis 20
-
-    Berechnen Sie die Fakultät für n = 1 bis 20 und speichern Sie die Ergebnisse in einer Liste. Verwenden Sie Streams und einen passenden :java:`Gatherer`. Bedenken sie, dass ``20!`` bereits sehr groß ist!
-
-    Bis zu welchem Wert können Sie bei der Verwendung eines passenden primitiven Datentyps ohne Präzisionsverlust die Fakultät (n!) berechnen.
-
-    .. hint::
-
-        Auf primitiven Streams is :java:`.gather(...)` nicht verfügbar.
-
-    .. solution::
-        :pwd: LongStreamGathererscan
-
-        Der Datentyp Long erlaubt maximal die Berechnung von 20!.
-
-        .. code:: java
-            :number-lines:
-            :class: copy-to-clipboard
-
-            LongStream.rangeClosed(1,20).boxed().gather(Gatherers.scan(() -> 1l, (x,y) -> x * y)).toList();
+        Obwohl es sich um einen spezialisierten *Custom Gatherer* handelt, der die Gruppierung nur intern durchführt und diese nicht explizit downstream verfügbar macht, ist es dennoch sehr gut vorstellbar, dass dieser wiederverwendet werden kann.
 
 
-Übung
-___________-
-
-.. exercise:: Fakultät mit BigInteger
-
-    Berechnen Sie die Fakultät für n = 1 bis 100 und speichern Sie die Ergebnisse in einer Liste. Verwenden Sie Streams und einen passenden :java:`Gatherer`. Verwenden Sie einen passenden Datentyp, um Präzisionsverlust zu vermeiden.
-
-    .. solution::
-        :pwd: BigIntegerScanGatherer
-
-        .. code:: java
-            :number-lines:
-            :class: copy-to-clipboard
-
-            List<BigInteger> factorials = LongStream.rangeClosed(1, 100)
-                    .boxed()
-                    .gather(Gatherers.scan(() -> BigInteger.ONE, (x,y) -> x.multiply(BigInteger.valueOf(y))))
-                    .toList();
 
 
 
@@ -2256,11 +2273,12 @@ Herausforderungen gelöst?
 
 .. rubric:: Lösung mit :java:`reducePerGroup` *Gatherer*
 
-.. supplemental::
+.. supplemental:: d-only
     :embed-in-document-flow:
 
     .. code:: java
         :number-lines:
+        :line-number-digits: 1
         :class: copy-to-clipboard
 
         import static java.util.Comparator.comparingDouble;
@@ -2270,7 +2288,7 @@ Herausforderungen gelöst?
 
 .. code:: java
     :number-lines:
-    :line-number-digits: 2
+    :line-number-digits: 1
     :class: copy-to-clipboard
 
     List<Student> empfehlungenG = alleStudierenden.stream()
@@ -2288,6 +2306,57 @@ Herausforderungen gelöst?
     .. assessment::
 
         Die Umsetzung in Java ist noch einmal näher an der Geschäftslogik, aber der Code ist noch nicht parallelisiert und enthält noch immer einiges and syntaktischem Rauschen.
+
+
+
+.. class:: exercises
+
+Übung
+----------
+
+.. exercise:: Fakultät für 1 bis 20
+
+    Berechnen Sie die Fakultät für n = 1 bis 20 und speichern Sie die Ergebnisse in einer Liste. Verwenden Sie Streams und einen passenden :java:`Gatherer`. Bedenken sie, dass ``20!`` bereits sehr groß ist!
+
+    Bis zu welchem Wert können Sie bei der Verwendung eines passenden primitiven Datentyps ohne Präzisionsverlust die Fakultät von n (n!) berechnen.
+
+    .. hint::
+
+        Auf primitiven Streams is :java:`.gather(...)` nicht verfügbar.
+
+    .. solution::
+        :pwd: LongStreamGathererscan
+
+        Der Datentyp Long erlaubt maximal die Berechnung von 20!.
+
+        .. code:: java
+            :number-lines:
+            :class: copy-to-clipboard
+
+            LongStream.rangeClosed(1,20).boxed().gather(Gatherers.scan(() -> 1l, (x,y) -> x * y)).toList();
+
+
+
+.. class:: exercises
+
+Übung
+----------
+
+.. exercise:: Fakultät mit BigInteger
+
+    Berechnen Sie die Fakultät für n = 1 bis 100 und speichern Sie die Ergebnisse in einer Liste. Verwenden Sie Streams und einen passenden :java:`Gatherer`. Verwenden Sie einen passenden Datentyp, um Präzisionsverlust zu vermeiden.
+
+    .. solution::
+        :pwd: BigIntegerScanGatherer
+
+        .. code:: java
+            :number-lines:
+            :class: copy-to-clipboard
+
+            List<BigInteger> factorials = LongStream.rangeClosed(1, 100)
+                    .boxed()
+                    .gather(Gatherers.scan(() -> BigInteger.ONE, (x,y) -> x.multiply(BigInteger.valueOf(y))))
+                    .toList();
 
 
 
@@ -2359,6 +2428,7 @@ Korrektheit bei Parallelisierung
         .. code:: java
             :class: copy-to-clipboard
             :number-lines:
+            :line-number-digits: 1
 
             IntBinaryOperator f = (x,y) -> x + y*y;
             Arrays.stream(new int[]{1,2,3}).parallel().reduce(0,f);
@@ -2371,7 +2441,7 @@ Korrektheit bei Parallelisierung
 
                 .. class:: incremental-list
 
-                1. Die Parallelisierung\ [#]_ hat (hier) dazu geführt, dass für jeden  Wert der Liste zuerst eine Reduktion mit dem Basiswert :java:`0` durchführt wurde; d. h. es wurde erst: :java:`f(0,1)=1`, :java:`f(0,2)=4` und :java:`f(0,3)=9` berechnet.
+                1. Die Parallelisierung\ [#]_ hat (hier) dazu geführt, dass die Liste in drei Teillisten aufgespalten wurde, um die Berechnung dafür zu parallelisieren. Danach für jeden Wert der Teillisten zuerst eine Reduktion mit dem Basiswert :java:`0` durchgeführt; d. h. es wurde erst: :java:`f(0,1)=1`, :java:`f(0,2)=4` und :java:`f(0,3)=9` berechnet.
                 2. Danach wurden die Zwischenergebnisse verrechnet. D. h. es wurde (hier) :java:`f(f(0,2),f(0,3))=f(4,9)=85` berechnet und dann das Zwischenergebnis mit dem Zwischenergebnis von :java:`f(0,1)` verrechnet: :java:`f(f(0,1),f(f(0,2),f(0,3)))=f(1,85)=7226`
 
                 .. [#] Im ersten Schritt wurde der Stream aufgeteilt, um die Berechnungen für jeden Teilstream parallel ausführen zu können.
@@ -2500,6 +2570,7 @@ Java Streams vs. Scala Collections — Codebeispiel
 
         .. code:: java
             :number-lines:
+            :line-number-digits: 2
 
             alleStudierenden.stream()
               .filter(not(Student::hatStipendium))
@@ -2518,6 +2589,7 @@ Java Streams vs. Scala Collections — Codebeispiel
 
         .. code:: scala
             :number-lines:
+            :line-number-digits: 2
 
             alleStudierenden
               .filterNot(_.hatStipendium)
@@ -2594,6 +2666,7 @@ Java Streams vs. JavaScript Arrays — Codebeispiel
 
         .. code:: java
             :number-lines:
+            :line-number-digits: 2
 
             alleStudierenden.stream()
               .filter(not(Student::hatStipendium))
@@ -2613,6 +2686,7 @@ Java Streams vs. JavaScript Arrays — Codebeispiel
 
         .. code:: javascript
             :number-lines:
+            :line-number-digits: 2
 
             Object.values(
                 Object.groupBy(
@@ -2694,6 +2768,7 @@ Java Streams vs. Rust Iteratoren — Codebeispiel
 
         .. code:: java
             :number-lines:
+            :line-number-digits: 2
 
             .. = alleStudierenden.stream()
               .filter(not(Student::hatStipendium))
@@ -2712,6 +2787,7 @@ Java Streams vs. Rust Iteratoren — Codebeispiel
 
         .. code:: rust
             :number-lines:
+            :line-number-digits: 2
 
             .. = alle_studierenden.iter()
               .filter(|s| !s.hat_stipendium)
