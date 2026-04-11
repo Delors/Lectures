@@ -15,7 +15,7 @@ W3WI_110 - Entwicklung verteilter Systeme
 
 :Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
 :Kontakt: michael.eichberg@dhbw.de, Raum 149B
-:Version: 24SEA - 3. März 2026
+:Version: 24SEA - 10. April 2026
 
 
 
@@ -1145,35 +1145,44 @@ Architekturpräsentation
 
 
 
-Code Reviews
-----------------------------
+Code Reviews (max. 10 Punkte)
+-------------------------------
 
-:14. Apr 2026:
+.. deck::
 
-  - jede Gruppe führt ein Code Review eines anderen Projektes durch
+    .. card::
 
-    (D. h. jede Gruppe führt eine andere Gruppe in ihr Projekt ein, damit die Reviewer die Codebasis verstehen und dann einen Bericht mit konstruktiven Vorschlägen erstellen können - dies geschieht im Nachgang. Die Zuteilung wird am 14. Apr 2026 bekannt gegeben.)
+        :14. Apr 2026:
 
-  - alle Teile sollen einem Review unterzogen werden: Frontend, Backend, Buildscripte, Projektstruktur, Dokumentation, ...
-:16. Apr 2026 - 17:00: Abgabe der Code Review Berichte und Präsentation in Moodle; Übermittlung der Berichte an die jeweiligen Gruppen.
-:17. Apr 2026: Die *wichtigsten Ergebnisse werden präsentiert*; es können ggf. auch Erkenntnisse für das eigene Projekts dargestellt werden.
+            -   jede Gruppe führt ein Code Review eines anderen Projektes durch
 
-   .. presenter-note::
+                (D. h. jede Gruppe führt eine andere Gruppe in ihr Projekt ein, damit die Reviewer die Codebasis verstehen und dann einen Bericht mit konstruktiven Vorschlägen erstellen können - dies geschieht im Nachgang. Die Zuteilung wird am 14. Apr 2026 bekannt gegeben.)
 
-        Zuteilung in der ersten Runde:
+            -   alle Teile sollen einem Review unterzogen werden: Frontend, Backend, Buildscripte, Projektstruktur, Dokumentation, ...
+        :16. Apr 2026 - 17:00: Abgabe der Code Review Berichte und Präsentation in Moodle; Übermittlung der Berichte an die jeweiligen Gruppen.
+        :17. Apr 2026: Die *wichtigsten Ergebnisse werden präsentiert*; es können ggf. auch Erkenntnisse für das eigene Projekts dargestellt werden.
 
-        .. csv-table::
-            :header: "Gruppe", "Review von"
+    .. card::
 
-            1, 5
-            2, 6
-            3, 4
+        :Präsentation (3P): Dies umfasst die Darstellung der wichtigsten Ergebnisse des Code Reviews und *ganz insbesondere* auch die Darstellung von Erkenntnissen, die für das eigene Projekt gewonnen wurden.
+        :Dokumentation (7P): Dies ist das Dokument, dass die Ergebnisse des Code Reviews festhält (ggf. ein Auszug der GitHub Issues). Bewertet wird die Qualität im Hinblick auf die Nachvollziehbarkeit/Verständlichkeit der Ergebnisse und die Konstruktivität der Vorschläge.
 
-        Zuteilung in der zweiten Runde:
+.. presenter-note::
 
-        .. csv-table::
-            :header: "Gruppe", "Review von"
+    Zuteilung in der ersten Runde:
 
-            4, 1
-            5, 2
-            6, 3
+    .. csv-table::
+        :header: "Gruppe", "Review von"
+
+        1, 5
+        2, 6
+        3, 4
+
+    Zuteilung in der zweiten Runde:
+
+    .. csv-table::
+        :header: "Gruppe", "Review von"
+
+        4, 1
+        5, 2
+        6, 3
