@@ -40,7 +40,7 @@ Aufgrund der Entwicklungen im Bereich Generative AI (z. B. Copilot, Claude, etc
    #. Java Projekte mit Maven aufsetzen (`<prog-adv-java-projects/folien.de.rst.html>`__)
    #. Versionsverwaltung mit GIT (`<se-versionskontrolle/folien.de.rst.html>`__)
    #. Objekt-orientierte Programmierung in Java - Funktionale Programmierung (`<prog-adv-java-funktionale-programmierung/folien.de.rst.html>`__)
-   #. Objekt-orientierte Programmierung in Java - Streams (`<prog-adv-java-streams/folien.de.rst.html>`__)
+   #. Objekt-orientierte Programmierung in Java - Stream API (`<prog-adv-java-stream-api/folien.de.rst.html>`__)
    #. Objekt-orientierte Programmierung in Java - Ein-/Ausgabe (`<prog-adv-java-ea/folien.de.rst.html>`__)
 
    Ergänzend:
