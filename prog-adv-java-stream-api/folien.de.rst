@@ -19,12 +19,11 @@
                 stroke="currentColor" stroke-width="1.2"/>
         </marker>
 
-
 .. include:: ../docutils.defs
 
 
 
-Java - Streams
+Java Stream API
 ===========================================================
 
 :Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
@@ -52,7 +51,9 @@ Java - Streams
     :Quellen:
 
         #. `Dokumentation des JDK <https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/stream/package-summary.html>`__
-        #. Dokumentation der Scala (2.13 bzw. 3) Standardbibliothek
+        #. Dokumentation der Scala (2.13 bzw. 3) Standardbibliothek;
+
+           `Aniefiok Akpan; Streams in Scala, July 2023 <https://blog.lunatech.com/posts/2023-07-28-streams-in-scala--an-introductory-guide>`__
         #. `Das Rust Buch <https://doc.rust-lang.org/book/ch13-02-iterators.html>`__
         #.  `Th. Letschert <https://homepages.thm.de/~hg51/Veranstaltungen/A_D/Folien/java-8-kurzeinfuehrung.pdf>`__  bzgl. der konkreten *Java Streams API (Deepdive)*
 
@@ -157,8 +158,8 @@ Motivation
 
 
 
-(Aktuelle) Herausforderungen bei der Datenverarbeitung
--------------------------------------------------------
+:peripheral:`(Aktuelle)` Herausforderungen bei der Datenverarbeitung
+----------------------------------------------------------------------
 
 .. deck::
 
@@ -166,13 +167,13 @@ Motivation
 
         .. class:: list-with-sublists incremental-list
 
-        - große Datenmengen,
+        - Große Datenmengen,
 
           .. class:: incremental-list
 
           - die nicht (ohne weiteres) in den Speicher passen oder
-          - bei denen es keinen Sinn macht diese vorab vollständig in den Speicher zu laden, da immer nur ein kleiner Abschnitt verarbeitet werden muss
-        - Daten, die kontinuierlich verarbeitet werden müssen
+          - bei denen es keinen Sinn macht diese vorab vollständig in den Speicher zu laden, da immer nur ein kleiner Abschnitt verarbeitet werden muss.
+        - Daten, die kontinuierlich verarbeitet werden müssen.
 
     .. card::
 
@@ -462,7 +463,7 @@ Motivation
                             :Ausgabe: (Flache) sortierte Liste von förderungswürdigen Studierenden nach Förderwürdigkeit
                             :Logik:
 
-                                #. filtere aus allen Studierenden diejenigen heraus, die bereits ein Stipendium haben,
+                                #. Filtere aus allen Studierenden diejenigen heraus, die bereits ein Stipendium haben,
                                 #. gruppiere die verbleibenden nach Studiengang,
                                 #. wähle pro Studiengang den mit der besten Durchschnittsnote, und
                                 #. erstelle daraus eine nach Note sortierte Empfehlungsliste.
@@ -482,6 +483,7 @@ Motivation
 
                             .. code:: java
                                 :number-lines: 3
+                                :line-number-digits: 2
 
                                 // Schritt 1: Studierende ohne Stipendium sammeln
                                 List<Student> ohneStipendium = new ArrayList<>();
@@ -525,7 +527,7 @@ Java I/O Streams vs. Java Stream API
 
 .. attention::
 
-    Im Folgenden betrachten wir die **Java Stream API** und nicht **Java I/O Streams**.
+    Im Folgenden betrachten wir die Java Stream API und nicht Java I/O Streams.
 
     .. list-table::
         :header-rows: 1
@@ -534,19 +536,21 @@ Java I/O Streams vs. Java Stream API
         :widths: 20 40 40
 
         * -
-          - Java I/O Streams
           - Java Stream API
+          - Java I/O Streams
         * - Package
-          - :java:`java.io.*` / :java:`java.nio.*`
           - :java:`java.util.stream.*`
+          - :java:`java.io.*` / :java:`java.nio.*`
         * - Fokus
-          - Byte-/Zeichentransport
           - Datenverarbeitung
+          - Byte-/Zeichentransport
         * - Paradigma
-          - Imperativ
           - Funktional/Deklarativ
+          - Imperativ
 
 .. supplemental:: dd-margin-left-4em
+
+    Im Folgenden betrachten wir auch nicht `Reactive Streams <https://www.reactive-streams.org>`__, die seit Java 9 über die :java:`java.util.concurrent.Flow` `API <https://docs.oracle.com/javase/9/docs/api/java/util/concurrent/Flow.html>`__ unterstützt werden.
 
     :Imperativ Programmierung:
 
@@ -593,6 +597,8 @@ Streams - Einführung am Beispiel
 
                 .. code:: java
                     :class: copy-to-clipboard
+                    :number-lines:
+                    :line-number-digits: 1
 
                     import java.util.Arrays;
                     import java.util.List;
@@ -600,14 +606,15 @@ Streams - Einführung am Beispiel
 
             .. code:: java
                 :number-lines:
+                :line-number-digits: 1
                 :class: copy-to-clipboard
 
                 List<Integer> l  = Arrays.asList(1, 2, 3, 4, 5, 6, 7, 8, 9);
                 List<Integer> ll = l
-                    .stream()                       // Umwandlung: list → stream
-                    .filter(x -> x % 2 == 0)        // Filterung mit Hilfe eines Prädikats
-                    .map(x -> 10 * x)               // Bilde jedes Element auf das Zehnfache ab
-                    .collect(Collectors.toList());  // Aufsammeln der Ergebnisse (alt. toList())
+                    .stream()                   // Umwandlung: list → stream
+                    .filter(x -> x % 2 == 0)    // Filterung mit Hilfe eines Prädikats
+                    .map(x -> 10 * x)           // Bilde jedes Element auf das Zehnfache ab
+                    .toList();                  // Aufsammeln der Ergebnisse (alt. toList())
                 ll.forEach(x -> System.out.println(x));
 
             .. container:: incremental
@@ -795,9 +802,9 @@ Streams - Grundlegendes Konzept
 .. supplemental::
     :embed-in-document-flow:
 
-    Es ist möglich als terminale Operation einen :java:`Iterator` bzw. :java:`Spliterator` zu erzeugen. In diesen beiden Fällen erfolgt die Evaluation der Pipeline nicht vollständig (d.h. nicht *eager* sondern *lazy*). Es wird somit nur so viel ausgewertet, wie für die Erzeugung des :java:`Iterator`\ /\ :java:`Spliterator` notwendig ist. Das hat zur Folge, dass die Elemente des Streams erst dann verarbeitet werden, wenn sie tatsächlich über den :java:`Iterator`\ /\ :java:`Spliterator` angefordert werden.
+    Es ist möglich als terminale Operation einen :java:`Iterator` bzw. :java:`Spliterator` zu erzeugen. In diesen beiden Fällen erfolgt die Evaluation der Pipeline nicht unmittelbar durch die terminale Operation (d. h. nicht *eager* sondern *lazy*). Das hat zur Folge, dass die Elemente des Streams erst dann verarbeitet werden, wenn sie tatsächlich über den :java:`Iterator`\ /\ :java:`Spliterator` angefordert werden.
 
-    Die Verwendung dieser beiden Methoden führt zu einem Bruch des deklarativen Pipeline-Modells, der in den allermeisten Fällen vermieden werden kann. Häufig nur noch im Zusammenhang mit Legacy-APIs relevant, die mit :java:`Iterator`\ /\ :java:`Spliterator` arbeiten.
+    Die Verwendung dieser beiden Methoden (:java:`<BaseStream>.iterator()`/:java:`<BaseStream>.spliterator()`) führt zu einem Bruch des deklarativen Pipeline-Modells, der in den allermeisten Fällen vermieden werden kann. Häufig nur noch im Zusammenhang mit Legacy-APIs relevant, die mit :java:`Iterator`\ /\ :java:`Spliterator` arbeiten.
 
 
 
@@ -1283,6 +1290,7 @@ Stream-Operationen mit Seiteneffekten
 Java Streams API - Deep Dive
 ---------------------------------------
 
+`Bewertung der Fähigkeiten der Standardoperationen von Java Streams`_
 
 
 Streams mit primitiven Daten und Objekten
@@ -2055,11 +2063,9 @@ Herausforderung *Low-representational Gap* gelöst?
 
 
 
+.. class:: new-section transition-fade
 
-
-.. class:: new-subsection transition-fade
-
-Benutzerdefinierte Zwischenoperationen aka *Stream Gatherers*
+(Benutzerdefinierte) Zwischenoperationen: Stream Gatherers
 ------------------------------------------------------------------------
 
 .. supplemental::
@@ -2073,7 +2079,7 @@ Welches Problem wollen wir lösen?
 
 .. code:: java
     :number-lines:
-    :class: head fade-out no-margin
+    :class: head fade-out-strong no-margin
 
     List<Student> empfehlungenS = alleStudierenden.stream()
         .filter(not(Student::hatStipendium))
@@ -2088,7 +2094,7 @@ Welches Problem wollen wir lösen?
 
 .. code:: java
     :number-lines: 6
-    :class: tail fade-out
+    :class: tail fade-out-strong
 
         .sorted(comparingDouble(Student::schnitt))
         .toList();
@@ -2096,29 +2102,7 @@ Welches Problem wollen wir lösen?
 .. compound::
     :class: accentuate incremental
 
-    Um (hier) den Bruch in der Pipeline zu vermeiden, benötigen wir eine passende *Intermediate Operation*, die von der Standardbibliothek nicht zur Verfügung gestellt wird.
-
-
-
-Stream Gatherers
-------------------
-
-Gatherers erlauben die Definition von benutzerdefinierten *Intermediate Operations*.
-
-:java:`Gatherer<T, A, R>` bestehen aus vier Komponenten:
-
-.. class:: incremental-list
-
-:`initializer`:java:: Erzeugt den privaten, ggf. veränderlichen Zustand (Typ ``A``).
-:`integrator`:java:: Verarbeitet jedes Eingabeelement (``T``) und kann beliebig viele Ausgabeelemente (``R``) *downstream* senden."
-:`combiner`:java:: Vereinigt Zustände bei paralleler Ausführung *(optional)*.
-:`finisher`:java:: Wird nach dem letzten Element aufgerufen; kann finale Elemente *downstream* senden *(optional)*.
-
-.. class:: incremental-list
-
-- Damit lassen sich *zustandsbehaftete*, *short-circuiting* und *m:n*-Transformationen als wiederverwendbare, komponierbare, parallelisierbare Bausteine definieren.
-
-- Eingebunden über: :java:`stream.gather(myGatherer)`
+    Um (hier) den Bruch in der Pipeline (Stream → List → Stream) zu vermeiden, benötigen wir eine passende *Intermediate Operation*, die von der Standardbibliothek nicht zur Verfügung gestellt wird.
 
 
 
@@ -2159,10 +2143,33 @@ Ausgewählte Standard Stream Gatherers
 
 
 
+Stream Gatherers (JDK 24+)
+---------------------------
+
+Gatherers erlauben die Definition von benutzerdefinierten *Intermediate Operations*.
+
+:java:`Gatherer<T, A, R>` bestehen aus vier Komponenten:
+
+.. class:: incremental-list
+
+:`initializer`:java:: Erzeugt den privaten, ggf. veränderlichen Zustand (Typ ``A``).
+:`integrator`:java:: Verarbeitet jedes Eingabeelement (``T``) und kann beliebig viele Ausgabeelemente (``R``) *downstream* senden."
+:`combiner`:java:: Vereinigt Zustände bei paralleler Ausführung *(optional)*.
+:`finisher`:java:: Wird nach dem letzten Element aufgerufen; kann finale Elemente *downstream* senden *(optional)*.
+
+.. class:: incremental-list
+
+- Damit lassen sich *zustandsbehaftete*, *short-circuiting* und *m:n*-Transformationen als wiederverwendbare, komponierbare, parallelisierbare Bausteine definieren.
+
+- Eingebunden über: :java:`stream.gather(myGatherer)`
+
+
+
 *Custom Intermediate Operation*: :java:`reducePerGroup()`
 ----------------------------------------------------------
 
 .. code:: java
+    :line-number-digits: 1
     :number-lines:
     :class: copy-to-clipboard
 
@@ -2194,7 +2201,46 @@ Ausgewählte Standard Stream Gatherers
 Übung
 ----------
 
-TODO
+.. exercise:: Fakultät für 1 bis 20
+
+    Berechnen Sie die Fakultät für n = 1 bis 20 und speichern Sie die Ergebnisse in einer Liste. Verwenden Sie Streams und einen passenden :java:`Gatherer`. Bedenken sie, dass ``20!`` bereits sehr groß ist!
+
+    Bis zu welchem Wert können Sie bei der Verwendung eines passenden primitiven Datentyps ohne Präzisionsverlust die Fakultät (n!) berechnen.
+
+    .. hint::
+
+        Auf primitiven Streams is :java:`.gather(...)` nicht verfügbar.
+
+    .. solution::
+        :pwd: LongStreamGathererscan
+
+        Der Datentyp Long erlaubt maximal die Berechnung von 20!.
+
+        .. code:: java
+            :number-lines:
+            :class: copy-to-clipboard
+
+            LongStream.rangeClosed(1,20).boxed().gather(Gatherers.scan(() -> 1l, (x,y) -> x * y)).toList();
+
+
+Übung
+___________-
+
+.. exercise:: Fakultät mit BigInteger
+
+    Berechnen Sie die Fakultät für n = 1 bis 100 und speichern Sie die Ergebnisse in einer Liste. Verwenden Sie Streams und einen passenden :java:`Gatherer`. Verwenden Sie einen passenden Datentyp, um Präzisionsverlust zu vermeiden.
+
+    .. solution::
+        :pwd: BigIntegerScanGatherer
+
+        .. code:: java
+            :number-lines:
+            :class: copy-to-clipboard
+
+            List<BigInteger> factorials = LongStream.rangeClosed(1, 100)
+                    .boxed()
+                    .gather(Gatherers.scan(() -> BigInteger.ONE, (x,y) -> x.multiply(BigInteger.valueOf(y))))
+                    .toList();
 
 
 
@@ -2529,9 +2575,11 @@ Java Streams vs. Scala Collections — Konzeptioneller Vergleich
 
 .. supplemental::
 
-    Scala verfolgt einen anderen Designansatz: Collections *sind* die Pipeline. Es gibt keine Trennung zwischen Datenstruktur und Transformations-API. Das macht den Einstieg einfacher und den Code kürzer, bedeutet aber auch, dass Laziness explizit gewählt werden muss.
+    Scala verfolgt einen anderen Designansatz: Collections *sind* die Pipeline. Es gibt keine Trennung zwischen Datenstruktur und Transformations-API. Das macht den Einstieg einfacher und den Code kürzer, bedeutet aber auch, dass *Laziness* explizit gewählt werden muss (:scala:`to(LazyList)`).
 
-    Javas Trennung in Collection und Stream führt zu syntaktisch komplexerem Code (:eng:`verbose`), ermöglicht dafür aber *Lazy Evaluation* als Standard und eine tief integrierte Parallelisierung.
+    Für Scala gibt es auch noch weitere 3rd Party Stream APIs wie `Akka Streams <https://doc.akka.io/docs/akka/current/stream/index.html>`__ oder `fs2 <https://fs2.io/>`__, die verschiedene Trade-offs zwischen Einfachheit, Leistungsfähigkeit und Funktionalität bieten. Hier haben wir jedoch „nur“ solche APIs betrachtet, die direkt in der Standardbibliothek enthalten sind.
+
+    Javas Trennung in eine Collection API und eine Stream API führt zu syntaktisch komplexerem Code (:eng:`verbose`), ermöglicht dafür aber *Lazy Evaluation* als Standard und eine tief integrierte Parallelisierung.
 
 
 
@@ -2750,4 +2798,4 @@ Fragen?
 
 .. class:: section-subtitle
 
-    Ein erster Einblick in die Java Stream API und Stream(-like) APIs anderer Sprachen!
+    Java Stream API und Stream(-like) APIs anderer Sprachen!

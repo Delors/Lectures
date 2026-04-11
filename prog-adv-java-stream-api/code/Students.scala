@@ -52,3 +52,16 @@ case class Student(
     empfehlungen.foreach(s =>
         println(s"  ${s.studiengang}: ${s.schnitt}")
     )
+
+    val lazyEmpfehlungen = alleStudierenden.to(LazyList)
+        .filterNot(_.hatStipendium)
+        .groupBy(_.studiengang)
+        .values
+        .map(_.minBy(_.schnitt))
+        .toList
+        .sortBy(_.schnitt)
+
+    println("Lazy Empfehlungsliste:")
+    lazyEmpfehlungen.foreach(s =>
+        println(s"  ${s.studiengang}: ${s.schnitt}")
+    )
