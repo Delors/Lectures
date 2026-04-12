@@ -6,9 +6,9 @@
     version="1.1"
     xmlns:xl="http://www.w3.org/1999/xlink"
     xmlns="http://www.w3.org/2000/svg"
-    viewBox="18 38 1350 900"
+    viewBox="18 38 1350 875"
     width="1650"
-    height="1100"
+    height="1069"
 >
 <style>
   @import url('/LectureDoc2/ext/fonts/ld-fonts.css');

@@ -6,9 +6,9 @@
     version="1.1"
     xmlns:xl="http://www.w3.org/1999/xlink"
     xmlns="http://www.w3.org/2000/svg"
-    viewBox="18 38 1350 900"
+    viewBox="18 38 1350 875"
     width="1650"
-    height="1100"
+    height="1069"
 >
 <style>
   @import url('/LectureDoc2/ext/fonts/ld-fonts.css');
@@ -158,7 +158,6 @@
             gradientTransform="translate(285.193 147.12721) rotate(-146.46168) scale(114.13809)"
         />
   </defs>
-  <metadata> Produced by OmniGraffle 8.0\n2024-03-26 13:29:11 +0000</metadata>
   <g
         id="tor-network"
         fill="none"
