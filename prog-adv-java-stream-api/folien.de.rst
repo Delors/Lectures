@@ -59,7 +59,7 @@ Java Stream API
 
     :KI Verwendung:
 
-        Bei der Erstellung der Folien wurden KI Assistenten unterstützend eingesetzt. Dies erfolgte insbesondere, um effizient die Grafiken (d. h. die SVG Dateien)  zu generieren, oder um sich Übersichtstabellen generieren zu lassen. Weiterhin wurde KI zur allgemeinen Qualitätssicherung eingesetzt. Alle Inhalte, die ggf. auf KI Vorschläge zurückzuführen sind, wurden explizit validiert.
+        Bei der Erstellung der Folien wurden KI Assistenten (insbesondere Claude Opus 4.6) unterstützend eingesetzt. Dies erfolgte insbesondere, um effizient die Grafiken (d. h. die SVG Dateien)  zu generieren, oder um sich Übersichtstabellen generieren zu lassen. Weiterhin wurde KI zur allgemeinen Qualitätssicherung eingesetzt. Inhalte, die ggf. von der KI vorgeschlagen wurden, wurden im Falle der Übernahme explizit validiert.
 
         *KI wurde nicht verwendet* für den Aufbau, die Struktur und die Auswahl der grundlegenden Inhalte.
 
@@ -2806,14 +2806,6 @@ Java Streams vs. Rust Iteratoren — Codebeispiel
 
             In Rust ist :rust:`&` der Referenzoperator. D. h. in Zeile 2 wird eine Referenz auf den String für den Studiengang übergeben. Die Zielmethode kann diese Referenz lesen, aber nicht verändern.
 
-            .. rubric:: Vollständiges Beispiel in Rust
-
-            .. include:: code/Students.rs
-                :code: rust
-                :class: copy-to-clipboard
-
-            Zum Ausführen des Codes kann `Play Rust-Lang.org <https://play.rust-lang.org/?version=stable&mode=debug&edition=2024&gist=9c8cc9e32e4c4473dd84728ee3e86ff3>`__ verwendet werden.
-
 .. supplemental::
     :embed-in-document-flow:
 
@@ -2829,6 +2821,18 @@ Java Streams vs. Rust Iteratoren — Codebeispiel
         :Erweiterbarkeit: Rust benötigt kein Gatherer-Konzept. Einen neuen Iterator zu bauen erfordert nur die Implementierung von :rust:`next()` — alle ~75 Adapter-Methoden (:rust:`filter`, :rust:`map`, :rust:`take_while`, ...) stehen dann automatisch zur Verfügung. Das ``itertools``-Crate erweitert dies nahtlos über Rusts Trait-System.
 
         :Parallelisierung: In Java genügt :java:`.parallelStream()`; in Rust ersetzt man :rust:`iter()` durch :rust:`par_iter()` (via ``rayon``-Crate). Der entscheidende Unterschied: Rusts Ownership-System garantiert *zur Compile-Zeit*, dass keine Data Races entstehen. Javas Fork/Join-Pool kann das nicht. Aber der beobachtete Fehler im Java Beispiel - wenn eine Operation den Kontrakt nicht einhält - könnte so auch in Rust auftreten, da dies auf einen logischen Fehler zurückzuführen war und nicht auf eine Race Condition.
+
+
+.. supplemental::
+
+    .. rubric:: Vollständiges Beispiel in Rust
+
+    .. include:: code/Students.rs
+        :code: rust
+        :class: copy-to-clipboard
+
+    Zum Ausführen des Codes kann `Play Rust-Lang.org <https://play.rust-lang.org/?version=stable&mode=debug&edition=2024&gist=9c8cc9e32e4c4473dd84728ee3e86ff3>`__ verwendet werden.
+
 
 
 

@@ -57,6 +57,7 @@ Unabhängiges Netz - „Ideale Situation“
 .. image:: images/firewalls/all-save.svg
     :alt: Ideale Situation
     :align: center
+    :class: light-image
 
 .. class:: incremental-list
 
@@ -95,6 +96,7 @@ Schutzschicht zwischen internem und externem Netz
 .. image:: images/firewalls/firewall.svg
     :alt: Schutzschicht zwischen internem und externem Netz
     :align: center
+    :class: light-image
 
 - Kontrolle des Nachrichtenverkehrs durch Filterung
 - begrenzte Isolation mit begrenztem Schutz
@@ -111,6 +113,7 @@ Realisierung von Virtual Private Networks (VPN)
 .. image:: images/firewalls/vpn.svg
     :alt: Realisierung von Virtual Private Networks (VPN)
     :align: center
+    :class: light-image
 
 - Aufbau einer scheinbar privaten Verbindung von Firmenteilnetzen über das (öffentliche) Internet.
 - Zusätzliche Verbindungsverschlüsselung zwischen den Firewalls.
@@ -127,6 +130,7 @@ Kommerzielle VPNs für Endnutzer
 .. image:: images/firewalls/vpn-commercial.svg
     :alt: Einsatz von Virtual Private Networks (VPN) für Privatnutzer
     :align: center
+    :class: light-image
 
 .. supplemental::
 
@@ -223,6 +227,7 @@ Dual-Homed Host
     .. image:: images/firewalls/dual-homed-host.svg
         :alt: Dual-Homed Host
         :align: right
+        :class: light-image
 
     **Aufbau**
 
@@ -278,7 +283,7 @@ Screening Router
         .. image:: images/firewalls/screening-router.svg
             :alt: Screening Router
             :align: center
-
+            :class: light-image
 
 
 
@@ -288,6 +293,7 @@ Screened Host
 .. image:: images/firewalls/screened-host.svg
     :alt: Screened Host
     :align: right
+    :class: light-image
 
 **Aufbau**
 
@@ -348,6 +354,7 @@ Screened Subnet
 .. image:: images/firewalls/screened-subnet.svg
     :alt: Screened Subnet
     :align: right
+    :class: light-image
 
 **Aufbau**
 
@@ -367,7 +374,6 @@ Screened Subnet
 
 Intrusion Detection Systeme (IDS)
 ----------------------------------
-
 
 
 
@@ -466,4 +472,3 @@ IDS-Erkennungstechniken
 
         3. Die Hauptaufgabe von Firewalls ist es Angriffen entgegenzuwirken (3.). Eine Reaktion auf Angriffe ist für klassische Firewalls nicht möglich. Eine Reaktion auf Angriffe ist Aufgabe von Intrusion Detection Systemen. Moderne Firewalls integrieren jedoch häufig auch Funktionen von *Intrusion Detection Systemen*. (Angriffe können nicht vermieden werden, da dies nicht in der Macht der Firewall liegt. Klassische/Einfache Firewalls können keine Angriffe erkennen.)
         4. ... die Mails sollen ja den Mailserver erreichen; eine inhaltsbasierte Beurteilung des Inhalts einer Mail ist nicht Aufgabe einer Firewall.
-

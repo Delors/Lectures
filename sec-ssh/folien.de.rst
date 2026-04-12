@@ -74,6 +74,7 @@ Secure Shell (SSH) - Protokoll
     .. image:: images/ssh/initiation.svg
         :alt: SSH Protokoll
         :align: center
+        :class: light-image
 
     Beide Seiten haben einen Public-private Key Schlüsselpaar zur gegenseitigen Authentifizierung
 
@@ -103,11 +104,12 @@ Secure Shell (SSH) - Authentifizierung mittels Passwort
         :alt: SSH Protokoll
         :width: 1850px
         :align: center
+        :class: light-image
 
         `CC 4.0 <https://creativecommons.org/licenses/by/4.0/deed.en>`__ - `Aleksey Valov - 29 February 2016 <https://commons.wikimedia.org/wiki/File:SSH-sequence-password.svg>`__
-    
+
         The font was changed to "Noto Sans Display" for better compatibility.
-    
+
 
 
 Secure Shell (SSH) - Verbindungsaufbau - Beispiel
@@ -193,9 +195,9 @@ Secure Shell - `Unterstützte Transport-Verschlüsselungsverfahren <https://www.
 
 .. supplemental::
 
-    **Anmerkung** 
-    
-    CBC-Modi sind anfällig für bestimmte Angriffe (z. B. Padding-Oracle-Angriffe) und werden insbesondere für Rückwärtskompatibilität unterstützt. 
+    **Anmerkung**
+
+    CBC-Modi sind anfällig für bestimmte Angriffe (z. B. Padding-Oracle-Angriffe) und werden insbesondere für Rückwärtskompatibilität unterstützt.
 
     **Algorithmen unterstützt von älteren OpenSSH-Versionen**
 
@@ -242,6 +244,7 @@ SSH Tunneling
 .. image:: images/ssh/tunneling.svg
     :alt: SSH Protokoll
     :align: center
+    :class: light-image
 
 
 

@@ -14,7 +14,7 @@
             markerWidth="8"
             markerHeight="8"
             orient="auto-start-reverse">
-            <path d="M 0 0 L 10 5 L 0 10 z" />
+            <path stroke="currentColor" fill="currentColor" d="M 0 0 L 10 5 L 0 10 z" />
         </marker>
 
 .. include:: ../docutils.defs
@@ -92,26 +92,26 @@ Dreifacher Handshake:
     :class: center-child-elements
 
     <div style="width: 76ch; height: 40ch"; container-type:size;">
-    <svg viewBox="100 0 1140 600" font-size="36" version="1.1" xmlns="http://www.w3.org/2000/svg">
+    <svg viewBox="100 0 1140 600" font-size="36" version="1.1" xmlns="http://www.w3.org/2000/svg" fill="currentColor">
 
         <text x="125" y="75" style="font-weight: bolder">Client</text>
-        <line x1="200" y1="100" x2="200" y2="400" style="stroke:rgb(0,0,0);stroke-width:3" />
+        <line x1="200" y1="100" x2="200" y2="400" stroke="currentColor" style="stroke-width:3" />
         <text x="925" y="75" style="font-weight: bolder">Server</text>
-        <line x1="1000" y1="100" x2="1000" y2="400" style="stroke:rgb(0,0,0);stroke-width:3" />
-        <line x1="200" y1="400" x2="200" y2="550" stroke-dasharray="5,5" style="stroke:rgb(0,0,0);stroke-width:3" />
-        <line x1="1000" y1="400" x2="1000" y2="550" stroke-dasharray="5,5" style="stroke:rgb(0,0,0);stroke-width:3" />
+        <line x1="1000" y1="100" x2="1000" y2="400" stroke="currentColor" style="stroke-width:3" />
+        <line x1="200" y1="400" x2="200" y2="550" stroke="currentColor" stroke-dasharray="5,5" style="stroke-width:3" />
+        <line x1="1000" y1="400" x2="1000" y2="550" stroke-dasharray="5,5" stroke="currentColor" style="stroke-width:3" />
 
         <text x="500" y="65" transform="rotate(6.6)">SYN(1000)</text>
-        <line x1="200" y1="110" x2="1000" y2="190" style="stroke:rgb(0,0,0);stroke-width:3" marker-end="url(#arrow)"/>
+        <line x1="200" y1="110" x2="1000" y2="190" stroke="currentColor" style="stroke-width:3" marker-end="url(#arrow)"/>
 
         <g class="incremental">
-        <text x="270" y="300" transform="rotate(-6.6)">SYN(2000), ACK(1001)</text>
-        <line x1="1000" y1="200" x2="200" y2="290" style="stroke:rgb(0,0,0);stroke-width:3" marker-end="url(#arrow)"/>
+            <text x="270" y="300" transform="rotate(-6.6)">SYN(2000), ACK(1001)</text>
+            <line x1="1000" y1="200" x2="200" y2="290" stroke="currentColor" style="stroke-width:3" marker-end="url(#arrow)"/>
         </g>
 
         <g class="incremental">
-        <text x="555" y="315" transform="rotate(6.6)">ACK(2001)</text>
-        <line x1="200" y1="300" x2="1000" y2="390" style="stroke:rgb(0,0,0);stroke-width:3" marker-end="url(#arrow)"/>
+            <text x="555" y="315" transform="rotate(6.6)">ACK(2001)</text>
+            <line x1="200" y1="300" x2="1000" y2="390" stroke="currentColor" style="stroke-width:3" marker-end="url(#arrow)"/>
         </g>
     </svg>
     </div>
@@ -143,7 +143,8 @@ Port-Nummern einiger Standarddienste [#]_
 .. csv-table::
     :header: Protokoll, Dienst, Portnummer
     :class: highlight-row-on-hover
-    :widths: 100, 600, 50
+    :widths: 100, 300, 100
+    :width: 100%
 
     ftp, Dateitransfer, 21
     smtp, Simple Mail Transfer Protocol, 25
@@ -156,7 +157,8 @@ Port-Nummern einiger Standarddienste [#]_
 .. csv-table::
     :header: Protokoll, Dienst, Portnummer
     :class: highlight-row-on-hover incremental
-    :widths: 100, 600, 50
+    :widths: 100, 300, 100
+    :width: 100%
 
     ssh, Secure Shell, 22
     https, HTTP über Secure Socket Layer, 443
@@ -187,35 +189,35 @@ Angriffe auf TCP - Motivation
 Port Scans: TCP Connect Scan
 -------------------------------
 
-.. grid::
+.. grid:: incremental
 
-    .. cell:: width-50 incremental
+    .. cell:: width-40
 
           .. rubric:: Vorgehen
 
           Aufbau vollständiger Verbindungen zu allen bzw. zu ausgewählten Ports.
 
-    .. cell:: width-50
+    .. cell:: width-60 center-content
 
         .. raw:: html
 
-            <div style="width: 36ch; height:18ch; container-type:size;">
-            <svg viewBox="0 0 1200 600" font-size="48" version="1.1" xmlns="http://www.w3.org/2000/svg">
-                <text x="125" y="75" style="font-weight: bolder">Scanner</text>
-                <line x1="200" y1="100" x2="200" y2="400" style="stroke:rgb(0,0,0);stroke-width:3" />
-                <text x="925" y="75" style="font-weight: bolder">Server</text>
-                <line x1="1000" y1="100" x2="1000" y2="400" style="stroke:rgb(0,0,0);stroke-width:3" />
-                <line x1="200" y1="400" x2="200" y2="550" stroke-dasharray="5,5" style="stroke:rgb(0,0,0);stroke-width:3" />
-                <line x1="1000" y1="400" x2="1000" y2="550" stroke-dasharray="5,5" style="stroke:rgb(0,0,0);stroke-width:3" />
+            <div style="width:42ch; height:25.2ch; container-type:size;">
+            <svg viewBox="100 0 1000 600" font-size="48" fill="currentColor" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                <text x="200" text-anchor="middle" y="75" style="font-weight: bolder">Scanner</text>
+                <line x1="200" y1="100" x2="200" y2="450" stroke="currentColor" style="stroke-width:3" />
+                <text x="1000" y="75" text-anchor="middle" style="font-weight: bolder">Server</text>
+                <line x1="1000" y1="100" x2="1000" y2="450" stroke="currentColor" style="stroke-width:3" />
+                <line x1="200" y1="450" x2="200" y2="550" stroke-dasharray="5,5" stroke="currentColor" style="stroke-width:3" />
+                <line x1="1000" y1="450" x2="1000" y2="550" stroke-dasharray="5,5" stroke="currentColor" style="stroke-width:3" />
 
                 <text x="500" y="65" transform="rotate(6.6)">SYN</text>
-                <line x1="200" y1="110" x2="1000" y2="190" style="stroke:rgb(0,0,0);stroke-width:3" marker-end="url(#arrow)"/>
+                <line x1="200" y1="110" x2="1000" y2="190" stroke="currentColor" style="stroke-width:3" marker-end="url(#arrow)"/>
 
                 <text x="390" y="300" transform="rotate(-6.6)">SYN / ACK</text>
-                <line x1="1000" y1="200" x2="200" y2="290" style="stroke:rgb(0,0,0);stroke-width:3" marker-end="url(#arrow)"/>
+                <line x1="1000" y1="200" x2="200" y2="290" stroke="currentColor" style="stroke-width:3" marker-end="url(#arrow)"/>
 
                 <text x="555" y="315" transform="rotate(6.6)">ACK</text>
-                <line x1="200" y1="300" x2="1000" y2="390" style="stroke:rgb(0,0,0);stroke-width:3" marker-end="url(#arrow)"/>
+                <line x1="200" y1="300" x2="1000" y2="390" stroke="currentColor" style="stroke-width:3" marker-end="url(#arrow)"/>
             </svg>
             </div>
 
@@ -233,7 +235,7 @@ Port Scans: TCP SYN Scan
 
 .. grid::
 
-    .. cell:: width-50 incremental
+    .. cell:: width-40 incremental
 
         .. rubric:: Vorgehen
 
@@ -241,27 +243,28 @@ Port Scans: TCP SYN Scan
         2. falls der *Port offen* ist, kommt SYN/ACK zurück danach RST senden
         3. falls der *Port nicht offen* ist, kommt RST (oder nichts) zurück
 
-    .. cell:: widh-50
+    .. cell:: widh-60
 
         .. raw:: html
 
-            <div style="width: 36ch; height:18ch; container-type:size;">
-            <svg viewBox="0 0 1200 600" font-size="48" version="1.1" xmlns="http://www.w3.org/2000/svg">
-                <text x="125" y="75" style="font-weight: bolder">Scanner</text>
-                <line x1="200" y1="100" x2="200" y2="400" style="stroke:rgb(0,0,0);stroke-width:3" />
-                <text x="925" y="75" style="font-weight: bolder">Server</text>
-                <line x1="1000" y1="100" x2="1000" y2="400" style="stroke:rgb(0,0,0);stroke-width:3" />
-                <line x1="200" y1="400" x2="200" y2="550" stroke-dasharray="5,5" style="stroke:rgb(0,0,0);stroke-width:3" />
-                <line x1="1000" y1="400" x2="1000" y2="550" stroke-dasharray="5,5" style="stroke:rgb(0,0,0);stroke-width:3" />
+            <div style="width:42ch; height:25.2ch; container-type:size;">
+            <svg viewBox="100 0 1000 600" font-size="48" fill="currentColor" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                <text x="200" text-anchor="middle" y="75" style="font-weight: bolder">Scanner</text>
+                <line x1="200" y1="100" x2="200" y2="300" stroke="currentColor" style="stroke-width:3" />
+                <text x="1000" text-anchor="middle" y="75" style="font-weight: bolder">Server</text>
+                <line x1="1000" y1="100" x2="1000" y2="400" stroke="currentColor" style="stroke-width:3" />
+
+                <line x1="200" y1="300" x2="200" y2="550" stroke-dasharray="5,5" stroke="currentColor" style="stroke-width:3" />
+                <line x1="1000" y1="300" x2="1000" y2="550" stroke-dasharray="5,5" stroke="currentColor" style="stroke-width:3" />
 
                 <text x="500" y="65" transform="rotate(6.6)">SYN</text>
-                <line x1="200" y1="110" x2="1000" y2="190" style="stroke:rgb(0,0,0);stroke-width:3" marker-end="url(#arrow)"/>
+                <line x1="200" y1="110" x2="1000" y2="190" stroke="currentColor" style="stroke-width:3" marker-end="url(#arrow)"/>
 
                 <text x="390" y="300" transform="rotate(-6.6)">SYN / ACK</text>
-                <line x1="1000" y1="200" x2="200" y2="290" style="stroke:rgb(0,0,0);stroke-width:3" marker-end="url(#arrow)"/>
+                <line x1="1000" y1="200" x2="200" y2="290" stroke="currentColor" style="stroke-width:3" marker-end="url(#arrow)"/>
 
                 <text x="555" y="315" transform="rotate(6.6)">RST</text>
-                <line x1="200" y1="300" x2="1000" y2="390" style="stroke:rgb(0,0,0);stroke-width:3" marker-end="url(#arrow)"/>
+                <line x1="200" y1="300" x2="1000" y2="390" stroke="currentColor" style="stroke-width:3" marker-end="url(#arrow)"/>
             </svg>
             </div>
 
@@ -277,16 +280,18 @@ Port Scans: TCP SYN Scan
 Port Scans: Stealth Scans
 -----------------------------
 
-:Vorgehen: Versenden eines für den Verbindungsaufbau ungültigen TCP-Segments an einen Port:
+.. rubric:: Vorgehen
 
-    .. class:: incremental
+Versenden eines für den Verbindungsaufbau ungültigen TCP-Segments an einen Port:
 
-    - NULL-Scan (keine Flags)
-    - ACK-Scan (ACK-Flag)
-    - FIN-Scan (FIN-Flag)
-    - XMAS-Scan (alle Flags)
+.. class:: incremental-list
 
-    .. class:: incremental
+- NULL-Scan (keine Flags)
+- ACK-Scan (ACK-Flag)
+- FIN-Scan (FIN-Flag)
+- XMAS-Scan (alle Flags)
+
+.. container:: incremental
 
     Laut RFC kommt RST zurück, falls der Port offen ist. (Reaktion ist de-facto aber abhängig vom Betriebssystem und oft kommt keine Antwort zurück.)
 
@@ -317,6 +322,7 @@ Bei allen bisher betrachteten Scans kann der Scanner prinzipiell identifiziert w
 
         .. image:: images/idle-scan/idle-scan-step1.svg
             :alt: Idle Scan - Schritte 1-2
+            :class: light-image
 
     .. cell:: width-50 fade-out
 
@@ -324,6 +330,7 @@ Bei allen bisher betrachteten Scans kann der Scanner prinzipiell identifiziert w
 
         .. image:: images/idle-scan/idle-scan-step2.svg
             :alt: Idle Scan - Schritte 3-5
+            :class: light-image
 
 .. supplemental::
 
@@ -342,6 +349,7 @@ Bei allen bisher betrachteten Scans kann der Scanner prinzipiell identifiziert w
     .. image:: images-external/IPv4_Packet-en.svg
             :alt: IPv4 Packet
             :align: left
+            :class: light-image
 
     .. container:: peripheral
 
@@ -363,6 +371,7 @@ Port Scans: Idle Scan
 
         .. image:: images/idle-scan/idle-scan-step2.svg
             :alt: Idle Scan - Schritte 3-5
+            :class: light-image
 
     .. cell:: width-50
 
@@ -370,6 +379,7 @@ Port Scans: Idle Scan
 
         .. image:: images/idle-scan/idle-scan-step3.svg
             :alt: Idle Scan - Schritt 6
+            :class: light-image
 
 
 
@@ -462,6 +472,7 @@ Angreifer übernimmt eine bestehende - zum Beispiel eine bereits durch (Einmal-)
 .. image:: images/connection-hijacking.svg
     :alt: Connection Hijacking (einfache Variante)
     :align: center
+    :class: light-image
 
 .. supplemental::
 
@@ -469,7 +480,7 @@ Angreifer übernimmt eine bestehende - zum Beispiel eine bereits durch (Einmal-)
 
     Danach gibt es mehrere Möglichkeiten:
 
-    - Der Angreifer schickt ("in einer Pause") ein Paket mit der passenden Sequenznummer an den Server.
+    - Der Angreifer schickt („in einer Pause“) ein Paket mit der passenden Sequenznummer an den Server.
 
       *(Dies kann dann in einem ACK-Storm enden, was ggf. unterbunden werden muss (zum Beispiel durch das Senden eines RSTs), oder ignoriert werden kann.)*
 
@@ -531,17 +542,17 @@ SYN-Cookies sind speziell konstruiert initiale Sequenznummern.
         .. raw:: html
 
             <div style="width:72ch;height:27ch">
-            <svg viewBox="100 0 1600 600" font-size="36" version="1.1" xmlns="http://www.w3.org/2000/svg">
+            <svg viewBox="100 0 1600 600" font-size="36" version="1.1" xmlns="http://www.w3.org/2000/svg" fill="currentColor">
                 <text x="150" y="75" style="font-weight: bolder">Client</text>
-                <line x1="200" y1="100" x2="200" y2="400" style="stroke:rgb(0,0,0);stroke-width:3" />
-                <line x1="200" y1="400" x2="200" y2="550" stroke-dasharray="5,5" style="stroke:rgb(0,0,0);stroke-width:3" />
+                <line x1="200" y1="100" x2="200" y2="450" stroke="currentColor" style="stroke-width:3" />
+                <line x1="200" y1="450" x2="200" y2="550" stroke-dasharray="5,5" stroke="currentColor" style="stroke-width:3" />
 
                 <text x="1450" y="75" style="font-weight: bolder">Server</text>
-                <line x1="1500" y1="100" x2="1500" y2="400" style="stroke:rgb(0,0,0);stroke-width:3" />
-                <line x1="1500" y1="400" x2="1500" y2="550" stroke-dasharray="5,5" style="stroke:rgb(0,0,0);stroke-width:3" />
+                <line x1="1500" y1="100" x2="1500" y2="450"  stroke="currentColor" style="stroke-width:3" />
+                <line x1="1500" y1="450" x2="1500" y2="550" stroke-dasharray="5,5"  stroke="currentColor" style="stroke-width:3" />
 
                 <text x="500" y="75" transform="rotate(4.25)">SYN(1000)</text>
-                <line x1="200" y1="110" x2="1500" y2="190" style="stroke:rgb(0,0,0);stroke-width:3" marker-end="url(#arrow)"/>
+                <line x1="200" y1="110" x2="1500" y2="190"  stroke="currentColor" style="stroke-width:3" marker-end="url(#arrow)"/>
             </svg>
             </div>
 
@@ -550,9 +561,9 @@ SYN-Cookies sind speziell konstruiert initiale Sequenznummern.
         .. raw:: html
 
             <div style="width:72ch;height:27ch">
-            <svg viewBox="100 0 1600 600" font-size="36"  version="1.1" xmlns="http://www.w3.org/2000/svg">
+            <svg viewBox="100 0 1600 600" font-size="36"  version="1.1" xmlns="http://www.w3.org/2000/svg" fill="currentColor">
                 <text x="270" y="290" transform="rotate(-4.25)">SYN(with cookie), ACK(1001)</text>
-                <line x1="1500" y1="200" x2="200" y2="290" style="stroke:rgb(0,0,0);stroke-width:3" marker-end="url(#arrow)"/>
+                <line x1="1500" y1="200" x2="200" y2="290"  stroke="currentColor" style="stroke-width:3" marker-end="url(#arrow)"/>
             </svg>
             </div>
 
@@ -563,13 +574,13 @@ SYN-Cookies sind speziell konstruiert initiale Sequenznummern.
         .. raw:: html
 
             <div style="width:72ch;height:27ch">
-            <svg  viewBox="100 0 1600 600" font-size="36"  version="1.1" xmlns="http://www.w3.org/2000/svg">
+            <svg  viewBox="100 0 1600 600" font-size="36"  version="1.1" xmlns="http://www.w3.org/2000/svg" fill="currentColor">
                 <text x="555" y="325" transform="rotate(4.2)">ACK(with cookie(+1))</text>
-                <line x1="200" y1="300" x2="1500" y2="390" style="stroke:rgb(0,0,0);stroke-width:3" marker-end="url(#arrow)"/>
+                <line x1="200" y1="300" x2="1500" y2="390"  stroke="currentColor" style="stroke-width:3" marker-end="url(#arrow)"/>
 
                 <text x="1515" y="340" >Validierung</text>
                 <text x="1515" y="390" >des Cookie</text>
-                <line x1="1600" y1="400" x2="1600" y2="455" style="stroke:rgb(0,0,0);stroke-width:3" marker-end="url(#arrow)"/>
+                <line x1="1600" y1="400" x2="1600" y2="455" stroke="currentColor" style="stroke-width:3" marker-end="url(#arrow)"/>
                 <text x="1515" y="490" >ggf. </text>
                 <text x="1515" y="540" >Verbindungs-</text>
                 <text x="1515" y="590" >aufbau</text>
@@ -590,6 +601,7 @@ Opfer wird von sehr vielen Angreifern mit Nachrichten überflutet.
     .. image:: images/smurf-angriff.svg
         :alt: Smurf Angriff
         :align: center
+        :class: light-image
 
 
 
@@ -640,6 +652,7 @@ Distributed-Reflected-Denial-of-Service Angriff
                 .. image:: images/drdos.svg
                     :alt: DRDoS Angriff
                     :align: center
+                    :class: light-image
 
     .. card::
 
@@ -705,6 +718,8 @@ Distributed-Denial-of-Service-Angriffe (DDoS)
             "The attack involved extremely high-rate UDP floods targeting a specific public IP address, launched from over 500,000 source IPs across various regions," Microsoft's Sean Whalen said. [...]
 
             -- Nov 18, 2025 `The Hacker News <https://thehackernews.com/2025/11/microsoft-mitigates-record-572-tbps.html>`__
+
+
 
 Distributed Denial-of-Service Angriffe - Beispiele
 ---------------------------------------------------
