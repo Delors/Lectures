@@ -178,6 +178,7 @@ Tor - Aufbau
         .. image:: images/tor/base-network.svg
             :alt: Tor - Network
             :align: center
+            :class: light-image
 
     .. card:: overlay
 
@@ -229,7 +230,7 @@ Tor - Aufbau
 
 
 
-.. class:: vertical-title tiny
+.. class:: s-vertical-title
 
 Initiierung eines Circuits (konzeptionell)
 --------------------------------------------
@@ -237,6 +238,7 @@ Initiierung eines Circuits (konzeptionell)
 .. image:: images/tor/circuit-creation.svg
     :alt: Initiierung eines Circuits
     :align: center
+    :class: light-image
 
 .. supplemental::
 
@@ -410,7 +412,7 @@ Onion Services/Hidden Services\ [#]_
 
 .. deck::
 
-    .. card:: 
+    .. card::
 
         .. class:: incremental-list list-with-explanations
 
@@ -428,8 +430,8 @@ Onion Services/Hidden Services\ [#]_
 
             Onion-Adresse der EFF im Tor Netzwerk (Tor-Browser notwendig): `https://www.iykpqm7jiradoeezzkhj7c4b33g4hbgfwelht2evxxeicbpjy44c7ead.onion\ <https://www.iykpqm7jiradoeezzkhj7c4b33g4hbgfwelht2evxxeicbpjy44c7ead.onion/>`__
 
-        - Sicher vor Person-in-the-Middle-Angriffen zwischen Client und Onion Service 
-        
+        - Sicher vor Person-in-the-Middle-Angriffen zwischen Client und Onion Service
+
           .. supplemental::
 
             Normalerweise sind Person-in-the-Middle-Angriffe gegen HTTPS abgesicherte Verbindungen nicht möglich; so genannte State-sponsored Actors können jedoch in bestimmten Szenarien die Infrastruktur (*Certificate Authorities* (CAs)) zur Zertifikatsausstellung und Validierung kompromittieren und damit solche Angriffe durchführen. Bei Onion Services ist dies nicht in gleicher Weise möglich, da die Adresse des Onion Services auf dem öffentlichen Schlüssel basiert.
@@ -444,8 +446,8 @@ Onion Services/Hidden Services\ [#]_
         .. class:: incremental-list list-with-explanations
 
         1. Der Onion Service generiert ein Schlüsselpaar (privat/öffentlich) und erstellt daraus seine Onion-Adresse.
-        2. Der Onion Service veröffentlicht seinen öffentlichen Schlüssel und einige *Introduction Points* (3 Stück) im Tor-Netzwerk. 
-        
+        2. Der Onion Service veröffentlicht seinen öffentlichen Schlüssel und einige *Introduction Points* (3 Stück) im Tor-Netzwerk.
+
            *Introduction Points* sind Tor-Knoten, die als Vermittler für Verbindungsanfragen dienen. Die Verbindungen zwischen dem Onion Service und den *Introduction Points* sind langlebig und werden im Directory des Tor-Netzwerks veröffentlicht.
 
            .. supplemental::
@@ -619,7 +621,7 @@ Tor
         :pwd: VPNsundTOR
 
         Ein VPN ist ein Tunnel zwischen zwei Netzwerken. Tor ist ein Tunnel zwischen einem Client und einem Server.
-        
+
         - In beiden Fällen kennt der Ziel(webs)erver nicht die IP-Adresse des Clients.
         - Tor ist dezentralisiert und anonym. VPNs sind zentralisiert und nicht anonym; der VPN Anbieter kennt die IP-Adresse des Clients.
         - Tor ist sehr langsam; VPNs sind schnell(er).
