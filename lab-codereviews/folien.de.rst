@@ -15,7 +15,7 @@ Code Reviews
 
 :Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
 :Kontakt: michael.eichberg@dhbw.de
-:Version: 0.4
+:Version: 0.4.1
 
 .. supplemental::
 
@@ -33,25 +33,25 @@ Code Reviews
 Code Reviews und Software Qualität
 ------------------------------------
 
-.. deck:: height-100
+.. deck::
 
     .. card::
 
         .. question::
 
-            Sie bekommen morgen ein Projekt mit 15.000 Zeilen Code übergeben, das Sie weiterentwickeln sollen. Es ist keine Dokumentation vorhanden oder hoffnungslos veraltet und die Originalautoren sind nicht mehr erreichbar.
+            Sie bekommen morgen ein Projekt mit 15.000 Zeilen Code übergeben, das Sie weiterentwickeln sollen. Es ist keine Dokumentation vorhanden oder die Dokumentation ist veraltet oder die Dokumentation wurde KI generiert und die Originalautoren sind nicht mehr erreichbar.
 
-            Wie fangen Sie an?
+            - Wie fangen Sie an?
 
-            Wovon hängt Ihr Aufwand ab?
+            - Wovon hängt Ihr Aufwand ab?
 
-            Was hätte geholfen?
+            - Was hätte geholfen?
 
     .. card::
 
         .. epigraph::
 
-            [...] Through a case study of [...], we find that **code review coverage, participation, and expertise share a significant link with software quality.**\ [#]_ Hence, our results empirically confirm the intuition that poorly-reviewed code has a negative impact on software quality in large systems [...].
+            [...] Through a case study [...], we find that **code review coverage, participation, and expertise share a significant link with software quality.**\ [#]_ Hence, our results empirically confirm the intuition that poorly-reviewed code has a negative impact on software quality in large systems [...].
 
             -- `McIntosh, S., Kamei, Y., Adams, B. et al. An empirical study of the impact of modern code review practices on software quality. Empirical Software Engineering 21, 2146–2189 (2016). <https://doi.org/10.1007/s10664-015-9381-9>`__
 
@@ -66,9 +66,9 @@ Einführung - Was sind Code Reviews?
 
     .. card::
 
-        .. definition::
+        .. definition:: Code Review
 
-            Ein Code Review ist die systematische Untersuchung von Quellcode durch Dritte :incremental:`— Menschen, KI-Tools oder beide in Kombination —` :incremental:`mit dem primären Ziel, Probleme zu identifizieren, die der Autor - Mensch oder KI - übersehen hat.`
+            Die :emph:`systematische Untersuchung` von Quellcode durch Dritte :incremental:`— Menschen, KI-Tools oder beide in Kombination —` :incremental:`mit dem primären Ziel, Probleme zu identifizieren, die der Autor - Mensch oder KI - übersehen hat.`
 
     .. card::
 
@@ -83,7 +83,7 @@ Einführung - Was sind Code Reviews?
                 In professionellen Projekten erfolgen Code Reviews für gewöhnlich im Kontext so genannter Git(Hub) Pull Requests. Dies ist unabhängig davon, ob es sich um Open-Source oder kommerzielle/closed-source Software handelt. Sie können diese gerne im Rahmen des durchzuführenden Code Reviews nutzen. Die Dokumentation ist dann „einfach“ die Zusammenstellung der Pull Requests.
 
         2. *Analyse des Codes* - dies erfolgt entweder manuell, werkzeuggestützt (dann insbesondere KI-gestützt) oder durch eine Kombination von beidem.
-        3. *Dokumentation relevanter Probleme/Aspekte* - fragwürdige oder problematische Codestellen werden mit Hilfe von einzelnen, nachvollziehbaren Anmerkungen dokumentiert.
+        3. *Dokumentation relevanter Probleme/Aspekte* - fragwürdige oder problematische Codestellen werden mit Hilfe von :emph:`einzelnen, nachvollziehbaren Anmerkungen` dokumentiert.
 
         .. compound::
             :class: incremental
@@ -96,7 +96,7 @@ Einführung - Was sind Code Reviews?
 
         :Primäre Ziele:
 
-            - Fehler finden, die dem Autor/den Autoren nicht auffallen
+            - (insbesondere fachliche) Fehler finden, die dem Autor/den Autoren nicht aufgefallen sind
             - Verständlichkeit und Wartbarkeit des Codes sicherstellen
         :Sekundäre Ziele:
 
@@ -184,7 +184,7 @@ Voraussetzung für Code Reviews
         - der Code kompiliert bzw. ist frei von Syntaxfehlern
         - der Code wurde getestet
 
-          (Wenn vorhanden, dann wurden Unit-/Integrations-Tests erfolgreich ausgeführt; falls nicht, dann wurde durch die Autoren zumindest ein manueller Test durchgeführt.)
+          (Wenn vorhanden, dann wurden Unit-/Integrations-Tests erfolgreich ausgeführt; falls nicht, dann wurde durch die Autoren zumindest ein manueller Test durchgeführt. In professionellen Projekten sind Tests unverzichtbar.)
         - Architektur und zentrale Designentscheidungen sind dem Reviewer bekannt
 
           (Im Idealfall sind zentrale Aspekte zum Beispiel durch C4-Diagramme oder UML-Sequenzdiagramme bereits dokumentiert.)
@@ -204,21 +204,6 @@ Gutes Feedback formulieren
 
 .. deck::
 
-    .. card:: fade-out
-
-        .. rubric:: Schwaches, nicht-konstruktives, herabwertendes Feedback
-
-        .. class:: negative-list list-with-explanations
-
-        - „Das muss anders."
-        - „Falsch."
-        - „Das sollte man besser mit einer Map lösen."
-
-          (Es muss immer das Warum erkenntlich werden und auch der Codeabschnitt.)
-        - „Warum hast du das so gemacht?"
-
-          (Falls eine negative Konnotation mitschwingt; es kann auch eine ehrliche Frage sein.)
-
     .. card::
 
         .. rubric:: Starkes Feedback
@@ -234,13 +219,27 @@ Gutes Feedback formulieren
     .. card:: s-overlay backdrop-blur center-content
 
         .. attention::
-            :class: incremental
 
             Ein Issue sollte:
 
             a. *eine konkrete Stelle* im Code benennen,
             b. das *Problem* beschreiben und
             c. idealerweise einen *Verbesserungsvorschlag* machen.
+
+    .. card:: fade-out
+
+        .. rubric:: Schwaches, nicht-konstruktives, herabwertendes Feedback
+
+        .. class:: negative-list list-with-explanations
+
+        - „Das muss anders."
+        - „Falsch."
+        - „Das sollte man besser mit einer Map lösen."
+
+          (Es muss immer das Warum erkenntlich werden und auch der Codeabschnitt.)
+        - „Warum hast du das so gemacht?"
+
+          (Falls eine negative Konnotation mitschwingt; es kann auch eine ehrliche Frage sein.)
 
 
 
@@ -307,29 +306,33 @@ Code Review des Build-Prozesses und der Projektstruktur
 
     .. class:: incremental-list list-with-sublists
 
-    - *Einstieg und Reproduzierbarkeit*
+    -   *Einstieg und Reproduzierbarkeit*
 
-      - Gibt es eine README.md mit klaren Anweisungen zum Bauen und Starten des Projekts?
-      - Lässt sich das Projekt mit wenigen Schritten lokal aufsetzen und starten?
-      - Sind alle Abhängigkeiten fixiert?
+        .. class:: list-with-explanations
 
-        (Im Falle von Node-/JavaScript-basierten Projekte zum Beispiel über ``package-lock.json``.)
+        -   Gibt es eine README.md mit klaren Anweisungen zum Bauen und Starten des Projekts?
+        -   Lässt sich das Projekt mit wenigen Schritten lokal aufsetzen und starten?
+        -   Sind alle Abhängigkeiten fixiert?
 
-    - *Konfiguration und Tooling*
+            (Im Falle von Node-/JavaScript-basierten Projekten zum Beispiel über ``package-lock.json``.)
 
-      - Sind Linter und Formatter konfiguriert und über ein Skript aufrufbar?
+    -   *Konfiguration und Tooling*
 
-        (Z. B. :code:`npm run lint`.)
-      - Gibt es eine klare Trennung von Entwicklungs- und Produktionsabhängigkeiten?
-      - Werden Umgebungsvariablen sauber verwaltet (z. B. über :code:`.env`-Dateien mit zugehörigem :code:`.env.example`)?
+        -   Sind Linter und Formatter konfiguriert und über ein Skript aufrufbar?
 
-    - *Projektstruktur*
+            (Z. B. :code:`npm run lint`.)
+        -   Gibt es eine klare Trennung von Entwicklungs- und Produktionsabhängigkeiten?
+        -   Werden Umgebungsvariablen sauber verwaltet (z. B. über :code:`.env`-Dateien mit zugehörigem :code:`.env.example`)?
 
-      - Ist die Verzeichnisstruktur nachvollziehbar und konsistent?
-      - Spiegelt die Ordnerstruktur die Architektur wider?
-      - Sind keine generierten Dateien oder Abhängigkeiten im Repository?
+    -   *Projektstruktur*
 
-        (Zum Beispiel: :code:`node_modules` oder :code:`dist`.)
+        .. class:: list-with-explanations
+
+        -   Ist die Verzeichnisstruktur nachvollziehbar und konsistent?
+        -   Spiegelt die Ordnerstruktur die Architektur wider?
+        -   Sind keine generierten Dateien oder Abhängigkeiten im Repository?
+
+            (Zum Beispiel: :code:`node_modules`, :code:`dist`, :code:`target`.)
 
 
 
@@ -347,7 +350,7 @@ Code Review von CSS
       - Konsistente Schreibweise von CSS-Custom-Properties, Klassennamen und IDs
       - Sind die Namen verständlich und sprechend?
 
-        :red:`(Korrektes Deutsch oder Englisch!)`
+        :emph:`(Korrektes Deutsch oder Englisch; konsistente Sprachnutzung.)`
       - Keine Redundanzen, keine unnötigen Style-Definitionen
 
     - *Selektoren und Struktur*
@@ -361,7 +364,7 @@ Code Review von CSS
 
       - Einfachheit des Layouts (dies muss ggf. im Zusammenspiel mit dem HTML-Code geprüft werden)
       - Gibt es ein klares Vorgehen (Mobile-first oder Desktop-first)?
-      - Konsistente Verwendung von Größeneinheiten (em, rem, …) und Farbwerten
+      - Konsistente Verwendung von Größeneinheiten (:js:`em`, :js:`rem`, …) und Farbwerten
 
     - *Modernes CSS*
 
@@ -396,6 +399,11 @@ Code Reviews von HTML
       - Keine Verwendung von :html:`<br>` für Layoutzwecke
 
     - *Accessibility*
+
+      .. supplemental::
+        :embed-in-document-flow:
+
+        Führen Sie eine Bewertung der Barrierefreiheit nur durch, wenn es im Kontext des Projekts gelehrt wurde bzw. relevant/gefordert ist.
 
       - Haben Bilder ein :html:`alt`-Attribut?
       - Sind Formularfelder mit :html:`<label>` verknüpft?
