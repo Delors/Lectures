@@ -50,7 +50,7 @@ Java Stream API
 
     :Quellen:
 
-        #. `Dokumentation des JDK <https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/stream/package-summary.html>`__
+        #. `Dokumentation des JDK <https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/stream/package-summary.html>`__ und `JEP 485 <https://openjdk.org/jeps/485>`__
         #. Dokumentation der Scala (2.13 bzw. 3) Standardbibliothek;
 
            `Aniefiok Akpan; Streams in Scala, July 2023 <https://blog.lunatech.com/posts/2023-07-28-streams-in-scala--an-introductory-guide>`__
@@ -2154,8 +2154,8 @@ Welches Problem wollen wir lösen?
 
 
 
-Stream Gatherers (JDK 24+)
----------------------------
+`Stream Gatherers (JDK 24+) <https://docs.oracle.com/en/java/javase/26/core/stream-gatherers.html>`__
+------------------------------------------------------------------------------------------------------------
 
 Gatherers erlauben die Definition von benutzerdefinierten *Intermediate Operations*.
 
@@ -2541,8 +2541,17 @@ Java Streams - abschließende Betrachtung
 -----------------------------------------
 
 
-Bewertung
-----------
+Grundlegender Aufbau und Bewertung
+--------------------------------------
+
+.. compound::
+    :class: accentuate
+
+    .. class:: center-content
+
+    ::
+
+        Stream pipeline = Spliterator + Gatherer? + Collector
 
 - (Java) Streams unterstützen die Verarbeitung von (Massen-)Daten durch die Anwendung von funktionalen und deklarativen Konzepten.
 
