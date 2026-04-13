@@ -910,6 +910,42 @@ Bewertung
 
 
 
+Abgaben und Dokumentation
+-----------------------------------------
+
+.. story::
+
+    .. class:: incremental-list
+
+    -   die Sourcen des Projekts (und zwar *nur die Sourcen*, keine Binaries oder andere generierten Dateien; ggf. :console:`git --depth 1 clone <repository-url>` verwenden)
+
+        Die Sourcen müssen folgende Dateien enthalten:
+
+        -   den gesamten Source Code (HTML, CSS, JavaScript, etc. - auch Buildscripts, etc.)
+        -   eine ``README.md`` mit Bau- und Installationsanleitung und kurzer Dokumentation auf welchem Port welche Dienste laufen
+        -   ein ``delete-credentials.sh`` Skript, dass API Keys etc. löscht. Dieses Script wird nach der Bewertung ausgeführt; bevor das Projekt "dauerhaft" archiviert wird.
+
+            .. important::
+
+                Das Script muss ggf. auch im Root Verzeichnis auf dem Server liegen und genau so heissen. Ist das Script nicht vorhanden, dann wird davon ausgegangen, dass keine sensiblen Daten im Projekt enthalten sind.
+        -   Eine Dokumentation welche Daten zwischen Client und Server ausgetauscht werden
+
+    -   Es würde mich freuen, wenn Sie eine ``License.txt`` Datei beilegen mit den `Lizenzbedingungen <https://opensource.org/licenses>`__. Dies ist optional. Bei einer hinreichend liberalen Lizenz ziehe ich ggf. *eine Weiternutzung im Rahmen der Lehre* in Betracht.
+
+    -   ein Dokument bzgl. KI-Einsatzes und eine kritische Reflexion darüber (max 1 Seite, DIN A4, 1.5 Zeilenabstand, Schriftgröße 12pt, Arial)
+    -   ein Dokument bzgl. der Teamarbeit, d. h. wer hat welchen Anteil an der Entwicklung welcher Teile der Anwendung
+
+        :emph:`Dieses Dokument muss auch explizit angeben, ob Sie als Team bewertet werden möchten oder nicht! Sollte dieses Dokument nicht abgegeben werden, dann erfolgt keine Bewertung bis das Dokument nachgereicht wurde.`
+
+    .. important::
+        :class: incremental
+
+        Die Anwendung muss zum Abgabezeitpunkt auf dem Server installiert und lauffähig sein. Die Anwendung muss auch nach dem Abgabezeitpunkt lauffähig sein, damit sie bewertet werden kann. Es muss also sichergestellt sein, dass die Anwendung auch nach der Abgabe weiterhin auf dem Server läuft (z. B. durch die Verwendung von :console:`pm2` oder ähnlichen Tools).
+
+        Ich werde den Server ca. 2-3 Monate nach Veranstaltungsende abschalten.
+
+
+
 Teams
 -----------------------------------------
 
@@ -933,29 +969,31 @@ Teams
 Teamzuteilung
 -----------------------------------------
 
-.. csv-table::
-  :header: Vorname, Nachname, Team
+.. scrollable::
 
-  Sally, Sarpong, vier-tastischen
-  Tim, Schwall, TwoAndAHalfMan
-  Dreni, Aliji, RDR3
-  Josef, Touma, PowerRanger
-  Nathanael, Wüst, NJE
-  David, Bergfeld, RDR3
-  Pavels, Luciks, Die3Musketiere
-  Elina, Wiese, TwoAndAHalfMan
-  Jannis, Pfeifer, NJE
-  Finn, Wagnitz, NJE
-  Issa, Gassama, vier-tastischen
-  Louis, Labitzke, RDR3
-  Nikola, Rehak, Die3Musketiere
-  Dario, Danielis, Die3Musketiere
-  Linda, Yuan, vier-tastischen
-  Benedikt, Geitner, vier-tastischen
-  Nils, Hillinger, Die3Musketiere
-  Louis, Poller, LogiBlock
-  Esra, Memis, LogiBlock
-  Nicolas, Müller, LogiBlock
-  Maximilian, Haßler, PowerRanger
-  Niko, Guba, PowerRanger
-  Marvin, Blank, TwoAndAHalfMan
+    .. csv-table::
+        :header: Vorname, Nachname, Team
+
+        Sally, Sarpong, vier-tastischen
+        Tim, Schwall, TwoAndAHalfMan
+        Dreni, Aliji, RDR3
+        Josef, Touma, PowerRanger
+        Nathanael, Wüst, NJE
+        David, Bergfeld, RDR3
+        Pavels, Luciks, Die3Musketiere
+        Elina, Wiese, TwoAndAHalfMan
+        Jannis, Pfeifer, NJE
+        Finn, Wagnitz, NJE
+        Issa, Gassama, vier-tastischen
+        Louis, Labitzke, RDR3
+        Nikola, Rehak, Die3Musketiere
+        Dario, Danielis, Die3Musketiere
+        Linda, Yuan, vier-tastischen
+        Benedikt, Geitner, vier-tastischen
+        Nils, Hillinger, Die3Musketiere
+        Louis, Poller, LogiBlock
+        Esra, Memis, LogiBlock
+        Nicolas, Müller, LogiBlock
+        Maximilian, Haßler, PowerRanger
+        Niko, Guba, PowerRanger
+        Marvin, Blank, TwoAndAHalfMan
