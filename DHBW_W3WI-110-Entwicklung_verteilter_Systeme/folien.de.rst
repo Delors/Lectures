@@ -15,7 +15,7 @@ W3WI_110 - Entwicklung verteilter Systeme
 
 :Dozent: `Prof. Dr. Michael Eichberg <https://delors.github.io/cv/folien.de.rst.html>`__
 :Kontakt: michael.eichberg@dhbw.de, Raum 149B
-:Version: 24SEA - 10. April 2026
+:Version: 24SEA - 13. April 2026
 
 
 
@@ -1165,7 +1165,13 @@ Code Reviews (max. 10 Punkte)
     .. card::
 
         :Präsentation (3P): Dies umfasst die Darstellung der wichtigsten Ergebnisse des Code Reviews und *ganz insbesondere* auch die Darstellung von Erkenntnissen, die für das eigene Projekt gewonnen wurden.
-        :Dokumentation (7P): Dies ist das Dokument, dass die Ergebnisse des Code Reviews festhält (ggf. ein Auszug der GitHub Issues). Bewertet wird die Qualität im Hinblick auf die Nachvollziehbarkeit/Verständlichkeit der Ergebnisse und die Konstruktivität der Vorschläge.
+        :Dokumentation (7P):
+
+            Dies ist das Dokument, dass die Ergebnisse des Code Reviews festhält (ggf. ein Auszug der GitHub Issues). Bewertet wird die Qualität im Hinblick auf die Nachvollziehbarkeit/Verständlichkeit der Ergebnisse und die Konstruktivität der Vorschläge.
+
+            Die Abgabe der Dokumentation umfasst auch die Abgabe der Sourcen, die Ihrer Bewertung zugrunde liegen und Ihnen zur Verfügung gestellt wurden. (Klonen Sie ggf. einfach das Repository.
+
+            :emph:`Spezifizieren Sie beim Klonen eine Tiefe von 1` (:console:`git clone --depth 1  <URL>`); ich benötige nur den aktuellen Stand, damit ich die Bewertung ggf. nachvollziehen kann.
 
 .. presenter-note::
 
