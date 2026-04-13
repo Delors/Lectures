@@ -99,8 +99,7 @@ Klassifizierung von Datenströmen
 
             .. class:: incremental-list
 
-            :Zeichenströme: lesen / schreiben :java:`char` (16-bit Unicode Zeichensatz).
-
+            :Zeichenströme: lesen / schreiben.
 
                 .. container:: incremental peripheral
 
@@ -300,6 +299,7 @@ Dateiströme in Java
 
         .. code:: java
             :number-lines:
+            :line-number-digits: 1
             :class: copy-to-clipboard
 
             void print(String fileName) throws IOException {
@@ -363,6 +363,7 @@ Prozessströme
 
         .. code:: java
             :number-lines:
+            :line-number-digits: 1
             :class: copy-to-clipboard
 
             try(
@@ -377,6 +378,7 @@ Prozessströme
 
         .. code:: console
             :number-lines:
+            :line-number-digits: 1
             :class: incremental
 
             $ hexdump Test.tmp
@@ -398,6 +400,7 @@ Architektur der I/O API
 
         .. code:: java
             :number-lines:
+            :line-number-digits: 1
             :class: copy-to-clipboard
 
             // erzeugt gepufferten, komprimierenden Dateiausgabestrom
@@ -454,6 +457,7 @@ Architektur der I/O API
 
         .. code:: java
             :number-lines:
+            :line-number-digits: 1
             :class: copy-to-clipboard
 
             try(var fr = new FileReader("docutils.conf");
@@ -481,6 +485,7 @@ Neben den traditionellen I/O-Klassen (seit Java 1.x) gibt es auch die Möglichke
 
 .. code:: java
     :number-lines:
+    :line-number-digits: 2
 
     package java.nio.file;
 
