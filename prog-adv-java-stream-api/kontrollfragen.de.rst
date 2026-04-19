@@ -5,7 +5,7 @@
    :description lang=de: Kontrollfragen bzgl. Java Streams
    :id: lecture-prog-java-streams-kontrollfragen
    :first-slide: last-viewed
-   :master-password: WirklichSchwierig!
+   :master-password: SehrSchwierig?
 
 .. include:: ../docutils.defs
 
